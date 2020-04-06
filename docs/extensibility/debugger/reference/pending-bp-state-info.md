@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_INFO | Microsoft Docs
+title: PENDING_BP_STATE_INFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_INFO structure
 ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306f3f6ac5f12d2a26da958d50fae87c6e174355
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d66ecc63e133a75148f06b59b8f1ccf61fe2658d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349876"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714080"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
-Zawiera informacje o stanie punktu przerwania, który jest gotowy do powiązania do lokalizacji kodu.
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
+Zawiera informacje o stanie punktu przerwania, który jest gotowy do powiązania z lokalizacją kodu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,22 +43,22 @@ public struct PENDING_BP_STATE_INFO { 
 
 ## <a name="members"></a>Elementy członkowskie
  `state`\
- Wartość z zakresu od [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) wyliczenie, który określa stan oczekujący punkt przerwania.
+ Wartość z [wyliczenia PENDING_BP_STATE,](../../../extensibility/debugger/reference/pending-bp-state.md) która określa stan oczekującego punktu przerwania.
 
  `flags`\
- Kombinacja flag z [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) wyliczenia, która określa, czy punkt przerwania zostaje zwirtualizowany.
+ Kombinacja flag z wyliczenia [PENDING_BP_STATE_FLAGS,](../../../extensibility/debugger/reference/pending-bp-state-flags.md) która określa, czy punkt przerwania jest zwirtualizowany.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest przekazywany do [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) metody, gdzie jest wypełnione.
+ Ta struktura jest przekazywana do [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) metody, gdzie jest wypełniona.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)
 - [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)

@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie właściwości i okno właściwości | Dokumentacja firmy Microsoft
+title: Rozszerzanie właściwości i okno właściwości | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - SelectionContainer class
 - SelectableObjects property
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f403c6bb92dbd11b53c5814fb6c9c7f512be42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313055"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711736"
 ---
-# <a name="extend-properties-and-the-property-window"></a>Rozszerzanie właściwości i okno właściwości
-**Właściwości** okno służy do wyświetlania i edytowania właściwości czasu projektowania oraz zdarzeń zaznaczonych obiektów.
+# <a name="extend-properties-and-the-property-window"></a>Rozszerzanie właściwości i okna Właściwość
+Okno **Właściwości** służy do wyświetlania i edytowania właściwości i zdarzeń czasu projektowania wybranych obiektów.
 
- Po wybraniu obiektu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], publiczne właściwości tego obiektu są wyświetlane w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [Omówienie okna właściwości](../extensibility/internals/properties-window-overview.md).
+ Po zaznaczeniu obiektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]w obszarze właściwości publiczne tego obiektu pojawią się w oknie **Właściwości.** Aby uzyskać więcej informacji, zobacz [omówienie okna właściwości](../extensibility/internals/properties-window-overview.md).
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Udostępnianie właściwości w oknie właściwości](../extensibility/exposing-properties-to-the-properties-window.md) wyjaśnia, jak masz niestandardowe właściwości wyświetlane w oknie dialogowym właściwości.
+- [Uwidacznianie właściwości do okna Właściwości](../extensibility/exposing-properties-to-the-properties-window.md) Wyjaśniono, jak można wyświetlić właściwości niestandardowe w oknie Właściwości.
 
-- [Uzyskiwanie właściwości projektu](../extensibility/getting-project-properties.md) wyjaśnia, jak uzyskać właściwości projektu.
+- [Uzyskaj właściwości projektu](../extensibility/getting-project-properties.md) Wyjaśniono, jak uzyskać właściwości projektu.

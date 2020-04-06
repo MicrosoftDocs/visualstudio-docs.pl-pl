@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsString | Dokumentacja firmy Microsoft
+title: IDebugReference2::SetValueAsString | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cb58326f36e88768ab9144f08ded8c85410e1c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339816"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720295"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-Ustawia wartość odniesienia z ciągu. Zarezerwowane do użytku w przyszłości.
+Ustawia wartość odwołania z ciągu. Zarezerwowane do użytku w przyszłości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,16 +45,16 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>Parametry
 `pszValue`\
-[in] Wartość jako ciąg.
+[w] Wartość jako ciąg.
 
 `dwRadix`\
-[in] Podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.
+[w] Radix do wykorzystania w formatowaniu wszelkich informacji liczbowych.
 
 `dwTimeout`\
-[in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
+[w] Maksymalny czas ( w milisekundach) oczekiwania przed zwróceniem tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Zawsze zwraca `E_NOTIMPL`.
+ Zawsze zwraca wartość `E_NOTIMPL`.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

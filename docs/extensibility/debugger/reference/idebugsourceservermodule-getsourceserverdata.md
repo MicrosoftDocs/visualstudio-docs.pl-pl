@@ -1,24 +1,24 @@
 ---
-title: IDebugSourceServerModule::GetSourceServerData | Dokumentacja firmy Microsoft
+title: IDebugSourceServerModule::GetSourceServerData | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e24fb48014d8a336e9d46ceb8471e2efe126de1f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321895"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719930"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Pobiera tablicę informacji o serwerze źródłowym.
@@ -41,16 +41,16 @@ public int GetSourceServerData(
 
 ## <a name="parameters"></a>Parametry
 `pDataByteCount`\
-[out] Liczba bajtów w tablicy danych.
+[na zewnątrz] Liczba bajtów w tablicy danych.
 
 `ppData`\
-[out] Odwołanie do tablicy danych.
+[na zewnątrz] Odwołanie do tablicy danych.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CModule** obiekt ujawniający [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CModule,** który udostępnia interfejs [IDebugSourceServerModule.](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
 
 ```cpp
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)
@@ -74,5 +74,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

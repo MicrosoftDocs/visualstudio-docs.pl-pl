@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::GetCount | Microsoft Docs
+title: IEnumDebugFields::GetCount | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::GetCount method
 ms.assetid: 3f471b40-4db3-49f7-b504-58b2476eef74
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bb0c28f72b88822d87af928b9e0ce689cf0f3a7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5109e3f515b98cf8d89babb7a66ec28e7849d3ca
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350450"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716922"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
 Ta metoda zwraca liczbę elementów w wyliczeniu.
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametry
 `pcelt`\
-[out] Zwraca liczbę elementów w wyliczeniu.
+[na zewnątrz] Zwraca liczbę elementów w wyliczeniu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda nie jest częścią zwyczajowego interfejsu wyliczenie COM, który określa, że tylko dalej, klonowania, Pomiń i resetowania muszą zostać zaimplementowane.
+ Ta metoda nie jest częścią niestandardowego interfejsu wyliczenia COM, który określa, że należy zaimplementować tylko next, clone, skip i reset.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2::Reset | Dokumentacja firmy Microsoft
+title: IEnumDebugPropertyInfo2::Reset | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Reset
 ms.assetid: fa4201c1-4633-4596-93aa-bd415c4ed71a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 050eb3e88789a9f028ad0fb11bf32abacb92348d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ef8af93739d248d66eebcc5deb446b037c13429
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347181"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715509"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
-Resetuje wyliczenia do pierwszego elementu.
+Resetuje wyliczenie do pierwszego elementu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,10 +38,10 @@ int Reset();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Po ta metoda jest wywoływana, następnym wywołaniu [dalej](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) metoda zwraca pierwszy element wyliczenia.
+ Po wywołaniu tej metody, następne wywołanie [Next](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) metoda zwraca pierwszy element wyliczenia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

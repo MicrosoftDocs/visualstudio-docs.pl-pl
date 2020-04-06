@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor | Microsoft Docs
+title: IDebugFunctionObject::CreateObjectNoConstructor | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObjectNoConstructor method
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e42e19e0ac08fc7dff658df2188cd0a822097ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad95f9273276830b59ebc77214f3920a687d41ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320934"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728576"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
-Tworzy obiekt, za pomocą nie konstruktora.
+Tworzy obiekt bez konstruktora.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,20 +43,20 @@ int CreateObjectNoConstructor(
 
 ## <a name="parameters"></a>Parametry
 `pClassObject`\
-[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący typ obiektu, który ma zostać utworzony.
+[w] [Obiekt IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący typ obiektu, który ma zostać utworzony.
 
 `ppObject`\
-[out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzony obiekt.
+[na zewnątrz] Zwraca [obiekt IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzony obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje wystąpienie elementu struktury lub typ złożony (który nie wymaga konstruktora), jest to parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.
+ Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje wystąpienie struktury lub typu złożonego (który nie wymaga konstruktora), który jest parametrem funkcji, która jest reprezentowana przez interfejs [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
- Jeśli parametr obiektu wymaga konstruktora, wywołaj [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) metody.
+ Jeśli parametr obiektu wymaga konstruktora, [wywołaj CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) metody.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 - [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

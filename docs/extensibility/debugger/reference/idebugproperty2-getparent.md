@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetParent | Dokumentacja firmy Microsoft
+title: IDebugProperty2::GetParent | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetParent
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cd550cf602ca1333477a699a32e501961c74821
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7620c22d425a0426daa8c15d067a4d61c6bf96e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342989"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721421"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
-Pobiera właściwość nadrzędna właściwości.
+Pobiera właściwość nadrzędną właściwości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ int GetParent ( 
 
 ## <a name="parameters"></a>Parametry
 `ppParent`\
-[out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje element nadrzędny właściwości.
+[na zewnątrz] Zwraca obiekt [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) który reprezentuje element nadrzędny właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETPARENT_NO_PARENT` Jeśli brak elementu nadrzędnego.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca, `S_GETPARENT_NO_PARENT` jeśli nie ma nadrzędnego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

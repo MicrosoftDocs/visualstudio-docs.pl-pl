@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE | Microsoft Docs
+title: BP_LOCATION_TYPE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353044"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737942"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
 Określa typ lokalizacji punktu przerwania dla żądania punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
@@ -70,25 +70,25 @@ public enum enum_BP_LOCATION_TYPE {
 
 ## <a name="fields"></a>Pola
 `BPLT_NONE`\
-Określa nie lokalizacji punktu przerwania.
+Określa lokalizację punktu przerwania.
 
 `BPLT_FILE_LINE`\
-Określa typ lokalizacji punktu przerwania jako wiersza w pliku.
+Określa typ lokalizacji punktu przerwania jako wiersz pliku.
 
 `BPLT_FUNC_OFFSET`\
 Określa typ lokalizacji punktu przerwania jako przesunięcie funkcji.
 
 `BPLT_CONTEXT`\
-Określa typ lokalizacji punktu przerwania, ponieważ kontekst.
+Określa typ lokalizacji punktu przerwania jako kontekst.
 
 `BPLT_STRING`\
 Określa typ lokalizacji punktu przerwania jako ciąg.
 
 `BPLT_ADDRESS`\
-Określa typ lokalizacji punktu przerwania adresu.
+Określa typ lokalizacji punktu przerwania jako adres.
 
 `BPLT_RESOLUTION`\
-Określa typ lokalizacji punktu przerwania rozwiązanie tego problemu.
+Określa typ lokalizacji punktu przerwania jako rozdzielczość.
 
 `BPLT_CODE_FILE_LINE`\
 Określa typ lokalizacji punktu przerwania jako wiersz kodu źródłowego.
@@ -97,38 +97,38 @@ Określa typ lokalizacji punktu przerwania jako wiersz kodu źródłowego.
 Określa typ lokalizacji punktu przerwania jako przesunięcie funkcji kodu.
 
 `BPLT_CODE_CONTEXT`\
-Określa typ lokalizacji punktu przerwania, ponieważ kontekst kodu.
+Określa typ lokalizacji punktu przerwania jako kontekst kodu.
 
 `BPLT_CODE_STRING`\
-Określa typ lokalizacji punktu przerwania jako ciągu kodu.
+Określa typ lokalizacji punktu przerwania jako ciąg kodu.
 
 `BPLT_CODE_ADDRESS`\
-Określa typ lokalizacji punktu przerwania adresem kod.
+Określa typ lokalizacji punktu przerwania jako adres kodu.
 
 `BPLT_DATA_STRING`\
-Określa typ lokalizacji punktu przerwania jako ciąg.
+Określa typ lokalizacji punktu przerwania jako ciąg danych.
 
 `BPLT_TYPE_MASK`\
-Maska bitowa, określa, tak, aby typ punktu przerwania można wyodrębnić z wartością.
+Określa maskę bitową, dzięki czemu typ punktu przerwania może zostać wyodrębniony z wartości.
 
 `BPLT_LOCATION_TYPE_MASK`\
-Maska bitowa, określa, tak, aby typ lokalizacji punktu przerwania można wyodrębnić z wartością.
+Określa maskę bitową, dzięki czemu typ lokalizacji punktu przerwania może zostać wyodrębniony z wartości.
 
 ## <a name="remarks"></a>Uwagi
 Przekazany jako parametr do [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) metody.
 
-Typ punktu przerwania i typu lokalizacji składa się typ lokalizacji punktu przerwania. Oznacza to, że typ lokalizacji punktu przerwania nigdy nie jest tylko typ punktu przerwania (na przykład `BPT_CODE`) lub typu lokalizacji (na przykład `BPLT_FILE_LINE`). Wstępnie zdefiniowanych stałych dla wszystkich typów lokalizacji punktu przerwania obecnie obsługiwane są objęte to wyliczenie (`BPLT_CODE_FILE_LINE` za pośrednictwem `BPLT_DATA_STRING`).
+Typ lokalizacji punktu przerwania składa się z typu punktu przerwania i typu lokalizacji. Oznacza to, że typ lokalizacji punktu przerwania nigdy nie `BPT_CODE`jest tylko typem punktu `BPLT_FILE_LINE`przerwania (na przykład) lub typem lokalizacji (na przykład). Wstępnie zdefiniowane stałe dla wszystkich typów lokalizacji punktu przerwania obecnie obsługiwanych są`BPLT_CODE_FILE_LINE` `BPLT_DATA_STRING`uwzględnione w tym wyliczeniu (przez ).
 
-`BPT_CODE` i `BPT_DATA` są elementami członkowskimi [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) wyliczenia.
+`BPT_CODE`i `BPT_DATA` są członkami wyliczenia [BP_TYPE.](../../../extensibility/debugger/reference/bp-type.md)
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

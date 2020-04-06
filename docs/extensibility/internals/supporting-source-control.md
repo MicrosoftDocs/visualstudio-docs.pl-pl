@@ -1,37 +1,37 @@
 ---
-title: Obsługa kontroli kodu źródłowego | Dokumentacja firmy Microsoft
+title: Obsługa kontroli źródła | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b4f12790de00cc835f7268830bf6d9a4734b839
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331245"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704728"
 ---
 # <a name="supporting-source-control"></a>Obsługa kontroli kodu źródłowego
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje wyewidencjonowania pliku, zaewidencjonowania i inne operacje kontroli źródła dla projektu lub edytorze. Jako klient kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] służy do interakcji z pakietem kontroli źródła, takich jak [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], które obejmują archiwizacji, przechowywanie wersji i możliwości kontroli dynamicznie definiowane zestawu plików.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsługuje wyewidencjonowania plików, zaewidencjonowania i inne operacje kontroli źródła dla projektu lub edytora. Jako klient kontroli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródła, jest przeznaczony do interakcji z [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]pakietem kontroli źródła, takich jak , który zapewnia archiwizacji, przechowywania wersji i urządzeń kontroli dla dynamicznie zdefiniowanego zestawu plików.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Model pakietów kontroli kodu źródłowego](../../extensibility/internals/model-for-source-control-packages.md)
 
- Opisuje interfejsy musi implementować typ projektu, do obsługi kontroli źródła.
+ W tym artykule opisano interfejsy typ projektu musi zaimplementować do obsługi kontroli źródła.
 
 - [Decyzje dotyczące projektu](../../extensibility/internals/source-control-design-decisions.md)
 
- Zawiera pytania, na których odpowiedzi zmienić sposób implementacji typu projektu.
+ Zawiera pytania, których odpowiedzi zmieniają sposób implementowania typu projektu.
 
 - [Szczegóły konfiguracji](../../extensibility/internals/source-control-configuration-details.md)
 
- W tym artykule opisano, jak Obsługa kontroli kodu źródłowego zmienia implementacji typu projektu.
+ W tym artykule opisano, jak obsługa kontroli źródła zmienia implementację typu projektu.
 
 - [Dodatkowe wskazówki dotyczące projektów i edytorów](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)
 
@@ -39,20 +39,20 @@ ms.locfileid: "66331245"
 
 - [Szczegóły środowiska uruchomieniowego](../../extensibility/internals/source-control-runtime-details.md)
 
- Opisuje sposób rejestrowania projektu, gdy użytkownik doda go do systemu kontroli źródła.
+ W tym artykule opisano sposób rejestrowania projektu, gdy użytkownik dodaje go do systemu kontroli źródła.
 
 ## <a name="reference"></a>Tematy pomocy
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> Wskazuje, że do środowiska lub pakiet kontroli "source", który plik ma zostać zmienione w pamięci lub zapisany.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>Wskazuje pakiet kontroli środowiska lub źródła, że plik ma zostać zmieniony w pamięci lub zapisany.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> Umożliwia projektów i hierarchie rejestrują się z kontroli źródła i uzyskiwania informacji o stan kontroli źródła.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>Umożliwia projektom i hierarchiom rejestrowanie się za pomocą kontroli źródła i uzyskiwanie informacji o stanie kontroli źródła.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> Zaimplementowane w systemie projektu w celu zapewnienia kontroli źródła plików projektu i elementy projektu.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>Zaimplementowano w systemie projektu w celu zapewnienia kontroli źródła dla plików projektu i elementów projektu.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Używane przez projektów, aby wysyłać zapytania do środowiska, aby uzyskać uprawnienia do dodawania, usuń lub zmień nazwę pliku lub katalogu w ramach rozwiązania.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>Używane przez projekty do wykonywania zapytań w środowisku w celu uzyskania uprawnień do dodawania, usuwania lub zmieniania nazwy pliku lub katalogu w rozwiązaniu.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> Powiadamia klientów o zmianach wprowadzonych do projektu pliki lub katalogi.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>Powiadamia klientów o zmianach wprowadzonych w plikach lub katalogach projektu.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
-- [Typy projektów](../../extensibility/internals/project-types.md)
+- [Project Types (Typy projektów)](../../extensibility/internals/project-types.md)
 
- Zawiera omówienie projektów jako podstawowe bloki konstrukcyjne [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Podano linki do dodatkowych tematów, które wyjaśniają, jak kontrolować projektów, tworzenie i kompilowanie kodu.
+ Zawiera omówienie projektów jako podstawowych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] elementów składowych zintegrowanego środowiska programistycznego (IDE). Łącza są dostarczane do dodatkowych tematów, które wyjaśniają, jak projekty kontroli tworzenia i kompilacji kodu.

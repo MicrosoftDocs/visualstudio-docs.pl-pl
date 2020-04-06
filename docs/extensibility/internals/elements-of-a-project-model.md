@@ -1,5 +1,5 @@
 ---
-title: Elementy modelu projektu | Dokumentacja firmy Microsoft
+title: Elementy modelu projektu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b37997c4245d8234d72ae14a9dda23f44fe2b26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351586"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708523"
 ---
 # <a name="elements-of-a-project-model"></a>Elementy modelu projektu
-Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnianie podstawowa struktura: model projektu dla danego typu projektu. Model projektu, czyli pakietu VSPackage, tworzysz służy do tworzenia obiektów, które są zgodne z decyzji projektowych i współdziałały globalne funkcje udostępniane przez środowisko IDE. Chociaż możesz kontrolować, jak element projektu jest trwały, na przykład, możesz nie mają kontroli nad powiadomienia, plik musi zostać utrwalone. Gdy użytkownik Przełącza fokus na elemencie Otwórz projekt, a **Zapisz** na **pliku** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu pasku kod typu projektu musi przechwytywać polecenie z poziomu środowiska IDE, utrwalanie plików, i Wyślij powiadomienie do środowiska IDE nie jest już zmiany pliku.
+Interfejsy i implementacje wszystkich [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektów w współużytkuje podstawową strukturę: model projektu dla typu projektu. W modelu projektu, który jest VSPackage tworzysz obiekty, które są zgodne z decyzjami projektowymi i współpracować z globalnymi funkcjami dostarczonymi przez IDE. Chociaż można kontrolować, jak element projektu jest zachowywany, na przykład nie kontrolować powiadomienie, że plik musi być utrwalony. Gdy użytkownik umieszcza fokus na otwartym elemencie projektu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i wybiera **Zapisz** w menu **Plik** na pasku menu, kod typu projektu musi przechwycić polecenie z IDE, utrwalić plik i wysłać powiadomienie z powrotem do IDE, że plik nie jest już zmieniony.
 
- Usługi pakietu VSPackage współdziała z IDE za pośrednictwem usług, które zapewniają dostęp do interfejsów IDE. Na przykład za pośrednictwem usług konkretnego monitora i trasy poleceń i podaj informacje o kontekście dla wybranych ustawień w projekcie. Wszystkie globalne IDE funkcje potrzebne do Twojego pakietu VSPackage są udostępniane przez usługi. Aby uzyskać więcej informacji na temat usług, zobacz [jak: Usługi](../../extensibility/how-to-get-a-service.md).
+ Usługa VSPackage współdziała z IDE za pośrednictwem usług, które zapewniają dostęp do interfejsów IDE. Na przykład za pośrednictwem określonych usług można monitorować i trasy poleceń i podać informacje kontekstowe dla wyborów dokonanych w projekcie. Wszystkie globalne funkcje IDE potrzebne dla vsPackage jest dostarczana przez usługi. Aby uzyskać więcej informacji o usługach, zobacz [Jak: Pobierz usługę](../../extensibility/how-to-get-a-service.md).
 
- Inne uwagi dotyczące implementacji:
+ Inne zagadnienia dotyczące wdrażania:
 
-- Modelu tego pojedynczego projektu może zawierać więcej niż jeden typ projektu.
+- Pojedynczy model projektu może zawierać więcej niż jeden typ projektu.
 
-- Typy projektów i fabryk projektów towarzyszącej zostały zarejestrowane niezależnie przy użyciu identyfikatorów GUID.
+- Typy projektów i towarzyszące fabryki projektów są rejestrowane niezależnie za pomocą identyfikatorów GUID.
 
-- Każdy projekt musi mieć w pliku szablonu lub kreatora w celu inicjowania nowego pliku projektu, gdy użytkownik tworzy nowy projekt za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika. Na przykład [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] szablony zainicjować co przestać .VCPROJ — pliki.
+- Każdy projekt musi mieć plik szablonu lub kreatora, aby zainicjować nowy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] plik projektu, gdy użytkownik tworzy nowy projekt za pośrednictwem interfejsu użytkownika. Na przykład [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] szablony inicjują, co ostatecznie stać się .vcproj plików.
 
-  Na poniższej ilustracji przedstawiono głównych interfejsów, usług i obiektów, które tworzą implementację typowym projekcie. Można użyć pomocnika aplikacji `HierUtil7`, aby utworzyć obiekty źródłowe i innych standardowy programowania. Aby uzyskać więcej informacji na temat `HierUtil7` pomocnika aplikacji, zobacz [HierUtil7 Użyj projektu klasy do zaimplementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+  Na poniższej ilustracji przedstawiono interfejsy podstawowe, usługi i obiekty, które tworzą typowe implementacji projektu. Można użyć pomocnika aplikacji, `HierUtil7`aby utworzyć obiekty leżące pod spodem i inne programowanie standardowego. Aby uzyskać więcej `HierUtil7` informacji na temat pomocnika aplikacji, zobacz [Używanie klas projektu HierUtil7 do zaimplementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
 
-  ![Grafiki modelu projektu programu Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") modelu projektu
+  ![Grafika przedstawiająca model projektu programu Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") Model projektu
 
-  Aby uzyskać więcej informacji dotyczących interfejsów i usług wymienionych na poprzednim rysunku, a inne opcjonalne interfejsy, które nie są uwzględnione w diagramie, zobacz [podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md).
+  Aby uzyskać więcej informacji na temat interfejsów i usług wymienionych na poprzednim diagramie i innych opcjonalnych interfejsów nieuwzględnianych na diagramie, zobacz [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md).
 
-  Projekty mogą obsługiwać poleceń i w związku z tym należy zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs do wzięcia udziału w routingu poleceń za pomocą polecenia kontekstu identyfikatorów GUID.
+  Projekty mogą obsługiwać polecenia i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> dlatego muszą implementować interfejs, aby uczestniczyć w routingu poleceń za pośrednictwem identyfikatorów GUID kontekstu polecenia.
 
-## <a name="see-also"></a>Zobacz także
-- [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Użycie klasy projektu HierUtil7 w celu zaimplementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
-- [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md)
-- [Tworzenie wystąpień projektów przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-- [Instrukcje: Uzyskiwanie usługi](../../extensibility/how-to-get-a-service.md)
+## <a name="see-also"></a>Zobacz też
+- [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Zaimplementowanie typu projektu (C++) za pomocą klas projektu HierUtil7](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [Podstawowe komponenty modelu projektu](../../extensibility/internals/project-model-core-components.md)
+- [Tworzenie wystąpień projektu przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [Jak: Uzyskaj usługę](../../extensibility/how-to-get-a-service.md)
 - [Tworzenie typów projektów](../../extensibility/internals/creating-project-types.md)

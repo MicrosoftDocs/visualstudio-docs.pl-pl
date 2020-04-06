@@ -1,5 +1,5 @@
 ---
-title: SccGetProjPath Function | Microsoft Docs
+title: Funkcja SccGetProjPath | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b31a17e89003967aef6a423dda87572b4a07c387
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 281787da3499c081fbbe6f59b7b8175a4dbf24d7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353681"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700704"
 ---
-# <a name="sccgetprojpath-function"></a>SccGetProjPath function
-Ta funkcja monituje użytkownika o ścieżkę projektu, który jest ciągiem, który ma znaczenie tylko do wtyczka do kontroli źródła. Jest ona wywoływana, gdy użytkownik jest:
+# <a name="sccgetprojpath-function"></a>SccGetProjPath, funkcja
+Ta funkcja monituje użytkownika o ścieżkę projektu, która jest ciągiem, który ma znaczenie tylko dla wtyczki formantu źródła. Jest wywoływana, gdy użytkownik jest:
 
 - Tworzenie nowego projektu
 
 - Dodawanie istniejącego projektu do kontroli wersji
 
-- Próby znalezienia istniejący projekt kontroli wersji
+- Próba znalezienia istniejącego projektu kontroli wersji
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,73 +46,73 @@ SCCRTN SccGetProjPath (
 ### <a name="parameters"></a>Parametry
  pvContext
 
-[in] Struktura kontekście wtyczki kontroli źródła.
+[w] Struktura kontekstu wtyczki formantu źródła.
 
- hWnd
+ Hwnd
 
-[in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.
+[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
 
- lpUser
+ lpUżycie
 
-[out w] Nazwa użytkownika (nie przekraczając liczby SCC_USER_SIZE, w tym terminator o wartości NULL)
+[w, na zewnątrz] Nazwa użytkownika (nie przekracza SCC_USER_SIZE, w tym terminator NULL)
 
  lpProjName
 
-[out w] Nazwa projektu środowiska IDE, obszar roboczy projektu lub pliku reguł programu make (nie przekraczając liczby SCC_PRJPATH_SIZE, w tym terminator o wartości NULL).
+[w, na zewnątrz] Nazwa projektu IDE, obszaru roboczego projektu lub pliku makefile (nie może przekraczać SCC_PRJPATH_SIZE, w tym terminator NULL).
 
- lpLocalPath
+ lpLocalPath (Ścieżka lokalna)
 
-[out w] Ścieżka roboczego projektu. Jeśli `bAllowChangePath` jest `TRUE`, wtyczka do kontroli źródła można zmodyfikować te parametry (nie przekraczając liczby _MAX_PATH, w tym terminator o wartości null).
+[w, na zewnątrz] Ścieżka robocza projektu. Jeśli `bAllowChangePath` `TRUE`tak, wtyczka formantu źródła może zmodyfikować ten ciąg (nie przekraczać _MAX_PATH, w tym null-terminator).
 
- lpAuxProjPath
+ lpAuxProjPath (lpAuxProjPath)
 
-[out w] Bufor dla ścieżki zwrócone projektu (nie przekraczając liczby SCC_PRJPATH_SIZE, w tym terminator o wartości NULL).
+[w, na zewnątrz] Bufor dla zwróconej ścieżki projektu (nie przekracza SCC_PRJPATH_SIZE, w tym terminatora NULL).
 
- bAllowChangePath
+ bAllowChangePath (Ścieżka zmian)
 
-[in] Jeśli jest to `TRUE`, wtyczka do kontroli źródła można monitować o i modyfikować `lpLocalPath` ciągu.
+[w] Jeśli tak `TRUE`jest, wtyczka kontroli źródła może `lpLocalPath` monitować i modyfikować ciąg.
 
- pbNew
+ pbNowy
 
-[out w] Wartość zostaną dodane w wskazuje, czy chcesz utworzyć nowy projekt. Wartość zwracana oznacza sukces tworzenia projektu:
+[w, na zewnątrz] Wartość wchodząc wskazuje, czy utworzyć nowy projekt. Zwrócona wartość wskazuje na powodzenie tworzenia projektu:
 
-|przychodzące|Interpretacja|
+|Dane|Interpretacja|
 |--------------|--------------------|
-|WARTOŚĆ TRUE|Użytkownik może utworzyć nowy projekt.|
-|FAŁSZ|Użytkownik nie może utworzyć nowy projekt.|
+|Prawda|Użytkownik może utworzyć nowy projekt.|
+|FAŁSZ|Użytkownik nie może utworzyć nowego projektu.|
 
-|Wychodzące|Interpretacja|
+|Wychodzących|Interpretacja|
 |--------------|--------------------|
-|WARTOŚĆ TRUE|Utworzono nowy projekt.|
-|FAŁSZ|Istniejący projekt został wybrany.|
+|Prawda|Powstał nowy projekt.|
+|FAŁSZ|Wybrano istniejący projekt.|
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Projekt został pomyślnie utworzony lub pobrać.|
+|SCC_OK|Projekt został pomyślnie utworzony lub pobrany.|
 |SCC_I_OPERATIONCANCELED|Operacja została anulowana.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby.|
-|SCC_E_CONNECTIONFAILURE|Wystąpił problem podczas próby nawiązania połączenia z systemu kontroli źródła.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacją.|
+|SCC_E_CONNECTIONFAILURE|Wystąpił problem podczas próby połączenia z systemem kontroli źródła.|
 |SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|
 
 ## <a name="remarks"></a>Uwagi
- Celem tej funkcji jest środowisko IDE uzyskać parametry `lpProjName` i `lpAuxProjPath`. Po wtyczka do kontroli źródła monituje użytkownika o te informacje, przekazuje te dwa ciągi do środowiska IDE. Środowisko IDE będzie się powtarzać te ciągi w pliku rozwiązania i przekazuje je do [SccOpenProject](../extensibility/sccopenproject-function.md) zawsze, gdy użytkownik otworzy ten projekt. Te ciągi włączyć dodatek typu plug-in do śledzenia informacji związanych z projektem.
+ Celem tej funkcji jest dla IDE do `lpProjName` `lpAuxProjPath`uzyskania parametrów i . Po wtyczki kontroli źródła monituje użytkownika o te informacje, przekazuje te dwa ciągi z powrotem do IDE. IDE utrzymuje te ciągi w pliku rozwiązania i przekazuje je do [SccOpenProject](../extensibility/sccopenproject-function.md) za każdym razem, gdy użytkownik otworzy ten projekt. Te ciągi umożliwiają dodatek do śledzenia informacji skojarzonych z projektem.
 
- Po wywołaniu funkcji `lpAuxProjPath` jest ustawiony na pusty ciąg. `lProjName` może być pusty, lub może ona zawierać nazwę projektu środowiska IDE, wtyczka do kontroli źródła może używać lub zignorować. Funkcja zwróci wynik pomyślnie, wtyczka zwraca dwa ciągi odpowiednie. IDE nie czyni żadnych założeń dotyczących tych parametrów, nie będzie używać ich, a nie zezwoli użytkownikowi na modyfikację ich. Jeśli użytkownik chce zmienić ustawienia, środowisko IDE będzie wywoływać `SccGetProjPath` ponownie, przekazując w tej samej wartości odbierał poprzednio. Daje to wtyczka pełną kontrolę nad tych dwóch ciągów.
+ Gdy funkcja jest wywoływana po raz pierwszy, `lpAuxProjPath` jest ustawiona na pusty ciąg. `lProjName`może być również pusta lub może zawierać nazwę projektu IDE, który wtyczka kontroli źródła może używać lub ignorować. Gdy funkcja pomyślnie zwraca, dodatek zwraca dwa odpowiednie ciągi. IDE nie zawiera żadnych założeń dotyczących tych ciągów, nie będzie ich używać i nie pozwoli użytkownikowi na ich modyfikowanie. Jeśli użytkownik chce zmienić ustawienia, IDE `SccGetProjPath` wywoła ponownie, przekazując te same wartości, które otrzymał poprzedni raz. Daje to pełną kontrolę nad tymi dwoma ciągami.
 
- Aby uzyskać `lpUser`, IDE może przekazać nazwę użytkownika lub jego może po prostu przekazać wskaźnik do pustego ciągu. W przypadku nazwy użytkownika, wtyczka do kontroli źródła należy używać go jako domyślny. Jednak jeśli przekazano żadnej nazwy lub jeśli logowanie nie powiodło się o podanej nazwie, wtyczka powinien zostać wyświetlony monit użytkownika o nazwę logowania i przekaż nazwę z powrotem w `lpUser` po odebraniu prawidłową nazwą logowania. Ponieważ wtyczki mogą zmienić ten ciąg, IDE będzie zawsze Przydziel bufor o rozmiarze (`SCC_USER_LEN`+ 1).
+ For `lpUser`, IDE może przekazać w nazwie użytkownika lub może po prostu przekazać w wskaźniku do pustego ciągu. Jeśli istnieje nazwa użytkownika, wtyczka formantu źródła powinna używać jej jako domyślnej. Jeśli jednak żadna nazwa nie została przekazana lub jeśli logowanie nie powiodło się z daną nazwą, wtyczka powinna monitować użytkownika o zalogowanie się i przekazać nazwę z powrotem `lpUser` po otrzymaniu prawidłowego logowania. Ponieważ dodatek może zmienić ten ciąg, IDE zawsze przydziela`SCC_USER_LEN`bufor o rozmiarze ( +1).
 
 > [!NOTE]
-> Pierwszą akcją, który wykonuje IDE może być wywołania `SccOpenProject` funkcji lub `SccGetProjPath` funkcji. W związku z nich mają identyczne `lpUser` parametr, który umożliwia wtyczka do kontroli źródła do logowania użytkownika w dowolnym momencie. Nawet jeśli powrót z funkcji wskazuje błąd, wtyczkę należy podać ten ciąg z prawidłową nazwą logowania.
+> Pierwsza akcja, która wykonuje IDE może być wywołanie `SccOpenProject` funkcji `SccGetProjPath` lub funkcji. W związku z tym `lpUser` oba mają identyczny parametr, który umożliwia wtyczkę kontroli źródła do logowania użytkownika w obu tych porach. Nawet jeśli powrót z funkcji wskazuje na błąd, wtyczka musi wypełnić ten ciąg prawidłową nazwą logowania.
 
- `lpLocalPath` jest to katalog, w którym użytkownik przechowuje projektu. Może być ciągiem pustym. Jeśli katalog nie jest obecnie zdefiniowany (jak w przypadku użytkowników, próby pobrania projektu z systemu kontroli źródła) i `bAllowChangePath` jest `TRUE`, wtyczka do kontroli źródła może monitować użytkownika o wprowadzenie danych lub użyj innej metody do umieszczenia jej ciąg do własnej `lpLocalPath`. Jeśli `bAllowChangePath` jest `FALSE`, wtyczka nie należy zmieniać ciągu, ponieważ użytkownik pracuje się już w określonym katalogu.
+ `lpLocalPath`to katalog, w którym użytkownik przechowuje projekt. Może to być pusty ciąg. Jeśli nie zdefiniowano katalogu (tak jak w przypadku użytkownika próbującego pobrać projekt z systemu `bAllowChangePath` kontroli `TRUE`źródła), a jeśli tak, wtyczka kontroli źródła może monitować użytkownika `lpLocalPath`o wprowadzenie danych lub użyć innej metody, aby umieścić własny ciąg w programie . Jeśli `bAllowChangePath` `FALSE`tak, wtyczka nie powinna zmieniać ciągu, ponieważ użytkownik już pracuje w określonym katalogu.
 
- Jeśli użytkownik tworzy nowy projekt, które należy umieścić pod kontrolą źródła, wtyczka do kontroli źródła może nie tworzą go w systemie kontroli źródła w czasie `SccGetProjPath` jest wywoływana. Zamiast tego ponownie przekazuje ciąg wraz z wartość różną od zera dla `pbNew`, wskazujący, że projekt zostanie utworzony w systemie kontroli źródła.
+ Jeśli użytkownik tworzy nowy projekt, który ma być umieszczony pod kontrolą źródła, wtyczka kontroli źródła `SccGetProjPath` może nie faktycznie utworzyć go w systemie kontroli źródła w czasie jest wywoływana. Zamiast tego przekazuje ciąg wraz z wartością niezerową dla `pbNew`, wskazując, że projekt zostanie utworzony w systemie kontroli źródła.
 
- Na przykład, jeśli użytkownik w **nowy projekt** kreatora w programie Visual Studio dodaje projekt lub jej do kontroli źródła, Visual Studio wywołuje tę funkcję i wtyczki Określa, czy można utworzyć nowy projekt w systemie kontroli źródła zawiera projekt programu Visual Studio. Jeśli użytkownik kliknie **anulować** przed zakończeniem działania kreatora, nigdy nie jest tworzony projekt. Jeśli użytkownik kliknie **OK**, Visual Studio wywołuje `SccOpenProject`, przekazując `SCC_OPT_CREATEIFNEW`, i projektu objętego kontrolą źródła jest tworzony w tym czasie.
+ Na przykład jeśli użytkownik w Kreatorze **nowego projektu** w programie Visual Studio dodaje swój projekt do kontroli źródła, Visual Studio wywołuje tę funkcję, a dodatek określa, czy jest w porządku, aby utworzyć nowy projekt w systemie kontroli źródła, aby zawierać projekt programu Visual Studio. Jeśli użytkownik kliknie przycisk **Anuluj** przed ukończeniem pracy kreatora, projekt nigdy nie zostanie utworzony. Jeśli użytkownik kliknie **przycisk** `SccOpenProject`OK , `SCC_OPT_CREATEIFNEW`Visual Studio wywołuje , przekazywanie , a projekt kontrolowany przez źródło jest tworzony w tym czasie.
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

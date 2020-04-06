@@ -1,5 +1,5 @@
 ---
-title: Niestandardowe właściwości dokumentu w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
+title: Niestandardowe właściwości dokumentu w starszej usłudze językowej | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8422e35e5241cf1cef30d0ba4a1fe7815323d091
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312902"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708971"
 ---
-# <a name="custom-document-properties-in-a-legacy-language-service"></a>Niestandardowe właściwości dokumentu w starszej wersji usługi językowej
-Właściwości dokumentu mogą być wyświetlane w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **właściwości** okna. Języki programowania zwykle nie mają właściwości skojarzone z pojedynczych źródłowych plików. Jednakże XML obsługuje właściwości dokumentu, które wpływają na kodowanie, schemat oraz arkusza stylów.
+# <a name="custom-document-properties-in-a-legacy-language-service"></a>Niestandardowe właściwości dokumentu w starszej usłudze języka
+Właściwości dokumentu mogą być wyświetlane [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w oknie **Właściwości.** Języki programowania zazwyczaj nie mają właściwości skojarzonych z poszczególnymi plikami źródłowymi. Jednak XML obsługuje właściwości dokumentu, które wpływają na kodowanie, schemat i arkusz stylów.
 
-## <a name="discussion"></a>Dyskusja
- Jeśli język musi niestandardowe właściwości dokumentu, należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.DocumentProperties> klasy i implementuje niezbędne właściwości w klasie pochodnej.
+## <a name="discussion"></a>Dyskusji
+ Jeśli język wymaga właściwości dokumentu niestandardowego, należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.DocumentProperties> klasy i zaimplementować niezbędne właściwości w klasie pochodnej.
 
- Ponadto właściwości dokumentu zwykle są przechowywane w samym pliku źródłowego. Wymaga to usługa językowa można przeanalizować informacji z pliku źródłowego do wyświetlenia w **właściwości** okna oraz do aktualizowania pliku źródłowego, w przypadku zmian właściwości dokumentu w  **Właściwości** okna.
+ Ponadto właściwości dokumentu są zazwyczaj przechowywane w samym pliku źródłowym. Wymaga to usługi języka do analizowania informacji o właściwościach z pliku źródłowego do wyświetlania w oknie **Właściwości** i zaktualizować plik źródłowy po wprowadzeniu zmiany do właściwości dokumentu w oknie **Właściwości.**
 
-## <a name="customize-the-documentproperties-class"></a>Dostosowywanie klasy DocumentProperties
- Aby zapewnić obsługę niestandardowe właściwości dokumentu, należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.DocumentProperties> klasę i Dodaj dowolną liczbę właściwości, według potrzeb. Należy również podać atrybuty użytkownika, aby zorganizować je w **właściwości** wyświetlania okna. Jeśli właściwość jest tylko `get` metody dostępu jest on wyświetlany jako tylko do odczytu w **właściwości** okna. Jeśli właściwość ma jednocześnie `get` i `set` metod dostępu, właściwość może też być aktualizowana w **właściwości** okna.
+## <a name="customize-the-documentproperties-class"></a>Dostosowywanie klasy Właściwości documentproperties
+ Aby obsługiwać właściwości dokumentu niestandardowego, należy <xref:Microsoft.VisualStudio.Package.DocumentProperties> wyprowadzić klasę z klasy i dodać tyle właściwości, ile potrzebujesz. Należy również podać atrybuty użytkownika, aby zorganizować je na ekranie okna **Właściwości.** Jeśli właściwość ma `get` tylko akcesor, jest wyświetlany jako tylko do odczytu w **właściwości** okna. Jeśli właściwość `get` ma `set` zarówno i akcesory, właściwość może być również aktualizowana w **właściwości** okna.
 
 ### <a name="example"></a>Przykład
- Poniżej przedstawiono przykładową klasę pochodną <xref:Microsoft.VisualStudio.Package.DocumentProperties>, którym są wyświetlane dwie właściwości `Filename` i `Description`. Po zaktualizowaniu właściwości, metody niestandardowej na <xref:Microsoft.VisualStudio.Package.LanguageService> klasy jest wywoływana, aby zapisać właściwości do pliku źródłowego.
+ Oto przykład klasy pochodzące <xref:Microsoft.VisualStudio.Package.DocumentProperties>z , pokazując `Filename` `Description`dwie właściwości i . Po zaktualizowaniu właściwości, metoda <xref:Microsoft.VisualStudio.Package.LanguageService> niestandardowa w klasie jest wywoływana do zapisu właściwości do pliku źródłowego.
 
 ```csharp
 using System.ComponentModel;
@@ -120,8 +120,8 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="instantiate-the-custom-documentproperties-class"></a>Utwórz wystąpienie klasy niestandardowej DocumentProperties
- Do utworzenia wystąpienia klasy właściwości niestandardowego dokumentu, konieczne jest przesłonięcie <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> metoda w wersji <xref:Microsoft.VisualStudio.Package.LanguageService> klasy w celu zwracania pojedynczego wystąpienia usługi <xref:Microsoft.VisualStudio.Package.DocumentProperties> klasy.
+## <a name="instantiate-the-custom-documentproperties-class"></a>Tworzenie wystąpienia niestandardowej klasy Właściwości dokumentu
+ Aby utworzyć wystąpienia klasy właściwości dokumentu niestandardowego, należy <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> zastąpić metodę w <xref:Microsoft.VisualStudio.Package.LanguageService> wersji klasy, aby <xref:Microsoft.VisualStudio.Package.DocumentProperties> zwrócić pojedyncze wystąpienie klasy.
 
 ### <a name="example"></a>Przykład
 
@@ -148,19 +148,19 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="properties-in-the-source-file"></a>Właściwości w pliku źródłowym
- Ponieważ właściwości dokumentu są zazwyczaj specyficzne dla pliku źródłowego, wartości są przechowywane w samym pliku źródłowego. To wymaga obsługi ze analizatora języka lub skaner, aby zdefiniować te właściwości. Na przykład właściwości dokumentu XML są przechowywane w węźle głównym. Wartości w węźle głównym są modyfikowane podczas **właściwości** wartości okna zostaną zmienione i węzeł główny jest aktualizowana w edytorze.
+ Ponieważ właściwości dokumentu są zwykle specyficzne dla pliku źródłowego, wartości są przechowywane w samym pliku źródłowym. Wymaga to obsługi z analizatora języka lub skanera do definiowania tych właściwości. Na przykład właściwości dokumentu XML są przechowywane w węźle głównym. Wartości w węźle głównym są modyfikowane po zmianie wartości okna **Właściwości,** a węzeł główny jest aktualizowany w edytorze.
 
 ### <a name="example"></a>Przykład
- W tym przykładzie przechowuje właściwości `Filename` i `Description` w pierwsze dwa wiersze pliku źródłowego osadzone w nagłówku specjalne komentarz jako:
+ W tym przykładzie `Filename` `Description` przechowuje właściwości i w pierwszych dwóch wierszach pliku źródłowego, osadzone w specjalnym nagłówku komentarza, jak:
 
 ```
 //!Filename = file.testext
 //!Description = A sample file
 ```
 
- W tym przykładzie przedstawiono dwie metody, które są wymagane do pobierania i ustawiania właściwości dokumentu z pierwsze dwa wiersze w pliku źródłowego, jak również, jak właściwości są aktualizowane, gdy użytkownik modyfikuje plik źródłowy bezpośrednio. `SetPropertyValue` w przykładzie pokazano, w tym miejscu jest taka sama jeden wywołać metody z `TestDocumentProperties` klasy, jak pokazano na *Dostosowywanie klasy DocumentProperties* sekcji.
+ W tym przykładzie przedstawiono dwie metody potrzebne do uzyskania i ustawić właściwości dokumentu z pierwszych dwóch wierszy pliku źródłowego, a także jak właściwości są aktualizowane, jeśli użytkownik modyfikuje plik źródłowy bezpośrednio. Metoda `SetPropertyValue` w przykładzie pokazano tutaj jest taka `TestDocumentProperties` sama, o nazwie z klasy, jak pokazano w *Dostosowywanie DocumentProperties sekcji klasy.*
 
- W tym przykładzie użyto skaner można ustalić typu tokenów w pierwsze dwa wiersze. Ten przykład dotyczy tylko w celach ilustracyjnych. Jest bardziej typowym podejściem do takiej sytuacji można przeanalizować pliku źródłowego, w którym każdy węzeł drzewa zawiera informacje o dany token tak zwany drzewo analizy. Węzeł główny zawiera właściwości dokumentu.
+ W tym przykładzie używa skanera do określenia typu tokenów w pierwszych dwóch wierszach. Ten przykład służy wyłącznie do celów ilustracyjnych. Bardziej typowe podejście do tej sytuacji jest przeanalizowanie pliku źródłowego do tego, co nazywa się drzewa analizy, gdzie każdy węzeł drzewa zawiera informacje o określonym tokenie. Węzeł główny będzie zawierać właściwości dokumentu.
 
 ```csharp
 using System.ComponentModel;
@@ -397,5 +397,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)
+## <a name="see-also"></a>Zobacz też
+- [Starsze funkcje usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)

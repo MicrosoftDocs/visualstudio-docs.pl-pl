@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Otwieranie edytorów specyficznych dla projektu | Dokumentacja firmy Microsoft'
+title: 'Jak: Otwórz edytory specyficzne dla projektu | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,51 +7,51 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e85913f6eead81bcbc2424ef1087f64a3f2446e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cb6e360a38d64de4976f83b0167d47dc03fbc87
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319249"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710838"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Instrukcje: Otwieranie edytorów specyficznych dla projektu
-Jeśli plik elementu otwierana przez projekt wewnętrznie jest powiązany z określonego edytora dla tego projektu, projekt musi otworzyć plik za pomocą edytora specyficznych dla projektu. Plik nie może być delegowane do środowiska IDE mechanizm wybierania edytora. Na przykład zamiast za pomocą edytora standardowego mapy bitowej służy tej opcji edytora specyficznych dla projektu do określenia Edytor mapa bitowa szczególnych, który rozpoznaje informacje zawarte w pliku, który jest unikatowy dla projektu.
+# <a name="how-to-open-project-specific-editors"></a>Jak: Otwieranie edytorów specyficznych dla projektu
+Jeśli plik elementu otwierany przez projekt jest wewnętrznie powiązany z określonym edytorem dla tego projektu, projekt musi otworzyć plik przy użyciu edytora specyficznego dla projektu. Nie można delegować pliku do mechanizmu IDE do wybierania edytora. Na przykład zamiast standardowego edytora bitmap można użyć tej opcji edytora specyficznej dla projektu, aby określić określony edytor bitmap, który rozpoznaje informacje w pliku, który jest unikatowy dla projektu.
 
- Wywołania środowiska IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metody Określa, że plik powinien zostać otwarty przez określonego projektu. Aby uzyskać więcej informacji, zobacz [wyświetlania plików za pomocą polecenia Otwórz plik](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Skorzystaj z poniższych wskazówek w celu zaimplementowania `OpenItem` metoda będzie miała projektu otwórz plik przy użyciu edytora specyficznych dla projektu.
+ IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodę, gdy określa, że plik powinien być otwarty przez określony projekt. Aby uzyskać więcej informacji, zobacz [Wyświetlanie plików za pomocą polecenia Otwórz plik](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Skorzystaj z poniższych `OpenItem` wskazówek, aby zaimplementować metodę, aby projekt otworzył plik przy użyciu edytora specyficznego dla projektu.
 
-## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Aby wdrożyć metodę OpenItem za pomocą edytora specyficznych dla projektu
+## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Aby zaimplementować metodę OpenItem za pomocą edytora specyficznego dla projektu
 
-1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> — metoda (`RDT_EditLock`) do określenia, czy plik (obiekt danych dokumentu), jest już otwarty.
+1. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> metody`RDT_EditLock`( ), aby ustalić, czy plik (obiekt danych dokumentu) jest już otwarty.
 
     > [!NOTE]
-    > Aby uzyskać więcej informacji na temat danych dokumentów i obiektów widoku dokumentu, zobacz [widok danych i dokumentu w edytorach niestandardowych dokumentu](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Aby uzyskać więcej informacji o danych dokumentu i obiektach widoku dokumentu, zobacz [Dane dokumentu i widok dokumentu w edytorach niestandardowych](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
-2. Jeśli plik jest już otwarty, można go resurface przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody i określając wartość IDO_ActivateIfOpen dla `grfIDO` parametru.
+2. Jeśli plik jest już otwarty, ponownie nakryj plik, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metodę i określając `grfIDO` wartość IDO_ActivateIfOpen dla parametru.
 
-     Jeśli plik jest otwarty dokument jest własnością projekt inny niż projektu wywołującego, pojawi się ostrzeżenie do użytkownika, że edytor jest otwarty w innym projekcie. Okno w pliku jest następnie udostępniane.
+     Jeśli plik jest otwarty, a dokument jest własnością projektu innego niż projekt wywołujący, zostanie wyświetlone ostrzeżenie dla użytkownika, że otwierany edytor pochodzi z innego projektu. Okno pliku zostanie następnie uka przeze, gdy zostanie ono otwarte.
 
-3. Jeśli chcesz do niej dołączyć inny widok usługi buforu tekstowego (obiekt danych dokument) jest już otwarty, użytkownik jest odpowiedzialny Podłączanie tego widoku. Zalecane podejście do tworzenia wystąpienia widoku (obiekt widoku dokumentu) z projektu, jest następujący:
+3. Jeśli bufor tekstu (obiekt danych dokumentu) jest już otwarty i chcesz dołączyć do niego inny widok, użytkownik jest odpowiedzialny za podłączenie tego widoku. Zalecane podejście do tworzenia wystąpienia widoku (obiekt widoku dokumentu) z projektu, jest w następujący sposób:
 
-    1. Wywołaj `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> usługi, aby uzyskać wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> interfejsu.
+    1. Wezwiej `QueryService` usługę, <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> aby <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> uzyskać wskaźnik do interfejsu.
 
-    2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> metodę, aby utworzyć wystąpienie klasy widoku dokumentu.
+    2. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> metody, aby utworzyć wystąpienie klasy widoku dokumentu.
 
-4. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> metody, określając nazwę obiektu widoku dokumentu.
+4. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> metody, określając obiekt widoku dokumentu.
 
-     Ta metoda witryn obiekt widoku dokumentu w oknie dokumentu.
+     Ta metoda witryn obiektu widoku dokumentu w oknie dokumentu.
 
-5. Wykonaj odpowiednie wywołania albo <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> metody.
+5. Wykonaj odpowiednie wywołania do <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> metody.
 
-     W tym momencie widok powinien być pełni zainicjowana i może zostać otwarty.
+     W tym momencie widok powinien być w pełni zainicjowany i gotowy do otwarcia.
 
-6. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metodę, aby wyświetlić, a następnie otwórz widok.
+6. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metody, aby pokazać i otworzyć widok.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)
-- [Instrukcje: Otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md)
-- [Instrukcje: Otwieranie edytorów dla otwartych dokumentów](../extensibility/how-to-open-editors-for-open-documents.md)
+- [Jak: Otwórz edytory standardowe](../extensibility/how-to-open-standard-editors.md)
+- [Jak: Otwieranie edytorów otwartych dokumentów](../extensibility/how-to-open-editors-for-open-documents.md)

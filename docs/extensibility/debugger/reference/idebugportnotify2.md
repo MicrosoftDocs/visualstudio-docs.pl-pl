@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2 | Dokumentacja firmy Microsoft
+title: IDebugPortNotify2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2 interface
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1b1934a73e096200eba1370320cc0b55eb46ac5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 49d3d1161d488ed4a9e12b7af6b70bf336c9f286
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308899"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724918"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
-Ten interfejs rejestry lub wyrejestrowuje program, który może być debugowany przy użyciu portu, na którym jest uruchomiona na.
+Ten interfejs rejestruje lub wyrejestrowyje program, który może być debugowany za pomocą portu, na który jest uruchomiony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,29 +29,29 @@ IDebugPortNotify2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawcy niestandardowego portu implementuje ten interfejs obsługuje dodawanie i usuwanie programów z portu. Jest on zwykle implementowany w ten sam obiekt, który implementuje [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfejsu.
+ Dostawca portu niestandardowego implementuje ten interfejs do obsługi dodawania i usuwania programów z portu. Zazwyczaj jest zaimplementowany na tym samym obiekcie, który implementuje interfejs [IDebugPort2.](../../../extensibility/debugger/reference/idebugport2.md)
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [QueryInterface](/cpp/atl/queryinterface) na `IDebugPort2` interfejsu zwraca ten interfejs. Ponadto po wywołaniu [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) zwraca ten interfejs. Aparat debugowania można zobaczyć ten interfejs jako parametr do [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).
+ Wywołanie [QueryInterface](/cpp/atl/queryinterface) w `IDebugPort2` interfejsie zwraca ten interfejs. Ponadto wywołanie [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) zwraca ten interfejs. Aparat debugowania może zobaczyć ten interfejs jako parametr [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody `IDebugPortNotify2`.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli `IDebugPortNotify2`przedstawiono metody .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Rejestruje program, który może być debugowany przy użyciu portu, na którym jest uruchomiona na.|
-|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Wyrejestrowuje program, który może być debugowany z portu, na którym jest uruchomiona na.|
+|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Rejestruje program, który może być debugowany za pomocą portu, na który jest uruchomiony.|
+|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Wyrejestrowanie programu, który może być debugowany z portu, na który jest uruchomiony.|
 
 ## <a name="remarks"></a>Uwagi
- Jeśli port debugowania nie ma sposobu określenia, kiedy załadowany lub zwolnione programy, dostawca port niestandardowy, należy zaimplementować ten interfejs. Wszystkie programy, które są ładowane do debugowania za pośrednictwem określonego portu są śledzone za pomocą tego interfejsu.
+ O ile port debugowania nie ma sposobu, aby wiedzieć, kiedy programy są ładowane lub zwalniane, dostawca portu niestandardowego musi zaimplementować ten interfejs. Wszystkie programy, które są ładowane do debugowania za pośrednictwem określonego portu są śledzone za pomocą tego interfejsu.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

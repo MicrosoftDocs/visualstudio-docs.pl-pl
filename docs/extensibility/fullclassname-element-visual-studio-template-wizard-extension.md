@@ -1,5 +1,5 @@
 ---
-title: FullClassName, element (rozszerzenie Kreatora szablonów programu VS)
+title: Element FullClassName (rozszerzenie kreatora szablonów VS)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63b7e480944e8f5519db1c9cfd123c07a0cf6208
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3e533fdf5b5497b17949581801721136b18bc2d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342630"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711422"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName, element (rozszerzenie Kreatora szablonów programu Visual Studio)
-W pełni kwalifikowaną nazwę klasy, która implementuje `IWizard` interfejsu.
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Element FullClassName (rozszerzenie kreatora szablonów programu Visual Studio)
+W pełni kwalifikowana nazwa klasy, `IWizard` która implementuje interfejs.
 
- \<VSTemplate > \<wizardextension — >... \<FullClassName>
+ \<VSTemplate> \<WizardExtension> ... \<> FullClassName
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,18 +44,18 @@ W pełni kwalifikowaną nazwę klasy, która implementuje `IWizard` interfejsu.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Wizardextension —](../extensibility/wizardextension-element-visual-studio-templates.md)|Zawiera elementy rejestracji dostosowywania Kreatora szablonu.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Zawiera elementy rejestracji do dostosowywania kreatora szablonów.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Ten tekst Określa klasę, która implementuje `IWizard` interfejsu. Określona klasa muszą znajdować się w zestawie określonym przez [zestawu](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elementu.
+ Ten tekst określa klasę, która `IWizard` implementuje interfejs. Określona klasa musi istnieć w zestawie określonym przez [Element Zestawu.](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)
 
 ## <a name="remarks"></a>Uwagi
- `FullClassName` jest wymaganym elementem podrzędnym elementu `WizardExtension`.
+ `FullClassName`jest wymaganym elementem `WizardExtension`podrzędnym .
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon standardowy projekt [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.
+ Poniższy przykład ilustruje metadane dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] standardowego szablonu projektu dla aplikacji systemu Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -85,7 +85,7 @@ W pełni kwalifikowaną nazwę klasy, która implementuje `IWizard` interfejsu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Jak: Używanie kreatorów z szablonami projektów](../extensibility/how-to-use-wizards-with-project-templates.md)

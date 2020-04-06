@@ -1,47 +1,47 @@
 ---
-title: Kontrola źródła | Dokumentacja firmy Microsoft
+title: Kontrola źródła | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK]
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12b6cc2b4218f8bf00d338c609442d217ae3678f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8ff7904e9abc3df8ed36f8c196ce4c1175b4d9af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322464"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704988"
 ---
 # <a name="source-control"></a>Kontrola źródła
-W tej sekcji omówiono opcje implementowania kontroli źródła jako zintegrowaną funkcją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], za pomocą wtyczki kontroli źródła lub pakietu VSPackage kontroli źródła.
+W tej sekcji omówiono opcje implementowania kontroli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]źródła jako zintegrowanej funkcji , za pośrednictwem wtyczki kontroli źródła lub formantu źródła VSPackage.
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Podstawy](../../extensibility/internals/source-control-integration-essentials.md)
+- [Essentials](../../extensibility/internals/source-control-integration-essentials.md)
 
- Przedstawia informacje o ważne informacje, które musi mieć, aby rozpocząć pracę z kontrolą źródła.
+ Przedstawia ważne informacje, które należy podjąć, aby rozpocząć pracę z kontrolą źródła.
 
 - [Omówienie](../../extensibility/internals/source-control-integration-overview.md)
 
- Przegląd dwie opcje dostępne do wykonywania kontroli źródła.
+ Omówienie dwóch dostępnych opcji implementowania kontroli źródła.
 
 - [Tworzenie wtyczki kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- W tym artykule omówiono sposób tworzenia wtyczki kontroli źródła dostarczającego funkcji kontroli źródła przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika kontroli źródła (UI).
+ W tym artykule omówiono sposób tworzenia wtyczki kontroli źródła, która dostarcza funkcje kontroli źródła za pośrednictwem interfejsu użytkownika kontroli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródła (UI).
 
 - [Tworzenie pakietu VSPackage kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- W tym artykule omówiono sposób tworzenia kontroli źródła pakietu VSPackage, który nie tylko zapewnia funkcji kontroli źródła, ale mogą być używane do dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródłowej kontrolki interfejsu użytkownika.
+ W tym artykule omówiono sposób tworzenia formantu źródła VSPackage, który nie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tylko dostarcza funkcje kontroli źródła, ale może służyć do dostosowywania interfejsu użytkownika kontroli źródła.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)
 
- Dokumentacja interfejsu API wtyczki kontroli źródła.
+ Odwołanie do interfejsu API wtyczki kontroli źródła.
 
 - [Rozszerzanie projektów](../../extensibility/extending-projects.md)
 
- Opisuje sposób używania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projekty i rozwiązania do organizowania plików kodu i plików zasobów i sposób implementowania kontroli źródła.
+ W tym [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] artykule opisano, jak używać projektów i rozwiązań do organizowania plików kodu i plików zasobów oraz jak zaimplementować kontrolę źródła.

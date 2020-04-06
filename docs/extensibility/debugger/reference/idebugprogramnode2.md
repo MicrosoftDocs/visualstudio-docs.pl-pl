@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2 | Dokumentacja firmy Microsoft
+title: IDebugProgramNode2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2 interface
 ms.assetid: 80e511d8-9b40-4a85-aa5d-952fa5ee6ae7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6a48f660302d39c9cfa75503ac7ca4a8c526a7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e6eac7c97b9d375f32e36a372d6f31175c79098
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351080"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721912"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 Ten interfejs reprezentuje program, który może być debugowany.
@@ -29,39 +29,39 @@ IDebugProgramNode2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) lub dostawcy niestandardowego portu implementuje ten interfejs do reprezentowania program, który może być debugowany. Ten interfejs jest zwykle implementowany w ten sam obiekt, który implementuje [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejsu. Ten interfejs jest zarejestrowane w usłudze [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] przez wywołanie metody [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
+ Aparat debugowania (DE) lub dostawca portu niestandardowego implementuje ten interfejs do reprezentowania programu, który może być debugowany. Ten interfejs jest zazwyczaj implementowane na tym samym obiekcie, który implementuje interfejs [IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md) Ten interfejs jest [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zarejestrowany przez [wywołanie PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołaj [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) do zwrócenia tego interfejsu. Dostawcy niestandardowego portu otrzyma ten interfejs, za pomocą wywołania [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). DE otrzyma ten interfejs, za pomocą wywołania [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md).
+ Wywołanie [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) do zwrócenia tego interfejsu. Dostawca portu niestandardowego odbiera ten interfejs za pośrednictwem wywołania [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). DE odbiera ten interfejs za pośrednictwem wywołania [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody `IDebugProgramNode2`.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli `IDebugProgramNode2`przedstawiono metody .
 
 |Metoda|Opis|
 |------------|-----------------|
 |[GetProgramName](../../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)|Pobiera nazwę programu.|
-|[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|Pobiera nazwę procesu hostingu programu.|
-|[GetHostPid](../../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)|Pobiera identyfikator procesu systemu dla procesu hostingu programu.|
-|[GetHostMachineName_V7](../../../extensibility/debugger/reference/idebugprogramnode2-gethostmachinename-v7.md)|PRZESTARZAŁE. NIE NALEŻY UŻYWAĆ.|
-|[Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)|PRZESTARZAŁE. NIE NALEŻY UŻYWAĆ. Zobacz [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfejs alternatywnym podejściem.|
-|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)|Pobiera nazwę i identyfikator DE program został uruchomiony.|
-|[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|PRZESTARZAŁE. NIE NALEŻY UŻYWAĆ.|
+|[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|Pobiera nazwę procesu hosting programu.|
+|[GetHostPid](../../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)|Pobiera identyfikator procesu systemowego dla procesu hostingu programu.|
+|[GetHostMachineName_V7](../../../extensibility/debugger/reference/idebugprogramnode2-gethostmachinename-v7.md)|Przestarzałe. NIE UŻYWAĆ.|
+|[Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)|Przestarzałe. NIE UŻYWAĆ. Zobacz interfejs [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) dla alternatywnego podejścia.|
+|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)|Pobiera nazwę i identyfikator DE z uruchomionym tym programem.|
+|[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|Przestarzałe. NIE UŻYWAĆ.|
 
 ## <a name="remarks"></a>Uwagi
- Menedżer debugowania sesji (SDM) zwykle wywołuje [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) uzyskać ten interfejs.
+ Menedżer debugowania sesji (SDM) zazwyczaj wywołuje [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) w celu uzyskania tego interfejsu.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: Msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
 - [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)
 - [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)
-- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
 - [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

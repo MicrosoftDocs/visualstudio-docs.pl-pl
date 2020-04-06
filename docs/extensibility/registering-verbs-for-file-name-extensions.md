@@ -1,46 +1,46 @@
 ---
-title: Rejestrowanie zleceń dla rozszerzeń nazw plików | Dokumentacja firmy Microsoft
+title: Rejestrowanie zleceń dla rozszerzeń nazw plików | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af86781f771ec5516e212ba3df8fdf945cd8d6d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334217"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701531"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Rejestrowanie zleceń dla rozszerzeń nazw plików
-Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowanego akcję, która występuje po dwukrotnym kliknięciu pliku. Preferowane to, że akcja jest połączony z czasownika, na przykład otwarty, która odnosi się do akcji.
+Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowaną akcję, która występuje, gdy użytkownik kliknie dwukrotnie plik. Ta preferowana akcja jest powiązana z czasownikiem, na przykład otwartym, który odpowiada akcji.
 
- Możesz zarejestrować zlecenia, które są skojarzone z identyfikator programowy (ProgID) dla rozszerzenia za pomocą klucza powłoki znajdujących się w **HKEY_CLASSES_ROOT\{progid} \shell**. Aby uzyskać więcej informacji, zobacz [typy plików](/windows/desktop/shell/fa-file-types).
+ Zlecenia skojarzone z identyfikatorem programowym (ProgID) dla rozszerzenia można rejestrować przy użyciu klucza Powłoki znajdującego się w **HKEY_CLASSES_ROOT\{progid}\shell**. Aby uzyskać więcej informacji, zobacz [Typy plików](/windows/desktop/shell/fa-file-types).
 
-## <a name="register-standard-verbs"></a>Rejestrowanie zleceń standardowych
- System operacyjny rozpoznaje następujących zleceń standardowych:
+## <a name="register-standard-verbs"></a>Rejestrowanie czasowników standardowych
+ System operacyjny rozpoznaje następujące zlecenia standardowe:
 
 - Otwarcie
 
-- Edytowanie
+- Edytuj
 
-- Odtwarzanie
+- Graj.
 
 - Drukuj
 
 - Wersja zapoznawcza
 
-  Jeśli to możliwe, należy zarejestrować standardowy czasownika. Najbardziej typowe to Open zlecenie. Czasownik edycji należy użyć tylko wtedy, gdy istnieje wyraźna różnica pomiędzy otwierania pliku i edytowania pliku. Na przykład, otwierając *.htm* pliku wyświetla go w przeglądarce, natomiast edycji *.htm* rozpocznie edytora HTML. Zleceń standardowych są lokalizowane za pomocą ustawień regionalnych systemu operacyjnego.
+  Jeśli to możliwe, zarejestruj czasownik standardowy. Najczęstszym wyborem jest czasownik Otwarty. Zlecenia Edycja należy używać tylko wtedy, gdy istnieje wyraźna różnica między otwarciem pliku a edycją pliku. Na przykład otwarcie pliku *.htm* wyświetla go w przeglądarce, podczas gdy edycja pliku *.htm* uruchamia edytor HTML. Zlecenia standardowe są zlokalizowane w ustawieniach regionalnych systemu operacyjnego.
 
 > [!NOTE]
-> Podczas rejestrowania zleceń standardowych, nie należy ustawiać wartość domyślna dla otworzyć klucza. Wartość domyślna zawiera ciąg wyświetlany w menu. System operacyjny dostarcza ten ciąg dla zleceń standardowych.
+> Podczas rejestrowania zleceń standardowych nie należy ustawiać wartości domyślnej dla klucza Otwórz. Wartość domyślna zawiera ciąg wyświetlania w menu. System operacyjny dostarcza ten ciąg dla zleceń standardowych.
 
- Pliki projektu powinien być zarejestrowany w Uruchom nowe wystąpienie klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] po użytkownik otwiera plik. W poniższym przykładzie pokazano standardowy czasownika rejestracja [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu.
+ Pliki projektu powinny być zarejestrowane, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aby rozpocząć nowe wystąpienie, gdy użytkownik otwiera plik. Poniższy przykład ilustruje standardową [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] rejestrację czasownika dla projektu.
 
 ```
 [HKEY_CLASSES_ROOT\.csproj]
@@ -71,7 +71,7 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowanego akc
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""
 ```
 
- Aby otworzyć plik w istniejącym wystąpieniu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], zarejestruj DDEEXEC klucza. W poniższym przykładzie pokazano standardowy czasownika rejestracja [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs* pliku.
+ Aby otworzyć plik w istniejącym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], zarejestruj klucz DDEEXEC. Poniższy przykład ilustruje standardową [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] rejestrację czasownika dla pliku *cs.*
 
 ```
 [HKEY_CLASSES_ROOT\.cs]
@@ -105,11 +105,11 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowanego akc
 @="system"
 ```
 
-## <a name="set-the-default-verb"></a>Ustaw zlecenie domyślne
- Polecenie domyślne jest akcja, która jest wykonywana po dwukrotnym kliknięciu pliku w Eksploratorze Windows. Polecenie domyślne jest zlecenie, określony jako wartość domyślna dla **HKEY_CLASSES_ROOT\\*progid*\Shell** klucza. Jeśli wartość nie zostanie określona, polecenie domyślne jest określone w pierwszym zlecenie **HKEY_CLASSES_ROOT\\*progid*\Shell** listy kluczy.
+## <a name="set-the-default-verb"></a>Ustawianie zlecenia domyślnego
+ Zleceniem domyślnym jest akcja wykonywana, gdy użytkownik kliknie dwukrotnie plik w Eksploratorze Windows. Zleceniem domyślnym jest zlecenie określone jako wartość domyślna dla **HKEY_CLASSES_ROOT\\*klucza progid*\Shell.** Jeśli nie określono żadnej wartości, zlecenie domyślne jest pierwszym zleceniem określonym na liście **\\*kluczy*HKEY_CLASSES_ROOT progid \Shell.**
 
 > [!NOTE]
-> Jeśli zamierzasz zmienić domyślne zlecenie rozszerzenia w ramach wdrożenia side-by-side, należy wziąć pod uwagę wpływ na instalacji i usuwania. Podczas instalacji zostanie zastąpiona oryginalna wartość domyślną.
+> Jeśli planujesz zmienić domyślny zlecenie dla rozszerzenia we wdrożeniu side-by-side, należy wziąć pod uwagę wpływ na instalację i usuwanie. Podczas instalacji oryginalna wartość domyślna jest zastępowany.
 
-## <a name="see-also"></a>Zobacz także
-- [Zarządzaj skojarzeniami plików side-by-side](../extensibility/managing-side-by-side-file-associations.md)
+## <a name="see-also"></a>Zobacz też
+- [Zarządzanie skojarzeniami plików obok siebie](../extensibility/managing-side-by-side-file-associations.md)

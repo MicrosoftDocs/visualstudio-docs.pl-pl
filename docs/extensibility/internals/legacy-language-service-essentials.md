@@ -1,5 +1,5 @@
 ---
-title: Podstawowe informacje o usłudze starszego języka | Dokumentacja firmy Microsoft
+title: Podstawowe usługi języka starszego | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,41 +8,41 @@ helpviewer_keywords:
 - Visual Studio, integrating programming languages
 - programming languages, integrating into Visual Studio
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6259adde14f6579b43d63adc44a66b02aea3957f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344888"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707424"
 ---
 # <a name="legacy-language-service-essentials"></a>Podstawowe informacje dotyczące starszej wersji usługi językowej
-Należy podać usługa języka, do integracji z językiem programowania w Visual Studio. W tym temacie opisano funkcje dostępne w usługach starszego języka.
+Należy zapewnić usługę języka, aby zintegrować język programowania z programem Visual Studio. W tym temacie opisano funkcje dostępne w starszych usługach językowych.
 
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi języka, zobacz [edytora i rozszerzenia usługi w języka](../../extensibility/editor-and-language-service-extensions.md).
+ Starsze usługi języka są implementowane jako część VSPackage, ale nowszym sposobem implementowania funkcji usługi języka jest użycie rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi językowej, zobacz [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zaleca się, aby rozpocząć korzystanie z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i umożliwi korzystanie z nowych funkcji edytora.
 
- Usługi starszego języka zapewniają następujące funkcje:
+ Starsze usługi językowe zapewniają następujące funkcje:
 
 |Funkcja|Opis|
 |-------------|-----------------|
-|Kolorowanie składni|Powoduje, że widok edytora wyświetlić różne kolory i style dla różnych elementów języka. To zróżnicowanie może ułatwić na odczytywanie i edytowanie plików.<br /><br /> Aby uzyskać ogólne informacje, zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Aby uzyskać informacje na temat tej funkcji w ramach pakietu zarządzanego (MPF), zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
-|Uzupełnianie instrukcji|Wykonuje instrukcję lub słowo kluczowe, które użytkownik rozpoczął, wpisując. Uzupełnianie instrukcji pomaga użytkownikom łatwiejsze, wprowadź trudne instrukcji z mniej wpisywania i mniej prawdopodobieństwo, że błąd.<br /><br /> Aby uzyskać ogólne informacje, zobacz [uzupełnianie instrukcji w starszej wersji usługi językowej](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Aby uzyskać informacji dotyczących tej funkcji w MPF, zobacz [uzupełnianie wyrazów w starszej wersji usługi językowej](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
-|Parowanie nawiasów klamrowych|Najważniejsze funkcje sparowane znaków, takich jak nawiasy klamrowe. Gdy użytkownik wpisuje znak zamykającego takich jak "}", parowanie nawiasów klamrowych wyróżnia odpowiadającego otwierania znaków, takich jak "{". Gdy istnieje kilka poziomów otaczającej znaków, ta funkcja pomaga użytkownikom, upewnij się, że otaczającego znaki są poprawnie połączone w pary.<br /><br /> Aby uzyskać informacji dotyczących tej funkcji w MPF, zobacz [parowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
-|Etykietki narzędzi informacji parametru|Wyświetla listę możliwych podpisów dla przeciążonej metody wpisywany przez użytkownika.<br /><br /> Aby uzyskać ogólne informacje, zobacz [o parametrach w starszej wersji usługi językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Aby uzyskać informacji dotyczących tej funkcji w MPF, zobacz [o parametrach w starszej wersji usługi językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
-|Znaczniki błędów|Wyświetla czerwoną linią falistą, znany także jako falista pod tekstem, który jest nieprawidłowy. Znaczniki błędów są zwykle używane do uświadomić użytkowników błędnie napisane słowa kluczowe, niezamknięty nawias, nieprawidłowe znaki i podobne błędy.<br /><br /> W klasach MPF znaczniki błędów są obsługiwane automatycznie w <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> metody <xref:Microsoft.VisualStudio.Package.AuthoringSink> klasy.|
+|Kolorowanie składni|Powoduje, że widok edytora wyświetla różne kolory i style czcionek dla różnych elementów języka. To rozróżnienie może ułatwić odczytywanie i edytowanie plików.<br /><br /> Aby uzyskać ogólne informacje, zobacz [Kolorowanie składni w starszej usłudze językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Aby uzyskać informacje na temat tej funkcji w ramach pakietu zarządzanego (MPF), zobacz [Kolorowanie składni w starszej usłudze językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
+|Uzupełnianie oświadczenia|Kończy instrukcję lub słowo kluczowe, które użytkownik rozpoczął wpisywanie. Uzupełnianie instrukcji ułatwia użytkownikom wprowadzanie trudnych instrukcji, mniej pisania i mniejsze szanse na błędy.<br /><br /> Aby uzyskać ogólne informacje, zobacz [Uzupełnianie instrukcji w starszej usłudze językowej](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Aby uzyskać informacje na temat tej funkcji w mpf, zobacz [Zakończenie programu Word w starszej usłudze języka](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
+|Dopasowywanie nawiasów klamrowych|Wyróżnia sparowane znaki, takie jak nawiasy klamrowe. Gdy użytkownik wpisuje znak zamykający, taki jak "}", dopasowanie nawiasu klamrowego wyróżnia odpowiedni znak otwarcia, na przykład "{". Gdy istnieje kilka poziomów otaczających znaków, ta funkcja pomaga użytkownikom potwierdzić, że otaczające znaki są sparowane poprawnie.<br /><br /> Aby uzyskać informacje na temat tej funkcji w mpf, zobacz [Dopasowywanie nawiasów klamrowych w starszej usłudze języka](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|
+|Etykietki narzędzi informacji o parametrach|Wyświetla listę możliwych podpisów dla przeciążona metoda, którą użytkownik aktualnie wpisuje.<br /><br /> Aby uzyskać ogólne informacje, zobacz [Informacje o parametrach w starszej usłudze językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Aby uzyskać informacje na temat tej funkcji w mpf, zobacz [Informacje o parametrach w starszej usłudze języka](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|
+|Znaczniki błędów|Wyświetla faliste czerwone podkreślenie, znane również jako faliste, pod tekstem, który jest niepoprawny syntaktycznie. Znaczniki błędów są zwykle używane do uświadomienia użytkownikom błędnie napisanych słów kluczowych, niezamkniętych nawiasów, nieprawidłowych znaków i podobnych błędów.<br /><br /> W klasach MPF znaczniki błędów są <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> obsługiwane automatycznie <xref:Microsoft.VisualStudio.Package.AuthoringSink> w metodzie klasy.|
 
- Wiele z tych funkcji wymaga usługi językowej do analizowania kodu źródłowego. Często można wykorzystać analizowania kodu dla kompilatora lub interpretera i tokenizowanie.
+ Wiele z tych funkcji wymaga usługi języka do analizowania kodu źródłowego. Często można ponownie użyć tokenizacji i analizowania kodu dla kompilatora lub interpretera.
 
- Następujące funkcje są związaną z pomocą techniczną dla języków programowania, ale nie są częścią usług językowych:
+ Następujące funkcje są związane z obsługą języków programowania, ale nie są częścią usług językowych:
 
 | Funkcja | Opis |
 |-----------------------| - |
-| Ewaluatory wyrażeń | Obsługuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugera, sprawdzanie poprawności punktów przerwania i przekazując lista wyrażeń do wyświetlenia w **Autos** okna debugowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [Obsługa usługi językowej do debugowania](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Narzędzia do przeglądania symboli | Obsługuje **przeglądarka obiektów**, **Widok klas**, **przeglądarka wywołań**, i **wyniki Znajdź Symbol**. |
+| Oceniający wyrażenia | Obsługuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugera, sprawdzając punkty przerwania i dostarczając listę wyrażeń, które mają być wyświetlane w oknie debugowania **autos.**<br /><br /> Aby uzyskać więcej informacji, zobacz [Obsługa usługi językowej dla debugowania](../../extensibility/internals/language-service-support-for-debugging.md). |
+| Narzędzia do przeglądania symboli | Obsługuje **przeglądarkę obiektów,** **widok klasy,** **przeglądarkę połączeń**i znajdź wyniki **symboli**. |

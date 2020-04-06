@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Dokumentacja firmy Microsoft
+title: IDebugEngineProgram2::WatchForThreadStep | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b3f8db95d6e74a2aa1d146bdd37a66803a8503f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345148"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730352"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-Oczekuje na wykonanie (lub zatrzymuje oczekiwania na wykonanie) występuje dla danego wątku.
+Zegarki do wykonania (lub zatrzymuje oglądania do wykonania) występuje na danym wątku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,25 +47,25 @@ int WatchForThreadStep( 
 
 ## <a name="parameters"></a>Parametry
 `pOriginatingProgram`\
-[in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt reprezentujący ten program jest zmieniana.
+[w] Obiekt [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) reprezentujący program jest stopniowany.
 
 `dwTid`\
-[in] Określa identyfikator wątku, aby obejrzeć.
+[w] Określa identyfikator wątku do obejrzenia.
 
 `fWatch`\
-[in] Niezerowa Koniunkcja (`TRUE`) oznacza start oczekiwania na wykonanie na wątku identyfikowane przez `dwTid`; w przeciwnym razie wartość zero (`FALSE`) oznacza, że zatrzymanie, oczekiwania na wykonanie na `dwTid`.
+[w] Non-zero`TRUE`( ) oznacza rozpoczęcie obserwacji wykonania `dwTid`na wątku zidentyfikowanym przez ; w przeciwnym`FALSE`razie zero ( ) `dwTid`oznacza zatrzymanie oglądania do wykonania na .
 
 `dwFrame`\
-[in] Określa indeks ramki, który określa typ kroku. Jeśli jest to wartość zero (0), typ kroku jest "wkroczyć do" i program powinna zostać przerwana w każdym przypadku, gdy wątek jest identyfikowane za pomocą `dwTid` wykonuje. Gdy `dwFrame` jest różna od zera, typ kroku jest "Przekrocz nad" i program ma zostać zatrzymana, tylko wtedy, gdy wątek jest identyfikowane za pomocą `dwTid` działa w ramce, którego indeks to równą lub większą na stosie niż `dwFrame`.
+[w] Określa indeks ramki sterujący typem kroku. Gdy jest to wartość wynosi zero (0), typ kroku jest "krok do" i `dwTid` program powinien zatrzymać, gdy wątek zidentyfikowany przez wykonuje. Gdy `dwFrame` nie ma zera, typ kroku jest "krok po kroku" i program `dwTid` powinien zatrzymać się tylko wtedy, gdy wątek identyfikowany przez jest uruchomiony w ramce, której indeks jest równy lub wyższy na stosie niż `dwFrame`.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Gdy Menedżer debugowania sesji (SDM) kroki programu identyfikowane przez `pOriginatingProgram` parametru, powiadomi użytkownika wszystkie inne programy dołączone przez wywołanie tej metody.
+ Gdy menedżer debugowania sesji (SDM) kroki programu, identyfikowane przez `pOriginatingProgram` parametr, powiadamia wszystkie inne dołączone programy, wywołując tę metodę.
 
- Ta metoda ma zastosowanie tylko do tego samego wątku przechodzenie krok po kroku.
+ Ta metoda ma zastosowanie tylko do stepping tego samego wątku.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

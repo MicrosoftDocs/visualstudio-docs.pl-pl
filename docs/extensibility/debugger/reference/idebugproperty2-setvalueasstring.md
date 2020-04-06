@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString | Dokumentacja firmy Microsoft
+title: IDebugProperty2::SetValueAsString | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsString
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27b481165cf95a97d7674d52d8553426dfb6417c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 112ded163f38b93e9918387d8ca6beafb8282647
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314608"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721242"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-Ustawia wartości właściwości z ciągu.
+Ustawia wartość właściwości z danego ciągu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,21 +45,21 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>Parametry
 `pszValue`\
-[in] Ciąg zawierający wartość do ustawienia.
+[w] Ciąg zawierający wartość, która ma zostać ustawiona.
 
 `nRadix`\
-[in] Podstawy do użycia w interpretacji wszelkie dane liczbowe. Może to być 0, aby podjąć próbę automatycznego określenia podstawy.
+[w] Radix do wykorzystania w interpretacji wszelkich informacji liczbowych. Może to być 0, aby spróbować określić radix automatycznie.
 
 `dwTimeout`\
-[in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
+[w] Określa maksymalny czas oczekiwania w milisekundach przed zwróceniem z tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono inne możliwe wartości.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono inne możliwe wartości.
 
 |Wartość|Opis|
 |-----------|-----------------|
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|Nie można przekonwertować ciągu na wartość właściwości lub nie można ustawić wartości właściwości.|
 |`E_SETVALUE_VALUE_IS_READONLY`|Właściwość jest tylko do odczytu.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

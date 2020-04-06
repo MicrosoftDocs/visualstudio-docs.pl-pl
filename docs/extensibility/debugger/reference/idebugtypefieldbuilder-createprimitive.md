@@ -1,25 +1,25 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePrimitive | Microsoft Docs
+title: IDebugTypeFieldBuilder::TworzeniePrimitive | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CreatePrimitive
 - IDebugTypeFieldBuilder::CreatePrimitive
 ms.assetid: 512c6ff0-97c5-409f-939f-4cc969bc4bb9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08394a62dc115f7bade9c417b8e39ba6b41eeb1b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c620bc91d034e5021bab1bbc16467336cd0592e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319846"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718416"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 Tworzy obiekt, który reprezentuje typ pierwotny.
@@ -42,13 +42,13 @@ int CreatePrimitive (
 
 ## <a name="parameters"></a>Parametry
 `dwElementType`\
-[in] Wartość z [corelementtype — wyliczenie](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) reprezentujący typu pierwotnego.
+[w] Wartość z [wyliczenia CorElementType,](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) który reprezentuje typ pierwotny.
 
 `pTypeField`\
-[out] Zwraca interfejs IDebugField dla nowego typu.
+[na zewnątrz] Zwraca interfejs IDebugField dla nowego typu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

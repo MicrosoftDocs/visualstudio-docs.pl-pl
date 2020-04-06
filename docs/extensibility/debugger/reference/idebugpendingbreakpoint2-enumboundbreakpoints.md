@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumBoundBreakpoints | Dokumentacja firmy Microsoft
+title: IDebugPendingBreakpoint2::EnumBoundBreakpoints | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - EnumBoundBreakpoints method
 - IDebugPendingBreakpoint2::EnumBoundBreakpoints method
 ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 017981e2762ec8246a1898f224700c3b689552b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6655b65ec2505794f29f5c6ad9142c8690ea474b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333777"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725866"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
-Wylicza wszystkie punkty przerwania, powiązany z tym oczekujący punkt przerwania.
+Wylicza wszystkie punkty przerwania powiązane z tym oczekującym punktem przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,13 +42,13 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
-[out] Zwraca [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) obiekt, który wylicza powiązane punkty przerwania.
+[na zewnątrz] Zwraca obiekt [IEnumDebugBoundBreakpoints2,](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) który wylicza powiązane punkty przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` wartość, jeśli punkt przerwania został usunięty.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.
+ W poniższym przykładzie pokazano, jak `CPendingBreakpoint` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)
@@ -120,6 +120,6 @@ HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** p
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

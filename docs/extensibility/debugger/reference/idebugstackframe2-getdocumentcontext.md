@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDocumentContext | Dokumentacja firmy Microsoft
+title: IDebugStackFrame2::GetDocumentContext | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetDocumentContext
 ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7b89c8114c65e25153beb6c66845ef66014fbf7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 362ee6b98699a32a3bfd6219d11ccf4c80d2a4be
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352125"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719773"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Pobiera kontekst dokumentu dla tej ramki stosu.
@@ -41,15 +41,15 @@ int GetDocumentContext ( 
 
 ## <a name="parameters"></a>Parametry
 `ppCxt`\
-[out] Zwraca [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekt, który reprezentuje bieżącą pozycję w dokumencie źródłowym.
+[na zewnątrz] Zwraca obiekt [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) reprezentujący bieżącą pozycję w dokumencie źródłowym.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest szybsza niż wywoływania [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) metody, a następnie wywołując [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) metody na kontekst kodu. Jednak nie ma żadnej gwarancji, każdy silnik debugowania (DE) będzie zaimplementować tę metodę.
+ Ta metoda jest szybsza niż wywołanie [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) metody, a następnie wywołanie [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) metody w kontekście kodu. Jednak nie jest gwarantowane, że każdy aparat debugowania (DE) zaimplementuje tę metodę.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)

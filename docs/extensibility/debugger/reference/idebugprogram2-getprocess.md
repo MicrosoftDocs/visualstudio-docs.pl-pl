@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProcess | Dokumentacja firmy Microsoft
+title: IDebugProgram2::GetProcess | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProcess
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b307fb7b4a25fc5a84b30eefd65e72b4f387a07d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aca1842e92e7e1c164a6468e6c1e94a352ef67c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313766"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722781"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
-Uzyskaj procesu, który tego programu.
+Pobierz proces, w który działa ten program.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,17 +41,17 @@ int GetProcess(
 
 ## <a name="parameters"></a>Parametry
 `ppProcess`\
-[out] Zwraca [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interfejs, który reprezentuje proces.
+[na zewnątrz] Zwraca interfejs [IDebugProcess2,](../../../extensibility/debugger/reference/idebugprocess2.md) który reprezentuje proces.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- O ile nie implementuje aparat debugowania (DE) [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) interfejsu, DE implementacja tej metody zawsze powinna zwrócić `E_NOTIMPL` DE nie może ustalić, który proces jest uruchomiony w i dlatego nie może spełnia implementacja tej metody.
+ Chyba że aparat debugowania (DE) implementuje interfejs [IDebugEngineLaunch2,](../../../extensibility/debugger/reference/idebugenginelaunch2.md) implementacja `E_NOTIMPL` DE tej metody zawsze powinna zostać zwracana, ponieważ DE nie może określić, który proces jest uruchomiony w i dlatego nie może spełnić implementacji tej metody.
 
- Implementowanie `IDebugEngineLaunch2` interfejs oznacza, że Niemcy musi wiedzieć, jak można utworzyć procesu; w związku z tym, DE implementacji [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejsu jest w stanie wiedzieć, jakie procesy jest uruchomiony w.
+ Implementacja `IDebugEngineLaunch2` interfejsu oznacza, że DE musi wiedzieć, jak utworzyć proces; w związku z tym de implementacji interfejsu [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) jest w stanie wiedzieć, w jakim procesie jest uruchomiony w.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

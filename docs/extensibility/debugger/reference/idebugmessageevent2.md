@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2 | Microsoft Docs
+title: IDebugMessageSavent2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMessageEvent2 interface
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: facb0b818ab8bd8babae59e6cdbd2b209a8cfda7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 180162988cbb09f98b7fc2e8f33f6b5d0ed322ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346842"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727362"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
-Ten interfejs jest używany przez aparat debugowania (DE), aby wysłać komunikat do programu Visual Studio, która wymaga odpowiedź od użytkownika.
+Ten interfejs jest używany przez aparat debugowania (DE) do wysyłania wiadomości do programu Visual Studio, która wymaga odpowiedzi od użytkownika.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,36 +29,36 @@ IDebugMessageEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- DE implementuje ten interfejs do wysyłania wiadomości do programu Visual Studio, która wymaga odpowiedź użytkownika. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](/cpp/atl/queryinterface) dostęp do `IDebugEvent2` interfejsu.
+ De implementuje ten interfejs, aby wysłać wiadomość do programu Visual Studio, który wymaga odpowiedzi użytkownika. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany na tym samym obiekcie co ten interfejs. Moduł SDM używa [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać dostęp do `IDebugEvent2` interfejsu.
 
- Implementację tego interfejsu muszą komunikować się wywołanie programu Visual Studio [SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) do DE. Na przykład, można to zrobić przy użyciu wiadomości opublikowane w usłudze komunikatów DE wątku lub obiekt implementujący ten interfejs może zawierać odwołanie do DE i wywoływania zwrotnego DE z odpowiedzią przekazany do `IDebugMessageEvent2::SetResponse`.
+ Implementacja tego interfejsu musi komunikować wywołanie programu Visual Studio [SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) do DE. Na przykład można to zrobić za pomocą wiadomości opublikowanej w wątku obsługi wiadomości DE lub obiekt implementujący ten interfejs może zawierać `IDebugMessageEvent2::SetResponse`odwołanie do DE i wywołać z powrotem do DE z odpowiedzią przekazywana do .
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- DE tworzy i wysyła tego obiektu zdarzenia, aby wyświetlić komunikat dla użytkownika, który wymaga odpowiedzi. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.
+ DE tworzy i wysyła ten obiekt zdarzenia, aby wyświetlić komunikat do użytkownika, który wymaga odpowiedzi. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) która jest dostarczana przez SDM, gdy jest dołączony do programu jest debugowany.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody `IDebugMessageEvent2`.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli `IDebugMessageEvent2`przedstawiono metody .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Pobiera komunikat do wyświetlenia.|
-|[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Ustawia odpowiedzi, jeśli występują w oknie komunikatu.|
+|[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Pobiera komunikat, który ma być wyświetlany.|
+|[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Ustawia odpowiedź, jeśli istnieje, z okna komunikatu.|
 
 ## <a name="remarks"></a>Uwagi
- DE będzie używać tego interfejsu, jeśli wymaga ona określoną odpowiedź od użytkownika dla danego komunikatu. Na przykład, jeśli DE pobiera komunikat "Odmowa dostępu" po próbie zdalnie dołączyć do programu, DE wysyła tego konkretnego komunikatu do programu Visual Studio w `IDebugMessageEvent2` zdarzenie z styl okna komunikatu `MB_RETRYCANCEL`. Dzięki temu użytkownikowi ponowić próbę lub anulować operacji dołączania.
+ DE użyje tego interfejsu, jeśli wymaga określonej odpowiedzi od użytkownika dla określonej wiadomości. Na przykład jeśli DE pobiera komunikat "Odmowa dostępu" po próbie zdalnego dołączenia do programu, `IDebugMessageEvent2` DE wysyła ten `MB_RETRYCANCEL`konkretny komunikat do programu Visual Studio w przypadku o stylu okna komunikatu . Dzięki temu użytkownik może ponowić próbę lub anulować operację dołączania.
 
- DE Określa, jak to jest komunikat do obsłużenia konwencjami funkcję Win32 `MessageBox` (zobacz [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) Aby uzyskać szczegółowe informacje).
+ DE określa, jak ten komunikat ma być obsługiwany przez następujące konwencje `MessageBox` funkcji Win32 (zobacz [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) szczegóły).
 
- Użyj [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) interfejs do wysyłania komunikatów do programu Visual Studio, które nie wymagają odpowiedź od użytkownika.
+ Użyj interfejsu [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) do wysyłania wiadomości do programu Visual Studio, które nie wymagają odpowiedzi od użytkownika.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

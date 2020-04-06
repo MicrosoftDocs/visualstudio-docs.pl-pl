@@ -1,25 +1,25 @@
 ---
-title: IDebugComPlusSymbolProvider::GetEntryPoint | Dokumentacja firmy Microsoft
+title: IDebugComPlusSymbolProvider::GetEntryPoint | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetEntryPoint
 - GetEntryPoint
 ms.assetid: 9640e121-1da1-41f9-8e66-76efca36baf2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 43b99524a409d6938fd38b2623a5ec715accbbaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c686659d2a3d5e81e8e466bf1707337842cf8317
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336793"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733899"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 Pobiera punkt wejścia aplikacji.
@@ -44,19 +44,19 @@ int GetEntryPoint(
 
 ## <a name="parameters"></a>Parametry
 `ulAppDomainID`\
-[in] Identyfikator domeny aplikacji.
+[w] Identyfikator domeny aplikacji.
 
 `guidModule`\
-[in] Unikatowy identyfikator dla modułu.
+[w] Unikatowy identyfikator modułu.
 
 `ppAddress`\
-[out] Zwraca punkt wejścia, reprezentowane przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
+[na zewnątrz] Zwraca punkt wejścia reprezentowany przez interfejs [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugSymbolProvider,** który udostępnia interfejs [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetEntryPoint(
@@ -90,5 +90,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

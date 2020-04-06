@@ -1,25 +1,25 @@
 ---
-title: Narzędzia usługi obrazów | Dokumentacja firmy Microsoft
+title: Narzędzia usług graficznych | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41b280581daa9ca54370429ae75eaab5c8551b7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2f5f1ff7cd573ff2524d35afc268858855540526
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315690"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707705"
 ---
 # <a name="image-service-tools"></a>Narzędzia usługi obrazów
-Zestaw SDK programu VS zawiera kilka narzędzi, które pomagają Konstruktorzy rozszerzenia, użyj usługi obrazów programu Visual Studio.
+Zestaw SDK usługi VS zawiera kilka narzędzi ułatwiających konstruktorom rozszerzeń korzystanie z usługi obrazów programu Visual Studio.
 
-- [Manifestu z zasobów](../../extensibility/internals/manifest-from-resources.md) narzędzie przyjmuje listę zasobów obrazu (PNG lub .xaml plików) i generuje plik manifestu obrazu.
+- Narzędzie [Manifest z zasobów](../../extensibility/internals/manifest-from-resources.md) przyjmuje listę zasobów obrazu (pliki png lub .xaml) i generuje plik manifestu obrazu.
 
-- [Manifestu do kodu](../../extensibility/internals/manifest-to-code.md) narzędzie przyjmuje plik manifestu obrazu i generuje plik otoki do użycia w języku C++, C#, VB lub vsct plików.
+- Narzędzie [Manifest do kodu](../../extensibility/internals/manifest-to-code.md) pobiera plik manifestu obrazu i generuje plik otoki do użycia w plikach C++, C#, VB lub .vsct.
 
-- [Przeglądarka biblioteki obrazów](../../extensibility/internals/image-library-viewer.md) obciążenia, edytowania i wyszukaj obraz manifestów.
+- [Przeglądarka bibliotek obrazów](../../extensibility/internals/image-library-viewer.md) może ładować, edytować i wyszukiwać manifesty obrazów.

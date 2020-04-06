@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType | Dokumentacja firmy Microsoft
+title: IDebugBreakpointResolution2::GetBreakpointType | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8e8d7c77b9020df577e611f8a27116fa7a7b6db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352884"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734807"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-Pobiera typ punktu przerwania reprezentowany przez to rozwiązanie.
+Pobiera typ punktu przerwania reprezentowane przez tę rozdzielczość.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ int GetBreakpointType( 
 
 ## <a name="parameters"></a>Parametry
 `pBPType`\
-[out] Zwraca wartość z zakresu od [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) wyliczenie, który określa typ tego punktu przerwania.
+[na zewnątrz] Zwraca wartość z wyliczenia [BP_TYPE,](../../../extensibility/debugger/reference/bp-type.md) która określa typ tego punktu przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca E_FAIL, jeśli `bpResLocation` pola w skojarzonej [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktura jest nieprawidłowa.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca E_FAIL, jeśli `bpResLocation` pole w skojarzonej strukturze [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) jest nieprawidłowe.
 
 ## <a name="remarks"></a>Uwagi
-Punkt przerwania może być na przykład kodu lub punkt przerwania danych.
+Punkt przerwania może być kod lub punkt przerwania danych, na przykład.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CDebugBreakpointResolution` obiekt ujawniający [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejsu.
+W poniższym przykładzie pokazano, jak `CDebugBreakpointResolution` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugBreakpointResolution2.](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
@@ -83,7 +83,7 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

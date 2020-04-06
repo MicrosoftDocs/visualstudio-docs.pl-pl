@@ -1,45 +1,45 @@
 ---
-title: Tworzenie rozszerzenia za pomocą pakietu VSPackage | Dokumentacja firmy Microsoft
+title: Tworzenie rozszerzenia za pomocą pakietu VSPackage | Dokumenty firmy Microsoft
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b66aef72d9af1ef40a061d1a82d18161a416586
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1037ebcc58cc4183e6f02119bc7b46abfc132f52
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345360"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739525"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Tworzenie rozszerzenia za pomocą pakietu VSPackage
 
-W tym instruktażu dowiesz się, jak utworzyć projekt VSIX i Dodaj element projektu pakietu VSPackage. Używamy pakietu VSPackage można pobrać usługi powłoki interfejsu użytkownika, aby wyświetlić okno komunikatu.
+W tym przewodniku pokazano, jak utworzyć projekt VSIX i dodać element projektu VSPackage. Użyjemy VSPackage, aby uzyskać usługę powłoki interfejsu użytkownika w celu wyświetlenia okna komunikatu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-vspackage"></a>Tworzenie pakietu VSPackage
 
-1. Utwórz projekt VSIX, o nazwie **FirstPackage**. Można znaleźć szablonu projektu VSIX w **nowy projekt** okna dialogowego, wyszukując pozycję "vsix".
+1. Utwórz projekt VSIX o nazwie **FirstPackage**. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt,** wyszukując "vsix".
 
-2. Po otwarciu projektu, należy dodać szablon elementu pakietu Visual Studio o nazwie **FirstPackage**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#**  > **rozszerzalności** i wybierz **pakiet rozszerzeń Visual Studio**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *FirstPackage.cs*.
+2. Po otwarciu projektu dodaj szablon elementu pakietu programu Visual Studio o nazwie **FirstPackage**. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** > **nowy element**. W oknie dialogowym **Dodawanie nowego elementu** przejdź do pozycji**Rozszerzalność** **programu Visual C#** > i wybierz pozycję **Pakiet programu Visual Studio**. W polu **Nazwa** u dołu okna zmień nazwę pliku polecenia na *FirstPackage.cs*.
 
-3. Skompiluj projekt, a następnie rozpocząć debugowanie.
+3. Skompiluj projekt i rozpocznij debugowanie.
 
-    Pojawi się doświadczalnym wystąpieniu programu Visual Studio. Aby uzyskać więcej informacji na temat wystąpienia eksperymentalnego zobacz [wystąpienie doświadczalne](../extensibility/the-experimental-instance.md).
+    Pojawi się eksperymentalne wystąpienie programu Visual Studio. Aby uzyskać więcej informacji na temat wystąpienia eksperymentalnego, zobacz [Wystąpienie eksperymentalne](../extensibility/the-experimental-instance.md).
 
-4. W doświadczalnym wystąpieniu Otwórz **narzędzia** > **rozszerzenia i aktualizacje** okna. Powinien zostać wyświetlony **FirstPackage** rozszerzenia w tym miejscu. (Jeśli otworzysz **rozszerzenia i aktualizacje** wystąpienia pracy programu Visual Studio, nie będziesz widzieć **FirstPackage**).
+4. W wystąpieniu eksperymentalnym otwórz okno**Rozszerzenia i aktualizacje** **narzędzi.** >  W tym miejscu powinno zostać wyświetlene rozszerzenie **FirstPackage.** (Jeśli otworzysz **rozszerzenia i aktualizacje** w wystąpieniu roboczym programu Visual Studio, nie zobaczysz **funkcji FirstPackage).**
 
-## <a name="load-the-vspackage"></a>Ładowanie pakietu VSPackage
+## <a name="load-the-vspackage"></a>Załaduj pakiet VSPackage
 
-Rozszerzenie nie ładuje w tym momencie, ponieważ nie widać niczego, co powoduje, że można załadować. Zazwyczaj można załadować rozszerzenia podczas interakcji z jego interfejsie użytkownika (kliknięcia polecenia menu, otwierając okno narzędzia) lub przez określenie, czy pakietu VSPackage powinny zostać załadowane w określonym kontekście interfejsu użytkownika. Aby uzyskać więcej informacji na temat ładowania interfejsu użytkownika i pakietów VSPackage kontekstów zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md). Do wykonania tej procedury pokażemy sposób ładowania pakietu VSPackage, gdy rozwiązanie jest otwarte.
+W tym momencie rozszerzenie nie ładuje się, ponieważ nie ma nic, co powoduje, że do załadowania. Zazwyczaj można załadować rozszerzenie podczas interakcji z jego interfejsu użytkownika (kliknięcie polecenia menu, otwarcie okna narzędzia) lub określając, że VSPackage należy załadować w określonym kontekście interfejsu użytkownika. Aby uzyskać więcej informacji na temat ładowania vspackages i kontekstów interfejsu użytkownika, zobacz [Ładowanie VSPackages](../extensibility/loading-vspackages.md). W tej procedurze pokażemy, jak załadować VSPackage, gdy rozwiązanie jest otwarte.
 
-1. Otwórz *FirstPackage.cs* pliku. Wyszukaj deklaracji `FirstPackage` klasy. Zastąp istniejące atrybuty z następującymi atrybutami:
+1. Otwórz plik *FirstPackage.cs.* Poszukaj deklaracji `FirstPackage` klasy. Zastąp istniejące atrybuty następującymi atrybutami:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -49,7 +49,7 @@ Rozszerzenie nie ładuje w tym momencie, ponieważ nie widać niczego, co powodu
     public sealed class FirstPackage : Package
     ```
 
-2. Dodajmy komunikat, który informuje nas o tym, że został załadowany pakietu VSPackage. Używamy pakietu VSPackage `Initialize()` metodę, aby to zrobić, ponieważ mogą pobrać program Visual Studio services tylko wtedy, gdy pakietu VSPackage zostały zlokalizowane. (Aby uzyskać więcej informacji na temat uzyskiwania usług zobacz [jak: Usługi](../extensibility/how-to-get-a-service.md).) Zastąp `Initialize()` metody `FirstPackage` z kodem, który pobiera <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> usługa, która pobiera <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejsu i wywołuje jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> metody.
+2. Dodajmy komunikat, który informuje nas, że vspackage został załadowany. Używamy `Initialize()` metody VSPackage, aby to zrobić, ponieważ można uzyskać usługi Visual Studio tylko po vsPackage został umiejscowiony. (Aby uzyskać więcej informacji na temat uzyskiwania usług, zobacz [Jak: Pobierz usługę](../extensibility/how-to-get-a-service.md).) `Initialize()` Zastąp `FirstPackage` metodę z <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> kodem, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> który pobiera usługę, pobiera interfejs i wywołuje jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> metodę.
 
     ```csharp
     protected override void Initialize()
@@ -74,6 +74,6 @@ Rozszerzenie nie ładuje w tym momencie, ponieważ nie widać niczego, co powodu
     }
     ```
 
-3. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
+3. Skompiluj projekt i rozpocznij debugowanie. Pojawi się eksperymentalne wystąpienie.
 
-4. Otwórz rozwiązanie w doświadczalnym wystąpieniu. Powinien zostać wyświetlony komunikat informujący, że **pierwszego pakietu wewnątrz Initialize()** .
+4. Otwórz rozwiązanie w wystąpieniu eksperymentalnym. Powinno zostać wyświetlone okno komunikatu **z komunikatem Pierwszy pakiet wewnątrz inicjowania()**.

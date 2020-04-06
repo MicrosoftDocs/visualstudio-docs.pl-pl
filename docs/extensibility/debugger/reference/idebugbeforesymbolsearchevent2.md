@@ -1,24 +1,24 @@
 ---
-title: IDebugBeforeSymbolSearchEvent2 | Dokumentacja firmy Microsoft
+title: IDebugBeforeSymbolSearchEvent2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBeforeSymbolSearchEvent2 interface
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e71b6059f19840311075261940942010f2e99e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9d6f3f78e165ba2f4453131b7b459e3061243ff6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349557"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736111"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
-Aparat debugowania (DE) wysyła ten interfejs Menedżer debugowania sesji (SDM), aby ustawić stan paska komunikatów podczas ładowania symboli.
+Aparat debugowania (DE) wysyła ten interfejs do menedżera debugowania sesji (SDM), aby ustawić komunikat paska stanu podczas ładowania symbolu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -27,21 +27,21 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- DE implementuje ten interfejs, gdy komunikat na pasku stanu musi ustawić podczas ładowania symboli. Ten interfejs jest implementowany tylko przez silniki debugowania, które pracować, lub są częścią interpretery skryptu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu (SDM używa **QueryInterface** dostęp do **IDebugEvent2** interfejsu).
+ DE implementuje ten interfejs, gdy musi ustawić komunikat paska stanu podczas ładowania symbolu. Ten interfejs jest implementowany tylko przez aparaty debugowania, które współpracują z interpreterami skryptów lub są ich częścią. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany na tym samym obiekcie co ten interfejs (SDM używa **QueryInterface,** aby uzyskać dostęp do interfejsu **IDebugEvent2).**
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- DE tworzy i wysyła tego obiektu zdarzenia, gdy komunikat na pasku stanu musi ustawić podczas ładowania symboli. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego dostarczonych przez model SDM, gdy jest on dołączony do debugowanego programu.
+ DE tworzy i wysyła ten obiekt zdarzenia, gdy musi ustawić komunikat paska stanu podczas ładowania symbolu. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) dostarczonej przez SDM po podłączeniu do programu, który jest debugowany.
 
 ## <a name="methods"></a>Metody
- W poniższej tabeli przedstawiono metody `IDebugBeforeSymbolSearchEvent2`.
+ W poniższej tabeli `IDebugBeforeSymbolSearchEvent2`przedstawiono metody .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Pobiera nazwę aktualnie debugowanego modułu.|
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Pobiera nazwę modułu aktualnie debugowanego.|
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: Msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

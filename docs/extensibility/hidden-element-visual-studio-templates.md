@@ -1,5 +1,5 @@
 ---
-title: Ukryty Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Ukryty element (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341045"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711108"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden — element (szablony Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Ukryty element (szablony programu Visual Studio)
 
-Określa, czy szablon jest wyświetlany w jeden nowy projekt lub **Dodaj nowy element** okien dialogowych.
+Określa, czy szablon jest wyświetlany w oknach dialogowych nowy projekt, czy w oknie dialogowym **Dodawanie nowego elementu.**
 
 ```xml
 <VSTemplate>
@@ -53,23 +53,23 @@ Brak.
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
 
 Wartość tekstowa jest wymagana.
 
-Tekst musi być albo `true` lub `false`oznaczający Określa, czy szablon pojawi się w **nowy projekt** lub **Dodaj nowy element** okien dialogowych.
+Tekst musi być `true` albo `false`, wskazując, czy szablon pojawi się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element.**
 
 ## <a name="remarks"></a>Uwagi
 
-`Hidden` element jest opcjonalny.
+`Hidden`jest elementem opcjonalnym.
 
-Jeśli zostanie określony, nie inne elementy podrzędne `TemplateData` elementu są wymagane.
+Jeśli określono, nie inne `TemplateData` elementy podrzędne elementu są wymagane.
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie pokazano metadanych C# szablonu.
+Poniższy przykład ilustruje metadane dla szablonu języka C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,7 +96,7 @@ W poniższym przykładzie pokazano metadanych C# szablonu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

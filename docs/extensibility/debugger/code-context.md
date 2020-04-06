@@ -1,35 +1,35 @@
 ---
-title: Kontekst kodu | Dokumentacja firmy Microsoft
+title: Kontekst kodu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11554be1411e63c97c8afde7cc3a819486e862ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6424c1182f30b1bbfe6c166209b94afb7ec45549
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351328"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739151"
 ---
 # <a name="code-context"></a>Kontekst kodu
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania **kontekst kodu**:
+Podczas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania **kontekst kodu:**
 
-- Udostępnia abstrakcję pozycji w kodzie, ponieważ wiadomo, że aparat debugowania (DE). Dla większości architektury w czasie wykonywania, kontekst kodu można traktować jako adres w usłudze stream instrukcji programu. Nietradycyjnych języków, w którym kod nie może być reprezentowany przez instrukcje, kontekst kodu mogą być reprezentowane za pomocą innych środków.
+- Zapewnia abstrakcję pozycji w kodzie, jak znany aparat debugowania (DE). W przypadku większości architektur w czasie wykonywania obecnie kontekst kodu można traktować jako adres w strumieniu instrukcji programu. W przypadku języków nietradycyjnych, w których kod może nie być reprezentowany przez instrukcje, kontekst kodu może być reprezentowany za pomocą innych środków.
 
-- W tym artykule opisano bieżącą pozycję w strumieniu wykonywania programu, który debugujesz.
+- Opisuje bieżącą pozycję w strumieniu wykonywania programu, który debugujesz.
 
-- Istnieje tylko wtedy, gdy programu zostało zatrzymane w punkcie przerwania.
+- Istnieje tylko wtedy, gdy program został zatrzymany w punkcie przerwania.
 
-- Nie ma skojarzonego kontekstu.
+- Ma skojarzony kontekst dokumentu.
 
-- Jest implementowana przez [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfejsu.
+- Jest implementowany przez interfejs [IDebugCodeContext2.](../../extensibility/debugger/reference/idebugcodecontext2.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Kontekst dokumentu](../../extensibility/debugger/document-context.md)
 - [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)

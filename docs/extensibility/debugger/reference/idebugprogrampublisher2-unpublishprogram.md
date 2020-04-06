@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs
+title: IDebugProgramPublisher2::UnpublishProgram | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgram
 ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0bc394623731679a1172e85a499b1567e15042e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1fa3d111559a2c82fe36def202e5c1cf120c5202
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343252"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721586"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Sprawia, że program jest niedostępny do debugowania.
@@ -41,14 +41,14 @@ int UnpublishProgram(
 
 ## <a name="parameters"></a>Parametry
 `pDebuggeeInterface`\
-[in] `IUnknown` Interfejsu do programu. To jest taka sama wartość przekazana do [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody i jednoznacznie identyfikuje programu usuwany (oznacza to, że jest ona używana jako plik cookie).
+[w] Interfejs `IUnknown` do programu. Jest to ta sama wartość dostarczona do [Metody PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) i jednoznacznie identyfikuje usuwany program (oznacza to, że jest używany jako plik cookie).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Aby udostępnić program aparaty debugowania i Menedżer debugowania sesji, należy użyć [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody.
+ Aby udostępnić program aparatom debugowania i menedżerowi debugowania sesji, użyj metody [PublishProgram.](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

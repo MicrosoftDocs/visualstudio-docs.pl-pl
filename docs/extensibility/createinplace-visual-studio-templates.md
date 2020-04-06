@@ -1,5 +1,5 @@
 ---
-title: Createinplace — element (szablony Visual Studio)
+title: CreateInPlace element (szablony programu Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da14da9606c2fcd84f053aff30139eec5751c673
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341780"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739661"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>Createinplace — element (szablony Visual Studio)
-Określa, czy należy utworzyć projekt i przeprowadzić wymiany parametru w określonej lokalizacji lub przeprowadzić wymiany parametru w lokalizacji tymczasowej, a następnie zapisujesz projekt do określonej lokalizacji.
+# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace element (szablony programu Visual Studio)
+Określa, czy projekt i wykonanie zastępowania parametrów w określonej lokalizacji, czy też zastąpienie parametrów w lokalizacji tymczasowej, a następnie zapisanie projektu w określonej lokalizacji.
 
- \<VSTemplate> \<TemplateData> \<CreateInPlace>
+ \<> \<> TemplateData \<> CreateInPlace
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,18 +45,18 @@ Określa, czy należy utworzyć projekt i przeprowadzić wymiany parametru w okr
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być albo `true` lub `false`. Jeśli `true`, projekt zostanie utworzony i wymiany parametru odbywa się w lokalizacji określonej w **nowy projekt** okno dialogowe. Jeśli `false`projektu zostaną skopiowane do określonej lokalizacji i wymiany parametru odbywa się w lokalizacji tymczasowej.
+ Tekst musi być `true` albo `false`lub . Jeśli `true`projekt zostanie utworzony, a zastąpienie parametrów zostanie wykonane w lokalizacji określonej w oknie dialogowym **Nowy projekt.** Jeśli `false`zastąpienie parametrów jest wykonywane w lokalizacji tymczasowej, a projekt jest kopiowany do określonej lokalizacji.
 
 ## <a name="remarks"></a>Uwagi
- `CreateInPlace` element jest opcjonalny. Wartość domyślna to `true`.
+ `CreateInPlace`jest elementem opcjonalnym. Wartością domyślną jest `true`.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.
+ Poniższy przykład ilustruje metadane szablonu. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -83,6 +83,6 @@ Określa, czy należy utworzyć projekt i przeprowadzić wymiany parametru w okr
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

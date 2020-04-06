@@ -1,5 +1,5 @@
 ---
-title: CustomDataSignature, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element CustomDataSignature (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,22 +7,22 @@ helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db2b4d089495245d1a37469df1dc43a19be31866
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351978"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739442"
 ---
-# <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature, element (szablony Visual Studio)
-Określa podpis tekstowy do lokalizowania danych niestandardowych.
+# <a name="customdatasignature-element-visual-studio-templates"></a>Element CustomDataSignature (szablony programu Visual Studio)
+Określa podpis tekstowy, aby zlokalizować dane niestandardowe.
 
- \<VSTemplate> \<TemplateData> \<CustomDataSignature>
+ \<> \<templatedata> \<>
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ Określa podpis tekstowy do lokalizowania danych niestandardowych.
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst jest ciąg, który ma podpis tekst, który jest wymagany do zlokalizowania danych niestandardowych.
+ Tekst jest ciągiem, który ma podpis tekstowy, który jest wymagany do zlokalizowania danych niestandardowych.
 
 ## <a name="remarks"></a>Uwagi
- `CustomDataSignature` element jest opcjonalny.
+ `CustomDataSignature`jest elementem opcjonalnym.
 
-## <a name="see-also"></a>Zobacz także
-- [Visual Studio Template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

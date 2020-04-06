@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID | Microsoft Docs
+title: IDebugProperty3::DestroyObjectID | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::DestroyObjectID
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c117cab17340f50a1ed580d081c3291308ec0d9d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f465bc06712c5032c6e90288ebd02406de4f2330
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308883"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721200"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-Niszczy Unikatowy identyfikator skojarzony z tą właściwością wskazujący, że obiekt wywołujący nie jest już dba do identyfikowania tej właściwości, które jednoznacznie ze wszystkich innych właściwości.
+Niszczy unikatowy identyfikator skojarzony z tą właściwością, wskazując, że obiekt wywołujący nie dba już o identyfikowanie tej właściwości w unikatowy sposób ze wszystkich innych właściwości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,13 +38,13 @@ int DestroyObjectID();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli aparat debugowania nie ma konieczności obsługi unikatowych identyfikatorów dla właściwości (ponieważ jest on już śledzi je jednoznacznie wewnętrznie), a następnie można po prostu zwrócenia `E_NOTIMPL` dla tej metody.
+ Jeśli aparat debugowania nie musi obsługiwać unikatowych identyfikatorów dla właściwości (ponieważ już śledzi je `E_NOTIMPL` wyjątkowo wewnętrznie), następnie można po prostu powrócić do tej metody.
 
- Unikatowe identyfikatory są tworzone za pomocą wywołania [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) metody, gdy obiekt wywołujący chce upewnić się, ta właściwość jest unikatowo identyfikowana przez inne właściwości.
+ Unikatowe identyfikatory są tworzone za pomocą wywołania [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) metody, gdy obiekt wywołujący chce upewnić się, że ta właściwość jest jednoznacznie identyfikowane wśród wszystkich innych właściwości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

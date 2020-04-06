@@ -1,40 +1,40 @@
 ---
-title: 'Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania | Dokumentacja firmy Microsoft'
+title: 'Jak: Użyj wbudowanych elementów colorable | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1c327c14ed2b349ee02566c5cdfd38b9a07859
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34e07894c3306f544396e53001990f7b9a2df5a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311965"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707787"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania
-Przed użyciem wbudowanych elementów z możliwością kolorowania użytkownik musi najpierw zasygnalizowania do zintegrowanego środowiska programistycznego (IDE) są one udostępniane własne niestandardowe elementy z możliwością kolorowania, w tym przypadku byłaby <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> obiektów. Możesz to zrobić, ustawiając wpis rejestru dla usługi w języka.
+# <a name="how-to-use-built-in-colorable-items"></a>Jak: Używanie wbudowanych elementów kolorowych
+Przed użyciem wbudowanych elementów colorable, należy najpierw sygnał do zintegrowanego środowiska programistycznego (IDE), że nie są <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> dostarczanie własnych niestandardowych elementów colorable, które w tym przypadku będą obiekty. Można to zrobić, ustawiając wpis rejestru dla usługi języka.
 
-## <a name="to-use-built-in-colorable-items"></a>Aby użyć wbudowanych elementów z możliwością kolorowania
+## <a name="to-use-built-in-colorable-items"></a>Aby użyć wbudowanych elementów kolorowych
 
-1. W obszarze **HKEY_LOCAL_MACHINE\VisualStudio\\usług \Languages\Language < X.Y >\\< nazwa języka\>** , gdzie \<X.Y > wersja [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i \<Nazwa języka > jest nazwą Twojego języka, Utwórz wartości wpisu rejestru DWORD o nazwie **RequestStockColors**.
+1. W **obszarze HKEY_LOCAL_MACHINE\VisualStudio\\<X.Y>\Languages\Languages\Language\\ Services<Language\>Name** \<, gdzie X.Y> jest [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \<wersją i nazwą języka> jest nazwą języka, utwórz wartość wpisu rejestru DWORD o nazwie **RequestStockColors**.
 
-2. Ustaw **RequestStockColors** wartości wpisu rejestru w celu *1*.
+2. Ustaw wartość wpisu rejestru **RequestStockColors** na *1*.
 
-    Po utworzeniu wpisu rejestru colorizer Twojej firmy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metoda może używać członkowie <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> wyliczeniu, aby wypełnić tablicę atrybutów koloru do użycia przez edytor.
+    Po utworzeniu wpisu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> rejestru, metoda colorizer może używać <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> członków wyliczenia, aby wypełnić tablicę atrybutów kolorów do użycia przez edytora.
 
    > [!NOTE]
-   > Nie należy ustawiać ten wpis rejestru, jeśli udostępniasz niestandardowe elementy z możliwością kolorowania. Aby uzyskać więcej informacji, zobacz [niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md).
+   > Nie należy ustawiać tego wpisu rejestru, jeśli są dostarczanie niestandardowych elementów colorable. Aby uzyskać więcej informacji, zobacz [Niestandardowe elementy do barwienia](../../extensibility/internals/custom-colorable-items.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Kolorowanie składni w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)
-- [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+- [Kolorowanie składni w starszej usłudze językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)
-- [Niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md)
-- [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service2.md)
+- [Niestandardowe elementy nadajne kolorami](../../extensibility/internals/custom-colorable-items.md)
+- [Rejestrowanie starszej usługi językowej](../../extensibility/internals/registering-a-legacy-language-service2.md)

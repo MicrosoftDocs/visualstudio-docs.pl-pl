@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Dokumentacja firmy Microsoft
+title: IDebugParsedExpression::EvaluateSync | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aac58831224a6bebadd625dad72177f2aec3fc76
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311824"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726008"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Ta metoda oblicza wyrażenie przeanalizowany i opcjonalnie rzutuje wynik, który ma inny typ danych.
+Ta metoda ocenia analizowane wyrażenie i opcjonalnie rzutuje wynik do innego typu danych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -53,33 +53,33 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Parametry
 `dwEvalFlags`\
-[in] Kombinacji [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) stałe, które kontrolują sposób ma zostać obliczone wyrażenie.
+[w] Kombinacja stałych [EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) które kontrolują sposób oceny wyrażenia.
 
 `dwTimeout`\
-[in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
+[w] Określa maksymalny czas oczekiwania w milisekundach przed zwróceniem z tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
 
 `pSymbolProvider`\
-[in] Dostawca symboli, wyrażone jako [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interfejsu.
+[w] Dostawca symbolu, wyrażony jako interfejs [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
 `pAddress`\
-[in] Bieżąca lokalizacja wykonywania w metodzie, wyrażone jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
+[w] Bieżąca lokalizacja wykonywania w ramach metody, wyrażona jako interfejs [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pBinder`\
-[in] Obiekt wiążący wyrażonej w postaci [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfejsu.
+[w] Spinacz, wyrażony jako interfejs [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
 
 `bstrResultType`\
-[in] Typ wyniku powinna być rzutowany. Ten argument może być wartością null.
+[w] Typ wynik powinien być rzutowy do. Ten argument może być wartością null.
 
 `ppResult`\
-[out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfejs, który reprezentuje wyniki oceny.
+[na zewnątrz] Zwraca interfejs [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) który reprezentuje wyniki oceny.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Kontekst oceny wyrażeń jest nadawana przez `pAddress`, która sprawia, że można określić zawierającego metodę, i następnie zakresu języka Użyj reguły do określenia wartości symboli w wyrażeniu.
+ Kontekst oceny wyrażenia jest `pAddress`podany przez , co umożliwia określenie metody zawierającej, a następnie użycie reguł zakresu języka do określenia wartości symboli w wyrażeniu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

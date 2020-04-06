@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference | Dokumentacja firmy Microsoft
+title: IDebugReference2::SetValueAsReference | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsReference
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 108061d4957b03d049897985da849ab86563ea47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4767dbe08e716d64ea03c18a1c4a6f7d6690a7b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339751"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720306"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Ustawia wartość odwołanie z innego odwołania. Zarezerwowane do użytku w przyszłości.
+Ustawia wartość odwołania z innego odwołania. Zarezerwowane do użytku w przyszłości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,19 +47,19 @@ int SetValueAsReference ( 
 
 ## <a name="parameters"></a>Parametry
 `rgpArgs`\
-[in] Tablica [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiekty używane do określania, jak można ustawić wartości odwołania.
+[w] Tablica [obiektów IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) używana do określania sposobu ustawiania wartości referencyjnej.
 
 `dwArgCount`\
-[in] Liczba odwołań w tablicy.
+[w] Liczba odwołań w tablicy.
 
 `pValue`\
-[in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiektu, z którego można ustawić wartości właściwości.
+[w] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiekt, z którego można ustawić wartość właściwości.
 
 `dwTimeout`\
-[in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
+[w] Maksymalny czas ( w milisekundach) oczekiwania przed zwróceniem tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Zawsze zwraca `E_NOTIMPL`.
+ Zawsze zwraca wartość `E_NOTIMPL`.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

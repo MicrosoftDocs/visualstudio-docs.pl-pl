@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::CanTerminateProcess | Dokumentacja firmy Microsoft
+title: IDebugPortEx2::CanTerminateProcess | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::CanTerminateProcess
 ms.assetid: 111f65d8-5a1a-42b3-9de3-dd9bb03a33fd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db1a4fedac88208d54d146a6c5b74b847db21866
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bbc5c5128c1235c7ee46300a1cd45f92b53d243d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311138"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725159"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
-Określa, czy Proces może zostać zakończone.
+Określa, czy proces można zakończyć.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ HRESULT CanTerminateProcess( 
 
 ## <a name="parameters"></a>Parametry
 `pPortProcess`\
-[in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt reprezentujący procesu, który ma zostać zakończony.
+[w] Obiekt [IDebugProcess2 reprezentujący](../../../extensibility/debugger/reference/idebugprocess2.md) proces, który ma zostać zakończony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Zwraca `S_OK` przypadku można zakończyć procesu; w przeciwnym razie zwraca `S_FALSE`.
+ Zwraca, `S_OK` jeśli proces może zostać zakończony; w przeciwnym `S_FALSE`razie zwraca plik .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,5 +1,5 @@
 ---
-title: 'IEnumDebugFields:: Clone | Microsoft Docs'
+title: IEnumDebugFields::Klon | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Clone method
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5657e5db99bd062fa16aae9f9d8516bdbabc99f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1120e62d5dbed45f11b43ea0e131ee3173c1751c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727696"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716913"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Ta metoda zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
-określoną Zwraca kopię tego wyliczenia jako oddzielny obiekt.
+[na zewnątrz] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
 
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Kopia wyliczenia ma taki sam stan jak oryginał w momencie wywołania tej metody. Jednak kopia i stan pierwotny są oddzielone i mogą być zmieniane indywidualnie.
+ Kopia wyliczenia ma taki sam stan jak oryginał w czasie, gdy ta metoda jest wywoływana. Jednak stany kopii i oryginału są oddzielne i mogą być zmieniane indywidualnie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

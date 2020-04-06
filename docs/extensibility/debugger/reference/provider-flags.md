@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS | Dokumentacja firmy Microsoft
+title: PROVIDER_FLAGS | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8408481efbcaa67ce60d2dbfc9166b5dd0fd5223
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350029"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713819"
 ---
-# <a name="providerflags"></a>PROVIDER_FLAGS
-Określa żądane właściwości, które mają zostać uzyskane od dostawcy programu.
+# <a name="provider_flags"></a>PROVIDER_FLAGS
+Określa żądane właściwości, które mają być uzyskane od dostawcy programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -54,28 +54,28 @@ public enum enum_PROVIDER_FLAGS {
 
 ## <a name="fields"></a>Pola
  `PFLAG_NONE`\
- Nie określono flagi.
+ Nie określono flag.
 
  `PFLAG_REMOTE_PORT`\
- Obiekt wywołujący chce listę programów na innym komputerze niż [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ Rozmówca chce listę programów na innym [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]komputerze niż .
 
  `PFLAG_DEBUGGEE`\
- Ten proces jest teraz debugowana przez to wystąpienie elementu [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ Proces jest obecnie debugowany przez to [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]wystąpienie .
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] jest dołączony do debugowanego programu, ale nie uruchomiony.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]jest dołączony do programu jest debugowany, ale go nie uruchamia.
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] obserwuje dla zdarzeń.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]ogląda wydarzenia.
 
  `PFLAG_GET_PROGRAM_NODES`\
- Obiekt wywołujący chce `ProgramNodes` pole [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struktury.
+ Wywołujący chce `ProgramNodes` pola [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struktury.
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- Obiekt wywołujący chce `fIsTheDebuggerPresent` pole `PROVIDER_PROCESS_DATA` struktury.
+ Wywołujący chce `fIsTheDebuggerPresent` pola `PROVIDER_PROCESS_DATA` struktury.
 
 ## <a name="remarks"></a>Uwagi
- Te flagi są przekazywane do następujących metod:
+ Flagi te są przekazywane do następujących metod:
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
@@ -83,16 +83,16 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  Te wartości można łączyć przy użyciu bitowego operatora `OR`.
+  Wartości te można łączyć `OR`z bitowym .
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

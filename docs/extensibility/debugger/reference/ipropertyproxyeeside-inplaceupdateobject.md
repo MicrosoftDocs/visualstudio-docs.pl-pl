@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InPlaceUpdateObject | Dokumentacja firmy Microsoft
+title: IPropertyProxyEESide::InPlaceUpdateObject | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ce2826aa0bd75638d6f5ee8086cbcce96517ce7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 79167b0f7e8094fabf80bb9b2d83c94ac874aa31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329426"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714890"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
-Aktualizuje dane obiektu z obiektu danych i zwraca obiekt danych reprezentujący danych nowego obiektu.
+Aktualizuje dane obiektu o dany obiekt danych i zwraca nowy obiekt danych reprezentujący nowe dane obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,22 +43,22 @@ int InPlaceUpdateObject(
 
 ## <a name="parameters"></a>Parametry
 `dataIn`\
-[in] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiektu zawierającego nowe dane.
+[w] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający nowe dane.
 
 `dataOut`\
-[out] Zwraca nowy `IEEDataStorage` obiekt zawierający dane zastąpione.
+[na zewnątrz] Zwraca nowy `IEEDataStorage` obiekt zawierający zastąpione dane.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda faktycznie aktualizuje dane obiektu. Dane w zwróconym elemencie [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiektu nie musi być taka sama, jak dane w przychodzącej `IEEDataStorage` obiekt, ale zwracany obiekt muszą odzwierciedlać bieżącą wartość właściwości.
+ Ta metoda faktycznie aktualizuje dane obiektu. Dane w zwróconym [obiekcie IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) nie muszą być takie `IEEDataStorage` same jak dane w obiekcie przychodzących, ale zwrócony obiekt musi odzwierciedlać bieżącą wartość właściwości.
 
- Przychodzące obiektu danych nie jest zwykle implementowany przez EE. Jednak obiekt zwracany przez tę metodę zawsze jest implementowany przez EE, która umożliwia Implementowanie EE `IEEDataStorage` interfejsu na pożądana jest klasa niezależnie od.
+ Obiekt danych przychodzących zazwyczaj nie jest implementowany przez EE. Jednak obiekt zwracany przez tę metodę jest zawsze implementowany przez EE, który umożliwia EE implementowania `IEEDataStorage` interfejsu na cokolwiek klasy jest pożądane.
 
- [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) metoda tworzy obiekt danych na podstawie przychodzącego obiektu danych, ale nie ma wpływu na właściwości oryginalnych danych.
+ [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) Metoda tworzy obiekt danych na podstawie obiektu danych przychodzących, ale nie wpływa na oryginalne dane właściwości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)

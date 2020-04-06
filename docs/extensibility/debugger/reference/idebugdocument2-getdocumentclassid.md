@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
+title: IDebugDocument2::GetDocumentClassID | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetDocumentClassID
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 51a4ed842a2f65f37abf6f83ac70d6ce03b9a2e8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71683c91082f477da530ec1be1fdc7627d6a7635
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310286"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732027"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Pobiera identyfikator klasy dokumentu.
@@ -40,13 +40,13 @@ int GetDocumentClassID( 
 ```
 
 ## <a name="parameters"></a>Parametry
-`pclsid` [out] Zwraca identyfikator GUID, który jest Identyfikatorem klasy dokumentu.
+`pclsid`[na zewnątrz] Zwraca identyfikator GUID, który jest identyfikatorem klasy dokumentu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Identyfikator GUID klasy może służyć do tworzenia wystąpień poszczególnych klas, z których każdy reprezentuje dokumentu.
+ Identyfikator GUID klasy może służyć do tworzenia wystąpienia poszczególnych klas, z których każdy reprezentuje dokument.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Dokumentacja firmy Microsoft
+title: IDebugProperty3::SetValueAsStringWithError | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348817"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721067"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Ustawia wartość tej właściwości i zwraca komunikat o błędzie, jeśli to konieczne.
@@ -47,25 +47,25 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Parametry
 `pszValue`\
-[in] Wartość do ustawienia.
+[w] Wartość do ustawionego.
 
 `dwRadix`\
-[in] Podstawa jest ustawiona wartość.
+[w] Radix ustawionej wartości.
 
 `dwTimeout`\
-[in] Czas oczekiwania na ustawienie wartości (`INFINITE` oznacza, że czekać w nieskończoność).
+[w] Czas oczekiwania na ustawienie wartości (oznacza`INFINITE` odczekanie na zawsze).
 
 `errorString`\
-[out] Jeśli wystąpił błąd podczas ustawiania wartości, to zawiera przyczynę niepowodzenia.
+[na zewnątrz] Jeśli wystąpił błąd ustawienie wartości, to posiada przyczynę błędu.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Przychodzące może to być wyrażenie ma zostać obliczone.
+Wartość przychodząca może być wyrażeniem, które ma zostać ocenione.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CProperty** obiekt ujawniający [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **CProperty** obiektu, który udostępnia [interfejs IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(
@@ -169,5 +169,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

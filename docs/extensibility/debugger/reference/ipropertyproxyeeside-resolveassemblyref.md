@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef | Dokumentacja firmy Microsoft
+title: IPropertyProxyEESide::ResolveAssemblyRef | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::ResolveAssemblyRef
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d2fd21b39e171238319c857ad0384db1d7635d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c54945b0c89fb9608fab6aa70dcc63a7c6ae42df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353462"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714886"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Określa lokalizację odwołanie do określonego zestawu zarządzanego.
+Określa lokalizację określonego odwołania do zestawu zarządzanego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,27 +49,27 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>Parametry
 `assemName`\
-[in] Nazwa zestawu, aby rozwiązać.
+[w] Nazwa zestawu do rozwiązania.
 
 `assemBytes`\
-[out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający bajtów zestawu skojarzonej z odwołaniem.
+[na zewnątrz] Zwraca obiekt [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) zawierający bajty złożenia skojarzone z odwołaniem.
 
 `assemPdb`\
-[out] Zwraca `IEEDataStorage` obiekt, który zawiera symbol są przechowywane dane skojarzone z tym odwołaniem.
+[na zewnątrz] Zwraca `IEEDataStorage` obiekt zawierający dane magazynu symboli skojarzone z tym odwołaniem.
 
 `assemLocation`\
-[out] Zwraca ścieżkę lokalizacji tego odwołania.
+[na zewnątrz] Zwraca lokalizację ścieżki tego odwołania.
 
 `alr`\
-[out] Zwraca wartość z zakresu od [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Wyliczenie wskazujące lokalizację to odwołanie do zestawu.
+[na zewnątrz] Zwraca wartość z wyliczenia [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) wskazującego lokalizację złożenia tego odwołania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda nie jest zwykle implementowany przez ewaluatora wyrażeń niestandardowych.
+ Ta metoda nie jest zazwyczaj implementowane przez oceniającego wyrażenia niestandardowego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

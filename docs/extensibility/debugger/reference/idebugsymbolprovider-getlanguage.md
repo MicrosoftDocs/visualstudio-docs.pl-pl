@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Dokumentacja firmy Microsoft
+title: IDebugSymbolProvider::GetLanguage | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetLanguage method
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dfa11a1df6460c08431d7b23fabe5d94674baad2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347602"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719242"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Ta metoda pobiera języka, który został użyty do kompilowania kodu pod adresem debugowania.
+Ta metoda pobiera język, który został użyty do skompilowania kodu na adres debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,20 +45,20 @@ int GetLanguage(
 
 ## <a name="parameters"></a>Parametry
 `pAddress`\
-[in] Adres obiektu reprezentowanego przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
+[w] Obiekt adresu reprezentowany przez interfejs [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pguidLanguage`\
-[out] Zwraca `GUID` , który określa język.
+[na zewnątrz] Zwraca `GUID` a, który określa język.
 
 `pguidLanguageVendor`\
-[out] Zwraca `GUID` określający dostawcy języka.
+[na zewnątrz] Zwraca `GUID` wartość określającą dostawcę języka.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Aparat debugowania wywołuje tę metodę, aby uzyskać informacje potrzebne do wybrania Ewaluator wyrażeń poprawne.
+ Aparat debugowania wywołuje tę metodę, aby uzyskać informacje potrzebne do wybrania ewaluatora wyrażeń poprawne.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

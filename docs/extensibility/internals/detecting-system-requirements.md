@@ -1,28 +1,28 @@
 ---
-title: Wykrywanie wymagań systemowych | Dokumentacja firmy Microsoft
+title: Wykrywanie wymagań systemowych | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ab254df5d53f379704128d8860b8d7fe5655bae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351639"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708735"
 ---
 # <a name="detect-system-requirements"></a>Wykrywanie wymagań systemowych
-Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual Studio. Gdy Instalator systemu Microsoft Windows umożliwia zarządzanie instalacjami Twojego pakietu VSPackage, można skonfigurować Instalatora aby wykryć, czy jest zainstalowany program Visual Studio. Można również skonfigurować ją do sprawdzania systemu pod kątem innych wymagań, na przykład konkretnej wersji systemu Windows lub określoną ilość pamięci RAM.
+VsPackage nie może działać, chyba że jest zainstalowany program Visual Studio. Korzystając z Instalatora systemu Microsoft Windows do zarządzania instalacją programu VSPackage, można skonfigurować instalatora w celu wykrycia, czy program Visual Studio jest zainstalowany. Można również skonfigurować go, aby sprawdzić system pod kątem innych wymagań, na przykład określonej wersji systemu Windows lub określonej ilości pamięci RAM.
 
-## <a name="detect-visual-studio-editions"></a>Wykryć wersji programu Visual Studio
- Aby ustalić, czy jest zainstalowana wersja programu Visual Studio, upewnij się, że wartość **zainstalować** klucz rejestru jest *(REG_DWORD) 1* w odpowiednim folderze, wymienione w poniższej tabeli. Zwróć uwagę, że hierarchia wersje programu Visual Studio:
+## <a name="detect-visual-studio-editions"></a>Wykrywanie wersji programu Visual Studio
+ Aby ustalić, czy jest zainstalowana wersja programu Visual Studio, sprawdź, czy wartość **klucza** rejestru Install jest *(REG_DWORD) 1* w odpowiednim folderze, jak wymieniono w poniższej tabeli. Należy zauważyć, że istnieje hierarchia wersji programu Visual Studio:
 
 1. Enterprise
 
@@ -30,20 +30,20 @@ Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual 
 
 3. Społeczność
 
-Nowsza wersja jest zainstalowana, klucze rejestru, w przypadku tej wersji są dodawane również jak w przypadku starszych wersji. Oznacza to, jeśli jest zainstalowany w wersji Enterprise, **zainstalować** jest ustawiona na *1* dla przedsiębiorstw, a także wersje Professional i społeczności. W związku z tym należy sprawdzić tylko w przypadku najnowszej wersji, których potrzebujesz.
+Po zainstalowaniu nowszej wersji klucze rejestru dla tej wersji są dodawane, a także dla wcześniejszych wersji. Oznacza to, że jeśli jest zainstalowana wersja Enterprise, klucz **instalacji** jest ustawiony na *1* dla przedsiębiorstw, a także dla wersji Professional i Community. Dlatego musisz sprawdzić tylko najnowszą wersję, której potrzebujesz.
 
 > [!NOTE]
-> W 64-bitową wersję Edytora rejestru w 32-bitowe klucze są wyświetlane w obszarze **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** . Klucze programu Visual Studio, podlegają **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** .
+> W 64-bitowej wersji edytora rejestru klucze 32-bitowe są wyświetlane w **obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Klawisze programu Visual Studio znajdują się w **obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
 
-|Produkt|Key|
+|Product (Produkt)|Klucz|
 |-------------|---------|
-|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
-|Visual Studio 2015 Shell (integrated i isolated)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
+|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Serwis\14.0\enterprise|
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Serwis\14.0\professional|
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\społeczność|
+|Powłoka programu Visual Studio 2015 (zintegrowana i odizolowana)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
 
-## <a name="detect-when-visual-studio-is-running"></a>Wykryj, kiedy program Visual Studio jest uruchomiony.
- Nie można zarejestrować poprawnie Twojego pakietu VSPackage, jeśli program Visual Studio jest uruchomiony podczas instalowania pakietu VSPackage. Instalator musi wykryć, kiedy program Visual Studio jest uruchomiony i następnie odmówić zainstalować ten program. Instalator Windows nie pozwalają używać wpisów tabeli, aby umożliwić wykrywanie takich modyfikacji. Zamiast tego należy utworzyć akcję niestandardową, w następujący sposób: Użyj `EnumProcesses` funkcję, aby wykryć *devenv.exe* przetwarzania, a następnie ustaw właściwość Instalatora, który jest używany warunek uruchomienia lub warunkowo wyświetlane jest okno dialogowe, który monituje użytkownika o Zamknij program Visual Studio.
+## <a name="detect-when-visual-studio-is-running"></a>Wykrywanie, kiedy program Visual Studio jest uruchomiony
+ Nie można poprawnie zarejestrować programu VSPackage, jeśli program Visual Studio jest uruchomiony po zainstalowaniu programu VSPackage. Instalator musi wykryć, kiedy program Visual Studio jest uruchomiony, a następnie odmówić zainstalowania programu. Instalator Windows nie umożliwia włączania takiego wykrywania za pomocą wpisów tabeli. Zamiast tego należy utworzyć akcję niestandardową w `EnumProcesses` następujący sposób: Użyj funkcji do wykrywania procesu *devenv.exe,* a następnie ustaw właściwość instalatora, która jest używana w stanie uruchomienia lub warunkowo wyświetlić okno dialogowe, które monituje użytkownika o zamknięcie programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
-- [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+## <a name="see-also"></a>Zobacz też
+- [Instalowanie pakietów VSPackages z Instalatorem Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

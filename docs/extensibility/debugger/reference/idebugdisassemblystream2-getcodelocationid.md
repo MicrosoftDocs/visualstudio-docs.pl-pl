@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Dokumentacja firmy Microsoft
+title: Identyfikator IDebugDisassemblyStream2::GetCodeLocationId | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58e3b12ecbc75b7d07d60ac399412dc5b0deb73b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351687"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732252"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Zwraca identyfikator lokalizacji kodu dla kontekstu określonego kodu.
+Zwraca identyfikator lokalizacji kodu dla określonego kontekstu kodu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,19 +43,19 @@ int GetCodeLocationId( 
 
 ## <a name="parameters"></a>Parametry
 `pCodeContext`\
-[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt ma zostać przekonwertowany na identyfikator.
+[w] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt do konwersji na identyfikator.
 
-`puCodeLocationId` [out] Zwraca identyfikator lokalizacji kodu. Zobacz uwagi.
+`puCodeLocationId`[na zewnątrz] Zwraca identyfikator lokalizacji kodu. Zobacz uwagi.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_CODE_CONTEXT_OUT_OF_SCOPE` jeśli kontekst kodu jest prawidłowy, ale poza zakresem.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca, `E_CODE_CONTEXT_OUT_OF_SCOPE` jeśli kontekst kodu jest prawidłowy, ale poza zakresem.
 
 ## <a name="remarks"></a>Uwagi
- Aparat debugowania (DE), obsługa demontaż dotyczy identyfikator lokalizacji kodu. Ten identyfikator lokalizacji jest używana wewnętrznie przez DE śledzenie pozycji w kodzie i jest zwykle adres lub przesunięcie pewnego rodzaju. Jedynym wymaganiem jest to, że jeśli kontekst kodu z jednej lokalizacji jest mniejsza niż kontekst kodu z innej lokalizacji, a następnie odpowiedni identyfikator kodu w lokalizacji, pierwszy kontekstu kodu również musi być mniejsza niż identyfikator lokalizacji kodu drugi kontekst kodu.
+ Identyfikator lokalizacji kodu jest specyficzny dla aparatu debugowania (DE) obsługującego demontaż. Ten identyfikator lokalizacji jest używany wewnętrznie przez DE do śledzenia pozycji w kodzie i jest zazwyczaj adresem lub przesunięciem pewnego rodzaju. Jedynym wymaganiem jest to, że jeśli kontekst kodu jednej lokalizacji jest mniejsza niż kontekst kodu innej lokalizacji, odpowiedni identyfikator lokalizacji kodu pierwszego kontekstu kodu musi być również mniejszy niż identyfikator lokalizacji kodu drugiego kontekstu kodu.
 
- Aby uzyskać kontekst kodu identyfikatora lokalizacji kodu, należy wywołać [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) metody.
+ Aby pobrać kontekst kodu identyfikatora lokalizacji kodu, należy wywołać [Metodę GetCodeContext.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)

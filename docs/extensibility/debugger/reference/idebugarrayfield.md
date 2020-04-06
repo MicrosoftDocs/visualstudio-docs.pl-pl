@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField | Dokumentacja firmy Microsoft
+title: IDebugArrayField | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField interface
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 088ff752513feb9d73e35c3174492bc34a5034f5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dab01c1e956ced7e6894b951ab16f4ce68eb778b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349139"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736291"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
-Ten interfejs w tym artykule opisano symbol tablicy lub typu.
+Ten interfejs opisuje symbol lub typ tablicy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,13 +29,13 @@ IDebugArrayField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawca symboli implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfejsu. Ten interfejs jest specjalizację, który reprezentuje tablicę obiektów.
+ Dostawca symbolu implementuje ten interfejs na tym samym obiekcie, który implementuje interfejs [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md) Ten interfejs jest specjalizacji, która reprezentuje obiekty tablicy.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Użyj [QueryInterface](/cpp/atl/queryinterface) uzyskać ten interfejs z [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfejsu, jeśli [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zwraca flagę `FIELD_TYPE_ARRAY`.
+ Użyj [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać ten interfejs z interfejsu [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) jeśli [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zwraca flagę `FIELD_TYPE_ARRAY`.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- Oprócz metod na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) i [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfejsów, ten interfejs wykonuje następujące czynności:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ Oprócz metod na [interfejsach IDebugField](../../../extensibility/debugger/reference/idebugfield.md) i [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) ten interfejs implementuje następujące czynności:
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -46,11 +46,11 @@ IDebugArrayField : IDebugContainerField
 ## <a name="requirements"></a>Wymagania
  Nagłówek: sh.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

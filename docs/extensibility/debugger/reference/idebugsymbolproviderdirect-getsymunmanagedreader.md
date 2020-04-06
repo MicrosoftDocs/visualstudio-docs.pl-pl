@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Dokumentacja firmy Microsoft
+title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetSymUnmanagedReader
 - IDebugSymbolProviderDirect::GetSymUnmanagedReader
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2fb5a2fd5d8ba34112e01da07fc1f41177e8e9f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbac2e234cfc991f27e08dc33bdc895c22d501fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320413"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718943"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
-Pobiera czytnik symbolu dla niezarządzanego kodu.
+Pobiera czytnik symboli dla kodu niezarządzanego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,16 +44,16 @@ int GetSymUnmanagedReader (
 
 ## <a name="parameters"></a>Parametry
 `ulAppDomainID`\
-[in] Identyfikator domeny aplikacji.
+[w] Identyfikator domeny aplikacji.
 
 `guidModule`\
-[in] Unikatowy identyfikator modułu.
+[w] Unikatowy identyfikator modułu.
 
 `ppSymUnmanagedReader`\
-[out] Zwraca obiekt, który reprezentuje czytnika symboli dla niezarządzanego kodu.
+[na zewnątrz] Zwraca obiekt, który reprezentuje czytnik symboli dla kodu niezarządzanego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

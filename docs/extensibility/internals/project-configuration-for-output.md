@@ -1,49 +1,49 @@
 ---
-title: Konfiguracja projektu dla danych wyjściowych | Microsoft Docs
+title: Konfiguracja projektu dla danych wyjściowych | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b6337d82e51cf728d69f7aabb46e9d4444ec564
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725894"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706668"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurowanie projektu dla danych wyjściowych
-Każda konfiguracja może obsługiwać zestaw procesów kompilacji, które generują elementy wyjściowe, takie jak pliki wykonywalne lub zasoby. Te elementy wyjściowe są prywatne dla użytkownika i mogą być umieszczone w grupach łączących powiązane typy danych wyjściowych, takich jak pliki wykonywalne (exe, DLL, lib) i pliki źródłowe (. idl,. h).
+Każda konfiguracja może obsługiwać zestaw procesów kompilacji, które generują elementy wyjściowe, takie jak pliki wykonywalne lub pliki zasobów. Te elementy wyjściowe są prywatne dla użytkownika i mogą być umieszczane w grupach, które łączą powiązane typy danych wyjściowych, takie jak pliki wykonywalne (.exe, .dll, .lib) i pliki źródłowe (.idl, pliki .h).
 
- Elementy wyjściowe można udostępnić za pomocą metod <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> i wyliczyć z metodami <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>. Gdy chcesz grupować elementy wyjściowe, projekt powinien również implementować interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>.
+ Elementy wyjściowe mogą być <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> udostępniane za pomocą metod <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> i wyliczone z metodami. Jeśli chcesz grupować elementy wyjściowe, projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> należy również zaimplementować interfejs.
 
- Konstrukcja opracowana przez implementację `IVsOutputGroup` umożliwia projektom grupowanie danych wyjściowych zgodnie z użyciem. Na przykład biblioteka DLL może być zgrupowana z jej bazą danych programu (PDB).
+ Konstrukcja opracowana przez `IVsOutputGroup` implementowanie umożliwia projektom grupowanie wyników według użycia. Na przykład biblioteka DLL może być zgrupowana z bazą danych programu (PDB).
 
 > [!NOTE]
-> Plik PDB zawiera informacje o debugowaniu i jest tworzony, gdy opcja "Generuj informacje o debugowaniu" została określona podczas kompilowania pliku DLL lub exe. Plik. pdb jest zwykle generowany tylko dla konfiguracji projektu debugowania.
+> Plik PDB zawiera informacje debugowania i jest tworzony, gdy opcja "Generowanie informacji debugowania" jest określona podczas tworzenia .dll lub .exe. Plik pdb jest zwykle generowany tylko dla konfiguracji projektu debugowania.
 
- Projekt musi zwracać tę samą liczbę grup dla każdej konfiguracji, która obsługuje, nawet jeśli liczba danych wyjściowych zawartych w grupie może się różnić od konfiguracji do konfiguracji. Na przykład biblioteka DLL otoczki projektu może zawierać plik z otoczką. dll i otoczkę. pdb w konfiguracji debugowania, ale zawiera tylko plik. dll w konfiguracji detalicznej.
+ Projekt musi zwracać taką samą liczbę grup dla każdej konfiguracji, która obsługuje, nawet jeśli liczba wyjść zawartych w grupie może się różnić w zależności od konfiguracji. Na przykład biblioteka DLL matt projektu może zawierać mattd.dll i mattd.pdb w konfiguracji debugowania, ale tylko matt.dll w konfiguracji sieci sprzedaży.
 
- Grupy mają również te same informacje o identyfikatorach, takie jak nazwa kanoniczna, nazwa wyświetlana i informacje o grupach, od konfiguracji do konfiguracji w ramach projektu. Ta spójność umożliwia wdrożenie i pakowanie, aby kontynuować działanie nawet w przypadku zmiany konfiguracji.
+ Grupy mają również te same informacje o identyfikatorze, takie jak nazwa kanoniczna, nazwa wyświetlana i informacje o grupach, od konfiguracji do konfiguracji w projekcie. Ta spójność umożliwia wdrażanie i pakowanie, aby kontynuować działanie, nawet jeśli konfiguracje się zmieniają.
 
- Grupy mogą także mieć kluczowe dane wyjściowe, które umożliwiają skróty do pakowania, aby wskazywały na coś znaczące. Każda grupa może być pusta w danej konfiguracji, dlatego nie należy wprowadzać żadnych założeń dotyczących rozmiaru grupy. Rozmiar (Liczba wyjść) każdej grupy w dowolnej konfiguracji może różnić się od rozmiaru innej grupy w tej samej konfiguracji. Może być również różna od rozmiaru tej samej grupy w innej konfiguracji.
+ Grupy mogą mieć również kluczowe dane wyjściowe, które umożliwia skróty do pakowania, aby wskazać coś znaczącego. Każda grupa może być pusta w danej konfiguracji, więc nie należy zakładać rozmiaru grupy. Rozmiar (liczba wyjść) każdej grupy w dowolnej konfiguracji może się różnić od rozmiaru innej grupy w tej samej konfiguracji. Może również różnić się od rozmiaru tej samej grupy w innej konfiguracji.
 
- ![Grafika grup wyjściowych](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups") Grupy wyjściowe
+ ![Grafika przedstawiająca grupy wyjściowe](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups") Grupy wyjściowe
 
- Podstawowym wykorzystaniem interfejsu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> jest umożliwienie dostępu do kompilowania, wdrażania i debugowania obiektów zarządzania oraz Zezwalanie na projekty w celu swobodnego grupowania danych wyjściowych. Aby uzyskać więcej informacji na temat korzystania z tego interfejsu, zobacz [obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md).
+ Podstawowym zastosowaniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> interfejsu jest zapewnienie dostępu do tworzenia, wdrażania i debugowania obiektów zarządzania i umożliwić projektom swobodę grupowania wyjść. Aby uzyskać więcej informacji na temat korzystania z tego interfejsu, zobacz [Obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md).
 
- Na poprzednim diagramie utworzona grupa zawiera dane wyjściowe klucza w różnych konfiguracjach (bD. exe lub b. exe), dzięki czemu użytkownik może utworzyć skrót do skompilowania i wiedzieć, że skrót będzie działał niezależnie od wdrożonej konfiguracji. Źródło grupy nie ma klucza wyjściowego, przez co użytkownik nie może utworzyć skrótu do niego. Jeśli grupa debugowania została skompilowana z kluczem wyjściowym, ale utworzona grupa detaliczna nie ma takiej prawidłowej implementacji. Po wykonaniu tej czynności, jeśli jakakolwiek konfiguracja ma grupę, która nie zawiera żadnych danych wyjściowych, a w rezultacie nie ma pliku klucza, inne konfiguracje z tą grupą, które zawierają dane wyjściowe, nie mogą mieć plików kluczy. W edytorach Instalatora założono, że nazwy kanoniczne i nazwy wyświetlane grup oraz istnienie pliku klucza nie zmieniają się na podstawie konfiguracji.
+ Na poprzednim diagramie Group Built ma kluczowe dane wyjściowe w konfiguracjach (bD.exe lub b.exe), dzięki czemu użytkownik może utworzyć skrót do built i wiedzieć, że skrót będzie działać niezależnie od wdrożonej konfiguracji. Źródło grupy nie ma danych wyjściowych klucza, więc użytkownik nie może utworzyć do niego skrótu. Jeśli grupa debugów zbudowany ma dane wyjściowe klucza, ale grupa sieci sprzedaży zbudowany nie, to będzie niepoprawna implementacja. Wynika z tego, że jeśli dowolna konfiguracja ma grupę, która nie zawiera żadnych wyjść, a w rezultacie nie ma pliku klucza, to inne konfiguracje z tą grupą, które zawierają dane wyjściowe, nie mogą mieć plików kluczy. Edytory instalatora zakładają, że nazwy kanoniczne i nazwy wyświetlane grup, a także istnienie pliku klucza, nie zmieniają się w zależności od konfiguracji.
 
- Należy pamiętać, że jeśli projekt ma `IVsOutputGroup`, którego nie ma do spakowania ani wdrożenia, wystarczy umieścić te dane wyjściowe w grupie. Dane wyjściowe nadal mogą być wyliczane normalnie przez implementację metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A>, która zwraca wszystkie dane wyjściowe konfiguracji, niezależnie od grupowania.
+ Należy zauważyć, że `IVsOutputGroup` jeśli projekt ma, że nie chce spakować lub wdrożyć, wystarczy nie umieścić tego danych wyjściowych w grupie. Dane wyjściowe nadal można wyliczyć normalnie, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> metodę, która zwraca wszystkie dane wyjściowe konfiguracji, niezależnie od grupowania.
 
- Aby uzyskać więcej informacji, zobacz Implementacja `IVsOutputGroup` w niestandardowym przykładzie projektu w [MPF for](https://github.com/tunnelvisionlabs/MPFProj10)Projects.
+ Aby uzyskać więcej informacji, `IVsOutputGroup` zobacz implementację w przykładzie projektu niestandardowego w [MPF dla projektów](https://github.com/tunnelvisionlabs/MPFProj10).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md)
 - [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)
 - [Obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md)

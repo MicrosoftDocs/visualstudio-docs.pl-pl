@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3 | Dokumentacja firmy Microsoft
+title: IDebugBinder3 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3 interface
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e3165be9d478d08f4de7eb623de5b93fd3433a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa85872337fdc1f7519d0de98cffe1436ef41c67
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330868"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735672"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ten interfejs zapewnia dostęp do typów, aliasów i usług niestandardowego wizualizatora.
+ Ten interfejs zapewnia dostęp do typów, aliasów i usług wizualizatora niestandardowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,32 +32,32 @@ IDebugBinder3 : IDebugBinder
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania implementuje ten interfejs do obsługi aliasów, niestandardowego wizualizatora usług i dostęp do informacji o typie obiektu.
+ Aparat debugowania implementuje ten interfejs do obsługi aliasów, niestandardowych usług wizualizatora i dostępu do informacji o typie obiektu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfejsu uzyskuje ten interfejs, za pomocą [QueryInterface](/cpp/atl/queryinterface).
+ Interfejs [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) uzyskuje ten interfejs przy użyciu [QueryInterface](/cpp/atl/queryinterface).
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- Oprócz metod dostarczonych przez [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfejsu, ten interfejs wykonuje następujące czynności:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ Oprócz metod dostarczonych przez interfejs [IDebugBinder,](../../../extensibility/debugger/reference/idebugbinder.md) ten interfejs implementuje następujące czynności:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Pobiera obiekt pamięci reprezentująca pamięci, z którym powiązany jest ten obiekt.|
-|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Pobiera wyjątek skojarzone z tym obiektem (jeśli istnieje)|
-|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Pobiera nadać jej nazwę aliasu|
-|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Pobiera tablicę wszystkie aliasy dla tego obiektu|
-|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Pobiera liczbę typów argumentów skojarzonych z tym obiektem|
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Pobiera listę typów argumentów skojarzonych z tym obiektem|
-|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Pobiera interfejs do niej wizualizatora|
-|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konwertuje lokalizacji obiektu lub adresów pamięci 64-bitowych w kontekście pamięci.|
+|[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Pobiera obiekt pamięci reprezentujący pamięć, z którą jest powiązany ten obiekt.|
+|[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Pobiera wyjątek skojarzony z tym obiektem (jeśli istnieje),|
+|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Pobiera alias o swojej nazwie,|
+|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Pobiera tablicę wszystkich aliasów dla tego obiektu,|
+|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Pobiera liczbę typów argumentów skojarzonych z tym obiektem,|
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Pobiera listę typów argumentów skojarzonych z tym obiektem,|
+|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Pobiera interfejs do usługi wizualizatora,|
+|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konwertuje lokalizację obiektu lub 64-bitowy adres pamięci do kontekstu pamięci.|
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: ee.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugReturnValueEvent2::GetReturnValue | Dokumentacja firmy Microsoft
+title: IDebugReturnValueEvent2::GetReturnValue | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2::GetReturnValue
 ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ddba529115bfb868fc913c37f9b15f1b4f658ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da81b293055325c949387cb8584e18c6034f14f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329668"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720276"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
-Pobiera wartość zwracana na przechodzenie krok po kroku z lub funkcji.
+Pobiera wartość zwrócona przy wyjściu z lub za pomocą funkcji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetReturnValue ( 
 
 ## <a name="parameters"></a>Parametry
 `ppReturnValue`\
-[out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje wartość, które mają zostać pobrane.
+[na zewnątrz] Zwraca obiekt [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) który reprezentuje wartość do pobrania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

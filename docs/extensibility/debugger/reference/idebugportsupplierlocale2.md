@@ -1,21 +1,21 @@
 ---
-title: IDebugPortSupplierLocale2 | Microsoft Docs
+title: IDebugPortSupplierLocale2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f691bba978243e75511996caee38df09baa3c3e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353304"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724300"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 Zapewnia obsługę ustawień regionalnych dla dostawcy portu.
@@ -27,7 +27,7 @@ IDebugPortSupplierLocale2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawcy niestandardowego portu implementuje ten interfejs, aby ustawić ustawienia regionalne.
+ Dostawca portu niestandardowego implementuje ten interfejs, aby ustawić ustawienia regionalne.
 
 ## <a name="methods"></a>Metody
  W poniższej tabeli przedstawiono metody **IDebugPortSupplierLocale2**.
@@ -39,11 +39,11 @@ IDebugPortSupplierLocale2 : IUnknown
 ## <a name="requirements"></a>Wymagania
  Nagłówek: Portpriv.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

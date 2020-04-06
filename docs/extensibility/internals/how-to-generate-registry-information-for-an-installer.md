@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: generowanie informacji rejestru dla Instalatora | Microsoft Docs'
+title: 'Jak: Generowanie informacji o rejestrze instalatora | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,30 +7,30 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4395732cd8d3fbc71ac902801c71270ff446470
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 84bb58230c6856cc9598e3caea5c710bb3a69f36
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981968"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708071"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Instrukcje: generowanie informacji rejestru dla Instalatora
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Jak: Generowanie informacji o rejestrze dla instalatora
 
-Narzędzia *RegPkg. exe* można użyć do wygenerowania manifestu rejestracji dla zarządzanego pakietu VSPackage. Manifest można włączyć do pakietu instalacyjnego Instalator Windows. RegPkg może również generować plik, który może być dołączany do pliku źródłowego Instalatora na podstawie zestawu [narzędzi Instalator Windows XML](https://wixtoolset.org/).
+*Narzędzie RegPkg.exe* może służyć do generowania manifestu rejestracji dla zarządzanego programu VSPackage. Manifest można włączyć do pakietu instalacyjnego Instalatora Windows. Program RegPkg może również wygenerować plik, który może zostać dołączony do pliku źródłowego instalatora na podstawie [zestawu narzędzi XML Instalatora Windows.](https://wixtoolset.org/)
 
 > [!IMPORTANT]
-> RegPkg generuje nazwy ścieżek, które są specyficzne dla systemu deweloperskiego, więc za każdym razem, gdy używasz RegPkg, musisz edytować dane wyjściowe, aby użyć odpowiednich Instalator Windows sformatowanych właściwości. Na przykład wartość `InprocServer32` powinna być *\<SystemFolder\>mscoree. dll* , a ścieżki powinny używać *\<#filekey\>* i *\<* $componentkey\>. Dostosowanie danych wyjściowych w ten sposób obsługuje komputery z systemem Windows zainstalowane na innym dysku lub w innym katalogu, zlokalizowanych nazwach katalogów i ścieżkach, które użytkownicy mogą wybrać. Aby uzyskać więcej informacji, zobacz [Formatowanie](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) w Instalator Windows SDK. Jeśli przestrzegasz Konwencji RegPkg dla ścieżek systemu deweloperskiego, na przykład identyfikatorów plików w formularzu *File_\<nazwa pliku\>* — trzeba wprowadzić mniejszą liczbę zmian.
+> RegPkg generuje nazwy ścieżek, które są specyficzne dla systemu deweloperów, więc za każdym razem, gdy używasz RegPkg, należy edytować dane wyjściowe, aby użyć odpowiednich właściwości sformatowanych przez Instalatora Windows. Na przykład `InprocServer32` wartość powinna być * \<\>SystemFolder mscoree.dll* i ścieżki powinny używać * \<\> #filekey* i * \<$componentkey\>*. Dostosowanie danych wyjściowych w ten sposób obsługuje komputery z systemem Windows zainstalowanym na innym dysku lub w innym katalogu, zlokalizowane nazwy katalogów i ścieżki, które użytkownicy mogą wybrać. Aby uzyskać więcej informacji, zobacz [Sformatowany](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) w SDK Instalatora Windows. Jeśli zastosujesz się do konwencji RegPkg dla ścieżek systemu deweloperów — na przykład identyfikatorów plików formularza *File_\<nazwy\>pliku*— należy wprowadzić mniej zmian.
 
 ## <a name="to-create-a-registration-manifest"></a>Aby utworzyć manifest rejestracji
 
-- Uruchom RegPkg z przełącznikiem **/regfile** . Podaj wszystkie inne przełączniki, nazwę pliku wyjściowego i ścieżkę pakietu VSPackage.
+- Uruchom regPkg za pomocą przełącznika **/regfile.** Podaj inne przełączniki, nazwę pliku wyjściowego i ścieżkę VSPackage.
 
-     Na przykład w wierszu polecenia można wpisać coś w następujący sposób:
+     Na przykład w wierszu polecenia należy wpisać coś w stylu:
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll
@@ -40,7 +40,7 @@ Narzędzia *RegPkg. exe* można użyć do wygenerowania manifestu rejestracji dl
 
 - Otwórz manifest rejestracji w dowolnym edytorze tekstu.
 
-     Poniższy przykład to manifest rejestracji tworzony przez RegPkg dla usługi języka IronPython:
+     Poniższy przykład jest manifest rejestracji, który RegPkg tworzy dla usługi języka IronPython:
 
     ```
     REGEDIT4
@@ -97,21 +97,21 @@ Narzędzia *RegPkg. exe* można użyć do wygenerowania manifestu rejestracji dl
 
     ```
 
-## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Aby utworzyć plik dołączania zestawu narzędzi XML Instalator Windows
+## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Aby utworzyć zestaw narzędzi XML Instalatora Windows dołącz plik
 
-- Uruchom RegPkg z przełącznikiem **/wixfile** . Podaj wszystkie inne przełączniki, nazwę pliku wyjściowego i ścieżkę pakietu VSPackage.
+- Uruchom regpkg za pomocą przełącznika **/wixfile.** Podaj inne przełączniki, nazwę pliku wyjściowego i ścieżkę VSPackage.
 
-     Na przykład w wierszu polecenia można wpisać coś w następujący sposób:
+     Na przykład w wierszu polecenia należy wpisać coś w stylu:
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll
     ```
 
-## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Aby wyświetlić plik dołączania zestawu narzędzi XML Instalator Windows
+## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Aby wyświetlić zestaw narzędzi XML Instalatora Windows dołącz plik
 
-- Otwórz plik zestawu narzędzi Instalator Windows XML w dowolnym edytorze tekstu.
+- Otwórz zestaw narzędzi XML Instalatora Windows w dowolnym edytorze tekstu.
 
-     Poniższy przykład to plik dołączany, który RegPkg tworzy dla usługi języka IronPython:
+     Poniższy przykład jest plik include, który RegPkg tworzy dla usługi języka IronPython:
 
     ```xml
     <Include>
@@ -181,7 +181,7 @@ Narzędzia *RegPkg. exe* można użyć do wygenerowania manifestu rejestracji dl
     </Include>
     ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zarejestruj pakietów VSPackage](../../extensibility/registering-and-unregistering-vspackages.md)
+- [Zarejestruj pakiety VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)
 - [Pakiety VSPackage](../../extensibility/internals/vspackages.md)

@@ -1,5 +1,5 @@
 ---
-title: Defaultname — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element DefaultName (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - DefaultName element [Visual Studio project templates]
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dbb720bf04c36b2d9f018be5418a25088e259f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348151"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712303"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>Defaultname — element (szablony Visual Studio)
-Określa nazwę, który zostanie wygenerowany przez system projektu programu Visual Studio dla projektu lub elementu, podczas jego tworzenia.
+# <a name="defaultname-element-visual-studio-templates"></a>Element DefaultName (szablony programu Visual Studio)
+Określa nazwę, którą system projektu visual studio wygeneruje dla projektu lub elementu podczas jego tworzenia.
 
- \<VSTemplate > \<TemplateData > \<defaultname — >
+ \<> \<templatedata> \<DefaultName>
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,24 +46,24 @@ Określa nazwę, który zostanie wygenerowany przez system projektu programu Vis
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Ten tekst Określa domyślną nazwę projektu lub elementu.
+ Ten tekst określa domyślną nazwę projektu lub elementu.
 
 ## <a name="remarks"></a>Uwagi
- `DefaultName` element jest opcjonalny.
+ `DefaultName`jest elementem opcjonalnym.
 
- W przypadku projektów ten element Określa nazwę katalogu, który przechowuje projektu na dysku. Dla elementów Określa nazwę pliku w pliku źródłowym.
+ W przypadku projektów ten element określa nazwę katalogu, który przechowuje projekt na dysku. W przypadku elementów określa nazwę pliku źródłowego.
 
- Podczas tworzenia projektu lub elementu, można modyfikować przy użyciu nazwy domyślnej **nazwa** opcja, która jest dostępna z poziomu **nowy projekt** okno dialogowe lub **Dodaj nowy element** okno dialogowe.
+ Podczas tworzenia projektu lub elementu można zmodyfikować nazwę domyślną za pomocą opcji **Nazwa,** która jest dostępna w oknie dialogowym **Nowy projekt** lub Oknie Dialogowym Dodawanie **nowego elementu.**
 
- Jeśli użytkownik nie chce, aby system projektu ma generować domyślna nazwa projektu lub elementu, wartość [providedefaultname —](../extensibility/providedefaultname-element-visual-studio-templates.md) elementu `False`.
+ Jeśli system projektu nie ma generować domyślnej nazwy projektu lub elementu, należy ustawić element `False` [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) na .
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych dla szablonu elementu standardowego dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasy.
+ Poniższy przykład ilustruje metadane dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu elementu standardowego dla klasy.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -81,6 +81,6 @@ Określa nazwę, który zostanie wygenerowany przez system projektu programu Vis
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

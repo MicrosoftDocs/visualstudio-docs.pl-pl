@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
+title: IDebugStackFrame2::GetPhysicalStackRange | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347711"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719672"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-Pobiera reprezentację zależnych od maszyny, zakresu adresów fizycznych skojarzonych z ramki stosu.
+Pobiera zależną od komputera reprezentację zakresu adresów fizycznych skojarzonych z ramką stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,18 +43,18 @@ int GetPhysicalStackRange ( 
 
 ## <a name="parameters"></a>Parametry
 `paddrMin`\
-[out] Zwraca najniższy adres fizyczny skojarzone z tą ramką stosu.
+[na zewnątrz] Zwraca najniższy adres fizyczny skojarzony z tą ramką stosu.
 
 `paddrMax`\
-[out] Zwraca najwyższy adres fizyczny skojarzone z tą ramką stosu.
+[na zewnątrz] Zwraca najwyższy adres fizyczny skojarzony z tą ramką stosu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Informacje zwracane przez tę metodę jest używany przez Menedżer debugowania sesji (SDM) do sortowania ramki stosu.
+ Informacje zwracane przez tę metodę są używane przez menedżera debugowania sesji (SDM) do sortowania ramek stosu.
 
- Zakłada się, że stos wywołań rośnie, oznacza to, dodania nowej ramki stosu w coraz większym stopniu niższe adresów pamięci. Architektura środowiska wykonawczego, musisz podać zakresy adresów fizycznych stosu, które odpowiadają tym założeń.
+ Zakłada się, że stos wywołań rośnie w dół, oznacza to, że nowe ramki stosu są dodawane przy coraz niższych adresach pamięci. Architektura czasu wykonywania musi zapewniać zakresy stosu fizycznego, które odpowiadają temu założeniu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

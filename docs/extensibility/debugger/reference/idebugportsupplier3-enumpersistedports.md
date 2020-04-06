@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts | Dokumentacja firmy Microsoft
+title: IDebugPortSupplier3::EnumPersistedPorts | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 269a49a21fdf2c42c716fba1ab3c8cb293e15a1a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340041"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724451"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-Ta metoda pobiera obiekt, który umożliwia wyliczenie listę portów utrwalonych.
+Ta metoda pobiera obiekt, który umożliwia wyliczenie listy utrwalonych portów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,18 +43,18 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>Parametry
 `PortNames`\
-[in] A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) strukturę, która zawiera listę nazw portu odnajdujący i zwracający między utrwalonych portów. Zostaną zwrócone tylko tych utrwalonych portów przy użyciu tych nazw.
+[w] Struktura [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) zawierająca listę nazw portów do znalezienia i zwrócenia między utrwalonych portów. Tylko te utrwalone porty o tych nazwach zostaną zwrócone.
 
 `ppEnum`\
-[out] Obiekt, który implementuje [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interfejsu.
+[na zewnątrz] Obiekt, który implementuje interfejs [IEnumDebugPorts2.](../../../extensibility/debugger/reference/ienumdebugports2.md)
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Utrwalonych porty są ładowane, gdy dostawcy portu jest tworzone i zapisywane, kiedy niszczony jest dostawcy portu.
+ Utrwalone porty są ładowane, gdy dostawca portu jest tworzone i zapisywane, gdy dostawca portu jest niszczony.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
 - [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

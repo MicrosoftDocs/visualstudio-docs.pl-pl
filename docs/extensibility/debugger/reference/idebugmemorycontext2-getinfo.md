@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo | Dokumentacja firmy Microsoft
+title: IDebugMemoryContext2::GetInfo | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - GetInfo method
 - IDebugMemoryContext2::GetInfo method
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f349ef2f923dd18feeb2a201ef59e9d3489271ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c190710afc9231662fa12c5552d6f73e0268b643
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347049"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727466"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
-Pobiera [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) strukturę, która opisuje kontekst.
+Pobiera [strukturę CONTEXT_INFO,](../../../extensibility/debugger/reference/context-info.md) która opisuje kontekst.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,15 +44,15 @@ int GetInfo(
 
 ## <a name="parameters"></a>Parametry
 `dwFields`\
-[in] Kombinacja flag z [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) Wyliczenie wskazujące, które pola [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury mają być wypełnić.
+[w] Kombinacja flag z wyliczenia [CONTEXT_INFO_FIELDS,](../../../extensibility/debugger/reference/context-info-fields.md) które wskazują, które pola [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury mają być wypełniane.
 
 `pInfo`\
-[out w] `CONTEXT_INFO` Strukturę, która jest wypełnione.
+[w, na zewnątrz] Struktura, `CONTEXT_INFO` która jest wypełniona.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

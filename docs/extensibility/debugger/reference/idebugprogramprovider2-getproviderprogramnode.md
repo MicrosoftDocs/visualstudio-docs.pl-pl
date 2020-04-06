@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProgramNode | Dokumentacja firmy Microsoft
+title: IDebugProgramProvider2::GetProviderProgramNode | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::GetProviderProgramNode
 ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7629a60f3393f996a456c907ec150be202a0bb94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fd8ca7d5120ba20695caef2e9021ee25869df72f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349817"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721794"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Pobiera węzeł programu dla określonego programu.
@@ -51,33 +51,33 @@ int GetProviderProgramNode(
 
 ## <a name="parameters"></a>Parametry
 `Flags`\
-[in] Kombinacja flag z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) wyliczenia. Następujące flagi są typowe dla tego wywołania:
+[w] Kombinacja flag z wyliczenia [PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) Następujące flagi są typowe dla tego wywołania:
 
 |Flaga|Opis|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|Obiekt wywołujący jest uruchomiona na komputerze zdalnym.|
-|`PFLAG_DEBUGGEE`|Obiekt wywołujący jest teraz debugowana (dodatkowe informacje na temat kierowania zostanie zwrócony dla każdego węzła).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiona przez debuger.|
+|`PFLAG_REMOTE_PORT`|Rozmówca jest uruchomiony na komputerze zdalnym.|
+|`PFLAG_DEBUGGEE`|Wywołujący jest obecnie debugowane (dodatkowe informacje na temat marshalling zostaną zwrócone dla każdego węzła).|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Wywołujący został dołączony do, ale nie został uruchomiony przez debugera.|
 
 `pPort`\
-[in] Port procesu wywołującego jest uruchomiona na.
+[w] Port, na który jest uruchomiony proces wywoływania.
 
 `processId`\
-[in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.
+[w] Struktura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) zawierająca identyfikator procesu, który zawiera dany program.
 
 `guidEngine`\
-[in] Identyfikator GUID aparatu debugowania, który program jest dołączony do (jeśli istnieje).
+[w] Identyfikator GUID aparatu debugowania, do którego jest dołączony program (jeśli istnieje).
 
 `programId`\
-[in] Identyfikator programu, dla którego należy pobrać węzła programu.
+[w] Identyfikator programu, dla którego ma zostać wydzielona węźle programu.
 
 `ppProgramNode`\
-[out] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt reprezentujący węzeł żądanego programu.
+[na zewnątrz] [Obiekt IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) reprezentujący żądany węzeł programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)
