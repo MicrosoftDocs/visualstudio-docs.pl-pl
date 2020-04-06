@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Dokumentacja firmy Microsoft
+title: DEBUG_REASON | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346166"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737422"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
-Określa, dlaczego ten proces został uruchomiony dla debugowania.
+# <a name="debug_reason"></a>DEBUG_REASON
+Określa, dlaczego proces został uruchomiony do debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -50,30 +50,30 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>Pola
 `DEBUG_REASON_ERROR`\
-Wystąpił błąd nieokreślonym (są one używane jako domyślne warunku, gdy żaden z innych powodów, dla których Dopasuj).
+Wystąpił błąd niespecyficznych (jest używany jako warunek domyślny, gdy żaden z innych powodów nie pasuje).
 
 `DEBUG_REASON_USER_LAUNCHED`\
 Proces został uruchomiony na żądanie użytkownika.
 
 `DEBUG_REASON_USER_ATTACHED`\
-Proces działa już został dołączony do przez użytkownika.
+Już uruchomiony proces został dołączony przez użytkownika.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-Proces został dołączony do automatycznie, podczas jej uruchamiania.
+Proces został automatycznie dołączony do momentu jego uruchomienia.
 
 `DEBUG_REASON_CAUSALITY`\
-Proces został uruchomiony ze względu na *Just-In-Time* zdarzenia debugowania (JIT).
+Proces został uruchomiony z powodu zdarzenia debugowania *Just-In-Time* (JIT).
 
 ## <a name="remarks"></a>Uwagi
-Zwrócone w wyniku [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.
+Zwrócono z [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

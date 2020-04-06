@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO | Microsoft Docs
+title: FRAMEINFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681098"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736786"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
-Opisuje ramkę stosu.
+W tym artykule opisano ramkę stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -65,13 +65,13 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `m_dwValidFields`\
-Kombinacja flag z wyliczenia [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) , która określa, które pola są wypełnione.
+Kombinacja flag z wyliczenia [FRAMEINFO_FLAGS,](../../../extensibility/debugger/reference/frameinfo-flags.md) która określa, które pola są wypełniane.
 
 `m_bstrFuncName`\
 Nazwa funkcji skojarzona z ramką stosu.
 
 `m_bstrReturnType`\
-Zwracany typ skojarzony z ramką stosu.
+Typ zwracany skojarzony z ramką stosu.
 
 `m_bstrArgs`\
 Argumenty funkcji skojarzonej z ramką stosu.
@@ -83,37 +83,37 @@ Język, w którym funkcja jest zaimplementowana.
 Nazwa modułu skojarzona z ramką stosu.
 
 `m_addrMin`\
-Minimalny adres fizycznego stosu.
+Minimalny adres stosu fizycznego.
 
 `m_addrMAX`\
-Maksymalny adres fizycznego stosu.
+Maksymalny adres stosu fizycznego.
 
 `m_pFrame`\
-Obiekt [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , który reprezentuje tę ramkę stosu.
+[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obiekt, który reprezentuje tę ramkę stosu.
 
 `m_pModule`\
-Obiekt [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , który reprezentuje moduł, który zawiera tę ramkę stosu.
+[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) obiekt, który reprezentuje moduł, który zawiera tę ramkę stosu.
 
 `m_fHasDebugInfo`\
-Wartość niezerowa (`TRUE`), jeśli w danej ramce istnieją informacje o debugowaniu.
+Non-zero`TRUE`( ), jeśli informacje debugowania istnieją w danej ramce.
 
 `m_fStaleCode`\
-Wartość niezerowa (`TRUE`), jeśli Ramka stosu jest skojarzona z kodem, który nie jest już prawidłowy.
+Non-zero`TRUE`( ), jeśli ramka stosu jest skojarzona z kodem, który nie jest już prawidłowy.
 
 `m_fAnnotatedFrame`\
-Wartość niezerowa (`TRUE`), jeśli Ramka stosu ma adnotację z menedżerem debugowania sesji (SDM).
+Non-zero`TRUE`( ), jeśli ramka stosu jest opisywana przez menedżera debugowania sesji (SDM).
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest przenoszona do metody [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) do wypełnienia. Ta struktura również znajduje się na liście zawartej w interfejsie [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) , który z kolei jest zwracany przez wywołanie metody [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
+Ta struktura jest przekazywana do [Metody GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) do wypełnienia. Ta struktura jest również zawarta na liście, która jest zawarta w interfejsie [IEnumDebugFrameInfo2,](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) który z kolei jest zwracany z wywołania do [Metody EnumFrameInfo.](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: Msdbg. h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

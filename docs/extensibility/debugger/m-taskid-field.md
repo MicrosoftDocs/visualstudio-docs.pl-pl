@@ -1,30 +1,30 @@
 ---
-title: m_taskId Field | Microsoft Docs
+title: pole m_taskId | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_taskId field, Task class [.NET Framework debug engines]
 ms.assetid: 9e4b827e-7c41-4fa3-b646-830aba2ec736
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 511a9e51c9612db30efe122d940ae458f1850a08
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c031d225010c6e1e6d8a7c681e47699efe56ed9c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351547"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738355"
 ---
-# <a name="mtaskid-field"></a>m_taskId field
-Pole zapasowe dla <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> właściwości.
+# <a name="m_taskid-field"></a>Pole m_taskId
+Pole podkładu <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> dla właściwości.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Zestaw:** mscorlib (w *mscorlib.dll*)
+ **Montaż:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,5 +34,5 @@ Pole zapasowe dla <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullNa
 
 ## <a name="remarks"></a>Uwagi
 
-## <a name="see-also"></a>Zobacz także
-- [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Zobacz też
+- [Klasa zadań](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Dokumentacja firmy Microsoft
+title: IDebugBoundBreakpoint2::SetCondition | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337446"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735459"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-Ustawia lub zmienia warunek skojarzony z ten powiązany punkt przerwania.
+Ustawia lub zmienia warunek skojarzony z tym powiązanym punktem przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,15 +42,15 @@ int SetCondition( 
 
 ## <a name="parameters"></a>Parametry
 `bpCondition`\
-[in] Wartość z zakresu od [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) wyliczenie opisujące stan.
+[w] Wartość z [wyliczenia BP_CONDITION,](../../../extensibility/debugger/reference/bp-condition.md) który opisuje warunek.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` wartość, jeśli stan obiektu powiązanego `BPS_DELETED` punktu przerwania jest ustawiony na (część wyliczenia [BP_STATE).](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="remarks"></a>Uwagi
- Dowolny warunek, który był wcześniej skojarzony z tego punktu przerwania zostaną utracone.
+ Każdy warunek, który był wcześniej skojarzony z tym punktem przerwania zostanie utracony.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

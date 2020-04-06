@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Microsoft Docs
+title: EXCEPTION_STATE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337689"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736959"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
+# <a name="exception_state"></a>EXCEPTION_STATE
 Określa stan wyjątku.
 
 ## <a name="syntax"></a>Składnia
@@ -78,65 +78,65 @@ public enum enum_EXCEPTION_STATE {
 
 ## <a name="fields"></a>Pola
 `EXCEPTION_NONE`\
-Nie zatrzymanie przy wyjątku.
+Nie zatrzymuj się na wyjątek.
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-Zatrzymaj przy pierwszym uruchomieniu którego wyjątku. W opisie zdarzenia wyjątków, ta flaga wskazuje, czy zdarzenie wyjątku jest zdarzenie wyjątku pierwszej szansy.
+Zatrzymaj się przy pierwszym wypalaniu wyjątku. Opisując zdarzenie wyjątku, ta flaga wskazuje, że zdarzenie wyjątku jest zdarzeniem wyjątku pierwszej szansy.
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-Zatrzymaj po uruchomieniu drugiego którego wyjątku. W opisie zdarzenia wyjątków, wskazuje zdarzenie wyjątku zdarzeń wyjątku szansy na sekundę.
+Zatrzymaj się przy drugim wypalaniu wyjątku. Opisując zdarzenie wyjątku, wskazuje, że zdarzenie wyjątku jest zdarzeniem wyjątku drugiej szansy.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-Zatrzymaj przy pierwszym uruchomieniu którego wyjątku trybu użytkownika. W opisie zdarzenia wyjątków, wskazuje zdarzenie wyjątku zdarzenie wyjątku pierwszej szansy użytkownika.
+Zatrzymaj przy pierwszym wypalania wyjątku trybu użytkownika. Opisując zdarzenie wyjątku, wskazuje, że zdarzenie wyjątku jest zdarzeniem wyjątku użytkownika pierwszej szansy.
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-Zatrzymaj, gdy nie przechwycono wyjątku trybu użytkownika. W opisie zdarzenia wyjątków, wskazuje zdarzenie wyjątku zdarzenie wyjątku tryb nieprzechwycony użytkownika.
+Zatrzymaj, gdy wyjątek trybu użytkownika nie zostanie przechwycony. Opisując zdarzenie wyjątku, wskazuje, że zdarzenie wyjątku jest nieprzychyne zdarzenie wyjątku trybu użytkownika.
 
 `EXCEPTION_STOP_ALL`\
-Zatrzymaj przy każdym wyjątku. Nie można używać w opisie zdarzenia wyjątku.
+Zatrzymaj się na każdym wyjątku. Nie jest używany podczas opisywania zdarzenia wyjątku.
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-W opisie zdarzenia wyjątków, wskazuje, że wyjątek nie może być kontynuowana z.
+Opisując zdarzenie wyjątku, wskazuje, że wyjątek nie może być kontynuowany z.
 
 `EXCEPTION_CODE_SUPPORTED`\
-Wskazuje, że wyjątek ma kod obsługi go. Służącego do wyświetlania wyjątek
+Wskazuje, że wyjątek ma kod obsługujący go. Używany do wyświetlania wyjątku
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-Wskazuje, że kod wyjątku powinien być wyświetlany w formacie szesnastkowym. Używany podczas wyświetlania wyjątek.
+Wskazuje, że kod wyjątku powinien być wyświetlany w szesnastkowej. Używane do wyświetlania wyjątku.
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-Wskazuje, że kod wyjątku obsługuje JustMyCode. Używany podczas wyświetlania wyjątek.
+Wskazuje, że kod wyjątku obsługuje JustMyCode. Używane do wyświetlania wyjątku.
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-Wskazuje, że debuger kodu zarządzanego powinna obsługiwać wyjątki. W przeciwnym razie zestawu, debuger domyślnej obsługi wyjątków. Te informacje są przekazywane do [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) metody i nie są używane w [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struktury.
+Wskazuje, że debuger kodu zarządzanego powinien obsługiwać wyjątki. Jeśli nie jest ustawiona, debuger domyślny obsługuje wyjątki. Jest to przekazywane do [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) metody i nie jest używany w [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struktury.
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
-PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
+PRZESTARZAŁE, NIE UŻYWAĆ.
 
 `EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
-PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
+PRZESTARZAŁE, NIE UŻYWAĆ.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
-PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
+PRZESTARZAŁE, NIE UŻYWAĆ.
 
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
-PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
+PRZESTARZAŁE, NIE UŻYWAĆ.
 
 ## <a name="remarks"></a>Uwagi
-Używane jako `dwState` członkiem [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) strukturę, aby wskazać jej stan wyjątku i co można zrobić na jego temat.
+Używany jako `dwState` element członkowski [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struktury, aby wskazać stan wyjątku i co można z nim zrobić.
 
-Te wartości również są przekazywane do [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) metodę, aby ustawić stan wszystkich wyjątków.
+Te wartości są również przekazywane do [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) metody, aby ustawić stan wszystkich wyjątków.
 
-Te flagi mogą być łączone z bitowe OR.
+Flagi te mogą być łączone z bitowym OR.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
 - [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

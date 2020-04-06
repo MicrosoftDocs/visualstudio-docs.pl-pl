@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetNameFromToken | Dokumentacja firmy Microsoft
+title: IDebugComPlusSymbolProvider::GetNameFromToken | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetNameFromToken
 - GetNameFromToken
 ms.assetid: 6e8cf468-5fd1-4655-93ed-88828d6068b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 778a6f90dcc20ad19e310fb6ddd7680318dc3c98
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 544bb2ed8a5526c04c46c6609c6bca3b6bf57bdf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336724"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733782"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-Zwraca nazwę skojarzone z tokenem określony, biorąc pod uwagę jej obiektu metadanych.
+Zwraca nazwę skojarzoną z określonym tokenem, biorąc pod uwagę jego obiekt metadanych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,19 +44,19 @@ int GetNameFromToken (
 
 ## <a name="parameters"></a>Parametry
 `pMetadataImport`\
-[in] Obiekt, który zawiera informacje o metadanych.
+[w] Obiekt zawierający informacje o metadanych.
 
 `dwToken`\
-[in] Token do jej nazwać.
+[w] Token do nazwy.
 
 `pbstrName`\
-[out] Nazwa, która odnosi się do tokenu.
+[na zewnątrz] Nazwa, która odpowiada tokenowi.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugSymbolProvider,** który udostępnia interfejs [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetNameFromToken(
@@ -122,5 +122,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

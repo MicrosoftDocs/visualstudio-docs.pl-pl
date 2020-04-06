@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetMemoryBytes | Dokumentacja firmy Microsoft
+title: IDebugProgram2::GetMemoryBytes | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetMemoryBytes
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca06bd4593401544155e53c21315499d85edc07a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2cc0be42ace78dbd46fd64ce42f446a9449998b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319434"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722810"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
-Pobiera bajtów pamięci zajmowane przez program.
+Pobiera bajty pamięci zajmowane przez program.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int GetMemoryBytes( 
 
 ## <a name="parameters"></a>Parametry
 `ppMemoryBytes`\
-[out] Zwraca [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiekt, który reprezentuje bajtów pamięci programu.
+[na zewnątrz] Zwraca obiekt [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) reprezentujący bajty pamięci programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Bajty pamięci, reprezentowane przez [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiektów jest przeznaczony dla programu obrazu w pamięci i nie wszystkie pamięci, która została przydzielona, gdy program został wykonany.
+ Bajty pamięci reprezentowane przez obiekt [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) jest dla obrazu programu w pamięci, a nie pamięci, która została przydzielona podczas wykonywania programu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

@@ -1,27 +1,27 @@
 ---
-title: CommandPlacement, Element | Dokumentacja firmy Microsoft
+title: Element dowodzenia | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c43dab922d51d2d3f96ffaba0ef24f8f0e18fa1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341871"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739743"
 ---
-# <a name="commandplacement-element"></a>CommandPlacement, element
-CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzględnione w więcej niż jednej grupie lub menu. Przy użyciu elementu CommandPlacement, nie trzeba całkowicie ponownie zdefiniować te elementy, aby zmodyfikować wygląd interfejsu użytkownika.
+# <a name="commandplacement-element"></a>Element połówka polecenia
+CommandPlacement Element umożliwia przyciski, grupy i menu, które mają być zawarte w więcej niż jednej grupie lub menu. Za pomocą CommandPlacement element, nie trzeba całkowicie ponownie zdefiniować te elementy w celu zmodyfikowania wyglądu interfejsu użytkownika.
 
- Aby uzyskać więcej informacji, zobacz [tworzenie wielokrotnego użytku grup przycisków](../extensibility/creating-reusable-groups-of-buttons.md).
+ Aby uzyskać więcej informacji, zobacz [Tworzenie grup przycisków wielokrotnego użytku](../extensibility/creating-reusable-groups-of-buttons.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,22 +38,22 @@ CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzgl
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Identyfikator GUID|Wymagana. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Symbols, element](../extensibility/symbols-element.md).|
-|identyfikator|Wymagana. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|
-|priority|Wymagana. Określa położenie visual elementu w jego elementu nadrzędnego.|
-|Warunek|Opcjonalna. Zobacz [warunkowego Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Identyfikator GUID|Wymagany. Identyfikator guid zestawu poleceń, zgodnie z definicją w [symbolach elementu](../extensibility/symbols-element.md).|
+|id|Wymagany. Identyfikator menu, grupy lub polecenia, które mają zostać umieszczone, zgodnie z definicją w pliku `Symbols Element`.|
+|priority|Wymagany. Określa położenie wizualne elementu w jego elemencie nadrzędnym.|
+|Warunek|Element opcjonalny. Zobacz [Warunkowe aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|Nadrzędny|Wymagana. Menu lub grupy, która hostuje element które mają być umieszczone.|
+|Nadrzędny|Wymagany. Menu lub grupa, w których znajduje się element, który ma zostać umieszczony.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[CommandPlacements, element](../extensibility/commandplacements-element.md)|Określa grupy CommandPlacements i CommandPlacement elementów.|
+|[Element Połowisku](../extensibility/commandplacements-element.md)|Określa grupy commandplacements i CommandPlacement elementów.|
 
 ## <a name="example"></a>Przykład
 
@@ -66,6 +66,6 @@ CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzgl
 </CommandPlacements>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [CommandPlacements, element](../extensibility/commandplacements-element.md)
-- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz też
+- [Element Połowisku](../extensibility/commandplacements-element.md)
+- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

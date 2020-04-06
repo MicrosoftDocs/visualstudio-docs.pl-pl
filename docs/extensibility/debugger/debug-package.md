@@ -1,32 +1,32 @@
 ---
-title: Pakiet debugowania | Dokumentacja firmy Microsoft
+title: Pakiet debugowania | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], packages
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb1af813fabb1245d85fe18629d77a45f6acca3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345909"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739018"
 ---
 # <a name="debug-package"></a>Pakiet debugowania
-Pakiet debugowania jest uruchamiane w powłoce programu Visual Studio i obsługuje cały interfejs użytkownika. On wykorzystuje interfejsy debugowania programu Visual Studio i komunikuje się z usługą Menedżer debugowania sesji (SDM).
+Pakiet debugowania jest uruchamiany w powłoce programu Visual Studio i obsługuje cały interfejs użytkownika. Zużywa interfejsy debugowania programu Visual Studio i komunikuje się z menedżerem debugowania sesji (SDM).
 
- Zdarzenia przerwania wysyłane za pośrednictwem SDM Przełącz debugera w trybie uruchamiania tryb przerwania i zmianie fokusu do programu, w którym wystąpiło przerwanie. Debugowanie pakietu śledzi ramki stosu i wątku z informacje wysyłane do niej przez zdarzenia.
+ Przerwij zdarzenia wysyłane za pośrednictwem SDM przełączyć debugera z trybu uruchamiania do trybu przerwania i zmienić fokus do programu, w którym wystąpił przerwa. Pakiet debugowania śledzi ramki stosu i wątku z informacji wysyłanych do niego przez zdarzenia.
 
- Debugowanie pakietu nie ma języka lub zależności środowiska uruchomieniowego. Nie jest niezbędne do wdrożenia lub zmodyfikować pakiet debugowania.
+ Pakiet debugowania nie ma zależności w języku ani środowisku wykonywania. Nie jest konieczne implementowanie lub modyfikowanie pakietu debugowania.
 
- Debugowanie pakietu jest implementowany przez *vsdebug.dll*.
+ Pakiet debugowania jest implementowany przez *plik vsdebug.dll*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Menedżer debugowania sesji](../../extensibility/debugger/session-debug-manager.md)
 - [Ramki stosu](../../extensibility/debugger/stack-frames.md)
 - [Wątki](../../extensibility/debugger/threads.md)

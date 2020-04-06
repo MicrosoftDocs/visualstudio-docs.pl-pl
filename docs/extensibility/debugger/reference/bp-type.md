@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE | Dokumentacja firmy Microsoft
+title: BP_TYPE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350577"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737788"
 ---
-# <a name="bptype"></a>BP_TYPE
-Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacja danych lub inny typ punktu przerwania.
+# <a name="bp_type"></a>BP_TYPE
+Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacją danych, czy jest innym typem punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,28 +48,28 @@ public enum enum_BP_TYPE {
 
 ## <a name="fields"></a>Pola
 `BPT_NONE`\
-Określa żadnego typu punktu przerwania.
+Określa brak typu punktu przerwania.
 
 `BPT_CODE`\
-Określa punkt przerwania w kodzie.
+Określa punkt przerwania kodu.
 
 `BPT_DATA`\
 Określa punkt przerwania danych.
 
 `BPT_SPECIAL`\
-Określa punkt przerwania, który nie jest ani kodu ani typu danych. Ten typ jest przestarzały i nie powinna być używana.
+Określa punkt przerwania, który nie jest ani kodem, ani typem danych. Ten typ jest przestarzały i nie powinien być używany.
 
 ## <a name="remarks"></a>Uwagi
 Przekazany jako parametr do [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) i [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) metody.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

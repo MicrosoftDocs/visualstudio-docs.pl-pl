@@ -1,27 +1,27 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Dokumentacja firmy Microsoft
+title: IDebugBreakpointChecksumRequest2::GetChecksum | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a266a827e3dc73ea1c3cc5b3fb28cbb99acba1a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314344"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735173"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Pobiera suma kontrolna dokumentu żądania punktu przerwania podane Unikatowy identyfikator algorytmu sumy kontrolnej do użycia.
+Pobiera sumę kontrolną dokumentu dla żądania punktu przerwania, biorąc pod uwagę unikatowy identyfikator algorytmu sumy kontrolnej do użycia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>Parametry
 `guidAlgorithm`\
-[in] Unikatowy identyfikator algorytmu sumy kontrolnej.
+[w] Unikatowy identyfikator algorytmu sumy kontrolnej.
 
 `pChecksumData`\
-[out] Suma kontrolna dokumentu dla żądania punktu przerwania.
+[na zewnątrz] Suma kontrolna dokumentu dla żądania punktu przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Funkcja, która sprawdza, czy suma kontrolna dokumentu, które ma być powiązana, jest zgodna z interfejsu użytkownika można znaleźć w poniższym przykładzie.
+W poniższym przykładzie pokazano funkcję, która sprawdza, czy suma kontrolna dokumentu, który ma być powiązany, pasuje do jednego z interfejsu użytkownika.
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)
@@ -104,5 +104,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

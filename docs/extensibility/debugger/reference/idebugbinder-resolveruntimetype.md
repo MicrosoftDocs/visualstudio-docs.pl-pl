@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Dokumentacja firmy Microsoft
+title: IDebugBinder::ResolveRuntimeType | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::ResolveRuntimeType method
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2954b5f2a1ac4dd14485a1b924423ba53fddcb7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4bdbff651618365f3b68a142a6cb1e76836876a3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315166"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735956"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
-Ta metoda określa typu run-time obiektu.
+Ta metoda określa typ czasu wykonywania obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,18 +43,18 @@ int ResolveRuntimeType(
 
 ## <a name="parameters"></a>Parametry
 `pObject`\
-[in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) zostać rozpoznane.
+[w] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) do rozwiązania.
 
 `ppResolved`\
-[out] Zwraca typ obiektu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+[na zewnątrz] Zwraca typ obiektu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zawsze typu run-time obiektu nie jest znany w czasie kompilacji. Na przykład za pomocą polimorfizm, argument można przekazać do funkcji jako swojej klasy bazowej, takie jak klasa przycisków. Rzeczywisty argument może być klasy pochodnej, takich jak klasa przycisków radiowych.
+ Typ wykonywania obiektu nie zawsze jest znany w czasie kompilacji. Na przykład za pomocą polimorfizm, argument może być przekazany do funkcji jako jego klasy podstawowej, takich jak button klasy. Rzeczywisty argument może być klasą pochodną, taką jak klasa przycisku radiowego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

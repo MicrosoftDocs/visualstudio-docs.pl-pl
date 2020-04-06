@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS | Microsoft Docs
+title: BPERESI_FIELDS | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BPERESI_FIELDS enumeration
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f9db96713ba8bb0f3cd421c48ef602e25c2d25a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af2f20e7d3abd79261dc18753a7eb940666fc186
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350537"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737765"
 ---
-# <a name="bperesifields"></a>BPERESI_FIELDS
-Określa informacje, które mają zostać pobrane dotyczących rozwiązania nie powiodło się punktu przerwania.
+# <a name="bperesi_fields"></a>BPERESI_FIELDS
+Określa informacje, które mają być pobierane o nieudanej rozdzielczości punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -52,38 +52,38 @@ public enum enum_BPERESI_FIELDS {
 
 ## <a name="fields"></a>Pola
 `PERESI_BPRESLOCATION`\
-Inicjowanie bądź użyj `bpResLocation` pola (lokalizacji punktu przerwania rozdzielczość) [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury.
+Inicjowanie/używanie pola `bpResLocation` (lokalizacja rozpoznawania punktów przerwania) BP_ERROR_RESOLUTION_INFO struktury. [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 
 `BPERESI_PROGRAM`\
-Inicjowanie bądź użyj `pProgram` pole `BP_ERROR_RESOLUTION_INFO` struktury.
+Inicjuj/użyj `pProgram` `BP_ERROR_RESOLUTION_INFO` pola konstrukcji.
 
 `BPERESI_THREAD`\
-Inicjowanie bądź użyj `pThread` pole `BP_ERROR_RESOLUTION_INFO` struktury.
+Inicjuj/użyj `pThread` `BP_ERROR_RESOLUTION_INFO` pola konstrukcji.
 
 `BPERESI_MESSAGE`\
-Inicjowanie bądź użyj `bstrMessage` pole `BP_ERROR_RESOLUTION_INFO` struktury.
+Inicjuj/użyj `bstrMessage` `BP_ERROR_RESOLUTION_INFO` pola konstrukcji.
 
 `BPERESI_TYPE`\
-Inicjowanie bądź użyj `dwType` pola (typ punktu przerwania) `BP_ERROR_RESOLUTION_INFO` struktury.
+Inicjowanie/używanie pola `dwType` `BP_ERROR_RESOLUTION_INFO` (typ punktu przerwania) struktury.
 
 `BPERESI_ALLFIELDS`\
-Inicjowanie bądź Użyj wszystkich pól `BP_ERROR_RESOLUTION_INFO` struktury.
+Inicjuj/użyj `BP_ERROR_RESOLUTION_INFO` wszystkich pól struktury.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany jako parametr do [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) metodę, aby wskazać, które pola [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury, które mają zostać zainicjowane.
+Przekazany jako parametr do [Metody GetResolutionInfo,](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) aby wskazać, które pola [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury mają zostać zainicjowane.
 
-Te wartości są również używane do wskazania, które pola w `BP_ERROR_RESOLUTION_INFO` struktury są używane i ważne, gdy tej struktury jest zwracany.
+Wartości te są również używane do `BP_ERROR_RESOLUTION_INFO` wskazania, które pola w strukturze są używane i prawidłowe, gdy ta struktura jest zwracana.
 
-Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.
+Wartości te mogą być łączone z bitowym `OR`.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

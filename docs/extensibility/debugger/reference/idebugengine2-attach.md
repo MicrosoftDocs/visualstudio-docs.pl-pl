@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::Attach | Dokumentacja firmy Microsoft
+title: IDebugEngine2::Dołącz | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 93890885dbbdfd3cc26984590955681487977200
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330156"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731205"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
-Dołącza aparat debugowania (DE), programów lub programu. Wywoływane przez Menedżer debugowania sesji (SDM), gdy DE jest uruchomiona wewnątrz procesu SDM.
+Dołącza aparat debugowania (DE) do programu lub programów. Wywoływane przez menedżera debugowania sesji (SDM), gdy DE jest uruchomiony w procesie do SDM.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,47 +49,47 @@ int Attach( 
 
 ## <a name="parameters"></a>Parametry
 `pProgram`\
-[in] Tablica [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekty reprezentujące programy do podłączenia do. Są to programy portu.
+[w] Tablica [obiektów IDebugProgram2,](../../../extensibility/debugger/reference/idebugprogram2.md) które reprezentują programy, do których należy dołączyć. Są to programy portowe.
 
 `rgpProgramNodes`\
-[in] Tablica [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekty reprezentujące program węzłów, jednej dla każdego programu. Węzły programu w tej tablicy reprezentują te same programy, podobnie jak w `pProgram`. Węzły programu podane są tak, aby DE można zidentyfikować te programy można dołączyć do.
+[w] Tablica [obiektów IDebugProgramNode2,](../../../extensibility/debugger/reference/idebugprogramnode2.md) które reprezentują węzły programu, po jednym dla każdego programu. Węzły programu w tej tablicy reprezentują `pProgram`te same programy, co w programie . Węzły programu są podane tak, że DE można zidentyfikować programy do przyłączenia do.
 
 `celtPrograms`\
-[in] Liczba programów i/lub węzły programu w `pProgram` i `rgpProgramNodes` tablic.
+[w] Liczba programów i/lub węzłów `pProgram` programu `rgpProgramNodes` w tablicach i.
 
 `pCallback`\
-[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt ma być używany do wysyłania zdarzeń debugowania do SDM.
+[w] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który ma być używany do wysyłania zdarzeń debugowania do SDM.
 
 `dwReason`\
-[in] Wartość z zakresu od [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) wyliczenie, które określa przyczyny dołączenie tych programów. Aby uzyskać więcej informacji, zobacz sekcję: Uwagi.
+[w] Wartość z [wyliczenia ATTACH_REASON,](../../../extensibility/debugger/reference/attach-reason.md) która określa przyczynę dołączania tych programów. Aby uzyskać więcej informacji, zobacz sekcję: Uwagi.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Istnieją trzy powody dołączanie do programu, w następujący sposób:
+ Istnieją trzy powody dołączania do programu, w następujący sposób:
 
-- `ATTACH_REASON_LAUNCH` Wskazuje, że DE jest dołączanie do programu, ponieważ użytkownik uruchomił proces, który go zawiera.
+- `ATTACH_REASON_LAUNCH`wskazuje, że DE jest dołączanie do programu, ponieważ użytkownik uruchomił proces, który go zawiera.
 
-- `ATTACH_REASON_USER` Wskazuje, że użytkownik zażądał jawnie DE można dołączyć do programu (lub proces, który zawiera program).
+- `ATTACH_REASON_USER`wskazuje, że użytkownik jawnie zażądał DE do dołączenia do programu (lub procesu, który zawiera program).
 
-- `ATTACH_REASON_AUTO` Wskazuje, że Niemcy jest dołączenie do określonego programu, ponieważ on już trwa debugowanie innych programów w danym procesie. Jest to również automatyczne dołączanie.
+- `ATTACH_REASON_AUTO`wskazuje, że DE jest dołączanie do określonego programu, ponieważ jest już debugowanie innych programów w określonym procesie. Jest to również nazywane auto-attach.
 
-  Gdy ta metoda jest wywoływana, DE musi wysłać tych zdarzeń w sekwencji:
+  Gdy ta metoda jest wywoływana, DE musi wysłać te zdarzenia w kolejności:
 
-1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (jeśli go nie już zostało wysłane do konkretnego wystąpienia aparatu debugowania)
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (jeśli nie został jeszcze wysłany dla określonego wystąpienia aparatu debugowania)
 
 2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)
 
 3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)
 
-   Ponadto, jeśli jest przyczyna dołączanie `ATTACH_REASON_LAUNCH`, DE musi wysyłać [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) zdarzeń.
+   Ponadto, jeśli powodem dołączania `ATTACH_REASON_LAUNCH`jest , DE musi wysłać [zdarzenie IDebugEntryPointEvent2.](../../../extensibility/debugger/reference/idebugentrypointevent2.md)
 
-   Gdy pobiera DE [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt odpowiadający debugowanego, może być badana dla dowolnego prywatny interfejsu.
+   Gdy DE pobiera [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt odpowiadający program jest debugowany, może być wyszukiwane dla dowolnego interfejsu prywatnego.
 
-   Przed wywołaniem metody węzła programu w tablicy, biorąc pod uwagę przy `pProgram` lub `rgpProgramNodes`, personifikacji, jeśli jest to wymagane, powinna być włączona na `IDebugProgram2` interfejs, który reprezentuje węzeł program. Zwykle jednak ten krok nie jest konieczne. Aby uzyskać więcej informacji, zobacz [problemy z zabezpieczeniami](../../../extensibility/debugger/security-issues.md).
+   Przed wywołaniem metod węzła programu w `pProgram` `rgpProgramNodes`tablicy podanej przez lub personifikacji, jeśli jest to wymagane, powinny być włączone w interfejsie, `IDebugProgram2` który reprezentuje węzeł programu. Zwykle jednak ten krok nie jest konieczny. Aby uzyskać więcej informacji, zobacz [Problemy z zabezpieczeniami](../../../extensibility/debugger/security-issues.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

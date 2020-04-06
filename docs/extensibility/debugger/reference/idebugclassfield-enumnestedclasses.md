@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses | Microsoft Docs
+title: IDebugClassField::EnumNestedClasses | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedClasses method
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75b963f7a342a9ce2b276cc03ea5dece9316ff6d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3e6ef918b55d8b311380264d688085b0d2803601
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313122"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734431"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
-Tworzy moduł wyliczający dla klas zagnieżdżonych w tej klasie.
+Tworzy wyliczenie dla klas zagnieżdżonych w tej klasie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ int EnumNestedClasses(
 
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
-[out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę klas zagnieżdżonych. Zwraca wartość null, jeśli nie klas zagnieżdżonych.
+[na zewnątrz] Zwraca obiekt [IEnumDebugFields reprezentujący](../../../extensibility/debugger/reference/ienumdebugfields.md) listę klas zagnieżdżonych. Zwraca wartość null, jeśli nie ma żadnych klas zagnieżdżonych.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie klas zagnieżdżonych. W przeciwnym razie zwraca kod błędu.
+Jeśli się powiedzie, zwraca S_OK lub zwraca S_FALSE, jeśli nie ma żadnych klas zagnieżdżonych. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Każdy element wyliczenia jest [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Obiekt opisujący klasę zagnieżdżoną.
+Każdy element wyliczenia jest [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiektu opisujące klasy zagnieżdżonej.
 
-Zagnieżdżona klasa jest klasą zdefiniowane wewnątrz innej klasy. Na przykład:
+Klasa zagnieżdżona jest klasą zdefiniowaną wewnątrz innej klasy. Przykład:
 
 ```
 class RootClass {
@@ -57,8 +57,8 @@ class RootClass {
 };
 ```
 
-[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) wyliczenie będzie zawierał jeden reprezentujący obiekt `NestedClass` klasy.
+[Wyliczenie IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) będzie zawierać jeden `NestedClass` obiekt reprezentujący klasę.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

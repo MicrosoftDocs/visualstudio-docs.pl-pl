@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateStringObject | Dokumentacja firmy Microsoft
+title: IDebugFunctionObject::CreateStringObject | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 620aef7474f7f669e22fcb44c7df2611dc50bafb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40a13b9b388caa6a1ae6e3e470e4ea02553fa0ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313610"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728516"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 Tworzy obiekt ciągu.
@@ -43,16 +43,16 @@ int CreateStringObject(
 
 ## <a name="parameters"></a>Parametry
 `pcstrString`\
-[in] Wartość ciągu z obiektem ciągu.
+[w] Wartość ciągu dla obiektu ciągu.
 
 `ppObject`\
-[out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt, który reprezentuje obiekt ciągu nowo utworzony.
+[na zewnątrz] Zwraca obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzony obiekt ciągu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje ciąg, który jest parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.
+ Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje ciąg, który jest parametrem funkcji, która jest reprezentowana przez [interfejs IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

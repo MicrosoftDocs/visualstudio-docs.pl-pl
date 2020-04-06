@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2 | Dokumentacja firmy Microsoft
+title: IDebugFunctionPosition2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2 interface
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19b9fbe16abec97ef29794b66cc4fe92631ca0af
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c260b6316207b0079a2ca8893b851db8b1288ba6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313255"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728311"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
-Ten interfejs reprezentuje abstrakcyjne pozycję funkcji w dokumencie źródłowym.
+Ten interfejs reprezentuje abstrakcyjne położenie funkcji w dokumencie źródłowym.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,30 +29,30 @@ IDebugFunctionPosition2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs do reprezentowania pozycja funkcję w dokumencie źródłowym.
+ Aparat debugowania (DE) implementuje ten interfejs do reprezentowania pozycji funkcji w dokumencie źródłowym.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Ten interfejs jest dostarczany jako część [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Unii (w szczególności [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struktury) który z kolei jest częścią [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktura używanego podczas tworzenia oczekujący punkt przerwania.
+ Ten interfejs jest dostarczany jako część unii [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) (w szczególności [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struktury), która jest z kolei częścią [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struktury, używane w tworzeniu oczekującego punktu przerwania.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody `IDebugFunctionPosition2`.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli `IDebugFunctionPosition2`przedstawiono metody .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Pobiera nazwę funkcji, która tej pozycji będzie względne.|
+|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Pobiera nazwę funkcji, która ta pozycja jest względem.|
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Pobiera przesunięcie od początku funkcji.|
 
 ## <a name="remarks"></a>Uwagi
- Pozycja reprezentowany przez ten interfejs jest oparte na tekście, w szczególności [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktury.
+ Pozycja reprezentowana przez ten interfejs jest oparta na tekście, w szczególności [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktury.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

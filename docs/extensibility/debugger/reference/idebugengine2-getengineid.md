@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::GetEngineID | Dokumentacja firmy Microsoft
+title: IDebugEngine2::GetEngineID | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::GetEngineID
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29b6f219447e3c58bce9f5b4696697163ab4f6a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318473"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731082"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-Pobiera identyfikator GUID aparat debugowania (DE).
+Pobiera identyfikator GUID aparatu debugowania (DE).
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ int GetEngineID(
 
 ## <a name="parameters"></a>Parametry
 `pguidEngine`\
-[out] Zwraca identyfikator GUID DE.
+[na zewnątrz] Zwraca identyfikator GUID de.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Oto kilka przykładów typowych identyfikatorów GUID `guidScriptEng`, `guidNativeEng`, lub `guidSQLEng`. Nowe aparaty debugowania spowoduje utworzenie własnych identyfikator GUID do identyfikacji.
+Niektóre przykłady typowych identyfikatorów GUID to `guidScriptEng`, `guidNativeEng`lub `guidSQLEng`. Nowe aparaty debugowania utworzą własny identyfikator GUID do identyfikacji.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CEngine` obiekt, który implementuje [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfejsu.
+W poniższym przykładzie pokazano, jak `CEngine` zaimplementować tę metodę dla prostego obiektu, który implementuje interfejs [IDebugEngine2.](../../../extensibility/debugger/reference/idebugengine2.md)
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
@@ -66,5 +66,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

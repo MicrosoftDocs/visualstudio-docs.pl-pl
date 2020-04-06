@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach | Dokumentacja firmy Microsoft
+title: IDebugProgramEx2::Dołącz | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db27f29b37480081d29e452d74a6da0c5cea59a6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325185"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722381"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-Sesję należy dołączyć do programu.
+Dołącz sesję do programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,22 +45,22 @@ int Attach( 
 
 ## <a name="parameters"></a>Parametry
 `pCallback`\
-[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który reprezentuje aparat debugowania dołączonych wysyła zdarzenia do funkcja wywołania zwrotnego.
+[w] [Obiekt IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) który reprezentuje funkcję wywołania zwrotnego, do których dołączony jest aparat debugowania wysyła zdarzenia.
 
 `dwReason`\
-[in] Wartość z zakresu od [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) wyliczenie opisujące przyczynę operacji dołączania.
+[w] Wartość z [wyliczenia ATTACH_REASON,](../../../extensibility/debugger/reference/attach-reason.md) która opisuje przyczynę operacji dołączania.
 
 `pSession`\
-[in] Wartość, która jednoznacznie identyfikuje sesji, która jest dołączenie do programu.
+[w] Wartość, która jednoznacznie identyfikuje sesję, która jest dołączana do programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Ta metoda powinna zwracać `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` Jeśli program jest już dołączony.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Ta metoda `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` powinna zostać wrócona, jeśli program jest już dołączony.
 
 ## <a name="remarks"></a>Uwagi
- Port, który zawiera program można użyć wartości w `pSession` ustalenie, który sesja próbuje dołączyć do programu. Na przykład jeśli port umożliwia sesję debugowania tylko jeden, aby dołączyć do procesu w czasie, numer portu można określić, jeśli ta sama sesja jest już dołączony do innych programów w procesie.
+ Port zawierający program może użyć `pSession` tej wartości do określenia, która sesja próbuje dołączyć do programu. Na przykład jeśli port umożliwia dołączanie tylko jednej sesji debugowania do procesu w czasie, port może określić, czy ta sama sesja jest już dołączona do innych programów w procesie.
 
 > [!NOTE]
-> Przekazanego interfejsu `pSession` jest traktowane tylko jako plik cookie, a wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, dołączenie do tego programu; Brak metody w interfejsie podane są funkcjonalne.
+> Interfejs przekazywany `pSession` jest traktowany tylko jako plik cookie, wartość, która jednoznacznie identyfikuje menedżera debugowania sesji dołączającego do tego programu; żadna z metod na dostarczonym interfejsie nie jest funkcjonalna.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

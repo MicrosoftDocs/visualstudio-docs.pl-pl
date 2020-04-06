@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
+title: BP_LOCATION_CODE_ADDRESS | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 51137b5a5a69c80ecd7129d4c645f63b5805d27d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319129"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738042"
 ---
-# <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
-W tym artykule opisano lokalizacji punktu przerwania pod adresem w kodzie.
+# <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
+Opisuje lokalizację punktu przerwania pod adresem w kodzie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,28 +37,28 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 
 ## <a name="members"></a>Elementy członkowskie
 `bstrContext`\
-Kontekst punktu przerwania, zazwyczaj nazwę metody lub funkcji wyświetlanego w stosie wywołań.
+Kontekst punktu przerwania, zazwyczaj nazwa metody lub funkcji, jak widać na stosie wywołań.
 
 `bstrModuleUrl`\
-Adres URL moduł, który zawiera punkt przerwania.
+Adres URL modułu, który zawiera punkt przerwania.
 
 `bstrFunction`\
 Nazwa funkcji, która zawiera punkt przerwania.
 
 `bstrAddress`\
-Adres punktu przerwania, który jest analizowany przez ewaluatora wyrażeń, aby powiązać [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu.
+Adres punktu przerwania, który jest analizowany przez oceniającego wyrażenie, aby powiązać go z [obiektem IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktur w ramach złożenia.
+Struktura ta jest członkiem [struktury BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) jako część związku.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

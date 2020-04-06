@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName | Dokumentacja firmy Microsoft
+title: IDebugProgramNode2::GetProgramName | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetProgramName
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9882bd1686498bd9d1afc27f3a7edb695226a2f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351105"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721997"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 Pobiera nazwę programu.
@@ -41,16 +41,16 @@ int GetProgramName (
 
 ## <a name="parameters"></a>Parametry
 `pbstrProgramName`\
-[out] Zwraca nazwę programu.
+[na zewnątrz] Zwraca nazwę programu.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Nazwa programu nie jest tak samo jak ścieżka do programu, mimo że nazwę programu, może być częścią znajdzie takiej ścieżki.
+Nazwa programu nie jest tym samym, co ścieżka do programu, chociaż nazwa programu może być częścią takiej ścieżki.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiekt, który implementuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu. `MakeBstr` Funkcja przydziela kopię określonego ciągu jako ciąg BSTR.
+W poniższym przykładzie pokazano, jak `CProgram` zaimplementować tę metodę dla prostego obiektu, który implementuje interfejs [IDebugProgramNode2.](../../../extensibility/debugger/reference/idebugprogramnode2.md) Funkcja `MakeBstr` przydziela kopię określonego ciągu jako BSTR.
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
@@ -63,5 +63,5 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

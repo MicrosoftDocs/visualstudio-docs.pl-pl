@@ -1,51 +1,51 @@
 ---
-title: Pojęcia dotyczące debugera | Dokumentacja firmy Microsoft
+title: Pojęcia debugera | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d9905281c83287b8b54f57a233c2056462226f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345935"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738982"
 ---
-# <a name="debugger-concepts"></a>Pojęcia dotyczące debugera
-Aby utworzyć pakiet debugowania programu Visual Studio, musisz należy zapoznać się z architektury koncepcji używanych podczas projektowania pakietu.
+# <a name="debugger-concepts"></a>Pojęcia debugera
+Aby utworzyć kompilację na pakiecie debugowania programu Visual Studio, należy zapoznać się z pojęciami architektury używanymi do projektowania pakietu.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Sesja debugowania](../../extensibility/debugger/debug-session.md) opisano rolę sesję debugowania architektury.
+ [Sesja debugowania](../../extensibility/debugger/debug-session.md) Wyjaśnia rolę sesji w architekturze debugowania.
 
- [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md) definiuje, o jaki serwer znajduje się pod względem Profilowanie architektury, w warunkach abstrakcyjny i fizycznej.
+ [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md) Definiuje, co serwer jest pod względem architektury debugowania, zarówno w kategoriach abstrakcyjnych i fizycznych.
 
- [Port dostawców](../../extensibility/debugger/port-suppliers.md) definiuje, jakie dostawcy portu jest pod względem architektury debugowania.
+ [Dostawcy portów](../../extensibility/debugger/port-suppliers.md) Określa, co dostawca portu jest pod względem architektury debugowania.
 
- [Porty](../../extensibility/debugger/ports.md) definiuje, jakie port jest pod względem architektury debugowania.
+ [Porty](../../extensibility/debugger/ports.md) Określa, co port jest pod względem architektury debugowania.
 
- [Procesy](../../extensibility/debugger/processes.md) definiuje, jakie procesy są pod względem architektury debugowania.
+ [Procesy](../../extensibility/debugger/processes.md) Definiuje, co jest procesem pod względem architektury debugowania.
 
- [Program węzłów](../../extensibility/debugger/program-nodes.md) definiuje węzeł program pod względem Profilowanie architektury, w tym, jak można zidentyfikować, proces jest uruchomiony w wraz z.
+ [Węzły programu](../../extensibility/debugger/program-nodes.md) Definiuje węzeł programu pod względem architektury debugowania, w tym jak można zidentyfikować siebie i proces, w który jest uruchomiony.
 
- [Programy](../../extensibility/debugger/programs.md) definiuje program pod względem architektury debugowania.
+ [Programy](../../extensibility/debugger/programs.md) Definiuje program pod względem architektury debugowania.
 
- [Wątki](../../extensibility/debugger/threads.md) określa właściwości wątków pod względem architektury debugowania.
+ [Wątki](../../extensibility/debugger/threads.md) Definiuje cechy wątków pod względem architektury debugowania.
 
- [Ramek stosu](../../extensibility/debugger/stack-frames.md) definiuje ramki stosu w zakresie debugowania architektury. Ramka stosu jest klasą abstrakcyjną stosu, które dostarcza kontekst wykonanie wątku.
+ [Ramki stosu](../../extensibility/debugger/stack-frames.md) Definiuje ramkę stosu pod względem architektury debugowania. Ramka stosu jest abstrakcja stosu, który zapewnia kontekst wykonywania wątku.
 
- [Moduły](../../extensibility/debugger/modules.md) definiuje moduł, pod kątem debugowania architektury, jako kontenera fizycznego kodu, takie jak plik wykonywalny lub bibliotekę DLL.
+ [Moduły](../../extensibility/debugger/modules.md) Definiuje moduł pod względem architektury debugowania jako fizyczny kontener kodu, taki jak plik wykonywalny lub biblioteka DLL.
 
- [Punkty przerwania](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) definiuje trzy rodzaje punkty przerwania — oczekujące granicy, a błąd — pod względem architektury debugowania.
+ [Punkty przerwania](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) Definiuje trzy typy punktów przerwania — oczekujące, powiązane i błędy — pod względem architektury debugowania.
 
-## <a name="related-sections"></a>Sekcje pokrewne
- [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md) wyjaśnia, jak aparat debugowania (DE) działa jednocześnie w kontekstach oceny kodu, dokumentację i wyrażenia. W tym artykule opisano, dla każdego z trzech kontekstów, lokalizacji, pozycja lub oceny odpowiednie do niego.
+## <a name="related-sections"></a>Powiązane sekcje
+ [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md) Wyjaśniono, jak aparat debugowania (DE) działa jednocześnie w kontekście oceny kodu, dokumentacji i wyrażenia. Opisuje, dla każdego z trzech kontekstów, lokalizacji, pozycji lub oceny istotne dla niego.
 
- [Składniki debugera](../../extensibility/debugger/debugger-components.md) zawiera omówienie składników debugowania programu Visual Studio, które obejmują aparat debugowania (DE), Ewaluator wyrażeń (EE) i obsługi symboli (SH).
+ [Składniki debugera](../../extensibility/debugger/debugger-components.md) Zawiera omówienie składników debugowania programu Visual Studio, które obejmują aparat debugowania (DE), oceniający wyrażenia (EE) i program obsługi symboli (SH).
 
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md) zawiera łącza do różnych zadań debugowania, takich jak uruchamianie programu i wyrażeń.
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md) Zawiera łącza do różnych zadań debugowania, takich jak uruchamianie programu i oceny wyrażeń.

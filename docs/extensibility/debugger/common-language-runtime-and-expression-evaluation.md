@@ -1,39 +1,39 @@
 ---
-title: Środowisko uruchomieniowe języka wspólnego i ocenianie wyrażeń | Dokumentacja firmy Microsoft
+title: Typowy język środowiska uruchomieniowego i oceny wyrażeń | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351296"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739110"
 ---
-# <a name="common-language-runtime-and-expression-evaluation"></a>Typowe obliczenia środowiska uruchomieniowego i wyrażenia języka
+# <a name="common-language-runtime-and-expression-evaluation"></a>Wspólne środowisko wykonawcze języka i ocena wyrażeń
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacje o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład oceniającego zarządzane wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Kompilatory, takie jak Visual Basic i C# (Wymowa C sharp), przeznaczonych dla środowiska uruchomieniowego języka wspólnego (CLR), należy utworzyć Microsoft Intermediate Language (MSIL), która jest nowsza kompilowane do kodu natywnego. Środowisko CLR oferuje aparat debugowania (DE), aby debugować kod wynikowy. Jeśli planujesz integracji własności język programowania w środowisku IDE programu Visual Studio można skompilować do MSIL i dlatego nie trzeba napisać własne DE. Należy zapisać ewaluatora wyrażeń (EE), który jest w stanie oceny wyrażenia w kontekście języka programowania.
+ Kompilatory, takie jak Visual Basic i C# (wymawiane C-sharp), które są przeznaczone dla wspólnego środowiska wykonawczego języka (CLR), produkcji Microsoft Intermediate Language (MSIL), który jest później kompilowany do kodu macierzystego. CLR udostępnia aparat debugowania (DE) do debugowania kodu wynikowego. Jeśli planujesz zintegrować swój własny język programowania do środowiska IDE programu Visual Studio, można wybrać do kompilacji do MSIL i dlatego nie będzie musiał pisać własne DE. Jednak trzeba będzie napisać oceniającego wyrażenie (EE), który jest zdolny do oceny wyrażeń w kontekście języka programowania.
 
-## <a name="discussion"></a>Dyskusja
- Wyrażenia języka komputera zazwyczaj są parsowane do tworzenia zestawu danych obiektów i ich zestaw operatorów, używane do manipulowania nimi. Na przykład wyrażenie, które "A + B" może być można przeanalizować, aby zastosować operator dodawania (+) danych obiektów "A" i "B", przez co inny obiekt danych. Łączna liczba zbiór obiektów danych, operatorów i ich skojarzenia w większości przypadków są reprezentowane w programie jako drzewo, za pomocą operatorów w węzłach drzewa i obiekty danych, w gałęzi. Wyrażenie, które zostały podzielone w formie drzewa jest często określany mianem przeanalizowany drzewa.
+## <a name="discussion"></a>Dyskusji
+ Wyrażenia języka komputerowego są zazwyczaj analizowane w celu utworzenia zestawu obiektów danych i zestawu operatorów używanych do manipulowania nimi. Na przykład wyrażenie "A + B" może być analizowane w celu zastosowania operatora dodawania (+) do obiektów danych "A" i "B", co może spowodować powstanie innego obiektu danych. Całkowity zestaw obiektów danych, operatorów i ich skojarzenia są najczęściej reprezentowane w programie jako drzewo, z operatorami w węzłach drzewa i obiektami danych w gałęziach. Wyrażenie, które zostało podzielone na formę drzewa jest często nazywane analizowane drzewa.
 
- Po przeanalizowaniu wyrażenie do oceny, każdy obiekt danych nosi nazwę dostawca symboli (SP). Na przykład, jeśli "" jest zdefiniowany w więcej niż jednej metody, pytanie "Która A?" Musisz udzielić odpowiedzi, zanim można ustalić wartości A. Odpowiedź zwrócona przez PS jest podobny do "Trzeci element na piątym ramce stosu" lub "A, o 50 bajtów poza początek pamięci statycznej przydzielony do tej metody."
+ Po przeanalizowaniu wyrażenia dostawca symboli (SP) jest wywoływany do oceny każdego obiektu danych. Na przykład, jeśli "A" jest zdefiniowany zarówno w więcej niż jednej metodzie, pytanie "Które A?" przed ustaleniem wartości A. Odpowiedź zwrócona przez SP jest coś takiego jak "Trzeci element na piątej ramce stosu" lub "A, który jest 50 bajtów poza rozpoczęciem pamięci statycznej przydzielone do tej metody."
 
- Oprócz tworzenia MSIL dla samego programu, kompilatory CLR może utworzyć również bardzo opisowe informacje debugowania, który jest zapisywany w bazie danych programu ( *.pdb*) pliku. Tak długo, jak kompilator języka zastrzeżonej generuje informacje o debugowaniu w tym samym formacie jak kompilatory CLR, SP CLR jest możliwość określenia, czy języka o nazwie obiektów danych. Po zidentyfikowaniu obiektu danych o nazwie EE używa obiekt integratora skojarzyć (lub powiązać) obiekt danych do obszaru pamięci, która zawiera wartość tego obiektu. DE można pobrać lub ustawić nową wartość dla obiektu danych.
+ Oprócz produkcji MSIL dla samego programu, kompilatory CLR mogą również tworzyć bardzo opisowe informacje debugowania, które są zapisywane w pliku DataBase programu *(pdb).* Tak długo, jak kompilator języka zastrzeżonego produkuje informacje debugowania w tym samym formacie co kompilatory CLR, SP CLR jest w stanie zidentyfikować nazwane obiekty danych tego języka. Po zidentyfikowaniu nazwanego obiektu danych EE używa obiektu spinacza do skojarzenia (lub powiązania) obiektu danych z obszarem pamięci, który przechowuje wartość tego obiektu. DE można następnie uzyskać lub ustawić nową wartość dla obiektu danych.
 
- Zastrzeżone kompilator może zapewnić CLR, informacje o debugowaniu, wywołując `ISymbolWriter` interfejsu (który jest zdefiniowany w .NET Framework w przestrzeni nazw `System.Diagnostics.SymbolStore`). Kompilowanie na język MSIL i zapisywania informacji debugowania za pomocą tych interfejsów, kompilator własności CLR DE i użyć SP. Znacznie upraszcza to integrowanie własności języka środowiska IDE programu Visual Studio.
+ Kompilator własności może dostarczyć informacji debugowania `ISymbolWriter` CLR, wywołując interfejs (który jest zdefiniowany w .NET Framework w obszarze nazw). `System.Diagnostics.SymbolStore` Kompilując do MSIL i zapisując informacje debugowania za pośrednictwem tych interfejsów, kompilator własności można użyć CLR DE i SP. Znacznie upraszcza to integrowanie zastrzeżonego języka z ideą programu Visual Studio.
 
- Gdy CLR DE wywołuje własności EE można obliczyć wyrażenia, DE dostarcza EE z interfejsami SP i obiekt integratora. W związku z tym zapisywanie oznacza aparat debugowania na podstawie środowiska CLR jest konieczne tylko implementować interfejsy ewaluatora wyrażeń odpowiednie; Środowisko CLR dba o powiązania i symbol obsługi dla Ciebie.
+ Gdy CLR DE wywołuje własności EE do oceny wyrażenia, DE dostarcza EE z interfejsów do SP i obiektu spinacza. W związku z tym pisanie aparatu debugowania opartego na programie CLR oznacza, że jest konieczne tylko do zaimplementowania interfejsów ewaluatora odpowiedniewyrażeń; clr zajmuje się oprawą i obsługą symboli.
 
-## <a name="see-also"></a>Zobacz także
-- [Pisanie ewaluatora wyrażeń środowiska CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+## <a name="see-also"></a>Zobacz też
+- [Napisz ewaluatora wyrażenia CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

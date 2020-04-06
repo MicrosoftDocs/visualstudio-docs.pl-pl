@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement | Dokumentacja firmy Microsoft
+title: IDebugThread2::CanSetNextStatement | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 111ace07edf163fa978a3c54628878af51cb7d02
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320300"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718866"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Określa, czy bieżący wskaźnik instrukcji można ustawić ramkę stosu w danym.
+Określa, czy bieżący wskaźnik instrukcji można ustawić na ramkę danego stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,18 +43,18 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>Parametry
 `pStackFrame`\
-Zarezerwowane dla przyszłego użytku; Ustaw wartość null. Jeśli jest to wartość null, należy użyć bieżącej ramki stosu.
+Zarezerwowane do wykorzystania w przyszłości; ustawiona na wartość null. Jeśli jest to wartość null, należy użyć bieżącej ramki stosu.
 
 `pCodeContext`\
-[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który opisuje lokalizacji kodu, który ma zostać wykonany i kontekst.
+[w] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który opisuje lokalizację kodu, które mają być wykonywane i jego kontekstu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli ta metoda zwraca `S_OK`, następnie wywołać [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) metodę, aby faktycznie Ustaw następną instrukcję.
+ Jeśli ta `S_OK`metoda zwraca , a następnie wywołać [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) metody faktycznie ustawić następną instrukcję.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

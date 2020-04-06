@@ -1,5 +1,5 @@
 ---
-title: Customparameters — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element CustomParameters (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8089e84f5414798fdf6a4707e8bde65e4df5e0a2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350206"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739412"
 ---
-# <a name="customparameters-element-visual-studio-templates"></a>Customparameters — element (szablony Visual Studio)
-Grupy niestandardowe parametry, które mają być przekazane do Kreatora szablonów, gdy Kreator przeprowadza zamiany parametru.
+# <a name="customparameters-element-visual-studio-templates"></a>Element CustomParameters (szablony programu Visual Studio)
+Grupuje parametry niestandardowe, które mają być przekazywane do kreatora szablonów, gdy kreator wykonuje zastępowanie parametrów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,7 +42,7 @@ Grupy niestandardowe parametry, które mają być przekazane do Kreatora szablon
 
 |Element|Opis|
 |-------------|-----------------|
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Zawiera nazwę niestandardowego parametru i wartości do użycia podczas projektu lub elementu jest tworzone na podstawie szablonu. Może wynosić zero lub więcej `CustomParameter` elementów w `CustomParameters` elementu.|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Zawiera niestandardową nazwę parametru i wartość do użycia podczas tworzenia projektu lub elementu na podstawie szablonu. Może istnieć zero `CustomParameter` lub `CustomParameters` więcej elementów w elemencie.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -53,7 +53,7 @@ Grupy niestandardowe parametry, które mają być przekazane do Kreatora szablon
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak korzystać z kilku niestandardowych parametrów w szablonie. Podczas tworzenia projektu lub elementu za pomocą następujących parametrów niestandardowych, wszystkie wystąpienia szablonu `$color1$` i `$color2$` w szablonie zostanie zastąpiona pliki `Red` i `Blue`, odpowiednio.
+ W poniższym przykładzie pokazano, jak używać kilku parametrów niestandardowych w szablonie. Gdy projekt lub element jest tworzony na podstawie szablonu z `$color1$` `$color2$` następującymi parametrami niestandardowymi, wszystkie wystąpienia i w plikach szablonów zostaną zastąpione `Red` odpowiednio i `Blue`, odpowiednio.
 
 ```
 <CustomParameters>
@@ -62,7 +62,7 @@ Grupy niestandardowe parametry, które mają być przekazane do Kreatora szablon
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [CustomParameter, element (szablony Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)
+## <a name="see-also"></a>Zobacz też
+- [Element CustomParameter (szablony programu Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

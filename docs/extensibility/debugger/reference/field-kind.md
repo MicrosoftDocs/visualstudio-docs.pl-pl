@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND | Dokumentacja firmy Microsoft
+title: FIELD_KIND | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344473"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736865"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
-Określa typ pola ujętego w [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.
+# <a name="field_kind"></a>FIELD_KIND
+Określa rodzaj pola zawartego w obiekcie [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="syntax"></a>Składnia
 
@@ -126,25 +126,25 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>Pola
 `FIELD_KIND_TYPE`\
-Wskazuje, że pole jest tylko typu.
+Wskazuje, że pole jest tylko typem.
 
 `FIELD_KIND_SYMBOL`\
-Wskazuje, że pole jest symbol, za pomocą typu, nazwy i inne informacje.
+Wskazuje, że pole jest symbolem z typem, nazwą i innymi informacjami.
 
 `FIELD_TYPE_PRIMITIVE`\
-Wskazuje, że pole jest typem danych pierwotnych.
+Wskazuje, że pole jest pierwotnym typem danych.
 
 `FIELD_TYPE_STRUCT`\
-Wskazuje, że pole jest struktura.
+Wskazuje, że pole jest strukturą.
 
 `FIELD_TYPE_CLASS`\
 Wskazuje, że pole jest klasą.
 
 `FIELD_TYPE_INTERFACE`\
-Wskazuje, że pole jest interfejs.
+Wskazuje, że pole jest interfejsem.
 
 `FIELD_TYPE_UNION`\
-Wskazuje, że pole jest Unii.
+Wskazuje, że pole jest wiązką.
 
 `FIELD_TYPE_ARRAY`\
 Wskazuje, że pole jest tablicą.
@@ -156,34 +156,34 @@ Wskazuje, że pole jest metodą.
 Wskazuje, że pole jest blokiem.
 
 `FIELD_TYPE_POINTER`\
-Wskazuje, że pole jest wskaźnik.
+Wskazuje, że pole jest wskaźnikiem.
 
 `FIELD_TYPE_ENUM`\
-Wskazuje, że pole jest wyliczany typ danych.
+Wskazuje, że pole jest wyliczonym typem danych.
 
 `FIELD_TYPE_LABEL`\
-Wskazuje, że pole jest etykietę.
+Wskazuje, że pole jest etykietą.
 
 `FIELD_TYPE_TYPEDEF`\
 Wskazuje, że pole jest typedef.
 
 `FIELD_TYPE_BITFIELD`\
-Wskazuje, że pole jest bitfield.
+Wskazuje, że pole jest polem bitowym.
 
 `FIELD_TYPE_NAMESPACE`\
-Wskazuje, że pole jest przestrzenią nazw.
+Wskazuje, że pole jest obszarem nazw.
 
 `FIELD_TYPE_MODULE`\
 Wskazuje, że pole jest modułem.
 
 `FIELD_TYPE_DYNAMIC`\
-Wskazuje, że pole jest dynamiczny.
+Wskazuje, że pole jest dynamiczne.
 
 `FIELD_TYPE_PROP`\
 Wskazuje, że pole jest właściwością.
 
 `FIELD_TYPE_INNERCLASS`\
-Wskazuje, że pole jest klasy wewnętrznej.
+Wskazuje, że pole jest klasą wewnętrzną.
 
 `FIELD_TYPE_REFERENCE`\
 Wskazuje, że pole jest odwołaniem.
@@ -195,13 +195,13 @@ Zarezerwowane do użytku w przyszłości.
 Wskazuje, że pole jest elementem członkowskim.
 
 `FIELD_SYM_LOCAL`\
-Wskazuje, że pole jest lokalny.
+Wskazuje, że pole jest lokalne.
 
 `FIELD_SYM_PARAMETER`\
 Wskazuje, że pole jest parametrem.
 
 `FIELD_SYM_THIS`\
-Wskazuje, że pole jest wskaźnik "this".
+Wskazuje, że pole jest wskaźnikiem "this".
 
 `FIELD_SYM_GLOBAL`\
 Wskazuje, że pole jest globalne.
@@ -216,27 +216,27 @@ Wskazuje, że pole ustawia właściwości.
 Zarezerwowane do użytku w przyszłości.
 
 `FIELD_KIND_MASK`\
-Wskazuje maska dla typów pól.
+Wskazuje maskę dla rodzajów pól.
 
 `FIELD_TYPE_MASK`\
-Określa maskę dla typów pól.
+Wskazuje maskę dla typów pól.
 
 `FIELD_SYM_MASK`\
-Określa maskę, aby uzyskać informacje o symbolach.
+Wskazuje maskę dla informacji o symbolu.
 
 ## <a name="remarks"></a>Uwagi
-Zwrócony z wywołania do [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody.
+Zwrócono z wywołania [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody.
 
-W zależności od rodzaju pola [QueryInterface](/cpp/atl/queryinterface) może być wywoływana na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu dokładniejszą formularza interfejsu. Na przykład jeśli [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zwraca `FIELD_TYPE_METHOD`, następnie możesz wywołać `QueryInterface` i`DebugField` uzyskać [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfejsu.
+W zależności od rodzaju pola [QueryInterface](/cpp/atl/queryinterface) można wywołać w interfejsie [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) dla bardziej szczegółowej formy interfejsu. Na przykład jeśli [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) `FIELD_TYPE_METHOD`zwraca , `QueryInterface` można`DebugField` następnie wywołać I, aby uzyskać interfejs [IDebugMethodField.](../../../extensibility/debugger/reference/idebugmethodfield.md)
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: sh.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
 - [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)

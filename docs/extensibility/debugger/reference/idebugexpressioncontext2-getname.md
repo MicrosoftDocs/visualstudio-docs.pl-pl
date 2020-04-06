@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Dokumentacja firmy Microsoft
+title: IDebugExpressionContext2::GetName | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::GetName
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d53d7f497700d4e23587927adc0c2cee37824daa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 500d5c1788e837a27b4affada50ecc59db122e8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325875"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729666"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Pobiera nazwę kontekst oceny.
+Pobiera nazwę kontekstu oceny.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,17 +41,17 @@ int GetName( 
 
 ## <a name="parameters"></a>Parametry
 `pbstrName`\
-[out] Zwraca nazwę kontekst oceny.
+[na zewnątrz] Zwraca nazwę kontekstu oceny.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Nazwa jest opis tego kontekstu oceny. Zwykle jest coś, co może być analizowane przez ewaluatora wyrażeń, odwołujący się do tego kontekstu dokładną ocenę. Na przykład w języku C++ nazwa jest w następujący sposób:
+ Nazwa jest opisem tego kontekstu oceny. Jest to zazwyczaj coś, co może być analizowane przez oceniającego wyrażenie, który odwołuje się do tego kontekstu dokładnej oceny. Na przykład w języku C++ nazwa jest następująca:
 
 ```
 "{ function-name, source-file-name, module-file-name }"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)

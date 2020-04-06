@@ -1,5 +1,5 @@
 ---
-title: EncUnavailableReason | Dokumentacja firmy Microsoft
+title: EncNiedostępneReason | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7db94a181d87791edb242d69b461f90c42a5e080
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318154"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737167"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!` Reprezentuje przyczyny, **Edytuj i Kontynuuj** nie jest dostępna.
+`This is for internal use only!`Reprezentuje przyczyny, dla których **edycja i kontynuowanie** są niedostępne.
 
 ## <a name="syntax"></a>Składnia
 
@@ -54,37 +54,37 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>Pola
 `ENCUN_NONE`\
-Nie określonych powód, dlaczego Edytuj i Kontynuuj nie jest dostępny.
+Nie ma konkretnego powodu, dla którego edycja i kontynuowanie nie są dostępne.
 
 `ENCUN_INTEROP`\
-Edytuj i Kontynuuj nie jest dostępna podczas wywołania międzyoperacyjnego.
+Funkcja Edycja i Kontynuuj nie jest dostępna podczas połączenia InterOp.
 
 `ENCUN_SQLCLR`\
-Edytuj i Kontynuuj nie jest dostępna podczas wywołania procedury SQL, która używa środowiska uruchomieniowego języka wspólnego (CLR).
+Edycja i kontynuuj nie jest dostępna podczas wywołania procedury SQL, która używa środowiska wykonawczego języka wspólnego (CLR).
 
 `ENCUN_MINIDUMP`\
-Edytuj i Kontynuuj nie jest dostępna podczas przetwarzania minizrzutu.
+Funkcja Edycja i Kontynuuj nie jest dostępna podczas przetwarzania mini-zrzutu.
 
 `ENCUN_EMBEDDED`\
-Edytuj i Kontynuuj nie jest dostępna, podczas przetwarzania osadzony kod.
+Edycja i kontynuuj nie jest dostępna podczas przetwarzania kodu osadzonego.
 
 `ENCUN_ATTACH`\
-Edytuj i Kontynuuj nie jest dostępna, ponieważ sesja została podłączona do, nie jest uruchamiane przez debuger.
+Funkcja Edycja i Kontynuuj nie jest dostępna, ponieważ sesja została dołączona do debugera, nie została uruchomiona przez debuger.
 
 `ENCUN_WIN64`\
-Edytuj i Kontynuuj nie jest dostępna podczas przetwarzania kodu Windows 64-bitowego.
+Program Edit and Continue nie jest dostępny podczas przetwarzania 64-bitowego kodu systemu Windows.
 
 ## <a name="remarks"></a>Uwagi
-To wyliczenie jest do użytku wewnętrznego tylko przez [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) i [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) zaimplementowanego przez dostawcę numery portów należy zawsze zwracają `E_NOTIMPL`.
+To wyliczenie jest przeznaczone [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]do użytku wewnętrznego tylko przez . [Metody GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) i [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) zaimplementowane przez `E_NOTIMPL`niestandardowego dostawcę portu powinny zawsze zwracać .
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.idl
+Nagłówek: msdbg.idl
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 
 - [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)

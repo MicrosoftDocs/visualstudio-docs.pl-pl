@@ -1,28 +1,28 @@
 ---
-title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Dokumentacja firmy Microsoft
+title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df4dfa880104b9989e49761beb823c960de85391
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e1c87fd105d2dbdc18bd4689c4680f2825c9e3be
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346056"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732642"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
-Pobiera atrybut niestandardowy nadać jej nazwę.
+Pobiera atrybut niestandardowy, podana jego nazwa.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,19 +44,19 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>Parametry
 `pszCustomAttributeName`\
-[in] Nazwa atrybutu niestandardowego.
+[w] Nazwa atrybutu niestandardowego.
 
 `ppBlob`\
-[out w] Tablica bajtów, które zawierają dane atrybutu niestandardowego.
+[w,out] Tablica bajtów zawierających niestandardowe dane atrybutów.
 
 `pdwLen`\
-[out] Długość w bajtach `ppBlob` parametru.
+[na zewnątrz] Długość w bajtach parametru. `ppBlob`
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`. Jeśli nie ma atrybutów niestandardowych, zwraca `S_FALSE`. W przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca . Jeśli atrybut niestandardowy nie `S_FALSE`istnieje, zwraca plik . W przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugClassFieldSymbol** obiekt ujawniający [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugClassFieldSymbol,** który udostępnia interfejs [IDebugCustomAttributeQuery.](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(
@@ -93,5 +93,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

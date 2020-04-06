@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE | Dokumentacja firmy Microsoft
+title: BUILT_TYPE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BUILT_TYPE structure
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae5c7e1916c77e3743de63df8903e62feea4fe28
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 885f17b0841a39672c87be5bc7c947b2e0d9c7e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327328"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737697"
 ---
-# <a name="builttype"></a>BUILT_TYPE
-Ta struktura określa informacje o typie pola pobierana z metadanych.
+# <a name="built_type"></a>BUILT_TYPE
+Ta struktura określa informacje o typie pola pobranym z metadanych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,25 +45,25 @@ public struct BUILT_TYPE {
 
 ## <a name="members"></a>Elementy członkowskie
 `ulAppDomainID`\
-Identyfikator aplikacji, z którego pochodzą symbolu. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
+Identyfikator aplikacji, z której pochodzi symbol. Służy do jednoznacznej identyfikacji wystąpienia aplikacji.
 
 `guidModule`\
-Identyfikator GUID moduł, który zawiera tego pola.
+Identyfikator GUID modułu zawierającego to pole.
 
 `pUnderlyingField`\
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) identyfikowanie z polem powiązanych z tym polem skompilowany obiekt.
+Obiekt [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) identyfikujący pole bazowe skojarzone z tym utworzonym polem.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest wyświetlany jako część Unii w [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struktury, kiedy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_BUILT` (wartość z zakresu od [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Wyliczenie).
+Ta struktura pojawia się jako część unii w [strukturze TYPE_INFO,](../../../extensibility/debugger/reference/type-info.md) gdy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_BUILT` (wartość z [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) wyliczenia).
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: sh.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress | Dokumentacja firmy Microsoft
+title: IDebugAddress | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress interface
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 653d2424d21a18e7053f66e0a74214ecc25d97da
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f281ceb1f305c5774fedbf725f2e6a9481d073d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317922"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736593"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 Ten interfejs reprezentuje adres elementu. Jest zwracany przez program obsługi symboli.
@@ -29,28 +29,28 @@ IDebugAddress : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawca symboli implementuje ten interfejs reprezentujący adres obiektu.
+ Dostawca symbolu implementuje ten interfejs do reprezentowania adresu obiektu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
  Wiele metod w wielu interfejsach zwraca ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
  Ten interfejs implementuje następującą metodę:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Pobiera [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury opisujący obiekt i jego lokalizacji.|
+|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Pobiera [strukturę DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) opisującą obiekt i jego lokalizację.|
 
 ## <a name="remarks"></a>Uwagi
- Dostawca symboli zwraca ten interfejs reprezentujący obiekt i jego lokalizacji w ramach określonego zakresu (na przykład, funkcji, metody lub klasy). Ten interfejs jest zwracana z i przekazywane do różnych metod dostawca symboli i wyrażenie ewaluatora. Zazwyczaj dostawca symboli jest tylko jednostki, która wymaga nterpretowanie zawartości tego interfejsu.
+ Dostawca symbolu zwraca ten interfejs do reprezentowania obiektu i jego lokalizacji w określonym zakresie (na przykład funkcja, metoda lub klasa). Ten interfejs jest zwracany i przekazywany do różnych metod dostawcy symbolu i oceniającego wyrażenie. Zwykle dostawca symboli jest jedyną jednostką, która musi interpretować zawartość tego interfejsu.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: sh.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

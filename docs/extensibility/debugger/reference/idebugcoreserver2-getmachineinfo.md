@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineInfo | Dokumentacja firmy Microsoft
+title: IDebugCoreServer2::GetMachineInfo | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetInfo
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a80ee7bfa6e9e17135683fede9de24f110b7ca6c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9411c296f396043a63eee6e4254a35d5c2c35884
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317896"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733162"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
-Pobiera opis maszyny, która jest systemem core server.
+Pobiera opis komputera, na który działa serwer podstawowy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int GetMachineInfo( 
 
 ## <a name="parameters"></a>Parametry
 `Fields`\
-[in] Kombinacja flag z [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) wyliczenie określające pola, które z `pMachineInfo` są wypełnione.
+[w] Kombinacja flag z wyliczenia [MACHINE_INFO_FIELDS,](../../../extensibility/debugger/reference/machine-info-fields.md) które określają, `pMachineInfo` które pola mają być wypełnione.
 
  `pMachineInfo`\
 
- [out w] A [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) strukturę, która jest wypełniane opis maszyny.
+ [w, na zewnątrz] Struktura [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) wypełniona opisem maszyny.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
 - [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)

@@ -1,48 +1,48 @@
 ---
-title: Opisy zdarzeń | Dokumentacja firmy Microsoft
+title: Opisy zdarzeń | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267011c61a3b43c76db80a758a86f1af1dd228b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c2582717fd4da3b833da90a951f9b8f72a59f71
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315360"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738788"
 ---
 # <a name="event-descriptions"></a>Opisy zdarzeń
-Każdy typ zdarzenia ma określonego celu.
+Każdy typ zdarzenia ma określony cel.
 
-## <a name="events-and-the-reasons-for-their-use"></a>Zdarzenia i przyczyny ich użycie
+## <a name="events-and-the-reasons-for-their-use"></a>Wydarzenia i powody ich wykorzystania
 
-|Zdarzenie|Opis|
+|Wydarzenie|Opis|
 |-----------|-----------------|
-|Aktywuj dokument zdarzenia|Występują, gdy aparat debugowania (DE) chce IDE próbę otwarcia lub przenieść dokument na pierwszym planie.|
-|Powiązany punkt przerwania lub punkt przerwania zdarzenia błędu|Wysyłany, gdy punkt przerwania jest powiązany lub gdy nie można powiązać punkt przerwania i zostanie zwrócony błąd.|
-|Punkt przerwania niepowiązanych zdarzenia|Występują, gdy powiązany punkt przerwania Rozpina z kodu.|
-|Można zatrzymać zdarzenia|Wysyłane do IDE, aby ustalić, czy użytkownik chce Zatrzymaj w określonym momencie w kodzie.|
-|Zdarzenia przerwania|Występuje po trafieniu punktu przerwania kodu lub danych.|
-|Zdarzenia tekstu dokumentu|Występuje po zmianie tekstu dokumentu. Te zdarzenia nie są wysyłane za pośrednictwem `IDebugEventCallBack2::Event` metody.|
-|Aparat tworzenia zdarzeń|Wysyłany, gdy tworzona jest najpierw silnika.|
-|Zdarzenia punktu wejścia|Wysyłany, gdy debugowanego ma uruchomić kod inicjowania i osiągnięto jej pierwszego punktu wejścia użytkownika.|
-|Zdarzenia wyjątków|Wysyłany, gdy uruchomiony program osiąga wyjątek.|
-|Zdarzenia ukończone oceny wyrażeń|Wysyłane po zakończeniu oceny wyrażenia asynchroniczne.|
-|Znajdź wydarzenia symboli|Wysyłane zawsze, gdy DE musi poprosić użytkownika o znalezienie symboli dla modułu.|
-|Zakończenie zdarzeń ładowania|Wysłane tylko po zakończeniu ładowania początkowego programu i pierwszy kod zostanie uruchomiony w programie.|
-|Komunikat zdarzenia|Wysyłany, gdy komunikaty są wysyłane do użytkowników.|
-|Zdarzenia ładowania modułu|Wysyłany, gdy nowy moduł jest załadowany lub zwolnione.|
-|Zdarzenia parametry wyjściowe|Wysyłany, gdy program zapisuje dane wyjściowe debugowania.|
-|Tworzyć i niszczyć zdarzenia|Wysyłane do anonsowania utworzenia lub zniszczenia procesów, programy, właściwości, sesje i wątki, środowiska IDE programu Visual Studio może przechowywać informacje o stan debugowane programy.|
-|Krok zdarzenia ukończone|Wysyłany, gdy krok został ukończony.|
-|Zdarzenia zmiany nazwy wątków|Wysyłany, gdy użytkownik zmienia nazwę wątku.|
-|Zdarzenia zmiany nazwy programu|Wysyłany, gdy użytkownik zmieni nazwę programu.|
+|Aktywowanie zdarzeń dokumentu|Występuje, gdy aparat debugowania (DE) chce IDE otworzyć lub przenieść dokument na pierwszym planie.|
+|Zdarzenia związane z punktem przerwania lub punkt przerwania|Wysyłane, gdy punkt przerwania jest powiązany lub gdy punkt przerwania nie może powiązać i zwracany jest błąd.|
+|Zdarzenia niezwiązane z punktem przerwania|Występuje, gdy powiązany punkt przerwania odłącza się od kodu.|
+|Może zatrzymać zdarzenia|Wysłane do IDE, aby ustalić, czy użytkownik chciałby zatrzymać się w określonym punkcie w kodzie.|
+|Zdarzenia punktu przerwania|Występuje, gdy kod lub punkt przerwania danych zostanie trafiony.|
+|Dokumentowanie zdarzeń tekstowych|Występuje, gdy tekst w dokumencie jest zmieniany. Te zdarzenia nie są `IDebugEventCallBack2::Event` wysyłane za pośrednictwem metody.|
+|Aparat tworzenia zdarzeń|Wysyłane podczas tworzenia aparatu.|
+|Zdarzenia punktu wejścia|Wysyłane, gdy program jest debugowany ma uruchomić kod inicjowania i osiągnął swój pierwszy punkt wejścia użytkownika.|
+|Zdarzenia wyjątków|Wysyłane, gdy uruchomiony program osiągnie wyjątek.|
+|Pełna ocena wyrażenia zdarzenia|Wysyłane po zakończeniu oceny wyrażenia asynchronicznej.|
+|Znajdź zdarzenia symboli|Wysyłane za każdym razem, gdy DE musi poprosić użytkownika o znalezienie symboli dla modułu.|
+|Załaduj pełne zdarzenia|Wysyłane tylko wtedy, gdy początkowe ładowanie programu jest zakończone, a pierwszy kod ma być uruchomiony w programie.|
+|Zdarzenia wiadomości|Wysyłane, gdy wiadomości są wysyłane do użytkowników.|
+|Zdarzenia ładowania modułu|Wysyłane po załadowaniu lub wyładowaniu nowego modułu.|
+|Zdarzenia ciągu wyjściowego|Wysyłane, gdy program zapisuje dane wyjściowe debugowania.|
+|Tworzenie i niszczenie zdarzeń|Wysłane do ogłoszenia tworzenia lub niszczenia procesów, programów, właściwości, sesji i wątków, dzięki czemu ide programu Visual Studio może śledzić stan programów są debugowane.|
+|Zdarzenia ukończenia kroków|Wysyłane po zakończeniu kroku.|
+|Zdarzenia zmiany nazwy wątku|Wysyłane, gdy użytkownik zmienia nazwę wątku.|
+|Zdarzenia zmiany nazwy programu|Wysyłane, gdy użytkownik zmieni nazwę programu.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md)

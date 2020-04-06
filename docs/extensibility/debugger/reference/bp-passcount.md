@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT | Microsoft Docs
+title: BP_PASSCOUNT | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT structure
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fd1ab73a20b319af6c9464062113f4e8f2d64fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353010"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737901"
 ---
-# <a name="bppasscount"></a>BP_PASSCOUNT
-W tym artykule opisano, liczbę i warunki, na których jest uruchamiany warunkowego punktu przerwania.
+# <a name="bp_passcount"></a>BP_PASSCOUNT
+Opisuje liczbę i warunki, na których warunkowy punkt przerwania jest uruchamiany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,24 +43,24 @@ public struct BP_PASSCOUNT {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwPassCount`\
-Liczba razy, aby przekazać za pośrednictwem punktu przerwania przed wyzwoleniem go.
+Liczba razy, aby przejść przez punkt przerwania przed odpaleniem go.
 
 `stylePassCount`\
-Wartość z zakresu od [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) Liczba przebiegów wyliczenie, które określa styl punkt przerwania.
+Wartość z [wyliczenia BP_PASSCOUNT_STYLE,](../../../extensibility/debugger/reference/bp-passcount-style.md) która określa styl liczby przebiegów punktu przerwania.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struktury.
+Ta struktura jest członkiem [struktury BP_REQUEST_INFO.](../../../extensibility/debugger/reference/bp-request-info.md)
 
-Ta struktura również jest przekazywany jako parametr do[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) i[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) metody.
+Ta struktura jest również przekazywana jako parametr do[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) i[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) metody.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)

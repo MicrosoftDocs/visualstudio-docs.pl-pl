@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Dokumentacja firmy Microsoft
+title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: adf78f67d9da92c0024b34ec53fc10f772b66ca1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347548"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719206"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-Ta metoda tworzy moduł wyliczający dla obszarów nazw skojarzonych z tym adresem debugowania.
+Ta metoda tworzy wyliczacz dla obszarów nazw skojarzonych z adresem debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,17 +43,17 @@ int GetNamespacesUsedAtAddress(
 
 ## <a name="parameters"></a>Parametry
 `pAddress`\
-[in] Adres debugowania.
+[w] Adres debugowania.
 
 `ppEnum`\
-[out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) moduł wyliczający dla obszarów nazw.
+[na zewnątrz] Zwraca [wyliczenie IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) dla obszarów nazw.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Mogą być różne przestrzenie nazw skojarzonych z adresu podanego debugowania, na przykład zagnieżdżone przestrzenie nazw lub wielu `using` instrukcji.
+ Może istnieć kilka obszarów nazw skojarzonych z danym adresem debugowania, `using` na przykład zagnieżdżone przestrzenie nazw lub wiele instrukcji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

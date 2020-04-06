@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetExceptionDescription | Dokumentacja firmy Microsoft
+title: IDebugExceptionEvent2::GetExceptionDescription | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetExceptionDescription
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc13184328ce3a7cf09e6df20ee62162cb108b5b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7a6ea64540eaeef5ec258bc54b118b3a0600584c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310542"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729849"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
-Pobiera zawiera opis wyjątku.
+Pobiera wyświetlany opis wyjątku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int GetExceptionDescription( 
 
 ## <a name="parameters"></a>Parametry
 `pbstrDescription`\
-[out] Zwraca zawiera opis wyjątku.
+[na zewnątrz] Zwraca wyświetlany opis wyjątku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ciąg zwracany przez tę metodę jest zazwyczaj nazwą wyjątek i jest widoczny w **dane wyjściowe** okna, gdy wystąpi wyjątek.
+ Ciąg zwracany z tej metody jest zazwyczaj nazwa wyjątku i jest wyświetlany w **Output** okna, gdy wystąpi wyjątek.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

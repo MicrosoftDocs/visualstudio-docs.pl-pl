@@ -1,28 +1,28 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Dokumentacja firmy Microsoft
+title: IDebugCustomAttributeQuery::IsCustomAttributeDefiniowany | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::IsCustomAttributeDefined
 - IsCustomAttributeDefined
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f4359d2360f1186404229397bbb00f916fbcea8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3b0be4f8afdfe5320bdf871586f8c0e8f648ae84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346076"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732632"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-Określa, jeśli zdefiniowano określonego atrybutu niestandardowego.
+Określa, czy zdefiniowany jest określony atrybut niestandardowy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,13 +40,13 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Parametry
 `pszCustomAttributeName`\
-[in] Nazwa atrybutu niestandardowego.
+[w] Nazwa atrybutu niestandardowego.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli nie zdefiniowano atrybutu niestandardowego, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`.
+Jeśli atrybut niestandardowy jest `S_OK`zdefiniowany, zwraca ; w przeciwnym `S_FALSE`razie zwraca plik .
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugClassFieldSymbol** obiekt ujawniający [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugClassFieldSymbol,** który udostępnia interfejs [IDebugCustomAttributeQuery.](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(
@@ -85,5 +85,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

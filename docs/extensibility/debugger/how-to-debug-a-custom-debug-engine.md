@@ -1,77 +1,77 @@
 ---
-title: 'Instrukcje: Debugowanie niestandardowego aparatu debugowania | Dokumentacja firmy Microsoft'
+title: 'Jak: Debugowanie niestandardowego aparatu debugowania | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 992440dd137b5622f4c619f1f81008eb38e1ff5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c79790bfc9c9cd3767a453258b8c2d340f64d029
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334830"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738586"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Instrukcje: Debugowanie niestandardowego aparatu debugowania
-Typ projektu spowoduje uruchomienie aparatu debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiane pod kontrolą programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kontrolowanie tego typu projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie można debugować DE. Poniżej przedstawiono kroki, które umożliwiają debugowanie Twojego niestandardowego DE.
+# <a name="how-to-debug-a-custom-debug-engine"></a>Jak: Debugowanie niestandardowego aparatu debugowania
+Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiany [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pod kontrolą wystąpienia kontrolowania typu projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie można debugować DE. Poniżej przedstawiono kroki, które umożliwiają debugowanie niestandardowego DE.
 
 > [!NOTE]
-> :     W procedurze "Debugowanie niestandardowego aparatu debugowania" należy poczekać DE do uruchomienia, zanim będzie możliwe dołączenie do niej. Jeśli na początku swoje DE, który jest wyświetlany, gdy rozpoczyna się DE okno komunikatu, możesz dołączyć w tym momencie, a następnie wyczyść okno komunikatu, aby kontynuować. W ten sposób możesz przechwytywać wszystkie zdarzenia DE.
+> : W procedurze "Debugowanie niestandardowego aparatu debugowania" należy poczekać na uruchomienie de, zanim będzie można do niego dołączyć. Jeśli umieścisz okno komunikatu na początku de, który pojawia się po uruchomieniu DE, można dołączyć w tym momencie, a następnie wyczyścić okno komunikatu, aby kontynuować. W ten sposób można złapać wszystkie zdarzenia DE.
 
 > [!WARNING]
-> Konieczne jest posiadanie zdalne debugowanie, przed rozpoczęciem poniższej procedury. Zobacz [zdalne debugowanie](../../debugger/remote-debugging.md) Aby uzyskać szczegółowe informacje.
+> Przed podjęciem następującej próby należy zainstalować debugowanie zdalne. Zobacz [zdalne debugowanie, aby](../../debugger/remote-debugging.md) uzyskać szczegółowe informacje.
 
 ## <a name="debug-a-custom-debug-engine"></a>Debugowanie niestandardowego aparatu debugowania
 
-1. Rozpocznij *msvsmon.exe*, zdalne debugowanie monitora.
+1. Uruchom *program msvsmon.exe*, zdalny monitor debugowania.
 
-2. Z **narzędzia** menu *msvsmon.exe*, wybierz opcję **opcje** otworzyć **opcje** okno dialogowe.
+2. Z menu **Narzędzia** w *pliku msvsmon.exe*wybierz pozycję **Opcje,** aby otworzyć okno dialogowe **Opcje.**
 
-3. Wybierz opcję "Brak uwierzytelniania", a następnie kliknij przycisk **OK**.
+3. Wybierz opcję "bez uwierzytelniania" i kliknij **przycisk OK**.
 
-4. Uruchom wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , a następnie otwórz projekt DE niestandardowych.
+4. Uruchom wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i otwórz swój niestandardowy projekt DE.
 
-5. Uruchom drugie wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , a następnie otwórz Twojego własnego projektu, który uruchamia DE (do tworzenia aplikacji, zazwyczaj jest to w gałęzi rejestru eksperymentalnych, skonfigurowany po zainstalowaniu VSIP).
+5. Uruchom drugie wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i otwórz projekt niestandardowy, który uruchamia DE (dla rozwoju jest to zazwyczaj w gałęzi rejestru eksperymentalnego, który jest skonfigurowany po zainstalowaniu programu VSIP).
 
-6. W tym drugim przypadku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ładowanie pliku źródłowego z Twojego własnego projektu i uruchom program do debugowania. Zaczekaj kilka minut, aby umożliwić DE do załadowania lub poczekaj, aż zostanie osiągnięty punkt przerwania.
+6. W tym drugim [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]wystąpieniu , załadować plik źródłowy z projektu niestandardowego i uruchomić program do debugowania. Poczekaj kilka chwil, aby umożliwić DE załadować, lub poczekaj, aż punkt przerwania zostanie trafiony.
 
-7. W pierwszym wystąpieniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (za pomocą projektu DE), wybierz **dołączyć do procesu** z **debugowania** menu.
+7. W pierwszym wystąpieniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (z projektem DE) wybierz dołącz do **procesu** z menu **Debugowania.**
 
-8. W **dołączyć do procesu** okno dialogowe, zmiana **transportu** do **zdalny (natywny tylko bez uwierzytelniania)** .
+8. W oknie dialogowym **Dołączanie do procesu** zmień **transport** na **zdalny (natywny tylko bez uwierzytelniania)**.
 
-9. Zmiana **kwalifikator** do nazwy komputera (Uwaga: dostępna jest Historia wpisów, więc trzeba wpisz nazwę, tylko jeden raz).
+9. Zmień **kwalifikator** na nazwę komputera (uwaga: istnieje historia wpisów, więc musisz wpisać tę nazwę tylko raz).
 
-10. W **dostępne procesy** , wybierz wystąpienie usługi DE, która jest uruchomiona i kliknij pozycję na liście **Dołącz** przycisku.
+10. Na liście **Dostępne procesy** wybierz wystąpienie uruchomionego de i kliknij przycisk **Dołącz.**
 
-11. Po symbole zostały załadowane w swojej DE, należy umieścić punkty przerwania w kodzie DE.
+11. Po załadowaniu symboli w de, miejsce punktów przerwania w kodzie DE.
 
-12. Za każdym razem, aby zatrzymać i ponownie uruchom proces debugowania, powtórz kroki od 6 do 10.
+12. Za każdym razem, gdy zatrzymasz, a następnie ponownie uruchomisz proces debugowania, powtórz kroki od 6 do 10.
 
-## <a name="debug-a-custom-project-type"></a>Typ niestandardowego projektu debugowania
+## <a name="debug-a-custom-project-type"></a>Debugowanie niestandardowego typu projektu
 
-1. Rozpocznij [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w gałęzi rejestru normalne i obciążenia projektu wpisz projektu (jest to, źródło, aby typem projektu, nie podczas tworzenia wystąpienia tego typu projektu).
+1. Uruchom [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w normalnej gałęzi rejestru i załadować projekt typu projektu (jest to źródło do typu projektu, a nie wystąpienia typu projektu).
 
-2. Otwórz właściwości projektu i przejdź do **debugowania** strony. Aby uzyskać **polecenia**, wpisz ścieżkę do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (domyślnie jest to *[dysk]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
+2. Otwórz właściwości projektu i przejdź do strony **Debugowania.** W polu **Polecenie**wpisz ścieżkę do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (domyślnie jest to *[dysk]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
 
-3. Aby uzyskać **argumenty wiersza polecenia**, typ `/rootsuffix exp` gałęzi rejestru eksperymentalne (utworzone podczas instalacji VSIP).
+3. W przypadku **argumentów polecenia**wpisz `/rootsuffix exp` dla gałęzi rejestru eksperymentalnego (utworzonej po zainstalowaniu programu VSIP).
 
-4. Kliknij przycisk **OK** aby zatwierdzić zmiany.
+4. Kliknij **przycisk OK,** aby zaakceptować zmiany.
 
-5. Uruchomić swój typ projektu, naciskając **F5**. Spowoduje to uruchomienie drugie wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+5. Rozpocznij swój typ projektu, naciskając klawisz **F5**. Spowoduje to uruchomienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]drugiego wystąpienia .
 
 6. W tym momencie można umieścić punkty przerwania w kodzie źródłowym typu projektu.
 
-7. W drugim wystąpieniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], obciążenia, lub Utwórz nowe wystąpienie tego typu projektu. Podczas tworzenia lub obciążenia są osiągane punktów przerwania.
+7. W drugim wystąpieniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], załadować lub utworzyć nowe wystąpienie typu projektu. Podczas ładowania lub tworzenia punkty przerwania mogą zostać trafione.
 
-8. Debuguj typu projektu.
+8. Debuguj typ projektu.
 
-9. Jeśli chcesz debugować proces uruchamiania DE, można wykonać kroki opisane w procedurze "Debugowanie niestandardowego aparatu debugowania", aby dołączyć do swojej DE, po jego uruchomieniu. Daje to trzy wystąpienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchomiona: jeden dla typu źródła danych projektu, drugie dla typów projektów wystąpień i trzecią dołączona do Twojej DE.
+9. Jeśli zdecydujesz się debugować proces uruchamiania DE, można wykonać kroki w procedurze "Debug a custom debug engine", aby dołączyć do de po uruchomieniu. Daje to trzy wystąpienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchamiania: jeden dla źródła typu projektu, drugi dla typu projektu wystąpienia i trzeci dołączony do de.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetUnderlyingSymbol | Dokumentacja firmy Microsoft
+title: IDebugEnumField::GetUnderlyingSymbol | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetUnderlyingSymbol method
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 353b6d6f2a448cb7ac1bfdc98cc489688db9ee74
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cac9d3f761e95b821179137f2efc23ef61b91b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345035"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730270"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
-Ta metoda zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący nazwę wyliczenia.
+Ta metoda zwraca [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) który reprezentuje nazwę wyliczenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ int GetUnderlyingSymbol(
 
 ## <a name="parameters"></a>Parametry
 `ppField`\
-[out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujące nazwę tego wyliczenia.
+[na zewnątrz] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujące nazwę tego wyliczenia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Nazwa wyliczenia zawiera także typem wyliczenia, który jest powiązany z lokalizacji w pamięci, za pomocą [powiązać](../../../extensibility/debugger/reference/idebugbinder-bind.md).
+ Nazwa wyliczenia zawiera również typ wyliczenia, który jest powiązany z lokalizacją pamięci przy użyciu [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
