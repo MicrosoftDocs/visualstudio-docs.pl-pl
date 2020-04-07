@@ -7,16 +7,18 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Dowiedz się, jak rozpocząć zarządzanie subskrypcjami programu Visual Studio w organizacji za pomocą portalu administracyjnego subskrypcji.
-ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233168"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808360"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
 Portal administracyjny subskrypcji programu Visual Studio udostępnia narzędzia do zarządzania subskrypcjami organizacji w jednym miejscu. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>Istotne zagadnienia
 Należy pamiętać o tych punktach podczas korzystania z portalu administracyjnego subskrypcji programu Visual Studio:

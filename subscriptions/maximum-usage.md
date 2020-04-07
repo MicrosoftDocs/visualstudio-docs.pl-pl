@@ -4,18 +4,21 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 03/03/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
-ms.openlocfilehash: 3f62c251262bc16f8f214c6f7bcc22674c7430b2
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232271"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808353"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Funkcja maksymalnego użycia umożliwia śledzenie liczby przypisanych subskrypcji
-Nowa funkcja w portalu administracyjnym subskrypcji programu Visual Studio pomaga śledzić liczbę zakupionych i przypisanych subskrypcji oraz określa szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i w całym okresie. okresu obowiązywania umowy(-ów). 
+Nowa funkcja w portalu administracyjnym subskrypcji programu Visual Studio ułatwia śledzenie liczby zakupionych i przypisanych subskrypcji oraz identyfikuje szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i przez cały okres obowiązywania umów. 
+
+## <a name="maximum-usage-overview"></a>Omówienie maksymalnego użycia
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tdQK] 
 
 ## <a name="view-your-maximum-usage"></a>Wyświetlanie maksymalnego zużycia
 Aby wyświetlić szczytową liczbę subskrypcji przypisanych do dowolnej umowy i poziomu subskrypcji:

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 03/17/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio — dlaczego widzę adresy Hotmail lub Gmail dla moich subskrybentów?
-ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550333"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808342"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Subskrypcje programu Visual Studio — dlaczego widzę konta osobiste subskrybentów?
 Po migracji firm z Centrum usług licencjonowania zbiorowego (VLSC) do nowego [portalu administracyjnego subskrypcji](https://manage.visualstudio.com)programu Visual Studio administratorzy byli zaskoczeni, że "Adres e-mail logowania" dla niektórych subskrybentów zawiera osobisty adres e-mail, taki jak Hotmail lub Outlook.  Aby uzyskać więcej informacji, zapoznaj się z [tym filmem](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
@@ -28,6 +28,9 @@ Podczas procesu aktywacji subskrybenta: do zalogowania się wymagane było konto
 > Nowoczesne środowisko subskrybenta [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) obsługuje zarówno typy tożsamości usługi Praca/Szkoła, jak i Konto Microsoft (MSA).
 
 ## <a name="solution"></a>Rozwiązanie
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
 Aby rozwiązać ten problem, po prostu wybierz przycisk **Połącz wiadomości e-mail,** a system spróbuje dopasować konta z msa do istniejących użytkowników w usłudze Azure Active Directory (Azure AD) organizacji na podstawie dopasowania imienia i nazwiska. Jeśli wystąpi błąd, możesz usunąć dowolne dopasowanie, klikając **x** po prawej stronie meczu.  
 
 > [!div class="mx-imgBorder"]
