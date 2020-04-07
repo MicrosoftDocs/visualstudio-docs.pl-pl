@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: bbed62c13fc963af382ede113b138451303d9382
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472683"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759712"
 ---
 # <a name="msbuild-conditions"></a>Warunki MSBuild
 
@@ -40,7 +40,7 @@ MSBuild obsługuje określony zestaw warunków, które mogą `Condition` być st
 |()|Mechanizm grupowania, który `true` ocenia, czy wyrażenia `true`zawarte wewnątrz oceniają do .|
 |$if$ ( %expression% ), $else$, $endif$|Sprawdza, czy `%expression%` określony odpowiada wartości ciągu przekazanego parametru szablonu niestandardowego. Jeśli `$if$` warunek ocenia `true`, a następnie jego instrukcje są uruchamiane; w przeciwnym `$else$` razie warunek jest sprawdzany. Jeśli `$else$` warunek `true`jest , a następnie jego instrukcje są uruchamiane; w przeciwnym `$endif$` razie warunek kończy ocenę wyrażenia.<br /><br /> Aby zapoznać się z przykładami użycia, zobacz [logika parametru projektu/elementu programu Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 
-Metody ciągu można użyć w warunkach, jak pokazano w <xref:System.String.TrimEnd> poniższym przykładzie, w którym funkcja jest używana do porównywania tylko odpowiedniej części ciągu, aby odróżnić .NET Framework i .NET Core framework docelowych.
+Metody ciągu można użyć w warunkach, jak pokazano w poniższym przykładzie, w którym [TrimEnd()](/dotnet/api/system.string.trimend) funkcja jest używana do porównywania tylko odpowiedniej części ciągu, do rozróżnienia między .NET Framework i .NET Core framework docelowych.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
