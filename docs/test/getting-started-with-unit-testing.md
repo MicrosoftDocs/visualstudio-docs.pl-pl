@@ -1,6 +1,6 @@
 ---
-title: Wprowadzenie do testowania jednostkowego
-ms.date: 03/04/2020
+title: Rozpoczynanie pracy z testami jednostkowymi
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d961af66658d6924da1b5ba38b9ec7f2a8b19aaa
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78289857"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892800"
 ---
-# <a name="get-started-with-unit-testing"></a>Wprowadzenie do testowania jednostkowego
+# <a name="get-started-with-unit-testing"></a>Rozpoczynanie pracy z testami jednostkowymi
 
 Za pomocą programu Visual Studio do definiowania i uruchamiania testów jednostkowych w celu utrzymania kondycji kodu, zapewnienia pokrycia kodu i znajdowania błędów i błędów, zanim klienci to zrobią. Często uruchamiaj testy jednostkowe, aby upewnić się, że kod działa poprawnie.
 
@@ -246,8 +246,8 @@ Aby utworzyć testy jednostkowe, które używają [NUnit:](https://nunit.org/)
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Przewodnik: tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-* [Polecenie Utwórz testy jednostkowe](create-unit-tests-menu.md)
+* [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Utwórz testy jednostkowe, polecenie](create-unit-tests-menu.md)
 * [Generowanie testów za pomocą intellitestu](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Uruchamianie testów za pomocą Eksploratora testów](run-unit-tests-with-test-explorer.md)
 * [Analizowanie pokrycia kodu](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
