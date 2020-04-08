@@ -9,20 +9,23 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca762c103ab5b3d3e94b3117dd9570787562b002
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566829"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880133"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Użyj planów testów platformy Azure zamiast usługi Lab Management do automatycznego testowania
 
 Jeśli używasz Microsoft Test Manager i Lab Management do automatycznego testowania lub automatyzacji kompilacji i wdrażania testów, w tym temacie wyjaśniono, jak można osiągnąć te same cele przy użyciu funkcji [kompilacji i wersji](/azure/devops/pipelines/index?view=vsts) w potokach platformy Azure i Team Foundation Server (TFS).
 
+> [!NOTE]
+> Menedżer testów firmy Microsoft jest przestarzały w programie Visual Studio 2017 i usuwany w programie Visual Studio 2019.
+
 ## <a name="build-deploy-test-automation"></a>Automatyzacja kompilacji i wdrażania i testowania
 
-Program Microsoft Test Manager i zarządzanie laboratorium polegają na definicji kompilacji XAML w celu automatyzacji tworzenia, wdrażania i testowania aplikacji. Kompilacja XAML opiera się na różnych konstrukcjach utworzonych w Menedżerze testów firmy Microsoft, takich jak środowisko laboratoryjne, zestawy testów i ustawienia testowania, oraz na różnych składnikach infrastruktury, takich jak kontroler kompilacji, agenci kompilacji, kontroler testów i agenci testowi, aby osiągnąć ten cel. Można osiągnąć to samo z mniejszą liczbą kroków przy użyciu usługi Azure Potoki lub TFS.
+Program Microsoft Test Manager i zarządzanie laboratorium polegają na definicji kompilacji XAML w celu automatyzacji tworzenia, wdrażania i testowania aplikacji. Kompilacja XAML opiera się na różnych konstrukcjach utworzonych w programie Microsoft Test Manager, takich jak środowisko laboratoryjne, zestawy testów i ustawienia testowania, a także na różnych składnikach infrastruktury, takich jak kontroler kompilacji, agenci kompilacji, kontroler testów i agenci testowi, aby osiągnąć ten cel. Można osiągnąć to samo z mniejszą liczbą kroków przy użyciu usługi Azure Potoki lub TFS.
 
 | Kroki | Z kompilacją XAML | W kompilacji lub wersji |
 |-------|----------------------|-----------------|
@@ -53,7 +56,7 @@ Funkcje samoobsługowej obsługi administracyjnej Centrum laboratorium mają dwa
 
 Jednak biorąc pod uwagę ewolucję bogatszych systemów zarządzania chmurą publiczną i prywatną, takich jak [Microsoft Azure](https://azure.microsoft.com/) i Microsoft [Azure Stack,](https://azure.microsoft.com/overview/azure-stack/)nie ma ewolucji funkcji zarządzania infrastrukturą w TFS 2017 i później. Zamiast tego nadal koncentruje się na łatwym zużyciu zasobów zarządzanych za pośrednictwem takiej infrastruktury chmury.
 
-W poniższej tabeli podsumowano typowe działania wykonywane w Centrum laboratorium oraz sposób ich wykonywania za pośrednictwem programu SCVMM lub platformy Azure (jeśli są to działania związane z zarządzaniem infrastrukturą) lub za pośrednictwem usług TFS i Azure DevOps (jeśli są testem lub wdrożeniem działalności):
+W poniższej tabeli podsumowano typowe działania wykonywane w Centrum laboratorium i sposób ich wykonywania za pośrednictwem programu SCVMM lub platformy Azure (jeśli są to działania związane z zarządzaniem infrastrukturą) lub za pośrednictwem usług TFS i Azure DevOps (jeśli są to działania testowe lub wdrożeniowe):
 
 | Kroki | Z Centrum laboratorium | W kompilacji lub wersji |
 |-------|-----------------|-----------------------|

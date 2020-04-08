@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 086601cb8cde00d63e3be85c028201922ebe5b76
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584416"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880198"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
@@ -20,7 +20,9 @@ Jeśli chcesz użyć programu Visual Studio do zdalnego uruchamiania testów, dy
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 Jeśli używasz Programu Microsoft Test Manager do uruchamiania testów w środowiskach laboratoryjnych, zarządzasz kontrolerami testów i ich agentami za pomocą **Menedżera kontrolerów testów** w **Centrum laboratorium** dla Menedżera testów firmy Microsoft. Ten temat ma zastosowanie tylko wtedy, gdy do uruchamiania testów jest używany program Visual Studio.
+::: moniker-end
 
 Aby uzyskać informacje dotyczące instalowania i konfigurowania agentów testowych i kontrolerów testów do uruchamiania testów w programie Visual Studio, zobacz [Konfigurowanie agentów testowych i kontrolerów](../test/configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -90,25 +92,36 @@ Warto dodać agenta testowego do innego kontrolera testów lub może być trzeba
 
 Agent testowy musi być ustawiony na stan offline, zanim będzie można go usunąć.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Tej procedury nie można użyć do usuwania agentów, które są zarejestrowane w kontrolerze jako część środowiska laboratoryjnego. Aby usunąć tych agentów z kontrolera, należy usunąć środowisko za pomocą menedżera testów firmy Microsoft.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Tej procedury nie można użyć do usuwania agentów, które są zarejestrowane w kontrolerze jako część środowiska laboratoryjnego.
+::: moniker-end
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Aby usunąć agenta testowego z kontrolera testów
 
-1. Jeśli kontroler testów nie jest zarejestrowany w projekcie, wykonaj następujące kroki.
+::: moniker range=">=vs-2019"
+W programie Visual Studio 2019 nie można usunąć agenta testowego, jeśli kontroler testów jest zarejestrowany w projekcie.
+::: moniker-end
+Jeśli kontroler testów nie jest zarejestrowany w projekcie, wykonaj następujące kroki.
 
-    1. W programie Visual Studio otwórz plik ustawień testu dla projektu testowego wybierz pozycję **Rola** i wybierz pozycję **Zarządzaj kontrolerami testów** z listy rozwijanej dla pola **Kontroler.**
+1. W programie Visual Studio otwórz plik ustawień testu dla projektu testowego wybierz pozycję **Rola** i wybierz pozycję **Zarządzaj kontrolerami testów** z listy rozwijanej dla pola **Kontroler.**
 
-         Zostanie wyświetlone okno dialogowe **Administruj kontrolerem** testów.
+   Zostanie wyświetlone okno dialogowe **Administruj kontrolerem** testów.
 
-    2. Na liście rozwijanej **Kontroler** wpisz nazwę komputera, na którym skonfigurowany jest kontroler testów. Jeśli wcześniej podawano określony kontroler testów, można wybrać nazwę z listy.
+2. Na liście rozwijanej **Kontroler** wpisz nazwę komputera, na którym skonfigurowany jest kontroler testów. Jeśli wcześniej podawano określony kontroler testów, można wybrać nazwę z listy.
 
-    3. W okienku **Agenci** wybierz nazwę agenta testowego. Jeśli agent jest nadal w trybie online, wybierz pozycję **Offline.** Aby go usunąć, wybierz pozycję **Usuń**.
+3. W okienku **Agenci** wybierz nazwę agenta testowego. Jeśli agent jest nadal w trybie online, wybierz pozycję **Offline.** Aby go usunąć, wybierz pozycję **Usuń**.
 
-        > [!NOTE]
-        > Usunięcie agenta testowego po prostu usuwa go z kontrolera testów. Aby całkowicie odinstalować agenta testowego, użyj Panelu sterowania **programy i funkcje** na komputerze agenta testowego.
+   > [!NOTE]
+   > Usunięcie agenta testowego po prostu usuwa go z kontrolera testów. Aby całkowicie odinstalować agenta testowego, użyj Panelu sterowania **programy i funkcje** na komputerze agenta testowego.
 
-2. Jeśli kontroler testów jest zarejestrowany w projekcie, usuń agenta przy użyciu menedżera testów firmy Microsoft.
+::: moniker range="vs-2017"
+Jeśli kontroler testów jest zarejestrowany w projekcie, usuń agenta przy użyciu menedżera testów firmy Microsoft.
+::: moniker-end
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Zmienianie ustawień agenta testowego
 
@@ -125,8 +138,10 @@ Można zmienić stan i inne ustawienia dla agenta testowego, korzystając z nast
 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Aby zmienić ustawienia agenta testowego
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Jeśli agent testowy jest zarejestrowany na kontrolerze testów zarejestrowanym w projekcie, zmień ustawienia w programie Microsoft Test Manager.
+::: moniker-end
 
 1. Aby skonfigurować i monitorować kontroler testów i wszystkich zarejestrowanych agentów dla testu obciążenia, wybierz menu **Testuj obciążenie** w programie Visual Studio, a następnie wybierz polecenie **Zarządzaj kontrolerami testów**. W przypadku innych testów otwórz plik ustawień testu dla projektu testowego w programie Visual Studio, wybierz pozycję **Rola** i wybierz pozycję **Zarządzaj kontrolerami testów** z listy rozwijanej dla pola **Kontroler.**
 
@@ -157,7 +172,7 @@ Zmiany atrybutu agenta testowego i agenta testowego wchodzą w życie natychmias
 
 Aby skonfigurować kontroler testów, należy użyć **narzędzia konfiguracji kontrolera testów zespołowych**. Podczas konfigurowania kontrolera testów, można zarejestrować kontroler testów z innej kolekcji projektu lub wyrejestrować kontrolera testów z kolekcji projektu.
 
-Jeśli chcesz zarejestrować kontroler testów w kolekcji projektów team foundation server, konto używane dla usługi kontrolera testów musi być członkiem grupy Konta usługi testowej kolekcji projektu dla kolekcji projektu lub konta używane do uruchamiania narzędzia konfiguracji kontrolera testów musi być administratorem kolekcji projektu.
+Jeśli chcesz zarejestrować kontroler testów w kolekcji projektów team foundation server, konto używane dla usługi kontrolera testów musi być członkiem grupy Konta usługi testowej kolekcji projektu dla kolekcji projektu lub konto używane do uruchamiania narzędzia konfiguracji kontrolera testów musi być administratorem kolekcji projektu.
 
 > [!NOTE]
 > Jeśli wyrejestrujesz kontroler testów z kolekcji projektu, która ma istniejące środowiska w kolekcji projektów, środowiska są nadal obsługiwane, jeśli przeniesiono tę kolekcję projektu i ponownie zarejestrujesz kontroler testów do tej przeniesionej kolekcji projektu.

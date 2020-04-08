@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 685b22f25c7138c4c3e7c9068ba52864e40648e1
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589217"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880146"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Jak: Konfigurowanie emulacji sieci przy użyciu ustawień testowych w programie Visual Studio
 
@@ -24,12 +24,19 @@ Można skonfigurować kartę danych diagnostycznych, aby przetestować aplikacj�
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 W poniższej procedurze opisano sposób konfigurowania emulacji sieci z edytora konfiguracji. Te kroki dotyczą edytora konfiguracji w programie Microsoft Test Manager i Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+W poniższej procedurze opisano sposób konfigurowania emulacji sieci z edytora konfiguracji. Te kroki dotyczą edytora konfiguracji w programie Visual Studio.
+::: moniker-end
 
 > [!NOTE]
-> Karta danych diagnostycznych emulacji sieciowej ma zastosowanie tylko do ustawień testowych programu Visual Studio. Nie jest używany do ustawień testowych w programie Microsoft Test Manager.
+> Karta danych diagnostycznych emulacji sieciowej ma zastosowanie tylko do ustawień testowych programu Visual Studio. Nie jest używany dla ustawień testowych w programie Microsoft Test Manager (przestarzałe w programie Visual Studio 2017).
 
+::: moniker range="vs-2017"
 Konto z uprawnieniami administratora musi być używane do emulacji sieci. Jeśli wybrano emulację sieci dla roli lokalnej, która uruchamia testy ręczne, należy uruchomić Menedżera testów firmy Microsoft przy użyciu uprawnień administratora. Jeśli wybrano emulację sieciową dla dowolnej innej roli, należy sprawdzić, czy agent testowy na komputerze dla tej roli używa konta użytkownika, który jest członkiem grupy administratorów. Aby uzyskać więcej informacji na temat konfigurowania konta agenta testowego, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+::: moniker-end
 
 > [!NOTE]
 > Konto usługi sieciowej, które jest domyślnym kontem agenta testowego, nie jest członkiem grupy administratorów.

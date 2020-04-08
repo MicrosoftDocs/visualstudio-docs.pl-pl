@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169394"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880237"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Jak: Konfigurowanie ASP.NET profiler do testów obciążenia przy użyciu ustawień testu w programie Visual Studio
 
@@ -22,7 +22,7 @@ Karty danych diagnostycznych ASP.NET profilera można używać do zbierania info
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Tej karty danych diagnostycznych nie można używać w testach uruchamianych przy użyciu Menedżera testów firmy Microsoft. Karty diagnostycznej ASP.NET profilera z testami obciążenia przy użyciu tylko w sieci Web, która wymaga programu Visual Studio Enterprise.
+> Tej karty danych diagnostycznych nie można używać dla testów uruchamianych przy użyciu menedżera testów firmy Microsoft (przestarzałych w programie Visual Studio 2017). Karty diagnostycznej ASP.NET profilera z testami obciążenia przy użyciu tylko w sieci Web, która wymaga programu Visual Studio Enterprise.
 
 Karta danych diagnostycznych ASP.NET profiler umożliwia zbieranie danych ASP.NET profilera z warstwy aplikacji po uruchomieniu testu obciążenia. Profilera nie należy uruchamiać dla długich testów obciążeniowych, na przykład trwających ponad godzinę. Wynika to z faktu, że plik profilera może się rozrosnąć, nawet do kilkuset megabajtów. Zamiast tego należy uruchomić krótsze testy obciążenia przy użyciu ASP.NET profilera, który nadal daje korzyści z głębokiej diagnozy problemów z wydajnością.
 

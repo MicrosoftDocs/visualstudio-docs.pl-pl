@@ -11,16 +11,16 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: adc77ee87bbbf07d04fd7c01a554c7c074e5bf7f
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594776"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880224"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Jak: Zbieranie danych IntelliTrace, aby pomóc w debugowaniu trudnych problemów
 
-Kartę danych diagnostycznych intellitrace można skonfigurować w celu zbierania określonych informacji śledzenia diagnostycznego w programie Visual Stdio. Adapter może być wykorzystywany przez testy do zbierania informacji o ważnych zdarzeniach diagnostycznych dotyczących aplikacji, na podstawie których deweloper później prześledzi kod i znajdzie przyczyny usterki. Adaptera danych diagnostycznych narzędzia IntelliTrace można używać w testach ręcznych i automatycznych.
+Można skonfigurować kartę danych diagnostycznych dla IntelliTrace do zbierania określonych informacji śledzenia diagnostycznego w programie Visual Studio. Adapter może być wykorzystywany przez testy do zbierania informacji o ważnych zdarzeniach diagnostycznych dotyczących aplikacji, na podstawie których deweloper później prześledzi kod i znajdzie przyczyny usterki. Adaptera danych diagnostycznych narzędzia IntelliTrace można używać w testach ręcznych i automatycznych.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,14 +40,24 @@ Dane gromadzone w pliku narzędzia IntelliTrace usprawniają debugowanie, poniew
 > [!WARNING]
 > Adapter danych diagnostycznych narzędzia IntelliTrace działa poprzez instrumentowanie zarządzanego procesu. Operację tę należy wykonać po załadowaniu testów dla przebiegu testowego. Jeśli proces, który ma być monitorowany, już się rozpoczął, nie będą zapisywane żadne pliki narzędzia IntelliTrace. Aby obejść ten problem, przed załadowaniem testów należy zatrzymać proces. Gdy tylko testy zostaną załadowane lub rozpocznie się pierwszy test, należy znów zainicjować proces.
 
+::: moniker range="vs-2017"
 Poniższa procedura opisuje konfigurowanie zbierania określonych danych przez narzędzie IntelliTrace. Te kroki dotyczą zarówno edytora konfiguracji w programie Microsoft Test Manager, jak i okna dialogowego Ustawienia testowe w programie Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Poniższa procedura opisuje konfigurowanie zbierania określonych danych przez narzędzie IntelliTrace. Te kroki dotyczą okna dialogowego Ustawienia testowe w programie Visual Studio.
+::: moniker-end
 
 > [!NOTE]
 > Konto użytkownika agenta testów wykorzystywane do zbierania danych przez narzędzie IntelliTrace musi być członkiem grupy administratorów. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
 ## <a name="configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Konfigurowanie danych do zbierania za pomocą karty danych diagnostycznych IntelliTrace
 
+::: moniker range="vs-2017"
 Przed wykonaniem kroków w tej procedurze należy otworzyć ustawienia testu z programu Microsoft Test Manager lub Visual Studio i wybrać stronę **Dane i diagnostyka.**
+::: moniker-end
+::: moniker range=">=vs-2019"
+Przed wykonaniem kroków w tej procedurze, należy otworzyć ustawienia testu z programu Visual Studio i wybierz **dane i diagnostyki** strony.
+::: moniker-end
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Aby skonfigurować dane do zbierania za pomocą karty danych diagnostycznych IntelliTrace
 
@@ -60,7 +70,7 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć ustawienia testu z p
      Ten serwer proxy umożliwia zbieranie informacji o wywołaniach http z klienta do serwera sieci web dla kart danych diagnostycznych IntelliTrace i Test Impact.
 
     > [!WARNING]
-    > Jeśli zdecydujesz się użyć konta niestandardowego dla tożsamości używanej dla puli aplikacji na internetowym serwerze informacyjnym (IIS), w którym zamierzasz zbierać dane IntelliTrace, musisz utworzyć lokalny profil użytkownika na komputerze Usług IIS dla konta niestandardowego, które jest używany. W celu utworzenia profilu można się zalogować jeden raz lokalnie na komputerze z programem IIS albo wykonać następujące polecenie w wierszu polecenia, podając poświadczenia niestandardowego konta:
+    > Jeśli zdecydujesz się użyć konta niestandardowego dla tożsamości, która jest używana dla puli aplikacji na internetowym serwerze informacji (IIS), gdzie zamierzasz zbierać dane IntelliTrace, należy utworzyć lokalny profil użytkownika na komputerze Usług IIS dla konta niestandardowego, które jest używane. W celu utworzenia profilu można się zalogować jeden raz lokalnie na komputerze z programem IIS albo wykonać następujące polecenie w wierszu polecenia, podając poświadczenia niestandardowego konta:
     >
     > **runas /user:domain\name /profile cmd.exe**
 
@@ -103,10 +113,16 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć ustawienia testu z p
     > [!NOTE]
     > Zbyt wysoki limit ilości rejestrowanych danych może sprawić, że podczas zapisywania danych razem z wynikami testu upłynie limit czasu.
 
-12. Jeśli korzystasz z Menedżera testów firmy Microsoft, wybierz pozycję **Zapisz**. Jeśli używasz programu Visual Studio, wybierz przycisk **OK**. Ustawienia narzędzia IntelliTrace są teraz skonfigurowane i zapisane w ustawieniach testu.
+12. Jeśli używasz Menedżera testów firmy Microsoft (przestarzałe w programie Visual Studio 2017), wybierz pozycję **Zapisz**. Jeśli używasz programu Visual Studio, wybierz przycisk **OK**. Ustawienia narzędzia IntelliTrace są teraz skonfigurowane i zapisane w ustawieniach testu.
 
+    ::: moniker range="vs-2017"
     > [!NOTE]
     > Aby zresetować konfigurację tej karty danych diagnostycznych, wybierz pozycję **Resetuj do domyślnej konfiguracji** programu Visual Studio lub **Resetuj domyślnie** dla menedżera testów firmy Microsoft.
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Aby zresetować konfigurację tej karty danych diagnostycznych, wybierz pozycję **Resetuj do domyślnej konfiguracji** w programie Visual Studio.
+    ::: moniker-end
 
 ## <a name="see-also"></a>Zobacz też
 

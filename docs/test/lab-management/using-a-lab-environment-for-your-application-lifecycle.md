@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75847286"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880341"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Użyj środowiska laboratoryjnego dla devops
 
@@ -53,6 +53,7 @@ Automatyzację testowania i wdrażania kompilacji i testowania można wykonywać
 
 Aby uzyskać więcej informacji, zobacz [Używanie zarządzania kompilacją lub wydaniem](use-build-or-rm-instead-of-lab-management.md).
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Korzystanie z funkcji zarządzania laboratorium programu Visual Studio w programie Microsoft Test Manager
 
 Podczas korzystania z programu Visual Studio Enterprise edition można tworzyć środowiska laboratoryjne i zarządzać nimi za pomocą funkcji zarządzania laboratorium programu Visual Studio w programie Microsoft Test Manager.
@@ -136,6 +137,7 @@ Aby uzyskać informacje na temat konfigurowania środowisk, zobacz:
 * [Standardowe środowiska laboratoryjne](https://msdn.microsoft.com/library/ee390842.aspx)
 * [Środowiska SCVMM (wirtualne)](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Tworzenie i używanie środowiska izolowanego sieci](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz też
 

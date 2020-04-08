@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233082"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880354"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *runsettings*
 
@@ -330,7 +330,7 @@ Te ustawienia są specyficzne dla karty testowej, <xref:Microsoft.VisualStudio.T
 |Konfigurowanie|Domyślne|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|false|W programie Visual Studio 2012 karta MSTest została zoptymalizowana, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true,** aby używać starszej karty testowej.<br /><br />Na przykład można użyć tego ustawienia, jeśli masz plik *app.config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
-|**IgnoreTestImpact**|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [Jakie testy powinny być uruchamiane od poprzedniej kompilacji.](https://msdn.microsoft.com/library/dd286589)|
+|**IgnoreTestImpact**|false|Funkcja wpływu testu nadaje priorytet testom, na które mają wpływ ostatnie zmiany, po uruchomieniu w programie MSTest lub w programie Microsoft Test Manager (przestarzałym w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [Jakie testy powinny być uruchamiane od poprzedniej kompilacji.](https://msdn.microsoft.com/library/dd286589)|
 |**SettingsFile**||W tym miejscu można określić plik ustawień testu, który będzie używany z kartą MSTest. Można również określić plik ustawień testu [z menu ustawień](#ide).<br /><br />Jeśli określisz tę wartość, należy również ustawić **ForcedlegacyMode** **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Po zakończeniu przebiegu testu MSTest jest zamykany. Każdy proces, który jest uruchamiany w ramach testu jest również zabity. Jeśli chcesz zachować przy życiu wykonawcę testu, ustaw wartość **true**. Na przykład można użyć tego ustawienia, aby zachować przeglądarkę działającą między kodowanych testów interfejsu użytkownika.|
 |**DeploymentEnabled**|true|Jeśli ustawisz wartość **false,** elementy wdrażania określone w metodzie testowej nie są kopiowane do katalogu wdrażania.|

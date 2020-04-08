@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f196c3850c9413a7c68fd1fe67af50273915f249
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5b198d8d3e9156b8a38325034bf19ce96b742d9e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589178"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880159"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Jak: Tworzenie karty danych diagnostycznych
 
@@ -23,7 +23,7 @@ Aby utworzyć *kartę danych diagnostycznych,* należy utworzyć bibliotekę kla
 
 Można utworzyć kartę danych diagnostycznych, która wpływa na komputer, na którym są uruchamiane testy, lub komputer, który jest częścią środowiska używanego do uruchamiania aplikacji w ramach testu. Na przykład zbieranie plików na komputerze testowym, gdzie są uruchamiane testy lub zbieranie plików na komputerze obsługującym rolę serwera sieci web dla aplikacji.
 
-Można nadać karcie danych diagnostycznych przyjazną nazwę, która jest wyświetlana podczas tworzenia ustawień testu przy użyciu programu Microsoft Test Manager lub przy użyciu programu Visual Studio. Ustawienia testowe umożliwiają zdefiniowanie roli komputera, która będzie uruchamiać określone karty danych diagnostycznych w danym środowisku po uruchomieniu testów. Można również skonfigurować karty danych diagnostycznych podczas tworzenia ustawień testu. Na przykład można utworzyć kartę danych diagnostycznych, która zbiera dzienniki niestandardowe z serwera sieci web. Podczas tworzenia ustawień testu, można wybrać, aby uruchomić tę kartę danych diagnostycznych na komputerze lub komputerach, które wykonują tę rolę serwera sieci web i można zmodyfikować konfigurację dla ustawień testu, aby zebrać tylko trzy ostatnie dzienniki, które zostały utworzone. Aby uzyskać więcej informacji o ustawieniach testu, zobacz [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+Można nadać karcie danych diagnostycznych przyjazną nazwę, która jest wyświetlana podczas tworzenia ustawień testu przy użyciu programu Visual Studio lub Programu Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). Ustawienia testowe umożliwiają zdefiniowanie roli komputera, która będzie uruchamiać określone karty danych diagnostycznych w danym środowisku po uruchomieniu testów. Można również skonfigurować karty danych diagnostycznych podczas tworzenia ustawień testu. Na przykład można utworzyć kartę danych diagnostycznych, która zbiera dzienniki niestandardowe z serwera sieci web. Podczas tworzenia ustawień testu, można wybrać, aby uruchomić tę kartę danych diagnostycznych na komputerze lub komputerach, które wykonują tę rolę serwera sieci web i można zmodyfikować konfigurację dla ustawień testu, aby zebrać tylko trzy ostatnie dzienniki, które zostały utworzone. Aby uzyskać więcej informacji o ustawieniach testu, zobacz [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 Zdarzenia są wywoływane po uruchomieniu testów, dzięki czemu karta danych diagnostycznych może wykonywać zadania w tym momencie w teście.
 
@@ -255,7 +255,7 @@ Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostyc
 
 14. Aby uzyskać więcej informacji na temat konfigurowania ustawień testu do używania środowiska po uruchomieniu testów, zobacz [Zbieranie danych diagnostycznych w testach ręcznych (plany testów platformy Azure).](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 
-15. Aby wybrać kartę danych diagnostycznych, należy najpierw wybrać istniejące ustawienia testu lub utworzyć nowe z programu Microsoft Test Manager lub Visual Studio. Karta jest wyświetlana na karcie **Dane i diagnostyka** ustawień testu z przyjazną nazwą przypisaną do klasy.
+15. Aby wybrać kartę danych diagnostycznych, należy najpierw wybrać istniejące ustawienia testu lub utworzyć nowe z programu Visual Studio lub Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). Karta jest wyświetlana na karcie **Dane i diagnostyka** ustawień testu z przyjazną nazwą przypisaną do klasy.
 
 16. Ustaw te ustawienia testu jako aktywne. Aby uzyskać więcej informacji o ustawieniach testu, zobacz [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 

@@ -8,21 +8,28 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dc00598595ee3e3d958562682900bde9aad2a353
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588970"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880185"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Jak: Konfigurowanie agenta testowego do uruchamiania testów, które wchodzą w interakcję z pulpitem
 
+::: moniker range="vs-2017"
 Jeśli chcesz uruchomić automatyczne testy, które współdziałają z pulpitem, należy skonfigurować agenta do uruchamiania jako proces zamiast usługi. Na przykład jeśli chcesz uruchomić kodowany test interfejsu użytkownika zdalnie przy użyciu kontrolera testów i agenta testowego lub chcesz uruchomić test i przechwycić nagranie wideo po uruchomieniu go, należy skonfigurować agenta do uruchomienia jako proces. Podczas przypisywania agentów do ról w ustawieniach testu przy użyciu programu Visual Studio lub przypisywania agentów do ról w danym środowisku przy użyciu menedżera testów firmy Microsoft należy zmienić konfigurację dla wszystkich agentów przypisanych do ról, które muszą wchodzić w interakcje z pulpitem.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Jeśli chcesz uruchomić automatyczne testy, które współdziałają z pulpitem, należy skonfigurować agenta do uruchamiania jako proces zamiast usługi. Na przykład jeśli chcesz uruchomić kodowany test interfejsu użytkownika zdalnie przy użyciu kontrolera testów i agenta testowego lub chcesz uruchomić test i przechwycić nagranie wideo po uruchomieniu go, należy skonfigurować agenta do uruchomienia jako proces. Podczas przypisywania agentów do ról w ustawieniach testu przy użyciu programu Visual Studio należy zmienić konfigurację dla wszystkich agentów przypisanych do ról, które muszą wchodzić w interakcje z pulpitem.
+::: moniker-end
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 > [!WARNING]
 > Jeśli używasz Programu Microsoft Test Manager do skonfigurowania środowiska laboratoryjnego, instaluje agenta testowego. W **Kreatorze tworzenia środowiska** można określić, że chcesz skonfigurować jedną z ról do uruchamiania kodowanych testów interfejsu użytkownika.
+:::moniker-end
 
 > [!IMPORTANT]
 > Komputer z uruchomionym agentem, na którym mają być uruchamiane kodowane testy interfejsu użytkownika, nie może zostać zablokowany ani mieć aktywnego wygaszacza ekranu.
@@ -73,7 +80,9 @@ Poniższa procedura służy do konfigurowania agentów, którzy są przypisani d
    > [!NOTE]
    > Istnieje ikona obszaru powiadomień, który działa na komputerze dla agenta testowego, który jest uruchomiony jako proces. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces za pomocą tego narzędzia. Aby uruchomić agenta testowego jako proces, jeśli nie jest uruchomiony, wybierz pozycję **Uruchom program Visual** > **Studio** > **Microsoft Visual Studio Test Agent**.
 
+   ::: moniker range="vs-2017"
    Jeśli kontroler testów dla tego agenta testowego jest zarejestrowany w programie Team Foundation Server, stan agenta testowego działającego jako proces interaktywny jest wyświetlany w widoku **Kontrolery** w **Centrum laboratorium** dla menedżera testów firmy Microsoft. Jest on wymieniony z poprzednim symbolem gwiazdki, aby oznaczyć, że jest uruchomiony jako proces interaktywny. Aby ponownie uruchomić tego agenta testowego, należy użyć narzędzia, które działa na komputerze dla agenta testowego, a nie **widoku Kontrolery.**
+   ::: moniker-end
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585642"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880367"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Użyj testu kodowany interfejsu użytkownika, aby przetestować kod
 
@@ -435,7 +435,12 @@ Można analizować kodowane testy interfejsu użytkownika przy użyciu dziennik�
 
 ## <a name="whats-next"></a>Co dalej?
 
+::: moniker range="vs-2017"
 **Dodatkowe opcje uruchamiania kodowanych testów interfejsu użytkownika:** Można uruchomić kodowane testy interfejsu użytkownika bezpośrednio z programu Visual Studio, zgodnie z opisem wcześniej w tym temacie. Ponadto można uruchomić zautomatyzowane testy interfejsu użytkownika z menedżera testów firmy Microsoft lub przy użyciu potoków platformy Azure. Gdy testy interfejsu użytkownika kodowane są zautomatyzowane, muszą one współdziałać z pulpitu po uruchomieniu ich, w przeciwieństwie do innych testów automatycznych.
+::: moniker-end
+::: moniker range=">=vs-2019"
+**Dodatkowe opcje uruchamiania kodowanych testów interfejsu użytkownika:** Można uruchomić kodowane testy interfejsu użytkownika bezpośrednio z programu Visual Studio, zgodnie z opisem wcześniej w tym temacie. Ponadto można uruchomić zautomatyzowane testy interfejsu użytkownika przy użyciu usługi Azure Potoki. Gdy testy interfejsu użytkownika kodowane są zautomatyzowane, muszą one współdziałać z pulpitu po uruchomieniu ich, w przeciwieństwie do innych testów automatycznych.
+::: moniker-end
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 
@@ -449,7 +454,7 @@ Można analizować kodowane testy interfejsu użytkownika przy użyciu dziennik�
 
 - [Rozszerzanie kodowanych testów interfejsu użytkownika i nagrań akcji](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [Uruchamianie testów ręcznych za pomocą programu Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Aby uzyskać więcej informacji na temat testów automatycznych, zobacz [Narzędzia testowe w programie Visual Studio](../test/improve-code-quality.md).
+Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać więcej informacji na temat testów automatycznych, zobacz [Narzędzia testowe w programie Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Zobacz też
 
