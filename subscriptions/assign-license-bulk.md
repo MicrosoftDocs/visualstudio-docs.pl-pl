@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się, jak administratorzy mogą przypisywać licencje wielu subskrybentom za pomocą funkcji dodawania zbiorczego lub grup usługi Microsoft Azure Active Directory
-ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
+ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274066"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80994449"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administracyjny subskrypcji umożliwia dodawanie użytkowników jeden na raz lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
@@ -72,8 +72,6 @@ Korzystanie z tej funkcji ułatwia utrzymanie się na szczycie przypisań subskr
 
 
 > [!IMPORTANT]
->
-> Korzystanie z grup usługi Azure AD jest włączone w fazach.  Możesz nie od razu zobaczyć funkcji włączonej dla twoich umów.
 >
 > Następujące ograniczenia dotyczą korzystania z grup usługi Azure AD do dodawania subskrybentów:
 > - Grupy muszą zawierać co najmniej jednego członka.  Puste grupy nie są obsługiwane.
