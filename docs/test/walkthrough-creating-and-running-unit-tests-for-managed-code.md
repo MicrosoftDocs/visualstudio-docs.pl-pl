@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094674"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223674"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
 W tym artykule można wykonać kroki podczas tworzenia, uruchamiania i dostosowywania serii testów jednostkowych przy użyciu struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego i **Eksploratora testów**programu Visual Studio. Należy rozpocząć od projektu Języka C#, który jest w trakcie opracowywania, tworzenie testów, które wykonują jego kod, uruchom testy i zbadać wyniki. Następnie należy zmienić kod projektu i ponownie uruchomić testy.
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Przetestuj ponownie, przepisaj i ponownie analyze
 
-Załóżmy, że istnieje błąd w `Debit` metodzie w ramach <xref:System.ArgumentOutOfRangeException> testu i metoda nawet nie zgłasza nie ważne dane wyjściowe poprawny komunikat z wyjątkiem. Obecnie metoda testowa nie obsługuje tego przypadku. Jeśli `debitAmount` wartość jest prawidłowa (czyli mniej niż saldo i większa niż zero), nie zostanie przechwycony żaden wyjątek, więc assert nigdy nie zostanie uruchamiany. Jednak metoda testowa przechodzi. To nie jest dobre, ponieważ chcesz, aby metoda testowa nie powiodła się, jeśli nie zostanie zgłoszony wyjątek.
+Obecnie metoda testowa nie obsługuje wszystkich przypadków, które powinny. Jeśli metoda w fazie `Debit` badania, metoda, <xref:System.ArgumentOutOfRangeException> nie `debitAmount` udało się rzucić, gdy był większy niż waga (lub mniej niż zero), metoda testowa przejdzie. To nie jest dobre, ponieważ chcesz, aby metoda testowa nie powiodła się, jeśli nie zostanie zgłoszony wyjątek.
 
 Jest to błąd w metodzie testowej. Aby rozwiązać ten problem, dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> potwierdzenia na końcu metody testowej do obsługi przypadku, w którym nie jest zgłaszany wyjątek.
 

@@ -17,16 +17,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303009"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223661"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programów Visual Studio i usług Platformy Azure za zaporą lub serwerem proxy
 
-Jeśli ty lub Twoja organizacja używa środków bezpieczeństwa, takich jak zapora lub serwer proxy, istnieją adresy URL domen, które można dodać do "listy dozwolonych" oraz porty i protokoły, które można otworzyć, aby uzyskać najlepsze wrażenia podczas instalacji i używania Visual Studio i usługi platformy Azure.
+Jeśli ty lub Twoja organizacja używa środków bezpieczeństwa, takich jak zapora lub serwer proxy, istnieją adresy URL domen, które można dodać do "listy dozwolonych" oraz porty i protokoły, które można otworzyć, aby uzyskać najlepsze środowisko podczas instalowania i używania programu Visual Studio i usług Platformy Azure.
 
 * **[Zainstaluj program Visual Studio:](#install-visual-studio)** Te tabele zawierają adresy URL domeny, które należy dodać do listy dozwolonych, dzięki czemu masz dostęp do wszystkich składników i obciążeń, które chcesz.
 
@@ -35,7 +35,7 @@ Jeśli ty lub Twoja organizacja używa środków bezpieczeństwa, takich jak zap
 > [!NOTE]
 > Ten artykuł został napisany dla programu Visual Studio w systemie Windows, ale niektóre informacje dotyczą również [instalowania programu Visual Studio dla komputerów Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) za zaporą lub serwerem proxy.
 
-## <a name="install-visual-studio"></a>Instalacja programu Visual Studio
+## <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
 ### <a name="urls-to-add-to-an-allow-list"></a>Adresy URL do dodania do listy dozwolonych
 
@@ -125,7 +125,7 @@ Aby upewnić się, że masz dostęp do wszystkiego, co chcesz, gdy używasz prog
 | Cloud Services | 1. PROW<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. usługa &#60;użytkownika w chmurze&#62;.cloudapp.net <br> &#60;region maszyny wirtualnej&#62;.&#60;użytkownika&#62;.azure.com | 1. rdp/3389 <br><br> 2. https/443 <br><br> 3. https/443 <br><br> 4. https/443 <br><br> 5. https/443 <br><br>6. tcp <br>a) 30398 <br>b) 30400 <br>c) 31398 <br>d) 31400 <br>e) 32398 <br>f) 32400 | 1. Maszyna wirtualna usług pulpitu zdalnego do usługi w chmurze <br><br> 2. Składnik konta magazynu konfiguracji diagnostyki prywatnej <br><br> 3. Portal platformy Azure <br><br> 4. Eksplorator serwerów — usługa Azure Storage &#42; jest kontem magazynu o nazwie klient  <br><br> 5. Linki do otwierania portalu &#47; Pobierz certyfikat subskrypcji &#47; plik ustawień publikowania <br><br>6. a) Złącze portu lokalnego do zdalnego debugowania usługi w chmurze i maszyny wirtualnej<br> 6. b) Złącze publicznego portu do zdalnego debugowania usługi w chmurze i maszyny wirtualnej <br> 6. c) Port lokalny przesyłania dalej do zdalnego debugowania usługi w chmurze i maszyny wirtualnej <br> 6. d) Port publiczny przesyłania dalej do zdalnego debugowania usługi w chmurze i maszyny wirtualnej  <br> 6. e) Port lokalny przesyłający pliki do zdalnego debugowania usługi w chmurze i maszyny wirtualnej <br> 6. f) Port publiczny przesyłający pliki do zdalnego debugowania usługi w chmurze i maszyny wirtualnej |
 | Service Fabric | 1. <br>Ocs. Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https/443 | 1. Dokumentacja <br><br> 2. Tworzenie funkcji klastra <br><br>3. &#42; jest nazwa magazynu kluczy platformy Azure (przykład:- test11220180112110108.vault.azure.net  <br><br>  4. &#42; jest dynamiczny (przykład: vsspsextprodch1su1.vsspsext.visualstudio.com) |
 | Snapshot <br>Debuger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;.azurewebsites.net <br> 4. &#42;.scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. Zdalna usługa /adres IP serwerów/ FQDN | 1. https/443 <br>2. https/443  <br>3. http/80 <br>4. https/443 <br>5. https/443 <br>6. Zgoda/<br> 4022 (zależna od wersji programu Visual Studio) | 1. Zapytanie .json plik dla rozmiaru jednostki SKU usługi aplikacji <br>2. Różne wywołania usługi Azure RM <br>3. Rozgrzewka witryny za pośrednictwem  <br>4. Docelowy punkt końcowy Usługi aplikacji Klienta Kudu <br>5. Wersja rozszerzenia witryny kwerendy opublikowana w nuget.org <br>6. [Zdalne debugowanie](../debugger/remote-debugging.md) |
-| Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https/443 | Służy do wyświetlania, przesyłania, uruchamiania i zarządzania zadaniami ASA <br><br> Służy do przeglądania klastrów HDI oraz przesyłania, diagnozowania i debugowania zadań HDI |
+| Usługa Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https/443 | Służy do wyświetlania, przesyłania, uruchamiania i zarządzania zadaniami ASA <br><br> Służy do przeglądania klastrów HDI oraz przesyłania, diagnozowania i debugowania zadań HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https/443 | Służy do kompilowania, przesyłania, wyświetlania, diagnozowania i debugowania zadań; używane do przeglądania plików ADLS; służy do przesyłania i pobierania plików |
 | Usługi pakowania | [konto].visualstudio.com <br/> [konto]. \*visualstudio.com .visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | .npmjs.org, \* \*.nuget.org i \*.nodejs.org są wymagane tylko dla niektórych scenariuszy zadań kompilacji (na przykład: Instalator narzędzi NuGet, Instalator narzędzi węzłów) lub jeśli zamierzasz używać publicznych nadrzędnych danych z źródłami danych. Pozostałe trzy domeny są wymagane dla podstawowej funkcjonalności usługi Pakowanie. |
 | Usługa Azure DevOps Services | \*vsassets.io .vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Używane do łączenia się z usługami DevOps platformy Azure |
@@ -147,7 +147,7 @@ Czasami podczas instalowania lub używania programu Visual Studio za zaporą lub
 
 ## <a name="get-support"></a>Uzyskiwanie pomocy technicznej
 
-Oferujemy opcję pomocy technicznej [**na czacie na żywo**](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim) w przypadku problemów związanych z instalacją.
+Oferujemy opcję obsługi [**czatu instalacyjnego**](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim) w przypadku problemów związanych z instalacją.
 
 Oto kilka innych opcji pomocy technicznej:
 
@@ -160,5 +160,5 @@ Oto kilka innych opcji pomocy technicznej:
 * [Wymagania dotyczące łączności dla rozszerzenia Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Tworzenie instalacji sieciowej programu Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Rozwiązywanie problemów z błędami związanymi z siecią w programie Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Przewodnik dla administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Instalowanie za zaporą lub serwerem proxy (Visual Studio dla komputerów Mac)](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

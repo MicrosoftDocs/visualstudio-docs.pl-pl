@@ -1,6 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 03/07/2017
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75851443"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223709"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Jak skonfigurować i używać live unit testing
 
@@ -130,12 +130,13 @@ Z testu nie powiodło się, można łatwo debugować kod produktu, wprowadzić z
 
 Na przykład błąd testu pokazany w poprzednim obrazie został spowodowany przez niepoprawne założenie `true` w metodzie <xref:System.Char.IsLower%2A?displayProperty=fullName> testowej, że znaki niealfabetyczne zwracają po przekazaniu do metody. Po skorygowaniu metody testowej wszystkie testy powinny przejść. Nie trzeba wstrzymywać ani zatrzymywać testowania jednostek na żywo.
 
+::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>Eksplorator testów
 
 **Eksplorator testów** udostępnia interfejs, który umożliwia uruchamianie i debugowanie testów oraz analizowanie wyników testów. Live Unit Testing integruje się z **Eksploratorem testów**. Gdy testowanie jednostkowe na żywo nie jest włączone lub jest zatrzymane, **Eksplorator testów** wyświetla stan testów jednostkowych podczas ostatniego uruchomienia testu. Zmiany kodu źródłowego wymagają ponownego uruchomienia testów. Natomiast gdy aktywne testowanie jednostkowe jest włączone, stan testów jednostkowych w **Eksploratorze testów** jest aktualizowany natychmiast. Nie trzeba jawnie uruchamiać testy jednostkowe.
 
 > [!TIP]
-> Otwórz **Eksploratora testów,** wybierając **pozycję Test** > **Windows** > **Test Explorer** z menu programu Visual Studio najwyższego poziomu.
+> Otwórz **testowanie jednostek na żywo,** wybierając **pozycję Test** > **Windows** > **Test Explorer** z menu programu Visual Studio najwyższego poziomu.
 
 W oknie **Eksploratora testów** można zauważyć, że niektóre testy są wyblakłe. Na przykład po włączeniu live unit testing po otwarciu wcześniej zapisanego projektu, okno **Eksploratora testów** wyblakło wszystkie, ale test nie powiodło się, jak pokazano na poniższej ilustracji. W takim przypadku live unit testing ma ponownie uruchomić test nie powiodło się, ale nie ma ponownie pomyślne testy. Jest tak, ponieważ utrwalone dane utrwalonych testów jednostkowych na żywo wskazują, że nie było żadnych zmian, ponieważ testy zostały pomyślnie uruchomione.
 
@@ -148,6 +149,28 @@ Istnieją pewne różnice między live unit testing automatycznie uruchomiony i 
 - Uruchamianie lub debugowanie testów z okna Eksploratora testów uruchamia regularne pliki binarne, podczas gdy testowanie jednostek na żywo uruchamia instrumentowane pliki binarne.
 - Testowanie jednostek na żywo nie tworzy nowej domeny aplikacji do uruchamiania testów, ale uruchamia testy z domeny domyślnej. Testy uruchamiane z okna **Eksploratora testów** tworzą nową domenę aplikacji.
 - Live Unit Testing uruchamia testy w każdym zestawie testowym sekwencyjnie. W oknie **Eksploratora testów** można uruchomić wiele testów równolegle.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="live-unit-testing-window"></a>Okno testowania jednostek na żywo
+
+**Live Unit Testing**, podobnie jak **Eksplorator testów,** udostępnia interfejs, który umożliwia uruchamianie i debugowanie testów i analizowanie wyników testów. Gdy włączone jest testowanie jednostek na żywo, stan testów jednostkowych w **Eksploratorze testów** jest aktualizowany natychmiast. Nie trzeba jawnie uruchamiać testy jednostkowe. Gdy testowanie jednostkowe na żywo nie jest włączone lub jest zatrzymane, **live unit testing** wyświetla stan testów jednostkowych podczas ostatniego uruchomienia testu. Po ponownym uruchomieniu live unit testing, zmiana kodu źródłowego jest wymagana do ponownego uruchomienia testów.
+
+> [!TIP]
+> Rozpocznij testowanie jednostek na żywo, wybierając **test** > **testowania** > jednostek na żywo**start** z menu programu Visual Studio najwyższego poziomu. Okno **Testowanie jednostek na żywo** można również otworzyć przy użyciu okna **Wyświetl** > inne**testy jednostek usługi****Windows** > Live .
+
+W oknie **testowania jednostek na żywo** można zauważyć, że niektóre testy są wyblakłe. Na przykład po zatrzymaniu i ponownym uruchomieniu live unit testing, **live unit testing** okno zanika wszystkie testy, jak pokazano na poniższej ilustracji. Wyblakłe wyniki testu wskazują, że test nie był częścią najnowszego uruchomienia testu jednostkowego na żywo. Testy są uruchamiane tylko po wykryciu zmiany w teście lub zależnościach testu. Jeśli nie ma żadnych zmian, unika niepotrzebnie uruchamiania testu. W tym przypadku wyszarzony wynik testu jest nadal "aktualny", choć nie był częścią najnowszego przebiegu.
+
+![Wyblakłe testy w Eksploratorze testów](media/vs-2019/lut-test-explorer.png)
+
+Można ponownie uruchomić wszystkie testy, które pojawiają się wyblakłe przez wprowadzenie zmiany kodu.
+
+Istnieją pewne różnice między live unit testing automatycznie uruchomiony i aktualizowanie wyników testów i jawnie uruchomiony testów z **Eksploratora testów.** Różnice te obejmują:
+
+- Uruchamianie lub debugowanie testów z okna Eksploratora testów uruchamia regularne pliki binarne, podczas gdy testowanie jednostek na żywo uruchamia instrumentowane pliki binarne.
+- Testowanie jednostek na żywo nie tworzy nowej domeny aplikacji do uruchamiania testów, ale uruchamia testy z domeny domyślnej. Testy uruchamiane z okna **Eksploratora testów** tworzą nową domenę aplikacji.
+- Live Unit Testing uruchamia testy w każdym zestawie testowym sekwencyjnie. W oknie **Eksploratora testów** można uruchomić wiele testów równolegle.
+::: moniker-end
 
 ## <a name="large-solutions"></a>Duże rozwiązania
 
