@@ -75,7 +75,6 @@
 ### [Superadministratorzy i administratorzy](admin-roles.md)
 ### [Ustawianie preferencji umowy](admin-prefs.md)
 ### [Omówienie](using-admin-portal.md)
-### [Samouczek wideo: Korzystanie z portalu administracyjnego](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Przypisywanie subskrypcji
 #### [Dodawanie pojedynczych użytkowników](assign-license.md)
 #### [Dodawanie wielu użytkowników](assign-license-bulk.md)
