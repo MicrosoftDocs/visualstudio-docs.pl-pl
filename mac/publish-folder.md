@@ -8,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715907"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224501"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie w folderze przy użyciu programu Visual Studio dla komputerów Mac
 
@@ -52,7 +52,7 @@ Za pomocą programu Visual Studio dla komputerów Mac można publikować projekt
 
 ## <a name="customize-publish-options"></a>Dostosowywanie opcji publikowania
 
-Aby zmienić nazwę profilu publikowania (który jest wyświetlany w menu kontekstowym publikowania), zmień nazwę pliku profilu publikowania. Upewnij się, że nie należy`.puxbml`zmieniać rozszerzenia pliku ( ).
+Aby zmienić nazwę profilu publikowania (który jest wyświetlany w menu kontekstowym publikowania), zmień nazwę pliku profilu publikowania. Upewnij się, że nie należy`.pubxml`zmieniać rozszerzenia pliku ( ).
 
 Aby zmienić ścieżkę publikowania folderu, `publishUrl` otwórz profil publikowania i edytuj wartość.
 

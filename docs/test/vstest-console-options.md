@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bfca799111c83f29924c997218c42f09bff5568a
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75919022"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224462"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -46,7 +46,7 @@ W poniższej tabeli wymieniono wszystkie opcje *programu VSTest.Console.exe* i i
 |**/Framework: [*wersja ramowa*]**|Docelowa wersja .NET, która ma być używana do wykonywania testów.<br />Przykładowe `Framework35`wartości `Framework40` `Framework45`to `FrameworkUap10` `.NETCoreApp,Version=v1.1`, , , , .<br />Jeśli struktura docelowa jest określona jako **Framework35**, testy są uruchamiane w programie CLR 4.0 "tryb compatibly".<br />Przykład: `/Framework:framework40`|
 |**/TestCaseFilter:[*wyrażenie*]**|Uruchom testy, które pasują do danego wyrażenia.<br /><\> Wyrażenie ma format <właściwość\>=<wartość\>[\| wyrażenie<\>].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Opcji wiersza polecenia **/TestCaseFilter** nie można używać z opcją wiersza polecenia **/Tests.** <br />Aby uzyskać informacje dotyczące tworzenia i używania wyrażeń, zobacz [Filtr Skrzynia testowa](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Wyświetla informacje o użytkowaniu.|
-|**/Rejestrator:[*uri/friendlyname*]**|Określ rejestrator dla wyników testów.<br />Przykład: Aby rejestrować wyniki w pliku wyników testów programu Visual Studio (TRX), należy użyć<br />**/Rejestrator:trx**<br />**[; LogFileName=\<Domyślnie unikatowa nazwa pliku>]**<br />Przykład: Aby opublikować wyniki testów na serwerze Team Foundation Server, użyj TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Kolekcja = adres URL\>projektu<;**<br />**BuildName=<nazwa kompilacji;\>**<br />**TeamProject =<nazwa\>projektu ;**<br />**[; Platforma\<= domyślnie "Dowolny procesor">]**<br />**[; Smak\<= Domyślnie "Debug">]**<br />**[; RunTitle =<tytuł\>]**<br />Uwaga: Rejestrator TfsPublisher jest przestarzały w programie Visual Studio 2017 i nie jest obsługiwany w nowszych wersjach programu Visual Studio. W tych scenariuszach należy użyć rejestratora niestandardowego zamiast tego. Ten rejestrator przełącza rejestratora do trybu starszego.|
+|**/Rejestrator:[*uri/friendlyname*]**|Określ rejestrator dla wyników testów.<br />Przykład: Aby rejestrować wyniki w pliku wyników testów programu Visual Studio (TRX), należy użyć<br />**/Rejestrator:trx**<br />**[; LogFileName=\<Domyślnie unikatowa nazwa pliku>]**|
 |**/ListTests:[*nazwa pliku*]**|Wyświetla listę wykrytych testów z danego kontenera testowego.|
 |**/ListaOdkryjce**|Wyświetla listę zainstalowanych odnajdowanych testów.|
 |**/ListWykonacze**|Wyświetla listę zainstalowanych wykonawców testów.|

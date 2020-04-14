@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a47af0e87907608ec9f71de4e605772eb1caed8e
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302834"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224566"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak tworzyć środowiska języka Python i zarządzać nimi w programie Visual Studio
 
-*Środowisko* Języka Python to kontekst, w którym uruchamiasz kod języka Python i obejmuje środowiska globalne, wirtualne i conda. Środowisko składa się z interpretera, biblioteki (zazwyczaj biblioteki standardowej języka Python) i zestawu zainstalowanych pakietów. Te składniki razem określają, które konstrukcje języka i składnia są prawidłowe, jakie funkcje systemu operacyjnego można uzyskać dostęp i które pakiety można użyć.
+**Środowisko Języka Python** to kontekst, w którym uruchamiasz kod języka Python i obejmuje środowiska globalne, wirtualne i conda. Środowisko składa się z interpretera, biblioteki (zazwyczaj biblioteki standardowej języka Python) i zestawu zainstalowanych pakietów. Te składniki razem określają, które konstrukcje języka i składnia są prawidłowe, jakie funkcje systemu operacyjnego można uzyskać dostęp i które pakiety można użyć.
 
 W programie Visual Studio w systemie Windows, należy użyć okna **środowiska języka Python,** zgodnie z opisem w tym artykule, do zarządzania środowiskami i wybrać jeden jako domyślny dla nowych projektów. Inne aspekty środowiska znajdują się w następujących artykułach:
 
@@ -159,7 +159,7 @@ Program Visual Studio udostępnia również polecenie generowania pliku *require
 
     | Pole | Opis |
     | --- | --- |
-    | Project | Projekt, w którym można utworzyć środowisko (jeśli masz wiele projektów w tym samym rozwiązaniu programu Visual Studio). |
+    | Projekt | Projekt, w którym można utworzyć środowisko (jeśli masz wiele projektów w tym samym rozwiązaniu programu Visual Studio). |
     | Nazwa | Nazwa środowiska conda. |
     | Dodawanie pakietów z | Wybierz **plik środowiska,** jeśli masz plik *environment.yml* opisujący zależności lub wybierz **jedną lub więcej nazw pakietów Anaconda** i wyświetl co najmniej jeden pakiet Języka Python lub wersję języka Python w polu poniżej. Lista pakietów nakazuje conda utworzyć środowisko Języka Python. Aby zainstalować najnowszą wersję `python`Pythona, użyj ; , aby zainstalować określoną wersję, użyj `python=,major>.<minor>` jak w `python=3.7`. Można również użyć przycisku pakietu, aby wybrać wersje Pythona i typowe pakiety z serii menu. |
     | Ustaw jako bieżące środowisko | Aktywuje nowe środowisko w wybranym projekcie po utworzeniu środowiska. |

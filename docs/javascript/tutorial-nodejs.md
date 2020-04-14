@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235083"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224527"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i Express w programie Visual Studio
 
@@ -34,7 +34,7 @@ Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do stro
 
 ::: moniker-end
 
-Niniejszy samouczek zawiera informacje na temat wykonywania następujących czynności:
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]
 > * Tworzenie projektu z użyciem narzędzia Node.js
 > * Dodaj kod

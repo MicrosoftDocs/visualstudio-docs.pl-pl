@@ -4,21 +4,21 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 03/18/2020
+ms.date: 04/10/2020
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować indywidualną korzyść kredytową usługi Azure DevTest zawartą w subskrypcji programu Visual Studio.
-ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b556b90cc0c4f0904cbd6e08a34ec782f044dfae
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232034"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224488"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Korzystanie z platformy Microsoft Azure w ramach subskrypcji programu Visual Studio
 Jako subskrybent programu Visual Studio możesz bezpłatnie korzystać z platformy Microsoft Azure.  Dzięki [comiesięcznemu indywidualnej sprzece azure devtest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)platforma Azure to twój osobisty piaskownica do tworzenia/testowania.  Można aprowizować maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytów różnią się w zależności od poziomu subskrypcji.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
-1. Zaloguj się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)do .
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź kafelek platformy Azure w sekcji Narzędzia na stronie Korzyści i kliknij pozycję **Aktywuj** łącze u dołu kafelka korzyści.
    > [!div class="mx-imgBorder"]
@@ -42,6 +42,38 @@ Jako subskrybent programu Visual Studio możesz bezpłatnie korzystać z platfor
 
 0. Dokładnij [witryny Azure portal,](https://portal.azure.com) aby mieć łatwy dostęp w przyszłości.
 
+## <a name="using-azure-without-a-visual-studio-subscription"></a>Korzystanie z platformy Azure bez subskrypcji programu Visual Studio
+Po zakończeniu subskrypcji programu Visual Studio wszystkie korzyści z subskrypcji, w tym miesięczne środki indywidualne deweloperskie/testowe platformy Azure, nie są już dostępne. Aby kontynuować korzystanie z platformy Azure z miesięcznym środkiem, musisz odnowić subskrypcję, kupić nową subskrypcję lub przenieść korzyści platformy Azure do aktywnej subskrypcji, która obejmuje indywidualny kredyt deweloperów/testów platformy Azure.  Możesz również kontynuować korzystanie z platformy Azure bez miesięcznych kredytów, konwertując bieżącą subskrypcję platformy Azure na płatność zgodnie z rzeczywistym użyciem.
+
+### <a name="continue-using-azure-with-a-monthly-credit"></a>Kontynuuj korzystanie z platformy Azure z miesięcznym kredytem
+> [!IMPORTANT]
+> Musisz przenieść swoje zasoby do innej subskrypcji platformy Azure, zanim bieżąca subskrypcja platformy Azure zostanie wyłączona lub utracisz dostęp do danych.  
+
+Istnieje kilka sposobów, aby kontynuować korzystanie z miesięcznych środków na platformie Azure.  Aby zaoszczędzić zasoby platformy Azure, musisz [przenieść zasoby](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) do innej subskrypcji platformy Azure, niezależnie od działania, które wybierzesz poniżej. 
+
+- **Jeśli subskrypcja programu Visual Studio zostanie kupiona bezpośrednio,** kup nową subskrypcję lub odnowi subskrypcję za pośrednictwem [sklepu Microsoft Store.](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=)  
+- **Jeśli ktoś w organizacji kupuje subskrypcje dla Twojej organizacji,** [skontaktuj się z administratorem subskrypcji programu Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) i poproś o subskrypcję, która zapewni miesięczne środki, których potrzebujesz.  
+- **Jeśli masz inną aktywną subskrypcję programu Visual Studio** na tym samym poziomie subskrypcji, który jest skojarzony z innym kontem Microsoft, możesz przenieść korzyści platformy Azure do innej aktywnej subskrypcji programu Visual Studio, [dodając alternatywne konto](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) w portalu [subskrypcji](https://my.visualstudio.com/subscriptions)programu Visual Studio.  
+
+Można określić poziom subskrypcji wymagane przez poziom kredytów platformy Azure próbujesz zastąpić.  
+
+| Poziom subskrypcji programu Visual Studio | Miesięczne środki na platformę Azure |
+|----------------------------------|----------------------|
+| Visual Studio Enterprise         | zł.                 |
+| Visual Studio Professional       | zł.                  |
+| Visual Studio Test Professional  | zł.                  |
+| Platformy MSDN*                  | 100 USD                 |
+
+*Subskrybenci platform MSDN muszą skontaktować się z administratorem, aby poprosić o przypisanie do nich nowej subskrypcji. 
+
+### <a name="continue-using-azure-without-a-monthly-credit"></a>Kontynuuj korzystanie z platformy Azure bez miesięcznego kredytu
+
+Jeśli nie potrzebujesz już subskrypcji lub środków programu Visual Studio, ale chcesz nadal korzystać z zasobów platformy Azure, [przenieś swoje zasoby](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) do innej subskrypcji platformy Azure lub przekonwertuj subskrypcję platformy Azure na ceny płatności zgodnie z rzeczywistym użyciem, [usuwając limit wydatków.](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal) 
+
+Jeśli nie podejmiesz jednej z tych akcji, twoja subskrypcja platformy Azure zostanie wyłączona i usunięta 30 dni po otrzymaniu powiadomienia e-mail.  
+
+### <a name="have-a-question"></a>Masz pytanie?
+Jeśli masz pytania dotyczące przenoszenia zasobów, usuwania limitów wydatków lub innych tematów platformy Azure, możesz [przesłać żądanie pomocy technicznej platformy Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) w witrynie Azure portal. 
 
 ## <a name="eligibility"></a>Kwalifikowalności
 |                 Poziom subskrypcji / Program                 |           Korzyść           |                         Odnawialnej?                          |
@@ -82,29 +114,6 @@ Szczegółowe informacje można znaleźć w dokumentacji [pomocy technicznej.](v
 
 ### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Pyt.: Jak jest właścicielem własności intelektualnej, które tworzę przy użyciu mojego indywidualnego kredytu Azure DevTest?
 O: Własność intelektualna wytworzyona przez pracownika utworzonego na podstawie zasobów dostarczonych przez tę spółkę stanowi w ten sposób własność intelektualną spółki dostarczającej zasób. Tak, jeśli otrzymałeś subskrypcję programu Visual Studio za pośrednictwem pracodawcy, zastosowanie będą miały zasady dotyczące własności intelektualnej. 
-
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Pyt.: Otrzymałem komunikat informujący, że mój dostęp do platformy Azure wkrótce się zakończy.  Co mogę zrobić, aby kontynuować korzystanie z platformy Azure?
-Odp.: Otrzymujesz tę wiadomość e-mail, ponieważ używasz korzyści platformy Azure skojarzonych z subskrypcją programu Visual Studio, a ta subskrypcja wygasła lub została usunięta.  Aby kontynuować korzystanie z platformy Azure, masz kilka opcji:
-
-**Zalecane działanie:**
-
-Aby kontynuować korzystanie z indywidualnego kredytu i rabatów usługi Visual Studio Azure DevTest, należy wykonać jeden z następujących kroków:
-
-Jeśli ktoś w twoim zespole lub organizacji kupuje subskrypcje w Twoim imieniu, skontaktuj się z administratorem programu Visual Studio w organizacji i poproś o subskrypcję programu Visual Studio, która uprawnia cię do indywidualnej kwoty kredytu usługi Azure DevTest, której potrzebujesz.   Poproś administratora o przypisanie nowej subskrypcji do tego samego identyfikatora użytkownika, do którego została przypisana poprzednia subskrypcja, aby nie musisz się martwić o przeniesienie subskrypcji platformy Azure.
-
-Jeśli możesz kupić subskrypcję bezpośrednio, skorzystaj ze zniżki, odnawiając bieżącą subskrypcję za pośrednictwem [sklepu Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
-
-Porównaj wszystkie [subskrypcje i ich korzyści](https://visualstudio.microsoft.com/vs/pricing/).
-
-Jeśli masz inną aktywną subskrypcję programu Visual Studio na **tym samym** poziomie subskrypcji w ramach konta Microsoft, możesz połączyć ją z tą korzyścią platformy Azure, dodając [konto alternatywne](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions) w portalu subskrypcji programu Visual Studio. Jeśli to nie zadziała, możesz również spróbować [przenieść korzyści platformy Azure](/azure/billing/billing-subscription-transfer/) do aktywnej subskrypcji programu Visual Studio.
-
-Jeśli masz inną aktywną subskrypcję programu Visual Studio na **innym** poziomie subskrypcji i w ramach konta Microsoft, skontaktuj się z [pomocą techniczną platformy Azure,](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) aby uzyskać pomoc.
-
-Jeśli twoja subskrypcja ma limit wydatków i nie podejmiesz żadnych działań przed jej wygaśnięciem, subskrypcje platformy Azure, które subskrypcja platformy Azure zostanie wyłączona. Aby przekształcić go w ofertę płatności zgodnie z rzeczywistym użyciem i nadal z niej korzystać, dodaj instrument płatniczy i [usuń limit wydatków.](/azure/billing/billing-spending-limit/)
-
-Jeśli wolisz nie kontynuować tej subskrypcji platformy Visual Studio Azure, możesz przenieść zasoby, takie jak maszyny wirtualne i bazy danych, do innej subskrypcji platformy Azure i [anulować](https://azure.microsoft.com/support/cancel-account/) tę subskrypcję w dowolnym momencie.
-
-Jeśli uważasz, że otrzymałeś tę wiadomość e-mail omyłkowo, skontaktuj się z [działem obsługi klienta platformy Azure.](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 
 ## <a name="support-resources"></a>Zasoby pomocnicze
 - Potrzebujesz pomocy w zakresie platformy Azure?  Zapoznaj się z tymi zasobami:

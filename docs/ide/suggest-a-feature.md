@@ -3,17 +3,17 @@ title: proponowanie funkcji
 description: W tym artykule opisano, jakie sugestie znajdują się w społeczności deweloperów, jak przedstawić sugestię i jak sugestie są używane przez firmę Microsoft na mapie drogowej programu Visual Studio.
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853519"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276491"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Zaproponuj funkcję programu Visual Studio
 

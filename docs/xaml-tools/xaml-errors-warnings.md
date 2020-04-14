@@ -4,38 +4,38 @@ ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
-ms.author: karann
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d8821da877536195d44a02102d3650e1f5cee01
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f8a36a91f40fd4857e50d5262c1598ee096697e7
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450983"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276467"
 ---
 # <a name="xaml-errors-and-warnings"></a>Błędy i ostrzeżenia XAML
 
-Podczas tworzenia języka XAML program Visual Studio analizuje kod w trakcie wpisywania. W wierszu kodu pojawia się zygzak, gdy zostanie wykryty błąd. Umieszczenie kursora na zygzaku daje więcej informacji o błędzie lub ostrzeżeniu. W przypadku niektórych błędów i ostrzeżeń zostanie wyświetlona szybka akcja żarówki, a przy użyciu **klawisza Ctrl**+ **.** skrót klawiaturowy wyświetla opcje rozwiązania problemu.
+Podczas tworzenia xaml visual studio analizuje kod podczas pisania. Squiggle pojawia się w wierszu kodu po wykryciu błędu. Najechanie kursorem na falidłanie daje więcej informacji o błędzie lub ostrzeżeniu. W przypadku niektórych błędów i ostrzeżeń wyświetlana jest żarówka szybka akcja i używająca **klawisza Ctrl**+**.** skrót klawiaturowy wyświetla opcje rozwiązania problemu.
 
 ## <a name="error-types"></a>Typy błędów
 
-W tle wiele narzędzi analizuje równolegle kod XAML. Błędy XAML są podzielone na jeden z trzech następujących typów, w oparciu o narzędzie, które wykryło błąd:
+Za kulisami wiele narzędzi analizuje xaml równolegle. Błędy XAML są podzielone na jeden z następujących trzech typów, na podstawie narzędzia, które wykryło błąd:
 
 |**Błąd wykryty przez**|**Format kodu błędu**|
 | - |-----------------|
-|Usługa języka XAML (Edytor XAML)|XLSxxxx|
-|XAML Designer|XDGxxxx|
-|Edytuj i Kontynuuj XAML|XECxxxx|
+|Usługa języka XAML (edytor XAML)|XLSxxxx ( XLSxxxx )|
+|XAML Designer|XDGxxxx ( XDGxxxx )|
+|XAML Edytuj i kontynuuj|XECxxxx ( Xecxxxx )|
 
 > [!Note]
-> Nie wszystkie błędy lub ostrzeżenia mają odpowiedni kod. Takie błędy są zwykle projektant XAML błędów.
+> Nie wszystkie błędy lub ostrzeżenia mają odpowiedni kod. Takie błędy są zazwyczaj błędy projektanta XAML.
 
-## <a name="suppress-xaml-designer-errors"></a>Pomijaj błędy projektant XAML
+## <a name="suppress-xaml-designer-errors"></a>Pomijanie błędów projektanta XAML
 
-Otwórz okno dialogowe **Opcje** , wybierając polecenie **Narzędzia > Opcje**, a następnie wybierz pozycję **Edytor tekstu > XAML > różne**.
+Otwórz okno dialogowe **Opcje,** zaznaczając **pozycję Narzędzia > opcje**, a następnie wybierz pozycję Edytor tekstu > **XAML > Różne**.
 
-Usuń zaznaczenie pola wyboru **Pokaż błędy wykryte przez PROJEKTANTA XAML** .
+Wyewidencjonuj pole wyboru **Pokaż błędy wykryte przez projektanta XAML.**
 
-![Pomijaj błędy projektant XAML](media/suppress_xaml_designer_errors.png)
+![Pomijanie błędów projektanta XAML](media/suppress_xaml_designer_errors.png)

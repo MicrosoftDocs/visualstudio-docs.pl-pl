@@ -1,16 +1,16 @@
 ---
 title: W jaki sposób można zwiększyć szanse na naprawiony problem z wydajnością
 description: Dodatkowe informacje i najlepsze rozwiązania dotyczące przesyłania problemów z wydajnością w programie Visual Studio
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1a83a9c16e915bde2958193c640c0981f5edc005
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75918160"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276458"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na naprawiony problem z wydajnością
 
@@ -113,7 +113,7 @@ VS przestaje odpowiadać przez dłuższy czas.
 
 **Bezpośrednio powtarzalna brak reakcji**
 
-Jak opisano w odpowiedniej sekcji dotyczącej awarii, w przypadku problemów, które można łatwo odtworzyć, widoczne na wielu komputerach i można je wykazać w małej próbce, najcenniejsze raporty zwrotne to te, które zawierają kroki mające na celu odtworzenie problemu i obejmują przykładowy kod źródłowy, który pokazuje problem.
+Jak opisano w odpowiedniej sekcji dotyczącej awarii, w przypadku problemów, które można łatwo odtworzyć, widoczne na wielu komputerach i można je zademonstrować w małej próbce, najbardziej wartościowe raporty opinii są te, które zawierają kroki w celu odtworzenia problemu i zawierają przykładowy kod źródłowy, który pokazuje problem.
 
 **Nieznana niereaguje**
 

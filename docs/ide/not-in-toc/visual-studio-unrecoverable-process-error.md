@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206fcddca51f8e770e013ff67de6ae3d5562f633
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1879be46498d851eec0fbfce71b2328bdfc9afb
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585798"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224443"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Błąd procesu nieodwracalnego w programie Visual Studio
 
@@ -34,15 +34,15 @@ Poniżej znajduje się lista procesów out-of-proc używanych przez program Visu
 - Plik Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
 - Plik PerfWatson2.exe
+- UsługaHub.Host.CLR.x86.exe
 - UsługaHub.Host.Node.x86.exe
 - UsługaHub.IdentityHost.exe
-- UsługaHub.VSDetouredHost.exe
-- UsługaHub.SettingsHost.exe
-- UsługaHub.Host.CLR.x86.exe
-- UsługaHub.RoslynCodeAnalysisService32.exe
 - UsługaHub.RoslynCodeAnalysisService.exe
+- UsługaHub.RoslynCodeAnalysisService32.exe
+- UsługaHub.SettingsHost.exe
+- UsługaHub.VSDetouredHost.exe
+- WaAppAgent.exe
 - Program WindowsAzureGuestAgent.exe
 - Program WindowsAzureTelemetryService.exe
-- WaAppAgent.exe
 
 Jeśli którykolwiek z tych procesów zakończy się nieoczekiwanie, niektóre funkcje w programie Visual Studio przestaje działać. W przypadku niektórych procesów utrata funkcjonalności może być nieistotna. Dla innych, stabilność programu Visual Studio ma wpływ i wyświetlany jest komunikat o błędzie.

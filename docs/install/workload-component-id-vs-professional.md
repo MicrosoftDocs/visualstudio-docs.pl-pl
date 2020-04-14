@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 22af1df58619207a0af89da2268ab9d19ba5fa33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 2fa6401a03068ceaea325491d749d05a52866f72
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437614"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276340"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Katalog składników programu Visual Studio Professional
 
@@ -47,7 +48,7 @@ ms.locfileid: "79437614"
 ## <a name="see-also"></a>Zobacz też
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
-* [Przewodnik dla administratora programu Visual Studio](visual-studio-administrator-guide.md)
-* [Instalowanie programu Visual Studio za pomocą parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md)
+* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
-* [Tworzenie instalacji programu Visual Studio w trybie offline](create-an-offline-installation-of-visual-studio.md)
+* [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)

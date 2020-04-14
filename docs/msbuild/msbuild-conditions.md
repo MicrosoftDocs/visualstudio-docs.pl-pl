@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbed62c13fc963af382ede113b138451303d9382
-ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
+ms.openlocfilehash: 1f13910e2481e574e18c7a8efaee6601137c0720
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759712"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224475"
 ---
 # <a name="msbuild-conditions"></a>Warunki MSBuild
 
@@ -29,8 +29,8 @@ MSBuild obsługuje określony zestaw warunków, które mogą `Condition` być st
 
 |Warunek|Opis|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|Ocenia, `true` czy `stringA` jest `stringB`równa .<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości.|
-|'`stringA`' != '`stringB`'|Ocenia, `true` czy `stringA` nie jest `stringB`równa .<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości.|
+|'`stringA`' == '`stringB`'|Ocenia, `true` czy `stringA` jest `stringB`równa .<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości. Ta kontrola jest niewrażliwa na przypadek.|
+|'`stringA`' != '`stringB`'|Ocenia, `true` czy `stringA` nie jest `stringB`równa .<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości. Ta kontrola jest niewrażliwa na przypadek.|
 |\<, >, \<=, >=|Ocenia wartości liczbowe argumentów. Zwraca, `true` jeśli ocena relacyjna jest spełniony. Operandy muszą oszacować liczbę dziesiętną lub szesnastkową. Liczby szesnastkowe muszą zaczynać się od "0x". **Uwaga:**  W języku XML `<` `>` znaki i musi być zmienione. Symbol `<` jest reprezentowany `&lt;`jako . Symbol `>` jest reprezentowany `&gt;`jako .|
 |Istnieje('`stringA`')|Ocenia, `true` czy istnieje plik lub `stringA` folder o nazwie.<br /><br /> Przykład:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości.|
 |HasTrailingSlash('`stringA`')|Ocenia, `true` czy określony ciąg zawiera znak końcowego ukośnika wstecznego (\\) lub ukośnika do przodu (/).<br /><br /> Przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości.|
