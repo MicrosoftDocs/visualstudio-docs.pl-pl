@@ -1,7 +1,7 @@
 ---
 title: Dołączanie do uruchomionych procesów za pomocą debugera | Dokumenty firmy Microsoft
 ms.custom: seodec18
-ms.date: 04/08/2019
+ms.date: 04/14/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5305be7615e426d7792d8dd3fefb2579e2ab6be
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 075f5b0df703e31ea265085f422567a4fb5298a4
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233029"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385494"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do uruchomionego procesu na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz **debugowanie** > **Dołącz do procesu** lub naciśnij klawisz **Ctrl**+**Alt**+**P** w programie Visual Studio, a następnie użyj okna **dialogowego Dołącz do procesu,** aby dołączyć debuger do procesu.
@@ -253,15 +253,15 @@ W przypadku niektórych typów aplikacji, takich jak aplikacje uniwersalnej apli
 
 Aby debuger dołączyć do kodu napisanego w języku C++, kod musi emitować `DebuggableAttribute`. Możesz dodać to do kodu automatycznie, łącząc się z opcją konsolidatora [/ASSEMBLYDEBUG.](/cpp/build/reference/assemblydebug-add-debuggableattribute)
 
-W przypadku debugowania skryptów po stronie klienta debugowanie skryptów musi być włączone w przeglądarce. W przypadku debugowania skryptu po stronie klienta w Chrome wybierz **zestaw sieci Web** jako typ kodu, a w zależności od typu `chrome.exe --remote-debugging-port=9222` aplikacji może być konieczne zamknięcie wszystkich wystąpień Chrome i uruchomienie przeglądarki w trybie debugowania (wpisz z wiersza polecenia).
+W przypadku debugowania skryptów po stronie klienta debugowanie skryptów musi być włączone w przeglądarce. Aby debugować skrypt po stronie klienta w Chrome, wybierz **javascript (Chrome)** lub **JavaScript (Microsoft Edge - Chromium)** jako typ kodu, a w zależności od `chrome.exe --remote-debugging-port=9222` typu aplikacji może być konieczne zamknięcie wszystkich wystąpień Chrome i uruchomienie przeglądarki w trybie debugowania (wpisz z wiersza polecenia). We wcześniejszych wersjach programu Visual Studio debuger skryptów dla Chrome był **zestawem web.**
 
 Aby szybko wybrać uruchomiony proces do dołączenia do programu Visual Studio wpisz **klawisz Ctrl**+**Alt**+**P**, a następnie wpisz pierwszą literę nazwy procesu.
 
 |Scenariusz|Metoda debugowania|Nazwa procesu|Uwagi i łącza|
 |-|-|-|-|
 |Zdalne debugowanie ASP.NET 4 lub 4,5 na serwerze usług IIS|Użyj narzędzi zdalnych i **dołącz do procesu**|*plik w3wp.exe*|Zobacz [Zdalne debugowanie ASP.NET na zdalnym komputerze usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Zdalne debugowanie ASP.NET Core na serwerze usług IIS|Użyj narzędzi zdalnych i **dołącz do procesu**|*dotnet.exe* lub *appname.exe*|Aby zapoznać się z wdrażaniem aplikacji, zobacz [Publikowanie w usługach IIS](https://docs.asp.net/en/latest/publishing/iis.html). Aby debugować, zobacz [Zdalne debugowanie ASP.NET rdzenia na zdalnym komputerze usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Debugowanie skryptu po stronie klienta na lokalnym serwerze usług IIS dla obsługiwanych typów aplikacji |Użyj **dołączania do procesu**|*chrome.exe*, *MicrosoftEdgeCP.exe*lub *iexplore.exe*|Debugowanie skryptów musi być włączone. W chrome musisz również uruchomić Chrome w trybie debugowania i wybrać **kod Webkit** w polu **Dołącz do.**|
+|Zdalne debugowanie ASP.NET Core na serwerze usług IIS|Użyj narzędzi zdalnych i **dołącz do procesu**|*w3wp.exe* lub *dotnet.exe*|Począwszy od .NET Core 3, proces *w3wp.exe* jest używany dla domyślnego [modelu hostingu w aplikacji](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models). Aby zapoznać się z wdrażaniem aplikacji, zobacz [Publikowanie w usługach IIS](/aspnet/core/host-and-deploy/iis/). Aby uzyskać bardziej szczegółowe informacje, zobacz [Zdalne debugowanie ASP.NET rdzenia na zdalnym komputerze usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|Debugowanie skryptu po stronie klienta na lokalnym serwerze usług IIS dla obsługiwanych typów aplikacji |Użyj **dołączania do procesu**|*chrome.exe*, *MicrosoftEdgeCP.exe*lub *iexplore.exe*|Debugowanie skryptów musi być włączone. W przypadku Chrome musisz również uruchomić Chrome `chrome.exe --remote-debugging-port=9222` w trybie debugowania (wpisz z wiersza polecenia) i wybrać **JavaScript (Chrome)** w polu **Dołącz do.**|
 |Debugowanie aplikacji C#, Visual Basic lub C++ na komputerze lokalnym|Użyj standardowego debugowania **(F5)** lub **dołącz do procesu**|*\<nazwa>.exe*|W większości scenariuszy należy użyć standardowego debugowania i nie **dołączać do procesu**.|
 |Zdalne debugowanie aplikacji klasycznej systemu Windows|Narzędzia zdalne|Nie dotyczy| Zobacz [Zdalne debugowanie aplikacji Języka C# lub Visual Basic](../debugger/remote-debugging-csharp.md) lub [zdalnego debugowania aplikacji języka C++](../debugger/remote-debugging-cpp.md)|
 |Debugowanie .NET Core na Linuksie|Użyj **dołączania do procesu**|*plik dotnet.exe*|Aby użyć SSH, zobacz [Zdalne debugowanie .NET Core uruchomionego w systemie Linux przy użyciu programu SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). |

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się, jak administratorzy mogą przypisywać licencje wielu subskrybentom za pomocą funkcji dodawania zbiorczego lub grup usługi Microsoft Azure Active Directory
-ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
-ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
+ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80994449"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385510"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administracyjny subskrypcji umożliwia dodawanie użytkowników jeden na raz lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
@@ -75,10 +75,10 @@ Korzystanie z tej funkcji ułatwia utrzymanie się na szczycie przypisań subskr
 >
 > Następujące ograniczenia dotyczą korzystania z grup usługi Azure AD do dodawania subskrybentów:
 > - Grupy muszą zawierać co najmniej jednego członka.  Puste grupy nie są obsługiwane.
-> - Grupy muszą mieć mniej niż 1000 użytkowników 
-> - Wszyscy użytkownicy muszą znajdować się na najwyższym poziomie grupy.  Grupy zagnieżdżone nie są obsługiwane
-> - Obsługiwane są tylko zaufane umowy
-> - Wszyscy członkowie grupy muszą mieć adres e-mail skojarzony z ich kontem usługi Azure AD
+> - Grupy muszą mieć mniej niż 1000 użytkowników. 
+> - Wszyscy użytkownicy muszą znajdować się na najwyższym poziomie grupy.  Grupy zagnieżdżone nie są obsługiwane.
+> - Obsługiwane są tylko zaufane umowy.
+> - Wszyscy członkowie grupy muszą mieć adres e-mail skojarzony z ich kontem usługi Azure AD.
 > - Oddzielne adresy e-mail dla powiadomień nie są obsługiwane dla subskrypcji dodanych przy użyciu grup usługi Azure AD.  
 
 1. Zaloguj się do portalu administracyjnego [https://manage.visualstudio.com](https://manage.visualstudio.com)subskrypcji programu Visual Studio pod adresem .
@@ -106,6 +106,7 @@ Korzystanie z tej funkcji ułatwia utrzymanie się na szczycie przypisań subskr
 > [!NOTE]
 > Jeśli subskrypcje zostały już przypisane indywidualnie do użytkowników, którzy są następnie dodawane jako część grupy usługi Azure AD, zostaną one dodane jako część grupy i nie będą już wyświetlane indywidualnie. Jednak jeśli poszczególne subskrypcje jest dla innego poziomu subskrypcji, będą one miały dwie subskrypcje.  Przykład: Jeśli użytkownik ma indywidualną subskrypcję programu Visual Studio Professional i jest członkiem grupy, do której można przypisać subskrypcje programu Visual Studio Enterprise, będzie miał obie.  
 
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
