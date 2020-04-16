@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916952"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444690"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Wprowadzenie do narzędzi programu Visual Studio Kubernetes
 
@@ -40,7 +40,7 @@ Aby korzystać z tej nowej funkcji, musisz:
 
     1. Klaster usługi Kubernetes platformy Azure. Aby uzyskać więcej informacji, zobacz [Tworzenie klastra AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Pamiętaj, [aby połączyć się](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z klastrem z dewelopera stacji roboczej.
 
-    1. Helm CLI zainstalowany na stacji roboczej rozwoju. Aby uzyskać więcej informacji, zobacz [Instalowanie helmu](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Helm CLI zainstalowany na stacji roboczej rozwoju. Aby uzyskać więcej informacji, zobacz [Instalowanie helmu](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md).
 
     1. Helm skonfigurowany względem klastra AKS za pomocą `helm init` polecenia. Aby uzyskać więcej informacji na temat tego, jak to zrobić, zobacz [Jak skonfigurować Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end

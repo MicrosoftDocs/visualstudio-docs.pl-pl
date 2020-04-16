@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702036"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444651"
 ---
 # <a name="private-galleries"></a>Prywatne galerie
 Formanty, szablony i narzędzia można udostępniać, publikując je w *prywatnej galerii* w intranecie dla organizacji w następujący sposób:
@@ -42,9 +42,9 @@ Formanty, szablony i narzędzia można udostępniać, publikując je w *prywatne
 
 5. W polu **ADRES URL** wprowadź adres URL kanału informacyjnego Atom lub witryny programu SharePoint, w ramach których znajduje się galeria prywatna.
 
-    1. Jeśli host jest kanałem informacyjnym Atom, który łączy się z http://www.mywebsite/mygallery/atom.xmlgalerią prywatną, adres URL będzie podobny do tego: .  Ten adres URL może odnosić się do pliku lub ścieżki sieciowej.
+    1. Jeśli host jest kanałem informacyjnym Atom, który łączy się z `http://www.mywebsite/mygallery/atom.xml`galerią prywatną, adres URL będzie podobny do tego: .  Ten adres URL może odnosić się do pliku lub ścieżki sieciowej.
 
-    2. Jeśli host jest witryną programu SharePoint, adres http://mysharepoint/sites/mygallery/forms/AllItems.aspxURL będzie podobny do następującego: .
+    2. Jeśli host jest witryną programu SharePoint, adres `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`URL będzie podobny do następującego: .
 
 ### <a name="manage-private-galleries"></a>Zarządzanie prywatnymi galeriami
  Administrator może udostępnić prywatną galerię kilku komputerom jednocześnie, modyfikując rejestr systemowy na każdym komputerze. Aby to osiągnąć, należy utworzyć plik *pkgdef* opisujący nowe klucze rejestru i ich wartości.  Format tego pliku jest następujący.

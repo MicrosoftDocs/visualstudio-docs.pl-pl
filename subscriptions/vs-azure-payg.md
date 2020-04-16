@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 07/30/2019
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Dowiedz się, jak skonfigurować konto usługi Azure Pay-As-You-Go.
-ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80231985"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444856"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Subskrypcje płatności zgodnie z rzeczywistymi usługami Dewelopertest platformy Azure
 Współpracuj z zespołem w chmurze.  Tworzenie wielu deweloperów i testowania subskrypcji płatności zgodnie z rzeczywistymi przyuśmiakami, umożliwiając współpracę z innymi subskrybentami, zapewniając jednocześnie izolację między zespołami i środowiskami.  Otrzymujesz ekskluzywne zniżki stawek godzinowych za prawa do tworzenia/testowania i korzystania z chmury dla oprogramowania subskrypcyjnego na platformie Azure.
@@ -39,7 +39,7 @@ Współpracuj z zespołem w chmurze.  Tworzenie wielu deweloperów i testowania 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q--what-if-i-want-to-make-changes-to-this-subscription"></a>Pyt.: Co zrobić, jeśli chcę wprowadzić zmiany w tej subskrypcji?
 Odp.: Aby wprowadzić zmiany w dowolnej subskrypcji platformy Azure:
-1. Zaloguj się do [Portalu Azure](https://portal.azure.com).
+1. Zaloguj się w witrynie [Azure Portal](https://portal.azure.com).
 2. Na liście w lewym okienku wybierz pozycję **Zarządzanie kosztami + Rozliczenia**.
 3. Lista subskrypcji zostanie wyświetlona w polu **Moje subskrypcje.** Kliknij żądaną subskrypcję.
 4. Teraz będziesz mieć opcje zarządzania lub anulowania subskrypcji, zmiany jej nazwy, zmiany katalogu lub przeniesienia własności rozliczeniowej.

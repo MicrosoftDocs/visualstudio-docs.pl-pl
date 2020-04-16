@@ -12,19 +12,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f68da0d937c27d0fb3175ca87d8d749c3f1e90aa
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: 0f49925211247e346ac3203de20a97496c54295d
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223648"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444807"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Jak: Zarządzanie zawijaniem wyrazów w edytorze
 
 Można ustawić i wyczyścić opcję **zawijania wyrazów.** Gdy ta opcja jest ustawiona, część długiej linii, która wykracza poza bieżącą szerokość okna Edytor kodu, jest wyświetlana w następnym wierszu. Gdy ta opcja jest wyczyszczona, na przykład, aby ułatwić korzystanie z numeracji linii, można przewinąć w prawo, aby zobaczyć końce długich linii.
 
 > [!NOTE]
-> W tym temacie stosuje się do programu Visual Studio w systemie Windows. Aby zapoznać się z programem Visual Studio na komputerze Mac, zobacz [Edytor źródeł: Zawijanie wyrazów](/visualstudio/mac/source-editor#word-wrap).
+> W tym temacie stosuje się do programu Visual Studio w systemie Windows. W przypadku programu Visual Studio dla komputerów Mac zobacz [Edytor źródeł: Zawijanie wyrazów](/visualstudio/mac/source-editor#word-wrap).
 
 ## <a name="to-set-word-wrap-preferences"></a>Aby ustawić preferencje zawijania wyrazów
 

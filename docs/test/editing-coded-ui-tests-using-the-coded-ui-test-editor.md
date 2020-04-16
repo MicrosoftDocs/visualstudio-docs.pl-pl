@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8df6d1ea44cb9737c39653366c7b35823051d5f6
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589659"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445041"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edytowanie zakodowanych testów interfejsu użytkownika przy użyciu edytora kodowanych testów interfejsu użytkownika
 
@@ -74,7 +74,7 @@ Za pomocą Edytora testów kodowanych interfejsu użytkownika, można szybko zlo
 
 Aby zmodyfikować właściwości akcji interfejsu użytkownika, w okienku **Akcja interfejsu użytkownika** rozwiń metodę testową zawierającą akcję interfejsu użytkownika, dla której chcesz edytować właściwości, wybierz akcję interfejsu użytkownika, a następnie zmodyfikuj właściwości za pomocą okna Właściwości.
 
-Na przykład, jeśli serwer jest niedostępny i z przeglądarką sieci Web jest skojarzona akcja interfejsu użytkownika z `'http://Contoso2/default.aspx'`napisem Przejdź do strony sieci Web **'<http://Contoso1/default.aspx>**, można zmienić adres URL na .
+Na przykład, jeśli serwer jest niedostępny i z przeglądarką sieci Web jest skojarzona akcja interfejsu użytkownika, która stanowi **Przejdź do strony sieci Web http:\//Contoso1/default.aspx**, można zmienić adres URL na `http://Contoso2/default.aspx`.
 
 ![Właściwości kontrolki](../test/media/codeduitestcontrolprop.png)
 

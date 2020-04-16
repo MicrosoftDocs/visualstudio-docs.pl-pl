@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74474015"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445015"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikowanie aplikacji Node.js na platformie Azure (linux App Service)
 
@@ -27,9 +27,9 @@ Podczas publikowania aplikacji Node.js na platformie Azure, istnieje kilka opcji
 W tym samouczku można wdrożyć aplikację do [usługi Linux App Service](/azure/app-service/containers/app-service-linux-intro).
 Usługa aplikacji Linux App Service wdraża kontener platformy Docker systemu Linux w celu uruchomienia aplikacji Node.js (w przeciwieństwie do usługi Windows App Service, która uruchamia aplikacje Node.js za usługami IIS w systemie Windows).
 
-W tym samouczku pokazano, jak utworzyć aplikację Node.js, zaczynając od szablonu zainstalowanego za pomocą narzędzia Node.js Tools for Visual Studio, wypchnąć kod do repozytorium w usłudze GitHub, a następnie aprowizować usługę Azure App Service za pośrednictwem portalu sieci Web platformy Azure, dzięki czemu można wdrożyć z witryny sieci Web Repozytorium GitHub. Aby użyć wiersza polecenia do aprowizowania usługi Azure App Service i wypchnięcia kodu z lokalnego repozytorium Git, zobacz [Tworzenie aplikacji Node.js](/azure/app-service/containers/quickstart-nodejs).
+W tym samouczku pokazano, jak utworzyć aplikację Node.js, zaczynając od szablonu zainstalowanego za pomocą narzędzia Node.js Tools for Visual Studio, wypchnąć kod do repozytorium w usłudze GitHub, a następnie aprowizować usługę Azure App Service za pośrednictwem portalu sieci Web platformy Azure, dzięki czemu można wdrożyć z repozytorium Usługi GitHub. Aby użyć wiersza polecenia do aprowizowania usługi Azure App Service i wypchnięcia kodu z lokalnego repozytorium Git, zobacz [Tworzenie aplikacji Node.js](/azure/app-service/containers/quickstart-nodejs).
 
-Niniejszy samouczek zawiera informacje na temat wykonywania następujących czynności:
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]
 > * Tworzenie projektu z użyciem narzędzia Node.js
 > * Tworzenie repozytorium GitHub dla kodu
@@ -109,7 +109,7 @@ Aby skonfigurować github dla programu Visual Studio:
 
 ## <a name="create-a-linux-app-service-in-azure"></a>Tworzenie usługi aplikacji systemu Linux na platformie Azure
 
-1. Zaloguj się do [Portalu Azure](https://portal.azure.com).
+1. Zaloguj się w witrynie [Azure Portal](https://portal.azure.com).
 
 2. Wybierz **pozycję Usługi aplikacji** z listy usług po lewej stronie, a następnie kliknij przycisk **Dodaj**.
 
@@ -173,7 +173,7 @@ Aby skonfigurować github dla programu Visual Studio:
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
 * Jeśli proces node.exe umiera (oznacza to, że występuje nieobsługiowany wyjątek), kontener zostanie ponownie uruchomiony.
-* Po uruchomieniu kontenera, działa przez różne heurystyki, aby dowiedzieć się, jak rozpocząć proces Node.js. Szczegóły implementacji można zobaczyć na [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
+* Po uruchomieniu kontenera, działa przez różne heurystyki, aby dowiedzieć się, jak rozpocząć proces Node.js. Szczegóły implementacji można zobaczyć na [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
 * Można połączyć się z uruchomionym kontenerem za pośrednictwem protokołu SSH w celu przeprowadzenia badań. Można to łatwo zrobić za pomocą witryny Azure portal. Wybierz usługę app service i przewiń listę narzędzi w dół, aż do osiągnięcia **SSH** w sekcji **Narzędzia programistyczne.**
 * Aby ułatwić rozwiązywanie problemów, przejdź do ustawień **dzienników diagnostyki** usługi App Service i zmień ustawienie **rejestrowania kontenera platformy Docker** z **Wyłączone** na **System plików**. Dzienniki są tworzone w kontenerze pod */home/LogFiles/*_docker.log*i są dostępne w polu za pomocą protokołu SSH lub FTP(S).
 * Do witryny można przypisać niestandardową nazwę domeny, a nie domyślnie przypisany adres URL *.azurewebsites.net. Aby uzyskać więcej informacji, zobacz temat [Mapuj domenę niestandardową](/azure/app-service/app-service-web-tutorial-custom-domain).

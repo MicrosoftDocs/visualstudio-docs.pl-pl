@@ -7,17 +7,22 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Dowiedz się, jak można używać usługi Azure DevOps jako subskrybenta programu Visual Studio.
-ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
-ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
+ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80607166"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444830"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści dotyczące usługi Azure DevOps dla subskrybentów programu Visual Studio
 Jako aktywny subskrybent programu Visual Studio można użyć szeregu funkcji w usłudze Azure DevOps, które są dołączone do subskrypcji jako korzyści. Te same funkcje będą mogły korzystać z tych samych funkcji w każdej organizacji usługi Azure DevOps, w której jesteś członkiem, niezależnie od tego, czy organizacja została utworzona, czy została dodana przez inną osobę.
 
 ## <a name="sign-in"></a>Logowanie
+
+   > [!div class="mx-imgBorder"]
+   > ![Kafelek devops platformy Azure](_img/vs-azure-devops/vs-azure-devops-tile.png)
+
+   
 Po zalogowaniu się do usługi Azure DevOps przy użyciu tożsamości, która została użyta do aktywacji subskrypcji programu Visual Studio lub [alternatywnej tożsamości,](vs-alternate-identity.md)rozpoznajemy to automatycznie.  W ten sposób można również dodać konto służbowe (którego używasz podczas logowania do programu Visual Studio, usługi Office 365 lub sieci firmowej lub szkolnej), umożliwiając dostęp do usługi Azure DevOps przy użyciu zarówno konta osobistego, jak i konta służbowego.
 
 [Zarejestruj się w bezpłatnej organizacji Azure DevOps](https://visualstudio.microsoft.com/team-services/)

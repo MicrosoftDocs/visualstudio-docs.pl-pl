@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d509292bc3c7a909289abf0c73babccfead31532
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
+ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385397"
+ms.locfileid: "81397379"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
 Ten komunikat może wystąpić, ponieważ monitor zdalnego debugowania nie jest poprawnie skonfigurowany na komputerze zdalnym lub komputer zdalny jest niedostępny z powodu problemów z siecią lub obecności zapory.
@@ -34,6 +34,7 @@ Wiadomość `Unable to Connect to the Microsoft Visual Studio Remote Debugging M
 
 - [Debuger nie może połączyć się z komputerem zdalnym. Debuger nie może rozpoznać określonej nazwy komputera](#cannot_connect)
 - [Żądanie połączenia zostało odrzucone przez debuger zdalny](#rejected)
+- [Połączenie ze zdalnym punktem końcowym zostało zakończone](#connection_terminated)
 - [Nieprawidłowy dostęp do lokalizacji pamięci](#invalid_access)
 - [Brak serwera o określonej nazwie uruchomionej na komputerze zdalnym](#no_server)
 - [Żądana nazwa była prawidłowa, ale nie znaleziono żadnych danych żądanego typu](#valid_name)
@@ -67,17 +68,19 @@ W oknie dialogowym **Dołączanie do procesu** lub we właściwościach projektu
 
 Jeśli te wartości są poprawne, a komunikat wspomina o trybie **uwierzytelniania systemu Windows,** sprawdź, czy debuger zdalny jest w prawidłowym trybie uwierzytelniania (**Narzędzia > Opcje**).
 
-## <a name="the-connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>Połączenie ze zdalnym punktem końcowym zostało zakończone
+## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>Połączenie ze zdalnym punktem końcowym zostało zakończone
 
 Jeśli debugujesz aplikację usługi Azure App Service, spróbuj użyć polecenia [Dołącz debuger](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service) z Eksploratora chmury lub Eksploratora serwera zamiast **dołączania do procesu**.
 
 Jeśli do debugowania używasz funkcji Dołącz do **procesu:**
 
-1. W oknie dialogowym **Dołączanie do procesu** lub we właściwościach projektu upewnij się, że nazwa komputera zdalnego i numer portu są zgodne z nazwą i numerem portu wyświetlanym w oknie zdalnego debugera. Jeśli jest niepoprawna, napraw i spróbuj ponownie.
+- W oknie dialogowym **Dołączanie do procesu** lub we właściwościach projektu upewnij się, że nazwa komputera zdalnego i numer portu są zgodne z nazwą i numerem portu wyświetlanym w oknie zdalnego debugera. Jeśli jest niepoprawna, napraw i spróbuj ponownie.
 
-2. Sprawdź dziennik aplikacji na serwerze (Podgląd zdarzeń w systemie Windows), aby uzyskać bardziej szczegółowe informacje ułatwiające rozwiązanie problemu.
+- Jeśli próbujesz połączyć się przy użyciu nazwy hosta, spróbuj zamiast tego użyć adresu IP.
 
-3. W przeciwnym razie spróbuj ponownie uruchomić program Visual Studio z uprawnieniami administratora, a następnie spróbuj ponownie.
+- Sprawdź dziennik aplikacji na serwerze (Podgląd zdarzeń w systemie Windows), aby uzyskać bardziej szczegółowe informacje ułatwiające rozwiązanie problemu.
+
+- W przeciwnym razie spróbuj ponownie uruchomić program Visual Studio z uprawnieniami administratora, a następnie spróbuj ponownie.
 
 ## <a name="invalid-access-to-memory-location"></a><a name="invalid_access"></a>Nieprawidłowy dostęp do lokalizacji pamięci
 

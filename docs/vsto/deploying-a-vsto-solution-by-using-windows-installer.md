@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 876781cb6967f5d10dddccd54a46e218170445ab
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432365"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444909"
 ---
 # <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Wdrażanie narzędzi programu Visual Studio dla rozwiązania pakietu Office przy użyciu Instalatora Windows
 
@@ -122,7 +122,7 @@ Pierwszym krokiem jest utworzenie projektu instalacji.
 ::: moniker-end
 ::: moniker range="=vs-2019"
 3. W oknie **dialogowym Dodawanie nowego projektu** wybierz szablon **Projektu instalacji.**
-4. Kliknij przycisk **alej**.
+4. Kliknij przycisk **Dalej**.
 ::: moniker-end
 
 5. W polu **Nazwa** wpisz **OfficeAddInSetup**.
@@ -346,7 +346,7 @@ Aby uzyskać więcej informacji, zobacz [Równoważność typów i osadzone typy
 |Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |Tag inteligentny|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5b-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |Udostępnione w pakiecie Office|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|
-|Project|{957A4EC0-E67b-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
+|Projekt|{957A4EC0-E67b-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
 
   ![Zrzut ekranu przedstawiający ostateczne warunki startu](media/setup-project-figure-11.jpg)
 
@@ -593,7 +593,7 @@ s
 ## <a name="about-the-authors"></a>O autorach
 
 Wouter van Vugt jest microsoft MVP z technologii Office Open XML i niezależny konsultant koncentruje się na tworzeniu aplikacji biznesowych pakietu Office (OBA) z SharePoint, Microsoft Office i powiązanych technologii .NET.
-Wouter jest częstym współpracownikiem witryn społeczności deweloperów, takich jak [OpenXmlDeveloper.org](http://openxmldeveloper.org/) i [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12)). Opublikował kilka oficjalnych artykułów i artykułów, a także książkę dostępną w internecie pod tytułem Open XML: Explained e-book.
-Wouter jest założycielem Code-Counsel, holenderskiej firmy zajmującej się dostarczaniem najnowocześniejszych treści technicznych za pośrednictwem różnych kanałów. Możesz dowiedzieć się więcej o Wouter czytając jego blog i odwiedzając [Code-Counsel witryny sieci Web](http://www.code-counsel.net/).
+Wouter jest częstym współpracownikiem witryn społeczności deweloperów, takich jak [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12)). Opublikował kilka oficjalnych artykułów i artykułów, a także książkę dostępną w internecie pod tytułem Open XML: Explained e-book.
+Wouter jest założycielem Code-Counsel, holenderskiej firmy zajmującej się dostarczaniem najnowocześniejszych treści technicznych za pośrednictwem różnych kanałów. Możesz dowiedzieć się więcej o Wouter czytając jego blog.
 
 Ted Pattison jest MVP programu SharePoint, autorem, trenerem i założycielem Ted Pattison Group. Jesienią 2005 r. Ted został zatrudniony przez grupę Microsoft Developer Platform Evangelism do autora programu szkoleniowego dla deweloperów Ascend dla programu Windows SharePoint Services 3.0 i Microsoft Office SharePoint Server 2007. Od tego czasu Ted był całkowicie skoncentrowany na kształceniu profesjonalnych programistów w zakresie technologii SharePoint 2007. Ted zakończył pisanie książki dla microsoft press zatytułowanej Inside Windows SharePoint Services 3.0, która koncentruje się na tym, jak używać programu SharePoint jako platformy programistycznej do tworzenia rozwiązań biznesowych. Ted pisze również kolumnę poświęconą deweloperom dla magazynu MSDN zatytułowaną Office Space.

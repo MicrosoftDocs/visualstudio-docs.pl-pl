@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak w pełni wykorzystać subskrypcje programu Visual Studio
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232357"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444881"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -52,7 +52,6 @@ Na stronie Korzyści używana subskrypcja będzie widoczna w niebieskim banerze.
 **Subskrypcje nabyte za pośrednictwem programów:**  Jeśli otrzymasz subskrypcję za pośrednictwem programu, twoja subskrypcja jest powiązana z Twoim udziałem w programie. Aby uzyskać dodatkowe informacje, skontaktuj się z kontaktami programu.
 
 - [Wyobraź sobie](https://imagine.microsoft.com/about)
-- [Bizspark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Certyfikowany trener firmy Microsoft](https://www.microsoft.com/learning/mct-certification.aspx)
 
