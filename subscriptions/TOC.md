@@ -2,7 +2,7 @@
 # [Co nowego](whats-new-in-subscriptions.md)
 # Subskrypcje
 ## Kupowanie subskrypcji
-### [Sprzedaż detaliczna](https://visualstudio.microsoft.com/vs/pricing)
+### [Sprzedaż detaliczna](buy-activate-retail.md)
 ### Chmura 
 #### [Omówienie](vscloud-overview.md)
 #### [Często zadawane pytania dotyczące rozliczeń](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Zarządzanie subskrypcjami dla programu MPN](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## Logowanie 
-### [Aktywowanie subskrypcji detalicznych](activate-store-subscriptions.md)
 ### [Logowanie przy użyciu kont Microsoft](sign-in-msa.md)
 ### [Logowanie przy użyciu kont służbowych](sign-in-work.md)
 ### [Logowanie przy użyciu usługi GitHub](sign-in-github.md)
