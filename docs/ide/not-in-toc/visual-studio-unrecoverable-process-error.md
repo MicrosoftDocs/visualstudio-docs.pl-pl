@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1879be46498d851eec0fbfce71b2328bdfc9afb
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224443"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544344"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Błąd procesu nieodwracalnego w programie Visual Studio
 
@@ -33,7 +33,9 @@ Poniżej znajduje się lista procesów out-of-proc używanych przez program Visu
 
 - Plik Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
+- Msbuild.exe
 - Plik PerfWatson2.exe
+- SkryptSandbox64.exe
 - UsługaHub.Host.CLR.x86.exe
 - UsługaHub.Host.Node.x86.exe
 - UsługaHub.IdentityHost.exe
@@ -41,6 +43,9 @@ Poniżej znajduje się lista procesów out-of-proc używanych przez program Visu
 - UsługaHub.RoslynCodeAnalysisService32.exe
 - UsługaHub.SettingsHost.exe
 - UsługaHub.VSDetouredHost.exe
+- Plik VBCSCompiler.exe
+- Program VsHub.exe
+- vstest.discoveryengine.x86.exe
 - WaAppAgent.exe
 - Program WindowsAzureGuestAgent.exe
 - Program WindowsAzureTelemetryService.exe

@@ -2,7 +2,7 @@
 title: Zarządzanie pakietami npm
 description: Program Visual Studio pomaga zarządzać pakietami przy użyciu Menedżera pakietów Node.js (npm)
 ms.custom: seodec18
-ms.date: 03/12/2020
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dba657d30eedef26337c708e7ede6c5ab85ed4cc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ef831b5ffee172b642572535162713a53d8ae578
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549954"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544331"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
@@ -28,26 +28,32 @@ Integracja programu Visual Studio z npm różni się w zależności od typu proj
 * [ASP.NET Core](#aspnet-core-projects)
 * [Otwórz folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
 
+*package.json* to plik używany przez npm do zarządzania zależnościami pakietów i wersjami pakietów dla pakietów zainstalowanych lokalnie. Aby uzyskać więcej informacji na temat tego pliku, zobacz [package.json configuration](../javascript/configure-packages-with-package-json.md).
+
 > [!Important]
 > npm oczekuje *node_modules* folderu i *package.json* w katalogu głównym projektu. Jeśli struktura folderów aplikacji jest inna, należy zmodyfikować strukturę folderów, jeśli chcesz zarządzać pakietami npm przy użyciu programu Visual Studio.
 
-> [!NOTE]
-> W przypadku istniejących projektów Node.js użyj szablonu rozwiązania **kodu Istniejący node.js,** aby włączyć npm w projekcie.
-
 ## <a name="nodejs-projects"></a>Projekty node.js
 
-W przypadku projektów node.js należy użyć jednej z następujących metod:
+W przypadku projektów node.js można wykonywać następujące zadania:
 * [Instalowanie pakietów z Eksploratora rozwiązań](#npmInstallWindow)
 * [Zarządzanie zainstalowanymi pakietami z Eksploratora rozwiązań](#solutionExplorer)
 * [Użyj `.npm` polecenia w oknie interaktywnym Node.js](#interactive)
 
 Te funkcje współpracują ze sobą i synchronizują się z systemem projektu i plikiem *package.json* w projekcie.
 
+### <a name="prerequisites"></a>Wymagania wstępne
+
+Aby dodać obsługę npm do projektu, potrzebne jest obciążenie **deweloperne node.js** i środowisko uruchomieniowe Node.js. Aby uzyskać szczegółowe kroki, zobacz [Tworzenie projektu node.js](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
+
+> [!NOTE]
+> W przypadku istniejących projektów node.js użyj szablonu rozwiązania **kodu z istniejącego pliku Node.js** lub typu projektu [Otwórz folder (Node.js),](../javascript/develop-javascript-code-without-solutions-projects.md) aby włączyć npm w projekcie.
+
 ### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a>Instalowanie pakietów z Eksploratora rozwiązań (node.js)
 
 W przypadku projektów Node.js najprostszym sposobem instalowania pakietów npm jest okno instalacji pakietu npm. Aby uzyskać dostęp do tego okna, kliknij prawym przyciskiem myszy węzeł **npm** w projekcie i wybierz polecenie **Zainstaluj nowe pakiety npm**.
 
-![Zainstaluj nowy pakiet npm z Eksploratora rozwiązań](../javascript/media/solution-explorer-install-package.png)
+:::image type="content" source="../javascript/media/solution-explorer-install-package.png" alt-text="Zainstaluj nowy pakiet npm z Eksploratora rozwiązań" border="true":::
 
 W tym oknie można wyszukać pakiet, określić opcje i zainstalować.
 
@@ -108,11 +114,17 @@ W przypadku projektów takich jak ASP.NET Core można zintegrować obsługę npm
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a>Dodawanie obsługi npm do projektu (ASP.NET Core)
 
-Jeśli projekt nie zawiera jeszcze pliku *package.json,* można dodać jedną włącz obsługę npm, dodając plik package.json do projektu.
+Jeśli projekt nie zawiera jeszcze pliku *package.json,* można dodać jeden, aby włączyć obsługę npm, dodając plik *package.json* do projektu.
 
-1. Aby dodać plik, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz polecenie **Dodaj** > **nowy element**. Wybierz **plik konfiguracji npm**, użyj nazwy domyślnej i kliknij przycisk **Dodaj**.
+1. Jeśli nie masz zainstalowanego pliku Node.js, zalecamy zainstalowanie wersji LTS z witryny [node.js](https://nodejs.org/en/download/) w celu zapewnienia najlepszej zgodności z zewnętrznymi strukturami i bibliotekami.
+
+   npm wymaga node.js.
+
+1. Aby dodać plik *package.json,* kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz polecenie **Dodaj** > **nowy element**. Wybierz **plik konfiguracji npm**, użyj nazwy domyślnej i kliknij przycisk **Dodaj**.
 
    ![Dodawanie pliku package.json do projektu](../javascript/media/npm-add-package-json.png)
+
+   Jeśli nie widzisz na liście pliku konfiguracji npm, narzędzia programistyczne Node.js nie są zainstalowane. Instalatora programu Visual Studio można użyć, aby dodać obciążenie **deweloperskie Node.js.** Następnie powtórz poprzedni krok.
 
 1. Uwzględnij jeden lub więcej `dependencies` pakietów npm w sekcji `devDependencies` *package.json*. Na przykład można dodać do pliku następujące elementy:
 
@@ -126,7 +138,7 @@ Jeśli projekt nie zawiera jeszcze pliku *package.json,* można dodać jedną w�
 Po zapisaniu pliku program Visual Studio dodaje pakiet w węźle **Zależności / npm** w Eksploratorze rozwiązań. Jeśli nie widzisz węzła, kliknij prawym przyciskiem myszy **package.json** i wybierz polecenie **Przywróć pakiety**.
 
 >[!NOTE]
-> W niektórych scenariuszach Eksplorator rozwiązań może wskazywać, że pakiet npm jest niezsynchronizowany z *package.json* z powodu znanego problemu opisanego [tutaj](https://github.com/aspnet/Tooling/issues/479). Na przykład pakiet może pojawić się jako nie zainstalowany po zainstalowaniu. W większości przypadków można zaktualizować Eksploratora rozwiązań, usuwając *plik package.json*, ponowne uruchomienie programu Visual Studio i ponowne dodanie pliku *package.json* zgodnie z opisem we wcześniejszej części tego artykułu.
+> W niektórych scenariuszach Eksplorator rozwiązań może nie wykazywać prawidłowego stanu zainstalowanych pakietów npm z powodu znanego problemu opisanego [w tym miejscu.](https://github.com/aspnet/Tooling/issues/479) Na przykład pakiet może pojawić się jako nie zainstalowany po zainstalowaniu. W większości przypadków można zaktualizować Eksploratora rozwiązań, usuwając *plik package.json*, ponowne uruchomienie programu Visual Studio i ponowne dodanie pliku *package.json* zgodnie z opisem we wcześniejszej części tego artykułu.
 
 ### <a name="install-packages-using-packagejson-aspnet-core"></a><a name="npmInstallPackage"></a>Instalowanie pakietów przy użyciu pliku package.json (ASP.NET Core)
 
@@ -136,7 +148,7 @@ W przypadku projektów z dołączonymi npm można `package.json`skonfigurować p
 
 IntelliSense w *package.json* pomaga wybrać konkretną wersję pakietu npm.
 
-![Szukaj pakietu npm](../javascript/media/npm-add-package-intellisense.png)
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Wybierz wersję pakietu npm" border="true":::
 
 Po zapisaniu pliku program Visual Studio dodaje pakiet w węźle **Zależności / npm** w Eksploratorze rozwiązań. Jeśli nie widzisz węzła, kliknij prawym przyciskiem myszy **package.json** i wybierz polecenie **Przywróć pakiety**.
 

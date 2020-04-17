@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: df4630182e89dad08360794057bda856ff4d677b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549947"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544292"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript i TypeScript w programie Visual Studio 2019
 
@@ -38,7 +38,8 @@ Program Visual Studio 2019 udostępnia kilka opcji integracji kompilacji TypeScr
 * [Pakiet TypeScript npm](https://www.npmjs.com/package/typescript). Po zainstalowaniu pakietu npm dla języka TypeScript 2.1 lub nowszego w projekcie odpowiednia wersja usługi języka TypeScript zostanie załadowana do edytora.
 * Pakiet SDK typescript, dostępny domyślnie w instalatorze programu Visual Studio, a także samodzielny pakiet SDK pobierany z [portalu VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 
-W przypadku projektów opracowanych w programie Visual Studio 2019 firma Wezaubienie do używania pakietów TypeScript NuGet i npm w celu zwiększenia przenośności na różnych platformach i środowiskach.
+> [!TIP]
+> W przypadku projektów opracowanych w programie Visual Studio 2019 firma My zachęcamy do korzystania z pakietu TypeScript NuGet lub TypeScript npm w celu zwiększenia przenośności na różnych platformach i środowiskach.
 
 Jednym z typowych zastosowań pakietu NuGet jest skompilowanie języka TypeScript przy użyciu interfejsu wiersza polecenia .NET Core. Jeśli plik projektu nie zostanie ręcznie edytowany w celu zaimportowania obiektów docelowych kompilacji z instalacji zestawu SDK TypeScript, pakiet NuGet jest jedynym sposobem włączenia kompilacji TypeScript przy użyciu poleceń .NET Core CLI, takich jak `dotnet build` i `dotnet publish`.
 
