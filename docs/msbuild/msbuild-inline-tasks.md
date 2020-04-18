@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633320"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638043"
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane MSBuild
 
@@ -52,7 +52,7 @@ Zadania MSBuild są zazwyczaj tworzone przez kompilowanie <xref:Microsoft.Build.
 
 - Atrybut `TaskFactory` nazywa klasę, która implementuje wbudowaną fabrykę zadań.
 
-- Atrybut `AssemblyFile` podaje lokalizację wbudowanej fabryki zadań. Alternatywnie można użyć `AssemblyName` atrybutu, aby określić w pełni kwalifikowaną nazwę wbudowanej klasy fabryki zadań, która zazwyczaj znajduje się w globalnej pamięci podręcznej zestawów (GAC).
+- Atrybut `AssemblyFile` podaje lokalizację wbudowanej fabryki zadań. Alternatywnie można użyć `AssemblyName` atrybutu, aby określić w pełni kwalifikowaną nazwę wbudowanej klasy `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`fabryki zadań, która zazwyczaj znajduje się w pliku .
 
 Pozostałe elementy `DoNothing` zadania są puste i są dostarczane w celu zilustrowania kolejności i struktury zadania wbudowanego. Bardziej niezawodny przykład przedstawiono w dalszej części tego tematu.
 
