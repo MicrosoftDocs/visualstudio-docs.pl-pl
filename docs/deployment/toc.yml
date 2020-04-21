@@ -94,8 +94,6 @@
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
             - name: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: Debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień
-              href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
             - name: Dodawanie zaufanego wydawcy do komputera klienckiego
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
             - name: Ponowne podpisywanie manifestów wdrożenia i aplikacji
