@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7173bc1ebc5507eadf319c0374f4c878dea62857
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739775"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649371"
 ---
 # <a name="command-flag-eelement"></a>Flaga polecenia Węgorz
 Modyfikuje jego element nadrzędny.
@@ -60,7 +60,6 @@ Modyfikuje jego element nadrzędny.
 |PostExec (Poekseca)|Powoduje, że polecenie nie blokuje. Środowisko programistyczne odraża wykonywanie, dopóki nie zostaną zakończone wszystkie zapytania przetwarzania wstępnego.<br /><br /> Ważne dla:`Button`|
 |RouteToDocs (RouteToDocs)|Polecenie jest kierowane do aktywnego dokumentu.<br /><br /> Ważne dla:`Button`|
 |Rozciągliwienie|Gdy ta flaga jest ustawiona, szerokość staje się minimalną szerokością pola kombi, a jeśli na pasku narzędzi jest miejsce, pole kombi zostanie rozciągnięte, aby wypełnić dostępne miejsce. Dzieje się tak tylko wtedy, gdy pasek narzędzi jest zadokowany poziomo, a tylko jedno pole kombi na pasku narzędzi może używać flagi (flaga jest ignorowana we wszystkich z wyjątkiem pierwszego pola kombi).<br /><br /> Ważne dla:`Combo`|
-|TextMenuUseButton (Przycisk Użycia tekstu)|Użyj `ButtonText` pola menu. Polem domyślnym jest, `MenuText` jeśli jest określone.<br /><br /> Ważne dla:`Button`|
 |Zmiany tekstu|Tekst polecenia lub menu można zmienić w czasie `QueryStatus` wykonywania, zazwyczaj za pomocą metody.<br /><br /> Ważne dla: `Button`,`Menu`|
 |TextChangesButton (Zmiany tekstu)|Ważne dla:`Button`|
 |TextIsAnchorCommand (Wychwytyw.|W przypadku kontrolera menu tekst menu jest pobierany z polecenia domyślnego (kotwicy). Polecenie zakotwiczenia jest ostatnim wybranym lub zatrzaśniętym poleceniem. Jeśli ta flaga nie jest ustawiona, `MenuText` kontroler menu używa własnego pola. Jednak kliknięcie kontrolera menu nadal włącza ostatnio wybrane polecenie z tego kontrolera.<br /><br /> Zaleca się połączenie tej flagi `TextChanges` z flagą.<br /><br /> Ta flaga dotyczy tylko menu typu MenuController lub MenuControllerLatched.<br /><br /> Ważne dla:`Menu`|

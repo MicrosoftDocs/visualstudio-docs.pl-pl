@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233072"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649630"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Język JavaScript w programie Visual Studio 2017
 
@@ -58,7 +58,7 @@ Wymagane ustawienia dla pliku tsconfig są następujące:
 Do tego ustawienia należy dodać lokalizację wyjściową, a także foldery inne niż te, takie jak `node_modules` lub `temp`, które.
 - `enableAutoDiscovery`: To ustawienie umożliwia automatyczne wykrywanie i pobieranie plików definicji zgodnie z wcześniejszym opisem.
 - `compileOnSave`: To ustawienie informuje kompilator, czy należy ponownie skompilować za każdym razem, gdy plik źródłowy jest zapisywany w programie Visual Studio.
-- `typeAcquisition`: Ten zestaw ustawień kontroluje zachowanie automatycznego pozyskiwania typu (dalsze wyjaśnienie w [tej sekcji)](/visualstudio/ide/javascript-intellisense#Auto)
+- `typeAcquisition`: Ten zestaw ustawień kontroluje zachowanie automatycznego pozyskiwania typu (dalsze wyjaśnienie w [tej sekcji)](../ide/javascript-intellisense.md#Auto)
 
 Aby przekonwertować pliki JavaScript na moduły CommonJS i umieścić je w folderze, `./out` można użyć następującego `tsconfig.json` pliku:
 

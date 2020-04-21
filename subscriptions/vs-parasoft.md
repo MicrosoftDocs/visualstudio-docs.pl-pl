@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję Parasoft Virtualize/SOA Test Professional zawartą w subskrypcji programu Visual Studio.
-ms.openlocfilehash: 5f6673ecd3721232feb727ceda2c399e2ee12348
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: 320223c76178259d86c2abc942a5852115c6c94a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301911"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649470"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop w subskrypcjach programu Visual Studio
 
@@ -47,7 +47,7 @@ Testuj wcześniej i częściej.  Symuluj i testuj zachowanie niedostępnych rozw
 
 9. Wybierz żądany język i kliknij przycisk **OK**.
 
-10. Uruchomi się Kreator instalacji Parasoft SOAtest & Virtualize.  Kliknij przycisk **alej**.
+10. Uruchomi się Kreator instalacji Parasoft SOAtest & Virtualize.  Kliknij przycisk **Dalej**.
     > [!div class="mx-imgBorder"]
     > ![Rozpoczęcie instalacji parasoft benefit](_img/vs-parasoft/vs-parasoft-start-install.png)
 

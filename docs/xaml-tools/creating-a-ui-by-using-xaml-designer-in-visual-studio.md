@@ -12,16 +12,16 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79190343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649620"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
 
-Projektant XAML w programie Visual Studio i Blend dla programu Visual Studio udostępnia interfejs wizualny ułatwiające projektowanie aplikacji opartych na języku XAML, takich jak WPF, PLATFORMY UNIWERSALNEJ systemu Windows i Xamarin.Forms apps. Interfejsy użytkownika dla aplikacji można tworzyć, przeciągając kontrolki z okna Przybornik (okno Zasoby w programie Blend for Visual Studio) i ustawiając właściwości w oknie Właściwości. Można również edytować XAML bezpośrednio w widoku XAML.
+Projektant XAML w programie Visual Studio i Blend dla programu Visual Studio udostępnia interfejs wizualny ułatwiające projektowanie aplikacji opartych na języku XAML, takich jak WPF i platformy uniwersalnej systemu Windows. Interfejsy użytkownika dla aplikacji można tworzyć, przeciągając kontrolki z okna Przybornik (okno Zasoby w programie Blend for Visual Studio) i ustawiając właściwości w oknie Właściwości. Można również edytować XAML bezpośrednio w widoku XAML.
 
 Dla zaawansowanych użytkowników można nawet [dostosować projektanta XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 

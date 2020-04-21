@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78937555"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649613"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zapisywanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 
@@ -79,7 +79,7 @@ Aby włączyć dostęp do funkcji w projekcie w ramach testu, dodaj odwołanie d
 
 ### <a name="link-to-object-or-library-files"></a>Łącze do plików obiektów lub bibliotek
 
-Jeśli kod testowy nie eksportuje funkcji, które chcesz przetestować, można dodać pliki wyjściowe obj lub lib do zależności projektu testowego. Aby uzyskać więcej informacji, zobacz [Aby połączyć testy z plikami obiektu lub biblioteki](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files).
+Jeśli kod testowy nie eksportuje funkcji, które chcesz przetestować, można dodać pliki wyjściowe obj lub lib do zależności projektu testowego. Aby uzyskać więcej informacji, zobacz [Aby połączyć testy z plikami obiektu lub biblioteki](how-to-use-microsoft-test-framework-for-cpp.md#object_files).
 
 ### <a name="add-include-directives-for-header-files"></a>Dodawanie #include dyrektyw dla plików nagłówkowych
 

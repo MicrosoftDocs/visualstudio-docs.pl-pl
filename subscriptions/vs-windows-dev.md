@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o koncie dewelopera systemu Windows dołączonym do subskrypcji programu Visual Studio.
-ms.openlocfilehash: 795eccdf72fad7df760d709b44351444b6dea424
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: c3764330b5ace58f976f726770fa7a3e9ed2a4ed
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301850"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649706"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera systemu Windows w subskrypcjach programu Visual Studio
 Konto dewelopera systemu Windows, dołączone do wybranej subskrypcji programu Visual Studio, umożliwia przesyłanie bezpłatnych i płatnych aplikacji systemu Windows do Sklepu Windows.
@@ -22,7 +22,7 @@ Aby korzystać z konta dewelopera systemu Windows, musisz skonfigurować konto l
 
 Zaleca się utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przykład w Google Chrome utwórz nowe okno "incognito".  W programie Internet Explorer utwórz nowe okno "InPrivate".
 
-1. Zaloguj się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)do .
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Znajdź kafelek Konto dewelopera systemu Windows w sekcji Narzędzia i kliknij łącze **Pobierz kod** u dołu kafelka korzyści.  Skopiuj kod do schowka, a następnie kliknij przycisk **Aktywuj**.
    > [!div class="mx-imgBorder"]
    > ![Kafelek Korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
@@ -36,7 +36,7 @@ Zaleca się utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na prz
 7. Utwórz nazwę wyświetlaną wydawcy.  Będzie to unikatowa nazwa, która klienci zobaczą skojarzone z twoimi aplikacjami, dodatkami i usługami.
 8. Podaj informacje kontaktowe i preferowany język poczty e-mail, a następnie kliknij przycisk **Dalej**.
 9. Może pojawić się prośba o zweryfikowanie hasła.  Wprowadź go i kliknij przycisk **Zaloguj**się .
-10. Na stronie Rejestracja — płatność wklej kod skopiowany wcześniej do pola Kod promocyjny.  Strona zostanie zaktualizowana, aby pokazać, że *płatność nie jest wymagana.*  Kliknij przycisk **alej**.
+10. Na stronie Rejestracja — płatność wklej kod skopiowany wcześniej do pola Kod promocyjny.  Strona zostanie zaktualizowana, aby pokazać, że *płatność nie jest wymagana.*  Kliknij przycisk **Dalej**.
 11. Przejrzyj informacje o koncie, zapoznaj się z Umową dewelopera aplikacji i kliknij to pole wyboru, aby wskazać akceptację warunków.  Następnie kliknij przycisk **Zakończ**.
 12. Kliknij **pozycję Przejdź do pulpitu nawigacyjnego,** aby rozpocząć korzystanie z konta dewelopera systemu Windows!
 

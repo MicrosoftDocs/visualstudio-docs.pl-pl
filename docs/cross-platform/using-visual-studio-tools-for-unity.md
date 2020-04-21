@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1bca9bed18de822de71ca441387adeaefc65ec3
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302260"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649395"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Korzystanie z narzędzi Visual Studio Tools for Unity
 
@@ -157,7 +157,7 @@ Można debugować kompilacje rozwoju różnych odtwarzaczy Unity z Visual Studio
 
    ![Wybierz wystąpienie Unity, z którą chcesz się połączyć.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
-   **Project**
+   **Projekt**
 
    Nazwa projektu Unity, który jest uruchomiony w tym wystąpieniu Unity.
 
@@ -202,7 +202,7 @@ Należy zauważyć, że scenariusz opisany w tym miejscu zakłada, że masz kod 
 
    Pliki PDB są potrzebne do debugowania, ponieważ zawierają symbole debugowania biblioteki DLL i mapują kod biblioteki DLL na formularz kodu źródłowego. Jeśli są przeznaczone dla starszego środowiska uruchomieniowego, Visual Studio Tools for Unity użyje informacji z biblioteki DLL i PDB do utworzenia biblioteki DLL. MDB, który jest formatem symbolu debugowania używanym przez starszy aparat skryptów Unity. Jeśli są przeznaczone dla nowego środowiska uruchomieniowego i przy użyciu Portable-PDB, Visual Studio Tools for Unity nie będzie próbował wykonać żadną konwersję symboli, jak nowy środowisko uruchomieniowe Unity jest w stanie natywnie korzystać z portable-PDB.
 
-   Więcej informacji na temat generowania PDB można znaleźć [tutaj](/visualstudio/debugger/how-to-set-debug-and-release-configurations). Jeśli są przeznaczone dla nowego środowiska uruchomieniowego, upewnij się, że "Debugowanie informacje" jest ustawiona na "Przenośny", w celu prawidłowego generowania Portable-PDB. Jeśli kierujesz starsze środowisko uruchomieniowe, musisz użyć "Pełne".
+   Więcej informacji na temat generowania PDB można znaleźć [tutaj](../debugger/how-to-set-debug-and-release-configurations.md). Jeśli są przeznaczone dla nowego środowiska uruchomieniowego, upewnij się, że "Debugowanie informacje" jest ustawiona na "Przenośny", w celu prawidłowego generowania Portable-PDB. Jeśli kierujesz starsze środowisko uruchomieniowe, musisz użyć "Pełne".
 
 4. Debuguj kod. Teraz można debugować kod źródłowy biblioteki DLL wraz z kodem źródłowym projektu Unity i używać wszystkich funkcji debugowania, które są używane, takich jak punkty przerwania i przechodzenie przez kod.
 

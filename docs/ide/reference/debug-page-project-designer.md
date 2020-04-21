@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595725"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649438"
 ---
 # <a name="debug-page-project-designer"></a>Strona debugowania, Projektant projektu
 
@@ -34,7 +34,7 @@ Aby uzyskać dostęp do strony **Debugowania,** wybierz węzeł projektu w **Eks
 
 Poniższe opcje umożliwiają wybranie konfiguracji i platformy do wyświetlenia lub zmodyfikowania.
 
-**Konfiguracja**
+**Konfigurowanie**
 
 Określa ustawienia konfiguracji, które mają być wyświetlane lub modyfikowane. Ustawienia mogą być **Debugowanie** (domyślne), **Release**lub **Wszystkie konfiguracje**.
 
@@ -87,5 +87,5 @@ Zaznacz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć debugowanie
 - [Pierwsze spojrzenie na debugera](../../debugger/debugger-feature-tour.md)
 - [Ustawienia projektu dla konfiguracji debugowania języka C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Porady: debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Bezpieczne aplikacje ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Porady: tworzenie i edycja konfiguracji](../../ide/how-to-create-and-edit-configurations.md)

@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113711"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649195"
 ---
 # <a name="remove-visual-studio"></a>Usuwanie programu Visual Studio
 
@@ -51,10 +51,10 @@ Oto jak uruchomić `InstallCleanup.exe` narzędzie:
 1. Otwórz wiersz polecenia administratora. Aby otworzyć wiersz polecenia administratora, wykonaj następujące czynności:
    * Wpisz **cmd** w polu "Wpisz tutaj, aby wyszukać".
    * Kliknij prawym przyciskiem myszy **wiersz polecenia**, a następnie wybierz polecenie Uruchom **jako administrator**.
-1. Wprowadź pełną ścieżkę `InstallCleanup.exe` narzędzia i dodaj preferowany przełącznik wiersza polecenia. Domyślnie ścieżka narzędzia jest następująca:
+1. Wprowadź pełną ścieżkę `InstallCleanup.exe` narzędzia i dodaj preferowany przełącznik wiersza polecenia. Domyślnie ścieżka narzędzia jest następująca. Podwójne cudzysłowy zawierają polecenie zawierające spacje:
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]
@@ -64,7 +64,7 @@ Oto jak uruchomić `InstallCleanup.exe` narzędzie:
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Instalacja programu Visual Studio](install-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)
 * [Modyfikowanie programu Visual Studio](modify-visual-studio.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

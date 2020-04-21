@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ef831b5ffee172b642572535162713a53d8ae578
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 31eab6c10451bb6be9e53870bf2724c188d650f4
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544331"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649510"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
@@ -27,8 +27,6 @@ Integracja programu Visual Studio z npm różni się w zależności od typu proj
 * [Node.js](#nodejs-projects)
 * [ASP.NET Core](#aspnet-core-projects)
 * [Otwórz folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
-
-*package.json* to plik używany przez npm do zarządzania zależnościami pakietów i wersjami pakietów dla pakietów zainstalowanych lokalnie. Aby uzyskać więcej informacji na temat tego pliku, zobacz [package.json configuration](../javascript/configure-packages-with-package-json.md).
 
 > [!Important]
 > npm oczekuje *node_modules* folderu i *package.json* w katalogu głównym projektu. Jeśli struktura folderów aplikacji jest inna, należy zmodyfikować strukturę folderów, jeśli chcesz zarządzać pakietami npm przy użyciu programu Visual Studio.
@@ -60,7 +58,7 @@ W tym oknie można wyszukać pakiet, określić opcje i zainstalować.
 ![Szukaj pakietu npm](../javascript/media/search-package.png)
 
 * **Typ zależności** — wybierane między pakietami **Standard,** **Development**i **Optional.** Standard określa, że pakiet jest zależnością środowiska uruchomieniowego, podczas gdy programowanie określa, że pakiet jest wymagany tylko podczas tworzenia.
-* **Dodaj do package.json** — ta opcja jest przestarzała
+* **Dodaj do package.json** - Zalecane. Ta opcja konfigurowalna jest przestarzała.
 * **Wybrana wersja** — wybierz wersję pakietu, który chcesz zainstalować.
 * **Inne argumenty npm** — określanie innych standardowych argumentów npm. Na przykład można wprowadzić wartość wersji, taką jak `@~0.8` zainstalowanie określonej wersji, która nie jest dostępna na liście wersji.
 
@@ -83,10 +81,28 @@ pakiety npm są wyświetlane w Eksploratorze rozwiązań. Wpisy w węźle **npm*
 * ![Pakiet](../javascript/media/extraneous-npm.png) obce - Zainstalowany, ale nie jawnie wymienione w package.json
 * ![Brakujący pakiet](../javascript/media/missing-npm.png) - Nie zainstalowany, ale wymienione w package.json
 
+::: moniker range=">=vs-2019"
+Kliknij prawym przyciskiem myszy węzeł **npm,** aby podjąć jedną z następujących czynności:
+
+* **Instalowanie nowych pakietów npm** Otwiera interfejs użytkownika, aby zainstalować nowe pakiety
+* **Instalowanie pakietów npm** Uruchamia polecenie instalacji npm, aby zainstalować wszystkie pakiety wymienione w *pliku package.json*. (Działa.) `npm install`
+* **Aktualizowanie pakietów npm** Aktualizuje pakiet do wersji określonej w *package.json*. (Działa.) `npm update --save`
+
+Kliknij prawym przyciskiem myszy węzeł pakietu, aby podjąć jedną z następujących akcji:
+
+* **Instalowanie pakietów npm** Uruchamia polecenie instalacji npm w celu zainstalowania wersji pakietu wymienionej w *pliku package.json*. (Działa.) `npm install`
+* **Aktualizacja pakietów npm** Aktualizuje pakiet do wersji określonej w *package.json*. (Uruchom.) `npm update --save`
+* **Odinstalowywanie pakietów npm** Odinstaluj pakiet i usuń go `npm uninstall --save`z *pliku package.json* (uruchamia .)
+::: moniker-end
+::: moniker range="vs-2017"
 Kliknij prawym przyciskiem myszy węzeł pakietu lub węzeł **npm,** aby podjąć jedną z następujących akcji:
 * **Instalowanie brakujących pakietów** wymienionych w *pliku package.json*
-* **Aktualizowanie pakietów** do najnowszej wersji
+* **Aktualizacja pakietów npm** do najnowszej wersji
 * **Odinstalowywanie pakietu** i usuwanie z *pliku package.json*
+::: moniker-end
+
+>[!NOTE]
+> Aby uzyskać pomoc dotyczącą rozwiązywania problemów z pakietami npm, zobacz [Rozwiązywanie problemów](#troubleshooting-npm-packages).
 
 ### <a name="use-the-npm-command-in-the-nodejs-interactive-window-nodejs"></a><a name="interactive"></a>Użyj polecenia .npm w oknie interaktywnym Node.js (node.js)
 
@@ -138,7 +154,7 @@ Jeśli projekt nie zawiera jeszcze pliku *package.json,* można dodać jeden, ab
 Po zapisaniu pliku program Visual Studio dodaje pakiet w węźle **Zależności / npm** w Eksploratorze rozwiązań. Jeśli nie widzisz węzła, kliknij prawym przyciskiem myszy **package.json** i wybierz polecenie **Przywróć pakiety**.
 
 >[!NOTE]
-> W niektórych scenariuszach Eksplorator rozwiązań może nie wykazywać prawidłowego stanu zainstalowanych pakietów npm z powodu znanego problemu opisanego [w tym miejscu.](https://github.com/aspnet/Tooling/issues/479) Na przykład pakiet może pojawić się jako nie zainstalowany po zainstalowaniu. W większości przypadków można zaktualizować Eksploratora rozwiązań, usuwając *plik package.json*, ponowne uruchomienie programu Visual Studio i ponowne dodanie pliku *package.json* zgodnie z opisem we wcześniejszej części tego artykułu.
+> W niektórych scenariuszach Eksplorator rozwiązań może nie wykazywać prawidłowego stanu dla zainstalowanych pakietów npm. Aby uzyskać więcej informacji, zobacz temat [Rozwiązywanie problemów](#troubleshooting-npm-packages).
 
 ### <a name="install-packages-using-packagejson-aspnet-core"></a><a name="npmInstallPackage"></a>Instalowanie pakietów przy użyciu pliku package.json (ASP.NET Core)
 
@@ -155,4 +171,14 @@ Po zapisaniu pliku program Visual Studio dodaje pakiet w węźle **Zależności 
 Zainstalowanie pakietu może potrwać kilka minut. Sprawdź postęp instalacji pakietu, przełączając się na dane **wyjściowe npm** w oknie **Dane wyjściowe.**
 
 ![npm wyjście](../javascript/media/npm-output.png)
+
+## <a name="troubleshooting-npm-packages"></a>Rozwiązywanie problemów z pakietami npm
+
+* npm wymaga Node.js Jeśli nie masz zainstalowanego node.js, zalecamy zainstalowanie wersji LTS z witryny [node.js](https://nodejs.org/en/download/) w celu uzyskania najlepszej zgodności z zewnętrznymi strukturami i bibliotekami.
+
+* W przypadku projektów node.js należy zainstalować obciążenie **deweloperskie Node.js** dla obsługi npm.
+
+* W niektórych scenariuszach Eksplorator rozwiązań może nie wykazywać prawidłowego stanu zainstalowanych pakietów npm z powodu znanego problemu opisanego [w tym miejscu.](https://github.com/aspnet/Tooling/issues/479) Na przykład pakiet może pojawić się jako nie zainstalowany po zainstalowaniu. W większości przypadków można zaktualizować Eksploratora rozwiązań, usuwając *plik package.json*, ponowne uruchomienie programu Visual Studio i ponowne dodanie pliku *package.json* zgodnie z opisem we wcześniejszej części tego artykułu. Lub podczas instalowania pakietów można użyć okna npm Output, aby zweryfikować stan instalacji.
+
+* Jeśli podczas tworzenia aplikacji lub transpilowania kodu TypeScript są widoczne błędy, sprawdź, czy nie ma niezgodności pakietu npm jako potencjalnego źródła błędów. Aby ułatwić identyfikację błędów, sprawdź okno dane wyjściowe npm podczas instalowania pakietów, zgodnie z opisem opisanym wcześniej w tym artykule. Na przykład jeśli jedna lub więcej wersji pakietu npm zostało przestarzałych i powoduje błąd, może być konieczne zainstalowanie nowszej wersji w celu naprawienia błędów. Aby uzyskać informacje na temat *używania pliku package.json* do kontrolowania wersji pakietu npm, zobacz [konfigurację package.json](../javascript/configure-packages-with-package-json.md).
 

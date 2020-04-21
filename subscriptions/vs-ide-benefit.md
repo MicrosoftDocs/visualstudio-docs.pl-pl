@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Dowiedz się, jak pobrać i zainstalować ide programu Visual Studio zawarte w subskrypcji programu Visual Studio.
-ms.openlocfilehash: 154e5449603a8a92d2c2a52887fc4631b8dd0ab9
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 84666b0fd4362002fe15b21a6f23cd96c9cdc6a1
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273975"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649559"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Zaleta programu Visual Studio 2019
 
@@ -23,7 +23,7 @@ Jako subskrybent programu Visual Studio masz dostęp do środowiska IDE programu
 *(W tym przykładzie jest używany program Visual Studio Enterprise).*
 
 Aby pobrać IDE:
-1. Zaloguj się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)do .
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Znajdź kafelek IDE programu Visual Studio w sekcji Narzędzia i kliknij łącze **Pobierz** u dołu kafelka korzyści.  Można go również pobrać ze strony [Pliki do pobrania.](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
    > [!div class="mx-imgBorder"]
    > ![Kafelek programu Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)

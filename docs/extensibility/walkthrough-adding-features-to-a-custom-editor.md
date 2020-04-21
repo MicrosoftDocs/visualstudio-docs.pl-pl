@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65ef0edf76780ba7c8b6f5d9347195c286bec466
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697788"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649844"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Przewodnik: Dodawanie funkcji do edytora niestandardowego
 Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
@@ -34,7 +34,7 @@ Po utworzeniu edytora niestandardowego można dodać do niego więcej funkcji.
 
 3. Zaimplementuj fabrykę edytora, konfigurując <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfejs.
 
-     Aby uzyskać więcej informacji, zobacz [Fabryki edytorów](../extensibility/editor-factories.md).
+     Aby uzyskać więcej informacji, zobacz [Fabryki edytorów](/visualstudio/extensibility/editor-factories?view=vs-2015).
 
 4. Zdecyduj, czy edytor ma używać aktywacji w miejscu, czy uproszczonego osadzania do zarządzania oknem obiektu widoku dokumentu.
 

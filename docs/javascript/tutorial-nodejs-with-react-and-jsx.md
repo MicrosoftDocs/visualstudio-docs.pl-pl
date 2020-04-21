@@ -2,7 +2,7 @@
 title: Tworzenie aplikacji Node.js i React
 description: W tym samouczku utworzysz aplikację przy użyciu narzędzi Node.js dla programu Visual Studio
 ms.custom: mvc
-ms.date: 11/01/2019
+ms.date: 4/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 265445306babf198c3d0063252846414a589a29c
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550028"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649247"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
 Visual Studio umożliwia łatwe tworzenie projektu Node.js i doświadczenie IntelliSense i innych wbudowanych funkcji, które obsługują Node.js. W tym samouczku dla programu Visual Studio utworzysz projekt aplikacji sieci web Node.js z szablonu programu Visual Studio. Następnie należy utworzyć prostą aplikację za pomocą React.
 
-Niniejszy samouczek zawiera informacje na temat wykonywania następujących czynności:
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]
 > * Tworzenie projektu z użyciem narzędzia Node.js
 > * Dodawanie pakietów npm
@@ -72,7 +72,7 @@ webpack zawiera pliki JavaScript, dzięki czemu mogą działać w przeglądarce.
 
 * Musi być zainstalowany środowisko uruchomieniowe Node.js.
 
-    Ten samouczek został przetestowany w wersji 10.16.0.
+    Ten samouczek został przetestowany w wersji 12.6.2.
 
     Jeśli nie masz go zainstalowanego, zaleca się zainstalowanie wersji LTS z witryny [node.js](https://nodejs.org/en/download/) w celu uzyskania najlepszej zgodności z zewnętrznymi strukturami i bibliotekami. Node.js jest przeznaczony dla architektur 32-bitowych i 64-bitowych. Narzędzia Node.js w programie Visual Studio, uwzględnione w obciążeniu Node.js, obsługują obie wersje. Wymagany jest tylko jeden, a instalator Node.js obsługuje tylko jeden instalowany jednocześnie.
     
@@ -125,7 +125,7 @@ Ta aplikacja wymaga wielu modułów npm, aby działać poprawnie.
 
 1. W Eksploratorze rozwiązań (prawe okienko) kliknij prawym przyciskiem myszy węzeł **npm** w projekcie i wybierz polecenie **Zainstaluj nowe pakiety npm**.
 
-    W oknie dialogowym **Instalowanie nowych pakietów npm** można zainstalować najnowszą wersję pakietu lub określić wersję. Jeśli zdecydujesz się zainstalować bieżącą wersję tych pakietów, ale później napotkasz nieoczekiwane błędy, może być konieczne zainstalowanie dokładnych wersji pakietu opisanych w dalszej części tych kroków.
+    W oknie dialogowym **Instalowanie nowych pakietów npm** można zainstalować najnowszą wersję pakietu lub określić wersję. Jeśli zdecydujesz się zainstalować bieżącą wersję tych pakietów, ale później napotkasz nieoczekiwane błędy, możesz zainstalować dokładne wersje pakietu opisane w dalszej części tych kroków.
 
 1. W oknie dialogowym **Instalowanie nowych pakietów npm** wyszukaj pakiet react i wybierz pozycję **Zainstaluj pakiet,** aby go zainstalować.
 
@@ -139,14 +139,14 @@ Ta aplikacja wymaga wielu modułów npm, aby działać poprawnie.
 
     ```json
     "dependencies": {
-      "express": "~4.16.4",
+      "express": "~4.17.1",
       "path": "~0.12.7",
-      "react": "~16.6.0",
-      "react-dom": "~16.6.0",
-      "ts-loader": "~5.3.0",
-      "typescript": "~3.1.5",
-      "webpack": "~4.23.1",
-      "webpack-cli": "~3.1.2"
+      "react": "~16.13.1",
+      "react-dom": "~16.13.1",
+      "ts-loader": "~7.0.1",
+      "typescript": "~3.8.3",
+      "webpack": "~4.42.1",
+      "webpack-cli": "~3.3.11"
     }
     ```
 
@@ -154,7 +154,9 @@ Ta aplikacja wymaga wielu modułów npm, aby działać poprawnie.
 
 1. Zapisz zmiany.
 
-1. Kliknij prawym przyciskiem myszy węzeł **npm** w projekcie i wybierz polecenie **Aktualizuj pakiety npm**.
+1. Kliknij prawym przyciskiem myszy węzeł **npm** w projekcie i wybierz polecenie **Zainstaluj pakiety npm**.
+
+    To polecenie uruchamia polecenie instalowania npm bezpośrednio.
 
     W dolnym okienku wybierz okno **Dane wyjściowe,** aby wyświetlić postęp w instalacji pakietów. Instalacja może potrwać kilka minut i mogą nie być widoczne wyniki natychmiast. Aby wyświetlić dane wyjściowe, upewnij się, że w polu **Pokaż dane wyjściowe** w oknie Dane **wyjściowe** wybrano opcję **Npm.**
 

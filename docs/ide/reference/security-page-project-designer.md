@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593580"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649834"
 ---
 # <a name="security-page-project-designer"></a>Strona zabezpieczeń, Projektant projektu
 
@@ -76,11 +76,11 @@ Otwiera [okno dialogowe Zaawansowane ustawienia zabezpieczeń,](../../ide/refere
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>
-- [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)
+- [Zabezpieczenia dostępu do kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)
 - [Instrukcje: włączenie ustawień zabezpieczeń technologii ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
 - [Porady: ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Instrukcje: ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Porady: debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Bezpieczne aplikacje ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Kliknijonce zabezpieczenia i wdrażanie](../../deployment/clickonce-security-and-deployment.md)
 - [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)
 - [Zaawansowane ustawienia zabezpieczeń — Okno dialogowe](../../ide/reference/advanced-security-settings-dialog-box.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o korzyściach linkedin learning zawartych w ramach subskrypcji LinkedIn Premium zawartej w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 57744c21123188448048b469aa06153cf81a949f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: a0b837ce4a86b48acb690030c1a96064b336cd61
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273962"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649533"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyści linkedin learning w subskrypcjach programu Visual Studio
 
@@ -23,11 +23,11 @@ Aby skorzystać z usługi LinkedIn Learning, musisz mieć konto LinkedIn.  Jeśl
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 Aby aktywować subskrypcję LinkedIn Premium i korzyści linkedin learning:
-1. Zaloguj się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)do .
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź kafelek LinkedIn Learning w kategorii Edukacja i kliknij łącze **Pobierz kod.**
    > [!div class="mx-imgBorder"]
-   > ![Kafelek korzyści szkoleniowych linkedin](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
+   > ![Kafelek korzyści szkoleniowych linkedin](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
 
 3. Jeśli masz już konto LinkedIn i zalogujesz się automatycznie, natychmiast przejdziesz do strony aktywacji korzyści LinkedIn Learning.  Jeśli masz konto LinkedIn, ale nie jesteś automatycznie zalogowany, po prostu wprowadź swoją nazwę użytkownika i hasło, a następnie kliknij przycisk **Zaloguj**się .  Przejdź do [tego kroku,](#activate-your-offer) aby aktywować swoją ofertę.
 
