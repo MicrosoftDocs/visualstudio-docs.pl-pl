@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 31eab6c10451bb6be9e53870bf2724c188d650f4
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 0b4b699c01522878d83e59aadb2c6a54e9d7517f
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649510"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760167"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
@@ -84,15 +84,15 @@ pakiety npm są wyświetlane w Eksploratorze rozwiązań. Wpisy w węźle **npm*
 ::: moniker range=">=vs-2019"
 Kliknij prawym przyciskiem myszy węzeł **npm,** aby podjąć jedną z następujących czynności:
 
-* **Instalowanie nowych pakietów npm** Otwiera interfejs użytkownika, aby zainstalować nowe pakiety
+* **Instalowanie nowych pakietów npm** Otwiera interfejs użytkownika, aby zainstalować nowe pakiety.
 * **Instalowanie pakietów npm** Uruchamia polecenie instalacji npm, aby zainstalować wszystkie pakiety wymienione w *pliku package.json*. (Działa.) `npm install`
-* **Aktualizowanie pakietów npm** Aktualizuje pakiet do wersji określonej w *package.json*. (Działa.) `npm update --save`
+* **Aktualizowanie pakietów npm** Aktualizuje pakiety do najnowszych wersji, zgodnie z zakresem semver określonym w *package.json*. (Działa `npm update --save`.). Zakresy semver są zazwyczaj określane za pomocą "~" lub "^". Aby uzyskać więcej informacji, [konfiguracja package.json](../javascript/configure-packages-with-package-json.md).
 
 Kliknij prawym przyciskiem myszy węzeł pakietu, aby podjąć jedną z następujących akcji:
 
 * **Instalowanie pakietów npm** Uruchamia polecenie instalacji npm w celu zainstalowania wersji pakietu wymienionej w *pliku package.json*. (Działa.) `npm install`
-* **Aktualizacja pakietów npm** Aktualizuje pakiet do wersji określonej w *package.json*. (Uruchom.) `npm update --save`
-* **Odinstalowywanie pakietów npm** Odinstaluj pakiet i usuń go `npm uninstall --save`z *pliku package.json* (uruchamia .)
+* **Aktualizacja pakietów npm** Aktualizuje pakiet do najnowszej wersji, zgodnie z zakresem semver określonym w *package.json*. (Uruchom.) `npm update --save` Zakresy semver są zazwyczaj określane za pomocą "~" lub "^".
+* **Odinstalowywanie pakietów npm** Odinstalowuje pakiet i usuwa go z *package.json* (uruchamia `npm uninstall --save`.)
 ::: moniker-end
 ::: moniker range="vs-2017"
 Kliknij prawym przyciskiem myszy węzeł pakietu lub węzeł **npm,** aby podjąć jedną z następujących akcji:

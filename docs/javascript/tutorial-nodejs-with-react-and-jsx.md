@@ -1,8 +1,8 @@
 ---
 title: Tworzenie aplikacji Node.js i React
 description: W tym samouczku utworzysz aplikację przy użyciu narzędzi Node.js dla programu Visual Studio
-ms.custom: mvc
-ms.date: 4/20/2020
+ms.custom: ''
+ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 265445306babf198c3d0063252846414a589a29c
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649247"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760123"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -106,7 +106,7 @@ Najpierw utwórz projekt aplikacji sieci web Node.js.
 
     (3) Węzeł npm pokazuje zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm za pomocą okna dialogowego lub zainstalować i zaktualizować pakiety przy użyciu ustawień w *pliku package.json* i kliknij prawym przyciskiem myszy opcje w węźle npm.
 
-    (4) *package.json* jest plikiem używanym przez npm do zarządzania zależnościami pakietów i wersjami pakietów dla pakietów zainstalowanych lokalnie. Aby uzyskać więcej informacji na temat tego pliku, zobacz [konfigurację package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* jest plikiem używanym przez npm do zarządzania zależnościami pakietów i wersjami pakietów dla pakietów zainstalowanych lokalnie. Aby uzyskać więcej informacji, zobacz [Zarządzanie pakietami npm](../javascript/npm-package-management.md).
 
     (5) Pliki projektu, takie jak *server.js* pojawiają się w węźle projektu. *server.js* jest plik startowy projektu i dlatego pojawia się **pogrubioną**. Plik startowy można ustawić, klikając prawym przyciskiem myszy plik w projekcie i wybierając **polecenie Ustaw jako plik startowy Node.js**.
 
@@ -129,7 +129,7 @@ Ta aplikacja wymaga wielu modułów npm, aby działać poprawnie.
 
 1. W oknie dialogowym **Instalowanie nowych pakietów npm** wyszukaj pakiet react i wybierz pozycję **Zainstaluj pakiet,** aby go zainstalować.
 
-    ![Instalowanie pakietów npm](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![Instalowanie pakietów npm](../javascript/media/tutorial-nodejs-react-install-package.png)
 
     Wybierz okno **Dane wyjściowe,** aby wyświetlić postęp w instalacji pakietu (wybierz **npm** w polu **Pokaż dane wyjściowe z).** Po zainstalowaniu pakiet pojawia się pod **węzłem npm.**
 
@@ -162,7 +162,7 @@ Ta aplikacja wymaga wielu modułów npm, aby działać poprawnie.
 
     Oto moduły npm, które pojawiają się w Eksploratorze rozwiązań po ich zainstalowaniu.
 
-    ![pakiety npm](../javascript/media/tutorial-nodejs-react-npm-modules.png)
+    ![pakiety npm](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
     > Jeśli wolisz zainstalować pakiety npm za pomocą wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Otwórz wiersz polecenia tutaj**. Użyj standardowych poleceń Node.js, aby zainstalować pakiety.
@@ -312,7 +312,7 @@ W poprzednich krokach dodano *webpack-config.js* do projektu. Następnie należy
 
     Okno wiersza polecenia pokazuje wynik.
 
-    ![Uruchamianie pakietu internetowego](../javascript/media/tutorial-nodejs-react-run-webpack.png)
+    ![Uruchamianie pakietu internetowego](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
     Jeśli widzisz żadnych błędów zamiast poprzedniego danych wyjściowych, należy je rozwiązać, zanim aplikacja będzie działać. Jeśli wersje pakietu npm różnią się od wersji pokazanych w tym samouczku, może to być źródłem błędów. Jednym ze sposobów naprawienia błędów jest użycie dokładnych wersji pokazanych we wcześniejszych krokach. Ponadto jeśli jedna lub więcej z tych wersji pakietu została przestarzała i powoduje błąd, może być konieczne zainstalowanie nowszej wersji, aby naprawić błędy. Aby uzyskać informacje na temat *używania pliku package.json* do kontrolowania wersji pakietu npm, zobacz [konfigurację package.json](../javascript/configure-packages-with-package-json.md).
 
@@ -342,7 +342,7 @@ Począwszy od programu Visual Studio 2019 wymagany jest skrypt kompilacji. Zamia
 
 ## <a name="run-the-app"></a>Uruchomienie aplikacji
 
-1. Wybierz Microsoft Edge lub Chrome jako bieżący cel debugowania.
+1. Jako bieżący cel debugowania wybierz **serwer www (Google Chrome)** lub **serwer www (Microsoft Edge).**
 
     ::: moniker range=">=vs-2019"
     ![Wybierz Chrome jako miejsce docelowe debugowania](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -351,12 +351,7 @@ Począwszy od programu Visual Studio 2019 wymagany jest skrypt kompilacji. Zamia
     ![Wybierz Chrome jako miejsce docelowe debugowania](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    ::: moniker range=">=vs-2019"
-    Jeśli Chrome jest dostępny na twoim komputerze, ale nie jest dostępny jako opcja, wybierz **pozycję Przeglądarka internetowa (nazwa przeglądarki)** > **Wybierz przeglądarkę internetową** z listy rozwijanej docelowej debugowania i wybierz **Chrome** jako domyślny cel przeglądarki.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Jeśli Chrome jest dostępny na twoim komputerze, ale nie jest dostępny jako opcja, wybierz **przeglądarkę internetową (nazwa przeglądarki)** > **Google Chrome** z listy rozwijanej docelowej debugowania i wybierz **Chrome** jako domyślny cel przeglądarki.
-    ::: moniker-end
+    Jeśli Chrome jest dostępny na twoim komputerze, ale nie jest dostępny jako opcja, wybierz pozycję **Przeglądaj z** listy rozwijanej docelowej debugowania i wybierz Chrome jako domyślny cel przeglądarki (wybierz **pozycję Ustaw jako domyślny).**
 
 1. Aby uruchomić aplikację, naciśnij **klawisz F5** **(Debug** > **start debugowania)** lub zielony przycisk strzałki.
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235109"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744974"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki start: tworzenie pierwszej aplikacji Vue.js za pomocą programu Visual Studio
 
@@ -103,19 +103,24 @@ Najpierw utworzysz projekt aplikacji sieci web Vue.js.
 
 ## <a name="build-the-project"></a>Kompilowanie projektu
 
+::: moniker range=">=vs-2019"
+1. Następnie **wybierz** > build **build solution** do tworzenia projektu.
+
+1. Sprawdź **dane wyjściowe** okna, aby wyświetlić wyniki kompilacji i wybierz **build** z **listy Pokaż dane wyjściowe.**
+::: moniker-end
+::: moniker range="vs-2017"
 1. (Tylko projekt TypeScript) W programie Visual Studio wybierz pozycję **Zbuduj** > **czyste rozwiązanie**.
 
-    ::: moniker range=">=vs-2019"
-    W szablonie TypeScript dołączonym do programu Visual Studio 2019 pomiń ten krok.
-    ::: moniker-end
+1. Następnie **wybierz** > build **build solution** do tworzenia projektu.
 
-1. Następnie **wybierz** > build**build solution** do tworzenia projektu. Sprawdź **dane wyjściowe** okna, aby wyświetlić wyniki kompilacji i wybierz **build** z **listy Pokaż dane wyjściowe.**
+1. Sprawdź **dane wyjściowe** okna, aby wyświetlić wyniki kompilacji i wybierz **build** z **listy Pokaż dane wyjściowe.**
+::: moniker-end
 
-    Szablon projektu JavaScript Vue.js (i starsze wersje szablonu `build` TypeScript) używają skryptu npm, konfigurując zdarzenie kompilacji postu. Jeśli chcesz zmodyfikować to ustawienie, otwórz plik projektu (*\<projectname\>.njsproj*) z Eksploratora Windows i znajdź ten wiersz kodu:
+Szablon projektu JavaScript Vue.js (i starsze wersje szablonu `build` TypeScript) używają skryptu npm, konfigurując zdarzenie kompilacji postu. Jeśli chcesz zmodyfikować to ustawienie, otwórz plik projektu (*\<projectname\>.njsproj*) z Eksploratora Windows i znajdź ten wiersz kodu:
 
-    ```xml
-    <PostBuildEvent>npm run build</PostBuildEvent>
-    ```
+```xml
+<PostBuildEvent>npm run build</PostBuildEvent>
+```
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
@@ -135,6 +140,6 @@ Gratulujemy ukończenia tego szybkiego startu! Mamy nadzieję, że dowiedziałe�
 
 ## <a name="next-steps"></a>Następne kroki
 
+- Przejdź przez artykuł dla [Vue.js](create-application-with-vuejs.md)
 - Przejdź przez [samouczek dla Node.js i Express](tutorial-nodejs.md)
-- Przejdź przez [samouczek dla Node.js i react](tutorial-nodejs-with-react-and-jsx.md)
 - [Wdrażanie aplikacji w usłudze aplikacji systemu Linux](../javascript/publish-nodejs-app-azure.md)

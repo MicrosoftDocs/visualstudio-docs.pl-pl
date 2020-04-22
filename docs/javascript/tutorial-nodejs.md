@@ -1,7 +1,7 @@
 ---
 title: Tworzenie aplikacji Node.js i Express
 description: W tym samouczku utworzysz aplikację przy użyciu narzędzi Node.js dla programu Visual Studio
-ms.date: 09/24/2018
+ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224527"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744889"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i Express w programie Visual Studio
 
@@ -109,13 +109,13 @@ W tym samouczku należy rozpocząć od prostego projektu zawierającego kod dla 
 
     (3) Węzeł npm pokazuje zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm za pomocą okna dialogowego lub zainstalować i zaktualizować pakiety przy użyciu ustawień w *pliku package.json* i kliknij prawym przyciskiem myszy opcje w węźle npm.
 
-    (4) *package.json* jest plikiem używanym przez npm do zarządzania zależnościami pakietów i wersjami pakietów dla pakietów zainstalowanych lokalnie. Aby uzyskać więcej informacji na temat tego pliku, zobacz [konfigurację package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* jest plikiem używanym przez npm do zarządzania zależnościami pakietów i wersjami pakietów dla pakietów zainstalowanych lokalnie. Aby uzyskać więcej informacji, zobacz [Zarządzanie pakietami npm](../javascript/npm-package-management.md).
 
     (5) Pliki projektu, takie jak *app.js* pojawiają się w węźle projektu. *app.js* jest plik startowy projektu i dlatego pojawia się **pogrubioną**. Plik startowy można ustawić, klikając prawym przyciskiem myszy plik w projekcie i wybierając **polecenie Ustaw jako plik startowy Node.js**.
 
 1. Otwórz węzeł **npm** i upewnij się, że wszystkie wymagane pakiety npm są obecne.
 
-    Jeśli brakuje pakietów (ikona wykrzyknika), możesz kliknąć prawym przyciskiem myszy węzeł **npm** i wybrać polecenie **Zainstaluj brakujące pakiety npm**.
+    Jeśli brakuje pakietów (ikona wykrzyknika), możesz kliknąć prawym przyciskiem myszy węzeł **npm** i wybrać **polecenie Zainstaluj pakiety npm**.
 
 ## <a name="add-some-code"></a>Dodaj kod
 
@@ -194,7 +194,7 @@ IntelliSense to narzędzie programu Visual Studio, które pomaga podczas pisania
 
     Ostatni wiersz tej wiadomości informuje, że interpreter JavaScript`,`oczekuje przecinka ( ).
 
-1. W dolnym okienku kliknij kartę **Lista błędów.**
+1. W dolnym okienku kliknij kartę **Lista błędów** i wybierz pozycję **Kompilacja + IntelliSense** dla typu zgłoszonych problemów.
 
     Zobaczysz ostrzeżenie i opis wraz z numerem pliku i wiersza.
 
@@ -218,7 +218,7 @@ Następnie uruchomisz aplikację z dołączonym debugerem programu Visual Studio
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Wybierz miejsce docelowe debugowania na pasku narzędzi Debugowania, takie jak Microsoft Edge lub Chrome.
+1. Wybierz miejsce docelowe debugowania na pasku narzędzi Debugowania, takie jak **Serwer sieci Web (Google Chrome)** lub **Serwer sieci Web (Microsoft Edge).**
 
     ::: moniker range=">=vs-2019"
     ![Wybierz obiekt docelowy debugowania](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)

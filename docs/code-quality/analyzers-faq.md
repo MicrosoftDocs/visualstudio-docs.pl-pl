@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 56b0c0defe5593c9dc0e2111ef5984a5c51eaf55
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301693"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760134"
 ---
 # <a name="code-analysis-faq"></a>Analiza kodu — często zadawane pytania
 
@@ -87,6 +87,12 @@ Oprócz zestawów reguł i plików EditorConfig, niektóre analizatory są konfi
      <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
      ...
      ```
+
+## <a name="code-analysis-solution-property-page"></a>Strona właściwości rozwiązania do analizy kodu
+
+**P:** Gdzie znajduje się strona właściwości analizy kodu dla rozwiązania?
+
+**A:** Analiza kodu strony właściwości na poziomie rozwiązania został usunięty na rzecz bardziej niezawodne grupy właściwości udostępnionych. Do zarządzania analizą kodu na poziomie projektu, analiza kodu strony właściwości jest nadal dostępna. (W przypadku projektów zarządzanych zaleca się również migrację z zestawy reguł do EditorConfig dla konfiguracji reguły).  W przypadku udostępniania zestawów reguł w wielu/wszystkich projektach w rozwiązaniu lub repozytorium zaleca się zdefiniowanie grupy właściwości za pomocą właściwości CodeAnalysisRuleSet w pliku udostępnionych props/targets lub pliku Directory.props/Directory.targets. Jeśli nie masz takich wspólnych rekwizytów lub obiektów docelowych, które importują wszystkie projekty, należy rozważyć [dodanie takiej grupy właściwości do katalogu Directory.props lub katalogu Directory.targets w katalogu rozwiązań najwyższego poziomu, który jest automatycznie importowany we wszystkich plikach projektu zdefiniowanych w katalogu lub jego podkatarzy](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets).
 
 ## <a name="see-also"></a>Zobacz też
 
