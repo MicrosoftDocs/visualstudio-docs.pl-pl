@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Dowiedz się, jak administratorzy mogą określać identyfikator GUID subskrypcji subskrybentom
-ms.openlocfilehash: 722aaedcd6da0224311960d1587d0c2c24eec60f
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760161"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072596"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie określonych subskrypcji w portalu administracyjnym subskrypcji programu Visual Studio
 
@@ -49,6 +49,7 @@ Ostatnim krokiem jest pobranie szablonu **zbiorczego dodawania,** wypełnienie w
 
 > [!IMPORTANT]
 > Aby zapewnić pomyślne przesłanie, upewnij się, że:
+> - Używasz szablonu połączonego w oknie dialogowym po **wybraniu opcji Dodaj zbiorczo**.  Nie należy używać lokalnie przechowywanej kopii szablonu, ponieważ może ona nie zawierać wszystkich wymaganych pól.  Użycie starego szablonu spowoduje niepowodzenie przekazywania. 
 > - Wszystkie pola wyświetlane jako **wymagane** w szablonie są kompletne.
 > - W kolumnie **Komunikat o błędzie** nie ma żadnych błędów.
 > - Każdy identyfikator GUID jest używany tylko raz w szablonie. 

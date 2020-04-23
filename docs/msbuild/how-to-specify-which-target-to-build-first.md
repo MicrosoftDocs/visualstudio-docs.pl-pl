@@ -12,16 +12,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c679b2a43ec799035f9bafb6a03a546808498342
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543987"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072531"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Jak: Określ, który cel ma być najpierw zbudowany
 
-Plik projektu może zawierać `Target` jeden lub więcej elementów, które definiują sposób budowy projektu. Aparat microsoft build engine (MSBuild) tworzy pierwszy projekt, który znajdzie, a wszelkie `DefaultTargets` zależności, `InitialTargets` chyba że plik projektu zawiera atrybut, atrybut lub obiekt docelowy jest określony w wierszu polecenia przy użyciu przełącznika **-target.**
+Plik projektu może zawierać `Target` jeden lub więcej elementów, które definiują sposób budowy projektu. Aparat microsoft build engine (MSBuild) tworzy pierwszy obiekt docelowy, który znajdzie, `DefaultTargets` a wszelkie `InitialTargets` zależności, chyba że plik projektu zawiera atrybut, atrybut lub obiekt docelowy jest określony w wierszu polecenia przy użyciu przełącznika **-target.**
 ## <a name="use-the-initialtargets-attribute"></a>Użyj atrybutu InitialTargets
 
 Atrybut `InitialTargets` `Project` elementu określa obiekt docelowy, który zostanie uruchomiony jako pierwszy, nawet jeśli `DefaultTargets` obiekty docelowe są określone w wierszu polecenia lub w atrybucie.

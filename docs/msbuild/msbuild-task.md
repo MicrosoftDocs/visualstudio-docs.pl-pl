@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a312bfe8c88b0ac523666779970cc28e3a7c798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633177"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072583"
 ---
 # <a name="msbuild-task"></a>zadanie MSBuild
 
@@ -42,6 +42,7 @@ Tworzy projekty MSBuild z innego projektu MSBuild.
 | `RemoveProperties` | Parametr `String` opcjonalny.<br /><br /> Określa zestaw właściwości globalnych do usunięcia. |
 | `RunEachTargetSeparately` | Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`zadanie MSBuild wywołuje każdy obiekt docelowy na liście przekazany do MSBuild po jednym na raz, a nie w tym samym czasie. Ustawienie tego `true` parametru na gwarancje, że kolejne obiekty docelowe są wywoływane, nawet jeśli wcześniej wywoływane obiekty docelowe nie powiodły się. W przeciwnym razie błąd kompilacji zatrzyma wywołanie wszystkich kolejnych obiektów docelowych. Wartość domyślna to `false`. |
 | `SkipNonexistentProjects` | Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`pliki projektu, które nie istnieją na dysku, zostaną pominięte. W przeciwnym razie takie projekty spowoduje błąd. |
+|`SkipNonexistentTargets`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`pliki projektu, które istnieją, `Targets` ale nie zawierają nazwy zostaną pominięte. W przeciwnym razie takie projekty spowoduje błąd. Wprowadzony w MSBuild 15.5.|
 | `StopOnFirstFailure` | Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`, gdy jeden z projektów nie uda się zbudować, nie więcej projektów zostanie zbudowany. Obecnie nie jest to obsługiwane podczas tworzenia równolegle (z wieloma procesorami). |
 | `TargetAndPropertyListSeparators` | Parametr `String[]` opcjonalny.<br /><br /> Określa listę obiektów docelowych i `Project` właściwości jako metadane elementu). Separatory zostaną un-escaped przed przetworzeniem. na przykład %3B (wysunięty znak ";") będzie traktowany tak, jakby był nieułomowanym ';'. |
 | `TargetOutputs` | Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Zwraca dane wyjściowe zbudowany obiektów docelowych ze wszystkich plików projektu. Zwracane są tylko dane wyjściowe z określonych obiektów docelowych, a nie wszystkie produkty, które mogą istnieć w przypadku obiektów docelowych, od których zależą te obiekty docelowe.<br /><br /> Parametr `TargetOutputs` zawiera również następujące metadane:<br /><br /> -   `MSBuildSourceProjectFile`: Plik projektu MSBuild, który zawiera obiekt docelowy, który ustawia dane wyjściowe.<br />-   `MSBuildSourceTargetName`: Cel, który ustawia dane wyjściowe. **Uwaga:**  Jeśli chcesz zidentyfikować dane wyjściowe z każdego pliku projektu `MSBuild` lub obiektu docelowego oddzielnie, uruchom zadanie oddzielnie dla każdego pliku projektu lub obiektu docelowego. Jeśli zadanie `MSBuild` zostanie uruchomione tylko raz, aby utworzyć wszystkie pliki projektu, dane wyjściowe wszystkich obiektów docelowych są zbierane w jedną tablicę. |
@@ -56,7 +57,7 @@ Tworzy projekty MSBuild z innego projektu MSBuild.
 
  To zadanie może przetwarzać nie tylko pliki projektu, ale także pliki rozwiązań.
 
- Każda konfiguracja, która jest wymagana przez MSBuild, aby umożliwić tworzenie projektów w tym samym czasie, nawet jeśli konfiguracja obejmuje infrastrukturę zdalną (na przykład porty, protokoły, limity czasu, ponownych prób i tak dalej), musi być konfigurowalna przy użyciu pliku konfiguracyjnego. Jeśli to możliwe, elementy konfiguracji powinny być określone `MSBuild` jako parametry zadania w zadaniu.
+ Każda konfiguracja, która jest wymagana przez MSBuild, aby umożliwić tworzenie projektów w tym samym czasie, nawet jeśli konfiguracja obejmuje infrastrukturę zdalną (na przykład porty, protokoły, limity czasu, ponownych prób i tak dalej), musi być konfigurowalna przy użyciu pliku konfiguracji. Jeśli to możliwe, elementy konfiguracji powinny być określone `MSBuild` jako parametry zadania w zadaniu.
 
  Począwszy od MSBuild 3.5, projekty rozwiązania teraz powierzchni TargetOutputs ze wszystkich projektów podrzędnych, które tworzy.
 
