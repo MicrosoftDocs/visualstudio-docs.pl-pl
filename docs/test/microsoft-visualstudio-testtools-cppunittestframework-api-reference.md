@@ -1,5 +1,5 @@
 ---
-title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
+title: Interfejs API Microsoft. VisualStudio. TestTools. CppUnitTestFramework
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
@@ -7,50 +7,50 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278648"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109432"
 ---
-# <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Odwołanie do interfejsu API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+# <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Dokumentacja interfejsu API Microsoft. VisualStudio. TestTools. CppUnitTestFramework
 
-W tym temacie wymieniono `Microsoft::VisualStudio::CppUnitTestFramework` publiczne elementy członkowskie obszaru nazw. Użyj tych interfejsów API do pisania testów jednostkowych języka C++ na podstawie struktury testów jednostek natywnych firmy Microsoft. Na końcu tematu znajduje się [przykład użycia.](#example)
+W tym temacie wymieniono publiczne elementy członkowskie `Microsoft::VisualStudio::CppUnitTestFramework` przestrzeni nazw. Za pomocą tych interfejsów API można pisać testy jednostkowe języka C++ w oparciu o środowisko testów jednostkowych firmy Microsoft. Na końcu tematu znajduje się [przykład użycia](#example) .
 
-Pliki nagłówka i lib znajdują się w * \<folderze instalacyjnym programu Visual Studio>\VC\Auxiliary\VS\UnitTest*.
+Pliki nagłówka i lib znajdują się w * \<folderze instalacyjnym programu Visual Studio> \vc\auxiliary\vs\unittest*.
 
-Ścieżki nagłówka i lib są automatycznie konfigurowane w projekcie testu macierzystego.
+Ścieżki nagłówka i lib są automatycznie konfigurowane w natywnym projekcie testowym.
 
 ## <a name="in-this-topic"></a><a name="In_this_topic"></a>W tym temacie
 
-[CppUnitTest.h](#cppUnitTest_h)
+[CppUnitTest. h](#cppUnitTest_h)
 
-- [Tworzenie klas i metod testów](#create_test_classes_and_methods)
+- [Tworzenie klas i metod testowych](#create_test_classes_and_methods)
 
-- [Inicjowanie i oczyszczanie](#Initialize_and_cleanup)
+- [Inicjuj i oczyść](#Initialize_and_cleanup)
 
-  - [Metody badań](#test_methods)
+  - [Metody testowe](#test_methods)
 
   - [Klasy testowe](#test_classes)
 
   - [Moduły testowe](#test_modules)
 
-- [Tworzenie atrybutów testu](#create_test_attributes)
+- [Utwórz atrybuty testu](#create_test_attributes)
 
   - [Atrybuty metody testowej](#test_method_attributes)
 
-  - [Testowanie atrybutów klasy](#test_class_attributes)
+  - [Atrybuty klasy testowej](#test_class_attributes)
 
   - [Atrybuty modułu testowego](#test_module_attributes)
 
   - [Wstępnie zdefiniowane atrybuty](#pre_defined_attributes)
 
-    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert. h](#cppUnitTestAssert_h)
 
   - [Potwierdzenia ogólne](#general_asserts)
 
-    - [Są równe](#general_are_equal)
+    - [Jest równe](#general_are_equal)
 
     - [Nie są równe](#general_are_not_equal)
 
@@ -62,15 +62,15 @@ Pliki nagłówka i lib znajdują się w * \<folderze instalacyjnym programu Visu
 
     - [Nie ma wartości null](#general_is_not_null)
 
-    - [Jest prawdziwa](#general_is_True)
+    - [Ma wartość true](#general_is_True)
 
-    - [Jest false](#general_is_false)
+    - [Ma wartość false](#general_is_false)
 
     - [Niepowodzenie](#general_Fail)
 
-  - [Potwierdzenia środowiska wykonawczego systemu Windows](#winrt_asserts)
+  - [Potwierdzenia środowisko wykonawcze systemu Windows](#winrt_asserts)
 
-    - [Są równe](#winrt_are_equal)
+    - [Jest równe](#winrt_are_equal)
 
     - [Są takie same](#winrt_are_same)
 
@@ -84,9 +84,9 @@ Pliki nagłówka i lib znajdują się w * \<folderze instalacyjnym programu Visu
 
   - [Potwierdzenia wyjątków](#exception_asserts)
 
-    - [Spodziewaj się wyjątku](#expect_exception)
+    - [Oczekiwanie wyjątku](#expect_exception)
 
-      [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger. h](#cppunittestlogger_h)
 
     - [Rejestratora](#logger)
 
@@ -94,15 +94,15 @@ Pliki nagłówka i lib znajdują się w * \<folderze instalacyjnym programu Visu
 
   - [Przykład użycia](#example)
 
-## <a name="cppunittesth"></a><a name="cppUnitTest_h"></a>CppUnitTest.h
+## <a name="cppunittesth"></a><a name="cppUnitTest_h"></a>CppUnitTest. h
 
-### <a name="create-test-classes-and-methods"></a><a name="create_test_classes_and_methods"></a>Tworzenie klas i metod testów
+### <a name="create-test-classes-and-methods"></a><a name="create_test_classes_and_methods"></a>Tworzenie klas i metod testowych
 
 ```cpp
 TEST_CLASS(className)
 ```
 
-Wymagane dla każdej klasy zawierającej metody badawcze. Identyfikuje *className* jako klasę testową. `TEST_CLASS`należy zadeklarować w zakresie namescape.
+Wymagane dla każdej klasy zawierającej metody testowe. Identyfikuje element *ClassName* jako klasę testową. `TEST_CLASS`musi być zadeklarowany w zakresie przestrzeni nazw.
 
 ```cpp
 TEST_METHOD(methodName)
@@ -111,11 +111,11 @@ TEST_METHOD(methodName)
 }
 ```
 
-Definiuje *methodName* jako metodę testową. `TEST_METHOD`muszą być zadeklarowane w zakresie klasy metody.
+Definiuje *MethodName* jako metodę testową. `TEST_METHOD`musi być zadeklarowany w zakresie klasy metody.
 
-### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a>Inicjowanie i oczyszczanie
+### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a>Inicjuj i oczyść
 
-#### <a name="test-methods"></a><a name="test_methods"></a>Metody badań
+#### <a name="test-methods"></a><a name="test_methods"></a>Metody testowe
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -124,7 +124,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-Definiuje *methodName* jako metodę, która jest uruchamiana przed uruchomieniem każdej metody testowej. `TEST_METHOD_INITIALIZE`można zdefiniować tylko raz w klasie badania i muszą być zdefiniowane w zakresie klasy badania.
+Definiuje *MethodName* jako metodę, która jest uruchamiana przed uruchomieniem każdej metody testowej. `TEST_METHOD_INITIALIZE`można zdefiniować tylko raz w klasie testowej i musi być zdefiniowany w zakresie klasy testowej.
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)
@@ -133,7 +133,7 @@ TEST_METHOD_CLEANUP(methodName)
 }
 ```
 
-Definiuje *methodName* jako metodę, która jest uruchamiana po uruchomieniu każdej metody testowej. `TEST_METHOD_CLEANUP`można zdefiniować tylko raz w klasie badania i muszą być zdefiniowane w zakresie klasy badania.
+Definiuje *MethodName* jako metodę, która jest uruchamiana po wykonaniu każdej metody testowej. `TEST_METHOD_CLEANUP`można zdefiniować tylko raz w klasie testowej i musi być zdefiniowany w zakresie klasy testowej.
 
 #### <a name="test-classes"></a><a name="test_classes"></a>Klasy testowe
 
@@ -144,7 +144,7 @@ TEST_CLASS_INITIALIZE(methodName)
 }
 ```
 
-Definiuje *methodName* jako metodę, która jest uruchamiana przed utworzeniem każdej klasy testowej. `TEST_CLASS_INITIALIZE`można zdefiniować tylko raz w klasie badania i muszą być zdefiniowane w zakresie klasy badania.
+Definiuje *MethodName* jako metodę, która jest uruchamiana przed utworzeniem każdej klasy testowej. `TEST_CLASS_INITIALIZE`można zdefiniować tylko raz w klasie testowej i musi być zdefiniowany w zakresie klasy testowej.
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)
@@ -153,7 +153,7 @@ TEST_CLASS_CLEANUP(methodName)
 }
 ```
 
-Definiuje *methodName* jako metodę, która jest uruchamiana po każdej klasy testowej jest tworzony. `TEST_CLASS_CLEANUP`można zdefiniować tylko raz w klasie badania i muszą być zdefiniowane w zakresie klasy badania.
+Definiuje *MethodName* jako metodę, która jest uruchamiana po utworzeniu każdej klasy testowej. `TEST_CLASS_CLEANUP`można zdefiniować tylko raz w klasie testowej i musi być zdefiniowany w zakresie klasy testowej.
 
 #### <a name="test-modules"></a><a name="test_modules"></a>Moduły testowe
 
@@ -164,15 +164,15 @@ TEST_MODULE_INITIALIZE(methodName)
 }
 ```
 
-Definiuje *metodęName,* która jest uruchamiana po załadowaniu modułu. `TEST_MODULE_INITIALIZE`można zdefiniować tylko raz w module testowym i muszą być zadeklarowane w zakresie obszaru nazw.
+Definiuje metodę *MethodName* , która jest uruchamiana podczas ładowania modułu. `TEST_MODULE_INITIALIZE`można zdefiniować tylko raz w module testowym i musi być zadeklarowany w zakresie przestrzeni nazw.
 
 ```cpp
 TEST_MODULE_CLEANUP(methodName)
 ```
 
-Definiuje *metodęName,* która jest uruchamiana, gdy moduł jest zwalniany. `TEST_MODULE_CLEANUP`można zdefiniować tylko raz w module testowym i muszą być zadeklarowane w zakresie obszaru nazw.
+Definiuje metodę *MethodName* , która jest uruchamiana, gdy moduł jest zwolniony. `TEST_MODULE_CLEANUP`można zdefiniować tylko raz w module testowym i musi być zadeklarowany w zakresie przestrzeni nazw.
 
-### <a name="create-test-attributes"></a><a name="create_test_attributes"></a>Tworzenie atrybutów testu
+### <a name="create-test-attributes"></a><a name="create_test_attributes"></a>Utwórz atrybuty testu
 
 #### <a name="test-method-attributes"></a><a name="test_method_attributes"></a>Atrybuty metody testowej
 
@@ -183,11 +183,11 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
-Dodaje atrybuty zdefiniowane `TEST_METHOD_ATTRIBUTE` za pomocą jednego lub więcej makr do testu metody testowejMethodName . *testMethodName*
+Dodaje atrybuty zdefiniowane z co najmniej jednym `TEST_METHOD_ATTRIBUTE` makrem do metody testowej *testMethodName*.
 
-Makro `TEST_METHOD_ATTRIBUTE` definiuje atrybut z *atrybutem nameeName* i *atrybutem valueValue*.
+`TEST_METHOD_ATTRIBUTE` Makro definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue*.
 
-#### <a name="test-class-attributes"></a><a name="test_class_attributes"></a>Testowanie atrybutów klasy
+#### <a name="test-class-attributes"></a><a name="test_class_attributes"></a>Atrybuty klasy testowej
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -196,9 +196,9 @@ BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
 END_TEST_CLASS_ATTRIBUTE()
 ```
 
-Dodaje atrybuty zdefiniowane `TEST_CLASS_ATTRIBUTE` za pomocą jednego lub więcej makr do testu klasy testowejClassName . *testClassName*
+Dodaje atrybuty zdefiniowane z co najmniej jednym `TEST_CLASS_ATTRIBUTE` makrem do klasy testowej *testClassName*.
 
-Makro `TEST_CLASS_ATTRIBUTE` definiuje atrybut z *atrybutem nameeName* i *atrybutem valueValue*.
+`TEST_CLASS_ATTRIBUTE` Makro definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue*.
 
 #### <a name="test-module-attributes"></a><a name="test_module_attributes"></a>Atrybuty modułu testowego
 
@@ -209,49 +209,49 @@ BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
 END_TEST_MODULE_ATTRIBUTE()
 ```
 
-Dodaje atrybuty zdefiniowane `TEST_MODULE_ATTRIBUTE` za pomocą jednego lub więcej makr do *modułu testowegoModuleName*.
+Dodaje atrybuty zdefiniowane z co najmniej jednym `TEST_MODULE_ATTRIBUTE` makrem do modułu testowego *testModuleName*.
 
-Makro `TEST_MODULE_ATTRIBUTE` definiuje atrybut z *atrybutem nameeName* i *atrybutem valueValue*.
+`TEST_MODULE_ATTRIBUTE` Makro definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue*.
 
 #### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a>Wstępnie zdefiniowane atrybuty
 
-Te wstępnie zdefiniowane makra atrybutów są dostarczane jako udogodnienie dla typowych przypadków. Można je zastąpić makro `TEST_METHOD_ATTRIBUTE` opisane powyżej.
+Te wstępnie zdefiniowane makra atrybutów są udostępniane jako wygoda dla typowych przypadków. Mogą zostać zastąpione przez makro `TEST_METHOD_ATTRIBUTE` opisane powyżej.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
-Definiuje `TEST_METHOD_ATTRIBUTE` nazwę `Owner` i wartość atrybutu *ownerAlias*.
+`TEST_METHOD_ATTRIBUTE` Definiuje nazwę `Owner` i wartość atrybutu *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-Definiuje `TEST_METHOD_ATTRIBUTE` a z `Description` nazwą i wartością atrybutu *opisu*.
+`TEST_METHOD_ATTRIBUTE` Definiuje nazwę `Description` i wartość atrybutu *Description*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
-Definiuje `TEST_METHOD_ATTRIBUTE` nazwę `Priority` i wartość atrybutu *priorytetu*.
+`TEST_METHOD_ATTRIBUTE` Definiuje nazwę `Priority` i wartość atrybutu *priorytet*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
-Definiuje `TEST_METHOD_ATTRIBUTE` a z `WorkItem` nazwą i wartością atrybutu *workItem*.
+Definiuje wartość `TEST_METHOD_ATTRIBUTE` przy użyciu nazwy `WorkItem` i wartości atrybutu elementu *roboczego*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
-Definiuje `TEST_METHOD_ATTRIBUTE` a z `Ignore` nazwą i wartością `true`atrybutu .
+Definiuje `TEST_METHOD_ATTRIBUTE` przy użyciu nazwy `Ignore` i wartości atrybutu. `true`
 
-## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a>CppUnitTestAssert.h
+## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a>CppUnitTestAssert. h
 
 ### <a name="general-asserts"></a><a name="general_asserts"></a>Potwierdzenia ogólne
 
-#### <a name="are-equal"></a><a name="general_are_equal"></a>Są równe
+#### <a name="are-equal"></a><a name="general_are_equal"></a>Jest równe
 Sprawdź, czy dwa obiekty są równe
 
 ```cpp
@@ -263,7 +263,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa dublety są równe
+Sprawdź, czy dwa podwojone są równe
 
 ```cpp
 static void Assert::AreEqual(
@@ -274,7 +274,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa pływaki są równe
+Sprawdź, czy dwa wartości zmiennoprzecinkowe są równe
 
 ```cpp
 static void Assert::AreEqual(
@@ -285,7 +285,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa ciągi char* są równe
+Sprawdź, czy dwa znaki * są równe
 
 ```cpp
 static void Assert::AreEqual(
@@ -296,7 +296,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa ciągi w_char* są równe
+Sprawdź, czy dwa w_char * ciągi są równe
 
 ```cpp
 static void Assert::AreEqual(
@@ -308,7 +308,7 @@ static void Assert::AreEqual(
 ```
 
 #### <a name="are-not-equal"></a><a name="general_are_not_equal"></a>Nie są równe
-Sprawdź, czy dwa dublety nie są równe
+Sprawdź, czy dwa podwójnej precyzji nie są równe
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -319,7 +319,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa pływaki nie są równe
+Sprawdź, czy dwa wartości zmiennoprzecinkowe nie są równe
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -330,7 +330,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa ciągi char* nie są równe
+Sprawdź, czy dwa znaki * nie są równe
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -341,7 +341,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa ciągi w_char* nie są równe
+Sprawdź, czy dwa w_char * ciągi nie są równe
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -352,7 +352,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa odwołania nie są równe na podstawie operator==.
+Sprawdź, czy dwa odwołania nie są równe na podstawie operatora = =.
 
 ```cpp
 template<typename T>
@@ -364,7 +364,7 @@ static void Assert::AreNotEqual(
 ```
 
 #### <a name="are-same"></a><a name="general_are_same"></a>Są takie same
-Sprawdź, czy dwa odwołania odnoszą się do tego samego wystąpienia obiektu (tożsamości).
+Sprawdź, czy dwa odwołania odwołują się do tego samego wystąpienia obiektu (tożsamości).
 
 ```cpp
 template<typename T>
@@ -376,7 +376,7 @@ static void Assert::AreSame(
 ```
 
 #### <a name="are-not-same"></a><a name="general_are_not_same"></a>Nie są takie same
-Sprawdź, czy dwa odwołania nie odnoszą się do tego samego wystąpienia obiektu (tożsamości).
+Sprawdź, czy dwa odwołania nie odwołują się do tego samego wystąpienia obiektu (tożsamości).
 
 ```cpp
 template<typename T>
@@ -409,8 +409,8 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-true"></a><a name="general_is_True"></a>Jest prawdziwa
-Sprawdzanie, czy warunek jest spełniony
+#### <a name="is-true"></a><a name="general_is_True"></a>Ma wartość true
+Sprawdź, czy warunek ma wartość true
 
 ```cpp
 static void Assert::IsTrue(
@@ -419,7 +419,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-false"></a><a name="general_is_false"></a>Jest false
+#### <a name="is-false"></a><a name="general_is_false"></a>Ma wartość false
 Sprawdź, czy warunek jest fałszywy
 
 ```cpp
@@ -429,8 +429,8 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="fail"></a><a name="general_Fail"></a>Nie
-Wymuszanie niepowodzenia wyniku przypadku testowego
+#### <a name="fail"></a><a name="general_Fail"></a>Udało
+Wymuś niepowodzenie wyniku przypadku testowego
 
 ```cpp
 static void Assert::Fail(
@@ -438,10 +438,10 @@ static void Assert::Fail(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-### <a name="windows-runtime-asserts"></a><a name="winrt_asserts"></a>Potwierdzenia środowiska wykonawczego systemu Windows
+### <a name="windows-runtime-asserts"></a><a name="winrt_asserts"></a>Potwierdzenia środowisko wykonawcze systemu Windows
 
-#### <a name="are-equal"></a><a name="winrt_are_equal"></a>Są równe
-Sprawdza, czy dwa wskaźniki środowiska wykonawczego systemu Windows są równe.
+#### <a name="are-equal"></a><a name="winrt_are_equal"></a>Jest równe
+Sprawdza, czy dwa środowisko wykonawcze systemu Windows wskaźniki są równe.
 
 ```cpp
 template<typename T>
@@ -452,7 +452,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-Sprawdza, czy dwa ciągi platform::String^ są równe.
+Sprawdza, czy dwa ciągi platform:: String ^ są równe.
 
 ```cpp
 template<typename T>
@@ -464,7 +464,7 @@ static void Assert::AreEqual(
 ```
 
 #### <a name="are-same"></a><a name="winrt_are_same"></a>Są takie same
-Sprawdza, czy dwa odwołania środowiska wykonawczego systemu Windows odwołują się do tego samego obiektu.
+Sprawdza, czy dwie środowisko wykonawcze systemu Windows odwołują się do tego samego obiektu.
 
 ```cpp
 template<typename T>
@@ -476,7 +476,7 @@ static void Assert::AreSame(
 ```
 
 #### <a name="are-not-equal"></a><a name="winrt_are_not_equal"></a>Nie są równe
-Sprawdza, czy dwa wskaźniki środowiska wykonawczego systemu Windows nie są równe.
+Sprawdza, czy dwa środowisko wykonawcze systemu Windows wskaźniki nie są równe.
 
 ```cpp
 template<typename T>
@@ -487,7 +487,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-Sprawdza, czy dwa ciągi platform::String^ nie są równe.
+Sprawdza, czy dwa ciągi platform:: String ^ nie są równe.
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -499,7 +499,7 @@ static void Assert::AreNotEqual(
 ```
 
 #### <a name="are-not-same"></a><a name="winrt_are_not_same"></a>Nie są takie same
-Sprawdza, czy dwa odwołania środowiska wykonawczego systemu Windows nie odwołują się do tego samego obiektu.
+Sprawdza, czy dwa odwołania środowisko wykonawcze systemu Windows nie odwołują się do tego samego obiektu.
 
 ```cpp
 template<typename T>
@@ -511,7 +511,7 @@ static void Assert::AreNotSame(
 ```
 
 #### <a name="is-null"></a><a name="winrt_is_null"></a>Ma wartość null
-Sprawdza, czy wskaźnik środowiska wykonawczego systemu Windows jest nullptr.
+Sprawdza, czy środowisko wykonawcze systemu Windows wskaźnik jest nullptr.
 
 ```cpp
 template<typename T>
@@ -522,7 +522,7 @@ static void Assert::IsNull(
 ```
 
 #### <a name="is-not-null"></a><a name="winrt_is_not_null"></a>Nie ma wartości null
-Sprawdza, czy wskaźnik środowiska wykonawczego systemu Windows nie jest nullptr.
+Sprawdza, czy środowisko wykonawcze systemu Windows wskaźnik nie jest elementem nullptr.
 
 ```cpp
 template<typename T>
@@ -534,7 +534,7 @@ static void Assert::IsNotNull(
 
 ### <a name="exception-asserts"></a><a name="exception_asserts"></a>Potwierdzenia wyjątków
 
-#### <a name="expect-exception"></a><a name="expect_exception"></a>Spodziewaj się wyjątku
+#### <a name="expect-exception"></a><a name="expect_exception"></a>Oczekiwanie wyjątku
 Sprawdź, czy funkcja zgłasza wyjątek:
 
 ```cpp
@@ -555,13 +555,13 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a>CppUnitTestLogger.h
+## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a>CppUnitTestLogger. h
 
 ### <a name="logger"></a><a name="logger"></a>Rejestratora
-Klasa Logger zawiera metody statyczne do zapisu w **oknie wyjściowym**.
+Klasa rejestratora zawiera statyczne metody do zapisu w **okno dane wyjściowe**.
 
 ### <a name="write-message"></a><a name="write_message"></a>Napisz wiadomość
-Zapisanie ciągu w **oknie wyjściowym**
+Napisz ciąg do **okno dane wyjściowe**
 
 ```cpp
 static void Logger::WriteMessage(const wchar_t* message)
@@ -571,8 +571,8 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a><a name="example"></a>Przykład
-Ten kod jest przykładem użycia VSCppUnit. Zawiera przykłady metadanych atrybutów, urządzeń, testów jednostkowych z potwierdzeniami i niestandardowych rejestrowania.
+## <a name="example"></a><a name="example"></a>Przyklad
+Ten kod jest przykładem użycia VSCppUnit. Zawiera przykłady metadanych atrybutów, armatury, testy jednostkowe z potwierdzeniami i rejestrowanie niestandardowe.
 
 ```cpp
 // USAGE EXAMPLE
@@ -640,5 +640,5 @@ public:
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Jednostka przetestować swój kod](../test/unit-test-your-code.md)
-- [Zapis testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
+- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
+- [Zapisz testy jednostkowe dla C/C++](writing-unit-tests-for-c-cpp.md)
