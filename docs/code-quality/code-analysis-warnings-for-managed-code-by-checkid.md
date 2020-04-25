@@ -106,6 +106,7 @@ f1_keywords:
 - CA1505
 - CA1506
 - CA1507
+- CA1508
 - CA1600
 - CA1601
 - CA1700
@@ -265,12 +266,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83ed654a6e0795e5930580f9d13198631b5d695e
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109497"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153010"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
 
@@ -375,7 +376,9 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA1502 | [CA1502: Unikaj nadmiernej złożoności](../code-quality/ca1502.md) | Ta reguła mierzy liczbę liniowo niezależnych ścieżek za pośrednictwem metody, która jest określona przez liczbę i złożoność rozgałęzień warunkowych. |
 | CA1504 | [CA1504: Przejrzyj mylące nazwy pól](../code-quality/ca1504.md) | Nazwa pola wystąpienia rozpoczyna się od "s_" lub nazwa pola statycznego (udostępnionego w Visual Basic) rozpoczyna się od "m_". |
 | CA1505 | [CA1505: Unikaj kodu niemożliwego w utrzymaniu](../code-quality/ca1505.md) | Typ lub metoda ma niską wartość indeksu konserwacji. Niski indeks konserwacji wskazuje, że typ lub metoda są prawdopodobnie trudne do utrzymania i są dobrymi kandydatami do przeprojektowania. |
-| CA1506 |[CA1506: Unikaj nadmiernego sprzężenia klas](../code-quality/ca1506.md) | Ta reguła mierzy sprzęgnięcie klasy przez liczenie unikatowych odwołań typów, które zawiera typ lub metoda. |
+| CA1506 | [CA1506: Unikaj nadmiernego sprzężenia klas](../code-quality/ca1506.md) | Ta reguła mierzy sprzęgnięcie klasy przez liczenie unikatowych odwołań typów, które zawiera typ lub metoda. |
+| CA1507 | [CA1507: Użyj nameof zamiast ciągu](../code-quality/ca1507.md) | Literał ciągu jest używany jako argument, w którym można `nameof` użyć wyrażenia. |
+| CA1508 | [CA1508: Unikaj nieaktywnego kodu warunkowego](../code-quality/ca1508.md) | Metoda ma kod warunkowy, który zawsze jest `true` obliczany `false` lub w czasie wykonywania. Prowadzi to do nieaktywnego kodu `false` w gałęzi warunku. |
 | CA1600 | [CA1600: Nie używaj priorytetu procesu bezczynności](../code-quality/ca1600.md) | Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają System.Diagnostics.ProcessPriorityClass.Idle, zajmują procesor, gdy może on być bezczynny, a zatem będą blokować stan gotowości. |
 | CA1601 | [CA1601: Nie używaj czasomierzy, które uniemożliwiają zmianę stanu zasilania](../code-quality/ca1601.md) | Wyższa częstotliwość działań okresowych sprawi, że procesor będzie zajęty, co zakłóci działanie czasomierzy bezczynności oszczędzających energię, które wyłączają ekran i dyski twarde. |
 | CA1700 | [CA1700: Nie należy nadawać wartościom enum oznaczenia „Reserved"](../code-quality/ca1700.md) | Ta reguła zakłada, że element członkowski wyliczenia o nazwie, która zawiera „reserved”, nie jest obecnie używany, ale jest symbolem zastępczym do zmiany nazwy lub usunięcia w przyszłej wersji. Zmiana nazwy lub usuwanie członka jest zmianą przerywającą. |
