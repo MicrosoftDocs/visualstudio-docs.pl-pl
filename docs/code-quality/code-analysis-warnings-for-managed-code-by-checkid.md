@@ -158,6 +158,10 @@ f1_keywords:
 - CA1823
 - CA1824
 - CA1825
+- CA1826
+- CA1827
+- CA1828
+- CA1829
 - CA1900
 - CA1901
 - CA1903
@@ -266,12 +270,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153010"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167387"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
 
@@ -424,6 +428,10 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA1823 | [CA1823: Unikaj nieużywanych pól prywatnych](../code-quality/ca1823.md) | Zostały wykryte pola prywatne, które w zestawie nie są widoczne jako dostępne. |
 | CA1824 |[CA1824: Oznacz zestawy za pomocą NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | Atrybut NeutralResourcesLanguage informuje Menedżera zasobów języka, który został użyty do wyświetlenia zasobów neutralnej kultury dla zestawu. To zwiększa wydajność wyszukiwania dla pierwszego zasobu, który się ładuje i może zmniejszyć zestaw roboczy. |
 | CA1825 |[CA1825: Unikaj alokacji tablic o zerowej długości](../code-quality/ca1825.md) | Inicjowanie tablicy o zerowej długości prowadzi do niepotrzebnej alokacji pamięci. Zamiast tego należy użyć statycznie przydzielonego wystąpienia pustej <xref:System.Array.Empty%2A?displayProperty=nameWithType>tablicy przez wywołanie. Alokacja pamięci jest współdzielona przez wszystkie wywołania tej metody. |
+| CA1826 |[CA1826: Użyj właściwości zamiast metody wyliczalnej LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>Metoda LINQ została użyta na typie, który obsługuje równoważną, wydajniejszą właściwość. |
+| CA1827 |[CA1827: nie używaj Count/LongCount, jeśli można używać dowolnego](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>Metoda <xref:System.Linq.Enumerable.LongCount%2A> or została użyta <xref:System.Linq.Enumerable.Any%2A> w przypadku, gdy metoda byłaby bardziej wydajna. |
+| CA1828 |[CA1828: nie używaj CountAsync/LongCountAsync, jeśli AnyAsync może być użyty](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>Metoda <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> or została użyta <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> w przypadku, gdy metoda byłaby bardziej wydajna. |
+| CA1829 |[CA1829: Użyj właściwości length/Count zamiast metody wyliczalnej. Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Metoda LINQ została użyta w typie, który obsługuje równoważną, `Length` wydajniejszą `Count` lub właściwość. |
 | CA1900 | [CA1900: Pola typu wartości powinny być przenośne](../code-quality/ca1900.md) | Reguła ta sprawdza, czy struktury, które są zadeklarowane przez użycie jawnego układu, zostaną prawidłowo wyrównane podczas przekazywania do kodu niezarządzanego w 64-bitowych systemach operacyjnych. |
 | CA1901 | [CA1901: deklaracje P/Invoke powinny być przenośne](../code-quality/ca1901.md) | Ta reguła oblicza rozmiar każdego parametru oraz wartości zwróconej przez metodę P/Invoke i sprawdza, czy rozmiar parametru jest poprawny podczas przekazywania do kodu niezarządzanego w 32-bitowych i 64-bitowych systemach operacyjnych. |
 | CA1903 | [CA1903: Używaj tylko API z frameworku docelowego](../code-quality/ca1903.md) | Element członkowski lub typ używa elementu członkowskiego lub typu wprowadzonego w dodatku Service Pack, który nie został uwzględniony razem ze wskazanym środowiskiem docelowym projektu. |
