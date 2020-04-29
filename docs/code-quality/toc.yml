@@ -332,6 +332,10 @@
                   href: ca1064.md
                 - name: 'CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach'
                   href: ca1065.md
+                - name: 'CA1066: Zaimplementuj interfejs IEquatable przy przesłanianiu metody Equals'
+                  href: ca1066.md
+                - name: 'CA1067: Przesłoń metodę Equals podczas implementowania interfejsu IEquatable'
+                  href: ca1067.md
                 - name: 'CA1068: Parametry CancellationToken muszą występować na końcu'
                   href: ca1068.md
                 - name: 'CA2210: Zestawy powinny mieć prawidłowe silne nazwy'
@@ -426,6 +430,8 @@
                   href: ca1506.md
                 - name: 'CA1507: Użyj operatora nameof zamiast ciągu'
                   href: ca1507.md
+                - name: 'CA1508: Unikaj martwego kodu warunku'
+                  href: ca1508.md
             - name: Ostrzeżenia dotyczące mobilności
               items:
                 - name: Omówienie
@@ -531,6 +537,14 @@
                   href: ca1824.md
                 - name: 'CA1825: Unikaj alokacji tablic o zerowej długości'
                   href: ca1825.md
+                - name: 'CA1826: Użyj właściwości zamiast metody Linq Enumerable'
+                  href: ca1826.md
+                - name: 'CA1827: Nie używaj funkcji Count/LongCount, gdy można użyć funkcji Any'
+                  href: ca1827.md
+                - name: 'CA1828: Nie używaj funkcji CountAsync/LongCountAsync, gdy można użyć funkcji AnyAsync'
+                  href: ca1828.md
+                - name: 'CA1829: Użyj właściwości Length/Count zamiast metody Enumerable.Count'
+                  href: ca1829.md
             - name: Ostrzeżenia dotyczące przenośności
               items:
                 - name: Omówienie
