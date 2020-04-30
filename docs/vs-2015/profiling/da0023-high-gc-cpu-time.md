@@ -13,21 +13,23 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19bc4631e5cac9eea7b355bd25147edf384e86b6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: bf5e841fdccbd6a41d0e7ee61c9f5278c6a882e3
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844503"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586870"
 ---
-# <a name="da0023-high-gc-cpu-time"></a>DA0023: Wysokie wykorzystanie czasu GC CPU
+# <a name="da0023-high-gc-cpu-time"></a>DA0023: Duże zużycie czasu procesora przez odzyskiwanie pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identyfikator reguły | DA0023 |  
-|Category|.NET Framework Usage|  
-| Metoda profilowania | Wszystkie |  
-| Komunikat |% czasu w GC jest dość wysoki. Ten wskaźnik nadmiernej ilości wyrzucania elementów bezużytecznych może mieć wpływ na czas odpowiedzi aplikacji. Można zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci, w której aplikacja jest lepsza. |  
-| Typ reguły | Informacje |  
+|||  
+|-|-|  
+|Identyfikator reguły|DA0023|  
+|Kategoria|Użycie .NET Framework|  
+|Metoda profilowania|Wszystkie|  
+|Wiadomość|Czas trwania operacji odzyskiwania pamięci (%) jest stosunkowo wysoki. Ten wskaźnik nadmiernej ilości wyrzucania elementów bezużytecznych może mieć wpływ na czas odpowiedzi aplikacji. Można zebrać dane alokacji pamięci platformy .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci, która jest stosowana przez aplikację.|  
+|Typ reguły|Informacyjne|  
   
  Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.  
   
@@ -45,6 +47,6 @@ Identyfikator reguły | DA0023 |
 > Gdy czas spędzony na wyrzucaniu elementów bezużytecznych jest nadmiernie porównywany z całkowitym czasem przetwarzania aplikacji, [DA0024: nadmierne ostrzeżenie czasu procesora GC](../profiling/da0024-excessive-gc-cpu-time.md) wyzwalane zamiast tej reguły.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć środowiska CLR\\% Time w kolumnie GC** . Ustal, czy istnieją określone fazy wykonywania programu, w których narzuty wyrzucania elementów bezużytecznych pamięci zarządzanej są większe niż inne fazy. Porównaj wartości parametru% Time w usłudze GC z szybkością wyrzucania elementów bezużytecznych raportowaną w liczbie kolekcji **generacji 0**, kolekcjach **generacji 1**, liczbach **kolekcji generacji 2** .  
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć\\środowiska CLR% Time w kolumnie GC** . Ustal, czy istnieją określone fazy wykonywania programu, w których narzuty wyrzucania elementów bezużytecznych pamięci zarządzanej są większe niż inne fazy. Porównaj wartości parametru% Time w usłudze GC z szybkością wyrzucania elementów bezużytecznych raportowaną w liczbie kolekcji **generacji 0**, kolekcjach **generacji 1**, liczbach **kolekcji generacji 2** .  
   
- Wartość% Time w usłudze GC próbuje zgłosić ilość czasu, przez który aplikacja spędza wykonywanie wyrzucania elementów bezużytecznych proporcjonalnie do całkowitej ilości przetwarzania. Należy pamiętać, że istnieją sytuacje, w których wartość% Time w usłudze GC może zgłosić bardzo wysoką wartość, ale nie jest ze względu na nadmierne wyrzucanie elementów bezużytecznych. Aby uzyskać więcej informacji na temat sposobu, w jaki wartość% Time w usłudze GC jest obliczana, zobacz [różnicę między danymi wydajności zgłaszanymi przez różne narzędzia — 4 wprowadzanie danych](https://blogs.msdn.com/maoni/archive/2007/01/11/difference-between-perf-data-reported-by-different-tools-4.aspx) w witrynie sieci **Web Maoni** w MSDN. Jeśli wystąpią błędy stron lub aplikacja jest zastosowana przez inne zadania o wyższym priorytecie podczas wyrzucania elementów bezużytecznych, czas (%) w liczniku GC będzie odzwierciedlał te dodatkowe opóźnienia.
+ Wartość% Time w usłudze GC próbuje zgłosić ilość czasu, przez który aplikacja spędza wykonywanie wyrzucania elementów bezużytecznych proporcjonalnie do całkowitej ilości przetwarzania. Należy pamiętać, że istnieją sytuacje, w których wartość% Time w usłudze GC może zgłosić bardzo wysoką wartość, ale nie jest ze względu na nadmierne wyrzucanie elementów bezużytecznych. Aby uzyskać więcej informacji na temat sposobu, w jaki wartość% Time w usłudze GC jest obliczana, zobacz [różnicę między danymi wydajności zgłaszanymi przez różne narzędzia — 4 wprowadzanie danych](https://devblogs.microsoft.com/dotnet/difference-between-perf-data-reported-by-different-tools-4/) w witrynie sieci **Web Maoni** w MSDN. Jeśli wystąpią błędy stron lub aplikacja jest zastosowana przez inne zadania o wyższym priorytecie podczas wyrzucania elementów bezużytecznych, czas (%) w liczniku GC będzie odzwierciedlał te dodatkowe opóźnienia.

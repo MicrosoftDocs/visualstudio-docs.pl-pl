@@ -1,5 +1,5 @@
 ---
-title: Warunki msbuild | Dokumenty firmy Microsoft
+title: Warunki MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -10,37 +10,39 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, conditions
 - conditions [MSBuild]
+- Exists, MSBuild condition function
+- HasTrailingSlash, MSBuild condition function
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7948f9da5922ba5f5e3582924bbccd56d50219a0
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: 61ffb650a87fa992a07d749687498cbb8ec6482d
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072570"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586833"
 ---
 # <a name="msbuild-conditions"></a>Warunki MSBuild
 
-MSBuild obsługuje określony zestaw warunków, które mogą `Condition` być stosowane wszędzie tam, gdzie atrybut jest dozwolony. W poniższej tabeli wyjaśniono te warunki.
+Program MSBuild obsługuje określony zestaw warunków, które mogą być stosowane wszędzie tam `Condition` , gdzie atrybut jest dozwolony. W poniższej tabeli opisano te warunki.
 
 |Warunek|Opis|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|Ocenia, `true` czy `stringA` jest `stringB`równa .<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości. Ta kontrola jest niewrażliwa na przypadek.|
-|'`stringA`' != '`stringB`'|Ocenia, `true` czy `stringA` nie jest `stringB`równa .<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości. Ta kontrola jest niewrażliwa na przypadek.|
-|\<, >, \<=, >=|Ocenia wartości liczbowe argumentów. Zwraca, `true` jeśli ocena relacyjna jest spełniony. Operandy muszą oszacować liczbę dziesiętną lub szesnastkową. Liczby szesnastkowe muszą zaczynać się od "0x". **Uwaga:**  W języku XML `<` `>` znaki i musi być zmienione. Symbol `<` jest reprezentowany `&lt;`jako . Symbol `>` jest reprezentowany `&gt;`jako .|
-|Istnieje('`stringA`')|Ocenia, `true` czy istnieje plik lub `stringA` folder o nazwie.<br /><br /> Przykład:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości.|
-|HasTrailingSlash('`stringA`')|Ocenia, `true` czy określony ciąg zawiera znak końcowego ukośnika wstecznego (\\) lub ukośnika do przodu (/).<br /><br /> Przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane dla prostych ciągów alfanumeryczne lub wartości logiczne. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości.|
-|!|Ocenia, `true` czy operand ocenia `false`.|
-|And|Ocenia, `true` czy oba argumenty oceniają na `true`.|
-|Lub|Ocenia, `true` czy co najmniej jeden z argumentów `true`ocenia .|
-|()|Mechanizm grupowania, który `true` ocenia, czy wyrażenia `true`zawarte wewnątrz oceniają do .|
-|$if$ ( %expression% ), $else$, $endif$|Sprawdza, czy `%expression%` określony odpowiada wartości ciągu przekazanego parametru szablonu niestandardowego. Jeśli `$if$` warunek ocenia `true`, a następnie jego instrukcje są uruchamiane; w przeciwnym `$else$` razie warunek jest sprawdzany. Jeśli `$else$` warunek `true`jest , a następnie jego instrukcje są uruchamiane; w przeciwnym `$endif$` razie warunek kończy ocenę wyrażenia.<br /><br /> Aby zapoznać się z przykładami użycia, zobacz [logika parametru projektu/elementu programu Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
+|'`stringA`' == '`stringB`'|Zwraca wartość, `true` Jeśli `stringA` jest `stringB`równa.<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
+|'`stringA`' != '`stringB`'|Daje w `true` przypadku, `stringA` gdy nie jest równe `stringB`.<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
+|\<, >, \<=, >=|Oblicza wartości liczbowe argumentów operacji. Zwraca `true` czy wartość oceny relacyjnej to true. Operandy muszą mieć wartość dziesiętną lub szesnastkową. Liczby szesnastkowe muszą zaczynać się od ciągu "0x". **Uwaga:**  W formacie XML, znaki `<` i `>` muszą być zmienione. Symbol `<` jest reprezentowany jako `&lt;`. Symbol `>` jest reprezentowany jako `&gt;`.|
+|Istnieje ('`stringA`')|Zwraca wartość, `true` Jeśli istnieje plik lub folder o nazwie `stringA` .<br /><br /> Przykład:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|HasTrailingSlash ('`stringA`')|Zwraca wartość, `true` Jeśli określony ciąg zawiera znak ukośnika odwrotnego (\\) lub ukośnika (/).<br /><br /> Przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|!|Daje w `true` przypadku, gdy operand zwraca wartość `false`.|
+|And|Zwraca wartość, `true` Jeśli oba operandy są oceniane `true`do.|
+|Lub|Zwraca wartość, `true` Jeśli co najmniej jeden z operandów ma `true`wartość.|
+|()|Mechanizm grupowania, który jest obliczany w `true` wyrażeniach if zawartych `true`w obliczaniu do.|
+|$if $ (% Expression%), $else $, $endif $|Sprawdza, czy określony `%expression%` pasuje do wartości ciągu podanego parametru szablonu niestandardowego. Jeśli `$if$` warunek ma `true`wartość, wówczas instrukcje są uruchamiane; w przeciwnym razie `$else$` warunek jest zaznaczony. Jeśli `$else$` warunek ma wartość `true`, instrukcje są uruchamiane; w przeciwnym razie `$endif$` warunek spowoduje zakończenie obliczania wyrażenia.<br /><br /> Przykłady użycia można znaleźć w temacie [logika parametrów projektu/elementu programu Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 
-Metody ciągu można użyć w warunkach, jak pokazano w poniższym przykładzie, w którym [TrimEnd()](/dotnet/api/system.string.trimend) funkcja jest używana do porównywania tylko odpowiedniej części ciągu, do rozróżnienia między .NET Framework i .NET Core framework docelowych.
+Można użyć metod String w warunkach, jak pokazano w poniższym przykładzie, w którym funkcja [TrimEnd ()](/dotnet/api/system.string.trimend) służy do porównywania tylko odpowiedniej części ciągu, aby rozróżnić między .NET Framework i platformą docelową platformy .NET Core.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -56,8 +58,8 @@ Metody ciągu można użyć w warunkach, jak pokazano w poniższym przykładzie,
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)
 - [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

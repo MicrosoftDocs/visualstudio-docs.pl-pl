@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851221"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586333"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji internetowych przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji internetowych.
 
- **Requirements**
+ **Wymagania**
 
 - Visual Studio Enterprise
 
@@ -28,7 +28,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
   - Microsoft Windows 7
 
-  - Microsoft Windows 8
+  - System Microsoft Windows 8
 
   - Microsoft Windows Server 2008 R2 SP1
 
@@ -71,7 +71,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
 1. W menu **Narzędzia** wybierz pozycję **rozszerzenia i aktualizacje**.
 
-2. W oknie dialogowym rozszerzenia i aktualizacje Wyszukaj `Selenium components for Cross Browser Testing`.
+2. W oknie dialogowym rozszerzenia i aktualizacje Wyszukaj ciąg `Selenium components for Cross Browser Testing`.
 
 3. Zaznacz rozszerzenie i wybierz pozycję **Pobierz**.
 
@@ -95,8 +95,8 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
     2. W przypadku **wyjątków środowiska uruchomieniowego języka wspólnego**Usuń zaznaczenie pola **nieobsługiwane przez użytkownika**.
 
-## <a name="generate"></a>*Nie widzę opcji zmiany BrowserWindow. CurrentBrowser w kodowanym teście interfejsu użytkownika.*
- Być może używasz wersji [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)], która nie obsługuje kodowanych testów interfejsu użytkownika przy użyciu różnych przeglądarek sieci Web. Aby użyć takich kodowanych testów interfejsu użytkownika, należy użyć Visual Studio Enterprise.
+## <a name="i-dont-see-the-option-to-change-browserwindowcurrentbrowser-in-the-coded-ui-test"></a><a name="generate"></a>*Nie widzę opcji zmiany BrowserWindow. CurrentBrowser w kodowanym teście interfejsu użytkownika.*
+ Być może używasz wersji programu [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] , która nie obsługuje kodowanych testów interfejsu użytkownika przy użyciu różnych przeglądarek sieci Web. Aby użyć takich kodowanych testów interfejsu użytkownika, należy użyć Visual Studio Enterprise.
 
  *Co jeszcze mam wiedzieć?*
  **Uwagi**
@@ -111,13 +111,13 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
   **Pomoc**
 
-- ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Dane wyjściowe można skonfigurować tak, aby obejmowały zrzuty ekranu w kodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:
+- ![Porada](../test/media/tip.png "Porada") Dane wyjściowe można skonfigurować tak, aby obejmowały zrzuty ekranu w kodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:
 
-   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
+   **C:\Program Files (x86) \Microsoft Visual Studio 11.0 \ Common7\IDE**
 
    Ustaw następujące wartości:
 
-  - `EqtTraceLevel` w sekcji `system.diagnostics`.
+  - `EqtTraceLevel`w `system.diagnostics` sekcji.
 
   - `<add name="EqtTraceLevel" value="4" />`
 
@@ -127,7 +127,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-### <a name="videos"></a>Wideo
+### <a name="videos"></a>Filmy wideo
  [Rejestruj w programie IE i Odtwarzaj wszędzie](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
  [Twórz testy między przeglądarkami za pomocą konstruktora kodowanego testu interfejsu użytkownika](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
@@ -144,7 +144,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
  [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>Najczęściej zadawane pytania
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 

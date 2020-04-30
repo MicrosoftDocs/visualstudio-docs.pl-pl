@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852183"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586362"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ W programie Visual Studio można użyć modelu, aby pomóc zrozumieć i zmienić
 
 - Komunikacja z modelami ułatwia przekazywanie ważnych koncepcji mniej niejednoznacznych niż w przypadku języka naturalnego. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).
 
-- Czasami można używać modeli do generowania kodu lub innych artefaktów, takich jak schematy bazy danych lub dokumenty. Na przykład składniki modelowania [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] są generowane na podstawie modelu.  Aby uzyskać więcej informacji, zobacz [generowanie i Konfigurowanie aplikacji na podstawie modeli](../modeling/generate-and-configure-your-app-from-models.md).
+- Czasami można używać modeli do generowania kodu lub innych artefaktów, takich jak schematy bazy danych lub dokumenty. Na przykład składniki modelowania programu [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] są generowane na podstawie modelu.  Aby uzyskać więcej informacji, zobacz [generowanie i Konfigurowanie aplikacji na podstawie modeli](../modeling/generate-and-configure-your-app-from-models.md).
 
   Można używać modeli w wielu różnych procesach, od najwyższej Agile do wysokiej procedury.
 
@@ -48,7 +48,7 @@ W programie Visual Studio można użyć modelu, aby pomóc zrozumieć i zmienić
  W obu przypadkach tworzenie modelu prawie zawsze skutkuje znaczącą redukcją niespójności i niejasności. Różne osoby zainteresowane często mają różne zrozumienia świata firmy, w których działa system, a różni deweloperzy często mają różne zrozumienie sposobu działania systemu. Korzystanie z modelu jako fokus dyskusji zwykle ujawnia te różnice. Aby uzyskać więcej informacji na temat sposobu ograniczania niespójności przy użyciu modelu, zobacz [wymagania dotyczące modelu użytkownika](../modeling/model-user-requirements.md).
 
 ### <a name="use-models-with-other-artifacts"></a>Używanie modeli z innymi artefaktami
- Model nie należy do specyfikacji wymagań lub architektury. Jest to narzędzie, które umożliwia bardziej przejrzyste prezentowanie niektórych aspektów tych elementów, ale nie wszystkie pojęcia wymagane podczas projektowania oprogramowania. W związku z tym modele powinny być używane razem z innymi środkami komunikacji, takimi jak strony lub akapity programu OneNote, Microsoft Office dokumenty, elementy robocze w [!INCLUDE[esprfound](../includes/esprfound-md.md)], lub notatki programu Sticky Notes na ścianie pokojowej. Oprócz ostatniego elementu wszystkie te typy obiektów mogą być połączone z elementami części modelu.
+ Model nie należy do specyfikacji wymagań lub architektury. Jest to narzędzie, które umożliwia bardziej przejrzyste prezentowanie niektórych aspektów tych elementów, ale nie wszystkie pojęcia wymagane podczas projektowania oprogramowania. W związku z tym modele powinny być używane razem z innymi środkami komunikacji, takimi jak strony lub akapity programu OneNote, Microsoft Office [!INCLUDE[esprfound](../includes/esprfound-md.md)]dokumenty, elementy robocze w programie, lub notatki programu Sticky Notes na ścianie pokojowej. Oprócz ostatniego elementu wszystkie te typy obiektów mogą być połączone z elementami części modelu.
 
  Inne aspekty specyfikacji, które są zwykle używane razem z modelami, to m.in.: W zależności od skali i stylu projektu można użyć kilku z tych aspektów lub nie używać żadnego z nich w ogóle:
 
@@ -86,7 +86,7 @@ W programie Visual Studio można użyć modelu, aby pomóc zrozumieć i zmienić
 
 - Przed końcem każdej iteracji należy posiadać warsztat dotyczący wymagań, aby szczegółowo definiować wymagania lub historie użytkownika, które zostaną opracowane w następnej iteracji. Zapraszaj użytkowników i uczestników współpracy, którzy mogą decydować o priorytetach, a także deweloperów i testerów systemu. Zezwalaj na trzy godziny, aby zdefiniować wymagania dla iteracji 2-tygodniowej.
 
-- Celem warsztatu jest to, że wszyscy zgadzają się na to, co zostanie osiągnięte przez zakończenie następnej iteracji. Używaj modeli jako jednego z narzędzi, które ułatwią wyjaśnienie wymagań. Dane wyjściowe warsztatu to zaległości iteracji: to jest lista zadań programistycznych w [!INCLUDE[esprfound](../includes/esprfound-md.md)] i zestawy testów w [!INCLUDE[TCMext](../includes/tcmext-md.md)].
+- Celem warsztatu jest to, że wszyscy zgadzają się na to, co zostanie osiągnięte przez zakończenie następnej iteracji. Używaj modeli jako jednego z narzędzi, które ułatwią wyjaśnienie wymagań. Dane wyjściowe warsztatu to zaległość iteracji: to jest lista zadań deweloperskich w programie [!INCLUDE[esprfound](../includes/esprfound-md.md)] i zestawów testów w programie. [!INCLUDE[TCMext](../includes/tcmext-md.md)]
 
 - W warsztatach dotyczących wymagań należy omówić projekt tylko w miarę potrzeb, aby określić oszacowania dla zadań deweloperskich. W przeciwnym razie należy zachować dyskusję z zachowaniem systemu, które użytkownicy mogą bezpośrednio korzystać z programu. Zachowaj model wymagań niezależnie od modelu architektury.
 
@@ -133,8 +133,8 @@ W programie Visual Studio można użyć modelu, aby pomóc zrozumieć i zmienić
 |**Kategoria**|**Linki**|
 |------------------|---------------|
 |**Filmy wideo**|![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak tworzyć i używać modeli i diagramów UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML z programem Visual Studio 2010](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak serie — narzędzia i rozszerzalność UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
-|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Wizualizacja & modelowania SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Architektura Visual Studio — wskazówki dotyczące oprzyrządowania](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Zobacz też

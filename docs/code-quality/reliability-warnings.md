@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e936222a95681796f5c5ca423d122995e1ea5f79
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c4b888dbbe7a26e5ff333ec39aa0fdfcec90b429
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113259"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586203"
 ---
 # <a name="reliability-warnings"></a>Ostrzeżenia dotyczące niezawodności
 
@@ -33,4 +33,5 @@ Ostrzeżenia o niezawodności obsługują niezawodność biblioteki i aplikacji,
 |[CA2003: Nie traktuj włókien jak wątków](../code-quality/ca2003.md)|Zarządzany wątek jest traktowany jako wątek Win32.|
 |[CA2004: Usuń wywołania funkcji GC.KeepAlive](../code-quality/ca2004.md)|W przypadku konwertowania na użycie elementu SafeHandle Usuń wszystkie wywołania do GC. Utrzymywanie aktywności (obiekt). W takim przypadku klasy nie powinny mieć wywołania GC. Utrzymywanie aktywności, przy założeniu, że nie mają finalizatora, ale polega na elemencie SafeHandle, aby sfinalizować dla nich dojście systemu operacyjnego.|
 |[CA2006: Używaj klasy SafeHandle w celu hermetyzacji zasobów natywnych](../code-quality/ca2006.md)|Wykorzystanie elementu IntPtr w kodzie zarządzanym może wskazywać na potencjalny problem dotyczący bezpieczeństwa i niezawodności. Wszystkie użycia elementu IntPtr muszą być przejrzane w celu ustalenia, czy użycie elementu SafeHandle lub podobnej technologii jest w tym miejscu wymagane.|
-|[CA2007: nie należy bezpośrednio czekać na zadanie](../code-quality/ca2007.md)|Metoda asynchroniczna [czeka](/dotnet/csharp/language-reference/keywords/await) bezpośrednio na <xref:System.Threading.Tasks.Task>.|
+|[CA2007: Nie oczekuj bezpośrednio zadania](../code-quality/ca2007.md)|Metoda asynchroniczna [czeka](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> bezpośrednio.|
+|[CA2009: Nie wywołuj elementu ToImmutableCollection dla wartości ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`Metoda była niekoniecznie wywoływana w niezmiennej <xref:System.Collections.Immutable> kolekcji z przestrzeni nazw.|

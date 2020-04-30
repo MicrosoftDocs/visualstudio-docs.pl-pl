@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4ffd105032cda050ab16132b6a4c2d54488028b8
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851345"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586769"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają zapoznanie się z istniejącym kodem i opisywanie aplikacji. Dzięki temu możesz wzrokowo sprawdzić, jak wprowadzane zmiany mogą wpłynąć na kod, i ocenić nakład pracy oraz zagrożenia związane z tymi zmianami. Na przykład:
+Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają zapoznanie się z istniejącym kodem i opisywanie aplikacji. Dzięki temu można wizualnie dowiedzieć się, jak zmiany mogą wpływać na kod i pomóc w ocenie pracy i zagrożeń wynikających z tych zmian. Przykład:
 
 - Aby zrozumieć relacje w kodzie, zamapuj je wizualnie.
 
@@ -41,17 +41,17 @@ Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają z
 
 |||
 |-|-|
-|**Opis kodu i jego relacji:**<br /><br /> Mapuj relacje między określonymi fragmentami kodu.<br /><br /> Zapoznaj się z omówieniem relacji w kodzie dla całego rozwiązania.<br /><br /> **Uwaga**: w tej wersji programu Visual Studio termin *Mapa kodu* jest używana zamiast *grafu zależności*.|-   [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [użyć map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Znajdowanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [metody mapowania na stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Opis kodu i jego relacji:**<br /><br /> Mapuj relacje między określonymi fragmentami kodu.<br /><br /> Zapoznaj się z omówieniem relacji w kodzie dla całego rozwiązania.<br /><br /> **Uwaga**: w tej wersji programu Visual Studio termin *Mapa kodu* jest używana zamiast *grafu zależności*.|-   [Mapowanie zależności między rozwiązaniami](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Znajdowanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapuj metody na stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Opis struktur klas:**<br /><br /> Wizualizuj strukturę klas w projekcie, tworząc diagramy klas z kodu.|[Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**Opisz projekt systemu wysokiego poziomu i sprawdź poprawność kodu dla tego projektu:**<br /><br /> Opisz projekt systemu wysokiego poziomu i jego zamierzone zależności, tworząc diagramy warstwowe. Sprawdź poprawność kodu względem tego projektu, aby upewnić się, że zależności w kodzie pozostają spójne z projektem.|-   [tworzenia diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [diagramy warstwowe: odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikuj kod przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|
-|**Przekaż wymagania i architekturę użytkownika:**<br /><br /> Należy modelować wymagania i architekturę systemu oprogramowania przez rysowanie następujących diagramów UML: działania, składnika, klasy, sekwencji i przypadku użycia.|-   [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md)<br />[wymagania dotyczące użytkownika modelu](../modeling/model-user-requirements.md) -   <br />-   [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
+|**Opisz projekt systemu wysokiego poziomu i sprawdź poprawność kodu dla tego projektu:**<br /><br /> Opisz projekt systemu wysokiego poziomu i jego zamierzone zależności, tworząc diagramy warstwowe. Sprawdź poprawność kodu względem tego projektu, aby upewnić się, że zależności w kodzie pozostają spójne z projektem.|-   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy warstw: Dokumentacja](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy warstw: wytyczne](../modeling/layer-diagrams-guidelines.md)<br />-   [Sprawdzanie poprawności kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|
+|**Przekaż wymagania i architekturę użytkownika:**<br /><br /> Należy modelować wymagania i architekturę systemu oprogramowania przez rysowanie następujących diagramów UML: działania, składnika, klasy, sekwencji i przypadku użycia.|-   [Tworzenie modeli dla aplikacji](../modeling/create-models-for-your-app.md)<br />-   [Wymagania dotyczące użytkownika modelu](../modeling/model-user-requirements.md)<br />-   [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 |**Kategoria**|**Linki**|
 |------------------|---------------|
-|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Wizualizacja & modelowania SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Artykuły techniczne i dzienniki**|[Forum architektury MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Zobacz też

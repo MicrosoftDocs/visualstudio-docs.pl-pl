@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a1beeef572282a642e4a989086ac0fd228409fec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845395"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586267"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Program Visual Studio może pomóc zapewnić zgodność oprogramowania z wymagan
 
 |**Zadania**|**Skojarzone tematy**|
 |---------------|---------------------------|
-|**Upewnij się, że model jest spójny:**<br /><br /> W zależności od sposobu, w jaki projekt używa i interpretuje modele, może być przydatne, aby nie zezwalać na niektóre kombinacje elementów. Można na przykład ograniczyć klasy UML, aby zawsze miały one zgodne [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]nazw. Można definiować ograniczenia takie jak te w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia.|-   [zweryfikować modelu UML](../modeling/validate-your-uml-model.md)<br />-   [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)|
-|Upewnij **się, że oprogramowanie spełnia wymagania użytkowników**:<br /><br /> Aby ułatwić organizowanie testów systemu i jego składników, można użyć wymagań i modeli architektonicznych. Dzięki temu można sprawdzić wymagania, które są ważne dla użytkowników i innych uczestników projektu, oraz ułatwić szybkie aktualizowanie testów w przypadku zmiany wymagań.|-   [opracowywanie testów z modelu](../modeling/develop-tests-from-a-model.md)|
-|**Upewnij się, że oprogramowanie pozostaje spójne z zamierzonym projektem systemu:**<br /><br /> Diagramy warstw opisują zamierzone zależności między składnikami aplikacji. Podczas opracowywania można sprawdzić, czy rzeczywiste zależności w kodzie są zgodne z zamierzonym projektem.|-   [tworzenia diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Weryfikuj kod przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|
+|**Upewnij się, że model jest spójny:**<br /><br /> W zależności od sposobu, w jaki projekt używa i interpretuje modele, może być przydatne, aby nie zezwalać na niektóre kombinacje elementów. Można na przykład ograniczyć klasy UML, aby zawsze miały [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]one zgodne nazwy. Można definiować ograniczenia takie jak te w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeniach.|-   [Weryfikowanie modelu UML](../modeling/validate-your-uml-model.md)<br />-   [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)|
+|Upewnij **się, że oprogramowanie spełnia wymagania użytkowników**:<br /><br /> Aby ułatwić organizowanie testów systemu i jego składników, można użyć wymagań i modeli architektonicznych. Dzięki temu można sprawdzić wymagania, które są ważne dla użytkowników i innych uczestników projektu, oraz ułatwić szybkie aktualizowanie testów w przypadku zmiany wymagań.|-   [Opracowywanie testów z modelu](../modeling/develop-tests-from-a-model.md)|
+|**Upewnij się, że oprogramowanie pozostaje spójne z zamierzonym projektem systemu:**<br /><br /> Diagramy warstw opisują zamierzone zależności między składnikami aplikacji. Podczas opracowywania można sprawdzić, czy rzeczywiste zależności w kodzie są zgodne z zamierzonym projektem.|-   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Sprawdzanie poprawności kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 |**Kategoria**|**Linki**|
 |------------------|---------------|
 |**Filmy wideo**|![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug siedem: zrozumienie kodu i projekt systemu przy użyciu programu Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: projektowanie aplikacji przy użyciu diagramu warstwowego](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak to zrobić, w jaki sposób można sprawdzić poprawność kodu przy użyciu diagramów warstw](https://msdn.microsoft.com/vstudio/gg501755)|
-|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogi**|-   [Blog programu Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Wizualizacja & modelowania SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogi**|-   [Blog programu Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Zobacz też
