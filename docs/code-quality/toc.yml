@@ -432,6 +432,8 @@
                   href: ca1507.md
                 - name: 'CA1508: Unikaj martwego kodu warunku'
                   href: ca1508.md
+                - name: 'CA1509: Nieprawidłowy wpis w pliku konfiguracji metryk kodu'
+                  href: ca1509.md
             - name: Ostrzeżenia dotyczące mobilności
               items:
                 - name: Omówienie
@@ -575,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007: Nie oczekuj bezpośrednio zadania'
                   href: ca2007.md
+                - name: 'CA2009: Nie wywołuj elementu ToImmutableCollection dla wartości ImmutableCollection'
+                  href: ca2009.md
             - name: Ostrzeżenia dotyczące zabezpieczeń
               items:
                 - name: Omówienie
