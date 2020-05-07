@@ -76,6 +76,6 @@ ms.locfileid: "82139640"
 ## <a name="deploying-obfuscated-assemblies"></a>Wdrażanie zestawów zasłoniętych
  Program Visual Studio obejmuje bezpłatną [społeczność Dotfuscator Protection](../ide/dotfuscator/index.md), która umożliwia ochronę aplikacji ClickOnce za pomocą zaciemniania kodu i aktywnych miar ochrony.  Aby uzyskać szczegółowe informacje, zobacz [sekcję ClickOnce podręcznika użytkownika społeczności Dotfuscator](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Wybieranie strategii wdrażania technologii ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

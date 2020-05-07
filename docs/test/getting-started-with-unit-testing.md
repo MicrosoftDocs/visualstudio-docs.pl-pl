@@ -243,7 +243,7 @@ Aby utworzyć testy jednostkowe używające [nunit](https://nunit.org/):
 
 6. Uruchom test z **Eksploratora testów** lub klikając prawym przyciskiem myszy kod testu i wybierając polecenie **Uruchom testy**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Utwórz testy jednostkowe, polecenie](create-unit-tests-menu.md)

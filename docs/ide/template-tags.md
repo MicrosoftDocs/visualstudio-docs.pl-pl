@@ -145,7 +145,7 @@ W poniższym przykładzie przedstawiono metadane szablonu projektu dla aplikacji
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](creating-project-and-item-templates.md)
