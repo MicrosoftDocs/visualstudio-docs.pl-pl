@@ -1,7 +1,7 @@
 ---
 title: Zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 05/21/2018
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3e11480949545781630dec0c533949dd200ecbc7
-ms.sourcegitcommit: 7a9d5c10690c594dcdb414d88b20e070d43e7a4c
+ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82218889"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173894"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS w programie Visual Studio
 
@@ -37,6 +37,7 @@ Aby wykonać kroki opisane w tym artykule, wymagany jest program Visual Studio 2
 Te procedury zostały przetestowane na tych konfiguracjach serwera:
 * Windows Server 2012 R2 i IIS 8
 * Windows Server 2016 i IIS 10
+* Windows Server 2019 i IIS 10
 
 ## <a name="network-requirements"></a>Wymagania dotyczące sieci
 
@@ -61,7 +62,7 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
     W programie Visual Studio 2017 wybierz kolejno pozycje **plik > nowy > projekt**, a następnie wybierz pozycję **Visual C# > Web > ASP.NET Core aplikacji sieci Web**. W sekcji szablony ASP.NET Core wybierz pozycję **aplikacja sieci Web (Model-View-Controller)**. Upewnij się, że wybrano ASP.NET Core 2,1, że **Obsługa platformy Docker** nie jest zaznaczona i że **uwierzytelnianie** jest ustawione na wartość **bez uwierzytelniania**. Nazwij projekt **MyASPApp**.
     ::: moniker-end
 
-4. Otwórz plik About.cshtml.cs i ustaw punkt przerwania w `OnGet` metodzie (w starszych szablonach Otwórz HomeController.cs i ustaw punkt przerwania w `About()` metodzie).
+4. Otwórz plik About.cshtml.cs i ustaw punkt przerwania w `OnGet` metodzie (w starszych szablonach otwórz HomeController.cs i ustaw punkt przerwania w `About()` metodzie).
 
 ## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a>Instalowanie i Konfigurowanie usług IIS w systemie Windows Server
 
@@ -80,7 +81,10 @@ Podczas pobierania oprogramowania można uzyskać żądania udzielenia uprawnie�
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Zainstaluj ASP.NET Core w systemie Windows Server
 
-1. Zainstaluj pakiet [hostingu platformy .NET Core systemu Windows Server](https://aka.ms/dotnetcore-2-windowshosting) w systemie hostingu. Pakiet instaluje środowisko uruchomieniowe programu .NET Core, bibliotekę .NET Core i moduł ASP.NET Core. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Publikowanie w usługach IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Zainstaluj pakiet hostingu platformy .NET Core w systemie hostingu. Pakiet instaluje środowisko uruchomieniowe programu .NET Core, bibliotekę .NET Core i moduł ASP.NET Core. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Publikowanie w usługach IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+
+    W przypadku platformy .NET Core 3 Zainstaluj [pakiet hostingu platformy .NET Core](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer).
+    W przypadku platformy .NET Core 2 Zainstaluj [platformę .NET Core systemu Windows Server](https://aka.ms/dotnetcore-2-windowshosting).
 
     > [!NOTE]
     > Jeśli system nie ma połączenia z Internetem, uzyskaj i zainstaluj *[pakiet redystrybucyjny Microsoft Visual C++ 2015](https://www.microsoft.com/download/details.aspx?id=53840)* przed zainstalowaniem pakietu hostingu platformy .NET Core systemu Windows Server.
@@ -100,7 +104,13 @@ Jeśli potrzebujesz pomocy przy wdrażaniu aplikacji w usługach IIS, weź pod u
 Tej opcji można użyć do utworzenia pliku ustawień publikowania i zaimportowania go do programu Visual Studio.
 
 > [!NOTE]
-> Ta metoda wdrażania używa Web Deploy. Jeśli chcesz ręcznie skonfigurować Web Deploy w programie Visual Studio zamiast zaimportować ustawienia, możesz zainstalować Web Deploy 3,6 zamiast Web Deploy 3,6 dla serwerów hostingu. Jeśli jednak skonfigurujesz Web Deploy ręcznie, musisz upewnić się, że folder aplikacji na serwerze jest skonfigurowany z prawidłowymi wartościami i uprawnieniami (zobacz [Konfigurowanie witryny sieci Web ASP.NET](#BKMK_deploy_asp_net)).
+> Ta metoda wdrażania używa Web Deploy, która musi być zainstalowana na serwerze. Jeśli chcesz skonfigurować Web Deploy ręcznie zamiast zaimportować ustawienia, możesz zainstalować Web Deploy 3,6 zamiast Web Deploy 3,6 dla serwerów hostingu. Jeśli jednak skonfigurujesz Web Deploy ręcznie, musisz upewnić się, że folder aplikacji na serwerze jest skonfigurowany z prawidłowymi wartościami i uprawnieniami (zobacz [Konfigurowanie witryny sieci Web ASP.NET](#BKMK_deploy_asp_net)).
+
+### <a name="configure-the-aspnet-core-web-site"></a>Skonfiguruj witrynę sieci Web ASP.NET Core
+
+1. W Menedżerze usług IIS w lewym okienku w obszarze **połączenia**wybierz pozycję **Pule aplikacji**. Otwórz przystawkę **Domyślna** i ustaw **wersję środowiska .NET CLR** na **Brak kodu zarządzanego**. Jest to wymagane w przypadku ASP.NET Core. Domyślna witryna sieci Web używa tej domyślnej.
+
+2. Zatrzymaj i uruchom ponownie tę samą wartość.
 
 ### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Instalowanie i Konfigurowanie Web Deploy serwerów hostingu w systemie Windows Server
 
@@ -114,11 +124,11 @@ Tej opcji można użyć do utworzenia pliku ustawień publikowania i zaimportowa
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Po pomyślnym wdrożeniu aplikacji należy uruchomić ją automatycznie. Jeśli aplikacja nie uruchamia się z programu Visual Studio, uruchom aplikację w usługach IIS. Aby uzyskać ASP.NET Core, należy upewnić się, że w polu Pula aplikacji dla **tej opcji określono** wartość **Brak kodu zarządzanego**.
+Po pomyślnym wdrożeniu aplikacji należy uruchomić ją automatycznie. Jeśli aplikacja nie uruchamia się z programu Visual Studio, uruchom aplikację w usługach IIS, aby sprawdzić, czy działa poprawnie. W przypadku ASP.NET Core należy również upewnić się, że w polu Pula aplikacji **dla tej opcji określono wartość** **Brak kodu zarządzanego**.
 
 1. W oknie dialogowym **Ustawienia** Włącz debugowanie, klikając przycisk **dalej**, wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
 
-    > [!NOTE]
+    > [!IMPORTANT]
     > W przypadku wybrania konfiguracji wydania podczas publikowania należy wyłączyć debugowanie w pliku *Web. config* .
 
 1. Kliknij przycisk **Zapisz** , a następnie ponownie Opublikuj aplikację.
@@ -176,15 +186,15 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
     > [!TIP]
     > W programie Visual Studio 2017 i nowszych wersjach można ponownie dołączyć do tego samego procesu, który został wcześniej dołączony przy użyciu **debugowania > ponownie dołączyć do procesu...** (Shift + Alt + P).
 
-3. W polu kwalifikator Ustaw ** \<nazwę komputera zdalnego>** a następnie naciśnij klawisz **Enter**.
+3. Ustaw pole kwalifikator na **\<remote computer name>** i naciśnij klawisz **Enter**.
 
-    Sprawdź, czy program Visual Studio dodaje wymagany port do nazwy komputera, która jest wyświetlana w formacie: ** \<nazwa komputera zdalnego>:p**
+    Sprawdź, czy program Visual Studio dodaje wymagany port do nazwy komputera, która jest wyświetlana w formacie: ** \<remote computer name> :p** .
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 powinna zostać wyświetlona ** \<nazwa komputera zdalnego>:4024**
+    W programie Visual Studio 2019 powinna zostać wyświetlona ** \<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W programie Visual Studio 2017 powinna zostać wyświetlona ** \<nazwa komputera zdalnego>:4022**
+    W programie Visual Studio 2017 powinna zostać wyświetlona ** \<remote computer name> : 4022**
     ::: moniker-end
     Port jest wymagany. Jeśli nie widzisz numeru portu, Dodaj go ręcznie.
 
@@ -199,7 +209,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 6. Wpisz pierwszą literę nazwy procesu, aby szybko znaleźć aplikację.
 
-    * Jeśli używasz [modelu hostingu w procesie](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) dla usług IIS, wybierz odpowiedni proces **w3wp. exe** . Począwszy od platformy .NET Core 3, jest to ustawienie domyślne.
+    * Jeśli używasz [modelu hostingu w procesie](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) dla usług IIS, wybierz właściwy proces **w3wp. exe** . Począwszy od platformy .NET Core 3, jest to ustawienie domyślne.
 
     * W przeciwnym razie wybierz proces **dotnet. exe** . (Jest to model hostingu poza procesem).
 
@@ -214,7 +224,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 7. Kliknij przycisk **Dołącz**.
 
-8. Otwórz witrynę sieci Web komputera zdalnego. W przeglądarce przejdź do **http://\<nazwa komputera zdalnego>**.
+8. Otwórz witrynę sieci Web komputera zdalnego. W przeglądarce przejdź do **http:// \<remote computer name> **.
 
     Powinna zostać wyświetlona strona sieci Web ASP.NET.
 

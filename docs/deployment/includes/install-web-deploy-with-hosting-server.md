@@ -1,29 +1,29 @@
 ---
-ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1e6c6714720d652fff266e3e852d01982c98e34a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143522"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173895"
 ---
-Web Deploy 3.6 for Hosting Servers zapewnia dodatkowe funkcje konfiguracyjne, które umożliwiają tworzenie pliku ustawień publikowania z interfejsu użytkownika.
+Web Deploy 3,6 dla serwerów hostingu oferuje dodatkowe funkcje konfiguracji, które umożliwiają tworzenie pliku ustawień publikowania w interfejsie użytkownika.
 
-1. Jeśli w systemie Windows Server zainstalowano już program Web Deploy 3.6, odinstaluj go za pomocą**programów** >  **Panelu sterowania** > **Odinstaluj program**.
+1. Jeśli masz już zainstalowaną Web Deploy 3,6 w systemie Windows Server, Odinstaluj **Control Panel**go za pomocą  >  **apletu programy**panelu sterowania  >  **Odinstaluj program**.
 
-2. Następnie zainstaluj program Web Deploy 3.6 dla serwerów hostingowych w systemie Windows Server.
+2. Następnie zainstaluj Web Deploy 3,6 dla serwerów hostingu w systemie Windows Server.
 
-    Aby zainstalować program Web Deploy for Hosting Servers, użyj [instalatora platformy sieci Web (WebPI).](https://www.microsoft.com/web/downloads/platform.aspx) (Aby znaleźć łącze Instalatora platformy sieci Web z usług IIS, wybierz **usługi IIS** w lewym okienku Menedżera serwera. Kliknij prawym przyciskiem myszy serwer i wybierz **menedżera internetowych usług informacyjnych (IIS).**
+    Aby zainstalować Web Deploy dla serwerów hostingu, użyj Instalatora platformy sieci Web (Instalatora WebPI). (Aby znaleźć łącze Instalatora platformy sieci Web z usług IIS, wybierz pozycję **IIS** w lewym okienku Menedżer serwera. W okienku serwera kliknij prawym przyciskiem myszy serwer, a następnie wybierz pozycję **menedżer Internet Information Services (IIS)**. Następnie użyj linku **Pobierz nowe składniki platformy sieci Web** w oknie **Akcje** .) Możesz również uzyskać dostęp do Instalatora platformy sieci Web (Instalatora WebPI) z [plików do pobrania](https://www.microsoft.com/web/downloads/platform.aspx).
 
-    W Instalatorze platformy sieci Web znajdziesz **pozycję Wdrażanie sieci Web dla serwerów hostingowych** na karcie Aplikacje.
+    W Instalatorze platformy sieci Web Znajdź **Web Deploy 3,6 dla serwerów hostingu** na karcie aplikacje.
 
-3. Jeśli nie zainstalowano jeszcze **skryptów i narzędzi zarządzania usługami IIS,** zainstaluj je teraz.
+3. Jeśli nie zostały jeszcze zainstalowane **Narzędzia i skrypty zarządzania usługami IIS**, zainstaluj je teraz.
 
-    Przejdź do pozycji Narzędzia do**zarządzania****serwerami sieci Web (IIS)** >  **wybierz pozycję Wybierz role** > serwerów sieci Web ,a następnie wybierz rolę **Skrypty i narzędzia zarządzania usługami IIS,** kliknij przycisk **Dalej**, a następnie zainstaluj rolę.
+    Wybierz kolejno pozycje **serwer**  >  **serwer sieci Web**  >  **Narzędzia do zarządzania**programu, a następnie wybierz rolę **Narzędzia i skrypty zarządzania usługami IIS** , kliknij przycisk **dalej**, a następnie Zainstaluj rolę.
 
-    ![Instalowanie skryptów i narzędzi zarządzania usługami IIS](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
+    ![Zainstaluj narzędzia i skrypty zarządzania usługami IIS](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 
-    Skrypty i narzędzia są wymagane, aby umożliwić generowanie pliku ustawień publikowania.
+    Do włączenia generowania pliku ustawień publikowania wymagane są skrypty i narzędzia.
 
-4. (Opcjonalnie) Sprawdź, czy wdrażanie w sieci Web działa poprawnie, otwierając **Panel sterowania > system i narzędzia administracyjne > zabezpieczeń > usługami** i upewnij się, że usługa **agenta wdrażania sieci Web** jest uruchomiona (nazwa usługi jest inna w starszych wersjach).
+4. Obowiązkowe Sprawdź, czy Web Deploy działa prawidłowo, otwierając **Panel sterowania > system i zabezpieczenia > narzędzia administracyjne > usługi** i upewnij się, że **Usługa Deployment Agent sieci Web** jest uruchomiona (nazwa usługi jest inna w starszych wersjach).
 
-    Jeśli usługa agenta nie jest uruchomiona, uruchom ją. Jeśli w ogóle nie jest obecny, przejdź do **panelu sterowania > programy > Odinstaluj program**, znajdź wersję microsoft Web Deploy ** \<>**. Wybierz **opcję Zmień** instalację i upewnij się, że wybierz pozycję **Zostanie zainstalowany na lokalnym dysku twardym** dla składników wdrażania w sieci Web. Wykonaj kroki instalacji zmiany.
+    Jeśli usługa agenta nie jest uruchomiona, należy ją uruchomić. Jeśli ta aplikacja nie istnieje, przejdź do pozycji **Panel sterowania > programy > Odinstaluj program**, Znajdź pozycję **Microsoft Web Deploy \<version> **. Wybierz opcję **zmiany** instalacji i upewnij się, że wybrana opcja **zostanie zainstalowana na lokalnym dysku twardym** dla składników Web Deploy. Wykonaj kroki instalacji zmian.

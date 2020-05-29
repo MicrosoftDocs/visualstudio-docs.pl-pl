@@ -1,84 +1,84 @@
 ---
 title: Edytor źródeł
-description: Korzystanie z edytora źródłowego w programie Visual Studio dla komputerów Mac
+description: Korzystanie z edytora źródła w Visual Studio dla komputerów Mac
 author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68493223"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173099"
 ---
-# <a name="source-editor"></a>Edytor źródeł
+# <a name="source-editor"></a>Edytor źródła
 
-Niezawodny edytor źródłowy jest niezbędny do pisania kodu w sposób zwięzły i wydajny. Visual Studio dla komputerów Mac udostępnia zaawansowany edytor źródłowy, który znajduje się w centrum interakcji z IDE. Edytor źródeł udostępnia funkcje, których można oczekiwać i które trzeba wykonać swoją pracę z łatwością: Od podstaw, takich jak podświetlanie składni, fragmenty kodu i składanie kodu, po zalety integracji kompilatora Roslyn, takie jak w pełni funkcjonalny kod IntelliSense Zakończenia.
+Niezawodny Edytor źródeł jest istotny do pisania kodu w zwięzły i wydajny sposób. Visual Studio dla komputerów Mac udostępnia zaawansowany edytor źródła, który jest w centrum interakcji z IDE. Edytor źródła udostępnia funkcje, które można oczekiwać i konieczność pracy z łatwością: od podstaw, takich jak wyróżnianie składni, fragmenty kodu i składanie kodu, do korzyści z integracji kompilatora Roslyn, takich jak w pełni funkcjonalne uzupełnianie kodu IntelliSense.
 
-Edytor źródłowy w programie Visual Studio dla komputerów Mac umożliwia bezproblemowe środowisko ze wszystkimi innymi funkcjami w IDE, takimi jak debugowanie, refaktoryzowanie i integracja kontroli wersji.
+Edytor źródła w Visual Studio dla komputerów Mac umożliwia bezproblemowe środowisko pracy ze wszystkimi innymi funkcjami środowiska IDE, takimi jak debugowanie, refaktoryzacja i integracja kontroli wersji.
 
-W tym artykule przedstawiono niektóre z kluczowych funkcji edytora źródłowego i bada, jak można używać programu Visual Studio dla komputerów Mac, aby być jak najbardziej produktywne.
+W tym artykule przedstawiono niektóre najważniejsze funkcje edytora źródła i przedstawiono sposób, w jaki można wykorzystać Visual Studio dla komputerów Mac, jak to możliwe.
 
-## <a name="the-source-editor-experience"></a>Środowisko edytora źródeł
+## <a name="the-source-editor-experience"></a>Środowisko edytora źródła
 
-Efektywne przeglądanie i przenoszenie w całym kodzie jest integralną częścią przepływu pracy deweloperskiego. Dokładnie, jak zdecydujesz się wyświetlić i utrzymać kod jest osobista decyzja, która różni się między deweloperami — i często między projektami.
+Wydajne wyświetlanie i przechodzenie w całym kodzie jest integralną częścią przepływu pracy deweloperskiej. Dokładny sposób wyświetlania i konserwowania kodu jest indywidualną decyzją, która różni się między deweloperami i często między projektami.
 
-Visual Studio dla komputerów Mac oferuje wiele zaawansowanych funkcji, aby tworzenie między platformami tak dostępne i jak najbardziej przydatne. W poniższych sekcjach opisano niektóre z najważniejszych wydarzeń.
+Visual Studio dla komputerów Mac oferuje wiele zaawansowanych funkcji umożliwiających tworzenie aplikacji dla wielu platform jako dostępnych i przydatnych, jak to możliwe. W poniższych sekcjach opisano niektóre z nich.
 
 ## <a name="code-folding"></a>Składanie kodu
 
-Składanie kodu ułatwia zarządzanie plikami kodu źródłowego, umożliwiając deweloperom wyświetlanie lub ukrywanie pełnych sekcji kodu, takich jak używanie dyrektyw, kodu i komentarzy oraz #region instrukcji. Składanie kodu jest domyślnie wyłączone w programie Visual Studio dla komputerów Mac
+Łamanie kodu ułatwia zarządzanie dużymi plikami kodu źródłowego przez umożliwienie deweloperom wyświetlania lub ukrywania kompletnych części kodu, takich jak dyrektywy, kod standardowy i komentarze oraz instrukcje #region. Funkcja składania kodu jest domyślnie wyłączona w Visual Studio dla komputerów Mac
 
-Aby włączyć składanie kodu, przejdź do **programu Visual Studio > Preferencje > Edytor tekstu > Ogólne > składane kodu:**
+Aby włączyć funkcję składania kodu, przejdź do sekcji **preferencje > programu Visual Studio > Edytor tekstów > ogólne > składania kodu**:
 
 ![Opcje składania kodu](media/source-neweditor-image1.png)
 
-To menu zawiera również opcję składania #regions i komentarzy domyślnie, wyświetlając nazwaną wskazówkę zamiast kodu.
+To menu zawiera również opcję umieszczenia #regions i komentarzy domyślnie, wyświetlając wskazówkę o nazwie zamiast kodu.
 
-Aby wyświetlić lub ukryć sekcje, użyj widżetu ujawnienia obok numeru wiersza:
+Aby pokazać lub ukryć sekcje, użyj widżetu ujawniania obok numeru wiersza:
 
-![Pokazywanie lub ukrywanie sekcji w kodzie](media/source-neweditor-image2.png)
+![Wyświetlanie lub ukrywanie sekcji w kodzie](media/source-neweditor-image2.png)
 
-Można również przełączać się między pokazywaniem i ukrywaniem zagęszków za pomocą elementu menu **Widok > Składany > Przełączanie składania / Przełączanie wszystkich zagięć:**
+Możesz również przełączać się między pokazywaniem i ukrywaniem zagięć przy użyciu **widoku > składania > Przełącz pozycję zagnij/Przełącz wszystkie składowe** w menu:
 
-![Element menu składanego](media/source-editor-image19.png)
+![Element menu składania](media/source-editor-image19.png)
 
 Ten element menu może być również używany do włączania lub wyłączania składania kodu.
 
 ## <a name="word-wrap"></a>Zawijanie wierszy
 
-Zawijanie wyrazów może pomóc w zarządzaniu przestrzenią podczas pracy nad długimi wierszami kodu lub z ograniczoną przestrzenią widokową. Zawijanie wyrazów może również zapewnić, że widok kodu zawiera pełną zawartość pliku źródłowego, nawet podczas otwierania okienek, które mogą zasłaniać widok lub zmniejszyć szerokość widoku źródłowego. 
+Zawijanie słów może pomóc w zarządzaniu miejscem podczas pracy nad długimi wierszami kodu lub z ograniczoną ilością widoku. Zawijanie wierszy może również upewnić się, że widok kodu zawiera pełną zawartość pliku źródłowego nawet podczas otwierania okienek, które mogą zasłaniać widok lub zmniejszyć szerokość widoku źródła. 
 
-Zawijanie wyrazów jest domyślnie wyłączone, ale można je włączyć za pomocą preferencji w programie Visual Studio dla **komputerów** Mac. 
+Zawijanie wyrazów jest domyślnie wyłączone, ale można je włączyć za pomocą **preferencji** w Visual Studio dla komputerów Mac. 
 
-Aby włączyć zawijanie wyrazów, przejdź do **programu Visual Studio > Preferencje > Edytor tekstu > Nowy edytor > zawijanie wyrazów:**
+Aby włączyć zawijanie wierszy, przejdź do **> preferencji programu Visual Studio > edytorze tekstów > Zawijanie wierszy**:
 
-![Opcje zawijania wyrazów](media/source-neweditor-wordwrap1.png)
+![Opcje zawijania słów](media/source-neweditor-wordwrap1.png)
 
-Po włączeniu zawijanie wyrazów wiersze przekraczające szerokość widoku edytora źródłowego zostaną automatycznie zawinięte do następnego wiersza w pliku źródłowym. Można również włączyć opcję, która wyświetli widoczny glif obok zawiniętych linii. Pozwoli to na rozróżnienie między liniami, które zostały zawinięte automatycznie, a tymi, które zostały zawinięte ręcznie.
+Po włączeniu zawijania wierszy wiersze, które przekraczają szerokość widoku edytora źródła, zostaną automatycznie zawinięte do następnego wiersza w pliku źródłowym. Możesz również włączyć opcję, która będzie wyświetlać widoczny symbol obok opakowanych wierszy. Pozwoli to na rozróżnienie wierszy, które zostały opakowane automatycznie, oraz tych, które zostały opakowane ręcznie.
 
-![Zawinięty tekst z włączonym zawinięciem wyrazu](media/source-neweditor-wordwrap2.png)
+![Opakowany tekst z włączonym zawijaniem wyrazów](media/source-neweditor-wordwrap2.png)
 
-## <a name="ruler"></a>Linijki
+## <a name="ruler"></a>Podział
 
-Linijka kolumny jest przydatna do określania długości linii, szczególnie podczas pracy z zespołem, który ma wytyczne dotyczące długości linii. Linijkę kolumny można włączyć lub wyłączyć, przechodząc do **programu Visual Studio > Preferencje > Edytor tekstu > znaczniki i linijki** oraz wybierając (lub odznaczając) Pokaż **linijkę kolumny,** jak pokazano na poniższej ilustracji:
+Linijka kolumn jest przydatna do określania długości linii, szczególnie podczas pracy nad zespołem, który ma wskazówki dotyczące długości linii. Linijki kolumn można włączać lub wyłączać, przechodząc do pozycji **preferencje > programu Visual Studio > edytorze tekstu > znaczniki i linijki** oraz wybierając (lub usuwając zaznaczenie) przycisk **Pokaż linijkę kolumn**, jak pokazano na poniższej ilustracji:
 
-![Okno dialogowe Preferencje z wyróżnioną "pokaż linijkę kolumny"](media/source-editor-image5.png)
+![Okno dialogowe preferencji z wyróżnioną pozycją "Pokaż linijkę kolumn"](media/source-editor-image5.png)
 
- Jest to wyświetlana w edytorze źródłowym jako pionowa jasnoszary.
+ Ten element jest wyświetlany jako pionowy, szary wiersz w edytorze źródła.
 
-## <a name="highlight-identifier-references"></a>Wyróżnianie odwołań do identyfikatorów
+## <a name="highlight-identifier-references"></a>Wyróżnij odwołania do identyfikatorów
 
-Dzięki włączeniu opcji "Wyróżnij odwołania do identyfikatorów" można wybrać dowolny symbol w kodzie źródłowym, a edytor źródłowy zapewni wizualny przewodnik po wszystkich innych odwołaniach w tym pliku. Aby włączyć tę opcję, przejdź do **programu Visual Studio > Preferencje > Edytor tekstu > znaczniki i linijki** i wybierz pozycję _Wyróżnij odniesienia do identyfikatorów_, jak pokazano na poniższej ilustracji:
+Po włączeniu opcji "odwołuje się do identyfikatora wyróżnienia" można wybrać dowolny symbol w kodzie źródłowym, a Edytor źródła udostępni przewodnik wizualny do wszystkich innych odwołań w tym pliku. Aby włączyć tę opcję, przejdź do **> preferencji programu Visual Studio > edytora tekstu > znaczniki i linijki** , a następnie wybierz pozycję _Wyróżnij odwołania do identyfikatora_, jak pokazano na poniższej ilustracji:
 
-![Okno dialogowe Preferencje z wyróżnionym "Wyróżnij odniesienia do identyfikatorów"](media/source-editor-image6.png)
+![Okno dialogowe preferencji z wyróżnionymi odwołaniami do identyfikatora wyróżnienia](media/source-editor-image6.png)
 
-Kolor podświetlenia jest również przydatny do oznaczania, że coś jest przypisywane lub odwołujące się do niego. Jeśli coś jest przypisane, jest podświetlony na czerwono; jeśli odwołuje się do niego, jest podświetlony na niebiesko:
+Kolor wyróżnienia jest również przydatny do oznaczania, że element jest przypisywany lub przywoływany. Jeśli coś jest przypisane, zostanie wyróżnione na czerwono. Jeśli istnieje odwołanie, zostanie wyróżnione kolorem niebieskim:
 
-![przykład przedstawiający kolor podświetlenia](media/source-editor-image7.png)
+![przykład pokazujący kolor wyróżnienia](media/source-editor-image7.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu (Visual Studio w systemie Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
-- [Tworzenie nakreślenia (Visual Studio w systemie Windows)](/visualstudio/ide/outlining)
+- [Tworzenie konspektu (Visual Studio w systemie Windows)](/visualstudio/ide/outlining)

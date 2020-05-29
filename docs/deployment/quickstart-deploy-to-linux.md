@@ -9,44 +9,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 1e05862aa57c24bfa8f17d551762054278dd6e52
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1a6500b8b38cc6beef21e7da301ec8e1ef7d4bd6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72806874"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173275"
 ---
-# <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publikowanie aplikacji ASP.NET Core w usłudze App Service w systemie Linux przy użyciu programu Visual Studio
+# <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publikowanie aplikacji ASP.NET Core App Service w systemie Linux przy użyciu programu Visual Studio
 
-Począwszy od programu Visual Studio 2017 w wersji 15.7, można publikować ASP.NET podstawowe aplikacje do usługi Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z następujących metod.
+Począwszy od programu Visual Studio 2017 w wersji 15,7, można publikować ASP.NET Core aplikacje do Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
 
-* W przypadku ciągłego (lub zautomatyzowanego) wdrażania aplikacji należy używać usługi Azure DevOps z [usługą Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-* W przypadku jednorazowego (lub ręcznego) wdrażania aplikacji użyj narzędzia **Publikowania** w programie Visual Studio, aby opublikować aplikacje ASP.NET Core w usłudze App Service dla systemu Linux (przy użyciu kontenerów).
+* W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio, aby opublikować ASP.NET Core aplikacje do App Service dla systemu Linux (przy użyciu kontenerów).
 
-W tym artykule opisano sposób używania narzędzia **Publikowania** do jednorazowego wdrażania.
+W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na potrzeby wdrożenia jednorazowego.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
-## <a name="publish-to-app-service-on-linux"></a>Publikowanie w usłudze App Service w systemie Linux
+## <a name="publish-to-azure-app-service-on-linux"></a>Publikowanie w usłudze Azure App Service w systemie Linux
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj** (lub użyj elementu menu **Buduj** > **publikowanie).**
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Publikuj** (lub użyj elementu menu **Kompiluj**  >  **publikację** ).
 
-    ![Polecenie Publikuj w menu kontekstowym projektu w Eksploratorze rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
+    ![Polecenie Publikuj w menu kontekstowym projektu w Eksplorator rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
 
-1. Jeśli wcześniej skonfigurowano profile publikowania, zostanie wyświetlone okienko **Publikowania,** w którym to przypadku wybierz pozycję **Utwórz nowy profil**.
+1. W oknie dialogowym **Publikowanie** wybierz pozycję **Azure**.
 
-1. W oknie **dialogowym Wybieranie celu publikowania** wybierz pozycję **App Service Linux**.
+    ![Wybieranie elementu docelowego publikowania](../deployment/media/quickstart-publish-azure.png)
 
-    ![Wybieranie usługi aplikacji platformy Azure](../deployment/media/quickstart-publish-linux.png "Wybieranie usługi aplikacji platformy Azure")
+1. Wybierz pozycję **Azure App Service (Linux)** i **dalej**.
 
-1. Wybierz pozycję **Publikuj**. Zostanie wyświetlone okno dialogowe **Tworzenie usługi app service.** Zaloguj się za pomocą konta platformy Azure, jeśli to konieczne, domyślne ustawienia usługi aplikacji wypełnić pola.
+    ![Wybierz Azure App Service w systemie Linux](../deployment/media/quickstart-publish-linux-select-azure-service.png)
 
-    ![Tworzenie usługi App Service](../deployment/media/quickstart-publish-settings-app-service-linux.png "Tworzenie usługi aplikacji platformy Azure")
+1. Jeśli to konieczne, zaloguj się przy użyciu konta platformy Azure. Wybierz pozycję **Utwórz nowy Azure App Service...**
 
-1. Wybierz **pozycję Utwórz**. Visual Studio wdraża aplikację do usługi Azure App Service, a aplikacja internetowa ładuje się w przeglądarce. Właściwości projektu W okienku **Publikowanie** jest wyświetlany adres URL witryny i inne szczegóły.
+    ![Link do tworzenia nowego wystąpienia Azure App Service](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-    ![Publikowanie okienka właściwości z podsumowaniem profilu](../deployment/media/quickstart-publish-app-service-summary.png)
+1. W oknie dialogowym **tworzenie Azure App Service (Linux)** pola **Nazwa aplikacji**, **grupa zasobów**i zapis **planu App Service** są wypełniane. Te nazwy można zachować lub zmienić. Gdy wszystko będzie gotowe, wybierz pozycję **Utwórz**.
+
+    ![Wybierz Azure App Service](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+
+1. W oknie dialogowym **Publikowanie** nowo utworzone wystąpienie zostało automatycznie zaznaczone. Gdy wszystko będzie gotowe, kliknij przycisk **Zakończ**.
+
+    ![Wybierz Azure App Service](../deployment/media/quickstart-publish-linux-select-instance.png)
+
+1. Wybierz pozycję **Publikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
+
+    ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-linux-summary-page.png)
 
 ## <a name="clean-up-resources"></a>Oczyszczanie zasobów
 
@@ -57,7 +67,7 @@ Wybierz pozycję **Usuń**, wpisz ciąg **myResourceGroup** w polu tekstowym, a 
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym przewodniku Szybki start dowiesz się, jak utworzyć profil publikowania w usłudze App Service w systemie Linux za pomocą programu Visual Studio. Możesz chcieć więcej informacji na temat publikowania w systemie Linux przy użyciu platformy Azure.
+W tym przewodniku szybki start przedstawiono sposób użycia programu Visual Studio do utworzenia profilu publikowania na potrzeby wdrożenia App Service w systemie Linux. Możesz chcieć uzyskać więcej informacji na temat publikowania w systemie Linux przy użyciu platformy Azure.
 
 > [!div class="nextstepaction"]
-> [Usługa aplikacji dla systemu Linux](/azure/app-service/containers/app-service-linux-intro)
+> [App Service systemu Linux](/azure/app-service/containers/app-service-linux-intro)

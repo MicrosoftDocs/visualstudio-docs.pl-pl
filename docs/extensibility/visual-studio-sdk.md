@@ -1,5 +1,5 @@
 ---
-title: Visual Studio SDK | Dokumenty firmy Microsoft
+title: Visual Studio SDK | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,58 +14,58 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56f772d7d27f11318cdeb0bf365373d5f7c1294b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80698073"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173568"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
-Visual Studio SDK pomaga rozszerzyć funkcje programu Visual Studio lub zintegrować nowe funkcje do programu Visual Studio. Rozszerzenia można rozpowszechniać wśród innych użytkowników, a także do portalu Visual Studio Marketplace. Oto niektóre ze sposobów, w jaki można rozszerzyć program Visual Studio:
+Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub integrowanie nowych funkcji w programie Visual Studio. Rozszerzenia można dystrybuować do innych użytkowników, a także do Visual Studio Marketplace. Poniżej przedstawiono kilka sposobów, w których można rozciągnąć program Visual Studio:
 
-- Dodawanie poleceń, przycisków, menu i innych elementów interfejsu użytkownika do ide
+- Dodawanie poleceń, przycisków, menu i innych elementów interfejsu użytkownika do IDE
 
-- Dodawanie okien narzędzi dla nowych funkcji
+- Dodawanie okien narzędzi do nowych funkcji
 
-- Rozszerzanie funkcji IntelliSense dla danego języka lub dostarczanie technologii IntelliSense dla nowych języków programowania
+- Rozszerzając funkcję IntelliSense dla danego języka lub Udostępnij technologię IntelliSense dla nowych języków programowania
 
-- Użyj żarówek, aby zapewnić wskazówki i sugestie, które pomagają programistom pisać lepszy kod
+- Korzystanie z żarówki w celu zapewnienia wskazówek i sugestii, które ułatwiają deweloperom pisanie lepszego kodu
 
 - Włączanie obsługi nowego języka
 
-- Dodawanie niestandardowego typu projektu
+- Dodaj niestandardowy typ projektu
 
-- Docieranie do milionów programistów za pośrednictwem portalu Visual Studio Marketplace
+- Dotrzej do milionów deweloperów za pośrednictwem Visual Studio Marketplace
 
-  Jeśli nigdy wcześniej nie napisano rozszerzenia programu Visual Studio, należy znaleźć więcej informacji na temat tych funkcji i [na temat Rozpoczynanie tworzenia rozszerzeń programu Visual Studio.](../extensibility/starting-to-develop-visual-studio-extensions.md)
+  Jeśli jeszcze nie zapisano rozszerzenia programu Visual Studio, należy znaleźć więcej informacji na temat tych funkcji i w momencie [rozpoczęcia tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
 ## <a name="install-the-visual-studio-sdk"></a>Instalowanie zestawu Visual Studio SDK
- Zestaw SDK programu Visual Studio jest opcjonalną funkcją w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Visual Studio SDK to opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="whats-new-in-the-visual-studio-2017-sdk"></a>Co nowego w sdk programu Visual Studio 2017
- Visual Studio SDK ma kilka nowych funkcji, takich jak format VSIX v3, jak również zmiany podziału, które mogą wymagać aktualizacji rozszerzenia. Aby uzyskać więcej informacji, zobacz [Co nowego w SDK programu Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).
+## <a name="whats-new-in-the-visual-studio-sdk"></a>Co nowego w zestawie SDK programu Visual Studio
+ Zestaw Visual Studio SDK zawiera nowe funkcje, takie jak synchroniczne, automatyczne ładowanie rozszerzeń ostrzeżenie i format VSIX v3, a także istotne zmiany, które mogą wymagać aktualizacji rozszerzenia. Aby uzyskać więcej informacji, zobacz [co nowego w zestawie SDK programu Visual studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md) i [co nowego w zestawie SDK programu Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).
 
 ## <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące środowiska użytkownika programu Visual Studio
- Uzyskaj doskonałe wskazówki dotyczące projektowania interfejsu użytkownika dla rozszerzenia w [wskazówki dotyczące środowiska użytkownika](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)programu Visual Studio.
+ Uzyskaj doskonałe wskazówki dotyczące projektowania interfejsu użytkownika dla rozszerzenia w [wytycznych dotyczących środowiska użytkownika programu Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
- Możesz również dowiedzieć się, jak sprawić, aby rozszerzenie wyglądało świetnie na urządzeniach o wysokiej rozdzielczości DPI, za pomocą artykułu Problemy z [rozdzielczością DPI adres.](../extensibility/addressing-dpi-issues2.md)
+ Możesz również dowiedzieć się, jak zwiększyć atrakcyjność rozszerzenia na urządzeniach o wysokiej rozdzielczości DPI z artykułem [problemy dotyczące adresów dpi](../extensibility/addressing-dpi-issues2.md) .
 
- Skorzystaj z [usługi obrazu i katalogu,](../extensibility/image-service-and-catalog.md) aby uzyskać doskonałe zarządzanie obrazami i obsługę wysokiej rozdzielczości DPI i motywów.
+ Skorzystaj z [usługi Image Service i katalogu](../extensibility/image-service-and-catalog.md) , aby uzyskać doskonałe zarządzanie obrazami i obsługę wysokiej rozdzielczości DPI i ich obsługi.
 
-## <a name="find-and-install-existing-visual-studio-extensions"></a>Znajdowanie i instalowanie istniejących rozszerzeń programu Visual Studio
- Rozszerzenia programu Visual Studio można znaleźć w oknie dialogowym **Rozszerzenia i aktualizacje** w menu **Narzędzia.** Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Rozszerzenia można również znaleźć w portalu [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
+## <a name="find-and-install-existing-visual-studio-extensions"></a>Znajdź i zainstaluj istniejące rozszerzenia programu Visual Studio
+ Rozszerzenia programu Visual Studio można znaleźć w oknie dialogowym **rozszerzenia i aktualizacje** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Możesz również znaleźć rozszerzenia w [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 
-## <a name="visual-studio-sdk-reference"></a>Odwołanie do sdk programu Visual Studio
- Odwołanie do interfejsu API SDK programu Visual Studio można znaleźć w [programie Visual Studio SDK Reference](../extensibility/visual-studio-sdk-reference.md).
+## <a name="visual-studio-sdk-reference"></a>Dokumentacja zestawu Visual Studio SDK
+ Informacje o interfejsie API zestawu SDK programu Visual Studio można znaleźć w [dokumentacji programu Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
-## <a name="visual-studio-sdk-samples"></a>Przykłady zestawów SDK programu Visual Studio
- Przykłady open source rozszerzeń SDK vs można znaleźć w usłudze GitHub w [programie Visual Studio Samples.](https://github.com/Microsoft/VSSDK-Extensibility-Samples) To repozytorium GitHub zawiera przykłady, które ilustrują różne rozszerzalne funkcje w programie Visual Studio.
+## <a name="visual-studio-sdk-samples"></a>Visual Studio SDK — przykłady
+ Przykłady rozszerzeń typu "open source" w witrynie GitHub można znaleźć w przykładach [programu Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). To repozytorium GitHub zawiera przykłady ilustrujące różne rozszerzalne funkcje w programie Visual Studio.
 
-## <a name="other-visual-studio-sdk-resources"></a>Inne zasoby SDK programu Visual Studio
- Jeśli masz pytania dotyczące programu VSSDK lub chcesz podzielić się swoimi doświadczeniami z tworzeniem rozszerzeń, możesz użyć [forum rozszerzalności programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) lub programu [ExtendVS Gitter Chatroom](https://gitter.im/Microsoft/extendvs).
+## <a name="other-visual-studio-sdk-resources"></a>Inne zasoby programu Visual Studio SDK
+ Jeśli masz pytania dotyczące VSSDK lub chcesz udostępnić swoje środowiska opracowywania rozszerzeń, możesz użyć [forum rozszerzeń programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) lub [ExtendVS warunkom chatroom](https://gitter.im/Microsoft/extendvs).
 
- Więcej informacji można znaleźć na [blogu VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) i wielu blogach napisanych przez microsoft mvps:
+ Więcej informacji można znaleźć w [blogu VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) i wielu blogach pisanych przez firmę Microsoft MVP:
 
 - [Ulubione rozszerzenia programu Visual Studio](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -73,25 +73,25 @@ Visual Studio SDK pomaga rozszerzyć funkcje programu Visual Studio lub zintegro
 
 - [Rozszerzanie programu Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
-- [Jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Często zadawane pytania: Konwertowanie dodatków na rozszerzenia VSPackage](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
+- [Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
 - [Zarządzanie wieloma wątkami w kodzie zarządzanym](../extensibility/managing-multiple-threads-in-managed-code.md)
-- [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
+- [Poszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 - [Dodawanie poleceń do pasków narzędzi](../extensibility/adding-commands-to-toolbars.md)
-- [Rozszerzanie i dostosowywanie okien narzędzi](../extensibility/extending-and-customizing-tool-windows.md)
+- [Rozbudowane i dostosowujące okna narzędzi](../extensibility/extending-and-customizing-tool-windows.md)
 - [Rozszerzenia edytora i usługi językowej](../extensibility/editor-and-language-service-extensions.md)
-- [Rozszerzanie projektów](../extensibility/extending-projects.md)
-- [Rozszerzanie ustawień i opcji użytkownika](../extensibility/extending-user-settings-and-options.md)
+- [Rozwiń projekty](../extensibility/extending-projects.md)
+- [Rozwiń Ustawienia użytkownika i opcje](../extensibility/extending-user-settings-and-options.md)
 - [Tworzenie niestandardowych szablonów projektów i elementów](../extensibility/creating-custom-project-and-item-templates.md)
-- [Rozszerzanie właściwości i okna właściwości](../extensibility/extending-properties-and-the-property-window.md)
-- [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
-- [Korzystanie i świadczenie usług](../extensibility/using-and-providing-services.md)
+- [Rozwiń właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md)
+- [Rozszerzając inne części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Używanie i świadczenie usług](../extensibility/using-and-providing-services.md)
 - [Zarządzanie pakietami VSPackage](../extensibility/managing-vspackages.md)
-- [Izolowana powłoka programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
-- [Wysyłaj rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+- [Powłoka izolowana programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
+- [Wyślij rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Wewnątrz zestawu Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Obsługa zestawu Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)
-- [Odwołanie do sdk programu Visual Studio](../extensibility/visual-studio-sdk-reference.md)
+- [Dokumentacja zestawu Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)

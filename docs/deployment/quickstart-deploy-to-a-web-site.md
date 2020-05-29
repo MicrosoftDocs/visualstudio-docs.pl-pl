@@ -10,51 +10,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71127936"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173701"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publikowanie aplikacji sieci Web w witrynie sieci Web przy użyciu programu Visual Studio
 
-Za pomocą narzędzia **Publikowania** można publikować aplikacje ASP.NET, ASP.NET Core, .NET Core i Python w witrynie sieci Web z programu Visual Studio. W przypadku pliku Node.js kroki są obsługiwane, ale interfejs użytkownika jest inny.
+Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, ASP.NET Core, .NET Core i Python w witrynie sieci Web z poziomu programu Visual Studio. W przypadku środowiska Node. js czynności są obsługiwane, ale interfejs użytkownika jest inny.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Jeśli chcesz opublikować aplikację klasyczną systemu Windows w sieciowym udziale plików, zobacz [Wdrażanie aplikacji klasycznej przy użyciu funkcji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic). W przypadku języka C++/CLI zobacz [Wdrażanie aplikacji natywnej przy użyciu funkcji ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub w przypadku języka C/C++, zobacz [Wdrażanie aplikacji natywnej przy użyciu projektu instalatora](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Jeśli musisz opublikować aplikację klasyczną systemu Windows w sieciowym udziale plików, zobacz [wdrażanie aplikacji klasycznej przy użyciu technologii ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic). W przypadku języka C++/CLR zobacz [wdrażanie aplikacji natywnej przy użyciu technologii ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) lub dla języka C/C++, zobacz [wdrażanie aplikacji natywnej przy użyciu projektu instalacji](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Publikowanie w witrynie sieci Web
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj** (lub użyj elementu menu **Buduj** > **publikowanie).**
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Publikuj** (lub użyj elementu menu **Kompiluj**  >  **publikację** ).
 
-    ![Polecenie Publikuj w menu kontekstowym projektu w Eksploratorze rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
+    ![Polecenie Publikuj w menu kontekstowym projektu w Eksplorator rozwiązań](../deployment/media/quickstart-publish.png "Wybierz pozycję Publikuj")
 
-1. Jeśli wcześniej skonfigurowano profile publikowania, zostanie wyświetlone okienko **Publikowania.** Wybierz **pozycję Utwórz nowy profil**.
+1. Jeśli wszystkie profile publikowania zostały wcześniej skonfigurowane, zostanie wyświetlone okienko **Publikowanie** . Wybierz pozycję **Utwórz nowy profil**.
 
-1. W oknie **dialogowym Wybieranie celu publikowania** wybierz pozycję **IIS, FTP itp.**
+1. W oknie dialogowym **Publikowanie** wybierz opcję **serwer sieci Web (IIS)**.
 
-    ![Wybierz iIS, FTP itp.](../deployment/media/quickstart-publish-iis-ftp.png "Wybierz iIS, FTP itp.")
+    ![Wybieranie elementu docelowego publikowania](../deployment/media/quickstart-publish-iis.png "Wybierz usługi IIS, FTP itp.")
 
-1. Wybierz pozycję **Publikuj**. Zostanie otwarte okno dialogowe Ustawienia publikowania profilu.
+1. Wybierz **Web Deploy** jako metodę wdrażania. Web Deploy upraszcza wdrażanie aplikacji sieci Web i witryn sieci Web na serwerach usług IIS i musi być zainstalowany jako aplikacja na serwerze. Zainstaluj go za pomocą [Instalatora platformy sieci Web](https://www.microsoft.com/web/downloads/platform.aspx) .
 
-    ![Wybierz folder](../deployment/media/quickstart-publish-settings-web.png "Wybierz folder")
+    ![Wybierz metodę wdrażania](../deployment/media/quickstart-publish-iis-web-deploy.png "Wybierz usługi IIS, FTP itp.")
 
-1. W polu **Metoda publikowania** wybierz metodę, taką jak **Wdrażanie w sieci Web** lub **FTP**. Ustawienia, które widzisz obok odpowiadają metody publikowania. Wdrażanie w sieci Web upraszcza wdrażanie aplikacji sieci Web i witryn sieci Web na serwerach usług IIS i musi być zainstalowane jako aplikacja na serwerze. Użyj [instalatora platformy sieci Web,](https://www.microsoft.com/web/downloads/platform.aspx) aby go zainstalować.
+1. Skonfiguruj wymagane ustawienia metody Publish i wybierz pozycję **Zakończ**. 
 
-1. Skonfiguruj wymagane ustawienia dla metody publikowania i wybierz **pozycję Sprawdź poprawność połączenia**. Jeśli serwer lub obiekt docelowy jest dostępny, a ustawienia są poprawne, komunikat informujący o weryfikacji połączenia i można go opublikować.
+    ![Szczegóły połączenia Web Deploy](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-    ![Sprawdzanie poprawności połączenia](../deployment/media/quickstart-publish-web-deploy.png "Sprawdzanie poprawności połączenia")
-
-1. Wybierz **pozycję Ustawienia,** aby skonfigurować inne ustawienia wdrażania, takie jak wdrażanie konfiguracji debugowania lub wydania, a następnie wybierz pozycję **Zapisz**. Jeśli debugowanie jest debugowanie zdalnie, wymagana jest konfiguracja debugowania.
-
-1. Aby opublikować, wybierz pozycję **Publikuj**. Okno Dane wyjściowe zawiera postęp wdrożenia i wyniki.
+1. Aby przeprowadzić publikowanie, wybierz pozycję **Publikuj** na stronie Podsumowanie. Okno dane wyjściowe pokazuje postęp wdrażania i wyniki.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym przewodniku Szybki start dowiesz się, jak utworzyć profil publikowania za pomocą programu Visual Studio. Profil publikowania można również skonfigurować, importując ustawienia publikowania.
+W tym przewodniku szybki start przedstawiono sposób tworzenia profilu publikowania przy użyciu programu Visual Studio. Możesz również skonfigurować profil publikowania przez zaimportowanie ustawień publikowania.
 
 > [!div class="nextstepaction"]
 > [Importowanie ustawień publikowania i wdrażanie w usługach IIS](tutorial-import-publish-settings-iis.md)
