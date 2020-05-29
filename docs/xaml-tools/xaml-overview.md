@@ -1,16 +1,16 @@
 ---
 title: Przegląd XAML
-ms.date: 01/10/2020
+ms.date: 05/20/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2556387f523769bba93708a9c00d1f7c62429c0f
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: 97f3bc7777023903d5fc38ad1bda7cde45b683b6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886419"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183486"
 ---
 # <a name="overview-of-xaml"></a>Przegląd języka XAML
 
@@ -34,9 +34,9 @@ Program Visual Studio i Blend for Visual Studio udostępniają projektant XAML, 
 
 Artykuły w tym zestawie dokumentacji omawiają projektant XAML w programie Visual Studio i Blend for Visual Studio.
 
-## <a name="whats-new"></a>Co nowego?
+## <a name="whats-new"></a>Co nowego
 
-Aby uzyskać najnowsze informacje, zapoznaj się z artykułem [co nowego w narzędziach deweloperskich języka XAML w blogu programu Visual studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/) i [nowe funkcje XAML w programie Visual Studio](https://youtu.be/yI9OyA4ZM2E) wideo w serwisie YouTube.
+Aby uzyskać najnowsze informacje, zapoznaj się z artykułem [co nowego w narzędziach programistycznych XAML w blogu programu Visual studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/) , [udoskonalenia narzędzi XAML w programie Visual Studio 2019 w wersji 16,7 Preview 1](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/) i [nowe funkcje XAML w programie Visual Studio](https://youtu.be/yI9OyA4ZM2E) wideo w witrynie YouTube.
 
 ## <a name="see-also"></a>Zobacz także
 

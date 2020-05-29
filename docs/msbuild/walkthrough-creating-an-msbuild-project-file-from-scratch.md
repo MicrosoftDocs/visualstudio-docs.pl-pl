@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie pliku projektu MSBuild od podstaw | Dokumenty firmy Microsoft'
+title: 'Przewodnik: Tworzenie pliku projektu MSBuild od podstaw | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,52 +10,56 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263139"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184279"
 ---
-# <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Instruktaż: Tworzenie pliku projektu MSBuild od podstaw
+# <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od podstaw
 
-Języki programowania, które są przeznaczone dla programu .NET Framework używają plików projektu MSBuild do opisywania i kontrolowania procesu kompilacji aplikacji. Podczas tworzenia pliku projektu MSBuild za pomocą programu Visual Studio, odpowiedni kod XML jest automatycznie dodawany do pliku. Jednak może okazać się przydatne, aby zrozumieć, jak XML jest zorganizowany i jak można go zmienić, aby kontrolować kompilacji.
+Języki programowania, które są przeznaczone dla .NET Framework używają plików projektu MSBuild do opisywania i kontrolowania procesu kompilacji aplikacji. W przypadku tworzenia pliku projektu programu MSBuild przy użyciu programu Visual Studio odpowiedni kod XML zostanie automatycznie dodany do pliku. Warto jednak zapoznać się z tematem sposobu organizowania kodu XML i sposobu jego zmiany w celu sterowania kompilacją.
 
- Aby uzyskać informacje dotyczące tworzenia pliku projektu dla projektu języka C++, zobacz [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
+ Aby uzyskać informacje na temat tworzenia pliku projektu dla projektu języka C++, zobacz [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
- W tym przewodniku pokazano, jak utworzyć podstawowy plik projektu przyrostowo, używając tylko edytora tekstu. Przewodnik postępuje poniżej następujące kroki:
+ W tym instruktażu przedstawiono sposób przyrostowego tworzenia podstawowego pliku projektu przy użyciu tylko edytora tekstu. W tym przewodniku opisano następujące kroki:
 
-1. Utwórz minimalny plik źródłowy aplikacji.
+1. Zwiększ wartość zmiennej środowiskowej PATH.
 
-2. Utwórz minimalny plik projektu MSBuild.
+2. Utwórz minimalny plik źródłowy aplikacji.
 
-3. Rozszerz zmienną środowiskową PATH, aby uwzględnić MSBuild.
+3. Utwórz minimalny plik projektu programu MSBuild.
 
-4. Tworzenie aplikacji przy użyciu pliku projektu.
+4. Skompiluj aplikację przy użyciu pliku projektu.
 
 5. Dodaj właściwości, aby kontrolować kompilację.
 
-6. Kontroluj kompilację, zmieniając wartości właściwości.
+6. Kontroluj kompilację przez zmianę wartości właściwości.
 
-7. Dodaj obiekty docelowe do kompilacji.
+7. Dodaj cele do kompilacji.
 
-8. Kontroluj kompilację, określając obiekty docelowe.
+8. Kontroluj kompilację, określając elementy docelowe.
 
-9. Tworzenie przyrostowo.
+9. Kompiluj przyrostowo.
 
-W tym przewodniku pokazano, jak utworzyć projekt w wierszu polecenia i zbadać wyniki. Aby uzyskać więcej informacji na temat msbuild i jak uruchomić MSBuild w wierszu polecenia, zobacz [Instruktaż: Użyj MSBuild](../msbuild/walkthrough-using-msbuild.md).
+W tym instruktażu pokazano, jak skompilować projekt w wierszu polecenia i przejrzeć wyniki. Aby uzyskać więcej informacji na temat programu MSBuild i sposobu uruchamiania programu MSBuild w wierszu polecenia, zobacz [Przewodnik: Korzystanie](../msbuild/walkthrough-using-msbuild.md)z programu MSBuild.
 
-Aby ukończyć instruktaż, musisz mieć zainstalowany program .NET Framework (wersja 2.0, 3.5, 4.0, 4.5 lub nowszy), ponieważ zawiera msbuild i kompilator Visual C#, które są wymagane dla instruktażu.
+Aby ukończyć przewodnik, musisz mieć zainstalowany program Visual Studio, ponieważ zawiera on MSBuild i kompilator Visual C#, które są wymagane do tego przewodnika.
+
+## <a name="extend-the-path"></a>Zwiększ ścieżkę
+
+Aby można było użyć programu MSBuild, należy zwiększyć zmienną środowiskową PATH, aby uwzględnić wszystkie wymagane narzędzia. Możesz użyć **wiersz polecenia dla deweloperów dla programu Visual Studio**. Wyszukaj je w systemie Windows 10 w polu wyszukiwania na pasku zadań systemu Windows. Aby skonfigurować środowisko w zwykłym wierszu polecenia lub w środowisku skryptowym, należy uruchomić *VSDevCmd. bat* w podfolderze *Common7/Tools* instalacji programu Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Tworzenie minimalnej aplikacji
 
- W tej sekcji pokazano, jak utworzyć minimalny plik źródłowy aplikacji Języka C# przy użyciu edytora tekstu.
+ W tej sekcji pokazano, jak utworzyć minimalny plik źródłowy aplikacji C# przy użyciu edytora tekstu.
 
-1. W wierszu polecenia przejdź do folderu, w którym chcesz utworzyć aplikację, na przykład *\Moje\\ dokumenty* lub *\Pulpit\\*.
+1. W wierszu polecenia przejdź do folderu, w którym chcesz utworzyć aplikację, na przykład *\Moje Documents \\ * lub *\Desktop \\ *.
 
-2. Wpisz **md HelloWorld,** aby utworzyć podfolder o nazwie *\\\HelloWorld*.
+2. Wpisz **MD HelloWorld** , aby utworzyć podfolder o nazwie *\HelloWorld \\ *.
 
-3. Wpisz **cd HelloWorld,** aby zmienić na nowy folder.
+3. Wpisz **CD HelloWorld** , aby przejść do nowego folderu.
 
 4. Uruchom Notatnik lub inny edytor tekstu, a następnie wpisz następujący kod.
 
@@ -75,40 +79,40 @@ Aby ukończyć instruktaż, musisz mieć zainstalowany program .NET Framework (w
     }
     ```
 
-5. Zapisz ten plik kodu źródłowego i nadaj jego nazwę *Helloworld.cs*.
+5. Zapisz ten plik kodu źródłowego i nadaj mu nazwę *HelloWorld.cs*.
 
-6. Skompiluj aplikację, wpisując **csc helloworld.cs** w wierszu polecenia.
+6. Skompiluj aplikację, wpisując **HelloWorld.cs CSC** w wierszu polecenia.
 
-7. Przetestuj aplikację, wpisując **helloworld** w wierszu polecenia.
+7. Przetestuj aplikację, wpisując **HelloWorld** w wierszu polecenia.
 
-     **Cześć, świat!** komunikat powinien być wyświetlany.
+     **Witaj, świecie!** powinien być wyświetlony komunikat.
 
-8. Usuń aplikację, wpisując **del helloworld.exe** w wierszu polecenia.
+8. Usuń aplikację, wpisując **del helloworld. exe** w wierszu polecenia.
 
-## <a name="create-a-minimal-msbuild-project-file"></a>Tworzenie minimalnego pliku projektu MSBuild
+## <a name="create-a-minimal-msbuild-project-file"></a>Utwórz minimalny plik projektu programu MSBuild
 
- Teraz, gdy masz minimalny plik źródłowy aplikacji, można utworzyć minimalny plik projektu do tworzenia aplikacji. Ten plik projektu zawiera następujące elementy:
+ Teraz, gdy masz minimalny plik źródłowy aplikacji, możesz utworzyć minimalny plik projektu do skompilowania aplikacji. Ten plik projektu zawiera następujące elementy:
 
-- Wymagany węzeł `Project` główny.
+- Wymagany węzeł główny `Project` .
 
-- Węzeł `ItemGroup` zawierający elementy elementu.
+- `ItemGroup`Węzeł, który zawiera elementy elementu.
 
 - Element elementu, który odwołuje się do pliku źródłowego aplikacji.
 
-- Węzeł `Target` zawierający zadania, które są wymagane do utworzenia aplikacji.
+- `Target`Węzeł zawierający zadania, które są wymagane do skompilowania aplikacji.
 
-- Element `Task` do uruchomienia kompilatora języka Visual C# do tworzenia aplikacji.
+- `Task`Element, aby uruchomić kompilator Visual C# w celu skompilowania aplikacji.
 
 ### <a name="to-create-a-minimal-msbuild-project-file"></a>Aby utworzyć minimalny plik projektu MSBuild
 
-1. W edytorze tekstu zastąp istniejący tekst za pomocą tych dwóch wierszy:
+1. W edytorze tekstów Zastąp istniejący tekst, używając następujących dwóch wierszy:
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     </Project>
     ```
 
-2. Wstaw `ItemGroup` ten węzeł jako `Project` element podrzędny węzła:
+2. Wstaw ten `ItemGroup` węzeł jako element podrzędny `Project` węzła:
 
     ```xml
     <ItemGroup>
@@ -116,24 +120,24 @@ Aby ukończyć instruktaż, musisz mieć zainstalowany program .NET Framework (w
     </ItemGroup>
     ```
 
-     Należy zauważyć, że to `ItemGroup` już zawiera element elementu.
+     Zwróć uwagę, że `ItemGroup` zawiera już element Item.
 
-3. Dodaj `Target` węzeł jako element podrzędny węzła. `Project` Nazwij `Build`węzeł .
+3. Dodaj `Target` węzeł jako element podrzędny `Project` węzła. Nadaj nazwę węzłowi `Build` .
 
     ```xml
     <Target Name="Build">
     </Target>
     ```
 
-4. Wstaw ten element zadania jako `Target` element podrzędny węzła:
+4. Wstaw ten element zadania jako element podrzędny `Target` węzła:
 
     ```xml
     <Csc Sources="@(Compile)"/>
     ```
 
-5. Zapisz ten plik projektu i nazwij go *Helloworld.csproj*.
+5. Zapisz ten plik projektu i nazwij go *HelloWorld. csproj*.
 
-Minimalny plik projektu powinien przypominać następujący kod:
+Minimalny plik projektu powinien wyglądać podobnie do następującego:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -146,55 +150,45 @@ Minimalny plik projektu powinien przypominać następujący kod:
 </Project>
 ```
 
-Zadania w celu kompilacji są wykonywane sekwencyjnie. W takim przypadku zadanie kompilatora `Csc` języka Visual C# jest jedynym zadaniem. Oczekuje listy plików źródłowych do skompilowania, a to `Compile` jest podane przez wartość elementu. Element `Compile` odwołuje się tylko do jednego pliku źródłowego, *Helloworld.cs*.
+Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przypadku zadanie kompilatora Visual C# `Csc` jest jedynym zadaniem. Oczekuje ono listy plików źródłowych do skompilowania, a następnie jest określona przez wartość `Compile` elementu. `Compile`Element odwołuje się tylko do jednego pliku źródłowego, *HelloWorld.cs*.
 
 > [!NOTE]
-> W elemencie można użyć symbolu wieloznacznego gwiazdki (\*) w celu odwoływania się do wszystkich plików, które mają rozszerzenie nazwy pliku *cs,* w następujący sposób:
+> W elemencie Item można użyć symbolu wieloznacznego gwiazdki (), \* Aby odwołać się do wszystkich plików mających rozszerzenie nazwy pliku *. cs* w następujący sposób:
 >
 > ```xml
 > <Compile Include="*.cs" />
 > ```
 
-## <a name="extend-the-path-to-include-msbuild"></a>Rozszerzanie ścieżki w celu uwzględnienia msbuild
-
-Przed dostępem do usługi MSBuild należy rozszerzyć zmienną środowiskową PATH, aby uwzględnić folder .NET Framework.
-
-Począwszy od programu Visual Studio 2013, program *MSBuild.exe* można znaleźć w folderze MSBuild (*%ProgramFiles%\MSBuild* w 32-bitowym systemie operacyjnym lub w *%ProgramFiles(x86)%\MSBuild* w 64-bitowym systemie operacyjnym).
-
-W wierszu polecenia wpisz **POLECENIE PATH=%PATH%;%ProgramFiles%\MSBuild** lub **ustaw PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**.
-
-Alternatywnie, jeśli masz zainstalowany program Visual Studio, można użyć **wiersza polecenia dewelopera dla programu Visual Studio**, który ma ścieżkę, która zawiera folder *MSBuild.*
-
 ## <a name="build-the-application"></a>Kompilowanie aplikacji
 
- Teraz, aby utworzyć aplikację, użyj pliku projektu, który właśnie został utworzony.
+ Teraz, aby skompilować aplikację, należy użyć pliku projektu, który właśnie został utworzony.
 
-1. W wierszu polecenia wpisz **msbuild helloworld.csproj -t:Build**.
+1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-t:build**.
 
-     Spowoduje to utworzenie obiektu docelowego kompilacji pliku projektu Helloworld, wywołując kompilator visual c#, aby utworzyć aplikację Helloworld.
+     Powoduje to kompilację docelowej kompilacji pliku projektu HelloWorld przez wywołanie kompilatora Visual C# w celu utworzenia aplikacji HelloWorld.
 
-2. Przetestuj aplikację, wpisując **helloworld**.
+2. Przetestuj aplikację, wpisując polecenie **HelloWorld**.
 
-     **Cześć, świat!** komunikat powinien być wyświetlany.
+     **Witaj, świecie!** powinien być wyświetlony komunikat.
 
 > [!NOTE]
-> Można zobaczyć więcej szczegółów na temat kompilacji, zwiększając poziom szczegółowości. Aby ustawić poziom szczegółowości na "szczegółowe", wpisz to polecenie w wierszu polecenia:
+> Aby zobaczyć więcej szczegółów na temat kompilacji, zwiększ poziom szczegółowości. Aby ustawić poziom szczegółowości na "szczegółowy", wpisz następujące polecenie w wierszu polecenia:
 >
-> **msbuild helloworld.csproj -t:Build -verbosity:detailed**
+> **MSBuild HelloWorld. csproj-t:Build-verbose: szczegóły**
 
 ## <a name="add-build-properties"></a>Dodawanie właściwości kompilacji
 
- Można dodać właściwości kompilacji do pliku projektu, aby dalej kontrolować kompilację. Teraz dodaj te właściwości:
+ Możesz dodać właściwości kompilacji do pliku projektu, aby w większym stopniu kontrolować kompilację. Teraz Dodaj następujące właściwości:
 
-- Właściwość, `AssemblyName` aby określić nazwę aplikacji.
+- `AssemblyName`Właściwość określająca nazwę aplikacji.
 
-- Właściwość `OutputPath` określająca folder zawierający aplikację.
+- `OutputPath`Właściwość określająca folder, w którym ma znajdować się aplikacja.
 
 ### <a name="to-add-build-properties"></a>Aby dodać właściwości kompilacji
 
-1. Usuń istniejącą aplikację, wpisując **plik del helloworld.exe** w wierszu polecenia.
+1. Usuń istniejącą aplikację, wpisując **del helloworld. exe** w wierszu polecenia.
 
-2. W pliku projektu wstaw ten `PropertyGroup` element `Project` tuż po elemencie otwierającym:
+2. W pliku projektu, Wstaw ten `PropertyGroup` element tuż po elemencie otwierającym `Project` :
 
     ```xml
     <PropertyGroup>
@@ -203,25 +197,25 @@ Alternatywnie, jeśli masz zainstalowany program Visual Studio, można użyć **
     </PropertyGroup>
     ```
 
-3. Dodaj to zadanie do obiektu docelowego kompilacji, `Csc` tuż przed zadaniem:
+3. Dodaj to zadanie do elementu docelowego kompilacji tuż przed `Csc` zadaniem:
 
     ```xml
     <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />
     ```
 
-     Zadanie `MakeDir` tworzy folder, który jest `OutputPath` nazwany przez właściwość, pod warunkiem, że żaden folder o tej nazwie obecnie istnieje.
+     `MakeDir`Zadanie tworzy folder, który jest nazwany przez `OutputPath` Właściwość, pod warunkiem, że folder o tej nazwie nie istnieje.
 
-4. Dodaj `OutputAssembly` ten atrybut `Csc` do zadania:
+4. Dodaj ten `OutputAssembly` atrybut do `Csc` zadania:
 
     ```xml
     <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />
     ```
 
-     Nakazuje kompilator visual C# do tworzenia zestawu, `AssemblyName` który jest nazwany przez właściwość i `OutputPath` umieścić go w folderze, który jest nazwany przez właściwość.
+     Powoduje to wygenerowanie przez kompilator języka Visual C# zestawu, który jest nazwany przez `AssemblyName` Właściwość i umieszczenie go w folderze, który jest nazwany przez `OutputPath` Właściwość.
 
 5. Zapisz zmiany.
 
-Plik projektu powinien teraz przypominać następujący kod:
+Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -240,13 +234,13 @@ Plik projektu powinien teraz przypominać następujący kod:
 ```
 
 > [!NOTE]
-> Zaleca się dodanie ogranicznika\\ścieżki odwrotnej ( ) na końcu nazwy folderu `OutputPath` po określeniu go `OutputAssembly` w elemencie, zamiast dodawać go w atrybucie `Csc` zadania. Zatem
+> Zalecamy dodanie ogranicznika ścieżki odwróconej kreski ułamkowej ( \\ ) na końcu nazwy folderu, gdy zostanie on określony w `OutputPath` elemencie, zamiast dodawać go w `OutputAssembly` atrybucie `Csc` zadania. Zatem
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
 > `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
 >
-> jest lepszy niż
+> jest lepsza niż
 >
 > `<OutputPath>Bin</OutputPath>`
 >
@@ -254,31 +248,31 @@ Plik projektu powinien teraz przypominać następujący kod:
 
 ## <a name="test-the-build-properties"></a>Testowanie właściwości kompilacji
 
- Teraz można utworzyć aplikację przy użyciu pliku projektu, w którym użyto właściwości kompilacji, aby określić folder wyjściowy i nazwę aplikacji.
+ Teraz można skompilować aplikację przy użyciu pliku projektu, w którym użyto właściwości kompilacji do określenia folderu wyjściowego i nazwy aplikacji.
 
-1. W wierszu polecenia wpisz **msbuild helloworld.csproj -t:Build**.
+1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-t:build**.
 
-     Spowoduje to utworzenie folderu *\Bin,\\ * a następnie wywołanie kompilatora języka Visual C# w celu utworzenia aplikacji *MSBuildSample* i umieszcza ją w folderze *\Bin.\\ *
+     Spowoduje to utworzenie *folderu \\ \Bin* , a następnie wywołanie kompilatora Visual C# w celu utworzenia aplikacji *aplikację MSBuildSample* i umieszczenie jej w folderze *\Bin \\ * .
 
-2. Aby sprawdzić, czy folder *\\ \Bin* został utworzony i czy zawiera aplikację *MSBuildSample,* wpisz **dir Bin**.
+2. Aby sprawdzić, czy *folder \\ \Bin* został utworzony, i czy zawiera aplikację *aplikację MSBuildSample* , wpisz **dir bin**.
 
-3. Przetestuj aplikację, wpisując **plik Bin\MSBuildSample**.
+3. Przetestuj aplikację, wpisując **Bin\MSBuildSample**.
 
-     **Cześć, świat!** komunikat powinien być wyświetlany.
+     **Witaj, świecie!** powinien być wyświetlony komunikat.
 
-## <a name="add-build-targets"></a>Dodawanie obiektów docelowych kompilacji
+## <a name="add-build-targets"></a>Dodaj cele kompilacji
 
- Następnie dodaj dwa kolejne obiekty docelowe do pliku projektu w następujący sposób:
+ Następnie Dodaj dwa elementy docelowe do pliku projektu w następujący sposób:
 
-- Czysty obiekt docelowy, który usuwa stare pliki.
+- Czysty element docelowy, który usuwa stare pliki.
 
-- A Odbuduj `DependsOnTargets` obiekt docelowy, który używa atrybutu, aby wymusić clean zadanie do uruchomienia przed build zadania.
+- Obiekt docelowy odbudowywania, który używa `DependsOnTargets` atrybutu, aby wymusić uruchomienie czystego zadania przed zadaniem kompilacji.
 
-Teraz, gdy masz wiele obiektów docelowych, można ustawić miejsce docelowe kompilacji jako domyślny obiekt docelowy.
+Teraz, gdy masz wiele obiektów docelowych, możesz ustawić cel kompilacji jako domyślny element docelowy.
 
-### <a name="to-add-build-targets"></a>Aby dodać obiekty docelowe kompilacji
+### <a name="to-add-build-targets"></a>Aby dodać cele kompilacji
 
-1. W pliku projektu dodaj te dwa obiekty docelowe tuż po docelowych kompilacji:
+1. W pliku projektu, Dodaj te dwa obiekty docelowe tuż po elemencie docelowym kompilacji:
 
     ```xml
     <Target Name="Clean" >
@@ -287,17 +281,17 @@ Teraz, gdy masz wiele obiektów docelowych, można ustawić miejsce docelowe kom
     <Target Name="Rebuild" DependsOnTargets="Clean;Build" />
     ```
 
-     Czysty obiekt docelowy wywołuje zadanie Delete, aby usunąć aplikację. Obiekt docelowy odbudować nie jest uruchamiany, dopóki nie uruchomią się zarówno celu Czyste, jak i docelowe kompilacji. Mimo że miejsce docelowe odbudować nie ma żadnych zadań, powoduje, że clean cel do uruchomienia przed build obiektu docelowego.
+     Czysty obiekt docelowy wywołuje zadanie usuwania, aby usunąć aplikację. Cel ponownego kompilowania nie jest uruchamiany, dopóki nie zostanie uruchomiony zarówno czysty element docelowy, jak i element docelowy kompilacji. Mimo że miejsce docelowe odbudowywania nie ma żadnych zadań, powoduje, że jest uruchamiany czysty element docelowy przed elementem docelowym kompilacji.
 
-2. Dodaj `DefaultTargets` ten atrybut do `Project` elementu otwierającego:
+2. Dodaj ten `DefaultTargets` atrybut do otwierającego `Project` elementu:
 
     ```xml
     <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     ```
 
-     Spowoduje to ustawienie obiektu docelowego kompilacji jako domyślnego obiektu docelowego.
+     Ustawia cel kompilacji jako domyślny element docelowy.
 
-Plik projektu powinien teraz przypominać następujący kod:
+Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 
 ```xml
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -321,59 +315,59 @@ Plik projektu powinien teraz przypominać następujący kod:
 
 ## <a name="test-the-build-targets"></a>Testowanie celów kompilacji
 
- Można skorzystać z nowych obiektów docelowych kompilacji, aby przetestować te funkcje pliku projektu:
+ W celu przetestowania tych funkcji w pliku projektu można wykonać nowe cele kompilacji:
 
-- Tworzenie kompilacji domyślnej.
+- Kompilowanie kompilacji domyślnej.
 
 - Ustawianie nazwy aplikacji w wierszu polecenia.
 
-- Usuwanie aplikacji przed inną aplikacją jest skonsułkowanie.
+- Usuwanie aplikacji przed skompilowaniem innej aplikacji.
 
 - Usuwanie aplikacji bez tworzenia innej aplikacji.
 
 ### <a name="to-test-the-build-targets"></a>Aby przetestować cele kompilacji
 
-1. W wierszu polecenia wpisz **msbuild helloworld.csproj -p:AssemblyName=Greetings**.
+1. W wierszu polecenia wpisz **MSBuild HelloWorld. csproj-p:AssemblyName = Greetings**.
 
-     Ponieważ przełącznik **-t** nie został jawnie ustawiony, msBuild uruchamia domyślny obiekt docelowy kompilacji. Przełącznik **-p** zastępuje `AssemblyName` właściwość i nadaje jej `Greetings`nową wartość, . Powoduje to utworzenie nowej aplikacji *Greetings.exe*w folderze *\Bin.\\ *
+     Ze względu na to, że przełącznik **-t** nie został jawnie ustawiony dla obiektu docelowego, MSBuild uruchamia domyślny element docelowy kompilacji. Przełącznik **-p** przesłania `AssemblyName` Właściwość i przekazuje ją nowej wartości `Greetings` . Powoduje to utworzenie nowej aplikacji, *Greetings. exe*w folderze *\Bin \\ * .
 
-2. Aby sprawdzić, czy folder *\\ \Bin* zawiera zarówno aplikację *MSBuildSample, jak* i nową aplikację *Pozdrowienia,* wpisz **dir Bin**.
+2. Aby sprawdzić, czy *folder \\ \Bin* zawiera aplikację *aplikację MSBuildSample* oraz nowe aplikacje *Greetings* , wpisz **dir bin**.
 
-3. Przetestuj aplikację Pozdrowienia, wpisując **plik Bin\Pozdrowienia**.
+3. Przetestuj aplikację Greetings, wpisując **Bin\Greetings**.
 
-     **Cześć, świat!** komunikat powinien być wyświetlany.
+     **Witaj, świecie!** powinien być wyświetlony komunikat.
 
-4. Usuń aplikację MSBuildSample, wpisując **msbuild helloworld.csproj -t:clean**.
+4. Usuń aplikację aplikację MSBuildSample, wpisując **MSBuild HelloWorld. csproj-t:Clean**.
 
-     Spowoduje to uruchomieniu zadania Clean, aby `AssemblyName` usunąć aplikację `MSBuildSample`o domyślnej wartości właściwości , .
+     Spowoduje to uruchomienie czystego zadania, aby usunąć aplikację, która ma domyślną `AssemblyName` wartość właściwości `MSBuildSample` .
 
-5. Usuń aplikację Pozdrowienia, wpisując **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.
+5. Usuń aplikację Greetings, wpisując **MSBuild HelloWorld. csproj-t:Clean-p:AssemblyName = Greetings**.
 
-     Spowoduje to uruchomieniu zadania Clean, aby usunąć aplikację, która `Greetings`ma podaną wartość właściwości **AssemblyName,** .
+     Spowoduje to uruchomienie czystego zadania w celu usunięcia aplikacji, która ma daną wartość właściwości **AssemblyName** `Greetings` .
 
-6. Aby sprawdzić, czy folder *\Bin\\ * jest teraz pusty, wpisz **dir Bin**.
+6. Aby sprawdzić, czy *folder \\ \Bin* jest teraz pusty, wpisz **dir bin**.
 
-7. Wpisz **msbuild**.
+7. Wpisz **MSBuild**.
 
-     Chociaż plik projektu nie jest określony, MSBuild buduje plik *helloworld.csproj,* ponieważ w bieżącym folderze znajduje się tylko jeden plik projektu. Powoduje to, że aplikacja *MSBuildSample* ma zostać utworzona w folderze *\Bin.\\ *
+     Chociaż nie określono pliku projektu, MSBuild kompiluje plik *HelloWorld. csproj* , ponieważ w bieżącym folderze istnieje tylko jeden plik projektu. Powoduje to utworzenie aplikacji *aplikację MSBuildSample* w folderze *\Bin \\ * .
 
-     Aby sprawdzić, czy folder *\\ \Bin* zawiera aplikację *MSBuildSample,* wpisz **dir Bin**.
+     Aby sprawdzić, czy *folder \\ \Bin* zawiera aplikację *aplikację MSBuildSample* , wpisz **dir bin**.
 
-## <a name="build-incrementally"></a>Tworzenie przyrostowo
+## <a name="build-incrementally"></a>Kompiluj przyrostowo
 
- Można powiedzieć MSBuild do tworzenia obiektu docelowego tylko wtedy, gdy pliki źródłowe lub docelowe, które zależy od obiektu docelowego zostały zmienione. MSBuild używa sygnatury czasowej pliku, aby ustalić, czy został zmieniony.
+ Można powiedzieć, że program MSBuild ma tworzyć obiekty docelowe tylko wtedy, gdy pliki źródłowe lub docelowe, od których zależy element docelowy, zostały zmienione. MSBuild używa sygnatury czasowej pliku, aby określić, czy został zmieniony.
 
-### <a name="to-build-incrementally"></a>Aby budować przyrostowo
+### <a name="to-build-incrementally"></a>Aby kompilować przyrostowo
 
-1. W pliku projektu dodaj te atrybuty do otwierającego obiektu docelowego kompilacji:
+1. W pliku projektu Dodaj te atrybuty do otwierającego elementu docelowego kompilacji:
 
     ```xml
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"
     ```
 
-     Określa to, że miejsce docelowe kompilacji zależy `Compile` od plików wejściowych, które są określone w grupie elementów i że miejsce docelowe danych wyjściowych jest plikiem aplikacji.
+     Oznacza to, że element docelowy kompilacji zależy od plików wejściowych, które są określone w `Compile` grupie elementów, i że docelowy wynik jest plikiem aplikacji.
 
-     Wynikowy obiekt docelowy kompilacji powinien przypominać następujący kod:
+     Utworzony element docelowy kompilacji powinien wyglądać podobnie do następującego kodu:
 
     ```xml
     <Target Name="Build" Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe">
@@ -382,27 +376,27 @@ Plik projektu powinien teraz przypominać następujący kod:
     </Target>
     ```
 
-2. Przetestuj obiekt docelowy kompilacji, wpisując **msbuild -v:d** w wierszu polecenia.
+2. Przetestuj cel kompilacji, wpisując **MSBuild-v:d** w wierszu polecenia.
 
-     Należy pamiętać, że *helloworld.csproj* jest domyślnym plikiem projektu, a kompilacja jest domyślnym celem.
+     Należy pamiętać, że *HelloWorld. csproj* jest domyślnym plikiem projektu i że kompilacja jest domyślnym obiektem docelowym.
 
      Przełącznik **-v:d** określa pełny opis procesu kompilacji.
 
-     Linie te powinny być wyświetlane:
+     Powinny być wyświetlane następujące wiersze:
 
-     **Pomijanie obiektu docelowego "Kompilacja", ponieważ wszystkie pliki wyjściowe są aktualne w odniesieniu do plików wejściowych.**
+     **Pomijanie elementu docelowego "Kompilacja", ponieważ wszystkie pliki wyjściowe są aktualne w odniesieniu do plików wejściowych.**
 
      **Pliki wejściowe: HelloWorld.cs**
 
-     **Pliki wyjściowe: BinMSBuildSample.exe**
+     **Pliki wyjściowe: BinMSBuildSample. exe**
 
-     MSBuild pomija miejsce docelowe kompilacji, ponieważ żaden z plików źródłowych nie uległ zmianie od czasu ostatniego utworzenia aplikacji.
+     Program MSBuild pomija miejsce docelowe kompilacji, ponieważ żadne pliki źródłowe nie uległy zmianie od czasu ostatniego skompilowania aplikacji.
 
-## <a name="c-example"></a>Przykład języka C#
+## <a name="c-example"></a>Przykład w języku C#
 
-Poniższy przykład przedstawia plik projektu, który kompiluje aplikację Języka C# i rejestruje komunikat zawierający nazwę pliku wyjściowego.
+W poniższym przykładzie przedstawiono plik projektu, który kompiluje aplikację w języku C# i rejestruje komunikat zawierający nazwę pliku wyjściowego.
 
-### <a name="code"></a>Code
+### <a name="code"></a>Kod
 
 ```xml
 <Project DefaultTargets = "Compile"
@@ -435,11 +429,11 @@ Poniższy przykład przedstawia plik projektu, który kompiluje aplikację Języ
 </Project>
 ```
 
-## <a name="visual-basic-example"></a>Przykład języka Visual Basic
+## <a name="visual-basic-example"></a>Przykład Visual Basic
 
-W poniższym przykładzie przedstawiono plik projektu, który kompiluje aplikację języka Visual Basic i rejestruje komunikat zawierający nazwę pliku wyjściowego.
+W poniższym przykładzie przedstawiono plik projektu, który kompiluje Visual Basic aplikację i rejestruje komunikat zawierający nazwę pliku wyjściowego.
 
-### <a name="code"></a>Code
+### <a name="code"></a>Kod
 
 ```xml
 <Project DefaultTargets = "Compile"
@@ -474,9 +468,9 @@ W poniższym przykładzie przedstawiono plik projektu, który kompiluje aplikacj
 
 ## <a name="whats-next"></a>Co dalej?
 
- Visual Studio można automatycznie wykonać wiele pracy, która jest pokazana w tym instruktażu. Aby dowiedzieć się, jak używać programu Visual Studio do tworzenia, edytowania, tworzenia i testowania plików projektu MSBuild, zobacz [Instruktaż: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md).
+ Program Visual Studio może automatycznie wykonywać większość pracy, która jest wyświetlana w tym instruktażu. Aby dowiedzieć się, jak używać programu Visual Studio do tworzenia, edytowania, kompilowania i testowania plików projektów programu MSBuild, zobacz [Przewodnik: korzystanie z MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Omówienie usługi MSBuild](../msbuild/msbuild.md)
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
+- [Omówienie programu MSBuild](../msbuild/msbuild.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

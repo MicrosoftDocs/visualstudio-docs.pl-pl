@@ -1,5 +1,5 @@
 ---
-title: Konstrukcje warunkowe MSBuild | Dokumenty firmy Microsoft
+title: Konstrukcje warunkowe MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,26 +22,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633385"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184292"
 ---
 # <a name="msbuild-conditional-constructs"></a>Konstrukcje warunkowe MSBuild
 
-MSBuild udostępnia mechanizm dla albo/lub przetwarzania z [Wybierz](../msbuild/choose-element-msbuild.md), [Kiedy](../msbuild/when-element-msbuild.md)i [W inny sposób](../msbuild/otherwise-element-msbuild.md) elementów.
+Program MSBuild oferuje mechanizm do wykonywania operacji lub przetwarzania za pomocą elementów [Choose](../msbuild/choose-element-msbuild.md), [when](../msbuild/when-element-msbuild.md)i [Otherwise](../msbuild/otherwise-element-msbuild.md) .
 
-## <a name="use-the-choose-element"></a>Użyj elementu Wybierz
+## <a name="use-the-choose-element"></a>Użyj wybierz element
 
- Element `Choose` zawiera serię `When` elementów `Condition` z atrybutami, które są testowane w `true`kolejności od góry do dołu, aż jeden ocenia . Jeśli więcej `When` niż jeden `true`element ocenia , używany jest tylko pierwszy. Element, `Otherwise` jeśli jest obecny, zostanie oceniony, jeśli żaden warunek `When` elementu nie zostanie obliczony na `true`.
+ `Choose`Element zawiera serię `When` elementów z `Condition` atrybutami, które są testowane w kolejności od góry do dołu do momentu, w którym ma zostać obliczona wartość `true` . Jeśli więcej niż jeden `When` element ma wartość `true` , zostanie użyta tylko pierwsza z nich. `Otherwise`Element, jeśli jest obecny, będzie oceniany, jeśli nie ma żadnego warunku dla `When` elementu `true` .
 
- `Choose`elementy mogą być używane `Project`jako `When` `Otherwise` elementy podrzędne , i elementów. `When`i `Otherwise` elementy `ItemGroup`mogą `PropertyGroup`mieć `Choose` , lub elementy podrzędne.
+ `Choose`elementy mogą być używane jako elementy podrzędne elementów `Project` `When` i `Otherwise` . `When``Otherwise`elementami i mogą być `ItemGroup` `PropertyGroup` `Choose` elementy podrzędne.
 
 ## <a name="example"></a>Przykład
 
- W poniższym `Choose` przykładzie `When` użyto i elementy dla albo/lub przetwarzania. Właściwości i elementy projektu są ustawiane w zależności `Configuration` od wartości właściwości.
+ Poniższy przykład używa `Choose` `When` elementów i dla obu/lub do przetwarzania. Właściwości i elementy projektu są ustawiane w zależności od wartości `Configuration` właściwości.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
@@ -79,9 +79,21 @@ MSBuild udostępnia mechanizm dla albo/lub przetwarzania z [Wybierz](../msbuild/
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz też
+W tym przykładzie jest używany warunek dla stałej kompilatora `DEFINED_CONSTANT` . Są one uwzględnione we `DefinedConstants` właściwości. Wyrażenie regularne jest używane do dopasowania dokładnej stałej na liście rozdzielanej średnikami.
 
-- [Wybierz element (MSBuild)](../msbuild/choose-element-msbuild.md)
-- [Gdy element (MSBuild)](../msbuild/when-element-msbuild.md)
-- [W przeciwnym razie element (MSBuild)](../msbuild/otherwise-element-msbuild.md)
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
+```xml
+<Choose>
+   <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch(
+         $(DefineConstants), '^(.*;)*DEFINED_CONSTANT(;.*)*$'))">
+      <!-- When DEFINED_CONSTANT is defined. -->
+   </When>
+   <!-- other conditions -->
+</Choose>
+```
+
+## <a name="see-also"></a>Zobacz także
+
+- [Choose — element (MSBuild)](../msbuild/choose-element-msbuild.md)
+- [When, element (MSBuild)](../msbuild/when-element-msbuild.md)
+- [Otherwise — element (MSBuild)](../msbuild/otherwise-element-msbuild.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

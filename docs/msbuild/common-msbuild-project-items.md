@@ -1,5 +1,5 @@
 ---
-title: Typowe elementy projektu MSBuild | Dokumenty firmy Microsoft
+title: Wspólne elementy projektów MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,157 +15,158 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634451"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182914"
 ---
-# <a name="common-msbuild-project-items"></a>Typowe elementy projektu MSBuild
+# <a name="common-msbuild-project-items"></a>Wspólne elementy projektu MSBuild
 
-W MSBuild element jest nazwanym odwołaniem do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie Visual Studio mają kilka wspólnych elementów. Te elementy są zdefiniowane w pliku *Microsoft.Build.CommonTypes.xsd*.
-## <a name="common-items"></a>Typowe przedmioty
+W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie Visual Studio mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku *Microsoft. Build. CommonTypes. xsd*.
 
- Poniżej znajduje się lista wszystkich typowych elementów projektu.
-Poniżej znajduje się lista wszystkich typowych elementów projektu.
+## <a name="common-items"></a>Elementy wspólne
+
+Poniżej znajduje się lista wszystkich wspólnych elementów projektu.
 
 ### <a name="reference"></a>Dokumentacja
 
- Reprezentuje odwołanie do zestawu (zarządzane) w projekcie.
+Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 
 |Nazwa metadanych elementu|Opis|
 |---------------|-----------------|
-|Ścieżka podpowiedzi|Opcjonalny ciąg znaków. Względna lub bezwzględna ścieżka złożenia.|
-|Nazwa|Opcjonalny ciąg znaków. Wyświetlana nazwa zestawu, na przykład "System.Windows.Forms".|
-|Nazwa fuzji|Opcjonalny ciąg znaków. Określa prostą lub silną nazwę fuzji dla elementu.<br /><br /> Gdy ten atrybut jest obecny, można zaoszczędzić czas, ponieważ plik zestawu nie musi być otwarty, aby uzyskać nazwę fuzji.|
-|SpecificVersion (Specyfik)|Opcjonalny wartość logiczna. Określa, czy należy odwoływać się tylko do wersji w nazwie fuzji.|
-|Aliasy|Opcjonalny ciąg znaków. Wszelkie aliasy dla odwołania.|
-|Private|Opcjonalny wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **Kopiuj lokalną** odwołania, która znajduje się w programie Visual Studio IDE.|
+|HintPath|Opcjonalny ciąg. Ścieżka względna lub bezwzględna zestawu.|
+|Nazwa|Opcjonalny ciąg. Nazwa wyświetlana zestawu, na przykład "System. Windows. Forms".|
+|FusionName|Opcjonalny ciąg. Określa prostą lub silną nazwę syntezy dla elementu.<br /><br /> Gdy ten atrybut jest obecny, może zaoszczędzić czas, ponieważ plik zestawu nie musi być otwarty w celu uzyskania nazwy Fusion.|
+|Ustawienie SpecificVersion|Opcjonalna wartość logiczna. Określa, czy należy odwoływać się tylko do wersji w nazwie Fusion.|
+|Aliasy|Opcjonalny ciąg. Wszelkie aliasy odwołania.|
+|Private|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|
 
-### <a name="comreference"></a>Wniosek COM
+### <a name="comreference"></a>COMReference
 
- Reprezentuje odwołanie do składnika COM (niezarządzane) w projekcie. Ten element dotyczy tylko projektów platformy .NET.
-
-|Nazwa metadanych elementu|Opis|
-|---------------|-----------------|
-|Nazwa|Opcjonalny ciąg znaków. Wyświetlana nazwa komponentu.|
-|Guid (identyfikator GUID)|Wymagany ciąg. Identyfikator GUID dla składnika {12345678-1234-1234-1234-1234567891234}w formularzu .|
-|WersjaMajor|Wymagany ciąg. Główna część numeru wersji składnika. Na przykład "5", jeśli pełny numer wersji to "5.46".|
-|WersjaMinor|Wymagany ciąg. Pomocnicza część numeru wersji składnika. Na przykład "46", jeśli pełny numer wersji to "5.46".|
-|Identyfikator LCID|Opcjonalny ciąg znaków. LocaleID dla składnika.|
-|WrapperTool (WrapperTool)|Opcjonalny ciąg znaków. Nazwa narzędzia otoki używanego w komponencie, na przykład "tlbimp".|
-|Izolowany|Opcjonalny wartość logiczna. Określa, czy komponent jest komponentem wolnym od reg.|
-
-### <a name="comfilereference"></a>Wniosek COMFileReference
-
- Reprezentuje listę bibliotek typów, które są `TypeLibFiles` przekazywane do parametru obiektu docelowego [ResolveComReference.](resolvecomreference-task.md) Ten element dotyczy tylko projektów platformy .NET.
+Reprezentuje odwołanie do składnika COM (niezarządzane) w projekcie. Ten element ma zastosowanie tylko do projektów .NET.
 
 |Nazwa metadanych elementu|Opis|
 |---------------|-----------------|
-|WrapperTool (WrapperTool)|Opcjonalny ciąg znaków. Nazwa narzędzia otoki używanego w komponencie, na przykład "tlbimp".|
+|Nazwa|Opcjonalny ciąg. Nazwa wyświetlana składnika.|
+|Guid (identyfikator GUID)|Wymagany ciąg. Identyfikator GUID składnika w formularzu {12345678-1234-1234-1234-1234567891234} .|
+|VersionMajor|Wymagany ciąg. Główna część numeru wersji składnika. Na przykład "5", jeśli pełny numer wersji to "5,46".|
+|VersionMinor|Wymagany ciąg. Pomocnicza część numeru wersji składnika. Na przykład "46", jeśli pełny numer wersji to "5,46".|
+|Identyfikator LCID|Opcjonalny ciąg. LocaleID dla składnika.|
+|WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, które jest używane w składniku, na przykład "tlbimp".|
+|Izolowany|Opcjonalna wartość logiczna. Określa, czy składnik jest składnikiem bezpłatnym reg.|
 
-### <a name="nativereference"></a>NativeReference (NativeReference)
+### <a name="comfilereference"></a>COMFileReference
 
- Reprezentuje natywny plik manifestu lub odwołanie do takiego pliku.
-
-|Nazwa metadanych elementu|Opis|
-|---------------|-----------------|
-|Nazwa|Wymagany ciąg. Nazwa podstawowa pliku manifestu.|
-|Ścieżka podpowiedzi|Wymagany ciąg. Ścieżka względna pliku manifestu.|
-
-### <a name="projectreference"></a>Wniosek projektowy
-
- Reprezentuje odwołanie do innego projektu.
+Reprezentuje listę bibliotek typów, które są przesyłane do `TypeLibFiles` parametru elementu docelowego [ResolveComReference —](resolvecomreference-task.md) . Ten element ma zastosowanie tylko do projektów .NET.
 
 |Nazwa metadanych elementu|Opis|
 |---------------|-----------------|
-|Nazwa|Opcjonalny ciąg znaków. Wyświetlana nazwa odwołania.|
-|Project|Opcjonalny ciąg znaków. Identyfikator GUID dla odwołania, {12345678-1234-1234-1234-1234567891234}w formularzu .|
-|Pakiet|Opcjonalny ciąg znaków. Ścieżka pliku projektu, do którego się odwołuje.|
-|ReferenceOutputAssembly|Opcjonalny wartość logiczna. Jeśli jest `false`ustawiona na , nie obejmuje dane wyjściowe projektu, do którego istnieje odwołanie, jak [odwołanie do](#reference) tego projektu, ale nadal zapewnia, że inny projekt jest budowany przed tym projektem. Wartość domyślna to `true`.|
+|WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, które jest używane w składniku, na przykład "tlbimp".|
 
-### <a name="compile"></a>Skompilować
+### <a name="nativereference"></a>NativeReference
 
- Reprezentuje pliki źródłowe dla kompilatora.
+Reprezentuje natywny plik manifestu lub odwołanie do takiego pliku.
+
+|Nazwa metadanych elementu|Opis|
+|---------------|-----------------|
+|Nazwa|Wymagany ciąg. Podstawowa nazwa pliku manifestu.|
+|HintPath|Wymagany ciąg. Ścieżka względna pliku manifestu.|
+
+### <a name="projectreference"></a>Elementu ProjectReference
+
+Reprezentuje odwołanie do innego projektu. `ProjectReference`elementy są przekształcane w elementy [odniesienia](#reference) przez `ResolveProjectReferences` obiekt docelowy, więc wszystkie prawidłowe metadane w odwołaniu mogą być prawidłowe w `ProjectReference` przypadku, gdy proces transformacji nie zastąpi tego elementu.
+
+|Nazwa metadanych elementu|Opis|
+|---------------|-----------------|
+|Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|
+|Project|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
+|Pakiet|Opcjonalny ciąg. Ścieżka do pliku projektu, do którego istnieje odwołanie.|
+|ReferenceOutputAssembly|Opcjonalna wartość logiczna. Jeśli jest ustawiona na `false` , program nie uwzględnia danych wyjściowych przywoływanego projektu jako [odwołania](#reference) do tego projektu, ale nadal zapewnia, że inny projekt zostanie skompilowany przed tym. Wartość domyślna to `true` .|
+
+### <a name="compile"></a>Opracowania
+
+Reprezentuje pliki źródłowe kompilatora.
 
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
-| ZależnePo | Opcjonalny ciąg znaków. Określa plik, od który plik zależy od poprawnego skompilowania. |
-| AutoGen (AutoGen) | Opcjonalny wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu przez zintegrowane środowisko programistyczne programu Visual Studio (IDE). |
-| Link | Opcjonalny ciąg znaków. Ścieżka notacyjna, która ma być wyświetlana, gdy plik fizycznie znajduje się poza wpływem pliku projektu. |
-| Widoczne | Opcjonalny wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksploratorze rozwiązań** w programie Visual Studio. |
-| CopyToOutputDirectory (CopyToOutputDirectory) | Opcjonalny ciąg znaków. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. Nigdy<br />2. Zawsze<br />3. ZachowaćZachód |
+| DependentUpon | Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować poprawnie. |
+| AutoGen | Opcjonalna wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu przez zintegrowane środowisko programistyczne (IDE) programu Visual Studio. |
+| Link | Opcjonalny ciąg. Ścieżka zapisu, która ma być wyświetlana, gdy plik jest fizycznie zlokalizowany poza wpływem pliku projektu. |
+| Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
+| CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 
-### <a name="embeddedresource"></a>Zasoby wbudowaneSerekseźródło
+### <a name="embeddedresource"></a>EmbeddedResource
 
- Reprezentuje zasoby, które mają być osadzone w wygenerowanym zestawie.
+Reprezentuje zasoby do osadzenia w wygenerowanym zestawie.
 
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
-| ZależnePo | Opcjonalny ciąg znaków. Określa plik, od który zależy ten plik, aby skompilować poprawnie |
-| Generator | Wymagany ciąg. Nazwa dowolnego generatora plików, który jest uruchamiany na tym elemencie. |
-| LastGenOutput (LastGenOutput) | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolnego generatora plików, który działał na tym elemencie. |
-| Obszar CustomToolNamespace | Wymagany ciąg. Obszar nazw, w którym każdy generator plików, który działa na tym elemencie, powinien utworzyć kod. |
-| Link | Opcjonalny ciąg znaków. Ścieżka notacyjna jest wyświetlana, jeśli plik fizycznie znajduje się poza wpływem projektu. |
-| Widoczne | Opcjonalny wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksploratorze rozwiązań** w programie Visual Studio. |
-| CopyToOutputDirectory (CopyToOutputDirectory) | Opcjonalny ciąg znaków. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. Nigdy<br />2. Zawsze<br />3. ZachowaćZachód |
-| Nazwa logiczna | Wymagany ciąg. Logiczna nazwa osadzonego zasobu. |
+| DependentUpon | Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować prawidłowo |
+| Generator | Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie. |
+| LastGenOutput | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie. |
+| CustomToolNamespace | Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod. |
+| Link | Opcjonalny ciąg. Ścieżka notacji jest wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
+| Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
+| CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
+| Logicznaname | Wymagany ciąg. Nazwa logiczna zasobu osadzonego. |
 
 ### <a name="content"></a>Zawartość
 
- Reprezentuje pliki, które nie są kompilowane do projektu, ale mogą być osadzone lub opublikowane razem z nim.
+Reprezentuje pliki, które nie są kompilowane do projektu, ale mogą być osadzone lub opublikowane razem z nim.
 
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
-| ZależnePo | Opcjonalny ciąg znaków. Określa plik, od który plik zależy od poprawnego skompilowania. |
-| Generator | Wymagany ciąg. Nazwa dowolnego generatora plików, który działa na tym elemencie. |
-| LastGenOutput (LastGenOutput) | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolnego generatora plików, który został uruchomiony na tym elemencie. |
-| Obszar CustomToolNamespace | Wymagany ciąg. Obszar nazw, w którym każdy generator plików, który działa na tym elemencie, powinien utworzyć kod. |
-| Link | Opcjonalny ciąg znaków. Ścieżka notacyjna, która ma być wyświetlana, jeśli plik fizycznie znajduje się poza wpływem projektu. |
-| Stan publikacji | Wymagany ciąg. Stan publikacji treści:<br /><br /> - Domyślnie<br />- W zestawie<br />- Wykluczone<br />- Plik danych<br />- Warunek wstępny |
-| Isassembly (izmont) | Opcjonalny wartość logiczna. Określa, czy plik jest złożeniem. |
-| Widoczne | Opcjonalny wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksploratorze rozwiązań** w programie Visual Studio. |
-| CopyToOutputDirectory (CopyToOutputDirectory) | Opcjonalny ciąg znaków. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. Nigdy<br />2. Zawsze<br />3. ZachowaćZachód |
+| DependentUpon | Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować poprawnie. |
+| Generator | Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie. |
+| LastGenOutput | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie. |
+| CustomToolNamespace | Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod. |
+| Link | Opcjonalny ciąg. Ścieżka notacji, która ma być wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
+| PublishState | Wymagany ciąg. Stan publikowania zawartości:<br /><br /> -Domyślne<br />-Uwzględnione<br />-Wykluczone<br />-Plik<br />-Wymaganie wstępne |
+| IsAssembly | Opcjonalna wartość logiczna. Określa, czy plik jest zestawem. |
+| Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
+| CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 
 ### <a name="none"></a>Brak
 
- Reprezentuje pliki, które powinny mieć żadną rolę w procesie kompilacji.
+Reprezentuje pliki, które nie powinny mieć roli w procesie kompilacji.
 
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
-| ZależnePo | Opcjonalny ciąg znaków. Określa plik, od który plik zależy od poprawnego skompilowania. |
-| Generator | Wymagany ciąg. Nazwa dowolnego generatora plików, który jest uruchamiany na tym elemencie. |
-| LastGenOutput (LastGenOutput) | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolnego generatora plików, który działał na tym elemencie. |
-| Obszar CustomToolNamespace | Wymagany ciąg. Obszar nazw, w którym każdy generator plików, który działa na tym elemencie, powinien utworzyć kod. |
-| Link | Opcjonalny ciąg znaków. Ścieżka notacyjna, która ma być wyświetlana, jeśli plik fizycznie znajduje się poza wpływem projektu. |
-| Widoczne | Opcjonalny wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksploratorze rozwiązań** w programie Visual Studio. |
-| CopyToOutputDirectory (CopyToOutputDirectory) | Opcjonalny ciąg znaków. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. Nigdy<br />2. Zawsze<br />3. ZachowaćZachód |
+| DependentUpon | Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować poprawnie. |
+| Generator | Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie. |
+| LastGenOutput | Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie. |
+| CustomToolNamespace | Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod. |
+| Link | Opcjonalny ciąg. Ścieżka notacji, która ma być wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu. |
+| Widoczne | Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany w **Eksplorator rozwiązań** w programie Visual Studio. |
+| CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest |
 
-### <a name="assemblymetadata"></a>AssemblyMetadata (Meada zestawu)
+### <a name="assemblymetadata"></a>AssemblyMetadata
 
- Reprezentuje atrybuty zestawu, `[AssemblyMetadata(key, value)]`które mają być generowane jako .
+Reprezentuje atrybuty zestawu, które mają zostać wygenerowane `[AssemblyMetadata(key, value)]` .
 
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
-| Uwzględnij | Staje się pierwszym parametrem (kluczem) w konstruktorze atrybutów. `AssemblyMetadataAttribute` |
-| Wartość | Wymagany ciąg. Staje się drugim parametrem (wartością) w konstruktorze atrybutów. `AssemblyMetadataAttribute` |
+| Uwzględnij | Staną się pierwszym parametrem (kluczem) w `AssemblyMetadataAttribute` konstruktorze atrybutu. |
+| Wartość | Wymagany ciąg. Jest drugim parametrem (wartość) w `AssemblyMetadataAttribute` konstruktorze atrybutu. |
 
 > [!NOTE]
-> Dotyczy to projektów przy użyciu tylko sdk .NET Core.
+> Dotyczy to projektów korzystających tylko z zestaw .NET Core SDK.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
- Reprezentuje manifest aplikacji podstawowej dla kompilacji i zawiera informacje o zabezpieczeniach wdrażania ClickOnce.
+Reprezentuje podstawowy manifest aplikacji dla kompilacji i zawiera informacje o zabezpieczeniach wdrażania ClickOnce.
 
-### <a name="codeanalysisimport"></a>Analiza koduWziomanie
+### <a name="codeanalysisimport"></a>CodeAnalysisImport
 
- Reprezentuje projekt FxCop do zaimportowania.
+Reprezentuje projekt FxCop do zaimportowania.
 
-### <a name="import"></a>Import
+### <a name="import"></a>Importuj
 
- Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez kompilator języka Visual Basic.
+Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez kompilator Visual Basic.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Typowe właściwości projektu MSBuild](../msbuild/common-msbuild-project-properties.md)
+- [Wspólne właściwości projektu MSBuild](../msbuild/common-msbuild-project-properties.md)
+- [Właściwości programu MSBuild dla projektów zestaw .NET Core SDK](/dotnet/core/project-sdk/msbuild-props)

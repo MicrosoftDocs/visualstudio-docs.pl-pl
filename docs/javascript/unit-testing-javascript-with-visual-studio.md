@@ -1,6 +1,6 @@
 ---
-title: Testowanie jednostek JavaScript i TypeScript
-description: Program Visual Studio zapewnia jednostkę pomocy technicznej testującą kod JavaScript i TypeScript przy użyciu narzędzia Node.js dla programu Visual Studio
+title: Testowanie jednostkowe JavaScript i TypeScript
+description: Program Visual Studio zapewnia obsługę testów jednostkowych w języku JavaScript i kodzie TypeScript przy użyciu Node.js Tools for Visual Studio
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,42 +11,39 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071950"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183109"
 ---
-# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostek JavaScript i TypeScript w programie Visual Studio
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostkowe JavaScript i TypeScript w programie Visual Studio
 
-Node.js Tools for Visual Studio umożliwiają pisanie i uruchamianie testów jednostkowych przy użyciu niektórych bardziej popularnych struktur JavaScript bez konieczności przełączania się do wiersza polecenia.
+Narzędzia Node. js Tools for Visual Studio umożliwiają pisanie i uruchamianie testów jednostkowych przy użyciu niektórych popularnych platform języka JavaScript bez konieczności przełączania się do wiersza polecenia.
 
-Obsługiwane ramy to:
-* Mocha ([mochajs.org](https://mochajs.org/))
-* Jaśmin ([Jasmine.github.io](https://jasmine.github.io/))
-* Taśma[(github.com/substack/tape](https://github.com/substack/tape))
-* Jest ([jestjs.io](https://jestjs.io/))
-* Moduł eksportu (ta struktura jest specyficzna dla node.js Tools for Visual Studio)
+Obsługiwane są następujące platformy:
+* Środowiska Mocha ([mochajs.org](https://mochajs.org/))
+* Jasmine ([Jasmine.GitHub.IO](https://jasmine.github.io/))
+* Taśma ([GitHub.com/Substack/Tape](https://github.com/substack/tape))
+* On ([jestjs.IO](https://jestjs.io/))
+* Eksportuj moduł uruchamiający (Platforma ta jest specyficzna dla Node.js Tools for Visual Studio)
 
-> [!WARNING]
-> Problem w taśmie obecnie uniemożliwia testy taśmy z systemem. Jeśli [#361 PR](https://github.com/substack/tape/pull/361) zostanie scalona, problem powinien zostać rozwiązany.
+Jeśli Twoja ulubiona platforma nie jest obsługiwana, zobacz [Dodawanie obsługi dla struktury testów jednostkowych](#addingFramework) , aby uzyskać informacje na temat dodawania obsługi.
 
-Jeśli twoja ulubiona struktura nie jest obsługiwana, zobacz [Dodawanie pomocy technicznej dla struktury testów jednostkowych, aby](#addingFramework) uzyskać informacje na temat dodawania pomocy technicznej.
+## <a name="write-unit-tests"></a>Zapisz testy jednostkowe
 
-## <a name="write-unit-tests"></a>Zapis testów jednostkowych
+Przed dodaniem testów jednostkowych do projektu upewnij się, że struktura, którą planujesz użyć, jest zainstalowana lokalnie w projekcie. Można to łatwo zrobić przy użyciu [okna instalacji pakietu npm](npm-package-management.md#npmInstallWindow).
 
-Przed dodaniem testów jednostkowych do projektu upewnij się, że struktura, której zamierzasz użyć, jest zainstalowana lokalnie w projekcie. Jest to łatwe do zrobienia za pomocą [okna instalacji pakietu npm](npm-package-management.md#npmInstallWindow).
+Preferowanym sposobem dodawania testów jednostkowych do projektu jest utworzenie folderu *Tests* w projekcie i ustawienie tego jako elementu głównego testu we właściwościach projektu. Należy również wybrać platformę testową, która ma być używana.
 
-Preferowanym sposobem dodawania testów jednostkowych do projektu jest utworzenie folderu *testów* w projekcie i ustawienie go jako głównego testu we właściwościach projektu. Należy również wybrać strukturę testów, które chcesz użyć.
+![Ustawianie testów głównych i testów](../javascript/media/unit-test-project-properties.png)
 
-![Ustawianie katalogu głównego i struktury testowej](../javascript/media/unit-test-project-properties.png)
-
-Za pomocą okna dialogowego **Dodawanie nowego elementu** można dodawać proste puste testy. Zarówno JavaScript, jak i TypeScript są obsługiwane w tym samym projekcie.
+Można dodać proste puste testy do projektu przy użyciu okna dialogowego **Dodaj nowy element** . Kod JavaScript i TypeScript są obsługiwane w tym samym projekcie.
 
 ![Dodaj nowy test jednostkowy](../javascript/media/unit-test-add-new-item.png)
 
-W przypadku testu jednostkowego Mocha użyj następującego kodu:
+W przypadku testu jednostkowego środowiska Mocha należy użyć następującego kodu:
 
 ```javascript
 var assert = require('assert');
@@ -63,43 +60,43 @@ describe('Test Suite 1', function() {
 })
 ```
 
-Jeśli nie ustawiono opcji testu jednostkowego we właściwościach projektu, należy upewnić się, że właściwość **Test Framework** w oknie **Właściwości** jest ustawiona na poprawną strukturę testów dla plików testów jednostkowych. Odbywa się to automatycznie przez szablony plików testowych jednostki.
+Jeśli nie ustawisz opcji testów jednostkowych we właściwościach projektu, musisz upewnić się, że właściwość **Framework testów** w oknie **Właściwości** jest ustawiona na poprawną strukturę testową dla plików testów jednostkowych. Jest to wykonywane automatycznie przez szablony plików testów jednostkowych.
 
-![Struktura testów](../javascript/media/UnitTestsFrameworkMocha.png)
+![Platforma testowa](../javascript/media/UnitTestsFrameworkMocha.png)
 
 > [!Note]
-> Opcje testu jednostkowego będą miały pierwszeństwo przed ustawieniami dla poszczególnych plików.
+> Opcje testów jednostkowych będą mieć preferencję dotyczącą ustawień poszczególnych plików.
 
-Po otwarciu Eksploratora testów (wybierz > **Eksploratora** **Test** > testów**systemu**Windows) program Visual Studio odnajduje i wyświetla testy. Jeśli testy nie są wyświetlane początkowo, a następnie odbudować projekt, aby odświeżyć listę.
+Po otwarciu Eksploratora testów (wybierz **test**  >  **Windows**  >  **Eksplorator testów**systemu Windows) program Visual Studio odnajduje i wyświetla testy. Jeśli testy nie są początkowo wyświetlane, ponownie skompiluj projekt, aby odświeżyć listę.
 
 ![Eksplorator testów](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Nie należy `outdir` używać `outfile` opcji lub opcji w *pliku tsconfig.json,* ponieważ Eksplorator testów nie będzie mógł znaleźć testów jednostkowych w plikach TypeScript.
+> Nie używaj `outdir` `outfile` opcji or w *tsconfig. JSON*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych w plikach TypeScript.
 
 ## <a name="run-tests"></a>Uruchom testy
 
-Testy można uruchamiać w programie Visual Studio 2017 lub z wiersza polecenia.
+Testy można uruchamiać w programie Visual Studio 2017 lub w wierszu polecenia.
 
 ### <a name="run-tests-in-visual-studio-2017"></a>Uruchamianie testów w programie Visual Studio 2017
 
-Testy można uruchomić, klikając łącze **Uruchom wszystko** w Eksploratorze testów. Można też uruchomić testy, wybierając jeden lub więcej testów lub grup, klikając prawym przyciskiem myszy i wybierając **polecenie Uruchom wybrane testy** z menu skrótów. Testy są uruchamiane w tle, a Eksplorator testów automatycznie aktualizuje i pokazuje wyniki. Ponadto można również debugować wybrane testy, wybierając **opcję Debugowanie wybranych testów**.
+Testy można uruchomić, klikając link **Uruchom wszystkie** w Eksploratorze testów. Lub można uruchomić testy, wybierając jeden lub więcej testów lub grup, klikając prawym przyciskiem myszy i wybierając polecenie **Uruchom wybrane testy** z menu skrótów. Testy są uruchamiane w tle, a Eksplorator testów automatycznie aktualizuje i wyświetla wyniki. Ponadto można debugować wybrane testy, wybierając **Debuguj wybrane testy**.
 
 > [!Warning]
-> Debugowanie testów jednostkowych przy użyciu węzła 8+ obecnie działa tylko dla plików testowych JavaScript, pliki testowe TypeScript nie trafią w punkty przerwania. Aby obejść ten `debugger` problem, użyj słowa kluczowego.
+> Debugowanie testów jednostkowych za pomocą węzła 8 + obecnie działa tylko w przypadku plików testowych języka JavaScript, pliki testowe TypeScript nie trafią na punkty przerwania. Aby obejść ten element, użyj `debugger` słowa kluczowego.
 
 > [!NOTE]
 > Obecnie nie obsługujemy testów profilowania ani pokrycia kodu.
 
 ### <a name="run-tests-from-the-command-line"></a>Uruchamianie testów z poziomu wiersza polecenia
 
-Testy można uruchomić w [wierszu polecenia dewelopera](/dotnet/framework/tools/developer-command-prompt-for-vs) dla programu Visual Studio 2017 za pomocą następującego polecenia:
+Testy można uruchomić z [wiersz polecenia dla deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs) dla programu Visual Studio 2017 przy użyciu następującego polecenia:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-To polecenie pokazuje dane wyjściowe podobne do następujących:
+To polecenie wyświetla dane wyjściowe podobne do następujących:
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0
@@ -128,11 +125,11 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Jeśli pojawi się błąd wskazujący, że nie można odnaleźć *pliku vstest.console.exe,* upewnij się, że otwarto wiersz polecenia dewelopera, a nie zwykły wiersz polecenia.
+> Jeśli zostanie wyświetlony komunikat o błędzie informujący o tym, że nie można znaleźć pliku *VSTest. Console. exe* , upewnij się, że otwarto wiersz polecenia dla deweloperów, a nie zwykły wiersz polecenia.
 
-## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Dodawanie obsługi struktury testów jednostkowych
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Dodawanie obsługi dla struktury testów jednostkowych
 
-Można dodać obsługę dodatkowych struktur testowych, implementując logikę odnajdywania i wykonywania przy użyciu języka JavaScript. Można to zrobić, dodając folder o nazwie struktury testowej w obszarze:
+Można dodać obsługę dodatkowych platform testowych przez implementację logiki odnajdywania i wykonywania przy użyciu języka JavaScript. Można to zrobić przez dodanie folderu o nazwie struktury testowej w:
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
 
@@ -141,19 +138,19 @@ Ten folder musi zawierać plik JavaScript o tej samej nazwie, który eksportuje 
 * `find_tests`
 * `run_tests`
 
-Na dobre przykład `find_tests` i `run_tests` implementacje, zobacz implementacji dla struktury testowania jednostek Mocha w:
+Aby zapoznać się z dobrymi przykładami `find_tests` i `run_tests` implementacjami, zobacz implementację struktury testów jednostkowych środowiska Mocha w:
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
-Odnajdowanie dostępnych struktur testowych odbywa się w programie Visual Studio start. Jeśli struktura zostanie dodana, gdy program Visual Studio jest uruchomiony, uruchom ponownie program Visual Studio, aby wykryć strukturę. Jednak nie trzeba ponownie uruchomić podczas wprowadzania zmian w implementacji.
+Odnajdywanie dostępnych platform testowych odbywa się po rozpoczęciu programu Visual Studio. Jeśli po uruchomieniu programu Visual Studio zostanie dodana struktura, uruchom ponownie program Visual Studio, aby wykryć strukturę. Nie trzeba jednak ponownie uruchamiać w przypadku wprowadzania zmian w implementacji.
 
 ## <a name="unit-tests-in-other-project-types"></a>Testy jednostkowe w innych typach projektów
-Nie są ograniczone do pisania testów jednostkowych tylko w projektach Node.js. Po dodaniu TestFramework i TestRoot właściwości do dowolnego projektu C# lub Visual Basic, te testy zostaną wyliczone i można je uruchomić za pomocą okna Eksploratora testów.
+Nie można pisać testów jednostkowych tylko w projektach środowiska Node. js. Po dodaniu właściwości TestFramework i TestRoot do dowolnego projektu C# lub Visual Basic testy te zostaną wyliczone i można uruchomić je przy użyciu okna Eksplorator testów.
 
-Aby to włączyć, kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań, wybierz pozycję **Zwolnij projekt**, a następnie wybierz polecenie **Edytuj projekt**. Następnie w pliku projektu dodaj następujące dwa elementy do grupy właściwości.
+Aby włączyć tę funkcję, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań, wybierz polecenie **Zwolnij projekt**, a następnie wybierz polecenie **Edytuj projekt**. Następnie w pliku projektu Dodaj następujące dwa elementy do grupy właściwości.
 
 > [!NOTE]
-> Upewnij się, że grupa właściwości, do której dodajesz elementy, nie ma określonego warunku.
+> Upewnij się, że grupa właściwości, do której dodawane są elementy, nie ma określonego warunku.
 > Może to spowodować nieoczekiwane zachowanie.
 
 ```xml
@@ -163,10 +160,10 @@ Aby to włączyć, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorat
 </PropertyGroup>
 ```
 
-Następnie dodaj testy do określonego folderu głównego testu, a będą one dostępne do uruchomienia w oknie Eksploratora testów. Jeśli początkowo się nie pojawiają, może być konieczne odbudowanie projektu.
+Następnie Dodaj testy do podanego głównego folderu testowego i będą one dostępne do uruchomienia w oknie Eksplorator testów. Jeśli nie pojawią się na początku, może być konieczne ponowne skompilowanie projektu.
 
 ### <a name="unit-test-net-core-and-net-standard"></a>Test jednostkowy .NET Core i .NET Standard
-Oprócz powyższych właściwości należy również zainstalować pakiet NuGet [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) i ustawić właściwość:
+Oprócz powyższych właściwości należy również zainstalować pakiet NuGet [Microsoft. JavaScript. testu jednostkowego](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) i ustawić właściwość:
 
 ```xml
 <PropertyGroup>
@@ -174,4 +171,4 @@ Oprócz powyższych właściwości należy również zainstalować pakiet NuGet 
 </PropertyGroup>
 ```
 
-Niektóre struktury testowe mogą wymagać dodatkowych pakietów npm do wykrywania testów. Na przykład jest wymaga pakietu npm jest-editor-support. W razie potrzeby sprawdź dokumentację dla określonych ram.
+Niektóre środowiska testowe mogą wymagać dodatkowych pakietów npm na potrzeby wykrywania testów. Na przykład jest to program, który wymaga npm pakietu. W razie potrzeby zapoznaj się z dokumentacją dla konkretnej struktury.
