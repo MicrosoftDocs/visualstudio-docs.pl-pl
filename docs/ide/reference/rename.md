@@ -1,6 +1,6 @@
 ---
-title: Zmiana nazwy refaktorycyjnie
-ms.date: 01/26/2018
+title: Zmiana nazwy elementu refaktoryzacji
+ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
@@ -12,75 +12,77 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565464"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182963"
 ---
-# <a name="rename-a-code-symbol-refactoring"></a>Zmienianie nazwy symbolu kodu refaktoryzacji
+# <a name="rename-a-code-symbol-refactoring"></a>Zmiana nazwy refaktoryzacji symbolu kodu
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Co:** Umożliwia zmianę nazwy identyfikatorów symboli kodu, takich jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typy.
+**Co:** Umożliwia zmianę nazw identyfikatorów dla symboli kodu, takich jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typy.
 
-**Kiedy:** Chcesz bezpiecznie zmienić nazwę czegoś bez konieczności znajdowania wszystkich wystąpień i kopiować/wklejać nową nazwę.
+**Kiedy:** Chcesz bezpiecznie zmienić nazwę elementu bez konieczności znajdowania wszystkich wystąpień, a następnie skopiuj/wklej nową nazwę.
 
-**Dlaczego?** Kopiowanie i wklejanie nowej nazwy w całym projekcie prawdopodobnie spowodowałoby błędy. To narzędzie refaktoryzacji będzie dokładnie wykonać akcję zmiany nazwy.
+**Dlaczego:** Kopiowanie i wklejanie nowej nazwy w całym projekcie prawdopodobnie spowoduje błędy. To narzędzie refaktoryzacji dokładnie przeprowadzi akcję zmiany nazwy.
 
 ## <a name="how-to"></a>Porady
 
-1. Zaznacz lub umieść kursor tekstowy wewnątrz elementu, który ma zostać zmieniony:
+1. Podświetl lub umieść kursor tekstu wewnątrz elementu, którego nazwę chcesz zmienić:
 
    - C#:
 
-       ![Wyróżniony kod - C #](media/rename-highlight-cs.png)
+       ![Wyróżniony kod — C #](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
        ![Wyróżniony kod — Visual Basic](media/rename-highlight-vb.png)
 
-2. Następnie wykonaj jedną z następujących czynności:
+2. Następnie użyj klawiatury lub myszy w następujący sposób:
 
    - **Klawiatura**
-      - Naciśnij **klawisze Ctrl+R**, a następnie **klawisze Ctrl+R**. (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
+      - Naciśnij klawisze **Ctrl + r**, a następnie **Ctrl + r**. (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
    - **Mysz**
-      - Wybierz **pozycję Edytuj > refaktoryzatora > zmień nazwę**.
+      - Wybierz pozycję **edytuj > refaktoryzacja > Zmień nazwę**.
       - Kliknij prawym przyciskiem myszy kod i wybierz polecenie **Zmień nazwę**.
 
-3. Zmień nazwę elementu po prostu wpisując nową nazwę.
+3. Zmień nazwę elementu po prostu, wpisując nową nazwę.
 
    - C#:
 
-      ![Zmienianie nazwy animacji — C #](media/rename-animated-cs.gif)
+      ![Zmień nazwę animacji-C #](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-      ![Zmiana nazwy - VB](media/rename-rename-vb.png)
+      ![Zmień nazwę — VB](media/rename-rename-vb.png)
 
    > [!TIP]
-   > Można również zaktualizować komentarze i inne ciągi, aby użyć tej nowej nazwy, a także [wyświetlić podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, używając pól wyboru w polu **Zmień nazwę,** które pojawia się w prawym górnym rogu edytora.
+   > Możesz również zaktualizować Komentarze i inne ciągi, aby użyć tej nowej nazwy, a także [wyświetlić podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, używając pól wyboru w polu **Zmień nazwę** wyświetlaną w prawym górnym rogu edytora.
 
-4. Gdy ze zmiany będziesz zadowolony, wybierz przycisk **Zastosuj** lub naciśnij klawisz **Enter,** a zmiany zostaną zatwierdzone.
+4. Po zakończeniu wprowadzania zmian wybierz przycisk **Zastosuj** lub naciśnij klawisz **Enter** , a zmiany zostaną zatwierdzone.
 
 ## <a name="remarks"></a>Uwagi
 
-- Począwszy od programu Visual Studio 2019 w wersji 16.3, po zmianie nazwy typu, który pasuje do nazwy pliku, w którym się znajduje, zostanie wyświetlenie pola wyboru, które umożliwia zmianę nazwy pliku w tym samym czasie. Ta opcja jest wyświetlana po zmianie nazwy klasy, interfejsu lub wyliczenia. Ta opcja nie jest obsługiwana dla typów częściowych z wieloma definicjami.
+- Począwszy od programu Visual Studio 2019 w wersji 16,3, gdy zmieniasz nazwę typu, który pasuje do nazwy pliku, w którym znajduje się, zostanie wyświetlone pole wyboru umożliwiające zmianę nazwy pliku w tym samym czasie. Ta opcja jest wyświetlana w przypadku zmiany nazwy klasy, interfejsu lub wyliczenia. Ta opcja nie jest obsługiwana w przypadku typów częściowych z wieloma definicjami.
 
-   ![Zmienianie nazwy animacji za pomocą pliku — C #](media/rename-with-file-animated-cs.gif)
+   ![Zmień nazwę animacji z plikiem C #](media/rename-with-file-animated-cs.gif)
 
-- Jeśli używasz nazwy, która już istnieje, która może spowodować konflikt, pole **Zmień nazwę** wyświetli ostrzeżenie.
+- Jeśli użyjesz już nazwy, która może spowodować konflikt, w polu **Zmień nazwę** zostanie wyświetlone ostrzeżenie.
 
-   ![Zmień nazwę konfliktu](media/rename-conflict-cs.png)
+   ![Konflikt zmiany nazwy](media/rename-conflict-cs.png)
 
-- Innym sposobem zmiany nazwy symbolu jest zmiana jego nazwy w edytorze. Następnie, z kursorem w nazwie symbolu, naciśnij klawisz **Ctrl**+**.** lub po prostu rozwiń menu ikon żarówki, które się pojawi i wybierz **Zmień nazwę \<starej nazwy> na \<nową nazwę>**.
+- Innym sposobem zmiany nazwy symbolu jest zmiana jego nazwy w edytorze. Następnie za pomocą kursora w nazwie symbolu naciśnij klawisz **Ctrl** + **.** lub po prostu rozwiń wyświetlone menu ikony żarówki i wybierz polecenie **Zmień \<old name> nazwę \<new name> na **.
 
-## <a name="see-also"></a>Zobacz też
+   ![Zmień nazwę w edytorze](media/rename-with-editor-cs.png)
+
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

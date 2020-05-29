@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911599"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182875"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 
-Jeśli kroki opisane w tym artykule nie rozwiążą problemu, wyszukaj problem dotyczący [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html) lub zgłoś nowy problem, wybierając pozycję **Pomoc** > **Prześlij opinię** > **zgłosić problem** w programie Visual Studio.
+Jeśli kroki opisane w tym artykule nie rozwiążą problemu, wyszukaj problem dotyczący [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html) lub zgłoś nowy problem, wybierając pozycję **Pomoc**  >  **Wyślij opinię**  >  **Zgłoś problem** w programie Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problem: "Attach Snapshot Debugger" napotka błąd kodu stanu HTTP
 
@@ -30,12 +30,36 @@ Jeśli w oknie **danych wyjściowych** wystąpi następujący błąd podczas pr�
 
 ### <a name="401-unauthorized"></a>(401) — nieautoryzowane
 
-Ten błąd wskazuje, że wywołanie REST wystawione przez program Visual Studio na platformę Azure używa nieprawidłowego poświadczenia. Przyczyną tego błędu może być znany błąd z modułem Easy OAuth Azure Active Directory.
+Ten błąd wskazuje, że wywołanie REST wystawione przez program Visual Studio na platformę Azure używa nieprawidłowego poświadczenia. 
 
 Wykonaj następujące kroki:
 
-* Upewnij się, że konto personalizacji programu Visual Studio ma uprawnienia do subskrypcji i zasobu platformy Azure, do którego dołączasz. Aby szybko ustalić, czy zasób jest dostępny w oknie dialogowym > **debugowania** **dołączaj Snapshot Debugger...**  >  > **zasobów platformy Azure** , **Wybierz pozycję istniejące**lub w Eksploratorze chmury.
+* Upewnij się, że konto personalizacji programu Visual Studio ma uprawnienia do subskrypcji i zasobu platformy Azure, do którego dołączasz. Aby szybko ustalić, czy zasób jest dostępny w oknie dialogowym z **Debug**  >  **dołączania debugowania Snapshot Debugger...**  >  **Zasób**  >  platformy Azure **Wybierz pozycję istniejący**lub w Eksploratorze chmury.
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
+
+Jeśli włączono uwierzytelnianie/autoryzację (EasyAuth) na App Service, w komunikacie o błędzie stosu wywołań może wystąpić błąd 401 z LaunchAgentAsync. Upewnij się, że **Jeśli żądanie nie zostało uwierzytelnione** , jest ustawione tak, aby **zezwalać na żądania anonimowe (bez akcji)** w Azure Portal i zamiast tego podać plik Authorization. JSON w D:\Home\sites\wwwroot z następującą zawartością. 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+Pierwsza droga efektywnie zabezpiecza domenę aplikacji podobną do **zalogowania się za pomocą programu [IdentityProvider]**. Druga trasa udostępnia punkt końcowy debugera migawek AgentLaunch poza uwierzytelnianiem, który wykonuje wstępnie zdefiniowaną akcję uruchamiania agenta diagnostyki debugera migawek tylko wtedy, *gdy* dla usługi App Service jest włączone rozszerzenie preinstalowanej lokacji debugera migawek. Aby uzyskać szczegółowe informacje na temat konfiguracji pliku Authorization. JSON, zobacz [reguły autoryzacji adresów URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
 
 ### <a name="403-forbidden"></a>(403) zabronione
 
@@ -54,8 +78,8 @@ Ten błąd oznacza, że nie można odnaleźć witryny sieci Web na serwerze.
 Wykonaj następujące kroki:
 
 * Sprawdź, czy witryna sieci Web została wdrożona i uruchomiona na zasobie App Service, do której dołączasz.
-* Sprawdź, czy witryna jest dostępna pod adresem https://\<Resource\>. azurewebsites.net
-* Sprawdź, czy prawidłowo uruchomiona niestandardowa aplikacja sieci Web nie zwraca kodu stanu 404 w przypadku uzyskania dostępu do zasobu https://\<\>. azurewebsites.net
+* Sprawdź, czy witryna jest dostępna pod adresem https:// \<resource\> . azurewebsites.NET
+* Sprawdź, czy prawidłowo uruchomiona niestandardowa aplikacja sieci Web nie zwraca kodu stanu 404 w przypadku uzyskania dostępu do elementu https:// \<resource\> . azurewebsites.NET
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
 ### <a name="406-not-acceptable"></a>(406) nie akceptowalny
@@ -64,7 +88,7 @@ Ten błąd wskazuje, że serwer nie może odpowiedzieć na typ ustawiony w nagł
 
 Wykonaj następujące kroki:
 
-* Sprawdź, czy witryna jest dostępna pod adresem https://\<Resource\>. azurewebsites.net
+* Sprawdź, czy witryna jest dostępna pod adresem https:// \<resource\> . azurewebsites.NET
 * Sprawdź, czy lokacja nie została zmigrowana do nowych wystąpień. Snapshot Debugger używa koncepcji ARRAffinity w przypadku żądań routingu do określonych wystąpień, co sporadycznie może spowodować wystąpienie tego błędu.
 * Jeśli ten błąd będzie nadal występował, użyj jednego z kanałów opinii opisanych na początku tego artykułu.
 
@@ -173,15 +197,15 @@ Aby rozwiązać ten problem, Usuń następujące ustawienia aplikacji z Azure Po
 
 ### <a name="enable-agent-logs"></a>Włącz dzienniki agenta
 
-Aby włączyć i wyłączyć rejestrowanie agenta, Otwórz program Visual Studio przejdź do *menu narzędzia > opcje > Snapshot Debugger > włączyć rejestrowanie agenta*. Zwróć uwagę, że po włączeniu *usuwania starych dzienników agentów podczas uruchamiania sesji* wszystkie pomyślne dołączenie do programu Visual Studio zostaną usunięte z poprzednich dzienników agenta.
+Aby włączyć i wyłączyć rejestrowanie agenta, Otwórz program Visual Studio przejdź do *menu narzędzia>opcje>Snapshot Debugger>włączyć rejestrowanie agenta*. Zwróć uwagę, że po włączeniu *usuwania starych dzienników agentów podczas uruchamiania sesji* wszystkie pomyślne dołączenie do programu Visual Studio zostaną usunięte z poprzednich dzienników agenta.
 
 Dzienniki agentów można znaleźć w następujących lokalizacjach:
 
 - App Services:
-  - Przejdź do witryny kudu App Service (czyli yourappservice. **SCM**. azurewebsites.NET) i przejdź do konsoli debugowania.
+  - Przejdź do witryny kudu App Service (czyli yourappservice.** SCM**. azurewebsites.NET) i przejdź do konsoli debugowania.
   - Dzienniki agentów są przechowywane w następującym katalogu: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - MASZYNA WIRTUALNA/VMSS:
-  - Zaloguj się do maszyny wirtualnej, dzienniki agentów są przechowywane w następujący sposób: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<version > \SnapshotDebuggerAgent_ *. txt
+  - Zaloguj się do maszyny wirtualnej, dzienniki agentów są przechowywane w następujący sposób: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics \<Version> \ SnapshotDebuggerAgent_ *. txt
 - AKS
   - Przejdź do następującego katalogu:/tmp/diag/AgentLogs/*
 
@@ -190,13 +214,13 @@ Dzienniki agentów można znaleźć w następujących lokalizacjach:
 Dzienniki Instrumentacji można znaleźć w następujących lokalizacjach:
 
 - App Services:
-  - Rejestrowanie błędów jest automatycznie wysyłane do D:\Home\LogFiles\eventlog.xml, zdarzenia są oznaczane przy użyciu `<Provider Name="Instrumentation Engine" />` lub "produkcyjnych punktów przerwania"
+  - Rejestrowanie błędów jest wysyłane automatycznie do D:\Home\LogFiles\eventlog.xml, zdarzenia są oznaczane za pomocą `<Provider Name="Instrumentation Engine" />` lub "punktami przerwania produkcyjnego"
 - MASZYNA WIRTUALNA/VMSS:
   - Zaloguj się do maszyny wirtualnej i Otwórz Podgląd zdarzeń.
-  - Otwórz następujący widok: *Dzienniki systemu Windows > aplikacji*.
+  - Otwórz następujący widok: *Dzienniki systemu Windows>aplikacji*.
   - *Filtruj bieżący dziennik* według *źródła zdarzeń* przy użyciu *punktów przerwania produkcji* lub *aparatu oprzyrządowania*.
 - AKS
-  - Rejestrowanie aparatu Instrumentacji w lokalizacji/tmp/diag/log.txt (Ustaw MicrosoftInstrumentationEngine_FileLogPath w pliku dockerfile)
+  - Rejestrowanie aparatu Instrumentacji w/tmp/diag/log.txt (Ustaw MicrosoftInstrumentationEngine_FileLogPath w pliku dockerfile)
   - Rejestrowanie ProductionBreakpoint w/tmp/diag/shLog.txt
 
 ## <a name="known-issues"></a>Znane problemy
@@ -220,7 +244,7 @@ Debugowanie migawek i Application Insights zależą od ICorProfiler, które są 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie w programie Visual Studio](../debugger/index.yml)
+- [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Debuguj aplikacje Live ASP.NET przy użyciu Snapshot Debugger](../debugger/debug-live-azure-applications.md)
 - [Debuguj zestawy skalowania maszyn wirtualnych ASP.NET platformy Azure na żywo przy użyciu Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
 - [Debuguj Live ASP.NET Azure Kubernetes przy użyciu Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)

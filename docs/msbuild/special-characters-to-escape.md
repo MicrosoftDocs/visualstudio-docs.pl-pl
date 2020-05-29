@@ -1,5 +1,5 @@
 ---
-title: Znaki specjalne do ucieczki | Dokumenty firmy Microsoft
+title: Znaki specjalne do ucieczki | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,36 +16,36 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632254"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184045"
 ---
-# <a name="special-characters-to-escape"></a>Znaki specjalne do ucieczki
+# <a name="special-characters-to-escape"></a>Znaki specjalne do wyjścia
 
-Znaki specjalne muszą być zmienione tylko wtedy, gdy mają specjalne znaczenie w kontekście, w którym są używane. Na przykład gwiazdka (*) jest znakiem specjalnym tylko w atrybutach "Uwzględnij" i "Wyklucz" <xref:Microsoft.Build.Tasks.CreateItem>definicji elementu lub w wywołaniu . We wszystkich innych przypadkach gwiazdka jest traktowana jako gwiazdka dosłowna. Chociaż nie trzeba uciekać gwiazdki wszędzie w plikach projektu, robi to nie szkodzi.
+Znaki specjalne muszą być wyprowadzane tylko wtedy, gdy mają specjalne znaczenie w kontekście, w którym są używane. Na przykład gwiazdka (*) jest znakiem specjalnym tylko w atrybutach "include" i "exclude" definicji elementu lub w wywołaniu <xref:Microsoft.Build.Tasks.CreateItem> . We wszystkich innych przypadkach gwiazdka jest traktowana jako literał gwiazdki. Mimo że nie ma potrzeby ucieczki gwiazdek w plikach projektu, nie jest to szkodliwe.
 
- Zamiast znaku specjalnego\<należy użyć notacji % xx \<>, gdzie xx> reprezentuje wartość szesnastkową znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znaku literału, użyj wartości `%2A`.
+ Użyj zapisu% \<xx> zamiast znaku specjalnego, gdzie \<xx> reprezentuje wartość szesnastkową znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znaku literału, użyj wartości `%2A` .
 
- Pełna lista znaków specjalnych do ucieczki jest następująca:
+ Pełna lista znaków specjalnych do wyjścia w następujący sposób:
 
-|Znak|Opis|
-|---------------|-----------------|
-|%|Znak procentu, używany do odwoływania się do metadanych.|
-|$|Znak dolara, używany do odwoływania się do właściwości.|
-|@|Na znak, używany do odwoływania się do list elementów.|
-|(|Otwórz nawias, używany na listach.|
-|)|Zamknij nawias, używany na listach.|
-|;|Średnik, separator listy.|
-|?|Znak zapytania, symbol wieloznaczny opisujący specyfikację pliku w sekcji Dołącz/Wyklucz element.|
-|*|Gwiazdka, symbol wieloznaczny opisujący specyfikację pliku w sekcji Dołącz/Wyklucz element.|
+|Znak|Kodowanie ASCII|Opis|
+|---------|----------|-----------|
+|%|%25|Znak procentu używany do odwoływania się do metadanych.|
+|$|%24|Znak dolara używany do odwoływania się do właściwości.|
+|@|%40|Znak używany do odwoływania się do list elementów.|
+|(|%28|Otwórz nawias, używany na listach.|
+|)|%29|Nawias zamykający używany na listach.|
+|;|% 3B|Średnik, separator listy.|
+|?|% 3F|Znak zapytania, symbol wieloznaczny podczas opisywania specyfikacji pliku w sekcji dołączania/wykluczania elementu.|
+|* |% 2A|Gwiazdka, symbol wieloznaczny podczas opisywania specyfikacji pliku w sekcji dołączania/wykluczania elementu.|
 
 > [!NOTE]
-> W niektórych scenariuszach może być konieczne uniknięcie znaków cudzysłowu ("), na przykład podczas korzystania z `Exec` zadania.
+> W niektórych scenariuszach może zajść potrzeba ucieczki znaków podwójnego cudzysłowu ("), na przykład podczas korzystania z `Exec` zadania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Jak: Ucieczka znaków specjalnych w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
+- [Instrukcje: znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

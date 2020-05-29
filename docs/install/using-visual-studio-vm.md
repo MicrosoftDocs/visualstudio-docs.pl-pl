@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6095a3d7d8bfa7a5ee367da2c93d16113a777d0c
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: 6453c263cb970ae3fff2c134f1ae570bca730b93
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109484"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183239"
 ---
 # <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Obrazy programu Visual Studio na platformie Azure
 
@@ -37,10 +37,10 @@ Obrazy dla najnowszych wersji głównych, Visual Studio 2019, Visual Studio 2017
 | Wersja wydania                                                                                                                                          | Wersje              |    Wersja produktu    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
 | [Visual Studio 2019: Najnowsze (wersja 16,5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, społeczność | 16.5.4 wersja    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 16.0.13 wersja    |
-| [Visual Studio 2017: Najnowsze (wersja 15,9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, społeczność | 15.9.22 wersja   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, społeczność | 15.0.28 wersja   |
-| [Visual Studio 2015: Najnowsze (Aktualizacja Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, społeczność | 14.0.25431.01 wersja |
+| Visual Studio 2019: RTW                         | Enterprise            | 16.0.13 wersja    |
+| Visual Studio 2017: Najnowsze (wersja 15,9)           | Enterprise, społeczność | 15.9.22 wersja   |
+| Visual Studio 2017: RTW                             | Enterprise, społeczność | 15.0.28 wersja   |
+| Visual Studio 2015: Najnowsze (Aktualizacja Update 3)              | Enterprise, społeczność | 14.0.25431.01 wersja |
 
 > [!NOTE]
 > Zgodnie z zasadami obsługi Microsoft pierwotnie wydana wersja (RTW) programu Visual Studio 2015 straciła ważność do obsługi. Program Visual Studio 2015 Update 3 jest jedyną pozostałą wersją oferowaną dla wiersza produktu Visual Studio 2015.
@@ -101,7 +101,7 @@ Aby uzyskać więcej informacji, zobacz artykuł [Logowanie do programu Visual S
 
 Zakres środowisk programistycznych jest duży i istnieje rzeczywisty koszt związany z tworzeniem bardziej złożonych środowisk. Niezależnie od konfiguracji środowiska można zapisać lub przechwycić skonfigurowaną maszynę wirtualną jako "obraz podstawowy" do użytku w przyszłości lub dla innych członków zespołu. Następnie podczas uruchamiania nowej maszyny wirtualnej należy ją udostępnić z obrazu podstawowego, a nie z obrazu portalu Azure Marketplace.
 
-Szybkie podsumowanie: Użyj narzędzia do przygotowywania systemu (Sysprep) i Zamknij uruchomioną maszynę wirtualną, a następnie Przechwyć *(rysunek 1)* maszynę wirtualną jako obraz za pomocą interfejsu użytkownika w Azure Portal. Na platformie Azure `.vhd` jest zapisywany plik zawierający obraz na wybrane konto magazynu. Nowy obraz zostanie następnie wyświetlony jako zasób obrazu na liście zasobów subskrypcji.
+Szybkie podsumowanie: Użyj narzędzia do przygotowywania systemu (Sysprep) i Zamknij uruchomioną maszynę wirtualną, a następnie Przechwyć *(rysunek 1)* maszynę wirtualną jako obraz za pomocą interfejsu użytkownika w Azure Portal. Na platformie Azure jest zapisywany `.vhd` plik zawierający obraz na wybrane konto magazynu. Nowy obraz zostanie następnie wyświetlony jako zasób obrazu na liście zasobów subskrypcji.
 
 ![Przechwytywanie obrazu za pomocą interfejsu użytkownika Azure Portal](media/capture-vm.png)
 

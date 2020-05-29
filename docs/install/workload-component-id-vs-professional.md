@@ -1,12 +1,12 @@
 ---
-title: Identyfikatory obciążenia i składników programu Visual Studio Professional
+title: Visual Studio Professional obciążenia i identyfikatory składników
 titleSuffix: ''
-description: Używanie identyfikatorów obciążenia i składników do instalowania programu Visual Studio przy użyciu wiersza polecenia lub określania zależności w manifeście vsix
+description: Używanie obciążeń i identyfikatorów składników do instalowania programu Visual Studio przy użyciu wiersza polecenia lub do określenia jako zależność w manifeście VSIX
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,14 +16,14 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 2fa6401a03068ceaea325491d749d05a52866f72
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 6ac189de45248d277969be3f38e60daba2985ebc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276340"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184340"
 ---
-# <a name="visual-studio-professional-component-directory"></a>Katalog składników programu Visual Studio Professional
+# <a name="visual-studio-professional-component-directory"></a>Visual Studio Professional katalog składników
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "81276340"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)

@@ -1,12 +1,12 @@
 ---
-title: Obciążenia i identyfikatory składników społeczności programu Visual Studio
+title: Pakiety robocze i identyfikatory składników programu Visual Studio Community
 titleSuffix: ''
-description: Używanie identyfikatorów obciążenia i składników do instalowania programu Visual Studio przy użyciu wiersza polecenia lub określania zależności w manifeście vsix
+description: Używanie obciążeń i identyfikatorów składników do instalowania programu Visual Studio przy użyciu wiersza polecenia lub do określenia jako zależność w manifeście VSIX
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,14 +16,14 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 21be6f1b9cd5eeecd96fccd055a5f56dd1e35edf
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 1e86b76f2034ea593606703ad1bd6c04f1938854
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276386"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184379"
 ---
-# <a name="visual-studio-community-component-directory"></a>Katalog składników społeczności programu Visual Studio
+# <a name="visual-studio-community-component-directory"></a>Katalog składnika społeczności programu Visual Studio
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "81276386"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)

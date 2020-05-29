@@ -1,12 +1,12 @@
 ---
 title: Identyfikatory obciążeń i składników programu Visual Studio
 titleSuffix: ''
-description: Instalowanie programu Visual Studio za pomocą wiersza polecenia za pomocą obciążenia i identyfikatorów składników za pomocą funkcji obciążenia i składników lub określanie zależności w manifeście programu VSIX
+description: Używanie obciążeń i identyfikatorów składników do instalowania programu Visual Studio przy użyciu wiersza polecenia lub do określenia jako zależność w manifeście VSIX
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,62 +17,62 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c80c9677a52c32f9539858b64e3be0e5cfb5f27f
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 37080bd450f17968612601d50a5c45e7ffb06dad
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276445"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184357"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Identyfikatory obciążeń i składników programu Visual Studio
 
-Kliknij nazwy wersji w poniższej tabeli, aby wyświetlić dostępne identyfikatory obciążenia i składników, które należy zainstalować w programie Visual Studio przy użyciu wiersza polecenia lub określić jako zależność w manifeście vsix.
+Kliknij nazwy wersji w poniższej tabeli, aby wyświetlić dostępne obciążenia i identyfikatory składników niezbędne do zainstalowania programu Visual Studio przy użyciu wiersza polecenia lub, aby określić jako zależność w manifeście VSIX.
 
 ::: moniker range="vs-2017"
 
-**Aktualizacja [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes/)**
+**Zaktualizowano w [wersji 15,9](/visualstudio/releasenotes/vs2017-relnotes/)**
 
 | **Wersja** | **ID** | **Opis** |
 | ----------- | ------ | --------------- |
-| [Program&nbsp;Visual&nbsp;Studio Enterprise 2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | Rozwiązanie Microsoft DevOps do produktywności i koordynacji między zespołami dowolnej wielkości |
-| [Visual&nbsp;Studio&nbsp;Professional 2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | Profesjonalne narzędzia i usługi dla małych zespołów |
-| [Społeczność&nbsp;&nbsp;programu Visual Studio 2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Darmowy, w pełni funkcjonalny IDE dla studentów, open-source i poszczególnych programistów |
-| [Visual&nbsp;Studio&nbsp;&nbsp;Team Explorer 2017](workload-component-id-vs-team-explorer.md?vs-2017) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcja z programem Team Foundation Server i usługami Azure DevOps bez zestawu narzędzi deweloperskich programu Visual Studio |
-| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md?vs-2017) | Microsoft.VisualStudio.Product.WDExpress | Tworzenie aplikacji natywnych i zarządzanych, takich jak WPF, WinForms i Win32 z edycji kodu obsługujących składnię, kontroli kodu źródłowego i zarządzania elementami roboczymi. Zawiera obsługę języka C#, Visual Basic i Visual C++. |
-| [Narzędzia&nbsp;&nbsp;kompilacji&nbsp;programu Visual Studio 2017](workload-component-id-vs-build-tools.md?vs-2017) | Microsoft.VisualStudio.Product.BuildTools | Narzędzia kompilacji programu Visual Studio umożliwiają tworzenie natywnych i zarządzanych aplikacji opartych na programie MSBuild bez konieczności tworzenia ide programu Visual Studio. Istnieją opcje instalowania kompilatorów i bibliotek języka Visual C++, obsługi MFC, ATL i C++/CLI. |
-| [Visual&nbsp;Studio&nbsp;&nbsp;Test Agent 2017](workload-component-id-vs-test-agent.md?vs-2017)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie automatycznych testów i testów obciążenia |
-| [Kontroler&nbsp;testów&nbsp;programu Visual Studio 2017](workload-component-id-vs-test-controller.md?vs-2017) | Microsoft.VisualStudio.Product.TestController | Dystrybucja zautomatyzowanych testów na wiele maszyn |
-| [Visual&nbsp;Studio&nbsp;&nbsp;Test Professional 2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
-| [Klient&nbsp;&nbsp;opinii&nbsp;programu Visual Studio 2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackKlient | Visual Studio Feedback Client 2017 |
+| [Visual &nbsp; Studio Enterprise &nbsp; 2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft. VisualStudio. Product. Enterprise | Rozwiązanie Microsoft DevOpse w zakresie produktywności i koordynacji w zespołach dowolnego rozmiaru |
+| [Visual &nbsp; Studio Professional &nbsp; 2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft. VisualStudio. Product. Professional | Profesjonalne narzędzia i usługi dla małych zespołów |
+| [Visual &nbsp; Studio Community &nbsp; 2017](workload-component-id-vs-community.md) | Microsoft. VisualStudio. Product. Community | Bezpłatne, w pełni wyposażone środowisko IDE dla uczniów, Open Source i indywidualnych deweloperów |
+| [Visual &nbsp; Studio Team &nbsp; Explorer &nbsp; 2017](workload-component-id-vs-team-explorer.md?vs-2017) | Microsoft. VisualStudio. Product. TeamExplorer | Korzystanie z Team Foundation Server i Azure DevOps Services bez zestawu narzędzi dewelopera programu Visual Studio |
+| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md?vs-2017) | Microsoft. VisualStudio. Product. WDExpress | Twórz aplikacje natywne i zarządzane, takie jak WPF, WinForms i Win32, przy użyciu edycji kodu z uwzględnieniem składni, kontroli kodu źródłowego i zarządzania elementami roboczymi. Obejmuje obsługę języka C#, Visual Basic i Visual C++. |
+| [Visual &nbsp; Studio Build &nbsp; Tools &nbsp; 2017](workload-component-id-vs-build-tools.md?vs-2017) | Microsoft. VisualStudio. Product. BuildTools | Visual Studio Build Tools umożliwia tworzenie natywnych i zarządzanych aplikacji opartych na programie MSBuild bez konieczności używania środowiska IDE programu Visual Studio. Dostępne są opcje instalacji kompilatorów i bibliotek Visual C++, MFC, ATL i C++/CLI. |
+| [&nbsp;Agent testowy programu Visual Studio &nbsp; &nbsp; 2017](workload-component-id-vs-test-agent.md?vs-2017)  | Microsoft. VisualStudio. Product. agenta testowego | Obsługuje zdalne uruchamianie testów automatycznych i testów obciążenia |
+| [Visual &nbsp; Studio Test &nbsp; Controller 2017](workload-component-id-vs-test-controller.md?vs-2017) | Microsoft. VisualStudio. Product. TestController | Rozpowszechnianie zautomatyzowanych testów na wielu maszynach |
+| [Visual &nbsp; Studio Test &nbsp; Professional &nbsp; 2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft. VisualStudio. Product. TestProfessional | Visual Studio Test Professional 2017 |
+| [&nbsp;Klient opinii programu Visual Studio &nbsp; &nbsp; 2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft. VisualStudio. Product. FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Aby uzyskać więcej informacji na temat używania tych list, zobacz [użyj parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) strony i [Jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) strony.
+Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) i [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) .
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-**Aktualizacja [wersji 16.5](/visualstudio/releases/2019/release-notes/)**
+**Zaktualizowano w [wersji 16,6](/visualstudio/releases/2019/release-notes/)**
 
 | **Wersja** | **ID** | **Opis** |
 | ----------- | ------ | --------------- |
-| [Visual&nbsp;Studio&nbsp;Enterprise 2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | Rozwiązanie Microsoft DevOps do produktywności i koordynacji między zespołami dowolnej wielkości |
-| [Visual&nbsp;Studio&nbsp;Professional 2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | Profesjonalne narzędzia i usługi dla małych zespołów |
-| [Społeczność&nbsp;&nbsp;programu Visual Studio 2019](workload-component-id-vs-community.md?vs-2019) | Microsoft.VisualStudio.Product.Community | Darmowy, w pełni funkcjonalny IDE dla studentów, open-source i poszczególnych programistów |
-| [Visual&nbsp;Studio&nbsp;&nbsp;Team Explorer 2019](workload-component-id-vs-team-explorer.md?vs-2019) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcja z programem Team Foundation Server i usługami Azure DevOps bez zestawu narzędzi deweloperskich programu Visual Studio |
-| [Narzędzia&nbsp;&nbsp;do&nbsp;tworzenia programu Visual Studio 2019](workload-component-id-vs-build-tools.md?vs-2019) | Microsoft.VisualStudio.Product.BuildTools | Narzędzia kompilacji programu Visual Studio umożliwiają tworzenie natywnych i zarządzanych aplikacji opartych na programie MSBuild bez konieczności tworzenia ide programu Visual Studio. Istnieją opcje instalowania kompilatorów i bibliotek języka Visual C++, obsługi MFC, ATL i C++/CLI. |
-| [Visual&nbsp;Studio&nbsp;&nbsp;Test Agent 2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie automatycznych testów i testów obciążenia |
-| [Kontroler&nbsp;testu&nbsp;&nbsp;obciążenia programu Visual Studio 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Dystrybucja zautomatyzowanych testów na wiele maszyn |
+| [Visual &nbsp; Studio Enterprise &nbsp; 2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft. VisualStudio. Product. Enterprise | Rozwiązanie Microsoft DevOpse w zakresie produktywności i koordynacji w zespołach dowolnego rozmiaru |
+| [Visual &nbsp; Studio Professional &nbsp; 2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft. VisualStudio. Product. Professional | Profesjonalne narzędzia i usługi dla małych zespołów |
+| [Visual &nbsp; Studio Community &nbsp; 2019](workload-component-id-vs-community.md?vs-2019) | Microsoft. VisualStudio. Product. Community | Bezpłatne, w pełni wyposażone środowisko IDE dla uczniów, Open Source i indywidualnych deweloperów |
+| [Visual &nbsp; Studio Team &nbsp; Explorer &nbsp; 2019](workload-component-id-vs-team-explorer.md?vs-2019) | Microsoft. VisualStudio. Product. TeamExplorer | Korzystanie z Team Foundation Server i Azure DevOps Services bez zestawu narzędzi dewelopera programu Visual Studio |
+| [Visual &nbsp; Studio Build &nbsp; Tools &nbsp; 2019](workload-component-id-vs-build-tools.md?vs-2019) | Microsoft. VisualStudio. Product. BuildTools | Visual Studio Build Tools umożliwia tworzenie natywnych i zarządzanych aplikacji opartych na programie MSBuild bez konieczności używania środowiska IDE programu Visual Studio. Dostępne są opcje instalacji kompilatorów i bibliotek Visual C++, MFC, ATL i C++/CLI. |
+| [&nbsp;Agent testowy programu Visual Studio &nbsp; &nbsp; 2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft. VisualStudio. Product. agenta testowego | Obsługuje zdalne uruchamianie testów automatycznych i testów obciążenia |
+| [&nbsp;Kontroler testów obciążenia programu Visual Studio &nbsp; &nbsp; 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft. VisualStudio. Product. TestController | Rozpowszechnianie zautomatyzowanych testów na wielu maszynach |
 
-Aby uzyskać więcej informacji na temat używania tych list, zobacz [użyj parametrów wiersza polecenia do zainstalowania](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) programu Visual Studio strony i [How to: Migrate projektów rozszerzalności do programu Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) strony.
+Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz stronę [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) i [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) .
 
 > [!NOTE]
-> Aby uzyskać listę identyfikatorów obciążenia i składników dla poprzedniej wersji, zobacz [Wymagania obciążenia i identyfikatory składników programu Visual Studio 2017](workload-and-component-ids.md?view=vs-2017)
+> Aby uzyskać listę identyfikatorów obciążeń i składników dla poprzedniej wersji, zobacz artykuł dotyczący [obciążeń i składników programu Visual Studio 2017](workload-and-component-ids.md?view=vs-2017)
 
 ::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Przewodnik administratora programu Visual Studio dla programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

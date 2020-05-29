@@ -1,12 +1,12 @@
 ---
-title: Obciążenie i identyfikatory składników narzędzi kompilacji programu Visual Studio
+title: Visual Studio Build Tools obciążenia i identyfikatory składników
 titleSuffix: ''
-description: Tworzenie klasycznych aplikacji opartych na systemie Windows za pomocą obciążenia i identyfikatorów składników programu Visual Studio
+description: Tworzenie klasycznych aplikacji opartych na systemie Windows przy użyciu obciążeń i identyfikatorów składników programu Visual Studio
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,14 +16,14 @@ ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 930dc73cb1ad38f46e8d5567468eedcb432f6b3d
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 476180e2d49246088d85f1d162761ae180532eac
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276432"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183157"
 ---
-# <a name="visual-studio-build-tools-component-directory"></a>Katalog składników Narzędzia kompilacji programu Visual Studio
+# <a name="visual-studio-build-tools-component-directory"></a>Visual Studio Build Tools katalog składników
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "81276432"
 
 [!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Aby zainstalować te składniki przy użyciu instalatora ręcznego, pobierz i uruchom [narzędzia kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
+Aby zainstalować te składniki przy użyciu Instalatora ręcznego, Pobierz i uruchom [narzędzia kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
 
 [!INCLUDE[Visual Studio Build Tools 2017](includes/vs-2017/workload-component-id-vs-build-tools.md)]
 
@@ -41,7 +41,7 @@ Aby zainstalować te składniki przy użyciu instalatora ręcznego, pobierz i ur
 
 [!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-Aby zainstalować te składniki przy użyciu instalatora ręcznego, pobierz i uruchom [narzędzia kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
+Aby zainstalować te składniki przy użyciu Instalatora ręcznego, Pobierz i uruchom [narzędzia kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
 
 [!INCLUDE[Visual Studio Build Tools 2019](includes/vs-2019/workload-component-id-vs-build-tools.md)]
 
@@ -49,7 +49,7 @@ Aby zainstalować te składniki przy użyciu instalatora ręcznego, pobierz i ur
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)

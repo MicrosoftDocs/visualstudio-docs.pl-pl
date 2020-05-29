@@ -4,23 +4,27 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/02/2020
+ms.date: 05/10/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do wielu subskrybentów za pomocą funkcji zbiorczego dodawania lub grup Microsoft Azure Active Directory
-ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564189"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182901"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administrowania subskrypcjami pozwala dodawać użytkowników jeden w czasie lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
 
 Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorczego lub jeśli Twoja organizacja korzysta z usługi Microsoft Azure Active Directory (Azure AD), możesz użyć grup usługi Azure AD. W tym artykule opisano proces dla obu tych opcji. 
 
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
+
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Używanie dodatków zbiorczych do przypisywania subskrypcji
-1. Zaloguj się do portalu administracyjnego subskrypcji programu Visual Studio https://manage.visualstudio.compod adresem.
+1. Zaloguj się do portalu administracyjnego subskrypcji programu Visual Studio pod adresem https://manage.visualstudio.com .
 
 2. Aby jednocześnie dodać wielu subskrybentów, przejdź do karty **Zarządzanie subskrybentami** . Wybierz kartę **Dodaj** , a następnie na liście rozwijanej wybierz pozycję **Dodaj zbiorczo** .  
 
@@ -32,6 +36,9 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
    > Zawsze Pobieraj najnowszą wersję tego szablonu. Jeśli używasz starszej wersji, przekazywanie zbiorcze może zakończyć się niepowodzeniem.
 
 3. W arkuszu kalkulacyjnym programu Excel Wypełnij pola informacjami dla osób, do których chcesz przypisać subskrypcje. (*Odwołanie* jest polem opcjonalnym). Zapisz plik lokalnie po zakończeniu.
+
+    > [!NOTE]
+    > Jedno z pól szablonu umożliwia administratorom Włączanie lub wyłączanie możliwości pobierania oprogramowania przez subskrybentów.  Wyłączenie pobierania powoduje także wyłączenie dostępu do kluczy produktów.
 
    Aby zapewnić bezproblemowe przekazywanie, należy przestrzegać następujących najlepszych rozwiązań:
 
@@ -74,6 +81,7 @@ Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskryp
 > [!IMPORTANT]
 >
 > Następujące ograniczenia dotyczą korzystania z grup usługi Azure AD na potrzeby dodawania subskrybentów:
+> - Przed dodaniem grupy do portalu Adminstration administrator musi być członkiem dzierżawy usługi AAD.  Po dodaniu grupy zmiany członkostwa w grupach nie wymagają zaangażowania administratora. 
 > - Grupy muszą zawierać co najmniej jednego członka.  Puste grupy nie są obsługiwane.
 > - Grupy muszą mieć mniej niż 1 000 użytkowników. 
 > - Wszyscy użytkownicy muszą znajdować się na najwyższym poziomie grupy.  Zagnieżdżone grupy nie są obsługiwane.
@@ -81,7 +89,11 @@ Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskryp
 > - Wszyscy członkowie grupy muszą mieć adres e-mail skojarzony z kontem usługi Azure AD.
 > - Oddzielne adresy e-mail dla powiadomień nie są obsługiwane w przypadku subskrypcji dodanych za pomocą grup usługi Azure AD.  
 
-1. Zaloguj się do portalu administracyjnego subskrypcji programu Visual Studio pod [https://manage.visualstudio.com](https://manage.visualstudio.com)adresem.
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
+
+1. Zaloguj się do portalu administracyjnego subskrypcji programu Visual Studio pod adresem [https://manage.visualstudio.com](https://manage.visualstudio.com) .
 
 2. Aby jednocześnie dodać wielu subskrybentów, przejdź do karty **Zarządzanie subskrybentami** .
 
@@ -106,9 +118,6 @@ Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskryp
 > [!NOTE]
 > Jeśli masz już przypisane subskrypcje do użytkowników, którzy zostali następnie dodani jako części grupy usługi Azure AD, zostaną one dodane jako część grupy i nie będą już wyświetlane indywidualnie. Jednak jeśli indywidualna subskrypcja dotyczy innego poziomu subskrypcji, będą oni mieć dwie subskrypcje.  Przykład: Jeśli użytkownik ma indywidualną subskrypcję Visual Studio Professional i jest członkiem grupy, do której przypiszesz subskrypcje Visual Studio Enterprise, będą one mieć oba te elementy.  
 
-<br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>P: Czy można wybrać wiele poziomów subskrypcji, które mają być przypisane w ramach grupy usługi Azure AD? 

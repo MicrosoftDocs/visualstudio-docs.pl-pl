@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do subskrybentów
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564163"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183473"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
 Jako administrator subskrypcji programu Visual Studio można używać portalu administracyjnego do przypisywania subskrypcji do poszczególnych użytkowników i grup użytkowników.
@@ -20,7 +20,7 @@ Jako administrator subskrypcji programu Visual Studio można używać portalu ad
 W przypadku grup użytkowników można wybrać sposób przypisywania subskrypcji.  
 - Subskrypcje można przypisywać pojedynczo.
 - Możesz również szybko i łatwo przekazywać listy subskrybentów i ich informacje o subskrypcji za pomocą funkcji [zbiorczego dodawania](assign-license-bulk.md) .
-- Jeśli Twoja organizacja korzysta z usługi Microsoft Azure Active Directory (Azure AD), możesz użyć grup usługi Azure AD do przypisywania subskrypcji do grup użytkowników.  (Ta funkcja jest wdrażana w fazach i może nie być natychmiast dostępna dla Twojej organizacji).
+- Jeśli Twoja organizacja korzysta z usługi Microsoft Azure Active Directory (Azure AD), możesz [użyć grup usługi Azure AD do przypisywania subskrypcji](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) do grup użytkowników.  
 
 
 ## <a name="add-a-single-subscriber"></a>Dodaj pojedynczego abonenta
@@ -39,7 +39,11 @@ Poniżej przedstawiono sposób przypisywania subskrypcji programu Visual Studio 
    > [!div class="mx-imgBorder"]
    > ![Szczegóły subskrybenta](_img/assign-license-add/subscriber-details.png)
 
-    Jeśli chcesz, aby ten subskrybent miał dostęp do pobierania oprogramowania po zalogowaniu się do [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że włączono przełącznik pobierania w sekcji **ustawienia pobierania** . Jeśli zdecydujesz się wyłączyć pobieranie, użytkownik nie będzie miał dostępu do pobierania oprogramowania, ale nadal będzie miał dostęp do wszystkich innych korzyści uwzględnionych w subskrypcji.
+    > [!NOTE]
+    > Aby elementy członkowskie dzierżawy Azure Active Directory były widoczne po wprowadzeniu nazwy subskrybenta, administrator musi być członkiem dzierżawy. 
+
+
+    Jeśli chcesz, aby ten subskrybent miał dostęp do pobierania oprogramowania po zalogowaniu się do [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że włączono przełącznik pobierania w sekcji **ustawienia pobierania** . Jeśli zdecydujesz się wyłączyć pobieranie, użytkownik nie będzie miał dostępu do pobierania oprogramowania.  Dostęp do kluczy produktów również zostanie wyłączony.  Subskrybenci nadal będą mieć dostęp do wszystkich innych korzyści uwzględnionych w subskrypcji.
    > [!div class="mx-imgBorder"]
    > ![Dostęp do plików do pobrania](media/access-to-downloads.png)
 
