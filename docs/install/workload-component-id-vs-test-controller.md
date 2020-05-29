@@ -1,12 +1,12 @@
 ---
-title: Obciążenie kontrolera testów programu Visual Studio i identyfikatory składników
+title: Program Visual Studio Test Controller obciążenia i identyfikatory składników
 titleSuffix: ''
-description: Dystrybucja automatycznych testów na wielu komputerach za pomocą obciążenia i identyfikatorów składników programu Visual Studio
+description: Używanie obciążeń i identyfikatorów składników programu Visual Studio do dystrybuowania automatycznych testów do wielu maszyn
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,14 +16,14 @@ ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a0b0961aae1942a503f6470d7ca727a6d52019b1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 894fe12254ef0ffbbb1b05670b42965bbb5e6156
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276360"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183132"
 ---
-# <a name="visual-studio-test-controller-component-directory"></a>Katalog składników kontrolera testów programu Visual Studio
+# <a name="visual-studio-test-controller-component-directory"></a>Katalog składników programu Visual Studio Test Controller
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "81276360"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)

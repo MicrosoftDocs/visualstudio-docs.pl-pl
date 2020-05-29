@@ -1,56 +1,56 @@
 ---
 title: Tworzenie nowych projektów i rozwiązań
-description: W tym artykule opisano sposób tworzenia projektów i rozwiązań w programie Visual Studio dla komputerów Mac
+description: W tym artykule opisano sposób tworzenia projektów i rozwiązań w Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75678903"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183963"
 ---
-# <a name="create-a-new-project"></a>Tworzenie nowego projektu
+# <a name="create-a-new-project"></a>Utwórz nowy projekt
 
 ## <a name="opening-the-project-creation-dialog"></a>Otwieranie okna dialogowego tworzenia projektu
 
-Istnieje kilka sposobów tworzenia nowego projektu w programie Visual Studio dla komputerów Mac. Po pierwszym otwarciu programu Visual Studio dla komputerów Mac zostanie wyświetlone okno startowe. W tym miejscu możesz wybrać **nowy,** który przeniesie Cię do ekranu tworzenia projektu.
+Istnieje kilka sposobów tworzenia nowego projektu w Visual Studio dla komputerów Mac. Po pierwszym otwarciu Visual Studio dla komputerów Mac zostanie wyświetlone okno Start. W tym miejscu możesz wybrać pozycję **Nowy** , która spowoduje przejście do ekranu tworzenia projektu.
 
 > [!TIP]
-> Ponadto od okna startowego można również otwierać i wyszukiwać najnowsze projekty i rozwiązania. Możesz również otworzyć najnowsze projekty, przechodząc do paska menu i wybierając **opcję Plik > Najnowsze rozwiązania**
+> Ponadto, w oknie startowym można także otworzyć i wyszukać najnowsze projekty i rozwiązania. Możesz również otworzyć ostatnie projekty, przechodząc do paska menu i wybierając **plik > ostatnich rozwiązań**
 
-![Okno Start z utworzeniem nowego projektu](media/first-run-project.png)
+![Okno uruchamiania z opcją Utwórz nowy projekt](media/first-run-project.png)
 
-Jeśli program Visual Studio dla komputerów Mac jest już otwarty z załadowanym rozwiązaniem, można utworzyć nowe rozwiązanie, przechodząc do paska menu i wybierając **polecenie Plik > nowe rozwiązanie**. Tworzenie nowego rozwiązania w ten sposób zamyka rozwiązanie, które jest już załadowane.
+Jeśli Visual Studio dla komputerów Mac jest już otwarta z załadowanym rozwiązaniem, można utworzyć nowe rozwiązanie, przechodząc do paska menu i wybierając pozycję **plik > nowe rozwiązanie**. Tworzenie nowego rozwiązania w ten sposób zamyka już załadowane rozwiązanie.
 
-## <a name="creating-a-new-project-from-a-template"></a>Tworzenie nowego projektu z szablonu
+## <a name="creating-a-new-project"></a>Tworzenie nowego projektu
 
 Domyślnie w oknie dialogowym **Nowy projekt** zostaną wyświetlone ostatnio używane szablony posortowane według *ostatnio używanych*.
 
-Jeśli nie chcesz używać najnowszego szablonu, możesz wybrać jedną z kategorii po lewej stronie okna dialogowego. Każda kategoria zawiera kilka szablonów projektów do wyboru. Kliknięcie typu projektu umożliwia wyświetlenie opisu po prawej stronie ekranu.
+Jeśli nie chcesz używać ostatnio używanego szablonu, możesz wybrać jedną z kategorii po lewej stronie okna dialogowego. Każda kategoria zawiera kilka szablonów projektu, które można wybrać. Kliknięcie typu projektu umożliwia wyświetlenie opisu po prawej stronie ekranu.
 
-![Nowy ekran projektu](media/project-creation-screen.png)
+![Ekran nowy projekt](media/project-creation-screen.png)
 
 ## <a name="configuring-your-new-project"></a>Konfigurowanie nowego projektu
 
-Po wybraniu szablonu projektu na ekranach zostaną wyświetlone wszystkie kroki konfiguracji wymagane do skonfigurowania projektu; może się to różnić w zależności od typu projektu.
+Po wybraniu szablonu projektu następujące ekrany przeprowadzi Cię przez kroki konfiguracji wymagane do skonfigurowania projektu; może się to różnić w zależności od typu projektu.
 
-Wszystkie projekty wymagają nowego projektu, wraz z lokalizacją do przechowywania plików. Jeśli projekt jest częścią nowego rozwiązania, a nie dodanie go do istniejącego rozwiązania, nazwa rozwiązania będzie również wymagane.
+Wszystkie projekty wymagają nowego projektu wraz z lokalizacją do przechowywania plików. Jeśli projekt jest częścią nowego rozwiązania zamiast dodawania go do istniejącego rozwiązania, wymagana jest również nazwa rozwiązania.
 
-Opcjonalnie na tym etapie można również skonfigurować opcje sterowania źródłem Git. Poniższy obraz jest przykładem końcowego kroku konfiguracji dla projektu .NET Core:
+Opcjonalnie na tym etapie można także skonfigurować opcje kontroli źródła git. Na poniższej ilustracji przedstawiono przykładowy krok konfiguracji końcowej dla projektu .NET Core:
 
 ![Konfigurowanie nowego projektu](media/configure-new-project.png)
 
-## <a name="adding-additional-projects-to-a-solution"></a>Dodawanie dodatkowych projektów do rozwiązania
+## <a name="adding-additional-projects-to-a-solution"></a>Dodawanie kolejnych projektów do rozwiązania
 
-Dodatkowe projekty można dodać do rozwiązania, klikając prawym przyciskiem myszy rozwiązanie w panelu rozwiązania i wybierając opcję **Dodaj > Dodaj nowy projekt** lub Dodaj > Dodaj **istniejący projekt.**
+Aby dodać kolejne projekty do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie w okienko rozwiązania i wybierz opcję **dodaj > Dodaj nowy projekt** lub **Dodaj > Dodaj istniejący projekt**.
 
-Dodanie nowego projektu spowoduje przejście przez tworzenie projektu, jak pokazano w [konfiguracji nowego projektu](#configuring-your-new-project).
+Dodanie nowego projektu przeprowadzi Cię przez proces tworzenia projektu, jak pokazano w temacie [Konfigurowanie nowego projektu](#configuring-your-new-project).
 
-Wybranie opcji dodawania istniejącego projektu umożliwia przeglądanie istniejącego projektu na komputerze i dodawanie go do rozwiązania.
+Wybranie opcji dodania istniejącego projektu umożliwi przejrzenie istniejącego projektu na komputerze i dodanie go do rozwiązania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie rozwiązań i projektów (Visual Studio w systemie Windows)](/visualstudio/ide/creating-solutions-and-projects)

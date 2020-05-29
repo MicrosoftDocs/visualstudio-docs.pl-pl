@@ -1,7 +1,7 @@
 ---
 title: Tworzenie projektu
-description: tworzenie projektu przy użyciu przykładu z galerii uczenia maszynowego platformy Azure
-keywords: ai, visual studio, azure machine learning
+description: Tworzenie projektu przy użyciu przykładu z galerii usługi Azure Machine Learning
+keywords: AI, Visual Studio, Azure Machine Learning
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -10,54 +10,54 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1158015f1a7065514511b8d62810c937382b7f
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: f5ff05fa7c8fe68d7c09f4881efc249a74959b2b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638686"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180223"
 ---
-# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Tworzenie projektu sztucznej inteligencji z galerii usługi Azure Machine Learning Gallery w programie Visual Studio
+# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Tworzenie projektu AI z Galerii Azure Machine Learning w programie Visual Studio
 
-Usługa Azure Machine Learning jest zintegrowana z programem Visual Studio Tools for AI. Służy do przesyłania zadań uczenia maszynowego do zdalnych celów obliczeniowych, takich jak maszyny wirtualne platformy Azure, klastry Platformy Spark i inne. 
+Azure Machine Learning jest zintegrowana z Visual Studio Tools for AI. Można jej użyć do przesyłania zadań uczenia maszynowego do zdalnych celów obliczeniowych, takich jak maszyny wirtualne platformy Azure, klastry Spark i inne. 
 
-Po [zainstalowaniu programu Visual Studio Tools for AI](installation.md)można łatwo utworzyć nowy projekt języka Python przy użyciu wstępnie utworzonych receptur w galerii przykładów usługi Azure Machine Learning.
+Po [zainstalowaniu Visual Studio Tools for AI](installation.md)można łatwo utworzyć nowy projekt w języku Python przy użyciu wstępnych przepisów w galerii przykładów Azure Machine Learning.
 
 > [!NOTE]
-> Musi być zainstalowany system Azure Machine Learning Workbench. Aby go zainstalować, zapoznaj się z [przewodnikiem szybki start instalacji usługi Azure Machine Learning](/azure/machine-learning/preview/quickstart-installation)
+> Należy zainstalować Azure Machine Learning Workbench. 
 
-1. Uruchom program Visual Studio. Otwórz **Eksploratora serwerów,** otwierając menu **Narzędzia AI** i wybierając **pozycję Wybierz klaster**
+1. Uruchom program Visual Studio. Otwórz **Eksplorator serwera** , otwierając menu **narzędzia AI** i wybierając **pozycję Wybierz klaster** .
 
     ![Wybór klastra](media/create-project-gallery/select-cluster.png)
 
-2. Zaloguj się do subskrypcji usługi Azure Machine Learning, klikając prawym przyciskiem myszy węzeł **usługi Azure Machine Learning** w Eksploratorze serwera, a następnie wybierz pozycję Zaloguj **się** i postępuj zgodnie ze wskazówkami.
+2. Zaloguj się do swojej subskrypcji Azure Machine Learning, klikając prawym przyciskiem myszy węzeł **Azure Machine Learning** w Eksplorator serwera następnie wybierz pozycję **Zaloguj** i postępuj zgodnie z instrukcjami.
 
     ![logowanie](media/create-project-gallery/azureml-login.png)
 
-3. Wybierz pozycję **Narzędzia sztucznej inteligencji > przykładowej galerii usługi Azure Machine Learning**.
+3. Wybierz pozycję **narzędzia AI > Azure Machine Learning galerii przykładów**.
 
-    ![Przykładowa galeria](media/create-project-gallery/gallery.png)
+    ![Galeria przykładów](media/create-project-gallery/gallery.png)
 
-4. W tym przewodniku Szybki start wybierz przykład "**MNIST using TensorFlow**" i kliknij przycisk **Zainstaluj**. Podaj następujące informacje:
+4. Na potrzeby tego przewodnika Szybki Start wybierz przykład "**mnist ręcznie using TensorFlow**", a następnie kliknij przycisk **Instaluj**. Podaj następujące elementy:
 
-   - **Grupa zasobów:** grupa zasobów platformy Azure, w której będą przechowywane metadane
-   - **Konto**: Konto eksperymentów usługi Azure Machine Learning
-   - **Obszar roboczy:** obszar roboczy usługi Azure Machine Learning
-   - **Typ projektu:** struktura uczenia maszynowego. W takim przypadku wybierz **TensorFlow**
-   - **Dodaj do rozwiązania:** określa, czy dodać do bieżącego rozwiązania programu Visual Studio, czy utworzyć i otworzyć nowe rozwiązanie
-   - **Ścieżka projektu:** Lokalizacja, aby zapisać kod
-   - **Nazwa projektu**: Typ **TensorFlowMNIST**
+   - **Grupa zasobów**: Grupa zasobów platformy Azure, w której będą przechowywane Twoje metadane
+   - **Konto**: Azure Machine Learning konto eksperymentowania
+   - **Obszar roboczy**: Azure Machine Learning obszar roboczy
+   - **Typ projektu**: platforma uczenia maszynowego. W tym przypadku wybierz **TensorFlow**
+   - **Dodaj do rozwiązania**: określa, czy dodać do bieżącego rozwiązania programu Visual Studio, czy też utworzyć i otworzyć nowe rozwiązanie
+   - **Ścieżka projektu**: lokalizacja, w której ma zostać zapisany kod
+   - **Nazwa projektu**: wpisz **TensorFlowMNIST**
 
-   ![Wynikowy projekt podczas korzystania z szablonu aplikacji języka Python](media/create-project-gallery/new-AzureSampleProject.png)
+   ![Projekt wynikający z użycia szablonu aplikacji języka Python](media/create-project-gallery/new-AzureSampleProject.png)
 
-5. Program Visual Studio tworzy `.pyproj` plik projektu (plik na dysku) wraz z innymi plikami zdefiniowanymi w przykładzie. Z szablonem "MNIST" projekt zawiera kilka plików.
+5. Program Visual Studio tworzy plik projektu ( `.pyproj` plik na dysku) wraz z innymi plikami zdefiniowanymi w przykładzie. W przypadku szablonu "MNIST ręcznie" projekt zawiera kilka plików.
 
-    ![mnist](media/create-project-gallery/azml-mnist.png)
+    ![mnist ręcznie](media/create-project-gallery/azml-mnist.png)
 
-6. Prześlij zadanie do usługi Azure Machine Learning.
+6. Prześlij zadanie do Azure Machine Learning.
 
-    ![mnist](media/create-project-gallery/submit-azml.png)
+    ![mnist ręcznie](media/create-project-gallery/submit-azml.png)
 
-7. Uruchamianie w kontenerze platformy Docker lub na komputerze lokalnym
+7. Uruchom w kontenerze platformy Docker lub na komputerze lokalnym
 
-    ![mnist](media/create-project-gallery/azml-local.png)
+    ![mnist ręcznie](media/create-project-gallery/azml-local.png)

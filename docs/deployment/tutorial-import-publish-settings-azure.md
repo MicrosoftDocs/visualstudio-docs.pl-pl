@@ -1,7 +1,7 @@
 ---
-title: Publikowanie na platformie Azure przez importowanie ustawień publikowania
-description: Tworzenie i importowanie profilu publikowania w celu wdrożenia aplikacji z programu Visual Studio do usługi Azure App Service
-ms.date: 05/07/2018
+title: Publikowanie na platformie Azure przez zaimportowanie ustawień publikowania
+description: Utwórz i zaimportuj profil publikowania, aby wdrożyć aplikację z programu Visual Studio w celu Azure App Service
+ms.date: 05/06/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,76 +10,76 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cd316956f8e6c385cd59c017af50452b07537dc6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65679191"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183317"
 ---
-# <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usłudze Azure App Service przez importowanie ustawień publikowania w programie Visual Studio
+# <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji do Azure App Service przez zaimportowanie ustawień publikowania w programie Visual Studio
 
-Za pomocą narzędzia **Publikowanie** można zaimportować ustawienia publikowania, a następnie wdrożyć aplikację. W tym artykule używamy ustawień publikowania dla usługi Azure App Service, ale można użyć podobnych kroków, aby zaimportować ustawienia publikowania z [usług IIS](../deployment/tutorial-import-publish-settings-iis.md). W niektórych scenariuszach użycie profilu ustawień publikowania może być szybsze niż ręczne konfigurowanie wdrożenia usługi dla każdej instalacji programu Visual Studio.
+Możesz użyć narzędzia do **publikowania** , aby zaimportować ustawienia publikowania, a następnie wdrożyć aplikację. W tym artykule używamy ustawień publikowania dla Azure App Service, ale możesz użyć podobnych kroków, aby zaimportować ustawienia publikowania z [usług IIS](../deployment/tutorial-import-publish-settings-iis.md). W niektórych scenariuszach korzystanie z profilu ustawień publikowania może być szybsze niż ręczne konfigurowanie wdrożenia w usłudze dla każdej instalacji programu Visual Studio.
 
-Te kroki dotyczą aplikacji ASP.NET, ASP.NET Core i .NET Core w programie Visual Studio. Można również zaimportować ustawienia publikowania dla aplikacji [Python.](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+Te kroki dotyczą aplikacji ASP.NET, ASP.NET Core i .NET Core w programie Visual Studio. Możesz również zaimportować ustawienia publikowania dla aplikacji języka [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) .
 
-W tym samouczku zostaną wykonane następujące czynności:
+W tym samouczku wykonasz następujące czynności:
 
 > [!div class="checklist"]
-> * Generowanie pliku ustawień publikowania z usługi Azure App Service
+> * Generuj plik ustawień publikowania na podstawie Azure App Service
 > * Importowanie pliku ustawień publikowania do programu Visual Studio
-> * Wdrażanie aplikacji w usłudze Azure App Service
+> * Wdróż aplikację w Azure App Service
 
-Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publikowania (*\*pubxml*) utworzonego w programie Visual Studio. Plik ustawień publikowania jest tworzony przez usługę Azure App Service, a następnie można go zaimportować do programu Visual Studio.
+Plik ustawień publikowania (* \* . publishsettings*) jest inny niż profil publikacji (* \* . pubxml*) utworzony w programie Visual Studio. Plik ustawień publikowania jest tworzony przez Azure App Service, a następnie można go zaimportować do programu Visual Studio.
 
 > [!NOTE]
-> Jeśli wystarczy skopiować profil publikowania programu Visual Studio (plik*\*pubxml)* z jednej instalacji programu Visual Studio do innej, można znaleźć profil publikowania , * \<nazwa\>_pubxml*, w * \\<projectname\>\Properties\PublishProfiles* folder dla zarządzanych typów projektów. W przypadku witryn sieci Web zajrzyj w obszarze *folderu \App_Data.* Profile publikowania są plikami XML MSBuild.
+> Jeśli wystarczy skopiować profil publikacji programu Visual Studio (plik* \* . pubxml* ) z jednej instalacji programu Visual Studio do innej, można znaleźć profil publikowania, * \<profilename\> . pubxml*, w folderze * \\<ProjectName \> \Properties\PublishProfiles* dla typów projektów zarządzanych. W przypadku witryn sieci Web zapoznaj się z folderem *\ App_Data* . Profile publikowania są plikami XML programu MSBuild.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ::: moniker range=">=vs-2019"
 
-* Musi być zainstalowany program Visual Studio 2019 i ASP.NET i obciążenia **tworzenia sieci Web.**
+* Musisz mieć zainstalowany program Visual Studio 2019 i obciążenie **programowaniem ASP.NET i sieci Web** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/downloads/)aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-* Musi być zainstalowany program Visual Studio 2017 i ASP.NET i obciążenia **tworzenia sieci Web.**
+* Musisz mieć zainstalowany program Visual Studio 2017 i obciążenie **programowaniem ASP.NET i sieci Web** .
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/downloads/)aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/),   Aby zainstalować ją bezpłatnie.
 ::: moniker-end
 
-* Utwórz usługę Azure App Service. Aby uzyskać szczegółowe instrukcje, zobacz [Wdrażanie aplikacji sieci Web ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+* Utwórz Azure App Service. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Tworzenie nowego projektu ASP.NET w programie Visual Studio
 
-1. Na komputerze z programem Visual Studio utwórz nowy projekt.
+1. Na komputerze z uruchomionym programem Visual Studio Utwórz nowy projekt.
 
-    Wybierz poprawny szablon. W tym przykładzie wybierz **opcję ASP.NET aplikacji sieci Web (.NET Framework)** lub (tylko dla języka C#) ASP.NET **podstawowej aplikacji sieci Web,** a następnie kliknij przycisk **OK**.
+    Wybierz odpowiedni szablon. W tym przykładzie wybierz pozycję **aplikacja sieci web ASP.NET (.NET Framework)** lub (tylko w przypadku języka C#) **ASP.NET Core aplikacji sieci Web**, a następnie kliknij przycisk **OK**.
 
-    Jeśli nie widzisz określonych szablonów projektów, kliknij łącze **Otwórz instalator programu Visual Studio** w lewym okienku okna dialogowego Nowy **projekt.** Uruchamia instalator programu Visual Studio. Zainstaluj **obciążenie ASP.NET i tworzenia stron internetowych.**
+    Jeśli nie widzisz określonych szablonów projektu, kliknij link **otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Zostanie uruchomiona Instalator programu Visual Studio. Zainstaluj **ASP.NET i programowanie aplikacji sieci Web** .
 
-    Wybranego szablonu projektu (ASP.NET lub ASP.NET Core) musi odpowiadać wersji ASP.NET zainstalowanej na serwerze sieci Web.
+    Wybrany szablon projektu (ASP.NET lub ASP.NET Core) musi odpowiadać wersji ASP.NET zainstalowanej na serwerze sieci Web.
 
-1. Wybierz opcję **MVC** (.NET Framework) lub **Web Application (Model-View-Controller)** (dla .NET Core) i upewnij się, że nie jest **zaznaczone żadne uwierzytelnianie,** a następnie kliknij przycisk **OK**.
+1. Wybierz opcję **MVC** (.NET Framework) lub **aplikacja sieci Web (Model-View-Controller)** (dla platformy .NET Core) i upewnij się, że nie wybrano **żadnego uwierzytelniania** , a następnie kliknij przycisk **OK**.
 
-1. Wpisz nazwę, taką jak **MyWebApp** i kliknij **przycisk OK**.
+1. Wpisz nazwę, taką jak **MyWebApp** , i kliknij przycisk **OK**.
 
-    Visual Studio tworzy projekt.
+    Program Visual Studio tworzy projekt.
 
-1. Wybierz **build** > **build solution,** aby utworzyć projekt.
+1. Wybierz pozycję **Kompiluj**  >  **kompilację rozwiązania** , aby skompilować projekt.
 
-## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Tworzenie pliku ustawień publikowania w usłudze Azure App Service
+## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Utwórz plik ustawień publikowania w Azure App Service
 
-1. W witrynie Azure portal otwórz usługę Azure App Service.
+1. W Azure Portal Otwórz Azure App Service.
 
-1. Kliknij **pozycję Pobierz profil publikowania** i zapisz profil lokalnie.
+1. Kliknij pozycję **Pobierz profil publikowania** i Zapisz profil lokalnie.
 
-    ![Pobierz profil publikowania](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
+    ![Pobieranie profilu publikowania](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 
-    Plik z rozszerzeniem pliku *.publishsettings* został wygenerowany w miejscu, w którym został zapisany. Poniższy kod przedstawia częściowy przykład pliku (w bardziej czytelnym formatowaniu).
+    Plik z rozszerzeniem *. publishsettings* został wygenerowany w lokalizacji, w której został zapisany. Poniższy kod przedstawia częściowy przykład pliku (w bardziej czytelny sposób formatowania).
 
     ```xml
     <publishData>
@@ -101,7 +101,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
     </publishData>
     ```
 
-    Zazwyczaj poprzedni plik *.publishsettings zawiera dwa profile publikowania, których można użyć w programie Visual Studio, jeden do wdrożenia przy użyciu wdrożenia w sieci Web, a drugi do wdrożenia przy użyciu protokołu FTP. Poprzedni kod przedstawia profil wdrażania w sieci Web. Oba profile zostaną zaimportowane później podczas importowania profilu.
+    Zazwyczaj poprzedni plik *. publishsettings zawiera dwa profile publikowania, których można użyć w programie Visual Studio, jeden do wdrożenia przy użyciu Web Deploy i jeden do wdrożenia przy użyciu protokołu FTP. Powyższy kod przedstawia profil Web Deploy. Oba profile zostaną zaimportowane później podczas importowania profilu.
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importowanie ustawień publikowania w programie Visual Studio i wdrażanie
 
@@ -109,7 +109,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku utworzono plik ustawień publikowania, zaimportowano go do programu Visual Studio i wdrożono aplikację ASP.NET w usłudze Azure App Service. Przegląd opcji publikowania w programie Visual Studio może być omówienie.
+W tym samouczku utworzono plik ustawień publikowania, zaimportowano go do programu Visual Studio i wdrożono aplikację ASP.NET do Azure App Service. Warto zapoznać się z omówieniem opcji publikowania w programie Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Pierwsze spojrzenie na wdrażanie](../deployment/deploying-applications-services-and-components.md)

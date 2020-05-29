@@ -1,12 +1,12 @@
 ---
-title: Obciążenie i identyfikatory składników agenta testowego programu Visual Studio
+title: Obciążenie agenta testowego programu Visual Studio i identyfikatory składników
 titleSuffix: ''
-description: Zdalne uruchamianie automatycznych testów i ładowanie testów za pomocą obciążenia i identyfikatorów składników programu Visual Studio
+description: Używanie obciążeń i identyfikatorów składników programu Visual Studio do zdalnego uruchamiania testów i testów obciążeniowych
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/16/2020
+ms.date: 05/19/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,14 +16,14 @@ ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 5a24e7c95d3e55b5b91d737877b9292e0af0db58
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: a02467d388217a61d911542a111154e3f90d0b44
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276406"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184315"
 ---
-# <a name="visual-studio-test-agent-component-directory"></a>Katalog składników agenta testowego programu Visual Studio
+# <a name="visual-studio-test-agent-component-directory"></a>Katalog składnika agenta testowego programu Visual Studio
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "81276406"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)

@@ -1,5 +1,5 @@
 ---
-title: Aktualizowanie istniejącej aplikacji do MSBuild 15 | Dokumenty firmy Microsoft
+title: Aktualizowanie istniejącej aplikacji do programu MSBuild 15 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,44 +7,44 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597142"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184032"
 ---
-# <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizowanie istniejącej aplikacji dla usługi MSBuild 15
+# <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizowanie istniejącej aplikacji dla programu MSBuild 15
 
-W wersjach MSBuild przed 15.0 MSBuild został załadowany z globalnej pamięci podręcznej zestawu (GAC) i rozszerzenia MSBuild zostały zainstalowane w rejestrze. Dzięki temu wszystkie aplikacje używały tej samej wersji programu MSBuild i miały dostęp do tych samych zestawów narzędzi, ale zapobiegały instalacjom obok siebie w różnych wersjach programu Visual Studio.
+W wersjach programu MSBuild wcześniejszych niż 15,0 program MSBuild został załadowany z globalnej pamięci podręcznej zestawów (GAC), a rozszerzenia programu MSBuild zostały zainstalowane w rejestrze. To gwarantuje, że wszystkie aplikacje używają tej samej wersji programu MSBuild i miały dostęp do tych samych zestawów narzędzi, ale uniemożliwiają instalacje równoległe różnych wersji programu Visual Studio.
 
-Aby obsługiwać szybszą, mniejszą i side-by-side instalacji, Visual Studio 2017 i nowsze wersje nie umieszczają już MSBuild w pliku GAC lub modyfikuje rejestr. Niestety oznacza to, że aplikacje, które chcą używać interfejsu API MSBuild do oceny lub tworzenia projektów nie mogą niejawnie polegać na instalacji programu Visual Studio.
+Aby można było obsłużyć szybsze, mniejsze i równoległe instalacje, program Visual Studio 2017 i jego nowsze wersje nie umieszczają w pamięci podręcznej programu MSBuild ani nie modyfikują rejestru. Niestety, oznacza to, że aplikacje, które chcą używać interfejsu API programu MSBuild do szacowania lub kompilowania projektów, nie mogą niejawnie polegać na instalacji programu Visual Studio.
 
-## <a name="use-msbuild-from-visual-studio"></a>Używanie usługi MSBuild z programu Visual Studio
+## <a name="use-msbuild-from-visual-studio"></a>Korzystanie z programu MSBuild w programie Visual Studio
 
-Aby upewnić się, że kompilacje programowe z kompilacji dopasowania aplikacji wykonane w programie Visual Studio lub *MSBuild.exe*, załadować zestawy MSBuild z programu Visual Studio i używać zestawów SDK dostępnych w programie Visual Studio. Pakiet Microsoft.Build.Locator NuGet usprawnia ten proces.
+Aby zapewnić kompilacje programistyczne z aplikacji w programie Visual Studio lub *MSBuild. exe*, Załaduj zestawy MSBuild z programu Visual Studio i użyj zestawów SDK dostępnych w programie Visual Studio. Pakiet NuGet Microsoft. Build. Locator usprawnia ten proces.
 
-## <a name="use-microsoftbuildlocator"></a>Użyj microsoft.build.locator
+## <a name="use-microsoftbuildlocator"></a>Korzystanie z Microsoft. Build. Locator
 
-Jeśli ponownie rozdzielasz plik *Microsoft.Build.Locator.dll* z aplikacją, nie trzeba będzie rozpowszechniać innych zestawów MSBuild.
+W przypadku ponownej dystrybucji *pliku Microsoft. Build. Locator. dll* z aplikacją nie będzie konieczne dystrybuowanie innych zestawów programu MSBuild.
 
-Aktualizowanie projektu w celu użycia MSBuild 15 i interfejsu API lokalizatora wymaga kilku zmian w projekcie, opisanych poniżej. Aby zobaczyć przykład zmian wymaganych do aktualizacji projektu, zobacz [zatwierdzenia wprowadzone do przykładowego projektu w repozytorium MSBuildLocator](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15).
+Aktualizacja projektu do korzystania z programu MSBuild 15 i interfejsu API lokalizatora wymaga kilku zmian w projekcie opisanych poniżej. Aby zobaczyć przykład zmian wymaganych do zaktualizowania projektu, zobacz [zatwierdzenia wykonane w przykładowym projekcie w repozytorium MSBuildLocator](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15).
 
-### <a name="change-msbuild-references"></a>Zmienianie odwołań do budynków MSBuild
+### <a name="change-msbuild-references"></a>Zmień odwołania MSBuild
 
-Aby upewnić się, że MSBuild ładuje się z centralnej lokalizacji, nie należy rozpowszechniać jego zestawów z aplikacją.
+Aby upewnić się, że program MSBuild ładuje się z lokalizacji centralnej, nie należy rozpowszechniać jej zestawów z aplikacją.
 
-Mechanizm zmiany projektu, aby uniknąć ładowania MSBuild z centralnej lokalizacji zależy od sposobu odwoływania się do MSBuild.
+Mechanizm zmiany projektu, aby uniknąć ładowania MSBuild z centralnej lokalizacji, zależy od tego, w jaki sposób odwołujesz się do programu MSBuild.
 
-#### <a name="use-nuget-packages-preferred"></a>Użyj pakietów NuGet (preferowane)
+#### <a name="use-nuget-packages-preferred"></a>Użyj pakietów NuGet (preferowany)
 
-W tych instrukcjach założono, że używasz [odwołania NuGet w stylu PackageReference.](/nuget/consume-packages/package-references-in-project-files)
+W tych instrukcjach przyjęto założenie, że używasz [odwołań NuGet w stylu PackageReference](/nuget/consume-packages/package-references-in-project-files).
 
-Zmień pliki projektu, aby odwoływać się do zestawów MSBuild z ich pakietów NuGet. Określ, aby poinformować `ExcludeAssets=runtime` NuGet, że zestawy są potrzebne tylko w czasie kompilacji i nie powinny być kopiowane do katalogu wyjściowego.
+Zmień pliki projektu, aby odwoływać się do zestawów MSBuild z ich pakietów NuGet. Określ `ExcludeAssets=runtime` , aby poinformować NuGet, że zestawy są konieczne tylko w czasie kompilacji, i nie powinny być kopiowane do katalogu wyjściowego.
 
-Wersja główna i pomocnicza pakietów MSBuild musi być mniejsza lub równa minimalnej wersji programu Visual Studio, którą chcesz obsługiwać. Na przykład jeśli chcesz obsługiwać program Visual Studio 2017 `15.1.548`i nowsze wersje, odwołuje się do wersji pakietu .
+Wersja główna i pomocnicza pakietów MSBuild musi być mniejsza lub równa minimalnej wersji programu Visual Studio, która ma być obsługiwana. Jeśli na przykład chcesz obsługiwać program Visual Studio 2017 i jego nowsze wersje, wersja pakietu referencyjnego `15.1.548` .
 
-Można na przykład użyć tego kodu XML:
+Na przykład można użyć tego kodu XML:
 
 ```xml
 <ItemGroup>
@@ -53,9 +53,9 @@ Można na przykład użyć tego kodu XML:
 </ItemGroup>
 ```
 
-#### <a name="use-extension-assemblies"></a>Używanie zestawów rozszerzeń
+#### <a name="use-extension-assemblies"></a>Użyj zestawów rozszerzeń
 
-Jeśli nie można użyć pakietów NuGet, można odwoływać się do zestawów MSBuild, które są dystrybuowane za pomocą programu Visual Studio. Jeśli odwołujesz się bezpośrednio do usługi MSBuild, upewnij się, że `Copy Local` nie `False`zostanie skopiowany do katalogu wyjściowego, ustawiając na . W pliku projektu to ustawienie będzie wyglądać następująco:
+Jeśli nie można używać pakietów NuGet, można odwoływać się do zestawów programu MSBuild dystrybuowanych z programem Visual Studio. Jeśli bezpośrednio odwołujesz się do programu MSBuild, upewnij się, że nie będzie on kopiowany do katalogu wyjściowego przez ustawienie `Copy Local` `False` . W pliku projektu to ustawienie będzie wyglądać podobnie do następującego kodu:
 
 ```xml
     <Reference Include="Microsoft.Build, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -63,17 +63,17 @@ Jeśli nie można użyć pakietów NuGet, można odwoływać się do zestawów M
     </Reference>
 ```
 
-#### <a name="binding-redirects"></a>Przekierowania powiązania
+#### <a name="binding-redirects"></a>Przekierowania powiązań
 
-Odwołaj się do pakietu Microsoft.Build.Locator, aby upewnić się, że aplikacja automatycznie używa wymaganych przekierowań powiązania do wersji 15.1.0.0. Powiązanie przekierowuje do tej wersji obsługuje zarówno MSBuild 15 i MSBuild 16.
+Odwołuje się do pakietu Microsoft. Build. Locator, aby upewnić się, że aplikacja automatycznie używa wymaganych przekierowań powiązań do wersji 15.1.0.0. Przekierowania powiązań do tej wersji obsługują zarówno program MSBuild 15, jak i program MSBuild 16.
 
-### <a name="ensure-output-is-clean"></a>Upewnij się, że wyjście jest czyste
+### <a name="ensure-output-is-clean"></a>Upewnij się, że dane wyjściowe są czyste
 
-Skompiluj projekt i sprawdź katalog danych wyjściowych, aby upewnić się, że nie zawiera on żadnych programów *Microsoft.Build.\*. dll* zestawy inne niż *Microsoft.Build.Locator.dll*, dodane w następnym kroku.
+Skompiluj projekt i Sprawdź katalog danych wyjściowych, aby upewnić się, że nie zawiera on żadnych *Microsoft. Build. \* . Zestawy dll* inne niż *Microsoft. Build. Locator. dll*, dodane w następnym kroku.
 
-### <a name="add-package-reference-for-microsoftbuildlocator"></a>Dodaj odwołanie do pakietu dla microsoft.build.locator
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>Dodawanie odwołania do pakietu dla elementu Microsoft. Build. Locator
 
-Dodaj odwołanie do pakietu NuGet dla [microsoft.build.locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
+Dodaj odwołanie do pakietu NuGet dla elementu [Microsoft. Build. Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
@@ -81,18 +81,44 @@ Dodaj odwołanie do pakietu NuGet dla [microsoft.build.locator](https://www.nuge
     </PackageReference>
 ```
 
-Nie należy `ExcludeAssets=runtime` określać pakietu Microsoft.Build.Locator.
+Nie należy określać `ExcludeAssets=runtime` pakietu Microsoft. Build. Locator.
 
 ### <a name="register-instance-before-calling-msbuild"></a>Zarejestruj wystąpienie przed wywołaniem MSBuild
 
-Dodaj wywołanie interfejsu API lokalizatora przed wywołaniem dowolnej metody korzystającej z usługi MSBuild.
+> [!IMPORTANT]
+> Nie można odwoływać się do żadnych typów MSBuild (z `Microsoft.Build` przestrzeni nazw) w metodzie wywołującej MSBuildLocator. Nie można na przykład wykonać tego czynności:
+>
+> ```csharp
+> void ThisWillFail()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     Project p = new Project(SomePath); // Could be any MSBuild type
+>     // Code that uses the MSBuild type
+> }
+> ```
+>
+> Zamiast tego należy wykonać następujące czynności:
+>
+> ```csharp
+> void MethodThatDoesNotDirectlyCallMSBuild()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     MethodThatCallsMSBuild();
+> }
+> 
+> void MethodThatCallsMSBuild()
+> {
+>     Project p = new Project(SomePath);
+>     // Code that uses the MSBuild type
+> }
+> ```
 
-Najprostszym sposobem dodania wywołania do interfejsu API lokalizatora jest dodanie
+Najprostszym sposobem dodania wywołania do interfejsu API lokalizatora jest dodanie wywołania do
 
 ```csharp
 MSBuildLocator.RegisterDefaults();
 ```
 
-w kodzie startowym aplikacji.
+w kodzie uruchomienia aplikacji.
 
-Jeśli chcesz bardziej ziarniste kontroli nad ładowaniem MSBuild, można `MSBuildLocator.QueryVisualStudioInstances()` wybrać wynik `MSBuildLocator.RegisterInstance()` przekazać ręcznie, ale zazwyczaj nie jest to potrzebne.
+Jeśli potrzebujesz bardziej precyzyjnej kontroli nad ładowaniem programu MSBuild, możesz wybrać wynik, który ma `MSBuildLocator.QueryVisualStudioInstances()` zostać przekazany `MSBuildLocator.RegisterInstance()` ręcznie, ale zazwyczaj nie jest to konieczne.
