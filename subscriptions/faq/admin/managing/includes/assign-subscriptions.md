@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386561"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200374"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Jak mogę przypisać subskrypcje programu Visual Studio?
 
@@ -22,7 +22,7 @@ Aby przypisać subskrypcje pojedynczo:
 
 1. Wybierz [kartę Zarządzanie subskrybentami](https://manage.visualstudio.com/subscribers) w górnej części strony [manage.visualstudio.com](https://manage.visualstudio.com)
 2. Wybierz pozycję Dodaj i wpisz nazwę i adres e-mail użytkownika, do którego chcesz przypisać subskrypcję.
-    - Jeśli w Twojej organizacji jest używana usługa Azure Active Directory, w polu Nazwa będą wyszukiwane osoby w bieżącym katalogu. Możesz wybrać pozycję z wyników wyszukiwania lub dodać osobę ręcznie.
+    1. Jeśli w Twojej organizacji jest używana usługa Azure Active Directory, w polu Nazwa będą wyszukiwane osoby w bieżącym katalogu. Możesz wybrać pozycję z wyników wyszukiwania lub dodać osobę ręcznie.
 3. Jeśli chcesz, aby subskrybent miał dostęp do oprogramowania do pobrania po zalogowaniu w [portalu subskrypcji programu Visual Studio](https://my.visualstudio.com/), upewnij się, że przełącznik umożliwiający pobieranie plików w sekcji Ustawienia pobierania jest włączony.
 4. Uzupełnij sekcję Preferencje komunikacji, aby określić, w jakim języku wysłać subskrybentom wiadomość e-mail z powiadomieniem o przypisaniu.
 5. Jeśli chcesz dodać notatki powiązane z przypisaniem, zaznacz pole Dokumentacja.

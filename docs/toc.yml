@@ -910,6 +910,8 @@
           href: ide/signing-in-to-visual-studio.md
         - name: Praca z wieloma kontami użytkowników
           href: ide/work-with-multiple-user-accounts.md
+        - name: Praca z kontami wymagającymi uwierzytelniania wieloskładnikowego
+          href: ide/work-with-multi-factor-authentication.md
         - name: Rozszerzanie wersji próbnej lub aktualizowanie licencji
           href: ide/how-to-unlock-visual-studio.md
     - name: Dostrajanie wydajności programu Visual Studio
