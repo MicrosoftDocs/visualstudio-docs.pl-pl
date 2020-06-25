@@ -1,7 +1,7 @@
 ---
 title: Tworzenie niestandardowego zestawu reguł analizy kodu
 ms.date: 11/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f23b2badb40effd4222e21ab9e67b2907513c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81462db07941c73b847c009ef8353b00d28fff4f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587553"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371914"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -24,7 +24,7 @@ Można utworzyć niestandardowy zestaw reguł, który spełnia wymagania projekt
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Tworzenie niestandardowego zestawu reguł na podstawie istniejącego zestawu reguł
 
-Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca możesz dodawać lub usuwać określone reguły, a także zmienić akcję, która występuje, gdy reguła zostanie naruszona&mdash;na przykład Pokaż ostrzeżenie lub błąd.
+Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca można dodawać lub usuwać określone reguły, a także zmienić akcję, która występuje, gdy reguła zostanie naruszona &mdash; na przykład, pokazać ostrzeżenie lub błąd.
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
@@ -44,9 +44,9 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
    - Wybierz zestaw reguł, który chcesz dostosować.
 
-     \- lub —
+     \-oraz
 
-   - Wybierz pozycję **\<przeglądaj >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
+   - Wybierz **\<Browse>** , aby określić istniejący zestaw reguł, którego nie ma na liście.
 
 4. Wybierz pozycję **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
 
@@ -57,11 +57,11 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
 Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy plik** :
 
-1. Wybierz pozycję **plik** > **Nowy** **plik** > lub naciśnij **klawisze CTRL**+**N**.
+1. Wybierz pozycję **plik**  >  **Nowy**  >  **plik**lub naciśnij **klawisze CTRL** + **N**.
 
 2. W oknie dialogowym **nowy plik** wybierz kategorię **Ogólne** po lewej stronie, a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
-3. Wybierz pozycję **Otwórz**.
+3. Wybierz pozycję **Open** (Otwórz).
 
    *Nowy plik zestawu reguł zostanie* otwarty w edytorze zestawu reguł.
 
@@ -76,13 +76,13 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 ::: moniker range="vs-2017"
 
-3. Wybierz pozycję **\<wybierz wiele zestawów reguł >** z **uruchamiania tego zestawu reguł**.
+3. Wybierz opcję **\<Choose multiple rule sets>** z **uruchamiania tego zestawu reguł**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Wybierz pozycję **\<wybierz wiele zestawów reguł >** z **aktywnych reguł**.
+3. Wybierz **\<Choose multiple rule sets>** z **aktywnych reguł**.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 - Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł o *takiej samej* ważności, w **Lista błędów**mogą pojawić się następujące ostrzeżenie:
 
-   **CA0063: nie powiodło się załadowanie pliku zestawu reguł "\[swój]. zestaw reguł" lub jeden z jego plików zależnych od tego zestawu. Plik jest niezgodny ze schematem zestawu reguł.**
+   **CA0063: nie można załadować pliku zestawu reguł " \[ Twoje]. zestaw reguł" lub jeden z jego plików zależnych od tego zestawu. Plik jest niezgodny ze schematem zestawu reguł.**
 
 - Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Na przykład:
 
@@ -136,7 +136,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 ## <a name="name-and-description"></a>Nazwa i opis
 
-Aby zmienić nazwę wyświetlaną zestawu reguł, który jest otwarty w edytorze, Otwórz okno **Właściwości** , wybierając pozycję **Wyświetl** > **Właściwości** na pasku menu. Wprowadź nazwę wyświetlaną w polu **Nazwa** . Możesz również wprowadzić opis zestawu reguł.
+Aby zmienić nazwę wyświetlaną zestawu reguł, który jest otwarty w edytorze, Otwórz okno **Właściwości** , wybierając **View**  >  **okno właściwości** widoku na pasku menu. Wprowadź nazwę wyświetlaną w polu **Nazwa** . Możesz również wprowadzić opis zestawu reguł.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -145,7 +145,7 @@ Teraz, gdy masz zestaw reguł, następnym krokiem jest dostosowanie reguł poprz
 > [!div class="nextstepaction"]
 > [Modyfikuj reguły w edytorze zestawu reguł](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
-- [Informacje o zestawie reguł analizy kodu](../code-quality/rule-set-reference.md)
+- [Odwołanie zestawu reguł analizy kodu](../code-quality/rule-set-reference.md)

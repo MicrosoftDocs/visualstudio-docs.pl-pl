@@ -1,28 +1,28 @@
 ---
-title: Monitor z tensorboardem
+title: Monitoruj przy użyciu TensorBoard
 author: jillre
 ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f1244b7cabf0cf89ad544b5138165a4a336a31
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 54b5594eea9b30ca755bd46c00cc2b6e1e0e19fc
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638737"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371602"
 ---
-# <a name="monitor-with-tensorboard"></a>Monitor z tensorboardem
+# <a name="monitor-with-tensorboard"></a>Monitoruj przy użyciu TensorBoard
 
-Postęp szkolenia modelu można wizualizować za pomocą TensorBoard.
+Możesz wizualizować postęp szkolenia modelu za pomocą TensorBoard.
 
-1. Kliknij prawym przyciskiem myszy projekt i kliknij polecenie **Uruchom płytę TensorBoard**; następnie wybierz katalog danych wyjściowych TensorBoard logów.
+1. Kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **Uruchom TensorBoard**; następnie wybierz katalog wyjściowych dzienników TensorBoard.
 
-    ![uruchamianie tablicy tensorboard](media/monitor-tensorboard/run-tensorboard.png)
+    ![Uruchom tensorboard](media/monitor-tensorboard/run-tensorboard.png)
 
-2. Zwróć uwagę na zmniejszanie się błędu z czasem, co oznacza, że jakość się poprawia.
+2. Zwróć uwagę na to, że błąd zmniejsza się w miarę upływu czasu, co oznacza zwiększenie jakości.
 
-    ![uruchamianie tablicy tensorboard](media/monitor-tensorboard/tensorboard.png)
+    ![Uruchom tensorboard](media/monitor-tensorboard/tensorboard.png)

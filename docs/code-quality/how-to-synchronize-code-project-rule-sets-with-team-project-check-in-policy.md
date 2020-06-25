@@ -1,7 +1,7 @@
 ---
 title: Synchronizowanie zestawów reguł projektu z zasadami ewidencjonowania
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587410"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371784"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Instrukcje: synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu usługi Azure DevOps
 
@@ -31,7 +31,7 @@ Ustawienia analizy kodu dla projektów kodu można synchronizować z zasadami ew
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Aby określić standardowy zestaw reguł firmy Microsoft
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij przycisk **właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
 
 2. Kliknij pozycję **Analiza kodu**.
 
@@ -51,19 +51,19 @@ Ustawienia analizy kodu dla projektów kodu można synchronizować z zasadami ew
 
 1. W razie potrzeby wykonaj operację Pobierz w pliku zestawu reguł, który określa zasady ewidencjonowania.
 
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij przycisk **właściwości**.
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
 
 3. Kliknij pozycję **Analiza kodu**.
 
 ::: moniker range="vs-2017"
 
-4. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Przeglądaj >** .
+4. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Browse>** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Na liście **aktywne reguły** kliknij pozycję **\<Przeglądaj >** .
+4. Na liście **aktywne reguły** kliknij pozycję **\<Browse>** .
 
 ::: moniker-end
 

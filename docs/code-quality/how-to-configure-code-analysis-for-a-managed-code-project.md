@@ -1,7 +1,7 @@
 ---
-title: Konfigurowanie analizy kodu
+title: Konfiguruj analizę kodu
 ms.date: 04/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
 - vs.codeanalysis.propertypages.solution
@@ -13,46 +13,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98db7cda02495d207d6e9387341173ea2efe22ca
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: a8c922f0fc952cede53b9961e2e772e71a19cbb9
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431355"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371953"
 ---
-# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Jak: Konfigurowanie starszej analizy dla kodu zarządzanego
+# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Instrukcje: Konfigurowanie starszej analizy dla kodu zarządzanego
 
-W programie Visual Studio można wybrać z listy [zestawów reguł](../code-quality/rule-set-reference.md) analizy kodu, aby zastosować do projektu kodu zarządzanego. Domyślnie jest zaznaczony zestaw reguł **minimalnych zalecanych reguł** firmy Microsoft, ale w razie potrzeby można zastosować inny zestaw reguł. Zestawy reguł mogą być stosowane do jednego lub wielu projektów w rozwiązaniu.
+W programie Visual Studio można wybrać spośród listy [zestawów reguł](../code-quality/rule-set-reference.md) analizy kodu, które mają zostać zastosowane do projektu kodu zarządzanego. Domyślnie jest wybierany **minimalny zalecany zestaw reguł firmy Microsoft** , ale w razie potrzeby można zastosować inny zestaw reguł. Zestawy reguł można stosować do jednego lub wielu projektów w rozwiązaniu.
 
 > [!NOTE]
-> Ten artykuł dotyczy starszej analizy, a nie [analizatorów kodu opartych na platformie kompilatora .NET.](use-roslyn-analyzers.md)
+> Ten artykuł ma zastosowanie do starszej analizy, a nie do [.NET compiler platform analizatorów kodu](use-roslyn-analyzers.md).
 
-## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Konfigurowanie zestawu reguł dla projektu programu .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Konfigurowanie zestawu reguł dla projektu .NET Framework
 
 1. Otwórz kartę **Analiza kodu** na stronach właściwości projektu. Można to zrobić w jeden z następujących sposobów:
 
-   - W **Eksploratorze rozwiązań**wybierz projekt. Na pasku menu wybierz pozycję >  **Analizuj** > **konfiguruj analizę kodu**dla** \<>projectname **.
+   - W **Eksplorator rozwiązań**wybierz projekt. Na pasku menu wybierz pozycję **Analizuj**  >  **Skonfiguruj analizę kodu**  >  **dla \<projectname> **.
 
-   - Kliknij prawym przyciskiem myszy projekt w **Eksploratorze rozwiązań** i wybierz polecenie **Właściwości**, a następnie wybierz kartę **Analiza kodu.**
+   - Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**, a następnie wybierz kartę **Analiza kodu** .
 
-2. Na listach **Konfiguracja** i **Platforma** wybierz konfigurację kompilacji i platformę docelową.
+2. Na listach **Konfiguracja** i **platforma** wybierz konfigurację kompilacji i platformę docelową.
 
 ::: moniker range="vs-2017"
 
-3. Aby przeprowadzić analizę kodu za każdym razem, gdy projekt jest budowany przy użyciu wybranej konfiguracji, wybierz **włącz analizę kodu na kompilacji**. Analizę kodu można również uruchomić ręcznie, wybierając **opcję Analizuj** > analizę**przebiegu analizy** > kodu**uruchamiania na \<>projectname **.
+3. Aby uruchomić analizę kodu za każdym razem, gdy projekt zostanie skompilowany przy użyciu wybranej konfiguracji, wybierz pozycję **Włącz analizę kodu podczas kompilacji**. Możesz również ręcznie uruchomić analizę kodu, wybierając pozycję **Analizuj**Przeprowadź analizę kodu  >  **Run Code Analysis**  >  **Uruchom analizę kodu \<projectname> na **.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Aby uruchomić analizę kodu za każdym razem, gdy projekt jest zbudowany przy użyciu wybranej konfiguracji, wybierz **uruchom na kompilacji** w sekcji **Analizatory binarne.** Można również uruchomić starszą analizę kodu ręcznie, zobacz [Jak: Uruchom starszą analizę kodu ręcznie dla kodu zarządzanego, aby](how-to-run-legacy-code-analysis-manually-for-managed-code.md) uzyskać więcej informacji.
+3. Aby uruchomić analizę kodu za każdym razem, gdy projekt został skompilowany przy użyciu wybranej konfiguracji, wybierz pozycję **Uruchom przy kompilacji** w sekcji **analizatory binarne** . Możesz również ręcznie uruchomić starszą analizę kodu, zobacz [jak: uruchamianie starszej analizy kodu ręcznie dla kodu zarządzanego](how-to-run-legacy-code-analysis-manually-for-managed-code.md) , aby uzyskać więcej szczegółów.
 
 ::: moniker-end
 
-4. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, wyczyść pole wyboru **Wygaszanie wyników z wygenerowanego kodu.**
+4. Aby wyświetlić ostrzeżenia z wygenerowanego kodu, wyczyść pole wyboru **Pomiń wyniki z wygenerowanego kodu** .
 
     > [!NOTE]
-    > Ta opcja nie pomija błędów analizy kodu i ostrzeżeń z wygenerowanego kodu, gdy błędy i ostrzeżenia pojawiają się w formularzach i szablonach. Można zarówno wyświetlić i zachować kod źródłowy dla formularza lub szablonu i nie zostanie zastąpiony.
+    > Ta opcja nie powoduje pomijania błędów analizy kodu i ostrzeżeń z wygenerowanego kodu, gdy błędy i ostrzeżenia pojawiają się w formularzach i szablonach. Możesz wyświetlić i zachować kod źródłowy formularza lub szablonu i nie zostanie on zastąpiony.
 
 ::: moniker range="vs-2017"
 
@@ -62,35 +62,35 @@ W programie Visual Studio można wybrać z listy [zestawów reguł](../code-qual
 
 ::: moniker range=">=vs-2019"
 
-5. Na liście **Aktywne reguły** wykonaj jedną z następujących czynności:
+5. Na liście **aktywne reguły** wykonaj jedną z następujących czynności:
 
 ::: moniker-end
 
    - Wybierz zestaw reguł, którego chcesz użyć.
 
-   - Wybierz ** \<opcję Przeglądaj>,** aby znaleźć istniejący niestandardowy zestaw reguł, których nie ma na liście.
+   - Wybierz **\<Browse>** , aby znaleźć istniejący niestandardowy zestaw reguł, którego nie ma na liście.
 
    - Zdefiniuj [niestandardowy zestaw reguł](../code-quality/how-to-create-a-custom-rule-set.md).
 
 ## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Określanie zestawów reguł dla wielu projektów w rozwiązaniu
 
-Domyślnie wszystkim zarządzanym projektom rozwiązania jest przypisywany zestaw reguł analizy kodu *minimalnych zalecanych reguł firmy Microsoft.* Można zmienić zestawy reguł, które są przypisane do projektów rozwiązania w oknie dialogowym **Właściwości** dla rozwiązania.
+Domyślnie wszystkie zarządzane projekty rozwiązania są przypisane do zestawu reguł analizy kodów *minimalnych zalecanych reguł firmy Microsoft* . Zestawy reguł, które są przypisane do projektów rozwiązania, można zmienić w oknie dialogowym **Właściwości** rozwiązania.
 
 1. Otwórz rozwiązanie w programie Visual Studio.
 
-2. W menu **Analiza** wybierz polecenie **Konfiguruj analizę kodu dla rozwiązania**.
+2. W menu **Analizuj** wybierz pozycję **Konfiguruj analizę kodu dla rozwiązania**.
 
-3. W razie potrzeby rozwiń węzeł **Właściwości wspólne**, a następnie wybierz pozycję Ustawienia **analizy kodu**.
+3. W razie potrzeby rozwiń węzeł **wspólne właściwości**, a następnie wybierz pozycję **Ustawienia analizy kodu**.
 
-4. Można określić zestaw reguł dla jednego lub więcej projektów:
+4. Można określić zestaw reguł dla jednego lub kilku projektów:
 
-    - Aby określić zestaw reguł dla pojedynczego projektu, wybierz nazwę projektu.
+    - Aby określić zestaw reguł dla danego projektu, wybierz nazwę projektu.
 
-    - Aby określić zestaw reguł dla wielu projektów, przytrzymaj naciśnięty **klawisz Ctrl** i wybierz nazwy projektów.
+    - Aby określić zestaw reguł dla wielu projektów, przytrzymaj wciśnięty klawisz **Ctrl** i wybierz nazwy projektu.
 
-    - Aby określić wszystkie projekty w rozwiązaniu, przytrzymaj naciśnięty **klawisz Shift** i kliknij na liście projektów.
+    - Aby określić wszystkie projekty w rozwiązaniu, przytrzymaj wciśnięty klawisz **SHIFT** i kliknij na liście projektów.
 
-5. Zaznacz pole **Zestaw reguł** projektu, a następnie wybierz nazwę zestawu reguł, który chcesz zastosować.
+5. Zaznacz pole **zestaw reguł** projektu, a następnie wybierz nazwę zestawu reguł, który ma zostać zastosowany.
 
 ## <a name="see-also"></a>Zobacz też
 
