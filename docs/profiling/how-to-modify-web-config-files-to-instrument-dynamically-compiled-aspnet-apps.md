@@ -1,7 +1,7 @@
 ---
-title: 'Plik Web.Config: Instrument & profil dynamiczny skompilowany ASP.NET aplikacji internetowej'
+title: Web.Config Instrumentacja plików & profil dynamicznej skompilowanej aplikacji sieci Web ASP.NET
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
@@ -9,71 +9,71 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8ed2d8e8cc62d26f9d63a8a675301c78fc35c51a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775411"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331511"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Jak: Modyfikowanie plików web.config do instrumentów i profilów dynamicznie skompilowanych ASP.NET aplikacji internetowych
-Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody instrumentacji Narzędzia profilowania można zbierać szczegółowe dane chronometrażu, dane alokacji [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pamięci .NET i dane okresu istnienia obiektu .NET z dynamicznie skompilowanych aplikacji sieci Web.
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET
+Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody instrumentacji narzędzia profilowania można zbierać szczegółowe dane o chronometrażu, dane przydziału pamięci platformy .NET i dane okresu istnienia obiektu platformy .NET z dynamicznie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.
 
- W tym temacie opisano sposób modyfikowania pliku konfiguracyjnego *web.config* w celu włączenia instrumentacji i profilowania aplikacji [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web.
+ W tym temacie opisano sposób modyfikowania pliku konfiguracji *web.config* w celu włączenia Instrumentacji i profilowania [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.
 
 > [!NOTE]
-> Nie jest wymagane modyfikowanie pliku *web.config* podczas korzystania z metody profilowania próbkowania lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] gdy chcesz przyrządzać wstępnie skompilowany moduł.
+> Nie trzeba modyfikować pliku *web.config* podczas korzystania z metody profilowania próbkowania lub gdy chcesz instrumentację wstępnie skompilowanego [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modułu.
 
- Katalog główny pliku *web.config* jest elementem **konfiguracji.** Aby zainstruować i [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] profilować dynamicznie skompilowaną aplikację internetową, należy dodać lub zmodyfikować następujące elementy:
+ Katalog główny pliku *web.config* jest elementem **konfiguracji** . Aby instrumentować i profilować dynamicznie skompilowaną [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikację sieci Web, należy dodać lub zmodyfikować następujące elementy:
 
-- Element **configuration/runtime/assemblyBinding/dependentAssembly** identyfikujący zestaw Microsoft.VisualStudio.Enterprise.ASPNetHelper sterujący profilowaniem. Element **dependentAssembly** zawiera dwa elementy podrzędne: **assemblyIdentity** i **codeBase**.
+- Element **konfiguracji/środowiska uruchomieniowego/zestawubinding/dependentAssembly** , który identyfikuje zestaw Microsoft. VisualStudio. Enterprise. ASPNetHelper, który kontroluje profilowanie. Element **dependentAssembly** zawiera dwa elementy podrzędne: **assemblyIdentity** i **codebase**.
 
-- Element **configuration/system.web/compilation** identyfikujący krok kompilacji poprocesowej profilera dla zestawu docelowego.
+- Element **Configuration/system. Web/compilation** , który identyfikuje krok kompilacji profilera po procesie dla zestawu docelowego.
 
-- Dwa **elementy dodawania** identyfikujące lokalizację narzędzi narzędzi narzędzi profilowania są dodawane do sekcji **konfiguracja/appSettings** .
+- Dwa **Dodaj** elementy, które identyfikują lokalizację narzędzi narzędzia profilowania, są dodawane do sekcji **Konfiguracja/AppSettings** .
 
-  Zaleca się utworzenie kopii oryginalnego pliku *web.config,* którego można użyć do przywrócenia konfiguracji aplikacji.
+  Zalecamy utworzenie kopii oryginalnego pliku *web.config* , którego można użyć do przywrócenia konfiguracji aplikacji.
 
-### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Aby dodać zestaw ASPNetHelper jako element konfiguracja/środowisko wykonawcze/assemblyBinding/dependentAssembly
+### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Aby dodać zestaw ASPNetHelper jako element konfiguracji/środowiska uruchomieniowego/zestawubinding/dependentAssembly
 
-1. W razie potrzeby dodaj element **środowiska wykonawczego** jako element podrzędny elementu **konfiguracji;** w przeciwnym razie przejdź do następnego kroku.
+1. W razie potrzeby Dodaj element **Runtime** jako element podrzędny elementu **konfiguracji** ; w przeciwnym razie przejdź do następnego kroku.
 
-    Element **środowiska wykonawczego** nie ma żadnych atrybutów. Element **konfiguracji** może mieć tylko jeden element **podrzędny środowiska uruchomieniowego.**
+    Element **Runtime** nie ma żadnych atrybutów. Element **konfiguracji** może mieć tylko jeden element podrzędny **środowiska uruchomieniowego** .
 
-2. Jeśli to konieczne, dodaj **element assemblyBinding** jako element podrzędny elementu **środowiska wykonawczego;** w przeciwnym razie przejdź do następnego kroku.
+2. W razie potrzeby Dodaj element **assemblyBinding** jako element podrzędny elementu **Runtime** ; w przeciwnym razie przejdź do następnego kroku.
 
-    Element **środowiska wykonawczego** może mieć tylko jeden element **zestawuBinowanie.**
+    Element **Runtime** może mieć tylko jeden element **assemblyBinding** .
 
-3. Dodaj następującą nazwę atrybutu i wartość do **elementu zestawuBinowanie:**
+3. Dodaj następującą nazwę i wartość atrybutu do elementu **assemblyBinding** :
 
    | Nazwa atrybutu | Wartość atrybutu |
    |----------------|--------------------------------------|
-   | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
+   | **'Xmlns** | **urn: schematys-Microsoft-com: ASM. v1** |
 
-4. Dodaj **zależnyAszeby** element jako element podrzędny **elementu assemblyBinding.**
+4. Dodaj element **dependentAssembly** jako element podrzędny elementu **assemblyBinding** .
 
     Element **dependentAssembly** nie ma żadnych atrybutów.
 
-5. Dodaj **element assemblyIdentity** jako element podrzędny **elementu dependentAssembly.**
+5. Dodaj element **assemblyIdentity** jako obiekt podrzędny elementu **dependentAssembly** .
 
-6. Dodaj następujące nazwy atrybutów i wartości do **elementu assemblyIdentity:**
+6. Dodaj następujące nazwy atrybutów i wartości do elementu **assemblyIdentity** :
 
    | Nazwa atrybutu | Wartość atrybutu |
    |--------------------| - |
-   | **Nazwa** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
-   | **Publickeytoken** | **b03f5f7f11d50a3a** |
-   | **kultura** | **Neutral** |
+   | **Nazwij** | **Microsoft. VisualStudio. Enterprise. ASPNetHelper** |
+   | **PublicKeyToken** | **b03f5f7f11d50a3a** |
+   | **dziedzinie** | **Neutral** |
 
-7. Dodaj **element codeBase** jako element podrzędny **elementu dependentAssembly.**
+7. Dodaj element z bazą **kodu** jako element podrzędny elementu **dependentAssembly** .
 
-8. Dodaj następujące nazwy atrybutów i wartości do elementu **codeBase:**
+8. Dodaj następujące nazwy atrybutów i wartości do elementu **codebase** :
 
    |Nazwa atrybutu|Wartość atrybutu|
    |--------------------|---------------------|
    |**Wersja**|**10.0.0.0**|
-   |**Href**|`PathToASPNetHelperDll`|
+   |**Tag**|`PathToASPNetHelperDll`|
 
-    `PathToASPNetHelperDll`jest adresem URL pliku pliku Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany w lokalizacji domyślnej, wartość **href** powinna być`C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`
+    `PathToASPNetHelperDll`to adres URL pliku Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] program jest zainstalowany w domyślnej lokalizacji, wartość **href** powinna być`C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`
 
 ```xml
     <configuration>
@@ -95,21 +95,21 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
         </runtime>
 ```
 
-### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Aby dodać krok po procesie profilera do elementu configuration/system.web/compilation
+### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Aby dodać krok po procesie profilera do elementu Configuration/system. Web/compilation
 
-1. W razie potrzeby dodaj element **system.web** jako element podrzędny elementu **konfiguracji;** w przeciwnym razie przejdź do następnego kroku.
+1. W razie potrzeby Dodaj element **System. Web** jako element podrzędny elementu **konfiguracji** ; w przeciwnym razie przejdź do następnego kroku.
 
-     Element **system.web** nie ma atrybutów. Element **konfiguracji** może mieć tylko jeden **element podrzędny system.web.**
+     Element **System. Web** nie ma żadnych atrybutów. Element **konfiguracji** może mieć tylko jeden element podrzędny **System. Web** .
 
-2. W razie potrzeby dodaj element **kompilacji** jako element podrzędny elementu **system.web;** w przeciwnym razie przejdź do następnego kroku.
+2. W razie potrzeby Dodaj element **kompilacja** jako element podrzędny elementu **System. Web** ; w przeciwnym razie przejdź do następnego kroku.
 
-     Element **system.web** może mieć tylko jeden element **podrzędny kompilacji.**
+     Element **System. Web** może mieć tylko jeden element podrzędny **kompilacji** .
 
-3. Usuń wszystkie istniejące atrybuty z elementu **kompilacji** i dodaj następującą nazwę i wartość atrybutu:
+3. Usuń wszystkie istniejące atrybuty z elementu **compilation** i Dodaj następującą nazwę atrybutu i wartość:
 
     |Nazwa atrybutu|Wartość atrybutu|
     |--------------------|---------------------|
-    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|
+    |**assemblyPostProcessorType**|**Microsoft. VisualStudio. Enterprise. Common. AspPerformanceInstrumenter, Microsoft. VisualStudio. Enterprise. ASPNetHelper, Version = 10.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a**|
 
 ```xml
     <configuration>
@@ -127,31 +127,31 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
     <configuration>
 ```
 
-### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Aby dodać ustawienia lokalizacji profilera do elementu konfiguracja/appSettings
+### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Aby dodać ustawienia lokalizacji profilera do elementu Configuration/appSettings
 
-1. Jeśli to konieczne, dodaj **appSettings** element jako element podrzędny elementu **konfiguracji;** w przeciwnym razie przejdź do następnego kroku.
+1. W razie potrzeby Dodaj element **AppSettings** jako element podrzędny elementu **konfiguracji** ; w przeciwnym razie przejdź do następnego kroku.
 
-    **AppSettings** element nie ma atrybutów. Element **konfiguracji** może mieć tylko jeden **element podrzędny appSettings.**
+    Element **AppSettings** nie ma żadnych atrybutów. Element **konfiguracji** może mieć tylko jeden element podrzędny **AppSettings** .
 
-2. Dodaj element **add** jako element podrzędny elementu **appSettings.**
+2. Dodaj element **Add** jako element podrzędny elementu **AppSettings** .
 
-3. Dodaj następujące nazwy i wartości atrybutów do elementu **add:**
+3. Dodaj następujące nazwy atrybutów i wartości do elementu **Add** :
 
    | Nazwa atrybutu | Wartość atrybutu |
    |----------------| - |
-   | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
-   | **Wartość** | `PerformanceToolsFolder`**\VSInstr.Exe** |
+   | **głównych** | **Microsoft. VisualStudio. Enterprise. AspNetHelper. VsInstrLocation** |
+   | **wartościami** | `PerformanceToolsFolder`**\VSInstr.Exe** |
 
-4. Dodaj kolejny **element dodaj** jako element podrzędny **elementu appSettings.**
+4. Dodaj inny element **Add** jako element podrzędny elementu **AppSettings** .
 
-5. Dodaj następujące nazwy atrybutów i wartości do tego elementu **dodawania:**
+5. Dodaj następujące nazwy atrybutów i wartości do tego elementu **dodawania** :
 
    |Nazwa atrybutu|Wartość atrybutu|
    |--------------------|---------------------|
-   |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|
-   |**Wartość**|`PerformanceToolsFolder`|
+   |**głównych**|**Microsoft. VisualStudio. Enterprise. AspNetHelper. VsInstrTools**|
+   |**wartościami**|`PerformanceToolsFolder`|
 
-    `PerformanceToolsFolder`to ścieżka plików wykonywalnych profilera. Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+    `PerformanceToolsFolder`jest ścieżką do plików wykonywalnych profilera. Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ```xml
     <configuration>
@@ -175,7 +175,7 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
 ```
 
 ## <a name="example"></a>Przykład
- Poniżej znajduje się kompletny plik *web.config,* który umożliwia instrumentację [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] i profilowanie dynamicznie skompilowanych aplikacji sieci Web. W tym przykładzie przyjęto założenie, że nie było żadnych innych ustawień w pliku przed modyfikacją.
+ Poniżej znajduje się kompletny plik *web.config* , który umożliwia instrumentację i profilowanie dynamicznie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web. W tym przykładzie przyjęto założenie, że w pliku nie ma innych ustawień przed modyfikacją.
 
 ```xml
 <?xml version="1.0"?>
@@ -221,5 +221,5 @@ Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody inst
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Jak: Instrumentowanie dynamicznie skompilowanego ASP.NET aplikacji i zbieranie szczegółowych danych dotyczących chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
-- [Jak: Instrumentowanie dynamicznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
+- [Instrukcje: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Instrukcje: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

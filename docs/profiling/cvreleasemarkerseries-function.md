@@ -1,7 +1,7 @@
 ---
-title: Funkcja CvReleaseMarkerSeries | Dokumenty firmy Microsoft
+title: Funkcja CvReleaseMarkerSeries — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvReleaseMarkerSeries
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d100b7ff37ea5a3cd224fd420f14e4cb23061903
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84db5dac77fbbc51c9f1c0e24173dcc8ca1d68c1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62974146"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332197"
 ---
-# <a name="cvreleasemarkerseries-function"></a>Funkcja CvReleaseMarkerSeries
-Zwalnia serię znaczników. Nie należy używać obiektu serii znaczników po zwolnieniu w przeciwnym razie aplikacja może ulec awarii. Niepowodzenie zwolnienia serii znaczników powoduje przeciek pamięci.
+# <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries —, funkcja
+Zwalnia serię znaczników. Nie używaj obiektu serii znaczników po zwolnieniu w przeciwnym razie aplikacja może ulec awarii. Niepowodzenie zwolnienia serii znaczników powoduje przeciek pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,13 +31,13 @@ HRESULT CvReleaseMarkerSeries(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pMarkerSeries`Adres zmiennej obiektu dostawcy. Adres nie może być NULL, zmienna może mieć dowolną wartość.
+ `pMarkerSeries`Adres zmiennej obiektu dostawcy. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy seria znaczników zostanie pomyślnie wydana lub kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
+ S_OK, gdy seria znaczników zostanie pomyślnie wydana lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

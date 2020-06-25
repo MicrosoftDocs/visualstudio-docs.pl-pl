@@ -1,7 +1,7 @@
 ---
-title: Znak | Dokumenty firmy Microsoft
+title: Oznacz | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 1d72cef3-bb09-4bbb-8864-6ea0ab623ff9
 author: mikejo5000
 ms.author: mikejo
@@ -9,15 +9,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf89469c4137052247b5a1fdfee7f8dc694fbcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b3049a253dca37090d128748b71f278aa2f7e63
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773997"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330788"
 ---
 # <a name="mark"></a>Znacznik
-Opcja *VSPerfCmd.exe* **Mark** wstawia określone informacje do pliku danych profilowania. Oznaczyć może być wymieniony w osobnym raporcie VSPerfReport lub w widoku Mark Report interfejsu użytkownika profilera. **Znacznik** może służyć do określania punktów początkowych i końcowych w filtrach raportów i widoku.
+Opcja *VSPerfCmd.exe* **Oznacz**VSPerfCmd.exewstawia określone informacje do pliku danych profilowania. Znacznik może być wyświetlany w osobnym raporcie VSPerfReport lub w widoku raportu w interfejsie użytkownika profilera. **Znacznik** może służyć do określania punktów początkowych i końcowych w raportach i widokach filtrów.
 
  Opcja **Oznacz** musi być jedyną opcją określoną w wierszu polecenia.
 
@@ -28,12 +28,12 @@ VSPerfCmd.exe /Mark:MarkID,[MarkName]
 ```
 
 #### <a name="parameters"></a>Parametry
- `MarkID`Zdefiniowana przez użytkownika liczba całkowita wymieniona jako identyfikator znaku w widokach i raportach profilera. `MarkID`nie musi być wyjątkowy.
+ `MarkID`Zdefiniowana przez użytkownika liczba całkowita, która jest wyświetlana jako identyfikator znacznika w widokach i raportach profilera. `MarkID`nie musi być unikatowy.
 
- `MarkName`(Opcjonalnie) Ciąg zdefiniowany przez użytkownika, który jest wyświetlany jako Nazwa oznaczenia w widokach i raportach profilera. Jeśli `MarkName` nie zostanie określony, pole Oznacz nazwę listy znaczników jest puste. Łącz ciągi zawierające spacje lub ukośniki ("/") w cudzysłowie.
+ `MarkName`Obowiązkowe Zdefiniowany przez użytkownika ciąg, który jest wyświetlany jako nazwa znacznika w widokach i raportach profilera. Jeśli `MarkName` nie jest określony, pole nazwa znacznika listy znaczników jest puste. Ujmij ciągi zawierające spacje lub ukośniki ("/") w cudzysłowie.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie wstawia znacznik o identyfikatorze 123 i nazwę znaku "TestMark".
+ Ten przykład Wstawia znacznik o IDENTYFIKATORze 123 i nazwie znacznika "TestMark".
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
@@ -43,6 +43,6 @@ VSPerfCmd.exe /Mark:123,TestMark
 
 ## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Aplikacje autonomiczne profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET aplikacji internetowych](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

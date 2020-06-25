@@ -1,7 +1,7 @@
 ---
-title: Funkcja CvIsEnabled | Dokumenty firmy Microsoft
+title: Funkcja Cvisenabled — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvIsEnabledEx
 - cvmarkers/CvIsEnabled
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92763e352d04d5aa3e88a68bad7adfcd05897027
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62945417"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330063"
 ---
-# <a name="cvisenabled-function"></a>Funkcja CvIsEnabled
-Określa, czy którakolwiek z sesji włączyła określonego dostawcę ETW.
+# <a name="cvisenabled-function"></a>Cvisenabled —, funkcja
+Określa, czy dla każdej sesji włączono określonego dostawcę ETW.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,13 +42,13 @@ HRESULT CvIsEnabledEx(
 
  `level`Poziom ważności.
 
- `pProvider`Prawidłowy obiekt dostawcy. Nie może być null.
+ `pProvider`Prawidłowy obiekt dostawcy. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, jeśli dostawca jest obecnie włączony. S_FALSE, jeśli dostawca jest obecnie wyłączony. Kod błędu w przypadku wystąpienia błędów. Użyj makra FAILED, aby sprawdzić stan błędu, a następnie sprawdź, czy S_OK/S_FALSE.
+ S_OK, jeśli dostawca jest obecnie włączony. S_FALSE, jeśli dostawca jest obecnie wyłączony. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makra zakończonego niepowodzeniem, a następnie sprawdź, czy S_OK/S_FALSE.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

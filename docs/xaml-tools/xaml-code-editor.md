@@ -1,21 +1,22 @@
 ---
 title: Edytor kodu XAML
+description: Zapoznaj się z edytorem kodu XAML w programie Visual Studio
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290710"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329179"
 ---
 # <a name="xaml-code-editor"></a>Edytor kodu XAML
 
-Edytor kodu XAML w [środowisku IDE programu Visual Studio](../get-started/visual-studio-ide.md) zawiera wszystkie narzędzia potrzebne do tworzenia aplikacji WPF i platformy UWP dla platformy systemu Windows oraz dla programu [Xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/). W tym artykule opisano rolę, jaką pełni Edytor kodu podczas opracowywania aplikacji opartych na języku XAML i funkcji, które są unikatowe dla edytora kodu XAML w programie Visual Studio 2019.
+Edytor kodu XAML w [środowisku IDE programu Visual Studio](../get-started/visual-studio-ide.md) zawiera wszystkie narzędzia potrzebne do tworzenia aplikacji WPF i platformy UWP dla platformy systemu Windows oraz dla programu [Xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/). W tym artykule opisano rolę, jaką pełni Edytor kodu podczas tworzenia aplikacji opartych na języku XAML, oraz funkcje, które są unikatowe dla edytora kodu XAML w programie Visual Studio 2019.
 
 Aby rozpocząć, przyjrzyjmy się IDE (zintegrowane środowisko programistyczne) za pomocą otwartego projektu WPF. Na poniższej ilustracji przedstawiono kilka kluczowych narzędzi IDE, które będą używane razem z edytorem kodu XAML.
 
@@ -182,7 +183,7 @@ Większość z następujących funkcji jest ogólnie dostępna w środowisku IDE
 
 Fragmenty kodu to małe bloki kodu wielokrotnego użytku, które można wstawić do w pliku kodu za pomocą menu kontekstowego prawym przyciskiem myszy **Wstaw** wstawka lub kombinację skrótów klawiaturowych (**Ctrl** + **K**, **Ctrl** + **X**). Ulepszono funkcję [IntelliSense](../ide/using-intellisense.md) , która obsługuje wyświetlanie fragmentów kodu XAML, które działają dla obu wbudowanych fragmentów kodu oraz wszelkich wstawek niestandardowych, które można dodać ręcznie. Niektóre wbudowane fragmenty kodu XAML obejmują `#region` , `Column definition` , `Row definition` ,, `Setter` i `Tag` .
 
-![Edytor kodu XAML z opcjami #region wyświetlanymi w IntelliSense](media/xaml-code-snippets.png "Zrzut ekranu edytora kodu XAML z opcjami #region wyświetlanymi w IntelliSense")
+![Edytor kodu XAML z opcjami fragmentów kodu XAML wyświetlanymi w IntelliSense](media/xaml-code-snippets.png "Zrzut ekranu edytora kodu XAML z opcjami fragmentów kodu XAML wyświetlanymi w IntelliSense")
 
 Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md) i strony [fragmentów kodu w języku C#](../ide/visual-csharp-code-snippets.md) .
 

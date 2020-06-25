@@ -1,7 +1,7 @@
 ---
-title: 'Jak: Określ dodatkowe opcje oprzyrządowania | Dokumenty firmy Microsoft'
+title: Jak określić dodatkowe opcje Instrumentacji | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.advanced
 helpviewer_keywords:
@@ -14,33 +14,33 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8390c4aab0624aa59f62397e0b41bcbcc1c80cdd
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778703"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331987"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Instrukcje: określanie dodatkowych opcji instrumentacji
 
-Można instruować pliki binarne z korzystania z programu Visual Studio IDE lub za pomocą narzędzi wiersza polecenia. Jeśli instrumentajne z poziomu IDE, można kontrolować objętość danych, które są zbierane podczas instrumentacji, określając dodatkowe opcje instrumentacji do narzędzia [VSInstr.](../profiling/vsinstr.md) Te opcje są dostępne na poziomie sesji lub na poziomie docelowym. Na przykład, aby uwzględnić lub wykluczyć określone funkcje podczas procesu instrumentacji, użyj opcji dodatkowego instrumentacji na poziomie docelowym.
+Pliki binarne można instrumentować za pomocą środowiska IDE programu Visual Studio lub za pomocą narzędzi wiersza polecenia. W przypadku Instrumentacji pliku binarnego z poziomu IDE można kontrolować ilość danych zbieranych w ramach usługi Instrumentation, określając dodatkowe opcje Instrumentacji dla narzędzia [VSInstr](../profiling/vsinstr.md) . Te opcje są dostępne w sesji lub na poziomie docelowym. Na przykład aby dołączyć lub wykluczyć określone funkcje podczas procesu instrumentacji, użyj opcji dodatkowe Instrumentacja na poziomie docelowym.
 
 > [!IMPORTANT]
-> Każda wstawiona sonda nieznacznie modyfikuje zachowanie oryginalnego programu. Ta modyfikacja powoduje obciążenie w czasie analizy. Mimo że przybliżenie tego obciążenia jest odejmowane, nadal ma subtelne efekty czasowe dla aplikacji wielowątkowych. Opcje narzędzia [VSInstr](../profiling/vsinstr.md) pomagają kontrolować zbieranie danych podczas profilowania.
+> Każda sonda, która jest wstawiana modyfikuje zachowanie oryginalnego programu. Ta modyfikacja powoduje obciążenie w czasie analizy. Nawet w przypadku odejmowania zbliżania się tego kosztu, nadal ma delikatne efekty chronometrażu w aplikacjach wielowątkowych. Opcje narzędzia [VSInstr](../profiling/vsinstr.md) ułatwiają kontrolowanie zbierania danych podczas profilowania.
 
-## <a name="to-specify-additional-instrumentation-option"></a>Aby określić opcję dodatkowego oprzyrządowania
+## <a name="to-specify-additional-instrumentation-option"></a>Aby określić dodatkową instrumentację
 
-1. W **Eksploratorze wydajności**wybierz **pozycję Sesja wydajności,** a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
+1. W **Eksplorator wydajności**wybierz **sesję wydajności** , a następnie kliknij prawym przyciskiem myszy i wybierz pozycję **Właściwości**.
 
-2. Na **stronach Właściwości**kliknij właściwości **Zaawansowane.**
+2. Na **stronie właściwości**kliknij pozycję **Zaawansowane** właściwości.
 
-3. Opcje wpisywać w polu **Opcje oprzyrządowania dodatkowe.**
+3. Wpisz opcje w polu **dodatkowe opcje Instrumentacji** .
 
-     Na przykład użyj /CONTROL:THREAD, aby określić poziom profilowania. Aby uzyskać pełną listę opcji, zobacz [VSInstr](../profiling/vsinstr.md).
+     Na przykład użyj/CONTROL: THREAD, aby określić poziom profilowania. Aby uzyskać pełną listę opcji, zobacz [VSInstr](../profiling/vsinstr.md).
 
 4. Kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Konfigurowanie](../profiling/configuring-performance-sessions.md)
-profilu sesji wydajności[z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md) 
+ [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

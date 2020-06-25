@@ -1,7 +1,7 @@
 ---
-title: WaitStart | Dokumenty firmy Microsoft
+title: WaitStart | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
 author: mikejo5000
 ms.author: mikejo
@@ -9,17 +9,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbabcf86afa9770f1616c7e4e508af1c9afa1ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b42936d9d87ad80b48b7fdc71cdf0fd3fa965af2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779860"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329893"
 ---
 # <a name="waitstart"></a>WaitStart
-Opcja WaitStart powoduje, że polecenie *podrzędne programu VSPerfCmd.exe* Start zwraca się tylko wtedy, gdy profiler zainicjował lub po upływie określonej liczby sekund. Domyślnie polecenie Start zwraca natychmiast. Jeśli polecenie Rozpocznij polecenie podrzędne zwraca bez inicjowania profilera, zwracany jest błąd. Jeśli liczba sekund nie jest określona, polecenie Start czeka przez czas nieokreślony.
+Opcja WaitStart powoduje, że podpolecenie *VSPerfCmd.exe* Uruchom podpolecenia do zwrócenia tylko po zainicjowaniu profilera lub upływie określonej liczby sekund. Domyślnie polecenie Uruchom zwraca natychmiast. Jeśli polecenie Start sub zwróci wartość bez inicjowania profilera, zwracany jest błąd. Jeśli liczba sekund nie zostanie określona, polecenie uruchamiania czeka na czas nieokreślony.
 
- WaitStart Opcja jest przydatna w plikach wsadowych, aby zapewnić, że profiler został zainicjowany.
+ Opcja WaitStart jest przydatna w plikach wsadowych, aby upewnić się, że profiler został zainicjowany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,17 +28,17 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /WaitStart[:Seconds]
 ```
 
 #### <a name="parameters"></a>Parametry
- `Seconds`Liczba sekund oczekiwania przed zwróceniem z polecenia startowego.
+ `Seconds`Liczba sekund oczekiwania przed powrocie z polecenia Start sub.
 
 ## <a name="required-options"></a>Wymagane opcje
- Opcji WaitStart można używać tylko z poleceniem podrzędnym Start.
+ Opcji WaitStart można użyć tylko z poleceniem Start sub.
 
  **Dane wyjściowe:** `filename` Określa nazwę pliku wyjściowego.
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="example"></a>Przykład
- W tym przykładzie pliku wsadowego polecenie Start będzie czekać przez 5 sekund na zainicjowanie profilera.
+ W tym przykładzie pliku wsadowego polecenie uruchamiania czeka 5 sekund na zainicjowanie profilera.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WaitStart:5

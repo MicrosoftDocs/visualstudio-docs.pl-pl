@@ -1,7 +1,7 @@
 ---
-title: 'VSPerfCmd: Pobierz dane chronometrażu dla ASP.NET aplikacji internetowej za pomocą instrumentacji'
+title: VSPerfCmd — uzyskiwanie danych o chronometrażu dla aplikacji sieci Web ASP.NET przy użyciu instrumentacji
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling tools,instrumentation method
 - instrumentation profiling method
@@ -12,42 +12,42 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: d764ef32cdcb061992817d433dabb6ae61b64fd9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55f682152731391bdb0d4c0de0a307c00c16e2c7
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779652"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331839"
 ---
-# <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Zbieranie szczegółowych danych chronometrażu dla aplikacji sieci web ASP.NET przy użyciu metody instrumentacji profilera z wiersza polecenia
-W tej sekcji opisano procedury i opcje [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] zbierania szczegółowych danych o wydajności aplikacji sieci Web przy użyciu narzędzia wiersza polecenia **VSPerfCmd** i metody instrumentacji.
+# <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla aplikacji sieci Web ASP.NET przy użyciu metody instrumentacji profilera z wiersza polecenia
+W tej sekcji opisano procedury i opcje dotyczące zbierania szczegółowych danych dotyczących wydajności [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web przy użyciu narzędzia wiersza polecenia **VSPerfCmd** oraz metody instrumentacji.
 
 > [!NOTE]
-> Narzędzie **VSPerfCmd** zapewnia pełny dostęp do funkcji narzędzi profilowania, w tym wstrzymywania i wznawiania profilowania oraz zbierania dodatkowych danych z liczników wydajności procesora i systemu Windows. Narzędzia wiersza polecenia **VSPerfASPNETCMD** można również użyć, gdy nie jest to potrzebne. W porównaniu do narzędzia wiersza polecenia [VSPerfCmd](../profiling/vsperfcmd.md) nie trzeba ustawiać żadnych zmiennych środowiskowych, a ponowne uruchomienie komputera nie jest wymagane. Aby uzyskać więcej informacji, zobacz [Szybkie profilowanie witryny sieci Web za pomocą programu VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+> Narzędzie **VSPerfCmd** zapewnia pełny dostęp do funkcji narzędzia profilowania, w tym Wstrzymywanie i wznawianie profilowania oraz gromadzenie dodatkowych danych z liczników wydajności procesora i systemu Windows. Możesz również użyć narzędzia wiersza polecenia **VSPerfASPNETCmd** , gdy ta funkcja nie jest potrzebna. W porównaniu do narzędzia wiersza polecenia [VSPerfCmd](../profiling/vsperfcmd.md) nie trzeba ustawiać żadnych zmiennych środowiskowych ani ponownie uruchamiać komputera. Aby uzyskać więcej informacji, zobacz [szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
 
 ## <a name="common-tasks"></a>Typowe zadania
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profile skompilowane statycznie pliki binarne**|-   [Jak: Przyrządzowanie statycznie skompilowanego ASP.NET aplikacji i zbieranie szczegółowych danych dotyczących chronometrażu](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|
-|**Profil dynamicznie skompilowane pliki binarne**|-   [Jak: Instrumentowanie dynamicznie skompilowanego ASP.NET aplikacji i zbieranie szczegółowych danych dotyczących chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|
+|**Profilowanie skompilowanych statycznie plików binarnych**|-   [Instrukcje: Instrumentacja statycznie skompilowanej aplikacji ASP.NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|
+|**Dynamicznie skompilowane pliki binarne profilu**|-   [Instrukcje: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|
 
 ## <a name="related-tasks"></a>Zadania powiązane
 
-### <a name="profile-aspnet-web-applications"></a>Profil ASP.NET aplikacji internetowych
+### <a name="profile-aspnet-web-applications"></a>Profilowanie aplikacji sieci Web ASP.NET
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profil przy użyciu metody pobierania próbek**|-   [Zbieranie statystyk aplikacji przy użyciu próbkowania](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
+|**Profilowanie przy użyciu metody próbkowania**|-   [Zbieranie statystyk aplikacji przy użyciu próbkowania](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Alokacja pamięci profilu i wyrzucanie elementów bezużytecznych**|-   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
-|**Rywalizacja o zasoby profilu i działanie wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
+|**Profilowanie zasobów i aktywność wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
 
-### <a name="profile-by-using-the-instrumentation-method"></a>Profil przy użyciu metody oprzyrządowania
+### <a name="profile-by-using-the-instrumentation-method"></a>Profilowanie przy użyciu metody instrumentacji
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Aplikacje autonomiczne profilu**|-   [Zbieranie szczegółowych danych dotyczących chronometrażu za pomocą oprzyrządowania](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
-|**Usługi profilowania**|-   [Zbieranie szczegółowych danych dotyczących chronometrażu za pomocą oprzyrządowania](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
+|**Samodzielne Profilowanie aplikacji (klienta)**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
+|**Usługi profilu**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
 
-### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizowanie widoków i raportów danych o instrumentacji
+### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizowanie widoków i raportów danych Instrumentacji
 - [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)

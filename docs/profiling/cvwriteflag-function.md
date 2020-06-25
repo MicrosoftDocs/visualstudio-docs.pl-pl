@@ -1,7 +1,7 @@
 ---
-title: Funkcja CvWriteFlag | Dokumenty firmy Microsoft
+title: Funkcja CvWriteFlag | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvWriteFlagExVA
 - cvmarkers/CvWriteFlagExW
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 396edc736f61ae76aab7263bcd15bb0bfad13204
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62936683"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332152"
 ---
-# <a name="cvwriteflag-function"></a>Funkcja CvWriteFlag
-Zapisuje flagę do pliku śledzenia wizualizatora współbieżności.
+# <a name="cvwriteflag-function"></a>CvWriteFlag, funkcja
+Zapisuje flagę w pliku śledzenia Concurrency Visualizer.
 
 ## <a name="syntax"></a>Składnia
 
@@ -69,19 +69,19 @@ HRESULT CvWriteFlagExVA(
 
  `level`Poziom ważności.
 
- `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może być null.
+ `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.
 
- `pMessage`Ciąg formatu wiadomości. Nie może być null.
+ `pMessage`Ciąg formatu komunikatu. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy wiadomość zostanie pomyślnie napisana. Kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
+ S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
  **Unicode:** CvWriteFlagExW, CvWriteFlagExVW
 
  <strong>ANSI:</strong> CvWriteFlagExA, CvWriteFlagExVA
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

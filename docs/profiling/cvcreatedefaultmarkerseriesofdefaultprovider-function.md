@@ -1,7 +1,7 @@
 ---
-title: Funkcja cvCreateDefaultMarkerSeriesOfDefaultProvider | Dokumenty firmy Microsoft
+title: Funkcja Cvcreatedefaultmarkerseriesofdefaultprovider — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a13174b2991b7c69535a6d1910f761890397818
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 560ecc3d66dc2bc84d2ef301654b392aee6a42b4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552697"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332226"
 ---
-# <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Funkcja CvCreateDefaultMarkerSeriesOfDefaultProvider
+# <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Cvcreatedefaultmarkerseriesofdefaultprovider —, funkcja
 Tworzy domyślną serię znaczników domyślnego dostawcy.
 
 ## <a name="syntax"></a>Składnia
@@ -32,15 +32,15 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 ```
 
 #### <a name="parameters"></a>Parametry
- `ppProvider`Adres zmiennej obiektu dostawcy. Adres nie może być NULL, zmienna może mieć dowolną wartość.
+ `ppProvider`Adres zmiennej obiektu dostawcy. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
 
- `ppMarkerSeries`Adres zmiennej obiektu serii znaczników. Adres nie może być NULL, zmienna może mieć dowolną wartość.
+ `ppMarkerSeries`Adres zmiennej obiektu serii znaczników. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy pomyślnie utworzone są zarówno seria dostawcy, jak i znacznika lub kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
+ S_OK, gdy zarówno dostawca, jak i seria znaczników zostały pomyślnie utworzone lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

@@ -1,7 +1,7 @@
 ---
-title: Funkcja cvreleaseprovider | Dokumenty firmy Microsoft
+title: Funkcja Cvreleaseprovider — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvReleaseProvider
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0008b7476290558c098b2241fde5c9b209933a0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0347d3e2345defb13a67e0e0d730e010be618a21
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62974049"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332176"
 ---
-# <a name="cvreleaseprovider-function"></a>Funkcja CvReleaseProvider
-Zwalnia dostawcę znaczników. Zwolnienie dostawcy znaczników nie wpłynie na poprzednio utworzoną serię znaczników tego dostawcy. Seria markerów musi być wydana oddzielnie przez wywołanie CvReleaseMarkerSeries. Niepowodzenie wydania dostawcy powoduje przeciek pamięci.
+# <a name="cvreleaseprovider-function"></a>Cvreleaseprovider —, funkcja
+Dostawca znaczników wydań. Zwolnienie dostawcy znaczników nie będzie miało wpływu na wcześniej utworzoną serię znaczników tego dostawcy. Seria znaczników musi być wykorzystana oddzielnie przez wywołanie CvReleaseMarkerSeries —. Niepowodzenie zwolnienia dostawcy powoduje przeciek pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,13 +31,13 @@ HRESULT CvReleaseProvider(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pProvider`Kontekst dostawcy. Nie może być null.
+ `pProvider`Kontekst dostawcy. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy dostawca został pomyślnie zwolniony lub kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
+ S_OK, gdy dostawca został pomyślnie wydzierżawiony lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

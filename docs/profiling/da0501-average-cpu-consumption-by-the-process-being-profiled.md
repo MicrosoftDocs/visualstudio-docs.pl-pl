@@ -1,7 +1,7 @@
 ---
-title: 'DA0501: Średnie wykorzystanie CPU przez proces poddawany profilowaniu. | Microsoft Docs'
+title: DA0501 — średnie użycie procesora przez profilowany proces. | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0501
 - vs.performance.DA0501
@@ -13,27 +13,27 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d9835ad1965d1fd9a31113117eeb07ed62fd8ec4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27537175b1df4a9b6d9ba10edf8257c71057c7df
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777466"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332324"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Średnie zużycie procesora cpu przez proces profilowany.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: średnie użycie procesora przez profilowany proces.
 
 |||
 |-|-|
-|Identyfikator reguły|Da501|
+|Identyfikator reguły|DA501|
 |Kategoria|Monitorowanie zasobów|
-|Metoda profilowania|Wszystkie|
+|Metoda profilowania|Wszystko|
 |Komunikat|Średnie użycie procesora przez profilowany proces|
 |Typ reguły|Informacje|
 
- Podczas profilowania przy użyciu próbkowania, .NET pamięci lub metody rywalizacji o zasoby, należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="rule-description"></a>Opis reguły
- Ten komunikat informuje procent czasu, przez który procesor był zajęty wykonywaniem instrukcji z aplikacji. Zgłoszona wartość jest średnią we wszystkich interwałach pomiaru, w których profilowany proces był aktywny. Wartość wartości może być większa niż 100% na komputerze z więcej niż jednym procesorem.
+ Ten komunikat przedstawia wartość procentową czasu, przez który procesor był zajęty wykonywaniem instrukcji z aplikacji. Raportowana wartość jest wartością średnią dla wszystkich interwałów pomiarowych, w przypadku których proces profilowany jest aktywny. Wartość może być większa niż 100% na komputerze z więcej niż jednym procesorem.
 
-## <a name="how-to-use-rule-data"></a>Jak korzystać z danych reguły
+## <a name="how-to-use-rule-data"></a>Jak używać danych reguł
  Użyj wartości reguły, aby porównać wydajność różnych wersji lub kompilacji programu lub zrozumieć wydajność aplikacji w różnych scenariuszach testowych.

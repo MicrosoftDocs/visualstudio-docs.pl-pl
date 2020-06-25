@@ -1,7 +1,7 @@
 ---
-title: 'DA0005: Częste kolekcje GC2 | Dokumenty firmy Microsoft'
+title: DA0005 — częste kolekcje odzyskiwanie pamięci GC2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0005
 - vs.performance.rules.DAManyGC2Collections
@@ -14,34 +14,34 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a50567a101d77ed6498aaae13a5fe5556d9c1056
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 946e35c2ee04787d2f36bacd9011567e571d100d
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777715"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330535"
 ---
-# <a name="da0005-frequent-gc2-collections"></a>DA0005: Częste kolekcje GC2
+# <a name="da0005-frequent-gc2-collections"></a>DA0005: Częste odzyskiwanie pamięci GC2
 
 |||
 |-|-|
-|Ruleid|DA0005|
-|Kategoria|Użycie programu .NET Framework|
-|Metoda profilowania|Pamięć .NET|
-|Komunikat|Wiele obiektów są zbierane w generacji 2 wyrzucania elementów bezużytecznych.|
+|RuleId|DA0005|
+|Kategoria|Użycie .NET Framework|
+|Metoda profilowania|Pamięć platformy .NET|
+|Komunikat|Wiele obiektów jest zbieranych w wyrzucaniu elementów bezużytecznych generacji 2.|
 |Typ wiadomości|Ostrzeżenie|
 
 ## <a name="cause"></a>Przyczyna
- Duża liczba obiektów pamięci .NET są odzyskiwane w generacji 2 wyrzucania elementów bezużytecznych.
+ W wyrzucaniu elementów bezużytecznych generacji 2 są odzyskiwane duże ilości obiektów pamięci platformy .NET.
 
 ## <a name="rule-description"></a>Opis reguły
- Środowisko wykonawcze języka wspólnego microsoft .NET (CLR) zapewnia mechanizm automatycznego zarządzania pamięcią, który używa modułu zbierającego elementy bezużyteczne do odzyskiwania pamięci z obiektów, które aplikacja nie jest już używana. Moduł zbierający elementy bezużyteczne jest zorientowany na generowanie, przy założeniu, że wiele alokacji są krótkotrwałe. Zmienne lokalne, na przykład, powinny być krótkotrwałe. Nowo utworzone obiekty rozpoczynają się w generacji 0 (gen 0), a następnie przechodzą do generacji 1, gdy przetrwają uruchomienie wyrzucania elementów bezużytecznych, a na koniec przejście do generacji 2, jeśli aplikacja nadal ich używa.
+ Microsoft .NET środowisko uruchomieniowe języka wspólnego (CLR) zapewnia automatyczny mechanizm zarządzania pamięcią, który używa modułu wyrzucania elementów bezużytecznych do odzyskiwania pamięci z obiektów, które nie są już używane przez aplikację. Moduł wyrzucania elementów bezużytecznych jest oparty na generacji, w oparciu o założenie, że wiele alokacji jest krótkoterminowych. Zmienne lokalne, na przykład, powinny być krótkotrwałe. Nowo utworzone obiekty rozpoczynają się w generacji 0 (Gen 0), a następnie postępować w generacji 1, gdy zajmują się uruchomieniem odzyskiwania pamięci, a wreszcie przechodzą do generacji 2, jeśli aplikacja nadal używa tych danych.
 
- Obiekty w generacji 0 są zbierane często i zwykle bardzo sprawnie. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajnie. Wreszcie, długowieczne obiekty w generacji 2 powinny być zbierane jeszcze rzadziej. Kolekcja generacji 2, która jest pełną operacją wyrzucania elementów bezużytecznych, jest również najdroższą operacją.
+ Obiekty w generacji 0 są zbierane często i zwykle bardzo wydajnie. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajne. Na koniec obiekty długotrwałe w generacji 2 powinny być zbierane nawet rzadziej. Kolekcja 2 generacji, która jest pełnym przebiegiem odzyskiwania pamięci, jest również najtańszą operacją.
 
- Ta reguła jest uruchamiana, gdy proporcjonalnie wystąpiło zbyt wiele wyrzucania elementów bezużytecznych generacji 2. Jeśli zbyt wiele stosunkowo krótkotrwałe obiekty przetrwać kolekcji generacji 1, ale są następnie w stanie być zbierane w generacji 2 pełnej kolekcji, koszt zarządzania pamięcią może łatwo stać się nadmierne. Aby uzyskać więcej informacji, zobacz [mid-life post kryzysu](https://blogs.msdn.microsoft.com/ricom/2003/12/04/mid-life-crisis/) na Rico Mariani's Performance Tidbits na stronie internetowej MSDN.
+ Ta reguła jest wyzwalana, gdy wystąpiło zbyt wiele kolekcji elementów bezużytecznych generacji 2. Jeśli zbyt wiele stosunkowo krótkotrwałych obiektów przeżyje kolekcję 1, ale można je zebrać w pełnej kolekcji generacji 2, koszty zarządzania pamięcią mogą być łatwo nadmierne. Aby uzyskać więcej informacji, zapoznaj się z wpisem [kryzysowym](https://blogs.msdn.microsoft.com/ricom/2003/12/04/mid-life-crisis/) w systemie Mariani w witrynie MSDN w sieci Web.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
- Przejrzyj raporty [widoki danych pamięci .NET,](../profiling/dotnet-memory-data-views.md) aby zrozumieć wzorzec alokacji pamięci aplikacji. Użyj [widoku okres istnienia obiektu,](../profiling/object-lifetime-view.md) aby określić, które z obiektów danych programu są przeżywane do generacji 2, a następnie są odzyskiwane stamtąd. Użyj [widoku alokacji,](../profiling/dotnet-memory-allocations-view.md) aby określić ścieżkę wykonywania, która spowodowała te alokacje.
+ Przejrzyj raporty dotyczące [widoków danych pamięci .NET](../profiling/dotnet-memory-data-views.md) , aby zrozumieć wzorzec alokacji pamięci aplikacji. [Widok okres istnienia obiektu](../profiling/object-lifetime-view.md) służy do określania, które obiekty danych programu są przejmowane do generacji 2, a następnie odzyskiwane z tego miejsca. [Widok alokacje](../profiling/dotnet-memory-allocations-view.md) służy do określania ścieżki wykonywania, która spowodowała te przydziały.
 
- Aby uzyskać informacje dotyczące zwiększania wydajności wyrzucania elementów [bezużytecznych, zobacz Podstawowe informacje o modułach zbierających elementy bezużyteczne i wskazówki dotyczące wydajności](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) w witrynie firmy Microsoft w sieci Web. Aby uzyskać informacje na temat narzutu automatycznego wyrzucania elementów [bezużytecznych, zobacz Sterta dużych obiektów odkryta](https://msdn.microsoft.com/magazine/cc534993.aspx).
+ Aby uzyskać informacje na temat zwiększania wydajności odzyskiwania pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje o obciążeniu automatycznego odzyskiwania pamięci, zapoznaj się z [pokrytym stertą dużego obiektu](https://msdn.microsoft.com/magazine/cc534993.aspx).

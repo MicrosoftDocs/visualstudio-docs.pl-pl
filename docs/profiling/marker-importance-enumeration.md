@@ -1,26 +1,26 @@
 ---
-title: Marker_importance Wyliczenie | Dokumenty firmy Microsoft
+title: Wyliczenie marker_importance | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
-- cvmarkersobj/Concurrency::diagnostic::marker_importance
+- cvmarkersobj/Concurrency, diagnostic::marker_importance
 helpviewer_keywords:
-- Concurrency::diagnostic::marker_importance enumeration
+- Concurrency, diagnostic::marker_importance enumeration
 ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f5cfb583ec4fceb9fb7428b08c00f6ca8e26b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d67a1806034d55147379626b6eb4f868532e4d77
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62999960"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330741"
 ---
-# <a name="marker_importance-enumeration"></a>marker_importance wyliczenie
-Reprezentuje poziom ważności znacznika wizualizatora współbieżności.
+# <a name="marker_importance-enumeration"></a>marker_importance, Wyliczenie
+Reprezentuje poziom ważności znacznika Concurrency Visualizer.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,15 +34,15 @@ enum marker_importance;
 
 |Nazwa|Opis|
 |----------|-----------------|
-|`critical_importance`|Określa, że znacznik ma kluczowe znaczenie.|
-|`high_importance`|Określa, że znacznik ma duże znaczenie.|
-|`low_importance`|Określa, że znacznik ma niskie znaczenie.|
+|`critical_importance`|Określa, że znacznik ma krytyczne znaczenie.|
+|`high_importance`|Określa, że znacznik ma wysoką ważność.|
+|`low_importance`|Określa, że znacznik ma niską ważność.|
 |`normal_importance`|Określa, że znacznik ma normalne znaczenie.|
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkersobj.h*
+ **Nagłówek:** *cvmarkersobj. h*
 
- **Obszar nazw:** Współbieżność::dignostyk
+ **Przestrzeń nazw:** Współbieżność::d przesła
 
 ## <a name="see-also"></a>Zobacz też
-- [diagnostyczna przestrzeń nazw](../profiling/diagnostic-namespace.md)
+- [Przestrzeń nazw diagnostyki](../profiling/diagnostic-namespace.md)

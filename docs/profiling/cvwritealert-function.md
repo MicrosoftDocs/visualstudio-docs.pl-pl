@@ -1,7 +1,7 @@
 ---
-title: Funkcja CvWriteAlert | Dokumenty firmy Microsoft
+title: Funkcja CvWriteAlert | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvWriteAlertVA
 - cvmarkers/CvWriteAlertVW
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7cc2316168d14c6c996c4d55065771c85ffdfc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62989771"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332168"
 ---
-# <a name="cvwritealert-function"></a>Funkcja CvWriteAlert
-Zapisuje alert do pliku śledzenia wizualizatora współbieżności.
+# <a name="cvwritealert-function"></a>CvWriteAlert, funkcja
+Zapisuje alert do pliku śledzenia Concurrency Visualizer.
 
 ## <a name="syntax"></a>Składnia
 
@@ -57,19 +57,19 @@ HRESULT CvWriteAlertVA(
 #### <a name="parameters"></a>Parametry
  `argList`Lista argumentów.
 
- `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może być null.
+ `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.
 
- `pMessage`Ciąg formatu wiadomości. Nie może być null.
+ `pMessage`Ciąg formatu komunikatu. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy wiadomość zostanie pomyślnie napisana. Kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
+ S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
  **Unicode:** CvWriteAlertW, CvWriteAlertVW
 
  **ANSI:** CvWriteAlertA, CvWriteAlertVA
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

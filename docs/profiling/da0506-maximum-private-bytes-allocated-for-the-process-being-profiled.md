@@ -1,7 +1,7 @@
 ---
-title: 'DA0506: Maksymalna liczba bajtów prywatnych przydzielonych do profilowanego procesu | Dokumenty firmy Microsoft'
+title: DA0506 — Maksymalna liczba bajtów prywatnych przydzielono dla profilowanego procesu | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0506
 - vs.performance.DA0506
@@ -13,37 +13,37 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7600e65beb3035fac6d5ea58b25f6965d681f83a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 46215f44cad7b6125af4aa34cf42e58dbad3771f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779314"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330265"
 ---
-# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Maksymalne bajty prywatne przydzielone dla procesu poddawanego profilowaniu
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Maksymalna liczba bajtów prywatnych przydzielonych dla profilowanego procesu
 
 |||
 |-|-|
 |Identyfikator reguły|DA0506|
 |Kategoria|Monitorowanie zasobów|
-|Metoda profilowania|Wszystkie|
-|Komunikat|Informacje te zostały zebrane wyłącznie w celu uzyskania informacji. Licznik Bajtów prywatnych proces mierzy pamięć wirtualną przydzieloną przez proces profilowania. Zgłoszona wartość jest maksymalną obserwowaną we wszystkich odstępach czasu pomiaru.|
+|Metoda profilowania|Wszystko|
+|Komunikat|Te informacje zostały zebrane tylko w celu uzyskania informacji. Licznik bajtów prywatnych procesu mierzy pamięć wirtualną przydzieloną przez proces profilowania. Raportowana wartość jest maksimum zaobserwowane we wszystkich interwałach pomiarowych.|
 |Typ reguły|Informacje|
 
- Podczas profilowania przy użyciu próbkowania, .NET pamięci lub metody rywalizacji o zasoby, należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="rule-description"></a>Opis reguły
- Ten komunikat informuje o maksymalnej ilości pamięci wirtualnej, która jest obecnie alokowana w bajtach (bajtach prywatnych). Bajty prywatne reprezentuje lokalizacje pamięci wirtualnej, które zostały przydzielone przez proces, który jest dostępny tylko przez wątki uruchomione wewnątrz procesu.
+ Ten komunikat przedstawia maksymalną ilość pamięci wirtualnej, która jest aktualnie przypisana w bajtach (bajty prywatne). Bajty prywatne reprezentują lokalizacje pamięci wirtualnej, które zostały przydzielone przez proces, do którego można uzyskać dostęp tylko przez wątki działające w procesie.
 
- W przypadku procesów 32-bitowych uruchomionych na komputerze 32-bitowym górna granica prywatnej części przestrzeni adresowej procesu wynosi 2 GB. Za pomocą przełącznika Boot.ini [/3 GB,](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) 32-bitowe procesy mogą uzyskać do 3 GB pamięci wirtualnej. Proces 32-bitowy uruchomiony na komputerze 64-bitowym może uzyskać do 4 GB prywatnej pamięci wirtualnej.
+ W przypadku procesów 32-bitowych uruchomionych na komputerze 32-bitowym górny limit prywatnej części przestrzeni adresowej procesu wynosi 2 GB. Korzystając z przełącznika [/3 gb](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) Boot.ini, procesy 32-bitowe mogą uzyskać do 3 GB pamięci wirtualnej. Proces 32-bitowy, który jest uruchomiony na komputerze 64-bitowym, może uzyskać do 4 GB prywatnej pamięci wirtualnej.
 
- Proces 64-bitowy uruchomiony na komputerze 64-bitowym może uzyskać do 8 TB prywatnej pamięci wirtualnej.
+ Proces 64-bitowy, który jest uruchomiony na komputerze 64-bitowym, może uzyskać do 8 TB prywatnej pamięci wirtualnej.
 
- Zgłoszona wartość jest maksymalna we wszystkich interwałach pomiaru, w których profilowany proces był aktywny.
+ Raportowana wartość jest wartością maksymalną dla wszystkich interwałów pomiarowych, w przypadku których proces profilowany był aktywny.
 
- Aby uzyskać więcej informacji na temat przestrzeni adresowych procesu, zobacz [Wirtualna przestrzeń adresowa](/windows/win32/memory/virtual-address-space) w dokumentacji zarządzania pamięcią systemu Windows.
+ Aby uzyskać więcej informacji na temat przestrzeni adresów procesów, zobacz [wirtualna przestrzeń adresowa](/windows/win32/memory/virtual-address-space) w dokumentacji zarządzania pamięcią systemu Windows.
 
-## <a name="how-to-use-rule-data"></a>Jak korzystać z danych reguły
- Użyj zgłoszonej wartości, aby porównać wydajność różnych wersji lub kompilacji programu lub zrozumieć wydajność aplikacji w różnych scenariuszach profilowania.
+## <a name="how-to-use-rule-data"></a>Jak używać danych reguł
+ Wartość raportowana służy do porównywania wydajności różnych wersji lub kompilacji programu lub do zrozumienia wydajności aplikacji w różnych scenariuszach profilowania.
 
- Maksymalna wartość bajtów prywatnych procesu, która zbliża się do granicy architektury, jak duża przestrzeń adresowa procesu może rosnąć może prowadzić do wyjątków poza pamięcią. Aby uzyskać więcej informacji, zobacz [Badanie problemów z pamięcią](https://msdn.microsoft.com/magazine/cc163528.aspx) w magazynie MSDN.
+ Maksymalna wartość bajtów prywatnych procesów, która zbliża się do limitu architektury przestrzeni adresowej procesu może zwiększyć się do wyjątków pamięci. Aby uzyskać więcej informacji, zobacz temat [Badanie problemów z pamięcią](https://msdn.microsoft.com/magazine/cc163528.aspx) w magazynie MSDN.

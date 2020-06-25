@@ -1,7 +1,7 @@
 ---
-title: VSPerfMon | Dokumenty firmy Microsoft
+title: VSPerfMon | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSPerfMon tool
 - command line, tools
@@ -17,15 +17,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50519554f7ec71e277dc776b05bc2967c1071f52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee2423f552c6931b0c8b62181dc44186053c9460
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779899"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329975"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
-Za pomocą narzędzia VSPerfMon można zbierać dane dotyczące wydajności aplikacji; zazwyczaj to narzędzie jest uruchamiane przez *vsPerfCmd.exe*. VSPerfMon wyświetla dodatkowe informacje o procesie dołączyć lub odłączyć, który nie jest dostępny za pomocą narzędzia VSPerfCmd. Aby wyświetlić te informacje, uruchom vsPerfMon w osobnym oknie. Aby wywołać vsperfmon należy użyć następującej składni:
+Za pomocą narzędzia VSPerfMon można zbierać dane dotyczące wydajności aplikacji. Zazwyczaj to narzędzie jest uruchamiane przez *VSPerfCmd.exe*. VSPerfMon wyświetla dodatkowe informacje na temat dołączania lub odłączania procesu, które nie są dostępne za pomocą narzędzia VSPerfCmd. Aby wyświetlić te informacje, uruchom VSPerfMon w osobnym oknie. Aby wywołać VSPerfMon, użyj następującej składni:
 
 ```cmd
 VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTPUT <file name> [/WINCOUNTER:cfg] [/USER [DOMAIN\]username]
@@ -35,20 +35,20 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 
 |Opcje|Opis|
 |-------------|-----------------|
-|**U**|Przekierowane wyjście konsoli jest zapisywane jako Unicode.  Musi to być pierwsza określona opcja.|
-|**WYJŚCIE:** `<` *nazwa pliku*`>`|Przekierowuje dane wyjściowe do określonej nazwy pliku.|
-|**Śledzenia**|Uruchamia monitor wydajności do profilowania instrumentowanego.|
-|**Przykładowe**|Uruchamia monitor wydajności do profilowania próbkowania.|
-|**Pokrycia**|Uruchamia monitor wydajności dla kolekcji pokrycia kodu.|
-|**Współbieżności**|Uruchamia monitor wydajności do profilowania rywalizacji o zasoby.|
-|**UŻYTKOWNIK:** `[` *nazwa użytkownika* *domeny* `\]`|Umożliwia klientowi dostęp do monitora wydajności z określonego konta.|
-|**CROSSSESSION (KRZYŻYK)**|Umożliwia profilowanie między sesyjne.|
-|**LICZNIK**`:cfg`|Gdy używana jest metoda profilowania instrumentacji (TRACE), określa licznik procesora CPU, który ma być zbierany w każdym punkcie instrumentacji. Można zebrać wiele danych licznika, określając wiele opcji licznika.<br /><br /> Aby określić dane licznika *(cfg),* należy użyć następującej składni:<br /><br /> **Nazwa przeciwmractwo** [**,Reload**[,**FriendlyName**]]<br /><br /> -   **Nazwa licznika** to nazwa licznika zwrócona przez polecenie VSPerfCmd /QueryCounters.<br />-   **Ponowne ładowanie** jest interwałem próbkowania zdarzenia licznika. Nie należy używać *funkcji Reload* z metodą oprzyrządowania.<br />- Po określeniu **FriendlyName** zastępuje **CounterName** w narzędzia profilowania nazwy kolumn raportu.|
-|**OKRĘG WYBORCZY WINCOUNTER**`:path`|Określa licznik wydajności systemu Windows do uwzględnienia z danymi znaczników. `path`jest ciągiem licznika wydajności systemu Windows w formacie ścieżki licznika PDH. Przykład:<br /><br /> \Procesor(0)\\% czasu procesora<br /><br /> \Przełączniki systemowe\kontekstowe/s|
-|**AUTOMARK**`:n`|Określa przedział czasu (w milisekundach) między znakami automatycznymi podczas używania /WINCOUNTER. Zaokrąglone do najbliższego 500ms.<br /><br /> Użyj 0, aby wyłączyć znaczniki automatyczne. (default=500ms jeśli nieokreślone)|
+|**'T**|Przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode.  Ta wartość musi być pierwszą określoną opcją.|
+|**Dane wyjściowe:** `<` *Nazwa pliku*`>`|Przekierowuje dane wyjściowe do określonej nazwy pliku.|
+|**SZUKA**|Uruchamia Monitor wydajności dla profilowania Instrumentacji.|
+|**SAMPLE**|Uruchamia Monitor wydajności dla profilowania próbkowania.|
+|**POKRYCIA**|Uruchamia Monitor wydajności dla zbierania danych pokrycia kodu.|
+|**WSPÓŁBIEŻNOŚCI**|Uruchamia Monitor wydajności dla profilowania rywalizacji o zasoby.|
+|**Użytkownik:** `[` *domena* `\]` *Nazwa użytkownika*|Zezwala na dostęp klienta do monitora wydajności z określonego konta.|
+|**CROSSSESSION**|Włącza profilowanie między sesjami.|
+|**Licznik**`:cfg`|Gdy używana jest metoda profilowania Instrumentacji (TRACE), określa licznik procesora CPU do zebrania w każdym punkcie Instrumentacji. Można zbierać wiele danych liczników, określając wiele opcji licznika.<br /><br /> Aby określić dane licznika (*cfg*), użyj następującej składni:<br /><br /> **CounterName** [**, Załaduj ponownie**[,**FriendlyName**]]<br /><br /> -   **CounterName** jest nazwą licznika zwracanego przez polecenie VSPerfCmd/QueryCounters.<br />-   **Reload** jest interwałem próbkowania zdarzeń licznika. Nie należy używać *ponownego ładowania* z użyciem metody instrumentacji.<br />-W przypadku określenia parametru **FriendlyName** zastępuje **CounterName** w narzędzia profilowania nazwami kolumn raportu.|
+|**WINCOUNTER**`:path`|Określa licznik wydajności systemu Windows do uwzględnienia z danymi znacznika. `path`to ciąg licznika wydajności systemu Windows w formacie ścieżki licznika PDH. Przykład:<br /><br /> \Processor (0) \\ % czasu procesora<br /><br /> \System\Context/s|
+|**Oznacz jako**`:n`|Określa przedział czasu (w milisekundach) między znacznikami automatycznymi przy użyciu używania/WINCOUNTER. ZAOKRĄGLA Zaokrąglone do najbliższej 500 ms.<br /><br /> Aby wyłączyć automatyczne znaczniki, należy użyć 0. (domyślnie = 500 MS, jeśli nie określono)|
 
 ## <a name="see-also"></a>Zobacz też
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [VSPerfReport](../profiling/vsperfreport.md)
-- [Widoki raportu o skuteczności](../profiling/performance-report-views.md)
+- [Widoki raportów wydajności](../profiling/performance-report-views.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Jak: Uruchamianie i kończy zbieranie danych o wydajności | Dokumenty firmy Microsoft'
+title: Jak uruchomić i zakończyć zbieranie danych wydajności | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.summarypage
 helpviewer_keywords:
@@ -16,27 +16,27 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: da75306018cf19855c7cb7f74ac3ffc4e84bcd9a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eedc7f42f2372452fa2cb96279e8b936bdc15e27
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774514"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331340"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>Jak: Uruchamianie i kończy zbieranie danych o wydajności
-Przed rozpoczęciem profilowania należy dodać docelowy plik binarny, który ma zostać profilowany do sesji wydajności. Aby dodać cel, kliknij prawym przyciskiem myszy pozycję **Cele** w **Eksploratorze wydajności,** a następnie kliknij polecenie **Dodaj plik binarny docelowy**. W oknie dialogowym **Dodawanie pliku binarnego obiektu docelowego** zaznacz nazwę pliku, a następnie kliknij przycisk **Otwórz**. Dodano nowy plik binarny.
+# <a name="how-to-start-and-end-performance-data-collection"></a>Instrukcje: uruchamianie i kończenie zbierania danych wydajności
+Należy dodać docelowy plik binarny, który ma być profilem sesji wydajności przed rozpoczęciem profilowania. Aby dodać obiekt docelowy, kliknij prawym przyciskiem myszy pozycję **obiekty docelowe** w **Eksplorator wydajności**, a następnie kliknij polecenie **Dodaj docelowy plik binarny**. W oknie dialogowym **Dodaj docelowy plik binarny** wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**. Zostanie dodany nowy plik binarny.
 
 ### <a name="to-start-profiling"></a>Aby rozpocząć profilowanie
 
-1. Kliknij prawym przyciskiem myszy nazwę sesji wydajności w oknie **Eksploratora wydajności** i wybierz jedną z następujących opcji:
+1. Kliknij prawym przyciskiem myszy nazwę sesji wydajności w oknie **Eksplorator wydajności** i wybierz jedną z następujących opcji:
 
-    - **Uruchom z profilowania** - uruchamia aplikację i natychmiast rozpoczyna profilowanie.
+    - **Uruchom przy użyciu profilowania** — uruchamia aplikację i od razu rozpoczyna profilowanie.
 
-    - **Uruchom z profilowania wstrzymane** - uruchamia aplikację, ale nie rozpoczyna profilowania. Profilowanie można rozpocząć, wybierając polecenie **Wznów zbieranie** danych w oknie **Kontrola zbierania danych.** Aby uzyskać więcej informacji, zobacz [Jak: Wstrzymanie i wznowienie zbierania danych o wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md).
+    - **Uruchamianie przy użyciu wstrzymania profilowania** — uruchamia aplikację, ale nie rozpoczyna profilowania. Profilowanie można uruchomić, wybierając pozycję **Wznów zbieranie** w oknie **kontroli zbierania danych** . Aby uzyskać więcej informacji, zobacz [jak: Wstrzymywanie i wznawianie zbierania danych wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md).
 
 ### <a name="to-end-profiling"></a>Aby zakończyć profilowanie
 
-- Preferowaną metodą zakończenia sesji profilowania jest wyjście z aplikacji. Aby natychmiast zatrzymać profilowanie, na pasku narzędzi **Eksploratora wydajności** kliknij przycisk **Zatrzymaj**.
+- Preferowaną metodą zakończenia sesji profilowania jest zamknięcie aplikacji. Aby natychmiast zatrzymać profilowanie, na pasku narzędzi **Eksplorator wydajności** kliknij przycisk **Zatrzymaj**.
 
 ## <a name="see-also"></a>Zobacz też
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)

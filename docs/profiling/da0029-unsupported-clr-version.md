@@ -1,7 +1,7 @@
 ---
-title: 'DA0029: Nieobsługiwała wersja CLR | Dokumenty firmy Microsoft'
+title: DA0029 — nieobsługiwana wersja środowiska CLR | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.29
 - vs.performance.rules.DA0029
@@ -16,28 +16,28 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 266bf906c37ae6de4bdcb9b7be9688b95bcaa8a4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777518"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332379"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: Nieobsługiwała wersja CLR
+# <a name="da0029-unsupported-clr-version"></a>DA0029: nieobsługiwana wersja środowiska CLR
 
 |||
 |-|-|
 |Identyfikator reguły|DA0029|
-|Kategoria|Użycie narzędzi profilowania|
+|Kategoria|Użycie narzędzia profilowania|
 |Metoda profilowania|Profilowanie z wiersza polecenia|
-|Komunikat|Podczas zbierania wykryto nieobsługiconą wersję CLR. Zarządzane symbole mogą nie zostać poprawnie rozwiązane.|
-|Typ reguły|Informacji.|
+|Komunikat|Podczas zbierania wykryto nieobsługiwaną wersję środowiska CLR. Zarządzane symbole mogą nie zostać poprawnie rozwiązane.|
+|Typ reguły|Zawartych.|
 
 ## <a name="cause"></a>Przyczyna
- Próbujesz profilować aplikację, która [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] używa tego, co nie jest obsługiwane przez narzędzia profilowania.
+ Podjęto próbę profilowania aplikacji, która używa programu [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] , która nie jest obsługiwana przez narzędzia profilowania.
 
 ## <a name="rule-description"></a>Opis reguły
- To ostrzeżenie występuje, ponieważ narzędzia profilowania nie będzie w stanie rozpoznać symboli dla kodu zarządzanego uruchomionego w aplikacji. Narzędzia profilowania nie mogą rozpoznać symboli kodu [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)]zarządzanego dla aplikacji z systemem .
+ To ostrzeżenie występuje, ponieważ narzędzia profilowania nie będą mogły rozpoznać symboli dla kodu zarządzanego działającego w aplikacji. Narzędzia profilowania nie mogą rozpoznać symboli kodu zarządzanego dla aplikacji, na których działa program [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] .
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Brak.

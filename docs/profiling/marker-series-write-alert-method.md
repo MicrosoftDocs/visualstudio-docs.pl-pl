@@ -1,26 +1,26 @@
 ---
-title: marker_series::Metoda write_alert | Dokumenty firmy Microsoft
+title: 'marker_series:: write_alert Metoda | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
-- cvmarkersobj/Concurrency::diagnostic:marker_series::write_alert
+- cvmarkersobj/Concurrency, diagnostic:marker_series::write_alert
 helpviewer_keywords:
-- Concurrency::diagnostic:marker_series::write_alert method
+- Concurrency, diagnostic:marker_series::write_alert method
 ms.assetid: 9d5465c7-f862-47a7-b249-4116605075a6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 635f767f97ea3d237aeff843e99735eccae31efc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d5e79bab25885c8759ea5726b037771a4943c563
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62831387"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329639"
 ---
-# <a name="marker_serieswrite_alert-method"></a>marker_series::metoda write_alert
-Zapisuje alert do pliku śledzenia wizualizatora współbieżności.
+# <a name="marker_serieswrite_alert-method"></a>marker_series:: write_alert, Metoda
+Zapisuje alert do pliku śledzenia Concurrency Visualizer.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,12 +32,12 @@ void write_alert(
 ```
 
 #### <a name="parameters"></a>Parametry
- `_Format`Ciąg formatu złożonego, który zawiera tekst połączony z elementami formatu zero lub więcej, które odpowiadają obiektom na liście argumentów.
+ `_Format`Ciąg formatu złożonego, który zawiera tekst, który jest przemieszany z zerem lub więcej elementów formatu, który odpowiada obiektom na liście argumentów.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkersobj.h*
+ **Nagłówek:** *cvmarkersobj. h*
 
- **Obszar nazw:** Współbieżność::dignostyk
+ **Przestrzeń nazw:** Współbieżność::d przesła
 
 ## <a name="see-also"></a>Zobacz też
-- [klasa marker_series](../profiling/marker-series-class.md)
+- [Klasa marker_series](../profiling/marker-series-class.md)

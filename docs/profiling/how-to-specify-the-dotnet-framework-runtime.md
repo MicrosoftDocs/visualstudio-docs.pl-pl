@@ -1,7 +1,7 @@
 ---
-title: 'Jak: Określ środowisko uruchomieniowe programu .NET Framework | Dokumenty firmy Microsoft'
+title: Jak określić środowisko uruchomieniowe .NET Framework | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
 - .NET Framework versions,profililng
@@ -12,39 +12,39 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ab53a6cf265b36ee423a2df176014187860f635
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2eddbe3602386e6a8f5c7e07e796b8c3b047603c
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778677"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331378"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Instrukcje: określanie środowiska uruchomieniowego programu .NET Framework
 
-Wraz z wydaniem programu .NET Framework 4 aplikacje mogą składać się z modułów, które zostały utworzone przy użyciu różnych wersji czasu wykonywania programu .NET Framework. Domyślnie Visual Studio Profilowanie Tools profil pierwszego środowiska uruchomieniowego, który jest ładowany przez aplikację. Można określić czas wykonywania profilu podczas uruchamiania aplikacji z profilera i po dołączeniu profilera do już uruchomionej aplikacji.
+W wersji .NET Framework 4 aplikacje mogą składać się z modułów, które zostały skompilowane przy użyciu różnych wersji .NET Framework czasie wykonywania. Domyślnie program Visual Studio narzędzia profilowania profiluje pierwsze środowisko uruchomieniowe, które jest ładowane przez aplikację. Możesz określić czas wykonywania do profilowania, gdy uruchamiasz aplikację za pomocą profilera i po dołączeniu profilera do już uruchomionej aplikacji.
 
-## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Aby określić czas wykonywania programu .NET Framework do profilu podczas uruchamiania aplikacji za pomocą profilera
+## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Aby określić .NET Framework czas wykonywania do profilowania podczas uruchamiania aplikacji za pomocą profilera
 
-1. W **Eksploratorze wydajności**kliknij prawym przyciskiem myszy sesję wydajności, kliknij polecenie **Właściwości**, a następnie kliknij polecenie **Zaawansowane**.
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, kliknij polecenie **Właściwości**, a następnie kliknij przycisk **Zaawansowane**.
 
-     W polu listy **Docelowa wersja CLR** jest **wyświetlana wersja automatyczna** i wersje środowiska wykonawczego programu .NET Framework zainstalowane na komputerze.
+     Pole listy **docelowa wersja środowiska CLR** zawiera **Automatyczne** i wersje środowiska uruchomieniowego .NET Framework, które są zainstalowane na komputerze.
 
 2. Wykonaj jedną z następujących czynności:
 
-    - Kliknij wersję programu CLR, którą chcesz profilować.
+    - Kliknij wersję środowiska CLR, które chcesz profilować.
 
-    - Kliknij **przycisk Automatycznie,** aby profilu pierwszej wersji, która jest ładowana przez aplikację.
+    - Kliknij pozycję **Automatyczne** , aby profilować pierwszą wersję, która jest ładowana przez aplikację.
 
-## <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>Aby określić czas wykonywania programu .NET Framework do profilu podczas dołączania profilera do aplikacji
+## <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>Aby określić .NET Framework czasie wykonywania do profilowania podczas dołączania profilera do aplikacji
 
-1. W menu **Analizuj** wskaż **polecenie Profiler**, a następnie kliknij przycisk **Dołącz/Odłącz**.
+1. W menu **Analizuj** wskaż polecenie **Profiler**, a następnie kliknij pozycję **Dołącz/Odłącz**.
 
-2. W oknie dialogowym **Dołączanie profilera do procesu** kliknij proces, który chcesz profilować.
+2. W oknie dialogowym **Dołącz profiler do procesu** kliknij proces, który chcesz profilować.
 
-     Pole listy **Docelowa wersja CLR** s **Automatyczna** i wersje środowiska wykonawczego programu .NET Framework zainstalowane na komputerze.
+     Pole listy **docelowa wersja środowiska CLR** **s i** wersje środowiska uruchomieniowego .NET Framework zainstalowane na komputerze.
 
 3. Wykonaj jedną z następujących czynności:
 
-    - Kliknij wersję programu CLR, którą chcesz profilować.
+    - Kliknij wersję środowiska CLR, które chcesz profilować.
 
-    - Kliknij **przycisk Automatycznie,** aby profilu wersji, która jest ładowana, gdy profiler dołącza do aplikacji.
+    - Kliknij pozycję **Automatyczne** , aby profilować wersję załadowana podczas dołączania profilera do aplikacji.

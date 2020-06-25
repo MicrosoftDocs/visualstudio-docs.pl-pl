@@ -1,7 +1,7 @@
 ---
-title: Konsola | Dokumenty firmy Microsoft
+title: Konsola | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e825ba66-1383-46ad-8712-396bc9c14036
 author: mikejo5000
 ms.author: mikejo
@@ -9,15 +9,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ec56665b546f962e8b3f4fd35460715390aee30
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b70c44f72d8f9d8fb25eb1c459946797cfb97913
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777819"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331567"
 ---
 # <a name="console"></a>Konsola
-**Opcja** konsoli vsPerfCmd.exe uruchamia określoną aplikację w nowym oknie wiersza polecenia. **Konsoli** można używać tylko z opcją VSPerfCmd **Launch.** Jeśli aplikacja nie jest aplikacją wiersza polecenia, **konsola** nie ma wpływu.
+Opcja **konsola** VSPerfCmd.exe uruchamia określoną aplikację w nowym oknie wiersza polecenia. **Konsoli** programu można używać tylko z opcją **uruchamiania** VSPerfCmd. Jeśli aplikacja nie jest aplikacją wiersza polecenia, **konsola** nie ma żadnego efektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,12 +29,12 @@ VSPerfCmd.exe /Launch:AppName /Console
  Brak
 
 ## <a name="required-options"></a>Wymagane opcje
- **Konsolę** można określić tylko w wierszu polecenia, który zawiera również opcję **Uruchom.**
+ **Konsolę** można określić tylko w wierszu polecenia, który zawiera również opcję **uruchamiania** .
 
- **Uruchom:** `AppName` Uruchamia profiler i aplikację `AppName`określoną przez .
+ **Uruchom:** `AppName` Uruchamia program profilujący i aplikację określoną przez `AppName` .
 
 ## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Aplikacje autonomiczne profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET aplikacji internetowych](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

@@ -1,7 +1,7 @@
 ---
-title: Zbieranie danych o interakcji warstwy | Dokumenty firmy Microsoft
+title: Zbieranie danych o interakcji między warstwami | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.tierinteraction
 helpviewer_keywords:
@@ -15,37 +15,37 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e01259fdd23e60a1408addc10a6af3a12479c9f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f7b2a2bb5efd86d052247825a29a06c7f5ad109
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772821"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331590"
 ---
 # <a name="collect-tier-interaction-data"></a>Zbieranie danych o interakcji między warstwami
 
-Profilowanie interakcji warstwy zawiera dodatkowe informacje na temat czasów wykonywania funkcji aplikacji wielowarstwowych, które komunikują się z bazami danych za pośrednictwem usług ADO.NET. Dane są zbierane tylko dla wywołań funkcji synchronicznych.
+Profilowanie interakcji między warstwami zawiera dodatkowe informacje o czasach wykonywania funkcji aplikacji wielowarstwowych, które komunikują się z bazami danych za pomocą usług ADO.NET Services. Dane są zbierane tylko dla wywołań funkcji synchronicznych.
 
 **Wersje programu Visual Studio**
 
-Dane profilowania interakcji warstwy mogą być zbierane przy użyciu dowolnej wersji programu Visual Studio. Jednak dane profilowania interakcji warstwy można wyświetlać tylko w programie Visual Studio Enterprise.
+Dane profilowania interakcji między warstwami można zbierać przy użyciu dowolnej wersji programu Visual Studio. Jednak dane profilowania interakcji między warstwami mogą być wyświetlane tylko w Visual Studio Enterprise.
 
 **Windows 8 i Windows Server 2012**
 
-Aby zbierać dane interakcji warstwy w aplikacjach klasycznych systemu Windows 8 i aplikacjach systemu Windows Server 2012, należy użyć metody instrumentacji. Nie można zbierać danych interakcji warstwy dla aplikacji platformy uniwersalnej systemu Windows. Zobacz [Narzędzia wydajności w aplikacjach dla systemów Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Dane interakcji warstwy można uwzględnić we wszystkich metodach profilowania w innej obsługiwanej wersji systemu Windows.
+Aby zbierać dane interakcji warstwy w aplikacjach klasycznych systemu Windows 8 i aplikacjach systemu Windows Server 2012, należy użyć metody instrumentacji. Nie można zbierać danych interakcji warstwy dla aplikacji platformy UWP. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Możesz uwzględnić dane interakcji warstwy we wszystkich metodach profilowania w innej obsługiwanej wersji systemu Windows.
 
 **Kreator Wydajności**
 
-Z powodu błędu w Kreatorze wydajności należy dodać opcję zbierania danych interakcji warstwy do profilowania uruchamianego z Eksploratora wydajności. Należy również dodać projekt, plik wykonywalny lub witrynę sieci Web do węzła docelowego Eksploratora wydajności.
+Ze względu na usterkę w Kreatorze wydajności należy dodać opcję zbierania danych interakcja warstwy do przebiegu profilowania z Eksplorator wydajności. Należy również dodać projekt, plik wykonywalny lub witrynę sieci Web do węzła docelowego Eksplorator wydajności.
 
-## <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>Aby dodać dane interakcji warstwy do profilowania uruchamianego przy użyciu stron właściwości sesji wydajności
+## <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>Aby dodać dane interakcji warstwy do przebiegu profilowania przy użyciu stron właściwości sesji wydajności
 
-1. W Eksploratorze wydajności wybierz polecenie **Właściwości** z menu kontekstowego.
+1. W Eksplorator wydajności, wybierz **Właściwości** z menu kontekstowego.
 
-2. Wybierz stronę **Interakcje warstwy,** a następnie zaznacz pole wyboru **Włącz profilowanie interakcji warstwy.**
+2. Wybierz stronę **interakcje warstwy** , a następnie zaznacz pole wyboru **Włącz profilowanie interakcji między warstwami** .
 
-3. W Eksploratorze wydajności wybierz węzeł **Cele,** a następnie określ projekt, plik wykonywalny lub witrynę sieci Web, którą chcesz profilować.
+3. W Eksplorator wydajności Wybierz węzeł **targets** , a następnie określ projekt, plik wykonywalny lub witrynę sieci Web, którą chcesz profilować.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Widok interakcji warstwy](../profiling/tier-interactions-view.md)
+[Widok interakcji między warstwami](../profiling/tier-interactions-view.md)

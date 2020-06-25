@@ -1,17 +1,17 @@
 ---
 title: Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592995"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331057"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 
@@ -35,7 +35,7 @@ Gdy kod projektu jest wyłączony, Visual Studio Wyświetla symbole zastępcze. 
 
 1. W oknie dialogowym nieobsługiwany wyjątek wybierz **pozycję kliknij tutaj, aby ponownie załadować link projektanta** .
 
-2. Na pasku menu wybierz **debuguj** > **Rozpocznij debugowanie** , aby skompilować i uruchomić aplikację.
+2. Na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie** , aby skompilować i uruchomić aplikację.
 
      Jeśli aplikacja zostanie pomyślnie skompilowana i uruchomiona, wyjątek czasu projektowania może być spowodowany przez kod projektu uruchomiony w projektancie.
 
@@ -53,15 +53,15 @@ Gdy kod projektu jest wyłączony, Visual Studio Wyświetla symbole zastępcze. 
 
 5. Ustaw punkt przerwania w kodzie projektu.
 
-6. W nowym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **debuguj** > **Dołącz do procesu**.
+6. W nowym wystąpieniu programu Visual Studio na pasku menu wybierz polecenie **Debuguj**  >  **Dołącz do procesu**.
 
-7. W oknie dialogowym **Dołącz do procesu** na liście **dostępne procesy** wybierz **XDesProc. exe**, a następnie wybierz przycisk **Dołącz** .
+7. W oknie dialogowym **Dołącz do procesu** na liście **dostępne procesy** wybierz pozycję **XDesProc.exe**, a następnie wybierz przycisk **Dołącz** .
 
      ![Proces projektanta XAML](media/xaml_attach.png)
 
      Jest to proces projektanta XAML w pierwszym wystąpieniu programu Visual Studio.
 
-8. W pierwszym wystąpieniu programu Visual Studio na pasku menu wybierz **debuguj** > **Rozpocznij debugowanie**.
+8. W pierwszym wystąpieniu programu Visual Studio na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie**.
 
      Teraz możesz przejść do kodu działającego w projektancie.
 
@@ -96,6 +96,6 @@ Aby zmienić opcje wyświetlania kontroli, kliknij ikonę w lewym dolnym rogu ok
 
 W przypadku wybrania opcji **tylko wyświetlanie kontrolek platformy**wszystkie kontrolki niestandardowe pochodzące z zestawów SDK, kontrolki użytkownika klienta i inne nie zostaną całkowicie wyrenderowane. Zamiast tego są one zastępowane przez kontrolki rezerwowe w celu pokazania rozmiaru i położenia formantu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio](designing-xaml-in-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
-title: 'DA0505: Średnie bajty prywatne przydzielone do profilowanego procesu | Dokumenty firmy Microsoft'
+title: DA0505 — średnia liczba bajtów prywatnych przyznanych dla profilowanego procesu | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0505
 - vs.performance.rules.DA0505
@@ -13,35 +13,35 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b905b0de69110f5f7cd684deb6fe6c5955bb4b0c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4be7d00288330e006a8302cfdb98621b1e660842
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777406"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330300"
 ---
-# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Średnie bajty prywatne przydzielone dla procesu poddawanego profilowaniu
+# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Średnia liczba bajtów prywatnych przydzielonych dla profilowanego procesu
 
 |||
 |-|-|
 |Identyfikator reguły|DA0505|
 |Kategoria|Zarządzanie zasobami|
-|Metoda profilowania|Wszystkie|
-|Komunikat|Informacje te zostały zebrane wyłącznie w celu uzyskania informacji. Licznik Bajtów prywatnych proces mierzy pamięć wirtualną przydzieloną przez proces profilowania. Zgłoszona wartość jest średnią obliczoną we wszystkich interwałach pomiarowych.|
+|Metoda profilowania|Wszystko|
+|Komunikat|Te informacje zostały zebrane tylko w celu uzyskania informacji. Licznik bajtów prywatnych procesu mierzy pamięć wirtualną przydzieloną przez proces profilowania. Raportowana wartość to średnia obliczona dla wszystkich interwałów pomiarowych.|
 |Typ reguły|Informacje|
 
- Podczas profilowania przy użyciu próbkowania, .NET pamięci lub metody rywalizacji o zasoby, należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="rule-description"></a>Opis reguły
- Ten komunikat informuje o średniej ilości pamięci wirtualnej, która jest obecnie alokowana w bajtach (bajtach prywatnych). Bajty prywatne reprezentuje lokalizacje pamięci wirtualnej, które zostały przydzielone przez proces, który jest dostępny tylko przez wątki uruchomione wewnątrz procesu.
+ Ten komunikat przedstawia średnią ilość pamięci wirtualnej, która jest aktualnie przypisana w bajtach (bajty prywatne). Bajty prywatne reprezentują lokalizacje pamięci wirtualnej, które zostały przydzielone przez proces, do którego można uzyskać dostęp tylko przez wątki działające w procesie.
 
- W przypadku procesów 32-bitowych uruchomionych na komputerze 32-bitowym górna granica prywatnej części przestrzeni adresowej procesu wynosi 2 GB. Za pomocą przełącznika [/3GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) Boot.ini, 32-bitowe procesy mogą uzyskać do 3 GB pamięci wirtualnej. Proces 32-bitowy uruchomiony na komputerze 64-bitowym może uzyskać do 4 GB prywatnej pamięci wirtualnej.
+ W przypadku procesów 32-bitowych uruchomionych na komputerze 32-bitowym górny limit prywatnej części przestrzeni adresowej procesu wynosi 2 GB. Korzystając z przełącznika Boot.ini [/3gb](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) , procesy 32-bitowe mogą uzyskać do 3 GB pamięci wirtualnej. Proces 32-bitowy, który jest uruchomiony na komputerze 64-bitowym, może uzyskać do 4 GB prywatnej pamięci wirtualnej.
 
- Proces 64-bitowy uruchomiony na komputerze 64-bitowym może uzyskać do 8 TB prywatnej pamięci wirtualnej.
+ Proces 64-bitowy, który jest uruchomiony na komputerze 64-bitowym, może uzyskać do 8 TB prywatnej pamięci wirtualnej.
 
- Zgłoszona wartość jest średnią we wszystkich interwałach pomiaru, w których profilowany proces był aktywny.
+ Raportowana wartość jest wartością średnią dla wszystkich interwałów pomiarowych, w przypadku których proces profilowany jest aktywny.
 
- Aby uzyskać więcej informacji na temat przestrzeni adresowych procesu, zobacz [Wirtualna przestrzeń adresowa](/windows/win32/memory/virtual-address-space) w dokumentacji zarządzania pamięcią systemu Windows.
+ Aby uzyskać więcej informacji na temat przestrzeni adresów procesów, zobacz [wirtualna przestrzeń adresowa](/windows/win32/memory/virtual-address-space) w dokumentacji zarządzania pamięcią systemu Windows.
 
-## <a name="how-to-use-rule-data"></a>Jak korzystać z danych reguły
- Użyj zgłoszonej wartości, aby porównać wydajność różnych wersji lub kompilacji programu lub zrozumieć wydajność aplikacji w różnych scenariuszach profilowania.
+## <a name="how-to-use-rule-data"></a>Jak używać danych reguł
+ Wartość raportowana służy do porównywania wydajności różnych wersji lub kompilacji programu lub do zrozumienia wydajności aplikacji w różnych scenariuszach profilowania.

@@ -1,7 +1,7 @@
 ---
-title: Dołącz | Dokumenty firmy Microsoft
+title: Dołącz | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
@@ -9,20 +9,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 482b3e80bce796910860cb7eab1e5a0066854238
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773742"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329868"
 ---
-# <a name="attach"></a>Attach
-Opcja *VSPerfCmd.exe* **Dołącz** rozpoczyna profilowanie próbek uruchomionego procesu określonego przez identyfikator procesu (PID).
+# <a name="attach"></a>Dołącz
+Opcja *VSPerfCmd.exe* **dołączania**VSPerfCmd.exerozpoczyna przykładowe profilowanie uruchomionego procesu określonego przez identyfikator procesu (PID).
 
- Aby użyć opcji **Dołącz,** należy określić **metodę Sample** w opcji Start.
+ Aby użyć opcji **Attach** , należy określić **przykładową** metodę w opcji Start.
 
 > [!NOTE]
-> Jeśli opcja **Start** została określona za pomocą opcji **Crosssession,** wszystkie wywołania **vsperfcmd /Attach** lub **VSPerfCmd /Detach** muszą również określać **crosssession**.
+> Jeśli opcja **Start** została określona przy użyciu opcji **CrossSession** , wszystkie wywołania **VSPerfCmd/Attach** lub **VSPerfCmd/detach** muszą również określać **CrossSession**.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,36 +31,36 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ```
 
 #### <a name="parameters"></a>Parametry
- `ProcessID`Identyfikator procesu (PID) uruchomionego procesu. Identyfikator PID uruchomionego procesu jest wyświetlany na karcie Procesy Menedżera zadań systemu Windows.
+ `ProcessID`Identyfikator procesu (PID) uruchomionego procesu. Identyfikator PID uruchomionego procesu jest wyświetlany na karcie procesy w Menedżerze zadań systemu Windows.
 
 ## <a name="valid-options"></a>Prawidłowe opcje
- Następujące opcje **VSPerfCmd** można łączyć z opcją **Dołącz** w jednym wierszu polecenia.
+ Następujące opcje **VSPerfCmd** można łączyć z opcją **Attach** w pojedynczym wierszu polecenia.
 
- **Crosssession (krzyżyk)** Umożliwia profilowanie aplikacji w sesjach innych niż sesja logowania. Wymagane, jeśli opcja **Start** została określona za pomocą opcji **Crosssession.**
+ **CrossSession** Włącza Profilowanie aplikacji w sesjach innych niż sesja logowania. Wymagane, jeśli opcja **Start** została określona z opcją **CrossSession** .
 
- **Start:** `Method` Inicjuje sesję profilera wiersza polecenia i ustawia określoną metodę profilowania.
+ **Rozpocznij:** `Method` Inicjuje sesję profilera wiersza polecenia i ustawia określoną metodę profilowania.
 
- **TargetCLR (DocelowyCLR)** Określa wersję programu .NET Framework Common Language Runtime (CLR) do profilu, gdy więcej niż jedna wersja jest ładowana w sesji profilowania. Domyślnie pierwsza załadowana wersja jest profilowana.
+ **TargetCLR** Określa wersję .NET Framework środowiska uruchomieniowego języka wspólnego (CLR) do profilowania, gdy więcej niż jedna wersja zostanie załadowana w sesji profilowania. Domyślnie pierwsza załadowana wersja jest profilowana.
 
- **GlobalOn GlobalOff** Wznawia **(GlobalOn)** lub wstrzymuje profilowanie **(GlobalOff),** ale nie kończy sesji profilowania.
+ **GlobalOn GlobalOff** Wznawia (**GlobalOn**) lub wstrzymuje (**GlobalOff**) profilowanie, ale nie kończy sesji profilowania.
 
- **ProcessOn:** `PID` **ProcessOff:** `PID` Resumes **(ProcessOn**) lub wstrzymuje **(ProcessOff)** profilowanie dla określonego procesu.
+ **ProcessOn:** `PID` **ProcessOff:** `PID` Wznawia (**ProcessOn**) lub wstrzymuje (**ProcessOff**) profilowania dla określonego procesu.
 
-## <a name="interval-options"></a>Opcje interwałów
- W wierszu polecenia Dołącz można określić jedną z następujących opcji interwału próbkowania. Domyślny interwał próbkowania wynosi 10 000 000 cykli zegara procesora.
+## <a name="interval-options"></a>Opcje interwału
+ Jedną z następujących opcji interwału próbkowania można określić w wierszu polecenia Attach. Domyślny interwał próbkowania to 10 000 000 cykli zegara procesora.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**`FriendlyName`[<strong>:</strong>Zdarzenia]**Licznik**[**:**`Name`,`Reload`] Określa liczbę i typ interwału próbkowania.
+ **Czasomierz**[**:** `Cycles` ]**PF**[**:** `Events` ]**sys**[<strong>:</strong>Events]**licznik**[**:** `Name` , `Reload` `FriendlyName` ] określa liczbę i typ interwału próbkowania.
 
-- **Timer** — próbki `Cycles` każdego zegara procesora. Jeśli `Cycles` nie zostanie określony, używane są 10 000 000 cykli.
+- **Czasomierz** — przykłady dla każdego `Cycles` cyklu zegara procesora. Jeśli `Cycles` nie jest określona, używane są 10 000 000 cykli.
 
-- **PF** - Próbki `Events` co strona błędów. Jeśli `Events` nie zostanie określony, 10-stronicowe błędy są używane.
+- **PF** — przykłady `Events` błędów każdej strony. Jeśli `Events` nie jest określony, używane są 10 błędów stron.
 
-- **Sys** — przykłady wszystkich `Events` wywołań do systemu operacyjnego. Jeśli `Events` nie zostanie określony, 10 wywołań systemowych są używane.
+- **Sys** -przykłady każdego `Events` wywołania systemu operacyjnego. Jeśli `Events` nie jest określony, używane są 10 wywołań systemowych.
 
-- **Licznik** — przykłada każdą `Reload` liczbę licznika `Name`wydajności procesora określonego przez . Opcjonalnie `FriendlyName` można określić ciąg do użycia jako nagłówek kolumny w raportach profilera.
+- **Licznik** próbek każdej `Reload` liczby liczników wydajności procesora CPU określonych przez `Name` . Opcjonalnie `FriendlyName` można określić ciąg, który ma być używany jako nagłówek kolumny w raportach profilera.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie pokazano, jak dołączyć do uruchomionego wystąpienia aplikacji o identyfikatorze procesu 12345.
+ W tym przykładzie pokazano, jak dołączyć do uruchomionego wystąpienia aplikacji z IDENTYFIKATORem procesu 12345.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
@@ -69,6 +69,6 @@ VSPerfCmd.exe /Attach:12345
 
 ## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Aplikacje autonomiczne profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET aplikacji internetowych](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

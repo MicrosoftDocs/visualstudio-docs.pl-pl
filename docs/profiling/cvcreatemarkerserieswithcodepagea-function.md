@@ -1,7 +1,7 @@
 ---
-title: Funkcja CvCreateMarkerSeriesWithCodePageA | Dokumenty firmy Microsoft
+title: Funkcja Cvcreatemarkerserieswithcodepagea — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmakers/CvCreateMarkerSeriesWithCodePageA
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e540e56ce0e97ac2c6aa2e42012569f9e4f272
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e17083c48db1ba1aa6b7ff45ee467ac97900e101
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553074"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332422"
 ---
-# <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA, funkcja
-Tworzy serię znaczników dla danego dostawcy i określoną stronę kodową. Ta funkcja może służyć do określenia strony kodowej jawnie dla tekstu zapisanego przez funkcje INTERFEJSU API znacznika ANSI. Ustawienie strony kodowej może być przydatne w przypadku, gdy śledzenie jest przechwytywane, a następnie analizowane na różnych komputerach z różnymi ustawieniami/językami. Domyślnie używana jest strona kodowa zwrócona przez funkcję GetACP().
+# <a name="cvcreatemarkerserieswithcodepagea-function"></a>Cvcreatemarkerserieswithcodepagea —, funkcja
+Tworzy serię znaczników dla danego dostawcy i określonej strony kodowej. Ta funkcja może służyć do określania strony kodowej jawnie dla tekstu pisanego przez funkcje ANSI interfejsu API znaczników. Ustawienie strony kodowej może być przydatne w przypadku, gdy śledzenie jest przechwytywane, a następnie analizowane na różnych maszynach przy użyciu różnych ustawień regionalnych/języków. Domyślnie jest używana strona kodowa zwrócona przez funkcję GetACP ().
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,19 +34,19 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pProvider`Obiekt dostawcy zainicjowany wcześniej przez CvInitProvider. Nie może być null.
+ `pProvider`Obiekt dostawcy został wcześniej zainicjowany przez CvInitProvider —. Nie może mieć wartości NULL.
 
- `pSeriesName`Nazwa serii znaczników. Nie może być null, ale pusty ciąg jest dozwolone.
+ `pSeriesName`Nazwa serii znaczników. Nie może mieć wartości NULL, ale jest dozwolony pusty ciąg.
 
  `nTextCodePage`Prawidłowa strona kodowa.
 
- `ppMarkerSeries`Adres zmiennej wyjściowej, która będzie przechowywać kontekst serii znaczników. Nie może być null.
+ `ppMarkerSeries`Adres zmiennej wyjściowej, w której będzie przechowywany kontekst serii znaczników. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy seria znaczników jest pomyślnie utworzona lub kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
+ S_OK, gdy seria znaczników zostanie pomyślnie utworzona lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

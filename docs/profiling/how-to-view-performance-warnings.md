@@ -1,7 +1,7 @@
 ---
-title: 'Jak: Wyświetlanie ostrzeżeń o wydajności | Dokumenty firmy Microsoft'
+title: Jak wyświetlić ostrzeżenia o wydajności | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c6ce4e9c-4677-40cc-b1af-d68e9f3249f2
 author: mikejo5000
 ms.author: mikejo
@@ -9,14 +9,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9088f5c7516c7daa82087e0f797addfaaa068c33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c7121b3c860a43efde6268c240adb9a8287fc261
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774540"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331320"
 ---
-# <a name="how-to-view-performance-warnings"></a>Jak: Wyświetlanie ostrzeżeń o wydajności
-Ostrzeżenia o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wydajności narzędzi profilowania narzędzia profilowania wskazują problemy w profilowane aplikacji, które mogą spowolnić wykonywanie programu. Ostrzeżenia mogą również wskazywać, że można zmienić metody zbierania, aby zebrać więcej przydatnych danych. Ostrzeżenia o wydajności są generowane automatycznie w sesji profilowania i pojawiają się w oknie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **lista błędów,** gdy plik danych profilowania jest otwarty w IDE.
+# <a name="how-to-view-performance-warnings"></a>Instrukcje: wyświetlanie ostrzeżeń dotyczących wydajności
+Ostrzeżenia dotyczące wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania narzędzia profilowania wskazują problemy w profilowanej aplikacji, która może spowalniać wykonywanie programu. Ostrzeżenia mogą również wskazywać, że możesz chcieć zmienić metody zbierania danych, aby zebrać bardziej przydatne dane. Ostrzeżenia o wydajności są generowane automatycznie w sesji profilowania i pojawiają się w oknie **Lista błędów** , gdy plik danych profilowania zostanie otwarty w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.
 
- Jeśli po otwarciu pliku danych profilowania nie jest wyświetlane okno **Lista błędów,** kliknij menu **Widok,** a następnie kliknij polecenie **Lista błędów**.
+ Jeśli okno **Lista błędów** nie pojawia się po otwarciu pliku danych profilowania, kliknij menu **Widok** , a następnie kliknij pozycję **Lista błędów**.
