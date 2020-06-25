@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 842f7912d88031d720f438800ef6b54133ce05c9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 19eca9747fa4e9ef80f7de05799a2cee685ce821
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184524"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285525"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publish a Web app to Azure App Service using Visual Studio (Publikowanie aplikacji internetowej w usłudze Azure App Service przy użyciu programu Visual Studio)
 
-W przypadku aplikacji ASP.NET, ASP.NET Core, Node. js i .NET Core można publikować w Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
+W przypadku aplikacji ASP.NET, ASP.NET Core, Node.js i .NET Core można publikować w Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
 
 * Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-* W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio, aby wdrożyć aplikacje ASP.NET, ASP.NET Core, Node. js i .NET Core do Azure App Service lub App Service dla systemu Linux (przy użyciu kontenerów). W przypadku aplikacji języka Python postępuj zgodnie z instrukcjami w sekcji [Python-Publish, aby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+* W przypadku wdrożenia aplikacji jednorazowego (lub ręcznego) Użyj narzędzia do **publikowania** w programie Visual Studio, aby wdrożyć aplikacje ASP.NET, ASP.NET Core, Node.js i .NET Core do Azure App Service lub App Service dla systemu Linux (przy użyciu kontenerów). W przypadku aplikacji języka Python postępuj zgodnie z instrukcjami w sekcji [Python-Publish, aby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na potrzeby wdrożenia jednorazowego.
 
@@ -37,7 +37,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
 1. W oknie dialogowym **Publikowanie** wybierz pozycję **Azure**.
 
-    ![Wybieranie elementu docelowego publikowania](../deployment/media/quickstart-publish-azure.png)
+    ![Wybieranie elementu docelowego publikowania](../deployment/media/quickstart-publish-azure-new.png)
 
 1. Wybierz pozycję * * Azure App Service (Windows) * * i **dalej**.
 
@@ -55,7 +55,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Wybierz Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
 
-1. Wybierz pozycję **Publikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
+1. Wybierz polecenie **Publikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-windows-summary-page.png)
 

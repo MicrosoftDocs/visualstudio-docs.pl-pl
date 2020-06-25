@@ -1,25 +1,25 @@
 ---
-title: Konfigurowanie agentów testowych i kontrolerów testów do testów obciążenia
+title: Konfigurowanie agentów testowych i kontrolerów testów dla testów obciążenia
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, test agents and controllers
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8fa44ffd75cd64f3ce745524ecdcf6ccb7b9a9b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597350"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288809"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Przegląd agentów testowych i kontrolerów testów do uruchamiania testów obciążenia
 
-Visual Studio można wygenerować symulowane obciążenie dla aplikacji przy użyciu maszyn fizycznych lub wirtualnych. Maszyny te muszą być skonfigurowane jako jeden kontroler badania i jeden lub więcej czynników testowych. Kontroler testów i agentów testowych można użyć do wygenerowania większego obciążenia niż pojedynczy komputer może wygenerować samodzielnie.
+Program Visual Studio może generować symulowane obciążenie dla aplikacji za pomocą maszyn fizycznych lub wirtualnych. Te maszyny muszą być skonfigurowane jako jeden kontroler testów i co najmniej jednego agenta testowego. Można użyć kontrolera testów i agentów testowych do wygenerowania większej liczby obciążeń niż pojedynczy komputer może generować same.
 
 > [!NOTE]
-> Można również użyć testowania obciążenia opartego na chmurze, aby zapewnić maszyny wirtualne, które generują obciążenie wielu użytkowników uzyskujących dostęp do witryny w tym samym czasie. Jednak przy użyciu konfiguracji kontrolera/agenta testowego na maszynach wirtualnych hostowanych w chmurze nie jest obsługiwana. Dowiedz się więcej o testowaniu obciążenia w chmurze w [witrynie Uruchom testy obciążenia przy użyciu planów testów platformy Azure.](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)
+> Możesz również użyć testowania obciążenia opartego na chmurze, aby zapewnić maszynom wirtualnym, które generują obciążenie wielu użytkowników uzyskujących dostęp do witryny sieci Web w tym samym czasie. Jednak korzystanie z kontrolera testów/instalacji agenta testowego na maszynach wirtualnych hostowanych w chmurze nie jest obsługiwane. Dowiedz się więcej o testowaniu obciążenia w chmurze w [uruchamianiu testów obciążenia przy użyciu Azure test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -43,7 +43,7 @@ Taka architektura ma szereg zalet:
 
   - Komputer 1: program Visual Studio, kontroler, agent.
 
-    ![Maszyna lokalna używająca kontrolera i agenta](./media/load-test-configa.png)
+    ![Komputer lokalny korzystający z kontrolera i agenta](./media/load-test-configa.png)
 
     **Typowa konfiguracja zdalna:**
 
@@ -51,41 +51,41 @@ Taka architektura ma szereg zalet:
 
   - Komputer 3: kontroler (mogą być na nim również zainstalowani agenci).
 
-  - Machine4-n: Agent lub agenci wszyscy skojarzone z kontrolerem na machine3.
+  - Machine4-n: Agent lub agenci skojarzeni z kontrolerem na Machine3.
 
-    ![Maszyny zdalne korzystające ze sterownika i agentów](./media/load-test-configb.png)
+    ![Komputery zdalne korzystające z kontrolera i agentów](./media/load-test-configb.png)
 
 Mimo że kontroler testów zarządza zwykle kilkoma agentami testowymi, każdy agent może być powiązany tylko z jednym kontrolerem. Każdego agenta testowego może używać cały zespół deweloperów. Taka architektura pozwala łatwo zwiększać liczbę agentów testowych, a efekcie generować większe obciążenia.
 
 ## <a name="test-agent-and-test-controller-interaction"></a>Interakcja agenta testowego i kontrolera testów
 
-Kontroler testów zarządza zbiorem agentów testowych faktycznie wykonujących testy. Kontroler testów komunikuje się z agentami testowymi, aby rozpocząć testy, zatrzymać testy, śledzić stan agenta testowego i zbierać wyniki testów.
+Kontroler testów zarządza zbiorem agentów testowych faktycznie wykonujących testy. Kontroler testów komunikuje się z agentami testowymi, aby uruchomić testy, zatrzymać testy, śledzić stan agenta testowego i zbierać wyniki testów.
 
-### <a name="test-controller"></a>Kontroler testowy
+### <a name="test-controller"></a>Kontroler testów
 
 Kontroler testów zapewnia ogólną architekturę wykonywania testów oraz zawiera specjalne funkcje do prowadzenia testów obciążeniowych. Kontroler testów wysyła test obciążeniowy do wszystkich agentów testowych i czeka, aż agenci zainicjują test. Gdy wszyscy agenci testowi są gotowi, kontroler testów wysyła do nich komunikat nakazujący rozpoczęcie testu.
 
 ### <a name="test-agent"></a>Agent testowy
 
-Agent testowy działa jako usługa, która nasłuchuje od kontrolera testów żądań rozpoczęcia nowego testu. Gdy agent testowy odbiera żądanie, usługa agenta testowego uruchamia proces, w którym mają być uruchamiane testy. Każdy agent testowy wykonuje ten sam test obciążeniowy.
+Agent testowy działa jako usługa, która nasłuchuje od kontrolera testów żądań rozpoczęcia nowego testu. Gdy agent testowy odbiera żądanie, usługa agenta testowego uruchamia proces, na którym należy uruchomić testy. Każdy agent testowy wykonuje ten sam test obciążeniowy.
 
 Administrator przypisuje agentom testowym wagi, według których są następnie rozkładane obciążenia. Na przykład jeśli agent testowy 1 ma wagę 30, agent testowy 2 wagę 70, a obciążenie zostanie ustawione na 1000 użytkowników, agent testowy 1 będzie symulował 300, a agent testowy 2 — 700 wirtualnych użytkowników. Zobacz [Zarządzanie kontrolerami testów i agentami testowymi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
-Agent testowy przyjmuje zestaw testów i zestaw parametrów symulacji jako dane wejściowe. Kluczową koncepcją jest to, że testy są niezależne od komputera, na którym są uruchamiane.
+Agent testowy przyjmuje zestaw testów i zestaw parametrów symulacji jako dane wejściowe. Kluczowe pojęcie polega na tym, że testy są niezależne od komputera, na którym są uruchamiane.
 
-## <a name="test-controller-and-test-agent-connection-points"></a>Przyłącza kontrolera testowego i agenta testowego
+## <a name="test-controller-and-test-agent-connection-points"></a>Punkty połączenia kontrolera testów i agenta testowego
 
-Na poniższej ilustracji pokazano punkty połączenia między kontrolerem testów, agentem testowym i klientem. Określa, które porty są używane do połączeń przychodzących i wychodzących, a także ograniczenia zabezpieczeń stosowane w tych portach.
+Na poniższej ilustracji pokazano punkty połączenia między kontrolerem testów, agentem testowym i klientem. Przedstawia on, które porty są używane do połączeń przychodzących i wychodzących, a także ograniczenia zabezpieczeń używane na tych portach.
 
-![Porty i zabezpieczenia kontrolera testowego i agenta testowego](./media/test-controller-agent-firewall.png)
+![Porty kontrolerów testów i agentów testowych oraz zabezpieczenia](./media/test-controller-agent-firewall.png)
 
-Aby uzyskać więcej informacji, zobacz [Konfigurowanie portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Aby uzyskać więcej informacji [, zobacz Konfigurowanie portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
-## <a name="test-controller-and-agent-installation-information"></a>Informacje o kontrolerze testowym i instalacji agenta
+## <a name="test-controller-and-agent-installation-information"></a>Informacje o instalacji kontrolera i agenta testowego
 
-Aby uzyskać ważne informacje na temat wymagań sprzętowych i programowych dla kontrolerów testowych i agentów testowych, procedur ich instalowania i konfigurowania środowiska w celu uzyskania optymalnej wydajności, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+Aby uzyskać ważne informacje dotyczące wymagań sprzętowych i programowych dla kontrolerów testów i agentów testowych, procedur instalacji i konfigurowania środowiska pod kątem optymalnej wydajności, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Użyj sterownika testowego i agenta testowego z testami jednostkowymi
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Używanie kontrolera testów i agenta testowego z testami jednostkowymi
 
 Po zainstalowaniu kontrolera testów i jednego lub więcej agentów testowych można w ustawieniu testów obciążeniowych określić, czy kontroler testów ma wykonywać testy zdalnie. Ponadto można wskazać dane i adaptery diagnostyczne, które mają być używane do roli powiązanej z agentami w ustawieniu testu.
 

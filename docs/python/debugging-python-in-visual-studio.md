@@ -1,7 +1,7 @@
 ---
-title: Kod języka Python debugowania
-description: Visual Studio zapewniają bogate debugowanie dla kodu języka Python, w tym ustawianie punktów przerwania, przechodzenie krok po kroku, sprawdzanie wartości, przeglądanie wyjątków i debugowanie w oknie interaktywnym.
-ms.date: 03/13/2019
+title: Debuguj kod w języku Python
+description: Program Visual Studio zapewnia zaawansowane Debugowanie kodu języka Python, w tym ustawianie punktów przerwania, krokowe, badanie wartości, przeglądanie wyjątków i debugowanie w oknie interaktywnym.
+ms.date: 05/12/2020
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,123 +10,123 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302890"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285650"
 ---
-# <a name="debug-your-python-code"></a>Debugowanie kodu języka Python
+# <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
-Visual Studio zapewnia kompleksowe środowisko debugowania dla języka Python, w tym dołączanie do uruchomionych procesów, oceny wyrażeń w **oknach Czujka** i **Natychmiastowe,** sprawdzanie zmiennych lokalnych, punktów przerwania, instrukcji step in/out/over, **Ustaw następną instrukcję**i inne.
+Program Visual Studio oferuje kompleksowe środowisko debugowania dla języka Python, w tym dołączanie do uruchomionych procesów, ocenianie wyrażeń w oknach **czujka** i **natychmiastowe** , inspekcja lokalnych zmiennych, punktów przerwania, instrukcji krokowych/out/over, **Ustawianie następnej instrukcji**i innych.
 
-Zobacz także następujące artykuły debugowania specyficzne dla scenariusza:
+Zobacz również następujące artykuły dotyczące debugowania dotyczące scenariusza:
 
-- [Debugowanie zdalne linuksa](debugging-python-code-on-remote-linux-machines.md)
-- [Debugowanie języka Python/C++ w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- [Zdalne debugowanie systemu Linux](debugging-python-code-on-remote-linux-machines.md)
+- [Debugowanie Python/C++ w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symbole debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python w programie Visual Studio obsługuje debugowanie bez projektu. Po otwarciu autonomicznego pliku języka Python, kliknij prawym przyciskiem myszy w edytorze, wybierz start **z debugowaniem,** a program Visual Studio uruchamia skrypt z globalnym środowiskiem domyślnym (zobacz [środowiska Python)](managing-python-environments-in-visual-studio.md)i bez argumentów. Ale od tego czasu masz pełną obsługę debugowania.
+> Język Python w programie Visual Studio obsługuje debugowanie bez projektu. Gdy jest otwarty autonomiczny plik w języku Python, kliknij prawym przyciskiem myszy w edytorze, wybierz pozycję **Rozpocznij z debugowaniem**, a program Visual Studio uruchamia skrypt z globalnym środowiskiem domyślnym (zobacz [środowiska Python](managing-python-environments-in-visual-studio.md)) i bez argumentów. Jednak od tego dnia masz pełną pomoc techniczną dotyczącą debugowania.
 >
-> Aby kontrolować środowisko i argumenty, utwórz projekt dla kodu, który można łatwo wykonać za pomocą szablonu projektu [kodu Pythona Z istniejącego języka Python.](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files)
+> Aby kontrolować środowisko i argumenty, należy utworzyć projekt dla kodu, który jest łatwo wykonywany przy użyciu istniejącego szablonu projektu [kodu Python](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) .
 
 <a name="debugging-with-a-project"></a>
 
 ## <a name="basic-debugging"></a>Debugowanie podstawowe
 
-Podstawowy przepływ pracy debugowania obejmuje punkty przerwania ustawień, przechodzenie przez kod, sprawdzanie wartości i obsługę wyjątków, jak opisano w poniższych sekcjach.
+Podstawowy przepływ pracy debugowania obejmuje ustawienia punktów przerwania, przechodzenie przez kod, inspekcję wartości i obsługę wyjątków zgodnie z opisem w poniższych sekcjach.
 
-Sesja debugowania rozpoczyna się od polecenia **Debugowanie start debugowania,** > **Start Debugging** **przycisku Start** na pasku narzędzi lub klawisza **F5.** Te akcje uruchamiają plik startowy projektu (pokazany pogrubioną czcionką w **Eksploratorze rozwiązań)** z aktywnym środowiskiem projektu i wszelkimi argumentami wiersza polecenia lub ścieżkami wyszukiwania określonymi we **właściwościach projektu** (zobacz [opcje debugowania projektu).](#project-debugging-options) Visual Studio 2017 w wersji 15.6 i nowszych alerty, jeśli nie masz zestawu plików startowych; starsze wersje mogą otworzyć okno wyjściowe z uruchomionym interpreterem języka Python lub okno wyjściowe na krótko pojawia się i znika. W każdym przypadku kliknij prawym przyciskiem myszy odpowiedni plik i wybierz polecenie **Ustaw jako plik startowy**.
+Sesja debugowania rozpoczyna się od polecenia **Debuguj**  >  **Rozpocznij debugowanie** , przycisku **Start** na pasku narzędzi lub klawisza **F5** . Te akcje uruchamiają plik startowy projektu (pogrubienie w **Eksplorator rozwiązań**) z aktywnym środowiskiem projektu i wszystkimi argumentami wiersza polecenia lub ścieżkami wyszukiwania określonymi we **właściwościach projektu** (zobacz [Opcje debugowania projektu](#project-debugging-options)). Program Visual Studio 2017 w wersji 15,6 lub nowszej powiadamia użytkownika, jeśli nie masz zestawu plików startowych; wcześniejsze wersje mogą otworzyć okno danych wyjściowych z uruchomionym interpreterem języka Python, a okno dane wyjściowe pojawia się krótko i znika. W każdym przypadku kliknij prawym przyciskiem myszy odpowiedni plik i wybierz polecenie **Ustaw jako plik startowy**.
 
 > [!Note]
-> Debuger zawsze rozpoczyna się od aktywnego środowiska Języka Python dla projektu. Aby zmienić środowisko, należy uaktywnić inny, zgodnie z [opisem](selecting-a-python-environment-for-a-project.md)w języku Wybierz środowisko języka Python dla projektu .
+> Debuger zawsze zaczyna się od aktywnego środowiska języka Python dla projektu. Aby zmienić środowisko, należy wykonać inną aktywną zgodnie z opisem w artykule [Wybieranie środowiska Python dla projektu](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Punkty przerwania
 
-Punkty przerwania zatrzymać wykonywanie kodu w oznaczonym punkcie, dzięki czemu można sprawdzić stan programu. Ustawiaj punkty przerwania, klikając lewy margines edytora kodu lub klikając prawym przyciskiem myszy wiersz kodu i wybierając opcję **Breakpoint** > **Insert Breakpoint Breakpoint .** Na każdym wierszu z punktem przerwania pojawia się czerwona kropka.
+Punkty przerwania zatrzymają wykonywanie kodu w oznaczonym punkcie, aby można było sprawdzić stan programu. Ustaw punkty przerwania, klikając na lewym marginesie edytora kodu lub klikając prawym przyciskiem myszy wiersz kodu i wybierając **punkt**przerwania  >  **Wstaw punkt przerwania**. Czerwona kropka pojawia się w każdym wierszu z punktem przerwania.
 
-![Punkty przerwania wyświetlane w programie Visual Studio](media/debugging-breakpoints.png)
+![Punkty przerwania pojawiające się w programie Visual Studio](media/debugging-breakpoints.png)
 
-Kliknięcie czerwonej kropki lub kliknięcie prawym przyciskiem myszy wiersza kodu i wybranie opcji **Punkt** > **przerwania usuń punkt** przerwania powoduje usunięcie punktu przerwania. Można go również wyłączyć bez usuwania go za pomocą polecenia **Breakpoint** > **Disable Breakpoint.**
+Kliknij czerwoną kropkę lub kliknij prawym przyciskiem myszy wiersz kodu, a **następnie wybierz punkt**przerwania Usuwanie punktu przerwania  >  **Delete Breakpoint** . Można je również wyłączyć bez usuwania przy użyciu **punktu**przerwania  >  **disable** .
 
 > [!Note]
-> Niektóre punkty przerwania w Pythonie mogą być zaskakujące dla deweloperów, którzy pracowali z innymi językami programowania. W Pythonie cały plik jest kodem wykonywalnym, więc Python uruchamia plik po załadowaniu do przetwarzania dowolnej klasy najwyższego poziomu lub definicji funkcji. Jeśli punkt przerwania został ustawiony, może się okazać debugera podziału części sposób za pośrednictwem deklaracji klasy. To zachowanie jest poprawne, nawet jeśli czasami jest zaskakujące.
+> Niektóre punkty przerwania w języku Python mogą być zaskakujące dla deweloperów, którzy pracowały w innych językach programowania. W języku Python cały plik to kod wykonywalny, więc w języku Python jest uruchamiany plik, który jest ładowany do przetwarzania każdej klasy najwyższego poziomu lub definicji funkcji. Jeśli punkt przerwania został ustawiony, może się okazać, że debuger przerywa działanie w ramach deklaracji klasy. To zachowanie jest poprawne, mimo że czasami zaskakujące.
 
-Można dostosować warunki, w których punkt przerwania jest wyzwalany, takie jak podział tylko wtedy, gdy zmienna jest ustawiona na określoną wartość lub zakres wartości. Aby ustawić warunki, kliknij prawym przyciskiem myszy czerwoną kropkę punktu przerwania, wybierz **warunek**, a następnie utwórz wyrażenia przy użyciu kodu Języka Python. Aby uzyskać szczegółowe informacje na temat tej funkcji w programie Visual Studio, zobacz [Warunki punktu przerwania.](../debugger/using-breakpoints.md#breakpoint-conditions)
+Można dostosować warunki, w których jest wyzwalany punkt przerwania, na przykład tylko wtedy, gdy zmienna jest ustawiona na określoną wartość lub zakres wartości. Aby ustawić warunki, kliknij prawym przyciskiem myszy czerwoną kropkę punktu przerwania, wybierz pozycję **warunek**, a następnie utwórz wyrażenia przy użyciu kodu języka Python. Aby uzyskać pełne szczegóły dotyczące tej funkcji w programie Visual Studio, zobacz [warunki punktu przerwania](../debugger/using-breakpoints.md#breakpoint-conditions).
 
-Podczas ustawiania warunków można również ustawić **akcję** i utworzyć komunikat, aby zalogować się do okna danych wyjściowych, opcjonalnie kontynuując wykonywanie automatycznie. Rejestrowanie wiadomości tworzy to, co nazywa się *punktem śledzenia* bez dodawania kodu rejestrowania bezpośrednio do aplikacji:
+Podczas ustawiania warunków można także ustawić **akcję** i utworzyć komunikat w celu zarejestrowania się w oknie danych wyjściowych. opcjonalnie kontynuuj wykonywanie automatycznie. Zarejestrowanie komunikatu powoduje utworzenie elementu o nazwie *punkt śledzenia* bez bezpośredniego dodawania kodu rejestrowania do aplikacji:
 
-![Tworzenie punktu śledzenia z punktem przerwania](media/debugging-tracepoint.png)
+![Tworzenie punkt śledzenia przy użyciu punktu przerwania](media/debugging-tracepoint.png)
 
-### <a name="step-through-code"></a>Krok po kroku przez kod
+### <a name="step-through-code"></a>Przejdź do kodu
 
-Po zatrzymaniu w punkcie przerwania, masz różne sposoby, aby przejść przez kod lub uruchomić bloki kodu przed zerwaniem ponownie. Polecenia te są dostępne w wielu miejscach, w tym w górnym pasku narzędzi debugowania, menu **debugowania,** w menu kontekstowym prawym przyciskiem myszy w edytorze kodu i za pomocą skrótów klawiaturowych (choć nie wszystkie polecenia znajdują się we wszystkich miejscach):
+Po zatrzymaniu w punkcie przerwania masz różne sposoby przechodzenia przez kod lub uruchamiania bloków kodu przed ponownym rozdzieleniem. Te polecenia są dostępne w wielu miejscach, w tym na górnym pasku narzędzi do debugowania, **w menu** kontekstowym po kliknięciu prawym przyciskiem myszy w edytorze kodu oraz za pomocą skrótów klawiaturowych (chociaż nie wszystkie polecenia znajdują się we wszystkich miejscach):
 
-| Funkcja | Klawiszy | Opis |
+| Cecha | Klawiszy | Opis |
 | --- | --- | --- |
-| **Continue** | **F5** | Uruchamia kod do momentu osiągnięcia następnego punktu przerwania. |
-| **Wejdź do** | **F11** | Uruchamia następną instrukcję i zatrzymuje. Jeśli następna instrukcja jest wywołaniem funkcji, debuger zatrzymuje się w pierwszym wierszu wywoływanej funkcji. |
-| **Krok nad** | **F10** | Uruchamia następną instrukcję, w tym wykonywanie wywołania funkcji (uruchamianie całego kodu) i stosowanie dowolnej wartości zwracanej. Przechodzenie przez pozwala łatwo pominąć funkcje, które nie trzeba debugować. |
-| **Wyjdź** | **Zmiana**+**F11** | Uruchamia kod do końca bieżącej funkcji, a następnie kroki do instrukcji wywołującej.  To polecenie jest przydatne, gdy nie trzeba debugować pozostałą część bieżącej funkcji. |
-| **Uruchom do kursora** | **Ctrl**+**F10** | Uruchamia kod do lokalizacji cieczy w edytorze. To polecenie umożliwia łatwe pomijanie segmentu kodu, który nie jest potrzebny do debugowania. |
-| **Ustaw następną instrukcję** | **Ctrl**+**Shift**Przesunięcie+ctrl**F10** | Zmienia bieżący punkt uruchomienia w kodzie na lokalizację cieczy. To polecenie umożliwia pominięcie segmentu kodu z uruchamiania w ogóle, na przykład gdy wiesz, że kod jest uszkodzony lub daje niepożądany efekt uboczny. |
-| **Pokaż następną instrukcję** | **Alt**+**Num** **&#42;**| Zwraca do następnej instrukcji do uruchomienia. To polecenie jest przydatne, jeśli rozglądasz się w kodzie i nie pamiętasz, gdzie debuger jest zatrzymany. |
+| **Kontynuuj** | **F5** | Uruchamia kod do momentu osiągnięcia następnego punktu przerwania. |
+| **Wkrocz do** | **F11** | Uruchamia następną instrukcję i kończy. Jeśli następna instrukcja jest wywołaniem funkcji, debuger zatrzyma się w pierwszym wierszu wywoływanej funkcji. |
+| **Przekrocz nad** | **F10** | Uruchamia następną instrukcję, łącznie z wykonywaniem wywołania funkcji (uruchamianie całego kodu) i zastosowaniem dowolnej wartości zwracanej. Przechodzenie w tryb failover pozwala łatwo pominąć funkcje, które nie muszą być debugowane. |
+| **Wyjdź** | **SHIFT** + Klawisz **F11** | Uruchamia kod do końca bieżącej funkcji, a następnie kroki do instrukcji wywołującej.  To polecenie jest przydatne, gdy nie trzeba debugować pozostałej części bieżącej funkcji. |
+| **Uruchom do kursora** | **Ctrl** + **F10** | Uruchamia kod do lokalizacji karetki w edytorze. To polecenie umożliwia łatwe pominięcie segmentu kodu, który nie musi być debugowany. |
+| **Ustaw następną instrukcję** | **Ctrl** + **SHIFT** + **F10** | Zmienia bieżący punkt przebiegu w kodzie do lokalizacji karetki. To polecenie pozwala pominąć segment kodu, który ma być wykonywany w ogóle, na przykład gdy wiadomo, że kod jest uszkodzony lub powoduje niepożądane skutki uboczne. |
+| **Pokaż następną instrukcję** | **Alt** + **Liczba** **&#42;**| Zwraca następną instrukcję do uruchomienia. To polecenie jest przydatne, jeśli szukasz w kodzie i nie pamiętasz, gdzie debuger został zatrzymany. |
 
 ### <a name="inspect-and-modify-values"></a>Sprawdzanie i modyfikowanie wartości
 
-Po zatrzymaniu w debugerze można sprawdzić i zmodyfikować wartości zmiennych. **Można** również użyć watch okna do monitorowania poszczególnych zmiennych, jak również wyrażeń niestandardowych. (Aby uzyskać ogólne [informacje, zobacz Inspekcja zmiennych).](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows)
+Po zatrzymaniu w debugerze można sprawdzić i zmodyfikować wartości zmiennych. Można również użyć okna **czujki** do monitorowania pojedynczych zmiennych, a także wyrażeń niestandardowych. (Zobacz temat [Sprawdzanie zmiennych](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows) , aby uzyskać ogólne szczegóły).
 
-Aby wyświetlić wartość za pomocą **etykietek danych,** wystarczy najechać kursorem myszy na dowolną zmienną w edytorze. Możesz kliknąć na wartość, aby ją zmienić:
+Aby wyświetlić wartość przy użyciu **etykietek**danych, po prostu przesuń wskaźnik myszy nad dowolną zmienną w edytorze. Możesz kliknąć wartość, aby ją zmienić:
 
-![Liczba etykietek danych wyświetlanych w debugerze programu Visual Studio](media/debugging-quick-tips.png)
+![Porady dotyczące danych wyświetlane w debugerze programu Visual Studio](media/debugging-quick-tips.png)
 
-Okno **Autos** (**Debugowanie** > **autos****systemu Windows** > ) zawiera zmienne i wyrażenia, które znajdują się w pobliżu bieżącej instrukcji. Możesz kliknąć dwukrotnie w kolumnie wartości lub wybrać i nacisnąć **klawisz F2,** aby edytować wartość:
+Okno **zmiennych** (**Debug**  >  **Windows**  >  **autostarty**debugowania systemu Windows) zawiera zmienne i wyrażenia, które są blisko bieżącej instrukcji. Możesz kliknąć dwukrotnie w kolumnie wartość lub zaznaczyć i nacisnąć klawisz **F2** , aby edytować wartość:
 
-![Okno Autos w debugerze programu Visual Studio](media/debugging-autos-window.png)
+![Okno Autokorekty w debugerze programu Visual Studio](media/debugging-autos-window.png)
 
-W oknie **Zmiennych** lokalnych **(Debug** > **Windows** > **Locals)** są wyświetlane wszystkie zmienne, które znajdują się w bieżącym zakresie, które można ponownie edytować:
+Okno zmiennych **lokalnych** (**debugowanie**  >  ustawień regionalnych**systemu Windows**  >  **Locals**) wyświetla wszystkie zmienne, które znajdują się w bieżącym zakresie, które mogą być ponownie edytowane:
 
-![Okna dla mieszkańców w debugerze programu Visual Studio](media/debugging-locals-window.png)
+![Okno zmiennych lokalnych w debugerze programu Visual Studio](media/debugging-locals-window.png)
 
-Aby uzyskać więcej informacji na temat **używania autos** i **lokalnych mieszkańców**, zobacz [Inspekcja zmiennych w oknach Autos i Locals](../debugger/autos-and-locals-windows.md).
+Aby uzyskać więcej informacji na temat korzystania z funkcji **Autostart** i elementów **lokalnych**, zobacz [Sprawdzanie zmiennych w oknach Autostart i lokalne](../debugger/autos-and-locals-windows.md).
 
-Okna **czujki** **(Debug** > **Windows** > **Watch** > Watch**1-4**) umożliwiają wprowadzanie dowolnych wyrażeń języka Python i wyświetlanie wyników. Wyrażenia są ponownie dokonywalne dla każdego kroku:
+Okna **czujki** (**debugowanie**  >  czujki w**systemie Windows**:  >  **Watch**  >  **Obserwuj 1-4**) umożliwiają wprowadzanie dowolnych wyrażeń języka Python i wyświetlanie wyników. Wyrażenia są obliczane na potrzeby każdej czynności:
 
-![Okno obserwowanie w debugerze programu Visual Studio](media/debugging-watch-window.png)
+![okno wyrażeń kontrolnych w debugerze programu Visual Studio](media/debugging-watch-window.png)
 
-Aby uzyskać więcej informacji na temat korzystania z **programu Watch**, zobacz [Ustawianie zegarka na zmiennych przy użyciu okien Zegarka i zegarka QuickWatch](../debugger/watch-and-quickwatch-windows.md).
+Aby uzyskać więcej informacji na temat korzystania z funkcji **Watch**, zobacz [Ustawianie wartości na zmiennych przy użyciu okien czujka i QuickWatch](../debugger/watch-and-quickwatch-windows.md).
 
-Podczas sprawdzania wartości`str`ciągu( `unicode` `bytes`, `bytearray` , i są uważane za ciągi znaków w tym celu), ikona lupy pojawia się po prawej stronie wartości. Kliknięcie ikony powoduje wyświetlenie wartości niecytowanego ciągu w oknie dialogowym wyskakującego okienka z zawijaniem i przewijaniem, co jest przydatne w przypadku długich ciągów. Ponadto wybranie strzałki rozwijanej na ikonie umożliwia zaznaczenie wizualizacji w postaci zwykłego tekstu, HTML, XML i JSON:
+Podczas sprawdzania wartości ciągu (,, `str` , `unicode` `bytes` i `bytearray` są brane pod uwagę ciągi do tego celu) ikona lupy zostanie wyświetlona po prawej stronie wartości. Kliknięcie ikony powoduje wyświetlenie wartości ciągu bez cudzysłowu w oknie dialogowym podręcznym, z otoką i przewijaniem, która jest przydatna w przypadku długich ciągów. Ponadto wybranie strzałki listy rozwijanej na ikonie umożliwia wybranie wizualizacji w postaci zwykłego tekstu, HTML, XML i JSON:
 
 ![Wizualizatory ciągów w debugerze programu Visual Studio](media/debugging-string-visualizers.png)
 
-Wizualizacje HTML, XML i JSON są wyświetlane w oddzielnych oknach podręcznych z wyróżnianiem składni i widokami drzewa.
+Wizualizacje HTML, XML i JSON pojawiają się w oddzielnych oknach podręcznych z wyróżnioną składnią i widokami drzewa.
 
 ### <a name="exceptions"></a>Wyjątki
 
-Jeśli wystąpi błąd w programie podczas debugowania, ale nie masz dla niego obsługi wyjątków, debuger przerywa w punkcie wyjątku:
+Jeśli w programie wystąpi błąd podczas debugowania, ale nie masz obsługi wyjątków dla tego programu, debuger przerwie się w punkcie wyjątku:
 
-![Wyskakujące okienko wyjątków w debugerze programu Visual Studio](media/debugging-exception-popup.png)
+![Okno podręczne wyjątku w debugerze programu Visual Studio](media/debugging-exception-popup.png)
 
-W tym momencie można sprawdzić stan programu, w tym stos wywołań. Jednak jeśli spróbujesz przejść przez kod, wyjątek będzie nadal zgłaszany, dopóki nie zostanie obsłużona lub program zakończy działanie.
+W tym momencie można sprawdzić stan programu, w tym stos wywołań. Jeśli jednak próbujesz przejść przez kod, wyjątek będzie nadal zgłaszany, dopóki nie zostanie obsłużony lub że program zakończy pracę.
 
-Polecenie menu **Debugowanie** > **ustawień wyjątków** **systemu Windows** > powoduje wyświetlenie okna, w którym można rozwinąć **wyjątki języka Python:**
+Polecenie menu **Debuguj**  >  **Windows**  >  **Ustawienia wyjątków** systemu Windows umożliwia wyświetlenie okna, w którym można rozszerzyć **wyjątki języka Python**:
 
-![Okna Wyjątki w debugerze programu Visual Studio](media/debugging-exception-settings.png)
+![Okno wyjątków w debugerze programu Visual Studio](media/debugging-exception-settings.png)
 
-Pole wyboru dla każdego wyjątku określa, czy debuger *zawsze* dzieli się, gdy jest wywoływany. Zaznacz to pole, gdy chcesz przerwać częściej dla określonego wyjątku.
+Pole wyboru dla każdego wyjątku kontroluje, czy podczas podniesienia debuger *zawsze* przerywa działanie. Zaznacz to pole wyboru, jeśli chcesz wielokrotnie przerwać wyjątek dla określonego wyjątku.
 
-Domyślnie większość wyjątków przerwy, gdy nie można znaleźć obsługi wyjątków w kodzie źródłowym. Aby zmienić to zachowanie, kliknij prawym przyciskiem myszy dowolny wyjątek i zmodyfikuj opcję **Kontynuuj, gdy nie obsłużony w kodzie użytkownika.** Wyczyść to pole, jeśli chcesz złamać rzadziej dla wyjątku.
+Domyślnie większość wyjątków jest przerywana, gdy program obsługi wyjątków nie może zostać znaleziony w kodzie źródłowym. Aby zmienić to zachowanie, kliknij prawym przyciskiem myszy dowolny wyjątek i zmodyfikuj opcję **Kontynuuj przy nieobsługiwanym kodzie użytkownika** . Wyczyść to pole, jeśli chcesz, aby w przypadku wyjątku była mniejsza rzadko.
 
-Aby skonfigurować wyjątek, który nie jest wyświetlany na tej liście, kliknij przycisk **Dodaj,** aby go dodać. Nazwa musi być zgodna z pełną nazwą wyjątku.
+Aby skonfigurować wyjątek, który nie jest wyświetlany na liście, kliknij przycisk **Dodaj** , aby go dodać. Nazwa musi być zgodna z pełną nazwą wyjątku.
 
 ## <a name="project-debugging-options"></a>Opcje debugowania projektu
 
-Domyślnie debuger uruchamia program ze standardowym programem uruchamianym języka Python, bez argumentów wiersza polecenia i bez innych specjalnych ścieżek ani warunków. Opcje uruchamiania są zmieniane za pomocą właściwości debugowania projektu, do których uzyskuje się dostęp, klikając prawym przyciskiem myszy projekt w **Eksploratorze rozwiązań,** wybierając **polecenie właściwości**i wybierając kartę **Debugowanie.**
+Domyślnie debuger uruchamia program przy użyciu standardowego modułu uruchamiania języka Python, brak argumentów wiersza polecenia i nie ma innych specjalnych ścieżek ani warunków. Opcje uruchamiania są zmieniane za pomocą właściwości debugowania projektu, do których uzyskuje dostęp, klikając prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**, wybierając **Właściwości**i wybierając kartę **debugowanie** .
 
 ![Właściwości debugowania projektu w debugerze programu Visual Studio](media/debugging-project-properties.png)
 
@@ -134,110 +134,114 @@ Domyślnie debuger uruchamia program ze standardowym programem uruchamianym jęz
 
 | Opcja | Opis |
 | --- | --- |
-| **Standardowy wyrzutnia Pythona** | Używa kodu debugowania napisanego w przenośnym pythonie, który jest zgodny z CPython, IronPython i wariantów, takich jak Stackless Python. Zapewnia najlepsze środowisko do debugowania czystego kodu Języka Python. Po dołączeniu do uruchomionego procesu *python.exe,* ten launcher jest używany. Ten program uruchamiający zapewnia również [debugowanie w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) dla CPython, co pozwala na bezproblemowe krok między kodem C/C++ i kodem Pythona. |
-| **Uruchamianie sieci Web** | Uruchamia domyślną przeglądarkę po uruchomieniu i umożliwia debugowanie szablonów. Aby uzyskać więcej informacji, zobacz sekcję [debugowania szablonu sieci Web.](python-web-application-project-templates.md#debugging) |
-| **Django Web launcher** | Identyczne z programem Web Launcher i wyświetlane tylko w celu zapewnienia zgodności z powrotem. |
-| **Wyrzutnia IronPython (.NET)** | Używa debugera .NET, który działa tylko z IronPython, ale pozwala na przechodzenie między dowolnym projektem języka .NET, w tym C# i VB. Ten program uruchamiający jest używany, jeśli dołączysz do uruchomionego procesu .NET, który jest gospodarzem IronPython. |
+| **Standardowy moduł uruchamiania języka Python** | Używa kodu debugowania pisanego w przenośnym języku Python, który jest zgodny z CPython, IronPython i wariantami, takimi jak środowisko Python bez stosu. Zapewnia najlepsze środowisko debugowania czystego kodu w języku Python. Po dołączeniu do uruchomionego procesu *python.exe* ten program uruchamiający jest używany. Ten program uruchamiający udostępnia również [debugowanie w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) dla CPython, co pozwala na bezproblemowe przechodzenie między kodem C/C++ i kodem w języku Python. |
+| **Uruchamianie w sieci Web** | Uruchamia domyślną przeglądarkę przy uruchamianiu i Włącza debugowanie szablonów. Aby uzyskać więcej informacji, zobacz sekcję [Debugowanie szablonu sieci Web](python-web-application-project-templates.md#debugging) . |
+| **Django internetowy** | Taka sama jak w przypadku uruchamiania sieci Web i wyświetlana tylko w celu zapewnienia zgodności z poprzednimi wersjami. |
+| **IronPython (.NET) — uruchamianie** | Używa debugera platformy .NET, który działa tylko z IronPython, ale umożliwia wykonywanie kroków między dowolnym projektem języka .NET, w tym C# i VB. Ten program uruchamiający jest używany, jeśli dołączysz do działającego procesu .NET, który obsługuje IronPython. |
 
-### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Uruchamianie opcji (ścieżki wyszukiwania, argumenty uruchamiania i zmienne środowiskowe)
+### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opcje uruchamiania (ścieżki wyszukiwania, argumenty uruchamiania i zmienne środowiskowe)
 
 | Opcja | Opis |
 | --- | --- |
-| **Ścieżki wyszukiwania** | Wartości te są zgodne z tym, co jest wyświetlane w węźle **Ścieżki wyszukiwania** projektu w **Eksploratorze rozwiązań**. Tę wartość można zmodyfikować w tym miejscu, ale łatwiej jest używać **Eksploratora rozwiązań,** który umożliwia przeglądanie folderów i automatyczne konwertowanie ścieżek na formularz względny. |
-| **Argumenty skryptu** | Argumenty te są dodawane do polecenia używanego do uruchamiania skryptu, pojawiającego się po nazwach pliku skryptu. Pierwszy element tutaj jest dostępny `sys.argv[1]`dla skryptu `sys.argv[2]`jako , drugi jako , i tak dalej. |
-| **Argumenty interpretera** | Argumenty te są dodawane do wiersza polecenia launchera przed nazwą skryptu. Typowe argumenty `-W ...` w tym `-O` miejscu są do kontrolowania `-u` ostrzeżeń, aby nieznacznie zoptymalizować program i używać niebuforowane we/wy. Użytkownicy IronPython mogą używać tego `-X` pola do `-X:Frames` `-X:MTA`przekazywania opcji, takich jak lub . |
-| **Ścieżka interpretera** | Zastępuje ścieżkę skojarzoną z bieżącym środowiskiem. Wartość może być przydatna do uruchamiania skryptu z niestandardowym interpreterem. |
-| **Zmienne środowiskowe** | W tym wielowierszowym polu tekstowym \<dodaj wpisy formularza\<NAZWA>= WARTOŚĆ>. Ponieważ to ustawienie jest stosowane jako ostatnie, na podstawie istniejących `PYTHONPATH` globalnych zmiennych środowiskowych i po jest ustawiane zgodnie z **ustawieniem Ścieżki wyszukiwania,** można użyć do ręcznego zastąpienia dowolnej z tych innych zmiennych. |
+| **Ścieżki wyszukiwania** | Te wartości pasują do elementów wyświetlanych w węźle **ścieżki wyszukiwania** projektu w **Eksplorator rozwiązań**. Tutaj możesz zmodyfikować tę wartość, ale łatwiej jest używać **Eksplorator rozwiązań** , które umożliwiają przeglądanie folderów i automatyczne konwertowanie ścieżek do formy względnej. |
+| **Argumenty skryptu** | Te argumenty są dodawane do polecenia używanego do uruchamiania skryptu, który jest wyświetlany po nazwie pliku skryptu. Pierwszy element w tym miejscu jest dostępny dla skryptu jako `sys.argv[1]` , drugi jako `sys.argv[2]` i tak dalej. |
+| **Argumenty interpretera** | Te argumenty są dodawane do wiersza polecenia programu uruchamiającego przed nazwą skryptu. Często używane argumenty służą `-W ...` do kontrolowania ostrzeżeń, `-O` nieznacznie optymalizacji programu i `-u` korzystania z niebuforowanej operacji we/wy. IronPython użytkownicy mogą używać tego pola do przekazywania `-X` opcji, takich jak `-X:Frames` lub `-X:MTA` . |
+| **Ścieżka interpretera** | Zastępuje ścieżkę skojarzoną z bieżącym środowiskiem. Ta wartość może być przydatna do uruchamiania skryptu z interpreterem niestandardowym. |
+| **Zmienne środowiskowe** | W tym wielowierszowym polu tekstowym Dodaj wpisy w formularzu \<NAME> = \<VALUE> . Ponieważ to ustawienie jest stosowane ostatnio, na podstawie wszelkich istniejących globalnych zmiennych środowiskowych, a po `PYTHONPATH` nim jest ustawiony zgodnie z ustawieniem **ścieżki wyszukiwania** , może służyć do ręcznego przesłonięcia wszelkich innych zmiennych. |
 
-## <a name="immediate-and-interactive-windows"></a>Okna natychmiastowe i interaktywne
+## <a name="immediate-and-interactive-windows"></a>Bezpośrednie i interaktywne okna
 
-Istnieją dwa interaktywne okna, których można użyć podczas sesji debugowania: standardowe okno **natychmiastowe** programu Visual Studio i okno **Interaktywne debugowanie języka Python.**
+Istnieją dwa **interaktywne okna,** których można użyć podczas sesji debugowania: standardowe okno programu Visual Studio i okno **interaktywne debugowania języka Python** .
 
-**Natychmiastowe** okno **(Debug** > **Windows** > **Immediate)** służy do szybkiej oceny wyrażeń języka Python i inspekcji lub przypisywania zmiennych w uruchomionym programie. Szczegółowe informacje można znaleźć w ogólnym artykule [natychmiastowego okna.](../ide/reference/immediate-window.md)
+Okno **bezpośrednie** (bezpośrednie**debugowanie**  >  **systemu Windows**  >  **Immediate**) służy do szybkiej oceny wyrażeń języka Python oraz inspekcji lub przypisywania zmiennych w uruchomionym programie. Aby uzyskać szczegółowe informacje, zobacz artykuł ogólne [okna](../ide/reference/immediate-window.md) ogólnego.
 
-**Okno Interaktywne debugowanie języka Python** **(Debug** > **Windows** > **Python Debug Interactive)** jest bogatsze, ponieważ udostępnia pełne środowisko [interactive REPL](python-interactive-repl-in-visual-studio.md) podczas debugowania, w tym pisanie i uruchamianie kodu. Automatycznie łączy się z dowolnym procesem uruchomionym w debugerze za pomocą standardowego programu uruchamiający Python (w tym procesów dołączonych za pośrednictwem **debugowania** > **dołączania do procesu).** Nie jest jednak dostępna podczas korzystania z debugowania c/c++ w trybie mieszanym.
+Okno **interaktywne debugowania języka Python** (**debugowanie**  >  **Windows**  >  **interaktywne debugowania**systemu Windows w języku Python) jest bogatsze, ponieważ udostępnia pełne [interaktywne środowisko REPL](python-interactive-repl-in-visual-studio.md) podczas debugowania, w tym pisania i uruchamiania kodu. Automatycznie łączy się z dowolnym procesem uruchomionym w debugerze przy użyciu standardowego modułu uruchamiania języka Python (w tym procesów dołączonych za pomocą polecenia **Debug**  >  **Attach to Process**). Nie jest to jednak dostępne w przypadku korzystania z debugowania C/C++ w trybie mieszanym.
 
 ![Okno interaktywne debugowania języka Python](media/debugging-interactive.png)
 
-Okno **Debug Interactive** obsługuje specjalne polecenia meta oprócz [standardowych poleceń REPL:](python-interactive-repl-in-visual-studio.md#meta-commands)
+Okno **interaktywne debugowania** obsługuje specjalne meta polecenia oprócz [standardowych poleceń REPL](python-interactive-repl-in-visual-studio.md#meta-commands):
 
 | Polecenie | Argumenty | Opis |
 | --- | --- | --- |
-| `$continue`, `$cont`, `$c` | Rozpoczyna uruchamianie programu z bieżącej instrukcji. |
+| `$continue`, `$cont`, `$c` | Uruchamia program z bieżącej instrukcji. |
 | `$down`, `$d` | Przenieś bieżącą ramkę o jeden poziom w dół w śladzie stosu. |
 | `$frame` | | Wyświetla bieżący identyfikator ramki.
-| `$frame` | identyfikator ramki | Przełącza bieżącą klatkę na określony identyfikator ramki.
-| `$load` | Ładuje polecenia z pliku i wykonuje do końca |
+| `$frame` | Identyfikator ramki | Przełącza bieżącą ramkę do określonego identyfikatora ramki.
+| `$load` | Ładuje polecenia z pliku i wykonuje do momentu ukończenia |
 | `$proc` |  | Wyświetla bieżący identyfikator procesu. |
-| `$proc` | identyfikator procesu | Przełącza bieżący proces na określony identyfikator procesu. |
-| `$procs` | | Wyświetla listę procesów aktualnie debugowanych. |
-| `$stepin`, `$step`, `$s` | Kroki do następnego wywołania funkcji, jeśli to możliwe. |
-| `$stepout`, `$return`, `$r` | Wychodzi z bieżącej funkcji. |
-| `$stepover`, `$until`, `$unt` | Kroki w ciągu następnego wywołania funkcji. |
+| `$proc` | Identyfikator procesu | Przełącza bieżący proces do określonego identyfikatora procesu. |
+| `$procs` | | Wyświetla listę aktualnie debugowanych procesów. |
+| `$stepin`, `$step`, `$s` | Kroki do następnego wywołania funkcji, jeśli jest to możliwe. |
+| `$stepout`, `$return`, `$r` | Kroki z bieżącej funkcji. |
+| `$stepover`, `$until`, `$unt` | Kroki w następnym wywołaniu funkcji. |
 | `$thread` | | Wyświetla bieżący identyfikator wątku. |
 | `$thread` | Identyfikator wątku | Przełącza bieżący wątek do określonego identyfikatora wątku. |
-| `$threads` | | Wyświetla listę wątków aktualnie debugowanych. |
-| `$up`, `$u` | | Przenieś bieżącą ramkę o jeden poziom w górę w śladzie stosu. |
+| `$threads` | | Wyświetla listę aktualnie debugowanych wątków. |
+| `$up`, `$u` | | Przenieś bieżącą ramkę o jeden poziom wyżej w ślad stosu. |
 | `$where`, `$w`, `$bt` | Wyświetla listę ramek dla bieżącego wątku. |
 
-Należy zauważyć, że standardowe okna debugera, takie jak **Procesy,** **Wątki**i **Stos wywołań,** nie są synchronizowane z interakcyjnym oknem **Debug.** Zmiana aktywnego procesu, wątku lub ramki w oknie **Debug Interactive** nie wpływa na inne okna debugera. Podobnie zmiana aktywnego procesu, wątku lub ramki w innych oknach debugera nie wpływa na okno **Debug Interactive.**
+Należy zauważyć, że standardowe okna debugera, takie jak **procesy**, **wątki**i **stos wywołań** nie są zsynchronizowane z oknem **debugowania Interactive** . Zmiana aktywnego procesu, wątku lub ramki w oknie **interaktywnym debugowania** nie ma wpływu na inne okna debugera. Podobnie zmiana aktywnego procesu, wątku lub ramki w innych oknach debugera nie ma wpływu na okno **debugowanie interaktywne** .
 
 <a name="use-the-experimental-debugger"></a>
 
-## <a name="use-the-legacy-debugger"></a>Używanie starszego debugera
+## <a name="use-the-legacy-debugger"></a>Użyj starszego debugera
 
-Visual Studio 2017 w wersjach 15.8 i nowszych używać debugera na podstawie ptvsd wersji 4.1+. Ta wersja ptvsd jest kompatybilna z Python 2.7 i Python 3.5 +. Jeśli używasz Języka Python 2.6, 3.1 do 3.4 lub IronPython, Visual Studio pokazuje błąd, **Debuger nie obsługuje tego środowiska Python:**
+W programie Visual Studio 2017 wersje 15,8 i nowsze używają debugera opartego na ptvsd wersji 4.1 +. W programie Visual Studio 2019 wersje 16,5 i nowsze używają debugera opartego na debugpy. Te wersje debugera są zgodne z językiem Python 2,7 i Python 3.5 +. Jeśli używasz języka Python 2,6, 3,1 do 3,4 lub IronPython, program Visual Studio wyświetli błąd, **debuger nie obsługuje tego środowiska Python**:
 
 ![Debuger nie obsługuje tego błędu środowiska języka Python podczas korzystania z debugera](media/debugging-experimental-incompatible-error.png)
 
-W takich przypadkach należy użyć starszego debugera (który jest domyślny w programie Visual Studio 2017 w wersjach 15.7 i wcześniejszych). Wybierz polecenie menu**Opcje** **narzędzi,** > przejdź do**debugowania** **języka Python** > i wybierz opcję **Użyj starszego debugera.**
+W takich przypadkach należy użyć starszego debugera (co jest ustawieniem domyślnym w programie Visual Studio 2017 w wersji 15,7 i starszej). Wybierz **Tools**  >  polecenie menu**Opcje** narzędzia, przejdź do debugowania **Python**  >  **Debugging**i wybierz opcję **Użyj starszego debugera** .
 
-Jeśli zainstalowano starszą wersję ptvsd w bieżącym środowisku (na przykład wcześniejszą wersję 4.0.x lub wersję 3.x wymaganą do zdalnego debugowania), program Visual Studio może wyświetlić błąd lub ostrzeżenie.
+Jeśli w bieżącym środowisku zainstalowano starszą wersję programu ptvsd (na przykład wcześniejszą wersję 4.0. x lub wersję 3. x wymaganą do debugowania zdalnego), program Visual Studio może wyświetlić błąd lub ostrzeżenie.
 
-Nie **można załadować błędu, którego nie można załadować pakietu debugera,** pojawia się po zainstalowaniu ptvsd 3.x:
+Błąd, nie można **załadować pakietu debugera**, pojawia się po zainstalowaniu ptvsd 3. x:
 
-![Nie można załadować błędu pakietu debugera podczas korzystania z debugera](media/debugging-experimental-version-error.png)
+![Nie można załadować pakietu debugera podczas korzystania z debugera](media/debugging-experimental-version-error.png)
 
-W takim przypadku wybierz opcję **Użyj starszego debugera,** aby ustawić opcję **Użyj starszego debugera** i uruchom ponownie debuger.
+W takim przypadku wybierz pozycję **Użyj starszego debugera** , aby ustawić opcję **Użyj starszego debugera** , i ponownie uruchom debuger.
 
-Ostrzeżenie, **pakiet debugera jest nieaktualny**, pojawia się po zainstalowaniu wcześniejszej wersji 4.x ptvsd:
+Ostrzeżenie, **pakiet debugera jest nieaktualne**, pojawia się, gdy zainstalowano wcześniejszą wersję 4. x ptvsd:
 
-![Pakiet debugera jest nieaktualne ostrzeżenie podczas korzystania z debugera](media/debugging-experimental-version-warning.png)
+![W przypadku korzystania z debugera pakiet debugera jest nieaktualny.](media/debugging-experimental-version-warning.png)
 
 > [!Important]
-> Chociaż można zignorować ostrzeżenie dla niektórych wersji ptvsd, Visual Studio może nie działać poprawnie.
+> Chociaż możesz zignorować ostrzeżenie dla niektórych wersji programu ptvsd, program Visual Studio może nie działał poprawnie.
 
 Aby zarządzać instalacją ptvsd:
 
-1. Przejdź do karty **Pakiety** w oknie **Środowiska języka Python.**
+1. Przejdź do karty **pakiety** w oknie **środowiska języka Python** .
 
-1. Wpisz "ptvsd" w polu wyszukiwania i sprawdź zainstalowaną wersję ptvsd:
+1. Wprowadź ciąg "ptvsd" w polu wyszukiwania i zapoznaj się z zainstalowaną wersją programu ptvsd:
 
-    ![Sprawdzanie wersji ptvsd w oknie Środowiska Pythona](media/debugging-experimental-check-ptvsd.png)
+    ![Sprawdzanie wersji ptvsd w oknie środowiska języka Python](media/debugging-experimental-check-ptvsd.png)
 
-1. Jeśli wersja jest niższa niż 4.1.1a9 (wersja w pakiecie z programem Visual Studio), wybierz **X** po prawej stronie pakietu, aby odinstalować starszą wersję. Visual Studio następnie używa jego wersji dołączonej. (Można również odinstalować z `pip uninstall ptvsd`programu PowerShell przy użyciu .)
+1. Jeśli wersja jest niższa niż 4.1.1 A9 (wersja z programu Visual Studio), wybierz **znak X** z prawej strony pakietu, aby odinstalować starszą wersję. Program Visual Studio następnie używa jego powiązanej wersji. (Można również odinstalować program przy użyciu programu PowerShell `pip uninstall ptvsd` ).
 
-1. Alternatywnie można zaktualizować pakiet ptvsd do jego najnowszej wersji, postępując zgodnie z instrukcjami w sekcji [Rozwiązywanie problemów.](#troubleshooting)
+1. Alternatywnie możesz zaktualizować pakiet ptvsd do jego najnowszej wersji, postępując zgodnie z instrukcjami w sekcji [Rozwiązywanie problemów](#troubleshooting) .
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Jeśli masz problemy z debugerem, najpierw uaktualnij wersję ptvsd w następujący sposób:
+### <a name="for-visual-studio-2019-version-164-and-earlier-upgrade-ptvsd"></a>Dla programu Visual Studio 2019 (wersja 16,4 i starsze) ptvsd uaktualnienia
+Jeśli masz problemy z debugerem, najpierw Uaktualnij wersję debugera w następujący sposób:
 
-1. Przejdź do karty **Pakiety** w oknie **Środowiska języka Python.**
+1. Przejdź do karty **pakiety** w oknie **środowiska języka Python** .
 
-1. Wprowadź `ptvsd --upgrade` w polu wyszukiwania, a następnie wybierz polecenie **Uruchom: pip install ptvsd --upgrade**. (Można również użyć tego samego polecenia z programu PowerShell).
+1. Wprowadź `ptvsd --upgrade` w polu wyszukiwania, a następnie wybierz pozycję **Uruchom polecenie: pip install ptvsd--upgrade**. (Można również użyć tego samego polecenia z programu PowerShell).
 
-    ![Nadanie polecenia aktualizacji ptvsd w oknie Środowiska Pythona](media/debugging-experimental-upgrade-ptvsd.png)
+    ![Podawanie polecenia upgrade ptvsd w oknie środowiska języka Python](media/debugging-experimental-upgrade-ptvsd.png)
 
-Jeśli problemy będą się powtarzać, zgłać problem w [repozytorium PTVS GitHub](https://github.com/Microsoft/ptvs/issues).
+   Jeśli problemy będą się powtarzać, należy rozwiązać problem w [repozytorium GitHub PTVS](https://github.com/Microsoft/ptvs/issues).
 
-### <a name="enable-debugger-logging"></a>Włączanie rejestrowania debugera
+   > [!NOTE]
+   > W przypadku programu Visual Studio 2019 w wersji 16,5 lub nowszej debugpy jest częścią obciążenia programu Visual Studio Python i jest aktualizowany wraz z programem Visual Studio.
 
-W trakcie badania problemu debugera firma Microsoft może poprosić o włączenie i zbieranie dzienników debugera, które pomagają w diagnostyce.
+### <a name="enable-debugger-logging"></a>Włącz rejestrowanie debugera
 
-Następujące kroki umożliwiają debugowanie w bieżącej sesji programu Visual Studio:
+W trakcie badania problemu debugera firma Microsoft może zażądać włączenia i zebrania dzienników debugera, które pomagają w diagnostyce.
 
-1. Otwórz okno polecenia w programie Visual Studio przy użyciu polecenia menu **Wyświetl** > inne**okno polecenia** **systemu Windows.** > 
+Poniższe kroki umożliwiają debugowanie w bieżącej sesji programu Visual Studio:
+
+1. Otwórz okno polecenia w programie Visual Studio, używając polecenia **Wyświetl**  >  **inne**  >  **okna poleceń** systemu Windows.
 
 1. Wprowadź następujące polecenie:
 
@@ -245,18 +249,18 @@ Następujące kroki umożliwiają debugowanie w bieżącej sesji programu Visual
     DebugAdapterHost.Logging /On /OutputWindow
     ```
 
-1. Rozpocznij debugowanie i przejdź przez wszelkie kroki są niezbędne do odtworzenia problemu. W tym czasie dzienniki debugowania są wyświetlane w oknie **Dane wyjściowe** w obszarze **Dziennik hosta karty debugowania**. Następnie można skopiować dzienniki z tego okna i wkleić do problemu GitHub, e-mail, itp.
+1. Rozpocznij debugowanie i wykonaj wszelkie kroki niezbędne do odtworzenia problemu. W tym czasie Dzienniki debugowania są wyświetlane w oknie **dane wyjściowe** w obszarze **Dziennik hosta adaptera debugowania**. Następnie możesz skopiować dzienniki z tego okna i wkleić je do problemu w usłudze GitHub, wiadomości e-mail itp.
 
-    ![Dane wyjściowe rejestrowania debugera w oknie Dane wyjściowe](media/debugger-logging-output.png)
+    ![Dane wyjściowe rejestrowania debugera w oknie danych wyjściowych](media/debugger-logging-output.png)
 
-1. Jeśli program Visual Studio zawiesza się lub w inny sposób nie możesz uzyskać dostępu do okna **Dane wyjściowe,** uruchom ponownie program Visual Studio, otwórz okno polecenia i wprowadź następujące polecenie:
+1. Jeśli program Visual Studio zawiesza się lub w przeciwnym razie nie można uzyskać dostępu do okna **danych wyjściowych** , uruchom ponownie program Visual Studio, Otwórz okno polecenia i wprowadź następujące polecenie:
 
     ```ps
     DebugAdapterHost.Logging /On
     ```
 
-1. Rozpocznij debugowanie i ponownie odtwórz problem. Dzienniki debugera można następnie `%temp%\DebugAdapterHostLog.txt`znaleźć w pliku .
+1. Rozpocznij debugowanie i ponownie Odtwórz swój problem. Dzienniki debugera można znaleźć w temacie `%temp%\DebugAdapterHostLog.txt` .
 
 ## <a name="see-also"></a>Zobacz też
 
-Aby uzyskać pełne informacje na temat debugera programu Visual Studio, zobacz [Debugowanie w programie Visual Studio.](../debugger/debugger-feature-tour.md)
+Aby uzyskać szczegółowe informacje na temat debugera programu Visual Studio, zobacz [debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md).

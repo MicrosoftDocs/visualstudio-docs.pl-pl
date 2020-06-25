@@ -1,6 +1,6 @@
 ---
 title: Okno dialogowe Wybieranie typu kodu | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/12/2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.selectengines
@@ -21,20 +21,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 761845044bae9b35694bef53cae36dd64f3dd6ba
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c6831837853f2e8dd5502e57d0976899c5d31a1a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729585"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285429"
 ---
 # <a name="select-code-type-dialog-box"></a>Wybór typu kodu — Okno dialogowe
+
 Aby otworzyć to okno dialogowe, Otwórz okno dialogowe **Dołącz do procesu** , a następnie kliknij przycisk **Wybierz** .
 
- **Automatycznie Określ typ kodu do debugowania** Odpowiedni debuger zostanie wybrany na podstawie rodzaju kodu, który jest uruchomiony.
+**Automatycznie Określ typ kodu do debugowania** Odpowiedni debuger zostanie wybrany na podstawie rodzaju kodu, który jest uruchomiony.
 
- **Debuguj te typy kodu:** Z podanej listy wybierz typ kodu, który chcesz debugować.
+**Debuguj te typy kodu:** Z podanej listy wybierz typy kodu, które chcesz debugować. Może to być przydatne w przypadku [rozwiązywania problemów z awarią](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Ta opcja ogranicza wykrywanie tylko do tych typów kodu, które mają być debugowane.
 
-## <a name="see-also"></a>Zobacz także
+   ::: moniker range=">=vs-2019"
+   - Blazor webassembly — Blazor webassembly po stronie klienta
+   - Procesor GPU — kod w języku C++ uruchomiony na emulatorze oprogramowania procesora GPU
+   - JavaScript (Chrome) — kod JavaScript działający w programie Chrome
+   - JavaScript (Microsoft Edge-chrom) — JavaScript działający w programie Microsoft Edge opartym na chromie dla systemu Windows 10
+   - Debuger CDP języka JavaScript (V3) — program Chrome DevTools Protocol w wersji 3 używany do debugowania w kliencie CDP
+   - Zarządzane (CoreCLR) — .NET Core
+   - Zarządzane (kompilacja natywna) — kod języka C++/CLR
+   - Zarządzany (v 3.5, v 3.0, v 2.0) — kod .NET Framework dla .NET Framework 2,0 i wyższych (do 3,5)
+   - Zarządzany (v. 4.6, v 4.5, v 4.0) — kod .NET Framework dla .NET Framework 4,0 i wyższych
+   - Native-C/C++
+   - Node.js debugowanie — kod hostowany przez środowisko uruchomieniowe Node.js
+   - Python — Python 
+   - Skrypt — określa ogólny debuger skryptów dla języka JavaScript. Użyj bardziej restrykcyjnych opcji, jeśli mają zastosowanie do danego scenariusza, takiego jak JavaScript (Chrome).
+   - T-SQL — Transact-SQL
+   - Unity — Unity
+   - Zarządzany tryb zgodności — określa starszy debuger dla kodu zarządzanego, używany zwykle w debugowaniu w trybie mieszanym z kodem języka C++/CLR (umożliwia edytowanie i kontynuowanie w trybie mieszanym) lub do obsługi rozszerzeń przeznaczonych dla starszego debugera. W większości scenariuszy debugowania w trybie mieszanym wybierz opcję **natywny** i odpowiedni typ kodu **zarządzanego** zamiast zarządzanego trybu zgodności.
+   ::: moniker-end
+
+   W przypadku większości scenariuszy dołączania wielu debugerów w tej samej sesji debugowania nie jest obsługiwane. Możesz to zrobić przy użyciu drugiego wystąpienia programu Visual Studio.
+
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

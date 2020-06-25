@@ -1,80 +1,82 @@
 ---
-title: Opis metod zbierania wydajności | Dokumenty firmy Microsoft
-ms.date: 11/04/2016
+title: Informacje o metodach zbierania danych o wydajności | Microsoft Docs
+ms.date: 4/30/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
 helpviewer_keywords:
-- Profiling Tools, profiling methods
+- Profiling tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778092"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285754"
 ---
-# <a name="understand-performance-collection-methods"></a>Opis metod zbierania wydajności
+# <a name="understand-performance-collection-methods"></a>Zrozumienie metod zbierania danych o wydajności
 
-Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o wydajności. W tym temacie opisano różne metody oraz zasugerowano kilka scenariuszy zbierania danych za pomocą konkretnych metod.
+Narzędzia profilowania programu Visual Studio zapewniają pięć metod zbierania danych o wydajności. W tym artykule opisano różne metody i zasugerowano scenariusze, w których zbierane są dane przy użyciu określonej metody.
 
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki profiler programu Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowych technik zbierania. Zobacz [Narzędzia wydajności w aplikacjach dla systemów Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy UWP wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 |Metoda|Opis|
 |------------|-----------------|
 |[Próbkowanie](#sampling)|Zbiera dane statystyczne o pracy wykonanej przez aplikację.|
-|[Instrumentacji](#instrumentation)|Zbiera szczegółowe informacje o czasach wywołania każdej funkcji.|
+|[WMI](#instrumentation)|Zbiera szczegółowe informacje o czasach wywołania każdej funkcji.|
 |[Współbieżność](#concurrency)|Zbiera szczegółowe informacje o aplikacjach wielowątkowych.|
 |[Pamięć .NET](#net-memory)|Zbiera szczegółowe informacje o przydzielaniu pamięci i wyrzucania elementów bezużytecznych w środowisku .NET.|
-|[Interakcje między warstwami](#tier-interaction)|Zbiera informacje o synchronicznych wywołaniach funkcji środowiska ADO.NET do bazy danych programu SqlServer.<br /><br /> Profilowanie interakcji warstwy mogą być zbierane przy użyciu dowolnej wersji programu Visual Studio. Jednak dane profilowania interakcji warstwy można wyświetlać tylko w programie Visual Studio Enterprise.|
+|[Interakcje między warstwami](#tier-interaction)|Zbiera informacje o synchronicznych wywołaniach funkcji ADO.NET do bazy danych SQL Server.<br /><br /> Wszystkie wersje programu Visual Studio mogą zbierać dane profilu interakcji warstwowej. Można jednak wyświetlać te dane tylko w Visual Studio Enterprise.|
 
-Za pomocą niektórych metod profilowania można również gromadzić inne dane, takie jak informacje z liczników wydajności oprogramowania i sprzętu. Aby uzyskać więcej informacji, zobacz [Zbieranie dodatkowych danych dotyczących wydajności](../profiling/collecting-additional-performance-data.md).
+Korzystając z niektórych metod profilowania, można również zbierać dodatkowe dane, takie jak liczniki wydajności oprogramowania i sprzętu. Aby uzyskać więcej informacji, zobacz [zbieranie dodatkowych danych dotyczących wydajności](../profiling/collecting-additional-performance-data.md).
 
 ## <a name="sampling"></a>Próbkowanie
 
-Metoda profilowania Próbkowanie zbiera dane statystyczne o pracy wykonywanej przez aplikację w trakcie sesji profilowania. Mechanizm próbkowania ma uproszczoną konstrukcję i w bardzo niewielkim stopniu wpływa na wykonywanie metod aplikacji.
+Metoda profilowania próbkowania zbiera dane statystyczne o pracy wykonywanej przez aplikację podczas przebiegu profilowania. Metoda próbkowania jest lekki i ma niewielki wpływ na wykonywanie metod aplikacji.
 
-Próbkowanie jest metodą domyślną w pakiecie Visual Studio Profiling Tools. Najlepiej sprawdza się w następujących zastosowaniach:
+Próbkowanie jest domyślną metodą narzędzi profilowania programu Visual Studio. Jest to przydatne w przypadku następujących zadań:
 
-- Początkowe badania wydajności aplikacji.
-- Badanie problemów z wydajnością nawiązujących do wykorzystania procesora (CPU).
+- Początkowe eksploracje wydajności aplikacji
+- Badanie problemów z wydajnością, które obejmują wykorzystanie mikroprocesora (CPU)
 
-Metoda profilowania Próbkowanie przerywa działanie procesora komputera w ustalonych odstępach czasu i sczytuje stos wywołań funkcji. Liczby próbek wyłącznych są zwiększane dla funkcji wykonywanej, natomiast liczby próbek włącznych są zwiększane dla wszystkich funkcji wywołujących w stosie wywołań. Raporty z próbkowania przedstawiają łączne wartości tych liczb dla profilowanego modułu, funkcji, wiersza kodu źródłowego i instrukcji.
+Metoda profilowania próbkowania przerywa procesor komputera w ustalonych odstępach czasu i zbiera stos wywołań funkcji. Liczba wyłącznych próbek jest zwiększana dla funkcji, która jest uruchomiona. Liczby włączne są zwiększane dla wszystkich funkcji wywołujących w stosie wywołań. Raporty z próbkowania przedstawiają łączną liczbę tych liczb dla profilowanych modułów, funkcji, wierszy kodu źródłowego i instrukcji.
 
-Domyślnie profiler ustawia interwał próbkowania równy długości cyklu procesora. Można zmienić typ interwału na inny licznik wydajności procesora, a także ustawić liczbę zdarzeń licznika dla tego interwału. Istnieje też możliwość gromadzenia danych o profilowaniu interakcji między warstwami (TIP), które dostarczają informacji o zapytaniach wykonywanych w bazie danych programu SQL Serwer za pośrednictwem środowiska ADO.NET.
+Domyślnie profiler ustawia interwał próbkowania równy długości cyklu procesora. Można zmienić typ interwału na inny licznik wydajności procesora lub ustawić liczbę zdarzeń licznika dla interwału. Można również zbierać dane dotyczące profilowania (w ramach interakcji z warstwą). Te dane zawierają informacje o zapytaniach do bazy danych SQL Server za pomocą ADO.NET.
 
 [Zbieranie statystyk wydajności za pomocą próbkowania](../profiling/collecting-performance-statistics-by-using-sampling.md)
 
-[Zrozumienie wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)
+[Omówienie wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)
 
 [Przykładowe widoki danych metody](../profiling/profiler-sampling-method-data-views.md)
 
 ## <a name="instrumentation"></a>Oprzyrządowanie
 
-Metoda profilowania Instrumentacja zbiera szczegółowe informacje o czasach wywołania funkcji w profilowanej aplikacji. Profilowanie za pomocą instrumentacji najlepiej sprawdza się w następujących sytuacjach:
+Metoda profilowania Instrumentacji zbiera szczegółowy czas dla wywołań funkcji w profilowanej aplikacji. Profilowanie Instrumentacji jest przydatne w następujących zadaniach:
 
-- Badanie wąskich gardeł na wejściu/wyjściu, takich jak interfejsy we/wy dysku.
-- Dokładne badanie konkretnego modułu lub zbioru funkcji.
+- Badanie wąskich gardeł danych wejściowych/wyjściowych, takich jak we/wy dysku
+- Zamknij badanie określonego modułu lub zestawu funkcji
 
-Metoda Instrumentacja wprowadza do pliku binarnego kod, który wykrywa informacje o czasie działania każdej funkcji w instrumentowanym pliku oraz o każdym wywołaniu funkcji wykonanym przez te funkcje. Metoda rozpoznaje również, kiedy funkcja wywołuje operacje takie jak zapisywanie do pliku. Raporty z instrumentacji zawierają cztery wartości pokazujące łączny czas spędzony w funkcji lub wierszu kodu źródłowego:
+Metoda Instrumentacji wprowadza kod do pliku binarnego. Kod przechwytuje informacje o chronometrażu dla wszystkich funkcji w pliku instrumentacji, a każda funkcja wywołuje te funkcje. Instrumentacja określa również, kiedy funkcja wywołuje system operacyjny w celu wykonywania operacji, takich jak zapis do pliku.
 
-- Upłynęło włącznie — Łączny czas spędzony na wykonywaniu funkcji lub wiersza kodu źródłowego.
+Raporty Instrumentacji wykorzystują te cztery wartości do reprezentowania łącznego czasu spędzonego w wierszu funkcji lub kodu źródłowego:
 
-- Aplikacja włącznie — Czas spędzony na wykonywaniu funkcji lub wiersza kodu źródłowego, z wyłączeniem czasu spędzonego w wywołaniach do systemu operacyjnego.
+- Czas włączny — łączny czas, w którym jest wykonywane działanie funkcji lub wiersza kodu źródłowego.
 
-- Upłynęło wyłącznie — Czas spędzony na wykonywaniu kodu w treści funkcji lub wierszu kodu źródłowego. Nie obejmuje czasu spędzonego na wykonywaniu funkcji wywołanych przez funkcję lub wiersz kodu źródłowego.
+- Aplikacja włącznie — czas poświęcony na uruchomienie funkcji lub wiersza kodu źródłowego. Wywołania systemu operacyjnego są wykluczone.
 
-- Aplikacja wyłącznie — Czas spędzony na wykonywaniu kodu w treści funkcji lub wierszu kodu źródłowego. Nie obejmuje czasu spędzonego na wykonywaniu wywołań do systemu operacyjnego ani czasu spędzonego na wykonywaniu funkcji wywołanych przez funkcję lub wiersz kodu źródłowego.
+- Czas, który upłynął, w trakcie wykonywania funkcji lub wiersza kodu źródłowego. Wywołania innych funkcji są wykluczone.
 
-Metoda Instrumentacja pozwala gromadzić dane z liczników wydajności procesora i oprogramowania.
+- Aplikacja na wyłączność — czas spędzony na wykonywaniu funkcji lub wiersza kodu źródłowego. Wywołania systemu operacyjnego lub innych funkcji są wykluczone.
 
-[Opis wartości danych oprzyrządowania](../profiling/understanding-instrumentation-data-values.md)
+Liczniki wydajności procesora i oprogramowania można również zbierać przy użyciu metody instrumentacji.
+
+[Opis wartości danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)
 
 [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)
 
@@ -82,11 +84,25 @@ Metoda Instrumentacja pozwala gromadzić dane z liczników wydajności procesora
 
 ## <a name="concurrency"></a>Współbieżność
 
-Metoda profilowania Współbieżność zbiera informacje o aplikacjach wielowątkowych. Metoda profilowania Rywalizacja o zasoby zbiera szczegółowe informacje o stosie wywołań w każdym przypadku, gdy konkurencyjne wątki są zmuszone czekać na dostęp do wspólnego zasobu. Mechanizm wizualizacji współbieżności zbiera również bardziej ogólne informacje o wewnętrznych interakcjach aplikacji wielowątkowej, a także o jej interakcjach ze sprzętem, systemem operacyjnym i innymi procesami na komputerze hosta:
+Profilowanie współbieżności zbiera informacje o aplikacjach wielowątkowych. Profilowanie rywalizacji o zasoby zbiera szczegółowe informacje o stosie wywołań, gdy konkurujące wątki oczekują na dostęp do zasobu udostępnionego. Wizualizacja współbieżności zbiera również bardziej ogólne informacje o sposobie interakcji aplikacji wielowątkowej z:
 
-- Raporty z rywalizacji o zasoby pokazują łączną liczbę zdarzeń rywalizacji oraz całkowity czas spędzony przez moduły, funkcje, wiersze kodu źródłowego i instrukcje w oczekiwaniu na zasoby. Wykresy z osią czasu pokazują również momenty, w których dochodzi do rywalizacji.
+  - Sam.
+  - Sprzęt.
+  - System operacyjny.
+  - Inne procesy na komputerze-hoście.
 
-- Wizualizator współbieżności przedstawia w formie graficznej informacje mogące służyć do identyfikowania wąskich gardeł wydajności, zdarzeń niepełnego wykorzystania procesora, rywalizacji wątków i migracji wątków, opóźnień synchronizacji, obszarów nakładania się wejść/wyjść itd. W miarę możliwości prezentacja graficzna zawiera odwołania do odnośnych danych w wywołaniach stosów i kodzie źródłowym. Wizualizacje współbieżności można generować tylko dla aplikacji wiersza polecenia i aplikacji systemu Windows.
+Raporty rywalizacji o zasoby przedstawiają łączną liczbę rywalizacji. Zgłaszają one również łączny czas, przez który moduły, funkcje, wiersze kodu źródłowego i instrukcje oczekują na zasób. Wykresy osi czasu pokazują rywalizacje w miarę ich wystąpienia.
+
+Wizualizator współbieżności wyświetla informacje graficzne pomocne w odnalezieniu:
+
+  - Wąskie gardła wydajności.
+  - Niedostateczne wykorzystanie procesora CPU.
+  - Rywalizacja o wątki.
+  - Migracja wątku.
+  - Opóźnienia synchronizacji.
+  - Obszary nakładających się operacji we/wy.
+
+  Gdy jest to możliwe, graficzne dane wyjściowe łączą się z danymi z stosu wywołań i kodu źródłowego. Dane wizualizacji współbieżności można zbierać tylko dla aplikacji wiersza polecenia i aplikacji systemu Windows.
 
 [Opis wartości danych rywalizacji o zasoby](../profiling/understanding-resource-contention-data-values.md)
 
@@ -98,21 +114,21 @@ Metoda profilowania Współbieżność zbiera informacje o aplikacjach wielowąt
 
 ## <a name="net-memory"></a>Pamięć .NET
 
-Metoda profilowania za pomocą alokacji pamięci środowiska .NET przerywa działanie procesora komputera na każdym zdarzeniu przydziału obiektu środowiska .NET Framework w profilowanej aplikacji. Jeśli są zbierane również informacje o okresie istnienia obiektu, profiler przerywa działanie procesora po każdym zdarzeniu wyrzucania elementów bezużytecznych w środowisku .NET Framework.
+Metoda profilowania dla alokacji pamięci platformy .NET przerywa procesor CPU przy każdej alokacji obiektu .NET Framework w profilowanej aplikacji. Gdy profiler zbiera również dane o okresie istnienia obiektu, przerywa procesor po każdym .NET Framework wyrzucania elementów bezużytecznych.
 
-Profiler gromadzi informacje o typie, rozmiarze i liczbie obiektów utworzonych w alokacji lub zniszczonych podczas wyrzucania elementów bezużytecznych.
+Profiler zbiera informacje o typie, rozmiarze i liczbie obiektów utworzonych w alokacji lub zniszczonych w wyrzucaniu elementów bezużytecznych.
 
-- Gdy wystąpi zdarzenie alokacji, profiler zbiera dodatkowe informacje o stosie wywołań funkcji. Liczby alokacji wyłącznych są zwiększane dla funkcji aktualnie wykonywanej, natomiast liczby alokacji włącznych są zwiększane dla wszystkich funkcji wywołujących w stosie wywołań. Raporty ze środowiska .NET przedstawiają łączne wartości tych liczb dla profilowanych typów, modułów, funkcji, wierszy kodu źródłowego i instrukcji.
+- Gdy wystąpi zdarzenie alokacji, profiler zbiera dodatkowe informacje o stosie wywołań funkcji. Profiler zwiększa liczbę wyłącznych alokacji dla aktualnie uruchomionej funkcji. Zwiększa również liczby łącznych wartości dla wszystkich funkcji wywołujących w stosie wywołań. Raporty platformy .NET przedstawiają łączną liczbę tych liczb dla profilowanych typów, modułów, funkcji, wierszy kodu źródłowego i instrukcji.
 
-- Jeśli dochodzi do wyrzucania elementów bezużytecznych, profiler zbiera dane o obiektach zniszczonych oraz obiektach uwzględnionych we wszystkich generacjach wyrzucania. Na zakończenie sesji profilowania profiler zapisuje dane o obiektach, które nie zostały jawnie zniszczone. Raport o okresie istnienia obiektu przedstawia łączne wartości dla wszystkich typów przydzielonych w sesji profilowania.
+- Gdy następuje wyrzucanie elementów bezużytecznych, profiler zbiera dane dotyczące zniszczonych obiektów i informacji o obiektach w każdej generacji wyrzucania elementów bezużytecznych. Po zakończeniu przebiegu profilowania Profiler rejestruje dane dotyczące obiektów, które nie zostały jednoznacznie zniszczone. Raport okres istnienia obiektu przedstawia sumy dla każdego typu przydzieloną w przebiegu profilowania.
 
-Profilowania pamięci środowiska .NET można używać w trybach próbkowania i instrumentacji. Wybrany tryb nie wpływa na raporty o alokacji i okresie istnienia obiektu specyficzne dla tej metody profilowania:
+Można użyć profilowania pamięci platformy .NET w trybie próbkowania lub Instrumentacji. Wybrany tryb nie ma wpływu na raporty dotyczące alokacji i okresu istnienia obiektu, które są unikatowe dla profilowania pamięci platformy .NET.
 
-- Gdy profilowanie pamięci .NET jest wykonywane w trybie próbkowania, profiler środowiska .NET jako interwału używa zdarzeń alokacji pamięci, a liczbę przydzielonych obiektów i łączną liczbę przydzielonych bajtów pokazuje w raportach jako wartości włączne i wyłączne.
+- Po uruchomieniu profilowania pamięci platformy .NET w trybie próbkowania Profiler używa zdarzeń alokacji pamięci jako interwału. Wyświetla również łączną liczbę przydzieloną obiektów i bajtów jako wartości łączne i wyłączne w raportach.
 
-- Jeśli profilowanie pamięci .NET odbywa się w trybie instrumentacji, są zbierane szczegółowe informacje o czasie oraz o wartościach alokacji włącznie i wyłącznie.
+- Po uruchomieniu profilowania pamięci platformy .NET w trybie instrumentacji profiler zbiera szczegółowe informacje o chronometrażu wraz z wartościami alokacji włącznie i wyłącznymi.
 
-[Opis alokacji pamięci i wartości danych okresu istnienia obiektów](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
+[Opis alokacji pamięci i wartości danych czasu istnienia obiektu](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
 
 [Zbieranie danych alokacji pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
@@ -120,17 +136,18 @@ Profilowania pamięci środowiska .NET można używać w trybach próbkowania i 
 
 ## <a name="tier-interaction"></a>Interakcje między warstwami
 
-Metoda profilowania na podstawie interakcji między warstwami dodaje do pliku danych profilowania informacje o synchronicznych wywołaniach [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] między stroną utworzoną w środowisku [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] lub inną aplikacją a bazą danych programu [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]. Dane obejmują liczbę i godziny wywołań oraz maksymalne i minimalne czasy trwania wywołań. Dane interakcji między warstwami można dodawać do danych profilowania zbieranych za pomocą metod Próbkowanie, Instrumentacja, Pamięć .NET i Współbieżność.
+Profilowanie interakcji między warstwami dodaje informacje do pliku danych profilowania dotyczące [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] wywołań synchronicznych między [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] stroną lub inną aplikacją a [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] bazą danych. Dane obejmują liczbę i godzinę wywołań oraz maksymalny i minimalny czas. Można dodać dane interakcji warstwy do profilowania danych zbieranych przy użyciu metody próbkowania, instrumentacji, pamięci .NET lub współbieżności.
 
-![Dane profilu interakcji warstwy](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Przepływu danych profilowanie interakcji z warstwą](../profiling/media/tierinteraction_profilingtools.png "Przepływu danych profilowanie interakcji z warstwą")
 
-Dane interakcji między warstwami gromadzone przez narzędzia pakietu Profiling Tools
+Aby uzyskać informacje dotyczące danych interakcji warstwowych zbieranych przez narzędzia profilowania, zobacz następujące artykuły.
 
 [Zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md)
 
-[Widoki interakcji warstwy](../profiling/tier-interaction-views.md)
+[Widoki interakcji między warstwami](../profiling/tier-interaction-views.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-[Jak: Zbieranie danych o wydajności dla witryny](../profiling/how-to-collect-performance-data-for-a-web-site.md)
-sieci Web[Przewodnik dla początkujących do profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md)
+[Instrukcje: zbieranie danych wydajności dla witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+
+[Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)

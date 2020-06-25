@@ -1,54 +1,54 @@
 ---
-title: Konfigurowanie ASP.NET profilera do testów obciążenia
+title: Konfigurowanie profilera ASP.NET dla testów obciążenia
 ms.date: 10/13/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: c4f82f8f4c518a9c72399b6e28a01d112f5678c9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880237"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288211"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Jak: Konfigurowanie ASP.NET profiler do testów obciążenia przy użyciu ustawień testu w programie Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Instrukcje: Konfigurowanie profilera ASP.NET na potrzeby testów obciążenia przy użyciu ustawień testu w programie Visual Studio
 
-Karty danych diagnostycznych ASP.NET profilera można używać do zbierania informacji ASP.NET profilera. Ta karta danych diagnostycznych zbiera dane dotyczące wydajności dla ASP.NET aplikacji.
+Za pomocą adaptera danych diagnostycznych profilera ASP.NET można zbierać informacje o profilerze ASP.NET. Ten adapter danych diagnostycznych zbiera dane o wydajności dla aplikacji ASP.NET.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Tej karty danych diagnostycznych nie można używać dla testów uruchamianych przy użyciu menedżera testów firmy Microsoft (przestarzałych w programie Visual Studio 2017). Karty diagnostycznej ASP.NET profilera z testami obciążenia przy użyciu tylko w sieci Web, która wymaga programu Visual Studio Enterprise.
+> Nie można użyć tego adaptera danych diagnostycznych dla testów, które są uruchamiane za pomocą Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). Możesz użyć karty diagnostycznej profilera ASP.NET z testami obciążenia tylko przy użyciu witryn sieci Web, które wymagają Visual Studio Enterprise.
 
-Karta danych diagnostycznych ASP.NET profiler umożliwia zbieranie danych ASP.NET profilera z warstwy aplikacji po uruchomieniu testu obciążenia. Profilera nie należy uruchamiać dla długich testów obciążeniowych, na przykład trwających ponad godzinę. Wynika to z faktu, że plik profilera może się rozrosnąć, nawet do kilkuset megabajtów. Zamiast tego należy uruchomić krótsze testy obciążenia przy użyciu ASP.NET profilera, który nadal daje korzyści z głębokiej diagnozy problemów z wydajnością.
+Adapter danych diagnostycznych profilera ASP.NET umożliwia zbieranie danych profilera ASP.NET z warstwy aplikacji podczas uruchamiania testu obciążenia. Profilera nie należy uruchamiać dla długich testów obciążeniowych, na przykład trwających ponad godzinę. Wynika to z faktu, że plik profilera może się rozrosnąć, nawet do kilkuset megabajtów. Zamiast tego należy uruchamiać krótsze testy obciążenia przy użyciu profilera ASP.NET, co zapewnia korzyści wynikające z dokładnej diagnostyki problemów z wydajnością.
 
 > [!NOTE]
-> Karta danych diagnostycznych ASP.NET profile danych profilowania proces internetowych usług informacyjnych (IIS). W związku z tym nie będzie działać na serwerze sieci web rozwoju. Aby profilować witrynę sieci Web w teście obciążenia, należy zainstalować agenta testowego na komputerze, na którym działa usługi IIS. Agent testowy nie będzie generował obciążenia, a jedynie pośredniczył w zbieraniu danych. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+> Profil adaptera danych diagnostycznych profilera programu ASP.NET w procesie Internet Information Services (IIS). W związku z tym nie będzie on działał na deweloperskim serwerze sieci Web. Aby profilować witrynę sieci Web w teście obciążenia, należy zainstalować agenta testowego na komputerze, na którym są uruchomione usługi IIS. Agent testowy nie będzie generował obciążenia, a jedynie pośredniczył w zbieraniu danych. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-Aby uzyskać więcej informacji, zobacz [Jak: Tworzenie ustawienia testu dla testu obciążenia rozproszonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Aby uzyskać więcej informacji, zobacz [How to: Create a test setting for a Distributed Load test](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Konfigurowanie ASP.NET profiler dla ustawień testowych
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Skonfiguruj Profiler ASP.NET dla ustawień testu
 
-Przed wykonaniem kroków w tej procedurze, należy otworzyć ustawienia testu z programu Visual Studio i wybierz **dane i diagnostyki** strony.
+Przed wykonaniem kroków opisanych w tej procedurze należy otworzyć ustawienia testu w programie Visual Studio i wybrać stronę **dane i Diagnostyka** .
 
-1. Wybierz rolę, która ma być używana do zbierania danych ASP.NET profilera.
+1. Wybierz rolę, która ma być używana do zbierania danych programu ASP.NET Profiler.
 
     > [!WARNING]
-    > Ta rola musi być serwerem sieci web.
+    > Ta rola musi być serwerem sieci Web.
 
-2. Wybierz **ASP.NET Profilera,** aby włączyć zbieranie danych profilowania ASP.NET, a następnie wybierz pozycję **Konfiguruj**.
+2. Wybierz pozycję **ASP.NET Profiler** , aby włączyć zbieranie danych profilowania ASP.NET, a następnie wybierz pozycję **Konfiguruj**.
 
-     Zostanie wyświetlone okno dialogowe do konfigurowania ASP.NET profilowania danych.
+     Zostanie wyświetlone okno dialogowe umożliwiające skonfigurowanie zbierania danych profilowania ASP.NET.
 
-3. W **interwał próbkowania profilera**wpisz wartość, która wskazuje, ile cykli zegara procesora CPU nie zatrzymał czekać między pobieraniem ASP.NET profilowania próbek.
+3. W polu **Interwał próbkowania profilera**wpisz wartość wskazującą, ile niezatrzymanego zegara procesora CPU ma oczekiwać między pobieraniem ASP.NET profilowania.
 
-4. Aby włączyć profilowanie interakcji warstwy, wybierz pozycję **Włącz profilowanie interakcji warstwy**.
+4. Aby włączyć profilowanie interakcji między warstwami, wybierz pozycję **Włącz profilowanie interakcji między warstwami**.
 
-     Profilowanie interakcji warstwy zlicza liczbę żądań wysyłanych do serwera sieci web dla każdego artefaktu (na przykład *MyPage.aspx* lub *CompanyLogo.gif)* i czas, jaki zajęło obsługę każdego żądania. Ponadto są zbierane informacje o tym, które połączenia środowiska ADO.NET były używane w ramach żądania o stronę oraz jak wiele zapytań i wywołań procedur przechowywanych zostało wykonanych w ramach obsługi tego żądania.
+     Profilowanie interakcji między warstwami zlicza liczbę żądań wysyłanych do serwera sieci Web dla każdego artefaktu (na przykład *webpage. aspx* lub *CompanyLogo.gif*) oraz czasu, jaki zajęło obsługę każdego żądania. Ponadto są zbierane informacje o tym, które połączenia środowiska ADO.NET były używane w ramach żądania o stronę oraz jak wiele zapytań i wywołań procedur przechowywanych zostało wykonanych w ramach obsługi tego żądania.
 
      Mechanizm zbiera dwa różne zestawy informacji o czasie:
 
@@ -56,10 +56,10 @@ Przed wykonaniem kroków w tej procedurze, należy otworzyć ustawienia testu z 
 
     - Informacje o czasie (Min., Maks., Średnia i Suma) wykonania każdego zapytania.
 
-Dzięki karcie danych diagnostycznych ASP.NET profilera skonfigurowanym w ustawieniu testowym można teraz zbierać dane ASP.NET profilowania w aplikacji sieci web ASP.NET.
+Za pomocą adaptera danych diagnostycznych profilera ASP.NET skonfigurowanych w ustawieniu testu możesz teraz zbierać dane profilowania ASP.NET w aplikacji sieci Web ASP.NET.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
-- [Jak: Tworzenie ustawienia testu dla testu obciążenia rozproszonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
+- [Instrukcje: Tworzenie ustawień testowych dla testu obciążenia rozłożonego](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)

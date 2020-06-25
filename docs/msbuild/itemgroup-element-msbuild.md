@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173515"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288978"
 ---
 # <a name="itemgroup-element-msbuild"></a>Item, element (MSBuild)
 
@@ -51,7 +51,7 @@ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzęd
 |Atrybut|Opis|
 |---------------|-----------------|
 |`Condition`|Atrybut opcjonalny. Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
-|`Label`|Atrybut opcjonalny. Identyfikuje `ItemGroup` .|
+|`Label`|Atrybut opcjonalny. Identyfikuje `ItemGroup` . |
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -91,7 +91,9 @@ W prostym pliku projektu zwykle używany jest pojedynczy `ItemGroup` element, al
 
 ItemGroups mogą mieć warunki stosowane przy użyciu `Condition` atrybutu. W takim przypadku elementy są dodawane do listy elementów tylko wtedy, gdy warunek jest spełniony. Zobacz [warunki MSBuild](msbuild-conditions.md)
 
-## <a name="see-also"></a>Zobacz także
+Ten `Label` atrybut jest używany w niektórych systemach kompilacji jako sposób sterowania zachowaniami kompilacji. Można jej używać tylko w deklaracjach jako sposobu tworzenia bardziej zrozumiałych skryptów programu MSBuild lub jako ustawienia kontroli, które ma wpływ na akcje kompilacji.
+
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Items (Elementy)](../msbuild/msbuild-items.md)

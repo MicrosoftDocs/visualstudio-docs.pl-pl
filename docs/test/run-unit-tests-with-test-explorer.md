@@ -2,7 +2,7 @@
 title: Uruchamianie i debugowanie testów jednostkowych za pomocą Eksploratora testów
 description: Dowiedz się, jak uruchamiać testy za pomocą Eksploratora testów w programie Visual Studio. W tym temacie opisano sposób włączania automatycznych przebiegów testów po kompilacji, wyświetlania wyników testów, grupowania i filtrowania listy testów, tworzenia list odtwarzania, debugowania testów i używania skrótów testowych.
 ms.date: 07/29/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 author: mikejo5000
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 429892e3022854cac157605117f955fd672f8997
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6de463fbc941273bed9b949958b9463be6ea1fa3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182927"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285637"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -164,7 +164,7 @@ Można zdefiniować własne poziomy hierarchii i według **stanu** , a następni
 |**Struktura docelowa** | Grupuje testy według struktury obiektów docelowych projektów |
 |**Przestrzeń nazw**|Grupuje testy według przestrzeni nazw zawierającej.|
 |**Project**|Grupuje testy według projektu zawierającego.|
-|**Określonej**|Grupuje testy według klasy zawierającej.|
+|**Klasa**|Grupuje testy według klasy zawierającej.|
 ::: moniker-end
 
 ### <a name="traits"></a>Cech
@@ -283,7 +283,7 @@ Aby odfiltrować według innych kryteriów:
 |**Project**|Wyszukuje dopasowania w nazwach projektów testowych.|
 |**Struktura docelowa**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 |**Przestrzeń nazw**|Wyszukuje dopasowania w przestrzeniach nazw testów.|
-|**Określonej**|Wyszukuje dopasowania w nazwach klas testowych.|
+|**Klasa**|Wyszukuje dopasowania w nazwach klas testowych.|
 ::: moniker-end
 
 Aby wykluczyć podzestaw wyników filtru, należy użyć następującej składni:
@@ -353,7 +353,7 @@ Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przycis
 > [!NOTE]
 > Nie można uruchomić testu w klasie abstrakcyjnej, ponieważ testy są zdefiniowane tylko w klasach abstrakcyjnych i nie są tworzone. Aby uruchomić testy w klasach abstrakcyjnych, należy utworzyć klasę, która dziedziczy z klasy abstrakcyjnej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
 - [Uruchamianie testu jednostkowego jako procesu 64-bitowego](../test/run-a-unit-test-as-a-64-bit-process.md)

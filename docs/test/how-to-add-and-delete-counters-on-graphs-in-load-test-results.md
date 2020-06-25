@@ -1,7 +1,7 @@
 ---
-title: Dodawanie i usuwanie liczników na wykresach w wynikach testu obciążenia
+title: Dodawanie i usuwanie liczników na wykresach w Wyniki testów obciążenia
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load test results graphs, adding counters
 - load test results graph
@@ -11,78 +11,78 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b2cefc56d299c9ec917aea555aec1cd9ca53887
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115180"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288471"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Porady: dodawanie i usuwanie liczników na wykresach w wynikach testów obciążenia
 
-Za pomocą panelu **Liczniki** można dodawać liczniki wydajności do wykresu.
+Aby dodać liczniki wydajności do grafu, można użyć panelu **liczników** .
 
-![Dodano licznik do wykresu](../test/media/ltest_selectcounter.png)
+![Dodano licznik do grafu](../test/media/ltest_selectcounter.png)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Zagadnienia interwału próbkowania licznika wydajności**
+**Zagadnienia dotyczące interwału próbkowania licznika wydajności**
 
-Wybierz wartość dla **sample rate** właściwości w ustawieniach przebiegu testu obciążenia na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, taka jak wartość domyślna wynosząca pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. W przypadku dłuższych testów obciążenia zwiększenie częstotliwości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [Jak: Określanie częstotliwości próbkowania](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wybierz wartość właściwości **częstotliwość próbkowania** w ustawieniach przebiegu testu obciążenia na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, taka jak domyślna wartość pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. W przypadku dłuższych testów obciążenia zwiększenie szybkości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [How to: określ częstotliwość próbkowania](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
-Oto kilka wskazówek dotyczących przykładowych stawek:
+Poniżej przedstawiono niektóre wskazówki dotyczące stawek próbek:
 
 |Czas trwania testu obciążenia|Zalecana częstotliwość próbkowania|
 |-|-----------------------------|
-|\<1 godz.|5 sekund|
-|1 - 8 godzin|15 sekund|
-|8 - 24 godziny|30 sekund|
+|\<1 godzina|5 sekund|
+|1-8 godzin|15 sekund|
+|8-24 godzin|30 sekund|
 |> 24 godziny|60 sekund|
 
-**Zagadnienia dotyczące dołączania szczegółów chronometrażu do zbierania danych percentylowych**
+**Zagadnienia dotyczące wyświetlania szczegółowych informacji o czasie w celu zbierania danych percentylu**
 
-Istnieje właściwość w ustawieniach uruchamiania w Edytorze testu obciążenia o nazwie **Magazyn szczegółów chronometrażu**. Jeśli właściwość **magazyn szczegółów chronometrażu** jest włączona, czas wykonania każdego testu, transakcji i strony podczas testu obciążenia będzie przechowywany w repozytorium wyników testu obciążenia. Dzięki temu 90 i 95 percentyl danych, które mają być wyświetlane w **analizatorze testu obciążenia** w testach, transakcji i stron tabel.
+Istnieje właściwość w ustawieniach uruchomieniowych w Edytor testu obciążeniowego nazwanego **magazynu informacji o chronometrażu**. Jeśli właściwość **przechowywanie informacji** o czasie jest włączona, czas wykonywania poszczególnych testów, transakcji i stron podczas testu obciążenia będzie przechowywany w repozytorium wyników testu obciążenia. Pozwala to na wyświetlanie 90 i używany 95. percentylu danych w **analizatorze testu obciążenia** w tabelach testów, transakcji i stron.
 
-Istnieją dwie opcje włączania właściwości **Magazyn szczegółów chronometrażu** we właściwościach ustawień uruchamiania o nazwie **StatisticsOnly** i **AllIndividualDetails**. W obu przypadkach wszystkie poszczególne testy, strony i transakcje są czasowe, a dane percentyla są obliczane na podstawie poszczególnych danych chronometrażu. Różnica polega na tym, że z **StatisticsOnly** opcji, jak tylko dane percentyla został obliczony, poszczególne dane chronometrażu są usuwane z repozytorium. Zmniejsza to ilość miejsca, która jest wymagana w repozytorium podczas korzystania ze szczegółów chronometrażu. Jednak zaawansowani użytkownicy mogą chcieć przetwarzać dane szczegółów chronometrażu w inny sposób, za pomocą narzędzi SQL. W takim przypadku **allindividualDetails** opcja powinna być używana tak, aby dane szczegółów czasu jest dostępna dla tego przetwarzania. Ponadto jeśli ustawisz właściwość na **AllIndividualDetails**, następnie można analizować działanie użytkownika wirtualnego przy użyciu **wykresu aktywności użytkownika wirtualnego** w **analizatorze testu obciążenia** po zakończeniu testu obciążenia. Aby uzyskać więcej informacji, zobacz [Analizowanie aktywności użytkownika wirtualnego w widoku Szczegóły](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Dostępne są dwie opcje włączenia właściwości **przechowywanie informacji o chronometrażu** we właściwościach parametrów uruchomieniowych o nazwach **StatisticsOnly** i **AllIndividualDetails**. W przypadku każdej opcji wszystkie poszczególne testy, strony i transakcje są czasowe, a dane percentylu są obliczane na podstawie poszczególnych danych o chronometrażu. Różnica polega na tym, że z opcją **StatisticsOnly** , gdy tylko dane percentylu zostały obliczone, dane o poszczególnych chronometrażach są usuwane z repozytorium. Zmniejsza to ilość miejsca wymaganego w repozytorium podczas korzystania ze szczegółowych informacji o chronometrażu. Jednak zaawansowani użytkownicy mogą chcieć przetwarzać dane szczegółowe o chronometrażu w inny sposób, korzystając z narzędzi SQL. W takim przypadku należy użyć opcji **AllIndividualDetails** , aby dane szczegółowe dotyczące chronometrażu były dostępne dla tego przetwarzania. Ponadto, jeśli właściwość zostanie ustawiona na **AllIndividualDetails**, można analizować aktywność wirtualnego użytkownika za pomocą wykresu **aktywności wirtualnego użytkownika** w **analizatorze testu obciążenia** po zakończeniu testu obciążenia. Aby uzyskać więcej informacji, zobacz [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
-Ilość miejsca, która jest wymagana w repozytorium wyników testu obciążenia do przechowywania danych szczegółów chronometrażu może być bardzo duża, szczególnie w przypadku dłuższych testów obciążenia. Ponadto czas przechowywania tych danych w repozytorium wyników testu obciążenia na końcu testu obciążenia jest dłuższy, ponieważ te dane są przechowywane na agentach testu obciążenia, dopóki test obciążenia nie zakończy wykonywania. Po zakończeniu testu obciążenia dane są przechowywane w repozytorium. Domyślnie włączono właściwość Magazyn szczegółów chronometrażu. **Timing Details Storage** Jeśli jest to problem dla środowiska testowego, można ustawić **magazyn szczegółów chronometrażu** na **Brak**.
+Ilość miejsca wymaganego w repozytorium wyników testu obciążenia do przechowywania danych szczegółów chronometrażu może być bardzo duża, szczególnie w przypadku dłuższych testów obciążenia. Ponadto czas przechowywania tych danych w repozytorium wyników testu obciążenia na końcu testu obciążenia jest dłuższy, ponieważ te dane są przechowywane w agentach testów obciążenia do momentu zakończenia testu obciążenia. Po zakończeniu testu obciążenia dane są przechowywane w repozytorium. Domyślnie właściwość **przechowywanie informacji** o czasie jest włączona. Jeśli jest to problem dla środowiska testowego, można ustawić **przechowywanie informacji o chronometrażu** na **Brak**.
 
-Aby uzyskać więcej informacji, zobacz [Jak: Określanie właściwości magazynu szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Aby uzyskać więcej informacji, zobacz [How to: Określ właściwość Storage Details](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Aby wyświetlić określony licznik wydajności na wykresie testu obciążenia
 
-1. Po zakończeniu testu obciążenia lub po załadowaniu wyniku testu na pasku narzędzi analizatora testów obciążenia wybierz opcję **Wykresy**.
+1. Po zakończeniu testu obciążenia lub po załadowaniu wyniku testu na pasku narzędzi analizatora testu obciążenia wybierz **Wykres**.
 
-     Panel **Liczniki** jest wyświetlany w widoku Wykresy.
+     Panel **liczniki** zostanie wyświetlony w widoku wykresy.
 
     > [!NOTE]
-    > Jeśli panel **Liczniki** nie jest widoczny, na pasku narzędzi wybierz pozycję **Pokaż panel liczników.**
+    > Jeśli panel **liczniki** nie jest widoczny, wybierz pozycję **Pokaż panel liczników** na pasku narzędzi.
 
-2. W panelu **Liczniki** rozwiń węzły w hierarchii, aż znajdziesz licznik wydajności, który ma być wyświetlany graficznie.
+2. W panelu **liczniki** rozwiń węzeł węzły w hierarchii do momentu znalezienia licznika wydajności, który ma być wyświetlany graficznie.
 
-     Na przykład, aby wyświetlić dostępną pamięć na komputerze, na którym są uruchomione testy, rozwiń węzeł **Komputery**, rozwiń węzeł komputera, a następnie rozwiń **pozycję Pamięć**. Zostanie wyświetlony licznik **Dostępne bajty.**
+     Aby na przykład wyświetlić dostępną pamięć na komputerze, na którym są uruchomione testy, rozwiń węzeł **komputery**, rozwiń węzeł komputera, a następnie rozwiń węzeł **pamięć**. Zostanie wyświetlony licznik **dostępne MB** .
 
-3. Wybierz wykres, na którym ma być wyświetlany licznik wydajności.
+3. Wybierz wykres, na którym chcesz wyświetlić licznik wydajności.
 
-4. Kliknij prawym przyciskiem myszy licznik wydajności w panelu **Liczniki** i wybierz polecenie **Pokaż licznik na wykresie**.
+4. Kliknij prawym przyciskiem myszy licznik wydajności w panelu **liczniki** i wybierz polecenie **Pokaż licznik na grafie**.
 
     > [!TIP]
-    > Aby tymczasowo zatrzymać wyświetlanie danych licznika wydajności na wykresie, wyczyść pole wyboru licznika wydajności w legendzie. Dzięki temu statystyki min, max i średniej mogą być nadal analizowane bez wyświetlania linii trendu na wykresie. Może to być przydatne, jeśli wykres zawiera kilka nakładających się wykresów licznika wydajności podczas analizowania problemów. Aby uzyskać więcej informacji, zobacz [Używanie legendy widoku Wykresy do analizowania testów obciążenia](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
+    > Aby tymczasowo zatrzymać wyświetlanie danych licznika wydajności na wykresie, usuń zaznaczenie pola wyboru dla licznika wydajności w legendzie. Dzięki temu minimalna, maksymalna i średnia Statystyka nadal będzie analizowana bez wyświetlania linii trendu na grafie. Może to być przydatne, jeśli wykres zawiera kilka nakładających się wykresów liczników wydajności podczas analizowania problemów. Aby uzyskać więcej informacji, zobacz [Używanie legendy widoku wykresy do analizowania testów obciążenia](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-5. Aby usunąć dane licznika wydajności z wykresu, kliknij prawym przyciskiem myszy licznik wydajności w kolumnie **Licznik** legendy i wybierz polecenie **Usuń**.
+5. Aby usunąć dane licznika wydajności z grafu, kliknij prawym przyciskiem myszy licznik wydajności w kolumnie **licznik** legendy i wybierz polecenie **Usuń**.
 
-     \-lub -
+     \-oraz
 
-     Kliknij prawym przyciskiem myszy linię danych na wykresie i wybierz polecenie **Usuń**.
+     Kliknij prawym przyciskiem myszy wiersz danych na grafie i wybierz polecenie **Usuń**.
 
-     \-lub -
+     \-oraz
 
-     Wybierz licznik wydajności w kolumnie **Licznik** legendy lub linii danych na wykresie, a następnie naciśnij klawisz **Delete.**
+     Wybierz licznik wydajności w kolumnie **licznik** legendy lub wiersz danych na grafie, a następnie naciśnij klawisz **delete** .
 
     > [!NOTE]
-    > Można również umieścić licznik wydajności na legendzie, ale nie na wykresie za pomocą polecenia **Dodaj licznik na legendę.**
+    > Można również umieścić licznik wydajności w legendzie, ale nie na grafie, za pomocą polecenia **Dodaj licznik w legendzie** .
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Analizowanie wyników testu obciążenia w widoku Wykresy](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Jak: Tworzenie niestandardowych wykresów](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Analizowanie wyników testów obciążenia w widoku wykresy](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Instrukcje: Tworzenie wykresów niestandardowych](../test/how-to-create-custom-graphs-in-load-test-results.md)

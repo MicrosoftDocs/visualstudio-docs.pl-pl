@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183746"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286325"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: pisanie wizualizatora w języku C\#
 
@@ -47,7 +47,7 @@ Postępuj zgodnie z poniższymi zadaniami, aby utworzyć wizualizator.
 
 2. Wpisz odpowiednią nazwę biblioteki klas, np `MyFirstVisualizer` ., a następnie kliknij przycisk **Utwórz** lub **OK**.
 
-   Po utworzeniu biblioteki klas należy dodać odwołanie do pliku Microsoft. VisualStudio. DebuggerVisualizers. DLL, aby można było użyć zdefiniowanych tam klas. Przed dodaniem odwołania należy jednak zmienić nazwy niektórych klas, aby miały one znaczące nazwy.
+   Po utworzeniu biblioteki klas należy dodać odwołanie do Microsoft.VisualStudio.DebuggerVisualizers.DLL tak, aby można było używać klas zdefiniowanych w tym miejscu. Przed dodaniem odwołania należy jednak zmienić nazwy niektórych klas, aby miały one znaczące nazwy.
 
 ### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Aby zmienić nazwę Class1.cs i dodać Microsoft. VisualStudio. DebuggerVisualizers
 
@@ -60,7 +60,7 @@ Postępuj zgodnie z poniższymi zadaniami, aby utworzyć wizualizator.
 
 3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
-4. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj** i Znajdź plik Microsoft. VisualStudio. DebuggerVisualizers. dll.
+4. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj** i Znajdź Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
     Bibliotekę DLL można znaleźć w podkatalogu * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* w katalogu instalacyjnym programu Visual Studio.
 
@@ -106,7 +106,7 @@ Postępuj zgodnie z poniższymi zadaniami, aby utworzyć wizualizator.
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
-2. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj**, a następnie znajdź polecenie System. Windows. Forms. dll.
+2. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj**i Znajdź System.Windows.Forms.DLL.
 
     Bibliotekę DLL można znaleźć w *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
@@ -187,7 +187,7 @@ W kodzie po stronie debugera należy określić typ do wizualizacji (źródło o
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **MyTestConsole** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
-2. W oknie dialogowym **Dodawanie odwołania** kliknij kartę **Przeglądaj** , a następnie wybierz pozycję Microsoft. VISUALSTUDIO. DebuggerVisualizers. dll.
+2. W oknie dialogowym **Dodaj odwołanie** wybierz kartę **Przeglądaj** , Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
 3. Kliknij przycisk **OK**.
 
@@ -235,6 +235,8 @@ W kodzie po stronie debugera należy określić typ do wizualizacji (źródło o
 
    Jeśli chcesz użyć wizualizatora [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zamiast tylko wywołać go z zespołu testowego, musisz go zainstalować. Aby uzyskać więcej informacji, zobacz [How to: Install the wizualizator](../debugger/how-to-install-a-visualizer.md).
 
+::: moniker range="vs-2017"
+
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Tworzenie wizualizatora przy użyciu szablonu elementu wizualizatora
 
 Do tej pory w tym instruktażu pokazano, jak utworzyć wizualizator ręcznie. Zostało to zrobione w ramach ćwiczenia szkoleniowego. Teraz, gdy wiesz już, jak działa prosty wizualizator, istnieje łatwiejszy sposób, aby go utworzyć: przy użyciu szablonu elementu wizualizatora.
@@ -268,8 +270,9 @@ Najpierw należy utworzyć nowy projekt biblioteki klas.
 5. Kliknij pozycję **Dodaj**.
 
    To wszystko. Spójrz na plik SecondVisualizer.cs i Wyświetl kod, który został dodany przez szablon. Przejdź dalej i poeksperymentuj z kodem. Teraz, gdy znasz już podstawowe elementy, jesteś w trakcie tworzenia bardziej złożonych i przydatnych wizualizatorów.
+::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
 - [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)

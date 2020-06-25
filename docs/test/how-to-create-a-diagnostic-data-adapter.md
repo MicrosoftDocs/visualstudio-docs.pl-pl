@@ -1,74 +1,74 @@
 ---
 title: 'Porady: tworzenie adaptera danych diagnostycznych'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b198d8d3e9156b8a38325034bf19ce96b742d9e
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880159"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288081"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Jak: Tworzenie karty danych diagnostycznych
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Instrukcje: Tworzenie adaptera danych diagnostycznych
 
-Aby utworzyć *kartę danych diagnostycznych,* należy utworzyć bibliotekę klas za pomocą programu Visual Studio, a następnie dodać interfejsy API karty danych diagnostycznych dostarczone przez program Visual Studio Enterprise do biblioteki klas. Wyślij wszelkie informacje, które mają jako strumień <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> lub plik do dostarczonych przez platformę, podczas obsługi zdarzeń, które są wywoływane podczas przebiegu testu. Strumienie lub pliki wysyłane <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> do są przechowywane jako załączniki do wyników testów po zakończeniu testu. Jeśli utworzysz błąd z tych wyników [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]testów lub gdy używasz , pliki są również połączone z błędem.
+Aby utworzyć *adapter danych diagnostycznych*, należy utworzyć bibliotekę klas przy użyciu programu Visual Studio, a następnie dodać do biblioteki klas interfejsy API adaptera danych diagnostycznych udostępniane przez Visual Studio Enterprise. Wyślij wszystkie informacje, które mają zostać przesłane jako strumień lub plik do <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> dostarczone przez platformę, podczas obsługi zdarzeń, które są wywoływane podczas przebiegu testu. Strumienie lub pliki wysyłane do programu <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> są przechowywane jako załączniki do wyników testu, gdy test zakończy się. Jeśli tworzysz usterkę z tych wyników testów lub używasz [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] , pliki są również połączone z usterką.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Można utworzyć kartę danych diagnostycznych, która wpływa na komputer, na którym są uruchamiane testy, lub komputer, który jest częścią środowiska używanego do uruchamiania aplikacji w ramach testu. Na przykład zbieranie plików na komputerze testowym, gdzie są uruchamiane testy lub zbieranie plików na komputerze obsługującym rolę serwera sieci web dla aplikacji.
+Można utworzyć adapter danych diagnostycznych, który ma wpływ na komputer, na którym są uruchamiane testy, lub maszynę, która jest częścią środowiska używanego do uruchamiania testowanej aplikacji. Przykładowo zbieranie plików na maszynie testowej, w której testy są uruchamiane, lub zbieranie plików na komputerze obsługującym rolę serwera sieci Web dla aplikacji.
 
-Można nadać karcie danych diagnostycznych przyjazną nazwę, która jest wyświetlana podczas tworzenia ustawień testu przy użyciu programu Visual Studio lub Programu Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). Ustawienia testowe umożliwiają zdefiniowanie roli komputera, która będzie uruchamiać określone karty danych diagnostycznych w danym środowisku po uruchomieniu testów. Można również skonfigurować karty danych diagnostycznych podczas tworzenia ustawień testu. Na przykład można utworzyć kartę danych diagnostycznych, która zbiera dzienniki niestandardowe z serwera sieci web. Podczas tworzenia ustawień testu, można wybrać, aby uruchomić tę kartę danych diagnostycznych na komputerze lub komputerach, które wykonują tę rolę serwera sieci web i można zmodyfikować konfigurację dla ustawień testu, aby zebrać tylko trzy ostatnie dzienniki, które zostały utworzone. Aby uzyskać więcej informacji o ustawieniach testu, zobacz [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+Możesz nadać karcie danych diagnostycznych przyjazną nazwę wyświetlaną podczas tworzenia ustawień testu przy użyciu programu Visual Studio lub Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). Ustawienia testu umożliwiają zdefiniowanie, która rola maszyny będzie uruchamiać określone adaptery danych diagnostycznych w środowisku podczas uruchamiania testów. Możesz również skonfigurować adaptery danych diagnostycznych podczas tworzenia ustawień testu. Można na przykład utworzyć adapter danych diagnostycznych, który zbiera niestandardowe dzienniki z serwera sieci Web. Podczas tworzenia ustawień testu można wybrać opcję uruchomienia tego adaptera danych diagnostycznych na komputerze lub na maszynach, które wykonują tę rolę serwera sieci Web, a także zmodyfikować konfigurację ustawień testu, aby zebrać tylko ostatnie trzy ostatnio utworzone dzienniki. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-Zdarzenia są wywoływane po uruchomieniu testów, dzięki czemu karta danych diagnostycznych może wykonywać zadania w tym momencie w teście.
+Zdarzenia są wywoływane po uruchomieniu testów, aby adapter danych diagnostycznych mógł wykonywać zadania w tym punkcie testu.
 
 > [!IMPORTANT]
-> Te zdarzenia mogą być wywoływane w różnych wątkach, zwłaszcza gdy masz testy uruchomione na wielu komputerach. W związku z tym należy pamiętać o możliwych problemów wątków i nie przypadkowo uszkodzić wewnętrzne dane karty niestandardowej. Upewnij się, że karta danych diagnostycznych jest bezpieczna dla wątków.
+> Te zdarzenia mogą być wywoływane w różnych wątkach, zwłaszcza gdy testy są uruchomione na wielu komputerach. W związku z tym trzeba mieć świadomość ewentualnych problemów z wątkami i niezamierzonego uszkodzenia danych wewnętrznych karty niestandardowej. Upewnij się, że adapter danych diagnostycznych jest bezpieczny wątkowo.
 
-Poniżej znajduje się częściowa lista kluczowych zdarzeń, których można użyć podczas tworzenia karty danych diagnostycznych. Aby uzyskać pełną listę zdarzeń karty danych <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> diagnostycznych, zobacz klasy abstrakcyjnej.
+Poniżej znajduje się częściowa lista kluczowych zdarzeń, których można użyć podczas tworzenia adaptera danych diagnostycznych. Aby uzyskać pełną listę zdarzeń karty danych diagnostycznych, zobacz Klasa abstract <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> .
 
-|Wydarzenie|Opis|
+|Zdarzenie|Opis|
 |-|-----------------|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Początek serii próbnej|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Koniec przebiegu testowego|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Początek każdego testu w przebiegu testowym|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseEnd>|Koniec każdego testu w serii próbnej|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepStart>|Początek każdego etapu testu w teście|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepEnd>|Koniec każdego etapu testu w teście|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Początek przebiegu testu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Koniec przebiegu testu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Początek każdego testu w przebiegu testu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseEnd>|Koniec każdego testu w przebiegu testowym|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepStart>|Początek każdego kroku testu w teście|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepEnd>|Koniec każdego kroku testu w teście|
 
 > [!NOTE]
-> Po zakończeniu testu ręcznego nie więcej zdarzeń zbierania danych są wysyłane do karty danych diagnostycznych. Po ponownym uruchomieniu testu będzie miał nowy identyfikator przypadku testowego. Jeśli użytkownik resetuje test podczas testu (który <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> wywołuje zdarzenie) lub zmienia wynik kroku testu, żadne zdarzenie zbierania danych nie jest wysyłane do karty danych diagnostycznych, ale identyfikator przypadku testowego pozostaje taki sam. Aby ustalić, czy przypadek testowy został zresetowany, należy śledzić identyfikator przypadku testowego w karcie danych diagnostycznych.
+> Po zakończeniu testu ręcznego żadne zdarzenia zbierania danych nie są wysyłane do adaptera danych diagnostycznych. Gdy test zostanie uruchomiony ponownie, będzie miał nowy identyfikator przypadku testowego. Jeśli użytkownik resetuje test w trakcie testu (który wywołuje <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> zdarzenie) lub zmienia wynik kroku testu, żadne zdarzenie zbierania danych nie jest wysyłane do adaptera danych diagnostycznych, ale identyfikator przypadku testowego pozostaje taka sama. Aby określić, czy przypadek testowy został zresetowany, należy śledzić identyfikator przypadku testowego na karcie danych diagnostycznych.
 
-Poniższa procedura służy do tworzenia karty danych diagnostycznych, która zbiera plik danych, który jest oparty na informacjach, które można skonfigurować podczas tworzenia ustawień testu.
+Poniższa procedura umożliwia utworzenie adaptera danych diagnostycznych, który zbiera dane na podstawie informacji skonfigurowanych podczas tworzenia ustawień testu.
 
-Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostycznych, w tym niestandardowy edytor konfiguracji, zobacz [Przykładowy projekt tworzenia karty danych diagnostycznych](../test/quickstart-create-a-load-test-project.md).
+Aby zapoznać się z kompletnym przykładowym projektem adaptera danych diagnostycznych, w tym niestandardowym edytorem konfiguracji, zobacz [przykładowy projekt do tworzenia adaptera danych diagnostycznych](../test/quickstart-create-a-load-test-project.md).
 
-## <a name="create-and-install-a-diagnostic-data-adapter"></a>Tworzenie i instalowanie karty danych diagnostycznych
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Tworzenie i Instalowanie adaptera danych diagnostycznych
 
-1. Utwórz nowy projekt **biblioteki klas.**
+1. Utwórz nowy projekt **biblioteki klas** .
 
 2. Dodaj zestaw **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-   1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy **pozycję Odwołania** i wybierz polecenie Dodaj **odwołanie.**
+   1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** .
 
-   2. Wybierz **pozycję .NET** i znajdź **plik Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2. Wybierz pozycję **.NET** i Znajdź **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3. Wybierz pozycję **OK**.
+   3. Wybierz przycisk **OK**.
 
-3. Dodaj zestaw **Microsoft.VisualStudio.QualityTools.Common**.
+3. Dodaj zestaw **Microsoft. VisualStudio. QualityTools. Common**.
 
-   1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy **pozycję Odwołania** i wybierz polecenie Dodaj **odwołanie.**
+   1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **odwołania** i wybierz polecenie **Dodaj odwołanie** .
 
-   2. Wybierz **/.NET**, znajdź **witrynę Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2. Wybierz pozycję **/.NET**, a następnie Znajdź **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3. Wybierz pozycję **OK**.
+   3. Wybierz przycisk **OK**.
 
-4. Dodaj do `using` pliku klasy następujące dyrektywy:
+4. Dodaj następujące `using` dyrektywy do pliku klasy:
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.Common;
@@ -79,13 +79,13 @@ Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostyc
    using System;
    ```
 
-5. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do klasy kartę danych diagnostycznych, aby zidentyfikować ją jako kartę danych diagnostycznych, zastępując **firmę,** **produkt**i **wersję** odpowiednimi informacjami dla karty danych diagnostycznych:
+5. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do klasy dla karty danych diagnostycznych, aby zidentyfikować ją jako adapter danych diagnostycznych, zastępując **firmę**, **produkt**i **wersję** odpowiednimi informacjami dla adaptera danych diagnostycznych:
 
    ```csharp
    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
    ```
 
-6. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> atrybut do klasy, zastępując parametry odpowiednimi informacjami dla karty danych diagnostycznych:
+6. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> atrybut do klasy, zastępując parametry odpowiednimi informacjami dla adaptera danych diagnostycznych:
 
    ```csharp
    [DataCollectorFriendlyName("Collect Log Files", false)]
@@ -94,11 +94,11 @@ Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostyc
     Ta przyjazna nazwa jest wyświetlana w działaniu ustawień testu.
 
    > [!NOTE]
-   > Można również <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> dodać, aby `Type` określić edytor konfiguracji niestandardowej dla tej karty danych i opcjonalnie określić plik pomocy do użycia w edytorze.
+   > Możesz również dodać, <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> Aby określić `Type` niestandardowy Edytor konfiguracji dla tej karty danych i opcjonalnie określić plik pomocy, który ma być używany przez Edytor.
    >
-   > Można również <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> zastosować, aby określić, że zawsze powinna być włączona.
+   > Można również zastosować, <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> Aby określić, że powinien być zawsze włączony.
 
-7. Klasa karty danych diagnostycznych <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> musi dziedziczyć z klasy w następujący sposób:
+7. Klasa adaptera danych diagnostycznych musi dziedziczyć z <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> klasy w następujący sposób:
 
    ```csharp
    public class MyDiagnosticDataAdapter : DataCollector
@@ -113,7 +113,7 @@ Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostyc
    private XmlElement configurationSettings;
    ```
 
-9. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> metodę i **Dispose** metody. W `Initialize` metodzie należy zainicjować ujście danych, wszelkie dane konfiguracyjne z ustawień testu i zarejestrować programy obsługi zdarzeń, które mają być używane w następujący sposób:
+9. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> metodę i metodę **Dispose** . W `Initialize` metodzie należy zainicjować ujścia danych, dowolne dane konfiguracji z ustawień testu i zarejestrować procedury obsługi zdarzeń, które mają być używane w następujący sposób:
 
     ```csharp
     public override void Initialize(
@@ -158,7 +158,7 @@ Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostyc
     }
     ```
 
-10. Użyj następującego kodu obsługi zdarzeń i prywatnej metody do zbierania pliku dziennika wygenerowanego podczas testu:
+10. Użyj następującego kodu programu obsługi zdarzeń i metody prywatnej, aby zebrać plik dziennika wygenerowany podczas testu:
 
     ```csharp
     public void OnTestCaseEnd(sender, TestCaseEndEventArgs e)
@@ -208,14 +208,14 @@ Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostyc
     }
     ```
 
-     Pliki te są dołączone do wyników testów. Jeśli utworzysz błąd z tych wyników [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]testów lub gdy używasz , pliki są również dołączone do błędu.
+     Te pliki są dołączone do wyników testu. Jeśli tworzysz usterkę z tych wyników testów lub używasz [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] , pliki są również dołączone do usterki.
 
-     Jeśli chcesz używać własnego edytora do zbierania danych do użycia w ustawieniach testu, zobacz [Jak: Tworzenie niestandardowego edytora danych dla karty danych diagnostycznych](../test/quickstart-create-a-load-test-project.md).
+     Jeśli chcesz użyć własnego edytora do zbierania danych do użycia w ustawieniach testu, zobacz [jak to zrobić: Tworzenie niestandardowego edytora dla danych dla karty danych diagnostycznych](../test/quickstart-create-a-load-test-project.md).
 
-11. Aby zebrać plik dziennika po zakończeniu testu na podstawie tego, co użytkownik skonfigurowany w ustawieniach testu, należy utworzyć plik *App.config* i dodać go do rozwiązania. Ten plik ma następujący format i musi zawierać identyfikator URI dla karty danych diagnostycznych, aby go zidentyfikować. Zastąp wartości rzeczywiste dla "Company/ProductName/Version".
+11. Aby zebrać plik dziennika, gdy test zakończy się w oparciu o to, co użytkownik skonfigurował w ustawieniach testu, należy utworzyć plik *App.config* i dodać go do rozwiązania. Ten plik ma następujący format i musi zawierać identyfikator URI adaptera danych diagnostycznych w celu jego zidentyfikowania. Podstaw wartości rzeczywiste dla "Firma/ProductName/wersja".
 
     > [!NOTE]
-    > Jeśli nie trzeba konfigurować żadnych informacji dla karty danych diagnostycznych, nie trzeba tworzyć pliku konfiguracyjnego.
+    > Jeśli nie trzeba konfigurować żadnych informacji dla karty danych diagnostycznych, nie trzeba tworzyć pliku konfiguracji.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -241,27 +241,27 @@ Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostyc
     ```
 
     > [!NOTE]
-    > Domyślny element konfiguracji może zawierać wszystkie wymagane dane. Jeśli użytkownik nie skonfiguruje karty danych diagnostycznych w ustawieniach testu, domyślne dane zostaną przekazane do karty danych diagnostycznych po jej wykonaniu. Ponieważ kod XML dodawany do `<DefaultConfigurations>` sekcji prawdopodobnie nie będzie częścią zadeklarowanego schematu, można zignorować wszystkie błędy XML, które generuje.
+    > Domyślny element konfiguracji może zawierać wymagane dane. Jeśli użytkownik nie skonfiguruje adaptera danych diagnostycznych w ustawieniach testu, domyślne dane zostaną przesłane do adaptera danych diagnostycznych, gdy zostanie on uruchomiony. Ponieważ kod XML, który dodasz do `<DefaultConfigurations>` sekcji, prawdopodobnie nie będzie częścią zadeklarowanego schematu, można zignorować wszystkie wygenerowane błędy XML.
     >
-    > Istnieją inne przykłady plików konfiguracyjnych w następującej ścieżce na podstawie katalogu instalacji: *Pliki programu\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
+    > Istnieją inne przykłady plików konfiguracji w następującej ścieżce w oparciu o katalog instalacyjny: *Program Files\Microsoft Visual Studio 10.0 \ Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     Aby uzyskać więcej informacji na temat konfigurowania ustawień testu do używania środowiska po uruchomieniu testów, zobacz [Zbieranie danych diagnostycznych w testach ręcznych (plany testów platformy Azure).](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+     Aby uzyskać więcej informacji na temat sposobu konfigurowania ustawień testu do korzystania ze środowiska podczas uruchamiania testów, zobacz [zbieranie danych diagnostycznych w testach ręcznych (Azure test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-     Aby uzyskać więcej informacji na temat instalowania pliku konfiguracyjnego, zobacz [Jak: Instalowanie niestandardowej karty danych diagnostycznych](../test/quickstart-create-a-load-test-project.md)
+     Aby uzyskać więcej informacji na temat instalowania pliku konfiguracji, zobacz [How to: Install a Custom Diagnostic Data adapter](../test/quickstart-create-a-load-test-project.md)
 
-12. Skompiluj rozwiązanie, aby utworzyć zestaw karty danych diagnostycznych.
+12. Skompiluj rozwiązanie, aby utworzyć zestaw adaptera danych diagnostycznych.
 
-13. Aby uzyskać informacje dotyczące instalowania edytora [niestandardowego, zobacz Jak: Instalowanie niestandardowej karty danych diagnostycznych](../test/quickstart-create-a-load-test-project.md).
+13. Informacje o instalowaniu edytora niestandardowego można znaleźć w temacie [How to: Install a Custom Diagnostic Data adapter](../test/quickstart-create-a-load-test-project.md).
 
-14. Aby uzyskać więcej informacji na temat konfigurowania ustawień testu do używania środowiska po uruchomieniu testów, zobacz [Zbieranie danych diagnostycznych w testach ręcznych (plany testów platformy Azure).](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+14. Aby uzyskać więcej informacji na temat sposobu konfigurowania ustawień testu do korzystania ze środowiska podczas uruchamiania testów, zobacz [zbieranie danych diagnostycznych w testach ręcznych (Azure test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-15. Aby wybrać kartę danych diagnostycznych, należy najpierw wybrać istniejące ustawienia testu lub utworzyć nowe z programu Visual Studio lub Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). Karta jest wyświetlana na karcie **Dane i diagnostyka** ustawień testu z przyjazną nazwą przypisaną do klasy.
+15. Aby wybrać adapter danych diagnostycznych, należy najpierw wybrać istniejące ustawienia testu lub utworzyć nowe z programu Visual Studio lub Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). Karta jest wyświetlana na karcie **dane i Diagnostyka** ustawień testu z przyjazną nazwą, która została przypisana do klasy.
 
-16. Ustaw te ustawienia testu jako aktywne. Aby uzyskać więcej informacji o ustawieniach testu, zobacz [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+16. Ustaw te ustawienia testu jako aktywne. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-17. Uruchom testy przy użyciu ustawień testu z wybraną kartą danych diagnostycznych.
+17. Uruchom testy przy użyciu ustawień testowych z wybraną kartą danych diagnostycznych.
 
-    Określony plik danych jest dołączony do wyników testów.
+    Określony plik danych jest dołączany do wyników testu.
 
 ## <a name="see-also"></a>Zobacz też
 
@@ -272,7 +272,7 @@ Aby uzyskać kompletny przykładowy przykładowy projekt karty danych diagnostyc
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
-- [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
-- [Zbieranie danych diagnostycznych w testach ręcznych (plany testów platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [Zbieranie danych diagnostycznych podczas testowania (plany testów platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Jak: Tworzenie niestandardowego edytora danych dla karty danych diagnostycznych](../test/quickstart-create-a-load-test-project.md)
+- [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
+- [Zbieranie danych diagnostycznych w testach ręcznych (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Zbieraj dane diagnostyczne podczas testowania (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Instrukcje: Tworzenie niestandardowego edytora dla danych dla adaptera danych diagnostycznych](../test/quickstart-create-a-load-test-project.md)

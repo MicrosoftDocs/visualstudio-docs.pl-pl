@@ -1,5 +1,5 @@
 ---
-title: XmlPeek Zadanie | Dokumenty firmy Microsoft
+title: Xmlwgląd — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,38 +16,36 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a76bf033fa3eb85f0626478b965285f32e5fb6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094663"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286124"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek — zadanie
 
-Zwraca wartości określone przez XPath Query z pliku XML.
+Zwraca wartości określone przez zapytanie XPath z pliku XML.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli `XmlPeek` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `XmlPeek` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Namespaces`|Parametr `String` opcjonalny.<br /><br /> Określa przestrzenie nazw prefiksów kwerend xpath.|
-|`Query`|Parametr `String` opcjonalny.<br /><br /> Określa kwerendę XPath.|
-|`Result`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera wyniki, które są zwracane przez to zadanie.|
-|`XmlContent`|Parametr `String` opcjonalny.<br /><br /> Określa dane wejściowe XML jako ciąg.|
-|`XmlInputPath`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> opcjonalny.<br /><br /> Określa dane wejściowe XML jako ścieżkę pliku.|
+|`Namespaces`|Opcjonalny `String` parametr.<br /><br /> Określa przestrzenie nazw dla prefiksów zapytania XPath.|
+|`Query`|Opcjonalny `String` parametr.<br /><br /> Określa zapytanie XPath.|
+|`Result`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera wyniki, które są zwracane przez to zadanie.|
+|`XmlContent`|Opcjonalny `String` parametr.<br /><br /> Określa dane wejściowe w formacie XML jako ciąg.|
+|`XmlInputPath`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa dane wejściowe w formacie XML jako ścieżkę pliku.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów, które są wymienione w tabeli, to <xref:Microsoft.Build.Tasks.TaskExtension> zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy, która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
-
-
+ Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
-Oto przykładowy plik `settings.config` XML do odczytania:
+Oto przykładowy plik XML `settings.config` do odczytania:
 
 ```xml
 <appSettings>
@@ -55,7 +53,7 @@ Oto przykładowy plik `settings.config` XML do odczytania:
 </appSettings>
 ```
 
-W tym przykładzie, jeśli `value`chcesz przeczytać , użyj kodu następującego:
+W tym przykładzie, jeśli chcesz odczytać `value` , użyj kodu w następujący sposób:
 
 ```xml
 <Target Name="BeforeBuild">
@@ -74,7 +72,49 @@ W tym przykładzie, jeśli `value`chcesz przeczytać , użyj kodu następująceg
 </Target>
 ```
 
+Za pomocą przestrzeni nazw XML, należy użyć `Namespaces` parametru, jak w poniższym przykładzie. Przy użyciu wejściowego pliku XML `XMLFile1.xml` :
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<class AccessModifier='public' Name='test' xmlns:s='http://nsurl'>
+  <s:variable Type='String' Name='a'>This</s:variable>
+  <s:variable Type='String' Name='b'>is</s:variable>
+  <s:variable Type='String' Name='c'>Sparta!</s:variable>
+  <method AccessModifier='public static' Name='GetVal' />
+</class>
+```
+
+I następujące `Target` zdefiniowane w pliku projektu:
+
+```xml
+  <Target Name="TestPeek" BeforeTargets="Build">
+    <!-- Find the Name attributes -->
+    <XmlPeek XmlInputPath="XMLFile1.xml"
+             Query="//s:variable/@Name"
+             Namespaces="&lt;Namespace Prefix='s' Uri='http://nsurl' /&gt;">
+      <Output TaskParameter="Result" ItemName="value1" />
+    </XmlPeek>
+    <Message Text="@(value1)"/>
+    <!-- Find 'variable' nodes (XPath query includes ".") -->
+    <XmlPeek XmlInputPath="XMLFile1.xml"
+             Query="//s:variable/."
+             Namespaces="&lt;Namespace Prefix='s' Uri='http://nsurl' /&gt;">
+      <Output TaskParameter="Result" ItemName="value2" />
+    </XmlPeek>
+    <Message Text="@(value2)"/>
+  </Target>
+```
+
+Dane wyjściowe zawierają następujące elementy `TestPeek` docelowe:
+
+```output
+  TestPeek output:
+  a;b;c
+  <s:variable Type="String" Name="a" xmlns:s="http://nsurl">This</s:variable>;<s:variable Type="String" Name="b" xmlns:s="http://nsurl">is</s:variable>;<s:variable Type="String" Name="c" xmlns:s="http://nsurl">Sparta!</s:variable>
+```
+
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Składnia zapytania XPath](https://wikipedia.org/wiki/XPath)

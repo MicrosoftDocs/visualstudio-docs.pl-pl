@@ -1,5 +1,5 @@
 ---
-title: WriteLinesToFile Zadanie | Dokumenty firmy Microsoft
+title: WriteLinesToFile — — zadanie | Microsoft Docs
 ms.date: 09/20/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b78ac2347a5143aeb532a4bcc294551430584b4a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630668"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286105"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile — zadanie
 
@@ -31,25 +31,25 @@ Zapisuje ścieżki określonych elementów do określonego pliku tekstowego.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
- W poniższej tabeli `WriteLinestoFile` opisano parametry zadania.
+ W poniższej tabeli opisano parametry `WriteLinestoFile` zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`File`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa plik, do który mają być zapisywane elementy.|
-|`Lines`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> `[]` opcjonalny.<br /><br /> Określa elementy, które mają być zapisywane w pliku.|
-|`Overwrite`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`zadanie zastąpi istniejącą zawartość w pliku.|
-|`Encoding`|Parametr `String` opcjonalny.<br /><br /> Wybiera kodowanie znaków, na przykład "Unicode".  Zobacz też <xref:System.Text.Encoding>.|
-|`WriteOnlyWhenDifferent`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`określony plik docelowy, jeśli istnieje, zostanie najpierw odczytany w celu porównania z tym, co zostałoby napisane. Jeśli plik jest identyczny, plik nie jest zapisywany na dysku, a sygnatura czasowa zostanie zachowana.|
+|`File`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa plik, do którego mają zostać zapisane elementy.|
+|`Lines`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa elementy do zapisu w pliku. Wartość domyślna to pusta lista.|
+|`Overwrite`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` zadanie zastąpi istniejącą zawartość pliku. Wartość domyślna to `false`.|
+|`Encoding`|Opcjonalny `String` parametr.<br /><br /> Wybiera kodowanie znaków, na przykład "Unicode". Wartość domyślna to UTF-8.  Zobacz też <xref:System.Text.Encoding>.|
+|`WriteOnlyWhenDifferent`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` plik docelowy zostanie określony (jeśli istnieje), zostanie najpierw odczytany w celu porównania z zapisaniem zadania. Jeśli taka sama, plik nie jest zapisywana na dysku i sygnatura czasowa zostanie zachowana. Wartość domyślna to `false`.|
 
 ## <a name="remarks"></a>Uwagi
 
- Jeśli `Overwrite` `true`jest , tworzy nowy plik, zapisz zawartość do pliku, a następnie zamyka plik. Jeśli plik docelowy już istnieje, zostanie zastąpiony. Jeśli `Overwrite` `false`tak, dołącza zawartość do pliku, tworząc plik docelowy, jeśli jeszcze nie istnieje.
+ Jeśli `Overwrite` jest `true` , tworzy nowy plik, zapisuje zawartość w pliku, a następnie zamyka plik. Jeśli plik docelowy już istnieje, zostanie nadpisany. Jeśli `Overwrite` jest `false` , dołącza zawartość do pliku, tworząc plik docelowy, jeśli jeszcze nie istnieje.
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie `WriteLinesToFile` użyto zadania do zapisania `MyItems` ścieżek elementów w `MyTextFile` kolekcji elementów do pliku określonego przez kolekcję elementów.
+ Poniższy przykład używa zadania, `WriteLinesToFile` Aby zapisać ścieżki elementów w `MyItems` kolekcji elementów do pliku określonego przez `MyTextFile` kolekcję elementów.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -70,7 +70,7 @@ Zapisuje ścieżki określonych elementów do określonego pliku tekstowego.
 </Project>
 ```
 
-W tym przykładzie używamy właściwości z osadzonymi nowymi wierszami do pisania pliku tekstowego z wieloma wierszami. Jeśli wpis `Lines` w ma osadzone znaki nowego wiersza, nowe wiersze zostaną uwzględnione w pliku wyjściowym. W ten sposób można odwoływać się do właściwości wieloliniowych.
+W tym przykładzie użyto właściwości z osadzonym znakiem nowego wiersza, aby napisać plik tekstowy z wieloma wierszami. Jeśli wpis w `Lines` zawiera osadzone znaki nowego wiersza, nowe wiersze zostaną uwzględnione w pliku wyjściowym. W ten sposób można odwoływać się do wielowierszowych właściwości.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -1,7 +1,7 @@
 ---
 title: Debugowanie funkcji interfejsu API systemu Windows | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 06/03/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.api
@@ -22,19 +22,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c4141cc1c1bee201435c63317c662181113dff70
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734346"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286406"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak można debugować funkcje API systemu Windows?
 Jeśli chcesz debugować funkcję interfejsu API systemu Windows z załadowanymi symbolami NT, należy wykonać następujące czynności.
 
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Aby ustawić punkt przerwania w funkcji interfejsu API systemu Windows z załadowanymi symbolami NT
 
-- Wprowadź nazwę funkcji wraz z nazwą biblioteki DLL, w której znajduje się funkcja. W kodzie 32-bitowym, użyj dekoracyjnej formy nazwy funkcji. Aby ustawić punkt przerwania na **MessageBeep**, na przykład należy wprowadzić następujące polecenie.
+- W [punkcie przerwania funkcji](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)wprowadź nazwę funkcji wraz z nazwą biblioteki DLL, w której znajduje się funkcja (zobacz [operator kontekstu](../debugger/context-operator-cpp.md)). W kodzie 32-bitowym, użyj dekoracyjnej formy nazwy funkcji. Aby ustawić punkt przerwania na **MessageBeep**, na przykład należy wprowadzić następujące polecenie.
 
     ```cpp
     {,,USER32.DLL}_MessageBeep@4
@@ -42,6 +42,14 @@ Jeśli chcesz debugować funkcję interfejsu API systemu Windows z załadowanymi
 
      Aby uzyskać nazwę dekoracyjną, zobacz [Wyświetlanie dekoracyjnych nazw](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+     Możesz przetestować dekoracyjną nazwę i wyświetlić ją w kodzie demontażu. Gdy jest wstrzymana funkcja w debugerze programu Visual Studio, kliknij prawym przyciskiem myszy funkcję w edytorze kodu lub oknie stosu wywołań i wybierz polecenie **Przejdź do demontażu**.
+
+- W kodzie 64-bitowym można użyć niedekoracyjnej nazwy.
+
+    ```cpp
+    {,,USER32.DLL}MessageBeep
+    ```
+
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

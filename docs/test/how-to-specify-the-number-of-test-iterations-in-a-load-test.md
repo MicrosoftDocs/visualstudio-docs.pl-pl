@@ -1,7 +1,7 @@
 ---
-title: Określ liczbę iteracji testowych w ustawieniu przebiegu testu obciążenia
+title: Określ liczbę iteracji testu w ustawieniu przebiegu testu obciążenia
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
@@ -9,41 +9,41 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 446da348c1a947e6c59b8ad60d9bd0799d0d4322
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b022c747235f131f530df62e49c7204a97ce0872
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588944"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287483"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Jak: Określ liczbę iteracji testowych w ustawieniu przebiegu testu obciążenia
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Instrukcje: Określanie liczby iteracji testowych w ustawieniu przebiegu testu obciążenia
 
-Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenia**można użyć **Edytora testów obciążenia,** aby zmienić właściwości scenariuszy, aby spełnić twoje potrzeby i cele testowania. Aby uzyskać więcej informacji, zobacz [Instruktaż: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
+Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
 
-Za pomocą **Edytora testów obciążenia**można edytować właściwość **Test Iterations** wartości ustawień uruchomienia w oknie **Właściwości.** Właściwość **Test Iterations** określa liczbę iteracji do uruchomienia na wszystkich testach wydajności sieci web i jednostkowych we wszystkich scenariuszach w teście obciążenia przy użyciu **Edytora testów obciążenia**.
+Za pomocą **Edytor testu obciążeniowego**można edytować Właściwość **iteracje testu** wartości parametrów uruchomieniowych w oknie **Właściwości** . Właściwość **iteracje testu** określa liczbę iteracji do uruchomienia na wszystkich testach wydajności sieci Web i testów jednostkowych we wszystkich scenariuszach w teście obciążenia przy użyciu **Edytor testu obciążeniowego**.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości ustawień uruchamiania i ich opisy, zobacz [Właściwości ustawień przebiegu testu ładowania](../test/load-test-run-settings-properties.md).
+> Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Aby określić liczbę iteracji testowych w ustawieniu uruchamiania
+## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Aby określić liczbę iteracji testowych w ustawieniu uruchomieniowym
 
 1. Otwórz test obciążenia.
 
-     Zostanie wyświetlony **edytor testów obciążenia** i wyświetli drzewo testu obciążenia.
+     Zostanie wyświetlone **Edytor testu obciążeniowego** i zostanie wyświetlone drzewo testów obciążenia.
 
-2. W drzewie testu obciążenia w folderze **Uruchom ustawienia** wybierz ustawienie uruchamiania.
+2. W drzewie testu obciążenia w folderze **Parametry uruchomieniowe** wybierz ustawienie Uruchom.
 
-3. W menu **Widok** wybierz **okno Właściwości,** aby wyświetlić kategorie i właściwości ustawienia uruchamiania obciążenia.
+3. W menu **Widok** wybierz pozycję **okno właściwości** , aby wyświetlić kategorie i właściwości ustawienia przebiegu ładowania.
 
-4. Ustaw **właściwość Użyj iteracji testowych** na **True**.
+4. Ustaw dla właściwości **Użyj iteracji testu** **wartość true**.
 
-5. We właściwości **Test Iterations** wprowadź liczbę, która wskazuje liczbę iteracji testowych do uruchomienia podczas testu obciążenia.
+5. We właściwości **iteracje testu** wprowadź liczbę, która wskazuje liczbę iteracji testowych do uruchomienia podczas testu obciążenia.
 
-6. Po zakończeniu zmiany właściwości wybierz polecenie **Zapisz** w menu **Plik.** Następnie można uruchomić test obciążenia przy użyciu nowej wartości **iteracji testowych.**
+6. Po zakończeniu zmiany właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie można uruchomić test obciążenia przy użyciu nowych wartości **iteracji testu** .
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Konfigurowanie ustawień przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
 - [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)

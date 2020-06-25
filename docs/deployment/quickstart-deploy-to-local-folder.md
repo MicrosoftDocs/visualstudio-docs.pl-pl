@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184179"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285412"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Wdrażanie aplikacji w folderze lokalnym przy użyciu programu Visual Studio
 
-Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, ASP.NET Core, .NET Core i Python do folderu lokalnego z programu Visual Studio. W przypadku środowiska Node. js czynności są obsługiwane, ale interfejs użytkownika jest inny.
+Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, ASP.NET Core, .NET Core i Python do folderu lokalnego z programu Visual Studio. W przypadku Node.js kroki są obsługiwane, ale interfejs użytkownika jest inny.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
@@ -34,13 +34,13 @@ Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, 
 
 1. W oknie dialogowym **Publikowanie** wybierz pozycję **folder**.
 
-    ![Wybierz folder jako element docelowy publikowania](../deployment/media/quickstart-publish-folder.png "Wybierz folder")
+    ![Wybierz folder jako element docelowy publikowania](../deployment/media/quickstart-publish-folder-new.png "Wybierz folder")
 
 1. Wprowadź ścieżkę lub wybierz pozycję **Przeglądaj** , aby określić folder.
 
     ![Określ ścieżkę do folderu](../deployment/media/quickstart-publish-folder-path.png "Wybierz folder")
 
-1. Wybierz pozycję **Publikuj**. Program Visual Studio kompiluje projekt i publikuje go w określonym folderze. Zostanie wyświetlone okienko **Publikowanie** właściwości projektu przedstawiające Podsumowanie profilu.
+1. Wybierz polecenie **Publikuj**. Program Visual Studio kompiluje projekt i publikuje go w określonym folderze. Zostanie wyświetlone okienko **Publikowanie** właściwości projektu przedstawiające Podsumowanie profilu.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-folder-summary.png)
 

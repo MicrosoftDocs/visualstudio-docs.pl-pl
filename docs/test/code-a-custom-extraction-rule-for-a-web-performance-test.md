@@ -1,7 +1,7 @@
 ---
 title: Kodowanie niestandardowej reguły wyodrębniania dla testów wydajności sieci Web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - extraction rules
 - Web performance tests, creating custom extraction rules
@@ -13,25 +13,25 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591180"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288887"
 ---
-# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodowania niestandardowej reguły wyodrębniania dla testu wydajności sieci Web
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kod reguły wyodrębniania niestandardowego dla testu wydajności sieci Web
 
 Użytkownicy mogą tworzyć własne reguły wyodrębniania. W tym celu należy utworzyć własne reguły jako pochodne wybranej klasy reguł wyodrębniania. Reguły wyodrębniania pochodzą od klasy bazowej <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>.
 
 > [!NOTE]
-> Można również tworzyć niestandardowe reguły sprawdzania poprawności. Aby uzyskać więcej informacji, zobacz [Tworzenie kodu niestandardowego i wtyczek do testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+> Można również tworzyć niestandardowe reguły sprawdzania poprawności. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Aby utworzyć niestandardową regułę wyodrębniania
 
-1. Otwórz projekt testowy, który zawiera test wydajności sieci web.
+1. Otwórz projekt testowy zawierający test wydajności sieci Web.
 
 2. (Opcjonalnie) Utwórz oddzielny projekt Biblioteka klas, w którym będzie przechowywana reguła wyodrębniania.
 
@@ -44,13 +44,13 @@ Użytkownicy mogą tworzyć własne reguły wyodrębniania. W tym celu należy u
 
 5. (Opcjonalnie) Skompiluj nowy projekt Biblioteka klas.
 
-6. (Opcjonalnie) W projekcie testowym dodaj odwołanie do projektu biblioteki klas, który zawiera niestandardową regułę wyodrębniania.
+6. Obowiązkowe W projekcie testowym Dodaj odwołanie do projektu biblioteki klas, który zawiera niestandardową regułę wyodrębniania.
 
-7. W projekcie testowym otwórz test wydajności sieci Web w **Edytorze testów wydajności sieci Web**.
+7. W projekcie testowym Otwórz test wydajności sieci Web w **Edytor internetowego testu wydajnościowego**.
 
 8. Aby dodać niestandardową regułę wyodrębniania, kliknij prawym przyciskiem myszy żądanie testu wydajności sieci Web i wybierz polecenie **Dodaj regułę wyodrębniania**.
 
-     Zostanie wyświetlone okno dialogowe **Dodaj regułę wyodrębniania.** Niestandardowa reguła sprawdzania poprawności zostanie wyświetlona na liście **Wybierz regułę** wraz ze wstępnie zdefiniowanymi regułami sprawdzania poprawności. Wybierz niestandardową regułę ekstrakcji, a następnie wybierz przycisk **OK**.
+     Zostanie wyświetlone okno dialogowe **Dodawanie reguły wyodrębniania** . Niestandardowa reguła walidacji zostanie wyświetlona na liście **Wybierz regułę** wraz ze wstępnie zdefiniowanymi regułami walidacji. Wybierz niestandardową regułę wyodrębniania, a następnie wybierz **przycisk OK**.
 
 9. Uruchom test wydajności sieci Web.
 
@@ -204,7 +204,7 @@ Namespace ClassLibrary2
 End Namespace
 ```
 
-Metoda <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> zawiera podstawowe funkcje reguły wyodrębniania. Metoda <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> w poprzednim przykładzie przyjmuje jako wartość element <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs>, który dostarcza odpowiedzi generowane przez żądanie objęte regułą wyodrębniania. Odpowiedź zawiera element <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>, w którym znajdują się wszystkie znaczniki odpowiedzi. Znaczniki wejściowe są odfiltrowywane z elementu <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. Każdy znacznik wejściowy jest sprawdzany dla atrybutu o nazwie, `name` którego wartość jest równa wartości dostarczonej przez użytkownika `Name` właściwości. Jeśli zostanie znaleziony tag z tym pasującym atrybutem, podejmowana jest próba `value` wyodrębnienia wartości zawartej w atrybucie, jeśli istnieje atrybut wartości. Jeśli istnieje, nazwa i wartość znacznika są wyodrębniane i dodawane do kontekstu testu wydajności sieci Web. Reguła wyodrębniania zadziałała pomyślnie.
+Metoda <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> zawiera podstawowe funkcje reguły wyodrębniania. Metoda <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> w poprzednim przykładzie przyjmuje jako wartość element <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs>, który dostarcza odpowiedzi generowane przez żądanie objęte regułą wyodrębniania. Odpowiedź zawiera element <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>, w którym znajdują się wszystkie znaczniki odpowiedzi. Znaczniki wejściowe są odfiltrowywane z elementu <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. Każdy tag wejściowy jest sprawdzany pod kątem atrybutu o nazwie `name` , którego wartość jest równa wartości podanej przez użytkownika `Name` właściwości. Jeśli zostanie znaleziony tag z tym pasującym atrybutem, podejmowana jest próba wyodrębnienia wartości zawartej w `value` atrybucie, jeśli istnieje atrybut value. Jeśli istnieje, nazwa i wartość znacznika są wyodrębniane i dodawane do kontekstu testu wydajności sieci Web. Reguła wyodrębniania zadziałała pomyślnie.
 
 ## <a name="see-also"></a>Zobacz też
 

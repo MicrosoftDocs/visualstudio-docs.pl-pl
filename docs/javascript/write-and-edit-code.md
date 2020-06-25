@@ -1,8 +1,8 @@
 ---
-title: Wprowadzenie do edycji dla programistów JavaScript
-description: To wprowadzenie do edytora kodu w programie Visual Studio pokazuje niektóre ze sposobów, że visual studio sprawia, że pisanie, nawigacja i zrozumienie kodu JavaScript łatwiejsze.
+title: Wprowadzenie do edytowania dla deweloperów języka JavaScript
+description: Wprowadzenie do edytora kodu w programie Visual Studio pokazuje kilka sposobów, w których program Visual Studio ułatwia pisanie, nawigowanie i zrozumienie kodu JavaScript.
 ms.date: 12/13/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -10,103 +10,103 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62840835"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289095"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak korzystać z edytora kodu
+# <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak używać edytora kodu
 
-W tym krótkim wstępie do edytora kodu w programie Visual Studio przyjrzymy się niektórym sposobom, w jakie program Visual Studio ułatwia pisanie, nawigowanie i rozumienie kodu.
+W tym krótkim wprowadzeniu do edytora kodu w programie Visual Studio zapoznajemy się z innymi sposobami, w których program Visual Studio wykonuje pisanie, nawigowanie i zrozumienie kodu.
 
 > [!TIP]
-> Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/downloads/) aby zainstalować ją bezpłatnie. W zależności od typu tworzenia aplikacji, które robisz, może być konieczne **zainstalowanie obciążenia deweloperskie Node.js** w programie Visual Studio.
+> Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie. W zależności od typu opracowywanej aplikacji może być konieczne zainstalowanie **Node.js obciążenia programistycznego** w programie Visual Studio.
 
-W tym artykule założono, że jesteś już zaznajomiony z rozwojem JavaScript. Jeśli nie, sugerujemy, aby spojrzeć na samouczek, takich jak [Tworzenie Node.js i express aplikacji](../javascript/tutorial-nodejs.md) pierwszy.
+W tym artykule założono, że znasz już programowanie JavaScript. Jeśli nie, zalecamy zaprezentowanie samouczka, takiego jak najpierw [utwórz Node.js i aplikację Express](../javascript/tutorial-nodejs.md) .
 
-## <a name="add-a-new-project-file"></a>Dodawanie nowego pliku projektu
+## <a name="add-a-new-project-file"></a>Dodaj nowy plik projektu
 
-Ide można użyć, aby dodać nowe pliki do projektu.
+Aby dodać nowe pliki do projektu, można użyć IDE.
 
-1. Po otwarciu projektu w programie Visual Studio kliknij prawym przyciskiem myszy folder lub węzeł projektu w Eksploratorze rozwiązań (prawe okienko) i wybierz pozycję **Dodaj** > **nowy element**.
+1. Gdy projekt jest otwarty w programie Visual Studio, kliknij prawym przyciskiem myszy folder lub węzeł projektu w Eksplorator rozwiązań (prawego okienka) i wybierz polecenie **Dodaj**  >  **nowy element**.
 
-1. W oknie dialogowym **Nowy plik** w kategorii **Ogólne** wybierz typ pliku, który chcesz dodać, na przykład **Plik JavaScript**, a następnie wybierz polecenie **Otwórz**.
+1. W oknie dialogowym **nowy plik** w obszarze Kategoria **ogólna** wybierz typ pliku, który chcesz dodać, taki jak **plik JavaScript**, a następnie wybierz polecenie **Otwórz**.
 
-    Nowy plik zostanie dodany do projektu i zostanie otwarty w edytorze.
+    Nowy plik zostanie dodany do projektu i otwarty w edytorze.
 
-## <a name="use-intellisense-to-complete-words"></a>Uzupełnianie wyrazów za pomocą funkcji IntelliSense
+## <a name="use-intellisense-to-complete-words"></a>Korzystanie z funkcji IntelliSense do uzupełniania wyrazów
 
-IntelliSense jest nieocenionym zasobem podczas kodowania. Może pokazać informacje o dostępnych elementów członkowskich typu lub szczegóły parametru dla różnych przeciążeń metody. W poniższym kodzie `Router()`po wpisaniu zobaczysz typy argumentów, które można przekazać. Jest to tak zwana pomoc dotycząca podpisu.
+Technologia IntelliSense jest niecennym zasobem podczas kodowania. Można wyświetlić informacje o dostępnych elementach członkowskich typu lub szczegółach parametrów dla różnych przeciążeń metody. W poniższym kodzie, gdy wpiszesz `Router()` , zobaczysz typy argumentów, które można przekazać. Jest to tzw. Pomoc dotycząca podpisu.
 
 ![Korzystanie z funkcji IntelliSense](../javascript/media/write-code-signature-checking.png)
 
-Za pomocą programu IntelliSense można również ukończyć słowo po wpisaniu wystarczającej liczby znaków, aby je rozróżnić. Jeśli umieścisz kursor po `data` ciągu w następującym `get`kodzie i wpisz, IntelliSense wyświetli funkcje zdefiniowane wcześniej w kodzie lub zdefiniowane w bibliotece innej firmy, które zostały dodane do projektu.
+Możesz również użyć funkcji IntelliSense, aby zakończyć wyraz po wpisaniu wystarczającej liczby znaków, aby odróżnić go. Jeśli umieścisz kursor po `data` ciągu w poniższym kodzie i typie `get` , funkcja IntelliSense wyświetli funkcje zdefiniowane wcześniej w kodzie lub zdefiniowane w bibliotece innej firmy, która została dodana do projektu.
 
 ![Korzystanie z funkcji IntelliSense](../javascript/media/write-code-intellisense.png)
 
-IntelliSense może również wyświetlać informacje o typach po umieszczeniu wskaźnika myszy na elementach programowania.
+Funkcja IntelliSense może również wyświetlać informacje o typach po umieszczeniu wskaźnika myszy na elementach programistycznych.
 
-Aby dostarczać informacje intellisense, usługa językowa może używać plików *d.ts* TypeScript i komentarzy JSDoc. W przypadku większości popularnych bibliotek JavaScript pliki *d.ts* są nabywane automatycznie. Aby uzyskać więcej informacji o tym, jak informacje intellisense jest pobierana, zobacz [JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)
+Aby zapewnić informacje o technologii IntelliSense, usługa języka może używać plików TypeScript *d. TS* i komentarzy JSDoc. Dla najpopularniejszych bibliotek JavaScript są automatycznie uzyskiwane pliki *d. TS* . Aby uzyskać więcej informacji na temat sposobu uzyskiwania informacji IntelliSense, zobacz [JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)
 
-## <a name="check-syntax"></a>Sprawdzanie składni
+## <a name="check-syntax"></a>Sprawdź składnię
 
-Usługa języka używa ESLint do sprawdzania składni i linting. Jeśli chcesz ustawić opcje sprawdzania składni w edytorze, wybierz opcję**Opcje** >  **narzędzi** > **JavaScript/TypeScript** > **Linting**. Opcje lintingu wskazują na globalny plik konfiguracyjny ESLint.
+Usługa języka używa ESLint, aby zapewnić sprawdzanie składni i zaznaczanie błędów. Jeśli musisz ustawić opcje sprawdzania składni w edytorze, wybierz pozycję **Narzędzia**  >  **Opcje**  >  **JavaScript/TypeScript**  >  **Zaznaczanie błędów**. Opcje Zaznaczanie błędów wskazują na globalny plik konfiguracyjny ESLint.
 
-W poniższym kodzie zobaczysz zielone podświetlanie składni (zielone squiggles) na wyrażenie. Umieść wskaźnik myszy na podświetlaniu składni.
+W poniższym kodzie zobaczysz wyrażenie z wyróżnioną zieloną składnią (zieloną formułą). Umieść kursor nad wyróżnioną składnią.
 
-![Błąd składni widoku](../javascript/media/write-code-syntax-checking.png)
+![Wyświetl błąd składniowy](../javascript/media/write-code-syntax-checking.png)
 
-Ostatni wiersz tego komunikatu informuje, że usługa językowa oczekuje przecinka (`,`). Zielona falimista oznacza ostrzeżenie. Czerwone falisze wskazują na błąd.
+Ostatni wiersz tego komunikatu informuje, że usługa języka oczekuje przecinka ( `,` ). Zielona zygzakowata wskazuje na ostrzeżenie. Czerwona zygzakowata wskazuje na błąd.
 
-W dolnym okienku możesz kliknąć kartę **Lista błędów,** aby wyświetlić ostrzeżenie i opis wraz z numerem pliku i wiersza.
+W dolnym okienku możesz kliknąć kartę **Lista błędów** , aby wyświetlić ostrzeżenie i opis wraz z nazwą pliku i numerem wiersza.
 
 ![Wyświetl listę błędów](../javascript/media/write-code-error-list.png)
 
-Ten kod można naprawić, dodając`,`przecinek `"data"`( ) przed .
+Możesz naprawić ten kod przez dodanie przecinka ( `,` ) przed `"data"` .
 
-## <a name="comment-out-code"></a>Skomentuj kod
+## <a name="comment-out-code"></a>Dodawanie komentarza do kodu
 
-Pasek narzędzi, który jest wiersz przycisków pod paskiem menu w programie Visual Studio, może pomóc zwiększyć produktywność podczas kodowania. Na przykład można przełączyć tryb ukończenia IntelliSense[(IntelliSense](../ide/using-intellisense.md) jest pomocą kodowania, która wyświetla listę pasujących metod, między innymi), zwiększyć lub zmniejszyć wcięcie wiersza lub skomentować kod, który nie ma być skompilowany. W tej sekcji pokomentujemy kod.
+Pasek narzędzi, który jest wierszem przycisków na pasku menu w programie Visual Studio, może pomóc zwiększyć produktywność podczas pisania kodu. Można na przykład przełączyć tryb uzupełniania IntelliSense ([IntelliSense](../ide/using-intellisense.md) to pomoc dla kodu, która wyświetla listę zgodnych metod, między innymi), zwiększyć lub zmniejszyć wcięcie linii albo dodać komentarz do kodu, który nie ma być kompilowany. W tej sekcji dodamy komentarz dotyczący kodu.
 
-Zaznacz jeden lub więcej wierszy kodu w edytorze, a ![następnie](../javascript/media/write-code-comment-out.png) wybierz przycisk **Wykomentuj wybrane wiersze** Przycisk Wyjmij na pasku narzędzi. Jeśli wolisz używać klawiatury, naciśnij **klawisze Ctrl**+**K**, **Ctrl**+**C**.
+Wybierz co najmniej jeden wiersz kodu w edytorze, a następnie wybierz przycisk Dodaj **komentarz do zaznaczonego wiersza** ![ ](../javascript/media/write-code-comment-out.png) na pasku narzędzi. Jeśli wolisz korzystać z klawiatury, naciśnij **klawisze CTRL** + **K**, **Ctrl +** + **C**.
 
-Znaki komentarza JavaScript `//` są dodawane na początku każdego wybranego wiersza, aby skomentować kod.
+Znaki komentarza JavaScript `//` są dodawane na początku każdego zaznaczonego wiersza w celu dodania komentarza do kodu.
 
 ## <a name="collapse-code-blocks"></a>Zwijanie bloków kodu
 
-Jeśli chcesz uporządkować widok niektórych regionów kodu, możesz go zwinąć. Wybierz małe szare pole ze znakiem minus wewnątrz niego na marginesie pierwszego wiersza funkcji. Lub, jeśli jesteś użytkownikiem klawiatury, umieść kursor w dowolnym miejscu w kodzie konstruktora i naciśnij **klawisze Ctrl**+**M**, **Ctrl**+**M**.
+Jeśli musisz odkodować swój widok niektórych regionów kodu, możesz go zwinąć. Wybierz Małe szare pole ze znakiem minus wewnątrz niego na marginesie pierwszego wiersza funkcji. Jeśli jesteś użytkownikiem klawiatury, umieść kursor w dowolnym miejscu w kodzie konstruktora i naciśnij klawisze **Ctrl** + **m**, **Ctrl** + **m**.
 
-![Przycisk zwijanie konspektów](../javascript/media/write-code-collapse-code.png)
+![Przycisk zwijania konspektu](../javascript/media/write-code-collapse-code.png)
 
-Blok kodu zwija się tylko do pierwszego wiersza, po którym następuje wielokropek (`...`). Aby ponownie rozwinąć blok kodu, kliknij to samo szare pole, w które ma teraz znak plus, lub ponownie naciśnij **klawisze Ctrl**+**M**, **Ctrl**+**M.** Ta funkcja jest [nazywana tworzeniem przespekk i](../ide/outlining.md) jest szczególnie przydatna w przypadku zwijania długich funkcji lub całych klas.
+Blok kodu jest zwijany tylko do pierwszego wiersza, a po nim wielokropek ( `...` ). Aby ponownie rozwinąć blok kodu, kliknij szare pole, które ma teraz znak plus, lub naciśnij klawisze **Ctrl** + **m**, **Ctrl** + **m** ponownie. Ta funkcja jest nazywana [tworzeniem konspektu](../ide/outlining.md) i jest szczególnie przydatna w przypadku zwijania długich funkcji lub całych klas.
 
-## <a name="view-definitions"></a>Wyświetlanie definicji
+## <a name="view-definitions"></a>Definicje widoków
 
-Edytor programu Visual Studio ułatwia sprawdzanie definicji typu, funkcji itp. Jednym ze sposobów jest przejście do pliku, który zawiera definicję, na przykład wybierając **Przejdź do definicji** w dowolnym miejscu, do którego odwołuje się element programowania. Jeszcze szybszym sposobem, który nie odsunie fokus od pliku, w który pracujesz, jest użycie [funkcji Peek Definition](../ide/go-to-and-peek-definition.md#peek-definition). Zajrzyjmy do definicji `render` metody w poniższym przykładzie.
+Edytor programu Visual Studio ułatwia sprawdzanie definicji typu, funkcji itp. Jednym ze sposobów jest przechodzenie do pliku, który zawiera definicję, na przykład po wybraniu opcji **Przejdź do definicji** gdziekolwiek element programowania jest przywoływany. Jeszcze szybszym sposobem, aby nie przenieść fokusu z pliku, w którym pracujesz, jest użycie [definicji wglądu](../ide/go-to-and-peek-definition.md#peek-definition). Przejdźmy do definicji `render` metody w poniższym przykładzie.
 
-Kliknij prawym `render` przyciskiem myszy i wybierz z menu treści **opcję Peek Definition.** Lub naciśnij **klawisz Alt**+**F12**.
+Kliknij prawym przyciskiem myszy `render` , a następnie wybierz polecenie **Podgląd definicji** z menu zawartość. Lub naciśnij klawisze **Alt** + **F12**.
 
-   Zostanie wyświetlonych okno podręczne z `render` definicją metody. Możesz przewijać w wyskakującym oknie, a nawet zajrzeć do definicji innego typu z zaglądanego kodu.
+   Zostanie wyświetlone okno podręczne z definicją `render` metody. Można przewijać w oknie podręcznym, a nawet z dokładnością do definicji innego typu.
 
    ![Okno definicji wglądu](../javascript/media/write-code-peek-definition.png)
 
-Zamknij okno definicji zaglądanego, wybierając małe pole z literą "x" w prawym górnym rogu okna podręcznego.
+Zamknij okno Definicja wglądu, wybierając małe pole z symbolem "x" w prawym górnym rogu okna podręcznego.
 
 ## <a name="use-code-snippets"></a>Używanie fragmentów kodu
 
-Visual Studio zawiera przydatne *fragmenty kodu,* których można użyć do szybkiego i łatwego generowania często używanych bloków kodu. [Fragmenty kodu](../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym JavaScript. Dodajmy pętlę `for` do pliku kodu.
+Program Visual Studio oferuje przydatne *fragmenty kodu* , za pomocą których można szybko i łatwo generować często używane bloki kodu. [Fragmenty kodu](../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym JavaScript. Dodajmy `for` pętlę do pliku z kodem.
 
-Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu, kliknij prawym przyciskiem myszy i wybierz polecenie > **Urywek wstawiania fragmentu kodu**. **Snippet**
+Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu, kliknij prawym przyciskiem myszy **i wybierz Wstaw fragment kodu**  >  **Insert Snippet**.
 
 ![Fragment kodu w programie Visual Studio](../javascript/media/write-code-insert-snippet.png)
 
-W edytorze pojawi się pole **Wstaw fragment** kodu. Wybierz **pozycję Ogólne,** a następnie kliknij dwukrotnie **element for** item na liście.
+W edytorze pojawi się pole **Wstaw** wstawka. Wybierz pozycję **Ogólne** , a następnie kliknij dwukrotnie pozycję **dla** elementu na liście.
 
 ![Fragment kodu dla pętli for w programie Visual Studio](../javascript/media/write-code-insert-snippet-for-loop.png)
 
-Spowoduje to `for` dodanie fragmentu kodu pętli do kodu:
+Spowoduje to dodanie `for` fragmentu pętli do kodu:
 
 ```javascript
 for (var i = 0; i < length; i++) {
@@ -114,12 +114,12 @@ for (var i = 0; i < length; i++) {
 }
 ```
 
-Możesz sprawdzić dostępne fragmenty kodu dla swojego języka, wybierając **pozycję Edytuj** > **fragment kodu wstawiania****intellisense,** > a następnie wybierając folder języka.
+Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >  **IntelliSense**  >  **wstawkę**IntelliSense, a następnie wybierając folder języka.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../ide/code-snippets.md)
-- [Nawigowanie po kodzie](../ide/navigating-code.md)
+- [Nawiguj po kodzie](../ide/navigating-code.md)
 - [Tworzenie konspektu](../ide/outlining.md)
 - [Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)
 - [Refaktoryzacja](../ide/refactoring-in-visual-studio.md)

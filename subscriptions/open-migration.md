@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak partnerzy zarządzają subskrypcjami programu Visual Studio dla swoich klientów.
-ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564215"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289030"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partnerzy zarządzający subskrypcjami w imieniu klientów
 Aby zarządzać subskrypcjami w [portalu administracyjnym subskrypcji](https://manage.visualstudio.com)programu Visual Studio, należy wykonać kilka kroków. 
@@ -30,7 +30,7 @@ Dotyczy to partnerów, którzy mają już dostęp do [portalu administracyjnego 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 Kroki dla partnerów, aby dodać nową licencję:
-- Zaloguj się do witryny https://manage.visualstudio.com.
+- Zaloguj się do witryny <https://manage.visualstudio.com>.
 - Wybierz listę rozwijaną Umowa i przewiń w dół, gdzie jest dostępna opcja **nowej licencji Open**.
 - W panelu podręcznym wprowadź numer autoryzacji, numer licencji, adres e-mail klienta, który znajduje się w umowie, zaznacz pole wyboru, a następnie kliknij przycisk **Prześlij**.
 
@@ -52,7 +52,7 @@ Dotyczy to nowych partnerów umieszczających nowe otwarte zamówienia licencji,
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nowi partnerzy odwiedzają Portal administratora subskrypcji programu Visual Studio bezpośrednio
 Ten scenariusz ma zastosowanie do nowych partnerów, którzy już umieścili nowe otwarte zamówienia licencji, ale którzy nie zostali zarejestrowani w [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) i przejdź bezpośrednio do [portalu administracyjnego subskrypcji programu Visual Studio](https://manage.visualstudio.com).  Wykonaj następujące kroki:
-- Odwiedź https://manage.visualstudio.comstronę.
+- Odwiedź stronę <https://manage.visualstudio.com> .
 - Zostanie wyświetlony komunikat o błędzie, że nie jesteś rozpoznanym użytkownikiem.
 - Wybierz opcję rejestracji **partnerów OLP** i wprowadź numer autoryzacji, numer licencji, adres e-mail klienta używany w zamówieniu, zaznacz pole wyboru i kliknij przycisk **Prześlij**.
 
@@ -64,7 +64,7 @@ Ten scenariusz ma zastosowanie do nowych partnerów, którzy już umieścili now
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

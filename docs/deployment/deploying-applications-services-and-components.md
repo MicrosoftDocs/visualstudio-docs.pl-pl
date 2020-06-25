@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183005"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286362"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
@@ -40,7 +40,7 @@ Zapoznaj się z przewodnikami Szybki Start i samouczkami, aby uzyskać instrukcj
 
 Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoczęcia wdrożenia etapowego, w którym jest używane inne narzędzie do wdrożenia końcowego.
 
-- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**i. **NET Core**: Użyj narzędzia do publikowania do wdrożenia w folderze lokalnym. Dokładne dostępne opcje zależą od typu aplikacji. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli nie skonfigurowano wcześniej żadnych profilów publikowania, należy kliknąć przycisk **Utwórz nowy profil**). Następnie wybierz **folder**. Aby uzyskać więcej informacji, zobacz [wdrażanie w folderze lokalnym](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**i. **NET Core**: Użyj narzędzia do publikowania do wdrożenia w folderze lokalnym. Dokładne dostępne opcje zależą od typu aplikacji. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli nie skonfigurowano wcześniej żadnych profilów publikowania, należy kliknąć przycisk **Utwórz nowy profil**). Następnie wybierz **folder**. Aby uzyskać więcej informacji, zobacz [wdrażanie w folderze lokalnym](quickstart-deploy-to-local-folder.md).
 
     ![Wybierz pozycję Publikuj](../deployment/media/quickstart-publish.png)
 
@@ -48,7 +48,7 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**i **Node. js**: publikowanie w Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
+- **ASP.NET**, **ASP.NET Core**, **Python**i **Node.js**: publikowanie w Azure App Service lub Azure App Service Linux (przy użyciu kontenerów) przy użyciu jednej z poniższych metod.
 
   - Aby ciągłe (lub zautomatyzowane) wdrażanie aplikacji, użyj platformy Azure DevOps z [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
@@ -58,7 +58,7 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
   Aby użyć narzędzia do **publikowania** , kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań i wybierz polecenie **Publikuj**. (Jeśli wcześniej skonfigurowano wszystkie profile publikowania, należy kliknąć przycisk **Utwórz nowy profil**). W oknie dialogowym Publikowanie wybierz opcję **App Service** lub **Azure Virtual Machines**, a następnie postępuj zgodnie z procedurami konfiguracji.
 
-  ![Wybierz Azure App Service](../deployment/media/quickstart-publish-azure.png "Wybierz Azure App Service")
+  ![Wybierz Azure App Service](../deployment/media/quickstart-publish-azure-new.png "Wybierz Azure App Service")
 
   Począwszy od programu Visual Studio 2017 w wersji 15,7, można wdrożyć aplikacje ASP.NET Core w **App Service dla systemu Linux**.
 
@@ -73,7 +73,7 @@ Wdrożenie do folderu lokalnego jest zwykle używane do testowania lub do rozpoc
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikowanie w Internecie lub wdrażanie w udziale sieciowym
 
-- **ASP.NET**, **ASP.NET Core**, **Node. js**i **Python**: można użyć narzędzia do publikowania do wdrożenia w witrynie sieci Web przy użyciu protokołu FTP lub Web Deploy. Aby uzyskać więcej informacji, zobacz [wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**i **Python**: można użyć narzędzia do publikowania do wdrożenia w witrynie sieci Web za pomocą protokołu FTP lub Web Deploy. Aby uzyskać więcej informacji, zobacz [wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md).
 
     W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli wcześniej skonfigurowano wszystkie profile publikowania, należy kliknąć przycisk **Utwórz nowy profil**). W narzędziu do publikowania wybierz żądaną opcję i wykonaj kroki konfiguracji.
 
@@ -91,7 +91,7 @@ W programie Visual Studio można tworzyć pakiety aplikacji do wdrożenia w Micr
 
 - **Platformy UWP**: Możesz spakować aplikację i wdrożyć ją za pomocą elementów menu. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji platformy UWP przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
-    ![Tworzenie pakietu aplikacji](../deployment/media/feature-tour-create-app-package.jpg)
+    ![Tworzenie pakietu aplikacji](../deployment/media/feature-tour-create-app-package.png)
 
 - **Pulpit systemu Windows**: można wdrożyć do Microsoft Store przy użyciu mostka programu Desktop, począwszy od programu Visual Studio 2017 w wersji 15,4. Aby to zrobić, Zacznij od utworzenia projektu pakietu aplikacji systemu Windows. Aby uzyskać więcej informacji, zobacz [pakowanie aplikacji klasycznych dla Microsoft Store (mostek Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
@@ -136,7 +136,7 @@ Za pomocą Azure Pipelines można włączyć ciągłe wdrażanie aplikacji. Aby 
 
 ## <a name="deployment-for-other-app-types"></a>Wdrożenie dla innych typów aplikacji
 
-| Typ aplikacji | Scenariusz wdrażania | Link |
+| Typ aplikacji | Scenariusz wdrażania | Łącze |
 | --- | --- | --- |
 | **Aplikacja pakietu Office** | Dodatek dla pakietu Office można opublikować w programie Visual Studio. | [Wdrażanie i publikowanie dodatku dla pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Usługa WCF lub OData** | Inne aplikacje mogą używać usług WCF RIA wdrożonych na serwerze sieci Web. | [Opracowywanie i wdrażanie Usługi danych programu WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |

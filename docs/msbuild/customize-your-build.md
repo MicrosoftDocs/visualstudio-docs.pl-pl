@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180405"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288939"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
@@ -80,7 +80,7 @@ Właściwości ustawiane w *katalogu Directory. Build. props* mogą zostać zast
 Gdy trzeba ustawić właściwość lub zdefiniować obiekt docelowy dla pojedynczego projektu, który zastępuje wszystkie wcześniejsze ustawienia, należy umieścić tę logikę w pliku projektu po ostatecznym zaimportowaniu. Aby to zrobić w projekcie w stylu zestawu SDK, najpierw trzeba zastąpić atrybut stylu zestawu SDK analogicznym importem. Zobacz [, jak używać zestawów SDK projektu MSBuild](how-to-use-project-sdk.md).
 
 > [!NOTE]
-> Aparat MSBuild odczytuje wszystkie zaimportowane pliki podczas oceny przed rozpoczęciem wykonywania kompilacji dla dowolnego projektu (łącznie z dowolnym `PreBuildEvent` ), więc te pliki nie powinny być modyfikowane przez ani w `PreBuildEvent` żadnej innej części procesu kompilacji. Wszelkie modyfikacje nie zaczną obowiązywać do następnego wywołania programu *MSBuild. exe* lub następnej kompilacji programu Visual Studio.
+> Aparat MSBuild odczytuje wszystkie zaimportowane pliki podczas oceny przed rozpoczęciem wykonywania kompilacji dla dowolnego projektu (łącznie z dowolnym `PreBuildEvent` ), więc te pliki nie powinny być modyfikowane przez ani w `PreBuildEvent` żadnej innej części procesu kompilacji. Wszelkie modyfikacje nie zaczną obowiązywać do następnego wywołania *MSBuild.exe* lub następnej kompilacji programu Visual Studio.
 
 ### <a name="use-case-multi-level-merging"></a>Przypadek użycia: scalanie wielopoziomowe
 
@@ -182,7 +182,7 @@ Ta sama struktura katalogów jest przeszukiwana `$(MSBuildUserExtensionsPath)` ,
 ## <a name="customize-the-solution-build"></a>Dostosuj kompilację rozwiązania
 
 > [!IMPORTANT]
-> Dostosowanie kompilacji rozwiązania w ten sposób dotyczy tylko kompilacji z wiersza polecenia przy użyciu programu *MSBuild. exe*. Nie **dotyczy to** kompilacji w programie Visual Studio.
+> Dostosowanie kompilacji rozwiązania w ten sposób ma zastosowanie tylko do kompilacji wiersza polecenia z *MSBuild.exe*. Nie **dotyczy to** kompilacji w programie Visual Studio. Z tego powodu nie zaleca się umieszczania dostosowania na poziomie rozwiązania. Lepszą alternatywą dla dostosowywania wszystkich projektów w rozwiązaniu jest użycie plików *Directory. Build. props* i *Directory. Build. targets* w folderze rozwiązania, jak opisano w innym miejscu w tym artykule.
 
 Gdy program MSBuild kompiluje plik rozwiązania, najpierw przekształci go wewnętrznie w plik projektu, a następnie kompiluje. Wygenerowany plik projektu importuje `before.{solutionname}.sln.targets` przed zdefiniowaniem elementów docelowych i `after.{solutionname}.sln.targets` po importowaniu elementów docelowych, w tym elementów docelowych zainstalowanych do `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` katalogów i.
 
@@ -287,7 +287,7 @@ msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.
 
 W przypadku ustawienia globalnego (aby mieć wpływ na wszystkie kompilacje C++ dla platformy na serwerze kompilacji) Istnieją dwie metody. Najpierw można ustawić te właściwości przy użyciu zmiennej środowiskowej systemu, która jest zawsze ustawiona. Dzieje się tak, ponieważ program MSBuild zawsze odczytuje środowisko i tworzy (lub przesłania) właściwości dla wszystkich zmiennych środowiskowych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 

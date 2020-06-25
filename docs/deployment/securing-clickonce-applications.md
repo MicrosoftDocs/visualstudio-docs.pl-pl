@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184448"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286307"
 ---
 # <a name="secure-clickonce-applications"></a>Zabezpieczanie aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje podlegają ograniczeniom zabezpieczeń dostępu kodu w .NET Framework, aby pomóc w ograniczeniu dostępu do tego kodu do chronionych zasobów i operacji. Z tego powodu ważne jest, aby zrozumieć skutki zabezpieczenia dostępu kodu w celu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] odpowiedniego zapisania aplikacji. W celu ograniczenia dostępu aplikacje mogą używać pełnego zaufania lub stref częściowych, takich jak strefy Internet i Intranet.
@@ -50,7 +50,7 @@ ms.locfileid: "84184448"
  Aby uzyskać więcej informacji o zabezpieczeniach dostępu kodu i technologii ClickOnce, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="code-signing-certificates"></a>Certyfikaty podpisywania kodu
- Aby opublikować aplikację przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, można podpisać aplikacje i manifesty wdrożenia dla aplikacji za pomocą pary kluczy publicznych/prywatnych. Narzędzia do podpisywania manifestu są dostępne na stronie **podpisywanie** w **projektancie projektu**. Aby uzyskać więcej informacji, zobacz [Strona podpisywania, Projektant projektu](../ide/reference/signing-page-project-designer.md). Alternatywnie można podpisać manifesty za pomocą pliku klucza podczas procesu publikowania przy użyciu Kreatora publikacji.
+ Aby opublikować aplikację przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, można podpisać aplikacje i manifesty wdrożenia dla aplikacji za pomocą pary kluczy publicznych/prywatnych. Narzędzia do podpisywania manifestu są dostępne na stronie **podpisywanie** w **projektancie projektu**. Aby uzyskać więcej informacji, zobacz [Strona podpisywania, Projektant projektu](../ide/reference/signing-page-project-designer.md).
 
  Po podpisaniu manifestów informacje o wydawcy określone na podstawie podpisu Authenticode będą wyświetlane użytkownikowi w oknie dialogowym uprawnień podczas instalacji, aby pokazać mu, że aplikacja pochodzi z zaufanego źródła.
 
@@ -66,7 +66,7 @@ ms.locfileid: "84184448"
 
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`
 
- Domyślnie argumenty ciągu zapytania są wyłączone. Aby je włączyć, atrybut `trustUrlParameters` musi być ustawiony w manifeście wdrożenia aplikacji. Tę wartość można ustawić z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i z MageUI. exe. Aby uzyskać szczegółowe instrukcje dotyczące włączania przekazywania ciągów zapytania, zobacz [How to: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
+ Domyślnie argumenty ciągu zapytania są wyłączone. Aby je włączyć, atrybut `trustUrlParameters` musi być ustawiony w manifeście wdrożenia aplikacji. Tę wartość można ustawić z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i z MageUI.exe. Aby uzyskać szczegółowe instrukcje dotyczące włączania przekazywania ciągów zapytania, zobacz [How to: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
 
  Nigdy nie należy przekazywać argumentów odebranych za pośrednictwem ciągu zapytania do bazy danych lub wiersza polecenia bez sprawdzenia, czy argumenty są bezpieczne. Argumentami niebezpiecznymi są argumenty zawierające znaki ucieczki bazy danych lub wiersza polecenia, które mogłyby umożliwić złośliwemu użytkownikowi „zmuszenie” aplikacji do wykonywania dowolnie wybranych przez niego poleceń.
 
@@ -76,6 +76,6 @@ ms.locfileid: "84184448"
 ## <a name="deploying-obfuscated-assemblies"></a>Wdrażanie zestawów zasłoniętych
  Program Visual Studio obejmuje bezpłatną [społeczność Dotfuscator Protection](../ide/dotfuscator/index.md), która umożliwia ochronę aplikacji ClickOnce za pomocą zaciemniania kodu i aktywnych miar ochrony.  Aby uzyskać szczegółowe informacje, zobacz [sekcję ClickOnce podręcznika użytkownika społeczności Dotfuscator](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Wybieranie strategii wdrażania technologii ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

@@ -1,56 +1,56 @@
 ---
 title: 'Porady: określanie wielkości próbki dla ustawień testu obciążenia'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63b6b9479347b076b7bd9e350e80e4bfa2a36d69
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab77354226028397d5875137ed331860a4b32925
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594828"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287392"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Jak: Określ częstotliwość próbkowania dla ustawienia przebiegu testu obciążenia
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Instrukcje: Określanie współczynnika próbkowania dla ustawienia przebiegu testu obciążenia
 
-Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenia**można użyć **Edytora testów obciążenia,** aby zmienić właściwości, aby spełnić twoje potrzeby i cele testowania.
+Po utworzeniu testu obciążenia z **nowym Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości, aby spełniały potrzeby testowania i cele.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Za pomocą **Edytora testów obciążenia**można edytować wartość właściwości **Sample Rate** ustawienia uruchamiania w oknie **Właściwości.** Aby uzyskać pełną listę właściwości ustawień uruchamiania i ich opisy, zobacz [Właściwości ustawień przebiegu testu ładowania](../test/load-test-run-settings-properties.md).
+Za pomocą **Edytor testu obciążeniowego**można edytować wartość właściwości **częstotliwość próbkowania** ustawienia przebiegu w oknie **Właściwości** . Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
-Wybierz odpowiednią wartość dla **sample rate** właściwości dla ustawienia przebiegu testu obciążenia na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, taka jak wartość domyślna wynosząca pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. W przypadku dłuższych testów obciążenia zwiększenie częstotliwości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [Jak: Określanie częstotliwości próbkowania dla ustawienia przebiegu testu obciążenia](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wybierz odpowiednią wartość dla właściwości **częstotliwość próbkowania** dla ustawienia przebiegu testu obciążenia na podstawie długości testu obciążenia. Mniejsza częstotliwość próbkowania, taka jak domyślna wartość pięć sekund, wymaga więcej miejsca w bazie danych wyników testu obciążenia. W przypadku dłuższych testów obciążenia zwiększenie szybkości próbkowania zmniejsza ilość zbieranych danych. Aby uzyskać więcej informacji, zobacz [How to: Określanie współczynnika próbkowania dla ustawienia przebiegu testu obciążenia](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
-Oto kilka wskazówek dotyczących przykładowych stawek:
+Poniżej przedstawiono niektóre wskazówki dotyczące stawek próbek:
 
 |Czas trwania testu obciążenia|Zalecana częstotliwość próbkowania|
 |-|-----------------------------|
-|\<1 godz.|5 sekund|
-|1 - 8 godzin|15 sekund|
-|8 - 24 godziny|30 sekund|
+|\<1 godzina|5 sekund|
+|1-8 godzin|15 sekund|
+|8-24 godzin|30 sekund|
 |> 24 godziny|60 sekund|
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Aby określić częstotliwość próbkowania licznika wydajności w ustawieniu uruchamiania
 
 1. Otwórz test obciążenia.
 
-     Pojawi się **Edytor testów obciążenia.** Zostanie wyświetlone drzewo testu obciążenia.
+     Zostanie wyświetlona **Edytor testu obciążeniowego** . Zostanie wyświetlone drzewo testu obciążenia.
 
-2. W drzewie testu obciążenia w folderze **Uruchom ustawienia** wybierz ustawienie uruchamiania, dla którego chcesz określić częstotliwość próbkowania.
+2. W drzewie testu obciążenia w folderze **Parametry uruchomieniowe** wybierz ustawienie uruchomieniowe, dla którego chcesz określić częstotliwość próbkowania.
 
-3. W menu **Widok** wybierz polecenie **Okno Właściwości**.
+3. W menu **Widok** wybierz polecenie **okno właściwości**.
 
-     Kategorie i właściwości ustawienia uruchamiania obciążenia są wyświetlane w oknie **Właściwości.**
+     Kategorie i właściwości ustawienia przebiegu obciążenia są wyświetlane w oknie **Właściwości** .
 
-4. We właściwości **Sample Rate** wprowadź wartość czasu, która wskazuje częstotliwość, z jaką test obciążenia będzie zbierał dane licznika wydajności.
+4. We właściwości **częstotliwość próbkowania** wprowadź wartość czasu wskazującą częstotliwość, z jaką test obciążenia będzie zbierać dane licznika wydajności.
 
-5. Po zakończeniu zmiany właściwości wybierz polecenie **Zapisz** w menu **Plik.** Następnie można uruchomić test obciążenia przy użyciu nowej wartości **częstotliwość próbkowania.**
+5. Po zakończeniu zmiany właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie można uruchomić test obciążenia przy użyciu nowej wartości **współczynnika próbkowania** .
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Konfigurowanie ustawień przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
 - [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)

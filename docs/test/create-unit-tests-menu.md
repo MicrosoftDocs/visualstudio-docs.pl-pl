@@ -1,7 +1,7 @@
 ---
 title: Tworzenie wycinków metody testów jednostkowych
 ms.date: 04/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - unit testing, create unit tests
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 5b2712210d4761edb90414e2a27beba74a3bacbf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153006"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288666"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Utwórz klasy zastępcze metody testów jednostkowych za pomocą polecenia Utwórz testy jednostkowe
 
@@ -31,7 +31,7 @@ Polecenie **Utwórz testy jednostkowe** powoduje utworzenie wycinków metody tes
 
 Polecenie menu **Utwórz testy jednostkowe** jest rozszerzalne i może służyć do generowania testów dla MSTest, MSTest v2, nunit i xUnit.
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Wprowadzenie
 
 Aby rozpocząć, wybierz metodę, typ lub przestrzeń nazw w edytorze kodu w projekcie, który chcesz przetestować, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Utwórz testy jednostkowe**. Zostanie otwarte okno dialogowe **Tworzenie testów jednostkowych** , w którym można skonfigurować sposób tworzenia testów.
 

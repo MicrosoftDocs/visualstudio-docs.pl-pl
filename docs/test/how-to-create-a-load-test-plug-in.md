@@ -1,7 +1,7 @@
 ---
 title: Tworzenie wtyczki testu obciążenia
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.loadtestplugin
 helpviewer_keywords:
@@ -12,53 +12,53 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97952f65d78f7204410d07b90e0e538fb8499116
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589126"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288029"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>Jak: Tworzenie wtyczki testu obciążenia
+# <a name="how-to-create-a-load-test-plug-in"></a>Instrukcje: tworzenie wtyczki testu obciążenia
 
 Można utworzyć wtyczkę testu obciążeniowego służącą do uruchamiania kodu w różnych momentach podczas wykonywania testu. Celem utworzenia wtyczki jest rozszerzenie lub zmodyfikowanie wbudowanej funkcjonalności testu obciążeniowego. Można na przykład napisać kod wtyczki testu obciążeniowego, który będzie ustawiał lub modyfikował wzorzec testu obciążeniowego podczas wykonywania testu. W tym celu należy utworzyć klasę, która dziedziczy interfejs <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Klasa musi implementować metodę <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> tego interfejsu. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!TIP]
-> Można również utworzyć wtyczki do testów wydajności sieci Web. Aby uzyskać więcej informacji, zobacz [Jak: Tworzenie wtyczki testu wydajności sieci Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+> Możesz również utworzyć wtyczki dla testów wydajności sieci Web. Aby uzyskać więcej informacji, zobacz [How to: Create a Web Performance test plug-in](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 <!-- markdownlint-disable MD003 MD020 -->
-## <a name="to-create-a-load-test-plug-in-in-c"></a>Aby utworzyć wtyczkę testową obciążenia w C #
+## <a name="to-create-a-load-test-plug-in-in-c"></a>Aby utworzyć wtyczkę testu obciążenia w języku C #
 <!-- markdownlint-enable MD003 MD020 -->
 
-1. Otwórz projekt testu wydajności sieci web i obciążenia, który zawiera test wydajności sieci web.
+1. Otwórz projekt testu wydajności i obciążenia sieci Web, który zawiera test wydajności sieci Web.
 
-2. Dodaj test obciążenia do projektu testowego i skonfiguruj go do uruchamiania testu wydajności sieci Web.
+2. Dodaj test obciążenia do projektu testowego i skonfiguruj go tak, aby uruchamiał test wydajności sieci Web.
 
-     Aby uzyskać więcej informacji, zobacz [Szybki start: Tworzenie projektu testu obciążenia](../test/quickstart-create-a-load-test-project.md).
+     Aby uzyskać więcej informacji, zobacz [Szybki Start: Tworzenie projektu testu obciążenia](../test/quickstart-create-a-load-test-project.md).
 
-3. Dodaj nowy projekt **biblioteki klas** do rozwiązania. (W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz pozycję **Dodaj,** a następnie wybierz pozycję **Nowy projekt).**
+3. Dodaj nowy projekt **biblioteki klas** do rozwiązania. (W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz pozycję **Dodaj** , a następnie wybierz pozycję **Nowy projekt**).
 
-4. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy folder **Odwołania** w nowej bibliotece klas i wybierz polecenie **Dodaj odwołanie**.
+4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **odwołania** w nowej bibliotece klas i wybierz polecenie **Dodaj odwołanie**.
 
-   Zostanie wyświetlone okno dialogowe **Dodawanie odwołania.**
+   Zostanie wyświetlone okno dialogowe **Dodawanie odwołania** .
 
-5. Wybierz kartę **.NET,** przewiń w dół, a następnie wybierz pozycję **Microsoft.VisualStudio.QualityTools.LoadTestFramework**.
+5. Wybierz kartę **.NET** , przewiń w dół, a następnie wybierz pozycję **Microsoft. VisualStudio. QualityTools. LoadTestFramework**.
 
-6. Wybierz pozycję **OK**.
+6. Wybierz przycisk **OK**.
 
-   Odwołanie do **pliku Microsoft.VisualStudio.QualityTools.LoadTestFramework** jest dodawane do folderu **Odwołania** w **Eksploratorze rozwiązań**.
+   Odwołanie do **Microsoft. VisualStudio. QualityTools. LoadTestFramework** jest dodawane do folderu **Reference** w **Eksplorator rozwiązań**.
 
-7. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy górny węzeł projektu testu wydajności sieci web i obciążenia zawierający test obciążenia, do którego chcesz dodać wtyczkę testu obciążenia i wybierz pozycję **Dodaj odwołanie**.
+7. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy górny węzeł projektu testu wydajności i obciążenia sieci Web, który zawiera test obciążenia, do którego chcesz dodać wtyczkę testu obciążenia, a następnie wybierz pozycję **Dodaj odwołanie**.
 
-   Zostanie **wyświetlone okno dialogowe Dodawanie odwołania**.
+   **Zostanie wyświetlone okno dialogowe Dodawanie odwołania**.
 
-8. Wybierz kartę **Projekty** i wybierz projekt biblioteki klas.
+8. Wybierz kartę **projekty** i wybierz projekt Biblioteka klas.
 
-9. Wybierz pozycję **OK**.
+9. Wybierz przycisk **OK**.
 
-10. W **Edytorze kodu** `using` dodaj instrukcję dla obszaru <xref:Microsoft.VisualStudio.TestTools.LoadTesting> nazw.
+10. W **edytorze kodu**Dodaj `using` instrukcję dla <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw.
 
 11. Zaimplementuj interfejs <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> dla klasy, która została utworzona w projekcie Biblioteka klas. Przykładową implementację przedstawiono w następującej sekcji Przykład.
 
@@ -66,28 +66,28 @@ Można utworzyć wtyczkę testu obciążeniowego służącą do uruchamiania kod
 
 13. Kliknij prawym przyciskiem myszy górny węzeł testu obciążenia, a następnie wybierz polecenie **Dodaj wtyczkę testu obciążenia**.
 
-     Zostanie wyświetlone okno dialogowe **Dodawanie wtyczki testu obciążenia.**
+     Zostanie wyświetlone okno dialogowe **Dodaj wtyczkę testu obciążenia** .
 
-14. W obszarze **Wybierz wtyczkę**wybierz klasę wtyczki testu obciążenia.
+14. W obszarze **wybierz wtyczkę**wybierz klasę wtyczki testu obciążenia.
 
-15. W okienku **Właściwości dla wybranych wtyczek** ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
+15. We **właściwościach wybranego okienka wtyczek** Ustaw początkowe wartości dla wtyczki, które mają być używane w czasie wykonywania.
 
     > [!NOTE]
-    > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Można również zmienić właściwości wtyczki testu wydajności sieci web później za pomocą okna **Właściwości.**
+    > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Możesz również zmienić właściwości wtyczki testu wydajności sieci Web później za pomocą okna **Właściwości** .
 
-16. Wybierz pozycję **OK**.
+16. Wybierz przycisk **OK**.
 
-     Wtyczka zostanie dodana do folderu **Load Test Plug-ins.**
+     Wtyczka jest dodawana do folderu **wtyczki testów obciążenia** .
 
     > [!WARNING]
-    > Po uruchomieniu testu wydajności sieci Web lub testu obciążenia, który używa wtyczki, może pojawić się błąd podobny do następującego:
+    > Po uruchomieniu testu wydajności sieci Web lub testu obciążenia, który korzysta z wtyczki, może zostać wyświetlony błąd podobny do poniższego:
     >
-    > **Żądanie nie powiodło \<się: Wyjątek w> zdarzenia dodatku\<plug-in: nie można załadować pliku lub zestawu\<' "Nazwa wtyczki".dll plik>, Version= n.n.n.n>, Culture=neutral, PublicKeyToken=null' lub jedną z jego zależności. System nie może odnaleźć określonego pliku.**
+    > **Żądanie nie powiodło się: wyjątek w \<plug-in> zdarzeniu: nie można załadować pliku lub zestawu " \<"Plug-in name".dll file> , Version = \<n.n.n.n> , Culture = neutral, PublicKeyToken = null" lub jednej z jego zależności. System nie może znaleźć określonego pliku.**
     >
-    > Jest to spowodowane wprowadzeniem zmian w kodzie do któregokolwiek z wtyczek i utworzeniem nowej wersji biblioteki DLL **(Version=0.0.0.0),** ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
+    > Jest to spowodowane wprowadzeniem zmian w kodzie w dowolnych wtyczkach i utworzenie nowej wersji biblioteki DLL **(Version = 0.0.0.0)**, ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
     >
-    > 1. W projekcie testu wydajności sieci web i obciążenia zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie dodaj odwołanie do biblioteki DLL wtyczek.
-    > 2. Wyjmij wtyczkę z testu lub w odpowiedniej lokalizacji, a następnie dodaj ją z powrotem.
+    > 1. W projekcie testu wydajności i obciążenia sieci Web zobaczysz ostrzeżenie w odwołaniach. Usuń i Dodaj odwołanie do biblioteki DLL wtyczki.
+    > 2. Usuń wtyczkę z testu lub odpowiedniej lokalizacji, a następnie dodaj ją ponownie.
 
 ## <a name="example"></a>Przykład
 
@@ -161,4 +161,4 @@ Z testem obciążeniowym jest skojarzonych osiem zdarzeń, których wtyczka test
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Jak: Tworzenie wtyczki testu wydajności sieci Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Instrukcje: tworzenie wtyczki testu wydajności sieci Web](../test/how-to-create-a-web-performance-test-plug-in.md)

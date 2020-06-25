@@ -1,6 +1,6 @@
 ---
 title: 'Instrukcje: Instalowanie wizualizatora | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183629"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286391"
 ---
 # <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
 Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostępny w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Instalowanie wizualizatora jest prostym procesem.
@@ -54,6 +54,10 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
     - `netstandard2.0`dla debuggees przy użyciu środowiska uruchomieniowego, które obsługuje program `netstandard 2.0` ( `.NET Framework v4.6.1+` lub `.NET Core 2.0+` ).
     - `netcoreapp`debuggees `.NET Core` środowiska uruchomieniowego. (obsługuje `.NET Core 2.0+` )
 
+   Biblioteka DLL debugowanego obiektu jest niezbędna, jeśli chcesz utworzyć autonomiczny wizualizator. Ta biblioteka DLL zawiera kod dla obiektu danych, który może implementować metody <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+
+   Jeśli masz wiele obiektów docelowych kodu debugowanego obiektu, biblioteka DLL po stronie debugowanego obiektu musi być umieszczona w folderze dla minimalnej obsługiwanej TFM.
+
 4. Uruchom ponownie sesję debugowania.
 
 > [!NOTE]
@@ -80,6 +84,6 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
 > Jeśli chcesz użyć zarządzanego wizualizatora na potrzeby debugowania zdalnego, Skopiuj bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 - [Porady: pisanie wizualizatora](create-custom-visualizers-of-data.md)

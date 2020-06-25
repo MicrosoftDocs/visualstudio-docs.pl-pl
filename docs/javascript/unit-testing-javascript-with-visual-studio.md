@@ -1,8 +1,8 @@
 ---
 title: Testowanie jednostkowe JavaScript i TypeScript
-description: Program Visual Studio zapewnia obsługę testów jednostkowych w języku JavaScript i kodzie TypeScript przy użyciu Node.js Tools for Visual Studio
+description: Program Visual Studio zapewnia obsługę testów jednostkowych w języku JavaScript i kodzie TypeScript przy użyciu narzędzi Node.js Tools for Visual Studio
 ms.date: 06/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,23 +11,23 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183109"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289004"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostkowe JavaScript i TypeScript w programie Visual Studio
 
-Narzędzia Node. js Tools for Visual Studio umożliwiają pisanie i uruchamianie testów jednostkowych przy użyciu niektórych popularnych platform języka JavaScript bez konieczności przełączania się do wiersza polecenia.
+Narzędzia Node.js Tools for Visual Studio umożliwiają pisanie i uruchamianie testów jednostkowych przy użyciu niektórych popularnych platform języka JavaScript bez konieczności przełączania się do wiersza polecenia.
 
 Obsługiwane są następujące platformy:
 * Środowiska Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.GitHub.IO](https://jasmine.github.io/))
 * Taśma ([GitHub.com/Substack/Tape](https://github.com/substack/tape))
 * On ([jestjs.IO](https://jestjs.io/))
-* Eksportuj moduł uruchamiający (Platforma ta jest specyficzna dla Node.js Tools for Visual Studio)
+* Eksportuj moduł uruchamiający (Platforma ta jest specyficzna dla Node.js narzędzi dla programu Visual Studio)
 
 Jeśli Twoja ulubiona platforma nie jest obsługiwana, zobacz [Dodawanie obsługi dla struktury testów jednostkowych](#addingFramework) , aby uzyskać informacje na temat dodawania obsługi.
 
@@ -72,7 +72,7 @@ Po otwarciu Eksploratora testów (wybierz **test**  >  **Windows**  >  **Eksplor
 ![Eksplorator testów](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Nie używaj `outdir` `outfile` opcji or w *tsconfig. JSON*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych w plikach TypeScript.
+> Nie używaj `outdir` `outfile` opcji or w *tsconfig.json*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych w plikach TypeScript.
 
 ## <a name="run-tests"></a>Uruchom testy
 
@@ -125,7 +125,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Jeśli zostanie wyświetlony komunikat o błędzie informujący o tym, że nie można znaleźć pliku *VSTest. Console. exe* , upewnij się, że otwarto wiersz polecenia dla deweloperów, a nie zwykły wiersz polecenia.
+> Jeśli zostanie wyświetlony komunikat o błędzie z informacją, że nie można odnaleźć *vstest.console.exe* , upewnij się, że otwarto wiersz polecenia dla deweloperów, a nie zwykły wiersz polecenia.
 
 ## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Dodawanie obsługi dla struktury testów jednostkowych
 
@@ -145,7 +145,7 @@ Aby zapoznać się z dobrymi przykładami `find_tests` i `run_tests` implementac
 Odnajdywanie dostępnych platform testowych odbywa się po rozpoczęciu programu Visual Studio. Jeśli po uruchomieniu programu Visual Studio zostanie dodana struktura, uruchom ponownie program Visual Studio, aby wykryć strukturę. Nie trzeba jednak ponownie uruchamiać w przypadku wprowadzania zmian w implementacji.
 
 ## <a name="unit-tests-in-other-project-types"></a>Testy jednostkowe w innych typach projektów
-Nie można pisać testów jednostkowych tylko w projektach środowiska Node. js. Po dodaniu właściwości TestFramework i TestRoot do dowolnego projektu C# lub Visual Basic testy te zostaną wyliczone i można uruchomić je przy użyciu okna Eksplorator testów.
+Nie możesz pisać testów jednostkowych tylko w projektach Node.js. Po dodaniu właściwości TestFramework i TestRoot do dowolnego projektu C# lub Visual Basic testy te zostaną wyliczone i można uruchomić je przy użyciu okna Eksplorator testów.
 
 Aby włączyć tę funkcję, kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań, wybierz polecenie **Zwolnij projekt**, a następnie wybierz polecenie **Edytuj projekt**. Następnie w pliku projektu Dodaj następujące dwa elementy do grupy właściwości.
 

@@ -1,6 +1,6 @@
 ---
-title: Uruchamianie narzędzi profilowania z debugerem lub bez niego | Dokumenty firmy Microsoft
-ms.date: 04/02/2020
+title: Uruchamianie narzędzi profilowania z debugerem lub bez niego | Microsoft Docs
+ms.date: 5/26/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -8,131 +8,169 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf544b3bec9b492f1d1669549ba5501a52f7d5f2
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 45632967c39348e8dc78dc3e2fb95227dcd86d7d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638805"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285920"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
-Visual Studio oferuje wybór narzędzi do pomiaru wydajności i profilowania. Niektóre narzędzia, takie jak **użycie procesora CPU** i **użycie pamięci,** można uruchomić z debugerem lub bez oraz w konfiguracjach kompilacji wydania lub debugowania. **Narzędzia profilera wydajności,** takie jak **oś czasu aplikacji,** można uruchomić w kompilacjach debugowania lub wydania. Narzędzia zintegrowane z debugerem, takie jak okna **Narzędzia diagnostyczne** i karty **Zdarzenia,** są uruchamiane tylko podczas sesji debugowania.
+Program Visual Studio oferuje wybór narzędzi do pomiaru wydajności i profilowania. Niektóre narzędzia, takie jak użycie procesora CPU i użycie pamięci, można uruchomić z debugerem lub bez niego, a także w konfiguracjach kompilacji wersji lub debugowania. Narzędzia profilera wydajności, takie jak Oś czasu aplikacji, można uruchamiać w ramach kompilacji debugowania lub wydań. Narzędzia zintegrowane z debugerem, takie jak karta okna narzędzia diagnostyczne i zdarzenia, są uruchamiane tylko podczas debugowania sesji.
 
 >[!NOTE]
->Narzędzia wydajności niezwiązane z debugerem można używać w systemie Windows 7 lub nowszych. System Windows 8 lub nowszy jest wymagany do uruchomienia narzędzi profilowania zintegrowanych z debugerem.
+>Możesz użyć narzędzi do oceny wydajności bez debugera w systemie Windows 7 i nowszych. Do uruchomienia narzędzi profilowania zintegrowanych ze debugerem wymagany jest system Windows 8 lub nowszy.
 
-Program **Performance Profiler** niezwiązane z debugerem i **narzędzia diagnostyczne zintegrowane** z debugerem zawierają różne informacje i środowiska. Narzędzia zintegrowane z debugerem pokazują punkty przerwania i wartości zmiennych. Narzędzia inne niż debuger zapewniają wyniki bliżej środowiska użytkownika końcowego.
+Profiler wydajności bez debugera i zintegrowany z debugerem narzędzia diagnostyczne udostępniają różne informacje i środowiska. Narzędzia zintegrowane z debugerem pokazują punkty przerwania i wartości zmiennych. Narzędzia, które nie są debugerem, dają wyniki bliżej środowiska użytkownika końcowego.
 
-Aby pomóc w podjęciu decyzji, których narzędzi i wyników użyć, należy wziąć pod uwagę następujące kwestie:
+Aby pomóc w wyborze narzędzi i wyników do użycia, należy wziąć pod uwagę następujące kwestie:
 
-- Zewnętrzne problemy z wydajnością, takie jak problemy z we/wy pliku lub problemy z responsywnością sieci, nie będą wyglądać inaczej w narzędziach debugera lub innych niż debuger.
-- W przypadku problemów spowodowanych przez wywołania intensywnie korzystające z procesora CPU mogą występować znaczne różnice w wydajności między kompilacjami release i debug. Sprawdź, czy problem istnieje w kompilacjach wersji.
-- Jeśli problem występuje tylko podczas kompilacji debugowania, prawdopodobnie nie trzeba uruchamiać narzędzi innych niż debuger. W przypadku problemów z kompilacją wersji zdecyduj, czy narzędzia debugera pomogą w dalszym badaniu.
-- Kompilacje wersji zapewniają optymalizacje, takie jak inlining wywołania funkcji i stałych, przycinanie nieużywanych ścieżek kodu i przechowywanie zmiennych w sposób, który nie może być używany przez debugera. Numery wydajności w narzędziach zintegrowanych z debugerem są mniej dokładne, ponieważ kompilacje debugowania nie mają tych optymalizacji.
-- Debuger sam zmienia czas wydajności, jak to wymaga operacji debugera, takich jak przechwytywanie zdarzeń wyjątku i ładowania modułu.
-- Zwolnij numery wydajności kompilacji w narzędziach **profilera wydajności** są najbardziej precyzyjne i dokładne. Wyniki narzędzi zintegrowane z debugerem są najbardziej przydatne do porównania z innymi pomiarami związanymi z debugowaniem.
+- Zewnętrzne problemy z wydajnością, takie jak pliki we/wy lub problemy z odpowiedzią w sieci, nie wyglądają inaczej w debugerze lub narzędziach innych niż debuger.
+- W przypadku problemów spowodowanych przez wywołania intensywnie korzystające z procesora CPU mogą występować znaczne różnice wydajności między kompilacjami wydań i debugowania. Sprawdź, czy problem występuje w kompilacjach wydania.
+- Jeśli problem występuje tylko podczas kompilacji debugowania, prawdopodobnie nie trzeba uruchamiać narzędzi niebędących debugerem. W przypadku problemów z kompilacją wersji należy zdecydować, czy narzędzia debugera pomogą Ci w dalszej analizie.
+- Kompilacje wydań zapewniają optymalizacje, takie jak wywołania funkcji defragmentowania i stałe, oczyszczanie nieużywanych ścieżek kodu i przechowywanie zmiennych w sposób, który nie może być używany przez debuger. Numery wydajności w narzędziach zintegrowanych z debugerem są mniej dokładne, ponieważ kompilacje debugowania nie mają tych optymalizacji.
+- Debuger zmienia czasy wydajności, ponieważ wymaga operacji debugera, takich jak przechwycenie zdarzeń ładowania wyjątków i modułów.
+- Numery wydajności kompilacji wersji w narzędziach profilera wydajności są najbardziej precyzyjne i dokładne. Debuger — wyniki narzędzia zintegrowanego są najbardziej przydatne do porównania z innymi pomiarami związanymi z debugowaniem.
 
-W przypadku użycia procesora CPU narzędzie można uruchomić na komputerze zdalnym przy użyciu narzędzi wiersza polecenia.
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieraj dane profilowania podczas debugowania
 
-## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieranie danych profilowania podczas debugowania
+Po rozpoczęciu debugowania w programie Visual Studio, wybierając **Debuguj**  >  **Rozpocznij debugowanie**lub naciskając klawisz **F5**, domyślnie zostanie wyświetlone okno **Narzędzia diagnostyczne** . Aby otworzyć go ręcznie, wybierz pozycję **Debuguj**  >  **okna**  >  **Pokaż narzędzia diagnostyczne**. Okno **Narzędzia diagnostyczne** zawiera informacje o zdarzeniach, pamięci procesu i użycia procesora CPU.
 
-Po uruchomieniu debugowania w programie Visual Studio, wybierając **debugowanie** > **start debugowania** lub naciskając **klawisz F5,** domyślnie pojawia się okno **Narzędzia diagnostyczne.** Aby otworzyć go ręcznie, wybierz pozycję **Debugowanie** > **narzędzi diagnostycznych programu****Windows** > Show . Okno **Narzędzia diagnostyczne** zawiera informacje o zdarzeniach, pamięci procesu i użyciu procesora CPU.
+![Zrzut ekranu okna narzędzia diagnostyczne](../profiling/media/diagnostictoolswindow.png " Okno Narzędzia diagnostyczne")
 
-![Narzędzia diagnostyczne](../profiling/media/diagnostictools-update1.png "Narzędzia diagnostyczne")
+- Użyj ikony **ustawień** na pasku narzędzi, aby określić, czy ma być wyświetlane **użycie pamięci**, **Analiza interfejsu użytkownika**i **użycie procesora CPU**.
 
-- Użyj **ikony Ustawienia** na pasku narzędzi, aby wybrać, czy ma być wyświetlane **użycie pamięci,** czy **użycie procesora**.
+- Wybierz pozycję **Ustawienia** na liście rozwijanej **Ustawienia** , aby otworzyć **Narzędzia diagnostyczne strony właściwości** z więcej opcji.
 
-- Wybierz **pozycję Ustawienia** w menu rozwijanym **Ustawienia,** aby otworzyć **strony właściwości narzędzia diagnostyczne** z większą liczedą opcje.
+- Jeśli używasz Visual Studio Enterprise, możesz włączyć lub wyłączyć IntelliTrace, przechodząc do opcji **Narzędzia**  >  **Options**  >  **IntelliTrace**.
 
-- Jeśli korzystasz z programu Visual Studio Enterprise, możesz włączyć lub wyłączyć funkcję IntelliTrace w obszarze**Opcje** >  **narzędzi** > programu Visual Studio**IntelliTrace**.
+Sesja diagnostyczna zostanie zakończona po zatrzymaniu debugowania.
 
-Sesja diagnostyczna kończy się po zatrzymaniu debugowania.
+### <a name="the-events-tab"></a>Karta zdarzenia
 
-### <a name="the-events-tab"></a>Karta Zdarzenia
+Podczas sesji debugowania na karcie zdarzenia okna narzędzia diagnostyczne wyświetlane są zdarzenia diagnostyczne, które wystąpiły. Kategoria prefiksy *punktów przerwania*, *plik*i inne, umożliwia szybkie przeszukanie listy dla kategorii lub pominięcie kategorii, z którymi się nie interesują.
 
-Podczas sesji debugowania, **zdarzenia** kartę w oknie **Narzędzia diagnostyczne** wyświetla zdarzenia diagnostyczne, które występują. Prefiksy kategorii: **Breakpoint**, **Plik**i inne, umożliwiają szybkie skanowanie listy w poszukiwaniu kategorii lub pominięcie kategorii, na których Ci nie zależy.
+Lista rozwijana **Filtr** służy do filtrowania zdarzeń w i poza widok, wybierając lub czyszcząc określone kategorie zdarzeń.
 
-Listy rozwijanej **Filtrowanie** służy do filtrowania zdarzeń w widoku i poza nie, zaznaczając lub odznaczając określone kategorie zdarzeń.
+![Zrzut ekranu filtru zdarzeń diagnostycznych](../profiling/media/diagnosticeventfilter.png "Filtr zdarzeń diagnostycznych")
 
-![Filtr zdarzeń diagnostycznych](../profiling/media/diagnosticeventfilter.png "Filtr zdarzeń diagnostycznych")
+Użyj pola wyszukiwania, aby znaleźć konkretny ciąg na liście zdarzeń. Poniżej przedstawiono wyniki wyszukiwania *nazwy* ciągu, która pasuje do czterech zdarzeń:
 
-Użyj pola wyszukiwania, aby znaleźć określony ciąg na liście zdarzeń. Oto wyniki wyszukiwania ciągu "name", który pasował do czterech zdarzeń:
+![Zrzut ekranu przedstawiający wyszukiwanie zdarzeń diagnostycznych](../profiling/media/diagnosticseventsearch.png "Wyszukiwanie zdarzeń diagnostycznych")
 
-![Wyszukiwanie zdarzeń diagnostycznych](../profiling/media/diagnosticseventsearch.png "Wyszukiwanie zdarzeń diagnostycznych")
-
-Aby uzyskać więcej informacji, zobacz [Wyszukiwanie i filtrowanie na karcie Zdarzenia w oknie Narzędzia diagnostyczne](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
+Aby uzyskać więcej informacji, zobacz [Wyszukiwanie i filtrowanie zdarzeń na karcie zdarzenia okna narzędzia diagnostyczne](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 ## <a name="collect-profiling-data-without-debugging"></a>Zbieranie danych profilowania bez debugowania
 
-Aby zbierać dane dotyczące wydajności bez debugowania, można uruchomić narzędzia **profilera wydajności.** Niektóre narzędzia profilowania wymagają uprawnień administratora do uruchomienia. Program Visual Studio można otworzyć jako administrator lub uruchomić narzędzia jako administrator po uruchomieniu sesji diagnostycznej.
+Aby zbierać dane dotyczące wydajności bez debugowania, można uruchomić narzędzia profilera wydajności.
 
-1. Po otwarciu projektu w programie Visual Studio ustaw konfigurację rozwiązania na **Zwolnij** i wybierz **opcję Lokalny debuger systemu Windows** (lub Komputer **lokalny)** jako miejsce docelowe wdrożenia.
+1. Po otwarciu projektu w programie Visual Studio Ustaw konfigurację rozwiązania na **Zwolnij**, a następnie wybierz pozycję **lokalny debuger systemu Windows**   (lub **komputer lokalny**) jako cel wdrożenia.
 
-1. Wybierz **opcję Debug** > **Performance Profiler**lub naciśnij **klawisz Alt**+**F2**.
+1. Wybierz pozycję **Debuguj**  >  **wydajność Profiler**lub naciśnij klawisz **Alt** + **F2**.
 
-1. Na stronie uruchamiania diagnostycznego wybierz jedno lub więcej narzędzi do uruchomienia. Wyświetlane są tylko narzędzia mające zastosowanie do typu projektu, systemu operacyjnego i języka programowania. Wybierz **pozycję Pokaż wszystkie narzędzia,** aby wyświetlić również narzędzia wyłączone dla tej sesji diagnostycznej. Oto jak twoje wybory mogą wyglądać dla aplikacji platformy uniwersalnej systemu i kontroli konta:
+1. Na stronie uruchamiania narzędzi diagnostycznych wybierz co najmniej jedno narzędzie do uruchomienia. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i języka programowania. Wybierz pozycję **Pokaż wszystkie narzędzia** , aby wyświetlić także narzędzia, które są wyłączone dla tej sesji diagnostycznej.
 
-   ![Wybierz narzędzia diagnostyczne](../profiling/media/diag_selecttool.png "DIAG_SelectTool")
+   ![Zrzut ekranu narzędzi diagnostycznych](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
-1. Aby rozpocząć sesję diagnostyczną, wybierz przycisk **Start**.
+1. Aby rozpocząć sesję diagnostyczną, wybierz pozycję **Uruchom**.
 
-   Gdy sesja jest uruchomiona, niektóre narzędzia wyświetlają wykresy danych w czasie rzeczywistym na stronie narzędzi diagnostycznych.
+   Gdy sesja jest uruchomiona, niektóre narzędzia pokazują wykresy danych w czasie rzeczywistym na stronie narzędzia diagnostyczne, a także kontrolki do wstrzymywania i wznawiania zbierania danych.
 
-    ![Zbieranie danych na temat Centrum wydajności i diagnostyki](../profiling/media/pdhub_collectdata.png "Centrum zbiera dane")
+    ![Zrzut ekranu przedstawiający zbieranie danych w centrum wydajności i diagnostyki](../profiling/media/diaghubcollectdata.png "Zbieranie danych przez centrum")
 
-1. Aby zakończyć sesję diagnostyczną, wybierz pozycję **Zatrzymaj kolekcję**.
+1. Aby zakończyć sesję diagnostyczną, wybierz pozycję **Zatrzymaj zbieranie**.
 
-   Analizowane dane są wyświetlane na stronie **Raport.**
+   Analizowane dane pojawiają się na stronie **raportu** .
 
-Raporty można zapisać i otworzyć z listy **Ostatnio otwarte sesje** na stronie uruchamiania narzędzi diagnostycznych.
+Raporty można zapisać i otworzyć z listy **ostatnio otwierane sesje** na stronie uruchamiania narzędzia diagnostyczne.
 
-![Otwieranie zapisanego pliku sesji diagnostycznej](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+![Zrzut narzędzia diagnostyczne ekranu przedstawiający listę ostatnio otwieranych sesji](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
-### <a name="the-profiling-report"></a>Raport profilowania
- ![Raport narzędzi diagnostycznych](../profiling/media/diag_report.png "DIAG_Report")
+## <a name="collect-profiling-data-from-the-command-line"></a>Zbieranie danych profilowania z wiersza polecenia
 
-|||
-|-|-|
-|![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Na osi czasu są widoczne długość sesji profilowania, zdarzenia aktywacji cyklu życia aplikacji i znaczniki użytkownika.|
-|![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Raport można ograniczyć do części osi czasu, przeciągając niebieskie paski w celu wybrania regionu na osi czasu.|
-|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Każde narzędzie diagnostyczne wyświetla jeden lub więcej wykresów głównych. Jeśli sesja diagnostyczna miała więcej niż jedno narzędzie, wyświetlane są wszystkie ich wykresy główne.|
-|![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Można zwinąć i rozwinąć poszczególne wykresy każdego narzędzia.|
-|![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Gdy dane zawierają więcej niż jedno narzędzie, szczegóły narzędzia są zbierane w zakładkach.|
-|![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|W dolnej połowie raportu jest wyświetlany co najmniej jeden widok szczegółów dla każdego narzędzia. Widok można filtrować, zaznaczając obszary osi czasu.|
+Aby zmierzyć dane dotyczące wydajności z wiersza polecenia, można użyć VSDiagnostics.exe, który jest dołączony do programu Visual Studio lub narzędzi zdalnych. Jest to przydatne w przypadku przechwytywania śladów wydajności w systemach, na których nie zainstalowano programu Visual Studio lub tworzenia skryptów kolekcji śladów wydajności. W przypadku korzystania z VSDiagnostics.exe Rozpocznij sesję diagnostyczną, która przechwytuje i przechowuje dane profilowania, dopóki narzędzie nie zostanie zatrzymane. W tym momencie dane zostaną wyeksportowane do pliku. diagsession. możesz otworzyć ten plik w programie Visual Studio, aby analizować wyniki.
 
-## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Uruchamianie sesji diagnostycznych w zainstalowanych lub uruchomionych aplikacjach
+### <a name="launch-an-application"></a>Uruchom aplikację
 
-Oprócz uruchamiania aplikacji z projektu programu Visual Studio, można również uruchomić sesje diagnostyczne na alternatywnych obiektów docelowych. Na przykład można zdiagnozować problemy z wydajnością w aplikacji, która została zainstalowana ze sklepu Windows App Store. W obszarze Profiler wydajności wybierz z listy rozwijanej w obszarze **Zmień miejsce docelowe**.
+1. Otwórz wiersz polecenia i przejdź do katalogu z VSDiagnostics.exe:
 
-![Wybieranie celu analizy narzędzi diagnostycznych](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+   ```
+   <Visual Studio Install Folder>\Team Tools\DiagnosticsHub\Collector\
+   ```
 
-Można uruchomić aplikacje, które są już zainstalowane lub dołączyć narzędzia diagnostyczne do aplikacji i procesów, które są już uruchomione.
+2. Uruchom VSDiagnostics.exe przy użyciu następującego polecenia:
 
-Jeśli jako cel analizy zostanie wybrana opcję **Wykonywalna,** możesz wprowadzić ścieżkę do *pliku .exe* na komputerze lokalnym lub zdalnym. W obu przypadkach *.exe* działa lokalnie. Jednak zaleca się profil aplikacji przez otwarcie rozwiązania w programie Visual Studio.
+   ```
+   VSDiagnostics.exe start <id> /launch:<appToLaunch> /loadConfig:<configFile>
+   ```
 
-W przypadku aplikacji platformy uniwersalnej systemu Windows po wybraniu **opcji Uruchamianie aplikacji** lub **Zainstalowana aplikacja**wybierz aplikację z listy, która znajdzie aplikacje w określonym miejscu docelowym wdrożenia. Ten cel może być komputerem lokalnym lub zdalnym. Aby profilować aplikację platformy uniwersalnej na komputerze zdalnym, należy wybrać opcję **Uniwersalny (protokół niezaszyfrowany)** w oknie dialogowym **Połączenia zdalne.**
+   Należy uwzględnić następujące argumenty:
 
-![Wybieranie uruchomionej lub zainstalowanej aplikacji do diagnostyki](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+   - \<id\>: Identyfikuje sesję zbierania danych. Identyfikator musi być liczbą z zakresu od 1-255 do.
+   - \<appToLaunch\>: Plik wykonywalny do uruchomienia i profilowania.
+   - \<configFile\>: Plik konfiguracyjny agenta kolekcji, który ma zostać uruchomiony.
 
-> [!NOTE]
-> W przypadku innych scenariuszy wymagających zdalnego użycia narzędzi profilowania zobacz [Mierzenie wydajności aplikacji z wiersza polecenia](../profiling/profile-apps-from-command-line.md). Narzędzia wiersza polecenia można używać za pomocą narzędzia CPU Cpu Usage i narzędzia .NET Object Allocation.
+3. Aby zatrzymać zbieranie i przeglądać wyniki, wykonaj kroki opisane w sekcji "Zatrzymaj zbieranie" w dalszej części tego artykułu.
 
-## <a name="see-also"></a>Zobacz też
+### <a name="attach-to-an-existing-application"></a>Dołącz do istniejącej aplikacji
 
-Poniżej znajdują się wpisy w blogu i artykuły MSDN z zespołu programistycznego diagnostyki:
-- [MSDN Magazine: Analizowanie wydajności podczas debugowania w programie Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
+1. Otwórz aplikację, taką jak Notatnik, a następnie otwórz **Menedżera zadań** , aby uzyskać identyfikator procesu (PID). W Menedżerze zadań Znajdź identyfikator PID na karcie **szczegóły**   .
+2. Otwórz wiersz polecenia i przejdź do katalogu przy użyciu pliku wykonywalnego agenta kolekcji. Zwykle jest to tutaj:
 
-- [MSDN Magazine: Użyj IntelliTrace do szybszego diagnozowania problemów](https://msdn.microsoft.com/magazine/dn973014.aspx)
+   ```
+   <Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\
+   ```
 
-- [Wpis w blogu: Diagnozowanie przecieków obsługi zdarzeń za pomocą narzędzia użycia pamięci w programie Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+3. Uruchom plik VSDiagnostics.exe, wpisując następujące polecenie.
 
-- [Klip wideo: debugowanie historyczne za pomocą funkcji IntelliTrace w programie Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
+   ```
+   VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
+   ```
 
-- [Klip wideo: problemy z wydajnością debugowania przy użyciu programu Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
+   Należy uwzględnić następujące argumenty:
 
-- [Porady dotyczące wydajności: informacje o wydajności w skrócie podczas debugowania za pomocą programu Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+   - \<id\>: Identyfikuje sesję zbierania danych. Identyfikator musi być liczbą z zakresu od 1-255 do.
+   - \<pid\>: Identyfikator PID procesu, który chcesz profilować, co w tym przypadku jest identyfikatorem PID znalezionym w kroku 1.
+   - \<configFile\>: Plik konfiguracyjny agenta kolekcji, który ma zostać uruchomiony. Aby uzyskać więcej informacji, zobacz [pliki konfiguracji dla agentów](../profiling/profile-apps-from-command-line.md).
 
-- [Okno debugera narzędzi diagnostycznych w programie Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
+4. Aby zatrzymać zbieranie i przeglądać wyniki, wykonaj kroki opisane w następnej sekcji.
 
-- [IntelliTrace w programie Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
+### <a name="stop-collection"></a>Zatrzymaj zbieranie
+
+1. Zatrzymaj sesję zbierania i wysyłaj dane wyjściowe do pliku, wpisując następujące polecenie.
+
+   ```
+   VSDiagnostics.exe stop <id> /output:<path to file>
+   ```
+
+2. Przejdź do pliku wyjściowego z poprzedniego polecenia i otwórz go w programie Visual Studio, aby przejrzeć zebrane informacje.
+
+## <a name="agent-configuration-files"></a>Pliki konfiguracji agenta
+
+Agenci kolekcji są składnikami, które zbierają różne typy danych, w zależności od tego, co próbujesz zmierzyć.
+Dla wygody można przechowywać te informacje w pliku konfiguracji agenta. Plik konfiguracji to plik JSON, który zawiera co najmniej nazwę pliku dll i jego identyfikator CLSID COM. Poniżej przedstawiono przykładowe pliki konfiguracyjne, które można znaleźć w następującym folderze:
+
+```
+<Visual Studio installation folder>\Team Tools\DiagnosticsHub\Collector\AgentConfigs\
+```
+
+Aby pobrać i wyświetlić pliki konfiguracji agentów, zobacz następujące linki:
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+Konfiguracje CpuUsage (podstawowa/wysoka/niska) odpowiadają danym zebranym dla narzędzia profilowania [użycia procesora CPU](../profiling/cpu-usage.md) .
+Konfiguracje DotNetObjectAlloc (podstawowa/niska) odpowiadają danym zebranym dla [Narzędzia alokacji obiektów platformy .NET](../profiling/dotnet-alloc-tool.md).
+
+Konfiguracje Base/niska/wysoka odnoszą się do częstotliwości próbkowania. Na przykład niska jest 100 próbek/s i wysoka to 4000 próbek/sekundę.
+Aby narzędzie VSDiagnostics.exe działało z agentem kolekcji, wymagany jest zarówno plik DLL, jak i identyfikator CLSID modelu COM dla odpowiedniego agenta. Agent może również mieć dodatkowe opcje konfiguracji. Jeśli używasz agenta bez pliku konfiguracji, użyj formatu w następującym poleceniu:
+
+```
+VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
+```

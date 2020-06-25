@@ -1,5 +1,5 @@
 ---
-title: Zadanie CombinePath | Dokumenty firmy Microsoft
+title: CombinePath — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,30 +16,56 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 533f87eba9032efa7dc60ac682bbe400cb640727
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634438"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288965"
 ---
 # <a name="combinepath-task"></a>CombinePath — zadanie
 
 Łączy określone ścieżki w jedną ścieżkę.
 ## <a name="task-parameters"></a>Parametry zadania
 
- W poniższej tabeli opisano parametry [zadania CombinePath](../msbuild/combinepath-task.md).
+ W poniższej tabeli opisano parametry [zadania CombinePath —](../msbuild/combinepath-task.md).
 
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`BasePath`|Wymagany parametr interfejsu `String`.<br /><br /> Ścieżka podstawowa do łączenia z innymi ścieżkami. Może być ścieżką względną, ścieżką bezwzględną lub pustą.|
+|`BasePath`|Wymagany parametr interfejsu `String`.<br /><br /> Ścieżka podstawowa, która ma zostać połączona z innymi ścieżkami. Może być ścieżką względną, ścieżką bezwzględną lub pustą.|
 |`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista poszczególnych ścieżek do połączenia z BasePath w celu utworzenia połączonej ścieżki. Ścieżki mogą być względne lub bezwzględne.|
-|`CombinedPaths`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Połączona ścieżka, która jest tworzona przez to zadanie.|
+|`CombinedPaths`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Połączona Ścieżka utworzona przez to zadanie.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+
+ Poniższy przykład pokazuje, jak utworzyć strukturę folderu wyjściowego przy użyciu, `CombinePath` Aby skonstruować Właściwość `$(OutputDirectory)` przez połączenie ścieżki głównej `$(PublishRoot)` połączonej z `$(ReleaseDirectory)` i listy podfolderów `$(LangDirectories)` .
+
+ ```xml
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishRoot>C:\Site1\Release</PublishRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <LangDirectories Include="en-us\;fr-fr\"/>
+  </ItemGroup>
+
+  <Target Name="CreateOutputDirectories" AfterTargets="Build">
+    <CombinePath BasePath="$(PublishRoot)" Paths="@(LangDirectories)" >
+      <Output TaskParameter="CombinedPaths" ItemName="OutputDirectories"/>
+    </CombinePath>
+    <MakeDir Directories="@(OutputDirectories)" />
+  </Target>
+```
+
+Jedyną właściwością, która może `CombinePath` być listą `Paths` , w tym przypadku dane wyjściowe są również listą. Tak więc, `$(PublishRoot)` Jeśli *jest \\ C:\Site1*, `$(ReleaseDirectory)` a *wersja \\ *to `@(LangDirectories)` *en-us \; fr- \\ fr*, to przykłady te tworzą foldery:
+
+- C:\Site1\Release\en-us\
+- C:\Site1\Release\fr-fr\
 
 ## <a name="see-also"></a>Zobacz też
 
