@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 926c54be9d31a6d0708b33248b6887c0ac7e324e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fea7763bf1cbce5fac36ce2cd5e54c40e1da989a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184071"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289238"
 ---
 # <a name="msbuild-conditions"></a>Warunki MSBuild
 
@@ -31,10 +31,10 @@ Program MSBuild obsługuje określony zestaw warunków, które mogą być stosow
 
 |Warunek|Opis|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|Zwraca wartość, `true` Jeśli `stringA` jest równa `stringB` .<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
-|'`stringA`' != '`stringB`'|Daje w `true` przypadku, gdy `stringA` nie jest równe `stringB` .<br /><br /> Przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
+|'`stringA`' == '`stringB`'|Zwraca wartość, `true` Jeśli `stringA` jest równa `stringB` .<br /><br /> Przykład:<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
+|'`stringA`' != '`stringB`'|Daje w `true` przypadku, gdy `stringA` nie jest równe `stringB` .<br /><br /> Przykład:<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
 |\<, >, \<=, >=|Oblicza wartości liczbowe argumentów operacji. Zwraca `true` czy wartość oceny relacyjnej to true. Operandy muszą mieć wartość dziesiętną lub szesnastkową. Liczby szesnastkowe muszą zaczynać się od ciągu "0x". **Uwaga:**  W formacie XML, znaki `<` i `>` muszą być zmienione. Symbol `<` jest reprezentowany jako `&lt;` . Symbol `>` jest reprezentowany jako `&gt;` .|
-|Istnieje (' `stringA` ')|Zwraca wartość, `true` Jeśli istnieje plik lub folder o nazwie `stringA` .<br /><br /> Przykład:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
+|Istnieje (' `stringA` ')|Zwraca wartość, `true` Jeśli istnieje plik lub folder o nazwie `stringA` .<br /><br /> Przykład:<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
 |HasTrailingSlash (' `stringA` ')|Zwraca wartość `true` , jeśli określony ciąg zawiera znak ukośnika odwrotnego ( \\ ) lub ukośnika (/).<br /><br /> Przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
 |!|Daje w `true` przypadku, gdy operand zwraca wartość `false` .|
 |`And`|Zwraca wartość, `true` Jeśli oba operandy są oceniane do `true` .|
@@ -51,14 +51,14 @@ Można użyć metod String w warunkach, jak pokazano w poniższym przykładzie, 
         <TargetFrameworks>net45;net48;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789.`))' == 'net'">
+    <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
         <!-- Properties for .NET Framework -->
     </PropertyGroup>
 
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)

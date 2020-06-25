@@ -1,7 +1,7 @@
 ---
-title: 'DA0023: Wysoki czas procesora GC | Dokumenty firmy Microsoft'
+title: DA0023 — wysoki czas procesora (GC) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0023
 - vs.performance.23
@@ -13,39 +13,39 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f0dd45486f526954d7dfce45cd607ff6196eae00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f83dd64d1f432e2f6628a0b1c5852be9fede305b
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777650"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328415"
 ---
-# <a name="da0023-high-gc-cpu-time"></a>DA0023: Wysokie wykorzystanie czasu GC CPU
+# <a name="da0023-high-gc-cpu-time"></a>DA0023: Duże zużycie czasu procesora przez odzyskiwanie pamięci
 
 |||
 |-|-|
 |Identyfikator reguły|DA0023|
-|Kategoria|Użycie programu .NET Framework|
-|Metoda profilowania|Wszystkie|
-|Komunikat|% czasu w GC jest dość wysoki. To wskazanie nadmiernej ilości elementów bezużytecznych obciążenie może mieć wpływ na szybkość reakcji aplikacji. Można zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby lepiej zrozumieć wzorzec alokacji pamięci, którego aplikacja używa.|
+|Kategoria|Użycie .NET Framework|
+|Metoda profilowania|Wszystko|
+|Komunikat|Czas trwania operacji odzyskiwania pamięci (%) jest stosunkowo wysoki. Ten wskaźnik nadmiernej ilości wyrzucania elementów bezużytecznych może mieć wpływ na czas odpowiedzi aplikacji. Można zebrać dane alokacji pamięci platformy .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci, która jest stosowana przez aplikację.|
 |Typ reguły|Informacyjne|
 
- Podczas profilowania przy użyciu próbkowania, .NET pamięci lub metody rywalizacji o zasoby, należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="cause"></a>Przyczyna
- Dane wydajności systemu, który jest zbierany podczas profilowania wskazuje, że ilość czasu spędzonego w wyrzucaniu elementów bezużytecznych jest znacząca w porównaniu z całkowitym czasem przetwarzania aplikacji.
+ Dane wydajności systemu zbierane podczas profilowania wskazują, że czas spędzony na wyrzucaniu elementów bezużytecznych jest znaczny w porównaniu z całkowitym czasem przetwarzania aplikacji.
 
 ## <a name="rule-description"></a>Opis reguły
- Wspólny język microsoft .NET (CLR) zapewnia mechanizm automatycznego zarządzania pamięcią, który używa modułu zbierającego elementy bezużyteczne do odzyskiwania pamięci z obiektów, które aplikacja nie jest już używana. Moduł zbierający elementy bezużyteczne jest zorientowany na generowanie, przy założeniu, że wiele alokacji są krótkotrwałe. Zmienne lokalne, na przykład, powinny być krótkotrwałe. Nowo utworzone obiekty rozpoczynają się w generacji 0 (gen 0), a następnie przechodzą do generacji 1, gdy przetrwają uruchomienie wyrzucania elementów bezużytecznych, a na koniec przejście do generacji 2, jeśli aplikacja nadal ich używa.
+ Microsoft .NET Common Language Time (CLR) zapewnia automatyczny mechanizm zarządzania pamięcią, który używa modułu wyrzucania elementów bezużytecznych do odzyskiwania pamięci z obiektów, które nie są już używane przez aplikację. Moduł wyrzucania elementów bezużytecznych jest oparty na generacji, w oparciu o założenie, że wiele alokacji jest krótkoterminowych. Zmienne lokalne, na przykład, powinny być krótkotrwałe. Nowo utworzone obiekty rozpoczynają się w generacji 0 (Gen 0), a następnie postępować w generacji 1, gdy zajmują się uruchomieniem odzyskiwania pamięci, a wreszcie przechodzą do generacji 2, jeśli aplikacja nadal używa tych danych.
 
- Obiekty w generacji 0 są zbierane często i wydajnie. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajnie. Wreszcie, długowieczne obiekty w generacji 2 powinny być zbierane jeszcze rzadziej. Kolekcja generacji 2, która jest pełną operacją wyrzucania elementów bezużytecznych, jest również najdroższą operacją.
+ Obiekty w generacji 0 są zbierane często i efektywnie. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajne. Na koniec obiekty długotrwałe w generacji 2 powinny być zbierane nawet rzadziej. Kolekcja 2 generacji, która jest pełnym przebiegiem odzyskiwania pamięci, jest również najtańszą operacją.
 
- Ta reguła jest uruchamiana, gdy ilość czasu spędzonego w wyrzucaniu elementów bezużytecznych jest znacząca w porównaniu z całkowitym czasem przetwarzania aplikacji.
+ Ta reguła jest wyzwalana, gdy ilość czasu poświęcanego na wyrzucanie elementów bezużytecznych jest istotna w porównaniu z całkowitym czasem przetwarzania aplikacji.
 
 > [!NOTE]
-> Gdy proporcja czasu spędzonego w wyrzucaniu elementów bezużytecznych jest nadmierna w porównaniu z całkowitym czasem przetwarzania aplikacji, zamiast tej reguły jest uruchamiane ostrzeżenie [o czasie procesora DA0024: Nadmierny czas procesora GC](../profiling/da0024-excessive-gc-cpu-time.md) zamiast tej reguły.
+> Gdy czas spędzony na wyrzucaniu elementów bezużytecznych jest nadmiernie porównywany z całkowitym czasem przetwarzania aplikacji, [DA0024: nadmierne ostrzeżenie czasu procesora GC](../profiling/da0024-excessive-gc-cpu-time.md) wyzwalane zamiast tej reguły.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczników](../profiling/marks-view.md) danych profilowania. Znajdź kolumnę **.NET\\CLR Memory % time w** kolumnie GC. Określ, czy istnieją określone fazy wykonywania programu, gdzie obciążenie związane z wyrzucaniem elementów bezużytecznych pamięci zarządzanej jest cięższe niż inne fazy. Porównaj wartości % czasu w GC wartość do szybkości wyrzucania **elementów bezużytecznych zgłoszonych w # gen 0 kolekcje**, **# gen 1 kolekcje**, **# gen 2 kolekcje** wartości.
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć środowiska CLR \\ % Time w kolumnie GC** . Ustal, czy istnieją określone fazy wykonywania programu, w których narzuty wyrzucania elementów bezużytecznych pamięci zarządzanej są większe niż inne fazy. Porównaj wartości parametru% Time w usłudze GC z szybkością wyrzucania elementów bezużytecznych raportowaną w liczbie kolekcji **generacji 0**, kolekcjach **generacji 1**, liczbach **kolekcji generacji 2** .
 
- Wartość % czasu w gc próbuje zgłosić czas, który aplikacja spędza na wykonywaniu wyrzucania elementów bezużytecznych proporcjonalnie do całkowitej ilości przetwarzania. Należy pamiętać, że istnieją okoliczności, gdy % czasu w gc wartość może zgłosić wysoką wartość, ale nie jest z powodu nadmiernego wyrzucania elementów bezużytecznych. Aby uzyskać więcej informacji na temat sposobu obliczania % czasu w wartości GC, zobacz [różnica między danymi perf zgłoszonymi przez różne narzędzia — 4](https://devblogs.microsoft.com/maoni/archive/difference-between-perf-data-reported-by-different-tools-4.aspx) wpis **bloga Maoni** w sieci MSDN. Jeśli występują błędy strony lub aplikacja jest wywłaszczona przez inne prace o wyższym priorytecie na komputerze podczas wyrzucania elementów bezużytecznych, licznik % czasu w gc będzie odzwierciedlać te dodatkowe opóźnienia.
+ Wartość% Time w usłudze GC próbuje zgłosić ilość czasu, przez który aplikacja spędza wykonywanie wyrzucania elementów bezużytecznych proporcjonalnie do całkowitej ilości przetwarzania. Należy pamiętać, że w przypadku wartości% Time w usłudze GC można zgłosić wysoką wartość, ale nie jest to spowodowane nadmiernym wyrzucaniem elementów bezużytecznych. Aby uzyskać więcej informacji na temat sposobu, w jaki wartość% Time w ramach usługi GC jest obliczana, zobacz [różnicę między danymi wydajności zgłaszanymi przez różne narzędzia — 4 wprowadzanie danych](https://devblogs.microsoft.com/maoni/archive/difference-between-perf-data-reported-by-different-tools-4.aspx) **dziennika usługi Maoni** w witrynie MSDN. Jeśli wystąpią błędy stron lub aplikacja jest zastosowana przez inne zadania o wyższym priorytecie podczas wyrzucania elementów bezużytecznych, czas (%) w liczniku GC będzie odzwierciedlał te dodatkowe opóźnienia.

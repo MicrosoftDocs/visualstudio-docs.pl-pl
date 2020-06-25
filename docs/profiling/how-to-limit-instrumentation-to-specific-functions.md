@@ -1,7 +1,7 @@
 ---
-title: 'Jak: Ograniczenie oprzyrządowania do określonych funkcji | Dokumenty firmy Microsoft'
+title: Jak ograniczyć instrumentację do określonych funkcji | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
@@ -11,60 +11,60 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0ca92b9f4b7594abc0815038799147ac44091cb3
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775322"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327631"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Instrukcje: ograniczanie instrumentacji do określonych funkcji
-Instrumentację i zbieranie danych można ograniczyć do jednej lub więcej funkcji, ustawiając opcje na stronie **Zaawansowane** **strony sesji wydajności** lub docelowych stronach właściwości binarnych:
+Można ograniczyć instrumentację i zbieranie danych do co najmniej jednej funkcji przez ustawienie opcji na stronie **Zaawansowane** **sesji wydajności** lub docelowej strony właściwości binarnych:
 
-- Jeśli określisz funkcje na stronie właściwości sesji wydajności, tylko te funkcje są instrumentowane we wszystkich instrumentowanych plikach binarnych sesji.
+- Jeśli określisz funkcje na stronie właściwości sesji wydajności, tylko te funkcje są Instrumentacją we wszystkich plikach binarnych z instrumentacją sesji.
 
-- Jeśli określisz funkcje na stronie właściwości pliku binarnego docelowego, tylko te funkcje, które znajdują się w tym konkretnym pliku binarnym są instrumentowane. Funkcje w innych plikach binarnych wykonania są instrumentowane jak zwykle.
+- Jeśli określisz funkcje na stronie właściwości w docelowym pliku binarnym, tylko te funkcje, które znajdują się w tym konkretnym pliku binarnym, są Instrumentacją. Funkcje w innych plikach binarnych wydajności są przystosowane w zwykły sposób.
 
-  Ograniczanie zbierania danych w ten sposób jest obsługiwane tylko wtedy, gdy wybrana jest metoda profilowania instrumentacji.
+  Ograniczanie zbierania danych w ten sposób jest obsługiwane tylko wtedy, gdy wybrano metodę profilowania Instrumentacji.
 
 > [!NOTE]
-> Za pomocą strony **Zaawansowane** strony stron właściwości **Sesja wydajności** można również ustawić inne opcje dostępne dla narzędzia instrumentacji wiersza polecenia VSInstr narzędzia narzędziu narzędziowego wiersza polecenia [VSInstr.](../profiling/vsinstr.md)
+> Możesz również użyć strony **Zaawansowane** strony właściwości **sesji wydajności** , aby ustawić inne opcje dostępne dla narzędzia instrumentacja wiersza polecenia narzędzia profilowania [VSInstr](../profiling/vsinstr.md) .
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>Aby ograniczyć instrumentację do określonych funkcji w sesji wydajności
 
-1. W **Eksploratorze wydajności**kliknij prawym przyciskiem myszy nazwę sesji, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy nazwę sesji, a następnie kliknij polecenie **Właściwości**.
 
     Wyświetli się okno dialogowe **Strony właściwości**.
 
-2. W oknie dialogowym **Strony właściwości** kliknij pozycję **Zaawansowane**.
+2. Na **stronie właściwości** okno dialogowe, kliknij przycisk **Zaawansowane**.
 
-3. W polu tekstowym **Opcje instrumentacji dodatkowe** użyj następującej składni, aby wpisać nazwę funkcji, które mają być instrumenta dla:
+3. W polu tekstowym **dodatkowe opcje Instrumentacji** wpisz nazwę funkcji, które chcesz przystosować, używając następującej składni:
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec`jest przestrzenią nazw i nazwą funkcji. Ma format `Namespace` **::**`FunctionName`. Użyj średnika, aby oddzielić wiele funkcji. Użyj gwiazdki (\*), aby określić symbol wieloznaczny dla jednego lub więcej znaków. Na przykład **/include:MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.
+    `FuncSpec`jest przestrzenią nazw i nazwą funkcji. Ma format `Namespace` **::** `FunctionName` . Użyj średnika do rozdzielenia wielu funkcji. Użyj gwiazdki ( \* ), aby określić symbol wieloznaczny dla co najmniej jednego znaku. Na przykład **/include: MyNS:: \\ *** określa wszystkie funkcje w przestrzeni nazw myNs.
 
    > [!NOTE]
-   > Aby wyświetlić listę funkcji w pliku binarnym, otwórz okno wiersza polecenia w katalogu instalacyjnym Narzędzia profilowania (zobacz [Określanie ścieżki do narzędzi wiersza polecenia),](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)a następnie wpisz **vsinstr /DumpFuncs**
+   > Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacji narzędzia profilowania (zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), a następnie wpisz **VSInstr/DumpFuncs**
 
-### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Aby ograniczyć oprzyrządowanie do określonych funkcji w pliku binarnym
+### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Aby ograniczyć instrumentację do określonych funkcji w pliku binarnym
 
-1. W **Eksploratorze wydajności**znajdź nazwę binarną w węźle **Cele** sesji wydajności.
+1. W **Eksplorator wydajności**Zlokalizuj nazwę binarną w węźle **targets** sesji wydajności.
 
 2. Kliknij prawym przyciskiem myszy nazwę binarną, a następnie kliknij polecenie **Właściwości**.
 
     Wyświetli się okno dialogowe **Strony właściwości**.
 
-3. W oknie dialogowym **Strony właściwości** kliknij pozycję **Zaawansowane**.
+3. Na **stronie właściwości** okno dialogowe, kliknij przycisk **Zaawansowane**.
 
-4. W polu tekstowym **Opcje instrumentacji dodatkowe** użyj następującej składni, aby wpisać nazwę funkcji, które mają być instrumenta dla:
+4. W polu tekstowym **dodatkowe opcje Instrumentacji** wpisz nazwę funkcji, które chcesz przystosować, używając następującej składni:
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec`jest przestrzenią nazw i nazwą funkcji. Ma format `Namespace` **::**`FunctionName`. Użyj średnika, aby oddzielić wiele funkcji. Użyj gwiazdki (\*), aby określić symbol wieloznaczny dla jednego lub więcej znaków. Na przykład **/include:MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.
+    `FuncSpec`jest przestrzenią nazw i nazwą funkcji. Ma format `Namespace` **::** `FunctionName` . Użyj średnika do rozdzielenia wielu funkcji. Użyj gwiazdki ( \* ), aby określić symbol wieloznaczny dla co najmniej jednego znaku. Na przykład **/include: MyNS:: \\ *** określa wszystkie funkcje w przestrzeni nazw myNs.
 
    > [!NOTE]
-   > Aby wyświetlić listę funkcji w pliku binarnym, otwórz okno wiersza polecenia w katalogu instalacyjnym Narzędzia profilowania (zobacz [Określanie ścieżki do narzędzi wiersza polecenia),](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)a następnie wpisz **vsinstr /DumpFuncs**
+   > Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacji narzędzia profilowania (zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), a następnie wpisz **VSInstr/DumpFuncs**
 
 ## <a name="see-also"></a>Zobacz też
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)

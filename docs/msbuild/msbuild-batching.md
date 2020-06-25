@@ -1,6 +1,6 @@
 ---
-title: MSBuild Wsadowanie | Dokumenty firmy Microsoft
-ms.date: 11/04/2016
+title: Tworzenie wsadowe MSBuild | Microsoft Docs
+ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
@@ -11,25 +11,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78aeef8ea651aac1fe2a780207474399f4bbcf09
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633437"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289277"
 ---
-# <a name="msbuild-batching"></a>Wsadowanie MSBuild
+# <a name="msbuild-batching"></a>Tworzenie wsadowe programu MSBuild
 
-MSBuild ma możliwość dzielenia list elementów na różne kategorie lub partii, na podstawie metadanych elementu i uruchamiania obiektu docelowego lub zadania jeden raz z każdej partii.
+Program MSBuild dzieli listy elementów na różne kategorie lub partie na podstawie metadanych elementów, a następnie uruchamia obiekt docelowy lub zadanie jednokrotnie przy każdej partii.
 
-## <a name="task-batching"></a>Przetwarzanie zadań
+## <a name="task-batching"></a>Tworzenie partii zadań
 
-Przetwarzanie zadań umożliwia uproszczenie plików projektu, zapewniając sposób dzielenia list towarów na różne partie i przekazywania każdej z tych partii do zadania oddzielnie. Oznacza to, że plik projektu musi mieć tylko zadanie i jego atrybuty zadeklarowane raz, nawet jeśli można go uruchomić kilka razy.
+Tworzenie wsadowe zadań pozwala uprościć pliki projektu, zapewniając sposób dzielenia list elementów na różne partie i przekazywanie poszczególnych partii do zadania oddzielnie. Oznacza to, że plik projektu musi mieć tylko jedno zadanie i jego atrybuty, nawet jeśli można wykonać kilka razy.
 
-Można określić, że program MSBuild ma wykonywać przetwarzanie\<wsadowe z zadaniem przy użyciu notacji %( ItemMetaDataName>) w jednym z atrybutów zadania. Poniższy przykład dzieli `Example` listę towarów na partie `Color` na podstawie wartości metadanych elementu i `MyTask` przekazuje każdą z partii do zadania oddzielnie.
+Należy określić, że program MSBuild ma wykonywać przetwarzanie wsadowe za pomocą zadania przy użyciu `%(ItemMetaDataName)` notacji w jednym z atrybutów zadania. Poniższy przykład dzieli `Example` listę elementów na partie na podstawie `Color` wartości metadanych elementu i przekazuje poszczególne partie do `MyTask` zadania oddzielnie.
 
 > [!NOTE]
-> Jeśli lista elementów nie odwołuje się do niej gdzie indziej w atrybutach zadań lub nazwa\<metadanych może być niejednoznaczna, można użyć notacji %( ItemCollection.ItemMetaDataName>), aby w pełni zakwalifikować wartość metadanych elementu do użycia w przypadku przetwarzania wsadowego.
+> Jeśli nie odwołujesz się do listy elementów w innym miejscu atrybutów zadania lub nazwa metadanych może być niejednoznaczna, można użyć notacji%(<obiekt ItemCollection. ItemMetaDataName>), aby w pełni zakwalifikować wartość metadanych elementu do użycia na potrzeby przetwarzania wsadowego.
 
 ```xml
 <Project
@@ -53,13 +53,13 @@ Można określić, że program MSBuild ma wykonywać przetwarzanie\<wsadowe z za
 </Project>
 ```
 
-Aby uzyskać bardziej szczegółowe przykłady przetwarzania wsadowego, zobacz [Metadane elementu w wsadowaniu zadań](../msbuild/item-metadata-in-task-batching.md).
+Aby zapoznać się z bardziej szczegółowymi przykładami wsadowymi, zobacz [metadane elementu w partii zadań](../msbuild/item-metadata-in-task-batching.md).
 
-## <a name="target-batching"></a>Wsadowanie docelowe
+## <a name="target-batching"></a>Przetwarzanie wsadowe docelowe
 
-MSBuild sprawdza, czy dane wejściowe i wyjściowe obiektu docelowego są aktualne przed uruchomieniu obiektu docelowego. Jeśli zarówno dane wejściowe, jak i wyjściowe są aktualne, obiekt docelowy jest pomijany. Jeśli zadanie wewnątrz obiektu docelowego używa przetwarzania wsadowego, MSBuild musi określić, czy dane wejściowe i wyjściowe dla każdej partii towarów jest aktualny. W przeciwnym razie cel jest wykonywany za każdym razem, gdy zostanie trafiony.
+Program MSBuild sprawdza, czy dane wejściowe i wyjściowe elementu docelowego są aktualne przed uruchomieniem obiektu docelowego. Jeśli oba dane wejściowe i wyjściowe są aktualne, element docelowy jest pomijany. Jeśli zadanie wewnątrz elementu docelowego używa operacji wsadowych, program MSBuild musi określić, czy dane wejściowe i wyjściowe dla każdej partii elementów są aktualne. W przeciwnym razie obiekt docelowy jest wykonywany za każdym razem, gdy zostanie trafiony.
 
-W poniższym `Target` przykładzie pokazano `Outputs` element zawierający\<atrybut z notacją %( ItemMetaDataName>). MSBuild podzieli `Example` listę elementów na `Color` partie na podstawie metadanych elementu i analizować sygnatury czasowe plików wyjściowych dla każdej partii. Jeśli dane wyjściowe z partii nie są aktualne, obiekt docelowy jest uruchamiany. W przeciwnym razie obiekt docelowy zostanie pominięty.
+Poniższy przykład pokazuje `Target` element, który zawiera `Outputs` atrybut z `%(ItemMetadataName)` notacją. Program MSBuild będzie dzielić `Example` listę elementów na partie na podstawie `Color` metadanych elementów i analizować sygnatury czasowe plików wyjściowych dla każdej partii. Jeśli dane wyjściowe z partii nie są aktualne, obiekt docelowy jest uruchamiany. W przeciwnym razie element docelowy zostanie pominięty.
 
 ```xml
 <Project
@@ -85,27 +85,143 @@ W poniższym `Target` przykładzie pokazano `Outputs` element zawierający\<atry
 </Project>
 ```
 
-Inny przykład wsadowania docelowego można znaleźć [w dokumencie dozowania docelowego.](../msbuild/item-metadata-in-target-batching.md)
+Aby uzyskać inny przykład tworzenia wsadowych obiektów docelowych, zobacz [metadane elementu w przetwarzaniu wsadowym](../msbuild/item-metadata-in-target-batching.md).
 
-## <a name="property-functions-using-metadata"></a>Funkcje właściwości przy użyciu metadanych
+## <a name="item-and-property-mutations"></a>Mutacje elementów i właściwości
 
-Przetwarzanie wsadowe może być kontrolowane przez funkcje właściwości, które zawierają metadane. Na przykład:
+W tej sekcji opisano, jak zrozumieć skutki zmiany właściwości i/lub metadanych elementu przy użyciu docelowego wsadowego tworzenia lub przetwarzania wsadowego zadań.
+
+Ponieważ tworzenie wsadowe obiektów docelowych i wsadowe zadania są dwiema różnymi operacjami MSBuild, ważne jest, aby dokładnie zrozumieć, która z nich korzysta w przypadku tworzenia wsadowych pakietów MSBuild. Gdy składnia wsadowa `%(ItemMetadataName)` pojawia się w zadaniu w obiekcie docelowym, ale nie w atrybucie obiektu docelowego, MSBuild używa zadania wsadowego. Jedynym sposobem określenia docelowej partii jest użycie składni wsadowej na atrybucie docelowym, zazwyczaj `Outputs` atrybutu.
+
+W przypadku tworzenia wsadowych grup docelowych i wsadowych zadań partie mogą być traktowane jako uruchamiane niezależnie. Wszystkie partie zaczynają się od kopii tego samego stanu początkowego wartości metadanych właściwości i elementu. Wszelkie mutacje wartości właściwości podczas wykonywania wsadowego nie są widoczne dla innych partii. Rozpatrzmy następujący przykład:
+
+```xml
+  <ItemGroup>
+    <Thing Include="2" Color="blue" />
+    <Thing Include="1" Color="red" />
+  </ItemGroup>
+
+  <Target Name="DemoIndependentBatches">
+    <ItemGroup>
+      <Thing Condition=" '%(Color)' == 'blue' ">
+        <Color>red</Color>
+        <NeededColorChange>true</NeededColorChange>
+      </Thing>
+    </ItemGroup>
+    <Message Importance="high"
+             Text="Things: @(Thing->'%(Identity) is %(Color); needed change=%(NeededColorChange)')"/>
+  </Target>
+```
+
+Dane wyjściowe wyglądają następująco:
+
+```output
+Target DemoIndependentBatches:
+  Things: 2 is red; needed change=true;1 is red; needed change=
+```
+
+`ItemGroup`Obiekt w obiekcie docelowym jest niejawnie zadaniem i z `%(Color)` w `Condition` atrybucie, wykonywane jest wykonywanie zadań wsadowych. Istnieją dwie partie: jeden dla czerwieni i drugi dla niebieski. Właściwość `%(NeededColorChange)` jest ustawiana tylko wtedy `%(Color)` , gdy metadane są niebieskie i ustawienie ma wpływ tylko na poszczególne elementy, które pasują do warunku, gdy została uruchomiona niebieska Partia zadań. `Message`Atrybut zadania nie `Text` wyzwala tworzenia wsadowego, pomimo `%(ItemMetadataName)` składni, ponieważ jest używany wewnątrz przekształcenia elementu.
+
+Partie działają niezależnie, ale nie równolegle. Powoduje to różnicę podczas uzyskiwania dostępu do wartości metadanych, które zmieniają się w wykonaniu wsadowym. W przypadku ustawienia właściwości na podstawie niektórych metadanych w wykonaniu wsadowym, właściwość przyjmuje *ostatnią* wartość zestawu:
+
+```xml
+   <PropertyGroup>
+       <SomeProperty>%(SomeItem.MetadataValue)</SomeProperty>
+   </PropertyGroup>
+```
+
+Po wykonaniu wsadowym Właściwość zachowuje końcową wartość `%(MetadataValue)` .
+
+Mimo że partie są uruchamiane niezależnie, ważne jest, aby uwzględnić różnicę między docelowym przetwarzaniem wsadowym a przetwarzaniem wsadowym zadań i wiedzieć, który typ ma zastosowanie do danej sytuacji. Rozważmy następujący przykład, aby zrozumieć lepsze znaczenie tego rozróżnienia.
+
+Zadania mogą być niejawne, a nie jawne, co może być mylące w przypadku wystąpienia zadań wsadowych z niejawnymi zadaniami. Gdy `PropertyGroup` element or `ItemGroup` występuje w `Target` , każda Deklaracja właściwości w grupie jest niejawnie traktowana jak oddzielne zadanie [Właściwości](createproperty-task.md) lub [elementu](createitem-task.md) . Oznacza to, że zachowanie jest inne, gdy element docelowy jest przetwarzany wsadowo, a w przypadku, gdy obiekt docelowy nie jest wsadowy (to znaczy, gdy nie ma `%(ItemMetadataName)` składni w `Outputs` atrybucie). Gdy element docelowy jest przetwarzany wsadowo, jest `ItemGroup` wykonywany raz na miejsce docelowe, ale jeśli obiekt docelowy nie zostanie wsadem wsadowym, niejawne odpowiedniki `CreateItem` lub `CreateProperty` zadania są wsadowe przy użyciu wsadowych zadań, więc element docelowy jest wykonywany tylko raz, a każdy element lub Każda właściwość w grupie jest przetwarzana osobno przy użyciu wsadowego wykonywania zadań.
+
+Poniższy przykład ilustruje docelowe przetwarzanie wsadowe i tworzenie wsadowe zadań w przypadku, gdy metadane są mutacjowo. Rozważ sytuację, w której masz foldery A i B z niektórymi plikami:
+
+```
+A\1.stub
+B\2.stub
+B\3.stub
+```
+
+Teraz spójrzmy na dane wyjściowe tych dwóch podobnych projektów.
+
+```xml
+    <ItemGroup>
+      <StubFiles Include="$(MSBuildThisFileDirectory)**\*.stub"/>
+
+      <StubDirs Include="@(StubFiles->'%(RecursiveDir)')"/>
+    </ItemGroup>
+
+    <Target Name="Test1" AfterTargets="Build" Outputs="%(StubDirs.Identity)">
+      <PropertyGroup>
+        <ComponentDir>%(StubDirs.Identity)</ComponentDir>
+        <ComponentName>$(ComponentDir.TrimEnd('\'))</ComponentName>
+      </PropertyGroup>
+
+      <Message Text=">> %(StubDirs.Identity) '$(ComponentDir)' '$(ComponentName)'"/>
+    </Target>
+```
+
+Dane wyjściowe wyglądają następująco:
+
+```output
+Test1:
+  >> A\ 'A\' 'A'
+Test1:
+  >> B\ 'B\' 'B'
+```
+
+Teraz Usuń `Outputs` atrybut, który określa docelowe przetwarzanie wsadowe.
+
+```xml
+    <ItemGroup>
+      <StubFiles Include="$(MSBuildThisFileDirectory)**\*.stub"/>
+
+      <StubDirs Include="@(StubFiles->'%(RecursiveDir)')"/>
+    </ItemGroup>
+
+    <Target Name="Test1" AfterTargets="Build">
+      <PropertyGroup>
+        <ComponentDir>%(StubDirs.Identity)</ComponentDir>
+        <ComponentName>$(ComponentDir.TrimEnd('\'))</ComponentName>
+      </PropertyGroup>
+
+      <Message Text=">> %(StubDirs.Identity) '$(ComponentDir)' '$(ComponentName)'"/>
+    </Target>
+```
+
+Dane wyjściowe wyglądają następująco:
+
+```output
+Test1:
+  >> A\ 'B\' 'B'
+  >> B\ 'B\' 'B'
+```
+
+Należy zauważyć, że nagłówek `Test1` jest drukowany tylko raz, ale w poprzednim przykładzie został wydrukowany dwa razy. Oznacza to, że element docelowy nie jest wsadowy.  W związku z tym dane wyjściowe są inaczej różne.
+
+Przyczyną jest to, że w przypadku korzystania z wsadowego określania wartości docelowej każda partia docelowa wykonuje wszystko w obiekcie docelowym z własną niezależną kopią wszystkich właściwości i elementów, ale po pominięciu tego `Outputs` atrybutu poszczególne wiersze w grupie właściwości są traktowane jako osobne, potencjalnie przetwarzane zadania wsadowe. W tym przypadku `ComponentDir` zadanie jest wsadowe (używa `%(ItemMetadataName)` składni), więc przez czas wykonywania `ComponentName` wiersza, obie partie `ComponentDir` wiersza zostały zakończone, a drugi, który uruchomił, określa wartość, jak pokazano w drugim wierszu.
+
+## <a name="property-functions-using-metadata"></a>Funkcje właściwości korzystające z metadanych
+
+Przetwarzanie wsadowe może być kontrolowane przez funkcje właściwości, które obejmują metadane. Na przykład
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
-służy <xref:System.IO.Path.Combine%2A> do łączenia ścieżki folderu głównego ze ścieżką elementu kompilacji.
+używa <xref:System.IO.Path.Combine%2A> do łączenia ścieżki folderu głównego z ścieżką elementu kompilacji.
 
-Funkcje właściwości mogą nie być wyświetlane w obrębie wartości metadanych. Na przykład:
+Funkcje właściwości mogą nie występować w obrębie wartości metadanych. Na przykład
 
 `%(Compile.FullPath.Substring(0,3))`
 
-jest niedozwolona.
+nie jest dozwolone.
 
-Aby uzyskać więcej informacji na temat funkcji właściwości, zobacz [Funkcje właściwości](../msbuild/property-functions.md).
+Aby uzyskać więcej informacji na temat funkcji właściwości, zobacz [funkcje właściwości](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [ItemMetadata element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
-- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
+- [ItemMetadata —, element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

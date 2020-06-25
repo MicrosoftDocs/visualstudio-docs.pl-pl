@@ -1,5 +1,5 @@
 ---
-title: MSBuild Zastrzeżone i dobrze znane właściwości | Dokumenty firmy Microsoft
+title: Właściwości zarezerwowane i dobrze znane dla programu MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,71 +15,81 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b38ca4bfc0ea8a326f015228a4152779a41650
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5c3d97185446560343b36b22f73e0b320b5a28d6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633255"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289225"
 ---
-# <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild zastrzeżone i dobrze znane właściwości
+# <a name="msbuild-reserved-and-well-known-properties"></a>Właściwości zarezerwowane i dobrze znane dla programu MSBuild
 
-MSBuild udostępnia zestaw wstępnie zdefiniowanych właściwości, które przechowują informacje o pliku projektu i plikach binarnych MSBuild. Te właściwości są oceniane w taki sam sposób jak inne właściwości MSBuild. Na przykład, aby `MSBuildProjectFile` użyć właściwości, należy wpisać `$(MSBuildProjectFile)`.
+Program MSBuild udostępnia zestaw wstępnie zdefiniowanych właściwości, które przechowują informacje o pliku projektu i plikach binarnych programu MSBuild. Te właściwości są oceniane w taki sam sposób, jak inne właściwości programu MSBuild. Na przykład, aby użyć `MSBuildProjectFile` właściwości, należy wpisać `$(MSBuildProjectFile)` .
 
- MSBuild używa wartości w poniższej tabeli do wstępnegodefionuchy zastrzeżone i dobrze znane właściwości. Właściwości zarezerwowane nie mogą być zastąpione, ale dobrze znane właściwości mogą być zastąpione przy użyciu identycznie nazwanych właściwości środowiska, właściwości globalne lub właściwości, które są zadeklarowane w pliku projektu.
+ Program MSBuild używa wartości z poniższej tabeli, aby wstępnie definiować zastrzeżone i dobrze znane właściwości. Właściwości zastrzeżone nie mogą być zastępowane, ale dobrze znane właściwości można zastąpić przy użyciu identycznie nazwanych właściwości środowiska, właściwości globalnych lub właściwości, które są zadeklarowane w pliku projektu.
 
-## <a name="reserved-and-well-known-properties"></a>Zastrzeżone i dobrze znane właściwości
+## <a name="reserved-and-well-known-properties"></a>Właściwości zastrzeżone i dobrze znane
 
- W poniższej tabeli opisano wstępnie zdefiniowane właściwości MSBuild.
+W tabeli w tej sekcji przedstawiono wstępnie zdefiniowane właściwości programu MSBuild. Przykładowa kolumna w tabeli odnosi się do następującego przykładowego pliku projektu, założono, że znajduje się w `C:\Source\Repos\ConsoleApp1\ConsoleApp1` , i pokazuje wartości tych właściwości, które są dostępne w pliku projektu, gdy program MSBuild jest wywoływany bez specjalnych opcji wiersza polecenia, z zainstalowaną kompilacją programu Visual Studio 2019 w wersji 16,7.
 
-| Właściwość | Zastrzeżone lub dobrze znane | Opis |
-|----------------------------------|------------------------| - |
-| `MSBuildBinPath` | Zarezerwowano | Ścieżka bezwzględna folderu, w którym znajdują się obecnie używane pliki binarne MSBuild (na przykład *C:\Windows\Microsoft.Net\Framework\\\<versionNumber>*). Ta właściwość jest przydatna, jeśli trzeba odwoływać się do plików w katalogu MSBuild.<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego na tej nieruchomości. |
-| `MSBuildExtensionsPath` | Dobrze znane | Wprowadzono w .NET Framework 4: nie ma różnicy między wartościami domyślnymi `MSBuildExtensionsPath` i `MSBuildExtensionsPath32`. Można ustawić zmienną `MSBUILDLEGACYEXTENSIONSPATH` środowiskową na wartość nie null, aby `MSBuildExtensionsPath` włączyć zachowanie wartości domyślnej we wcześniejszych wersjach.<br /><br /> W programie .NET Framework 3.5 i `MSBuildExtensionsPath` wcześniejszych, domyślna wartość wskazuje ścieżkę podfolderu MSBuild w folderze *\Program Files\\ * or *\Program Files (x86),* w zależności od bitowości bieżącego procesu. Na przykład w przypadku procesu 32-bitowego na komputerze 64-bitowym ta właściwość wskazuje folder *\Program Files (x86).* W przypadku procesu 64-bitowego na komputerze 64-bitowym ta właściwość wskazuje folder *\Program Files.*<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego na tej nieruchomości.<br /><br /> Ta lokalizacja jest przydatnym miejscem do umieszczania niestandardowych plików docelowych. Na przykład pliki docelowe można zainstalować w *folderze \Program Files\MSBuild\MyFiles\Northwind.targets,* a następnie zaimportować do plików projektu przy użyciu tego kodu XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
-| `MSBuildExtensionsPath32` | Dobrze znane | Ścieżka podfolderu MSBuild w folderze *\Program Files* or *\Program Files (x86).* Ścieżka zawsze wskazuje folder 32-bitowy *\Program Files (x86)* na komputerze 32-bitowym i *\Program Files* na komputerze 64-bitowym.". Zobacz `MSBuildExtensionsPath` też `MSBuildExtensionsPath64`i .<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego na tej nieruchomości. |
-| `MSBuildExtensionsPath64` | Dobrze znane | Ścieżka podfolderu MSBuild w folderze *\Program Files.* W przypadku komputera 64-bitowego ta ścieżka zawsze wskazuje folder *\Program Files.* W przypadku maszyny 32-bitowej ta ścieżka jest pusta. Zobacz `MSBuildExtensionsPath` też `MSBuildExtensionsPath32`i .<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego na tej nieruchomości. |
-| `MSBuildInteractive` | Zarezerwowano | `true`jeśli MSBuild jest uruchomiony interaktywnie, umożliwiając wprowadzanie danych przez użytkownika. To ustawienie jest `-interactive` kontrolowane przez opcję wiersza polecenia. |
-| `MSBuildLastTaskResult` | Zarezerwowano | `true`jeśli poprzednie zadanie zostało wykonane bez błędów (nawet `false` jeśli były ostrzeżenia) lub jeśli poprzednie zadanie miało błędy. Zazwyczaj, gdy wystąpi błąd w zadaniu, błąd jest ostatnią rzeczą, która dzieje się w tym projekcie. W związku z tym wartość `false`tej właściwości nigdy nie jest , z wyjątkiem tych scenariuszy:<br /><br /> - Gdy `ContinueOnError` atrybut [task element (MSBuild)](../msbuild/task-element-msbuild.md) jest `WarnAndContinue` ustawiony `true`na `ErrorAndContinue`(lub ) lub .<br /><br /> - Gdy `Target` ma [OnError element (MSBuild)](../msbuild/onerror-element-msbuild.md) jako element podrzędny. |
-| `MSBuildNodeCount` | Zarezerwowano | Maksymalna liczba równoczesnych procesów, które są używane podczas tworzenia. Jest to wartość określona dla **-maxcpucount** w wierszu polecenia. Jeśli określono **-maxcpucount** bez określania `MSBuildNodeCount` wartości, a następnie określa liczbę procesorów w komputerze. Aby uzyskać więcej informacji, zobacz [Odwołanie do wiersza polecenia](../msbuild/msbuild-command-line-reference.md) i Tworzenie wielu projektów [równolegle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md). |
-| `MSBuildProgramFiles32` | Zarezerwowano | Lokalizacja folderu programu 32-bitowego; na przykład *C:\Program Files (x86)*.<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego na tej nieruchomości. |
-| `MSBuildProjectDefaultTargets` | Zarezerwowano | Pełna lista obiektów docelowych, `DefaultTargets` które są `Project` określone w atrybucie elementu. Na przykład następujący `Project` element będzie `MSBuildDefaultTargets` miał `A;B;C`wartość właściwości:<br /><br /> `<Project DefaultTargets="A;B;C" >` |
-| `MSBuildProjectDirectory` | Zarezerwowano | Ścieżka bezwzględna katalogu, w którym znajduje się plik projektu, na przykład *C:\MojaFirma\Mój Produkt*.<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego na tej nieruchomości. |
-| `MSBuildProjectDirectoryNoRoot` | Zarezerwowano | Wartość `MSBuildProjectDirectory` właściwości, z wyłączeniem dysku głównego.<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego na tej nieruchomości. |
-| `MSBuildProjectExtension` | Zarezerwowano | Rozszerzenie nazwy pliku projektu, w tym okres; na przykład *.proj*. |
-| `MSBuildProjectFile` | Zarezerwowano | Pełna nazwa pliku projektu, w tym rozszerzenie nazwy pliku; na przykład *MyApp.proj*. |
-| `MSBuildProjectFullPath` | Zarezerwowano | Ścieżka bezwzględna i pełna nazwa pliku projektu, w tym rozszerzenie nazwy pliku; na przykład *C:\MojaFirma\MyProduct\MyApp.proj*. |
-| `MSBuildProjectName` | Zarezerwowano | Nazwa pliku projektu bez rozszerzenia nazwy pliku; na przykład *MyApp*. |
-| `MSBuildRuntimeType` | Zarezerwowano | Typ środowiska wykonawczego, który jest aktualnie wykonywany. Wprowadzony w MSBuild 15. Wartość może być niezdefiniowana (przed MSBuild `Full` 15), wskazując, że MSBuild `Core` jest uruchomiony na pulpicie .NET Framework, `dotnet build`wskazując, `Mono` że MSBuild jest uruchomiony na .NET Core (na przykład w ), lub wskazując, że MSBuild jest uruchomiony na mono. |
-| `MSBuildStartupDirectory` | Zarezerwowano | Ścieżka bezwzględna folderu, w którym wywoływana jest usługa MSBuild. Korzystając z tej właściwości, można zbudować wszystko poniżej określonego punktu w drzewie projektu bez tworzenia * \<plików dirs>.proj* w każdym katalogu. Zamiast tego masz tylko jeden projekt — na przykład *c:\traversal.proj*, jak pokazano poniżej:<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Aby utworzyć w dowolnym momencie drzewa, wpisz:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego na tej nieruchomości. |
-| `MSBuildThisFile` | Zarezerwowano | Nazwa pliku i część `MSBuildThisFileFullPath`rozszerzenia pliku . |
-| `MSBuildThisFileDirectory` | Zarezerwowano | Część katalogu . `MSBuildThisFileFullPath`<br /><br /> Uwzględnij ostatnie ukośnik odwrotny w ścieżce. |
-| `MSBuildThisFileDirectoryNoRoot` | Zarezerwowano | Część katalogu `MSBuildThisFileFullPath`, z wyłączeniem dysku głównego.<br /><br /> Uwzględnij ostatnie ukośnik odwrotny w ścieżce. |
-| `MSBuildThisFileExtension` | Zarezerwowano | Część rozszerzenia nazwy `MSBuildThisFileFullPath`pliku . |
-| `MSBuildThisFileFullPath` | Zarezerwowano | Ścieżka bezwzględna pliku projektu lub obiektów docelowych zawierającego obiekt docelowy, który jest uruchomiony.<br /><br /> Wskazówka: Można określić względną ścieżkę w pliku docelowym, która jest względem pliku docelowego, a nie względem oryginalnego pliku projektu. |
-| `MSBuildThisFileName` | Zarezerwowano | Część nazwy pliku `MSBuildThisFileFullPath`, bez rozszerzenia nazwy pliku. |
-| `MSBuildToolsPath` | Zarezerwowano | Ścieżka instalacji wersji MSBuild, która jest skojarzona `MSBuildToolsVersion`z wartością .<br /><br /> Nie należy dołączać końcowego ukośnika odwrotnego do ścieżki.<br /><br /> Ta właściwość nie może zostać zastąpiona. |
-| `MSBuildToolsVersion` | Zarezerwowano | Wersja zestawu narzędzi MSBuild, który jest używany do tworzenia projektu.<br /><br /> Uwaga: Zestaw narzędzi MSBuild zawiera zadania, obiekty docelowe i narzędzia używane do tworzenia aplikacji. Narzędzia obejmują kompilatory, takie jak *csc.exe* i *vbc.exe*. Aby uzyskać więcej informacji, zobacz [Zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)oraz [Standardowe i niestandardowe konfiguracje zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md). |
-| `MSBuildVersion` | Zarezerwowano | Wersja MSBuild używane do tworzenia projektu. <br /><br/> Tej właściwości nie można zastąpić, w przeciwnym `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` razie zwracany jest komunikat o błędzie. |
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
 
-## <a name="names-that-conflict-with-msbuild-elements"></a>Nazwy, które są w konflikcie z elementami MSBuild
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+</Project>
+```
 
-Oprócz powyższych nazw odpowiadających elementom języka MSBuild nie można używać dla właściwości zdefiniowanych przez użytkownika, elementów lub metadanych elementu:
+| Właściwość | Zarezerwowane lub dobrze znane | Opis | Przykład |
+|----------------------------------|------------------------| - | - |
+| `MSBuildBinPath` | Zarezerwowano | Ścieżka bezwzględna do folderu, w którym znajdują się obecnie używane pliki binarne programu MSBuild (na przykład *C:\Windows\Microsoft.Net\Framework \\ \<versionNumber> *). Ta właściwość jest przydatna, jeśli trzeba odwoływać się do plików w katalogu MSBuild.<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin` |
+| `MSBuildExtensionsPath` | Dobrze znane | Wprowadzone w .NET Framework 4: nie ma różnicy między wartościami domyślnymi `MSBuildExtensionsPath` i `MSBuildExtensionsPath32` . Możesz ustawić zmienną środowiskową `MSBUILDLEGACYEXTENSIONSPATH` na wartość różną od null, aby włączyć zachowanie wartości domyślnej `MSBuildExtensionsPath` we wcześniejszych wersjach.<br /><br /> W .NET Framework 3,5 i starszych wartość domyślna `MSBuildExtensionsPath` wskazuje ścieżkę podfolderu programu MSBuild w folderze *\Program \\ Files* lub *\Program Files (x86)* , w zależności od liczby bitów bieżącego procesu. Na przykład w przypadku procesu 32-bitowego na komputerze 64-bitowym ta właściwość wskazuje folder *\Program Files (x86)* . W przypadku procesu 64-bitowego na komputerze 64-bitowym ta właściwość wskazuje folder *\Program Files* .<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości.<br /><br /> Ta lokalizacja jest przydatnym miejscem do umieszczania niestandardowych plików docelowych. Na przykład pliki docelowe można zainstalować w *folderze \Program Files\MSBuild\MyFiles\Northwind.targets* , a następnie zaimportowane w plikach projektu przy użyciu tego kodu XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild`|
+| `MSBuildExtensionsPath32` | Dobrze znane | Ścieżka podfolderu programu MSBuild w folderze *\Program Files* lub *\Program Files (x86)* . Ścieżka zawsze wskazuje folder 32-bitowy *\Program Files (x86)* na komputerze z 32-bitowym i *\Program files* na komputerze 64-bitowym. Zobacz również `MSBuildExtensionsPath` i `MSBuildExtensionsPath64` .<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild`|
+| `MSBuildExtensionsPath64` | Dobrze znane | Ścieżka podfolderu programu MSBuild w folderze *\Program Files* . W przypadku maszyny 64-bitowej Ta ścieżka zawsze wskazuje folder *\Program Files* . W przypadku maszyny 32-bitowej Ta ścieżka jest pusta. Zobacz również `MSBuildExtensionsPath` i `MSBuildExtensionsPath32` .<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. | `C:\Program Files\MSBuild`|
+| `MSBuildInteractive` | Zarezerwowano | `true`Jeśli program MSBuild działa interaktywnie, zezwalanie na dane wejściowe użytkownika. To ustawienie jest kontrolowane przez `-interactive` opcję wiersza polecenia. | `false` |
+| `MSBuildLastTaskResult` | Zarezerwowano | `true`Jeśli poprzednie zadanie zostało ukończone bez żadnych błędów (nawet jeśli wystąpiły ostrzeżenia), lub `false` Jeśli poprzednie zadanie zawierało błędy. Zazwyczaj w przypadku wystąpienia w zadaniu błędu jest to ostatni element, który wystąpi w tym projekcie. W związku z tym wartość tej właściwości nie jest nigdy `false` , z wyjątkiem następujących scenariuszy:<br /><br /> — Gdy `ContinueOnError` atrybut [elementu Task (MSBuild)](../msbuild/task-element-msbuild.md) jest ustawiony na `WarnAndContinue` (lub `true` ) lub `ErrorAndContinue` .<br /><br /> -Gdy `Target` ma element elementu [OnError (MSBuild)](../msbuild/onerror-element-msbuild.md) jako element podrzędny. | `true` |
+| `MSBuildNodeCount` | Zarezerwowano | Maksymalna liczba współbieżnych procesów, które są używane podczas kompilowania. Jest to wartość określona dla parametru **-maxcpucount** w wierszu polecenia. Jeśli określono wartość parametru **-maxcpucount** bez określenia wartości, `MSBuildNodeCount` określa liczbę procesorów w komputerze. Aby uzyskać więcej informacji, zobacz informacje [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md) i [Tworzenie równolegle wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md). | 1 |
+| `MSBuildProgramFiles32` | Zarezerwowano | Lokalizacja folderu programu 32-bitowego na przykład *C:\Program Files (x86)*.<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. | `C:\Program Files (x86)`|
+| `MSBuildProjectDefaultTargets` | Zarezerwowano | Kompletna lista elementów docelowych, które są określone w `DefaultTargets` atrybucie `Project` elementu. Na przykład następujący `Project` element będzie miał `MSBuildDefaultTargets` wartość właściwości `A;B;C` :<br /><br /> `<Project DefaultTargets="A;B;C" >` | `Build`|
+| `MSBuildProjectDirectory` | Zarezerwowano | Ścieżka bezwzględna katalogu, w którym znajduje się plik projektu, na przykład *C:\MyCompany\MyProduct*.<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. | `C:\Source\Repos\ConsoleApp1\ConsoleApp1` |
+| `MSBuildProjectDirectoryNoRoot` | Zarezerwowano | Wartość `MSBuildProjectDirectory` właściwości, z wyłączeniem dysku głównego.<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. | `Source\Repos\ConsoleApp1\ConsoleApp1`|
+| `MSBuildProjectExtension` | Zarezerwowano | Rozszerzenie nazwy pliku projektu, łącznie z kropką; na przykład *. proj*. | `.csproj`|
+| `MSBuildProjectFile` | Zarezerwowano | Pełna nazwa pliku projektu, łącznie z rozszerzeniem nazwy pliku; na przykład *MojaApl. proj*. | `ConsoleApp1.csproj`|
+| `MSBuildProjectFullPath` | Zarezerwowano | Ścieżka bezwzględna i pełna nazwa pliku projektu, łącznie z rozszerzeniem nazwy pliku; na przykład *C:\MyCompany\MyProduct\MyApp.proj*. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj`|
+| `MSBuildProjectName` | Zarezerwowano | Nazwa pliku projektu bez rozszerzenia nazwy pliku; na przykład *MojaApl*. | `ConsoleApp1` |
+| `MSBuildRuntimeType` | Zarezerwowano | Typ środowiska uruchomieniowego, które jest aktualnie wykonywane. Wprowadzone w programie MSBuild 15. Wartość może być niezdefiniowana (wcześniejsza niż MSBuild 15), `Full` co oznacza, że program MSBuild jest uruchomiony na pulpicie .NET Framework, `Core` co oznacza, że program MSBuild działa na platformie .NET Core (na przykład w `dotnet build` ) lub `Mono` wskazuje, że program MSBuild działa w trybie mono. | `Full` |
+| `MSBuildStartupDirectory` | Zarezerwowano | Ścieżka bezwzględna do folderu, w którym jest wywoływana MSBuild. Za pomocą tej właściwości można skompilować wszystko poniżej określonego punktu w drzewie projektu bez tworzenia plików * \<dirs> . proj* w każdym katalogu. Zamiast tego masz tylko jeden projekt — na przykład *c:\traversal.proj*, jak pokazano poniżej:<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Aby skompilować w dowolnym punkcie drzewa, wpisz:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. | `c:\Source\Repos\ConsoleApp1` |
+| `MSBuildThisFile` | Zarezerwowano | Część nazwy pliku i rozszerzenia pliku `MSBuildThisFileFullPath` . | `ConsoleApp1.csproj` |
+| `MSBuildThisFileDirectory` | Zarezerwowano | Część katalogu `MSBuildThisFileFullPath` .<br /><br /> Uwzględnij końcowy ukośnik odwrotny w ścieżce. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\` |
+| `MSBuildThisFileDirectoryNoRoot` | Zarezerwowano | Część katalogu programu `MSBuildThisFileFullPath` , z wyłączeniem dysku głównego.<br /><br /> Uwzględnij końcowy ukośnik odwrotny w ścieżce. | `Source\Repos\ConsoleApp1\ConsoleApp1\` |
+| `MSBuildThisFileExtension` | Zarezerwowano | Część rozszerzenia nazwy pliku `MSBuildThisFileFullPath` . | `.csproj` |
+| `MSBuildThisFileFullPath` | Zarezerwowano | Ścieżka bezwzględna projektu lub pliku targets, który zawiera obiekt docelowy, który jest uruchomiony.<br /><br /> Porada: można określić ścieżkę względną w pliku docelowym, który jest względny dla pliku targets, a nie względem oryginalnego pliku projektu. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj` |
+| `MSBuildThisFileName` | Zarezerwowano | Część nazwy pliku `MSBuildThisFileFullPath` , bez rozszerzenia nazwy pliku. | `ConsoleApp1` |
+| `MSBuildToolsPath` | Zarezerwowano | Ścieżka instalacji wersji programu MSBuild, która jest skojarzona z wartością `MSBuildToolsVersion` .<br /><br /> W ścieżce nie należy umieszczać końcowego ukośnika odwrotnego.<br /><br /> Ta właściwość nie może zostać zastąpiona. | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin` |
+| `MSBuildToolsVersion` | Zarezerwowano | Wersja zestawu narzędzi programu MSBuild, która jest używana do kompilowania projektu.<br /><br /> Uwaga: zestaw narzędzi programu MSBuild składa się z zadań, obiektów docelowych i narzędzi, które są używane do kompilowania aplikacji. Narzędzia obejmują kompilatory, takie jak *csc.exe* i *vbc.exe*. Aby uzyskać więcej informacji, zobacz Zestawy narzędzi [(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)i [standardowa i niestandardowa konfiguracja zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md). | `Current` |
+| `MSBuildVersion` | Zarezerwowano | Wersja programu MSBuild użyta do skompilowania projektu. <br /><br/> Tej właściwości nie można zastąpić, w przeciwnym razie zwracany jest komunikat o błędzie `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` . | 16.7.0 |
 
-* VisualStudioProjekt
+## <a name="names-that-conflict-with-msbuild-elements"></a>Nazwy, które powodują konflikt z elementami MSBuild
+
+Oprócz powyższych, nazwy odpowiadające elementom języka MSBuild nie mogą być używane dla właściwości, elementów lub metadanych elementu zdefiniowanych przez użytkownika:
+
+* VisualStudioProject
 * Środowisko docelowe
-* Propertygroup
+* PropertyGroup
 * Dane wyjściowe
-* Itemgroup
-* Usingtask
-* Wyeksja projektu
-* Onerror
-* Grupa importu
+* ItemGroup
+* UsingTask
+* ProjectExtensions —
+* OnError
+* Element importgroup
 * Wybierz ikonę
-* Kiedy
-* Inaczej
+* Czasie
+* Przypadku
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 
-- [Właściwości MSBuild](../msbuild/msbuild-properties.md)
+- [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)

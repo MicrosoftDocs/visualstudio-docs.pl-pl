@@ -1,23 +1,25 @@
 ---
-ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143542"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292099"
 ---
 
 1. Zamknij i ponownie otwórz konsolę zarządzania usługami IIS, aby wyświetlić zaktualizowane opcje konfiguracji w interfejsie użytkownika.
 
-2. W serwisach IIS kliknij prawym przyciskiem myszy **domyślną witrynę sieci Web**, wybierz polecenie **Wdrażanie** > **konfigurowania wdrażania narzędzia Web Deploy .**
+2. W programie IIS kliknij prawym przyciskiem myszy **domyślną witrynę sieci Web**, wybierz polecenie **Wdróż**  >  **Skonfiguruj Web Deploy publikowanie**.
 
-    ![Konfigurowanie konfiguracji wdrażania sieci Web](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+    ![Konfigurowanie konfiguracji Web Deploy](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-3. W oknie dialogowym **Konfigurowanie publikowania wdrażania sieci Web** sprawdź ustawienia.
+   Jeśli nie widzisz menu **Deploy** , zapoznaj się z poprzednią sekcją, aby sprawdzić, czy Web Deploy jest uruchomiona.
 
-4. Kliknij **pozycję Ustawienia**.
+3. W oknie dialogowym **Konfigurowanie publikowania Web Deploy** przejrzyj ustawienia.
 
-    W panelu **Wyniki** dane wyjściowe pokazują, że prawa dostępu są przyznawane określonej użytkownikowi oraz że plik z rozszerzeniem pliku *.publishsettings* został wygenerowany w lokalizacji pokazanej w oknie dialogowym.
+4. Kliknij przycisk **Setup (Konfiguracja**).
+
+    W panelu **wyników** dane wyjściowe pokazują, że prawa dostępu są udzielane określonemu użytkownikowi i że plik z rozszerzeniem *. publishsettings* został wygenerowany w lokalizacji pokazanej w oknie dialogowym.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -34,14 +36,14 @@ ms.locfileid: "68143542"
     </publishData>
     ```
 
-    W zależności od konfiguracji systemu Windows Server i usług IIS w pliku XML są widoczne różne wartości. Oto kilka szczegółów dotyczących wartości, które widzisz:
+    W zależności od konfiguracji systemu Windows Server i usług IIS zobaczysz różne wartości w pliku XML. Poniżej przedstawiono kilka szczegółowych informacji o wartościach, które są widoczne:
 
-   * Plik *msdeploy.axd,* do `publishUrl` którego odwołuje się atrybut, jest dynamicznie generowanym plikiem obsługi HTTP dla wdrażania w sieci Web. (Do celów testowych, `http://myhostname:8172` ogólnie działa również.)
-   * Port `publishUrl` jest ustawiony na port 8172, który jest domyślny dla wdrożenia w sieci Web.
-   * Port `destinationAppUrl` jest ustawiony na port 80, który jest domyślny dla IIS.
-   * Jeśli nie można połączyć się z hostem zdalnym w programie Visual Studio przy użyciu nazwy hosta (w późniejszych krokach), przetestuj adres IP zamiast nazwy hosta.
+   * Plik *MSDeploy. axd* , do którego odwołuje się ten `publishUrl` atrybut jest dynamicznie generowanym plikiem programu obsługi HTTP dla Web Deploy. (Na potrzeby testowania `http://myhostname:8172` zazwyczaj działa również).
+   * `publishUrl`Port jest ustawiony na port 8172, który jest wartością domyślną dla Web Deploy.
+   * `destinationAppUrl`Port jest ustawiony na port 80, który jest wartością domyślną dla usług IIS.
+   * Jeśli nie można nawiązać połączenia z hostem zdalnym w programie Visual Studio przy użyciu nazwy hosta (w dalszych krokach), Przetestuj adres IP zamiast nazwy hosta.
 
      > [!NOTE]
-     > Jeśli publikujesz w usługach IIS uruchomionych na maszynie Wirtualnej platformy Azure, musisz otworzyć porty wdrażania w sieci Web i usług IIS w grupie Zabezpieczenia sieciowe. Aby uzyskać szczegółowe informacje, zobacz [Instalowanie i uruchamianie usługi IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server).
+     > W przypadku publikowania w usługach IIS działających na maszynie wirtualnej platformy Azure należy otworzyć Web Deploy i porty usług IIS w sieciowej grupie zabezpieczeń. Aby uzyskać szczegółowe informacje, zobacz [Instalowanie i uruchamianie usług IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server).
 
 5. Skopiuj ten plik na komputer, na którym jest uruchomiony program Visual Studio.

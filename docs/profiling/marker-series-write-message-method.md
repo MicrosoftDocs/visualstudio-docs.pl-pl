@@ -1,26 +1,26 @@
 ---
-title: marker_series::Metoda write_message | Dokumenty firmy Microsoft
+title: 'marker_series:: write_message Metoda | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
-- cvmarkersobj/Concurrency::diagnostic::marker_series::write_message
+- cvmarkersobj/Concurrency, diagnostic::marker_series::write_message
 helpviewer_keywords:
-- Concurrency::diagnostic::marker_series::write_message method
+- Concurrency, diagnostic::marker_series::write_message method
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6194936264d6038c4dc1e26b5d05f539f0dc6a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14a4cb4a604907908b8f2b35ea0baa583ab1ca57
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62830905"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328309"
 ---
-# <a name="marker_serieswrite_message-method"></a>marker_series::metoda write_message
-Zapisuje komunikat do pliku śledzenia wizualizatora współbieżności.
+# <a name="marker_serieswrite_message-method"></a>marker_series:: write_message, Metoda
+Zapisuje komunikat do pliku śledzenia Concurrency Visualizer.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,16 +48,16 @@ void write_message(
 ```
 
 #### <a name="parameters"></a>Parametry
- `_Format`Ciąg formatu złożonego, który zawiera tekst połączony z elementami formatu zero lub więcej, które odpowiadają obiektom na liście argumentów.
+ `_Format`Ciąg formatu złożonego, który zawiera tekst, który jest przemieszany z zerem lub więcej elementów formatu, który odpowiada obiektom na liście argumentów.
 
  `_Importance`Poziom ważności.
 
- `_Category`Category.Poziom ważności.
+ `_Category`Poziom ważności kategorii.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkersobj.h*
+ **Nagłówek:** *cvmarkersobj. h*
 
- **Obszar nazw:** Współbieżność::dignostyk
+ **Przestrzeń nazw:** Współbieżność::d przesła
 
 ## <a name="see-also"></a>Zobacz też
-- [klasa marker_series](../profiling/marker-series-class.md)
+- [Klasa marker_series](../profiling/marker-series-class.md)

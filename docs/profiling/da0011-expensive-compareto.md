@@ -1,7 +1,7 @@
 ---
-title: 'DA0011: Drogie CompareTo | Dokumenty firmy Microsoft'
+title: DA0011-drogie CompareTo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0011
 - vs.performance.rules.DAExpensiveCompareTo
@@ -14,28 +14,28 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0eb4566fd4c8a513b1492cecffc16cb94a1fd83
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e3b21745454a74d0251dad547ab45e845190f06d
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779431"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328180"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: Expensive CompareTo
+# <a name="da0011-expensive-compareto"></a>DA0011: Kosztowna funkcja CompareTo
 
 |||
 |-|-|
 |Identyfikator reguły|DA0011|
-|Kategoria|Użycie programu .NET Framework|
-|Metody profilowania|Próbkowanie<br /><br /> Pamięć .NET|
-|Komunikat|CompareTo funkcje powinny być tanie i nie przydzielić żadnej pamięci. Zmniejsz złożoność funkcji CompareTo, jeśli to możliwe.|
+|Kategoria|Użycie .NET Framework|
+|Metody profilowania|Próbkowanie<br /><br /> Pamięć platformy .NET|
+|Komunikat|Funkcje CompareTo powinny być tanie i nie mogą przydzielać żadnej pamięci. Zmniejsz złożoność funkcji CompareTo, jeśli jest to możliwe.|
 |Typ reguły|Ostrzeżenie|
 
 ## <a name="cause"></a>Przyczyna
  Metoda CompareTo typu jest kosztowna lub przydziela pamięć.
 
 ## <a name="rule-description"></a>Opis reguły
- CompareTo metody powinny być wydajne i nie należy przydzielać pamięci.
+ Metody CompareTo powinny być wydajne i nie powinny przydzielić pamięci.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Zmniejsz złożoność CompareTo metody.
+ Zmniejsz złożoność metody CompareTo.

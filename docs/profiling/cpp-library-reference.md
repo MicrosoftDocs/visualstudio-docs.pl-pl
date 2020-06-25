@@ -1,7 +1,7 @@
 ---
-title: Dokumentacja biblioteki C++ | Dokumenty firmy Microsoft
+title: Dokumentacja biblioteki języka C++ | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Concurrency Visualizer SDK, C++ Library Reference
 ms.assetid: c9f8eea2-c964-485d-9ad0-55a4bf425ae7
@@ -10,24 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d15b749d0564010cf6a67527f456a76a9db885cc
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552983"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329186"
 ---
-# <a name="c-library-reference"></a>Odwołanie do biblioteki języka C++
+# <a name="c-library-reference"></a>Dokumentacja biblioteki C++
 
-Ta sekcja zawiera informacje referencyjne dla SDK wizualizatora współbieżności.
+Ta sekcja zawiera informacje referencyjne dotyczące zestawu SDK wizualizatora współbieżności.
 
 > [!NOTE]
-> Standard języka C++ zastrzega użycie identyfikatorów, które zaczynają`_`się od znaku podkreślenia ( ) dla implementacji, takich jak biblioteki. Nie należy używać nazw zaczynających się od podkreślenia w kodzie. Zachowanie elementów kodu, których nazwy są zgodne z niniejszą konwencją nie są gwarantowane i mogą ulec zmianie w przyszłych wersjach. Z tych powodów takie elementy kodu są pomijane w tej dokumentacji.
+> Standard języka C++ rezerwuje użycie identyfikatorów, które zaczynają się od znaku podkreślenia ( `_` ) dla implementacji takich jak biblioteki. Nie należy używać nazw zaczynających się od znaku podkreślenia w kodzie. Zachowanie elementów kodu, których nazwy są zgodne z tą konwencją, nie jest gwarantowane i może ulec zmianie w przyszłych wydaniach. Z tego powodu takie elementy kodu zostały pominięte w tej dokumentacji.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-[Obszar nazw współbieżności (wizualizator współbieżności)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+[Przestrzeń nazw współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)
+- [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)

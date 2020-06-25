@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e26a889c65b80d5a83cc6b2b3a726aa9ad2319
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8b1a9d109b833d17783beb39c5f34cf6b9ed3274
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184461"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292896"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodu
 
@@ -40,7 +40,7 @@ Na poniższej liście przedstawiono wyniki metryki kodu, które program Visual S
 
 - **Wiersze kodu źródłowego** — wskazuje dokładną liczbę wierszy kodu źródłowego, które znajdują się w pliku źródłowym, w tym puste wiersze. Ta Metryka jest dostępna w programie Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Wiersze kodu wykonywalnego** — wskazuje przybliżoną liczbę wierszy lub operacji kodu wykonywalnego. Jest to liczba operacji w kodzie wykonywalnym. Ta Metryka jest dostępna w programie Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysis. metics (2.9.5). Wartość jest zwykle blisko zbliżonej do poprzedniej metryki, **wierszy kodu**, która jest metryką opartą na instrukcji MSIL używaną w trybie starszym.
+- **Wiersze kodu wykonywalnego** — wskazuje przybliżoną liczbę wierszy lub operacji kodu wykonywalnego. Jest to liczba operacji w kodzie wykonywalnym. Ta Metryka jest dostępna w programie Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysis. Metrics (2.9.5). Wartość jest zwykle blisko zbliżonej do poprzedniej metryki, **wierszy kodu**, która jest metryką opartą na instrukcji MSIL używaną w trybie starszym.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

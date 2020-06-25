@@ -1,7 +1,7 @@
 ---
-title: Funkcja CvEnterSpan | Dokumenty firmy Microsoft
+title: Funkcja CvEnterSpan | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
 - cvmarkers/CvEnterSpanW
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d501f7c1e75f5b63c82c34f2dc0a4913d7a88c7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552635"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328971"
 ---
-# <a name="cventerspan-function"></a>Funkcja CvEnterSpan
+# <a name="cventerspan-function"></a>CvEnterSpan, funkcja
 Oznacza początek nowego zakresu.
 
 ## <a name="syntax"></a>Składnia
@@ -108,21 +108,21 @@ HRESULT CvEnterSpanExVA(
 
  `level`Poziom ważności zakresu.
 
- `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może być null.
+ `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.
 
- `pMessage`Ciąg w formacie wiadomości. Nie może być null.
+ `pMessage`Ciąg formatu komunikatu. Nie może mieć wartości NULL.
 
- `ppSpan`Adres zmiennej, która będzie zawierać wynikowy obiekt zakresu. Adres nie może być NULL, zmienna może mieć dowolną wartość.
+ `ppSpan`Adres zmiennej, która będzie zawierać obiekt zakresu wyników. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy wiadomość zostanie pomyślnie napisana. Kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
+ S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
  **Unicode:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW
 
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

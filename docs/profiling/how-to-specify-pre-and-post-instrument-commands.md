@@ -1,7 +1,7 @@
 ---
-title: 'Jak: Określanie poleceń wstępnych i poprzyrządowych | Dokumenty firmy Microsoft'
+title: Jak określić polecenia przed i po Instrumentacji | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -15,60 +15,60 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778716"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329001"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Instrukcje: określanie poleceń przed i po instrumentacji
 
-Można określić polecenia, które są uruchamiane przed lub po instrumencie plików binarnych w sesji wydajności. Każde polecenie, które może zostać wydane z wiersza polecenia, można określić jako zdarzenie wstępne lub po instrumencie. Na przykład można określić polecenia, które automatyzują rezygnację zestawu z kluczem silnej nazwy w pliku wsadowym, który jest wykonywany po inastruowaniu plików binarnych.
+Możesz określić polecenia, które są uruchamiane przed lub po wykonaniu plików binarnych w sesji wydajności. Każde polecenie, które może zostać wystawione z wiersza polecenia, można określić jako zdarzenie wstępne lub po nim. Na przykład można określić polecenia, które automatyzują ponowny podpisanie zestawu przy użyciu klucza silnej nazwy w pliku wsadowym, który jest wykonywany po Instrumentacji plików binarnych.
 
-Można określić polecenia dla wszystkich instrumentowanych plików binarnych w przebiegu profilowania lub dla poszczególnych plików binarnych. Można jednak określić tylko jedno polecenie wstępnego instrumencie do uruchomienia przed i tylko jedno polecenie po instrumencie, aby uruchomić po procesie instrumentacji. Nie można określić poleceń dla wszystkich plików binarnych i dla poszczególnych plików binarnych. Po określeniu poleceń dla wszystkich plików binarnych polecenia są uruchamiane przed lub po instrumentacji każdego pliku binarnego w sesji.
+Można określić polecenia dla wszystkich plików binarnych instrumentacji w przebiegu profilowania lub dla poszczególnych plików binarnych. Można jednak określić tylko jedno polecenie przedprodukcyjne do uruchomienia przed i tylko jedno polecenie, które zostanie uruchomione po zakończeniu procesu instrumentacji. Nie można określić poleceń dla wszystkich plików binarnych i dla pojedynczych plików binarnych. Po określeniu poleceń dla wszystkich plików binarnych polecenia są uruchamiane przed lub po Instrumentacji każdego pliku binarnego w sesji.
 
-Katalog roboczy, w którym polecenia są wykonywane, zależy od [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] systemu operacyjnego, w którym są uruchomione i na platformie docelowej profilowanej aplikacji.
+Katalog roboczy, w którym polecenia są wykonywane, zależy od systemu operacyjnego, w którym jest uruchomiony program [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , oraz na platformie docelowej profilowanej aplikacji.
 
 Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="to-specify-pre-instrument-commands"></a>Aby określić polecenia przyrządów przyrządów wstępnych
+## <a name="to-specify-pre-instrument-commands"></a>Aby określić polecenia przed Instrumentacją
 
 1. Wykonaj jedną z następujących czynności:
 
-    - Aby określić polecenia wstępnego instrumencie dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesji wydajności w **Eksploratorze wydajności,** a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
+    - Aby określić polecenia przed Instrumentacją dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesja wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 
-    - Aby określić polecenia wstępnego instrumencie dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego na liście **Cele** sesji wydajności, a następnie wybierz polecenie **Właściwości**.
+    - Aby określić polecenia przed Instrumentacją dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego na liście **targets** sesji wydajności, a następnie wybierz polecenie **Właściwości**.
 
-2. Na **stronach właściwości**kliknij pozycję **Instrumentacja**.
+2. Na **stronie właściwości**kliknij pozycję **Instrumentacja**.
 
-3. Wpisz polecenie w polu tekstowym **wiersza polecenia** w obszarze **Zdarzenia przedarządowe**.
+3. Wpisz polecenie w polu tekstowym **wiersz polecenia** w obszarze **zdarzenia przed Instrumentacją**.
 
     > [!NOTE]
-    > Można kliknąć przycisk wielokropka **(...)** sąsiadujący z **polem wiersza polecenia,** aby przejść do odpowiedniego pliku .exe, .cmd lub .cmd.
+    > Możesz kliknąć przycisk wielokropka **(...)** , który jest przyległy do pola **wiersza polecenia** , aby wyszukać i wybrać odpowiedni plik exe, cmd lub bat.
 
 4. Kliknij przycisk **OK**.
 
-     Aby wyłączyć uruchomienie polecenia bez jego usuwania, zaznacz pole wyboru **Wyklucz z instrumentacji.** Aby zmodyfikować ustawienia kompilatora lub konsolidatora, użyj stron właściwości projektu.
+     Aby wyłączyć uruchamianie polecenia bez usuwania, zaznacz pole wyboru **Wyklucz z Instrumentacji** . Aby zmodyfikować ustawienia kompilatora lub konsolidatora, użyj stron właściwości projektu.
 
-## <a name="to-specify-post-instrument-commands"></a>Aby określić polecenia post-instrument
+## <a name="to-specify-post-instrument-commands"></a>Aby określić polecenia po Instrumentacji
 
 1. Wykonaj jedną z następujących czynności:
 
-    - Aby określić polecenia post-instrument dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesji wydajności w **Eksploratorze wydajności,** a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
+    - Aby określić polecenia dla wszystkich plików binarnych w sesji wydajności, zaznacz węzeł sesja wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 
-    - Aby określić polecenia post-instrument dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego na liście **Cele** sesji wydajności, a następnie wybierz polecenie **Właściwości**.
+    - Aby określić polecenia dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego na liście **targets** sesji wydajności, a następnie wybierz polecenie **Właściwości**.
 
-2. Na **stronach właściwości**kliknij pozycję **Instrumentacja**.
+2. Na **stronie właściwości**kliknij pozycję **Instrumentacja**.
 
-3. Wpisz polecenie w polu tekstowym **wiersza polecenia** w obszarze **Zdarzenia postprzyrządowe**.
+3. Wpisz polecenie w polu tekstowym **wiersz polecenia** w obszarze **zdarzenia po Instrumentacji**.
 
     > [!NOTE]
-    > Można kliknąć przycisk wielokropka **(...)** sąsiadujący z **polem wiersza polecenia,** aby przejść do odpowiedniego pliku .exe, .cmd lub .cmd.
+    > Możesz kliknąć przycisk wielokropka **(...)** , który jest przyległy do pola **wiersza polecenia** , aby wyszukać i wybrać odpowiedni plik exe, cmd lub bat.
 
 4. Kliknij przycisk **OK**.
 
-     Aby wyłączyć uruchomienie polecenia bez jego usuwania, zaznacz pole wyboru **Wyklucz z instrumentacji.** Aby zmodyfikować ustawienia kompilatora lub konsolidatora, użyj stron właściwości projektu.
+     Aby wyłączyć uruchamianie polecenia bez usuwania, zaznacz pole wyboru **Wyklucz z Instrumentacji** . Aby zmodyfikować ustawienia kompilatora lub konsolidatora, użyj stron właściwości projektu.
 
 ## <a name="see-also"></a>Zobacz też
 

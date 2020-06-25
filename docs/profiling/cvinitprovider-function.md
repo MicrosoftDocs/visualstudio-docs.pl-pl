@@ -1,7 +1,7 @@
 ---
-title: Funkcja CvInitProvider | Dokumenty firmy Microsoft
+title: Funkcja CvInitProvider — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvInitProvider
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a97be63cd782397e984fd8dbce7da844efa07540
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552670"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329568"
 ---
-# <a name="cvinitprovider-function"></a>Funkcja CvInitProvider
-Inicjuje dostawcę znaczników. Musi być wywołana przed innymi funkcjami SDK wizualizatora współbieżności.
+# <a name="cvinitprovider-function"></a>CvInitProvider —, funkcja
+Inicjuje dostawcę znaczników. Musi być wywoływana przed innymi funkcjami zestawu SDK wizualizatora współbieżności.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,15 +32,15 @@ HRESULT CvInitProvider(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pGuid`Identyfikator guid dostawcy. Nie może być null.
+ `pGuid`Identyfikator GUID dostawcy. Nie może mieć wartości NULL.
 
- `ppProvider`Adres zmiennej wyjściowej, która będzie przechowywać kontekst dostawcy. Nie może być null.
+ `ppProvider`Adres zmiennej wyjściowej, w której będzie przechowywany kontekst dostawcy. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy dostawca został pomyślnie zainicjowany lub kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
+ S_OK, gdy dostawca został pomyślnie zainicjowany lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkers.h*
+ **Nagłówek:** *cvmarkers. h*
 
 ## <a name="see-also"></a>Zobacz też
-- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+- [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

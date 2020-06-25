@@ -1,7 +1,7 @@
 ---
-title: 'DA0017: Wysokie szybkości stronicowania aktywnej pamięci na dysku | Dokumenty firmy Microsoft'
+title: DA0017 — wysokie stawki stronicowania aktywnej pamięci na dysk | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.17
 - vs.performance.rules.DA0017
@@ -13,40 +13,40 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e7c6b2d94602eca9e81098bb50bd0330b2bcd9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dfaeedc52e7d6b2888415200e7dccf258fa96d5c
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779392"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327962"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Wysoki stopień stronicowania aktywnej pamięci na dysku
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Intensywne stronicowanie aktywnej pamięci na dysk
 
 |||
 |-|-|
 |Identyfikator reguły|DA0017|
 |Kategoria|Pamięć i stronicowanie|
-|Metoda profilowania|Wszystkie|
-|Komunikat|Występuje duża szybkość stronicowania aktywnej pamięci na dysku. Aplikacja może być związana z pamięcią.|
+|Metoda profilowania|Wszystko|
+|Komunikat|Występuje wysoki wskaźnik stronicowania aktywnej pamięci na dysk. Aplikacja może być powiązana z pamięcią.|
 |Typ reguły|Informacje|
 
- Podczas profilowania przy użyciu próbkowania, .NET pamięci lub metody rywalizacji o zasoby, należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="cause"></a>Przyczyna
- Dane wydajności systemu, które zostały zebrane w przebiegu profilowania wskazuje, że wysoki wskaźnik stronicowania aktywnej pamięci do i z dysku wystąpił podczas wykonywania profilowania. Szybkość stronicowania na tym poziomie zwykle będzie mieć wpływ na wydajność aplikacji i szybkość reakcji. Należy rozważyć zmniejszenie alokacji pamięci przez zmianę algorytmów. Może być również należy wziąć pod uwagę wymagania dotyczące pamięci aplikacji.
+ Dane wydajności systemu zebrane w ramach uruchomienia profilowania wskazują, że jest duża częstotliwość stronicowania aktywnej pamięci do i z dysku podczas całego uruchomienia profilowania. Stawki stronicowania na tym poziomie zwykle mają wpływ na wydajność aplikacji i czas odpowiedzi. Rozważ zmniejszenie alokacji pamięci przez skorygowanie algorytmów. Może być również konieczne uwzględnienie wymagań dotyczących pamięci aplikacji.
 
 ## <a name="rule-description"></a>Opis reguły
 
 > [!NOTE]
-> Ta reguła informacyjna jest uruchamiana, gdy poziomy stronicowania pamięci aktywnej osiągają znaczną ilość. W przypadku wystąpienia bardzo wysokiego poziomu stronicowania reguła ostrzegania [DA0014: Bardzo wysokie szybkości stronicowania aktywnej pamięci na dysku](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) są uruchamiane.
+> Ta zasada informacyjna jest wyzwalana, gdy poziomy stronicowania aktywnej pamięci osiągną znaczną ilość. Gdy występuje bardzo wysoki poziom stronicowania, reguła ostrzegawcza [DA0014: niezwykle wysokie stawki stronicowania aktywnej pamięci na dysk](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) .
 
- Nadmierne stronicowanie na dysku może być spowodowane brakiem pamięci fizycznej. Jeśli operacje stronicowania dominują przy użyciu dysku fizycznego, na którym znajduje się plik stronicowania, mogą spowolnić inne operacje dysku zorientowane na aplikację na tym samym dysku.
+ Nadmierne stronicowanie na dysku może być spowodowane brakiem pamięci fizycznej. Jeśli operacje stronicowania korzystają z dysku fizycznego, w którym znajduje się plik stronicowania, mogą spowolnić inne operacje na dysku zorientowanym na aplikacje na tym samym dysku.
 
- Strony są często odczytywane z dysku lub zapisywane na dysku w zbiorczych operacjach stronicowania. Liczba stron wyjściowych/s jest często znacznie większa niż liczba zapisów strony/s, na przykład. Ponieważ dane wyjściowe stron/s obejmują również zmienione strony danych z pamięci podręcznej plików systemowych. Jednak nie zawsze jest łatwo określić, który proces jest bezpośrednio odpowiedzialny za stronicowanie lub dlaczego.
+ Strony są często odczytywane z dysku lub zapisywane na dysku w operacjach stronicowania zbiorczego. Liczba stron wyjściowych/s jest często znacznie większa niż liczba operacji zapisu stron/s, na przykład. Ponieważ strony wyjściowe/s zawierają również zmienione strony danych z pamięci podręcznej plików systemowych. Jednak nie zawsze można łatwo ustalić, który proces jest bezpośrednio odpowiedzialny za stronicowanie lub dlaczego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Kliknij dwukrotnie wiadomość w oknie Lista błędów, aby przejść do widoku [Znaczniki.](../profiling/marks-view.md) Znajdź kolumnę **Pamięć\Strony/s.** Określ, czy istnieją określone fazy wykonywania programu, w których działanie we/wy stronicowania jest cięższe niż inne.
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do widoku [znaczniki](../profiling/marks-view.md) . Znajdowanie kolumny **pamięć \ strony/s** . Ustal, czy istnieją określone fazy wykonywania programu, w których operacje we/wy stronicowania są większe niż inne.
 
  Jeśli zbierasz dane profilu dla aplikacji ASP.NET w scenariuszu testowania obciążenia, spróbuj ponownie uruchomić test obciążenia na komputerze skonfigurowanym z dodatkową pamięcią fizyczną (lub pamięcią RAM).
 
- Należy rozważyć zmniejszenie alokacji pamięci, zmieniając algorytmy i unikając interfejsów API intensywnie korzystających z pamięci, takich jak String.Concat i String.Substring.
+ Należy rozważyć zmniejszenie alokacji pamięci przez skorygowanie algorytmów i uniknięcie interfejsów API intensywnie korzystających z pamięci, takich jak String. Concat i String. substring.

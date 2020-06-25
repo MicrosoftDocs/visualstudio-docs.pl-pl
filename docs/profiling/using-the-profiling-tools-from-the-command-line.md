@@ -1,7 +1,7 @@
 ---
-title: Korzystanie z narzędzi profilowania z wiersza polecenia | Dokumenty firmy Microsoft
+title: Używanie narzędzia profilowania z wiersza polecenia | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - command line, performance tools
 - command-line tools, performance tools
@@ -15,30 +15,30 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1420aa9f92e8ef7564478499c78393510ad61c23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dea893340c038909057dd652472c10c8264786a5
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778040"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328340"
 ---
-# <a name="use-the-profiling-tools-from-the-command-line"></a>Korzystanie z narzędzi profilowania z wiersza polecenia
-Narzędzia wiersza polecenia narzędzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilowania można używać do profilowania aplikacji w wierszu polecenia i do automatyzacji profilowania przy użyciu plików wsadowych i skryptów. Można również wygenerować pliki raportu w wierszu polecenia. Za pomocą lekkiego profilera autonomicznego można zbierać dane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] na komputerach, które nie zostały zainstalowane.
+# <a name="use-the-profiling-tools-from-the-command-line"></a>Używanie narzędzia profilowania z wiersza polecenia
+Narzędzia wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania umożliwiają Profilowanie aplikacji w wierszu polecenia i automatyzowanie profilowania przy użyciu plików wsadowych i skryptów. Pliki raportów można również generować w wierszu polecenia. Możesz użyć prostego profilera autonomicznego do zbierania danych na komputerach, na których nie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowano programu.
 
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki profiler programu Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowych technik zbierania. Zobacz [Narzędzia wydajności w aplikacjach dla systemów Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy UWP wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="common-tasks"></a>Typowe zadania
 
 | Zadanie | Powiązana zawartość |
 | - | - |
-| **Ustaw położenie symboli:** Aby wyświetlić nazwy funkcji i parametrów, profiler musi mieć dostęp do symbolu (.* pdb)* plików profilowanych plików binarnych. Pliki te powinny zawierać pliki symboli systemu operacyjnego firmy Microsoft i aplikacje, które mają być wyświetlane w analizie. Za pomocą publicznego serwera symboli firmy Microsoft można upewnić się, że masz poprawny plik . *plików pdb* dla plików binarnych firmy Microsoft. | -   [Jak: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
-| **Profiluj swoją aplikację:** Narzędzia wiersza polecenia i opcje używane do profilowania aplikacji docelowej zależą od typu aplikacji, metody profilowania i tego, czy obiekt docelowy jest aplikacją zarządzaną, czy natywną. | -   [Używanie metod profilowania z wiersza polecenia](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [Aplikacje autonomiczne profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [Profil ASP.NET aplikacji internetowych](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [Usługi profilowania](../profiling/command-line-profiling-of-services.md) |
-| **Tworzenie raportów xml i csv:** Profilowanie w wierszu polecenia tworzy pliki danych, które [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]można przeglądać w interfejsie dla . Można również wygenerować . *xml* lub wartość oddzielona przecinkami (.* csv)* przy użyciu narzędzia wiersza polecenia VSPerfReport. | -   [Tworzenie raportów profilera z wiersza polecenia](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [Vsperfreport](../profiling/vsperfreport.md) |
-| **Kod profilu na komputerach bez programu Visual Studio:** Autonomicznego profilra narzędzia profilowania można używać do zbierania danych dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aplikacji na komputerach, które nie zostały zainstalowane. | -   [Jak: Zainstaluj samodzielny profiler](../profiling/how-to-install-the-stand-alone-profiler.md) |
+| **Ustaw lokalizację symboli:** Aby wyświetlić nazwy funkcji i parametrów, profiler musi mieć dostęp do symbolu (.* PDB*) plików plików binarnych, które są profilowane. Pliki te powinny zawierać pliki symboli dla systemu operacyjnego firmy Microsoft i aplikacji, które mają być wyświetlane w analizie. Możesz użyć publicznego serwera symboli firmy Microsoft, aby upewnić się, że masz poprawne. pliki *PDB* dla plików binarnych firmy Microsoft. | -   [Instrukcje: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
+| **Profiluj aplikację:** Narzędzia wiersza polecenia i opcje używane do profilowania aplikacji docelowej zależą od typu aplikacji, metody profilowania i od tego, czy obiektem docelowym jest aplikacja zarządzana lub natywna. | -   [Korzystanie z metod profilowania z wiersza polecenia](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [Usługi profilu](../profiling/command-line-profiling-of-services.md) |
+| **Tworzenie raportów XML i CSV:** Profilowanie w wierszu polecenia tworzy pliki danych, które mogą być wyświetlane w interfejsie dla programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Możesz również generować. wartość w *formacie XML* lub przecinkiem (.* pliki CSV*) danych za pomocą narzędzia wiersza polecenia VSPerfReport. | -   [Tworzenie raportów profilera z poziomu wiersza polecenia](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
+| **Kod profilu na komputerach bez programu Visual Studio:** Za pomocą autonomicznego profilera narzędzia profilowania można zbierać dane dla aplikacji na komputerach, na których nie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowano programu. | -   [Instrukcje: Instalowanie autonomicznego profilera](../profiling/how-to-install-the-stand-alone-profiler.md) |
 
-## <a name="reference"></a>Dokumentacja
-- [Odwołanie do narzędzi profilowania wiersza polecenia](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>Tematy pomocy
+- [Informacje narzędzia profilowania wiersza polecenia](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Eksplorator wydajności](../profiling/performance-explorer.md)
