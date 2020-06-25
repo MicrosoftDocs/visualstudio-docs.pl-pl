@@ -6,15 +6,15 @@ manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c3d622d52e6ae1c1e25563fdbb05f68a9ecc91d0
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: c95c96815872c259cab761d8b4af36141f866dbd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180002"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280560"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
@@ -109,14 +109,14 @@ Aplikacje, które mogą zostać zmigrowane i opublikowane w usługach w chmurze,
 
 | Grupa szablonów | Szablon projektu |
 | --- | --- |
-| Internet | Aplikacja sieci Web ASP.NET (.NET Framework) |
-| Internet | ASP.NET aplikacji sieci Web MVC 2 |
-| Internet | Aplikacja sieci Web ASP.NET MVC 3 |
-| Internet | Aplikacja sieci Web ASP.NET MVC4 |
-| Internet | ASP.NET pustą aplikację sieci Web (lub lokację) |
-| Internet | ASP.NETą pustą aplikację sieci Web MVC 2 |
-| Internet | Aplikacja sieci Web ASP.NET dynamiczne jednostki danych |
-| Internet | ASP.NET dynamiczne dane LINQ do aplikacji sieci Web SQL |
+| Sieć Web | Aplikacja sieci Web ASP.NET (.NET Framework) |
+| Sieć Web | ASP.NET aplikacji sieci Web MVC 2 |
+| Sieć Web | Aplikacja sieci Web ASP.NET MVC 3 |
+| Sieć Web | Aplikacja sieci Web ASP.NET MVC4 |
+| Sieć Web | ASP.NET pustą aplikację sieci Web (lub lokację) |
+| Sieć Web | ASP.NETą pustą aplikację sieci Web MVC 2 |
+| Sieć Web | Aplikacja sieci Web ASP.NET dynamiczne jednostki danych |
+| Sieć Web | ASP.NET dynamiczne dane LINQ do aplikacji sieci Web SQL |
 | WCF | Aplikacja usługi WCF |
 | WCF | Aplikacja usługi przepływu pracy WCF |
 | Przepływ pracy | Aplikacja usługi przepływu pracy WCF |

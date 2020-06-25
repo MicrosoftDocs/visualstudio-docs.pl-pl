@@ -1,7 +1,7 @@
 ---
 title: Zapisywanie zestawu danych jako kodu XML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,35 +16,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3198b94b1248f20b178e85e9e75a2765e6191c28
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586305"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281737"
 ---
 # <a name="save-a-dataset-as-xml"></a>Zapisywanie zestawu danych jako kodu XML
 
-Dostęp do danych XML w zestawie danych przez wywołanie dostępnych metod XML w zestawie danych. Aby zapisać dane w formacie XML, można wywołać metodę <xref:System.Data.DataSet.GetXml%2A> lub <xref:System.Data.DataSet.WriteXml%2A> metodę <xref:System.Data.DataSet>.
+Dostęp do danych XML w zestawie danych przez wywołanie dostępnych metod XML w zestawie danych. Aby zapisać dane w formacie XML, można wywołać <xref:System.Data.DataSet.GetXml%2A> metodę lub <xref:System.Data.DataSet.WriteXml%2A> metodę <xref:System.Data.DataSet> .
 
-Wywołanie metody <xref:System.Data.DataSet.GetXml%2A> zwraca ciąg, który zawiera dane ze wszystkich tabel danych w zestawie danych, który jest sformatowany jako XML.
+Wywołanie <xref:System.Data.DataSet.GetXml%2A> metody zwraca ciąg, który zawiera dane ze wszystkich tabel danych w zestawie danych, który jest sformatowany jako XML.
 
-Wywołanie metody <xref:System.Data.DataSet.WriteXml%2A> wysyła dane sformatowane w formacie XML do określonego pliku.
+Wywołanie <xref:System.Data.DataSet.WriteXml%2A> metody wysyła dane sformatowane w formacie XML do określonego pliku.
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Aby zapisać dane w zestawie danych jako XML do zmiennej
 
-- Metoda <xref:System.Data.DataSet.GetXml%2A> zwraca <xref:System.String>. Zadeklaruj zmienną typu <xref:System.String> i przypisz jej wyniki metody <xref:System.Data.DataSet.GetXml%2A>.
+- <xref:System.Data.DataSet.GetXml%2A>Metoda zwraca <xref:System.String> . Zadeklaruj zmienną typu <xref:System.String> i przypisz ją do wyników <xref:System.Data.DataSet.GetXml%2A> metody.
 
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
      [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Aby zapisać dane w zestawie danych jako XML do pliku
 
-- Metoda <xref:System.Data.DataSet.WriteXml%2A> ma kilka przeciążeń. Zadeklaruj zmienną i przypisz ją do prawidłowej ścieżki, aby zapisać plik w. Poniższy kod przedstawia sposób zapisywania danych do pliku:
+- <xref:System.Data.DataSet.WriteXml%2A>Metoda ma kilka przeciążeń. Zadeklaruj zmienną i przypisz ją do prawidłowej ścieżki, aby zapisać plik w. Poniższy kod przedstawia sposób zapisywania danych do pliku:
 
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

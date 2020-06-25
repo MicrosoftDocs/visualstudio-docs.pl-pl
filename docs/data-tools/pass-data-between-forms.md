@@ -1,7 +1,7 @@
 ---
 title: Przekazywanie danych między formularzami
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586370"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281880"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 
@@ -37,7 +37,7 @@ Zadania przedstawione w tym instruktażu obejmują:
 
 - Tworzenie i Konfigurowanie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
-- Wybieranie kontrolki, która ma zostać utworzona w formularzu podczas przeciągania elementów z okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Wybieranie kontrolki, która ma zostać utworzona w formularzu podczas przeciągania elementów z okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Tworzenie kontrolki powiązanej z danymi przez przeciąganie elementów z okna **źródła danych** na formularz.
 
@@ -61,15 +61,15 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
 ## <a name="create-the-windows-forms-app-project"></a>Tworzenie projektu aplikacji Windows Forms
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
-2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **Windows Desktop**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
@@ -105,13 +105,13 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 ## <a name="create-the-first-form-form1"></a>Utwórz pierwszy formularz (Form1)
 
-Można utworzyć siatkę powiązaną z danymi (formant <xref:System.Windows.Forms.DataGridView>), przeciągając węzeł **Customers** z okna **źródła danych** na formularz.
+Można utworzyć siatkę powiązaną z danymi ( <xref:System.Windows.Forms.DataGridView> formant), przeciągając węzeł **Customers** z okna **źródła danych** na formularz.
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>Aby utworzyć siatkę powiązaną z danymi w formularzu
 
 - Przeciągnij główny węzeł **Customers** z okna **źródła danych** na **formularz Form1**.
 
-     <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawia się na **formularzu Form1**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView>A i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) do nawigowania po rekordach pojawia się na **formularzu Form1**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 ## <a name="create-the-second-form"></a>Tworzenie drugiego formularza
 
@@ -123,7 +123,7 @@ Utwórz drugi formularz, do którego mają zostać przekazane dane.
 
 3. Przeciągnij główny węzeł **zamówień** z okna **źródła danych** na **Form2**.
 
-     <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawia się na **Form2**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView>A i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) dla nawigowania po rekordach pojawia się na **Form2**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 4. Usuń **OrdersBindingNavigator** z paska składnika.
 
@@ -141,7 +141,7 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 4. Pozostaw domyślną opcję Select, **która zwraca wiersze**, a następnie kliknij przycisk **dalej**.
 
-5. Dodaj klauzulę WHERE do zapytania, aby zwrócić `Orders` w oparciu o `CustomerID`. Zapytanie powinno być podobne do następujących:
+5. Dodaj klauzulę WHERE do zapytania, aby zwrócić ją na `Orders` podstawie `CustomerID` . Zapytanie powinno być podobne do następujących:
 
     ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
@@ -150,11 +150,11 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
     ```
 
     > [!NOTE]
-    > Sprawdź poprawność składni parametrów dla bazy danych. Na przykład w programie Microsoft Access klauzula WHERE będzie wyglądać następująco: `WHERE CustomerID = ?`.
+    > Sprawdź poprawność składni parametrów dla bazy danych. Na przykład w programie Microsoft Access klauzula WHERE będzie wyglądać następująco: `WHERE CustomerID = ?` .
 
 6. Kliknij przycisk **Dalej**.
 
-7. Dla pola **Wypełnij nazwę DataTableMethod**wpisz `FillByCustomerID`.
+7. Dla pola **Wypełnij wpisz nazwę DataTableMethod** `FillByCustomerID` .
 
 8. Usuń zaznaczenie opcji **Zwróć element DataTable** , a następnie kliknij przycisk **dalej**.
 
@@ -164,7 +164,7 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 1. Kliknij prawym przyciskiem myszy pozycję **Form2**, a następnie wybierz pozycję **Wyświetl kod** , aby otworzyć **Form2** w **edytorze kodu**.
 
-2. Dodaj następujący kod do **Form2** po metodzie `Form2_Load`:
+2. Dodaj następujący kod do **Form2** po `Form2_Load` metodzie:
 
      [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
@@ -184,9 +184,9 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-app"></a>Uruchamianie aplikacji
+## <a name="run-the-app"></a>Uruchomienie aplikacji
 
-- Naciśnij klawisz **F5**, aby uruchomić aplikację.
+- Naciśnij klawisz **F5** , aby uruchomić aplikację.
 
 - Kliknij dwukrotnie rekord klienta w **formularzu Form1** , aby otworzyć **Form2** z zamówieniami tego klienta.
 
@@ -194,10 +194,10 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po przekazaniu danych między formularzami. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:
 
-- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 - Dodawanie funkcji do zapisywania danych z powrotem w bazie danych. Aby uzyskać więcej informacji, zobacz [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

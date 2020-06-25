@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184552"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280879"
 ---
 # <a name="create-custom-data-visualizers"></a>Tworzenie niestandardowych wizualizatorów danych
+
  *Wizualizator* jest częścią [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfejsu użytkownika debugera, który wyświetla zmienną lub obiekt w sposób odpowiedni dla typu danych. Na przykład wizualizator HTML interpretuje ciąg HTML i wyświetla wynik w postaci, w jakiej pojawił się w oknie przeglądarki. Wizualizator mapy bitowej interpretuje strukturę mapy bitowej i wyświetla grafikę, którą reprezentuje. Niektóre Wizualizatory pozwalają modyfikować, a także wyświetlać dane.
 
  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]Debuger zawiera sześć standardowych wizualizatorów. Wizualizatory tekstu, HTML, XML i JSON działają na obiektach ciągu. Wizualizator drzewa WPF wyświetla właściwości drzewa wizualnego obiektu WPF. Wizualizator zestawu danych działa dla obiektów DataSet, DataView i DataTable.
@@ -74,13 +75,25 @@ Aby utworzyć interfejs użytkownika wizualizatora po stronie debugera, należy 
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>Aby utworzyć źródło obiektu wizualizatora dla strony debugowanego obiektu
 
-Należy określić typ do wizualizacji (Źródło obiektów po stronie debugowanego obiektu), używając <xref:System.Diagnostics.DebuggerVisualizerAttribute> w kodzie po stronie debugera.
+W kodzie po stronie debugera, Edytuj <xref:System.Diagnostics.DebuggerVisualizerAttribute> , nadając jej typ do wizualizacji (Źródło obiektów debugowanego obiektu) ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ). `Target`Właściwość ustawia źródło obiektu. W przypadku pominięcia źródła obiektów wizualizator użyje domyślnego źródła obiektu.
 
-1. W kodzie po stronie debugera, Edytuj <xref:System.Diagnostics.DebuggerVisualizerAttribute> , nadając mu źródło obiektu ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ). `Target`Właściwość ustawia źródło obiektu. W przypadku pominięcia źródła obiektów wizualizator użyje domyślnego źródła obiektu.
+::: moniker range=">=vs-2019"
+Kod po stronie debugowanego obiektu zawiera źródło obiektu, które umożliwia wizualizację. Obiekt danych może przesłonić metody <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> . Biblioteka DLL po stronie debugowanego obiektu jest niezbędna, jeśli chcesz utworzyć autonomiczny wizualizator.
+::: moniker-end
 
-1. Aby umożliwić programowi wizualizatora edytowanie, a także wyświetlanie obiektów danych, Zastąp `TransferData` `CreateReplacementObject` metody lub <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+W kodzie debugowanego obiektu:
 
-## <a name="see-also"></a>Zobacz także
+- Aby umożliwić wizualizatorowi edytowanie obiektów danych, źródło obiektu musi dziedziczyć z <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> i zastąpić `TransferData` `CreateReplacementObject` metody lub.
+
+- Jeśli musisz obsługiwać wiele elementów docelowych wizualizatora, możesz użyć następujących monikerów platformy docelowej (TFMs) w pliku projektu po stronie debugowanego obiektu.
+
+   ```xml
+   <TargetFrameworks>net20;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+   ```
+
+   Są to jedyne obsługiwane TFMs.
+
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Przewodnik: Pisanie wizualizatora w języku Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)

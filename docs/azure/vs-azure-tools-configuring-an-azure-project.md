@@ -6,43 +6,43 @@ manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 609830b5182ef726a6d1933acecb1ddcbf4e25ef
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 1776aebbe827295cbc7902f72417bc57e03a4196
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489704"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280638"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurowanie projektu usługi w chmurze platformy Azure przy użyciu programu Visual Studio
-Można skonfigurować projekt usługi w chmurze platformy Azure, w zależności od wymagań dla tego projektu. Właściwości projektu można ustawić dla następujących kategorii:
+Możesz skonfigurować projekt usługi w chmurze platformy Azure, w zależności od wymagań dla tego projektu. Można ustawić właściwości projektu dla następujących kategorii:
 
-- **Publikowanie usługi w chmurze na platformie Azure** — można ustawić właściwość, aby upewnić się, że istniejąca usługa w chmurze wdrożona na platformie Azure nie zostanie przypadkowo usunięta.
-- **Uruchom lub debuguj usługę w chmurze na komputerze lokalnym** — można wybrać konfigurację usługi do użycia i wskazać, czy chcesz uruchomić emulator magazynu platformy Azure.
-- **Sprawdź poprawność pakietu usługi w chmurze podczas jego tworzenia** — możesz zdecydować się na traktowanie wszystkich ostrzeżeń jako błędów, dzięki czemu można zapewnić wdrożenie pakietu usługi w chmurze bez żadnych problemów.
+- **Publikowanie usługi w chmurze na platformie Azure** — Właściwość można ustawić, aby upewnić się, że istniejąca usługa w chmurze wdrożona na platformie Azure nie została przypadkowo usunięta.
+- **Uruchom lub Debuguj usługę w chmurze na komputerze lokalnym** — możesz wybrać konfigurację usługi do użycia i wskazać, czy chcesz uruchomić emulator usługi Azure Storage.
+- **Sprawdza poprawność pakietu usługi w chmurze podczas jego tworzenia** — możesz zdecydować się na podjęcie wszelkich ostrzeżeń jako błędów, aby upewnić się, że pakiet usługi w chmurze zostanie wdrożony bez żadnych problemów.
 
-## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Kroki konfigurowania projektu usługi w chmurze platformy Azure
+## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Procedura konfigurowania projektu usługi w chmurze platformy Azure
 1. Otwieranie lub tworzenie projektu usługi w chmurze w programie Visual Studio
 
-1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy projekt, a z menu kontekstowego wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Właściwości**.
 
-1. Na stronie właściwości projektu wybierz kartę **Rozwój.**
+1. Na stronie właściwości projektu wybierz kartę **programowanie** .
 
     ![Menu właściwości projektu](./media/vs-azure-tools-configuring-an-azure-project/solution-explorer-project-properties-menu.png)
 
-1. Ustaw **monit przed usunięciem istniejącego wdrożenia** na **True**. To ustawienie pomaga upewnić się, że nie przypadkowo usuniesz istniejące wdrożenie na platformie Azure
+1. Ustaw **wiersz polecenia przed usunięciem istniejącego wdrożenia** do **wartości true**. To ustawienie pomaga upewnić się, że nie usunięto przypadkowo istniejącego wdrożenia na platformie Azure
 
-1. Wybierz żądaną **konfigurację usługi,** aby wskazać, której konfiguracji usługi chcesz użyć podczas uruchamiania lub debugowania usługi w chmurze lokalnie. Aby uzyskać więcej informacji na temat modyfikowania konfiguracji usługi dla roli, zobacz [Jak skonfigurować role usługi w chmurze platformy Azure za pomocą programu Visual Studio.](./vs-azure-tools-configure-roles-for-cloud-service.md)
+1. Wybierz żądaną **konfigurację usługi** , aby wskazać konfigurację usługi, która ma być używana podczas lokalnego uruchamiania lub debugowania usługi w chmurze. Aby uzyskać więcej informacji na temat modyfikowania konfiguracji usługi dla roli, zobacz [jak skonfigurować role dla usługi w chmurze platformy Azure za pomocą programu Visual Studio](./vs-azure-tools-configure-roles-for-cloud-service.md).
 
-1. Ustaw **polecenie Uruchom emulator magazynu platformy Azure** na **True,** aby uruchomić emulator magazynu platformy Azure po uruchomieniu lub debugowaniu usługi w chmurze lokalnie.
+1. Ustaw **początkowy emulator usługi Azure Storage** na **wartość true** , aby uruchomić emulator usługi Azure Storage, gdy uruchamiasz lub debugujesz lokalną usługę w chmurze.
 
-1. Ustaw **Traktuj ostrzeżenia jako błędy** **true,** aby upewnić się, że nie można opublikować, jeśli istnieją błędy sprawdzania poprawności pakietu.
+1. Dla opcji **Traktuj ostrzeżenia jako błędy** wybierz **wartość true** , aby upewnić się, że nie można opublikować w przypadku wystąpienia błędów walidacji pakietu.
 
-1. Ustaw **użyj portów projektu sieci web** na **True,** aby upewnić się, że rola sieci web używa tego samego portu za każdym razem, gdy uruchamia się lokalnie w programie IIS Express.
+1. Ustaw dla **opcji Użyj portów projektu sieci Web** **wartość true** , aby upewnić się, że rola sieci Web używa tego samego portu przy każdym uruchomieniu lokalnym w IIS Express.
 
-1. Na pasku narzędzi Programu Visual Studio wybierz pozycję **Zapisz**.
+1. Na pasku narzędzi programu Visual Studio wybierz pozycję **Zapisz**.
 
 ## <a name="next-steps"></a>Następne kroki
 - [Konfigurowanie projektu platformy Azure przy użyciu wielu konfiguracji usługi](vs-azure-tools-multiple-services-project-configurations.md)

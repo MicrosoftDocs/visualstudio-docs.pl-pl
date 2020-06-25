@@ -1,32 +1,32 @@
 ---
 title: Mapowanie klas LINQ to SQL do tabel/widoków (Projektant O-R)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0e3103c1b4faa62ff82dafe8ba4aa0ef9193f06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586500"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282127"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: tworzenie klas LINQ to SQL mapowanych na tabele i widoki (Projektant O/R)
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Instrukcje: tworzenie klas LINQ do SQL zamapowanych na tabele i widoki (O/R Designer)
 
-klasy [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] mapowane na tabele i widoki bazy danych są nazywane *klasami jednostek*. Klasa jednostki mapuje do rekordu, natomiast poszczególne właściwości klasy jednostki są mapowane do poszczególnych kolumn, które składają się na rekord. Twórz klasy jednostek, które są oparte na tabelach lub widokach bazy danych, przeciągając tabele lub widoki z **Eksplorator serwera** lub **Eksplorator bazy danych** do [narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **Projektant O/R** generuje klasy i stosuje określone atrybuty [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] w celu włączenia funkcji [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] (możliwości komunikacji danych i edytowania <xref:System.Data.Linq.DataContext>). Aby uzyskać szczegółowe informacje na temat klas [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)], zobacz [LINQ to SQL modelu obiektów](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]klasy, które są mapowane na tabele i widoki bazy danych, są nazywane *klasami jednostek*. Klasa jednostki mapuje do rekordu, natomiast poszczególne właściwości klasy jednostki są mapowane do poszczególnych kolumn, które składają się na rekord. Twórz klasy jednostek, które są oparte na tabelach lub widokach bazy danych, przeciągając tabele lub widoki z **Eksplorator serwera** lub **Eksplorator bazy danych** do [narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **Projektant O/R** generuje klasy i stosuje określone [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atrybuty w celu włączenia [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funkcjonalności (możliwości komunikacji i edycji danych <xref:System.Data.Linq.DataContext> ). Aby uzyskać szczegółowe informacje na temat [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klas, zobacz [model obiektów LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
 
 > [!NOTE]
-> **O/R Designer** jest mapowania relacyjnych prostego obiektu, ponieważ obsługuje on tylko relacji mapowanie 1:1. Innymi słowy klasa jednostka może mieć tylko relacji mapowanie 1:1 z tabeli bazy danych lub widoku. Mapowanie złożone, takie jak mapowanie klasy jednostki na wiele tabel, nie jest obsługiwane. Można jednak zmapować klasę jednostki do widoku, który sprzęga wiele powiązanych tabel.
+> **Projektant o/R** to proste mapowanie relacyjne obiektów, ponieważ obsługuje tylko 1:1 relacji mapowania. Innymi słowy, Klasa jednostki może mieć tylko skojarzenie mapowania 1:1 z tabelą lub widokiem bazy danych. Mapowanie złożone, takie jak mapowanie klasy jednostki na wiele tabel, nie jest obsługiwane. Można jednak zmapować klasę jednostki do widoku, który sprzęga wiele powiązanych tabel.
 
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Tworzenie klas LINQ to SQL, które są mapowane do tabel lub widoków bazy danych
 
-Przeciąganie tabel lub widoków z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R** tworzy klasy jednostek oprócz metod <xref:System.Data.Linq.DataContext>, które są używane do przeprowadzania aktualizacji.
+Przeciąganie tabel lub widoków z **Eksplorator serwera** lub **Eksplorator bazy danych** do **projektanta O/R** tworzy klasy jednostek oprócz <xref:System.Data.Linq.DataContext> metod, które są używane do przeprowadzania aktualizacji.
 
-Domyślnie środowisko uruchomieniowe [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] tworzy logikę w celu zapisania zmian z klasy jednostki aktualizowalnej z powrotem do bazy danych. Ta logika jest oparta na schemacie tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli takie zachowanie nie jest potrzebne, można skonfigurować klasę jednostki, aby używać procedur składowanych do wykonywania operacji wstawiania, aktualizacji i usuwania zamiast używania domyślnego [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] zachowanie w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Domyślnie [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] środowisko uruchomieniowe tworzy logikę w celu zapisania zmian z klasy jednostki aktualizowalnej z powrotem do bazy danych. Ta logika jest oparta na schemacie tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli to zachowanie nie jest potrzebne, można skonfigurować klasę jednostki, aby używać procedur składowanych do wykonywania operacji wstawiania, aktualizacji i usuwania zamiast używania domyślnego [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] zachowania w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [How to: assignd procedur składowanych do wykonywania aktualizacji, wstawianych i usuwanych (Projektant O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -61,7 +61,7 @@ Po utworzeniu klas jednostek przy użyciu **projektanta O/R**można utworzyć ź
 
 7. Przeciągnij elementy z okna **źródła danych** na formularz.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Przewodnik: tworzenie klas LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

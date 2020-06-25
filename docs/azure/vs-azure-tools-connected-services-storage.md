@@ -6,21 +6,21 @@ manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911897"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280687"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Dodawanie usługi Azure Storage przy użyciu usług połączonych programu Visual Studio
 
 Za pomocą programu Visual Studio można połączyć dowolne z następujących elementów w usłudze Azure Storage przy użyciu okna dialogowego **Dodawanie połączonych usług** :
 
-- C#Usługa w chmurze
+- Usługa w chmurze w języku C#
 - Usługa mobilna zaplecza platformy .NET
 - ASP.NET witryna sieci Web lub usługa
 - Usługa ASP.NET Core
@@ -72,7 +72,7 @@ Po zakończeniu okna dialogowego program Visual Studio dodaje odwołania i modyf
 - Projekt usługi w chmurze (role sieci Web i proces roboczy) — [co się stało — projekty usług w chmurze](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - Projekt Zadania WebJob — [co się stało z projektami zadań WebJob](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Forum MSDN: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog zespołu Microsoft Azure Storage](https://blogs.msdn.microsoft.com/windowsazurestorage/)

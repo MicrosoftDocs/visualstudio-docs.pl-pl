@@ -1,7 +1,7 @@
 ---
 title: Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586214"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281612"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 
-Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instrukcji SQL bezpośrednio w bazie danych przy użyciu metod DBDirect klasy TableAdapter. Metody DBDirect TableAdapter zapewniają poziom kontroli nad aktualizacjami bazy danych. Można ich używać do uruchamiania określonych instrukcji SQL i procedur składowanych przez wywołanie poszczególnych `Insert`, `Update`i `Delete` metod, w zależności od potrzeb aplikacji (w przeciwieństwie do przeciążonej metody `Update`, która wykonuje wszystkie instrukcje UPDATE, INSERT i DELETE w jednym wywołaniu).
+Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instrukcji SQL bezpośrednio w bazie danych przy użyciu metod DBDirect klasy TableAdapter. Metody DBDirect TableAdapter zapewniają poziom kontroli nad aktualizacjami bazy danych. Można ich używać do uruchamiania określonych instrukcji SQL i procedur składowanych przez wywoływanie pojedynczych `Insert` `Update` metod, i, w `Delete` zależności od potrzeb aplikacji (w przeciwieństwie do przeciążonej `Update` metody, która wykonuje instrukcje Update, INSERT i DELETE w jednym wywołaniu).
 
 W tym instruktażu dowiesz się, jak:
 
@@ -33,7 +33,7 @@ W tym instruktażu dowiesz się, jak:
 
 - Utwórz i skonfiguruj zestaw danych za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
-- Wybierz kontrolkę, która ma zostać utworzona w formularzu podczas przeciągania elementów z okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Wybierz kontrolkę, która ma zostać utworzona w formularzu podczas przeciągania elementów z okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Utwórz formularz powiązany z danymi, przeciągając elementy z okna **źródła danych** na formularz.
 
@@ -53,7 +53,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -61,9 +61,9 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**.
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
-2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **Windows Desktop**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
@@ -73,11 +73,11 @@ Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Tworzenie źródła danych na podstawie bazy danych
 
-Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie tabeli `Region` w przykładowej bazie danych Northwind. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind. Aby uzyskać informacje o konfigurowaniu przykładowej bazy danych Northwind, zobacz [How to: Install Sample Bases](../data-tools/installing-database-systems-tools-and-samples.md).
+Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie `Region` tabeli w przykładowej bazie danych Northwind. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind. Aby uzyskać informacje o konfigurowaniu przykładowej bazy danych Northwind, zobacz [How to: Install Sample Bases](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
-1. Na **danych** menu, wybierz opcję **Pokaż źródła danych**.
+1. W menu **dane** wybierz pozycję **Pokaż źródła danych**.
 
    Zostanie otwarte okno **źródła danych** .
 
@@ -89,7 +89,7 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
     - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-         lub
+         -lub-
 
     - Wybierz pozycję **nowe połączenie** , aby uruchomić okno dialogowe **Dodawanie/modyfikowanie połączenia** .
 
@@ -99,9 +99,9 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
 7. Na ekranie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** .
 
-8. Wybierz tabelę `Region` a następnie wybierz pozycję **Zakończ**.
+8. Wybierz `Region` tabelę, a następnie wybierz pozycję **Zakończ**.
 
-     **NorthwindDataSet** jest dodawany do projektu, a tabela `Region` zostanie wyświetlona w oknie **źródła danych** .
+     **NorthwindDataSet** jest dodawany do projektu, a `Region` tabela pojawia się w oknie **źródła danych** .
 
 ## <a name="add-controls-to-the-form-to-display-the-data"></a>Dodawanie kontrolek do formularza w celu wyświetlenia danych
 
@@ -109,7 +109,7 @@ Utwórz formanty powiązane z danymi, przeciągając elementy z okna **źródła
 
 Aby utworzyć formanty powiązane z danymi w formularzu systemu Windows, przeciągnij węzeł **region** główny z okna **źródła danych** na formularz.
 
-Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawiają się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+<xref:System.Windows.Forms.DataGridView>Kontrolka i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach pojawiają się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter` , <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawia się na pasku składnika.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Aby dodać przyciski, które będą wywoływały poszczególne metody TableAdapter DBDirect
 
@@ -119,15 +119,15 @@ Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:Syst
 
     |Nazwa|Tekst|
     |----------|----------|
-    |`InsertButton`|**Wstaw**|
+    |`InsertButton`|**Insert**|
     |`UpdateButton`|**Aktualizacja**|
-    |`DeleteButton`|**Delete**|
+    |`DeleteButton`|**Usuwanie**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Aby dodać kod umożliwiający wstawianie nowych rekordów do bazy danych
 
 1. Wybierz pozycję **InsertButton** , aby utworzyć procedurę obsługi zdarzeń dla zdarzenia kliknięcia i otworzyć formularz w edytorze kodu.
 
-2. Zastąp procedurę obsługi zdarzeń `InsertButton_Click` następującym kodem:
+2. Zastąp `InsertButton_Click` procedurę obsługi zdarzeń następującym kodem:
 
      [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]
      [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]
@@ -136,7 +136,7 @@ Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:Syst
 
 1. Kliknij dwukrotnie **UpdateButton** , aby utworzyć procedurę obsługi zdarzeń dla zdarzenia kliknięcia i otworzyć formularz w edytorze kodu.
 
-2. Zastąp procedurę obsługi zdarzeń `UpdateButton_Click` następującym kodem:
+2. Zastąp `UpdateButton_Click` procedurę obsługi zdarzeń następującym kodem:
 
      [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]
      [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]
@@ -145,7 +145,7 @@ Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:Syst
 
 1. Wybierz pozycję **DeleteButton** , aby utworzyć procedurę obsługi zdarzeń dla zdarzenia kliknięcia i otworzyć formularz w edytorze kodu.
 
-2. Zastąp procedurę obsługi zdarzeń `DeleteButton_Click` następującym kodem:
+2. Zastąp `DeleteButton_Click` procedurę obsługi zdarzeń następującym kodem:
 
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
@@ -168,6 +168,6 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Dodając dodatkowe tabele do zestawu danych, wybierając pozycję **Konfiguruj zestaw danych z kreatorem** w oknie **źródła danych** . Można dodać kontrolki, które wyświetlają powiązane dane, przeciągając powiązane węzły do formularza. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

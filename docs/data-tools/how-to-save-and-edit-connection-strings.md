@@ -1,19 +1,19 @@
 ---
 title: 'Porady: zapisywanie i edycja parametrów połączeń'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0f0105383667e1122d6636a3baab3aa925a742
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e3cb3f832f308edb42967d2fe4485b3d6885022a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586461"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282023"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Instrukcje: zapisywanie i edytowanie parametrów połączenia
 Parametry połączenia w aplikacjach Visual Studio są zapisywane w pliku konfiguracyjnym aplikacji (nazywanego również ustawieniami aplikacji) lub trwale kodowane bezpośrednio w aplikacji. Zapisywanie parametrów połączenia w pliku konfiguracji aplikacji upraszcza zadanie obsługi aplikacji. Jeśli parametry połączenia należy zmienić, można je zaktualizować w pliku ustawień aplikacji (w przeciwieństwie do zmiany w kodzie źródłowym i ponownej kompilacji aplikacji).
@@ -28,7 +28,7 @@ W **Kreatorze konfiguracji źródła danych**wybierz opcję zapisu połączenia 
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Aby zapisać parametry połączenia bezpośrednio w ustawieniach aplikacji
 1. W **Eksplorator rozwiązań**kliknij dwukrotnie ikonę **mój projekt** (Visual Basic) lub ikonę **Właściwości** (C#), aby otworzyć **projektanta projektu**.
-1. Wybierz **ustawienia** kartę.
+1. Wybierz kartę **Ustawienia**.
 1. Wprowadź **nazwę** parametrów połączenia. Odnosi się do tej nazwy podczas uzyskiwania dostępu do parametrów połączenia w kodzie.
 1. Ustaw **Typ** na (**Parametry połączenia**).
 1. Pozostaw **zakres** ustawiony na wartość **aplikacja**.
@@ -39,7 +39,7 @@ Informacje o połączeniu zapisane w ustawieniach aplikacji można zmodyfikować
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Aby edytować parametry połączenia przechowywane w ustawieniach aplikacji
 1. W **Eksplorator rozwiązań**kliknij dwukrotnie ikonę **mój projekt** (Visual Basic) lub ikonę **Właściwości** (C#), aby otworzyć **projektanta projektu**.
-1. Wybierz **ustawienia** kartę.
+1. Wybierz kartę **Ustawienia**.
 1. Znajdź połączenie, które chcesz edytować, a następnie wybierz tekst w polu **wartość** .
 1. Edytuj parametry połączenia w polu **wartość** lub kliknij przycisk **wielokropka** (...) w polu **wartość** , aby edytować połączenie przy użyciu okna dialogowego **Właściwości połączenia** .
 
@@ -56,6 +56,6 @@ Informacje o połączeniu dla każdego TableAdapteru można zmodyfikować w zest
 Przechowywanie poufnych informacji (takich jak hasło) w ciągu połączenia może wpłynąć na bezpieczeństwo aplikacji. Używanie zintegrowanych zabezpieczeń systemu Windows jest bezpieczniejszym sposobem na kontrolowanie dostępu do bazy danych.
 Aby uzyskać więcej informacji, zobacz [Ochrona informacji o połączeniu](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie połączeń](../data-tools/add-new-connections.md)

@@ -1,25 +1,25 @@
 ---
 title: Parametry połączenia zawierają poświadczenia z hasłem w postaci zwykłego tekstu i nie korzystają ze zintegrowanych zabezpieczeń
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9c807266182b419dc0967288715a187042f83b1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 201d01d5891b1d788245b2ce61b09f43a50731b1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586175"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281477"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Parametry połączenia zawierają poświadczenia z hasłem w postaci zwykłego tekstu i nie korzystają ze zintegrowanych zabezpieczeń
 
 Czy chcesz zapisać parametry połączenia w bieżącym pliku DBML i plikach konfiguracji aplikacji z tymi informacjami poufnymi?  Kliknij przycisk **nie** , aby zapisać parametry połączenia bez informacji poufnych.
 
-Podczas pracy z połączeniami danych zawierającymi informacje poufne (hasła zawarte w parametrach połączenia) można zapisać parametry połączenia w pliku DBML projektu i pliku konfiguracji aplikacji z lub bez informacje poufne.
+Podczas pracy z połączeniami danych, które zawierają informacje poufne (hasła zawarte w parametrach połączenia), można zapisać parametry połączenia w pliku DBML projektu i plikach konfiguracji aplikacji z lub bez informacji poufnych.
 
 > [!WARNING]
 > Jawne ustawienie właściwości **połączenia** właściwości **ustawień aplikacji** na **Fałsz** spowoduje dodanie hasła do pliku DBML.
@@ -34,6 +34,6 @@ Podczas pracy z połączeniami danych zawierającymi informacje poufne (hasła z
 
    Parametry połączenia są przechowywane jako ustawienia aplikacji, ale hasło nie jest uwzględniane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

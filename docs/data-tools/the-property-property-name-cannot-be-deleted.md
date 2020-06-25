@@ -1,23 +1,23 @@
 ---
 title: Nie można usunąć właściwości
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 29344a2443708d9ddaed3d90a186ab8424638664
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91fce94babf443c974a49885263b8e7eb77d9eaa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72640486"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281348"
 ---
-# <a name="the-property-property-name-cannot-be-deleted"></a>Nie można usunąć właściwości \<property nazwy >
+# <a name="the-property-property-name-cannot-be-deleted"></a>Właściwości \<property name> nie można usunąć
 
-Nie można usunąć właściwości \<property >, ponieważ jest ona ustawiona jako **właściwość rozróżniacza** dla dziedziczenia między \<class nazw > i \<class >
+\<property name>Nie można usunąć właściwości, ponieważ jest ona ustawiona jako **właściwość rozróżniacza** dla dziedziczenia między \<class name> i\<class name>
 
 Wybrana właściwość jest ustawiana jako **właściwość rozróżniacza** dla dziedziczenia między klasami wskazanymi w komunikacie o błędzie. Nie można usunąć właściwości, jeśli uczestniczą w konfiguracji dziedziczenia między klasami danych.
 
@@ -31,6 +31,6 @@ Ustaw **Właściwość dyskryminatora** na inną właściwość klasy danych, ab
 
 3. Spróbuj ponownie usunąć właściwość.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

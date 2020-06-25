@@ -1,7 +1,7 @@
 ---
 title: 'Porady: łączenie z danymi w usłudze'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting to web services
 - data sources, creating from web services
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01ad796faa8c722ba088143da814305844136aa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b49840a2190abfd223edf5643b8d70da1a59d6b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586526"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282231"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Instrukcje: łączenie się z danymi w usłudze
 
@@ -55,9 +55,9 @@ Po zakończeniu działania kreatora do projektu zostanie dodane odwołanie do us
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby dodać funkcjonalność do aplikacji, wybierz element w oknie **źródła danych** i przeciągnij go na formularz, aby utworzyć powiązane kontrolki. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+Aby dodać funkcjonalność do aplikacji, wybierz element w oknie **źródła danych** i przeciągnij go na formularz, aby utworzyć powiązane kontrolki. Aby uzyskać więcej informacji, zobacz [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Powiązywanie kontrolek WPF z usługą danych programu WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
 - [Usługi Windows Communication Foundation i usługi danych programu WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

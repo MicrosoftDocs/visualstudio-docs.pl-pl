@@ -1,5 +1,5 @@
 ---
-title: Analizowanie użycia pamięci dla obiektów .NET | Dokumenty firmy Microsoft
+title: Analizowanie użycia pamięci dla obiektów .NET | Microsoft Docs
 ms.date: 12/9/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,95 +9,134 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 9518ffd618a6d82505feca33b37b5151a3a9f961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a812ea3dcddc2fa6093b2b5b99684d1d5194654
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75898470"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280038"
 ---
-# <a name="analyze-memory-usage-using-the-net-object-allocation-tool"></a>Analizowanie użycia pamięci za pomocą narzędzia Alokacja obiektów .NET
+# <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analizowanie użycia pamięci za pomocą narzędzia alokacji obiektów platformy .NET
 
-Możesz zobaczyć, ile pamięci używa aplikacja i jakie ścieżki kodu przydzielić najwięcej pamięci za pomocą narzędzia .NET alokacji obiektów.
+Możesz sprawdzić ilość pamięci używanej przez aplikację i informacje o ścieżce kodu przydzielające najwięcej pamięci za pomocą narzędzia alokacji obiektów platformy .NET.
 
-Po uruchomieniu narzędzia, można zobaczyć ścieżki wykonywania funkcji, gdzie obiekty są przydzielane, dzięki czemu można prześledzić z powrotem do katalogu głównego drzewa wywołań, który zajmuje najwięcej pamięci.
+Po uruchomieniu narzędzia można zobaczyć ścieżki wykonywania funkcji, w których są przyliczane obiekty. Następnie można śledzić z powrotem do poziomu głównego drzewa wywołań, który zajmuje najwięcej pamięci.
 
-## <a name="setup"></a>Konfiguracja
+## <a name="setup"></a>Konfigurowanie
 
-1. Otwórz program Profileer wydajności **(Alt + F2)** w programie Visual Studio.
-2.  Zaznacz pole wyboru **Śledzenie alokacji obiektów .NET.**
+1. Wybierz **kombinację klawiszy Alt + F2** , aby otworzyć Profiler wydajności w programie Visual Studio.
 
-![Piasta Diag](../profiling/media/diaghub.png "Piasta Diag")
+1. Zaznacz pole wyboru **śledzenie alokacji obiektów platformy .NET** .
 
-> [!NOTE]
-> Projekt startowy jest domyślnie wybierany jako **obiekt docelowy analizy,** ale można go zmienić na uruchomiony proces, pliki wykonywalne, uruchomione aplikacje i zainstalowane aplikacje, otwierając menu rozwijane **Zmień miejsce docelowe,** a następnie wybierając z dostępnych opcji.
+   ![Wybrane narzędzie do śledzenia alokacji obiektów dotnet](../profiling/media/dotnetalloctoolselected.png "Wybrane narzędzie do śledzenia alokacji obiektów dotnet")
 
-   Narzędzie .NET Object Allocation nie obsługuje obecnie plików wykonywalnych za pośrednictwem menu rozwijanego. Aby skorzystać z narzędzia, musisz przejść przez system projektu exe. Aby to zrobić, zamknij bieżące rozwiązanie **(Rozwiązanie zamknięcia****pliku),** -> a następnie naciśnij **pozycję Otwórz plik** -> **projektu lub rozwiązania** - > wybierz plik .exe.
+1. Wybierz przycisk **Start** , aby uruchomić narzędzie.
 
-![Cel analizy](../profiling/media/analysistarget.png "Cel analizy")
+1. Po uruchomieniu narzędzia Przejdź do scenariusza, który chcesz profilować w aplikacji. Następnie wybierz pozycję **Zatrzymaj zbieranie** lub Zamknij aplikację, aby zobaczyć swoje dane.
 
-3. Kliknij przycisk **Start,** aby uruchomić narzędzie.
+   ![Okno pokazujące Zatrzymaj zbieranie](../profiling/media/stopcollectionlighttheme.png "Okno pokazujące Zatrzymaj zbieranie")
 
-![Zatrzymaj kolekcję](../profiling/media/stopcollection.png "Zatrzymaj kolekcję")
+1. Wybierz kartę **alokacja** . zostanie wyświetlona zawartość okna podobna do poniższego zrzutu ekranu.
 
-4. Po uruchomieniu narzędzia przejdź przez żądany scenariusz w aplikacji, a następnie naciśnij **przycisk Zatrzymaj zbieranie** lub zamknij aplikację, aby wyświetlić dane.
-5. Kliknij kartę **Alokacja,** a zobaczysz obraz podobny do pokazanego poniżej.
+   ![Karta alokacja](../profiling/media/allocationview.png "Karta alokacja")
 
-![Alokacja](../profiling/media/allocation.png "Alokacja")
+Teraz można analizować alokację pamięci obiektów.
 
-Gratulacje! Teraz można analizować alokację pamięci obiektów.
+Podczas zbierania Narzędzie śledzenia może spowolnić profilowaną aplikację. Jeśli wydajność narzędzia śledzenia lub aplikacji jest powolna i jeśli nie musisz śledzić każdego obiektu, możesz dostosować częstotliwość próbkowania. Aby to zrobić, wybierz symbol koła zębatego obok narzędzia śledzenia na stronie podsumowania profilera.
 
-## <a name="understand-your-data"></a>Poznaj swoje dane
+![Ustawienia dla narzędzia do alokacji dotnet](../profiling/media/dotnetallocsettings.png "Ustawienia dla narzędzia do alokacji dotnet")
 
-### <a name="collection"></a>Collection
+Dostosuj częstotliwość próbkowania do pożądanej szybkości. Ta zmiana ułatwia przyspieszenie wydajności aplikacji podczas zbierania i analizowania danych.
 
-![Kolekcja](../profiling/media/collection.png "Collection")
+![Skorygowana częstotliwość próbkowania](../profiling/media/adjustedsamplingratedotnetalloctool.png "Skorygowana częstotliwość próbkowania")
 
-Widok kolekcji pozwala zobaczyć, ile obiektów zostały zebrane podczas wyrzucania elementów bezużytecznych i ile zostały zachowane. Ten widok zawiera również kilka wykresów kołowych do wizualizacji zebranych i zachowanych obiektów według typu.
+Aby uzyskać więcej informacji na temat zwiększania wydajności narzędzia, zobacz [Optymalizacja ustawień profilera](../profiling/optimize-profiler-settings.md).
 
-- **Collected** Kolumna pokazuje liczbę obiektów, które moduł zbierający elementy bezużyteczne zebrane.
-- **Survived** Kolumna pokazuje liczbę obiektów, które przetrwały po odśmiecania elementów bezużytecznych został uruchomiony.
+## <a name="understand-your-data"></a>Zrozumienie danych
+
+![Wykres dla narzędzia do alokacji dotnet](../profiling/media/graphdotnetalloc.png "Wykres dla narzędzia do alokacji dotnet")
+
+W poprzednim widoku graficznym na górnym wykresie przedstawiono liczbę aktywnych obiektów w aplikacji. Wykres Delta dolnego **obiektu** przedstawia wartość procentową zmiany obiektów aplikacji. Czerwone słupki oznaczają, gdy wystąpiło wyrzucanie elementów bezużytecznych.
+
+![Filtrowany wykres czasu alokacji dotnet](../profiling/media/graphdotnetalloctimefiltered.png "Filtrowany wykres czasu alokacji dotnet")
+
+Można filtrować dane tabelaryczne w celu wyświetlenia działania tylko dla określonego zakresu czasu. Możesz również powiększyć lub pomniejszyć wykres.
 
 ### <a name="allocation"></a>Alokacja
 
-![Alokacja rozszerzona](../profiling/media/allocationexpanded.png "Alokacja rozszerzona")
+![Widok alokacja rozwinięty](../profiling/media/allocationexpandedlight.png "Widok alokacja rozwinięty")
 
-Widok alokacji umożliwia wyświetlenie lokalizacji obiektów, które przydzielają pamięć i ile pamięci te obiekty są przydzielane.
+Widok **alokacja** przedstawia lokalizację obiektów, które przydzielają pamięć i ilość pamięci przydzielanej przez te obiekty.
 
-- **Name** kolumna jest lista różnych klas i struktur, które zajmują pamięci. Każdy element w kolumnie jest węzłem, który można rozwinąć, jeśli istnieją elementy w tej kategorii zajmujące pamięć. (Tylko widok**alokacji)**
-- **Kolumna Całkowita (alokacje)** pokazuje liczbę obiektów w ramach określonego typu alokacji, które zajmują pamięć. **(Alokacja,** **Drzewo wywołań**i Widok **funkcji)**
-- **Self (Alokacje)** Kolumna pokazuje liczbę obiektów w obrębie pojedynczego elementu, który zajmuje pamięć. **(Alokacja,** **Drzewo wywołań**i Widok **funkcji)**
-- Wszystkie trzy z tych kolumn można sortować. W przypadku kolumny **Nazwa** elementy są sortowane alfabetycznie (do przodu lub do tyłu). W przypadku **sumy** i **jaźni (alokacje)** można sortować numerycznie (coraz częściej lub malejąco).
-- Kolumny **Całkowity rozmiar (bajty)** i **Rozmiar własny (bajty)** domyślnie nie są włączone. Aby je włączyć, kliknij prawym przyciskiem myszy kolumny **Nazwa**, **Suma** lub **Jaźń (Alokacje),** a następnie kliknij polecenie **Całkowity rozmiar** i **Rozmiar własny,** aby dodać je do wykresu. Dwie kolumny są podobne do **Sum (Alokacje)** i **Self (Alokacje),** z tą różnicą, że zamiast pokazywać liczbę obiektów zajmujących pamięć, pokazują całkowitą ilość pamięci w bajtach, które te obiekty zajmują. [Tylko widok alokacji]
+- Kolumna **Type**   jest listą klas i struktur, które zajmują pamięć. Kliknij dwukrotnie typ, aby wyświetlić jego śledzenie jako odwrócone drzewo wywołań. W widoku **alokacji** można zobaczyć elementy należące do wybranej kategorii, które zajmują pamięć.
 
-### <a name="call-tree"></a>Drzewo połączeń
+- Kolumna **Alokacje**   zawiera liczbę obiektów, które zajmują pamięć w ramach określonego typu alokacji lub funkcji. Ta kolumna pojawia się tylko w widokach **alokacja**, **drzewo wywołań**i **funkcje**   .
 
-![Drzewo połączeń](../profiling/media/calltree.png "Drzewo połączeń")
+- Kolumny **bajtów**   i **średni rozmiar (w bajtach)**   nie są wyświetlane domyślnie. Aby je wyświetlić, kliknij prawym przyciskiem myszy kolumnę **Typ**   lub **Alokacje**   , a następnie wybierz opcje **bajty**   i **średni rozmiar (bajty)**,   Aby dodać je do wykresu. 
 
-Widok **drzewa wywołań** umożliwia wyświetlenie ścieżek wykonywania funkcji, które zawierają obiekty przydzielające dużo pamięci.
+   Dwie kolumny są podobne do **sum (alokacji)** i **samodzielnych (alokacji)**, z tą różnicą, że pokazują ilość zajętej pamięci zamiast liczby obiektów zużywających pamięć. Te kolumny są wyświetlane tylko w widoku **alokacja** .
 
-- **Kolumna Nazwa funkcji** zawiera proces lub nazwę funkcji zawierającej obiekty przydzielające pamięć na podstawie poziomu sprawdzanego węzła.
-- Kolumny **Suma** i **Jaźń (Alokacje)** mają te same informacje co widok **Alokacja.**
-- Kolumna **Nazwa modułu** zawiera moduł, który zawiera funkcję lub proces, który wywołuje.
+- Kolumna **Nazwa modułu**zawiera   moduł, który zawiera funkcję lub proces wywołujący.
 
-![Gorąca ścieżka](../profiling/media/hotpath.png "Gorąca ścieżka")
+Wszystkie te kolumny są sortowane. W przypadku kolumn **typu** i **nazwy modułu** można sortować elementy alfabetycznie w kolejności rosnącej lub malejącej. W przypadku **alokacji**, **bajtów**   i **średniego rozmiaru (w bajtach)** można sortować elementy przez zwiększenie lub zmniejszenie wartości liczbowej.
 
-- Przycisk **Rozwiń ścieżkę gorącą** wyróżnia ścieżkę wykonywania funkcji, która zawiera wiele obiektów, które przydzielają pamięć. Algorytm rozpoczyna się od wybranego przez użytkownika węzła zainteresowania i wyróżnia ścieżkę większości alokacji, prowadząc użytkownika w ich badaniu.
-- Przycisk **Pokaż gorącą ścieżkę** włącza lub wyłącza ikony płomienia wskazujące, który węzeł jest częścią **ścieżki gorącej**.
+#### <a name="symbols"></a>Symbole
+
+Następujące symbole są wyświetlane w kartach **alokacja**, **drzewo wywołań**i **funkcje** :
+
+- ![Symbol typu wartości](../profiling/media/valuetypeicon.png "Symbol typu wartości") — typ wartości, na przykład liczba całkowita.
+
+- ![Symbol kolekcji wartości typu](../profiling/media/valuetypecollectionicon.png "Symbol kolekcji wartości typu") — Kolekcja wartości typu, taka jak tablica liczb całkowitych
+
+- ![Symbol typu odwołania](../profiling/media/referencetypeicon.png "Symbol typu odwołania") — typ referencyjny, taki jak ciąg
+
+- ![Symbol kolekcji typu odwołania](../profiling/media/referencetypecollectionicon.png "Symbol kolekcji typu odwołania") — Kolekcja typu odwołania, taka jak tablica ciągów
+
+### <a name="call-tree"></a>Drzewo wywołań
+
+![Widok drzewa wywołań](../profiling/media/calltreelight.png "Widok drzewa wywołań")
+
+Widok **drzewa wywołań**   przedstawia ścieżki wykonywania funkcji, które zawierają obiekty przydzielenia dużo pamięci.
+
+- Kolumna **nazwa funkcji**   zawiera proces lub nazwę funkcji zawierającej obiekty, które przydzielą pamięć. Ekran jest oparty na poziomie przeglądanego węzła.
+- Kolumny **Suma (alokacja)** i **całkowity rozmiar (w bajtach)**   zawierają liczbę przydzielonych obiektów i ilość pamięci używanej przez funkcję oraz wszystkie inne funkcje, które wywołuje.
+- Kolumny **własne (alokacje)** i **własne rozmiary (bajty)** zawierają liczbę przydzielonych obiektów i ilość pamięci używanej przez pojedynczą wybraną funkcję lub typ alokacji.
+- Kolumna **średni rozmiar (w bajtach)** zawiera te same informacje, które są wyświetlane w widoku **Alokacje** .
+- Kolumna **Nazwa modułu**zawiera   moduł, który zawiera funkcję lub proces wywołujący.
+
+   ![Rozszerzona ścieżka gorąca](../profiling/media/hotpathlight.png "Rozszerzona ścieżka gorąca")
+
+- Przycisk **Rozwiń ścieżkę gorącą** powoduje wyróżnienie ścieżki wykonywania funkcji, która zawiera wiele obiektów przydzielających pamięć. Algorytm jest uruchamiany w węźle, który wybierzesz i podświetla ścieżkę najbardziej przydziałów.
+- Przycisk **Pokaż ścieżkę gorącą** pokazuje lub ukrywa symbole płomienia wskazujące, które węzły są częścią ścieżki aktywnej.
 
 ### <a name="functions"></a>Funkcje
 
-![Funkcje](../profiling/media/functions.png "Funkcje")
+![Widok funkcji](../profiling/media/functionslight.png "Widok funkcji")
 
-Widok **Funkcje** pokazuje procesy, moduły i funkcje, które przydzielają pamięć.
+Widok **funkcji** zawiera procesy, moduły i funkcje, które są przydzielane pamięci.
 
-- **Kolumna Nazwa** pokazuje procesy jako węzły najwyższego poziomu. Pod procesami są moduły, a w modułach są funkcje.
-- Kolumny **Suma** i **Jaźń (Alokacje)** mają te same informacje co widok **Alokacja.**
+- Kolumna **name** zawiera procesy jako węzły najwyższego poziomu. Procesy poniżej są modułami, a poniżej moduły są funkcjami.
+- Te kolumny zawierają te same informacje, co w widokach drzewa **alokacji** i **wywołań** :
 
-Wszystkie widoki **Alokacje,** **Drzewo wywołań**i **Funkcje** zawierają opcje **Pokaż tylko mój kod,** Pokaż kod **macierzysty**i **Wyszukaj:**
+   - **Suma (przydziały)**
+   - **Własne (alokacje)**
+   - **Łączny rozmiar (w bajtach)**
+   - **Własny rozmiar (w bajtach)**
+   - **Średni rozmiar (w bajtach)**
 
-![Pasek filtra](../profiling/media/filterbar.png "Pasek filtra")
+### <a name="collection"></a>Kolekcja
 
-- **Pokaż tylko mój kod** zwija systemy, struktury i inny kod niebędący użytkownikiem i do ramek **[Kod zewnętrzny],** dzięki czemu kod użytkownika może być skoncentrowany na. Aby uzyskać więcej informacji, zobacz [Debugowanie kodu użytkownika za pomocą tylko mój kod](../debugger/just-my-code.md).
-- **Pokaż kod macierzysty** pokazuje kod macierzysty w ramach obiektu docelowego analizy, w tym kod niebędący użytkownikiem, jeśli jest zaznaczony.
-- **Pole Filtr** umożliwia filtrowanie kolumny **Nazwa** lub **Nazwa funkcji** na podstawie podawania parametru. Wystarczy wpisać w polu, a tabela powinna filtrować w dół, aby wyświetlić tylko typy, które zawierają dostarczony ciąg.
+![Widok kolekcji](../profiling/media/collectionlight.png "Widok kolekcji")
+
+Widok **kolekcji** pokazuje, ile obiektów zostało zebranych lub zachowanych podczas wyrzucania elementów bezużytecznych. Ten widok przedstawia także wykresy kołowe do wizualizacji zebranych i nieprzestawionych obiektów według typu.
+
+- **Zebrana** kolumna pokazuje liczbę obiektów zebranych przez moduł zbierający elementy bezużyteczne.
+- Kolumna **Przeżyjed** pokazuje liczbę obiektów, które przeżyły po uruchomieniu modułu wyrzucania elementów bezużytecznych.
+
+### <a name="filtering-tools"></a>Narzędzia filtrowania
+
+Widok **Alokacje**, **drzewo wywołań**i **funkcje** wszystkie zawierają opcje **Pokaż tylko mój kod** i **Pokaż kod natywny** oraz pole filtru.
+
+- **Pokaż tylko mój kod** zwija systemy, struktury i inny kod niebędący użytkownikiem do ramek **[kod zewnętrzny]** , dzięki czemu możesz skupić się na tylko kodzie. Aby uzyskać więcej informacji, zobacz [Debugowanie kodu użytkownika przy użyciu tylko mój kod](../debugger/just-my-code.md).
+- **Pokaż kod natywny** pokazuje kod natywny w elemencie docelowym analizy i może zawierać kod niebędący użytkownikiem.
+- Za pomocą pola filtru można filtrować w dół kolumnę **Nazwa** lub **nazwa funkcji** na podstawie podanych wartości. W polu Wprowadź wartość ciągu. W tabeli są wyświetlane tylko typy zawierające ten ciąg.

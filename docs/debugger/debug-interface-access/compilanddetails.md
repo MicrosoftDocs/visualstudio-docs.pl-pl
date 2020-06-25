@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b72a5ae53c336877c68cc9b164cf787017dacbe2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b0bcedda06119149413895415272c1a18934bce7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745420"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280829"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
-Informacje jednostka kompilacji są dzielone między symbolami ze znacznikiem `SymTagCompiland` (niska szczegóły) i znacznikiem `SymTagCompilandDetails` (High detail). `SymTagCompilandDetails` wymaga załadowania dodatkowych symboli. Jednak zawiera mnóstwo informacji o jednostka kompilacji, które nie są dostępne z symbolem `SymTagCompiland`.
+Informacje jednostka kompilacji są dzielone między symbolami ze `SymTagCompiland` znacznikiem (Low detail) i `SymTagCompilandDetails` tagiem (High detail). `SymTagCompilandDetails`zawiera mnóstwo informacji o jednostka kompilacji, które nie są dostępne z `SymTagCompiland` symbolem.
 
 ## <a name="properties"></a>Właściwości
  W poniższej tabeli przedstawiono właściwości, które są prawidłowe dla tego typu symbolu.
@@ -31,17 +31,17 @@ Informacje jednostka kompilacji są dzielone między symbolami ze znacznikiem `S
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|Główny numer wersji kompilatora.|
 |[IDiaSymbol::get_backEndMinor](../../debugger/debug-interface-access/idiasymbol-get-backendminor.md)|`DWORD`|Wewnętrzny numer wersji kompilatora.|
 |[IDiaSymbol::get_compilerName](../../debugger/debug-interface-access/idiasymbol-get-compilername.md)|`BSTR`|Nazwa kompilatora, który wygenerował ten jednostka kompilacji (tylko w DIA SDK V 8.0 lub nowszym).|
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`, czy funkcja Edytuj i Kontynuuj została włączona podczas kompilacji.|
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Jeśli funkcja Edytuj i Kontynuuj została włączona podczas kompilacji.|
 |[IDiaSymbol::get_frontEndBuild](../../debugger/debug-interface-access/idiasymbol-get-frontendbuild.md)|`DWORD`|Numer kompilacji frontonu kompilatora.|
 |[IDiaSymbol::get_frontEndMajor](../../debugger/debug-interface-access/idiasymbol-get-frontendmajor.md)|`DWORD`|Główny numer wersji kompilatora.|
 |[IDiaSymbol::get_frontEndMinor](../../debugger/debug-interface-access/idiasymbol-get-frontendminor.md)|`DWORD`|Wewnętrzny numer wersji kompilatora.|
-|[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE`, jeśli ten jednostka kompilacji ma informacje debugowania (tylko w DIA SDK V 8.0 lub nowszym).|
-|[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE`, jeśli ten jednostka kompilacji zawiera kod zarządzany (tylko w DIA SDK v 8.0 lub nowszym).|
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE`, jeśli jednostka kompilacji został skompilowany za pomocą przełącznika kompilatora [/GS (buffer Security Check)](/cpp/build/reference/gs-buffer-security-check) (tylko w DIA SDK v 8.0 lub nowszym).|
-|[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE`, jeśli jednostka kompilacji został przekonwertowany ze wspólnego kodu języka pośredniego (CIL) na kod natywny.|
-|[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE`, jeśli typy zdefiniowane przez użytkownika (UDT) zostały wyrównane do określonej granicy pamięci (tylko w DIA SDK V 8.0 lub nowszym).|
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE`, jeśli jednostka kompilacji został skompilowany za pomocą przełącznika kompilatora [/hotpatch (Utwórz obraz możliwy do poprawiania)](/cpp/build/reference/hotpatch-create-hotpatchable-image) (tylko w DIA SDK v 8.0 lub nowszym).|
-|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` Jeśli jednostka kompilacji został skompilowany przy użyciu przełącznika kompilatora [/LTCG (generowanie kodu w czasie konsolidacji)](/cpp/build/reference/ltcg-link-time-code-generation) (tylko w DIA SDK v 8.0 lub nowszym).|
+|[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE`Jeśli ten jednostka kompilacji zawiera informacje debugowania (tylko w DIA SDK V 8.0 lub nowszym).|
+|[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE`Jeśli ten jednostka kompilacji zawiera kod zarządzany (tylko w DIA SDK v 8.0 lub nowszym).|
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE`Jeśli jednostka kompilacji został skompilowany za pomocą przełącznika kompilatora [/GS (buffer Security Check)](/cpp/build/reference/gs-buffer-security-check) (tylko w DIA SDK v 8.0 lub nowszym).|
+|[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE`Jeśli jednostka kompilacji został przekonwertowany ze wspólnego kodu języka pośredniego (CIL) na kod natywny.|
+|[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE`Jeśli typy zdefiniowane przez użytkownika (UDT) zostały wyrównane do określonej granicy pamięci (tylko w DIA SDK V 8.0 lub nowszym).|
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE`Jeśli jednostka kompilacji został skompilowany za pomocą przełącznika kompilatora [/hotpatch (Utwórz obraz możliwy do poprawiania)](/cpp/build/reference/hotpatch-create-hotpatchable-image) (tylko w DIA SDK v 8.0 lub nowszym).|
+|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE`Jeśli jednostka kompilacji zostały skompilowane przy użyciu przełącznika kompilatora [/LTCG (generowanie kodu w czasie konsolidacji)](/cpp/build/reference/ltcg-link-time-code-generation) (tylko w DIA SDK v 8.0 lub nowszym).|
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|`BOOL`|TRUE, jeśli jednostka kompilacji jest modułem języka pośredniego (MSIL) firmy Microsoft (tylko w DIA SDK v 8.0 lub nowszym).|
 |[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|`DWORD`|Język kodu źródłowego.|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol dla jednostka kompilacji.|
@@ -53,6 +53,6 @@ Informacje jednostka kompilacji są dzielone między symbolami ze znacznikiem `S
 ## <a name="remarks"></a>Uwagi
  Kompilatory często mają postać znaną jako kompilator dwuprzebiegowy; w niektórych wersjach kompilatora każdy przebieg jest obsługiwany przez osobny program. Są one znane odpowiednio jako kompilatory frontonu i zaplecza, dlatego Właściwości symboli dla numerów wersji zaplecza i frontonu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Jednostka kompilacji](../../debugger/debug-interface-access/compiland.md)
 - [Hierarchia leksykalna typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

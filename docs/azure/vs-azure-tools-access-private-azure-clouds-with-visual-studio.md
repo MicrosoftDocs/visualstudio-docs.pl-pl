@@ -1,45 +1,45 @@
 ---
 title: Uzyskiwanie dostępu do prywatnych chmur platformy Azure
-description: Dowiedz się, jak uzyskać dostęp do zasobów chmury prywatnej przy użyciu programu Visual Studio.
+description: Dowiedz się, jak uzyskać dostęp do zasobów chmury prywatnej za pomocą programu Visual Studio.
 author: ghogen
 manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 57f92aa797e589bd48cc52296b710617cbe8d732
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 6c1b46e34c688f232ee1f774ff2d19fdad7ff6bf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544370"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280391"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Uzyskiwanie dostępu do prywatnych chmur platformy Azure za pomocą programu Visual Studio
 
-Domyślnie visual studio obsługuje punkty końcowe REST w chmurze platformy Azure. W tym artykule dowiesz się, jak używać certyfikatu chmury prywatnej do uzyskiwania dostępu do chmury prywatnej i interakcji z nią z programu Visual Studio.
+Domyślnie program Visual Studio obsługuje punkty końcowe REST usługi Azure Cloud. W tym artykule dowiesz się, jak używać certyfikatu chmury prywatnej w celu uzyskania dostępu do chmury prywatnej z programu Visual Studio i korzystania z niej.
 
-1. W witrynie Azure portal dla chmury prywatnej pobierz plik ustawień publikowania lub skontaktuj się z administratorem w celu uzyskania pliku ustawień publikowania. (Plik ma rozszerzenie `.publishsettings`.)
+1. W Azure Portal chmury prywatnej Pobierz plik Publish-Settings lub skontaktuj się z administratorem w celu uzyskania pliku ustawień publikowania. (Plik ma rozszerzenie `.publishsettings` ).
 
-1. W **Eksploratorze programu**Visual Studio Server kliknij prawym przyciskiem myszy węzeł **platformy Azure** i wybierz pozycję **Zarządzaj subskrypcjami i filtruj**.
+1. W programie Visual Studio **Eksplorator serwera**kliknij prawym przyciskiem myszy węzeł **platformy Azure** , a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**.
 
-    ![Zarządzanie subskrypcjami, polecenie](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
+    ![Polecenie zarządzania subskrypcjami](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 
-1. W oknie **dialogowym Zarządzanie subskrypcjami platformy Microsoft Azure** wybierz kartę **Certyfikaty,** a następnie wybierz pozycję **Importuj**.
+1. W oknie dialogowym **Zarządzanie subskrypcjami Microsoft Azure** wybierz kartę **Certyfikaty** , a następnie wybierz pozycję **Importuj**.
 
     ![Importowanie certyfikatów platformy Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790779.png)
 
-1. W oknie dialogowym **Importowanie subskrypcji platformy Microsoft Azure** wybierz pozycję **Przeglądaj**.
+1. W oknie dialogowym **Importuj subskrypcje Microsoft Azure** wybierz pozycję **Przeglądaj**.
 
-    ![Przycisk Przeglądaj w oknie dialogowym Importowanie subskrypcji platformy Microsoft Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
+    ![Przycisk Przeglądaj w oknie dialogowym Importowanie subskrypcji Microsoft Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
 
-1. W oknie dialogowym **Otwórz** przejdź do katalogu, w którym zapisano plik ustawień publikowania, wybierz plik, a następnie wybierz pozycję **Otwórz**.
+1. W oknie dialogowym **Otwórz** przejdź do katalogu, w którym zapisano plik Publikuj-ustawienia, wybierz plik, a następnie wybierz pozycję **Otwórz**.
 
-    ![Wybieranie pliku ustawień publikowania](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
+    ![Wybierz plik Publish-Settings](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
 
-1. Po powrocie do okna dialogowego **Importowanie subskrypcji platformy Microsoft Azure** wybierz pozycję **Importuj**.
+1. Po powrocie do okna dialogowego **Importuj subskrypcje Microsoft Azure** wybierz pozycję **Importuj**.
 
-    ![Importowanie pliku ustawień publikowania](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
+    ![Importuj plik Publish-Settings](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
 
-    Certyfikaty są importowane z pliku ustawień publikowania do programu Visual Studio, a teraz można wchodzić w interakcje z zasobami chmury prywatnej.
+    Certyfikaty są importowane z pliku Publish-Settings do programu Visual Studio, a teraz można korzystać z zasobów w chmurze prywatnej.

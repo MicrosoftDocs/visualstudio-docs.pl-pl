@@ -1,19 +1,19 @@
 ---
 title: Co najmniej jeden wybrany obiekt bazy danych zwraca schemat, który nie jest zgodny ze schematem klasy docelowej
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24729d319d35ee400248a3f961d435e28eb38770
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c4bba0b227321e30f86aa552add245195b34e3b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113619"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281906"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Co najmniej jeden wybrany obiekt bazy danych zwraca schemat, który nie jest zgodny ze schematem klasy docelowej
 
@@ -27,6 +27,6 @@ Podczas przeciągania obiektów bazy danych do istniejących klas jednostek dane
 
 2. Wybierz obiekt bazy danych, który zwraca dane zgodne ze schematem klasy docelowej (Klasa, do której zostanie porzucony obiekt bazy danych w **projektancie o/R**).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

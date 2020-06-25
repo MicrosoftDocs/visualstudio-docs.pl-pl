@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: zapisywanie danych w transakcji'
 ms.date: 09/08/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586240"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281633"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Przewodnik: zapisywanie danych w transakcji
 
-W tym instruktażu przedstawiono sposób zapisywania danych w transakcji przy użyciu przestrzeni nazw <xref:System.Transactions>. W tym instruktażu utworzysz aplikację Windows Formsową. Użyjesz Kreatora konfiguracji źródła danych, aby utworzyć zestaw danych dla dwóch tabel w przykładowej bazie danych Northwind. Dodasz kontrolki powiązane z danymi do formularza systemu Windows, a następnie zmodyfikujesz kod dla przycisku zapisu BindingNavigator, aby zaktualizować bazę danych wewnątrz elementu TransactionScope.
+W tym instruktażu pokazano, jak zapisywać dane w transakcji przy użyciu <xref:System.Transactions> przestrzeni nazw. W tym instruktażu utworzysz aplikację Windows Formsową. Użyjesz Kreatora konfiguracji źródła danych, aby utworzyć zestaw danych dla dwóch tabel w przykładowej bazie danych Northwind. Dodasz kontrolki powiązane z danymi do formularza systemu Windows, a następnie zmodyfikujesz kod dla przycisku zapisu BindingNavigator, aby zaktualizować bazę danych wewnątrz elementu TransactionScope.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -42,7 +42,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -50,9 +50,9 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**.
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
-2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **Windows Desktop**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
@@ -62,7 +62,7 @@ Pierwszym krokiem jest utworzenie **aplikacji Windows Forms**.
 
 ## <a name="create-a-database-data-source"></a>Tworzenie źródła danych bazy danych
 
-Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utworzenia źródła danych opartego na `Customers` i `Orders` tabelach w przykładowej bazie danych Northwind.
+Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utworzenia źródła danych na podstawie `Customers` tabel i `Orders` w przykładowej bazie danych Northwind.
 
 1. Aby otworzyć okno **źródła danych** , w menu **dane** wybierz pozycję **Pokaż źródła danych**.
 
@@ -74,7 +74,7 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
     - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-         lub
+         -lub-
 
     - Wybierz pozycję **nowe połączenie** , aby uruchomić okno dialogowe **Dodawanie/modyfikowanie połączenia** i utworzyć połączenie z bazą danych Northwind.
 
@@ -84,9 +84,9 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
 7. Na ekranie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** .
 
-8. Zaznacz tabele `Customers` i `Orders`, a następnie wybierz pozycję **Zakończ**.
+8. Wybierz `Customers` tabele i `Orders` , a następnie wybierz pozycję **Zakończ**.
 
-     **NorthwindDataSet** jest dodawany do projektu, a tabele `Customers` i `Orders` są wyświetlane w oknie **źródła danych** .
+     **NorthwindDataSet** jest dodawany do projektu, a `Customers` `Orders` tabele i są wyświetlane w oknie **źródła danych** .
 
 ## <a name="add-controls-to-the-form"></a>Dodawanie kontrolek do formularza
 
@@ -96,15 +96,15 @@ Można utworzyć formanty powiązane z danymi, przeciągając elementy z okna **
 
 2. Przeciągnij główny węzeł **Customers** z okna **źródła danych** na **formularz Form1**.
 
-   Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawiają się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+   <xref:System.Windows.Forms.DataGridView>Kontrolka i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach pojawiają się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter` , <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawia się na pasku składnika.
 
 3. Przeciągnij węzeł powiązane **zamówienia** (nie główny węzeł **zamówienia** , ale węzeł powiązanej tabeli podrzędnej poniżej kolumny **faks** ) na formularzu poniżej **customersDataGridView**.
 
-   <xref:System.Windows.Forms.DataGridView> pojawi się w formularzu. `OrdersTableAdapter` i <xref:System.Windows.Forms.BindingSource> pojawiają się na pasku składnika.
+   <xref:System.Windows.Forms.DataGridView>Pojawia się w formularzu. `OrdersTableAdapter`I <xref:System.Windows.Forms.BindingSource> pojawia się na pasku składnika.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Dodawanie odwołania do zestawu System. Transactions
 
-Transakcje używają przestrzeni nazw <xref:System.Transactions>. Odwołanie projektu do zestawu System. Transactions nie jest domyślnie dodawane, więc należy je dodać ręcznie.
+Transakcje korzystają z <xref:System.Transactions> przestrzeni nazw. Odwołanie projektu do zestawu System. Transactions nie jest domyślnie dodawane, więc należy je dodać ręcznie.
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Aby dodać odwołanie do pliku DLL system. Transactions
 
@@ -116,7 +116,7 @@ Transakcje używają przestrzeni nazw <xref:System.Transactions>. Odwołanie pro
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Modyfikuj kod na przycisku SaveItem BindingNavigator
 
-W przypadku pierwszej tabeli opuszczonej w formularzu kod jest domyślnie dodawany do zdarzenia `click` przycisku Zapisz na <xref:System.Windows.Forms.BindingNavigator>. Musisz ręcznie dodać kod, aby zaktualizować wszystkie dodatkowe tabele. W tym instruktażu Refaktoryzacja istniejący kod Zapisz z programu obsługi zdarzeń kliknięcia przycisku Zapisz. Tworzymy również kilka metod, aby zapewnić określoną funkcję aktualizacji w zależności od tego, czy należy dodać czy usunąć wiersz.
+W przypadku pierwszej tabeli opuszczonej w formularzu kod jest domyślnie dodawany do `click` zdarzenia przycisku Zapisz w <xref:System.Windows.Forms.BindingNavigator> . Musisz ręcznie dodać kod, aby zaktualizować wszystkie dodatkowe tabele. W tym instruktażu Refaktoryzacja istniejący kod Zapisz z programu obsługi zdarzeń kliknięcia przycisku Zapisz. Tworzymy również kilka metod, aby zapewnić określoną funkcję aktualizacji w zależności od tego, czy należy dodać czy usunąć wiersz.
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>Aby zmodyfikować wygenerowany automatycznie kod zapisu
 
@@ -129,47 +129,47 @@ W przypadku pierwszej tabeli opuszczonej w formularzu kod jest domyślnie dodawa
 
 Kolejność uzgadniania zmian związanych z danymi jest następująca:
 
-- Usuń rekordy podrzędne. (W tym przypadku Usuń rekordy z tabeli `Orders`).
+- Usuń rekordy podrzędne. (W tym przypadku Usuń rekordy z `Orders` tabeli).
 
-- Usuń rekordy nadrzędne. (W tym przypadku Usuń rekordy z tabeli `Customers`).
+- Usuń rekordy nadrzędne. (W tym przypadku Usuń rekordy z `Customers` tabeli).
 
-- Wstaw rekordy nadrzędne. (W tym przypadku Wstaw rekordy w tabeli `Customers`).
+- Wstaw rekordy nadrzędne. (W tym przypadku Wstaw rekordy w `Customers` tabeli).
 
-- Wstaw rekordy podrzędne. (W tym przypadku Wstaw rekordy w tabeli `Orders`).
+- Wstaw rekordy podrzędne. (W tym przypadku Wstaw rekordy w `Orders` tabeli).
 
 ### <a name="to-delete-existing-orders"></a>Aby usunąć istniejące zamówienia
 
-- Dodaj następującą metodę `DeleteOrders` do **formularza Form1**:
+- Dodaj następującą `DeleteOrders` metodę do **formularza Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Aby usunąć istniejących klientów
 
-- Dodaj następującą metodę `DeleteCustomers` do **formularza Form1**:
+- Dodaj następującą `DeleteCustomers` metodę do **formularza Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Aby dodać nowych klientów
 
-- Dodaj następującą metodę `AddNewCustomers` do **formularza Form1**:
+- Dodaj następującą `AddNewCustomers` metodę do **formularza Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Aby dodać nowe zamówienia
 
-- Dodaj następującą metodę `AddNewOrders` do **formularza Form1**:
+- Dodaj następującą `AddNewOrders` metodę do **formularza Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-Naciśnij klawisz **F5**, aby uruchomić aplikację.
+Naciśnij klawisz **F5** , aby uruchomić aplikację.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: zapisywanie danych przy użyciu transakcji](../data-tools/save-data-by-using-a-transaction.md)
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

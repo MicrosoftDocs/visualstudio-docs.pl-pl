@@ -1,7 +1,7 @@
 ---
 title: Ustaw kontrolkę do utworzenia podczas przeciągania z okna źródła danych
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Data Sources Window, select controls
 - Windows Forms, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f5a3cf2d1f34ca9a3d0c2918a8f3f0a3e05260f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586188"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281542"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
 
@@ -37,7 +37,7 @@ W tym kontekście *obiekt* Term odnosi się do niestandardowego obiektu biznesow
 2. W oknie **źródła danych** wybierz element reprezentujący tabelę danych lub obiekt, który ma zostać ustawiony.
 
    > [!TIP]
-   > Jeśli okno **źródła danych** nie jest otwarte, możesz je otworzyć, wybierając opcję **wyświetl** > inne > **źródła danych** **systemu Windows** .
+   > Jeśli okno **źródła danych** nie jest otwarte, możesz je otworzyć, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
 
 3. Kliknij menu rozwijane dla elementu, a następnie kliknij jeden z następujących elementów w menu:
 
@@ -69,6 +69,6 @@ Przed przeciągnięciem elementu, który reprezentuje kolumnę lub właściwoś�
 
      Jeśli nie chcesz tworzyć kontrolki dla kolumny lub właściwości, wybierz **Brak** z menu rozwijanego. Jest to przydatne, jeśli chcesz przeciągnąć tabelę nadrzędną lub obiekt do projektanta, ale nie chcesz uwzględniać konkretnej kolumny lub właściwości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
