@@ -1,127 +1,127 @@
 ---
-title: Konfigurowanie zapory Windows w celu debugowania zdalnego | Dokumentacja firmy Microsoft
+title: Konfigurowanie zapory systemu Windows na potrzeby zdalnego debugowania | Microsoft Docs
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563724"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350696"
 ---
-# <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory Windows w celu debugowania zdalnego
+# <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego
 
-W sieci, chronione przez zaporę Windows zapory musi być skonfigurowany, aby zezwolić na zdalne debugowanie. Visual Studio i narzędzia do debugowania zdalnego próbuje otworzyć porty zapory podczas instalacji lub uruchomienia, ale może być również konieczne otwarcie portów lub aplikacjom ręcznie.
+W sieci chronionej przez zaporę systemu Windows zapora musi być skonfigurowana w taki sposób, aby zezwalała na debugowanie zdalne. Program Visual Studio i narzędzia zdalnego debugowania próbują otworzyć odpowiednie porty zapory podczas instalacji lub uruchamiania, ale może być również konieczne ręczne otwarcie portów lub zezwalanie na aplikacje ręcznie.
 
-W tym temacie opisano, jak skonfigurować zaporę Windows, aby włączyć zdalne debugowanie w systemie Windows 10, 8/8.1 i 7; i Windows Server 2012 R2, 2012 r. i 2008 R2 komputery. Visual Studio i komputerem zdalnym nie trzeba korzystać z tego samego systemu operacyjnego. Na przykład komputer z programem Visual Studio może działać system Windows 10 i komputer zdalny można uruchomić system Windows Server 2012 R2.
+W tym temacie opisano sposób konfigurowania zapory systemu Windows w celu umożliwienia zdalnego debugowania w systemie Windows 10, 8/8.1 i 7. Komputery z systemem Windows Server 2012 R2, 2012 i 2008 R2. Program Visual Studio i komputer zdalny nie muszą korzystać z tego samego systemu operacyjnego. Na przykład na komputerze z programem Visual Studio można uruchomić system Windows 10, a na komputerze zdalnym można uruchomić system Windows Server 2012 R2.
 
 >[!NOTE]
->Instrukcje dotyczące konfigurowania zapory Windows się nieznacznie różnić w różnych systemach operacyjnych i dla starszych wersji systemu Windows. Ustawienia systemu Windows 8/8.1, Windows 10 i Windows Server 2012 należy użyć słowa *aplikacji*, podczas gdy Windows 7 i Windows Server 2008 należy użyć słowa *program*.
+>Instrukcje dotyczące konfigurowania zapory systemu Windows różnią się nieco w różnych systemach operacyjnych i w przypadku starszych wersji systemu Windows. Ustawienia systemu Windows 8/8.1, Windows 10 i Windows Server 2012 używają *aplikacji*Word, a systemy Windows 7 i windows Server 2008 używają *programu*Word.
 
-## <a name="configure-ports-for-remote-debugging"></a>Skonfiguruj porty dla zdalnego debugowania
+## <a name="configure-ports-for-remote-debugging"></a>Konfigurowanie portów do zdalnego debugowania
 
-Program Visual Studio i zdalnym debugerem spróbuj otworzyć porty podczas instalacji lub uruchomienia. Jednak w niektórych scenariuszach, takich jak zapory innych firm, może być konieczne ręcznie otworzyć porty.
+Program Visual Studio i zdalny debuger próbują otworzyć odpowiednie porty podczas instalacji lub uruchamiania. Jednak w niektórych scenariuszach, takich jak zapora innej firmy, może być konieczne ręczne otwarcie portów.
 
 **Aby otworzyć port:**
 
-1. W Windows **Start** menu Wyszukaj i Otwórz **Zapora Windows z zabezpieczeniami zaawansowanymi**. W systemie Windows 10 to **zapory Windows Defender z zabezpieczeniami zaawansowanymi**.
+1. W menu **Start** systemu Windows wyszukaj i Otwórz **zaporę systemu Windows z zabezpieczeniami zaawansowanymi**. W systemie Windows 10 jest to **Zapora Windows Defender z zabezpieczeniami zaawansowanymi**.
 
-1. Wybierz nowy port przychodzący **reguły ruchu przychodzącego** , a następnie wybierz **nową regułę**. Wychodzące reguły, wybierz **reguł dla ruchu wychodzącego** zamiast tego.
+1. W przypadku nowego portu przychodzącego wybierz pozycję **reguły ruchu przychodzącego** , a następnie wybierz pozycję **Nowa reguła**. Dla reguły wychodzącej wybierz zamiast nich **reguły ruchu wychodzącego** .
 
-1. W **Kreatora nowej reguły przychodzącej**, wybierz opcję **portu**, a następnie wybierz pozycję **dalej**.
+1. W **kreatorze Nowa reguła ruchu przychodzącego**wybierz pozycję **port**, a następnie wybierz pozycję **dalej**.
 
-1. Wybierz opcję **TCP** lub **UDP**, w zależności od numeru portu z następujących tabel.
+1. Wybierz opcję **TCP** lub **UDP**, w zależności od numeru portu z poniższych tabel.
 
-1. W obszarze **określone porty lokalne**, wprowadź numer portu z następujących tabel i wybierz **dalej**.
+1. W obszarze **określone porty lokalne**wprowadź numer portu z poniższych tabel, a następnie wybierz przycisk **dalej**.
 
-1. Wybierz **Zezwalaj na połączenie**, a następnie wybierz pozycję **dalej**.
+1. Wybierz opcję **Zezwalaj na połączenie**, a następnie wybierz przycisk **dalej**.
 
-1. Wybierz co najmniej jeden typ sieci, aby włączyć, łącznie z typem sieci dla połączenia zdalnego, a następnie wybierz **dalej**.
+1. Wybierz co najmniej jeden typ sieci do włączenia, w tym typ sieci dla połączenia zdalnego, a następnie wybierz przycisk **dalej**.
 
-1. Dodaj nazwę reguły (na przykład **msvsmon**, **usług IIS**, lub **narzędzia Web Deploy**), a następnie wybierz pozycję **Zakończ**.
+1. Dodaj nazwę reguły (na przykład **msvsmon**, **IIS**lub **Web Deploy**), a następnie wybierz pozycję **Zakończ**.
 
-   Nowa reguła powinny być wyświetlane i można wybrać w **reguły ruchu przychodzącego** lub **reguł dla ruchu wychodzącego** listy.
+   Nowa reguła powinna zostać wyświetlona i wybrana na liście **reguły ruchu przychodzącego** lub **reguły wychodzące** .
 
-### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porty na komputerze zdalnym, na które Włączanie debugowania zdalnego
+### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porty na komputerze zdalnym, które umożliwiają debugowanie zdalne
 
-Zdalne debugowanie, muszą być otwarte na komputerze zdalnym następujące porty:
+W przypadku zdalnego debugowania na komputerze zdalnym muszą być otwarte następujące porty:
 
 ::: moniker range="vs-2017"
 
-|**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|
+|**Porty**|**Przychodzące/wychodzące**|**Protokół**|**Opis**|
 |-|-|-|-|
-|4022|przychodzące|TCP|Dla programu VS 2017. Zwiększa numer portu przez 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
-|4023|przychodzące|TCP|Dla programu VS 2017. Zwiększa numer portu przez 2 dla każdej wersji programu Visual Studio. Ten port jest tylko używany do zdalnego debugowania 32-bitowy proces z 64-bitowej wersji zdalnego debugera. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
-|3702|Wychodzące|UDP|(Opcjonalnie) Wymagana w przypadku odnajdywania zdalnego debugera.|
+|4022|Dane|TCP|Dla programu VS 2017. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4023|Dane|TCP|Dla programu VS 2017. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Ten port jest używany tylko do zdalnego debugowania procesu 32-bitowego z 64-bitowej wersji zdalnego debugera. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|3702|Przeznaczony|UDP|Obowiązkowe Wymagane do zdalnego odnajdowania debugera.|
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-|**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|
+|**Porty**|**Przychodzące/wychodzące**|**Protokół**|**Opis**|
 |-|-|-|-|
-|4024|przychodzące|TCP|For VS 2019. Zwiększa numer portu przez 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
-|4025|przychodzące|TCP|For VS 2019. Zwiększa numer portu przez 2 dla każdej wersji programu Visual Studio. Ten port jest tylko używany do zdalnego debugowania 32-bitowy proces z 64-bitowej wersji zdalnego debugera. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
-|3702|Wychodzące|UDP|(Opcjonalnie) Wymagana w przypadku odnajdywania zdalnego debugera.|
+|4024|Dane|TCP|Dla programu VS 2019. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4025|Dane|TCP|Dla programu VS 2019. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Ten port jest używany tylko do zdalnego debugowania procesu 32-bitowego z 64-bitowej wersji zdalnego debugera. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|3702|Przeznaczony|UDP|Obowiązkowe Wymagane do zdalnego odnajdowania debugera.|
 
 ::: moniker-end
 
-Jeśli wybierzesz **Użyj trybu zgodności zarządzanej** w obszarze **narzędzia** > **opcje** > **debugowanie**, otwórz porty te dodatkowe zdalnego debugera. Trybu zgodności zarządzanej debuger umożliwia starszej wersji, wersji debugera programu Visual Studio 2010.
+W przypadku wybrania opcji **Użyj zarządzanego trybu zgodności** w obszarze **Narzędzia**  >  **Options**  >  **debugowanie**, otwórz te dodatkowe porty zdalnego debugera. Tryb zgodności zarządzany przez debuger umożliwia używanie starszej wersji programu Visual Studio 2010 debugera.
 
-|**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|
+|**Porty**|**Przychodzące/wychodzące**|**Protokół**|**Opis**|
 |-|-|-|-|
-|135, 139, 445|Wychodzące|TCP|Wymagana.|
-|137, 138|Wychodzące|UDP|Wymagana.|
+|135, 139, 445|Przeznaczony|TCP|Wymagany.|
+|137, 138|Przeznaczony|UDP|Wymagany.|
 
-Jeśli zasady domeny wymaga komunikacji sieciowej, można wykonać przy użyciu protokołu IPSec, należy otworzyć dodatkowych portów w programie Visual Studio i komputer zdalny. Aby debugować na zdalnym serwerze sieci web usług IIS, należy otworzyć port 80 na komputerze zdalnym.
+Jeśli zasady domeny wymagają komunikacji sieciowej za pomocą protokołu IPSec, należy otworzyć dodatkowe porty zarówno dla programu Visual Studio, jak i komputerów zdalnych. Aby debugować na zdalnym serwerze sieci Web usług IIS, otwórz port 80 na komputerze zdalnym.
 
-|**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|
+|**Porty**|**Przychodzące/wychodzące**|**Protokół**|**Opis**|
 |-|-|-|-|
-|500, 4500|Wychodzące|UDP|Wymagane, jeśli zasady domeny wymaga komunikacji sieciowej, można wykonać przy użyciu protokołu IPSec.|
-|80|Wychodzące|TCP|Wymagane na potrzeby debugowania na serwerze sieci web.|
+|500, 4500|Przeznaczony|UDP|Wymagane, jeśli zasady domeny wymagają komunikacji sieciowej za poorednictwem protokołu IPSec.|
+|80|Przeznaczony|TCP|Wymagane do debugowania serwera sieci Web.|
 
-Aby zezwolić na wybrane aplikacje przez zaporę Windows, zobacz [Konfiguruj zdalne debugowanie przez zaporę Windows](#configure-remote-debugging-through-windows-firewall).
+Aby zezwolić na określone aplikacje za pomocą zapory systemu Windows, zobacz [Konfigurowanie zdalnego debugowania za pomocą zapory systemu Windows](#configure-remote-debugging-through-windows-firewall).
 
-## <a name="configure-remote-debugging-through-windows-firewall"></a>Konfiguruj zdalne debugowanie przez zaporę Windows
+## <a name="configure-remote-debugging-through-windows-firewall"></a>Konfigurowanie zdalnego debugowania za poorednictwem zapory systemu Windows
 
-Możesz zainstalować narzędzia do debugowania zdalnego na komputerze zdalnym lub uruchomić je z folderem udostępnionym. W obu przypadkach zapory na komputerze zdalnym musi być prawidłowo skonfigurowane.
+Narzędzia zdalnego debugowania można zainstalować na komputerze zdalnym lub uruchomić je z folderu udostępnionego. W obu przypadkach Zapora komputera zdalnego musi być poprawnie skonfigurowana.
 
-Na komputerze zdalnym narzędzia do debugowania zdalnego należą:
+Na komputerze zdalnym narzędzia debugowania zdalnego znajdują się w:
 
-*\<Katalog instalacyjny usługi Visual Studio\>\\Common7\\IDE\\zdalny debuger\\\<x86*, *x64*, lub  *Pakiet Appx*\>
+*\<Visual Studio installation directory\>\\\\ \\ Zdalny debuger IDE Common7\\\<x86*, *x64*, or *Appx*\>
 
-### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Zezwalaj na i skonfigurować zdalny debuger przez zaporę Windows
+### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Zezwalaj i Konfiguruj zdalny debuger za pomocą zapory systemu Windows
 
-1. W Windows **Start** menu Wyszukaj i Otwórz **zapory Windows**, lub **zapory Windows Defender**.
+1. W menu **Start** systemu Windows wyszukaj i Otwórz **zaporę systemu Windows**lub **zaporę Windows Defender**.
 
-1. Wybierz **zezwolenie aplikacji przez zaporę Windows**.
+1. Wybierz pozycję **Zezwalaj aplikacji za poorednictwem zapory systemu Windows**.
 
-1. Jeśli **zdalny debuger** lub **zdalny debuger programu Visual Studio** nie pojawia się w obszarze **dozwolone aplikacje i funkcje**, wybierz opcję **zmiany ustawień**, a następnie wybierz pozycję **Zezwalaj na inną aplikację**.
+1. Jeśli **zdalny debuger** lub **zdalny debuger programu Visual Studio** nie jest wyświetlany w obszarze **dozwolone aplikacje i funkcje**, wybierz pozycję **Zmień ustawienia**, a następnie wybierz pozycję **Zezwalaj na inną aplikację**.
 
-1. Jeśli aplikację zdalny debuger nadal nie jest wymieniony w **Dodaj aplikację** okno dialogowe, wybierz opcję **Przeglądaj**i przejdź do  *\<katalogu instalacyjnego programu Visual Studio\> \\Common7\\IDE\\zdalny debuger\\\<x86*, *x64*, lub *Appx* \> , w zależności od architektury właściwej dla aplikacji. Wybierz *msvsmon.exe*, a następnie wybierz pozycję **Dodaj**.
+1. Jeśli aplikacja Remote Debugger nadal nie znajduje się na liście w oknie dialogowym **Dodawanie aplikacji** , wybierz pozycję **Przeglądaj**, a następnie przejdź do opcji * \<Visual Studio installation directory\> \\ \\ \\ zdalny debuger IDE Common7 \\ \<x86*, *x64*, or *Appx*\> , w zależności od odpowiedniej architektury aplikacji. Wybierz pozycję *msvsmon.exe*, a następnie wybierz pozycję **Dodaj**.
 
-1. W **aplikacje** listy wybierz **zdalny debuger** , który właśnie został dodany. Wybierz **typy sieci**, a następnie wybierz jeden lub więcej typów sieci, w tym typ sieci dla połączenia zdalnego.
+1. Z listy **aplikacje** wybierz **zdalny debuger** , który właśnie został dodany. Wybierz pozycję **typy sieci**, a następnie wybierz jeden lub więcej typów sieci, w tym typ sieci dla połączenia zdalnego.
 
-1. Wybierz **Dodaj**, a następnie wybierz pozycję **OK**.
+1. Wybierz pozycję **Dodaj**, a następnie wybierz pozycję **OK**.
 
-## <a name="troubleshooting"></a>Rozwiązywanie problemów z połączenia zdalnego debugowania
+## <a name="troubleshoot-the-remote-debugging-connection"></a><a name="troubleshooting"></a>Rozwiązywanie problemów z połączeniem debugowania zdalnego
 
-Jeśli nie można dołączyć do aplikacji, za pomocą debugera zdalnego, upewnij się, zdalnego debugowania porty zapory protokoły, typów sieci i ustawienia aplikacji są poprawne.
+Jeśli nie możesz dołączyć do aplikacji ze zdalnym debugerem, upewnij się, że porty zapory zdalnego debugowania, protokoły, typy sieci i ustawienia aplikacji są poprawne.
 
-- W Windows **Start** menu Wyszukaj i Otwórz **zapory Windows**i wybierz **zezwolenie aplikacji przez zaporę Windows**. Upewnij się, że **zdalny debuger** lub **zdalny debuger programu Visual Studio** pojawia się w **dozwolone aplikacje i funkcje** są listy zaznaczone pole wyboru i typy odpowiedniej sieci wybrany. W przeciwnym razie [Dodaj odpowiednie aplikacje i ustawienia](#configure-remote-debugging-through-windows-firewall).
+- W menu **Start** systemu Windows wyszukaj i Otwórz **zaporę systemu Windows**, a następnie wybierz opcję **Zezwalaj aplikacji za pomocą zapory systemu Windows**. Upewnij się, że **zdalny debuger** lub **zdalny debuger programu Visual Studio** pojawia się na liście **dozwolone aplikacje i funkcje** z zaznaczonym polem wyboru, a wybrane są odpowiednie typy sieci. W przeciwnym razie [Dodaj poprawne aplikacje i ustawienia](#configure-remote-debugging-through-windows-firewall).
 
-- W Windows **Start** menu Wyszukaj i Otwórz **Zapora Windows z zabezpieczeniami zaawansowanymi**. Upewnij się, że **zdalny debuger** lub **zdalny debuger programu Visual Studio** pojawia się w obszarze **reguły ruchu przychodzącego** (i, opcjonalnie, **reguł dla ruchu wychodzącego**) za pomocą Ikona zielonego znacznika wyboru, a wszystkie ustawienia są poprawne.
+- W menu **Start** systemu Windows wyszukaj i Otwórz **zaporę systemu Windows z zabezpieczeniami zaawansowanymi**. Upewnij się, że **zdalny debuger** lub **zdalny debuger programu Visual Studio** pojawia się w obszarze **reguły ruchu przychodzącego** (i opcjonalnie **reguły ruchu wychodzącego**) z zieloną ikoną znacznika wyboru i że wszystkie ustawienia są poprawne.
 
-  - Aby wyświetlić lub zmienić ustawienia reguł, kliknij prawym przyciskiem myszy **zdalny debuger** aplikacji na liście i wybierz **właściwości**. Użyj **właściwości** kart, aby włączyć lub wyłączyć zasadę lub zmienić port liczb, protokołów lub typów sieci.
-  - Jeśli aplikację zdalny debuger nie jest wyświetlana na liście reguł [dodać i skonfigurować odpowiednie porty](#configure-ports-for-remote-debugging).
+  - Aby wyświetlić lub zmienić ustawienia reguły, kliknij prawym przyciskiem myszy aplikację **Remote Debugger** na liście i wybierz pozycję **Właściwości**. Karta **Właściwości** służy do włączania lub wyłączania reguły, zmieniania numerów portów, protokołów lub typów sieci.
+  - Jeśli zdalna aplikacja debugera nie pojawia się na liście reguł, [Dodaj i skonfiguruj odpowiednie porty](#configure-ports-for-remote-debugging).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
 - [Przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md)

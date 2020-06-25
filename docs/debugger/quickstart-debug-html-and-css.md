@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kodu HTML i CSS w aplikacjach platformy UWP | Microsoft Docs
 ms.date: 07/17/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568919"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348265"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie kodu HTML i CSS w aplikacjach platformy UWP w programie Visual Studio
 
@@ -32,7 +32,7 @@ Korzystając z interaktywnego modelu debugowania dostarczonego przez narzędzia 
 
 Aby uzyskać informacje o innych funkcjach debugowania JavaScript, takich jak korzystanie z okna konsoli języka JavaScript i ustawianie punktów przerwania, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="InspectingDOM"></a>Sprawdzanie aktywnego modelu DOM
+## <a name="inspecting-the-live-dom"></a><a name="InspectingDOM"></a>Sprawdzanie aktywnego modelu DOM
 DOM Explorer przedstawia widok renderowanej strony i można użyć DOM Explorer, aby zmienić wartości i natychmiast zobaczyć wyniki. Dzięki temu można testować zmiany bez zatrzymywania i ponownego uruchamiania debugera. Kod źródłowy w projekcie nie zmienia się podczas pracy ze stroną przy użyciu tej metody, więc po znalezieniu żądanych korekt kodu wprowadzasz zmiany w kodzie źródłowym.
 
 > [!TIP]
@@ -49,22 +49,22 @@ DOM Explorer można użyć do:
   Podczas debugowania aplikacji często trzeba wybrać elementy w DOM Explorer. Po wybraniu elementu wartości, które pojawiają się na kartach po prawej stronie DOM Explorer są automatycznie aktualizowane w celu odzwierciedlenia zaznaczonego elementu w DOM Explorer. Oto karty: **Style**, **obliczone**, **Układ**. Aplikacje platformy UWP obsługują również karty **zdarzenia** i **zmiany** . Aby uzyskać więcej informacji na temat wybierania elementów, zobacz [Wybieranie elementów](#SelectingElements).
 
 > [!TIP]
-> Jeśli okno DOM Explorer jest zamknięte, wybierz **debuguj**>**Windows** > **dom Explorer** , aby go ponownie otworzyć. Okno pojawia się tylko podczas sesji debugowania skryptu.
+> Jeśli okno dom Explorer jest zamknięte, wybierz **Debuguj** > **Windows**  >  **dom Explorer** Windows, aby je ponownie otworzyć. Okno pojawia się tylko podczas sesji debugowania skryptu.
 
-W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy użyciu DOM Explorer. Utworzymy aplikację, która używa kontrolki `FlipView`, a następnie ją debuguje. Aplikacja zawiera kilka błędów.
+W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy użyciu DOM Explorer. Utworzymy aplikację, która używa `FlipView` kontrolki, a następnie ją debuguje. Aplikacja zawiera kilka błędów.
 
 > [!WARNING]
 > Następująca przykładowa aplikacja jest aplikacją platformy UWP. Te same funkcje są obsługiwane przez oprogramowanie Cordova, ale aplikacja byłaby inna.
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Aby debugować za pomocą inspekcji na żywo modelu DOM
 
-1. Utwórz nowe rozwiązanie w programie Visual Studio, wybierając kolejno pozycje **plik** > **Nowy projekt**.
+1. Utwórz nowe rozwiązanie w programie Visual Studio, wybierając pozycję **plik**  >  **Nowy projekt**.
 
-2. Wybierz pozycję **JavaScript** > **uniwersalnym systemu Windows**, a następnie wybierz pozycję **aplikacja WinJS**.
+2. Wybierz **język JavaScript**  >  **systemu Windows uniwersalny**, a następnie wybierz pozycję **aplikacja WinJS**.
 
-3. Wpisz nazwę projektu, na przykład `FlipViewApp`, a następnie wybierz **przycisk OK** , aby utworzyć aplikację.
+3. Wpisz nazwę projektu, na przykład `FlipViewApp` , i wybierz **przycisk OK** , aby utworzyć aplikację.
 
-4. W elemencie BODY pliku index. html Dodaj następujący kod:
+4. W elemencie BODY index.html Dodaj następujący kod:
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -90,7 +90,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
     }
     ```
 
-6. Zastąp kod w domyślnym. js tym kodem:
+6. Zastąp kod w default.js tym kodem:
 
     ```javascript
     (function () {
@@ -149,21 +149,21 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
     ![Wybierz listę obiektów docelowych debugowania](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Wybierz **debuguj** > **Rozpocznij debugowanie**lub naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.
+8. Wybierz **Debuguj**  >  **Rozpocznij debugowanie**lub naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.
 
-    Spowoduje to uruchomienie aplikacji, ale widzisz na większości pusty ekran, ponieważ styl zawiera kilka błędów. Pierwszy `FlipView` obraz pojawia się w małym kwadracie obok środka ekranu.
+    Spowoduje to uruchomienie aplikacji, ale widzisz na większości pusty ekran, ponieważ styl zawiera kilka błędów. Pierwszy `FlipView` obraz jest wyświetlany w małym kwadracie obok środka ekranu.
 
 9. Przejdź do programu Visual Studio i wybierz kartę **dom Explorer** .
 
     > [!TIP]
     > Możesz nacisnąć klawisze ALT + TAB lub F12, aby przełączać się między programem Visual Studio i uruchomioną aplikacją.
 
-10. W oknie DOM Explorer wybierz element DIV dla sekcji o IDENTYFIKATORze `"fView"`. Użyj klawiszy strzałek, aby wyświetlić i wybrać poprawny element DIV. (Klawisz Strzałka w prawo umożliwia wyświetlenie elementów podrzędnych elementu).
+10. W oknie DOM Explorer wybierz element DIV dla sekcji o IDENTYFIKATORze `"fView"` . Użyj klawiszy strzałek, aby wyświetlić i wybrać poprawny element DIV. (Klawisz Strzałka w prawo umożliwia wyświetlenie elementów podrzędnych elementu).
 
-    ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")
+    ![Eksplorator DOM](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")
 
     > [!TIP]
-    > Możesz również wybrać element DIV w lewym dolnym rogu okna konsoli JavaScript, wpisując `select(fView)` w monicie > > Input, a następnie naciskając klawisz ENTER.
+    > Możesz również wybrać element DIV w lewym dolnym rogu okna konsoli JavaScript, wpisując `select(fView)` w wierszu polecenia >> Input i naciskając klawisz ENTER.
 
     Wartości, które pojawiają się na kartach po prawej stronie okna DOM Explorer są automatycznie aktualizowane w celu odzwierciedlenia bieżącego elementu w DOM Explorer.
 
@@ -171,26 +171,26 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
     Na tej karcie są wyświetlane wartości obliczone lub końcowe dla każdej właściwości wybranego elementu DOM.
 
-12. Otwórz regułę CSS height. Zwróć uwagę, że istnieje styl wbudowany ustawiony na 100px, który jest niespójny z wartością wysokości 100% ustawioną dla selektora `#fView` CSS. Tekst przekreślony dla selektora `#fView` wskazuje, że styl wbudowany ma pierwszeństwo przed tym stylem.
+12. Otwórz regułę CSS height. Zwróć uwagę, że istnieje styl wbudowany ustawiony na 100px, który jest niespójny z wartością wysokości 100% ustawioną dla `#fView` selektora CSS. Tekst przekreślony dla `#fView` selektora wskazuje, że styl wbudowany ma pierwszeństwo przed tym stylem.
 
     Na poniższej ilustracji przedstawiono kartę **obliczaną** .
 
     ![Karta obliczana DOM Explorer](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")
 
-13. W oknie głównym DOM Explorer kliknij dwukrotnie styl wbudowany dla wysokości i szerokości elementu `fView` DIV. Teraz można edytować wartości w tym miejscu. W tym scenariuszu chcemy usunąć je całkowicie.
+13. W oknie głównym DOM Explorer kliknij dwukrotnie styl wbudowany dla wysokości i szerokości `fView` elementu DIV. Teraz można edytować wartości w tym miejscu. W tym scenariuszu chcemy usunąć je całkowicie.
 
-14. W oknie głównym kliknij dwukrotnie `width: 100px;height: 100px;`, naciśnij klawisz **delete** , a następnie naciśnij klawisz **Enter**. Po naciśnięciu klawisza ENTER nowe wartości zostaną natychmiast odzwierciedlone w aplikacji, mimo że sesja debugowania nie została zatrzymana.
+14. W oknie głównym kliknij dwukrotnie, `width: 100px;height: 100px;` naciśnij klawisz **delete** , a następnie naciśnij klawisz **Enter**. Po naciśnięciu klawisza ENTER nowe wartości zostaną natychmiast odzwierciedlone w aplikacji, mimo że sesja debugowania nie została zatrzymana.
 
     > [!IMPORTANT]
     > Jak można aktualizować atrybuty w oknie DOM Explorer, można także aktualizować wartości, które są wyświetlane na kartach **Style**, **obliczone**i **Układ** .
 
 15. Przejdź do aplikacji, wybierając ją lub używając kombinacji klawiszy Alt + Tab.
 
-    Teraz formant `FlipView` jest wyświetlany w rozmiarze większym niż rozmiar ekranu lub na ekranie emulatora telefonu. To nie jest zamierzony wynik. Aby zbadać, przełącz się z powrotem do programu Visual Studio.
+    Teraz `FlipView` formant jest wyświetlany w rozmiarze większym niż rozmiar ekranu lub na ekranie emulatora telefonu. To nie jest zamierzony wynik. Aby zbadać, przełącz się z powrotem do programu Visual Studio.
 
-16. W DOM Explorer wybierz ponownie kartę **obliczoną** i Otwórz regułę wysokości. Element fView nadal zawiera wartość 100%, zgodnie z oczekiwaniami, ale obliczona wartość jest równa wysokości ekranu aplikacji (na przykład 800px, 667.67 px lub inną wartość), co nie jest oczekiwane dla tej aplikacji. Aby zbadać, w następnych krokach usuniemy wysokość i Szerokość elementu `fView` DIV.
+16. W DOM Explorer wybierz ponownie kartę **obliczoną** i Otwórz regułę wysokości. Element fView nadal zawiera wartość 100%, zgodnie z oczekiwaniami, ale obliczona wartość jest równa wysokości ekranu aplikacji (na przykład 800px, 667.67 px lub inną wartość), co nie jest oczekiwane dla tej aplikacji. Aby zbadać, w następnych krokach usuniemy wysokość i szerokość `fView` elementu DIV.
 
-17. Na karcie **Style** Usuń zaznaczenie właściwości Height i Width dla selektora `#fView` CSS.
+17. Na karcie **Style** Usuń zaznaczenie pola właściwości wysokość i szerokość dla `#fView` selektora CSS.
 
     Karta **obliczona** zawiera teraz wysokość 400px. Informacje wskazują, że ta wartość pochodzi z selektora. win-FlipView określonej w UI-Dark. CSS, czyli pliku CSS platformy.
 
@@ -210,7 +210,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
       To nie jest właściwe. Karta **obliczona** zawiera również te same wartości marginesów.
 
-20. Wybierz kartę **Style** i znajdź SELEKTOR `#fView` CSS. W tym miejscu zostanie wyświetlona wartość 25% dla właściwości **Margin** .
+20. Wybierz kartę **Style** i Znajdź `#fView` Selektor CSS. W tym miejscu zostanie wyświetlona wartość 25% dla właściwości **Margin** .
 
 21. Wybierz 25% i zmień go na 25px, a następnie naciśnij klawisz ENTER.
 
@@ -222,7 +222,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
 1. Gdy aplikacja jest nadal uruchomiona, przełącz się do programu Visual Studio.
 
-2. Otwórz plik default. html i zmodyfikuj swój kod źródłowy, zmieniając wysokość i Szerokość elementu `"fView"` DIV na 100%.
+2. Otwórz default.html i zmodyfikuj kod źródłowy, zmieniając wysokość i szerokość `"fView"` elementu DIV na 100%.
 
 3. Wybierz przycisk **Odśwież aplikację systemu Windows** na pasku narzędzi debugowania (lub naciśnij klawisz F4). Przycisk jest podobny do tego: ![Odśwież przycisk aplikacji systemu Windows](../debugger/media/js_refresh.png "JS_Refresh").
 
@@ -230,14 +230,14 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
     Aby uzyskać więcej informacji na temat funkcji odświeżania, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md).
 
-## <a name="SelectingElements"></a>Wybieranie elementów
+## <a name="selecting-elements"></a><a name="SelectingElements"></a>Wybieranie elementów
 W przypadku debugowania aplikacji można wybrać elementy DOM na trzy sposoby:
 
 - Klikając elementy bezpośrednio w oknie DOM Explorer (lub za pomocą klawiszy strzałek).
 
 - Za pomocą przycisku **Wybierz element** (Ctrl + B).
 
-- Za pomocą polecenia `select`, które jest jednym z [poleceń konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
+- Za pomocą `select` polecenia, które jest jednym z [poleceń konsoli JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
 
   Gdy używasz okna DOM Explorer do zaznaczania elementów i umieścisz wskaźnik myszy na elemencie, odpowiadający element zostanie wyróżniony w działającej aplikacji. Należy kliknąć element w DOM Explorer, aby go zaznaczyć, lub użyć klawiszy strzałek, aby wyróżnić i wybrać elementy. Możesz również wybrać elementy w DOM Explorer przy użyciu przycisku **Wybierz element** . Na poniższej ilustracji przedstawiono przycisk **Wybierz element** .
 
@@ -254,7 +254,7 @@ W przypadku debugowania aplikacji można wybrać elementy DOM na trzy sposoby:
 > [!NOTE]
 > Wyróżnianie elementów przez umieszczenie ich nad nimi jest tylko częściowo obsługiwane w emulatorze Windows Phone.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)

@@ -1,7 +1,7 @@
 ---
 title: Znajdź uruchomiony proces ASP.NET | Microsoft Docs
 ms.date: 11/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,31 +16,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 54aa98dd238d7a78e4ae89af05dceae0f9911478
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: c14067d58289dd0b41fa526937a0553c10934ea7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187656"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349610"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Znajdowanie nazwy procesu ASP.NET
 
-Aby debugować działającą aplikację [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debuger programu Visual Studio musi dołączyć do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu według nazwy.
+Aby debugować uruchomioną [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikację, debuger programu Visual Studio musi dołączyć do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu według nazwy.
 
 **Aby dowiedzieć się, który proces ma uruchomioną aplikację ASP.NET:**
 
-1. Po uruchomieniu aplikacji w programie Visual Studio wybierz kolejno opcje **debuguj** > **Dołącz do procesu**.
+1. Po uruchomieniu aplikacji w programie Visual Studio wybierz pozycję **Debuguj**  >  **Dołącz do procesu**.
 
 1. W oknie dialogowym **Dołącz do procesu** wpisz pierwsze litery nazw procesów z poniższej listy lub wprowadź je w polu wyszukiwania. Uruchomiona aplikacja ASP.NET jest uruchomiona. Dołącz do tego procesu, aby debugować aplikację.
 
-    - *w3wp. exe* to IIS 6,0 i nowsze.
-    - *Proces aspnet_wp. exe* jest wcześniejszą wersją usług IIS.
-    - *iisexpress. exe* to iisexpress.
-    - ASP.NET Core.
-    - *Inetinfo. exe* to starsze aplikacje ASP działające w procesie.
+    - *w3wp.exe* to IIS 6,0 i nowsze.
+    - *aspnet_wp.exe* jest wcześniejszymi wersjami usług IIS.
+    - *iisexpress.exe* jest IISExpress.
+    - *dotnet.exe* jest ASP.NET Core.
+    - *inetinfo.exe* to starsze aplikacje ASP działające w procesie.
 
 >[!NOTE]
->Program Visual Studio 2012 i jego wcześniejszy kod [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mogą znajdować się w systemie plików i działać na serwerze testowym *webdev. WebServer. exe* lub *webdev. WebServer40. exe*. W tym przypadku do lokalnego debugowania należy dołączyć do *webdev. WebServer. exe* lub *webdev. WebServer40. exe* zamiast procesu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+>Program Visual Studio 2012 i jego starszy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Kod mogą znajdować się w systemie plików i działać na serwerze testowym *WebDev.WebServer.exe* lub *WebDev.WebServer40.exe*. W tym przypadku do lokalnego debugowania należy dołączyć do *WebDev.WebServer.exe* lub *WebDev.WebServer40.exe* zamiast [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu.
 
 **Zobacz również:**
 

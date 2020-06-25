@@ -268,4 +268,4 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 
 - [Zadania wbudowane](../msbuild/msbuild-inline-tasks.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Celach](../msbuild/msbuild-targets.md)
+- [Obiekty docelowe](../msbuild/msbuild-targets.md)

@@ -1,8 +1,8 @@
 ---
-title: Wyświetlanie kodu dezasemblacji w debugerze | Dokumentacja firmy Microsoft
+title: Wyświetlanie kodu demontażu w debugerze | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -22,55 +22,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43214ee122b3aa5c3907b9176631f2dc22c9178e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846393"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348707"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Wyświetlanie kodu dezasemblacji w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Wyświetlanie kodu demontażu w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
 
-**Dezasemblacji** okno pokazuje kod zestawu odpowiadający instrukcjom utworzonym przez kompilator. Jeśli debugujesz kod zarządzany w instrukcjach zestawu odnoszą się do kodu macierzystego, utworzony przez kompilator Just-in-Time (JIT), a nie języka Microsoft intermediate language (MSIL) utworzony przez kompilator programu Visual Studio.
+Okno **demontażu** zawiera kod zestawu odpowiadający instrukcjom utworzonym przez kompilator. Jeśli debugujesz kod zarządzany, te instrukcje zestawu odpowiadają kodowi natywnym utworzonym przez kompilator just-in-Time (JIT), a nie języka pośredniego firmy Microsoft (MSIL) utworzonego przez kompilator programu Visual Studio.
 
 > [!NOTE]
-> W pełni wykorzystać **dezasemblacji** okna, zrozumieć i Naucz się podstaw [programowania języka asembler](https://wikipedia.org/wiki/Assembly_language).
+> Aby w pełni wykorzystać możliwości okna **demontażu** , poznanie lub poznanie podstaw [programowania w języku asemblera](https://wikipedia.org/wiki/Assembly_language).
 
-Ta funkcja jest dostępna tylko jeśli włączone jest debugowanie na poziomie adresów. Nie jest dostępna dla skryptu lub debugowania SQL.
+Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie na poziomie adresu. Nie jest on dostępny dla debugowania skryptów i SQL.
 
-Oprócz instrukcje montażu **dezasemblacji** okna można wyświetlić następujące informacje opcjonalne:
+Oprócz instrukcji zestawu, w oknie **demontażu** można wyświetlić następujące informacje opcjonalne:
 
-- Adres pamięci, w którym znajduje się każdą instrukcję. Dla natywnych aplikacji jest to adres pamięci rzeczywistych. Dla języka Visual Basic lub C#, to przesunięcie od początku funkcji.
+- Adres pamięci, w którym znajduje się każda instrukcja. W przypadku aplikacji natywnych jest to rzeczywisty adres pamięci. W przypadku Visual Basic lub C# jest to przesunięcie od początku funkcji.
 
 - Kod źródłowy, z którego pochodzi kod zestawu.
 
-- Możesz pisać kod w bajtach, oznacza to, reprezentacje bajt rzeczywistą lub instrukcji MSIL.
+- Bajty kodu, czyli reprezentacje bajtów rzeczywistej maszyny lub instrukcji MSIL.
 
 - Nazwy symboli dla adresów pamięci.
 
-- Numery wierszy odpowiadających do kodu źródłowego.
+- Numery wierszy odpowiadające kodowi źródłowej.
 
-Instrukcje języka asemblera składają się z *mnemonik*, skróty nazw instrukcji, które są i *symbole* dla zmiennych, rejestrów i stałe. Każdą instrukcję języka maszyny jest reprezentowany przez jeden język asemblera skrót klawiszowy opcjonalnie następuje jeden lub więcej symboli.
+Instrukcje dotyczące języka asemblerowego składają się z *symboli*, które są skrótami nazw instrukcji i *symboli* zmiennych, rejestrów i stałych. Każda instrukcja języka maszynowego jest reprezentowana przez jeden znak w języku asemblera, a następnie jeden lub więcej symboli.
 
-Kod zestawu odgrywa rejestry procesora lub dla kodu zarządzanego, rejestruje środowiska uruchomieniowego języka wspólnego. Możesz użyć **dezasemblacji** okna wraz z **rejestruje** okno, które można sprawdzić zawartość rejestru.
+Kod zestawu jest w dużym stopniu oparty na rejestrach procesora lub, dla kodu zarządzanego, rejestrów środowiska uruchomieniowego języka wspólnego. Można użyć okna **demontażu** wraz z oknem **rejestry** , co pozwala na badanie zawartości rejestru.
 
-Aby wyświetlić instrukcje kodu maszynowego w ich pierwotne forma liczbowa, a nie jako język asemblera, użyj **pamięci** okna lub wybierz **bajty kodu** z menu skrótów na liście **dezasemblacji**  okna.
+Aby wyświetlić instrukcje dotyczące kodu maszynowego w pierwotnej formie liczbowej, a nie jako język zestawu, użyj okna **pamięć** lub wybierz pozycję **bajty kodu** z menu skrótów w oknie **demontażu** .
 
-## <a name="use-the-disassembly-window"></a>Korzystanie z okna dezasemblacji
+## <a name="use-the-disassembly-window"></a>Korzystanie z okna demontażu
 
-Aby włączyć **dezasemblacji** okna, w obszarze **narzędzia** > **opcje** (lub **narzędzia**  >  **Opcje**) > **debugowanie**, wybierz opcję **Włącz debugowanie na poziomie adresów**.
+Aby włączyć okno **demontaż** , w obszarze **Narzędzia**  >  **Opcje** (lub **Tools**  >  **Opcje**narzędzi) > **debugowanie**wybierz pozycję **Włącz debugowanie na poziomie adresu**.
 
-Aby otworzyć **dezasemblacji** okna podczas debugowania, wybierz opcję **Windows** > **dezasemblacji** lub naciśnij **Alt** + **8**.
+Aby otworzyć okno **demontaż** podczas debugowania, wybierz pozycję **Windows**  >  **demontaż** systemu Windows lub naciśnij klawisz **Alt** + **8**.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
-Opcjonalne informacje należy włączyć lub wyłączyć, kliknij prawym przyciskiem myszy **dezasemblacji** oknie i ustawić lub wyczyścić odpowiednie opcje w menu skrótów.
+Aby włączyć lub wyłączyć informacje opcjonalne, kliknij prawym przyciskiem myszy w oknie **demontażu** i ustaw lub wyczyść odpowiednie opcje w menu skrótów.
 
-Żółta strzałka na lewym marginesie oznacza bieżący punkt wykonania. Dla kodu natywnego punkt wykonania odpowiada licznik programu procesora CPU. Ta lokalizacja zawiera następnej instrukcji, która zostanie wykonana w programach.
+Żółta strzałka w lewym marginesie oznacza bieżący punkt wykonania. W przypadku kodu natywnego punkt wykonywania odpowiada licznikowi programu procesora CPU. Ta lokalizacja pokazuje następną instrukcję, która zostanie wykonana w programie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Stronicowanie w górę lub w dół w pamięci](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
-* [Instrukcje: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
+* [Instrukcje: korzystanie z okna Rejestry](../debugger/how-to-use-the-registers-window.md)

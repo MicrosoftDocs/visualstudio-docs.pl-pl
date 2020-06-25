@@ -1,7 +1,7 @@
 ---
-title: Dekompilowanie kodu .NET podczas debugowania | Dokumenty firmy Microsoft
+title: Dekompilowanie kodu platformy .NET podczas debugowania | Microsoft Docs
 ms.date: 2/2/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -13,103 +13,103 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: d63c05120842d52dd54359e128d0cc5f2a195817
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508748"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350566"
 ---
-# <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generowanie kodu źródłowego z zestawów .NET podczas debugowania
+# <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generuj kod źródłowy z zestawów .NET podczas debugowania
 
-Podczas debugowania aplikacji .NET może się okazać, że chcesz wyświetlić kod źródłowy, który nie masz. Na przykład podział na wyjątek lub za pomocą stosu wywołań, aby przejść do lokalizacji źródłowej.
+Podczas debugowania aplikacji .NET może się okazać, że chcesz wyświetlić kod źródłowy, którego nie masz. Na przykład, przerwanie na wyjątek lub użycie stosu wywołań do przejścia do lokalizacji źródłowej.
 
 > [!NOTE]
-> * Generowanie kodu źródłowego (dekompilacja) jest dostępne tylko dla aplikacji .NET i jest oparte na projekcie [ILSpy](https://github.com/icsharpcode/ILSpy) open source.
-> * Dekompilacja jest dostępna tylko w programie Visual Studio 2019 16.5 i nowszych.
-> * Zastosowanie [atrybutu SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) do zestawu lub modułu uniemożliwia programowi Visual Studio podejmowanie próby dekompilacji.
+> * Generowanie kodu źródłowego (dekompilacja) jest dostępne tylko dla aplikacji .NET i opiera się na projekcie [ILSpy](https://github.com/icsharpcode/ILSpy) Open Source.
+> * Dekompilacja jest dostępna tylko w programie Visual Studio 2019 16,5 i nowszych.
+> * Zastosowanie atrybutu [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) do zestawu lub modułu uniemożliwia programowi Visual Studio podjęcie próby dekompilacji.
 
-## <a name="generate-source-code"></a>Generowanie kodu źródłowego
+## <a name="generate-source-code"></a>Generuj kod źródłowy
 
-Podczas debugowania i nie jest dostępny kod źródłowy, Visual Studio pokazuje **źródło nie znaleziono** dokumentu lub jeśli nie masz symboli dla zestawu, Nie **symbole załadowany** dokument. Oba dokumenty mają **dekompilowany kod źródłowy** opcja, która generuje kod C# dla bieżącej lokalizacji. Wygenerowany kod Języka C# może być następnie używany tak samo, jak każdy inny kod źródłowy. Można wyświetlić kod, sprawdzić zmienne, ustawić punkty przerwania i tak dalej.
+Gdy debugujesz, a żaden kod źródłowy nie jest dostępny, program Visual Studio wyświetli dokument, który **nie został znaleziony** , lub jeśli nie masz symboli dla zestawu, **nie załadowano żadnych symboli** . Oba dokumenty mają opcję **dekompilowania kodu źródłowego** , która generuje kod C# dla bieżącej lokalizacji. Wygenerowany kod C# można następnie użyć podobnie jak każdy inny kod źródłowy. Można wyświetlić kod, zbadać zmienne, ustawić punkty przerwania i tak dalej.
 
-### <a name="no-symbols-loaded"></a>Brak załadowanych symboli
+### <a name="no-symbols-loaded"></a>Nie załadowano żadnych symboli
 
-Na poniższej ilustracji przedstawiono komunikat **Brak załadowanych symboli.**
+Poniższa ilustracja przedstawia komunikat **nie załadowano symboli** .
 
-![Zrzut ekranu przedstawiający brak załadowanego dokumentu bez symbolu](media/decompilation-no-symbol-found.png)
+![Zrzut ekranu przedstawiający dokument bez symbolu załadowanego](media/decompilation-no-symbol-found.png)
 
 ### <a name="source-not-found"></a>Nie znaleziono źródła
 
-Na poniższej ilustracji przedstawiono komunikat **Nie znaleziono źródła.**
+Poniższa ilustracja przedstawia komunikat **nie znaleziono źródła** .
 
-![Zrzut ekranu przedstawiający nieotworzę nie znaleziony dokument źródłowy](media/decompilation-no-source-found.png)
+![Zrzut ekranu źródła nie znaleziono dokumentu](media/decompilation-no-source-found.png)
 
-## <a name="generate-and-embed-sources-for-an-assembly"></a>Generowanie i osadzanie źródeł dla złożenia
+## <a name="generate-and-embed-sources-for-an-assembly"></a>Generowanie i osadzanie źródeł dla zestawu
 
-Oprócz generowania kodu źródłowego dla określonej lokalizacji, można wygenerować cały kod źródłowy dla danego zestawu .NET. Aby to zrobić, przejdź do okna **Moduły** i z menu kontekstowego zestawu .NET, a następnie wybierz polecenie **Decompile kod źródłowy.** Visual Studio generuje plik symbolu dla zestawu, a następnie osadza źródło w pliku symbolu. W późniejszym kroku można [wyodrębnić](#extract-and-view-the-embedded-source-code) osadzony kod źródłowy.
+Oprócz generowania kodu źródłowego dla określonej lokalizacji, można wygenerować cały kod źródłowy dla danego zestawu .NET. W tym celu przejdź do okna **moduły** i z menu kontekstowego zestawu .NET, a następnie wybierz polecenie **Dekompiluj kod źródłowy** . Program Visual Studio generuje plik symboli dla zestawu, a następnie osadza źródło w pliku symboli. W późniejszym kroku można [wyodrębnić](#extract-and-view-the-embedded-source-code) osadzony kod źródłowy.
 
-![Zrzut ekranu przedstawiający menu kontekstowe zestawu w oknie modułów z poleceniem dekompilacyjnym źródłowym.](media/decompilation-decompile-source-code.png)
+![Zrzut ekranu przedstawiający menu kontekstowe zestawu w oknie modułów z poleceniem dekompilowania źródła.](media/decompilation-decompile-source-code.png)
 
-## <a name="extract-and-view-the-embedded-source-code"></a>Wyodrębnianie i wyświetlanie osadzonego kodu źródłowego
+## <a name="extract-and-view-the-embedded-source-code"></a>Wyodrębnij i Wyświetl osadzony kod źródłowy
 
-Można wyodrębnić pliki źródłowe, które są osadzone w pliku symbolu za pomocą polecenia **Wyodrębnij kod źródłowy** w menu kontekstowym okna **Moduły.**
+Pliki źródłowe, które są osadzone w pliku symboli, można wyodrębnić przy użyciu polecenia **Wyodrębnij kod źródłowy** z menu kontekstowego okna **moduły** .
 
-![Zrzut ekranu przedstawiający menu kontekstowe zestawu w oknie modułów z poleceniem wyodrębnij źródła.](media/decompilation-extract-source-code.png)
+![Zrzut ekranu przedstawiający menu kontekstowe zestawu w oknie modułów z poleceniem Wyodrębnij źródła.](media/decompilation-extract-source-code.png)
 
-Wyodrębnione pliki źródłowe są dodawane do rozwiązania jako [różne pliki](../ide/reference/miscellaneous-files.md). Funkcja różnych plików jest domyślnie wyłączona w programie Visual Studio. Tę funkcję można włączyć w menu wyboru **Opcje narzędzi** > **Options** > **Dokumenty** > **środowiska** > Pokaż różne**pliki w Eksploratorze rozwiązań.** Bez włączenia tej funkcji nie będzie można otworzyć wyodrębnionego kodu źródłowego.
+Wyodrębnione pliki źródłowe są dodawane do rozwiązania jako [różne pliki](../ide/reference/miscellaneous-files.md). Funkcja różne pliki jest domyślnie wyłączona w programie Visual Studio. Tę funkcję można włączyć z poziomu opcji **Narzędzia**  >  **Options**  >  **Environment**  >  **dokumenty**środowiska  >  **Pokaż różne pliki w Eksplorator rozwiązań** pole wyboru. Bez włączania tej funkcji nie będzie można otworzyć wyodrębnionego kodu źródłowego.
 
-![Zrzut ekranu przedstawiający stronę opcji narzędzi z włączoną opcją różnych plików.](media/decompilation-tools-options-misc-files.png)
+![Zrzut ekranu strony opcji narzędzia z włączoną opcją różne pliki.](media/decompilation-tools-options-misc-files.png)
 
-Wyodrębnione pliki źródłowe pojawiają się w różnych plikach w **Eksploratorze rozwiązań**.
+Wyodrębnione pliki źródłowe pojawiają się w różnych plikach w **Eksplorator rozwiązań**.
 
-![Zrzut ekranu przedstawiający Eksploratora rozwiązań z różnymi plikami.](media/decompilation-solution-explorer.png)
+![Zrzut ekranu Eksploratora rozwiązań z różnymi plikami.](media/decompilation-solution-explorer.png)
 
 ## <a name="known-limitations"></a>Znane ograniczenia
 
 ### <a name="requires-break-mode"></a>Wymaga trybu przerwania
 
-Generowanie kodu źródłowego przy użyciu dekompilacji jest możliwe tylko wtedy, gdy debuger jest w trybie przerwania, a aplikacja jest wstrzymana. Na przykład Visual Studio wchodzi w tryb przerwania, gdy trafi punkt przerwania lub wyjątek. Program Visual Studio można łatwo wyzwolić, aby przerwać następnym![uruchomieniu kodu](media/decompilation-break-all.png)przy użyciu polecenia **Podziel wszystko** (Przerwij wszystkie ikony).
+Generowanie kodu źródłowego przy użyciu dekompilacji jest możliwe tylko wtedy, gdy debuger jest w trybie przerwania i aplikacja jest wstrzymana. Na przykład program Visual Studio wprowadza tryb przerwania, gdy trafi do punktu przerwania lub wyjątku. Możesz łatwo wyzwolić program Visual Studio, aby przerwać przy następnym uruchomieniu kodu przy użyciu polecenia **Break All** ( ![ Przerwij wszystko ](media/decompilation-break-all.png) ).
 
-### <a name="decompilation-limitations"></a>Ograniczenia dekompilacji
+### <a name="decompilation-limitations"></a>Ograniczenia dotyczące dekompilacji
 
-Generowanie kodu źródłowego z formatu pośredniego (IL), który jest używany w zestawach .NET ma pewne nieodłączne ograniczenia. W związku z tym wygenerowany kod źródłowy nie wygląda jak oryginalny kod źródłowy. Większość różnic są w miejscach, w których informacje w oryginalnym kodzie źródłowym nie jest potrzebne w czasie wykonywania. Na przykład informacje, takie jak odstępy, komentarze i nazwy zmiennych lokalnych nie są potrzebne w czasie wykonywania. Zaleca się użycie wygenerowanego źródła, aby zrozumieć, jak program jest wykonywany, a nie jako zamiennik oryginalnego kodu źródłowego.
+Generowanie kodu źródłowego z formatu pośredniego (IL), który jest używany w zestawach .NET, ma pewne własne ograniczenia. W związku z tym wygenerowany kod źródłowy nie wygląda jak oryginalny kod źródłowy. Większość różnic polega na miejscach, w których informacje w oryginalnym kodzie źródłowym nie są potrzebne w czasie wykonywania. Na przykład informacje takie jak odstępy, komentarze i nazwy zmiennych lokalnych nie są potrzebne w czasie wykonywania. Zalecamy użycie generowanego źródła, aby zrozumieć, w jaki sposób program jest wykonywany, a nie jako zamiennik oryginalnego kodu źródłowego.
 
-### <a name="debug-optimized-or-release-assemblies"></a>Zestawy zoptymalizowane pod kątem debugowania lub zwalniania
+### <a name="debug-optimized-or-release-assemblies"></a>Debugowanie zestawów zoptymalizowanych lub wydań
 
-Podczas debugowania kodu, który został dekompilowany z zestawu, który został skompilowany przy użyciu optymalizacji kompilatora, można natknąć się na następujące problemy:
-- Punkty przerwania nie zawsze mogą być powiązane z pasującą lokalizacją zaopatrzenia.
-- Stepping nie zawsze krok do właściwej lokalizacji.
+Podczas debugowania kodu, który został dekompilowany z zestawu, który został skompilowany przy użyciu optymalizacji kompilatora, mogą występować następujące problemy:
+- Punkty przerwania nie zawsze są powiązane z pasującą lokalizacją pochodzenia.
+- Krokowe nie zawsze należy do poprawnej lokalizacji.
 - Zmienne lokalne mogą nie mieć dokładnych nazw.
 - Niektóre zmienne mogą nie być dostępne do oceny.
 
-Więcej szczegółów można znaleźć w problemie z gitHubem: [integracja ICSharpCode.Decompiler z debugerem VS](https://github.com/icsharpcode/ILSpy/issues/1901).
+Więcej szczegółów można znaleźć w temacie problem z usługą GitHub: [ICSharpCode. dekompilator — informacje Integration w debugerze programu vs](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="decompilation-reliability"></a>Niezawodność dekompilacji
 
-Stosunkowo niewielki procent prób dekompilacji może spowodować niepowodzenie. Jest to spowodowane błędem odwołania do wartości null punktu sekwencji w ILSpy.  Złagodziliśmy niepowodzenie, łapiąc te problemy i z wdziękiem nie udając się próba dekompilacji.
+Stosunkowo niewielki procent prób dekompilacji może skutkować niepowodzeniem. Jest to spowodowane błędem odwołania o wartości null punktu sekwencji w ILSpy.  Wyeliminowano błąd, przechwytując te problemy i łagodnie kończy się niepowodzeniem podczas próby dekompilacji.
 
-Więcej szczegółów można znaleźć w problemie z gitHubem: [integracja ICSharpCode.Decompiler z debugerem VS](https://github.com/icsharpcode/ILSpy/issues/1901).
+Więcej szczegółów można znaleźć w temacie problem z usługą GitHub: [ICSharpCode. dekompilator — informacje Integration w debugerze programu vs](https://github.com/icsharpcode/ILSpy/issues/1901).
 
-### <a name="limitations-with-async-code"></a>Ograniczenia z kodem asynchronizowym
+### <a name="limitations-with-async-code"></a>Ograniczenia związane z kodem asynchronicznym
 
-Wyniki z dekompilacji modułów z wzorcami kodu asynchronicznie/await mogą być niekompletne lub całkowicie nie. Implementacja ILSpy asynchronii/await i wydajność maszyn stanowych jest tylko częściowo zaimplementowana. 
+Wyniki z dekompilowania modułów z wzorcem kodu Async/await mogą być niekompletne lub w całości kończyć się niepowodzeniem. ILSpy implementacja Async/await i Yield State-Machines jest tylko częściowo zaimplementowana. 
 
-Więcej szczegółów można znaleźć w problemie z gitHub: [Status generatora PDB](https://github.com/icsharpcode/ILSpy/issues/1422).
+Więcej szczegółów można znaleźć w temacie problem z usługą plików [PDB](https://github.com/icsharpcode/ILSpy/issues/1422):.
 
 ### <a name="just-my-code"></a>Tylko mój kod
 
-Ustawienia [Just My Code (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) umożliwia visual studio krok przez system, struktury, biblioteki i innych wywołań innych użytkowników. Podczas sesji debugowania okna **Moduły** pokazuje, które moduły kodu debugera traktuje jako Mój kod (kod użytkownika).
+Ustawienia [tylko mój kod (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) pozwalają programowi Visual Studio na przechodzenie przez system, strukturę, bibliotekę i inne wywołania niebędące użytkownikami. Podczas sesji debugowania w oknie **moduły** są wyświetlane moduły kodu, które debuger jest traktowany jako mój kod (kod użytkownika).
 
-Dekompilacja zoptymalizowanych lub zwolnionych modułów tworzy kod niebędący użytkownikiem. Jeśli debuger przerwy w dekompilowanym kodzie nie-użytkownik, na przykład pojawi się okno **Brak źródła.** Aby wyłączyć tylko mój kod, przejdź do**opcji** **narzędzi** > (lub**opcji** **debugowania)** > > **Debugowanie** > **ogólne**, a następnie usuń zaznaczenie opcji Włącz tylko **mój kod**.
+Dekompilacja modułów zoptymalizowanych lub wydań generuje kod niebędący użytkownikiem. Jeśli debuger przerwie w nieskompilowanym kodzie nieużywanym przez użytkownika, na przykład okno **nie** zostanie wyświetlone. Aby wyłączyć tylko mój kod, przejdź do **Tools**  >  **opcji** narzędzia (lub **Debug**  >  **Opcje**debugowania) > **debugowania**  >  **Ogólne**, a następnie usuń zaznaczenie opcji **Włącz tylko mój kod**.
 
-### <a name="extracted-sources"></a>Źródła wyodrębnione
+### <a name="extracted-sources"></a>Wyodrębnione źródła
 
 Kod źródłowy wyodrębniony z zestawu ma następujące ograniczenia:
-- Nazwa i lokalizacja wygenerowanych plików nie można skonfigurować.
+- Nazwy i lokalizacji wygenerowanych plików nie można skonfigurować.
 - Pliki są tymczasowe i zostaną usunięte przez program Visual Studio.
-- Pliki są umieszczane w jednym folderze, a żadna hierarchia folderów, które oryginalne źródła nie jest używany.
+- Pliki są umieszczane w pojedynczym folderze, a wszystkie hierarchie folderów, których oryginalne źródła nie były używane.
 - Nazwa pliku dla każdego pliku zawiera skrót sumy kontrolnej pliku.
 
-### <a name="generated-code-is-c-only"></a>Wygenerowany kod jest tylko C#
-Dekompilacja generuje tylko pliki kodu źródłowego w języku C#. Nie ma opcji generowania plików w innym języku.
+### <a name="generated-code-is-c-only"></a>Wygenerowany kod jest tylko w języku C#
+Dekompilacja generuje tylko pliki kodu źródłowego w języku C#. Nie ma możliwości generowania plików w żadnym innym języku.

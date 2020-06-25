@@ -2,7 +2,7 @@
 title: Przełączanie na inny wątek w trakcie debugowania
 ms.custom: seodec18
 ms.date: 04/27/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ad6280ad1213008bbb8ca8f6311ca34231d308
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9306e68c7d8906c6956eb5e3810327898bc56567
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732440"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348915"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Instrukcje: przełączanie do innego wątku podczas debugowania w programie Visual Studio (C#, Visual Basic, C++)
 Podczas debugowania aplikacji wielowątkowej można użyć dowolnej z kilku metod, aby przełączyć się z wątku, z którym pracujesz w innym wątku.
@@ -47,5 +47,5 @@ Gdy badasz wątki w edytorze kodu i różne okna debugowania wielowątkowego, ż
 
 2. Na liście kliknij wątek, do którego chcesz się przełączyć.
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz też
+- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)

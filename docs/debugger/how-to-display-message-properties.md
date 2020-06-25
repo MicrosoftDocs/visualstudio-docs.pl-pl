@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Wyświetlanie właściwości komunikatu | Dokumentacja firmy Microsoft'
+title: Jak wyświetlić właściwości komunikatu | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - message properties in SpyHelp
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66f65b6f998d4ec30f82ac4eef1adf72c01c4404
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894316"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349890"
 ---
-# <a name="how-to-display-message-properties"></a>Instrukcje: Wyświetlanie właściwości komunikatu
-Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikatów](../debugger/messages-view.md), użyj [okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md).
+# <a name="how-to-display-message-properties"></a>Porady: wyświetlanie właściwości komunikatów
+Aby dowiedzieć się więcej o komunikacie wymienionym w [widoku komunikatów](../debugger/messages-view.md), użyj [okna dialogowego Właściwości komunikatu](../debugger/message-properties-dialog-box.md).
 
 ### <a name="to-open-a-message-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości komunikatu
 
-1. Zaznacz wiadomość z drzewa wyświetlany w widoku komunikatów.
+1. Wybierz komunikat z drzewa wyświetlanego w widoku komunikaty.
 
-2. Z **widoku** menu, wybierz **właściwości**.
+2. Z menu **Widok** wybierz polecenie **Właściwości**.
 
-   Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.
+   Okna dialogowe właściwości nie są modalne, więc można kliknąć inny element w oknie widok, a w oknie dialogowym zostaną wyświetlone informacje o wybranym elemencie.

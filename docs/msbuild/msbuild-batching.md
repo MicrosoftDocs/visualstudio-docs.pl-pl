@@ -18,7 +18,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "85289277"
 ---
-# <a name="msbuild-batching"></a>Tworzenie wsadowe programu MSBuild
+# <a name="msbuild-batching"></a>Przetwarzanie wsadowe w programie MSBuild
 
 Program MSBuild dzieli listy elementów na różne kategorie lub partie na podstawie metadanych elementów, a następnie uruchamia obiekt docelowy lub zadanie jednokrotnie przy każdej partii.
 

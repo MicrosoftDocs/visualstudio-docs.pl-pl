@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: zatrzymywanie zmian kodu | Microsoft Docs'
+title: Jak zatrzymać zmiany kodu | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 545599aa68da79aa7be41f0a2517049146cebc89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732455"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348954"
 ---
 # <a name="how-to-stop-code-changes"></a>Porady: zatrzymywanie zmian kodu
 Podczas gdy Edytuj i Kontynuuj jest w trakcie stosowania zmian kodu, możesz zatrzymać operację.
@@ -38,6 +38,6 @@ Podczas gdy Edytuj i Kontynuuj jest w trakcie stosowania zmian kodu, możesz zat
 
   W przypadku wybrania tej opcji nie są zatwierdzane żadne zmiany w kodzie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Edytuj i kontynuuj](../debugger/edit-and-continue.md)
 - [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)

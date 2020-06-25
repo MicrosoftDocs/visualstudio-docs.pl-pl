@@ -8,14 +8,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76dcbbf8c5c5c5019c0b45fe97150838d996bfa1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183356"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350839"
 ---
-# <a name="msbuild-target-framework-and-target-platform"></a>Struktura docelowa programu MSBuild i platforma docelowa
+# <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 
 Projekt można skompilować do uruchamiania w *środowisku docelowym*, który jest określoną wersją .NET Framework i *platformą docelową*, która jest konkretną architekturą oprogramowania.  Można na przykład określić, że aplikacja ma być uruchamiana na .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 80x86 ("x86"). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy*.
 
@@ -95,10 +95,10 @@ Struktura docelowa jest określona we `TargetFrameworkVersion` właściwości w 
 <PropertyGroup>
    <PlatformTarget>x86</PlatformTarget>
    <Configuration>Debug</Configuration>
-<PropertyGroup>
+</PropertyGroup>
 
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)

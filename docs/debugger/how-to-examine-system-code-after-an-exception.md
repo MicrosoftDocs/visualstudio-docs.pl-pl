@@ -2,7 +2,7 @@
 title: Badaj kod systemu po wystąpieniu wyjątku | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98f3eb98024e20350151904f297f7e7b4d6f1fea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9fe2dcc283f84bbcd5cd0b5a04dd5d1c300d9e14
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733373"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349656"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Porady: badanie kodu systemu po wystąpieniu wyjątku
 Gdy wystąpi wyjątek, może być konieczne przeanalizowanie kodu wewnątrz wywołania systemowego w celu ustalenia przyczyny wyjątku. Poniższa procedura wyjaśnia, jak to zrobić, jeśli nie masz symboli ładowanych dla kodu systemowego lub jeśli Tylko mój kod jest włączona.
@@ -43,5 +43,5 @@ Gdy wystąpi wyjątek, może być konieczne przeanalizowanie kodu wewnątrz wywo
 
 4. Teraz można przeanalizować kod systemowy w oknie **stosu wywołań** i innych oknach. Na przykład możesz dwukrotnie kliknąć ramkę stosu wywołań, aby wyświetlić kod w oknie źródłowym lub **rozasembleru** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)

@@ -1,7 +1,7 @@
 ---
 title: Kontynuowanie wykonania po wystąpieniu wyjątku | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745646"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350683"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Kontynuowanie wykonania po wyjątkach
-Gdy debuger przerywa wykonywanie z powodu wyjątku, domyślnie zobaczysz **pomocnika wyjątków**. Jeśli w oknie dialogowym **Opcje** wyłączono **pomocnika wyjątków** , zobaczysz **asystenta wyjątków** (C# lub Visual Basic) lub okno dialogowe **wyjątku** (C++).
+Gdy debuger przerywa wykonywanie z powodu wyjątku, domyślnie zobaczysz **pomocnika wyjątków**. Jeśli w oknie dialogowym **Opcje** wyłączono **pomocnika wyjątków** , zobaczysz **asystenta wyjątków** (C# lub Visual Basic) lub okno dialogowe **wyjątek** (C++).
 
  Po wyświetleniu **pomocnika wyjątków** można spróbować rozwiązać problem, który spowodował wyjątek.
 
@@ -43,6 +43,6 @@ Gdy debuger przerywa wykonywanie z powodu wyjątku, domyślnie zobaczysz **pomoc
 ## <a name="mixed-code"></a>Kod mieszany
  Jeśli wystąpił nieobsługiwany wyjątek podczas debugowania kodu natywnego i zarządzanego, ograniczenia systemu operacyjnego uniemożliwiają rozwinięcia stosu wywołań. Jeśli spróbujesz odwinąć stos wywołań za pomocą menu skrótów, komunikat o błędzie wyjaśnia, że debuger nie może wycofać się z nieobsłużonego elementu, z wyjątkiem debugowania kodu mieszanego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)

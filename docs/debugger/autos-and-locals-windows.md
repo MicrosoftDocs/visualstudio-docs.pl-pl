@@ -1,8 +1,8 @@
 ---
-title: Sprawdzanie zmiennych - okien zmiennych automatycznych i zmiennych lokalnych | Dokumentacja firmy Microsoft
+title: Inspekcja zmiennych — autostarts i okien lokalnych | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -15,50 +15,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b159f631534135ac568fb03dbffa46ae0360fc47
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74904106"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350748"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych
+# <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspekcja zmiennych w oknach autouzupełniania i lokalnych
 
-**Autos** i **lokalne** systemu windows umożliwia wyświetlanie wartości zmiennych podczas debugowania. Systemu windows są dostępne tylko podczas sesji debugowania. **Autos** okno wyświetla zmienne używane wokół bieżącego punktu przerwania. **Lokalne** okno wyświetla zmienne zdefiniowane w zakresie lokalnym, zwykle jest to bieżąca funkcja lub metoda. Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
+Okna **zmiennych i** zmienne **lokalne** wyświetlają wartości zmiennej podczas debugowania. System Windows jest dostępny tylko podczas sesji debugowania. W oknie **samochody** są wyświetlane zmienne używane wokół bieżącego punktu przerwania. Okno zmiennych **lokalnych** zawiera zmienne zdefiniowane w zakresie lokalnym, które zwykle jest bieżącą funkcją lub metodą. Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
 
- **Autos** oknie jest dostępna dla C#, kodu języka Visual Basic, C++ i Python, ale nie dla języka JavaScript lub F#.
+ Okno **samochody** jest dostępne dla kodu C#, Visual Basic, C++ i Python, ale nie dla języka JavaScript lub F #.
 
-Aby otworzyć **automatyczne** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **Autos**, lub naciśnij **Ctrl**+**Alt**+**V** > **A**.
+Aby otworzyć okno **autostarty** , podczas debugowania zaznacz opcję **Debuguj**  >  **Windows**  >  **autostarty**systemu Windows lub naciśnij **klawisze CTRL** + **Alt** + **V**  >  **A**.
 
-Aby otworzyć **zmiennych lokalnych** oknie podczas debugowania, wybierz opcję **debugowania** > **Windows** > **lokalne**, lub naciśnij **Alt**+**4**.
+Aby otworzyć okno zmienne **lokalne** , podczas debugowania wybierz opcję **Debuguj**  >  Ustawienia lokalne**systemu Windows**  >  **Locals**lub naciśnij klawisze **Alt** + **4**.
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [wizualizacje danych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations).
+> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [wizualizacje danych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/data-visualizations).
 
-## <a name="use-the-autos-and-locals-windows"></a>Używanie okien zmiennych automatycznych i zmiennych lokalnych
+## <a name="use-the-autos-and-locals-windows"></a>Korzystanie z okien zmiennych i ustawień regionalnych
 
-Tablice i obiektów pokazano w **Autos** i **lokalne** systemu windows jako kontrolki drzewa. Wybierz strzałkę w lewo nazwę zmiennej, aby rozszerzyć widok, aby wyświetlić pola i właściwości. Oto przykład <xref:System.IO.FileStream?displayProperty=fullName> obiektu **lokalne** okna:
+Tablice i obiekty są wyświetlane w oknach **Autostarty** i **lokalne** jako kontrolki drzewa. Wybierz strzałkę po lewej stronie nazwy zmiennej, aby rozwinąć widok, aby wyświetlić pola i właściwości. Oto przykład <xref:System.IO.FileStream?displayProperty=fullName> obiektu w oknie **zmiennych lokalnych** :
 
 ![Elementy lokalne — FileStream](../debugger/media/locals-filestream.png "Elementy lokalne — FileStream")
 
-Wartość czerwonego w **lokalne** lub **Autos** okno oznacza, że wartość została zmieniona od czasu ostatniego obliczania. Zmiana może pochodzić z poprzedniej sesji debugowania lub zostały zmienione wartości w oknie.
+Czerwona wartość w oknie zmienne **lokalne** **lub** autozmienne oznacza, że wartość została zmieniona od czasu ostatniej oceny. Zmiana może być z poprzedniej sesji debugowania lub zmieniono wartość w oknie.
 
-Domyślny format liczbowy w oknach debugera jest liczbą dziesiętną. Aby zmienić ją na wartość szesnastkową, kliknij prawym przyciskiem myszy **lokalne** lub **Autos** okna, a następnie wybierz pozycję **wyświetlanie szesnastkowe**. Ta zmiana ma wpływ na wszystkie okna debugera.
+Domyślny format liczbowy w oknach debugera jest dziesiętny. Aby zmienić wartość na szesnastkową, kliknij prawym przyciskiem myszy w oknie wartości **lokalne** lub **Autostart** i wybierz pozycję **Wyświetlanie w formacie szesnastkowym**. Ta zmiana ma wpływ na wszystkie okna debugera.
 
-## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Edytuj wartości zmiennej w oknie Autos lub zmiennych lokalnych
+## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Edytuj wartości zmiennych w oknie elementy Autokorekty lub lokalne
 
-Aby edytować wartości większość zmiennych w **Autos** lub **lokalne** systemu windows, kliknij dwukrotnie wartość i wprowadź nową wartość.
+Aby edytować wartości większości zmiennych w oknach zmiennych **autolub** **lokalnych** , kliknij dwukrotnie wartość i wprowadź nową wartość.
 
-Można wprowadzić wyrażenie dla wartości, na przykład `a + b`. Debuger akceptuje większość prawidłowych wyrażeń języka.
+Możesz na przykład wprowadzić wyrażenie dla wartości `a + b` . Debuger akceptuje większość prawidłowych wyrażeń języka.
 
-W kodzie natywnym języku C++ masz może być zakwalifikowanie kontekstu nazwy zmiennej. Aby uzyskać więcej informacji, zobacz [operator kontekstu (C++)](../debugger/context-operator-cpp.md).
+W kodzie natywnym języka C++ może być konieczne zakwalifikowanie kontekstu nazwy zmiennej. Aby uzyskać więcej informacji, zobacz [operator kontekstu (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
->Upewnij się, że rozumiesz konsekwencje, zanim będzie można zmienić wartości i wyrażeń. Niektóre problemy są:
+>Upewnij się, że rozumiesz konsekwencje przed zmianą wartości i wyrażeń. Możliwe są następujące problemy:
 >
->- Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub inaczej wpłynąć na stan programu. Na przykład oceny `var1 = ++var2` zmienia wartość obu `var1` i `var2`. Wyrażenia te są określane jako mają [efekty uboczne](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efekty uboczne może spowodować nieoczekiwane wyniki, jeśli nie masz pewności, z nich.
+>- Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub w inny sposób wpłynąć na stan programu. Na przykład Ocena `var1 = ++var2` zmienia wartość obu `var1` i `var2` . Wyrażenia te mają [wpływ na skutki uboczne](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efekty uboczne mogą spowodować nieoczekiwane wyniki, jeśli nie są one świadome.
 >
->- Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza niezgodnościami z powodu konwersji dziesiętnych do pliku binarnego części ułamkowe. Nawet pozornie nieszkodliwe edycji może spowodować zmiany do niektórych bitów w zmiennej zmiennoprzecinkowych.
+>- Edytowanie wartości zmiennoprzecinkowych może spowodować powstanie nieścisłych niedokładności z powodu konwersji dziesiętnej na binarną składników ułamkowych. Nawet pozornie nieszkodliwe edytowanie może spowodować zmiany w niektórych bitach w zmiennej zmiennoprzecinkowej.
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>Wyszukaj w oknie elementy Autokorekty lub lokalne
@@ -82,26 +82,26 @@ Możesz szybko sprawdzać obiekty według ich właściwości w oknach Autostart 
 
 Można również przełączać nazwy właściwości i odfiltrować przypięte właściwości podczas wyświetlania listy właściwości obiektu w oknach zmiennych lub lokalnych.  Możesz uzyskać dostęp do każdej opcji, wybierając przyciski na pasku narzędzi powyżej okien zmiennych lub lokalnych.
 
-![Filtruj Ulubione właściwości](../debugger/media/filter-pinned-properties-locals.png "Filtrowanie właściwości ulubionych")
-![Przełącz nazwy właściwości](../debugger/media/toggle-property-names.gif "Przełącz nazwy właściwości")
+![Filtrowanie właściwości ulubionych](../debugger/media/filter-pinned-properties-locals.png "Filtrowanie właściwości ulubionych") 
+ ![Przełącz nazwy właściwości](../debugger/media/toggle-property-names.gif "Przełącz nazwy właściwości")
 
 ::: moniker-end
 
-## <a name="change-the-context-for-the-autos-or-locals-window"></a>Zmienianie kontekstu dla okna zmiennych automatycznych i zmiennych lokalnych
+## <a name="change-the-context-for-the-autos-or-locals-window"></a>Zmień kontekst okna autostarts lub locale
 
-Możesz użyć **Lokalizacja debugowania** narzędzi, wybierz odpowiednią funkcję, wątek lub proces, który zmienia kontekst dla **Autos** i **lokalne** systemu windows.
+Możesz użyć paska narzędzi **Lokalizacja debugowania** , aby wybrać żądaną funkcję, wątek lub proces, co powoduje zmianę kontekstu okien zmiennych i **Autos** **lokalnych** .
 
-Aby włączyć **Lokalizacja debugowania** narzędzi, kliknij przycisk w pustej części obszaru narzędzi i wybierz **Lokalizacja debugowania** z listy rozwijanej lub wybierz **widoku**  >   **Paski narzędzi** > **Lokalizacja debugowania**.
+Aby włączyć pasek narzędzi **Lokalizacja debugowania** , kliknij w pustej części obszaru paska narzędzi, a następnie wybierz opcję **Lokalizacja debugowania** z listy rozwijanej lub wybierz pozycję **Wyświetl**  >  **paski zadań**  >  **Debug Location**.
 
-Ustaw punkt przerwania, a następnie rozpocząć debugowanie. Po osiągnięciu punktu przerwania wstrzymuje wykonywanie, aby sprawdzić lokalizację w **Lokalizacja debugowania** paska narzędzi.
+Ustaw punkt przerwania i Rozpocznij debugowanie. Po trafieniu punktu przerwania wykonywanie jest wstrzymywane i będzie można zobaczyć lokalizację na pasku narzędzi **Lokalizacja debugowania** .
 
-![Pasek narzędzi lokalizacji debugowania](../debugger/media/debuglocationtoolbar.png "Lokalizacja debugowania, pasek narzędzi")
+![Lokalizacja debugowania, pasek narzędzi](../debugger/media/debuglocationtoolbar.png "Lokalizacja debugowania, pasek narzędzi")
 
-## <a name="bkmk_whatvariables"></a> Zmienne w oknie Autos (C#, języka Python w języku C++, Visual Basic)
+## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a>Zmienne w oknie samochody (C#, C++, Visual Basic, Python)
 
-Inny kod języków wyświetlać różne zmienne w **Autos** okna.
+Różne języki kodu wyświetlają różne zmienne w oknie **samochody** .
 
-- W C# i Visual Basic **Autos** dowolnej zmiennej w wierszu bieżącej lub poprzedniej stosowany jest wyświetlana w oknie. Na przykład w C# lub Visual Basic kod, Zadeklaruj cztery następujące zmienne:
+- W językach C# i Visual Basic okno **autostarts** wyświetla dowolną zmienną używaną w bieżącym lub poprzednim wierszu. Na przykład w języku C# lub Visual Basic kodzie Zadeklaruj następujące cztery zmienne:
 
    ```csharp
        public static void Main()
@@ -114,13 +114,13 @@ Inny kod języków wyświetlać różne zmienne w **Autos** okna.
        }
    ```
 
-   Ustaw punkt przerwania w wierszu `c = 3;`, i uruchomić debuger. Podczas wykonywania jest wstrzymana, **Autos** oknie będą wyświetlane:
+   Ustaw punkt przerwania w wierszu `c = 3;` i uruchom debuger. Po wstrzymaniu wykonywania zostanie wyświetlone okno **samochody** :
 
    ![Samochody — CSharp](../debugger/media/autos-csharp.png "Samochody — CSharp")
 
-   Wartość `c` ma wartość 0, ponieważ wiersz `c = 3` nie zostało jeszcze wykonane.
+   Wartość `c` jest równa 0, ponieważ wiersz `c = 3` nie został jeszcze wykonany.
 
-- W języku C++ **Autos** jest wyświetlana w oknie zmiennych używanych w co najmniej trzy wiersze przed bieżącego wiersza, w której wykonywanie jest wstrzymane. Na przykład w przypadku kodu C++ należy deklarować zmienne sześć:
+- W języku C++ okno **samochody** wyświetla zmienne używane w co najmniej trzech wierszach przed bieżącym wierszem, w którym wykonywanie zostało wstrzymane. Na przykład w kodzie C++ Zadeklaruj sześć zmiennych:
 
    ```C++
        void main() {
@@ -134,16 +134,16 @@ Inny kod języków wyświetlać różne zmienne w **Autos** okna.
        }
    ```
 
-    Ustaw punkt przerwania w wierszu `e = 5;` i uruchom debuger. Po zatrzymaniu wykonywania **Autos** oknie będą wyświetlane:
+    Ustaw punkt przerwania w wierszu `e = 5;` i uruchom debuger. Po zatrzymaniu zostanie wyświetlone okno **samochody** :
 
-    ![AutomatyczneC++](../debugger/media/autos-cplus.png "AutomatyczneC++")
+    ![Samochody — C + +](../debugger/media/autos-cplus.png "Samochody — C + +")
 
-    Zmienna `e` została zainicjowana, ponieważ wiersz `e = 5` nie zostało jeszcze wykonane.
+    Zmienna `e` nie została zainicjowana, ponieważ wiersz `e = 5` nie został jeszcze wykonany.
 
-## <a name="bkmk_returnValue"></a> Wyświetl wartości zwracane wywołania metody
- W kodzie .NET i C++, można zbadać wartości zwracane w **Autos** okna, gdy wychodzisz nad lub poza wywołanie metody. Wywołanie metody wyświetlania zwracanych wartości mogą być przydatne, gdy nie są przechowywane w zmiennych lokalnych. Metoda może służyć jako parametr lub jako wartość zwracaną przez inną metodę.
+## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a>Wyświetl wartości zwracane wywołań metod
+ W kodzie .NET i C++ można sprawdzić wartości zwracane w oknie **samochody** , gdy przekroczy lub wywołaj metodę. Wyświetlanie wartości zwracanych przez wywołanie metody może być przydatne, gdy nie są one przechowywane w zmiennych lokalnych. Metoda może być używana jako parametr lub jako wartość zwracana przez inną metodę.
 
- Na przykład następująca C# kod dodaje wartości zwrócone przez dwie funkcje:
+ Na przykład poniższy kod w języku C# dodaje wartości zwracane przez dwie funkcje:
 
 ```csharp
 static void Main(string[] args)
@@ -167,17 +167,17 @@ private static int subtractVars(int i, int j)
 }
 ```
 
-Aby wyświetlić wartości zwracanych metody `sumVars()` i `subtractVars()` wywołania metod w oknie Autos:
+Aby wyświetlić zwracane wartości `sumVars()` `subtractVars()` wywołań metod i w oknie samochody:
 
-1. Ustaw punkt przerwania na `int x = sumVars(a, b) + subtractVars(c, d);` wiersza.
+1. Ustaw punkt przerwania w `int x = sumVars(a, b) + subtractVars(c, d);` wierszu.
 
-1. Rozpocznij debugowanie, a po wstrzymuje wykonywanie w punkcie przerwania, wybierz **Step Over** lub naciśnij **F10**. Powinien zostać wyświetlony następujący wartości zwracane w **Autos** okna:
+1. Rozpocznij debugowanie i kiedy wykonywanie jest wstrzymywane w punkcie przerwania, wybierz pozycję **Przekrocz** lub naciśnij klawisz **F10**. W oknie **samochody** powinny być widoczne następujące wartości zwracane:
 
-  ![Wartości zwracane przez funkcję AutokorektyC#](../debugger/media/autosreturnvaluecsharp2.png "Wartości zwracane przez funkcję AutokorektyC#")
+  ![Wartości zwracane przez funkcję autouzupełniania C #](../debugger/media/autosreturnvaluecsharp2.png "Wartości zwracane przez funkcję autouzupełniania C #")
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
-- [Techniki i narzędzia debugowania](../debugger/write-better-code-with-visual-studio.md)
-- [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)
+- [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
+- [Najpierw Spójrz na Debugowanie](../debugger/debugger-feature-tour.md)
 - [Okna debugera](../debugger/debugger-windows.md)

@@ -2,7 +2,7 @@
 title: Debugowanie zainstalowanego pakietu aplikacji platformy UWP | Microsoft Docs
 ms.custom: ''
 ms.date: 11/07/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c2e94e9fa80145489bddfb005b7136bdff8a71
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211290"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350735"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Debugowanie zainstalowanego pakietu aplikacji platformy UWP w programie Visual Studio
 
@@ -38,7 +38,7 @@ Aby uzyskać więcej informacji na temat debugowania aplikacji platformy UWP, za
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Debugowanie zainstalowanej aplikacji platformy UWP na komputerze lokalnym
 
-1. W programie Visual Studio wybierz kolejno opcje **Debuguj** > **inne elementy docelowe** > debugowania**Debuguj zainstalowany pakiet aplikacji**.
+1. W programie Visual Studio wybierz kolejno opcje **Debuguj**  >  **inne elementy docelowe debugowania**  >  **Debuguj zainstalowany pakiet aplikacji**.
 
 1. W oknie dialogowym **Debuguj zainstalowany pakiet aplikacji** w obszarze **Typ połączenia**wybierz pozycję **komputer lokalny**.
 
@@ -52,9 +52,9 @@ Aby uzyskać więcej informacji na temat debugowania aplikacji platformy UWP, za
 1. Wybierz pozycję **Start**lub, jeśli aplikacja jest uruchomiona, a następnie wybierz pozycję **Dołącz**.
 
 > [!NOTE]
-> Możesz również dołączyć do dowolnego działającego platformy UWP lub innego procesu aplikacji, wybierając pozycję **Debuguj** > **Dołącz do procesu** w programie Visual Studio. Oryginalny projekt programu Visual Studio nie jest potrzebny do dołączenia do uruchomionego procesu, ale załadowanie symboli aplikacji pomoże znacząco podczas debugowania procesu, w którym nie jest używany oryginalny kod. Zobacz [Określanie symboli i plików źródłowych w debugerze](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Możesz również dołączyć do dowolnego działającego platformy UWP lub innego procesu aplikacji, wybierając pozycję **Debuguj**  >  **Dołącz do procesu** w programie Visual Studio. Oryginalny projekt programu Visual Studio nie jest potrzebny do dołączenia do uruchomionego procesu, ale załadowanie symboli aplikacji pomoże znacząco podczas debugowania procesu, w którym nie jest używany oryginalny kod. Zobacz [Określanie symboli i plików źródłowych w debugerze](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="remote"></a>Debugowanie zainstalowanej aplikacji platformy UWP na komputerze zdalnym lub urządzeniu
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a>Debugowanie zainstalowanej aplikacji platformy UWP na komputerze zdalnym lub urządzeniu
 
 Gdy program Visual Studio po raz pierwszy debuguje zainstalowaną aplikację platformy UWP na urządzeniu z systemem Windows 10 lub zdalnym komputerze z systemem Windows 10 z aktualizacją dla twórców po stronie użytkownika, instaluje narzędzia zdalnego debugowania na urządzeniu docelowym.
 
@@ -62,7 +62,7 @@ Gdy program Visual Studio po raz pierwszy debuguje zainstalowaną aplikację pla
 
 1. W przypadku nawiązywania połączenia z komputerem zdalnym z aktualizacją systemu Windows 10 programu precreator [ręcznie zainstaluj i uruchom zdalny debuger](../debugger/remote-debugging.md) na komputerze zdalnym.
 
-1. Na komputerze z Visual Studio wybierz pozycję **Debuguj** > **inne elementy docelowe** > debugowania**Debuguj zainstalowany pakiet aplikacji**.
+1. Na komputerze z Visual Studio wybierz pozycję **Debuguj**  >  **inne elementy docelowe debugowania**  >  **Debuguj zainstalowany pakiet aplikacji**.
 
 1. W oknie dialogowym **Debuguj zainstalowany pakiet aplikacji** w obszarze **Typ połączenia**wybierz pozycję **maszyna zdalna** lub **urządzenie**.
 
@@ -77,8 +77,8 @@ Gdy program Visual Studio po raz pierwszy debuguje zainstalowaną aplikację pla
       Jeśli debuger nie może połączyć się z komputerem zdalnym przy użyciu nazwy komputera, zamiast tego użyj adresu IP. Użyj adresu IP dla urządzeń Xbox, HoloLens lub IoT.
    1. Wybierz opcję uwierzytelniania obok opcji **tryb uwierzytelniania**.
 
-      W przypadku większości aplikacji należy zachować wartość domyślną, **uniwersalną (niezaszyfrowany protokół)** .
-   1. Wybierz **wybierz**.
+      W przypadku większości aplikacji należy zachować wartość domyślną, **uniwersalną (niezaszyfrowany protokół)**.
+   1. Wybierz pozycję **Wybierz**.
 
 1. W obszarze **zainstalowane pakiety aplikacji**wybierz aplikację, którą chcesz debugować, lub wpisz jej nazwę w polu wyszukiwania. Nieuruchomione zainstalowane pakiety aplikacji są wyświetlane w obszarze **nie działa** **i uruchomione aplikacje działają.**
 
@@ -94,11 +94,11 @@ Po rozpoczęciu debugowania zainstalowanego pakietu aplikacji na podłączonym u
 
 Aby uzyskać więcej informacji na temat zdalnego wdrażania aplikacji platformy UWP, zobacz [wdrażanie i debugowanie aplikacji platformy UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) oraz [debugowanie aplikacji platformy UWP na komputerach zdalnych](run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Debugowanie w programie Visual Studio](../debugger/index.yml)
+- [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
 - [Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)
-- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Przypisania portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md)
+- [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

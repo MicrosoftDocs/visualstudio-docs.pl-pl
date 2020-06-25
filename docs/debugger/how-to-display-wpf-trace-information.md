@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: wyświetlanie informacji o śledzeniu WPF | Microsoft Docs'
+title: Jak wyświetlić informacje śledzenia WPF | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 362376176cfb95c4e285f6837c53d277110e3439
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733468"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349786"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Porady: wyświetlanie informacji o śledzeniu WPF
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] może odbierać informacje o śledzeniu debugowania z aplikacji WPF i wyświetlać te informacje w oknie **danych wyjściowych** . Aby wyświetlić informacje o śledzeniu debugowania, należy włączyć śledzenie WPF.
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]może odbierać informacje o śledzeniu debugowania z aplikacji WPF i wyświetlać te informacje w oknie **danych wyjściowych** . Aby wyświetlić informacje o śledzeniu debugowania, należy włączyć śledzenie WPF.
 
- Śledzenie WPF można włączyć w pliku App. config lub programowo przy użyciu klasy <xref:System.Diagnostics.PresentationTraceSources>. Łatwiejszym sposobem włączenia śledzenia WPF jest użycie okna **Opcje** . Śledzenie WPF dla aplikacji sieci Web nie jest obsługiwane.
+ Śledzenie WPF można włączyć w pliku App.Config lub programowo przy użyciu <xref:System.Diagnostics.PresentationTraceSources> klasy. Łatwiejszym sposobem włączenia śledzenia WPF jest użycie okna **Opcje** . Śledzenie WPF dla aplikacji sieci Web nie jest obsługiwane.
 
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Aby włączyć lub dostosować informacje śledzenia WPF
 
-1. W menu **Narzędzia** wybierz pozycję **Opcje**.
+1. W menu **Tools** (Narzędzia) wybierz pozycję **Options** (Opcje).
 
 2. W oknie dialogowym **Opcje** , w polu po lewej stronie Otwórz węzeł **debugowanie** .
 
@@ -60,13 +60,13 @@ ms.locfileid: "72733468"
 
      **ActivityTracing** umożliwia śledzenie zdarzeń zatrzymania, uruchamiania, zawieszania, przesyłania i wznawiania.
 
-     Aby uzyskać więcej informacji na temat tego, co oznaczają te poziomy informacji o śledzeniu, zobacz <xref:System.Diagnostics.SourceLevels>.
+     Aby uzyskać więcej informacji na temat tego, co oznaczają te poziomy informacji o śledzeniu, zobacz <xref:System.Diagnostics.SourceLevels> .
 
 9. Kliknij przycisk **OK**.
 
 ### <a name="to-disable-wpf-trace-information"></a>Aby wyłączyć informacje śledzenia WPF
 
-1. W menu **Narzędzia** wybierz pozycję **Opcje**.
+1. W menu **Tools** (Narzędzia) wybierz pozycję **Options** (Opcje).
 
 2. W oknie dialogowym **Opcje** , w polu po lewej stronie Otwórz węzeł **debugowanie** .
 
@@ -84,5 +84,5 @@ ms.locfileid: "72733468"
 
 8. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie WPF](../debugger/debugging-wpf.md)

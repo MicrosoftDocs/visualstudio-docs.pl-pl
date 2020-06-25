@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Uruchamianie i zatrzymywanie wyświetlania dziennika komunikatów | Dokumentacja firmy Microsoft'
+title: Jak uruchomić i zatrzymać wyświetlanie dziennika komunikatów | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - message log display, starting
 - logging, starting message log display
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1fd5a7b7951056f65604bdea67eddcc3e696da
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7165e9a9d3a4d935e01870b6049307b5a85bdce8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825013"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349045"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Instrukcje: Uruchamianie i zatrzymywanie wyświetlania dziennika komunikatów
-Gdy [widoku komunikatów](../debugger/messages-view.md) okno jest aktywne, **Rozpocznij rejestrowanie** lub **Zatrzymaj rejestrowanie** wyboru pojawia się w programie Spy ++ **wiadomości** menu i odpowiadające **Rozpocznij rejestrowanie** lub **Zatrzymaj rejestrowanie** przycisku paska narzędzi stanie się aktywny.
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Porady: uruchamianie i zatrzymywanie wyświetlania dziennika komunikatów
+Gdy okno [Widok komunikatów](../debugger/messages-view.md) jest aktywne, **w menu programu Spy + +** zostanie wyświetlone ustawienie **Rozpocznij rejestrowanie** lub **zatrzymywanie rejestrowania** , a następnie przycisk paska narzędzi **Rozpocznij** rejestrowanie lub **zatrzymywanie rejestrowania** stanie się aktywny.
 
-### <a name="to-start-the-message-log-display"></a>Aby rozpocząć wyświetlania dziennika komunikatów
+### <a name="to-start-the-message-log-display"></a>Aby rozpocząć wyświetlanie dziennika komunikatów
 
-1. Z **wiadomości** menu, wybierz **Rozpocznij rejestrowanie**.
+1. Z menu **wiadomości** wybierz pozycję **Rozpocznij rejestrowanie**.
 
-### <a name="to-stop-the-message-log-display"></a>Aby zatrzymać wyświetlania dziennika komunikatów
+### <a name="to-stop-the-message-log-display"></a>Aby zatrzymać wyświetlanie dziennika komunikatów
 
-1. Z **wiadomości** menu, wybierz **Zatrzymaj rejestrowanie**.
+1. Z menu **wiadomości** wybierz polecenie **Zatrzymaj rejestrowanie**.

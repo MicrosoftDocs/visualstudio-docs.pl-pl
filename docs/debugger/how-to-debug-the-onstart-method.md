@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: debugowanie metody OnStart | Microsoft Docs'
+title: Jak debugować metodę OnStart | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 107ce6d5ca2b327d77fe588e1ac7ffda10a0a3a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7392b4185def34f38f0e183f2626bd648bb4b4ea
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733628"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350020"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Porady: debugowanie metody OnStart
-Można debugować usługę systemu Windows, uruchamiając usługę i dołączając debuger do procesu usługi. Aby uzyskać więcej informacji, zobacz [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Jednak aby debugować metodę <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> usługi systemu Windows, należy uruchomić debuger z wewnątrz metody.
+Można debugować usługę systemu Windows, uruchamiając usługę i dołączając debuger do procesu usługi. Aby uzyskać więcej informacji, zobacz [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Jednak aby debugować <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> metodę usługi systemu Windows, należy uruchomić debuger z wewnątrz metody.
 
-1. Dodaj wywołanie do <xref:System.Diagnostics.Debugger.Launch%2A> na początku `OnStart()`method.
+1. Dodaj wywołanie do <xref:System.Diagnostics.Debugger.Launch%2A> początku `OnStart()` metody.
 
     ```csharp
     protected override void OnStart(string[] args)
@@ -38,20 +38,20 @@ Można debugować usługę systemu Windows, uruchamiając usługę i dołączaj�
     }
     ```
 
-2. Uruchom usługę (możesz użyć `net start` lub uruchomić ją w oknie **usługi** ).
+2. Uruchom usługę (możesz użyć programu `net start` lub uruchomić ją w oknie **usługi** ).
 
     Powinno zostać wyświetlone okno dialogowe podobne do następujących:
 
     ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")
 
-3. Wybierz opcję **tak, debuguj \<service nazw >.**
+3. Wybierz opcję **tak, Debuguj \<service name> .**
 
 4. W oknie Debuger just in Time wybierz wersję programu Visual Studio, która ma być używana na potrzeby debugowania.
 
     ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")
 
-5. Zostanie uruchomione nowe wystąpienie programu Visual Studio, a wykonywanie zostało zatrzymane przy użyciu metody `Debugger.Launch()`.
+5. Zostanie uruchomione nowe wystąpienie programu Visual Studio, a wykonywanie zostało zatrzymane w tej `Debugger.Launch()` metodzie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
+- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

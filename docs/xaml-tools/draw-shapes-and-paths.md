@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592988"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350826"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
 
@@ -86,12 +86,12 @@ Użyj narzędzia **Zaznaczanie** , aby wybrać ścieżkę. Za pomocą narzędzia
 
 ## <a name="convert-a-shape-to-a-path"></a>Konwertowanie kształtu do ścieżki
 
-Aby zmodyfikować kształt w taki sam sposób, jak w przypadku modyfikacji ścieżki, Przekształć kształt na ścieżkę. Zaznacz kształt, a następnie wybierz pozycję **Format** > **ścieżka** > **Konwersja do ścieżki**.
+Aby zmodyfikować kształt w taki sam sposób, jak w przypadku modyfikacji ścieżki, Przekształć kształt na ścieżkę. Zaznacz kształt, a następnie wybierz pozycję **Formatuj**  >  **ścieżkę**  >  **Konwersja do ścieżki**.
 
-**Obejrzyj krótkie wideo:** ![skonfigurować zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: Przekształć kształt na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+**Obejrzyj krótkie wideo:** ![ Skonfiguruj zainstalowane funkcje ](../designers/media/bldadminconsoleinitialconfigicon.png) [pracujące z ścieżkami: Przekształć kształt na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 > [!NOTE]
-> **Konwersja do ścieżki** nie jest obecnie dostępna dla aplikacji platformy UWP o minimalnej `TargetPlatformVersion` 10.0.16299.0 lub nowszej.
+> **Konwersja do ścieżki** nie jest obecnie dostępna dla aplikacji platformy UWP, które mają co najmniej `TargetPlatformVersion` 10.0.16299.0 lub nowszą wersję.
 
 ## <a name="combine-paths"></a>Połącz ścieżki
 
@@ -99,13 +99,16 @@ Aby zmodyfikować kształt w taki sam sposób, jak w przypadku modyfikacji ście
 
 ![Połącz ścieżki](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|||||
-|-|-|-|-|
-|![Dwa kształty przed połączeniem](../designers/media/b1_1.png)|Dwa kształty przed połączeniem|![wspólnej](../designers/media/b1_4.png)|wspólnej|
-|![Jednostka](../designers/media/b1_2.png)|Jednostka|![Wyklucz nakładanie](../designers/media/b1_5.png)|Wyklucz nakładanie|
-|![Mieszczon](../designers/media/b1_3.png)|Mieszczon|![Odejmij](../designers/media/b1_6.png)|Odejmij|
+|Liczba|Akcja|
+|-|-|
+|![Dwa kształty przed połączeniem](../designers/media/b1_1.png)|Dwa kształty przed połączeniem|
+|![Jednostka](../designers/media/b1_2.png)|Jednostka|
+|![Dzielenie](../designers/media/b1_3.png)|Dzielenie|
+|![Wspólnej](../designers/media/b1_4.png)|Wspólnej|
+|![Wyklucz nakładanie](../designers/media/b1_5.png)|Wyklucz nakładanie|
+|![Odejmowanie](../designers/media/b1_6.png)|Odejmowanie|
 
-**Obejrzyj krótkie wideo:** ![skonfigurować zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: łączenie ścieżek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+**Obejrzyj krótkie wideo:** ![ Konfigurowanie zainstalowanych funkcji ](../designers/media/bldadminconsoleinitialconfigicon.png) [pracujących ze ścieżkami: łączenie ścieżek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ## <a name="create-a-compound-path"></a>Utwórz ścieżkę złożoną
 
@@ -115,7 +118,7 @@ Po utworzeniu ścieżki złożonej wszystkie przecinające się części ścież
 
 ![Przerwij ścieżkę złożoną](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**Obejrzyj krótkie wideo:** ![skonfigurować zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+**Obejrzyj krótkie wideo:** ![ Konfigurowanie zainstalowanych funkcji ](../designers/media/bldadminconsoleinitialconfigicon.png) [pracujących ze ścieżkami: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ## <a name="create-a-clipping-path"></a>Utwórz ścieżkę przycinającą
 
@@ -123,4 +126,4 @@ Po utworzeniu ścieżki złożonej wszystkie przecinające się części ścież
 
 ![Ścieżka przycinająca](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**Obejrzyj krótkie wideo:** ![skonfigurować zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: Utwórz ścieżkę przycinającą](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+**Obejrzyj krótkie wideo:** ![ Konfigurowanie zainstalowanych funkcji ](../designers/media/bldadminconsoleinitialconfigicon.png) [pracujących ze ścieżkami: Utwórz ścieżkę przycinającą](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).

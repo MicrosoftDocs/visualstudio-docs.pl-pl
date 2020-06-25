@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: debugowanie kontrolki ActiveX | Microsoft Docs'
+title: Jak debugować formant ActiveX | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vc.controls.debug
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76bc982db167624e567f88a1cf139b41cad9feb7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733869"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350215"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Porady: debugowanie formantu ActiveX
 
@@ -48,18 +48,18 @@ Aby debugować formant ActiveX, należy określić kontener (plik wykonywalny), 
 
 4. W kategorii **debugowanie** Znajdź właściwość **polecenie** .
 
-5. Określ nazwę ścieżki dla kontenera. Na przykład C:\Program Files\Internet Explorer\IEXPLORE. EXE.
+5. Określ nazwę ścieżki dla kontenera. Na przykład C:\Program Files\Internet Explorer\IEXPLORE.EXE.
 
-6. W przypadku określenia programu Internet Explorer jako kontenera i używania usługi Active Desktop wpisz `/new` w polu **argumenty polecenia** .
+6. W przypadku określenia programu Internet Explorer jako kontenera i używania programu Active Desktop wpisz `/new` w polu **argumenty polecenia** .
 
 7. Kliknij przycisk **OK**.
 
      Jeśli nie określisz kontenera w oknie dialogowym **strony właściwości projektu** , możesz określić kontener po rozpoczęciu debugowania. Po wybraniu polecenia wykonywania w celu rozpoczęcia debugowania zostanie wyświetlone okno [dialogowe plik wykonywalny dla sesji debugowania](../debugger/executable-for-debugging-session-dialog-box.md) . Określ nazwę ścieżki kontenera w oknie dialogowym.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kontrolki ActiveX](/cpp/mfc/activex-controls)
 - [Testowanie właściwości i zdarzeń za pomocą kontenera testu](/cpp/mfc/testing-properties-and-events-with-test-container)
-- [Debugowanie aplikacji COM i kontrolek ActiveX](../debugger/com-and-activex-debugging.md)
-- [Debugowanie w programie Visual Studio](../debugger/index.yml)
+- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)
+- [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: przechodzenie do usług WCF | Microsoft Docs'
+title: Jak przejść do usług WCF | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c405b4fcca91f8deddce4d65c8a4155b90af49e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fa4097280ae388a9a941c017697e0a5e3daa44cd
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732595"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349123"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Porady: usługi WCF krok po kroku
-W [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] możesz przejść do usługi WCF. Jeśli usługa WCF znajduje się w tym samym rozwiązaniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] co klient, można trafić punkty przerwania wewnątrz usługi WCF.
+W programie możesz [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] przejść do usługi WCF. Jeśli usługa WCF jest w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązaniu co klient, można trafić punkty przerwania wewnątrz usługi WCF.
 
- Aby przechodzenie do pracy, musisz mieć włączone debugowanie w pliku App. config lub Web. config. Aby uzyskać informacje na temat włączania debugowania i ograniczeń dotyczących przechodzenia do usług WCF, zobacz [ograniczenia dotyczące debugowania WCF](../debugger/limitations-on-wcf-debugging.md).
+ Aby przechodzenie do pracy, musisz mieć włączone debugowanie w pliku app.config lub Web.config. Aby uzyskać informacje na temat włączania debugowania i ograniczeń dotyczących przechodzenia do usług WCF, zobacz [ograniczenia dotyczące debugowania WCF](../debugger/limitations-on-wcf-debugging.md).
 
 ### <a name="to-step-into-a-wcf-service"></a>Aby przejść do usługi WCF
 
@@ -34,13 +34,13 @@ W [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] możesz 
 
 2. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt klienta WCF, a następnie kliknij pozycję **Ustaw jako projekt startowy**.
 
-3. Włącz debugowanie w pliku App. config lub Web. config. Aby uzyskać więcej informacji, zobacz [ograniczenia dotyczące debugowania WCF](../debugger/limitations-on-wcf-debugging.md).
+3. Włącz debugowanie w pliku app.config lub web.config. Aby uzyskać więcej informacji, zobacz [ograniczenia dotyczące debugowania WCF](../debugger/limitations-on-wcf-debugging.md).
 
 4. Ustaw punkt przerwania w lokalizacji w projekcie klienta, w której chcesz rozpocząć krokowe wykonywanie kroków. Zwykle jest to przed wywołaniem usługi WCF.
 
 5. Uruchom polecenie do punktu przerwania, a następnie zacznij krokowe. Debuger rozpocznie automatyczne przechodzenie do usługi.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)
-- [Ograniczenia dotyczące debugowania usług WCF](../debugger/limitations-on-wcf-debugging.md)
+- [Ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md)
 - [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

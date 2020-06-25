@@ -1,29 +1,29 @@
 ---
-title: Sprawdzanie aplikacji za pomocą debugowania historycznego | Dokumentacja firmy Microsoft
+title: Zbadaj aplikację za pomocą debugowania historycznego | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848211"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350449"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Sprawdzanie aplikacji z programem IntelliTrace historical debugowania w programie Visual Studio (C#, Visual Basic, C++)
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Sprawdzanie aplikacji za pomocą debugowania historycznego IntelliTrace w programie Visual Studio (C#, Visual Basic, C++)
 
-Możesz użyć [debugowania historycznego](../debugger/historical-debugging.md) do tyłu i do przodu przez wykonanie aplikacji i sprawdzić jego stan.
+Możesz użyć [debugowania historycznego](../debugger/historical-debugging.md) , aby przejść do tyłu i do przodu przez wykonanie aplikacji i sprawdzić jej stan.
 
-Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise, ale nie w wersjach Professional lub Community.
+Możesz użyć IntelliTrace w wersji Visual Studio Enterprise, ale nie wersji Professional ani Community.
 
-## <a name="navigate-your-code-with-historical-debugging"></a>Nawiguj po kodzie za pomocą debugowania historycznego
+## <a name="navigate-your-code-with-historical-debugging"></a>Nawigowanie po kodzie za pomocą debugowania historycznego
 
-Zacznijmy od prosty program, który zawiera błąd. W aplikacji konsolowej C# Dodaj następujący kod:
+Zacznijmy od prostego programu, który ma usterkę. W aplikacji konsolowej C# Dodaj następujący kod:
 
 ```csharp
 static void Main(string[] args)
@@ -51,33 +51,33 @@ private static int AddInt(int add)
 }
 ```
 
-Firma Microsoft będzie przyjęto założenie, że oczekiwana wartość `resultInt` po wywołaniu `AddAll()` wynosi 20 (zwiększanie wyniku `testInt` 20 razy). (Przyjmiemy również, że nie widzisz usterkę w `AddInt()`). Jednak wynik jest faktycznie 44. Jak możemy znaleźć usterki bez krokowe `AddAll()` 10 razy? Możemy użyć debugowania historycznego, aby znaleźć usterki szybciej i łatwiej. Oto jak:
+Przyjęto założenie, że oczekiwana wartość `resultInt` po wywołaniu `AddAll()` to 20 (wynik zwiększania `testInt` 20 razy). (Założono również, że błąd nie jest widoczny w programie `AddInt()` ). Jednak wynik jest w rzeczywistości 44. Jak można znaleźć usterkę bez przechodzenia przez `AddAll()` 10 razy? Możemy użyć debugowania historycznego, aby szybciej i łatwiej znaleźć usterkę. Oto kroki tej procedury:
 
-1. W **Narzędzia > Opcje > IntelliTrace > Ogólne**, upewnij się, że IntelliTrace jest włączony i wybierz **zdarzenia IntelliTrace i wywołania informacji**. Jeśli nie zaznaczysz tej opcji, nie będzie można zobaczyć trasę nawigacji (jak wyjaśniono poniżej).
+1. W obszarze **narzędzia > opcje > IntelliTrace > ogólne**upewnij się, że IntelliTrace jest włączona, a następnie wybierz pozycję **zdarzenia IntelliTrace i informacje o wywołaniu**. Jeśli nie wybierzesz tej opcji, nie będzie można zobaczyć odstępu nawigacyjnego (jak wyjaśniono poniżej).
 
-2. Ustaw punkt przerwania na `Console.WriteLine(resultInt);` wiersza.
+2. Ustaw punkt przerwania w `Console.WriteLine(resultInt);` wierszu.
 
-3. Rozpocznij debugowanie. Kod jest wykonywany punkt przerwania. W **lokalne** okna, możesz zobaczyć, że wartość `resultInt` jest 44.
+3. Rozpocznij debugowanie. Kod jest wykonywany w punkcie przerwania. W oknie zmienne **lokalne** można zobaczyć, że wartość `resultInt` to 44.
 
-4. Otwórz **narzędzia diagnostyczne** okna (**Debuguj > Pokaż narzędzia diagnostyczne**). W oknie Kod powinien wyglądać następująco:
+4. Otwórz okno **Narzędzia diagnostyczne** (**debuguj > Pokaż narzędzia diagnostyczne**). Okno kod powinno wyglądać następująco:
 
     ![Okno kodu w punkcie przerwania](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
 
-5. Powinien zostać wyświetlony podwójną strzałkę obok lewy margines, tuż nad punktu przerwania. Ten obszar nosi nazwę trasę nawigacji i jest używana do debugowania historycznego. Kliknij strzałkę.
+5. Powinna zostać wyświetlona podwójna strzałka obok lewego marginesu, tuż nad punktem przerwania. Ten obszar jest nazywany marginesem nawigacyjnym i służy do debugowania historycznego. Kliknij strzałkę.
 
-    W oknie Kod powinien zostać wyświetlony, poprzedni wiersz kodu (`int resultInt = AddIterative(testInt);`) jest kolor różowy. Nad oknem powinien zostać wyświetlony komunikat, który nastąpi przekierowanie do debugowania historycznego.
+    W oknie Kod należy zobaczyć, że poprzedni wiersz kodu ( `int resultInt = AddIterative(testInt);` ) jest kolorem różowym. Nad oknem powinien pojawić się komunikat, że teraz zawarto debugowanie historyczne.
 
-    W oknie kod wygląda teraz następująco:
+    Okno kod wygląda teraz następująco:
 
-    ![Okno kodu w trybie debugowania historycznego](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
+    ![okno kodu w trybie debugowania historycznego](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
 
-6. Teraz możesz wejść do `AddAll()` — metoda (**F11**, lub **Step Into** przycisk trasę nawigacji. Krok do przodu (**F10**, lub **przejdź do następnego wywołania** w trasę nawigacji. Różowa linia jest teraz dostępny w `j = AddInt(j);` wiersza. **F10** w tym przypadku nie wkracza do następnego wiersza kodu. Zamiast tego przechodzi do następnego wywołania funkcji. Debugowanie historyczne przechodzi z wywołaniami i pomija wierszy kodu, które nie obejmują wywołania funkcji.
+6. Teraz możesz przejść do `AddAll()` metody (**F11**lub **Wkrocz do** przycisku na marginesie nawigacyjnym). Krok do przodu (**F10**lub **Przejdź do następnego wywołania** na marginesie nawigacyjnym. Różowa linia znajduje się teraz w `j = AddInt(j);` wierszu. W tym przypadku **F10** nie przechodzi do następnego wiersza kodu. Zamiast tego należy wykonać kroki do następnego wywołania funkcji. Debugowanie historyczne prowadzi od wywołania wywołania i pomija wiersze kodu, które nie zawierają wywołania funkcji.
 
-7. Teraz Wkrocz `AddInt()` metody. Powinien zostać wyświetlony błąd, w tym kodzie natychmiast.
+7. Teraz przejdź do `AddInt()` metody. Usterka powinna być natychmiast widoczna w tym kodzie.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Procedura ta po prostu rysy powierzchni co można zrobić za pomocą debugowania historycznego.
+Ta procedura właśnie zakreśla powierzchnię tego, co można zrobić za pomocą debugowania historycznego.
 
-- Aby wyświetlić migawki podczas debugowania, zobacz [Sprawdź poprzednie Stany aplikacji za pomocą funkcji IntelliTrace](../debugger/view-historical-application-state.md).
-- Aby dowiedzieć się więcej o różnych ustawieniach i efekty różnych przycisków w trasę nawigacji, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
+- Aby wyświetlić migawki podczas debugowania, zobacz [Sprawdzanie poprzedniego stanu aplikacji przy użyciu IntelliTrace](../debugger/view-historical-application-state.md).
+- Aby dowiedzieć się więcej o różnych ustawieniach i efektach różnych przycisków na marginesie nawigacyjnym, zobacz [IntelliTrace Features](../debugger/intellitrace-features.md).

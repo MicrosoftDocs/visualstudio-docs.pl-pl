@@ -1,7 +1,7 @@
 ---
 title: Znajdowanie przecieków pamięci za pomocą biblioteki CRT | Microsoft Docs
 ms.date: 10/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae879d8ed03653959ae926cc372300db9b71b9f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182654"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350488"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Znajdowanie przecieków pamięci za pomocą biblioteki CRT
 
@@ -260,7 +260,7 @@ Jedna z technik znajdowania przecieków pamięci rozpoczyna się od umieszczenia
 
  `_CrtDumpMemoryLeaks`może dawać fałszywych wskazań przecieków pamięci, jeśli biblioteka oznacza wewnętrzne alokacje jako bloki normalne zamiast bloków CRT lub bloków klienta. W takim przypadku `_CrtDumpMemoryLeaks` nie jest możliwe poinformowanie różnic między przydziałami użytkowników i wewnętrznymi przydziałami bibliotek. Jeśli globalne destruktory alokacji biblioteki są uruchamiane po punkcie, w którym jest wywoływana `_CrtDumpMemoryLeaks` , każda alokacja biblioteki wewnętrznej jest raportowana jako przeciek pamięci. Wersje biblioteki standardowego szablonu starszej niż Visual Studio .NET mogą spowodować `_CrtDumpMemoryLeaks` zgłoszenie fałszywych wyników.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Szczegóły sterty debugowania CRT](../debugger/crt-debug-heap-details.md)
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: zmienianie czcionek | Microsoft Docs'
+title: Jak zmienić czcionki | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - fonts, SpyHelp
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf933dc7277f0f4c1533ca071a391b78413b029
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5597d1f7c14e1c37c55751c85e0dc53092c3af1c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733938"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350267"
 ---
 # <a name="how-to-change-fonts"></a>Porady: zmienianie czcionek
 Możesz zmienić czcionkę, styl czcionki i rozmiar czcionki dla systemu Windows Spy + +.
@@ -30,7 +30,7 @@ Możesz zmienić czcionkę, styl czcionki i rozmiar czcionki dla systemu Windows
 
    Wybranie opcji **Zapisz czcionkę jako domyślne** spowoduje, że wszystkie przyszłe okna programu Spy + + będą używać tej czcionki.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
-- [Widoki w programie Spy++](../debugger/spy-increment-views.md)
-- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)
+- [Spy++ — Widoki](../debugger/spy-increment-views.md)
+- [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)

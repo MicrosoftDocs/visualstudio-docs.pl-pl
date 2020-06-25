@@ -2,7 +2,7 @@
 title: Wyświetlanie stosu wywołań w debugerze | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535979"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348746"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Wyświetlanie stosu wywołań i korzystanie z okna stosu wywołań w debugerze
 
@@ -52,7 +52,7 @@ Gdy [symbole debugowania](#bkmk_symbols) nie są dostępne dla części stosu wy
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Wyświetlanie stosu wywołań w debugerze
 
-- Podczas debugowania, w menu **Debuguj** wybierz opcję **stos wywołań systemu Windows >** .
+- Podczas debugowania, w menu **Debuguj** wybierz opcję **stos wywołań systemu Windows >**.
 
   ![Okno stosu wywołań](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
@@ -66,7 +66,7 @@ Kod niebędący użytkownikiem jest dowolnym kodem, który nie jest wyświetlany
 
 `[<External Code>]`
 
-## <a name="bkmk_switch"></a>Przełącz do innej ramki stosu (Zmień kontekst debugera)
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a>Przełącz do innej ramki stosu (Zmień kontekst debugera)
 
 1. W oknie **stos wywołań** kliknij prawym przyciskiem myszy ramkę stosu, której kod i dane chcesz wyświetlić.
 
@@ -96,21 +96,21 @@ Kod niebędący użytkownikiem jest dowolnym kodem, który nie jest wyświetlany
 
 W Visual Studio Enterprise (tylko) można wyświetlić mapy kodu dla stosu wywołań podczas debugowania.
 
-- W oknie **stos wywołań** Otwórz menu skrótów. Wybierz pozycję **Pokaż stos wywołań na mapie kodu** (**Ctrl**  + **SHIFT**  +  **`** ).
+- W oknie **stos wywołań** Otwórz menu skrótów. Wybierz pozycję **Pokaż stos wywołań na mapie kodu** (**Ctrl**  +  **SHIFT**  +  **`** ).
 
     Aby uzyskać więcej informacji, zobacz [Mapowanie metod w stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
 ![Pokaż stos wywołań na mapie kodu](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Wyświetl kod demontażu dla funkcji na stosie wywołań (C#, C++Visual Basic,) F#
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Wyświetlanie kodu demontażu dla funkcji na stosie wywołań (C#, C++, Visual Basic, F #)
 
 - W oknie **stos wywołań** kliknij prawym przyciskiem myszy funkcję, której kod demontażu chcesz zobaczyć, i wybierz polecenie **Przejdź do demontażu**.
 
 ## <a name="change-the-optional-information-displayed"></a>Zmień wyświetlane informacje opcjonalne
 
-- Kliknij prawym przyciskiem myszy w oknie **stos wywołań** i ustaw lub wyczyść **\<** _informacje, które chcesz_  **>** .
+- Kliknij prawym przyciskiem myszy w oknie **stos wywołań** i ustaw lub wyczyść opcję **Pokaż \<**_the information that you want_**> **.
 
-## <a name="bkmk_symbols"></a>Załaduj symbole dla modułu (C#, C++, Visual Basic, F#)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a>Załaduj symbole dla modułu (C#, C++, Visual Basic, F #)
 
 W oknie **stos wywołań** można załadować symbole debugowania dla kodu, który nie ma obecnie załadowanych symboli. Tymi symbolami mogą być symbole .NET lub systemowe pobrane z publicznych serwerów symboli firmy Microsoft lub symbole w ścieżce symboli na komputerze, który jest debugowany.
 
@@ -138,7 +138,7 @@ Zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify
 
 5. Wybierz **przycisk OK** , aby zamknąć okno dialogowe **Opcje** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kod mieszany i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

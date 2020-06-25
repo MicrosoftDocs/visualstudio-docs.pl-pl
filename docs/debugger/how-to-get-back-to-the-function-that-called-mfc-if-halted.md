@@ -1,8 +1,8 @@
 ---
-title: Wróć do funkcji, która wywołała MFC przy zatrzymaniu | Dokumentacja firmy Microsoft
+title: Wróć do funkcji, która wywołała MFC, jeśli została zatrzymana | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.mfc
 dev_langs:
@@ -24,27 +24,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef96bab28b1a17d4f20728a393511720fd10c624
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906695"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349474"
 ---
-# <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Instrukcje: Wróć do funkcji, która wywołała MFC przy zatrzymaniu
+# <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Porady: powracanie do funkcji, która wywołała MFC przy zatrzymaniu
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
-Jeśli użyto **Przerwij** polecenie **debugowania** menu, aby zatrzymać program zakończył w MFC i wiesz, czy problem jest w kodzie okno stosu wywołań można przejść z powrotem do funkcji. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
+Jeśli użyto polecenia **Break** w menu **Debuguj** , aby zatrzymać program i zakończył się w MFC, i masz pewność, że problem występuje w kodzie, możesz użyć okna stosu wywołań, aby przejść z powrotem do funkcji. Aby uzyskać więcej informacji, zobacz [jak: korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
-Czasami Twój kod może spowodować przerwanie "pompy komunikatów". W takiej sytuacji istnieje żaden kod użytkownika w stosie wywołań. Aby uniknąć tego problemu, można użyć punktów przerwania (także z warunków i liczniki trafień) zamiast **Przerwij** polecenia. Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+Czasami kod może ulec przerwaniu w pompie komunikatów. W takim przypadku nie ma kodu użytkownika na stosie wywołań. Aby uniknąć tego problemu, można użyć punktów przerwania (prawdopodobnie z warunkami i liczbami trafień) zamiast polecenia **Break** . Aby uzyskać więcej informacji, zobacz [punkty przerwania i punkty śledzenia](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
 
-## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Przejdź do funkcji, z którego wywołano MFC
+## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Przejdź do funkcji, z której wywołano MFC
 
-- Użyj **stos wywołań** okna.
+- Użyj okna **stosu wywołań** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+- [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

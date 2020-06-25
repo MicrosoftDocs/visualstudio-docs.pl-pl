@@ -1,7 +1,7 @@
 ---
 title: Wyświetlanie wątków GPU w debugerze | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732087"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348720"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Instrukcje: korzystanie z okna wątków procesora GPU (C++)
-W oknie wątki GPU można przeanalizować i pracować z wątkami uruchomionymi na procesorze GPU w debugowanej aplikacji. Aby uzyskać więcej informacji o aplikacjach uruchamianych na procesorze GPU, zobacz [ C++ amp Overview](/cpp/parallel/amp/cpp-amp-overview).
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Instrukcje: korzystanie z okna wątków GPU (C++)
+W oknie wątki GPU można przeanalizować i pracować z wątkami uruchomionymi na procesorze GPU w debugowanej aplikacji. Aby uzyskać więcej informacji o aplikacjach uruchamianych na procesorze GPU, zobacz [C++ amp Omówienie](/cpp/parallel/amp/cpp-amp-overview).
 
  Okno wątki GPU zawiera tabelę, w której każdy wiersz reprezentuje zestaw wątków procesora GPU, które mają te same wartości we wszystkich kolumnach. Można sortować, zmienić kolejność, usuwać i grupować elementy, które znajdują się w kolumnach. Wątki z okna wątków GPU umożliwiają Flagowanie, usuwanie flag, blokowanie (Wstrzymywanie) i odblokowywanie (wznawianie). W oknie wątki GPU są wyświetlane następujące kolumny:
 
@@ -102,7 +102,7 @@ W oknie wątki GPU można przeanalizować i pracować z wątkami uruchomionymi n
 
 - Wybierz przycisk flagi w oknie wątki GPU.
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Instrukcje: korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)
+## <a name="see-also"></a>Zobacz też
+- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Instrukcje: korzystanie z okna czujki równoległej](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

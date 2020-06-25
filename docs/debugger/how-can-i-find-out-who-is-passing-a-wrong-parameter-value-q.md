@@ -2,7 +2,7 @@
 title: Dowiedz się, kto przekazuje nieprawidłową wartość parametru | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.parameters
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42884cd6498f00cfe2df2d0396ff9ea6b03c2f98
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d00327315b98c4b55797187c59db3a81ee351fb0
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734237"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350345"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Jak można sprawdzić, kto przekazuje błędną wartość parametru?
 ## <a name="problem-description"></a>Opis problemu
@@ -43,15 +43,15 @@ ms.locfileid: "72734237"
 
 3. W oknie dialogowym **warunek punktu przerwania** kliknij pole wyboru **warunek** . Zobacz [Zaawansowane punkty przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
-4. Wprowadź wyrażenie, takie jak `Var==3`, w polu tekstowym, gdzie `Var` jest nazwą parametru, który zawiera nieprawidłową wartość, a `3` jest nieprawidłową wartością przekazaną do niego.
+4. Wprowadź wyrażenie, takie jak `Var==3` , w polu tekstowym, gdzie `Var` jest nazwą parametru, który zawiera nieprawidłową wartość, i `3` jest nieprawidłową wartością przekazaną do niego.
 
 5. Wybierz przycisk radiowy **ma wartość true** , a następnie kliknij przycisk **OK** .
 
-6. Teraz ponownie uruchom program. Punkt przerwania powoduje zatrzymanie programu na początku funkcji, gdy parametr `Var` ma wartość `3`.
+6. Teraz ponownie uruchom program. Punkt przerwania powoduje zatrzymanie programu na początku funkcji, gdy `Var` parametr ma wartość `3` .
 
 7. Użyj okna stosu wywołań, aby znaleźć funkcję wywołującą i przejść do jej kodu źródłowego. Aby uzyskać więcej informacji, zobacz [jak: korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie kodu natywnego — Często zadawane pytania](../debugger/debugging-native-code-faqs.md)
 - [Punkty przerwania](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

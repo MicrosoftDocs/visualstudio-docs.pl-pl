@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Przywracanie ukrytych poleceń debugera | Microsoft Docs'
+title: Jak przywrócić ukryte polecenia debugera | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a45791843abe3051bacb9655c773ac9dfc6b9045
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 13b4db03a75decd41430c282a67276caa60182d8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732910"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349383"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Porady: przywracanie ukrytych poleceń debugera
 Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybranie zestawu domyślnych ustawień IDE dla podstawowego języka programowania. W przypadku niektórych języków domyślne ustawienia środowiska IDE mogą ukrywać niektóre polecenia debugera.
@@ -60,7 +60,7 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
 
 3. Na stronie **Zapisz bieżące ustawienia** Zdecyduj, czy zapisać istniejące ustawienia, a następnie kliknij przycisk **dalej**.
 
-4. Na stronie **Wybierz kolekcję ustawień do zaimportowania** w folderze **Ustawienia domyślne** wybierz kolekcję ustawień deweloperskich z poleceniami, które mają być używane. Jeśli nie wiesz, którą kolekcję wybrać, wypróbuj **Ogólne ustawienia deweloperskie** lub **Ustawienia programowania C++ wizualnego**, które udostępniają większość poleceń debugera.
+4. Na stronie **Wybierz kolekcję ustawień do zaimportowania** w folderze **Ustawienia domyślne** wybierz kolekcję ustawień deweloperskich z poleceniami, które mają być używane. Jeśli nie wiesz, którą kolekcję wybrać, wypróbuj **Ogólne ustawienia deweloperskie** lub **Visual C++ ustawienia deweloperskie**, które udostępniają większość poleceń debugera.
 
 5. Kliknij przycisk **Dalej**.
 
@@ -72,6 +72,6 @@ Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybr
 
 9. Kliknij przycisk **Zamknij**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Instalowanie wizualizatora | Microsoft Docs'
+title: Jak zainstalować wizualizatora | Microsoft Docs
 ms.date: 06/10/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286391"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349565"
 ---
 # <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
 Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostępny w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Instalowanie wizualizatora jest prostym procesem.

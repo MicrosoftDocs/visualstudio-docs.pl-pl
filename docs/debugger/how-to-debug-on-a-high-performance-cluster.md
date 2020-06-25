@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: debugowanie w klastrze o wysokiej wydajności | Microsoft Docs'
+title: Jak debugować klaster o wysokiej wydajności | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 905a196b0872ac0d8665293200837861adf49795
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733664"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350072"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Instrukcje: debugowanie w klastrze o wysokiej wydajności (C#, Visual Basic,) C++
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Instrukcje: debugowanie w klastrze o wysokiej wydajności (C#, Visual Basic, C++)
 
 Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajności jest podobne do debugowania zwykłego programu na komputerze zdalnym. Jednak istnieją pewne dodatkowe zagadnienia. Ogólne wymagania dotyczące instalacji zdalnej można znaleźć w temacie [zdalne debugowanie](../debugger/remote-debugging.md).
 
- Podczas debugowania w klastrze o wysokiej wydajności można używać wszystkich okien debugowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i technik, które są dostępne do zdalnego debugowania. Ponieważ debugowanie jest przeprowadzane zdalnie, nie jest jednak dostępne okno konsoli zewnętrznej.
+ Podczas debugowania w klastrze o wysokiej wydajności można używać wszystkich [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okien debugowania i technik, które są dostępne do zdalnego debugowania. Ponieważ debugowanie jest przeprowadzane zdalnie, nie jest jednak dostępne okno konsoli zewnętrznej.
 
  Okno **wątków** okna i **procesy** są szczególnie przydatne w przypadku debugowania aplikacji równoległych. Aby uzyskać porady dotyczące korzystania z tych okien, zobacz [How to: Use the processs Window](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) and [Instruktaż: Debug using the Threads Window](../debugger/how-to-use-the-threads-window.md).
 
@@ -51,7 +51,7 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
 
      MachineName =*yourmachinename*
 
-     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&`, operatora i, `||`, operatora OR, `!`, operatora NOT i nawiasów.
+     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&` , operatora i, `||` ,, operatora OR, operatora `!` not i nawiasów.
 
 4. Kliknij przycisk **OK**.
 
@@ -67,9 +67,9 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
 
      —lub—
 
-     `ProcessID =` *yourprocessIDnumber*
+     `ProcessID =`*yourprocessIDnumber*
 
-     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&`, operatora i, `||`, operatora OR, `!`, operatora NOT i nawiasów.
+     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&` , operatora i, `||` ,, operatora OR, operatora `!` not i nawiasów.
 
 4. Kliknij przycisk **OK**.
 
@@ -81,23 +81,23 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
 
 3. W oknie dialogowym **Filtr punktu przerwania** wpisz:
 
-     `ThreadName =` *yourthreadname*
+     `ThreadName =`*yourthreadname*
 
      —lub—
 
-     `ThreadID =` *yourthreadIDnumber*
+     `ThreadID =`*yourthreadIDnumber*
 
-     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&`, operatora i, `||`, operatora OR, `!`, operatora NOT i nawiasów.
+     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&` , operatora i, `||` ,, operatora OR, operatora `!` not i nawiasów.
 
 4. Kliknij przycisk **OK**.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak utworzyć filtr dla punktu przerwania na komputerze o nazwie `marvin` i wątku o nazwie `fourier1`.
+ Poniższy przykład pokazuje, jak utworzyć filtr dla punktu przerwania na komputerze o nazwie `marvin` i wątku o nazwie `fourier1` .
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz też
+- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
 - [Instrukcje: korzystanie z okna procesy](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [Rozpocznij debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)

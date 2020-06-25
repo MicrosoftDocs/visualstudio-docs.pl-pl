@@ -8,4 +8,4 @@ ms.lasthandoff: 03/20/2020
 ms.locfileid: "68144841"
 ---
 > [!NOTE]
-> Funkcja testu wydajności sieci Web i obciążenia jest przestarzała. Visual Studio 2019 to ostatnia wersja, w której będą dostępne testy wydajności i obciążenia sieci Web. Aby uzyskać więcej informacji, zobacz wpis w blogu [o zakończeniu pracy usługi testowania obciążenia w chmurze.](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/)
+> Funkcje testu wydajności sieci Web i obciążenia są przestarzałe. Program Visual Studio 2019 to Ostatnia wersja, w której będą dostępne testy wydajności i obciążenia sieci Web. Aby uzyskać więcej informacji, zobacz wpis na blogu [koniec usługi testowania obciążenia opartego na chmurze](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) .

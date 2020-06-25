@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Edytowanie wartości rejestru | Microsoft Docs'
+title: Jak edytować wartość rejestru | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733416"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349825"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Instrukcje: Edytowanie wartości rejestru (C#, C++, Visual Basic,) F#
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Instrukcje: Edytowanie wartości rejestru (C#, C++, Visual Basic, F #)
 
 Okno rejestry jest dostępne tylko wtedy, gdy w oknie dialogowym **Opcje** jest **włączone debugowanie na** poziomie adresu.
 
@@ -42,5 +42,5 @@ Okno rejestry jest dostępne tylko wtedy, gdy w oknie dialogowym **Opcje** jest 
     > [!CAUTION]
     > Edytowanie wartości zmiennoprzecinkowych może spowodować powstanie nieścisłych niedokładności z powodu konwersji dziesiętnej na binarną składników ułamkowych. Nawet pozornie niewielkiej ilości Edycja może spowodować zmianę niektórych najmniej znaczących bitów w rejestrze zmiennoprzecinkowym.
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
+## <a name="see-also"></a>Zobacz też
+- [Porady: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

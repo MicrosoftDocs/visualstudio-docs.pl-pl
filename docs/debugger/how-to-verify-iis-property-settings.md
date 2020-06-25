@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Sprawdź właściwości ustawień usług IIS | Dokumentacja firmy Microsoft'
+title: Jak zweryfikować ustawienia właściwości usług IIS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,64 +19,64 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846431"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348473"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Instrukcje: Weryfikacja właściwości ustawień IIS
+# <a name="how-to-verify-iis-property-settings"></a>Porady: weryfikacja właściwości ustawień IIS
 
-Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia administracyjnego IIS. Te właściwości muszą być ustawione poprawnie dla aplikacji do uruchomienia, więc weryfikowanie tych ustawień jest często konieczne etapem rozwiązywania problemów.
+Możesz ustawić właściwości aplikacji sieci Web za pomocą narzędzia administracyjnego usług IIS. Aby można było uruchomić aplikację, te właściwości muszą być poprawnie skonfigurowane, co oznacza, że te ustawienia często są niezbędne do rozwiązywania problemów.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Aby sprawdzić ustawienia usług IIS dla aplikacji sieci Web
 
-1. Otwórz **narzędzia administracyjne** okna: Na **Start** menu wskaż **programy**, a następnie kliknij przycisk **narzędzia administracyjne**. Jeśli **narzędzia administracyjne** nie jest widoczna w **programy** menu, a następnie wyszukaj go w **Panelu sterowania**.
+1. Otwórz okno **Narzędzia administracyjne** : w menu **Start** wskaż pozycję **programy**, a następnie kliknij pozycję **Narzędzia administracyjne**. Jeśli **Narzędzia administracyjne** nie są wyświetlane w menu **programy** , wyszukaj je w **Panelu sterowania**.
 
-   - W systemie operacyjnym Windows 2000, wybierz **Menedżera internetowych usług**.
+   - W systemie Windows 2000 wybierz pozycję **Menedżer usług internetowych**.
 
-   - Windows XP, należy wybrać **Internetowe usługi informacyjne**.
+   - W systemie Windows XP wybierz pozycję **Internet Information Services**.
 
-   - W systemie Windows Server 2003, kliknij dwukrotnie **Zarządzanie serwerem**.
+   - W systemie Windows Server 2003 kliknij dwukrotnie pozycję **Zarządzanie serwerem**.
 
-        **Zarządzanie serwerem** zostanie otwarte okno. W obszarze **serwera aplikacji**, kliknij przycisk **zarządzać tym serwerem aplikacji**.
+        Zostanie otwarte okno **Zarządzanie serwerem** . W obszarze **serwer aplikacji**kliknij pozycję **Zarządzaj tym serwerem aplikacji**.
 
-        **Serwera aplikacji** zostanie otwarte okno. Otwórz **Internet Information Services (IIS) Manager** węzła w okienku po lewej stronie.
+        Zostanie otwarte okno **serwer aplikacji** . Otwórz węzeł **menedżer Internet Information Services (IIS)** w okienku po lewej stronie.
 
-2. W oknie dialogowym kliknij węzeł formantu drzewa dla maszyny. Kliknij przycisk **witryn sieci Web** węzeł i wybierz węzeł, aplikacji sieci Web. To będzie węzeł witryny sieci Web, a tym samym elementem równorzędnym węzła **domyślna witryna sieci Web** , lub węzeł katalogu wirtualnego, poniżej istniejący węzeł witryny sieci Web.
+2. W oknie dialogowym kliknij węzeł kontrolki drzewa dla komputera. Kliknij węzeł **witryny sieci Web** , a następnie wybierz węzeł aplikacji sieci Web. Będzie to węzeł witryny sieci Web, a więc element równorzędny **domyślnego węzła witryny sieci Web** lub węzeł katalogu wirtualnego znajdujący się pod istniejącym węzłem witryny sieci Web.
 
-3. Kliknij prawym przyciskiem myszy aplikację sieci Web, a następnie w menu skrótów kliknij **właściwości**.
+3. Kliknij prawym przyciskiem myszy aplikację sieci Web, a następnie w menu skrótów kliknij polecenie **Właściwości**.
 
-4. Sprawdź ustawienia zabezpieczeń dla aplikacji sieci Web:
+4. Sprawdź ustawienia zabezpieczeń aplikacji sieci Web:
 
-   1. W aplikacji sieci Web **właściwości** okna, kliknij przycisk **zabezpieczeń katalogu** kartę, a następnie kliknij przycisk **Edytuj**.
+   1. W oknie **Właściwości** aplikacji sieci Web kliknij kartę **Zabezpieczenia katalogów** , a następnie kliknij przycisk **Edytuj**.
 
-   2. W **metod uwierzytelniania** okno dialogowe, wybierz opcję **Włącz dostęp anonimowy** i **uwierzytelniania zintegrowanego Windows** Jeśli nie są jeszcze wybrane.
+   2. W oknie dialogowym **metody uwierzytelniania** wybierz opcję **Włącz dostęp anonimowy** i **zintegrowane uwierzytelnianie systemu Windows** , jeśli nie zostały jeszcze wybrane.
 
-   3. Kliknij przycisk **OK** zamknąć **metod uwierzytelniania** okno dialogowe.
+   3. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **metody uwierzytelniania** .
 
-5. Dla aplikacji serwera ATL. Sprawdź, czy czasownik DEBUG jest skojarzony z rozszerzenia ISAPI. Aby uzyskać więcej informacji, zobacz [jak: Skojarz czasownik DEBUG z rozszerzeniem](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. W przypadku aplikacji serwera ATL upewnij się, że zlecenie debugowania jest skojarzone z rozszerzeniem ISAPI. Aby uzyskać więcej informacji, zobacz [How to: Skojarz CZASOWNIK Debug with Extension](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
-6. Aby uzyskać [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji, sprawdź folder wirtualny dla aplikacji ma nazwę aplikacji w **Menedżera usług Internet Information Services (IIS)**, **Menedżera internetowych usług** lub  **Internetowe usługi informacyjne**.
+6. W przypadku [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji upewnij się, że folder wirtualny aplikacji ma ustawioną nazwę aplikacji w **Menedżerze Internet Information Services (IIS)**, **Menedżer usług internetowych** lub **Internet Information Services**.
 
-   1. W aplikacji sieci Web **właściwości** wybierz **katalogu** kartę, jeśli aplikacja znajduje się w katalogu wirtualnym lub **katalog macierzysty** kartę, jeśli aplikacja znajduje się w Witryna sieci Web.
+   1. W oknie **Właściwości** aplikacji sieci Web wybierz kartę **katalog** , jeśli aplikacja znajduje się w katalogu wirtualnym lub na karcie **katalog macierzysty** , jeśli aplikacja znajduje się w witrynie sieci Web.
 
-   2. Upewnij się, że nazwa w **ścieżkę lokalną** jest zgodna z nazwą katalogu, w którym aplikacja została faktycznie wdrożona.
+   2. Sprawdź, czy nazwa w **ścieżce lokalnej** jest zgodna z nazwą katalogu, w którym aplikacja została faktycznie wdrożona.
 
-   3. W obszarze **ustawienia aplikacji**, wpisz nazwę katalogu głównego, który zawiera aplikację.
+   3. W obszarze **Ustawienia aplikacji**wpisz nazwę katalogu głównego, który zawiera aplikację.
 
-   4. Kliknij przycisk **OK** zamknąć **właściwości** okno dialogowe.
+   4. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Właściwości** .
 
-7. Dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji, kliknij przycisk **ASP.NET** kartę i sprawdź, czy poprawną wersję [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] jest określony.
+7. W przypadku [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji kliknij kartę **ASP.NET** i sprawdź, czy została określona poprawna wersja programu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 
-8. Kliknij przycisk **OK** zamknąć **właściwości** okno dialogowe.
+8. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Właściwości** .
 
-9. Kliknij przycisk **OK** zamknąć **Internet Information Services (IIS) Manager**, **Menedżera usług internetowych**, lub **Internetowe usługi informacyjne**okno dialogowe.
+9. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Internet Information Services (IIS) menedżer** **Menedżer usług internetowych**lub **Internet Information Services** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązywanie problemów](../debugger/debugging-web-applications-troubleshooting.md)

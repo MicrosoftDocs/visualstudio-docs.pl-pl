@@ -1,8 +1,8 @@
 ---
-title: Ustawianie zegarka na zmiennych | Dokumenty firmy Microsoft
+title: Ustaw czujkę na zmienne | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/11/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -17,26 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302008"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348031"
 ---
-# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obserwuj zmienne za pomocą okien zegarka i zegarka QuickWatch
+# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obejrzyj zmienne z oknami Watch i QuickWatch
 
-Podczas debugowania można używać **watch** windows i **QuickWatch** do oglądania zmiennych i wyrażeń. Okna są dostępne tylko podczas sesji debugowania.
+Gdy debugujesz, możesz użyć okien kontrolnych **Watch** i **QuickWatch** , aby obejrzeć zmienne i wyrażenia. System Windows jest dostępny tylko podczas sesji debugowania.
 
-**Okna zegarka** mogą wyświetlać kilka zmiennych naraz podczas debugowania. Okno dialogowe **QuickWatch** wyświetla pojedynczą zmienną naraz i musi zostać zamknięty, zanim debugowanie będzie można kontynuować.
+Okna **czujki** mogą wyświetlać kilka zmiennych jednocześnie podczas debugowania. W oknie dialogowym **QuickWatch** jest wyświetlana pojedyncza zmienna i musi być ZAMKNIĘTA, zanim będzie można kontynuować debugowanie.
 
-Jeśli jest to pierwszy raz, który próbowałeś debugować kod, można przeczytać [debugowanie dla początkujących absolutnych](../debugger/debugging-absolute-beginners.md) i [debugowanie technik i narzędzi](../debugger/write-better-code-with-visual-studio.md) przed przejściem przez ten artykuł.
+Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
 
-## <a name="observe-variables-with-a-watch-window"></a>Obserwowanie zmiennych za pomocą okna czujki
+## <a name="observe-variables-with-a-watch-window"></a>Obserwuj zmienne z okno wyrażeń kontrolnych
 
-Można otworzyć więcej niż jedno okno **czujki** i obserwować więcej niż jedną zmienną w oknie **czujki.**
+Można otworzyć więcej niż jedno okno **czujki** i obserwować więcej niż jedną zmienną w oknie **czujki** .
 
-Na przykład, aby ustawić zegarek `a`na `b`wartości `c` , i w poniższym kodzie:
+Na przykład, aby ustawić czujkę na wartościach `a` , `b` i `c` w poniższym kodzie:
 
 ```C++
 int main()
@@ -58,85 +58,85 @@ int main()
 
 ```
 
-1. Ustaw punkt przerwania `c = a + b;` w wierszu, klikając lewy margines, wybierając **pozycję Debug** > **Toggle Breakpoint**lub naciskając **klawisz F9**.
+1. Ustaw punkt przerwania w `c = a + b;` wierszu, klikając na lewym marginesie pozycję **Debuguj**  >  **Przełącz punkt przerwania**lub naciskając klawisz **F9**.
 
-1. Rozpocznij debugowanie, wybierając zieloną strzałkę **Start** lub **Debugowanie** > **startowe**lub naciśnij **klawisz F5**. Wykonywanie wstrzymuje się w punkcie przerwania.
+1. Rozpocznij debugowanie, wybierając zieloną strzałkę **startową** lub **Debuguj**  >  **Rozpocznij debugowanie**lub naciśnij klawisz **F5**. Wykonywanie jest wstrzymywane w punkcie przerwania.
 
-1. Otwórz okno **Czujka,** wybierając **pozycję Debugowanie** > **zegarka** > **Windows** > Watch**1**lub **naciśnięcie klawisza Ctrl**+**Alt**+**W** > **1**.
+1. Otwórz okno **czujki** , wybierając **Debuguj**  >  **Windows**  >  **Watch**  >  **Watch 1**lub naciśnij **klawisze CTRL** + **Alt** + **W**  >  **1**.
 
-   Dodatkowe okna **zegarka** można otworzyć, wybierając system Windows **2,** **3**lub **4**.
+   Możesz otworzyć dodatkowe okna **czujki** , wybierając pozycję Windows **2**, **3**lub **4**.
 
-1. W oknie **Czujka** zaznacz pusty wiersz `a`i wpisz zmienną . Zrób to `b` samo `c`dla i .
+1. W oknie **czujka** zaznacz pusty wiersz i wpisz zmienna `a` . Wykonaj te same czynności dla `b` i `c` .
 
-   ![Wyrażenia kontrolne zmiennych](../debugger/media/watchvariables.png "WatchVariables (Odmiany zegarków)")
+   ![Wyrażenia kontrolne zmiennych](../debugger/media/watchvariables.png "WatchVariables")
 
-1. Kontynuuj debugowanie, wybierając **debugowanie** > **step into** lub naciskając klawisz **F11** w razie potrzeby, aby przejść. Wartości zmiennych w oknie **Czujka** zmieniają się `for` podczas iteracji w pętli.
+1. Kontynuuj debugowanie, wybierając pozycję **Debuguj**do  >  **kroku** lub naciskając klawisz **F11** w razie potrzeby. Wartości zmiennych w oknie **czujki** zmieniają się podczas iteracji `for` pętli.
 
 >[!NOTE]
->Tylko w przypadku języka C++
->- Może być konieczne zakwalifikowanie kontekstu nazwy zmiennej lub wyrażenia, które używa nazwy zmiennej. Kontekstem jest funkcja, plik źródłowy lub moduł, w którym znajduje się zmienna. Jeśli musisz zakwalifikować kontekst, użyj składni [operatora kontekstu (C++)](../debugger/context-operator-cpp.md) w **oknie Nazwa** w oknie **Czujka.**
+>Tylko w języku C++
+>- Może być konieczne zakwalifikowanie kontekstu nazwy zmiennej lub wyrażenia, które używa nazwy zmiennej. Kontekst jest funkcją, plikiem źródłowym lub modułem, gdzie znajduje się zmienna. Jeśli musisz zakwalifikować kontekst, użyj składni [operatora kontekstu (C++)](../debugger/context-operator-cpp.md) w **nazwie** w oknie **czujki** .
 >
->- Nazwy rejestru i nazwy zmiennych można dodawać przy użyciu ** $ \<nazwy rejestru&nbsp;>** lub ** @ \<>nazwy rejestru&nbsp;** do **nazwy** w oknie **Czujka.** Aby uzyskać więcej informacji, zobacz [Pseudowariables](../debugger/pseudovariables.md).
+>- Nazwy rejestrów i nazw zmiennych można dodawać przy użyciu **$\<register&nbsp;name>** lub **@\<register&nbsp;name>** do **nazwy** w oknie **czujki** . Aby uzyskać więcej informacji, zobacz [pseudozmiennych pokazanych](../debugger/pseudovariables.md).
 
-## <a name="use-expressions-in-a-watch-window"></a>Używanie wyrażeń w oknie czujki
+## <a name="use-expressions-in-a-watch-window"></a>Używanie wyrażeń w okno wyrażeń kontrolnych
 
-Można zaobserwować dowolne prawidłowe wyrażenie rozpoznawane przez debuger w oknie **czujki.**
+Można obserwować dowolne prawidłowe wyrażenie rozpoznawane przez debuger w oknie **czujki** .
 
-Na przykład dla kodu w poprzedniej sekcji można uzyskać średnią z trzech `(a + b + c) / 3` wartości, wprowadzając w **watch** okna:
+Na przykład dla kodu w poprzedniej sekcji można uzyskać średnią z trzech wartości, wprowadzając `(a + b + c) / 3` w oknie **czujka** :
 
-![Wyrażenie zegarka](../debugger/media/watchexpression.png "Wyrażenie zegarka")
+![Wyrażenie czujki](../debugger/media/watchexpression.png "Wyrażenie czujki")
 
-Reguły oceny wyrażeń w oknie **Czujki** są zazwyczaj takie same jak reguły oceny wyrażeń w języku kodu. Jeśli wyrażenie ma błąd składni, należy oczekiwać tego samego błędu kompilatora, jak w edytorze kodu. Na przykład literówka w poprzednim wyrażeniu powoduje ten błąd w oknie **Czujka:**
+Reguły oceniania wyrażeń w oknie **czujki** są generalnie takie same jak reguły oceniania wyrażeń w języku kodu. Jeśli wyrażenie ma błąd składniowy, oczekiwano tego samego błędu kompilatora jak w edytorze kodu. Na przykład literówka w powyższym wyrażeniu generuje ten błąd w oknie **czujka** :
 
-![Błąd wyrażenia obserwowanie](../debugger/media/watchexpressionerror.png "Błąd wyrażenia obserwowanie")
+![Błąd wyrażenia czujki](../debugger/media/watchexpressionerror.png "Błąd wyrażenia czujki")
 
-W oknie **Czujka** może pojawić się okrąg z ikoną dwóch falistych linii. Ta ikona oznacza, że debuger nie ocenia wyrażenia z powodu potencjalnej zależności między wątkami. Ocena kodu wymaga innych wątków w aplikacji, aby uruchomić tymczasowo, ale ponieważ jesteś w trybie przerwania, wszystkie wątki w aplikacji są zwykle zatrzymane. Zezwalając na tymczasowe uruchamianie innych wątków może mieć nieoczekiwany wpływ na stan aplikacji, a debuger może ignorować zdarzenia, takie jak punkty przerwania i wyjątki w tych wątkach.
+W oknie **czujka** może pojawić się okrąg z dwiema falistymi liniami. Ta ikona oznacza, że debuger nie oblicza wyrażenia ze względu na potencjalną zależność między wątkami. Ocenianie kodu wymaga tymczasowego uruchomienia innych wątków w aplikacji, ale ponieważ jest w trybie przerwania, wszystkie wątki w aplikacji są zwykle zatrzymane. Umożliwienie tymczasowego uruchamiania innych wątków może mieć nieoczekiwany wpływ na stan aplikacji, a debuger może ignorować zdarzenia, takie jak punkty przerwania i wyjątki w tych wątkach.
 
 ::: moniker range=">= vs-2019" 
-## <a name="search-in-the-watch-window"></a>Wyszukiwanie w oknie Czujka
+## <a name="search-in-the-watch-window"></a>Wyszukaj w okno wyrażeń kontrolnych
 
-Słowa kluczowe w kolumnach Nazwa, Wartość i Typ okna **Czujka** można wyszukiwać za pomocą paska wyszukiwania nad każdym oknem. Naciśnij klawisz ENTER lub wybierz jedną ze strzałek, aby przeprowadzić wyszukiwanie. Aby anulować trwające wyszukiwanie, wybierz ikonę "x" na pasku wyszukiwania.
+Słowa kluczowe można wyszukiwać w kolumnach Nazwa, wartość i typ okna **czujka** przy użyciu paska wyszukiwania powyżej każdego okna. Naciśnij klawisz ENTER lub wybierz jedną ze strzałek, aby wykonać wyszukiwanie. Aby anulować bieżące wyszukiwanie, wybierz ikonę "x" na pasku wyszukiwania.
 
-Użyj strzałek w lewo i w prawo (Odpowiednio Shift+F3 i F3), aby poruszać się między znalezionymi dopasowaniami.
+Użyj strzałek w lewo i w prawo (odpowiednio Shift + F3 i F3), aby poruszać się między znalezionymi dopasowaniami.
 
-![Szukaj w oknie zegarka](../debugger/media/ee-search-watch.png "Szukaj w oknie zegarka")
+![Wyszukaj w oknie czujki](../debugger/media/ee-search-watch.png "Wyszukaj w oknie czujki")
 
-Aby wyszukiwanie było mniej lub bardziej dokładne, użyj listy rozwijanej **Wyszukaj głębiej** w górnej części okna **Czujka,** aby wybrać liczbę poziomów głębokości, które chcesz przeszukać w obiektach zagnieżdżonych. 
+Aby przeszukać więcej lub mniej szczegółowych informacji, Użyj listy rozwijanej **Szukaj z dokładniejszą** w górnej części okna **czujka** , aby wybrać liczbę poziomów, które mają być przeszukiwane w zagnieżdżonych obiektach. 
 
-## <a name="pin-properties-in-the-watch-window"></a>Właściwości pinów w oknie Czujka
+## <a name="pin-properties-in-the-watch-window"></a>Przypnij właściwości w okno wyrażeń kontrolnych
 
 >[!NOTE]
-> Ta funkcja jest obsługiwana w pliku .NET Core 3.0 lub nowszym.
+> Ta funkcja jest obsługiwana w programie .NET Core 3,0 lub nowszym.
 
-Za pomocą narzędzia **Właściwości pinnable** można szybko sprawdzić obiekty według ich właściwości w oknie Czujka.  Aby użyć tego narzędzia, umieść wskaźnik myszy na właściwości i wybierz ikonę pinezki, która się pojawi lub kliknij prawym przyciskiem myszy i wybierz opcję **Przypnij element członkowski jako ulubioną** w menu kontekstowym wynikowym.  Spowoduje to wyświetlenie tej właściwości na początku listy właściwości obiektu, a nazwa i wartość właściwości są wyświetlane w kolumnie **Wartość.**  Aby odpiąć właściwość, ponownie wybierz ikonę pinezki lub wybierz opcję **Odpnij element członkowski jako ulubioną** w menu kontekstowym.
+Możesz szybko sprawdzić obiekty według ich właściwości w okno wyrażeń kontrolnych za pomocą narzędzia **Pinnable Properties** .  Aby użyć tego narzędzia, umieść kursor nad właściwością i wybierz ikonę pinezki, która jest wyświetlana, lub kliknij prawym przyciskiem myszy i wybierz opcję **Przypnij element członkowski jako ulubiony** w menu kontekstowym.  Powoduje to **odfiltrowanie** tej właściwości do górnej części listy właściwości obiektu, a nazwa właściwości i wartość jest wyświetlana w kolumnie wartość.  Aby odpiąć właściwość, wybierz ponownie ikonę pinezki lub wybierz opcję **Odepnij członka jako ulubioną** w menu kontekstowym.
 
-![Właściwości pinów w oknie Czujka](../debugger/media/basic-pin-watch.gif "Właściwości pinów w oknie Czujka")
+![Przypnij właściwości w okno wyrażeń kontrolnych](../debugger/media/basic-pin-watch.gif "Przypnij właściwości w okno wyrażeń kontrolnych")
 
-Podczas wyświetlania listy właściwości obiektu w oknie Czujka można również przełączać nazwy właściwości i odfiltrowywać właściwości nieprzypięte.  Dostęp do obu opcji można uzyskać, wybierając przyciski na pasku narzędzi nad oknem zegarka.
+Można również przełączać nazwy właściwości i odfiltrować przypięte właściwości podczas wyświetlania listy właściwości obiektu w okno wyrażeń kontrolnych.  Dostęp do obu opcji można uzyskać, wybierając przyciski na pasku narzędzi powyżej okna Czujka.
 
 ::: moniker-end
 
-### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Odświeżanie wartości zegarka
+### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Odśwież wartości czujki
 
-Podczas oceny wyrażenia w oknie **czujki** może pojawić się ikona odświeżania (strzałka kołowa). Ikona odświeżania wskazuje błąd lub wartość, która jest nieaktualna.
+Ikona odświeżania (strzałka okrągła) może pojawić się w oknie **czujki** , gdy wyrażenie jest oceniane. Ikona odświeżania wskazuje błąd lub wartość, która jest nieaktualna.
 
-Aby odświeżyć wartość, wybierz ikonę odświeżania lub naciśnij spację. Debuger próbuje ponownie ocenić wyrażenie. Jednak może nie chcesz lub być w stanie ponownie ocenić wyrażenie, w zależności od tego, dlaczego wartość nie została oceniona.
+Aby odświeżyć wartość, wybierz ikonę odświeżania lub naciśnij klawisz spacji. Debuger próbuje wykonać ponowną ocenę wyrażenia. Niemniej jednak użytkownik może nie chcieć lub być w stanie przeprowadzić ponowną ocenę wyrażenia, w zależności od tego, dlaczego wartość nie została oceniona.
 
-Umieść wskaźnik myszy na ikonie odświeżania lub zobacz kolumnę **Wartość** z powodu, dla którego wyrażenie nie zostało ocenione. Powody to:
+Umieść kursor nad ikoną odświeżania lub Wyświetl kolumnę **wartość** , dla której ma zostać obliczone wyrażenie. Przyczyny:
 
-- Wystąpił błąd podczas obliczania wyrażenia, tak jak w poprzednim przykładzie. Może wystąpić limit czasu lub zmienna może być poza zakresem.
+- Wystąpił błąd podczas obliczania wyrażenia, jak w poprzednim przykładzie. Może wystąpić przekroczenie limitu czasu lub zmienna może być poza zakresem.
 
-- Wyrażenie ma wywołanie funkcji, które może wywołać efekt uboczny w aplikacji. Zobacz [Efekty uboczne ekspresji](#bkmk_sideEffects).
+- Wyrażenie zawiera wywołanie funkcji, które może wyzwolić efekt uboczny w aplikacji. Zobacz [efekty uboczne wyrażenia](#bkmk_sideEffects).
 
-- Automatyczna ocena właściwości i wywołania funkcji niejawnych jest wyłączona.
+- Automatyczna Ocena właściwości i niejawne wywołania funkcji jest wyłączona.
 
-Jeśli pojawi się ikona odświeżania, ponieważ automatyczna ocena właściwości i wywołań funkcji niejawnych jest wyłączona, można ją włączyć, wybierając **pozycję Włącz ocenę właściwości i inne wywołania funkcji niejawnych** w obszarze**Opcje** >  **narzędzia** > **Debugowanie** > **ogólne**.
+Jeśli zostanie wyświetlona ikona odświeżenia, ponieważ automatyczna Ocena właściwości i niejawne wywołania funkcji jest wyłączona, można ją włączyć, wybierając opcję **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji** w oknie **Narzędzia**  >  **Opcje**  >  **debugowania**  >  **Ogólne**.
 
-Aby zademonstrować użycie ikony odświeżania:
+Aby zademonstrować przy użyciu ikony odświeżania:
 
-1. W **obszarze** > **Opcje** > narzędzi**Debugowanie** > **ogólne**wyczyść pole wyboru Włącz ocenę właściwości i inne **wywołania funkcji niejawnych.**
+1. W obszarze **Narzędzia**  >  **Opcje**  >  **debugowania**  >  **Ogólne**wyczyść pole wyboru **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji** .
 
-1. Wprowadź następujący kod, a w oknie **Czujka** `list.Count` ustaw zegarek we właściwości.
+1. Wprowadź następujący kod, a następnie w oknie **czujki** Ustaw kontrolkę na `list.Count` właściwości.
 
    ```csharp
    static void Main(string[] args)
@@ -147,36 +147,36 @@ Aby zademonstrować użycie ikony odświeżania:
    }
    ```
 
-1. Rozpocznij debugowanie. W oknie **Czujka** jest wyświetlany komunikat o następującej treści:
+1. Rozpocznij debugowanie. Okno **czujki** pokazuje podobny komunikat:
 
-   ![Odświeżyć zegarek](../debugger/media/refreshwatch.png "Odświeżyć zegarek")
+   ![Odśwież czujkę](../debugger/media/refreshwatch.png "Odśwież czujkę")
 
-1. Aby odświeżyć wartość, wybierz ikonę odświeżania lub naciśnij spację. Debuger ponownie oceni wyrażenie.
+1. Aby odświeżyć wartość, wybierz ikonę odświeżania lub naciśnij klawisz spacji. Debuger przeszacuje wyrażenie.
 
-### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Efekty uboczne ekspresji
+### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Efekty uboczne wyrażenia
 
-Ocena niektórych wyrażeń może zmienić wartość zmiennej lub w inny sposób wpłynąć na stan aplikacji. Na przykład ocena następującego wyrażenia zmienia `var1`wartość:
+Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub w inny sposób wpłynąć na stan aplikacji. Na przykład Ocena następującego wyrażenia zmienia wartość `var1` :
 
 ```csharp
 var1 = var2
 ```
 
-Ten kod może powodować [efekt uboczny](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Skutki uboczne mogą utrudnić debugowanie, zmieniając sposób działania aplikacji.
+Ten kod może spowodować [efekt uboczny](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efekty uboczne mogą utrudniać debugowanie, zmieniając sposób działania aplikacji.
 
-Wyrażenie z efektami ubocznymi jest oceniane tylko raz, przy pierwszym wprowadzeniu go. Następnie wyrażenie jest wyszarzone w oknie **czujki,** a dalsze oceny są wyłączone. Etykietka narzędzia lub **Wartość** kolumna wyjaśnia, że wyrażenie powoduje efekt uboczny. Można wymusić ponowną wycenę, wybierając ikonę odświeżania, która pojawia się obok wartości.
+Wyrażenie z efektami ubocznymi jest oceniane tylko raz, po jego wprowadzeniu po raz pierwszy. Następnie wyrażenie pojawia się wyszarzone w oknie **czujki** , a dalsze oceny są wyłączone. Kolumna etykietka narzędzia lub **wartość** objaśnia, że wyrażenie powoduje efekt uboczny. Możesz wymusić ponowną ocenę, wybierając ikonę odświeżania, która pojawia się obok wartości.
 
-Jednym ze sposobów zapobiegania oznaczeniu skutków ubocznych jest wyłączenie automatycznej oceny funkcji. W **obszarze** > **Opcje** > narzędzi**Debugowanie** > **ogólne**usuń zaznaczenie opcji Włącz ocenę właściwości i inne **wywołania funkcji niejawnych**.
+Jednym ze sposobów zapobiegania wyznaczeniu efektów ubocznych jest wyłączenie automatycznej oceny funkcji. W obszarze **Narzędzia**  >  **Opcje**  >  **debugowania**  >  **Ogólne**wybierz opcję **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**.
 
-Tylko dla języka C#, gdy ocena właściwości lub wywołania funkcji niejawnych jest wyłączona, można wymusić ocenę, dodając modyfikator formatu **ac** do zmiennej **Name** w oknie **Czujka.** Zobacz [Formatowanie specyfikatorów w języku C#](../debugger/format-specifiers-in-csharp.md).
+Tylko w przypadku języka C#, gdy Ocena właściwości lub niejawne wywołania funkcji jest wyłączona, można wymusić Obliczanie przez dodanie modyfikatora w formacie **AC** do **nazwy** zmiennej w oknie **czujka** . Zobacz [specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md).
 
-## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Używanie identyfikatorów obiektów w oknie czujki (C# i Visual Basic)
+## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Używanie identyfikatorów obiektów w okno wyrażeń kontrolnych (C# i Visual Basic)
 
-Czasami chcesz obserwować zachowanie określonego obiektu. Na przykład można śledzić obiekt, do którego odwoływała się zmienna lokalna po tym, jak ta zmienna wyszła poza zakres. W językach C# i Visual Basic można tworzyć identyfikatory obiektów dla określonych wystąpień typów odwołań i używać ich w oknie **Czujka** i w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez usługi debugowania wspólnego środowiska wykonawczego języka (CLR) i skojarzony z obiektem.
+Czasami chcesz obserwować zachowanie określonego obiektu. Na przykład możesz chcieć śledzić obiekt, do którego odwołuje się zmienna lokalna po zakończeniu tej zmiennej. W językach C# i Visual Basic można tworzyć identyfikatory obiektów dla określonych wystąpień typów referencyjnych i używać ich w oknie **czujki** i w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez usługi debugowania środowiska uruchomieniowego języka wspólnego (CLR) i skojarzone z obiektem.
 
 > [!NOTE]
-> Identyfikatory obiektów tworzą słabe odwołania, które nie uniemożliwiają śmietnika obiektu. Są one prawidłowe tylko dla bieżącej sesji debugowania.
+> Identyfikatory obiektów tworzą słabe odwołania, które nie uniemożliwiają odzyskiwania obiektu. Są one prawidłowe tylko dla bieżącej sesji debugowania.
 
-W poniższym kodzie `MakePerson()` metoda `Person` tworzy przy użyciu zmiennej lokalnej:
+W poniższym kodzie `MakePerson()` Metoda tworzy `Person` przy użyciu zmiennej lokalnej:
 
 ```csharp
 class Person
@@ -211,57 +211,57 @@ public class Program
 }
 ```
 
-Aby dowiedzieć się `Person` nazwę `DoSomething()` w metodzie, można dodać `Person` odwołanie do identyfikatora obiektu w oknie **Czujka.**
+Aby sprawdzić nazwę `Person` w `DoSomething()` metodzie, można dodać odwołanie do `Person` identyfikatora obiektu w oknie **czujki** .
 
-1. Ustaw punkt przerwania w `Person` kodzie po utworzeniu obiektu.
+1. Ustaw punkt przerwania w kodzie po `Person` utworzeniu obiektu.
 
 1. Rozpocznij debugowanie.
 
-1. Gdy wykonanie zostanie wstrzymane w punkcie przerwania, otwórz okno **Zmienne lokalne,** wybierając **pozycję Debugowanie** > **lokalnych miejscowych****systemu Windows** > .
+1. Po wstrzymaniu wykonywania w punkcie przerwania Otwórz okno zmienne **lokalne** , wybierając pozycję **Debuguj**  >  **Windows**  >  **Ustawienia regionalne**systemu Windows.
 
-1. W oknie **Zmienne lokalne** `Person` kliknij prawym przyciskiem myszy zmienną i wybierz polecenie **Make Object ID**.
+1. W oknie zmiennych **lokalnych** kliknij prawym przyciskiem myszy `Person` zmienną i wybierz pozycję **Utwórz identyfikator obiektu**.
 
-   Powinien zostać wyświetlony znak**$** dolara ( ) plus liczba w oknie **Zmiennika,** który jest identyfikatorem obiektu.
+   Powinien zostać wyświetlony znak dolara ( **$** ) i numer w oknie **zmiennych lokalnych** , który jest identyfikatorem obiektu.
 
-1. Dodaj identyfikator obiektu do okna **Czujka,** klikając prawym przyciskiem myszy identyfikator obiektu i wybierając polecenie **Dodaj zegarek**.
+1. Aby dodać identyfikator obiektu do okna **czujki** , kliknij prawym przyciskiem myszy identyfikator obiektu i wybierz polecenie **Dodaj czujkę**.
 
-1. Ustaw inny punkt `DoSomething()` przerwania w metodzie.
+1. Ustaw inny punkt przerwania w `DoSomething()` metodzie.
 
-1. Kontynuuj debugowanie. Po wstrzymaniu wykonywania `DoSomething()` w metodzie **watch** okno wyświetla `Person` obiekt.
+1. Kontynuuj debugowanie. Gdy wykonywanie jest wstrzymywane w `DoSomething()` metodzie, okno **czujki** wyświetla `Person` obiekt.
 
    > [!NOTE]
-   > Jeśli chcesz zobaczyć właściwości obiektu, takie jak `Person.Name`, należy włączyć ocenę właściwości, wybierając opcję > **Opcje** > **debugowania** >  **narzędzia****Ogólne** > **włącz ocenę właściwości i inne wywołania funkcji niejawnych.**
+   > Jeśli chcesz zobaczyć właściwości obiektu, takie jak `Person.Name` , musisz włączyć obliczanie właściwości, wybierając opcje **Narzędzia**  >  **Options**  >  **debugowanie**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**.
 
-## <a name="dynamic-view-and-the-watch-window"></a>Widok dynamiczny i okno Czujka
+## <a name="dynamic-view-and-the-watch-window"></a>Widok dynamiczny i okno wyrażeń kontrolnych
 
-Niektóre języki skryptów (na przykład JavaScript lub Python) używają dynamicznego lub [pisania kaczek,](https://en.wikipedia.org/wiki/Duck_typing) a .NET w wersji 4.0 i nowszej obsługuje obiekty, które są trudne do zaobserwowania w normalnych oknach debugowania.
+Niektóre języki skryptów (na przykład JavaScript lub Python) używają tekstu dynamicznego lub [kaczego](https://en.wikipedia.org/wiki/Duck_typing) , a program .NET w wersji 4,0 lub nowszej obsługuje obiekty, które trudno obserwować w zwykłych oknach debugowania.
 
-Okno **Czujka** wyświetla te obiekty jako obiekty dynamiczne, <xref:System.Dynamic.IDynamicMetaObjectProvider> które są tworzone z typów implementuujnych interfejsu. Dynamiczne węzły obiektów pokazują dynamiczne elementy członkowskie obiektów dynamicznych, ale nie zezwalają na edycję wartości elementów członkowskich.
+Okno **czujki** wyświetla te obiekty jako obiekty dynamiczne, które są tworzone na podstawie typów, które implementują <xref:System.Dynamic.IDynamicMetaObjectProvider> interfejs. Dynamiczne węzły obiektów wyświetlają dynamiczne elementy członkowskie obiektów dynamicznych, ale nie zezwalają na edytowanie wartości elementów członkowskich.
 
-Aby **odświeżyć** wartości widoku dynamicznego, zaznacz [ikonę odświeżania](#bkmk_refreshWatch) obok węzła obiektu dynamicznego.
+Aby odświeżyć **dynamiczne wartości widoku** , wybierz [ikonę odświeżania](#bkmk_refreshWatch) obok węzła obiektu dynamicznego.
 
-Aby wyświetlić tylko **widok dynamiczny** obiektu, dodaj specyfikator formatu **dynamicznego** po nazwie obiektu dynamicznego w oknie **Czujka:**
+Aby wyświetlić tylko **Widok dynamiczny** dla obiektu, należy dodać specyfikator formatu **dynamicznego** po nazwie obiektu dynamicznego w oknie **czujka** :
 
 - Dla języka C#:`ObjectName, dynamic`
-- Dla visual basic:`$dynamic, ObjectName`
+- Dla Visual Basic:`$dynamic, ObjectName`
 
 >[!NOTE]
->- Debuger języka C# nie automatycznie ponownie ocenić wartości w **widoku dynamicznym** po kroku do następnego wiersza kodu.
->- Debuger języka Visual Basic automatycznie odświeża wyrażenia dodane za pośrednictwem **widoku dynamicznego**.
->- Ocena członków widoku **dynamicznego** może mieć [skutki uboczne](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)).
+>- Debuger C# nie oblicza automatycznie wartości w **widoku dynamicznym** po przekroczeniu następnego wiersza kodu.
+>- Debuger Visual Basic automatycznie odświeża wyrażenia dodawane przez **Widok dynamiczny**.
+>- Ocenianie elementów członkowskich **widoku dynamicznego** może mieć [skutki uboczne](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)).
 
-**Aby wstawić nową zmienną zegarka, która rzutuje obiekt na obiekt dynamiczny:**
+**Aby wstawić nową zmienną czujki, która rzutuje obiekt na obiekt dynamiczny:**
 
-1. Kliknij prawym przyciskiem myszy dowolny podrzędny **widok dynamiczny**.
-1. Wybierz **pozycję Dodaj zegarek**. Staje `object.name` `((dynamic) object).name` się i pojawia się w nowym oknie **czujki.**
+1. Kliknij prawym przyciskiem myszy dowolny element podrzędny **widoku dynamicznego**.
+1. Wybierz pozycję **Dodaj czujkę**. Zostanie `object.name` `((dynamic) object).name` wyświetlona w nowym oknie **czujki** .
 
-Debuger dodaje również węzeł podrzędny **widoku dynamicznego** obiektu do okna **Autos.** Aby otworzyć okno **Autos,** podczas debugowania wybierz pozycję **Debugowanie** > **autos****systemu Windows** > .
+Debuger dodaje również węzeł podrzędny **widoku dynamicznego** obiektu do okna **automatycznie** . Aby otworzyć okno **autostarts** , podczas debugowania wybierz opcję **Debuguj**  >  **Windows**  >  **autostarty**systemu Windows.
 
-**Widok dynamiczny** poprawia również debugowanie obiektów COM. Gdy debuger przechodzi do obiektu COM opakowanego w **system.__ComObject,** dodaje węzeł **widoku dynamicznego** dla obiektu.
+**Widok dynamiczny** rozszerza również debugowanie obiektów com. Gdy debuger przyjdzie do obiektu COM opakowanego w **System. __ComObject**, dodaje dynamiczny węzeł **widoku** dla obiektu.
 
-## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Obserwowanie pojedynczej zmiennej lub wyrażenia za pomocą programu QuickWatch
+## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Obserwuj pojedynczą zmienną lub wyrażenie z QuickWatch
 
-Za pomocą programu **QuickWatch** można obserwować pojedynczą zmienną.
+Można użyć **QuickWatch** do obserwowania pojedynczej zmiennej.
 
 Na przykład dla następującego kodu:
 
@@ -280,30 +280,30 @@ static void Main(string[] args)
 
 Aby obserwować `a` zmienną,
 
-1. Ustaw punkt przerwania `a = a + b;` w wierszu.
+1. Ustaw punkt przerwania w `a = a + b;` wierszu.
 
-1. Rozpocznij debugowanie. Wykonywanie wstrzymuje się w punkcie przerwania.
+1. Rozpocznij debugowanie. Wykonywanie jest wstrzymywane w punkcie przerwania.
 
 1. Wybierz zmienną `a` w kodzie.
 
-1. Wybierz **pozycję Debugowanie** > **quickwatch**, naciśnij **klawisz Shift**+**F9**lub kliknij prawym przyciskiem myszy i wybierz szybki **zegarek**.
+1. Wybierz pozycję **Debuguj**  >  **QuickWatch**, naciśnij klawisz **SHIFT** + **F9**lub kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **QuickWatch**.
 
-   Zostanie wyświetlone okno dialogowe **QuickWatch.** Zmienna `a` znajduje się w polu **Wyrażenie** o **wartości** **1**.
+   Zostanie wyświetlone okno dialogowe **QuickWatch** . `a`Zmienna znajduje się w polu **wyrażenie** z **wartością** **1**.
 
    ![Zmienna QuickWatch](../debugger/media/quickwatchvariable.png "Zmienna QuickWatch")
 
-1. Aby ocenić wyrażenie przy użyciu zmiennej, wpisz wyrażenie, takie jak `a + b` w polu **Wyrażenie,** a następnie wybierz opcję Ponownie **oceniaj**.
+1. Aby oszacować wyrażenie przy użyciu zmiennej, wpisz wyrażenie, takie jak `a + b` w polu **wyrażenie** , a następnie wybierz pozycję **Oblicz**ponownie.
 
    ![Wyrażenie QuickWatch](../debugger/media/quickwatchexpression.png "Wyrażenie QuickWatch")
 
-1. Aby dodać zmienną lub wyrażenie z **szybkiego zegarka** do okna **czujki,** wybierz pozycję **Dodaj czujkę**.
+1. Aby dodać zmienną lub wyrażenie z **QuickWatch** do okna **czujki** , wybierz pozycję **Dodaj czujkę**.
 
-1. Wybierz **przycisk Zamknij,** aby zamknąć okno **QuickWatch.** **(QuickWatch** jest modalne okno dialogowe, więc nie można kontynuować debugowania tak długo, jak jest otwarty.)
+1. Wybierz pozycję **Zamknij** , aby zamknąć okno **QuickWatch** . (**QuickWatch** to modalne okno dialogowe, dlatego nie można kontynuować debugowania, dopóki jest otwarte).
 
-1. Kontynuuj debugowanie. Zmienną można obserwować w oknie **Czujka.**
+1. Kontynuuj debugowanie. Można obserwować zmienną w oknie **czujki** .
 
 ## <a name="see-also"></a>Zobacz też
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
-- [Pierwsze spojrzenie na debugowanie](../debugger/debugger-feature-tour.md)
+- [Najpierw Spójrz na Debugowanie](../debugger/debugger-feature-tour.md)
 - [Okna debugera](../debugger/debugger-windows.md)

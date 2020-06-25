@@ -7,4 +7,4 @@ ms.lasthandoff: 03/18/2020
 ms.locfileid: "68146692"
 ---
 > [!NOTE]
-> Komputer może wyświetlać różne nazwy lub lokalizacje dla niektórych elementów interfejsu użytkownika programu Visual Studio w tym artykule. Być może używasz innej wersji programu Visual Studio lub różnych ustawień środowiska. Aby uzyskać więcej informacji, zobacz [Personalizowanie IDE](../../ide/personalizing-the-visual-studio-ide.md).
+> Dla niektórych elementów interfejsu użytkownika programu Visual Studio w tym artykule na komputerze mogą być wyświetlane różne nazwy lub lokalizacje. Może być używana inna wersja programu Visual Studio lub inne ustawienia środowiska. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE](../../ide/personalizing-the-visual-studio-ide.md).

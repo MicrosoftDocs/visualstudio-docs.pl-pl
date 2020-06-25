@@ -17,7 +17,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "85289212"
 ---
-# <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild z RoslynCodeTaskFactory
+# <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild przy użyciu fabryki RoslynCodeTaskFactory
 
 Podobnie jak w przypadku [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory używa międzyplatformowych kompilatorów Roslyn do generowania zestawów zadań w pamięci do użycia jako zadania wbudowane.  .NET Standard obiektów docelowych zadań RoslynCodeTaskFactory i może współdziałać z .NET Framework i środowiska uruchomieniowe platformy .NET Core, a także z innymi platformami, takimi jak Linux i Mac OS.
 

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Debugowanie kodu zestawu wbudowanego | Dokumentacja firmy Microsoft'
+title: Jak debugować kod asemblera wbudowanego | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.inline
 dev_langs:
@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e76b2668d8777c46404f0b304eeb56d1821bb8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 528defb516b704f0425ac4389a2fd65befef7063
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894303"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350033"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Instrukcje: Debugowanie kodu zestawu wbudowanego
+# <a name="how-to-debug-inline-assembly-code"></a>Porady: debugowanie kodu zestawu wbudowanego
 
 > [!NOTE]
-> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../ide/environment-settings.md#reset-settings).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
-Debuger zapewnia dwa okna debugowanie kodu zestawu wbudowanego, **dezasemblacji** okna i **rejestruje** okna.
+Debuger zapewnia dwa okna do debugowania wbudowanego kodu zestawu, okna **demontażu** i okna **rejestrów** .
 
 ## <a name="debug-inline-assembly-code"></a>Debugowanie śródwierszowego kodu zestawu
 
-1. Użyj **dezasemblacji** okna, aby wyświetlić instrukcje zestawu.
+1. Użyj okna **demontaż** , aby wyświetlić instrukcje dotyczące zestawu.
 
-2. Użyj **rejestruje** okna, aby wyświetlić zawartość rejestru.
+2. Użyj okna **rejestry** , aby wyświetlić zawartość rejestru.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

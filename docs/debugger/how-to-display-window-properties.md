@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Wyświetlanie właściwości okna | Dokumentacja firmy Microsoft'
+title: Jak wyświetlić właściwości okna | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - window properties
 ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906755"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349773"
 ---
-# <a name="how-to-display-window-properties"></a>Instrukcje: Wyświetlanie właściwości okna
-Aby dowiedzieć się więcej na temat wymienionych w oknie [widoku Windows](../debugger/windows-view.md), użyj [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md).
+# <a name="how-to-display-window-properties"></a>Porady: wyświetlanie właściwości okna
+Aby dowiedzieć się więcej na temat okna wyświetlanego w [widoku systemu Windows](../debugger/windows-view.md), użyj okna [dialogowego Właściwości okna](../debugger/window-properties-dialog-box.md).
 
 ### <a name="to-open-the-window-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości okna
 
-1. Wybierz element, a następnie wybierz **właściwości** z **widoku** menu.
+1. Wybierz element, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
 
-   Okno dialogowe właściwości nie są modalnych. Po kliknięciu elementu element w oknie widoku okna dialogowego automatycznie odświeżane informacje na temat każdego wybranego elementu.
+   Okna dialogowe właściwości nie są modalne. Po kliknięciu pozycji z elementu na element w oknie widok okno dialogowe jest automatycznie odświeżane informacjami o każdym wybranym elemencie.

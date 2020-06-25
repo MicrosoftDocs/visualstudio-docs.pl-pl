@@ -1,7 +1,7 @@
 ---
 title: Ustaw obserwację zmiennych w wątkach równoległych | Microsoft Docs
 ms.date: 04/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.parallelwatch
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9fb0d5ac60ea5ab89b02a624488b5df4f8a7164b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732016"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348629"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Ustaw obserwację zmiennych w wątkach równoległych w programie VisualC#Studio (, C++Visual Basic,)
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Ustaw kontrolkę na zmienne w wątkach równoległych w programie Visual Studio (C#, Visual Basic, C++)
 W okno wyrażeń kontrolnych równoległym można jednocześnie wyświetlić wartości, które są przechowywane w jednym wyrażeniu na wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc, każdy wiersz reprezentuje wywołanie funkcji, którego sygnatura funkcji dopasowuje funkcję w bieżącej klatce stosu. Elementy, które znajdują się w kolumnach, można sortować, zmienić ich kolejność, usunąć i zgrupować. Wątki można flagować, anulować flagować, zamrażać (wstrzymywać) i rozmrażać (wznawiać). W oknie **czujki równoległej** są wyświetlane następujące kolumny:
 
 - Kolumna flagi, w której można oznaczyć wątek, do którego chcemy zwrócić szczególną uwagę.
@@ -82,9 +82,9 @@ W okno wyrażeń kontrolnych równoległym można jednocześnie wyświetlić war
 
 ### <a name="to-filter-by-a-boolean-expression"></a>Aby odfiltrować według wyrażenia logicznego
 
-- Wprowadź wyrażenie logiczne w polu **Filtruj według wartości logicznej** . Debuger oblicza wyrażenie dla każdego kontekstu wątku. Wyświetlane są tylko wiersze, w których jest `true` wartość.
+- Wprowadź wyrażenie logiczne w polu **Filtruj według wartości logicznej** . Debuger oblicza wyrażenie dla każdego kontekstu wątku. Wyświetlane są tylko wiersze, w których jest `true` wyświetlana wartość.
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz też
+- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Instrukcje: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

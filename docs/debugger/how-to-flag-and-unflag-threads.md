@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Flagowanie i usuwanie flag wątków | Microsoft Docs'
+title: Jak flagować i rozflagować wątki | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733239"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349630"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Instrukcje: Flagowanie i usuwanie flag wątków (C#, Visual Basic, C++)
 
@@ -31,7 +31,7 @@ Wątki oflagowane otrzymują również specjalne traktowanie na liście **wątk�
 ### <a name="to-flag-or-unflag-a-thread"></a>Aby oflagować lub Usuń flagę wątku
 
 - W oknie **wątki** lub **równoległe czujki** Znajdź interesujący Cię wątek i kliknij ikonę flagi, aby zaznaczyć lub wyczyścić flagę.
-- W oknie **stosów równoległych** kliknij prawym przyciskiem myszy wątek lub grupę wątków, a następnie wybierz polecenie **Oflaguj/\<wątek >** lub usuń **flagę/\<wątku >** .
+- W oknie **stosów równoległych** kliknij prawym przyciskiem myszy wątek lub grupę wątków i wybierz polecenie **Oflaguj/ \<thread> ** lub Usuń **flagę \<thread> / **.
 
 ### <a name="to-unflag-all-threads"></a>Aby Usuń flagę ze wszystkich wątków
 
@@ -60,7 +60,7 @@ Wątki oflagowane otrzymują również specjalne traktowanie na liście **wątk�
 
 5. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Rozpocznij debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)
+## <a name="see-also"></a>Zobacz też
+- [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Przewodnik: debugowanie aplikacji wielowątkowych za pomocą okna wątków](../debugger/how-to-use-the-threads-window.md)

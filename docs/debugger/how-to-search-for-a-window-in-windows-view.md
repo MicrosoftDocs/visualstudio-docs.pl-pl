@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Wyszukiwanie okna w widoku Windows | Dokumentacja firmy Microsoft'
+title: Jak wyszukiwać okno w widoku systemu Windows | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - windows, searching in Windows view
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
@@ -10,41 +10,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba5c8469885fd62c99a672e894cde82700c980d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fb5fb871ebf03595c0baca0336e8449fe39029f3
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389293"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349240"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>Instrukcje: Wyszukiwanie okna w widoku okien
-Możesz wyszukać określonego okna w widoku Windows za pomocą jego uchwytu, podpis, klasy lub kombinację jego podpisu i klasy jako kryterium wyszukiwania. Można również określić początkową kierunek wyszukiwania. Pola w oknie dialogowym pokaże atrybutów okna wybranego w drzewie okna.
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Porady: wyszukiwanie okna w widoku okien
+Można wyszukać określone okno w widoku systemu Windows przy użyciu uchwytu, podpisu, klasy lub kombinacji jego podpisu i klasy jako kryterium wyszukiwania. Możesz również określić początkowy kierunek wyszukiwania. Pola w oknie dialogowym będą zawierać atrybuty wybranego okna w drzewie okien.
 
- Rozpoczyna się od drzewa, rozwinięty do drugiego poziomu (wszystkie okna, które są elementami podrzędnymi pulpit), dzięki czemu można zidentyfikować windows desktop poziomu według ich nazwy klasy i tytuł. Po wybraniu okna pulpitu poziomu można rozwinąć tego poziomu można znaleźć okna podrzędnego określonego.
+ Rozpocznij od drzewa rozwiniętego do drugiego poziomu (wszystkie okna, które są elementami podrzędnymi pulpitu), aby można było identyfikować okna na poziomie pulpitu według ich nazwy i tytułu klasy. Po wybraniu okna poziomu pulpitu można rozwinąć ten poziom, aby znaleźć określone okno podrzędne.
 
-### <a name="to-search-for-a-window-in-windows-view"></a>Wyszukiwanie okna w widoku Windows
+### <a name="to-search-for-a-window-in-windows-view"></a>Aby wyszukać okno w widoku systemu Windows
 
-1. Rozmieść aplikacji dla systemu windows, więc tego programu Spy ++ [widoku Windows](../debugger/windows-view.md) okna i docelowy są widoczne.
+1. Rozmieść swoje okna tak, aby program Spy + +, okno [Widok systemu Windows](../debugger/windows-view.md) i okno docelowe były widoczne.
 
-2. Z **wyszukiwania** menu, wybierz **Znajdź okno**.
+2. Z menu **Wyszukaj** wybierz pozycję **Znajdź okno**.
 
-    [Okno dialogowe Wyszukiwanie](../debugger/window-search-dialog-box.md) zostanie otwarty.
+    Zostanie otwarte okno [dialogowe Wyszukiwanie okna](../debugger/window-search-dialog-box.md) .
 
    > [!TIP]
-   > Aby zwiększyć czytelność ekranu, wybierz pozycję **Ukryj Spy** opcji. Ta opcja zawiera głównego okna programu Spy ++ i pozostawia tylko **wyszukiwanie okien** okno dialogowe widoczne na podstawie innych aplikacji. Okno główne programu Spy ++ jest przywracany po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.
+   > Aby zmniejszyć czytelność ekranu, wybierz opcję **Ukryj program Spy** . Ta opcja ukrywa główne okno programu Spy + + i pozostawia tylko okno dialogowe **wyszukiwania okna** widoczne na innych aplikacjach. Okno główne programu Spy + + jest przywracane po kliknięciu przycisku **OK** lub **Anuluj**lub po wyczyszczeniu opcji **Ukryj program Spy + +** .
 
-3. Przeciągnij **Wyszukiwarka** przedziale docelowego. Przeciągnij narzędzie **wyszukiwanie okien** okno dialogowe wyświetla szczegóły wybranego okna.
+3. Przeciągnij **Narzędzie wyszukiwania** nad oknem docelowym. Podczas przeciągania narzędzia okno dialogowe **wyszukiwania okna** wyświetla szczegóły w wybranym oknie.
 
-   - lub —
+   - oraz
 
-     Jeśli znasz uchwyt okna ma (na przykład z debugerem), można wpisać go **obsługi** pole.
+     Jeśli wiesz, jak dojście do żądanego okna (na przykład z debugera), możesz wpisać je w polu **uchwyt** .
 
-   - lub —
+   - oraz
 
-     Znając podpisu i/lub klasy okna, które chcesz, możesz wpisać je w **podpis** i **klasy** pola tekstowe i wyczyść **obsługi** pola tekstowego.
+     Jeśli znasz podpis i/lub klasę żądanego okna, możesz wpisać je w polach tekstowych **podpis** i **Klasa** i wyczyścić pole tekstowe **uchwyt** .
 
-4. Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.
+4. Wybierz pozycję w **górę** lub **w dół** , aby określić początkowy kierunek wyszukiwania.
 
 5. Kliknij przycisk **OK**.
 
-    Jeśli zgodne okno zostanie znaleziony, jest wyróżniona na [widoku Windows](../debugger/windows-view.md) okna.
+    Jeśli zostanie znalezione pasujące okno, zostanie ono wyróżnione w oknie [Widok systemu Windows](../debugger/windows-view.md) .

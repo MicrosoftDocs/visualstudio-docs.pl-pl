@@ -2,7 +2,7 @@
 title: Debugowanie aplikacji wielowątkowej
 description: Debuguj przy użyciu okna wątki i paska narzędzi lokalizacji debugowania w programie Visual Studio
 ms.date: 02/14/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7b7850d8d7582110152d248683f89981933215
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416376"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348655"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Przewodnik: debugowanie aplikacji wielowątkowej przy użyciu okna wątków (C#, Visual Basic,) C++
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Przewodnik: debugowanie aplikacji wielowątkowej przy użyciu okna wątków (C#, Visual Basic, C++)
 
 Kilka elementów interfejsu użytkownika programu Visual Studio ułatwia debugowanie aplikacji wielowątkowych. W tym artykule przedstawiono funkcje debugowania wielowątkowego w oknie Edytor kodu, pasek narzędzi **Lokalizacja debugowania** i okno **wątków** . Informacje o innych narzędziach do debugowania aplikacji wielowątkowych znajdują się w temacie Wprowadzenie do [debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -38,38 +38,38 @@ Utwórz następujący projekt aplikacji wielowątkowych do użycia w tym samoucz
 
    ::: moniker range=">=vs-2019"
 
-   Jeśli okno startowe nie jest otwarte, wybierz polecenie **plik** > **Start okna**.
+   Jeśli okno startowe nie jest otwarte, wybierz pozycję **plik** > **startowy**.
 
    W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-   W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **C#** lub **C++** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
+   W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz pozycję **C#** lub **C++** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
 
-   Po zastosowaniu filtrów języka i platformy wybierz pozycję **aplikacja konsoli (.NET Core)** lub dla C++szablonu **Aplikacja konsolowa** , a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu filtrów języka i platformy wybierz **aplikację konsolową (.NET Core)** lub, dla języka C++, szablon **aplikacji konsolowej** , a następnie wybierz **dalej**.
 
    > [!NOTE]
-   > Jeśli nie widzisz poprawnego szablonu, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje...** , co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **opracowywanie aplikacji C++ klasycznych** , a następnie wybierz **Modyfikuj**.
+   > Jeśli nie widzisz poprawnego szablonu, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
    W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyThreadWalkthroughApp* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** wybierz następujące opcje:
+   Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** wybierz następujące opcje:
 
-   - W przypadku C# aplikacji w obszarze **C#Wizualizacja**wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)** .
-   - W przypadku C++ aplikacji w obszarze **C++Wizualizacja**wybierz pozycję **Windows Desktop**, a następnie wybierz pozycję **Aplikacja konsolowa systemu Windows**.
+   - W przypadku aplikacji C# w obszarze **Visual C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)**.
+   - W przypadku aplikacji w języku C++ w obszarze **Visual C++** wybierz pozycję **Windows Desktop**, a następnie wybierz pozycję **Aplikacja konsolowa systemu Windows**.
 
-   Jeśli nie widzisz **aplikacji konsolowej (.NET Core)** lub C++dla programu szablonu projektu **aplikacji konsoli** , przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje...** , co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **opracowywanie aplikacji C++ klasycznych** , a następnie wybierz **Modyfikuj**.
+   Jeśli nie widzisz **aplikacji konsolowej (.NET Core)** lub, dla języka C++, szablonu projektu **aplikacji konsoli** , przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje...**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz pozycję **Programowanie aplikacji klasycznych dla platformy .NET** lub **Programowanie aplikacji klasycznych w języku C++** , a następnie wybierz polecenie **Modyfikuj**.
 
    Następnie wpisz nazwę, na przykład *MyThreadWalkthroughApp* , i kliknij przycisk **OK**.
 
-   Kliknij przycisk **OK**.
+   Wybierz przycisk **OK**.
    ::: moniker-end
 
    Zostanie wyświetlony nowy projekt konsoli. Po utworzeniu projektu zostanie wyświetlony plik źródłowy. W zależności od wybranego języka plik źródłowy może mieć nazwę *program.cs*, *MyThreadWalkthroughApp. cpp*lub *Module1. vb*.
 
-1. Zastąp kod w pliku źródłowym plikiem C# lub C++ przykładowym kodem z [Rozpocznij debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md).
+1. Zastąp kod w pliku źródłowym kodem przykładowym języka C# lub C++ od [rozpoczęcia debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md).
 
-1. Wybierz pozycję **plik** > **Zapisz wszystko**.
+1. Wybierz pozycję **plik**  >  **Zapisz wszystko**.
 
 ## <a name="start-debugging"></a>Rozpocznij debugowanie
 
@@ -85,25 +85,25 @@ Utwórz następujący projekt aplikacji wielowątkowych do użycia w tym samoucz
    Console.WriteLine();
    ```
 
-1. Ustaw punkt przerwania w wierszu `Console.WriteLine();`, klikając przycisk w lewym odstępie, lub wybierając wiersz i naciskając klawisz **F9**.
+1. Ustaw punkt przerwania w `Console.WriteLine();` wierszu, klikając lewym marginesem lub wybierając wiersz i naciskając klawisz **F9**.
 
    Punkt przerwania jest wyświetlany jako czerwony okrąg w lewym marginesie obok wiersza kodu.
 
-1. Wybierz pozycję **debuguj** > **Rozpocznij debugowanie**lub naciśnij klawisz **F5**.
+1. Wybierz pozycję **Debuguj**  >  **Rozpocznij debugowanie**lub naciśnij klawisz **F5**.
 
    Aplikacja jest uruchamiana w trybie debugowania i wstrzymuje się w punkcie przerwania.
 
-1. W trybie przerwania Otwórz okno **wątki** , wybierając pozycję **debuguj** > **wątki** > **systemu Windows** . Aby otworzyć lub wyświetlić **wątki** oraz inne okna debugowania, musisz być w sesji debugowania.
+1. W trybie przerwania Otwórz okno **wątki** , wybierając pozycję **Debuguj**  >  **wątki systemu Windows**  >  **Threads**. Aby otworzyć lub wyświetlić **wątki** oraz inne okna debugowania, musisz być w sesji debugowania.
 
 ## <a name="examine-thread-markers"></a>Sprawdzanie znaczników wątku
 
-1. W kodzie źródłowym Znajdź wiersz `Console.WriteLine();`.
+1. Zlokalizuj wiersz w kodzie źródłowym `Console.WriteLine();` .
 
    1. Kliknij prawym przyciskiem myszy w oknie **wątki** i wybierz polecenie **Pokaż wątki w źródle** ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") z menu.
 
-   Na marginesie obok wiersza kodu źródłowego jest teraz wyświetlany ![znacznik](../debugger/media/dbg-thread-marker.png "Znacznik wątku")wątku ikony *znacznika wątku* . Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji. Jeśli w lokalizacji znajduje się więcej niż jeden zatrzymany wątek, zostanie wyświetlona ikona ![wiele wątków](../debugger/media/dbg-multithreaded-show-threads.png "wiele wątków") .
+   Na marginesie obok wiersza kodu źródłowego jest teraz wyświetlany ![znacznik](../debugger/media/dbg-thread-marker.png "Znacznik wątku")wątku ikony *znacznika wątku* . Znacznik wątku wskazuje, że wątek jest zatrzymany w tej lokalizacji. Jeśli w lokalizacji znajduje się więcej niż jeden zatrzymany wątek, zostanie wyświetlona ikona ![wiele wątków](../debugger/media/dbg-multithreaded-show-threads.png "wiele wątków") .
 
-1. Umieść wskaźnik myszy nad znacznika wątku. Etykietki danych pojawia się, pokazując nazwę i identyfikator wątku dla zatrzymanego wątku lub wątków. Nazwy wątków mogą być `<No Name>`.
+1. Umieść wskaźnik myszy nad znacznikiem wątku. Etykietki danych pojawia się, pokazując nazwę i identyfikator wątku dla zatrzymanego wątku lub wątków. Mogą to być nazwy wątków `<No Name>` .
 
    >[!TIP]
    >Aby ułatwić identyfikację wątków pustego, można zmienić ich nazwy w oknie **wątki** . Kliknij prawym przyciskiem myszy wątek i wybierz polecenie **Zmień nazwę**.
@@ -118,9 +118,9 @@ Oflaguj i Usuń flagę wątków z edytora kodu źródłowego lub z okna **wątk�
 
 ### <a name="flag-and-unflag-threads-in-source-code"></a>Oflaguj i Usuń flagę wątków w kodzie źródłowym
 
-1. Otwórz pasek narzędzi **lokalizacji debugowania** , wybierając pozycję **Wyświetl** > **paski narzędzi** > **lokalizację debugowania**. Możesz również kliknąć prawym przyciskiem myszy w obszarze paska narzędzi i wybrać pozycję **Debuguj lokalizację**.
+1. Otwórz pasek narzędzi **lokalizacji debugowania** , wybierając pozycję **Wyświetl**  >  **paski narzędzi**  >  **Lokalizacja debugowania**. Możesz również kliknąć prawym przyciskiem myszy w obszarze paska narzędzi i wybrać pozycję **Debuguj lokalizację**.
 
-1. Pasek narzędzi **Lokalizacja debugowania** ma trzy pola: **proces**, **wątek**i **Ramka stosu**. Listę rozwijaną listy **wątków** i należy zauważyć, ile wątków istnieje. Na liście **wątków** aktualnie wykonywany wątek jest oznaczony symbolem **>** .
+1. Pasek narzędzi **Lokalizacja debugowania** ma trzy pola: **proces**, **wątek**i **Ramka stosu**. Listę rozwijaną listy **wątków** i należy zauważyć, ile wątków istnieje. Na liście **wątków** aktualnie wykonywany wątek jest oznaczony **>** symbolem.
 
 1. W oknie kod źródłowy Umieść kursor nad ikoną znacznika wątku w odstępie czasu i wybierz ikonę flagi (lub jedną z pustych ikon flag) w etykietki danych. Ikona flagi zmienia kolor na czerwony.
 
@@ -158,7 +158,7 @@ Druga kolumna okna **wątków** (bez nagłówka) jest kolumną **bieżącego wą
 Kolumna **Location** wskazuje, gdzie każdy wątek pojawia się w kodzie źródłowym. Wybierz strzałkę rozwijania obok wpisu **lokalizacji** lub umieść wskaźnik myszy nad wpisem, aby wyświetlić częściowy stos wywołań dla tego wątku.
 
 >[!TIP]
->Aby wyświetlić widok graficzny stosów wywołań dla wątków, użyj okna [stosów równoległych](../debugger/using-the-parallel-stacks-window.md) . Aby otworzyć okno, podczas debugowania wybierz kolejno opcje **debuguj**> **Windows** > **stosy równoległe**.
+>Aby wyświetlić widok graficzny stosów wywołań dla wątków, użyj okna [stosów równoległych](../debugger/using-the-parallel-stacks-window.md) . Aby otworzyć okno, podczas debugowania wybierz kolejno opcje **Debuguj** >  **Windows**  >  **równoległe stosy**systemu Windows.
 
 Oprócz **flagi flaga**, Usuń **flagę**i Usuń **flagę wszystkich wątków**, menu kontekstowe prawym przyciskiem myszy dla elementów okna **wątku** ma:
 
@@ -168,7 +168,7 @@ Oprócz **flagi flaga**, Usuń **flagę**i Usuń **flagę wszystkich wątków**,
 - **Zmień**nazwę, co pozwala zmienić nazwę wątku.
 - [Zamrażanie i odblokowywanie](#bkmk_freeze) poleceń.
 
-## <a name="bkmk_freeze"></a>Zamrażanie i odblokowywanie wykonywania wątku
+## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Zamrażanie i odblokowywanie wykonywania wątku
 
 Można zablokować i odblokować lub zawiesić i wznowić wątki, aby kontrolować kolejność, w jakiej wątki działają. Wątki zamrażające i rozmrażające mogą pomóc w rozwiązywaniu problemów współbieżności, takich jak zakleszczenie i sytuacje wyścigu.
 
@@ -185,7 +185,7 @@ Można zablokować i odblokować lub zawiesić i wznowić wątki, aby kontrolowa
 
    Ikona **wstrzymania** znika, a wartość **Liczba wstrzymań** zostanie zmieniona na **0**.
 
-## <a name="switch-to-another-thread"></a>Przełączanie na inny wątek
+## <a name="switch-to-another-thread"></a>Przełącz do innego wątku
 
 Gdy próbujesz przełączyć się do innego wątku, **aplikacja jest w trybie przerwania** . To okno informuje o tym, że wątek nie ma żadnego kodu, który może być wyświetlany w bieżącym debugerze. Na przykład może być debugowany kod zarządzany, ale wątek jest kodem natywnym. Okno zawiera sugestie dotyczące rozwiązania problemu.
 
@@ -208,5 +208,5 @@ Za pomocą znacznika wątku w kodzie źródłowym można przełączyć tylko na 
 Znasz już podstawowe informacje na temat debugowania aplikacji wielowątkowych. Można obserwować, oflagować i flagować oraz zamrozić i odblokować wątki przy użyciu okna **wątki** , listy **wątków** na pasku narzędzi **Lokalizacja debugowania** lub znaczniki wątku w edytorze kodu źródłowego.
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
