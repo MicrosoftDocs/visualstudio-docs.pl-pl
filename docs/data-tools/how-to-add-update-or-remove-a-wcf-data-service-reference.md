@@ -1,7 +1,7 @@
 ---
 title: 'Porady: dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 494e85049a173749d418276340389ebe826a0b0b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184237"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282374"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołania usługi danych programu WCF
 
@@ -57,7 +57,7 @@ Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , ab
 
 1. Kliknij przycisk **OK** , aby dodać odwołanie do projektu.
 
-     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *App. config* .
+     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. W **Eksplorator rozwiązań**kliknij dwukrotnie lub naciśnij węzeł **usługi połączone** .
@@ -86,7 +86,7 @@ Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , ab
 
 1. Kliknij przycisk **Zakończ** , aby dodać odwołanie do projektu.
 
-     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *App. config* .
+     Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *app.config* .
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , ab
 
 1. Kliknij przycisk **OK** , aby dodać odwołanie do projektu.
 
-    Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *App. config* .
+    Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. W **Eksplorator rozwiązań**kliknij dwukrotnie lub naciśnij węzeł **usługi połączone** . 
@@ -129,7 +129,7 @@ Można użyć węzła **usługi połączone** w **Eksplorator rozwiązań** , ab
 
 1. Kliknij przycisk **Zakończ** , aby dodać odwołanie do projektu.
 
-    Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *App. config* .
+    Zostanie wygenerowany klient usługi (proxy), a metadane opisujące usługę zostaną dodane do pliku *app.config* .
 
 ::: moniker-end
 
@@ -151,11 +151,11 @@ Jeśli odwołanie do usługi nie jest już używane, można je usunąć z rozwi�
 
 - W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy odwołanie do usługi, a następnie kliknij pozycję **Usuń**.
 
-     Klient usługi zostanie usunięty z rozwiązania, a metadane opisujące usługę zostaną usunięte z pliku *App. config* .
+     Klient usługi zostanie usunięty z rozwiązania, a metadane opisujące usługę zostaną usunięte z pliku *app.config* .
 
     > [!NOTE]
     > Każdy kod, który odwołuje się do odwołania do usługi, musi zostać usunięty ręcznie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Usługi Windows Communication Foundation i usługi danych programu WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

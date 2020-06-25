@@ -1,7 +1,7 @@
 ---
 title: Tworzenie i konfigurowanie adapterów TableAdapter
 ms.date: 09/01/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - table adapters, creating
 - creating TableAdapters
@@ -14,16 +14,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586786"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282677"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie adapterów TableAdapter
 
-TableAdapters zapewnia komunikację między aplikacją a bazą danych. Łączą się z bazą danych, uruchamiają zapytania lub procedury składowane i zwracają nową tabelę danych lub wypełniają istniejące <xref:System.Data.DataTable> z zwróconymi danymi. TableAdapters może również wysyłać zaktualizowane dane z aplikacji z powrotem do bazy danych.
+TableAdapters zapewnia komunikację między aplikacją a bazą danych. Łączą się z bazą danych, uruchamiają zapytania lub procedury składowane i zwracają nową tabelę danych lub wypełniają istniejące <xref:System.Data.DataTable> dane danymi zwracanymi. TableAdapters może również wysyłać zaktualizowane dane z aplikacji z powrotem do bazy danych.
 
 TableAdapters są tworzone podczas wykonywania jednej z następujących czynności:
 
@@ -49,40 +49,40 @@ Jeśli przeciągniesz nowy TableAdapter z przybornika, gdy **Projektant obiektó
 
 - Istnieje możliwość utworzenia nowej procedury składowanej w źródłowej bazie danych, jeśli masz odpowiednie uprawnienia do bazy danych. Jeśli nie masz tych uprawnień, nie będzie to możliwe.
 
-- Możesz również uruchomić istniejące procedury składowane dla poleceń **SELECT**, **INSERT**, **Update**i **delete** elementu TableAdapter. Procedura składowana przypisana do polecenia **Update** , na przykład, jest uruchamiana, gdy wywoływana jest metoda `TableAdapter.Update()`.
+- Możesz również uruchomić istniejące procedury składowane dla poleceń **SELECT**, **INSERT**, **Update**i **delete** elementu TableAdapter. Procedura składowana przypisana do polecenia **Update** , na przykład, jest uruchamiana, gdy `TableAdapter.Update()` wywoływana jest metoda.
 
-Mapuj parametry z wybranej procedury przechowywanej do odpowiednich kolumn w tabeli danych. Na przykład jeśli procedura składowana akceptuje parametr o nazwie `@CompanyName`, który przechodzi do kolumny `CompanyName` w tabeli, należy ustawić **kolumnę źródłową** parametru `@CompanyName` na `CompanyName`.
+Mapuj parametry z wybranej procedury przechowywanej do odpowiednich kolumn w tabeli danych. Na przykład jeśli procedura składowana akceptuje parametr o nazwie `@CompanyName` przekazane do `CompanyName` kolumny w tabeli, należy ustawić **kolumnę źródłową** `@CompanyName` parametru na `CompanyName` .
 
 > [!NOTE]
-> Procedura składowana, która jest przypisana do polecenia SELECT, jest uruchamiana przez wywołanie metody TableAdapter, która została nazwana w następnym kroku kreatora. Metoda domyślna to `Fill`, więc kod, który jest zazwyczaj używany do uruchamiania procedury SELECT, jest `TableAdapter.Fill(tableName)`. W przypadku zmiany nazwy domyślnej z `Fill`należy zastąpić `Fill` nazwą przypisaną i zamienić wartość "TableAdapter" na rzeczywistą nazwę TableAdapter (na przykład `CustomersTableAdapter`).
+> Procedura składowana, która jest przypisana do polecenia SELECT, jest uruchamiana przez wywołanie metody TableAdapter, która została nazwana w następnym kroku kreatora. Metoda domyślna to `Fill` , więc kod, który jest zazwyczaj używany do uruchamiania procedury SELECT, to `TableAdapter.Fill(tableName)` . W przypadku zmiany nazwy domyślnej z programu `Fill` należy zastąpić `Fill` nazwą, którą chcesz przypisać, i Zastąp ciąg "TableAdapter" rzeczywistą nazwą TableAdapter (na przykład `CustomersTableAdapter` ).
 
-- Wybranie opcji **Utwórz metody, aby wysłać aktualizacje bezpośrednio do bazy danych,** jest równoznaczne z ustawieniem właściwości `GenerateDBDirectMethods` na true. Opcja jest niedostępna, gdy pierwotna instrukcja SQL nie dostarcza wystarczającej ilości informacji lub zapytanie nie jest aktualizowalnym zapytaniem. Taka sytuacja może wystąpić na przykład w kwerendach **sprzężenia** i zapytaniach zwracających pojedynczą wartość (skalarną).
+- Wybranie opcji **Utwórz metody, aby wysłać aktualizacje bezpośrednio do bazy danych,** jest równoznaczne z ustawieniem `GenerateDBDirectMethods` właściwości na true. Opcja jest niedostępna, gdy pierwotna instrukcja SQL nie dostarcza wystarczającej ilości informacji lub zapytanie nie jest aktualizowalnym zapytaniem. Taka sytuacja może wystąpić na przykład w kwerendach **sprzężenia** i zapytaniach zwracających pojedynczą wartość (skalarną).
 
 **Opcje zaawansowane** w kreatorze umożliwiają:
 
 - Generuj instrukcje INSERT, UPDATE i DELETE na podstawie instrukcji SELECT zdefiniowanej na stronie **generowanie instrukcji SQL**
-- Użyj optymistycznej współbieżności
+- Korzystanie z optymistycznej współbieżności
 - Określ, czy tabela danych ma być odświeżana po uruchomieniu instrukcji INSERT i UPDATE
 
 ## <a name="configure-a-tableadapters-fill-method"></a>Konfigurowanie metody Fill elementu TableAdapter
 
-Czasami może zajść potrzeba zmiany schematu tabeli TableAdapter. W tym celu należy zmodyfikować podstawową metodę `Fill` TableAdapter. TableAdapters są tworzone przy użyciu podstawowej metody `Fill`, która definiuje schemat skojarzonej tabeli danych. Podstawowa metoda `Fill` jest oparta na zapytaniu lub procedurze przechowywanej wprowadzonej podczas początkowego konfigurowania TableAdapter. Jest to pierwsza (najwyżej) Metoda w tabeli danych w Projektancie obiektów DataSet.
+Czasami może zajść potrzeba zmiany schematu tabeli TableAdapter. W tym celu należy zmodyfikować podstawową `Fill` metodę TableAdapter. TableAdapters są tworzone za pomocą `Fill` metody podstawowej, która definiuje schemat skojarzonej tabeli danych. Podstawowa `Fill` Metoda jest oparta na zapytaniu lub procedurze przechowywanej wprowadzonej podczas początkowego konfigurowania TableAdapter. Jest to pierwsza (najwyżej) Metoda w tabeli danych w Projektancie obiektów DataSet.
 
 ![TableAdapter z wieloma zapytaniami](../data-tools/media/tableadapter.gif)
 
-Wszelkie zmiany wprowadzone w głównej metodzie `Fill` TableAdapter są odzwierciedlane w schemacie skojarzonej tabeli danych. Na przykład usunięcie kolumny z zapytania w głównej metodzie `Fill` spowoduje również usunięcie kolumny ze skojarzonej tabeli danych. Ponadto usunięcie kolumny z głównej metody `Fill` powoduje usunięcie kolumny z dowolnych dodatkowych zapytań dla tego TableAdapter.
+Wszelkie zmiany wprowadzone w `Fill` metodzie Main TableAdapter są odzwierciedlane w schemacie skojarzonej tabeli danych. Na przykład usunięcie kolumny z zapytania w `Fill` metodzie Main spowoduje również usunięcie kolumny ze skojarzonej tabeli danych. Ponadto usunięcie kolumny z `Fill` metody Main spowoduje usunięcie kolumny z dowolnych dodatkowych zapytań dla tego TableAdapter.
 
 Za pomocą Kreatora konfiguracji zapytania TableAdapter można tworzyć i edytować dodatkowe zapytania dla TableAdapter. Te dodatkowe zapytania muszą być zgodne ze schematem tabeli, chyba że zwracają wartość skalarną.  Każde dodatkowe zapytanie ma określoną nazwę.
 
-Poniższy przykład pokazuje, jak wywołać dodatkowe zapytanie o nazwie `FillByCity`:
+Poniższy przykład pokazuje, jak wywołać dodatkowe zapytanie o nazwie `FillByCity` :
 
 `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Aby uruchomić Kreatora konfiguracji zapytania TableAdapter z nowym zapytaniem
 
-1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**.
+1. Otwórz zestaw danych w **Projektant obiektów DataSet**.
 
-2. W przypadku tworzenia nowego zapytania przeciągnij obiekt **zapytania** z karty **zestaw danych** **przybornika** na <xref:System.Data.DataTable>lub wybierz polecenie **Dodaj zapytanie** z menu skrótów TableAdapter. Możesz również przeciągnąć obiekt **zapytania** do pustego obszaru **Projektant obiektów DataSet**, który tworzy TableAdapter bez skojarzonego <xref:System.Data.DataTable>. Te zapytania mogą zwracać tylko pojedyncze (skalarne) wartości lub uruchamiać polecenia UPDATE, INSERT lub DELETE względem bazy danych.
+2. W przypadku tworzenia nowego zapytania przeciągnij obiekt **zapytania** z karty **zestaw danych** **przybornika** do <xref:System.Data.DataTable> lub wybierz polecenie **Dodaj zapytanie** z menu skrótów programu TableAdapter. Możesz również przeciągnąć obiekt **zapytania** do pustego obszaru **Projektant obiektów DataSet**, który tworzy TableAdapter bez skojarzonego <xref:System.Data.DataTable> . Te zapytania mogą zwracać tylko pojedyncze (skalarne) wartości lub uruchamiać polecenia UPDATE, INSERT lub DELETE względem bazy danych.
 
 3. Na ekranie **Wybierz połączenie danych** wybierz lub Utwórz połączenie, które będzie używane przez zapytanie.
 
@@ -102,7 +102,7 @@ Poniższy przykład pokazuje, jak wywołać dodatkowe zapytanie o nazwie `FillBy
 - Jeśli edytujesz istniejące zapytanie TableAdapter, kliknij je prawym przyciskiem myszy, a następnie wybierz polecenie **Konfiguruj** z menu skrótów.
 
     > [!NOTE]
-    > Kliknięcie prawym przyciskiem myszy głównego zapytania TableAdapter ponownie konfiguruje schemat TableAdapter i <xref:System.Data.DataTable>. Jednak kliknij prawym przyciskiem myszy dodatkowe zapytanie na TableAdapter, skonfiguruje tylko wybrane zapytanie. **Kreator konfiguracji TableAdapter** ponownie konfiguruje definicję TableAdapter, podczas gdy **Kreator konfiguracji zapytania TableAdapter** ponownie konfiguruje tylko wybrane zapytanie.
+    > Kliknięcie prawym przyciskiem myszy głównego zapytania TableAdapter ponownie konfiguruje TableAdapter i <xref:System.Data.DataTable> schemat. Jednak kliknij prawym przyciskiem myszy dodatkowe zapytanie na TableAdapter, skonfiguruje tylko wybrane zapytanie. **Kreator konfiguracji TableAdapter** ponownie konfiguruje definicję TableAdapter, podczas gdy **Kreator konfiguracji zapytania TableAdapter** ponownie konfiguruje tylko wybrane zapytanie.
 
 ### <a name="to-add-a-global-query-to-a-tableadapter"></a>Aby dodać zapytanie globalne do elementu TableAdapter
 
@@ -110,11 +110,11 @@ Poniższy przykład pokazuje, jak wywołać dodatkowe zapytanie o nazwie `FillBy
 
      Zapytania globalne są dodawane przez przeciąganie obiektu **zapytania** z karty **zestaw danych** **przybornika** do pustego obszaru **Projektant obiektów DataSet**.
 
-- Podaj zapytanie, które wykonuje odpowiednie zadanie, na przykład `SELECT COUNT(*) AS CustomerCount FROM Customers`.
+- Podaj zapytanie, które wykonuje odpowiednie zadanie, na przykład `SELECT COUNT(*) AS CustomerCount FROM Customers` .
 
     > [!NOTE]
     > Przeciąganie obiektu **zapytania** bezpośrednio do **Projektant obiektów DataSet** tworzy metodę zwracającą tylko wartość skalarną (pojedynczą). Mimo że wybrana procedura zapytania lub procedury składowanej może zwrócić więcej niż jedną wartość, Metoda utworzona przez kreatora zwróci tylko jedną wartość. Na przykład zapytanie może zwrócić pierwszą kolumnę pierwszego wiersza zwracanych danych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

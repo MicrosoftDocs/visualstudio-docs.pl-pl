@@ -1,7 +1,7 @@
 ---
 title: Użyj indeksu podglądu pomocy
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,70 +15,70 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825942"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284961"
 ---
-# <a name="find-topics-by-using-the-help-viewer-index"></a>Znajdowanie tematów przy użyciu indeksu w Podglądzie pomocy
+# <a name="find-topics-by-using-the-help-viewer-index"></a>Znajdowanie tematów przy użyciu indeksu podglądu pomocy
 
-Indeks zawiera listę słów kluczowych, które są skojarzone z tematów w zainstalowanej treści. Każdy temat może mieć więcej niż jedno słowo kluczowe skojarzone z nim, a każde słowo kluczowe może być skojarzona z więcej niż jednego tematu. Użyj tego indeksu w taki sam sposób jak w przypadku indeksu w książce.
+Indeks zawiera listę słów kluczowych skojarzonych z tematami w zainstalowanej zawartości. Każdy temat może zawierać więcej niż jedno słowo kluczowe skojarzone z nim, a każde słowo kluczowe może być skojarzone z więcej niż jednym tematem. Użyj tego indeksu w taki sam sposób, jak w przypadku użycia indeksu w książce.
 
 ## <a name="to-find-a-topic-by-using-the-index"></a>Aby znaleźć temat za pomocą indeksu
 
-Na **indeksu** karcie, wykonaj jedną z następujących czynności:
+Na karcie **indeks** wykonaj jedną z następujących czynności:
 
-- Określ słowo kluczowe do wyszukania w polu tekstowym. Na przykład określić "Aktualizuj", aby znaleźć tematy ze słowami kluczowymi, takie jak "update", "zaktualizowane" i "aktualizacji".
+- W polu tekstowym Określ słowo kluczowe do wyszukania. Na przykład określ "Update", aby znaleźć tematy z słowami kluczowymi, takimi jak "Aktualizacja", "zaktualizowane" i "Aktualizowanie".
 
-    Wybierając przycisk filtru w górnej części karty, możesz wyświetlić wszystkie wpisy, które zawierają tekst, który określisz albo tylko wpisy, rozpoczynających się od tekstu, który określisz.
+    Wybierając przycisk Filtr w górnej części karty, można wyświetlić wszystkie wpisy zawierające określony tekst lub tylko te wpisy, które zaczynają się od określonego tekstu.
 
     > [!NOTE]
-    > Gdy przycisk filtru pojawi się na tle ciemniejszego z obramowaniem, wpisy muszą _zawierają_ tekst, który określisz. Jeśli nie ma tło i obramowanie, wpisy muszą _rozpoczynać_ tekst, który określisz.
+    > Gdy przycisk filtru pojawia się na ciemniejszym tle z obramowaniem, wpisy muszą _zawierać_ określony tekst. Jeśli tło i obramowanie nie są wyświetlane, wpisy muszą _zaczynać się od_ określonego tekstu.
 
-- Przewiń do indeksu, a następnie wybierz słowem kluczowym.
+- Przewiń indeks i wybierz słowo kluczowe.
 
-    Jeśli słowo kluczowe, które określisz jest skojarzony z tylko jednego tematu, wygląda na to. W przeciwnym razie zostanie wyświetlona lista wszystkich tematów, które są skojarzone z tym słowem kluczowym.
+    Jeśli określone słowo kluczowe jest skojarzone tylko z jednym tematem, pojawia się. W przeciwnym razie zostanie wyświetlona lista wszystkich tematów skojarzonych ze słowem kluczowym.
 
-## <a name="index-search-tips"></a>Porady dotyczące wyszukiwania indeksu
+## <a name="index-search-tips"></a>Wskazówki dotyczące wyszukiwania indeksu
 
-Korzystanie z indeksu jest procesem proste; Jednakże zrozumieć, jak najlepiej wprowadź słowa kluczowe może być wyszukiwania indeksu wydajniejsze.
+Użycie indeksu jest procesem prostym do przodu; Jednak zrozumienie, jak najlepiej wprowadzać słowa kluczowe, można sprawić, że indeks przeszukiwany jest bardziej wydajny.
 
 ### <a name="general-guidelines"></a>Ogólne wskazówki
 
-- Przewiń wpisów indeksu. Nie wszystkie tematy są indeksowane w taki sam sposób i taki, który najbardziej może ułatwiać mogą być wyższe lub niższe na liście, niż oczekiwano.
+- Przewiń wpisy indeksu. Nie wszystkie tematy są indeksowane w taki sam sposób, który może być wyższy lub niższy na liście niż oczekiwano.
 
-- Pomiń artykułów, takich jak "" lub "", ponieważ indeks je ignoruje.
+- Pomiń artykuły takie jak "a" lub "a", ponieważ ich indeks ignoruje.
 
-- Odwróć wyrazy, które wprowadzisz, jeśli nie zostanie znaleziony wpisy, których oczekujesz.
+- Odwróć wprowadzone słowa, jeśli nie znajdziesz oczekiwanych wpisów.
 
-    Spróbuj na przykład jeśli "Debugowanie kodu zestawu wbudowanego" nie mają żadnych odpowiednimi wpisami, wpisując "kodu zestawu wbudowanego debugowanie".
+    Na przykład jeśli "Debugowanie kodu zestawu wbudowanego" nie wyświetla żadnych odpowiednich wpisów, spróbuj wpisać "kod asemblera, debugowanie wbudowane".
 
-- Użyj filtrów z **indeksu** kartę, aby zmniejszyć liczbę wyników.
+- Użyj filtrów z kartą **indeks** , aby zmniejszyć liczbę wyników.
 
-### <a name="syntax-tips"></a>Porady dotyczące składni
+### <a name="syntax-tips"></a>Wskazówki dotyczące składni
 
-Jeśli nie znajdziesz wpis dla wyrazu lub frazy, które zostały wprowadzone, spróbuj wykonać następujące czynności:
+Jeśli nie znajdziesz wpisu dla wprowadzonego wyrazu lub frazy, spróbuj wykonać następujące czynności:
 
-- Wpisz kilka pierwszych liter, lub główny wyrazu. Przystępując do częściowego ciągu, możesz uzyskać do tematów, które zostały zaindeksowane ze słowami kluczowymi, które są liczby pojedynczej lub mnogiej.
+- Wpisz kilka pierwszych liter (lub root) wyrazu. Wprowadzając ciąg częściowy, można przejść do tematów, które są indeksowane przy użyciu słów kluczowych, które są pojedyncze lub plural.
 
-    Na przykład wprowadź "właściwości", aby rozpocząć wyszukiwanie powyżej właściwości i właściwości.
+    Na przykład wprowadź "" ", aby rozpocząć wyszukiwanie powyżej właściwości i właściwości.
 
-- Wprowadź gerund (-ing) formy czasownika dla zadania, aby wykonać. Aby uzyskać bardziej szczegółowe wpisów indeksu, Dołącz słowo opisujące dokładnie chcesz.
+- Wprowadź formy gerund (--) zlecenia dla zadania, które chcesz wykonać. Aby znaleźć bardziej szczegółowe wpisy indeksu, należy dołączyć wyraz, który opisuje dokładnie to, czego potrzebujesz.
 
-    Na przykład, wpisz "uruchomiona", aby uzyskać więcej wpisów lub "Uruchamianie programów" Aby uzyskać mniej.
+    Na przykład wpisz "uruchomiona", aby uzyskać więcej wpisów lub "Uruchamianie programów", aby uzyskać mniej informacji.
 
-- Wprowadź określeniem autonomicznych. Aby zawęzić wyniki, należy dołączyć słowo opisujące dokładnie ma.
+- Wprowadź autonomiczne przymiotniki. Aby zawęzić wyniki, Dołącz wyraz, który opisuje dokładnie to, czego potrzebujesz.
 
-    Na przykład, wprowadź "COM +" Aby uzyskać szeroką gamę wpisy lub "składników modelu COM +" Aby uzyskać mniej.
+    Na przykład wprowadź ciąg "COM+", aby uzyskać wiele wpisów lub "składniki modelu COM+", aby uzyskać mniej.
 
-- Wprowadź synonim programu word lub zlecenie, którego szukasz.
+- Wprowadź synonim szukanego wyrazu lub zlecenia.
 
-    Spróbuj na przykład jeśli wprowadzono pojęcie "Tworzenie", "Tworzenie" zamiast niego.
+    Na przykład, jeśli wprowadzono termin "Kompilowanie", spróbuj "utworzyć" zamiast tego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Znajdowanie tematów w spisie treści](../help-viewer/find-topics-toc.md)
-- [Instrukcje: Wyszukaj tematy](../help-viewer/find-topics.md)
+- [Instrukcje: wyszukiwanie tematów](../help-viewer/find-topics.md)
 - [Podgląd Pomocy firmy Microsoft](../help-viewer/overview.md)

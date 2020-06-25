@@ -1,82 +1,82 @@
 ---
 title: Wyszukaj tematy (Podgląd pomocy)
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824991"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284922"
 ---
-# <a name="how-to-search-for-topics"></a>Instrukcje: Wyszukaj tematy
+# <a name="how-to-search-for-topics"></a>Instrukcje: wyszukiwanie tematów
 
-Funkcja wyszukiwania pełnotekstowego, aby znaleźć wszystkie tematy, które zawierają określony wyraz. Można również dostosować i dostosowywanie wyszukiwania przy użyciu wyrażenia z symbolami wieloznacznymi, operatory logiczne i operatory wyszukiwania zaawansowanego.
+Możesz użyć funkcji wyszukiwania pełnotekstowego, aby zlokalizować wszystkie tematy zawierające określony wyraz. Możesz również udoskonalać i dostosowywać wyszukiwanie przy użyciu symboli wieloznacznych, operatorów logicznych i operatorów wyszukiwania zaawansowanego.
 
-Aby otworzyć **wyszukiwania** karty, wybierz polecenie **wyszukiwania** karcie **podglądu pomocy** okna, lub jeśli jesteś użytkownikiem klawiatury, wybierz opcję **Ctrl** + **E**.
+Aby otworzyć kartę **Wyszukiwanie** , wybierz kartę **Wyszukiwanie** w oknie **podglądu pomocy** lub jeśli jesteś użytkownikiem klawiatury, wybierz pozycję **Ctrl** + **E**.
 
-## <a name="to-perform-a-full-text-search"></a>Aby wykonać wyszukiwanie pełnotekstowe
+## <a name="to-perform-a-full-text-search"></a>Aby przeprowadzić wyszukiwanie pełnotekstowe
 
-1. W polu wyszukiwania wpisz słowo, które chcesz znaleźć.
+1. W polu wyszukiwania wpisz wyraz, który ma zostać znaleziony.
 
-2. W zapytaniu wyszukiwania należy określić które operatory logiczne i zaawansowane wyszukiwanie do zastosowania do wyszukiwania, jeśli istnieją. Aby wyszukać wszystkie dostępne pomocy, nie należy używać operatorów.
+2. W zapytaniu wyszukiwania określ operatory wyszukiwania logicznego lub zaawansowanego, które mają być stosowane do wyszukiwania (jeśli istnieją). Aby przeszukać całą dostępną pomoc, nie używaj operatorów.
 
     > [!NOTE]
-    > W **Opcje podglądu** okno dialogowe, można określić dodatkowe preferencji, takich jak maksymalna liczba wyników wyszukiwania, aby wyświetlić w czasie i czy chcesz uwzględnić zawartość w języku angielskim, jeśli Twoje podstawowe ustawienia regionalne są inne niż angielskie.
+    > W oknie dialogowym **Opcje podglądu** można określić dodatkowe Preferencje, takie jak Maksymalna liczba wyników wyszukiwania, które mają być wyświetlane w danym momencie i czy ma być uwzględniana zawartość w języku angielskim, jeśli podstawowe ustawienia regionalne nie są w języku angielskim.
 
-3. Wybierz **Enter** klucza.
+3. Wybierz klawisz **Enter** .
 
-     Wyszukiwanie domyślnie zwraca maksymalnie 200 trafień i wyświetla je w obszarze wyniki wyszukiwania. Dodatkowe informacje o wersji dla każdego wyniku, może pojawić się w zależności od zawartości.
+     Wyszukiwanie domyślnie zwraca maksymalnie 200 trafień i wyświetla je w obszarze wyników wyszukiwania. W zależności od zawartości mogą pojawić się dodatkowe informacje o wersji dla każdego wyniku.
 
-4. Aby wyświetlić temat, wybierz jego tytuł, z listy wyników.
+4. Aby wyświetlić temat, wybierz jego tytuł z listy wyników.
 
 ## <a name="full-text-search-tips"></a>Porady dotyczące wyszukiwania pełnotekstowego
 
-Można utworzyć więcej docelowych wyszukiwania, które zwracają tymi tematami, interesujące Cię, jeśli rozumiesz wpływ składni zapytania. Składnia zawiera znaki specjalne, wyrazy zastrzeżone i filtry. Ten temat zawiera wskazówki, procedury i informacje szczegółowe informacje o składni ułatwiające lepsze tworzenie zapytań.
+Możesz utworzyć bardziej mierzone wyszukiwania, które zwracają tylko te tematy, które Cię interesują, jeśli rozumiesz, jak składnia ma wpływ na zapytanie. Składnia zawiera znaki specjalne, słowa zastrzeżone i filtry. Ten temat zawiera porady, procedury i szczegółowe informacje o składni, które ułatwiają lepsze tworzenie zapytań.
 
 ### <a name="general-guidelines"></a>Ogólne wskazówki
 
-Poniższa tabela zawiera niektóre podstawowe zasady i wytyczne dotyczące tworzenia zapytań wyszukiwania w Pomocy.
+Poniższa tabela zawiera podstawowe zasady i wskazówki dotyczące opracowywania zapytań wyszukiwania w pomocy.
 
 |Składnia|Opis|
 |------------|-----------------|
-|Rozróżnianie wielkości liter|Wyszukiwanie nie jest rozróżniana wielkość liter. Twórz kryteria wyszukiwania za pomocą wielkie i małe znaki. Na przykład "OLE" i "ole" zwracają takie same wyniki.|
-|Kombinacje znaków|Nie można wyszukiwać tylko poszczególne litery (a – z) lub cyfry (0 – 9). Jeśli zostanie podjęta próba wyszukiwania dla niektórych słowa zastrzeżone, takie jak "i", "od" i "z" zostanie zignorowany. Aby uzyskać więcej informacji, zobacz [wyrazy ignorowane w wyszukiwaniach](#stopwords) w dalszej części tego tematu.|
-|Kolejność obliczania|Zapytania wyszukiwania są przetwarzane od lewej do prawej.|
+|Rozróżnianie wielkości liter|W wyszukiwaniu nie jest rozróżniana wielkość liter. Opracowywanie kryteriów wyszukiwania przy użyciu wielkich lub małych liter. Na przykład "OLE" i "OLE" zwracają te same wyniki.|
+|Kombinacje znaków|Nie można wyszukać tylko pojedynczych liter (a-z) lub cyfr (0-9). Jeśli spróbujesz wyszukać określone słowa zastrzeżone, takie jak "i", "od" i "with", zostaną one zignorowane. Aby uzyskać więcej informacji, zobacz [słowa ignorowane w wyszukiwaniach w](#stopwords) dalszej części tego tematu.|
+|Kolejność oceny|Zapytania wyszukiwania są oceniane od lewej do prawej.|
 
 ### <a name="search-syntax"></a>Składnia wyszukiwania
 
-Jeśli określisz wyszukiwany ciąg, który zawiera wiele słów, takich jak "word1 word2", ciąg jest równoważne wprowadzeniu wyrażenia "word1 AND word2", która zwraca tylko te tematy, które zawierają wszystkie poszczególne wyrazy w wyszukiwanym ciągu.
+Jeśli określisz ciąg wyszukiwania, który zawiera wiele słów, takich jak "word1 word2", ten ciąg jest równoznaczny z wpisaniem "word1 i word2", które zwraca tylko tematy zawierające wszystkie poszczególne wyrazy w ciągu wyszukiwania.
 
 > [!IMPORTANT]
-> - Wyszukiwanie frazy nie jest obsługiwane. Jeśli określisz więcej niż jeden wyraz w wyszukiwanym ciągu zwróconego tematów będzie zawierać wszystkie wyrazy, które określiłeś, ale niekoniecznie dokładnej frazy, który określiłeś.
-> - Użyj operatorów logicznych, aby określić relację między wyrazami w swojej frazy wyszukiwania. Możesz uwzględnić operatorów logicznych, takich jak AND, OR, NOT i w pobliżu, aby jeszcze bardziej Uściślij kryteria wyszukiwania. Na przykład jeśli wyszukasz "deklarowanie Unii w pobliżu" wyniki wyszukiwania zawierają tematy zawierające słowa "deklarowanie" i "union" ma więcej niż kilka słów od siebie nawzajem. Aby uzyskać więcej informacji, zobacz [operatory logiczne w wyrażeniach wyszukiwania](../help-viewer/logical-operators-search-expressions.md).
+> - Wyszukiwania fraz nie są obsługiwane. W przypadku określenia więcej niż jednego wyrazu w ciągu wyszukiwania zwrócone tematy będą zawierać wszystkie słowa, które zostały określone, ale nie muszą być dokładnie określone.
+> - Operatory logiczne służą do określania relacji między wyrazami w wyszukiwaniu. Można uwzględnić operatory logiczne, takie jak i, lub, nie i blisko, aby jeszcze bardziej zawęzić kryteria wyszukiwania. Na przykład w przypadku wyszukiwania "deklarowania blisko Unii" wyniki wyszukiwania będą zawierać tematy zawierające słowa "deklarujące" i "Union" nie więcej niż kilka wyrazów od siebie nawzajem. Aby uzyskać więcej informacji, zobacz [Operatory logiczne w wyrażeniach wyszukiwania](../help-viewer/logical-operators-search-expressions.md).
 
 ### <a name="filters"></a>Filtry
 
-Za pomocą operatorów wyszukiwania zaawansowanego, można bardziej ograniczyć wyniki wyszukiwania. Pomoc zawiera trzy kategorie, które można użyć do filtrowania wyników wyszukiwania pełnotekstowego: Tytuł, kodu i słowo kluczowe.
+Możesz bardziej ograniczyć wyniki wyszukiwania przy użyciu operatorów wyszukiwania zaawansowanego. Pomoc zawiera trzy kategorie, których można użyć do filtrowania wyników wyszukiwania pełnotekstowego: tytuł, kod i słowo kluczowe.
 
 ### <a name="ranking-of-search-results"></a>Klasyfikacja wyników wyszukiwania
 
-Algorytm wyszukiwania mają zastosowanie określone kryteria w celu ranga wyniki, wyższe lub niższe wyszukiwania na liście wyników. Ogólnie rzecz biorąc:
+Algorytm wyszukiwania stosuje pewne kryteria, aby pomóc w ustalaniu rangi wyników wyszukiwania wyższych lub niższych na liście wyników. Ogólnie rzecz biorąc:
 
-1. Zawartość, która zawiera słów kluczowych w tytule znajduje się wyżej niż zawartość, która nie.
+1. Zawartość obejmująca słowa wyszukiwania w tytule jest wyższa niż zawartość, która nie jest.
 
-2. Zawartość, która zawiera słów kluczowych w bliskim sąsiedztwie znajduje się wyżej niż zawartość, która nie.
+2. Zawartość obejmująca słowa wyszukiwania w bliskim sąsiedztwie jest wyższa niż zawartość, która nie jest.
 
-3. Zawartość, która zawiera zwiększenie gęstości słów wyszukiwania znajduje się wyżej niż zawartości, który ma niższy gęstość wyszukiwanych słów.
+3. Zawartość zawierająca wyższą gęstość wyrazów wyszukiwania jest wyższa niż zawartość, która ma niższą gęstość słów wyszukiwania.
 
-### <a name="stopwords"> Słowa ignorowane podczas wyszukiwania (słowa ignorowane) </a>
+### <a name=""></a><a name="stopwords">Słowa ignorowane podczas wyszukiwania (Zatrzymywanie wyrazów)</a>
 
-Najczęściej występujących słów lub cyfr, które są czasem nazywane słowa ignorowane, automatycznie są pomijane podczas wyszukiwania pełnotekstowego. Na przykład jeśli możesz wyszukać frazę "przekazywania" wyniki wyszukiwania zostanie wyświetlona tematy zawierające słowo "przebiegu" ale nie "do".
+Często występujące wyrazy lub liczby, które są czasami nazywane słowami stop, są automatycznie ignorowane podczas wyszukiwania pełnotekstowego. Na przykład jeśli szukasz frazy "Przekazuj do", wyniki wyszukiwania będą wyświetlały tematy zawierające wyraz "Pass", ale nie "do".
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Operatory logiczne i zaawansowane](../help-viewer/logical-operators-search-expressions.md)
 - [Instrukcje: Znajdowanie tematów w indeksie](../help-viewer/find-topics-index.md)

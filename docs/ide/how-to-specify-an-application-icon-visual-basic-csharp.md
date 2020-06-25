@@ -1,7 +1,7 @@
 ---
-title: 'Jak: Określ ikonę aplikacji (Visual Basic, C#)'
+title: 'Instrukcje: Określanie ikony aplikacji (Visual Basic, C#)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
@@ -11,33 +11,33 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596141"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284064"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Jak: Określ ikonę aplikacji (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Instrukcje: Określanie ikony aplikacji (Visual Basic, C#)
 
-Właściwość `Icon` projektu określa plik ikony (*.ico*), który będzie wyświetlany dla skompilowaną aplikacji w **Eksploratorze plików** i na pasku zadań systemu Windows.
+`Icon`Właściwość projektu określa plik ikony (*. ico*), który będzie wyświetlany dla skompilowanej aplikacji w **Eksploratorze plików** i na pasku zadań systemu Windows.
 
-Właściwość `Icon` jest dostępna w okienku **aplikacji** **projektanta projektów;** zawiera listę ikon, które zostały dodane do projektu jako zasoby lub jako pliki zawartości.
+`Icon`Właściwość może być dostępna w okienku **aplikacji** **projektanta projektu**. zawiera listę ikon, które zostały dodane do projektu jako zasoby lub jako pliki zawartości.
 
 > [!NOTE]
-> Po ustawieniu właściwości ikony dla aplikacji, `Icon` można również ustawić właściwość każdego **okna** lub **formularza** w aplikacji. Aby uzyskać informacje na temat ikon okien dla aplikacji autonomicznych <xref:System.Windows.Window.Icon%2A> programu Windows Presentation Foundation (WPF), zobacz właściwość.
+> Po ustawieniu właściwości ikona dla aplikacji można również ustawić `Icon` Właściwość każdego **okna** lub **formularza** w aplikacji. Aby uzyskać informacje na temat ikon okna dla aplikacji autonomicznych Windows Presentation Foundation (WPF), zobacz <xref:System.Windows.Window.Icon%2A> Właściwość.
 
 ## <a name="to-specify-an-application-icon"></a>Aby określić ikonę aplikacji
 
-1. W **Eksploratorze rozwiązań**wybierz węzeł projektu (nie węzeł **Rozwiązanie).**
+1. W **Eksplorator rozwiązań**wybierz węzeł projektu (nie węzeł **rozwiązania** ).
 
-1. Na pasku menu wybierz polecenie**Właściwości** **projektu** > .
+1. Na pasku menu wybierz **Project**  >  **Właściwości**projektu.
 
-1. Po wyświetleniu **projektanta projektu** wybierz kartę **Aplikacja.**
+1. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **aplikacja** .
 
-1. **(Visual Basic)** &mdash;Na liście **Ikona** wybierz plik ikony (*.ico).*
+1. **(Visual Basic)** &mdash; Na liście **ikon** wybierz plik ikony (*. ico*).
 
-    **C#**&mdash;W pobliżu listy **Ikony** wybierz przycisk ** \<Przeglądaj...>,** a następnie przejdź do lokalizacji odpowiedniego pliku ikony.
+    Język **C#** &mdash; Obok listy **ikon** wybierz **\<Browse...>** przycisk, a następnie przejdź do lokalizacji pliku ikony, który chcesz.
 
 ## <a name="see-also"></a>Zobacz też
 

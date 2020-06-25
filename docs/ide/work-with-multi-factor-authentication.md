@@ -1,5 +1,5 @@
 ---
-title: Pracuj z kontami wymagającymi uwierzytelniania wieloskładnikowego
+title: Praca z kontami wymagającymi uwierzytelniania wieloskładnikowego
 ms.date: 05/27/2020
 ms.topic: conceptual
 description: Dowiedz się, jak używać programu Visual Studio z kontami, które wymagają uwierzytelniania wieloskładnikowego.
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 696664aa5aa92a3e9a675df4803a3e65e3e81f36
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84185617"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283549"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Jak używać programu Visual Studio z kontami, które wymagają uwierzytelniania wieloskładnikowego
 
@@ -33,7 +33,11 @@ W wersji 16,6 dodaliśmy nowe możliwości do programu Visual Studio 2019, któr
 > [!WARNING]
 > Nie można używać tego przepływu pracy, który może wyzwolić obniżenie wydajności, co powoduje wielokrotne wyświetlanie dodatkowych wierszy uwierzytelniania przy dodawaniu lub ponownym uwierzytelnianiu kont programu Visual Studio. 
 
-### <a name="enabling-system-web-browser"></a>Włączanie przeglądarki sieci Web systemu  
+### <a name="enabling-system-web-browser"></a>Włączanie przeglądarki sieci Web systemu
+
+> [!NOTE] 
+> Aby uzyskać najlepsze doświadczenia, zalecamy wyczyszczenie domyślnych danych przeglądarki sieci Web systemu przed kontynuowaniem tego przepływu pracy. Ponadto jeśli masz konta służbowe w ustawieniach systemu Windows 10 w obszarze **dostęp do zasobów służbowych**, sprawdź, czy są one prawidłowo uwierzytelniane.
+
 Aby włączyć ten przepływ pracy, przejdź do okna dialogowego Opcje programu Visual Studio **(narzędzia > opcje...)**, wybierz kartę **konta** i opcję Wybierz **systemową przeglądarkę internetową** w obszarze **Dodaj i ponownie Uwierzytelnij konta przy użyciu:** lista rozwijana. 
 
 :::image type="content" source="media/select-system-web-browser.png" alt-text="Z menu wybierz opcję systemowa przeglądarka sieci Web.":::
@@ -43,20 +47,22 @@ Po włączeniu przepływu pracy przeglądarki sieci Web systemu można zalogowa�
 </br>
 :::image type="content" source="media/add-personalization-account.png" alt-text="Dodaj nowe konto personalizacji do programu Visual Studio." border="false":::
 
-Ta akcja spowoduje otwarcie domyślnej przeglądarki sieci Web systemu, poproszenie Cię o zalogowanie się do konta i zweryfikowanie wymaganych zasad MFA. 
+Ta akcja spowoduje otwarcie domyślnej przeglądarki sieci Web systemu, poproszenie Cię o zalogowanie się do konta i zweryfikowanie wymaganych zasad MFA.
+
+Na podstawie działań programistycznych i konfiguracji zasobów może zostać wyświetlony monit o ponowne wprowadzenie poświadczeń podczas sesji. Taka sytuacja może wystąpić, gdy dodasz nowy zasób lub spróbujesz uzyskać dostęp do zasobu bez wcześniejszego spełnienia wymagań związanych z autoryzacją urzędu certyfikacji/MFA.
 
 > [!NOTE] 
-> Pamiętaj, aby przeglądarka była otwierana przez cały proces w celu uzyskania najlepszego środowiska, ponieważ zamknięcie przeglądarki może wyzwolić dodatkowe polecenia autoryzacji. 
+> W celu uzyskania najlepszego środowiska przeglądarka zostanie otwarta, dopóki wszystkie zasady urzędu certyfikacji/MFA nie zostaną zweryfikowane dla Twoich zasobów. Zamknięcie przeglądarki może spowodować utratę poprzednio skompilowanego stanu usługi MFA i może monitować o dodatkowe monity o autoryzację.
 
 ## <a name="reauthenticating-an-account"></a>Reuwierzytelnianie konta  
 Jeśli wystąpi problem z Twoim kontem, program Visual Studio może poprosił o ponownie wprowadzenie poświadczeń konta.  
 
 :::image type="content" source="media/reauthenticate-account.png" alt-text="Ponownie Uwierzytelnij Twoje konto programu Visual Studio.":::
 
-Kliknięcie przycisku **ponownie wprowadź poświadczenia** spowoduje otwarcie domyślnej przeglądarki sieci Web systemu i próba automatycznego odświeżenia poświadczeń. Jeśli nie powiedzie się, zostanie wyświetlony monit o zalogowanie się do konta i zweryfikowanie wymaganych zasad usługi MFA. 
+Kliknięcie przycisku **ponownie wprowadź poświadczenia** spowoduje otwarcie domyślnej przeglądarki sieci Web systemu i próba automatycznego odświeżenia poświadczeń. Jeśli nie powiedzie się, zostanie wyświetlony monit o zalogowanie się do konta i zweryfikowanie wszystkich wymaganych zasad urzędu certyfikacji/MFA.
 
 > [!NOTE] 
-> Pamiętaj, aby przeglądarka była otwierana przez cały proces w celu uzyskania najlepszego środowiska, ponieważ zamknięcie przeglądarki może spowodować dodatkowe komunikaty dotyczące autoryzacji. 
+> W celu uzyskania najlepszego środowiska przeglądarka zostanie otwarta, dopóki wszystkie zasady urzędu certyfikacji/MFA nie zostaną zweryfikowane dla Twoich zasobów. Zamknięcie przeglądarki może spowodować utratę poprzednio skompilowanego stanu usługi MFA i może monitować o dodatkowe monity o autoryzację.
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>Jak zrezygnować z używania określonej dzierżawy Azure Active Directory w programie Visual Studio
 
@@ -75,7 +81,7 @@ Zostanie wyświetlone okno dialogowe **filtrowanie konta** umożliwiające wybra
 
 :::image type="content" source="media/select-filter-account.png" alt-text="Wybierz pozycję konto do filtrowania.":::
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)
 - [Zaloguj się do Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in)

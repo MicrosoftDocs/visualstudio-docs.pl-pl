@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183096"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283570"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Samouczek: Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript w programie Visual Studio
 
@@ -97,9 +97,9 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
 
 1. Kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **dodaj > nowy element**. Wybierz **plik konfiguracji języka TYPESCRIPT JSON**, a następnie kliknij przycisk **Dodaj**.
 
-   Program Visual Studio dodaje plik *tsconfig. JSON* do katalogu głównego projektu. Tego pliku można użyć do [skonfigurowania opcji](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) kompilatora języka TypeScript.
+   Program Visual Studio dodaje *tsconfig.js* do pliku w katalogu głównym projektu. Tego pliku można użyć do [skonfigurowania opcji](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) kompilatora języka TypeScript.
 
-1. Otwórz plik *tsconfig. JSON* i Zastąp domyślny kod następującym kodem:
+1. Otwórz *tsconfig.jsna* i Zastąp domyślny kod następującym kodem:
 
    ```json
    {
@@ -162,7 +162,7 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
 
     Wybierz `lastName` , aby dodać ostatnią nazwę z powrotem do kodu.
 
-1. Otwórz *Widok/folder macierzysty* , a następnie otwórz *plik index. html*.
+1. Otwórz *Widok/folder macierzysty* , a następnie otwórz *index. cshtml*.
 
 1. Dodaj następujący kod HTML na końcu pliku.
 
@@ -189,7 +189,7 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
 
    Mimo że aplikacja automatycznie kompiluje się po uruchomieniu, chcemy obejrzeć coś, co się dzieje w trakcie procesu kompilacji.
 
-1. Otwórz folder *wwwroot/js* i Znajdź dwa nowe pliki, *App. js* i plik mapy źródłowej *App. js. map*. Te pliki są generowane przez kompilator języka TypeScript.
+1. Otwórz folder *wwwroot/js* i Znajdź dwa nowe pliki, *app.js* i plik mapy źródłowej, *app.js. map*. Te pliki są generowane przez kompilator języka TypeScript.
 
    Pliki mapy źródłowej są wymagane do debugowania.
 
@@ -224,7 +224,7 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
    >[!NOTE]
    > W przypadku projektów ASP.NET Core można także użyć [Menedżera bibliotek](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) lub przędzy zamiast npm do instalowania plików JavaScript i CSS po stronie klienta.
 
-1. W tym przykładzie Dodaj plik definicji TypeScript dla platformy jQuery do projektu. W pliku *Package. JSON* należy uwzględnić następujące elementy.
+1. W tym przykładzie Dodaj plik definicji TypeScript dla platformy jQuery do projektu. W *package.js* pliku należy uwzględnić następujące elementy.
 
    ```json
    "devDependencies": {
@@ -237,7 +237,7 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
 1. Jeśli pakiet w Eksplorator rozwiązań nie jest zainstalowany, kliknij prawym przyciskiem myszy węzeł npm i wybierz polecenie **Przywróć pakiety**.
 
    >[!NOTE]
-   > W niektórych scenariuszach Eksplorator rozwiązań może wskazywać, że pakiet npm nie jest zsynchronizowany z *pakietem Package. JSON* ze względu na znany problem opisany [tutaj](https://github.com/aspnet/Tooling/issues/479). Na przykład pakiet może być wyświetlany jako niezainstalowany podczas instalacji. W większości przypadków można zaktualizować Eksplorator rozwiązań, usuwając plik *Package. JSON*, ponownie uruchamiając program Visual Studio, a następnie dodając *go ponownie* , zgodnie z opisem we wcześniejszej części tego artykułu.
+   > W niektórych scenariuszach Eksplorator rozwiązań może wskazywać, że pakiet npm nie jest zsynchronizowany z *package.jsna* skutek znanego problemu opisanego w [tym miejscu](https://github.com/aspnet/Tooling/issues/479). Na przykład pakiet może być wyświetlany jako niezainstalowany podczas instalacji. W większości przypadków można zaktualizować Eksplorator rozwiązań przez usunięcie *package.jsna*, ponowne uruchomienie programu Visual Studio i ponowne dodanie *package.js* do pliku zgodnie z opisem we wcześniejszej części tego artykułu.
 
 1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy folder skrypty i wybierz polecenie **Dodaj**  >  **nowy element**.
 

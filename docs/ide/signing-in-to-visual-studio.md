@@ -10,72 +10,79 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1033d4167c03951a642656807aeb9cca83116651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79132717"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285299"
 ---
 # <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
-Możesz spersonalizować i zoptymalizować środowisko programistyczne w programie Visual Studio, logując się na swoje konto personalizacji.
+Możesz spersonalizować i zoptymalizować środowisko programistyczne w programie Visual Studio, logując się do konta personalizacji.
 
 > [!NOTE]
-> W tym temacie stosuje się do programu Visual Studio w systemie Windows. Aby zapoznać się z programem Visual Studio dla komputerów Mac, zobacz [Logowanie się do programu Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in).
+> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz artykuł [Logowanie do usługi Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in).
+
+::: moniker range="vs-2017"
+
+> [! Ostrzeżenie] przy użyciu programu Visual Studio 2017 do uzyskiwania dostępu do zasobów skonfigurowanych dla dostępu warunkowego może wyzwolić niesprawne uwierzytelnianie, monitując o ponowne uwierzytelnienie kilka razy w ramach tej samej sesji programu Visual Studio. 
+> Aby można było korzystać z zasobów skonfigurowanych do dostępu warunkowego, należy przeprowadzić uaktualnienie do programu Visual Studio 2019 Update 16,6 lub nowszego. Aby uzyskać więcej informacji, zobacz [jak używać programu Visual Studio z kontami, które wymagają uwierzytelniania wieloskładnikowego](work-with-multi-factor-authentication.md).
+
+::: moniker-end
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Dlaczego powinienem się zarejestrować w usłudze Visual Studio?
 
-Po zalogowaniu się wzbogacić środowisko programu Visual Studio. Na przykład po zalogowaniu można [zsynchronizować ustawienia](synchronized-settings-in-visual-studio.md) między urządzeniami, rozszerzyć wersję próbną i automatycznie połączyć się z usługą platformy Azure, aby wymienić tylko kilka.
+Po zalogowaniu się możesz wzbogacić środowisko programu Visual Studio. Na przykład po zalogowaniu można [zsynchronizować ustawienia](synchronized-settings-in-visual-studio.md) między urządzeniami, zwiększyć okres próbny i automatycznie połączyć się z usługą platformy Azure, aby nazwać kilka.
 
-Oto pełna lista tego, czego możesz się spodziewać i co możesz zrobić po zalogowaniu się:
-- **Przedłuż okres próbny programu Visual Studio** — program Visual Studio Professional lub Visual Studio Enterprise można używać przez dodatkowe 90 dni, zamiast ograniczać się do okresu próbnego wynoszącego 30 dni. Aby uzyskać więcej informacji, zobacz [Rozszerzanie wersji próbnej lub aktualizowanie licencji](../ide/how-to-unlock-visual-studio.md).
+Poniżej znajduje się pełna lista elementów, których można oczekiwać, oraz czynności, które można wykonać po zalogowaniu:
+- **Zwiększ okres próbny programu Visual Studio** — możesz użyć Visual Studio Professional lub Visual Studio Enterprise przez dodatkowe 90 dni, a nie ograniczyć się do okresu próbnego 30 dni. Aby uzyskać więcej informacji, zobacz temat [zwiększanie wersji próbnej lub aktualizowanie licencji](../ide/how-to-unlock-visual-studio.md).
 
-- **Odblokuj wersję społeczności programu Visual Studio** — jeśli instalacja wersji społecznościowej monituje o licencję, zaloguj się do IDE, aby odblokować siebie.
+- **Odblokuj wersję Visual Studio Community Edition** — Jeśli Twoja instalacja Community Edition poprosi o licencję, zaloguj się do środowiska IDE, aby odblokować siebie.
 
-- **Odblokuj program Visual Studio, jeśli używasz konta skojarzonego z subskrypcją programu Visual Studio lub organizacją Azure DevOps.** Aby uzyskać szczegółowe instrukcje, zobacz [Rozszerzanie wersji próbnej lub aktualizowanie licencji](../ide/how-to-unlock-visual-studio.md).
+- **Odblokuj program Visual Studio, jeśli używasz konta skojarzonego z subskrypcją programu Visual Studio lub organizacją usługi Azure DevOps**. Aby uzyskać szczegółowe instrukcje, zobacz sekcję [zwiększanie wersji próbnej lub aktualizowanie licencji](../ide/how-to-unlock-visual-studio.md).
 
-- **Dostęp do programu Visual Studio Dev Essentials** — ten program zawiera oferty wolnego oprogramowania, szkolenia, wsparcie i inne. Aby uzyskać więcej informacji, zobacz [Podstawowe informacje dotyczące programu Visual Studio Dev.](https://visualstudio.microsoft.com/dev-essentials/)
+- **Dostęp do programu Visual Studio Dev Essentials** — ten program obejmuje bezpłatne oferty oprogramowania, szkolenia, pomoc techniczną i inne. Aby uzyskać więcej informacji, zobacz [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
-- **Synchronizuj ustawienia programu Visual Studio** — ustawienia, które można dostosować, takie jak powiązania kluczy, układ okna i motyw kolorów, stosuje się natychmiast po zalogowaniu się do programu Visual Studio na dowolnym urządzeniu. Zobacz [Synchronizowanie ustawień w programie Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
+- **Zsynchronizuj ustawienia programu Visual Studio** — ustawienia, które można dostosować, takie jak powiązania klawiszy, układ okna i motyw kolorów, są stosowane natychmiast po zalogowaniu się do programu Visual Studio na dowolnym urządzeniu. Zobacz [Synchronizowanie ustawień w programie Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
-- **Automatyczne łączenie się z usługami, takimi jak Azure i usługi Azure DevOps** w usłudze IDE bez ponownego monitowania o poświadczenia dla tego samego konta.
+- **Automatycznie łącz się z usługami takimi jak Azure i Azure DevOps Services** w środowisku IDE bez monitowania o poświadczenia dla tego samego konta.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Jak zalogować się do programu Visual Studio
 
-Po otwarciu programu Visual Studio po raz pierwszy zostaniesz poproszony o zalogowanie się i podanie podstawowych informacji rejestracyjnych. 
+Po otwarciu programu Visual Studio po raz pierwszy zostanie wyświetlony monit o zalogowanie się i dostarczenie podstawowych informacji rejestracyjnych. 
 
-![Monit o logowanie](../ide/media/vs2019_signinpopup.png)
+![Monit logowania](../ide/media/vs2019_signinpopup.png)
 
-Należy wybrać konto Microsoft lub konto służbowe, które najlepiej Cię reprezentuje. Jeśli nie masz żadnego z tych kont, możesz utworzyć konto Microsoft za darmo, klikając łącze pod przyciskiem logowania. Jeśli masz problemy, zobacz [Jak zarejestrować konto Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
+Należy wybrać konto Microsoft lub konto służbowe, które najlepiej reprezentuje użytkownika. Jeśli nie masz żadnego z tych kont, możesz utworzyć konto Microsoft bezpłatnie przez kliknięcie linku w obszarze przycisk Zaloguj. Jeśli masz problemy, zobacz Jak mogę utworzyć [konto w konto Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
-Następnie wybierz ustawienia interfejsu użytkownika i kompozycję kolorów, których chcesz używać w programie Visual Studio. Program Visual Studio zapamiętuje te ustawienia i synchronizuje je we wszystkich środowiskach programu Visual Studio, do których się zalogowano. Aby uzyskać listę ustawień, które są synchronizowane, zobacz [Ustawienia zsynchronizowane](../ide/synchronized-settings-in-visual-studio.md). Ustawienia można zmienić później, jeśli otworzysz menu**Opcje** **narzędzi** > w programie Visual Studio.
+Następnie wybierz ustawienia interfejsu użytkownika i kompozycję kolorów, których chcesz używać w programie Visual Studio. Program Visual Studio zapamiętuje te ustawienia i synchronizuje je we wszystkich środowiskach programu Visual Studio, do których się zalogowano. Aby zapoznać się z listą synchronizowanych ustawień, zobacz [Ustawienia zsynchronizowane](../ide/synchronized-settings-in-visual-studio.md). Możesz zmienić ustawienia później, jeśli otworzysz **Tools**  >  menu**Opcje** narzędzi w programie Visual Studio.
 
-Po podaniu ustawień program Visual Studio uruchomi się, zaloguje cię i umożliwi rozpoczęcie pracy. Aby sprawdzić, czy jesteś zalogowany, poszukaj swojego imienia i nazwiska w prawym górnym rogu środowiska programu Visual Studio.
+Po podaniu ustawień program Visual Studio uruchomi się, zaloguje cię i umożliwi rozpoczęcie pracy. Aby sprawdzić, czy użytkownik jest zalogowany, poszukaj nazwy w prawym górnym rogu środowiska Visual Studio.
 
 ![Aktualnie zalogowany użytkownik w VS2019](../ide/media/vs2019_username.png)
 
-Jeśli nie chcesz się logować przy pierwszym otwarciu programu Visual Studio, można to zrobić później. Poszukaj **łącza Zaloguj** się w prawym górnym rogu środowiska programu Visual Studio. 
+Jeśli nie zdecydujesz się na zalogowanie się przy pierwszym otwarciu programu Visual Studio, można to zrobić później. Poszukaj linku **logowania** w prawym górnym rogu środowiska programu Visual Studio. 
 
-![Nie zalogowany użytkownik](../ide/media/vs2019_usernotsignedin.png)
+![Użytkownik niezalogowany](../ide/media/vs2019_usernotsignedin.png)
 
-Jeśli nie wylogujesz się, automatycznie zalogujesz się do programu Visual Studio przy każdym uruchomieniu, a wszelkie zmiany w zsynchronizowanych ustawieniach są automatycznie stosowane. Aby się wylogować, kliknij ikonę z nazwą profilu w prawym górnym rogu środowiska programu Visual Studio, wybierz polecenie **Ustawienia konta,** a następnie wybierz łącze **Wyloguj.** Aby zalogować się ponownie, wybierz polecenie Zaloguj się **w** prawym górnym rogu środowiska programu Visual Studio.
+Jeśli nie wylogujesz się, nastąpi automatyczne zalogowanie do programu Visual Studio przy każdym jego uruchomieniu, a zmiany w synchronizowanych ustawieniach są automatycznie stosowane. Aby się wylogować, kliknij ikonę z nazwą profilu w prawym górnym rogu środowiska Visual Studio, wybierz polecenie **Ustawienia konta** , a następnie wybierz link **Wyloguj się** . Aby zalogować się ponownie, wybierz polecenie **Zaloguj** się w prawym górnym rogu środowiska programu Visual Studio.
 
 ## <a name="to-change-your-profile-information"></a>Aby zmienić informacje w profilu
 
-1. Przejdź do pozycji**Ustawienia konta** **plików** > i wybierz łącze **Profil zarządzania programem Visual Studio.**
+1. Przejdź do **File**pozycji  >  **Ustawienia konta** pliku i wybierz łącze **Zarządzaj profilem programu Visual Studio** .
 
-1. W oknie przeglądarki wybierz pozycję **Edytuj profil** i zmień żądane ustawienia.
+1. W oknie przeglądarki wybierz pozycję **Edytuj profil** i Zmień ustawienia, które chcesz.
 
-1. Po zakończeniu wybierz pozycję **Zapisz zmiany**.
+1. Gdy skończysz, wybierz pozycję **Zapisz zmiany**.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Jeśli podczas logowania występują jakiekolwiek problemy, skorzystaj ze strony [Pomocy technicznej dla subskrypcji,](https://visualstudio.microsoft.com/subscriptions/support/) aby uzyskać pomoc.
+Jeśli podczas logowania wystąpią jakiekolwiek problemy, skontaktuj się z [pomocą techniczną](https://visualstudio.microsoft.com/subscriptions/support/) , aby uzyskać pomoc.
 
 ## <a name="see-also"></a>Zobacz też
 
 * [Rozszerzanie wersji próbnej lub aktualizowanie licencji](../ide/how-to-unlock-visual-studio.md)
-* [Omówienie ide programu Visual Studio](../get-started/visual-studio-ide.md)
-* [Zaloguj się (Visual Studio dla komputerów Mac)](/visualstudio/mac/signing-in)
+* [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)
+* [Logowanie (Visual Studio dla komputerów Mac)](/visualstudio/mac/signing-in)
 * [Aktywacja (Visual Studio dla komputerów Mac)](/visualstudio/mac/activation)

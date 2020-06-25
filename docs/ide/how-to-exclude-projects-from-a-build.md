@@ -1,74 +1,74 @@
 ---
-title: 'Jak: Wykluczanie projektów z kompilacji'
+title: 'Instrukcje: Wykluczanie projektów z kompilacji'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114806"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284324"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Jak: Wykluczanie projektów z kompilacji
+# <a name="how-to-exclude-projects-from-a-build"></a>Instrukcje: Wykluczanie projektów z kompilacji
 
-Można utworzyć rozwiązanie bez tworzenia wszystkich projektów, które zawiera. Na przykład można wykluczyć projekt, który przerywa kompilacji. Następnie można utworzyć projekt po zbadaniu i rozwiązaniu problemów.
+Możesz skompilować rozwiązanie bez kompilowania wszystkich projektów, które zawiera. Na przykład można wykluczyć projekt, który przerywa kompilację. Następnie można skompilować projekt po zbadaniu i rozpoczęciu problemów.
 
-Projekt można wykluczyć, stosując następujące podejścia:
+Możesz wykluczyć projekt, wykonując następujące podejścia:
 
-- Usunięcie go tymczasowo z aktywnej konfiguracji rozwiązania.
+- Tymczasowe usunięcie z aktywnej konfiguracji rozwiązania.
 
-- Tworzenie konfiguracji rozwiązania, która nie obejmuje projektu.
+- Tworzenie konfiguracji rozwiązania, która nie zawiera projektu.
 
-Aby uzyskać więcej informacji, zobacz [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).
+Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../ide/understanding-build-configurations.md).
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Aby tymczasowo usunąć projekt z aktywnej konfiguracji rozwiązania
 
-1. Na pasku menu wybierz pozycję **Build** > **Configuration Manager**.
+1. Na pasku menu wybierz kolejno opcje **Kompiluj**  >  **Configuration Manager**.
 
-2. W **tabeli Konteksty projektu** zlokalizuj projekt, który chcesz wykluczyć z kompilacji.
+2. W tabeli **kontekstowe projektu** Znajdź projekt, który ma zostać wykluczony z kompilacji.
 
-3. W kolumnie **Kompilacja** dla projektu wyczyść to pole wyboru.
+3. W kolumnie **kompilacja** dla projektu wyczyść pole wyboru.
 
-4. Wybierz przycisk **Zamknij,** a następnie odbuduj rozwiązanie.
+4. Wybierz przycisk **Zamknij** , a następnie Skompiluj ponownie rozwiązanie.
 
-## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Aby utworzyć konfigurację rozwiązania wykluczające projekt
+## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Aby utworzyć konfigurację rozwiązania, która wyklucza projekt
 
-1. Na pasku menu wybierz pozycję **Build** > **Configuration Manager**.
+1. Na pasku menu wybierz kolejno opcje **Kompiluj**  >  **Configuration Manager**.
 
-2. Na liście **Konfiguracja rozwiązania Active** wybierz pozycję ** \<Nowy>**.
+2. Na liście **Konfiguracja aktywnego rozwiązania** wybierz opcję **\<New>** .
 
 3. W polu **Nazwa** wprowadź nazwę konfiguracji rozwiązania.
 
-4. Na liście **Kopiuj ustawienia z** wybierz konfigurację rozwiązania, na której chcesz oprzeć nową konfigurację (na przykład **Debug),** a następnie wybierz przycisk **OK.**
+4. Z listy **Kopiuj ustawienia z** wybierz konfigurację rozwiązania, dla której chcesz utworzyć nową konfigurację (na przykład **debugowanie**), a następnie wybierz przycisk **OK** .
 
-5. W oknie dialogowym **Menedżer konfiguracji** wyczyść pole wyboru w kolumnie **Kompilacja** dla projektu, który chcesz wykluczyć, a następnie wybierz przycisk **Zamknij.**
+5. W oknie dialogowym **Configuration Manager** wyczyść pole wyboru w kolumnie **kompilacja** dla projektu, który ma zostać wykluczony, a następnie wybierz przycisk **Zamknij** .
 
-6. Na **pasku** narzędzi Standardowy sprawdź, czy nowa konfiguracja rozwiązania jest aktywną konfiguracją w polu **Konfiguracje rozwiązań.**
+6. Na pasku narzędzi **Standardowy** Sprawdź, czy nowa konfiguracja rozwiązania jest aktywna konfiguracja w polu **konfiguracje rozwiązania** .
 
-7. Na pasku menu wybierz pozycję **Build** > **Rebuild Solution**.
+7. Na pasku menu wybierz kolejno opcje **Kompiluj**  >  **Kompiluj ponownie rozwiązanie**.
 
 ## <a name="skipped-projects"></a>Pominięte projekty
 
-Projekty mogą być pomijane podczas kompilacji, ponieważ nie są aktualne lub ponieważ są wykluczone z konfiguracji. Visual Studio używa MSBuild do tworzenia projektów. MSBuild tworzy obiekt docelowy tylko wtedy, gdy dane wyjściowe są starsze niż dane wejściowe, zgodnie z ustaleniami sygnatur czasowych pliku. Aby wymusić przebudowę, należy użyć polecenia **Build** > **Rebuild Solution**.
+Projekty można pominąć podczas kompilacji, ponieważ nie są aktualne lub są wykluczone z konfiguracji. Program Visual Studio używa programu MSBuild do kompilowania projektów. MSBuild kompiluje tylko element docelowy, jeśli dane wyjściowe są starsze niż dane wejściowe, zgodnie z sygnaturami czasowymi plików. Aby wymusić ponowną **kompilację**, użyj polecenia Skompiluj  >  **skompilować ponownie rozwiązanie**.
 
-W okienku **kompilacji** okna **Dane wyjściowe** visual studio raportuje liczbę projektów, które były aktualne, liczbę, która została pomyślnie skompilowana, liczbę, która nie powiodła się i liczbę, które zostały pominięte. Pominięta liczba nie obejmuje projektów, które nie zostały zbudowane, ponieważ były aktualne. Gdy projekty są wykluczone z aktywnej konfiguracji, są pomijane podczas kompilacji. W danych wyjściowych kompilacji zostanie wyświetlony komunikat informujący, że projekt jest pomijany:
+W okienku **kompilacja** okna **dane wyjściowe** program Visual Studio zgłasza liczbę projektów, które były aktualne, liczbę, która została utworzona pomyślnie, liczbę, która się nie powiodła, oraz liczbę, która została pominięta. Liczba pominiętych nie obejmuje projektów, które nie zostały skompilowane, ponieważ były aktualne. Gdy projekty są wykluczone z aktywnej konfiguracji, są pomijane podczas kompilacji. W danych wyjściowych kompilacji zobaczysz komunikat wskazujący, że projekt został pominięty:
 
 ```output
 2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
 2>Project not selected to build for this solution configuration
 ```
 
-Aby dowiedzieć się, dlaczego projekt został pominięty,`Debug x86` zanotuj aktywną konfigurację (w poprzednim przykładzie) i wybierz polecenie **Build** > Configuration**Manager**. Można wyświetlić lub zmienić, które projekty są pomijane dla każdej konfiguracji, jak omówiono w tym artykule.
+Aby dowiedzieć się, dlaczego projekt został pominięty, zanotuj aktywną konfigurację ( `Debug x86` w poprzednim przykładzie) i wybierz opcję **Kompiluj**  >  **Configuration Manager**. Można wyświetlić lub zmienić, które projekty są pomijane dla każdej konfiguracji, zgodnie z opisem w tym artykule.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)
-- [Jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)
-- [Jak: Tworzenie wielu konfiguracji jednocześnie](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)
+- [Instrukcje: kompilowanie wielu konfiguracji jednocześnie](../ide/how-to-build-multiple-configurations-simultaneously.md)

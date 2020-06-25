@@ -1,7 +1,7 @@
 ---
-title: Konwertowanie tekstu na wielkie lub małe litery
+title: Konwertuj tekst na wielkie lub małe litery
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors, text case
 - text, case
@@ -11,30 +11,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588723"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284636"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Jak: Zmiana litery tekstowej w edytorze
+# <a name="how-to-change-text-case-in-the-editor"></a>Instrukcje: zmiana wielkości liter w edytorze
 
-Za pomocą poleceń menu lub skrótów klawiaturowych można przekonwertować przypadek zaznaczonego tekstu na wszystkie wielkie litery lub na wszystkie małe litery.
+Możesz użyć poleceń menu lub skrótów klawiaturowych do przekonwertowania wielkości liter zaznaczonego tekstu na wielkie litery lub do małych liter.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu, które widzisz, mogą różnić się od tych opisanych w tym artykule, które są oparte na ustawieniach środowiska **ogólnego.** Aby zmienić ustawienia środowiska, wybierz pozycję Ustawienia**importu i eksportu** **narzędzi,** > a następnie wybierz pozycję **Resetuj wszystkie ustawienia**.
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w tym artykule, które są oparte na **ogólnych** ustawieniach środowiska. Aby zmienić ustawienia środowiska, wybierz kolejno opcje **Narzędzia**  >  **Importuj i Eksportuj ustawienia**, a następnie wybierz pozycję **Zresetuj wszystkie ustawienia**.
 
-## <a name="to-change-text-case"></a>Aby zmienić wielkość liter w tekście
+## <a name="to-change-text-case"></a>Aby zmienić wielkość liter tekstu
 
 1. Zaznacz tekst, który chcesz przekonwertować.
 
-2. Aby przekonwertować tekst na wszystkie wielkie**litery,** wybierz pozycję **Edytuj** > **zaawansowane** > wielkie litery lub naciśnij **klawisze Ctrl**+**Shift**+**U**.
+2. Aby przekonwertować tekst na wielkie litery, wybierz pozycję **Edytuj**  >  **Zaawansowane**  >  **Zmień litery na wielkie** lub naciśnij **klawisze CTRL** + **SHIFT** + **U**.
 
-   Aby przekonwertować tekst na wszystkie małe**litery,** wybierz pozycję **Edytuj** > **zaawansowane** > klawisze Małe lub naciśnij klawisz **Ctrl**+**U**. (Jeśli masz zainstalowane obciążenie programistyczne języka C++, to powiązanie klawiszy może być używane przez inne polecenie).
+   Aby przekonwertować tekst na małe litery, wybierz pozycję **Edytuj**  >  **Zaawansowane**  >  **Zmień litery na małe** lub naciśnij klawisz **Ctrl** + **U**. (Jeśli masz zainstalowaną obciążeń programowania w języku C++, ten powiązanie klawiszy może być używany przez inne polecenie).
 
 > [!TIP]
-> Aby powrócić do poprzedniego formatowania sprawy przed tą zmianą, wybierz polecenie **Cofnij** z menu **Edycja.**
+> Aby przywrócić poprzedni format wielkości liter przed tą zmianą, wybierz polecenie **Cofnij** z menu **Edycja** .
 
 ## <a name="see-also"></a>Zobacz też
 

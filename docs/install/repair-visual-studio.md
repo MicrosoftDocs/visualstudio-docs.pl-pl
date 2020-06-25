@@ -2,7 +2,7 @@
 title: Napraw program Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak naprawić instalację programu Visual Studio 2017
-ms.date: 07/31/2019
+ms.date: 06/15/2020
 ms.custom: seodec18
 ms.topic: conceptual
 author: ornellaalt
@@ -12,66 +12,78 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5883889e4ccbeab22d8a11578bcd342ca95e9be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114738"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285247"
 ---
 # <a name="repair-visual-studio"></a>Napraw program Visual Studio
 
-::: moniker range="vs-2017"
+Czasami instalacja programu Visual Studio przestała być uszkodzona lub uszkodzona. Naprawa jest przydatna w przypadku rozwiązywania problemów dotyczących czasu instalacji we wszystkich operacjach instalacji, w tym aktualizacji.
 
-Czasami instalacja programu Visual Studio ulega uszkodzeniu lub uszkodzeniu. Naprawa może to naprawić.
+## <a name="when-to-use-repair"></a>Kiedy należy używać naprawy
+* Jeśli masz problemy z ładunkiem instalacji. Może się tak zdarzyć, gdy zapisanie pliku na dysk nie powiedzie się i nie można go naprawić przez usunięcie uszkodzonego pliku. Naprawa może ponownie pobrać zbędne pliki. 
+* Jeśli masz problemy z pobieraniem po stronie klienta. Przy założeniu, że wystąpiły problemy związane z połączeniem lub serwerem proxy, naprawianie może pomóc. 
+* Jeśli masz problemy z aktualizacją programu Visual Studio. Naprawa rozwiązuje wiele typowych problemów z aktualizacją. 
+
+> [!TIP] 
+> Jeśli problem z instalacją jest spowodowany problemem związanym z usługą systemu Windows, na przykład Instalator Windows, naprawa może wystąpić z tym samym problemem. Problemy systemowe mogą obejmować przerwane Instalator Windows lub niestabilne połączenie internetowe. Aby wyszukać problem systemowy, użyj raportu o błędach wygenerowanego podczas operacji instalacji.
+
+> [!NOTE] 
+> Naprawianie programu Visual Studio powoduje zresetowanie ustawień użytkownika i ponowne zainstalowanie już posiadanych zestawów. Jeśli występuje problem z produktem, Utwórz [bilet opinii programu Visual Studio](https://developercommunity.visualstudio.com/content/problem/post.html?space=8), ponieważ naprawa może nie rozwiązać problemu.
+
+## <a name="how-to-repair"></a>Jak naprawić
+::: moniker range="vs-2017"
 
 1. Znajdź **Instalator programu Visual Studio** na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10 Anniversary Update lub nowszym wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wymieniona jako **Instalator programu Visual Studio**.
+     Na przykład na komputerze z systemem Windows 10 z rocznicą aktualizacji lub nowszym wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wyświetlana jako **Instalator programu Visual Studio**.
 
    > [!NOTE]
-   > Na niektórych komputerach Instalator programu Visual Studio może być wymieniony pod literą **"M"** jako **Instalator programu Microsoft Visual Studio**.
+   > Na niektórych komputerach Instalator programu Visual Studio mogą być wyświetlane pod literą **"M"** jako **Instalator Microsoft Visual Studio**.
    >
-   > Alternatywnie można znaleźć Instalatora programu Visual Studio w następującej lokalizacji:`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > Alternatywnie można znaleźć Instalator programu Visual Studio w następującej lokalizacji:`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Otwórz instalatora, wybierz pozycję **Więcej**, a następnie wybierz pozycję **Napraw .**
+1. Otwórz Instalator, wybierz pozycję **więcej**, a następnie wybierz polecenie **napraw**.
 
-    ![Naprawianie programu Visual Studio za podstawie instalatora programu Visual Studio](media/repair-visual-studio.png "Naprawianie programu Visual Studio za podstawie instalatora programu Visual Studio")
+    ![Napraw program Visual Studio z poziomu Instalator programu Visual Studio](media/repair-visual-studio.png "Napraw program Visual Studio z poziomu Instalator programu Visual Studio")
 
    > [!NOTE]
-   > Naprawianie programu Visual Studio spowoduje zresetowanie środowiska. Modyfikacje lokalne, takie jak rozszerzenia na użytkownika zainstalowane bez podniesienia uprawnień, ustawienia użytkownika i profile zostaną usunięte. Zostaną przywrócone zsynchronizowane ustawienia, takie jak motywy, kolory, powiązania klawiszy.
+   > Naprawianie programu Visual Studio spowoduje zresetowanie środowiska. Lokalne dostosowania, takie jak rozszerzenia dla poszczególnych użytkowników zainstalowane bez podniesienia uprawnień, ustawienia użytkownika i profile, zostaną usunięte. Twoje zsynchronizowane ustawienia, takie jak motywy, kolory i kluczowe powiązania, zostaną przywrócone.
    >
 
    > [!TIP]
-   > Opcja **Napraw jest** wyświetlana tylko dla zainstalowanych wystąpień programu Visual Studio. Jeśli nie widzisz **opcji Napraw,** są szanse, że wybrano **więcej** w wersji, która jest wymieniona w Instalatorze programu Visual Studio jako "Dostępne", a nie "Zainstalowane".
+   > Opcja **naprawy** jest wyświetlana tylko w przypadku zainstalowanych wystąpień programu Visual Studio. Jeśli nie widzisz opcji **Repair (Naprawa** ), prawdopodobnie wybrano opcję **więcej** w wersji, która jest wymieniona w Instalator programu Visual Studio jako "dostępna", a nie "zainstalowano".
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Znajdź Instalator programu Visual Studio na komputerze.
+1. Znajdź **Instalator programu Visual Studio** na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10 wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wymieniona jako **Instalator programu Visual Studio**.
+     Na przykład na komputerze z systemem Windows 10 Wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wyświetlana jako **Instalator programu Visual Studio**.
 
-     ![Otwieranie Instalatora programu Visual Studio](media/vs-2019/vs-installer-windows-start.png "Otwieranie Instalatora programu Visual Studio")
+     ![Otwórz Instalator programu Visual Studio](media/vs-2019/vs-installer-windows-start.png "Otwórz Instalator programu Visual Studio")
 
      > [!NOTE]
      > Instalator programu Visual Studio można również znaleźć w następującej lokalizacji:
      >
      > `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-    Może być trzeba zaktualizować instalatora przed kontynuowaniem. Jeśli tak, postępuj zgodnie z instrukcjami.
+    Może być konieczne zaktualizowanie Instalatora przed kontynuowaniem. Jeśli tak, postępuj zgodnie z monitami.
 
-1. W instalatorze poszukaj zainstalowanej wersji programu Visual Studio. Następnie wybierz pozycję **Więcej**, a następnie wybierz pozycję **Napraw .**
+1. W instalatorze zapoznaj się z zainstalowaną wersją programu Visual Studio. Następnie wybierz pozycję **więcej**, a następnie wybierz pozycję **napraw**.
 
-     ![Naprawa programu Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Naprawa programu Visual Studio 2019")
+     ![Napraw program Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Napraw program Visual Studio 2019")
 
    > [!NOTE]
-   > Naprawianie programu Visual Studio spowoduje zresetowanie środowiska. Modyfikacje lokalne, takie jak rozszerzenia na użytkownika zainstalowane bez podniesienia uprawnień, ustawienia użytkownika i profile zostaną usunięte. Zostaną przywrócone zsynchronizowane ustawienia, takie jak motywy, kolory, powiązania klawiszy.
+   > Naprawianie programu Visual Studio spowoduje zresetowanie środowiska. Lokalne dostosowania, takie jak rozszerzenia dla poszczególnych użytkowników zainstalowane bez podniesienia uprawnień, ustawienia użytkownika i profile, zostaną usunięte. Twoje zsynchronizowane ustawienia, takie jak motywy, kolory i kluczowe powiązania, zostaną przywrócone.
    >
 
    > [!TIP]
-   > Opcja **Napraw jest** wyświetlana tylko dla zainstalowanych wystąpień programu Visual Studio. Jeśli nie widzisz **opcji Napraw,** są szanse, że wybrano **więcej** w wersji, która jest wymieniona w Instalatorze programu Visual Studio jako "Dostępne", a nie "Zainstalowane".
+   > Opcja **naprawy** jest wyświetlana tylko w przypadku zainstalowanych wystąpień programu Visual Studio. Jeśli nie widzisz opcji **Repair (Naprawa** ), prawdopodobnie wybrano opcję **więcej** w wersji, która jest wymieniona w Instalator programu Visual Studio jako "dostępna", a nie "zainstalowano".
 
 ::: moniker-end
 
@@ -79,7 +91,7 @@ Czasami instalacja programu Visual Studio ulega uszkodzeniu lub uszkodzeniu. Nap
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Instalacja programu Visual Studio](install-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)
 * [Rozwiązywanie problemów z instalacją i uaktualnieniem programu Visual Studio](troubleshooting-installation-issues.md)

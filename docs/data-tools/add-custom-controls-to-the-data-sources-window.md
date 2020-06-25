@@ -1,7 +1,7 @@
 ---
 title: Dodawanie kontrolek niestandardowych do okna źródeł danych
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587111"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283076"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie kontrolek niestandardowych do okna źródeł danych
 
@@ -39,7 +39,7 @@ Aby dodać lub usunąć kontrolki z listy dostępnych kontrolek dla elementów w
 2. W oknie **źródła danych** kliknij element, który jest częścią źródła danych, które zostało dodane do okna, a następnie kliknij menu rozwijane dla elementu.
 
    > [!TIP]
-   > Jeśli okno źródła danych nie jest otwarte, otwórz je, wybierając opcję **wyświetl** > inne > **źródła danych** **systemu Windows** .
+   > Jeśli okno źródła danych nie jest otwarte, otwórz je, wybierając opcję **Wyświetl**  >  **inne**  >  **źródła danych**systemu Windows.
 
 3. W menu rozwijanym kliknij opcję **Dostosuj**. Zostanie otwarte jedno z następujących okien dialogowych:
 
@@ -49,11 +49,11 @@ Aby dodać lub usunąć kontrolki z listy dostępnych kontrolek dla elementów w
 
 4. W oknie dialogowym Wybierz typ danych z listy rozwijanej **Typ danych** .
 
-    - Aby dostosować listę formantów dla tabeli lub obiektu, wybierz pozycję **[Lista]** .
+    - Aby dostosować listę formantów dla tabeli lub obiektu, wybierz pozycję **[Lista]**.
 
     - Aby dostosować listę kontrolek dla kolumny tabeli lub właściwości obiektu, wybierz typ danych kolumny lub właściwości w źródłowym magazynie danych.
 
-    - Aby dostosować listę kontrolek do wyświetlania obiektów danych, które mają kształty zdefiniowane przez użytkownika, wybierz pozycję **[inne]** . Na przykład wybierz pozycję **[inne]** , jeśli aplikacja ma kontrolkę niestandardową, która wyświetla dane z więcej niż jednej właściwości określonego obiektu.
+    - Aby dostosować listę kontrolek do wyświetlania obiektów danych, które mają kształty zdefiniowane przez użytkownika, wybierz pozycję **[inne]**. Na przykład wybierz pozycję **[inne]** , jeśli aplikacja ma kontrolkę niestandardową, która wyświetla dane z więcej niż jednej właściwości określonego obiektu.
 
 5. W polu **skojarzone kontrolki** zaznacz każdy formant, który ma być dostępny dla wybranego typu danych, lub usuń zaznaczenie wszystkich kontrolek, które chcesz usunąć z listy.
 
@@ -78,9 +78,9 @@ Aby dodać kontrolki do listy skojarzonych formantów:
 
     |Atrybut|Opis|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Zaimplementuj ten atrybut w prostych kontrolkach, które wyświetlają pojedyncze kolumny (lub właściwości) danych, takie jak <xref:System.Windows.Forms.TextBox>.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, takie jak <xref:System.Windows.Forms.DataGridView>.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Zaimplementuj ten atrybut na kontrolkach, które wyświetlają listy (lub tabele) danych, ale muszą również przedstawić pojedynczą kolumnę lub właściwość, taką jak <xref:System.Windows.Forms.ComboBox>.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Zaimplementuj ten atrybut w prostych kontrolkach, które wyświetlają pojedynczą kolumnę (lub właściwość) danych, taką jak <xref:System.Windows.Forms.TextBox> .|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, takie jak <xref:System.Windows.Forms.DataGridView> .|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Zaimplementuj ten atrybut w kontrolkach, które wyświetlają listy (lub tabele) danych, ale muszą również przedstawić pojedynczą kolumnę lub właściwość, taką jak <xref:System.Windows.Forms.ComboBox> .|
 
 2. Aby uzyskać Windows Forms, w oknie dialogowym **Opcje** Otwórz stronę **Dostosowywanie interfejsu użytkownika danych** . Lub w przypadku platformy WPF Otwórz okno dialogowe **Dostosowywanie powiązania kontrolki** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie listy formantów możliwych do powiązania dla typu danych](#customize-the-bindable-controls-list).
 
@@ -89,7 +89,7 @@ Aby dodać kontrolki do listy skojarzonych formantów:
     > [!NOTE]
     > Do listy skojarzonych formantów można dodawać tylko kontrolki znajdujące się w bieżącym rozwiązaniu lub w przywoływanym zestawie. (Kontrolki muszą także zaimplementować jeden z atrybutów powiązania danych w poprzedniej tabeli). Aby powiązać dane z kontrolką niestandardową, która nie jest dostępna w oknie źródła danych, przeciągnij kontrolkę z **przybornika** na powierzchnię projektu, a następnie przeciągnij element do elementu z okna **źródła danych** na kontrolkę.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Okno dialogowe Opcje dostosowywania interfejsu użytkownika danych](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

@@ -1,9 +1,9 @@
 ---
-title: Tworzenie aplikacji Vue.js przy użyciu pliku Node.js
-description: Aplikacje Node.js można tworzyć w programie Visual Studio przy użyciu struktury Vue.js
+title: Tworzenie aplikacji Vue.js przy użyciu Node.js
+description: Możesz tworzyć Node.js aplikacje w programie Visual Studio przy użyciu struktury Vue.js
 ms.custom: seodec18
 ms.date: 07/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -12,102 +12,102 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81744916"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285169"
 ---
-# <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
+# <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzi Node.js Tools for Visual Studio
 
-Program Visual Studio obsługuje tworzenie aplikacji za pomocą struktury [Vue.js](https://vuejs.org/) w języku JavaScript lub TypeScript.
+Program Visual Studio obsługuje programowanie aplikacji za pomocą platformy [Vue.js](https://vuejs.org/) w języku JavaScript lub TypeScript.
 
-Następujące nowe funkcje obsługują tworzenie aplikacji Vue.js w programie Visual Studio:
+Poniższe nowe funkcje obsługują Programowanie aplikacji Vue.js w programie Visual Studio:
 
-* Obsługa bloków skryptów, stylów i szablonów w plikach *.vue*
-* Rozpoznawanie `lang` atrybutu w plikach *.vue*
-* Szablony projektów i plików Vue.js
+* Obsługa skryptów, stylów i bloków szablonów w plikach *. Vue*
+* Rozpoznawanie `lang` atrybutu w plikach *. Vue*
+* Vue.js szablonów plików i projektów
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musi być zainstalowany program Visual Studio 2017 w wersji 15.8 lub nowszej wersji oraz obciążenie **deweloperskie node.js.**
+* Musisz mieć zainstalowany program Visual Studio 2017 w wersji 15,8 lub nowszej orazNode.js obciążenie **programowaniem** .
 
     > [!IMPORTANT]
-    > Ten artykuł wymaga funkcji, które są dostępne tylko począwszy od programu Visual Studio 2017 w wersji 15.8.
+    > Ten artykuł wymaga funkcji, które są dostępne tylko w programie Visual Studio 2017 w wersji 15,8.
 
     ::: moniker range=">=vs-2019"
     Jeśli wymagana wersja nie jest jeszcze zainstalowana, zainstaluj [program Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download),   Aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
-    Jeśli chcesz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...**, który otwiera Instalator programu Visual Studio. Wybierz obciążenie **deweloperne node.js,** a następnie wybierz pozycję **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje..**., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **Node.js obciążenie programowaniem** , a następnie wybierz **Modyfikuj**.
 
-* Aby utworzyć projekt ASP.NET Core, musisz mieć zainstalowane ASP.NET i tworzenia sieci Web oraz obciążeń deweloperskich .NET Core.
+* Aby utworzyć projekt ASP.NET Core, trzeba mieć zainstalowane ASP.NET i programowanie aplikacji sieci Web oraz platformy .NET Core dla wielu platform.
 
-* Musi być zainstalowany środowisko uruchomieniowe Node.js.
+* Musisz mieć zainstalowane środowisko uruchomieniowe Node.js.
 
-    Jeśli nie masz go zainstalowanego, zainstaluj wersję LTS z [witryny node.js.](https://nodejs.org/en/download/) Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości. (Po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Właściwości).**
+    Jeśli go nie zainstalowano, Zainstaluj wersję LTS z witryny sieci Web [Node.js](https://nodejs.org/en/download/) . Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane Node.js środowiska uruchomieniowego. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt tak, aby odwoływała się do zainstalowanego środowiska uruchomieniowego na stronie właściwości. (Po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Właściwości**).
 
-## <a name="create-a-vuejs-project-using-nodejs"></a>Tworzenie projektu Vue.js przy użyciu pliku Node.js
+## <a name="create-a-vuejs-project-using-nodejs"></a>Tworzenie projektu Vue.js przy użyciu Node.js
 
-Możesz użyć nowych szablonów Vue.js, aby utworzyć nowy projekt. Korzystanie z szablonu jest najprostszym sposobem rozpoczęcia pracy. Aby uzyskać szczegółowe kroki, zobacz [Tworzenie pierwszej aplikacji Vue.js za pomocą programu Visual Studio.](../javascript/quickstart-vuejs-with-nodejs.md)
+Aby utworzyć nowy projekt, można użyć nowych szablonów Vue.js. Korzystanie z szablonu jest najprostszym sposobem na rozpoczęcie pracy. Aby uzyskać szczegółowe instrukcje, zobacz [Korzystanie z programu Visual Studio w celu utworzenia pierwszej aplikacji Vue.js](../javascript/quickstart-vuejs-with-nodejs.md).
 
-## <a name="create-a-vuejs-project-with-aspnet-core-and-the-vue-cli"></a>Tworzenie projektu Vue.js z ASP.NET Core i Vue CLI
+## <a name="create-a-vuejs-project-with-aspnet-core-and-the-vue-cli"></a>Tworzenie projektu Vue.js za pomocą ASP.NET Core i interfejsu wiersza polecenia Vue
 
-Vue.js zapewnia oficjalny cli dla projektów szybko rusztowania. Jeśli chcesz użyć interfejsu wiersza polecenia do utworzenia aplikacji, wykonaj kroki opisane w tym artykule, aby skonfigurować środowisko programistyczne.
+Vue.js udostępnia oficjalnego interfejsu wiersza polecenia do szybkiego tworzenia szkieletów projektów. Jeśli chcesz utworzyć aplikację za pomocą interfejsu wiersza polecenia, wykonaj kroki opisane w tym artykule, aby skonfigurować środowisko deweloperskie.
 
 > [!IMPORTANT]
-> W tych krokach założono, że masz już pewne doświadczenie z platformą Vue.js. Jeśli nie, odwiedź [Stronę Vue.js,](https://vuejs.org/) aby dowiedzieć się więcej o ramach.
+> W tych krokach przyjęto założenie, że masz już doświadczenie z platformą Vue.js. Jeśli nie, odwiedź stronę [Vue.js](https://vuejs.org/) , aby dowiedzieć się więcej o platformie.
 
-### <a name="create-a-new-aspnet-core-project"></a>Tworzenie nowego projektu ASP.NET Core
+### <a name="create-a-new-aspnet-core-project"></a>Utwórz nowy projekt ASP.NET Core
 
-W tym przykładzie należy użyć pustej ASP.NET podstawowej aplikacji (C#). Można jednak wybierać spośród różnych projektów i języków programowania.
+W tym przykładzie użyto pustej aplikacji ASP.NET Core (C#). Można jednak wybrać jedną z wielu projektów i języków programowania.
 
-#### <a name="create-an-empty-project"></a>Tworzenie pustego projektu
+#### <a name="create-an-empty-project"></a>Utwórz pusty projekt
 
-1. Otwórz program Visual Studio i utwórz nowy projekt.
+1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij **klawisz Esc,** aby zamknąć okno początkowe. Wpisz **Ctrl + Q,** aby otworzyć pole wyszukiwania, wpisz **asp.net**, a następnie wybierz pozycję **Utwórz nową ASP.NET podstawową aplikację sieci Web**. W wyświetlonym oknie dialogowym wpisz nazwę **klient-aplikacja**, a następnie wybierz pozycję **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **ASP.NET**, a następnie wybierz pozycję **utwórz nową aplikację sieci Web ASP.NET Core**. W wyświetlonym oknie dialogowym wpisz nazwę **Client-App**, a następnie wybierz pozycję Create ( **Utwórz**).
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **Visual C#**, a następnie wybierz pozycję **Sieć Web**. W środkowym okienku wybierz pozycję **ASP.NET Core Web Application**, wpisz nazwę **client-app**, a następnie wybierz przycisk **OK**.
+    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń pozycję **Visual C#**, a następnie wybierz pozycję **Sieć Web**. W środkowym okienku wybierz pozycję **ASP.NET Core aplikacja sieci Web**, wpisz nazwę **klient-aplikacja**, a następnie wybierz **przycisk OK**.
     ::: moniker-end
 
-    Jeśli nie widzisz szablonu projektu **ASP.NET Core Web Application,** musisz zainstalować ASP.NET i obciążenia **tworzenia stron internetowych** oraz . Najpierw podstawowe obciążenie **programistyczne NET.** Aby zainstalować obciążenia, kliknij łącze **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego Nowy **projekt** (wybierz **opcję Plik** > **nowego** > **projektu**). Uruchamia instalator programu Visual Studio. Wybierz wymagane obciążenia.
+    Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , musisz zainstalować obciążenie **ASP.NET i programowanie dla sieci Web** oraz. Najpierw **nasienne programowanie w sieci podstawowej** . Aby zainstalować obciążenia, kliknij link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** (wybierz pozycję **plik**  >  **Nowy**  >  **projekt**). Zostanie uruchomiona Instalator programu Visual Studio. Wybierz wymagane obciążenia.
 
-1. Wybierz **pozycję Puste**, a następnie kliknij przycisk **OK**.
+1. Wybierz opcję **puste**, a następnie kliknij przycisk **OK**.
 
-    Visual Studio tworzy projekt, który otwiera się w Eksploratorze rozwiązań (prawe okienko).
+    Program Visual Studio tworzy projekt, który zostanie otwarty w Eksplorator rozwiązań (prawego okienka).
 
-#### <a name="configure-the-project-startup-file"></a>Konfigurowanie pliku uruchamiania projektu
+#### <a name="configure-the-project-startup-file"></a>Konfigurowanie pliku startowego projektu
 
-* Otwórz plik *./Startup.cs*i dodaj następujące wiersze do metody Konfiguruj:
+* Otwórz plik *./Startup.cs*i Dodaj następujące wiersze do metody Configure:
 
     ```csharp
     app.UseDefaultFiles(); // Enables default file mapping on the web root.
     app.UseStaticFiles(); // Marks files on the web root as servable.
     ```
 
-### <a name="install-the-vue-cli"></a>Zainstaluj vue CLI
+### <a name="install-the-vue-cli"></a>Instalowanie interfejsu wiersza polecenia Vue
 
-Aby zainstalować moduł vue-cli npm, otwórz `npm install --g vue-cli` wiersz `npm install -g @vue/cli` polecenia i wpisz lub w wersji 3.0 (obecnie w wersji beta).
+Aby zainstalować moduł Vue-CLI npm, Otwórz wiersz polecenia i wpisz `npm install --g vue-cli` lub `npm install -g @vue/cli` dla wersji 3,0 (obecnie w wersji beta).
 
-### <a name="scaffold-a-new-client-application-using-the-vue-cli"></a>Rusztowanie nowej aplikacji klienckiej przy użyciu interfejsu wiersza polecenia vue
+### <a name="scaffold-a-new-client-application-using-the-vue-cli"></a>Tworzenie szkieletu nowej aplikacji klienckiej przy użyciu interfejsu wiersza polecenia Vue
 
-1. Przejdź do wiersza polecenia i zmień bieżący katalog na folder główny projektu.
+1. Przejdź do wiersza polecenia i Zmień bieżący katalog na folder główny projektu.
 
-1. Wpisz `vue init webpack client-app` i wykonaj kroki po wyświetleniu monitu o udzielenie odpowiedzi na dodatkowe pytania.
+1. Wpisz `vue init webpack client-app` i postępuj zgodnie z instrukcjami, gdy zostanie wyświetlony monit o udzielenie odpowiedzi na dodatkowe pytania.
 
     > [!NOTE]
-    > W przypadku plików *.vue* musisz użyć webpacku lub podobnej struktury z programem ładującego, aby wykonać konwersję. TypeScript i Visual Studio nie wiedzą, jak skompilować pliki *.vue.* To samo dotyczy sprzedaży pakietowej; TypeScript nie wie, jak przekonwertować moduły ES2015 (czyli `import` i `export` instrukcje) na jeden końcowy plik *.js* do załadowania w przeglądarce. Ponownie, WebPack jest najlepszym wyborem tutaj. Aby napędzać ten proces z poziomu programu Visual Studio przy użyciu programu MSBuild, należy rozpocząć od szablonu programu Visual Studio. Obecnie nie ma ASP.NET szablonu dla rozwoju Vue.js in-the-box.
+    > W przypadku plików *. Vue* należy użyć programu WebPack lub podobnej struktury z modułem ładującym w celu wykonania konwersji. Programy TypeScript i Visual Studio nie wiedzą, jak kompilować pliki *. Vue* . Ta sama wartość dotyczy grupowania; Język TypeScript nie wie, jak konwertować moduły ES2015 (to jest `import` i `export` instrukcje) na jeden końcowy plik *. js* do załadowania w przeglądarce. Teraz pakiet WebPack jest najlepszym wyborem. Aby uzyskać ten proces z poziomu programu Visual Studio przy użyciu programu MSBuild, należy zacząć od szablonu programu Visual Studio. Obecnie nie istnieje szablon ASP.NET do tworzenia Vue.js.
 
-#### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Zmodyfikuj konfigurację webpacku, aby wyprowadzić wbudowane pliki do wwwroot
+#### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Zmodyfikuj konfigurację pakietu WebPack, aby wyprowadzić skompilowane pliki do pliku wwwroot
 
-* Otwórz plik *./client-app/config/index.js*i `build.index` zmień `build.assetsRoot` ścieżkę i na wwwroot:
+* Otwórz plik *./client-app/config/index.js*i Zmień `build.index` ścieżkę i do pliku `build.assetsRoot` wwwroot:
 
     ```js
     // Template for index.html
@@ -117,40 +117,40 @@ Aby zainstalować moduł vue-cli npm, otwórz `npm install --g vue-cli` wiersz `
     assetsRoot: path.resolve(__dirname, '../../wwwroot'),
     ```
 
-#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Wskaż projekt do utworzenia aplikacji klienckiej za każdym razem, gdy zostanie wyzwolona kompilacja
+#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Wskaż projekt, aby skompilować aplikację kliencką za każdym razem, gdy kompilacja jest wyzwalana
 
-1. W programie Visual Studio przejdź do zdarzenia > **kompilacji** > **Build Events**właściwości **projektu.**
+1. W programie Visual Studio przejdź do **Project**pozycji  >  **Właściwości**projektu  >  **Kompiluj zdarzenia**.
 
-1. W **wierszu polecenia zdarzenia przed kompilacją**wpisz `npm --prefix ./client-app run build`.
+1. W **wierszu polecenia zdarzenia przed kompilacją**wpisz `npm --prefix ./client-app run build` .
 
-#### <a name="configure-webpacks-output-module-names"></a>Konfigurowanie nazw modułów wyjściowych pakietu wwwpack
+#### <a name="configure-webpacks-output-module-names"></a>Skonfiguruj nazwy modułów wyjściowych elementu WebPack
 
-* Otwórz plik *./client-app/build/webpack.base.conf.js*i dodaj następujące właściwości do właściwości wyjściowej:
+* Otwórz plik *./client-app/build/webpack.base.conf.js*i Dodaj następujące właściwości do właściwości Output:
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
     devtoolFallbackModuleFilenameTemplate: '[absolute-resource-path]?[hash]'
     ```
 
-### <a name="add-typescript-support-with-the-vue-cli"></a>Dodawanie obsługi języka TypeScript za pomocą interfejsu wiersza polecenia Vue
+### <a name="add-typescript-support-with-the-vue-cli"></a>Dodawanie obsługi języka TypeScript przy użyciu interfejsu wiersza polecenia Vue
 
-Te kroki wymagają vue-cli 3.0, który jest obecnie w wersji beta.
+Te kroki wymagają Vue-CLI 3,0, który jest obecnie w wersji beta.
 
-1. Przejdź do wiersza polecenia i zmień bieżący katalog na folder główny projektu.
+1. Przejdź do wiersza polecenia i Zmień bieżący katalog na folder główny projektu.
 
-1. Wpisz `vue create client-app`, a następnie wybierz pozycję **Ręcznie wybierz operacje**.
+1. Wpisz `vue create client-app` , a następnie wybierz pozycję **ręcznie wybierz funkcje**.
 
-1. Wybierz **pozycję Typescript**, a następnie wybierz inne żądane opcje.
+1. Wybierz pozycję **TypeScript**, a następnie wybierz inne żądane opcje.
 
-1. Wykonaj pozostałe kroki i odpowiedz na pytania.
+1. Wykonaj pozostałe kroki i udziel odpowiedzi na pytania.
 
-#### <a name="configure-a-vuejs-project-for-typescript"></a>Konfigurowanie projektu Vue.js dla języka TypeScript
+#### <a name="configure-a-vuejs-project-for-typescript"></a>Skonfiguruj projekt Vue.js dla języka TypeScript
 
-1. Otwórz plik *./client-app/tsconfig.json* `noEmit:true` i dodaj do opcji kompilatora.
+1. Otwórz plik *./client-app/tsconfig.jsna* i Dodaj `noEmit:true` do opcji kompilatora.
 
-    Ustawiając tę opcję, można uniknąć zaśmiecania projektu za każdym razem, gdy tworzysz w programie Visual Studio.
+    Ustawienie tej opcji pozwala uniknąć powstawania projektu za każdym razem, gdy kompilujesz w programie Visual Studio.
 
-1. Następnie utwórz plik *vue.config.js* w *./client-app/* i dodaj następujący kod.
+1. Następnie utwórz plik *vue.config.js* w pliku *./Client-App/* i Dodaj następujący kod.
 
     ```js
     module.exports = {
@@ -165,13 +165,13 @@ Te kroki wymagają vue-cli 3.0, który jest obecnie w wersji beta.
     };
     ```
 
-    Poprzedni kod konfiguruje webpack i ustawia folder wwwroot.
+    Poprzedni kod konfiguruje pakiet WebPack i ustawia folder wwwroot.
 
-#### <a name="build-with-vue-cli-30"></a>Zbuduj z vue-cli 3.0
+#### <a name="build-with-vue-cli-30"></a>Kompiluj z Vue-CLI 3,0
 
-Nieznany problem z vue-cli 3.0 może uniemożliwić automatyzację procesu kompilacji. Za każdym razem, gdy próbujesz odświeżyć folder wwwroot, musisz uruchomić polecenie `npm run build` w folderze klient-aplikacja.
+Nieznany problem z Vue-CLI 3,0 może uniemożliwić automatyzację procesu kompilacji. Za każdym razem, gdy próbujesz odświeżyć folder wwwroot, należy uruchomić polecenie `npm run build` w folderze klient-aplikacja.
 
-Alternatywnie można utworzyć projekt vue-cli 3.0 jako zdarzenie przed kompilacją przy użyciu właściwości projektu ASP.NET. Kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Właściwości**i dołącz następujące polecenia na karcie **Kompilacja** w polu **tekstowym wiersza polecenia Zdarzenia przed kompilacją.**
+Alternatywnie można skompilować projekt Vue-CLI 3,0 jako zdarzenie sprzed kompilacji przy użyciu właściwości projektu ASP.NET. Kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Właściwości**i Dołącz następujące polecenia na karcie **kompilacja** w polu tekstowym **wiersz polecenia zdarzenia przed kompilacją** .
 
 ``` cmd
 cd ./client-app
@@ -181,10 +181,10 @@ cd ../
 
 ## <a name="limitations"></a>Ograniczenia
 
-* `lang`atrybut obsługuje tylko języki JavaScript i TypeScript. Akceptowane wartości to: js, jsx, ts i tsx.
-* `lang`atrybut nie działa z tagami szablonów lub stylów.
-* Debugowanie bloków skryptów w plikach *.vue* nie jest obsługiwane ze względu na jego wstępnie przetworzony charakter.
-* TypeScript nie rozpoznaje plików *.vue* jako modułów. Potrzebny jest plik zawierający kod, taki jak *poniższy,* aby poinformować TypeScript, jak wyglądają pliki .vue (szablon vue-cli 3.0 zawiera już ten plik).
+* `lang`atrybut obsługuje tylko języki JavaScript i TypeScript. Akceptowane są następujące wartości: JS, JSX, TS i TSX.
+* `lang`atrybut nie działa z tagami szablonu lub stylu.
+* Debugowanie bloków skryptu w plikach *. Vue* nie jest obsługiwane ze względu na jego wstępnie przetworzony charakter.
+* Język TypeScript nie rozpoznaje plików *Vue* jako modułów. Potrzebny jest plik, który zawiera kod, taki jak poniżej, aby poinformować program TypeScript, jak wyglądają pliki *. Vue* (szablon Vue-CLI 3,0 zawiera już ten plik).
 
     ```js
     // ./client-app/vue-shims.d.ts
@@ -194,10 +194,10 @@ cd ../
     }
     ```
 
-* Uruchamianie `npm run build` polecenia jako zdarzenia przed kompilacją we właściwościach projektu nie działa podczas korzystania z vue-cli 3.0.
+* Uruchomienie polecenia `npm run build` jako zdarzenia sprzed kompilacji we właściwościach projektu nie działa, gdy jest używany Vue-cli 3,0.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Vue rozpocząć przewodnik](https://vuejs.org/v2/guide).
-- [Projekt Vue CLI](https://github.com/vuejs/vue-cli).
-- [Dokumentacja konfiguracji pakietu Webpack](https://webpack.js.org/configuration/).
+- [Przewodnik wprowadzenie Vue](https://vuejs.org/v2/guide).
+- [Projekt interfejsu wiersza polecenia Vue](https://github.com/vuejs/vue-cli).
+- [Dokumentacja dotycząca konfiguracji pakietu WebPack](https://webpack.js.org/configuration/).

@@ -1,5 +1,5 @@
 ---
-title: Prywatne dane dla raportów o problemach
+title: Dane prywatne dla raportów o problemach
 ms.date: 06/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,82 +10,83 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75775896"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284805"
 ---
 # <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
-Domyślnie wszystkie informacje zawarte w raportach o problemach [w społeczności deweloperów](https://developercommunity.visualstudio.com/), w tym wszelkie komentarze i odpowiedzi, są publicznie widoczne. Jest to korzystne, ponieważ pozwala całej społeczności zobaczyć problemy, rozwiązania i obejścia, które inni użytkownicy znaleźli. Jeśli jednak martwisz się o prywatność swoich danych lub tożsamości, masz opcje.
+Domyślnie wszystkie informacje w raportach o problemach w [społeczności deweloperów](https://developercommunity.visualstudio.com/), w tym wszelkie komentarze i odpowiedzi, są widoczne publicznie. Jest to korzystne, ponieważ umożliwia całej społeczności przeglądanie problemów, rozwiązań i obejściów znalezionych przez innych użytkowników. Jeśli jednak obawiasz się o prywatność danych lub tożsamości, możesz korzystać z opcji.
 
 ## <a name="identity-privacy"></a>Prywatność tożsamości
 
-Jeśli obawiasz się ujawnienia swojej tożsamości, [utwórz nowe konto Microsoft,](https://signup.live.com/) które nie ujawnia żadnych szczegółów na Twój temat. Użyj tego konta, aby utworzyć raport.
+Jeśli chodzi o ujawnienie tożsamości, [Utwórz nową konto Microsoft](https://signup.live.com/) , która nie ujawnia żadnych szczegółowych informacji o użytkowniku. Użyj tego konta, aby utworzyć raport.
 
 ## <a name="data-privacy"></a>Prywatność danych
 
-Jeśli martwisz się o prywatność danych, nie umieszczaj niczego, co chcesz zachować jako prywatne w tytule lub treści początkowego raportu, który jest zawsze publiczny. Zamiast tego utwórz raport, a następnie zanotuj, że szczegóły będą wysyłane prywatnie w osobnym komentarzu. Po utworzeniu raportu o problemie można określić, kto może wyświetlać odpowiedzi i załączniki:
+Jeśli obawiasz się o prywatność danych, nie umieszczaj żadnych elementów, które chcesz zachować prywatną w tytule lub treści raportu początkowego, który jest zawsze publiczny. Zamiast tego Utwórz raport, a następnie Zwróć uwagę, że dane zostaną wysłane prywatnie w osobnym komentarzu. Po utworzeniu raportu o problemie możesz określić, kto może wyświetlać odpowiedzi i załączniki:
 
-1. W utworzonym raporcie wybierz pozycję **Dodaj komentarz,** aby utworzyć prywatny opis problemu.
+1. W utworzonym raporcie wybierz pozycję **Dodaj komentarz** , aby utworzyć prywatny opis problemu.
 
-2. W edytorze odpowiedzi użyj formantu poniżej **przycisków Prześlij** i **Anuluj,** aby określić grupę odbiorców odpowiedzi. Wybierz **pozycję Widoczne dla moderatorów i oryginalny plakat,** aby ograniczyć widoczność dla pracowników firmy Microsoft i dla siebie.
+2. W edytorze odpowiedzi użyj kontrolki poniżej przycisków **Prześlij** i **Anuluj** , aby określić odbiorców odpowiedzi. Wybierz opcję **widoczne dla moderatorów i oryginalny plakat** , aby ograniczyć widoczność do pracowników firmy Microsoft i siebie.
 
    ![Kontrola prywatności w społeczności deweloperów](media/developer-community-privacy-control.png)
 
-   Tylko osoby, które określisz, mogą zobaczyć komentarz oraz wszelkie obrazy, linki lub kod, które w nim znajdziesz. Wszystkie odpowiedzi pod komentarzem mają taką samą widoczność jak oryginalny komentarz. Jest to prawdą, nawet jeśli kontrola prywatności w odpowiedziach nie pokazuje poprawnie stanu ograniczonej widoczności.
+   Tylko określone osoby mogą zobaczyć komentarz i wszystkie obrazy, linki lub kod, które zawiera. Wszystkie odpowiedzi w komentarzu mają taki sam wgląd jak oryginalny komentarz. Jest to prawdziwe, nawet jeśli kontrola prywatności na odpowiedzi nie pokazuje poprawnie stanu widoczności z ograniczeniami.
 
-3. Dodaj opis i wszelkie inne informacje, obrazy i załączniki plików potrzebne do odtworzenia. Wybierz przycisk **Prześlij,** aby wysłać te informacje prywatnie.
+3. Dodaj opis i wszelkie inne informacje, obrazy i załączniki plików potrzebne do Odtwórz. Wybierz przycisk **Prześlij** , aby wysłać te informacje prywatnie.
 
    > [!NOTE]
-   > Istnieje limit 2 GB dla załączonych plików i maksymalnie 10 plików. Jeśli chcesz przekazać większy plik, możesz przesłać nowy raport o problemie lub poprosić o przesłanie adresu URL od pracownika firmy Microsoft w komentarzu prywatnym.
+   > W witrynie sieci Web społeczności deweloperów istnieje limit 2 GB dla dołączonych plików i maksymalnie 10 plików. Jeśli musisz przekazać większy plik, możesz przesłać nowy raport o problemie lub zażądać adresu URL przekazywania od pracownika firmy Microsoft w komentarzu prywatnym.
+   > Po zamknięciu problemu skojarzone załączniki zostaną usunięte po 90 dniach.
 
-Aby zachować prywatność i zachować poufne informacje z widoku publicznego, należy zadbać o to, aby wszystkie interakcje z firmą Microsoft udzielały odpowiedzi w komentarzu z ograniczeniami widoczności. Odpowiedzi na inne komentarze mogą spowodować przypadkowe ujawnienie poufnych informacji.
+Aby zachować prywatność i zachować poufne informacje z widoku publicznego, należy zachować ostrożność, aby wszystkie interakcje z firmą Microsoft były odpowiedzią w ramach komentarza z ograniczeniami. Odpowiedzi na inne komentarze mogą spowodować przypadkowe ujawnienie poufnych informacji.
 
-## <a name="data-we-collect"></a>Dane, które gromadzimy
+## <a name="data-we-collect"></a>Zbierane dane
 
-Jeśli **zgłoś problem** jest inicjowany z Instalatora programu Visual Studio, zbieramy najnowszy dziennik konfiguracji.
+Jeśli zainicjujesz **problem** z Instalator programu Visual Studio, zbierzemy najnowszy dziennik instalacji.
 
-Jeśli **zgłoś problem** jest inicjowany z programu Visual Studio, zbieramy co najmniej jeden z następujących typów danych:
+Jeśli **Zgłoś problem** w programie Visual Studio, zbieramy co najmniej jeden z następujących typów danych:
 
-- Wpisy programu Watson i platformy .NET z dziennika zdarzeń
+- Wpisy programu Watson i .NET z dziennika zdarzeń
 
-- Plik dziennika aktywności programu Visual Studio w pamięci
+- Plik dziennika aktywności w pamięci programu Visual Studio
 
-- Pliki PerfWatson, jeśli kolekcja watsona jest włączona
+- Pliki PerfWatson, jeśli jest włączona kolekcja programu Watson
 
-- Pliki dziennika LiveShare, jeśli istnieją
+- Pliki dziennika LiveShare (jeśli istnieją)
 
-- Pliki dziennika platformy Xamarin, jeśli istnieją
+- Pliki dziennika Xamarin, jeśli istnieją
 
-- Nuget plików dziennika, jeśli istnieją
+- Pliki dziennika NuGet, jeśli istnieją
 
 - Pliki dziennika debugera sieci Web, jeśli istnieją
 
-- Dzienniki usługi Centrum usług i dzienniki błędów MEF, jeśli istnieją
+- Dzienniki centrum usług i dzienniki błędów MEF, jeśli istnieją
 
 - Dzienniki języka Python, jeśli istnieją
 
-- Dzienniki formularzy systemu Windows, jeśli istnieją
+- Dzienniki Windows Forms, jeśli istnieją
 
-- Zrzut ekranu, jeśli zdecydujesz się go dołączyć
+- Zrzut ekranu, jeśli wybierzesz go uwzględnić
 
-- Rejestrowanie danych, jeśli zdecydujesz się dołączyć nagranie, które obejmuje:
+- Rejestrowanie danych, jeśli zdecydujesz się na dołączenie nagrania, które obejmuje:
 
-  - Kroki, aby odtworzyć problem
+  - Kroki prowadzące do odtworzenia problemu
 
   - Plik śledzenia ETL
 
   - Plik zrzutu
 
 > [!NOTE]
-> Pliki dziennika, zrzuty ekranu i przesyłane dane nagrywające mogą znacznie zwiększyć zdolność firmy Microsoft do zrozumienia problemu i reagowania na nie.  Dlatego zalecamy włączenie ich. Aby chronić prywatność użytkownika, wszystkie załączone pliki dziennika, zrzuty ekranu i dane nagrywania są wysyłane do firmy Microsoft tylko wtedy, gdy użytkownik udziela zgody, przesyłając raport o problemie, z którym są dołączone. Przed przesłaniem raportu możesz sprawdzić, które pliki są zawarte w kroku "Podsumowanie" okna "Zgłoś problem". Możesz wykluczyć pliki dziennika systemowego z raportu, odznaczając "Dołącz dzienniki systemowe" w kroku "Podsumowanie". Aby uzyskać odwołanie, zobacz poniższy zrzut ekranu. 
+> Pliki dziennika, zrzuty ekranu i nagrania przesyłane dane mogą znacząco zwiększyć czytelność firmy Microsoft i reagować na nie.  Zalecamy uwzględnienie ich. Aby chronić prywatność, wszelkie dołączone pliki dziennika, zrzuty ekranu i dane rejestrowania są wysyłane do firmy Microsoft tylko wtedy, gdy podajesz uprawnienia, przesyłając raport o problemie, za pomocą którego zostały uwzględnione. Przed przesłaniem raportu można zobaczyć, które pliki są zawarte w kroku "Podsumowanie" okna "Zgłoś problem". Pliki dziennika systemowego można wykluczać z raportu, usuwając zaznaczenie pola wyboru Dołącz dzienniki systemowe w kroku "Podsumowanie". Aby uzyskać informacje na ten temat, zobacz poniższy zrzut ekranu. 
   > ![Zgłoś problem — podsumowanie zebranych dzienników](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Jak zgłosić problem z programem Visual Studio](how-to-report-a-problem-with-visual-studio.md)
-- [Prywatność danych o problemach z c++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)
+- [Jak zgłosić problem w programie Visual Studio](how-to-report-a-problem-with-visual-studio.md)
+- [Prywatność danych raportu o problemach C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

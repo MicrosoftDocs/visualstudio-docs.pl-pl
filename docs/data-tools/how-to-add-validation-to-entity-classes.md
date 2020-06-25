@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dodawanie walidacji do klas jednostek'
+title: 'Instrukcje: dodawanie walidacji do klas jednostek'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -11,14 +11,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ccd83662700794e60572eed923d10452595d726
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586565"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282348"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Instrukcje: Dodawanie walidacji do klas jednostek
+# <a name="how-to-add-validation-to-entity-classes"></a>Instrukcje: dodawanie walidacji do klas jednostek
 *Sprawdzanie poprawności* klas jednostek jest procesem potwierdzania, że wartości wprowadzone do obiektów danych są zgodne z ograniczeniami w schemacie obiektu, a także z regułami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych przed wysłaniem aktualizacji do podstawowej bazy danych jest dobrym sposobem na zmniejszenie błędów. Zmniejsza również potencjalną liczbę operacji rundy między aplikacją a bazą danych.
 
 [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferują metody częściowe, które umożliwiają użytkownikom rozbudowa kodu generowanego przez projektanta, który jest uruchamiany podczas wstawiania, aktualizacji i usuwania kompletnych jednostek, a także w czasie i po zmianach poszczególnych kolumn.
@@ -47,9 +47,9 @@ Ta procedura pokazuje, jak sprawdzać poprawność danych po zmianie wartości w
 
     2. Znajdź metodę **OnCOLUMNNAMEChanging** dla kolumny, do której chcesz dodać walidację.
 
-    3. Metoda `OnCOLUMNNAMEChanging` jest dodawana do klasy częściowej.
+    3. `OnCOLUMNNAMEChanging`Metoda jest dodawana do klasy częściowej.
 
-    4. Dodaj następujący kod, aby najpierw sprawdzić, czy wartość została wprowadzona, a następnie aby upewnić się, że wartość wprowadzona dla kolumny jest akceptowalna dla aplikacji. Argument `value` zawiera proponowaną wartość, więc Dodaj logikę, aby potwierdzić, że jest to prawidłowa wartość:
+    4. Dodaj następujący kod, aby najpierw sprawdzić, czy wartość została wprowadzona, a następnie aby upewnić się, że wartość wprowadzona dla kolumny jest akceptowalna dla aplikacji. `value`Argument zawiera proponowaną wartość, dlatego należy dodać logikę, aby potwierdzić, że jest to prawidłowa wartość:
 
         ```vb
         If value.HasValue Then
@@ -60,9 +60,9 @@ Ta procedura pokazuje, jak sprawdzać poprawność danych po zmianie wartości w
         End If
         ```
 
-    Dla C# projektów:
+    W przypadku projektów C#:
 
-    Ponieważ C# projekty nie generują automatycznie programów obsługi zdarzeń, można użyć funkcji IntelliSense, aby utworzyć zmiany kolumn częściowych. Wpisz `partial` a następnie miejsce, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę zmiany kolumny dla kolumny, dla której chcesz dodać walidację. Poniższy kod jest podobny do kodu generowanego po wybraniu zmiany kolumny częściowej:
+    Ponieważ projekty C# nie generują automatycznie programów obsługi zdarzeń, można użyć funkcji IntelliSense, aby utworzyć zmiany kolumn częściowych. Wpisz `partial` , a następnie miejsce, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę zmiany kolumny dla kolumny, dla której chcesz dodać walidację. Poniższy kod jest podobny do kodu generowanego po wybraniu zmiany kolumny częściowej:
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -75,7 +75,7 @@ Ta procedura pokazuje, jak sprawdzać poprawność danych po zmianie wartości w
 Oprócz sprawdzania wartości podczas zmian, można także sprawdzić poprawność danych podczas próby zaktualizowania kompletnej klasy jednostki. Walidacja podczas próby aktualizacji umożliwia porównanie wartości w wielu kolumnach, jeśli wymagają tego reguły biznesowe. Poniższa procedura pokazuje, jak sprawdzić, kiedy zostanie podjęta próba zaktualizowania kompletnej klasy jednostki.
 
 > [!NOTE]
-> Kod sprawdzania poprawności dla aktualizacji kompletnych klas jednostek jest wykonywany w klasie <xref:System.Data.Linq.DataContext> częściowej (zamiast klasy częściowej określonej klasy jednostki).
+> Kod sprawdzania poprawności dla aktualizacji kompletnych klas jednostek jest wykonywany w klasie częściowej <xref:System.Data.Linq.DataContext> (zamiast w klasie części określonej klasy jednostki).
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Aby sprawdzić poprawność danych podczas aktualizacji klasy jednostki
 
@@ -83,9 +83,9 @@ Oprócz sprawdzania wartości podczas zmian, można także sprawdzić poprawnoś
 
 2. Kliknij prawym przyciskiem myszy pusty obszar w **Projektancie O/R** i kliknij polecenie **Wyświetl kod**.
 
-     Zostanie otwarty Edytor kodu z klasą częściową dla `DataContext`.
+     Zostanie otwarty Edytor kodu z klasą częściową `DataContext` .
 
-3. Umieść kursor w klasie częściowej dla `DataContext`.
+3. Umieść kursor w klasie częściowej dla elementu `DataContext` .
 
 4. Projekty Visual Basic:
 
@@ -93,9 +93,9 @@ Oprócz sprawdzania wartości podczas zmian, można także sprawdzić poprawnoś
 
     2. Kliknij pozycję **UpdateENTITYCLASSNAME**.
 
-    3. Metoda `UpdateENTITYCLASSNAME` jest dodawana do klasy częściowej.
+    3. `UpdateENTITYCLASSNAME`Metoda jest dodawana do klasy częściowej.
 
-    4. Dostęp do poszczególnych wartości kolumn za pomocą argumentu `instance`, jak pokazano w poniższym kodzie:
+    4. Uzyskaj dostęp do poszczególnych wartości kolumn przy użyciu `instance` argumentu, jak pokazano w poniższym kodzie:
 
         ```vb
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then
@@ -104,9 +104,9 @@ Oprócz sprawdzania wartości podczas zmian, można także sprawdzić poprawnoś
         End If
         ```
 
-    Dla C# projektów:
+    W przypadku projektów C#:
 
-    Ponieważ C# projekty nie generują automatycznie programów obsługi zdarzeń, można użyć funkcji IntelliSense do utworzenia metody `UpdateCLASSNAME` częściowej. Wpisz `partial` a następnie miejsce, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę Update dla klasy, do której chcesz dodać walidację. Poniższy kod przypomina kod generowany podczas wybierania `UpdateCLASSNAME` metodzie częściowej:
+    Ponieważ projekty C# nie generują automatycznie programów obsługi zdarzeń, można użyć funkcji IntelliSense, aby utworzyć metodę częściową `UpdateCLASSNAME` . Wpisz `partial` , a następnie miejsce, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę Update dla klasy, do której chcesz dodać walidację. Poniższy kod przypomina kod generowany podczas wybierania `UpdateCLASSNAME` metody częściowej:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)
@@ -119,7 +119,7 @@ Oprócz sprawdzania wartości podczas zmian, można także sprawdzić poprawnoś
     }
     ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Sprawdzanie poprawności danych](../data-tools/validate-data-in-datasets.md)

@@ -1,23 +1,23 @@
 ---
 title: Nie można utworzyć skojarzenia — typy właściwości nie są zgodne.
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d7b2e0d777f0d499ca6fbf76b52aa028c940b2df
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f01f14855b7f70243228a66d73244173427217e8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648707"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282777"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć skojarzenia &lt;association nazwa &gt; — typy właściwości nie są zgodne.
+# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć &lt; nazwy skojarzenia skojarzenia &gt; — typy właściwości nie są zgodne.
 
-Nie można utworzyć skojarzenia \<association nazwa > — typy właściwości nie są zgodne. Właściwości nie mają pasujących typów: \<property nazw >.
+Nie można utworzyć skojarzenia \<association name> — typy właściwości nie są zgodne. Właściwości nie mają pasujących typów: \<property names> .
 
 Skojarzenia są definiowane przez wybrane **właściwości skojarzenia** w oknie dialogowym **Edytor skojarzeń** . Właściwości po obu stronach skojarzenia muszą być tego samego typu danych.
 
@@ -33,7 +33,7 @@ Właściwości wymienione w komunikacie nie mają tych samych typów danych.
 
 4. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Instrukcje: Tworzenie skojarzenia między klasami LINQ to SQL (Projektant O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

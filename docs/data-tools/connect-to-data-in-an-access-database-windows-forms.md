@@ -1,7 +1,7 @@
 ---
 title: Łączenie z danymi w bazie danych programu Access
 ms.date: 07/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting
 - connecting to data, Access databases
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586864"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282738"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Łączenie z danymi w bazie danych programu Access
 
@@ -33,7 +33,7 @@ Nawiąż połączenie z bazami danych utworzonymi przy użyciu pakietu Office 36
 
 1. Otwórz projekt aplikacji Windows Forms lub WPF w programie Visual Studio.
 
-2. Aby otworzyć okno **źródła danych** , w menu **widok** wybierz **inne > Windows** **źródła danych**.
+2. Aby otworzyć okno **źródła danych** , w menu **Widok** wybierz inne źródła danych **systemu Windows**  >  **Data Sources**.
 
    ![Wyświetl inne źródła danych systemu Windows](../data-tools/media/viewdatasources.png)
 
@@ -49,7 +49,7 @@ Nawiąż połączenie z bazami danych utworzonymi przy użyciu pakietu Office 36
 
    Zostanie otwarte okno dialogowe **Dodaj połączenie** .
 
-7. Jeśli **Źródło danych** nie jest ustawione na **plik bazy danych programu Microsoft Access (OLE DB)** , wybierz przycisk **Zmień** .
+7. Jeśli **Źródło danych** nie jest ustawione na **plik bazy danych programu Microsoft Access**, wybierz przycisk **Zmień** .
 
    Zostanie otwarte okno dialogowe **Zmień źródło danych** . Z listy źródeł danych wybierz **plik bazy danych programu Microsoft Access**. Z listy rozwijanej **dostawca danych** wybierz pozycję **.NET Framework dostawca danych dla OLE DB**, a następnie wybierz przycisk **OK**.
 
@@ -75,7 +75,7 @@ Połącz się z bazami danych utworzonymi przy użyciu programu Access 2000-2003
 
 1. Otwórz projekt aplikacji Windows Forms lub WPF w programie Visual Studio.
 
-2. W menu **Widok** wybierz inne **źródła danych** **systemu Windows** > .
+2. W menu **Widok** wybierz **inne**  >  **źródła danych**systemu Windows.
 
    ![Wyświetl inne źródła danych systemu Windows](../data-tools/media/viewdatasources.png)
 
@@ -89,7 +89,7 @@ Połącz się z bazami danych utworzonymi przy użyciu programu Access 2000-2003
 
 6. Na stronie **Wybierz połączenie danych** wybierz pozycję **nowe połączenie** , aby skonfigurować nowe połączenie danych.
 
-7. Jeśli źródło danych nie jest **plikiem bazy danych programu Microsoft Access (OLE DB)** , wybierz pozycję **Zmień** , aby otworzyć okno dialogowe **Zmień źródło danych** i wybierz **plik bazy danych programu Microsoft Access**, a następnie wybierz przycisk **OK**.
+7. Jeśli źródło danych nie jest **plikiem bazy danych programu Microsoft Access (OLE DB)**, wybierz pozycję **Zmień** , aby otworzyć okno dialogowe **Zmień źródło danych** i wybierz **plik bazy danych programu Microsoft Access**, a następnie wybierz przycisk **OK**.
 
 8. W polu **Nazwa pliku bazy danych**określ ścieżkę i nazwę pliku *. mdb* , z którym chcesz się połączyć, a następnie wybierz przycisk **OK**.
 
@@ -113,9 +113,9 @@ Utworzony zestaw danych jest dostępny w oknie **źródła danych** . Teraz moż
 
 - Otwórz źródło danych w **Projektant obiektów DataSet** , aby dodać lub edytować obiekty wchodzące w skład zestawu danych.
 
-- Dodaj logikę walidacji do <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging> zdarzenia tabel [danych w zestawie](../data-tools/validate-data-in-datasets.md)danych
+- Dodaj logikę walidacji <xref:System.Data.DataTable.ColumnChanging> do <xref:System.Data.DataTable.RowChanging> zdarzenia lub tabel danych w zestawie danych (zobacz [Validate Data in DataSets](../data-tools/validate-data-in-datasets.md)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie połączeń](../data-tools/add-new-connections.md)
 - [Omówienie powiązania danych WPF](/dotnet/framework/wpf/data/data-binding-overview)

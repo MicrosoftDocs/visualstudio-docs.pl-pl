@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 37a1965712920420bdc4d784a003dbfbd2f2167a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153028"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285221"
 ---
 # <a name="add-tags-to-project-templates"></a>Dodawanie tagów do szablonów projektu
 
@@ -95,21 +95,21 @@ Na poniższej liście przedstawiono wbudowane Tagi, które są dostępne w progr
 
 | Tag języka | Tag platformy | Tag typu projektu |
 | -- | -- | -- |
-| C++ (`cpp`) | System Android`android`() | Chmura (`cloud`) |
-| C# (`csharp`) | Azure (`azure`) | Konsola programu`console`() |
-| F # (`fsharp`) | iOS (`ios`) | Komputer stacjonarny (`desktop`) |
-| Java (`java`) | Linux (`linux`) | Rozszerzenia (`extension`) |
-| JavaScript (`javascript`) | macOS (`macos`) | Gry (`games`) |
-| Python (`python`) | Systemu tvOS (`tvos`) | IoT (`iot`) |
-| Languate zapytania (`querylanguage`) | Windows (`windows`) | Biblioteka (`library`) |
-| TypeScript (`typescript`) | Xbox (`xbox`) | Machine Learning (`machinelearning`) |
-| Visual Basic (`visualbasic`) | | Mobile (`mobile`) |
-| | | Office (`office`) |
-| | | Inne (`other`) |
-| | | Usługa (`service`) |
-| | | Test (`test`) |
-| | | PLATFORMY UWP (`uwp`) |
-| | | Sieć Web`web`() |
+| C++ ( `cpp` ) | System Android ( `android` ) | Chmura ( `cloud` ) |
+| C# ( `csharp` ) | Azure ( `azure` ) | Konsola programu ( `console` ) |
+| F # ( `fsharp` ) | iOS ( `ios` ) | Komputer stacjonarny ( `desktop` ) |
+| Java ( `java` ) | Linux ( `linux` ) | Rozszerzenia ( `extension` ) |
+| JavaScript ( `javascript` ) | macOS ( `macos` ) | Gry ( `games` ) |
+| Python ( `python` ) | Systemu tvOS ( `tvos` ) | IoT ( `iot` ) |
+| Languate zapytania ( `querylanguage` ) | Windows ( `windows` ) | Biblioteka ( `library` ) |
+| TypeScript ( `typescript` ) | Xbox ( `xbox` ) | Machine Learning ( `machinelearning` ) |
+| Visual Basic ( `visualbasic` ) | | Mobile ( `mobile` ) |
+| | | Office ( `office` ) |
+| | | Inne ( `other` ) |
+| | | Usługa ( `service` ) |
+| | | Test ( `test` ) |
+| | | PLATFORMY UWP ( `uwp` ) |
+| | | Sieć Web ( `web` ) |
 
 ## <a name="example"></a>Przykład
 
@@ -122,7 +122,7 @@ W poniższym przykładzie przedstawiono metadane szablonu projektu dla aplikacji
         <Name>My template</Name>
         <Description>A basic template</Description>
         <Icon>TemplateIcon.ico</Icon>
-        <ProjectType>CSharp</ProjectType>
+        <ProjectType>csharp</ProjectType>
         <LanguageTag>C#</LanguageTag>
         <PlatformTag>windows</PlatformTag>
         <PlatformTag>linux</PlatformTag>
@@ -145,7 +145,7 @@ W poniższym przykładzie przedstawiono metadane szablonu projektu dla aplikacji
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](creating-project-and-item-templates.md)

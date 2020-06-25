@@ -1,24 +1,24 @@
 ---
 title: Dodawanie nowych połączeń
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587072"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283063"
 ---
 # <a name="add-new-connections"></a>Dodawanie nowych połączeń
 
 Możesz przetestować połączenie z bazą danych lub usługą oraz zbadać zawartość i schematy bazy danych za pomocą **Eksplorator serwera**, **Cloud Explorer**lub **Eksplorator obiektów SQL Server**. Funkcje tych okien nakładają się na pewien zakres. Podstawowe różnice są następujące:
 
-- Server Explorer
+- Eksplorator serwera
 
    Instalowany domyślnie w programie Visual Studio. Może służyć do testowania połączeń i wyświetlania SQL Server baz danych, innych baz danych, na których zainstalowano dostawcę ADO.NET oraz niektórych usług platformy Azure. Pokazuje również obiekty niskiego poziomu, takie jak liczniki wydajności systemu, dzienniki zdarzeń i kolejki komunikatów. Jeśli źródło danych nie ma dostawcy ADO.NET, nie będzie ono wyświetlane w tym miejscu, ale nadal będzie można z niego korzystać z programu Visual Studio, łącząc program programowo.
 
@@ -54,6 +54,6 @@ Po wybraniu źródła danych kliknij pozycję **Testuj połączenie**. Jeśli to
 
 Jeśli test zakończy się pomyślnie, możesz utworzyć *Źródło danych*, które jest terminem programu Visual Studio, który naprawdę oznacza *model danych* oparty na podstawowej bazie danych lub usłudze.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -2,7 +2,7 @@
 title: Zarządzanie konfiguracjami kompilacji z ustawieniami dewelopera języka Visual Basic
 ms.date: 11/21/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - advanced build configurations
 - building with Visual Basic developer settings (Visual Studio)
@@ -14,33 +14,33 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5243223e554f8e31fe2ffa9d667c09d0a3e1dbc0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8593f32b31dc70be08c777e86ae404da0578c48d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115160"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284233"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Jak: Zarządzanie konfiguracjami kompilacji z zastosowanymi ustawieniami dewelopera języka Visual Basic
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Instrukcje: Zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic
 
-Domyślnie wszystkie zaawansowane opcje konfiguracji kompilacji są ukryte po zastosowaniu ustawień dewelopera języka Visual Basic. W tym artykule wyjaśniono, jak ręcznie włączyć te ustawienia kompilacji.
+Domyślnie wszystkie opcje zaawansowanej konfiguracji kompilacji są ukrywane w przypadku zastosowania ustawień dewelopera Visual Basic. W tym artykule wyjaśniono, jak ręcznie włączyć te ustawienia kompilacji.
 
-## <a name="enable-advanced-build-configurations"></a>Włączanie zaawansowanych konfiguracji kompilacji
+## <a name="enable-advanced-build-configurations"></a>Włącz zaawansowane konfiguracje kompilacji
 
-Domyślnie ustawienia dewelopera języka Visual Basic ukrywają opcję **otwierania** okna dialogowego Programu Menedżer konfiguracji oraz listy **Konfiguracja** i **platforma** w [Projektancie projektu](../ide/reference/application-page-project-designer-visual-basic.md).
+Domyślnie ustawienia dewelopera Visual Basic ukrywają opcję, aby otworzyć okno dialogowe **Configuration Manager** oraz listę **konfiguracji** i **platformy** w [projektancie projektu](../ide/reference/application-page-project-designer-visual-basic.md).
 
 1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
-2. Rozwiń **pozycję Projekty i rozwiązania**, a następnie kliknij przycisk **Ogólne**.
+2. Rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ogólne**.
 
     > [!NOTE]
-    > Węzeł **Ogólne** jest widoczny, nawet jeśli opcja **Pokaż wszystkie ustawienia** nie jest zaznaczona. Jeśli chcesz wyświetlić wszystkie dostępne dostępne opcji, kliknij pozycję **Pokaż wszystkie ustawienia**.
+    > Węzeł **Ogólne** jest widoczny, nawet jeśli opcja **Pokaż wszystkie ustawienia** nie jest zaznaczona. Jeśli chcesz zobaczyć wszystkie dostępne opcje, kliknij przycisk **Pokaż wszystkie ustawienia**.
 
-3. Kliknij **pozycję Pokaż zaawansowane konfiguracje kompilacji**.
+3. Kliknij pozycję **Pokaż zaawansowane konfiguracje kompilacji**.
 
 4. Kliknij przycisk **OK**.
 
-     **Menedżer konfiguracji** jest teraz dostępny w menu **Kompilacja,** a listy **Konfiguracja** i **platforma** są widoczne w **Projektancie projektu**.
+     **Configuration Manager** jest teraz dostępna w menu **kompilacja** , a listy **konfiguracji** i **platformy** są widoczne w **projektancie projektu**.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dfa23896f006dbf904a3e097e0d6fa296e0361
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184578"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283349"
 ---
 # <a name="usage-warnings"></a>Wykorzystanie — Ostrzeżenia 
 
@@ -72,6 +72,7 @@ Ostrzeżenia dotyczące użycia obsługują poprawne użycie platformy .NET.
 |[CA2241: Podaj poprawne argumenty metod formatowania](../code-quality/ca2241.md)|Argument formatu przesłany do System. String. format nie zawiera elementu formatu odpowiadającego każdemu argumentowi obiektu lub na odwrót.|
 |[CA2242: Poprawnie testuj nie-liczby (NaN)](../code-quality/ca2242.md)|To wyrażenie sprawdza, czy wartość to Single.Nan lub Double.Nan. Użyj Single.IsNan(Single) lub Double.IsNan(Double) do testowania wartości.|
 |[CA2243: Analiza literałów ciągów atrybutów powinna przebiegać poprawnie](../code-quality/ca2243.md)|Parametr literału ciągu atrybutu nie jest analizowany poprawnie dla adresu URL, identyfikatora GUID lub wersji.|
-|[CA2244: nie Duplikuj zainicjowanych elementów indeksowanych](../code-quality/ca2244.md)|Inicjator obiektu ma więcej niż jeden indeks elementu indeksowanego z tym samym indeksem stałym. Wszystkie oprócz ostatniego inicjatora są nadmiarowe.|
-|[CA2245: Nie przypisuj właściwości do samej siebie](../code-quality/ca2245.md)|Właściwość została przypadkowo przypisana do samej siebie.|
+|[CA2244: Nie duplikuj inicjowania indeksowanych elementów](../code-quality/ca2244.md)|Inicjator obiektu ma więcej niż jeden indeks elementu indeksowanego z tym samym indeksem stałym. Wszystkie oprócz ostatniego inicjatora są nadmiarowe.|
+|[CA2245: Nie przypisuj właściwości do jej samej](../code-quality/ca2245.md)|Właściwość została przypadkowo przypisana do samej siebie.|
 |[CA2246: Nie przypisuj symbolu i jego składowej w tej samej instrukcji](../code-quality/ca2246.md)|Przypisanie symbolu i jego elementu członkowskiego, czyli pola lub właściwości, w tej samej instrukcji nie jest zalecane. Nie jest jasne, jeśli dostęp do elementu członkowskiego był przeznaczony do użycia starej wartości symbolu przed przypisaniem lub nową wartością z przypisania w tej instrukcji.|
+|[CA2248: Podaj poprawny argument "enum" dla elementu "enum. HasFlag"](../code-quality/ca2248.md)|Typ wyliczeniowy przesłany jako argument `HasFlag` wywołania metody różni się od typu wyliczeniowego wywołującego.|

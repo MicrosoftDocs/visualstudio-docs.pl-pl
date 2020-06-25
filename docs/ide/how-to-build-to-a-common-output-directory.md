@@ -1,8 +1,8 @@
 ---
-title: 'Jak: Tworzenie do wspólnego katalogu wyjściowego'
+title: 'Instrukcje: kompilowanie do wspólnego katalogu wyjściowego'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - output directory
 - builds [Visual Studio], common directory
@@ -13,28 +13,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a499b5ca5ea64dd9ded10f82b1af43258f346d3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68416744"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284779"
 ---
-# <a name="how-to-build-to-a-common-output-directory"></a>Jak: Tworzenie do wspólnego katalogu wyjściowego
+# <a name="how-to-build-to-a-common-output-directory"></a>Instrukcje: kompilowanie do wspólnego katalogu wyjściowego
 
-Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tworzy każdy projekt w rozwiązaniu w swoim własnym folderze wewnątrz rozwiązania. Można zmienić ścieżki wyjściowe kompilacji projektów, aby wymusić wszystkie dane wyjściowe, które mają być umieszczone w tym samym folderze.
+Domyślnie program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kompiluje każdy projekt w rozwiązaniu we własnym folderze w ramach rozwiązania. Można zmienić ścieżki wyjściowe kompilacji projektów, aby wymusić umieszczenie wszystkich danych wyjściowych w tym samym folderze.
 
-## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Aby umieścić wszystkie wyjścia rozwiązania we wspólnym katalogu
+## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Aby umieścić wszystkie dane wyjściowe rozwiązania w wspólnym katalogu
 
 1. Kliknij jeden projekt w rozwiązaniu.
 
-2. W menu **Projekt** kliknij polecenie **Właściwości**.
+2. W menu **projekt** kliknij polecenie **Właściwości**.
 
-3. W zależności od typu projektu kliknij kartę **Skompiluj** lub na karcie **Kompilacja** i ustaw **ścieżkę danych wyjściowych** do folderu, który będzie używany dla wszystkich projektów w rozwiązaniu.
+3. W zależności od typu projektu kliknij kartę **kompilacja** lub kartę **kompilacja** , a następnie ustaw **ścieżkę wyjściową** do folderu, który ma być używany dla wszystkich projektów w rozwiązaniu.
 
 4. Powtórz kroki 1-3 dla wszystkich projektów w rozwiązaniu.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
-- [Jak: Zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md)
+- [Instrukcje: zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md)

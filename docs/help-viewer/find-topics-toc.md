@@ -1,7 +1,7 @@
 ---
-title: Użyj spisu treści w Podglądzie pomocy
+title: Korzystanie z spisu treści podglądu pomocy
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -15,43 +15,43 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825073"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284935"
 ---
 # Instrukcje: Znajdowanie tematów w spisie treści
 
-W **zawartość** karcie, można użyć spisu treści (TOC) można znaleźć informacje. Spis treści to rozwijana lista, która zawiera wszystkie tematy w zainstalowanych książkach. Aby uzyskać informacje o ułatwieniach dostępu dotyczących sposobu nawigowania w spisie treści, zobacz [klawisze skrótów (Podgląd pomocy)](../help-viewer/shortcut-keys.md).
+Na karcie **zawartość** można znaleźć informacje za pomocą spisu treści (TOC). Spis treści jest listą rozwijaną, która zawiera wszystkie tematy w zainstalowanych książkach. Aby uzyskać informacje o ułatwieniach dostępu dotyczące sposobu nawigowania po spisie treści, zobacz [klawisze skrótów (Podgląd pomocy)](../help-viewer/shortcut-keys.md).
 
 > [!IMPORTANT]
 > Zakres tematów dostępnych w spisie treści zależy od wybranego filtru.
 
-## Wyfiltruj spis treści
+## Filtrowanie spisu treści
 
-Można filtrować TOC w celu zwężenia zakresu tematów, które pojawiają się w **zawartość** kartę. Tytuły pojawiają się na liście, tylko wtedy, gdy zawierają katalog główny składnika, który określono. Na przykład jeśli określisz "Rozwiązywanie problemów" jako filtr, tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów" są wyświetlane. Węzły, których tytuły nie zawierają wyrażenia są zwinięte do pojedynczego węzła z wielokropkiem ( **...** ).
+Możesz filtrować Spis treści, aby zawęzić zakres tematów, które pojawiają się na karcie **zawartość** . tytuły pojawiają się na liście tylko wtedy, gdy zawierają główny termin określony przez użytkownika. Na przykład, jeśli określisz "Rozwiązywanie problemów" jako filtr, pojawią się tylko tytuły zawierające "Rozwiązywanie problemów" lub "Rozwiązywanie problemów". Węzły, których tytuły nie zawierają terminu, są zwijane do jednego węzła z wielokropkiem (**...**).
 
-1. Wybierz **zawartość** kartę.
+1. Wybierz kartę **zawartość** .
 
-2. W **zawartość filtra** tekstu wprowadź termin.
+2. W polu tekstowym **zawartość filtru** wprowadź termin.
 
 > [!NOTE]
-> Jeśli filtr potrzebuje dużo czasu do uruchomienia, można wyświetlić wyniki szybciej przy użyciu `title:` operatora wyszukiwania zaawansowanego.
+> Jeśli filtr trwa długi czas, możesz szybciej wyświetlić wyniki przy użyciu `title:` operatora wyszukiwania zaawansowanego.
 
-## Synchronizacja tematu ze spisem treści
+## Synchronizowanie tematu ze spisem treści
 
-Po otwarciu tematu przy użyciu indeksu lub funkcji przeszukiwania całego tekstu można określić, gdzie jest ten temat w spisie treści, synchronizując spis treści z oknem tematu.
+Jeśli temat został otwarty przy użyciu indeksu lub funkcji wyszukiwania pełnotekstowego, można określić, gdzie ten temat znajduje się w spisie treści, synchronizując Spis treści z oknem tematu.
 
 1. Wyświetl temat.
 
-2. Kliknij przycisk **Pokaż temat w spisie treści** przycisk na pasku narzędzi lub naciśnij **Ctrl**+**S**.
+2. Kliknij przycisk **Pokaż temat w spisie treści** na pasku narzędzi lub naciśnij klawisz **Ctrl** + **S**.
 
-     **Zawartość** kartę otwiera i wyświetla lokalizację tematu w spisie treści.
+     Zostanie otwarta karta **zawartość** i zostanie wyświetlona lokalizacja tematu w spisie treści.
 
-## Zobacz także
+## Zobacz też
 
 - [Instrukcje: Znajdowanie tematów w indeksie](../help-viewer/find-topics-index.md)
-- [Instrukcje: Wyszukaj tematy](../help-viewer/find-topics.md)
+- [Instrukcje: wyszukiwanie tematów](../help-viewer/find-topics.md)
 - [Podgląd Pomocy firmy Microsoft](../help-viewer/overview.md)

@@ -1,7 +1,7 @@
 ---
 title: Zmiana sygnatury metody
-description: Usuń lub zmień kolejność parametrów metody. Kliknij prawym przyciskiem myszy metodę, wybierz szybkie akcje i refaktoryzowania, a następnie wybierz pozycję Zmień podpis.
-ms.date: 01/26/2018
+description: Dodaj, Usuń lub Zmień kolejność parametrów metody. Kliknij prawym przyciskiem myszy metodę, wybierz pozycję szybkie akcje i refaktoryzacje, a następnie wybierz pozycję Zmień sygnaturę.
+ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,16 +14,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68711262"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283887"
 ---
-# <a name="change-a-method-signature-refactoring"></a>Zmienianie refaktoryzacji podpisu metody
+# <a name="change-a-method-signature-refactoring"></a>Zmiana refaktoryzacji sygnatury metody
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
@@ -31,54 +31,62 @@ Ten refaktoryzator ma zastosowanie do:
 
 **Co:** Umożliwia usunięcie lub zmianę kolejności parametrów metody.
 
-**Kiedy:** Chcesz przenieść lub usunąć parametr metody, który jest obecnie używany w różnych lokalizacjach.
+**Kiedy:** Chcesz przenieść lub usunąć parametr metody, który jest aktualnie używany w różnych lokalizacjach.
 
-**Dlaczego?** Można ręcznie usunąć i ponownie uporządkować parametry, a następnie znaleźć wszystkie wywołania tej metody i zmienić je jeden po drugim, ale może to prowadzić do błędów.  To narzędzie refaktoryzacji wykona zadanie automatycznie.
+**Dlaczego:** Można ręcznie usunąć i zmienić kolejność parametrów, a następnie znaleźć wszystkie wywołania tej metody i wprowadzić je jeden do jednego, ale może to prowadzić do błędów.  To narzędzie refaktoryzacji wykona zadanie automatycznie.
 
 ## <a name="how-to"></a>Porady
 
-1. Wyróżnij lub umieść kursor tekstowy wewnątrz nazwy metody modyfikacji lub jednego z jej użycia:
+1. Zaznacz lub umieść kursor tekstu w nazwie metody do zmodyfikowania lub jeden z jego użycia:
 
    - C#:
 
        ![Wyróżniony kod C #](media/changesignature-highlight-cs.png)
 
-   - Vb:
+   - VB
 
-       ![Wyróżniony kod Visual Basic](media/changesignature-highlight-vb.png)
+       ![Wyróżniony Visual Basic kodu](media/changesignature-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
    - **Klawiatura**
-      - Naciśnij **klawisze Ctrl+R**, a następnie **klawisze Ctrl+V**.  (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
-      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania,** a następnie wybrać **pozycję Zmień podpis** w oknie podglądu.
+      - Naciśnij **klawisze CTRL + R**, a następnie **Ctrl + V**.  (Pamiętaj, że skrót klawiaturowy może się różnić w zależności od wybranego profilu).
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i refaktoryzacje** , a następnie wybierz pozycję **Zmień sygnaturę** w menu podręcznym okna podglądu.
    - **Mysz**
-      - Wybierz **pozycję Edytuj > refaktoryzatora > usuń parametry**.
-      - Wybierz **pozycję Edytuj > refaktoryzator > ponownie zamów parametry**.
-      - Kliknij prawym przyciskiem myszy kod, wybierz menu **Szybkie akcje i Refaktoryzowania** i wybierz polecenie **Zmień podpis** w oknie podglądu.
+      - Wybierz pozycję **edytuj > refaktoryzację > Usuń parametry**.
+      - Wybierz pozycję **edytuj > refaktoryzacja > Zmień kolejność parametrów**.
+      - Kliknij prawym przyciskiem myszy kod, zaznacz menu **szybkie akcje i refaktoryzacje** i wybierz polecenie **Zmień sygnaturę** w menu podręcznym okna podglądu.
 
-3. W oknie dialogowym **Zmień podpis,** które się pojawia, można użyć przycisków po prawej stronie, aby zmienić podpis metody:
+3. W oknie dialogowym **Zmienianie podpisu** , które się pojawia, możesz użyć przycisków z prawej strony, aby zmienić sygnaturę metody:
 
-   ![Okno dialogowe Zmienianie podpisu](media/changesignature-dialog-cs.png)
+   ![Okno dialogowe Zmienianie sygnatury](media/change-signature.png)
 
-   | Button | Opis
+   | Przycisk | Opis
    | ------ | ---
-   | **W górę/w dół** | Przenoszenie zaznaczonego parametru w górę i w dół listy
-   | **Usuń** | Usuwanie zaznaczonego parametru z listy
-   | **Przywracanie** | Przywracanie zaznaczonego, przekreślony parametr do listy
+   | **W górę/w dół** | Przenieś wybrany parametr w górę i w dół listy
+   | **Dodaj** | Dodaj nowy parametr do listy
+   | **Usuń** | Usuń wybrany parametr z listy
+   | **Przywróć** | Przywróć wybrany, przekroczenie parametru do listy
 
    > [!TIP]
-   > Użyj **pola wyboru Zmiany odwołania w wersji zapoznawczej,** aby [zobaczyć, jaki będzie wynik](../../ide/preview-changes.md) przed zatwierdzeniem go.
+   > Użyj pola wyboru **Podgląd zmian odwołań** , aby [zobaczyć, co wynik będzie](../../ide/preview-changes.md) przed jego zatwierdzeniem.
 
-4. Po zakończeniu naciśnij przycisk **OK,** aby wprowadzić zmiany.
+4. Wybranie pozycji **Dodaj** w oknie dialogowym **Zmienianie podpisu** spowoduje otwarcie okna dialogowego **Dodawanie parametru** . Okno dialogowe **Dodawanie parametru** umożliwia dodanie nazwy typu i nazwy parametru. Można określić, że parametr jest wymagany lub jest opcjonalny z wartością domyślną. Następnie można dodać wartość w miejscu wywołania i wybrać nazwany argument dla tej wartości albo można wprowadzić zmienną TODO. Zmienna TODO umożliwia umieszczenie elementu TODO w kodzie, aby można było odwiedzać poszczególne błędy oraz przechodzić niezależnie do poszczególnych lokalizacji wywołań i decydować, co należy przekazać. W przypadku parametrów opcjonalnych można całkowicie pomijać lokalizację wywołania.
 
+    ![Okno dialogowe Dodawanie parametru-C #](media/add-parameter-dialog.png)
+
+5. Po zakończeniu dodawania parametru naciśnij przycisk **OK** , aby wyświetlić podgląd zmian.
+
+    ![Okno dialogowe Zmienianie sygnatury](media/change-signature.png)
+
+6. Naciśnij przycisk **OK** , aby wyświetlić zmiany.
    - C#:
 
-      ![Zmiana wyniku podpisu - C #](media/changesignature-result-cs.png)
+      ![Zmień wynik podpisu-C #](media/changesignature-result-cs.png)
 
    - Visual Basic:
 
-      ![Wynik zmień podpis — Visual Basic](media/changesignature-result-vb.png)
+      ![Zmień wynik podpisu — Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz też
 

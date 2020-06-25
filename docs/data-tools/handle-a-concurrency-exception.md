@@ -1,7 +1,7 @@
 ---
 title: Obsługiwanie wyjątku współbieżności
 ms.date: 09/11/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586604"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282361"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 
-Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) są wywoływane, gdy dwóch użytkowników próbuje zmienić te same dane w bazie danych w tym samym czasie. W tym instruktażu utworzysz aplikację systemu Windows, która ilustruje sposób przechwytywania <xref:System.Data.DBConcurrencyException>, lokalizowania wiersza, który spowodował błąd, oraz informacje o strategii ich obsługi.
+Wyjątki współbieżności ( <xref:System.Data.DBConcurrencyException?displayProperty=fullName> ) są wywoływane, gdy dwóch użytkowników próbuje zmienić te same dane w bazie danych w tym samym czasie. W tym instruktażu utworzysz aplikację systemu Windows, która ilustruje sposób wychwycenia <xref:System.Data.DBConcurrencyException> , odnalezienie wiersza, który spowodował błąd, i zapoznanie się z strategią, jak ją obsłużyć.
 
 Ten przewodnik przeprowadzi Cię przez następujący proces:
 
@@ -35,7 +35,7 @@ Ten przewodnik przeprowadzi Cię przez następujący proces:
 
 2. Utwórz nowy zestaw danych na podstawie tabeli Klienci Northwind.
 
-3. Utwórz formularz z <xref:System.Windows.Forms.DataGridView>, aby wyświetlić dane.
+3. Utwórz formularz z programem, <xref:System.Windows.Forms.DataGridView> Aby wyświetlić dane.
 
 4. Wypełnianie zestawu danych danymi z tabeli Customers w bazie danych Northwind.
 
@@ -59,7 +59,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -67,9 +67,9 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 Zacznij od utworzenia nowej aplikacji Windows Forms:
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
-2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **Windows Desktop**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
@@ -102,7 +102,7 @@ Następnie Utwórz zestaw danych o nazwie **NorthwindDataSet**:
 
 ## <a name="create-a-data-bound-datagridview-control"></a>Tworzenie kontrolki DataGridView powiązanej z danymi
 
-W tej sekcji utworzysz <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType>, przeciągając element **Customers** z okna **źródła danych** na formularz systemu Windows.
+W tej sekcji utworzysz, <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> przeciągając element **Customers** z okna **źródła danych** na formularz systemu Windows.
 
 1. Aby otworzyć okno **źródła danych** , w menu **dane** wybierz polecenie **Pokaż źródła danych**.
 
@@ -112,7 +112,7 @@ W tej sekcji utworzysz <xref:System.Windows.Forms.DataGridView?displayProperty=n
 
 4. Przeciągnij tabelę do pustego obszaru formularza.
 
-     Kontrolka <xref:System.Windows.Forms.DataGridView> o nazwie **customersDataGridView**i <xref:System.Windows.Forms.BindingNavigator> o nazwie **CustomersBindingNavigator**są dodawane do formularza, który jest powiązany z <xref:System.Windows.Forms.BindingSource>. Jest to z kolei powiązane z tabelą Customers w NorthwindDataSet.
+     <xref:System.Windows.Forms.DataGridView>Kontrolka o nazwie **customersDataGridView**i <xref:System.Windows.Forms.BindingNavigator> nazwanym **CustomersBindingNavigator**są dodawane do formularza, który jest powiązany z <xref:System.Windows.Forms.BindingSource> . Jest to z kolei powiązane z tabelą Customers w NorthwindDataSet.
 
 ## <a name="test-the-form"></a>Testowanie formularza
 
@@ -120,7 +120,7 @@ Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczek
 
 1. Wybierz klawisz **F5** , aby uruchomić aplikację.
 
-     Formularz zostanie wyświetlony z kontrolką <xref:System.Windows.Forms.DataGridView>, która jest wypełniana danymi z tabeli Customers.
+     Formularz zostanie wyświetlony z <xref:System.Windows.Forms.DataGridView> kontrolką, która jest wypełniana danymi z tabeli Customers.
 
 2. W menu **Debuguj** wybierz polecenie **Zatrzymaj debugowanie**.
 
@@ -150,33 +150,33 @@ Użytkownik może zastąpić bazę danych zaproponowaną wersją lub anulować a
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Dodaj kod obsługujący wyjątek współbieżności
 
-Podczas próby wykonania aktualizacji i zgłoszenia wyjątku zazwyczaj trzeba wykonać coś z informacjami podanymi przez zgłoszony wyjątek. W tej sekcji dodasz kod, który próbuje zaktualizować bazę danych. Obsługiwane są również wszystkie <xref:System.Data.DBConcurrencyException>, które mogą zostać zgłoszone, a także inne wyjątki.
+Podczas próby wykonania aktualizacji i zgłoszenia wyjątku zazwyczaj trzeba wykonać coś z informacjami podanymi przez zgłoszony wyjątek. W tej sekcji dodasz kod, który próbuje zaktualizować bazę danych. Obsługiwane są również wszystkie <xref:System.Data.DBConcurrencyException> inne wyjątki, które mogą zostać zgłoszone.
 
 > [!NOTE]
-> Metody `CreateMessage` i `ProcessDialogResults` są dodawane w dalszej części przewodnika.
+> `CreateMessage`Metody i `ProcessDialogResults` są dodawane w dalszej części przewodnika.
 
-1. Dodaj następujący kod poniżej metody `Form1_Load`:
+1. Dodaj następujący kod poniżej `Form1_Load` metody:
 
    [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
    [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
-2. Zastąp metodę `CustomersBindingNavigatorSaveItem_Click`, aby wywołać metodę `UpdateDatabase`, tak aby wyglądała następująco:
+2. Zastąp `CustomersBindingNavigatorSaveItem_Click` metodę, aby wywołać `UpdateDatabase` metodę, tak aby wyglądała następująco:
 
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>Wyświetl opcje dla użytkownika
 
-Właśnie napisany kod wywołuje procedurę `CreateMessage`, aby wyświetlić informacje o błędzie dla użytkownika. W tym instruktażu należy użyć okna komunikatu, aby wyświetlić różne wersje rekordu dla użytkownika. Dzięki temu użytkownik może wybrać, czy rekord ma zostać zastąpiony zmianami, czy anulować edycję. Gdy użytkownik wybierze opcję (kliknie przycisk) w oknie komunikatu, odpowiedź jest przesyłana do metody `ProcessDialogResult`.
+Właśnie zapisany kod wywołuje `CreateMessage` procedurę, aby wyświetlić informacje o błędzie dla użytkownika. W tym instruktażu należy użyć okna komunikatu, aby wyświetlić różne wersje rekordu dla użytkownika. Dzięki temu użytkownik może wybrać, czy rekord ma zostać zastąpiony zmianami, czy anulować edycję. Gdy użytkownik wybierze opcję (kliknie przycisk) w oknie komunikatu, odpowiedź jest przesyłana do `ProcessDialogResult` metody.
 
-Utwórz komunikat, dodając następujący kod do **edytora kodu**. Wprowadź następujący kod poniżej metody `UpdateDatabase`:
+Utwórz komunikat, dodając następujący kod do **edytora kodu**. Wprowadź następujący kod poniżej `UpdateDatabase` metody:
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Przetwórz odpowiedź użytkownika
 
-Musisz również mieć kod, aby przetworzyć odpowiedź użytkownika do okna komunikatu. Dostępne są opcje zastępowania bieżącego rekordu w bazie danych z proponowaną zmianą lub porzucenia lokalnych zmian i odświeżenia tabeli danych z rekordem, który jest obecnie w bazie danych. Jeśli użytkownik wybierze **wartość tak**, Metoda <xref:System.Data.DataTable.Merge%2A> zostanie wywołana z argumentem *PreserveChanges* ustawionym na **wartość true**. Powoduje to pomyślną próbę aktualizacji, ponieważ oryginalna wersja rekordu jest teraz zgodna z rekordem w bazie danych.
+Musisz również mieć kod, aby przetworzyć odpowiedź użytkownika do okna komunikatu. Dostępne są opcje zastępowania bieżącego rekordu w bazie danych z proponowaną zmianą lub porzucenia lokalnych zmian i odświeżenia tabeli danych z rekordem, który jest obecnie w bazie danych. Jeśli użytkownik wybierze **wartość tak**, <xref:System.Data.DataTable.Merge%2A> Metoda zostanie wywołana z argumentem *PreserveChanges* ustawionym na **wartość true**. Powoduje to pomyślną próbę aktualizacji, ponieważ oryginalna wersja rekordu jest teraz zgodna z rekordem w bazie danych.
 
 Dodaj następujący kod poniżej kodu, który został dodany w poprzedniej sekcji:
 
@@ -212,6 +212,6 @@ Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczek
 
    Wybranie pozycji **nie** powoduje anulowania aktualizacji i zaktualizowanie zestawu danych wartościami, które znajdują się obecnie w bazie danych. Wybranie pozycji **tak** zapisuje proponowaną wartość do bazy danych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

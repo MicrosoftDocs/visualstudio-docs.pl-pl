@@ -1,7 +1,7 @@
 ---
 title: Dostosuj napisy dla formantów powiązanych z danymi
 ms.date: 11/03/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113662"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282582"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 
@@ -39,46 +39,46 @@ Możesz dostosować sposób, w jaki te etykiety są tworzone przez ustawienie wa
 > [!NOTE]
 > Ten klucz rejestru nie istnieje, dopóki nie zostanie utworzony.
 
-Podpisy inteligentne jest kontrolowany przez wyrażenia regularne zawierana wartość **SmartCaptionExpression** wartości. Dodawanie **projektantów danych** klucza rejestru zastępuje domyślne wyrażenie regularne, które kontrolki etykiety podpis. Aby uzyskać więcej informacji na temat wyrażeń regularnych, zobacz [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Inteligentne podpisy są kontrolowane przez wyrażenie regularne wprowadzane do wartości **SmartCaptionExpression** wartości. Dodanie klucza rejestru **projektanci danych** zastępuje domyślne wyrażenie regularne, które kontroluje etykiety napisów. Aby uzyskać więcej informacji na temat wyrażeń regularnych, zobacz [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-W poniższej tabeli opisano wartości rejestru, które kontrolują podpis etykiety.
+W poniższej tabeli opisano wartości rejestru sterujące etykietami napisów.
 
 |Element rejestru|Opis|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|Wyrażenie regularne używane do dopasowania wzorców.|
-|**SmartCaptionReplacement**|Format wyświetlania żadnych grup dopasowywany **SmartCaptionExpression**.|
-|**SmartCaptionSuffix**|Opcjonalny ciąg do dołączenia na końcu podpis.|
+|**SmartCaptionReplacement**|Format, w którym mają być wyświetlane wszystkie grupy dopasowane do **SmartCaptionExpression**.|
+|**SmartCaptionSuffix**|Opcjonalny ciąg do dołączenia na końcu podpisu.|
 
-W poniższej tabeli wymieniono ustawienia wewnętrznego ustawienia domyślnego dla tych wartości rejestru.
+W poniższej tabeli wymieniono wewnętrzne ustawienia domyślne dla tych wartości rejestru.
 
 |Element rejestru|Wartość domyślna|Wyjaśnienie|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Dopasowuje znak małej litery następują wielkiej litery lub znaku podkreślenia.|
-|**SmartCaptionReplacement**|**$1 $2**|**$1** reprezentuje wszystkie znaki dopasowane w pierwszym nawiasie wyrażenia, a **$2** reprezentuje wszystkie znaki dopasowane w drugim nawiasie. Zastąpienie jest pierwsze dopasowanie, spację, a następnie drugie dopasowania.|
-|**SmartCaptionSuffix**|**:**|Reprezentuje znak, który został dołączony do zwracanego ciągu. Na przykład, jeśli podpis jest `Company Name`, sufiks sprawia, że `Company Name:`|
+|**SmartCaptionExpression**|**( \\ \p{LL}) ( \\ \p{Lu}) &#124;_ +**|Dopasowuje małą literę, a po niej znak pisany wielką literą lub podkreślenie.|
+|**SmartCaptionReplacement**|**$1 $2**|**$1** reprezentuje wszystkie znaki dopasowane w pierwszym nawiasie wyrażenia, a **$2** reprezentuje wszystkie znaki dopasowane w drugim nawiasie. Zastępowanie to pierwsze dopasowanie, spacja, a następnie drugie dopasowanie.|
+|**SmartCaptionSuffix**|**:**|Reprezentuje znak dołączony do zwracanego ciągu. Na przykład, jeśli podpis ma wartość `Company Name` , sufiks czyni go`Company Name:`|
 
 > [!CAUTION]
-> Należy zachować ostrożność podczas wykonywania jakichkolwiek czynności w Edytorze rejestru. Utwórz kopię zapasową rejestru przed jego edycji. Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Firma Microsoft nie gwarantuje, można rozwiązać problemy, które powodują za pomocą Edytora rejestru niepoprawnie. Używasz Edytora rejestru na własne ryzyko.
+> Należy zachować ostrożność podczas wykonywania jakichkolwiek czynności w Edytorze rejestru. Przed rozpoczęciem edycji wykonaj kopię zapasową rejestru. Używanie Edytora rejestru w niewłaściwy sposób może spowodować poważne problemy, które mogą wymagać ponownego zainstalowania systemu operacyjnego. Firma Microsoft nie gwarantuje, że problemy, których przyczyną jest nieprawidłowe użycie Edytora rejestru, mogą zostać rozpoznane. Używasz Edytora rejestru na własne ryzyko.
 >
 > Aby uzyskać informacje na temat tworzenia kopii zapasowej, edytowania i przywracania rejestru, zobacz [informacje dotyczące rejestru systemu Windows dla zaawansowanych użytkowników](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Zmodyfikuj inteligentne zachowanie napisów w oknie źródła danych
 
-1. Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
+1. Otwórz okno wiersza polecenia, klikając przycisk **Start** , a następnie polecenie **Uruchom**.
 
-2. Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
+2. Wpisz `regedit` w oknie dialogowym **Uruchamianie** , a następnie kliknij przycisk **OK**.
 
-3. Rozwiń węzeł **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio** .
+3. Rozwiń węzeł **HKEY_CURRENT_USER**  >  **oprogramowanie**  >  **Microsoft**  >  **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Kliknij prawym przyciskiem myszy węzeł **15,0** i Utwórz nowy **klucz** o nazwie `Data Designers`.
+4. Kliknij prawym przyciskiem myszy węzeł **15,0** i Utwórz nowy **klucz** o nazwie `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Kliknij prawym przyciskiem myszy węzeł **16,0** i Utwórz nowy **klucz** o nazwie `Data Designers`.
+4. Kliknij prawym przyciskiem myszy węzeł **16,0** i Utwórz nowy **klucz** o nazwie `Data Designers` .
 
 ::: moniker-end
 
@@ -90,35 +90,35 @@ W poniższej tabeli wymieniono ustawienia wewnętrznego ustawienia domyślnego d
 
 6. Kliknij prawym przyciskiem myszy wartość **SmartCaptionExpression** , a następnie wybierz polecenie **Modyfikuj**.
 
-7. Wprowadź wyrażenie regularne ma **źródeł danych** okna do użycia.
+7. Wprowadź wyrażenie regularne, które ma być używane przez okno **źródeł danych** .
 
 8. Kliknij prawym przyciskiem myszy wartość **SmartCaptionReplacement** , a następnie wybierz polecenie **Modyfikuj**.
 
-9. Zastąpienia wprowadź ciąg sformatowany w sposób mają być wyświetlane wzorców dopasowywane w wyrażeniu regularnym.
+9. Wprowadź ciąg zamiany sformatowany w sposób, w jaki chcesz wyświetlić wzorce dopasowane do wyrażenia regularnego.
 
 10. Kliknij prawym przyciskiem myszy wartość **SmartCaptionSuffix** , a następnie wybierz polecenie **Modyfikuj**.
 
-11. Wprowadź wszystkie znaki, które mają być wyświetlane na końcu podpis.
+11. Wprowadź wszystkie znaki, które mają być wyświetlane na końcu podpisu.
 
-    Przy następnym przeciągnij elementy z **źródeł danych** oknie etykiety podpis są tworzone przy użyciu nowej wartości rejestru, pod warunkiem.
+    Gdy następnym razem przeciągniesz elementy z okna **źródła danych** , etykiety podpisów zostaną utworzone przy użyciu podanych nowych wartości rejestru.
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>Wyłącz funkcję podpisów inteligentnych
 
-1. Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
+1. Otwórz okno wiersza polecenia, klikając przycisk **Start** , a następnie polecenie **Uruchom**.
 
-2. Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
+2. Wpisz `regedit` w oknie dialogowym **Uruchamianie** , a następnie kliknij przycisk **OK**.
 
-3. Rozwiń węzeł **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio** .
+3. Rozwiń węzeł **HKEY_CURRENT_USER**  >  **oprogramowanie**  >  **Microsoft**  >  **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Kliknij prawym przyciskiem myszy węzeł **15,0** i Utwórz nowy **klucz** o nazwie `Data Designers`.
+4. Kliknij prawym przyciskiem myszy węzeł **15,0** i Utwórz nowy **klucz** o nazwie `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Kliknij prawym przyciskiem myszy węzeł **16,0** i Utwórz nowy **klucz** o nazwie `Data Designers`.
+4. Kliknij prawym przyciskiem myszy węzeł **16,0** i Utwórz nowy **klucz** o nazwie `Data Designers` .
 
 ::: moniker-end
 
@@ -128,16 +128,16 @@ W poniższej tabeli wymieniono ustawienia wewnętrznego ustawienia domyślnego d
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** elementu, a następnie wybierz **Modyfikuj**.
+6. Kliknij prawym przyciskiem myszy element **SmartCaptionExpression** i wybierz polecenie **Modyfikuj**.
 
-7. Wprowadź `(.*)` dla wartości. To będzie odpowiadał cały ciąg.
+7. Wprowadź `(.*)` wartość. Będzie to zgodne z całym ciągiem.
 
-8. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** elementu, a następnie wybierz **Modyfikuj**.
+8. Kliknij prawym przyciskiem myszy element **SmartCaptionReplacement** i wybierz polecenie **Modyfikuj**.
 
-9. Wprowadź `$1` dla wartości. Ciąg to zamienia dopasowany wartość, która jest cały ciąg pozostanie niezmieniona.
+9. Wprowadź `$1` wartość. Spowoduje to zamienienie ciągu z dopasowaną wartością, czyli cały ciąg, tak aby pozostały niezmieniony.
 
-    Przy następnym przeciągnij elementy z **źródeł danych** oknie etykiety podpis są tworzone przy użyciu transkrypcji zostały zmodyfikowane.
+    Gdy następnym razem przeciągniesz elementy z okna **źródła danych** , etykiety podpisów są tworzone z niezmodyfikowanymi napisami.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

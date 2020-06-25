@@ -1,7 +1,7 @@
 ---
-title: Zainstaluj Pomoc w trybie offline
+title: Zainstaluj pomoc w trybie offline
 ms.date: 11/01/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
@@ -10,40 +10,40 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192647adcda620d94ab516f6be30b4d37859e3c8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824916"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284948"
 ---
-# <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
+# <a name="microsoft-help-viewer-installation"></a>Instalacja Podgląd Pomocy firmy Microsoft
 
-Kilka produktów można wyświetlić zawartości pomocy w Podglądzie pomocy firmy Microsoft, łącznie z programu Visual Studio i programu SQL Server.
+Kilka produktów może wyświetlać zawartość pomocy w Podgląd Pomocy firmy Microsoft, w tym Visual Studio i SQL Server.
 
-Podgląd pomocy jest składnikiem opcjonalna instalacja programu Visual Studio. Aby go zainstalować za pomocą Instalatora programu Visual Studio, wykonaj następujące kroki:
+Podgląd pomocy jest opcjonalnym składnikiem instalacji programu Visual Studio. Aby zainstalować go za poorednictwem Instalator programu Visual Studio, wykonaj następujące kroki:
 
-1. Otwórz **Instalatora programu Visual Studio** z Start menu lub, jeśli masz program Visual Studio, Otwórz, możesz wybrać **narzędzia** > **Pobierz narzędzia i funkcje** otworzyć wizualizacji Instalator programu Studio.
+1. Otwórz **Instalator programu Visual Studio** z menu Start lub, jeśli masz otwarty program Visual Studio, możesz wybrać **Narzędzia**  >  **Pobierz narzędzia i funkcje** , aby otworzyć Instalator programu Visual Studio.
 
-1. Wybierz **poszczególne składniki** kartę, a następnie wybierz **podglądu pomocy** w obszarze **kodu narzędzia** sekcji.
+1. Wybierz kartę **poszczególne składniki** , a następnie wybierz pozycję **Podgląd pomocy** w sekcji **Narzędzia kodu** .
 
-   ![Składnika Podgląd Pomocy Instalatora programu VS](media/installation/vs-installer.png)
+   ![Składnik podglądu pomocy Instalatora programu VS](media/installation/vs-installer.png)
 
-1. Wybierz **Modyfikuj** przycisk, aby rozpocząć instalację programu Podgląd Pomocy firmy Microsoft.
+1. Wybierz przycisk **Modyfikuj** , aby rozpocząć instalację podgląd pomocy firmy Microsoft.
 
-Innym sposobem na łatwe instalowanie podglądu pomocy firmy Microsoft jest za pomocą pola wyszukiwania:
+Innym sposobem na łatwą instalację Podgląd Pomocy firmy Microsoft jest użycie pola wyszukiwania:
 
-1. Naciśnij klawisz **Ctrl**+**Q** a następnie wpisz lub wprowadź **podglądu pomocy** w polu wyszukiwania.
+1. Naciśnij **klawisze CTRL** + **Q** , a następnie wpisz lub wprowadź w polu wyszukiwania **Podgląd pomocy** .
 
    ![Pole wyszukiwania](media/installation/quick-launch.png)
 
-1. Wybierz wynik o nazwie **Help Viewer (poszczególnych składników)** .
+1. Wybierz wynik nazywany **podglądem pomocy (pojedynczy składnik)**.
 
-1. W wyświetlonym oknie dialogowym wybierz **zainstalować** przycisku.
+1. W oknie dialogowym, które się otworzy, wybierz przycisk **Instaluj** .
 
    ![Przycisk Zainstaluj](media/installation/install.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Podgląd Pomocy firmy Microsoft](../help-viewer/overview.md)
-- [Podgląd pomocy i zawartość dla programu SQL Server w trybie offline](/sql/sql-server/sql-server-help-installation)
+- [Podgląd pomocy i zawartość w trybie offline dla SQL Server](/sql/sql-server/sql-server-help-installation)

@@ -1,21 +1,21 @@
 ---
-title: Ustawienia uruchamiania narzędzi kontenerowych programu Visual Studio
+title: Ustawienia uruchamiania narzędzi kontenera programu Visual Studio
 author: ghogen
-description: Omówienie procesu kompilacji narzędzi kontenerowych
+description: Przegląd procesu kompilacji narzędzi kontenera
 ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
-ms.topic: conceptual
-ms.openlocfilehash: 63cf881fdedf9608d5cb773bbcb6b969a0f51624
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.topic: reference
+ms.openlocfilehash: 07dd9dd4c5c61014eecf245719b142cdbaecbc38
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472646"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283336"
 ---
-# <a name="container-tools-launch-settings"></a>Ustawienia uruchamiania narzędzi kontenerowych
+# <a name="container-tools-launch-settings"></a>Ustawienia uruchamiania narzędzi kontenera
 
-W folderze *Właściwości* w projekcie ASP.NET Core można znaleźć plik launchSettings.json, który zawiera ustawienia, które kontrolują sposób uruchamiania aplikacji sieci web na komputerze deweloperskim. Aby uzyskać szczegółowe informacje na temat sposobu używania tego pliku w ASP.NET rozwoju, zobacz [Używanie wielu środowisk w ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). W *launchSettings.json*ustawienia w sekcji **Docker** są związane z tym, jak program Visual Studio obsługuje konteneryzowane aplikacje.
+W folderze *Właściwości* w projekcie ASP.NET Core można znaleźć launchSettings.jsw pliku, który zawiera ustawienia kontrolujące sposób uruchamiania aplikacji sieci Web na komputerze deweloperskim. Aby uzyskać szczegółowe informacje na temat sposobu użycia tego pliku w programowaniu ASP.NET, zobacz [Używanie wielu środowisk w ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). W *launchSettings.jsna*, ustawienia w sekcji **Docker** dotyczą sposobu, w jaki program Visual Studio obsługuje aplikacje w kontenerach.
 
 ::: moniker range="vs-2017"
 ```json
@@ -46,14 +46,14 @@ W folderze *Właściwości* w projekcie ASP.NET Core można znaleźć plik launc
 
 ::: moniker-end
 
-CommandName ustawienie identyfikuje, że ta sekcja dotyczy narzędzi kontenera. W poniższej tabeli przedstawiono właściwości, które można ustawić w tej sekcji:
+Ustawienie CommandName wskazuje, że ta sekcja dotyczy narzędzi kontenerów. W poniższej tabeli przedstawiono właściwości, które można ustawić w tej sekcji:
 
 ::: moniker range="vs-2017"
 
 |Nazwa ustawienia|Wersja|Przykład|Opis|
 |------------|-------|-------|---------------|
-|launchBrowser|Visual Studio 2017|"launchBrowser": prawda|Wskazuje, czy uruchomić przeglądarkę po pomyślnym uruchomieniu projektu.|
-|launchUrl|Visual Studio 2017|"launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}"|Ten adres URL jest używany podczas uruchamiania przeglądarki.  Obsługiwane tokeny zastępcze dla tego ciągu to:<br>   {Scheme} — zastąpiono "http" lub "https" w zależności od tego, czy używany jest protokół SSL.<br>   {ServiceHost} — zwykle zastępowane "localhost". Podczas kierowania kontenerów systemu Windows w systemie Windows 10 RS3 lub starszych, jednak jest zastępowany ip kontenera.<br>   {ServicePort} — zwykle zastępowane sslPort lub httpPort, w zależności od tego, czy używany jest protokół SSL.  Podczas kierowania na kontenery systemu Windows w systemie Windows 10 RS3 lub starszych, jednak jest on zastąpiony albo "443" lub "80", w zależności od tego, czy jest używany SSL.|
+|launchBrowser|Visual Studio 2017|"launchBrowser": true|Wskazuje, czy po pomyślnym uruchomieniu projektu ma być uruchamiana przeglądarka.|
+|launchUrl|Visual Studio 2017|"launchUrl": "{Schema}://{ServiceHost}: {serviceport}"|Ten adres URL jest używany podczas uruchamiania przeglądarki.  Obsługiwane tokeny zastępcze dla tego ciągu to:<br>   {Schema} — zamieniono na "http" lub "https" w zależności od tego, czy jest używany protokół SSL.<br>   {ServiceHost} — zazwyczaj zamieniono na "localhost". W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.<br>   {Serviceport} — zazwyczaj jest zastępowany sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.  W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80", w zależności od tego, czy jest używany protokół SSL.|
 
 ::: moniker-end
 
@@ -61,31 +61,31 @@ CommandName ustawienie identyfikuje, że ta sekcja dotyczy narzędzi kontenera. 
 
 | Nazwa ustawienia         | Przykład                                               | Opis                                                                                                             |
 | -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| poleceniaLineArgs      | "commandLineArgs": "--mysetting myvalue"              | Te argumenty wiersza polecenia do uruchamiania aplikacji są używane podczas uruchamiania projektu w kontenerze.                                     |
-| środowiskoWarzylne | "environmentVariables": {                             | Te wartości zmiennych środowiskowych są przekazywane do procesu, gdy jest uruchamiany w kontenerze.                       |
-|                      | "ASPNETCORE_URLS": "https://+:443; http://+:80",       |                                                                                                                         |
+| CommandLineArgs —      | "CommandLineArgs —": "--Setting wartość"              | Te argumenty wiersza polecenia służące do uruchamiania aplikacji są używane podczas uruchamiania projektu w kontenerze.                                     |
+| environmentVariables | "environmentVariables": {                             | Te wartości zmiennych środowiskowych są przesyłane do procesu, gdy jest on uruchamiany w kontenerze.                       |
+|                      | "ASPNETCORE_URLS": " https://+:443 ; http://+:80 ",       |                                                                                                                         |
 |                      | "ASPNETCORE_HTTPS_PORT": "44381"                      |                                                                                                                         |
 |                      | }                                                     |                                                                                                                         |
-| Port http             | "httpPort": 24051                                     | Ten port na hoście jest mapowany do portu kontenera 80 podczas uruchamiania kontenera.                                |
-|                      |                                                       | Jeśli nie określono, wartość jest pobierana z iisSettings wartość.                                                          |
-| launchBrowser        | "launchBrowser": prawda                                 | Wskazuje, czy uruchomić przeglądarkę po pomyślnym uruchomieniu projektu.                                       |
-| launchUrl            | "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}" | Ten adres URL jest używany podczas uruchamiania przeglądarki. Obsługiwane tokeny zastępcze dla tego ciągu to:                          |
-|                      |                                                       | - {Scheme} - Zastąpiony "http" lub "https" w zależności od tego, czy używany jest protokół SSL.                                   |
-|                      |                                                       | - {ServiceHost} - Zwykle zastępowany "localhost".                                                                    |
-|                      |                                                       | Podczas kierowania kontenerów systemu Windows w systemie Windows 10 RS3 lub starszych, jednak jest zastępowany ip kontenera.           |
-|                      |                                                       | - {ServicePort} - Zwykle zastępowane sslPort lub httpPort, w zależności od tego, czy używany jest protokół SSL.                   |
-|                      |                                                       | Podczas kierowania na kontenery systemu Windows w systemie Windows 10 RS3 lub starszych, choć, jest zastępowany albo "443" lub "80",         |
-|                      |                                                       | w zależności od tego, czy używany jest SSL.                                                                                       |
-| sslPort (port sslport)              | "sslPort": 44381                                      | Ten port na hoście jest mapowany do portu kontenera 443 podczas uruchamiania kontenera.                               |
-|                      |                                                       | Jeśli nie określono, wartość jest pobierana z iisSettings wartość.                                                          |
-| useSSL               | "useSSL": prawda                                        | Wskazuje, czy podczas uruchamiania projektu ma być używany ssl. Jeśli użycieSSL nie jest określony, a następnie SSL jest używany, gdy sslPort > 0. |
+| httpPort             | "httpPort": 24051                                     | Ten port na hoście jest mapowany na port 80 kontenera podczas uruchamiania kontenera.                                |
+|                      |                                                       | Jeśli nie zostanie określony, wartość jest pobierana z wartości iisSettings.                                                          |
+| launchBrowser        | "launchBrowser": true                                 | Wskazuje, czy po pomyślnym uruchomieniu projektu ma być uruchamiana przeglądarka.                                       |
+| launchUrl            | "launchUrl": "{Schema}://{ServiceHost}: {serviceport}" | Ten adres URL jest używany podczas uruchamiania przeglądarki. Obsługiwane tokeny zastępcze dla tego ciągu to:                          |
+|                      |                                                       | -{Schema} — zastępuje "http" lub "https" w zależności od tego, czy jest używany protokół SSL.                                   |
+|                      |                                                       | -{ServiceHost} — zazwyczaj zastępuje się "localhost".                                                                    |
+|                      |                                                       | W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.           |
+|                      |                                                       | -{Serviceport} — zazwyczaj jest zastępowany sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.                   |
+|                      |                                                       | W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80".         |
+|                      |                                                       | w zależności od tego, czy jest używany protokół SSL.                                                                                       |
+| sslPort              | "sslPort": 44381                                      | Ten port na hoście jest mapowany na port 443 kontenera podczas uruchamiania kontenera.                               |
+|                      |                                                       | Jeśli nie zostanie określony, wartość jest pobierana z wartości iisSettings.                                                          |
+| useSSL               | "useSSL": true                                        | Wskazuje, czy podczas uruchamiania projektu ma być używany protokół SSL. Jeśli nie określono useSSL, protokół SSL jest używany, gdy sslPort > 0. |
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki
 
-Skonfiguruj projekt, ustawiając [właściwości kompilacji narzędzi kontenerowych](container-msbuild-properties.md).
+Skonfiguruj projekt, ustawiając [Właściwości kompilacji narzędzia kontenerów](container-msbuild-properties.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-[Właściwości kompilacji docker compose](docker-compose-properties.md)
+[Docker Compose właściwości kompilacji](docker-compose-properties.md)

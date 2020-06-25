@@ -1,74 +1,74 @@
 ---
 title: Tryb mapy paska przewijania i tryb paska
 ms.date: 03/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c66cda1b90d11a44f744faf0012a3e41212d33dd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988561"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283986"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Jak: Dostosowywanie paska przewijania
+# <a name="how-to-customize-the-scroll-bar"></a>Instrukcje: Dostosowywanie paska przewijania
 
-Podczas pracy z długimi plikami kodu może być trudno śledzić, gdzie wszystko jest w pliku. Możesz dostosować pasek przewijania edytora kodów, aby dać ogólny obraz tego, co dzieje się w kodzie.
+Podczas pracy z długimi plikami kodu może być trudno śledzić, gdzie wszystko znajduje się w pliku. Możesz dostosować pasek przewijania edytora kodu, aby uzyskać ogólny obraz tego, co dzieje się w kodzie.
 
 ## <a name="annotations"></a>Adnotacje
 
-Można wybrać, czy na pasku przewijania są wyświetlane adnotacje, takie jak zmiany kodu, punkty przerwania, zakładki, błędy i położenie karetki.
+Możesz wybrać, czy pasek przewijania ma wyświetlać adnotacje, takie jak zmiany kodu, punkty przerwania, zakładki, błędy i położenie karetki.
 
-   1. Otwórz stronę opcji **Paski przewijania,** wybierając pozycję**Opcje** >  **narzędzi** > **Edytor** > tekstu Wszystkie**paski przewijania****języków** > .
+   1. Otwórz stronę opcji **paski przewijania** , wybierając pozycję **Narzędzia**  >  **Opcje**  >  **Edytor tekstu**  >  **wszystkie języki**  >  **paski przewijania**.
 
-   2. Wybierz **pozycję Pokaż adnotacje na pionowym pasku przewijania**, a następnie wybierz adnotacje, które chcesz wyświetlić. Dostępne adnotacje to:
+   2. Wybierz pozycję **Pokaż adnotacje na pionowym pasku przewijania**, a następnie wybierz Adnotacje, które chcesz zobaczyć. Dostępne adnotacje to:
 
       - zmiany
       - znaki
       - błędy
-      - pozycja cieczy
+      - położenie karetki
 
       > [!TIP]
       > Opcja **Pokaż znaczniki** zawiera punkty przerwania i zakładki.
 
-Wypróbuj, otwierając duży plik kodu i zastępując tekst, który występuje w kilku miejscach w pliku. Pasek przewijania pokazuje efekt zamienników, dzięki czemu możesz wycofać zmiany, jeśli zastąpiono coś, czego nie powinieneś mieć.
+Wypróbuj ją, otwierając plik dużego kodu i zastępując jakiś tekst występujący w kilku miejscach w pliku. Pasek przewijania pokazuje efekt zamian, dzięki czemu można cofnąć zmiany, jeśli zamienisz coś, czego nie trzeba.
 
-Oto jak pasek przewijania wygląda po wyszukanie ciągu. Należy zauważyć, że wszystkie wystąpienia ciągu są wyświetlane na pasku przewijania.
+Oto jak wygląda pasek przewijania po wyszukiwaniu ciągu. Zauważ, że wszystkie wystąpienia ciągu pojawiają się na pasku przewijania.
 
-![Pasek przewijania programu Visual Studio po wyszukicie ciągu](../ide/media/enhancedscrollbarsearch.png)
+![Pasek przewijania programu Visual Studio po wyszukiwaniu ciągu](../ide/media/enhancedscrollbarsearch.png)
 
-Oto pasek przewijania po wymianie wszystkich wystąpień ciągu. Czerwone znaki na pasku przewijania pokazują, gdzie wprowadzono błędy w wymianie tekstu.
+Poniżej znajduje się pasek przewijania po zastąpieniu wszystkich wystąpień ciągu. Czerwone znaczniki na pasku przewijania pokazują, gdzie zastępowanie tekstu zostało wprowadzone błędy.
 
-![Pasek przewijania programu Visual Studio po zastąpieniu ciągu błędami](../ide/media/enhancedscrollbarreplace.png)
+![Pasek przewijania programu Visual Studio po zamianie ciągu z błędami](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="display-modes"></a>Tryby wyświetlania
 
-Pasek przewijania ma dwa tryby: tryb paskowy i tryb mapy.
+Pasek przewijania ma dwa tryby: tryb paskowy i tryb mapowania.
 
-### <a name="bar-mode"></a>Tryb prętów
+### <a name="bar-mode"></a>Tryb paska
 
-*Tryb paska* wyświetla wskaźniki adnotacji na pasku przewijania. Kliknięcie paska przewijania powoduje przewijanie strony w górę lub w dół, ale nie powoduje przeskakiwania do tej lokalizacji w pliku.
+W *trybie paska* są wyświetlane wskaźniki adnotacji na pasku przewijania. Kliknięcie paska przewijania Przewija stronę w górę lub w dół, ale nie przechodzi do tej lokalizacji w pliku.
 
 ### <a name="map-mode"></a>Tryb mapy
 
-*W trybie mapy* na pasku przewijania wyświetlane są linie kodu w miniaturze. Możesz wybrać, jak szeroka jest kolumna mapy, wybierając wartość w **przeglądzie źródła**. Aby włączyć większy podgląd kodu podczas umieszczenia wskaźnika na mapie, wybierz opcję **Pokaż podgląd etykietki narzędzia.** Zwinięte regiony są inaczej zacieniowane i rozszerzane po dwukrotnym kliknięciu.
+*Tryb mapy* wyświetla linie kodu w miniaturach na pasku przewijania. Możesz wybrać szerokość kolumny mapy, wybierając wartość w **przeglądzie źródła**. Aby włączyć większą wersję zapoznawczą kodu po umieszczeniu wskaźnika na mapie, wybierz opcję **Pokaż podgląd etykietki narzędzia** . Zwinięte regiony są zacienione inaczej i rozszerzane po dwukrotnym kliknięciu.
 
 > [!TIP]
-> Miniaturowy widok kodu można wyłączyć w trybie mapy, ustawiając **podgląd źródła** na **Wyłączone**. Jeśli zaznaczona jest **etykietka narzędzia Pokaż podgląd,** po kliknięciu wskaźnika na pasku przewijania nadal jest wyświetlany podgląd kodu w tej lokalizacji, a kursor nadal przechodzi do tej lokalizacji w pliku.
+> Miniaturowy widok kodu można wyłączyć w trybie mapy, ustawiając opcję **Źródło przegląd** na **off**. Jeśli zaznaczona jest **etykietka narzędzia Pokaż podgląd** , nadal zobaczysz Podgląd kodu w tej lokalizacji po umieszczeniu wskaźnika na pasku przewijania, a kursor nadal przeskakuje do tej lokalizacji w pliku po kliknięciu.
 
-Na poniższej ilustracji przedstawiono przykład wyszukiwania, gdy tryb mapy jest włączony, a szerokość jest ustawiona na **Średni:**
+Na poniższej ilustracji przedstawiono przykład wyszukiwania, gdy tryb mapy jest włączony, a szerokość jest ustawiona na **Średni**:
 
 ![Pasek przewijania programu Visual Studio w trybie mapy](../ide/media/enhancedscrollbar.png)
 
-Na poniższej ilustracji przedstawiono opcję **Pokaż etykietkę narzędzia Podgląd:**
+Na poniższej ilustracji przedstawiono opcję **Pokaż podgląd etykietki narzędzia** :
 
-![Pasek przewijania programu Visual Studio z etykietką narzędzia](../ide/media/enhancedscrollbarsearchtooltip.png)
+![Pasek przewijania programu Visual Studio z etykietką](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 > [!TIP]
-> Aby zmienić kolory widoczne w trybie mapy, wybierz pozycję**Opcje** >  **narzędzi** > **Czcionki** > **i kolory**środowiska . Następnie w **pozycji Wyświetl elementy**wybierz dowolny z elementów poprzedzony "Przegląd", wykonuj żądane zmiany kolorów, a następnie wybierz przycisk **OK**.
+> Aby zmienić kolory widoczne w trybie mapy, wybierz opcje **Narzędzia**  >  **Options**  >  **Environment**  >  **czcionki i kolory**środowiska. Następnie w obszarze **Wyświetl elementy**Wybierz dowolne elementy, które są poprzedzone "omówieniem", wprowadź odpowiednie zmiany, a następnie wybierz **OK**.
 
 ## <a name="see-also"></a>Zobacz też
 

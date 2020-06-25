@@ -1,6 +1,6 @@
 ---
-title: Zmienianie czcionek i kolorów edytora
-ms.date: 11/26/2018
+title: Zmień czcionki i kolory edytora
+ms.date: 06/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -14,39 +14,48 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2d58270b11c810e357af00fbec249c9a659890fb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595569"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283709"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Jak: Zmienianie czcionek i kolorów edytora w programie Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Instrukcje: zmiana czcionek i kolorów dla edytora w programie Visual Studio
 
-Można zmienić domyślną ścianę czcionki, dostosować rozmiar czcionki i zmienić kolory pierwszego planu i tła dla różnych **elementów tekstowych Elementy wyświetlane** w edytorze kodu. Po zmianie ustawień czcionki należy pamiętać o następujących informacjach:
+Można zmienić domyślną krój czcionki, dostosować rozmiar czcionki i zmienić kolor pierwszego planu i tła dla różnych **elementów wyświetlania** tekstu w edytorze kodu. Po zmianie ustawień czcionki należy pamiętać o następujących kwestiach:
 
-- Ustawienia **czcionki** i **rozmiaru** są globalne dla wszystkich elementów tekstowych we wszystkich edytorach programu Visual Studio.
+- Ustawienia dla **czcionki** i **rozmiaru** są globalne dla wszystkich elementów tekstu we wszystkich edytorach programu Visual Studio.
 
-- Nazwy czcionek o stałej szerokości są pogrubione.
+- Nazwy czcionek o stałej szerokości są wyświetlane pogrubioną czcionką.
 
-- **Dla**każdego typu elementu tekstowego można ustawić opcje pierwszego planu elementu, **Tło elementu**i **Pogrubienie.** Jeśli na przykład zmienisz kolory i wybierzesz **opcję Pogrubienie** dla **komentarzy** i **zakładek,** inne typy elementów tekstowych pozostaną nienaruszone.
+- Opcje **pierwszego planu elementu**, **tła elementu**i **pogrubienia** można ustawić dla każdego typu elementu tekstowego. Na przykład jeśli zmienisz kolory i wybierzesz **pogrubienie** dla **komentarzy** i **zakładek**, nie ma to żadnego oddziaływania.
 
-## <a name="change-the-default-font-face-size-and-colors"></a>Zmienianie domyślnej ściany, rozmiaru i kolorów czcionki
+> [!IMPORTANT]
+> Aby dowiedzieć się, jak dostosować czcionki i kolory dla środowiska IDE, a nie tylko dla edytora kodu, zobacz stronę **[How to: Change Fonts and Colors in Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)** .
 
-1. Z menu **Narzędzia** wybierz **polecenie Opcje.** W obszarze **Środowisko**wybierz [pozycję Czcionki i kolory](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+## <a name="change-the-default-font-face-size-and-colors"></a>Zmień domyślną krój i rozmiar czcionki oraz kolory
 
-2. W **obszarze Pokaż ustawienia dla**pozycji , pozycję Edytor **tekstu**.
+1. Wybierz **Opcje** z menu **Narzędzia** . W obszarze **środowisko**wybierz pozycję **czcionki i kolory**.
 
-3. Zmodyfikuj opcje **Czcionka** i **Rozmiar,** aby zmienić ścianę i rozmiar czcionki dla wszystkich elementów tekstowych we wszystkich edytorach.
+1. W obszarze **Pokaż ustawienia dla**wybierz pozycję **Edytor tekstu**.
 
-4. Zaznacz odpowiedni element w **obszarze Elementy wyświetlane,** a następnie zmodyfikuj opcje **pierwszego planu i** **tła elementu.**
+   ![Zrzut ekranu przedstawiający okno dialogowe Opcje umożliwiające zmianę czcionek i kolorów w edytorze](../../ide/media/fonts-colors-text-editor.png "Zrzut ekranu przedstawiający okno dialogowe Opcje umożliwiające zmianę czcionek i kolorów w edytorze")
+
+1. Zmodyfikuj opcje **czcionki** i **rozmiaru** , aby zmienić krój i rozmiar czcionki dla wszystkich elementów tekstu we wszystkich edytorach.
+
+1. Wybierz odpowiedni element w **pozycji elementy wyświetlane**, a następnie zmodyfikuj **pozycję Opcje pierwszego planu** i **tła** elementu.
 
     > [!TIP]
-    > Kliknij **pozycję Użyj ustawień domyślnych,** aby zresetować ustawienia domyślne.
+    > Kliknij pozycję **Użyj domyślnych** , aby przywrócić ustawienia domyślne.
 
-5. Kliknij przycisk **OK**.
+1. Kliknij przycisk **OK**.
+
+## <a name="next-steps"></a>Następne kroki
+
+Aby dowiedzieć się więcej o zmianach czcionki i koloru, które można wprowadzić do środowiska IDE, za pomocą okna dialogowego **Opcje** , zobacz stronę [czcionki i kolory, środowisko, Opcje okno dialogowe](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Jak: Zmienianie czcionek i kolorów w programie Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Instrukcje: zmiana czcionek i kolorów w programie Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
