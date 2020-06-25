@@ -3,7 +3,7 @@
 # Subskrypcje
 ## Kupowanie subskrypcji
 ### [Sprzedaż detaliczna](buy-activate-retail.md)
-### Chmurowa 
+### Chmura 
 #### [Omówienie](vscloud-overview.md)
 #### [Często zadawane pytania dotyczące rozliczeń](vscloud-billing-faq.md)
 #### [Zakupy dla dostawców rozwiązań w chmurze](vscloud-csp.md)
@@ -22,8 +22,8 @@
 ## [Omówienie portalu subskrypcji](using-the-subscriber-portal.md)
 ## [Zarządzanie subskrypcjami](manage-vs-subscriptions.md)
 ## [Kontaktowanie się z administratorem subskrypcji](contact-my-admin.md)
-## Korzyści
-### narzędzia
+## Zalety
+### Narzędzia
 #### [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure DevTest — płatność zgodnie z rzeczywistym użyciem](vs-azure-payg.md)
@@ -74,6 +74,7 @@
 ### [Superadministratorzy i administratorzy](admin-roles.md)
 ### [Ustawianie preferencji umowy](admin-prefs.md)
 ### [Omówienie](using-admin-portal.md)
+### [Dodawanie subskrypcji miesięcznych](add-monthly-subs.md)
 ### Przypisywanie subskrypcji
 #### [Dodawanie pojedynczych użytkowników](assign-license.md)
 #### [Dodawanie wielu użytkowników](assign-license-bulk.md)
@@ -88,7 +89,7 @@
 ### [Scenariusze logowania subskrybenta](aliasing.md)
 ### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
 ### [Zarządzanie Visual Studio z usługą GitHub Enterprise](assign-github.md)
-# Zasoby
+# Resources
 ## [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 ## [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)

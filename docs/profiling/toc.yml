@@ -1,11 +1,13 @@
 - name: Dokumentacja profilowania
   href: index.yml
 - name: Omówienie
-  href: profiling-overview.md
-- name: Przewodniki Szybki Start
   items:
     - name: Pierwsze spojrzenie na profilowanie
       href: profiling-feature-tour.md
+    - name: Uruchamianie narzędzi profilowania z debugerem lub bez debugera
+      href: running-profiling-tools-with-or-without-the-debugger.md
+- name: Przewodniki Szybki Start
+  items:
     - name: Analizowanie użycia procesora CPU (zarządzane)
       href: quickstart-cpu-usage-managed.md
     - name: Analizowanie użycia procesora CPU (natywne)
@@ -20,12 +22,22 @@
       href: memory-usage.md
 - name: Pojęcia
   items:
-    - name: Uruchamianie narzędzi profilowania z debugerem lub bez debugera
-      href: running-profiling-tools-with-or-without-the-debugger.md
+    - name: Zapoznanie z metodami zbierania danych wydajności
+      href: understanding-performance-collection-methods-perf-profiler.md
+    - name: Optymalizowanie ustawień profilera
+      href: optimize-profiler-settings.md
+    - name: Jednoczesne używanie wielu narzędzi profilera
+      href: use-multiple-profiler-tools-simultaneously.md
 - name: Przewodniki z instrukcjami
   items:
-    - name: Funkcja PerfTips
+    - name: Wskazówki dotyczące wydajności
       href: perftips.md
+    - name: .NET Async
+      href: analyze-async.md
+    - name: Baza danych
+      href: analyze-database.md
+    - name: Podgląd zdarzeń
+      href: events-viewer.md
     - name: Użycie procesora
       href: cpu-usage.md
     - name: Użycie pamięci

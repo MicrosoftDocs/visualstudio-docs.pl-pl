@@ -551,6 +551,14 @@
                   href: ca1828.md
                 - name: 'CA1829: Użyj właściwości Length/Count zamiast metody Enumerable.Count'
                   href: ca1829.md
+                - name: 'CA1831: Użyj metody AsSpan zamiast indeksatorów opartych na zakresie dla ciągów, gdy ma to zastosowanie'
+                  href: ca1831.md
+                - name: 'CA1832: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części ReadOnlySpan lub ReadOnlyMemory dla tablicy'
+                  href: ca1832.md
+                - name: 'CA1833: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części Memory dla tablicy'
+                  href: ca1833.md
+                - name: 'CA1835: Preferuj przeciążenia dotyczące pamięci dla metod strumienia ReadAsync/WriteAsync'
+                  href: ca1835.md
             - name: Ostrzeżenia dotyczące przenośności
               items:
                 - name: Omówienie
@@ -585,6 +593,12 @@
                   href: ca2009.md
                 - name: 'CA2011: Nie przypisuj właściwości w ramach jej metody ustawiającej'
                   href: ca2011.md
+                - name: 'CA2012: Poprawnie używaj elementów ValueTask'
+                  href: ca2012.md
+                - name: 'CA2013: Nie używaj metody ReferenceEquals z typami wartości'
+                  href: ca2013.md
+                - name: 'CA2014: Nie używaj słowa kluczowego stackalloc w pętlach'
+                  href: ca2014.md
                 - name: 'CA2015: Nie definiuj finalizatorów dla typów pochodzących od typu MemoryManager<T>'
                   href: ca2015.md
             - name: Ostrzeżenia dotyczące zabezpieczeń
@@ -750,6 +764,8 @@
                   href: ca5358.md
                 - name: 'CA5359: Nie wyłączaj walidacji certyfikatów'
                   href: ca5359.md
+                - name: 'CA5360: Nie wywołuj niebezpiecznych metod w deserializacji'
+                  href: ca5360.md
                 - name: 'CA5361: Nie wyłączaj użycia silnej kryptografii w pakiecie SChannel'
                   href: ca5361.md
                 - name: 'CA5362: Potencjalny cykl odwołań w grafie obiektu deserializowanego'
@@ -778,6 +794,12 @@
                   href: ca5373.md
                 - name: 'CA5374: Nie używaj klasy XslTransform'
                   href: ca5374.md
+                - name: 'CA5375: Nie używaj sygnatury dostępu współdzielonego konta'
+                  href: ca5375.md
+                - name: 'CA5376: Użyj właściwości HttpsOnly elementu SharedAccessProtocol'
+                  href: ca5376.md
+                - name: 'CA5377: Użyj zasad dostępu na poziomie kontenera'
+                  href: ca5377.md
                 - name: 'CA5378: Nie wyłączaj protokołów ServicePointManagerSecurityProtocols'
                   href: ca5378.md
                 - name: 'CA5379: Nie używaj słabego algorytmu funkcji wyprowadzania kluczy'
@@ -804,8 +826,16 @@
                   href: ca5389.md
                 - name: 'CA5390: Nie zapisuj klucza szyfrowania na stałe w kodzie'
                   href: ca5390.md
+                - name: 'CA5391: Użyj tokenów zabezpieczających przed fałszerstwem w kontrolerach MVC platformy ASP.NET Core'
+                  href: ca5391.md
+                - name: 'CA5392: Użyj atrybutu DefaultDllImportSearchPaths dla elementów P/Invoke'
+                  href: ca5392.md
+                - name: 'CA5393: Nie używaj niebezpiecznej wartości DllImportSearchPath'
+                  href: ca5393.md
                 - name: 'CA5394: Nie używaj niezabezpieczonej losowości'
                   href: ca5394.md
+                - name: 'CA5395: Pomiń atrybut HttpVerb dla metod akcji'
+                  href: ca5395.md
                 - name: 'CA5396: Ustaw element HttpOnly na wartość true dla elementu HttpCookie'
                   href: ca5396.md
                 - name: 'CA5397: Nie używaj przestarzałych wartości SslProtocols'
@@ -919,5 +949,7 @@
                   href: ca2245.md
                 - name: 'CA2246: Nie przypisuj symbolu i jego składowej w tej samej instrukcji'
                   href: ca2246.md
+                - name: 'CA2248: Podaj poprawny argument wyliczenia dla metody Enum.HasFlag'
+                  href: ca2248.md
             - name: Automatyczne wstrzymanie funkcji
               href: automatic-feature-suspension.md

@@ -11,6 +11,8 @@
         - name: Omówienie
           displayName: msbuild concepts
           href: msbuild-concepts.md
+        - name: Jak program MSBuild kompiluje projekty
+          href: build-process-overview.md
         - name: Właściwości
           items:
             - name: właściwości programu MSBuild
