@@ -1,7 +1,7 @@
 ---
-title: 'Jak: Określanie alternatywnej lokalizacji aktualizacji wdrożenia | Dokumenty firmy Microsoft'
+title: Jak określić alternatywną lokalizację aktualizacji wdrożenia | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,53 +15,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0484e36bb857f5d08382f86f42b2e09dda21616
-ms.sourcegitcommit: c1339f64fbeee6f17bf80fedea81afc8dac40dc0
+ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82037340"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381915"
 ---
-# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Jak: Określanie alternatywnej lokalizacji aktualizacji wdrażania
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Aplikację można zainstalować początkowo z dysku CD lub udziału plików, ale aplikacja musi sprawdzać, czy są okresowe aktualizacje w sieci Web. Można określić alternatywną lokalizację aktualizacji w manifeście wdrożenia, dzięki czemu aplikacja może zaktualizować się z sieci Web po jej początkowej instalacji.
+# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Instrukcje: Określanie alternatywnej lokalizacji aktualizacji wdrożenia
+Możesz zainstalować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację początkowo z dysku CD lub udziału plików, ale aplikacja musi sprawdzić, czy aktualizacje są okresowo aktualizowane w sieci Web. Możesz określić alternatywną lokalizację aktualizacji w manifeście wdrożenia, aby aplikacja mogła ją zaktualizować do sieci Web po jej początkowej instalacji.
 
 > [!NOTE]
-> Aplikacja musi być skonfigurowana do instalacji lokalnie, aby korzystać z tej funkcji. Aby uzyskać więcej informacji, zobacz [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Ponadto po zainstalowaniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji z sieci ustawienie alternatywnej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lokalizacji powoduje użycie tej lokalizacji zarówno dla instalacji początkowej, jak i wszystkich kolejnych aktualizacji. Jeśli aplikacja zostanie zainstalowana lokalnie (na przykład z dysku CD), początkowa instalacja jest wykonywana przy użyciu oryginalnego nośnika, a wszystkie kolejne aktualizacje będą używać lokalizacji alternatywnej.
+> Aby można było korzystać z tej funkcji, aplikacja musi być skonfigurowana do instalacji lokalnie. Aby uzyskać więcej informacji, zobacz [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Ponadto, jeśli zainstalujesz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację z sieci, ustawienie alternatywnej lokalizacji spowoduje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] użycie tej lokalizacji zarówno w przypadku instalacji początkowej, jak i wszystkich kolejnych aktualizacji. Jeśli aplikacja jest instalowana lokalnie (na przykład z dysku CD), początkowa instalacja jest przeprowadzana przy użyciu oryginalnego nośnika, a wszystkie kolejne aktualizacje będą korzystały z lokalizacji alternatywnej.
 
-### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Określanie alternatywnej lokalizacji aktualizacji przy użyciu programu MageUI.exe (narzędzie oparte na formularzach systemu Windows)
+### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Określ alternatywną lokalizację aktualizacji za pomocą MageUI.exe (Narzędzie oparte na Windows Forms)
 
-1. Otwórz wiersz polecenia programu .NET Framework i wpisz:
+1. Otwórz .NET Framework wiersz polecenia i wpisz:
 
-     **Mageui.exe**
+     **mageui.exe**
 
-2. W menu **Plik** wybierz polecenie **Otwórz,** aby otworzyć manifest wdrażania aplikacji.
+2. W menu **plik** wybierz polecenie **Otwórz** , aby otworzyć manifest wdrożenia aplikacji.
 
-3. Wybierz kartę **Opcje wdrażania.**
+3. Wybierz kartę **Opcje wdrażania** .
 
-4. W polu tekstowym o nazwie **Lokalizacja uruchamiania**wprowadź adres URL do katalogu, który będzie zawierał manifest wdrażania aktualizacji aplikacji.
+4. W polu tekstowym o nazwie **Lokalizacja uruchamiania**wprowadź adres URL katalogu, który będzie zawierać manifest wdrożenia dla aktualizacji aplikacji.
 
 5. Zapisz manifest wdrożenia.
 
-### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Określanie alternatywnej lokalizacji aktualizacji przy użyciu programu Mage.exe
+### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Określ alternatywną lokalizację aktualizacji za pomocą Mage.exe
 
-1. Otwórz wiersz polecenia programu .NET Framework.
+1. Otwórz wiersz polecenia .NET Framework.
 
-2. Ustaw lokalizację aktualizacji za pomocą następującego polecenia. W tym przykładzie *HelloWorld.exe.application* jest [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ścieżką do manifestu aplikacji, `http://adatum.com/Update/Path` który zawsze [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ma rozszerzenie .application i jest adresem URL, który będzie sprawdzał dostępność aktualizacji aplikacji.
+2. Ustaw lokalizację aktualizacji przy użyciu następującego polecenia. W tym przykładzie *HelloWorld.exe. Application* to ścieżka do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikacji, która zawsze ma rozszerzenie. Application i `http://adatum.com/Update/Path` jest adresem URL, który [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będzie sprawdzać dostępność aktualizacji aplikacji.
 
-    **Mag -Update HelloWorld.exe.application -ProviderUrl\/http: /adatum.com/Update/Path**
+    **Mage — aktualizacja HelloWorld.exe. Application-ProviderUrl http: \/ /adatum.com/Update/Path**
 
 3. Zapisz plik.
 
    > [!NOTE]
-   > Teraz musisz ponownie podpisać plik za pomocą *mage.exe*. Aby uzyskać więcej informacji, zobacz [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+   > Teraz musisz ponownie podpisać plik za pomocą *Mage.exe*. Aby uzyskać więcej informacji, zobacz [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework
- Jeśli aplikacja zostanie zainstalowana z nośnika offline, takiego jak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dysk CD, a `<deploymentProvider>` komputer jest w trybie online, najpierw sprawdza adres URL określony przez tag w manifeście wdrożenia, aby ustalić, czy lokalizacja aktualizacji zawiera nowszą wersję aplikacji. Jeśli tak, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instaluje aplikację bezpośrednio stamtąd, zamiast z katalogu instalacji początkowej, a wspólny czas wykonywania języka (CLR) określa poziom zaufania aplikacji przy użyciu `<deploymentProvider>`. Jeśli komputer jest w `<deploymentProvider>` trybie offline [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lub jest nieosiągalny, instaluje się z dysku CD, a program CLR udziela zaufania na podstawie punktu instalacji; w przypadku instalacji dysku CD oznacza to, że aplikacja otrzymuje pełne zaufanie. Wszystkie kolejne aktualizacje odziedziczą ten poziom zaufania.
+ W przypadku instalowania aplikacji z nośnika w trybie offline, takiego jak dysk CD, a komputer jest w trybie online, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] należy najpierw sprawdzić adres URL określony przez `<deploymentProvider>` tag w manifeście wdrożenia, aby określić, czy lokalizacja aktualizacji zawiera nowszą wersję aplikacji. Jeśli tak, program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zainstaluje aplikację bezpośrednio z tego miejsca, zamiast z katalogu instalacji początkowej, a środowisko uruchomieniowe języka wspólnego (CLR) określi poziom zaufania aplikacji przy użyciu `<deploymentProvider>` . Jeśli komputer jest w trybie offline lub `<deploymentProvider>` jest nieosiągalny, program jest [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowany z dysku CD, a środowisko CLR przyznaje zaufanie na podstawie punktu instalacji; w przypadku instalacji z dysku CD oznacza to, że aplikacja otrzymuje pełne zaufanie. Wszystkie kolejne aktualizacje będą dziedziczyć ten poziom zaufania.
 
- Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje, które używają `<deploymentProvider>` należy jawnie zadeklarować uprawnienia, których potrzebują w ich manifestu aplikacji, tak aby aplikacja nie otrzymuje różnych poziomów zaufania na różnych komputerach.
+ Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje, które używają, `<deploymentProvider>` powinny jawnie zadeklarować wymagane uprawnienia w manifeście aplikacji, tak aby aplikacja nie otrzymywała różnych poziomów zaufania na różnych komputerach.
 
 ## <a name="see-also"></a>Zobacz też
 - [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

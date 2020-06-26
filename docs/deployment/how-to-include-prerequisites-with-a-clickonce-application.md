@@ -1,40 +1,40 @@
 ---
-title: 'Instrukcje: uwzględnianie wymagań wstępnych z aplikacją ClickOnce | Microsoft Docs'
+title: Jak uwzględnić wymagania wstępne z aplikacją ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557630"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382396"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Instrukcje: uwzględnianie wymagań wstępnych z aplikacją ClickOnce
-Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], należy najpierw pobrać pakiety Instalatora dla tych wymagań wstępnych na komputer deweloperski. Gdy publikujesz aplikację i wybierzesz opcję **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co moja aplikacja**, wystąpi błąd, jeśli pakiety Instalatora nie znajdują się w folderze **Packages** .
+Przed dystrybucją wstępnie wymaganego oprogramowania do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji należy najpierw pobrać pakiety Instalatora dla tych wymagań wstępnych na komputer deweloperski. Gdy publikujesz aplikację i wybierzesz opcję **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co moja aplikacja**, wystąpi błąd, jeśli pakiety Instalatora nie znajdują się w folderze **Packages** .
 
 > [!NOTE]
 > Aby dodać pakiet Instalatora dla .NET Framework, zobacz [.NET Framework Przewodnik wdrażania dla deweloperów](/dotnet/framework/deployment/deployment-guide-for-developers).
 
-## <a name="Package"></a>Aby dodać pakiet Instalatora przy użyciu pliku Package. XML
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a>Aby dodać pakiet Instalatora przy użyciu Package.xml
 
 1. W Eksploratorze plików otwórz folder **Packages** .
 
-    Domyślnie ścieżka jest `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
+    Ścieżka jest domyślnie `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\` .
 
-2. Otwórz folder dla wymagania wstępnego, który chcesz dodać, a następnie otwórz folder języka dla zainstalowanej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (na przykład **EN** for English).
+2. Otwórz folder dla wymagań wstępnych, które chcesz dodać, a następnie otwórz folder języka dla zainstalowanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (na przykład **EN** for English).
 
-3. W Notatniku otwórz plik *Package. XML* .
+3. W Notatniku otwórz plik *Package.xml* .
 
-4. Znajdź element **name** zawierający `http://go.microsoft.com/fwlink`i skopiuj adres URL. Uwzględnij część **LinkId** .
+4. Znajdź element **name** , który zawiera `http://go.microsoft.com/fwlink` , i skopiuj adres URL. Uwzględnij część **LinkId** .
 
    > [!NOTE]
-   > Jeśli element **name** nie zawiera `http://go.microsoft.com/fwlink`, Otwórz plik **Product. XML** w folderze głównym wymagania wstępnego i Znajdź ciąg **fwlink** .
+   > Jeśli element **name** nie zawiera `http://go.microsoft.com/fwlink` , Otwórz plik **Product.xml** w folderze głównym dla wymagania wstępnego i Znajdź ciąg **fwlink** .
 
    > [!IMPORTANT]
    > Niektóre wstępnie wymagane składniki mają wiele pakietów instalacyjnych (na przykład dla systemów 32-bitowych i 64-bitowych). Jeśli wiele elementów **nazwy** zawiera **fwlink**, należy powtórzyć pozostałe kroki dla każdego z nich.

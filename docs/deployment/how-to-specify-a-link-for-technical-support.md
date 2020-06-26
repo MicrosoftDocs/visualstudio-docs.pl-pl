@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Określanie Linku do pomocy technicznej | Dokumentacja firmy Microsoft'
+title: Jak określić link do pomocy technicznej | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,30 +20,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a050ae24ddb5b796acf101e0432a5b64cd28031
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e64ef97b8b51f8a943e216bad67ec300026d5654
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898574"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382058"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Instrukcje: Określanie linku do pomocy technicznej
-Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji **adres URL pomocy technicznej** właściwość identyfikuje strony sieci Web lub udziału plików, gdzie użytkownicy mogą przejść w celu uzyskania informacji o aplikacji. Ta właściwość jest opcjonalna. Jeśli nie dostarczono, adres URL będzie wyświetlana w wpisu aplikacji **apletu Dodaj lub usuń programy** okno dialogowe.
+Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji Właściwość **adres URL pomocy technicznej** identyfikuje stronę sieci Web lub udział plików, w którym użytkownicy mogą uzyskać informacje o aplikacji. Ta właściwość jest opcjonalna. Jeśli jest podany, adres URL będzie wyświetlany w oknie dialogowym **Dodaj lub usuń programy** w pozycji aplikacji.
 
- **Adres URL pomocy technicznej** właściwość można ustawić na **Publikuj** strony **projektanta projektu**.
+ Właściwość **adres URL pomocy technicznej** można ustawić na stronie **Publikuj** **projektanta projektu**.
 
 ### <a name="to-specify-a-support-url"></a>Aby określić adres URL pomocy technicznej
 
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
-2. Kliknij przycisk **Publikuj** kartę.
+2. Kliknij kartę **Publikowanie** .
 
-3. Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.
+3. Kliknij przycisk **Opcje** , aby otworzyć okno dialogowe **Opcje publikowania** .
 
-4. Kliknij przycisk **opis**.
+4. Kliknij pozycję **Opis**.
 
-5. W **adres URL pomocy technicznej** wprowadź pełną ścieżkę do witryny sieci Web, strona sieci Web lub UNC udziału.
+5. W polu **adres URL pomocy technicznej** wprowadź w pełni kwalifikowaną ścieżkę do witryny sieci Web, strony sieci Web lub udziału UNC.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

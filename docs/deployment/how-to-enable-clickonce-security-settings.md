@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Włączenie ustawień zabezpieczeń technologii ClickOnce | Dokumentacja firmy Microsoft'
+title: Jak włączyć ustawienia zabezpieczeń ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,46 +16,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e52acc18aa18873076df3d02071616c0399b1f33
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407118"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382435"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>Instrukcje: Włączenie ustawień zabezpieczeń technologii ClickOnce
-Zabezpieczenia dostępu kodu dla aplikacji ClickOnce musi być włączony, aby można było opublikować aplikację. Odbywa się to automatycznie podczas publikowania aplikacji za pomocą Kreatora publikacji.
+# <a name="how-to-enable-clickonce-security-settings"></a>Instrukcje: Włączanie ustawień zabezpieczeń technologii ClickOnce
+Aby można było opublikować aplikację, należy włączyć zabezpieczenia dostępu kodu dla aplikacji ClickOnce. Jest to wykonywane automatycznie podczas publikowania aplikacji przy użyciu Kreatora publikacji.
 
- W niektórych przypadkach włączenie zabezpieczeń dostępu kodu może wpłynąć na wydajność podczas kompilowania lub debugowania aplikacji; w takich przypadkach mogą chcieć tymczasowo wyłączyć ustawienia zabezpieczeń.
+ W niektórych przypadkach włączenie zabezpieczeń dostępu kodu może mieć wpływ na wydajność podczas kompilowania lub debugowania aplikacji. w takich przypadkach można tymczasowo wyłączyć ustawienia zabezpieczeń.
 
- Ustawień zabezpieczeń technologii ClickOnce można włączać lub wyłączać na **zabezpieczeń** strony **projektanta projektu**.
+ Ustawienia zabezpieczeń ClickOnce można włączać lub wyłączać na stronie **zabezpieczenia** **projektanta projektu**.
 
-### <a name="to-enable-clickonce-security-settings"></a>Aby włączyć ustawień zabezpieczeń technologii ClickOnce
+### <a name="to-enable-clickonce-security-settings"></a>Aby włączyć ustawienia zabezpieczeń ClickOnce
 
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
 
-2. Kliknij przycisk **zabezpieczeń** kartę.
+2. Kliknij kartę **Zabezpieczenia**.
 
-3. Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.
+3. Zaznacz pole wyboru **Włącz ustawienia zabezpieczeń ClickOnce** .
 
-     Możesz teraz dostosować ustawienia zabezpieczeń dla aplikacji na stronie zabezpieczenia.
-
-    > [!NOTE]
-    > To pole wyboru jest wybierana z każdym opublikowaniu aplikacji za pomocą **Publikuj** kreatora.
-
-### <a name="to-disable-clickonce-security-settings"></a>Aby wyłączyć ustawień zabezpieczeń technologii ClickOnce
-
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
-
-2. Kliknij przycisk **zabezpieczeń** kartę.
-
-3. Wyczyść **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.
-
-     Twoja aplikacja będzie uruchamiana za pomocą ustawień zabezpieczeń w trybie pełnego zaufania; wszystkie ustawienia na **zabezpieczeń** strony zostaną zignorowane.
+     Teraz możesz dostosować ustawienia zabezpieczeń aplikacji na stronie Zabezpieczenia.
 
     > [!NOTE]
-    > Każdorazowo, gdy aplikacja została opublikowana przy użyciu Kreatora publikowania tego pola wyboru zostanie wybrany; należy usunąć je ponownie po każdej publikacji pomyślnie.
+    > To pole wyboru jest wybierane automatycznie za każdym razem, gdy aplikacja jest publikowana przy użyciu kreatora **publikacji** .
 
-## <a name="see-also"></a>Zobacz także
+### <a name="to-disable-clickonce-security-settings"></a>Aby wyłączyć ustawienia zabezpieczeń ClickOnce
+
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
+
+2. Kliknij kartę **Zabezpieczenia**.
+
+3. Wyczyść pole wyboru **Włącz ustawienia zabezpieczeń ClickOnce** .
+
+     Aplikacja zostanie uruchomiona z pełnymi ustawieniami zabezpieczeń zaufania; wszystkie ustawienia na stronie **zabezpieczenia** zostaną zignorowane.
+
+    > [!NOTE]
+    > Za każdym razem, gdy aplikacja jest publikowana przy użyciu Kreatora publikacji, to pole wyboru zostanie zaznaczone. należy wyczyścić ją ponownie po każdym pomyślnym opublikowaniu.
+
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

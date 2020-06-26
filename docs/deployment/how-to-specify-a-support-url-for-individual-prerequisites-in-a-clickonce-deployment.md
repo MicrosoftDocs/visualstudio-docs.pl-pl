@@ -1,7 +1,7 @@
 ---
-title: Adres URL pomocy technicznej wstępnie wymaganych składników wdrożenia ClickOnce
+title: Adres URL pomocy technicznej dla wymagań wstępnych wdrożenia technologii ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,25 +15,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745561"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381733"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Instrukcje: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
-A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymagania wstępne, które muszą być dostępne na komputerze klienckim, aby sprawdzić wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do uruchomienia aplikacji. Te zależności obejmują minimalną wymaganą wersję programu .NET Framework w wersji systemu operacyjnego i dowolne zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], jednak nie zainstalują dowolną z tych wymagań wstępnych. Jeśli warunek wstępny nie zostanie znaleziony, po prostu zatrzymuje instalację i wyświetla okno dialogowe wyjaśniające, dlaczego instalacja nie powiodła się.
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Instrukcje: Określanie adresu URL pomocy technicznej dla indywidualnych wymagań wstępnych w ramach wdrożenia ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Wdrożenie może przetestować różne wymagania wstępne, które muszą być dostępne na komputerze klienckim w celu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uruchomienia aplikacji. Te zależności obejmują wymaganą minimalną wersję .NET Framework, wersję systemu operacyjnego oraz wszystkie zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]nie można jednak zainstalować żadnego z tych wymagań wstępnych; Jeśli wymaganie wstępne nie zostanie znalezione, po prostu zatrzymuje instalację i wyświetla okno dialogowe z wyjaśnieniem dlaczego instalacja nie powiodła się.
 
- Istnieją dwie metody instalacji wymagań wstępnych. Możesz zainstalować je przy użyciu aplikacji programu inicjującego. Alternatywnie można określić adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych, który jest wyświetlany użytkownikom w oknie dialogowym, jeśli wymagań wstępnych nie zostanie znaleziony. Strony odwołuje się ten adres URL może zawierać łącza do instrukcji dotyczących instalacji wymagany warunek wstępny. Jeśli aplikacja nie określa adres URL pomocy technicznej dla indywidualnych wstępnie wymaganego składnika [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Wyświetla adres URL pomocy technicznej, określone w pliku manifestu wdrożenia dla aplikacji jako całości, jeśli jest zdefiniowana.
+ Istnieją dwie metody instalacji wstępnie wymaganego oprogramowania. Można je zainstalować przy użyciu aplikacji programu inicjującego. Alternatywnie można określić adres URL pomocy technicznej dla indywidualnych wymagań wstępnych, który jest wyświetlany użytkownikom w oknie dialogowym, jeśli nie zostanie znaleziony warunek wstępny. Strona, do której odwołuje się ten adres URL, może zawierać linki do instrukcji dotyczących instalowania wymaganego wymagania wstępnego. Jeśli aplikacja nie określa adresu URL pomocy technicznej dla danego wymagania wstępnego, program [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wyświetla adres URL pomocy technicznej określony w manifeście wdrożenia dla aplikacji jako całości, jeśli jest zdefiniowany.
 
- Gdy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *Mage.exe*, i *MageUI.exe* wszystkie służy do generowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, żadna z tych narzędzi bezpośrednio obsługuje określania adresu URL pomocy technicznej dla poszczególnych wymagania wstępne. W tym dokumencie opisano sposób modyfikowania wdrożenia manifest aplikacji i manifest wdrożenia, aby uwzględnić te obsługują adresów URL.
+ Chociaż [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe*i *MageUI.exe* mogą być używane do generowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, żadne z tych narzędzi nie obsługują bezpośredniego określania adresu URL pomocy technicznej dla indywidualnych wymagań wstępnych. W tym dokumencie opisano sposób modyfikowania manifestu aplikacji i manifestu wdrażania wdrożenia w celu uwzględnienia tych adresów URL pomocy technicznej.
 
-### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganego składnika
+### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Określ adres URL pomocy technicznej dla pojedynczego wymagania wstępnego
 
-1. Otwórz manifest aplikacji ( *.manifest* pliku) dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.
+1. Otwórz manifest aplikacji (plik *. manifest* ) dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstu.
 
-2. Wstępnie wymaganego składnika systemu operacyjnego można dodać `supportUrl` atrybutu `dependentOS` elementu:
+2. W przypadku wymagań wstępnych systemu operacyjnego Dodaj `supportUrl` atrybut do `dependentOS` elementu:
 
    ```xml
     <dependency>
@@ -45,7 +45,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymaga
      </dependency>
    ```
 
-3. Wymaganiem wstępnym dla określonej wersji środowiska uruchomieniowego języka wspólnego, Dodaj `supportUrl` atrybutu `dependentAssembly` wpis, który określa wspólne zależności środowiska uruchomieniowego języka:
+3. W przypadku wymagania wstępnego dla określonej wersji środowiska uruchomieniowego języka wspólnego Dodaj `supportUrl` atrybut do `dependentAssembly` wpisu określającego zależność aparatu plików wykonywalnych języka wspólnego:
 
    ```xml
      <dependency>
@@ -55,7 +55,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymaga
      </dependency>
    ```
 
-4. Wymaganiem wstępnym dla zestawu, który musi być wstępnie zainstalowane w globalnej pamięci podręcznej, można ustawić `supportUrl` dla `dependentAssembly` element, który określa wymagany zestaw:
+4. W przypadku wstępnie wymaganego zestawu, który musi być preinstalowany w globalnej pamięci podręcznej zestawów, należy ustawić `supportUrl` dla `dependentAssembly` elementu, który określa wymagany zestaw:
 
    ```xml
      <dependency>
@@ -65,9 +65,9 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymaga
      </dependency>
    ```
 
-5. Opcjonalna. Dla aplikacji przeznaczonych dla środowiska .NET Framework 4, otwarcie manifestu wdrażania ( *.application* pliku) dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.
+5. Opcjonalny. W przypadku aplikacji przeznaczonych dla .NET Framework 4 Otwórz manifest wdrożenia (plik *aplikacji* ) dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.
 
-6. Wymaganie wstępne platformy .NET Framework 4, można dodać `supportUrl` atrybutu `compatibleFrameworks` elementu:
+6. W przypadku wymagania wstępnego .NET Framework 4 Dodaj `supportUrl` atrybut do `compatibleFrameworks` elementu:
 
    ```xml
    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">
@@ -76,14 +76,14 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymaga
    </compatibleFrameworks>
    ```
 
-7. Po ręcznie zmienione manifest aplikacji należy ponownie podpisać manifest aplikacji za pomocą certyfikatu cyfrowego, a następnie aktualizacji i ponowne podpisanie pliku manifestu wdrożenia. Użyj *Mage.exe* lub *MageUI.exe* narzędzi zestawu SDK, aby wykonać to zadanie, jak ponownie wygenerować te pliki przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Usuwa ręczne zmiany. Aby uzyskać więcej informacji na temat korzystania z Mage.exe w celu ponownego podpisania manifestów, zobacz [jak: Ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+7. Po ręcznym zmodyfikowaniu manifestu aplikacji należy ponownie podpisać manifest aplikacji przy użyciu certyfikatu cyfrowego, a następnie zaktualizować i ponownie podpisać manifest wdrożenia. Użyj narzędzi zestawu SDK *Mage.exe* lub *MageUI.exe* do wykonania tego zadania, ponieważ spowoduje to ponowne wygenerowanie tych plików przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wymazania zmian ręcznych. Aby uzyskać więcej informacji na temat używania Mage.exe do ponownego podpisywania manifestów, zobacz [How to: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="net-framework-security"></a>zabezpieczenia .NET Framework
- Adres URL pomocy technicznej nie jest wyświetlana w oknie dialogowym, jeśli aplikacja jest oznaczony do uruchamiania w trybie częściowego zaufania.
+ Adres URL pomocy technicznej nie jest wyświetlany w oknie dialogowym, jeśli aplikacja jest oznaczona do uruchamiania w częściowej relacji zaufania.
 
-## <a name="see-also"></a>Zobacz także
-- [Mage.exe (narzędzie generowania manifestu i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+## <a name="see-also"></a>Zobacz też
+- [Mage.exe (Narzędzie tworzenia i edycji manifestów)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks > element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks>postaci](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Wstępnie wymagane składniki wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)

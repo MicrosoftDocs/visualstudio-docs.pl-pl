@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Uwzględnianie pliku danych w aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: Jak dołączyć plik danych do aplikacji ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,41 +16,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7630d1b363afa7caeae361f607f4b73929fbba1b
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898639"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382409"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Instrukcje: Uwzględnianie pliku danych w aplikacji ClickOnce
-Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowania aplikacji jest przypisany do katalogu danych na dysku lokalnym komputera docelowego, gdzie aplikacja można zarządzać swoimi danymi. Pliki danych może zawierać pliki dowolnego typu: pliki tekstowe, pliki XML lub nawet bazy danych Microsoft Access (*.mdb*) plików. Poniższe procedury pokazują, jak dodać plik danych dowolnego typu do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Instrukcje: uwzględnianie pliku danych w aplikacji ClickOnce
+Każda [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowana aplikacja ma przypisany katalog danych na dysku lokalnym komputera docelowego, na którym aplikacja może zarządzać własnymi danymi. Pliki danych mogą zawierać pliki dowolnego typu: pliki tekstowe, pliki XML, a nawet pliki bazy danych programu Microsoft Access (*mdb*). Poniższe procedury pokazują, jak dodać plik danych dowolnego typu do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Aby dołączyć plik danych przy użyciu Mage.exe
 
-1. Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.
+1. Dodaj plik danych do katalogu aplikacji przy użyciu pozostałych plików aplikacji.
 
-    Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.
+    Zazwyczaj katalog aplikacji będzie katalogiem z bieżącą wersją wdrożenia — na przykład, w wersji 1.0.0.0.
 
-2. Zaktualizuj manifest aplikacji do listy plików danych.
+2. Zaktualizuj manifest aplikacji, aby wyświetlić listę plików danych.
 
     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`
 
-    Wykonanie tego zadania ponownie utworzy listę plików w manifeście aplikacji, a także automatycznie wygeneruje sygnatury skrótu.
+    Wykonanie tego zadania spowoduje ponowne utworzenie listy plików w manifeście aplikacji, a także automatyczne wygenerowanie sygnatury skrótu.
 
-3. Otwórz manifest aplikacji w preferowanym tekstu lub edytora XML i Znajdź `file` element ostatnio dodane pliku.
+3. Otwórz manifest aplikacji w preferowanym edytorze tekstu lub XML i Znajdź `file` element dla ostatnio dodanego pliku.
 
-    Jeśli został dodany plik XML o nazwie `Data.xml`, plik będzie wyglądać podobnie jak w poniższym przykładzie kodu.
+    Jeśli dodano plik XML o nazwie `Data.xml` , plik będzie wyglądać podobnie do poniższego przykładu kodu.
 
    `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`
 
-4. Dodaj atrybut `type` do tego elementu i dostarczyć wartość `data`.
+4. Dodaj atrybut `type` do tego elementu i podaj go wartością `data` .
 
    `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`
 
-5. Ponownie podpisać manifest aplikacji przy użyciu certyfikatu lub parę kluczy, a następnie ponownie podpisać manifest wdrożenia.
+5. Ponownie podpisz manifest aplikacji przy użyciu pary kluczy lub certyfikatu, a następnie ponownie podpisz manifest wdrożenia.
 
-    Należy ponownie podpisać manifest wdrożenia, ponieważ jego skrót manifest aplikacji została zmieniona.
+    Musisz ponowić podpisanie manifestu wdrożenia, ponieważ jego skrót do manifestu aplikacji został zmieniony.
 
     `mage -s app manifest -cf cert_file -pwd password`
 
@@ -60,27 +60,27 @@ Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalo
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Aby dołączyć plik danych przy użyciu MageUI.exe
 
-1. Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.
+1. Dodaj plik danych do katalogu aplikacji przy użyciu pozostałych plików aplikacji.
 
-2. Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.
+2. Zazwyczaj katalog aplikacji będzie katalogiem z bieżącą wersją wdrożenia — na przykład, w wersji 1.0.0.0.
 
-3. Na **pliku** menu, kliknij przycisk **Otwórz** otworzyć manifest aplikacji.
+3. W menu **plik** kliknij polecenie **Otwórz** , aby otworzyć manifest aplikacji.
 
-4. Wybierz **pliki** kartę.
+4. Wybierz kartę **pliki** .
 
-5. W polu tekstowym w górnej części karty wprowadź katalog, który zawiera pliki aplikacji, a następnie kliknij przycisk **wypełniania**.
+5. W polu tekstowym w górnej części karty wprowadź katalog zawierający pliki aplikacji, a następnie kliknij pozycję **Wypełnij**.
 
-     Plik danych zostaną wyświetlone w siatce.
+     Plik danych pojawi się w siatce.
 
-6. Ustaw **typ pliku** wartość plik danych do **danych**.
+6. Ustaw wartość **Typ pliku** danych na **dane**.
 
-7. Zapisz manifest aplikacji, a następnie ponowne podpisywanie pliku.
+7. Zapisz manifest aplikacji, a następnie ponownie Podpisz plik.
 
-     *MageUI.exe* wyświetli monit o ponowne podpisywanie pliku.
+     *MageUI.exe* wyświetli monit o ponowne podpisanie pliku.
 
-8. Ponownie podpisać manifest wdrożenia
+8. Ponowne podpisywanie manifestu wdrożenia
 
-     Należy ponownie podpisać manifest wdrożenia, ponieważ jego skrót manifest aplikacji została zmieniona.
+     Musisz ponowić podpisanie manifestu wdrożenia, ponieważ jego skrót do manifestu aplikacji został zmieniony.
 
-## <a name="see-also"></a>Zobacz także
-- [Dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+## <a name="see-also"></a>Zobacz też
+- [Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

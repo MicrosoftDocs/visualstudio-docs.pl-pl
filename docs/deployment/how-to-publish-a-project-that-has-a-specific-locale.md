@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Publikowanie projektu o specyficznych ustawieniach regionalnych | Dokumentacja firmy Microsoft'
+title: Jak opublikować projekt, który ma określone ustawienia regionalne | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,28 +20,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8be6904452cc40ab68130f98cf63caf0fc7fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406992"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382227"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Instrukcje: Publikowanie projektu o specyficznych ustawieniach regionalnych
-Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różnych ustawień regionalnych. W tym scenariuszu może utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. Ta procedura pokazuje, jak publikować pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "PL" za pomocą makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", upewnij się ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład, "de" lub "de-DE").
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Instrukcje: publikowanie projektu, który ma określone ustawienia regionalne
+Aplikacja zawiera składniki, które mają różne ustawienia regionalne. W tym scenariuszu należy utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikować oddzielne projekty dla każdego ustawienia regionalnego. Ta procedura pokazuje, jak użyć makra do opublikowania pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "en". Jeśli chcesz wypróbować tę procedurę przy użyciu ustawień regionalnych innych niż "en", upewnij się, że ustawienie `localeString` w makrze jest zgodne z ustawieniami regionalnymi, które są używane (na przykład "de" lub "de-de").
 
 > [!NOTE]
-> Użycie tego makra, Opublikuj Lokalizacja powinna być udział prawidłowy adres URL lub Universal Naming Convention (UNC). Ponadto usługi Internet Information Services (IIS) musi być zainstalowany na tym komputerze. Aby zainstalować usługi IIS, na **Start** menu, kliknij przycisk **Panelu sterowania**. Kliknij dwukrotnie **Dodaj lub usuń programy**. W **apletu Dodaj lub usuń programy**, kliknij przycisk **Dodaj/Usuń składniki Windows**. W **Kreatora składników Windows**, wybierz opcję **Internet Information Services (IIS)** pole wyboru w **składniki** listy. Następnie kliknij przycisk **Zakończ** aby zamknąć kreatora.
+> W przypadku korzystania z tego makra lokalizacja publikowania powinna być prawidłowym adresem URL lub Universal Naming Convention (UNC). Na komputerze należy również zainstalować Internet Information Services (IIS). Aby zainstalować usługi IIS, w menu **Start** kliknij pozycję **Panel sterowania**. Kliknij dwukrotnie ikonę **Dodaj lub usuń programy**. W oknie **Dodawanie lub usuwanie programów**kliknij pozycję **Dodaj/Usuń składniki systemu Windows**. W **Kreatorze składników systemu Windows**zaznacz pole wyboru **Internet Information Services (IIS)** na liście **składniki** . Następnie kliknij przycisk **Zakończ** , aby zamknąć kreatora.
 
-### <a name="to-create-the-publishing-macro"></a>Aby utworzyć publikowania — makro
+### <a name="to-create-the-publishing-macro"></a>Aby utworzyć makro publikowania
 
-1. Aby otworzyć Eksplorator makr w **narzędzia** menu wskaż **makra**, a następnie kliknij przycisk **Eksplorator makr**.
+1. Aby otworzyć Eksploratora makr, w menu **Narzędzia** wskaż polecenie **makra**, a następnie kliknij przycisk **Eksplorator makr**.
 
-2. Utwórz nowy moduł makra. W Eksploratorze — makro wybierz **MyMacros**. Na **narzędzia** menu wskaż **makra**, a następnie kliknij przycisk **nowy moduł — makro**. Nazwa modułu **PublishSpecificCulture**.
+2. Utwórz nowy moduł makr. W Eksploratorze makr wybierz pozycję Moje **makra**. W menu **Narzędzia** wskaż polecenie **makra**, a następnie kliknij polecenie **Nowy moduł makr**. Nazwij moduł **PublishSpecificCulture**.
 
-3. W Eksploratorze — makro rozwiń **MyMacros** węzeł, a następnie otwórz **PublishAllProjects** modułu, klikając go dwukrotnie (lub z **narzędzia** wskaż **Makra**, a następnie kliknij przycisk **makrach IDE**).
+3. W Eksploratorze makr rozwiń węzeł moje **makra** , a następnie otwórz moduł **PublishAllProjects** , klikając go dwukrotnie (lub, w menu **Narzędzia** , wskaż polecenie **makra**, a następnie kliknij pozycję **makra środowiska IDE**).
 
-4. W makrach IDE, Dodaj następujący kod do modułu, po `Import` instrukcji:
+4. W środowisku IDE makr Dodaj następujący kod do modułu, po `Import` instrukcji:
 
     ```vb
     Module PublishSpecificCulture
@@ -135,34 +135,34 @@ Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różn
     End Module
     ```
 
-5. Zamknij makra środowiska IDE. Fokus powrót do programu Visual Studio.
+5. Zamknij środowisko IDE makr. Fokus powróci do programu Visual Studio.
 
-### <a name="to-publish-a-project-for-a-specific-locale"></a>Publikowanie projektu o specyficznych ustawieniach regionalnych
+### <a name="to-publish-a-project-for-a-specific-locale"></a>Aby opublikować projekt dla określonych ustawień regionalnych
 
-1. Aby utworzyć projekt aplikacji Windows Visual Basic w **pliku** menu wskaż **nowy**, a następnie kliknij przycisk **projektu**.
+1. Aby utworzyć Visual Basic projekt aplikacji systemu Windows, w menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-2. W **nowy projekt** okno dialogowe, wybierz opcję **aplikacji Windows** z **języka Visual Basic** węzła. Nadaj projektowi nazwę *PublishLocales*.
+2. W oknie dialogowym **Nowy projekt** wybierz pozycję **aplikacja systemu Windows** z węzła **Visual Basic** . Nazwij projekt *PublishLocales*.
 
-3. Kliknij z formularza Form1. W **właściwości** okna, w obszarze **projektowania**, zmień **języka** właściwość **(opcja domyślna)** do **wjęzykuangielskim**. Zmiana **tekstu** właściwości formularza w celu **MyForm**.
+3. Kliknij przycisk Form1. W oknie **Właściwości** , w obszarze **projekt**, Zmień właściwość **Language** z **(domyślnie)** na **angielski**. Zmień właściwość **Text** **formularza na.**
 
-     Należy pamiętać, że zlokalizowany zasób biblioteki DLL nie są tworzone, dopóki nie są potrzebne. Na przykład są one tworzone po zmianie tekstu w formularzu lub jego formantów po określeniu nowych ustawień regionalnych.
+     Należy pamiętać, że zlokalizowane biblioteki DLL zasobów nie są tworzone, dopóki nie są one używane. Na przykład, są tworzone podczas zmiany tekstu w formularzu lub jednej z jej kontrolek po określeniu nowych ustawień regionalnych.
 
-4. Publikowanie *PublishLocales* przy użyciu programu Visual Studio IDE.
+4. Publikuj *PublishLocales* przy użyciu środowiska IDE programu Visual Studio.
 
-     W **Eksploratora rozwiązań**, wybierz opcję *PublishLocales*. Na **projektu** menu, wybierz opcję **właściwości**. W Projektancie projektu na **Publikuj** Określ lokalizację publikacji, **http://localhost/PublishLocales**, a następnie kliknij przycisk **Publikuj teraz**.
+     W **Eksplorator rozwiązań**wybierz pozycję *PublishLocales*. W menu **projekt** wybierz polecenie **Właściwości**. W projektancie projektu na stronie **Publikowanie** Określ lokalizację publikacji **http://localhost/PublishLocales** , a następnie kliknij pozycję **Opublikuj teraz**.
 
-     Po wyświetleniu strony sieci Web publikowania należy go zamknąć. (W tym kroku należy opublikować projekt, nie trzeba go zainstalować.)
+     Gdy zostanie wyświetlona strona publikowanie strony sieci Web, zamknij ją. (W tym kroku należy tylko opublikować projekt; nie trzeba go instalować).
 
-5. Publikowanie *PublishLocales* ponownie przez wywołanie makra w oknie wiersza polecenia programu Visual Studio. Aby wyświetlić okno wiersza polecenia na **widoku** menu wskaż **Windows inne** a następnie kliknij przycisk **okna polecenia**, lub naciśnij **Ctrl** + **Alt**+**A**. W oknie wiersza polecenia, wpisz `macros`; Autouzupełnianie udostępni listy dostępnych makr. Wybierz Poniższe makro, a następnie naciśnij klawisz ENTER:
+5. Opublikuj ponownie *PublishLocales* , wywołując makro w oknie wiersza polecenia programu Visual Studio. Aby wyświetlić okno wiersza polecenia, w menu **Widok** wskaż polecenie **inne okna** , a następnie kliknij polecenie **okno polecenia**lub naciśnij **klawisze CTRL** + **Alt** + **A**. W oknie wiersza polecenia wpisz `macros` : funkcja autouzupełniania będzie dostarczać listę dostępnych makr. Wybierz Poniższe makro i naciśnij klawisz ENTER:
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6. Gdy proces publikowania zakończy się powodzeniem, zostanie wygenerowany komunikat z informacją "Publikowanie zakończyło się pomyślnie *PublishLocales\PublishLocales.vbproj*. Publikowanie język został "en". " Kliknij przycisk **OK** w oknie komunikatu. Po wyświetleniu strony sieci Web publikowania kliknij **zainstalować**.
+6. Po pomyślnym zakończeniu procesu publikowania zostanie wygenerowany komunikat "opublikowanie zakończyło się powodzeniem dla *PublishLocales\PublishLocales.vbproj*. Język publikacji to "pl". " Kliknij przycisk **OK** w oknie komunikatu. Gdy zostanie wyświetlona strona publikowanie strony sieci Web, kliknij przycisk **Instaluj**.
 
-7. Szukaj w *C:\Inetpub\wwwroot\PublishLocales\en*. Powinien zostać wyświetlony zainstalowanych plików, takich jak manifestów *setup.exe*i publikowania pliku strony sieci Web, oprócz zlokalizowany plik DLL zasobów. (Domyślnie funkcja ClickOnce dołącza *.deploy* rozszerzenia dla plików exe i dll; Usuń to rozszerzenie, po wdrożeniu.)
+7. Szukaj w *C:\Inetpub\wwwroot\PublishLocales\en*. Oprócz zlokalizowanej biblioteki DLL zasobów powinny zostać wyświetlone zainstalowane pliki, takie jak manifesty, *setup.exe*i plik publikowania strony sieci Web. (Domyślnie Technologia ClickOnce dołącza rozszerzenie *. deploy* do exe i bibliotek dll; to rozszerzenie można usunąć po wdrożeniu).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Makra środowiska deweloperskiego](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
-- [Okno Eksploratora — makro](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))
-- [Instrukcje: Edytowanie i programowe tworzenie makra](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))
+- [Środowisko deweloperskie makr](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
+- [Okno Eksploratora makr](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))
+- [Instrukcje: edytowanie i Programistyczne tworzenie makr](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

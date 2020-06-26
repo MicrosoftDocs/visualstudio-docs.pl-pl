@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Znak plików konfiguracji przy użyciu SignTool.exe (ClickOnce) | Dokumentacja firmy Microsoft'
+title: Jak podpisać pliki instalacyjne przy użyciu SignTool.exe (ClickOnce) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,63 +18,63 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928410"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382071"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: Znak plików konfiguracji przy użyciu SignTool.exe (ClickOnce)
-Możesz użyć *SignTool.exe* się program instalacyjny (*setup.exe*). Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: podpisywanie plików instalacyjnych za pomocą SignTool.exe (ClickOnce)
+Za pomocą *SignTool.exe* można podpisać program instalacyjny (*setup.exe*). Ten proces zapewnia, że naruszone pliki nie są zainstalowane na komputerach użytkowników końcowych.
 
- Domyślnie ClickOnce zalogował się manifestów i podpisem program instalacyjny. Jednak jeśli chcesz zmienić parametry Instalatora później, należy zalogować się Instalatora później. Jeśli zmienisz parametry po podpisaniu program instalacyjny, podpis jest uszkodzony.
+ Domyślnie technologia ClickOnce ma podpisane manifesty i podpisany program instalacyjny. Jeśli jednak chcesz zmienić parametry programu instalacyjnego później, należy podpisać program instalacyjny później. Jeśli zmienisz parametry po podpisaniu programu instalacyjnego, podpis zostanie uszkodzony.
 
- Poniższa procedura generuje nieoznaczone manifesty i bez znaku program instalacyjny. Następnie w celu wygenerowania podpisanych manifestów podpisywanie ClickOnce jest włączone w programie Visual Studio. Pozostało program instalacyjny bez znaku, dzięki czemu klient może zarejestrować plik wykonywalny przy użyciu ich własnych certyfikatów.
+ Poniższa procedura generuje niepodpisane manifesty i niepodpisany program instalacyjny. Następnie podpisywanie ClickOnce jest włączone w programie Visual Studio w celu wygenerowania podpisanych manifestów. Program instalacyjny jest pozostawiony bez znaku, aby klient mógł podpisać plik wykonywalny własnym certyfikatem.
 
-### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Aby generować niepodpisane program instalacyjny i podpisać później
+### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Aby wygenerować niepodpisany program instalacyjny i zalogować się później
 
-1. Na komputerze deweloperskim, należy zainstalować certyfikat, który ma znak manifesty za pomocą.
+1. Na komputerze deweloperskim Zainstaluj certyfikat, z którym chcesz podpisać manifest.
 
-2. Wybierz projekt w **Eksploratora rozwiązań**.
+2. Wybierz projekt w **Eksplorator rozwiązań**.
 
-3. Na **projektu** menu, kliknij przycisk *ProjectName* **właściwości**.
+3. W menu **projekt** kliknij polecenie właściwości *ProjectName* **Properties**.
 
-4. W **podpisywanie** strony, wyczyść **Podpisz manifesty ClickOnce**.
+4. Na stronie **podpisywanie** Wyczyść **manifesty ClickOnce**.
 
-5. W **Publikuj** kliknij **wymagania wstępne**.
+5. Na stronie **Publikowanie** kliknij pozycję **wymagania wstępne**.
 
-6. Sprawdź, czy wszystkie wymagania wstępne są zaznaczone, a następnie kliknij **OK**.
+6. Sprawdź, czy wybrano wszystkie wymagania wstępne, a następnie kliknij przycisk **OK**.
 
-7. W **Publikuj** strony, sprawdź ustawienia publikowania, a następnie kliknij przycisk **Publikuj teraz**.
+7. Na stronie **Publikowanie** Sprawdź ustawienia publikowania, a następnie kliknij pozycję **Opublikuj teraz**.
 
-     Rozwiązanie publikuje manifest aplikacji bez znaku, manifest wdrożenia bez znaku, specyficzny dla wersji plików i bez znaku program instalacyjny do publikowania lokalizacji folderu.
+     Rozwiązanie publikuje niepodpisany manifest aplikacji, niepodpisany manifest wdrożenia, pliki specyficzne dla wersji i niepodpisany program instalacyjny do lokalizacji folderu publikacji.
 
-8. W **Publikuj** kliknij **wymagania wstępne**.
+8. Na stronie **Publikowanie** kliknij pozycję **wymagania wstępne**.
 
-9. W **wymagania wstępne** okno dialogowe wyczyść **Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki**.
+9. W oknie dialogowym **wymagania wstępne** wyczyść pole wyboru **Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki**.
 
-10. W **Publikuj** strony, sprawdź ustawienia publikowania, a następnie kliknij przycisk **Publikuj teraz**.
+10. Na stronie **Publikowanie** Sprawdź ustawienia publikowania, a następnie kliknij pozycję **Opublikuj teraz**.
 
-     Rozwiązanie publikuje manifest podpisaną aplikację, manifest wdrożenia podpisane i specyficzny dla wersji plików do publikowania lokalizacji folderu. Niepodpisane program instalacyjny nie jest zastępowany przez proces publikowania.
+     Rozwiązanie publikuje podpisany manifest aplikacji, manifest wdrożenia podpisany i pliki specyficzne dla wersji w lokalizacji folderu publikowania. Niepodpisany program instalacyjny nie jest zastępowany przez proces publikowania.
 
-11. W lokacji klienta otwórz wiersz polecenia.
+11. W witrynie klienta Otwórz wiersz polecenia.
 
-12. Przejdź do katalogu, który zawiera *.exe* pliku.
+12. Przejdź do katalogu, który zawiera plik *. exe* .
 
-13. Znak *.exe* plików za pomocą następującego polecenia:
+13. Podpisz plik *exe* przy użyciu następującego polecenia:
 
     ```cmd
     signtool sign /sha1 CertificateHash Setup.exe
     signtool sign /f CertFileName Setup.exe
     ```
 
-     Na przykład aby zarejestrować program instalacyjny, użyj jednej z następujących poleceń:
+     Na przykład aby podpisać program instalacyjny, użyj jednego z następujących poleceń:
 
     ```cmd
     signtool sign /sha1 CCB... Setup.exe
     signtool sign /f CertFileName Setup.exe
     ```
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Ponowne podpisywanie manifestów aplikacji i wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

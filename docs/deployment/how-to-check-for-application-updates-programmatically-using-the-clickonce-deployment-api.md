@@ -1,7 +1,7 @@
 ---
-title: Automatyczne aktualizacje aplikacji przy użyciu interfejsu API wdrażania ClickOnce
+title: Automatyczne aktualizacje aplikacji korzystające z interfejsu API wdrażania technologii ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,51 +15,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9300fbf8b348b1016d36d414d17a66c45f6494b9
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444620"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382578"
 ---
-# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Jak: Sprawdzanie aktualizacji aplikacji programowo przy użyciu interfejsu API wdrażania ClickOnce
-ClickOnce udostępnia dwa sposoby, aby zaktualizować aplikację po jej wdrożeniu. W pierwszej metodzie można skonfigurować ClickOnce wdrożenia, aby automatycznie sprawdzać aktualizacje w określonych odstępach czasu. W drugiej metodzie można napisać kod, <xref:System.Deployment.Application.ApplicationDeployment> który używa klasy, aby sprawdzić aktualizacje na podstawie zdarzenia, takich jak żądanie użytkownika.
+# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Jak: sprawdzanie aktualizacji aplikacji programowo przy użyciu interfejsu API wdrażania ClickOnce
+Technologia ClickOnce oferuje dwa sposoby aktualizowania aplikacji po jej wdrożeniu. W pierwszej metodzie można skonfigurować wdrożenie ClickOnce, aby automatycznie sprawdzać dostępność aktualizacji w określonych odstępach czasu. W drugiej metodzie można napisać kod, który używa <xref:System.Deployment.Application.ApplicationDeployment> klasy do sprawdzania dostępności aktualizacji na podstawie zdarzenia, takiego jak żądanie użytkownika.
 
- Poniższe procedury pokazują kod do wykonywania aktualizacji programowej, a także opisano, jak skonfigurować wdrożenie ClickOnce, aby włączyć sprawdzanie aktualizacji programowej.
+ W poniższych procedurach przedstawiono kod służący do przeprowadzania aktualizacji programowych, a także opisano sposób konfigurowania wdrożenia technologii ClickOnce w celu włączenia kontroli aktualizacji programistycznych.
 
- Aby programowo zaktualizować aplikację ClickOnce, należy określić lokalizację aktualizacji. Jest to czasami określane jako dostawca wdrażania. Aby uzyskać więcej informacji na temat ustawiania tej właściwości, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+ Aby programowo zaktualizować aplikację ClickOnce, należy określić lokalizację dla aktualizacji. Jest to czasami określane jako dostawca wdrożenia. Aby uzyskać więcej informacji na temat ustawiania tej właściwości, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 > [!NOTE]
-> Można również użyć techniki opisanej poniżej, aby wdrożyć aplikację z jednej lokalizacji, ale zaktualizować ją z innej. Aby uzyskać więcej informacji, zobacz [Jak: Określanie alternatywnej lokalizacji aktualizacji wdrażania](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
+> Możesz również użyć opisanej poniżej techniki, aby wdrożyć aplikację z jednej lokalizacji, ale zaktualizować ją z innej. Aby uzyskać więcej informacji, zobacz [How to: Określanie alternatywnej lokalizacji aktualizacji wdrożenia](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
 
-### <a name="to-check-for-updates-programmatically"></a>Aby sprawdzić dostępność aktualizacji programowo
+### <a name="to-check-for-updates-programmatically"></a>Aby programowo sprawdzić dostępność aktualizacji
 
-1. Utwórz nową aplikację Windows Forms przy użyciu preferowanych narzędzi wiersza polecenia lub narzędzi wizualnych.
+1. Utwórz nową aplikację Windows Forms przy użyciu preferowanych narzędzi wiersza polecenia lub wizualizacji.
 
-2. Utwórz dowolny przycisk, element menu lub inny element interfejsu użytkownika, który chcesz wybrać użytkowników, aby sprawdzić dostępność aktualizacji. Z obsługi zdarzeń tego elementu, wywołać następującą metodę, aby sprawdzić i zainstalować aktualizacje.
+2. Utwórz dowolny przycisk, element menu lub inny element interfejsu użytkownika, który chcesz, aby użytkownicy wybierali aktualizacje. Z procedury obsługi zdarzeń tego elementu Wywołaj następującą metodę, aby sprawdzić i zainstalować aktualizacje.
 
      [!code-csharp[ClickOnceAPI#6](../deployment/codesnippet/CSharp/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cs)]
      [!code-cpp[ClickOnceAPI#6](../deployment/codesnippet/CPP/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cpp)]
      [!code-vb[ClickOnceAPI#6](../deployment/codesnippet/VisualBasic/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.vb)]
 
-3. Skompiluj aplikację.
+3. Kompiluj aplikację.
 
-### <a name="use-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Program Mage.exe umożliwia wdrożenie aplikacji, która programowo sprawdza dostępność aktualizacji
+### <a name="use-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Użyj Mage.exe, aby wdrożyć aplikację, która programowo sprawdza dostępność aktualizacji
 
-- Postępuj zgodnie z instrukcjami dotyczącymi wdrażania aplikacji przy użyciu programu Mage.exe, jak wyjaśniono w [przewodniku: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Podczas wywoływania programu Mage.exe w celu wygenerowania manifestu `providerUrl`wdrożenia należy użyć przełącznika wiersza polecenia i określić adres URL, pod którym ClickOnce powinien sprawdzić dostępność aktualizacji. Jeśli aplikacja zostanie `http://www.adatum.com/MyApp`zaktualizowana z , na przykład wywołanie generowania manifestu wdrożenia może wyglądać następująco:
+- Postępuj zgodnie z instrukcjami dotyczącymi wdrażania aplikacji przy użyciu Mage.exe, jak wyjaśniono w [przewodniku: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Podczas wywoływania Mage.exe w celu wygenerowania manifestu wdrażania upewnij się, że używasz przełącznika wiersza polecenia `providerUrl` i określ adres URL, pod którym ClickOnce powinna sprawdzać dostępność aktualizacji. Jeśli aplikacja zostanie zaktualizowana `http://www.adatum.com/MyApp` , na przykład, wywołanie wygenerowania manifestu wdrożenia może wyglądać następująco:
 
     ```cmd
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application
     ```
 
-### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Używanie programu MageUI.exe do wdrażania aplikacji, która sprawdza dostępność aktualizacji programowo
+### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Używanie MageUI.exe do wdrożenia aplikacji, która programowo sprawdza dostępność aktualizacji
 
-- Postępuj zgodnie z instrukcjami dotyczącymi wdrażania aplikacji przy użyciu programu Mage.exe, jak wyjaśniono w [przewodniku: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Na karcie **Opcje wdrażania** ustaw pole **Rozpocznij lokalizację** na manifest aplikacji ClickOnce powinien sprawdzić dostępność aktualizacji. Na karcie **Opcje aktualizacji** wyczyść pole wyboru Ta aplikacja powinna sprawdzić **dostępność aktualizacji.**
+- Postępuj zgodnie z instrukcjami dotyczącymi wdrażania aplikacji przy użyciu Mage.exe, jak wyjaśniono w [przewodniku: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Na karcie **Opcje wdrażania** Ustaw pole **Lokalizacja początkowa** na manifest aplikacji ClickOnce powinna sprawdzać dostępność aktualizacji. Na karcie **Opcje aktualizacji** wyczyść pole wyboru **Ta aplikacja powinna sprawdzać dostępność aktualizacji** .
 
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework
- Aplikacja musi mieć uprawnienia pełnego zaufania do korzystania z aktualizacji programowej.
+ Aby można było korzystać z aktualizacji programistycznych, aplikacja musi mieć uprawnienia pełnego zaufania.
 
 ## <a name="see-also"></a>Zobacz też
-- [Jak: Określanie alternatywnej lokalizacji aktualizacji wdrażania](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
+- [Instrukcje: Określanie alternatywnej lokalizacji aktualizacji wdrożenia](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)
