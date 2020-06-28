@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_callingConvention | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b0581e7a49ac8c8681077a7f40133498a48789
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4513571edb7d46efd02ff65bac5882c38f5dbc0e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740875"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464115"
 ---
 # <a name="idiasymbolget_callingconvention"></a>IDiaSymbol::get_callingConvention
 Zwraca wskaźnik metody wywoływania Konwencji.
@@ -36,10 +36,10 @@ HRESULT get_callingConvention ( 
 określoną Zwraca wartość z wyliczenia [CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) , która określa konwencję wywoływania metody.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
@@ -48,6 +48,6 @@ określoną Zwraca wartość z wyliczenia [CV_call_e](../../debugger/debug-inter
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CV_call_e, wyliczenie](../../debugger/debug-interface-access/cv-call-e.md)

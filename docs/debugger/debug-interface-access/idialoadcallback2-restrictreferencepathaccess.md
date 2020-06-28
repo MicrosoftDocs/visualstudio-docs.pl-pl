@@ -1,7 +1,7 @@
 ---
 title: 'IDiaLoadCallback2:: RestrictReferencePathAccess | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3406052f4d5466b5b7f52a1da3490d35bbb0508f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 32cad25220cc2248039e4b64c158092ffee8431f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742982"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466631"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 Określa, czy wyszukiwanie pliku. pdb jest dozwolone w ścieżce, w której znajduje się plik. exe.
@@ -29,10 +29,10 @@ HRESULT RestrictReferencePathAccess();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Każdy kod powrotny inny niż `S_OK`, aby zapobiec szukaniu pliku. pdb w ścieżce, w której znajduje się plik. exe.
+ Kod powrotny inny niż `S_OK` w celu zapobiegania szukaniu pliku. pdb w ścieżce, gdzie znajduje się plik. exe.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

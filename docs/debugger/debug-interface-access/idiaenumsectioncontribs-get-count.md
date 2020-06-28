@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumSectionContribs:: get_Count | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d12bf9190e8413d12998df24d95d2b14c1222a6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a3c9436fe0afee191b426db377ef38a6f4017282
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744342"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468163"
 ---
 # <a name="idiaenumsectioncontribsget_count"></a>IDiaEnumSectionContribs::get_Count
 Pobiera liczbę udziałów sekcji.
@@ -36,8 +36,8 @@ HRESULT get_Count ( 
 określoną Zwraca liczbę udziałów sekcji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)

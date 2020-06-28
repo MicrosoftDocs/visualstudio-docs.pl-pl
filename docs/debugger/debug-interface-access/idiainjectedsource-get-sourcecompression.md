@@ -1,7 +1,7 @@
 ---
 title: 'IDiaInjectedSource:: get_sourceCompression | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9428b30df82d92a8c74511644aaf97f2166807a2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e32450e355d757081efaf66e7c5abaf179e7fd95
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743317"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467023"
 ---
 # <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 Pobiera wskaźnik używanej kompresji źródłowej.
@@ -36,10 +36,10 @@ HRESULT get_sourceCompression ( 
 określoną Zwraca wskaźnik używanej kompresji źródłowej. Wartość zerowa wskazuje, że nie użyto kompresji źródłowej.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Wartość zwracana przez tę metodę jest specyficzna dla używanego kompilatora. Na przykład kompilator może użyć kodowania o długości uruchomienia lub kompresji w stylu Huffmana.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

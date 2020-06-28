@@ -1,7 +1,7 @@
 ---
 title: 'IDiaLineNumber:: get_statement | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37052944f74e36b488541074a0033f5b8aca9e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3ea4a05bfccddeedb29110ea6ee44f34f85534a8
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743129"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466848"
 ---
 # <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
 Pobiera flagę wskazującą, że informacje o tym wierszu opisują początek instrukcji zamiast wyrażenia w źródle programu.
@@ -33,13 +33,13 @@ HRESULT get_statement ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Zwraca `TRUE`, jeśli informacje o tym wierszu opisują początek instrukcji w źródle programu.
+określoną Zwraca `TRUE` czy informacje o wierszu opisują początek instrukcji w źródle programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Instrukcje mogą obejmować wiele wierszy. Ta metoda wskazuje, czy skojarzony numer wiersza oznacza początek takiej instrukcji wielowierszowej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

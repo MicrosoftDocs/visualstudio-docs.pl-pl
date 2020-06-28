@@ -1,7 +1,7 @@
 ---
 title: 'IDiaFrameData:: get_systemExceptionHandling | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e73ed8ae4aacf739463b1c6ab1f8f30c51a7fb2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 78a40caf8f2f974386f43ba9aeecfbdc4c71c766
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743491"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467205"
 ---
 # <a name="idiaframedataget_systemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Pobiera flagę wskazującą, czy obsługa wyjątku systemu jest włączona.
@@ -33,16 +33,16 @@ HRESULT get_systemExceptionHandling ( 
 #### <a name="parameters"></a>Parametry
  pRetVal
 
-określoną Zwraca `TRUE`, jeśli jest włączona obsługa wyjątków systemowych; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy obsługa wyjątku systemu jest w działaniu; w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Obsługa wyjątków systemu jest częścią powszechnie znaną jako strukturalna obsługa wyjątków.
 
- Aby określić, C++ czy obsługa wyjątków jest skuteczna, wywołaj metodę [IDiaFrameData:: get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) .
+ Aby określić, czy obsługa wyjątków C++ jest skuteczna, wywołaj metodę [IDiaFrameData:: get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)

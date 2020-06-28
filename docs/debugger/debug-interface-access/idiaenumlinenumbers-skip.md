@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumLineNumbers:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b959db58688fd13c3539f720315971e774a96d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9301b3567b88079c9d7ff91dbfb866a048324294
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744358"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468197"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
 Pomija określoną liczbę numerów wierszy w sekwencji wyliczenia.
@@ -36,7 +36,7 @@ HRESULT Skip ( 
 podczas Liczba numerów wierszy w sekwencji wyliczenia do pominięcia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, jeśli nie ma więcej numerów wierszy do pominięcia.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca, `S_FALSE` czy nie ma więcej numerów wierszy do pominięcia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

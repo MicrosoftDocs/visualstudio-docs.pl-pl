@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSession:: findLinesByLinenum | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5d64e9484b9450f5211e271df3b154ebab0fa75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 240eb3196ac47bf48bc6d6c3ef3ca844ec010dde
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742102"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465665"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 Określa numery wierszy jednostka kompilacji, w których znajduje się określony numer wiersza w pliku źródłowym.
@@ -37,11 +37,11 @@ HRESULT findLinesByLinenum ( 
 #### <a name="parameters"></a>Parametry
 `compiland`
 
-podczas Obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , który reprezentuje jednostka kompilacji do wyszukiwania numerów wierszy. Ten parametr nie może być `NULL`.
+podczas Obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , który reprezentuje jednostka kompilacji do wyszukiwania numerów wierszy. Ten parametr nie może być `NULL` .
 
 `file`
 
-podczas Obiekt [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , który reprezentuje plik źródłowy do przeszukania. Ten parametr nie może być `NULL`.
+podczas Obiekt [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , który reprezentuje plik źródłowy do przeszukania. Ten parametr nie może być `NULL` .
 
 `linenum`
 
@@ -59,7 +59,7 @@ podczas Określa numer kolumny. Użyj wartości zero, aby określić wszystkie k
 określoną Zwraca [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta, który zawiera listę pobranych wierszy.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
 Poniższy przykład pokazuje, jak otworzyć plik źródłowy, wyliczyć compilands, który został wniesiony przez ten plik, i zlokalizować numery wierszy w pliku źródłowym, w którym uruchamiane są poszczególne jednostka kompilacji.
@@ -101,7 +101,7 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

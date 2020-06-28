@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40c2b58778b2a1073b31acc7007388d8e8fe222c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bdf2f54c585a8a5406a0772dc1c580112036671d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741302"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464626"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Ułatwia przechodzenie stosu przy użyciu pliku bazy danych debugowania programu (. pdb).
@@ -31,7 +31,7 @@ IDiaStackWalkHelper: IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
- W poniższej tabeli przedstawiono metody `IDiaStackWalkHelper`:
+ W poniższej tabeli przedstawiono metody `IDiaStackWalkHelper` :
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -56,9 +56,9 @@ IDiaStackWalkHelper: IUnknown
 
  Biblioteka: diaguids. lib
 
- DLL: msdia80. dll
+ DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

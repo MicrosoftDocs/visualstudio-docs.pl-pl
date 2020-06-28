@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_compilerGenerated | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c67a3ae78db3f91f25f69c1045856c5d167c2d34
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 29d7255fd0e2c769a1b7d318e56982ba739915d2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740823"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464087"
 ---
 # <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
 Pobiera flagę wskazującą, czy symbol został wygenerowany przez kompilator.
@@ -33,13 +33,13 @@ HRESULT get_compilerGenerated ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Zwraca `TRUE`, jeśli kompilator wygenerował symbol; w przeciwnym razie zwraca `FALSE`, jeśli symbol został wygenerowany ze źródła z zapisaniem przez użytkownika.
+określoną Zwraca `TRUE` czy kompilator wygenerował symbol; w przeciwnym razie zwraca wartość, `FALSE` Jeśli symbol został wygenerowany ze źródła z zapisaniem przez użytkownika.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
@@ -48,5 +48,5 @@ określoną Zwraca `TRUE`, jeśli kompilator wygenerował symbol; w przeciwnym r
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

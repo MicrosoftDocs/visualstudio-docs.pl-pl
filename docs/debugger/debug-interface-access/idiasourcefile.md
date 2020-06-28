@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c28559eb3b936505cf03c6499dd79178554645bf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741778"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465165"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Reprezentuje plik źródłowy.
@@ -29,7 +29,7 @@ IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaSourceFile`.
+W poniższej tabeli przedstawiono metody `IDiaSourceFile` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -77,9 +77,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)
 - [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)
