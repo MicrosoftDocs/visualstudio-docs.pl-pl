@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: nie można ustawić punktu przerwania danych | Microsoft Docs'
+title: Błąd — nie można ustawić punktu przerwania danych | Microsoft Docs
 ms.date: 12/3/2019
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: dab5e146d510601c6e93582b6b128abcd964b4a7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404086"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459938"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Rozwiązywanie problemów z błędami punktów przerwania danych
 Ta strona zawiera instrukcje dotyczące rozwiązywania typowych błędów, które pojawiają się podczas korzystania z funkcji "Przerwij przy zmianie wartości".
@@ -44,7 +44,7 @@ Poniżej znajduje się lista błędów, które mogą wystąpić podczas korzysta
 
     - "Przerwij, gdy zmienia się wartość" w zmiennej, która nie jest rozwinięta z listy rozwijanej.
         - Debuger wewnętrznie musi znać obiekt zawierający pole, które ma być śledzone. Moduł wyrzucania elementów bezużytecznych może przenieść obiekt wokół sterty, aby debuger musiał znać obiekt, który utrzymuje zmienną, którą chcesz śledzić. 
-        - **Obejście**: Jeśli korzystasz z metody w obiekcie, dla którego chcesz ustawić punkt przerwania danych, przejdź do jednej ramki i użyj okna `locals/autos/watch`, aby rozwinąć obiekt i ustawić punkt przerwania danych dla żądanego pola.
+        - **Obejście**: Jeśli korzystasz z metody w obiekcie, dla którego chcesz ustawić punkt przerwania danych, przejdź do jednej ramki i Użyj `locals/autos/watch` okna do rozwinięcia obiektu i ustaw punkt przerwania danych w polu, które chcesz.
 
 - *"Punkty przerwania danych nie są obsługiwane w przypadku pól statycznych lub właściwości statycznych".*
     
@@ -63,10 +63,10 @@ Poniżej znajduje się lista błędów, które mogą wystąpić podczas korzysta
     - Każda architektura ma ustawioną liczbę bajtów i punkty przerwania danych sprzętowych, które może obsłużyć i właściwość, dla której ma zostać ustawiony punkt przerwania danych, przekroczyła ten limit. Zapoznaj się z tabelą [ograniczeń sprzętowych punktów przerwania danych](#data-breakpoint-hardware-limitations) , aby dowiedzieć się, ile zasobów punktów przerwania i bajtów danych jest dostępnych dla używanej architektury. 
     - **Obejście**: Ustaw punkt przerwania danych dla wartości, która może ulec zmianie we właściwości.
 
-- *"Punkty przerwania danych nie są obsługiwane w przypadku używania C# starszej ewaluatora wyrażeń".*
+- *"Punkty przerwania danych nie są obsługiwane w przypadku używania starszej ewaluatora wyrażeń języka C#".*
 
-    - Punkty przerwania danych są obsługiwane tylko dla niestarszej C# ewaluatora wyrażeń. 
-    - **Rozwiązanie**: nie można wyłączyć starszej C# ewaluatora wyrażeń, przechodząc do `Debug -> Options` następnie w obszarze `Debugging -> General` Wyczyść `"Use the legacy C# and VB expression evaluators"`.
+    - Punkty przerwania danych są obsługiwane tylko na niestarszej ewaluatora wyrażeń języka C#. 
+    - **Rozwiązanie**: nie można wyłączyć starszej kolekcji wyrażeń języka C#, przechodząc do pozycji `Debug -> Options` `Debugging -> General` Usuń zaznaczenie `"Use the legacy C# and VB expression evaluators"` .
 
 ## <a name="data-breakpoint-hardware-limitations"></a>Ograniczenia sprzętowe danych punktów przerwania
 
@@ -75,13 +75,13 @@ Architektura (Konfiguracja platformy), w której działa program, zawiera ograni
 | Architektura | Liczba obsługiwanych przez sprzęt punktów przerwania danych | Maksymalny rozmiar bajtu|
 | :-------------: |:-------------:| :-------------:|
 | x86 | 4 | 4 |
-| X64 | 4 | 8 |
+| x64 | 4 | 8 |
 | ARM | 1 | 4 |
 | ARM64 | 2 | 8 |
 
 ## <a name="provide-feedback"></a>Wyraź opinię
 Aby dowiedzieć się więcej na temat problemów lub sugestii dotyczących tej funkcji, skontaktuj się z pomocą techniczną, aby uzyskać pomoc w > wysłania opinii > [zgłosić problem](../ide/how-to-report-a-problem-with-visual-studio.md) w środowisku IDE lub [społeczności deweloperów](https://developercommunity.visualstudio.com/).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Używanie funkcji "Przerwij, gdy zmiany wartości" w programie .NET Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 - [DevBlog: Przerwij w przypadku zmiany wartości: punkty przerwania danych dla platformy .NET Core w programie Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_typeId | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0249f4e228327666e03e1a402f7f9cf69ee929
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1d9c8f559e86e0acfb4137df61b82e28d21d3dfc
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739091"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461713"
 ---
 # <a name="idiasymbolget_typeid"></a>IDiaSymbol::get_typeId
 Pobiera identyfikator typu symbolu.
@@ -36,13 +36,13 @@ HRESULT get_typeId ( 
 określoną Zwraca identyfikator typu symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  Identyfikator jest unikatową wartością utworzoną przez DIA SDK, aby oznaczyć wszystkie symbole jako unikatowe.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

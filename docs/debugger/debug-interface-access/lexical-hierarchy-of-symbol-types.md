@@ -1,7 +1,7 @@
 ---
 title: Hierarchia leksykalna typów symboli | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad782ddb9a88b492d03e2338f17d95fb7bfa4f79
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b003fcbd1b38eb5dc919b7f4f361e0b56b585f08
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738672"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461225"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarchia leksykalna typów symboli
 W poniższej tabeli przedstawiono typy symboli w hierarchii leksykalnej.
@@ -27,7 +27,7 @@ W poniższej tabeli przedstawiono typy symboli w hierarchii leksykalnej.
 |Typ symbolu|Opis|
 |-----------------|-----------------|
 |[Adnotacja](../../debugger/debug-interface-access/annotation.md)|Określa lokalizację do adnotacji w kodzie programu.|
-|[Blok](../../debugger/debug-interface-access/block.md)|Określa zagnieżdżone zakresy w funkcjach.|
+|[Zablokuj](../../debugger/debug-interface-access/block.md)|Określa zagnieżdżone zakresy w funkcjach.|
 |`Compiland`|Określa `compiland` połączony z plikiem exe.|
 |[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Określa jednostka kompilacji dane, które mogą wymagać ładowania dodatkowych jednostka kompilacji szczegóły, a tym samym naliczanie obciążenia w czasie wykonywania.|
 |[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Określa wszelkie dodatkowe zmienne środowiskowe istotne dla kompilacji jednostka kompilacji.|
@@ -39,14 +39,14 @@ W poniższej tabeli przedstawiono typy symboli w hierarchii leksykalnej.
 |[Funkcja (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Określa funkcję.|
 |[Etykieta (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Określa lokalizację w kodzie programu.|
 |[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Określa zewnętrzny symbol, który pojawia się podczas kompilowania programu wykonywalnego.|
-|[Thunk](../../debugger/debug-interface-access/thunk.md)|Określa `thunk`.|
-|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Określa `namespace`identifier.|
+|[Thunk](../../debugger/debug-interface-access/thunk.md)|Określa `thunk` .|
+|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Określa `namespace` Identyfikator.|
 
 > [!NOTE]
 > Dodatkowe właściwości symboli mogą być dostępne w zależności od typu symbolu. Te właściwości są wymienione w tematach poszczególnych symboli.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
-- [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Symbole i znaczniki symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

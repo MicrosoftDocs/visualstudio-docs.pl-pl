@@ -1,10 +1,10 @@
 ---
-title: Usuwanie programu Visual Studio
+title: Usuń program Visual Studio
 titleSuffix: ''
-description: Dowiedz się, jak krok po kroku usunąć program Visual Studio z komputera.
+description: Dowiedz się, jak całkowicie usunąć program Visual Studio z komputera, krok po kroku.
 ms.date: 12/19/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
@@ -22,43 +22,43 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649195"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418928"
 ---
-# <a name="remove-visual-studio"></a>Usuwanie programu Visual Studio
+# <a name="remove-visual-studio"></a>Usuń program Visual Studio
 
-Jeśli wystąpi katastrofalny błąd i nie można naprawić lub odinstalować programu Visual Studio, można uruchomić `InstallCleanup.exe` narzędzie, aby usunąć pliki instalacyjne i informacje o produkcie dla wszystkich zainstalowanych wystąpień programu Visual Studio 2017 lub Visual Studio 2019.
+Jeśli wystąpił błąd krytyczny i nie można naprawić ani odinstalować programu Visual Studio, można uruchomić `InstallCleanup.exe` Narzędzie w celu usunięcia plików instalacyjnych i informacji o produkcie dla wszystkich zainstalowanych wystąpień programu Visual studio 2017 lub Visual studio 2019.
 
 > [!WARNING]
-> Narzędzie InstallCleanup należy używać **tylko w ostateczności,** jeśli naprawa lub odinstalowanie nie powiedzie się. To narzędzie może odinstalować funkcje z innych instalacji programu Visual Studio lub innych produktów, które następnie mogą wymagać naprawy lub ponownej instalacji.
+> Użyj narzędzia InstallCleanup **tylko jako ostatniej,** Jeśli naprawa lub Dezinstalacja nie powiedzie się. To narzędzie może odinstalować funkcje z innych instalacji programu Visual Studio lub innych produktów, które mogą być również wymagane do naprawy lub ponownego zainstalowania.
 
-## <a name="run-installcleanupexe"></a>Uruchom program InstallCleanup.exe
+## <a name="run-installcleanupexe"></a>Uruchom InstallCleanup.exe
 
-Za pomocą narzędzia można użyć jednego z następujących `InstallCleanup.exe` przełączników wiersza polecenia:
+Za pomocą narzędzia można użyć dowolnego z następujących przełączników wiersza polecenia `InstallCleanup.exe` :
 
 | Przełącznik | Zachowanie |
 | ------ | -------- |
-| `-i`   | Ten przełącznik jest domyślny, jeśli żaden inny przełącznik nie jest przekazywany. Usuwa tylko główny katalog instalacyjny i informacje o produkcie. Użyj tego przełącznika, jeśli zamierzasz ponownie zainstalować tę samą wersję programu Visual Studio po uruchomieniu `InstallCleanup.exe` narzędzia. |
-| `-f`   | Ten przełącznik usuwa główny katalog instalacji, informacje o produkcie i większość innych funkcji zainstalowanych poza katalogiem instalacyjnym, które mogą być również współużytkowane innym instalacjom programu Visual Studio lub innym produktom. Użyj tego przełącznika, jeśli zamierzasz usunąć program Visual Studio bez ponownej instalacji później. |
+| `-i`   | Ten przełącznik jest wartością domyślną, jeśli nie przeszedł innego przełącznika. Usuwa tylko główny katalog instalacji i informacje o produkcie. Użyj tego przełącznika, jeśli zamierzasz ponownie zainstalować tę samą wersję programu Visual Studio po uruchomieniu `InstallCleanup.exe` Narzędzia. |
+| `-f`   | Ten przełącznik usuwa główny katalog instalacji, informacje o produkcie i większość innych funkcji zainstalowanych poza katalogiem instalacji, które mogą być również udostępniane innym urządzeniom Visual Studio lub innym produktom. Użyj tego przełącznika, jeśli zamierzasz usunąć program Visual Studio bez konieczności jego ponownej instalacji. |
 
-Oto jak uruchomić `InstallCleanup.exe` narzędzie:
+Oto jak uruchomić `InstallCleanup.exe` Narzędzie:
 
 1. Zamknij Instalatora programu Visual Studio.
 1. Otwórz wiersz polecenia administratora. Aby otworzyć wiersz polecenia administratora, wykonaj następujące czynności:
-   * Wpisz **cmd** w polu "Wpisz tutaj, aby wyszukać".
-   * Kliknij prawym przyciskiem myszy **wiersz polecenia**, a następnie wybierz polecenie Uruchom **jako administrator**.
-1. Wprowadź pełną ścieżkę `InstallCleanup.exe` narzędzia i dodaj preferowany przełącznik wiersza polecenia. Domyślnie ścieżka narzędzia jest następująca. Podwójne cudzysłowy zawierają polecenie zawierające spacje:
+   * Wpisz **polecenie cmd** w polu "Wpisz tutaj, aby wyszukać".
+   * Kliknij prawym przyciskiem myszy **wiersz polecenia**, a następnie wybierz polecenie **Uruchom jako administrator**.
+1. Wprowadź pełną ścieżkę do `InstallCleanup.exe` Narzędzia i dodaj preferowany przełącznik wiersza polecenia. Domyślnie ścieżka narzędzia jest następująca. Podwójne cudzysłowy zakrywają polecenie zawierające spacje:
 
    ```
    "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]
-   > Jeśli nie możesz `InstallCleanup.exe` znaleźć w katalogu Instalatora programu Visual Studio, który jest zawsze znajduje się w `%ProgramFiles(x86)%\Microsoft Visual Studio`, oto co zrobić dalej. Postępuj zgodnie z instrukcjami, aby [zainstalować program Visual Studio](install-visual-studio.md). Następnie po wyświetleniu ekranu wyboru obciążenia zamknij okno i wykonaj kroki opisane na tej stronie ponownie.
+   > Jeśli nie możesz znaleźć `InstallCleanup.exe` w katalogu Instalator programu Visual Studio, który zawsze znajduje się w sekcji `%ProgramFiles(x86)%\Microsoft Visual Studio` , należy wykonać poniższe czynności. Postępuj zgodnie z instrukcjami, aby [zainstalować program Visual Studio](install-visual-studio.md). Następnie po wyświetleniu ekranu wyboru obciążenia Zamknij okno i wykonaj ponownie kroki opisane na tej stronie.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

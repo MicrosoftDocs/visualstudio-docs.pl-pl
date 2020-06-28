@@ -1,7 +1,7 @@
 ---
 title: Namesearchoptions — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 696ad3e659b503b27da73056dafb57c5852d5133
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738615"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461176"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Określa opcje wyszukiwania dla nazw symboli i plików.
@@ -43,17 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Elementy
-`nsNone` nie określono żadnych opcji.
+`nsNone`Nie określono żadnych opcji.
 
-`nsfCaseSensitive` stosuje dopasowanie nazw z uwzględnieniem wielkości liter.
+`nsfCaseSensitive`Stosuje dopasowanie nazw z uwzględnieniem wielkości liter.
 
-`nsfCaseInsensitive` stosuje dopasowanie nazw bez uwzględniania wielkości liter.
+`nsfCaseInsensitive`Stosuje dopasowanie nazw bez uwzględniania wielkości liter.
 
-`nsfFNameExt` traktuje nazwy jako ścieżki i stosuje dopasowanie nazwy pliku. ext.
+`nsfFNameExt`Traktuje nazwy jako ścieżki i stosuje dopasowanie nazwy pliku. ext.
 
-`nsfRegularExpression` stosuje dopasowanie nazw z uwzględnieniem wielkości liter przy użyciu gwiazdek (*) i znaków zapytania (?) jako symboli wieloznacznych. (Inne typowe znaki wyrażenia regularnego nie są obsługiwane).
+`nsfRegularExpression`Stosuje dopasowanie nazwy z uwzględnieniem wielkości liter przy użyciu gwiazdek (*) i znaków zapytania (?) jako symboli wieloznacznych. (Inne typowe znaki wyrażenia regularnego nie są obsługiwane).
 
-`nsfUndecoratedName` ma zastosowanie tylko do symboli, które mają nazwy niedekoracyjne i dekoracyjne.
+`nsfUndecoratedName`Dotyczy tylko symboli, które mają nazwy niedekoracyjne i dekoracyjne.
 
 ## <a name="remarks"></a>Uwagi
 Wartości z tego wyliczenia są przesyłane do następujących metod:
@@ -67,7 +67,7 @@ Wartości z tego wyliczenia są przesyłane do następujących metod:
 ## <a name="requirements"></a>Wymagania
 Nagłówek: dia2. h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)

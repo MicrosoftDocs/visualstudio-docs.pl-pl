@@ -1,7 +1,7 @@
 ---
 title: Memorytypeenum — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0710ec5cdfcfcb59407d18b43b885603f017fdb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2cd255ab59c9d46676ba46baddd9cee7e3ef4cc2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738633"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461183"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 Określa typ pamięci do uzyskania dostępu.
@@ -34,13 +34,13 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Parametry
-`MemTypeCode` uzyskuje dostęp tylko do pamięci kodowej.
+`MemTypeCode`Uzyskuje dostęp tylko do pamięci kodowej.
 
-`MemTypeData` uzyskuje dostęp do danych lub pamięci stosu.
+`MemTypeData`Uzyskuje dostęp do danych lub pamięci stosu.
 
-`MemTypeStack` uzyskuje dostęp tylko do pamięci stosu.
+`MemTypeStack`Uzyskuje dostęp tylko do pamięci stosu.
 
-`MemTypeAny` uzyskuje dostęp do dowolnego rodzaju pamięci.
+`MemTypeAny`Uzyskuje dostęp do dowolnego rodzaju pamięci.
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są przesyłane do metody [IDiaStackWalkHelper:: ReadMemory —](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) w celu ograniczenia dostępu do różnych typów pamięci.
@@ -48,6 +48,6 @@ Wartości w tym wyliczeniu są przesyłane do metody [IDiaStackWalkHelper:: Read
 ## <a name="requirements"></a>Wymagania
 Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: wykonywanie kodu Transact-SQL zakończyło się bez debugowania | Microsoft Docs'
+title: Błąd — wykonywanie kodu Transact-SQL zakończyło się bez debugowania | Microsoft Docs
 ms.date: 11/08/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e86e24f775d8470b54ed7b9c54d27a5d3c1ee8da
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916304"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460250"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Błąd: Wykonanie Transact-SQL zakończyło się bez debugowania
 
@@ -30,7 +30,7 @@ Przyczyną tego problemu może być problemy z siecią lub problemy z SQL Server
 
 Istnieją dwa konta:
 
-- Konto aplikacji to konto użytkownika, na którym uruchomiono [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+- Konto aplikacji to konto użytkownika, na którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] działa program.
 
 - Konto połączenia to tożsamość użyta do nawiązania połączenia z SQL Server. To konto nie musi być takie samo jak tożsamość, w której działa program Visual Studio, jeśli połączenie korzysta z uwierzytelniania SQL.
 
@@ -46,7 +46,7 @@ Istnieją dwa konta:
 
   - Skontaktuj się z administratorem sieci lub bazy danych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Konfigurowanie debugowania SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
 - [Instrukcje: Ustawianie uprawnień SQL Server na potrzeby debugowania](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)

@@ -1,9 +1,9 @@
 ---
-title: 'Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio na komputerze zdalnym nie ma uprawnień do połączenia z tym komputerem'
+title: Błąd — Monitor zdalnego debugowania Microsoft Visual Studio na komputerze zdalnym nie ma uprawnień do nawiązania połączenia z tym komputerem
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.access_denied_oncallback
 dev_langs:
@@ -19,32 +19,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cafbd6a6c9c6844028b1b18d0ebfe7afd8ddf57
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: aa9304c999abb1401af8e524551a999556826062
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043443"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460459"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio na komputerze zdalnym nie ma uprawnień do połączenia z tym komputerem
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Błąd: Monitor debugera zdalnego Microsoft Visual Studio na komputerze zdalnym nie ma uprawnień do połączenia z tym komputerem
 
-Ten błąd występuje, gdy użytkownik, który próbuje uruchomić zdalny Monitor debugowania Visual Studio (msvsmon) nie ma konta na komputerze lokalnym. Ten błąd może wystąpić, gdy zdalne debugowanie przy użyciu starego aparatu debugowania.
+Ten błąd występuje, gdy użytkownik próbujący uruchomić program Visual Studio Monitor zdalnego debugowania (msvsmon) nie ma konta na komputerze lokalnym. Ten błąd może wystąpić podczas debugowania zdalnego przy użyciu starszego aparatu debugowania.
 
 ## <a name="to-fix-this-problem"></a>Aby rozwiązać ten problem
 
-- Dodaj konto użytkownika do komputera hosta debugera programu Visual Studio, z taką samą nazwę i hasło jako konta użytkownika uruchamiającego polecenie msvsmon na komputerze zdalnym
+- Dodaj konto użytkownika do komputera hosta debugera programu Visual Studio z tą samą nazwą i hasłem, co konto użytkownika z systemem msvsmon na komputerze zdalnym,
 
-   \- lub —
+   \-oraz
 
-- Uruchom polecenie msvsmon jako użytkownik, który ma uprawnienia do wywołania na komputerze lokalnym. Oznacza to, że użytkownik musi być użytkownikiem domeny oraz administratorem na komputerze polecenia msvsmon. Można określić konto użytkownika, uruchom polecenie msvsmon w jeden z dwóch sposobów:
+- Uruchom msvsmon jako użytkownika, który ma uprawnienia do wywoływania do komputera lokalnego. Oznacza to, że użytkownik musi być użytkownikiem domeny i administratorem na komputerze msvsmon. Można określić konto użytkownika do uruchamiania msvsmon na jeden z dwóch sposobów:
 
-  - Kliknij prawym przyciskiem myszy ikonę msvsmon, a następnie wybierz **Uruchom jako** menu skrótów
+  - Kliknij prawym przyciskiem myszy ikonę msvsmon i wybierz polecenie **Uruchom jako** w menu skrótów.
 
-    \- lub —
+    \-oraz
 
-  - W wierszu polecenia Uruchom `runas.exe`.
+  - W wierszu polecenia Uruchom polecenie `runas.exe` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

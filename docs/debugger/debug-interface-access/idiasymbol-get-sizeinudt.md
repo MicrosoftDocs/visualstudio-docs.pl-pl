@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_sizeInUdt | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87f6e6ea3118aa7c278bc83a69a290176b267c9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ba2f0351997b5f6a2a96cb035871b116b9180786
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739330"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461985"
 ---
 # <a name="idiasymbolget_sizeinudt"></a>IDiaSymbol::get_sizeInUdt
 Pobiera rozmiar elementu członkowskiego typu zdefiniowanego przez użytkownika.
@@ -30,10 +30,10 @@ HRESULT get_sizeInUdt(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Wskaźnik do `DWORD`, który określa rozmiar elementu członkowskiego.
+określoną Wskaźnik do elementu `DWORD` , który określa rozmiar elementu członkowskiego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

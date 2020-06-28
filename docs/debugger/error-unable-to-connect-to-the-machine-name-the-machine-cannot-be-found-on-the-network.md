@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: nie można nawiązać połączenia z maszyną &lt;name &gt;. Nie można odnaleźć maszyny w sieci. | Microsoft Docs'
+title: Błąd — nie można nawiązać połączenia z &lt; nazwą komputera &gt; . Nie można odnaleźć maszyny w sieci. | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.remote.dcom_disabled
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0f820156714a726d506d8871d4e42a8dc12a23
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8618a15ab4dcd6c9bbc0d9d8ab9bf347552883b1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736834"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460146"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Błąd: nie można nawiązać połączenia z maszyną &lt;name &gt;. Nie można odnaleźć maszyny w sieci.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Błąd: nie można nawiązać połączenia z &lt; nazwą komputera &gt; . Nie można odnaleźć maszyny w sieci.
 Takie zachowanie występuje, gdy spełniony jest jeden z następujących warunków:
 
 - Połączenie z komputerem zdalnym zostało przerwane.
@@ -44,6 +44,6 @@ Takie zachowanie występuje, gdy spełniony jest jeden z następujących warunk�
 
 - Upewnij się, że hasło używane do nawiązania połączenia z komputerem zdalnym jest prawidłowe i nie wygasło.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie zdalne](../debugger/remote-debugging.md)
 - [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: serwer sieci Web nie jest prawidłowo skonfigurowany | Microsoft Docs'
+title: Błąd — serwer sieci Web nie jest prawidłowo skonfigurowany | Microsoft Docs
 ms.date: 09/20/2017
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.remote.projnotconfigured
 dev_langs:
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be5db0a08a287e2611c29396e96e72719b5106a7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711297ef00c064c482ed3a86b896566b6e019534
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736930"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460328"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Błąd: Serwer sieci Web nie jest prawidłowo skonfigurowany
 
-Po pomyślnym wykonaniu kroków w celu rozwiązania problemu i przed ponowieniem próby debugowania należy zresetować usługi IIS. Możesz to zrobić, otwierając wiersz polecenia administratora i wpisując `iisreset`.
+Po pomyślnym wykonaniu kroków w celu rozwiązania problemu i przed ponowieniem próby debugowania należy zresetować usługi IIS. Możesz to zrobić, otwierając wiersz polecenia administratora i wpisując `iisreset` .
 
 Wykonaj następujące kroki, aby rozwiązać ten problem:
 
-1. Jeśli aplikacja sieci Web hostowana na serwerze jest skonfigurowana jako kompilacja wydania, należy ponownie opublikować ją jako kompilację debugowania, a następnie sprawdzić, czy plik Web. config zawiera `debug=true` w elemencie Build. Zresetuj usługi IIS i ponów próbę.
+1. Jeśli aplikacja sieci Web hostowana na serwerze jest skonfigurowana jako kompilacja wydania, należy ponownie opublikować ją jako kompilację debugowania i sprawdzić, czy plik web.config zawiera `debug=true` element kompilacja. Zresetuj usługi IIS i ponów próbę.
 
     Na przykład jeśli używasz profilu publikowania dla kompilacji wydania, Zmień ją na Debuguj i ponownie Opublikuj. W przeciwnym razie atrybut Debug zostanie ustawiony na `false` podczas publikowania.
 
@@ -37,16 +37,16 @@ Wykonaj następujące kroki, aby rozwiązać ten problem:
 
     Ścieżka fizyczna może być niepoprawna, jeśli aplikacja sieci Web została skopiowana na inny komputer, ręcznie zmieniona lub przeniesiona. Zresetuj usługi IIS i ponów próbę.
 
-3. Jeśli debugujesz lokalnie w programie Visual Studio, upewnij się, że we właściwościach wybrano poprawny serwer. (Otwórz **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie** w zależności od typu projektu. W przypadku projektu formularzy sieci Web Otwórz **stronę właściwości > opcje uruchamiania > Server**).
+3. Jeśli debugujesz lokalnie w programie Visual Studio, upewnij się, że we właściwościach wybrano poprawny serwer. (Otwórz **właściwości > serwery > sieci Web** lub **Właściwości > debugowanie** w zależności od typu projektu. W przypadku projektu formularzy sieci Web Otwórz **stronę właściwości > opcje uruchamiania > Server**).
 
     Jeśli używasz zewnętrznego (niestandardowego) serwera, takiego jak usługi IIS, adres URL musi być prawidłowy. W przeciwnym razie wybierz pozycję IIS Express i ponów próbę.
 
 4. SERWERZE Upewnij się, że na serwerze jest zainstalowana poprawna wersja programu ASP.NET.
 
-    Niezgodne wersje programu ASP.NET na serwerze IIS i w projekcie programu Visual Studio mogą spowodować ten problem. Może być konieczne ustawienie wersji platformy w pliku Web. config. Aby zainstalować ASP.NET w usługach IIS, użyj [Instalatora platformy sieci Web (Instalatora WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Należy również zapoznać się z artykułem [iis 8,0 przy użyciu ASP.NET 3,5 i ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) lub, w przypadku ASP.NET Core, [hosta w systemie Windows z usługami IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Niezgodne wersje programu ASP.NET na serwerze IIS i w projekcie programu Visual Studio mogą spowodować ten problem. Może być konieczne ustawienie wersji platformy w web.config. Aby zainstalować ASP.NET w usługach IIS, użyj [Instalatora platformy sieci Web (Instalatora WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Należy również zapoznać się z artykułem [iis 8,0 przy użyciu ASP.NET 3,5 i ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) lub, w przypadku ASP.NET Core, [hosta w systemie Windows z usługami IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
-4. Jeśli limit `maxConnection` w usługach IIS jest zbyt niski i masz zbyt wiele połączeń, może być konieczne [zwiększenie limitu połączeń](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
+4. Jeśli `maxConnection` limit w usługach IIS jest zbyt niski i masz zbyt wiele połączeń, może być konieczne [zwiększenie limitu połączeń](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
-- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

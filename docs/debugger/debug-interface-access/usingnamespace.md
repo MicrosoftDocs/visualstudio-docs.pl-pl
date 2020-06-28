@@ -1,7 +1,7 @@
 ---
 title: UsingNamespace — | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d078e8af5f579556fb865a4d92084220afecc83
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3662bdc61cd98a36161bd8972a98cb4f168bc452
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738437"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460966"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
-Niektóre symbole mogą być określane przez przestrzeń nazw i później będą identyfikowane przez tag `SymTagUsingNameSpace`.
+Niektóre symbole mogą odwoływać się do przestrzeni nazw, a następnie być identyfikowane przez `SymTagUsingNameSpace` tag.
 
 > [!NOTE]
 > Tag symboli UsingNamespace — pojawia się tylko w kodzie zarządzanym.
@@ -36,5 +36,5 @@ Niektóre symbole mogą być określane przez przestrzeń nazw i później będ�
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu symbolu.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagNameSpace` (jedną z wartości [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) ).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Hierarchia leksykalna typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

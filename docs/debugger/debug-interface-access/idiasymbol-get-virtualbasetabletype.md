@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_virtualBaseTableType | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaddb8b71ba96511af3682b442c1e5c8e84a409c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 858f149abb0bec444c43ea706e638def4ff930ce
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738840"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461442"
 ---
 # <a name="idiasymbolget_virtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 Pobiera typ wskaźnika wirtualnej tabeli bazowej.
@@ -37,13 +37,13 @@ HRESULT get_virtualBaseTableType(
 |`pRetVal`|określoną Zwraca obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , który określa typ tabeli podstawowej.|
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Wskaźnik wirtualnej tabeli podstawowej (`vbtptr`) jest ukrytym wskaźnikiem w [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tablicy bazowej, która obsługuje dziedziczenie z wirtualnych klas bazowych. @No__t_0 może mieć różne rozmiary w zależności od klas dziedziczonych.
+ Wskaźnik wirtualnej tabeli bazowej ( `vbtptr` ) to ukryty wskaźnik w tablicy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] metod, który obsługuje dziedziczenie z wirtualnych klas bazowych. `vbtptr`Może mieć różne rozmiary w zależności od klas dziedziczonych.
 
  Ta metoda zwraca obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , którego można użyć do określenia rozmiaru vbtptr.
 
@@ -54,5 +54,5 @@ HRESULT get_virtualBaseTableType(
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

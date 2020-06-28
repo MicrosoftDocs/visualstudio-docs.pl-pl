@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: RPC wymaga uwierzytelnienia | Dokumentacja firmy Microsoft'
+title: Błąd — RPC wymaga uwierzytelnienia | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.rpc_requires_authentication
 dev_langs:
@@ -14,22 +14,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c473916a6b689984f234736eb8b763056fc002d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e98daf3697c86eec7767135c9ad85d67cd6e958a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850456"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460588"
 ---
 # <a name="error-rpc-requires-authentication"></a>Błąd: RPC wymaga uwierzytelnienia
-Debuger programu Visual Studio nie może połączyć się z komputerem zdalnym. Na komputerze lokalnym, która uniemożliwia zdalne debugowanie jest włączona zasada rcp.
+Debuger programu Visual Studio nie może nawiązać połączenia z komputerem zdalnym. Zasady zdalnego wywoływania procedur są włączone na komputerze lokalnym, który uniemożliwia debugowanie zdalne.
 
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
 1. Uruchom `\` *windir*`\system32\regedt32.exe`
 
-2. Zlokalizuj i Usuń `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.
+2. Znajdź i Usuń `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients` .
 
-3. Aby zmiany w rejestrze zostaną wprowadzone, uruchom ponownie komputer.
+3. Uruchom ponownie komputer, aby zmiana rejestru zaczęła obowiązywać.
 
-4. Jeśli problem będzie się powtarzać, skontaktuj się z administratorem domeny o **Konfiguracja komputera > Szablony administracyjne > System > Remote Procedure Call > ograniczenia dotyczące nieuwierzytelnionych klientów RPC** zasad grupy ustawienie.
+4. Jeśli problem będzie nadal występować, skontaktuj się z administratorem domeny, **Aby uzyskać konfigurację komputera > Szablony administracyjne > System > zdalnego wywołania procedury > ograniczenia dla nieuwierzytelnionych klientów RPC** ustawienie zasad grupy.

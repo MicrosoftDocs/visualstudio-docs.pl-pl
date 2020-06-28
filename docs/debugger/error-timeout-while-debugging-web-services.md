@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: przekroczono limit czasu podczas debugowania usług sieci Web | Microsoft Docs'
+title: Błąd — Przekroczono limit czasu podczas debugowania usług sieci Web | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aba4fef3e1c787651eb961f80b3507090f250a2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: efb77689c33d263723f146f9b2484748505406b6
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736889"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460276"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Błąd: przekroczono limit czasu podczas debugowania usług sieci Web
 Gdy Pracujesz w usłudze sieci Web XML przy użyciu kodu wywołującego, wywołanie może czasami przekroczyć limit czasu, z wynikiem nie można kontynuować debugowania. Może zostać wyświetlony komunikat o błędzie, taki jak ten.
@@ -39,5 +39,5 @@ Service1 obj = new Service1();
 obj.TimeOut = -1; // infinite time out.
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: nie można zainicjować komunikacji DCOM | Microsoft Docs'
+title: Błąd — nie można zainicjować komunikacji DCOM | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unmarshal_server_failed
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a5e45df06d4b9490160c94902457ea630548966
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ccd8b30fcba11d89e11227861c4582ff67f3a7e7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736725"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460029"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Błąd: nie można zainicjować komunikacji DCOM
 Wystąpił błąd DCOM, gdy komputer lokalny próbował się skomunikować z maszyną zdalną. Jest to spowodowane przez zaporę na serwerze zdalnym lub uszkodzenie uwierzytelniania systemu Windows na maszynie zdalnej.
@@ -30,5 +30,5 @@ Wystąpił błąd DCOM, gdy komputer lokalny próbował się skomunikować z mas
 
 - Aby przywrócić uwierzytelnianie systemu Windows, spróbuj ponownie uruchomić obie maszyny. Należy przejrzeć dzienniki zdarzeń na maszynach lokalnych i zdalnych pod kątem błędów protokołu Kerberos i skontaktować się z administratorami domeny w poszukiwaniu znanych problemów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

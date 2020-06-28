@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_virtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee1c5e989c4e4d9937fad4ba23c261437b4009b4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dbcf11f95260d8e58916de9fcc40d9a44a14a27d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738907"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461484"
 ---
 # <a name="idiasymbolget_virtualaddress"></a>IDiaSymbol::get_virtualAddress
-Pobiera adres wirtualny (VA) lokalizacji. Użyj, gdy dla [wyliczenia lokalizacji](../../debugger/debug-interface-access/locationtype.md) określono wartość `LocIsStatic`.
+Pobiera adres wirtualny (VA) lokalizacji. Użyj, gdy dla [wyliczenia lokalizacji](../../debugger/debug-interface-access/locationtype.md) określono wartość `LocIsStatic` .
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,11 +36,11 @@ HRESULT get_virtualAddress ( 
 określoną Zwraca adres wirtualny lokalizacji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)

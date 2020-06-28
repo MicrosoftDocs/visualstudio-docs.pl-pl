@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: maszyna zdalna nie jest wyświetlana w oknie dialogowym połączeń zdalnych | Microsoft Docs'
+title: Błąd — maszyna zdalna nie jest wyświetlana w oknie dialogowym połączenia zdalne | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 dev_langs:
 - CSharp
 - VB
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd46d2164ccb3cd26831160235b992d699229e2c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: ac49379f513f753592191632cd3edf1af89a9dc4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916183"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460601"
 ---
-# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Błąd: maszyna zdalna nie jest wyświetlana w oknie dialogowym połączeń zdalnych
+# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Błąd: Komputer zdalny nie jest wyświetlany w oknie dialogowym połączeń zdalnych
 Jeśli maszyna zdalna nie jest wyświetlana w oknie dialogowym połączenia zdalne, należy sprawdzić następujące typowe przyczyny.
 
  Jeśli używasz zarządzanego trybu zgodności, zapoznaj się z dokumentacją programu Visual Studio 2010: [Rozwiązywanie problemów z debugowaniem zdalnym — Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)).
@@ -34,5 +34,5 @@ Jeśli maszyna zdalna nie jest wyświetlana w oknie dialogowym połączenia zdal
 
 - Oprogramowanie antywirusowe blokuje komunikację między programem Visual Studio i komputerem zdalnym. Aby rozwiązać ten problem, Skonfiguruj oprogramowanie antywirusowe, aby umożliwić komunikację programu Visual Studio i zdalnego debugera (msvsmon).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

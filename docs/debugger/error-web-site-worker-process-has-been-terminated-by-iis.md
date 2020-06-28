@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: proces roboczy witryny sieci Web został zakończony przez usługi IIS | Microsoft Docs'
+title: Błąd — proces roboczy witryny sieci Web został zakończony przez usługi IIS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736355"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460003"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Błąd: proces roboczy witryny sieci Web został zakończony przez usługę IIS
 Debuger zatrzymał wykonywanie kodu w witrynie sieci Web. Spowodowało to założenie, że proces roboczy przestanie odpowiadać na Internet Information Services (IIS). W związku z tym usługi IIS zakończyły proces roboczy.
@@ -34,13 +34,13 @@ Debuger zatrzymał wykonywanie kodu w witrynie sieci Web. Spowodowało to zało�
 
    2. W **Panelu sterowania**wybierz opcję **Przełącz do widoku klasycznego**, w razie potrzeby, a następnie kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
 
-2. W oknie **Narzędzia administracyjne** kliknij dwukrotnie pozycję **Menedżer Internet Information Services (IIS)** .
+2. W oknie **Narzędzia administracyjne** kliknij dwukrotnie pozycję **Menedżer Internet Information Services (IIS)**.
 
     Zostanie otwarty Menedżer usług IIS.
 
-3. W okienku **połączenia** rozwiń węzeł nazwa \<computer >, w razie potrzeby.
+3. W okienku **połączenia** rozwiń \<computer name> węzeł w razie potrzeby.
 
-4. W węźle \<computer nazwa > kliknij pozycję **Pule aplikacji**.
+4. W \<computer name> węźle kliknij węzeł **Pule aplikacji**.
 
 5. Na liście **Pule aplikacji** kliknij prawym przyciskiem myszy nazwę puli, w której aplikacja jest uruchamiana, a następnie kliknij pozycję **Ustawienia zaawansowane**.
 
@@ -56,5 +56,5 @@ Debuger zatrzymał wykonywanie kodu w witrynie sieci Web. Spowodowało to zało�
 
 8. Zamknij Menedżera usług IIS i okno **Narzędzia administracyjne** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

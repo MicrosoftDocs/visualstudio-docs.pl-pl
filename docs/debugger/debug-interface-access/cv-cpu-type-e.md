@@ -1,7 +1,7 @@
 ---
 title: CV_CPU_TYPE_e | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 82a482b570d3ed22d1b9dfe2ca3c8248a0185911
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745325"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462115"
 ---
 # <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 Określa procesor docelowy.
 
 > [!NOTE]
-> Procesor jest identyfikowany w elemencie Enumeration po prefiksie `CV_CFL_*`.
+> Procesor jest identyfikowany w elemencie Enumeration po `CV_CFL_*` prefiksie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -101,6 +101,6 @@ Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaSymbol:: ge
 ## <a name="requirements"></a>Wymagania
 Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

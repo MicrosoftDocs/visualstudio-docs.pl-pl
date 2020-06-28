@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: uwierzytelnianie Kerberos nie powiodło się | Microsoft Docs'
+title: Błąd — uwierzytelnianie Kerberos nie powiodło się | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.callback_kerberos_auth_failed
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe13fd3d0dc7e29fc12d369ec0865bcbc97b1a4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 07afa4aca82a83f5b7ba64ad0e9958710582a6a0
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737668"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460680"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Błąd: Uwierzytelnianie Kerberos nie powiodło się
 Podczas próby wykonania zdalnego debugowania może zostać wyświetlony następujący komunikat o błędzie:
@@ -34,7 +34,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - Komputer docelowy lub komputer hosta debugera znajduje się w grupie roboczej, a nie w domenie
 
-   \- lub-
+   \-oraz
 
 - Protokół Kerberos został wyłączony na kontrolerze domeny.
 
@@ -52,12 +52,12 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
     ping <debugger_host_computer_name>
     ```
 
-3. Pierwszy wiersz odpowiedzi `ping` przedstawia pełną nazwę komputera i adres IP zwrócone przez system DNS dla określonego komputera.
+3. Pierwszy wiersz `ping` odpowiedzi przedstawia pełną nazwę komputera i adres IP zwrócone przez system DNS dla określonego komputera.
 
-4. Na komputerze hosta debugera Otwórz okno **wiersza polecenia** i uruchom `ipconfig`.
+4. Na komputerze hosta debugera Otwórz okno **wiersza polecenia** i uruchom polecenie `ipconfig` .
 
 5. Porównaj wartości adresów IP.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

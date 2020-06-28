@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_sealed | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece720a42b606640d02729951c11ae03d092aedf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0b1f826c4dfcc8f000b37144b28dfcb8cf503a87
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739362"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462054"
 ---
 # <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
 Pobiera flagę, która określa, czy Klasa lub metoda są zapieczętowane.
@@ -33,13 +33,13 @@ HRESULT get_sealed( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Zwraca `TRUE`, jeśli Klasa lub metoda są zapieczętowane; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy Klasa lub metoda są zapieczętowane; w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  Klasa zapieczętowana nie może być używana jako klasa bazowa. Metoda zapieczętowana nie może być overidden.
@@ -49,7 +49,7 @@ określoną Zwraca `TRUE`, jeśli Klasa lub metoda są zapieczętowane; w przeci
 
  Biblioteka: diaguids. lib
 
- DLL: msdia100. dll
+ DLL: msdia100.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

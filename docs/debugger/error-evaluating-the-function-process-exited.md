@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: Proces docelowy zakończył działanie z kodem &#39;kodu&#39; podczas obliczania funkcji &#39;funkcja&#39; | Dokumentacja firmy Microsoft'
+title: Błąd — proces docelowy zakończył działanie z kodem &#39;kod&#39; podczas obliczania funkcji &#39;funkcja&#39; | Microsoft Docs
 ms.date: 4/06/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
@@ -9,39 +9,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d82b6011a0dfa7f2c388e7d5f39a9ebabcd663
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850819"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460781"
 ---
-# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Błąd: Proces docelowy zakończył działanie z kodem &#39;kodu&#39; podczas obliczania funkcji &#39;— funkcja&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Błąd: proces docelowy zakończył działanie z kodem &#39;kod&#39; podczas oceniania funkcji &#39;funkcji&#39;
 
-Komunikat pełny tekst: Proces docelowy zakończył działanie z kodem "code" podczas obliczania funkcji "function".
+Pełny tekst komunikatu: proces docelowy zakończył działanie z kodem "Code" podczas obliczania funkcji "Function".
 
-Aby ułatwić sprawdzić stan obiektów platformy .NET, debuger automatycznie wymusi debugowanego procesu, aby uruchomić kod dodatkowy (zwykle metody pobierającej właściwości i `ToString` funkcji). W większości przypadków te funkcje zakończona pomyślnie, lub generują wyjątki, które może zostać przechwycony przez debuger. Istnieją jednak pewne okoliczności, w których nie można przechwycić wyjątków ponieważ między granicami jądra, wymagają, przekazywanie wiadomości użytkownika lub są nie do odzyskania. Jako wynik, metoda pobierająca właściwości lub metody ToString, który jest wykonywany kod dowolna jawnie kończy proces (na przykład wywołuje `ExitProcess()`) lub zgłasza wyjątek nieobsługiwany wyjątek, który nie może zostać przechwycony (na przykład `StackOverflowException`) spowoduje przerwanie działania debugowanego procesu i zakończenie sesji debugowania. Jeśli napotkasz ten komunikat o błędzie, ten błąd wystąpił.
+Aby ułatwić sprawdzenie stanu obiektów .NET, debuger automatycznie wymusi w debugowanym procesie uruchomić dodatkowy kod (zazwyczaj metody pobierające właściwości i `ToString` funkcje). W większości scenariuszy te funkcje zostały pomyślnie wykonane lub wyrzucają wyjątki, które mogą zostać przechwycone przez debuger. Istnieją jednak pewne sytuacje, w których wyjątki nie mogą być przechwytywane, ponieważ przekraczają granice jądra, wymagają pompowania komunikatów użytkownika lub nie można ich odzyskać. W związku z tym metoda pobierająca lub ToString właściwości, która wykonuje kod, który jawnie kończy proces (na przykład wywołania `ExitProcess()` ) lub zgłasza nieobsłużony wyjątek, którego nie można przechwycić (na przykład), `StackOverflowException` spowoduje zakończenie debugowanego procesu i zakończenie sesji debugowania. Ten komunikat o błędzie wystąpił.
 
-Jedną typową przyczyną tego problemu jest, że gdy debuger ocenia właściwość, która wywołuje sam siebie, może to spowodować wyjątek przepełnienia stosu. Nie można odzyskać wyjątek przepełnienia stosu i zakończy proces docelowy.
+Jednym z typowych przyczyn tego problemu jest to, że gdy debuger oblicza właściwość, która wywołuje sam siebie, może to spowodować wyjątek przepełnienia stosu. Nie można odzyskać wyjątku przepełnienia stosu, a proces docelowy zostanie przerwany.
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
 Istnieją dwa możliwe rozwiązania tego problemu.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Rozwiązanie #1: Debuger uniemożliwić wywołanie metody pobierającej właściwości lub metody ToString 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 rozwiązania: Uniemożliwianie debugerowi wywoływania właściwości pobierającej lub metody ToString 
 
-Komunikat o błędzie informuje o nazwę funkcji, który debuger próbował wywołać. Nazwą funkcji, możesz spróbować ponownie przeprowadzić ocenę tej funkcji z **bezpośrednie** okna, aby debugować oceny. Debugowanie jest możliwe, podczas obliczania z **bezpośrednie** okna, ponieważ w odróżnieniu od niejawne obliczanie z **Autos/zmienne lokalne/Obejrzyj** systemu windows, debuger przerywa na nieobsłużonych wyjątkach.
+Komunikat o błędzie informuje o nazwie funkcji, którą debuger próbował wywołać. Przy użyciu nazwy funkcji można spróbować ponownie ocenić tę funkcję z okna **bezpośredniego** , aby debugować ocenę. Debugowanie jest możliwe podczas oceniania z okna **bezpośredniego** , ponieważ, w przeciwieństwie do niejawnych ocen z okna **Autokorekty/lokalne/czujki** , debuger przerwie w nieobsłużonych wyjątkach.
 
-Jeśli zmodyfikujesz tę funkcję, można zapobiec debuger podczas wywoływania metody pobierającej lub `ToString` metody. Wypróbuj jedną z następujących czynności:
+Jeśli można zmodyfikować tę funkcję, można uniemożliwić debugerowi wywoływanie metody pobierającej lub `ToString` metodzie właściwości. Wypróbuj jedną z następujących czynności:
 
-* Zmienić metodę na inny rodzaj kodu oprócz pobierającą właściwość lub metoda ToString i problem znikną.
-    —lub—
-* (Aby uzyskać `ToString`) Zdefiniuj `DebuggerDisplay` atrybut na typ, może mieć debugera oceny coś innego niż `ToString`.
-    —lub—
-* (Dla metody pobierającej właściwości) Umieść `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atrybutu dla właściwości. Może to być przydatne, jeśli masz metodę, która powinna być właściwością API ze względu na zgodność, ale należy go tak naprawdę metody.
+* Zmień metodę na inny typ kodu oprócz metody pobierającej lub ToString właściwości, a problem zostanie wysunięty.
+    -lub-
+* (Do `ToString` ) Zdefiniuj `DebuggerDisplay` atrybut w typie, a debuger może oszacować coś innego niż `ToString` .
+    -lub-
+* (Dla metody pobierającej właściwości) Umieść `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atrybut we właściwości. Może to być przydatne, jeśli masz metodę, która musi pozostać właściwością ze względu na zgodność interfejsu API, ale w rzeczywistości powinna być to metoda.
 
-Nie można zmodyfikować tej metody, może być możliwe przerwanie procesu docelowego w instrukcji alternatywny, a następnie spróbuj ponownie oceny.
+Jeśli nie można zmodyfikować tej metody, można przerwać proces docelowy z alternatywną instrukcją i ponowić próbę dokonania oceny.
 
-### <a name="solution-2-disable-all-implicit-evaluation"></a>Rozwiązanie #2: Wyłącz wszystkie bezwarunkowa ocena
+### <a name="solution-2-disable-all-implicit-evaluation"></a>#2 rozwiązania: Wyłącz wszystkie niejawne oceny
 
-Jeśli poprzednie rozwiązania nie rozwiązują problemu, przejdź do strony **narzędzia** > **opcje**i usuń zaznaczenie opcji **debugowanie**  >   **Ogólne** > **Włącz obliczanie właściwości i inne niejawne wywołania funkcji**. To spowoduje wyłączenie większość Obliczanie funkcji niejawnie i powinno rozwiązać problem.
+Jeśli poprzednie rozwiązania nie rozwiążą problemu, przejdź do **Tools**  >  **opcji**narzędzia, a następnie usuń zaznaczenie pola **Debuguj**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**. Spowoduje to wyłączenie najbardziej niejawnych ocen funkcji i powinno rozwiązać problem.

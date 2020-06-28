@@ -1,7 +1,7 @@
 ---
 title: Lokalizacje symboli | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f972d0d072aa36cab608c85305588f6bbd5d47d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 125245f38be5588f2661b45162ffde24e5930ad7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738540"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461078"
 ---
 # <a name="symbol-locations"></a>Lokalizacje symboli
 Większość symboli ma zdefiniowaną lokalizację w pliku obrazu. Lokalizacja symbolu jest określana z wartością z wyliczenia elementu [LocationType](../../debugger/debug-interface-access/locationtype.md) . Symbol może obsługiwać dodatkowe właściwości w zależności od jego lokalizacji.
@@ -39,7 +39,7 @@ Większość symboli ma zdefiniowaną lokalizację w pliku obrazu. Lokalizacja s
 |`LocInMetaData`|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|
 |`LocIsConstant`|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)
 - [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)
 - [IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)
@@ -53,4 +53,4 @@ Większość symboli ma zdefiniowaną lokalizację w pliku obrazu. Lokalizacja s
 - [IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)
 - [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)
 - [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)
-- [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Symbole i znaczniki symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: debugowanie w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z Microsoft .NET Framework 2,0 lub nowszej | Microsoft Docs'
+title: Błąd — debugowanie w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z Microsoft .NET Framework 2,0 lub nowszego | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c85dac85146c59d8aeba9f9cf85351b5bc17a81c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: de19f6b735f990b0e419c040291e1bf538f680f5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737611"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460627"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Błąd: Debugowanie w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 2.0 lub nowszej wersji
 Aby debugować mieszany kod natywny i zarządzany, musisz mieć .NET Framework w wersji 2,0, 3,0. 3,5 lub 4,0. Debugowanie w trybie mieszanym ze starszymi wersjami .NET Framework nie jest obsługiwane.
@@ -28,5 +28,5 @@ Aby debugować mieszany kod natywny i zarządzany, musisz mieć .NET Framework w
 
 - Uaktualnij .NET Framework do wersji 2,0, 3,0, 3,5 lub 4,0.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

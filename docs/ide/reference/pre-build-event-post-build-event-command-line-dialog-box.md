@@ -29,33 +29,33 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 594d885228de68ecf34e0644cbbe6c6899397fad
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567921"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419201"
 ---
-# <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Okno dialogowe wiersza polecenia zdarzenia przed kompilacją/po kompilacji
+# <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Zdarzenie przed kompilacją/wiersz polecenia zdarzenia po kompilacji
 
-Zdarzenia przed- lub po kompilacji dla [strony Zdarzenia kompilacji, projektanta projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) bezpośrednio w polu edycji lub można wybrać makra przed i po kompilacji z listy dostępnych makr.
+Możesz wpisać zdarzenia przed lub po kompilacji dla [strony zdarzenia kompilacji, Projektant projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) bezpośrednio w polu edycji lub wybrać makra przed i po kompilacji z listy dostępnych makr.
 
 > [!NOTE]
-> Zdarzenia przed kompilacją nie są uruchamiane, jeśli projekt jest aktualny i nie zostanie wyzwolona żadna kompilacja.
+> Zdarzenia przed kompilacją nie są uruchamiane, jeśli projekt jest aktualny i żadna kompilacja nie zostanie wyzwolona.
 
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika
 
 **Pole edycji wiersza polecenia**
 
-Zawiera zdarzenia do uruchomienia w przedskomisję lub po kompilacji.
+Zawiera zdarzenia do uruchomienia na potrzeby wstępnej kompilacji lub po kompilacji.
 
 > [!NOTE]
-> Dodaj `call` instrukcję przed wszystkimi poleceniami po kompilacji, które uruchamiają pliki .bat. Na przykład: `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Dodaj `call` instrukcję przed wszystkimi poleceniami po kompilacji, które uruchamiają pliki. bat. Na przykład: `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Makra**
 
@@ -63,37 +63,37 @@ Rozwija pole edycji, aby wyświetlić listę makr do wstawienia w polu edycji wi
 
 **Tabela makr**
 
-Wyświetla listę dostępnych makr i ich wartości. Opis każdego z nich można znaleźć w makom poniżej. Można wybrać tylko jedno makro naraz, aby wstawić je do pola edycji wiersza polecenia.
+Wyświetla listę dostępnych makr i jego wartość. Aby uzyskać opis każdego z tych elementów, zobacz poniższe makra. Można wybrać tylko jedno makro naraz, aby wstawić je do pola edycji wiersza polecenia.
 
-**Wstawić**
+**Insert**
 
-Wstawia do pola edycji wiersza polecenia makro zaznaczone w tabeli makr.
+Wstawia do pola edycji wiersza polecenia makro wybrane w tabeli Macro.
 
 ### <a name="macros"></a>Makra
 
-Za pomocą dowolnego z tych makr można określić lokalizacje plików lub uzyskać rzeczywistą nazwę pliku wejściowego w przypadku wielu wyborów. W tych makrach nie rozróżnia się wielkość liter.
+Możesz użyć dowolnego z tych makr, aby określić lokalizacje plików lub uzyskać rzeczywistą nazwę pliku wejściowego w przypadku wielu zaznaczeń. W tych makrach nie jest rozróżniana wielkość liter.
 
 |Makro|Opis|
 |-----------|-----------------|
-|`$(ConfigurationName)`|Nazwa bieżącej konfiguracji projektu, na przykład "Debug".|
-|`$(OutDir)`|Ścieżka do katalogu plików wyjściowych względem katalogu projektu. Spowoduje to rozpoznanie wartości właściwości Katalog danych wyjściowych. Zawiera spływ ukośnika\\wstecznego ' .|
-|`$(DevEnvDir)`|Katalog instalacyjny programu Visual Studio (zdefiniowany za pomocą dysku i ścieżki); obejmuje końcowe ukośnik wsteczny '\\" .|
-|`$(PlatformName)`|Nazwa aktualnie docelowej platformy. Na przykład "AnyCPU".|
-|`$(ProjectDir)`|Katalog projektu (zdefiniowany za pomocą dysku i ścieżki); obejmuje końcowe ukośnik wsteczny '\\" .|
-|`$(ProjectPath)`|Bezwzględna nazwa ścieżki projektu (zdefiniowana za pomocą dysku, ścieżki, nazwy podstawowej i rozszerzenia pliku).|
+|`$(ConfigurationName)`|Nazwa bieżącej konfiguracji projektu, na przykład "Debugowanie".|
+|`$(OutDir)`|Ścieżka do katalogu wyjściowego pliku, względem katalogu projektu. Jest to rozwiązanie do wartości właściwości katalog wyjściowy. Zawiera końcowy ukośnik odwrotny " \\ ".|
+|`$(DevEnvDir)`|Katalog instalacji programu Visual Studio (zdefiniowany przy użyciu dysku i ścieżki); zawiera końcowy ukośnik odwrotny " \\ ".|
+|`$(PlatformName)`|Nazwa aktualnie dostosowanej platformy. Na przykład "AnyCPU".|
+|`$(ProjectDir)`|Katalog projektu (zdefiniowany przy użyciu dysku i ścieżki); zawiera końcowy ukośnik odwrotny " \\ ".|
+|`$(ProjectPath)`|Nazwa ścieżki bezwzględnej projektu (zdefiniowana przy użyciu dysku, ścieżki, nazwy podstawowej i rozszerzenia pliku).|
 |`$(ProjectName)`|Podstawowa nazwa projektu.|
-|`$(ProjectFileName)`|Nazwa pliku projektu (zdefiniowana z nazwą bazową i rozszerzeniem pliku).|
+|`$(ProjectFileName)`|Nazwa pliku projektu (zdefiniowana z nazwą podstawową i rozszerzeniem pliku).|
 |`$(ProjectExt)`|Rozszerzenie pliku projektu. Zawiera "." przed rozszerzeniem pliku.|
-|`$(SolutionDir)`|Katalog rozwiązania (zdefiniowany za pomocą dysku i ścieżki); obejmuje końcowe ukośnik wsteczny '\\" .|
-|`$(SolutionPath)`|Bezwzględna nazwa ścieżki rozwiązania (zdefiniowana za pomocą dysku, ścieżki, nazwy podstawowej i rozszerzenia pliku).|
+|`$(SolutionDir)`|Katalog rozwiązania (zdefiniowany przy użyciu dysku i ścieżki); zawiera końcowy ukośnik odwrotny " \\ ".|
+|`$(SolutionPath)`|Nazwa ścieżki bezwzględnej rozwiązania (zdefiniowanego przy użyciu dysku, ścieżki, nazwy podstawowej i rozszerzenia pliku).|
 |`$(SolutionName)`|Podstawowa nazwa rozwiązania.|
-|`$(SolutionFileName)`|Nazwa pliku rozwiązania (zdefiniowana za pomocą nazwy podstawowej i rozszerzenia pliku).|
+|`$(SolutionFileName)`|Nazwa pliku rozwiązania (zdefiniowana z nazwą podstawową i rozszerzeniem pliku).|
 |`$(SolutionExt)`|Rozszerzenie pliku rozwiązania. Zawiera "." przed rozszerzeniem pliku.|
-|`$(TargetDir)`|Katalog podstawowego pliku wyjściowego dla kompilacji (zdefiniowany za pomocą dysku i ścieżki). Zawiera spływ ukośnika\\wstecznego ' .|
-|`$(TargetPath)`|Bezwzględna nazwa ścieżki podstawowego pliku wyjściowego dla kompilacji (zdefiniowana za pomocą dysku, ścieżki, nazwy podstawowej i rozszerzenia pliku).|
+|`$(TargetDir)`|Katalog podstawowego pliku wyjściowego kompilacji (zdefiniowany przy użyciu dysku i ścieżki). Zawiera końcowy ukośnik odwrotny " \\ ".|
+|`$(TargetPath)`|Nazwa ścieżki bezwzględnej podstawowego pliku wyjściowego dla kompilacji (zdefiniowana z dyskiem, ścieżką, nazwą bazową i rozszerzeniem pliku).|
 |`$(TargetName)`|Podstawowa nazwa podstawowego pliku wyjściowego dla kompilacji.|
-|`$(TargetFileName)`|Nazwa pliku wyjściowego podstawowego kompilacji (zdefiniowana jako nazwa podstawowa i rozszerzenie pliku).|
-|`$(TargetExt)`|Rozszerzenie pliku wyjściowego podstawowego dla kompilacji. Zawiera "." przed rozszerzeniem pliku.|
+|`$(TargetFileName)`|Nazwa pliku podstawowego pliku wyjściowego dla kompilacji (zdefiniowana jako nazwa podstawowa i rozszerzenie pliku).|
+|`$(TargetExt)`|Rozszerzenie pliku podstawowego pliku wyjściowego dla kompilacji. Zawiera "." przed rozszerzeniem pliku.|
 
 ## <a name="see-also"></a>Zobacz też
 

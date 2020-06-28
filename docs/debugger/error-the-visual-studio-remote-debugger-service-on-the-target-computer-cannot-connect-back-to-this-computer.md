@@ -1,9 +1,9 @@
 ---
-title: 'Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem'
+title: Błąd — usługa zdalny debuger programu Visual Studio na komputerze docelowym nie może nawiązać połączenia z powrotem z tym komputerem
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 975d2d1c1f66fe06f8fc3a9568f790fbe4c21e36
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737406"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460393"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
 Ten błąd oznacza, że usługa zdalnego debugera jest uruchomiona w ramach konta użytkownika, którego nie można uwierzytelnić, gdy próbuje nawiązać połączenie z komputerem, na którym odbywa się debugowanie. Ten błąd może wystąpić, gdy debugowanie zdalne korzysta ze starszego aparatu debugowania, a zdalny debuger działa jako usługa.
@@ -32,15 +32,15 @@ Ten błąd oznacza, że usługa zdalnego debugera jest uruchomiona w ramach kont
 |-|-|-|-|
 ||Konto LocalSystem|Konto domeny|Konta lokalne, które mają taką samą nazwę użytkownika i hasło na obu komputerach|
 |Oba komputery w tej samej domenie|Tak|Tak|Tak|
-|Oba komputery w domenach z zaufaniem dwukierunkowym|Nie|Nie|Tak|
-|Jeden lub oba komputery w grupie roboczej|Nie|Nie|Tak|
-|Komputery w różnych domenach|Nie|Nie|Tak|
+|Oba komputery w domenach z zaufaniem dwukierunkowym|Nie|Nie|Yes|
+|Jeden lub oba komputery w grupie roboczej|Nie|Nie|Yes|
+|Komputery w różnych domenach|Nie|Nie|Yes|
 
  Ponadto:
 
 - Konto, na którym uruchomiono usługę zdalny debuger programu Visual Studio, powinno być kontem administratora na komputerze zdalnym, aby można było debugować każdy proces.
 
-- Konto musi mieć również przyznane uprawnienie `Log on as a service` na komputerze zdalnym, który korzysta z narzędzia administracyjnego **zasad zabezpieczeń lokalnych** .
+- Konto musi mieć również przyznane `Log on as a service` uprawnienie na komputerze zdalnym korzystającym z narzędzia administracyjnego **zasad zabezpieczeń lokalnych** .
 
 - Jeśli używasz konta lokalnego dostępu do komputera, musisz uruchomić usługę zdalny debuger programu Visual Studio w ramach konta lokalnego.
 
@@ -74,6 +74,6 @@ Ten błąd oznacza, że usługa zdalnego debugera jest uruchomiona w ramach kont
 
 - Uruchom Monitor zdalnego debugowania jako aplikację zamiast usługi.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

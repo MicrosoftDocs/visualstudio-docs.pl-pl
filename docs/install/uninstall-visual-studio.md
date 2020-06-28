@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Dowiedz się, jak odinstalować program Visual Studio, krok po kroku.
 ms.date: 05/06/2020
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6b5377c9bdb83c5c67816b3567656c49cf707071
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9d1412d6e015ec7d05e700370c7a379ada9a57b0
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184422"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419097"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalowywanie programu Visual Studio
 
@@ -111,7 +111,7 @@ Jeśli wystąpił błąd krytyczny i nie można odinstalować programu Visual St
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Modyfikowanie programu Visual Studio](modify-visual-studio.md)
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)

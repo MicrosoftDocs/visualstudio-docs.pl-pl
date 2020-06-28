@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: Można SQL&#39;możemy znaleźć SSDEBUGPS | Dokumentacja firmy Microsoft'
+title: Błąd — SQL może&#39;t Find SSDEBUGPS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.sqlde_cant_find_ssdebugps
 dev_langs:
@@ -15,30 +15,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 854105ea5d94f6d3b09ce73a23ec45ccab9e797c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edebb932e11554b24296314817eea514743525b1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850484"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460510"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>Błąd: Można SQL&#39;możemy znaleźć SSDEBUGPS
+# <a name="error-sql-can39t-find-ssdebugps"></a>Błąd: SQL może&#39;t Find SSDEBUGPS
 
-Biblioteka SSDEBUGPS.dll to składnik Host debugowania programu SQL Server.
+SSDEBUGPS.dll to składnik hosta debugowania SQL Server.
 
-Ten błąd występuje, gdy chcesz rozpocząć debugowanie i wskazuje, że określony plik nie jest obecny na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] maszyny. Możliwe przyczyny to nigdy nie uruchomiono albo ustawienia zdalne debugowanie lub że jakiś sposób ten plik został usunięty.
+Ten błąd występuje podczas próby uruchomienia debugowania i wskazuje, że określony plik nie jest obecny na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] maszynie. Możliwe przyczyny to, że Instalator zdalnego debugowania nigdy nie został uruchomiony lub właśnie ten plik został usunięty.
 
-Istnieją dwa sposoby, aby rozwiązać ten problem: ponownie instalację zdalnego debugowania i przez skopiowanie pliku do [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] maszyny.
+Istnieją dwa sposoby rozwiązania tego błędu: przez odinstalowanie Instalatora zdalnego debugowania i skopiowanie pliku na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] komputer.
 
-Ponowne uruchamianie konfiguracji zdalnego debugowania, postępuj zgodnie z instrukcjami w artykule [zdalne debugowanie](../debugger/remote-debugging.md).
+Aby ponownie uruchomić Instalatora zdalnego debugowania, postępuj zgodnie z instrukcjami na stronie [debugowanie zdalne](../debugger/remote-debugging.md).
 
-Jeśli można znaleźć kopię Biblioteka ssdebugps.dll, możesz skopiować go na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] maszyny. Jeśli jest obecny, plik zostanie w \Program Files\ katalogu wspólnego Files\Microsoft Shared\SQL debugowania. Może okazać się na innym [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] komputerze lub na komputerze, na którym Visual Studio 2005.
+Jeśli można znaleźć kopię ssdebugps.dll, można skopiować ją na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] maszynę. Jeśli jest obecny, plik będzie w katalogu \Program Files \ Common Files\Microsoft Shared\SQL Debug. Można go znaleźć na innym [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] komputerze lub na komputerze, na którym jest zainstalowany program Visual Studio 2005.
 
-Aby skopiować Biblioteka SSDEBUGPS.dll na komputerze programu SQL Server 2005:
+Aby skopiować SSDEBUGPS.dll na maszynę SQL Server 2005:
 
-1. Skopiuj plik do katalogu z taką samą nazwę i ścieżkę na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] maszyny.
+1. Skopiuj plik do katalogu o tej samej nazwie i ścieżce na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] komputerze.
 
-2. Zarejestruj go, otwierając **polecenia**, a następnie uruchamiając następujące polecenie:
+2. Zarejestruj go, otwierając **wiersz polecenia**i uruchamiając następujące polecenie:
 
     ```cmd
     regsvr32 ssdebugps.dll

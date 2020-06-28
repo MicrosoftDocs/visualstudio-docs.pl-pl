@@ -1,7 +1,7 @@
 ---
 title: CV_HREG_e | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aac055930e9d1b016bbdc4949cbbdbee798cfaa2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee15d5b4d6a0959397d8d62753455c7a26f01f78
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745316"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462108"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 Określa rejestr docelowy.
 
 > [!NOTE]
-> Ponieważ Wyliczenie `CV_HREG_e` jest zbyt duże, aby można je było w całości duplikować w tym miejscu, jako odwołanie zostanie udostępniona skrócona wersja. Brakujące wpisy są oznaczone kursywą. Pełne Wyliczenie jest dostępne w pliku nagłówkowym cvconst. h.
+> Ponieważ `CV_HREG_e` Wyliczenie jest zbyt duże, aby było w całości duplikatem w tym miejscu, skrócona wersja jest udostępniana jako odwołanie. Brakujące wpisy są oznaczone kursywą. Pełne Wyliczenie jest dostępne w pliku nagłówkowym cvconst. h.
 
 ## <a name="syntax"></a>Składnia
 
@@ -413,13 +413,13 @@ CV_REG_ * rejestry używane przez procesory Intel 80x86 i ix86 oraz kod p.
 
 CV_R68_ * rejestry używane przez procesor 68K.
 
-CV_M4_ * rejestry używane przez procesor z serii MIPS 4000.
+CV_M4_ * rejestry używane przez procesor serii MIPS 4000.
 
-CV_ALPHA_ * rejestry używane przez procesor serii AXP Alpha firmy Digital Equipment.
+CV_ALPHA_ * rejestry używane przez procesor serii Alpha AXP firmy Digital Equipment.
 
 CV_PPC_ * rejestry używane przez Procesor Motorola/IBM PowerPC.
 
-CV_SH3_ * i CV_SH_ \* rejestrów używanych przez procesor firmy Hitachi SH3 i Hitachi SH Series.
+CV_SH3_ * i CV_SH_ \* rejestrów używanych przez procesor SH3 firmy Hitachi i Hitachi SH.
 
 CV_ARM_ * rejestry używane przez procesory Advanced RISC Machine (ARM).
 
@@ -446,10 +446,10 @@ Wartości w tym wyliczeniu są przesyłane do następujących metod:
 
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
 
-## <a name="requirements"></a>Wymagania
+## <a name="requirements"></a>Wymagania:
 Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

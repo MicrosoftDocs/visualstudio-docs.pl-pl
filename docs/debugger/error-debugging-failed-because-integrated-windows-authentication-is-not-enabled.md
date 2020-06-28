@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone | Microsoft Docs'
+title: Błąd — debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911551"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460841"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
 Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który zażądał debugowania. Taka sytuacja może wystąpić podczas próby przekroczenia kroku do aplikacji sieci Web lub usługi sieci Web XML. Jedną z przyczyn tego błędu jest to, że zintegrowane uwierzytelnianie systemu Windows nie jest włączone. Aby je włączyć, wykonaj kroki opisane w sekcji "aby włączyć zintegrowane uwierzytelnianie systemu Windows".
@@ -73,7 +73,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
 
          Zostanie wyświetlone okno dialogowe Access Control użytkownika i zostanie wyświetlony komunikat z prośbą o zgodę na kontynuowanie.
 
-    3. Kliknij przycisk **Kontynuuj**.
+    3. Kliknij pozycję **Kontynuuj**.
 
          Zostanie wyświetlone okno dialogowe funkcje systemu Windows.
 
@@ -97,7 +97,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
 
 4. Kliknij pozycję **Widok klasyczny**, a następnie kliknij dwukrotnie ikonę **Narzędzia administracyjne**.
 
-5. W kolumnie **Nazwa** kliknij dwukrotnie pozycję **Menedżer Internet Information Services (IIS)** .
+5. W kolumnie **Nazwa** kliknij dwukrotnie pozycję **Menedżer Internet Information Services (IIS)**.
 
 6. W kolumnie **połączenia** rozwiń węzeł serwera.
 
@@ -113,7 +113,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
 
 10. Zamknij okno **menedżera Internet Information Services (IIS)** .
 
-## <a name="see-also"></a>Zobacz także
-- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Uwierzytelnianie Microsoft Digest](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Uruchamianie aplikacji sieci Web w systemie Windows Vista przy użyciu usług IIS 7,0 i programu Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

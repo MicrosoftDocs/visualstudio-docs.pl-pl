@@ -1,7 +1,7 @@
 ---
-title: 'Błąd: Zapora na zdalnym komputerze | Dokumentacja firmy Microsoft'
+title: Błąd — Zapora na komputerze lokalnym | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.firewall.localmachine
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a1813410a092ced335f37b9df4cf6547ca1cc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 115546a0fd3a9aad804391816ce8bac88429d0ec
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851043"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460755"
 ---
 # <a name="error-firewall-on-local-machine"></a>Błąd: Zapora na zdalnym komputerze
-Nie skonfigurowano Zapora połączenia internetowego na komputerze lokalnym komputerze, na którym używasz programu Visual Studio, aby zezwolić na zdalne debugowanie. Zarządzane lub natywne zdalne debugowanie przy użyciu transportu domyślnego, należy otworzyć port TCP 135 dla ruchu modelu DCOM. Udostępnianie plików i drukarek muszą być otwarte i devenv.exe, należy dodać do listy wyjątków. Otwieranie Niektóre porty protokołu IPSEC może być konieczne także.
+Zapora połączenia internetowego na komputerze lokalnym, na którym jest uruchomiony program Visual Studio, nie jest skonfigurowana do zezwalania na debugowanie zdalne. W przypadku zarządzanego lub natywnego debugowania zdalnego przy użyciu domyślnego transportu należy otworzyć port TCP 135 dla ruchu DCOM. Udostępnianie plików i drukarek musi być otwarte, a devenv.exe należy dodać do listy wyjątków. Może być również konieczne otworzenie niektórych portów IPSEC.
 
- Aby uzyskać więcej informacji, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
+ Aby uzyskać więcej informacji, zobacz [debugowanie zdalne](../debugger/remote-debugging.md).

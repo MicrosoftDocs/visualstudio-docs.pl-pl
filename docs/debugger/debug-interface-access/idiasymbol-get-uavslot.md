@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_uavSlot | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: a70648f2-3b25-439f-8099-239ac602515a
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 077a0a7895e93714bfe7b64b658c59f4d38ead4e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c0d4afea1525a52453d83b804cfb06a95bce932c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739047"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461659"
 ---
 # <a name="idiasymbolget_uavslot"></a>IDiaSymbol::get_uavSlot
 Pobiera gniazdo UAV.
@@ -30,10 +30,10 @@ HRESULT get_uavSlot(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Wskaźnik do `DWORD`, który zawiera gniazdo UAV.
+określoną Wskaźnik do elementu `DWORD` , który zawiera gniazdo UAV.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

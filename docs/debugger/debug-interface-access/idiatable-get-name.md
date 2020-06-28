@@ -1,7 +1,7 @@
 ---
 title: 'IDiaTable:: get_name | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3874ad63026208d096a2b7866377d09ac79cbe9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 59332c3508413dffc77a8a922fed6fe912bd3ff7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738759"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461324"
 ---
 # <a name="idiatableget_name"></a>IDiaTable::get_name
 Pobiera nazwę tabeli.
@@ -36,7 +36,7 @@ HRESULT get_name ( 
 określoną Zwraca nazwę tabeli.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

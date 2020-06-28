@@ -1,7 +1,7 @@
 ---
 title: LocationType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b2fafbb25d52df6082736431727222c788d73476
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738647"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461218"
 ---
 # <a name="locationtype"></a>LocationType
 Wskazuje rodzaj informacji o lokalizacji zawartych w symbolu.
@@ -42,29 +42,29 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Elementy
-Informacje o lokalizacji `LocIsNull` są niedostępne.
+`LocIsNull`Informacje o lokalizacji są niedostępne.
 
-Lokalizacja `LocIsStatic` jest statyczna.
+`LocIsStatic`Lokalizacja jest statyczna.
 
-Lokalizacja `LocIsTLS` znajduje się w lokalnym magazynie wątków.
+`LocIsTLS`Lokalizacja znajduje się w lokalnym magazynie wątków.
 
-Lokalizacja `LocIsRegRel` jest zależna od rejestru.
+`LocIsRegRel`Lokalizacja jest zależna od rejestru.
 
-Lokalizacja `LocIsThisRel` jest `this` względem.
+`LocIsThisRel`Lokalizacja jest `this` względna.
 
-Lokalizacja `LocIsEnregistered` jest w rejestrze.
+`LocIsEnregistered`Lokalizacja znajduje się w rejestrze.
 
-`LocIsBitField` lokalizacja znajduje się w polu bitowym.
+`LocIsBitField`Lokalizacja znajduje się w polu bitowym.
 
-Lokalizacja `LocIsSlot` to gniazdo języka pośredniego firmy Microsoft (MSIL).
+`LocIsSlot`Lokalizacja jest miejscem języka pośredniego firmy Microsoft (MSIL).
 
-Lokalizacja `LocIsIlRel` jest zależna od języka MSIL.
+`LocIsIlRel`Lokalizacja jest zależna od języka MSIL.
 
-Lokalizacja `LocInMetaData` jest w metadanych.
+`LocInMetaData`Lokalizacja znajduje się w metadanych.
 
-Lokalizacja `LocIsConstant` jest w stałej wartości.
+`LocIsConstant`Lokalizacja jest w stałej wartości.
 
-`LocTypeMax` liczbę typów lokalizacji w tym wyliczeniu.
+`LocTypeMax`Liczba typów lokalizacji w tym wyliczeniu.
 
 ## <a name="remarks"></a>Uwagi
 Właściwości dostępne dla interfejsu [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) zależą od lokalizacji symbolu w pliku obrazu. Aby uzyskać więcej informacji, zobacz [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md).
@@ -74,7 +74,7 @@ Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaSymbol:: ge
 ## <a name="requirements"></a>Wymagania
 Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)
