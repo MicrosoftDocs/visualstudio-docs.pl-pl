@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSegments | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eff457d539317d2f8c7d77dfc85eb16063650c14
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cd6a0716d0bae5a223cff3439834c87b9650e7a5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744159"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467947"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Wylicza różne segmenty zawarte w źródle danych.
@@ -29,7 +29,7 @@ IDiaEnumSegments : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaEnumSegments`.
+W poniższej tabeli przedstawiono metody `IDiaEnumSegments` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -44,10 +44,10 @@ W poniższej tabeli przedstawiono metody `IDiaEnumSegments`.
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Uzyskaj ten interfejs, wywołując metodę `QueryInterface` w obiekcie [IDiaTable](../../debugger/debug-interface-access/idiatable.md) . Zobacz przykład, aby uzyskać szczegółowe informacje.
+Uzyskaj ten interfejs, wywołując `QueryInterface` metodę dla obiektu [IDiaTable](../../debugger/debug-interface-access/idiatable.md) . Zobacz przykład, aby uzyskać szczegółowe informacje.
 
 ## <a name="example"></a>Przykład
-Ten przykład pokazuje, jak uzyskać interfejs `IDiaEnumSections` z tabeli. Aby zapoznać się z bardziej kompletnym przykładem użycia segmentów, zobacz Interfejs [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) .
+Ten przykład pokazuje, jak uzyskać `IDiaEnumSections` interfejs z tabeli. Aby zapoznać się z bardziej kompletnym przykładem użycia segmentów, zobacz Interfejs [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) .
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -69,9 +69,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

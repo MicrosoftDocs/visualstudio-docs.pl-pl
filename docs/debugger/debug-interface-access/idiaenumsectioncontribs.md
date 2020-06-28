@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSectionContribs | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e332bacdeaeca00d4e43d80807ee5f95c51c7e93
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebc0fe8391c6390d62cffbb591c4cef1ea52976f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744248"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468073"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 Wylicza różne wkłady sekcji zawarte w źródle danych.
@@ -29,7 +29,7 @@ IDiaEnumSectionContribs : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaEnumSectionContribs`.
+W poniższej tabeli przedstawiono metody `IDiaEnumSectionContribs` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -47,7 +47,7 @@ W poniższej tabeli przedstawiono metody `IDiaEnumSectionContribs`.
 Uzyskaj ten interfejs z metody [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Zobacz przykład, aby uzyskać szczegółowe informacje.
 
 ## <a name="example"></a>Przykład
-Ten przykład pokazuje, jak uzyskać (funkcja `GetEnumSectionContribs`) i użyć (funkcji `ShowSectionContribs`) interfejsu `IDiaEnumSectionContribs`. Aby zapoznać się z bardziej kompletnym przykładem użycia rozdziałów, zobacz Interfejs [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) .
+Ten przykład pokazuje, jak uzyskać ( `GetEnumSectionContribs` Funkcja) i użyć (funkcja `ShowSectionContribs` ) `IDiaEnumSectionContribs` interfejsu. Aby zapoznać się z bardziej kompletnym przykładem użycia rozdziałów, zobacz Interfejs [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) .
 
 ```C++
 
@@ -104,9 +104,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

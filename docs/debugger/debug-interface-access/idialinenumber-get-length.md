@@ -1,7 +1,7 @@
 ---
 title: 'IDiaLineNumber:: get_length | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f803fac1439d384133f0819859f2917072a8790
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3804d018569a0b2e0ee5a11a3bb5edc8363cfffc
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743195"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466890"
 ---
 # <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
 Pobiera liczbę bajtów w bloku.
@@ -36,10 +36,10 @@ HRESULT get_length ( 
 określoną Zwraca liczbę bajtów w bloku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Blok to długość kodu źródłowego w wierszu, reprezentowanego przez obiekt [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

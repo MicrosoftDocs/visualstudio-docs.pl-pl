@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumSectionContribs:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6a561308999092344fe4c20038ec2cb78a86f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c2e568b36d8c0ae561565f86f411a235d4fbf2b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744321"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468183"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
 Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.
@@ -36,7 +36,7 @@ HRESULT Clone( 
 określoną Zwraca obiekt [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) , który zawiera duplikat modułu wyliczającego. Udziały sekcji nie są duplikowane, tylko moduł wyliczający.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

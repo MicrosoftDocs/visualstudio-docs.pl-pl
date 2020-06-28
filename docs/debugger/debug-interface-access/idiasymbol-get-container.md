@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_container | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0533eb2cdea1dd3e1bea3d64e2b94ce29a09353d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 62bb2f29d737aeb09cc228038be96480922e204c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740779"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464031"
 ---
 # <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
 Ta funkcja Pobiera wskaźnik do symbolu reprezentującego element nadrzędny/kontener tego symbolu.
@@ -33,7 +33,7 @@ HRESULT get_container(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Zwraca wskaźnik do `IDiaSymbol` zawierającego informacje o kontenerze tego symbolu.
+określoną Zwraca wskaźnik do `IDiaSymbol` zawierającego je informacji o kontenerze tego symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca S_FALSE lub kod błędu.
@@ -48,5 +48,5 @@ określoną Zwraca wskaźnik do `IDiaSymbol` zawierającego informacje o kontene
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumLineNumbers | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c779b82f0e62b2ba71a1ebed8ac695ab0cf0ac7e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f84e14aa3942f512ef1f4cd19bad0372c60e9fbc
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744352"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468190"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Wylicza różne numery wierszy zawarte w źródle danych.
@@ -29,7 +29,7 @@ IDiaEnumLineNumbers : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaEnumLineNumbers`.
+W poniższej tabeli przedstawiono metody `IDiaEnumLineNumbers` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -57,7 +57,7 @@ Ten interfejs jest uzyskiwany przez wywołanie jednej z następujących metod w 
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 
 ## <a name="example"></a>Przykład
-Ten przykład pokazuje, jak uzyskać interfejs `IDiaEnumLineNumbers` z sesji. W tym przypadku przykład pokazuje, jak uzyskać Wyliczenie numerów wierszy dla funkcji (reprezentowane przez `pSymbol`). Aby zapoznać się z bardziej kompletnym przykładem używania numerów wierszy, zobacz Interfejs [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
+Ten przykład pokazuje, jak uzyskać `IDiaEnumLineNumbers` interfejs z sesji. W tym przypadku przykład pokazuje, jak uzyskać Wyliczenie numerów wierszy dla funkcji (reprezentowane przez `pSymbol` ). Aby zapoznać się z bardziej kompletnym przykładem używania numerów wierszy, zobacz Interfejs [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -90,9 +90,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

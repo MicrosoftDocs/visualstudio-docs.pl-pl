@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalker | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2366c933bf072c295b29d06ff5610bd3735c0077
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4d80e20200966c65258485782fec5865158f114a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741518"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464850"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 Zapewnia metody do przeszukiwania stosu przy użyciu informacji w pliku. pdb.
@@ -29,7 +29,7 @@ IDiaStackWalker: IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaStackWalker`.
+W poniższej tabeli przedstawiono metody `IDiaStackWalker` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -40,10 +40,10 @@ W poniższej tabeli przedstawiono metody `IDiaStackWalker`.
 Ten interfejs służy do uzyskiwania listy ramek stosu dla załadowanego modułu. Każda z metod jest przenoszona obiekt [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) (zaimplementowany przez aplikację kliencką), który zawiera informacje niezbędne do utworzenia listy ramek stosu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Ten interfejs jest uzyskiwany przez wywołanie metody `CoCreateInstance` z identyfikatorem klasy `CLSID_DiaStackWalker` i IDENTYFIKATORem interfejsu `IID_IDiaStackWalker`. W przykładzie pokazano, jak zostanie uzyskany ten interfejs.
+Ten interfejs jest uzyskiwany przez wywołanie `CoCreateInstance` metody z identyfikatorem klasy `CLSID_DiaStackWalker` i identyfikatorem interfejsu `IID_IDiaStackWalker` . W przykładzie pokazano, jak zostanie uzyskany ten interfejs.
 
 ## <a name="example"></a>Przykład
-Ten przykład pokazuje, jak uzyskać interfejs `IDiaStackWalker`.
+Ten przykład pokazuje, jak uzyskać `IDiaStackWalker` interfejs.
 
 ```C++
 
@@ -64,8 +64,8 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

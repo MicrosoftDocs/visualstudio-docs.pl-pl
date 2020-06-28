@@ -1,7 +1,7 @@
 ---
 title: 'IDiaStackWalkHelper:: get_registerValue | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb3e219012effe47a2352f7c22c6cf51b4617f9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3fb78b4cbdfa2130731e3847b1a3325ab4cb3eac
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741417"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464724"
 ---
 # <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 Pobiera wartość rejestru.
@@ -34,18 +34,18 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>Parametry
  `index`
 
-podczas Wartość z wyliczenia [CV_HREG_e wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) określające, z którego rejestru pobrać wartość.
+podczas Wartość z wyliczenia [CV_HREG_e wyliczeniem](../../debugger/debug-interface-access/cv-hreg-e.md) określająca, z którego rejestru pobrać wartość.
 
  `pRetVal`
 
 określoną Zwraca bieżącą wartość rejestru.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Pomimo rozmiaru parametru `pRetVal` implementacja powinna przechowywać tylko te dane, które są zwykle przechowywane w rejestrze. Na przykład rejestr 8-bitowy zawiera tylko najmniejsze 8 bitów danej wartości. Ta wartość 8-bitowa jest rozwinięta do 64-bitów, gdy zwracana jest z tej metody.
+ Pomimo rozmiaru `pRetVal` parametru implementacja powinna przechowywać tylko te dane, które są zwykle przechowywane w rejestrze. Na przykład rejestr 8-bitowy zawiera tylko najmniejsze 8 bitów danej wartości. Ta wartość 8-bitowa jest rozwinięta do 64-bitów, gdy zwracana jest z tej metody.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

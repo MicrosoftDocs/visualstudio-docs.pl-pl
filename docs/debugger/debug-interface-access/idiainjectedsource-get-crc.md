@@ -1,7 +1,7 @@
 ---
 title: 'IDiaInjectedSource:: get_crc | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e20cdf82af3b36c589879c81c492a3f58b67f90
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b67072fe2928556d355aac2e65cf5d011873edd9
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743392"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467128"
 ---
 # <a name="idiainjectedsourceget_crc"></a>IDiaInjectedSource::get_crc
 Pobiera cykliczne sprawdzenie nadmiarowości (CRC) obliczone na podstawie bajtów kodu źródłowego.
@@ -36,7 +36,7 @@ HRESULT get_crc ( 
 określoną Zwraca wartość CRC obliczoną na podstawie bajtów kodu źródłowego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

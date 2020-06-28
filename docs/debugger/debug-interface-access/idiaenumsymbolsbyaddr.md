@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSymbolsByAddr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d8cddaa39635be534e2247b48a370ed88b29ab4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 92062883ea97fdc6251ffa600e31230fb448f73b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743812"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467583"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Wylicza według adresów różnych symboli zawartych w źródle danych.
@@ -29,7 +29,7 @@ IDiaEnumSymbolsByAddr : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaEnumSymbolsByAddr`.
+W poniższej tabeli przedstawiono metody `IDiaEnumSymbolsByAddr` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -41,7 +41,7 @@ W poniższej tabeli przedstawiono metody `IDiaEnumSymbolsByAddr`.
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Tworzy kopię obiektu.|
 
 ## <a name="remarks"></a>Uwagi
-Ten interfejs udostępnia symbole pogrupowane według adresu. Aby można było korzystać z symboli pogrupowanych według typu, na przykład `SymTagUDT` (typ zdefiniowany przez użytkownika) lub `SymTagBaseClass`, należy użyć interfejsu [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) .
+Ten interfejs udostępnia symbole pogrupowane według adresu. Aby korzystać z symboli pogrupowanych według typu, na przykład `SymTagUDT` (typ zdefiniowany przez użytkownika) lub `SymTagBaseClass` , użyj interfejsu [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) .
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
 Uzyskaj ten interfejs, wywołując metodę [IDiaSession:: getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) .
@@ -98,9 +98,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

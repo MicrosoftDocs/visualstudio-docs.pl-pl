@@ -1,7 +1,7 @@
 ---
 title: 'IDiaFrameData:: get_lengthProlog | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b85d1db996487d76d396d6e4df9ea557e6aae5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9975446cb8c7691f46b6d320f59718d9d87c8440
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743559"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467310"
 ---
 # <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
 Pobiera liczbę bajtów kodu prologu w bloku.
@@ -36,10 +36,10 @@ HRESULT get_lengthProlog ( 
 określoną Zwraca liczbę bajtów kodu prologu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Kod prologu jest sekwencją instrukcji, które zachowują rejestry, ustawia stan procesora CPU i ustala stos dla funkcji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSession:: symsAreEquiv | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cfc582f11670af8c956c3334681284ce5172a6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fe609d53571e6ffcd8e18919f0351e29c0329b46
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741868"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465364"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 Sprawdza, czy dwa symbole są równoważne.
@@ -38,11 +38,11 @@ podczas Pierwszy obiekt [IDiaSymbol](../../debugger/debug-interface-access/idias
 
  `symbolB`
 
-podczas Drugi obiekt `IDiaSymbol` używany w porównaniu.
+podczas Drugi `IDiaSymbol` obiekt użyty w porównaniu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli symbole są równoważne, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, symbole nie są równoważne. W przeciwnym razie Zwróć kod błędu.
+ Jeśli symbole są równoważne, zwraca `S_OK` ; w przeciwnym razie, `S_FALSE` symbole nie są równoważne. W przeciwnym razie Zwróć kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

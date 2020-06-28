@@ -1,7 +1,7 @@
 ---
 title: 'IDiaLoadCallback:: NotifyOpenPDB | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbcf8aff8dc18776cbcb09a5fa3f13edca4cd7a7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 468aef9faf4aa6c7c1b7ddebb1fd0c15445d61a2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743066"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466743"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 Wywoływana, gdy zostanie otwarty plik kandydata. pdb.
@@ -38,10 +38,10 @@ podczas Pełna ścieżka pliku. pdb.
 
  `resultCode`
 
-podczas Kod określający powodzenie (`S_OK`) lub niepowodzenie ładowania zgodnie z zastosowanym dla tego pliku.
+podczas Kod, który wskazuje powodzenie ( `S_OK` ) lub niepowodzenie ładowania zgodnie z zastosowanym do tego pliku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kod powrotny jest zwykle ignorowany.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Kod powrotny jest zwykle ignorowany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

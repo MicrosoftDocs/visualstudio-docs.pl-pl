@@ -1,7 +1,7 @@
 ---
 title: 'IDiaLineNumber:: get_addressOffset | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99addc04a7b9dc2f2b77d1943605f8c24af6aa7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27539f993934f230525c02ebcb7e80e6e8f325c1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743285"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467001"
 ---
 # <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
 Pobiera część przesunięcia adresu pamięci, w której rozpoczyna się blok.
@@ -36,7 +36,7 @@ HRESULT get_addressOffset ( 
 określoną Zwraca część przesunięcia adresu pamięci, w której rozpoczyna się blok.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
 
@@ -46,6 +46,6 @@ DWORD offset;
 pLine->get_addressOffset( &offset);
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)

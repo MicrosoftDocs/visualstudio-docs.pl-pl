@@ -1,7 +1,7 @@
 ---
 title: IDiaReadExeAtRVACallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee44ff3acc1d7423e19de8fd64be0e46d8e372
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8fc4d27f3ef8c9329feddd6bf7d8342ceae1b263
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742804"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466456"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 Umożliwia aplikacji klienckiej dostarczanie bajtów pliku wykonywalnego określonego przez względny adres wirtualny.
@@ -29,7 +29,7 @@ IDiaReadExeAtRVACallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
- W poniższej tabeli przedstawiono metody `IDiaReadExeAtRVACallback`.
+ W poniższej tabeli przedstawiono metody `IDiaReadExeAtRVACallback` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -46,9 +46,9 @@ IDiaReadExeAtRVACallback : IUnknown
 
  Biblioteka: diaguids. lib
 
- DLL: msdia80. dll
+ DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

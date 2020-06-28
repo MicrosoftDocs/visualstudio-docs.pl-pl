@@ -1,7 +1,7 @@
 ---
 title: 'IDiaFrameData:: get_program | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135f2b0a042dd74b573a0746831a48fb27e7c2a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5a9f25c3913519b50131ec5860e127bef3ddc11
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743518"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467268"
 ---
 # <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
 Pobiera ciąg programu, który jest używany do obliczenia zestawu rejestru przed wywołaniem bieżącej funkcji.
@@ -36,20 +36,20 @@ HRESULT get_program ( 
 określoną Zwraca ciąg programu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ciąg programu jest sekwencją makr, które są interpretowane w celu ustalenia prologu. Na przykład typowa Ramka stosu może używać ciągu programu `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Format jest odwrotnym zapisem polskim, gdzie operatory obserwują operandy. `T0` reprezentuje zmienną tymczasową na stosie. W tym przykładzie wykonywane są następujące czynności:
+ Ciąg programu jest sekwencją makr, które są interpretowane w celu ustalenia prologu. Na przykład typowa Ramka stosu może używać ciągu programu `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="` . Format jest odwrotnym zapisem polskim, gdzie operatory obserwują operandy. `T0`reprezentuje zmienną tymczasową na stosie. W tym przykładzie wykonywane są następujące czynności:
 
-1. Przenieś zawartość rejestru `ebp`, aby `T0`.
+1. Przenieś zawartość rejestru `ebp` do programu `T0` .
 
-2. Dodaj `4` do wartości w `T0`, aby utworzyć adres, Pobierz wartość z tego adresu i Zapisz wartość w `eip`register.
+2. Dodaj `4` do wartości w programie `T0` , aby utworzyć adres, Pobierz wartość z tego adresu i Zapisz wartość w rejestrze `eip` .
 
-3. Pobierz wartość z adresu przechowywanego w `T0` i Zapisz tę wartość w `ebp`rejestru.
+3. Pobierz wartość z adresu przechowywanego w `T0` i Zapisz tę wartość w rejestrze `ebp` .
 
-4. Dodaj `8` do wartości w `T0` i Zapisz tę wartość w `esp`register.
+4. Dodaj `8` do wartości w `T0` i Zapisz tę wartość w rejestrze `esp` .
 
    Należy zauważyć, że ciąg programu jest specyficzny dla procesora i do konwencji wywoływania dla funkcji reprezentowanej przez bieżącą ramkę stosu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

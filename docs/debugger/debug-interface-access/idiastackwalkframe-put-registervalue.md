@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkFrame::p ut_registerValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24bcafcc373e3c03bd1e656f26ee9a8aa443d320
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 39fc87a6120768eaf1251d81512cbb19f025b7f3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741494"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464836"
 ---
 # <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
 Ustawia wartość rejestru.
@@ -34,15 +34,15 @@ HRESULT put_registerValue ( 
 #### <a name="parameters"></a>Parametry
  `index`
 
-podczas Wartość z wyliczenia [CV_HREG_e wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) określające rejestr do zapisu.
+podczas Wartość z wyliczenia [CV_HREG_e wyliczeniem](../../debugger/debug-interface-access/cv-hreg-e.md) określająca rejestrację, w której ma zostać zapisany.
 
  `NewVal`
 
 podczas Nowa wartość rejestru.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

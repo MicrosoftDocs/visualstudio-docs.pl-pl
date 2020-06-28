@@ -1,7 +1,7 @@
 ---
 title: 'IDiaStackWalkFrame:: ReadMemory — | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae1201fca1fc25cce19b40b47d6435d02d80e1b4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f682f3fe0e300f84dc28b959497138a5019f954b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741478"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464829"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
 Odczytuje pamięć z obrazu.
@@ -49,14 +49,14 @@ podczas Rozmiar buforu danych w bajtach.
 
  `pcbData`
 
-określoną Zwraca liczbę zwracanych bajtów. Jeśli `data` jest `NULL`, `pcbData` zawiera łączną liczbę dostępnych bajtów danych.
+określoną Zwraca liczbę zwracanych bajtów. Jeśli `data` jest `NULL` , `pcbData` zawiera łączną liczbę dostępnych bajtów danych.
 
  `data`
 
 określoną Bufor, który ma zostać wypełniony danymi z określonej lokalizacji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

@@ -1,7 +1,7 @@
 ---
 title: 'IDiaPropertyStorage:: ReadMultiple | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cd1e419e1d08120274fc627a672eb52331ca50f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8681032840f09bcc4a90df66b3a6f37d664739ab
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742885"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466575"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 Odczytuje określone właściwości z bieżącego zestawu właściwości.
@@ -35,7 +35,7 @@ HRESULT ReadMultiple( 
 #### <a name="parameters"></a>Parametry
  `cpspec`
 
-podczas Liczba właściwości określona w tablicy `rgpspec`. Jeśli zero, metoda nie zwraca żadnych właściwości, ale zwraca `S_OK` jako kod sukcesu.
+podczas Liczba właściwości określonych w `rgpspec` tablicy. Jeśli zero, metoda nie zwraca żadnych właściwości, ale zwraca `S_OK` jako kod sukcesu.
 
  `rgpspec`
 
@@ -43,13 +43,13 @@ podczas Tablica właściwości, które mają zostać odczytane. Właściwości m
 
  `rgvar`
 
-[in. out] Tablica struktur `PROPVARIANT` (w przestrzeni nazw Microsoft. VisualStudio. OLE. Interop), które mają być wypełnione wartościami dla każdej właściwości. Tablica musi mieć co najmniej `cpspec` elementy. Obiekt wywołujący nie musi inicjować wartości w tablicy.
+[in. out] Tablica `PROPVARIANT` struktur (w przestrzeni nazw Microsoft. VisualStudio. OLE. Interop), która ma zostać wypełniona wartościami dla każdej właściwości. Tablica musi mieć co najmniej `cpspec` elementy. Obiekt wywołujący nie musi inicjować wartości w tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie odnaleziono co najmniej jednej właściwości. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca `S_FALSE` czy nie znaleziono co najmniej jednej właściwości. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli właściwość nie została znaleziona, odpowiadający jej wpis w tablicy `rgvar` zawiera `VARIANT` z typem `VT_EMPTY`.
+ Jeśli właściwość nie została znaleziona, odpowiadający jej wpis w `rgvar` tablicy zawiera `VARIANT` Typ `VT_EMPTY` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

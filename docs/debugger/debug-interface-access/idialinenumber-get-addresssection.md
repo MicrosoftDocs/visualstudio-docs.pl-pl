@@ -1,7 +1,7 @@
 ---
 title: 'IDiaLineNumber:: get_addressSection | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2458ee3eb26bed46c8699c9fe41dadbde091bfad
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 417a0e937225070fdc4eb98e34f98978e19a5c46
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743267"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466996"
 ---
 # <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
 Pobiera część sekcji adresu pamięci, w której rozpoczyna się blok.
@@ -36,7 +36,7 @@ HRESULT get_addressSection ( 
 określoną Zwraca część sekcji adresu pamięci, w której rozpoczyna się blok.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
 
@@ -46,6 +46,6 @@ DWORD seg;
 pLine->get_addressSection( &seg );
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)

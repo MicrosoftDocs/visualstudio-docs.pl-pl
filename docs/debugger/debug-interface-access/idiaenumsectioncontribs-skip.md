@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumSectionContribs:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb371d841c10b64895400f66bf73159f27d68ec1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0e13f9290c76eb558bea397f7921f7cfd765613f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744263"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468094"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 Pomija określoną liczbę udziałów sekcji w sekwencji wyliczenia.
@@ -36,7 +36,7 @@ HRESULT Skip( 
 podczas Liczba udziałów sekcji w sekwencji wyliczenia do pominięcia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, jeśli nie ma więcej udziałów sekcji do pominięcia.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca, `S_FALSE` czy nie ma więcej udziałów sekcji do pominięcia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
