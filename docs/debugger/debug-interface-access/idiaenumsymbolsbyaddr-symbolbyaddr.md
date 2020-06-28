@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumSymbolsByAddr:: symbolByAddr | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0891cc5eb244b781b69e231d4282b92aa064b91
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9750c57bc9a6cacc8d945b0acdd7723769e74e53
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743846"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467632"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 Umieszcza moduł wyliczający, wykonując wyszukiwanie według numeru sekcji obrazu i przesunięcia.
@@ -46,8 +46,8 @@ podczas Przesunięcie w sekcji.
 określoną Zwraca obiekt [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) reprezentujący znaleziony symbol.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli nie można znaleźć symbolu. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca `S_FALSE` czy nie można znaleźć symbolu. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

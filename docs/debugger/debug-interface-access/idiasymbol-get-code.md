@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_code | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ec15cd164c1d7e3741d79d359bcef66cf6119a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b34714ccd23929d4aaa3ea734fc80941d04103dd
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740840"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464094"
 ---
 # <a name="idiasymbolget_code"></a>IDiaSymbol::get_code
 Pobiera flagę, która określa, czy symbol odwołuje się do adresu kodu.
@@ -33,13 +33,13 @@ HRESULT get_code ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Zwraca `TRUE`, jeśli symbol odwołuje się do adresu kodu, w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy symbol odwołuje się do adresu kodu, w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="requirements"></a>Wymagania
 
@@ -48,5 +48,5 @@ określoną Zwraca `TRUE`, jeśli symbol odwołuje się do adresu kodu, w przeci
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

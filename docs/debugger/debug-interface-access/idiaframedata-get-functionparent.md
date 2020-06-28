@@ -1,7 +1,7 @@
 ---
 title: 'IDiaFrameData:: get_functionParent | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 809de8589302ddc35a14e2ea0663248a163176e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ef646016433ecfe19106a17dff391c2dd8ce8382
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743622"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467387"
 ---
 # <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
 Pobiera interfejs danych ramek dla otaczającej funkcji.
@@ -36,7 +36,7 @@ HRESULT get_functionParent ( 
 określoną Zwraca obiekt [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) dla otaczającej funkcji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

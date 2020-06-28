@@ -1,7 +1,7 @@
 ---
 title: IDiaSession | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f983275974ed0ec3fb0e6091f5b9e73cdccd76ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7fb8c5336a14180b3742fa02a91e6532b6e5831
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741860"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465350"
 ---
 # <a name="idiasession"></a>IDiaSession
 Zawiera kontekst zapytania dla symboli debugowania.
@@ -29,12 +29,12 @@ IDiaSession : IUnknown
 ```
 
 ## <a name="methods"></a>Metody
-W poniższej tabeli przedstawiono metody `IDiaSession`.
+W poniższej tabeli przedstawiono metody `IDiaSession` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Pobiera adres ładowania pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli. Jest to taka sama wartość, która została przeniesiona do metody `put_loadAddress`.|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Ustawia adres ładowania pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli. **Uwaga:**  Ważne jest, aby wywołać tę metodę podczas uzyskiwania obiektu `IDiaSession` i przed rozpoczęciem korzystania z obiektu.|
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Pobiera adres ładowania pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli. Jest to taka sama wartość, która została przeniesiona do `put_loadAddress` metody.|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Ustawia adres ładowania pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli. **Uwaga:**  Ważne jest, aby wywołać tę metodę podczas pobierania `IDiaSession` obiektu i przed rozpoczęciem korzystania z obiektu.|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Pobiera odwołanie do zakresu globalnego.|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Pobiera moduł wyliczający dla wszystkich tabel znajdujących się w magazynie symboli.|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Pobiera moduł wyliczający dla wszystkich nazwanych symboli w lokalizacjach statycznych.|
@@ -71,10 +71,10 @@ W poniższej tabeli przedstawiono metody `IDiaSession`.
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Zwraca Wyliczenie symboli dla ramek wbudowanych, które odpowiadają określonej lokalizacji źródłowej.|
 
 ## <a name="remarks"></a>Uwagi
-Ważne jest, aby wywołać metodę [IDiaSession::P ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) po utworzeniu obiektu `IDiaSession` — a wartość przeniesiona do metody `put_loadAddress` musi być różna od zera — dla wszystkich właściwości adresu wirtualnego (VA) symboli do udostępnienia. Adres ładowania pochodzi z dowolnego programu załadowanego debugowanego pliku wykonywalnego. Na przykład można wywołać funkcję Win32 `GetModuleInformation`, aby pobrać adres ładowania dla pliku wykonywalnego, pod kątem dojścia do pliku wykonywalnego.
+Ważne jest, aby wywołać metodę [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) po utworzeniu `IDiaSession` obiektu — a wartość przekazaną do `put_loadAddress` metody musi być różna od zera — dla wszystkich właściwości adresów wirtualnych (VA) symboli, które mają być dostępne. Adres ładowania pochodzi z dowolnego programu załadowanego debugowanego pliku wykonywalnego. Na przykład można wywołać funkcję Win32 `GetModuleInformation` , aby pobrać adres ładowania dla pliku wykonywalnego, pod kątem dojścia do pliku wykonywalnego.
 
 ## <a name="example"></a>Przykład
-Ten przykład pokazuje, jak uzyskać interfejs `IDiaSession` w ramach ogólnej inicjalizacji DIA SDK.
+Ten przykład pokazuje, jak uzyskać `IDiaSession` interfejs w ramach ogólnej inicjalizacji DIA SDK.
 
 ```C++
 CComPtr<IDiaDataSource> pSource;
@@ -114,9 +114,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [Omówienie](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [Exe](../../debugger/debug-interface-access/exe.md)

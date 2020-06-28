@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSourceFile:: get_uniqueId | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a210c12384cbde55dafe6f3410b8fc840e8507
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b3f159211854e5b408d34c253a77893caf763bf2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741791"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465200"
 ---
 # <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 Pobiera prostą wartość klucza liczb całkowitych, która jest unikatowa dla tego obrazu.
@@ -36,10 +36,10 @@ HRESULT get_uniqueId ( 
 określoną Zwraca prostą wartość klucza liczb całkowitych, która jest unikatowa dla tego obrazu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Porównanie kluczy zamiast ciągów może przyspieszyć przetwarzanie numerów wierszy.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

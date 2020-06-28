@@ -1,7 +1,7 @@
 ---
 title: IDiaSegment | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 855b40f3d35d884a366e8fdc36ed1ec4f2bef85a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d248bd5dcacf2c852076bc1dddbcd40d149ebf67
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742337"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465882"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mapuje dane z sekcji Number na segmenty przestrzeni adresowej.
@@ -29,7 +29,7 @@ IDiaSegment : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaSegment`.
+W poniższej tabeli przedstawiono metody `IDiaSegment` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -98,9 +98,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)
 - [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

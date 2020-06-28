@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumTables:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84b7eb7d45a734e8a5d25b89d0f02bc16911aa7c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 61c8467030d47265410070b02e9929d439164459
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743729"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467471"
 ---
 # <a name="idiaenumtablesreset"></a>IDiaEnumTables::Reset
 Resetuje sekwencję wyliczenia na początek.
@@ -29,7 +29,7 @@ HRESULT Reset ();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Zwraca `S_OK`.
+ Zwraca wartość `S_OK`.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

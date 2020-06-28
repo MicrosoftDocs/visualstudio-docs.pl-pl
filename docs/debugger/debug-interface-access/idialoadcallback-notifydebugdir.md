@@ -1,7 +1,7 @@
 ---
 title: 'IDiaLoadCallback:: NotifyDebugDir | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6618440cab9b9042ec371383f6c809ca1d0d11f7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 032e628512b7c601a6409f6f70ba0b0c3cabb37c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743093"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466757"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 Wywoływana, gdy w pliku exe znaleziono katalog debugowania.
@@ -35,7 +35,7 @@ HRESULT NotifyDebugDir ( 
 #### <a name="parameters"></a>Parametry
  `fExecutable`
 
-[in] `TRUE`, jeśli katalog debugowania jest odczytywany z pliku wykonywalnego (a nie pliku. dbg).
+[w] `TRUE` Jeśli katalog debugowania jest odczytywany z pliku wykonywalnego (a nie pliku. dbg).
 
  `cbData`
 
@@ -46,15 +46,15 @@ podczas Liczba bajtów danych w katalogu debugowania.
 podczas Tablica, która jest wypełniana katalogiem debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kod powrotny jest zwykle ignorowany.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Kod powrotny jest zwykle ignorowany.
 
 ## <a name="remarks"></a>Uwagi
  Metoda [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) wywołuje to wywołanie zwrotne, gdy odnajdzie katalog debugowania podczas przetwarzania pliku wykonywalnego.
 
  Ta metoda eliminuje konieczność odtwarzania pliku wykonywalnego i/lub debugowania przez klienta w celu obsługi informacji debugowania innych niż Znalezione w pliku. pdb. Za pomocą tych danych klient może rozpoznać typ dostępnych informacji debugowania i określić, czy znajduje się on w pliku wykonywalnym lub pliku. dbg.
 
- Większość klientów nie będzie potrzebować tego wywołania zwrotnego, ponieważ metoda `IDiaDataSource::loadDataForExe` w sposób przezroczysty otwiera zarówno pliki PDB i. dbg, gdy jest to niezbędne do obsłużynia symboli.
+ Większość klientów nie będzie potrzebować tego wywołania zwrotnego, ponieważ `IDiaDataSource::loadDataForExe` Metoda w sposób przezroczysty otwiera zarówno pliki. pdb, jak i. dbg, gdy jest to niezbędne do obsłużynia symboli.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_hasManagedCode | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 79696a0f4476d8e8b571cb8b8c0cc5e181b11f92
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e4ce3326e6922227b83a12b21b6fc2aa2f9ce81e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740495"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463695"
 ---
 # <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 Pobiera flagę wskazującą, czy moduł zawiera kod zarządzany.
@@ -33,16 +33,16 @@ HRESULT get_hasManagedCode(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-określoną Zwraca `TRUE`, jeśli moduł zawiera kod zarządzany; w przeciwnym razie zwraca `FALSE`, kod jest niezarządzanym kodem.
+określoną Zwraca `TRUE` czy moduł zawiera kod zarządzany; w przeciwnym razie zwraca `FALSE` kod w kodzie niezarządzanym.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
 > Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Ta właściwość jest dostępna z poziomu typu symbolu `SymTagCompilandDetails` (zobacz [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
+ Ta właściwość jest dostępna w `SymTagCompilandDetails` typie symbolu (zobacz [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
 
 ## <a name="requirements"></a>Wymagania
 
@@ -51,6 +51,6 @@ określoną Zwraca `TRUE`, jeśli moduł zawiera kod zarządzany; w przeciwnym r
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

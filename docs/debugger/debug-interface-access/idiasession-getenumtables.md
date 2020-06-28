@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSession:: getEnumTables | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41679304986f5de948119a2958524b8f269ceb42
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4b9b229de3818b00379d95a5c19e35c7e83c845e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741923"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465427"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Pobiera moduł wyliczający dla wszystkich tabel znajdujących się w magazynie symboli.
@@ -36,10 +36,10 @@ HRESULT getEnumTables (
 określoną Zwraca obiekt [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Użyj tego interfejsu, aby wyliczyć tabele w magazynie symboli.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Ten przykład przedstawia ogólną funkcję, która używa metody `getEnumTables`, aby uzyskać określony obiekt modułu wyliczającego. W przypadku znalezienia modułu wyliczającego funkcja zwraca wskaźnik, który można rzutować na żądany interfejs; w przeciwnym razie funkcja zwraca `NULL`.
+Ten przykład przedstawia ogólną funkcję, która używa `getEnumTables` metody do uzyskania określonego obiektu modułu wyliczającego. W przypadku znalezienia modułu wyliczającego funkcja zwraca wskaźnik, który można rzutować na żądany interfejs; w przeciwnym razie funkcja zwraca wartość `NULL` .
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
@@ -67,6 +67,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

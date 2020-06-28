@@ -1,7 +1,7 @@
 ---
 title: 'IDiaStackFrame:: get_maxStack | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9640fa8f82c7bb87990c97ef7916e7323943ece
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ba6fdd1b01e4d17bec0e16aae8fe4e086cb6cc7b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741645"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464990"
 ---
 # <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
 Pobiera maksymalną liczbę bajtów wypychanych na stosie w ramce.
@@ -36,7 +36,7 @@ HRESULT get_maxStack ( 
 określoną Zwraca maksymalną liczbę bajtów wypychanych na stosie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość `S_FALSE` , jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

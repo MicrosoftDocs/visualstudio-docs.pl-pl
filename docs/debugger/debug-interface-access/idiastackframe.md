@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54bd52f3783bb0bedc279cffafab2f21e0b0f39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e3cadcfd8fed1818e18d276503c0843e0567addf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741555"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464913"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Uwidacznia właściwości ramki stosu.
@@ -35,7 +35,7 @@ Następujące metody są obsługiwane przez ten interfejs:
 |------------|-----------------|
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Pobiera flagę wskazującą, że wskaźnik podstawowy został przydzielony do kodu w tym zakresie adresów. Ta metoda jest przestarzała.|
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Pobiera bazę adresu ramki.|
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Pobiera flagę wskazującą, C++ że obsługa wyjątków jest obowiązująca.|
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Pobiera flagę wskazującą, że obsługa wyjątków C++ jest skuteczna.|
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Pobiera flagę wskazującą, że blok zawiera punkt wejścia funkcji.|
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Pobiera liczbę bajtów zmiennych lokalnych wypychanych na stosie.|
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Pobiera liczbę bajtów parametrów wypychanych na stosie.|
@@ -54,7 +54,7 @@ Następujące metody są obsługiwane przez ten interfejs:
 Ramka stosu jest abstrakcją wywołania funkcji w trakcie jego wykonywania.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Uzyskaj ten interfejs, wywołując metodę [IDiaEnumStackFrames:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) . Zobacz interfejs [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) , aby zapoznać się z przykładem uzyskiwania interfejsu `IDiaStackFrame`.
+Uzyskaj ten interfejs, wywołując metodę [IDiaEnumStackFrames:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) . Zobacz interfejs [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) , aby zapoznać się z przykładem uzyskiwania `IDiaStackFrame` interfejsu.
 
 ## <a name="example"></a>Przykład
 Ten przykład wyświetla różne atrybuty ramki stosu.
@@ -105,9 +105,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 - [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)

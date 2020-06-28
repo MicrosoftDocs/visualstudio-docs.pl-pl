@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_frontEndMajor | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd15bb798d35ebac1a8f3af7b766ffd9aeea7d8e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 14d69d617d76ffe033e3ab763cdf85dad871f1f5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740631"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463884"
 ---
 # <a name="idiasymbolget_frontendmajor"></a>IDiaSymbol::get_frontEndMajor
 Pobiera główny numer wersji frontonu.
@@ -36,7 +36,7 @@ HRESULT get_frontEndMajor ( 
 określoną Zwraca główny numer wersji frontonu. Zobacz uwagi.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
 > Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
@@ -44,7 +44,7 @@ określoną Zwraca główny numer wersji frontonu. Zobacz uwagi.
 ## <a name="remarks"></a>Uwagi
  Kompilator zwykle składa się z dwóch głównych elementów: fronton (Parser), który obsługuje Analizowanie kodu źródłowego w postaci pośredniej i zaplecza (Generator kodu), który konwertuje pośredni formularz do zestawu. Nie zdarza się, że fronton nie ma innej wersji niż zaplecze.
 
- Numer wersji frontonu lub zaplecza składa się z trzech części: \<major >. > \<minor. \<build >, gdzie \<major > jest głównym numerem wersji, \<minor > jest numerem wersji pomocniczej, a \<build > jest numerem kompilacji. Na przykład 13.10.3077.
+ Numer wersji frontonu lub zaplecza składa się z trzech części: \<major> . \<minor> . \<build> , gdzie \<major> jest głównym numerem wersji, \<minor> jest numerem wersji pomocniczej i \<build> jest numerem kompilacji. Na przykład 13.10.3077.
 
 ## <a name="requirements"></a>Wymagania
 
@@ -53,5 +53,5 @@ określoną Zwraca główny numer wersji frontonu. Zobacz uwagi.
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

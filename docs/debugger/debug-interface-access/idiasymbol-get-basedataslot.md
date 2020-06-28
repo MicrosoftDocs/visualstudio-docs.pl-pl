@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_baseDataSlot | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: f9ed21b7-9397-4813-926e-ade11914b06b
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12aa68a549f47b27fd2b750d41631f4fabd546ba
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8ce2a1f2d6404f7bbb708478dff1e64b09b8246d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740960"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464227"
 ---
 # <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
 Pobiera bazowe miejsce na dane.
@@ -30,10 +30,10 @@ HRESULT get_baseDataSlot(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Wskaźnik do `DWORD`, który zawiera bazowe miejsce na dane.
+określoną Wskaźnik do elementu `DWORD` , który zawiera bazowe miejsce na dane.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

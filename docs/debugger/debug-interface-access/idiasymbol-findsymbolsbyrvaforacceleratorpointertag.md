@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: de63223afda4ce5d00358fe3c06cabe90f2689aa
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741154"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464437"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 Mając odpowiednią wartość tagu, ta metoda zwraca Wyliczenie symboli, które są zawarte w tej funkcji zastępczej w określonym względnym adresie wirtualnym.
@@ -40,14 +40,14 @@ podczas Adres RVA używany do filtrowania symboli, które odpowiadają zmiennej 
 
  `ppResult`
 
-określoną Wskaźnik do wskaźnika interfejsu `IDiaEnumSymbols`, który jest inicjowany z wynikiem.
+określoną Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który jest inicjowany z wynikiem.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołaj tę metodę tylko w interfejsie `IDiaSymbol`, który odpowiada funkcji zastępczej akceleratora.
+ Wywołaj tę metodę tylko w `IDiaSymbol` interfejsie, który odpowiada funkcji zastępczej akceleratora.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

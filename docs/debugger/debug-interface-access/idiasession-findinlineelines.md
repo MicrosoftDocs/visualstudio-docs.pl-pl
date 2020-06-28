@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSession:: findInlineeLines | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: b6822d8b-70d5-470b-8278-3aec4680326c
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5103a881b1b046479a1a3156f06038e230f5063e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a03eb23929d3a882b397a8a95f2d9c4c17abf0df
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742240"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465812"
 ---
 # <a name="idiasessionfindinlineelines"></a>IDiaSession::findInlineeLines
 Pobiera wyliczenie, które umożliwia klientowi przechodzenie do kolejnych informacji o numerze wiersza wszystkich funkcji, które są wbudowane, bezpośrednio lub pośrednio, przez określony symbol nadrzędny.
@@ -32,16 +32,16 @@ HRESULT findInlineeLines ( 
 #### <a name="parameters"></a>Parametry
  `parent`
 
-podczas Obiekt `IDiaSymbol` reprezentujący element nadrzędny.
+podczas `IDiaSymbol`Obiekt reprezentujący element nadrzędny.
 
  `ppResult`
 
-określoną Zawiera obiekt `IDiaEnumLineNumbers` zawierający listę numerów wierszy, które są pobierane.
+określoną Zawiera `IDiaEnumLineNumbers` obiekt zawierający listę numerów wierszy, które są pobierane.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

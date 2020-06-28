@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_classParentId | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ea947bf788c6f8fe7b4111e3888029b9d4bf31
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65c4dc9d14808edbfef2076bf89478e4432c44ea
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740870"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464101"
 ---
 # <a name="idiasymbolget_classparentid"></a>IDiaSymbol::get_classParentId
 Pobiera nadrzędny identyfikator klasy symbolu.
@@ -36,10 +36,10 @@ HRESULT get_classParentId ( 
 określoną Zwraca identyfikator klasy nadrzędnej symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  Identyfikator jest unikatową wartością utworzoną przez DIA SDK, aby oznaczyć wszystkie symbole jako unikatowe.
@@ -51,5 +51,5 @@ określoną Zwraca identyfikator klasy nadrzędnej symbolu.
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaReadExeAtOffsetCallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8498b0189a1d5bfb876417d4719adb3487065d5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a8db3960aebe4edc1669f2e7fbe4d40b60618bd0
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742817"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466470"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 Umożliwia aplikacji klienckiej dostarczanie bajtów pliku wykonywalnego określonego przez położenie pliku.
@@ -29,7 +29,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
- W poniższej tabeli przedstawiono metody `IDiaReadExeAtOffsetCallback`.
+ W poniższej tabeli przedstawiono metody `IDiaReadExeAtOffsetCallback` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -46,9 +46,9 @@ IDiaReadExeAtOffsetCallback : IUnknown
 
  Biblioteka: diaguids. lib
 
- DLL: msdia80. dll
+ DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)

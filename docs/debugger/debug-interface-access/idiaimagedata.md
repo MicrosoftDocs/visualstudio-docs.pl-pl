@@ -1,7 +1,7 @@
 ---
 title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75a81ae23db90b06915e7090a9f2918be3ff18ae
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 39bc89e9b41f4d1c384476e673d116cb1cd08159
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743407"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467135"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Opisuje szczegóły lokalizacji podstawowej i przesunięcia pamięci modułu lub obrazu.
@@ -29,7 +29,7 @@ IDiaImageData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaImageData`.
+W poniższej tabeli przedstawiono metody `IDiaImageData` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -38,13 +38,13 @@ W poniższej tabeli przedstawiono metody `IDiaImageData`.
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Pobiera lokalizację pamięci, w której powinien być oparty obraz.|
 
 ## <a name="remarks"></a>Uwagi
-Niektóre strumienie debugowania (XDATA, PDATA) zawierają kopie danych również przechowywane w obrazie. Te obiekty danych strumienia mogą być zapytania dla interfejsu `IDiaImageData`. Aby uzyskać szczegółowe informacje, zobacz sekcję "uwagi dotyczące wywoływania" w tym temacie.
+Niektóre strumienie debugowania (XDATA, PDATA) zawierają kopie danych również przechowywane w obrazie. Te obiekty danych strumienia mogą być zapytania dla `IDiaImageData` interfejsu. Aby uzyskać szczegółowe informacje, zobacz sekcję "uwagi dotyczące wywoływania" w tym temacie.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Uzyskaj ten interfejs, wywołując `QueryInterface` na obiekcie [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Należy zauważyć, że nie wszystkie strumienie debugowania obsługują interfejs `IDiaImageData`. Na przykład obecnie tylko strumienie XDATA i PDATA obsługują interfejs `IDiaImageData`.
+Uzyskaj ten interfejs, wywołując `QueryInterface` obiekt [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Należy zauważyć, że nie wszystkie strumienie debugowania obsługują `IDiaImageData` interfejs. Na przykład obecnie tylko strumienie XDATA i PDATA obsługują `IDiaImageData` interfejs.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie przeszukiwane są wszystkie strumienie debugowania dla dowolnego strumienia, który obsługuje interfejs `IDiaImageData`. Jeśli zostanie znaleziony taki strumień, wyświetlane są pewne informacje o tym strumieniu.
+W tym przykładzie przeszukiwane są wszystkie strumienie debugowania dla dowolnego strumienia, który obsługuje `IDiaImageData` interfejs. Jeśli zostanie znaleziony taki strumień, wyświetlane są pewne informacje o tym strumieniu.
 
 ```C++
 void ShowImageData(IDiaSession *pSession)
@@ -115,8 +115,8 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

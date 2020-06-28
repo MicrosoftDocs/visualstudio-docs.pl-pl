@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_hasDebugInfo | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42ec4efef230a2a12827b92d76eaec5e8e346acd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c7c158d15f7d60000bfd022e8cab10c3f2bc060c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740556"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463772"
 ---
 # <a name="idiasymbolget_hasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 Pobiera flagę, która określa, czy [jednostka kompilacji](../../debugger/debug-interface-access/compiland.md) zawiera informacje o debugowaniu.
@@ -33,10 +33,10 @@ HRESULT get_hasDebugInfo(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-określoną Zwraca `TRUE`, jeśli jednostka kompilacji zawiera informacje o debugowaniu; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy jednostka kompilacji zawiera informacje o debugowaniu; w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
 > Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
@@ -48,5 +48,5 @@ określoną Zwraca `TRUE`, jeśli jednostka kompilacji zawiera informacje o debu
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

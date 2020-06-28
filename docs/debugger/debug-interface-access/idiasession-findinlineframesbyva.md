@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSession:: findInlineFramesByVA | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: df9e68f6-e0a4-4cf6-b11d-61c40351e0cd
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dca26021909220f9bb68a6794c299ec6c5a3d75a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c241662b2d80beb31fb62bcd3b5b9f4ff133a2ff
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742146"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465686"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
 Pobiera wyliczenie, które pozwala klientowi na iterację we wszystkich wbudowanych ramkach w określonym adresie wirtualnym (VA).
@@ -32,7 +32,7 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>Parametry
  `parent`
 
-podczas Obiekt `IDiaSymbol` reprezentujący element nadrzędny.
+podczas `IDiaSymbol`Obiekt reprezentujący element nadrzędny.
 
  `va`
 
@@ -40,12 +40,12 @@ podczas Określa adres jako VA.
 
  `ppResult`
 
-określoną Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę pobieranych ramek.
+określoną Zawiera `IDiaEnumSymbols` obiekt zawierający listę pobieranych ramek.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

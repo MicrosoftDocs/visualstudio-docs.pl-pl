@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_acceleratorPointerTags | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 30e13cee-e511-49ec-affd-99b0097071b2
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e2da182992999a582ea30f570734b366178a9521
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741114"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464409"
 ---
 # <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Zwraca wszystkie wartości tagów wskaźnika akceleratora, które odpowiadają funkcji zastępczej akceleratora C++ amp.
+Zwraca wszystkie wartości tagów wskaźnika akceleratora, które odpowiadają funkcji zastępczej akceleratora C++ AMP.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Parametry
  `cnt`
 
-podczas Rozmiar tablicy wyjściowej `pPointerTags`.
+podczas Rozmiar tablicy wyjściowej `pPointerTags` .
 
  `pcnt`
 
-określoną Liczba tagów wskaźnika akceleratora w funkcji zastępczej akceleratora C++ amp.
+określoną Liczba tagów wskaźnika akceleratora w funkcji zastępczej akceleratora C++ AMP.
 
  `pPointerTags`
 
-określoną @No__t_0 wskaźnik tablicy, który jest wypełniony wartościami tagów wskaźnika akceleratora w funkcji zastępczej akceleratora C++ amp.
+określoną `DWORD`Wskaźnik tablicy, który jest wypełniony wartościami tagów wskaźnika akceleratora w funkcji zastępczej akceleratora C++ amp.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest wywoływana w interfejsie `IDiaSymbol`, który odpowiada funkcji zastępczej akceleratora C++ amp.
+ Ta metoda jest wywoływana w `IDiaSymbol` interfejsie, który odpowiada funkcji zastępczej akceleratora C++ amp.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

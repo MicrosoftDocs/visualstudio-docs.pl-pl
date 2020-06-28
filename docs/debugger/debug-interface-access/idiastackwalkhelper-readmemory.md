@@ -1,7 +1,7 @@
 ---
 title: 'IDiaStackWalkHelper:: ReadMemory — | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57afd033b2d969a4ed57dc713b2c4266e0ead632
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bc768db3f42f610a8efd30cea567e721929cb291
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741362"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464696"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Odczytuje blok danych z obrazu pliku wykonywalnego w pamięci.
@@ -49,15 +49,15 @@ podczas Rozmiar buforu danych w bajtach.
 
  `pcbData`
 
-określoną Zwraca liczbę bajtów, które są faktycznie odczytywane. Jeśli `pbData` jest `NULL`, to całkowita liczba dostępnych bajtów danych.
+określoną Zwraca liczbę bajtów, które są faktycznie odczytywane. Jeśli `pbData` jest `NULL` , jest to całkowita liczba dostępnych bajtów danych.
 
  `pbData`
 
 [in. out] Bufor, który jest wypełniony za pomocą odczytu pamięci.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [MemoryTypeEnum, wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md)

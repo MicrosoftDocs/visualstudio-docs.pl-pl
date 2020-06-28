@@ -1,7 +1,7 @@
 ---
 title: 'IDiaFrameData:: get_maxStack | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5eaa20c5167897ccb19d5e142656ed314a91e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c266c5e823bd77315d184133947df225935fbcb3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743529"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467296"
 ---
 # <a name="idiaframedataget_maxstack"></a>IDiaFrameData::get_maxStack
 Pobiera maksymalną liczbę bajtów wypychanych na stosie w ramce.
@@ -36,11 +36,11 @@ HRESULT get_maxStack ( 
 określoną Zwraca maksymalną liczbę bajtów wypychanych na stosie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Wartość zwracana przez tę metodę jest zwykle używana w interpretacji ciągu programu (zobacz [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) Metoda dla definicji ciągu programu).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

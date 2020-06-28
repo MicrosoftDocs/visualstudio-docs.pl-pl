@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_hasSecurityChecks | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fd7f70da9ae47b9858f8265d0608e3d6994ef7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a8d544a2172655df91e7156bc3f0d53b236490d1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740467"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463674"
 ---
 # <a name="idiasymbolget_hassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 Pobiera flagę, która określa, czy jednostka kompilacji lub funkcja została skompilowana przy użyciu kontroli zabezpieczeń przepełnienia buforu (na przykład przełącznika kompilatora [/GS (sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check) .
@@ -33,10 +33,10 @@ HRESULT get_hasSecurityChecks(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-określoną Zwraca `TRUE`, jeśli funkcja ma jakiekolwiek sprawdzenia zabezpieczeń; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy funkcja ma jakiekolwiek sprawdzenia zabezpieczeń; w przeciwnym razie zwraca wartość `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
 > Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
@@ -48,6 +48,6 @@ określoną Zwraca `TRUE`, jeśli funkcja ma jakiekolwiek sprawdzenia zabezpiecz
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-- [/GS (Sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check)
+- [/GS (sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check)

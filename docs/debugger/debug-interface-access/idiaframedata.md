@@ -1,7 +1,7 @@
 ---
 title: IDiaFrameData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d586cfe3e78a320ffed42e7181463eb79a6b313a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee2f68066de6a41e6fd6a1cf4143613a7597d6f1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743468"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467184"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Uwidacznia szczegóły ramki stosu.
@@ -29,7 +29,7 @@ IDiaFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaFrameData`.
+W poniższej tabeli przedstawiono metody `IDiaFrameData` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -45,7 +45,7 @@ W poniższej tabeli przedstawiono metody `IDiaFrameData`.
 |[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Pobiera liczbę bajtów zapisanych rejestrów wypchnięcia na stosie.|
 |[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Pobiera ciąg programu, który jest używany do obliczenia zestawu rejestru przed wywołaniem bieżącej funkcji.|
 |[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Pobiera flagę wskazującą, że obsługa wyjątków systemu obowiązuje.|
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Pobiera flagę wskazującą, że C++ obsługa wyjątków jest obowiązująca.|
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Pobiera flagę wskazującą, że obsługa wyjątków C++ jest włączona.|
 |[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Pobiera flagę wskazującą, że blok zawiera punkt wejścia funkcji.|
 |[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Pobiera flagę wskazującą, że wskaźnik podstawowy został przydzielony do kodu w tym zakresie adresów. Ta metoda jest przestarzała.|
 |[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Pobiera typ ramki specyficznej dla kompilatora.|
@@ -59,7 +59,7 @@ W poniższej tabeli przedstawiono metody `IDiaFrameData`.
  Uzyskaj ten interfejs, wywołując metodę [IDiaEnumFrameData:: Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) lub [IDiaEnumFrameData:: Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) . Aby uzyskać szczegółowe informacje, zobacz Interfejs [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) .
 
 ## <a name="example"></a>Przykład
- Ten przykład drukuje właściwości obiektu `IDiaFrameData`. Zobacz interfejs [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) , aby zapoznać się z przykładem uzyskiwania interfejsu `IDiaFrameData`.
+ Ten przykład drukuje właściwości `IDiaFrameData` obiektu. Zobacz interfejs [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) , aby zapoznać się z przykładem sposobu `IDiaFrameData` uzyskiwania interfejsu.
 
 ```C++
 void PrintFrameData(IDiaFrameData* pFrameData){
@@ -117,9 +117,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

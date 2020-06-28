@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_isCVTCIL | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4741c4f3a13b77dd871cefdb7a9d6430250b98
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 068720e4b35ca52e07351aeb6f74d7594fe69d1e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740270"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463436"
 ---
 # <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Pobiera flagę wskazującą, czy moduł został przekonwertowany ze wspólnego modułu języka pośredniego (CIL) do modułu macierzystego.
@@ -33,13 +33,13 @@ HRESULT get_isCVTCIL(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-określoną Zwraca `TRUE`, jeśli moduł został przekonwertowany z kodu CIL na kod natywny; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy moduł został przekonwertowany z CIL na kod natywny; w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
  Ta właściwość jest dostępna w `SymTagCompilandDetails` typie symbolu (zobacz [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).
@@ -51,6 +51,6 @@ określoną Zwraca `TRUE`, jeśli moduł został przekonwertowany z kodu CIL na 
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
