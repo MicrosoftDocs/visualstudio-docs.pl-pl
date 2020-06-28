@@ -1,7 +1,7 @@
 ---
 title: 'IDiaDataSource:: loadAndValidateDataFromPdb | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97afff946827c37ec2f84457016525377977dc8b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3e3a4b73cbbfe16cb87108c5f157dada135e71ee
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745000"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468540"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Otwiera i weryfikuje, czy plik bazy danych programu (. pdb) pasuje do dostarczonych informacji o podpisie i przygotowuje plik. pdb jako źródło danych debugowania.
@@ -51,7 +51,7 @@ podczas Podpis 32-bitowy, który ma zostać zweryfikowany względem sygnatury pl
 podczas Wartość wieku do zweryfikowania. Wiek nie musi odpowiadać żadnej znanej wartości czasu, jest używany do określenia, czy plik. pdb nie jest zsynchronizowany z odpowiednim plikiem exe.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.
 
 |Wartość|Opis|
 |-----------|-----------------|
@@ -91,7 +91,7 @@ if (FAILED(hr))
 
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)

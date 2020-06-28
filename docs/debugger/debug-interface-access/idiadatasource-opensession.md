@@ -1,7 +1,7 @@
 ---
 title: 'IDiaDataSource:: openSession | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd6ab61db3e3bafd594298aa41d32bce64d4941
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b49c90374975865edcac8a94c504e1fa991d711a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744917"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468505"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Otwiera sesję do wykonywania zapytań o symbole.
@@ -36,18 +36,18 @@ ppSession
 określoną Zwraca obiekt [IDiaSession](../../debugger/debug-interface-access/idiasession.md) reprezentujący otwartą sesję.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.
 
 |Wartość|Opis|
 |-----------|-----------------|
 |E_UNEXPECTED|Obiekt [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) nie został wcześniej zainicjowany ze źródłem symboli.|
-|E_INVALIDARG|Nieprawidłowy parametr `ppSession`.|
+|E_INVALIDARG|Nieprawidłowy `ppSession` parametr.|
 |E_OUTOFMEMORY|Za mało pamięci, aby otworzyć sesję.|
 
 ## <a name="remarks"></a>Uwagi
 Ta metoda otwiera obiekt [IDiaSession](../../debugger/debug-interface-access/idiasession.md) dla źródła danych.
 
-obiekty `IDiaSession` implementują zapytania do źródła danych. Sesja zarządza jedną przestrzenią adresową dla każdego zestawu symboli debugowania. Jeśli plik exe lub dll opisany przez symbole źródła danych jest aktywny w wielu zakresach adresów (na przykład, ponieważ załadowano wiele procesów), należy użyć jednej sesji dla każdego zakresu adresów.
+`IDiaSession`obiekty implementują zapytania do źródła danych. Sesja zarządza jedną przestrzenią adresową dla każdego zestawu symboli debugowania. Jeśli plik exe lub dll opisany przez symbole źródła danych jest aktywny w wielu zakresach adresów (na przykład, ponieważ załadowano wiele procesów), należy użyć jednej sesji dla każdego zakresu adresów.
 
 ## <a name="example"></a>Przykład
 
@@ -60,7 +60,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [Omówienie](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

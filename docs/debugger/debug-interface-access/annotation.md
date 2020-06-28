@@ -1,7 +1,7 @@
 ---
 title: Adnotacja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebb4d71924882d0fdd54181a8692ba2eacb0a2bd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e1adc922021d1e2bcc9b55de0b5986ee0c1766d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745537"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462380"
 ---
 # <a name="annotation"></a>Adnotacja
-Kod programu lokalizacji może być oznaczony symbolem `SymTagAnnotation`.
+Kod programu lokalizacji może być oznaczony `SymTagAnnotation` symbolem.
 
 ## <a name="properties"></a>Właściwości
  W poniższej tabeli przedstawiono właściwości, które są prawidłowe dla tego typu symbolu.
@@ -37,7 +37,7 @@ Kod programu lokalizacji może być oznaczony symbolem `SymTagAnnotation`.
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|Wartość danych stałych.|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Pozycja tej adnotacji w obrazie wykonywalnym.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Hierarchia leksykalna typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)
 - [Lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md)

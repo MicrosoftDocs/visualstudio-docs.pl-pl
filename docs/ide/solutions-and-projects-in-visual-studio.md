@@ -1,6 +1,6 @@
 ---
 title: Rozwiązania i projekty
-ms.date: 10/05/2017
+ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285234"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468733"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -74,13 +74,16 @@ Po utworzeniu nowego projektu można użyć **Eksplorator rozwiązań** , aby wy
 
 Wiele poleceń menu jest dostępnych w menu po kliknięciu prawym przyciskiem myszy na różnych elementach w **Eksplorator rozwiązań**. Te polecenia obejmują Kompilowanie projektu, zarządzanie pakietami NuGet, Dodawanie odwołania, zmiana nazwy pliku i uruchamianie testów, po prostu do nazwy a. Pasek narzędzi w górnej części **Eksplorator rozwiązań** zawiera przyciski do przełączenia z widoku rozwiązania do widoku folderu, wyświetlania ukrytych plików, zwijania wszystkich węzłów i innych.
 
+> [!TIP]
+> Jeśli zamknięto Eksplorator rozwiązań i chcesz go otworzyć ponownie, wybierz pozycję **okno**  >  **Ustawienia układ okna** z paska menu.
+
 W przypadku projektów ASP.NET Core można dostosować sposób zagnieżdżania plików w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zagnieżdżania plików w Eksplorator rozwiązań](file-nesting-solution-explorer.md).
 
-> [!TIP]
-> Aby wyświetlić listę niektórych ikon, które pojawiają się w Eksplorator rozwiązań, zobacz stronę [ikony widok klasy i Przeglądarka obiektów](class-view-and-object-browser-icons.md) .
+Aby wyświetlić listę niektórych ikon, które pojawiają się w Eksplorator rozwiązań, zobacz [ikony widok klasy i Przeglądarka obiektów](class-view-and-object-browser-icons.md).
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [Przenoszenie, migrowanie i uaktualnianie projektów](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Projekty i rozwiązania (Visual Studio dla komputerów Mac)](/visualstudio/mac/projects-and-solutions)
 - [Dodawanie i usuwanie elementów projektu (Visual Studio dla komputerów Mac)](/visualstudio/mac/add-and-remove-project-items)

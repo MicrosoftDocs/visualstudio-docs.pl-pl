@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_isLTCG | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3fa97d5612b61151d9c435b91f500c87af0b23
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 009fcf437f56852e324e392f6a5691dd23e23ebc
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740215"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463366"
 ---
 # <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
 Pobiera flagę, która określa, czy [jednostka kompilacji](../../debugger/debug-interface-access/compiland.md) jest połączona z przełącznikiem konsolidatora [/LTCG (generowanie kodu w czasie konsolidacji)](/cpp/build/reference/ltcg-link-time-code-generation), które ułatwia optymalizację w całym programie. Ten przełącznik ma zastosowanie tylko do kodu zarządzanego.
@@ -33,10 +33,10 @@ HRESULT get_iSLTCG(
 #### <a name="parameters"></a>Parametry
  pFlag
 
-określoną Zwraca `TRUE`, jeśli `compiland` była połączona z przełącznikiem konsolidatora/LTCG; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy `compiland` został połączony z przełącznikiem konsolidatora/LTCG; w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
 > Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
@@ -48,5 +48,5 @@ określoną Zwraca `TRUE`, jeśli `compiland` była połączona z przełączniki
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

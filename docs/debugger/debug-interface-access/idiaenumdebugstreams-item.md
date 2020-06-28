@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumDebugStreams:: Item | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a07669e36d397550c28d1cc4a5de2ad300763e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27484ce70b9e98ef7351d03d00ed91515b34e9af
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744740"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468407"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Pobiera strumień debugowania za pomocą indeksu lub nazwy.
@@ -34,14 +34,14 @@ HRESULT Item (
 #### <a name="parameters"></a>Parametry
 indeks
 
-podczas Indeks lub nazwa strumienia debugowania do pobrania. Jeśli używana jest zmienna typu Integer, musi ona należeć do zakresu od 0 do `count`-1, gdzie `count` jest zwracany przez metodę [IDiaEnumDebugStreams:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) .
+podczas Indeks lub nazwa strumienia debugowania do pobrania. Jeśli używana jest zmienna typu Integer, musi ona należeć do zakresu od 0 do `count` -1, gdzie `count` jest zwracany przez metodę [IDiaEnumDebugStreams:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) .
 
 strumień
 
 określoną Zwraca obiekt [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) reprezentujący określony strumień debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
 
@@ -69,6 +69,6 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

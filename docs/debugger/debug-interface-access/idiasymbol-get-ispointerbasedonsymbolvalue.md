@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_isPointerBasedOnSymbolValue | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 577c8011-9269-4373-8577-b4822a983724
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7e7546454ddb60babff757f86aab023ce5bb7d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f0d6e653bbafc09a9182cac743bdc97a23a6c58e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740138"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463296"
 ---
 # <a name="idiasymbolget_ispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
-Określa, czy `this` wskaźnik jest oparty na wartości symbolu.
+Określa, czy `this` wskaźnik jest oparty na wartości symbolicznej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +30,10 @@ HRESULT get_isPointerBasedOnSymbolValue(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Wskaźnik do `BOOL`, który określa, czy `this` wskaźnik jest oparty na wartości symbolicznej.
+określoną Wskaźnik do elementu `BOOL` , który określa, czy `this` wskaźnik jest oparty na wartości symbolicznej.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

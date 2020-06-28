@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_registerType | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: f1c98ab0-8aef-4a07-a686-28b8a54418ef
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e849bea3bd5480f480001c091e5988fa5e6b5444
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4bec7396bdd457da35b7a3a9150482886d02dc6c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739435"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462470"
 ---
 # <a name="idiasymbolget_registertype"></a>IDiaSymbol::get_registerType
 Pobiera typ rejestru.
@@ -30,10 +30,10 @@ HRESULT get_registerType(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Wskaźnik do `DWORD`, który zawiera typ rejestru.
+określoną Wskaźnik do `DWORD` , który zawiera typ rejestru.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

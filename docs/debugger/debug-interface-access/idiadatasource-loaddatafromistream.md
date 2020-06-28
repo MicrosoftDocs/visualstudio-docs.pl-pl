@@ -1,7 +1,7 @@
 ---
 title: 'IDiaDataSource:: loadDataFromIStream | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bcf657b4404ed72059351175d124a9c07abb46
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a6a19d926ead4c2c38ff69544311caa1f726b3e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744952"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468512"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Przygotowuje dane debugowania przechowywane w pliku bazy danych programu (. pdb) za pomocą strumienia danych znajdującego się w pamięci.
@@ -33,10 +33,10 @@ HRESULT loadDataFromIStream ( 
 #### <a name="parameters"></a>Parametry
  pIStream
 
-podczas Obiekt <xref:IStream> reprezentujący strumień danych do użycia.
+podczas <xref:IStream>Obiekt reprezentujący strumień danych do użycia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.
 
 |Wartość|Opis|
 |-----------|-----------------|
@@ -45,7 +45,7 @@ podczas Obiekt <xref:IStream> reprezentujący strumień danych do użycia.
 |E_UNEXPECTED|Źródło danych zostało już przygotowane.|
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda umożliwia uzyskanie danych debugowania dla pliku wykonywalnego z pamięci za pośrednictwem obiektu <xref:IStream>.
+ Ta metoda umożliwia uzyskanie danych debugowania dla pliku wykonywalnego z pamięci za pośrednictwem <xref:IStream> obiektu.
 
  Aby załadować plik. pdb bez sprawdzania poprawności, użyj metody [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
 
@@ -53,7 +53,7 @@ podczas Obiekt <xref:IStream> reprezentujący strumień danych do użycia.
 
  Aby uzyskać dostęp do procesu ładowania danych (za pomocą mechanizmu wywołania zwrotnego), należy użyć metody [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)

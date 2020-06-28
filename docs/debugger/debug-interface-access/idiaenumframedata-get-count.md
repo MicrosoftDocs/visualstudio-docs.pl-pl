@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumFrameData:: get_Count | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec182918cccb42cf4d1c3cfdb3ae816aeef97a73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6b0e14272474724579a34480254e399c92d825f1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744638"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468344"
 ---
 # <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
 Pobiera liczbę elementów danych ramek.
@@ -36,8 +36,8 @@ HRESULT get_Count ( 
 określoną Zwraca liczbę elementów danych ramek.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

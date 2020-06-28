@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumDebugStreamData:: get_Count | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1379a058cdfceea6762b88784cb7137583e6da74
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 177ba4d84155b2688375421c614c3fb794a81f16
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744884"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468477"
 ---
 # <a name="idiaenumdebugstreamdataget_count"></a>IDiaEnumDebugStreamData::get_Count
 Pobiera rekordy liczb w strumieniu danych debugowania.
@@ -35,8 +35,8 @@ HRESULT get_Count ( 
 - [out, retval] Zwraca liczbę rekordów.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)

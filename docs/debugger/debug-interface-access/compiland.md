@@ -1,7 +1,7 @@
 ---
 title: Jednostka kompilacji | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb4ca05374c86912cd48956262645b80fb14e40
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65c6a9460415112f9d86af6d5cf8766ad7d55f97
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745436"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462261"
 ---
 # <a name="compiland"></a>Jednostka kompilacji
-Istnieje jeden `SymTagCompiland` symbol dla każdego jednostka kompilacji połączonego z plikiem exe. Informacje jednostka kompilacji są dzielone między symbolami ze znacznikiem `SymTagCompiland`, które można pobrać bez ładowania dodatkowych symboli jednostka kompilacji i symboli ze znacznikiem `SymTagCompilandDetails`, które mogą wymagać załadowania dodatkowych symboli.
+Istnieje jeden `SymTagCompiland` symbol dla każdego jednostka kompilacji połączonego z plikiem exe. Informacje jednostka kompilacji są dzielone między symbolami ze `SymTagCompiland` znacznikiem, które można pobrać bez ładowania dodatkowych symboli jednostka kompilacji i symboli ze `SymTagCompilandDetails` znacznikiem, które mogą wymagać załadowania dodatkowych symboli.
 
 ## <a name="properties"></a>Właściwości
  W poniższej tabeli przedstawiono właściwości, które są prawidłowe dla tego typu symbolu.
 
 |Właściwość|Typ danych|Opis|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`, czy funkcja Edytuj i Kontynuuj została włączona podczas kompilacji.|
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Jeśli funkcja Edytuj i Kontynuuj została włączona podczas kompilacji.|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol pliku. exe.|
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Identyfikator leksykalnego symbolicznego symbolu.|
 |[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Nazwa biblioteki lub pliku obiektu, z którego został załadowany obiekt.|
@@ -37,7 +37,7 @@ Istnieje jeden `SymTagCompiland` symbol dla każdego jednostka kompilacji połą
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu symbolu.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagCompiland` (jedną z wartości [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) ).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
 - [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)
 - [Hierarchia leksykalna typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

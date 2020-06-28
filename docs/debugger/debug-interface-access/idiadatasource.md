@@ -1,7 +1,7 @@
 ---
 title: IDiaDataSource | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 453be1d77f1d2b1759e3de4433225cf97d026054
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9f8730fb864a70e7f649d5e8b4920d916c07c11
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744904"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468491"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 Inicjuje dostęp do źródła symboli debugowania.
@@ -29,7 +29,7 @@ IDiaDataSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaDataSource`.
+W poniższej tabeli przedstawiono metody `IDiaDataSource` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -41,10 +41,10 @@ W poniższej tabeli przedstawiono metody `IDiaDataSource`.
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Otwiera sesję do wykonywania zapytań o symbole.|
 
 ## <a name="remarks"></a>Uwagi
-Wywołanie jednej z metod ładowania interfejsu `IDiaDataSource` otwiera źródło symboli. Pomyślne wywołanie metody [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) zwraca interfejs [IDiaSession](../../debugger/debug-interface-access/idiasession.md) , który obsługuje zapytania względem źródła danych. Jeśli metoda Load zwraca błąd związany z plikiem, wówczas wartość zwracana przez metodę [IDiaDataSource:: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) zawiera nazwę pliku skojarzoną z błędem.
+Wywołanie jednej z metod ładowania `IDiaDataSource` interfejsu spowoduje otwarcie źródła symboli. Pomyślne wywołanie metody [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) zwraca interfejs [IDiaSession](../../debugger/debug-interface-access/idiasession.md) , który obsługuje zapytania względem źródła danych. Jeśli metoda Load zwraca błąd związany z plikiem, wówczas wartość zwracana przez metodę [IDiaDataSource:: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) zawiera nazwę pliku skojarzoną z błędem.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Ten interfejs jest uzyskiwany przez wywołanie funkcji `CoCreateInstance` z identyfikatorem klasy `CLSID_DiaSource` i IDENTYFIKATORem interfejsu `IID_IDiaDataSource`. W przykładzie pokazano, jak zostanie uzyskany ten interfejs.
+Ten interfejs jest uzyskiwany przez wywołanie `CoCreateInstance` funkcji z identyfikatorem klasy `CLSID_DiaSource` i identyfikatorem interfejsu `IID_IDiaDataSource` . W przykładzie pokazano, jak zostanie uzyskany ten interfejs.
 
 ## <a name="example"></a>Przykład
 
@@ -67,7 +67,7 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

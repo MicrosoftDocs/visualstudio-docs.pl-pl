@@ -1,7 +1,7 @@
 ---
 title: 'IDiaDataSource:: loadDataForExe | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a86abb00ebc090c37f03a5533376ae0b9c3e8ae
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2ed61f8ffc95d0004213483d5b5d507c45ef2647
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744960"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468519"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Otwiera i przygotowuje dane debugowania powiązane z plikiem exe/. dll.
@@ -43,10 +43,10 @@ podczas Alternatywna ścieżka do wyszukiwania danych debugowania.
 
 pCallback
 
-podczas Interfejs `IUnknown` dla obiektu, który obsługuje interfejs debugowania wywołania zwrotnego, taki jak [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)i/lub interfejsy [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
+podczas `IUnknown`Interfejs obiektu, który obsługuje interfejs wywołania zwrotnego debugowania, taki jak [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)i/lub [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono niektóre możliwe kody błędów dla tej metody.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono niektóre możliwe kody błędów dla tej metody.
 
 |Wartość|Opis|
 |-----------|-----------------|
@@ -60,9 +60,9 @@ Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W p
 ## <a name="remarks"></a>Uwagi
 Nagłówek debugowania pliku. exe/. dll nazywa skojarzoną lokalizację danych debugowania.
 
-Ta metoda odczytuje nagłówek debugowania, a następnie wyszukuje i przygotowuje dane debugowania. Postęp wyszukiwania może, opcjonalnie, być raportowany i kontrolowany przez wywołania zwrotne. Na przykład, [IDiaLoadCallback:: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) jest wywoływana, gdy metoda `IDiaDataSource::loadDataForExe` odnajdzie i przetwarza katalog debugowania.
+Ta metoda odczytuje nagłówek debugowania, a następnie wyszukuje i przygotowuje dane debugowania. Postęp wyszukiwania może, opcjonalnie, być raportowany i kontrolowany przez wywołania zwrotne. Na przykład, [IDiaLoadCallback:: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) jest wywoływana, gdy `IDiaDataSource::loadDataForExe` Metoda odnajdzie i przetwarza katalog debugowania.
 
-Interfejsy [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) i [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) umożliwiają aplikacji klienckiej dostarczanie alternatywnych metod odczytywania danych z pliku wykonywalnego, gdy nie można uzyskać dostępu do pliku bezpośrednio za pośrednictwem standardu we/wy pliku.
+Interfejsy [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) i [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) umożliwiają aplikacji klienckiej dostarczanie alternatywnych metod odczytywania danych z pliku wykonywalnego, gdy nie można uzyskać dostępu do pliku bezpośrednio za pośrednictwem standardowego we/wy pliku.
 
 Aby załadować plik. pdb bez sprawdzania poprawności, użyj metody [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
 
@@ -86,7 +86,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

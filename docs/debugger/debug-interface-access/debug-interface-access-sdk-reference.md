@@ -1,7 +1,7 @@
 ---
 title: Odwołanie do zestawu SDK dostępu do interfejsu debugowania | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa8e898a4f045f739eed156e181346a9a6e2df3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7fb49ee4ccd49d848b4d770459352c685469fb7b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745268"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468701"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Odwołanie do zestawu SDK dostępu do interfejsu debugowania
 
@@ -41,10 +41,10 @@ Opisuje szereg ciągów i ich etykiety, które mogą być używane z interfejsam
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+[Symbole i znaczniki symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
 Opisuje, jakie symbole są i jak są identyfikowane przez typ.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zestaw SDK dostępu do interfejsu debugowania](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

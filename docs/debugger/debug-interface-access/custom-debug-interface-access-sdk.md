@@ -1,7 +1,7 @@
 ---
 title: Niestandardowy (zestaw SDK dostępu do interfejsu debugowania) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3e3300eb416df3a3af7fd628f784397b77beeb4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 420090cb0b93d274517950982cd8f7fea07d250c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745392"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462219"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Niestandardowe (Zestaw SDK dostępu do interfejsu debugowania)
-Niektóre kompilatory wprowadzają symbole, które nie są identyfikowane przez żaden ze standardowych typów symboli leksykalnych. Te symbole są identyfikowane przez tag `SymTagCustom`.
+Niektóre kompilatory wprowadzają symbole, które nie są identyfikowane przez żaden ze standardowych typów symboli leksykalnych. Te symbole są identyfikowane przez `SymTagCustom` tag.
 
 ## <a name="properties"></a>Właściwości
  W poniższej tabeli przedstawiono właściwości, które są prawidłowe dla tego typu symbolu.
@@ -31,5 +31,5 @@ Niektóre kompilatory wprowadzają symbole, które nie są identyfikowane przez 
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu symbolu.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagCustom` (jedną z wartości [wyliczenia SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) ).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Hierarchia leksykalna typów symboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

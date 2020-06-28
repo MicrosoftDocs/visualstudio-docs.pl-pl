@@ -1,7 +1,7 @@
 ---
 title: CompilandDetails | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bcedda06119149413895415272c1a18934bce7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: da102a8968bc3e29091f6b4b58ee6ef78c6c3fb3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280829"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462254"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Informacje jednostka kompilacji są dzielone między symbolami ze `SymTagCompiland` znacznikiem (Low detail) i `SymTagCompilandDetails` tagiem (High detail). `SymTagCompilandDetails`zawiera mnóstwo informacji o jednostka kompilacji, które nie są dostępne z `SymTagCompiland` symbolem.

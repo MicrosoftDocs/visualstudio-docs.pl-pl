@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreamData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5929f6f36c183d3a580ab605d313695cb584664
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b12c0c8823bbaf687e7157c272b64e50e7dd02b1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744841"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468428"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
 Zapewnia dostęp do rekordów w strumieniu danych debugowania.
@@ -29,7 +29,7 @@ IDiaEnumDebugStreamData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaEnumDebugStreamData`.
+W poniższej tabeli przedstawiono metody `IDiaEnumDebugStreamData` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -46,7 +46,7 @@ W poniższej tabeli przedstawiono metody `IDiaEnumDebugStreamData`.
 Ten interfejs reprezentuje strumień rekordów w strumieniu danych debugowania. Rozmiar i interpretacja każdego rekordu zależy od strumienia danych, z którego pochodzi rekord. Ten interfejs skutecznie zapewnia dostęp do nieprzetworzonych bajtów danych w pliku symboli.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Wywołaj metodę [IDiaEnumDebugStreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) lub [IDiaEnumDebugStreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) , aby uzyskać obiekt `IDiaEnumDebugStreamData`.
+Wywołaj metodę [IDiaEnumDebugStreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) lub [IDiaEnumDebugStreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) , aby uzyskać `IDiaEnumDebugStreamData` obiekt.
 
 ## <a name="example"></a>Przykład
  Ten przykład pokazuje, jak uzyskać dostęp do pojedynczego strumienia danych i jego rekordów.
@@ -107,9 +107,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)
 - [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

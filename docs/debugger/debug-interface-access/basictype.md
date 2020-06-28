@@ -1,7 +1,7 @@
 ---
 title: Basictype | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fff76abdecdd8613a462225278053ef4f6d9694
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b7d9df59d5a3075bf63d619a03e8fe31da6991a1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745482"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462282"
 ---
 # <a name="basictype"></a>BasicType
 Określa typ podstawowy symbolu.
@@ -52,39 +52,39 @@ enum BasicType {
 ## <a name="elements"></a>Elementy
 btNoType nie jest określony typ podstawowy.
 
-Typ podstawowy btVoid jest `void`.
+Typ podstawowy btVoid to `void` .
 
-Typ podstawowy btChar to `char` (C/C++ typ).
+Typ podstawowy btChar to `char` Typ (C/C++).
 
-Typ podstawowy btWChar jest znakiem szerokim (Unicode) (`WCHAR`).
+Typ podstawowy btWChar jest znakiem szeroki (Unicode) ( `WCHAR` ).
 
-Typ podstawowy btInt to `signed int` (C/C++ typ).
+Typ podstawowy btInt to `signed int` (typ C/C++).
 
-Typ podstawowy btUInt to `unsigned int` (C/C++ typ).
+Typ podstawowy btUInt to `unsigned int` (typ C/C++).
 
-Typ podstawowy btFloat jest liczbą zmiennoprzecinkową (`FLOAT`).
+Typ podstawowy btFloat to liczba zmiennoprzecinkowa ( `FLOAT` ).
 
-Typ podstawowy btBCD jest kodowany binarnie cyfrą dziesiętną (`BCD`).
+Typ podstawowy btBCD jest kodowane binarnie ( `BCD` ).
 
-Typ podstawowy btBool jest wartością logiczną (`BOOL`).
+Typ podstawowy btBool jest wartością logiczną ( `BOOL` ).
 
-Typ podstawowy btLong to `long int` (C/C++ typ).
+Typ podstawowy btLong to `long int` Typ (C/C++).
 
-Typ podstawowy btULong to `unsigned long int` (C/C++ typ).
+Typ podstawowy btULong to `unsigned long int` Typ (C/C++).
 
 Typ podstawowy btCurrency jest walutą.
 
-Typ podstawowy btDate to data/godzina (`DATE`).
+Typ podstawowy btDate to data/godzina ( `DATE` ).
 
-Typ podstawowy btVariant jest strukturą typu zmiennej (`VARIANT`).
+Typ podstawowy btVariant jest strukturą typu zmiennej ( `VARIANT` ).
 
 Typ podstawowy btComplex jest liczbą zespoloną.
 
 Typ podstawowy btBit jest bitowy.
 
-Typ podstawowy btBSTR to podstawowy lub binarny ciąg (`BSTR`).
+Typ podstawowy btBSTR jest ciągiem Basic lub binary ( `BSTR` ).
 
-Typ podstawowy btHresult jest `HRESULT`.
+Typ podstawowy btHresult to `HRESULT` .
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są zwracane przez metodę [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .
@@ -92,7 +92,7 @@ Wartości w tym wyliczeniu są zwracane przez metodę [IDiaSymbol:: get_baseType
 ## <a name="requirements"></a>Wymagania
 Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
 - [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

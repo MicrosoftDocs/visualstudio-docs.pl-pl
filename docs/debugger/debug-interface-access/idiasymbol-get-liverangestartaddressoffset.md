@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_liveRangeStartAddressOffset | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39bf1e73d8b056c1cfcbfafd41dcbbb464c40ce
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2563afe5c5323415c5d4c9d7f0b0fa89583f9736
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739921"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463037"
 ---
 # <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 Zwraca część przesunięcia adresu początkowego zakresu, w którym lokalny symbol jest prawidłowy.
@@ -36,7 +36,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
 określoną Zwraca część przesunięcia z zakresu adresów początkowych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 > [!NOTE]
 > Zwrócony kod błędu oznacza, że symbol nie zawiera informacji o zakresie na żywo.
@@ -51,7 +51,7 @@ określoną Zwraca część przesunięcia z zakresu adresów początkowych.
 
  Biblioteka: diaguids. lib
 
- DLL: msdia100. dll
+ DLL: msdia100.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

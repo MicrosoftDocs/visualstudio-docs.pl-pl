@@ -1,7 +1,7 @@
 ---
 title: 'IDiaAddressMap:: set_addressMap | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8414788af44d78943088b78b2d3e42a5a8d8c50b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4af506da822a7f8e38a8952d7c1d0d15fc1995d2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745027"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468554"
 ---
 # <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
 Udostępnia mapę adresów do obsługi tłumaczenia układu obrazu.
@@ -35,7 +35,7 @@ HRESULT set_addressMap ( 
 #### <a name="parameters"></a>Parametry
  `cbData`
 
-podczas Liczba elementów w parametrze `data`.
+podczas Liczba elementów w `data` parametrze.
 
  `data[]`
 
@@ -43,15 +43,15 @@ podczas Tablica struktur [struktury DiaAddressMapEntry —](../../debugger/debug
 
  `imagetoSymbols`
 
-[in] `TRUE`, jeśli parametr `data` definiuje mapę z nowego układu obrazu do oryginalnego układu (zgodnie z opisem przez symbole debugowania). `FALSE`, jeśli `data` jest mapą do nowego układu obrazu pobranego z oryginalnego układu.
+[w] `TRUE` Jeśli `data` parametr definiuje mapę z nowego układu obrazu do oryginalnego układu (zgodnie z opisem przez symbole debugowania). `FALSE`Jeśli `data` jest mapą do nowego układu obrazu pobranego z oryginalnego układu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zazwyczaj DIA Pobiera mapowania translacji adresów z pliku bazy danych programu (. pdb). Jeśli brakuje tych wartości, Metoda [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) jest wywoływana dwukrotnie, raz z parametrem `imagetoSymbols` ustawionym na `TRUE` i jeden raz z parametrem `imagetoSymbols` ustawionym na `FALSE`. Nie można włączyć translacji mapowania adresów przy użyciu metody [IDiaAddressMap::P ut_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , jeśli nie podano obydwu map tłumaczeń.
+ Zazwyczaj DIA Pobiera mapowania translacji adresów z pliku bazy danych programu (. pdb). Jeśli brakuje tych wartości, Metoda [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) jest wywoływana dwukrotnie, raz z `imagetoSymbols` parametrem ustawionym na `TRUE` i jeden raz z `imagetoSymbols` parametrem ustawionym na `FALSE` . Nie można włączyć translacji mapowania adresów przy użyciu metody [IDiaAddressMap::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , chyba że podano oba mapy tłumaczeń.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [DiaAddressMapEntry, struktura](../../debugger/debug-interface-access/diaaddressmapentry.md)
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)

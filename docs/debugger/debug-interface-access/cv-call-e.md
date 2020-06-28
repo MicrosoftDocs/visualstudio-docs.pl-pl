@@ -1,7 +1,7 @@
 ---
 title: CV_call_e | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb59d4bbee06e505ba10bf1d4f08b1b06aa62d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: afab1aef58616bfa925fd9f37aacf195eb569c96
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745352"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462142"
 ---
 # <a name="cv_call_e"></a>CV_call_e
 Określa konwencję wywoływania dla funkcji.
@@ -41,13 +41,13 @@ typedef enum CV_call_e {
 ## <a name="elements"></a>Elementy
 CV_CALL_NEAR_C określa konwencję wywoływania funkcji przy użyciu opcji niemal od prawej do lewej. Funkcja wywołująca czyści stos.
 
-CV_CALL_NEAR_FAST określa konwencję wywoływania funkcji za pomocą niemal od lewej do prawej wypychania z rejestrami. Wywołana funkcja używa sumy parametrów bajtów do wyczyszczenia stosu.
+CV_CALL_NEAR_FAST określa konwencję wywoływania funkcji, używając niemal od lewej do prawej wypychania z rejestrami. Wywołana funkcja używa sumy parametrów bajtów do wyczyszczenia stosu.
 
-CV_CALL_NEAR_STD określa konwencję wywoływania funkcji przy użyciu wywołania blisko standardowego (wypychanie od prawej do lewej).
+CV_CALL_NEAR_STD określa konwencję wywoływania funkcji przy użyciu wywołania blisko standardowego (wypychania od prawej do lewej).
 
 CV_CALL_NEAR_SYS określa konwencję wywoływania funkcji przy użyciu wywołania blisko systemu.
 
-CV_CALL_THISCALL określa konwencję wywoływania funkcji przy użyciu wywołania `this` (`this` wskaźnik przeszedł do rejestru).
+CV_CALL_THISCALL określa konwencję wywoływania funkcji przy użyciu `this` wywołania ( `this` wskaźnik przeszedł do rejestru).
 
 CV_CALL_CLRCALL określa konwencję wywoływania funkcji używaną przez środowisko uruchomieniowe języka wspólnego (CLR) (znaną również jako konwencja wywoływania kodu zarządzanego).
 
@@ -57,6 +57,6 @@ Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaSymbol:: ge
 ## <a name="requirements"></a>Wymagania
 Nagłówek: cvconst. h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

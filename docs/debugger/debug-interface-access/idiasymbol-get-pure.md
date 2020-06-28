@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_pure | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489a50da8c5af4c7e63f0c8109c2810716d598e7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 24a3c507ae0cacae3f7819b0e9566e4f9b91c2c9
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739473"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462526"
 ---
 # <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
 Pobiera flagę, która określa, czy funkcja jest czystym elementem wirtualnym.
@@ -33,13 +33,13 @@ HRESULT get_pure ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Zwraca `TRUE`, jeśli funkcja jest czystym wirtualnym; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy funkcja jest czysta wirtualna; w przeciwnym razie zwraca wartość `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

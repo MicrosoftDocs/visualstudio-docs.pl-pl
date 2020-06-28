@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_name | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 754416049197a92344fd238b28ec99e8fb912791
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4bf03315fe2f78ccfc4acd9d8c0aed8f6729f679
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739765"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462883"
 ---
 # <a name="idiasymbolget_name"></a>IDiaSymbol::get_name
 Pobiera nazwę symbolu.
@@ -36,10 +36,10 @@ HRESULT get_name ( 
 określoną Zwraca nazwę symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="example"></a>Przykład
 
@@ -49,5 +49,5 @@ BSTR        name;
 pType->get_name( &name );
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

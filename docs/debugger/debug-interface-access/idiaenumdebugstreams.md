@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreams | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e14e594b385a2fa93f51eed4dec36d74db347e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e73087786e43c254c9635b239f59e7b4dd982090
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744693"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468372"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 Wylicza różne strumienie debugowania zawarte w źródle danych.
@@ -29,11 +29,11 @@ IDiaEnumDebugStreams : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
-W poniższej tabeli przedstawiono metody `IDiaEnumDebugStreams`.
+W poniższej tabeli przedstawiono metody `IDiaEnumDebugStreams` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Pobiera wersję `IEnumVARIANT` tego modułu wyliczającego.|
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Pobiera `IEnumVARIANT` wersję tego modułu wyliczającego.|
 |[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|Pobiera liczbę strumieni debugowania.|
 |[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Pobiera strumień debugowania za pomocą indeksu.|
 |[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|Pobiera określoną liczbę strumieni debugowania w sekwencji wyliczenia.|
@@ -45,10 +45,10 @@ W poniższej tabeli przedstawiono metody `IDiaEnumDebugStreams`.
 Zawartość strumieni debugowania jest zależna od implementacji, a formaty danych są nieudokumentowane.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Wywołaj metodę [IDiaSession:: getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) w celu uzyskania obiektu `IDiaEnumDebugStreams`.
+Wywołaj metodę [IDiaSession:: getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) , aby uzyskać `IDiaEnumDebugStreams` obiekt.
 
 ## <a name="example"></a>Przykład
-Ten przykład pokazuje, jak uzyskać dostęp do strumieni danych dostępnych w tym interfejsie. Zobacz interfejs [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) , aby uzyskać implementację funkcji `PrintStreamData`.
+Ten przykład pokazuje, jak uzyskać dostęp do strumieni danych dostępnych w tym interfejsie. Zapoznaj się z interfejsem [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) , aby poznać implementację `PrintStreamData` funkcji.
 
 ```C++
 void DumpAllDebugStreams( IDiaSession* pSession)
@@ -82,9 +82,9 @@ Nagłówek: dia2. h
 
 Biblioteka: diaguids. lib
 
-DLL: msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)

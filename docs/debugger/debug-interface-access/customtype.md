@@ -1,7 +1,7 @@
 ---
 title: CustomType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be5ed68ef6923bfc58ebc072f27268e8d4e163b2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b5398cbd4b2678bd435673eb8b30155d3593d34c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745371"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462156"
 ---
 # <a name="customtype"></a>CustomType
-Typy zdefiniowane przez dostawcę (typy specyficzne dla kompilatora) są identyfikowane przez symbol `SymTagCustomType`.
+Typy zdefiniowane przez dostawcę (typy specyficzne dla kompilatora) są identyfikowane przez `SymTagCustomType` symbol.
 
 ## <a name="properties"></a>Właściwości
  W poniższej tabeli przedstawiono dodatkowe prawidłowe właściwości dla tego typu symbolu.
@@ -35,5 +35,5 @@ Typy zdefiniowane przez dostawcę (typy specyficzne dla kompilatora) są identyf
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Identyfikator symbolu typu.|
 |[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Tablica wszystkich typów, do których odwołuje się symbol typu niestandardowego.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

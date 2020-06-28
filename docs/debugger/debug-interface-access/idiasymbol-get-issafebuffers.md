@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_isSafeBuffers | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f4c3ab653c0a5540410d8e3e0b5426c4d0bcde5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 84123d88bc379ea670caca90d66207fc6e16f26f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740088"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463212"
 ---
 # <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-Pobiera flagę, która określa, czy jest używana dyrektywa preprocesora dla bezpiecznego bufora. Użyj, gdy [Wyliczenie SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) jest ustawione na `SymTagFunction`.
+Pobiera flagę, która określa, czy jest używana dyrektywa preprocesora dla bezpiecznego bufora. Użyj, gdy [Wyliczenie SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) jest ustawione na `SymTagFunction` .
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,13 +33,13 @@ HRESULT get_isSafeBuffers( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Zwraca `TRUE`, jeśli wskaźnik używa dyrektywy preprocesora dla bezpiecznego buforu; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy wskaźnik używa dyrektywy preprocesora dla bezpiecznego bufora; w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
 
@@ -48,8 +48,8 @@ określoną Zwraca `TRUE`, jeśli wskaźnik używa dyrektywy preprocesora dla be
 
  Biblioteka: diaguids. lib
 
- DLL: msdia100. dll
+ DLL: msdia100.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [strict_gs_check](/cpp/preprocessor/strict-gs-check)

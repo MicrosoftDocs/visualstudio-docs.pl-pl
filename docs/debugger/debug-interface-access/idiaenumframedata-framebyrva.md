@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumFrameData:: frameByRVA | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a6636b692a3017adb6d8b9242dca62f397bf40
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3cb00e661fc3976201abb4ab7304422195fda272
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744673"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468358"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Zwraca ramkę według względnego adresu wirtualnego (RVA).
@@ -41,8 +41,8 @@ podczas Adres RVA ramki zainteresowania.
 określoną Zwraca obiekt [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) reprezentujący ramkę, która zawiera podany adres.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli żadne dane ramki nie pasują do podanego adresu. W przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli żadne dane ramki nie pasują do podanego adresu. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

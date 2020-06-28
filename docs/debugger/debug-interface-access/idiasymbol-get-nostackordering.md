@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_noStackOrdering | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9c93119ee89355c9aae5c91caa185c9a1a6bb5d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c82b8c4836d97f02fa84aec500d961911f993df3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739725"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462792"
 ---
 # <a name="idiasymbolget_nostackordering"></a>IDiaSymbol::get_noStackOrdering
 Ta funkcja Pobiera flagę wskazującą, czy nie można wykonać porządkowania stosu w ramach sprawdzania buforu stosu (opcja kompilatora[(sprawdzanie zabezpieczeń buforu)](/cpp/build/reference/gs-buffer-security-check) ).
@@ -33,10 +33,10 @@ HRESULT get_noStackOrdering(
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-określoną Zwraca `TRUE`, jeśli nie można wykonać porządkowania stosu w ramach sprawdzania buforu stosu; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy nie można wykonać porządkowania stosu w ramach sprawdzania buforu stosu; w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
 > Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
@@ -48,6 +48,6 @@ określoną Zwraca `TRUE`, jeśli nie można wykonać porządkowania stosu w ram
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-- [/GS (Sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check)
+- [/GS (sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check)

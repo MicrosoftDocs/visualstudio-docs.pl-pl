@@ -1,7 +1,7 @@
 ---
 title: IDiaAddressMap | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e06acf045ce1893762d5c898752dd6bc40de50a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ddf4b1c2a6a22170fb52da200bbd53c2b6b96e62
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744989"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468533"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 Zapewnia kontrolę nad sposobem, w jaki DIA SDK oblicza wirtualne i względne adresy wirtualne dla obiektów debugowania.
@@ -29,7 +29,7 @@ IDiaAddressMap : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
- W poniższej tabeli przedstawiono metody `IDiaAddressMap`.
+ W poniższej tabeli przedstawiono metody `IDiaAddressMap` .
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -43,19 +43,19 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Udostępnia mapę adresów do obsługi tłumaczenia układu obrazu.|
 
 ## <a name="remarks"></a>Uwagi
- Kontrolka udostępniana przez ten interfejs jest hermetyzowana w dwóch zestawach danych, które dostarczasz: nagłówki i mapowania adresów obrazu. Większość klientów używa metody [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) , aby znaleźć odpowiednie informacje debugowania dla obrazu, a metoda zazwyczaj może wykryć wszystkie wymagane nagłówki i mapować same dane. Jednak niektórzy klienci implementują wyspecjalizowane przetwarzanie i wyszukują dane. Tacy klienci używają metod interfejsu `IDiaAddressMap`, aby zapewnić DIA SDK z wynikami wyszukiwania.
+ Kontrolka udostępniana przez ten interfejs jest hermetyzowana w dwóch zestawach danych, które dostarczasz: nagłówki i mapowania adresów obrazu. Większość klientów używa metody [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) , aby znaleźć odpowiednie informacje debugowania dla obrazu, a metoda zazwyczaj może wykryć wszystkie wymagane nagłówki i mapować same dane. Jednak niektórzy klienci implementują wyspecjalizowane przetwarzanie i wyszukują dane. Tacy klienci używają metod `IDiaAddressMap` interfejsu w celu zapewnienia DIA SDK z wynikami wyszukiwania.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Ten interfejs jest dostępny w obiekcie sesji DIA. Klient wywołuje metodę `QueryInterface` w interfejsie obiektu sesji DIA, zwykle [IDiaSession](../../debugger/debug-interface-access/idiasession.md), aby pobrać interfejs `IDiaAddressMap`.
+ Ten interfejs jest dostępny w obiekcie sesji DIA. Klient wywołuje `QueryInterface` metodę w interfejsie obiektu sesji DIA, zwykle [IDiaSession](../../debugger/debug-interface-access/idiasession.md), aby pobrać `IDiaAddressMap` interfejs.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: dia2. h
 
  Biblioteka: diaguids. lib
 
- DLL: msdia80. dll
+ DLL: msdia80.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

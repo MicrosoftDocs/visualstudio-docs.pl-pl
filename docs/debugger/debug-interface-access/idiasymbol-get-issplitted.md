@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_isSplitted | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9511551a2f3530adc14bee0f6eec3cf360b41c03
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c2bae3d054aa8e331db3a345743e4f0e9c20b49
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740050"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463177"
 ---
 # <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
 Pobiera flagę, która określa, czy symbol danych został podzielony na agregację, czy do kolekcji innych symboli; Kompilator traktuje symbole jako osobne jednostki, nawet jeśli są naprawdę częścią większego symbolu.
@@ -33,16 +33,16 @@ HRESULT get_isSplitted(
 #### <a name="parameters"></a>Parametry
  `pFlag`
 
-określoną Zwraca `TRUE`, jeśli symbol został podzielony na zagregowane symbole; w przeciwnym razie zwraca `FALSE`.
+określoną Zwraca `TRUE` czy symbol został podzielony na agregację symboli; w przeciwnym razie zwraca `FALSE` .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
 
 > [!NOTE]
-> Wartość zwracana `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
 
 ## <a name="remarks"></a>Uwagi
- Metoda [IDiaSymbol:: get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) zwraca `TRUE` dla wszystkich symboli, które są częścią podzielonego symbolu.
+ Metoda [IDiaSymbol:: get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) zwraca `TRUE` dla wszystkich symboli, które są częścią symbolu podziału.
 
 ## <a name="requirements"></a>Wymagania
 
@@ -51,6 +51,6 @@ określoną Zwraca `TRUE`, jeśli symbol został podzielony na zagregowane symbo
 |Nagłówki|dia2. h|
 |Wersja:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)
