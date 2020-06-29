@@ -551,6 +551,8 @@
                   href: ca1828.md
                 - name: 'CA1829: Użyj właściwości Length/Count zamiast metody Enumerable.Count'
                   href: ca1829.md
+                - name: 'CA1830: Preferuj silnie typizowane przeciążenia metod Append i Insert w elemencie StringBuilder'
+                  href: ca1830.md
                 - name: 'CA1831: Użyj metody AsSpan zamiast indeksatorów opartych na zakresie dla ciągów, gdy ma to zastosowanie'
                   href: ca1831.md
                 - name: 'CA1832: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części ReadOnlySpan lub ReadOnlyMemory dla tablicy'
@@ -949,6 +951,8 @@
                   href: ca2245.md
                 - name: 'CA2246: Nie przypisuj symbolu i jego składowej w tej samej instrukcji'
                   href: ca2246.md
+                - name: 'CA2247: Argument przekazany do konstruktora TaskCompletionSource musi być wyliczeniem TaskCreationOptions, a nie wyliczeniem TaskContinuationOptions'
+                  href: ca2247.md
                 - name: 'CA2248: Podaj poprawny argument wyliczenia dla metody Enum.HasFlag'
                   href: ca2248.md
             - name: Automatyczne wstrzymanie funkcji
