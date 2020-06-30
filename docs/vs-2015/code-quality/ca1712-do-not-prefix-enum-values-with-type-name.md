@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8c79ed71290d54f97bb4ed143d32095b157e2e3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4773a34ab7112434813990b4d25cbeeb865f3a08
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669123"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543900"
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Nie należy poprzedzać wartości enum nazwą typu
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Nie dodawaj prefiksu z nazwą typu do wartości wyliczeniowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
 |CheckId|CA1712|
@@ -54,11 +54,11 @@ ms.locfileid: "72669123"
  [!code-vb[FxCop.Naming.EnumValues#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.EnumValues/vb/FxCop.Naming.EnumValues.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
  [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Nie oznaczaj typów wyliczeniowych atrybutem Flags](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Enum?displayProperty=fullName>

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: definiowanie języka właściwego dla domeny'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -16,23 +16,23 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ca9cc6b853ea95cedcb0ce109b9618fc0eb455ba
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594685"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542756"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiązanie programu Visual Studio na podstawie szablonu. Kluczową częścią rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition. DSL. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodaniu tych elementów możesz dodać kod programu, aby dostosować DSL w bardziej szczegółowy sposób.
 
 Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Wizualizacja i Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
-## <a name="templates"></a>Wybieranie rozwiązania szablonu
+## <a name="selecting-a-template-solution"></a><a name="templates"></a>Wybieranie rozwiązania szablonu
 
-Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
+Aby zdefiniować DSL, należy zainstalować następujące składniki:
 
-- {1&gt;Visual Studio&lt;1}
+- Visual Studio
 - Obciążenie programistyczne rozszerzeń programu Visual Studio (zawiera zestaw Visual Studio SDK)
 - Modeling SDK (Zainstaluj go jako pojedynczy składnik w Visual Studio)
 
@@ -66,7 +66,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
    - Wybierz opcję **minimalny język** w innych przypadkach lub jeśli jesteś nieokreślony.
 
-   - Wybierz **minimalny Projektant WinForm** lub **minimalny Projektant WPF** , aby utworzyć DSL, który jest wyświetlany na powierzchni Windows Forms lub WPF. Musisz napisać kod w celu zdefiniowania edytora. Więcej informacji znajduje się w następujących tematach:
+   - Wybierz **minimalny Projektant WinForm** lub **minimalny Projektant WPF** , aby utworzyć DSL, który jest wyświetlany na powierzchni Windows Forms lub WPF. Musisz napisać kod w celu zdefiniowania edytora. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
         [Tworzenie języka specyficznego dla domeny opartego na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -103,7 +103,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
  Eksperymentuj z narzędziami. Utwórz elementy i połącz je.
 
- Zamknij wystąpienie doświadczalne programu Visual Studio.
+ Zamknij wystąpienie eksperymentalne programu Visual Studio.
 
 > [!NOTE]
 > Po zmodyfikowaniu DSL nie będzie już można zobaczyć kształtów w przykładowym pliku testowym. Jednak będzie można tworzyć nowe elementy.
@@ -115,13 +115,13 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
 - Klasa główna pojawia się w lewym górnym rogu diagramu definicji DSL, w obszarze **klasy i relacje**. Zmień nazwę na inną niż nazwa inna niż DSL. Na przykład DSL o nazwie **MusicLibrary** może mieć klasę główną o nazwie **muzyka**.
 
-- Klasa diagram jest wyświetlana w prawym dolnym rogu diagramu definicji DSL w kolumnie **elementy diagramu** . Może być konieczne przewinięcie w prawo, aby je zobaczyć. Ma zwykle nazwę diagram _YourDsl_.
+- Klasa diagram jest wyświetlana w prawym dolnym rogu diagramu definicji DSL w kolumnie **elementy diagramu** . Może być konieczne przewinięcie w prawo, aby je zobaczyć. Ma zwykle nazwę diagram _YourDsl_**Diagram**.
 
 - Jeśli użyto szablonu **przepływu zadań** i chcesz utworzyć diagramy z tormi, Zachowaj i Zmień nazwę klasy domeny aktora i kształtu ActorSwimlane.
 
   Usuń inne klasy lub zmień ich nazwy zgodnie z wymaganiami.
 
-## <a name="patterns"></a>Wzorce definiowania linii DSL
+## <a name="patterns-for-defining-a-dsl"></a><a name="patterns"></a>Wzorce definiowania linii DSL
  Zalecamy tworzenie DSL przez dodanie lub dostosowanie jednej lub dwóch funkcji jednocześnie. Dodaj funkcję, uruchom ją i przetestuj ją, a następnie Dodaj jedną lub dwie więcej funkcji. Typową funkcją sieci DSL może być:
 
 - Klasa domeny, relacja osadzania łącząca element z modelem, kształt wymagany do wyświetlania elementów tej klasy na diagramie oraz narzędzie elementu, które umożliwia użytkownikom tworzenie elementów.
@@ -148,7 +148,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 > [!NOTE]
 > "Model" odnosi się do instancji DSL tworzonego przez użytkowników i zazwyczaj jest wyświetlana jako diagram. W tym temacie omówiono zarówno diagram definicji DSL, jak i diagramy modelu, które są wyświetlane, gdy używany jest język DSL.
 
-## <a name="classes"></a>Definiowanie klas domeny
+## <a name="defining-domain-classes"></a><a name="classes"></a>Definiowanie klas domeny
  Klasy domeny reprezentują koncepcje DSL. Wystąpienia są *elementami modelu*. Na przykład w **MusicLibrary** DSL mogą istnieć klasy domeny o nazwie **album** i **utwór**.
 
  Aby utworzyć klasę domeny, możesz przeciągnąć ją z narzędzia **klasy nazwanej domeny** do diagramu, a następnie zmienić nazwę klasy.
@@ -168,7 +168,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
 |Sposób wyświetlania elementu|Klasa nadrzędna (osadzania)|Przykład w szablonie rozwiązania DSL|
 |-|-|-|
-|Kształt na diagramie.<br /><br /> Swimlane.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadań: Klasa aktora.|
+|Kształt na diagramie.<br /><br /> Toru.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadań: Klasa aktora.|
 |Kształt w tor.|Klasa domeny elementów, które są wyświetlane jako ścieżki.|Przepływ zadań: Klasa zadań.|
 |Element na liście w kształcie, gdzie element jest usuwany po usunięciu kontenera.<br /><br /> Port na krawędzi kształtu.|Klasa domeny, która jest mapowana na kształt kontenera.|Diagram klas: Klasa atrybutu.<br /><br /> Diagram składników: Klasa portu.|
 |Element na liście, nie został usunięty, jeśli kontener został usunięty.|Klasa główna DSL.<br /><br /> Na liście są wyświetlane linki odwołań.||
@@ -190,7 +190,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
  Kliknij pozycję **właściwości domeny** w klasie, naciśnij klawisz ENTER, a następnie wpisz nazwę właściwości. Domyślny typ właściwości domeny to ciąg. Jeśli chcesz zmienić typ, wybierz właściwość domena i ustaw **Typ** w oknie **Właściwości** . Jeśli typ, który chcesz, nie znajduje się na liście rozwijanej, zobacz [Dodawanie typów właściwości](#addTypes).
 
- **Ustaw właściwość nazwy elementu.** Wybierz właściwość domeny, która może służyć do identyfikowania elementów w Eksploratorze języka. Na przykład w klasie utwór, w której można wybrać właściwość Nazwa domeny. W oknie **Właściwości** ustaw wartość **nazwa elementu** na `true`.
+ **Ustaw właściwość nazwy elementu.** Wybierz właściwość domeny, która może służyć do identyfikowania elementów w Eksploratorze języka. Na przykład w klasie utwór, w której można wybrać właściwość Nazwa domeny. W oknie **Właściwości** ustaw wartość **Nazwa elementu** na `true` .
 
 ### <a name="create-derived-domain-classes"></a>Utwórz klasy domeny pochodnej
  Jeśli chcesz, aby Klasa domeny miała różne odmiany, które dziedziczą jej właściwości i relacje, Utwórz klasy pochodne od niej. Na przykład album może mieć klasy pochodne WMA i MP3.
@@ -216,7 +216,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
 2. **Kompiluj i uruchamiaj DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie eksperymentalnym. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 
-3. **Otwórz Eksploratora.** Po stronie diagramu jest oknem Eksploratora języka, które jest zwykle nazywane *YourLanguage* Explorer. Jeśli to okno nie jest widoczne, może ono znajdować się na karcie poniżej Eksplorator rozwiązań. Jeśli nie można go znaleźć, w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij pozycję Eksplorator *YourLanguage*.
+3. **Otwórz Eksploratora.** Po stronie diagramu jest oknem Eksploratora języka, które jest zwykle nazywane *YourLanguage* Explorer. Jeśli to okno nie jest widoczne, może ono znajdować się na karcie poniżej Eksplorator rozwiązań. Jeśli nie można go znaleźć, w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij pozycję Eksplorator *YourLanguage* **Explorer**.
 
      Eksplorator przedstawia widok drzewa modelu.
 
@@ -230,12 +230,12 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
 7. **Zapisz plik, zamknij go, a następnie otwórz go ponownie**. Wszystkie utworzone wystąpienia powinny być widoczne w Eksploratorze po rozszerzeniu węzłów.
 
-## <a name="shapes"></a>Definiowanie kształtów na diagramie
+## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a>Definiowanie kształtów na diagramie
  Możesz definiować klasy elementów, które są wyświetlane na diagramie jako prostokąty, wielokropek lub ikony.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Aby zdefiniować klasę elementów, które są wyświetlane jako kształty na diagramie
 
-1. **Zdefiniuj i przetestuj klasę domeny zgodnie z opisem w**temacie[Definiowanie klas domeny](#classes) **.**
+1. **Zdefiniuj i przetestuj klasę domeny zgodnie z opisem w**temacie[Definiowanie klas domeny](#classes) **.**  
 
    - Elementem nadrzędnym klasy powinna być Klasa główna. Oznacza to, że powinna istnieć relacja osadzania między klasą główną i nową klasą domeny.
 
@@ -326,7 +326,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
    Po pierwszym przetestowaniu kształtu warto dostosować jego właściwości i dodać bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="references"></a>Definiowanie relacji odwołania
+## <a name="defining-reference-relationships"></a><a name="references"></a>Definiowanie relacji odwołania
  Istnieje możliwość zdefiniowania relacji odwołania między dowolnymi klasami domeny źródłowej i dowolnymi klasami domeny docelowej. Relacje odwołań są zwykle wyświetlane na diagramie jako łączniki, które są liniami między kształtami.
 
  Na przykład jeśli Albumy muzyczne i artyści są wyświetlane jako kształty na diagramie, można zdefiniować relację o nazwie ArtistsAppearedOnAlbums, która łączy artystów z albumami, na których pracują. Zobacz przykład na rysunku.
@@ -408,7 +408,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
    Po pierwszym przetestowaniu łącznika warto dostosować jego właściwości i dodać bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a>Definiowanie kształtów zawierających listy: kształty przedziału
+## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a>Definiowanie kształtów zawierających listy: kształty przedziału
  Kształt przedziału zawiera co najmniej jedną listę elementów. Na przykład w bibliotece Muzyka DSL można użyć kształtów przedziału do reprezentowania albumów muzycznych. W każdym albumie znajduje się lista utworów muzycznych.
 
  ![Kształt przedziału](../modeling/media/compartmentshape.png)
@@ -536,22 +536,22 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
 7. Wybierz link lub element w kształcie przedziału. Zarówno łącze, jak i element powinny zniknąć.
 
-## <a name="ports"></a>Definiowanie portów na granicy innego kształtu
+## <a name="defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a>Definiowanie portów na granicy innego kształtu
  Port jest kształtem znajdującym się na granicy innego kształtu.
 
  Portów można także użyć w celu zapewnienia stałego punktu połączenia w innym kształcie, do którego użytkownik może rysować łączniki. W takim przypadku można sprawić, aby kształt portu był przezroczysty.
 
  Aby zobaczyć przykład, który korzysta z portów, wybierz szablon **diagramu składników** podczas tworzenia nowego rozwiązania DSL. W tym przykładzie przedstawiono główne punkty, które można wziąć pod uwagę podczas definiowania portów:
 
-- Istnieje Klasa domeny, która reprezentuje kontener portów, `Component`.
+- Istnieje Klasa domeny, która reprezentuje kontener portów `Component` .
 
-- Istnieje Klasa domeny, która reprezentuje porty. W tym przykładzie jest to `ComponentPort`.
+- Istnieje Klasa domeny, która reprezentuje porty. w tym przykładzie jest to `ComponentPort`.
 
 - Istnieje relacja osadzania z klasy kontenera domeny do klasy domeny portu. Aby uzyskać więcej informacji, zobacz [Definiowanie klas domen](#classes).
 
-- Jeśli chcesz, aby różne typy portów były mieszane w tym samym kontenerze, możesz utworzyć podklasy klasy port. W przykładzie `InPort` i `OutPort` dziedziczyć po `ComponentPort`.
+- Jeśli chcesz, aby różne typy portów były mieszane w tym samym kontenerze, możesz utworzyć podklasy klasy port. W przykładzie `InPort` i `OutPort` Dziedzicz z `ComponentPort` .
 
-- Klasę domeny kontenera można zamapować na dowolny rodzaj kształtu. W tym przykładzie jest `ComponentShape`. Aby uzyskać więcej informacji, zobacz [Definiowanie kształtów](#shapes).
+- Klasę domeny kontenera można zamapować na dowolny rodzaj kształtu. W tym przykładzie jest to `ComponentShape` . Aby uzyskać więcej informacji, zobacz [Definiowanie kształtów](#shapes).
 
 - Klasy domeny portów są mapowane na kształty portów. Można zmapować klasy pochodne na oddzielne klasy kształtu portu lub zmapować klasę bazową na jedną klasę kształtu portu.
 
@@ -559,7 +559,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
   Aby uzyskać więcej informacji, zobacz [Właściwości kształtów portów](../modeling/properties-of-port-shapes.md).
 
-## <a name="swimlanes"></a>Definiowanie DSL z Tormi
+## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a>Definiowanie DSL z Tormi
  Tory to pozioma lub pionowa partycja diagramu. Każdy tor odpowiada elementowi modelu. Definicja DSL wymaga jednej klasy domeny dla elementów toru.
 
  Najlepszym sposobem utworzenia DSL z tormi jest utworzenie nowego rozwiązania DSL i wybranie szablonu rozwiązania przepływu zadań. W definicji DSL Klasa aktora jest klasą domeny zamapowana do toru. Zmień nazwę tej i innych klas, aby dopasować je do projektu.
@@ -570,7 +570,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
  Aby uzyskać więcej informacji, zobacz [Właściwości torów](../modeling/properties-of-swimlanes.md).
 
-## <a name="addTypes"></a>Dodawanie typów właściwości
+## <a name="adding-property-types"></a><a name="addTypes"></a>Dodawanie typów właściwości
 
 ### <a name="domain-enumerations-and-literals"></a>Wyliczenia domen i literały
  Wyliczenie domen jest typem z kilkoma wartościami literału.
@@ -586,7 +586,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
  Aby dodać typ, kliknij prawym przyciskiem myszy element główny modelu w Eksploratorze DSL, a następnie kliknij polecenie **Dodaj nowy typ zewnętrzny**. W okno Właściwości ustaw wartość w polu Nazwa na **kolor** i przestrzeń nazw na **System. Drawing**. Ten typ jest teraz wyświetlany w Eksploratorze DSL w obszarze **typy domen**. Możesz wybrać tę opcję, gdy ustawisz typ właściwości domeny.
 
-## <a name="custom"></a>Dostosowywanie DSL
+## <a name="customizing-the-dsl"></a><a name="custom"></a>Dostosowywanie DSL
  Korzystając z technik opisanych w tym temacie, można szybko utworzyć DSL z notacją diagramowy, czytelną postać XML i podstawowych narzędzi, które są wymagane do generowania kodu i innych artefaktów.
 
  Istnieją dwie metody rozszerzania definicji DSL:
@@ -606,7 +606,7 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 
  Zobacz również [: zmienianie przestrzeni nazw języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Rozwiązywanie problemów z
+## <a name="troubleshooting"></a><a name="trouble"></a>Rozwiązywanie problemów z
  W poniższej tabeli wymieniono najbardziej typowe problemy, które można napotkać podczas projektowania DSL, wraz z sugestiami dotyczącymi rozwiązania. Więcej porad można znaleźć na [forum rozszerzalności narzędzi do wizualizacji](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Problem | Sugestia |
@@ -616,11 +616,11 @@ Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwią
 | W Eksploratorze DSL nie można dodać do kolekcji. Na przykład po kliknięciu prawym przyciskiem myszy narzędzia nie ma polecenia "Dodaj narzędzie" w menu.<br /><br /> W Eksploratorze dla My DSL nie mogę dodać elementu do listy. | Kliknij prawym przyciskiem myszy element powyżej węzła, który próbujesz. Gdy chcesz dodać do listy, polecenie Dodaj nie znajduje się w węźle listy, ale w jego właścicielu. |
 | Po utworzeniu klasy domeny nie można tworzyć wystąpień w Eksploratorze języka. | Każda klasa domeny z wyjątkiem elementu głównego musi być elementem docelowym relacji osadzania. |
 | W Eksploratorze dla mojego języka DSL elementy są wyświetlane tylko przy użyciu ich nazw typów. | W definicji DSL wybierz właściwość domeny klasy, a w okno Właściwości ustaw wartość **Nazwa elementu** na true. |
-| Mój DSL zawsze otwiera się w edytorze XML. | Może się tak zdarzyć z powodu błędu podczas odczytywania pliku. Jednak nawet po usunięciu tego błędu należy jawnie zresetować Edytor, aby był projektantem DSL.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij przycisk **Otwórz za pomocą** i wybierz pozycję *YourLanguage* **projektanta (ustawienie domyślne)** . |
+| Mój DSL zawsze otwiera się w edytorze XML. | Może się tak zdarzyć z powodu błędu podczas odczytywania pliku. Jednak nawet po usunięciu tego błędu należy jawnie zresetować Edytor, aby był projektantem DSL.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij polecenie **Otwórz za pomocą** i wybierz pozycję * YourLanguage ***Projektant (domyślnie)**. |
 | Przybornik elementu DSL nie pojawia się po zmianie nazw zestawów. | **Aby uzyskać** więcej informacji, zobacz [temat jak: zmienianie przestrzeni nazw języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| Przybornik elementu DSL nie jest wyświetlany, ale nie zmieniono nazwy zestawu.<br /><br /> Lub pojawi się okno komunikatu z raportowaniem niepowodzenia załadowania rozszerzenia. | Zresetuj wystąpienie eksperymentalne i Skompiluj ponownie rozwiązanie.<br /><br /> 1. w menu Start systemu Windows w obszarze **Wszystkie programy**rozwiń węzeł [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], a następnie **Narzędzia**, a następnie kliknij pozycję **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio**.<br />2. w menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**. |
+| Przybornik elementu DSL nie jest wyświetlany, ale nie zmieniono nazwy zestawu.<br /><br /> Lub pojawi się okno komunikatu z raportowaniem niepowodzenia załadowania rozszerzenia. | Zresetuj wystąpienie eksperymentalne i Skompiluj ponownie rozwiązanie.<br /><br /> 1. w menu Start systemu Windows w obszarze **Wszystkie programy**rozwiń pozycję [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] **Narzędzia**, a następnie kliknij pozycję **Zresetuj Microsoft Visual Studio wystąpienie eksperymentalne**.<br />2. w menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wprowadzenie do języków specyficznych dla domeny](../modeling/getting-started-with-domain-specific-languages.md)
 - [Tworzenie języka specyficznego dla domeny opartego na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

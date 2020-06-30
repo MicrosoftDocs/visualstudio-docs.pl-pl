@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a0d5546c6f6a2f5dbd0c6063f4a1dfd40ce1d7bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658738"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544368"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Wskaźniki nie powinny być widoczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
@@ -33,10 +33,10 @@ ms.locfileid: "72658738"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Pole Public lub Protected <xref:System.IntPtr?displayProperty=fullName> lub <xref:System.UIntPtr?displayProperty=fullName> nie jest tylko do odczytu.
+ Publiczne lub chronione <xref:System.IntPtr?displayProperty=fullName> lub <xref:System.UIntPtr?displayProperty=fullName> pole nie jest tylko do odczytu.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.IntPtr> i <xref:System.UIntPtr> są typami wskaźników, które są używane w celu uzyskania dostępu do pamięci niezarządzanej. Jeśli wskaźnik nie jest prywatny, wewnętrzny lub tylko do odczytu, złośliwy kod może zmienić wartość wskaźnika, potencjalnie zezwalając na dostęp do dowolnego miejsca w pamięci lub powodując awarie aplikacji lub systemu.
+ <xref:System.IntPtr>i <xref:System.UIntPtr> są typami wskaźników, które są używane w celu uzyskania dostępu do pamięci niezarządzanej. Jeśli wskaźnik nie jest prywatny, wewnętrzny lub tylko do odczytu, złośliwy kod może zmienić wartość wskaźnika, potencjalnie zezwalając na dostęp do dowolnego miejsca w pamięci lub powodując awarie aplikacji lub systemu.
 
  Jeśli zamierzasz zabezpieczyć dostęp do typu, który zawiera pole wskaźnika, zobacz [CA2112: zabezpieczone typy nie powinny ujawniać pól](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
@@ -52,9 +52,9 @@ ms.locfileid: "72658738"
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PointersArePrivate/cs/FxCop.Security.PointersArePrivate.cs#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2112: Typy zabezpieczone nie powinny ujawniać pól](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: Zabezpieczone typy nie powinny ujawniać pól](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051: Nie deklaruj widocznych pól wystąpienia](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051: Nie deklaruj widocznych pól w wystąpieniach](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.IntPtr?displayProperty=fullName><xref:System.UIntPtr?displayProperty=fullName>
+ <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

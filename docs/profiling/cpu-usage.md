@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372e0f30c91a605be047e921bc2b7672a1cf468
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329440"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543393"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 
@@ -61,7 +61,7 @@ Począwszy od programu Visual Studio 2019, można kliknąć przycisk **Rozwiń �
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a>Kolumny danych użycia procesora CPU
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Łącznie CPU [jednostka,%]**|![Całkowite równanie (%)](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Liczba milisekund i procent użycia procesora używany przez wywołania funkcji oraz funkcje wywoływane przez funkcję, w wybranym zakresie czasu. Różni się to od wykresu osi czasu **użycie procesora** , który porównuje łączną aktywność procesora CPU w przedziale czasu z całkowitym DOSTĘPnym procesorem CPU.|
 |**Procesor CPU (jednostka,%])**|![Równanie własne%](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Wartość procentowa milisekund i procesora używana przez wywołania funkcji w wybranym zakresie czasu, z wyłączeniem funkcji wywoływanych przez funkcję.|
@@ -80,7 +80,7 @@ Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. Na str
 ![Struktura drzewa wywołań](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struktura drzewa wywołań")
 ::: moniker-end
 
-|||
+|Image (Obraz)|Opis|
 |-|-|
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołań użycia procesora CPU jest pseudo-węzłowym.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|W większości aplikacji, gdy opcja **Pokaż zewnętrzny kod** jest wyłączona, węzeł drugiego poziomu jest węzłem **[kod zewnętrzny]** . Węzeł zawiera kod systemu i struktury, który rozpoczyna i kończy działanie aplikacji, rysuje interfejs użytkownika, kontroluje harmonogram wątków i udostępnia inne usługi niskiego poziomu aplikacji.|

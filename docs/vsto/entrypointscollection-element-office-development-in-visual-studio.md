@@ -1,9 +1,9 @@
 ---
-title: '&lt;entrypointscollection —&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;entryPointsCollection — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e877e186538622b3604e850040cbed0b018911d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffa3c76f0f1afa0c9c445cfaf6f5f92484a73ba7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951895"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543562"
 ---
-# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entrypointscollection —&gt; — element (Office development w programie Visual Studio)
-  `entryPointsCollection` Elementu `vstav3` przestrzeń nazw zawiera wszystkie `entryPoints` elementy związane z rozwiązań pakietu Office.
+# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection — &gt; element (Programowanie Office w Visual Studio)
+  `entryPointsCollection`Element `vstav3` przestrzeni nazw zawiera wszystkie `entryPoints` elementy skojarzone z rozwiązaniami pakietu Office.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,20 +41,20 @@ ms.locfileid: "62951895"
 </entryPointsCollection>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `entryPointsCollection` Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw. Elementy podrzędne również musi być w tej przestrzeni nazw. Jest tylko jedna `entryPointsCollection` elementu zdefiniowanego w manifeście aplikacji.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `entryPointsCollection`Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw. Elementy podrzędne muszą również znajdować się w tej przestrzeni nazw. `entryPointsCollection`W manifeście aplikacji jest zdefiniowany tylko jeden element.
 
- `entryPointsCollection` Element nie ma żadnych atrybutów.
+ `entryPointsCollection`Element nie ma żadnych atrybutów.
 
- `entryPointsCollection` zawiera następujące elementy.
+ `entryPointsCollection`ma następujące elementy.
 
-### <a name="entrypoints"></a>punkty wejścia
- Wymagana. Rola `entryPoints` element `vstav3` przestrzeń nazw została zdefiniowana w [ &#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+### <a name="entrypoints"></a>Wejścia
+ Wymagany. Rola `entryPoints` elementu w `vstav3` przestrzeni nazw jest definiowana w [&#60;punktach wejścia&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
-## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu
+## <a name="document-level-customization-example"></a>Przykład dostosowywania na poziomie dokumentu
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `entryPointsCollection` elementu w manifeście aplikacji wdrożone za pomocą rozwiązania poziomu dokumentu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `entryPointsCollection` element w manifeście aplikacji dla rozwiązania na poziomie dokumentu wdrożonego za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -97,10 +97,10 @@ ms.locfileid: "62951895"
   </vstav3:entryPointsCollection>
 ```
 
-## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO
+## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `entryPointsCollection` elementu w manifeście aplikacji dla rozwiązań pakietu dodatku poziomu aplikacji wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `entryPointsCollection` element w manifeście aplikacji dla rozwiązania na poziomie aplikacji wdrożonego za pomocą programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -119,10 +119,10 @@ ms.locfileid: "62951895"
   </vstav3:entryPointsCollection>
 ```
 
-## <a name="multi-project-deployment-example"></a>Przykład wdrożenia wielu projektów
+## <a name="multi-project-deployment-example"></a>Przykład wdrożenia z obsługą kilku projektów
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `entryPointsCollection` elementu w manifeście aplikacji do wdrożenia wielu projektów z dwóch rozwiązań pakietu Office. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `entryPointsCollection` element w manifeście aplikacji dla wdrożenia obejmującego wiele projektów i dwóch rozwiązań pakietu Office. Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -177,7 +177,7 @@ ms.locfileid: "62951895"
     </vstav3:entryPointsCollection>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

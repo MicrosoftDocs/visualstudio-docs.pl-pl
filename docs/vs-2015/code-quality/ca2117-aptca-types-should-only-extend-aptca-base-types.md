@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 09fa055fbf1b11e06b1dde32df5a316a3ec39848
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658657"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543614"
 ---
-# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy APTCA powinny rozszerzać tylko typy bazowe APTCA
+# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy podstawowe z atrybutem APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
 |CheckId|CA2117|
@@ -33,22 +33,22 @@ ms.locfileid: "72658657"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny lub chroniony w zestawie z atrybutem <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> dziedziczy z typu zadeklarowanego w zestawie, który nie ma atrybutu.
+ Typ publiczny lub chroniony w zestawie z <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atrybutem dziedziczy z typu zadeklarowanego w zestawie, który nie ma atrybutu.
 
 ## <a name="rule-description"></a>Opis reguły
- Domyślnie typy publiczne lub chronione w zestawach o silnych nazwach są niejawnie chronione przez [żądania dziedziczenia](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) dla pełnego zaufania. Zestawy o silnych nazwach oznaczone atrybutem <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) nie mają tej ochrony. Ten atrybut powoduje wyłączenie żądania dziedziczenia. Sprawia to, że uwidocznione typy zadeklarowane w zestawie dziedziczą przez typy, które nie mają pełnego zaufania.
+ Domyślnie typy publiczne lub chronione w zestawach o silnych nazwach są niejawnie chronione przez [żądania dziedziczenia](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) dla pełnego zaufania. Zestawy o silnych nazwach oznaczone <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutem (APTCA) nie mają tej ochrony. Ten atrybut powoduje wyłączenie żądania dziedziczenia. Sprawia to, że uwidocznione typy zadeklarowane w zestawie dziedziczą przez typy, które nie mają pełnego zaufania.
 
- Gdy atrybut APTCA jest obecny w w pełni zaufanym zestawie, a typ w zestawie dziedziczy z typu, który nie zezwala częściowo zaufanym obiektom wywołującym, możliwe jest wykorzystanie zabezpieczeń. Jeśli dwa typy `T1` i `T2` spełniają następujące warunki, złośliwe obiekty wywołujące mogą używać typu `T1` do pomijania niejawnego pełnego żądania dziedziczenia, które chroni `T2`:
+ Gdy atrybut APTCA jest obecny w w pełni zaufanym zestawie, a typ w zestawie dziedziczy z typu, który nie zezwala częściowo zaufanym obiektom wywołującym, możliwe jest wykorzystanie zabezpieczeń. Jeśli dwa typy `T1` i `T2` spełnią poniższe warunki, złośliwe obiekty wywołujące mogą użyć typu, `T1` Aby pominąć niejawne, pełne zaufanie żądania dziedziczenia, które chroni `T2` :
 
-- `T1` to typ publiczny zadeklarowany w w pełni zaufanym zestawie, który ma atrybut APTCA.
+- `T1`jest typem publicznym zadeklarowanym w w pełni zaufanym zestawie, który ma atrybut APTCA.
 
-- `T1` dziedziczy z typu `T2` poza jego zestawem.
+- `T1`dziedziczy po typie `T2` poza jego zestawem.
 
-- zestaw `T2` nie ma atrybutu APTCA i dlatego nie powinien dziedziczyć typów w częściowo zaufanych zestawach.
+- `T2`zestaw nie ma atrybutu APTCA i dlatego nie powinien dziedziczyć typów w częściowo zaufanych zestawach.
 
-  Częściowo zaufany typ `X` może dziedziczyć po `T1`, co daje dostęp do dziedziczonych członków zadeklarowanych w `T2`. Ponieważ `T2` nie ma atrybutu APTCA, jego bezpośredni typ pochodny (`T1`) musi spełniać żądanie dziedziczenia dla pełnego zaufania; `T1` ma pełne zaufanie i dlatego spełnia to sprawdzenie. Zagrożenie bezpieczeństwa polega na tym, że `X` nie uczestniczy w spełnianiu wymagań dotyczących dziedziczenia chroniących `T2` od niezaufanego podklasy. Z tego powodu typy z atrybutem APTCA nie mogą obejmować typów, które nie mają atrybutu.
+  Częściowo zaufany typ `X` może dziedziczyć po `T1` , co daje dostęp do dziedziczonych członków zadeklarowanych w `T2` . Ponieważ nie `T2` ma atrybutu APTCA, jego bezpośredni typ pochodny ( `T1` ) musi spełniać żądanie dziedziczenia dla pełnego zaufania; `T1` ma pełne zaufanie i dlatego spełnia to sprawdzenie. Zagrożenie bezpieczeństwa polega na tym, `X` że nie uczestniczy w spełnianiu wymagań dotyczących dziedziczenia chroniących `T2` przed niezaufanym podklasą. Z tego powodu typy z atrybutem APTCA nie mogą obejmować typów, które nie mają atrybutu.
 
-  Innym problemem związanym z zabezpieczeniami i może być bardziej powszechny, jest to, że typ pochodny (`T1`) może za pośrednictwem błędu programisty uwidocznić chronione elementy członkowskie z typu, który wymaga pełnego zaufania (`T2`). W takim przypadku niezaufane obiekty wywołujące uzyskują dostęp do informacji, które powinny być dostępne tylko w w pełni zaufanych typach.
+  Innym problemem związanym z bezpieczeństwem, a może być bardziej powszechny, jest to, że typ pochodny ( `T1` ) może za pośrednictwem błędu programisty uwidocznić chronione elementy członkowskie z typu, który wymaga pełnego zaufania ( `T2` ). W takim przypadku niezaufane obiekty wywołujące uzyskują dostęp do informacji, które powinny być dostępne tylko w w pełni zaufanych typach.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Jeśli typ raportowany przez naruszenie znajduje się w zestawie, który nie wymaga atrybutu APTCA, usuń go.
@@ -61,7 +61,7 @@ ms.locfileid: "72658657"
  Aby bezpiecznie pominąć ostrzeżenie z tej reguły, należy się upewnić, że chronione elementy członkowskie uwidocznione przez typ nie bezpośrednio lub pośrednio nie zezwalają niezaufanym obiektom wywołującym na dostęp do poufnych informacji, operacji lub zasobów, które mogą być używane w sposób niszczący.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie są używane dwa zestawy i aplikacja testowa do zilustrowania luki w zabezpieczeniach wykrytej przez tę regułę. Pierwszy zestaw nie ma atrybutu APTCA i nie powinien dziedziczyć przez częściowo zaufane typy (reprezentowane przez `T2` w poprzedniej dyskusji).
+ W poniższym przykładzie są używane dwa zestawy i aplikacja testowa do zilustrowania luki w zabezpieczeniach wykrytej przez tę regułę. Pierwszy zestaw nie ma atrybutu APTCA i nie powinien być dziedziczony przez częściowo zaufane typy (reprezentowane przez `T2` w poprzedniej dyskusji).
 
  [!code-csharp[FxCop.Security.NoAptcaInherit#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.NoAptcaInherit/cs/FxCop.Security.NoAptcaInherit.cs#1)]
 
@@ -78,8 +78,8 @@ ms.locfileid: "72658657"
  Ten przykład generuje następujące dane wyjściowe.
 
  **Zapoznaj się z Shady glen 2/22/2003 12:00:00!** 
-**z testu: Sunny łąki** 
-**spotykają się w Sunny łąki 2/22/2003 12:00:00 am!**
+ **Z testu: Sunny łąki** 
+ **Zapoznaj się z Sunny łąki 2/22/2003 12:00:00 am!**
 ## <a name="related-rules"></a>Powiązane reguły
  [CA2116: Metody z atrybutem APTCA powinny wywoływać tylko metody z atrybutem APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 

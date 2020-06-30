@@ -16,17 +16,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 112065b2a8b9a88241ce62dda7b32a2f2c22fc75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1dfd770efd4d690930155d2486b8ff1859065272
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672025"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543653"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Dostarcz poprawne argumenty do metod formatowania
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Podaj poprawne argumenty metod formatowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
@@ -34,10 +34,10 @@ ms.locfileid: "72672025"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Argument ciągu `format` przekazywać do metody, takiej jak <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> lub <xref:System.String.Format%2A?displayProperty=fullName>, nie zawiera elementu formatu odpowiadającego każdemu argumentowi obiektu lub na odwrót.
+ `format`Argument ciągu przesłany do metody, takiej jak <xref:System.Console.WriteLine%2A> , <xref:System.Console.Write%2A> lub nie <xref:System.String.Format%2A?displayProperty=fullName> zawiera elementu formatu odpowiadającego każdemu argumentowi obiektu lub na odwrót.
 
 ## <a name="rule-description"></a>Opis reguły
- Argumenty metod takich jak <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> i <xref:System.String.Format%2A> składają się z ciągu formatu, po którym następuje kilka wystąpień <xref:System.Object?displayProperty=fullName>. Ciąg formatu składa się z tekstu i osadzonych elementów formatu w formularzu {index [, Alignment] [: formatString]}. "index" to liczba całkowita oparta na zero, która wskazuje, które obiekty mają być sformatowane. Jeśli obiekt nie ma odpowiedniego indeksu w ciągu formatu, obiekt jest ignorowany. Jeśli obiekt określony przez element "index" nie istnieje, zostanie zgłoszony <xref:System.FormatException?displayProperty=fullName> w czasie wykonywania.
+ Argumenty metod, takich jak <xref:System.Console.WriteLine%2A> , <xref:System.Console.Write%2A> i <xref:System.String.Format%2A> składają się z ciągu formatu, po którym następuje kilka <xref:System.Object?displayProperty=fullName> wystąpień. Ciąg formatu składa się z tekstu i osadzonych elementów formatu w formularzu {index [, Alignment] [: formatString]}. "index" to liczba całkowita oparta na zero, która wskazuje, które obiekty mają być sformatowane. Jeśli obiekt nie ma odpowiedniego indeksu w ciągu formatu, obiekt jest ignorowany. Jeśli obiekt określony przez element "index" nie istnieje, <xref:System.FormatException?displayProperty=fullName> jest generowany w czasie wykonywania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, podaj element formatu dla każdego argumentu obiektu i podaj argument obiektu dla każdego elementu formatu.

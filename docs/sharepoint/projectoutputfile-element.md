@@ -1,5 +1,5 @@
 ---
-title: Projectoutputfile — Element | Dokumentacja firmy Microsoft
+title: ProjectOutputFile — — element | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2673b22bf502f019f0a10361c9d0cef9d5ac1b8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816840"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542392"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile — element
-  Reprezentuje dane wyjściowe w osobnym projekcie do uwzględnienia przy użyciu elementu projektu, gdy aplikacja jest wdrożona w programie SharePoint.
+  Przedstawia dane wyjściowe oddzielnego projektu do dołączenia do elementu projektu, gdy jest wdrażany w programie SharePoint.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ ms.locfileid: "62816840"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|**ProjectId**|Wymagane **xs:string** atrybutu.<br /><br /> Identyfikator GUID projektu zależnego, która generuje dane wyjściowe, które mają zostać uwzględnione. Odpowiada to **ProjectGuid** elementu w pliku projektu zależnego.|
-|**ProjectPath**|Wymagane **xs:string** atrybutu.<br /><br /> Ścieżka względna, łącznie z nazwą pliku projektu, projektu zależnego, który generuje dane wyjściowe, które mają zostać uwzględnione. Ta ścieżka jest określana względem folderu głównego projektu programu SharePoint, który zawiera element projektu programu SharePoint.|
-|**Docelowy**|Opcjonalnie **xs:string** atrybutu.<br /><br /> Ścieżka, w którym ma zostać wdrożona na serwerze programu SharePoint względną wobec folderu głównego wdrożenia wyjściowy projektu zależnego. Folder główny wdrożenia jest określana przez typ wdrożenia, określony przez **typu** atrybutu.<br /><br /> Aby uzyskać więcej informacji, zobacz opisy **Ścieżka rozmieszczania** i **główny wdrożenia** właściwości programu SharePoint projektu elementów w [rozwiązań SharePoint opracowywanie](../sharepoint/developing-sharepoint-solutions.md).|
-|**Typ**|Wymagane **xs:string** atrybutu.<br /><br /> Typ wdrożenia do użycia dla danych wyjściowych projektu zależnego. Aby uzyskać więcej informacji na temat możliwych wartości, zobacz opis **typu wdrożenia** właściwości elementów projektu programu SharePoint w [rozwiązań SharePoint opracowywanie](../sharepoint/developing-sharepoint-solutions.md).|
+|**Identyfikator projectID**|Wymagany atrybut **xs: String** .<br /><br /> Identyfikator GUID zależnego projektu, który zawiera dane wyjściowe, które mają zostać uwzględnione. Odnosi się to do elementu **ProjectGuid** w pliku projektu zależnego.|
+|**ProjectPath**|Wymagany atrybut **xs: String** .<br /><br /> Ścieżka względna, w tym nazwa pliku projektu, zależnego projektu zawierającego dane wyjściowe, które mają zostać uwzględnione. Ta ścieżka jest określana względem folderu głównego projektu programu SharePoint, który zawiera element projektu programu SharePoint.|
+|**Obiektów**|Opcjonalny atrybut **xs: String** .<br /><br /> Ścieżka, w której zależne dane wyjściowe projektu mają zostać wdrożone na serwerze programu SharePoint, względem folderu głównego wdrożenia. Folder główny wdrożenia jest określany przez typ wdrożenia określony przez atrybut **typu** .<br /><br /> Aby uzyskać więcej informacji, zobacz opisy dotyczące **ścieżki wdrożenia** i właściwości **głównych wdrożenia** elementów projektu programu SharePoint w temacie [opracowywanie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Typ**|Wymagany atrybut **xs: String** .<br /><br /> Typ wdrożenia do użycia dla danych wyjściowych projektu zależnego. Aby uzyskać więcej informacji o możliwych wartościach, zobacz opis właściwości **typ wdrożenia** elementów projektu programu SharePoint w temacie [Tworzenie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -53,21 +53,21 @@ ms.locfileid: "62816840"
 
 |Element|Opis|
 |-------------|-----------------|
-|[Pliki](../sharepoint/files-element.md)|Określa pliki do uwzględnienia przy użyciu elementu projektu programu SharePoint, gdy aplikacja jest wdrożona w programie SharePoint.|
+|[Files](../sharepoint/files-element.md)|Określa pliki do dołączenia do elementu projektu programu SharePoint po wdrożeniu w programie SharePoint.|
 
 ## <a name="remarks"></a>Uwagi
- Użyj **projectoutputfile —** element, aby dołączyć dane wyjściowe projektu w ramach wdrożenia elementu projektu programu SharePoint. Możesz określić inny projekt lub tym samym projekcie, który zawiera element projektu. Aby uzyskać więcej informacji, zobacz [zapewniają informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
+ Użyj elementu **ProjectOutputFile —** , aby uwzględnić dane wyjściowe projektu we wdrożeniu elementu projektu programu SharePoint. Możesz określić inny projekt lub ten sam projekt, który zawiera element projektu. Aby uzyskać więcej informacji, zobacz [zapewnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
-## <a name="element-information"></a>Informacje o elementach
+## <a name="element-information"></a>Informacje o elemencie
 
-|||
+|Właściwość|Wartość|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nazwa schematu**|Schemat elementu projektu SharePoint|
-|**Plik walidacji**|ProjectItemModelSchema.xsd|
-|**Może być pusta.**|Nie|
+|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
+|**Plik walidacji**|ProjectItemModelSchema. xsd|
+|**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Podaj informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 099e5f3f9a09eef57ce1b888601f61e85ceb97c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 846ce010cddfd505bb967ec612a5c31dd8321977
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643405"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544329"
 ---
-# <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Nie należy pośrednio ujawniać metod w żądaniach konsolidacji
+# <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Nie ujawniaj pośrednio metod żądaniami LinkDemand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
@@ -36,7 +36,7 @@ ms.locfileid: "72643405"
  Publiczny lub chroniony element członkowski ma [wymagania dotyczące linków](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) i jest wywoływany przez element członkowski, który nie wykonuje żadnych kontroli zabezpieczeń.
 
 ## <a name="rule-description"></a>Opis reguły
- Zapotrzebowanie na łącza sprawdza uprawnienia tylko bezpośredniego wywołującego. Jeśli element członkowski `X` nie ma żadnych żądań związanych z bezpieczeństwem, a następnie wywołuje kod chroniony przez żądanie linku, obiekt wywołujący bez wymaganych uprawnień może użyć `X` w celu uzyskania dostępu do chronionego elementu członkowskiego.
+ Zapotrzebowanie na łącza sprawdza uprawnienia tylko bezpośredniego wywołującego. Jeśli członek `X` nie ma żadnych wymagań w zakresie zabezpieczeń dla jego obiektów wywołujących i wywołuje kod chroniony przez żądanie linku, obiekt wywołujący bez wymaganych uprawnień może użyć `X` w celu uzyskania dostępu do chronionego elementu członkowskiego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Dodaj dane zabezpieczeń [oraz modelowanie](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) lub żądanie do elementu członkowskiego, aby nie zapewnia on już niezabezpieczonego dostępu do elementu członkowskiego chronionego na żądanie linku.
@@ -45,7 +45,7 @@ ms.locfileid: "72643405"
  Aby bezpiecznie pominąć ostrzeżenie z tej reguły, należy się upewnić, że kod nie przyznaje obiektom wywołującym dostęp do operacji lub zasobów, które mogą być używane w sposób niszczący.
 
 ## <a name="example"></a>Przykład
- W poniższych przykładach przedstawiono bibliotekę, która narusza regułę, oraz aplikację, która demonstruje słabość biblioteki. Biblioteka Przykładowa zawiera dwie metody, które wspólnie naruszają daną regułę. Metoda `EnvironmentSetting` jest zabezpieczona przez żądanie linku dla nieograniczonego dostępu do zmiennych środowiskowych. Metoda `DomainInformation` nie wymaga żadnych wymagań w zakresie zabezpieczeń przed wywołaniem `EnvironmentSetting`.
+ W poniższych przykładach przedstawiono bibliotekę, która narusza regułę, oraz aplikację, która demonstruje słabość biblioteki. Biblioteka Przykładowa zawiera dwie metody, które wspólnie naruszają daną regułę. `EnvironmentSetting`Metoda jest zabezpieczona przez żądanie linku dla nieograniczonego dostępu do zmiennych środowiskowych. `DomainInformation`Metoda nie wykonuje żadnych żądań związanych z zabezpieczeniami przed wywołaniem `EnvironmentSetting` .
 
  [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.UnsecuredDoNotCall/cs/FxCop.Security.UnsecuredDoNotCall.cs#1)]
 

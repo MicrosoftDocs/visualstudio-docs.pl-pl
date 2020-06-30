@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5cff8f76743119409366a0e52d71070d62a9b82
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 47ac30d4a1df36e72b8b12fa9aefb1b36aed6204
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332360"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544602"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Zbieraj pomiary interakcji między warstwami dla projektów bazy danych
 
-|||
+|Element|Wartość|
 |-|-|
 |Identyfikator reguły|DA0030|
 |Kategoria|Użycie narzędzia profilowania|

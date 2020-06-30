@@ -15,17 +15,17 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f68ab71d9ce4fab1b0612f15d866c58e302a317e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671505"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543874"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Nie ignoruj wyników metod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
@@ -52,7 +52,7 @@ ms.locfileid: "72671505"
 
  Jeśli metoda A wywołuje metodę B, ale nie używa nowego wystąpienia ciągu zwracanego przez metodę B. Przekaż wystąpienie jako argument do innej metody, przypisz wystąpienie do zmiennej. Lub Usuń wywołanie, jeśli jest niepotrzebne.
 
- —lub—
+ -lub-
 
  Jeśli metoda A wywołuje metodę B, ale nie korzysta z kodu HRESULT lub Error zwracanego przez metodę. Użyj wyniku w instrukcji warunkowej, przypisz wynik do zmiennej lub Przekaż go jako argument do innej metody.
 

@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67a3588a857a0eea7d338217f975ed593dfdad52
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669100"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543705"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identyfikatory nie powinny odpowiadać słowom kluczowym
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identyfikatory nie powinny być zgodne ze słowami kluczowymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
@@ -46,10 +46,10 @@ ms.locfileid: "72669100"
 
 - C++/CLI
 
-  Porównanie bez uwzględniania wielkości liter jest używane dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] słów kluczowych, a porównanie z uwzględnieniem wielkości liter jest używane dla innych języków.
+  Porównanie bez uwzględniania wielkości liter jest używane dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] słów kluczowych, a porównanie uwzględniające wielkość liter jest używane dla innych języków.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Wybierz nazwę, która nie jest wyświetlana na liście słów kluczowych.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Możesz pominąć ostrzeżenie z tej reguły, Jeśli wiesz, że identyfikator nie będzie mylić użytkowników interfejsu API i że biblioteka jest użyteczna we wszystkich dostępnych językach w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Możesz pominąć ostrzeżenie z tej reguły, Jeśli wiesz, że identyfikator nie będzie mylić użytkowników interfejsu API i że biblioteka jest użyteczna we wszystkich dostępnych językach w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .

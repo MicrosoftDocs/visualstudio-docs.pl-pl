@@ -1,9 +1,9 @@
 ---
-title: '&lt;elementu formRegion&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;formRegion — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 33bc2ce58f90f37a1219427558a01bd13e5654df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e13576ef673728d673d0351cf289a80944584bd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414546"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543535"
 ---
-# <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;elementu formRegion&gt; — element (Office development w programie Visual Studio)
-  `formRegion` Elementu `vstov4` obszar nazw identyfikuje programu Microsoft Office Outlook regionu formularza, który jest skojarzony z dodatku narzędzi VSTO.
+# <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion — &gt; element (Programowanie Office w Visual Studio)
+  `formRegion`Element `vstov4` przestrzeni nazw identyfikuje region formularza programu Outlook Microsoft Office, który jest skojarzony z dodatkiem VSTO.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,30 +34,30 @@ ms.locfileid: "62414546"
 </formRegion>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `formRegion` Elementu `vstov4` obszar nazw identyfikuje region formularza, który jest skojarzony z dodatku narzędzi VSTO dla programu Outlook. Jest wymagane tylko dla dodatków narzędzi VSTO dla programu Outlook, obejmujących regionów formularza.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `formRegion`Element `vstov4` przestrzeni nazw identyfikuje region formularza skojarzony z dodatkiem VSTO programu Outlook. Jest to wymagane tylko w przypadku dodatków VSTO programu Outlook, które obejmują regiony formularzy.
 
- Może istnieć wiele `formRegion` elementy zdefiniowane wewnątrz `formRegions` element dla pojedynczego dodatku narzędzi VSTO.
+ W `formRegion` obrębie elementu można zdefiniować wiele elementów `formRegions` dla jednego dodatku VSTO.
 
- `formRegion` Element ma atrybut.
+ `formRegion`Element ma następujący atrybut.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`name`|Wymagana. Określa nazwę regionu formularza.|
+|`name`|Wymagany. Określa nazwę regionu formularza.|
 
- `formRegion` Element ma następujących elementów podrzędnych.
+ `formRegion`Element ma następujące elementy podrzędne.
 
 ### <a name="messageclass"></a>messageClass
- `messageClass` Element identyfikuje formularza programu Outlook, który jest skojarzony z regionu formularza.
+ `messageClass`Element identyfikuje formularz programu Outlook skojarzony z regionem formularza.
 
- `messageClass` Element ma atrybut.
+ `messageClass`Element ma następujący atrybut.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`name`|Wymagana. Identyfikuje formularz, który jest skojarzony z regionu formularza.|
+|`name`|Wymagany. Identyfikuje formularz, który jest skojarzony z regionem formularza.|
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie kodu pokazano `formRegion` elementu w manifeście aplikacji dla dodatku narzędzi VSTO dla programu Outlook wdrażane za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Istnieją trzy klasy wiadomości, skojarzone z tym regionem jeden formularz. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `formRegion` element w manifeście aplikacji dla dodatku VSTO programu Outlook wdrożonego przy użyciu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Z tym jednym regionem formularza są skojarzone trzy klasy komunikatów. Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml
 <vstov4:formRegion
@@ -68,7 +68,7 @@ ms.locfileid: "62414546"
 </vstov4:formRegion>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)

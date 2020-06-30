@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: wypełnianie kontrolek ListObject danymi'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48af9145ce069b426b86f05bf0aadfc5386a6271
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985924"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544823"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Instrukcje: wypełnianie kontrolek ListObject danymi
   Możesz użyć powiązania danych, aby szybko dodać dane do dokumentu. Po powiązaniu danych z obiektem listy można odłączyć obiekt listy, aby wyświetlał dane, ale nie jest już powiązany ze źródłem danych.
@@ -36,27 +36,27 @@ ms.locfileid: "72985924"
      [!code-csharp[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#20)]
      [!code-vb[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#20)]
 
-2. Dodaj przykładowe kolumny i dane w obsłudze zdarzeń `Startup` klasy `Sheet1` (w projekcie na poziomie dokumentu) lub klasy `ThisAddIn` (w projekcie na poziomie aplikacji).
+2. Dodaj przykładowe kolumny i dane do `Startup` procedury obsługi zdarzeń `Sheet1` klasy (w projekcie na poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie na poziomie aplikacji).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#21)]
      [!code-vb[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#21)]
 
-3. Wywołaj metodę <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> i przekaż nazwy kolumn w kolejności, w jakiej powinny się pojawiać. Kolejność kolumn w obiekcie list może się różnić od kolejności, w jakiej występują w <xref:System.Data.DataTable>.
+3. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metodę i przekaż nazwy kolumn w kolejności, w jakiej powinny się pojawiać. Kolejność kolumn w obiekcie list może się różnić od kolejności, w jakiej są wyświetlane w <xref:System.Data.DataTable> .
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#22)]
      [!code-vb[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#22)]
 
 ### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>Aby odłączyć Formant ListObject ze źródła danych
 
-1. Wywołaj metodę <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> `List1`.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> metodę `List1` .
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]
 
 ## <a name="compile-the-code"></a>Kompiluj kod
- W tym przykładzie kodu założono, że masz istniejące <xref:Microsoft.Office.Tools.Excel.ListObject> o nazwie `list1` w arkuszu, w którym ten kod pojawia się.
+ W tym przykładzie kodu założono, że masz istniejącą <xref:Microsoft.Office.Tools.Excel.ListObject> nazwę `list1` w arkuszu, w którym znajduje się ten kod.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

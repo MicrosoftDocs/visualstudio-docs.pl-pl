@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6f2dc7dcd79fbcaf47a2db3cf49f22f3467a06ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 774279dd05bd14c34df7f1d450f00599812d6a5b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661935"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544511"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Oznaczaj wyliczenia za pomocą FlagsAttribute
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Oznacz typy wyliczeniowe atrybutem Flags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
@@ -33,10 +33,10 @@ ms.locfileid: "72661935"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Wartości wyliczenia publicznego są potęgami dwóch lub są kombinacją innych wartości, które są zdefiniowane w wyliczeniu, i atrybut <xref:System.FlagsAttribute?displayProperty=fullName> nie jest obecny. Aby zmniejszyć liczbę fałszywie dodatnich, ta reguła nie zgłasza naruszenia dla wyliczeń, które mają ciągłe wartości.
+ Wartości wyliczenia publicznego są potęgami dwóch lub są kombinacją innych wartości, które są zdefiniowane w wyliczeniu, a <xref:System.FlagsAttribute?displayProperty=fullName> atrybut nie jest obecny. Aby zmniejszyć liczbę fałszywie dodatnich, ta reguła nie zgłasza naruszenia dla wyliczeń, które mają ciągłe wartości.
 
 ## <a name="rule-description"></a>Opis reguły
- Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Zastosuj <xref:System.FlagsAttribute> do wyliczenia, gdy jego nazwane stałe mogą być w znaczący sposób połączone. Rozważmy na przykład Wyliczenie dni tygodnia w aplikacji, która śledzi zasoby danego dnia. Jeśli dostępność każdego zasobu jest zaszyfrowana przy użyciu wyliczenia, które ma <xref:System.FlagsAttribute>, można przedstawić dowolną kombinację dni. Bez atrybutu, można przedstawić tylko jeden dzień tygodnia.
+ Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Zastosuj <xref:System.FlagsAttribute> do wyliczenia, gdy jego nazwane stałe mogą być w znaczący sposób połączone. Rozważmy na przykład Wyliczenie dni tygodnia w aplikacji, która śledzi zasoby danego dnia. Jeśli dostępność każdego zasobu jest zakodowana przy użyciu wyliczenia, które jest <xref:System.FlagsAttribute> obecne, można przedstawić dowolną kombinację dni. Bez atrybutu, można przedstawić tylko jeden dzień tygodnia.
 
  W przypadku pól, które przechowują wyliczenia do przydzielenia, poszczególne wartości wyliczenia są traktowane jako grupy bitów w polu. W związku z tym takie pola są czasami określane jako *pola bitowe*. Aby połączyć wartości wyliczenia dla magazynu w polu bitowym, użyj operatorów warunkowych Boolean. Aby przetestować pole bitowe w celu ustalenia, czy określona wartość wyliczenia jest obecna, użyj logicznych operatorów logicznych. W przypadku pola bitowego do poprawnego przechowywania i pobierania połączonych wartości wyliczenia każda wartość zdefiniowana w wyliczeniu musi być potęgą liczby dwa. O ile tak nie jest, logiczne operatory logiczne nie będą mogły wyodrębnić poszczególnych wartości wyliczenia, które są przechowywane w polu.
 
@@ -47,12 +47,12 @@ ms.locfileid: "72661935"
  Pomiń ostrzeżenie z tej reguły, jeśli nie chcesz, aby wartości wyliczenia były możliwe do kombinacji.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie `DaysEnumNeedsFlags` jest wyliczeniem spełniającym wymagania dotyczące korzystania z <xref:System.FlagsAttribute>, ale nie ma go. Wyliczenie `ColorEnumShouldNotHaveFlag` nie zawiera wartości, które są potęgami dwóch, ale nieprawidłowo określa <xref:System.FlagsAttribute>. Narusza to reguły [CA2217: nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+ W poniższym przykładzie `DaysEnumNeedsFlags` jest wyliczeniem spełniającym wymagania dotyczące korzystania z programu <xref:System.FlagsAttribute> , ale nie ma go. `ColorEnumShouldNotHaveFlag`Wyliczenie nie zawiera wartości, które są potęgami dwóch, ale nieprawidłowo określa <xref:System.FlagsAttribute> . Narusza to reguły [CA2217: nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Nie oznaczaj typów wyliczeniowych atrybutem Flags](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.FlagsAttribute?displayProperty=fullName>

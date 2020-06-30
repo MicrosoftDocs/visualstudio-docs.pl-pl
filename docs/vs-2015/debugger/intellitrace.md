@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a3a3e68874bb3295f6696bbdadb3c470a7f2a4ad
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586624"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543926"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
 ## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?  
   
-|||  
+|Scenariusz|Artykuły|  
 |-|-|  
 |**Debuguj moją aplikację przy użyciu IntelliTrace:**<br /><br /> -Pokaż poprzednie zdarzenia.<br />-Wyświetla informacje o wywołaniu dla przeszłych zdarzeń.<br />-Zapisz moją sesję IntelliTrace.<br />— Kontroluj dane zbierane przez IntelliTrace.|-   [Przewodnik: używanie IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Konfigurowanie IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Debugowanie historyczne](../debugger/historical-debugging.md)|  
 |**Zbieraj dane IntelliTrace podczas sesji testowej w Test Manager**|-   [Zbieraj więcej danych diagnostycznych w testach ręcznych](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -55,11 +55,11 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Jakie aplikacje można debugować za pomocą IntelliTrace?  
   
-|||  
+|Poziom pomocy technicznej|Typy aplikacji|  
 |-|-|  
-|**Obsługiwane**|-Visual Basic i aplikacje Visual C#, które używają .NET Framework 2,0 lub nowszych wersji.<br />     Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i 64-bitowe aplikacje.<br />     Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Aby debugować Microsoft Azure aplikacje za pomocą IntelliTrace, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą usługi IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Obsługiwał**|-Visual Basic i aplikacje Visual C#, które używają .NET Framework 2,0 lub nowszych wersji.<br />     Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i 64-bitowe aplikacje.<br />     Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Aby debugować Microsoft Azure aplikacje za pomocą IntelliTrace, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą usługi IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Ograniczona pomoc techniczna**|-Aplikacje F # na zasadach eksperymentalnych<br />— Aplikacje ze sklepu Windows obsługiwane tylko dla zdarzeń|  
-|**Nieobsługiwane**|-C++, inne języki i skrypt<br />— Usługi systemu Windows, Silverlight, Xbox lub [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplikacje|  
+|**Nieobsługiwany**|-C++, inne języki i skrypt<br />— Usługi systemu Windows, Silverlight, Xbox lub [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplikacje|  
   
 > [!NOTE]
 > Jeśli chcesz debugować proces, który jest już uruchomiony, nie możesz użyć IntelliTrace. IntelliTrace należy uruchomić, gdy proces jest uruchamiany.  

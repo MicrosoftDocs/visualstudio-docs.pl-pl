@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bbcf83772a7a4031cf2e27abe7e8f4c08e21c11c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dc8019c97d3c561000f1c6a8d083bee6253face3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671513"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544407"
 ---
-# <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Używaj literałów wszędzie, gdzie jest to odpowiednie
+# <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Używaj literałów w odpowiednich miejscach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
@@ -33,23 +33,23 @@ ms.locfileid: "72671513"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Pole jest zadeklarowane `static` i `readonly` (`Shared` i `ReadOnly` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) i jest inicjowane z wartością obliczanej w czasie kompilacji.
+ Pole jest zadeklarowane `static` i `readonly` ( `Shared` i `ReadOnly` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) i jest inicjowane z wartością, która jest obliczanej w czasie kompilacji.
 
 ## <a name="rule-description"></a>Opis reguły
- Wartość pola `static``readonly` jest obliczana w czasie wykonywania, gdy jest wywoływany statyczny Konstruktor dla typu deklarującego. Jeśli pole `static``readonly` jest inicjowane, gdy jest zadeklarowany, a Konstruktor statyczny nie jest zadeklarowany jawnie, kompilator emituje konstruktora statycznego w celu zainicjowania pola.
+ Wartość `static``readonly` pola jest obliczana w czasie wykonywania, gdy wywoływana jest statyczny Konstruktor dla typu deklarującego. Jeśli `static``readonly` pole jest inicjowane, gdy jest zadeklarowany, a Konstruktor statyczny nie jest zadeklarowany jawnie, kompilator emituje konstruktora statycznego, aby zainicjować pole.
 
- Wartość pola `const` jest obliczana w czasie kompilacji i przechowywana w metadanych, co zwiększa wydajność środowiska uruchomieniowego, gdy jest porównywana z polem `static``readonly`.
+ Wartość `const` pola jest obliczana w czasie kompilacji i przechowywana w metadanych, co zwiększa wydajność środowiska uruchomieniowego w porównaniu do `static``readonly` pola.
 
  Ponieważ wartość przypisana do pola Target jest obliczanej w czasie kompilacji, należy zmienić deklarację na `const` pole, aby wartość była obliczana w czasie kompilacji, a nie w środowisku uruchomieniowym.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Zastąp Modyfikatory `static` i `readonly` modyfikatorem `const`.
+ Aby naprawić naruszenie tej reguły, Zastąp `static` modyfikator i modyfikator `readonly` `const` .
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Istnieje możliwość bezpiecznego pomijania ostrzeżenia z tej reguły lub wyłączania reguły, jeśli wydajność nie jest istotna.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia typ, `UseReadOnly`, który narusza regułę i typ `UseConstant`, który spełnia regułę.
+ Poniższy przykład pokazuje typ, `UseReadOnly` , który narusza regułę i typ, `UseConstant` który spełnia regułę.
 
  [!code-csharp[FxCop.Performance.UseLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UseLiterals/cs/FxCop.Performance.UseLiterals.cs#1)]
  [!code-vb[FxCop.Performance.UseLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UseLiterals/vb/FxCop.Performance.UseLiterals.vb#1)]

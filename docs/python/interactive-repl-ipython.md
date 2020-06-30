@@ -1,8 +1,8 @@
 ---
-title: IPython REPL (okno interaktywne)
-description: Użyj interaktywnego okna programu Visual Studio w trybie IPython dla przyjaznego dla użytkownika interaktywnego środowiska programistycznego z funkcjami interaktywnego przetwarzania równoległego.
+title: IPython REPL (Okno interaktywne)
+description: Korzystaj z okna interaktywnego programu Visual Studio w trybie IPython dla przyjaznych dla użytkownika środowisk programistycznych interaktywnych z interaktywnymi funkcjami przetwarzania równoległego.
 ms.date: 01/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,31 +10,31 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957750"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542431"
 ---
-# <a name="use-ipython-in-the-interactive-window"></a>Używanie IPython w oknie Interaktywna
+# <a name="use-ipython-in-the-interactive-window"></a>Użyj IPython w oknie interaktywnym
 
-Okno **Interaktywne** programu Visual Studio w trybie IPython to zaawansowane, ale przyjazne dla użytkownika interaktywne środowisko programistyczne z funkcjami interactive parallel computing. W tym artykule oględy przy użyciu IPython w visual studio **interaktywne** okno, w którym wszystkie funkcje [okna](python-interactive-repl-in-visual-studio.md) interaktywne są również dostępne.
+Okno **interaktywne** programu Visual Studio w trybie IPython jest zaawansowanym, ale przyjaznym dla użytkownika środowiskiem programistycznym, które ma interaktywne funkcje przetwarzania równoległego. W tym artykule opisano użycie IPython w oknie **interaktywnym** programu Visual Studio, w którym są również dostępne wszystkie zwykłe funkcje [okna interaktywnego](python-interactive-repl-in-visual-studio.md) .
 
-W tym instruktażu należy zainstalować środowisko [Anaconda,](https://www.continuum.io) które zawiera IPython i niezbędne biblioteki.
+W tym instruktażu należy zainstalować środowisko [Anaconda](https://www.continuum.io) , które obejmuje IPython i niezbędne biblioteki.
 
 > [!Note]
-> IronPython nie obsługuje IPython, pomimo faktu, że można go wybrać w formularzu **Opcje interaktywne.** Aby uzyskać więcej informacji, zobacz [żądanie funkcji](https://github.com/Microsoft/PTVS/issues/84).
+> IronPython nie obsługuje IPython, pomimo faktu, że można go wybrać w formularzu **opcji interaktywnych** . Aby uzyskać więcej informacji, zobacz [żądanie dotyczące funkcji](https://github.com/Microsoft/PTVS/issues/84).
 
-1. Otwórz program Visual Studio, przełącz się do okna **Środowiska języka Python** (**Wyświetl** > inne**środowiska języka****Windows** > Python ) i wybierz środowisko Anaconda.
+1. Otwórz program Visual Studio, przejdź do okna **środowiska Python** (**Wyświetl**  >  **inne**  >  **środowiska Windows Python**) i wybierz środowisko Anaconda.
 
-2. Sprawdź **pakiety (Conda)** kartę (które mogą pojawić się jako **pip** `matplotlib` lub **pakiety)** dla tego środowiska, aby upewnić się, że `ipython` i są wymienione. Jeśli nie, zainstaluj je tutaj. (Zobacz [okna środowiska Python - pakiety kartę](python-environments-window-tab-reference.md).)
+2. Sprawdź kartę **pakiety (Conda)** (która może być wyświetlana jako **PIP** lub **Packages**) dla tego środowiska, aby upewnić się, że `ipython` i `matplotlib` są wymienione na liście. Jeśli nie, zainstaluj je tutaj. (Zobacz [środowisko języka Python Windows-Packages Tab](python-environments-window-tab-reference.md)).
 
-3. Wybierz kartę **Przegląd** i wybierz pozycję **Użyj trybu interaktywnego IPython**. (W programie Visual Studio 2015 wybierz pozycję **Konfiguruj opcje interaktywne,** aby otworzyć okno dialogowe **Opcje,** a następnie ustaw **tryb interaktywny** na **IPython**i wybierz przycisk **OK**).
+3. Wybierz kartę **Przegląd** i wybierz opcję **Użyj trybu interaktywnego IPython**. (W programie Visual Studio 2015 wybierz pozycję **Konfiguruj opcje interaktywne** , aby otworzyć okno dialogowe **Opcje** , a następnie ustaw **tryb interaktywny** na **IPython**, a następnie wybierz **przycisk OK**).
 
-4. Wybierz **otwórz okno interaktywne,** aby przywołać okno **interaktywne** w trybie IPython. Może być konieczne zresetowanie okna, jeśli właśnie zmieniono tryb interaktywny; może być również konieczne naciśnięcie klawisza **Enter,** jeśli pojawi się tylko >>> monit, aby uzyskać monit, taki jak **w [2]**.
+4. Wybierz pozycję **Otwórz okno interaktywne** , aby wyświetlić okno **interaktywne** w trybie IPython. Jeśli zmieniono tryb interaktywny, może być konieczne zresetowanie okna. może być również konieczne naciśnięcie klawisza **Enter** w przypadku wyświetlenia tylko monitu >>> , aby uzyskać monit jak **w przypadku [2]**.
 
-    ![Interaktywne okno w trybie IPython](media/ipython-repl-03.png)
+    ![Okno interaktywne w trybie IPython](media/ipython-repl-03.png)
 
 5. Wprowadź następujący kod:
 
@@ -47,11 +47,11 @@ W tym instruktażu należy zainstalować środowisko [Anaconda,](https://www.con
    plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
    ```
 
-6. Po wprowadzeniu ostatniego wiersza powinien zostać wyświetlony wykres wbudowany (który można zmienić, przeciągając w razie potrzeby w prawym dolnym rogu).
+6. Po wprowadzeniu ostatniego wiersza powinien zostać wyświetlony wykres wbudowany (którego rozmiar można zmienić, przeciągając w prawym dolnym rogu, w razie potrzeby).
 
     ![Wykres wbudowany w oknie interaktywnym](media/ipython-repl-04.png)
 
-7. Zamiast wpisywać w REPL, można zamiast pisać kod w edytorze, zaznaczyć go, kliknąć prawym przyciskiem myszy i wybrać polecenie **Wyślij do interaktywnej** (lub naciśnij **klawisz Ctrl**+**Enter**). Spróbuj wkleić poniższy kod do nowego pliku w edytorze, zaznaczając go za pomocą **klawisza Ctrl**+**A,** a następnie wysyłając do okna **Interaktywne.** (Visual Studio wysyła kod jako jedną jednostkę, aby uniknąć dając wykresy pośrednie lub częściowe. A jeśli nie masz otwartego projektu Języka Python z wybranym innym środowiskiem, program Visual Studio otwiera okno **interaktywne** dla dowolnego środowiska wybranego jako domyślne w oknie **Środowiska Języka Python.)**
+7. Zamiast wpisywać w REPL, możesz zamiast tego napisać kod w edytorze, zaznacz go, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Wyślij do interaktywnego** polecenia (lub naciśnij klawisz **Ctrl** + **Enter**). Spróbuj wkleić poniższy kod do nowego pliku w edytorze, wybierając go z **klawiszem Ctrl** + **a**, a następnie wysyłając do okna **interaktywnego** . (Program Visual Studio wysyła kod jako jedną jednostkę, aby uniknąć podawania pośrednich lub częściowych wykresów. Jeśli nie masz otwartego projektu języka Python z wybranym innym środowiskiem, program Visual Studio otwiera okno **interaktywne** dla dowolnego środowiska, które jest wybrane jako domyślne w oknie **środowiska języka Python** .
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -76,12 +76,12 @@ W tym instruktażu należy zainstalować środowisko [Anaconda,](https://www.con
 
     ![Wysyłanie kodu z edytora do okna interaktywnego](media/ipython-repl-05.png)
 
-8. Aby wyświetlić wykresy poza **interakcyjnym** oknie, uruchom kod zamiast tego za pomocą polecenia **Debugowanie** > **start bez debugowania.**
+8. Aby wyświetlić wykresy poza oknem **interaktywnym** , należy zamiast tego uruchomić kod przy użyciu polecenia **Debug**  >  **Start bez debugowania** .
 
-IPython ma wiele innych przydatnych funkcji, takich jak ucieczka do powłoki systemowej, zastępowanie zmiennych, przechwytywanie danych wyjściowych itp. Więcej informacji można znaleźć w [dokumentacji IPython.](https://ipython.org/documentation.html)
+IPython ma wiele innych użytecznych funkcji, takich jak ucieczki do powłoki systemowej, podstawienia zmiennych, przechwytywania danych wyjściowych itp. Więcej informacji można znaleźć w [dokumentacji IPython](https://ipython.org/documentation.html) .
 
 ## <a name="see-also"></a>Zobacz też
 
-- Aby łatwo i bez instalacji korzystać z usługi Jupyter, wypróbuj bezpłatną [usługę hostowana notesów platformy Azure,](https://notebooks.azure.com/) która umożliwia przechowywanie i udostępnianie notesów innym osobom.
+- Aby korzystać z Jupyter z łatwością i bez instalacji, wypróbuj bezpłatną [Azure Notebooks hostowaną usługę](https://notebooks.azure.com/) , która umożliwia utrzymywanie i udostępnianie notesów innym osobom.
 
-- [Maszyna wirtualna do nauki o danych platformy Azure](/azure/machine-learning/data-science-virtual-machine/overview) jest również wstępnie skonfigurowana do uruchamiania notesów jupytera wraz z szeroką gamą innych narzędzi do nauki o danych.
+- [Usługa Azure Data Science Virtual Machine](/azure/machine-learning/data-science-virtual-machine/overview) jest również wstępnie skonfigurowana do uruchamiania notesów Jupyter oraz szerokiej gamy innych narzędzi do nauki o danych.

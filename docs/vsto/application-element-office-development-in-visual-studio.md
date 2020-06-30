@@ -1,8 +1,8 @@
 ---
-title: '&lt;Aplikacja&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;Application — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80652f6752b87cf0413b0b3166b0cf3292231c25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62942915"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543744"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Aplikacja&gt; — element (Office development w programie Visual Studio)
-  `application` Elementu `vstav3` przestrzeni nazw opakowuje opis rozwiązań pakietu Office. Elementy podrzędne są różne dla dostosowywania poziomie dokumentu i dodatków narzędzi VSTO.
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Application — &gt; element (Programowanie Office w Visual Studio)
+  `application`Element `vstav3` przestrzeni nazw otacza opis rozwiązań pakietu Office. Elementy podrzędne są różne w przypadku dostosowań na poziomie dokumentu i dodatków narzędzi VSTO.
 
-## <a name="syntax-for-document-level-customizations"></a>Składnia dla dostosowywania poziomie dokumentu
+## <a name="syntax-for-document-level-customizations"></a>Składnia dla dostosowań na poziomie dokumentu
 
 ```xml
 <application>
@@ -36,7 +36,7 @@ ms.locfileid: "62942915"
 </application>
 ```
 
-## <a name="syntax-for-application-level-add-ins"></a>Składnia dla dodatków poziomu aplikacji
+## <a name="syntax-for-application-level-add-ins"></a>Składnia dodatków na poziomie aplikacji
 
 ```xml
 <application>
@@ -53,20 +53,20 @@ ms.locfileid: "62942915"
 </application>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `application` Elementu `vstav3` przestrzeń nazw jest węzeł, który otacza wszystkie informacje dotyczące dostosowywania, który jest zawarty w `vstov4` przestrzeni nazw.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `application`Element `vstav3` obszaru nazw jest węzłem, który otacza wszystkie informacje specyficzne dla dostosowania, które znajdują się w `vstov4` przestrzeni nazw.
 
- `application` Element nie ma żadnych atrybutów.
+ `application`Element nie ma żadnych atrybutów.
 
- `application` Element ma następujący element.
+ `application`Element ma następujący element.
 
 ### <a name="customization"></a>Dostosowywanie
- Rola `customization` element `vstov3` przestrzeń nazw została zdefiniowana w [ &#60;dostosowywania&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Rola `customization` elementu w `vstov3` przestrzeni nazw jest definiowana w [&#60;dostosowania&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/customization-element-office-development-in-visual-studio.md).
 
-## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu
+## <a name="document-level-customization-example"></a>Przykład dostosowywania na poziomie dokumentu
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `application` elementu w rozwiązaniach pakietu Office poziomu dokumentu wdrażane za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `application` element w rozwiązaniu pakietu Office na poziomie dokumentu wdrożonym przy użyciu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -82,10 +82,10 @@ ms.locfileid: "62942915"
 </vstav3:application>
 ```
 
-## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO
+## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `application` elementu w dodatku poziomu aplikacji rozwiązania do pakietu Office wdrażane za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `application` element w rozwiązaniu pakietu Office na poziomie aplikacji wdrożonym przy użyciu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -119,7 +119,7 @@ ms.locfileid: "62942915"
 </vstav3:application>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

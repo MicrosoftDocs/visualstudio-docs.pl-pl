@@ -1,18 +1,18 @@
 ---
 title: Ustawienie obrazu tła w diagramie
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591960"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542587"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
 W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła dla wygenerowanego projektanta przy użyciu kodu niestandardowego.
@@ -43,7 +43,7 @@ W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła
 
 11. Jeśli brakuje Resources.Designer.cs, kliknij plik resources. resx w **Eksplorator rozwiązań**.
 
-12. W oknie **Właściwości** ustaw właściwość `Custom Tool` na `ResXFileCodeGenerator`.
+12. W oknie **Właściwości** Ustaw `Custom Tool` Właściwość na `ResXFileCodeGenerator` .
 
 13. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt DSL, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**.
 
@@ -53,7 +53,7 @@ W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła
 
 16. W oknie dialogowym **Dodaj nowy element** na liście **Szablony** kliknij pozycję **plik kodu**.
 
-17. W polu **Nazwa** wpisz `BackgroundImage.cs`, a następnie kliknij przycisk **Dodaj**.
+17. W polu **Nazwa** wpisz `BackgroundImage.cs` , a następnie kliknij przycisk **Dodaj**.
 
 18. Skopiuj następujący kod do pliku BackgroundImage.cs, dostosowując przestrzeń nazw, nazwę klasy diagramu i nazwę zasobu pliku obrazu.
 
@@ -100,7 +100,7 @@ W programie Visual Studio Wizualizacja i Modeling SDK można ustawić obraz tła
 
      Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Definiowanie kształtów i łączników](../modeling/defining-shapes-and-connectors.md)
 - [Dostosowywanie pól tekstowych i obrazu](../modeling/customizing-text-and-image-fields.md)

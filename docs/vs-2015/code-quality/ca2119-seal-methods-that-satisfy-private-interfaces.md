@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: af41fc5576cbcd56589680d99c0cd5c0dfd6e6f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0afa6950a6ad876cdcfdcc1a56dd143422b9d44f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664766"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544355"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Zapieczętuj metody, które spełniają interfejsy prywatne
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Pieczętuj metody, które spełniają wymagania interfejsów prywatnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|SealMethodsThatSatisfyPrivateInterfaces|
 |CheckId|CA2119|
@@ -33,21 +33,21 @@ ms.locfileid: "72664766"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Dziedziczony typ publiczny zapewnia implementację metody dla `internal` (`Friend` w Visual Basic).
+ Dziedziczony typ publiczny zapewnia implementację metody `internal` `Friend` w interfejsie (w Visual Basic).
 
 ## <a name="rule-description"></a>Opis reguły
- Metody interfejsu mają publiczny dostęp, którego nie można zmienić przez typ implementujący. Wewnętrzny interfejs tworzy kontrakt, który nie jest przeznaczony do wdrożenia poza zestawem, który definiuje interfejs. Typ publiczny implementujący metodę interfejsu wewnętrznego przy użyciu modyfikatora `virtual` (`Overridable` w Visual Basic) umożliwia przesłanianie metody przez typ pochodny, który znajduje się poza zestawem. Jeśli drugi typ w definicji zestawu wywołuje metodę i oczekuje kontraktu tylko wewnętrznego, zachowanie może zostać naruszone, gdy zamiast tego zostanie wykonana zastąpiona metoda w zewnętrznym zestawie. Powoduje to utworzenie luki w zabezpieczeniach.
+ Metody interfejsu mają publiczny dostęp, którego nie można zmienić przez typ implementujący. Wewnętrzny interfejs tworzy kontrakt, który nie jest przeznaczony do wdrożenia poza zestawem, który definiuje interfejs. Typ publiczny implementujący metodę interfejsu wewnętrznego przy użyciu `virtual` `Overridable` modyfikatora (w Visual Basic) umożliwia przesłanianie metody przez typ pochodny, który znajduje się poza zestawem. Jeśli drugi typ w definicji zestawu wywołuje metodę i oczekuje kontraktu tylko wewnętrznego, zachowanie może zostać naruszone, gdy zamiast tego zostanie wykonana zastąpiona metoda w zewnętrznym zestawie. Powoduje to utworzenie luki w zabezpieczeniach.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zapobiec zastąpieniu metody poza zestaw przy użyciu jednego z następujących elementów:
 
-- Ustaw typ deklarujący `sealed` (`NotInheritable` w Visual Basic).
+- Oznacz typ deklarujący `sealed` ( `NotInheritable` w Visual Basic).
 
-- Zmień dostępność typu deklarującego na `internal` (`Friend` w Visual Basic).
+- Zmień dostępność typu deklarującego na `internal` ( `Friend` w Visual Basic).
 
 - Usuń wszystkie konstruktory publiczne z typu deklarującego.
 
-- Zaimplementuj metodę bez użycia modyfikatora `virtual`.
+- Zaimplementuj metodę bez użycia `virtual` modyfikatora.
 
 - Zaimplementuj metodę jawnie.
 
@@ -55,7 +55,7 @@ ms.locfileid: "72664766"
  Jeśli po dokładnym przejrzeniu Metoda zostanie przesłonięta poza zestawem, bezpieczniej jest pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia typ, `BaseImplementation`, który narusza tę regułę.
+ W poniższym przykładzie przedstawiono typ, `BaseImplementation` który narusza tę regułę.
 
  [!code-cpp[FxCop.Security.SealMethods1#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cpp/FxCop.Security.SealMethods1.cpp#1)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cs/FxCop.Security.SealMethods1.cs#1)]
@@ -69,4 +69,4 @@ ms.locfileid: "72664766"
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [Interfejsy](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b) interfejsów
+ [Interfaces](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [Interfejsy](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b) interfejsów

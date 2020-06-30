@@ -13,22 +13,22 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbe6da087d10d3373a1f5d7836d4fa5207801bc7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 945e934ce16c9e08209f89d8d2d2dcdfe166a4c6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586753"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542821"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Nadmierne zużycie czasu procesora przez odzyskiwanie pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|Element|Wartość|  
 |-|-|  
 |Identyfikator reguły|DA0024|  
 |Kategoria|Użycie .NET Framework|  
-|Metoda profilowania|Wszystkie|  
-|Wiadomość|Czas trwania operacji odzyskiwania pamięci (%) jest bardzo wysoki. Występuje nadmierna ilość wyrzucania elementów bezużytecznych.|  
+|Metoda profilowania|Wszystko|  
+|Komunikat|Czas trwania operacji odzyskiwania pamięci (%) jest bardzo wysoki. Występuje nadmierna ilość wyrzucania elementów bezużytecznych.|  
 |Typ reguły|Ostrzeżenie|  
   
  Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.  
@@ -47,6 +47,6 @@ ms.locfileid: "82586753"
 > Gdy czas spędzony na wyrzucaniu elementów bezużytecznych jest znaczący, ale nie jest zbyt duży w porównaniu z całkowitym czasem przetwarzania aplikacji, wyzwalane jest ostrzeżenie [o wysokim czasie procesora (DA0023](../profiling/da0023-high-gc-cpu-time.md) ), a nie ta reguła.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć\\środowiska CLR% Time w kolumnie GC** . Ustal, czy istnieją określone fazy wykonywania programu, w których narzuty wyrzucania elementów bezużytecznych pamięci zarządzanej są większe niż inne fazy. Porównaj wartości parametru% Time w usłudze GC z szybkością wyrzucania elementów bezużytecznych raportowaną w liczbie kolekcji **generacji 0**, kolekcjach **generacji 1**, liczbach **kolekcji generacji 2** .  
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć środowiska CLR \\ % Time w kolumnie GC** . Ustal, czy istnieją określone fazy wykonywania programu, w których narzuty wyrzucania elementów bezużytecznych pamięci zarządzanej są większe niż inne fazy. Porównaj wartości parametru% Time w usłudze GC z szybkością wyrzucania elementów bezużytecznych raportowaną w liczbie kolekcji **generacji 0**, kolekcjach **generacji 1**, liczbach **kolekcji generacji 2** .  
   
  Wartość% Time w usłudze GC próbuje zgłosić ilość czasu, przez który aplikacja spędza wykonywanie wyrzucania elementów bezużytecznych proporcjonalnie do całkowitej ilości przetwarzania. Należy pamiętać, że istnieją sytuacje, w których wartość% Time w usłudze GC może zgłosić bardzo wysoką wartość, ale nie jest ze względu na nadmierne wyrzucanie elementów bezużytecznych. Aby uzyskać więcej informacji na temat sposobu, w jaki wartość% Time w usłudze GC jest obliczana, zobacz [różnicę między danymi wydajności zgłaszanymi przez różne narzędzia — 4 wprowadzanie danych](https://devblogs.microsoft.com/dotnet/difference-between-perf-data-reported-by-different-tools-4/) w witrynie sieci **Web Maoni** w MSDN. Jeśli wystąpią błędy stron lub aplikacja jest zastosowana przez inne zadania o wyższym priorytecie podczas wyrzucania elementów bezużytecznych, czas (%) w liczniku GC będzie odzwierciedlał te dodatkowe opóźnienia.

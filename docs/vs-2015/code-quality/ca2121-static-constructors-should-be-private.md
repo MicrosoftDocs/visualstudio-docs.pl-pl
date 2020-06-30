@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f28c1dadaef2dc88a3d728322dee1053ccdd69c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f95b33e1391ca755a6c0df261fa2bd05bd3c7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663081"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544316"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Konstruktory statyczne powinny być prywatne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
@@ -38,7 +38,7 @@ ms.locfileid: "72663081"
 ## <a name="rule-description"></a>Opis reguły
  Konstruktor statyczny, nazywany również konstruktorem klasy, jest używany do inicjowania typu. System wywołuje statyczny konstruktor przed utworzeniem pierwszego wystąpienia typu lub przed odwołaniem do któregokolwiek ze statycznych elementów członkowskich. Użytkownik nie ma kontroli nad tym, kiedy Konstruktor statyczny jest wywoływany. Jeśli konstruktor statyczny nie jest prywatny, może być wywołany przez kod inny niż system. W zależności od operacji, które są wykonywane w konstruktorze, może to spowodować nieoczekiwane zachowanie.
 
- Ta reguła jest wymuszana przez C# kompilatory .net i Visual Basic.
+ Ta reguła jest wymuszana przez kompilatory języka C# i Visual Basic platformy .NET.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Naruszenia są zwykle spowodowane przez jedną z następujących akcji:

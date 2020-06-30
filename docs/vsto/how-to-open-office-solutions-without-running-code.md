@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Otwieranie rozwiązań pakietu Office bez uruchamiania kodu'
+title: 'Instrukcje: otwieranie rozwiązań pakietu Office bez uruchamiania kodu'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,39 +18,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441779"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543484"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Instrukcje: Otwieranie rozwiązań pakietu Office bez uruchamiania kodu
-  Rozwiązania Microsoft Office, utworzone za pomocą rozszerzeń kodu zarządzanego jest uruchamiany nawet wtedy, gdy ustawienia zabezpieczeń w aplikacji pakietu Office przez użytkownika końcowego jest ustawiony na wysoki. Jest to spowodowane zabezpieczenie kodu zestawu .NET jest zarządzana przez program Microsoft .NET Framework, nie przez Microsoft Office.
+# <a name="how-to-open-office-solutions-without-running-code"></a>Instrukcje: otwieranie rozwiązań pakietu Office bez uruchamiania kodu
+  Rozwiązanie Microsoft Office utworzone przy użyciu rozszerzeń kodu zarządzanego działa nawet wtedy, gdy ustawienie zabezpieczeń w aplikacji pakietu Office użytkownika końcowego jest ustawione na wartość wysoki. Wynika to z faktu, że zabezpieczenia kodu zestawu .NET są zarządzane przez strukturę Microsoft .NET, a nie przez Microsoft Office.
 
- Istnieją jednak czasy, kiedy warto otworzyć dokument bez uruchamiania kodu. Na przykład kod, który jest uruchamiany po otwarciu dokumentu może zmienić zawartość, ale ma zostać zaktualizowany dokument wyglądu przed zmian w kodzie. Lub możesz chcieć wysłać dokument niektóre informacje w nim innej, a nie chcesz, aby kod, aby uruchomić i być może zmienić zawartość.
+ Jednak istnieją przypadki, w których można chcieć otworzyć dokument bez uruchamiania kodu. Na przykład kod, który jest uruchamiany, gdy dokument zostanie otwarty, może zmienić zawartość, ale chcesz zaktualizować wygląd dokumentu przed jego zmianą. Możesz też wysłać dokument z określonymi informacjami w nim do kogoś i nie chcesz, aby kod był uruchamiany i prawdopodobnie zmienić jego zawartość.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Istnieje kilka sposobów, aby otworzyć dokument lub skoroszyt zawierający rozszerzenia kodu zarządzanego bez uruchamiania kodu zestawu.
+ Istnieje kilka sposobów otwierania dokumentu lub skoroszytu zawierającego rozszerzenia kodu zarządzanego bez uruchamiania kodu zestawu.
 
-## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Aby pominąć zestawu przy użyciu klawisza Shift
+## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Aby pominąć zestaw przy użyciu klawisza Shift
 
-- Otwórz dokumenty i skoroszyty z **pliku** menu, przytrzymując naciśnięty **Shift** klawisz, aby uniemożliwić wywoływanie zdarzeń inicjowania, podczas otwierania dokumentu programu Word i Excel.
+- Otwórz dokumenty i skoroszyty z menu **plik** , przytrzymując klawisz **SHIFT** , aby uniemożliwić programowi Word i Excel podnoszenie zdarzeń inicjalizacji podczas otwierania dokumentu.
 
     > [!NOTE]
-    > Jeśli możesz otworzyć dokument lub skoroszyt z **wprowadzenie** okienka zadań, przytrzymując **Shift** kodu nie obejścia. Ponadto przytrzymując wciśnięty klawisz SHIFT nie zapobiega zdarzenia są zgłaszane po otwarciu dokumentu.
+    > Jeśli otworzysz dokument lub skoroszyt z okienka zadań **wprowadzenie** , wciśnięcie **klawisza Shift** nie spowoduje obejścia kodu. Ponadto wciśnięcie klawisza SHIFT nie zapobiega wywoływaniu zdarzeń po otwarciu dokumentu.
 
-     Ta metoda jest przydatna, jeśli chcesz otworzyć dokument, aby wprowadzić zmiany, bez konieczności pisania kodu, uruchamiania i zmieniania dokumentu najpierw.
+     Ta metoda jest przydatna, jeśli chcesz otworzyć dokument, aby wprowadzić zmiany bez uruchamiania kodu i najpierw zmienić dokument.
 
-## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Aby pominąć zestawu, zmiana nazwy lub usuwanie go
+## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Aby pominąć zestaw przez zmianę jego nazwy lub usunięcie
 
-- Jeśli masz odpowiednie uprawnienia na komputerze, na którym znajduje się zestaw można zmienić lub usunąć zestaw, dokument lub skoroszyt nie można odnaleźć. Powoduje to błąd są zgłaszane w każdym otwarciu dokumentu pakietu Office.
+- Jeśli masz odpowiednie uprawnienia na komputerze, na którym znajduje się zestaw, możesz zmienić nazwę zestawu lub usunąć go, aby dokument lub skoroszyt nie mógł go znaleźć. Powoduje to, że błąd jest zgłaszany za każdym razem, gdy dokument pakietu Office zostanie otwarty.
 
-     Jeśli rozwiązanie jest używane przez wiele osób, ta metoda uniemożliwia rozwiązanie działa dla wszystkich z nich. Może to być przydatne, jeśli problem zostanie znaleziony w kod lub odwołania server i chcesz uniemożliwić użytkownikom wszystkich jej wykonanie.
+     Jeśli rozwiązanie jest używane przez wiele osób, ta metoda uniemożliwia działanie rozwiązania dla wszystkich z nich. Może to być przydatne w przypadku znalezienia problemu w kodzie lub serwerze, którego dotyczy odwołanie, i chcesz zatrzymać jego wykonywanie przez wszystkich użytkowników.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
-- [Manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)

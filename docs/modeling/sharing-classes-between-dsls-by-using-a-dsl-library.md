@@ -1,18 +1,18 @@
 ---
 title: Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76111362"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542548"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 W programie Visual Studio Wizualizacja i Modeling SDK można utworzyć niekompletną definicję DSL, którą można zaimportować do innego modemu DSL. Pozwala to na wspólne części podobnych modeli.
@@ -31,17 +31,17 @@ W programie Visual Studio Wizualizacja i Modeling SDK można utworzyć niekomple
 
      Aby zdefiniować relację, która może być używana przez importerów, należy utworzyć dwie klasy domeny i utworzyć relację między nimi.
 
-     Rozważ ustawienie **modyfikatora dziedziczenia** klas domeny na `Abstract`.
+     Rozważ ustawienie **modyfikatora dziedziczenia** klas domeny na `Abstract` .
 
 3. Można dodawać elementy zdefiniowane w Eksploratorze DSL, takie jak konstruktory połączeń.
 
 4. Można dodać dostosowania wymagające dodatkowego kodu, takie jak ograniczenia walidacji.
 
-5. Kliknij przycisk **Transformuj wszystkie szablony**.
+5. Kliknij kolejno pozycje **Przekształć wszystkie szablony**.
 
 6. Skompiluj projekt.
 
-7. W przypadku dystrybucji DSL do użytku przez inne osoby należy zapewnić zarówno skompilowany zestaw (DLL), jak i plik `DslDefinition.dsl`. Skompilowany zestaw można znaleźć w folderze `Dsl\bin\*`
+7. W przypadku dystrybucji DSL do użytku przez inne osoby należy zapewnić zarówno skompilowany zestaw (DLL), jak i plik `DslDefinition.dsl` . Skompilowany zestaw można znaleźć w folderze`Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Aby zaimportować bibliotekę DSL
 
@@ -61,7 +61,7 @@ W programie Visual Studio Wizualizacja i Modeling SDK można utworzyć niekomple
 
    Biblioteka DSL może importować inne biblioteki. Podczas importowania biblioteki jego Importy są również automatycznie wyświetlane w Eksploratorze DSL.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 

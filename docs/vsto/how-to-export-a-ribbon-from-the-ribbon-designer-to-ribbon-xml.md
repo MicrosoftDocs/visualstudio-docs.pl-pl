@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,55 +18,55 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17d6efe4aa18682c6777128113f6fa60347f8950
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419489"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543471"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki
-  **Wstążka (Projektant graficzny)** element nie obsługuje wszystkich możliwych typów dostosowania wstążki. W celu dostosowania wstążki w zaawansowanych sposobów, możesz eksportowanie wstążki z projektanta do pliku XML Wstążki i bezpośredniego edytowania pliku XML.
+  Element **wstążki (projektant graficzny)** nie obsługuje wszystkich możliwych typów dostosowań Wstążki. Aby dostosować Wstążkę w zaawansowanych sposobach, można wyeksportować Wstążkę z projektanta do kodu XML wstążki i bezpośrednio edytować plik XML.
 
 > [!NOTE]
-> Nie wszystkie wartości właściwości są wyświetlane w pliku XML wstążki. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).
+> Nie wszystkie wartości właściwości są wyświetlane w pliku XML wstążki. Aby uzyskać więcej informacji, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Aby eksportowanie wstążki z projektanta wstążki do XML wstążki
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Aby wyeksportować Wstążkę z projektanta wstążki do kodu XML wstążki
 
-1. Kliknij prawym przyciskiem myszy plik kodu wstążki w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Projektant widoków**.
+1. Kliknij prawym przyciskiem myszy plik kodu wstążki w **Eksplorator rozwiązań**, a następnie kliknij pozycję **Projektant widoków**.
 
-2. Kliknij prawym przyciskiem myszy projektanta wstążki, a następnie kliknij przycisk **eksportowanie wstążki do XML**.
+2. Kliknij prawym przyciskiem myszy projektanta wstążki, a następnie kliknij polecenie **Eksportuj Wstążkę do formatu XML**.
 
-     Visual Studio dodaje pliku XML Wstążki i pliku kodu XML wstążki do projektu.
+     Program Visual Studio dodaje plik XML wstążki i plik kodu XML wstążki do projektu.
 
-3. W klasie kodu wstążki, zlokalizuj komentarzy rozpoczynających się od `TODO:`.
+3. W klasie kodu wstążki Znajdź komentarze, które zaczynają się od `TODO:` .
 
-4. Skopiuj blok kodu w tych komentarzach do **ThisAddin**, **ThisWorkbook**, lub **ThisDocument** klasy, w zależności od tego, jakiego typu rozwiązania tworzenia.
+4. Skopiuj blok kodu z tych komentarzy do klasy **ThisAddIn**, **ThisWorkbook**lub **ThisDocument** , w zależności od typu rozwiązania, które tworzysz.
 
-     Ten kod umożliwia aplikacji Microsoft Office wykrycie i załadowanie swoje niestandardowe wstążki. Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
+     Ten kod umożliwia aplikacji Microsoft Office odnajdywanie i ładowanie Wstążki niestandardowej. Aby uzyskać więcej informacji, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
-5. W **ThisAddin**, **ThisWorkbook**, lub **ThisDocument** klasy, Usuń komentarz z bloku kodu.
+5. W klasie **ThisAddIn**, **ThisWorkbook**lub **ThisDocument** Usuń komentarz z bloku kodu.
 
-     Po użytkownik Usuń komentarz kodu, powinien on przypominać następujący przykład. W tym przykładzie jest wywoływana w klasie wstążki `MyRibbon`.
+     Po usunięciu komentarza do kodu powinien on wyglądać podobnie do poniższego przykładu. W tym przykładzie Klasa wstążki jest wywoływana `MyRibbon` .
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6. Przejdź do pliku kodu XML wstążki, a następnie znajdź `Ribbon Callbacks` regionu.
+6. Przejdź do pliku kodu XML wstążki i Znajdź `Ribbon Callbacks` region.
 
-     Jest to, gdzie można wpisać metody wywołania zwrotnego do obsługi akcje użytkownika, takie jak kliknięcie przycisku.
+     Jest to miejsce, w którym można pisać metody wywołania zwrotnego w celu obsługi akcji użytkownika, takich jak kliknięcie przycisku.
 
-7. Utwórz metodę wywołania zwrotnego dla każdego programu obsługi zdarzeń, który zapisano w kodzie projektanta wstążki.
+7. Utwórz metodę wywołania zwrotnego dla każdego programu obsługi zdarzeń, który został napisany w kodzie projektanta wstążki.
 
-8. Przenieś wszystkie swój kod procedury obsługi zdarzeń z programu obsługi zdarzeń do metod wywołania zwrotnego i zmodyfikuj kod do działania z modelu programowania rozszerzalności wstążki (RibbonX).
+8. Przenieś cały kod procedury obsługi zdarzeń z obsługi zdarzeń do metod wywołania zwrotnego i zmodyfikuj kod, aby działał z modelem programowania rozszerzalności wstążki (RibbonX).
 
-     Aby uzyskać informacji na temat pisania metody wywołania zwrotnego i za pomocą modelu programowania RibbonX, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
+     Aby uzyskać informacje na temat pisania metod wywołania zwrotnego i korzystania z modelu programowania RibbonX, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Wstążka — omówienie](../vsto/ribbon-overview.md)
+## <a name="see-also"></a>Zobacz też
+- [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)
-- [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Przewodnik: Tworzenie niestandardowej karty przy użyciu projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Przewodnik: Tworzenie niestandardowej karty przy użyciu języka XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

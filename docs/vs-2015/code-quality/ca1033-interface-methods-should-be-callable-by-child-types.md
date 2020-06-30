@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ee44537ba4f7f7efd65de2c8a27d139d9750b77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18629f8d5c63b652d6539db10c6e6dba5d621c24
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661863"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542301"
 ---
-# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Typy potomne powinny móc wywoływać metody interfejsu
+# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Metody interfejsu powinny móc zostać wywołane przez typy podrzędne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
@@ -36,9 +36,9 @@ ms.locfileid: "72661863"
  Niezapieczętowany typ widoczny na zewnątrz zapewnia jawną implementację metody interfejsu publicznego i nie dostarcza alternatywnej metody widocznej z zewnątrz o tej samej nazwie.
 
 ## <a name="rule-description"></a>Opis reguły
- Rozważmy typ podstawowy, który jawnie implementuje metodę interfejsu publicznego. Typ, który pochodzi od typu podstawowego, może uzyskać dostęp do dziedziczonej metody interfejsu tylko za pośrednictwem odwołania do bieżącego wystąpienia ( C#`this` in), które jest rzutowane do interfejsu. Jeśli typ pochodny ponownie implementuje (jawnie) dziedziczonej metody interfejsu, nie można już uzyskać dostępu do implementacji podstawowej. Wywołanie przez odwołanie do bieżącego wystąpienia wywoła implementację pochodną; powoduje to rekursję i ostateczne przepełnienie stosu.
+ Rozważmy typ podstawowy, który jawnie implementuje metodę interfejsu publicznego. Typ, który pochodzi od typu podstawowego, może uzyskać dostęp do dziedziczonej metody interfejsu tylko za pośrednictwem odwołania do bieżącego wystąpienia ( `this` w języku C#), który jest rzutowany do interfejsu. Jeśli typ pochodny ponownie implementuje (jawnie) dziedziczonej metody interfejsu, nie można już uzyskać dostępu do implementacji podstawowej. Wywołanie przez odwołanie do bieżącego wystąpienia wywoła implementację pochodną; powoduje to rekursję i ostateczne przepełnienie stosu.
 
- Ta reguła nie zgłasza naruszenia dla jawnej implementacji <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>, gdy zostanie podana zewnętrzna `Close()` lub `System.IDisposable.Dispose(Boolean)` Metoda.
+ Ta zasada nie zgłasza naruszenia dla jawnej implementacji, <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> gdy podano zewnętrznie widoczną `Close()` lub `System.IDisposable.Dispose(Boolean)` metodę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, zaimplementuj nową metodę, która uwidacznia te same funkcje i jest widoczna dla typów pochodnych lub Zmień na niejawną implementację. W przypadku akceptowalnej zmiany istotne jest, aby typ był zapieczętowany.
@@ -47,7 +47,7 @@ ms.locfileid: "72661863"
  Jeśli podano zewnętrznie widoczną metodę, która ma taką samą funkcjonalność, ale inną niż jawnie zaimplementowaną metodę, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono typ `ViolatingBase`, który narusza regułę i typ `FixedBase`, który zawiera poprawkę dla naruszenia.
+ Poniższy przykład pokazuje typ, `ViolatingBase` , który narusza regułę i typ, `FixedBase` , który pokazuje poprawkę dla naruszenia.
 
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExplicitMethodImplementations/cs/FxCop.Design.ExplicitMethodImplementations.cs#1)]
 

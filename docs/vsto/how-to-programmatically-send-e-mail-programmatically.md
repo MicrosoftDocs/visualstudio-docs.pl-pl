@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe wysyłanie wiadomości e-mail'
+title: 'Instrukcje: Programowane wysyłanie wiadomości e-mail'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551757"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543263"
 ---
-# <a name="how-to-programmatically-send-email"></a>Instrukcje: Programowe wysyłanie wiadomości e-mail
+# <a name="how-to-programmatically-send-email"></a>Instrukcje: Programowane wysyłanie wiadomości e-mail
   Ten przykład wysyła wiadomość e-mail do kontaktów, które mają nazwę domeny **example.com** w swoich adresach e-mail.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "69551757"
 ## <a name="example"></a>Przykład
  [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]
 
-## <a name="compile-the-code"></a>Skompilować kod
+## <a name="compile-the-code"></a>Kompiluj kod
  Ten przykład wymaga:
 
 - Kontakty, które mają nazwę domeny **example.com** w swoich adresach e-mail.
@@ -40,8 +40,8 @@ ms.locfileid: "69551757"
 ## <a name="robust-programming"></a>Niezawodne programowanie
  Nie usuwaj kodu filtru, który wyszukuje nazwę domeny **example.com**. Po usunięciu filtru Twoje rozwiązanie wyśle wiadomości e-mail do wszystkich kontaktów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj z elementami poczty](../vsto/working-with-mail-items.md)
-- [Instrukcje: Programowe tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [Instrukcje: Programowe uzyskiwanie dostępu do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Instrukcje: Programowe wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Instrukcje: programowe tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Instrukcje: programowe uzyskiwanie dostępu do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Instrukcje: Programowane wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0abc95811dc870abbfaa583fbaa7705302a70781
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 217f95b7d3658db107fc482040686eea9ee47604
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543666"
 ---
-# <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Należy poprawnie zaimplementować ISerializable
+# <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Poprawnie zaimplementuj interfejs ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ImplementISerializableCorrectly|
 |CheckId|CA2240|
@@ -33,19 +33,19 @@ ms.locfileid: "72670171"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Typ widoczny na zewnątrz można przypisać do interfejsu <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> i jest spełniony jeden z następujących warunków:
+ Typ widoczny na zewnątrz można przypisać do <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu i jeden z następujących warunków jest spełniony:
 
-- Typ dziedziczy, ale nie przesłania metody <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> i typ deklaruje pola wystąpienia, które nie są oznaczone atrybutem <xref:System.NonSerializedAttribute?displayProperty=fullName>.
+- Typ dziedziczy, ale nie przesłania <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody i typu deklaruje pola wystąpienia, które nie są oznaczone <xref:System.NonSerializedAttribute?displayProperty=fullName> atrybutem.
 
-- Typ nie jest zapieczętowany, a typ implementuje metodę <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>, która nie jest widoczna na zewnątrz i nie jest zaimplementowana.
+- Typ nie jest zapieczętowany i typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodę, która nie jest widoczna na zewnątrz i nie jest zaimplementowana.
 
 ## <a name="rule-description"></a>Opis reguły
- Pola wystąpienia, które są zadeklarowane w typie, który dziedziczy interfejs <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, nie są automatycznie dołączane do procesu serializacji. Aby uwzględnić pola, typ musi implementować metodę <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> i konstruktora serializacji. Jeśli pola nie powinny być serializowane, zastosuj atrybut <xref:System.NonSerializedAttribute> do pól, aby jawnie wskazać decyzję.
+ Pola wystąpienia, które są zadeklarowane w typie, który dziedziczy <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejs, nie są automatycznie dołączane do procesu serializacji. Aby uwzględnić pola, typ musi implementować <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodę i Konstruktor serializacji. Jeśli pola nie powinny być serializowane, Zastosuj <xref:System.NonSerializedAttribute> atrybut do pól, aby jawnie wskazać decyzję.
 
- W przypadku typów, które nie są zapieczętowane, implementacje metody <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> powinny być widoczne na zewnątrz. W związku z tym metoda może być wywoływana przez typy pochodne i jest możliwy do zastąpienia.
+ W przypadku typów, które nie są zapieczętowane, implementacje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody powinny być widoczne na zewnątrz. W związku z tym metoda może być wywoływana przez typy pochodne i jest możliwy do zastąpienia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy sprawić, aby Metoda <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> była widoczna i zawarta, i upewnić się, że wszystkie pola wystąpienia są zawarte w procesie serializacji lub jawnie oznaczone atrybutem <xref:System.NonSerializedAttribute>.
+ Aby naprawić naruszenie tej zasady, ustaw <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodę jako widoczną i Zastąp i upewnij się, że wszystkie pola wystąpienia są zawarte w procesie serializacji lub jawnie oznaczone <xref:System.NonSerializedAttribute> atrybutem.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
@@ -65,16 +65,16 @@ ms.locfileid: "72670171"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/vb/FxCop.Usage.ImplementISerializableCorrectly2.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2236: Wywołuj metody klasy podstawowej w typach ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Wywołuj metody klasy bazowej dla typów ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238: Zaimplementuj poprawnie metody serializacji](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+ [CA2238: Poprawnie implementuj metody serializacji](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
  [CA2235: Oznacz wszystkie pola nieprzeznaczone do serializacji](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: Oznacz typy ISerializable za pomocą atrybutu SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: Określ metody deserializacji dla pól opcjonalnych](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239: Udostępnij metody deserializacji dla pól opcjonalnych](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
  [CA2120: Zabezpiecz konstruktory serializacji](../code-quality/ca2120-secure-serialization-constructors.md)

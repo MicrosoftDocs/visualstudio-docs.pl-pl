@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7ab3a576b5014799e470260567a4942b5c3ef9de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1313c5ee79a7a13d3eb937a3431b13ea393857d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661919"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544524"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używaj zdarzeń wszędzie, gdzie jest to odpowiednie
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używaj zdarzeń, o ile to możliwe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|UseEventsWhereAppropriate|
 |CheckId|CA1030|
@@ -46,10 +46,10 @@ ms.locfileid: "72661919"
 ## <a name="rule-description"></a>Opis reguły
  Ta reguła wykrywa metody o nazwach, które normalnie mogą być używane dla zdarzeń. Zdarzenia obserwują Wzorzec projektowy obserwatora lub publikowania/subskrybowania. są one używane, gdy zmiana stanu w jednym obiekcie musi być przekazywana do innych obiektów. Jeśli metoda zostanie wywołana w odpowiedzi na jasno zdefiniowaną zmianę stanu, metoda powinna być wywoływana przez procedurę obsługi zdarzeń. Obiekty, które wywołują tę metodę, powinny wywoływać zdarzenia, a nie bezpośrednio metodę.
 
- Niektóre typowe przykłady zdarzeń można znaleźć w aplikacjach interfejsu użytkownika, w których akcja użytkownika, taka jak kliknięcie przycisku powoduje, że segment kodu ma zostać wykonany. Model zdarzeń [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] nie jest ograniczony do interfejsów użytkownika; należy go używać wszędzie tam, gdzie trzeba przekazywać zmiany stanu do jednego lub większej liczby obiektów.
+ Niektóre typowe przykłady zdarzeń można znaleźć w aplikacjach interfejsu użytkownika, w których akcja użytkownika, taka jak kliknięcie przycisku powoduje, że segment kodu ma zostać wykonany. [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]Model zdarzenia nie jest ograniczony do interfejsów użytkownika; należy go używać wszędzie tam, gdzie trzeba przekazywać zmiany stanu do jednego lub większej liczby obiektów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Jeśli metoda jest wywoływana, gdy zmienia się stan obiektu, należy rozważyć zmianę projektu w celu użycia modelu zdarzeń [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Jeśli metoda jest wywoływana, gdy zmienia się stan obiektu, należy rozważyć zmianę projektu w celu użycia [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modelu zdarzeń.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomiń ostrzeżenie z tej reguły, jeśli metoda nie działa z modelem zdarzeń [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Pomiń ostrzeżenie z tej reguły, jeśli metoda nie działa z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modelem zdarzeń.

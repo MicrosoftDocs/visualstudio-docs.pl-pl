@@ -1,7 +1,7 @@
 ---
-title: Ensurevstocomponent — funkcja
+title: EnsureVSTOComponent, funkcja
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f99ccb4cb76f942852716abf1fcb0c0f280decbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf55fc6669edd33d1b8896ee85f33ab2c04e844f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797615"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543588"
 ---
-# <a name="ensurevstocomponent-function"></a>Ensurevstocomponent — funkcja
-  Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.
+# <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent, funkcja
+  Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczony do użycia bezpośrednio w kodzie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,7 +32,7 @@ HRESULT EnsureVSTOComponent(
 
 |Parametr|Opis|
 |---------------|-----------------|
-|*pProject*|Nie należy używać.|
+|*pProject*|Nie używaj.|
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli funkcja się powiedzie, zwraca **S_OK**. Jeśli funkcja zawiedzie, zwraca kod błędu.
+ Jeśli funkcja się powiedzie, zwraca **S_OK**. Jeśli funkcja nie powiedzie się, zwraca kod błędu.

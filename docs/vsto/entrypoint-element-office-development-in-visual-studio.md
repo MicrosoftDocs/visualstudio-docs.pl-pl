@@ -1,9 +1,9 @@
 ---
-title: '&lt;punkt wejścia&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;entryPoint — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd3da83a25a05690e56d229f61ee709473171dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799776"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543601"
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punkt wejścia&gt; — element (Office development w programie Visual Studio)
-  Każdy `entryPoint` elementu `vstav3` obszar nazw identyfikuje zestaw dostosowania, który powinien zostać uruchomiony, jeśli to [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplikacja jest zainstalowana.
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint — &gt; element (Programowanie Office w Visual Studio)
+  Każdy `entryPoint` element `vstav3` przestrzeni nazw identyfikuje zestaw dostosowywania, który powinien być uruchamiany podczas instalacji tej [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplikacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,28 +34,28 @@ ms.locfileid: "62799776"
 </entryPoint>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `entryPoint` Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `entryPoint`Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw.
 
- Każdy `entryPoint` element może zawierać tylko jeden zestaw dostosowania. Może istnieć wiele `entryPoint` elementy zdefiniowane w manifeście aplikacji.
+ Każdy `entryPoint` element może zawierać tylko jeden zestaw dostosowywania. `entryPoint`W manifeście aplikacji może być zdefiniowanych wiele elementów.
 
- `entryPoint` Element ma następujące atrybuty.
+ `entryPoint`Element ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`class`|Wymagana. Identyfikuje zestaw dostosowania do wykonania. Składnia dla tego atrybutu jest *NamespaceName.ClassName*.|
+|`class`|Wymagany. Identyfikuje zestaw dostosowywania do wykonania. Składnia tego atrybutu jest *NamespaceName. ClassName*.|
 
- `entryPoint` ma następujący element.
+ `entryPoint`ma następujący element.
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- Wymagana. `assemblyIdentity` Element `vstav3` przestrzeni nazw, który odwołuje się do istniejącego `assemblyIdentity` element [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifestu aplikacji.
+ Wymagany. `assemblyIdentity`Element w `vstav3` przestrzeni nazw odwołuje się do istniejącego `assemblyIdentity` elementu w [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifeście aplikacji.
 
- Rola `assemblyIdentity` i jego atrybuty jest zdefiniowany w [ &#60;assemblyIdentity&#62; elementu &#40;aplikacji ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
+ Rola `assemblyIdentity` i jej atrybuty są zdefiniowane w [&#60;assemblyIdentity&#62; elementu &#40;aplikacji ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
 
-## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu
+## <a name="document-level-customization-example"></a>Przykład dostosowywania na poziomie dokumentu
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `entryPoint` elementów w aplikacji manifestu dla rozwiązań Office poziomie dokumentu, wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `entryPoint` elementy w manifeście aplikacji dla rozwiązań pakietu Office na poziomie dokumentu wdrożonych przy użyciu programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -94,10 +94,10 @@ ms.locfileid: "62799776"
 </vstav3:entryPoint>
 ```
 
-## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO
+## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `entryPoint` elementu w manifeście aplikacji dla rozwiązań pakietu Office dodatku poziomu aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `entryPoint` element w manifeście aplikacji dla rozwiązania Office na poziomie aplikacji wdrożonego za pomocą programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -112,7 +112,7 @@ ms.locfileid: "62799776"
 </vstav3:entryPoint>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

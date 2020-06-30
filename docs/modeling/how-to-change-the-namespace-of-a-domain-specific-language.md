@@ -1,20 +1,20 @@
 ---
 title: 'Instrukcje: zmienianie przestrzeni nazw języka specyficznego dla domeny'
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653763"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542678"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Instrukcje: zmienianie przestrzeni nazw języka specyficznego dla domeny
 
@@ -46,12 +46,12 @@ Można zmienić przestrzeń nazw języka specyficznego dla domeny. Wprowadź zmi
 
 10. Zresetuj wystąpienie eksperymentalne programu Visual Studio.
 
-    1. Usuń **\users \\** _{name}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**.
+    1. Usuń **\Users \\ **_{name}_**\AppData\Local\Microsoft\VisualStudio \\ \* **.
 
-    2. W menu **Start** systemu Windows wybierz kolejno pozycje **wszystkie programy**  > **Microsoft Visual Studio 2010 SDK**  > **Narzędzia**  > **Zresetuj wystąpienie eksperymentalne**.
+    2. W menu **Start** systemu Windows wybierz kolejno pozycje **Wszystkie programy**  >  **Microsoft Visual Studio 2010 zestaw**  >  **narzędzi**SDK  >  **Zresetuj wystąpienie eksperymentalne**.
 
 11. W menu **kompilacja** wybierz polecenie **Kompiluj ponownie rozwiązanie**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

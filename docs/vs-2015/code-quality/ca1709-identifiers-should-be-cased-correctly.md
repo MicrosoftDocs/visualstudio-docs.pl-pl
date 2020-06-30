@@ -15,33 +15,33 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 14c50ed94f05401cc5575af9f8b98472c35b261d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919230"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544004"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identyfikatory powinny być zapisywane z uwzględnieniem wielkości liter
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identyfikatory powinny mieć prawidłową wielkość liter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana kluczowa|Przerywanie — gdy jest wywoływany dla zestawów, przestrzeni nazw, typów, elementów członkowskich i parametrów.<br /><br /> Rozdzielenie — w przypadku uruchomienia parametrów typu ogólnego.|
 
 ## <a name="cause"></a>Przyczyna
  Nazwa identyfikatora nie ma poprawnej wielkości liter.
 
- \- lub —
+ \-oraz
 
  Nazwa identyfikatora zawiera dwuliterowy akronim, a druga litera jest małymi literami.
 
- \- lub —
+ \-oraz
 
  Nazwa identyfikatora zawiera akronim trzech lub więcej wielkich liter.
 

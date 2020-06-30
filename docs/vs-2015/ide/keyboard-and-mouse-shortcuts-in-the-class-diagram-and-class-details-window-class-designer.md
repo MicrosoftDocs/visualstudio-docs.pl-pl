@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 33596c353f5b8f303fe061a75b6f4fb406912df3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651487"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543120"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Skróty przy użyciu klawiatury i myszy w oknie Diagram klas i Szczegóły klasy (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +36,10 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 
 - [Używanie klawiatury w Okno szczegółów klasy](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="MouseClassDesigner"></a>Używanie myszy w Projektant klas
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>Używanie myszy w Projektant klas
  Następujące akcje myszy są obsługiwane na diagramach klas:
 
-|Kombinacja myszy|Context|Opis|
+|Kombinacja myszy|Kontekst|Opis|
 |-----------------------|-------------|-----------------|
 |Kliknij dwukrotnie|elementy kształtu|Otwiera edytor kodu.|
 ||Łącznik typu lizak|Rozwiń/Zwiń lizak.|
@@ -49,7 +49,7 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 |CTRL + kółko myszy|Diagram klas|Zmieniać.|
 |CTRL + SHIFT + kliknięcie|Diagram klas|Zmieniać.|
 
-## <a name="MouseClassDetails"></a>Używanie myszy w Okno szczegółów klasy
+## <a name="using-the-mouse-in-the-class-details-window"></a><a name="MouseClassDetails"></a>Używanie myszy w Okno szczegółów klasy
  Za pomocą myszy można zmienić wygląd okna Szczegóły klasy i wyświetlane dane w następujący sposób:
 
 - Kliknięcie dowolnej edytowalnej komórki umożliwia edytowanie zawartości tej komórki. Zmiany są odzwierciedlone we wszystkich miejscach, w których dane są przechowywane lub wyświetlane, w tym w okno Właściwości i w kodzie źródłowym.
@@ -62,15 +62,15 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 
 - Okno szczegółów klasy oferuje kilka przycisków do tworzenia nowych elementów członkowskich w bieżącej klasie i nawigowania między przedziałami elementów członkowskich w siatce Okno szczegółów klasy. Aby uzyskać więcej informacji, zobacz przyciski Okno szczegółów klasy.
 
-## <a name="KeyboardClassDesigner"></a>Używanie klawiatury w Projektant klas
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>Używanie klawiatury w Projektant klas
  Następujące akcje klawiatury są obsługiwane na diagramach klas:
 
-|Key|Context|Opis|
+|Klucz|Kontekst|Opis|
 |---------|-------------|-----------------|
 |Klawisze strzałek|Wewnątrz kształtów typu|Nawigacja w stylu drzewa w zawartości kształtu (obsługiwane jest Zawijanie wokół kształtu). Lewe i prawe klawisze rozszerzają/zwijają bieżący element, jeśli są rozwijane i przechodź do elementu nadrzędnego (jeśli nie) (zobacz Nawigowanie w widoku drzewa, aby uzyskać szczegółowe zachowanie).|
 ||Kształty najwyższego poziomu|Przesuwanie kształtów na diagramie.|
 |SHIFT + klawisze strzałek|Wewnątrz kształtów typu|Tworzenie ciągłego wyboru składającego się z elementów Shape, takich jak elementy członkowskie, zagnieżdżone typy lub przedziały. Skróty te nie obsługują zawijania.|
-|MOWA|Wewnątrz kształtów typu|Przejdź do tytułu kształtu najwyższego poziomu.|
+|STRONA GŁÓWNA|Wewnątrz kształtów typu|Przejdź do tytułu kształtu najwyższego poziomu.|
 ||Kształty najwyższego poziomu|Przejdź do pierwszego kształtu na diagramie.|
 |END|Wewnątrz kształtów typu|Przejdź do ostatniego widocznego elementu wewnątrz kształtu.|
 ||Kształty najwyższego poziomu|Przejdź do ostatniego kształtu na diagramie.|
@@ -89,20 +89,19 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 |SHIFT+TAB|Wszystkie konteksty|Przechodzi do poprzedniego elementu podrzędnego w obrębie tego samego elementu nadrzędnego (obsługuje Zawijanie).|
 |ODSTĘP|Wszystkie konteksty|Przełącza zaznaczenie bieżącego elementu.|
 
-## <a name="KeyboardClassDetails"></a>Używanie klawiatury w Okno szczegółów klasy
+## <a name="using-the-keyboard-in-the-class-details-window"></a><a name="KeyboardClassDetails"></a>Używanie klawiatury w Okno szczegółów klasy
 
 > [!NOTE]
 > Następujące kluczowe powiązania zostały wybrane do naśladowania środowiska wpisywania kodu.
 
  Użyj następujących klawiszy, aby przejść do okna Szczegóły klasy:
 
-|||
+|Klucz|Wynik|
 |-|-|
-|Key|Wynik|
-|, (przecinek)|Jeśli kursor znajduje się w wierszu parametru, wpisanie przecinka przenosi kursor do pola Nazwa następnego parametru. Jeśli kursor znajduje się w ostatnim wierszu parametru metody, przenosi kursor do \<add parametru > pole, którego można użyć do utworzenia nowego parametru.<br /><br /> Jeśli kursor znajduje się w innym miejscu Okno szczegółów klasy, wpisanie przecinka powoduje dodanie przecinka w bieżącym polu.|
+|, (przecinek)|Jeśli kursor znajduje się w wierszu parametru, wpisanie przecinka przenosi kursor do pola Nazwa następnego parametru. Jeśli kursor znajduje się w ostatnim wierszu parametru metody, przenosi kursor do \<add parameter> pola, którego można użyć do utworzenia nowego parametru.<br /><br /> Jeśli kursor znajduje się w innym miejscu Okno szczegółów klasy, wpisanie przecinka powoduje dodanie przecinka w bieżącym polu.|
 |; Dziel<br /><br /> lub<br /><br /> ) (nawias zamykający)|Przenieś kursor do pola Nazwa następnego wiersza elementu członkowskiego w siatce Okno szczegółów klasy.|
-|Tab|Przenosi kursor do następnego pola, najpierw przesuwając od lewej do prawej i od góry do dołu. Jeśli kursor jest przenoszony z pola, w którym wpisano tekst, Okno szczegółów klasy przetwarza ten tekst i zapisuje go, jeśli nie wygenerował błędu.<br /><br /> Jeśli kursor znajduje się na pustym polu, takim jak \<add > parametru, karta przenosi go do pierwszego pola następnego wiersza.|
-|\<space >|Przenosi kursor do następnego pola, najpierw przesuwając od lewej do prawej i od góry do dołu. Jeśli kursor znajduje się na pustym polu, takim jak \<add parametr >, zostanie przeniesiony do pierwszego pola następnego wiersza. Należy zauważyć, że \<space > wpisane bezpośrednio po przecinku zostanie zignorowane.<br /><br /> Jeśli kursor znajduje się w polu podsumowania, wpisanie spacji powoduje dodanie znaku spacji.<br /><br /> Jeśli kursor znajduje się w kolumnie Ukryj w danym wierszu, wpisanie spacji powoduje przełączenie wartości pola wyboru Ukryj.|
+|Tab|Przenosi kursor do następnego pola, najpierw przesuwając od lewej do prawej i od góry do dołu. Jeśli kursor jest przenoszony z pola, w którym wpisano tekst, Okno szczegółów klasy przetwarza ten tekst i zapisuje go, jeśli nie wygenerował błędu.<br /><br /> Jeśli kursor znajduje się w pustym polu, takim jak \<add parameter> , karta przenosi ją do pierwszego pola następnego wiersza.|
+|\<space>|Przenosi kursor do następnego pola, najpierw przesuwając od lewej do prawej i od góry do dołu. Jeśli kursor znajduje się w pustym polu, takim jak \<add parameter> , przenosi do pierwszego pola następnego wiersza. Należy zauważyć, że \<space> wpisane bezpośrednio po przecinku jest ignorowane.<br /><br /> Jeśli kursor znajduje się w polu podsumowania, wpisanie spacji powoduje dodanie znaku spacji.<br /><br /> Jeśli kursor znajduje się w kolumnie Ukryj w danym wierszu, wpisanie spacji powoduje przełączenie wartości pola wyboru Ukryj.|
 |CTRL + TAB|Przejdź do okna innego dokumentu. Na przykład Przełącz się z Okno szczegółów klasy do pliku Open Code.|
 |ESC (Escape)|Jeśli rozpoczęto wpisywanie tekstu w polu, naciśnięcie klawisza ESC działa jako klawisz cofania, przywraca zawartość pola do poprzedniej wartości. Jeśli Okno szczegółów klasy ma ogólny fokus, ale żadna konkretna komórka nie ma fokusu, naciśnięcie klawisza ESC przenosi fokus z Okno szczegółów klasy.|
 |Strzałka w górę i Strzałka w dół|Te klucze umożliwiają przeniesienie kursora z wiersza do wiersza w pionie w siatce Okno szczegółów klasy.|
@@ -110,4 +109,4 @@ Możesz użyć klawiatury oprócz myszy do wykonywania akcji nawigacyjnych w Pro
 |Strzałka w prawo|Jeśli kursor znajduje się w kolumnie Nazwa, naciśnięcie strzałki w prawo rozszerza bieżący węzeł w hierarchii (jeśli jest zwinięty).|
 
 ## <a name="see-also"></a>Zobacz też
- [Tworzenie i konfigurowanie składowych typu (Projektant klas)](../ide/creating-and-configuring-type-members-class-designer.md)
+ [Tworzenie i konfigurowanie typów członków (Projektant klas)](../ide/creating-and-configuring-type-members-class-designer.md)

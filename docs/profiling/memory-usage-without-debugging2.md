@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ac71a3aa707958bd0c7f107185d141e339b2b7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332148"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543354"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
 
@@ -76,7 +76,7 @@ Liczby to linki, które otwierają szczegółowe widoki raportów **użycia pami
 
   ![Linki widoku migawek](../profiling/media/memuse__snapshotview_numbered.png "Linki widoku migawek")
 
-|||
+|Image (Obraz)|Opis|
 |-|-|
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Całkowita liczba bajtów w pamięci podczas tworzenia migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegółów migawek posortowany według łącznego rozmiaru wystąpień typu.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Całkowita liczba obiektów w pamięci podczas tworzenia migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegółów migawek posortowany według liczby wystąpień typów.|
@@ -130,7 +130,7 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 
 **Zarządzane drzewo sterty** w raporcie ze szczegółowymi informacjami o migawce zawiera następujące kolumny:
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
 |**Liczbą**|Liczba wystąpień obiektów typu. **Liczba** jest zawsze 1 dla wystąpienia.|
@@ -152,7 +152,7 @@ Dla typu w drzewie **ścieżki do katalogu głównego** liczba obiektów, które
 
 Drzewo **typów, do których istnieją odwołania** w raporcie szczegóły migawki, zawiera następujące kolumny. Drzewo **obiektów, do którego się odwoływano** , nie ma kolumny **Count Reference** .
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Typ obiektu** lub **wystąpienie**|Nazwa typu lub wystąpienia.|
 |**Liczba odwołań**|Dla typów, liczba wystąpień obiektów typu.|
@@ -176,7 +176,7 @@ Oba linki otwierają ten sam raport. Jedyną różnicą jest początkowa kolejno
 
 **Zarządzane drzewo sterty** w raporcie różnic migawek zawiera następujące kolumny:
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|
 |**Liczbą**|Liczba wystąpień typu w podstawowej migawce. **Liczba** jest zawsze 1 dla wystąpienia.|
@@ -203,7 +203,7 @@ Dla typu w drzewie **ścieżki do katalogu głównego** liczba obiektów, które
 
 Drzewo **typów, do których istnieją odwołania** w raporcie różnic migawek, zawiera następujące kolumny. Drzewo **przywoływanych obiektów** ma **wystąpienie**, **rozmiar (bajty)**, **rozmiar włącznie (w bajtach)** i kolumny **modułów** .
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Typ obiektu** lub **wystąpienie**|Nazwa typu lub wystąpienia obiektu.|
 |**Liczba odwołań**|Liczba wystąpień typu w podstawowej migawce.|
