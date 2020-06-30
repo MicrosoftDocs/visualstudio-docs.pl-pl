@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1f333478c952db74fa6a9482cdad91ce6a858301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eb0e097c2f13fa9d9279a5f3e9761a53cb6e4b1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665999"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547748"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106: Potwierdzanie zabezpieczeń
+# <a name="ca2106-secure-asserts"></a>CA2106: Zabezpiecz asercje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|SecureAsserts|
 |CheckId|CA2106|
@@ -45,4 +45,4 @@ ms.locfileid: "72665999"
  Pomiń ostrzeżenie z tej reguły tylko po dokładnym przeglądzie zabezpieczeń.
 
 ## <a name="see-also"></a>Zobacz też
- [zasady bezpiecznego kodowania](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
+ <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>[Wytyczne dotyczące bezpiecznego kodowania](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

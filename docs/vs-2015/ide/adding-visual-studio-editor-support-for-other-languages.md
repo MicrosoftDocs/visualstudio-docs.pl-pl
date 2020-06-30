@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620775"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548112"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków do edytora programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,24 +34,52 @@ Dowiedz się, jak edytor programu Visual Studio obsługuje odczytywanie i nawigo
 
  Program Visual Studio obecnie zapewnia kolorowanie składni i obsługę uzupełniania podstawowych instrukcji dla następujących języków przy użyciu [gramatyki Deoficerów](https://manual.macromates.com/en/language_grammars). Jeśli Twój ulubiony język nie znajduje się w tabeli, nie martw się — możesz dodać go.
 
-|||||||
-|-|-|-|-|-|-|
-|Technique|F#|Java|Promocji|Rust|Visual Basic|
-|Clojure|Udać|JavaDoc|Objective-C|ShaderLab|Visual C#|
-|CMake|Groovy|JSON|Języku|ShellScript|Visual C++|
-|CoffeeScript|HTML|WCZEŚNIEJSZ|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Adres|XML|
-|Docker|Jade|SprawdY|Dopisek|TypeScript|YAML|
+- Technique
+- F#
+- Java
+- Znaczniki języka Markdown
+- Rust
+- Visual Basic
+- Clojure
+- Go
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Języku
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- WCZEŚNIEJSZ
+- Python
+- SQL
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Marka
+- Ruby
+- TypeScript
+- YAML
 
  Oprócz kolorowania składni i uzupełniania podstawowych instrukcji, Visual Studio ma również funkcję o nazwie [Przejdź do](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Ta funkcja umożliwia szybkie wyszukiwanie plików kodu, ścieżek plików i symboli kodu. Program Visual Studio oferuje przechodzenie do obsługi następujących języków.
 
-- Udać
+- Przejdź
 
 - Java
 
 - JavaScript
 
-- Obsługa
+- PHP
 
 - TypeScript
 
@@ -68,17 +96,17 @@ Dowiedz się, jak edytor programu Visual Studio obsługuje odczytywanie i nawigo
 
  Dodaj nowe gramatyki deautomatyzuje dla programu Visual Studio w następującym folderze:
 
- % USERPROFILE% \\. vs\Extensions
+ % USERPROFILE% \\ . vs\Extensions
 
  W tej ścieżce podstawowej Dodaj następujące foldery, jeśli są one stosowane do danej sytuacji:
 
 |Nazwa folderu|Opis|
 |-----------------|-----------------|
-|\\ *nazwę \<language >*|Folder języka. Zastąp *\<language nazwę >* nazwą języka. Na przykład **\Matlab**.|
-|\Syntaxes|Folder gramatyki. Zawiera pliki gramatyce. JSON dla języka, takie jak **MATLAB. JSON**.|
+|\\*\<language name>*|Folder języka. Zamień *\<language name>* na nazwę języka. Na przykład **\Matlab**.|
+|\Syntaxes|Folder gramatyki. Zawiera pliki gramatyce. JSON dla języka, takie jak **Matlab.json**.|
 |\Snippets|Folder fragmentów kodu. Zawiera fragmenty kodu dla języka.|
 
- W systemie Windows% USERPROFILE% jest rozpoznawana jako ścieżka: c:\Users \\ *\<user > nazwy*. Jeśli folder rozszerzeń nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
+ W systemie Windows% USERPROFILE% jest rozpoznawany jako ścieżka: c:\Users \\ *\<user name>* . Jeśli folder rozszerzeń nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
 
  Aby uzyskać szczegółowe informacje na temat tworzenia gramatyki Details, zobacz Details [— wprowadzenie do gramatyki języka: jak dodać wyróżnioną składnię kodu źródłowego osadzoną w kodzie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [uwagi na temat tworzenia gramatyki języka i niestandardowego motywu dla pakietu](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)deautomatyzacji.
 

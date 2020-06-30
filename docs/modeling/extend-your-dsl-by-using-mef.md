@@ -1,18 +1,18 @@
 ---
 title: Rozszerzanie DSL za pomocą MEF
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596609"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547644"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 
@@ -26,7 +26,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
 1. Utwórz nowy folder o nazwie **MefExtension** w projekcie **DslPackage** . Dodaj do niego następujące pliki:
 
-     Nazwa pliku: `CommandExtensionVSCT.tt`
+     Nazwa pliku:`CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > Ustaw identyfikator GUID w tym pliku na taki sam jak identyfikator GUID CommandSetId zdefiniowany w DslPackage\GeneratedCode\Constants.tt
@@ -42,21 +42,21 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    Nazwa pliku: `CommandExtensionRegistrar.tt`
+    Nazwa pliku:`CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    Nazwa pliku: `ValidationExtensionEnablement.tt`
+    Nazwa pliku:`ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    Nazwa pliku: `ValidationExtensionRegistrar.tt`
+    Nazwa pliku:`ValidationExtensionRegistrar.tt`
 
     W przypadku dodania tego pliku należy włączyć walidację w DSL przy użyciu co najmniej jednego z przełączników w **EditorValidation** w Eksploratorze DSL.
 
@@ -65,7 +65,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    Nazwa pliku: `PackageExtensionEnablement.tt`
+    Nazwa pliku:`PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
 2. Utwórz nowy folder o nazwie **MefExtension** w projekcie **DSL** . Dodaj do niego następujące pliki:
 
-     Nazwa pliku: `DesignerExtensionMetaDataAttribute.tt`
+     Nazwa pliku:`DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    Nazwa pliku: `GestureExtensionEnablement.tt`
+    Nazwa pliku:`GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    Nazwa pliku: `GestureExtensionController.tt`
+    Nazwa pliku:`GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -101,13 +101,13 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-    Wstaw wiersz po istniejącej dyrektywie `<Include>`.
+    Wstaw wiersz po istniejącej `<Include>` dyrektywie.
 
 4. Otwórz *DslDefinition. DSL*.
 
 5. W Eksploratorze DSL wybierz pozycję **Editor\Validation**.
 
-6. W okno Właściwości upewnij się, że co najmniej jedna z właściwości o nazwie **użyta** jest `true`.
+6. Upewnij się, że w okno Właściwości należy **użyć** co najmniej jednej z właściwości o nazwie `true` .
 
 7. Na pasku narzędzi **Eksplorator rozwiązań** kliknij pozycję **Przekształć wszystkie szablony**.
 
@@ -127,9 +127,9 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
 2. W nowym projekcie Dodaj odwołanie do zestawu DSL.
 
-   - Ten zestaw ma zwykle nazwę kończącą się ciągiem ". DSL. dll ".
+   - Ten zestaw ma zwykle nazwę kończącą się ciągiem ".Dsl.dll".
 
-   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w katalogu **\\bin dsl\\\***
+   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w ** \\ \\ \* koszu katalogu DSL**
 
    - Jeśli masz dostęp do pliku VSIX DSL, możesz znaleźć zestaw, zmieniając rozszerzenie nazwy pliku VSIX na ". zip". Dekompresowanie pliku zip.
 
@@ -157,7 +157,7 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    1. W polu **source. Extension. vsixmanifest**kliknij pozycję **Dodaj odwołanie** .
 
-   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL, w **DslPackage\\bin\\\*** .
+   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL w **DslPackage \\ bin \\ \* **.
 
        Dzięki temu użytkownicy mogą instalować jednocześnie DSL i Twoje rozszerzenie. Jeśli użytkownik zainstalował już modem DSL, zostanie zainstalowane tylko rozszerzenie.
 
@@ -175,9 +175,9 @@ Można pisać rozszerzenia w projekcie kodu zestawu oddzielnego rozwiązania do 
 
 ### <a name="menu-commands"></a>Polecenia menu
 
-Aby napisać polecenie menu, zdefiniuj klasę implementującą <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> i prefiks klasy z atrybutem, który jest zdefiniowany w DSL o nazwie *YourDsl*`CommandExtension`. Można napisać więcej niż jedną klasę poleceń menu.
+Aby napisać polecenie menu, zdefiniuj klasę implementującą <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> i prefiks klasy z atrybutem, który jest zdefiniowany w DSL o nazwie *YourDsl* `CommandExtension` . Można napisać więcej niż jedną klasę poleceń menu.
 
-`QueryStatus()` jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram. Powinien on sprawdzić bieżące zaznaczenie i ustawić `command.Enabled`, aby wskazać, kiedy polecenie ma zastosowanie.
+`QueryStatus()`jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram. Powinien on sprawdzić bieżące zaznaczenie i ustawić, `command.Enabled` Aby wskazać, kiedy polecenie ma zastosowanie.
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -321,7 +321,7 @@ namespace MefExtension
 
 ### <a name="validation-constraints"></a>Ograniczenia walidacji
 
-Metody walidacji są oznaczane przez atrybut `ValidationExtension` generowany przez DSL, a także przez <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Metoda może pojawić się w dowolnej klasie, która nie jest oznaczona przez atrybut.
+Metody walidacji są oznaczane przez `ValidationExtension` atrybut generowany przez DSL, a także przez <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Metoda może pojawić się w dowolnej klasie, która nie jest oznaczona przez atrybut.
 
 Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
 
@@ -372,9 +372,9 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)
 - [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md)
+- [Sprawdzanie poprawności w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md)

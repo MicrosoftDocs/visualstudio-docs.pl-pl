@@ -1,7 +1,7 @@
 ---
 title: Generowanie kodu w procesie kompilacji
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590556"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546721"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Wywołaj transformację tekstu w procesie kompilacji
 
@@ -26,7 +26,7 @@ ms.locfileid: "75590556"
 
 Istnieją pewne różnice w czynnościach, które mogą wykonać zadania kompilacji, wszystko zależy od użytego aparatu kompilacji. Podczas kompilowania rozwiązania w programie Visual Studio szablon tekstowy może uzyskać dostęp do interfejsu API programu Visual Studio (EnvDTE), jeśli ustawiono atrybut [hostspecific = "true"](../modeling/t4-template-directive.md) . Ale to nie jest prawdziwe w przypadku kompilowania rozwiązania z wiersza polecenia lub po zainicjowaniu kompilacji serwera za pomocą programu Visual Studio. W tych przypadkach kompilację wykonuje MSBuild i użyty zostaje inny host T4. Oznacza to, że nie można uzyskać dostępu do elementów, takich jak nazwy plików projektu w taki sam sposób, jak w przypadku kompilowania szablonu tekstowego przy użyciu programu MSBuild. Można jednak [przekazać informacje o środowisku do szablonów tekstowych i procesorów dyrektywy przy użyciu parametrów kompilacji](#parameters).
 
-## <a name="buildserver"></a>Konfigurowanie maszyn
+## <a name="configure-your-machines"></a><a name="buildserver"></a>Konfigurowanie maszyn
 
 Aby włączyć zadania kompilacji na komputerze deweloperskim, Zainstaluj zestaw SDK modelowania dla programu Visual Studio.
 
@@ -36,22 +36,22 @@ Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) działa na kom
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft. VisualStudio. TextTemplating. Sdk. host. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.15.0.dll
   - Microsoft.TextTemplating.Build.Tasks.dll
   - Microsoft.TextTemplating.targets
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft. VisualStudio. TextTemplating. 15.0. dll
-  - Microsoft. VisualStudio. TextTemplating. Interfaces. 15.0. dll
-  - Microsoft. VisualStudio. TextTemplating. VSHost. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.15.0.dll
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.15.0.dll
 
 > [!TIP]
-> Jeśli otrzymasz `MissingMethodException` dla metody Microsoft. CodeAnalysis podczas uruchamiania elementów docelowych kompilacji TextTemplating na serwerze kompilacji, upewnij się, że zestawy Roslyn znajdują się w katalogu o nazwie *Roslyn* , który znajduje się w tym samym katalogu, co plik wykonywalny kompilacji (na przykład *MSBuild. exe*).
+> Jeśli otrzymasz `MissingMethodException` metodę Microsoft. CodeAnalysis podczas uruchamiania elementów docelowych kompilacji TextTemplating na serwerze kompilacji, upewnij się, że zestawy Roslyn znajdują się w katalogu o nazwie *Roslyn* , który znajduje się w tym samym katalogu, co plik wykonywalny kompilacji (na przykład *msbuild.exe*).
 
 ## <a name="edit-the-project-file"></a>Edytuj plik projektu
 
@@ -65,7 +65,7 @@ W pliku .vbproj lub .csproj znajdź taki wiersz:
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- lub —
+\-oraz
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -147,7 +147,7 @@ Jeśli nie dostosowano kroku dostosujesz, ostrzeżenie zostanie zarejestrowane w
 
 ## <a name="customize-the-build-process"></a>Dostosuj proces kompilacji
 
-Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Można zdefiniować zadania, które są wywoływane przed przekształceniem i po nim, ustawiając właściwości `$(BeforeTransform)` i `$(AfterTransform)`:
+Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Można zdefiniować zadania, które są wywoływane przed przekształceniem i po nim, ustawiając właściwości `$(BeforeTransform)` i `$(AfterTransform)` :
 
 ```xml
 <PropertyGroup>
@@ -162,7 +162,7 @@ Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Mo
   </Target>
 ```
 
-W `AfterTransform`można odwoływać się do list plików:
+W programie `AfterTransform` można odwoływać się do list plików:
 
 - GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpiły istniejące pliki tylko do odczytu, `%(GeneratedFiles.ReadOnlyFileOverwritten)` będą spełnione. Pliki te można wyewidencjonować z kontroli źródła.
 
@@ -184,7 +184,7 @@ Właściwości te są stosowane tylko przez program MSBuild. Nie wpływają one 
 </ItemGroup>
 ```
 
-Przydatny folder do przekierowania jest `$(IntermediateOutputPath)`.
+Przydatnym folderem do przekierowania jest `$(IntermediateOutputPath)` .
 
 Jeśli określisz nazwę pliku wyjściowego, ma pierwszeństwo przed rozszerzeniem określonym w dyrektywie Output w szablonach.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Przekaż dane kontekstu kompilacji do szablonów
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Przekaż dane kontekstu kompilacji do szablonów
 
 Można ustawić wartości parametrów w pliku projektu. Na przykład można przekazać właściwości [kompilacji](../msbuild/msbuild-properties.md) i [zmienne środowiskowe](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue` pobiera dane z `T4ParameterValues` tylko w przypadku korzystania z programu MSBuild. Gdy przekształcasz szablon przy użyciu programu Visual Studio, parametry mają wartości domyślne.
+> `ResolveParameterValue`Pobiera dane z `T4ParameterValues` tylko wtedy, gdy używasz programu MSBuild. Gdy przekształcasz szablon przy użyciu programu Visual Studio, parametry mają wartości domyślne.
 
-## <a name="msbuild"></a>Korzystanie z właściwości projektu w dyrektywach Assembly i include
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Korzystanie z właściwości projektu w dyrektywach Assembly i include
 
 Makra programu Visual Studio, takie jak **$ (SolutionDir)** , nie działają w programie MSBuild. Zamiast tego można użyć właściwości projektu.
 
@@ -299,17 +299,17 @@ W przypadku zaktualizowania dołączonego pliku lub innego pliku odczytanego prz
 
 - [Szablony tekstu w czasie wykonywania](../modeling/run-time-text-generation-with-t4-text-templates.md) są przekształcane w czasie wykonywania w aplikacji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 ::: moniker range="vs-2017"
 
-- Istnieją dobre wskazówki w szablonie programu MSbuild T4 w `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Dobrym wskazówkami w szablonie programu MSbuild T4 w`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Istnieją dobre wskazówki w szablonie programu MSbuild T4 w `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Dobrym wskazówkami w szablonie programu MSbuild T4 w`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

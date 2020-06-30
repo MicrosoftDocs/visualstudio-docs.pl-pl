@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie poleceń do menu skrótów'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986029"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546201"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Instrukcje: Dodawanie poleceń do menu skrótów
   W tym temacie pokazano, jak dodać polecenia do menu skrótów w aplikacji pakietu Office przy użyciu dodatku VSTO.
@@ -31,18 +31,18 @@ ms.locfileid: "72986029"
 
 2. **Eksplorator rozwiązań**, wybierz pozycję **ThisAddIn.cs** lub **ThisAddIn. vb**.
 
-3. Na pasku menu wybierz polecenie **wyświetl**  > **kod**.
+3. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
      Plik klasy **ThisAddIn** zostanie otwarty w edytorze kodu.
 
-4. Dodaj następujący kod do klasy **ThisAddIn** . Ten kod zastępuje metodę `CreateRibbonExtensibilityObject` i zwraca klasę XML wstążki do aplikacji pakietu Office.
+4. Dodaj następujący kod do klasy **ThisAddIn** . Ten kod przesłania `CreateRibbonExtensibilityObject` metodę i zwraca klasę XML wstążki do aplikacji pakietu Office.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. W **Eksplorator rozwiązań**wybierz plik XML wstążki. Domyślnie plik XML wstążki nosi nazwę *Ribbon1. XML*.
+5. W **Eksplorator rozwiązań**wybierz plik XML wstążki. Domyślnie plik XML wstążki ma nazwę *Ribbon1.xml*.
 
-6. Na pasku menu wybierz polecenie **wyświetl**  > **kod**.
+6. Na pasku menu wybierz polecenie **Wyświetl**  >  **kod**.
 
      Plik XML wstążki zostanie otwarty w edytorze kodu.
 
@@ -72,14 +72,14 @@ ms.locfileid: "72986029"
 
 8. W **Eksplorator rozwiązań**wybierz pozycję **MyRibbon.cs** lub **wstążka. vb**.
 
-9. Dodaj metodę wywołania zwrotnego do klasy `Ribbon1` dla każdej kontrolki, która ma być obsługiwana.
+9. Dodaj metodę wywołania zwrotnego do `Ribbon1` klasy dla każdej kontrolki, która ma być obsługiwana.
 
      Następująca metoda wywołania zwrotnego obsługuje przycisk **My** . Ten kod dodaje ciąg do aktywnego dokumentu w bieżącej lokalizacji programu.
 
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Przewodnik: Tworzenie menu skrótów dla zakładek](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

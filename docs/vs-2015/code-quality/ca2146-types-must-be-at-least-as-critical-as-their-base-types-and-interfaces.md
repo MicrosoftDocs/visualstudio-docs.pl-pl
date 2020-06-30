@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ab621ade120a257508eddbf9527f674b5fda8748
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2316d6e555fa091d26392aee71b774489c81a379
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610188"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546396"
 ---
-# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy muszą być co najmniej tak ważne, jak ich typy podstawowe i interfejsy
+# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy muszą być co najmniej tak krytyczne jak ich typy i interfejsy podstawowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
 |CheckId|CA2146|
@@ -29,10 +29,10 @@ ms.locfileid: "72610188"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ przezroczysty pochodzi od typu, który jest oznaczony za pomocą <xref:System.Security.SecuritySafeCriticalAttribute> lub <xref:System.Security.SecurityCriticalAttribute> lub typ, który jest oznaczony za pomocą atrybutu <xref:System.Security.SecuritySafeCriticalAttribute> pochodzi od typu, który jest oznaczony atrybutem <xref:System.Security.SecurityCriticalAttribute>.
+ Typ przezroczysty pochodzi od typu, który jest oznaczony za pomocą <xref:System.Security.SecuritySafeCriticalAttribute> lub lub <xref:System.Security.SecurityCriticalAttribute> typu, który jest oznaczony atrybutem, pochodzi <xref:System.Security.SecuritySafeCriticalAttribute> od typu, który jest oznaczony <xref:System.Security.SecurityCriticalAttribute> atrybutem.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła jest uruchamiana, gdy typ pochodny ma atrybut przezroczystości pod względem zabezpieczeń, który nie jest tak krytyczny, jak jego typ podstawowy lub zaimplementowany interfejs. Tylko typy krytyczne pod względem zabezpieczeń mogą pochodzić od podstawowych typów krytycznych lub implementować interfejsy krytyczne, a tylko typy krytyczne lub krytyczne dla bezpieczeństwa mogą pochodzić od podstawowych typów krytycznych dla bezpieczeństwa lub implementować interfejsy krytyczne dla bezpieczeństwa. Naruszenia tej reguły w wyniku przejrzystości poziomu 2 dla typu pochodnego <xref:System.TypeLoadException>.
+ Ta reguła jest uruchamiana, gdy typ pochodny ma atrybut przezroczystości pod względem zabezpieczeń, który nie jest tak krytyczny, jak jego typ podstawowy lub zaimplementowany interfejs. Tylko typy krytyczne pod względem zabezpieczeń mogą pochodzić od podstawowych typów krytycznych lub implementować interfejsy krytyczne, a tylko typy krytyczne lub krytyczne dla bezpieczeństwa mogą pochodzić od podstawowych typów krytycznych dla bezpieczeństwa lub implementować interfejsy krytyczne dla bezpieczeństwa. Naruszenia tej reguły w wyniku przejrzystości poziomu 2 <xref:System.TypeLoadException> dla typu pochodnego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby rozwiązać ten problem, należy oznaczyć typ pochodny lub implementujący atrybutem przezroczystości, który jest co najmniej jako krytyczny dla typu podstawowego lub interfejsu.

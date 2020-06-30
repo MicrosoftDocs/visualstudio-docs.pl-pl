@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie tworzenia i przesuwania elementów
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45131ff231e34cf769ac3665344e340f38b9380d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114244"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547267"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 
@@ -38,7 +38,7 @@ Chociaż operacje tworzenia mogą się różnić od operacji kopiowania, faktycz
 
 Odpowiedzialnością EMD jest podjęcie decyzji o sposobie scalania obiektu lub grupy obiektów w konkretną lokalizację w modelu. W szczególności decyduje o tym, jakie relacje należy utworzyć, aby połączyć scaloną grupę z modelem. Można również dostosować ją do ustawiania właściwości i tworzenia dodatkowych obiektów.
 
-![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
+![Scalanie&#45;EMD&#95;DSL](../modeling/media/dsl-emd_merge.png)
 
 EMD jest generowany automatycznie podczas definiowania relacji osadzania. Ta wartość domyślna EMD tworzy wystąpienie relacji, gdy użytkownicy dodają nowe wystąpienia podrzędne do elementu nadrzędnego. Można modyfikować te domyślne EMDs, na przykład dodając kod niestandardowy.
 
@@ -48,7 +48,7 @@ Możesz również dodać własne EMDs w definicji DSL, aby umożliwić użytkown
 
 Można dodać dyrektywy scalania elementów do klas domeny, relacji domeny, kształtów, łączników i diagramów. Można je dodać lub znaleźć w Eksploratorze DSL w klasie odbiorczej domeny. Klasa odbiorczej jest klasą domeny elementu, który znajduje się już w modelu, i na którym zostanie scalony nowy lub skopiowany element.
 
-![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
+![Szczegóły&#95;&#45;DSL EMD](../modeling/media/dsl-emd_details.png)
 
 **Klasa indeksowania** jest klasą domeny elementów, które można scalić do elementów członkowskich klasy odbiorczej. Wystąpienia podklas klasy indeksowania również zostaną scalone przez ten EMD, chyba że ustawisz **dla podklasy** wartości false.
 
@@ -71,7 +71,7 @@ Możesz dodać niestandardowy kod do dyrektyw scalania:
 > [!NOTE]
 > W przypadku pisania niestandardowego kodu scalania ma to wpływ tylko na scalenia, które są wykonywane przy użyciu tego EMD. Jeśli istnieją inne EMDs, które scalają ten sam typ obiektu, lub jeśli istnieje inny kod niestandardowy, który tworzy te obiekty bez użycia EMD, nie będzie to miało wpływu na kod niestandardowego scalania.
 >
-> Jeśli chcesz upewnić się, że nowy element lub Nowa relacja są zawsze przetwarzane przez niestandardowy kod, rozważ zdefiniowanie `AddRule` w relacji osadzania i `DeleteRule`j klasy domeny elementu. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+> Aby upewnić się, że nowy element lub Nowa relacja są zawsze przetwarzane przez niestandardowy kod, należy rozważyć zdefiniowanie `AddRule` dla relacji osadzania i a `DeleteRule` w klasie domeny elementu. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Przykład: Definiowanie EMD bez kodu niestandardowego
 
@@ -85,15 +85,15 @@ Użytkownicy mogą również wklejać elementy do innych elementów.
 
     Po uruchomieniu tego języka DSL można tworzyć kształty i łączniki między kształtami. Nie można przeciągnąć nowego kształtu **przykładElement** z przybornika na istniejący kształt.
 
-2. Aby umożliwić użytkownikom scalanie elementów na `ExampleElement` kształtów, Utwórz nowy EMD w klasie `ExampleElement` domeny:
+2. Aby umożliwić użytkownikom scalanie elementów na `ExampleElement` kształtach, Utwórz nowy EMD w `ExampleElement` klasie domeny:
 
-   1. W **Eksploratorze DSL**rozwiń węzeł **klasy domeny**. Kliknij prawym przyciskiem myszy `ExampleElement` a następnie kliknij pozycję **Dodaj nową dyrektywę scalenia elementów**.
+   1. W **Eksploratorze DSL**rozwiń węzeł **klasy domeny**. Kliknij prawym przyciskiem myszy `ExampleElement` , a następnie kliknij pozycję **Dodaj nową dyrektywę scalenia elementów**.
 
    2. Upewnij się, że okno **Szczegóły DSL** jest otwarte, aby wyświetlić szczegóły nowego EMD. (Menu: **Wyświetl**, **inne okna**, **szczegóły języka DSL**)
 
-3. Ustaw **klasę indeksowania** w oknie Szczegóły DSL, aby zdefiniować klasę elementów, które mogą być scalane na `ExampleElement` obiektów.
+3. Ustaw **klasę indeksowania** w oknie Szczegóły DSL, aby zdefiniować klasę elementów, która może być scalona z `ExampleElement` obiektami.
 
-    Na potrzeby tego przykładu wybierz `ExampleElements`, aby użytkownik mógł przeciągnąć nowe elementy na istniejące elementy.
+    Na potrzeby tego przykładu wybierz `ExampleElements` , aby użytkownik mógł przeciągnąć nowe elementy na istniejące elementy.
 
     Należy zauważyć, że Klasa indeksowania jest nazwą EMD w Eksploratorze DSL.
 
@@ -109,7 +109,7 @@ Użytkownicy mogą również wklejać elementy do innych elementów.
 
       Możesz użyć narzędzia do nawigacji ścieżki, aby utworzyć każdą ścieżkę:
 
-      1. W obszarze **Scal proces przez utworzenie linków w ścieżkach**kliknij pozycję **\<Dodaj ścieżkę >** .
+      1. W obszarze **proces scalania przez tworzenie linków w ścieżkach**kliknij pozycję **\<add path>** .
 
       2. Kliknij strzałkę listy rozwijanej z prawej strony elementu listy. Zostanie wyświetlony widok drzewa.
 
@@ -141,7 +141,7 @@ Zwróć uwagę na następujące kwestie z tej procedury:
 
 - EMD dotyczy zarówno tworzenia z przybornika, jak i wklejania operacji.
 
-     W przypadku pisania niestandardowego kodu, który tworzy nowe elementy, można jawnie wywołać EMD za pomocą metody `ElementOperations.Merge`. Daje to pewność, że kod łączy nowe elementy w modelu w taki sam sposób jak inne operacje. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).
+     W przypadku pisania niestandardowego kodu, który tworzy nowe elementy, można jawnie wywołać EMD za pomocą `ElementOperations.Merge` metody. Daje to pewność, że kod łączy nowe elementy w modelu w taki sam sposób jak inne operacje. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).
 
 ## <a name="example-adding-custom-accept-code-to-an-emd"></a>Przykład: Dodawanie niestandardowego kodu akceptacji do EMD
 
@@ -151,9 +151,9 @@ Dodając kod niestandardowy do EMD, można zdefiniować bardziej złożone zacho
 
 1. Utwórz DSL przy użyciu szablonu rozwiązania **minimalnego języka** . Otwórz diagram definicji DSL.
 
-2. W Eksploratorze DSL rozwiń węzeł **klasy domen**, `ExampleModel`, **dyrektywy scalania elementów**. Wybierz dyrektywę scalania elementów o nazwie `ExampleElement`.
+2. W Eksploratorze DSL rozwiń węzeł **klasy domen**, a następnie `ExampleModel` **dyrektywy scalania elementów**. Wybierz dyrektywę scalania elementów o nazwie `ExampleElement` .
 
-     Ta EMD określa, jak użytkownik może tworzyć nowe obiekty `ExampleElement` w modelu, na przykład przeciągając je z przybornika.
+     Ta EMD określa, jak użytkownik może tworzyć nowe `ExampleElement` obiekty w modelu, na przykład przeciągając je z przybornika.
 
 3. W oknie **Szczegóły DSL** wybierz pozycję **Użyj niestandardowej akceptacji**.
 
@@ -161,7 +161,7 @@ Dodając kod niestandardowy do EMD, można zdefiniować bardziej złożone zacho
 
      Zostanie zgłoszony błąd kompilacji, podobny do: "Company. ElementMergeSample. example nie zawiera definicji dla CanMergeExampleElement..."
 
-     Należy zaimplementować metodę `CanMergeExampleElement`.
+     Należy zaimplementować metodę `CanMergeExampleElement` .
 
 5. Utwórz nowy plik kodu w projekcie **DSL** . Zastąp jego zawartość następującym kodem i Zmień przestrzeń nazw na przestrzeń nazw projektu.
 
@@ -190,7 +190,7 @@ Dodając kod niestandardowy do EMD, można zdefiniować bardziej złożone zacho
     }
     ```
 
-    Ten prosty przykład ogranicza liczbę elementów, które mogą być scalone z modelem nadrzędnym. W celu uzyskania bardziej interesujących warunków Metoda może sprawdzić wszystkie właściwości i linki obiektu odbiorczego. Może również sprawdzać właściwości scalanych elementów, które są przeprowadzane w <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Aby uzyskać więcej informacji na temat `ElementGroupPrototypes`, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md). Aby uzyskać więcej informacji na temat pisania kodu, który odczytuje model, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+    Ten prosty przykład ogranicza liczbę elementów, które mogą być scalone z modelem nadrzędnym. W celu uzyskania bardziej interesujących warunków Metoda może sprawdzić wszystkie właściwości i linki obiektu odbiorczego. Może również sprawdzać właściwości scalanych elementów, które są wykonywane w <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> . Aby uzyskać więcej informacji na temat `ElementGroupPrototypes` , zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md). Aby uzyskać więcej informacji na temat pisania kodu, który odczytuje model, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 6. Testowanie DSL:
 
@@ -212,9 +212,9 @@ W niestandardowym kodzie scalania można zdefiniować, co się stanie, gdy użyt
 
 1. Zestaw **używa niestandardowego scalania** i podaj wymagany kod. Kod zastępuje wygenerowany kod scalania. Użyj tej opcji, jeśli chcesz całkowicie przedefiniować elementy do scalenia.
 
-2. Zastąp metodę `MergeRelate` i opcjonalnie metodę `MergeDisconnect`. W tym celu należy ustawić właściwość **Generuj podwójną pochodną** klasy domeny. Kod może wywoływać wygenerowany kod scalania w klasie bazowej. Użyj tej opcji, jeśli chcesz wykonać dodatkowe operacje po przeprowadzeniu scalania.
+2. Zastąp `MergeRelate` metodę i opcjonalnie `MergeDisconnect` metodę. W tym celu należy ustawić właściwość **Generuj podwójną pochodną** klasy domeny. Kod może wywoływać wygenerowany kod scalania w klasie bazowej. Użyj tej opcji, jeśli chcesz wykonać dodatkowe operacje po przeprowadzeniu scalania.
 
-   Te podejścia mają wpływ tylko na scalenia, które są wykonywane przy użyciu tego EMD. Jeśli chcesz mieć wpływ na wszystkie sposoby tworzenia scalonego elementu, alternatywą jest zdefiniowanie `AddRule` w relacji osadzania i `DeleteRule` w klasie Scalonej domeny. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+   Te podejścia mają wpływ tylko na scalenia, które są wykonywane przy użyciu tego EMD. Jeśli chcesz mieć wpływ na wszystkie sposoby tworzenia scalonego elementu, alternatywnym rozwiązaniem jest zdefiniowanie `AddRule` relacji osadzania i a `DeleteRule` w klasie Scalonej domeny. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="to-override-mergerelate"></a>Aby zastąpić MergeRelate
 
@@ -222,7 +222,7 @@ W niestandardowym kodzie scalania można zdefiniować, co się stanie, gdy użyt
 
 2. Na diagramie DslDefinition wybierz klasę otrzymującą scalanie. Zwykle jest to Klasa na końcu źródła relacji osadzania.
 
-     Na przykład w przypadku linii DSL wygenerowanej na podstawie minimalnego rozwiązania językowego wybierz opcję `ExampleModel`.
+     Na przykład w przypadku linii DSL wygenerowanej na podstawie minimalnego rozwiązania językowego wybierz opcję `ExampleModel` .
 
 3. W oknie **Właściwości** ustaw opcję **generują podwójne pochodne** na **true**.
 
@@ -230,7 +230,7 @@ W niestandardowym kodzie scalania można zdefiniować, co się stanie, gdy użyt
 
 5. Sprawdź zawartość **Dsl\Generated Files\DomainClasses.cs**. Wyszukaj metody o nazwie `MergeRelate` i przejrzyj ich zawartość. Pomoże to napisać własne wersje.
 
-6. W nowym pliku kodu Napisz klasę częściową klasy odbiorczej i Zastąp metodę `MergeRelate`. Pamiętaj, aby wywołać metodę bazową. Na przykład:
+6. W nowym pliku kodu Napisz klasę częściową klasy odbiorczej i Zastąp `MergeRelate` metodę. Pamiętaj, aby wywołać metodę bazową. Przykład:
 
     ```csharp
     partial class ExampleModel
@@ -258,9 +258,9 @@ W niestandardowym kodzie scalania można zdefiniować, co się stanie, gdy użyt
 
 ### <a name="to-write-custom-merge-code"></a>Aby napisać niestandardowy kod scalania
 
-1. W **Dsl\Generated Code\DomainClasses.cs**, sprawdź metody o nazwie `MergeRelate`. Te metody tworzą linki między nowym elementem a istniejącym modelem.
+1. W **Dsl\Generated Code\DomainClasses.cs**, sprawdź metody o nazwie `MergeRelate` . Te metody tworzą linki między nowym elementem a istniejącym modelem.
 
-    Sprawdź również metody o nazwie `MergeDisconnect`. Te metody odłączą element od modelu, gdy zostanie on usunięty.
+    Sprawdź również metody o nazwie `MergeDisconnect` . Te metody odłączą element od modelu, gdy zostanie on usunięty.
 
 2. W **Eksploratorze DSL**wybierz lub Utwórz dyrektywę scalania elementów, którą chcesz dostosować. W oknie **Szczegóły DSL** ustaw opcję **Użyj scalania niestandardowego**.
 
@@ -268,11 +268,11 @@ W niestandardowym kodzie scalania można zdefiniować, co się stanie, gdy użyt
 
 3. Ponownie skompiluj rozwiązanie. Ten stan będzie trwać dłużej niż zwykle, ponieważ pliki wygenerowanego kodu zostaną zaktualizowane z modelu.
 
-    Pojawią się komunikaty o błędach. Kliknij dwukrotnie komunikaty o błędach, aby wyświetlić instrukcje w wygenerowanym kodzie. Te instrukcje umożliwiają dostarczenie dwóch metod, `MergeRelate`*YourDomainClass* i `MergeDisconnect`*YourDomainClass*
+    Pojawią się komunikaty o błędach. Kliknij dwukrotnie komunikaty o błędach, aby wyświetlić instrukcje w wygenerowanym kodzie. Te instrukcje umożliwiają dostarczenie dwóch metod, `MergeRelate` *YourDomainClass* i `MergeDisconnect` *YourDomainClass*
 
 4. Zapisz metody w definicji klasy częściowej w osobnym pliku kodu. Przykłady, które zostały sprawdzone wcześniej, powinny sugerować to, czego potrzebujesz.
 
-   Niestandardowy kod scalania nie będzie mieć wpływu na kod, który tworzy obiekty i relacje bezpośrednio, i nie wpłynie na inne EMDs. Aby upewnić się, że dodatkowe zmiany są zaimplementowane niezależnie od sposobu tworzenia elementu, rozważ zapisanie `AddRule` i `DeleteRule`. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+   Niestandardowy kod scalania nie będzie mieć wpływu na kod, który tworzy obiekty i relacje bezpośrednio, i nie wpłynie na inne EMDs. Aby upewnić się, że dodatkowe zmiany są implementowane niezależnie od sposobu tworzenia elementu, należy rozważyć pisanie `AddRule` i a `DeleteRule` . Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Przekierowywanie operacji scalania
 
@@ -284,7 +284,7 @@ W rozwiązaniu modelu składników można utworzyć dyrektywę scalania do przod
 
 ### <a name="to-create-a-forward-merge-directive"></a>Aby utworzyć dyrektywę scalania do przodu
 
-1. Utwórz rozwiązanie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] przy użyciu szablonu modelu składnika.
+1. Utwórz [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązanie przy użyciu szablonu modelu składnika.
 
 2. Wyświetl **Eksplorator DSL** , otwierając DslDefinition. DSL.
 
@@ -304,7 +304,7 @@ W rozwiązaniu modelu składników można utworzyć dyrektywę scalania do przod
 
     Nowa ścieżka powinna wyglądać następująco:
 
-    **ComponentHasPorts.Component/!Component**
+    **Składnik elementu ComponentHasPorts. Component/!**
 
 9. Zapisz rozwiązanie, a następnie Przekształć szablony, klikając przycisk z prawej na pasku narzędzi **Eksplorator rozwiązań** .
 
@@ -316,7 +316,7 @@ W rozwiązaniu modelu składników można utworzyć dyrektywę scalania do przod
 
      Nie powinien być wyświetlany wskaźnik niedostępności i powinien być możliwe porzucenie nowego **portu wejściowego** na istniejącym. Wybierz nowy **port wejściowy** i przeciągnij go do innego punktu w **składniku**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md)

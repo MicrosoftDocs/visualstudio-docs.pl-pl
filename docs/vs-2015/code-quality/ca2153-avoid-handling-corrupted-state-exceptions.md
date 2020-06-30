@@ -8,17 +8,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d4ca2668f2d6241e9a3cca88b4722ee5348abc3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d837c09e5f2f90796c149bf58d1114d7e6352d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667410"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546318"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj obsługiwania wyjątków stanu uszkodzenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
@@ -29,7 +29,7 @@ ms.locfileid: "72667410"
  [Wyjątki uszkodzonych Stanów (rozszerzenie klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazują, że uszkodzenie pamięci istnieje w procesie. Ich przechwycenie zamiast zezwalania na awarię procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać lukę w uszkodzonym regionie pamięci.
 
 ## <a name="rule-description"></a>Opis reguły
- Rozszerzenie klienta wskazuje, że stan procesu został uszkodzony i nie został przechwycony przez system. W scenariuszu uszkodzenia stanu ogólna procedura obsługi przechwytuje wyjątek tylko wtedy, gdy oznaczy metodę przy użyciu odpowiedniego atrybutu `HandleProcessCorruptedStateExceptions`. Domyślnie [środowisko uruchomieniowe języka wspólnego (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) nie wywoła obsługi catch dla rozszerzeń klienta.
+ Rozszerzenie klienta wskazuje, że stan procesu został uszkodzony i nie został przechwycony przez system. W scenariuszu uszkodzenia stanu ogólna procedura obsługi przechwytuje wyjątek tylko wtedy, gdy oznaczy metodę z odpowiednim `HandleProcessCorruptedStateExceptions` atrybutem. Domyślnie [środowisko uruchomieniowe języka wspólnego (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) nie wywoła obsługi catch dla rozszerzeń klienta.
 
  Umożliwienie procesowi awarii bez przechwycenia tych rodzajów wyjątków jest najbezpieczniejsza opcja, ponieważ nawet kod rejestrowania może spowodować, że atakujący mogą wykorzystać błędy uszkodzeń pamięci.
 
@@ -38,7 +38,7 @@ ms.locfileid: "72667410"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby rozwiązać ten problem, należy wykonać jedną z następujących czynności:
 
- 1. Usuń atrybut `HandleProcessCorruptedStateExceptions`. Spowoduje to przywrócenie domyślnego zachowania środowiska uruchomieniowego, w którym rozszerzeń klienta nie są przenoszone do obsługi catch.
+ 1. Usuń `HandleProcessCorruptedStateExceptions` atrybut. Spowoduje to przywrócenie domyślnego zachowania środowiska uruchomieniowego, w którym rozszerzeń klienta nie są przenoszone do obsługi catch.
 
  2. Usuń ogólny program obsługi catch w preferencjach obsługi, które przechwytują określone typy wyjątków.  Może to obejmować rozszerzeń klienta przy założeniu, że kod procedury obsługi może bezpiecznie obsłużyć je (bardzo rzadki).
 

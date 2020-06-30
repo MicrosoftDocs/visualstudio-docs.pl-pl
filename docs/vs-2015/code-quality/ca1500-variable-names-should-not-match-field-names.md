@@ -15,19 +15,19 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5753cc660d626098d234fbce93c0bf0269e52bb3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 9565bc1ae3166c0475e8af7f0fde381497309b01
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919050"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547917"
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nazwy zmiennych nie powinny odpowiadać nazwom pól
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nazwy zmiennych nie powinny być zgodne z nazwami pól
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1500: nazwy zmiennych nie powinny odpowiadać nazwom pól](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
@@ -38,7 +38,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1500: na
  Metoda wystąpienia deklaruje parametr lub zmienną lokalną, której nazwa pasuje do pola wystąpienia typu deklarującego. Aby przechwytywać lokalne zmienne naruszające regułę, testowany zestaw musi być skompilowany przy użyciu informacji debugowania, a plik bazy danych programu (. pdb) musi być dostępny.
 
 ## <a name="rule-description"></a>Opis reguły
- Gdy nazwa pola wystąpienia pasuje do parametru lub nazwy zmiennej lokalnej, do pola wystąpienia uzyskuje się dostęp za pomocą słowa kluczowego `this` (`Me` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), gdy jest wewnątrz treści metody. Podczas zachowywania kodu można łatwo zapomnieć o tej różnicy i założyć, że zmienna parametru/Local odwołuje się do pola wystąpienia, które prowadzi do błędów. Dotyczy to szczególnie długich treści metod.
+ Gdy nazwa pola wystąpienia pasuje do parametru lub nazwy zmiennej lokalnej, do pola wystąpienia uzyskuje się dostęp za pomocą `this` `Me` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] słowa kluczowego (in) w treści metody. Podczas zachowywania kodu można łatwo zapomnieć o tej różnicy i założyć, że zmienna parametru/Local odwołuje się do pola wystąpienia, które prowadzi do błędów. Dotyczy to szczególnie długich treści metod.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Zmień nazwę parametru/zmiennej lub pola.

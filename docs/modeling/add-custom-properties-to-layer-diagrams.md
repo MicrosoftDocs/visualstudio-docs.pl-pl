@@ -1,7 +1,7 @@
 ---
 title: Dodawanie właściwości niestandardowych do diagramów zależności
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590595"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546920"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów zależności
 
@@ -63,11 +63,11 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Można zdefiniować właściwości [ILayerElement](/previous-versions/ff644511(v=vs.140)) lub dowolnej z klas pochodnych, które obejmują:
 
-- `ILayerModel` — model
+- `ILayerModel`— Model
 
-- `ILayer` — każda warstwa
+- `ILayer`-Każda warstwa
 
-- `ILayerDependencyLink` — linki między warstwami
+- `ILayerDependencyLink`-linki między warstwami
 
 - `ILayerComment`
 
@@ -75,7 +75,7 @@ Można zdefiniować właściwości [ILayerElement](/previous-versions/ff644511(v
 
 ## <a name="example"></a>Przykład
 
-Poniższy kod jest typowym deskryptorem właściwości niestandardowych. Definiuje Właściwość Boolean modelu warstwy (`ILayerModel`), która umożliwia użytkownikowi podanie wartości dla niestandardowej metody walidacji.
+Poniższy kod jest typowym deskryptorem właściwości niestandardowych. Definiuje Właściwość Boolean modelu warstwy ( `ILayerModel` ), która umożliwia użytkownikowi podanie wartości dla niestandardowej metody walidacji.
 
 ```csharp
 using System;
@@ -160,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozszerzanie diagramów zależności](../modeling/extend-layer-diagrams.md)

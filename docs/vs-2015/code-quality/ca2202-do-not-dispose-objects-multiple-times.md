@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e0be715d8aea84fac53ea2a796e71850b961730c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31bf7fe33aa59c3a713d2da81ddbd11ed6899723
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667403"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546292"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie należy usuwać obiektów wiele razy
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie likwiduj obiektów wielokrotnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
@@ -36,7 +36,7 @@ ms.locfileid: "72667403"
  Implementacja metody zawiera ścieżki kodu, które mogą spowodować wielokrotne wywołania <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> lub równoważne metody Dispose, takie jak metoda Close () dla niektórych typów, w tym samym obiekcie.
 
 ## <a name="rule-description"></a>Opis reguły
- Prawidłowo zaimplementowaną metodę <xref:System.IDisposable.Dispose%2A> można wywołać wiele razy bez zgłaszania wyjątku. Nie jest to jednak gwarantowane i aby uniknąć generowania <xref:System.ObjectDisposedException?displayProperty=fullName> nie należy wywoływać <xref:System.IDisposable.Dispose%2A> więcej niż jeden raz w obiekcie.
+ Prawidłowo zaimplementowaną <xref:System.IDisposable.Dispose%2A> metodę można wywołać wiele razy bez zgłaszania wyjątku. Nie jest to jednak gwarantowane i aby uniknąć generowania, <xref:System.ObjectDisposedException?displayProperty=fullName> nie należy wywoływać <xref:System.IDisposable.Dispose%2A> więcej niż jeden raz w obiekcie.
 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA2000: Likwiduj obiekty przed utratą zakresu](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
@@ -45,12 +45,12 @@ ms.locfileid: "72667403"
  Aby naprawić naruszenie tej zasady, należy zmienić implementację, tak aby niezależnie od ścieżki kodu <xref:System.IDisposable.Dispose%2A> jest wywoływana tylko raz dla obiektu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Nawet jeśli <xref:System.IDisposable.Dispose%2A> dla obiektu jest znany, że będzie można go bezpiecznie wywołać wielokrotnie, implementacja może ulec zmianie w przyszłości.
+ Nie pomijaj ostrzeżeń dla tej reguły. Nawet wtedy <xref:System.IDisposable.Dispose%2A> , gdy dla obiektu wiadomo, że jest on bezpiecznie wielokrotnie wywoływany, implementacja może ulec zmianie w przyszłości.
 
 ## <a name="example"></a>Przykład
- Zagnieżdżone instrukcje `using` (`Using` w Visual Basic) mogą spowodować naruszenia ostrzeżenia CA2202. Jeśli zasób interfejsu IDisposable zagnieżdżonej wewnętrznej `using` zawiera zasób instrukcji Outer `using`, Metoda `Dispose` zasobu zagnieżdżonego zwalnia zawartego zasobu. Gdy wystąpi taka sytuacja, Metoda `Dispose` instrukcji Outer `using` próbuje usunąć zasób po raz drugi.
+ `using`Instrukcje zagnieżdżone ( `Using` w Visual Basic) mogą spowodować naruszenia ostrzeżenia CA2202. Jeśli zasób IDisposable zagnieżdżonej `using` instrukcji wewnętrznej zawiera zasób `using` instrukcji zewnętrznej, `Dispose` Metoda zagnieżdżonego zasobu zwalnia zawartego zasobu. Gdy wystąpi taka sytuacja, `Dispose` Metoda `using` instrukcji zewnętrznej próbuje usunąć zasób po raz drugi.
 
- W poniższym przykładzie obiekt <xref:System.IO.Stream>, który jest tworzony w instrukcji zewnętrznej using jest wydawany na końcu wewnętrznej instrukcji using w metodzie Dispose obiektu <xref:System.IO.StreamWriter>, który zawiera obiekt `stream`. Na końcu zewnętrznej instrukcji `using` obiekt `stream` jest wydawany sekundowo. Druga wersja stanowi naruszenie CA2202.
+ W poniższym przykładzie <xref:System.IO.Stream> obiekt tworzony w instrukcji zewnętrznej using jest wydawany na końcu wewnętrznej instrukcji using w metodzie Dispose <xref:System.IO.StreamWriter> obiektu, który zawiera `stream` obiekt. Na końcu `using` instrukcji zewnętrznej `stream` obiekt jest wydawany po raz drugi. Druga wersja stanowi naruszenie CA2202.
 
 ```
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -63,7 +63,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 ```
 
 ## <a name="example"></a>Przykład
- Aby rozwiązać ten problem, należy użyć bloku `try` / `finally` zamiast zewnętrznej instrukcji `using`. W bloku `finally` upewnij się, że zasób `stream` nie ma wartości null.
+ Aby rozwiązać ten problem, należy użyć `try` / `finally` bloku zamiast `using` instrukcji zewnętrznej. Upewnij `finally` się, że `stream` zasób nie ma wartości null w bloku.
 
 ```
 Stream stream = null;
@@ -84,4 +84,4 @@ finally
 ```
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.IDisposable?displayProperty=fullName> — [wzorzec usuwania](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ <xref:System.IDisposable?displayProperty=fullName>Usuń [wzorzec](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

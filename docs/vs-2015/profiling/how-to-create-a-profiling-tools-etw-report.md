@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie raportu ETW narzędzi profilowania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie raportu ETW narzędzia profilowania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,35 +9,35 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b172ffbf481ea077d099288b3b79254b89b13a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7dc74f0486ac7196cf406994ee603bc6c0cf4c25
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432740"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548008"
 ---
-# <a name="how-to-create-a-profiling-tools-etw-report"></a>Instrukcje: Tworzenie raportu ETW narzędzi profilowania
+# <a name="how-to-create-a-profiling-tools-etw-report"></a>Porady: tworzenie raportu ETW narzędzi profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Raport śledzenie zdarzeń dla Windows (ETW) zawiera listę zdarzeń funkcji ETW, które są rejestrowane w sesji pomiaru wydajności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools. Dane ETW są zbierane w pliku danych binarnych (ETL). Aby uzyskać więcej informacji na temat tego raportu, zobacz [raportu śledzenie zdarzeń dla Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).  
+Raport śledzenie zdarzeń systemu Windows (ETW) zawiera listę zdarzeń ETW, które są rejestrowane w sesji wydajności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzia profilowania. Dane ETW są zbierane w pliku binarnym (. etl). Aby uzyskać więcej informacji na temat tego raportu, zobacz [raport śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).  
   
 > [!NOTE]
-> Nie można wyświetlić raporty ETW w interfejsie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+> W interfejsie nie można wyświetlać raportów ETW [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-- Aby uzyskać informacje dotyczące zbierania danych ETW przy użyciu interfejsu dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [jak: Zbieranie zdarzeń śledzenia for Windows (ETW) — dane](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Informacje o sposobie zbierania danych ETW przy użyciu interfejsu dla programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znajdują się w temacie [How to: zbierać dane śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
-- Aby dowiedzieć się, jak zbierać dane funkcji ETW z poziomu wiersza polecenia, zobacz [VSPerfCmd](../profiling/vsperfcmd.md) i [zdarzenia](../profiling/events-vsperfcmd.md).  
+- Informacje o sposobie zbierania danych ETW z wiersza polecenia można znaleźć w temacie [VSPerfCmd](../profiling/vsperfcmd.md) and [Events (zdarzenia](../profiling/events-vsperfcmd.md)).  
   
-  Generowanie raportu ETW za pomocą **VSReport / summary: etw** polecenia. .Etl, który zawiera dane funkcji ETW muszą być w tym samym katalogu co plik danych profilowania (.vsp lub .vsps). Domyślnie raport jest generowany w formacie wartości rozdzielanych przecinkami (CSV). Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
+  Raport ETW jest generowany przy użyciu polecenia **VSReport/Summary: ETW** . Plik. etl, który zawiera dane funkcji ETW, musi znajdować się w tym samym katalogu, który jest plikiem danych profilowania (. vsp lub. vsps). Domyślnie raport jest generowany jako plik z wartościami rozdzielanymi przecinkami (CSV). Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
   
 ### <a name="to-generate-an-etw-report"></a>Aby wygenerować raport ETW  
   
-- W **polecenia** oknie wpisz następujące polecenie w wierszu:  
+- W oknie **wiersza polecenia** wpisz w wierszu polecenia następujący tekst:  
   
-     *ToolsPath* **VSPerfReport** *Plik_vsp* **/Summary: ETW [podsumowań w plikach]**  
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary: ETW [/XML]**  
   
-    |||  
+    |Element polecenia|Opis|  
     |-|-|  
-    |*ToolsPath*|Ścieżka narzędzia Profiling Tools. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
-    |*VSPFile*|Plik danych profilowania (.vsp lub .vsps). Akceptowane są pełne i częściowe ścieżki.|  
-    |Xml|Generuje raport, który jest sformatowany w języku XML.|
+    |*ToolsPath*|Ścieżka narzędzia narzędzia profilowania. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
+    |*VSPFile*|Plik danych profilowania (. vsp lub. vsps). Akceptowane są pełne i częściowe ścieżki.|  
+    |Xml|Generuje raport sformatowany w formacie XML.|

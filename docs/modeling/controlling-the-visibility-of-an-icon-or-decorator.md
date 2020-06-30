@@ -1,18 +1,18 @@
 ---
 title: Kontrolowanie widoczności ikony lub elementu Decorator
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748501"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546650"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 *Dekoratora* jest ikoną lub wierszem tekstu, który pojawia się na kształcie w języku specyficznym dla domeny (DSL). Można sprawić, aby dekoratora pojawiał się i znikał w zależności od stanu właściwości w modelu. Na przykład na kształcie reprezentującym osobę można mieć różne ikony, które są wyświetlane w zależności od płci osoby, liczby elementów podrzędnych itd.
@@ -58,13 +58,13 @@ ms.locfileid: "72748501"
 
 1. Dodaj właściwość domeny obliczeniowej do klasy domeny. W oknie **Właściwości** ustaw następujące wartości:
 
-     **Jest przeglądalna =** `False` **— spowoduje to ukrycie właściwości użytkownika**
+     **Jest przeglądalna =** `False` **— spowoduje to ukrycie właściwości użytkownika**    
 
-     **Rodzaj =** `Calculated` **— oznacza to, że będzie można dostarczyć kod, który oblicza jego wartość**
+     **Rodzaj =** `Calculated` **-oznacza to, że będzie można dostarczyć kod, który oblicza jego wartość**    
 
      **Nazwa** na przykład **DecoratorControl**
 
-     **Wpisz**  =  `Boolean`
+     **Wprowadź** = `Boolean`
 
      Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -76,7 +76,7 @@ ms.locfileid: "72748501"
 
     3. W **Właściwości filtru**zaznacz właściwość **DecoratorControl**.
 
-    4. W obszarze **wpisy widoczności**wprowadź `True`.
+    4. W obszarze **wpisy widoczności**wprowadź `True` .
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań** .
 
@@ -88,7 +88,7 @@ ms.locfileid: "72748501"
 
 6. Zanotuj brakującą przestrzeń nazw, klasę i metodę.  Na przykład firma. FamilyTree. Person. GetDecoratorControlValue ().
 
-7. W osobnym pliku kodu Napisz częściową definicję klasy, która zawiera brakującą metodę. Na przykład:
+7. W osobnym pliku kodu Napisz częściową definicję klasy, która zawiera brakującą metodę. Przykład:
 
     ```
     namespace Company.FamilyTree
@@ -103,7 +103,7 @@ ms.locfileid: "72748501"
 
 8. Skompiluj ponownie i uruchom rozwiązanie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Definiowanie kształtów i łączników](../modeling/defining-shapes-and-connectors.md)
 - [Ustawienie obrazu tła w diagramie](../modeling/setting-a-background-image-on-a-diagram.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f3f867f14f7a2eca4482f1f8d5fb48149f02f43f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f13669959a5874c74753d304371b8ab7db14d4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661357"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547293"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invokes nie powinny być widoczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
@@ -33,10 +33,10 @@ ms.locfileid: "72661357"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda publiczna lub chroniona w typie publicznym ma atrybut <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> (również zaimplementowany przez słowo kluczowe `Declare` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Metoda publiczna lub chroniona w typie publicznym ma <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atrybut (również zaimplementowany przez `Declare` słowo kluczowe in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="rule-description"></a>Opis reguły
- Metody, które są oznaczone atrybutem <xref:System.Runtime.InteropServices.DllImportAttribute> (lub metodami, które są zdefiniowane za pomocą słowa kluczowego `Declare` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), używają usług wywołania platformy w celu uzyskania dostępu do kodu niezarządzanego. Takie metody nie powinny być udostępniane. Utrzymując te metody w trybie prywatnym lub wewnętrznym, upewnij się, że biblioteka nie może zostać użyta w celu naruszenia zabezpieczeń przez umożliwienie wywołujących dostępu do niezarządzanych interfejsów API, które nie mogły ich wywołać w przeciwnym razie.
+ Metody, które są oznaczone <xref:System.Runtime.InteropServices.DllImportAttribute> atrybutem (lub metodami, które są zdefiniowane za pomocą `Declare` słowa kluczowego in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), używają usług wywołania platformy w celu uzyskania dostępu do kodu niezarządzanego. Takie metody nie powinny być udostępniane. Utrzymując te metody w trybie prywatnym lub wewnętrznym, upewnij się, że biblioteka nie może zostać użyta w celu naruszenia zabezpieczeń przez umożliwienie wywołujących dostępu do niezarządzanych interfejsów API, które nie mogły ich wywołać w przeciwnym razie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Zmień poziom dostępu metody.

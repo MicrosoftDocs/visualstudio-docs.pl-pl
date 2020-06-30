@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c9de5178b585275ef410ad3179ba320b663536bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 115c0e733716994ba463eada938f8ff908612d0f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658677"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547761"
 ---
-# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA powinny wywoływać tylko metody APTCA
+# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody z atrybutem APTCA powinny wywoływać tylko metody z atrybutem APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
 |CheckId|CA2116|
@@ -33,20 +33,20 @@ ms.locfileid: "72658677"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda w zestawie z atrybutem <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> wywołuje metodę w zestawie, który nie ma atrybutu.
+ Metoda w zestawie z <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atrybutem wywołuje metodę w zestawie, który nie ma atrybutu.
 
 ## <a name="rule-description"></a>Opis reguły
- Domyślnie publiczne lub chronione metody w zestawach o silnych nazwach są niejawnie chronione przez [wymagania linku](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) do pełnego zaufania; tylko w pełni zaufane obiekty wywołujące mogą uzyskać dostęp do zestawu o silnej nazwie. Zestawy o silnych nazwach oznaczone atrybutem <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) nie mają tej ochrony. Ten atrybut wyłącza żądanie linku, dzięki czemu zestaw jest dostępny dla obiektów wywołujących, które nie mają pełnego zaufania, takich jak kod wykonywany z intranetu lub Internetu.
+ Domyślnie publiczne lub chronione metody w zestawach o silnych nazwach są niejawnie chronione przez [wymagania linku](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) do pełnego zaufania; tylko w pełni zaufane obiekty wywołujące mogą uzyskać dostęp do zestawu o silnej nazwie. Zestawy o silnych nazwach oznaczone <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutem (APTCA) nie mają tej ochrony. Ten atrybut wyłącza żądanie linku, dzięki czemu zestaw jest dostępny dla obiektów wywołujących, które nie mają pełnego zaufania, takich jak kod wykonywany z intranetu lub Internetu.
 
- Gdy atrybut APTCA jest obecny w w pełni zaufanym zestawie, a zestaw wykonuje kod w innym zestawie, który nie zezwala częściowo zaufanym obiektom wywołującym, możliwe jest wykorzystanie zabezpieczeń. Jeśli dwie metody `M1` i `M2` spełniają następujące warunki, złośliwe obiekty wywołujące mogą użyć metody `M1`, aby pominąć niejawne żądania pełnego zaufania, które chroni `M2`:
+ Gdy atrybut APTCA jest obecny w w pełni zaufanym zestawie, a zestaw wykonuje kod w innym zestawie, który nie zezwala częściowo zaufanym obiektom wywołującym, możliwe jest wykorzystanie zabezpieczeń. Jeśli dwie metody `M1` i `M2` spełniają poniższe warunki, złośliwe obiekty wywołujące mogą użyć metody, `M1` Aby pominąć niejawne, pełne żądanie linku, które chroni `M2` :
 
-- `M1` to metoda publiczna zadeklarowana w w pełni zaufanym zestawie, który ma atrybut APTCA.
+- `M1`to metoda publiczna zadeklarowana w w pełni zaufanym zestawie, który ma atrybut APTCA.
 
-- `M1` wywołuje metodę `M2` poza zestawem `M1`.
+- `M1`wywołuje metodę `M2` spoza `M1` zestawu.
 
-- zestaw `M2`nie ma atrybutu APTCA i dlatego nie powinien być wykonywany przez lub w imieniu wywołujących częściowo zaufanych.
+- `M2`zestaw nie ma atrybutu APTCA i dlatego nie powinien być wykonywany przez lub w imieniu wywołujących częściowo zaufanych.
 
-  Częściowo zaufany `X` wywołujący może wywoływać metodę `M1`, co sprawia, że `M1` wywoływania `M2`. Ponieważ `M2` nie ma atrybutu APTCA, jego bezpośredni obiekt wywołujący (`M1`) musi spełniać żądanie linku do pełnego zaufania; `M1` ma pełne zaufanie i dlatego spełnia to sprawdzenie. Zagrożenie bezpieczeństwa wynika z faktu, że `X` nie uczestniczy w spełnianiu wymagań łącza, które chroni `M2` przed niezaufanymi wywołaniami. W związku z tym metody z atrybutem APTCA nie mogą wywoływać metod, które nie mają atrybutu.
+  Częściowo zaufany obiekt wywołujący `X` może wywołać metodę `M1` , powodując `M1` wywołanie `M2` . Ponieważ nie `M2` ma atrybutu APTCA, jego bezpośredni obiekt wywołujący ( `M1` ) musi spełniać żądanie linku dla pełnego zaufania; `M1` ma pełne zaufanie i dlatego spełnia to sprawdzenie. Zagrożenie bezpieczeństwa polega na tym, `X` że nie uczestniczy w spełnianiu wymagań łącza chroniących `M2` przed niezaufanymi wywołaniami. W związku z tym metody z atrybutem APTCA nie mogą wywoływać metod, które nie mają atrybutu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Jeśli atrybut APCTA jest wymagany, użyj żądania do ochrony metody, która wywołuje cały zestaw zaufania. Dokładne uprawnienia, których wymagasz, zależą od funkcjonalności uwidocznionej przez metodę. Jeśli jest to możliwe, należy chronić metodę z zapotrzebowaniem na pełne zaufanie, aby upewnić się, że podstawowe funkcje nie są widoczne dla częściowo zaufanych wywołujących. Jeśli nie jest to możliwe, wybierz zestaw uprawnień, które skutecznie chronią dostępne funkcje. Aby uzyskać więcej informacji na temat wymagań, zobacz [wymagania](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
@@ -60,7 +60,7 @@ ms.locfileid: "72658677"
  [!code-csharp[FxCop.Security.NoAptca#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.NoAptca/cs/FxCop.Security.NoAptca.cs#1)]
 
 ## <a name="example"></a>Przykład
- Drugi zestaw jest w pełni zaufany i dopuszcza częściowo zaufane obiekty wywołujące (reprezentowane przez `M1` w poprzedniej dyskusji).
+ Drugi zestaw jest w pełni zaufany i zezwala na częściowo zaufane obiekty wywołujące (reprezentowane przez `M1` w poprzedniej dyskusji).
 
  [!code-csharp[FxCop.Security.YesAptca#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.YesAptca/cs/FxCop.Security.YesAptca.cs#1)]
 
@@ -71,8 +71,8 @@ ms.locfileid: "72658677"
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **Żądanie pełnego zaufania: żądanie nie powiodło się.** **wywołano
-ClassRequiringFullTrust. DoWork.**
+ **Żądanie pełnego zaufania: żądanie nie powiodło się.** 
+ **ClassRequiringFullTrust. DoWork została wywołana.**
 ## <a name="related-rules"></a>Powiązane reguły
  [CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy podstawowe z atrybutem APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 

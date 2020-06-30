@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1852e7a5cbaa2d25f93618b22d01d23e8a953dcb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5c1e254ae7912efbb6773155ed834e54a1db1832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667438"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546331"
 ---
-# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: Jawne metody nie mogą wywoływać kodu natywnego
+# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: Metody przezroczyste nie mogą wywoływać kodu natywnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|TransparentMethodsMustNotCallNativeCode|
 |CheckId|CA2149|
@@ -32,10 +32,10 @@ ms.locfileid: "72667438"
  Metoda wywołuje funkcję natywną za pomocą klasy zastępczej metody, takiej jak P/Invoke.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła jest uruchamiana dla każdej przezroczystej metody, która wywołuje bezpośrednio kod natywny, na przykład przez metodę P/Invoke. Naruszenia tej reguły prowadzą do <xref:System.MethodAccessException> w modelu przezroczystości poziomu 2, a pełne zapotrzebowanie na <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> w modelu przezroczystości poziomu 1.
+ Ta reguła jest uruchamiana dla każdej przezroczystej metody, która wywołuje bezpośrednio kod natywny, na przykład przez metodę P/Invoke. Naruszenia tej reguły prowadzą do <xref:System.MethodAccessException> modelu przezroczystości poziomu 2 oraz pełnych wymagań dotyczących <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> modelu przezroczystości poziomu 1.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, oznacz metodę, która wywołuje kod natywny z atrybutem <xref:System.Security.SecurityCriticalAttribute> lub <xref:System.Security.SecuritySafeCriticalAttribute>.
+ Aby naprawić naruszenie tej reguły, oznacz metodę, która wywołuje kod natywny z <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> atrybutem or.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

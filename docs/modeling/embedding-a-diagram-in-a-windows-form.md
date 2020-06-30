@@ -1,18 +1,18 @@
 ---
 title: Osadzanie diagramu w formularzu systemu Windows
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94425c9f3bc586847f43589f7abdcef2295cf1b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114624"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547631"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Osadzanie diagramu w formularzu systemu Windows
 
@@ -67,7 +67,7 @@ Diagram DSL można osadzić w kontrolce systemu Windows, która jest wyświetlan
 
 ## <a name="update-the-form-using-store-events"></a>Aktualizowanie formularza przy użyciu zdarzeń ze sklepu
 
-1. W projektancie formularzy Dodaj **pole listy** o nazwie `listBox1`. Spowoduje to wyświetlenie listy elementów w modelu. Jest on synchronizowany z modelem przy użyciu *zdarzeń ze sklepu*. Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. W projektancie formularzy Dodaj **ListBox** o nazwie `listBox1` . Spowoduje to wyświetlenie listy elementów w modelu. Jest on synchronizowany z modelem przy użyciu *zdarzeń ze sklepu*. Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. W pliku kodu niestandardowego Zastąp dalsze metody do klasy DocView:
 
@@ -141,7 +141,7 @@ Diagram DSL można osadzić w kontrolce systemu Windows, która jest wyświetlan
 
      Zwróć uwagę, że pole listy zawiera listę elementów w modelu i że jest poprawna po dodaniu lub usunięciu, a następnie Cofnij i wykonaj ponownie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

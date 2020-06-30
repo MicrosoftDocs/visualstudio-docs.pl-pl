@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Tworzenie i modyfikowanie właściwości niestandardowego dokumentu'
+title: 'Instrukcje: Tworzenie i modyfikowanie właściwości dokumentu niestandardowego'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,30 +14,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d6ef8332a5adc21e25f2a414c5b359e48cf1ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dd4f4ada36be4ef7b70f4f32d659abb10c8a62a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825796"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547215"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Instrukcje: Tworzenie i modyfikowanie właściwości niestandardowego dokumentu
-  Aplikacje Microsoft Office, w wymienionych powyżej oferują wbudowanej właściwości, które są przechowywane z dokumentami. Ponadto możesz utworzyć i modyfikowanie właściwości niestandardowego dokumentu, jeśli ma dodatkowych informacji, które mają być przechowywane w dokumencie.
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Instrukcje: Tworzenie i modyfikowanie właściwości dokumentu niestandardowego
+  Aplikacje Microsoft Office wymienione powyżej zapewniają wbudowane właściwości, które są przechowywane w dokumentach. Ponadto można tworzyć i modyfikować właściwości dokumentu niestandardowego, jeśli istnieją dodatkowe informacje, które mają być przechowywane w dokumencie.
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
 
- Aby pracować z właściwości niestandardowe, należy użyć właściwości CustomDocumentProperties dokumentu. Na przykład w projekcie na poziomie dokumentu dla programu Microsoft Office Excel, należy użyć <xref:Microsoft.Office.Tools.Excel.Workbook.CustomDocumentProperties%2A> właściwość `ThisWorkbook` klasy. W projekcie dodatku narzędzi VSTO dla programu Excel, należy użyć <xref:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu. Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwość kolekcji można pobrać określonej właściwości według nazwy lub indeksu w tej kolekcji.
+ Użyj właściwości CustomDocumentProperties dokumentu do pracy z właściwościami niestandardowymi. Na przykład w projekcie na poziomie dokumentu dla Microsoft Office Excel, użyj <xref:Microsoft.Office.Tools.Excel.Workbook.CustomDocumentProperties%2A> właściwości `ThisWorkbook` klasy. W projekcie dodatku VSTO dla programu Excel Użyj <xref:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties%2A> właściwości <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu. Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiekt, który jest kolekcją <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwości kolekcji, aby pobrać określoną właściwość według nazwy lub indeksu w kolekcji.
 
- Poniższy przykład pokazuje, jak dodać właściwość niestandardową w dostosowaniu na poziomie dokumentu dla programu Excel i przypisać jej wartości.
+ Poniższy przykład pokazuje, jak dodać właściwość niestandardową do dostosowania na poziomie dokumentu dla programu Excel i przypisać ją do wartości.
 
 ## <a name="example"></a>Przykład
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
  [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]
 
-## <a name="robust-programming"></a>Skuteczne programowanie
- Podjęto próbę dostępu `Value` właściwość niezdefiniowanymi właściwościami zgłasza wyjątek.
+## <a name="robust-programming"></a>Niezawodne programowanie
+ Próba uzyskania dostępu do `Value` Właściwości niezdefiniowanych właściwości wywołuje wyjątek.
 
-## <a name="see-also"></a>Zobacz także
-- [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)
-- [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)
-- [Instrukcje: Odczytywanie i zapisywanie właściwości dokumentów](../vsto/how-to-read-from-and-write-to-document-properties.md)
+## <a name="see-also"></a>Zobacz też
+- [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)
+- [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)
+- [Instrukcje: odczytywanie i zapisywanie właściwości dokumentu](../vsto/how-to-read-from-and-write-to-document-properties.md)

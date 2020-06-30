@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe wyświetlanie ciągu w komórce arkusza'
+title: 'Instrukcje: Programowane wyświetlanie ciągu w komórce arkusza'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,41 +13,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813026"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545928"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Instrukcje: Programowe wyświetlanie ciągu w komórce arkusza
-  W tym przykładzie przedstawiono sposób wyświetlania tekstu w komórce programowo. Aby wyświetlić tekst w komórce, należy użyć <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Instrukcje: Programowane wyświetlanie ciągu w komórce arkusza
+  W tym przykładzie pokazano, jak w programie programowo wyświetlać tekst w komórce. Aby wyświetlić tekst w komórce, użyj <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki lub natywnego obiektu programu Excel.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="use-a-namedrange-control"></a>Używanie formantu NamedRange
- W tym przykładzie użyto <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `message`. Kontrolka musi zostać dodana do dostosowywania poziomie dokumentu, w czasie projektowania. Poniższy kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.
+## <a name="use-a-namedrange-control"></a>Korzystanie z kontrolki NamedRange
+ W tym przykładzie używa <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `message` . Kontrolka musi zostać dodana do dostosowania na poziomie dokumentu w czasie projektowania. Poniższy kod musi być umieszczony w klasie arkusza, a nie w `ThisWorkbook` klasie.
 
-### <a name="to-display-text-in-a-namedrange-control"></a>Do wyświetlania tekstu w kontrolce NamedRange
+### <a name="to-display-text-in-a-namedrange-control"></a>Aby wyświetlić tekst w kontrolce NamedRange
 
-1. Ustaw wartość <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolę **Witaj, świecie**.
+1. Ustaw wartość <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu na **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
 
 ## <a name="use-a-native-excel-range"></a>Użyj natywnego zakresu programu Excel
- Poniższy kod tworzy nowy zakres programowo, a następnie przypisuje wartość do niego.
+ Poniższy kod tworzy nowy zakres programowo, a następnie przypisuje do niego wartość.
 
-### <a name="to-display-text-in-an-excel-range"></a>Do wyświetlania tekstu w zakresie programu Excel
+### <a name="to-display-text-in-an-excel-range"></a>Aby wyświetlić tekst w zakresie programu Excel
 
-1. Pobieranie zakresu komórek **A1** na `Sheet1` i ustaw wartość **Witaj, świecie**.
+1. Pobierz zakres w komórce **a1** na `Sheet1` i ustaw wartość na **Hello World**.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
-## <a name="see-also"></a>Zobacz także
-- [Przewodnik: Zbieranie danych za pomocą formularza Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
-- [Rozwiązywanie problemów z rozwiązań pakietu Office](../vsto/troubleshooting-office-solutions.md)
-- [Namedrange — formant](../vsto/namedrange-control.md)
+## <a name="see-also"></a>Zobacz też
+- [Przewodnik: zbieranie danych przy użyciu formularza systemu Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Rozwiązywanie problemów z rozwiązaniami pakietu Office](../vsto/troubleshooting-office-solutions.md)
+- [NamedRange — formant](../vsto/namedrange-control.md)
 - [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

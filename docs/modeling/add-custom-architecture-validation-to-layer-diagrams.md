@@ -1,7 +1,7 @@
 ---
 title: Dodawanie niestandardowej walidacji architektury do diagramów zależności
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597233"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546928"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów zależności
 
@@ -47,7 +47,7 @@ Najszybszą metodą tworzenia modułu sprawdzania poprawności jest użycie szab
    > [!WARNING]
    > Aby szablon działał prawidłowo:
    >
-   > - Edytuj wywołania do `LogValidationError`, aby usunąć opcjonalne argumenty `errorSourceNodes` i `errorTargetNodes`.
+   > - Edytuj wywołania do, `LogValidationError` Aby usunąć opcjonalne argumenty `errorSourceNodes` i `errorTargetNodes` .
    > - W przypadku używania właściwości niestandardowych należy zastosować aktualizację wymienioną w temacie [Dodawanie właściwości niestandardowych do diagramów zależności](../modeling/add-custom-properties-to-layer-diagrams.md).
 
 2. Edytuj kod w celu zdefiniowania walidacji. Aby uzyskać więcej informacji, zobacz [Walidacja programowania](#programming).
@@ -87,11 +87,11 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
 
     2. W oknie dialogowym **Dodaj nowy zasób** Ustaw:
 
-         **Type** = **Microsoft.VisualStudio.MefComponent**
+         **Typ**  =  **Microsoft. VisualStudio. MefComponent**
 
-         **Źródło** = **projektu w bieżącym rozwiązaniu**
+         **Źródło**  =  **Projekt w bieżącym rozwiązaniu**
 
-         **Projekt** = projektu *modułu sprawdzania poprawności*
+         **Projekt**  =  *Twój projekt modułu sprawdzania poprawności*
 
 5. Należy również dodać go jako walidację warstwy:
 
@@ -99,11 +99,11 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
 
     2. W oknie dialogowym **Dodaj nowy zasób** Ustaw:
 
-         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Nie jest to jedna z opcji na liście rozwijanej. Musisz wprowadzić ją z klawiatury.
+         **Typ**  =  **Microsoft. VisualStudio. ArchitectureTools. Layer. walidator**. Nie jest to jedna z opcji na liście rozwijanej. Musisz wprowadzić ją z klawiatury.
 
-         **Źródło** = **projektu w bieżącym rozwiązaniu**
+         **Źródło**  =  **Projekt w bieżącym rozwiązaniu**
 
-         **Projekt** = projektu *modułu sprawdzania poprawności*
+         **Projekt**  =  *Twój projekt modułu sprawdzania poprawności*
 
 6. Wróć do projektu walidacji warstwy i Dodaj następujące odwołania do projektu:
 
@@ -112,9 +112,9 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
     |Microsoft.VisualStudio.GraphModel.dll|Odczytywanie wykresu architektury|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Odczytaj kod DOM skojarzony z warstwami|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Odczytaj model warstwy|
-    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Odczytuj i Aktualizuj kształty i diagramy.|
-    |System.ComponentModel.Composition|Zdefiniuj składnik walidacji przy użyciu Managed Extensibility Framework (MEF)|
-    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definiowanie rozszerzeń modelowania|
+    |Microsoft. VisualStudio. ArchitectureTools. rozszerzalność|Odczytuj i Aktualizuj kształty i diagramy.|
+    |System. ComponentModel. kompozycji|Zdefiniuj składnik walidacji przy użyciu Managed Extensibility Framework (MEF)|
+    |Microsoft. VisualStudio. Modeling. Sdk. nowszym|Definiowanie rozszerzeń modelowania|
 
 7. Skopiuj przykładowy kod na końcu tego tematu do pliku klasy w projekcie biblioteki modułu sprawdzania poprawności, aby zawierał kod do walidacji. Aby uzyskać więcej informacji, zobacz [Walidacja programowania](#programming).
 
@@ -125,7 +125,7 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
 
 9. Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, Znajdź plik **. vsix** w katalogu **bin** projektu VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows.
 
-## <a name="programming"></a>Sprawdzanie poprawności programowania
+## <a name="programming-validation"></a><a name="programming"></a>Sprawdzanie poprawności programowania
 
 Aby zdefiniować rozszerzenie sprawdzania poprawności warstwy, należy zdefiniować klasę o następujących cechach:
 
@@ -148,10 +148,10 @@ Aby zdefiniować rozszerzenie sprawdzania poprawności warstwy, należy zdefinio
     } }
   ```
 
-- Po znalezieniu błędu można zgłosić go za pomocą `LogValidationError()`.
+- Po znalezieniu błędu można zgłosić go za pomocą polecenia `LogValidationError()` .
 
   > [!WARNING]
-  > Nie należy używać parametrów opcjonalnych `LogValidationError`.
+  > Nie należy używać parametrów opcjonalnych `LogValidationError` .
 
 Gdy użytkownik wywołuje polecenie menu **Weryfikuj architekturę** , system środowiska uruchomieniowego warstwy analizuje warstwy i ich artefakty w celu utworzenia grafu. Wykres ma cztery części:
 
@@ -163,20 +163,20 @@ Gdy użytkownik wywołuje polecenie menu **Weryfikuj architekturę** , system ś
 
 - Węzły, które reprezentują błędy wykryte przez moduł walidacji.
 
-Gdy wykres został skonstruowany, wywoływana jest standardowa metoda sprawdzania poprawności. Po zakończeniu tej czynności wszystkie zainstalowane metody walidacji rozszerzeń są wywoływane w nieokreślonej kolejności. Wykres jest przesyłany do każdej metody `ValidateArchitecture`, która może przeskanować wykres i zgłosić wszystkie znalezione błędy.
+Gdy wykres został skonstruowany, wywoływana jest standardowa metoda sprawdzania poprawności. Po zakończeniu tej czynności wszystkie zainstalowane metody walidacji rozszerzeń są wywoływane w nieokreślonej kolejności. Wykres jest przesyłany do każdej `ValidateArchitecture` metody, która może przeskanować wykres i zgłosić wszystkie znalezione błędy.
 
 > [!NOTE]
 > Nie jest to takie samo, jak proces sprawdzania poprawności, który może być używany w językach specyficznych dla domeny.
 
 Metody sprawdzania poprawności nie powinny zmieniać modelu warstwy ani kodu, który jest sprawdzany.
 
-Model grafu jest zdefiniowany w <xref:Microsoft.VisualStudio.GraphModel>. Klasy główne są <xref:Microsoft.VisualStudio.GraphModel.GraphNode> i <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.
+Model grafu jest zdefiniowany w <xref:Microsoft.VisualStudio.GraphModel> . Klasy główne są <xref:Microsoft.VisualStudio.GraphModel.GraphNode> i <xref:Microsoft.VisualStudio.GraphModel.GraphLink> .
 
 Każdy węzeł i każde łącze ma jedną lub więcej kategorii, które określają typ elementu lub relacji, które reprezentuje. Węzły typowego wykresu mają następujące kategorie:
 
-- Dsl.LayerModel
+- DSL. LayerModel
 
-- Dsl.Layer
+- DSL. Layer
 
 - DSL. Reference
 
@@ -194,7 +194,7 @@ Każdy węzeł i każde łącze ma jedną lub więcej kategorii, które określa
 
 Linki z warstw do elementów w kodzie mają kategorię "reprezentowane".
 
-## <a name="debugging"></a>Sprawdzanie poprawności debugowania
+## <a name="debugging-validation"></a><a name="debugging"></a>Sprawdzanie poprawności debugowania
 
 Aby debugować rozszerzenie warstwy sprawdzania poprawności, naciśnij klawisze CTRL + F5. Zostanie otwarte doświadczalne wystąpienie programu Visual Studio. W tym wystąpieniu Otwórz lub Utwórz model warstwy. Ten model musi być skojarzony z kodem i musi mieć co najmniej jedną zależność.
 
@@ -216,9 +216,9 @@ Za każdym razem, gdy aktualizujesz kod weryfikacyjny, użyj polecenia **Oczyś�
 
 Sprawdzanie poprawności przebiega w osobnym procesie. W związku z tym punkty przerwania w metodzie walidacji nie będą wyzwalane. Musisz dołączyć debuger do procesu jawnie po rozpoczęciu walidacji.
 
-Aby dołączyć debuger do procesu walidacji, Wstaw wywołanie do `System.Diagnostics.Debugger.Launch()` na początku metody walidacji. Gdy pojawi się okno dialogowe debugowanie, wybierz główne wystąpienie programu Visual Studio.
+Aby dołączyć debuger do procesu sprawdzania poprawności, Wstaw wywołanie na początku `System.Diagnostics.Debugger.Launch()` metody walidacji. Gdy pojawi się okno dialogowe debugowanie, wybierz główne wystąpienie programu Visual Studio.
 
-Alternatywnie można wstawić wywołanie do `System.Windows.Forms.MessageBox.Show()`. Gdy pojawi się okno komunikatu, przejdź do głównego wystąpienia programu Visual Studio, a następnie w menu **debugowanie** kliknij **Dołącz do procesu**. Wybierz proces o nazwie **GraphCmd. exe**.
+Alternatywnie można wstawić wywołanie do `System.Windows.Forms.MessageBox.Show()` . Gdy pojawi się okno komunikatu, przejdź do głównego wystąpienia programu Visual Studio, a następnie w menu **debugowanie** kliknij **Dołącz do procesu**. Wybierz proces o nazwie **Graphcmd.exe**.
 
 Zawsze uruchamiaj eksperymentalne wystąpienie przez naciśnięcie klawiszy CTRL + F5 (**Rozpocznij bez debugowania**).
 
@@ -226,7 +226,7 @@ Zawsze uruchamiaj eksperymentalne wystąpienie przez naciśnięcie klawiszy CTRL
 
 Aby zainstalować rozszerzenie sprawdzania poprawności na komputerze, na którym jest zainstalowana odpowiednia wersja programu Visual Studio, Otwórz plik VSIX na komputerze docelowym.
 
-## <a name="example"></a>Przykładowy kod
+## <a name="example-code"></a><a name="example"></a>Przykładowy kod
 
 ```csharp
 using System;
@@ -287,6 +287,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozszerzanie diagramów zależności](../modeling/extend-layer-diagrams.md)

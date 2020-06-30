@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe Przywracanie zaznaczenia po wyszukiwaniu'
+title: 'Instrukcje: Programowane przywracanie zaznaczenia po wyszukiwaniu'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,45 +14,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 672c66fef5d7400601ce69270b5cd4f525b34c7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30daa81c33070db3f9418b45b84b4acc6e243dc9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955706"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547098"
 ---
-# <a name="how-to-programmatically-restore-selections-after-searches"></a>Instrukcje: Programowe Przywracanie zaznaczenia po wyszukiwaniu
-  Znajdowanie i zastępowanie tekstu w dokumencie, można przywrócić oryginalny wybranych przez użytkownika, po ukończeniu wyszukiwania.
+# <a name="how-to-programmatically-restore-selections-after-searches"></a>Instrukcje: Programowane przywracanie zaznaczenia po wyszukiwaniu
+  Jeśli odnajdziesz i zastąpisz tekst w dokumencie, możesz chcieć przywrócić oryginalny wybór użytkownika po zakończeniu wyszukiwania.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Kod w przykładowa procedura korzysta z dwóch <xref:Microsoft.Office.Interop.Word.Range> obiektów. Przechowuje jedną bieżącą <xref:Microsoft.Office.Interop.Word.Selection>, a jeden z nich ustawia całego dokumentu w celu użycia jako zakres wyszukiwania.
+ Kod w przykładowej procedurze używa dwóch <xref:Microsoft.Office.Interop.Word.Range> obiektów. Jeden z nich przechowuje bieżącą <xref:Microsoft.Office.Interop.Word.Selection> , a jeden ustawia cały dokument do użycia jako zakres wyszukiwania.
 
-## <a name="to-restore-the-users-original-selection-after-a-search"></a>Aby przywrócić użytkownika oryginalnego zaznaczenia po wyszukiwaniu
+## <a name="to-restore-the-users-original-selection-after-a-search"></a>Aby przywrócić pierwotny wybór użytkownika po wyszukiwaniu
 
-1. Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekty dla bieżącego wyboru i dokumentu.
+1. Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekty dla dokumentu i bieżące zaznaczenie.
 
     [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]
     [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]
 
-2. Przeprowadź wyszukiwanie i operację zamiany.
+2. Wykonaj operację wyszukiwania i zamieniania.
 
     [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
     [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]
 
-3. Wybierz zakres początkowy, aby przywrócić oryginalne wybranych przez użytkownika.
+3. Wybierz zakres początkowy, aby przywrócić oryginalny wybór użytkownika.
 
     [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
     [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]
 
-   Poniższy przykład pokazuje całą metodę.
+   Poniższy przykład przedstawia metodę Complete.
 
 ## <a name="example"></a>Przykład
  [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)]
  [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Programowe wyszukiwanie i zastępowanie tekstu w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
-- [Instrukcje: Programowe Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
-- [Instrukcje: Programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: programowe wyszukiwanie i zastępowanie tekstu w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Instrukcje: Programowane Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Instrukcje: programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

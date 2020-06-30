@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73f94c45568a55cc098dd223deca9dab404f44ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b584e355f5b64984f57dd17606dfb0a2f781c62d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651632"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547670"
 ---
-# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute
+# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Nie oznaczaj typów wyliczeniowych atrybutem Flags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
@@ -33,10 +33,10 @@ ms.locfileid: "72651632"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Widoczne na zewnątrz Wyliczenie jest oznaczone <xref:System.FlagsAttribute> i ma co najmniej jedną wartość, która nie ma uprawnień do dwóch lub kombinacji innych zdefiniowanych wartości w wyliczeniu.
+ Widoczne na zewnątrz Wyliczenie jest oznaczone za pomocą <xref:System.FlagsAttribute> i ma co najmniej jedną wartość, która nie ma uprawnień dwóch lub kombinacji innych zdefiniowanych wartości w wyliczeniu.
 
 ## <a name="rule-description"></a>Opis reguły
- Wyliczenie powinno mieć <xref:System.FlagsAttribute> dostępne tylko wtedy, gdy każda wartość zdefiniowana w wyliczeniu jest potęgą dwóch lub kombinacji zdefiniowanych wartości.
+ Wyliczenie powinno być <xref:System.FlagsAttribute> dostępne tylko wtedy, gdy każda wartość zdefiniowana w wyliczeniu jest potęgą dwóch lub kombinacji zdefiniowanych wartości.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Usuń <xref:System.FlagsAttribute> z wyliczenia.
@@ -45,7 +45,7 @@ ms.locfileid: "72651632"
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje Wyliczenie, kolor, który zawiera wartość 3, która nie jest potęgą dwóch ani nie ma kombinacji wartości zdefiniowanych przez siebie. Wyliczenie koloru nie powinno być oznaczone przy użyciu <xref:System.FlagsAttribute>.
+ Poniższy przykład pokazuje Wyliczenie, kolor, który zawiera wartość 3, która nie jest potęgą dwóch ani nie ma kombinacji wartości zdefiniowanych przez siebie. Wyliczenie koloru nie powinno być oznaczone <xref:System.FlagsAttribute> .
 
  [!code-cpp[FxCop.Usage.EnumNoFlags#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cpp/FxCop.Usage.EnumNoFlags.cpp#1)]
  [!code-csharp[FxCop.Usage.EnumNoFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cs/FxCop.Usage.EnumNoFlags.cs#1)]

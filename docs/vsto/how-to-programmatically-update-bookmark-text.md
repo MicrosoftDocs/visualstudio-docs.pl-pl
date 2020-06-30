@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe Aktualizowanie tekstu zakładki'
+title: 'Instrukcje: Programowane aktualizowanie tekstu zakładki'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,72 +14,72 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 436fefd425da46cea6a8cd1aba95fb9eb14362f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418963"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546955"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>Instrukcje: Programowe Aktualizowanie tekstu zakładki
-  Tak, aby przywrócić tekst w późniejszym czasie lub zastępowanie tekstu w zakładce, można wstawić tekst do symbolu zastępczego zakładki w dokumencie programu Microsoft Office Word. Jeśli tworzysz dostosowywania poziomie dokumentu, ale też aktualizować tekstu w <xref:Microsoft.Office.Tools.Word.Bookmark> formant, który jest powiązany z danymi. Aby uzyskać więcej informacji, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+# <a name="how-to-programmatically-update-bookmark-text"></a>Instrukcje: Programowane aktualizowanie tekstu zakładki
+  Możesz wstawić tekst do zakładki zastępczej w Microsoft Office dokumencie programu Word, aby można było pobrać tekst w późniejszym czasie lub zamienić tekst w zakładce. Jeśli tworzysz dostosowanie na poziomie dokumentu, możesz również zaktualizować tekst w <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolce, która jest powiązana z danymi. Aby uzyskać więcej informacji, zobacz temat [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Może to być jeden z dwóch typów obiektu zakładkę:
+ Obiekt zakładki może być jednym z dwóch typów:
 
-- A <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki hosta.
+- <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolka hosta.
 
-   <xref:Microsoft.Office.Tools.Word.Bookmark> Formanty rozszerzać macierzysty <xref:Microsoft.Office.Interop.Word.Bookmark> obiektów po włączeniu powiązanie danych oraz udostępnianie zdarzeń. Aby uzyskać więcej informacji na temat formantów hosta zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+   <xref:Microsoft.Office.Tools.Word.Bookmark>formanty rozszerzają <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty natywne przez włączenie powiązań danych i Uwidacznianie zdarzeń. Aby uzyskać więcej informacji na temat kontrolek hosta, zobacz temat [elementy hosta i kontrolki hosta](../vsto/host-items-and-host-controls-overview.md).
 
-- Natywny <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu.
+- Obiekt macierzysty <xref:Microsoft.Office.Interop.Word.Bookmark> .
 
-   <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty nie mają możliwości wiązania zdarzenia lub dane.
+   <xref:Microsoft.Office.Interop.Word.Bookmark>obiekty nie mają możliwości zdarzeń ani powiązań danych.
 
-  Po przypisaniu tekstu do zakładki zachowanie różni się między <xref:Microsoft.Office.Interop.Word.Bookmark> i <xref:Microsoft.Office.Tools.Word.Bookmark>. Aby uzyskać więcej informacji, zobacz [Bookmark, formant](../vsto/bookmark-control.md).
+  Po przypisaniu tekstu do zakładki zachowanie różni się od <xref:Microsoft.Office.Interop.Word.Bookmark> i <xref:Microsoft.Office.Tools.Word.Bookmark> . Aby uzyskać więcej informacji, zobacz [kontrolka zakładka](../vsto/bookmark-control.md).
 
-## <a name="use-host-controls"></a>Użyj kontrolek hosta
+## <a name="use-host-controls"></a>Korzystanie z kontrolek hosta
 
-### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>Aby zaktualizować zawartość zakładki przy użyciu formantu zakładki
+### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>Aby zaktualizować zawartość zakładki przy użyciu kontrolki zakładki
 
-1. Należy utworzyć procedurę, która przyjmuje `bookmark` argument nazwy zakładki, a `newText` argumentów dla ciągu można przypisać do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwości.
+1. Utwórz procedurę, która przyjmuje `bookmark` argument dla nazwy zakładki i `newText` argument dla ciągu do przypisania do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwości.
 
     > [!NOTE]
-    > Przypisywanie tekst <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> lub <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> właściwość <xref:Microsoft.Office.Tools.Word.Bookmark> formantu zakładki do usunięcia nie powoduje, że.
+    > Przypisanie tekstu do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwości lub <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki nie powoduje usunięcia zakładki.
 
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
 
-2. Przypisz *newText* ciągu do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwość <xref:Microsoft.Office.Tools.Word.Bookmark>.
+2. Przypisz ciąg *newText* do <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> właściwości <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
      [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
      [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]
 
-## <a name="use-word-objects"></a>Używanie obiektów programu Word
+## <a name="use-word-objects"></a>Korzystanie z obiektów programu Word
 
-### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>Aby zaktualizować zawartość zakładki przy użyciu obiektem Bookmark programu Word
+### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>Aby zaktualizować zawartość zakładki przy użyciu obiektu zakładki programu Word
 
-1. Tworzenie procedury, która ma `bookmark` argument dla nazwy <xref:Microsoft.Office.Interop.Word.Bookmark>, a `newText` argumentów dla ciągu można przypisać do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość zakładki.
+1. Utwórz procedurę, która ma `bookmark` argument dla nazwy <xref:Microsoft.Office.Interop.Word.Bookmark> i `newText` argumentu dla ciągu, który ma zostać przypisany do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> Właściwości zakładki.
 
     > [!NOTE]
-    > Przypisywanie tekstu do natywnego programu Word <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu powoduje, że zakładki do usunięcia.
+    > Przypisanie tekstu do macierzystego obiektu programu Word <xref:Microsoft.Office.Interop.Word.Bookmark> powoduje usunięcie zakładki.
 
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]
 
-2. Przypisz *newText* ciągu do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość zakładki, która automatycznie usuwa zakładki. Następnie ponownie dodać zakładkę do <xref:Microsoft.Office.Interop.Word.Bookmarks> kolekcji.
+2. Przypisz ciąg *newText* do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> Właściwości zakładki, która automatycznie usuwa zakładkę. Następnie ponownie Dodaj zakładkę do <xref:Microsoft.Office.Interop.Word.Bookmarks> kolekcji.
 
-     Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.
+     Poniższy przykład kodu może być używany w dostosowaniu na poziomie dokumentu.
 
      [!code-vb[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#66)]
      [!code-csharp[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#66)]
 
-     Poniższy przykład kodu może służyć w dodatku VSTO. W tym przykładzie użyto aktywnego dokumentu.
+     Poniższy przykład kodu może być używany w dodatku VSTO. Ten przykład używa aktywnego dokumentu.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#66)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Programowe Wstawianie tekstu w dokumentach programu Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
-- [BOOKMARK, kontrolka](../vsto/bookmark-control.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: Programowane wstawianie tekstu do dokumentów programu Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
+- [Kontrolka zakładki](../vsto/bookmark-control.md)

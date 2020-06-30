@@ -13,17 +13,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9df1a954c2ae090e57341d489878d15d6f3f1867
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0af30f31e7ee63c521a3a7c1acbafbb1cd109832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654986"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548021"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla domeny (DSL) w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zostanie utworzony lub zaktualizowany plik XML. Plik można ponownie załadować, aby ponownie utworzyć model w sklepie.
+Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla domeny (DSL) w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , plik XML jest tworzony lub aktualizowany. Plik można ponownie załadować, aby ponownie utworzyć model w sklepie.
 
  Można dostosować schemat serializacji, dostosowując ustawienia w obszarze **zachowanie serializacji kodu XML** w Eksploratorze DSL. Istnieje węzeł w ramach **zachowania serializacji kodu XML** dla każdej klasy domeny, właściwości i relacji. Relacje znajdują się w obszarze ich klas źródłowych. Istnieją również węzły odpowiadające klasom kształtu, łącznika i diagramu.
 
@@ -54,7 +54,7 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 ## <a name="the-default-serialization-scheme"></a>Domyślny schemat serializacji
  Do utworzenia przykładu dla tego tematu użyto następującej definicji DSL.
 
- ![Model drzewa rodziny &#45; diagramów definicji DSL](../modeling/media/familyt-person.png "FamilyT_Person")
+ ![Diagram definicji DSL &#45; Model drzewa genealogicznego](../modeling/media/familyt-person.png "FamilyT_Person")
 
  Ten DSL został użyty do utworzenia modelu, który ma następujący wygląd na ekranie.
 
@@ -81,28 +81,28 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 
  Zwróć uwagę na następujące kwestie dotyczące serializowanego modelu:
 
-- Każdy węzeł XML ma nazwę, która jest taka sama jak nazwa klasy domeny, z tą różnicą, że inicjał jest pisany małymi literami. Na przykład `familyTreeModel` i `person`.
+- Każdy węzeł XML ma nazwę, która jest taka sama jak nazwa klasy domeny, z tą różnicą, że inicjał jest pisany małymi literami. Na przykład `familyTreeModel` i `person` .
 
 - Właściwości domeny, takie jak Name i BirthYear, są serializowane jako atrybuty w węzłach XML. Ponownie początkowy znak nazwy właściwości jest konwertowany na małe litery.
 
 - Każda relacja jest serializowana jako węzeł XML zagnieżdżony w źródłowym końcu relacji. Węzeł ma taką samą nazwę jak właściwość roli źródłowej, ale z znakiem początkowym małymi literami.
 
-     Na przykład w definicji DSL rola o nazwie **ludzie** jest źródłem w klasie **FamilyTree** .  W kodzie XML jest to reprezentowane przez węzeł o nazwie `people` zagnieżdżony w węźle `familyTreeModel`.
+     Na przykład w definicji DSL rola o nazwie **ludzie** jest źródłem w klasie **FamilyTree** .  W kodzie XML jest to reprezentowane przez węzeł o nazwie `people` zagnieżdżone wewnątrz `familyTreeModel` węzła.
 
-- Zakończenie każdej relacji osadzania jest serializowane jako węzeł zagnieżdżony w relacji. Na przykład węzeł `people` zawiera kilka węzłów `person`.
+- Zakończenie każdej relacji osadzania jest serializowane jako węzeł zagnieżdżony w relacji. Na przykład `people` węzeł zawiera kilka `person` węzłów.
 
 - Koniec elementu docelowego każdej relacji odwołania jest serializowany jako *moniker*, który koduje odwołanie do elementu docelowego.
 
-     Na przykład w węźle `person` może istnieć relacja `children`. Ten węzeł zawiera monikery, takie jak:
+     Na przykład w `person` węźle może istnieć `children` relacja. Ten węzeł zawiera monikery, takie jak:
 
     ```
     <personMoniker name="/f817b728-e920-458e-bb99-98edc469d78f/Elizabeth I" />
     ```
 
 ## <a name="understanding-monikers"></a>Zrozumienie monikerów
- Monikery służą do reprezentowania odwołań między różnymi częściami modelu i plików diagramu. Są one również używane w pliku `.diagram` w celu odwoływania się do węzłów w pliku modelu. Istnieją dwie formy monikera:
+ Monikery służą do reprezentowania odwołań między różnymi częściami modelu i plików diagramu. Są one również używane w `.diagram` pliku do odwoływania się do węzłów w pliku modelu. Istnieją dwie formy monikera:
 
-- *Monikery identyfikatorów* wyznaczają identyfikator GUID elementu docelowego. Na przykład:
+- *Monikery identyfikatorów* wyznaczają identyfikator GUID elementu docelowego. Przykład:
 
   ```
   <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -119,17 +119,17 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 
   ```
 
-   W przypadku, gdy Klasa docelowa ma właściwość domeny, dla której opcja **jest kluczem monikera** jest ustawiona na `true` w **zachowaniu serializacji XML**. W tym przykładzie ta opcja jest ustawiona dla właściwości domeny o nazwie "title" w klasach domeny "album" i "utwór".
+   Kwalifikowane monikery kluczy będą używane, jeśli Klasa docelowa ma właściwość domeny, dla której opcja **jest kluczem monikera** jest ustawiona `true` na **zachowanie serializacji XML**. W tym przykładzie ta opcja jest ustawiona dla właściwości domeny o nazwie "title" w klasach domeny "album" i "utwór".
 
   Kwalifikowane monikery kluczy są łatwiejsze do odczytania niż monikery identyfikatorów. Jeśli zamierzasz odczytać XML plików modelu przez osoby, rozważ użycie kwalifikowanych krótkich monikerów. Jednak użytkownik może ustawić więcej niż jeden element, aby mieć ten sam klucz monikera. Zduplikowane klucze mogą spowodować, że plik nie zostanie poprawnie załadowany. Dlatego w przypadku zdefiniowania klasy domeny, do której odwołuje się monikery kluczy, należy rozważyć sposoby uniemożliwiania użytkownikowi zapisania pliku, który ma zduplikowane monikery.
 
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Aby ustawić klasę domeny, do której mają być przywoływane monikery identyfikatorów
 
-1. Upewnij się, że **klucz moniker** jest `false` dla każdej właściwości domeny w klasie i jej klasach bazowych.
+1. Upewnij się, że **jest to klucz moniker** `false` dla każdej właściwości domeny w klasie i jej klasach bazowych.
 
-    1. W Eksploratorze DSL rozwiń kolejno pozycje **XML serializacji Behavior\Class dane \\**  _\<the klasy domeny >_ **\Element danych**.
+    1. W Eksploratorze DSL rozwiń pozycję **XML serializacji Behavior\Class dane \\ ** _\<the domain class>_ **\Element**danych.
 
-    2. Sprawdź, czy **klucz moniker** jest `false` dla każdej właściwości domeny.
+    2. Sprawdź, czy **jest to klucz moniker** `false` dla każdej właściwości domeny.
 
     3. Jeśli klasa domeny ma klasę bazową, Powtórz procedurę w tej klasie.
 
@@ -139,19 +139,19 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 
 #### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>Aby ustawić klasę domeny, do której mają być przywoływane kwalifikowane monikery kluczy
 
-- Set **jest kluczem monikera** dla właściwości domeny istniejącej klasy domeny. Typ właściwości musi być `string`.
+- Set **jest kluczem monikera** dla właściwości domeny istniejącej klasy domeny. Typ właściwości musi być typem `string` .
 
-    1. W Eksploratorze DSL rozwiń kolejno pozycje **XML serializacji Behavior\Class dane \\**  _\<the klasy domeny >_ **\Element dane**, a następnie wybierz właściwość domena.
+    1. W Eksploratorze DSL rozwiń kolejno pozycje **XML serializacji \\ Behavior\Class dane** _\<the domain class>_ **\Element dane**, a następnie wybierz właściwość domena.
 
-    2. W okno Właściwości ustaw **klucz moniker** , aby `true`.
+    2. W okno Właściwości ustaw **klucz monikera** na `true` .
 
-- \- lub-
+- \-oraz
 
      Utwórz nową klasę domeny za pomocą narzędzia **klasy nazwanej domeny** .
 
-     To narzędzie tworzy nową klasę, która ma właściwość domeny o nazwie name. **Nazwa elementu is** i **ma właściwości klucza monikera** tej właściwości domeny są inicjowane w celu `true`.
+     To narzędzie tworzy nową klasę, która ma właściwość domeny o nazwie name. **Nazwa elementu is** i **ma właściwości klucza monikera** tej właściwości domeny są inicjowane do `true` .
 
-- \- lub-
+- \-oraz
 
      Utwórz relację dziedziczenia z klasy domeny do innej klasy, która ma właściwość klucza monikera.
 
@@ -160,13 +160,13 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 
  Istnieje kilka metod, które pomagają uniknąć tej sytuacji:
 
-- Zestaw **jest nazwą elementu**  =  `true` właściwości domena klucza. Wybierz właściwość domena na diagramie definicji DSL, a następnie ustaw wartość w okno Właściwości.
+- Ustaw wartość **Nazwa elementu**  =  `true` dla właściwości domena klucza. Wybierz właściwość domena na diagramie definicji DSL, a następnie ustaw wartość w okno Właściwości.
 
      Gdy użytkownik tworzy nowe wystąpienie klasy, ta wartość powoduje, że właściwość domeny ma automatycznie przypisaną inną wartość. Zachowanie domyślne dodaje numer na końcu nazwy klasy. Nie uniemożliwia to użytkownikowi zmiany nazwy na duplikat, ale w przypadku, gdy użytkownik nie ustawi wartości przed zapisaniem modelu, może to zrobić.
 
-- Włącz sprawdzanie poprawności dla DSL. W Eksploratorze DSL wybierz pozycję Editor\Validation, a następnie ustaw `true` właściwości **Użyj...** .
+- Włącz sprawdzanie poprawności dla DSL. W Eksploratorze DSL wybierz pozycję Editor\Validation, a następnie ustaw właściwości **Użyj...** . `true`
 
-     Jest automatycznie generowana Metoda walidacji, która sprawdza, czy niejasności. Metoda jest w kategorii Walidacja `Load`. Pozwala to upewnić się, że użytkownik otrzyma ostrzeżenie, że może nie być możliwe ponowne otwarcie pliku.
+     Jest automatycznie generowana Metoda walidacji, która sprawdza, czy niejasności. Metoda jest w `Load` kategorii walidacji. Pozwala to upewnić się, że użytkownik otrzyma ostrzeżenie, że może nie być możliwe ponowne otwarcie pliku.
 
      Aby uzyskać więcej informacji, zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).
 
@@ -193,7 +193,7 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 
  Należy zauważyć, że identyfikator GUID jest unikatowy, nigdy nie jest poprzedzony przez moniker jego elementu nadrzędnego.
 
- Jeśli wiesz, że właściwość konkretnej domeny zawsze ma unikatową wartość w ramach modelu, możesz ustawić **kwalifikator monikera** do `true` dla tej właściwości. Spowoduje to, że będzie on używany jako kwalifikator, bez używania monikera elementu nadrzędnego. Jeśli na przykład ustawisz obie wartości **kwalifikator monikera** i **jest to klucz moniker** dla właściwości domena tytułu klasy albumu, nazwa lub Identyfikator modelu nie jest używany w monikerach dla albumu i jego osadzonych elementów podrzędnych:
+ Jeśli wiesz, że określona właściwość domeny zawsze ma unikatową wartość w ramach modelu, możesz ustawić jako **kwalifikator monikera** `true` dla tej właściwości. Spowoduje to, że będzie on używany jako kwalifikator, bez używania monikera elementu nadrzędnego. Jeśli na przykład ustawisz obie wartości **kwalifikator monikera** i **jest to klucz moniker** dla właściwości domena tytułu klasy albumu, nazwa lub Identyfikator modelu nie jest używany w monikerach dla albumu i jego osadzonych elementów podrzędnych:
 
 ```
 <albumMoniker name="Jazz after Teatime" />
@@ -236,7 +236,7 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 
     ```
 
-- Ustaw **reprezentację** **elementu**  = , aby właściwość domeny została zapisana jako element, a nie jako wartość atrybutu.
+- Ustaw **element reprezentacji**,  =  **Element** aby miał Właściwość domena zapisana jako element, a nie jako wartość atrybutu.
 
     ```
     <person name="Elizabeth I" birthYear="1533">
@@ -269,16 +269,15 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 ### <a name="xml-class-data"></a>Dane klasy XML
  Te elementy są dostępne w Eksploratorze DSL w obszarze **dane serializacji XML Behavior\Class**.
 
-|||
-|-|-|
 |Właściwość|Opis|
+|-|-|
 |Ma niestandardowy schemat elementu|W przypadku wartości true oznacza, że Klasa domeny ma niestandardowy schemat elementu|
 |Jest niestandardowy|Ustaw tę **wartość na true (prawda** ), jeśli chcesz napisać własny kod serializacji i deserializacji dla tej klasy domeny.<br /><br /> Skompiluj rozwiązanie i zbadaj błędy, aby poznać szczegółowe instrukcje.|
 |Klasa domeny|Klasa domeny, do której stosuje się ten węzeł danych klasy. Tylko do odczytu.|
 |Nazwa elementu|Nazwa węzła XML dla elementów tej klasy. Wartością domyślną jest mała wersja klasy domeny.|
-|Nazwa atrybutu monikera|Nazwa atrybutu używanego w elementach monikera, który będzie zawierać odwołanie. Jeśli pole pozostanie puste, zostanie użyta nazwa właściwości klucza lub identyfikatora.<br /><br /> W tym przykładzie jest to "name": `<personMoniker name="/Mike Nash"/>`|
+|Nazwa atrybutu monikera|Nazwa atrybutu używanego w elementach monikera, który będzie zawierać odwołanie. Jeśli pole pozostanie puste, zostanie użyta nazwa właściwości klucza lub identyfikatora.<br /><br /> W tym przykładzie jest to "nazwa":`<personMoniker name="/Mike Nash"/>`|
 |Nazwa elementu monikera|Nazwa elementu XML używanego dla monikerów odwołujących się do elementów tej klasy.<br /><br /> Wartość domyślna to mała wersja nazwy klasy z sufiksem "moniker". Na przykład `personMoniker`.|
-|Nazwa typu monikera|Nazwa typu XSD wygenerowanego dla monikerów elementów tej klasy. XSD jest w **kodzie Dsl\Generated \\ \*Schema. xsd**|
+|Nazwa typu monikera|Nazwa typu XSD wygenerowanego dla monikerów elementów tej klasy. XSD znajduje się w ** \\ \* schemacie Code Dsl\Generated. xsd**|
 |Identyfikator serializacji|W przypadku wartości true identyfikator GUID elementu jest dołączany do pliku. Musi to być prawdziwe, jeśli nie istnieje właściwość, która jest oznaczona jako **klucz monikera** , a DSL definiuje relacje odwołania do tej klasy.|
 |Nazwa typu|Nazwa typu XML wygenerowanego w formacie XSD z wytworzonej klasy domeny.|
 |Uwagi|Nieformalne uwagi skojarzone z tym elementem|
@@ -286,9 +285,8 @@ Gdy użytkownik zapisuje wystąpienie lub *model*w języku specyficznym dla dome
 ### <a name="xml-property-data"></a>Dane właściwości XML
  Węzły właściwości XML znajdują się w węzłach klas.
 
-|||
-|-|-|
 |Właściwość|Opis|
+|-|-|
 |Właściwość domeny|Właściwość, do której stosują się dane konfiguracji serializacji kodu XML. Tylko do odczytu.|
 |Jest kluczem monikera|W przypadku wartości true właściwość jest używana jako klucz do tworzenia monikerów, które odwołują się do wystąpień tej klasy domeny.|
 |Jest kwalifikatorem monikera|W przypadku wartości true właściwość jest używana do tworzenia kwalifikatora w monikerach. Jeśli wartość jest równa false, a jeśli SerializeId nie ma wartości true dla tej klasy domeny, monikery są kwalifikowane przez moniker elementu nadrzędnego w drzewie osadzania.|

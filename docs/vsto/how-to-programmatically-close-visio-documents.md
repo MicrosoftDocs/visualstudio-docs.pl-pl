@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe zamykanie dokumentów programu Visio'
+title: 'Instrukcje: Programowane Zamykanie dokumentów programu Visio'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,33 +13,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 474efcb62cf7cadd9de82e41ff2ad36cebc046cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 478905a8ba4dacd2102c4b19fe091016a7409773
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575367"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547488"
 ---
-# <a name="how-to-programmatically-close-visio-documents"></a>Instrukcje: Programowe zamykanie dokumentów programu Visio
-  Możesz zamknąć aktywny dokument programu Microsoft Visio pakietu Office przy użyciu `Microsoft.Office.Interop.Visio.Document.Close` metody.
+# <a name="how-to-programmatically-close-visio-documents"></a>Instrukcje: Programowane Zamykanie dokumentów programu Visio
+  Możesz zamknąć dokument programu Active Microsoft Office Visio przy użyciu `Microsoft.Office.Interop.Visio.Document.Close` metody.
 
- Aby uzyskać szczegółowe informacje o tej metodzie, zobacz dokumentację referencyjną VBA [Microsoft.Office.Interop.Visio.Document.Close](/office/vba/api/Visio.Document.Close) metody.
+ Aby uzyskać szczegółowe informacje na temat tej metody, zobacz dokumentację referencyjną języka VBA dla [Microsoft.Office.Interop.Visio.Document. Zamknij](/office/vba/api/Visio.Document.Close) metodę.
 
-## <a name="close-the-active-document"></a>Zamyka aktywny dokument.
+## <a name="close-the-active-document"></a>Zamknij aktywny dokument
 
 ### <a name="to-close-the-active-document"></a>Aby zamknąć aktywny dokument
 
 - Wywołaj `Microsoft.Office.Interop.Visio.Document.Close` metodę, aby zamknąć aktywny dokument.
 
-     Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Visio.
+     Aby użyć następującego przykładu kodu, uruchom go w `ThisAddIn` klasie w projekcie dodatku VSTO dla programu Visio.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiązania programu Visio](../vsto/visio-solutions.md)
-- [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)
-- [Instrukcje: Programowe tworzenie nowych dokumentów programu Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Instrukcje: Programowe otwieranie dokumentów programu Visio](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Instrukcje: Programowe zapisywanie dokumentów programu Visio](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Instrukcje: Programowe drukowanie dokumentów programu Visio](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Model obiektów programu Visio — Omówienie](../vsto/visio-object-model-overview.md)
+- [Instrukcje: Programowane tworzenie nowych dokumentów programu Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Instrukcje: Programowane otwieranie dokumentów Visio](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Instrukcje: programowe zapisywanie dokumentów programu Visio](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Instrukcje: Programowane drukowanie dokumentów programu Visio](../vsto/how-to-programmatically-print-visio-documents.md)

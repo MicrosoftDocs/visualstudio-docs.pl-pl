@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849741"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547592"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Można zdefiniować ograniczenia walidacji, które sprawdzają, czy model spełn
 ## <a name="applying-validation-constraints"></a>Stosowanie ograniczeń walidacji
  Ograniczenia walidacji są stosowane w trzech przypadkach: podczas zapisywania modelu; Po otwarciu modelu; a po kliknięciu przycisku **Weryfikuj model UML** w menu **Architektura** . W każdym przypadku zostaną zastosowane tylko te ograniczenia, które zostały zdefiniowane dla tego przypadku, chociaż zwykle zdefiniujesz każde ograniczenie do zastosowania w więcej niż jednym przypadku.
 
- Błędy walidacji są raportowane w oknie błędy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i można kliknąć dwukrotnie błąd, aby wybrać elementy modelu z błędami.
+ Błędy walidacji są raportowane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie błędy i można kliknąć dwukrotnie błąd, aby wybrać elementy modelu, które znajdują się w błędzie.
 
  Aby uzyskać więcej informacji na temat stosowania walidacji, zobacz [Validate The UML model](../modeling/validate-your-uml-model.md).
 
@@ -55,7 +55,7 @@ Można zdefiniować ograniczenia walidacji, które sprawdzają, czy model spełn
     Aby uzyskać więcej informacji, zobacz [ocenianie ograniczenia walidacji](#Implementing).
 
    > [!IMPORTANT]
-   > Upewnij się, że pliki **. cs** zawierają następujące instrukcje `using`:
+   > Upewnij się, że pliki **. cs** zawierają następujące `using` instrukcje:
    >
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`
 
@@ -63,9 +63,9 @@ Można zdefiniować ograniczenia walidacji, które sprawdzają, czy model spełn
 
 4. Przetestuj ograniczenia, naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie ograniczenia walidacji](#Executing).
 
-5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*. vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
+5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin \\ \* \\ \* . vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
 
-   Po dodaniu innych plików **CS** zwykle wymagane są następujące instrukcje `using`:
+   Po dodaniu innych plików **CS** zwykle wymagane są następujące `using` instrukcje:
 
 ```csharp
 using System.Collections.Generic;
@@ -85,13 +85,13 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     1. W menu **plik** wybierz polecenie **Nowy**, **projekt**.
 
-    2. W obszarze **zainstalowane szablony**rozwiń **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie w środkowej kolumnie Wybierz pozycję **Biblioteka klas**.
+    2. W obszarze **zainstalowane szablony**rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie w środkowej kolumnie Wybierz pozycję **Biblioteka klas**.
 
 2. Chyba że rozwiązanie zawiera już jeden, Utwórz projekt VSIX:
 
     1. W **Eksplorator rozwiązań**, w menu skrótów rozwiązania, wybierz **Dodaj**, **Nowy projekt**.
 
-    2. W obszarze **zainstalowane szablony**rozwiń **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie kliknij pozycję **Projekt VSIX**.
+    2. W obszarze **zainstalowane szablony**rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie kliknij pozycję **Projekt VSIX**.
 
 3. Ustaw projekt VSIX jako projekt startowy rozwiązania.
 
@@ -105,17 +105,17 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     3. Na karcie **zasoby** wybierz pozycję **Nowy**, a następnie w oknie dialogowym Ustaw wartość:
 
-         **Typ** = **składnik MEF**
+         **Typ**  =  **Składnik MEF**
 
-         **Źródło** = **projektu w bieżącym rozwiązaniu**
+         **Źródło**  =  **Projekt w bieżącym rozwiązaniu**
 
-         **Projekt** = *projektu biblioteki klas*
+         **Projekt**  =  *Projekt biblioteki klas*
 
 #### <a name="to-define-the-validation-class"></a>Aby zdefiniować klasę walidacji
 
 1. Ta procedura nie jest potrzebna, jeśli utworzono klasę walidacji z własnym VSIX z szablonu projektu walidacji.
 
-2. W projekcie klasy walidacji Dodaj odwołania do następujących zestawów [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]:
+2. W projekcie klasy walidacji Dodaj odwołania do następujących [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] zestawów:
 
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`
 
@@ -178,24 +178,24 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="Executing"></a>Wykonywanie ograniczenia walidacji
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Wykonywanie ograniczenia walidacji
  W celach testowych wykonaj metody walidacji w trybie debugowania.
 
 #### <a name="to-test-the-validation-constraint"></a>Aby przetestować ograniczenie walidacji
 
 1. Naciśnij klawisz **F5**lub w menu **Debuguj** wybierz polecenie **Rozpocznij debugowanie**.
 
-     Zostanie uruchomione doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+     Doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchomienia.
 
-     **Rozwiązywanie problemów**: jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie zostanie uruchomiony:
+     **Rozwiązywanie problemów**: Jeśli nowy nie zostanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchomiony:
 
     - Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.
 
-    - W Eksplorator rozwiązań, w menu skrótów dla uruchamiania lub tylko projektu, wybierz **Właściwości**. W edytorze właściwości projektu wybierz kartę **debugowanie** . Upewnij się, że ciąg w polu **początkowy program zewnętrzny** jest pełną ścieżką do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:
+    - W Eksplorator rozwiązań, w menu skrótów dla uruchamiania lub tylko projektu, wybierz **Właściwości**. W edytorze właściwości projektu wybierz kartę **debugowanie** . Upewnij się, że ciąg w polu **początkowy program zewnętrzny** jest pełną nazwą ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , zazwyczaj:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
-2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania.
+2. W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania.
 
 3. Aby skonfigurować test dla ograniczenia przykładowego podanym w poprzedniej sekcji:
 
@@ -213,14 +213,14 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Projekt walidacji jest wymieniony jako składnik MEF na karcie **zasoby** w pliku **source. Extensions. manifest** w projekcie VSIX.
 
-    - Poprawne atrybuty `Export` i `ValidationMethod` są dołączone do metod walidacji.
+    - Poprawne `Export` i `ValidationMethod` atrybuty są dołączone do metod walidacji.
 
-    - `ValidationCategories.Menu` jest zawarty w argumencie atrybutu `ValidationMethod` i składa się z innych wartości przy użyciu operatora logicznego OR (&#124;).
+    - `ValidationCategories.Menu`jest uwzględniony w argumencie `ValidationMethod` atrybutu i składa się z innych wartości przy użyciu operatora logicznego OR (&#124;).
 
-    - Parametry wszystkich atrybutów `Import` i `Export` są prawidłowe.
+    - Parametry wszystkich `Import` `Export` atrybutów i są prawidłowe.
 
-## <a name="Implementing"></a>Ocenianie ograniczenia
- Metoda walidacji powinna określać, czy ograniczenie walidacji, które ma zostać zastosowane, ma wartość PRAWDA lub FAŁSZ. W przypadku wartości true nie należy nic robić. W przypadku wartości false powinien zgłosić błąd przy użyciu metod dostarczonych przez parametr `ValidationContext`.
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Ocenianie ograniczenia
+ Metoda walidacji powinna określać, czy ograniczenie walidacji, które ma zostać zastosowane, ma wartość PRAWDA lub FAŁSZ. W przypadku wartości true nie należy nic robić. W przypadku wartości false powinien zgłosić błąd przy użyciu metod dostarczonych przez `ValidationContext` parametr.
 
 > [!NOTE]
 > Metody sprawdzania poprawności nie powinny zmieniać modelu. Nie ma gwarancji, gdy lub w jakiej kolejności będą wykonywane ograniczenia. Jeśli konieczne jest przekazanie informacji między kolejnymi wykonaniami metody walidacji w ramach przebiegu walidacji, można użyć pamięci podręcznej kontekstu opisanej w obszarze [koordynacja wielu walidacji](#ContextCache).
@@ -256,35 +256,35 @@ public void ValidateSomething
 
  Atrybuty i parametry każdej metody walidacji są następujące:
 
-|||
+|Podpis|Opis|
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Definiuje metodę jako ograniczenie walidacji przy użyciu Managed Extensibility Framework (MEF).|
-|`[ValidationMethod (ValidationCategories.Menu)]`|Określa, kiedy zostanie wykonana Walidacja. Użyj opcji bitowe lub&#124;(), jeśli chcesz połączyć więcej niż jedną opcję.<br /><br /> `Menu` = wywołane przez menu walidacji.<br /><br /> `Save` = wywołano podczas zapisywania modelu.<br /><br /> `Open` = wywołano podczas otwierania modelu. `Load` = wywołane przy zapisywaniu modelu, ale w przypadku naruszenia ostrzega użytkownika, że może nie być możliwe ponowne otwarcie modelu. Wywoływana również podczas ładowania, zanim model zostanie przeanalizowany.|
-|`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|Zastąp drugi parametr `IElement` przez typ elementu, do którego ma zostać zastosowane ograniczenie. Metoda ograniczenia zostanie wywołana dla wszystkich elementów w określonym typie.<br /><br /> Nazwa metody jest nieważna.|
+|`[ValidationMethod (ValidationCategories.Menu)]`|Określa, kiedy zostanie wykonana Walidacja. Użyj opcji bitowe lub (&#124;), jeśli chcesz połączyć więcej niż jedną opcję.<br /><br /> `Menu`= wywoływane przez menu walidacji.<br /><br /> `Save`= wywoływana przy zapisywaniu modelu.<br /><br /> `Open`= Wywołano podczas otwierania modelu. `Load`= wywoływana przy zapisywaniu modelu, ale w przypadku naruszenia ostrzega użytkownika, że może nie być możliwe ponowne otwarcie modelu. Wywoływana również podczas ładowania, zanim model zostanie przeanalizowany.|
+|`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|Zastąp drugi parametr `IElement` typem elementu, do którego ma zostać zastosowane ograniczenie. Metoda ograniczenia zostanie wywołana dla wszystkich elementów w określonym typie.<br /><br /> Nazwa metody jest nieważna.|
 
  Można zdefiniować dowolną liczbę metod walidacji, z różnymi typami w drugim parametrze. Po wywołaniu walidacji każda metoda sprawdzania poprawności zostanie wywołana dla każdego elementu modelu, który jest zgodny z typem parametru.
 
 ### <a name="reporting-validation-errors"></a>Raportowanie błędów walidacji
- Aby utworzyć raport o błędach, należy użyć metod dostarczonych przez `ValidationContext`:
+ Aby utworzyć raport o błędach, należy użyć metod dostarczonych przez `ValidationContext` :
 
  `context.LogError("error string", errorCode, elementsWithError);`
 
-- `"error string"` pojawia się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lista błędów
+- `"error string"`pojawia się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lista błędów
 
-- `errorCode` jest ciągiem, który powinien być unikatowym identyfikatorem błędu
+- `errorCode`jest ciągiem, który powinien być unikatowym identyfikatorem błędu
 
-- `elementsWithError` identyfikuje elementy w modelu. Gdy użytkownik kliknie dwukrotnie raport o błędach, zostanie wybrany kształt reprezentujący ten element.
+- `elementsWithError`identyfikuje elementy w modelu. Gdy użytkownik kliknie dwukrotnie raport o błędach, zostanie wybrany kształt reprezentujący ten element.
 
-  `LogError(),` `LogWarning()` i `LogMessage()` umieścić komunikaty w różnych sekcjach listy błędów.
+  `LogError(),``LogWarning()`i `LogMessage()` umieszczaj komunikaty w różnych sekcjach listy błędów.
 
 ## <a name="how-validation-methods-are-applied"></a>Jak są stosowane metody walidacji
  Walidacja jest stosowana do każdego elementu w modelu, w tym relacji i części większych elementów, takich jak atrybuty klasy i parametrów operacji.
 
- Każda metoda sprawdzania poprawności jest stosowana do każdego elementu, który jest zgodny z typem w drugim parametrze. Oznacza to, że na przykład, jeśli zdefiniujesz metodę walidacji z drugim parametrem `IUseCase` i drugim z jego nadtype `IElement`, obie te metody zostaną zastosowane do każdego przypadku użycia w modelu.
+ Każda metoda sprawdzania poprawności jest stosowana do każdego elementu, który jest zgodny z typem w drugim parametrze. Oznacza to, że na przykład, jeśli zdefiniujesz metodę walidacji z drugim parametrem `IUseCase` i inną z jego nadtypem `IElement` , obie te metody zostaną zastosowane do każdego przypadku użycia w modelu.
 
  Hierarchia typów jest podsumowywana w [typach elementów modelu UML](../modeling/uml-model-element-types.md).
 
- Możesz również uzyskać dostęp do elementów przez następujące relacje. Na przykład w przypadku zdefiniowania metody sprawdzania poprawności na `IClass`można zapętlić się swoimi właściwościami:
+ Możesz również uzyskać dostęp do elementów przez następujące relacje. Na przykład w przypadku zdefiniowania metody walidacji w programie `IClass` można zapętlić się swoimi właściwościami:
 
 ```
 public void ValidateTypeName(ValidationContext context, IClass c)
@@ -304,7 +304,7 @@ public void ValidateTypeName(ValidationContext context, IClass c)
 ```
 
 ### <a name="creating-a-validation-method-on-the-model"></a>Tworzenie metody walidacji w modelu
- Jeśli chcesz mieć pewność, że metoda walidacji jest wywoływana dokładnie raz podczas każdego przebiegu walidacji, można sprawdzić poprawność `IModel`:
+ Jeśli chcesz mieć pewność, że metoda walidacji jest wywoływana dokładnie raz podczas każdego przebiegu walidacji, można sprawdzić poprawność `IModel` :
 
 ```
 using Microsoft.VisualStudio.Uml.AuxiliaryConstructs; ...
@@ -327,7 +327,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
 public IDiagramContext DiagramContext { get; set; }
 ```
 
- W metodzie walidacji można użyć `DiagramContext`, aby uzyskać dostęp do bieżącego diagramu fokusu, jeśli istnieje:
+ W metodzie walidacji można użyć, `DiagramContext` Aby uzyskać dostęp do bieżącego diagramu fokusu, jeśli istnieje:
 
 ```
 [Export(typeof(System.Action<ValidationContext, object>))]
@@ -342,29 +342,29 @@ public void ValidateModel(ValidationContext context, IModel model)
     { ...
 ```
 
- Aby zarejestrować błąd, należy uzyskać element modelu, który reprezentuje kształt, ponieważ nie można przekazać kształtu do `LogError`:
+ Aby zarejestrować błąd, należy uzyskać element modelu, który reprezentuje kształt, ponieważ nie można przekazać kształtu do `LogError` :
 
 ```
 IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="ContextCache"></a>Koordynowanie wielu walidacji
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Koordynowanie wielu walidacji
  Po wywołaniu walidacji, na przykład przez użytkownika z menu diagramu, każda metoda sprawdzania poprawności jest stosowana do każdego elementu modelu. Oznacza to, że w pojedynczym wywołaniu struktury walidacji ta sama metoda może być stosowana wiele razy do różnych elementów.
 
  Jest to problem dotyczący walidacji, które zajmują się relacjami między elementami. Można na przykład napisać walidację, która zaczyna się od, powiedzmy, przypadek użycia i przechodzą relacje **include** , aby sprawdzić, czy nie ma żadnych pętli. Ale jeśli metoda jest stosowana do każdego przypadku użycia w modelu, który ma wiele linków **dołączania** , prawdopodobnie wielokrotnie przetwarza te same obszary modelu.
 
  Aby uniknąć tej sytuacji, istnieje pamięć podręczna kontekstu, w której informacje są zachowywane podczas przebiegu walidacji. Można jej użyć do przekazywania informacji między różnymi wykonaniami metod walidacji. Na przykład można przechowywać listę elementów, które zostały już omówione w ramach tego przebiegu walidacji. Pamięć podręczna jest tworzona na początku każdego przebiegu walidacji i nie może służyć do przekazywania informacji między różnymi przebiegami walidacji.
 
-|||
+|Składnia|Opis|
 |-|-|
 |`context.SetCacheValue<T> (name, value)`|Przechowywanie wartości|
 |`context.TryGetCacheValue<T> (name, out value)`|Pobierz wartość. Zwraca wartość true, jeśli powodzenie.|
 |`context.GetValue<T>(name)`|Pobierz wartość.|
 |`Context.GetValue<T>()`|Pobierz wartość określonego typu.|
 
-## <a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
- Rozszerzenie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] można zainstalować zarówno na swoim komputerze, jak i na innych komputerach.
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
+ Rozszerzenie można zainstalować [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zarówno na swoim komputerze, jak i na innych komputerach.
 
 #### <a name="to-install-an-extension"></a>Aby zainstalować rozszerzenie
 
@@ -372,17 +372,17 @@ context.LogError(... , usecase);
 
     1. W **Eksplorator rozwiązań**, w menu skrótów projektu VSIX, wybierz polecenie **Otwórz folder w Eksploratorze Windows**.
 
-    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **. vsix**
+    2. Zlokalizuj plik **bin \\ \* \\ **_YourProject_**. vsix**
 
 2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować rozszerzenie. Może to być własny komputer lub inny.
 
-    - Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] określonych w elemencie **source. Extension. vsixmanifest**.
+    - Komputer docelowy musi mieć jedną z wersji programu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] określonych w elemencie **source. Extension. vsixmanifest**.
 
 3. Na komputerze docelowym otwórz plik **. vsix** .
 
      Zostanie otwarty **Instalator rozszerzenia programu Visual Studio** , który zainstaluje rozszerzenie.
 
-4. Uruchom lub Uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+4. Uruchom lub Uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] .
 
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie
 
@@ -392,11 +392,11 @@ context.LogError(... , usecase);
 
 3. Wybierz rozszerzenie, a następnie wybierz **Odinstaluj**.
 
-   Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z następującej lokalizacji, gdzie *% LocalAppData%* jest zazwyczaj *dysk*: \Users\\*username*\AppData\Local:
+   Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z następującej lokalizacji, gdzie *% LocalAppData%* jest zazwyczaj *dysk*: \Users \\ *nazwa_użytkownika*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio\\[wersja] \Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio \\ [wersja] \Extensions**
 
-## <a name="Example"></a>Przyklad
+## <a name="example"></a><a name="Example"></a>Przyklad
  Ten przykład odnajduje pętle w relacji zależności między elementami.
 
  Zostanie zweryfikowane zarówno przy zapisie, jak i w menu walidacji.

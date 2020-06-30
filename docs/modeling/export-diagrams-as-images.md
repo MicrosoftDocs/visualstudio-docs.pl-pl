@@ -1,7 +1,7 @@
 ---
 title: Eksportowanie diagramów jako obrazów
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596622"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547605"
 ---
 # <a name="export-diagrams-as-images"></a>Eksportowanie diagramów jako obrazów
 
@@ -38,9 +38,9 @@ Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, z
 
 2. Na liście **Nazwa** wybierz pozycję **składnik zapisywania dokumentów XPS firmy Microsoft**, a następnie kliknij przycisk **OK**.
 
-3. W oknie dialogowym **Zapisywanie pliku jako** Zapisz plik jako plik **dokumentu XPS (\*. XPS)** .
+3. W oknie dialogowym **Zapisywanie pliku jako** Zapisz plik jako plik **dokumentu XPS ( \* XPS)** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)
 - [Udostępnianie modeli i eksportowanie diagramów](../modeling/share-models-and-exporting-diagrams.md)

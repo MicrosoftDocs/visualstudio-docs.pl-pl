@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 922cd713867e1e1017a0f13490a08c0950b2afbf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9931d29c818d95785146558637c32237e2c5276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652674"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547852"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Należy poprawnie zadeklarować P/Invokes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
@@ -36,7 +36,7 @@ ms.locfileid: "72652674"
  Metoda wywołania platformy jest nieprawidłowo zadeklarowana.
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda Invoke platformy uzyskuje dostęp do kodu niezarządzanego i jest definiowana za pomocą słowa kluczowego `Declare` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Obecnie ta reguła szuka deklaracji metody wywołania platformy, które są ukierunkowane na funkcje Win32, które mają wskaźnik na NAKŁADAjący się parametr struktury i odpowiadający mu parametr zarządzany nie jest wskaźnikiem do struktury <xref:System.Threading.NativeOverlapped?displayProperty=fullName>.
+ Metoda Invoke platformy uzyskuje dostęp do kodu niezarządzanego i jest definiowana za pomocą `Declare` słowa kluczowego w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . Obecnie ta reguła szuka deklaracji metody wywołania platformy, które są ukierunkowane na funkcje Win32, które mają wskaźnik na NAKŁADAjący się parametr struktury, a odpowiadający mu parametr zarządzany nie jest wskaźnikiem do <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struktury.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy prawidłowo zadeklarować metodę wywołania platformy.

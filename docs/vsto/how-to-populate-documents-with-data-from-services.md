@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: zapełnianie dokumentów danymi z usług'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985869"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547150"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Instrukcje: zapełnianie dokumentów danymi z usług
 
@@ -35,7 +35,7 @@ Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi do dokumen
 
 2. Przeciągnij żądaną tabelę lub pole z okna **źródła danych** do dokumentu.
 
-     W dokumencie jest tworzony formant <xref:System.Windows.Forms.BindingSource>, który jest powiązany z klasą obiektów w projekcie, a klasy są generowane dla usługi.
+     W dokumencie jest tworzony formant, <xref:System.Windows.Forms.BindingSource> który jest powiązany z klasą obiektów w projekcie, a klasy są generowane dla usługi.
 
 3. W kodzie Utwórz wystąpienie klasy usługi sieci Web, z którą nawiązano połączenie w kroku 1.
 
@@ -45,11 +45,11 @@ Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi do dokumen
 
      Używane metody zależą od tego, co oferuje usługa sieci Web.
 
-6. Przypisz odpowiedź danych z usługi sieci Web do właściwości <xref:System.Windows.Forms.BindingSource.DataSource%2A> <xref:System.Windows.Forms.BindingSource>.
+6. Przypisz odpowiedź danych z usługi sieci Web do <xref:System.Windows.Forms.BindingSource.DataSource%2A> właściwości <xref:System.Windows.Forms.BindingSource> .
 
-Po uruchomieniu projektu kontrolki wyświetlają pierwszy rekord w źródle danych. Możesz włączyć przewijanie rekordów przez obsługę zdarzeń walutowych przy użyciu obiektów w <xref:System.Windows.Forms.BindingSource>.
+Po uruchomieniu projektu kontrolki wyświetlają pierwszy rekord w źródle danych. Możesz włączyć przewijanie rekordów przez obsługę zdarzeń walutowych przy użyciu obiektów w <xref:System.Windows.Forms.BindingSource> .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)

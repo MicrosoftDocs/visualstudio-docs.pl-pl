@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a240a6eea86075bbf7f721f8620b6d135d594c20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661965"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546669"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości wszędzie, gdzie jest to odpowiednie
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości, o ile to możliwe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
@@ -33,7 +33,7 @@ ms.locfileid: "72661965"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda publiczna lub chroniona ma nazwę rozpoczynającą się od `Get`, nie przyjmuje parametrów i zwraca wartość, która nie jest tablicą.
+ Metoda publiczna lub chroniona ma nazwę rozpoczynającą się od `Get` , nie przyjmuje parametrów i zwraca wartość, która nie jest tablicą.
 
 ## <a name="rule-description"></a>Opis reguły
  W większości przypadków właściwości reprezentują dane i metody wykonują działania. Właściwości są dostępne, podobnie jak pola, które ułatwiają korzystanie z nich. Metoda jest dobrym kandydatem, aby stał się właściwością w przypadku obecności jednego z następujących warunków:
@@ -67,7 +67,7 @@ ms.locfileid: "72661965"
 ## <a name="controlling-property-expansion-in-the-debugger"></a>Kontrolowanie rozszerzania właściwości w debugerze
  Jednym z powodów programiści nie należy używać właściwości, ponieważ nie chce, aby debuger miał Autorozszerzanie. Na przykład właściwość może polegać na przydzieleniu dużego obiektu lub wywołaniu P/Invoke, ale może nie mieć w rzeczywistości żadnych zauważalnych efektów ubocznych.
 
- Można uniemożliwić debugerowi możliwość autorozszerzania właściwości, stosując <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Poniższy przykład pokazuje, że ten atrybut jest stosowany do właściwości wystąpienia.
+ Można uniemożliwić debugerowi możliwość autorozszerzania właściwości przez zastosowanie <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> . Poniższy przykład pokazuje, że ten atrybut jest stosowany do właściwości wystąpienia.
 
 ```vb
 Imports System

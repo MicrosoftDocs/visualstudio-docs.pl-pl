@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 14bae318e052d0c1eb0e23638c0ad78b70e62f7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad2a26e36c83c4a3b3ad051504bc3944663ee2ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670408"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544979"
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Korzystając z Podgląd Pomocy firmy Microsoft, można zainstalować i wyświetl
 ## <a name="navigating-the-help-viewer"></a>Nawigowanie w podglądzie pomocy
  Informacje w zainstalowanej zawartości można znaleźć, korzystając z kart nawigacyjnych, wyświetlić zainstalowaną zawartość na karcie tematu lub kartach i zarządzać zawartością przy użyciu karty **Zarządzanie zawartością** . Możesz również wykonywać dodatkowe zadania za pomocą przycisków na pasku narzędzi i znaleźć dodatkowe informacje w prawym dolnym rogu okna.
 
-|||
+|Scenariusz|Opis|
 |-|-|
 |Nawigacja|Za pomocą karty **zawartość** można wyświetlić zainstalowaną zawartość jako hierarchię i określić kryteria filtrowania wyświetlanych tytułów.<br /><br /> Korzystając z karty **Wyszukiwanie** , można wyszukiwać terminy w dowolnym miejscu w zawartości, w tym na tytuły kodu i tematu.<br /><br /> Za pomocą karty **indeks** można wyszukać indeks, określić kryteria filtrowania wpisów i wymagać, aby wpisy indeksu zawierały lub rozpoczynać się od określonego tekstu.<br /><br /> Za pomocą karty **Ulubione** można zapisywać linki do często używanych tematów, a także wyświetlać listę tematów, które były ostatnio oglądane.|
 |Wyświetlanie tematu|Każdy temat jest wyświetlany na karcie i można otworzyć wiele tematów w tym samym czasie.|

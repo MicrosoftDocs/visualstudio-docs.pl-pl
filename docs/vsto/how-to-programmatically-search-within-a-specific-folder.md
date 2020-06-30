@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe wyszukiwanie w określonym folderze'
+title: 'Instrukcje: programowe wyszukiwanie w określonym folderze'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,22 +12,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f5e0f098edcffce07eb2c3f243b994d1a53cdf9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961904"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547020"
 ---
-# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Instrukcje: Programowe wyszukiwanie w określonym folderze
-  W tym przykładzie kodu użyto `Find` i `FindNext` metody, aby wyszukać tekst w polu tematu wiadomości e-mail, które znajdują się w **skrzynki odbiorczej**. Ta metoda używa filtru ciągów pod kątem litera T jako początkowa litera `Subject` tekstu.
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Instrukcje: programowe wyszukiwanie w określonym folderze
+  Ten przykład kodu używa `Find` metod i, `FindNext` Aby wyszukać tekst w polu podmiotu wiadomości e-mail znajdujących się w **skrzynce odbiorczej**. Ta metoda używa filtru ciągów, aby wyszukać literę T jako początkową literę `Subject` tekstu.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
  [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
 
-## <a name="see-also"></a>Zobacz także
-- [Praca z folderami](../vsto/working-with-folders.md)
-- [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)
-- [Instrukcje: Programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+## <a name="see-also"></a>Zobacz też
+- [Pracuj z folderami](../vsto/working-with-folders.md)
+- [Model obiektów programu Outlook — Omówienie](../vsto/outlook-object-model-overview.md)
+- [Instrukcje: programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

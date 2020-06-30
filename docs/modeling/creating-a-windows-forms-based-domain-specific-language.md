@@ -1,18 +1,18 @@
 ---
 title: Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114882"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547319"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na Windows Forms
 
@@ -39,9 +39,9 @@ Szablon DSL **projektanta w minimalnym** stopniu pozwala utworzyć minimalny DSL
 
    1. Przekształć wszystkie szablony.
 
-   2. Kompiluj i uruchamiaj przykład (**Ctrl**+**F5**).
+   2. Kompiluj i uruchamiaj przykład (**Ctrl** + **F5**).
 
-   3. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz plik `Sample` w projekcie debugowania.
+   3. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz `Sample` plik w projekcie debugowania.
 
         Zauważ, że jest on wyświetlany w kontrolce Windows Forms.
 
@@ -51,44 +51,44 @@ Szablon DSL **projektanta w minimalnym** stopniu pozwala utworzyć minimalny DSL
 
    W głównym wystąpieniu programu Visual Studio Zwróć uwagę na następujące kwestie dotyczące rozwiązania DSL:
 
-- `DslDefinition.dsl` nie zawiera elementów diagramu. Dzieje się tak dlatego, że nie będziesz używać diagramów DSL do wyświetlania modeli wystąpień tego języka DSL. Zamiast tego utworzysz powiązanie formularza systemu Windows z modelem, a elementy w formularzu będą wyświetlały model.
+- `DslDefinition.dsl`nie zawiera elementów diagramu. Dzieje się tak dlatego, że nie będziesz używać diagramów DSL do wyświetlania modeli wystąpień tego języka DSL. Zamiast tego utworzysz powiązanie formularza systemu Windows z modelem, a elementy w formularzu będą wyświetlały model.
 
-- Oprócz projektów `Dsl` i `DslPackage`, rozwiązanie zawiera trzeci projekt o nazwie `UI.`projekt **interfejsu użytkownika** zawiera definicję kontrolki Windows Forms. `DslPackage` zależy od `UI`, a `UI` zależy od `Dsl`.
+- Oprócz `Dsl` `DslPackage` projektów i, rozwiązanie zawiera trzeci projekt o nazwie `UI.` projekt **interfejsu użytkownika** zawiera definicję kontrolki Windows Forms. `DslPackage`zależy od `UI` , i `UI` zależy od `Dsl` .
 
-- W projekcie `DslPackage`, `UI\DocView.cs` zawiera kod, który wyświetla formant Windows Forms, który jest zdefiniowany w projekcie `UI`.
+- W `DslPackage` projekcie, `UI\DocView.cs` zawiera kod, który wyświetla formant Windows Forms, który jest zdefiniowany w `UI` projekcie.
 
-- Projekt `UI` zawiera działającą próbkę kontrolki formularza powiązaną z DSL. Nie będzie jednak działała po zmianie definicji DSL. Projekt `UI` zawiera:
+- `UI`Projekt zawiera roboczą próbkę kontrolki formularza powiązaną z DSL. Nie będzie jednak działała po zmianie definicji DSL. `UI`Projekt zawiera:
 
-  - Klasa Windows Forms o nazwie `ModelViewControl`.
+  - Klasa Windows Forms o nazwie `ModelViewControl` .
 
-  - Plik o nazwie `DataBinding.cs` zawierający dodatkową częściową definicję `ModelViewControl`. Aby wyświetlić jego zawartość, w **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku i wybierz polecenie **Wyświetl kod**.
+  - Plik o nazwie `DataBinding.cs` , który zawiera dodatkową definicję częściową `ModelViewControl` . Aby wyświetlić jego zawartość, w **Eksplorator rozwiązań**Otwórz menu skrótów dla pliku i wybierz polecenie **Wyświetl kod**.
 
 ### <a name="about-the-ui-project"></a>Projekt interfejsu użytkownika — informacje
 
-Po zaktualizowaniu pliku definicji DSL w celu zdefiniowania własnego modemu DSL należy zaktualizować kontrolkę w projekcie `UI`, aby wyświetlić dane DSL. W przeciwieństwie do projektów `Dsl` i `DslPackage`, przykładowy projekt `UI` nie jest generowany na podstawie `DslDefinitionl.dsl`. Możesz dodać pliki. TT, aby wygenerować kod w razie potrzeby, chociaż nie został on uwzględniony w tym instruktażu.
+Po zaktualizowaniu pliku definicji DSL w celu zdefiniowania własnego modemu DSL należy zaktualizować kontrolkę w `UI` projekcie, aby wyświetlić dane DSL. W przeciwieństwie `Dsl` do `DslPackage` projektów i, przykładowy `UI` projekt nie jest generowany z `DslDefinitionl.dsl` . Możesz dodać pliki. TT, aby wygenerować kod w razie potrzeby, chociaż nie został on uwzględniony w tym instruktażu.
 
 ## <a name="update-the-dsl-definition"></a>Aktualizowanie definicji DSL
 
 W tym instruktażu zostanie użyta następująca Definicja DSL.
 
-![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+![Język DSL&#45;WPF&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Otwórz DslDefinition. DSL w projektancie DSL.
 
 2. Usuń **przykładElement**
 
-3. Zmień nazwę klasy domeny **ExampleModel** na `Farm`.
+3. Zmień nazwę klasy domeny **ExampleModel** na `Farm` .
 
-     Nadaj mu dodatkowe właściwości domeny o nazwie `Size` typu **Int32**i `IsOrganic` typu **Boolean**.
+     Nadaj mu dodatkowe właściwości domeny o nazwie `Size` typu **Int32**i `IsOrganic` typie **Boolean**.
 
     > [!NOTE]
-    > W przypadku usunięcia klasy domeny głównej, a następnie utworzenia nowego katalogu głównego należy zresetować właściwość klasy głównej edytora. W **Eksploratorze DSL**wybierz pozycję **Edytor**. Następnie w okno Właściwości ustaw **klasę główną** na `Farm`.
+    > W przypadku usunięcia klasy domeny głównej, a następnie utworzenia nowego katalogu głównego należy zresetować właściwość klasy głównej edytora. W **Eksploratorze DSL**wybierz pozycję **Edytor**. Następnie w okno Właściwości ustaw **klasę root** na `Farm` .
 
 4. Użyj narzędzia **klasy nazwanej domeny** do utworzenia następujących klas domeny:
 
-    - `Field` — nadaj tej domenie dodatkową właściwość o nazwie `Size`.
+    - `Field`-Nadaj tej domenie dodatkową właściwość o nazwie `Size` .
 
-    - `Animal` — w okno Właściwości, ustaw **modyfikator dziedziczenia** na **abstrakcyjny**.
+    - `Animal`-W okno Właściwości ustaw **modyfikator dziedziczenia** na **abstrakcyjny**.
 
 5. Użyj narzędzia **klasy domeny** do utworzenia następujących klas:
 
@@ -96,9 +96,9 @@ W tym instruktażu zostanie użyta następująca Definicja DSL.
 
     - `Goat`
 
-6. Użyj narzędzia **dziedziczenie** , aby `Goat` i `Sheep` dziedziczyć po `Animal`.
+6. Użyj narzędzia **dziedziczenie** , aby utworzyć `Goat` i `Sheep` odziedziczyć z `Animal` .
 
-7. Za pomocą narzędzia do **osadzania** Osadź `Field` i `Animal` w `Farm`.
+7. Za pomocą narzędzia **osadzania** Osadź `Field` i `Animal` w obszarze `Farm` .
 
 8. Możesz chcieć uporządkowanego diagram. Aby zmniejszyć liczbę zduplikowanych elementów, użyj polecenia **Przenieś poddrzewo tutaj** w menu skrótów elementów liścia.
 
@@ -123,7 +123,7 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
 2. Wybierz **obiekt**, **dalej**.
 
-     Rozwiń węzeł **DSL**, **Company. FarmApp**i wybierz opcję **Farma**, która jest klasą główną modelu. Wybierz **Zakończ**.
+     Rozwiń węzeł **DSL**, **Company. FarmApp**i wybierz opcję **Farma**, która jest klasą główną modelu. Wybierz pozycję **Zakończ**.
 
      W Eksplorator rozwiązań projekt **interfejsu użytkownika** zawiera teraz **Properties\DataSources\Farm.DataSource**
 
@@ -147,22 +147,22 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
     Zostanie wyświetlony zestaw kontrolek, po jednym dla każdej właściwości. Właściwości relacji nie generują formantów.
 
-5. Usuń **farmBindingNavigator**. Jest to również generowane automatycznie w projektancie `FarmControl`, ale nie jest to przydatne w przypadku tej aplikacji.
+5. Usuń **farmBindingNavigator**. Jest to również generowane automatycznie w `FarmControl` projektancie, ale nie jest to przydatne w przypadku tej aplikacji.
 
-6. Za pomocą przybornika Utwórz dwa wystąpienia **formantu DataGridView**i nadaj im nazwę `AnimalGridView` i `FieldGridView`.
+6. Za pomocą przybornika Utwórz dwa wystąpienia **formantu DataGridView**i nadaj im nazwę `AnimalGridView` i `FieldGridView` .
 
    > [!NOTE]
    > Alternatywnym krokiem jest przeciągnięcie elementów zwierzęta i pola z okna źródła danych na kontrolkę. Ta akcja powoduje automatyczne utworzenie sieci i powiązań danych między widokiem siatki a źródłem danych. Jednak to powiązanie nie działa prawidłowo dla językami DSL. W związku z tym lepiej jest tworzyć siatki danych i powiązania ręcznie.
 
 7. Jeśli Przybornik nie zawiera narzędzia **ModelingBindingSource** , Dodaj go. W menu skrótów na karcie **dane** wybierz pozycję **Wybierz elementy**. W oknie dialogowym **Wybierz elementy przybornika** wybierz pozycję **ModelingBindingSource** z karty **.NET Framework** .
 
-8. Za pomocą przybornika Utwórz dwa wystąpienia **ModelingBindingSource**i nadaj im nazwę `AnimalBinding` i `FieldBinding`.
+8. Za pomocą przybornika Utwórz dwa wystąpienia **ModelingBindingSource**i nadaj im nazwę `AnimalBinding` i `FieldBinding` .
 
 9. Ustaw właściwość **DataSource** każdego **ModelingBindingSource** na **farmBindingSource**.
 
      Ustaw właściwość **DataMember** na **zwierzęta** lub **pola**.
 
-10. Ustaw właściwości **DataSource** `AnimalGridView` na `AnimalBinding`i `FieldGridView` na `FieldBinding`.
+10. Ustaw właściwości **źródła danych** `AnimalGridView` na `AnimalBinding` , i z `FieldGridView` na `FieldBinding` .
 
 11. Dostosuj układ kontrolki farmy do swojego smaku.
 
@@ -174,7 +174,7 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
 - Gwarantuje to, że gdy użytkownik wybierze wiersz, okno Właściwości wyświetla właściwości odpowiedniego elementu modelu, a nie wiersz siatki danych.
 
-  ![DslWpf4](../modeling/media/dslwpf4.png) schemat linków między źródłami danych i widokami.
+  ![DslWpf4 ](../modeling/media/dslwpf4.png) schemat linków między źródłami danych i widokami.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Ukończ powiązania z DSL
 
@@ -220,7 +220,7 @@ Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później
 
 3. W **Eksploratorze FarmApp**Otwórz menu skrótów w węźle głównym **farmy** i wybierz polecenie **Dodaj nowe kozy**.
 
-     `Goat1` pojawia się w widoku **zwierzęta** .
+     `Goat1`pojawia się w widoku **zwierzęta** .
 
     > [!WARNING]
     > Musisz użyć menu skrótów w węźle **farmy** , a nie w węźle **zwierzęta** .
@@ -237,7 +237,7 @@ Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później
 
 1. W widoku Projekt FarmControl.cs wybierz proste pole, takie jak Name, size lub isorganiczny.
 
-2. W okno Właściwości rozwiń węzeł **DataBindings** i Otwórz **(Zaawansowane)** .
+2. W okno Właściwości rozwiń węzeł **DataBindings** i Otwórz **(Zaawansowane)**.
 
      W oknie dialogowym **Formatowanie i zaawansowane powiązanie** w obszarze **Tryb aktualizacji źródła danych**wybierz pozycję **OnPropertyChanged**.
 
@@ -249,7 +249,7 @@ Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później
 
 1. W widoku Projekt FarmControl.cs, Użyj przybornika, aby utworzyć przycisk w formularzu.
 
-    Edytuj nazwę i tekst przycisku, na przykład, aby `New Sheep`.
+    Edytuj nazwę i tekst przycisku, na przykład `New Sheep` .
 
 2. Otwórz kod za przyciskiem (na przykład przez dwukrotne kliknięcie).
 
@@ -300,7 +300,7 @@ Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później
 
     Powinno być możliwe edytowanie nazwy elementu w widoku siatki danych. Możesz również z niej usunąć.
 
-   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;WPF&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informacje o kodzie umożliwiającym dodanie elementu
 
@@ -319,9 +319,9 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
 Jednak ten kod nie ustawia domyślnej nazwy dla nowego elementu. Nie jest wykonywane żadne niestandardowe scalanie, które mogło zostać zdefiniowane w **dyrektywach scalania elementów** DSL, i nie uruchamia żadnego niestandardowego kodu scalania, który mógł zostać zdefiniowany.
 
-Dlatego zalecamy używanie <xref:Microsoft.VisualStudio.Modeling.ElementOperations> do tworzenia nowych elementów. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
+Dlatego zalecamy użycie <xref:Microsoft.VisualStudio.Modeling.ElementOperations> programu w celu utworzenia nowych elementów. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [Napisz kod, aby dostosować język specyficzny dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

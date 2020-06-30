@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d112e2dfb704a785db6bbc5becd2b369d90605b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2e679fb3cc62ba80cfb7b56dfd7fa6590375565e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661843"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546617"
 ---
-# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Implementacje ICollection mają silnie typizowane elementy członkowskie
+# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Implementacje interfejsu ICollection mają silnie typizowane składowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
 |CheckId|CA1035|
@@ -33,23 +33,23 @@ ms.locfileid: "72661843"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publiczny lub chroniony implementuje <xref:System.Collections.ICollection?displayProperty=fullName> ale nie zapewnia metody silnie wpisanej dla <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. Silnie wpisana wersja <xref:System.Collections.ICollection.CopyTo%2A> musi akceptować dwa parametry i nie może mieć <xref:System.Array?displayProperty=fullName> lub tablicy <xref:System.Object?displayProperty=fullName> jako pierwszego parametru.
+ Typ publiczny lub chroniony implementuje <xref:System.Collections.ICollection?displayProperty=fullName> , ale nie zapewnia metody silnie wpisanej do <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> . Silnie wpisana wersja <xref:System.Collections.ICollection.CopyTo%2A> musi akceptować dwa parametry i nie może zawierać <xref:System.Array?displayProperty=fullName> ani tablicy <xref:System.Object?displayProperty=fullName> jako pierwszego parametru.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła wymaga implementacji <xref:System.Collections.ICollection>, aby zapewnić składowe silnie wpisane, aby użytkownicy nie musieli rzutować argumentów na typ <xref:System.Object>, gdy korzystają z funkcji dostarczonych przez interfejs. Ta reguła zakłada, że typ, który implementuje <xref:System.Collections.ICollection>, umożliwia zarządzanie kolekcją wystąpień typu, który jest silniejszy niż <xref:System.Object>.
+ Ta reguła wymaga <xref:System.Collections.ICollection> implementacji, aby zapewnić składowe silnie wpisane, tak aby użytkownicy nie musieli rzutować argumentów na <xref:System.Object> Typ, gdy korzystają z funkcji dostarczonych przez interfejs. Ta reguła zakłada, że typ, który implementuje, służy <xref:System.Collections.ICollection> do zarządzania kolekcją wystąpień typu, który jest silniejszy niż <xref:System.Object> .
 
- <xref:System.Collections.ICollection> implementuje interfejs <xref:System.Collections.IEnumerable?displayProperty=fullName>. Jeśli obiekty w kolekcji są rozbudowywane <xref:System.ValueType?displayProperty=fullName>, musisz dostarczyć składową o jednoznacznie określonym typie dla <xref:System.Collections.IEnumerable.GetEnumerator%2A>, aby uniknąć spadku wydajności powodowanego przez opakowanie. Nie jest to wymagane, gdy obiekty kolekcji są typu referencyjnego.
+ <xref:System.Collections.ICollection>implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejs. Jeśli obiekty w kolekcji są rozbudowane <xref:System.ValueType?displayProperty=fullName> , musisz dostarczyć element członkowski o jednoznacznie określonym typie, <xref:System.Collections.IEnumerable.GetEnumerator%2A> Aby uniknąć spadku wydajności powodowanego przez opakowanie. Nie jest to wymagane, gdy obiekty kolekcji są typu referencyjnego.
 
- Aby zaimplementować silnie wpisaną wersję elementu członkowskiego interfejsu, należy zaimplementować elementy członkowskie interfejsu jawnie przy użyciu nazw w formularzu `InterfaceName.InterfaceMemberName`, takich jak <xref:System.Collections.ICollection.CopyTo%2A>. Jawne elementy członkowskie interfejsu używają typów danych zadeklarowanych przez interfejs. Zaimplementuj silnie wpisaną składowe przy użyciu nazwy elementu członkowskiego interfejsu, takiej jak <xref:System.Collections.ICollection.CopyTo%2A>. Zadeklaruj elementy członkowskie z jednoznacznie określonymi typami jako publiczne i zadeklaruj parametry i zwróć wartości jako typ silny, który jest zarządzany przez kolekcję. Silne typy zastępują słabsze typy, takie jak <xref:System.Object> i <xref:System.Array>, które są zadeklarowane przez interfejs.
+ Aby zaimplementować silnie wpisaną wersję elementu członkowskiego interfejsu, należy zaimplementować elementy członkowskie interfejsu jawnie za pomocą nazw w formularzu `InterfaceName.InterfaceMemberName` , takich jak <xref:System.Collections.ICollection.CopyTo%2A> . Jawne elementy członkowskie interfejsu używają typów danych zadeklarowanych przez interfejs. Zaimplementuj silnie wpisane elementy członkowskie przy użyciu nazwy składowej interfejsu, takiej jak <xref:System.Collections.ICollection.CopyTo%2A> . Zadeklaruj elementy członkowskie z jednoznacznie określonymi typami jako publiczne i zadeklaruj parametry i zwróć wartości jako typ silny, który jest zarządzany przez kolekcję. Silne typy zastępują słabsze typy, takie jak <xref:System.Object> i <xref:System.Array> , które są zadeklarowane przez interfejs.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, zaimplementuj jawnie element członkowski interfejsu (Zadeklaruj go jako <xref:System.Collections.ICollection.CopyTo%2A>). Dodaj publiczną silnie wpisaną składową, zadeklarowaną jako `CopyTo`, i podejmij silnie wpisaną tablicę jako pierwszy parametr.
+ Aby naprawić naruszenie tej reguły, zaimplementuj jawnie element członkowski interfejsu (Zadeklaruj go jako <xref:System.Collections.ICollection.CopyTo%2A> ). Dodaj publiczną silnie wpisaną składową, zadeklarowaną jako `CopyTo` , i podejmij silnie wpisaną tablicę jako pierwszy parametr.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Pomiń ostrzeżenie z tej reguły w przypadku zaimplementowania nowej kolekcji opartej na obiektach, takiej jak drzewo binarne, gdzie typy, które poszerzają nową kolekcję, określają typ silny. Te typy powinny być zgodne z tą regułą i uwidaczniają silnie wpisaną składowe.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje poprawny sposób implementacji <xref:System.Collections.ICollection>.
+ Poniższy przykład ilustruje poprawny sposób implementacji <xref:System.Collections.ICollection> .
 
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ICollectionStrongTypes/cs/FxCop.Design.ICollectionStrongTypes.cs#1)]
 
@@ -59,6 +59,6 @@ ms.locfileid: "72661843"
  [CA1039: Listy są silnie typizowane](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Array?displayProperty=fullName><xref:System.Collections.IEnumerable?displayProperty=fullName>
+ <xref:System.Array?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>

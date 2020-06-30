@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Przewijanie rekordów bazy danych w arkuszu'
+title: 'Instrukcje: przewijanie rekordów bazy danych w arkuszu'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f0b3c6a8a9292ceda03c9d0020b78d9518ca49d9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252033"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545798"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Instrukcje: Przewijanie rekordów bazy danych w arkuszu
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Instrukcje: przewijanie rekordów bazy danych w arkuszu
   Poniższa procedura pokazuje, jak używać projektanta do wyświetlania jednego pola z tabeli bazy danych w Microsoft Office arkuszu programu Excel z kontrolkami, które umożliwiają użytkownikowi końcowemu przewinięcie wszystkich rekordów.
 
- Projektanta można używać tylko w projektach na poziomie dokumentu. Można jednak również dodać kontrolki i powiązać je z danymi programowo w czasie wykonywania. Aby uzyskać więcej informacji, [zobacz Przewodnik: Proste powiązanie danych w projekcie](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)dodatku VSTO.
+ Projektanta można używać tylko w projektach na poziomie dokumentu. Można jednak również dodać kontrolki i powiązać je z danymi programowo w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Przewodnik: proste powiązanie danych w projekcie dodatku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -39,9 +39,9 @@ ms.locfileid: "71252033"
 
 4. Otwórz listę kontrolek i wybierz pozycję **NamedRange**.
 
-5. <xref:Microsoft.Office.Tools.Excel.NamedRange> Przeciągnij kontrolkę na komórkę, w której mają być wyświetlane dane.
+5. Przeciągnij <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę na komórkę, w której mają być wyświetlane dane.
 
-6. Na karcie **Windows Forms** **przybornika**Dodaj <xref:System.Windows.Forms.BindingNavigator> kontrolkę do arkusza i skonfiguruj kontrolki, których chcesz użyć. Aby uzyskać więcej informacji, zobacz [BindingNavigator Control &#40;—&#41;Omówienie Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+6. Na karcie **Windows Forms** **przybornika**Dodaj <xref:System.Windows.Forms.BindingNavigator> kontrolkę do arkusza i skonfiguruj kontrolki, których chcesz użyć. Aby uzyskać więcej informacji, zobacz [BindingNavigator Control overview &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)

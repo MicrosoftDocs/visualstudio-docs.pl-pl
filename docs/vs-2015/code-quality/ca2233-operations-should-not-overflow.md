@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 70a0bab8cfb3bf14a763f759e0e44a754ad878d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662781"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545239"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operacje nie powinny prowadzić do przepełnienia
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operacje nie powinny powodować przepełnienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
@@ -36,7 +36,7 @@ ms.locfileid: "72662781"
  Metoda wykonuje operację arytmetyczną i nie sprawdza wcześniej operandów, aby zapobiec przepełnieniu.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie należy wykonywać operacji arytmetycznych bez uprzedniego sprawdzenia operandów, aby upewnić się, że wynik operacji nie należy do zakresu możliwych wartości dla typów danych. W zależności od kontekstu wykonywania i typów danych, przepełnienie arytmetyczne może skutkować <xref:System.OverflowException?displayProperty=fullName> lub najbardziej znaczących bitów wyniku odrzucone.
+ Nie należy wykonywać operacji arytmetycznych bez uprzedniego sprawdzenia operandów, aby upewnić się, że wynik operacji nie należy do zakresu możliwych wartości dla typów danych. W zależności od kontekstu wykonywania i typów danych, przepełnienie arytmetyczne może spowodować <xref:System.OverflowException?displayProperty=fullName> odrzucanie lub najbardziej znaczących bitów wyniku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, przed wykonaniem operacji Sprawdź poprawność operandów.
@@ -47,16 +47,16 @@ ms.locfileid: "72662781"
 ## <a name="example-of-a-violation"></a>Przykład naruszenia
 
 ### <a name="description"></a>Opis
- Metoda w poniższym przykładzie operuje liczbą całkowitą, która narusza tę regułę. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] wymaga wyłączenia opcji przepełnienia **liczby całkowitej** , aby można było ją uruchomić.
+ Metoda w poniższym przykładzie operuje liczbą całkowitą, która narusza tę regułę. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]wymaga wyłączenia opcji przepełnienia **liczby całkowitej** , aby można było ją uruchomić.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
  [!code-vb[FxCop.Usage.OperationOverflow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/vb/FxCop.Usage.OperationOverflow.vb#1)]
 
 ### <a name="comments"></a>Komentarze
- Jeśli metoda w tym przykładzie jest przenoszona <xref:System.Int32.MinValue?displayProperty=fullName>, operacja spowodowałaby niedopełnienie. Powoduje to najbardziej znaczący bit wyniku, który ma zostać odrzucony. Poniższy kod pokazuje, jak to się dzieje.
+ Jeśli metoda w tym przykładzie jest przenoszona <xref:System.Int32.MinValue?displayProperty=fullName> , operacja spowodowałaby niedopełnienie. Powoduje to najbardziej znaczący bit wyniku, który ma zostać odrzucony. Poniższy kod pokazuje, jak to się dzieje.
 
- [C#]
+ Znajd
 
 ```
 public static void Main()
@@ -95,17 +95,17 @@ End Sub
 ## <a name="fix-with-a-checked-block"></a>Popraw z zaznaczonym blokiem
 
 ### <a name="description"></a>Opis
- Poniższy przykład naprawia poprzednie naruszenie przez zapakowanie operacji w zaznaczonym bloku. Jeśli operacja powoduje przepełnienie, zostanie zgłoszony <xref:System.OverflowException?displayProperty=fullName>.
+ Poniższy przykład naprawia poprzednie naruszenie przez zapakowanie operacji w zaznaczonym bloku. Jeśli operacja powoduje przepełnienie, <xref:System.OverflowException?displayProperty=fullName> zostanie zgłoszony.
 
- Należy zauważyć, że zaznaczone bloki nie są obsługiwane w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+ Należy zauważyć, że zaznaczone bloki nie są obsługiwane w programie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Włącz sprawdzone przepełnienie arytmetyczne/niedomiar
- W przypadku włączenia sprawdzania przepełnienia arytmetycznego/ C#przeciążenia w programie jest on równoznaczny z zamiarem zawijania każdej operacji całkowitej w zaznaczonym bloku.
+ W przypadku włączenia sprawdzonego przepełnienia arytmetycznego/przeciążenia w języku C# jest on równoznaczny z zamiarem zawijania każdej operacji całkowitej w zaznaczonym bloku.
 
- **Aby włączyć sprawdzanie przepełnienia arytmetycznego/przeciążenia wC#**
+ **Aby włączyć sprawdzanie przepełnienia/przeciążenia arytmetyczne w C #**
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**.
 
@@ -114,4 +114,4 @@ End Sub
 3. Wybierz pozycję **Sprawdź, aby uzyskać arytmetyczne przepełnienie/niedomiar** i kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz też
- [zaznaczone i](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e) niezaznaczone [ C# operatory](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) <xref:System.OverflowException?displayProperty=fullName>
+ <xref:System.OverflowException?displayProperty=fullName>[Operatory języka C#](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [zaznaczone i niezaznaczone](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ecf829251cbeab600cb95f8f0c0b0173cd7338d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659541"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546279"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literały powinny być napisane poprawnie
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Pisownia literałów powinna być poprawna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
@@ -38,7 +38,7 @@ ms.locfileid: "72659541"
 ## <a name="rule-description"></a>Opis reguły
  Ta reguła sprawdza ciąg literału, który jest przesyłany jako wartość do parametru lub właściwości, gdy spełniony jest co najmniej jeden z następujących przypadków:
 
-- Atrybut <xref:System.ComponentModel.LocalizableAttribute> parametru lub właściwości jest ustawiony na wartość true.
+- <xref:System.ComponentModel.LocalizableAttribute>Atrybut parametru lub właściwości jest ustawiony na wartość true.
 
 - Nazwa parametru lub właściwości zawiera tekst "text", "Message" lub "Caption".
 
@@ -55,6 +55,6 @@ ms.locfileid: "72659541"
  Nie pomijaj ostrzeżeń dla tej reguły. Prawidłowo napisane wyrazy zmniejszają krzywą szkoleniową wymaganą dla nowych bibliotek oprogramowania.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704: Pisownia identyfikatorów powinna być poprawna](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703: Pisownia ciągów zasobów powinna być poprawna](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

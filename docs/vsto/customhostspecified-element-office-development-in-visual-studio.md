@@ -1,9 +1,9 @@
 ---
-title: '&lt;customhostspecified —&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;customHostSpecified — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956182"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544914"
 ---
-# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customhostspecified —&gt; — element (Office development w programie Visual Studio)
-  `customHostSpecified` Element wskazuje, że to rozwiązanie nie jest autonomiczną aplikację. Rozwiązania dla pakietu Office zawierają składniki, które są hostowane wewnątrz aplikacji Microsoft Office.
+# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified — &gt; element (Programowanie Office w Visual Studio)
+  `customHostSpecified`Element wskazuje, że to rozwiązanie nie jest aplikacją autonomiczną. Rozwiązania pakietu Office zawierają składniki hostowane w aplikacjach Microsoft Office.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,15 +32,15 @@ ms.locfileid: "62956182"
 <customHostSpecified />
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `customHostSpecified` Element jest wymagany dla rozwiązań pakietu Office. Tego elementu jest `co.v1` przestrzeni nazw i określa, że to wdrożenie zawiera składnik, który zostanie wdrożony wewnątrz niestandardowego hosta, a nie jest autonomiczną aplikacją.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `customHostSpecified`Element jest wymagany dla rozwiązań pakietu Office. Ten element znajduje się w `co.v1` przestrzeni nazw i określa, że to wdrożenie zawiera składnik, który zostanie wdrożony w ramach hosta niestandardowego i nie jest aplikacją autonomiczną.
 
- Ten element jest pierwszy element podrzędny `<entrypoint>` elementu w manifeście aplikacji. Może być brak elementów podrzędnych w tym `<entrypoint>` element lub [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zgłosi błąd sprawdzania poprawności podczas instalacji.
+ Ten element jest elementem podrzędnym pierwszego `<entrypoint>` elementu w manifeście aplikacji. W tym elemencie nie mogą istnieć żadne inne elementy podrzędne `<entrypoint>` lub podczas [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] instalacji wystąpi błąd walidacji.
 
- Ten element ma żadnych atrybutów i Brak elementów podrzędnych.
+ Ten element nie ma atrybutów ani elementów podrzędnych.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie kodu pokazano `customHostSpecified` elementu w manifeście aplikacji dla rozwiązań pakietu Office. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `customHostSpecified` element w manifeście aplikacji dla rozwiązania pakietu Office. Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml
 <entryPoint>
@@ -48,7 +48,7 @@ ms.locfileid: "62956182"
 </entryPoint>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

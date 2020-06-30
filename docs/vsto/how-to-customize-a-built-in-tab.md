@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: dostosowywanie wbudowanej karty'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3550c3bd48a02d5daf4ef7156960e8a8fab3b93a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985944"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547189"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Instrukcje: dostosowywanie wbudowanej karty
   Do wbudowanej karty można dodać grupy i kontrolki. Karta wbudowana to karta, która znajduje się już na Wstążce aplikacji Microsoft Office. Na przykład karta **dane** jest wbudowaną kartą w programie Excel. Po utworzeniu grupy niestandardowej pojawia się ona jako Ostatnia na karcie, ale można ją przenieść w dowolnym miejscu na karcie.
@@ -66,7 +66,7 @@ ms.locfileid: "72985944"
 
      Aby uzyskać listę identyfikatorów sterowania, zobacz [pliki pomocy pakietu office 2010: identyfikatory formantów interfejsu użytkownika pakietu Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 81eaf2735869668b86ca8879478e3d76d77a2811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ddd69c62eb4d6b818410a588967c1e23f164f9a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662311"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546734"
 ---
-# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Unikaj przestrzeni nazw z kilkoma typami
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Unikaj przestrzeni nazw z małą liczbą typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidNamespacesWithFewTypes|
 |CheckId|CA1020|
@@ -36,10 +36,10 @@ ms.locfileid: "72662311"
  Przestrzeń nazw inna niż globalna przestrzeń nazw zawiera mniej niż pięć typów.
 
 ## <a name="rule-description"></a>Opis reguły
- Upewnij się, że każda przestrzeń nazw ma logiczną organizację i że istnieje prawidłowa przyczyna, aby umieścić typy w rozrzedzonie wypełnionym obszarze nazw. Przestrzenie nazw powinny zawierać typy, które są używane razem w większości scenariuszy. Gdy ich aplikacje wykluczają się wzajemnie, typy powinny znajdować się w oddzielnych obszarach nazw. Na przykład przestrzeń nazw <xref:System.Web.UI> zawiera typy, które są używane w aplikacjach sieci Web, a przestrzeń nazw <xref:System.Windows.Forms> zawiera typy, które są używane w aplikacjach opartych na [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]. Mimo że oba obszary nazw mają typy kontrolujące aspekty interfejsu użytkownika, te typy nie są przeznaczone do użycia w tej samej aplikacji. W związku z tym znajdują się one w oddzielnych przestrzeniach nazw. Ostrożna organizacja przestrzeni nazw może być również przydatna, ponieważ zwiększa wykrywalność funkcji. Badając hierarchię przestrzeni nazw, odbiorcy biblioteki powinni mieć możliwość lokalizowania typów, które implementują funkcję.
+ Upewnij się, że każda przestrzeń nazw ma logiczną organizację i że istnieje prawidłowa przyczyna, aby umieścić typy w rozrzedzonie wypełnionym obszarze nazw. Przestrzenie nazw powinny zawierać typy, które są używane razem w większości scenariuszy. Gdy ich aplikacje wykluczają się wzajemnie, typy powinny znajdować się w oddzielnych obszarach nazw. Na przykład <xref:System.Web.UI> przestrzeń nazw zawiera typy, które są używane w aplikacjach sieci Web, a <xref:System.Windows.Forms> przestrzeń nazw zawiera typy, które są używane w [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] aplikacjach opartych na bazie. Mimo że oba obszary nazw mają typy kontrolujące aspekty interfejsu użytkownika, te typy nie są przeznaczone do użycia w tej samej aplikacji. W związku z tym znajdują się one w oddzielnych przestrzeniach nazw. Ostrożna organizacja przestrzeni nazw może być również przydatna, ponieważ zwiększa wykrywalność funkcji. Badając hierarchię przestrzeni nazw, odbiorcy biblioteki powinni mieć możliwość lokalizowania typów, które implementują funkcję.
 
 > [!NOTE]
-> Typy i uprawnienia czasu projektowania nie powinny być scalane z innymi przestrzeniami nazw w celu zachowania zgodności z tymi wskazówkami. Te typy należą do własnych przestrzeni nazw poniżej głównej przestrzeni nazw, a przestrzenie nazw powinny kończyć się odpowiednio `.Design` i `.Permissions`.
+> Typy i uprawnienia czasu projektowania nie powinny być scalane z innymi przestrzeniami nazw w celu zachowania zgodności z tymi wskazówkami. Te typy należą do ich własnych przestrzeni nazw poniżej głównej przestrzeni nazw, a przestrzenie nazw powinny kończyć się `.Design` `.Permissions` odpowiednio i.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, spróbuj połączyć przestrzenie nazw zawierające kilka typów w pojedynczej przestrzeni nazw.

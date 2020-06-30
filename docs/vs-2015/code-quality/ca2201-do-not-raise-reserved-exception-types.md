@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a550226a5ea1edb3b30e317be6b5682f4c204d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667374"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546344"
 ---
-# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Nie wywołuj zastrzeżonych typów wyjątków
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Nie zgłaszaj wyjątków o zastrzeżonych typach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
@@ -56,9 +56,9 @@ ms.locfileid: "72667374"
 
   **Nie Generuj ogólnych wyjątków**
 
-  W przypadku zgłaszania ogólnego typu wyjątku, takiego jak <xref:System.Exception> lub <xref:System.SystemException> w bibliotece lub strukturze, wymusza to klientom przechwycenie wszystkich wyjątków, w tym nieznanych wyjątków, które nie wiedzą, jak obsłużyć.
+  W przypadku zgłaszania ogólnego typu wyjątku, takiego jak <xref:System.Exception> lub <xref:System.SystemException> w bibliotece lub strukturze, wymusza ona konsumentom przechwycenie wszystkich wyjątków, w tym nieznanych wyjątków, które nie wiedzą, jak obsłużyć.
 
-  Zamiast tego należy zgłosić bardziej pochodny typ, który już istnieje w strukturze, lub utworzyć własny typ, który pochodzi od <xref:System.Exception>.
+  Zamiast tego należy zgłosić bardziej pochodny typ, który już istnieje w strukturze, lub utworzyć własny typ, który pochodzi od <xref:System.Exception> .
 
   **Zgłoś określone wyjątki**
 
@@ -66,21 +66,21 @@ ms.locfileid: "72667374"
 
 |Opis parametru|Wyjątek|
 |---------------------------|---------------|
-|informacje `null`|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null`odwoła|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |Poza dozwolonym zakresem wartości (takich jak indeks kolekcji lub listy)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|Nieprawidłowa wartość `enum`|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|Zawiera format, który nie spełnia wymagań parametrów metody (takich jak ciąg formatu dla `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
+|Nieprawidłowa `enum` wartość|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|Zawiera format, który nie spełnia specyfikacji parametrów metody (na przykład ciąg formatu dla `ToString(String)` )|<xref:System.FormatException?displayProperty=fullName>|
 |W przeciwnym razie nieprawidłowe|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Gdy operacja jest nieprawidłowa dla bieżącego stanu obiektu throw <xref:System.InvalidOperationException?displayProperty=fullName>
+ Gdy operacja jest nieprawidłowa dla bieżącego stanu rzutowania obiektu<xref:System.InvalidOperationException?displayProperty=fullName>
 
- Gdy operacja jest wykonywana na obiekcie, który został usunięty, zgłoś <xref:System.ObjectDisposedException?displayProperty=fullName>
+ Gdy operacja jest wykonywana na obiekcie, który został usunięty, zgłoś<xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Gdy operacja nie jest obsługiwana (na przykład w przesłoniętym **strumieniu** ), zgłoś <xref:System.NotSupportedException?displayProperty=fullName>
+ Gdy operacja nie jest obsługiwana (na przykład w przesłoniętym **strumieniu** ), zgłoś w strumieniu otwartym do odczytu<xref:System.NotSupportedException?displayProperty=fullName>
 
- Gdy konwersja spowoduje przepełnienie (na przykład w jawnym przeciążeniu operatora rzutowania), zgłoś <xref:System.OverflowException?displayProperty=fullName>
+ Gdy konwersja spowoduje przepełnienie (na przykład w jawnym przeciążeniu operatora rzutowania)<xref:System.OverflowException?displayProperty=fullName>
 
- We wszystkich innych sytuacjach należy rozważyć utworzenie własnego typu, który pochodzi od <xref:System.Exception> i throw.
+ We wszystkich innych sytuacjach należy rozważyć utworzenie własnego typu, który pochodzi z <xref:System.Exception> i throw.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Zmień typ zgłoszonego wyjątku na określony typ, który nie jest jednym z typów zastrzeżonych.
@@ -89,4 +89,4 @@ ms.locfileid: "72667374"
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1031: Nie przechwytuj ogólnych typów wyjątków](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031: Nie przechwytuj typów wyjątków ogólnych](../code-quality/ca1031-do-not-catch-general-exception-types.md)

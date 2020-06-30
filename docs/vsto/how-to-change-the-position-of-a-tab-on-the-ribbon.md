@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: zmiana położenia karty na Wstążce'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf943f9df4499b30e294e4d7e8bf48b25aa52eab
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985986"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544862"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Instrukcje: zmiana położenia karty na Wstążce
   Można zmienić kolejność kart niestandardowych na Wstążce przy użyciu **edytora kolekcji kart**. Możesz umieścić karty niestandardowe przed lub po karcie wbudowanej na Wstążce. Karta wbudowana to karta, która znajduje się już na Wstążce aplikacji Microsoft Office. Na przykład karta **dane** jest wbudowaną kartą w programie Excel.
@@ -56,7 +56,7 @@ ms.locfileid: "72985986"
 
      Aby uzyskać listę identyfikatorów sterowania, zobacz [pliki pomocy pakietu office 2010: identyfikatory formantów interfejsu użytkownika pakietu Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)

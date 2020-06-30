@@ -1,7 +1,7 @@
 ---
-title: '&lt;postAction&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;postAction — &gt; element (Programowanie Office w Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976535"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546942"
 ---
-# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; — element (Office development w programie Visual Studio)
-  `postAction` Elementu `vstav3` przestrzeń nazw zawiera `entrypoint` elementy i wszystkie `postActionData` elementy, które są skojarzone z akcji po wdrożeniu, uruchamianych po zainstalowaniu rozwiązania dla pakietu Office.
+# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction — &gt; element (Programowanie Office w Visual Studio)
+  `postAction`Element `vstav3` przestrzeni nazw zawiera `entrypoint` elementy i wszystkie `postActionData` elementy, które są skojarzone z akcjami po wdrożeniu, które są uruchamiane po zainstalowaniu rozwiązań pakietu Office.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,23 +35,23 @@ ms.locfileid: "62976535"
 </postAction>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `postAction` Elementu jest opcjonalna i jest on `vstav3` przestrzeni nazw. Istnieje `postAction` elementu zdefiniowanego w manifeście aplikacji dla każdej akcji po wdrożeniu.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `postAction`Element jest opcjonalny i znajduje się w `vstav3` przestrzeni nazw. Istnieje jeden `postAction` element zdefiniowany w manifeście aplikacji dla każdej akcji wykonywanej po wdrożeniu.
 
- `postAction` Element nie ma żadnych atrybutów.
+ `postAction`Element nie ma żadnych atrybutów.
 
- `postAction` zawiera następujące elementy.
+ `postAction`ma następujące elementy.
 
-### <a name="entrypoint"></a>entryPoint
- Opcjonalna. Rola `entryPoint` element `vstav3` przestrzeń nazw została zdefiniowana w [ &#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+### <a name="entrypoint"></a>Punkt
+ Opcjonalny. Rola `entryPoint` elementu w `vstav3` przestrzeni nazw jest definiowana w [&#60;punktach wejścia&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- Opcjonalna. Rola `postActionData` element `vstav3` przestrzeń nazw została zdefiniowana w [ &#60;postactiondata —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ Opcjonalny. Rola `postActionData` elementu w `vstav3` przestrzeni nazw jest definiowana w [&#60;postActionData&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
-## <a name="post-deployment-action-example"></a>Przykład akcję powdrożeniową
+## <a name="post-deployment-action-example"></a>Przykład akcji wykonywanej po wdrożeniu
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `postAction` elementu w manifeście aplikacji dla rozwiązań pakietu Office, który jest wdrożony za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `postAction` element w manifeście aplikacji dla rozwiązania pakietu Office wdrożonego za pomocą programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -70,7 +70,7 @@ ms.locfileid: "62976535"
 </vstav3:postAction>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

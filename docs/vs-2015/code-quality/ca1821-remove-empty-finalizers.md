@@ -14,17 +14,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3d340d69ee32de20142abf740f7fedc871c9733a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2e704202773447e353f041df66b05cb5f648c00
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657477"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545356"
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Usuń puste finalizatory
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Usuwaj puste finalizatory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
@@ -38,12 +38,12 @@ ms.locfileid: "72657477"
  Jeśli to tylko możliwe, należy unikać finalizatorów ze względu na dodatkowe obciążenie, które bierze udział w śledzeniu okresu istnienia obiektu. Moduł wyrzucania elementów bezużytecznych uruchomi finalizator przed zebraniem obiektu. Oznacza to, że do zebrania obiektu wymagane są dwie kolekcje. Pusty finalizator wiąże się z tym dodatkowym obciążeniem bez żadnej korzyści.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Usuń pusty finalizator. Jeśli finalizator jest wymagany do debugowania, należy ująć cały finalizator w dyrektywy `#if DEBUG / #endif`.
+ Usuń pusty finalizator. Jeśli finalizator jest wymagany do debugowania, należy ująć cały finalizator w `#if DEBUG / #endif` dyrektywy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj komunikatu z tej reguły. Niepowodzenie pomijania finalizowania zmniejsza wydajność i nie zapewnia żadnych korzyści.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono pusty finalizator, który powinien zostać usunięty, finalizator, który powinien być ujęty w dyrektywy `#if DEBUG / #endif` i finalizator, który poprawnie używa dyrektyw `#if DEBUG / #endif`.
+ W poniższym przykładzie przedstawiono pusty finalizator, który powinien zostać usunięty, finalizator, który powinien być ujęty w `#if DEBUG / #endif` dyrektywy, i finalizator, który `#if DEBUG / #endif` poprawnie używa dyrektyw.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]

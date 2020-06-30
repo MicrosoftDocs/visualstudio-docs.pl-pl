@@ -1,7 +1,7 @@
 ---
-title: 'Porady: Dodawanie formantów wykresu do arkuszy'
+title: 'Instrukcje: Dodawanie kontrolek wykresu do arkuszy'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80cc011cb9c2387b86e244f501fd5746ebb67535
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254650"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546240"
 ---
-# <a name="how-to-add-chart-controls-to-worksheets"></a>Instrukcje: Dodawanie formantów wykresu do arkuszy
+# <a name="how-to-add-chart-controls-to-worksheets"></a>Instrukcje: Dodawanie kontrolek wykresu do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.Chart> kontrolki do Microsoft Office arkusza programu Excel w czasie projektowania i w czasie wykonywania w przypadku dostosowań na poziomie dokumentu. Możesz również dodać <xref:Microsoft.Office.Tools.Excel.Chart> kontrolki w czasie wykonywania w dodatkach narzędzi VSTO.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "71254650"
 
 - [Dodawanie kontrolek wykresu w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)
 
-  Aby uzyskać więcej informacji <xref:Microsoft.Office.Tools.Excel.Chart> na temat kontrolek, zobacz [formant wykresu](../vsto/chart-control.md).
+  Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.Chart> kontrolek, zobacz [formant wykresu](../vsto/chart-control.md).
 
-## <a name="designtime"></a>Dodaj kontrolki wykresu w czasie projektowania
+## <a name="add-chart-controls-at-design-time"></a><a name="designtime"></a>Dodaj kontrolki wykresu w czasie projektowania
  Możesz dodać <xref:Microsoft.Office.Tools.Excel.Chart> formant do arkusza w taki sam sposób, jak dodać wykres z poziomu aplikacji.
 
 > [!NOTE]
-> Kontrolka jest niedostępna z **przybornika** lub okna **źródła danych.** <xref:Microsoft.Office.Tools.Excel.Chart>
+> <xref:Microsoft.Office.Tools.Excel.Chart>Kontrolka jest niedostępna z **przybornika** lub okna **źródła danych** .
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Aby dodać kontrolkę hosta wykresu do arkusza w programie Excel
 
@@ -55,18 +55,18 @@ ms.locfileid: "71254650"
 
 6. W oknie dialogowym **Wybierz źródło danych** kliknij przycisk **OK**.
 
-## <a name="runtimedoclevel"></a>Dodawanie kontrolek wykresu w czasie wykonywania w projekcie na poziomie dokumentu
- <xref:Microsoft.Office.Tools.Excel.Chart> Formant można dodać dynamicznie w czasie wykonywania. Utworzone dynamicznie wykresy nie są utrwalane w dokumencie jako formanty hosta, gdy dokument jest zamknięty. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
+## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Dodawanie kontrolek wykresu w czasie wykonywania w projekcie na poziomie dokumentu
+ Formant można dodać <xref:Microsoft.Office.Tools.Excel.Chart> dynamicznie w czasie wykonywania. Utworzone dynamicznie wykresy nie są utrwalane w dokumencie jako formanty hosta, gdy dokument jest zamknięty. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Aby programowo dodać formant wykresu do arkusza
 
-1. W programie obsługi `Sheet1` <xref:Microsoft.Office.Tools.Excel.Chart> zdarzeń programu Wstaw poniższy kod, aby dodać formant. <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>
+1. W programie <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> obsługi zdarzeń programu `Sheet1` Wstaw poniższy kod, aby dodać <xref:Microsoft.Office.Tools.Excel.Chart> formant.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-## <a name="runtimeaddin"></a>Dodawanie kontrolek wykresu w czasie wykonywania w projekcie dodatku narzędzi VSTO
- <xref:Microsoft.Office.Tools.Excel.Chart> Formant można dodać programowo do dowolnego otwartego arkusza w projekcie dodatku VSTO. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Dodawanie kontrolek wykresu w czasie wykonywania w projekcie dodatku narzędzi VSTO
+ Formant można dodać <xref:Microsoft.Office.Tools.Excel.Chart> programowo do dowolnego otwartego arkusza w projekcie dodatku VSTO. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
  Dynamicznie tworzone kontrolki wykresu nie są utrwalane w arkuszu jako kontrolki hosta, gdy arkusz jest zamknięty. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
@@ -77,12 +77,12 @@ ms.locfileid: "71254650"
      [!code-csharp[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#9)]
      [!code-vb[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#9)]
 
-## <a name="compile-the-code"></a>Skompilować kod
+## <a name="compile-the-code"></a>Kompiluj kod
  Ten przykład ma następujące wymagania:
 
 - Dane do wykresu, przechowywane w zakresie od A5 do D8 w arkuszu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Kontrolka wykresu](../vsto/chart-control.md)

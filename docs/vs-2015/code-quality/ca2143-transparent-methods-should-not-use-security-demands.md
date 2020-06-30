@@ -11,17 +11,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bcfce9a80d02e525212d3f59173df4a7e8fbe968
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca8f049da83b99da7d36ebf74e756dd95f738d64
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662704"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546474"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Jawne metody nie powinny używać żądań zabezpieczeń
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Metody przezroczyste nie powinny używać żądań zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|TransparentMethodsShouldNotDemand|
 |CheckId|CA2143|
@@ -29,13 +29,13 @@ ms.locfileid: "72662704"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ tranparent lub metoda jest deklaratywnie oznaczona <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` zapotrzebowanie lub metoda wywołuje metodę <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>.
+ Typ tranparent lub metoda jest deklaratywnie oznaczona z <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` zapotrzebowaniem lub metoda wywołuje <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> metodę.
 
 ## <a name="rule-description"></a>Opis reguły
  Przezroczysty kod zabezpieczeń nie powinien być odpowiedzialny za weryfikację zabezpieczeń operacji, a zatem nie powinien wymagać uprawnień. Przejrzysty pod względem bezpieczeństwa kod powinien używać pełnych żądań do podejmowania decyzji związanych z zabezpieczeniami, a kod krytyczny pod względem zabezpieczeń nie powinien opierać się na kodzie przezroczystym do wykonywania pełnego żądania. Każdy kod, który wykonuje kontrole zabezpieczeń, na przykład wymagania dotyczące zabezpieczeń, powinien być w zamian bezpieczny-krytyczny.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ogólnie rzecz biorąc, aby naprawić naruszenie tej reguły, oznacz metodę atrybutem <xref:System.Security.SecuritySafeCriticalAttribute>. Możesz również usunąć żądanie.
+ Ogólnie rzecz biorąc, aby naprawić naruszenie tej zasady, oznacz metodę <xref:System.Security.SecuritySafeCriticalAttribute> atrybutem. Możesz również usunąć żądanie.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

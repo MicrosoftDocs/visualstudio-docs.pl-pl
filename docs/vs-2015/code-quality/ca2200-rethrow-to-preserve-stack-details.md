@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d20407d7cc708ac785e4a792bf8e64768ea58540
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d63ef6ff3647742e931fd05f59c66b40059ad00
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667390"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546370"
 ---
-# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Należy zgłosić ponownie, aby zachować szczegóły stosu
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Ponowie zgłoś wyjątek, aby zachować szczegóły stosu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
@@ -33,10 +33,10 @@ ms.locfileid: "72667390"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Wyjątek jest ponownie zgłaszany, a wyjątek jest jawnie określony w instrukcji `throw`.
+ Wyjątek jest ponownie zgłaszany, a wyjątek jest jawnie określony w `throw` instrukcji.
 
 ## <a name="rule-description"></a>Opis reguły
- Po zgłoszeniu wyjątku część informacji, którą wykonuje, jest śladem stosu. Ślad stosu jest listą hierarchii wywołań metody, która rozpoczyna się od metody, która zgłasza wyjątek i kończą się metodą, która przechwytuje wyjątek. Jeśli wyjątek jest ponownie zgłaszany przez określenie wyjątku w instrukcji `throw`, ślad stosu zostanie ponownie uruchomiony w bieżącej metodzie, a lista wywołań metod między oryginalną metodą, która wywołała wyjątek, a bieżąca metoda zostanie utracona. Aby zachować oryginalne informacje śledzenia stosu z wyjątkiem, należy użyć instrukcji `throw` bez określenia wyjątku.
+ Po zgłoszeniu wyjątku część informacji, którą wykonuje, jest śladem stosu. Ślad stosu jest listą hierarchii wywołań metody, która rozpoczyna się od metody, która zgłasza wyjątek i kończą się metodą, która przechwytuje wyjątek. Jeśli wyjątek jest ponownie zgłaszany przez określenie wyjątku w `throw` instrukcji, ślad stosu zostanie ponownie uruchomiony w bieżącej metodzie, a lista wywołań metod między oryginalną metodą, która wywołała wyjątek, a bieżąca metoda zostanie utracona. Aby zachować oryginalne informacje śledzenia stosu z wyjątkiem, należy użyć `throw` instrukcji bez określenia wyjątku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, ponownie Zgłoś wyjątek bez określenia wyjątku jawnie.
@@ -45,7 +45,7 @@ ms.locfileid: "72667390"
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia metodę, `CatchAndRethrowExplicitly`, która narusza zasadę i metodę, `CatchAndRethrowImplicitly`, która spełnia zasady.
+ Poniższy przykład przedstawia metodę, `CatchAndRethrowExplicitly` która narusza regułę i metodę, `CatchAndRethrowImplicitly` , która spełnia kryteria.
 
  [!code-csharp[FxCop.Usage.Rethrow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow/cs/FxCop.Usage.Rethrow.cs#1)]
  [!code-vb[FxCop.Usage.Rethrow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow/vb/FxCop.Usage.Rethrow.vb#1)]

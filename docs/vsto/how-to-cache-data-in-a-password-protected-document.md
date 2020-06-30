@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem'
+title: 'Instrukcje: buforowanie danych w dokumencie chronionym hasłem'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,66 +14,66 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826748"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547241"
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>Instrukcje: Dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem
-  Możesz dodać dane do pamięci podręcznej danych na dokument lub skoroszyt, który jest chroniony hasłem, zmiany w buforowanych danych nie są zapisywane automatycznie. Aby zapisać zmiany na dane w pamięci podręcznej, zastępowanie dwie metody w projekcie.
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>Instrukcje: buforowanie danych w dokumencie chronionym hasłem
+  W przypadku dodania danych do pamięci podręcznej danych w dokumencie lub skoroszycie chronionym hasłem zmiany w buforowanych danych nie są zapisywane automatycznie. Zmiany w buforowanych danych można zapisać przez zastępowanie dwóch metod w projekcie.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="caching-in-word-documents"></a>Buforowanie w dokumentach programu Word
 
-### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Do buforowania danych w dokumencie programu Word, który jest chroniony hasłem
+### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Aby buforować dane w dokumencie programu Word chronionym hasłem
 
-1. W `ThisDocument` klasy, oznacz publiczne pole lub właściwość przechowywanie w pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).
+1. W `ThisDocument` klasie Oznacz pole publiczne lub właściwość, które mają być buforowane. Aby uzyskać więcej informacji, zobacz [cache Data](../vsto/caching-data.md).
 
-2. Zastąp <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> method in Class metoda `ThisDocument` klasy i usuwanie ochrony z dokumentu.
+2. Zastąp <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> metodę w `ThisDocument` klasie i Usuń ochronę z dokumentu.
 
-     Po zapisaniu dokumentu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę w celu zapewniają możliwość wyłączania ochrony dokumentu. Dzięki temu zmiany mają być zapisywane dane buforowane.
+     Gdy dokument zostanie zapisany, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę, aby dać Ci możliwość usunięcia ochrony dokumentu. Dzięki temu zmiany mają być zapisywane dane buforowane.
 
-3. Zastąp <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> method in Class metoda `ThisDocument` klasy i ponownie zastosować ochronę dokumentu.
+3. Zastąp <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> metodę w `ThisDocument` klasie i ponownie Zastosuj ochronę do dokumentu.
 
-     Po zapisaniu dokumentu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę, aby zapewnić możliwość ponownego zastosowania ochrony do dokumentu.
+     Po zapisaniu dokumentu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołanie tej metody daje możliwość ponownego zastosowania ochrony do dokumentu.
 
 ### <a name="example"></a>Przykład
- Poniższy przykład kodu pokazuje, jak buforowanie danych w dokumencie programu Word, który jest chroniony hasłem. Zanim kod usuwa ochrony w <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> metody zapisuje bieżący <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> wartość tak, aby móc ponownie zastosować ten sam typ ochrony w <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> metody.
+ Poniższy przykład kodu demonstruje sposób buforowania danych w dokumencie programu Word, który jest chroniony hasłem. Przed usunięciem ochrony w <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> metodzie zapisuje bieżącą <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> wartość, dzięki czemu można ponownie zastosować ten sam typ ochrony w <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> metodzie.
 
  [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
  [!code-vb[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb#1)]
 
-### <a name="compile-the-code"></a>Skompilować kod
- Dodaj następujący kod do `ThisDocument` klasy w projekcie. Ten kod zakłada, że hasło jest przechowywane w polu o nazwie `securelyStoredPassword`.
+### <a name="compile-the-code"></a>Kompiluj kod
+ Dodaj ten kod do `ThisDocument` klasy w projekcie. W tym kodzie założono, że hasło jest przechowywane w polu o nazwie `securelyStoredPassword` .
 
-## <a name="cache-in-excel-workbooks"></a>Pamięć podręczna w skoroszytach programu Excel
- W projektach programu Excel, ta procedura jest niezbędna tylko wtedy, gdy cały skoroszyt za pomocą hasła jest chroniony przy użyciu <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> metody. Ta procedura nie jest konieczne, jeśli chroniony określonego arkusza za pomocą hasła przy użyciu <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metody.
+## <a name="cache-in-excel-workbooks"></a>Buforowanie w skoroszytach programu Excel
+ W projektach programu Excel ta procedura jest niezbędna tylko w przypadku ochrony całego skoroszytu hasłem przy użyciu <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> metody. Ta procedura nie jest konieczna w przypadku ochrony tylko określonego arkusza z hasłem przy użyciu <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metody.
 
-### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Do buforowania danych w skoroszycie programu Excel, który jest chroniony hasłem
+### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Aby buforować dane w skoroszycie programu Excel chronionym hasłem
 
-1. W `ThisWorkbook` klasy lub jednej z `Sheet` *n* klas, oznacz publiczne pole lub właściwość przechowywanie w pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).
+1. W `ThisWorkbook` klasie lub jednej z `Sheet` *n* klas zaznacz pole publiczne lub właściwość, które mają być buforowane. Aby uzyskać więcej informacji, zobacz [cache Data](../vsto/caching-data.md).
 
-2. Zastąp <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> method in Class metoda `ThisWorkbook` klasy, a następnie usuń ochronę skoroszytu.
+2. Zastąp <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metodę w `ThisWorkbook` klasie i Usuń ochronę ze skoroszytu.
 
-     Po zapisaniu skoroszytu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę, aby zapewnić możliwość usuwające ochronę skoroszytu. Dzięki temu zmiany mają być zapisywane dane buforowane.
+     Gdy skoroszyt zostanie zapisany, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę, aby dać Ci możliwość usunięcia ochrony skoroszytu. Dzięki temu zmiany mają być zapisywane dane buforowane.
 
-3. Zastąp <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> method in Class metoda `ThisWorkbook` klasy i ponownie zastosować ochronę dokumentu.
+3. Zastąp <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> metodę w `ThisWorkbook` klasie i ponownie Zastosuj ochronę do dokumentu.
 
-     Po zapisaniu skoroszytu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę daje możliwość ponownego zastosowania ochrony do skoroszytu.
+     Po zapisaniu skoroszytu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wywołuje tę metodę, aby dać Ci możliwość ponownego zastosowania ochrony skoroszytu.
 
 ### <a name="example"></a>Przykład
- Poniższy przykład kodu pokazuje, jak buforowanie danych w skoroszycie programu Excel, który jest chroniony hasłem. Zanim kod usuwa ochrony w <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metody zapisuje bieżący <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> i <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> wartości, tak aby móc ponownie zastosować ten sam typ ochrony w <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> metody.
+ Poniższy przykład kodu demonstruje sposób buforowania danych w skoroszycie programu Excel, który jest chroniony hasłem. Przed usunięciem ochrony w <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metodzie zapisuje ona bieżące <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> i <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> wartości, dzięki czemu można ponownie zastosować ten sam typ ochrony w <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> metodzie.
 
  [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs#1)]
 
-### <a name="compile-the-code"></a>Skompilować kod
- Dodaj następujący kod do `ThisWorkbook` klasy w projekcie. Ten kod zakłada, że hasło jest przechowywane w polu o nazwie `securelyStoredPassword`.
+### <a name="compile-the-code"></a>Kompiluj kod
+ Dodaj ten kod do `ThisWorkbook` klasy w projekcie. W tym kodzie założono, że hasło jest przechowywane w polu o nazwie `securelyStoredPassword` .
 
-## <a name="see-also"></a>Zobacz także
-- [Dane w pamięci podręcznej](../vsto/caching-data.md)
-- [Instrukcje: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
-- [Instrukcje: Programowe buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+## <a name="see-also"></a>Zobacz też
+- [Dane pamięci podręcznej](../vsto/caching-data.md)
+- [Instrukcje: dane z pamięci podręcznej do użycia w trybie offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
+- [Instrukcje: programowane buforowanie źródła danych w dokumencie pakietu Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
