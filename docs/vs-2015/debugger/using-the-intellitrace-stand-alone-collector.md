@@ -13,12 +13,12 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46790d762369ade78af6c10272fc92e4d5b53fca
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 81eedeeb9a1b2470e87f0d865996ad3e456723fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586789"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520552"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
   > [!NOTE]
   > Pamiętaj, aby zapisać pliki symboli (. pdb). Aby debugować przy użyciu IntelliTrace i przechodzenia przez kod, musisz mieć pasujące pliki źródłowe i pliki symboli. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).
 
-  **Najczęściej zadawane pytania**
+  **Często zadawane pytania**
 
 - [Jakie aplikacje współpracują z modułem zbierającym?](#WhatApps)
 
@@ -71,7 +71,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 5. [Zbieranie danych z aplikacji sieci Web lub aplikacji programu SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     — lub —
+     -lub-
 
      [Zbieranie danych z aplikacji zarządzanej](#BKMK_Collect_Data_from_Executables)
 
@@ -85,29 +85,29 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
    - **Centrum pobierania Microsoft**:
 
-     1. Obok pozycji **IntelliTraceCollector. exe**wybierz pozycję **Pobierz**.
+     1. Obok pozycji **IntelliTraceCollector.exe**wybierz pozycję **Pobierz**.
 
-     2. Zapisz IntelliTraceCollector. exe w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
+     2. Zapisz IntelliTraceCollector.exe w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
 
-     3. Uruchom IntelliTraceCollector. exe. Spowoduje to wyodrębnienie pliku IntelliTraceCollection. cab.
+     3. Uruchom IntelliTraceCollector.exe. Spowoduje to wyodrębnienie pliku IntelliTraceCollection.cab.
 
         \-oraz
 
    - **Folder instalacyjny programu Visual Studio**:
 
-     1. Skopiuj plik IntelliTraceCollection. cab z następującego folderu:
+     1. Skopiuj IntelliTraceCollection.cab z następującego folderu:
 
           **.. \Microsoft Visual Studio 12 \ Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2. Umieść plik IntelliTraceCollection. cab w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
+     2. Umieść IntelliTraceCollection.cab w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
 
-3. Rozwiń IntelliTraceCollection. cab:
+3. Rozwiń IntelliTraceCollection.cab:
 
    1. Na serwerze aplikacji otwórz okno wiersza polecenia jako administrator.
 
    2. Przejdź do katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**
 
-   3. Użyj polecenia **expand** , łącznie z kropką (**.**) na końcu, aby rozwinąć IntelliTraceCollection. cab:
+   3. Użyj polecenia **expand** , łącznie z kropką (**.**) na końcu, aby rozwinąć IntelliTraceCollection.cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
@@ -120,7 +120,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 2. Użyj polecenia **icacls** systemu Windows, aby nadać administratorowi serwera pełne uprawnienia do katalogu modułu zbierającego. Przykład:
 
-     `icacls "C:\IntelliTraceCollector" /grant "`* \<Domain\AdministratorID>*`":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3. Aby zbierać dane dla aplikacji sieci Web lub aplikacji programu SharePoint:
 
@@ -128,7 +128,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
          Przykład:
 
-         `icacls "C:\IntelliTraceCollector" /grant "`* \<Domain\UserID>*`":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Nadaj puli aplikacji aplikacji sieci Web lub aplikacji programu SharePoint uprawnienia do odczytu i wykonania do katalogu modułu zbierającego.
 
@@ -160,7 +160,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
             - W 32-bitowych systemach operacyjnych Otwórz menu skrótów dla **programu Windows PowerShell (x86)**. Wybierz **Uruchom jako administrator**.
 
-    2. W oknie wiersza polecenia programu PowerShell Użyj polecenia **Import-Module** , aby zaimportować **plik Microsoft. VisualStudio. IntelliTrace. PowerShell. dll**.
+    2. W oknie wiersza polecenia programu PowerShell Użyj polecenia **Import-Module** , aby zaimportować **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
          Przykład:
 
@@ -192,7 +192,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       — lub —
+       -lub-
 
    - Aby skonfigurować uprawnienia za pomocą Eksploratora Windows (lub Eksploratora plików):
 
@@ -214,7 +214,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 1. Aby rozpocząć zbieranie danych, Otwórz okno polecenia programu PowerShell jako administrator, a następnie uruchom następujące polecenie:
 
-     `Start-IntelliTraceCollection``"` `"` *ApplicationPool>\<PathToCollectionPlan>* *FullPathToITraceFileDirectory>\<* * \<*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     > Po uruchomieniu tego polecenia, wpisz **Y** , aby potwierdzić, że chcesz rozpocząć zbieranie danych.
@@ -223,10 +223,10 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
      `Start-IntelliTraceCollection "SharePoint - 80" "C:\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogFiles"`
 
-    |||
+    |Element|Opis|
     |-|-|
     |*ApplicationPool*|Nazwa puli aplikacji, w której działa aplikacja|
-    |*PathToCollectionPlan*|Ścieżka do planu kolekcji, plik. XML, który konfiguruje ustawienia modułu zbierającego.<br /><br /> Możesz określić plan dostarczany z modułem zbierającym. Następujące plany działają w przypadku aplikacji sieci Web i aplikacji programu SharePoint:<br /><br /> -collection_plan. ASP. NET. default. XML<br />     Zbiera tylko zdarzenia IntelliTrace i zdarzenia programu SharePoint, w tym wyjątki, wywołania bazy danych i żądania serwera sieci Web.<br />-collection_plan. ASP. NET. Trace. XML<br />     Zbiera wywołania funkcji i wszystkie dane w collection_plan. ASP. NET. default. XML. Ten plan jest dobry dla szczegółowej analizy, ale może spowolnić aplikację więcej niż collection_plan. ASP. NET. default. XML.<br /><br /> Aby uniknąć spowolnienia działania aplikacji, Dostosuj te plany lub Utwórz własny plan. W celu zapewnienia bezpieczeństwa należy umieścić dowolne plany niestandardowe w tej samej bezpiecznej lokalizacji co pliki modułu zbierającego. Zobacz [Tworzenie i dostosowywanie planów zbierania IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) oraz [Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing) **Uwaga:**  Domyślnie maksymalny rozmiar pliku. iTrace to 100 MB. Gdy plik. iTrace osiągnie ten limit, moduł zbierający usuwa najstarsze wpisy pliku, aby miejsce na nowsze wpisy. Aby zmienić ten limit, Edytuj `MaximumLogFileSize` atrybut planu kolekcji. <br /><br /> *Gdzie mogę znaleźć zlokalizowane wersje tych planów kolekcji?*<br /><br /> Zlokalizowane plany można znaleźć w podfolderach modułu zbierającego.|
+    |*PathToCollectionPlan*|Ścieżka do planu kolekcji, plik. XML, który konfiguruje ustawienia modułu zbierającego.<br /><br /> Możesz określić plan dostarczany z modułem zbierającym. Następujące plany działają w przypadku aplikacji sieci Web i aplikacji programu SharePoint:<br /><br /> -collection_plan.ASP.NET.default.xml<br />     Zbiera tylko zdarzenia IntelliTrace i zdarzenia programu SharePoint, w tym wyjątki, wywołania bazy danych i żądania serwera sieci Web.<br />-collection_plan.ASP.NET.trace.xml<br />     Zbiera wywołania funkcji i wszystkie dane w collection_plan.ASP.NET.default.xml. Ten plan jest dobry dla szczegółowej analizy, ale może spowolnić działanie aplikacji więcej niż collection_plan.ASP.NET.default.xml.<br /><br /> Aby uniknąć spowolnienia działania aplikacji, Dostosuj te plany lub Utwórz własny plan. W celu zapewnienia bezpieczeństwa należy umieścić dowolne plany niestandardowe w tej samej bezpiecznej lokalizacji co pliki modułu zbierającego. Zobacz [Tworzenie i dostosowywanie planów zbierania IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) oraz [Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing) **Uwaga:**  Domyślnie maksymalny rozmiar pliku. iTrace to 100 MB. Gdy plik. iTrace osiągnie ten limit, moduł zbierający usuwa najstarsze wpisy pliku, aby miejsce na nowsze wpisy. Aby zmienić ten limit, Edytuj atrybut planu kolekcji `MaximumLogFileSize` . <br /><br /> *Gdzie mogę znaleźć zlokalizowane wersje tych planów kolekcji?*<br /><br /> Zlokalizowane plany można znaleźć w podfolderach modułu zbierającego.|
     |*FullPathToITraceFileDirectory*|Pełna ścieżka do katalogu plików. iTrace. **Uwaga dotycząca zabezpieczeń:**  Podaj pełną ścieżkę, a nie ścieżkę względną.|
 
      Moduł zbierający dołącza do puli aplikacji i zaczyna zbierać dane.
@@ -237,7 +237,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 3. Aby wykonać migawkę pliku iTrace, użyj następującej składni:
 
-     `Checkpoint-IntelliTraceCollection``"` *ApplicationPool \<>*`"`
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
 4. Aby sprawdzić stan kolekcji, użyj następującej składni:
 
@@ -245,7 +245,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 5. Aby zatrzymać zbieranie danych, należy użyć następującej składni:
 
-     `Stop-IntelliTraceCollection``"` *ApplicationPool \<>*`"`
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
     > Po uruchomieniu tego polecenia, wpisz **Y** , aby potwierdzić, że chcesz zatrzymać zbieranie danych. W przeciwnym razie moduł zbierający może kontynuować zbieranie danych, plik iTrace pozostanie zablokowany lub plik może nie zawierać żadnych użytecznych danych.
@@ -256,16 +256,16 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 1. Aby uruchomić aplikację i zebrać dane w tym samym czasie, użyj następującej składni:
 
-     `\IntelliTraceSC.exe launch /cp:` `/f:` *FullPathToIntelliTraceCollectorExecutable>\<PathToCollectionPlan>* *FullPathToITraceFileDirectoryAndFileName \<>* *PathToAppExecutableFileAndFileName \<>* * \<*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Na przykład, aby zbierać dane z aplikacji o nazwie **MojaApl**:
 
      `C:IntelliTraceCollectorIntelliTraceSC.exe launch /cp:"C:IntelliTraceCollectorcollection_plan.ASP.NET.default.xml" /f:"C:IntelliTraceLogFilesMyApp.itrace" "C:MyAppMyApp.exe"`
 
-    |||
+    |Element|Opis|
     |-|-|
-    |*FullPathToIntelliTraceCollectorExecutable*|Pełna ścieżka do pliku wykonywalnego modułu zbierającego, IntelliTraceSC. exe|
-    |*PathToCollectionPlan*|Ścieżka do planu kolekcji, plik. XML, który konfiguruje ustawienia modułu zbierającego.<br /><br /> Możesz określić plan dostarczany z modułem zbierającym. Następujące plany działają w przypadku zarządzanych aplikacji:<br /><br /> -collection_plan. ASP. NET. default. XML<br />     Zbiera tylko zdarzenia IntelliTrace, w tym wyjątki, wywołania bazy danych i żądania serwera sieci Web.<br />-collection_plan. ASP. NET. Trace. XML<br />     Zbiera wywołania funkcji i wszystkie dane w collection_plan. ASP. NET. default. XML. Ten plan jest dobry dla szczegółowej analizy, ale może spowolnić aplikację więcej niż collection_plan. ASP. NET. default. XML.<br /><br /> Aby uniknąć spowolnienia działania aplikacji, Dostosuj te plany lub Utwórz własny plan. W celu zapewnienia bezpieczeństwa należy umieścić dowolne plany niestandardowe w tej samej bezpiecznej lokalizacji co pliki modułu zbierającego. Zobacz [Tworzenie i dostosowywanie planów zbierania IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) oraz [Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing) **Uwaga:**  Domyślnie maksymalny rozmiar pliku. iTrace to 100 MB. Gdy plik. iTrace osiągnie ten limit, moduł zbierający usuwa najstarsze wpisy pliku, aby miejsce na nowsze wpisy. Aby zmienić ten limit, Edytuj `MaximumLogFileSize` atrybut planu kolekcji. <br /><br /> *Gdzie mogę znaleźć zlokalizowane wersje tych planów kolekcji?*<br /><br /> Zlokalizowane plany można znaleźć w podfolderach modułu zbierającego.|
+    |*FullPathToIntelliTraceCollectorExecutable*|Pełna ścieżka do pliku wykonywalnego modułu zbierającego, IntelliTraceSC.exe|
+    |*PathToCollectionPlan*|Ścieżka do planu kolekcji, plik. XML, który konfiguruje ustawienia modułu zbierającego.<br /><br /> Możesz określić plan dostarczany z modułem zbierającym. Następujące plany działają w przypadku zarządzanych aplikacji:<br /><br /> -collection_plan.ASP.NET.default.xml<br />     Zbiera tylko zdarzenia IntelliTrace, w tym wyjątki, wywołania bazy danych i żądania serwera sieci Web.<br />-collection_plan.ASP.NET.trace.xml<br />     Zbiera wywołania funkcji i wszystkie dane w collection_plan.ASP.NET.default.xml. Ten plan jest dobry dla szczegółowej analizy, ale może spowolnić działanie aplikacji więcej niż collection_plan.ASP.NET.default.xml.<br /><br /> Aby uniknąć spowolnienia działania aplikacji, Dostosuj te plany lub Utwórz własny plan. W celu zapewnienia bezpieczeństwa należy umieścić dowolne plany niestandardowe w tej samej bezpiecznej lokalizacji co pliki modułu zbierającego. Zobacz [Tworzenie i dostosowywanie planów zbierania IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) oraz [Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing) **Uwaga:**  Domyślnie maksymalny rozmiar pliku. iTrace to 100 MB. Gdy plik. iTrace osiągnie ten limit, moduł zbierający usuwa najstarsze wpisy pliku, aby miejsce na nowsze wpisy. Aby zmienić ten limit, Edytuj atrybut planu kolekcji `MaximumLogFileSize` . <br /><br /> *Gdzie mogę znaleźć zlokalizowane wersje tych planów kolekcji?*<br /><br /> Zlokalizowane plany można znaleźć w podfolderach modułu zbierającego.|
     |*FullPathToITraceFileDirectoryAndFileName*|Pełna ścieżka do katalogu plików. iTrace i nazwa pliku. iTrace z rozszerzeniem **. iTrace** . **Uwaga dotycząca zabezpieczeń:**  Podaj pełną ścieżkę, a nie ścieżkę względną.|
     |*PathToAppExecutableFileAndFileName*|Ścieżka i nazwa pliku aplikacji zarządzanej|
 
@@ -302,7 +302,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
 - Przejrzyj zdarzenia w planie kolekcji, dla którego IntelliTrace zbiera dane. Edytuj plan kolekcji, aby wyłączyć zdarzenia, które nie są odpowiednie lub nie są interesujące.
 
-   Aby wyłączyć zdarzenie, ustaw `enabled` atrybut dla `<DiagnosticEventSpecification>` elementu na: `false`
+   Aby wyłączyć zdarzenie, ustaw `enabled` atrybut dla `<DiagnosticEventSpecification>` elementu na `false` :
 
    `<DiagnosticEventSpecification enabled="false">`
 
@@ -318,7 +318,7 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
   1. Otwórz plan zbierania danych. Znajdź `<ModuleList>` element.
 
-  2. W `<ModuleList>`, ustaw `isExclusionList` atrybut na `false`.
+  2. W `<ModuleList>` , ustaw `isExclusionList` atrybut na `false` .
 
   3. Użyj `<Name>` elementu, aby określić każdy moduł z jedną z następujących: nazwą pliku, wartością ciągu do uwzględnienia dowolnego modułu, którego nazwa zawiera ten ciąg lub klucz publiczny.
 
@@ -363,21 +363,21 @@ Autonomiczny **moduł zbierający IntelliTrace** umożliwia zbieranie danych dia
 
     *Dlaczego zamiast tego nie wykluczać modułów?*
 
-    Domyślnie plany kolekcji wykluczają moduły przez ustawienie `isExclusionList` atrybutu na. `true` Jednak wykluczenie modułów może nadal powodować zbieranie danych z modułów, które nie spełniają kryteriów listy i mogą nie być interesujące, takie jak moduły innych firm lub typu open-source.
+    Domyślnie plany kolekcji wykluczają moduły przez ustawienie `isExclusionList` atrybutu na `true` . Jednak wykluczenie modułów może nadal powodować zbieranie danych z modułów, które nie spełniają kryteriów listy i mogą nie być interesujące, takie jak moduły innych firm lub typu open-source.
 
 - *Czy istnieją jakieś dane, które nie są zbierane przez IntelliTrace?*
 
    Tak, aby zmniejszyć wpływ na wydajność, IntelliTrace ogranicza zbieranie danych do wartości typów danych pierwotnych przekazana do i zwracanych z metod oraz do wartości typów danych pierwotnych w polach obiektów najwyższego poziomu przekazana do i zwróconych z metod.
 
-   Załóżmy na przykład, że masz sygnaturę `AlterEmployee` metody akceptującą liczbę całkowitą `id` i `Employee` obiekt: `oldemployee`
+   Załóżmy na przykład, `AlterEmployee` że masz sygnaturę metody akceptującą liczbę całkowitą `id` i `Employee` obiekt `oldemployee` :
 
    `public Employee AlterEmployee(int id, Employee oldemployee)`
 
-   `Employee` Typ ma następujące atrybuty: `Id`, `Name`, i `HomeAddress`. Między `Employee` i `Address` typem istnieje relacja skojarzenia.
+   `Employee`Typ ma następujące atrybuty: `Id` , `Name` , i `HomeAddress` . Między i typem istnieje relacja skojarzenia `Employee` `Address` .
 
    ![Relacja między pracownikiem a adresem](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-   Moduł zbierający rejestruje wartości `id`dla `Employee.Id`, `Employee.Name` i `Employee` obiekt zwrócony z `AlterEmployee` metody. Moduł zbierający nie rejestruje jednak informacji o `Address` obiekcie innym niż to, czy ma on wartość null, czy nie. Moduł zbierający nie rejestruje również danych o zmiennych lokalnych w `AlterEmployee` metodzie, chyba że inne metody używają tych zmiennych lokalnych jako parametrów, w których są one rejestrowane jako parametry metody.
+   Moduł zbierający rejestruje wartości `id` dla `Employee.Id` , `Employee.Name` i `Employee` obiekt zwrócony z `AlterEmployee` metody. Moduł zbierający nie rejestruje jednak informacji o `Address` obiekcie innym niż to, czy ma on wartość null, czy nie. Moduł zbierający nie rejestruje również danych o zmiennych lokalnych w `AlterEmployee` metodzie, chyba że inne metody używają tych zmiennych lokalnych jako parametrów, w których są one rejestrowane jako parametry metody.
 
 ## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a>Gdzie można uzyskać dane IntelliTrace?
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d18763f3638442de4e0142204d696ee13b1bdb19
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383f488fcc9ebe614257b035732162100b9c7fd2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587774"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521059"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analiza kodu dla zarządzanego kodu — Ostrzeżenia
 Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia wskazujące naruszenia reguł w zarządzanych bibliotekach kodu. Ostrzeżenia są zorganizowane w obszary reguły, takie jak projektowanie, lokalizacja, wydajność i zabezpieczenia. Każde ostrzeżenie oznacza naruszenie reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdego ostrzeżenia analizy kodu zarządzanego.
@@ -42,20 +42,20 @@ Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia wskazujące narusz
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-|||
+|Kategoria|Opis|
 |-|-|
-|[Ostrzeżenia według identyfikatora CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie ostrzeżenia według CheckId|
-|[Ostrzeżenia dotyczące kryptografii](../code-quality/cryptography-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejsze biblioteki i aplikacje poprzez poprawne użycie kryptografii.|
-|[Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)|Ostrzeżenia, które obsługują prawidłowy projekt biblioteki, zgodnie z zaleceniami dotyczącymi projektowania platformy .NET.|
+|[Ostrzeżenia według CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie ostrzeżenia według CheckId|
+|[Ostrzeżenia kryptografii](../code-quality/cryptography-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejsze biblioteki i aplikacje poprzez poprawne użycie kryptografii.|
+|[Ostrzeżenia projektu](../code-quality/design-warnings.md)|Ostrzeżenia, które obsługują prawidłowy projekt biblioteki, zgodnie z zaleceniami dotyczącymi projektowania platformy .NET.|
 |[Ostrzeżenia dotyczące dokumentacji](../code-quality/documentation-warnings.md)|Ostrzeżenia, które obsługują dobrze udokumentowane Projektowanie biblioteki przez poprawne użycie komentarzy dokumentacji XML.|
-|[Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md)|Ostrzeżenia, które obsługują biblioteki i aplikacje gotowe do używania na całym świecie.|
+|[Ostrzeżenia globalizacji](../code-quality/globalization-warnings.md)|Ostrzeżenia, które obsługują biblioteki i aplikacje gotowe do używania na całym świecie.|
 |[Ostrzeżenia dotyczące współdziałania](../code-quality/interoperability-warnings.md)|Ostrzeżenia, które obsługują interakcję z klientami COM.|
-|[Ostrzeżenia dotyczące konserwacji](../code-quality/maintainability-warnings.md)|Ostrzeżenia, które obsługują konserwację biblioteki i aplikacji.|
+|[Ostrzeżenia dotyczące utrzymania](../code-quality/maintainability-warnings.md)|Ostrzeżenia, które obsługują konserwację biblioteki i aplikacji.|
 |[Ostrzeżenia dotyczące mobilności](../code-quality/mobility-warnings.md)|Ostrzeżenia, które obsługują wydajne zużycie mocy.|
 |[Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)|Ostrzeżenia, które wspierają przestrzeganie konwencji nazewnictwa w wytycznych dotyczących projektowania platformy .NET.|
 |[Ostrzeżenia dotyczące wydajności](../code-quality/performance-warnings.md)|Ostrzeżenia, które obsługują biblioteki i aplikacje o wysokiej wydajności.|
 |[Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)|Ostrzeżenia, które obsługują przenośność na różnych platformach.|
-|[Ostrzeżenia dotyczące niezawodności](../code-quality/reliability-warnings.md)|Ostrzeżenia, które obsługują niezawodność biblioteki i aplikacji, takie jak poprawne użycie pamięci i wątku.|
+|[Ostrzeżenia o niezawodności](../code-quality/reliability-warnings.md)|Ostrzeżenia, które obsługują niezawodność biblioteki i aplikacji, takie jak poprawne użycie pamięci i wątku.|
 |[Ostrzeżenia dotyczące zabezpieczeń](../code-quality/security-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejsze biblioteki i aplikacje.|
 |[Ostrzeżenia dotyczące użycia](../code-quality/usage-warnings.md)|Ostrzeżenia, które obsługują odpowiednie użycie platformy .NET.|
 |[Błędy zasad analizy kodu](../code-quality/code-analysis-policy-errors.md)|Błędy, które występują, jeśli zasady analizy kodu nie są spełnione podczas ewidencjonowania.|

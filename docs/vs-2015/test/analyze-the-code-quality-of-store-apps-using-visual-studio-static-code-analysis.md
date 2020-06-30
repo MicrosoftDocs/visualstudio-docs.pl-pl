@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3b2e1fd025d559889f0ea41d39879e251e80fa64
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: f837822e47c911e3c27d9d41e31ae9cd448d4fc5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586705"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520500"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu aplikacji ze sklepu przy użyciu statycznej analizy kodu programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,14 +26,14 @@ Narzędzie do analizy kodu w programie Visual Studio bada swój kod w celu uzysk
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-|||
+|Tytuł|Opis|
 |-|-|
 |[Analizowanie jakości kodu w językach Visual Basic i C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Użyj analizy kodu w projektach Visual Basic i C#.|
 |[Analizowanie jakości kodu w języku C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Użyj analizy kodu w projektach języka C++.|
 
 ## <a name="more-code-analysis-info"></a>Więcej informacji o analizie kodu
 
-|||
+|Tytuł|Opis|
 |-|-|
 |[Analiza kodu w bibliotece MSDN](https://msdn.microsoft.com/library/dd264897.aspx)|Więcej informacji na temat korzystania z analizy kodu można znaleźć w Visual Studio Ultimate, Visual Studio Premium i Visual Studio Professional.|
 |[Blog zespołu ds. analizy kodu MSDN](https://blogs.msdn.com/b/codeanalysis/)|Więcej informacji, w tym dokumenty techniczne i przykłady, znajdziesz w blogu zespołu ds. analizy kodu.|

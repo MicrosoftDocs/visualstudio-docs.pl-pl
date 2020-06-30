@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 622015ecbc2730c5b0a8cdf7b2ba92c4f5963886
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe610ea87c492e0bf562fe00145c3abaf76b8ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329809"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520630"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Instrukcje: Tworzenie raportu ETW narzędzi profilowania
 Raport śledzenie zdarzeń systemu Windows (ETW) zawiera listę zdarzeń ETW, które są rejestrowane w sesji wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania. Dane ETW są zbierane w postaci binarnej (.* ETL*). Aby uzyskać więcej informacji na temat tego raportu, zobacz [raport śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).
@@ -34,7 +34,7 @@ Raport śledzenie zdarzeń systemu Windows (ETW) zawiera listę zdarzeń ETW, kt
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary: ETW [/XML]**
 
-    |||
+    |Element|Opis|
     |-|-|
     |*ToolsPath*|Ścieżka narzędzia narzędzia profilowania. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
     |*VSPFile*|Dane profilowania (.* VSP* lub. *vsps*) rozszerzeniem. Akceptowane są pełne i częściowe ścieżki.|

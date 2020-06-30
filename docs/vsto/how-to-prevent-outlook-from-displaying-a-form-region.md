@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Ochrona programu Outlook przed wyświetlaniem regionów formularzy'
+title: 'Instrukcje: zapobieganie wyświetlaniu regionu formularza przez program Outlook'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,35 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90da255beb0a85a302158feb1f9d5cc4981437eb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967660"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520137"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Instrukcje: Ochrona programu Outlook przed wyświetlaniem regionów formularzy
-  Może to być sytuacje, w których nie ma programu Microsoft Office Outlook do wyświetlania regionu formularza dla określonego elementu. Na przykład skontaktuj się z pomocą element zawiera adres służbowy, może uniemożliwić pokazujący lokalizacji firmy na mapie wyświetlaniu regionu formularza.
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Instrukcje: zapobieganie wyświetlaniu regionu formularza przez program Outlook
+  Mogą wystąpić sytuacje, w których nie chcesz, aby program Microsoft Office Outlook wyświetlał region formularza dla określonego elementu. Na przykład jeśli element Contact nie zawiera adresu służbowego, można zapobiec wyświetlaniu regionu formularza, który pokazuje lokalizację firmy na mapie.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Aby zapobiec wyświetlaniu regionu formularza programu Outlook
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Aby uniemożliwić programowi Outlook wyświetlanie regionu formularza
 
 1. Otwórz plik kodu dla regionu formularza, który chcesz zmodyfikować.
 
-2. Rozwiń **fabryka regionów formularza** kodu regionu.
+2. Rozwiń węzeł region kod **fabryczny regionu formularza** .
 
-3. Dodaj kod, aby `FormRegionInitializing` programu obsługi zdarzeń, która ustawia <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> właściwość <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> klasy **true**.
+3. Dodaj kod do `FormRegionInitializing` programu obsługi zdarzeń, który ustawia <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> Właściwość <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> klasy na **true**.
 
-   W tym przykładzie, jeśli element kontaktu nie zawierają adresu <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> właściwość jest ustawiona na **true**, i regionu formularza nie jest wyświetlana.
+   Jeśli w tym przykładzie element Contact nie zawiera adresu, <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> Właściwość ma **wartość true**, a region formularza nie jest wyświetlany.
 
 ## <a name="example"></a>Przykład
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
  [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
-- [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
-- [Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Przewodnik: Projektowanie regionu formularza programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

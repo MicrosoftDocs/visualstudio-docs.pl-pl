@@ -1,9 +1,9 @@
 ---
-title: '&lt;Opis&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;Description — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.custom: secdec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ede5ac920c1d40402504544a13f8a00905b82e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c8b54f8ccf2181a053ae5d2fe221b49840cd72c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972385"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520270"
 ---
-# <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Opis&gt; — element (Office development w programie Visual Studio)
-  `description` Elementu `vstov4` przestrzeni nazw przechowuje opis rozwiązania pakietu Office, który pojawia się w oknie dialogowym dodatków COM aplikacji pakietu Microsoft Office.
+# <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Description — &gt; element (Programowanie Office w Visual Studio)
+  `description`Element `vstov4` przestrzeni nazw przechowuje opis rozwiązania pakietu Office, które pojawia się w oknie dialogowym dodatki COM Microsoft Office aplikacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,15 +33,15 @@ ms.locfileid: "62972385"
 </description>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- Opcjonalna. `description` Element znajduje się w `vstov4` przestrzeni nazw. Zawiera opis dodatku, który pojawia się w oknie dialogowym dodatków COM aplikacji pakietu Microsoft Office.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ Opcjonalny. `description`Element znajduje się w `vstov4` przestrzeni nazw. Zawiera opis dodatku, który pojawia się w oknie dialogowym Dodatki COM Microsoft Office aplikacji.
 
- `description` Element nie ma atrybutów lub elementów.
+ `description`Element nie ma atrybutów ani elementów.
 
-## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO
+## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `description` elementu dla rozwiązań pakietu dodatku poziomu aplikacji wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `description` element rozwiązania na poziomie aplikacji wdrożonego za pomocą programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -52,7 +52,7 @@ ms.locfileid: "62972385"
 </vstov4:description>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)
