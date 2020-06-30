@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e233be301630b00031bb90cd95fc78c2697c4e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348434"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536568"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika z Tylko mój kod
 
@@ -188,7 +188,7 @@ Plik *. natstepfilter* jest plikiem XML o następującej składni:
 |Element|Opis|
 |-------------|-----------------|
 |`Function`|Wymagany. Określa jedną lub więcej funkcji jako funkcji niebędących użytkownikami.|
-|`Name`|Wymagany. Sformatowane wyrażenie regularne ECMA-262 określające pełną nazwę funkcji do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> informuje debuger, że wszystkie metody w `MyNS::MyClass` są uznawane za kod niebędący użytkownikiem. W dopasowaniu jest rozróżniana wielkość liter.|
+|`Name`|Wymagany. Sformatowane wyrażenie regularne ECMA-262 określające pełną nazwę funkcji do dopasowania. Przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> informuje debuger, że wszystkie metody w `MyNS::MyClass` są uznawane za kod niebędący użytkownikiem. W dopasowaniu jest rozróżniana wielkość liter.|
 |`Module`|Opcjonalny. Sformatowane wyrażenie regularne ECMA-262 określa pełną ścieżkę do modułu zawierającego funkcję. W dopasowaniu nie jest rozróżniana wielkość liter.|
 |`Action`|Wymagany. Jedną z następujących wartości uwzględniających wielkość liter:<br /><br /> `NoStepInto`— informuje debugera, aby przekroczyć funkcję.<br /> `StepInto`— informuje debuger, aby wkraczał do funkcji, zastępując wszystkie inne `NoStepInto` dla dopasowanej funkcji.|
 
@@ -196,7 +196,7 @@ Plik *. natstepfilter* jest plikiem XML o następującej składni:
 
 <a name="BKMK_JS_User_and_non_user_code"></a>Język JavaScript Tylko mój kod kontroluje i wywołają Wyświetlanie stosu przez kategoryzację kodu w jednej z tych klasyfikacji:
 
-|||
+|Klasyfikacja|Opis|
 |-|-|
 |**Kod**|Kod użytkownika, który posiadasz i kontrolujesz.|
 |**LibraryCode**|Kod niebędący użytkownikiem z bibliotek, które są regularnie używane, a aplikacja polega na poprawnym działaniu (na przykład WinJS lub jQuery).|
@@ -279,7 +279,7 @@ Specyfikacje w tym pliku przesłaniają klasyfikacje domyślne i *mycode.default
 
 Pary wartość klucza **eval**, **Function**i **ScriptBlock** określają sposób, w jaki jest klasyfikowany dynamicznie wygenerowany kod:
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Eval**|Skrypt, który jest wykonywany przez przekazanie ciągu do funkcji dostarczonej przez hosta `eval` . Domyślnie skrypt Eval jest klasyfikowany jako **kod**.|
 |**Funkcja**|Skrypt, który jest wykonywany przez przekazanie ciągu do `Function` konstruktora. Domyślnie skrypt funkcji jest klasyfikowany jako **LibraryCode**.|
@@ -295,7 +295,7 @@ Można zmienić wartość jednego z następujących słów kluczowych:
 
 Pary **kod**, **biblioteki**i **niepowiązane** wartości klucza określają adresy URL lub pliki, które mają zostać uwzględnione w klasyfikacji:
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Kod**|Tablica adresów URL lub plików, które są klasyfikowane jako **kod**.|
 |**Biblioteki**|Tablica adresów URL lub plików, które są klasyfikowane jako **LibraryCode**.|

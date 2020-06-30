@@ -1,8 +1,8 @@
 ---
-title: Okno interaktywne Pythona (REPL)
-description: Użyj okna interaktywnego (REPL) do szybkiego tworzenia kodu języka Python w programie Visual Studio.
+title: Okno interaktywne języka Python (REPL)
+description: Użyj okna interaktywnego (REPL) do szybkiego tworzenia kodu w języku Python w programie Visual Studio.
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,119 +10,119 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302764"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533552"
 ---
-# <a name="work-with-the-python-interactive-window"></a>Praca z interakcyjnym oknem Pythona
+# <a name="work-with-the-python-interactive-window"></a>Współpraca z oknem interaktywnym języka Python
 
-Visual Studio udostępnia interaktywne okno pętli odczytu i oceny i drukowania (REPL) dla każdego środowiska języka Python, co poprawia po REPL można uzyskać z *python.exe* w wierszu polecenia. **Okno Interaktywne** (otwarte za pomocą poleceń menu **Zobacz** > inne środowisko**Other Windows** > **&lt;&gt; ** systemu Windows interaktywne) umożliwia wprowadzenie dowolnego kodu języka Python i wyświetlenia natychmiastowych wyników. Ten sposób kodowania pomaga uczyć się i eksperymentować z interfejsami API i bibliotekami oraz interaktywnie opracowywać kod roboczy do uwzględnienia w projektach.
+Program Visual Studio udostępnia interaktywne okno pętle odczytu i wydrukowania (REPL) dla każdego środowiska języka Python, które usprawnia REPL *python.exe* w wierszu polecenia. Okno **interaktywne** (otwierane za pomocą polecenia **Wyświetl**  >  **inne**  >  ** &lt; &gt; interaktywne menu środowisko** Windows) umożliwia wprowadzanie dowolnego kodu w języku Python i wyświetlanie wyników natychmiastowych. Ten sposób kodowania pomaga uczyć się i eksperymentować z interfejsami API i bibliotekami oraz interaktywnie opracowywać kod roboczy do uwzględnienia w projektach.
 
 ![Okno interaktywne języka Python](media/interactive-window.png)
 
-Visual Studio ma wiele trybów REPL języka Python do wyboru:
+Program Visual Studio ma wiele trybów REPL języka Python do wyboru:
 
-| Repl | Opis | Edytowanie | Debugging | Obrazy |
+| REPL | Opis | Edytowanie | Debugowanie | Obrazy |
 | --- | --- | --- | --- | --- |
-| Standardowa | Default REPL, rozmawia bezpośrednio z Pythonem | Edycja standardowa (wielowierszowa itp.). | Tak, za pośrednictwem`$attach` | Nie |
-| Debugowanie | Domyślne REPL, rozmowy z debugowanym procesem Pythona | Edycja standardowa | Tylko debugowanie | Nie |
-| Ipython | REPL rozmawia z zapleczem IPython | Polecenia IPython, wygody Pylab | Nie | Tak, wbudowany w REPL |
-| IPython w/o Pylab | REPL rozmawia z zapleczem IPython | Standardowy IPython | Nie | Tak, oddzielne okno |
+| Standardowa (Standard) | REPL domyślne, rozmowy bezpośrednio do języka Python | Standardowe edytowanie (wielowierszowe itp.). | Tak, za pomocą`$attach` | Nie |
+| Debugowanie | REPL domyślne, rozmowy z debugowanym procesem języka Python | Edycja standardowa | Tylko debugowanie | Nie |
+| IPython | REPLe rozmowy z zapleczem IPython | Polecenia IPython, wygody Pylab | Nie | Tak, wbudowane w REPL |
+| IPython w/o Pylab | REPLe rozmowy z zapleczem IPython | Standardowa IPython | Nie | Tak, oddziel okno |
 
-W tym artykule opisano tryby **Standardowy** i **Debug** REPL. Aby uzyskać szczegółowe informacje na temat trybów IPython, zobacz [Korzystanie z IPython REPL](interactive-repl-ipython.md).
+W tym artykule opisano tryby REPL **standardowego** i **debugowania** . Szczegółowe informacje na temat trybów IPython można znaleźć w temacie [Use the IPYTHON REPL](interactive-repl-ipython.md).
 
-Aby uzyskać szczegółowe wskazówki z przykładami, w tym interakcji z edytorem, takich jak **Ctrl**+**Enter**, zobacz [Samouczek Krok 3: Użyj interaktywnego okna REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Aby uzyskać szczegółowy przewodnik z przykładami, w tym interakcje z edytorem, takie jak **Ctrl** + **Enter**, zobacz [samouczek krok 3: korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
-## <a name="open-an-interactive-window"></a>Otwieranie okna interaktywnego
+## <a name="open-an-interactive-window"></a>Otwórz okno interaktywne
 
-Istnieje kilka sposobów otwierania okna **Interaktywne** dla środowiska.
+Istnieje kilka sposobów otwierania okna **interaktywnego** dla środowiska.
 
-Najpierw przełącz się do okna Środowiska Języka Python **(Wyświetl** > inne**środowiska Języka** **Windows** > Python lub **Ctrl**+**K** > **Ctrl)**+**`** i wybierz polecenie lub przycisk **Otwórz okno interaktywne** dla wybranego środowiska.
+Najpierw przejdź do okna środowiska języka Python (**Wyświetl**  >  **inne**  >  **środowiska Windows Python** lub **Ctrl** + **K**  >  **Ctrl** + **`** ) i wybierz polecenie **Otwórz okno interaktywne** lub przycisk w wybranym środowisku.
 
-![Łącze interakcyjne okno w oknie Środowiska języka Python](media/interactive-window-opening.png)
+![Łącze okna interaktywnego w oknie środowiska języka Python](media/interactive-window-opening.png)
 
-Po drugie, w dolnej części menu **Widok** > **innego systemu Windows** znajduje się polecenie Python Interactive **Window** dla środowiska domyślnego, a także polecenie przełączania się do okna **Środowiska:**
+Po drugie, w dolnej części menu **Wyświetl**  >  **inne** okna, istnieje polecenie **interaktywnego okna języka Python** dla środowiska domyślnego, a także polecenie przełączenia do okna **środowiska** :
 
-![Elementy menu okno interaktywne w widoku > innych systemach Windows](media/interactive-window-menu.png)
+![Elementy menu okna interaktywnego w widoku > inne okna](media/interactive-window-menu.png)
 
-Po trzecie, można otworzyć okno **Interaktywne** w pliku startowym w projekcie lub dla pliku autonomicznego, wybierając **debugowanie** > **projektu \<wykonania |> pliku w** poleceniu menu Python Interactive (**Shift**+**Alt**+**F5**):
+Po trzecie można otworzyć okno **interaktywne** w pliku startowym w projekcie lub dla autonomicznego pliku, wybierając polecenie **Debuguj**  >  **Wykonaj \<Project | File> w interakcyjnym** menu języka Python (**SHIFT** + **Alt** + **F5**):
 
-![Wykonywanie projektu w interaktywnym menu języka Python](media/interactive-execute-project.png)
+![Wykonaj projekt w menu interaktywnym Python](media/interactive-execute-project.png)
 
-Na koniec możesz wybrać kod w pliku i użyć polecenia [ **Wyślij do interaktywnej** ](#send-to-interactive-command) opisanego poniżej.
+Na koniec możesz wybrać kod w pliku i użyć [polecenia **Wyślij do interaktywnego** ](#send-to-interactive-command) opisanego poniżej.
 
-## <a name="interactive-window-options"></a>Interaktywne opcje okna
+## <a name="interactive-window-options"></a>Opcje okna interaktywnego
 
-Możesz kontrolować różne aspekty okna **interaktywnego** za pomocą**opcji** >  **narzędzi** > **Python** > **Interactive Windows** (zobacz [Opcje):](python-support-options-and-settings-in-visual-studio.md)
+Można kontrolować różne aspekty okna **interaktywnego** za pomocą opcji **Narzędzia**  >  **Options**  >  **Python**  >  **Interactive Windows** (zobacz [Opcje](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Opcje interaktywnego okna języka Python](media/options-interactive-windows.png)
 
-## <a name="use-the-interactive-window"></a>Korzystanie z okna Interaktywne
+## <a name="use-the-interactive-window"></a>Korzystanie z okna interaktywnego
 
-Po otwarciu okna **Interaktywne** można rozpocząć wprowadzanie kodu wiersz ** \> \> ** po wierszu w wierszu w wierszu. **Okno Interaktywne** wykonuje każdy wiersz podczas wprowadzania go, który obejmuje importowanie modułów, definiowanie zmiennych itd.:
+Po otwarciu okna **interaktywnego** można zacząć wprowadzać kod wiersz po wierszu w **\>\>\>** wierszu polecenia. Okno **interaktywne** wykonuje każdy wiersz w miarę wprowadzania, który obejmuje importowanie modułów, Definiowanie zmiennych i tak dalej:
 
 ![Okno interaktywne języka Python](media/interactive-window.png)
 
-Wyjątkiem jest, gdy dodatkowe wiersze kodu są potrzebne do `for` pełnej instrukcji, takich jak gdy instrukcja kończy się dwukropkiem, jak pokazano powyżej. W takich przypadkach wiersz monit zmienia się na **...** wskazując, że należy wprowadzić dodatkowe wiersze dla bloku, jak pokazano w czwartej i piątej linii na powyższej grafice. Po naciśnięciu **klawisza Enter** w pustym wierszu okno **Interaktywne** zamyka blok i uruchamia go w interpreterze.
+Wyjątek polega na tym, że dodatkowe wiersze kodu są konieczne do wykonania kompletnej instrukcji, na przykład gdy `for` instrukcja kończy się znakiem dwukropka, jak pokazano powyżej. W takich przypadkach wiersz wiersza zmienia się na **...** wskazujący, że musisz wprowadzić dodatkowe linie dla bloku, jak pokazano w czwartym i piątym wierszu grafiki powyżej. Po naciśnięciu klawisza **Enter** w pustym wierszu okno **interaktywne** zamknie blok i uruchomi go w interpreterze.
 
 > [!Tip]
-> **Okno Interaktywne** poprawia środowisko wiersza polecenia języka Python, automatycznie wcięcie instrukcji, które należą do otaczającego zakresu. Jego historia (przypomniana strzałką w górę) zawiera również elementy wielowierszowe, podczas gdy wiersz polecenia REPL zapewnia tylko pojedyncze wiersze.
+> Okno **interaktywne** ulepsza normalne środowisko wiersza polecenia w języku Python REPL przez automatyczne tworzenie wcięć instrukcji należących do otaczającego zakresu. Jego historia (jest wywoływana z strzałką w górę) zawiera również elementy wielowierszowe, natomiast wiersz polecenia REPL zawiera tylko pojedyncze wiersze.
 
-<a name="meta-commands"></a>Okno **Interaktywne** obsługuje również kilka meta-poleceń. Wszystkie meta-polecenia zaczynają `$`się od `$help` , i można wpisać, `$help <command>` aby uzyskać listę meta-poleceń i uzyskać szczegóły użycia dla określonego polecenia.
+<a name="meta-commands"></a>Okno **interaktywne** obsługuje również kilka meta poleceń. Wszystkie meta-polecenia zaczynają się od `$` i można wpisać polecenie, `$help` Aby wyświetlić listę meta poleceń i `$help <command>` uzyskać szczegóły użycia określonego polecenia.
 
 | Meta-polecenie | Opis |
 | --- | --- |
-| `$$` | Wstawia komentarz, który jest przydatny do komentowania kodu w całej sesji. |
-| `$attach` | Dołącza debuger programu Visual Studio do procesu okna REPL, aby włączyć debugowanie. |
-| `$cls`, `$clear` | Czyści zawartość okna edytora, pozostawiając historię i kontekst wykonywania nienaruszone. |
+| `$$` | Wstawia komentarz, który ułatwia dodawanie komentarzy do kodu w całej sesji. |
+| `$attach` | Dołącza debuger programu Visual Studio do procesu okna REPL w celu włączenia debugowania. |
+| `$cls`, `$clear` | Czyści zawartość okna edytora, pozostawiając historię i kontekst wykonywania bez zmian. |
 | `$help` | Wyświetl listę poleceń lub pomoc dotyczącą określonego polecenia. |
-| `$load` | Ładuje polecenia z pliku i wykonuje do zakończenia. |
+| `$load` | Ładuje polecenia z pliku i wykonuje je do momentu ukończenia. |
 | `$mod` | Przełącza bieżący zakres do określonej nazwy modułu. |
-| `$reset` | Resetuje środowisko wykonywania do stanu początkowego, ale zachowuje historię. |
-| `$wait` | Czeka na co najmniej określoną liczbę milisekund. |
+| `$reset` | Przywraca stan początkowy środowiska wykonawczego, ale zachowuje historię. |
+| `$wait` | Czeka przez co najmniej określoną liczbę milisekund. |
 
-Polecenia są również rozszerzalne przez rozszerzenia programu Visual Studio `IInteractiveWindowCommand` przez implementowanie i eksportowanie[(przykład).](https://github.com/Microsoft/PTVS/blob/master/Python/Product/PythonTools/PythonTools/Repl/InteractiveWindowCommands.cs#L85)
+Polecenia są również rozszerzalne przez rozszerzenia programu Visual Studio przez implementację i eksportowanie `IInteractiveWindowCommand` ([przykład](https://github.com/Microsoft/PTVS/blob/master/Python/Product/PythonTools/PythonTools/Repl/InteractiveWindowCommands.cs#L85)).
 
-## <a name="switch-scopes"></a>Zakresy przełączników
+## <a name="switch-scopes"></a>Przełącz zakresy
 
-Domyślnie **okno Interaktywne** dla projektu jest ograniczone do pliku startowego projektu tak, jakby uruchomiono go z wiersza polecenia. W przypadku pliku autonomicznego obejmuje on ten plik. Jednak w dowolnym momencie sesji REPL menu rozwijane w górnej części okna **Interaktywne** umożliwia zmianę zakresu:
+Domyślnie okno **interaktywne** dla projektu jest objęte zakresem pliku startowego projektu tak, jakby było uruchamiane z wiersza polecenia. W przypadku pliku autonomicznego zakresy IT do tego pliku. Jednak w dowolnym momencie podczas sesji REPL, menu rozwijane w górnej części okna **interaktywnego** umożliwia zmianę zakresu:
 
-![Interaktywne zakresy okien](media/interactive-scopes.png)
+![Zakresy okna interaktywnego](media/interactive-scopes.png)
 
-Po zaimportowaniu modułu, `import importlib`takiego jak wpisanie, opcje są wyświetlane w menu rozwijanym, aby przełączyć się do dowolnego zakresu w tym module. Komunikat w oknie **Interaktywna** wskazuje również nowy zakres, dzięki czemu można śledzić, jak masz do pewnego stanu podczas sesji.
+Po zaimportowaniu modułu, takiego jak wpisywanie `import importlib` , opcje są wyświetlane na liście rozwijanej w celu przełączenia się do dowolnego zakresu w tym module. Komunikat w oknie **interaktywnym** wskazuje również nowy zakres, dzięki czemu można śledzić, w jaki sposób masz do pewnego stanu podczas sesji.
 
-Wprowadzenie `dir()` w zakresie wyświetla prawidłowe identyfikatory w tym zakresie, w tym nazwy funkcji, klasy i zmienne. Na przykład `import importlib` za `dir()` pomocą następuje pokazuje następujące:
+Wprowadzenie `dir()` do zakresu wyświetla prawidłowe identyfikatory w tym zakresie, w tym nazwy funkcji, klasy i zmienne. Na przykład przy użyciu, `import importlib` a następnie `dir()` :
 
 ![Okno interaktywne w zakresie importlib](media/interactive-importlib-scope.png)
 
-## <a name="send-to-interactive-command"></a>Polecenie Wyślij do interakcyjne
+## <a name="send-to-interactive-command"></a>Wyślij do polecenia interaktywnego
 
-Oprócz bezpośredniej pracy w oknie **Interaktywna** można wybrać kod w edytorze, kliknąć prawym przyciskiem myszy i wybrać polecenie **Wyślij do interaktywnej** lub nacisnąć **klawisz Ctrl**+**Enter**.
+Oprócz bezpośredniego działania w oknie **interaktywnym** można wybrać kod w edytorze, kliknąć prawym przyciskiem myszy, a następnie wybrać polecenie **Wyślij do interaktywne** lub nacisnąć klawisz **Ctrl** + **Enter**.
 
-![Polecenie Wyślij do menu interaktywnego](media/interactive-send-to.png)
+![Polecenie Wyślij do menu interakcyjnego](media/interactive-send-to.png)
 
-To polecenie jest przydatne do tworzenia kodu iteracyjną lub ewolucyjnej, w tym testowania kodu podczas jego opracowywania. Na przykład po wysłaniu fragmentu kodu do okna **Interaktywnego** i wyświetleniu jego danych wyjściowych można nacisnąć strzałkę w górę, aby ponownie wyświetlić kod, zmodyfikować go i szybko przetestować, naciskając **klawisze Ctrl**+**Enter**. (Naciśnięcie **klawisza Enter** na końcu wejścia powoduje jego wykonanie, ale naciśnięcie klawisza **Enter** w środku wejścia powoduje wstawienie nowej linii). Po uzyskaniu odpowiedniego kodu można łatwo skopiować go z powrotem do pliku projektu.
+To polecenie jest przydatne w przypadku iteracyjnego lub ewolucyjnego tworzenia kodu, w tym testowania kodu podczas jego tworzenia. Na przykład po wysłaniu fragmentu kodu do okna **interaktywnego** i zapoznaniu się z jego danymi wyjściowymi można nacisnąć strzałkę w górę, aby ponownie wyświetlić kod, zmodyfikować go i przetestować szybko, naciskając klawisz **Ctrl** + **Enter**. (Naciśnięcie klawisza **Enter** na końcu danych wejściowych wykonuje go, ale naciśnięcie klawisza **Enter** w środku danych wejściowych wstawia nowy wiersz.) Gdy masz odpowiedni kod, możesz łatwo skopiować go z powrotem do pliku projektu.
 
 > [!Tip]
-> Domyślnie visual studio **>>>** usuwa i **...** Funkcja REPL monituje o wklejenie kodu z okna **Interaktywne** do edytora. To zachowanie można zmienić na karcie**Options** > **Edytor** > tekstu **Narzędzia** > **Python** > **Zaawansowane** za pomocą opcji **Wklej usuwa monity REPL.** Zobacz [Opcje — różne opcje](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Domyślnie program Visual Studio usuwa **>>>** i **...** REPL pojawia się przy wklejaniu kodu z okna **interaktywnego** do edytora. To zachowanie można zmienić na karcie Opcje **narzędzi**  >  **Options**  >  **Edytor tekstu**  >  **Python**  >  w języku Python**Zaawansowane** przy użyciu opcji **Wklej Usuń REPL** . Zobacz [Opcje — różne opcje](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-## <a name="work-with-code-cells"></a>Praca z komórkami kodu
+## <a name="work-with-code-cells"></a>Pracuj z komórkami kodu
 
-Komórki kodu mogą być używane w analizie danych i są obsługiwane przez różne edytory tekstu.
+Komórki kodu mogą służyć do analizy danych i są obsługiwane przez różne edytory tekstu.
 
-Na przykład podczas korzystania z pliku kodu jako scratchpad, często masz mały blok kodu, który chcesz wysłać wszystkie na raz. Aby zgrupować kod razem, oznacz kod jako *komórkę kodu,* dodając komentarz, zaczynając od `#%%` początku komórki, która kończy poprzednia. Komórki kodu mogą być zwinięte i rozwinięte, a za pomocą **klawisza Ctrl**+**Enter** wewnątrz komórki kodu wysyła całą komórkę do okna **Interaktywne** i przechodzi do następnej.
+Na przykład w przypadku używania pliku kodu jako ScratchPad często istnieje mały blok kodu, który ma być wysyłany jednocześnie. Aby zgrupować kod razem, Oznacz kod jako *komórkę kodu* , dodając komentarz, zaczynając od `#%%` początku komórki, który zostanie zakończony poprzednią. Komórki kodu mogą być zwijane i rozszerzane, a przy użyciu **klawisza Ctrl** + **Enter** wewnątrz komórki kodu jest wysyłana cała komórka do okna **interaktywnego** i przechodzi do następnego.
 
-Program Visual Studio wykrywa również komórki `# In[1]:`kodu, zaczynając od komentarzy, takich jak , który jest formatem, który otrzymujesz podczas eksportowania notesu Jupytera jako pliku Pythona. To wykrywanie ułatwia uruchamianie notesu z [notesów platformy Azure,](https://notebooks.azure.com/) pobierając jako plik języka Python, otwierając w programie Visual Studio i używając **klawisza Ctrl**+**Enter** do uruchamiania każdej komórki.
+Program Visual Studio wykrywa także komórki kodu zaczynające się od komentarzy, takich jak format, który otrzymujesz `# In[1]:` podczas eksportowania notesu Jupyter jako pliku języka Python. To wykrywanie ułatwia uruchamianie notesu z [Azure Notebooks](https://notebooks.azure.com/) przez pobranie go jako pliku języka Python, otwarcie w programie Visual Studio i użycie **klawisza Ctrl** + **Enter** w celu uruchomienia każdej komórki.
 
 ![Interaktywne komórki kodu](media/interactive-code-cells.png)
 
-## <a name="intellisense-behavior"></a>Zachowanie IntelliSense
+## <a name="intellisense-behavior"></a>Zachowanie funkcji IntelliSense
 
-**Okno Interaktywne** zawiera intellisense na podstawie obiektów na żywo, w przeciwieństwie do edytora kodu, w którym IntelliSense opiera się tylko na analizie kodu źródłowego. Te sugestie są bardziej poprawne w oknie **Interaktywne,** szczególnie w przypadku kodu generowanego dynamicznie. Wadą jest to, że funkcje z efektami ubocznymi (takie jak rejestrowanie komunikatów) może mieć wpływ na środowisko rozwoju.
+Okno **interaktywne** zawiera funkcję IntelliSense opartą na obiektach na żywo, w przeciwieństwie do edytora kodu, w którym technologia IntelliSense bazuje wyłącznie na analizie kodu źródłowego. Te sugestie są bardziej prawidłowe w oknie **interaktywnym** , szczególnie z dynamicznie generowanym kodem. Wadą jest to, że funkcje z efektami ubocznymi (takie jak komunikaty rejestrowania) mogą mieć wpływ na środowisko programistyczne.
 
-Jeśli to zachowanie jest problemem, zmień ustawienia w obszarze**Opcje** >  **narzędzi** > **Python** > **Interactive Windows** w grupie Tryb **ukończenia,** zgodnie z opisem [opcji — Opcje interakcyjne okna](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+W przypadku wystąpienia tego problemu zmień ustawienia w obszarze Opcje **Narzędzia**  >  **Options**  >  **Python**  >  **Interactive Windows** w grupie **Tryb uzupełniania** , zgodnie z opisem w temacie [Opcje — interaktywne Opcje systemu Windows](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

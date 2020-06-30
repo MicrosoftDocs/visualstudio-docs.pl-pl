@@ -1,7 +1,7 @@
 ---
-title: Programowe znaleźć adresu e-mail w kontaktach
+title: Programowe Znajdowanie adresu e-mail w kontaktach
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,28 +14,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26e32314db68ae064edac5537222447625cb051d
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: a4a9d52ae16b77b40461a314c6008f8cdd741bcd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328972"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537647"
 ---
-# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Instrukcje: Programowe wyszukiwanie adresu e-mail w kontaktach
-  W tym przykładzie wyszukuje skontaktuj się z folderu kontaktów, które mają taką nazwę domeny **example.com** w ich adresy e-mail.
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Instrukcje: programowe wyszukiwanie adresu e-mail w kontaktach
+  Ten przykład przeszukuje folder Contact dla kontaktów, które mają nazwę domeny **example.com** w swoich adresach e-mail.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
  [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]
 
-## <a name="compile-the-code"></a>Skompilować kod
+## <a name="compile-the-code"></a>Kompiluj kod
  Ten przykład wymaga:
 
-- Kontakty, które mają taką nazwę domeny **example.com** w ich adresy e-mail (na przykład `somebody@example.com`), których imiona i nazwiska.
+- Kontakty, które mają nazwę domeny **example.com** w swoich adresach e-mail (na przykład `somebody@example.com` ), i które mają imiona i nazwiska.
 
-## <a name="see-also"></a>Zobacz także
-- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)
-- [Instrukcje: Programowo Wyślij wiadomość e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Instrukcje: Programowy dostęp do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Instrukcje: Programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+## <a name="see-also"></a>Zobacz też
+- [Pracuj z elementami kontaktów](../vsto/working-with-contact-items.md)
+- [Instrukcje: Programowane wysyłanie wiadomości e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Instrukcje: programowe uzyskiwanie dostępu do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Instrukcje: programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)

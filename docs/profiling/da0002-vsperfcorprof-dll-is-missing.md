@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 73cf890ebbee31e2fa681727b0c72e0ce71d3585
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 36c9f3b33eab8428cd14aa26896c3813422d3dd7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332106"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537075"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: Brak biblioteki VSPerfCorProf.dll
 
-|||
+|Element|Wartość|
 |-|-|
 |Identyfikator reguły|DA0002|
 |Kategoria|Użycie narzędzia profilowania|

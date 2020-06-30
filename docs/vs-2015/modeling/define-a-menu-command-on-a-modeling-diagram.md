@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc633c0cad752203b8dadca81de0f18f4e9b1b3e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918834"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534215"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
 1. W oknie dialogowym **Nowy projekt** w obszarze **projekty modelowania**wybierz pozycję **rozszerzenie polecenia**.
 
-2. Otwórz plik **CS** w nowym projekcie i zmodyfikuj klasę `CommandExtension`, aby zaimplementować polecenie.
+2. Otwórz plik **CS** w nowym projekcie i zmodyfikuj `CommandExtension` klasę, aby zaimplementować polecenie.
 
     Aby uzyskać więcej informacji, zobacz [implementowanie polecenia menu](#Implementing).
 
@@ -47,7 +47,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
 4. Przetestuj polecenie menu, naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie polecenia menu](#Executing).
 
-5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*. vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
+5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin \\ \* \\ \* . vsix** skompilowanego przez projekt. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).
 
    Oto alternatywna procedura:
 
@@ -57,7 +57,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
    1. W menu **plik** wybierz polecenie **Nowy**, **projekt**.
 
-   2. W obszarze **zainstalowane szablony**wybierz **pozycję C# Visual** lub **Visual Basic**. W środkowej kolumnie Wybierz **Biblioteka klas**.
+   2. W obszarze **zainstalowane szablony**wybierz pozycję **Visual C#** lub **Visual Basic**. W środkowej kolumnie Wybierz **Biblioteka klas**.
 
    3. Ustaw **rozwiązanie** , aby wskazać, czy chcesz utworzyć nowe rozwiązanie, czy dodać składnik do rozwiązania VSIX, które zostało już otwarte.
 
@@ -65,19 +65,19 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
 2. Dodaj następujące odwołania do projektu.
 
-   |                                                                                                    Tematy pomocy                                                                                                    |                                                                                                  Co można zrobić                                                                                                  |
+   |                                                                                                    Odwołanie                                                                                                    |                                                                                                  Co można zrobić                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Zdefiniuj składniki za pomocą [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
-   |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Odczytywanie i zmiana właściwości elementów modelu.                                                                                         |
-   |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Utwórz elementy modelu, Modyfikuj kształty na diagramach.                                                                                       |
-   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Zdefiniuj procedury obsługi zdarzeń modelu.<br /><br /> Hermetyzuj serię zmian w modelu. Aby uzyskać więcej informacji, zobacz [łączenie aktualizacji modelu UML przy użyciu transakcji](../modeling/link-uml-model-updates-by-using-transactions.md). |
-   |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]<br /><br /> (nie zawsze wymagane)                                                             |                                                                                   Dostęp do dodatkowych elementów diagramu dla programów obsługi gestów.                                                                                   |
+   |                                                                                        System. ComponentModel. kompozycji                                                                                        |                                         Zdefiniuj składniki za pomocą [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
+   |                                                                                      Microsoft. VisualStudio. UML. Interfaces                                                                                      |                                                                                        Odczytywanie i zmiana właściwości elementów modelu.                                                                                         |
+   |                                                                             Microsoft. VisualStudio. ArchitectureTools. rozszerzalność                                                                              |                                                                                      Utwórz elementy modelu, Modyfikuj kształty na diagramach.                                                                                       |
+   |                                                                                  Microsoft. VisualStudio. Modeling. Sdk. nowszym                                                                                  | Zdefiniuj procedury obsługi zdarzeń modelu.<br /><br /> Hermetyzuj serię zmian w modelu. Aby uzyskać więcej informacji, zobacz [łączenie aktualizacji modelu UML przy użyciu transakcji](../modeling/link-uml-model-updates-by-using-transactions.md). |
+   |                                                            Microsoft. VisualStudio. Modeling. Sdk. diagramy. nowszym<br /><br /> (nie zawsze wymagane)                                                             |                                                                                   Dostęp do dodatkowych elementów diagramu dla programów obsługi gestów.                                                                                   |
    | Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. warstwa<br /><br /> Wymagane tylko dla poleceń na diagramach warstwowych. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając diagramy warstwowe](../modeling/extend-layer-diagrams.md). |                                                                                             Zdefiniuj polecenia na diagramie warstwowym.                                                                                              |
 
 3. Dodaj plik klasy do projektu i ustaw jego zawartość na następujący kod.
 
    > [!NOTE]
-   > Zmień przestrzeń nazw, nazwę klasy i wartość zwracaną przez `Text` na preferencję.
+   > Zmień przestrzeń nazw, nazwę klasy i wartość zwracaną przez `Text` to preferencję.
    >
    >  W przypadku zdefiniowania wielu poleceń pojawiają się one w menu w kolejności alfabetycznej nazw klas.
 
@@ -148,7 +148,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
     1. W **Eksplorator rozwiązań**, w menu skrótów rozwiązania, wybierz **Dodaj**, **Nowy projekt**.
 
-    2. W obszarze **zainstalowane szablony**rozwiń **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie Wybierz pozycję **Projekt VSIX**.
+    2. W obszarze **zainstalowane szablony**rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie Wybierz pozycję **Projekt VSIX**.
 
 3. W Eksplorator rozwiązań, w menu skrótów projektu VSIX, wybierz **Ustaw jako projekt startowy**.
 
@@ -160,19 +160,19 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
     3. Na karcie **zasoby** wybierz pozycję **Nowy**, a następnie w oknie dialogowym Ustaw wartość:
 
-         **Typ** = **składnik MEF**
+         **Typ**  =  **Składnik MEF**
 
-         **Źródło** = **projektu w bieżącym rozwiązaniu**
+         **Źródło**  =  **Projekt w bieżącym rozwiązaniu**
 
-         **Projekt** = *projektu biblioteki klas*
+         **Projekt**  =  *Projekt biblioteki klas*
 
-## <a name="Implementing"></a>Implementowanie polecenia menu
- Klasa poleceń menu implementuje wymagane metody dla <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>Implementowanie polecenia menu
+ Klasa poleceń menu implementuje wymagane metody dla <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> .
 
-|||
+|Podpis|Opis|
 |-|-|
 |`string Text { get; }`|Zwraca etykietę elementu menu.|
-|`void QueryStatus(IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie.<br /><br /> Ta metoda nie powinna zmieniać modelu.<br /><br /> Użyj `DiagramContext.CurrentDiagram.SelectedShapes`, aby określić, czy polecenie ma być wyświetlane i włączone.<br /><br /> Zbiór<br /><br /> -   `command.Visible` do `true`, jeśli polecenie musi pojawić się w menu, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie<br />-   `command.Enabled` do `true`, jeśli użytkownik może kliknąć polecenie w menu<br />-   `command.Text`, aby dynamicznie ustawić etykietę menu|
+|`void QueryStatus(IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie.<br /><br /> Ta metoda nie powinna zmieniać modelu.<br /><br /> Użyj, `DiagramContext.CurrentDiagram.SelectedShapes` Aby określić, czy polecenie ma być wyświetlane i włączone.<br /><br /> Zbiór<br /><br /> -   `command.Visible`na `true` Jeśli polecenie musi pojawić się w menu, gdy użytkownik kliknie prawym przyciskiem myszy na diagramie<br />-   `command.Enabled`na `true` Jeśli użytkownik może kliknąć polecenie w menu<br />-   `command.Text`Aby ustawić etykietę menu dynamicznie|
 |`void Execute (IMenuCommand command);`|Wywoływana, gdy użytkownik kliknie element menu, jeśli jest widoczny i włączony.|
 
 ### <a name="accessing-the-model-in-code"></a>Uzyskiwanie dostępu do modelu w kodzie
@@ -184,7 +184,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
  ...
 
- Deklaracja `IDiagramContext` umożliwia pisanie kodu w metodach, które uzyskują dostęp do diagramu, bieżącego wyboru i modelu:
+ Deklaracja programu `IDiagramContext` umożliwia pisanie kodu w metodach, które uzyskują dostęp do diagramu, bieżącego wyboru i modelu:
 
 ```
 IDiagram diagram = this.DiagramContext.CurrentDiagram;
@@ -202,31 +202,31 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Interfejs API pozwala także zmieniać właściwości elementów, usuwać elementy i relacje oraz tworzyć nowe elementy i relacje.
 
- Domyślnie każda zmiana wprowadzona w metodzie Execute zostanie wykonana w oddzielnej transakcji. Użytkownik będzie mógł cofnąć każdą zmianę osobno. Jeśli chcesz grupować zmiany w pojedynczą transakcję, użyj <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction> zgodnie z opisem w temacie [link aktualizacje modelu UML przy użyciu transakcji](../modeling/link-uml-model-updates-by-using-transactions.md).
+ Domyślnie każda zmiana wprowadzona w metodzie Execute zostanie wykonana w oddzielnej transakcji. Użytkownik będzie mógł cofnąć każdą zmianę osobno. Jeśli chcesz grupować zmiany w pojedynczą transakcję, użyj polecenia <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction> zgodnie z opisem w temacie [link aktualizacje modelu UML przy użyciu transakcji](../modeling/link-uml-model-updates-by-using-transactions.md).
 
 ### <a name="use-the-ui-thread-for-updates"></a>Korzystanie z wątku interfejsu użytkownika dla aktualizacji
  W niektórych przypadkach może być przydatne, aby aktualizować model z wątku w tle. Na przykład jeśli polecenie ładuje dane z powolnego zasobu, można wykonać ładowanie w wątku tła, tak aby użytkownik mógł zobaczyć zmiany w trakcie ich wykonywania, i anulować operację, jeśli jest to konieczne.
 
  Należy jednak pamiętać, że Magazyn modeli nie jest bezpieczny dla wątków. Należy zawsze używać wątku interfejsu użytkownika, aby wprowadzać aktualizacje, a jeśli jest to możliwe, Zapobiegaj dokonywaniu edycji przez użytkownika, gdy operacja w tle jest w toku. Aby zapoznać się z przykładem, zobacz [aktualizowanie modelu UML z wątku w tle](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="Executing"></a>Wykonywanie polecenia menu
+## <a name="executing-the-menu-command"></a><a name="Executing"></a>Wykonywanie polecenia menu
  W celach testowych wykonaj polecenie w trybie debugowania.
 
 #### <a name="to-test-the-menu-command"></a>Aby przetestować polecenie menu
 
 1. Naciśnij klawisz **F5**lub w menu **Debuguj** wybierz polecenie **Rozpocznij debugowanie**.
 
-     Zostanie uruchomione doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+     Doświadczalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchomienia.
 
-     **Rozwiązywanie problemów**: jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie zostanie uruchomiony:
+     **Rozwiązywanie problemów**: Jeśli nowy nie zostanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchomiony:
 
     - Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.
 
-    - W Eksplorator rozwiązań, w menu skrótów dla uruchamiania lub tylko projektu, wybierz **Właściwości**. W edytorze właściwości projektu wybierz kartę **debugowanie** . Upewnij się, że ciąg w polu **początkowy program zewnętrzny** jest pełną ścieżką do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:
+    - W Eksplorator rozwiązań, w menu skrótów dla uruchamiania lub tylko projektu, wybierz **Właściwości**. W edytorze właściwości projektu wybierz kartę **debugowanie** . Upewnij się, że ciąg w polu **początkowy program zewnętrzny** jest pełną nazwą ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , zazwyczaj:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
-2. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]eksperymentalnym Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy poleceń menu.
+2. W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , Otwórz lub Utwórz projekt modelowania, a następnie otwórz lub Utwórz diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy poleceń menu.
 
 3. Otwórz menu skrótów w dowolnym miejscu na diagramie. Polecenie powinno pojawić się w menu.
 
@@ -234,14 +234,14 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Projekt polecenia menu jest wymieniony jako składnik MEF na karcie **zasoby** w pliku **source. Extensions. manifest** w projekcie VSIX.
 
-    - Parametry `Import` i `Export` atrybuty są prawidłowe.
+    - Parametry `Import` i `Export` atrybutów są prawidłowe.
 
-    - Metoda `QueryStatus` nie ustawia `command`.`Enabled` lub `Visible` pola do `false`.
+    - `QueryStatus`Metoda nie jest ustawiona `command` .`Enabled` lub `Visible` pola do `false` .
 
-    - Typ diagramu modelu, którego używasz (Klasa UML, sekwencja i tak dalej) jest wymieniony jako jeden z atrybutów klas poleceń menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` i tak dalej.
+    - Typ diagramu modelu, którego używasz (Klasa UML, sekwencja i tak dalej) jest wymieniony jako jeden z atrybutów klas poleceń menu `[ClassDesignerExtension]` `[SequenceDesignerExtension]` i tak dalej.
 
-## <a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
- Rozszerzenie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] można zainstalować zarówno na swoim komputerze, jak i na innych komputerach.
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
+ Rozszerzenie można zainstalować [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zarówno na swoim komputerze, jak i na innych komputerach.
 
 #### <a name="to-install-an-extension"></a>Aby zainstalować rozszerzenie
 
@@ -249,17 +249,17 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. W **Eksplorator rozwiązań**, w menu skrótów projektu VSIX, wybierz polecenie **Otwórz folder w Eksploratorze Windows**.
 
-    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **. vsix**
+    2. Zlokalizuj plik **bin \\ \* \\ **_YourProject_**. vsix**
 
 2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować rozszerzenie. Może to być własny komputer lub inny.
 
-     Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] określonych w elemencie **source. Extension. vsixmanifest**.
+     Komputer docelowy musi mieć jedną z wersji programu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] określonych w elemencie **source. Extension. vsixmanifest**.
 
 3. Na komputerze docelowym otwórz plik **. vsix** , na przykład klikając go dwukrotnie.
 
      Zostanie otwarty **Instalator rozszerzenia programu Visual Studio** , który zainstaluje rozszerzenie.
 
-4. Uruchom lub Uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+4. Uruchom lub Uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] .
 
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie
 
@@ -271,10 +271,10 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[wersja] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [wersja] \Extensions**
 
-## <a name="MenuExample"></a>Przyklad
- Poniższy przykład pokazuje kod polecenia menu, które spowoduje wymianę nazw dwóch elementów na diagramie klas. Ten kod musi być skompilowany w projekcie rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i instalowany zgodnie z opisem w poprzednich sekcjach.
+## <a name="example"></a><a name="MenuExample"></a>Przyklad
+ Poniższy przykład pokazuje kod polecenia menu, które spowoduje wymianę nazw dwóch elementów na diagramie klas. Ten kod musi być skompilowany w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekcie rozszerzenia i zainstalowany zgodnie z opisem w poprzednich sekcjach.
 
 ```
 using System.Collections.Generic; // for IEnumerable

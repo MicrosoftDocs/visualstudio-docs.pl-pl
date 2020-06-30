@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285986"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537283"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie użycia zasobów i działania wątku interfejsu użytkownika (XAML)
 
@@ -100,7 +100,7 @@ Widok szczegółów polega na tym, że spędzasz najwięcej czasu na analizowani
 
 Obsługiwane są następujące zdarzenia:
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Asax**|Czas poświęcony na analizowanie plików XAML i tworzenie obiektów.<br /><br /> Rozwijanie węzła **analizy** w **szczegółach osi czasu** wyświetla łańcuch zależności wszystkich plików XAML, które zostały przeanalizowane ze względu na zdarzenie główne. Ta Porada umożliwia zidentyfikowanie niepotrzebnych analiz plików i tworzenie obiektów w scenariuszach z uwzględnieniem wydajności i ich optymalizację.|
 |**Layout**|W dużych aplikacjach, tysiące elementów mogą być wyświetlane na ekranie w tym samym czasie. To wyświetlenie może spowodować niską szybkość klatek interfejsu użytkownika i odpowiadające im niewystarczająca czas odpowiedzi aplikacji. Zdarzenie układu dokładnie określa koszt zniesienia poszczególnych elementów (to znaczy czas spędzony w rozmieszczeniu, mierze, ApplyTemplate, ArrangeOverride i MeasureOverride). Kompiluje także drzewa wizualne, które uczestniczyły w przejściu do układu. Możesz użyć tej wizualizacji, aby określić, które drzewa logiczne mają być oczyszczane, lub aby oszacować inne mechanizmy odroczenia, aby zoptymalizować przebieg układu.|
@@ -116,7 +116,7 @@ Obsługiwane są następujące zdarzenia:
 
 Pasek narzędzi **szczegóły osi czasu** umożliwia sortowanie, filtrowanie i określanie adnotacji wpisów widoku **szczegółów osi czasu** .
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Sortuj według**|Sortuj według czasu rozpoczęcia lub długości zdarzeń.|
 |![Grupuj zdarzenia według ramki](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Dodaje lub usuwa kategorię **ramek** najwyższego poziomu, która grupuje zdarzenia według ramki.|

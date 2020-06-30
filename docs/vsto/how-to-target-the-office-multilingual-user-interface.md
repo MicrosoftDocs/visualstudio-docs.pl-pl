@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Docelowy urząd wielojęzyczny interfejs użytkownika'
+title: 'Instrukcje: kierowanie wielojęzycznego interfejsu użytkownika pakietu Office'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,27 +17,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961142"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537504"
 ---
-# <a name="how-to-target-the-office-multilingual-user-interface"></a>Instrukcje: Docelowy urząd wielojęzyczny interfejs użytkownika
-  Wielojęzyczny interfejs użytkownika (MUI) to funkcja pakietu Microsoft Office, który umożliwia użytkownikowi końcowemu zmianę języka interfejsu użytkownika (UI). Na przykład użytkownik końcowy pracy przy użyciu interfejsu użytkownika w języku angielskim zmienić język interfejsu użytkownika na hiszpański.
+# <a name="how-to-target-the-office-multilingual-user-interface"></a>Instrukcje: kierowanie wielojęzycznego interfejsu użytkownika pakietu Office
+  Wielojęzycznego interfejsu użytkownika (MUI) to Microsoft Office funkcja, która daje użytkownikowi końcowemu możliwość zmiany języka interfejsu użytkownika. Na przykład użytkownik końcowy pracujący z angielskim interfejsem użytkownika może zmienić język interfejsu użytkownika na hiszpański.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Jeśli aplikacja będzie używane przez osoby korzystające z wielu języków, pakietu Office, możesz dodać kod, aby automatycznie zmienić język Twojej ciągi interfejsu użytkownika, język używany przez pakiet Office na komputerze użytkownika (Jeśli użytkownik ma prawidłowe zasoby zainstalowane).
+ Jeśli aplikacja będzie używana przez osoby korzystające z wielu języków pakietu Office, można dodać kod w celu automatycznego zmiany języka ciągów interfejsu użytkownika w celu dopasowania go do języka używanego przez pakiet Office na komputerze użytkownika (Jeśli użytkownik ma zainstalowane poprawne zasoby).
 
-## <a name="to-check-the-current-office-ui-setting"></a>Aby sprawdzić bieżące ustawienia interfejsu użytkownika pakietu Office
+## <a name="to-check-the-current-office-ui-setting"></a>Aby sprawdzić bieżące ustawienie interfejsu użytkownika pakietu Office
 
-1. Użyj <xref:System.Threading.Thread.CurrentUICulture%2A> właściwości bieżącego wątku. Ustawić język Twojej ciągi interfejsu użytkownika, język używany przez wersję pakietu Office, który działa obecnie na komputerze użytkownika.
+1. Użyj <xref:System.Threading.Thread.CurrentUICulture%2A> właściwości bieżącego wątku. Ustaw język ciągów interfejsu użytkownika tak, aby był zgodny z językiem używanym przez wersję pakietu Office, która jest aktualnie uruchomiona na komputerze użytkownika.
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+## <a name="see-also"></a>Zobacz też
+- [Jak: docelowa aplikacja pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Późne powiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md)

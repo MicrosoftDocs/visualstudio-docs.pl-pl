@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be69003d14d2c246f95249b5db0b1fa7d470598
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911436"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536516"
 ---
-# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace dla Visual Studio Enterprise (C#, Visual Basic, C++)
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace for Visual Studio Enterprise (C#, Visual Basic, C++)
 
 Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliTrace do rejestrowania i śledzenia historii wykonywania kodu. Błędy można łatwo znaleźć, ponieważ IntelliTrace umożliwia:
 
@@ -39,24 +39,24 @@ Możesz użyć IntelliTrace w wersji Visual Studio Enterprise (ale nie wersji Pr
 
 ## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?
 
-|||
+|Scenariusz|Tytuł|
 |-|-|
-|**Debuguj moją aplikację przy użyciu IntelliTrace:**<br /><br /> -Pokaż poprzednie zdarzenia.<br />-Wyświetla informacje o wywołaniu dla przeszłych zdarzeń.<br />-Zapisz moją sesję IntelliTrace.<br />— Kontroluj dane zbierane przez IntelliTrace.|- [sprawdzić poprzednie Stany aplikacji przy użyciu IntelliTrace](../debugger/view-historical-application-state.md)<br />[przewodnik - : korzystanie z IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />- [debugowanie historyczne](../debugger/historical-debugging.md)|
-|**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|- [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
-|**Rozpocznij debugowanie z pliku dziennika IntelliTrace (plik iTrace).**|- [przy użyciu zapisanych danych IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
+|**Debuguj moją aplikację przy użyciu IntelliTrace:**<br /><br /> -Pokaż poprzednie zdarzenia.<br />-Wyświetla informacje o wywołaniu dla przeszłych zdarzeń.<br />-Zapisz moją sesję IntelliTrace.<br />— Kontroluj dane zbierane przez IntelliTrace.|- [Zbadaj poprzednie Stany aplikacji przy użyciu IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Przewodnik: używanie IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debugowanie historyczne](../debugger/historical-debugging.md)|
+|**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|- [Korzystanie z autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
+|**Rozpocznij debugowanie z pliku dziennika IntelliTrace (plik iTrace).**|- [Korzystanie z zapisanych danych IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
-## <a name="IntelliTraceSupport"></a>Jakie aplikacje można debugować za pomocą IntelliTrace?
+## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Jakie aplikacje można debugować za pomocą IntelliTrace?
 
-| | |
+| Poziom pomocy technicznej| Typy aplikacji |
 |---------------------| - |
-| **Pełna pomoc techniczna** | -Visual Basic i aplikacje C# wizualne używające .NET Framework 2,0 lub nowszych wersji.<br/>Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i 64-bitowe aplikacje.<br/>Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Aby debugować Microsoft Azure aplikacje za pomocą IntelliTrace, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą usługi IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
-| **Ograniczona pomoc techniczna** | - C++ aplikacje obsługujące obsługę systemu Windows przeglądanie migawek przy użyciu IntelliTrace kroku. Obsługiwane są tylko zdarzenia debugera i wyjątków.<br />— Aplikacje .NET Core i ASP.NET Core obsługiwane tylko dla określonych zdarzeń (kontroler MVC, ADO.NET i HTTPClient) w debugowaniu lokalnym. Autonomiczny moduł zbierający nie jest obsługiwany w przypadku aplikacji .NET Core lub ASP.NET Core.<br />- F# aplikacje na zasadzie eksperymentalnej<br />-PLATFORMY UWP aplikacje obsługiwane tylko dla zdarzeń |
-| **Nieobsługiwane** | — Inne języki i skrypt<br />— Usługi systemu Windows, Silverlight, Xbox lub aplikacje mobilne systemu Windows |
+| **Pełna obsługa** | -Visual Basic i aplikacje Visual C#, które używają .NET Framework 2,0 lub nowszych wersji.<br/>Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i 64-bitowe aplikacje.<br/>Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Aby debugować Microsoft Azure aplikacje za pomocą IntelliTrace, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą usługi IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
+| **Ograniczona pomoc techniczna** | -C++ aplikacje obsługujące obsługę systemu Windows przeglądanie migawek przy użyciu IntelliTrace kroku. Obsługiwane są tylko zdarzenia debugera i wyjątków.<br />— Aplikacje .NET Core i ASP.NET Core obsługiwane tylko dla określonych zdarzeń (kontroler MVC, ADO.NET i HTTPClient) w debugowaniu lokalnym. Autonomiczny moduł zbierający nie jest obsługiwany w przypadku aplikacji .NET Core lub ASP.NET Core.<br />-Aplikacje F # na zasadach eksperymentalnych<br />-PLATFORMY UWP aplikacje obsługiwane tylko dla zdarzeń |
+| **Nieobsługiwany** | — Inne języki i skrypt<br />— Usługi systemu Windows, Silverlight, Xbox lub aplikacje mobilne systemu Windows |
 
 > [!NOTE]
 > Jeśli chcesz debugować proces, który jest już uruchomiony, można zbierać tylko zdarzenia IntelliTrace (bez informacji o wywołaniu). Możesz dołączyć do procesu 32-bitowego lub 64-bitowego tylko na komputerze lokalnym. Zdarzenia, które wystąpiły przed dołączeniem do procesu, nie są zbierane.
 
-## <a name="IntelliTraceVSTraditional"></a>Dlaczego debugować za pomocą IntelliTrace?
+## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a>Dlaczego debugować za pomocą IntelliTrace?
 
 Tradycyjne lub na *żywo* debugowanie pokazuje tylko bieżący stan aplikacji z ograniczoną ilością danych na temat przeszłych zdarzeń. Musisz wywnioskować te zdarzenia na podstawie bieżącego stanu aplikacji lub trzeba ponownie utworzyć te zdarzenia przez ponowne uruchomienie aplikacji.
 
@@ -88,7 +88,7 @@ Oto kilka przykładów, jak IntelliTrace może pomóc w debugowaniu:
 
   Jest to przydatne, gdy chcesz zdiagnozować problemy z aplikacjami w trakcie wdrażania. Zobacz [Korzystanie z autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-## <a name="WhatData"></a>Jakie dane są zbierane przez IntelliTrace?
+## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a>Jakie dane są zbierane przez IntelliTrace?
 
 **Zbierz informacje o zdarzeniach**
 
@@ -118,7 +118,7 @@ Domyślnie IntelliTrace rejestruje tylko zdarzenia IntelliTrace: zdarzenia debug
 
 - **Zdarzenia .NET Framework**
 
-  IntelliTrace domyślnie zapisuje najbardziej typowe zdarzenia .NET Framework. Na przykład dla zdarzenia <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> IntelliTrace zbiera stan pola wyboru i tekst.
+  IntelliTrace domyślnie zapisuje najbardziej typowe zdarzenia .NET Framework. Na przykład dla <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> zdarzenia IntelliTrace zbiera stan pola wyboru i tekst.
 
 - **Zdarzenia aplikacji SharePoint 2010 i SharePoint 2013**
 
@@ -161,7 +161,7 @@ Zobacz [Sprawdzanie aplikacji za pomocą debugowania historycznego](../debugger/
 
 Aby kontrolować, ile informacji na temat wywołania gromadzi IntelliTrace, określ tylko te moduły, która Cię interesują. Może to pomóc w ulepszaniu wydajności aplikacji podczas zbierania. Zapoznaj się z sekcją Sterowanie tym, [ile IntelliTrace informacji zbiera](../debugger/intellitrace-features.md#ControlCallData) w funkcjach IntelliTrace.
 
-## <a name="AffectPerformance"></a>IntelliTrace spowalnia moją aplikację?
+## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a>IntelliTrace spowalnia moją aplikację?
 
 IntelliTrace domyślnie zbiera dane tylko dla wybranych zdarzeń IntelliTrace. Może to być niespowolnienie aplikacji, w zależności od struktury i organizacji kodu. Na przykład jeśli IntelliTrace często zapisuje zdarzenie, może to spowolnić aplikację. Może być również konieczne rozważenie refaktoryzacji aplikacji.
 

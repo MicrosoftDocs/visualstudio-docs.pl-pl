@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe używanie wbudowanych okien dialogowych w programie Word'
+title: 'Instrukcje: Programowane Używanie wbudowanych okien dialogowych w programie Word'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8037e4d91aa7706c7ffd7b9f32778dfeac79488
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961644"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537621"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Instrukcje: Programowe używanie wbudowanych okien dialogowych w programie Word
-  Podczas pracy z programu Microsoft Office Word, istnieją razy, gdy zachodzi potrzeba wyświetlanie okien dialogowych na dane wejściowe użytkownika. Mimo że można tworzyć własne, można także podejścia użycia wbudowanych okien dialogowych w programie Word, które są widoczne w <xref:Microsoft.Office.Interop.Word.Dialogs> zbiór <xref:Microsoft.Office.Interop.Word.Application> obiektu. Umożliwia dostęp do ponad 200 wbudowanych okien dialogowych, które są reprezentowane jako wyliczenia.
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Instrukcje: Programowane Używanie wbudowanych okien dialogowych w programie Word
+  Podczas pracy z programem Microsoft Office Word istnieją przypadki, gdy konieczne jest wyświetlenie okien dialogowych dotyczących danych wejściowych użytkownika. Mimo że możesz utworzyć własne, możesz również użyć wbudowanych okien dialogowych w programie Word, które są uwidocznione w <xref:Microsoft.Office.Interop.Word.Dialogs> kolekcji <xref:Microsoft.Office.Interop.Word.Application> obiektów. Dzięki temu można uzyskać dostęp do ponad 200 wbudowanych okien dialogowych, które są reprezentowane jako wyliczenia.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="display-dialog-boxes"></a>Wyświetlanie okien dialogowych
- Aby wyświetlić okno dialogowe, użyj jednej z wartości <xref:Microsoft.Office.Interop.Word.WdWordDialog> wyliczeniu, aby utworzyć <xref:Microsoft.Office.Interop.Word.Dialog> obiekt reprezentujący okno dialogowe, które mają być wyświetlane. Następnie wywołaj <xref:Microsoft.Office.Interop.Word.Dialog.Show%2A> metody <xref:Microsoft.Office.Interop.Word.Dialog> obiektu.
+ Aby wyświetlić okno dialogowe, użyj jednej z wartości <xref:Microsoft.Office.Interop.Word.WdWordDialog> wyliczenia, aby utworzyć <xref:Microsoft.Office.Interop.Word.Dialog> obiekt, który reprezentuje okno dialogowe, które chcesz wyświetlić. Następnie Wywołaj <xref:Microsoft.Office.Interop.Word.Dialog.Show%2A> metodę <xref:Microsoft.Office.Interop.Word.Dialog> obiektu.
 
- Poniższy przykład kodu demonstruje sposób wyświetlania **Otwórz plik** okno dialogowe. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+ Poniższy przykład kodu pokazuje, jak wyświetlić okno dialogowe **Otwórz plik** . Aby użyć tego przykładu, należy uruchomić go `ThisDocument` z `ThisAddIn` klasy lub w projekcie.
 
  [!code-vb[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#100)]
  [!code-csharp[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#100)]
 
-### <a name="access-dialog-box-members-that-are-available-through-late-binding"></a>Dostęp do okna dialogowego pole składowe, które są dostępne za pośrednictwem późne powiązania
- Niektóre właściwości i metody okien dialogowych w programie Word są dostępne wyłącznie za pośrednictwem późnym wiązaniu. W języku Visual Basic projektów, gdzie **Option Strict** jest włączona, należy używać odbicia do dostęp do tych elementów członkowskich. Aby uzyskać więcej informacji, zobacz [późne powiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md).
+### <a name="access-dialog-box-members-that-are-available-through-late-binding"></a>Dostęp do członków okna dialogowego, które są dostępne za późnym wiązaniem
+ Niektóre właściwości i metody okien dialogowych w programie Word są dostępne tylko przez późne wiązanie. W Visual Basic projekty, w których **opcja Strict** jest włączona, należy użyć odbicia, aby uzyskać dostęp do tych elementów członkowskich. Aby uzyskać więcej informacji, zobacz [późne powiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md).
 
- Poniższy przykład kodu demonstruje sposób używania **nazwa** właściwość **Otwórz plik** okno dialogowe w języku Visual Basic, projekty gdzie **Option Strict** jest wyłączone lub w języku Visual C# projekty przeznaczone [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+ Poniższy przykład kodu demonstruje, jak używać właściwości **name** okna dialogowego **otwieranie pliku** w projektach Visual Basic, gdzie **Option Strict** jest wyłączona lub w projektach Visual C#, które są przeznaczone dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] . Aby użyć tego przykładu, należy uruchomić go `ThisDocument` z `ThisAddIn` klasy lub w projekcie.
 
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
 
- Poniższy przykład kodu pokazuje, jak używać odbicia w celu uzyskania dostępu do **nazwa** właściwość **Otwórz plik** okno dialogowe w języku Visual Basic, projekty gdzie **Option Strict** jest na serwerze. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+ Poniższy przykład kodu ilustruje sposób używania odbicia w celu uzyskania dostępu do właściwości **Nazwa** okna dialogowego **otwieranie pliku** w projektach Visual Basic, w których **opcja Strict** jest włączona. Aby użyć tego przykładu, należy uruchomić go `ThisDocument` z `ThisAddIn` klasy lub w projekcie.
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Programowe używanie okien dialogowych programu Word w trybie ukrytym](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
-- [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: Programowane korzystanie z okien dialogowych programu Word w trybie ukrytym](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
+- [Model obiektów programu Word — omówienie](../vsto/word-object-model-overview.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Option strict — instrukcja](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
+- [Option Strict — Instrukcja](/dotnet/visual-basic/language-reference/statements/option-strict-statement)
 - [Odbicie (C#)](/dotnet/csharp/programming-guide/concepts/reflection)
 - [Odbicie (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)

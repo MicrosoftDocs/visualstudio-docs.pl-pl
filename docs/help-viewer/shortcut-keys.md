@@ -11,110 +11,108 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da8a90be59199abd569c37b43a61728c00695fa9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821958"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533735"
 ---
-# <a name="shortcut-keys-in-help-viewer"></a>Klawisze skrótów w Podglądzie pomocy
+# <a name="shortcut-keys-in-help-viewer"></a>Klawisze skrótów w podglądzie pomocy
 
-Możesz się przemieszczać w **podglądu pomocy firmy Microsoft** za pomocą klawiszy skrótów w poniższej tabeli:
+Możesz nawigować w **Podgląd pomocy firmy Microsoft** przy użyciu klawiszy skrótów w poniższej tabeli:
 
-|Obszar|Keystroke|Akcja|
+|Obszar|Klawiszy|Akcja|
 |----------|---------------|------------|
-|Ogólnego zastosowania|**Space**|Użyj zamiast **Enter** wszędzie z wyjątkiem pola edycji.|
-|Ogólnego zastosowania|**F1**|Otwórz **pomocy** o bieżącego elementu interfejsu użytkownika.|
-|Ogólnego zastosowania|**F11**|Przełącz się między widokiem pełnoekranowym i widokiem regularne.|
-|Pasek narzędzi|**BACKSPACE**<br /><br /> -LUB-<br /><br /> **ALT**+**Strzałka w lewo**|Wyświetlanie poprzedniej strony.|
-|Pasek narzędzi|**ALT**+**Strzałka w prawo**|Wyświetla następną stronę.|
-|Pasek narzędzi|**ALT**+**strona główna**|Wyświetlanie **pomocy Weryfikacja** strony głównej.|
-|Pasek narzędzi|**Ctrl**+**S**|Wyróżnij bieżący temat w spisie treści (na **zawartość** karty).|
-|Pasek narzędzi|**Ctrl**+**D**|Dodać bieżący temat **ulubione** kartę.|
-|Pasek narzędzi|**CTRL**+**F**|Wyświetlanie **znaleźć** pasek w obszarze tematów, dzięki czemu możesz wyszukać tekst w obrębie bieżącego tematu.|
-|Pasek narzędzi|**Ctrl**+**P**|Drukuj bieżącą stronę.|
-|Pasek narzędzi|**Ctrl**+**F2**|Wyświetlanie podglądu wydruku w bieżącej strony.|
-|Pasek narzędzi|**Ctrl**+**O**|Wyświetlanie **Opcje podglądu** okno dialogowe.|
-|Pasek narzędzi|**CTRL**+**Shift**+**M**|Wyświetlanie **zarządzanie zawartością** kartę.|
-|Nawigatorów|**ALT**+**C**<br /><br /> -LUB-<br /><br /> **Ctrl**+**Shift**+**C**|Wyświetlanie **zawartość** kartę.|
-|Nawigatorów|**ALT**+**I**<br /><br /> -LUB-<br /><br /> **Ctrl**+**Shift**+**I**|Wyświetlanie **indeksu** kartę.|
-|Nawigatorów|**ALT**+**F**<br /><br /> -LUB-<br /><br /> **CTRL**+**Shift**+**F**|Wyświetlanie **ulubione** kartę.|
-|Nawigatorów|**ALT**+**S**<br /><br /> -LUB-<br /><br /> **CTRL** + E<br /><br /> -LUB-<br /><br /> **Ctrl**+**Shift**+**S**|Wyświetlanie **wyszukiwania** kartę.|
-|Nawigatorów|**ALT**+**M**<br /><br /> -LUB-<br /><br /> **CTRL**+**Shift**+**M**|Wyświetlanie **zarządzanie zawartością** kartę.|
-|Temat|**Menu skrótów** klucza<br /><br /> LUB<br /><br /> **Shift**+**F10**|Wyświetlić menu skrótów dla bieżącego elementu interfejsu użytkownika.|
-|Temat|**Strzałka w górę**|Przewiń do początku dokumentu o jeden wiersz w danym momencie.|
-|Temat|**Strzałka w dół**|Przewiń do końca dokumentu o jeden wiersz w danym momencie.|
-|Temat|**Page Up**|Przewiń do początku dokumentu o jeden ekran w czasie.|
-|Temat|**Page Down**|Przewiń do końca dokumentu o jeden ekran w czasie.|
-|Temat|**Strona główna**|Przenieś do początku dokumentu.|
-|Temat|**End**|Przenieś do końca dokumentu.|
-|Temat|**CTRL**+**F**|Znajdź tekst wyszukiwania na tej stronie.|
-|Temat|**F5**|Odświeża bieżącą stronę.|
-|Temat|**Ctrl**+**P**|Drukuj bieżącą stronę.|
-|Temat|**Ctrl**+**F2**|Wyświetlanie podglądu wydruku w bieżącej strony.|
-|Temat|**F4**|Wyświetlanie **właściwości** okno dialogowe dla bieżącej strony.|
-|Temat|**CTRL**+**T**|Otwórz kartę zawartość innym na pierwszym planie.|
-|Temat|**Ctrl**+**Click**|Otwórz łącze w nowej karcie na pierwszym planie.|
-|Temat|**Ctrl**+**Tab**|Przełącz się na kartach, od lewej do prawej.|
-|Temat|**Ctrl**+**Shift**+**Tab**|Przełącz się na kartach, od prawej do lewej.|
-|Temat|**Ctrl**+**W**|Zamknij bieżącą kartę.|
-|Temat|**CTRL**+ **_numer_**|Przejdź do karty określonych gdzie **_numer_** od 1 do 9 i wskazuje, której karcie w sekwencji.|
-|Temat|**Ctrl**+**Alt**+**F4**|Zamknij inne zawartości karty.|
-|Temat|**CTRL**+**Shift**+**znak Plus**|Zwiększa powiększenie przy 10%.|
-|Temat|**CTRL**+**znak Minus**|Zmniejsza powiększenie przy 10%.|
-|Temat|**CTRL**+**0** (zero)|Zmień powiększenie do 100%.|
-|Indeks|**Karta**|Przenieść fokus z pozycji — słowo kluczowe do listy — słowo kluczowe.|
-|Indeks|**Ctrl**+**K**|Przełącz między wpisami przedstawiający, które zawierają słowo kluczowe, które określisz i wpisy rozpoczynających się od słowa kluczowego, określ.|
-|Ulubione|**Ctrl**+**Shift**+**Del**|Wyczyść historię przeglądania.|
+|Ogólnego zastosowania|**Odstęp**|Użyj **zamiast tego w dowolnym miejscu** , z wyjątkiem pól edycji.|
+|Ogólnego zastosowania|**F1**|Otwórz **Pomoc** dotyczącą bieżącego elementu interfejsu użytkownika.|
+|Ogólnego zastosowania|**F11**|Przełączanie między widokiem pełnoekranowym a widokiem regularnym.|
+|Pasek narzędzi|**Backspace**<br /><br /> — Lub —<br /><br /> **Alt** + **Strzałka w lewo**|Wyświetl poprzednią stronę.|
+|Pasek narzędzi|**Alt** + **Strzałka w prawo**|Wyświetl następną stronę.|
+|Pasek narzędzi|**Alt** + **Strona główna**|Wyświetl stronę główną **pomocy dla recenzentów** .|
+|Pasek narzędzi|**Ctrl** + **S**|Zaznacz bieżący temat w spisie treści (na karcie **zawartość** ).|
+|Pasek narzędzi|**Ctrl** + **D**|Dodaj bieżący temat do karty **Ulubione** .|
+|Pasek narzędzi|**Ctrl** + **F**|Wyświetla pasek **Znajdź** w obszarze tematu, aby można było wyszukiwać tekst w bieżącym temacie.|
+|Pasek narzędzi|**Ctrl** + **P**|Drukuj bieżącą stronę.|
+|Pasek narzędzi|**Ctrl** + **F2**|Wyświetl podgląd wydruku bieżącej strony.|
+|Pasek narzędzi|**Ctrl** + **O**|Wyświetl okno dialogowe **Opcje podglądu** .|
+|Pasek narzędzi|**Ctrl** + **SHIFT** + **M**|Wyświetl kartę **Zarządzanie zawartością** .|
+|Nawigatory|**Alt** + **C**<br /><br /> — Lub —<br /><br /> **Ctrl** + **SHIFT** + **C**|Wyświetl kartę **zawartość** .|
+|Nawigatory|**Alt** + **I**<br /><br /> — Lub —<br /><br /> **Ctrl** + **SHIFT** + **I**|Wyświetl kartę **indeks** .|
+|Nawigatory|**Alt** + **F**<br /><br /> — Lub —<br /><br /> **Ctrl** + **SHIFT** + **F**|Wyświetl kartę **Ulubione** .|
+|Nawigatory|**Alt** + **S**<br /><br /> — Lub —<br /><br /> **Ctrl** + E<br /><br /> — Lub —<br /><br /> **Ctrl** + **SHIFT** + **S**|Wyświetl kartę **Wyszukiwanie** .|
+|Nawigatory|**Alt** + **M**<br /><br /> — Lub —<br /><br /> **Ctrl** + **SHIFT** + **M**|Wyświetl kartę **Zarządzanie zawartością** .|
+|Temat|Klawisz **menu skrótów**<br /><br /> LUB<br /><br /> **SHIFT** + **F10**|Wyświetla menu skrótów dla bieżącego elementu interfejsu użytkownika.|
+|Temat|**Strzałka w górę**|Przewiń dokument o jeden wiersz w kierunku początku.|
+|Temat|**Strzałka w dół**|Przewiń w kierunku końca dokumentu o jeden wiersz w czasie.|
+|Temat|**Strona w górę**|Przewiń w kierunku początku dokumentu po jednym ekranie.|
+|Temat|**Strona w dół**|Przewiń w dół do końca dokumentu po jednym ekranie.|
+|Temat|**Strona główna**|Przenieś na początek dokumentu.|
+|Temat|**Punktów**|Przenieś na koniec dokumentu.|
+|Temat|**Ctrl** + **F**|Znajdź tekst wyszukiwania na tej stronie.|
+|Temat|**F5**|Odśwież bieżącą stronę.|
+|Temat|**Ctrl** + **P**|Drukuj bieżącą stronę.|
+|Temat|**Ctrl** + **F2**|Wyświetl podgląd wydruku bieżącej strony.|
+|Temat|**F4**|Wyświetla okno dialogowe **Właściwości** dla bieżącej strony.|
+|Temat|**Ctrl** + **T**|Otwórz inną kartę zawartości na pierwszym planie.|
+|Temat|**Ctrl** + **Kliknij pozycję**|Otwórz link na nowej karcie na pierwszym planie.|
+|Temat|**Ctrl** + **Karta**|Przełączanie między kartami od lewej do prawej.|
+|Temat|**Ctrl** + **SHIFT** + **Karta**|Przełączenie między kartami od prawej do lewej.|
+|Temat|**Ctrl** + **W**|Zamknij bieżącą kartę.|
+|Temat|**Ctrl** + ** _Liczba_**|Przejdź do konkretnej karty, w której **_Liczba_** jest z zakresu od 1 do 9 i wskazuje, która karta ma być sekwencją.|
+|Temat|**Ctrl** + **Alt** + **F4**|Zamknij inne karty zawartości.|
+|Temat|**Ctrl** + **SHIFT** + Znak **Plus**|Zwiększ powiększenie o 10%.|
+|Temat|**Ctrl** + Znak **minus**|Zmniejsz powiększenie o 10%.|
+|Temat|**Ctrl** + **0** (zero)|Zmień powiększenie na 100%.|
+|Indeks|**Tabulator**|Przenieś fokus od wpisu słowa kluczowego na listę słów kluczowych.|
+|Indeks|**Ctrl** + **K**|Przełączenie między pokazywaniem wpisów zawierających określone słowo kluczowe i wpisy, które zaczynają się od określonego słowa kluczowego.|
+|Ulubione|**Ctrl** + **SHIFT** + **Del**|Wyczyść historię przeglądania.|
 |Ulubione|**Del**|Usuń określony element.|
-|Ulubione|**Ctrl**+**N**|Utwórz folder w ramach **ulubione**.|
-|Ulubione|**F2**|Zmień nazwę określonej ulubionego elementu lub folderu.|
-|Zawartość & indeksu wyszukiwania|**Ctrl**+**D**|Dodaj określonego tematu, aby **ulubione** kartę.|
-|Zawartość & Indeks & wyszukiwania & ulubionych|**Ctrl**+**P**|Drukowanie określonego tematu.|
-|Zawartość & Indeks & wyszukiwania & ulubionych|**Ctrl**+**F2**|Wyświetlanie podglądu wydruku określonego tematu.|
-|Zawartość & Indeks & wyszukiwania & ulubionych|**Ctrl**+**Click**|Otwieranie tematu na nowej karcie.|
-|Wyszukaj|**ESC**|Wyczyść pole tekstowe wyszukiwania.|
-|Opcje aplikacji Viewer|**ALT**+**T**|Zmień fokus na **rozmiar tekstu** listy.|
-|Opcje aplikacji Viewer|**ALT**+**S**|Zmień fokus na **maksymalna liczba wyników wyszukiwania** listy.|
-|Opcje aplikacji Viewer|**ALT**+**H**|Zmień fokus na **zapisanych wpisów historycznych maksymalna** listy.|
-|Opcje aplikacji Viewer|**ALT**+**E**|Zaznacz lub wyczyść **zawartości Zawrzyj w języku angielskim we wszystkich kartach nawigacji i żądaniach F1** pole wyboru, jeśli jest włączone.|
-|Opcje aplikacji Viewer|**ALT**+**O**|Zaznacz lub wyczyść **przejdź do trybu online, aby sprawdzić, czy są dostępne aktualizacje zawartości** pole wyboru.|
-|Znajdowanie|**Wprowadź**|Zmień fokus do następnego elementu.|
-|Znajdowanie|**SHIFT**+**wprowadź**|Zmień fokus do poprzedniego elementu.|
-|Znajdowanie|**ESC**|Ukrywa **znaleźć** pola tekstowego.|
-|Pasek stanu|**ALT**+**E**|Otwórz **błąd** okno dialogowe Jeśli pasek stanu wskazuje, że błąd wystąpił.|
-|Pasek stanu|**ALT**+**U**|Pobieranie zawartości, jeśli pasek stanu wskazuje, czy są dostępne aktualizacje|
+|Ulubione|**Ctrl** + **N**|Utwórz folder w obszarze **Ulubione**.|
+|Ulubione|**F2**|Zmień nazwę określonego elementu ulubionego lub folderu.|
+|& wyszukiwania zawartości & indeksu|**Ctrl** + **D**|Dodaj określony temat do karty **Ulubione** .|
+|Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **P**|Drukowanie określonego tematu.|
+|Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **F2**|Wyświetl podgląd wydruku określonego tematu.|
+|Zawartość & indeks & wyszukiwanie & ulubionych|**Ctrl** + **Kliknij pozycję**|Otwórz temat na nowej karcie.|
+|Wyszukaj|**Esc**|Wyczyść pole tekstowe wyszukiwania.|
+|Opcje aplikacji Viewer|**Alt** + **T**|Zmień fokus na listę **rozmiar tekstu** .|
+|Opcje aplikacji Viewer|**Alt** + **S**|Zmień fokus na listę **wyników wyszukiwania maksymalnego** .|
+|Opcje aplikacji Viewer|**Alt** + **H**|Zmień fokus na listę **zapisanych wpisów historii** .|
+|Opcje aplikacji Viewer|**Alt** + **E**|Zaznacz lub wyczyść pole wyboru **Dołącz zawartość w języku angielskim na wszystkich kartach nawigacji i żądania F1,** jeśli jest włączone.|
+|Opcje aplikacji Viewer|**Alt** + **O**|Zaznacz lub wyczyść pole wyboru **Przejdź do trybu online, aby sprawdzić dostępność aktualizacji zawartości** .|
+|Znajdowanie|**Wejść**|Zmień fokus na następny element.|
+|Znajdowanie|**SHIFT** + **Wprowadź**|Zmień fokus na poprzedni element.|
+|Znajdowanie|**Esc**|Ukrywa pole tekstowe **Znajdź** .|
+|Pasek stanu|**Alt** + **E**|Otwórz okno dialogowe **błędu** , jeśli pasek stanu pokazuje, że wystąpił błąd.|
+|Pasek stanu|**Alt** + **U**|Pobierz zawartość, jeśli pasek stanu pokazuje, że aktualizacje są dostępne|
 
  **Zarządzanie oknem**
 
-|||
+|**Klawiszy**|**Akcja**|
 |-|-|
-|**Naciśnięcie klawisza**|**Akcja**|
-|**Ctrl**+**L**|Resetuj **podglądu pomocy** układ domyślny układ i zamknięcie wszystkich kart tematu.|
-|**Ctrl**+**Tab**|Pierwszego naciśnięcia klawisza przenosi fokus do **wybór karty** menu. Następnym naciśnięciu klawisza przenosi fokus na elemencie menu u góry, a kolejne naciśnięć klawiszy oferowanie fokusu elementów menu w kolejności od góry do dołu. Gdy element menu ma fokus, **Enter** klucza sprawia, że, które element aktywną kartę.|
-|**Ctrl**+**Shift**+**Tab**|Pierwszego naciśnięcia klawisza przenosi fokus do **wybór karty** menu. Następnym naciśnięciu klawisza przenosi fokus do dołu elementu menu, a kolejne naciśnięć klawiszy oferowanie fokusu elementów menu w kolejności od dołu do góry. Gdy element menu ma fokus, **Enter** klucza sprawia, że, które element aktywną kartę.|
-|**ALT**+**I**, **Alt**+**S**, **Alt**+**C**, **Alt**+**F**, **Alt**+**M**|Tych klawiszy skrótów nie działają w przypadku kart nawigacji i zarządzaniu zawartością oddokowana.|
+|**Ctrl** + **L**|Zresetuj układ **podglądu pomocy** do układu domyślnego i Zamknij wszystkie karty tematów.|
+|**Ctrl** + **Karta**|Pierwsze naciśnięcie klawisza umożliwia skoncentrowanie się na menu **wyboru karty** . Następne naciśnięcie klawisza umożliwia skoncentrowanie się na górnym elemencie menu, a kolejne naciśnięcia klawiszy umożliwiają skoncentrowanie się na elementach menu w kolejności od góry do dołu. Gdy element menu ma fokus, klawisz **Enter** ustawia ten element na aktywną kartę.|
+|**Ctrl** + **SHIFT** + **Karta**|Pierwsze naciśnięcie klawisza umożliwia skoncentrowanie się na menu **wyboru karty** . Następne naciśnięcie klawisza umożliwia skoncentrowanie się na dolnym elemencie menu, a kolejne naciśnięcia klawiszy nadają fokus do elementów menu w kolejności od dołu do góry. Gdy element menu ma fokus, klawisz **Enter** ustawia ten element na aktywną kartę.|
+|**Alt** + **I**, **Alt** + **S**, **Alt** + **C**, **Alt** + **F**, **Alt** + **M**|Te klawisze skrótów nie działają, gdy karty nawigacji i zarządzania zawartością nie są zadokowane.|
 
  **Zarządzanie zawartością**
 
-|||
+|**Klawiszy**|**Akcja**|
 |-|-|
-|**Naciśnięcie klawisza**|**Akcja**|
-|**ALT**+**D**|Zmień źródło instalacji na dysku.|
-|**ALT**+**O**|Zmiana źródła instalacji online.|
-|**Karta**|Zmień fokus na **ścieżka magazynu lokalnego** pola tekstowego.|
-|**Karta**|Zmień fokus na **przenieść** przycisku.|
-|**ALT**+**V**|Otwórz **przenoszenie zawartości** okno dialogowe.|
-|**Ctrl**+**Alt**+**F**|Zmień fokus na **dokumentacji filtru** pola tekstowego.|
-|**Karta**|Zmień fokus na liście dokumentacji.|
-|**Strzałka w górę** i **strzałkę w dół**|Przewiń listę w dokumentacji.|
-|**Space**|Dodaj element do **oczekujące zmiany** listy.|
-|**Karta**|Zmień fokus na **oczekujące zmiany** listy.|
-|**Strzałka w górę** i **strzałkę w dół**|Przewiń **oczekujące zmiany** listy.|
-|**Space**|Usuń element z **oczekujące zmiany** listy.|
-|**ALT**+**T**|Zastosuj wszystkie oczekujące zmiany.|
+|**Alt** + **D**|Zmień źródło instalacji na dysk.|
+|**Alt** + **O**|Zmień źródło instalacji w tryb online.|
+|**Tabulator**|Zmień fokus w polu tekstowym **ścieżka do magazynu lokalnego** .|
+|**Tabulator**|Zmień fokus na przycisk **Przenieś** .|
+|**Alt** + **V**|Otwórz okno dialogowe **przenoszenie zawartości** .|
+|**Ctrl** + **Alt** + **F**|Zmień fokus na pole tekstowe **Dokumentacja filtru** .|
+|**Tabulator**|Zmień fokus na listę dokumentacji.|
+|**Strzałka w górę** i **Strzałka w dół**|Przewiń listę dokumentacji.|
+|**Odstęp**|Dodaj element do listy **oczekujące zmiany** .|
+|**Tabulator**|Zmień fokus na listę **oczekujące zmiany** .|
+|**Strzałka w górę** i **Strzałka w dół**|Przewiń listę **oczekujących zmian** .|
+|**Odstęp**|Usuń element z listy **oczekujących zmian** .|
+|**Alt** + **T**|Zastosuj wszystkie oczekujące zmiany.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Funkcje ułatwień dostępu w Podglądzie pomocy](accessibility-features.md)
+- [Funkcje ułatwień dostępu w podglądzie pomocy](accessibility-features.md)

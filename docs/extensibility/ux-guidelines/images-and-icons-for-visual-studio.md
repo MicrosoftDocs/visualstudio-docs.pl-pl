@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72d0ce7435a067ef9aa16ccc5b2daa7602926bf
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184825"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537543"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Używanie obrazów w programie Visual Studio
@@ -60,44 +60,38 @@ ms.locfileid: "84184825"
 #### <a name="concept-development"></a>Tworzenie koncepcji
  Program Visual Studio ma w swoim interfejsie użytkownika szeroką gamę typów ikon. Uważnie Rozważ użycie typu ikony podczas opracowywania. Nie używaj niejasnych lub nietypowych obiektów interfejsu użytkownika dla elementów ikon. W takich przypadkach należy wybrać symboliczne, takie jak ikona tagu inteligentnego. Należy zauważyć, że znaczenie taga abstract po lewej stronie jest bardziej oczywiste niż niejasny, wersja oparta na interfejsie użytkownika po prawej stronie:
 
-|||
-|-|-|
 |**Poprawne użycie obrazów symbolicznych**|**Nieprawidłowe użycie obrazów symbolicznych**|
+|-|-|
 |![Popraw ikonę tagu inteligentnego](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404-01_SmartTagCorrect")|![Nieprawidłowa ikona tagu inteligentnego](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404-02_SmartTagIncorrect")|
 
  Istnieją wystąpienia, w których standardowe, łatwo rozpoznawalne elementy interfejsu użytkownika działają dobrze dla ikon. Dodaj okno jest jednym z takich przykładów:
 
-|||
-|-|-|
 |**Prawidłowy element interfejsu użytkownika w ikonie**|**Nieprawidłowy element UI w ikonie**|
+|-|-|
 |![Popraw ikonę okna dodawania](../../extensibility/ux-guidelines/media/0404-03_addwindowcorrect.png "0404-03_AddWindowCorrect")|![Niepoprawna ikona dodawania okna](../../extensibility/ux-guidelines/media/0404-04_addwindowincorrect.png "0404-04_AddWindowIncorrect")|
 
  Nie używaj dokumentu jako elementu podstawowego, chyba że jest to istotne dla znaczenia ikon. Bez elementu dokumentu w dokumencie Dodawanie dokumentu (poniżej) znaczenie jest tracone, podczas gdy odświeżanie elementu dokumentu nie jest konieczne do przekazania znaczenia.
 
-|||
-|-|-|
 |**Poprawne użycie ikony dokumentu**|**Nieprawidłowe użycie ikony dokumentu**|
+|-|-|
 |![Ikona poprawnego dokumentu](../../extensibility/ux-guidelines/media/0404-05_documenticoncorrect.png "0404-05_DocumentIconCorrect")|![Niepoprawna ikona dokumentu](../../extensibility/ux-guidelines/media/0404-06_documenticonincorrect.png "0404-06_DocumentIconIncorrect")|
 
  Koncepcja "show" powinna być reprezentowana przez ikonę, która najlepiej ilustruje, co jest wyświetlane, na przykład z przykładem Pokaż wszystkie pliki. Metaphor obiektywu może służyć do wskazania koncepcji "widok", jeśli to konieczne, na przykład z przykładem Widok zasobów.
 
-|||
-|-|-|
 |**Wskazują**|**Widokiem**|
+|-|-|
 |![Pokaż ikonę](../../extensibility/ux-guidelines/media/0404-07_show.png "0404-07_Show")|![Ikona widoku](../../extensibility/ux-guidelines/media/0404-08_view.png "0404-08_View")|
 
  Ikona lupy ze prawą stroną powinna reprezentować tylko wyszukiwanie, wyszukiwanie i przeglądanie. Wariant z lewej strony ze znakiem plus lub znakiem minus powinien reprezentować tylko powiększanie/powiększanie.
 
-|||
-|-|-|
 |**Wyszukiwania**|**Zmieniać**|
+|-|-|
 |![Ikona wyszukiwania](../../extensibility/ux-guidelines/media/0404-09_search.png "0404-09_Search")|![Ikona powiększenia](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404-10_Zoom")|
 
  W widokach drzewa nie należy używać zarówno ikony folderu, jak i modyfikatora. Jeśli jest dostępna, użyj tylko modyfikatora.
 
-|||
-|-|-|
 |**Popraw ikony widoku drzewa**|**Nieprawidłowe ikony widoku drzewa**|
+|-|-|
 |![Poprawna ikona widoku drzewa &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404-11_TreeViewCorrect1") ![ikona widoku drzewa &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404-12_TreeViewCorrect2")|![Niepoprawna ikona widoku drzewa &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404-13_TreeViewIncorrect1") ![ikona widoku drzewa &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404-14_TreeViewIncorrect2")|
 
 ### <a name="style-details"></a>Szczegóły stylu
@@ -127,23 +121,20 @@ ms.locfileid: "84184825"
 
  Aby osiągnąć idealne wyrównanie i balans, unikaj zakłócania elementu ikony z glifami akcji. Umieść symbol u góry po lewej stronie elementu podstawowego. Podczas dodawania dodatkowego elementu należy wziąć pod uwagę wyrównanie i balans ikony.
 
-|||
-|-|-|
 |**Prawidłowe wyrównanie i balans**|**Nieprawidłowe wyrównanie i balans**|
+|-|-|
 |![Poprawne saldo i wyrównanie ikony](../../extensibility/ux-guidelines/media/0404-22_alignbalancecorrect.png "0404-22_AlignBalanceCorrect")|![Nieprawidłowe saldo i wyrównanie ikony](../../extensibility/ux-guidelines/media/0404-23_alignbalanceincorrect.png "0404-23_AlignBalanceIncorrect")|
 
  Zapewnij parzystość rozmiaru ikon, które udostępniają elementy i są używane w zestawach. Należy zauważyć, że w niepoprawnej parowania okrąg i Strzałka są zbyt duże i nie pasują do siebie.
 
-|||
-|-|-|
 |**Popraw parzystość rozmiaru**|**Niepoprawna parzystość rozmiaru**|
+|-|-|
 |![Prawidłowy rozmiar ikony i parzystość](../../extensibility/ux-guidelines/media/0404-24_sizeparitycorrect.png "0404-24_SizeParityCorrect")|![Nieprawidłowy rozmiar ikony i parzystość](../../extensibility/ux-guidelines/media/0404-25_sizeparityincorrect.png "0404-25_SizeParityIncorrect")|
 
  Użyj spójnych wag liniowych i wizualnych. Oceń, w jaki sposób kompilowana ikona porównuje z innymi ikonami przy użyciu porównania Side-by-side. Nigdy nie używaj całej ramki 16x16, użyj 15x15 lub mniejszej. Współczynnik negatyw-do-pozytywnego (ciemny w jasny) powinien wynosić 50/50.
 
-|||
-|-|-|
 |**Popraw współczynnik negatyw-do-dodatni**|**Nieprawidłowy stosunek negatywny do wartości dodatniej**|
+|-|-|
 |![Popraw wagę wizualną dla ikon &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404-26_VisualWeightCorrect1")<br /><br /> ![Popraw wagę wizualną dla ikon &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404-27_VisualWeightCorrect2")<br /><br /> ![Popraw grubość wizualną dla ikon &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404-28_VisualWeightCorrect3")|![Nieprawidłowa grubość wizualizacji dla ikon](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404-29_VisualWeightIncorrect")|
 
  Używaj prostych, porównywalnych kształtów i prostopadłych kątów do kompilowania elementów bez utraty integralności elementów. W miarę możliwości należy używać kątów 45 ° lub 90.
@@ -163,16 +154,14 @@ ms.locfileid: "84184825"
 
  Używaj źródeł światła tylko w przypadku dodawania niezbędnych przejrzystości do obiektu.
 
-|||
-|-|-|
 |**Prawidłowe Źródło światła**|**Nieprawidłowe źródło światła**|
+|-|-|
 |![Poprawne źródła światła dla ikon](../../extensibility/ux-guidelines/media/0404-34_lightsourcescorrect.png "0404-34_LightSourcesCorrect")|![Nieprawidłowe źródła światła dla ikon](../../extensibility/ux-guidelines/media/0404-35_lightsourcesincorrect.png "0404-35_LightSourcesIncorrect")|
 
  Używaj konspektów tylko w celu zwiększenia czytelności lub lepszego komunikowania się z metaphor. Saldo ujemne-dodatnie (ciemne światła) powinno wynosić 50/50.
 
-|||
-|-|-|
 |**Poprawne użycie konspektów**|**Nieprawidłowe użycie konspektów**|
+|-|-|
 |![Popraw konspekty](../../extensibility/ux-guidelines/media/0404-36_outlinescorrect.png "0404-36_OutlinesCorrect")|![Nieprawidłowe konspekty](../../extensibility/ux-guidelines/media/0404-37_outlinesincorrect.png "0404-37_OutlinesIncorrect")|
 
 #### <a name="icon-types"></a>Typy ikon
@@ -258,7 +247,7 @@ ms.locfileid: "84184825"
 
 - Aby rozróżnić elementy w funkcji IntelliSense
 
-### <a name="accessibility"></a>Ułatwienia dostępu
+### <a name="accessibility"></a>Dostępność
  Wskazówki dotyczące zgodności programu Visual Studio wymagają, aby wszystkie ikony zaznaczone w produkcie przeszły wymagania dotyczące ułatwień dostępu dla kolorów i kontrastu. Kolory z palety języka wizualnego zostały przetestowane i spełniają te wymagania.
 
 #### <a name="color-inversion-for-dark-themes"></a>Kolorowa wersja dla ciemnych motywów
@@ -292,34 +281,34 @@ ms.locfileid: "84184825"
 ##### <a name="examples"></a>Przykłady
  Zielony jest używany dla modyfikatorów akcji pozytywnych, takich jak "Add", "Run", "Play" i "Validate".
 
-|||||
+|Uruchom|Wykonaj zapytanie|Odtwórz wszystkie kroki|Dodaj kontrolkę|
 |-|-|-|-|
-|![Ikona uruchamiania](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")<br />Uruchom|![Ikona wykonywania zapytania](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 — 04_ExecuteQuery")<br />Wykonaj zapytanie|![Ikona odtwarzania wszystkich kroków](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 — 05_PlayAllSteps")<br />Odtwórz wszystkie kroki|![Dodaj ikonę kontrolki](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 — 06_AddControl")<br />Dodaj kontrolkę|
+|![Ikona uruchamiania](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")|![Ikona wykonywania zapytania](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 — 04_ExecuteQuery")|![Ikona odtwarzania wszystkich kroków](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 — 05_PlayAllSteps")|![Dodaj ikonę kontrolki](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 — 06_AddControl")|
 
  Czerwony jest używany dla modyfikatorów akcji ujemnych, takich jak "Delete", "Stop" "Cancel" i "Close".
 
-|||||
+|Usuwanie relacji|Usuń kolumnę|Zatrzymaj zapytanie|Połączenie w trybie offline|
 |-|-|-|-|
-|![Ikona usuwania relacji](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405 — 07_DeleteRelationship")<br />Usuwanie relacji|![Ikona usuwania kolumny](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405 — 08_DeleteColumn")<br />Usuń kolumnę|![Ikona zatrzymania zapytania](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405 — 09_StopQuery")<br />Zatrzymaj zapytanie|![Ikona połączenia w trybie offline](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405 — 10_ConnectionOffline")<br />Połączenie w trybie offline|
+|![Ikona usuwania relacji](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405 — 07_DeleteRelationship")|![Ikona usuwania kolumny](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405 — 08_DeleteColumn")|![Ikona zatrzymania zapytania](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405 — 09_StopQuery")|![Ikona połączenia w trybie offline](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405 — 10_ConnectionOffline")|
 
  Niebieska jest stosowana do modyfikatorów akcji neutralnych najczęściej reprezentowanych jako strzałki, takich jak "Open", "dalej" "Previous", "Import" i "Export".
 
-|||||
+|Przejdź do pola|Wsadowe ewidencjonowanie|Edytor adresów|Edytor skojarzeń|
 |-|-|-|-|
-|![Ikona przejdź do pola](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 — 11_GoToField")<br />Przejdź do pola|![&#45;sprawdzanie wsadowe w ikonie](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 — 12_BatchedCheckIn")<br />Wsadowe ewidencjonowanie|![Ikona edytora adresów](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 — 13_AddressEditor")<br />Edytor adresów|![Ikona edytora skojarzeń](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 — 14_AssociationEditor")<br />Edytor skojarzeń|
+|![Ikona przejdź do pola](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 — 11_GoToField")|![&#45;sprawdzanie wsadowe w ikonie](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 — 12_BatchedCheckIn")|![Ikona edytora adresów](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 — 13_AddressEditor")|![Ikona edytora skojarzeń](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 — 14_AssociationEditor")|
 
  Ciemny złoty jest używany głównie dla modyfikatora "New".
 
-|||||
+|Nowy projekt|Utwórz nowy wykres|Nowy test jednostkowy|Nowy element listy|
 |-|-|-|-|
-|![Ikona nowego projektu](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405 — 15_NewProject")<br />Nowy projekt|![Utwórz nową ikonę grafu](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405 — 16_CreateNewGraph")<br />Utwórz nowy wykres|![Ikona nowego testu jednostkowego](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 — 17_NewUnitTest")<br />Nowy test jednostkowy|![Ikona nowego elementu listy](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 — 18_NewListItem")<br />Nowy element listy|
+|![Ikona nowego projektu](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405 — 15_NewProject")|![Utwórz nową ikonę grafu](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405 — 16_CreateNewGraph")|![Ikona nowego testu jednostkowego](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405 — 17_NewUnitTest")|![Ikona nowego elementu listy](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405 — 18_NewListItem")|
 
 #### <a name="special-cases"></a>Specjalne przypadki
  W szczególnych przypadkach można użyć kolorowego modyfikatora akcji niezależnie jako ikony autonomicznej. Kolor używany dla ikony odzwierciedla akcje, z którymi jest skojarzona ikona. To użycie jest ograniczone do małego podzbioru ikon, w tym:
 
-||||||
+|Uruchom|Stop|Usuń|Zapisz|Nawiguj wstecz|
 |-|-|-|-|-|
-|![Ikona uruchamiania](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")<br />Uruchom|![Ikona zatrzymania](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 — 19_Stop")<br />Stop|![Ikona usuwania](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 — 20_Delete")<br />Usuń|![Ikona zapisywania](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 — 21_Save")<br />Zapisz|![Ikona nawigacji Wstecz](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 — 22_NavigateBack")<br />Nawiguj wstecz|
+|![Ikona uruchamiania](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 — 03_ActionModifierRun")|![Ikona zatrzymania](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 — 19_Stop")|![Ikona usuwania](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 — 20_Delete")|![Ikona zapisywania](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 — 21_Save")|![Ikona nawigacji Wstecz](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 — 22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>Paleta hierarchii kodu
 
@@ -346,9 +335,12 @@ ms.locfileid: "84184825"
 
 ##### <a name="examples-of-icons-with-language-modifiers"></a>Przykłady ikon z modyfikatorami języka
 
-|||||||
+|VB|C#|F#|JavaScript|Python|
 |-|-|-|-|-|-|
-|![Ikona Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 — 25_VB")<br />VB|![Ikona&#35; C](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 — 26_CSharp")<br />C#|![Ikona&#43;&#43; C](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 — 27_CPlusPlus")<br />C++|![Ikona&#35; F](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 — 28_FSharp")<br />F#|![Ikona JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 — 29_JavaScript")<br />JavaScript|![Ikona języka Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 — 30_Python")<br />Python|
+|![Ikona Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 — 25_VB")|![Ikona&#35; C](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 — 26_CSharp")|![Ikona&#43;&#43; C](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 — 27_CPlusPlus")|![Ikona&#35; F](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 — 28_FSharp")|![Ikona JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 — 29_JavaScript")|![Ikona języka Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 — 30_Python")|
+
+|HTML|WPF|ASP|CSS|TypeScript|
+|-|-|-|-|-|-|
 |![Ikona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 — 31_HTML")<br />HTML|![Ikona WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 — 32_WPF")<br />WPF|![Ikona ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 — 33_ASP")<br />ASP|![Ikona CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 — 34_CSS")<br />CSS|![Ikona języka TypeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 — 35_TypeScript")<br />TypeScript||
 
 #### <a name="intellisense"></a>IntelliSense
@@ -364,10 +356,13 @@ ms.locfileid: "84184825"
 
 ##### <a name="examples-of-intellisense-icons"></a>Przykłady ikon IntelliSense
 
-||||||
+|Klasa|Wydarzenie prywatne|Delegat|Metoda zaprzyjaźniona|Pole|
 |-|-|-|-|-|
-|![Ikona klasy IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 — 36_IntelliSenseClass")<br />Klasa|![Ikona prywatnego zdarzenia IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 — 37_IntelliSensePrivateEvent")<br />Wydarzenie prywatne|![Ikona delegata IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 — 38_IntelliSenseDelegate")<br />Delegat|![Ikona zaprzyjaźnionej metody IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 — 39_IntelliSenseMethodFriend")<br />Metoda zaprzyjaźniona|![Ikona pola](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 — 40_Field")<br />Pole|
-|![Ikona elementu Enum chronionego przez funkcję IntelliSense](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 — 41_IntelliSenseProtectedEnumItem")<br />Chroniony element Enum|![Ikona obiektu IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 — 42_IntelliSenseObject")<br />Obiekt|![Ikona szablonu IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 — 43_IntelliSenseTemplate")<br />Szablon|![Ikona skrótu wyjątku IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 — 44_IntelliSenseExceptionShortcut")<br />Skrót wyjątku||
+|![Ikona klasy IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 — 36_IntelliSenseClass")|![Ikona prywatnego zdarzenia IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 — 37_IntelliSensePrivateEvent")|![Ikona delegata IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 — 38_IntelliSenseDelegate")|![Ikona zaprzyjaźnionej metody IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 — 39_IntelliSenseMethodFriend")|![Ikona pola](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 — 40_Field")|
+
+|Chroniony element Enum|Obiekt|Szablon|Skrót wyjątku|
+|-|-|-|-|
+|![Ikona elementu Enum chronionego przez funkcję IntelliSense](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 — 41_IntelliSenseProtectedEnumItem")|![Ikona obiektu IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 — 42_IntelliSenseObject")|![Ikona szablonu IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 — 43_IntelliSenseTemplate")|![Ikona skrótu wyjątku IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 — 44_IntelliSenseExceptionShortcut")|
 
 ### <a name="notifications"></a>Powiadomienia
  Powiadomienia w programie Visual Studio służą do wskazania stanu. Paleta powiadomień używa następujących czterech kolorów, a także czarno-białych opcji wypełnienia na pierwszym planie, aby definiować powiadomienia o następujących poziomach stanu.
@@ -383,6 +378,6 @@ ms.locfileid: "84184825"
 
 #### <a name="examples-of-notification-icons"></a>Przykłady ikon powiadomień
 
-|||||
+|Alerty|Ostrzeżenie|Ukończ|Stop|
 |-|-|-|-|
-|![Ikona alertu](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 — 45_Alert")<br />Alerty|![Ikona ostrzeżenia](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 — 48_Warning")<br />Ostrzeżenie|![Ikona ukończenia](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 — 46_Complete")<br />Ukończ|![Ikona zatrzymania](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 — 47_Stop")<br />Stop|
+|![Ikona alertu](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 — 45_Alert")|![Ikona ostrzeżenia](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 — 48_Warning")|![Ikona ukończenia](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 — 46_Complete")|![Ikona zatrzymania](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 — 47_Stop")|

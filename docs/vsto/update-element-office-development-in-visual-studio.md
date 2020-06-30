@@ -1,7 +1,7 @@
 ---
-title: '&lt;Aktualizuj&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;Update — &gt; element (Programowanie Office w Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 461fae79e3af346d64017166b6dae3ace67599e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967536"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537387"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Aktualizuj&gt; — element (Office development w programie Visual Studio)
-  `update` Element Określa interwał, w którym rozwiązanie będzie sprawdzać, które aktualizacje.
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Update — &gt; element (Programowanie Office w Visual Studio)
+  `update`Element Określa interwał, w którym rozwiązanie będzie sprawdzać dostępność aktualizacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,31 +36,31 @@ ms.locfileid: "62967536"
 </update>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `update` Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `update`Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw.
 
- `update` Element ma następujące atrybuty.
-
-|Atrybut|Opis|
-|---------------|-----------------|
-|`enabled`|Wymagana. Dla węzła enabled Ustaw na jedną z następujących wartości:<br /><br /> -   **wartość true,** pod kątem aktualizacji.<br />-   **FALSE** zapobiegające sprawdzania dostępności aktualizacji.|
-
- `update` Element ma następujących elementów podrzędnych.
-
-### <a name="expiration"></a>wygaśnięcie
- `expiration` Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw. Ten element Określa interwał, z jaką rozwiązanie będzie sprawdzać dostępność aktualizacji.
-
- `expiration` Element ma następujące atrybuty.
+ `update`Element ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`maximumAge`| Wymagana. Ustaw to na liczbę całkowitą.|
-|`unit`|Wymagana. Ustaw `unit` do jednej z następujących wartości:<br /><br /> -   **godz.**<br />-   **dni**<br />-   **tyg.**|
+|`enabled`|Wymagany. Ustaw wartość włączone na jedną z następujących wartości:<br /><br /> -   **wartość true** , aby sprawdzić dostępność aktualizacji.<br />-   **wartość false** uniemożliwia sprawdzenie dostępności aktualizacji.|
 
-## <a name="example-of-always-checking-for-updates"></a>Przykład zawsze sprawdzania dostępności aktualizacji
+ `update`Element ma następujące elementy podrzędne.
+
+### <a name="expiration"></a>datę
+ `expiration`Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw. Ten element Określa interwał sprawdzania dostępności aktualizacji przez rozwiązanie.
+
+ `expiration`Element ma następujące atrybuty.
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|`maximumAge`| Wymagany. Ustaw tę wartość jako liczbę całkowitą.|
+|`unit`|Wymagany. Ustaw `unit` jedną z następujących wartości:<br /><br /> -   **liczb**<br />-   **dni**<br />-   **tygodni**|
+
+## <a name="example-of-always-checking-for-updates"></a>Przykład zawsze sprawdzaj, czy są aktualizacje
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `update` element, który jest ustawiony na Zawsze sprawdzaj dostępność aktualizacji w rozwiązaniach pakietu Office.
+ Poniższy przykład kodu ilustruje `update` element, który jest ustawiony na zawsze sprawdzać dostępność aktualizacji w rozwiązaniach pakietu Office.
 
 ### <a name="code"></a>Kod
 
@@ -68,10 +68,10 @@ ms.locfileid: "62967536"
 <vstav3:update enabled="true" />
 ```
 
-## <a name="example-of-setting-a-default-update-interval"></a>Przykładowa konfiguracja domyślny interwał aktualizacji
+## <a name="example-of-setting-a-default-update-interval"></a>Przykład ustawienia domyślnego interwału aktualizacji
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `update` elementu w manifeście aplikacji dla rozwiązań pakietu Office. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `update` element w manifeście aplikacji dla rozwiązań pakietu Office. Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -81,9 +81,9 @@ ms.locfileid: "62967536"
 </vstav3:update>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)
 - [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

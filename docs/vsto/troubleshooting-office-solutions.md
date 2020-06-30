@@ -1,7 +1,7 @@
 ---
-title: Rozwiązywanie problemów z rozwiązań pakietu Office
+title: Rozwiązywanie problemów z rozwiązaniami pakietu Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -14,46 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 901df0b15f26624ecf2e9fca217cdc074913ceae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc8db3478f6856b5d3b511e53656c65d762446c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978266"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537219"
 ---
-# <a name="troubleshoot-office-solutions"></a>Rozwiązywanie problemów z rozwiązań pakietu Office
-  Ta sekcja zawiera wskazówki dotyczące rozwiązywania typowych problemów, które można napotkać podczas tworzenia rozwiązań za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio.
+# <a name="troubleshoot-office-solutions"></a>Rozwiązywanie problemów z rozwiązaniami pakietu Office
+  Ta sekcja zawiera wskazówki dotyczące rozwiązywania typowych problemów, które mogą wystąpić podczas tworzenia rozwiązań przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
- W tym artykule opisano typowe problemy, które mogą wystąpić, gdy są projektowania, uruchamianie i testowanie rozwiązań pakietu Office w Visual Studio.
+ Opisuje typowe problemy, które mogą wystąpić podczas projektowania, uruchamiania i testowania rozwiązań pakietu Office w programie Visual Studio.
 
-- [Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
+- [Instrukcje: Ponowne włączanie dodatku VSTO, który został wyłączony](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 
- Opisuje sposób ponownie włączyć dodatek narzędzi VSTO dla programów trudne lub nietrwałe wyłączono.
+ W tym artykule opisano, jak ponownie włączyć dodatek narzędzi VSTO, który jest trwały lub elastyczny.
 
 - [Dodatkowa obsługa błędów w rozwiązaniach pakietu Office](../vsto/additional-support-for-errors-in-office-solutions.md)
 
- W tym artykule opisano inne zasoby dotyczące rozwiązywania problemów, błędy i ostrzeżenia w rozwiązaniach pakietu Office.
+ Opisuje inne zasoby dotyczące rozwiązywania problemów i ostrzeżeń w rozwiązaniach pakietu Office.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)
 
- W tym artykule opisano typowe problemy, które można napotkać podczas pracy z Zabezpieczanie rozwiązań pakietu Office.
+ Opisuje typowe problemy, które można napotkać podczas pracy z zabezpieczaniem rozwiązań pakietu Office.
 
-- [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-deployment.md)
 
- W tym artykule opisano typowe problemy, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.
+ Opisuje typowe problemy, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.
 
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
 
- Zawiera łącza do informacji o wdrażaniu Twoich rozwiązań, w tym problemy dotyczące zabezpieczeń, a także kwestie do rozważenia przy wyborze modelu wdrażania.
+ Zawiera łącza do informacji o wdrażaniu rozwiązań, w tym zagadnieniach dotyczących zabezpieczeń, a także o problemach, które należy wziąć pod uwagę podczas wybierania modelu wdrażania.
 
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)
 
- Zawiera tematy, które wyjaśniają, jak rozwiązań pakietu Office zestawowi funkcji zabezpieczeń dostępnych w środowisku .NET Framework.
+ Zawiera tematy objaśniające, w jaki sposób rozwiązania pakietu Office zawierają funkcje zabezpieczeń dostępne w .NET Framework.
 
 - [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)
 
- Listy często zadawane pytania dotyczące programowania rozwiązań pakietu Office i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.
+ Wyświetla listę często zadawanych pytań dotyczących programowania rozwiązań pakietu Office i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.

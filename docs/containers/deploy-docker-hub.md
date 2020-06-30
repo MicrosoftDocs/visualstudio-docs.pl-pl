@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283180"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536893"
 ---
 # <a name="deploy-to-docker-hub"></a>Wdrażanie w usłudze Docker Hub
 
@@ -29,17 +29,17 @@ Jeśli nie masz repozytorium centrum platformy Docker, utwórz je za pomocą nar
 
 1. Kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Publikuj...**. Zostanie wyświetlony ekran z opcjami wdrażania.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Zrzut ekranu przedstawiający opcje wdrażania](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. W obszarze **Wybieranie elementu docelowego publikowania**wybierz pozycję **Container Registry**, a następnie wybierz pozycję **centrum Docker**. Zostanie wyświetlone okno dialogowe **centrum platformy Docker** .
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![Zrzut ekranu przedstawiający okno dialogowe centrum platformy Docker](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
 1. Jeśli łączysz się z własnym repozytorium (nie częścią organizacji), pozostaw zaznaczone pole wyboru **Publikuj w repozytorium osobistym** . Jeśli repozytorium należy do organizacji, wyczyść pole wyboru i wprowadź nazwę organizacji. Wprowadź nazwę użytkownika platformy Docker i hasło do konta platformy Docker, które ma uprawnienia dostępu do repozytorium, z którym nawiązujesz połączenie, a następnie wybierz pozycję **Zapisz**.  
 
-   Program Visual Studio podejmie próbę wdrożenia obrazu w usłudze Docker Hub.  Jeśli to się powiedzie, zostanie wyświetlony ekran **Publikowanie** z adresem URL obrazu repozytorium, tagiem obrazu, repozytorium i konfiguracją kompilacji * * (na przykład **Release**).
+   Program Visual Studio podejmie próbę wdrożenia obrazu w usłudze Docker Hub.  Jeśli to się powiedzie, zostanie wyświetlony ekran **Publikowanie** z adresem URL obrazu repozytorium, tagiem obrazu, repozytorium i konfiguracją kompilacji (na przykład **Release**).
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![Zrzut ekranu przedstawiający ekran publikowanie](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
 1. Możesz zaktualizować obraz w dowolnym momencie, klikając przycisk **Publikuj** na tej stronie.  Możesz również zmodyfikować lub usunąć profil, używając linków znajdujących się pod adresem URL.
 

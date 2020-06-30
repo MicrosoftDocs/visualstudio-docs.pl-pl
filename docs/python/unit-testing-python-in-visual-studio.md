@@ -1,8 +1,8 @@
 ---
-title: Kod Pythona testu jednostkowego
-description: Konfigurowanie testowania jednostkowego dla kodu języka Python w programie Visual Studio w pełni wykorzystuje funkcje Eksploratora testów do odnajdowania, uruchamiania i debugowania testów.
+title: Kod języka Python testów jednostkowych
+description: Skonfigurowanie testów jednostkowych dla kodu Python w programie Visual Studio w pełni wykorzystuje funkcje Eksploratora testów do odnajdywania, uruchamiania i debugowania testów.
 ms.date: 09/18/2019
-ms.topic: include
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,20 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 09c67ace9db36cb8ee3d94296d339b62849e3c94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a621cd56f980c8a1404ba8855cdf3544e58d39d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71254197"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535338"
 ---
-# <a name="set-up-unit-testing-for-python-code"></a>Konfigurowanie testowania jednostkowego dla kodu języka Python
+# <a name="set-up-unit-testing-for-python-code"></a>Konfigurowanie testów jednostkowych dla kodu w języku Python
 
-Testy jednostkowe są części kodu, które testują inne jednostki kodu w aplikacji, zazwyczaj izolowane funkcje, klasy i tak dalej. Gdy aplikacja pomyślniech testów jednostkowych, można przynajmniej ufać, że jego funkcje niskiego poziomu jest poprawna.
+Testy jednostkowe są fragmentami kodu, które testują inne jednostki kodu w aplikacji, zazwyczaj izolowane funkcje, klasy i tak dalej. Gdy aplikacja przejdzie wszystkie testy jednostkowe, można co najmniej ufać, że jej funkcje niskiego poziomu są poprawne.
 
-Python intensywnie używa testów jednostkowych do sprawdzania poprawności scenariuszy podczas projektowania programu. Obsługa języka Python w programie Visual Studio obejmuje odnajdowanie, wykonywanie i debugowanie testów jednostkowych w kontekście procesu tworzenia, bez konieczności uruchamiania testów oddzielnie.
+W języku Python testy jednostkowe są szeroko wykorzystywane do sprawdzania poprawności scenariuszy podczas projektowania programu. Obsługa języka Python w programie Visual Studio obejmuje odnajdywanie, wykonywanie i debugowanie testów jednostkowych w kontekście procesu opracowywania, bez konieczności niezależnego uruchamiania testów.
 
-Ten artykuł zawiera krótki zarys możliwości testowania jednostkowego w programie Visual Studio w języku Python. Aby uzyskać więcej informacji na temat testowania jednostkowego w ogóle, zobacz [Jednostka przetestować kod](../test/unit-test-your-code.md).
+Ten artykuł zawiera krótkie omówienie możliwości testowania jednostkowego w programie Visual Studio przy użyciu języka Python. Aby uzyskać więcej informacji na temat testów jednostkowych, zobacz [test jednostkowy kodu](../test/unit-test-your-code.md).
 
 ::: moniker range="vs-2017"
 

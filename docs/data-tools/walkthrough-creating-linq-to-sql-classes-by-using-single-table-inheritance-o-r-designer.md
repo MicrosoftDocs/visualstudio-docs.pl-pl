@@ -11,15 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585980"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535268"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: tworzenie klas LINQ to SQL przy użyciu dziedziczenia pojedynczej tabeli (Projektant O/R)
-[Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługują dziedziczenie pojedynczej tabeli, ponieważ są one zazwyczaj zaimplementowane w systemach relacyjnych. Ten Instruktaż rozszerza się po ogólnych krokach przedstawionych w temacie [How to: Configure dziedziczenie przy użyciu projektanta o/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) i zawiera pewne prawdziwe dane, które pokazują, jak używać dziedziczenia w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+[Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługują dziedziczenie pojedynczej tabeli, ponieważ są one zazwyczaj zaimplementowane w systemach relacyjnych. W tym instruktażu rozwijane są ogólne kroki opisane w temacie [How to: Configure dziedziczenie przy użyciu projektanta o/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) i zawiera pewne prawdziwe dane umożliwiające zaprezentowanie użycia dziedziczenia w programie [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
 
 W tym instruktażu wykonasz następujące zadania:
 
@@ -27,7 +27,7 @@ W tym instruktażu wykonasz następujące zadania:
 
 - Utwórz aplikację Windows Formsową.
 
-- Dodaj plik [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] do projektu.
+- Dodaj [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] plik do projektu.
 
 - Utwórz nowe klasy jednostek.
 
@@ -38,7 +38,7 @@ W tym instruktażu wykonasz następujące zadania:
 - Wyświetl dane w formularzu systemu Windows.
 
 ## <a name="create-a-table-to-inherit-from"></a>Utwórz tabelę do dziedziczenia
-Aby zobaczyć, jak działa dziedziczenie, należy utworzyć małą `Person` tabelę, użyć jej jako klasy bazowej, a następnie utworzyć obiekt `Employee`, który z niego dziedziczy.
+Aby zobaczyć, jak działa dziedziczenie, należy utworzyć małą `Person` tabelę, użyć jej jako klasy bazowej, a następnie utworzyć `Employee` obiekt, który z niego dziedziczy.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Aby utworzyć tabelę bazową w celu zademonstrowania dziedziczenia
 
@@ -51,10 +51,10 @@ Aby zobaczyć, jak działa dziedziczenie, należy utworzyć małą `Person` tabe
 
     |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
     |-----------------|---------------|-----------------|
-    |**Identyfikator**|**int**|**False**|
+    |**ID**|**int**|**False**|
     |**Typ**|**int**|**True**|
-    |**Imię**|**nvarchar(200)**|**False**|
-    |**Nazwisko**|**nvarchar(200)**|**False**|
+    |**Imię**|**nvarchar (200)**|**False**|
+    |**Nazwisko**|**nvarchar (200)**|**False**|
     |**Manager**|**int**|**True**|
 
 3. Ustaw wartość kolumny ID jako klucz podstawowy.
@@ -70,9 +70,8 @@ Aby można było sprawdzić, czy dziedziczenie jest prawidłowo skonfigurowane, 
 
 2. Skopiuj następujące dane do tabeli. (Można go skopiować, a następnie wkleić do tabeli, zaznaczając cały wiersz w okienku **wyników** ).
 
-    ||||||
+    |**ID**|**Typ**|**Imię**|**Nazwisko**|**Manager**|
     |-|-|-|-|-|
-    |**Identyfikator**|**Typ**|**Imię**|**Nazwisko**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -91,9 +90,9 @@ Po utworzeniu tabeli Utwórz nowy projekt, aby zademonstrować Konfigurowanie dz
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Aby utworzyć nową aplikację Windows Forms
 
-1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy** **projekt** > .
+1. W programie Visual Studio w menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
-2. Rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **pulpit systemu Windows**.
+2. Rozwiń pozycję **Visual C#** lub **Visual Basic** w okienku po lewej stronie, a następnie wybierz pozycję **Windows Desktop**.
 
 3. W środkowym okienku wybierz typ projektu **aplikacji Windows Forms** .
 
@@ -147,9 +146,9 @@ Teraz można dodać kod do formularza, który wykonuje zapytania dotyczące okre
 
 1. Przeciągnij element **ListBox** na **formularz Form1**.
 
-2. Kliknij dwukrotnie formularz, aby utworzyć procedurę obsługi zdarzeń `Form1_Load`.
+2. Kliknij dwukrotnie formularz, aby utworzyć `Form1_Load` procedurę obsługi zdarzeń.
 
-3. Dodaj następujący kod do programu obsługi zdarzeń `Form1_Load`:
+3. Dodaj następujący kod do `Form1_Load` programu obsługi zdarzeń:
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -185,10 +184,10 @@ Uruchom aplikację i sprawdź, czy rekordy wyświetlane w polu listy to wszyscy 
 
 3. Zamknij formularz. (W menu **debugowanie** kliknij polecenie **Zatrzymaj debugowanie**).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Przewodnik: tworzenie klas LINQ to SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Instrukcje: przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Instrukcje: Generowanie modelu obiektu w Visual Basic lubC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Instrukcje: Generowanie modelu obiektów w Visual Basic lub C #](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
