@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9fa92e773c3dc130d0c0fc0ce05cc270dc9b6e53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef5ccc0cf432a5c6782b76c4623bfdc55f66a8b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669010"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538558"
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,14 +27,14 @@ Ta sekcja zawiera informacje o komunikatach o błędach, które są generowane p
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-|||
+|Element|Wartość|
 |-|-|
 |[CA0001](ca0001.md)|W narzędziu do analizy kodu zarządzanego został zgłoszony wyjątek, który nie wskazuje oczekiwanego warunku błędu.|
 |[CA0051](ca0051.md)|Nie wybrano żadnych reguł.|
 |[CA0052](ca0052.md)|Nie wybrano żadnych elementów docelowych do przeanalizowania.|
 |[CA0053](ca0053.md)|Nie można załadować zestawu reguł.|
 |[CA0054](ca0054.md)|Zestaw reguł niestandardowych ma nieprawidłowe zasoby XML.|
-|[CA0055](ca0055.md)|Nie można załadować pliku: \<path >|
+|[CA0055](ca0055.md)|Nie można załadować pliku:\<path>|
 |[CA0056](ca0056.md)|Plik projektu ma niepoprawną wersję narzędzia do analizy.|
 |[CA0057](ca0057.md)|Nie można zamapować naruszeń na bieżący zestaw elementów docelowych i reguł.|
 |[CA0058](ca0058.md)|Nie można załadować zestawów, do których się odwołuje.|
@@ -47,7 +47,7 @@ Ta sekcja zawiera informacje o komunikatach o błędach, które są generowane p
 |[CA0065](ca0065.md)|Nieobsługiwana konstrukcja metadanych: typ "*TypeName*" zawiera właściwość i pole o tej samej nazwie "*PropertyFieldName*"|
 |[CA0066](ca0066.md)|Wartość "*VersionId*" podana dla **dla przełącznika/TargetFrameworkVersion** nie jest rozpoznawaną wersją.|
 |[CA0067](ca0067.md)|Nie znaleziono katalogu.|
-|[CA0068](ca0068.md)|Nie można znaleźć informacji debugowania dla zestawu docelowego *"AssemblyName"* .|
+|[CA0068](ca0068.md)|Nie można znaleźć informacji debugowania dla zestawu docelowego *"AssemblyName"*.|
 |[CA0069](ca0069.md)|Korzystanie z alternatywnej platformy. Nie można znaleźć *FrameworkVersion1* . Zamiast tego należy użyć *FrameworkVersion2* . Aby uzyskać najlepsze wyniki analizy, upewnij się, że zainstalowano poprawną .NET Framework.|
 |[CA0070](ca0070.md)|Nie można załadować zestawu lub typu ze względu na uprawnienia zabezpieczeń.|
 |[CA0501](ca0501.md)|Nie można odczytać raportu wyjściowego.|
@@ -55,7 +55,7 @@ Ta sekcja zawiera informacje o komunikatach o błędach, które są generowane p
 |[CA0503](ca0503.md)|Właściwość jest przestarzała. Użyj właściwości Superceding|
 |[CA0504](ca0504.md)|Katalog reguł został zignorowany, ponieważ nie istnieje|
 |[CA0505](ca0505.md)|Właściwość jest przestarzała. Użyj właściwości Superceding|
-|[Błędy polecenia FxCopCmd](fxcopcmd-errors.md)|Błędy analizy kodu zarządzanego.|
+|[Błędy plik FxCopCmd](fxcopcmd-errors.md)|Błędy analizy kodu zarządzanego.|
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 

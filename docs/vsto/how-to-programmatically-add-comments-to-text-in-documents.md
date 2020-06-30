@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe Dodawanie komentarzy do tekstu w dokumentach'
+title: 'Instrukcje: Programowane dodawanie komentarzy do tekstu w dokumentach'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967673"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538116"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Instrukcje: Programowe Dodawanie komentarzy do tekstu w dokumentach
-  Właściwość komentarze klasy dokumentu dodaje komentarz do zakresu w dokumencie programu Microsoft Office Word.
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Instrukcje: Programowane dodawanie komentarzy do tekstu w dokumentach
+  Właściwość Comment klasy Document dodaje komentarz do zakresu tekstu w dokumencie programu Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -29,23 +29,23 @@ ms.locfileid: "62967673"
 
 ## <a name="to-add-a-new-comment-to-text-in-a-document-level-customization"></a>Aby dodać nowy komentarz do tekstu w dostosowaniu na poziomie dokumentu
 
-1. Wywołaj <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> metody <xref:Microsoft.Office.Tools.Word.Document.Comments%2A> właściwości i podaj zakres i tekst komentarza. Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+1. Wywołaj <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> metodę <xref:Microsoft.Office.Tools.Word.Document.Comments%2A> właściwości i podaj zakres oraz tekst komentarza. Aby użyć następującego przykładu kodu, uruchom go z `ThisDocument` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]
      [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]
 
 ## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Aby dodać nowy komentarz do tekstu w dodatku narzędzi VSTO
 
-1. Wywołaj <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> metody <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> właściwości i podaj zakres i tekst komentarza.
+1. Wywołaj <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> metodę <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> właściwości i podaj zakres oraz tekst komentarza.
 
      Poniższy przykład kodu dodaje komentarz do aktywnego dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#118)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#118)]
 
-## <a name="robust-programming"></a>Skuteczne programowanie
+## <a name="robust-programming"></a>Niezawodne programowanie
  Aby zmienić inicjały użytkownika, które program Word dodaje do komentarzy, użyj <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> właściwości.
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Programowe usuwanie wszystkich komentarzy z dokumentów](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: programowe usuwanie wszystkich komentarzy z dokumentów](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Element hosta dokumentu](../vsto/document-host-item.md)

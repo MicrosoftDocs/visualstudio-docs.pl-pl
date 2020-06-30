@@ -1,7 +1,7 @@
 ---
 title: 'Porady: tworzenie rozwiązania języka właściwego dla domeny'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594672"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541794"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: tworzenie rozwiązania języka właściwego dla domeny
 Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowanego rozwiązania programu Visual Studio.
@@ -27,7 +27,7 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
 
 Przed rozpoczęciem tej procedury należy zainstalować następujące składniki:
 
-- {1&gt;Visual Studio&lt;1}
+- Visual Studio
 - Visual Studio SDK (instalowany jako część obciążenia **programistycznego rozszerzenia programu Visual Studio** )
 - Modeling SDK (instalowany jako składnik programu Visual Studio)
 
@@ -38,7 +38,7 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
 1. Uruchom Kreatora DSL, tworząc nowy projekt **Projektant języka specyficznego dla domeny** .
 
    > [!NOTE]
-   > Najlepiej, aby nazwa wybrana dla projektu była prawidłowym identyfikatorem wizualizacji C# , ponieważ może służyć do generowania kodu.
+   > Zaleca się, aby nazwa wybrana dla projektu była prawidłowym identyfikatorem języka Visual C#, ponieważ może służyć do generowania kodu.
 
    ::: moniker range="vs-2017"
 
@@ -65,7 +65,7 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
    > [!NOTE]
    > Jeśli zostanie wyświetlony komunikat z alertami, że nie chcesz uruchamiać szablonów tekstowych z niezaufanych źródeł, kliknij przycisk **OK**. Możesz ustawić ten komunikat, aby nie pojawiał się ponownie.
 
-## <a name="settings"></a>Strony kreatora projektant DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Strony kreatora projektant DSL
  Można pozostawić kilka pól niezmienionych z wartości domyślnych. Należy jednak upewnić się, że pole rozszerzenie pliku jest ustawione.
 
 ### <a name="solution-settings-page"></a>Strona Ustawienia rozwiązania
@@ -73,7 +73,7 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
 Wybierz szablon, który jest podobny do DSL, które chcesz utworzyć. Różne szablony zapewniają wygodne punkty startowe. Po wybraniu szablonu rozwiązania Kreator wyświetli opis. Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Jak chcesz nazwać język specyficzny dla domeny?**
-Wartość domyślna to nazwa rozwiązania. Kod jest generowany na podstawie tej wartości. Musi być prawidłową nazwą C# klasy.
+Wartość domyślna to nazwa rozwiązania. Kod jest generowany na podstawie tej wartości. Musi być prawidłowy jako nazwa klasy C#.
 
 ### <a name="file-extension-page"></a>Strona rozszerzenia pliku
  **Jakiego rozszerzenia powinny używać pliki modelu?**
@@ -87,11 +87,11 @@ Wpisz nowe rozszerzenie pliku.
 
 - Wpisz inne rozszerzenie pliku.
 
-     \- lub —
+     \-oraz
 
 - Zresetuj wystąpienie eksperymentalne programu Visual Studio. Spowoduje to Wyrejestrowanie wszystkich utworzonych wcześniej językami DSL. W menu **Start** kliknij pozycję **wszystkie programy**, **Microsoft Visual Studio zestaw SDK 2010**, **Narzędzia**, a następnie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. Możesz ponownie skompilować wszystkie inne językami DSL, których chcesz użyć.
 
-     \- lub —
+     \-oraz
 
 - Jeśli rozszerzenie programu Visual Studio, które używa tego rozszerzenia pliku, zostało w pełni zainstalowane na komputerze, odinstaluj je. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
 
@@ -116,7 +116,7 @@ Ta wartość domyślna to nazwa składająca się z nazwy firmy i produktów.
 
  Aby uzyskać więcej informacji na temat silnego nazewnictwa, zobacz [Tworzenie i używanie zestawów o silnej nazwie](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
-- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

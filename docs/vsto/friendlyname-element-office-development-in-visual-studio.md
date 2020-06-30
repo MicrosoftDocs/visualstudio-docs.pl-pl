@@ -1,9 +1,9 @@
 ---
-title: '&lt;friendlyName&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;FriendlyName, &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d038e825173f95ddfe4106022c7c9924090b3a5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6629212fcc981ba3decb3b02d63975bc9826dc1f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972359"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541664"
 ---
-# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt; — element (Office development w programie Visual Studio)
-  `friendlyName` Elementu `vstov4` przestrzeni nazw przechowuje nazwę, która jest wyświetlana na liście zainstalowanych programów.
+# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;FriendlyName, &gt; element (Programowanie Office w Visual Studio)
+  `friendlyName`Element `vstov4` przestrzeni nazw przechowuje nazwę, która pojawia się na liście zainstalowanych programów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,15 +31,15 @@ ms.locfileid: "62972359"
 </friendlyName>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `friendlyName` Element znajduje się w `vstov4` przestrzeni nazw. Wartość jest wyświetlana na liście zainstalowanych programów na komputerze, a następnie w oknie dialogowym dodatków narzędzi VSTO dla modelu COM aplikacji pakietu Microsoft Office.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `friendlyName`Element znajduje się w `vstov4` przestrzeni nazw. Wartość zostanie wyświetlona na liście zainstalowanych programów na komputerze, a w oknie dialogowym Dodatki programu VSTO (COM) Microsoft Office aplikacji.
 
- `friendlyName` Element nie ma atrybutów lub elementów podrzędnych.
+ `friendlyName`Element nie ma atrybutów ani elementów podrzędnych.
 
-## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO
+## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `friendlyName` elementu w rozwiązaniu dodatku poziomu aplikacji wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `friendlyName` element w rozwiązaniu na poziomie aplikacji wdrożonym przy użyciu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 
@@ -49,7 +49,7 @@ ms.locfileid: "62972359"
 </vstov4:friendlyName>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

@@ -1,9 +1,9 @@
 ---
-title: 'Instrukcje: Mapowanie schematów z arkuszami w programie Visual Studio'
+title: 'Instrukcje: mapowanie schematów do arkuszy w programie Visual Studio'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,54 +17,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428117"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538141"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Instrukcje: Mapowanie schematów z arkuszami w programie Visual Studio
-  Gdy arkusz jest otwarty w programie Visual Studio, możesz zamapować schematu XML do arkusza. Możesz użyć tych samych narzędzi Microsoft Office Excel, których używasz, gdy skoroszyt jest otwarty poza programem Visual Studio. Office project tworzy te same obiekty, czy mapowanie schematu na arkusz, przed lub po utworzeniu rozwiązania programu Excel.
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Instrukcje: mapowanie schematów do arkuszy w programie Visual Studio
+  Możesz zmapować schemat XML do arkusza, gdy arkusz jest otwarty w programie Visual Studio. Używasz tych samych Microsoft Office narzędzi programu Excel, które są używane, gdy skoroszyt jest otwarty poza programem Visual Studio. Projekt pakietu Office tworzy te same obiekty niezależnie od tego, czy schemat jest mapowany do arkusza przed lub po utworzeniu rozwiązania programu Excel.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
-> Nie można użyć wieloczęściowego schematów XML w rozwiązaniach programu Excel.
+> Nie można używać wieloczęściowych schematów XML w rozwiązaniach programu Excel.
 
-## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Aby zamapować schematu XML do arkusza programu Excel w programie Visual Studio
+## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Aby zmapować schemat XML do arkusza programu Excel w programie Visual Studio
 
-1. Otwórz projekt skoroszytem lub szablonem programu Excel w programie Visual Studio.
+1. Otwórz skoroszyt programu Excel lub szablon projektu w programie Visual Studio.
 
 2. Kliknij arkusz, aby przenieść fokus do projektanta.
 
-3. Na wstążce kliknij **Developer** kartę.
+3. Na wstążce kliknij kartę **deweloper** .
 
     > [!NOTE]
-    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli karta **deweloper** nie jest widoczna, należy ją najpierw pokazać. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4. W **XML** grupy, kliknij przycisk **źródła**.
+4. W grupie **XML** kliknij pozycję **Źródło**.
 
-     **Źródła XML** zostanie otwarte okno.
+     Zostanie otwarte okno **Źródło XML** .
 
-5. W **źródła XML** okna, kliknij przycisk **mapy XML**.
+5. W oknie **Źródło XML** kliknij pozycję **mapy XML**.
 
-     **Mapy XML** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **mapy XML** .
 
-6. W **mapy XML** okno dialogowe, kliknij przycisk **Dodaj**.
+6. W oknie dialogowym **mapy XML** kliknij przycisk **Dodaj**.
 
-7. Przejdź do pliku schematu, zaznacz go, a następnie kliknij **Otwórz**.
+7. Przejdź do pliku schematu, zaznacz go, a następnie kliknij przycisk **Otwórz**.
 
 8. Kliknij przycisk **OK**.
 
-     Schemat jest reprezentowana w **źródła XML** okna. W projekcie wpisane <xref:System.Data.DataSet> jest generowany na podstawie schematu, a <xref:System.Windows.Forms.BindingSource> zostanie utworzony.
+     Schemat jest reprezentowany w oknie **Źródło XML** . W projekcie typ <xref:System.Data.DataSet> jest generowany na podstawie schematu i <xref:System.Windows.Forms.BindingSource> jest tworzony.
 
-9. Przeciągnij elementy z **źródła XML** okna do miejsc w arkuszu, w którym ma odpowiednie metody kontroli ma zostać utworzony.
+9. Przeciągnij elementy z okna **Źródło XML** do miejsc w arkuszu, w których chcesz utworzyć odpowiednie kontrolki.
 
-     Jeśli przeciągniesz element schematu niepowtarzający, generuje projekt Office <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> formant, który zostanie automatycznie powiązany <xref:System.Windows.Forms.BindingSource>.
+     Jeśli przeciągniesz niepowtarzający się element schematu, projekt pakietu Office wygeneruje <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> formant, który jest automatycznie powiązany z <xref:System.Windows.Forms.BindingSource> .
 
-     Jeśli przeciągniesz powtarzający się element schematu, generuje projekt Office <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który nie jest automatycznie powiązany ze źródłem danych. Aby uzyskać więcej informacji, zobacz [schematy XML i dane na poziomie dokumentu dostosowania](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
+     Jeśli przeciągniesz powtarzający się element schematu, projekt pakietu Office wygeneruje <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który nie jest automatycznie powiązany ze źródłem danych. Aby uzyskać więcej informacji, zobacz [schematy XML i dane w obszarze dostosowania na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Mapowanie schematów z dokumentami programu Word w programie Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
-- [Schematy XML i dane dostosowywane na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: mapowanie schematów do dokumentów programu Word w programie Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
+- [Schematy XML i dane w dostosowaniach na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

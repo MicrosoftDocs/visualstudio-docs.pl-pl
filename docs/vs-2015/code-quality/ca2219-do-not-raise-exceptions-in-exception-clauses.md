@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ebce51d360518d1cc66f652714c59d27751586b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 960c74625a04b209dc9aa251256e994517a3a52f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668880"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538531"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
@@ -33,23 +33,23 @@ ms.locfileid: "72668880"
 |Zmiana kluczowa|Bez przerywania, przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Wyjątek jest generowany z klauzuli `finally`, Filter lub Fault.
+ Wyjątek jest generowany z `finally` klauzuli, Filter lub Fault.
 
 ## <a name="rule-description"></a>Opis reguły
  Gdy wyjątek jest zgłaszany w klauzuli wyjątku, znacznie zwiększa trudność debugowania.
 
- Gdy wyjątek jest zgłaszany w klauzuli `finally` lub Fault, nowy wyjątek ukrywa aktywny wyjątek, jeśli jest obecny. Powoduje to, że oryginalny błąd trudno wykryć i debugować.
+ Gdy wyjątek jest zgłaszany w `finally` klauzuli lub Fault, nowy wyjątek ukrywa aktywny wyjątek, jeśli jest obecny. Powoduje to, że oryginalny błąd trudno wykryć i debugować.
 
  Gdy wyjątek jest zgłaszany w klauzuli filtru, środowisko uruchomieniowe dyskretnie przechwytuje wyjątek i powoduje, że filtr jest obliczany na wartość false. Nie ma możliwości poinformowania o różnicy między filtrem a wartością false a błędem zgłaszanym przez filtr. Dzięki temu trudno wykrywać i debugować błędy w logice filtru.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać ten problem, nie należy jawnie zgłaszać wyjątku z klauzuli `finally`, Filter lub Fault.
+ Aby rozwiązać ten problem, nie należy jawnie zgłosić wyjątku z `finally` klauzuli, Filter lub Fault.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżenia dla tej reguły. Nie ma scenariuszy, w których wyjątek zgłoszony w klauzuli wyjątku stanowi korzyść dla wykonywanego kodu.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+ [CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)
+ [Ostrzeżenia projektu](../code-quality/design-warnings.md)

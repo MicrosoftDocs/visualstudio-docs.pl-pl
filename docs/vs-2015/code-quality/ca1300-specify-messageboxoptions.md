@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e21866fce69f768d927882d3ddd47ae3e431265
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af0017a7ee6918a80a93ca90c7cf3de78885d61f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663608"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539194"
 ---
-# <a name="ca1300-specify-messageboxoptions"></a>CA1300: Określ MessageBoxOptions
+# <a name="ca1300-specify-messageboxoptions"></a>CA1300: Określ argument MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
@@ -33,13 +33,13 @@ ms.locfileid: "72663608"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda wywołuje Przeciążenie metody <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>, która nie przyjmuje <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argumentu.
+ Metoda wywołuje Przeciążenie <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> metody, która nie przyjmuje <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argumentu.
 
 ## <a name="rule-description"></a>Opis reguły
- Aby wyświetlić okno komunikatu prawidłowo dla kultur korzystających z kolejności czytania od prawej do lewej, <xref:System.Windows.Forms.MessageBoxOptions> i <xref:System.Windows.Forms.MessageBoxOptions> elementy członkowskie wyliczenia <xref:System.Windows.Forms.MessageBoxOptions> muszą zostać przesłane do metody <xref:System.Windows.Forms.MessageBox.Show%2A>. Sprawdź Właściwość <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> zawierającej kontrolki, aby określić, czy ma być używana kolejność odczytywania od prawej do lewej.
+ Aby wyświetlić okno komunikatu prawidłowo dla kultur korzystających z kolejności czytania od prawej do lewej, <xref:System.Windows.Forms.MessageBoxOptions> <xref:System.Windows.Forms.MessageBoxOptions> elementy członkowskie <xref:System.Windows.Forms.MessageBoxOptions> wyliczenia muszą być przekazywać do <xref:System.Windows.Forms.MessageBox.Show%2A> metody. Sprawdź <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> Właściwość zawierającej kontrolki, aby określić, czy ma być używana kolejność odczytywania od prawej do lewej.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, wywołaj Przeciążenie metody <xref:System.Windows.Forms.MessageBox.Show%2A>, która przyjmuje <xref:System.Windows.Forms.MessageBoxOptions> argument.
+ Aby naprawić naruszenie tej reguły, wywołaj Przeciążenie <xref:System.Windows.Forms.MessageBox.Show%2A> metody, która przyjmuje <xref:System.Windows.Forms.MessageBoxOptions> argument.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jeśli biblioteka kodu nie zostanie zlokalizowana dla kultury korzystającej z kolejności odczytywania od prawej do lewej, można bezpiecznie pominąć ostrzeżenie z tej reguły.
@@ -51,4 +51,4 @@ ms.locfileid: "72663608"
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/vb/FxCop.Globalization.SpecifyMBOptions.vb#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [zasoby <xref:System.Resources.ResourceManager?displayProperty=fullName> w aplikacjach klasycznych](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+ <xref:System.Resources.ResourceManager?displayProperty=fullName>[Zasoby w aplikacjach klasycznych](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

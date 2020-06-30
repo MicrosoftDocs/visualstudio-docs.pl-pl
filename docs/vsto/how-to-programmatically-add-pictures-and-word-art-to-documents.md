@@ -1,7 +1,7 @@
 ---
 title: Programistyczne Dodawanie zdjęć i obiektów WordArt do dokumentów
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253822"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538089"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Instrukcje: Programistyczne Dodawanie zdjęć i rysunków do dokumentów
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Instrukcje: programowe Dodawanie zdjęć i rysunków programu Word do dokumentów
   Możesz dodawać obrazy i obiekty rysunkowe do dokumentów w czasie projektowania lub w czasie wykonywania. Obiekt WordArt umożliwia dodawanie dekoracyjnego tekstu do Microsoft Office dokumentów programu Word. Te specjalne efekty tekstowe to obiekty rysunkowe, które można dostosować i wstawić do dokumentu.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "71253822"
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>Aby dodać obraz w lokalizacji kursora
 
-1. Wywołaj <xref:Microsoft.Office.Interop.Word.InlineShapes> metodę kolekcji i przekaż nazwę pliku. <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A>
+1. Wywołaj <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> metodę <xref:Microsoft.Office.Interop.Word.InlineShapes> kolekcji i przekaż nazwę pliku.
 
      [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
      [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
@@ -78,7 +78,7 @@ ms.locfileid: "71253822"
      [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]
 
-2. Wywoływanie <xref:Microsoft.Office.Interop.Word.Shapes> metody obiektu w dokumencie. <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A>
+2. Wywoływanie <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> metody <xref:Microsoft.Office.Interop.Word.Shapes> obiektu w dokumencie.
 
      [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]
@@ -90,18 +90,18 @@ ms.locfileid: "71253822"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]
 
-2. Wywoływanie <xref:Microsoft.Office.Interop.Word.Shapes> metody obiektu aktywnego dokumentu (lub innego dokumentu określonego przez użytkownika). <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A>
+2. Wywoływanie <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> metody <xref:Microsoft.Office.Interop.Word.Shapes> obiektu aktywnego dokumentu (lub innego dokumentu określonego przez użytkownika).
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]
 
-## <a name="compile-the-code"></a>Skompilować kod
+## <a name="compile-the-code"></a>Kompiluj kod
 
-- Obraz o nazwie *SamplePicture. jpg* musi znajdować się na dysku C.
+- Obraz o nazwie *SamplePicture.jpg* musi znajdować się na dysku C.
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Instrukcje: Programistyczne wstawianie tekstu do dokumentów programu Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Instrukcje: Programowo Przywróć zaznaczenia po wyszukiwaniu](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Instrukcje: Programowo zapisuj dokumenty](../vsto/how-to-programmatically-save-documents.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Instrukcje: Programowane wstawianie tekstu do dokumentów programu Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Instrukcje: Programowane przywracanie zaznaczenia po wyszukiwaniu](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Instrukcje: programowe zapisywanie dokumentów](../vsto/how-to-programmatically-save-documents.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

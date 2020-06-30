@@ -1,9 +1,9 @@
 ---
-title: 'Instrukcje: Mapowanie schematów z dokumentami programu Word w programie Visual Studio'
+title: 'Instrukcje: mapowanie schematów do dokumentów programu Word w programie Visual Studio'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,53 +16,53 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c6f9ee9a7b636c6c12bfe2f8debcc05911e3b04
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 281d9dc18ae1d0550ba844e58d4e39c3723c8dfb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441770"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538154"
 ---
-# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Instrukcje: Mapowanie schematów z dokumentami programu Word w programie Visual Studio
-  **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.
+# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Instrukcje: mapowanie schematów do dokumentów programu Word w programie Visual Studio
+  **Ważne** Informacje przedstawione w tym temacie dotyczące programu Microsoft Word są prezentowane wyłącznie na korzyść i użytkowanie przez osoby i organizacje, które znajdują się poza Stany Zjednoczoneą i jej terytoriami, lub opracowywaniem programów, które są uruchamiane w programie Microsoft Word, które zostały licencjonowane przez firmę Microsoft przed 2010 stycznia, gdy firma Microsoft usunie implementację konkretnych funkcji związanych z niestandardowym kodem XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word mogą nie być odczytane lub używane przez osoby lub organizacje w Stany Zjednoczone lub na terytoriach, którzy korzystają z programu lub opracowywania programów, które są uruchamiane w programie, produkty Microsoft Word, które zostały licencjonowane przez firmę Microsoft po 10 stycznia 2010; te produkty nie będą działać tak samo jak produkty licencjonowane przed tą datą lub zakupione i licencjonowane do użycia poza Stany Zjednoczone.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Gdy dokument jest otwarty w programie Visual Studio, można mapować do dokumentu schematu XML. Możesz użyć tych samych narzędzi Microsoft Office Word, których używasz, gdy dokument jest otwarty poza programem Visual Studio. Office project tworzy te same obiekty, czy mapowanie schematu dokumentu przed lub po utworzeniu rozwiązania programu Word.
+ Schemat XML można zmapować do dokumentu, gdy dokument jest otwarty w programie Visual Studio. Używasz tych samych Microsoft Office narzędzi programu Word, które są używane, gdy dokument jest otwarty poza programem Visual Studio. Projekt pakietu Office tworzy te same obiekty niezależnie od tego, czy schemat został zmapowany do dokumentu przed lub po utworzeniu rozwiązania programu Word.
 
-## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Aby zamapować schematu XML do dokumentu programu Word w programie Visual Studio
+## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Aby zmapować schemat XML do dokumentu programu Word w programie Visual Studio
 
-1. Otwórz projekt dokumentem lub szablonem programu Word w programie Visual Studio.
+1. Otwórz dokument programu Word lub projekt szablonu wewnątrz programu Visual Studio.
 
-2. Kliknij w dokumencie, aby przenieść fokus do projektanta.
+2. Kliknij dokument, aby przenieść fokus do projektanta.
 
-3. Na wstążce kliknij **Developer** kartę.
+3. Na wstążce kliknij kartę **deweloper** .
 
     > [!NOTE]
-    > Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Pokazywanie karty dewelopera na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Jeśli karta **deweloper** nie jest widoczna, należy ją najpierw pokazać. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4. W **XML** grupy, kliknij przycisk **schematu**.
+4. W grupie **XML** kliknij pozycję **schemat**.
 
-     **Szablony i dodatki** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **Szablony i dodatki** .
 
-5. Kliknij przycisk **schematu XML** kartę.
+5. Kliknij kartę **schemat XML** .
 
-6. Kliknij przycisk **schemat Dodaj**.
+6. Kliknij pozycję **Dodaj schemat**.
 
-     **Schemat Dodaj** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **Dodaj schemat** .
 
-7. Przejdź do pliku schematu, zaznacz go, a następnie kliknij **Otwórz**.
+7. Przejdź do pliku schematu, zaznacz go, a następnie kliknij przycisk **Otwórz**.
 
-     **Schemat ustawień** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **Ustawienia schematu** .
 
-8. Przypisać aliasu lub kliknij przycisk **OK** można dodać schematu bez aliasu.
+8. Przypisz alias lub kliknij przycisk **OK** , aby dodać schemat bez aliasu.
 
 9. Kliknij przycisk **OK**.
 
-     **Struktury XML** zostanie otwarte okno.
+     Zostanie otwarte okno **struktury XML** .
 
-10. Przeciągnij elementy z **struktury XML** okna do miejsc w dokumencie, w którym ma odpowiednie metody kontroli ma zostać utworzony.
+10. Przeciągnij elementy z okna **struktury XML** do miejsc w dokumencie, w których chcesz utworzyć odpowiednie kontrolki.
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Mapowanie schematów z arkuszami w programie Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
-- [Schematy XML i dane dostosowywane na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: mapowanie schematów do arkuszy w programie Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [Schematy XML i dane w dostosowaniach na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

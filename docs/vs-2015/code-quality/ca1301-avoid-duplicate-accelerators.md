@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 647fef2968971cddb6a14cc19e53eed979b9c151
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 772c9bee3f43c42701bfa460c622f4a225ec59cb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661518"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539181"
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Należy unikać duplikowania akceleratorów
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Unikaj duplikowania akceleratorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
@@ -33,7 +33,7 @@ ms.locfileid: "72661518"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Typ rozszerza <xref:System.Windows.Forms.Control?displayProperty=fullName> i zawiera co najmniej dwie kontrolki najwyższego poziomu, które mają identyczne klucze dostępu, które są przechowywane w pliku zasobów.
+ Typ rozszerza <xref:System.Windows.Forms.Control?displayProperty=fullName> i zawiera dwa lub więcej kontrolek najwyższego poziomu, które mają identyczne klucze dostępu, które są przechowywane w pliku zasobów.
 
 ## <a name="rule-description"></a>Opis reguły
  Klucz dostępu, znany również jako akcelerator, umożliwia dostęp z klawiatury do formantu za pomocą klawisza ALT. Kiedy wiele formantów ma zduplikowany klucz dostępu, jego zachowanie nie jest dobrze zdefiniowane. Użytkownik może nie mieć dostępu do zamierzonej kontroli przy użyciu klucza dostępu, a kontrolka inna niż ta, która jest zamierzona, może być włączona.
@@ -47,9 +47,9 @@ ms.locfileid: "72661518"
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano minimalną postać zawierającą dwie kontrolki, które mają identyczne klucze dostępu. Klucze są przechowywane w pliku zasobów, który nie jest wyświetlany; jednak ich wartości są wyświetlane w wierszach z komentarzem `checkBox.Text`. Zachowanie zduplikowanych akceleratorów można sprawdzić przez wymianę wierszy `checkBox.Text` z ich komentarzem. Jednak w tym przypadku przykład nie spowoduje wygenerowania ostrzeżenia z reguły.
+ W poniższym przykładzie pokazano minimalną postać zawierającą dwie kontrolki, które mają identyczne klucze dostępu. Klucze są przechowywane w pliku zasobów, który nie jest wyświetlany; jednak ich wartości są wyświetlane w wierszach z komentarzem `checkBox.Text` . Zachowanie zduplikowanych akceleratorów może być badane przez wymianę `checkBox.Text` wierszy z ich komentarzem. Jednak w tym przypadku przykład nie spowoduje wygenerowania ostrzeżenia z reguły.
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.AvoidDuplicateAccels/cs/FxCop.Globalization.AvoidDuplicateAccels.cs#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [zasoby <xref:System.Resources.ResourceManager?displayProperty=fullName> w aplikacjach klasycznych](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+ <xref:System.Resources.ResourceManager?displayProperty=fullName>[Zasoby w aplikacjach klasycznych](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

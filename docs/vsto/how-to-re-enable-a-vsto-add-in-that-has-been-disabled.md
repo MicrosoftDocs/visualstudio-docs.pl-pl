@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona'
+title: 'Instrukcje: Ponowne włączanie dodatku VSTO, który został wyłączony'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VST.Warning.DisabledAddIn
 dev_langs:
@@ -16,64 +16,64 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418814"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541261"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Instrukcje: Ponowne włączanie dodatku narzędzi VSTO dla programów, która została wyłączona
-  Aplikacje Microsoft Office może spowodować wyłączenie dodatków narzędzi VSTO dla programów, które nieoczekiwane zachowanie. Jeśli aplikacja nie można załadować dodatku narzędzi VSTO dla programów podczas próby debugowania aplikacji może być twardych wyłączone lub wyłączone nietrwałego dodatku narzędzi VSTO dla programów.
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Instrukcje: Ponowne włączanie dodatku VSTO, który został wyłączony
+  Aplikacje Microsoft Office mogą wyłączyć dodatki VSTO, które zachowywać się nieoczekiwanie. Jeśli aplikacja nie ładuje dodatku VSTO podczas próby debugowania, aplikacja mogła zostać trwale wyłączona lub nie wyłączyła dodatku VSTO.
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
-## <a name="hard-disabled-vsto-add-ins"></a>Dodatków narzędzi VSTO twardych wyłączone
- Wyłączanie ciężko może wystąpić, gdy dodatku narzędzi VSTO powoduje, że aplikacja jest nieoczekiwanie zamykany. Go może również wystąpić na komputerze deweloperskim po zatrzymaniu debugera podczas <xref:Microsoft.Office.Tools.AddIn.Startup> wykonywania obsługi zdarzeń w dodatku VSTO.
+## <a name="hard-disabled-vsto-add-ins"></a>Twarde dodatki narzędzi VSTO
+ Twarde wyłączenie może wystąpić, gdy dodatek VSTO powoduje nieoczekiwane zamknięcie aplikacji. Może również wystąpić na komputerze deweloperskim, jeśli zostanie zatrzymany debuger podczas <xref:Microsoft.Office.Tools.AddIn.Startup> wykonywania programu obsługi zdarzeń w dodatku VSTO.
 
-### <a name="to-re-enable-a-vsto-add-in"></a>Aby ponownie włączyć funkcję dodatku narzędzi VSTO
+### <a name="to-re-enable-a-vsto-add-in"></a>Aby ponownie włączyć dodatek narzędzi VSTO
 
-1. W aplikacji, kliknij przycisk **pliku** kartę.
+1. W aplikacji kliknij kartę **plik** .
 
-2. Kliknij przycisk *ApplicationName* **opcje** przycisku.
+2. Kliknij przycisk *ApplicationName* **Opcje** ApplicationName.
 
-3. W okienku kategorii kliknij **Add-ins**.
+3. W okienku kategorie kliknij pozycję **Dodatki**.
 
-4. W okienku szczegółów, sprawdź, czy dodatku narzędzi VSTO znajduje się w **aplikacji wyłączonych dodatków** listy.
+4. W okienku szczegółów sprawdź, czy dodatek VSTO pojawia się na liście **wyłączone dodatki aplikacji** .
 
-     **Nazwa** kolumnie Określa nazwę zestawu, a **lokalizacji** kolumnie Określa pełną ścieżkę manifestu aplikacji.
+     Kolumna **name** określa nazwę zestawu, a kolumna **Location** określa pełną ścieżkę manifestu aplikacji.
 
-5. W **Zarządzaj** kliknij **elementy wyłączone**, a następnie kliknij przycisk **Przejdź**.
+5. W polu **Zarządzaj** kliknij pozycję **Wyłączone elementy**, a następnie kliknij pozycję **Przejdź**.
 
-6. Wybierz dodatek narzędzi VSTO dla programów, a następnie kliknij przycisk **Włącz**.
+6. Wybierz dodatek VSTO, a następnie kliknij pozycję **Włącz**.
 
 7. Kliknij przycisk **Zamknij**.
 
-## <a name="soft-disabled-vsto-add-ins"></a>Dodatków narzędzi VSTO nietrwałego — wyłączone
- Wyłączanie nietrwałego może wystąpić, gdy dodatku narzędzi VSTO generuje błąd, który nie powoduje nieoczekiwanego zamknięcia aplikacji. Na przykład aplikacja nietrwałe może wyłączyć dodatku narzędzi VSTO dla programów, jeśli wyniku weryfikacji zgłasza wyjątek nieobsługiwany wyjątek podczas <xref:Microsoft.Office.Tools.AddIn.Startup> programu obsługi zdarzeń jest wykonywany.
+## <a name="soft-disabled-vsto-add-ins"></a>Nietrwałe dodatki narzędzi VSTO
+ Wyłączenie nietrwałe może wystąpić, gdy dodatek VSTO generuje błąd, który nie powoduje nieoczekiwanego zamknięcia aplikacji. Na przykład aplikacja może uniemożliwić wyłączenie dodatku VSTO, jeśli zgłasza nieobsługiwany wyjątek podczas <xref:Microsoft.Office.Tools.AddIn.Startup> wykonywania programu obsługi zdarzeń.
 
 > [!NOTE]
-> Po ponownym włączeniu dodatku narzędzi VSTO wyłączone nietrwałego aplikacji natychmiast próbuje załadować dodatku narzędzi VSTO. Jeśli nie został rozwiązany problem powodujący początkowo aplikacji nietrwałego wyłączenia dodatku narzędzi VSTO dla programów, aplikacja będzie nietrwałe ponownie go wyłączyć dodatku narzędzi VSTO.
+> Po ponownym włączeniu dodatku narzędzi VSTO wyłączonego przez program Aplikacja natychmiast podejmie próbę załadowania dodatku VSTO. Jeśli problem, który początkowo spowodował nieprzerwane wyłączenie przez aplikację dodatku VSTO, nie został usunięty, aplikacja spowoduje ponowne wyłączenie dodatku VSTO.
 
-### <a name="to-re-enable-a-vsto-add-in"></a>Aby ponownie włączyć funkcję dodatku narzędzi VSTO
+### <a name="to-re-enable-a-vsto-add-in"></a>Aby ponownie włączyć dodatek narzędzi VSTO
 
-1. W aplikacji, kliknij przycisk **pliku** kartę.
+1. W aplikacji kliknij kartę **plik** .
 
-2. Kliknij przycisk *ApplicationName* **opcje** przycisku.
+2. Kliknij przycisk *ApplicationName* **Opcje** ApplicationName.
 
-3. W okienku kategorii kliknij **Add-ins**.
+3. W okienku kategorie kliknij pozycję **Dodatki**.
 
-4. W okienku szczegółów, sprawdź, czy dodatku narzędzi VSTO znajduje się w **dodatki aplikacji nieaktywne** listy.
+4. W okienku szczegółów sprawdź, czy dodatek VSTO pojawia się na liście **dodatków nieaktywnej aplikacji** .
 
-     **Nazwa** kolumnie Określa nazwę zestawu, a **lokalizacji** kolumnie Określa pełną ścieżkę manifestu aplikacji.
+     Kolumna **name** określa nazwę zestawu, a kolumna **Location** określa pełną ścieżkę manifestu aplikacji.
 
-5. W **Zarządzaj** kliknij **dodatki COM**, a następnie kliknij przycisk **Przejdź**.
+5. W oknie **Zarządzanie** kliknij pozycję **Dodatki COM**, a następnie kliknij pozycję **Przejdź**.
 
-6. W **dodatki COM** okno dialogowe, zaznacz pole wyboru obok wyłączonego dodatku narzędzi VSTO.
+6. W oknie dialogowym **Dodatki COM** zaznacz pole wyboru obok wyłączonego dodatku narzędzi VSTO.
 
 7. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)
 - [Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)
-- [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)

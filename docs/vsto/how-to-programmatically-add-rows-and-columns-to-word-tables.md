@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: programowe Dodawanie wierszy i kolumn do tabel programu Word'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,20 +14,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc8fbc80a58afcb6f2256c56b1071276c50f319b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 0097692c77d0b472c808876e9017b514b6416fc6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985846"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538076"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Instrukcje: programowe Dodawanie wierszy i kolumn do tabel programu Word
-  W tabeli programu Microsoft Office Word komórki są zorganizowane w wiersze i kolumny. Możesz użyć metody <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> obiektu <xref:Microsoft.Office.Interop.Word.Rows>, aby dodać wiersze do tabeli i metodę <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> obiektu <xref:Microsoft.Office.Interop.Word.Columns>, aby dodać kolumny.
+  W tabeli programu Microsoft Office Word komórki są zorganizowane w wiersze i kolumny. Możesz użyć <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Rows> obiektu, aby dodać wiersze do tabeli i <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metodę <xref:Microsoft.Office.Interop.Word.Columns> obiektu, aby dodać kolumny.
 
  [!INCLUDE[appliesto_wdalldocapp](includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="document-level-customization-examples"></a>Przykłady dostosowania na poziomie dokumentu
- Poniższe przykłady kodu mogą służyć do dostosowywania na poziomie dokumentu. Aby użyć tych przykładów, uruchom je z klasy `ThisDocument` w projekcie. W poniższych przykładach założono, że dokument skojarzony z Twoim dostosowaniem ma już co najmniej jedną tabelę.
+ Poniższe przykłady kodu mogą służyć do dostosowywania na poziomie dokumentu. Aby użyć tych przykładów, uruchom je z `ThisDocument` klasy w projekcie. W poniższych przykładach założono, że dokument skojarzony z Twoim dostosowaniem ma już co najmniej jedną tabelę.
 
 > [!IMPORTANT]
 > Ten kod jest uruchamiany tylko w projektach utworzonych przy użyciu dowolnego z następujących szablonów projektu:
@@ -41,20 +41,20 @@ ms.locfileid: "72985846"
 
 ### <a name="to-add-a-row-to-a-table"></a>Aby dodać wiersz do tabeli
 
-1. Użyj metody <xref:Microsoft.Office.Interop.Word.Rows.Add%2A>, aby dodać wiersz do tabeli.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody, aby dodać wiersz do tabeli.
 
      [!code-vb[Trin_VstcoreWordAutomation#95](codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomation#95](codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]
 
 ### <a name="to-add-a-column-to-a-table"></a>Aby dodać kolumnę do tabeli
 
-1. Użyj metody <xref:Microsoft.Office.Interop.Word.Columns.Add%2A>, a następnie użyj metody <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A>, aby wszystkie kolumny miały tę samą szerokość.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody, a następnie użyj metody, <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> aby wszystkie kolumny miały tę samą szerokość.
 
      [!code-vb[Trin_VstcoreWordAutomation#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomation#96](codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]
 
 ## <a name="vsto-add-in-examples"></a>Przykłady dodatków narzędzi VSTO
- Poniższe przykłady kodu mogą być używane w dodatku narzędzi VSTO. Aby użyć przykładów, uruchom je z klasy `ThisAddIn` w projekcie. W tych przykładach przyjęto założenie, że aktywny dokument ma już co najmniej jedną tabelę.
+ Poniższe przykłady kodu mogą być używane w dodatku narzędzi VSTO. Aby użyć przykładów, uruchom je z `ThisAddIn` klasy w projekcie. W tych przykładach przyjęto założenie, że aktywny dokument ma już co najmniej jedną tabelę.
 
 > [!IMPORTANT]
 > Ten kod jest uruchamiany tylko w projektach utworzonych przy użyciu szablonów dodatków programu Word VSTO.
@@ -63,19 +63,19 @@ ms.locfileid: "72985846"
 
 ### <a name="to-add-a-row-to-a-table"></a>Aby dodać wiersz do tabeli
 
-1. Użyj metody <xref:Microsoft.Office.Interop.Word.Rows.Add%2A>, aby dodać wiersz do tabeli.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody, aby dodać wiersz do tabeli.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#95](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]
 
 ### <a name="to-add-a-column-to-a-table"></a>Aby dodać kolumnę do tabeli
 
-1. Użyj metody <xref:Microsoft.Office.Interop.Word.Columns.Add%2A>, a następnie użyj metody <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A>, aby wszystkie kolumny miały tę samą szerokość.
+1. Użyj <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody, a następnie użyj metody, <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> aby wszystkie kolumny miały tę samą szerokość.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Programowane tworzenie tabel programu Word](how-to-programmatically-create-word-tables.md)
 - [Instrukcje: Programowane dodawanie tekstu i formatowania do komórek w tabelach programu Word](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [Instrukcje: Programowane Wypełnianie tabel programu Word przy użyciu właściwości dokumentu](how-to-programmatically-populate-word-tables-with-document-properties.md)

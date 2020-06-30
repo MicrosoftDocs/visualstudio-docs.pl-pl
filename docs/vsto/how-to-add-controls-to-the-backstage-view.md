@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie kontrolek do widoku Backstage '
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986009"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538349"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Instrukcje: Dodawanie kontrolek do widoku Backstage
   Za pomocą projektanta wstążki można dodać kontrolki do menu, które otwiera się po kliknięciu karty **plik** . Po uruchomieniu aplikacji, kontrolki dodawane do karty **plik** wyświetlają grupę o nazwie **Dodatki**.
 
- Nie można umieścić kontrolek przed ani po wbudowanych kontrolkach przy użyciu projektanta wstążki w programie Visual Studio. Wbudowana kontrolka to formant, który jest już wyświetlany w widoku Backstage. Jeśli chcesz umieścić formanty przed lub po wbudowanych kontrolkach, musisz użyć kodu XML wstążki. Aby uzyskać więcej informacji na temat **wstążki (XML)** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md). Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku Backstage pakietu office 2010 dla deweloperów](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) i [Dostosuj widok backstage pakietu Office 2010 dla deweloperów](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
+ Nie można umieścić kontrolek przed ani po wbudowanych kontrolkach przy użyciu projektanta wstążki w programie Visual Studio. Wbudowana kontrolka to formant, który jest już wyświetlany w widoku Backstage. Jeśli chcesz umieścić formanty przed lub po wbudowanych kontrolkach, musisz użyć kodu XML wstążki. Aby uzyskać więcej informacji na temat **wstążki (XML)**, zobacz [kod XML wstążki](../vsto/ribbon-xml.md). Aby uzyskać więcej informacji na temat dostosowywania widoku Backstage, zobacz [wprowadzenie do widoku Backstage pakietu office 2010 dla deweloperów](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) i [Dostosuj widok backstage pakietu Office 2010 dla deweloperów](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -62,7 +62,7 @@ ms.locfileid: "72986009"
 
 4. Przeciągnij kontrolki, aby przenieść je do nowych pozycji w menu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)
 - [XML — wstążka](../vsto/ribbon-xml.md)

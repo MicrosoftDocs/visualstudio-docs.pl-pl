@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7e75b2e295a561e026b437b3c62724536a3ac64e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56c69badf76a05351b37a7c8a41a9cacf54f9974
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671991"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539727"
 ---
-# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Unikaj nadużywania parametrów na typach generycznych
+# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Unikaj nadmiernego użycia parametrów w typach ogólnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
 |CheckId|CA1005|
@@ -36,7 +36,7 @@ ms.locfileid: "72671991"
  Widoczny na zewnątrz typ ogólny ma więcej niż dwa parametry typu.
 
 ## <a name="rule-description"></a>Opis reguły
- Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Jest to zazwyczaj oczywiste z jednym parametrem typu, tak jak w `List<T>`, a w niektórych przypadkach z dwoma parametrami typu, takimi jak w `Dictionary<TKey, TValue>`. Jeśli istnieje więcej niż dwa parametry typu, trudności są zbyt duże dla większości użytkowników (na przykład `TooManyTypeParameters<T, K, V>` w C# lub `TooManyTypeParameters(Of T, K, V)` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Jest to zazwyczaj oczywiste z jednym parametrem typu, jak w `List<T>` , i w niektórych przypadkach z dwoma parametrami typu, jak w `Dictionary<TKey, TValue>` . Jeśli istnieje więcej niż dwa parametry typu, trudności są zbyt duże dla większości użytkowników (na przykład `TooManyTypeParameters<T, K, V>` w języku C# lub `TooManyTypeParameters(Of T, K, V)` w programie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Zmień projekt tak, aby używał nie więcej niż dwóch parametrów typu.
@@ -47,17 +47,17 @@ ms.locfileid: "72671991"
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+ [CA1000: Nie deklaruj statycznych składowych na typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md)
+ [CA1002: Nie uwidaczniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+ [CA1006: Nie zagnieżdżaj typów ogólnych w podpisach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA1004: Metody ogólne powinny podawać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: Użyj wystąpień ogólnej procedury obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)
+ [CA1003: Użyj ogólnych wystąpień procedury obsługi zdarzeń](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: Używaj typów ogólnych tam, gdzie to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Zobacz też
  [Typy ogólne](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

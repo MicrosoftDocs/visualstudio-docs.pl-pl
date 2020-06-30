@@ -1,7 +1,7 @@
 ---
-title: '&lt;vstoruntime —&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;vstoRuntime — &gt; element (Programowanie Office w Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 98f483748cce9c3a053c800f9bdd6e0f3d651da2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982140"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541885"
 ---
-# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoruntime —&gt; — element (Office development w programie Visual Studio)
-  `vstoRuntime` Elementu `vstav3` przestrzeń nazw zawiera obsługiwanej wersji programu Visual Studio Tools for Office runtime dla określonych rozwiązań pakietu Office.
+# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime — &gt; element (Programowanie Office w Visual Studio)
+  `vstoRuntime`Element `vstav3` przestrzeni nazw zawiera obsługiwaną wersję Visual Studio Tools dla środowiska uruchomieniowego pakietu Office dla określonego rozwiązania pakietu Office.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,21 +33,21 @@ ms.locfileid: "62982140"
     supportUrl />
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `vstoRuntime` Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw. Jeśli rozwiązanie Office obsługuje dwie wersje programu Visual Studio Tools dla pakietu Office runtime, istnieją dwa `vstoRuntime` elementów w manifeście aplikacji.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `vstoRuntime`Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw. Jeśli rozwiązanie pakietu Office obsługuje dwie wersje Visual Studio Tools dla środowiska uruchomieniowego pakietu Office, istnieją dwa `vstoRuntime` elementy w manifeście aplikacji.
 
- `vstoRuntime` Element ma następujące atrybuty.
+ `vstoRuntime`Element ma następujące atrybuty.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`release`|Wymagana. Wydanej wersji programu Visual Studio Tools for Office runtime.|
-|`version`|Wymagana. Numer wersji programu Visual Studio Tools for Office runtime.|
-|`supportUrl`|Opcjonalna. Link do lokalizacji instalacji programu Visual Studio Tools for Office runtime.|
+|`release`|Wymagany. Wersja wydania Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
+|`version`|Wymagany. Numer wersji Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
+|`supportUrl`|Opcjonalny. Link do lokalizacji instalacji Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
 
- `vstoRuntime` nie ma żadnych elementów.
+ `vstoRuntime`nie ma elementów.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie kodu pokazano `vstoRuntime` elementu w manifeście aplikacji dla rozwiązań pakietu Office, wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `vstoRuntime` element w manifeście aplikacji dla rozwiązania pakietu Office wdrożonego za pomocą programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml
 <vstav3:vstoRuntime
@@ -56,7 +56,7 @@ ms.locfileid: "62982140"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)
