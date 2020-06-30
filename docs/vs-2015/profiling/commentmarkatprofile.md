@@ -1,5 +1,5 @@
 ---
-title: CommentMarkAtProfile | Dokumentacja firmy Microsoft
+title: CommentMarkAtProfile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,17 +12,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35ef5e1033224969f4dae1e42036b860f89bbd8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 36ebd4a2cd130d63b030e80696dbdde7ff179706
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416660"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531524"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`CommentMarkAtProfile` Metoda wstawia wartość sygnatury czasowej, liczbowych znakiem i ciąg komentarza w pliku Vsp. Wartość znacznika czasu może służyć do synchronizowania zdarzenia zewnętrzne. Dla tego znaku i komentarz do wstawienia profilowania dla wątków, która zawiera funkcję CommentMarkAtProfile musi mieć wartość ON.  
+`CommentMarkAtProfile`Metoda wstawia wartość znacznika czasu, znacznik liczbowy i ciąg komentarza w pliku VSP. Wartość sygnatury czasowej może służyć do synchronizowania zdarzeń zewnętrznych. Dla znacznika i komentarza, który ma zostać wstawiony, Profilowanie wątku, który zawiera funkcję CommentMarkAtProfile, musi być włączone.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,48 +36,48 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 #### <a name="parameters"></a>Parametry  
  `dnTimestamp`  
   
- 64-bitowa liczba całkowita, która reprezentuje wartość sygnatury czasowej.  
+ 64-bitowa liczba całkowita reprezentująca wartość sygnatury czasowej.  
   
  `lMarker`  
   
- Liczbowe znacznik do wstawienia. Znacznik muszą być większe niż lub równa 0 (zero).  
+ Znacznik liczbowy do wstawienia. Znacznik musi być większy lub równy 0 (zero).  
   
  `szComment`  
   
- Wskaźnik do ciągu tekstowego do wstawienia. Ciąg musi być mniejsza niż 256 znaków, w tym terminator o wartości NULL.  
+ Wskaźnik do ciągu tekstowego do wstawienia. Ciąg musi być krótszy niż 256 znaków, łącznie z terminatorem o wartości NULL.  
   
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
- Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
+ Funkcja wskazuje powodzenie lub niepowodzenie przy użyciu wyliczenia **PROFILE_COMMAND_STATUS** . Zwracana wartość może być jedną z następujących:  
   
-|Moduł wyliczający|Opis|  
+|Liczeni|Opis|  
 |----------------|-----------------|  
-|MARK_ERROR_MARKER_RESERVED|Parametr jest mniejsza lub równa 0. Te wartości są zastrzeżone. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_MODE_NEVER|W trybie profilowania zostało ustawione na nigdy nie w przypadku, gdy funkcja została wywołana. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_MODE_OFF|W trybie profilowania zostało ustawione na OFF, gdy funkcja została wywołana. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_NO_SUPPORT|Brak obsługi znacznik, w tym kontekście. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_OUTOFMEMORY|Pamięć nie jest dostępny do rejestrowania zdarzenia. Znak i komentarzy nie są rejestrowane.|  
-|MARK_TEXTTOOLONG|Ciąg przekracza maksymalnie 256 znaków. Ciąg komentarza zostanie obcięta i znacznika i komentarz są rejestrowane.|  
-|MARK_OK|MARK_OK jest zwracany do wskazania sukcesu.|  
+|MARK_ERROR_MARKER_RESERVED|Parametr jest mniejszy lub równy 0. Te wartości są zarezerwowane. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_ERROR_MODE_NEVER|Tryb profilowania został ustawiony tak, aby nigdy nie był wywoływany przez funkcję. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_ERROR_MODE_OFF|Tryb profilowania został ustawiony na OFF, gdy funkcja została wywołana. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_ERROR_NO_SUPPORT|Brak obsługi znacznika w tym kontekście. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_ERROR_OUTOFMEMORY|Pamięć nie jest dostępna do rejestrowania zdarzenia. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_TEXTTOOLONG|Ciąg przekracza maksymalną 256 znaków. Ciąg komentarza jest obcinany, a znacznik i komentarz są rejestrowane.|  
+|MARK_OK|MARK_OK jest zwracany, aby wskazać powodzenie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Stan profilowania dla wątku, który zawiera funkcję profilu znacznika musi być na, jeśli znaczniki i komentarze wstawione za pomocą polecenia znaku lub za pomocą interfejsu API funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile). Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jednym wątku może służyć do oznaczania początku lub końcu segmentu data w żadnym z wątków w pliku Vsp.  
+ Stan profilowania wątku, który zawiera funkcję profilu znacznika, musi być włączony, gdy znaczniki i komentarze są wstawiane za pomocą polecenia Mark lub funkcji interfejsu API (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile). Znaczniki profilów są globalne w zakresie. Na przykład znacznik profilu wstawiony w jednym wątku może służyć do oznaczania początku lub końca segmentu danych w dowolnym wątku w pliku. vsp.  
   
 > [!IMPORTANT]
-> Należy używać metod CommentMarkAtProfile z Instrumentacją tylko.  
+> Metody CommentMarkAtProfile powinny być używane tylko z instrumentacją.  
   
 ## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informacje o funkcji  
   
-|||  
+|Element|Wartość|  
 |-|-|  
-|**Nagłówek**|Include VSPerf.h|  
-|**Biblioteka**|Use VSPerf.lib|  
+|**Nagłówki**|Uwzględnij VSPerf. h|  
+|**Biblioteka**|Użyj VSPerf. lib|  
 |**Unicode**|Zaimplementowane jako CommentMarkAtProfileW (Unicode) i CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod ilustruje sposób używania CommentMarkAtProfile wywołania funkcji ogólnego. W przykładzie założono użycie makra ciągu Win32 i ustawienia kompilatora standardu ANSI ustalić, czy kod wywołuje ANSI jest włączona funkcja.  
+ Poniższy kod ilustruje użycie wywołania funkcji ogólnej CommentMarkAtProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora dla ANSI, aby określić, czy kod wywołuje funkcję z obsługą ANSI.  
   
 ```  
 void ExerciseCommentMarkAtProfile(void)  
@@ -118,4 +118,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dokumentacja interfejsów API profilera programu Visual Studio (natywnych)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

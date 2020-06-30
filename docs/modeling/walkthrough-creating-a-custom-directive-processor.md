@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: tworzenie niestandardowego procesora dyrektywy'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -13,18 +13,18 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596492"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532239"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Przewodnik: tworzenie niestandardowego procesora dyrektywy
 
 *Procesory dyrektywy* działają przez dodanie kodu do *wygenerowanej klasy transformacji*. W przypadku wywołania *dyrektywy* z *szablonu tekstu*reszta kodu, który można napisać w szablonie tekstu, może opierać się na funkcjach dostępnych w dyrektywie.
 
-Można napisać własne niestandardowe procesory dyrektyw. Dzięki temu można dostosowywać szablony tekstowe. Aby utworzyć niestandardowy procesor dyrektywy, należy utworzyć klasę, która dziedziczy po obu <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
+Można napisać własne niestandardowe procesory dyrektyw. Dzięki temu można dostosowywać szablony tekstowe. Aby utworzyć niestandardowy procesor dyrektywy, należy utworzyć klasę, która dziedziczy po obu <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> .
 
 Zadania przedstawione w niniejszym przewodniku to m.in.:
 
@@ -36,13 +36,13 @@ Zadania przedstawione w niniejszym przewodniku to m.in.:
 
 ## <a name="create-a-custom-directive-processor"></a>Tworzenie niestandardowego procesora dyrektywy
 
-W tym przewodniku tworzysz niestandardowy procesor dyrektywy. Dodaj niestandardową dyrektywę, która odczytuje plik XML, zapisuje ją w zmiennej <xref:System.Xml.XmlDocument> i uwidacznia ją za pomocą właściwości. W sekcji „Testowanie procesora dyrektywy” używasz tej właściwości w szablonie tekstowym w celu dostępu do pliku XML.
+W tym przewodniku tworzysz niestandardowy procesor dyrektywy. Dodaj niestandardową dyrektywę, która odczytuje plik XML, zapisuje ją w <xref:System.Xml.XmlDocument> zmiennej i uwidacznia ją przez właściwość. W sekcji „Testowanie procesora dyrektywy” używasz tej właściwości w szablonie tekstowym w celu dostępu do pliku XML.
 
 Wywołanie niestandardowej dyrektywy wygląda następująco:
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-Niestandardowy procesor dyrektywy dodaje zmienną i właściwość do wygenerowanej klasy przekształcenia. Dyrektywa, którą pisze, używa klas <xref:System.CodeDom>, aby utworzyć kod, który Aparat dodaje do wygenerowanej klasy transformacji. Klasy <xref:System.CodeDom> tworzą kod w wizualizacji C# lub Visual Basic, w zależności od języka określonego w `language` parametr dyrektywy `template`. Język procesora dyrektywy i język szablonu tekstu, który uzyskuje dostęp do procesora dyrektywy, nie muszą sobie odpowiadać.
+Niestandardowy procesor dyrektywy dodaje zmienną i właściwość do wygenerowanej klasy przekształcenia. Zapisana dyrektywa używa <xref:System.CodeDom> klas do utworzenia kodu, który Aparat dodaje do wygenerowanej klasy transformacji. <xref:System.CodeDom>Klasy tworzą kod w Visual C# lub Visual Basic, w zależności od języka określonego w `language` parametrze `template` dyrektywy. Język procesora dyrektywy i język szablonu tekstu, który uzyskuje dostęp do procesora dyrektywy, nie muszą sobie odpowiadać.
 
 Kod, który tworzy dyrektywa, wygląda następująco:
 
@@ -84,11 +84,11 @@ End Property
 
 2. Dodaj odwołania do tych zestawów:
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 2,0**
 
-    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \* . 2,0**
 
-3. Zastąp kod w **Class1** następującym kodem. Ten kod definiuje klasę CustomDirectiveProcessor, która dziedziczy z klasy <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> i implementuje wymagane metody.
+3. Zastąp kod w **Class1** następującym kodem. Ten kod definiuje klasę CustomDirectiveProcessor, która dziedziczy z <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> klasy i implementuje wymagane metody.
 
     ```csharp
     using System;
@@ -599,15 +599,15 @@ End Property
     End Namespace
     ```
 
-4. W przypadku tylko Visual Basic Otwórz menu **projekt** , a następnie kliknij pozycję **Właściwości CustomDP**. Na karcie **aplikacja** w **obszarze główny obszar nazw**usuń wartość domyślną `CustomDP`.
+4. W przypadku tylko Visual Basic Otwórz menu **projekt** , a następnie kliknij pozycję **Właściwości CustomDP**. Na karcie **aplikacja** w **obszarze główny obszar nazw**usuń wartość domyślną `CustomDP` .
 
-5. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
+5. W menu **plik** kliknij polecenie **Zapisz wszystko**.
 
-6. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+6. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
 ### <a name="build-the-project"></a>Kompilacja projektu
 
-Skompiluj projekt. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+Skompiluj projekt. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
 ## <a name="register-the-directive-processor"></a>Zarejestruj procesor dyrektywy
 
@@ -631,15 +631,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru w tej samej lokalizacji.
 
 > [!CAUTION]
-> Niepoprawne edytowanie rejestru może spowodować poważne uszkodzenie systemu. Przed wprowadzeniem zmian w rejestrze wykonaj kopię zapasową wszystkich cennych danych, które znajdują się na komputerze.
+> Niewłaściwe edytowanie rejestru może poważnie uszkodzić system. Przed wprowadzeniem zmian w rejestrze wykonaj kopię zapasową wszystkich cennych danych, które znajdują się na komputerze.
 
 ### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Aby dodać klucz rejestru dla procesora dyrektywy
 
 1. Uruchom `regedit` polecenie przy użyciu menu Start lub wiersza polecenia.
 
-2. Przejdź do lokalizacji **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*0 \ TextTemplating\DirectiveProcessors**i kliknij węzeł.
+2. Przejdź do lokalizacji **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* 0 \ TextTemplating\DirectiveProcessors**i kliknij węzeł.
 
-   W systemach 64-bitowych należy używać **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*. 0 \ TextTemplating\DirectiveProcessors**
+   W systemach 64-bitowych należy używać **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
 3. Dodaj nowy klucz o nazwie CustomDirectiveProcessor.
 
@@ -650,7 +650,7 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
 
 5. Dodaj nową wartość ciągu o nazwie CodeBase, która ma wartość równą ścieżce do biblioteki CustomDP.dll, utworzonej we wcześniejszej części przewodnika.
 
-     Na przykład ścieżka może wyglądać jak `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll`.
+     Na przykład ścieżka może wyglądać następująco `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll` .
 
      Klucz rejestru powinien mieć następujące wartości:
 
@@ -658,7 +658,7 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
    |-|-|-|
    | (Domyślnie) | REG_SZ | (wartość nieustawiona) |
    | Klasa | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>\<ścieżkę do rozwiązania ></strong> CustomDP\bin\Debug\CustomDP.dll |
+   | CodeBase | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      Jeśli zestaw znajduje się w pamięci podręcznej GAC, wartości powinny wyglądać tak:
 
@@ -674,14 +674,14 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
 
 Aby przetestować procesor dyrektywy, należy napisać szablon tekstowy, który ją wywołuje.
 
-W tym przykładzie szablon tekstowy wywołuje dyrektywę i przekazuje nazwę pliku XML, który zawiera dokumentację dla pliku klasy. Szablon tekstu używa właściwości <xref:System.Xml.XmlDocument>, którą tworzy dyrektywa w celu nawigowania po kodzie XML i drukowania komentarzy do dokumentacji.
+W tym przykładzie szablon tekstowy wywołuje dyrektywę i przekazuje nazwę pliku XML, który zawiera dokumentację dla pliku klasy. Szablon tekstu używa <xref:System.Xml.XmlDocument> właściwości, którą tworzy dyrektywa do nawigowania po kodzie XML i drukowania komentarzy do dokumentacji.
 
 ### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>Aby utworzyć plik XML używany do testowania procesora dyrektywy
 
-1. Utwórz plik o nazwie *Docfile. XML* przy użyciu dowolnego edytora tekstów (na przykład Notatnik).
+1. Utwórz plik o nazwie *DocFile.xml* przy użyciu dowolnego edytora tekstów (na przykład Notatnik).
 
     > [!NOTE]
-    > Ten plik można utworzyć w dowolnej lokalizacji (na przykład *C:\Test\DocFile.XML*).
+    > Ten plik można utworzyć w dowolnej lokalizacji (na przykład *C:\Test\DocFile.xml*).
 
 2. Dodaj następujący plik do pliku XML:
 
@@ -732,12 +732,12 @@ W tym przykładzie szablon tekstowy wywołuje dyrektywę i przekazuje nazwę pli
 
 2. Dodaj nowy plik szablonu tekstu o nazwie TestDP.tt.
 
-3. Upewnij się, że właściwość **niestandardowego narzędzia** TestDP.TT ma wartość `TextTemplatingFileGenerator`.
+3. Upewnij się, że właściwość **narzędzia niestandardowe** TestDP.tt jest ustawiona na wartość `TextTemplatingFileGenerator` .
 
 4. Zmień zawartość TestDP.tt na następujący tekst.
 
     > [!NOTE]
-    > Zastąp ciąg `<YOUR PATH>` ścieżką do pliku *Docfile. XML* .
+    > Zastąp ciąg `<YOUR PATH>` ścieżką do pliku *DocFile.xml* .
 
     Język szablonu tekstu nie musi odpowiadać językowi procesora dyrektywy.
 
@@ -824,7 +824,7 @@ W tym przykładzie szablon tekstowy wywołuje dyrektywę i przekazuje nazwę pli
     ```
 
     > [!NOTE]
-    > W tym przykładzie wartość parametru `Processor` jest `CustomDirectiveProcessor`. Wartość parametru `Processor` musi być zgodna z nazwą klucza rejestru procesora.
+    > W tym przykładzie wartość `Processor` parametru to `CustomDirectiveProcessor` . Wartość `Processor` parametru musi być zgodna z nazwą klucza rejestru procesora.
 
 5. W menu **plik** wybierz polecenie **Zapisz wszystko**.
 
@@ -832,9 +832,9 @@ W tym przykładzie szablon tekstowy wywołuje dyrektywę i przekazuje nazwę pli
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję TestDP.TT, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
-   W przypadku Visual Basic użytkownicy TestDP. txt mogą nie być wyświetlane w **Eksplorator rozwiązań** domyślnie. Aby wyświetlić wszystkie pliki przypisane do projektu, otwórz menu **projekt** , a następnie kliknij przycisk **Pokaż wszystkie pliki**.
+   W przypadku użytkowników Visual Basic TestDP.txt mogą nie być wyświetlane w **Eksplorator rozwiązań** domyślnie. Aby wyświetlić wszystkie pliki przypisane do projektu, otwórz menu **projekt** , a następnie kliknij przycisk **Pokaż wszystkie pliki**.
 
-2. W **Eksplorator rozwiązań**rozwiń węzeł TestDP. txt, a następnie kliknij dwukrotnie TestDP. txt, aby otworzyć go w edytorze.
+2. W **Eksplorator rozwiązań**rozwiń węzeł TestDP.txt, a następnie kliknij dwukrotnie przycisk TestDP.txt, aby otworzyć go w edytorze.
 
     Wyświetli się wygenerowany tekst wyjściowy. Dane wyjściowe powinny wyglądać następująco:
 
@@ -874,10 +874,10 @@ Po przetestowaniu niestandardowego procesora dyrektywy możesz dodać kod HTML d
 
 ### <a name="to-add-html-to-the-generated-text"></a>Aby dodać HTML do wygenerowanego tekstu
 
-1. Zastąp kod w *TestDP.tt* następującym. Kod HTML jest podświetlony. Pamiętaj, aby zastąpić ciąg `YOUR PATH` ścieżką do pliku *Docfile. XML* .
+1. Zastąp kod w *TestDP.tt* następującym. Kod HTML jest podświetlony. Pamiętaj, aby zastąpić ciąg `YOUR PATH` ścieżką do pliku *DocFile.xml* .
 
     > [!NOTE]
-    > Dodatkowe tagi Open \<# i Close # > oddzielają kod instrukcji od tagów HTML.
+    > Dodatkowe otwarte \<# and close #> znaczniki oddzielają kod instrukcji od tagów HTML.
 
     ```csharp
     <#@ assembly name="System.Xml" #>
@@ -959,8 +959,8 @@ Po przetestowaniu niestandardowego procesora dyrektywy możesz dodać kod HTML d
     </body></html>
     ```
 
-2. W menu **plik** kliknij **Zapisz TestDP. txt**.
+2. W menu **plik** kliknij polecenie **Zapisz TestDP.txt**.
 
-3. Aby wyświetlić dane wyjściowe w przeglądarce, w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy TestDP. htm, a następnie kliknij pozycję **Wyświetl w przeglądarce**.
+3. Aby wyświetlić dane wyjściowe w przeglądarce, w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję TestDP.htm, a następnie kliknij pozycję **Wyświetl w przeglądarce**.
 
    Dane wyjściowe powinny być takie same jak oryginalne teksty, z tą różnicą, że jest on stosowany w formacie HTML. Nazwy poszczególnych elementów są wyświetlane pogrubione.

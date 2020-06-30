@@ -18,17 +18,17 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d05b8a492768dfe9163d7ede55c2bf4aef084c26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668024"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533149"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Porady: tworzenie typów za pomocą Projektanta klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby zaprojektować nowe typy C# dla projektów programu Visual .net i Visual Basic .NET, utwórz je na diagramie klas. Aby wyświetlić istniejące typy, zobacz [How to: View Existing Types (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md).
+Aby zaprojektować nowe typy dla projektów Visual C# .NET i Visual Basic .NET, utwórz je na diagramie klas. Aby wyświetlić istniejące typy, zobacz [How to: View Existing Types (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md).
 
 - [Utwórz nowy typ](#CreateType)
 
@@ -36,19 +36,19 @@ Aby zaprojektować nowe typy C# dla projektów programu Visual .net i Visual Bas
 
 - [Zastosuj atrybut niestandardowy do elementu członkowskiego typu](#CustAttributeMember)
 
-## <a name="CreateType"></a>Utwórz nowy typ
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Utwórz nowy typ
 
 1. W przyborniku, w obszarze Projektanta klas przeciągnij jeden z nich do diagramu klasy:
 
     - **Klasa** lub **Klasa abstrakcyjna**
 
-    - **Podstawowe**
+    - **Wyliczenie**
 
-    - **Interfejsu**
+    - **Interfejs**
 
-    - **Structure** (VB) lub **struct** (C#)
+    - **Structure** (VB) lub **Struktura** (C#)
 
-    - **Wierz**
+    - **Delegat**
 
     - **Moduł** (tylko w języku VB)
 
@@ -64,18 +64,17 @@ Aby zaprojektować nowe typy C# dla projektów programu Visual .net i Visual Bas
 
 4. Teraz dodaj inne elementy, aby zdefiniować typ:
 
-    |||
+    |**Dla**|**Dodaj**|
     |-|-|
-    |**Dla**|**Add**|
     |Klasy, klasy abstrakcyjne, struktury i obiekty struct|Metody, właściwości, pola, zdarzenia, konstruktory (metoda), destruktory (metoda) i stałe, które określają typ|
     |Wyliczenia|Wartości pól, które tworzą wyliczenie|
     |Interfejsy|Metody, właściwości i zdarzenia, które tworzą interfejs|
-    |Delegate|Parametry, które definiują obiekt delegowany|
+    |Delegat|Parametry, które definiują obiekt delegowany|
     |Moduł|Metody, właściwości, pola, zdarzenia, konstruktory (metoda) i stałe, które określają moduł|
 
      Zobacz [Tworzenie elementów członkowskich](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
 
-## <a name="CustAttributeType"></a>Zastosuj atrybut niestandardowy do typu
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a>Zastosuj atrybut niestandardowy do typu
 
 1. Kliknij typ kształtu na diagramie klasy.
 
@@ -85,7 +84,7 @@ Aby zaprojektować nowe typy C# dla projektów programu Visual .net i Visual Bas
 
      Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.
 
-## <a name="CustAttributeMember"></a>Zastosuj atrybut niestandardowy do elementu członkowskiego typu
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Zastosuj atrybut niestandardowy do elementu członkowskiego typu
 
 1. Kliknij nazwę składowej w jej kształcie typu na diagramie klasy lub kliknij jej wiersz w oknie Szczegóły klasy.
 
@@ -96,4 +95,4 @@ Aby zaprojektować nowe typy C# dla projektów programu Visual .net i Visual Bas
      Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md) [instrukcje: tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md) [Tworzenie i konfigurowanie elementów członkowskich typu (Projektant klas)](../ide/creating-and-configuring-type-members-class-designer.md) [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md) [Projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md)
+ [Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md) [instrukcje: tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md) [Tworzenie i konfigurowanie elementów członkowskich typu (Projektant klas)](../ide/creating-and-configuring-type-members-class-designer.md) [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md) [projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md)

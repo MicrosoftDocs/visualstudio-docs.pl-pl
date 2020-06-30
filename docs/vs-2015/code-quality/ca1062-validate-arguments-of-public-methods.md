@@ -16,17 +16,17 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 50044b51a3e576ff7d1c11b19b2f498f99b63019
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 377906675d70a712f8ca72b0b6e4d8a6864c1fbc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663644"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533240"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062 Walidacja argumentów metod publicznych
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Waliduj argumenty metod publicznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
@@ -34,15 +34,15 @@ ms.locfileid: "72663644"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Widoczna na zewnątrz Metoda odwołuje się do jednego z argumentów odwołania bez sprawdzania, czy ten argument jest `null` (`Nothing` w Visual Basic).
+ Widoczna na zewnątrz Metoda odwołuje się do jednego z argumentów odwołania bez weryfikowania, czy ten argument jest `null` ( `Nothing` w Visual Basic).
 
 ## <a name="rule-description"></a>Opis reguły
- Wszystkie argumenty odwołania, które są przekazane do widocznych zewnętrznie metod, powinny być sprawdzane pod kątem `null`. W razie potrzeby Zgłoś <xref:System.ArgumentNullException>, gdy argument jest `null`.
+ Wszystkie argumenty odwołania, które są przekazane do widocznych zewnętrznie metod, powinny być sprawdzane względem `null` . W razie potrzeby throw, <xref:System.ArgumentNullException> gdy argument ma wartość `null` .
 
- Jeśli metodę można wywołać z nieznanego zestawu, ponieważ jest ona zadeklarowana jako publiczna lub chroniona, należy zweryfikować wszystkie parametry metody. Jeśli metoda jest przeznaczona do wywoływania tylko przez znane zestawy, należy wprowadzić metodę wewnętrzną i zastosować <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybutu do zestawu, który zawiera metodę.
+ Jeśli metodę można wywołać z nieznanego zestawu, ponieważ jest ona zadeklarowana jako publiczna lub chroniona, należy zweryfikować wszystkie parametry metody. Jeśli metoda jest przeznaczona do wywoływania tylko przez znane zestawy, należy wprowadzić metodę wewnętrzną i zastosować <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybut do zestawu, który zawiera metodę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, sprawdź poprawność każdego argumentu odwołania dla `null`.
+ Aby naprawić naruszenie tej reguły, sprawdź poprawność każdego argumentu odwołania względem `null` .
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Możesz pominąć ostrzeżenie z tej reguły, jeśli masz pewność, że odwołanie do parametru zostało zweryfikowane przez inne wywołanie metody w funkcji.
@@ -55,16 +55,16 @@ ms.locfileid: "72663644"
  [!code-vb[FxCop.Design.ValidateArguments#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#1)]
 
 ## <a name="example"></a>Przykład
- W [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] ta zasada nie wykrywa, że parametry są przesyłane do innej metody, która sprawdza poprawność.
+ W programie [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] Ta reguła nie wykrywa, że parametry są przesyłane do innej metody, która sprawdza poprawność.
 
  [!code-csharp[FxCop.Design.ValidateArguments#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/fxcop.design.validatearguments.copyctors.cs#2)]
  [!code-csharp[FxCop.Design.ValidateArguments#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/FxCop.Design.ValidateArguments.cs#2)]
  [!code-vb[FxCop.Design.ValidateArguments#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#2)]
 
 ## <a name="example"></a>Przykład
- Konstruktory kopiujące wypełniające pola lub właściwości, które są obiektami odniesienia, mogą również naruszać regułę CA1062. Naruszenie występuje, ponieważ skopiowany obiekt, który jest przesyłany do konstruktora kopiującego, może być `null` (`Nothing` w Visual Basic). Aby rozwiązać ten problem, należy użyć statycznej metody udostępnionej w Visual Basic), aby sprawdzić, czy skopiowany obiekt nie ma wartości null.
+ Konstruktory kopiujące wypełniające pola lub właściwości, które są obiektami odniesienia, mogą również naruszać regułę CA1062. Naruszenie występuje, ponieważ skopiowany obiekt, który jest przesyłany do konstruktora kopiującego, może być `null` ( `Nothing` w Visual Basic). Aby rozwiązać ten problem, należy użyć statycznej metody udostępnionej w Visual Basic), aby sprawdzić, czy skopiowany obiekt nie ma wartości null.
 
- W poniższym przykładzie klasy `Person` obiekt `other`, który jest przesyłany do konstruktora kopiującego `Person` może być `null`.
+ W poniższym `Person` przykładzie klasy `other` obiekt, który jest przesyłany do `Person` konstruktora kopiującego może być `null` .
 
 ```
 
@@ -89,7 +89,7 @@ public class Person
 ```
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie zmienionym `Person`, obiekt `other`, który jest przesyłany do konstruktora kopiującego, jest najpierw sprawdzany pod kątem wartości null w metodzie `PassThroughNonNull`.
+ W poniższym, zmienionym `Person` przykładzie, `other` obiekt, który jest przesyłany do konstruktora kopiującego, jest najpierw sprawdzany pod kątem wartości null w `PassThroughNonNull` metodzie.
 
 ```
 public class Person
