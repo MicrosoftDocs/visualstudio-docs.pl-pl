@@ -1,21 +1,21 @@
 ---
 title: Dodawanie poleceń i gestów do diagramów zależności
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d54936c61606b67c298992cd003723327042eb0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747667"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531394"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 
@@ -38,7 +38,7 @@ Najszybszą metodą tworzenia rozszerzenia jest użycie szablonu projektu. Spowo
 
    Szablon tworzy projekt zawierający mały przykład pracy.
 
-2. Aby przetestować rozszerzenie, naciśnij klawisz **Ctrl** +**F5** lub **F5**.
+2. Aby przetestować rozszerzenie, naciśnij **klawisze CTRL** + **F5** lub **F5**.
 
     Zostanie uruchomione eksperymentalne wystąpienie programu Visual Studio. W tym wystąpieniu Utwórz diagram zależności. Rozszerzenie polecenia lub gestu powinno być wykonane na tym diagramie.
 
@@ -96,19 +96,19 @@ Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania w
    |Microsoft. VisualStudio. Modeling. Sdk. nowszym|Definiowanie rozszerzeń modelowania|
    |Microsoft. VisualStudio. Modeling. Sdk. diagramy. nowszym|Aktualizowanie kształtów i diagramów|
 
-6. Edytuj plik klasy w projekcie biblioteki C# klas, aby zawierał kod dla rozszerzenia. Aby uzyskać więcej informacji, zobacz jedną z następujących sekcji:
+6. Edytuj plik klasy w projekcie biblioteki klas C#, aby zawierał kod dla rozszerzenia. Aby uzyskać więcej informacji, zobacz jedną z następujących sekcji:
 
      [Definiowanie polecenia menu](#command)
 
      [Definiowanie procedury obsługi gestu](#gesture)
 
-7. Aby przetestować funkcję, naciśnij klawisz **Ctrl** +**F5** lub **F5**.
+7. Aby przetestować funkcję, naciśnij klawisz **Ctrl** + **F5** lub **F5**.
 
    Zostanie otwarte doświadczalne wystąpienie programu Visual Studio. W tym wystąpieniu Utwórz lub Otwórz diagram zależności.
 
 8. Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, Znajdź plik **. vsix** w katalogu **bin** projektu VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze plików.
 
-## <a name="command"></a>Definiowanie polecenia menu
+## <a name="defining-a-menu-command"></a><a name="command"></a>Definiowanie polecenia menu
 
 Można dodać więcej definicji poleceń menu do istniejącego gestu lub projektu polecenia. Każde polecenie jest zdefiniowane przez klasę, która ma następujące cechy:
 
@@ -118,19 +118,19 @@ Można dodać więcej definicji poleceń menu do istniejącego gestu lub projekt
 
    `[Export(typeof(ICommandExtension))]`
 
-   `public class`*MyLayerCommand* `: ICommandExtension { ... }`
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`
 
 - Przestrzeń nazw i nazwa klasy są nieważne.
 
-- Metody implementujące `ICommandExtension` są następujące:
+- Metody, które implementują `ICommandExtension` są następujące:
 
-  - `string Text {get;}` — etykieta, która pojawia się w menu.
+  - `string Text {get;}`— Etykieta, która pojawia się w menu.
 
   - `void QueryStatus(IMenuCommand command)`-wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określi, czy polecenie powinno być widoczne i włączone dla bieżącego zaznaczenia użytkownika.
 
   - `void Execute(IMenuCommand command)`-wywoływana, gdy użytkownik wybierze polecenie.
 
-- Aby określić bieżące zaznaczenie, można zaimportować `IDiagramContext`:
+- Aby określić bieżące zaznaczenie, można zaimportować `IDiagramContext` :
 
    `[Import]`
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a>Definiowanie procedury obsługi gestu
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a>Definiowanie procedury obsługi gestu
 
 Procedura obsługi gestu reaguje, gdy użytkownik przeciągnie elementy na diagram zależności i gdy użytkownik kliknie dwukrotnie dowolne miejsce na diagramie.
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 Zwróć uwagę na następujące kwestie dotyczące programów obsługi gestu:
 
-- Elementy `IGestureExtension` są następujące:
+- Elementy członkowskie `IGestureExtension` są następujące:
 
      **OnDoubleClick** — wywoływana, gdy użytkownik kliknie dwukrotnie dowolne miejsce na diagramie.
 
@@ -246,7 +246,7 @@ Zwróć uwagę na następujące kwestie dotyczące programów obsługi gestu:
 
      **OnDragDrop** — wywoływana, gdy użytkownik porzuca element na diagramie.
 
-- Pierwszym argumentem każdej metody jest `IShape`, z którego można uzyskać element warstwy. Na przykład:
+- Pierwszym argumentem każdej metody jest `IShape` , z którego można uzyskać element warstwy. Przykład:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Zwróć uwagę na następujące kwestie dotyczące programów obsługi gestu:
     }
     ```
 
-- Procedury obsługi dla niektórych typów przeciąganego elementu są już zdefiniowane. Na przykład użytkownik może przeciągnąć elementy z Eksplorator rozwiązań na diagram zależności. Nie można zdefiniować procedury obsługi przeciągania dla tego typu elementu. W takich przypadkach metody `DragDrop` nie będą wywoływane.
+- Procedury obsługi dla niektórych typów przeciąganego elementu są już zdefiniowane. Na przykład użytkownik może przeciągnąć elementy z Eksplorator rozwiązań na diagram zależności. Nie można zdefiniować procedury obsługi przeciągania dla tego typu elementu. W takich przypadkach `DragDrop` metody nie będą wywoływane.
 
 ## <a name="see-also"></a>Zobacz także
 

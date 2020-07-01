@@ -14,31 +14,31 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a871f726dc13f91c1dfd57471c12ee5cbfeb245
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918862"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531407"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Używaj StringBuilder do łączenia
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Użyj klasy StringBuilder do konkatenacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0001: use StringBuilder for rezłączs](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
-|||  
+|Element|Wartość|  
 |-|-|  
-|Identyfikator zasady|DA0001|  
+|Identyfikator reguły|DA0001|  
 |Kategoria|Użycie .NET Framework|  
 |Metody profilowania|Próbkowanie<br /><br /> Oprzyrządowanie|  
 |Komunikat|Rozważ użycie StringBuilder dla łączenia ciągów|  
 |Typ wiadomości|Ostrzeżenie|  
   
 ## <a name="cause"></a>Przyczyna  
- Wywołania metody System. String. Concat są znaczną częścią danych profilowania. Rozważ użycie klasy <xref:System.Text.StringBuilder> do konstruowania ciągów z wielu segmentów.  
+ Wywołania metody System. String. Concat są znaczną częścią danych profilowania. Rozważ użycie <xref:System.Text.StringBuilder> klasy do konstruowania ciągów z wielu segmentów.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Obiekt <xref:System.String> jest niezmienny. W związku z tym wszystkie modyfikacje ciągu tworzą nowy obiekt String i wyrzucanie elementów bezużytecznych. Takie zachowanie jest takie samo, niezależnie od tego, czy wywoływana jest metoda String. Concat jawnie, czy też użyto operatorów łączenia ciągów, takich jak + lub + =. Wydajność programu można zmniejszyć, jeśli te metody są często wywoływane, na przykład gdy znaki są dodawane do ciągu w ścisłej pętli.  
+ <xref:System.String>Obiekt jest niezmienny. W związku z tym wszystkie modyfikacje ciągu tworzą nowy obiekt String i wyrzucanie elementów bezużytecznych. Takie zachowanie jest takie samo, niezależnie od tego, czy wywoływana jest metoda String. Concat jawnie, czy też użyto operatorów łączenia ciągów, takich jak + lub + =. Wydajność programu można zmniejszyć, jeśli te metody są często wywoływane, na przykład gdy znaki są dodawane do ciągu w ścisłej pętli.  
   
  Klasa StringBuilder jest obiektem modyfikowalnym i, w przeciwieństwie do System. String, większość metod w StringBuilder modyfikujących wystąpienie tej klasy zwraca odwołanie do tego samego wystąpienia. Można wstawiać znaki lub dołączać tekst do wystąpienia StringBuilder i usuwać lub zastępować znaki w wystąpieniu bez konieczności alokowania nowego wystąpienia i usuwania oryginalnego wystąpienia.  
   
