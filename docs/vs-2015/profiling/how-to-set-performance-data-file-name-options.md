@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ustawianie opcji nazwy pliku danych wydajności | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Ustawianie opcji nazwy pliku danych wydajności | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,45 +9,45 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ac053a24b3f765a58fc050ceec84115e1a4e3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205784"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548398"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Instrukcje: Ustawianie opcji nazwy pliku danych wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Domyślnie zapiszesz plik danych (Vsp) profilowania przy użyciu następującej składni:  
+Domyślnie zapiszesz plik danych profilowania (. vsp) przy użyciu następującej składni:  
   
- *Path\VSP-File\YYMMDD(N)* **.vsp**  
+ *Path\VSP-File\YYMMDD (N)* **. vsp**  
   
- Można zmienić żadnych nazw parametrów, na stronie Ogólne, okno dialogowe właściwości sesji wydajności.  
+ Wszystkie parametry nazewnictwa można zmienić na stronie Ogólne okna dialogowego właściwości dla sesji wydajności.  
   
  **Wymagania**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-|||  
+|Element składni|Opis|  
 |-|-|  
-|*Path*|Katalog, który zawiera raport. Domyślna lokalizacja to folder rozwiązania lub domyślna lokalizacja dla projektów i rozwiązań użytkownika.|  
-|*VSP-File*|Nazwa pliku danych profilowania. Domyślną nazwą jest nazwa rozwiązania lub pliku wykonywalnego która profilowana jest.|  
-|*YYMMDD*|Sygnatura daty, która zawiera rok, miesiąc i dzień, zebranych danych profilowania.|  
-|*(N)*|Jeśli istnieje więcej niż jeden plik danych profilowania, zwiększona liczba jest dodawany do nazwy pliku w nawiasach.|  
+|*Ścieżka*|Katalog, który zawiera raport. Domyślną lokalizacją jest folder rozwiązania lub domyślna lokalizacja dla projektów i rozwiązań użytkownika.|  
+|*VSP-File*|Nazwa pliku danych profilowania. Nazwa domyślna to nazwa rozwiązania lub pliku wykonywalnego, który jest profilowany.|  
+|*YYMMDD*|Sygnatura daty, która pokazuje rok, miesiąc i dzień, w którym zbierane są dane profilowania.|  
+|*Azotan*|Jeśli istnieje więcej niż jeden plik danych profilowania, do nazwy pliku między nawiasami zostanie dodany przyrostowy numer.|  
   
-### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Aby zmienić Składnia nazwy pliku danych profilowania w sesji wydajności  
+### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Aby zmienić składnię nazewnictwa plików danych profilowania sesji wydajności  
   
-1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij przycisk **właściwości**.  
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **ogólne**.  
+2. Kliknij pozycję **Ogólne**.  
   
-3. W obszarze **raportu**, zmienić dowolne z następujących ustawień:  
+3. W obszarze **raport**zmień dowolne z następujących ustawień:  
   
-    |||  
+    |Nazwa|Opis|  
     |-|-|  
-    |**Lokalizacja raportu**|Określ katalog do przechowywania plików danych profilowania.|  
-    |**Nazwa raportu**|Określ nazwę bazową dla plików.|  
-    |**Automatycznie Dodaj nowe raporty do sesji**|Zaznacz pole wyboru, aby automatycznie dodać plik danych do sesji wydajności.|  
-    |**Dodaj zwiększającą się liczbę do wygenerowanych raportów**|Zaznacz pole wyboru, aby dodać zwiększającą się liczbę do nazwy pliku, jeśli istnieje więcej niż jeden plik o takiej samej nazwie. Wyczyść pole wyboru, aby zastąpić istniejący plik.|  
-    |**Użyj sygnatury czasowej dla liczby**|Zaznacz pole wyboru, aby dodać datestamp do nazwy pliku.|
+    |**Lokalizacja raportu**|Określ katalog, w którym mają być przechowywane pliki danych profilowania.|  
+    |**Nazwa raportu**|Określ nazwę podstawową dla plików.|  
+    |**Automatycznie Dodaj nowe raporty do sesji**|Zaznacz to pole wyboru, aby automatycznie dodać plik danych do sesji wydajności.|  
+    |**Dodawanie zwiększania liczby do wygenerowanych raportów**|Zaznacz pole wyboru, aby dodać przyrostowy numer do nazwy pliku, gdy istnieje więcej niż jeden plik o tej samej nazwie. Usuń zaznaczenie tego pola wyboru, aby zastąpić istniejący plik.|  
+    |**Użyj sygnatury czasowej dla liczby**|Zaznacz pole wyboru, aby dodać dateStamp do nazwy pliku.|

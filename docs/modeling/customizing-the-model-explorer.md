@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie Eksploratora modelu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c12ac2063e6b3ac04e3c0e9b0c20c69ea91a35
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589711"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548372"
 ---
 # <a name="customizing-the-model-explorer"></a>Dostosowywanie Eksploratora modelu
 Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla domeny można zmienić w następujący sposób:
@@ -33,14 +33,14 @@ Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla dome
  Aby zmienić tytuł okna wygenerowanego Eksploratora, wybierz pozycję **zachowanie Eksploratora** w **Eksploratorze DSL**, a następnie w oknie **Właściwości** ustaw właściwość **title** na tytuł, który ma zostać wybrany.
 
 ## <a name="changing-the-tab-icon"></a>Zmiana ikony karty
- Aby zmienić ikonę karty dla Eksploratora, użyj ikony 16x16 pikseli w pliku BMP. Umieść plik ikony w folderze \DslPackage\Resources\, a następnie zmień nazwę pliku na **ModelExplorerToolWindowBitmaps. bmp**. Można na przykład zmienić plik ikony instalacji. ico programu Visual Studio na format bmp i zmienić jego nazwę na **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Wygenerowany Projektant wyświetli tę ikonę na karcie Eksploratora, gdy zostanie ona zadokowany przy użyciu **Eksplorator rozwiązań**.
+ Aby zmienić ikonę karty dla Eksploratora, użyj ikony 16x16 pikseli w pliku BMP. Umieść plik ikony w folderze \DslPackage\Resources\, a następnie zmień nazwę pliku na **ModelExplorerToolWindowBitmaps.bmp**. Na przykład można zmienić plik ikony Setup. ico programu Visual Studio na format bmp i zmienić jego nazwę na **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Wygenerowany Projektant wyświetli tę ikonę na karcie Eksploratora, gdy zostanie ona zadokowany przy użyciu **Eksplorator rozwiązań**.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>Ustawianie ikon niestandardowych w węzłach Eksploratora
  Węzły w Eksploratorze można dostosować za pomocą ustawień węzła Eksploratora. Poniższa procedura pokazuje, jak dodać ikonę do węzła.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Aby dodać ikonę do węzła Eksploratora
 
-1. Utwórz rozwiązanie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] przy użyciu szablonu rozwiązania przepływu zadań.
+1. Utwórz [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązanie przy użyciu szablonu rozwiązania przepływu zadań.
 
 2. Umieść plik BMP, który zawiera ikonę 16x16 pikseli w folderze **Dsl\Resources** w rozwiązaniu.
 
@@ -111,6 +111,6 @@ Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla dome
 
      Eksplorator powinien wyświetlać tylko węzeł **aktorzy** i nie powinien wyświetlać węzła **Komentarze** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

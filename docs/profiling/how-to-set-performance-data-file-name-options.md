@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 368dfd4c67277305672a89be9e5ab811d341b009
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330028"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548125"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Instrukcje: ustawianie opcji nazwy pliku danych wydajności
 
@@ -24,7 +24,7 @@ Domyślnie zapisujesz dane profilowania (.* VSP*), używając następującej sk�
 
 Wszystkie parametry nazewnictwa można zmienić na stronie **Ogólne** okna dialogowego właściwości dla sesji wydajności.
 
-|||
+|Parametr|Opis|
 |-|-|
 |*Ścieżka*|Katalog, który zawiera raport. Domyślną lokalizacją jest folder rozwiązania lub domyślna lokalizacja dla projektów i rozwiązań użytkownika.|
 |*VSP-File*|Nazwa pliku danych profilowania. Nazwa domyślna to nazwa rozwiązania lub pliku wykonywalnego, który jest profilowany.|
@@ -39,7 +39,7 @@ Wszystkie parametry nazewnictwa można zmienić na stronie **Ogólne** okna dial
 
 3. W obszarze **raport**zmień dowolne z następujących ustawień:
 
-    |||
+    |Nazwa|Opis|
     |-|-|
     |**Lokalizacja raportu**|Określ katalog, w którym mają być przechowywane pliki danych profilowania.|
     |**Nazwa raportu**|Określ nazwę podstawową dla plików.|

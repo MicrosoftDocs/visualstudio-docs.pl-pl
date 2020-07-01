@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6109e0dc18f98d0b22dfb5c548bd12447b53e61d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f800a550717abfabdfb9296fc8f6de49d127d73
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662983"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548203"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Zestawy powinny mieć prawidłowe silne nazwy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |CheckId|CA2210|
@@ -46,7 +46,7 @@ ms.locfileid: "72662983"
 
 - Zestaw został niepoprawnie podpisany lub nie można podpisać.
 
-- Zestaw wymaga ustawień rejestru w celu przeprowadzenia weryfikacji. Na przykład narzędzie silnej nazwy (SN. exe) zostało użyte do pominięcia weryfikacji zestawu.
+- Zestaw wymaga ustawień rejestru w celu przeprowadzenia weryfikacji. Na przykład narzędzie silnej nazwy (Sn.exe) zostało użyte do pominięcia weryfikacji zestawu.
 
   Silna nazwa chroni klientów przed nieświadomym ładowaniem zestawu, który został zmieniony. Zestawy bez silnej nazwy nie powinny być wdrażane poza bardzo ograniczonymi scenariuszami. Jeśli użytkownik udostępnia lub dystrybuuje zestawy, które nie są poprawnie podpisane, zestaw może zostać zmieniony, środowisko uruchomieniowe języka wspólnego może nie załadować zestawu lub użytkownik będzie musiał wyłączyć weryfikację na swoim komputerze. Zestaw bez silnej nazwy ma następujące wady:
 
@@ -63,15 +63,15 @@ ms.locfileid: "72662983"
 
  Użyj jednej z następujących procedur:
 
-- Użyj narzędzia konsolidatora zestawu (Al. exe) dostarczonego przez zestaw SDK [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+- Użyj narzędzia konsolidatora zestawu (Al.exe) dostarczonego przez [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zestaw SDK.
 
-- Dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v 1.0 lub v 1.1 Użyj atrybutu <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> lub <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>.
+- W przypadku [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji 1.0 lub 1.1 należy użyć <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atrybutu lub.
 
-- Dla [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] Użyj opcji kompilatora `/keyfile` lub `/keycontainer` [/keyfile (Określ klucz lub parę kluczy, aby podpisać zestaw)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) lub [/KEYCONTAINER (Określ kontener kluczy, aby podpisać zestaw)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) w programie C++).
+- Dla programu [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] Użyj `/keyfile` `/keycontainer` opcji kompilatora lub [/keyfile (Określ klucz lub parę kluczy, aby podpisać zestaw)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) lub [/KEYCONTAINER (Określ kontener kluczy, aby podpisać zestaw)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) opcji konsolidatora w języku C++.
 
   **Aby podpisać zestaw za pomocą silnej nazwy w programie Visual Studio**
 
-1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz rozwiązanie.
+1. W programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwórz rozwiązanie.
 
 2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **właściwości.**
 
@@ -89,11 +89,11 @@ ms.locfileid: "72662983"
 
    **Aby podpisać zestaw za pomocą silnej nazwy poza programem Visual Studio**
 
-- Użyj narzędzia silnej nazwy (SN. exe), który jest dostarczany przez zestaw SDK [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Aby uzyskać więcej informacji, zobacz [SN. exe (Narzędzie silnej nazwy)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Użyj narzędzia silnej nazwy (Sn.exe) dostarczanego przez [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zestaw SDK. Aby uzyskać więcej informacji, zobacz [Sn.exe (Narzędzie silnej nazwy)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Pomiń tylko ostrzeżenie z tej reguły, jeśli zestaw jest używany w środowisku, w którym manipulowanie zawartością nie jest problemem.
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName><xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Instrukcje: podpisywanie zestawu za pomocą silnej nazwy](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [SN. exe (Narzędzie silnej nazwy)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
+ [Instrukcje: podpisywanie zestawu za pomocą silnej nazwy](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (Narzędzie silnej nazwy)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

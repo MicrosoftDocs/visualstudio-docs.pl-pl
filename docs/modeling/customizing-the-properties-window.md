@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie okna właściwości
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589698"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548281"
 ---
 # <a name="customize-the-properties-window"></a>Dostosowywanie okno Właściwości
 
@@ -40,7 +40,7 @@ Niektóre funkcje dynamiczne elementów graficznych mogą być reprezentowane lu
 
 Kliknij prawym przyciskiem myszy klasę Shape w definicji DSL, wskaż polecenie **Dodaj uwidocznione**, a następnie wybierz funkcję.
 
-Na kształtach można uwidocznić właściwości **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** i **FillGradientMode** . Na łącznikach można uwidocznić **kolor**`,`właściwości **TextColor**, **DashStyle**i **grubość** . Na diagramach można uwidocznić właściwości **FillColor** i **TextColor** .
+Na kształtach można uwidocznić właściwości **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** i **FillGradientMode** . Na łącznikach można uwidocznić właściwości **Color** `,` **TextColor**, **DashStyle**i **grubość** . Na diagramach można uwidocznić właściwości **FillColor** i **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Przekazywanie: właściwości wyświetlania powiązanych elementów
 
@@ -52,7 +52,7 @@ Ten efekt jest nazwany *przekazywaniem właściwości*i odbywa się automatyczni
 
 Gdy użytkownik wybierze kształt lub łącznik lub element w Eksploratorze, w okno Właściwości są wyświetlane następujące właściwości:
 
-- Właściwości domeny, które są zdefiniowane w klasie domeny elementu modelu, łącznie z tymi, które są zdefiniowane w klasach bazowych. Wyjątkiem są właściwości domeny, dla których ustawiono **umożliwia przeglądania** do `False`.
+- Właściwości domeny, które są zdefiniowane w klasie domeny elementu modelu, łącznie z tymi, które są zdefiniowane w klasach bazowych. Wyjątkiem są właściwości domeny, dla których ustawiono **umożliwia przeglądania** `False` .
 
 - Nazwy elementów, które są połączone za pomocą relacji, które mają liczebność 0.. 1. Zapewnia to wygodną metodę wyświetlania opcjonalnie połączonych elementów, nawet jeśli nie zdefiniowano mapowania łącznika dla relacji.
 
@@ -132,7 +132,7 @@ Można jednak określić następujące edytory i typy:
 
     W okno Właściwości wybierz typ zewnętrzny z listy rozwijanej w polu **Typ** .
 
-   Na tym etapie użytkownicy mogą wyświetlić wartości właściwości, ale nie mogą go edytować. Wyświetlane wartości są uzyskiwane z funkcji `ToString()`. Można napisać kod programu, który ustawia wartość właściwości, na przykład w poleceniu lub w regule.
+   Na tym etapie użytkownicy mogą wyświetlić wartości właściwości, ale nie mogą go edytować. Wyświetlone wartości są uzyskiwane z `ToString()` funkcji. Można napisać kod programu, który ustawia wartość właściwości, na przykład w poleceniu lub w regule.
 
 ### <a name="set-a-property-editor"></a>Ustawianie edytora właściwości
 
@@ -146,9 +146,9 @@ Dodaj atrybut CLR do właściwości Domain w następującej postaci:
 
 Można ustawić atrybut dla właściwości przy użyciu wpisu **atrybutu niestandardowego** w okno właściwości.
 
-Typ `AnEditor` musi pochodzić od typu określonego w drugim parametrze. Drugi parametr powinien mieć wartość <xref:System.Drawing.Design.UITypeEditor> lub <xref:System.ComponentModel.ComponentEditor>. Aby uzyskać więcej informacji, zobacz temat <xref:System.ComponentModel.EditorAttribute>.
+Typ musi pochodzić `AnEditor` od typu określonego w drugim parametrze. Drugi parametr powinien mieć wartość <xref:System.Drawing.Design.UITypeEditor> lub <xref:System.ComponentModel.ComponentEditor> . Aby uzyskać więcej informacji, zobacz <xref:System.ComponentModel.EditorAttribute>.
 
-Możesz określić własny edytor lub Edytor .NET, taki jak <xref:System.Windows.Forms.Design.FileNameEditor> lub <xref:System.Drawing.Design.ImageEditor>. Na przykład użyj poniższej procedury, aby określić właściwość, w której użytkownik może wprowadzić nazwę pliku.
+Możesz określić własny edytor lub Edytor .NET, taki jak <xref:System.Windows.Forms.Design.FileNameEditor> lub <xref:System.Drawing.Design.ImageEditor> . Na przykład użyj poniższej procedury, aby określić właściwość, w której użytkownik może wprowadzić nazwę pliku.
 
 #### <a name="define-a-file-name-domain-property"></a>Zdefiniuj nazwę pliku właściwość domeny
 
@@ -169,7 +169,7 @@ Możesz określić własny edytor lub Edytor .NET, taki jak <xref:System.Windows
 
     1. Naciśnij klawisze CTRL + F5 lub F5. W rozwiązaniu debugowania Otwórz plik testowy. Utwórz element klasy domeny i wybierz go.
 
-    2. W okno Właściwości wybierz właściwość domeny. Pole value zawiera wielokropek **[...]** .
+    2. W okno Właściwości wybierz właściwość domeny. Pole value zawiera wielokropek **[...]**.
 
     3. Kliknij wielokropek. Zostanie wyświetlone okno dialogowe plik. Wybierz plik i Zamknij okno dialogowe. Ścieżka pliku jest teraz wartością właściwości domeny.
 
@@ -177,18 +177,18 @@ Możesz określić własny edytor lub Edytor .NET, taki jak <xref:System.Windows
 
 Można zdefiniować własny edytor. Można to zrobić, aby zezwolić użytkownikowi na edytowanie typu zdefiniowanego przez użytkownika lub Edytowanie typu standardowego w specjalny sposób. Na przykład można zezwolić użytkownikowi na wprowadzanie ciągu, który reprezentuje formułę.
 
-Należy zdefiniować edytor, pisząc klasę, która jest pochodną <xref:System.Drawing.Design.UITypeEditor>. Klasa musi przesłonić:
+Można zdefiniować edytor, pisząc klasę, która pochodzi od <xref:System.Drawing.Design.UITypeEditor> . Klasa musi przesłonić:
 
-- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, aby współistnieć z użytkownikiem i zaktualizować wartość właściwości.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, aby korzystać z użytkownika i aktualizować wartość właściwości.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, aby określić, czy edytor ma otworzyć okno dialogowe, czy udostępnić menu rozwijane.
 
-Możesz również dostarczyć graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. W tym celu Zastąp `GetPaintValueSupported`i `PaintValue`.  Aby uzyskać więcej informacji, zobacz temat <xref:System.Drawing.Design.UITypeEditor>.
+Możesz również dostarczyć graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. W tym celu Przesłoń `GetPaintValueSupported` i `PaintValue` .  Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Dodaj kod w osobnym pliku kodu w projekcie **DSL** .
 
-Na przykład:
+Przykład:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -210,7 +210,7 @@ Aby użyć tego edytora, należy ustawić **atrybut niestandardowy** właściwo�
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-Aby uzyskać więcej informacji, zobacz temat <xref:System.Drawing.Design.UITypeEditor>.
+Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
 
 ## <a name="provide-a-drop-down-list-of-values"></a>Podaj listę rozwijaną wartości
 
@@ -226,7 +226,7 @@ Aby zdefiniować listę wartości standardowych, należy dodać do właściwośc
 (typeof(MyTypeConverter))]
 ```
 
-Zdefiniuj klasę, która pochodzi od <xref:System.ComponentModel.TypeConverter>. Dodaj kod w osobnym pliku w projekcie **DSL** . Na przykład:
+Zdefiniuj klasę, która dziedziczy z <xref:System.ComponentModel.TypeConverter> . Dodaj kod w osobnym pliku w projekcie **DSL** . Przykład:
 
 ```csharp
 /// <summary>
@@ -319,6 +319,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)

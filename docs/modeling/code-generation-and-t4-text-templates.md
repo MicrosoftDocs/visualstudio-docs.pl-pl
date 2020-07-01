@@ -1,7 +1,7 @@
 ---
 title: Generowanie kodu i szablony tekstowe T4
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0eba8b4850ee845414084ef766fce30f9efd7e6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597207"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548242"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generowanie kodu i szablony tekstowe T4
 
-W programie Visual Studio *szablon tekstu T4* jest kombinacją bloków tekstowych i logiki formantów, które mogą generować plik tekstowy. Logika formantów jest zapisywana jako fragmenty kodu programu w [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. W programie Visual Studio 2015 Update 2 i nowszych można używać C# funkcji wersji 6,0 w dyrektywach szablonów T4. Wygenerowany plik może być tekstem dowolnego rodzaju, takim jak strona sieci Web lub plik zasobów lub kod źródłowy programu w dowolnym języku.
+W programie Visual Studio *szablon tekstu T4* jest kombinacją bloków tekstowych i logiki formantów, które mogą generować plik tekstowy. Logika formantów jest zapisywana jako fragment kodu programu w [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] . W programie Visual Studio 2015 Update 2 i nowszych można korzystać z funkcji języka C# w wersji 6,0 w dyrektywach szablonów T4. Wygenerowany plik może być tekstem dowolnego rodzaju, takim jak strona sieci Web lub plik zasobów lub kod źródłowy programu w dowolnym języku.
 
 Istnieją dwa rodzaje szablonów tekstu T4: czas wykonywania i czas projektowania.
 
@@ -42,7 +42,7 @@ Zauważ, że szablon przypomina wygenerowane dane wyjściowe. Podobieństwo szab
 
 Ponadto szablon zawiera fragmenty kodu programu. Za pomocą tych fragmentów można powtarzać sekcje tekstu, tworzyć sekcje warunkowe i wyświetlać dane z aplikacji.
 
-Aby wygenerować dane wyjściowe, aplikacja wywołuje funkcję, która jest generowana przez szablon. Na przykład:
+Aby wygenerować dane wyjściowe, aplikacja wywołuje funkcję, która jest generowana przez szablon. Przykład:
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
@@ -94,6 +94,6 @@ Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania
 
 Funkcja transformacji szablonu tekstu jest nazywana *T4*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)
