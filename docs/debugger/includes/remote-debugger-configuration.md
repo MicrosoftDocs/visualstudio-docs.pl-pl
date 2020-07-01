@@ -20,29 +20,29 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68149172"
 ---
-1. Na komputerze zdalnym, należy znaleźć i uruchomić **zdalny debuger** z **Start** menu. 
+1. Na komputerze zdalnym Znajdź i uruchom **zdalny debuger** z menu **Start** . 
    
-   Jeśli nie masz uprawnienia administracyjne na komputerze zdalnym, kliknij prawym przyciskiem myszy **zdalny debuger** aplikacji i wybierz **Uruchom jako administrator**. W przeciwnym razie po prostu ją uruchomić normalnie.
+   Jeśli nie masz uprawnień administracyjnych na komputerze zdalnym, kliknij prawym przyciskiem myszy aplikację **Remote Debugger** i wybierz polecenie **Uruchom jako administrator**. W przeciwnym razie po prostu uruchom je normalnie.
 
-   Jeśli planujesz dołączyć do procesu, który działa jako administrator, lub jest uruchomiona w ramach innego użytkownika konta (np. usługi IIS), kliknij prawym przyciskiem myszy **zdalny debuger** aplikacji i wybierz **Uruchom jako administrator**. Aby uzyskać więcej informacji, zobacz [uruchomić zdalny debuger jako administrator](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
+   Jeśli planujesz dołączenie do procesu, który jest uruchomiony jako administrator lub działa na innym koncie użytkownika (na przykład IIS), kliknij prawym przyciskiem myszy aplikację **Remote Debugger** i wybierz polecenie **Uruchom jako administrator**. Aby uzyskać więcej informacji, zobacz [Uruchamianie debugera zdalnego jako administrator](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
-1. Po raz pierwszy uruchomić zdalny debuger (lub został wcześniej skonfigurowany) **Konfiguracja zdalnego debugowania** pojawi się okno dialogowe.  
+1. Przy pierwszym uruchomieniu zdalnego debugera (lub przed jego skonfigurowaniem) zostanie wyświetlone okno dialogowe **Konfiguracja zdalnego debugowania** .  
   
-    ![Konfiguracji zdalnego debugera](../media/remotedebuggerconfwizardpage.png "konfiguracji zdalnego debugera")  
+    Konfiguracja(../media/remotedebuggerconfwizardpage.png "zdalnego debugera") ![konfiguracji debugera zdalnego]  
   
-1. Jeśli API usług sieci Web Windows nie jest zainstalowany, które odbywa się tylko w systemie Windows Server 2008 R2, wybierz opcję **zainstalować** przycisku.  
+1. Jeśli nie zainstalowano interfejsu API usług sieci Web systemu Windows, który występuje tylko w systemie Windows Server 2008 R2, wybierz przycisk **Instaluj** .  
   
-1. Wybierz co najmniej jeden typ sieci chcesz używania narzędzi zdalnych na. Jeśli komputery są połączone za pośrednictwem domeny, należy wybrać pierwszy element. Komputery są połączone za pośrednictwem grupy roboczej lub grupa domowa, jeśli drugi lub trzeci element zgodnie z potrzebami.  
+1. Wybierz co najmniej jeden typ sieci, na którym chcesz korzystać z narzędzi zdalnych. Jeśli komputery są połączone za pomocą domeny, należy wybrać pierwszy element. Jeśli komputery są połączone przez grupę roboczą lub grupę domową, wybierz drugi lub trzeci element stosownie do potrzeb.  
   
-1. Wybierz **Konfiguruj zdalne debugowanie** Aby skonfigurować zaporę i uruchomić zdalny debuger.  
+1. Wybierz pozycję **Konfiguruj zdalne debugowanie** , aby skonfigurować zaporę i uruchomić zdalny debuger.  
   
-1. Po zakończeniu konfiguracji **zdalny debuger** zostanie wyświetlone okno.
+1. Po zakończeniu konfiguracji zostanie wyświetlone okno **zdalny debuger** .
   
-    ![Okna debugera zdalnego](../media/remotedebuggerwindow.png "okna debugera zdalnego")
+    (../media/remotedebuggerwindow.png "Okno zdalnego debugera") ![okna debugera zdalnego]
   
-    Zdalny debuger jest teraz oczekiwania na połączenie. Użyj nazwy serwera i portu wynikową do ustawienia konfiguracji połączeń zdalnych w programie Visual Studio.  
+    Zdalny debuger czeka teraz na połączenie. Użyj nazwy serwera i numeru portu podanego do ustawienia konfiguracji połączenia zdalnego w programie Visual Studio.  
   
-Aby zatrzymać zdalnego debugera, wybierz **pliku** > **zakończenia**. Możesz ponownie uruchomić go z **Start** menu lub z wiersza polecenia:  
+Aby zatrzymać zdalny debuger **, wybierz pozycję**  >  **Zakończ**. Możesz uruchomić go ponownie z menu **Start** lub z wiersza polecenia:  
   
 ```cmd
 <Remote debugger installation directory>\msvsmon.exe

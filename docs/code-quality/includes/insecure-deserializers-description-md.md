@@ -10,4 +10,4 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68147096"
 ---
-Niebezpieczne deserializers są zagrożone, podczas deserializacji niezaufanych danych. Osoba atakująca może zmodyfikować dane serializowane obejmuje dodatkowe typy nieoczekiwany iniekcję obiektów przy użyciu złośliwych efekty uboczne. Ataku na niezabezpieczone Deserializator można, na przykład wykonywać polecenia w podstawowym systemie operacyjnym, komunikują się za pośrednictwem sieci lub usuwania plików.
+Niezabezpieczone deserializatory są narażone na deserializacja niezaufanych danych. Osoba atakująca może zmodyfikować serializowane dane w celu uwzględnienia nieoczekiwanych typów, aby wstrzyknąć obiekty ze złośliwymi efektami ubocznymi. Atak na niezabezpieczony Deserializator może na przykład wykonywać polecenia w podstawowym systemie operacyjnym, komunikować się przez sieć lub usuwać pliki.
