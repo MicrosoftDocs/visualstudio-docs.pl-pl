@@ -8,4 +8,4 @@ ms.lasthandoff: 07/15/2019
 ms.locfileid: "68145044"
 ---
 > [!NOTE]
-> **Przekształcenia szablonu tekstu** składnik jest automatycznie instalowany jako część **programowanie rozszerzeń programu Visual Studio** obciążenia. Można także zainstalować go z **poszczególne składniki** kartę Instalatora programu Visual Studio, w obszarze **zestawów SDK, bibliotek i struktur** kategorii. Zainstaluj **zestawu Modeling SDK** z **poszczególne składniki** kartę.
+> Składnik **transformacji szablonu tekstu** jest automatycznie instalowany w ramach obciążenia **programistycznego rozszerzenia programu Visual Studio** . Można go również zainstalować z karty **poszczególne składniki** Instalator programu Visual Studio, w obszarze **zestawy SDK, biblioteki i struktury** . Zainstaluj składnik **Modeling SDK** na karcie **poszczególne składniki** .

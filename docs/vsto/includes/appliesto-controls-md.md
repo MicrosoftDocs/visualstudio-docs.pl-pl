@@ -6,4 +6,4 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68151376"
 ---
-  **Dotyczy:** Informacje przedstawione w tym temacie mają zastosowanie do dokumentu\-poziomu projektów i dodać VSTO\-w projektach dla programów Excel i Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Dotyczy:** Informacje przedstawione w tym temacie mają zastosowanie do \- projektów na poziomie dokumentu i narzędzi VSTO \- dla programów Excel i Word. Aby uzyskać więcej informacji, zobacz [dostępność funkcji według aplikacji pakietu Office i typów projektów](../../vsto/features-available-by-office-application-and-project-type.md).

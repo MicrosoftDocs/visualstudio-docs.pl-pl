@@ -1,6 +1,6 @@
 ---
-title: Plik dyrektywy include
-description: Plik dyrektywy include
+title: dołączanie pliku
+description: dołączanie pliku
 ms.custom: include file
 author: ghogen
 ms.author: ghogen
@@ -15,4 +15,4 @@ ms.lasthandoff: 03/20/2020
 ms.locfileid: "70197165"
 ---
 > [!Note]
-> Ten artykuł dotyczy programu Visual Studio 2015. Jeśli szukasz najnowszej dokumentacji programu Visual Studio, użyj selektora wersji w lewym górnym rogu. Zalecamy uaktualnienie do programu Visual Studio 2019. [Pobierz go tutaj](https://visualstudio.microsoft.com/downloads)
+> Ten artykuł ma zastosowanie do programu Visual Studio 2015. Jeśli szukasz najnowszej dokumentacji programu Visual Studio, użyj selektora wersji w lewym górnym rogu. Zalecamy uaktualnienie do programu Visual Studio 2019. [Pobierz tutaj](https://visualstudio.microsoft.com/downloads)
