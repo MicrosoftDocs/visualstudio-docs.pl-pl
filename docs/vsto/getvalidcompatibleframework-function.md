@@ -1,7 +1,7 @@
 ---
-title: GetValidCompatibleFramework function
+title: GetValidCompatibleFramework, funkcja
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b975a4b4b2c1b4ae3f6ef0f1d6d23769bb4c77c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2219417fe8ddae3d11d0e624ad12d3de80e290dd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788699"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520227"
 ---
-# <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework function
-  Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.
+# <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework, funkcja
+  Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczony do użycia bezpośrednio w kodzie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,8 +33,8 @@ HRESULT WINAPI GetValidCompatibleFramework(
 
 |Parametr|Opis|
 |---------------|-----------------|
-|*lpwszCompatibleFrameworksXML*|Nie należy używać.|
-|*pbstrValidFrameworkTag*|Nie należy używać.|
+|*lpwszCompatibleFrameworksXML*|Nie używaj.|
+|*pbstrValidFrameworkTag*|Nie używaj.|
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli funkcja się powiedzie, zwraca **S_OK**. Jeśli funkcja zawiedzie, zwraca kod błędu.
+ Jeśli funkcja się powiedzie, zwraca **S_OK**. Jeśli funkcja nie powiedzie się, zwraca kod błędu.

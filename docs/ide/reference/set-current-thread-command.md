@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Current Thread command
 - Debug.SetCurrentThread command
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d782a507d57e459aa5735cf34717f13e41d4cde
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 54c2dabeea14293fdb86120f822eb396a028757a
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72748614"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768688"
 ---
 # <a name="set-current-thread-command"></a>Ustaw bieżący wątek — Polecenie
 Ustawia określony wątek jako bieżący wątek.
@@ -32,7 +32,7 @@ Debug.SetCurrentThread index
 ## <a name="arguments"></a>Argumenty
 `index`
 
-Wymagany. Wybiera wątek według jego indeksu.
+Wymagany. Wybiera wątek według indeksu.
 
 ## <a name="example"></a>Przykład
 
@@ -40,9 +40,9 @@ Wymagany. Wybiera wątek według jego indeksu.
 >Debug.SetCurrentThread 1
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
 - [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

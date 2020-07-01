@@ -1,45 +1,45 @@
 ---
-title: Projektowanie aplikacji formularzy systemu Windows
+title: Projektuj Windows Forms aplikacje
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - Windows Forms Designer
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03619582a30893c161c44c880a0d9cf6c9766d0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589893"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768759"
 ---
 # <a name="windows-forms-designer-overview"></a>Projektant formularzy systemu Windows — omówienie
 
-Projektant formularzy systemu Windows w programie Visual Studio zapewnia szybkie rozwiązanie programistyczne do tworzenia aplikacji opartych na formularzach systemu Windows. Program Windows Forms Designer umożliwia łatwe dodawanie formantów do formularza, rozmieszczanie ich i pisanie kodu dla ich zdarzeń. Aby uzyskać więcej informacji o formularzach systemu Windows, zobacz [Omówienie formularzy systemu Windows](/dotnet/framework/winforms/windows-forms-overview).
+Projektant formularzy systemu Windows w programie Visual Studio oferuje szybkie rozwiązanie programistyczne do tworzenia aplikacji opartych na Windows Forms. Projektant formularzy systemu Windows pozwala łatwo dodawać kontrolki do formularza, rozmieścić je i pisać kod dla swoich zdarzeń. Aby uzyskać więcej informacji na temat Windows Forms, zobacz [Windows Forms Omówienie](/dotnet/framework/winforms/windows-forms-overview).
 
-## <a name="functionality"></a>Funkcjonalność
+## <a name="functionality"></a>Funkcja
 
 Za pomocą projektanta można:
 
-- Dodawanie składników, formantów danych lub formantów opartych na systemie Windows do formularza.
+- Dodawanie składników, kontrolek danych lub formantów opartych na systemie Windows do formularza.
 
-- Kliknij dwukrotnie formularz w projektancie i `Load` napisz kod w zdarzeniu dla tego formularza lub kliknij dwukrotnie formant w formularzu i napisz kod dla domyślnego zdarzenia formantu.
+- Kliknij dwukrotnie formularz w Projektancie i napisz kod w `Load` zdarzeniu dla tego formularza lub kliknij dwukrotnie formant w formularzu i napisz kod dla zdarzenia domyślnego formantu.
 
-- Edytuj właściwość Text formantu, zaznaczając formant i wpisując nazwę.
+- Edytuj właściwość Text kontrolki, zaznaczając kontrolkę i wpisując nazwę.
 
-- Dostosuj położenie wybranego formantu, przesuwając go za pomocą myszy lub klawiszy strzałek. Podobnie dostosuj położenie za pomocą klawiszy Ctrl i klawiszy strzałek. Na koniec dostosuj rozmiar formantu za pomocą klawiszy Shift i klawiszy strzałek.
+- Dostosuj położenie zaznaczonego formantu, przenosząc je za pomocą myszy lub klawiszy strzałek. Podobnie Dostosuj umieszczanie przy użyciu klawiszy CTRL i strzałki. Na koniec Dostosuj rozmiar formantu przy użyciu klawiszy Shift i strzałka.
 
-- Zaznacz wiele kontrolek, zaznaczając klawisz **Shift** lub **Ctrl** podczas klikania. Podczas korzystania z funkcji **Shift**+click, pierwszy wybrany formant jest dominującą formantem podczas wyrównywania lub manipulowania rozmiarem. Podczas korzystania z **ctrl**+click, ostatni wybrany formant jest dominujący, więc dominujący formant zmienia się z każdym dodanym nowym formantu. Alternatywnie można zaznaczyć wiele formantów, przeciągając prostokąt zaznaczenia wokół formantów, które chcesz zaznaczyć.
+- Zaznacz opcję wiele kontrolek, wybierając **klawisz Shift** lub **Ctrl** po kliknięciu przycisku. W przypadku używania pojedynczo **SHIFT**+ kliknięcie pierwszy wybrany formant jest formantem dominującym podczas wyrównywania lub manipulowania rozmiarem. W przypadku korzystania z **kombinacji klawiszy CTRL**i kliknięcia Ostatnia wybrana kontrolka ma wartość dominującą, więc formant dominujący zmienia się z każdą dodaną nową kontrolką. Alternatywnie można wybrać wiele kontrolek, przeciągając prostokąt zaznaczenia wokół kontrolek, które chcesz wybrać.
 
 > [!NOTE]
-> Użyj projektanta formularzy systemu Windows, a nie Edytora zasobów, aby wprowadzić zmiany w pliku zasobu formularza (*.resx*). Jeśli edytujesz plik .resx oparty na formularzu, zobaczysz ostrzeżenie, że zmiany wprowadzone w Edytorze zasobów mogą zostać utracone. Dzieje się tak, ponieważ projektant formularzy systemu Windows generuje plik .resx.
+> Użyj Projektant formularzy systemu Windows, a nie edytora zasobów, aby wprowadzić zmiany w pliku zasobów formularza (*. resx*). Jeśli edytujesz plik resx oparty na formularzu, zobaczysz ostrzeżenie, że zmiany wprowadzone w edytorze zasobów mogą zostać utracone. Dzieje się tak, ponieważ Projektant formularzy systemu Windows generuje plik resx.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Omówienie formularzy systemu Windows](/dotnet/framework/winforms/windows-forms-overview)
+- [Przegląd Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [formanty Formularzy systemu Windows](/dotnet/framework/winforms/controls/)
-- [Dane wejściowe użytkownika w formularzach systemu Windows](/dotnet/framework/winforms/user-input-in-windows-forms)
-- [Powiązanie danych w formularzach systemu Windows](/dotnet/framework/winforms/windows-forms-data-binding)
-- [Ulepszanie aplikacji formularzy systemu Windows](/dotnet/framework/winforms/advanced/)
-- <xref:System.Windows.Forms?displayProperty=fullName>Odwołanie do interfejsu API
+- [Dane wejściowe użytkownika w Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
+- [Powiązanie danych w Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Ulepszanie aplikacji Windows Forms](/dotnet/framework/winforms/advanced/)
+- <xref:System.Windows.Forms?displayProperty=fullName>Dokumentacja interfejsu API

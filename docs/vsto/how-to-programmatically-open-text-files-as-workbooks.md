@@ -37,7 +37,7 @@ ms.locfileid: "85519836"
 
 - Plik tekstowy, `Test.txt` który ma być przechowywany na dysku C.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj ze skoroszytami](../vsto/working-with-workbooks.md)
 - [Instrukcje: Programowane otwieranie skoroszytów](../vsto/how-to-programmatically-open-workbooks.md)
 - [Instrukcje: Programowane tworzenie nowych skoroszytów](../vsto/how-to-programmatically-create-new-workbooks.md)

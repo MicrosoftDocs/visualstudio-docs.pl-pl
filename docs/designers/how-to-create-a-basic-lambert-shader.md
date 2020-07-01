@@ -1,59 +1,59 @@
 ---
 title: 'Porady: tworzenie podstawowego modułu cieniującego Lamberta'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d78bc6e1b384f339d80e09fec81d42c1ab8ed103
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b6f9e5cf95b3766b6c6ceb93c740870a91cfc6af
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589503"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769197"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Instrukcje: tworzenie podstawowego cieniowania Lamberta
 
-W tym artykule pokazano, jak używać projektanta modułu cieniującego i języka cieniowania wykresu kierowanego (DGSL) do utworzenia modułu cieniującego oświetlenia, który implementuje klasyczny model oświetlenia Lamberta.
+W tym artykule pokazano, jak używać projektanta programu do cieniowania i języka ukierunkowanego programu Graph (DGSL) do tworzenia cieniowania oświetlenia implementującego klasyczny model oświetlenia Lamberta.
 
 ## <a name="the-lambert-lighting-model"></a>Model oświetlenia Lamberta
 
-Model oświetlenia Lamberta wykorzystuje oświetlenie otoczenia i kierunkowe, aby zacienić obiekty w scenie 3D. Elementy otoczenia zapewniają podstawowy poziom oświetlenia w scenie 3D. Elementy kierunkowe zapewniają dodatkowe oświetlenie ze źródeł światła kierunkowego (daleko). Oświetlenie otoczenia wpływa równomiernie na wszystkie powierzchnie sceny, niezależnie od ich orientacji. Dla danej powierzchni jest to produkt koloru otoczenia powierzchni oraz koloru i intensywności oświetlenia otoczenia w scenie. Oświetlenie kierunkowe wpływa na każdą powierzchnię sceny w różny sposób, w zależności od orientacji powierzchni w stosunku do kierunku źródła światła. Jest to produkt rozproszonego koloru i orientacji powierzchni oraz koloru, intensywności i kierunku źródeł światła. Powierzchnie skierowane bezpośrednio w kierunku źródła światła otrzymują maksymalny wkład, a powierzchnie, które są bezpośrednio skierowane bezpośrednio, nie otrzymują żadnego wkładu. W modelu oświetlenia Lambert komponent otoczenia i jeden lub więcej komponentów kierunkowych są łączone w celu określenia całkowitego wkładu kolorów rozproszonych dla każdego punktu na obiekcie.
+Model oświetlenia Lamberta obejmuje oświetlenie otoczenia i kierunkowego w celu cieniowania obiektów w scenie 3D. Składniki otoczenia zapewniają podstawowy poziom oświetlenia sceny 3W. Składniki kierunkowe zapewniają dodatkowe oświetlenie ze źródeł światła kierunkowego (daleko w dół). Oświetlenie otoczenia ma równo wpływ na wszystkie powierzchnie sceny, niezależnie od ich orientacji. Dla danej powierzchni jest to produkt otoczenia koloru powierzchni oraz kolor i intensywność oświetlenia otoczenia w scenie. Oświetlenie kierunkowe ma inne znaczenie w zależności od orientacji powierzchni względem kierunku źródła światła. Jest to iloczyn rozpraszanego koloru i orientacji powierzchni oraz kolor, intensywność i kierunek źródeł światła. Powierzchnie, które są bezpośrednio skierowane do źródła światła, otrzymują maksymalny udział i powierzchnie, które nie są bezpośrednio otrzymywane bez udziału. W modelu oświetlenia Lamberta, składnik otoczenia i jeden lub więcej elementów kierunkowych są połączone, aby określić całkowity udział kolorów rozpraszania dla każdego punktu w obiekcie.
 
-Przed rozpoczęciem upewnij się, że są wyświetlane okno **Właściwości** i **Przybornik.**
+Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** i **Przybornik** .
 
-1. Utwórz moduł cieniujący DGSL, z którym ma być działać. Aby uzyskać informacje dotyczące dodawania modułu cieniującego DGSL do projektu, zobacz sekcję Wprowadzenie w [Projektancie modułu cieniującego](../designers/shader-designer.md).
+1. Utwórz program do cieniowania DGSL, który będzie działał. Aby dowiedzieć się, jak dodać cieniowanie DGSL do projektu, zobacz sekcję Wprowadzenie w [projektancie cieniowania](../designers/shader-designer.md).
 
-2. Odłącz węzeł **Kolor punktu** od **węzła Kolor końcowy.** Wybierz terminal **RGB** węzła **Kolor punktu,** a następnie wybierz pozycję **Przerwij łącza**. Pozostaw podłączony terminal **Alpha.**
+2. Odłącz węzeł **koloru punktu** od końcowego węzła **koloru** . Wybierz Terminal **RGB** w węźle **Kolor punktu** , a następnie wybierz polecenie **Przerwij linki**. Pozostaw podłączony Terminal **Alpha** .
 
-3. Dodaj węzeł **Lambert** do wykresu. W **przyborniku**, w obszarze **Narzędzie**wybierz **Lambert** i przesuń go na powierzchnię projektową. Węzeł lambert oblicza całkowity rozproszony wkład kolorów piksela na podstawie parametrów oświetlenia otoczenia i rozproszonego.
+3. Dodaj węzeł **Lamberta** do grafu. W **przyborniku**, w obszarze **Narzędzia**, wybierz pozycję **Lamberta** i przenieś ją na powierzchnię projektu. Węzeł Lamberta oblicza całkowity udział kolorów w pikselach na podstawie parametrów oświetlenia otoczenia i rozpraszania.
 
-4. Połącz węzeł **Kolor punktu** z węzłem **Lambert.** W trybie **wyboru** przenieś terminal **RGB** węzła **Kolor punktu** do terminalu **Kolor rozproszony** **węzła Lambert.** To połączenie zapewnia węzłowi lamberta interpolowany rozproszony kolor piksela.
+4. Połącz węzeł **koloru punktu** z węzłem **Lamberta** . W trybie **wyboru** Przenieś Terminal **RGB** węzła **koloru punktu** do terminalu **koloru rozpraszania** węzła **Lamberta** . To połączenie udostępnia węzeł Lamberta z interpolowanym kolorem rozpraszania pikseli.
 
-5. Połącz obliczoną wartość koloru z kolorem końcowym. Przenieś terminal **wyjściowy** węzła **Lambert** do terminalu **RGB** **węzła Kolor końcowy.**
+5. Połącz obliczoną wartość koloru z końcowym kolorem. Przenieś Terminal **wyjściowy** węzła **Lamberta** do terminalu **RGB** **końcowego węzła Color** .
 
-   Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i podgląd modułu cieniującego zastosowanego do modelu czajnika.
+   Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i Podgląd cieniowania zastosowany do modelu czajniczek.
 
 > [!NOTE]
-> Aby lepiej zademonstrować wpływ modułu cieniującego na tej ilustracji, kolor pomarańczowy został określony za pomocą parametru **MaterialDiffuse** modułu cieniującego. Gra lub aplikacja może użyć tego parametru, aby podać unikatową wartość koloru dla każdego obiektu. Aby uzyskać informacje o parametrach materiału, zobacz sekcję Podgląd modułów cieniujących w [Projektancie modułów cieniujących](../designers/shader-designer.md).
+> Aby lepiej zademonstrować efekt cieniowania na tej ilustracji, kolor pomarańczowy został określony przy użyciu parametru **MaterialDiffuse** cieniowania. Gra lub aplikacja może użyć tego parametru, aby podać unikatową wartość koloru dla każdego obiektu. Aby uzyskać informacje o parametrach materiału, zobacz sekcję podglądy programów do cieniowania w [projektancie cieniowania](../designers/shader-designer.md).
 
-![Wykres modułu cieniującego i podgląd jego efektu.](../designers/media/digit-lambert-effect-graph.png)
+![Wykres programu do cieniowania i podgląd jego efektu.](../designers/media/digit-lambert-effect-graph.png)
 
-Niektóre kształty mogą zapewniać lepsze podglądy niektórych modułów cieniowania. Aby uzyskać więcej informacji na temat wyświetlania podglądu modułów cieniujących w Projektancie modułów cieniujących, zobacz sekcję Podgląd modułów cieniujących w [Projektancie modułów cieniujących](../designers/shader-designer.md).
+Niektóre kształty mogą zapewniać lepszy Podgląd niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat podglądu programów do cieniowania w projektancie cieniowania, zobacz sekcję podglądy programów do cieniowania w [projektancie cieniowania](../designers/shader-designer.md).
 
-Na poniższej ilustracji przedstawiono moduł cieniujący opisany w tym dokumencie zastosowany do modelu 3D.
+Na poniższej ilustracji przedstawiono cieniowanie opisane w tym dokumencie, stosowane do modelu 3W.
 
 ![Oświetlenie Lamberta zastosowane do modelu.](../designers/media/digit-lambert-effect-result.png)
 
-Aby uzyskać więcej informacji na temat stosowania modułu cieniującego do modelu 3D, zobacz [Jak: Stosowanie modułu cieniującego do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Aby uzyskać więcej informacji na temat sposobu stosowania cieniowania do modelu 3D, zobacz [How to: Apply a Shader to a model 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Jak: Stosowanie modułu cieniującego do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Jak: Eksportowanie modułu cieniującego](../designers/how-to-export-a-shader.md)
-- [Jak: Tworzenie podstawowego modułu cieniującego Phong](../designers/how-to-create-a-basic-phong-shader.md)
-- [Projektant modułu cieniującego](../designers/shader-designer.md)
-- [Węzły projektanta modułu cieniującego](../designers/shader-designer-nodes.md)
+- [Instrukcje: Stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Instrukcje: Eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
+- [Instrukcje: Tworzenie podstawowego cieniowania podstawowego Phong](../designers/how-to-create-a-basic-phong-shader.md)
+- [Projektant programu do cieniowania](../designers/shader-designer.md)
+- [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

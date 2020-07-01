@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e7258ec98937e7ea84773e788234e5a34772e9d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 797c071cdc74c36afeece304bfa4c708d7bf7147
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652193"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521215"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Należy przejrzeć zapytania SQL w poszukiwaniu luk w zabezpieczeniach
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
@@ -34,7 +34,7 @@ ms.locfileid: "72652193"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Metoda ustawia właściwość <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> za pomocą ciągu skompilowanego z argumentu ciągu do metody.
+ Metoda ustawia właściwość przy <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> użyciu ciągu skompilowanego z argumentu ciągu do metody.
 
 ## <a name="rule-description"></a>Opis reguły
  Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ciąg polecenia SQL zbudowany z danych wejściowych użytkownika jest narażony na ataki przez wstrzyknięcie kodu SQL. W przypadku ataku polegającego na iniekcji SQL złośliwy użytkownik wprowadza dane wejściowe, które zmieniają projekt zapytania w próbie uszkodzenia lub uzyskania nieautoryzowanego dostępu do źródłowej bazy danych. Typowe techniki obejmują iniekcję pojedynczego cudzysłowu lub apostrofu, który jest ogranicznikiem ciągu znaków literału SQL; dwie kreski, co oznacza komentarz SQL; i średnik, który wskazuje, że nowe polecenie jest następujące. Jeśli dane wejściowe użytkownika muszą być częścią zapytania, użyj jednego z następujących elementów w kolejności skuteczności, aby zmniejszyć ryzyko ataku.
@@ -45,7 +45,7 @@ ms.locfileid: "72652193"
 
 - Sprawdź poprawność danych wejściowych użytkownika dla typu i zawartości przed skompilowaniem ciągu polecenia.
 
-  Następujące typy [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] implementują Właściwość <xref:System.Data.IDbCommand.CommandText%2A> lub dostarczają konstruktorów, które ustawiają właściwość przy użyciu argumentu ciągu.
+  Poniższe [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] typy implementują <xref:System.Data.IDbCommand.CommandText%2A> Właściwość lub dostarczają konstruktorów, które ustawiają właściwość przy użyciu argumentu ciągu.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> i <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -57,7 +57,7 @@ ms.locfileid: "72652193"
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> i <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-  Należy zauważyć, że ta reguła jest naruszona, gdy Metoda ToString typu jest używana jawnie lub niejawnie do konstruowania ciągu zapytania. Oto przykład.
+  Należy zauważyć, że ta reguła jest naruszona, gdy Metoda ToString typu jest używana jawnie lub niejawnie do konstruowania ciągu zapytania. Poniżej przedstawiono przykład.
 
 ```
 int x = 10;
@@ -80,7 +80,7 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  Jeśli tekst polecenia nie zawiera żadnych danych wprowadzonych przez użytkownika, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia metodę, `UnsafeQuery`, która narusza regułę i metodę `SaferQuery`, która spełnia regułę przy użyciu sparametryzowanego ciągu polecenia.
+ Poniższy przykład przedstawia metodę, `UnsafeQuery` , która narusza regułę i metodę, `SaferQuery` , która spełnia regułę przy użyciu sparametryzowanego ciągu polecenia.
 
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cpp/FxCop.Security.ReviewSqlQueries.cpp#1)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]

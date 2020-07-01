@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: zapełnianie arkuszy danymi z bazy danych'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985860"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520123"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Instrukcje: zapełnianie arkuszy danymi z bazy danych
 
@@ -41,9 +41,9 @@ Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi w projekta
 
 Jeden z następujących kontrolek jest tworzony w arkuszu:
 
-- Jeśli przeciągniesz pole, w arkuszu zostanie utworzony formant <xref:Microsoft.Office.Tools.Excel.NamedRange>. Aby uzyskać więcej informacji, zobacz [NamedRange Control](../vsto/namedrange-control.md).
+- Jeśli przeciągniesz pole, <xref:Microsoft.Office.Tools.Excel.NamedRange> w arkuszu zostanie utworzony formant. Aby uzyskać więcej informacji, zobacz [NamedRange Control](../vsto/namedrange-control.md).
 
-- W przypadku przeciągnięcia tabeli w arkuszu zostanie utworzony formant <xref:Microsoft.Office.Tools.Excel.ListObject>. Aby uzyskać więcej informacji, zobacz [formant ListObject](../vsto/listobject-control.md).
+- Jeśli przeciągniesz tabelę, <xref:Microsoft.Office.Tools.Excel.ListObject> w arkuszu zostanie utworzony formant. Aby uzyskać więcej informacji, zobacz [formant ListObject](../vsto/listobject-control.md).
 
 Możesz dodać inny formant, wybierając tabelę lub pole w oknie **źródła danych** , a następnie wybierając inną kontrolkę z listy rozwijanej.
 
@@ -53,17 +53,17 @@ Oprócz kontrolki następujące obiekty powiązane z danymi są automatycznie do
 
 - Typ zestawu danych, który hermetyzuje tabele danych, z którymi nawiązano połączenie w bazie danych. Aby uzyskać więcej informacji, zobacz [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-- <xref:System.Windows.Forms.BindingSource>, który łączy formant z określonym zestawem danych. Aby uzyskać więcej informacji, zobacz [źródło BindingSource — Omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- A <xref:System.Windows.Forms.BindingSource> , który łączy formant z określonym zestawem danych. Aby uzyskać więcej informacji, zobacz [źródło BindingSource — Omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
 - TableAdapter, który nawiązuje połączenie określonego zestawu danych z bazą danych. Aby uzyskać więcej informacji, zobacz [TableAdapter Overview (przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)).
 
 - TableAdapterManager, który służy do koordynowania kart tabeli w zestawie danych, aby włączyć hierarchiczne aktualizacje. Aby uzyskać więcej informacji, zobacz [hierarchiczne](../data-tools/hierarchical-update.md) informacje o aktualizacji i [TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
-Po uruchomieniu projektu, formant Wyświetla pierwszy rekord w źródle danych. Możesz użyć <xref:System.Windows.Forms.BindingSource>, aby umożliwić użytkownikom przewijanie rekordów.
+Po uruchomieniu projektu, formant Wyświetla pierwszy rekord w źródle danych. Możesz użyć, <xref:System.Windows.Forms.BindingSource> Aby umożliwić użytkownikom przewijanie rekordów.
 
 ### <a name="to-scroll-through-the-records"></a>Aby przewijać rekordy
 
-- Użyj metod <xref:System.Windows.Forms.BindingSource>, takich jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Użyj <xref:System.Windows.Forms.BindingSource> metod, takich jak <xref:System.Windows.Forms.BindingSource.MoveNext%2A> i <xref:System.Windows.Forms.BindingSource.MovePrevious%2A> .
 
 Informacje o sposobach wysyłania aktualizacji do określonego zestawu danych i bazy danych znajdują się w temacie [How to: Update a Data Source with Data from a host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

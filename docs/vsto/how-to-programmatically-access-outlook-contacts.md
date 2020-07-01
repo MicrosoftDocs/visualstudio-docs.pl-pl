@@ -34,7 +34,7 @@ ms.locfileid: "85520098"
 
 - Kontakty, których nazwiska zawierają ciąg "**na"** (na przykład Tzipi Butnaru) w folderze **kontaktów** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z elementami kontaktów](../vsto/working-with-contact-items.md)
 - [Instrukcje: programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Instrukcje: programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

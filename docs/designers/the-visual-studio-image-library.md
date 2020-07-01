@@ -1,7 +1,7 @@
 ---
 title: Biblioteka obrazów
 ms.date: 11/04/2016
-ms.topic: sample
+ms.topic: conceptual
 helpviewer_keywords:
 - animation [Visual Studio]
 - graphics [Visual Studio], Image Library
@@ -16,22 +16,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 88dc33f4dcc8edf0b7793a726a0b626360b9edb1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75589906"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768665"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteka obrazów programu Visual Studio
 
-Biblioteka obrazów programu Visual Studio zawiera obrazy aplikacji wyświetlane w programie Microsoft Visual Studio, systemie Microsoft Windows, systemie Office i innym oprogramowaniu firmy Microsoft. Ten zestaw ponad 1000 obrazów może służyć do tworzenia aplikacji, które wyglądają wizualnie zgodne z oprogramowaniem firmy Microsoft.
+Biblioteka obrazów programu Visual Studio zawiera obrazy aplikacji, które są wyświetlane w Microsoft Visual Studio, Microsoft Windows, system biurowy i inne oprogramowanie firmy Microsoft. Ten zestaw ponad 1 000 obrazów może służyć do tworzenia aplikacji, które wyglądają wizualnie spójnie z oprogramowaniem firmy Microsoft.
 
-[Pobieranie biblioteki obrazów programu Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825)
+[Pobierz bibliotekę obrazów programu Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825)
 
-Biblioteka obrazów jest podzielona na pięć kategorii: Elementy wspólne, Akcje, Adnotacje, Ikony i Obiekty. Pliki Readme są zawarte w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje o tym, jak używać tych obrazów odpowiednio w aplikacjach.
+Biblioteka obrazów jest podzielona na pięć kategorii: wspólne elementy, akcje, adnotacje, ikony i obiekty. Pliki Readme są zawarte w formacie PDF dla wspólnych elementów i typów ikon. Zawierają one informacje dotyczące sposobu korzystania z tych obrazów odpowiednio w aplikacjach.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Instalacja programu Visual Studio](../install/install-visual-studio.md)
-- [Obrazy, mapy bitowe i metapliki](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)
+- [Instalowanie programu Visual Studio](../install/install-visual-studio.md)
+- [Obrazy, mapy bitowe i pliki.](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

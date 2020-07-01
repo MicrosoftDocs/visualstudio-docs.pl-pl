@@ -10,63 +10,63 @@ helpviewer_keywords:
 - performance
 - low-memory
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8480eb57a08905c2a593adbab519ae793638888
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431244"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769485"
 ---
 # <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 
-Jeśli dostępna pamięć systemowa spadnie do 200 MB lub mniej, program Visual Studio wyświetla następujący komunikat w edytorze kodu:
+Jeśli ilość dostępnej pamięci systemowej spadnie do 200 MB lub mniej, program Visual Studio wyświetli następujący komunikat w edytorze kodu:
 
-![Tekst alertu zawieszający pełną analizę rozwiązania](../code-quality/media/fsa_alert.png)
+![Tekst alertu wstrzymywanie pełnej analizy rozwiązania](../code-quality/media/fsa_alert.png)
 
-Gdy program Visual Studio wykryje warunek małej ilości pamięci, automatycznie zawiesza niektóre zaawansowane funkcje, aby pomóc mu pozostać stabilnym. Visual Studio nadal działa jak poprzednio, ale jego wydajność jest obniżona.
+Gdy program Visual Studio wykryje stan niskiej ilości pamięci, automatycznie zawiesza pewne funkcje zaawansowane, aby pomóc zachować stabilność. Program Visual Studio będzie nadal działał jak wcześniej, ale jego wydajność jest obniżona.
 
-W stanie małej ilości pamięci odbywają się następujące akcje:
+W przypadku niedostatecznej ilości pamięci wykonywane są następujące akcje:
 
-- Analiza kodu na żywo dla języka Visual C# i Visual Basic jest zredukowana do minimalnego zakresu.
+- Analiza kodu na żywo dla Visual C# i Visual Basic jest zredukowana do minimalnego zakresu.
 
-- [Modułu wyrzucania elementów](/dotnet/standard/garbage-collection/index) bezużytecznych (GC) tryb niskiego opóźnienia dla języka Visual C# i Visual Basic jest wyłączona.
+- Tryb niskiego opóźnienia [odzyskiwania pamięci](/dotnet/standard/garbage-collection/index) (GC) dla Visual C# i Visual Basic jest wyłączony.
 
 - Pamięci podręczne programu Visual Studio są opróżniane.
 
-## <a name="improve-visual-studio-performance"></a>Zwiększanie wydajności programu Visual Studio
+## <a name="improve-visual-studio-performance"></a>Poprawianie wydajności programu Visual Studio
 
-Aby uzyskać porady i wskazówki dotyczące poprawy wydajności programu Visual Studio w przypadku dużych rozwiązań lub warunków o małej ilości pamięci, zobacz [Zagadnienia dotyczące wydajności dla dużych rozwiązań.](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+Porady i wskazówki dotyczące poprawy wydajności programu Visual Studio w przypadku dużych rozwiązań lub warunków braku pamięci można znaleźć w temacie [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>Analiza kodu na żywo jest zredukowana do minimalnego zakresu
+## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>Analiza kodu na żywo jest ograniczona do minimalnego zakresu
 
-Domyślnie analiza kodu na żywo jest wykonywana dla otwartych dokumentów i projektów. Można dostosować ten zakres analizy, aby zmniejszyć do bieżącego dokumentu lub zwiększyć do całego rozwiązania. Aby uzyskać więcej informacji, zobacz [Jak: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego](./configure-live-code-analysis-scope-managed-code.md). W stanie małej ilości pamięci visual studio wymusza zakres analizy na żywo, które mają zostać zmniejszone do bieżącego dokumentu. Można jednak ponownie włączyć preferowany zakres analizy, wybierając przycisk **Ponownie włącz** na pasku informacyjnym po wyświetleniu lub ponowne uruchomienie programu Visual Studio. Okno dialogowe Opcje zawsze zawiera bieżące ustawienia zakresu analizy kodu na żywo.
+Domyślnie wykonywanie analizy kodu na żywo jest wykonywane w przypadku otwartych dokumentów i projektów. Ten zakres analizy można dostosować do bieżącego dokumentu lub zwiększyć do całego rozwiązania. Aby uzyskać więcej informacji, zobacz [How to: Configure Live Code Analysis Scope for Managed Code](./configure-live-code-analysis-scope-managed-code.md). W niewielkim stanie pamięci program Visual Studio wymusza zmniejszenie zakresu analizy na żywo do bieżącego dokumentu. Można jednak ponownie włączyć preferowany zakres analizy, wybierając przycisk **ponownie włącz** na pasku informacyjnym, gdy zostanie wyświetlony lub przez ponowne uruchomienie programu Visual Studio. W oknie dialogowym Opcje zawsze są wyświetlane bieżące ustawienia zakresu analizy kodu na żywo.
 
-## <a name="gc-low-latency-disabled"></a>GC z małym opóźnieniem wyłączone
+## <a name="gc-low-latency-disabled"></a>Wyłączono niski czas oczekiwania na odzyskiwanie pamięci
 
-Aby ponownie włączyć tryb małych opóźnień GC, uruchom ponownie program Visual Studio. Domyślnie visual studio włącza tryb GC o małym opóźnieniu przy każdym wpisywania, aby upewnić się, że wpisywanie nie blokuje żadnych operacji GC. Jeśli jednak warunek braku pamięci powoduje, że program Visual Studio wyświetla ostrzeżenie o automatycznym zawieszeniu, tryb małych opóźnień GC jest wyłączony dla tej sesji. Ponowne uruchomienie programu Visual Studio ponownie włącza domyślne zachowanie GC. Aby uzyskać więcej informacji, zobacz <xref:System.Runtime.GCLatencyMode>.
+Aby ponownie włączyć tryb niskiego opóźnienia GC, uruchom ponownie program Visual Studio. Domyślnie program Visual Studio włącza tryb niskiego opóźnienia GC podczas wpisywania, aby upewnić się, że wpisywanie nie blokuje żadnych operacji GC. Jeśli jednak niewielka ilość pamięci powoduje, że program Visual Studio wyświetli ostrzeżenie o automatycznym zawieszeniu, tryb niskiego opóźnienia GC jest wyłączony dla tej sesji. Ponowne uruchomienie programu Visual Studio powoduje ponowne włączenie domyślnego zachowania GC. Aby uzyskać więcej informacji, zobacz <xref:System.Runtime.GCLatencyMode>.
 
-## <a name="visual-studio-caches-flushed"></a>Opróżnione bufory programu Visual Studio
+## <a name="visual-studio-caches-flushed"></a>Opróżnione pamięci podręczne programu Visual Studio
 
-Jeśli kontynuować bieżącą sesję rozwoju lub ponownie uruchomić program Visual Studio, wszystkie pamięci podręczne programu Visual Studio są natychmiast opróżniane, ale zaczynają ponownie wypełniać. Opróżnione bufory obejmują bufory dla następujących funkcji:
+Jeśli będziesz kontynuować bieżącą sesję programistyczną lub ponownie uruchom program Visual Studio, wszystkie pamięci podręczne programu Visual Studio zostaną natychmiast opróżnione, ale rozpocznie się ponowne wypełnianie. Opróżnione pamięci podręczne obejmują pamięć podręczną dla następujących funkcji:
 
 - Znajdź wszystkie odwołania
 
-- Nawiguj do
+- Przejdź do
 
-- Dodaj using
+- Dodaj przy użyciu
 
-Ponadto pamięci podręczne używane do wewnętrznych operacji programu Visual Studio są również wyczyszczone.
+Ponadto pamięci podręczne używane na potrzeby wewnętrznych operacji programu Visual Studio również są wyczyszczone.
 
 > [!NOTE]
-> Automatyczne ostrzeżenie o zawieszeniu funkcji występuje tylko raz na podstawie rozwiązania, a nie na podstawie na sesję. Oznacza to, że jeśli przełączysz się z języka Visual Basic do języka Visual C# (lub odwrotnie) i napotkasz inny warunek braku pamięci, możesz uzyskać inne ostrzeżenie o zawieszeniu funkcji automatycznych.
+> Ostrzeżenie o zawieszeniu funkcji automatycznych występuje tylko raz dla poszczególnych rozwiązań, a nie dla poszczególnych sesji. Oznacza to, że w przypadku przełączenia z Visual Basic do Visual C# (lub odwrotnie) i uruchomienia do innego stanu niskiej ilości pamięci można prawdopodobnie uzyskać kolejne ostrzeżenie o zawieszeniu funkcji automatycznej.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Jak: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego](./configure-live-code-analysis-scope-managed-code.md)
+- [Instrukcje: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego](./configure-live-code-analysis-scope-managed-code.md)
 - [Podstawy dotyczące odzyskiwania pamięci](/dotnet/standard/garbage-collection/fundamentals)
-- [Zagadnienia dotyczące wydajności dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

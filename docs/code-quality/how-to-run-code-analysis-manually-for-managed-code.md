@@ -7,16 +7,16 @@ helpviewer_keywords:
 - run code analysis
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: mavasani
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 584ddc9953b6f1522d12722fdd9a24d71e4e1538
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 874d95b65b99af4b5a6b00d45101236f62db3df1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371836"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769369"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Instrukcje: ręczne uruchamianie analizy kodu dla kodu zarządzanego (wymaga programu Visual Studio 2019 w wersji 16,5 lub nowszej)
 Domyślnie .NET Compiler Platform ("Roslyn") analizatory kodu analizują kod C# lub Visual Basic w trakcie pisania przez przeprowadzenie analizy na żywo, a także podczas kompilowania. W związku z tym zwykle nie jest wymagane Ręczne wyzwalanie analizy kodu. Istnieje jednak kilka scenariuszy, w których warto ręcznie wyzwolić analizę kodu:

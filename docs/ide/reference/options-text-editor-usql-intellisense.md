@@ -5,55 +5,55 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.IntelliSense
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f7a66884238856ba6988b9f1e8c648f4ff1d16
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 91d2af8bfcd8c9d80b589e01aedd535afbd1a913
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666655"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769469"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opcje, Edytor tekstu, U-SQL, IntelliSense
 
-Użyj strony opcji **IntelliSense,** aby zmodyfikować niektóre ustawienia edytora tekstu dla języka U-SQL. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję**Opcje** **narzędzi** > , a następnie wybierz pozycję **Edytor** > tekstu**U-SQL** > **IntelliSense**.
+Na stronie opcje **IntelliSense** można modyfikować niektóre ustawienia edytora tekstu dla języka U-SQL. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje**narzędzia, a następnie wybierz **Edytor tekstu**  >  **U-SQL**  >  **IntelliSense**.
 
-## <a name="intellisense-settings"></a>Ustawienia intellisense
+## <a name="intellisense-settings"></a>Ustawienia funkcji IntelliSense
 
-Zaznacz pole wyboru, aby włączyć **szybkie informacje** lub **intellisense**. Szybkie informacje wyświetla pełną deklarację po umieszczeniu kursora myszy na zmiennej.
+Zaznacz pole wyboru, aby włączyć **szybkie informacje** lub **IntelliSense**. Szybkie informacje wyświetla kompletną deklarację po umieszczeniu wskaźnika myszy nad zmienną.
 
-## <a name="completion-lists"></a>Listy uzupełnień
+## <a name="completion-lists"></a>Listy uzupełniania
 
-- **Pokaż listę uzupełnień po wpisaniu znaku**
+- **Pokaż listę uzupełniania po wpisaniu znaku**
 
-   Po wybraniu tej opcji program IntelliSense automatycznie wyświetla listę uzupełnień po rozpoczęciu wpisywania. Jeśli ta opcja nie zostanie zaznaczona, funkcja Uzupełnianie technologii IntelliSense jest nadal dostępna w menu IntelliSense lub po naciśnięciu **klawisza Ctrl** + **Spacja**.
+   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania. Jeśli nie zaznaczysz tej opcji, uzupełnianie IntelliSense jest nadal dostępne z menu IntelliSense lub naciskając klawisz **Ctrl**  +  **spacja**.
 
-- **Umieszczanie słów kluczowych na listach uzupełnień**
+- **Umieść słowa kluczowe w listach uzupełniania**
 
-   Po wybraniu tej opcji intelliSense zawiera słowa kluczowe na liście uzupełniania.
+   Po wybraniu tej opcji funkcja IntelliSense zawiera słowa kluczowe na liście uzupełniania.
 
-- **Umieszczanie fragmentów kodu na listach uzupełnień**
+- **Umieszczanie fragmentów kodu na listach uzupełniania**
 
-   Gdy ta opcja jest zaznaczona, IntelliSense zawiera fragmenty kodu na liście uzupełniania.
+   Po wybraniu tej opcji technologia IntelliSense zawiera fragmenty kodu z listy uzupełniania.
 
-## <a name="selection-in-completion-list"></a>Wybór na liście uzupełnień
+## <a name="selection-in-completion-list"></a>Wybór na liście uzupełniania
 
-- **Zaajuj, wpisując następujące znaki**
+- **Zatwierdź, wpisując następujące znaki**
 
-   To pole zawiera znaki, które powodują zatwierdzenie aktualnie wyróżnionej listy uzupełnień. Możesz dodać lub usunąć znaki z tej listy.
+   To pole zawiera znaki, które powodują zatwierdzenie aktualnie wyróżnionej listy uzupełniania. Możesz dodawać lub usuwać znaki z tej listy.
 
-- **Zatwierdzanie przez naciśnięcie spacji**
+- **Zatwierdź, naciskając klawisz spacji**
 
-   Po wybraniu tej opcji można zatwierdzić wyróżnioną sugestię listy uzupełnień, naciskając spację.
+   Gdy ta opcja jest zaznaczona, możesz zatwierdzić wyróżnioną sugestię listy uzupełniania, naciskając klawisz spacji.
 
-- **Dodawanie nowego wiersza na końcu w pełni wpisanego wyrazu na stronie Enter**
+- **Dodaj nowy wiersz na końcu w pełni wpisanego wyrazu przy wpisywaniu**
 
-   Gdy ta opcja jest zaznaczona, nowy wiersz jest dodawany automatycznie, a kursor przechodzi do nowego wiersza po wpisaniu wszystkich znaków dla sugestii listy uzupełnień.
+   Po wybraniu nowy wiersz zostanie dodany automatycznie, a kursor zostanie przeniesiony do nowego wiersza po wpisaniu wszystkich znaków dla sugestii listy uzupełniania.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 - [Korzystanie z IntelliSense](../../ide/using-intellisense.md)

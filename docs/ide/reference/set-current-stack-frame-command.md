@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Set Current Stack Frame command
 - Debug.SetCurrentStackFrame command
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 088fe9871b54e69b015ffdc9dcdaf23de3d98e0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f70f5ebfc80933f38f1543d5eb42f01fb470298f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747754"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769729"
 ---
 # <a name="set-current-stack-frame-command"></a>Ustaw bieżącą ramkę stosu — Polecenie
-Umożliwia ustawienie określonej ramki stosu.
+Pozwala ustawić konkretną ramkę stosu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,9 +40,9 @@ Wymagany. Wybiera ramkę stosu według jej indeksu.
 >Debug.SetCurrentStackFrame 1
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
 - [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

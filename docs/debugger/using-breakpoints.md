@@ -1,7 +1,7 @@
 ---
 title: Używanie punktów przerwania w debugerze | Microsoft Docs
 ms.custom: ''
-ms.date: 10/28/2019
+ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab15d3390e73ad464a334ccbe64ff8d59db77f2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348018"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769407"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 
@@ -50,7 +50,7 @@ Punkty przerwania są jedną z najważniejszych technik debugowania w przybornik
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Ustaw punkty przerwania w kodzie źródłowym
 
-Punkt przerwania można ustawić na dowolnym wierszu kodu wykonywalnego. Na przykład, w poniższym kodzie C#, można ustawić punkt przerwania dla deklaracji zmiennej, `for` pętli lub dowolnego kodu wewnątrz `for` pętli. Nie można ustawić punktu przerwania na przestrzeni nazw lub deklaracji klasy ani w podpisie metody.
+Punkt przerwania można ustawić na dowolnym wierszu kodu wykonywalnego. Na przykład w poniższym kodzie C# można ustawić punkt przerwania w wierszu kodu z przypisaniem zmiennej ( `int testInt = 1` ), `for` pętlą lub dowolnym kodem wewnątrz `for` pętli. Nie można ustawić punktu przerwania w sygnaturach metod, deklaracjach dla przestrzeni nazw lub klasy lub deklaracji zmiennych, jeśli nie ma przypisania ani metody pobierającej/ustawiającej.
 
 Aby ustawić punkt przerwania w kodzie źródłowym, kliknij w lewym górnym rogu obok wiersza kodu. Można również zaznaczyć wiersz i nacisnąć klawisz **F9**, wybrać pozycję **Debuguj**  >  **Przełącz punkt przerwania**lub kliknąć prawym przyciskiem myszy i wybrać **punkt**przerwania  >  **Wstaw punkt przerwania**. Punkt przerwania jest wyświetlany jako czerwona kropka na lewym marginesie.
 
@@ -319,7 +319,7 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
 
 2. W oknie **demontażu** kliknij na lewym marginesie instrukcji, która ma zostać przerwana. Można go również zaznaczyć i nacisnąć klawisz **F9**lub kliknąć prawym przyciskiem myszy i wybrać **punkt przerwania**  >  **Wstaw punkt przerwania**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Pisanie lepszego kodu w języku C# za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)

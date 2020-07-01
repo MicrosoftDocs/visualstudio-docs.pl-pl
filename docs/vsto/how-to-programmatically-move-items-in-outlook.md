@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe przenoszenie elementów w programie Outlook'
+title: 'Instrukcje: Programowane przenoszenie elementów w programie Outlook'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,30 +12,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812570"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519915"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Instrukcje: Programowe przenoszenie elementów w programie Outlook
-  W tym przykładzie przenosi nieprzeczytanych wiadomości e-mail z **skrzynki odbiorczej** w folderze o nazwie **testu**. Przykład dotyczy tylko przeniesienia wiadomości, które zawierają wyraz **testu** w `Subject` pola.
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Instrukcje: Programowane przenoszenie elementów w programie Outlook
+  Ten przykład przenosi nieprzeczytane wiadomości e-mail ze **skrzynki odbiorczej** do folderu o nazwie **test**. W tym przykładzie tylko przenosi komunikaty, które mają wyraz **test** w `Subject` polu.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Przykład
  [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]
 
-## <a name="compile-the-code"></a>Skompilować kod
+## <a name="compile-the-code"></a>Kompiluj kod
  Ten przykład wymaga:
 
-- Folder poczty programu Outlook o nazwie **testu**.
+- Folder poczty programu Outlook o nazwie **test**.
 
-- Wiadomość e-mail zawierająca nadejściu wyrazami **testu** w `Subject` pola.
+- Wiadomość e-mail, która dociera do programu Word **test** w `Subject` polu.
 
 ## <a name="see-also"></a>Zobacz także
-- [Praca z folderami](../vsto/working-with-folders.md)
-- [Instrukcje: Programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Instrukcje: Programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Instrukcje: Programowe wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Pracuj z folderami](../vsto/working-with-folders.md)
+- [Instrukcje: programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Instrukcje: programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Instrukcje: Programowane wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

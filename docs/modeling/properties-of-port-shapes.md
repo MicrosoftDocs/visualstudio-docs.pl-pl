@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.port
 helpviewer_keywords:
 - Domain-Specific Language, port shape
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60498c57e80b474bae8d5c320183442bbc4fcfd4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e5ed5703d67e4c10bd7a9e4fe2ab234c5577f65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747448"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520863"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
 Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowanym projektancie.
@@ -27,31 +27,31 @@ Za pomocą kształtów portów można reprezentować klasy domeny w wygenerowany
 
 |Właściwość|Opis|Domyślny|
 |-|-|-|
-|Kolor wypełnienia|Kolor wypełnienia tego kształtu.|oficjaln|
-|Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Układ|
-|Geometrii|Geometria tego kształtu (prostokąt, prostokąt zaokrąglony, Elipsa lub koło).|prostokąt|
-|Ma domyślne punkty połączenia|Jeśli `True`, kształt będzie korzystać z górnego, dolnego, lewego i prawego punktu połączenia w wygenerowanym projektancie.|False|
-|Kolor konturu|Kolor konturu tego kształtu.|gasić|
-|Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (pełny, kreska, kropka, DashDot, DashDotDot lub niestandardowy).|Wypełnione|
+|Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
+|Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Pozioma|
+|Geometrii|Geometria tego kształtu (prostokąt, prostokąt zaokrąglony, Elipsa lub koło).|Prostokąt|
+|Ma domyślne punkty połączenia|Jeśli `True` kształt będzie używać górnego, dolnego, lewego i prawego punktu połączenia w wygenerowanym projektancie.|Fałsz|
+|Kolor konturu|Kolor konturu tego kształtu.|Czarny|
+|Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (pełny, kreska, kropka, DashDot, DashDotDot lub niestandardowy).|Ciągła|
 |Grubość konturu|Grubość konturu tego kształtu.|0,03125|
-|Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym kształtem.|gasić|
-|Modyfikator dostępu|Poziom dostępu klasy (`public` lub `internal`).|Public|
-|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z tego kształtu.|\<none >|
-|Generuje podwójny pochodny|Jeśli `True`, zostaną wygenerowane zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)|False|
-|Ma Konstruktor niestandardowy|Jeśli `True`, Konstruktor niestandardowy zostanie udostępniony w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana na podstawie portu (`none`, `abstract` lub `sealed`).|brak|
-|Port podstawowy|Klasa bazowa tego kształtu.|dawaj|
+|Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym kształtem.|Czarny|
+|Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Public|
+|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z tego kształtu.|\<none>|
+|Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)|Fałsz|
+|Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
+|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, który jest generowany na podstawie portu ( `none` `abstract` lub `sealed` ).|brak|
+|Port podstawowy|Klasa bazowa tego kształtu.|(brak)|
 |Nazwa|Nazwa tego kształtu.|Bieżąca nazwa|
 |Przestrzeń nazw|Przestrzeń nazw, która jest powiązana z tym kształtem.|Bieżąca przestrzeń nazw|
-|Typ etykietki narzędzia|Sposób definiowania etykietki narzędzia (stała, zmienna lub brak). Jeśli stała, wartość właściwości `Fixed Tooltip Text` jest używana jako etykietka narzędzia; Jeśli zmienna, wówczas etykietka narzędzia jest definiowana w kodzie niestandardowym.|brak|
-|Uwagi|Nieformalne notatki, które są skojarzone z tym kształtem.|\<none >|
+|Typ etykietki narzędzia|Sposób definiowania etykietki narzędzia (stała, zmienna lub brak). Jeśli stała, wartość `Fixed Tooltip Text` właściwości jest używana jako etykietka narzędzia; Jeśli zmienna, a następnie etykietka narzędzia jest definiowana w kodzie niestandardowym.|brak|
+|Uwagi|Nieformalne notatki, które są skojarzone z tym kształtem.|\<none>|
 |Początkowa wysokość|Początkowa wysokość tego kształtu (w calach).|1|
-|Szerokość początkowa|Początkowa Szerokość tego kształtu (w calach).|1,5|
-|Uwidoczniony kolor wypełnienia jako właściwość<br /><br /> Uwidaczniany tryb gradientu wypełnienia<br /><br /> Uwidoczniony kolor konturu jako właściwość<br /><br /> Uwidoczniony styl kreskowania konturu jako właściwość<br /><br /> Uwidoczniona grubość konturu jako właściwość<br /><br /> Uwidacznia kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość wartość dla kształtu. Aby ustawić tę opcję, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij pozycję **Dodaj uwidocznione**.|False|
-|Opis|Służy do dokumentowania wygenerowanego projektanta.|\<none >|
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<none >|
-|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałej etykietki narzędzia.|\<none >|
-|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego kształtu.|\<none >|
+|Szerokość początkowa|Początkowa Szerokość tego kształtu (w calach).|1.5|
+|Uwidoczniony kolor wypełnienia jako właściwość<br /><br /> Uwidaczniany tryb gradientu wypełnienia<br /><br /> Uwidoczniony kolor konturu jako właściwość<br /><br /> Uwidoczniony styl kreskowania konturu jako właściwość<br /><br /> Uwidoczniona grubość konturu jako właściwość<br /><br /> Uwidacznia kolor tekstu|Jeśli `True` użytkownik może ustawić właściwość wartość dla kształtu. Aby ustawić tę opcję, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij pozycję **Dodaj uwidocznione**.|Fałsz|
+|Opis|Służy do dokumentowania wygenerowanego projektanta.|\<none>|
+|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<none>|
+|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałej etykietki narzędzia.|\<none>|
+|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego kształtu.|\<none>|
 
 ## <a name="see-also"></a>Zobacz także
 

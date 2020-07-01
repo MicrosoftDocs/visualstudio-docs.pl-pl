@@ -11,4 +11,4 @@ ms.lasthandoff: 04/02/2020
 ms.locfileid: "80573182"
 ---
 > [!NOTE]
-> Chcesz opracować rozwiązania rozszerzające środowisko pakietu Office na wielu platformach? Zapoznaj się z nowym [modelem dodatków pakietu Office](/office/dev/add-ins/). Dodatki pakietu Office mają niewielki rozmiar w porównaniu z dodatkami i rozwiązaniami VSTO i można je tworzyć przy użyciu prawie każdej technologii programowania sieci web, takiej jak HTML5, JavaScript, CSS3 i XML.
+> Interesuje Cię opracowywanie rozwiązań, które zwiększają możliwości pakietu Office na wielu platformach? Zapoznaj się z nowym [modelem dodatków pakietu Office](/office/dev/add-ins/). Dodatki pakietu Office mają niewielki wpływ w porównaniu z dodatkami i rozwiązaniami programu VSTO oraz można je kompilować przy użyciu prawie dowolnej technologii programowania sieci Web, takiej jak HTML5, JavaScript, CSS3 i XML.

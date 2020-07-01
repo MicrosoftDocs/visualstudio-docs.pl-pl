@@ -1,56 +1,56 @@
 ---
 title: 'Porady: tworzenie cieniowania tekstury skali szarości'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a311456fd3f8eab12c24e26c32349f208e0a723
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112626"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769069"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Instrukcje: tworzenie cieniowania tekstury skali szarości
 
-W tym artykule pokazano, jak utworzyć moduł cieniujący w skali szarości za pomocą projektanta modułu cieniującego i języka cieniowania wykresu kierowanego (DGSL). Ten moduł cieniujący modyfikuje wartość koloru RGB próbki tekstury, a następnie używa jej wraz z niezmodyfikowaną wartością alfa, aby ustawić ostateczny kolor.
+W tym artykule pokazano, jak używać projektanta programu do cieniowania i języka ukierunkowanego programu Graph (DGSL) do tworzenia cieniowania tekstury w skali szarości. Ten program do cieniowania modyfikuje wartość koloru RGB próbki tekstury, a następnie używa jej razem z niezmodyfikowaną wartością alfa, aby ustawić kolor końcowy.
 
 ## <a name="create-a-grayscale-texture-shader"></a>Tworzenie cieniowania tekstury skali szarości
 
-Moduł cieniujący tekstury w skali szarości można zaimplementować, modyfikując wartość koloru próbki tekstury przed zapisaniem jej do końcowego koloru wyjściowego.
+Można zaimplementować cieniowanie tekstury w skali szarości, modyfikując wartość koloru próbki tekstury przed jej zapisaniem w końcowym kolorze wyjściowym.
 
-Przed rozpoczęciem upewnij się, że są wyświetlane okno **Właściwości** i **Przybornik.**
+Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** i **Przybornik** .
 
-1. Utwórz podstawowy moduł cieniujący teksturę, zgodnie z opisem w [: Jak: Tworzenie podstawowego modułu cieniującego tekstury](../designers/how-to-create-a-basic-texture-shader.md).
+1. Utwórz cieniowanie tekstury podstawowej, zgodnie z opisem w artykule [How to: Create a Basic cieniowanie tekstury](../designers/how-to-create-a-basic-texture-shader.md).
 
-2. Odłącz terminal **RGB** węzła **Próbka tekstury** od terminalu **RGB** **węzła Kolor końcowy.** W trybie **wyboru** wybierz terminal **RGB** **węzła Próbka tekstury,** a następnie wybierz polecenie **Przerwij łącza**. Dzięki temu miejsce na węzeł, który jest dodawany w następnym kroku.
+2. Odłącz Terminal **RGB** węzła **przykład tekstury** z terminalu **RGB** **końcowego węzła Color** . W obszarze tryb **wyboru** wybierz Terminal **RGB** w węźle **przykład tekstury** , a następnie wybierz polecenie **Przerwij linki**. Powoduje to powolne miejsce dla węzła, który jest dodawany w następnym kroku.
 
-3. Dodaj węzeł **Desaturate** do wykresu. W **przyborniku**w obszarze **Filtry**wybierz pozycję **Desaturate** i przenieś go na powierzchnię projektową.
+3. Dodaj do wykresu węzeł zmniejszający **nasycenie** . W **przyborniku**w obszarze **filtry**wybierz pozycję Zmniejsz **nasycenie** i przenieś ją na powierzchnię projektu.
 
-4. Oblicz wartość skali szarości za pomocą **węzła Desaturate.** W trybie **wyboru** przenieś terminal **RGB** węzła **Próbka tekstury** do terminalu **RGB** **węzła Desaturate.**
+4. Oblicz wartość skali odcieni szarości przy użyciu węzła Zmniejsz **nasycenie** . W trybie **wyboru** Przenieś Terminal **RGB** węzła **przykład tekstury** do terminalu **RGB** w węźle **denasycenie** .
 
     > [!NOTE]
-    > Domyślnie węzeł **Desaturate** całkowicie desaturuje kolor wejściowy i używa standardowych wag luminancji do konwersji w skali szarości. Można zmienić zachowanie **węzła Desaturate,** zmieniając wartość właściwości **Luminance** lub tylko częściowo desaturating kolor wejściowy. Aby częściowo zdyskłać kolor wejściowy, podaj wartość skalarną w zakresie [0,1) do terminalu **Procent** **węzła Desaturate.**
+    > Domyślnie **w pełni zmniejsza nasycenie** koloru i używa standardowych wag luminancji dla konwersji odcienie szarości. Można zmienić sposób zachowania węzła zmniejszania **nasycenia** , zmieniając wartość właściwości **luminancja** lub tylko częściowo denasycenie koloru wejściowego. Aby częściowo zmniejszać nasycenie koloru wejściowego, podaj wartość skalarną w zakresie [0, 1) do terminalu **procentowego** węzła zmniejszania **nasycenia** .
 
-5. Połącz wartość koloru w skali szarości z kolorem końcowym. Przenieś terminal **wyjściowy** **węzła Desaturate** do terminalu **RGB** węzła **Kolor końcowy.**
+5. Połącz wartość koloru w skali szarości z kolorem końcowym. Przenieś Terminal **wyjściowy** węzła Zmniejsz **nasycenie** do terminalu **RGB** **końcowego węzła koloru** .
 
-Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i podgląd modułu cieniującego zastosowanego do modułu.
+Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i Podgląd cieniowania zastosowany do modułu.
 
 > [!NOTE]
-> Na tej ilustracji płaszczyzna jest używana jako kształt podglądu, a tekstura została określona, aby lepiej zademonstrować efekt modułu cieniującego.
+> Na tej ilustracji, płaszczyzna jest używana jako kształt podglądu i określono teksturę, aby lepiej zademonstrować efekt cieniowania.
 
-![Wykres modułu cieniującego i podgląd jego efektu](../designers/media/digit-grayscale-effect.png)
+![Graf cieniowania i podgląd jego efektu](../designers/media/digit-grayscale-effect.png)
 
-Niektóre kształty mogą zapewniać lepsze podglądy niektórych modułów cieniowania. Aby uzyskać więcej informacji na temat podglądu modułów cieniujących w Projektancie modułów cieniujących, zobacz [Projektant modułu cieniującego](../designers/shader-designer.md).
+Niektóre kształty mogą zapewniać lepszy Podgląd niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat podglądu programów do cieniowania w projektancie cieniowania, zobacz [Projektant cieniowania](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
 - [Edytor obrazów](../designers/image-editor.md)
-- [Projektant modułu cieniującego](../designers/shader-designer.md)
-- [Węzły projektanta modułu cieniującego](../designers/shader-designer-nodes.md)
+- [Projektant programu do cieniowania](../designers/shader-designer.md)
+- [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)
