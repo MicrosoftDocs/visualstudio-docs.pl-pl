@@ -511,6 +511,8 @@
                   href: ca1802.md
                 - name: 'CA1804: Usuwaj nieużywane zmienne lokalne'
                   href: ca1804.md
+                - name: 'CA1805: Nie inicjuj niepotrzebnie'
+                  href: ca1805.md
                 - name: 'CA1806: Nie ignoruj wyników metod'
                   href: ca1806.md
                 - name: 'CA1809: Unikaj zbyt wielu zmiennych lokalnych'
@@ -603,6 +605,8 @@
                   href: ca2014.md
                 - name: 'CA2015: Nie definiuj finalizatorów dla typów pochodzących od typu MemoryManager<T>'
                   href: ca2015.md
+                - name: 'CA2016: Prześlij dalej parametr CancellationToken do metod, które go przyjmują'
+                  href: ca2016.md
             - name: Ostrzeżenia dotyczące zabezpieczeń
               items:
                 - name: Omówienie
