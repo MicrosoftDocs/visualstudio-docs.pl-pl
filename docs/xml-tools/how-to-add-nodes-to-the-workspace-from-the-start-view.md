@@ -1,19 +1,19 @@
 ---
 title: Dodawanie węzłów do obszaru roboczego z widoku startowego w projektancie schematu XML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa3ecf986b77ed2ca93cf182d442156a11d0530
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5d7bf5b2006afa8efc6a6560d99e62244909628f
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592831"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815230"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Instrukcje: Dodawanie węzłów do obszaru roboczego z widoku startowego
 
@@ -31,4 +31,4 @@ W tym temacie opisano sposób dodawania węzłów globalnych do [obszaru robocze
 
 3. Kliknij link **Dodaj** z prawej strony nagłówka **Globally Complex Types** .
 
-     `USAddress` i `PurchaseOrderType` węzły typu złożonego pojawią się na powierzchni projektowej widoku wykresu.
+     `USAddress` `PurchaseOrderType` Na powierzchni projektowej widoku wykresu zostaną wyświetlone węzły i typy złożone.

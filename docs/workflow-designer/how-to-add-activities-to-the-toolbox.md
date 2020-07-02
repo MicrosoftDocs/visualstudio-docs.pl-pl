@@ -1,21 +1,21 @@
 ---
 title: 'Projektant przepływu pracy — How to: dodawanie działań do przybornika'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cde4f3a41a1a07f982f85c0c19e9f16b047068
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593931"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815828"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Instrukcje: dodawanie działań do przybornika
+# <a name="how-to-add-activities-to-the-toolbox"></a>Instrukcje: Dodawanie działań do przybornika
 
 Działania można dodawać do **przybornika** w rozwiązaniu na kilka różnych sposobów. Można je dodać z poziomu bieżącego projektu, odwoływać się do nich z innego projektu lub odwołać się do nich z innego zestawu.
 
@@ -25,7 +25,7 @@ Działania można dodawać do **przybornika** w rozwiązaniu na kilka różnych 
 
 2. Dodaj logikę niestandardową do działania.
 
-3. Skompiluj projekt. Jeśli kompilacja zakończyła się pomyślnie, zostanie wyświetlona nowa kategoria w **przyborniku** o nazwie "\<*Nazwa projektu*>" z niestandardowym działaniem zawartym w tej kategorii.
+3. Skompiluj projekt. Jeśli kompilacja zakończyła się pomyślnie, zostanie wyświetlona nowa kategoria w **przyborniku** o nazwie " \<*project name*> " z niestandardowym działaniem zawartym w tej kategorii.
 
     > [!NOTE]
     > Jeśli Przybornik zostanie zresetowany, działania niestandardowe zostaną usunięte, nawet jeśli rozwiązanie zostanie skompilowane ponownie. Aby ponownie wypełnić Przybornik z działaniami niestandardowymi po jego zresetowaniu, uruchom program Visual Studio.
@@ -40,7 +40,7 @@ Działania można dodawać do **przybornika** w rozwiązaniu na kilka różnych 
 
 1. Otwórz rozwiązanie, które zawiera co najmniej jeden projekt przepływu pracy i niestandardowy projekt biblioteki działań lub inny projekt przepływu pracy, który definiuje działanie niestandardowe.
 
-2. Kompiluj oba projekty. Jeśli kompilacja zakończyła się pomyślnie, zostanie wyświetlona nowa kategoria w **przyborniku** o nazwie "\<*Nazwa projektu*>" z niestandardowym działaniem zawartym w tej kategorii.
+2. Kompiluj oba projekty. Jeśli kompilacja zakończyła się pomyślnie, zostanie wyświetlona nowa kategoria w **przyborniku** o nazwie " \<*project name*> " z niestandardowym działaniem zawartym w tej kategorii.
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Aby dodać działanie do przybornika z zestawu
 

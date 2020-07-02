@@ -1,9 +1,9 @@
 ---
-title: Użycie zarezerwowanych na przyszłość słów jako identyfikator jest nieprawidłowe | Dokumentacja firmy Microsoft
+title: Użycie przyszłego zastrzeżonego słowa dla identyfikatora jest nieprawidłowe | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1049
 dev_langs:
@@ -14,16 +14,16 @@ ms.assetid: b1c4648b-43a7-48e3-949a-e39b538edabd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b6527be8f803a62992a6d420c2eee03b384789f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6390e25f6d2840f22588df124b65e08b7b37ea18
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006173"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815724"
 ---
 # <a name="the-use-of-a-future-reserved-word-for-an-identifier-is-invalid"></a>Zastosowanie przyszłego słowa zastrzeżonego w roli identyfikatora jest nieprawidłowe
-1049: Zastosowanie przyszłego słowa zastrzeżonego w roli identyfikatora jest nieprawidłowe  
+1049: użycie przyszłego zastrzeżonego słowa dla identyfikatora jest nieprawidłowe  
   
- Nie można użyć zarezerwowanych na przyszłość słów jako nazwa zmiennej, funkcji lub inny identyfikator użytkownika.  
+ Nie można użyć przyszłego zastrzeżonego słowa jako nazwy zmiennej, funkcji lub innego identyfikatora zdefiniowanego przez użytkownika.  
   
- Aby uzyskać więcej informacji na temat przyszłe słowa zastrzeżone zobacz [przyszłe słowa zastrzeżone JavaScript](../../javascript/reference/javascript-future-reserved-words.md).
+ Aby uzyskać więcej informacji na temat przyszłych słów zarezerwowanych, zobacz [JavaScript słowa zastrzeżone](../../javascript/reference/javascript-future-reserved-words.md).

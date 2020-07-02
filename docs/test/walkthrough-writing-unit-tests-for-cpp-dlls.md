@@ -1,67 +1,67 @@
 ---
-title: 'Jak: Pisanie testów jednostkowych dla bibliotek DLL języka C++'
+title: 'Instrukcje: zapisywanie testów jednostkowych dla bibliotek DLL języka C++'
 ms.date: 06/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275425"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816010"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Jak: Pisanie testów jednostkowych dla bibliotek DLL języka C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: zapisywanie testów jednostkowych dla bibliotek DLL języka C++
 
-W tym instruktażu opisano sposób tworzenia natywnej biblioteki DLL języka C++ przy użyciu metodologii najpierw testowej. Podstawowe kroki są następujące:
+W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL języka C++ za pomocą metodologii test-First. Podstawowe kroki są następujące:
 
-1. [Utwórz natywny projekt testowy](#create_test_project). Projekt testowy znajduje się w tym samym rozwiązaniu co projekt DLL.
+1. [Utwórz natywny projekt testowy](#create_test_project). Projekt testowy znajduje się w tym samym rozwiązaniu co projekt biblioteki DLL.
 
-2. [Tworzenie projektu biblioteki DLL](#create_dll_project). W tym instruktażu tworzy nową bibliotekę DLL, ale procedura testowania istniejącej biblioteki DLL jest podobna.
+2. [Utwórz projekt DLL](#create_dll_project). W tym instruktażu zostanie utworzona nowa biblioteka DLL, ale procedura testowania istniejącej biblioteki DLL jest podobna.
 
-3. [Spraw, aby funkcje biblioteki DLL były widoczne dla testów.](#make_functions_visible)
+3. [Uczyń funkcje biblioteki DLL widocznymi dla testów](#make_functions_visible).
 
-4. [Iteratively rozszerzyć testy](#iterate). Zaleca się cykl "red-green-refaktoryzator", w którym rozwój kodu jest prowadzony przez testy.
+4. [Iteracyjnie rozszerza testy](#iterate). Zalecamy cykliczny cykl "czerwony-zielony-Refaktoryzacja", w którym rozwój kodu jest kierowany przez testy.
 
-5. [Testy niedają debugowania](#debug). Testy można uruchamiać w trybie debugowania.
+5. [Debugowanie testów zakończonych niepowodzeniem](#debug). Testy można uruchamiać w trybie debugowania.
 
-6. [Refaktoryzator przy zachowaniu testów bez zmian](#refactor). Refaktoryzowanie oznacza poprawę struktury kodu bez zmiany jego zachowania zewnętrznego. Można to zrobić, aby zwiększyć wydajność, rozszerzalność lub czytelność kodu. Ponieważ intencją nie jest zmiana zachowania, nie należy zmieniać testów podczas dokonywania refaktoryzacji zmiany w kodzie. Testy pomagają upewnić się, że nie wprowadzasz błędów podczas refaktoryzacji.
+6. [Refaktoryzacja przy zachowaniu niezmienionych testów](#refactor). Refaktoryzacja oznacza poprawę struktury kodu bez zmiany jego zachowania zewnętrznego. Można to zrobić, aby zwiększyć wydajność, rozszerzalność lub czytelność kodu. Ponieważ zamiarem nie jest zmiana zachowania, nie należy zmieniać testów podczas zmiany refaktoryzacji kodu. Testy pomagają upewnić się, że nie są wprowadzane usterki podczas refaktoryzacji.
 
-7. [Sprawdź zasięg](using-code-coverage-to-determine-how-much-code-is-being-tested.md). Testy jednostkowe są bardziej przydatne, gdy wykonują więcej kodu. Można odkryć, które części kodu zostały użyte przez testy.
+7. [Sprawdź pokrycie](using-code-coverage-to-determine-how-much-code-is-being-tested.md). Testy jednostkowe są bardziej przydatne, gdy wykonują więcej kodu. Można wykryć, które części kodu zostały wykorzystane przez testy.
 
-8. [Izoluj jednostki od zasobów zewnętrznych](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). Zazwyczaj biblioteka DLL jest zależna od innych składników systemu, który tworzysz, takich jak inne biblioteki DLL, bazy danych lub zdalne podsystemy. Jest to przydatne do testowania każdej jednostki w izolacji od jej zależności. Komponenty zewnętrzne mogą sprawić, że testy będą działać wolno. Podczas programowania inne składniki mogą nie być kompletne.
+8. [Izoluj jednostki od zasobów zewnętrznych](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). Zazwyczaj Biblioteka DLL jest zależna od innych składników systemu, które tworzysz, takich jak inne biblioteki DLL, bazy danych lub zdalne podsystemy. Warto przetestować każdą jednostkę w izolacji od jej zależności. Składniki zewnętrzne mogą sprawiać, że testy działają wolno. W trakcie programowania inne składniki mogą nie być kompletne.
 
-## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a>Tworzenie projektu testu jednostkowego natywnego
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a>Utwórz natywny projekt testów jednostkowych
 
-1. W menu **Plik** wybierz polecenie **Nowy** > **projekt**.
+1. W menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
-     **Visual Studio 2017 i starsze**: Rozwiń **zainstalowane** > **szablony** > **Visual C++** > **Test**.
-     **Visual Studio 2019**: Ustaw **język** na C++ i wpisz "test" w polu wyszukiwania.
+     **Visual Studio 2017 i starsze**: rozwiń węzeł **zainstalowane**  >  **Szablony**  >  **Visual C++**  >  **test**.
+     **Visual Studio 2019**: Ustaw **Język** na C++ i wpisz "test" w polu wyszukiwania.
 
-     Wybierz szablon **projektu testu jednostki natywnej** lub dowolną zainstalowaną strukturę. Jeśli wybierzesz inny szablon, taki jak Google Test lub Boost.Test, podstawowe zasady są takie same, chociaż niektóre szczegóły będą się różnić.
+     Wybierz szablon **projektu natywnych testów jednostkowych** lub dowolną zainstalowaną platformę. Jeśli wybierzesz inny szablon, taki jak Google Test lub podwyższanie poziomu. test, podstawowe zasady są takie same, mimo że niektóre szczegóły będą się różnić.
 
-     W tym instruktażu projekt `NativeRooterTest`testowy nosi nazwę .
+     W tym instruktażu projekt testowy ma nazwę `NativeRooterTest` .
 
-2. W nowym projekcie należy sprawdzić **unittest1.cpp**
+2. W nowym projekcie Sprawdź **UnitTest1. cpp**
 
-     ![Projekt testowy z TEST&#95;CLASS i TEST&#95;METHOD](../test/media/utecpp2.png)
+     ![Test projektu z KLASą&#95;TESTowego i metodą&#95;testu](../test/media/utecpp2.png)
 
-     Należy zauważyć, że:
+     Zwróć uwagę, że:
 
-    - Każdy test jest `TEST_METHOD(YourTestName){...}`definiowany za pomocą programu .
+    - Każdy test jest definiowany przy użyciu `TEST_METHOD(YourTestName){...}` .
 
-         Nie trzeba pisać podpisu funkcji konwencjonalnych. Podpis jest tworzony przez TEST_METHOD makra. Makro generuje funkcję wystąpienia, która zwraca void. Generuje również funkcję statyczną, która zwraca informacje o metodzie testowej. Te informacje umożliwiają eksploratorowi testów znalezienie metody.
+         Nie trzeba pisać sygnatury funkcji konwencjonalnej. Podpis jest tworzony przez makro TEST_METHOD. Makro generuje funkcję wystąpienia zwracającą typ void. Generuje również funkcję statyczną, która zwraca informacje o metodzie testowej. Te informacje umożliwiają Eksploratorowi testów znalezienie metody.
 
-    - Metody testowe są pogrupowane w klasy przy użyciu . `TEST_CLASS(YourClassName){...}`
+    - Metody testowe są pogrupowane w klasy przy użyciu `TEST_CLASS(YourClassName){...}` .
 
-         Po uruchomieniu testów tworzone jest wystąpienie każdej klasy testowej. Metody testowe są wywoływane w nieokreślonej kolejności. Można zdefiniować specjalne metody, które są wywoływane przed i po każdym module, klasy lub metody.
+         Gdy testy są uruchamiane, tworzone jest wystąpienie każdej klasy testowej. Metody testowe są wywoływane w nieokreślonej kolejności. Można zdefiniować metody specjalne, które są wywoływane przed i po każdym module, klasie lub metodzie.
 
 3. Sprawdź, czy testy są uruchamiane w Eksploratorze testów:
 
-    1. Wstaw kod testowy:
+    1. Wstaw kod testu:
 
         ```cpp
         TEST_METHOD(TestMethod1)
@@ -70,41 +70,41 @@ W tym instruktażu opisano sposób tworzenia natywnej biblioteki DLL języka C++
         }
         ```
 
-         Należy zauważyć, że `Assert` klasa zawiera kilka metod statycznych, które można użyć do weryfikacji wyników w metodach testowych.
+         Należy zauważyć, że `Assert` Klasa zawiera kilka metod statycznych, których można użyć do sprawdzenia wyników w metodach testowych.
 
-    2. W menu **Test** wybierz polecenie **Uruchom** > **wszystkie testy**.
+    2. W menu **test** wybierz polecenie **Uruchom**  >  **wszystkie testy**.
 
-         Test tworzy i uruchamia.
+         Test kompiluje i uruchamia.
 
-         Pojawi się **Eksplorator testów.**
+         Zostanie wyświetlony **Eksplorator testów** .
 
-         Test pojawi się w obszarze **Testy zdań**.
+         Test jest wyświetlany w obszarze **testy zakończone**.
 
-         ![Eksplorator testów jednostkowych z jednym zdawanym testem](../test/media/utecpp04.png)
+         ![Eksplorator testów jednostkowych z jednym zakończonym testem](../test/media/utecpp04.png)
 
-## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>Tworzenie projektu biblioteki DLL
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>Tworzenie projektu DLL
 
 ::: moniker range="vs-2019"
 
-Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visual Studio 2019.
+Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2019.
 
-1. Tworzenie projektu w języku C++ za pomocą **Kreatora pulpitu systemu Windows**: Kliknij prawym przyciskiem myszy nazwę rozwiązania w **Eksploratorze rozwiązań** i wybierz pozycję **Dodaj** > **nowy projekt**. Ustaw **język** na C++, a następnie wpisz "windows" w polu wyszukiwania. Z listy wyników wybierz **Kreatora pulpitu systemu Windows.**
+1. Utwórz projekt C++ za pomocą **Kreatora pulpitu systemu Windows**: kliknij prawym przyciskiem myszy nazwę rozwiązania w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **Nowy projekt**. Ustaw **Język** na C++, a następnie wpisz ciąg "Windows" w polu wyszukiwania. Z listy wyników wybierz pozycję **Kreator pulpitu systemu Windows** .
 
-     W tym instruktażu projekt `RootFinder`nosi nazwę .
+     W tym instruktażu projekt ma nazwę `RootFinder` .
 
-2. Kliknij przycisk **Utwórz**. W następnym oknie dialogowym w obszarze **Typ aplikacji** wybierz pozycję **Biblioteka łączy dynamicznych (biblioteka dll),** a także zaznacz pozycję **Eksportuj symbole**.
+2. Kliknij przycisk **Utwórz**. W następnym oknie dialogowym w obszarze **Typ aplikacji** wybierz **bibliotekę dołączaną dynamicznie (dll)** , a także sprawdź **symbole eksportu**.
 
-     Opcja **Eksportuj symbole** generuje wygodne makro, którego można użyć do deklarowania eksportowanych metod.
+     Opcja **Eksportuj symbole** generuje wygodne makro, którego można użyć do zadeklarowania eksportowanych metod.
 
-     ![Kreator projektu języka C++ ustawiony dla bibliotek DLL i symboli eksportu](../test/media/vs-2019/windows-desktop-project-dll.png)
+     ![Kreator projektu C++ ustawiony dla bibliotek DLL i symboli eksportu](../test/media/vs-2019/windows-desktop-project-dll.png)
 
-3. Zadeklaruj wyeksportowane funkcje w głównym pliku *h:*
+3. Zadeklaruj wyeksportowaną funkcję w pliku Principal *. h* :
 
-     ![Nowy projekt kodu DLL i plik h z makrami API](../test/media/utecpp07.png)
+     ![Nowy projekt kodu DLL i plik h z makrami interfejsu API](../test/media/utecpp07.png)
 
-     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione elementy członkowskie klasy być widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [Korzystanie z dllimport i dllexport w klasach C++.](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)
+     Deklarator powoduje, że `__declspec(dllexport)` publiczne i chronione składowe klasy są widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [using dllimport i dllexport w klasach C++](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
-4. W głównym pliku *.cpp* dodaj minimalną treść dla funkcji:
+4. W pliku Principal *. cpp* Dodaj minimalną treść dla funkcji:
 
     ```cpp
         // Find the square root of a number.
@@ -118,25 +118,25 @@ Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visu
 
 ::: moniker range="vs-2017"
 
-Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visual Studio 2017.
+Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2017.
 
-1. Utwórz projekt W++ przy użyciu szablonu **projektu Win32.**
+1. Utwórz projekt języka C++ przy użyciu szablonu **projektu Win32** .
 
-     W tym instruktażu projekt `RootFinder`nosi nazwę .
+     W tym instruktażu projekt ma nazwę `RootFinder` .
 
-2. Wybierz **bibliotekę DLL** i **symbole eksportu** w Kreatorze aplikacji Win32.
+2. Wybierz opcję **dll** i **Eksportuj symbole** w Kreatorze aplikacji Win32.
 
-     Opcja **Eksportuj symbole** generuje wygodne makro, którego można użyć do deklarowania eksportowanych metod.
+     Opcja **Eksportuj symbole** generuje wygodne makro, którego można użyć do zadeklarowania eksportowanych metod.
 
-     ![Kreator projektu języka C++ ustawiony dla bibliotek DLL i symboli eksportu](../test/media/utecpp06.png)
+     ![Kreator projektu C++ ustawiony dla bibliotek DLL i symboli eksportu](../test/media/utecpp06.png)
 
-3. Zadeklaruj wyeksportowane funkcje w głównym pliku *h:*
+3. Zadeklaruj wyeksportowaną funkcję w pliku Principal *. h* :
 
-     ![Nowy projekt kodu DLL i plik h z makrami API](../test/media/utecpp07.png)
+     ![Nowy projekt kodu DLL i plik h z makrami interfejsu API](../test/media/utecpp07.png)
 
-     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione elementy członkowskie klasy być widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [Korzystanie z dllimport i dllexport w klasach C++.](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)
+     Deklarator powoduje, że `__declspec(dllexport)` publiczne i chronione składowe klasy są widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [using dllimport i dllexport w klasach C++](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
-4. W głównym pliku *.cpp* dodaj minimalną treść dla funkcji:
+4. W pliku Principal *. cpp* Dodaj minimalną treść dla funkcji:
 
     ```cpp
         // Find the square root of a number.
@@ -150,21 +150,21 @@ Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visu
 
 ## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a>Połącz projekt testowy z projektem DLL
 
-1. Dodaj projekt biblioteki DLL do odwołań do projektu testowego:
+1. Dodaj projekt DLL do odwołań projektu projektu testowego:
 
-   1. Kliknij prawym przyciskiem myszy węzeł projektu testowego w **Eksploratorze rozwiązań** i wybierz polecenie **Dodaj** > **odwołanie**.
+   1. Kliknij prawym przyciskiem myszy węzeł projektu testowego w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **odwołanie**.
 
-   2. W oknie dialogowym **Dodawanie odwołania** wybierz projekt biblioteki DLL i wybierz pozycję **Dodaj**.
+   2. W oknie dialogowym **Dodaj odwołanie** wybierz projekt DLL i wybierz pozycję **Dodaj**.
 
         ![Właściwości projektu C++ | Dodaj nowe odwołanie](../test/media/utecpp09.png)
 
-2. W głównym pliku testowym jednostki *.cpp* dołącz plik *.h* kodu DLL:
+2. W pliku *. cpp* testu jednostkowego podmiotu zabezpieczeń należy uwzględnić plik *. h* kodu dll:
 
    ```cpp
    #include "..\RootFinder\RootFinder.h"
    ```
 
-3. Dodaj test podstawowy, który używa wyeksportowanego przycisku funkcji:
+3. Dodaj podstawowy test, który używa wyeksportowanej funkcji:
 
    ```cpp
    TEST_METHOD(BasicTest)
@@ -188,13 +188,13 @@ Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visu
 
     Nowy test pojawi się w **Eksploratorze testów**.
 
-5. W **Eksploratorze testów**wybierz pozycję **Uruchom wszystko**.
+5. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-    ![Przebieg testu jednostkowego &#45; test podstawowy](../test/media/utecpp10.png)
+    ![Eksplorator testów jednostkowych &#45; test podstawowy zakończony zakończono](../test/media/utecpp10.png)
 
-   Skonfigurowano projekty testów i kodu i zweryfikowano, że można uruchomić testy, które uruchamiają funkcje w projekcie kodu. Teraz możesz zacząć pisać prawdziwe testy i kod.
+   Został skonfigurowany test i projekty kodu i zweryfikowane, że można uruchomić testy, które uruchamiają funkcje w projekcie kodu. Teraz możesz zacząć pisać prawdziwe testy i kod.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>Iteratively zwiększyć testy i uczynić je przejść
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>Iteracyjnie rozszerza testy i przekazują je
 
 1. Dodaj nowy test:
 
@@ -211,20 +211,20 @@ Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visu
     ```
 
     > [!TIP]
-    > Zaleca się, aby nie zmieniać testów, które przeszły. Zamiast tego dodaj nowy test, zaktualizuj kod, aby test przebiegł pomyślnie, a następnie dodaj kolejny test i tak dalej.
+    > Zalecamy, aby nie zmieniać testów, które zostały zakończone. Zamiast tego Dodaj nowy test, zaktualizuj kod tak, aby test zakończył się powodzeniem, a następnie Dodaj inny test i tak dalej.
     >
-    > Gdy użytkownicy zmienią swoje wymagania, wyłącz testy, które nie są już poprawne. Napisz nowe testy i spraw, aby działały po kolei, w ten sam przyrostowy sposób.
+    > Gdy użytkownicy zmienią swoje wymagania, należy wyłączyć testy, które nie są już poprawne. Napisz nowe testy i Przekształć je w jeden raz w ten sam przyrostowy sposób.
 
-2. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz pozycję **Uruchom wszystko**.
+2. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-     Nowy test kończy się niepowodzeniem.
+     Nowy test zakończy się niepowodzeniem.
 
-     ![Test rangetest kończy się niepowodzeniem](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
+     ![RangeTest kończy się niepowodzeniem](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
-    > Sprawdź, czy każdy test nie powiedzie się natychmiast po jego zapisaniu. Pomaga to uniknąć łatwego błędu pisania testu, który nigdy nie kończy się niepowodzeniem.
+    > Sprawdź, czy każdy test kończy się niepowodzeniem natychmiast po jego zapisaniu. Dzięki temu można uniknąć łatwego błędu podczas pisania testu, który nigdy nie powiedzie się.
 
-3. Popraw swój kod DLL, tak aby nowy test przebiegał pomyślnie:
+3. Popraw kod biblioteki DLL, aby nowe przebiegi testowe:
 
     ```cpp
     #include <math.h>
@@ -243,18 +243,18 @@ Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visu
     }
     ```
 
-4. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz pozycję **Uruchom wszystko**.
+4. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
-     Oba testy przechodzą.
+     Oba testy zostały zakończone pomyślnie.
 
-     ![Przebieg testu jednostkowego &#45; przebiegu testów](../test/media/utecpp12.png)
+     ![Zakończono Test zakresu &#45; w Eksploratorze testów jednostkowych](../test/media/utecpp12.png)
 
     > [!TIP]
-    > Opracowanie kodu przez dodanie testów po jednym na raz. Upewnij się, że wszystkie testy przechodzą po każdej iteracji.
+    > Opracowuj kod przez dodanie testów pojedynczo. Upewnij się, że wszystkie testy są zakończone po każdej iteracji.
 
-## <a name="debug-a-failing-test"></a><a name="debug"></a>Debugowanie testu nie po awarii
+## <a name="debug-a-failing-test"></a><a name="debug"></a>Debuguj test zakończony niepowodzeniem
 
-1. Dodaj kolejny test:
+1. Dodaj inny test:
 
     ```cpp
     #include <stdexcept>
@@ -287,23 +287,23 @@ Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visu
     }
     ```
 
-2. Zbuduj rozwiązanie i wybierz **pozycję Uruchom wszystko**.
+2. Skompiluj rozwiązanie i wybierz polecenie **Uruchom wszystkie**.
 
-3. Otwórz (lub kliknij dwukrotnie) test nieu powiodła się.
+3. Otwórz (lub kliknij dwukrotnie) Test zakończony niepowodzeniem.
 
-     Twierdzenie nie powiodło się jest wyróżniony. Komunikat o błędzie jest widoczny w okienku szczegółów **Eksploratora testów**.
+     Niepowodzenie zostało wyróżnione. Komunikat o błędzie jest widoczny w okienku szczegółów w **Eksploratorze testów**.
 
-     ![Testy NegativeRangeTests nie powiodły się](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
+     ![NegativeRangeTests nie powiodło się](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-4. Aby zobaczyć, dlaczego test nie powiedzie się, krok po kroku funkcji:
+4. Aby zobaczyć dlaczego test nie powiedzie się, przechodzenie przez funkcję:
 
-    1. Ustaw punkt przerwania na początku SquareRoot funkcji.
+    1. Ustaw punkt przerwania na początku funkcji SquareRoot.
 
-    2. W menu skrótów testu nie powiodło się wybierz polecenie **Debugowanie wybranych testów**.
+    2. W menu skrótów testu zakończonego niepowodzeniem wybierz **Debuguj wybrane testy**.
 
-         Gdy run zatrzymuje się w punkcie przerwania, krok po kroku kodu.
+         Gdy przebieg zostanie zatrzymany w punkcie przerwania, przejdź do kodu.
 
-5. Wstaw kod do funkcji, którą tworzysz:
+5. Wstaw kod w funkcji, którą tworzysz:
 
     ```cpp
 
@@ -319,27 +319,27 @@ Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visu
 
     ```
 
-6. Wszystkie testy teraz przechodzą.
+6. Wszystkie testy są teraz zakończone pomyślnie.
 
-   ![Wszystkie testy przechodzą zdać](../test/media/ute_ult_alltestspass.png)
+   ![Wszystkie testy zakończone powodzeniem](../test/media/ute_ult_alltestspass.png)
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Jeśli poszczególne testy nie mają żadnych zależności, które uniemożliwiają ich uruchamianie ![w dowolnej kolejności, włącz równoległe wykonanie](../test/media/ute_parallelicon-small.png) testu za pomocą ute&#95;parallelicon&#45;mały przycisk przełączania na pasku narzędzi. Może to znacznie skrócić czas pracy wszystkich testów.
+> Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów przy użyciu ![ przycisku wykonaj&#95;parallelicon&#45;mały ](../test/media/ute_parallelicon-small.png) przełącznik na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Jeśli poszczególne testy nie mają żadnych zależności, które uniemożliwiają ich uruchamianie w dowolnej kolejności, włącz równoległe wykonanie testu w menu ustawień paska narzędzi. Może to znacznie skrócić czas pracy wszystkich testów.
+> Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów w menu Ustawienia na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
 ::: moniker-end
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>Refaktoryzuje kod bez zmiany testów
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>Refaktoryzacja kodu bez zmiany testów
 
-1. Uprość centralne obliczenie w funkcji Kwadratroot:
+1. Uprość Obliczanie centralne w funkcji SquareRoot:
 
     ```cpp
     // old code:
@@ -349,27 +349,27 @@ Poniższe kroki pokazują, jak utworzyć projekt biblioteki DLL w programie Visu
 
     ```
 
-2. Skompiluj rozwiązanie i wybierz **pozycję Uruchom wszystko**, aby upewnić się, że nie wprowadzono błędu.
+2. Skompiluj rozwiązanie i wybierz pozycję **Uruchom wszystkie**, aby upewnić się, że nie wprowadzono błędu.
 
     > [!TIP]
-    > Dobry zestaw testów jednostkowych daje pewność, że nie wprowadzono błędów po zmianie kodu.
+    > Dobry zestaw testów jednostkowych daje pewność, że podczas zmiany kodu nie wprowadzono usterek.
     >
-    > Zachowaj refaktoryzowania oddzielnie od innych zmian.
+    > Kontynuuj refaktoryzację niezależnie od innych zmian.
 
 ## <a name="next-steps"></a>Następne kroki
 
-- **Izolacji.** Większość bibliotek DLL jest zależna od innych podsystemów, takich jak bazy danych i inne biblioteki DLL. Te inne składniki są często opracowywane równolegle. Aby umożliwić przeprowadzanie testów jednostkowych, gdy inne komponenty nie są jeszcze dostępne, należy zastąpić
+- **Izolacji.** Większość bibliotek DLL jest zależna od innych podsystemów, takich jak bazy danych i inne biblioteki DLL. Te inne składniki są często opracowywane równolegle. Aby zezwolić na wykonywanie testów jednostkowych, gdy inne składniki nie są jeszcze dostępne, musisz zastąpić imitację lub
 
-- **Kompilacja testów weryfikacyjnych.** Testy mogą być wykonywane na serwerze kompilacji zespołu w ustalonych odstępach czasu. Gwarantuje to, że błędy nie są wprowadzane, gdy praca kilku członków zespołu jest zintegrowany.
+- **Testy weryfikacyjne kompilacji.** Testy można wykonywać na serwerze kompilacji zespołu w ustalonych odstępach czasu. Gwarantuje to, że usterki nie są wprowadzane podczas integracji pracy kilku członków zespołu.
 
-- **Testy kontrolne.** Można zalecić, że niektóre testy są wykonywane, zanim każdy członek zespołu sprawdza kod do kontroli źródła. Zazwyczaj jest to podzbiór pełnego zestawu testów weryfikacji kompilacji.
+- **Testy ewidencjonowania.** Można określić, że niektóre testy są wykonywane, zanim każdy członek zespołu sprawdzi kod w kontroli źródła. Zwykle jest to podzestaw kompletnego zestawu testów weryfikacyjnych kompilacji.
 
-   Można również zalecić minimalny poziom pokrycia kodu.
+   Istnieje również możliwość przydzielenia minimalnego poziomu pokrycia kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Dodawanie testów jednostkowych do istniejących aplikacji języka C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)
+- [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-- [Przewodnik: Tworzenie i używanie biblioteki łączy dynamicznych (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
-- [Import i eksport](/cpp/build/importing-and-exporting)
+- [Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Importowanie i eksportowanie](/cpp/build/importing-and-exporting)

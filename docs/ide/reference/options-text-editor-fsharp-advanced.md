@@ -1,34 +1,34 @@
 ---
-title: Opcje, Edytor tekstu, F#, Zaawansowane
+title: 'Opcje, Edytor tekstu, F #, zaawansowane'
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aacc2b6aa47f7a250b161187146accc51736b586
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72668945"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770948"
 ---
-# <a name="options-text-editor-f-advanced"></a>Opcje, Edytor tekstu, F#, Zaawansowane
+# <a name="options-text-editor-f-advanced"></a>Opcje, Edytor tekstu, F #, zaawansowane
 
-Użyj strony Opcje **zaawansowane,** aby zmodyfikować niektóre ustawienia edytora tekstu dla języka F#. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję**Opcje** **narzędzi** > , a następnie wybierz pozycję **Edytor** > tekstu**F#** > **Zaawansowane**.
+Na stronie opcje **Zaawansowane** można modyfikować niektóre ustawienia edytora tekstu dla języka F #. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje**narzędzia, a następnie wybierz **Edytor tekstu**  >  **F #**  >  **Advanced**.
 
-## <a name="block-structure-guides"></a>Prowadnice struktury bloków
+## <a name="block-structure-guides"></a>Prowadnice struktury blokowej
 
-Po zaznaczeniu tej opcji w edytorze pojawiają się pionowe linie, które są zgodne ze strukturalnymi blokami kodu, co umożliwia łatwą identyfikację poszczególnych bloków kodu.
+Po wybraniu linie pionowe pojawiają się w edytorze, który jest wierszem ze strukturą bloków kodu, dzięki czemu można łatwo identyfikować poszczególne bloki kodu.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 
-Zaznacz to pole wyboru, aby automatycznie nakreślić plik kodu, który tworzy zwijane bloki kodu.
+Zaznacz to pole wyboru, aby automatycznie utworzyć konspekt pliku kodu, który tworzy zwijane bloki kodu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 - [Opcje, Edytor tekstów, Wszystkie języki, Karty](../../ide/reference/options-text-editor-all-languages-tabs.md)

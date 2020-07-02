@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie skojarzeń między typami (Projektant klas)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.associationline
 helpviewer_keywords:
@@ -16,25 +16,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b598505ad465ec9086102b9e16e96cb7aa8275
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3cce893efaad5f2317b175391a2685cae7053e3c
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590387"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770952"
 ---
-# <a name="how-to-create-associations-between-types-in-class-designer"></a>Jak: Tworzenie skojarzeń między typami w Projektancie klas
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Instrukcje: tworzenie skojarzeń między typami w Projektant klas
 
-Wiersze skojarzenia w **Projektancie klas** pokazują, jak klasy na diagramie są powiązane. Linia skojarzenia reprezentuje klasę, która jest typem właściwości lub polem innej klasy w projekcie. Linii skojarzeń zwykle używa się do ilustrowania najważniejszych relacji między klasami w projekcie.
+Linie skojarzenia w **Projektant klas** pokazują, jak są powiązane klasy w diagramie. Linia skojarzenia reprezentuje klasę, która jest typem właściwości lub polem innej klasy w projekcie. Linii skojarzeń zwykle używa się do ilustrowania najważniejszych relacji między klasami w projekcie.
 
 Podczas gdy można wyświetlić wszystkie pola i właściwości jako skojarzenia, więcej sensu ma wyświetlanie tylko ważnych elementów członkowskich jako skojarzeń, w zależności od tego, co zamierzasz podkreślić na diagramie. (Można wyświetlić mniej ważne elementy członkowskie jako zwykłe elementy członkowskie lub je całkowicie ukryć.)
 
 > [!NOTE]
-> **Projektant klas** obsługuje tylko skojarzenia jednokierunkowe.
+> **Projektant klas** obsługuje tylko jednokierunkowe skojarzenia.
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>Aby zdefiniować linię skojarzenia na Diagramie klasy
 
-1. W przyborniku w obszarze **Projektant klas**wybierz pozycję **Skojarzenie**.
+1. W przyborniku w obszarze **Projektant klas**wybierz pozycję **skojarzenie**.
 
 2. Narysuj linię między dwoma kształtami, które chcesz połączyć przez skojarzenie.
 
@@ -46,14 +46,14 @@ Na powierzchni diagramu kliknij etykietę linii skojarzenia i ją wyedytuj.
 
 Alternatywnie wykonaj następujące kroki:
 
-1. Zaznacz kształt zawierający właściwość, która jest wyświetlana jako skojarzenie.
+1. Wybierz kształt zawierający właściwość, która jest wyświetlana jako skojarzenie.
 
-   Kształt uzyskuje fokus, a jego elementy członkowskie są wyświetlane w oknach **Szczegóły klasy** i **Właściwości.**
+   Kształt uzyskuje fokus i jego składowe są wyświetlane w oknach **Szczegóły klasy** i **Właściwości** .
 
-2. W oknie **Szczegóły klasy** lub **Właściwości** edytuj pole nazwy dla tej właściwości i naciśnij klawisz **Enter**.
+2. W oknie **Szczegóły klasy** lub **Właściwości** , edytuj pole Nazwa dla tej właściwości i naciśnij klawisz **Enter**.
 
-   Nazwa jest aktualizowana w oknie **Szczegóły klasy,** w wierszu skojarzenia, w oknie **Właściwości** i w kodzie.
+   Nazwa zostanie zaktualizowana w oknie **Szczegóły klasy** , w wierszu skojarzenia, w oknie **Właściwości** i w kodzie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Jak: Zmiana notacji elementu członkowskiego i notacji skojarzenia](how-to-change-between-member-notation-and-association-notation.md)
+- [Instrukcje: zmiana między notacją składowej i notacją skojarzenia](how-to-change-between-member-notation-and-association-notation.md)

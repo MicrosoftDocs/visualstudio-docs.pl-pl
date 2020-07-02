@@ -18,14 +18,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238b963aceebd2bfdae38c2f4032955c1bd0c0c6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288952"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770870"
 ---
-# <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektu MSBuild
+# <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 
 W poniższej tabeli wymieniono często używane właściwości, które są zdefiniowane w plikach projektu programu Visual Studio lub zawarte w plikach *. targets* udostępnianych przez program MSBuild.
 
@@ -51,7 +51,7 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | CleanFile | Wszystko | Nazwa pliku, który będzie używany jako "czyszczenie pamięci podręcznej". Czyszczenie pamięci podręcznej to Lista wygenerowanych plików, które zostaną usunięte podczas operacji czyszczenia. Plik jest umieszczany w pośredniej ścieżce wyjściowej przez proces kompilacji.<br /><br /> Ta właściwość określa tylko nazwy plików, które nie mają informacji o ścieżce. |
 | CodePage | .NET | Określa stronę kodową, która ma być używana dla wszystkich plików kodu źródłowego w kompilacji. Ta właściwość jest równoważna z `/codepage` przełącznikiem kompilatora. |
 | CompilerResponseFile | .NET | Opcjonalny plik odpowiedzi, który można przesłać do zadań kompilatora. |
-| Konfiguracja | Wszystko | Konfiguracja, którą tworzysz, albo "debug" lub "Release" (wydanie). |
+| Konfigurowanie | Wszystko | Konfiguracja, którą tworzysz, ogólnie `Debug` lub `Release` , ale można ją skonfigurować na poziomie rozwiązania i projektu. |
 | CscToolPath | C# | Ścieżka *csc.exe*, kompilator języka C#. |
 | CustomBeforeMicrosoftCommonTargets | Wszystko | Nazwa pliku projektu lub pliku docelowego, który ma zostać zaimportowany automatycznie przed importem wspólnych obiektów docelowych. |
 | DebugSymbols | Wszystko | Wartość logiczna wskazująca, czy symbole są generowane przez kompilację.<br /><br /> Ustawienie **-p:DebugSymbols = false** w wierszu polecenia wyłącza generowanie plików symboli bazy danych programu (*. pdb*). |
@@ -134,6 +134,6 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | Win32Manifest | .NET | Nazwa pliku manifestu, który powinien być osadzony w końcowym zestawie. Ten parametr jest równoważny z `/win32Manifest` przełącznikiem kompilatora. |
 | Win32Resource | .NET | Nazwa pliku zasobu Win32, który ma zostać osadzony w końcowym zestawie. Ten parametr jest równoważny z `/win32resource` przełącznikiem kompilatora. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)

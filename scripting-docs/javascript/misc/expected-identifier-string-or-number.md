@@ -3,7 +3,7 @@ title: Oczekiwano identyfikatora, ciągu lub numeru | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1028
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: adc34a0605561852885087151796cceb20aead5b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 5c0e1ee1cdb2c135d3a76316d56e279de963b156
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72577594"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814580"
 ---
 # <a name="expected-identifier-string-or-number"></a>Oczekiwano identyfikatora, ciągu lub numeru
-Użyto niepoprawnej składni literału do zadeklarowania literału obiektu. Właściwości literału obiektu muszą być identyfikatorem, ciągiem lub liczbą. Literał obiektu (nazywany także "inicjatorem obiektów") składa się z rozdzielaną przecinkami listą właściwości: par wartości, które są ujęte w nawiasy kwadratowe. Na przykład:  
+Użyto niepoprawnej składni literału do zadeklarowania literału obiektu. Właściwości literału obiektu muszą być identyfikatorem, ciągiem lub liczbą. Literał obiektu (nazywany także "inicjatorem obiektów") składa się z rozdzielaną przecinkami listą właściwości: par wartości, które są ujęte w nawiasy kwadratowe. Przykład:  
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  

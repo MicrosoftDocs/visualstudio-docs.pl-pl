@@ -3,7 +3,7 @@ title: Oczekiwano znaku "]" w wyrażeniu regularnym (JavaScript) | Microsoft Doc
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5019
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9af38a5fa754a811416f1a998b90946345f3e4a2
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 8a2a2b83b818e37c0b62e103fe284c5c4d110c6c
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576482"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815635"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Oczekiwano znaku „]" w wyrażeniu regularnym (JavaScript)
 Podjęto próbę utworzenia klasy znaków dla dopasowania wyrażenia regularnego, ale nie zawiera ona prawego nawiasu. Poszczególne kombinacje znaków literału mogą być składane do klas znaków, umieszczając je w nawiasach kwadratowych. Klasa znaku dopasowuje dowolny znak, który zawiera. Na przykład/[abc]/dopasowuje jedną z liter "a", "b" lub "c".  
@@ -29,8 +29,8 @@ Podjęto próbę utworzenia klasy znaków dla dopasowania wyrażenia regularnego
 - Dodaj prawy nawias do wyrażenia regularnego.  
   
     > [!NOTE]
-    > Jeśli chcesz dopasować do pojedynczego nawiasu, należy to zrobić przy użyciu ukośnika odwrotnego-\\ [-so nie jest interpretowana jako znak specjalny przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Jeśli chcesz dopasować do pojedynczego nawiasu, należy to zrobić za pomocą ukośnika odwrotnego- \\ [-, tak aby nie był interpretowany jako znak specjalny przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [obiektu wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Obiekt wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)   
  [Składnia wyrażenia regularnego (JavaScript)](https://msdn.microsoft.com/library/1400241x)

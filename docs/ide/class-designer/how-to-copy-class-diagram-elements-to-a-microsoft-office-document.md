@@ -1,7 +1,7 @@
 ---
 title: 'Porady: kopiowanie elementów diagramu klasy do dokumentu pakietu Microsoft Office (Projektant klas)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
 - Office documents [Visual Studio]
@@ -11,36 +11,36 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592246"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770991"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Jak: Kopiowanie elementów diagramu klasy do dokumentu pakietu Microsoft Office
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Instrukcje: kopiowanie elementów diagramu klas do dokumentu Microsoft Office
 
-Kształty można kopiować z diagramu klasy .NET (plik*cd)* do innych dokumentów. Otrzymasz kopię kształtu lub jego kod źródłowy, na podstawie rodzaju dokumentu, w którym go wklejasz. Aby skopiować kształty z diagramów klasy UML w projekcie modelowania, zobacz [Eksport diagramy jako obrazy](../../modeling/export-diagrams-as-images.md).
+Można kopiować kształty z diagramu klas platformy .NET (plik*CD* ) do innych dokumentów. Otrzymasz kopię kształtu lub jego kodu bazowego na podstawie rodzaju dokumentu, w którym go wkleisz. Aby skopiować kształty z diagramów klas UML w projekcie modelowania, zobacz [Eksportowanie diagramów jako obrazów](../../modeling/export-diagrams-as-images.md).
 
 ## <a name="copy-a-single-element"></a>Kopiowanie pojedynczego elementu
 
 Kliknij prawym przyciskiem myszy kształt i wybierz polecenie **Kopiuj obraz**.
 
-## <a name="copy-several-elements"></a>Kopiowanie kilku elementów
+## <a name="copy-several-elements"></a>Kopiuj kilka elementów
 
 1. Zaznacz kształty na diagramie, które chcesz skopiować.
 
 2. Kliknij prawym przyciskiem myszy zaznaczenie i wybierz polecenie **Kopiuj obraz**.
 
-## <a name="copy-all-the-elements-in-a-class-diagram"></a>Kopiowanie wszystkich elementów na diagramie klas
+## <a name="copy-all-the-elements-in-a-class-diagram"></a>Kopiuj wszystkie elementy w diagramie klas
 
-1. Kliknij prawym przyciskiem myszy powierzchnię diagramu i wybierz polecenie **Zaznacz wszystko**lub naciśnij **klawisze Ctrl + A**.
+1. Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie wybierz polecenie **Zaznacz wszystko**lub naciśnij **klawisze Ctrl + A**.
 
 2. W menu **Edycja** wybierz polecenie **Kopiuj obraz**.
 
-Można również wybrać **opcję Kopiuj** zamiast **kopiowania obrazu**. **Kopiuj** obraz jako zwykłą mapę bitową. **Kopiuj obraz** kopiuje obraz jako obraz oparty na wektorze, co jest lepsze w przypadku większości aplikacji pakietu Office.
+Możesz również wybrać opcję **Kopiuj** zamiast **obrazu Kopiuj**. **Kopiuj** kopiuje obraz jako zwykłą mapę bitową. **Kopiuj obraz** kopiuje obraz jako obraz oparty na wektorach, co jest lepszym rozwiązaniem w przypadku większości aplikacji pakietu Office.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Jak: Drukowanie diagramów klas](how-to-print-class-diagrams.md)
-- [Jak: Eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md)
+- [Instrukcje: Drukowanie diagramów klas](how-to-print-class-diagrams.md)
+- [Instrukcje: eksportowanie diagramów klas jako obrazów](how-to-export-class-diagrams-as-images.md)

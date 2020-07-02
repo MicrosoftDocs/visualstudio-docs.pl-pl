@@ -1,106 +1,106 @@
 ---
-title: Arkusze stylów Debugowania XSLT
+title: Debuguj arkusze stylów XSLT
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301721"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815126"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: Debugowanie arkusza stylów XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: debugowanie arkusza stylów XSLT
 
-Kroki opisane w tym przewodniku pokazują, jak używać debugera XSLT. Kroki obejmują wyświetlanie zmiennych, ustawianie punktów przerwania i przechodzenie przez kod. Debuger umożliwia wykonywanie kodu po jednym wierszu naraz.
+W krokach w tym instruktażu pokazano, jak używać debugera XSLT. Kroki obejmują wyświetlanie zmiennych, ustawianie punktów przerwania i przechodzenie przez kod. Debuger umożliwia wykonywanie kodu jeden wiersz jednocześnie.
 
-Aby przygotować się do tego przewodnika, najpierw skopiuj dwa [przykładowe pliki](#sample-files) na komputer lokalny. Jednym z nich jest arkusz stylów, a drugim jest plik XML, którego użyjemy jako danych wejściowych do arkusza stylów. W tym instruktażu arkusz stylów, którego używamy, znajduje wszystkie książki, których koszt jest niższy od średniej ceny książki.
+Aby przygotować się do tego przewodnika, najpierw skopiuj dwa [pliki przykładowe](#sample-files) na komputer lokalny. Jeden jest arkusz stylów, a drugi to plik XML, który będzie używany jako dane wejściowe do arkusza stylów. W tym instruktażu używany arkusz stylów znajduje wszystkie książki, których koszt jest niższy niż średnia cena książki.
 
 > [!NOTE]
 > Debuger XSLT jest dostępny tylko w wersji Enterprise programu Visual Studio.
 
 ## <a name="start-debugging"></a>Rozpocznij debugowanie
 
-1. Z menu **Plik** wybierz polecenie **Otwórz** > **plik**.
+1. Z menu **plik** wybierz polecenie **Otwórz**  >  **plik**.
 
-2. Znajdź plik *poniżej średniej.xsl* i **wybierz**otwórz .
+2. Znajdź plik *below-Average. xsl* i wybierz polecenie **Otwórz**.
 
    Arkusz stylów zostanie otwarty w edytorze XML.
 
-3. Kliknij przycisk przeglądaj (**...**) w polu **Wejście** okna właściwości dokumentu. (Jeśli okno **Właściwości** nie jest widoczne, kliknij prawym przyciskiem myszy dowolne miejsce otwartego pliku w edytorze, a następnie wybierz polecenie **Właściwości).**
+3. Kliknij przycisk Przeglądaj (**...**) w polu **wejściowym** okna właściwości dokumentu. (Jeśli okno **Właściwości** nie jest widoczne, kliknij prawym przyciskiem myszy w dowolnym miejscu w otwartym pliku w edytorze, a następnie wybierz polecenie **Właściwości**.)
 
-4. Znajdź plik *books.xml,* a następnie wybierz pozycję **Otwórz**.
+4. Znajdź plik *books.xml* , a następnie wybierz polecenie **Otwórz**.
 
-   Spowoduje to ustawienie pliku dokumentu źródłowego, który jest używany do transformacji XSLT.
+   Ustawia plik dokumentu źródłowego używany do przekształcania XSLT.
 
-5. Ustaw [punkt przerwania](../debugger/using-breakpoints.md) w wierszu 12 *poniżej średniej.xsl*. Można to zrobić na jeden z wielu sposobów:
+5. Ustaw [punkt przerwania](../debugger/using-breakpoints.md) w wierszu 12 *below-Average. xsl*. Można to zrobić na kilka sposobów:
 
    - Kliknij na marginesie edytora w wierszu 12.
 
-   - Kliknij dowolne miejsce na linii 12, a następnie naciśnij **klawisz F9**.
+   - Kliknij w dowolnym miejscu w wierszu 12, a następnie naciśnij klawisz **F9**.
 
-   - Kliknij prawym `xsl:if` przyciskiem myszy znacznik startowy, a następnie wybierz polecenie **Wstaw** > **punkt przerwania**.
+   - Kliknij prawym przyciskiem myszy `xsl:if` tag początkowy, a następnie wybierz **punkt przerwania**  >  **Wstaw punkt przerwania**.
 
-      ![Wstawianie punktu przerwania w pliku XSL w programie Visual Studio](media/insert-breakpoint.PNG)
+      ![Wstaw punkt przerwania w pliku XSL w programie Visual Studio](media/insert-breakpoint.PNG)
 
-6. Na pasku menu wybierz polecenie **XML** > **Start XSLT Debugowanie** (lub naciśnij **klawisz Alt**+**F5**).
+6. Na pasku menu wybierz pozycję **XML**  >  **Rozpocznij debugowanie XSLT** (lub naciśnij klawisz **Alt** + **F5**).
 
-   Rozpoczyna się proces debugowania.
+   Rozpocznie się proces debugowania.
 
-   W edytorze debuger jest umieszczony `xsl:if` na elemencie arkusza stylów. W edytorze otwiera się kolejny plik o nazwie *poniżej średniej.xml;* jest to plik wyjściowy, który zostanie wypełniony podczas przetwarzania każdego węzła w pliku wejściowym *books.xml.*
+   W edytorze debuger jest umieszczony na `xsl:if` elemencie arkusza stylów. Inny plik o nazwie *below-average.xml* otwiera się w edytorze; jest to plik wyjściowy, który zostanie wypełniony jako każdy węzeł w pliku wejściowym *books.xml* jest przetwarzany.
 
-   Okna **Autos**, **Locals**i **Watch 1** są wyświetlane w dolnej części okna programu Visual Studio. W oknie **Locals** są wyświetlane wszystkie zmienne lokalne i ich bieżące wartości. Obejmuje to zmienne zdefiniowane w arkuszu stylów, a także zmienne używane przez debuger do śledzenia węzłów, które są obecnie w kontekście.
+   Okna **Autokorekty**, **lokalne**i **czujka 1** są wyświetlane u dołu okna programu Visual Studio. W oknie **Ustawienia lokalne** są wyświetlane wszystkie zmienne lokalne i ich bieżące wartości. Obejmuje to zmienne zdefiniowane w arkuszu stylów i zmienne, które są używane przez debuger do śledzenia węzłów, które znajdują się obecnie w kontekście.
 
 ## <a name="watch-window"></a>okno czujki
 
-Dodamy dwie zmienne do okna **Watch 1,** abyśmy mogli sprawdzić ich wartości podczas przetwarzania pliku wejściowego. (Można również użyć okna **Zmiennych lokalnych,** aby sprawdzić wartości, jeśli zmienne, które chcesz obserwować, już istnieją).
+Dodamy dwie zmienne do okna **czujki 1** , aby można było przeanalizować wartości jako plik wejściowy. (Można również użyć okna **zmiennych lokalnych** do sprawdzenia wartości, jeśli zmienne, które chcesz obejrzeć, już tam znajdują się).
 
-1. Z menu **Debugowania** wybierz pozycję **Zegarek Windows** > **Watch** > **1**.
+1. Z menu **Debuguj** wybierz polecenie **Windows**  >  **Watch**  >  **Watch 1**.
 
-   Okno **Zegarek 1** staje się widoczne.
+   Okno **czujki 1** staną się widoczne.
 
-2. Wpisz `$bookAverage` pole **Nazwa,** a następnie naciśnij klawisz **Enter**.
+2. Wpisz `$bookAverage` w polu **Nazwa** , a następnie naciśnij klawisz **Enter**.
 
-   Wartość zmiennej `$bookAverage` jest wyświetlana w polu **Wartość.**
+   Wartość `$bookAverage` zmiennej zostanie wyświetlona w polu **wartość** .
 
-3. W następnym wierszu `self::node()` wpisz pole **Nazwa,** a następnie naciśnij klawisz **Enter**.
+3. W następnym wierszu wpisz `self::node()` w polu **Nazwa** , a następnie naciśnij klawisz **Enter**.
 
-   `self::node()`jest wyrażenieM XPath, które ocenia bieżący węzeł kontekstu. Wartość wyrażenia `self::node()` XPath jest pierwszym węzłem księgi. Zmienia się to w miarę postępów w transformacji.
+   `self::node()`jest wyrażeniem XPath, które jest obliczane do bieżącego węzła kontekstu. Wartość `self::node()` wyrażenia XPath jest pierwszym węzłem książki. Zmiany są wprowadzane w trakcie transformacji.
 
-4. Rozwiń `self::node()` węzeł, a następnie rozwiń węzeł, który ma `price`wartość .
+4. Rozwiń `self::node()` węzeł, a następnie rozwiń węzeł, który ma wartość `price` .
 
-   ![Okno obserwowanie podczas debugowania XSLT w programie Visual Studio](media/xslt-debugging-watch-window.png)
+   ![okno wyrażeń kontrolnych podczas debugowania XSLT w programie Visual Studio](media/xslt-debugging-watch-window.png)
 
-   Można wyświetlić wartość ceny księgowej dla bieżącego węzła `$bookAverage` księgi i porównać ją z wartością. Ponieważ cena książki jest poniżej `xsl:if` średniej, warunek powinien zakończyć się pomyślnie podczas kontynuowania procesu debugowania.
+   Możesz zobaczyć wartość ceny książki dla bieżącego węzła księgi i porównać ją z `$bookAverage` wartością. Ze względu na to, że cena książki jest niższa od średniej, `xsl:if` warunek powinien zostać zakończony pomyślnie, gdy będziesz kontynuować proces debugowania.
 
-## <a name="step-through-the-code"></a>Krok po kroku przez kod
+## <a name="step-through-the-code"></a>Przechodzenie przez kod
 
 1. Naciśnij klawisz **F5**, aby kontynuować.
 
-   Ponieważ pierwszy węzeł księgi spełnił `xsl:if` warunek, węzeł księgi jest dodawany do pliku wyjściowego *poniżej średniej.xml.* Debuger kontynuuje wykonywanie, dopóki nie zostanie ponownie `xsl:if` umieszczony na elemencie w arkuszu stylów. Debuger jest teraz umieszczony w drugim węźle księgi w pliku *books.xml.*
+   Ponieważ pierwszy węzeł książki spełnił `xsl:if` warunek, węzeł książki jest dodawany do *below-average.xml* pliku wyjściowego. Debuger będzie nadal wykonywany do momentu ponownego pozycjonowania `xsl:if` elementu w arkuszu stylów. Debuger jest teraz umieszczony w drugim węźle książki w pliku *books.xml* .
 
-   W oknie **Czujka 1** `self::node()` wartość zmienia się na drugi węzeł księgi. Badając wartość elementu ceny, można ustalić, że cena jest powyżej średniej, w związku z `xsl:if` tym warunek powinien zakończyć się niepowodzeniem.
+   W oknie **czujka 1** `self::node()` wartość zmieni się na drugi węzeł książki. Sprawdzając wartość elementu Price, można określić, że cena jest wyższa niż średnia, w rezultacie `xsl:if` warunek powinien zakończyć się niepowodzeniem.
 
 2. Naciśnij klawisz **F5**, aby kontynuować.
 
-   Ponieważ drugi węzeł księgi `xsl:if` nie spełnia tego warunku, węzeł księgi nie jest dodawany do pliku wyjściowego *poniżej średniej.xml.* Debuger kontynuuje wykonywanie, dopóki nie zostanie ponownie `xsl:if` umieszczony na elemencie w arkuszu stylów. Debuger jest teraz umieszczony w `book` trzecim węźle w pliku *books.xml.*
+   Ponieważ drugi węzeł książki nie spełnia `xsl:if` warunku, węzeł książki nie zostanie dodany do pliku wyjściowego *below-average.xml* . Debuger kontynuuje działanie, dopóki nie zostanie ponownie umieszczony na `xsl:if` elemencie w arkuszu stylów. Debuger jest teraz umieszczony w trzecim `book` węźle w pliku *books.xml* .
 
-   W oknie **Czujka 1** `self::node()` wartość zmienia się na węzeł trzeciej księgi. Badając wartość `price` elementu, można określić, że cena jest poniżej średniej. Warunek `xsl:if` powinien zakończyć się pomyślnie.
+   W oknie **czujka 1** `self::node()` wartość zmieni się na trzeci węzeł książki. Sprawdzając wartość `price` elementu, można określić, że cena jest niższa od średniej. `xsl:if`Warunek powinien się powieść.
 
 3. Naciśnij klawisz **F5**, aby kontynuować.
 
-   Ponieważ `xsl:if` warunek został spełniony, trzecia książka jest dodawana do pliku *wyjściowego poniżej średniej.xml.* Wszystkie książki w dokumencie XML zostały przetworzone, a debuger zatrzymuje się.
+   Ponieważ `xsl:if` warunek został spełniony, trzecia książka jest dodawana do pliku wyjściowego *below-average.xml* . Wszystkie książki w dokumencie XML zostały przetworzone i debuger zatrzyma działanie.
 
-## <a name="sample-files"></a>Przykładowe pliki
+## <a name="sample-files"></a>Pliki przykładowe
 
-Następujące dwa pliki są używane przez przewodnik.
+Przewodnik korzysta z poniższych dwóch plików.
 
-### <a name="below-averagexsl"></a>poniżej średniej.xsl
+### <a name="below-averagexsl"></a>below-Average. xsl
 
 ```xml
 <?xml version='1.0'?>
@@ -155,6 +155,6 @@ Następujące dwa pliki są używane przez przewodnik.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)

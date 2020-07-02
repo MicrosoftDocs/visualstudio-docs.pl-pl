@@ -1,7 +1,7 @@
 ---
-title: Tworzenie minidumps ze wszystkimi stosami połączeń
+title: Utwórz minizrzutów ze wszystkimi stosami wywołań
 ms.date: 06/27/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - minidumps for Visual Studio issues"
 author: corob-msft
@@ -14,34 +14,34 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 7b3be91e5d0d2e1f14724dd647670fc4885bcd4d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77271189"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770835"
 ---
-# <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Tworzenie minidumps dla procesu visual studio ze wszystkimi stosami wywołań
+# <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Utwórz minizrzutów dla procesu programu Visual Studio ze wszystkimi stosami wywołań
 
-W niektórych przypadkach firma Microsoft może poprosić o minidump uruchomionego procesu programu Visual Studio z informacjami dla wszystkich stosów wywołań. Aby zebrać te informacje, wykonaj następujące czynności:
+W niektórych przypadkach firma Microsoft może zażądać minizrzutu uruchomionego procesu programu Visual Studio z informacjami dla wszystkich stosów wywołań. Aby zebrać te informacje, wykonaj następujące kroki:
 
-## <a name="create-the-minidump-file"></a>Tworzenie pliku minidump
+## <a name="create-the-minidump-file"></a>Utwórz plik minizrzutu
 
 1. Uruchom nowe wystąpienie programu Visual Studio.
-1. Z menu głównego wybierz polecenie **Debug** > **attach to process**.
-1. Zaznacz odpowiednie pole wyboru **Zarządzane** i **natywne** i naciśnij **przycisk Dołącz**.
+1. Z menu głównego wybierz polecenie **Debuguj**  >  **Dołącz do procesu**.
+1. Zaznacz odpowiednie pola wyboru **zarządzane** i **natywne** i naciśnij przycisk **Dołącz**.
 
    ![Dołącz do procesu](../ide/media/attach-to-process.png)
 
-1. Wybierz inne wystąpienie programu Visual Studio, do które chcesz dołączyć, z listy uruchomionych procesów.
-1. Z menu głównego wybierz **polecenie Debug** > **Break All**.
-1. Z menu głównego wybierz polecenie **Debug** > **Save Dump As**.
+1. Wybierz inne wystąpienie programu Visual Studio do dołączenia z listy uruchomionych procesów.
+1. Z menu głównego wybierz kolejno opcje **Debuguj**  >  **Przerwij wszystko**.
+1. Z menu głównego wybierz **Debuguj**  >  **Zapisz zrzut jako**.
 
-## <a name="get-the-call-stacks-from-the-minidump"></a>Pobierz stosy połączeń z minidump
+## <a name="get-the-call-stacks-from-the-minidump"></a>Pobierz stosy wywołań z minizrzutu
 
 1. Otwórz plik zrzutu w programie Visual Studio.
-1. Przejdź do pozycji**Opcje** >  **narzędzi** > **Debugowanie** > **symboli** i upewnij się, że **serwery symboli firmy Microsoft** są sprawdzane w **lokalizacjach pliku symbolu (pdb).**
-1. Otwieranie okna **polecenia** **(Wyświetlanie** > **okna polecenia systemu Windows** > **Command Window**)
-1. Wpisz "~*k". W oknie są wyświetlane stosy wywołań wszystkich wątków.
-1. Skopiuj cały tekst z okna polecenia i zapisz go w pliku tekstowym.
-1. Dołącz plik txt do błędu.
+1. Przejdź do **Tools**  >  **opcji Narzędzia Opcje**  >  **debugowania**  >  **symbole** i upewnij się, że **serwery symboli firmy Microsoft** są zaznaczone w **lokalizacji pliku symboli (. pdb)**.
+1. Otwórz okno **wiersza polecenia** (**Wyświetl**  >  **inne**  >  **okno polecenia**systemu Windows)
+1. Typ "~ * k". W oknie zostaną wyświetlone stosy wywołań wszystkich wątków.
+1. Skopiuj cały tekst z okna poleceń i Zapisz go w pliku tekstowym.
+1. Dołącz plik txt do usterki.

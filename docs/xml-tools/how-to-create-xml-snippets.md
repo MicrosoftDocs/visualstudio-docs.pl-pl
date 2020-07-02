@@ -1,19 +1,19 @@
 ---
 title: 'Instrukcje: Tworzenie fragmentów kodu XML'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592753"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815399"
 ---
 # <a name="how-to-create-xml-snippets"></a>Instrukcje: Tworzenie fragmentów kodu XML
 
@@ -33,7 +33,7 @@ Aby utworzyć nowy fragment kodu XML, Utwórz nowy plik XML i użyj funkcji **Ws
 
 5. Wprowadź zmiany w nowym fragmencie kodu.
 
-6. Z menu **plik** wybierz polecenie **Zapisz plik xmlfile. XML**.
+6. Z menu **plik** wybierz polecenie **Zapisz XMLFile.xml**.
 
      Zostanie wyświetlone okno dialogowe **Zapisywanie pliku jako** .
 
@@ -56,16 +56,16 @@ Edytor obsługuje dwa typy fragmentów kodu:
 </SnippetTypes>
 ```
 
-Typ `Expansion` określa, czy fragment pojawia się po wywołaniu polecenia **Wstaw fragment kodu** . Typ `SurroundsWith` określa, czy fragment pojawia się po wywołaniu poleceń **Otocz za pomocą** polecenia.
+`Expansion`Typ określa, czy fragment pojawia się po wywołaniu polecenia **Wstaw fragment kodu** . `SurroundsWith`Typ określa, czy fragment pojawia się po wywołaniu poleceń **Otocz za pomocą** polecenia.
 
 ### <a name="code-element"></a>Element Code
 
-Element `Code` definiuje tekst XML, który zostanie wstawiony po wywołaniu fragmentu kodu.
+`Code`Element definiuje tekst XML, który zostanie wstawiony po wywołaniu fragmentu kodu.
 
 > [!NOTE]
-> Tekst fragmentu kodu XML musi znajdować się w sekcji `<![CDATA[...]]>`.
+> Tekst fragmentu kodu XML musi znajdować się w `<![CDATA[...]]>` sekcji.
 
-Poniżej znajduje się element `Code`, który jest tworzony przy użyciu standardowego fragmentu kodu.
+Poniżej znajduje się `Code` element, który jest tworzony przez fragment kodu.
 
 ```xml
 <Code Language="XML">
@@ -75,15 +75,15 @@ Poniżej znajduje się element `Code`, który jest tworzony przy użyciu standar
 </Code>
 ```
 
-Element `Code` zawiera trzy zmienne.
+`Code`Element zawiera trzy zmienne.
 
-- $name $ to zmienna zdefiniowana przez użytkownika. Tworzy element `name`, który ma edytowalną wartość domyślną "name". Zmienne zdefiniowane przez użytkownika są definiowane przy użyciu elementu `Literal`.
+- $name $ to zmienna zdefiniowana przez użytkownika. Tworzy `name` element, który ma edytowalną wartość domyślną "name". Zmienne zdefiniowane przez użytkownika są definiowane przy użyciu `Literal` elementu.
 
 - $selected $ jest wstępnie zdefiniowaną zmienną. Reprezentuje tekst wybrany w edytorze XML przed wywołaniem fragmentu kodu. Położenie tej zmiennej określa miejsce, w którym zaznaczony tekst jest wyświetlany w fragmencie kodu, który otacza ten wybór.
 
 - $end $ jest wstępnie zdefiniowaną zmienną. Gdy użytkownik naciśnie klawisz **Enter** , aby zakończyć edytowanie pól fragmentu kodu, ta zmienna określa, gdzie jest przenoszony karetka (^).
 
-  Powyższy element `Code` wstawia następujący tekst XML:
+  Powyższy `Code` element wstawia następujący tekst XML:
 
 ```xml
 <test>
@@ -95,7 +95,7 @@ Wartość elementu Name jest oznaczona jako edytowalny region.
 
 ### <a name="literal-element"></a>Literal — element
 
-Element `Literal` służy do identyfikowania tekstu zastępczego, który można dostosować po jego wstawieniu do pliku. Na przykład ciągi literałów, wartości liczbowe i niektóre nazwy zmiennych mogą być deklarowane jako literały. Można zdefiniować dowolną liczbę literałów w fragmencie kodu XML i można odwoływać się do nich wiele razy z fragmentu kodu. Poniżej znajduje się przykład elementu `Literal`, który definiuje zmienną $name $, której wartością domyślną jest "name".
+`Literal`Element służy do identyfikowania tekstu zastępczego, który można dostosować po jego wstawieniu do pliku. Na przykład ciągi literałów, wartości liczbowe i niektóre nazwy zmiennych mogą być deklarowane jako literały. Można zdefiniować dowolną liczbę literałów w fragmencie kodu XML i można odwoływać się do nich wiele razy z fragmentu kodu. Poniżej znajduje się przykład `Literal` elementu, który definiuje zmienną $Name $, której wartością domyślną jest "name".
 
 ```xml
 <Literal>
@@ -104,7 +104,7 @@ Element `Literal` służy do identyfikowania tekstu zastępczego, który można 
 </Literal
 ```
 
-Literały mogą również odwoływać się do funkcji. Edytor XML zawiera funkcję o nazwie **LookupPrefix**. Funkcja **LookupPrefix** wyszukuje podany identyfikator URI przestrzeni nazw z lokalizacji w dokumencie XML, z której jest wywoływany ten fragment kodu, i zwraca prefiks przestrzeni nazw, który jest zdefiniowany dla tej przestrzeni nazw (jeśli istnieje) i zawiera dwukropek (:) w tej nazwie. Poniżej znajduje się przykład elementu `Literal`, który używa funkcji **LookupPrefix** .
+Literały mogą również odwoływać się do funkcji. Edytor XML zawiera funkcję o nazwie **LookupPrefix**. Funkcja **LookupPrefix** wyszukuje podany identyfikator URI przestrzeni nazw z lokalizacji w dokumencie XML, z której jest wywoływany ten fragment kodu, i zwraca prefiks przestrzeni nazw, który jest zdefiniowany dla tej przestrzeni nazw (jeśli istnieje) i zawiera dwukropek (:) w tej nazwie. Poniżej znajduje się przykład `Literal` elementu, który używa funkcji **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">

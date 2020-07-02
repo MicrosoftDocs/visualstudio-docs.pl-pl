@@ -1,22 +1,22 @@
 ---
 title: 'Przewodnik: używanie hierarchii XSLT'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592454"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815035"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Przewodnik: używanie hierarchii XSLT
 
-Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z programowaniem XML. Arkusz stylów XSLT często używa instrukcji `includes` i `imports`. Kompilacja zaczyna się od głównego arkusza stylów, ale gdy zobaczysz błąd w wyniku kompilowania arkusza stylów XSLT, błąd może pochodzić z innego źródła niż główny arkusz stylów. Usunięcie błędu lub edytowanie arkusza stylów może wymagać dostępu do arkuszy stylów dołączonych lub zaimportowanych. Przechodzenie przez arkusz stylów w debugerze może otwierać dołączone i zaimportowane arkusze stylów. w pewnym momencie można dodać punkt przerwania w jednym lub kilku dołączonych arkuszach stylów.
+Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z programowaniem XML. Arkusz stylów XSLT często używa `includes` instrukcji i `imports` . Kompilacja zaczyna się od głównego arkusza stylów, ale gdy zobaczysz błąd w wyniku kompilowania arkusza stylów XSLT, błąd może pochodzić z innego źródła niż główny arkusz stylów. Usunięcie błędu lub edytowanie arkusza stylów może wymagać dostępu do arkuszy stylów dołączonych lub zaimportowanych. Przechodzenie przez arkusz stylów w debugerze może otwierać dołączone i zaimportowane arkusze stylów. w pewnym momencie można dodać punkt przerwania w jednym lub kilku dołączonych arkuszach stylów.
 
-Innym scenariuszem, który może być przydatne narzędzie hierarchii XSLT, jest umieszczenie punktów przerwania w regułach wbudowanych szablonów. Reguły szablonów to specjalne szablony wygenerowane dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates`, gdy żaden inny szablon nie jest zgodny z węzłem. Aby zaimplementować debugowanie w regułach wbudowanych szablonów, debuger XSLT generuje plik z regułami w folderze tymczasowym i kompiluje je razem z głównym arkuszem stylów. Bez przechodzenia do kodu z niektórych `xsl:apply-template`może być trudno znaleźć arkusze stylów, które zostały uwzględnione w głównym arkuszu stylów lub znaleźć i otworzyć arkusz stylów z wbudowanymi regułami szablonu.
+Innym scenariuszem, który może być przydatne narzędzie hierarchii XSLT, jest umieszczenie punktów przerwania w regułach wbudowanych szablonów. Reguły szablonów to specjalne szablony wygenerowane dla każdego trybu arkusza stylów i wywoływane przez, `xsl:apply-templates` gdy żaden inny szablon nie jest zgodny z węzłem. Aby zaimplementować debugowanie w regułach wbudowanych szablonów, debuger XSLT generuje plik z regułami w folderze tymczasowym i kompiluje je razem z głównym arkuszem stylów. Bez przechodzenia do kodu z niektórych `xsl:apply-template` , trudno jest znaleźć arkusze stylów, które zostały uwzględnione w głównym arkuszu stylów lub znaleźć i otworzyć arkusz stylów z wbudowanymi regułami szablonu.
 
 W przykładzie w tym temacie pokazano debugowanie w arkuszu stylów, do którego się odwołuje.
 
@@ -103,11 +103,11 @@ W przykładzie w tym temacie pokazano debugowanie w arkuszu stylów, do którego
     </xsl:stylesheet>
     ```
 
-4. Dodaj punkt przerwania w instrukcji `<xsl:include href="xslincludefile.xsl" />`.
+4. Dodaj punkt przerwania w instrukcji `<xsl:include href="xslincludefile.xsl" />` .
 
 5. Rozpocznij debugowanie.
 
-6. Gdy debuger zatrzyma się na instrukcji `<xsl:include href="xslincludefile.xsl" />`, naciśnij przycisk **Przejdź do** przycisku. Debugowanie może być kontynuowane w przywoływanym arkuszu stylów. Hierarchia jest widoczna, a Projektant wyświetla właściwą ścieżkę.
+6. Gdy debuger zatrzyma się na instrukcji `<xsl:include href="xslincludefile.xsl" />` , naciśnij przycisk **Przejdź do** . Debugowanie może być kontynuowane w przywoływanym arkuszu stylów. Hierarchia jest widoczna, a Projektant wyświetla właściwą ścieżkę.
 
 ## <a name="see-also"></a>Zobacz także
 

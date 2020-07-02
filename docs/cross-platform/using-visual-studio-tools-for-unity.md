@@ -1,220 +1,220 @@
 ---
-title: Korzystanie z narzędzi programu Visual Studio dla unity | Dokumenty firmy Microsoft
+title: Używanie Visual Studio Tools for Unity | Microsoft Docs
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 author: therealjohn
 ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1bca9bed18de822de71ca441387adeaefc65ec3
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f65945f28a577201c1308694bb7196d464330dc1
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649395"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815165"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Korzystanie z narzędzi Visual Studio Tools for Unity
 
-W tej sekcji dowiesz się, jak używać narzędzi visual studio dla funkcji integracji i produktywności Unity i jak używać debugera programu Visual Studio do tworzenia unity.
+W tej sekcji dowiesz się, jak korzystać z funkcji integracji i zwiększania produktywności Visual Studio Tools for Unity oraz jak korzystać z debugera programu Visual Studio na potrzeby projektowania środowiska Unity.
 
-## <a name="open-unity-scripts-in-visual-studio"></a>Otwieranie skryptów Unity w programie Visual Studio
+## <a name="open-unity-scripts-in-visual-studio"></a>Otwieranie skryptów aparatu Unity w programie Visual Studio
 
-Gdy visual studio jest [ustawiony jako edytor skryptów zewnętrznych dla Unity,](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio)otwarcie dowolnego skryptu z edytora Unity zostanie automatycznie uruchomiony lub przełączyć się do programu Visual Studio z otwartym wybranym skryptem. Wystarczy dwukrotnie kliknąć skrypt w projekcie Unity.
+Gdy program Visual Studio jest [ustawiony jako zewnętrzny edytor skryptów dla aparatu Unity](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio), otwarcie dowolnego skryptu z edytora Unity zostanie automatycznie uruchomione lub przejdzie do programu Visual Studio z otwartym wybranym skryptem. Po prostu kliknij dwukrotnie skrypt w projekcie aparatu Unity.
 
-Alternatywnie można otworzyć program Visual Studio bez otwierania skryptu w edytorze źródłowym, wybierając **open C# Project** z menu **Zasoby** w Unity.
+Alternatywnie możesz otworzyć program Visual Studio bez otwartego skryptu w edytorze źródła, wybierając pozycję **Otwórz projekt C#** z menu **zasoby** w aparacie Unity.
 
-![Otwórz projekt W#](media/vstu_open-csharp-project.png)
+![Otwórz projekt C#](media/vstu_open-csharp-project.png)
 
-## <a name="unity-documentation-access"></a>Dostęp do dokumentacji unity
+## <a name="unity-documentation-access"></a>Dostęp do dokumentacji aparatu Unity
 
-Można uzyskać dostęp do dokumentacji skryptów Unity szybko z programu Visual Studio. Jeśli visual studio tools for Unity nie znajdzie dokumentacji interfejsu API lokalnie, spróbuje znaleźć go w trybie online.
+Możesz szybko uzyskać dostęp do dokumentacji dotyczącej skryptów aparatu Unity z programu Visual Studio. Jeśli Visual Studio Tools for Unity nie odnajdzie lokalnie dokumentacji interfejsu API, spróbuje ją znaleźć w trybie online.
 
-- W programie Visual Studio wyróżnij lub umieść kursor za pomocą interfejsu API unity, o który chcesz się dowiedzieć, a następnie naciśnij **klawisze Ctrl**+**Alt**+**M**, **Ctrl**+**H**
+- W programie Visual Studio zaznacz lub umieść kursor nad interfejsem API Unity, dla którego chcesz się dowiedzieć, a następnie naciśnij **klawisze CTRL** + **Alt** + **M**, **Ctrl** + **H**
 
-## <a name="intellisense-for-unity-api-messages"></a>Komunikaty interfejsu API Intellisense for Unity
+## <a name="intellisense-for-unity-api-messages"></a>Funkcja IntelliSense dla komunikatów interfejsu API usługi Unity
 
-Intellisense code-completion ułatwia implementowanie komunikatów interfejsu API Unity w skryptach MonoBehaviour i pomaga w nauce interfejsu API Unity. Aby użyć komunikatów IntelliSense for Unity:
+Uzupełnianie kodu IntelliSense ułatwia implementowanie komunikatów interfejsu API środowiska Unity w skryptach o stałej obsłudze oraz ułatwia naukę interfejsu API aparatu Unity. Aby używać funkcji IntelliSense dla komunikatów Unity:
 
-1. Umieść kursor na nowej linii wewnątrz treści klasy, która `MonoBehaviour`pochodzi od .
+1. Umieść kursor w nowym wierszu wewnątrz treści klasy, która pochodzi od `MonoBehaviour` .
 
-2. Zacznij wpisywać nazwę wiadomości Unity, `OnTriggerEnter`na przykład .
+2. Rozpocznij wpisywanie nazwy komunikatu aparatu Unity, na przykład `OnTriggerEnter` .
 
-3. Po wpisaniu liter "**ontri**" pojawi się lista sugestii IntelliSense.
+3. Po wpisaniu liter "**ontri**" zostanie wyświetlona lista sugestii IntelliSense.
 
    ![Korzystanie z IntelliSense](media/vstu_intellisense1.png)
 
-4. Zaznaczenie na liście można zmienić na trzy sposoby:
+4. Wybór na liście można zmienić na trzy sposoby:
 
-    - Za pomocą klawiszy strzałek **w górę** i **w dół.**
+    - Za pomocą klawiszy strzałek w **górę** i **w dół** .
 
-    - Klikając myszką na żądany element.
+    - Klikając przyciskiem myszy na żądanym elemencie.
 
     - Kontynuując wpisywanie nazwy żądanego elementu.
 
-5. IntelliSense może wstawić wybrany komunikat Unity, łącznie z niezbędnymi parametrami:
+5. Technologia IntelliSense może wstawić wybrany komunikat Unity, w tym wszelkie niezbędne parametry:
 
-    - Naciskając **klawisz Tab**.
+    - Naciskając klawisz **Tab**.
 
-    - Naciskając **klawisz Enter**.
+    - Naciskając klawisz **Enter**.
 
-    - Klikając dwukrotnie wybrany element.
+    - Przez dwukrotne kliknięcie wybranego elementu.
 
-   ![Wstaw komunikat Unity z usługi IntelliSense](media/vstu_intellisense2.png)
+   ![Wstawianie komunikatu aparatu Unity z funkcji IntelliSense](media/vstu_intellisense2.png)
 
-## <a name="unity-monobehavior-scripting-wizard"></a>Kreator skryptów Unity MonoBehavior
+## <a name="unity-monobehavior-scripting-wizard"></a>Kreator skryptów bezobsługowych aparatu Unity
 
-Można użyć Kreatora MonoBehavior, aby wyświetlić listę wszystkich metod interfejsu API Unity i szybko zaimplementować pustą definicję. Ta funkcja, szczególnie z opcji **Generuj komentarze metody** włączone, jest przydatna, jeśli nadal uczysz się, co jest dostępne w interfejsie API Unity.
+Aby wyświetlić listę wszystkich metod interfejsu API aparatu Unity i szybko zaimplementować pustą definicję, można użyć kreatora z zachowaniem prostym. Ta funkcja, szczególnie z włączoną opcją **Generuj Komentarze metody** , jest przydatna, jeśli nadal wiesz, co jest dostępne w interfejsie API aparatu Unity.
 
-Aby utworzyć puste definicje metod MonoBehavior za pomocą Kreatora MonoBehavior:
+Aby utworzyć puste definicje metod antyzachowań przy użyciu kreatora bezproblemowego:
 
-1. W programie Visual Studio umieść kursor w miejscu, w którym mają być wstawiane metody, a następnie naciśnij klawisz **Ctrl**+**Shift**+**M,** aby uruchomić Kreatora MonoBehavior.
+1. W programie Visual Studio Umieść kursor w miejscu, w którym mają zostać wstawione metody, a następnie naciśnij **klawisze CTRL** + **+** + **M** , aby uruchomić Kreatora działania.
 
 2. W oknie **Tworzenie metod skryptu** zaznacz pole wyboru obok nazwy każdej metody, którą chcesz dodać.
 
-3. Użyj **listy** rozwijanej Wersji frameworka, aby wybrać żądaną wersję.
+3. Użyj listy rozwijanej **wersja struktury** , aby wybrać żądaną wersję.
 
-4. Domyślnie metody są wstawiane w miejscu kursora. Alternatywnie można wybrać, aby wstawić je po dowolnej metody, która jest już zaimplementowana w klasie, zmieniając wartość **wstawiania punktu** listy rozwijanej do lokalizacji, które chcesz.
+4. Domyślnie metody są wstawiane na pozycji kursora. Alternatywnie można wybrać opcję wstawienia ich po dowolnej metodzie, która jest już zaimplementowana w klasie, zmieniając wartość menu rozwijanego **punktu wstawiania** do wybranej lokalizacji.
 
-5. Jeśli chcesz, aby kreator wygenerował komentarze dla wybranych metod, zaznacz pole wyboru **Generuj komentarze metody.** Te komentarze mają na celu pomóc zrozumieć, kiedy metoda jest wywoływana i jakie są jej ogólne obowiązki.
+5. Jeśli chcesz, aby Kreator generował komentarze dotyczące wybranych metod, zaznacz pole wyboru **Generuj Komentarze do metody** . Te komentarze mają na celu ułatwienie zrozumienia, kiedy Metoda jest wywoływana i jakie są jej ogólne zobowiązania.
 
-6. Wybierz przycisk **OK,** aby zamknąć kreatora i wstawić metody do kodu.
+6. Wybierz przycisk **OK** , aby zamknąć kreatora i wstawić metody do kodu.
 
-   ![Okno dialogowe kreatora monobehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![Okno dialogowe kreatora działania.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
-## <a name="unity-project-explorer"></a>Eksplorator projektu Unity
+## <a name="unity-project-explorer"></a>Eksplorator projektów aparatu Unity
 
-![Okno Eksplorator projektu Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Okno Eksplorator projektów środowiska Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
-Unity Project Explorer pokazuje wszystkie pliki projektu Unity i katalogi w taki sam sposób, jak Edytor Unity nie. To różni się od nawigacji skryptów Unity z normalnym Visual Studio Solution Explorer, który organizuje je w projektach i rozwiązanie generowane przez program Visual Studio.
+Eksplorator projektów aparatu Unity pokazuje wszystkie pliki i katalogi projektu środowiska Unity w taki sam sposób, jak edytor Unity. Różni się to od nawigowania po skryptach aparatu Unity przy użyciu normalnego Eksplorator rozwiązań programu Visual Studio, który organizuje je w projekty i rozwiązanie wygenerowane przez program Visual Studio.
 
-- W głównym menu programu Visual Studio wybierz pozycję **Wyświetl > Eksploratora projektu Unity**. Skrót klawiaturowy: **Alt**+**Shift**+**E**
+- W głównym menu programu Visual Studio wybierz pozycję **wyświetl > Eksplorator projektów środowiska Unity**. Skrót klawiaturowy: **Alt** + **SHIFT** + **E**
 
-   ![Służy do wyświetlania okna Eksploratora projektów Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![Wyświetl okno Eksplorator projektów środowiska Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
-## <a name="unity-debugging"></a>Debugowanie jedności
+## <a name="unity-debugging"></a>Debugowanie aparatu Unity
 
-Narzędzia programu Visual Studio dla unity umożliwia debugowanie skryptów edytora i gry dla projektu Unity przy użyciu zaawansowanego debugera programu Visual Studio.
+Visual Studio Tools for Unity umożliwia debugowanie skryptów edytora i gier dla projektu Unity przy użyciu zaawansowanego debugera programu Visual Studio.
 
 ### <a name="debug-in-the-unity-editor"></a>Debugowanie w edytorze Unity
 
 #### <a name="start-debugging"></a>Rozpocznij debugowanie
 
-1. Połącz program Visual Studio z unity, klikając przycisk **Odtwórz** z etykietą **Dołącz do unity**lub użyj skrótu klawiaturowego **F5**.
+1. Połącz program Visual Studio z aparatem Unity **Play** , klikając przycisk Odtwórz **z etykietą Dołącz do aparatu Unity**lub użyj skrótu klawiaturowego **F5**.
 
-   ![Kliknij przycisk Odtwórz w programie Visual Studio](media/vstu_play-button.png)
+   ![Kliknij pozycję Odtwórz w programie Visual Studio](media/vstu_play-button.png)
 
-2. Przełącz się na Jedność i kliknij przycisk **Odtwórz,** aby uruchomić grę w edytorze.
+2. Przejdź do aparatu Unity i kliknij przycisk **Odtwórz** , aby uruchomić grę w edytorze.
 
-   ![Kliknij przycisk Odtwórz w jedności](media/vstu_unity-play-button.png)
+   ![Kliknij pozycję Odtwórz w środowisku Unity](media/vstu_unity-play-button.png)
 
-3. Gdy gra jest uruchomiona w edytorze Unity podczas połączenia z programem Visual Studio, wszystkie punkty przerwania napotka wstrzymanie wykonania gry i przywołać wiersz kodu, w którym gra trafić punkt przerwania w programie Visual Studio.
+3. Gdy gra jest uruchomiona w edytorze aparatu Unity podczas połączenia z programem Visual Studio, wszystkie napotkane punkty przerwania spowodują wstrzymanie wykonywania gry i wyświetlenie wiersza kodu, w którym gra osiągnęła punkt przerwania w programie Visual Studio.
 
-#### <a name="stop-debugging"></a>Zatrzymywać debugowanie
+#### <a name="stop-debugging"></a>Zatrzymaj debugowanie
 
 - Kliknij przycisk **Zatrzymaj** w programie Visual Studio lub użyj skrótu klawiaturowego **Shift + F5**.
 
-  ![Kliknij pozycję Zatrzymaj w programie Visual Studio](media/vstu_stop-debugger.png)
+  ![Kliknij przycisk Zatrzymaj w programie Visual Studio](media/vstu_stop-debugger.png)
 
-Aby dowiedzieć się więcej na temat debugowania w programie Visual Studio, zobacz [Pierwsze spojrzenie na debuger programu Visual Studio](../debugger/debugger-feature-tour.md).
+Aby dowiedzieć się więcej o debugowaniu w programie Visual Studio, zobacz [pierwsze spojrzenie na debuger programu Visual Studio](../debugger/debugger-feature-tour.md).
 
-#### <a name="attach-to-unity-and-play"></a>Dołącz do Jedności i Grać
+#### <a name="attach-to-unity-and-play"></a>Dołącz do aparatu Unity i Odtwórz
 
-Dla dodatkowej wygody można zmienić przycisk **Dołącz do jedności** na Tryb **dołączenia do unity i trybu odtwarzania.**
+Aby dodać wygodę, można zmienić przycisk **Dołącz do aparatu Unity** w celu **dołączenia do trybu Unity i tryb odtwarzania** .
 
-1. Kliknij małą **strzałkę w dół** obok przycisku Dołącz do **jedności.**
+1. Kliknij małą **strzałkę w dół** obok przycisku **Dołącz do aparatu Unity** .
 
-1. Z menu rozwijanego **wybierz pozycję Dołącz do unity i odtwórz.**
+1. Wybierz opcję **Dołącz do aparatu Unity i Odtwórz** z menu rozwijanego.
 
-    ![Dołączanie i odtwarzanie](media/vstu_attach-and-play.png)
+    ![Dołącz i Odtwórz](media/vstu_attach-and-play.png)
 
-Przycisk odtwarzania zostanie oznaczony jako **Dołącz do Unity i Play**. Kliknięcie tego przycisku lub za pomocą skrótu klawiaturowego **F5** teraz automatycznie przełącza się do edytora Unity i uruchamia grę w edytorze, oprócz dołączania debugera programu Visual Studio.
+Przycisk odtwarzania otrzymuje oznaczenie " **Dołącz do aparatu Unity" i Odtwórz**. Kliknięcie tego przycisku lub użycie skrótu klawiaturowego **F5** powoduje automatyczne przełączenie do edytora aparatu Unity i uruchomienie gry w edytorze, oprócz dołączania debugera programu Visual Studio.
 
-Kliknięcie przycisku **Zatrzymaj** w programie Visual Studio lub za pomocą skrótu klawiaturowego **Shift**+**F5** spowoduje automatyczne zatrzymanie gry w edytorze Unity.
+Kliknięcie przycisku **Zatrzymaj** w programie Visual Studio lub użycie skrótu klawiaturowego **SHIFT** + **F5** spowoduje automatyczne zatrzymanie gry w edytorze aparatu Unity.
 
-### <a name="debug-unity-player-builds"></a>Debug Unity gracz buduje
+### <a name="debug-unity-player-builds"></a>Debuguj kompilacje odtwarzacza Unity
 
-Można debugować kompilacje rozwoju różnych odtwarzaczy Unity z Visual Studio.
+Można debugować kompilacje deweloperskie różnych graczy programu Unity przy użyciu programu Visual Studio.
 
 #### <a name="enable-script-debugging-in-a-unity-player"></a>Włączanie debugowania skryptów w odtwarzaczu Unity
 
-1. W obszarze Unity otwórz ustawienia kompilacji, wybierając **pozycję Ustawienia > kompilacji plików**.
+1. W aparacie Unity Otwórz ustawienia kompilacji, wybierając kolejno pozycje **plik > ustawienia kompilacji**.
 
-2. W oknie Ustawienia kompilacji zaznacz pola wyboru **Kompilacja dewelopera** i **Debugowanie skryptów.**
+2. W oknie Ustawienia kompilacji zaznacz pola wyboru **kompilacja** i **debugowanie skryptu** .
 
-   ![Konfigurowanie ustawień kompilacji Unity do debugowania.](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
+   ![Skonfiguruj ustawienia kompilacji aparatu Unity na potrzeby debugowania.](../cross-platform/media/vstu_debugging_build_settings.png "vstu_debugging_build_settings")
 
-#### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>Wybierz wystąpienie Unity, aby dołączyć debuger do
+#### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>Wybierz wystąpienie aparatu Unity, do którego ma zostać dołączony debuger
 
-- W programie Visual Studio w menu głównym wybierz polecenie **Debugowanie > Dołącz debuger unity**.
+- W programie Visual Studio w menu głównym wybierz polecenie **debuguj > Dołącz debuger Unity**.
 
-   ![Dołącz debuger Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Dołącz debuger aparatu Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
-   W oknie dialogowym **Wybierz wystąpienie unity** wyświetlane są pewne informacje o każdym wystąpieniu unity, z które można się połączyć.
+   W oknie dialogowym **Wybieranie wystąpienia aparatu Unity** są wyświetlane pewne informacje o każdym wystąpieniu aparatu Unity, z którym można nawiązać połączenie.
 
-   ![Wybierz wystąpienie Unity, z którą chcesz się połączyć.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![Wybierz wystąpienie aparatu Unity, z którym chcesz nawiązać połączenie.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
-   **Projekt**
+   **Project**
 
-   Nazwa projektu Unity, który jest uruchomiony w tym wystąpieniu Unity.
+   Nazwa projektu Unity, który jest uruchomiony w tym wystąpieniu aparatu Unity.
 
-   **Maszyna** Nazwa komputera lub urządzenia, na których jest uruchomione to wystąpienie Unity.
+   **Maszyna** Nazwa komputera lub urządzenia, na którym działa to wystąpienie aparatu Unity.
 
-   **Wpisz** **Edytor,** jeśli to wystąpienie Unity jest uruchomiony jako część Edytora Unity; **Gracz,** jeśli to wystąpienie Unity jest samodzielnym graczem.
+   **Type** **Edytor** typów, jeśli to wystąpienie aparatu Unity działa jako część edytora Unity; **Player** Jeśli to wystąpienie aparatu Unity jest odtwarzaczem autonomicznym.
 
-   **Port** Numer portu gniazda UDP, które to wystąpienie Unity komunikuje się nad.
+   **Port** Numer portu gniazda UDP, dla którego jest nawiązywane połączenie z tym wystąpieniem aparatu Unity.
 
 > [!IMPORTANT]
-> Ponieważ narzędzia programu Visual Studio dla unity i wystąpienie Unity komunikują się za pośrednictwem gniazda sieciowego UDP, zapora może o to poprosić. W takim przypadku musisz autoryzować połączenie, aby vstu i unity mogły się komunikować.
+> Ponieważ Visual Studio Tools for Unity i wystąpienie aparatu Unity komunikuje się za pośrednictwem gniazda sieciowego UDP, Zapora może zażądać tego programu. W takim przypadku konieczne będzie autoryzowanie połączenia, aby rozszerzenia VSTU i Unity mogły komunikować się.
 
-### <a name="debug-a-dll-in-your-unity-project"></a>Debugowanie biblioteki DLL w projekcie Unity
+### <a name="debug-a-dll-in-your-unity-project"></a>Debugowanie biblioteki DLL w projekcie aparatu Unity
 
-Wielu deweloperów Unity pisze składniki kodu jako zewnętrzne biblioteki DLL, dzięki czemu funkcje, które opracowują, mogą być łatwo współużytkowane z innymi projektami. Narzędzia programu Visual Studio dla unity ułatwia debugowanie kodu w tych bibliotekach DLL bezproblemowo z innym kodem w projekcie Unity.
-
-> [!NOTE]
-> W tej chwili Visual Studio Tools for Unity obsługuje tylko zarządzane biblioteki DLL. Nie obsługuje debugowania bibliotek DLL kodu macierzystego, takich jak te napisane w języku C++.
-
-Należy zauważyć, że scenariusz opisany w tym miejscu zakłada, że masz kod źródłowy — oznacza to, że tworzysz lub ponownie używasz własnego kodu własnej firmy lub masz kod źródłowy do biblioteki innej firmy i planuje wdrożyć go w projekcie Unity jako biblioteki DLL. W tym scenariuszu nie opisano debugowania biblioteki DLL, dla których nie masz kodu źródłowego.
-
-#### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Aby debugować zarządzany projekt DLL używany w projekcie Unity
-
-1. Dodaj istniejący projekt biblioteki DLL do rozwiązania programu Visual Studio generowanego przez narzędzia programu Visual Studio dla unity. Rzadziej można uruchamiać nowy projekt biblioteki DLL zarządzane, aby zawierać składniki kodu w projekcie Unity; jeśli tak jest, można dodać nowy projekt biblioteki DLL zarządzane zamiast tego rozwiązania programu Visual Studio. Aby uzyskać więcej informacji na temat dodawania nowego lub istniejącego projektu do rozwiązania, zobacz [Jak: Dodawanie projektów do rozwiązania](https://msdn.microsoft.com/library/ff460187.aspx).
-
-   ![Dodaj istniejący projekt biblioteki DLL do rozwiązania.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
-
-   W obu przypadkach Visual Studio Tools for Unity przechowuje odwołanie do projektu, nawet jeśli ma ponownie wygenerować pliki projektu i rozwiązania, więc wystarczy wykonać te kroki tylko raz.
-
-2. Odwołaj się do poprawnego profilu struktury Unity w projekcie DLL. W programie Visual Studio we właściwościach projektu biblioteki DLL ustaw właściwość **struktury docelowej** na używana wersja struktury Unity. Jest to biblioteka klas podstawowych Unity, która odpowiada zgodności interfejsu API, która jest przeznaczona dla projektu, na przykład biblioteki klas pełnych, mikroprzedsiębiorsk lub sieci web. Zapobiega to biblioteki DLL z wywoływania metod struktury, które istnieją w innych ramach lub poziomów zgodności, ale które mogą nie istnieć w wersji struktury Unity używasz.
+Wielu deweloperów aparatu Unity zapisuje składniki kodu jako zewnętrzne biblioteki DLL, dzięki czemu funkcje, które opracowują, mogą być łatwo współużytkowane z innymi projektami. Visual Studio Tools for Unity ułatwia debugowanie kodu w tych bibliotekach DLL bezproblemowo z innym kodem w projekcie środowiska Unity.
 
 > [!NOTE]
-> Następujące są wymagane tylko wtedy, gdy używasz środowiska wykonawczego starszej wersji Unity. Jeśli używasz nowego środowiska wykonawczego Unity, nie trzeba już używać tych dedykowanych profilów 3.5. Użyj profilu .NET 4.x zgodnego z twoją wersją Unity.
+> W tej chwili Visual Studio Tools for Unity obsługuje tylko zarządzane biblioteki DLL. Nie obsługuje debugowania bibliotek DLL kodu natywnego, takich jak te, które są zapisywane w języku C++.
 
-   ![Ustaw platformę docelową biblioteki DLL na platformę Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+Należy zauważyć, że w opisany tutaj scenariuszu założono, że masz kod źródłowy — to znaczy, że tworzysz lub ponownie korzystasz z własnego kodu pierwszej firmy lub masz kod źródłowy dla biblioteki innej firmy, i planujesz wdrożyć ją w projekcie Unity jako plik DLL. W tym scenariuszu nie opisano debugowania biblioteki DLL, dla której nie masz kodu źródłowego.
 
-3. Skopiuj bibliotekę DLL do folderu Zasobów projektu Unity. W unity zasoby są pliki, które są pakowane i wdrażane razem z aplikacją Unity, dzięki czemu mogą być ładowane w czasie wykonywania. Ponieważ biblioteki DLL są połączone w czasie wykonywania, biblioteki DLL muszą być wdrożone jako zasoby. Aby wdrożyć jako zasób, Edytor Unity wymaga bibliotek DLL, które mają być umieszczone wewnątrz folderu Zasoby w projekcie Unity. Można to zrobić na dwa sposoby:
+#### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Aby debugować zarządzany projekt DLL używany w projekcie aparatu Unity
 
-   - Zmodyfikuj ustawienia kompilacji projektu biblioteki DLL, aby uwzględnić zadanie utworzone po utworzeniu, które kopiuje wyjściowe pliki DLL i PDB z folderu wyjściowego do folderu **Zasoby** projektu Unity.
+1. Dodaj istniejący projekt DLL do rozwiązania programu Visual Studio wygenerowanego przez Visual Studio Tools for Unity. Rzadziej, możesz rozpocząć pracę z nowym zarządzanym projektem DLL, aby zawierał składniki kodu w projekcie Unity; w takim przypadku można zamiast tego dodać nowy zarządzany projekt do rozwiązania Visual Studio. Aby uzyskać więcej informacji na temat dodawania nowego lub istniejącego projektu do rozwiązania, zobacz [jak: Dodawanie projektów do rozwiązania](https://msdn.microsoft.com/library/ff460187.aspx).
 
-   - Zmodyfikuj ustawienia kompilacji projektu biblioteki DLL, aby ustawić jego folder **wyjściowy** jako folder Zasoby projektu Unity. Pliki DLL i PDB zostaną umieszczone w folderze **Zasoby.**
+   ![Dodaj istniejący projekt DLL do rozwiązania.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
-   Pliki PDB są potrzebne do debugowania, ponieważ zawierają symbole debugowania biblioteki DLL i mapują kod biblioteki DLL na formularz kodu źródłowego. Jeśli są przeznaczone dla starszego środowiska uruchomieniowego, Visual Studio Tools for Unity użyje informacji z biblioteki DLL i PDB do utworzenia biblioteki DLL. MDB, który jest formatem symbolu debugowania używanym przez starszy aparat skryptów Unity. Jeśli są przeznaczone dla nowego środowiska uruchomieniowego i przy użyciu Portable-PDB, Visual Studio Tools for Unity nie będzie próbował wykonać żadną konwersję symboli, jak nowy środowisko uruchomieniowe Unity jest w stanie natywnie korzystać z portable-PDB.
+   W obu przypadkach Visual Studio Tools for Unity utrzymuje odwołanie do projektu, nawet jeśli trzeba ponownie wygenerować pliki projektu i rozwiązania, więc wystarczy wykonać te kroki tylko raz.
 
-   Więcej informacji na temat generowania PDB można znaleźć [tutaj](../debugger/how-to-set-debug-and-release-configurations.md). Jeśli są przeznaczone dla nowego środowiska uruchomieniowego, upewnij się, że "Debugowanie informacje" jest ustawiona na "Przenośny", w celu prawidłowego generowania Portable-PDB. Jeśli kierujesz starsze środowisko uruchomieniowe, musisz użyć "Pełne".
+2. Odwołuje się do poprawnego profilu środowiska Unity Framework w projekcie DLL. W programie Visual Studio we właściwościach projektu DLL ustaw właściwość **platformy docelowej** na używaną wersję środowiska Unity. Jest to Biblioteka klas bazowych Unity zgodna ze zgodnością interfejsów API, które są obiektami docelowymi projektu, takimi jak interfejsy Unity pełnej, mikrolub sieci Web klas podstawowych. Zapobiega to wywoływaniu przez bibliotekę DLL metod platformy, które istnieją w innych strukturach lub poziomach zgodności, ale które mogą nie istnieć w używanej wersji środowiska Unity.
 
-4. Debuguj kod. Teraz można debugować kod źródłowy biblioteki DLL wraz z kodem źródłowym projektu Unity i używać wszystkich funkcji debugowania, które są używane, takich jak punkty przerwania i przechodzenie przez kod.
+> [!NOTE]
+> Poniższe elementy są wymagane tylko w przypadku korzystania ze starszego środowiska uruchomieniowego aparatu Unity. Jeśli używasz nowego środowiska uruchomieniowego aparatu Unity, nie musisz już korzystać z tych dedykowanych profilów 3,5. Użyj profilu platformy .NET 4. x zgodnego z wersją aparatu Unity.
+
+   ![Ustaw platformę docelową bibliotek DLL na strukturę aparatu Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+
+3. Skopiuj bibliotekę DLL do folderu zasobów projektu aparatu Unity. W środowisku Unity zasoby to pliki spakowane i wdrożone razem z aplikacją aparatu Unity, aby mogły być ładowane w czasie wykonywania. Ponieważ biblioteki DLL są połączone w czasie wykonywania, biblioteki dll należy wdrożyć jako zasoby. Aby można było wdrożyć jako element zawartości, Edytor Unity wymaga umieszczenia bibliotek DLL wewnątrz folderu Assets w projekcie środowiska Unity. Można to zrobić na dwa sposoby:
+
+   - Zmodyfikuj ustawienia kompilacji projektu DLL, aby uwzględnić zadanie po utworzeniu skompilowane, które kopiuje wyjściowe pliki DLL i PDB z folderu wyjściowego do folderu **Assets** projektu środowiska Unity.
+
+   - Zmodyfikuj ustawienia kompilacji projektu DLL, aby ustawić folder wyjściowy jako folder **zasobów** projektu środowiska Unity. Pliki DLL i PDB zostaną umieszczone w folderze **Assets** .
+
+   Pliki PDB są konieczne do debugowania, ponieważ zawierają symbole debugowania biblioteki DLL i mapują kod DLL na jego formularz kodu źródłowego. Jeśli celem jest starsze środowisko uruchomieniowe, Visual Studio Tools for Unity będzie używać informacji z bibliotek DLL i PDB do tworzenia biblioteki DLL. Plik MDB, który jest formatem symboli debugowania używanym przez starszy aparat skryptów aparatu Unity. Jeśli obiektem docelowym jest nowy środowisko uruchomieniowe i użyto przenośnego pliku PDB, Visual Studio Tools for Unity nie spróbuje wykonać konwersji symboli, ponieważ nowe środowisko uruchomieniowe aparatu Unity będzie w stanie natywnie wykorzystać przenośne plików PDB.
+
+   Więcej informacji na temat generowania plików PDB można znaleźć [tutaj](../debugger/how-to-set-debug-and-release-configurations.md). Jeśli chcesz utworzyć nowe środowisko uruchomieniowe, upewnij się, że "informacje o debugowaniu" są ustawione na "Przenośne", aby poprawnie wygenerować przenośnego pliku PDB. Jeśli obiektem docelowym jest starsze środowisko uruchomieniowe, musisz użyć pełnego.
+
+4. Debuguj swój kod. Można teraz debugować kod źródłowy biblioteki DLL wraz z kodem źródłowym projektu środowiska Unity i korzystać ze wszystkich funkcji debugowania, które są używane do, takich jak punkty przerwania i przechodzenie przez kod.
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
-Dostęp do funkcji Unity Tools for Visual Studio można szybko uzyskać, używając ich skrótów klawiaturowych. Oto podsumowanie dostępnych skrótów.
+Można szybko uzyskać dostęp do funkcji Unity Tools for Visual Studio przy użyciu skrótów klawiaturowych. Poniżej znajduje się podsumowanie dostępnych skrótów.
 
 |Polecenie|Skrót|Nazwa polecenia skrótu|
 |-------------|--------------|---------------------------|
-|Otwieranie Kreatora monobehavior|**Ctrl**+**Shift**Przesunięcie+**ctrl M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Otwórz Eksploratora projektów Unity|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|
-|Dokumentacja programu Access Unity|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Wniosek o pomoc.UnityAPIReferencja**|
-|Dołącz do debugera Unity (odtwarzacza lub edytora)|**_brak wartości domyślnej_**|**Debug.AttachUnityDebugger**|
+|Otwórz kreatora z zachowaniem zachowań|**Ctrl** + **SHIFT** + **M**|**EditorContextMenus. CodeWindow. ImplementMonoBehaviours**|
+|Otwórz Eksplorator projektów środowiska Unity|**Alt** + **SHIFT** + **E**|**Widok. UnityProjectExplorer**|
+|Dokumentacja programu Access Unity|**Ctrl** + **Alt** + **M, Ctrl** + **H**|**Help. UnityAPIReference**|
+|Dołącz do debugera aparatu Unity (odtwarzacz lub Edytor)|**_Brak domyślnego_**|**Debuguj. AttachUnityDebugger**|
 
-Możesz zmienić kombinacje klawiszy skrótów, jeśli nie podoba ci się ustawienie domyślne. Aby uzyskać informacje na temat jego zmiany, zobacz [Identyfikowanie i dostosowywanie skrótów klawiaturowych w programie Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+Kombinacje klawiszy skrótów można zmienić, jeśli nie jest to ustawienie domyślne. Aby uzyskać informacje o tym, jak to zmienić, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych w programie Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
