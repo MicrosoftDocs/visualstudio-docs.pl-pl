@@ -1,25 +1,25 @@
 ---
 title: Modyfikowanie standardowego polecenia menu w DSL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae2aa04eb415ee5c4b7aaa41ea4c6abb49333f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605261"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532499"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 
-Można zmodyfikować zachowanie niektórych standardowych poleceń, które są zdefiniowane automatycznie w DSL. Na przykład można zmodyfikować **wycinanie** , aby wykluczyć informacje poufne. W tym celu należy zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs, w projekcie DslPackage i pochodzą z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+Można zmodyfikować zachowanie niektórych standardowych poleceń, które są zdefiniowane automatycznie w DSL. Na przykład można zmodyfikować **wycinanie** , aby wykluczyć informacje poufne. W tym celu należy zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs, w projekcie DslPackage i są wyprowadzane z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> .
 
 > [!NOTE]
 > Jeśli chcesz utworzyć własne polecenia menu, zobacz [jak: Dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
@@ -28,11 +28,11 @@ Można zmodyfikować zachowanie niektórych standardowych poleceń, które są z
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Aby poznać, jakie polecenia można modyfikować
 
-1. W projekcie `DslPackage` Otwórz `GeneratedCode\CommandSet.cs`. Ten C# plik można znaleźć w Eksplorator rozwiązań jako filia `CommandSet.tt`.
+1. W projekcie `DslPackage` otwórz plik `GeneratedCode\CommandSet.cs`. Ten plik w języku C# można znaleźć w Eksplorator rozwiązań jako jednostka zależna `CommandSet.tt` .
 
-2. Znajdź klasy w tym pliku, których nazwy kończą się znakiem "`CommandSet`", na przykład `Language1CommandSet` i `Language1ClipboardCommandSet`.
+2. Znajdź klasy w tym pliku, których nazwy kończą się znakiem " `CommandSet` ", na przykład `Language1CommandSet` i `Language1ClipboardCommandSet` .
 
-3. W każdej klasie zestawu poleceń wpisz "`override`", a po nim spację. Funkcja IntelliSense wyświetli listę metod, które można przesłonić. Każde polecenie ma parę metod, których nazwy zaczynają się od "`ProcessOnStatus`" i "`ProcessOnMenu`".
+3. W każdej klasie zestawu poleceń wpisz " `override` ", a po niej spację. Funkcja IntelliSense wyświetli listę metod, które można przesłonić. Każde polecenie ma parę metod, których nazwy zaczynają się od " `ProcessOnStatus` " do " `ProcessOnMenu` ".
 
 4. Należy pamiętać, że klasy zestawu poleceń zawierają polecenie, które chcesz zmodyfikować.
 
@@ -53,9 +53,9 @@ Utwórz nowy plik zawierający częściową deklarację klasy zestawu poleceń.
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. W **DslPackage**Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs`.
+2. W **DslPackage**Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs` .
 
-3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Na przykład:
+3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Przykład:
 
     ```csharp
     using System;
@@ -70,7 +70,7 @@ Utwórz nowy plik zawierający częściową deklarację klasy zestawu poleceń.
 
 ## <a name="override-the-command-methods"></a>Zastąp metody polecenia
 
-Większość poleceń ma dwie skojarzone metody: metodę o nazwie, takiej jak `ProcessOnStatus`... Określa, czy polecenie powinno być widoczne i włączone. Jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinien być wykonywany szybko i nie wprowadzać żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i powinien wykonać funkcję polecenia. Możesz chcieć przesłonić jedną lub obie te metody.
+Większość poleceń ma dwie skojarzone metody: metodę o nazwie takiej jak `ProcessOnStatus` ... Określa, czy polecenie powinno być widoczne i włączone. Jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinien być wykonywany szybko i nie wprowadzać żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i powinien wykonać funkcję polecenia. Możesz chcieć przesłonić jedną lub obie te metody.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Aby zmienić, gdy polecenie pojawia się w menu
 
@@ -129,17 +129,17 @@ Jeśli kod wprowadza zmiany do magazynu, takie jak tworzenie, usuwanie lub aktua
 
 Następujące fragmenty są często przydatne w następujących metodach:
 
-- `this.CurrentSelection`., Kształt kliknięty prawym przyciskiem myszy jest zawsze uwzględniony na liście kształtów i łączników. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
+- `this.CurrentSelection`. Kształt kliknięty prawym przyciskiem myszy jest zawsze uwzględniony na liście kształtów i łączników. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
-- `this.IsDiagramSelected()`  -  `true`, jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()` - `true`Jeśli użytkownik kliknął pustą część diagramu.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` — użytkownik nie wybrał wielu kształtów
+- `this.IsSingleSelection()`-Użytkownik nie wybrał wielu kształtów
 
-- `this.SingleSelection` — kształt lub diagram, który kliknięto prawym przyciskiem myszy.
+- `this.SingleSelection`-kształt lub diagram, który kliknął użytkownik prawym przyciskiem myszy.
 
-- `shape.ModelElement as MyLanguageElement` — element modelu reprezentowany przez kształt.
+- `shape.ModelElement as MyLanguageElement`— element modelu reprezentowany przez kształt.
 
 Aby uzyskać więcej informacji na temat nawigowania z elementu do elementu i sposobu tworzenia obiektów i linków, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
@@ -147,7 +147,7 @@ Aby uzyskać więcej informacji na temat nawigowania z elementu do elementu i sp
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Instrukcje: Dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Porady: dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Odwołanie do schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)

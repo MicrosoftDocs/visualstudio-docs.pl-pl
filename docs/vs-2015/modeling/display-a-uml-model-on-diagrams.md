@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12c6cecf79b0c20ea2c110efa432d5ccb9f38863
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 06a22161068dd7604fe7bb4153e322c0954b89d2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916136"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533021"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Wyświetlanie modelu UML na diagramach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,57 +36,57 @@ W tym temacie:
 
 - [Przykład: polecenie do wyrównywania kształtów](#AlignCommand)
 
-## <a name="Display"></a>Aby wyświetlić element na diagramie
+## <a name="to-display-an-element-on-a-diagram"></a><a name="Display"></a>Aby wyświetlić element na diagramie
  Podczas tworzenia elementu, takiego jak przypadek użycia lub Akcja, użytkownik może zobaczyć go w Eksploratorze modelu UML, ale nie zawsze jest automatycznie wyświetlany na diagramie. W niektórych przypadkach należy napisać kod, aby go wyświetlić. W poniższej tabeli zestawiono alternatywy.
 
 |Typ elementu|Na przykład|Aby wyświetlić ten kod, należy|
 |---------------------|-----------------|-------------------------------------|
-|Klasyfikator|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Utwórz skojarzone kształty na określonych diagramach. Dla każdego klasyfikatora można utworzyć dowolną liczbę kształtów.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Ustaw `parentShape` na `null` dla kształtu na najwyższym poziomie diagramu.<br /><br /> Aby wyświetlić jeden kształt w innym:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Uwaga:** w przypadku przeprowadzania wyświetlania wewnątrz transakcji **ILinkedUndo** metoda czasami nie zwraca `IShape`. Ale kształt jest prawidłowo tworzony i jest dostępny przy użyciu `IElement.Shapes().`|
+|Klasyfikator|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Utwórz skojarzone kształty na określonych diagramach. Dla każdego klasyfikatora można utworzyć dowolną liczbę kształtów.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Ustaw `parentShape` na `null` dla kształtu na najwyższym poziomie diagramu.<br /><br /> Aby wyświetlić jeden kształt w innym:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);`**Uwaga:**  W przypadku wykonywania w ramach transakcji **ILinkedUndo** , Metoda czasami zwraca wartość nie `IShape` . Ale kształt jest prawidłowo tworzony i jest dostępny za pomocą`IElement.Shapes().`|
 |Element podrzędny klasyfikatora|Atrybut, operacja,<br /><br /> Część, port|Automatyczny — żaden kod nie jest wymagany.<br /><br /> Jest on wyświetlany jako część elementu nadrzędnego.|
-|Zachowanie|Interakcja (sekwencja),<br /><br /> Działanie|Powiąż zachowanie z odpowiednim diagramem.<br /><br /> Każde zachowanie może być powiązane z co najwyżej jednym diagramem naraz.<br /><br /> Na przykład:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|Zachowanie|Interakcja (sekwencja),<br /><br /> Działanie|Powiąż zachowanie z odpowiednim diagramem.<br /><br /> Każde zachowanie może być powiązane z co najwyżej jednym diagramem naraz.<br /><br /> Przykład:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Element podrzędny zachowania|Linie życia, komunikaty, akcje, węzły obiektów|Automatyczny — żaden kod nie jest wymagany.<br /><br /> Jest wyświetlana, jeśli element nadrzędny jest powiązany z diagramem.|
 |Relacja|Skojarzenie, Generalizacja, przepływ, zależność|Automatyczny — żaden kod nie jest wymagany.<br /><br /> Jest on wyświetlany na każdym diagramie, na którym są wyświetlane oba punkty końcowe.|
 
-## <a name="GetShapes"></a>Uzyskiwanie dostępu do kształtów reprezentujących element
+## <a name="accessing-the-shapes-that-represent-an-element"></a><a name="GetShapes"></a>Uzyskiwanie dostępu do kształtów reprezentujących element
  Kształt reprezentujący element należy do typów:
 
  `IShape`
 
- `IShape<` *elementtype* `>`
+ `IShape<`*ElementType*`>`
 
- Where *ElementType* jest typem elementu modelu, takim jak `IClass` lub `IUseCase`.
+ Where *ElementType* jest typem elementu modelu, takim jak `IClass` lub `IUseCase` .
 
-|||
+|Składnia|Opis|
 |-|-|
 |`anElement.Shapes ()`|Wszystkie `IShapes` reprezentujące ten element w otwartych diagramach.|
 |`anElement.Shapes(aDiagram)`|Wszystkie `IShapes` reprezentujące ten element na określonym diagramie.|
-|`anIShape.GetElement()`|`IElement`, który reprezentuje kształt. Zwykle należy rzutować go do podklasy IElement.|
-|`anIShape.Diagram`|`IDiagram`, który zawiera kształt.|
-|`anIShape.ParentShape`|Kształt zawierający `anIShape`. Na przykład kształt portu jest zawarty w obrębie kształtu składnika.|
-|`anIShape.ChildShapes`|Kształty zawarte w `IShape` lub `IDiagram`.|
-|`anIShape.GetChildShapes<IUseCase>()`|Kształty zawarte w `IShape` lub `IDiagram`, które reprezentują elementy określonego typu, takie jak `IUseCase`.|
-|`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Rzutowanie ogólnego `IShape` na `IShape<IElement>`o jednoznacznie określonym typie.|
+|`anIShape.GetElement()`|Ten `IElement` kształt reprezentuje. Zwykle należy rzutować go do podklasy IElement.|
+|`anIShape.Diagram`|`IDiagram`Zawiera kształt.|
+|`anIShape.ParentShape`|Kształt, który zawiera `anIShape` . Na przykład kształt portu jest zawarty w obrębie kształtu składnika.|
+|`anIShape.ChildShapes`|Kształty zawarte w `IShape` lub `IDiagram` .|
+|`anIShape.GetChildShapes<IUseCase>()`|Kształty zawarte w `IShape` lub `IDiagram` reprezentujące elementy określonego typu, na przykład `IUseCase` .|
+|`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Rzutowanie ogólnego `IShape` na silnie wpisane `IShape<IElement>` .|
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Rzutowanie kształtu z jednego sparametryzowanego typu kształtu na inny.|
 
-## <a name="Moving"></a>Przesuwanie i zmiana rozmiarów kształtów
+## <a name="moving-and-resizing-shapes"></a><a name="Moving"></a>Przesuwanie i zmiana rozmiarów kształtów
 
-|||
+|Składnia|Opis|
 |-|-|
 |`anIShape.Move(x, y, [width], [height])`|Przenoszenie lub zmiana rozmiaru kształtu.|
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|Aktywuj okno i przewiń diagram, aby wyświetlić wszystkie pożądane kształty. Wszystkie kształty muszą znajdować się na diagramie. Jeśli `zoomToFit` ma wartość true, diagram zostanie w razie potrzeby skalowany w taki sposób, aby wszystkie kształty były widoczne.|
 
  Aby zapoznać się z przykładem, zobacz [Definiowanie wyrównania polecenia](#AlignCommand).
 
-## <a name="Removing"></a>Aby usunąć kształt z diagramu
+## <a name="to-remove-a-shape-from-a-diagram"></a><a name="Removing"></a>Aby usunąć kształt z diagramu
  Można usunąć kształty niektórych typów elementów bez usuwania elementu.
 
 |Element modelu|Aby usunąć kształt|
 |-------------------|-------------------------|
 |Klasyfikator: Klasa, interfejs, Wyliczenie, aktor, przypadek użycia lub składnik|`shape.Delete();`|
-|Zachowanie: interakcja lub działanie|Możesz usunąć diagram z projektu. Użyj `IDiagram.FileName`, aby uzyskać ścieżkę.<br /><br /> Nie spowoduje to usunięcia zachowania z modelu.|
+|Zachowanie: interakcja lub działanie|Możesz usunąć diagram z projektu. Użyj, `IDiagram.FileName` Aby uzyskać ścieżkę.<br /><br /> Nie spowoduje to usunięcia zachowania z modelu.|
 |Dowolny inny kształt|Nie można jawnie usunąć innych kształtów z diagramu. Kształt zostanie automatycznie ukryty, jeśli element zostanie usunięty z modelu lub jeśli kształt nadrzędny zostanie usunięty z diagramu.|
 
-## <a name="Opening"></a>Otwieranie i tworzenie diagramów
+## <a name="opening-and-creating-diagrams"></a><a name="Opening"></a>Otwieranie i tworzenie diagramów
 
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Aby uzyskać dostęp do bieżącego diagramu użytkownika z rozszerzenia polecenia lub gestu
  Zadeklaruj tę zaimportowaną właściwość w klasie:
@@ -102,7 +102,7 @@ W tym temacie:
  `Context.CurrentDiagram as IClassDiagram;`
 
 > [!NOTE]
-> Wystąpienie `IDiagram` (i jego podtypów, takie jak `IClassDiagram`) jest prawidłowe tylko w trakcie przetwarzania polecenia. Nie zaleca się zachowywania `IDiagram` obiektu w zmiennej, która utrzymuje się, gdy kontrolka jest zwracana do użytkownika.
+> Wystąpienie `IDiagram` (i jego podtypy, takie jak `IClassDiagram` ) jest prawidłowe tylko w trakcie przetwarzania polecenia. Nie zaleca się zachowywania `IDiagram` obiektu w zmiennej, która utrzymuje się, gdy kontrolka jest zwracana do użytkownika.
 
  Aby uzyskać więcej informacji, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
@@ -114,9 +114,9 @@ Context.CurrentDiagram.ModelStore.Diagrams()
 ```
 
 ## <a name="to-access-the-diagrams-in-a-project"></a>Aby uzyskać dostęp do diagramów w projekcie
- Za pomocą interfejsu API [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można otwierać i tworzyć projekty i diagramy modelowania.
+ Za [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pomocą interfejsu API można otwierać i tworzyć projekty i diagramy modelowania.
 
- Zwróć uwagę na rzutowanie z `EnvDTE.ProjectItem` na `IDiagramContext`.
+ Zwróć uwagę na rzutowanie z `EnvDTE.ProjectItem` do `IDiagramContext` .
 
 ```
 
@@ -152,9 +152,9 @@ foreach (ProjectItem item in project.ProjectItems)
   { ... } } }
 ```
 
- Wystąpienia `IDiagram` i jego podtypów są nieprawidłowe po powrocie kontroli do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Wystąpienia `IDiagram` i jego podtypy są nieprawidłowe po powrocie kontroli do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- Możesz również uzyskać Magazyn modeli z projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
+ Można również uzyskać Magazyn modeli z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu:
 
 ```
 
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;
 ```
 
-## <a name="AlignCommand"></a>Przykład: polecenie do wyrównywania kształtów
+## <a name="example-command-for-aligning-shapes"></a><a name="AlignCommand"></a>Przykład: polecenie do wyrównywania kształtów
  Poniższy kod implementuje polecenie menu, które dopasowuje kształty w sposób starannie. Użytkownik musi najpierw umieścić dwa lub więcej kształtów w przybliżonym wyrównaniu, w pionie lub w poziomie. Następnie Wyrównaj polecenie może służyć do wyrównywania ich centrów.
 
  Aby udostępnić polecenie, Dodaj ten kod do projektu polecenia menu, a następnie wdróż to rozszerzenie na użytkownikach. Aby uzyskać więcej informacji, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).

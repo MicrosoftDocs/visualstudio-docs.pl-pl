@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 17ec8199e99e76d5995e49570c82ad8523505ebe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915993"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532967"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Wskazówki: łączenie hosta z generowanym procesorem dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 - Testowanie hosta niestandardowego z wygenerowanym procesorem dyrektywy.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
+ Aby zdefiniować DSL, należy zainstalować następujące składniki:
 
-|||
+|Produkt|Link pobierania|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
-|{1&gt;{2&gt;Visual Studio Visualisation i Modeling SDK&lt;2}&lt;1}|[Pobieranie zestawu SDK modelowania](https://www.microsoft.com/download/details.aspx?id=48148)|
+|Visual Studio Wizualizacja i Modeling SDK|[Pobieranie zestawu SDK modelowania](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  Ponadto musisz mieć niestandardowe przekształcenia szablonu tekstu utworzonego w [przewodniku: Tworzenie niestandardowego hosta szablonu tekstu](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
@@ -65,20 +65,20 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 
      Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a specyficzne dla domeny rozwiązanie językowe](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+2. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
    > [!IMPORTANT]
    > Ten krok powoduje wygenerowanie procesora dyrektywy i dodanie klucza do niego w rejestrze.
 
-3. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
+3. W menu **Debugowanie** kliknij polecenie **Rozpocznij debugowanie**.
 
-    Zostanie otwarte drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+    Drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zostanie otwarte.
 
 4. W przypadku kompilacji eksperymentalnej w **Eksplorator rozwiązań**kliknij dwukrotnie plik **Sample. min**.
 
     Plik zostanie otwarty w projektancie. Należy zauważyć, że model ma dwa elementy, ExampleElement1 i ExampleElement2, oraz link między nimi.
 
-5. Zamknij drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+5. Zamknij drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 6. Zapisz rozwiązanie, a następnie zamknij projektant języka specyficznego dla domeny.
 
@@ -95,17 +95,17 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 
 3. Dodaj następujące odwołania:
 
-    - Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft. VisualStudio. Modeling. Sdk. 11.0
 
-    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.11.0
+    - Microsoft. VisualStudio. TextTemplating. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
+    - Microsoft. VisualStudio. TextTemplating. Interfaces. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
 
 4. W górnej części Program.cs lub Module1. vb Dodaj następujący wiersz kodu:
 
@@ -117,7 +117,7 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
     Imports Microsoft.Win32
     ```
 
-5. Znajdź kod właściwości `StandardAssemblyReferences`i zastąp go następującym kodem:
+5. Znajdź kod dla właściwości `StandardAssemblyReferences` i zastąp go następującym kodem:
 
     > [!NOTE]
     > W tym kroku dodasz odwołania do zestawów, które są wymagane przez wygenerowany procesor dyrektywy, który będzie obsługiwany przez hosta.
@@ -153,7 +153,7 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
     }
     ```
 
-6. Znajdź kod dla funkcji `ResolveDirectiveProcessor`i zastąp go następującym kodem:
+6. Znajdź kod dla funkcji `ResolveDirectiveProcessor` i zastąp go następującym kodem:
 
     > [!IMPORTANT]
     > Ten kod zawiera zakodowane odwołania do nazwy wygenerowanego procesora dyrektywy, z którym chcesz się połączyć. Można to łatwo zrobić, a w tym przypadku sprawdza wszystkie procesory dyrektywy wymienione w rejestrze i próbuje znaleźć dopasowanie. W takim przypadku host będzie działał z dowolnym wygenerowanym procesorem dyrektywy.
@@ -227,16 +227,16 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
             }
     ```
 
-7. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
+7. W menu **plik** kliknij polecenie **Zapisz wszystko**.
 
-8. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+8. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
 
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testowanie hosta niestandardowego z procesorem dyrektywy
  Aby przetestować hosta niestandardowego tekstu, najpierw należy napisać szablon tekstu, który wywołuje wygenerowany procesor dyrektywy. Następnie uruchom hosta niestandardowego, przekaż go do nazwy szablonu tekstu i sprawdź, czy dyrektywa została przetworzona prawidłowo.
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Aby utworzyć szablon tekstowy w celu przetestowania niestandardowego hosta
 
-1. Utwórz plik tekstowy i nadaj mu nazwę `TestTemplateWithDP.tt`. Do utworzenia pliku można użyć dowolnego edytora tekstu, takiego jak Notatnik.
+1. Utwórz plik tekstowy i nadaj mu nazwę `TestTemplateWithDP.tt` . Do utworzenia pliku można użyć dowolnego edytora tekstu, takiego jak Notatnik.
 
 2. Dodaj następującą zawartość do pliku tekstowego:
 
@@ -310,7 +310,7 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
     #>
     ```
 
-3. W kodzie Zastąp \<ścieżkę > ścieżką pliku Sample. min z języka specyficznego dla projektu utworzonego w pierwszej procedurze.
+3. W kodzie Zastąp ciąg \<YOUR PATH> ścieżką pliku Sample. min w języku specyficznym dla projektu, który został utworzony w pierwszej procedurze.
 
 4. Zapisz i zamknij plik.
 
@@ -325,7 +325,7 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Zamiast wpisywać adres, możesz przejść do pliku CustomHost. exe w **Eksploratorze Windows**, a następnie przeciągnąć plik do okna wiersza polecenia.
+    > Zamiast wpisywać adres, możesz przejść do pliku CustomHost.exe w **Eksploratorze Windows**, a następnie przeciągnąć plik do okna wiersza polecenia.
 
 3. Wpisz spację.
 
@@ -336,13 +336,13 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > Zamiast wpisywać adres, możesz przejść do pliku TestTemplateWithDP. txt w **Eksploratorze Windows**, a następnie przeciągnąć plik do okna wiersza polecenia.
+    > Zamiast wpisywać adres, możesz przejść do pliku TestTemplateWithDP.txt w **Eksploratorze Windows**, a następnie przeciągnąć plik do okna wiersza polecenia.
 
      Niestandardowa aplikacja hosta uruchamia proces transformacji szablonu tekstu.
 
-5. W **Eksploratorze Windows**przejdź do folderu, który zawiera plik TestTemplateWithDP. txt.
+5. W **Eksploratorze Windows**przejdź do folderu, który zawiera plik TestTemplateWithDP.txt.
 
-     Folder zawiera również plik TestTemplateWithDP1. txt.
+     Folder zawiera również TestTemplateWithDP1.txt pliku.
 
 6. Otwórz ten plik, aby zobaczyć wyniki przekształcenia szablonu tekstu.
 

@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 615c8c2229a3444b02148b8068964e0ed6def47d
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332296"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531810"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji autonomicznej .NET Framework i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do uruchomionej .NET Framework aplikacji autonomicznej (klient) i zbierania statystyk wydajności przy użyciu metody próbkowania.
@@ -73,9 +73,8 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
    - Domyślnie dane dotyczące wydajności są próbkowane co 10 000 000 niezatrzymane cykle zegara procesora. Jest to około 10 sekund na procesorze 1GH. Możesz określić jedną z następujących opcji, aby zmienić interwał cyklu zegara lub określić inne zdarzenie próbkowania. [/targetclr](../profiling/targetclr.md)**:** `Version` określa wersję środowiska CLR do profilowania, gdy więcej niż jedna wersja środowiska uruchomieniowego jest załadowana w aplikacji. Opcjonalny.
 
-   |||
-   |-|-|
    |Przykładowe zdarzenie|Opis|
+   |-|-|
    |[/Timer](../profiling/timer.md) **:**`Interval`|Zmienia interwał próbkowania na liczbę niezatrzymanych cykli zegara, które są określone przez `Interval` .|
    |[/PF](../profiling/pf.md) [**:** `Interval` ]|Zmienia zdarzenie próbkowania na błędy strony. Jeśli `Interval` jest określony, ustawia liczbę błędów stron między próbkami. Wartość domyślna to 10.|
    |[/sys](../profiling/sys-vsperfcmd.md) [**:** `Interval` ]|Zmienia zdarzenie próbkowania na wywołania systemowe z procesu do jądra systemu operacyjnego (systemowe). Jeśli `Interval` jest określony, ustawia liczbę wywołań między próbkami. Wartość domyślna to 10.|
@@ -115,6 +114,6 @@ W tym artykule opisano, jak używać [!INCLUDE[vsprvs](../code-quality/includes/
 
      **VSPerfClrEnv/off**
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)

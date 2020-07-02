@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64f739039d17af7fbee9718da93e8610e2619a85
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586950"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532044"
 ---
 # <a name="memory-usage-without-debugging"></a>Użycie pamięci bez debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Aby wykonać następujące czynności, można użyć narzędzia **użycie pamię
   
   Numerowane elementy na zdjęciu widoku migawki to linki, które otwierają widoki raportów użycie pamięci.  
   
-|||  
+|Image (Obraz)|Opis|  
 |-|-|  
 |![Krok 1](../profiling/media/procguid-1.png "ProcGuid_1")|Tekst linku pokazuje łączną liczbę bajtów w pamięci podczas wykonywania migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegóły migawki, który jest posortowany według łącznego rozmiaru wystąpień typu.|  
 |![Krok 2](../profiling/media/procguid-2.png "ProcGuid_2")|Tekst linku pokazuje łączną liczbę obiektów w pamięci podczas wykonywania migawki.<br /><br /> Wybierz ten link, aby wyświetlić raport szczegóły migawki, który jest posortowany według liczby wystąpień typów.|  
@@ -135,10 +135,10 @@ Aby wykonać następujące czynności, można użyć narzędzia **użycie pamię
   
  ![Zarządzane drzewo sterty](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|||  
+|Nazwa|Opis|  
 |-|-|  
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|  
-|**Liczba**|Liczba wystąpień obiektów typu. Liczba jest zawsze 1 dla wystąpienia.|  
+|**Liczbą**|Liczba wystąpień obiektów typu. Liczba jest zawsze 1 dla wystąpienia.|  
 |**Rozmiar (w bajtach)**|Dla typu, rozmiar wszystkich wystąpień typu w migawce pamięci, z wyłączeniem rozmiaru obiektów zawartych w wystąpieniach.<br /><br /> Dla wystąpienia, wpisz, rozmiar obiektu, z wyłączeniem rozmiaru obiektów zawartych w wystąpieniu. Liczba.|  
 |**Rozmiar włącznie (w bajtach)**|Rozmiar wystąpień typu lub rozmiar pojedynczego wystąpienia, łącznie z rozmiarem zawartych obiektów.|  
   
@@ -154,7 +154,7 @@ Aby wykonać następujące czynności, można użyć narzędzia **użycie pamię
   
  ![Przywoływane drzewo Objjects dla wystąpień](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Nazwa|Opis|  
 |-|-|  
 |**Typ/wystąpienie obiektu**|Nazwa typu lub wystąpienia obiektu.|  
 |**Rozmiar (w bajtach)**|Dla typu, rozmiar wszystkich wystąpień typu, z wyłączeniem rozmiaru obiektów zawartych w typie.<br /><br /> Dla wystąpienia, rozmiar obiektu, z wyłączeniem rozmiaru obiektów zawartych w obiekcie.|  
@@ -176,10 +176,10 @@ Aby wykonać następujące czynności, można użyć narzędzia **użycie pamię
   
  Zauważ, że kolumny **Liczba**, **rozmiar (bajty)** i **rozmiar włącznie (w bajtach)** zostały zwinięte na obrazie.  
   
-|||  
+|Nazwa|Opis|  
 |-|-|  
 |**Typ obiektu**|Nazwa typu lub wystąpienia obiektu.|  
-|**Liczba**|Liczba wystąpień typu w podstawowej migawce. **Liczba** jest zawsze 1 dla wystąpienia.|  
+|**Liczbą**|Liczba wystąpień typu w podstawowej migawce. **Liczba** jest zawsze 1 dla wystąpienia.|  
 |**Różnica w liczbie**|Dla typu, różnica w liczbie wystąpień typu między migawką podstawową i poprzednią migawką. Pole jest puste dla wystąpienia.|  
 |**Rozmiar (w bajtach)**|Rozmiar obiektów w podstawowej migawce, z wyłączeniem rozmiaru obiektów zawartych w obiektach. Dla typu, **rozmiar (w bajtach)** i **rozmiar włącznie (w bajtach)** są sumami rozmiarów wystąpień typu.|  
 |**Różnica w łącznym rozmiarze (w bajtach)**|Dla typu, różnica w łącznym rozmiarze wystąpień typu między migawką podstawową i poprzednią, z wyłączeniem rozmiaru obiektów zawartych w wystąpieniach. Pole jest puste dla wystąpienia.|  
@@ -196,7 +196,7 @@ Aby wykonać następujące czynności, można użyć narzędzia **użycie pamię
   
  ![Przywoływane drzewo Objjects dla wystąpień](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Nazwa|Opis|  
 |-|-|  
 |**Typ/wystąpienie obiektu**|Nazwa typu lub wystąpienia obiektu.|  
 |**Rozmiar (w bajtach)**|Dla wystąpienia, rozmiar obiektu w podstawowej migawce, z wyłączeniem rozmiaru obiektów zawartych w wystąpieniu.<br /><br /> Dla typu, łączny rozmiar wystąpień typu w podstawowej migawce, z wyłączeniem rozmiaru obiektów zawartych w wystąpieniu.|  

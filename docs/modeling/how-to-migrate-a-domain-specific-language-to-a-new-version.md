@@ -1,30 +1,30 @@
 ---
 title: 'Porady: migracja języka specyficznego dla domeny do nowej wersji'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747551"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532614"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Porady: migracja języka specyficznego dla domeny do nowej wersji
-Można migrować projekty, które definiują i używają języka specyficznego dla domeny do [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] z wersji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] dystrybuowanej za pomocą [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
+Można migrować projekty, które definiują i używają języka specyficznego dla domeny, do [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] wersji programu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , która została dystrybuowana z programem [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
 
- Narzędzie migracji jest dostępne jako część [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Narzędzie konwertuje projekty i rozwiązania programu Visual Studio, które używają lub definiują narzędzia DSL.
+ Narzędzie migracji jest dostępne w ramach programu [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] . Narzędzie konwertuje projekty i rozwiązania programu Visual Studio, które używają lub definiują narzędzia DSL.
 
  Narzędzie migracji należy uruchomić jawnie: nie jest uruchamiane automatycznie podczas otwierania rozwiązania w programie Visual Studio. Informacje na temat narzędzia i szczegółowe wskazówki można znaleźć w tej ścieżce:
 
- **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+ **% Files%\Microsoft programu Visual Studio SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe2010**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Przed przeprowadzeniem migracji projektów DSL
- Narzędzie migracji modyfikuje pliki projektu programu Visual Studio ( **. csproj**) i pliki rozwiązań ( **. sln**).
+ Narzędzie migracji modyfikuje pliki projektu programu Visual Studio (**. csproj**) i pliki rozwiązań (**. sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Aby przygotować projekty do migracji.
 
@@ -59,9 +59,9 @@ Można migrować projekty, które definiują i używają języka specyficznego d
 
    1. Kliknij przycisk **Konwertuj**.
 
-        Przed konwersją każdego pliku projektu kopia _projektu_ **. csproj** jest zapisywana jako _Project_ **. vs2008. csproj**
+        Przed konwersją każdego pliku projektu kopia _projektu_**. csproj** jest zapisywana jako _Project_**. vs2008. csproj**
 
-        Kopia każdego _rozwiązania_ **. sln** jest zapisywana jako _rozwiązanie_ **. vs2008. sln**
+        Kopia każdego _rozwiązania_**. sln** jest zapisywana jako _rozwiązanie_**. vs2008. sln**
 
    2. Zbadaj wszystkie zgłoszone konwersje zakończone niepowodzeniem.
 

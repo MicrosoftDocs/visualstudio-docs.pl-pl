@@ -15,26 +15,26 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918824"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533084"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: tworzenie rozwiązania języka właściwego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowanego rozwiązania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+Język specyficzny dla domeny (DSL) jest tworzony przy użyciu rozwiązania specjalistycznego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Przed rozpoczęciem tej procedury należy najpierw zainstalować następujące składniki:
 
-|||
+|Produkt|Link pobierania|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
-|{1&gt;{2&gt;Visual Studio Visualisation i Modeling SDK&lt;2}&lt;1}|[Pobieranie zestawu SDK modelowania](https://www.microsoft.com/download/details.aspx?id=48148)|
+|Visual Studio Wizualizacja i Modeling SDK|[Pobieranie zestawu SDK modelowania](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania dotyczącego języka specyficznego dla domeny
 
@@ -44,7 +44,7 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
 
    1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-   2. **Nowy projekt** pojawi się okno dialogowe.
+   2. Zostanie wyświetlone okno dialogowe **Nowy projekt**.
 
    3. W obszarze **typy projektów**rozwiń węzeł **Inne typy projektów** , a następnie kliknij pozycję **rozszerzalność**.
 
@@ -55,7 +55,7 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
        Zostanie wyświetlony **kreator Projektant języka specyficznego dla domeny** .
 
       > [!NOTE]
-      > Najlepiej, gdy wpisana nazwa powinna być prawidłowym identyfikatorem wizualizacji C# , ponieważ może służyć do generowania kodu.
+      > Najlepiej, gdy wpisana nazwa powinna być prawidłowym identyfikatorem języka Visual C#, ponieważ może służyć do generowania kodu.
 
       ![Utwórz okno dialogowe DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
@@ -67,9 +67,9 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
 
 3. Wprowadź rozszerzenie nazwy pliku na stronie **rozszerzenia pliku** . Powinna być unikatowa w komputerze i na wszystkich komputerach, na których ma zostać zainstalowana linia DSL. Powinien zostać wyświetlony komunikat **Brak aplikacji lub edytorów programu Visual Studio korzystających z tego rozszerzenia**.
 
-   - Jeśli użyto rozszerzenia nazwy pliku w poprzedniej eksperymentalnej językami DSL, która nie została w pełni zainstalowana, można je usunąć za pomocą narzędzia **Zresetuj wystąpienie eksperymentalne** , które można znaleźć w menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK.
+   - Jeśli użyto rozszerzenia nazwy pliku w poprzedniej eksperymentalnej językami DSL, która nie została w pełni zainstalowana, można je usunąć za pomocą narzędzia **Zresetuj wystąpienie eksperymentalne** , które można znaleźć w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu Zestaw SDK.
 
-   - Jeśli inne rozszerzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które używa tego rozszerzenia pliku, zostało w pełni zainstalowane na komputerze, rozważ odinstalowanie go. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
+   - Jeśli inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenie, które używa tego rozszerzenia pliku, zostało w pełni zainstalowane na komputerze, rozważ odinstalowanie go. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
 
 4. Należy sprawdzić i w razie potrzeby dostosować pola na pozostałych stronach kreatora. Gdy ustawienia zostaną spełnione, kliknij przycisk **Zakończ**. Aby uzyskać więcej informacji na temat ustawień, zobacz [Projektant DSL strony kreatora](#settings).
 
@@ -78,7 +78,7 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
    > [!NOTE]
    > Jeśli zostanie wyświetlony komunikat z alertami, że nie chcesz uruchamiać szablonów tekstowych z niezaufanych źródeł, kliknij przycisk **OK**. Możesz ustawić ten komunikat, aby nie pojawiał się ponownie.
 
-## <a name="settings"></a>Strony kreatora projektant DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Strony kreatora projektant DSL
  Można pozostawić kilka pól niezmienionych z wartości domyślnych. Należy jednak upewnić się, że pole rozszerzenie pliku jest ustawione.
 
 ### <a name="solution-settings-page"></a>Strona Ustawienia rozwiązania
@@ -86,7 +86,7 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
 Wybierz szablon, który jest podobny do DSL, które chcesz utworzyć. Różne szablony zapewniają wygodne punkty startowe. Po wybraniu szablonu rozwiązania Kreator wyświetli opis. Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Jak chcesz nazwać język specyficzny dla domeny?**
-Wartość domyślna to nazwa rozwiązania. Kod jest generowany na podstawie tej wartości. Musi być prawidłową nazwą C# klasy.
+Wartość domyślna to nazwa rozwiązania. Kod jest generowany na podstawie tej wartości. Musi być prawidłowy jako nazwa klasy C#.
 
 ### <a name="file-extension-page"></a>Strona rozszerzenia pliku
  **Jakiego rozszerzenia powinny używać pliki modelu?**
@@ -100,13 +100,13 @@ Wpisz nowe rozszerzenie pliku.
 
 - Wpisz inne rozszerzenie pliku.
 
-     \- lub —
+     \-oraz
 
 - Zresetuj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne. Spowoduje to Wyrejestrowanie wszystkich utworzonych wcześniej językami DSL. W menu **Start** kliknij pozycję **wszystkie programy**, **Microsoft Visual Studio zestaw SDK 2010**, **Narzędzia**, a następnie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. Możesz ponownie skompilować wszystkie inne językami DSL, których chcesz użyć.
 
-     \- lub —
+     \-oraz
 
-- Jeśli rozszerzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które używa tego rozszerzenia pliku, zostało w pełni zainstalowane na komputerze, odinstaluj je. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
+- Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenie, które używa tego rozszerzenia pliku, zostało w pełni zainstalowane na komputerze, odinstaluj je. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
 
 ### <a name="product-settings-page"></a>Strona Ustawienia produktu
  **Jaka jest nazwa produktu, do którego należy nowy język specyficzny dla domeny?**

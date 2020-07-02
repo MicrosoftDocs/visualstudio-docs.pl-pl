@@ -1,7 +1,7 @@
 ---
 title: Przegląd narzędzi językowych właściwych dla domeny
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - Domain-Specific Language
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af9aa8ce8719fe08e16e244a2f7009ddf67f533
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591700"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532370"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowane w programie Visual Studio, umożliwiają projektowanie języka specyficznego dla domeny, a następnie generowanie wszystkich elementów, które muszą być potrzebne użytkownikom do tworzenia modeli opartych na języku.
@@ -50,7 +50,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 
   Kreator tworzy rozwiązanie programu Visual Studio, które ma następujące projekty:
 
-- Dsl
+- DSL
 
    Projekt DSL definiuje język specyficzny dla domeny i narzędzia do edycji i przetwarzania.
 
@@ -72,9 +72,9 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 ## <a name="distributing-your-dsl-solution"></a>Dystrybuowanie rozwiązania DSL
  Narzędzia DSL generują pakiet, który jest hostowany w programie Visual Studio. Pakiet wyświetla Przybornik, Eksplorator DSL i inne elementy interfejsu użytkownika, które umożliwiają użytkownikom tworzenie modeli przy użyciu języka specyficznego dla domeny.
 
- Podczas kompilowania i uruchamiania rozwiązania narzędzi DSL w programie Visual Studio drugie wystąpienie programu Visual Studio pokazuje, w jaki sposób język specyficzny dla domeny będzie wyglądał użytkownikowi w języku. Po zweryfikowaniu, że wszystko działa prawidłowo, można rozpowszechnić plik `.vsix`, który będzie znajdował się w folderze Build projektu DslPackage. Ten plik może służyć do instalowania programu DSL jako rozszerzenia programu Visual Studio na innych komputerach.  Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Podczas kompilowania i uruchamiania rozwiązania narzędzi DSL w programie Visual Studio drugie wystąpienie programu Visual Studio pokazuje, w jaki sposób język specyficzny dla domeny będzie wyglądał użytkownikowi w języku. Po zweryfikowaniu, że wszystko działa prawidłowo, można rozpowszechnić `.vsix` plik, który można znaleźć w folderze Build projektu DslPackage. Ten plik może służyć do instalowania programu DSL jako rozszerzenia programu Visual Studio na innych komputerach.  Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Wystąpienie eksperymentalne](../extensibility/the-experimental-instance.md)
-- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

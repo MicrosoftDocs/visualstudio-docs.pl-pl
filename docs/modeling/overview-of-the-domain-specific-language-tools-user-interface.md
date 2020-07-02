@@ -1,7 +1,7 @@
 ---
 title: Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d6139caa84be5097ececd700c73aa6e231174f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566114"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532408"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
 Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (narzędzia DSL) w programie Visual Studio interfejs użytkownika będzie wyglądał na poniższym obrazie.
@@ -25,7 +25,7 @@ Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (
 
  W poniższej tabeli opisano, jak są używane części interfejsu użytkownika.
 
-|**Element**|**Definicja**|
+|**Postaci**|**Definicja**|
 |-|-|
 |Diagram|Na diagramie zostanie wyświetlony model domeny.<br /><br /> Diagram ma dwie strony. Jedna strona definiuje typy elementów w modelach. Druga strona definiuje sposób wyświetlania modeli na ekranie.|
 |Przybornik|Przeciągnij narzędzia z przybornika, aby dodać klasy domeny i typy kształtów do diagramu. Aby dodać relacje, łączniki i mapy kształtów, kliknij narzędzie, a następnie kliknij węzeł źródłowy na diagramie, a następnie węzeł docelowy.|
@@ -49,5 +49,5 @@ Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (
 ## <a name="see-also"></a>Zobacz także
 
 - [Przegląd narzędzi języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md)
-- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)

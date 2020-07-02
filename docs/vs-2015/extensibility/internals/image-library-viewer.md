@@ -1,42 +1,42 @@
 ---
-title: Przeglądarka biblioteki obrazów | Dokumentacja firmy Microsoft
+title: Podgląd biblioteki obrazów | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6f6423c569fd1909539de9460ab3dcde0bcf753c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685552"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532031"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można załadować i wyszukaj obraz o nazwie manifesty umożliwienie użytkownikowi nimi manipulować w taki sam sposób, który będzie programu Visual Studio. Użytkownik może zmienić tła, rozmiary, DPI, duży kontrast i inne ustawienia. Narzędzie również Wyświetla informacje ładowania dla każdego z manifestu obrazu i wyświetla informacje dotyczące źródła dla każdego obrazu w manifeście obrazu. To narzędzie jest przydatne w przypadku:  
+Narzędzie przeglądarka obrazów programu Visual Studio może ładować i przeszukiwać manifesty obrazów, umożliwiając użytkownikowi manipulowanie nimi w taki sam sposób, jak w programie Visual Studio. Użytkownik może zmienić ustawienia tła, rozmiarów, DPI, dużego kontrastu i innych ustawień. Narzędzie wyświetla również informacje o ładowaniu dla każdego manifestu obrazu i wyświetla informacje o źródle dla każdego obrazu w manifeście obrazu. To narzędzie jest przydatne w przypadku:  
   
 1. Diagnozowanie błędów  
   
-2. Zapewnianie atrybuty są prawidłowo ustawione w manifestach obrazu niestandardowego  
+2. Sprawdzanie, czy atrybuty są poprawnie ustawione w manifestach obrazu niestandardowego  
   
-3. Wyszukiwanie obrazów w Visual Studio katalogu obrazu tak, aby rozszerzenia programu Visual Studio mogą używać obrazów, które mieszczą się stylu programu Visual Studio  
+3. Wyszukiwanie obrazów w katalogu obrazów programu Visual Studio, dzięki czemu rozszerzenie programu Visual Studio może korzystać z obrazów pasujących do stylu programu Visual Studio  
   
-   ![Obraz Hero podglądu biblioteki](../../extensibility/internals/media/image-library-viewer-hero.png "Hero przeglądarka biblioteki obrazów")  
+   ![Podgląd biblioteki obrazów Hero](../../extensibility/internals/media/image-library-viewer-hero.png "Podgląd biblioteki obrazów Hero")  
   
    **Moniker obrazu**  
   
-   Moniker obrazu (lub krótkiej nazwy w skrócie) jest parą GUID:ID, która jednoznacznie identyfikuje zasób obrazu lub obraz listy zasobów w bibliotece obrazów.  
+   Moniker obrazu (lub moniker krótki) to identyfikator GUID: identyfikator, który jednoznacznie identyfikuje zasób obrazu lub element zawartości listy obrazów w bibliotece obrazów.  
   
    **Pliki manifestu obrazu**  
   
-   Pliki manifestu (.imagemanifest) obrazów są pliki XML, które definiują zestaw zasoby obrazów, monikerów, które reprezentują te zasoby i rzeczywistego obrazu lub obrazów, które reprezentują każdego zasobu. Manifesty obrazu można zdefiniować obrazy autonomiczne lub listy obrazów do obsługi starszych wersji interfejsu użytkownika. Ponadto są atrybuty, które mogą być ustawione na zasób lub na poszczególnych obrazów za każdy zasób do zmiany, kiedy i jak te zasoby są wyświetlane.  
+   Pliki manifestu obrazu (. imagemanifest) to pliki XML, które definiują zestaw zasobów obrazu, monikery reprezentujące te elementy zawartości oraz rzeczywisty obraz lub obrazy reprezentujące każdy element zawartości. Manifesty obrazu mogą definiować autonomiczne obrazy lub listy obrazów do obsługi starszego interfejsu użytkownika. Ponadto istnieją atrybuty, które można ustawić w elemencie zawartości lub w poszczególnych obrazach za każdy element zawartości, aby zmienić czas i sposób wyświetlania tych zasobów.  
   
-   **Obraz schematu manifestu**  
+   **Schemat manifestu obrazu**  
   
-   Manifest pełny obraz wygląda następująco:  
+   Pełny manifest obrazu wygląda następująco:  
   
 ```xml  
 <ImageManifest>  
@@ -55,9 +55,9 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 </ImageManifest>  
 ```  
   
- **Symbols**  
+ **Symbole**  
   
- Jak zwiększyć czytelność i konserwacja pomocy, manifestu obrazu można użyć symboli dla wartości atrybutów. Symbole są zdefiniowane następująco:  
+ Jako pomoc w zakresie czytelności i konserwacji, manifest obrazu może używać symboli dla wartości atrybutów. Symbole są zdefiniowane w następujący sposób:  
   
 ```xml  
 <Symbols>  
@@ -68,15 +68,14 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 </Symbols>  
 ```  
   
-|||  
+|**Podelementu**|**Definicja**|  
 |-|-|  
-|**Element podrzędny**|**Definicja**|  
-|Import|Importuje symbole dany plik manifestu do użycia w bieżącym manifeście.|  
-|Guid|Symbol reprezentuje identyfikator GUID i muszą być zgodne, formatowania identyfikatora GUID.|  
-|Identyfikator|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|  
-|String|Symbol reprezentuje wartość dowolny ciąg.|  
+|Importuj|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście.|  
+|Guid (identyfikator GUID)|Symbol reprezentuje identyfikator GUID i musi pasować do formatowania identyfikatora GUID.|  
+|ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|  
+|String|Symbol reprezentuje dowolną wartość ciągu.|  
   
- Symbole jest rozróżniana wielkość liter i odwołania, przy użyciu składni $(symbol-name):  
+ W symbolach jest rozróżniana wielkość liter i istnieje odwołanie do niej przy użyciu składni $ (symbol-nazwa):  
   
 ```xml  
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >  
@@ -84,24 +83,23 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
 </Image>  
 ```  
   
- Niektóre symbole są wstępnie zdefiniowane dla wszystkich manifestów. Mogą one być używane w atrybucie Uri \<źródło > lub \<Import > element ścieżki odwołania na komputerze lokalnym.  
+ Niektóre symbole są wstępnie zdefiniowane dla wszystkich manifestów. Mogą one być używane w atrybucie URI \<Source> \<Import> elementu lub do odwoływania się do ścieżek na komputerze lokalnym.  
   
-|||  
+|**Symboliczn**|**Opis**|  
 |-|-|  
-|**Symbol**|**Opis**|  
-|CommonProgramFiles|Wartość zmiennej środowiskowej % CommonProgramFiles %|  
-|LocalAppData|Wartość zmiennej środowiskowej % LocalAppData %|  
+|CommonProgramFiles|Wartość zmiennej środowiskowej% CommonProgramFiles%|  
+|LocalAppData|Wartość zmiennej środowiskowej% LocalAppData%|  
 |ManifestFolder|Folder zawierający plik manifestu|  
-|Moje dokumenty|Pełna ścieżka folderu Moje dokumenty bieżącego użytkownika|  
-|ProgramFiles|Wartość zmiennej środowiskowej % ProgramFiles %|  
-|System|Do folderu Windows\System32|  
-|WinDir|Wartość zmiennej środowiskowej % WinDir %|  
+|Czy|Pełna ścieżka folderu Moje dokumenty bieżącego użytkownika|  
+|ProgramFiles|Wartość zmiennej środowiskowej% ProgramFiles%|  
+|System|Folder Windows\System32|  
+|WinDir|Wartość zmiennej środowiskowej% WinDir%|  
   
- **Obraz**  
+ **Image (Obraz)**  
   
- \<Obrazu > element Określa obraz, który można się odwoływać za krótka. Identyfikator GUID i identyfikator razem tworzą monikera obrazu. Moniker obrazu musi być unikatowa w biblioteki całego obrazu. Jeśli więcej niż jeden obraz ma monikera danego, pierwszy z nich podczas kompilowania biblioteki jest ten, który jest zachowywana.  
+ \<Image>Element definiuje obraz, do którego może odwoływać się moniker. Identyfikatory GUID i ID razem tworzą moniker obrazu. Moniker obrazu musi być unikatowy w całej bibliotece obrazów. Jeśli więcej niż jeden obraz ma daną moniker, pierwszy napotkany podczas kompilowania biblioteki jest zachowywany.  
   
- Musi zawierać co najmniej jedno źródło. Mimo że niezależny od rozmiaru źródeł zapewni najlepsze wyniki do szerokiego zakresu rozmiarów, nie są one wymagane. Jeśli usługa zostanie poproszony o obrazu o rozmiarze nie jest zdefiniowany w \<obraz > elementu i nie istnieje źródło niezależny od rozmiaru, usługa Wybierz najlepsze źródło określonego rozmiaru i przeprowadzi jej skalowanie do żądanego rozmiaru.  
+ Musi zawierać co najmniej jedno źródło. Mimo że źródła o rozmiarze neutralnym będą dawać najlepsze wyniki dla szerokiego zakresu rozmiarów, nie są one wymagane. Jeśli zostanie wyświetlona prośba o obraz rozmiaru, który nie jest zdefiniowany w \<Image> elemencie i nie ma źródła o rozmiarze neutralnym, usługa wybierze Źródło najlepszego rozmiaru i przeskaluje je do żądanego rozmiaru.  
   
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -109,17 +107,16 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
       <!-- optional additional Source elements -->  
 </Image>  
 ```  
-  
-|||  
-|-|-|  
+    
 |**Atrybut**|**Definicja**|  
-|Guid|[Wymagane] Identyfikator GUID część monikera obrazu|  
-|Identyfikator|[Wymagane] Część Identyfikatora monikera obrazu|  
-|AllowColorInversion|[Opcjonalna, domyślne true] Wskazuje, czy obraz, który może mieć jego kolorów programowo odwrócona, gdy jest używana na ciemnym tle.|  
+|-|-|
+|Guid (identyfikator GUID)|Potrzeb Część identyfikatora GUID obrazu monikera|  
+|ID|Potrzeb Część identyfikatora monikera obrazu|  
+|AllowColorInversion|[Opcjonalne, wartość domyślna true] Wskazuje, czy obraz może być programowo odwrócony, gdy jest używany na ciemnym tle.|  
   
  **Element źródłowy**  
   
- \<Źródło > element definiuje pojedynczy źródła zasób obrazu (XAML i PNG).  
+ \<Source>Element definiuje pojedynczy zasób źródłowy obrazu (XAML i PNG).  
   
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -127,37 +124,34 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
  </Source>  
 ```  
   
-|||  
-|-|-|  
 |**Atrybut**|**Definicja**|  
-|Identyfikator URI|[Wymagane] Identyfikator URI, który określa, gdzie można załadować obrazu z. Może to być jedna z następujących czynności:<br /><br /> -A [identyfikatora URI pakietu](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) za pomocą aplikacji: / / / urzędu<br /><br /> — Odwołanie do zasobu składnik bezwzględne<br /><br /> — Ścieżka do pliku zawierającego zasobu natywnego|  
-|Tło|[Opcjonalnie] Wskazuje, jakie na rodzaju tła, których źródłem jest przeznaczony do użycia.<br /><br /> Może to być jedna z następujących czynności:<br /><br /> - *Jasny*: Źródło może być używane na tle światła.<br /><br /> - *Ciemny*: Źródło może być używane na ciemnym tle.<br /><br /> - *HighContrast*: Źródło może służyć w dowolnym tła w trybie dużego kontrastu.<br /><br /> - *HighContrastLight*: Źródło może być używane na tle światła w trybie dużego kontrastu.<br /><br /> -*HighContrastDark*: Źródło może być używane na ciemnym tle w trybie dużego kontrastu.<br /><br /> Jeśli **tła** atrybut zostanie pominięty, źródła można używać na dowolnym tła.<br /><br /> Jeśli **tła** jest *światła*, *ciemny*, *HighContrastLight*, lub *HighContrastDark*, nigdy nie są odwrócone kolory źródła. Jeśli **tła** jest pominięty lub ustawiony jako *HighContrast*, odwracanie kolorów źródło jest kontrolowane przez obraz **AllowColorInversion** atrybutu.|  
+|-|-|  
+|Adresu|Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może być jedną z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) przy użyciu urzędu Application:///<br /><br /> -Bezwzględne odwołanie do zasobu składnika<br /><br /> -Ścieżka do pliku zawierającego zasób natywny|  
+|Tło|Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> - *Jasne*: Źródło może być używane na jasnym tle.<br /><br /> - *Ciemny*: Źródło może być używane w ciemnym tle.<br /><br /> - *HighContrast*: Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> - *HighContrastLight*: Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> -*HighContrastDark*: Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut **Background** zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli **tło** jest *jasne*, *ciemne*, *HighContrastLight*lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli **tło** zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu.|  
   
- A \<źródło > element może mieć dokładnie jeden następujące opcjonalne elementy podrzędne:  
+ \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:  
   
-||||  
+|**Postaci**|**Atrybuty (wszystkie wymagane)**|**Definicja**|  
 |-|-|-|  
-|**Element**|**Atrybuty (wszystkie wymagane)**|**Definicja**|  
-|\<Rozmiar >|Wartość|Źródła będą używane dla obrazów o danym rozmiarze (w jednostkach urządzenia). Obraz, który będzie mieć kształtu kwadratu.|  
-|\<SizeRange>|MinSize, MaxSize|Źródła będą używane dla obrazów z MinSize MaxSize (w jednostkach urządzenia) (włącznie). Obraz, który będzie mieć kształtu kwadratu.|  
-|\<Wymiary >|Szerokość, wysokość|Źródła będą używane dla obrazów o danym szerokość i wysokość (w jednostkach urządzenia).|  
-|\<DimensionRange >|Wartości elementu MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Źródła będą używane dla obrazów z minimalną szerokość/wysokość, szerokość/wysokość maksymalna (w jednostkach urządzenia) (włącznie).|  
+|\<Size>|Wartość|Źródło będzie używane dla obrazów o danym rozmiarze (w jednostkach urządzeń). Obraz będzie kwadratowy.|  
+|\<SizeRange>|MinSize, brak|Źródło będzie używane dla obrazów z MinSize do rozmiaru całkowitego (w jednostkach urządzeń) włącznie. Obraz będzie kwadratowy.|  
+|\<Dimensions>|Szerokość, Wysokość|Źródło będzie używane dla obrazów o danej szerokości i wysokości (w jednostkach urządzeń).|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Źródło będzie używane w przypadku obrazów o minimalnej szerokości/wysokości do maksymalnej szerokości/wysokości (w jednostkach urządzeń) włącznie.|  
   
- A \<źródło > element może mieć również opcjonalny \<NativeResource > podelement, który definiuje \<źródło > który jest ładowany z natywnego zestawu, a nie zestaw zarządzany.  
+ \<Source>Element może również mieć opcjonalny \<NativeResource> podelement, który definiuje, \<Source> który jest ładowany z zestawu natywnego, a nie z zestawu zarządzanego.  
   
 ```xml  
 <NativeResource Type="type" ID="int" />  
 ```  
   
-|||  
-|-|-|  
 |**Atrybut**|**Definicja**|  
-|Typ|[Wymagane] Typ zasobu natywnego, XAML lub PNG|  
-|Identyfikator|[Wymagane] Całkowitą część Identyfikatora zasobu natywnego|  
+|-|-|  
+|Typ|Potrzeb Typ zasobu natywnego, XAML lub PNG|  
+|ID|Potrzeb Część identyfikatora całkowitego zasobu natywnego|  
   
- **ImageList**  
+ **Obrazów**  
   
- \<ImageList > element definiuje kolekcję obrazów, które mogą być zwracane w pojedynczej taśmy. Pasek bazuje na żądanie, zgodnie z potrzebami.  
+ \<ImageList>Element definiuje kolekcję obrazów, które mogą być zwracane w jednym pasku. Pasek jest zbudowany na żądanie, zgodnie z potrzebami.  
   
 ```xml  
 <ImageList>  
@@ -166,67 +160,66 @@ Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można zała
  </ImageList>  
 ```  
   
-|||  
-|-|-|  
 |**Atrybut**|**Definicja**|  
-|Guid|[Wymagane] Identyfikator GUID część monikera obrazu|  
-|Identyfikator|[Wymagane] Część Identyfikatora monikera obrazu|  
-|Zewnętrzna|[Opcjonalnie, wartość domyślna to false] Wskazuje, czy monikera obrazu odwołuje się do obrazu w bieżącym manifeście.|  
+|-|-|  
+|Guid (identyfikator GUID)|Potrzeb Część identyfikatora GUID obrazu monikera|  
+|ID|Potrzeb Część identyfikatora monikera obrazu|  
+|Zewnętrzna|[Opcjonalne, wartość domyślna to false] Wskazuje, czy moniker obrazu odwołuje się do obrazu w bieżącym manifeście.|  
   
- Moniker obrazu zawarte nie musi odwoływać się do obrazu, który został zdefiniowany w bieżącym manifeście. Jeśli nie można odnaleźć obrazu zawarte w bibliotece obrazów, obraz pusty symbol zastępczy zostanie użyty w tym miejscu.  
+ Moniker zawartego obrazu nie musi odwoływać się do obrazu zdefiniowanego w bieżącym manifeście. Jeśli w bibliotece obrazów nie można znaleźć zawartego obrazu, w jego miejscu zostanie użyty pusty obraz zastępczy.  
   
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  
  **Sprawdzanie poprawności manifestu obrazu niestandardowego**  
   
- Aby utworzyć niestandardowy manifest, zaleca się, że używasz narzędzia ManifestFromResources automatyczne generowanie manifestu. Wykonać walidację manifestu niestandardowych, uruchom przeglądarka biblioteki obrazów, a następnie wybierz pozycję Plik > Ustaw ścieżki... Aby otworzyć okno dialogowe katalogów wyszukiwania. Narzędzie użyje katalogów wyszukiwania można załadować obrazu manifestów, ale również użyje on je, aby znaleźć pliki .dll, które zawierają obrazy w manifeście, dlatego upewnij się, że zawierają manifestu i katalogi biblioteki DLL w tym oknie dialogowym.  
+ W celu utworzenia manifestu niestandardowego zaleca się automatyczne generowanie manifestu przy użyciu narzędzia ManifestFromResources. Aby sprawdzić poprawność manifestu niestandardowego, uruchom przeglądarkę biblioteki obrazów i wybierz pozycję plik > Ustaw ścieżki... Aby otworzyć okno dialogowe katalogi wyszukiwania. Narzędzie użyje katalogów wyszukiwania do załadowania manifestów obrazów, ale będzie również używać ich do znajdowania plików DLL, które zawierają obrazy w manifeście, dlatego pamiętaj, aby w tym oknie dialogowym uwzględnić zarówno katalog manifestu, jak i biblioteki DLL.  
   
- ![Wyszukiwanie przeglądarka biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-search.png "wyszukiwania przeglądarka biblioteki obrazów")  
+ ![Wyszukiwanie podglądu biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-search.png "Wyszukiwanie podglądu biblioteki obrazów")  
   
- Kliknij przycisk **Dodaj...** Aby wybrać nowy katalogi wyszukiwania do wyszukiwania manifesty i ich odpowiednie biblioteki dll. Narzędzie zapamiętają te katalogi wyszukiwania, a ich można włączyć lub wyłączyć przez zaznaczenie lub usunięcie zaznaczenia katalogu.  
+ Kliknij przycisk **Dodaj...** Aby wybrać nowe katalogi wyszukiwania do wyszukiwania manifestów i ich odpowiednich bibliotek DLL. Narzędzie zapamiętaje te katalogi wyszukiwania i będzie można je włączyć lub wyłączyć, sprawdzając lub usuwając zaznaczenie katalogu.  
   
- Domyślnie narzędzie spróbuje znaleźć katalogu instalacyjnego programu Visual Studio i dodać tych katalogów do listy katalogów wyszukiwania. Można ręcznie dodać katalogi, których nie może znaleźć to narzędzie.  
+ Domyślnie narzędzie spróbuje znaleźć katalog instalacyjny programu Visual Studio i dodać te katalogi do listy katalogów wyszukiwania. Można ręcznie dodawać katalogi, które nie znajdują się w narzędziu.  
   
- Po załadowaniu wszystkich manifestów, narzędzie może służyć do przełączenia **tła** kolory, **DPI**, **o wysokim kontraście**, lub **odcieni szarości** dla obrazy, dzięki czemu użytkownik może wizualnie badać zasoby obrazów, aby zweryfikować, że są one są renderowane prawidłowo dla różnych ustawień.  
+ Po załadowaniu wszystkich manifestów narzędzie może służyć do przełączania kolorów **tła** , **dpi**, **dużego kontrastu**lub **grayscaling** obrazów, dzięki czemu użytkownik może wizualnie zbadać zasoby obrazu, aby upewnić się, że są one prawidłowo renderowane dla różnych ustawień.  
   
- ![Obraz tła podglądu biblioteki](../../extensibility/internals/media/image-library-viewer-background.png "tła przeglądarka biblioteki obrazów")  
+ ![Tło podglądu biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-background.png "Tło podglądu biblioteki obrazów")  
   
- Światła, ciemne lub niestandardową wartość można ustawić kolor tła. Wybieranie "Koloru niestandardowego" Otwórz okno dialogowe wyboru kolorów i dodawanie tego niestandardowego koloru do dolnej części pola kombi tła, aby ułatwić odwoływanie później.  
+ Kolor tła można ustawić na wartość jasny, ciemny lub niestandardową. Wybranie opcji "kolor niestandardowy" spowoduje otwarcie okna dialogowego wyboru koloru i dodanie tego niestandardowego koloru do dolnej części pola kombi tła w celu łatwego odwoływania się później.  
   
- ![Kolor niestandardowy przeglądarka biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-custom-color.png "koloru niestandardowego przeglądarka biblioteki obrazów")  
+ ![Kolor niestandardowy podglądu biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-custom-color.png "Kolor niestandardowy podglądu biblioteki obrazów")  
   
- Wybieranie monikera obrazu Wyświetla informacje dotyczące każdego rzeczywistego obrazu za tej krótkiej nazwy w okienku szczegółów obraz po prawej stronie. Okienka umożliwia także użytkownikom kopiowania krótka według nazwy lub wartości pierwotnych GUID:ID.  
+ Wybranie monikera obrazu powoduje wyświetlenie informacji dla każdego rzeczywistego obrazu znajdującego się za tym monikerem w okienku szczegółów obrazu po prawej stronie. Okienko umożliwia również użytkownikom kopiowanie monikera według nazwy lub przez pierwotny identyfikator GUID: wartość identyfikatora.  
   
- ![Obraz szczegółów obrazu podglądu biblioteki](../../extensibility/internals/media/image-library-viewer-image-details.png "szczegóły obrazu podglądu biblioteki obrazów")  
+ ![Szczegóły obrazu podglądu biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-image-details.png "Szczegóły obrazu podglądu biblioteki obrazów")  
   
- Informacje wyświetlane dla każdego źródła obrazu obejmuje jakiego rodzaju tła, aby go wyświetlić, czy można zastosować motyw lub obsługuje duży kontrast i jakie rozmiary, jest on prawidłowy dla lub czy jest niezależny od rozmiaru i tego, czy obraz jest dostarczany z natywnego zestawu.  
+ Informacje wyświetlane dla każdego źródła obrazu obejmują rodzaj tła, na którym ma być wyświetlana zawartość, czy mogą być przeznaczone do użytku lub duży kontrast, jakie rozmiary są poprawne dla lub czy nie są neutralne od rozmiaru i czy obraz pochodzi z zestawu natywnego.  
   
- ![Przeglądarka biblioteki obrazów można motyw](../../extensibility/internals/media/image-library-viewer-can-theme.png "przeglądarka biblioteki obrazów można motywu")  
+ ![Podgląd biblioteki obrazów może być motywem](../../extensibility/internals/media/image-library-viewer-can-theme.png "Podgląd biblioteki obrazów może być motywem")  
   
- Podczas sprawdzania poprawności manifestu obrazu, zaleca się wdrożenie manifestu i obraz biblioteki DLL w lokalizacjach rzeczywistych. Pozwoli to zweryfikować, czy wszystkie ścieżki względne są poprawne i czy biblioteka obrazów można znaleźć i załadować manifestu i obraz biblioteki DLL.  
+ Podczas sprawdzania poprawności manifestu obrazu zalecamy wdrożenie pliku DLL manifestu i obrazu w ich lokalizacjach w świecie rzeczywistym. Spowoduje to sprawdzenie, czy wszystkie ścieżki względne działają prawidłowo i czy biblioteka obrazów może znaleźć i załadować plik DLL manifestu i obrazu.  
   
- **Wyszukiwanie obrazów katalogu KnownMonikers**  
+ **Wyszukiwanie KnownMonikers wykazu obrazów**  
   
- Aby lepiej dopasować je do programu Visual Studio stylów, rozszerzenia programu Visual Studio mogą używać obrazów, w katalogu obrazu w usłudze Visual Studio, zamiast tworzenia i używania swój własny. Ma tę zaletę, nie muszą obsługiwać te obrazy i gwarantuje, czy obraz ma obrazu zapasowego wysokiej rozdzielczości DPI tak powinien wyglądać w wszystkich ustawień DPI, które obsługuje program Visual Studio.  
+ Aby lepiej dopasować style programu Visual Studio, rozszerzenie programu Visual Studio może używać obrazów w katalogu obrazów programu Visual Studio, a nie do tworzenia własnych i używania własnych. Dzięki temu nie trzeba obsługiwać tych obrazów i gwarantujemy, że obraz będzie miał obraz o wysokiej rozdzielczości DPI, dlatego powinien wyglądać poprawnie we wszystkich ustawieniach DPI obsługiwanych przez program Visual Studio.  
   
- Przeglądarka biblioteki obrazów umożliwia manifestu do przeszukania, tak aby użytkownik może odnaleźć monikera elementu, reprezentujący zasób obrazu i użycie tej krótkiej nazwy w kodzie. Aby wyszukać obrazów, wprowadź żądane wyszukiwany termin w polu wyszukiwania, a następnie naciśnij klawisz Enter. Pasek stanu u dołu będą wyświetlane, ile wyników poza całkowita liczba obrazów we wszystkich manifestów.  
+ Przeglądarka biblioteki obrazów umożliwia przeszukiwanie manifestu, aby użytkownik mógł znaleźć moniker reprezentujący zasób obrazu i używać tego monikera w kodzie. Aby wyszukać obrazy, wprowadź żądany termin wyszukiwania w polu wyszukiwania i naciśnij klawisz ENTER. Na pasku stanu u dołu będzie wyświetlana liczba dopasowań znalezionych z łącznej liczby obrazów we wszystkich manifestach.  
   
- ![Filtr przeglądarka biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-filter.png "filtr przeglądarka biblioteki obrazów")  
+ ![Filtr podglądu biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-filter.png "Filtr podglądu biblioteki obrazów")  
   
- Podczas wyszukiwania dla monikerów obrazu w manifestach istniejących, firma Microsoft zaleca wyszukiwania, a następnie użyj tylko Visual Studio obraz wykazu monikerów, inne monikerów celowo publicznie lub własne monikerów. Użycie monikerów niepublicznych, niestandardowego interfejsu użytkownika może być uszkodzony lub jego obrazów lub zostały zmienione w nieoczekiwany sposób Jeśli podczas tych niepublicznych monikerów i obrazy są zmieniane lub aktualizowane.  
+ Podczas wyszukiwania monikerów obrazów w istniejących manifestach zalecamy wyszukiwanie i używanie tylko monikerów wykazu obrazów programu Visual Studio, innych zamierzonych publicznie dostępnych monikerów lub własnych niestandardowych monikerów. W przypadku używania niepublicznych monikerów niestandardowy interfejs użytkownika może być uszkodzony lub jego obrazy uległy zmianie w nieoczekiwany sposób, jeśli te niepubliczne monikery i obrazy zostaną zmienione lub zaktualizowane.  
   
- Ponadto wyszukiwanie według identyfikatora GUID jest możliwe. Ten typ wyszukiwania jest przydatne w przypadku filtrowania na liście, aby jeden manifest lub pojedynczego podsekcję manifestu, jeśli to manifest zawiera wiele identyfikatorów GUID.  
+ Ponadto możliwe jest wyszukiwanie według identyfikatora GUID. Ten typ wyszukiwania jest przydatny do filtrowania listy do jednego manifestu lub pojedynczej podsekcji manifestu, jeśli ten manifest zawiera wiele identyfikatorów GUID.  
   
- ![Obraz biblioteki podglądu Filtr identyfikatora GUID](../../extensibility/internals/media/image-library-viewer-filter-guid.png "obrazu biblioteki podglądu Filtr identyfikatora GUID")  
+ ![Identyfikator GUID filtru podglądu biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-filter-guid.png "Identyfikator GUID filtru podglądu biblioteki obrazów")  
   
- Na koniec wyszukiwanie według Identyfikatora jest możliwe również.  
+ Na koniec wyszukiwanie według identyfikatora jest również możliwe.  
   
- ![Identyfikator filtru przeglądarka biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-filter-id.png "identyfikator filtru przeglądarka biblioteki obrazów")  
+ ![Identyfikator filtru podglądu biblioteki obrazów](../../extensibility/internals/media/image-library-viewer-filter-id.png "Identyfikator filtru podglądu biblioteki obrazów")  
   
 ## <a name="notes"></a>Uwagi  
   
-- Domyślnie narzędzie będzie ściągać kilka obrazów manifesty obecny w katalogu instalacyjnym programu Visual Studio. Jest jedyną, która ma publicznie w użyciu monikerów **Microsoft.VisualStudio.ImageCatalog** manifestu. Identyfikator GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (czy **nie** Zastąp ten identyfikator GUID w niestandardowym manifeście) typu: KnownMonikers  
+- Domyślnie narzędzie pobierze kilka manifestów obrazów znajdujących się w katalogu instalacyjnym programu Visual Studio. Jedyną z nich, która ma publicznie wykorzystane monikery, jest manifest **Microsoft. VisualStudio. ImageCatalog** . GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 ( **nie** Przesłoń tego identyfikatora GUID w manifeście niestandardowym) Typ: KnownMonikers  
   
-- Narzędzie prób podczas uruchamiania można załadować wszystkich manifestów obrazu, które znajdzie, dzięki czemu może potrwać kilka sekund dla aplikacji, aby faktycznie są wyświetlane. Być może wolno lub nieodpowiadający podczas ładowania manifestów.  
+- Narzędzie próbuje uruchomić polecenie, aby załadować wszystkie znalezione manifesty obrazu, co może potrwać kilka sekund. Może to być również powolne lub nieodpowiadające podczas ładowania manifestów.  
   
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe  
  To narzędzie nie generuje żadnych danych wyjściowych.

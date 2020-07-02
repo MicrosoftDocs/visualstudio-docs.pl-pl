@@ -1,18 +1,18 @@
 ---
 title: 'Porady: rozszerzanie projektanta języka specyficznego dla domeny'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605595"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532589"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
 
@@ -68,7 +68,7 @@ Aby przetestować dowolne rozszerzenia w tym temacie, skompiluj i uruchom rozwi�
 
 Aby wdrożyć rozszerzenia w głównym programie Visual Studio i innych komputerach, wykonaj następujące kroki:
 
-1. Znajdź plik instalacji VSIX w projekcie VSIX w \\ bin * \\ \*. vsix
+1. Znajdź plik instalacji VSIX w projekcie VSIX w pliku bin \\ * \\ \* . vsix
 
 2. Skopiuj ten plik na komputer docelowy, a następnie kliknij go dwukrotnie w Eksploratorze Windows (lub Eksploratorze plików).
 
@@ -84,7 +84,7 @@ Aby odinstalować rozszerzenie, wykonaj następujące kroki:
 
 Aby polecenie menu skrótów było wyświetlane na powierzchni projektant DSL lub w oknie Eksplorator DSL, napisz klasę podobną do następującej.
 
-Klasa musi implementować `ICommandExtension` i musi mieć atrybut `DslDefinitionModelCommandExtension`.
+Klasa musi implementować `ICommandExtension` i musi mieć atrybut `DslDefinitionModelCommandExtension` .
 
 ```csharp
 using System.Collections.Generic;

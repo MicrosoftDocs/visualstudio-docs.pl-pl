@@ -1,8 +1,8 @@
 ---
-title: Mierzenie wydajności kodu języka Python
-description: Użyj profilera programu Visual Studio, aby sprawdzić wydajność kodu języka Python podczas korzystania z interpreterów opartych na CPython.
+title: Mierzenie wydajności kodu Python
+description: Użyj profilera programu Visual Studio, aby sprawdzić wydajność kodu Python podczas korzystania z interpreterów opartych na CPython.
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,34 +10,34 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784286"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531784"
 ---
-# <a name="profile-python-code"></a>Profil Kod Pythona
+# <a name="profile-python-code"></a>Kod języka Python
 
-Można profilować aplikację Języka Python podczas korzystania z interpreterów opartych na CPython. (Zobacz [funkcje macierzy — profilowanie](overview-of-python-tools-for-visual-studio.md#matrix-profiling) dostępności tej funkcji dla różnych wersji programu Visual Studio.)
+Aplikację języka Python można profilować przy użyciu interpreterów opartych na CPython. (Zobacz [funkcje macierzy — profilowanie](overview-of-python-tools-for-visual-studio.md#matrix-profiling) dostępności tej funkcji dla różnych wersji programu Visual Studio).
 
-## <a name="profiling-for-cpython-based-interpreters"></a>Profilowanie dla tłumaczy na podstawie CPython
+## <a name="profiling-for-cpython-based-interpreters"></a>Profilowanie dla interpreterów opartych na CPython
 
-Profilowanie jest uruchamiane za pomocą polecenia menu > **Analizuj uruchamianie profilowania języka Python,** które otwiera okno dialogowe konfiguracji: **Analyze**
+Profilowanie jest uruchamiane za pomocą polecenia **Przeanalizuj**  >  **profilowanie uruchamiania Python** menu, które otwiera okno dialogowe konfiguracji:
 
 ![Okno dialogowe konfiguracji profilowania](media/profiling-start.png)
 
-Po wybraniu **przycisku OK**profiler uruchamia i otwiera raport wydajności, za pomocą którego można zbadać, jak czas spędza się w aplikacji:
+Po wybraniu **przycisku OK**Profiler uruchamia i otwiera raport dotyczący wydajności, za pomocą którego można dowiedzieć się, jak czas jest poświęcony na korzystanie z aplikacji:
 
-![Profilowanie raportu o skuteczności](media/profiling-results.png)
+![Raport dotyczący wydajności profilowania](media/profiling-results.png)
 
 > [!Note]
-> Obecnie visual studio obsługuje tylko ten poziom profilowania pełnej aplikacji, ale z pewnością chcemy usłyszeć opinie na temat przyszłych możliwości. Użyj przycisku **Opinie o produkcie** u dołu tej strony.
+> Obecnie program Visual Studio obsługuje tylko ten poziom profilowania pełnej aplikacji, ale na pewno chcemy poznać swoją opinię na temat przyszłych możliwości. Skorzystaj z przycisku **opinii o produkcie** w dolnej części tej strony.
 
-## <a name="profiling-for-ironpython"></a>Profilowanie ironpython
+## <a name="profiling-for-ironpython"></a>Profilowanie dla IronPython
 
-Ponieważ IronPython nie jest interpreterem opartym na CPython, powyższa funkcja profilowania nie działa.
+Ponieważ IronPython nie jest interpreterem opartym na CPython, funkcja profilowania powyżej nie działa.
 
-Zamiast tego należy użyć visual studio .NET profiler uruchamiając *ipy.exe* bezpośrednio jako aplikacji docelowej, przy użyciu odpowiednich argumentów, aby uruchomić skrypt startowy. Dołącz `-X:Debug` do wiersza polecenia, aby upewnić się, że cały kod języka Python może być debugowany i profilowane. Ten argument generuje raport wydajności, w tym czas spędzony zarówno w czasie wykonywania IronPython i kodu. Kod jest identyfikowany przy użyciu zniekształconych nazw.
+Zamiast tego należy użyć programu Visual Studio .NET Profiler, uruchamiając *ipy.exe* bezpośrednio jako aplikację docelową, używając odpowiednich argumentów do uruchomienia skryptu uruchomieniowego. Uwzględnij `-X:Debug` w wierszu polecenia, aby upewnić się, że cały kod w języku Python może być debugowany i profilowany. Ten argument generuje raport dotyczący wydajności, w tym czas spędzony zarówno w środowisku uruchomieniowym IronPython, jak i kodzie. Kod jest identyfikowany przy użyciu nazw zniekształcona.
 
-Alternatywnie, IronPython ma niektóre z własnych wbudowanych profilowania, ale obecnie nie ma dobrego wizualizatora dla niego. Informacje na temat dostępnych informacji można znaleźć w programie [IronPython Profiler](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (blogi MSDN).
+Alternatywnie, IronPython ma własne wbudowane profilowanie, ale obecnie nie istnieje dobry wizualizator. Zobacz [IronPython Profiler](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (blogi MSDN), aby uzyskać dostęp do dostępnych elementów.
