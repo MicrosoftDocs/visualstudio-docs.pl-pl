@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 98e825fd5543b928569b99218c9054aff666e0fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918760"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545148"
 ---
-# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Należy poprawnie zaimplementować metody serializacji
+# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Poprawnie implementuj metody serializacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA2238: Implementuj poprawnie metody serializacji](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|Kategoria|Microsoft.Usage|
+|Kategoria|Microsoft. Usage|
 |Zmiana kluczowa|Przerywanie — Jeśli metoda jest widoczna poza zestawem.<br /><br /> Bez przerywania — Jeśli metoda nie jest widoczna poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
@@ -48,7 +48,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA2238: Im
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Procedury obsługi zdarzeń serializacji pobierają jeden parametr typu <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, zwracają `void`i mają widoczność `private`.
+  Procedury obsługi zdarzeń serializacji przyjmują jeden parametr typu <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> , Return `void` i mają `private` widoczność.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Popraw sygnaturę, zwracany typ lub widoczność programu obsługi zdarzeń serializacji.
@@ -63,16 +63,16 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA2238: Im
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/vb/FxCop.Usage.SerializationEventHandlers.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2236: Wywołuj metody klasy podstawowej w typach ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Wywołuj metody klasy bazowej dla typów ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240: Zaimplementuj poprawnie interfejs ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+ [CA2240: Poprawnie zaimplementuj interfejs ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
  [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
 
  [CA2235: Oznacz wszystkie pola nieprzeznaczone do serializacji](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: Oznacz typy ISerializable za pomocą atrybutu SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: Określ metody deserializacji dla pól opcjonalnych](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239: Udostępnij metody deserializacji dla pól opcjonalnych](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
  [CA2120: Zabezpiecz konstruktory serializacji](../code-quality/ca2120-secure-serialization-constructors.md)

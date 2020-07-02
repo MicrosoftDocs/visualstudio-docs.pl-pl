@@ -19,17 +19,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dd1c144f04150e3965e2c0264b80147cbd9b8f19
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2304b78073b806dfc4aec9686f061d946b379ded
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663211"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545421"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Przeciąż operator equals przeciążając operatory add i subtract
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Przeciążaj operator równości w przypadku przeciążania operatorów dodawania i odejmowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
@@ -40,9 +40,9 @@ ms.locfileid: "72663211"
  Typ publiczny lub chroniony implementuje operatory dodawania lub odejmowania bez implementowania operatora porównania.
 
 ## <a name="rule-description"></a>Opis reguły
- Gdy wystąpienia typu można łączyć przy użyciu operacji takich jak dodawanie i odejmowanie, należy prawie zawsze definiować równość, aby zwracać `true` dla wszystkich dwóch wystąpień, które mają te same wartości elementów.
+ Gdy wystąpienia typu można łączyć za pomocą operacji, takich jak dodawanie i odejmowanie, należy prawie zawsze definiować równość `true` dla wszystkich dwóch wystąpień, które mają te same wartości elementów.
 
- Nie można użyć domyślnego operatora równości w przeciążonej implementacji operatora równości. Wykonanie tej operacji spowoduje przepełnienie stosu. Aby zaimplementować operator równości, użyj metody Object. Equals w implementacji. Zobacz Poniższy przykład.
+ Nie można użyć domyślnego operatora równości w przeciążonej implementacji operatora równości. Wykonanie tej operacji spowoduje przepełnienie stosu. Aby zaimplementować operator równości, użyj metody Object. Equals w implementacji. Zobacz poniższy przykład.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -65,7 +65,7 @@ return left.Equals(right);
  Jeśli domyślna implementacja operatora równości zapewnia poprawne zachowanie dla tego typu, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie zdefiniowano typ (`BadAddableType`) naruszający tę regułę. Ten typ powinien implementować operator równości, aby wszystkie dwa wystąpienia, które mają te same wartości pól, były testowane `true` dla równości. Typ `GoodAddableType` pokazuje poprawioną implementację. Należy zauważyć, że ten typ implementuje także operator nierówności i zastępuje <xref:System.Object.Equals%2A>, aby spełnić inne reguły. Kompletna implementacja również implementuje <xref:System.Object.GetHashCode%2A>.
+ W poniższym przykładzie zdefiniowano typ ( `BadAddableType` ), który narusza tę regułę. Ten typ powinien implementować operator równości, aby wszystkie dwa wystąpienia, które mają te same wartości pól, były sprawdzane pod `true` kątem równości. Typ `GoodAddableType` pokazuje poprawioną implementację. Należy zauważyć, że ten typ powoduje także implementację operatora nierówności i zastąpień <xref:System.Object.Equals%2A> w celu spełnienia innych reguł. Zaimplementowana zostanie również kompletna implementacja <xref:System.Object.GetHashCode%2A> .
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AddAndSubtract/cs/FxCop.Design.AddAndSubtract.cs#1)]
 
@@ -76,8 +76,10 @@ return left.Equals(right);
 
  Ten przykład generuje następujące dane wyjściowe.
 
- **Zły typ: {2,2} {2,2} są równe? Nie** 
-**dobry typ: {3,3} {3,3} są równe? Tak** 
-**dobry typ: {3,3} 0 są = =?   Tak** 1**zły typ: 3 4 są równe? Brak** 5**dobry typ: 7 8 są = =?   Nie**
+ **Zły typ: {2,2} {2,2} są równe? Brak** 
+ **dobrego typu: {3,3} {3,3} są równe? Tak** 
+ **dobry typ: {3,3} {3,3} czy = =?   Tak** 
+ **zły typ: {2,2} {9,9} jest równe? Brak** 
+ **dobrego typu: {3,3} {9,9} czy =?   Nie**
 ## <a name="see-also"></a>Zobacz też
  [Operatory równości](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

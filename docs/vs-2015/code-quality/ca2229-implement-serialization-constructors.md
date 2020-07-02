@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56d53717afc8cd966903e75f77e1745de0031745
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba654496d80654f0d9790a01bbc41326f7a5f13e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662842"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540494"
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Należy zaimplementować konstruktory serializacji
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Zaimplementuj konstruktory serializacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
@@ -33,16 +33,16 @@ ms.locfileid: "72662842"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Typ implementuje interfejs <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, nie jest obiektem delegowanym ani interfejsem, a jeden z następujących warunków jest spełniony:
+ Typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejs, nie jest obiektem delegowanym ani interfejsem, a jeden z następujących warunków jest spełniony:
 
-- Typ nie ma konstruktora, który przyjmuje obiekt <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> i obiekt <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> (sygnatura konstruktora serializacji).
+- Typ nie ma konstruktora, który przyjmuje <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> obiekt i <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> obiekt (podpis konstruktora serializacji).
 
 - Typ jest niezapieczętowany i modyfikator dostępu dla jego konstruktora serializacji nie jest chroniony (rodzina).
 
 - Typ jest zapieczętowany i modyfikator dostępu dla jego konstruktora serializacji nie jest prywatny.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła ma zastosowanie do typów, które obsługują serializację niestandardowe. Typ obsługuje serializacji niestandardowej, jeśli implementuje interfejs <xref:System.Runtime.Serialization.ISerializable>. Konstruktor serializacji jest wymagany do deserializacji lub ponownego tworzenia obiektów, które zostały zserializowane przy użyciu metody <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>.
+ Ta reguła ma zastosowanie do typów, które obsługują serializację niestandardowe. Typ obsługuje serializacji niestandardowej, jeśli implementuje <xref:System.Runtime.Serialization.ISerializable> interfejs. Konstruktor serializacji jest wymagany do deserializacji lub ponownego tworzenia obiektów, które zostały zserializowane przy użyciu <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zaimplementować konstruktora serializacji. Dla zamkniętej klasy należy ustawić konstruktor prywatny; w przeciwnym razie powinien być chroniony.
@@ -56,8 +56,8 @@ ms.locfileid: "72662842"
  [!code-csharp[FxCop.Usage.ISerializableCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ISerializableCtor/cs/FxCop.Usage.ISerializableCtor.cs#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2237: Oznacz typy ISerializable za pomocą atrybutu SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName><xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
+ <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

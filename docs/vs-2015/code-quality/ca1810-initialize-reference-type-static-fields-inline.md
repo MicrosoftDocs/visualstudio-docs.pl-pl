@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9032ac105477370477b13554afe4ee65bd7cd733
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4ad2f4db9290430bb8a378bd264078370ca7b66
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609016"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543835"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Zainicjuj wbudowane pola statyczne typu referencyjnego
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
 |CheckId|CA1810|
@@ -38,9 +38,9 @@ ms.locfileid: "72609016"
 ## <a name="rule-description"></a>Opis reguły
  Podczas gdy typ deklaruje jawny, statyczny konstruktor, kompilator just in time (JIT) do każdej metody statycznej dodaje sprawdzenie i konstruktora wystąpienia, aby upewnić się, że konstruktor statyczny został wcześniej wywołany. Inicjalizacja statyczna jest wyzwalana, gdy zostanie uzyskany dostęp do dowolnego statycznego elementu członkowskiego lub gdy tworzone jest wystąpienie typu. Jednak Inicjalizacja statyczna nie jest wyzwalana, Jeśli deklarujesz zmienną typu, ale nie korzystasz z niej, co może być istotne w przypadku zmiany stanu globalnego inicjalizacji.
 
- Gdy wszystkie dane statyczne są inicjowane wewnętrznie i jawny Konstruktor statyczny nie jest zadeklarowany, kompilatory języka pośredniego (MSIL) firmy Microsoft dodają flagę `beforefieldinit` i niejawnego konstruktora statycznego, który inicjuje dane statyczne, do typu MSIL definicji. Gdy kompilator JIT napotka flagę `beforefieldinit`, większość czasu sprawdzenia konstruktora statycznego nie są dodawane. Inicjalizacja statyczna jest gwarantowana w pewnym czasie przed uzyskaniem dostępu do dowolnych pól statycznych, ale nie przed wywołaniem statycznej metody lub konstruktora wystąpień. Należy zauważyć, że inicjalizacja statyczna może wystąpić w dowolnym momencie po zadeklarowaniu zmiennej typu.
+ Gdy wszystkie dane statyczne są inicjowane wewnętrznie i jawny Konstruktor statyczny nie jest zadeklarowany, kompilatory języka pośredniego (MSIL) firmy Microsoft dodają `beforefieldinit` flagę i niejawnego konstruktora statycznego, który inicjuje dane statyczne, do definicji typu MSIL. Gdy kompilator JIT napotka `beforefieldinit` flagę, większość czasu sprawdzenia konstruktora statycznego nie jest dodawana. Inicjalizacja statyczna jest gwarantowana w pewnym czasie przed uzyskaniem dostępu do dowolnych pól statycznych, ale nie przed wywołaniem statycznej metody lub konstruktora wystąpień. Należy zauważyć, że inicjalizacja statyczna może wystąpić w dowolnym momencie po zadeklarowaniu zmiennej typu.
 
- Sprawdzenia konstruktora statycznego mogą obniżyć wydajność. Często statyczny Konstruktor jest używany tylko do inicjowania pól statycznych, w takim przypadku należy tylko upewnić się, że inicjalizacja statyczna występuje przed pierwszym dostępem do pola statycznego. Zachowanie `beforefieldinit` jest odpowiednie dla tych i większości innych typów. Jest on nieodpowiedni tylko wtedy, gdy statyczna Inicjalizacja ma wpływ na stan globalny i jeden z następujących warunków jest spełniony:
+ Sprawdzenia konstruktora statycznego mogą obniżyć wydajność. Często statyczny Konstruktor jest używany tylko do inicjowania pól statycznych, w takim przypadku należy tylko upewnić się, że inicjalizacja statyczna występuje przed pierwszym dostępem do pola statycznego. `beforefieldinit`Zachowanie jest odpowiednie dla tych i większości innych typów. Jest on nieodpowiedni tylko wtedy, gdy statyczna Inicjalizacja ma wpływ na stan globalny i jeden z następujących warunków jest spełniony:
 
 - Wpływ na stan globalny jest kosztowny i nie jest wymagany, jeśli typ nie jest używany.
 
@@ -53,17 +53,18 @@ ms.locfileid: "72609016"
  Jeśli wydajność nie jest istotna, można bezpiecznie pominąć ostrzeżenie z tej reguły. lub jeśli globalne zmiany stanu, które są spowodowane inicjalizacją statyczną, są kosztowne lub muszą mieć gwarancje przed wywołaniem metody statycznej typu lub utworzenia wystąpienia typu.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono typ `StaticConstructor`, który narusza regułę i typ `NoStaticConstructor`, który zastępuje Konstruktor statyczny z inicjalizacją wbudowaną w celu spełnienia reguły.
+ Poniższy przykład pokazuje typ, `StaticConstructor` , który narusza regułę i typ, `NoStaticConstructor` , która zastępuje statyczny Konstruktor z inicjalizacją wbudowaną w celu spełnienia reguły.
 
  [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/cs/FxCop.Performance.RefTypeStaticCtor.cs#1)]
  [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/vb/FxCop.Performance.RefTypeStaticCtor.vb#1)]
 
- Zwróć uwagę na dodanie flagi `beforefieldinit` w definicji MSIL dla klasy `NoStaticConstructor`.
+ Zwróć uwagę `beforefieldinit` na dodanie flagi do definicji MSIL dla `NoStaticConstructor` klasy.
 
- **Funkcja Public AutoStaticConstructord ANSI** **rozszerza [mscorlib] System. Object** 
+ **Funkcja Public autoStaticConstructord ANSI** **rozszerza [mscorlib] system. Object** 
  **{** 
  **}//End klasy StaticConstructor** 
- **. Klasa Public autoansi beforefieldinit NoStaticConstructor** ** rozszerza [mscorlib] system. Object** 
- **{** 1 **}//koniec klasy NoStaticConstructor**
+ **. publiczna funkcja autoansi beforefieldinit NoStaticConstructor** **rozszerza [mscorlib] system. Object** 
+ **{** 
+ **}//End klasy NoStaticConstructor**
 ## <a name="related-rules"></a>Powiązane reguły
  [CA2207: Pola statyczne typu wartości inicjuj bezpośrednio](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

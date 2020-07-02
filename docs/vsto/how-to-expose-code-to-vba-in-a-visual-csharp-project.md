@@ -1,8 +1,8 @@
 ---
-title: 'Instrukcje: Udostępnianie kodu z VBA w C# projektu'
+title: 'Instrukcje: Uwidacznianie kodu w języku VBA w projekcie w języku C#'
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,39 +16,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419526"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544836"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Instrukcje: Udostępnianie kodu z VBA w wizualizacji C# projektu
-  Można udostępnić kod w wizualizacji C# projekt języka Visual Basic for Applications (VBA) kod Jeśli chcesz, aby dwa typy kodu do ze sobą współdziałać.
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Instrukcje: Uwidacznianie kodu w języku VBA w projekcie Visual C#
+  Można uwidocznić kod w projekcie Visual C# do kodu Visual Basic for Applications (VBA), jeśli chcesz, aby dwa typy kodu współpracowali ze sobą.
 
- Element wizualny C# proces różni się od procesu języka Visual Basic. Aby uzyskać więcej informacji, zobacz [jak: Udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).
+ Proces Visual C# różni się od procesu Visual Basic. Aby uzyskać więcej informacji, zobacz [How to: Uwidacznianie kodu w języku VBA w projekcie Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="expose-code-in-a-visual-c-project"></a>Udostępnianie kodu w wizualizacji C# projektu
- Aby włączyć kod VBA w celu wywołania kodu w wizualizacji C# projektu, zmodyfikować kod, aby była widoczna dla modelu COM, a następnie ustaw **ReferenceAssemblyFromVbaProject** właściwości **True** w projektancie.
+## <a name="expose-code-in-a-visual-c-project"></a>Uwidacznianie kodu w projekcie Visual C#
+ Aby włączyć kod języka VBA do wywoływania kodu w projekcie Visual C#, zmodyfikuj kod, tak aby był widoczny dla modelu COM, a następnie ustaw właściwość **ReferenceAssemblyFromVbaProject** na **wartość true** w projektancie.
 
- Aby uzyskać wskazówki, który demonstruje sposób wywołania metody w wizualizacji C# projektu z kodu VBA, zobacz [wskazówki: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).
+ Aby zapoznać się z przewodnikiem, który pokazuje, jak wywołać metodę w projekcie Visual C# z języka VBA, zobacz [Przewodnik: wywoływanie kodu z VBA w projekcie Visual C&#35;](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).
 
-### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Do udostępnienia kodu w wizualizacji C# projektu VBA
+### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Aby uwidocznić kod w projekcie Visual C# do języka VBA
 
-1. Otwórz lub Utwórz projekt poziomie dokumentu, który jest oparty na dokument programu Word, skoroszyt programu Excel lub szablon programu Excel, która obsługuje makr i zawierający kod VBA.
+1. Otwórz lub Utwórz projekt na poziomie dokumentu oparty na dokumencie programu Word, skoroszycie programu Excel lub szablonie programu Excel, który obsługuje makra i który zawiera już kod języka VBA.
 
-    Aby uzyskać więcej informacji na temat formatów plików dokumentów, które obsługuje makr, zobacz [łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
+    Aby uzyskać więcej informacji na temat formatów plików dokumentów, które obsługują makra, zobacz [łączenie języka VBA i dostosowań na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md).
 
    > [!NOTE]
-   > Nie można użyć tej funkcji w projektach szablon programu Word.
+   > Tej funkcji nie można używać w projektach szablonów programu Word.
 
-2. Upewnij się, że kod VBA w dokumencie może być uruchamiane bez monitowania użytkownika o włączenie makr. Kod VBA przez dodanie lokalizacji projektu pakietu Office do listy zaufanych lokalizacji w ustawieniach Centrum zaufania dla programu Word lub Excel można ufać.
+2. Upewnij się, że kod VBA w dokumencie może być uruchamiany bez monitowania użytkownika o włączenie makr. Można ufać kodzie VBA do uruchomienia przez dodanie lokalizacji projektu pakietu Office do listy zaufanych lokalizacji w ustawieniach Centrum zaufania dla programu Word lub Excel.
 
-3. Dodawanie elementu członkowskiego, który chcesz udostępnić VBA publiczne klasy w projekcie i Zadeklaruj nowy element członkowski jako **publicznych**.
+3. Dodaj element członkowski, który ma zostać ujawniony w języku VBA, do klasy publicznej w projekcie i Zadeklaruj nowy element członkowski jako **publiczny**.
 
-4. Zastosuj następujące <xref:System.Runtime.InteropServices.ComVisibleAttribute> i <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybutów do klasy, które wyświetlasz VBA. Te atrybuty widoczności klasy dla modelu COM, ale bez generowania interfejsu klasy.
+4. Zastosuj następujące <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybuty i <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> do klasy, która jest uwidaczniana w języku VBA. Te atrybuty sprawiają, że Klasa jest widoczna dla modelu COM, ale bez generowania interfejsu klasy.
 
    ```csharp
    [System.Runtime.InteropServices.ComVisible(true)]
@@ -56,9 +56,9 @@ ms.locfileid: "63419526"
        System.Runtime.InteropServices.ClassInterfaceType.None)]
    ```
 
-5. Zastąp **GetAutomationObject** metody klasy elementu hosta w projekcie, aby zwrócić wystąpienia klasy, które wyświetlasz VBA:
+5. Zastąp metodę **GetAutomationObject** klasy elementu hosta w projekcie, aby zwrócić wystąpienie klasy, która jest uwidaczniana w języku VBA:
 
-   - Jeśli wyświetlasz klasy elementu obsługującej VBA zastępują **GetAutomationObject** metodę, która należy do tej klasy, a następnie zwraca bieżące wystąpienie klasy.
+   - Jeśli ujawniasz klasę elementu hosta do języka VBA, Zastąp metodę **GetAutomationObject** , która należy do tej klasy, i zwróci bieżące wystąpienie klasy.
 
      ```csharp
      protected override object GetAutomationObject()
@@ -67,7 +67,7 @@ ms.locfileid: "63419526"
      }
      ```
 
-   - Jeśli wyświetlasz klasę, która nie jest elementem hosta z VBA zastępują **GetAutomationObject** metoda dowolnego hosta elementu w projekcie i zwraca wystąpienie klasy elementu niezwiązanych z hostem. Na przykład, poniższy kod przyjęto założenie, że wyświetlasz klasę o nazwie `DocumentUtilities` VBA.
+   - Jeśli ujawniasz klasę, która nie jest elementem hosta w języku VBA, Zastąp metodę **GetAutomationObject** dowolnego elementu hosta w projekcie i zwróć wystąpienie klasy elementów niebędących hostami. Na przykład poniższy kod założono, że ujawniasz klasę o nazwie `DocumentUtilities` do VBA.
 
      ```csharp
      protected override object GetAutomationObject()
@@ -76,34 +76,34 @@ ms.locfileid: "63419526"
      }
      ```
 
-     Aby uzyskać więcej informacji na temat elementów hosta, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).
+     Aby uzyskać więcej informacji na temat elementów hosta, zobacz [Omówienie elementów hosta i formantów hosta](../vsto/host-items-and-host-controls-overview.md).
 
-6. Wyodrębnij interfejs z klasy, które wyświetlasz VBA. W **Wyodrębnij interfejs** okna dialogowego Wybierz publiczne elementy członkowskie, które mają zostać uwzględnione w deklaracji interfejsu. Aby uzyskać więcej informacji, zobacz [wyodrębniania interfejsu Refaktoryzacja](../ide/reference/extract-interface.md).
+6. Wyodrębnij interfejs z klasy, która jest uwidaczniana w języku VBA. W oknie dialogowym **wyodrębnianie interfejsu** wybierz publiczne elementy członkowskie, które mają zostać uwzględnione w deklaracji interfejsu. Aby uzyskać więcej informacji, zobacz [wyodrębnianie interfejsu refaktoryzacji](../ide/reference/extract-interface.md).
 
-7. Dodaj **publicznych** — słowo kluczowe z deklaracją interfejsu.
+7. Dodaj słowo kluczowe **Public** do deklaracji interfejsu.
 
-8. Ustawienie widoczności interfejsu COM przez dodanie poniższego <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybutu do interfejsu.
+8. Ustaw interfejs jako widoczny dla modelu COM, dodając <xref:System.Runtime.InteropServices.ComVisibleAttribute> do interfejsu następujący atrybut.
 
    ```csharp
    [System.Runtime.InteropServices.ComVisible(true)]
    ```
 
-9. Otwórz dokument (dla programu Word) lub arkusz (Excel) w projektancie w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+9. Otwórz dokument (dla programu Word) lub arkusz (dla programu Excel) w projektancie w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-10. W **właściwości** wybierz **ReferenceAssemblyFromVbaProject** właściwości i zmień wartość na **True**.
+10. W oknie **Właściwości** wybierz właściwość **ReferenceAssemblyFromVbaProject** i zmień wartość na **true**.
 
     > [!NOTE]
-    > Jeśli skoroszyt lub dokument nie zawiera kodu VBA, lub jeżeli kod VBA w dokumencie nie jest zaufane do uruchamiania, otrzymasz komunikat o błędzie, gdy ustawisz **ReferenceAssemblyFromVbaProject** właściwość **True**. Jest to spowodowane programu Visual Studio nie można modyfikować projektu VBA w dokumencie w takiej sytuacji.
+    > Jeśli skoroszyt lub dokument nie zawiera jeszcze kodu VBA lub jeśli kod VBA w dokumencie nie jest zaufany do uruchomienia, zostanie wyświetlony komunikat o błędzie po ustawieniu właściwości **ReferenceAssemblyFromVbaProject** na **true**. Wynika to z faktu, że program Visual Studio nie może zmodyfikować projektu VBA w dokumencie w takiej sytuacji.
 
-11. Kliknij przycisk **OK** wiadomości, która jest wyświetlana. Ten komunikat przypomina o tym, że jeśli dodasz VBA kodu w skoroszycie lub dokumentów podczas uruchamiania projektu z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], kod VBA zostaną utracone przy następnym uruchomieniu, skompiluj projekt. Jest to spowodowane dokumentu w kompilacji, dane wyjściowe, że folder jest zastępowany podczas każdego kompilowania projektu.
+11. Kliknij przycisk **OK** w wyświetlonym komunikacie. Ten komunikat przypomina, że jeśli dodasz kod języka VBA do skoroszytu lub dokumentu podczas uruchamiania projektu z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , kod VBA zostanie utracony przy następnym skompilowaniu projektu. Wynika to z faktu, że dokument w folderze danych wyjściowych kompilacji jest zastępowany za każdym razem, gdy kompilujesz projekt.
 
-     W tym momencie program Visual Studio umożliwia skonfigurowanie projektu tak, aby wywołać projektu VBA w zestawie. Program Visual Studio dodaje także metodę o nazwie `GetManagedClass` do projektu VBA. Tę metodę można wywołać z dowolnego miejsca w projekcie VBA dostępu do tej klasy, która widoczna VBA.
+     W tym momencie program Visual Studio konfiguruje projekt, tak aby projekt VBA mógł wywołać do zestawu. Program Visual Studio dodaje również metodę o nazwie `GetManagedClass` do projektu VBA. Możesz wywołać tę metodę z dowolnego miejsca w projekcie VBA, aby uzyskać dostęp do klasy uwidocznionej w języku VBA.
 
 12. Skompiluj projekt.
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
-- [Łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)
-- [Przewodnik: Wywoływanie kodu z VBA w Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
-- [Instrukcje: Udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [Łączenie języka VBA i dostosowań na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)
+- [Przewodnik: wywoływanie kodu z VBA w projekcie Visual C&#35;](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
+- [Instrukcje: Uwidacznianie kodu w języku VBA w projekcie Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

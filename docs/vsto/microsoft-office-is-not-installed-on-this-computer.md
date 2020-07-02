@@ -1,7 +1,7 @@
 ---
 title: Program Microsoft Office nie jest zainstalowany na tym komputerze
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: error-reference
 f1_keywords:
 - VST.SelectDocWizard.OfficeNotInstalled
 dev_langs:
@@ -12,19 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f75ffccf8aa9e3c6252583ad1cfd87baa37ba94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16f312f9b9d15cbdacbb1fa3e0628903254aeaea
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970321"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543146"
 ---
-# <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office nie jest zainstalowany na komputerze
-  Program Visual Studio nie można odnaleźć aplikacji Microsoft Office, który odnosi się do tego typu projektu. Jeśli tworzysz projekt dodatku narzędzi VSTO oznacza to, że nie można debugować lub uruchomić projekt. Jeśli próbujesz utworzyć projektu na poziomie dokumentu, oznacza to, że nie można utworzyć projektu.
+# <a name="microsoft-office-is-not-installed-on-the-computer"></a>Na komputerze nie zainstalowano Microsoft Office
+  Program Visual Studio nie może znaleźć aplikacji Microsoft Office, która odpowiada typowi projektu. Jeśli tworzysz projekt dodatku VSTO, oznacza to, że nie można debugować ani uruchomić projektu. Jeśli próbujesz utworzyć projekt na poziomie dokumentu, oznacza to, że nie można utworzyć projektu.
 
-## <a name="to-correct-the-error"></a>Aby poprawić ten błąd
+## <a name="to-correct-the-error"></a>Aby poprawić błąd
 
-1. Zainstaluj aplikację Microsoft Office, skojarzone z tym typem projektu, w tym podstawowe zestawy międzyoperacyjne. Aby uzyskać więcej informacji o obsługiwanych wersjach programu Microsoft Office, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+1. Zainstaluj aplikację Microsoft Office skojarzoną z typem projektu, w tym podstawowe zestawy międzyoperacyjności. Aby uzyskać więcej informacji o obsługiwanych wersjach Microsoft Office, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)

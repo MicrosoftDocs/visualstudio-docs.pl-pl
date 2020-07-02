@@ -15,19 +15,19 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917826"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545252"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko API z frameworku docelowego
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko interfejsu API platformy docelowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1903: Używaj tylko interfejsu API z platformy dostosowanej](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
@@ -42,13 +42,13 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1903: U�
 
  **Zależności platformy docelowej i dodatku Service Pack**
 
-|||
+|Element|Wartość|
 |-|-|
 |Gdy platformą docelową jest|Generowane w przypadku użycia elementów członkowskich wprowadzonych w|
 |.NET Framework 2.0|.NET Framework 2,0 z dodatkiem SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 z dodatkiem SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
-|.NET Framework 3.5|.NET Framework 3.5 SP1|
-|Program .NET Framework 4|N/D|
+|Program .NET Framework 3,5|.NET Framework 3.5 SP1|
+|Program .NET Framework 4|Nie dotyczy|
 
  Aby zmienić platformę docelową projektu, zobacz [Określanie docelowej wersji .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 

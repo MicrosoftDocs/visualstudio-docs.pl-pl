@@ -14,20 +14,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a3b6e584c774f4824fa89afa2c76d59c240657
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: ae9e1af2cd68b3d3d2ff829fca1dbcab8d7098b4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328065"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544719"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Skrajnie intensywne stronicowanie aktywnej pamięci na dysk
 
-|||
+|Element|Wartość|
 |-|-|
 |Identyfikator reguły|DA0014|
 |Kategoria|Pamięć i stronicowanie|
-|Metoda profilowania|Wszystko|
+|Metoda profilowania|Wszystkie|
 |Komunikat|Występuje bardzo wysoki stopień stronicowania aktywnej pamięci na dysk. Aplikacja może być powiązana z pamięcią.|
 |Typ reguły|Ostrzeżenie|
 

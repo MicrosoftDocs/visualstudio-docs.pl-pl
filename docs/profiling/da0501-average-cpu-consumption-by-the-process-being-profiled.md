@@ -26,7 +26,7 @@ ms.locfileid: "85544576"
 |-|-|
 |Identyfikator reguły|DA501|
 |Kategoria|Monitorowanie zasobów|
-|Metoda profilowania|Wszystko|
+|Metoda profilowania|Wszystkie|
 |Komunikat|Średnie użycie procesora przez profilowany proces|
 |Typ reguły|Informacje|
 

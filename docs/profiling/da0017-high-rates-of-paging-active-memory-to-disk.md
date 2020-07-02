@@ -26,7 +26,7 @@ ms.locfileid: "85544706"
 |-|-|
 |Identyfikator reguły|DA0017|
 |Kategoria|Pamięć i stronicowanie|
-|Metoda profilowania|Wszystko|
+|Metoda profilowania|Wszystkie|
 |Komunikat|Występuje wysoki wskaźnik stronicowania aktywnej pamięci na dysk. Aplikacja może być powiązana z pamięcią.|
 |Typ reguły|Informacje|
 

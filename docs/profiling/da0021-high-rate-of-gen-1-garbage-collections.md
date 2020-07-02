@@ -26,7 +26,7 @@ ms.locfileid: "85544693"
 |-|-|
 |Identyfikator reguły|DA0021|
 |Kategoria|Użycie .NET Framework|
-|Metody profilowania|Wszystko|
+|Metody profilowania|Wszystkie|
 |Komunikat|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 1. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|
 |Typ reguły|Informacje|
 

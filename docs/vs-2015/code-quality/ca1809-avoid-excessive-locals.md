@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d23d9cc6006997c82451ac061e3ee0353e59b1b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d39c8d9d09cf457738df87e3c2e6e109f7bc1696
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671496"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543861"
 ---
-# <a name="ca1809-avoid-excessive-locals"></a>CA1809: Unikaj nadmiernego używania zmiennych lokalnych
+# <a name="ca1809-avoid-excessive-locals"></a>CA1809: Unikaj zbyt wielu zmiennych lokalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidExcessiveLocals|
 |CheckId|CA1809|
@@ -45,4 +45,4 @@ ms.locfileid: "72671496"
  Istnieje możliwość bezpiecznego pomijania ostrzeżenia z tej reguły lub wyłączenia reguły, jeśli wydajność nie jest problemem.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Usuwaj nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)

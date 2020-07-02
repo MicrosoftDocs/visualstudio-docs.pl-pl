@@ -27,7 +27,7 @@ ms.locfileid: "85542925"
 |-|-|  
 |Identyfikator reguły|DA0023|  
 |Kategoria|Użycie .NET Framework|  
-|Metoda profilowania|Wszystko|  
+|Metoda profilowania|Wszystkie|  
 |Komunikat|Czas trwania operacji odzyskiwania pamięci (%) jest stosunkowo wysoki. Ten wskaźnik nadmiernej ilości wyrzucania elementów bezużytecznych może mieć wpływ na czas odpowiedzi aplikacji. Można zebrać dane alokacji pamięci platformy .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci, która jest stosowana przez aplikację.|  
 |Typ reguły|Informacyjne|  
   

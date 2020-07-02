@@ -15,17 +15,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19077a63d5aa22bda3f968943703a82488e2745d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661115"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545291"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Oznacz zestawy za pomocą NeutralResourcesLanguageAttribute
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Oznaczaj zestawy za pomocą atrybutu NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
@@ -33,7 +33,7 @@ ms.locfileid: "72661115"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- Zestaw zawiera zasób oparty na protokole **resx**, ale nie ma do niego zastosowania <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>.
+ Zestaw zawiera zasób oparty na protokole **resx**, ale nie ma do <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> niego zastosowania.
 
 ## <a name="rule-description"></a>Opis reguły
  Atrybut **NeutralResourcesLanguage** informujemanager **o języku, który** został użyty do wyświetlenia zasobów kultury neutralnej dla zestawu. Gdy wyszukuje zasoby w tej samej kulturze co neutralny język zasobów, program **ResourceManager** automatycznie korzysta z zasobów, które znajdują się w głównym zestawie. Wykonuje to zamiast wyszukiwania zestawu satelickiego, który ma bieżącą kulturę interfejsu użytkownika dla bieżącego wątku. To zwiększa wydajność wyszukiwania dla pierwszego zasobu, który się ładuje i może zmniejszyć zestaw roboczy.

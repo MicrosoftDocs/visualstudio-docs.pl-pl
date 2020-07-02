@@ -8,44 +8,44 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 3e88f314ccdf2b91215fdfe579741591c7eb724d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302414"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544212"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>Czcionka środowiskowa
- Wszystkie czcionki w programie Visual Studio muszą być udostępniane użytkownikowi w celu dostosowania. Odbywa się to przede wszystkim za pośrednictwem strony **Czcionki i kolory** w oknie dialogowym **Narzędzia > Opcje.** Trzy główne kategorie ustawień czcionek to:
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>Czcionka środowiska
+ Wszystkie czcionki w programie Visual Studio muszą być widoczne dla użytkownika w celu dostosowania. Jest to wykonywane głównie za pomocą strony **czcionki i kolory** w oknie dialogowym **Narzędzia > opcje** . Trzy główne kategorie ustawień czcionki są następujące:
 
-- **Czcionka środowiska** — czcionka podstawowa dla IDE (zintegrowane środowisko programistyczne), używana dla wszystkich elementów interfejsu, w tym okien dialogowych, menu, okien narzędzi i okien dokumentów. Domyślnie czcionka środowiska jest powiązana z czcionką systemową, która pojawia się jako interfejs użytkownika Segoe 9 pkt w bieżących wersjach systemu Windows. Użycie jednej czcionki dla wszystkich elementów interfejsu pomaga zapewnić spójny wygląd czcionki w całej idei.
+- **Czcionka środowiska** — Podstawowa czcionka IDE (zintegrowane środowisko programistyczne), używana dla wszystkich elementów interfejsu, w tym okien dialogowych, menu, okien narzędzi i okien dokumentów. Domyślnie czcionka środowiska jest powiązana z czcionką systemową, która jest wyświetlana jako 9 pt Segoe UI w bieżących wersjach systemu Windows. Używanie jednej czcionki dla wszystkich elementów interfejsu pomaga zapewnić spójny wygląd czcionki w całym środowisku IDE.
 
-- **Edytor tekstu** — elementy, które pojawiają się w kodzie i innych edytorach tekstowych, można dostosować na stronie Edytor tekstu w **obszarze Narzędzia > Opcje**.
+- **Edytor tekstu** — elementy znajdujące się w kodzie i inne edytory tekstowe można dostosować na stronie Edytor tekstu w obszarze **Narzędzia > opcje**.
 
-- **Określone kolekcje** — okna projektanta, które oferują użytkownikowi dostosowanie elementów interfejsu, mogą uwidaczniać czcionki specyficzne dla ich powierzchni projektowej na ich własnej stronie ustawień w **narzędzia > opcje**.
+- **Określone kolekcje** — okna projektanta, które oferują możliwość dostosowywania elementów interfejsu przez użytkownika, mogą uwidaczniać czcionki specyficzne dla ich powierzchni projektowej na swojej stronie ustawień w obszarze **Narzędzia > opcje**.
 
-### <a name="editor-font-customization-and-resizing"></a>Dostosowywanie i zmiana rozmiaru czcionki edytora
- Użytkownicy często powiększają lub powiększają rozmiar i/lub kolor tekstu w edytorze zgodnie z ich preferencjami, niezależnie od ogólnego interfejsu użytkownika. Ponieważ czcionka środowiska jest używana na elementach, które mogą pojawić się w edytorze/projektancie lub jako część, należy zwrócić uwagę na oczekiwane zachowanie po zmianie jednej z tych klasyfikacji czcionek.
+### <a name="editor-font-customization-and-resizing"></a>Dostosowywanie i zmienianie rozmiarów czcionek edytora
+ Użytkownicy często powiększają lub powiększają rozmiar i/lub kolor tekstu w edytorze zgodnie z ich preferencjami niezależnie od ogólnego interfejsu użytkownika. Ponieważ czcionka środowiska jest używana w przypadku elementów, które mogą być wyświetlane w lub w ramach edytora/projektanta, należy pamiętać, że oczekiwane zachowanie, gdy jedna z tych klasyfikacji czcionek zostanie zmieniona.
 
- Podczas tworzenia elementów interfejsu użytkownika, które pojawiają się w edytorze, ale nie są częścią *zawartości,* ważne jest, aby użyć czcionki środowiska, a nie czcionki tekstowej, tak aby elementy zmieniały rozmiar w przewidywalny sposób.
+ Podczas tworzenia elementów interfejsu użytkownika, które są wyświetlane w edytorze, ale nie są częścią *zawartości*, ważne jest użycie czcionki środowiska, a nie czcionki tekstowej, tak aby elementy zmieniały się w przewidywalny sposób.
 
-1. W przypadku tekstu kodu w edytorze, zmienić rozmiar z ustawieniem czcionki tekstu kodu i odpowiedzieć na poziom powiększenia tekstu edytora.
+1. W przypadku tekstu kodu w edytorze Zmień rozmiar z ustawieniem czcionka tekstu kodu i Odpowiedz na poziom powiększenia tekstu edytora.
 
-2. Wszystkie inne elementy interfejsu powinny być powiązane z ustawieniem czcionki środowiska i reagować na wszelkie globalne zmiany w środowisku. Obejmuje to (ale nie ogranicza się do):
+2. Wszystkie inne elementy interfejsu powinny być powiązane z ustawieniem czcionki środowiska i odpowiadać na wszystkie globalne zmiany w środowisku. Obejmuje to (ale nie ograniczone do):
 
-    - Tekst w menu kontekstowych
+    - Tekst w menu kontekstowym
 
-    - Tekst w ozdobach edytora, takich jak tekst menu żarówki, szybkie znajdowanie okienka edytora i przechodzenie do okienka
+    - Tekst w edytorze definiowania układu, taki jak tekst menu żarówki, szybkie znajdowanie okienka edytora i przejdź do okienka
 
-    - Etykietuj tekst w oknach dialogowych, takich jak Znajdź w plikach lub Refaktoryzator
+    - Etykieta tekstu w oknach dialogowych, takich jak Znajdź w plikach lub refaktoryzacji
 
-### <a name="accessing-the-environment-font"></a>Uzyskiwanie dostępu do czcionki środowiskowej
- W kodzie natywnym lub WinForms czcionki środowiska można uzyskać za pomocą metody **IUIHostLocale::GetDialogFont** po kwerendzie interfejsu z usługi SID_SUIHostLocale.
+### <a name="accessing-the-environment-font"></a>Uzyskiwanie dostępu do czcionki środowiska
+ W kodzie macierzystym lub WinFormowym można uzyskać dostęp do czcionki środowiska, wywołując metodę **IUIHostLocale:: GetDialogFont** po wykonaniu zapytania dotyczącego interfejsu z usługi SID_SUIHostLocale.
 
- Dla programu Windows Presentation Foundation (WPF), wyprowadzić klasę okna dialogowego z klasy **DialogWindow** powłoki zamiast klasy **Window** WPF.
+ W przypadku Windows Presentation Foundation (WPF) należy utworzyć klasę okna dialogowego z klasy **DialogWindow** powłoki zamiast z klasy **okna** WPF.
 
  W języku XAML kod wygląda następująco:
 
@@ -68,9 +68,9 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
 ```
 
- (Zastąp `Microsoft.VisualStudio.Shell.11.0` bieżącą wersją biblioteki DLL MPF).
+ (Zamień na `Microsoft.VisualStudio.Shell.11.0` bieżącą wersję biblioteki DLL MPF).
 
- Aby wyświetlić okno dialogowe, wywołanie **"ShowModal()**" w klasie przez **ShowDialog()**. **ShowModal()** ustawia prawidłowy stan modalny w powłoce, zapewnia, że okno dialogowe jest wyśrodkowane w oknie nadrzędnym i tak dalej.
+ Aby wyświetlić okno dialogowe, należy wywołać "**ShowModal ()**" w klasie over **ShowDialog ()**. **ShowModal ()** ustawia poprawny stan modalny w powłoce, zapewnia, że okno dialogowe jest wyśrodkowane w oknie nadrzędnym i tak dalej.
 
  Kod jest następujący:
 
@@ -80,9 +80,9 @@ window.ShowModal()
 
 ```
 
- **ShowModal** zwraca bool? (nullable Boolean) z **DialogResult**, który może być używany w razie potrzeby. Zwracana wartość jest prawdziwa, jeśli okno dialogowe zostało zamknięte za pomocą **przycisku OK**.
+ **ShowModal** zwraca wartość logiczną? (wartość null) z **DialogResult**, która może być używana w razie konieczności. Wartość zwracana ma wartość true, jeśli okno dialogowe zostało zamknięte z **przyciskiem OK**.
 
- Jeśli chcesz wyświetlić niektóre WPF UI, który nie jest dialogowy i jest obsługiwany w jego własnym **HwndSource**, takich jak okno podręczne lub okno podrzędne WPF okna nadrzędnego Win32/WinForms, należy ustawić **FontFamily** i **FontSize** na element główny WPF. (Powłoka ustawia właściwości w oknie głównym, ale nie będą dziedziczone obok HWND). Powłoka zapewnia zasoby, z którymi właściwości mogą być powiązane, w ten sposób:
+ Jeśli musisz wyświetlić jakiś interfejs użytkownika WPF, który nie jest oknem dialogowym i jest hostowany we własnym **HwndSource**, na przykład w oknie podręcznym lub oknie PODRZĘDNYm WPF okna nadrzędnego okna dialogowego Win32/WinForms, musisz ustawić **FontFamily** i **FONTSIZE** na elemencie głównym elementu WPF. (Powłoka ustawia właściwości w oknie głównym, ale nie będzie dziedziczona poza HWND). Powłoka zawiera zasoby, do których można powiązać właściwości, takie jak:
 
 ```
 <Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />
@@ -90,26 +90,26 @@ window.ShowModal()
 
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Odwołanie do formatowania (skalowanie/pogruszanie)
- Niektóre okna dialogowe wymagają pogrubienia określonego tekstu lub rozmiaru innego niż czcionka środowiskowa. Wcześniej czcionki większe niż czcionka środowiskowa były kodowane jako "czcionka środowiskowa +2" lub podobne. Za pomocą podanych fragmentów kodu będzie obsługiwać monitory o wysokiej rozdzielczości DPI i upewnij się, że wyświetlany tekst zawsze pojawia się przy prawidłowym rozmiarze i wadze (takich jak Light lub Semilight).
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Formatowanie (skalowanie/pogrubienie) odwołania
+ Niektóre okna dialogowe wymagają pogrubienia tekstu lub rozmiaru innego niż czcionka środowiska. Wcześniej czcionki o rozmiarze większym od czcionki środowiska były kodowane jako "czcionki środowiskowe + 2" lub podobne. Użycie dostarczonych fragmentów kodu będzie obsługiwać monitory o wysokiej rozdzielczości i upewnij się, że wyświetlany tekst jest zawsze wyświetlany w prawidłowym rozmiarze i wadze (na przykład Light lub Semilight).
 
-> **Uwaga: Przed zastosowaniem formatowania upewnij się, że postępujesz zgodnie ze wskazówkami znalezionymi w [stylu tekstowym](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> **Uwaga: przed zastosowaniem formatowania upewnij się, że są spełnione wskazówki znajdujące się w [stylu tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
 
- Aby skalować czcionkę środowiska, ustaw styl TextBlock lub Label zgodnie ze wskazanymi. Każdy z tych fragmentów kodu, prawidłowo używany, wygeneruje poprawną czcionkę, w tym odpowiednie zmiany rozmiaru i wagi.
+ Aby skalować czcionkę środowiska, ustaw styl bloku textlub etykiety zgodnie z opisem. Każdy z tych fragmentów kodu, właściwie użyty, wygeneruje poprawną czcionkę, włącznie z odpowiednimi wielkościami i odmianami wagi.
 
- Gdzie "vsui" jest odwołaniem do obszaru nazw Microsoft.VisualStudio.Shell:
+ Gdzie "vsui" jest odwołaniem do przestrzeni nazw Microsoft. VisualStudio. Shell:
 
 ```
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 
 ```
 
-#### <a name="375-environment-font--light"></a>Czcionka środowiskowa 375% + światło
- **Pojawia się jako:** 34 pkt Segoe UI Light
+#### <a name="375-environment-font--light"></a>375% czcionki środowiska + jasne
+ **Pojawia się jako:** 34 pt Segoe UI Light
 
- **Służy do:** (rzadkich) unikalnych markowych interfejsów użytkownika, takich jak strona początkowa
+ **Używany dla:** (rzadki) unikatowy interfejs użytkownika, na przykład na stronie startowej
 
- **Kodeks proceduralny:** Gdzie "textBlock" jest wcześniej zdefiniowane TextBlock i "label" jest wcześniej zdefiniowane Etykiety.
+ **Kod proceduralny:** Gdzie "TextBlock" jest wcześniej zdefiniowanym obiektem TextBlock i "label" jest wcześniej zdefiniowaną etykietą.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -119,7 +119,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Ustaw styl textblock lub label, jak pokazano.
+ **Kod XAML:** Ustaw styl bloku textlub Label, jak pokazano.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -127,12 +127,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="310-environment-font--light"></a>Czcionka 310% Środowiska + Światło
- **Pojawia się jako:** 28 pkt Segoe UI Light
+#### <a name="310-environment-font--light"></a>310% czcionki środowiska + jasne
+ **Pojawia się jako:** 28 pt Segoe UI Light
 
- **Służy do:** tytułów okien dialogowych z dużymi podpisami, nagłówka głównego w raportach
+ **Użyj for:** duże tytuły okna dialogowego z podpisem, główny nagłówek w raportach
 
- **Kodeks proceduralny:** Gdzie "textBlock" jest wcześniej zdefiniowane TextBlock i "label" jest wcześniej zdefiniowane Etykiety.
+ **Kod proceduralny:** Gdzie "TextBlock" jest wcześniej zdefiniowanym obiektem TextBlock i "label" jest wcześniej zdefiniowaną etykietą.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -142,7 +142,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Ustaw styl textblock lub label, jak pokazano.
+ **Kod XAML:** Ustaw styl bloku textlub Label, jak pokazano.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
@@ -150,12 +150,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="200-environment-font--semilight"></a>Czcionka 200% Środowiska + Semilight
- **Pojawia się jako:** 18 pkt Segoe UI Semilight
+#### <a name="200-environment-font--semilight"></a>200% czcionki środowiska + Semilight
+ **Pojawia się jako:** 18 pt Segoe UI Semilight
 
- **Zastosowanie dla:** podpozycji, tytułów w małych i średnich oknach dialogowych
+ **Używane dla:** podpozycje, tytuły w małych i średnich oknach dialogowych
 
- **Kodeks proceduralny:** Gdzie "textBlock" jest wcześniej zdefiniowane TextBlock i "label" jest wcześniej zdefiniowane Etykiety.
+ **Kod proceduralny:** Gdzie "TextBlock" jest wcześniej zdefiniowanym obiektem TextBlock i "label" jest wcześniej zdefiniowaną etykietą.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -165,7 +165,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Ustaw styl textblock lub label, jak pokazano.
+ **Kod XAML:** Ustaw styl bloku textlub Label, jak pokazano.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
@@ -173,12 +173,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="155-environment-font"></a>Czcionka środowiskowa 155%
- **Pojawia się jako:** 14 pkt Segoe UI
+#### <a name="155-environment-font"></a>155% czcionki środowiska
+ **Pojawia się jako:** 14 pt Segoe UI
 
- **Służy do:** nagłówków sekcji w interfejsie użytkownika lub raportach dotyczących dobrze dokumentu
+ **Używane dla:** nagłówki sekcji w interfejsie użytkownika i w raportach
 
- **Kodeks proceduralny:** Gdzie "textBlock" jest wcześniej zdefiniowane TextBlock i "label" jest wcześniej zdefiniowane Etykiety.
+ **Kod proceduralny:** Gdzie "TextBlock" jest wcześniej zdefiniowanym obiektem TextBlock i "label" jest wcześniej zdefiniowaną etykietą.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -188,7 +188,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Ustaw styl textblock lub label, jak pokazano.
+ **Kod XAML:** Ustaw styl bloku textlub Label, jak pokazano.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
@@ -196,12 +196,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="133-environment-font"></a>Czcionka środowiskowa 133%
- **Pojawia się jako:** 12 pkt Segoe UI
+#### <a name="133-environment-font"></a>133% czcionki środowiska
+ **Pojawia się jako:** 12 pt Segoe UI
 
- **Służy do:** mniejszych podpozycji w oknach dialogowych podpisu i dobrze dokumentuj interfejs użytkownika
+ **Używane dla:** mniejsze podnagłówki w oknach dialogowych sygnatur i interfejsie użytkownika
 
- **Kodeks proceduralny:** Gdzie "textBlock" jest wcześniej zdefiniowane TextBlock i "label" jest wcześniej zdefiniowane Etykiety.
+ **Kod proceduralny:** Gdzie "TextBlock" jest wcześniej zdefiniowanym obiektem TextBlock i "label" jest wcześniej zdefiniowaną etykietą.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -211,7 +211,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Ustaw styl textblock lub label, jak pokazano.
+ **Kod XAML:** Ustaw styl bloku textlub Label, jak pokazano.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
@@ -219,12 +219,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="122-environment-font"></a>Czcionka środowiskowa 122%
- **Pojawia się jako:** 11 pkt Segoe UI
+#### <a name="122-environment-font"></a>122% czcionki środowiska
+ **Pojawia się jako:** 11 pt Segoe UI
 
- **Służy do:** nagłówków sekcji w oknach dialogowych podpisu, węzłów górnych w widoku drzewa, nawigacji po karcie pionowej
+ **Używane dla:** nagłówki sekcji w oknach dialogowych podpisów, górnych węzłach w widoku drzewa, Nawigacja na kartach pionowych
 
- **Kodeks proceduralny:** Gdzie "textBlock" jest wcześniej zdefiniowane TextBlock i "label" jest wcześniej zdefiniowane Etykiety.
+ **Kod proceduralny:** Gdzie "TextBlock" jest wcześniej zdefiniowanym obiektem TextBlock i "label" jest wcześniej zdefiniowaną etykietą.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -234,7 +234,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Ustaw styl textblock lub label, jak pokazano.
+ **Kod XAML:** Ustaw styl bloku textlub Label, jak pokazano.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
@@ -242,12 +242,12 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-#### <a name="environment-font--bold"></a>Czcionka środowiskowa + pogrubienie
- **Pojawia się jako:** pogrubiony 9 pkt Segoe UI
+#### <a name="environment-font--bold"></a>Font Environment + Bold
+ **Pojawia się jako:** pogrubiony 9 pt Segoe UI
 
- **Służy do:** etykiet i podnagłów w oknach dialogowych podpisu, raportach i dobrze dokumentuj interfejsu użytkownika
+ **Użycie dla:** etykiet i podtytułów w oknach dialogowych, raportach i INTERFEJSie użytkownika programu Documents
 
- **Kodeks proceduralny:** Gdzie "textBlock" jest wcześniej zdefiniowane TextBlock i "label" jest wcześniej zdefiniowane Etykiety.
+ **Kod proceduralny:** Gdzie "TextBlock" jest wcześniej zdefiniowanym obiektem TextBlock i "label" jest wcześniej zdefiniowaną etykietą.
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -257,7 +257,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
- **XAML:** Ustaw styl textblock lub label, jak pokazano.
+ **Kod XAML:** Ustaw styl bloku textlub Label, jak pokazano.
 
 ```
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
@@ -265,10 +265,10 @@ label.SetResourceReference(Label.StyleProperty,  
 
 ```
 
-### <a name="localizable-styles"></a>Style lokalne
- W niektórych przypadkach lokalizatory będą musiały zmodyfikować style czcionek dla różnych ustawień regionalnych, takich jak usuwanie pogrubienia z tekstu dla języków wschodnioazjatyckich. Aby lokalizacja stylów czcionek była możliwa, style te muszą znajdować się w pliku .resx. Najlepszym sposobem, aby to osiągnąć i nadal edytować style czcionek w visual studio projektanta formularzy jest jawnie ustawić style czcionek w czasie projektowania. Mimo że tworzy to obiekt pełnej czcionki i może wydawać się przerwać dziedziczenie czcionek nadrzędnych, tylko FontStyle właściwość jest używana do ustawiania czcionki.
+### <a name="localizable-styles"></a>Style lokalizowalne
+ W niektórych przypadkach lokalizatory muszą modyfikować style czcionek dla różnych ustawień regionalnych, takich jak usuwanie pogrubienia z tekstu dla języków wschodnioazjatyckich. Aby możliwe było lokalizowanie stylów czcionki, te style muszą znajdować się w pliku resx. Najlepszym sposobem na wykonanie tej operacji i nadal edytowanie stylów czcionki w projektancie formularzy programu Visual Studio jest jawne ustawienie stylów czcionki w czasie projektowania. Chociaż powoduje to utworzenie pełnego obiektu czcionki i może wydawać się uszkodzeniem dziedziczenia czcionek nadrzędnych, tylko Właściwość FontStyle jest używana do ustawiania czcionki.
 
- Rozwiązaniem jest podłączyć okno dialogowe **fontchanged** zdarzenia. W **FontChanged** zdarzenia, chodzić wszystkie formanty i sprawdzić, czy ich czcionka jest ustawiona. Jeśli jest ustawiona, zmień ją na nową czcionkę na podstawie czcionki formularza i poprzedniego stylu czcionki formantu. Przykładem tego w kodzie jest:
+ Rozwiązaniem jest podpinanie zdarzenia **FontChanged** formularza. W zdarzeniu **FontChanged** Przeszukaj wszystkie kontrolki i sprawdź, czy ich czcionka została ustawiona. Jeśli jest ustawiona, Zmień ją na nową czcionkę w oparciu o czcionkę formularza i poprzedni styl czcionki kontrolki. Przykładem tego kodu jest:
 
 ```
 private void Form1_FontChanged(object sender, System.EventArgs e)
@@ -304,192 +304,192 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 }
 ```
 
- Za pomocą tego kodu gwarantuje, że po zaktualizowaniu czcionki formularza, czcionki formantów zostanie zaktualizowany, jak również. Ta metoda powinna być również wywoływana z konstruktora formularza, ponieważ okno dialogowe może nie uzyskać wystąpienia **IUIService** i **FontChanged** zdarzenie nigdy nie będzie uruchamiać. Podłączanie **FontChanged** pozwoli okna dialogowe dynamicznie podnieść nową czcionkę, nawet jeśli okno dialogowe jest już otwarte.
+ Przy użyciu tego kodu gwarantujemy, że podczas aktualizowania czcionki formularza zostaną również zaktualizowane czcionki kontrolek. Ta metoda powinna być również wywoływana z konstruktora formularza, ponieważ okno dialogowe może nie można pobrać wystąpienia elementu **IUIService** , a zdarzenie **FontChanged** nigdy nie zostanie wywołane. Przeciąganie **FontChanged** umożliwia dialogom dynamiczne pobranie nowej czcionki nawet wtedy, gdy okno dialogowe jest już otwarte.
 
-### <a name="testing-the-environment-font"></a>Testowanie czcionki środowiskowej
- Aby upewnić się, że interfejs użytkownika używa czcionki środowiska i jest zgodny z ustawieniami rozmiaru, otwórz okno Opcje **> Narzędzia > środowisko > czcionki i kolory** i wybierz "Czcionka środowiska" w menu rozwijanym "Pokaż ustawienia dla:".
+### <a name="testing-the-environment-font"></a>Testowanie czcionki środowiska
+ Aby upewnić się, że interfejs użytkownika używa czcionki środowiskowej i uwzględnia ustawienia rozmiaru, Otwórz **narzędzia > opcje > środowisku > czcionki i kolory** i wybierz pozycję "Czcionka środowiskowa" w menu rozwijanym "Pokaż ustawienia dla:".
 
- ![Strona Czcionki i kolory w oknie dialogowym Narzędzia &#62; Opcje](../../extensibility/ux-guidelines/media/0201-a-optionsfonts.png "0201-a_OptionsFonts")
+ ![Strona czcionek i kolorów w oknie dialogowym narzędzia &#62; opcje](../../extensibility/ux-guidelines/media/0201-a-optionsfonts.png "0201 — a_OptionsFonts")
 
- **Ustawienia czcionek i kolorów w oknie dialogowym Narzędzia > Opcje**
+ **Ustawienia czcionek i kolorów w oknie dialogowym narzędzia > opcje**
 
- Ustaw czcionkę na coś zupełnie innego niż domyślny. Aby było oczywiste, który interfejs użytkownika nie jest aktualizowany, wybierz czcionkę z szeryfami (na przykład "Times New Roman") i ustaw bardzo duży rozmiar. Następnie przetestuj swój interfejs użytkownika, aby upewnić się, że szanuje środowisko. Oto przykład użycia okna dialogowego licencji:
+ Ustaw czcionkę na coś innego niż domyślne. Aby określić, który interfejs użytkownika nie jest aktualizowany, wybierz czcionkę z szeryfami (na przykład "Times New Roman") i ustaw bardzo duży rozmiar. Następnie przetestuj interfejs użytkownika, aby upewnić się, że będzie on odnoszący się do środowiska. Oto przykład przy użyciu okna dialogowego licencji:
 
- ![Przykład okna dialogowego nieużywanie czcionki środowiska](../../extensibility/ux-guidelines/media/0201-b-wrongfontdialog.png "0201-b_WrongFontDialog")
+ ![Przykładowe okno dialogowe, które nie używa czcionki środowiska](../../extensibility/ux-guidelines/media/0201-b-wrongfontdialog.png "0201 — b_WrongFontDialog")
 
- **Przykład tekstu interfejsu użytkownika, który nie jest zgodny z czcionką środowiska**
+ **Przykładowy tekst interfejsu użytkownika, który nie uwzględnia czcionki środowiska**
 
- W takim przypadku "Informacje o użytkowniku" i "Informacje o produkcie" nie są zgodne z czcionką. W niektórych przypadkach może to być jawny wybór projektu, ale może to być błąd, jeśli jawna czcionka nie jest określona jako część specyfikacji redline.
+ W takim przypadku "informacje o użytkowniku" i "informacje o produkcie" nie respektują czcionki. W niektórych przypadkach może to być jawny wybór projektu, ale może to być usterka, Jeśli czcionka jawna nie zostanie określona jako część specyfikacji Redline.
 
- Aby zresetować czcionkę, kliknij przycisk "Użyj ustawień domyślnych" w obszarze **Narzędzia > Opcje > środowisko > czcionki i kolory**.
+ Aby zresetować czcionkę, kliknij przycisk "Użyj ustawień domyślnych" w obszarze **narzędzia > opcje > środowisku > czcionki i kolory**.
 
 ## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Styl tekstu
- Styl tekstu odnosi się do rozmiaru czcionki, wagi i wielkości liter. Aby uzyskać wskazówki dotyczące implementacji, zobacz [Czcionka środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+ Styl tekstu odnosi się do rozmiaru czcionki, wagi i wielkości liter. Aby uzyskać wskazówki dotyczące implementacji, zobacz [Font Environment](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-### <a name="text-casing"></a>Wielkość liter w tekście
+### <a name="text-casing"></a>Wielkość liter tekstu
 
-#### <a name="all-caps"></a>Wszystkie czapki
- Nie należy używać wszystkich wersalików dla tytułów lub etykiet w programie Visual Studio.
+#### <a name="all-caps"></a>Wszystkie wersaliki
+ Nie używaj wersalików dla tytułów ani etykiet w programie Visual Studio.
 
 #### <a name="all-lowercase"></a>Wszystkie małe litery
- Nie należy używać wszystkich małych liter dla tytułów lub etykiet w programie Visual Studio.
+ Nie używaj małych liter w tytułach lub etykietach w programie Visual Studio.
 
-#### <a name="sentence-and-title-case"></a>Wyrok i tytuł sprawy
- Tekst w programie Visual Studio należy użyć przypadku tytułu lub zdanie, w zależności od sytuacji.
+#### <a name="sentence-and-title-case"></a>Wielkie litery i tytuł
+ W zależności od sytuacji tekst w programie Visual Studio powinien korzystać z wielkości liter lub wielkości liter w zdaniu.
 
-|Przypadek tytułu należy użyć dla:|Użyj przypadku zdania dla:|
+|Użyj przypadku tytułu dla:|Użyj przypadku zdania:|
 |-------------------------|----------------------------|
 |Tytuły okien dialogowych|Etykiety|
-|Pola grupowe|Pola wyboru|
-|Elementy menu|Przycisków|
+|Pola grup|Pola wyboru|
+|Elementy menu|Przyciski radiowe|
 |Elementy menu kontekstowego|Elementy pola listy|
 |Przyciski|Paski stanu|
-|Etykiety tabel||
+|Etykiety tabeli||
 |Nagłówki kolumn||
 |Etykietki narzędzi||
 
-##### <a name="title-case"></a>Sprawa tytułowa
- Wielkość liter jest stylem, w którym pierwsze litery większości lub wszystkich wyrazów w frazie są pisane wielkimi literami. W programie Visual Studio przypadek tytułu jest używany dla wielu elementów, w tym:
+##### <a name="title-case"></a>Wielkość liter w tytule
+ Przypadek tytułu jest stylem, w którym pierwsze litery większości lub wszystkich wyrazów w frazie są pisane wielkimi literami. W programie Visual Studio tytuł przypadku jest używany w przypadku wielu elementów, w tym:
 
 - **Etykietki narzędzi.** Przykład: "Podgląd wybranych elementów"
 
-- **Nagłówki kolumn.** Przykład: "Odpowiedź systemu"
+- **Nagłówki kolumn.** Przykład: "odpowiedź systemu"
 
 - **Elementy menu.** Przykład: "Zapisz wszystko"
 
-  W przypadku używania tytułu są to wytyczne dotyczące tego, kiedy używać wielkich liter i kiedy pozostawić je zasuwają małe litery:
+  W przypadku używania wielkości liter, są to wskazówki dotyczące sytuacji, w których można wyrazić wielką literę i kiedy pozostawić je małymi literami:
 
 |Wielkie litery|Komentarze i przykłady|
 |---------------|---------------------------|
 |Wszystkie rzeczowniki||
-|Wszystkie zlecenia|W tym "Jest" i inne formy "być"|
-|Wszystkie przysłówki|W tym "Niż" i "Kiedy"|
-|Wszystkie przymiotniki|W tym "To" i "To"|
-|Wszystkie zaimki|W tym zaborczy "Its", jak również "It's", skurcz zaimka "to" i czasownik "jest"|
+|Wszystkie zlecenia|Dołączenie "is" i innych form "do"|
+|Wszystkie zlecenia|W tym "niż" i "When"|
+|Wszystkie przymiotniki|Włączenie "This" i "to"|
+|Wszystkie rzeczowniki|Łącznie z Possessive "jego", a także "", "umową pronoun" i zlecenie "is"|
 |Pierwsze i ostatnie słowa, niezależnie od części mowy||
-|Przyimki, które są częścią frazy czasownika|"Zamykanie wszystkich okien" lub "Zamykanie systemu"|
+|Pozycje, które są częścią wyrażenia czasownikowego|"Zamykanie całego systemu Windows" lub "zamykanie systemu"|
 |Wszystkie litery akronimu|HTML, XML, URL, IDE, RGB|
-|Drugie słowo w słowie złożonym, jeśli jest to rzeczownik lub właściwy przymiotnik, lub jeśli wyrazy mają taką samą wagę|Odsyłacz, Oprogramowanie przed microsoftem, dostęp do odczytu/zapisu, czas wykonywania|
+|Drugie słowo wyrazu złożonego, jeśli jest to rzeczownik lub właściwy przymiotnik, lub jeśli wyrazy mają równą wagę|Odsyłacze, oprogramowanie przed firmą Microsoft, dostęp do odczytu/zapisu, czas wykonywania|
 
 |Małe litery|Przykłady|
 |---------------|--------------|
-|Drugie słowo w słowie złożonym, jeśli jest to inna część mowy lub imiesłów modyfikujący pierwsze słowo|Jak to zrobić, Start|
-|Artykuły, chyba że jedno słowo jest pierwszym słowem w tytule|a, an, the|
-|Spójniki współrzędnych|i, ale, ani, ani, lub|
-|Przyimki ze słowami czterech lub mniej liter poza wyrażeniem czasownika|do, na, jak, z, na wierzchu|
-|"Do" w przypadku użycia w bezokolicznikowej frazie|"Jak sformatować dysk twardy"|
+|Drugie słowo słowa złożonego, jeśli jest to inna część mowy lub Participle modyfikowanie pierwszego wyrazu|Jak to zrobić, jak to zrobić|
+|Artykuły, chyba że jest to pierwsze słowo w tytule|a, an, the|
+|Współrzędne współrzędnych|and, ale, for, or lub|
+|Umieszczanie wyrazów z co najmniej czterema literami poza wyrażeniem orzeczenia|do, do, od, do, z|
+|"Do", gdy jest używany w frazie linia nieskończona|"Jak sformatować dysk twardy"|
 
-##### <a name="sentence-case"></a>Sprawa zdania
- Przypadek zdania jest standardową metodą pisarską do pisania, w której tylko pierwsze słowo zdania jest pisanych kapitalikiem, wraz z właściwymi rzeczownikami i zaimkiem "I". Ogólnie rzecz biorąc, przypadek zdania jest łatwiejszy do odczytania przez odbiorców na całym świecie, zwłaszcza gdy zawartość zostanie przetłumaczona przez maszynę. Użyj przypadku zdania dla:
+##### <a name="sentence-case"></a>Przypadek zdania
+ Przypadek zdania to standardowa metoda tworzenia wielkich liter, w której tylko pierwszy wyraz zdania jest pisany wielkimi literami, wraz ze wszystkimi odpowiednimi rzeczownikami i pronoun "I". Ogólnie rzecz biorąc, przypadek zdania jest łatwiejszy dla odbiorców na całym świecie, szczególnie w przypadku tłumaczenia zawartości przez maszynę. Użyj przypadku zdania:
 
-1. **Komunikaty na pasku stanu.** Są one proste, krótkie i zawierają tylko informacje o stanie. Przykład: "Ładowanie pliku projektu"
+1. **Komunikaty paska stanu.** Są one proste, krótkie i zawierają tylko informacje o stanie. Przykład: "Ładowanie pliku projektu"
 
-2. **Wszystkie inne elementy interfejsu użytkownika,** w tym etykiety, pola wyboru, przyciski radiowe i elementy pola listy. Przykład: "Zaznacz wszystkie elementy na liście"
+2. **Wszystkie inne elementy interfejsu użytkownika**, w tym etykiety, pola wyboru, przyciski radiowe i elementy listy. Przykład: "Wybierz wszystkie elementy z listy"
 
 ### <a name="text-formatting"></a>Formatowanie tekstu
- Domyślne formatowanie tekstu w programie Visual Studio 2013 jest kontrolowane przez [czcionkę Środowisko](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ta usługa pomaga zapewnić spójny wygląd czcionki w całym środowisku IDE (zintegrowane środowisko programistyczne) i należy go używać, aby zagwarantować spójne środowisko dla użytkowników.
+ Domyślne formatowanie tekstu w Visual Studio 2013 jest kontrolowane przez [czcionkę środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ta usługa zapewnia spójny wygląd czcionki w środowisku IDE (zintegrowane środowisko programistyczne) i musi być używana w celu zagwarantowania spójnego środowiska dla użytkowników.
 
- Domyślny rozmiar używany przez usługę czcionek programu Visual Studio pochodzi z systemu Windows i jest wyświetlany jako 9 pkt.
+ Domyślny rozmiar używany przez usługę czcionek programu Visual Studio pochodzi z systemu Windows i pojawia się jako 9 punktów.
 
- Formatowanie można zastosować do czcionki środowiska. W tym temacie opisano, jak i gdzie używać stylów. Informacje o implementacji można znaleźć w [polu Czcionka środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+ Formatowanie można zastosować do czcionki środowiska. W tym temacie opisano, jak i gdzie używać stylów. Aby uzyskać informacje o implementacji, zapoznaj się z [czcionką środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-#### <a name="bold-text"></a>Pogrubiony tekst
- Pogrubiony tekst jest używany oszczędnie w programie Visual Studio i powinien być zarezerwowany dla:
+#### <a name="bold-text"></a>Tekst pogrubiony
+ Pogrubiony tekst jest oszczędny w programie Visual Studio i powinien być zarezerwowany dla:
 
 - etykiety pytań w kreatorach
 
-- wyznaczanie aktywnego projektu w Eksploratorze rozwiązań
+- Wyznaczanie aktywnego projektu w Eksplorator rozwiązań
 
-- zastąpione wartości w oknie narzędzia Właściwości
+- zastąpione wartości w oknie narzędzia właściwości
 
-- niektóre zdarzenia na listach rozwijanych edytora Visual Basic
+- Niektóre zdarzenia z listy rozwijanej edytora Visual Basic
 
-- zawartość wygenerowana przez serwer w konspekcie dokumentu dla stron internetowych
+- zawartość wygenerowana przez serwer w konspekcie dokumentu dla stron sieci Web
 
-- nagłówki sekcji w złożonym oknie dialogowym lub w interfejsie użytkownika projektanta
+- nagłówki sekcji w złożonym oknie dialogowym lub interfejsie użytkownika projektanta
 
 #### <a name="italics"></a>Kursywa
- Visual Studio nie używa kursywy lub pogrubiony kursywy tekstu kursywy.
+ Program Visual Studio nie używa kursywy ani pogrubionej kursywy tekstu.
 
 #### <a name="color"></a>Kolor
 
-- Niebieski jest zarezerwowany dla hiperłączy (nawigacji i polecenia) i nigdy nie powinien być używany do orientacji.
+- Niebieski jest zarezerwowany dla hiperlinków (Nawigacja i poleceń) i nigdy nie powinien być używany do orientacji.
 
-- Większe nagłówki (czcionka środowiskowa x 155% lub większa) mogą być barwione do następujących celów:
+- Większe nagłówki (czcionka środowiskowa x 155% lub więcej) można kolorować w następujących celach:
 
-  - Aby zapewnić atrakcyjność wizualną dla interfejsu użytkownika programu Visual Studio signature
+  - Aby zapewnić wizualny zaskarżenie do podpisu interfejsu użytkownika programu Visual Studio
 
-  - Aby zwrócić uwagę na określony obszar
+  - Aby odwołać uwagę do określonego obszaru
 
-  - Aby zaoferować zwolnienie od standardowego ciemnoszarego / czarnego koloru tekstu środowiska
+  - Aby zaoferować zwolnienie ze standardowego koloru kolorowego w kolorze szarym/czarnym
 
-- Kolor w nagłówkach powinien wykorzystywać istniejące kolory marki Visual Studio, głównie główne fioletowe, #FF68217A.
+- Kolor w nagłówkach powinien wykorzystywać istniejące kolory znakowe programu Visual Studio, a głównie główne, #FF68217A.
 
-- Podczas używania koloru w nagłówkach należy przestrzegać [wytycznych dotyczących kolorów systemu Windows,](https://msdn.microsoft.com/library/dn742482.aspx)w tym współczynnika kontrastu i innych zagadnień dotyczących ułatwień dostępu.
+- Korzystając z koloru w nagłówkach, należy przestrzegać [wytycznych dotyczących kolorów systemu Windows](https://msdn.microsoft.com/library/dn742482.aspx), w tym współczynnika kontrastu i innych zagadnień dotyczących ułatwień dostępu.
 
 ### <a name="font-size"></a>Rozmiar czcionki
- Projekt interfejsu użytkownika programu Visual Studio ma jaśniejszy wygląd z większą liczącą odstępów. W miarę możliwości zmniejszono lub usunięto paski chromu i tytułu. Podczas gdy gęstość informacji jest wymagana w programie Visual Studio, typografia nadal jest ważna, z naciskiem na bardziej otwarte odstępy między wierszami i zróżnicowanie rozmiarów i wag czcionek.
+ Projektowanie interfejsu użytkownika programu Visual Studio oferuje jaśniejszy wygląd z większą ilością białych znaków. Tam, gdzie to możliwe, Chrome i paski tytułu zostały zredukowane lub usunięte. Chociaż gęstość informacji jest wymagana w programie Visual Studio, Typografia w dalszym ciągu jest ważna, z naciskiem na więcej otwartych odstępów między wierszami i zróżnicowanie rozmiarów i wag czcionek.
 
- Poniższe tabele zawierają szczegóły projektu i przykłady wizualne dla czcionek wyświetlanych używanych w programie Visual Studio. Niektóre odmiany czcionek wyświetlania mają zarówno rozmiar, jak i wagę, takie jak Semilight lub Light, zakodowane w ich wyglądzie.
+ Poniższe tabele zawierają szczegóły projektu i przykłady wizualizacji wyświetlania czcionek używanych w programie Visual Studio. Niektóre Wariacje czcionek wyświetlania mają zarówno rozmiar, jak i grubość, takie jak Semilight lub Light, kodowane w ich wyglądzie.
 
- Fragmenty kodu implementacji dla wszystkich czcionek wyświetlanych można znaleźć w [odwołaniu do formatowania (skalowanie/pogrubienie).](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)
+ Fragmenty kodu implementacji dla wszystkich czcionek wyświetlanych można znaleźć w temacie [Formatowanie (skalowanie/pogrubienie)](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting).
 
-#### <a name="375-environment-font--light"></a>Czcionka środowiskowa 375% + światło
+#### <a name="375-environment-font--light"></a>375% czcionki środowiska + jasne
 
-|||
+|Użycie|Wygląd|
 |-|-|
-|**Zastosowanie:** Rzadko. Unikalny interfejs użytkownika marki tylko.<br /><br /> **Zrobić:**<br /><br /> - Użyj przypadku zdanie<br />- Zawsze używaj lekkiej wagi<br /><br /> **Nie:**<br /><br /> - Użyj dla interfejsu użytkownika innego niż podpis ui, takich jak Strona początkowa<br />- Pogrubienie, kursywa lub pogrubienie kursywą<br />- Służy do tekstu podstawowego<br />- Zastosowanie w oknach narzędzi|**Pojawia się jako:** 34 pkt Segoe UI Light<br /><br /> **Przykład wizualny:**<br /><br /> *Obecnie nie jest używany. Może być używany na stronie początkowej.*|
+|**Użycie:** Rzadko. Unikatowy tylko oznakowany interfejs użytkownika.<br /><br /> **Nie**<br /><br /> -Użyj przypadku zdania<br />-Zawsze używaj wagi lekkiej<br /><br /> **Nie:**<br /><br /> -Użyj dla interfejsu użytkownika innego niż interfejs użytkownika podpisu, na przykład Strona startowa<br />— Pogrubienie, kursywa lub pogrubiona kursywa<br />— Użyj dla tekstu treści<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 34 pt Segoe UI Light<br /><br /> **Przykład wizualizacji:**<br /><br /> *Obecnie nie jest używana. Może być używany na stronie startowej.*|
 
-#### <a name="310-environment-font--light"></a>Czcionka 310% Środowiska + Światło
+#### <a name="310-environment-font--light"></a>310% czcionki środowiska + jasne
 
-|||
+|Użycie|Wygląd|
 |-|-|
-|**Użycia:**<br /><br /> - Większy nagłówek w oknach dialogowych podpisu<br />- Nagłówek sprawozdania głównego<br /><br /> **Zrobić:**<br /><br /> - Użyj przypadku zdanie<br />- Zawsze używaj lekkiej wagi<br /><br /> **Nie:**<br /><br /> - Użyj dla interfejsu użytkownika innego niż podpis ui, takich jak Strona początkowa<br />- Pogrubienie, kursywa lub pogrubienie kursywą<br />- Służy do tekstu podstawowego<br />- Zastosowanie w oknach narzędzi|**Pojawia się jako:** 28 pkt Segoe UI Light<br /><br /> **Przykład wizualny:**<br /><br /> ![Przykład czcionki 310% środowiska &#43; nagłówek Światło](../../extensibility/ux-guidelines/media/0202-a-ef310.png "0202-a_EF310")|
+|**Wykorzystywani**<br /><br /> -Większy nagłówek w oknach dialogowych podpisów<br />— Główny nagłówek raportu<br /><br /> **Nie**<br /><br /> -Użyj przypadku zdania<br />-Zawsze używaj wagi lekkiej<br /><br /> **Nie:**<br /><br /> -Użyj dla interfejsu użytkownika innego niż interfejs użytkownika podpisu, na przykład Strona startowa<br />— Pogrubienie, kursywa lub pogrubiona kursywa<br />— Użyj dla tekstu treści<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 28 pt Segoe UI Light<br /><br /> **Przykład wizualizacji:**<br /><br /> ![Przykład 310% czcionki środowiskowej &#43; nagłówka światła](../../extensibility/ux-guidelines/media/0202-a-ef310.png "0202 — a_EF310")|
 
-#### <a name="200-environment-font--semilight"></a>Czcionka 200% Środowiska + Semilight
+#### <a name="200-environment-font--semilight"></a>200% czcionki środowiska + Semilight
 
-|||
+|Użycie|Wygląd|
 |-|-|
-|**Użycia:**<br /><br /> - Podpozycje<br />- Tytuły w małych i średnich oknach dialogowych<br /><br /> **Zrobić:**<br /><br /> - Użyj przypadku zdanie<br />- Zawsze stosować wagę Semilight<br /><br /> **Nie:**<br /><br /> - Pogrubienie, kursywa lub pogrubienie kursywą<br />- Służy do tekstu podstawowego<br />- Zastosowanie w oknach narzędzi|**Pojawia się jako:** 18 pkt Segoe UI Semillight<br /><br /> **Przykład wizualny:**<br /><br /> ![Przykład czcionki 200% Environment &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b-ef200.png "0202-b_EF200")|
+|**Wykorzystywani**<br /><br /> -Podnagłówki<br />-Tytuły w małych i średnich oknach dialogowych<br /><br /> **Nie**<br /><br /> -Użyj przypadku zdania<br />-Zawsze używaj wagi Semilight<br /><br /> **Nie:**<br /><br /> — Pogrubienie, kursywa lub pogrubiona kursywa<br />— Użyj dla tekstu treści<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 18 pt Segoe UI Semillight<br /><br /> **Przykład wizualizacji:**<br /><br /> ![Przykład czcionki środowiska 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b-ef200.png "0202 — b_EF200")|
 
-#### <a name="155-environment-font"></a>Czcionka środowiskowa 155%
+#### <a name="155-environment-font"></a>155% czcionki środowiska
 
-|||
+|Użycie|Wygląd|
 |-|-|
-|**Użycia:**<br /><br /> - Nagłówki sekcji w dokumencie dobrze UI<br />- Raporty<br /><br /> **Wykonaj:** Użyj przypadku zdania<br /><br /> **Nie:**<br /><br /> - Pogrubienie, kursywa lub pogrubienie kursywą<br />- Służy do tekstu podstawowego<br />- Zastosowanie w standardowych formanty Visual Studio<br />- Zastosowanie w oknach narzędzi|**Pojawia się jako:** 14 pkt Segoe UI<br /><br /> **Przykład wizualny:**<br /><br /> ![Przykład nagłówka czcionki środowisko 155%](../../extensibility/ux-guidelines/media/0202-c-ef155.png "0202-c_EF155")|
+|**Wykorzystywani**<br /><br /> -Nagłówki sekcji w interfejsie użytkownika prawidłowego dokumentu<br />-Raporty<br /><br /> **Do:** Użyj przypadku zdania<br /><br /> **Nie:**<br /><br /> — Pogrubienie, kursywa lub pogrubiona kursywa<br />— Użyj dla tekstu treści<br />-Użyj w standardowych kontrolkach programu Visual Studio<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 14 pt Segoe UI<br /><br /> **Przykład wizualizacji:**<br /><br /> ![Przykład nagłówka czcionki środowiska 155%](../../extensibility/ux-guidelines/media/0202-c-ef155.png "0202 — c_EF155")|
 
-#### <a name="133-environment-font"></a>Czcionka środowiskowa 133%
+#### <a name="133-environment-font"></a>133% czcionki środowiska
 
-|||
+|Użycie|Wygląd|
 |-|-|
-|**Użycia:**<br /><br /> - Mniejsze podpozycje w oknach dialogowych podpisu<br />- Mniejsze podpozycje w interfejsie użytkownika dobrze dokumentu<br /><br /> **Wykonaj:** Użyj przypadku zdania<br /><br /> **Nie:**<br /><br /> - Pogrubienie, kursywa lub pogrubienie kursywą<br />- Służy do tekstu podstawowego<br />- Zastosowanie w standardowych formanty Visual Studio<br />- Zastosowanie w oknach narzędzi|**Pojawia się jako:** 12 pkt Segoe UI<br /><br /> **Przykład wizualny:**<br /><br /> ![Przykład nagłówka czcionki środowisko 133%](../../extensibility/ux-guidelines/media/0202-d-ef133.png "0202-d_EF133")|
+|**Wykorzystywani**<br /><br /> -Mniejsze podnagłówki w oknach dialogowych podpisów<br />-Mniejsze podnagłówki w interfejsie użytkownika dobrze<br /><br /> **Do:** Użyj przypadku zdania<br /><br /> **Nie:**<br /><br /> — Pogrubienie, kursywa lub pogrubiona kursywa<br />— Użyj dla tekstu treści<br />-Użyj w standardowych kontrolkach programu Visual Studio<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 12 pt Segoe UI<br /><br /> **Przykład wizualizacji:**<br /><br /> ![Przykład nagłówka czcionki środowiska 133%](../../extensibility/ux-guidelines/media/0202-d-ef133.png "0202 — d_EF133")|
 
-#### <a name="122-environment-font"></a>Czcionka środowiskowa 122%
+#### <a name="122-environment-font"></a>122% czcionki środowiska
 
-|||
+|Użycie|Wygląd|
 |-|-|
-|**Użycia:**<br /><br /> - Nagłówki sekcji w oknach dialogowych podpisu<br />- Wierzchnie węzły w widoku drzewa<br />- Nawigacja w pionie<br /><br /> **Wykonaj:** Użyj przypadku zdania<br /><br /> **Nie:**<br /><br /> - Pogrubienie, kursywa lub pogrubienie kursywą<br />- Służy do tekstu podstawowego<br />- Zastosowanie w standardowych formanty Visual Studio<br />- Zastosowanie w oknach narzędzi|**Pojawia się jako:** 11 pkt Segoe UI<br /><br /> **Przykład wizualny:**<br /><br /> ![Przykład nagłówka czcionki środowisko 122%](../../extensibility/ux-guidelines/media/0202-e-ef122.png "0202-e_EF122")|
+|**Wykorzystywani**<br /><br /> -Nagłówki sekcji w oknach dialogowych podpisów<br />-Górne węzły w widoku drzewa<br />— Nawigacja na kartach pionowych<br /><br /> **Do:** Użyj przypadku zdania<br /><br /> **Nie:**<br /><br /> — Pogrubienie, kursywa lub pogrubiona kursywa<br />— Użyj dla tekstu treści<br />-Użyj w standardowych kontrolkach programu Visual Studio<br />— Użyj w oknach narzędzi|**Pojawia się jako:** 11 pt Segoe UI<br /><br /> **Przykład wizualizacji:**<br /><br /> ![Przykład nagłówka czcionki środowiska 122%](../../extensibility/ux-guidelines/media/0202-e-ef122.png "0202 — e_EF122")|
 
-#### <a name="environment-font--bold"></a>Czcionka środowiskowa + pogrubienie
+#### <a name="environment-font--bold"></a>Font Environment + Bold
 
-|||
+|Użycie|Wygląd|
 |-|-|
-|**Użycia:**<br /><br /> - Etykiety i podtytuły w oknach dialogowych podpisu<br />- Etykiety i podtytuły w raportach<br />- Etykiety i podtytuły w interfejsie użytkownika dokumentu<br /><br /> **Zrobić:**<br /><br /> - Użyj przypadku zdanie<br />- Użyj pogrubionej wagi<br /><br /> **Nie:**<br /><br /> - Kursywa lub pogrubienie kursywa<br />- Służy do tekstu podstawowego<br />- Zastosowanie w standardowych formanty Visual Studio<br />- Zastosowanie w oknach narzędzi|**Pojawia się jako:** pogrubiony 9 pkt Segoe UI<br /><br /> **Przykład wizualny:**<br /><br /> ![Przykład czcionki Środowisko &#43; Nagłówek pogrubiony](../../extensibility/ux-guidelines/media/0202-f-efb.png "0202-f_EFB")|
+|**Wykorzystywani**<br /><br /> -Etykiety i nagłówki podrzędne w oknach dialogowych sygnatur<br />-Etykiety i nagłówki podrzędne w raportach<br />-Etykiety i nagłówki podrzędne w interfejsie użytkownika<br /><br /> **Nie**<br /><br /> -Użyj przypadku zdania<br />-Użyj pogrubionej grubości<br /><br /> **Nie:**<br /><br /> -Kursywa lub pogrubiona kursywa<br />— Użyj dla tekstu treści<br />-Użyj w standardowych kontrolkach programu Visual Studio<br />— Użyj w oknach narzędzi|**Pojawia się jako:** pogrubiony 9 pt Segoe UI<br /><br /> **Przykład wizualizacji:**<br /><br /> ![Przykład czcionki środowiska &#43; pogrubiony nagłówek](../../extensibility/ux-guidelines/media/0202-f-efb.png "0202 — f_EFB")|
 
-#### <a name="environment-font"></a>Czcionka środowiskowa
+#### <a name="environment-font"></a>Czcionka środowiska
 
-|||
+|Użycie|Wygląd|
 |-|-|
-|**Zastosowanie:** Cały inny tekst<br /><br /> **Wykonaj:** Użyj przypadku zdania<br /><br /> **Nie należy:** Kursywa lub pogrubienie kursywa|**Pojawia się jako:** 9 pkt Segoe UI<br /><br /> **Przykład wizualny:**<br /><br /> ![Przykład czcionki Środowisko](../../extensibility/ux-guidelines/media/0202-g-ef.png "0202-g_EF")|
+|**Użycie:** Cały tekst<br /><br /> **Do:** Użyj przypadku zdania<br /><br /> **Nie należy:** Kursywa lub pogrubiona kursywa|**Pojawia się jako:** 9 pt Segoe UI<br /><br /> **Przykład wizualizacji:**<br /><br /> ![Przykład czcionki środowiska](../../extensibility/ux-guidelines/media/0202-g-ef.png "0202 — g_EF")|
 
-### <a name="padding-and-spacing"></a>Dopełnienie i odstępy
- Nagłówki wymagają przestrzeni wokół nich, aby nadać im odpowiedni nacisk. To miejsce różni się w zależności od rozmiaru punktu i tego, co jeszcze znajduje się w pobliżu nagłówka, na przykład reguły poziomej lub wiersza tekstu w czcionce środowiska.
+### <a name="padding-and-spacing"></a>Uzupełnienie i odstępy
+ Nagłówki wymagają miejsca wokół nich, aby dać im odpowiedni nacisk. Ta przestrzeń jest różna w zależności od rozmiaru punktu i od tego, co inne znajduje się w odniesieniu do nagłówka, takiego jak reguła pozioma lub wiersz tekstu w czcionce środowiskowej.
 
-- Idealna wyściółka dla pozycji samej w sobie powinna wynosić 90% przestrzeni wysokości znaku stołecznego. Na przykład nagłówek 28 pt Segoe UI Light ma wysokość limitu 26 pkt, a dopełnienie powinno wynosić około 23 pkt, czyli około 31 pikseli.
+- Idealnym uzupełnieniem dla nagłówka przez siebie może być 90% miejsca na wysokości znaków. Na przykład nagłówek "28 pt Segoe UI światła ma wysokość zakończenia 26 punktów, a uzupełnienie powinno wynosić około 23 pt lub około 31 pikseli.
 
-- Minimalna przestrzeń wokół nagłówka powinna wynosić 50% wysokości znaku kapitałowego. Mniej miejsca można wykorzystać, gdy nagłówkowi towarzyszy reguła lub inny szczelny element.
+- Minimalna ilość miejsca w pobliżu nagłówka powinna wynosić od 50% wysokości znaków. W przypadku, gdy do nagłówka jest dołączona reguła lub inny element ociole, można użyć mniejszej ilości miejsca.
 
-- Tekst czcionki pogrubiona środowiska powinien być zgodny z domyślnymi odstępami wysokości i dopełnieniem.
+- Tekst czcionki pogrubionego środowiska powinien podążać za domyślnym odstępem wysokości i dopełnieniem.
 
 ## <a name="see-also"></a>Zobacz też
- [MSDN: Czcionki (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742483\(v=vs.85\).aspx) [MSDN: Tekst interfejsu użytkownika (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN: czcionki (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742483\(v=vs.85\).aspx) [MSDN: tekst interfejsu użytkownika (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)

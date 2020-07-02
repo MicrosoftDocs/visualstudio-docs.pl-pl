@@ -1,5 +1,5 @@
 ---
-title: Kanały (Widok wątków) | Dokumentacja firmy Microsoft
+title: Kanały (Widok wątków) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,42 +13,42 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df93a87285bdf1172e75b63ed956c1aa978fc71e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193627"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545538"
 ---
 # <a name="channels-threads-view"></a>Kanały (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wizualizator współbieżności przedstawia cztery rodzaje kanałów: wątek kanały, kanały dysku, znacznika kanałów i kanały procesora GPU.  
+Wizualizator współbieżności pokazuje cztery rodzaje kanałów: kanały wątku, kanały dysków, kanały znaczników i kanały GPU.  
   
-## <a name="thread-channels"></a>Kanały wątku  
- Kanał wątku pokazuje stan wątku przez kolor dla tylko jednego wątku. Po wstrzymaniu w nazwie kanału, zostanie wyświetlona funkcji uruchamiania dla danego wątku. Narzędzie Concurrency Visualizer wykrywa kilka rodzajów wątków. W poniższej tabeli przedstawiono najbardziej typowych rodzajów.  
+## <a name="thread-channels"></a>Kanały wątków  
+ Kanał wątku pokazuje stan wątku według koloru dla tylko jednego wątku. Po wstrzymaniu nazwy kanału zostanie wyświetlona funkcja Start dla danego wątku. Wizualizator współbieżności wykrywa kilka rodzajów wątków. Najpopularniejsze rodzaje przedstawiono w poniższej tabeli.  
   
-|||  
+|Thread|Opis|  
 |-|-|  
 |Główny wątek|Wątek, który uruchomił aplikację.|  
-|Wątek roboczy|Wątek, który został utworzony przez wątku głównego aplikacji.|  
+|Wątek roboczy|Wątek, który został utworzony przez wątek główny aplikacji.|  
 |Wątek roboczy CLR|Wątek roboczy, który został utworzony przez środowisko uruchomieniowe języka wspólnego (CLR).|  
 |Pomocnik debugera|Wątek roboczy, który został utworzony przez debuger programu Visual Studio.|  
-|Wątek ConcRT|Wątek, który został utworzony przez środowisko uruchomieniowe współbieżności firmy Microsoft.|  
-|Wątek GDI|Wątek, który został utworzony przez GDIPlus.|  
-|Wątek OLE/RPC|Wątek, który został utworzony jako wątku roboczego RPC.|  
+|Wątek ConcRT|Wątek, który został utworzony przez Microsoft środowisko uruchomieniowe współbieżności.|  
+|Wątek GDI|Wątek, który został utworzony za pomocą interfejsu GDIPlus.|  
+|Wątek OLE/RPC|Wątek, który został utworzony jako wątek roboczy RPC.|  
 |Wątek RPC|Wątek, który został utworzony jako wątek RPC.|  
-|Wątek Winsock|Wątek, który został utworzony jako wątek usługi Winsock.|  
-|Pula wątków|Wątek, który został utworzony przez CLR puli wątków.|  
+|Wątek Winsock|Wątek, który został utworzony jako wątek Winsock.|  
+|Pula wątków|Wątek, który został utworzony przez pulę wątków CLR.|  
   
 ## <a name="disk-channels"></a>Kanały dysku  
- Kanały dysku odpowiadają fizycznych dysków w komputerze. Ponieważ istnieje osobny kanał dla operacji odczytu i zapisu dla każdego dysku fizycznego w systemie, każdy dysk ma dwa kanały. Numery dysków odnoszą się do nazwy urządzeń jądra. Kanał dysku jest wyświetlany tylko jeśli były wykonywane działania na dysku.  
+ Kanały dysku odpowiadają dyskom fizycznym w komputerze. Ponieważ istnieją osobne kanały dla operacji odczytu i zapisu dla każdego dysku fizycznego w systemie, każdy dysk ma dwa kanały. Numery dysków odpowiadają nazwom urządzeń jądra. Kanał dysku jest wyświetlany tylko wtedy, gdy wystąpiła aktywność na dysku.  
   
-## <a name="marker-channels"></a>Kanały znacznika  
- Kanały znacznika odpowiadają zdarzenia wygenerowane przez aplikację i bibliotek, które są używane. Na przykład biblioteka zadań równoległych, biblioteka równoległych wzorców i C++ AMP generować zdarzenia, które są wyświetlane w postaci znaczników. Każdy znacznik kanał jest skojarzony z identyfikator wątku, który jest wyświetlany obok opis kanału. Identyfikator identyfikuje wątku, który wygenerował zdarzenie. Opis kanału zawiera nazwę dostawcy śledzenie zdarzeń dla Windows (ETW), który wygenerował zdarzenia. Jeśli kanał Wyświetla zdarzenia z [SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md), wyświetlana jest także nazwa serii.  
+## <a name="marker-channels"></a>Kanały znaczników  
+ Kanały znacznika odpowiadają zdarzeniom wygenerowanym przez aplikację i bibliotekami, z których korzystają. Na przykład Biblioteka zadań równoległych, Biblioteka wzorców równoległych i C++ AMP generować zdarzenia, które są wyświetlane jako znaczniki. Każdy kanał znacznika jest skojarzony z IDENTYFIKATORem wątku, który jest wyświetlany obok opisu kanału. Identyfikator identyfikuje wątek, który wygenerował zdarzenie. Opis kanału zawiera nazwę dostawcy śledzenia zdarzeń systemu Windows (ETW), który wygenerował zdarzenia. Jeśli kanał wyświetla zdarzenia z [zestawu SDK wizualizatora współbieżności](../profiling/concurrency-visualizer-sdk.md), zostanie również wyświetlona nazwa serii.  
   
 ## <a name="gpu-channels"></a>Kanały procesora GPU  
- Kanały GPU wyświetlania informacji o działaniu programu DirectX 11 w systemie.  Każdy silnik DirectX, która jest skojarzona z karty graficznej ma oddzielny kanał.  Poszczególne segmenty reprezentują czas, jaki ma poświęcony na przetwarzanie pakietu DMA.  
+ Kanały procesora GPU zawierają informacje o aktywności DirectX 11 w systemie.  Każdy aparat DirectX skojarzony z kartą graficzną ma oddzielny kanał.  Poszczególne segmenty reprezentują czas spędzony na przetwarzaniu pakietu DMA.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

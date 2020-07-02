@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Aktualizowanie źródła danych przy użyciu danych z kontrolki hosta'
+title: 'Instrukcje: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255671"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541248"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Instrukcje: Aktualizowanie źródła danych przy użyciu danych z kontrolki hosta
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Instrukcje: aktualizowanie źródła danych przy użyciu danych z kontrolki hosta
   Formant hosta można powiązać ze źródłem danych i zaktualizować źródło danych przy użyciu zmian wprowadzonych w danych w formancie. W tym procesie istnieją dwa główne kroki:
 
-1. Zaktualizuj źródło danych w pamięci za pomocą zmodyfikowanych danych w formancie. Zazwyczaj źródłem danych w pamięci jest <xref:System.Data.DataSet>, a <xref:System.Data.DataTable>lub inny obiekt danych.
+1. Zaktualizuj źródło danych w pamięci za pomocą zmodyfikowanych danych w formancie. Zazwyczaj źródłem danych w pamięci jest <xref:System.Data.DataSet> , a <xref:System.Data.DataTable> lub inny obiekt danych.
 
 2. Zaktualizuj bazę danych o zmienione dane w źródle danych w pamięci. Ma to zastosowanie tylko wtedy, gdy źródło danych jest połączone z bazą danych zaplecza, taką jak SQL Server lub baza danych Microsoft Office Access.
 
@@ -38,13 +38,13 @@ ms.locfileid: "71255671"
 
  Aby zapisać dane w źródle danych, można napisać kod, który aktualizuje źródło danych w odpowiedzi na konkretne zdarzenie w czasie wykonywania, lub można skonfigurować kontrolkę tak, aby automatycznie aktualizowana źródła danych po zmianie wartości w kontrolce.
 
- Nie trzeba zapisywać <xref:Microsoft.Office.Tools.Excel.ListObject> zmian w źródle danych w pamięci. Po powiązaniu <xref:Microsoft.Office.Tools.Excel.ListObject> formantu z danymi <xref:Microsoft.Office.Tools.Excel.ListObject> , formant automatycznie zapisuje zmiany w źródle danych w pamięci bez konieczności dodatkowego kodu.
+ Nie trzeba zapisywać <xref:Microsoft.Office.Tools.Excel.ListObject> zmian w źródle danych w pamięci. Po powiązaniu <xref:Microsoft.Office.Tools.Excel.ListObject> formantu z danymi, <xref:Microsoft.Office.Tools.Excel.ListObject> formant automatycznie zapisuje zmiany w źródle danych w pamięci bez konieczności dodatkowego kodu.
 
 ### <a name="to-update-the-in-memory-data-source-at-run-time"></a>Aby zaktualizować źródło danych znajdujące się w pamięci w czasie wykonywania
 
-- Wywołaj <xref:System.Windows.Forms.Binding> metodę obiektu, który wiąże formant ze źródłem danych. <xref:System.Windows.Forms.Binding.WriteValue%2A>
+- Wywołaj <xref:System.Windows.Forms.Binding.WriteValue%2A> metodę <xref:System.Windows.Forms.Binding> obiektu, który wiąże formant ze źródłem danych.
 
-     Poniższy przykład zapisuje zmiany wprowadzone do <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki w arkuszu programu Excel do źródła danych. W tym przykładzie przyjęto założenie <xref:Microsoft.Office.Tools.Excel.NamedRange> , że `namedRange1` masz kontrolkę o nazwie z <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwością powiązaną z polem w źródle danych.
+     Poniższy przykład zapisuje zmiany wprowadzone do <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki w arkuszu programu Excel do źródła danych. W tym przykładzie przyjęto założenie, że masz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę o nazwie `namedRange1` z <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwością powiązaną z polem w źródle danych.
 
      [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]
@@ -54,7 +54,7 @@ ms.locfileid: "71255671"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Aby ustawić kontrolkę do automatycznej aktualizacji źródła danych znajdującego się w pamięci przy użyciu kodu
 
-1. Użyj trybu <xref:System.Windows.Forms.Binding> system. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged obiektu, który wiąże formant ze źródłem danych. Dostępne są dwie opcje aktualizacji źródła danych:
+1. Użyj trybu system. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged <xref:System.Windows.Forms.Binding> obiektu, który wiąże formant ze źródłem danych. Dostępne są dwie opcje aktualizacji źródła danych:
 
    - Aby zaktualizować źródło danych po sprawdzeniu poprawności kontrolki, należy ustawić tę właściwość na system. Windows. Forms. DataSourceUpdateMode. onwalidacja.
 
@@ -63,7 +63,7 @@ ms.locfileid: "71255671"
      > [!NOTE]
      > Opcja system. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged nie ma zastosowania do kontrolek hosta programu Word, ponieważ program Word nie oferuje powiadomień o zmianach lub kontroli nad dokumentami. Jednak ta opcja może służyć do Windows Forms formantów w dokumentach programu Word.
 
-     Poniższy przykład konfiguruje <xref:Microsoft.Office.Tools.Excel.NamedRange> formant do automatycznej aktualizacji źródła danych, gdy wartość w formancie zostanie zmieniona. W tym przykładzie przyjęto założenie <xref:Microsoft.Office.Tools.Excel.NamedRange> , że `namedRange1` masz kontrolkę o nazwie z <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwością powiązaną z polem w źródle danych.
+     Poniższy przykład konfiguruje <xref:Microsoft.Office.Tools.Excel.NamedRange> formant do automatycznej aktualizacji źródła danych, gdy wartość w formancie zostanie zmieniona. W tym przykładzie przyjęto założenie, że masz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę o nazwie `namedRange1` z <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwością powiązaną z polem w źródle danych.
 
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]
@@ -76,7 +76,7 @@ ms.locfileid: "71255671"
 
 3. W oknie **Właściwości** rozwiń Właściwość **(DataBindings)** .
 
-4. Obok właściwości **(Zaawansowane)** kliknij przycisk wielokropka (![VisualStudioEllipsesButton zrzut]ekranu(../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton")).
+4. Obok właściwości **(Zaawansowane)** kliknij przycisk wielokropka (![VisualStudioEllipsesButton zrzut ekranu](../vsto/media/vbellipsesbutton.png "Zrzut ekranu VisualStudioEllipsesButton")).
 
 5. W oknie dialogowym **Formatowanie i zaawansowane powiązanie** kliknij listę rozwijaną **Tryb aktualizacji źródła danych** i wybierz jedną z następujących wartości:
 
@@ -94,11 +94,11 @@ ms.locfileid: "71255671"
 
 ### <a name="to-update-the-database"></a>Aby zaktualizować bazę danych
 
-1. Wywoływanie <xref:System.Windows.Forms.BindingSource> metody dla kontrolki. <xref:System.Windows.Forms.BindingSource.EndEdit%2A>
+1. Wywoływanie <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource> dla kontrolki.
 
-     <xref:System.Windows.Forms.BindingSource> Jest generowany automatycznie po dodaniu kontrolki powiązanej z danymi do dokumentu lub skoroszytu w czasie projektowania. <xref:System.Windows.Forms.BindingSource> Łączy formant z określonym zestawem danych w projekcie. Aby uzyskać więcej informacji, zobacz [źródło BindingSource — Omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+     <xref:System.Windows.Forms.BindingSource>Jest generowany automatycznie po dodaniu kontrolki powiązanej z danymi do dokumentu lub skoroszytu w czasie projektowania. <xref:System.Windows.Forms.BindingSource>Łączy formant z określonym zestawem danych w projekcie. Aby uzyskać więcej informacji, zobacz [źródło BindingSource — Omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
-     W poniższym przykładzie kodu założono, że projekt zawiera <xref:System.Windows.Forms.BindingSource> nazwę `customersBindingSource`.
+     W poniższym przykładzie kodu założono, że projekt zawiera <xref:System.Windows.Forms.BindingSource> nazwę `customersBindingSource` .
 
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
@@ -107,7 +107,7 @@ ms.locfileid: "71255671"
 
      TableAdapter jest generowany automatycznie po dodaniu kontrolki powiązanej z danymi do dokumentu lub skoroszytu w czasie projektowania. TableAdapter nawiązuje połączenie określonego zestawu danych w projekcie z bazą danych. Aby uzyskać więcej informacji, zobacz [TableAdapter Overview (przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)).
 
-     W poniższym przykładzie kodu założono, że masz połączenie z tabelą Customers w bazie danych Northwind i że projekt zawiera TableAdapter o nazwie `customersTableAdapter` i z określonym typem danych o nazwie. `northwindDataSet`
+     W poniższym przykładzie kodu założono, że masz połączenie z tabelą Customers w bazie danych Northwind i że projekt zawiera TableAdapter o nazwie `customersTableAdapter` i z określonym typem danych o nazwie `northwindDataSet` .
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
@@ -116,8 +116,8 @@ ms.locfileid: "71255671"
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
 - [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Instrukcje: Przewijanie rekordów bazy danych w arkuszu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Instrukcje: Wypełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Instrukcje: Wypełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Instrukcje: Wypełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Instrukcje: Wypełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Instrukcje: przewijanie rekordów bazy danych w arkuszu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Instrukcje: zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Instrukcje: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Instrukcje: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Instrukcje: zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)

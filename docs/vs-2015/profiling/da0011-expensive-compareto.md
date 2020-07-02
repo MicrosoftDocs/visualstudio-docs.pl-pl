@@ -14,21 +14,21 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2ed433612498a6b7d4b87291311d7fd6efcb0974
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: a66242554de28ab45cc797d523ea7b5a967e9e5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918385"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542977"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: Expensive CompareTo
+# <a name="da0011-expensive-compareto"></a>DA0011: Kosztowna funkcja CompareTo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0011: kosztowne CompareTo](/visualstudio/profiling/da0011-expensive-compareto).  
   
-|||  
+|Element|Wartość|  
 |-|-|  
-|Identyfikator zasady|DA0011|  
+|Identyfikator reguły|DA0011|  
 |Kategoria|Użycie .NET Framework|  
 |Metody profilowania|Próbkowanie<br /><br /> Pamięć platformy .NET|  
 |Komunikat|Funkcje CompareTo powinny być tanie i nie mogą przydzielać żadnej pamięci. Zmniejsz złożoność funkcji CompareTo, jeśli jest to możliwe.|  

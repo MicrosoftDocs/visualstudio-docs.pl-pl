@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3968d81e8ee18b4b0a56bed50f7aa1f121e1c074
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f689dfd6c1d39bbd03d522a33ed8c5639a3da9f8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663241"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545486"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Należy rozważyć przekazywanie typów bazowych jako parametrów
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Rozważ przekazywanie typów podstawowych jako parametrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
@@ -46,18 +46,18 @@ ms.locfileid: "72663241"
 
 - Jeśli metoda wymaga określonej funkcjonalności, która jest dostarczana przez typ pochodny
 
-   \- lub-
+   \-oraz
 
 - Aby wymusić, że tylko typ pochodny lub bardziej pochodny typ jest przekazanie do metody.
 
   W takich przypadkach kod będzie bardziej niezawodny ze względu na ścisłe sprawdzanie typu dostarczone przez kompilator i środowisko uruchomieniowe.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia metodę `ManipulateFileStream`, która może być używana tylko z obiektem <xref:System.IO.FileStream>, co narusza tę regułę. Druga metoda, `ManipulateAnyStream`, spełnia regułę przez zastąpienie parametru <xref:System.IO.FileStream> przy użyciu <xref:System.IO.Stream>.
+ Poniższy przykład przedstawia metodę, `ManipulateFileStream` , która może być używana tylko z <xref:System.IO.FileStream> obiektem, co narusza tę regułę. Druga metoda, `ManipulateAnyStream` ,, spełnia regułę przez zastąpienie <xref:System.IO.FileStream> parametru za pomocą <xref:System.IO.Stream> .
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cs/FxCop.Design.ConsiderPassingBaseTypes.cs#1)]
  [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/vb/FxCop.Design.ConsiderPassingBaseTypes.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1059: Składowe nie powinny ujawniać pewnych typów konkretnych](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+ [CA1059: Składowe nie powinny ujawniać niektórych typów konkretnych](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

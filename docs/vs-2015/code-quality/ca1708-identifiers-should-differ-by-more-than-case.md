@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f611cb899a2386c47e1370214a74c2a5da52584f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22a33c852b941b4c7e7398416aa1e74e69ff1786
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669197"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544043"
 ---
-# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identyfikatory powinny różnić się czymś więcej niż wielkością liter
+# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
@@ -44,7 +44,7 @@ ms.locfileid: "72669197"
  Wybierz unikatową nazwę, która jest porównywana z innymi identyfikatorami w sposób niezależny od wielkości liter.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Biblioteka może nie być użyteczna we wszystkich dostępnych językach w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Nie pomijaj ostrzeżeń dla tej reguły. Biblioteka może nie być użyteczna we wszystkich dostępnych językach w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .
 
 ## <a name="example-of-a-violation"></a>Przykład naruszenia
  Poniższy przykład demonstruje naruszenie tej reguły.

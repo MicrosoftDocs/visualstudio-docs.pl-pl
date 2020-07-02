@@ -15,17 +15,17 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5a36ee8cffc221d15243ff72e2e71558e867319
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 401fbfbccfeeeeec5cbdc0e791b110d1b5f0201b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645409"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543978"
 ---
-# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Unikaj wewnętrznych klas bez wystąpień
+# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Unikaj klas wewnętrznych bez wystąpień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
@@ -46,29 +46,29 @@ ms.locfileid: "72645409"
 
 - Wyliczenia
 
-- Delegaty
+- Delegaci
 
 - Typy tablic emitowane przez kompilator
 
-- Typy, których nie można utworzyć, i definiują tylko `static` (`Shared` w Visual Basic).
+- Typy, których nie można utworzyć, i definiują `static` `Shared` wyłącznie metody (w Visual Basic).
 
-  Jeśli zastosujesz <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> do zestawu, który jest analizowany, ta reguła nie będzie miała żadnego konstruktora, który jest oznaczony jako `internal`, ponieważ nie można ustalić, czy pole jest używane przez inny zestaw `friend`.
+  Jeśli zastosujesz <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> do zestawu, który jest analizowany, ta reguła nie zostanie zastosowana dla żadnych konstruktorów oznaczonych jako, `internal` ponieważ nie można ustalić, czy pole jest używane przez inny `friend` zestaw.
 
-  Mimo że nie można obejść tego ograniczenia w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] analizie kodu, zewnętrzna autonomiczna FxCop będzie miała miejsce w konstruktorach wewnętrznych, jeśli każdy zestaw `friend` jest obecny w analizie.
+  Mimo że nie można obejść tego ograniczenia w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] analizie kodu, zewnętrzna autonomiczna FxCop nastąpi w wewnętrznych konstruktorach, jeśli każdy `friend` zestaw jest obecny w analizie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Usuń typ lub Dodaj kod, który go używa. Jeśli typ zawiera tylko metody statyczne, należy dodać jeden z następujących elementów do typu, aby uniemożliwić kompilatorowi emitowanie domyślnego publicznego konstruktora wystąpień:
 
-- Konstruktor prywatny dla typów, które są przeznaczone dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersje 1,0 i 1,1.
+- Konstruktor prywatny dla typów przeznaczonych dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji 1,0 i 1,1.
 
-- Modyfikator `static` (`Shared` w Visual Basic) dla typów przeznaczonych [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- `static`Modyfikator ( `Shared` w Visual Basic) dla typów, których celem jest [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] .
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Można bezpiecznie pominąć ostrzeżenie z tej reguły. Zaleca się, aby pominąć to ostrzeżenie w następujących sytuacjach:
 
-- Klasa jest tworzona za pomocą metod odbicia z późnym wiązaniem, takich jak <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Klasa jest tworzona za pomocą metod odbicia z późnym wiązaniem, takich jak <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> .
 
-- Klasa jest tworzona automatycznie przez środowisko uruchomieniowe lub [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Na przykład klasy implementujące <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> lub <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Klasa jest tworzona automatycznie przez środowisko uruchomieniowe lub [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Na przykład klasy implementujące <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> lub <xref:System.Web.IHttpHandler?displayProperty=fullName> .
 
 - Klasa jest przenoszona jako parametr typu ogólnego, który ma nowe ograniczenie. Na przykład poniższy przykład zgłosi tę regułę.
 
@@ -94,8 +94,8 @@ ms.locfileid: "72645409"
   W tych sytuacjach zalecamy Pominięcie tego ostrzeżenia.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Unikaj niewywołanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Dokonaj przeglądu nieużywanych parametrów](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Usuwaj nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)

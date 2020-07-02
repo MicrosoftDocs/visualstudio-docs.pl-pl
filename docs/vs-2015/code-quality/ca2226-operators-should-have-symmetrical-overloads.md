@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9772577c2b1466cf3d1b5267129aa761db983021
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 430a8d3cfd3b8ced45b60bd9dc70211711886d43
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658904"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540572"
 ---
-# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operatory powinny być przeciążane symetrycznie
+# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operatory powinny mieć symetryczne przeciążenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
@@ -38,21 +38,21 @@ ms.locfileid: "72658904"
 ## <a name="rule-description"></a>Opis reguły
  Nie istnieją sytuacje, w których równość lub nierówność ma zastosowanie do wystąpień typu, a operator odwrotny jest niezdefiniowany. Typy zwykle implementują operator nierówności poprzez zwrócenie negacji wartości operatora równości.
 
- C# Kompilator wystawia błąd w przypadku naruszeń tej reguły.
+ Kompilator języka C# wystawia błąd w przypadku naruszeń tej reguły.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zaimplementować operatory równości i nierówności albo usunąć te, które są obecne.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Typ nie będzie działał w sposób, który jest zgodny z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Nie pomijaj ostrzeżeń dla tej reguły. Typ nie będzie działał w sposób, który jest zgodny z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .
 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1046: Nie przeciążaj operatora równości w typach referencyjnych](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Przeciążenia operatora mają nazwane alternatywy](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2224: Przesłaniaj metodę Equals w przypadku przeciążania operacji równości operatorów](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Przesłaniaj metodę equals w przypadku przeciążania operatora równości](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: Przesłoń metodę GetHashCode przy przesłanianiu metody Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Przesłaniaj metodę GetHashCode w razie przesłaniania metody Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

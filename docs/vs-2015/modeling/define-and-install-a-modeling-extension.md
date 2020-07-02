@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850448"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544992"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definiowanie i instalowanie rozszerzenia modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 ## <a name="creating-a-modeling-extension-solution"></a>Tworzenie rozwiązania do rozszerzenia modelowania
  Aby zdefiniować rozszerzenie modelowania, należy utworzyć rozwiązanie zawierające następujące projekty:
 
-- Projekt rozszerzenia integracji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Spowoduje to wygenerowanie pliku, który działa jako Instalator składników rozszerzenia.
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Projekt rozszerzenia integracji (VSIX). Spowoduje to wygenerowanie pliku, który działa jako Instalator składników rozszerzenia.
 
 - Projekt biblioteki klas, wymagany dla składników, które zawierają kod programu.
 
@@ -44,7 +44,7 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
 1. W menu **plik** wybierz polecenie **Nowy**, **projekt**.
 
-2. W obszarze **zainstalowane szablony**wybierz **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie wybierz pozycję **Biblioteka klas**.
+2. W obszarze **zainstalowane szablony**wybierz pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Biblioteka klas**.
 
 #### <a name="to-create-a-vsix-project"></a>Aby utworzyć projekt VSIX
 
@@ -54,7 +54,7 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
     1. W **Eksplorator rozwiązań**, w menu skrótów rozwiązania, wybierz **Dodaj**, **Nowy projekt**.
 
-    2. W obszarze **zainstalowane szablony**rozwiń **pozycję C# Wizualizacja** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie Wybierz pozycję **Projekt VSIX**.
+    2. W obszarze **zainstalowane szablony**rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **rozszerzalność**. W środkowej kolumnie Wybierz pozycję **Projekt VSIX**.
 
 3. Ustaw projekt VSIX jako projekt startowy rozwiązania.
 
@@ -72,10 +72,10 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
     2. Dla składnika z kodem ustaw następujące pola w oknie dialogowym **Dodaj nowy element zawartości** :
 
-        |||
+        |Pole|Wartość|
         |-|-|
-        |**Typ** =|**Microsoft. VisualStudio. MefComponent**|
-        | = **źródłowa**|**Projekt w bieżącym rozwiązaniu**|
+        |**Wprowadź** =|**Microsoft. VisualStudio. MefComponent**|
+        |**Zewnętrz** =|**Projekt w bieżącym rozwiązaniu**|
         |**Project** =|*Projekt biblioteki klas*|
         |**Osadź w tym folderze** =|*ciągiem*|
 
@@ -97,9 +97,9 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
 #### <a name="to-run-an-extension-during-its-development"></a>Aby uruchomić rozszerzenie podczas jego tworzenia
 
-1. W menu **debugowanie** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wybierz **Rozpocznij debugowanie**.
+1. W menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuguj** wybierz **Rozpocznij debugowanie**.
 
-     Kompilacja projektu i nowe wystąpienie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] są uruchamiane w trybie eksperymentalnym.
+     Kompilacja projektu i nowe wystąpienie jest [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] uruchamiane w trybie eksperymentalnym.
 
     - Alternatywnie możesz wybrać opcję **Rozpocznij bez debugowania**. Pozwala to skrócić czas potrzebny do uruchomienia programu.
 
@@ -109,14 +109,14 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
 3. Jeśli używasz narzędzia **Uruchom bez debugowania** , ale chcesz użyć debugera, Wróć do głównego wystąpienia programu Visual Studio. W menu **debugowanie** kliknij **Dołącz do procesu**. W oknie dialogowym Wybierz eksperymentalne wystąpienie programu Visual Studio, które ma nazwę programu **devenv**.
 
-## <a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalowanie i odinstalowywanie rozszerzenia
  Wykonaj następujące kroki, aby uruchomić rozszerzenie w głównym wystąpieniu programu Visual Studio na własnym komputerze lub na innych komputerach.
 
 1. Na komputerze Znajdź plik **. vsix** , który został skompilowany przez projekt rozszerzenia.
 
     1. W **Eksplorator rozwiązań**, w menu skrótów projektu, a następnie wybierz polecenie **Otwórz folder w Eksploratorze Windows**.
 
-    2. Zlokalizuj plik **bin\\\*\\** _YourProject_ **. vsix**
+    2. Zlokalizuj plik **bin \\ \* \\ **_YourProject_**. vsix**
 
 2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować rozszerzenie. Może to być własny komputer lub inny.
 
@@ -130,15 +130,15 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie
 
-1. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
+1. W menu **Narzędzia** kliknij pozycję **Rozszerzenia i aktualizacje**.
 
 2. Rozwiń **zainstalowane rozszerzenia**.
 
 3. Wybierz rozszerzenie, a następnie kliknij przycisk **Odinstaluj**.
 
-   Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z następującej lokalizacji, gdzie *% LocalAppData%* jest zazwyczaj *dysk*: \Users\\*username*\AppData\Local:
+   Rzadko błędne rozszerzenie nie zostanie załadowane i tworzy raport w oknie błędu, ale nie jest wyświetlany w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie, usuwając plik z następującej lokalizacji, gdzie *% LocalAppData%* jest zazwyczaj *dysk*: \Users \\ *nazwa_użytkownika*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio\\[wersja] \Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio \\ [wersja] \Extensions**
 
 ## <a name="see-also"></a>Zobacz też
  [Zdefiniuj profil, aby zwiększyć UML](../modeling/define-a-profile-to-extend-uml.md) [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md) [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md) [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

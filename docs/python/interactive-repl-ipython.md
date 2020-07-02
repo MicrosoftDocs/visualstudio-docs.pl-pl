@@ -80,7 +80,7 @@ W tym instruktażu należy zainstalować środowisko [Anaconda](https://www.cont
 
 IPython ma wiele innych użytecznych funkcji, takich jak ucieczki do powłoki systemowej, podstawienia zmiennych, przechwytywania danych wyjściowych itp. Więcej informacji można znaleźć w [dokumentacji IPython](https://ipython.org/documentation.html) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - Aby korzystać z Jupyter z łatwością i bez instalacji, wypróbuj bezpłatną [Azure Notebooks hostowaną usługę](https://notebooks.azure.com/) , która umożliwia utrzymywanie i udostępnianie notesów innym osobom.
 

@@ -1,18 +1,18 @@
 ---
 title: Tworzenie struktury rozwiązania modelowania
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cc4eba7dc4d185cbd8eb4f1b073fce8b0c9fb07e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591947"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545044"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 
@@ -20,7 +20,7 @@ Aby efektywnie korzystać z modeli w projekcie deweloperskim, członkowie zespo�
 
 Aby szybko rozpocząć pracę nad projektem lub podprojektem, warto mieć szablon projektu, który następuje po wybranej strukturze projektu. W tym temacie opisano sposób tworzenia i używania takiego szablonu.
 
-W tym temacie założono, że pracujesz nad projektem, który jest wystarczająco duży, aby wymagać kilku członków zespołu, a może mieć kilka zespołów. Kod i modele projektu są przechowywane w systemie kontroli źródła, takim jak [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Co najmniej niektórzy członkowie zespołu używają programu Visual Studio do tworzenia modeli, a inni członkowie zespołu mogą wyświetlać modele przy użyciu innych wersji programu Visual Studio.
+W tym temacie założono, że pracujesz nad projektem, który jest wystarczająco duży, aby wymagać kilku członków zespołu, a może mieć kilka zespołów. Kod i modele projektu są przechowywane w systemie kontroli źródła, takich jak [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] . Co najmniej niektórzy członkowie zespołu używają programu Visual Studio do tworzenia modeli, a inni członkowie zespołu mogą wyświetlać modele przy użyciu innych wersji programu Visual Studio.
 
 Aby sprawdzić, które wersje programu Visual Studio obsługują poszczególne narzędzia i funkcje modelowania, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -72,7 +72,7 @@ W średnim lub dużym projekcie struktura zespołu opiera się na strukturze apl
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Użyj oddzielnego pakietu dla każdej warstwy
 
-1. W rozwiązaniu dla każdej warstwy Dodaj projekt z modelem architektury. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, wskaż **Dodaj**, a następnie kliknij przycisk **istniejący projekt**. Dostęp do pojedynczego projektu modelowania można teraz uzyskać z każdego rozwiązania: projektu architektury i projektu deweloperskiego dla każdej warstwy.
+1. W rozwiązaniu dla każdej warstwy Dodaj projekt z modelem architektury. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**. Dostęp do pojedynczego projektu modelowania można teraz uzyskać z każdego rozwiązania: projektu architektury i projektu deweloperskiego dla każdej warstwy.
 
 2. W modelu udostępnionym Utwórz pakiet dla każdej warstwy: w **Eksplorator rozwiązań**wybierz projekt modelowania. W **Eksploratorze modelu UML**kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **pakiet**.
 

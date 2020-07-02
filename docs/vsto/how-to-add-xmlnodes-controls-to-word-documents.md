@@ -67,7 +67,7 @@ ms.locfileid: "85543497"
 
      <xref:Microsoft.Office.Tools.Word.XMLNodes>Kontrolka jest tworzona i dodawana do projektu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Formant XMLNodes](../vsto/xmlnodes-control.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

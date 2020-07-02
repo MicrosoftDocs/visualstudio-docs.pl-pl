@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72729253d008ae5b7c38815e7c5db7636538c812
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 97f5243b775f19d77bc8d5a5c1d29fddadd9f1c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586843"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541781"
 ---
 # <a name="create-sharepoint-solutions"></a>Tworzenie rozwiązań SharePoint
   Możesz tworzyć aplikacje programu SharePoint w programie Visual Studio jako alternatywę do tworzenia ich w programie SharePoint Designer. Program Visual Studio promuje szybkie programowanie SharePoint, dostarczając takie funkcje jak zaawansowane narzędzia do debugowania, IntelliSense, Uzupełnianie składni i szablony projektów. Program Visual Studio korzysta również z zaawansowanych narzędzi i języków opartych na .NET Framework. Można opracowywać projekty programu SharePoint przy użyciu programu Visual Basic lub Visual C# i można opracowywać aplikacje dla projektów programu SharePoint przy użyciu języka JavaScript.
@@ -27,7 +27,7 @@ ms.locfileid: "82586843"
 > [!NOTE]
 > Dowiedz się, jak korzystać z nowego [modelu dodatku programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) , aby zwiększyć możliwości programu SharePoint dla użytkowników. Te dodatki mają bardzo małe rozmiary w porównaniu z rozwiązaniami programu SharePoint i można je skompilować przy użyciu prawie dowolnej technologii programowania sieci Web, takiej jak HTML5, JavaScript, CSS3 i XML.
 
-|||
+|Obszar zawartości|Artykuły|
 |-|-|
 |![Dokumentacja](../sharepoint/media/vs-icon-documentation.gif "Dokumentacja")|**Dokumentacja**<br /><br /> -   [Wprowadzenie &#40;programowanie SharePoint w programie Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Poszerzanie narzędzi programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|
 |![Dokumentacja](../sharepoint/media/vs-icon-documentation.gif "Dokumentacja")|**Polecane zadania**<br /><br /> -   [Przewodnik: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Instrukcje: Tworzenie odbiorcy zdarzeń](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Instrukcje: Tworzenie modelu usługi BDC](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Instrukcje: Tworzenie składnika Web Part programu SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Instrukcje: Tworzenie kontrolki użytkownika dla strony aplikacji lub składnika sieci Web programu SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|

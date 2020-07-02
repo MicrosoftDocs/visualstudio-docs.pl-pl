@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db619767725159900adf9b18075c45c020df888d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 907d075f597799edd582c9f2bae693eac92c0b2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670374"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544966"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ Można ukryć jakiś kod z widoku, zwijając region kodu, tak aby pojawił się 
 
  Poniższe polecenia można znaleźć w podmenu **Edytuj/konspekt** .
 
-|||
+|Polecenie|Opis|
 |-|-|
-|Ukryj zaznaczenie|(CTRL + M, CTRL + H) — zwija wybrany blok kodu, który zwykle nie jest dostępny do tworzenia konspektu, na przykład blok `if`. Aby usunąć region niestandardowy, użyj **Zatrzymaj ukrywanie bieżącego** (lub Ctrl + M, Ctrl + U). Niedostępne w Visual Basic.|
+|Ukryj zaznaczenie|(CTRL + M, CTRL + H) — zwija wybrany blok kodu, który zwykle nie jest dostępny do tworzenia konspektu, na przykład `if` blok. Aby usunąć region niestandardowy, użyj **Zatrzymaj ukrywanie bieżącego** (lub Ctrl + M, Ctrl + U). Niedostępne w Visual Basic.|
 |Przełącz rozszerzanie konspektu|-Odwraca bieżący ukryty lub rozwinięty stan wewnętrznej sekcji tworzenia konspektu, gdy kursor znajduje się w zagnieżdżonej zwijanej sekcji.|
 |Przełącz wszystkie konspekty|(CTRL + M, CTRL + L) — ustawia wszystkie regiony na ten sam stan zwinięte lub rozwinięte. Jeśli niektóre regiony są rozwinięte i zwinięte, zwijane regiony są rozwinięte.|
 |Zatrzymaj tworzenie konspektu|(CTRL + M, CTRL + P) — usuwa wszystkie informacje dotyczące tworzenia konspektu dla całego dokumentu.|
 |Przestań ukrywać bieżące|(CTRL + M, CTRL + U) — usuwa informacje z tworzenia konspektu dla aktualnie wybranego regionu zdefiniowanego przez użytkownika. Niedostępne w Visual Basic.|
 |Zwiń do definicji|(CTRL + M, CTRL + O) — zwija elementy członkowskie wszystkich typów.|
-|Zwiń blok: \<logical granicy >|(Wizualizacja C++) Zwija region w funkcji zawierającej punkt wstawiania. Na przykład, jeśli punkt wstawiania leży wewnątrz pętli, pętla jest ukryta.|
-|Zwiń wszystko w: struktury \<logical >|(Wizualizacja C++) Zwija wszystkie struktury wewnątrz funkcji.|
+|Zwiń blok:\<logical boundary>|(Visual C++) Zwija region w funkcji zawierającej punkt wstawiania. Na przykład, jeśli punkt wstawiania leży wewnątrz pętli, pętla jest ukryta.|
+|Zwiń wszystko w:\<logical structures>|(Visual C++) Zwija wszystkie struktury wewnątrz funkcji.|
 
  Możesz również użyć zestawu Visual Studio SDK, aby zdefiniować regiony tekstu, które mają zostać rozwinięte lub zwinięte. Zobacz [Przewodnik: Tworzenie konspektu](../extensibility/walkthrough-outlining.md).

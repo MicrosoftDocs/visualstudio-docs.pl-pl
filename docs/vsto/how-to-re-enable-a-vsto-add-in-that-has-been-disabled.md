@@ -73,7 +73,7 @@ ms.locfileid: "85541261"
 
 7. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)
 - [Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)

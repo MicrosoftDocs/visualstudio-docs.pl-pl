@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661063"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545265"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklaracje P/Invoke powinny być przenośne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
@@ -38,12 +38,12 @@ ms.locfileid: "72661063"
 ## <a name="rule-description"></a>Opis reguły
  Jeden z następujących scenariuszy narusza tę regułę:
 
-- Wartość zwracana lub parametr są wpisywane jako liczba całkowita o stałym rozmiarze, gdy powinna być wpisana jako `IntPtr`.
+- Wartość zwracana lub parametr są wpisywane jako liczba całkowita o stałym rozmiarze, gdy powinna być wpisana jako `IntPtr` .
 
-- Wartość zwracana lub parametr są wpisywane jako `IntPtr`, gdy powinna być wpisana jako liczba całkowita o stałym rozmiarze.
+- Wartość zwracana lub parametr są wpisywane jako typ, który `IntPtr` powinien być typem w postaci liczby całkowitej o stałym rozmiarze.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać ten problem, można użyć `IntPtr` lub `UIntPtr` do reprezentowania dojść zamiast `Int32` lub `UInt32`.
+ Możesz naprawić to naruszenie, używając `IntPtr` lub `UIntPtr` do reprezentowania dojść zamiast `Int32` lub `UInt32` .
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie należy pomijać tego ostrzeżenia.
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- W tym przykładzie parametr `nIconIndex` jest zadeklarowany jako `IntPtr`, który ma 4 bajty na platformie 32-bitowej i 8 bajtów na platformie 64-bitowej. W następującej deklaracji niezarządzanej można zobaczyć, że `nIconIndex` to 4-bajtowa liczba całkowita bez znaku na wszystkich platformach.
+ W tym przykładzie `nIconIndex` parametr jest zadeklarowany jako `IntPtr` , który ma 4 bajty na platformie 32-bitowej i 8 bajtów na platformie 64-bitowej. W następującej deklaracji niezarządzanej można zobaczyć, że `nIconIndex` jest to 4-bajtowa liczba całkowita bez znaku na wszystkich platformach.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,

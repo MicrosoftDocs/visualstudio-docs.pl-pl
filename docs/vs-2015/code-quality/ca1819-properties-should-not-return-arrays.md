@@ -15,17 +15,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c85efc3e601eb9e0d887043c50b30587e51321e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a96d2164cbd6c03cb0d191b2d0c3c4607468209c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668373"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545330"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Właściwości nie powinny zwracać tablic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
@@ -70,7 +70,7 @@ ms.locfileid: "72668373"
 ### <a name="description"></a>Opis
  Poniższy przykład naprawia naruszenie, zmieniając właściwość w celu zwrócenia
 
- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.,
+ <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedCollection/cs/FxCop.Performance.PropertyArrayFixedCollection.cs#1)]
@@ -86,11 +86,11 @@ ms.locfileid: "72668373"
  [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/vb/FxCop.Performance.PropertyModifyViolation.vb#1)]
 
 ### <a name="comments"></a>Komentarze
- Poniższy przykład naprawia naruszenie, zmieniając właściwość w celu zwrócenia <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>.
+ Poniższy przykład naprawia naruszenie, zmieniając właściwość w celu zwrócenia <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> .
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/cs/FxCop.Performance.PropertyModifyFixed.cs#1)]
  [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/vb/FxCop.Performance.PropertyModifyFixed.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1024: Używaj właściwości wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Używaj właściwości, o ile to możliwe](../code-quality/ca1024-use-properties-where-appropriate.md)

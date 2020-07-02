@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669179"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544017"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory powinny mieć poprawny przyrostek
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
@@ -44,18 +44,18 @@ ms.locfileid: "72669179"
 |------------|--------------------------|
 |Atrybut|<xref:System.Attribute?displayProperty=fullName>|
 |Kolekcja|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
-|Dictionary|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
+|Słownik|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|Delegat programu obsługi zdarzeń|
 |Wyjątek|<xref:System.Exception?displayProperty=fullName>|
 |Uprawnienie|<xref:System.Security.IPermission?displayProperty=fullName>|
-|Niej|<xref:System.Collections.Queue?displayProperty=fullName>|
+|Kolejka|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stos|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Strumień|<xref:System.IO.Stream?displayProperty=fullName>|
 
  Ponadto **nie** należy używać następujących sufiksów:
 
-- Delegate
+- Delegat
 
 - Wyliczenie
 

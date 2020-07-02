@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Ukrywanie formantów w arkuszu podczas drukowania'
+title: 'Instrukcje: ukrywanie kontrolek w arkuszach podczas drukowania'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,34 +15,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb7ee0a937e6cb901704763e1f4ead478d99e0e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419445"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544810"
 ---
-# <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Instrukcje: Ukrywanie formantów w arkuszu podczas drukowania
-  Podczas drukowania dokument programu Microsoft Office Excel, który zawiera formanty Windows Forms, formanty są widoczne na drukowanego arkusza. Można ukryć formantów podczas drukowania arkusza.
+# <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Instrukcje: ukrywanie kontrolek w arkuszach podczas drukowania
+  Podczas drukowania Microsoft Office dokumentu programu Excel, który zawiera kontrolki Windows Forms, formanty są widoczne w arkuszu wydrukowanym. Kontrolki można ukryć podczas drukowania arkusza.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
-> Jeżeli ukrywanie formantów, które wyświetlają dane, takie jak <xref:Microsoft.Office.Tools.Excel.Controls.TextBox>, nie są widoczne w arkuszu drukowanych danych w formancie.
+> Jeśli ukryjesz kontrolki, które wyświetlają dane, takie jak <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> , dane w kontrolce nie będą widoczne w drukowanym arkuszu.
 
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Ukrywanie formantów podczas arkusz zostanie wydrukowany
+## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Aby ukryć kontrolki podczas drukowania arkusza
 
-1. Utwórz lub Otwórz projekt programu Excel w programie Visual Studio i upewnij się, że **Arkusz1** jest widoczne w projektancie. Aby dowiedzieć się, jak tworzenie projektów, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz lub Otwórz projekt programu Excel w programie Visual Studio i sprawdź, czy na **arkuszu Arkusz1** jest widoczny w projektancie. Aby uzyskać informacje na temat tworzenia projektów, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Z **wspólnych formantów** karcie **przybornika**, przeciągnij <xref:Microsoft.Office.Tools.Excel.Controls.Button> kontrolować do komórki na `Sheet1`.
+2. Na karcie **Formanty standardowe** **przybornika**przeciągnij <xref:Microsoft.Office.Tools.Excel.Controls.Button> kontrolkę do komórki na `Sheet1` .
 
-3. W **właściwości** oknie <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> właściwości **False**.
+3. W oknie **Właściwości** Ustaw <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> Właściwość na **false**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
-- [Formanty Windows Forms na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Instrukcje: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [Instrukcje: Zmiana rozmiaru formantów w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Kontrolki Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Instrukcje: Dodawanie formantów Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza](../vsto/how-to-resize-controls-within-worksheet-cells.md)

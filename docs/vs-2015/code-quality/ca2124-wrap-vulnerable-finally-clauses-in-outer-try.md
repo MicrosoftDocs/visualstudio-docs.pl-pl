@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7a2a296f5dd3680209c14849b5bd863c01e6351d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e191ca10456f133e1213961ca2d1ed9cb8e040b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660247"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544303"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Kodowanie wrażliwych klauzul finally w zewnętrznym try
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Opakuj podatne na przejęcie klauzule finally w zewnętrzny blok try
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
@@ -33,16 +33,16 @@ ms.locfileid: "72660247"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- W wersjach 1,0 i 1,1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Metoda publiczna lub chroniona zawiera `try` / `catch` / `finally` bloku. Blok `finally` wydaje się resetować stan zabezpieczeń i nie znajduje się w bloku `finally`.
+ W wersjach 1,0 i 1,1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] metody publicznej lub chronionej zawiera `try` / `catch` / `finally` blok. `finally`Zostanie wyświetlony blok służący do resetowania stanu zabezpieczeń i nie jest on ujęty w `finally` bloku.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada lokalizuje `try` / `finally` bloków w kodzie, który jest przeznaczony dla wersji 1,0 i 1,1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], które mogą być podatne na złośliwe filtry wyjątków obecne w stosie wywołań. Jeśli w bloku try występują poufne operacje, takie jak personifikacja, a wyjątek jest zgłaszany, filtr można wykonać przed blokiem `finally`. W przypadku przykładu personifikacji oznacza to, że filtr będzie wykonywany jako personifikowany użytkownik. Filtry są obecnie implementowane tylko w Visual Basic.
+ Ta zasada umożliwia zlokalizowanie `try` / `finally` bloków w kodzie, które są przeznaczone dla wersji 1,0 i 1,1, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] które mogą być podatne na złośliwe filtry wyjątków obecne w stosie wywołań. Jeśli w bloku try występują poufne operacje, takie jak personifikacja, a wyjątek jest zgłaszany, filtr można wykonać przed `finally` blokiem. W przypadku przykładu personifikacji oznacza to, że filtr będzie wykonywany jako personifikowany użytkownik. Filtry są obecnie implementowane tylko w Visual Basic.
 
 > [!WARNING]
-> W wersji 2,0 i nowszych [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] środowisko uruchomieniowe automatycznie chroni `try` / `catch` /  `finally` bloku ze złośliwych filtrów wyjątków, jeśli Reset występuje bezpośrednio w metodzie zawierającej blok wyjątku.
+> W wersji 2,0 i nowszych systemu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] środowisko uruchomieniowe automatycznie chroni `try` / `catch` /  `finally` blok przed złośliwymi filtrami wyjątków, jeśli Reset występuje bezpośrednio w metodzie zawierającej blok wyjątku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Umieść nieopakowane `try` / `finally` w zewnętrznym bloku try. Zobacz drugi przykład poniżej. Powoduje to wymuszenie wykonania `finally` przed filtrowaniem kodu.
+ Umieść niezapakowany `try` / `finally` w zewnętrznym bloku try. Zobacz drugi przykład poniżej. Wymusza to `finally` wykonanie przed filtrowaniem kodu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

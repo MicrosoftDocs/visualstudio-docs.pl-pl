@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: odczytywanie i zapisywanie właściwości dokumentu'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71a4b1a84c4544f4dc2b359e391f3c9f768e8eee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985808"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541326"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Instrukcje: odczytywanie i zapisywanie właściwości dokumentu
   Można przechowywać właściwości dokumentu wraz z dokumentem. Aplikacje pakietu Office udostępniają wiele wbudowanych właściwości, takich jak autor, tytuł i temat. W tym temacie przedstawiono sposób ustawiania właściwości dokumentu w programie Microsoft Office Excel i Microsoft Office Word.
@@ -30,11 +30,11 @@ ms.locfileid: "72985808"
 ## <a name="set-document-properties-in-excel"></a>Ustawianie właściwości dokumentu w programie Excel
  Aby współpracować z wbudowanymi właściwościami w programie Excel, użyj następujących właściwości:
 
-- W projekcie na poziomie dokumentu Użyj właściwości <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> klasy `ThisWorkbook`.
+- W projekcie na poziomie dokumentu, użyj <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> właściwości `ThisWorkbook` klasy.
 
-- W projekcie dodatku VSTO Użyj właściwości <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> obiektu <xref:Microsoft.Office.Interop.Excel.Workbook>.
+- W projekcie dodatku VSTO Użyj <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> właściwości <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu.
 
-  Te właściwości zwracają obiekt <xref:Microsoft.Office.Core.DocumentProperties>, który jest kolekcją obiektów <xref:Microsoft.Office.Core.DocumentProperty>. Możesz użyć właściwości `Item` kolekcji, aby pobrać określoną właściwość, według nazwy lub indeksu w kolekcji.
+  Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiekt, który jest kolekcją <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwości kolekcji, aby pobrać określoną właściwość według nazwy lub indeksu w kolekcji.
 
   Poniższy przykład kodu pokazuje, jak zmienić wbudowaną Właściwość **numeru poprawki** w projekcie na poziomie dokumentu.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72985808"
      [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]
      [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]
 
-2. Zwiększ wartość właściwości `Revision Number` o jeden.
+2. Zwiększ `Revision Number` Właściwość o jeden.
 
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
@@ -53,11 +53,11 @@ ms.locfileid: "72985808"
 ## <a name="set-document-properties-in-word"></a>Ustawianie właściwości dokumentu w programie Word
  Aby współpracować z wbudowanymi właściwościami w programie Word, użyj następujących właściwości:
 
-- W projekcie na poziomie dokumentu Użyj właściwości <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> klasy `ThisDocument`.
+- W projekcie na poziomie dokumentu, użyj <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> właściwości `ThisDocument` klasy.
 
-- W projekcie dodatku VSTO Użyj właściwości <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> obiektu <xref:Microsoft.Office.Interop.Word.Document>.
+- W projekcie dodatku VSTO Użyj <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> właściwości <xref:Microsoft.Office.Interop.Word.Document> obiektu.
 
-  Te właściwości zwracają obiekt <xref:Microsoft.Office.Core.DocumentProperties>, który jest kolekcją obiektów <xref:Microsoft.Office.Core.DocumentProperty>. Możesz użyć właściwości `Item` kolekcji, aby pobrać określoną właściwość, według nazwy lub indeksu w kolekcji.
+  Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiekt, który jest kolekcją <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwości kolekcji, aby pobrać określoną właściwość według nazwy lub indeksu w kolekcji.
 
   Poniższy przykład kodu pokazuje, jak zmienić wbudowaną Właściwość **subject** w projekcie na poziomie dokumentu.
 
@@ -68,13 +68,13 @@ ms.locfileid: "72985808"
      [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]
 
-2. Zmień właściwość `Subject` na "oficjalny dokument".
+2. Zmień `Subject` Właściwość na "oficjalny dokument".
 
      [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]
      [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]
 
 ## <a name="robust-programming"></a>Niezawodne programowanie
- W przykładach założono, że Zapisano kod w klasie `ThisWorkbook` w projekcie na poziomie dokumentu dla programu Excel, a Klasa `ThisDocument` w projekcie na poziomie dokumentu dla programu Word.
+ W przykładach założono, że Zapisano kod w `ThisWorkbook` klasie w projekcie na poziomie dokumentu dla programu Excel, a `ThisDocument` Klasa w projekcie na poziomie dokumentu dla programu Word.
 
  Chociaż pracujesz z programami Word i Excel i ich obiektami, Microsoft Office dostarcza listę dostępnych wbudowanych właściwości dokumentu. Próba uzyskania dostępu do niezdefiniowanej właściwości wywołuje wyjątek.
 

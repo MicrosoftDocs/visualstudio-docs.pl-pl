@@ -12,17 +12,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28535db3e129029d6767ac969d121ee4cbb1aec5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 750ce3cbcae593aee315998ec8b205a71e004d41
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416544"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543052"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`CommentMarkProfile` Funkcji wstawia znacznik liczbowe i ciągu tekstowego w pliku Vsp. Dla tego znaku i komentarz do wstawienia, profilowania dla wątku, który zawiera `CommentMarkProfile` funkcja musi być włączone.  
+`CommentMarkProfile`Funkcja Wstawia znacznik liczbowy i ciąg tekstowy w pliku. vsp. Dla znacznika i komentarza, który ma zostać wstawiony, Profilowanie wątku, który zawiera `CommentMarkProfile` funkcję, musi być włączone.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,46 +35,46 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 #### <a name="parameters"></a>Parametry  
  `lMarker`  
   
- Znacznik liczbowych do wstawienia. Znacznik muszą być większe niż lub równa 0 (zero).  
+ Znacznik liczbowy do wstawienia. Znacznik musi być większy lub równy 0 (zero).  
   
  `szComment`  
   
- Wskaźnik do ciągu tekstowego do wstawienia. Ciąg musi być mniejsza niż 256 znaków, w tym terminator o wartości NULL.  
+ Wskaźnik na ciąg tekstowy, który ma zostać wstawiony. Ciąg musi być krótszy niż 256 znaków, łącznie z terminatorem o wartości NULL.  
   
 ## <a name="property-valuereturn-value"></a>Wartość właściwości/Zwracana wartość  
- Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
+ Funkcja wskazuje powodzenie lub niepowodzenie przy użyciu wyliczenia **PROFILE_COMMAND_STATUS** . Zwracana wartość może być jedną z następujących:  
   
-|Moduł wyliczający|Opis|  
+|Liczeni|Opis|  
 |----------------|-----------------|  
-|MARK_ERROR_MARKER_RESERVED|Parametr jest mniejsza lub równa 0. Te wartości są zastrzeżone. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_MODE_NEVER|W trybie profilowania zostało ustawione na nigdy nie w przypadku, gdy funkcja została wywołana. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_MODE_OFF|W trybie profilowania zostało ustawione na OFF, gdy funkcja została wywołana. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_NO_SUPPORT|Brak obsługi znacznik, w tym kontekście. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_OUTOFMEMORY|Pamięć nie jest dostępny do rejestrowania zdarzenia. Znak i komentarzy nie są rejestrowane.|  
-|MARK_TEXTTOOLONG|Ciąg przekracza maksymalnie 256 znaków. Ciąg komentarza zostanie obcięta i znacznika i komentarz są rejestrowane.|  
-|MARK_OK|MARK_OK jest zwracany do wskazania sukcesu.|  
+|MARK_ERROR_MARKER_RESERVED|Parametr jest mniejszy lub równy 0. Te wartości są zarezerwowane. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_ERROR_MODE_NEVER|Tryb profilowania został ustawiony tak, aby nigdy nie był wywoływany przez funkcję. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_ERROR_MODE_OFF|Tryb profilowania został ustawiony na OFF, gdy funkcja została wywołana. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_ERROR_NO_SUPPORT|Brak obsługi znacznika w tym kontekście. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_ERROR_OUTOFMEMORY|Pamięć nie jest dostępna do rejestrowania zdarzenia. Znacznik i komentarz nie są rejestrowane.|  
+|MARK_TEXTTOOLONG|Ciąg przekracza maksymalną 256 znaków. Ciąg komentarza jest obcinany, a znacznik i komentarz są rejestrowane.|  
+|MARK_OK|MARK_OK jest zwracany, aby wskazać powodzenie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Stan profilowania dla wątku, który zawiera funkcję profilu znacznika musi być na, jeśli znaczniki i komentarze wstawione za pomocą polecenia VSInstr znaku lub za pomocą funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).  
+ Stan profilowania wątku, który zawiera funkcję profilu znacznika, musi być włączony, gdy znaczniki i komentarze są wstawiane za pomocą polecenia VSInstr Mark lub funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).  
   
- Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jednym wątku może służyć do oznaczania początku lub końcu segmentu data w żadnym z wątków w pliku Vsp.  
+ Znaczniki profilów są globalne w zakresie. Na przykład znacznik profilu wstawiony w jednym wątku może służyć do oznaczania początku lub końca segmentu danych w dowolnym wątku w pliku. vsp.  
   
 > [!IMPORTANT]
-> Metoda CommentMarkProfile należy używać tylko z Instrumentacją.  
+> Metody CommentMarkProfile można używać tylko z instrumentacją.  
   
 ## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informacje o funkcji  
   
-|||  
+|Element|Wartość|  
 |-|-|  
-|**Nagłówek**|Include VSPerf.h|  
-|**Biblioteka**|Use VSPerf.lib|  
+|**Nagłówki**|Uwzględnij VSPerf. h|  
+|**Biblioteka**|Użyj VSPerf. lib|  
 |**Unicode**|Zaimplementowane jako `CommentMarkProfileW` (Unicode) i `CommentMarkProfileA` (ANSI).|  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod ilustruje CommentMarkProfile wywołania funkcji. W przykładzie założono użycie makra ciągu Win32 i ustawienia kompilatora Unicode w celu ustalenia, czy kod wywołuje [!INCLUDE[vcpransi](../includes/vcpransi-md.md)] wywołania funkcji.  
+ Poniższy kod ilustruje wywołanie funkcji CommentMarkProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora Unicode do określenia, czy kod wywołuje [!INCLUDE[vcpransi](../includes/vcpransi-md.md)] wywołanie funkcji.  
   
 ```  
 void ExerciseCommentMarkProfile()  
@@ -113,4 +113,4 @@ void ExerciseCommentMarkProfile()
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dokumentacja interfejsów API profilera programu Visual Studio (natywnych)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,7 +1,7 @@
 ---
-title: '&lt;postactions —&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;postActions — &gt; element (Programowanie Office w Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 548396e6393720824c93c07e55046ec2d91797a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561478"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544420"
 ---
-# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postactions —&gt; — element (Office development w programie Visual Studio)
-  `postActions` Elementu `vstav3` przestrzeń nazw zawiera wszystkie `postAction` elementy, które opisują działania po wdrożeniu, uruchamianych po zainstalowaniu rozwiązania dla pakietu Office.
+# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions — &gt; element (Programowanie Office w Visual Studio)
+  `postActions`Element `vstav3` przestrzeni nazw zawiera wszystkie `postAction` elementy opisujące akcje po wdrożeniu, które są uruchamiane po zainstalowaniu rozwiązań pakietu Office.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,20 +37,20 @@ ms.locfileid: "62561478"
 </postActions>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `postActions` Elementu jest opcjonalna i jest on `vstav3` przestrzeni nazw. Jest tylko jedna `postActions` elementu zdefiniowanego w manifeście aplikacji.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `postActions`Element jest opcjonalny i znajduje się w `vstav3` przestrzeni nazw. `postActions`W manifeście aplikacji jest zdefiniowany tylko jeden element.
 
- `postActions` Element nie ma żadnych atrybutów.
+ `postActions`Element nie ma żadnych atrybutów.
 
- `postActions` ma następujący element.
+ `postActions`ma następujący element.
 
 ### <a name="postaction"></a>postAction
- Opcjonalna. Rola `postAction` element `vstav3` przestrzeń nazw została zdefiniowana w [ &#60;postAction&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
+ Opcjonalny. Rola `postAction` elementu w `vstav3` przestrzeni nazw jest definiowana w [&#60;postAction&#62; elementu &#40;programowanie Office w&#41;programu Visual Studio ](../vsto/postaction-element-office-development-in-visual-studio.md).
 
-## <a name="post-deployment-action-example"></a>Przykład akcję powdrożeniową
+## <a name="post-deployment-action-example"></a>Przykład akcji wykonywanej po wdrożeniu
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `postActions` elementu w manifeście aplikacji dla rozwiązań pakietu Office, wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `postActions` element w manifeście aplikacji dla rozwiązania pakietu Office wdrożonego za pomocą programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 

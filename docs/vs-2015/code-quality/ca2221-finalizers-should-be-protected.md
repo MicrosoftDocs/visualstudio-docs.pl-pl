@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e30dd2945820a61aa7c96d4e6c6fd59354e0c3ae
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651958"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540741"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizatory powinny być chronione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
@@ -36,7 +36,7 @@ ms.locfileid: "72651958"
  Typ publiczny implementuje finalizator, który nie określa dostępu rodziny (chronione).
 
 ## <a name="rule-description"></a>Opis reguły
- Finalizatory muszą korzystać z modyfikatora dostępu „family”. Ta reguła jest wymuszana przez C#kompilatory, Visual Basic i C++ wizualizacje.
+ Finalizatory muszą korzystać z modyfikatora dostępu „family”. Ta reguła jest wymuszana przez kompilatory C#, Visual Basic i Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zmienić finalizator na dostęp do rodziny.

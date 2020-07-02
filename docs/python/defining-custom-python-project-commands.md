@@ -2,7 +2,7 @@
 title: Definiowanie niestandardowych poleceń menu dla projektów języka Python
 description: Edytując pliki projektu i elementów docelowych, można dodawać niestandardowe polecenia do menu kontekstowego projektu języka Python w programie Visual Studio, aby wywoływać programy wykonywalne, skrypty, moduły, fragmenty kodu wbudowane i PIP.
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aee42648eb4a2de3611d20fc0ca83ff898ad1fa9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183083"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540871"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definiowanie poleceń niestandardowych dla projektów języka Python
 
@@ -42,7 +42,7 @@ Każde polecenie niestandardowe może odwoływać się do pliku języka Python, 
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>Przewodnik: Dodawanie polecenia do pliku projektu
 
-Aby zaznajomić się z poleceniami niestandardowymi, w tej sekcji przedstawiono prosty przykład, który uruchamia plik startowy projektu bezpośrednio przy użyciu języka *Python. exe*. (Takie polecenie jest efektywnie takie samo jak w przypadku **debugowania**  >  **Uruchom bez debugowania**).
+Aby zaznajomić się z poleceniami niestandardowymi, w tej sekcji przedstawiono prosty przykład, który uruchamia plik startowy projektu bezpośrednio przy użyciu *python.exe*. (Takie polecenie jest efektywnie takie samo jak w przypadku **debugowania**  >  **Uruchom bez debugowania**).
 
 1. Utwórz nowy projekt o nazwie "Python-CustomCommands" przy użyciu szablonu **aplikacji języka Python** . (Zobacz [Szybki Start: Tworzenie projektu w języku Python na podstawie szablonu,](quickstart-02-python-in-visual-studio-project-from-template.md) Aby uzyskać instrukcje, jeśli jeszcze nie znasz tego procesu).
 
@@ -62,7 +62,7 @@ Aby zaznajomić się z poleceniami niestandardowymi, w tej sekcji przedstawiono 
 
 1. Wróć do programu Visual Studio i wybierz pozycję **Załaduj ponownie** , gdy zostanie wyświetlony komunikat z prośbą o zmianę pliku. Następnie sprawdź ponownie menu **Python** , aby zobaczyć, że polecenie **Run PyLint** jest nadal jedynym widocznym elementem, ponieważ dodane przez siebie wiersze zawierają tylko replikę domyślnej `<PythonCommands>` grupy właściwości zawierającej polecenia PyLint.
 
-1. Przejdź do edytora przy użyciu pliku projektu i Dodaj następującą `<Target>` definicję po `<PropertyGroup>` . Jak wyjaśniono w dalszej części tego artykułu, ten `Target` element definiuje niestandardowe polecenie do uruchamiania pliku startowego (identyfikowanego przez właściwość "StartupFile") przy użyciu języka *Python. exe* w oknie konsoli. Ten atrybut `ExecuteIn="consolepause"` używa konsoli, która czeka na naciśnięcie klawisza przed zamknięciem.
+1. Przejdź do edytora przy użyciu pliku projektu i Dodaj następującą `<Target>` definicję po `<PropertyGroup>` . Jak wyjaśniono w dalszej części tego artykułu, ten `Target` element definiuje niestandardowe polecenie do uruchamiania pliku startowego (identyfikowanego przez właściwość "StartupFile") przy użyciu *python.exe* w oknie konsoli. Ten atrybut `ExecuteIn="consolepause"` używa konsoli, która czeka na naciśnięcie klawisza przed zamknięciem.
 
     ```xml
     <Target Name="Example_RunStartupFile" Label="Run startup file" Returns="@(Commands)">
@@ -143,13 +143,13 @@ Wszystkie wartości atrybutów nie uwzględnia wielkości liter.
 
 | Atrybut | Wymagane | Opis |
 | --- | --- | --- |
-| Typ | Tak | Określa, co zawiera atrybut target i jak jest używany wraz z atrybutem arguments:<ul><li>**plik wykonywalny**: Uruchom plik wykonywalny o nazwie in Target, dołączając wartość w argumentach, tak jak w przypadku wprowadzenia bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom język *Python. exe* z nazwą pliku w miejscu docelowym, a następnie z wartością w argumentach.</li><li>**moduł**: przebieg `python -m` , po którym następuje nazwa modułu w miejscu docelowym, a następnie wartość w argumentach.</li><li>**kod**: Uruchom wbudowany kod zawarty w elemencie docelowym. Wartość argumentów jest ignorowana.</li><li>**PIP**: przebieg `pip` przy użyciu polecenia w elemencie Target, a następnie argumentów; to Execute jest ustawione na "output", jednak PIP przyjmuje `install` polecenie i używa elementu Target jako nazwy pakietu.</li></ul> |
+| Typ | Tak | Określa, co zawiera atrybut target i jak jest używany wraz z atrybutem arguments:<ul><li>**plik wykonywalny**: Uruchom plik wykonywalny o nazwie in Target, dołączając wartość w argumentach, tak jak w przypadku wprowadzenia bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom *python.exe* z nazwą pliku w miejscu docelowym, a następnie z wartością w argumentach.</li><li>**moduł**: przebieg `python -m` , po którym następuje nazwa modułu w miejscu docelowym, a następnie wartość w argumentach.</li><li>**kod**: Uruchom wbudowany kod zawarty w elemencie docelowym. Wartość argumentów jest ignorowana.</li><li>**PIP**: przebieg `pip` przy użyciu polecenia w elemencie Target, a następnie argumentów; to Execute jest ustawione na "output", jednak PIP przyjmuje `install` polecenie i używa elementu Target jako nazwy pakietu.</li></ul> |
 | Środowisko docelowe | Tak | Nazwa pliku, nazwę modułu, kod lub polecenie PIP, które ma być używane, w zależności od TargetType. |
-| Argumenty | Opcjonalne | Określa ciąg argumentów (jeśli istnieją) do przekazania do obiektu docelowego. Należy pamiętać, że gdy TargetType ma wartość `script` , argumenty są przekazywane do programu w języku Python, a nie *Python. exe*. Zignorowano dla `code` TargetType. |
+| Argumenty | Opcjonalne | Określa ciąg argumentów (jeśli istnieją) do przekazania do obiektu docelowego. Należy pamiętać, że gdy TargetType ma wartość `script` , argumenty są przydawane do programu w języku Python, a nie *python.exe*. Zignorowano dla `code` TargetType. |
 | Wykonaj | Tak | Określa środowisko, w którym należy uruchomić polecenie:<ul><li>**konsola**: (domyślnie) uruchamia obiekt docelowy i argumenty, tak jak w przypadku wprowadzania ich bezpośrednio w wierszu polecenia. Okno polecenia pojawia się, gdy obiekt docelowy jest uruchomiony, a następnie jest zamykane automatycznie.</li><li>**consolepause**: taki sam jak konsola, ale czeka na naciśnięcie przed zamknięciem okna.</li><li>**Output**: uruchamia obiekt docelowy i wyświetla jego wyniki w oknie **danych wyjściowych** w programie Visual Studio. Jeśli TargetType jest "PIP", program Visual Studio używa elementu docelowego jako nazwy pakietu i dołącza argumenty.</li><li>**REPL**: uruchamia cel w oknie [interaktywnym języka Python](python-interactive-repl-in-visual-studio.md) ; opcjonalna nazwa wyświetlana jest używana dla tytułu okna.</li><li>**Brak**: działa tak samo jak konsola.</li></ul>|
 | WorkingDirectory | Opcjonalne | Folder, w którym ma zostać uruchomione polecenie. |
 | ErrorRegex<br>WarningRegEx | Opcjonalne | Używane tylko wtedy, gdy jest wykonywane `output` . Obie wartości określają wyrażenie regularne, za pomocą którego program Visual Studio analizuje dane wyjściowe polecenia w celu wyświetlenia błędów i ostrzeżeń w jego oknie **Lista błędów** . Jeśli nie zostanie określony, polecenie nie ma wpływu na okno **Lista błędów** . Aby uzyskać więcej informacji na temat oczekiwań programu Visual Studio, zobacz [nazwane grupy przechwytywania](#named-capture-groups-for-regular-expressions). |
-| RequiredPackages | Opcjonalne | Lista wymagań pakietu dla polecenia przy użyciu takiego samego formatu jak [*Requirements. txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (PIP.readthedocs.IO). Polecenie **Uruchom PyLint** , na przykład `pylint>=1.0.0` . Przed uruchomieniem polecenia program Visual Studio sprawdza, czy wszystkie pakiety na liście są zainstalowane. Program Visual Studio używa narzędzia PIP, aby zainstalować brakujące pakiety. |
+| RequiredPackages | Opcjonalne | Lista wymagań pakietu dla polecenia przy użyciu tego samego formatu co [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (PIP.readthedocs.IO). Polecenie **Uruchom PyLint** , na przykład `pylint>=1.0.0` . Przed uruchomieniem polecenia program Visual Studio sprawdza, czy wszystkie pakiety na liście są zainstalowane. Program Visual Studio używa narzędzia PIP, aby zainstalować brakujące pakiety. |
 | Środowisko | Opcjonalne | Ciąg zmiennych środowiskowych do zdefiniowania przed uruchomieniem polecenia. Każda zmienna używa formularza \<NAME> = \<VALUE> z wieloma zmiennymi oddzielonymi średnikami. Zmienna z wieloma wartościami musi być zawarta w pojedynczym lub podwójnym cudzysłowie, jak w polu "NAME = WARTOŚĆ1; WARTOŚĆ2 ". |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>Nazwane grupy przechwytywania dla wyrażeń regularnych
@@ -306,7 +306,7 @@ Aby poznać sposób definiowania poleceń **serwer początkowy** i **Uruchom ser
   </Target>
 ```
 
-*Z [fxthomas/example. pyproj. XML](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używany z uprawnieniem.*
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używany z uprawnieniem.*
 
 ### <a name="generate-windows-installer"></a>Generuj Instalator Windows
 
@@ -325,7 +325,7 @@ Aby poznać sposób definiowania poleceń **serwer początkowy** i **Uruchom ser
   </Target>
 ```
 
-*Z [fxthomas/example. pyproj. XML](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używany z uprawnieniem.*
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używany z uprawnieniem.*
 
 ### <a name="generate-wheel-package"></a>Generuj pakiet kółka
 
@@ -345,7 +345,7 @@ Aby poznać sposób definiowania poleceń **serwer początkowy** i **Uruchom ser
 </Target>
 ```
 
-*Z [fxthomas/example. pyproj. XML](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używany z uprawnieniem.*
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), używany z uprawnieniem.*
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
@@ -390,4 +390,4 @@ Prawdopodobnie próbujesz uruchomić polecenie konsoli za pomocą programu `Exec
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>Polecenie wykonywalne "nie jest rozpoznawane jako polecenie wewnętrzne lub zewnętrzne, program wykonywalny lub plik wsadowy"
 
-W przypadku używania `TargetType="executable"` , wartość w `Target` musi być *tylko* nazwą programu bez żadnych argumentów, takich jak *Python* lub *Python. exe* . Przenieś wszystkie argumenty do `Arguments` atrybutu.
+W przypadku używania `TargetType="executable"` , wartość w `Target` musi mieć *tylko* nazwę programu bez żadnych argumentów, takich jak *Python* lub *python.exe* . Przenieś wszystkie argumenty do `Arguments` atrybutu.

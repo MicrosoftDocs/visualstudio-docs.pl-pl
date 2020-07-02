@@ -1,5 +1,5 @@
 ---
-title: Uruchom Store apps
+title: Uruchom aplikacje ze sklepu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,26 +14,26 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d5dfe0d5e5e9af35334629bd2bcd27f414dac11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ac3e8ec68553159972e88538d8a4bc1ec49ce50
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154188"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540312"
 ---
-# <a name="run-store-apps-from-visual-studio"></a>Uruchamianie aplikacji Store za pomocą programu Visual Studio
+# <a name="run-store-apps-from-visual-studio"></a>Uruchamianie aplikacji ze Sklepu w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Store aplikacje działają na szeroką gamę urządzeń, a program Visual Studio zapewnia wiele sposobów, aby uruchomić i korzystać z tych aplikacji. Środowisko "F5" jest ulepszone, aby ułatwić debugowanie, profilowanie i testowanie aplikacji podczas programowania.
+Aplikacje ze sklepu działają na wielu urządzeniach, a program Visual Studio zapewnia wiele sposobów uruchamiania i korzystania z tych aplikacji. Środowisko "F5" zostało ulepszone, aby ułatwić debugowanie, profilowanie i testowanie aplikacji podczas opracowywania.
 
  ![Uruchom degugging i wybierz element docelowy](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-|||
+|Tytuł|Opis|
 |-|-|
-|[Uruchamianie aplikacji ze Sklepu Windows na komputerze lokalnym](../debugger/run-windows-store-apps-on-the-local-machine.md)|Uruchom aplikację Windows Store na urządzeniu z programu Visual Studio.|
-|[Uruchamianie aplikacji ze Sklepu Windows w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md)|Uruchamianie aplikacji Windows Store w oknie pulpitu, która symuluje [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funkcje, takie jak Dotyk i orientacji.|
-|[Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej](../debugger/run-windows-store-apps-on-a-remote-machine.md)|Wdrażanie i uruchamianie aplikacji Windows Store na urządzeniu, do którego jest podłączona do maszyny programu Visual Studio, za pośrednictwem sieci lub bezpośrednio za pomocą kabla Ethernet.|
-|[Uruchamianie aplikacji systemu Windows Phone w emulatorze](../debugger/run-windows-phone-apps-in-the-emulator.md)|Uruchom aplikację Windows Store, w oknie pulpitu, która symuluje Windows Phone.|
-|[Wdrażanie aplikacji ze Sklepu Windows w programie Visual Studio](../debugger/deploy-windows-store-apps-from-visual-studio.md)|Wdróż i Zarejestruj swoją aplikację Windows Store na urządzeniu do testowania zapytań ad-hoc.|
+|[Uruchamianie aplikacji ze Sklepu Windows na maszynie lokalnej](../debugger/run-windows-store-apps-on-the-local-machine.md)|Uruchom aplikację ze sklepu Windows na urządzeniu z programem Visual Studio.|
+|[Uruchamianie aplikacji ze Sklepu Windows w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md)|Uruchom aplikację ze sklepu Windows w oknie pulpitu, która symuluje [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funkcje, takie jak dotyk i Orientacja.|
+|[Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej](../debugger/run-windows-store-apps-on-a-remote-machine.md)|Wdróż i uruchom aplikację ze sklepu Windows na urządzeniu połączonym z maszyną programu Visual Studio za pośrednictwem sieci lub bezpośrednio za pośrednictwem kabla Ethernet.|
+|[Uruchamianie aplikacji systemu Windows Phone w emulatorze](../debugger/run-windows-phone-apps-in-the-emulator.md)|Uruchom aplikację ze sklepu Windows w oknie pulpitu, która symuluje Windows Phone.|
+|[Wdrażanie aplikacji ze Sklepu Windows w programie Visual Studio](../debugger/deploy-windows-store-apps-from-visual-studio.md)|Wdróż i zarejestruj aplikację ze sklepu Windows na urządzeniu na potrzeby testowania ad hoc.|

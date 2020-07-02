@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9297ea0bb24eed54d0134a5f3c0fce87e6757adb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4adcae1c1cc616cdbcf5a7aa15342d221c2f4300
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662886"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540585"
 ---
-# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nie dostarczaj niepublikowanych formatów zasobów
+# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nie publikuj zasobów w formatach z wersji wstępnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |CheckId|CA2228|
@@ -33,13 +33,13 @@ ms.locfileid: "72662886"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Plik zasobów został utworzony przy użyciu wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], która nie jest obecnie obsługiwana.
+ Plik zasobów został utworzony przy użyciu wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , która nie jest obecnie obsługiwana.
 
 ## <a name="rule-description"></a>Opis reguły
- Pliki zasobów, które zostały skompilowane przy użyciu wersji wstępnych [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] nie mogą być używane przez obsługiwane wersje .NET Framework.
+ Pliki zasobów, które zostały skompilowane przy użyciu wersji wstępnych programu, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] nie mogą być używane przez obsługiwane wersje .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, skompiluj zasób przy użyciu obsługiwanej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]k.
+ Aby naprawić naruszenie tej reguły, skompiluj zasób przy użyciu obsługiwanej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] k.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.

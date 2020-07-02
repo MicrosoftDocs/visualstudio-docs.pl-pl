@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0ae271b116b372d4ae732d97ff3f9651ff9db426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 401aa6f5ebec4dac99bedba6f12478c7c48d1dc5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643300"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540819"
 ---
-# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: Konstruktory domyślne muszą być co najmniej tak krytyczne, jak podstawowe konstruktory domyślne
+# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: Konstruktory domyślne muszą być co najmniej tak krytyczne jak konstruktory domyślne typu podstawowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DefaultConstructorsMustHaveConsistentTransparency|
 |CheckId|CA2132|
@@ -35,7 +35,7 @@ ms.locfileid: "72643300"
  Atrybut przezroczystości domyślnego konstruktora klasy pochodnej nie jest tak krytyczny jak przezroczystość klasy bazowej.
 
 ## <a name="rule-description"></a>Opis reguły
- W kodzie aplikacji Silverlight nie można używać typów i elementów członkowskich, których <xref:System.Security.SecurityCriticalAttribute>. Krytyczne dla bezpieczeństwa typy i składowe mogą być używane tylko przez zaufany kod w środowisku .NET Framework dla biblioteki klas Silverlight. Ze względu na to, że publiczna lub chroniona konstrukcja w klasie pochodnej musi mieć taką samą lub większą przejrzystość jak jej klasa bazowa, klasy w aplikacji nie mogą pochodzić z klasy oznaczonej jako SecurityCritical.
+ Typy i elementy członkowskie, które mają <xref:System.Security.SecurityCriticalAttribute> nie mogą być używane przez kod aplikacji Silverlight. Krytyczne dla bezpieczeństwa typy i składowe mogą być używane tylko przez zaufany kod w środowisku .NET Framework dla biblioteki klas Silverlight. Ze względu na to, że publiczna lub chroniona konstrukcja w klasie pochodnej musi mieć taką samą lub większą przejrzystość jak jej klasa bazowa, klasy w aplikacji nie mogą pochodzić z klasy oznaczonej jako SecurityCritical.
 
  W przypadku kodu platformy CoreCLR, jeśli typ podstawowy ma publiczny lub chroniony nieprzezroczysty Konstruktor domyślny, typ pochodny musi przestrzegać reguł dziedziczenia konstruktora domyślnego. Typ pochodny musi również mieć konstruktora domyślnego i ten konstruktor musi być co najmniej jako krytyczny domyślny Konstruktor typu podstawowego.
 
@@ -43,7 +43,7 @@ ms.locfileid: "72643300"
  Aby naprawić naruszenie, Usuń typ lub nie pochodzą od zabezpieczeń nieprzezroczystego typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń z tej reguły. Naruszenia tej reguły według kodu aplikacji spowodują odmowę CoreCLR załadowania typu z <xref:System.TypeLoadException>.
+ Nie pomijaj ostrzeżeń z tej reguły. Naruszenia tej reguły przez kod aplikacji spowodują odmowę załadowania typu za pomocą elementu CoreCLR <xref:System.TypeLoadException> .
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Security.CA2132.DefaultConstructorsMustHaveConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2132.defaultconstructorsmusthaveconsistenttransparency/cs/ca2132 - defaultconstructorsmusthaveconsistenttransparency.cs#1)]

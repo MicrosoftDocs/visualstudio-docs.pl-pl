@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ccc439e0d84d1fced4ba0359385a6964356d5df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 223b2ff9aa25ddd94a3c62eb9e641127a1cace4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668449"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543822"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Unikaj niewywołanego kodu prywatnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
@@ -41,7 +41,7 @@ ms.locfileid: "72668449"
 
 - Konstruktory serializacji.
 
-- Metody oznaczone <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> lub <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Metody oznaczone atrybutem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> or <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> .
 
 - Elementy członkowskie, które są zastępują.
 
@@ -57,6 +57,6 @@ ms.locfileid: "72668449"
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Dokonaj przeglądu nieużywanych parametrów](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Usuwaj nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)

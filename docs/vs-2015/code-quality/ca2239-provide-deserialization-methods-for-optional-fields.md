@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5604b697af1716e918f3a0f6d9a26ddbe70fc0b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfbb9082d557c8e67ddebf0237293364d54a65cf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672955"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545135"
 ---
-# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Dostarcz metody deserializacji pól opcjonalnych
+# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Udostępnij metody deserializacji dla pól opcjonalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
@@ -33,10 +33,10 @@ ms.locfileid: "72672955"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Typ ma pole oznaczone atrybutem <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName>, a typ nie zapewnia metod obsługi zdarzeń deserializacji.
+ Typ ma pole oznaczone <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> atrybutem, a typ nie zapewnia metod obsługi zdarzeń deserializacji.
 
 ## <a name="rule-description"></a>Opis reguły
- Atrybut <xref:System.Runtime.Serialization.OptionalFieldAttribute> nie ma wpływu na serializację; pole oznaczone atrybutem jest serializowane. Jednak pole jest ignorowane podczas deserializacji i zachowuje wartość domyślną skojarzoną z jej typem. Procedury obsługi zdarzeń deserializacji należy zadeklarować, aby ustawić pole podczas procesu deserializacji.
+ <xref:System.Runtime.Serialization.OptionalFieldAttribute>Atrybut nie ma wpływu na Serializacja; pole oznaczone atrybutem jest serializowane. Jednak pole jest ignorowane podczas deserializacji i zachowuje wartość domyślną skojarzoną z jej typem. Procedury obsługi zdarzeń deserializacji należy zadeklarować, aby ustawić pole podczas procesu deserializacji.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Dodaj do typu metody obsługi zdarzeń deserializacji.
@@ -51,16 +51,16 @@ ms.locfileid: "72672955"
  [!code-vb[FxCop.Usage.OptionalFields#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OptionalFields/vb/FxCop.Usage.OptionalFields.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2236: Wywołuj metody klasy podstawowej w typach ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Wywołuj metody klasy bazowej dla typów ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240: Zaimplementuj poprawnie interfejs ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+ [CA2240: Poprawnie zaimplementuj interfejs ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
  [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238: Zaimplementuj poprawnie metody serializacji](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+ [CA2238: Poprawnie implementuj metody serializacji](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
  [CA2235: Oznacz wszystkie pola nieprzeznaczone do serializacji](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: Oznacz typy ISerializable za pomocą atrybutu SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
  [CA2120: Zabezpiecz konstruktory serializacji](../code-quality/ca2120-secure-serialization-constructors.md)

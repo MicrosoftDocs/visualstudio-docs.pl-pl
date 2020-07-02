@@ -2,7 +2,7 @@
 title: Debugowanie kodu w języku Python na komputerach zdalnych z systemem Linux
 description: Program Visual Studio umożliwia debugowanie kodu w języku Python uruchomionego na komputerach zdalnych z systemem Linux, w tym niezbędnych kroków konfiguracji, zabezpieczenia i rozwiązywanie problemów.
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2628bfe669af2cd02e79ffbf0c7ec1d5dcf0e98
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285690"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541085"
 ---
 Program Visual Studio może uruchamiać i debugować aplikacje języka Python lokalnie i zdalnie na komputerze z systemem Windows (zobacz [debugowanie zdalne](../../../debugger/remote-debugging.md)). Może on również debugować zdalnie w innym systemie operacyjnym, urządzeniu lub implementacji języka Python innym niż CPython za pomocą [biblioteki ptvsd](https://pypi.python.org/pypi/ptvsd).
 

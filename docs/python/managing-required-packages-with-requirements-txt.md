@@ -1,8 +1,8 @@
 ---
 title: Zarządzanie zależnościami pakietów za pomocą pliku requirements.txt
-description: Plik requirements.txt opisuje zależności projektu. Jeśli otrzymasz projekt, który zawiera plik requirements.txt, można łatwo zainstalować te zależności w jednym kroku.
+description: Plik requirements.txt opisuje zależności projektu. Jeśli zostanie wyświetlony projekt zawierający plik requirements.txt, można łatwo zainstalować te zależności w jednym kroku.
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,36 +10,36 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9179ca2b77e7a6d3ae5b5dffded06524114a0f8d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62535726"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544121"
 ---
-# <a name="manage-required-packages-with-requirementstxt"></a>Zarządzanie wymaganymi pakietami z plikem requirements.txt
+# <a name="manage-required-packages-with-requirementstxt"></a>Zarządzaj wymaganymi pakietami za pomocą requirements.txt
 
-Jeśli udostępniasz projekt innym osobom, użyj systemu kompilacji lub planujesz skopiować projekt do innej lokalizacji, w której musisz przywrócić środowisko, musisz określić pakiety zewnętrzne, których wymaga projekt. Zalecane podejście jest użycie [pliku requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), który zawiera listę poleceń dla pip, który instaluje wymagane wersje pakietów zależnych. Najczęstszym poleceniem `pip freeze > requirements.txt`jest , który rejestruje bieżącą listę pakietów środowiska w *pliku requirements.txt*.
+Jeśli projekt jest współużytkowany z innymi osobami, należy użyć systemu kompilacji lub zaplanować skopiowanie projektu do innej lokalizacji, w której należy przywrócić środowisko, należy określić pakiety zewnętrzne wymagane przez ten projekt. Zalecanym podejściem jest użycie [plikurequirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierającego listę poleceń dla narzędzia PIP instalującego wymagane wersje pakietów zależnych. Najbardziej typowym poleceniem jest `pip freeze > requirements.txt` , które rejestruje listę bieżących pakietów środowiska w *requirements.txt*.
 
-Technicznie każda nazwa pliku może być używana do śledzenia `-r <full path to file>` wymagań (przy użyciu podczas instalowania pakietu), ale program Visual Studio zapewnia określoną obsługę *pliku requirements.txt:*
+Technicznie wszystkie nazwy plików mogą być używane do śledzenia wymagań (przy użyciu `-r <full path to file>` podczas instalowania pakietu), ale program Visual Studio zapewnia pomoc techniczną dla *requirements.txt*:
 
-- Jeśli załadowano projekt zawierający *plik requirements.txt* i chcesz zainstalować wszystkie pakiety wymienione w tym pliku, rozwiń węzeł **Środowiska Języka Python** w **Eksploratorze rozwiązań**, a następnie kliknij prawym przyciskiem myszy węzeł środowiska i wybierz polecenie **Zainstaluj z pliku requirements.txt:**
+- Jeśli załadowano projekt zawierający *requirements.txt* i chcesz zainstalować wszystkie pakiety wymienione w tym pliku, rozwiń węzeł **środowiska Python** w **Eksplorator rozwiązań**, a następnie kliknij prawym przyciskiem myszy węzeł środowisko i wybierz polecenie **Zainstaluj z requirements.txt**:
 
     ![Zainstaluj z requirements.txt](media/environments/environments-requirements-txt-install.png)
 
-- Jeśli chcesz zainstalować zależności w środowisku wirtualnym, najpierw utwórz i aktywuj to środowisko, a następnie użyj polecenia **Zainstaluj z pliku requirements.txt.** Aby uzyskać więcej informacji na temat tworzenia środowiska wirtualnego, zobacz [Używanie środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
+- Jeśli chcesz zainstalować zależności w środowisku wirtualnym, najpierw utwórz i aktywuj to środowisko, a następnie użyj polecenia **Zainstaluj z requirements.txt** . Aby uzyskać więcej informacji na temat tworzenia środowiska wirtualnego, zobacz [Korzystanie z środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-- Jeśli masz już wszystkie niezbędne pakiety zainstalowane w środowisku, możesz kliknąć prawym przyciskiem myszy to środowisko w **Eksploratorze rozwiązań** i wybrać pozycję **Generuj plik requirements.txt,** aby utworzyć niezbędny plik. Jeśli plik już istnieje, zostanie wyświetlony monit o jego zaktualizowanie:
+- Jeśli wszystkie wymagane pakiety są już zainstalowane w środowisku, można kliknąć prawym przyciskiem myszy środowisko w **Eksplorator rozwiązań** i wybrać polecenie **Generuj requirements.txt** , aby utworzyć wymagany plik. Jeśli plik już istnieje, zostanie wyświetlony monit o jego zaktualizowanie:
 
-    ![Aktualizuj opcje pliku requirements.txt](media/environments/environments-requirements-txt-replace.png)
+    ![Aktualizowanie opcji requirements.txt](media/environments/environments-requirements-txt-replace.png)
 
   - **Zamień cały plik** usuwa wszystkie elementy, komentarze i opcje, które istnieją.
-  - **Odśwież istniejące wpisy** wykrywa wymagania dotyczące pakietu i aktualizuje specyfikatory wersji, aby dopasować do aktualnie zainstalowanej wersji.
-  - **Aktualizowanie i dodawanie wpisów** odświeża wszystkie znalezione wymagania i dodaje wszystkie inne pakiety na końcu pliku.
+  - **Odśwież istniejące wpisy** wykrywają wymagania pakietu i aktualizuje specyfikatory wersji, aby odpowiadały aktualnie zainstalowanej wersji.
+  - **Aktualizacja i Dodawanie wpisów** odświeża wszystkie znalezione wymagania i dodaje wszystkie pozostałe pakiety na końcu pliku.
 
-Ponieważ pliki *requirements.txt* mają na celu zamrożenie wymagań środowiska, wszystkie zainstalowane pakiety są zapisywane w precyzyjnych wersjach. Korzystanie z precyzyjnych wersji zapewnia łatwe odtworzenie środowiska na innym komputerze. Pakiety są dołączone, nawet jeśli zostały zainstalowane z zakresem wersji, jako zależność innego pakietu lub instalatora innego niż pip.
+Ponieważ pliki *requirements.txt* są przeznaczone do zawieszania wymagań środowiska, wszystkie zainstalowane pakiety są zapisywane z dokładnymi wersjami. Dzięki precyzyjnej wersji można łatwo odtworzyć środowisko na innym komputerze. Pakiety są uwzględniane nawet wtedy, gdy zostały zainstalowane z zakresem wersji, jako zależność innego pakietu lub z instalatorem innym niż PIP.
 
-Jeśli pakiet nie może być zainstalowany przez pip i pojawia się w pliku *requirements.txt,* cała instalacja kończy się niepowodzeniem. W takim przypadku ręcznie edytuj plik, aby wykluczyć ten pakiet lub użyć [opcji pip w](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) celu odwoływania się do instalowalnej wersji pakietu. Na przykład może wolisz [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) użyć do skompilowania `--find-links <path>` zależności i dodać opcję do *pliku requirements.txt:*
+Jeśli nie można zainstalować pakietu za pomocą narzędzia PIP i pojawia się on w pliku *requirements.txt* , cała instalacja nie powiedzie się. W takim przypadku ręcznie Edytuj plik, aby wykluczyć ten pakiet lub użyć [opcji PIP](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) , aby odwołać się do instalowalnej wersji pakietu. Załóżmy na przykład, że wolisz użyć [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) do skompilowania zależności i dodania `--find-links <path>` opcji do *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure
@@ -66,9 +66,9 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie środowiskami języka Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Ścieżki wyszukiwania](search-paths.md)
-- [Odwołanie do okna Środowiska języka Python](python-environments-window-tab-reference.md)
+- [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)

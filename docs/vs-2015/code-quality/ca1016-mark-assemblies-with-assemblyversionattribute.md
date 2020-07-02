@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f1498624d4f79a60854a624ee5c4053a3343f515
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97bd41e51c8d6b5415ffb91c5696c7055f46cf7c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545408"
 ---
-# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Oznacz zestawy za pomocą AssemblyVersionAttribute
+# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Oznacz zestawy atrybutem AssemblyVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
@@ -42,20 +42,20 @@ ms.locfileid: "72663171"
 
 - Numer wersji
 
-- dziedzinie
+- Kultura
 
 - Klucz publiczny (dla zestawów o silnych nazwach).
 
-  @No__t_0 używa numeru wersji do unikatowego identyfikowania zestawu i powiązania z typami w zestawach o silnej nazwie. Numer wersji jest używany razem z zasadami wersji i wydawcy. Domyślnie aplikacje są uruchamiane tylko z wersji zestawu, z którego zostały zbudowane.
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]Używa numeru wersji do unikatowego identyfikowania zestawu i powiązania z typami w zestawach o silnej nazwie. Numer wersji jest używany razem z zasadami wersji i wydawcy. Domyślnie aplikacje są uruchamiane tylko z wersji zestawu, z którego zostały zbudowane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Dodaj numer wersji do zestawu przy użyciu atrybutu <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>. Zobacz Poniższy przykład.
+ Aby naprawić naruszenie tej reguły, Dodaj numer wersji do zestawu przy użyciu <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> atrybutu. Zobacz poniższy przykład.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżenia z tej reguły dla zestawów, które są używane przez strony trzecie lub w środowisku produkcyjnym.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje zestaw, który ma zastosowany atrybut <xref:System.Reflection.AssemblyVersionAttribute>.
+ Poniższy przykład pokazuje zestaw, do którego <xref:System.Reflection.AssemblyVersionAttribute> zastosowano atrybut.
 
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cpp/FxCop.Design.AssembliesVersion.cpp#1)]
  [!code-csharp[FxCop.Design.AssembliesVersion#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cs/FxCop.Design.AssembliesVersion.cs#1)]

@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e267b1e6203759efc91936a3b13059368a3862
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603063"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545395"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać pewnych typów bazowych
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
@@ -52,9 +52,9 @@ ms.locfileid: "72603063"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Opis reguły
- W przypadku [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji 1 zaleca się uzyskanie nowych wyjątków z <xref:System.ApplicationException>. Zalecenie zostało zmienione i nowe wyjątki powinny pochodzić od <xref:System.Exception?displayProperty=fullName> lub jednej z jej podklas w przestrzeni nazw <xref:System>.
+ W przypadku [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji 1 zaleca się uzyskanie nowych wyjątków z programu <xref:System.ApplicationException> . Zalecenie zostało zmienione i nowe wyjątki powinny pochodzić z <xref:System.Exception?displayProperty=fullName> lub jednej z jej podklas w <xref:System> przestrzeni nazw.
 
- Nie należy tworzyć podklasy <xref:System.Xml.XmlDocument>, jeśli chcesz utworzyć widok XML źródłowego modelu obiektów lub źródła danych.
+ Nie należy tworzyć podklasy, <xref:System.Xml.XmlDocument> Jeśli chcesz utworzyć widok XML źródłowego modelu obiektów lub źródła danych.
 
 ### <a name="non-generic-collections"></a>Kolekcje inne niż ogólne
  Używaj i/lub rozszerzając kolekcje ogólne wszędzie tam, gdzie to możliwe. Nie należy poszerzać kolekcji innych niż ogólne w kodzie, chyba że wcześniej zostały dostarczone.
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  Aby naprawić naruszenie tej reguły, należy utworzyć typ z innego typu podstawowego lub kolekcji ogólnej.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenia z tej reguły dla naruszeń dotyczących <xref:System.ApplicationException>. W przypadku naruszeń dotyczących <xref:System.Xml.XmlDocument> można bezpiecznie pominąć ostrzeżenie z tej reguły. Można bezpiecznie pominąć ostrzeżenie o nieogólnej kolekcji, jeśli kod został wcześniej opublikowany.
+ Nie pomijaj ostrzeżenia z tej reguły dla naruszeń <xref:System.ApplicationException> . Można bezpiecznie pominąć ostrzeżenie z tej reguły dla naruszeń <xref:System.Xml.XmlDocument> . Można bezpiecznie pominąć ostrzeżenie o nieogólnej kolekcji, jeśli kod został wcześniej opublikowany.

@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 212abc1fa5e2debfaf7ca81d82c8d94e9ddb0879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658876"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545226"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operator overloads ma nazwanych zastępców
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
@@ -44,46 +44,46 @@ ms.locfileid: "72658876"
 |---------|------------------|-----------|--------------------|
 |+ (binarny)|+|+ (binarny)|Dodaj|
 |+=|+=|+=|Dodaj|
-|&|Lub|&|BitwiseAnd|
+|&|oraz|&|BitwiseAnd|
 |&=|I =|&=|BitwiseAnd|
 |&#124;|Lub|&#124;|Bitowy|
 |&#124;=|Lub =|&#124;=|Bitowy|
-|--|Brak|--|Dekrementacji|
-|/|/|/|Mieszczon|
-|/=|/=|/=|Mieszczon|
-|==|=|==|Ubiegł|
-|^|XOR|^|XOR|
-|^=|XOR =|^=|XOR|
-|>|>|>|Porównaniu|
-|>=|>=|>=|Porównaniu|
-|++|Brak|++|Pełny|
-|<>|!=|Ubiegł|
+|--|Nie dotyczy|--|Dekrementacji|
+|/|/|/|Dzielenie|
+|/=|/=|/=|Dzielenie|
+|==|=|==|Równa się|
+|^|Xor|^|Xor|
+|^=|XOR =|^=|Xor|
+|>|>|>|Porównaj|
+|>=|>=|>=|Porównaj|
+|++|Nie dotyczy|++|Przyrost|
+|<>|!=|Równa się|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
-|<|<|<|Porównaniu|
-|<=|<=|\<=|Porównaniu|
-|&&|Brak|&&|LogicalAnd|
-|&#124;&#124;|Brak|&#124;&#124;|Logiczny|
-|!|Brak|!|LogicalNot|
+|<|<|<|Porównaj|
+|<=|<=|\<=|Porównaj|
+|&&|Nie dotyczy|&&|LogicalAnd|
+|&#124;&#124;|Nie dotyczy|&#124;&#124;|Logiczny|
+|!|Nie dotyczy|!|LogicalNot|
 |%|Mod|%|Mod lub reszta|
-|%=|Brak|%=|Mod|
-|* (binarny)|*|*|Mnożenia|
-|*=|Brak|*=|Mnożenia|
-|~|Niemożliwe|~|OnesComplement|
+|%=|Nie dotyczy|%=|Mod|
+|* (binarny)|*|*|Mnożenie|
+|*=|Nie dotyczy|*=|Mnożenie|
+|~|Not|~|OnesComplement|
 |>>|>>|>>|RightShift|
-=|Brak|>>=|RightShift|
-|-(binarny)|-(binarny)|-(binarny)|Odjęt|
-|-=|Brak|-=|Odjęt|
-|true|IsTrue|Brak|IsTrue (Właściwość)|
-|-(jednoargumentowe)|Brak|-|Negate|
-|+ (jednoargumentowy)|Brak|+|dłużon|
-|false|IsFalse|False|IsTrue (Właściwość)|
+=|Nie dotyczy|>>=|RightShift|
+|-(binarny)|-(binarny)|-(binarny)|Odejmowanie|
+|-=|Nie dotyczy|-=|Odejmowanie|
+|true|IsTrue|Nie dotyczy|IsTrue (Właściwość)|
+|-(jednoargumentowe)|Nie dotyczy|-|Negate|
+|+ (jednoargumentowy)|Nie dotyczy|+|Znak plus|
+|fałsz|IsFalse|Fałsz|IsTrue (Właściwość)|
 
  Nie można obciążyć elementu = = w wybranym języku.
 
- Reguła sprawdza także niejawne i jawne Operatory rzutowania w typie (`SomeType`) przez sprawdzanie metod o nazwie `ToSomeType` i `FromSomeType`.
+ Reguła sprawdza także niejawne i jawne Operatory rzutowania w typie ( `SomeType` ) przez sprawdzenie metod o nazwie `ToSomeType` i `FromSomeType` .
 
- W C#przypadku, gdy operator binarny jest przeciążony, odpowiedni operator przypisania, jeśli istnieje, również jest niejawnie przeciążony.
+ W języku C#, gdy operator binarny jest przeciążony, odpowiedni operator przypisania, jeśli istnieje, jest również niejawnie przeciążony.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zaimplementować alternatywną metodę dla operatora; Nadaj mu nazwę przy użyciu zalecanej nazwy alternatywnej.
@@ -92,7 +92,7 @@ ms.locfileid: "72658876"
  Nie pomijaj ostrzeżenia z tej reguły, jeśli implementujesz bibliotekę udostępnioną. Aplikacje mogą ignorować ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie zdefiniowano strukturę, która narusza tę regułę. Aby poprawić przykład, Dodaj publiczną metodę `Add(int x, int y)` do struktury.
+ W poniższym przykładzie zdefiniowano strukturę, która narusza tę regułę. Aby poprawić ten przykład, Dodaj metodę publiczną `Add(int x, int y)` do struktury.
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorOverloadsHaveNamedAlternates/cs/FxCop.Usage.OperatorOverloadsHaveNamedAlternates.cs#1)]
 
@@ -101,8 +101,8 @@ ms.locfileid: "72658876"
 
  [CA2226: Operatory powinny mieć symetryczne przeciążenia](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Przesłaniaj metodę Equals w przypadku przeciążania operacji równości operatorów](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Przesłaniaj metodę equals w przypadku przeciążania operatora równości](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: Przesłoń metodę GetHashCode przy przesłanianiu metody Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Przesłaniaj metodę GetHashCode w razie przesłaniania metody Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

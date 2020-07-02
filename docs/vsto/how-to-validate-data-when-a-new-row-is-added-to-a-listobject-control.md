@@ -1,7 +1,7 @@
 ---
 title: Sprawdź poprawność danych po dodaniu nowego wiersza do kontrolki ListObject
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,20 +14,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65bbc374c1d0ec2a940ff98fcc6f04e5391b2db
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2b9ed8428f9dd0325678cb91a847609aed76f9b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255681"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541170"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Porady: Sprawdź poprawność danych po dodaniu nowego wiersza do kontrolki ListObject
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Instrukcje: sprawdzanie poprawności danych po dodaniu nowego wiersza do kontrolki ListObject
   Użytkownicy mogą dodawać nowe wiersze do <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolki, która jest powiązana z danymi. Możesz sprawdzić poprawność danych użytkownika przed zatwierdzeniem zmian w źródle danych.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="data-validation"></a>Sprawdzanie poprawności danych
- Po każdym dodaniu wiersza do elementu <xref:Microsoft.Office.Tools.Excel.ListObject> , który jest powiązany z danymi <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> , zdarzenie jest zgłaszane. To zdarzenie można obsłużyć w celu przeprowadzenia walidacji danych. Na przykład, jeśli aplikacja wymaga, aby do źródła danych można było dodać tylko pracowników między 18 a 65, sprawdź, czy wprowadzony wiek znajduje się w tym zakresie przed dodaniem wiersza.
+## <a name="data-validation"></a>Walidacja danych
+ Po każdym dodaniu wiersza do elementu, <xref:Microsoft.Office.Tools.Excel.ListObject> który jest powiązany z danymi, <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> zdarzenie jest zgłaszane. To zdarzenie można obsłużyć w celu przeprowadzenia walidacji danych. Na przykład, jeśli aplikacja wymaga, aby do źródła danych można było dodać tylko pracowników między 18 a 65, sprawdź, czy wprowadzony wiek znajduje się w tym zakresie przed dodaniem wiersza.
 
 > [!NOTE]
 > Oprócz klienta należy zawsze sprawdzać dane wejściowe użytkownika na serwerze. Aby uzyskać więcej informacji, zobacz [Zabezpieczanie aplikacji klienckich](/dotnet/framework/data/adonet/secure-client-applications).
@@ -39,7 +39,7 @@ ms.locfileid: "71255681"
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2. Utwórz nowe <xref:System.Data.DataTable> i Dodaj przykładowe kolumny i dane `Startup` do procedury obsługi `Sheet1` zdarzeń klasy (w projekcie na poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku VSTO).
+2. Utwórz nowe <xref:System.Data.DataTable> i Dodaj przykładowe kolumny i dane do `Startup` procedury obsługi zdarzeń `Sheet1` klasy (w projekcie na poziomie dokumentu) lub `ThisAddIn` klasy (w projekcie dodatku VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
@@ -49,8 +49,8 @@ ms.locfileid: "71255681"
      [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
      [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]
 
-## <a name="compile-the-code"></a>Skompilować kod
- W tym przykładzie kodu założono, że masz <xref:Microsoft.Office.Tools.Excel.ListObject> istniejącą `list1` nazwę w arkuszu, w którym występuje ten kod.
+## <a name="compile-the-code"></a>Kompiluj kod
+ W tym przykładzie kodu założono, że masz istniejącą <xref:Microsoft.Office.Tools.Excel.ListObject> nazwę `list1` w arkuszu, w którym występuje ten kod.
 
 ## <a name="see-also"></a>Zobacz także
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
