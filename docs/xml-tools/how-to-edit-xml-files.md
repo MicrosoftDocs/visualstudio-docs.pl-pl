@@ -1,19 +1,19 @@
 ---
-title: 'Instrukcje: edytowanie plików XML'
+title: 'Instrukcje: Edytowanie plików XML'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216718627936ac7f519c1a6a28a30886e8ae9c27
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592740"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817206"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: edytowanie plików XML
 
@@ -32,7 +32,7 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 3. Wprowadź nazwę pliku w polu **Nazwa** i naciśnij przycisk **Dodaj**.
 
-   Plik XML zostanie dodany do projektu i otwarty w edytorze XML. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8" ?>`.
+   Plik XML zostanie dodany do projektu i otwarty w edytorze XML. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8" ?>` .
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Dodawanie istniejącego pliku XML do projektu
 
@@ -50,15 +50,15 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 2. Wybierz **plik XML** , aby utworzyć nowy plik XML; lub wybierz opcję **plik XSLT** , aby utworzyć nowy arkusz stylów XSLT.
 
-3. Kliknij przycisk **Otwórz**.
+3. Kliknij przycisk **Open** (Otwórz).
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Utwórz pusty projekt dla plików XML
 
 ::: moniker range="vs-2017"
 
-1. Z menu **plik** wybierz pozycję **Nowy** **projekt**>.
+1. Z menu **plik** wybierz pozycję **Nowy** > **projekt**.
 
-   **Nowy projekt** pojawi się okno dialogowe.
+   Zostanie wyświetlone okno dialogowe **Nowy projekt**.
 
 2. Wybierz wybrany język kodu, a następnie wybierz szablon **pusty projekt (.NET Framework)** .
 
@@ -68,11 +68,11 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 ::: moniker range=">=vs-2019"
 
-1. Z menu **plik** wybierz pozycję **Nowy** **projekt**>.
+1. Z menu **plik** wybierz pozycję **Nowy** > **projekt**.
 
 2. W polu wyszukiwania szablonu wprowadź **pusty projekt** , wybierz szablon **pusty projekt (.NET Framework)** , a następnie kliknij przycisk **dalej**.
 
-3. Kliknij przycisk **Utwórz**.
+3. Kliknij pozycję **Utwórz**.
 
 ::: moniker-end
 

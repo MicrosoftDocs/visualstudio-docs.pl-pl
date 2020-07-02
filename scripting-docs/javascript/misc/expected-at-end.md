@@ -1,9 +1,9 @@
 ---
-title: Oczekiwano "@end" | Microsoft Docs
+title: Oczekiwano znaku " @end " | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1029
 dev_langs:
@@ -14,20 +14,20 @@ ms.assetid: c2608995-944e-4d35-8b7e-1cfe264d2458
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46748d7f516b21fc529e99a3e047040e82036650
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 7ff759681ca3e4f48f264e00f9e376487dfe4d24
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573441"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817310"
 ---
-# <a name="expected-end"></a>Oczekiwano "\@end"
-Podjęto próbę utworzenia skompilowanego warunkowo bloku kodu, ale nie uwzględniono instrukcji <strong>@end</strong> na końcu. instrukcje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mogą być kompilowane warunkowo, umieszczając je w bloku <strong>@if/ @end</strong> .  
+# <a name="expected-end"></a>Oczekiwano instrukcji " \@ End"
+Podjęto próbę utworzenia skompilowanego warunkowo bloku kodu, ale nie zawiera on <strong>@end</strong> instrukcji na końcu. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]instrukcje można kompilować warunkowo, umieszczając je w <strong>@if/@end</strong> bloku.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Dodaj odpowiednią instrukcję <strong>@end</strong> .  
+- Dodaj odpowiednią <strong>@end</strong> instrukcję.  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [kompilacji warunkowej](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Projektant przepływu pracy — How to: use Projektant Imports'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
@@ -10,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f221efea08444a4dc3e31ade2a081753eb77242c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77da016b062d032965fcf7042cedba2004e3fdf5
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593190"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817427"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Instrukcje: korzystanie z projektanta importów
+# <a name="how-to-use-the-imports-designer"></a>Instrukcje: Używanie projektanta importów
 
-Projektant Imports umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażeniach. Podobnie jak w przypadku **importów** lub **użycia** słów kluczowych C#w Visual Basic i, określenie przestrzeni nazw w projektancie Imports umożliwia po prostu wprowadzanie nazwy typu w wyrażeniu zamiast w pełni kwalifikowanej nazwy typu wersji.
+Projektant Imports umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażeniach. Podobnie jak w przypadku **importów** lub **użycia** słów kluczowych w Visual Basic i C#, określenie przestrzeni nazw w projektancie Imports umożliwia po prostu wprowadzanie nazwy typu w wyrażeniu zamiast w pełni kwalifikowanej nazwy typu wersji.
 
-Projektant Imports reaguje na obie zmiany w interfejsie użytkownika i zmiany wprowadzone podczas zapisywania przepływu pracy. Gdy przepływ pracy zostanie zapisany, przestrzenie nazw mogą być dodawane automatycznie do projektanta Imports. Należą do nich między innymi:
+Projektant Imports reaguje na obie zmiany w interfejsie użytkownika i zmiany wprowadzone podczas zapisywania przepływu pracy. Gdy przepływ pracy zostanie zapisany, przestrzenie nazw mogą być dodawane automatycznie do projektanta Imports. Należą do nich:
 
 - Przestrzenie nazw dla wszystkich typów używanych w deklaracjach zmiennych i argumentów.
 

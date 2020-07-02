@@ -3,7 +3,7 @@ title: Oczekiwana stała | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1031
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bb822b6b6224748c51da2220461a232cab6134b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573403"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816647"
 ---
 # <a name="expected-constant"></a>Oczekiwana stała
 Podjęto próbę użycia zmiennej (kompilacja niewarunkowa) w instrukcji testowej kompilacji warunkowej. Instrukcje testu warunkowego kompilacji muszą być stałe.  
@@ -31,5 +31,5 @@ Podjęto próbę użycia zmiennej (kompilacja niewarunkowa) w instrukcji testowe
 - Zamień zmienną na zmienną kompilacji warunkowej.  
   
 ## <a name="see-also"></a>Zobacz także  
- @No__t_1 [kompilacji warunkowej](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)

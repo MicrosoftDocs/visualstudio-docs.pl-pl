@@ -3,7 +3,7 @@ title: Długość tablicy musi mieć przypisaną skończoną liczbę dodatnią |
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5030
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cff9c8c42199e106cca5f6f2808866e46a26afe2
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 30e02f4f90300e2c05076553419cda5f8c353ab0
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576066"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817687"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Długość tablicy musi być mieć przypisaną dodatnią liczbę całkowitą
-Podczas ustawiania właściwości **Length** istniejącego obiektu **Array** określono długość tablicy, która nie jest liczbą dodatnią ani zerem. Ten błąd występuje, gdy przypiszesz wartość do właściwości **Length** obiektu `Array`, która jest ujemna lub nie jest liczbą (`NaN`). Należy zauważyć, że [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automatycznie konwertuje liczby ułamkowe na całkowite liczby całkowite.  
+Podczas ustawiania właściwości **Length** istniejącego obiektu **Array** określono długość tablicy, która nie jest liczbą dodatnią ani zerem. Ten błąd występuje, gdy przypiszesz wartość do właściwości **Length** `Array` obiektu, który jest ujemny lub nie jest liczbą ( `NaN` ). Należy zauważyć, że [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automatycznie konwertuje liczby ułamkowe na całkowite liczby całkowite.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Projektant przepływu pracy — How to: Use the Variable Designer'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593177"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817414"
 ---
-# <a name="how-to-use-the-variable-designer"></a>Instrukcje: korzystanie z projektanta zmiennych
+# <a name="how-to-use-the-variable-designer"></a>Instrukcje: Używanie projektanta zmiennych
 
 Projektant zmiennych służy do tworzenia zmiennych do użycia w scenariuszach powiązań danych i instrukcjach warunkowych. Dostęp do projektanta można uzyskać, klikając przycisk **zmienne** w lewym dolnym rogu kanwy projektowania. Projektant zawiera listę zmiennych, które są wyświetlane w formie tabelarycznej i mogą być posortowane według poszczególnych nagłówków kolumn, z wyjątkiem kolumny **domyślnej** . Każda zmienna zawiera nazwę, typ zmiennej, zakres i wartość domyślną (jeśli istnieje). Nazwa i wartość domyślna są edytowalnymi polami tekstowymi, a typ i zakres są rozwijane. Zakres to działanie, które zostało wybrane podczas wywoływania projektanta zmiennych. Jeśli zmienna nie może zostać utworzona w ramach zakresu zaznaczenia, zakres domyślnie będzie najbliższym działaniem nadrzędnym zaznaczenia, które pozwala na tworzenie zmiennych w swoim zakresie. Aby uzyskać więcej informacji, zobacz [zmienne i argumenty (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 

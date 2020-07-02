@@ -1,19 +1,19 @@
 ---
-title: 'Instrukcje: generowanie fragmentu kodu XML na podstawie schematu XML'
+title: 'Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592688"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817180"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Instrukcje: generowanie fragmentu kodu XML na podstawie schematu XML
 
@@ -33,13 +33,13 @@ Ta funkcja jest dostępna tylko dla elementów. Obowiązują również następuj
 
 - Kursor musi znajdować się bezpośrednio z prawej strony nazwy elementu.
 
-Wygenerowany fragment kodu zawiera wszystkie wymagane atrybuty i elementy. Jeśli `minOccurs` jest większa niż jeden, wymagana minimalna liczba wystąpień tego elementu jest dołączana do fragmentu kodu, maksymalnie 100 wystąpień. Wszystkie ustalone wartości Znalezione w schemacie powodują stałe wartości w fragmencie kodu. elementy `xsd:any` i `xsd:anyAttribute` są ignorowane i nie powodują żadnych dodatkowych konstrukcji fragmentów kodu.
+Wygenerowany fragment kodu zawiera wszystkie wymagane atrybuty i elementy. Jeśli `minOccurs` jest większa niż jeden, wymagana minimalna liczba wystąpień tego elementu jest dołączana do fragmentu kodu, maksymalnie 100 wystąpień. Wszystkie ustalone wartości Znalezione w schemacie powodują stałe wartości w fragmencie kodu. `xsd:any``xsd:anyAttribute`elementy i są ignorowane i nie powodują żadnych dodatkowych konstrukcji fragmentów kodu.
 
 Wartości domyślne są generowane i zanotowane jako wartości edytowalne. Jeśli schemat określa wartość domyślną, używana jest ta wartość domyślna. Jeśli jednak wartość domyślna schematu jest pustym ciągiem, Edytor generuje wartości domyślne w następujący sposób:
 
 - Jeśli typ schematu zawiera wszelkie zestawy reguł wyliczenia, bezpośrednio lub pośrednio za pomocą któregokolwiek z elementów członkowskich typu Union pierwsza wartość wyliczana w modelu obiektu schematu jest używana jako domyślna.
 
-- Jeśli typ schematu jest typem niepodzielnym, Edytor pobiera typ niepodzielny i wstawia nazwę typu niepodzielnego. Dla pochodnego typu prostego używa podstawowego typu prostego. Dla typu listy typ niepodzielny jest `itemType`. Dla Unii typ niepodzielny jest typem niepodzielnym pierwszego `memberType`.
+- Jeśli typ schematu jest typem niepodzielnym, Edytor pobiera typ niepodzielny i wstawia nazwę typu niepodzielnego. Dla pochodnego typu prostego używa podstawowego typu prostego. Dla typu listy typ niepodzielny to `itemType` . Dla Unii, typ niepodzielny jest typem niepodzielnym pierwszego `memberType` .
 
 ## <a name="example"></a>Przykład
 
@@ -54,13 +54,13 @@ Kroki opisane w tej sekcji przedstawiają sposób użycia funkcji fragmentu kodu
 
 2. W okienku **Szablony** wybierz pozycję **plik XML** , a następnie kliknij pozycję **Otwórz**.
 
-     Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">`.
+     Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">` .
 
-3. W oknie właściwości dokumentu kliknij przycisk przeglądania ( **...** ) w polu **schematy** .
+3. W oknie właściwości dokumentu kliknij przycisk przeglądania (**...**) w polu **schematy** .
 
      Zostanie wyświetlone okno dialogowe **schematy XSD** .
 
-4. Kliknij przycisk **Dodaj**.
+4. Kliknij pozycję **Dodaj**.
 
      Zostanie wyświetlone okno dialogowe **otwieranie schematu XSD** .
 
@@ -86,9 +86,9 @@ Kroki opisane w tej sekcji przedstawiają sposób użycia funkcji fragmentu kodu
 
 3. Wybierz pozycję **kontakt** z listy członków i naciśnij klawisz **Enter**.
 
-     Edytor dodaje tag początkowy `<Contact` i umieszcza kursor po nazwie elementu.
+     Edytor dodaje tag początkowy `<Contact` i ustawia kursor po nazwie elementu.
 
-4. Naciśnij klawisz **Tab** , aby wygenerować dane XML dla elementu `Contact` na podstawie jego informacji o schemacie.
+4. Naciśnij klawisz **Tab** , aby wygenerować dane XML dla `Contact` elementu na podstawie jego informacji o schemacie.
 
 ## <a name="input"></a>Dane wejściowe
 
@@ -141,7 +141,7 @@ Przewodnik zawiera następujący plik schematu.
 
 ### <a name="output"></a>Dane wyjściowe
 
-Poniżej przedstawiono dane XML, które są generowane na podstawie informacji o schemacie skojarzonych z `Contact` elementu. Elementy oznaczone jako `bold` określają pola edytowalne w fragmencie kodu XML.
+Poniżej przedstawiono dane XML, które są generowane na podstawie informacji o schemacie skojarzonych z `Contact` elementem. Elementy oznaczone jako `bold` Wyznacz pola edytowalne w fragmencie kodu XML.
 
 ```xml
 <Contact>

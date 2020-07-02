@@ -1,318 +1,318 @@
 ---
-title: Samouczek projektanta formularzy systemu Windows
+title: Samouczek Projektant formularzy systemu Windows
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589841"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816465"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Przewodnik: Wprowadzenie do programu Windows Forms Designer
+# <a name="tutorial-get-started-with-windows-forms-designer"></a>Samouczek: wprowadzenie do Projektant formularzy systemu Windows
 
-Projektant formularzy systemu Windows udostępnia wiele narzędzi do tworzenia aplikacji Windows Forms. W tym artykule pokazano, jak utworzyć aplikację przy użyciu różnych narzędzi dostarczonych przez projektanta, w tym następujących zadań:
+Projektant formularzy systemu Windows udostępnia wiele narzędzi do kompilowania aplikacji Windows Forms. W tym artykule przedstawiono sposób tworzenia aplikacji przy użyciu różnych narzędzi udostępnianych przez projektanta, w tym następujących zadań:
 
-- Rozmieść formanty za pomocą linii przyciągania.
+- Rozmieść kontrolki za pomocą linii wyrównania.
 - Wykonywanie zadań projektanta przy użyciu tagów inteligentnych.
-- Ustaw marginesy i dopełnienie dla formantów.
-- Rozmieść <xref:System.Windows.Forms.TableLayoutPanel> formanty za pomocą formantu.
-- Partycjonowanie układu formantu <xref:System.Windows.Forms.SplitContainer> przy użyciu formantu.
-- Nawigowanie po układzie za pomocą okna Konspekt dokumentu.
-- Elementy sterujące położeniem z wyświetlaniem informacji o rozmiarze i lokalizacji.
-- Ustaw wartości właściwości za pomocą okna Właściwości.
+- Ustaw marginesy i dopełnienie dla kontrolek.
+- Rozmieść formanty przy użyciu <xref:System.Windows.Forms.TableLayoutPanel> kontrolki.
+- Podziel układ formantu przy użyciu <xref:System.Windows.Forms.SplitContainer> kontrolki.
+- Przejdź do układu przy użyciu okna konspektu dokumentu.
+- Kontrolki położenia z wyświetlanymi informacjami o rozmiarze i lokalizacji.
+- Ustaw wartości właściwości przy użyciu okno Właściwości.
 
-Po zakończeniu będziesz mieć formant niestandardowy, który został złożony przy użyciu wielu funkcji układu dostępnych w Projektancie formularzy systemu Windows. Ten formant implementuje interfejs użytkownika (UI) dla prostego kalkulatora. Na poniższej ilustracji przedstawiono ogólny układ formantu kalkulatora:
+Po zakończeniu będziesz mieć kontrolkę niestandardową, która została przedstawiona przy użyciu wielu funkcji układu dostępnych w Projektant formularzy systemu Windows. Ta kontrolka implementuje interfejs użytkownika (UI) dla prostego kalkulatora. Na poniższej ilustracji przedstawiono ogólny układ kontrolki Kalkulator:
 
-![Interfejs użytkownika kalkulatora przewodnika z przewodnikiem](media/calculator-ui.gif)
+![Interfejs użytkownika kalkulatora przewodnika](media/calculator-ui.gif)
 
-## <a name="create-the-custom-control-project"></a>Tworzenie niestandardowego projektu sterowania
+## <a name="create-the-custom-control-project"></a>Tworzenie projektu kontrolki niestandardowej
 
-Pierwszym krokiem jest utworzenie projektu kontroli DemoCalculator.
+Pierwszym krokiem jest utworzenie projektu kontrolki DemoCalculator.
 
-1. Otwórz program Visual Studio i utwórz nowy projekt **biblioteki kontroli formularzy systemu Windows.** Nazwij projekt **DemoCalculatorLib**.
+1. Otwórz program Visual Studio i Utwórz nowy projekt **biblioteki formantów Windows Forms** . Nazwij projekt **DemoCalculatorLib**.
 
    ::: moniker range=">=vs-2019"
 
-   ![Szablon biblioteki formantu formularzy systemu Windows w programie Visual Studio 2019](media/windows-forms-control-library-template.png)
+   ![Szablon biblioteki formantów Windows Forms w programie Visual Studio 2019](media/windows-forms-control-library-template.png)
 
    ::: moniker-end
 
-2. Aby zmienić nazwę pliku, w **Eksploratorze rozwiązań**wybierz prawym przyciskiem wyboru **UserControl1.vb** lub **UserControl1.cs**, wybierz **pozycję Zmień nazwę**i zmień nazwę pliku na DemoCalculator.vb lub DemoCalculator.cs. Wybierz **tak,** gdy pojawi się pytanie, czy chcesz zmienić nazwę wszystkich odwołań do elementu kodu "UserControl1".
+2. Aby zmienić nazwę pliku, w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **UserControl1. vb** lub **UserControl1.cs**, wybierz polecenie **Zmień**nazwę, a następnie zmień wartość w polu Nazwa pliku na DemoCalculator. vb lub DemoCalculator.cs. Wybierz opcję **tak** , gdy zostanie wyświetlony monit o zmianę nazwy wszystkich odwołań do elementu kodu "UserControl1".
 
-Projektant formularzy systemu Windows pokazuje powierzchnię projektanta dla kontrolki DemoCalculator. W tym widoku można graficznie zaprojektować wygląd formantu, wybierając formanty i komponenty z przybornika i umieszczając je na powierzchni projektanta. Aby uzyskać więcej informacji na temat formantów niestandardowych, zobacz [Odmiany formantów niestandardowych](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
+Projektant formularzy systemu Windows pokazuje powierzchnię projektanta dla formantu DemoCalculator. W tym widoku można graficznie zaprojektować wygląd kontrolki, wybierając formanty i składniki z przybornika i umieszczając je na powierzchni projektanta. Aby uzyskać więcej informacji o kontrolkach niestandardowych, zobacz [odmian niestandardowych kontrolek](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
 
-## <a name="design-the-control-layout"></a>Projektowanie układu sterowania
+## <a name="design-the-control-layout"></a>Projektowanie układu formantu
 
-Kontrolka DemoCalculator zawiera kilka formantów formularzy systemu Windows. W tej procedurze rozmieść formanty za pomocą projektanta formularzy systemu Windows.
+Kontrolka DemoCalculator zawiera kilka kontrolek Windows Forms. Ta procedura polega na rozmieszczeniu formantów przy użyciu Projektant formularzy systemu Windows.
 
-1. W Projektancie formularzy systemu Windows zmień kontrolkę DemoCalculator na większy, wybierając uchwyt zmiany rozmiaru w prawym dolnym rogu i przeciągając go w dół i w prawo. W prawym dolnym rogu programu Visual Studio znajdź informacje o rozmiarze i lokalizacji dla formantów. Ustaw rozmiar formantu na szerokość 500 i wysokość 400, obserwując informacje o rozmiarze podczas ponownego rozmiaru formantu.
+1. W Projektant formularzy systemu Windows Zmień formant DemoCalculator na większy rozmiar, wybierając uchwyt zmiany rozmiaru w prawym dolnym rogu i przeciągając go w dół i w prawo. W prawym dolnym rogu programu Visual Studio Znajdź informacje o rozmiarze i lokalizacji dla kontrolek. Ustaw rozmiar kontrolki na szerokość 500 i wysokość 400, oglądając informacje o rozmiarze podczas zmiany rozmiaru formantu.
 
-2. W **przyborniku**wybierz węzeł **Kontenery,** aby go otworzyć. Wybierz kontrolkę **SplitContainer** i przeciągnij ją na powierzchnię projektanta.
+2. W **przyborniku**wybierz węzeł **kontenery** , aby go otworzyć. Wybierz formant **SplitContainer** i przeciągnij go na powierzchnię projektanta.
 
-   Jest `SplitContainer` umieszczony na powierzchni projektanta kontrolki DemoCalculator.
+   `SplitContainer`Znajduje się na powierzchni projektanta formantu DemoCalculator.
 
     > [!TIP]
-    > Rozmiary `SplitContainer` formantu do rozmiaru DemoCalculator kontroli. Spójrz na **właściwości** okna, aby wyświetlić `SplitContainer` ustawienia właściwości formantu. Znajdź <xref:System.Windows.Forms.SplitContainer.Dock%2A> nieruchomość. Jego wartość jest [DockStyle.Fill](xref:System.Windows.Forms.DockStyle.Fill) `SplitContainer` , co oznacza, że formant zawsze rozmiar się do granic DemoCalculator kontroli. Ponownie rozmiar DemoCalculator kontroli, aby sprawdzić to zachowanie.
+    > Dopasowuje `SplitContainer` rozmiar formantu do rozmiaru formantu DemoCalculator. Sprawdź okno **Właściwości** , aby wyświetlić ustawienia właściwości `SplitContainer` formantu. Znajdź <xref:System.Windows.Forms.SplitContainer.Dock%2A> Właściwość. Jego wartość to [dockname. Fill](xref:System.Windows.Forms.DockStyle.Fill), co oznacza, że `SplitContainer` kontrolka będzie zawsze sama zmieniać rozmiar do granic formantu DemoCalculator. Zmień rozmiar kontrolki DemoCalculator, aby sprawdzić to zachowanie.
 
-3. W oknie **Właściwości** zmień wartość właściwości <xref:System.Windows.Forms.SplitContainer.Dock%2A> na `None`.
+3. W oknie **Właściwości** Zmień wartość <xref:System.Windows.Forms.SplitContainer.Dock%2A> właściwości na `None` .
 
-    Formant `SplitContainer` zmniejsza się do jego domyślnego rozmiaru i nie jest już zgodny z rozmiarem DemoCalculator kontroli.
+    `SplitContainer`Kontrolka zmniejszy się do rozmiaru domyślnego i nie jest już zgodna z rozmiarem formantu DemoCalculator.
 
-4. Wybierz glif tagu![inteligentnego (Smart Tag Glyph)](media/smart-tag-glyph.gif) `SplitContainer` w prawym górnym rogu formantu. Wybierz **dock w kontenerze nadrzędnym,** `Dock` aby ustawić właściwość na `Fill`.
+4. Wybierz symbol tagu inteligentnego ( ![ symbol tagu inteligentnego ](media/smart-tag-glyph.gif) ) w prawym górnym rogu `SplitContainer` kontrolki. Wybierz pozycję **Zadokuj w kontenerze nadrzędnym** , aby ustawić `Dock` Właściwość na `Fill` .
 
-    Formant `SplitContainer` dokuje do granic formantu DemoCalculator.
+    `SplitContainer`Kontrolka jest zadokowana do granic formantu DemoCalculator.
 
     > [!NOTE]
-    > Kilka elementów sterujących oferuje tagi inteligentne ułatwiające projektowanie. Aby uzyskać więcej informacji, zobacz [Przewodnik: Wykonywanie typowych zadań przy użyciu tagów inteligentnych w formantach formularzy systemu Windows](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
+    > Kilka formantów oferuje inteligentne Tagi do ułatwienia projektowania. Aby uzyskać więcej informacji, zobacz [Przewodnik: wykonywanie typowych zadań przy użyciu tagów inteligentnych w kontrolkach Windows Forms](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
 
-5. Zaznacz pionowe obramowanie między panelami i przeciągnij je w prawo, tak aby większość miejsca zajęta przez lewy panel.
+5. Wybierz obramowanie pionowe między panelami i przeciągnij je w prawo, tak aby większość miejsca została wykonana przez lewy panel.
 
-    Kontrolka `SplitContainer` DemoCalculator dzieli się na dwa panele z ruchomą krawędzią oddzielającą je. Panel po lewej stronie będzie trzymał przyciski kalkulatora i wyświetlacz, a panel po prawej stronie wyświetli zapis operacji arytmetycznych wykonywanych przez użytkownika.
+    `SplitContainer`Dzieli formant DemoCalculator na dwa panele z rozdzielonym obramowaniem ruchomym. Panel po lewej stronie będzie zawierał przyciski kalkulatora i wyświetlacz, a panel po prawej stronie wyświetli rekord operacji arytmetycznych wykonywanych przez użytkownika.
 
-6. W oknie **Właściwości** zmień wartość właściwości `BorderStyle` na `Fixed3D`.
+6. W oknie **Właściwości** Zmień wartość `BorderStyle` właściwości na `Fixed3D` .
 
-7. W **przyborniku**wybierz węzeł **Typowe formanty,** aby go otworzyć. Wybierz `ListView` formant i przeciągnij go `SplitContainer` do prawego panelu formantu.
+7. W **przyborniku**wybierz węzeł **Formanty standardowe** , aby go otworzyć. Zaznacz `ListView` kontrolkę i przeciągnij ją do prawego panelu `SplitContainer` formantu.
 
-8. Wybierz `ListView` glif tagu inteligentnego formantu. W panelu tagów inteligentnych `Details`zmień ustawienie na `View` .
+8. Wybierz `ListView` symbol tagu inteligentnego kontrolki. W panelu tagów inteligentnych Zmień `View` ustawienie na `Details` .
 
 9. W panelu tagów inteligentnych wybierz pozycję **Edytuj kolumny**.
 
-   Zostanie otwarte okno dialogowe **Edytor kolekcji ColumnHeader.**
+   Zostanie otwarte okno dialogowe **Edytor kolekcji ColumnHeader** .
 
-10. W oknie dialogowym **Edytor kolekcji ColumnHeader** wybierz `ListView` pozycję **Dodaj,** aby dodać kolumnę do formantu. Zmień wartość `Text` właściwości kolumny na **Historia**. Wybierz **przycisk OK,** aby utworzyć kolumnę.
+10. W oknie dialogowym **Edytor kolekcji ColumnHeader** wybierz pozycję **Dodaj** , aby dodać kolumnę do `ListView` kontrolki. Zmień wartość `Text` Właściwości Column na **History**. Wybierz **przycisk OK** , aby utworzyć kolumnę.
 
-11. W panelu tagów inteligentnych wybierz pozycję **Dock w kontenerze nadrzędnym,** a następnie wybierz glif tagu inteligentnego, aby zamknąć panel tagów inteligentnych.
+11. W panelu tagów inteligentnych wybierz pozycję **Dock w kontenerze nadrzędnym**, a następnie wybierz symbol tagu inteligentnego, aby zamknąć Panel tagów inteligentnych.
 
-12. Z **przybornika węzła** `TableLayoutPanel` `SplitContainer` **Kontenery** przeciągnij formant do lewego panelu formantu.
+12. Z **przybornika**węzłów **kontenerów** przeciągnij `TableLayoutPanel` formant do lewego panelu `SplitContainer` kontrolki.
 
-    Formant pojawia się na powierzchni projektanta `TableLayoutPanel` z otwartym panelem tagów inteligentnych. Formant `TableLayoutPanel` rozmieszcza jego podrzędnych formantów w siatce. Formant `TableLayoutPanel` będzie zawierać democalculator formantu wyświetlacz i przyciski. Aby uzyskać więcej informacji, zobacz [Instruktaż: Rozmieszczanie formantów przy użyciu panelu TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
+    `TableLayoutPanel`Kontrolka pojawia się na powierzchni projektanta z otwartym panelem tagów inteligentnych. `TableLayoutPanel`Formant rozmieszcza swoje kontrolki podrzędne w siatce. `TableLayoutPanel`Kontrolka będzie zawierać DemoCalculator i przyciski kontrolki. Aby uzyskać więcej informacji, zobacz [Przewodnik: porządkowanie formantów przy użyciu TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
 
-13. Wybierz **pozycję Edytuj wiersze i kolumny** na panelu tagów inteligentnych.
+13. Wybierz pozycję **Edytuj wiersze i kolumny** w panelu tagów inteligentnych.
 
-    Zostanie otwarte okno dialogowe **Style kolumn i wierszy.**
+    Zostanie otwarte okno dialogowe **Style kolumn i wierszy** .
 
-14. Wybierz przycisk **Dodaj,** aż pojawi się pięć kolumn. Zaznacz wszystkie pięć kolumn, a następnie wybierz **pozycję Procent** w polu **Typ rozmiaru.** Ustaw wartość **Procent** na **20**. Spowoduje to ustawienie każdej kolumny na taką samą szerokość.
+14. Wybierz przycisk **Dodaj** , dopóki nie zostaną wyświetlone pięć kolumn. Zaznacz wszystkie pięć kolumn, a następnie w polu **Typ rozmiaru** wybierz pozycję **procent** . Ustaw wartość **procentową** na **20**. To ustawienie określa, że każda kolumna ma taką samą szerokość.
 
-15. W obszarze **Pokaż**wybierz pozycję **Wiersze**.
+15. W obszarze **Pokaż**wybierz pozycję **wiersze**.
 
-16. Wybierz **pozycję Dodaj,** aż zostanie wyświetlonych pięć wierszy. Zaznacz wszystkie pięć wierszy i wybierz **procent** w polu **Typ rozmiaru.** Ustaw wartość **Procent** na **20**. Spowoduje to ustawienie każdego wiersza na tej samej wysokości.
+16. Wybierz pozycję **Dodaj** , dopóki nie zostaną wyświetlone pięć wierszy. Zaznacz wszystkie pięć wierszy i wybierz **procent** w polu **Typ rozmiaru** . Ustaw wartość **procentową** na **20**. To ustawia każdy wiersz na taką samą wysokość.
 
-17. Wybierz **przycisk OK,** aby zaakceptować zmiany, a następnie wybierz glif tagu inteligentnego, aby zamknąć panel tagów inteligentnych.
+17. Wybierz **przycisk OK** , aby zaakceptować zmiany, a następnie wybierz symbol tagu inteligentnego, aby zamknąć Panel tagów inteligentnych.
 
-18. W oknie **Właściwości** zmień wartość właściwości `Dock` na `Fill`.
+18. W oknie **Właściwości** Zmień wartość `Dock` właściwości na `Fill` .
 
-## <a name="populate-the-control"></a>Wypełnij kontrolka
+## <a name="populate-the-control"></a>Wypełnij kontrolkę
 
-Teraz, gdy układ formantu jest skonfigurowany, można wypełnić DemoCalculator kontrolki za pomocą przycisków i wyświetlacza.
+Teraz, gdy układ kontrolki jest skonfigurowany, można wypełnić formant DemoCalculator z przyciskami i ekranem.
 
-1. W **przyborniku**kliknij `TextBox` dwukrotnie ikonę formantu.
+1. W **przyborniku**kliknij dwukrotnie `TextBox` ikonę kontrolki.
 
-   Formant `TextBox` jest umieszczany w `TableLayoutPanel` pierwszej komórce formantu.
+   `TextBox`Kontrolka jest umieszczana w pierwszej komórce `TableLayoutPanel` formantu.
 
-2. W oknie **Właściwości** zmień wartość właściwości `TextBox` ColumnSpan formantu na **5**.
+2. W oknie **Właściwości** Zmień wartość `TextBox` Właściwości ColumnSpan kontrolki na **5**.
 
-   Formant `TextBox` przesuwa się do pozycji, która jest wyśrodkowany w jego wierszu.
+   `TextBox`Kontrolka przechodzi do położenia, które jest wyśrodkowane w jego wierszu.
 
-3. Zmień `TextBox` wartość `Anchor` właściwości formantu `Left`na `Right`, .
+3. Zmień wartość `TextBox` właściwości kontrolki `Anchor` na `Left` , `Right` .
 
-   Formant `TextBox` rozwija się poziomo, aby objąć wszystkie pięć kolumn.
+   `TextBox`Kontrolka rozszerza się w poziomie, aby obejmowała wszystkie pięć kolumn.
 
-4. Zmień wartość `TextBox` `TextAlign` właściwości formantu `Right`na .
+4. Zmień wartość `TextBox` właściwości kontrolki `TextAlign` na `Right` .
 
-5. W oknie **Właściwości** rozwiń `Font` węzeł właściwości. Ustaw `Size` **na 14** `Bold` i ustawiono `TextBox` wartość **true** dla formantu.
+5. W oknie **Właściwości** rozwiń `Font` węzeł właściwości. Ustaw wartość `Size` na **14**, a `Bold` dla **true** `TextBox` kontrolki wartość true.
 
-6. Wybierz `TableLayoutPanel` formant.
+6. Zaznacz `TableLayoutPanel` kontrolkę.
 
-7. W **przyborniku**kliknij `Button` dwukrotnie ikonę.
+7. W **przyborniku**kliknij dwukrotnie `Button` ikonę.
 
-   Formant `Button` jest umieszczany w następnej otwartej komórce formantu. `TableLayoutPanel`
+   `Button`Kontrolka jest umieszczana w następnej otwartej komórce `TableLayoutPanel` formantu.
 
-8. W **przyborniku**kliknij `Button` dwukrotnie ikonę jeszcze cztery razy, `TableLayoutPanel` aby wypełnić drugi wiersz formantu.
+8. W **przyborniku**kliknij dwukrotnie `Button` ikonę cztery razy, aby wypełnić drugi wiersz `TableLayoutPanel` formantu.
 
-9. Zaznacz wszystkie `Button` pięć kontrolek, zaznaczając je przy jednoczesnym przytrzymywanie klawisza **Shift.** Naciśnij klawisz **Ctrl**+ `Button` **C,** aby skopiować kontrolki do schowka.
+9. Zaznacz wszystkie pięć `Button` kontrolek, zaznaczając je, przytrzymując klawisz **SHIFT** . Naciśnij klawisz **Ctrl** + **C** , aby skopiować `Button` kontrolki do Schowka.
 
-10. Naciśnij klawisz **Ctrl**+**V** trzy razy, `Button` aby wkleić `TableLayoutPanel` kopie formantów do pozostałych wierszy formantu.
+10. Naciśnij **klawisze CTRL +** + **V** trzy razy, aby wkleić kopie `Button` formantów do pozostałych wierszy `TableLayoutPanel` formantu.
 
-11. Zaznacz wszystkie 20 `Button` formantów, zaznaczając je przy jednoczesnym przytrzymywanie klawisza **Shift.**
+11. Zaznacz wszystkie 20 `Button` formantów, zaznaczając je, przytrzymując klawisz **SHIFT** .
 
-12. W oknie **Właściwości** zmień wartość właściwości `Dock` na `Fill`.
+12. W oknie **Właściwości** Zmień wartość `Dock` właściwości na `Fill` .
 
-    Wszystkie `Button` formanty dokują, aby wypełnić komórki zawierające.
+    Wszystkie `Button` kontrolki są zadokowane, aby wypełnić ich komórki.
 
-13. W oknie **Właściwości** rozwiń `Margin` węzeł właściwości. Ustaw wartość `All` **5**.
+13. W oknie **Właściwości** rozwiń `Margin` węzeł właściwości. Ustaw wartość `All` na **5**.
 
-    Wszystkie `Button` formanty są o mniejszej wielkości, aby utworzyć większy margines między nimi.
+    Rozmiar wszystkich `Button` formantów jest mniejszy, aby utworzyć większy margines między nimi.
 
-14. Wybierz **przycisk10** i **button20**, a następnie naciśnij klawisz **Delete,** aby usunąć je z układu.
+14. Wybierz pozycję **button10** i **button20**, a następnie naciśnij klawisz **delete** , aby usunąć je z układu.
 
-15. Wybierz **button5** i **button15**, a `RowSpan` następnie zmień wartość ich właściwości na **2**. Będą to **wyczyść** i **=** przyciski dla kontroli DemoCalculator.
+15. Wybierz pozycję **Button5** i **button15**, a następnie zmień wartość `RowSpan` właściwości na **2**. Będą to **jasne** i **=** przyciski dla kontrolki DemoCalculator.
 
-## <a name="use-the-document-outline-window"></a>Używanie okna Konspekt dokumentu
+## <a name="use-the-document-outline-window"></a>Korzystanie z okna konspektu dokumentu
 
-Gdy formant lub formularz jest wypełniony kilkoma formantami, może być łatwiej poruszać się po układzie za pomocą okna Konspekt dokumentu.
+Gdy kontrolka lub formularz zostanie wypełniony kilkoma kontrolkami, łatwiej jest nawigować po stronie układu przy użyciu okna konspektu dokumentu.
 
-1. Na pasku menu wybierz pozycję **Wyświetl** > inny**konspekt dokumentu****systemu Windows** > .
+1. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Konspekt dokumentu**systemu Windows.
 
-   Okno Konspekt dokumentu pokazuje widok drzewa DemoCalculator kontroli i jego formantów składnika. Formanty `SplitContainer` kontenera, takie jak pokaż ich formantów podrzędnych jako subnodes w drzewie. Można również zmienić nazwy formantów w miejscu za pomocą okna Konspekt dokumentu.
+   Okno Konspekt dokumentu zawiera widok drzewa formantu DemoCalculator i jego kontrolki składowe. Kontrolki kontenerów, takie jak `SplitContainer` Pokaż ich formanty podrzędne, jako podwęzły w drzewie. Możesz również zmienić nazwy kontrolek w miejscu przy użyciu okna Konspekt dokumentu.
 
-2. W oknie **Konspekt dokumentu** wybierz **prawym przyciskiem1**, a następnie wybierz pozycję **Zmień nazwę**. Zmień jego nazwę na sevenButton.
+2. W oknie **Konspekt dokumentu** kliknij prawym przyciskiem myszy pozycję **Button1**, a następnie wybierz polecenie **Zmień nazwę**. Zmień jej nazwę na sevenButton.
 
-3. Za pomocą okna **Konspekt dokumentu** zmień nazwę `Button` formantów z nazwy wygenerowanej przez projektanta na nazwę produkcji zgodnie z następującą listą:
+3. Korzystając z okna **Konspekt dokumentu** , Zmień nazwę `Button` kontrolek z nazwy wygenerowanej przez projektanta na nazwę produkcyjną zgodnie z następującą listą:
 
-   - button1 do **sevenButton**
+   - Button1 do **sevenButton**
 
-   - button2 do **eightButton**
+   - Button2 do **eightButton**
 
    - button3 do **nineButton**
 
-   - button4 do **podziałuButton**
+   - button4 do **divisionButton**
 
-   - button5, aby **wyczyścićbutton**
+   - Button5 do **clearButton**
 
    - button6 do **fourButton**
 
    - button7 do **fiveButton**
 
-   - button8 do **sześciuButton**
+   - button8 do **sixButton**
 
-   - button9 do **mnożeniaButton**
+   - button9 do **multiplicationButton**
 
-   - button11 do **jednegoButton**
+   - button11 do **oneButton**
 
    - button12 do **twoButton**
 
    - button13 do **threeButton**
 
-   - button14 do **odejmowaniaButton**
+   - button14 do **subtractionButton**
 
-   - button15 do **równegoButton**
+   - button15 do **equalsButton**
 
-   - button16 do **zeraButton**
+   - button16 do **zeroButton**
 
-   - button17, aby **zmienić przycisksignbutton**
+   - button17 do **changeSignButton**
 
-   - button18 do **przecinka.**
+   - button18 do **decimalButton**
 
-   - button19 do **dodatkuButton**
+   - button19 do **additionButton**
 
-4. Za pomocą okien **Konspekt** `Text` dokumentu i `Button` **Właściwości** zmień wartość właściwości dla każdej nazwy formantu zgodnie z następującą listą:
+4. Korzystając z okna **Konspekt dokumentu** i **Właściwości** , Zmień `Text` wartość właściwości dla każdej `Button` nazwy kontrolki zgodnie z następującą listą:
 
-   - Zmienianie właściwości tekstu formantu sevenButton na **7**
+   - Zmień właściwość Text formantu sevenButton na **7**
 
-   - Zmienianie właściwości tekstu formantu eightButton na **8**
+   - Zmień właściwość Text formantu eightButton na **8**
 
-   - Zmienianie właściwości tekstu formantu nineButton na **9**
+   - Zmień właściwość Text formantu nineButton na **9**
 
-   - Zmienianie właściwości tekstu formantu formantu divisionButton na **/** (ukośnik do przodu)
+   - Zmień właściwość Text formantu divisionButton na **/** (ukośnik)
 
-   - Zmienianie właściwości tekstu formantu clearButton na **Wyczyść**
+   - Zmień właściwość Text formantu clearButton na **Clear**
 
-   - Zmienianie właściwości tekstu formantu fourButton na **4**
+   - Zmień właściwość Text formantu fourButton na **4**
 
-   - Zmienianie właściwości tekstu formantu fiveButton na **5**
+   - Zmień właściwość Text formantu fiveButton na **5**
 
-   - Zmienianie właściwości tekstu formantu sixButton na **6**
+   - Zmień właściwość Text formantu sixButton na **6**
 
-   - Zmienianie właściwości tekstu sterującego mnożeniabutton na **\*** (gwiazdka)
+   - Zmień właściwość Text formantu multiplicationButton na **\*** (gwiazdka)
 
-   - Zmienianie właściwości tekstu formantu oneButton na **1**
+   - Zmień właściwość Text formantu oneButton na **1**
 
-   - Zmienianie właściwości tekstu formantu twoButton na **2**
+   - Zmień właściwość Text formantu twoButton na **2**
 
-   - Zmienianie właściwości tekstu formantu threeButton na **3**
+   - Zmień właściwość Text formantu threeButton na **3**
 
-   - Zmienianie właściwości tekstu sterującego przycisku odejmowania na **-** (łącznik)
+   - Zmień właściwość Text formantu subtractionButton na **-** (łącznik)
 
-   - Zmień właściwość tekstu formantu **=** equalsButton na (znak równości)
+   - Zmień właściwość tekstu formantu equalsButton na **=** (znak równości)
 
-   - Zmienianie właściwości tekstu formantu zeroButton na **0**
+   - Zmień właściwość Text formantu zeroButton na **0**
 
-   - Zmienianie właściwości tekstu formantu changeSignButton na**+/-**
+   - Zmień właściwość Text formantu changeSignButton na**+/-**
 
-   - Zmień właściwość tekstu sterującego z przecinka na **.** (kropka)
+   - Zmień właściwość Text formantu decimalButton na **.** (kropka)
 
-   - Zmień właściwość tekstu formantu additionButton na **+** (plus znak)
+   - Zmień właściwość Text formantu additionButton na **+** (znak plus)
 
-5. Na powierzchni projektanta zaznacz `Button` wszystkie formanty, zaznaczając je przy jednoczesnym przytrzymywanie klawisza **Shift.**
+5. Na powierzchni projektanta zaznacz wszystkie `Button` kontrolki, zaznaczając je, przytrzymując klawisz **SHIFT** .
 
-6. W oknie **Właściwości** rozwiń `Font` węzeł właściwości. Ustaw `Size` **wartość 14** `Bold` i ustawioną `Button` na wartość **true** dla wszystkich formantów.
+6. W oknie **Właściwości** rozwiń `Font` węzeł właściwości. Ustaw wartość `Size` na **14**i ustaw dla `Bold` wszystkich kontrolek opcję **true** `Button` .
 
-To kończy projekt DemoCalculator kontroli. Pozostaje tylko podać logikę kalkulatora.
+Spowoduje to zakończenie projektowania formantu DemoCalculator. To wszystko, co ma na celu dostarczenie logiki kalkulatora.
 
-## <a name="implement-event-handlers"></a>Implementowanie programów obsługi zdarzeń
+## <a name="implement-event-handlers"></a>Implementowanie obsługi zdarzeń
 
-Przyciski w democalculator kontroli mają programy obsługi zdarzeń, które mogą służyć do implementacji wiele logiki kalkulatora. Projektant formularzy systemu Windows umożliwia zaimplementowanie wycinków wszystkich programów obsługi zdarzeń dla wszystkich przycisków za pomocą jednego dwukrotnego kliknięcia.
+Przyciski w kontrolce DemoCalculator mają procedury obsługi zdarzeń, których można użyć do wdrożenia większości logiki kalkulatora. Projektant formularzy systemu Windows umożliwia zaimplementowanie wycinków wszystkich programów obsługi zdarzeń dla wszystkich przycisków jednym kliknięciem.
 
-1. Na powierzchni projektanta zaznacz `Button` wszystkie formanty, zaznaczając je przy jednoczesnym przytrzymywanie klawisza **Shift.**
+1. Na powierzchni projektanta zaznacz wszystkie `Button` kontrolki, zaznaczając je, przytrzymując klawisz **SHIFT** .
 
-2. Kliknij dwukrotnie jeden `Button` z formantów.
+2. Kliknij dwukrotnie jedną z `Button` kontrolek.
 
-   Edytor kodu otwiera programy obsługi zdarzeń generowane przez projektanta.
+   Edytor kodu zostanie otwarty dla programów obsługi zdarzeń generowanych przez projektanta.
 
-## <a name="test-the-control"></a>Przetestuj formant
+## <a name="test-the-control"></a>Testowanie kontrolki
 
-Ponieważ DemoCalculator kontroli dziedziczy <xref:System.Windows.Forms.UserControl> z klasy, można przetestować jego zachowanie za pomocą **UserControl Test Container**. Aby uzyskać więcej informacji, zobacz [Jak: Testowanie zachowania w czasie wykonywania UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
+Ponieważ kontrolka DemoCalculator dziedziczy z <xref:System.Windows.Forms.UserControl> klasy, można testować jej zachowanie z **kontenerem test UserControl**. Aby uzyskać więcej informacji, zobacz [jak: testowanie zachowania elementu UserControl w czasie wykonywania](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
 
-1. Naciśnij **klawisz F5,** aby utworzyć i uruchomić kontrolę DemoCalculator w **kontenerze testowym UserControl**.
+1. Naciśnij klawisz **F5** , aby skompilować i uruchomić kontrolkę DemoCalculator w **kontenerze Test UserControl**.
 
-2. Zaznacz obramowanie `SplitContainer` między panelami i przeciągnij je w lewo i w prawo. I `TableLayoutPanel` wszystkie jego elementy sterujące podrzędne zmieścić się, aby zmieścić się w dostępnej przestrzeni.
+2. Zaznacz obramowanie między `SplitContainer` panelami i przeciągnij je w lewo i w prawo. `TableLayoutPanel`I wszystkie jego kontrolki podrzędne zmienią rozmiar tak, aby mieściły się w dostępnym miejscu.
 
-3. Po zakończeniu testowania formantu wybierz przycisk **Zamknij**.
+3. Po zakończeniu testowania kontrolki wybierz pozycję **Zamknij**.
 
-## <a name="use-the-control-on-a-form"></a>Używanie formantu w formularzu
+## <a name="use-the-control-on-a-form"></a>Korzystanie z kontrolki w formularzu
 
-Formant DemoCalculator może być używany w innych formantów złożonych lub w formularzu. W poniższej procedurze opisano sposób korzystania z niego.
+Formant DemoCalculator może być używany w innych formantach złożonych lub w formularzu. Poniższa procedura zawiera opis sposobu korzystania z niego.
 
 ### <a name="create-the-project"></a>Tworzenie projektu
 
-Pierwszym krokiem jest utworzenie projektu aplikacji. Użyjesz tego projektu do utworzenia aplikacji, która pokazuje formant niestandardowy.
+Pierwszym krokiem jest utworzenie projektu aplikacji. Ten projekt będzie używany do kompilowania aplikacji, która wyświetla kontrolkę niestandardową.
 
-1. Utwórz nowy projekt **aplikacji formularzy systemu Windows** i nadaj mu nazwę **DemoCalculatorTest**.
+1. Utwórz nowy projekt **aplikacji Windows Forms** i nadaj mu nazwę **DemoCalculatorTest**.
 
-2. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy projekt **DemoCalculatorTest,** a następnie wybierz polecenie **Dodaj odwołanie,** aby otworzyć okno dialogowe **Dodawanie odwołania.**
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DemoCalculatorTest** , a następnie wybierz pozycję **Dodaj odwołanie** , aby otworzyć okno dialogowe **Dodawanie odwołania** .
 
-3. Wybierz **projekt** kartę, a następnie kliknij dwukrotnie projekt DemoCalculatorLib, aby dodać odwołanie do projektu testowego.
+3. Wybierz kartę **projekty** , a następnie kliknij dwukrotnie projekt DemoCalculatorLib, aby dodać odwołanie do projektu testowego.
 
-4. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy pozycję **DemoCalculatorTest**, a następnie wybierz polecenie **Ustaw jako projekt startowy**.
+4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **DemoCalculatorTest**, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
 
-5. W projektancie formularzy systemu Windows zwiększ rozmiar formularza do około **700 x 500**.
+5. W Projektant formularzy systemu Windows Zwiększ rozmiar formularza do około **700 x 500**.
 
-### <a name="use-the-control-in-the-forms-layout"></a>Używanie formantu w układzie formularza
+### <a name="use-the-control-in-the-forms-layout"></a>Użyj kontrolki w układzie formularza
 
-Aby użyć democalculator kontroli w aplikacji, należy umieścić go w formularzu.
+Aby użyć kontrolki DemoCalculator w aplikacji, należy ją umieścić w formularzu.
 
-1. W **przyborniku**rozwiń węzeł **Składniki DemoCalculatorLib.**
+1. W **przyborniku**rozwiń węzeł **składniki DemoCalculatorLib** .
 
-2. Przeciągnij kontrolkę **DemoCalculator** z **przybornika** na formularz. Przenieś formant do lewego górnego rogu formularza. Gdy formant znajduje się blisko obramowań formularza, *pojawią* się linie przyciągania. Snaplines wskazują odległość `Padding` właściwości formularza i `Margin` właściwości formantu. Ustawić formant w miejscu wskazanym przez linie zatrzaskowe.
+2. Przeciągnij formant **DemoCalculator** z **przybornika** do formularza. Przesuń formant do lewego górnego rogu formularza. Gdy kontrolka zbliża się do obramowania formularza, zostanie wyświetlona *linii wyrównania* . Linii wyrównania wskazują odległość `Padding` właściwości formularza i właściwości kontrolki `Margin` . Umieść formant w lokalizacji wskazanej przez linii wyrównania.
 
-   Aby uzyskać więcej informacji, zobacz [Przewodnik: Rozmieszczanie formantów przy użyciu linii przyciągania](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
+   Aby uzyskać więcej informacji, zobacz [Przewodnik: porządkowanie formantów przy użyciu linii wyrównania](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
 
-3. Przeciągnij `Button` formant z **przybornika** i upuść go na formularz.
+3. Przeciągnij `Button` kontrolkę z **przybornika** i upuść ją na formularzu.
 
-4. Przesuń `Button` kontrolkę wokół kontrolki DemoCalculator i obserwuj, gdzie pojawiają się snapline. Za pomocą tej funkcji można precyzyjnie i łatwo wyrównać formanty. Usuń `Button` formant po zakończeniu.
+4. Przenieś `Button` kontrolkę wokół kontrolki DemoCalculator i obserwuj, gdzie pojawia się linii wyrównania. Możesz precyzyjnie dostosować kontrolki za pomocą tej funkcji. Usuń `Button` kontrolkę po zakończeniu.
 
-5. Wybierz prawym przyciskiem wyboru kontrolka DemoCalculator, a następnie wybierz polecenie **Właściwości**.
+5. Wybierz formant DemoCalculator prawym przyciskiem myszy, a następnie wybierz polecenie **Właściwości**.
 
-6. Zmień wartość właściwości `Dock` na `Fill`.
+6. Zmień wartość `Dock` właściwości na `Fill` .
 
-7. Wybierz formularz, a następnie `Padding` rozwiń węzeł właściwości. Zmień wartość **All** na **20**.
+7. Wybierz formularz, a następnie rozwiń `Padding` węzeł właściwości. Zmień wartość **wszystkie** na **20**.
 
-   Rozmiar DemoCalculator kontroli jest zmniejszona, aby `Padding` pomieścić nową wartość formularza.
+   Rozmiar formantu DemoCalculator jest zmniejszany w celu uwzględnienia nowej `Padding` wartości formularza.
 
-8. Zmienić rozmiar formularza, przeciągając różne uchwyty zmiany rozmiaru do różnych pozycji. Należy obserwować, jak formant DemoCalculator jest zmieniany, aby pasował.
+8. Zmień rozmiar formularza, przeciągając różne uchwyty zmiany rozmiaru na różne pozycje. Obserwuj, jak zmieniany jest rozmiar kontrolki DemoCalculator.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym artykule pokazano, jak skonstruować interfejs użytkownika dla prostego kalkulatora. Aby kontynuować, można rozszerzyć jego funkcjonalność, implementując logikę kalkulatora, a następnie [opublikować aplikację za pomocą ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Lub przejdź do innego samouczka, w którym [tworzysz przeglądarkę obrazów przy użyciu formularzy systemu Windows](../ide/tutorial-1-create-a-picture-viewer.md).
+W tym artykule przedstawiono sposób konstruowania interfejsu użytkownika dla prostego kalkulatora. Aby kontynuować, możesz przedłużyć jego funkcjonalność, implementując logikę kalkulatora, a następnie [publikując aplikację przy użyciu technologii ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Lub przejdź do innego samouczka, w którym [tworzysz Podgląd obrazów przy użyciu Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [formanty Formularzy systemu Windows](/dotnet/framework/winforms/controls/)
-- [Kontrolki ułatwień dostępu dla formularzy systemu Windows](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
-- [Publikowanie przy użyciu funkcji ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Ułatwienia dostępu dla formantów Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+- [Publikowanie przy użyciu technologii ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

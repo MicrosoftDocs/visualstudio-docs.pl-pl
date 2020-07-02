@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280257"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816699"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Szybki Start: pierwsze spojrzenie na narzędzia profilowania
+# <a name="first-look-at-profiling-tools"></a>Pierwsze spojrzenie na narzędzia profilowania
 
 Program Visual Studio oferuje różne narzędzia profilowania, które ułatwiają diagnozowanie różnych rodzajów problemów z wydajnością w zależności od typu aplikacji. W tym artykule podajemy szybki przegląd najpopularniejszych narzędzi profilowania.
 
@@ -131,7 +131,7 @@ W przypadku aplikacji .NET Core, które używają ADO.NET lub Entity Framework C
 
 Narzędzie wyświetla każde zapytanie w widoku listy. Można wyświetlić informacje takie jak godzina rozpoczęcia zapytania i czas trwania.
 
-![Alokacja](./media/db-gotosource.png "Alokacja")
+![Dział](./media/db-gotosource.png "Alokacja")
 
 ::: moniker-end
 
@@ -204,9 +204,9 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 |[Alokacja obiektu platformy .NET](../profiling/dotnet-alloc-tool.md)|tak (tylko platforma .NET)|tak|tak|
 |[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|nie|
-|[Podgląd zdarzeń](../profiling/perftips.md)|tak|tak|tak|
-|[Asynchroniczne środowisko .NET](../profiling/perftips.md)|tak (tylko platforma .NET)|tak|tak|
-|[Baza danych](../profiling/perftips.md)|tak (tylko platforma .NET Core)|nie|tak (tylko ASP.NET Core)|
+|[Podgląd zdarzeń](../profiling/events-viewer.md)|tak|tak|tak|
+|[.NET Async](../profiling/analyze-async.md)|tak (tylko platforma .NET)|tak|tak|
+|[Baza danych](../profiling/analyze-database.md)|tak (tylko platforma .NET Core)|nie|tak (tylko ASP.NET Core)|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|nie|nie|nie|
 |[IntelliTrace](../debugger/intellitrace.md)|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|
 ::: moniker-end
@@ -227,5 +227,5 @@ Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanyc
 ::: moniker-end
 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Debugowanie w Visual Studio](../debugger/debugger-feature-tour.md)

@@ -1,19 +1,19 @@
 ---
 title: 'Wskazówki: korzystanie z funkcji edytora XML'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592467"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817401"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: korzystanie z funkcji edytora XML
 
@@ -28,13 +28,13 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 2. W okienku **Szablony** wybierz pozycję **plik XML** , a następnie kliknij pozycję **Otwórz**.
 
-     Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">`.
+     Nowy plik zostanie otwarty w edytorze. Plik zawiera domyślną deklarację XML, `<?xml version="1.0" encoding="utf-8">` .
 
-3. W oknie właściwości dokumentu kliknij przycisk przeglądania ( **...** ) w polu **schematy** .
+3. W oknie właściwości dokumentu kliknij przycisk przeglądania (**...**) w polu **schematy** .
 
      Zostanie wyświetlone okno dialogowe **schematy XSD** .
 
-4. Kliknij przycisk **Dodaj**.
+4. Kliknij pozycję **Dodaj**.
 
      Zostanie wyświetlone okno dialogowe **otwieranie schematu XSD** .
 
@@ -58,23 +58,23 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
     - **Pracownik** , aby dodać element główny.
 
-2. Wybierz pozycję **&lt;!--** , aby dodać węzeł komentarza, a następnie naciśnij klawisz **Enter**.
+2. Wybierz pozycję ** &lt; !--** , aby dodać węzeł komentarza, a następnie naciśnij klawisz **Enter**.
 
      Edytor wstawia tag końcowy komentarza i umieszcza kursor między tagami początkowymi i końcowymi komentarzami.
 
 3. Wpisz w **testowym pliku XML**.
 
-4. W nowym wierszu wpisz `<`i wybierz pozycję **Pracownik** z listy członków.
+4. W nowym wierszu wpisz `<` i wybierz pozycję **Employee** z listy członków.
 
-     Edytor dodaje początek elementu XML, `<employee`. W tym momencie można dodać atrybuty do elementu lub zamknąć tag początkowy, wpisując `>`.
+     Edytor dodaje początek elementu XML, `<employee` . W tym momencie można dodać atrybuty do elementu lub zamknąć tag początkowy, wpisując ciąg `>` .
 
-5. Wpisz `>`, aby zamknąć tag.
+5. Wpisz, `>` Aby zamknąć tag.
 
-6. Edytor dodaje tag końcowy. Tag końcowy jest dodawany ze falistą podkreśleniem wskazującym błąd walidacji. **Etykietka narzędzia** wyświetla komunikat: **element "Employee" ma niekompletną zawartość. Oczekiwano elementu "ID"** .
+6. Edytor dodaje tag końcowy. Tag końcowy jest dodawany ze falistą podkreśleniem wskazującym błąd walidacji. **Etykietka narzędzia** wyświetla komunikat: **element "Employee" ma niekompletną zawartość. Oczekiwano elementu "ID"**.
 
-7. Wpisz `<` i wybierz **Identyfikator** z listy elementów członkowskich. Następnie wpisz `>`.
+7. Wpisz `<` i wybierz **Identyfikator** z listy elementów członkowskich. Następnie wpisz polecenie `>` .
 
-     Edytor dodaje element XML, `<ID></ID>`i położenie kursora po tagu początkowym ID.
+     Edytor dodaje element XML, `<ID></ID>` i położenie kursora po tagu początkowym ID.
 
 8. Wpisz **ABC**.
 
@@ -86,17 +86,17 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 10. Wróć do pliku XML i Zastąp tekst **ABC** tekstem **123**.
 
-     Podkreślenie faliste i **etykietka narzędzia** są czyszczone pod wartością elementu ID. **Etykietka narzędzia** dla tagu końcowego pracownika wyświetla teraz komunikat: **element "pracownik" ma niekompletną zawartość. Oczekiwano daty "zatrudnienie"** .
+     Podkreślenie faliste i **etykietka narzędzia** są czyszczone pod wartością elementu ID. **Etykietka narzędzia** dla tagu końcowego pracownika wyświetla teraz komunikat: **element "pracownik" ma niekompletną zawartość. Oczekiwano daty "zatrudnienie"**.
 
-11. Umieść kursor po tagu End ID, wpisz `<`, wybierz pozycję **Zatrudnij** z listy członków, a następnie wpisz `>`.
+11. Umieść kursor po tagu End ID, wpisz tekst `<` , wybierz pozycję **Zatrudnij** z listy członków, a następnie wpisz tekst `>` .
 
-     Edytor dodaje element XML, `<hire-date></hire-date>`i położenie kursora po tagu początkowym zatrudnienia.
+     Edytor dodaje element XML, i umieszcza `<hire-date></hire-date>` kursor po tagu początkowym data zatrudnienia.
 
 12. Wpisz wartość **2003-01-10** dla wartości daty zatrudnienia.
 
 ## <a name="to-format-the-xml-document"></a>Aby sformatować dokument XML
 
-- Wybierz przycisk **Formatuj dokument** na pasku narzędzi edytora XML lub naciśnij **klawisze CTRL**+**E**,**D**.
+- Wybierz przycisk **Formatuj dokument** na pasku narzędzi edytora XML lub naciśnij **klawisze CTRL** + **E**,**D**.
 
    ![Przycisk formatowania dokumentu XML w programie Visual Studio](media/format-xml-document.png)
 
@@ -106,7 +106,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 1. Z menu **Plik** wybierz pozycję **Zapisz jako**.
 
-     Zostanie wyświetlone okno dialogowe **Zapisywanie pliku jako** . Domyślną nazwą pliku jest *"xmlplik1"* .
+     Zostanie wyświetlone okno dialogowe **Zapisywanie pliku jako** . Domyślną nazwą pliku jest *"xmlplik1"*.
 
 2. Wprowadź nazwę pliku i lokalizację dokumentu XML, a następnie kliknij przycisk **Zapisz**.
 

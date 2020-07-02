@@ -3,7 +3,7 @@ title: Nieprawidłowy znak (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1014
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 267dcc5af0870132a14c679c7fc26589d6b776c9
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576573"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816946"
 ---
 # <a name="invalid-character-javascript"></a>Nieprawidłowy znak (JavaScript)
-Identyfikator jest tworzony przy użyciu znaku (lub znaków), który nie został rozpoznany jako prawidłowy przez kompilator [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Prawidłowe znaki są następujące:  
+Identyfikator jest tworzony przy użyciu znaku (lub znaków), który nie jest rozpoznawany przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilator jako prawidłowy. Prawidłowe znaki są następujące:  
   
 - Pierwszy znak musi być literą ASCII (wielką lub małą literą) lub podkreśleniem (_).  
   
@@ -32,9 +32,9 @@ Identyfikator jest tworzony przy użyciu znaku (lub znaków), który nie został
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
-- Unikaj używania znaków, które nie są częścią definicji języka [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+- Unikaj używania znaków, które nie są częścią [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definicji języka.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Zmienne](../../javascript/variables-javascript.md)   
+ [Modyfikacj](../../javascript/variables-javascript.md)   
  [Znaki specjalne](../../javascript/advanced/special-characters-javascript.md)   
  [Typy danych](../../javascript/data-types-javascript.md)

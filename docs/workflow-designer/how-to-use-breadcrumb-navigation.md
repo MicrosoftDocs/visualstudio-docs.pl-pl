@@ -1,21 +1,21 @@
 ---
 title: 'Projektant przepływu pracy — How to: use webnawigacji'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584572"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817466"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Instrukcje: korzystanie z nawigacji ze stron nadrzędnych
+# <a name="how-to-use-breadcrumb-navigation"></a>Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych
 
 Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetlane w Projektant przepływu pracy:
 
@@ -38,7 +38,7 @@ Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetl
 2. Gdy stan rozwinięcia zostanie zmieniony przez kliknięcie przycisku, nowy stan rozwinięcia zostanie zapisany w języku XAML.
 
     > [!WARNING]
-    > Nie wszystkie działania mogą być rozwinięte. Istnieją dwa przypadki, w których działanie nie może być rozwinięte: element nadrzędny działania nie zezwala na rozszerzanie jego elementów podrzędnych, (na przykład działania w schemacie blokowym nie mogą być rozwinięte) lub Projektant działań nie zezwala na korzystanie z niego być rozwinięte. Chociaż żaden z projektantów działań uwzględnionych w Projektant przepływu pracy nie ma tego samego zachowania, niektóre działania niestandardowe mogą spowodować takie zachowanie.
+    > Nie wszystkie działania mogą być rozwinięte. Istnieją dwa przypadki, w których działanie nie może być rozwinięte: element nadrzędny działania nie zezwala na rozszerzanie jego elementów podrzędnych, (na przykład działania w schemacie blokowym nie mogą być rozwinięte) lub Projektant działań nie zezwala na rozszerzanie się w miejscu. Chociaż żaden z projektantów działań uwzględnionych w Projektant przepływu pracy nie ma tego samego zachowania, niektóre działania niestandardowe mogą spowodować takie zachowanie.
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Rozwijanie wszystkich lub zwijanie wszystkich działań
 
@@ -47,7 +47,7 @@ Istnieją trzy podstawowe sposoby zmiany zestawu działań, które są wyświetl
 2. Po zastosowaniu stanu rozwiń wszystko lub Zwiń wszystko można kliknąć przycisk **Przywróć** , który pojawia się z powrotem do przeglądania stanu poprzednio zastosowanego do poszczególnych działań.
 
     > [!WARNING]
-    > Jeśli działanie, takie jak <xref:System.Activities.Statements.Flowchart>, wybrało rozwinięte miejsce, funkcjonalność skojarzona z przyciskami **Rozwiń wszystko** i **Zwiń wszystko** jest wyłączona w projektancie **schematów blokowych** . Aby uzyskać więcej informacji na temat projektanta **schematów blokowych** , zobacz temat [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) .
+    > Jeśli działanie, takie jak <xref:System.Activities.Statements.Flowchart> , wybrało rozwinięte miejsce, funkcjonalność skojarzona z przyciskami **Rozwiń wszystko** i **Zwiń wszystko** jest wyłączona w projektancie **schematów blokowych** . Aby uzyskać więcej informacji na temat projektanta **schematów blokowych** , zobacz temat [schemat blokowy](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Rozszerzenie ALL ma również szczególny efekt w projektantach działań **Switch** i **TryCatch** . Po kliknięciu przycisku **Rozwiń wszystko**wszystkie przypadki przełączania i wszystkie bloki try/catch/finally są wyświetlane. Kliknięcie przycisku **Przywróć** lub **Zwiń wszystko** zwraca tych projektantów do ich domyślnego stanu, z którego można kliknąć pojedynczy przypadek/blok, aby wyświetlić jego zawartość.

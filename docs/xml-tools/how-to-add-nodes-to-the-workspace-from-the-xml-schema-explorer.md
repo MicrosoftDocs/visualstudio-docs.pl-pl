@@ -1,19 +1,19 @@
 ---
 title: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2049b8da1caa4e0af0afc52aec6e75f499d85b8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 751e291188e6357343936d61d56f07bd86f97eaf
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592818"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816400"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Instrukcje: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML
 
@@ -26,23 +26,23 @@ W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projekta
 
 1. Wykonaj kroki opisane w temacie [How to: Create i Edit a XSD File Schema](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Kliknij prawym przyciskiem myszy węzeł `PurchaseOrderType` w Eksploratorze XSD. Wybierz pozycję **Pokaż w widoku wykresu**.
+2. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w EKSPLORATORZE XSD. Wybierz pozycję **Pokaż w widoku wykresu**.
 
-     Węzeł `purchaseOrderType` pojawia się na powierzchni projektowej widoku wykresu.
+     `purchaseOrderType`Węzeł pojawia się na powierzchni projektowej widoku wykresu.
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Aby przeciągnąć i upuścić węzeł w widoku
 
-1. Kliknij prawym przyciskiem myszy węzeł `PurchaseOrderType` w widoku wykresu. Wybierz pozycję **Pokaż w Eksploratorze schematu XML**.
+1. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w widoku wykresu. Wybierz pozycję **Pokaż w Eksploratorze schematu XML**.
 
      Węzeł zostanie wyróżniony w **Eksploratorze schematu XML**.
 
-2. Kliknij prawym przyciskiem myszy węzeł `PurchaseOrderType` w **Eksploratorze schematu XML** i wybierz polecenie **Pokaż wszystkie odwołania**.
+2. Kliknij prawym przyciskiem myszy `PurchaseOrderType` węzeł w **Eksploratorze schematu XML** i wybierz polecenie **Pokaż wszystkie odwołania**.
 
-     `purchaseOrder` węzeł jest wyróżniony.
+     `purchaseOrder`Węzeł zostanie wyróżniony.
 
-3. Przeciągnij węzeł `purchaseOrder` do widoku wykresu.
+3. Przeciągnij `purchaseOrder` węzeł do widoku wykresu.
 
-     Węzeł `purchaseOrder` i węzeł `PurchaseOrderType` są wyświetlane obok siebie na powierzchni projektowej widoku wykresu. Ze względu na to, że dwa węzły są powiązane (`purchaseOrder` element jest typu `PurchaseOrderType`), zostanie narysowana strzałka między nimi.
+     `purchaseOrder`Węzeł i `PurchaseOrderType` węzeł są wyświetlane obok siebie na powierzchni projektowej widoku wykresu. Ponieważ dwa węzły są powiązane ( `purchaseOrder` element jest `PurchaseOrderType` typu), zostanie narysowana strzałka między nimi.
 
 ## <a name="to-add-nodes-using-the-schema-explorer-search-capability"></a>Aby dodać węzły przy użyciu funkcji wyszukiwania Eksploratora schematu
 
@@ -56,7 +56,7 @@ W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projekta
 
      ![Wynik wyszukiwania Eksploratora schematu XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     Węzeł `purchaseOrder` i węzeł `PurchaseOrderType` są wyświetlane obok siebie na powierzchni projektowej [widoku wykresu](../xml-tools/graph-view.md). Ze względu na to, że dwa węzły są powiązane (`purchaseOrder` element jest typu `PurchaseOrderType`), zostanie narysowana strzałka między nimi.
+     `purchaseOrder`Węzeł i `PurchaseOrderType` węzeł są wyświetlane obok siebie na powierzchni projektowej [widoku wykresu](../xml-tools/graph-view.md). Ponieważ dwa węzły są powiązane ( `purchaseOrder` element jest `PurchaseOrderType` typu), zostanie narysowana strzałka między nimi.
 
 ## <a name="see-also"></a>Zobacz także
 

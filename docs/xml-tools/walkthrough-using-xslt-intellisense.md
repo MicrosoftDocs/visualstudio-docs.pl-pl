@@ -1,19 +1,19 @@
 ---
 title: 'Przewodnik: używanie funkcji XSLT IntelliSense'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adeab012e78d5f49ca94d1d8135aaf491839c767
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a085627d598bfcc969c2e76d717a2f49a31922b2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592441"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817284"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Przewodnik: używanie funkcji XSLT IntelliSense
 
@@ -45,22 +45,22 @@ W tym instruktażu pokazano, jak używać funkcji IntelliSense XSLT do autouzupe
     </xsl:stylesheet>
     ```
 
-2. Wstaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz **Enter**. Następnie zacznij pisać następujący `xsl:call-template` element:
+2. Wstaw kursor po `<xsl:template name="msg23" match="msg23">` naciśnięciu klawisza **Enter**. Następnie zacznij wpisywać następujący `xsl:call-template` element:
 
     ```xml
     <xsl:call-template name="localized-message">
     </xsl:call-template>
     ```
 
-     Lista nazw szablonów pojawia się w atrybucie `name=""` elementu `xsl:call-template` podczas wpisywania.
+     Lista nazw szablonów pojawia się w `name=""` atrybucie `xsl:call-template` elementu podczas pisania.
 
-3. Wstaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz **Enter**. Następnie zacznij pisać następujący `xsl:with-param` element:
+3. Wstaw kursor po `<xsl:call-template name="localized-message">` naciśnięciu klawisza **Enter**. Następnie zacznij wpisywać następujący `xsl:with-param` element:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
     ```
 
-     Lista nazw parametrów pojawia się w atrybucie `name=""` elementu `xsl:with-param`.
+     Lista nazw parametrów pojawia się w `name=""` atrybucie `xsl:with-param` elementu.
 
 ## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Aby użyć funkcji IntelliSense w atrybucie Mode elementu xsl: Apply-templates
 
@@ -111,13 +111,13 @@ W tym instruktażu pokazano, jak używać funkcji IntelliSense XSLT do autouzupe
     </xsl:stylesheet>
     ```
 
-2. Wstaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz **Enter**. Następnie zacznij pisać następujący `xsl: apply-templates` element:
+2. Wstaw kursor po `<xsl:apply-templates select="phone" />` naciśnięciu klawisza **Enter**. Następnie zacznij wpisywać następujący `xsl: apply-templates` element:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
     ```
 
-     Lista trybów szablonów pojawia się w atrybucie `mode=""` elementu `xsl:apply-templates`.
+     Lista trybów szablonów pojawia się w `mode=""` atrybucie `xsl:apply-templates` elementu.
 
 ## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Aby użyć funkcji IntelliSense we właściwościach stylesheet-prefix i prefix elementu xsl: Namespace-alias
 
@@ -152,14 +152,14 @@ W tym instruktażu pokazano, jak używać funkcji IntelliSense XSLT do autouzupe
     </xsl:stylesheet>
     ```
 
-2. Wstaw kursor po `<xsl:stylesheet version="1.0">` i naciśnij klawisz **Enter**. Następnie zacznij pisać następujący `xsl:namespace-alias` element:
+2. Wstaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` naciśnięciu klawisza **Enter**. Następnie zacznij wpisywać następujący `xsl:namespace-alias` element:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
     ```
 
-     Zauważ, jak lista prefiksów pojawiła się w `stylesheet-prefix` i `result-prefix` atrybutów elementu `xsl:namespace-alias`.
+     Zwróć uwagę na to, jak lista prefiksów występuje `stylesheet-prefix` w `result-prefix` atrybuty i `xsl:namespace-alias` elementu.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Funkcje IntelliSense edytora XML](../xml-tools/xml-editor-intellisense-features.md)
+- [Funkcje IntelliSense w edytorze XML](../xml-tools/xml-editor-intellisense-features.md)
