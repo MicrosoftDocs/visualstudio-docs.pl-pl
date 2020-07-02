@@ -187,6 +187,7 @@ f1_keywords:
 - CA2013
 - CA2014
 - CA2015
+- CA2016
 - CA2100
 - CA2101
 - CA2102
@@ -289,12 +290,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f8188a83a11811cc73a3b38c45df8dd7d27d1c1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814814"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835436"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
 
@@ -433,7 +434,7 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA1801 | [CA1801: Dokonaj przeglądu nieużywanych parametrów](../code-quality/ca1801.md) | Podpis metody zawiera parametr, który nie jest używany w jej treści. |
 | CA1802 |[CA1802: Używaj literałów w odpowiednich miejscach](../code-quality/ca1802.md) |Pole jest zadeklarowane jako static i tylko do odczytu (Shared i ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) i jest inicjowane przy użyciu wartości obliczanej w czasie kompilacji. Ponieważ wartość przypisana do pola Target jest obliczanej w czasie kompilacji, należy zmienić deklarację na pole const (const w), [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aby wartość była obliczana w czasie kompilacji, a nie w czasie wykonywania. |
 | CA1804 | [CA1804: Usuwaj nieużywane zmienne lokalne](../code-quality/ca1804.md) | Nieużywane zmienne lokalne i niepotrzebne przydziały zwiększają rozmiar zestawu i zmniejszają wydajność. |
-| CA1805 | [CA1805: nie należy inicjować niepotrzebnie](../code-quality/ca1805.md) | Środowisko uruchomieniowe platformy .NET inicjuje wszystkie pola typów odwołań do ich wartości domyślnych przed uruchomieniem konstruktora. W większości przypadków jawne zainicjowanie pola do jego wartości domyślnej jest nadmiarowe, co zwiększa koszty konserwacji i może obniżyć wydajność (na przykład większy rozmiar zestawu). |
+| CA1805 | [CA1805: Nie inicjuj niepotrzebnie](../code-quality/ca1805.md) | Środowisko uruchomieniowe platformy .NET inicjuje wszystkie pola typów odwołań do ich wartości domyślnych przed uruchomieniem konstruktora. W większości przypadków jawne zainicjowanie pola do jego wartości domyślnej jest nadmiarowe, co zwiększa koszty konserwacji i może obniżyć wydajność (na przykład większy rozmiar zestawu). |
 | CA1806 | [CA1806: Nie ignoruj wyników metod](../code-quality/ca1806.md) | Nowy obiekt jest tworzony, ale nigdy nie jest używany; albo metoda, która tworzy i zwraca nowy ciąg, jest wywoływana, ale nowy ciąg nigdy nie jest używany; albo metody COM lub P/Invoke zwracają HRESULT lub kod błędu, który nigdy nie jest używany. |
 | CA1809 |[CA1809: Unikaj zbyt wielu zmiennych lokalnych](../code-quality/ca1809.md) | Typowa optymalizacja wydajności polega na przechowywaniu wartości w rejestrze procesora zamiast w pamięci, co określa się jako „rejestrowanie wartości”. Aby zwiększyć szansę, że wszystkie zmienne lokalne są przechowywane, Ogranicz liczbę zmiennych lokalnych do 64. |
 | CA1810 | [CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo](../code-quality/ca1810.md) | Podczas gdy typ deklaruje jawny, statyczny konstruktor, kompilator just in time (JIT) do każdej metody statycznej dodaje sprawdzenie i konstruktora wystąpienia, aby upewnić się, że konstruktor statyczny został wcześniej wywołany. Sprawdzenia konstruktora statycznego mogą obniżyć wydajność. |
@@ -475,6 +476,7 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA2013 | [CA2013: Nie używaj metody ReferenceEquals z typami wartości](ca2013.md) | Porównując wartości przy użyciu <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> , jeśli obja i objB są typami wartości, są one opakowane przed przekazaniem ich do <xref:System.Object.ReferenceEquals%2A> metody. Oznacza to, że nawet jeśli zarówno objA, jak i objB reprezentują to samo wystąpienie typu wartości, <xref:System.Object.ReferenceEquals%2A> Metoda jednak zwróci wartość false. |
 | CA2014 | [CA2014: nie używaj stackalloc w pętlach.](ca2014.md) | Przestrzeń stosu przydzielona przez stackalloc jest wydawana tylko na końcu wywołania bieżącej metody.  Użycie jej w pętli może spowodować powstanie nieograniczonego wzrostu stosu i ostateczne warunki przepełnienia stosu. |
 | CA2015 | [CA2015: nie Definiuj finalizatorów dla typów pochodzących z Pamięciobject &lt; T&gt;](ca2015.md) | Dodanie finalizatora do typu pochodzącego od <xref:System.Buffers.MemoryManager%601> może pozwolić na zwolnienie pamięci, gdy jest nadal używany przez <xref:System.Span%601> . |
+| CA2016 | [CA2016: Prześlij dalej parametr CancellationToken do metod, które go przyjmują](ca2016.md) | Przekaż `CancellationToken` parametr do metod, które przyjmują w celu zapewnienia, że powiadomienia o anulowaniu operacji są prawidłowo propagowane, lub Przekaż `CancellationToken.None` jawnie, aby wskazać celowo niepropagowanie tokenu. |
 | CA2100 | [CA2100: Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach](../code-quality/ca2100.md) | Metoda ustawia właściwość System.Data.IDbCommand.CommandText przez użycie ciągu, który jest zbudowany z argumentem ciągu do metody. Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ciąg polecenia SQL zbudowany z danych wejściowych użytkownika jest narażony na ataki przez wstrzyknięcie kodu SQL. |
 | CA2101 |[CA2101: Określ kierowanie dla argumentów ciągu P/Invoke](../code-quality/ca2101.md) | Element członkowski wywołania platformy zezwala na dostęp częściowo zaufanych wywołań, ma parametr ciągu i nie kieruje jawnie tego ciągu. Może to spowodować potencjalne luki w zabezpieczeniach. |
 | CA2102 | [CA2102: Przechwytuj wyjątki bez atrybutu CLSCompliant w ogólnych procedurach obsługi](../code-quality/ca2102.md) | Element członkowski w zestawie, który nie jest oznaczony za pomocą atrybutu RuntimeCompatibilityAttribute lub jest oznaczony jako RuntimeCompatibility(WrapNonExceptionThrows = false), zawiera blok catch obsługujący wyjątek System.Exception i nie zawiera bezpośrednio następującego ogólnego bloku catch. |

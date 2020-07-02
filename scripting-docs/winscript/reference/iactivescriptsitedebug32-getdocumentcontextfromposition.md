@@ -5,20 +5,20 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b43b16f46cc62b6c70460d79c194b5e0d2cfede0
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574847"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835280"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-Używane przez Aparat języka do delegowania `IDebugCodeContext::GetSourceContext`.  
+Używane przez Aparat języka do delegowania `IDebugCodeContext::GetSourceContext` .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,7 +33,7 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parametry  
  `dwSourceContext`  
- podczas Zawartość źródłowa zgodnie z `ParseScriptText` lub `AddScriptlet`.  
+ podczas Zawartość źródłowa określona dla `ParseScriptText` lub `AddScriptlet` .  
   
  `uCharacterOffset`  
  podczas Przesunięcie znaku względem początku bloku skryptu lub Scriptlet.  
@@ -45,14 +45,14 @@ HRESULT GetDocumentContextFromPosition(
  określoną Kontekst dokumentu odpowiadający zakresowi pozycji znaku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Metoda zwraca `HRESULT`. Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
+ Metoda zwraca `HRESULT` . Przykładowe dopuszczalne wartości wymieniono w tabeli poniżej.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aparaty języka używają tej metody do delegowania `IDebugCodeContext::GetSourceContext`.  
+ Aparaty języka używają tej metody do delegowania `IDebugCodeContext::GetSourceContext` .  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [IActiveScriptSiteDebug32, interfejs](../../winscript/reference/iactivescriptsitedebug32-interface.md)
