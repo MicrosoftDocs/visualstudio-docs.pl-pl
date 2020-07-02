@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Pokaż błędy interfejsu użytkownika dodatku'
+title: 'Instrukcje: pokazywanie błędów interfejsu użytkownika dodatku'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,35 +15,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78cc4d2e85e2f7a5347fe0c8927c855160fbb511
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441794"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545785"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Instrukcje: Pokaż błędy interfejsu użytkownika dodatku
-  Domyślnie jeśli dodatku narzędzi VSTO prób do manipulowania Microsoft Office interfejsu użytkownika (UI) i kończy się niepowodzeniem, żaden komunikat o błędzie jest wyświetlany. Można jednak skonfigurować aplikacje Microsoft Office, aby wyświetlić komunikaty błędów, które odnoszą się do interfejsu użytkownika. Te komunikaty można użyć w celu określenia, dlaczego niestandardowa Wstążka jest niewidoczny, lub dlaczego Wstążka pojawia się, ale nie formanty są wyświetlane.
+# <a name="how-to-show-add-in-user-interface-errors"></a>Instrukcje: pokazywanie błędów interfejsu użytkownika dodatku
+  Domyślnie, jeśli dodatek narzędzi VSTO próbuje manipulować interfejsem użytkownika Microsoft Office i nie powiedzie się, zostanie wyświetlony komunikat o błędzie. Można jednak skonfigurować aplikacje Microsoft Office do wyświetlania komunikatów o błędach, które odnoszą się do interfejsu użytkownika. Za pomocą tych komunikatów można określić, dlaczego nie pojawia się wstążka niestandardowa lub dlaczego wyświetlana jest wstążka, ale nie są wyświetlane żadne kontrolki.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-## <a name="to-show-vsto-add-in-user-interface-errors"></a>Aby wyświetlić błędy interfejsu użytkownika dodatku narzędzi VSTO
+## <a name="to-show-vsto-add-in-user-interface-errors"></a>Aby wyświetlić błędy interfejsu użytkownika dodatku VSTO
 
 1. Uruchom aplikację.
 
-2. Kliknij przycisk **pliku** kartę.
+2. Kliknij kartę **plik** .
 
-3. Kliknij przycisk **opcje**.
+3. Kliknij pozycję **Opcje**.
 
-4. W okienku kategorii kliknij **zaawansowane**.
+4. W okienku kategorie kliknij pozycję **Zaawansowane**.
 
-5. W okienku szczegółów wybierz **błędów interfejsu użytkownika dodatku narzędzi VSTO dla programów Pokaż**, a następnie kliknij przycisk **OK**.
+5. W okienku szczegółów wybierz pozycję **Pokaż błędy interfejsu użytkownika dodatku VSTO**, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
-    > Dla programu Outlook **błędów interfejsu użytkownika dodatku narzędzi VSTO dla programów Pokaż** pole wyboru znajduje się w **Developer** części okienka szczegółów. Dla innych aplikacji, pole wyboru znajduje się w **ogólne** części okienka szczegółów.
+    > W przypadku programu Outlook pole wyboru **Pokaż błędy interfejsu użytkownika dodatku VSTO** znajduje się w sekcji **deweloper** okienka szczegółów. W przypadku innych aplikacji pole wyboru znajduje się w sekcji **Ogólne** okienka szczegółów.
 
 ## <a name="see-also"></a>Zobacz także
 - [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)
 - [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)
-- [Wstążka — omówienie](../vsto/ribbon-overview.md)
-- [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)
+- [Omówienie wstążki](../vsto/ribbon-overview.md)
+- [Przegląd okienka Akcje](../vsto/actions-pane-overview.md)

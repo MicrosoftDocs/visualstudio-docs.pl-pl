@@ -1,5 +1,5 @@
 ---
-title: Debugowanie aplikacji | Dokumentacja firmy Microsoft
+title: Debugowanie aplikacji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,26 +14,26 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b689a3be22c9fec775cf42b9d26393a886174daf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 747f96a31ace1267512b9327a0d6aaaf07e02631
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197517"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545590"
 ---
 # <a name="debugging-applications"></a>Debugowanie aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Typy innej aplikacji i różnych języków wymagają różnych ustawień i technik, a obecna różne problemy wymagające można debugować.  
+Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Różne typy aplikacji i różne języki wymagają różnych ustawień i technik oraz stwarzają różne problemy, które muszą być debugowane.  
   
 ## <a name="debugging-for-different-types-of-applications"></a>Debugowanie dla różnych typów aplikacji  
   
-|||  
+|Tytuł|Opis|  
 |-|-|  
-|[Debugowanie aplikacji ze Sklepu Windows i aplikacji uniwersalnych systemu Windows](../debugger/debugging-windows-store-and-windows-universal-apps.md)|W tym artykule opisano, jak debugować aplikacje Windows Store i Windows Universal apps.|  
-|[Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)|W tym artykule opisano sposób debugowania kodu zarządzanego (Visual C#, Visual Basic i F3).|  
-|[Debugowanie kodu natywnego](../debugger/debugging-native-code.md)|W tym artykule opisano sposób debugowania inny rodzaj natywnych aplikacji w języku C++.|  
-|[Debugowanie kodu GPU](../debugger/debugging-gpu-code.md)|W tym artykule opisano sposób debugowania kodu C++, który jest uruchamiany w jednostce przetwarzania graficznego (GPU).|  
-|[Diagnostyka grafiki (debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md)|W tym artykule opisano, jak debugowanie grafiki DirectX.|  
+|[Debugowanie aplikacji ze Sklepu Windows i aplikacji uniwersalnych systemu Windows](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Opisuje sposób debugowania aplikacji ze sklepu Windows i aplikacji uniwersalnych systemu Windows.|  
+|[Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)|Opisuje sposób debugowania kodu zarządzanego (Visual C#, Visual Basic i F3).|  
+|[Debugowanie kodu natywnego](../debugger/debugging-native-code.md)|Opisuje sposób debugowania różnego rodzaju natywnych aplikacji C++.|  
+|[Debugowanie kodu GPU](../debugger/debugging-gpu-code.md)|Opisuje sposób debugowania kodu w języku C++, który działa w procesorze GPU.|  
+|[Diagnostyka grafiki (debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md)|Opisuje sposób debugowania grafiki DirectX.|  
 |[Debugowanie aplikacji internetowych i skryptu](../debugger/debugging-web-applications-and-script.md)|Opisuje sposób debugowania aplikacji sieci Web, ASP.NET i AJAX.|  
-|[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|W tym artykule opisano sposób debugowania usług Windows Communication Foundation.|
+|[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|Opisuje sposób debugowania usług Windows Communication Foundation.|

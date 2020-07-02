@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Zmień rozmiar kontrolek w komórkach arkusza'
+title: 'Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c65be450c45d7797984105723d5ae1b01a2d63
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252074"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545876"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Instrukcje: Zmień rozmiar kontrolek w komórkach arkusza
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Instrukcje: zmiana rozmiaru kontrolek w komórkach arkusza
   W przypadku zmiany rozmiaru kolumn lub wierszy w arkuszu wszystkie kontrolki hosta w komórkach są automatycznie zmieniane na wysokość lub szerokość komórki, której rozmiar został zmieniony. Kontrolki Windows Forms domyślnie nie są zmieniane automatycznie.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "71252074"
      Gdy zmieniasz rozmiar komórki, która zawiera kontrolkę, zmienia rozmiar kontrolki, aby dopasować ją do komórki.
 
 ## <a name="reset-control-placement"></a>Resetuj położenie kontrolki
- Możesz zresetować położenie i zmienić rozmiar kontrolki, ustawiając `Placement` właściwość na jedną z następujących <xref:Microsoft.Office.Interop.Excel.XlPlacement> wartości:
+ Możesz zresetować położenie i zmienić rozmiar kontrolki, ustawiając `Placement` Właściwość na jedną z następujących <xref:Microsoft.Office.Interop.Excel.XlPlacement> wartości:
 
 - <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
@@ -68,7 +68,7 @@ ms.locfileid: "71252074"
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Aby zmienić zachowanie kontrolki w taki sposób, aby nie zmieniała rozmiaru ani nie przenoszona z komórką
 
-1. Wywołaj Właściwość umieszczania kontrolki i ustaw wartość na <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Wywołaj Właściwość umieszczania kontrolki i ustaw wartość na <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating> .
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
@@ -76,6 +76,6 @@ ms.locfileid: "71252074"
 ## <a name="see-also"></a>Zobacz także
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [Instrukcje: Dodawanie formantów Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [Instrukcje: Ukryj kontrolki w arkuszach podczas drukowania](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Instrukcje: ukrywanie kontrolek w arkuszach podczas drukowania](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Ograniczenia Windows Forms formantów w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

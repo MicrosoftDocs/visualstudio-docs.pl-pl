@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747923"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770647"
 ---
 # <a name="list-disassembly-command"></a>Lista dezasemblacji — Polecenie
-Rozpoczyna proces debugowania i pozwala określić sposób obsługi błędów.
+Rozpoczyna proces debugowania i pozwala określić, jak błędy są obsługiwane.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,31 +32,31 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="switches"></a>Przełączniki
-Każdy przełącznik można wywołać za pomocą jego pełnej formy lub krótkiego formularza.
+Każdy przełącznik może być wywoływany przy użyciu kompletnego formularza lub krótkiej formy.
 
-/count: `number` [lub] /c: `number` [lub] `number` /length: [lub] /l:`number`
+/Count: `number` [lub]/c: `number` [lub]/length: `number` [lub]/l:`number`
 
-Element opcjonalny. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.
+Opcjonalny. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.
 
-/endaddress: `expression` [lub] /e:`expression`
+/endaddress: `expression` [lub]/e:`expression`
 
-Element opcjonalny. Adres, pod którym należy zatrzymać demontaż.
+Opcjonalny. Adres, pod który ma zostać zatrzymany demontaż.
 
-/codebytes:`yes`&#124;`no` [lub]`yes` /bajtów:&#124;`no` [lub] /b:`yes`&#124;`no`
+/codebytes: `yes`&#124;`no` [lub]/bytes: `yes`&#124;`no` [lub]/b: `yes`&#124;`no`
 
-Element opcjonalny. Wskazuje, czy mają być wyświetlane bajty kodu. Wartością `no`domyślną jest .
+Opcjonalny. Wskazuje, czy mają być wyświetlane bajty kodu. Wartość domyślna to `no` .
 
-/źródło:`yes`&#124;`no` [lub] /s:`yes`&#124;`no`
+/source: `yes`&#124;`no` [lub]/s: `yes`&#124;`no`
 
-Element opcjonalny. Wskazuje, czy kod źródłowy ma być wyświetlany. Wartością `no`domyślną jest .
+Opcjonalny. Wskazuje, czy ma być wyświetlany kod źródłowy. Wartość domyślna to `no` .
 
-/symbolnames:`yes`&#124;`no` [lub] /names:`yes`&#124;`no` [lub] /n:`yes`&#124;`no`
+/symbolnames: `yes`&#124;`no` [lub]/names: `yes`&#124;`no` [lub]/n: `yes`&#124;`no`
 
-Element opcjonalny. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartością `yes`domyślną jest .
+Opcjonalny. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartość domyślna to `yes` .
 
- [/numery bielizny:`yes`&#124;`no`]
+ [/linenumbers: `yes`&#124;`no` ]
 
-Element opcjonalny. Umożliwia wyświetlanie numerów wierszy skojarzonych z kodem źródłowym. Przełącznik /source musi mieć `yes` wartość, aby użyć przełącznika /linenumbers.
+Opcjonalny. Włącza wyświetlanie numerów wierszy skojarzonych z kodem źródłowym. Przełącznik/Source musi mieć wartość, `yes` Aby można było użyć przełącznika/linenumbers.
 
 ## <a name="example"></a>Przykład
 
@@ -64,11 +64,11 @@ Element opcjonalny. Umożliwia wyświetlanie numerów wierszy skojarzonych z kod
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Lista stosu wywołań — Polecenie](../../ide/reference/list-call-stack-command.md)
-- [Lista wątków — Polecenie](../../ide/reference/list-threads-command.md)
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Listing stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)
+- [Lista wątków — polecenie](../../ide/reference/list-threads-command.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
 - [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

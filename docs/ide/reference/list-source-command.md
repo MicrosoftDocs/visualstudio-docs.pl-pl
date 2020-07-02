@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747904"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770626"
 ---
 # <a name="list-source-command"></a>Lista źródeł — Polecenie
 Wyświetla określone wiersze kodu źródłowego.
@@ -32,34 +32,34 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>Przełączniki
-/Count:`number`
+Liczbą`number`
 
-Element opcjonalny. Określa liczbę wyświetlanych linii.
+Opcjonalny. Określa liczbę wierszy do wyświetlenia.
 
-/Prąd
+/Current
 
-Element opcjonalny. Pokazuje bieżący wiersz.
+Opcjonalny. Wyświetla bieżący wiersz.
 
-/Plik:`filename`
+Rozszerzeniem`filename`
 
-Element opcjonalny. Ścieżka pliku do wyświetlenia. Jeśli nie określono nazwy pliku, polecenie pokazuje kod źródłowy wiersza bieżącej instrukcji.
+Opcjonalny. Ścieżka pliku do wyświetlenia. Jeśli nazwa pliku nie zostanie określona, polecenie pokazuje kod źródłowy wiersza bieżącej instrukcji.
 
-/Linia:`number`
+Liniow`number`
 
-Element opcjonalny. Pokazuje określony numer wiersza.
+Opcjonalny. Pokazuje określony numer wiersza.
 
-/ShowLineNumbers:`yes|no`
+ShowLineNumbers`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane numery wierszy.
+Opcjonalny. Określa, czy mają być wyświetlane numery wierszy.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie wyszczeli się kod źródłowy z wiersza 4 pliku Form1.vb z widocznymi numerami wierszy.
+W tym przykładzie przedstawiono kod źródłowy z wiersza 4 pliku Form1. vb, z widocznymi numerami wierszy.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)

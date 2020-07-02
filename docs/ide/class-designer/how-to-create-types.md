@@ -1,7 +1,7 @@
 ---
 title: 'Porady: tworzenie typów za pomocą Projektanta klas'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bdbc255320a2d17eb3c51191b3a425500dd345c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533695"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770219"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Instrukcje: Tworzenie typów za pomocą Projektant klas
 
@@ -86,7 +86,7 @@ Aby zaprojektować nowe typy dla projektów C# i Visual Basic, utwórz je na dia
 
    Atrybuty niestandardowe są stosowane do typu.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
 - [Instrukcje: tworzenie skojarzeń między typami](how-to-create-associations-between-types.md)

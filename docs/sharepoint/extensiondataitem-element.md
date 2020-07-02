@@ -1,5 +1,5 @@
 ---
-title: Extensiondataitem — Element | Dokumentacja firmy Microsoft
+title: ExtensionDataItem — — element | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 658fb63227f4c4532038d537bde7cc10ca2c4f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967386"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546552"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem — element
-  Element danych niestandardowych, który jest skojarzony z elementu projektu programu SharePoint w formacie klucz/wartość. Klucz i wartość muszą być ciągami.
+  Niestandardowy element danych skojarzony z elementem projektu programu SharePoint w formacie klucz/wartość. Zarówno klucz, jak i wartość muszą być ciągami.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,8 +36,8 @@ ms.locfileid: "62967386"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|**Key**|Wymagane **xs: ciąg** atrybutu.<br /><br /> Klucz, który jest używany do przechowywania i pobierania elementu danych.|
-|**Wartość**|Wymagane **xs:string** atrybutu.<br /><br /> Wartość elementu danych.|
+|**Klucz**|Wymagany atrybut **xs: String** .<br /><br /> Klucz, który jest używany do przechowywania i pobierania elementu danych.|
+|**Wartość**|Wymagany atrybut **xs: String** .<br /><br /> Wartość elementu danych.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -46,19 +46,19 @@ ms.locfileid: "62967386"
 
 |Element|Opis|
 |-------------|-----------------|
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Reprezentuje kolekcję elementów danych niestandardowych, które są skojarzone z elementem projektu programu SharePoint.|
+|[ExtensionData —](../sharepoint/extensiondata-element.md)|Reprezentuje kolekcję niestandardowych elementów danych, które są skojarzone z elementem projektu programu SharePoint.|
 
 ## <a name="remarks"></a>Uwagi
- Gdy Skojarz dane niestandardowe z elementu projektu programu SharePoint przy użyciu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> właściwość <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> obiektu, program Visual Studio zapisuje dane na nowe **extensiondataitem —** elementu w `.spdata` plik Element projektu. Aby uzyskać więcej informacji, zobacz [zapisywać danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+ W przypadku kojarzenia danych niestandardowych z elementem projektu programu SharePoint przy użyciu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> właściwości <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> obiektu program Visual Studio zapisuje dane do nowego elementu **ExtensionDataItem —** w `.spdata` pliku dla elementu projektu. Aby uzyskać więcej informacji, zobacz [Zapisywanie danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
-## <a name="element-information"></a>Informacje o elementach
+## <a name="element-information"></a>Informacje o elemencie
 
-|||
+|Właściwość|Wartość|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nazwa schematu**|Schemat elementu projektu SharePoint|
-|**Plik walidacji**|ProjectItemModelSchema.xsd|
-|**Może być pusta.**|Nie|
+|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
+|**Plik walidacji**|ProjectItemModelSchema. xsd|
+|**Może być puste**|Nie|
 
 ## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

@@ -14,23 +14,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918227"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547813"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Używaj preferowanych terminów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1726: use preferowane terminy](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|Kategoria|Microsoft.Naming|
+|Kategoria|Microsoft. nazewnictwo|
 |Zmiana kluczowa|Przerywanie — gdy są uruchamiane w zestawach<br /><br /> Rozdzielenie — gdy jest uruchamiany w parametrach typu|
 
 ## <a name="cause"></a>Przyczyna
@@ -49,7 +49,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1726: us
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` lub `Flags`|Nie istnieje termin zastępczy. Nie używać.|
+|`Flag` lub `Flags`|Nie istnieje termin zastępczy. Nie używaj.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

@@ -49,7 +49,7 @@ Poniższy przykład pokazuje, jak dodać formanty powiązane z danymi do dokumen
 
 Po uruchomieniu projektu kontrolki wyświetlają pierwszy rekord w źródle danych. Możesz włączyć przewijanie rekordów przez obsługę zdarzeń walutowych przy użyciu obiektów w <xref:System.Windows.Forms.BindingSource> .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)

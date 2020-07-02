@@ -80,7 +80,7 @@ ms.locfileid: "85546968"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Pracuj z zakresami](../vsto/working-with-ranges.md)
 - [Model obiektów programu Excel — Omówienie](../vsto/excel-object-model-overview.md)
 - [NamedRange — formant](../vsto/namedrange-control.md)

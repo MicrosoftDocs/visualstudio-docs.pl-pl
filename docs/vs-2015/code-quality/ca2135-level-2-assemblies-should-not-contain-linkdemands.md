@@ -11,17 +11,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1248ac41a757ba2fc26ef0659c0f93ee325bc605
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cbb68855832e84150b81c8a8a6fde47bf9433edc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602946"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547709"
 ---
-# <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Zestawy poziomu 2 nie powinny zawierać LinkDemands
+# <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Zestawy poziomu 2 nie powinny zawierać żądań LinkDemand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands|
 |CheckId|CA2135|
@@ -32,15 +32,15 @@ ms.locfileid: "72602946"
  Klasa lub członek klasy używa <xref:System.Security.Permissions.SecurityAction> w aplikacji, która korzysta z zabezpieczeń poziomu 2.
 
 ## <a name="rule-description"></a>Opis reguły
- LinkDemands są przestarzałe w zestawie reguł zabezpieczeń poziomu 2. Zamiast używać LinkDemands, aby wymusić zabezpieczenia w czasie kompilacji just-in-Time (JIT), Oznacz metody, typy i pola atrybutem <xref:System.Security.SecurityCriticalAttribute>.
+ LinkDemands są przestarzałe w zestawie reguł zabezpieczeń poziomu 2. Zamiast używać LinkDemands, aby wymusić zabezpieczenia w czasie kompilacji just-in-Time (JIT), Oznacz metody, typy i pola <xref:System.Security.SecurityCriticalAttribute> atrybutem.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Usuń <xref:System.Security.Permissions.SecurityAction> i Oznacz typ lub element członkowski atrybutem <xref:System.Security.SecurityCriticalAttribute>.
+ Aby naprawić naruszenie tej reguły, Usuń <xref:System.Security.Permissions.SecurityAction> i Oznacz typ lub składową z <xref:System.Security.SecurityCriticalAttribute> atrybutem.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie należy usunąć <xref:System.Security.Permissions.SecurityAction>, a metoda oznaczona atrybutem <xref:System.Security.SecurityCriticalAttribute>.
+ W poniższym przykładzie <xref:System.Security.Permissions.SecurityAction> należy usunąć, a metoda oznaczona <xref:System.Security.SecurityCriticalAttribute> atrybutem.
 
  [!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2135.securityrulesetlevel2methodsshouldnotbeprotectedwithlinkdemands/cs/ca2135.cs#1)]

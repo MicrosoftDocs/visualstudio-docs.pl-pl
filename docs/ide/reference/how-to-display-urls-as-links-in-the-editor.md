@@ -1,7 +1,7 @@
 ---
 title: 'Porady: wyświetlanie adresów URL jako łączy w Edytorze'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - URLs, opening
 - Code Editor, displaying URLs
@@ -12,37 +12,37 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 80ad0fcc7409bd91f24ef197ef12ed64610a2e0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569091"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770345"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Porady: wyświetlanie adresów URL jako łączy w Edytorze
 
-Można wybrać, aby Edytor kodu traktował w kodzie jednolite lokalizatory zasobów (adresy URL) jako aktywne łącza. Korzystając z tej funkcji, adresy URL:
+Można wybrać, aby Edytor kodu traktuje Uniform Resource Locators (URL) w kodzie jako aktywne linki. Korzystając z tej funkcji, adresy URL:
 
 - Pojawiają się podkreślone.
 
-- Wyświetl **etykietkę narzędzia** po najechaniu na nie kursorem myszy.
+- Wyświetl **etykietkę narzędzia** po umieszczeniu nad nimi wskaźnika myszy.
 
-- Spróbuj otworzyć stronę wskazaną po**kliknięciu** na link **przez ctrl.**+ Domyślnie witryna sieci Web jest wyświetlana w wewnętrznej przeglądarce internetowej.
+- Podjęto próbę otwarcia witryny sieci Web wskazanej po **naciśnięciu klawisza Ctrl**po + **kliknięciu** linku. Domyślnie witryna sieci Web jest wyświetlana w wewnętrznej przeglądarce internetowej.
 
 ## <a name="display-urls-as-links"></a>Wyświetlanie adresów URL jako linków
 
 1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
-2. Kliknij **pozycję Edytor tekstu**.
+2. Kliknij pozycję **Edytor tekstu**.
 
-3. Aby zmienić opcję tylko dla jednego języka, rozwiń folder dla tego języka i wybierz opcję **Ogólne**.
+3. Aby zmienić opcję tylko dla jednego języka, rozwiń folder dla tego języka, a następnie wybierz pozycję **Ogólne**.
 
      —lub—
 
-     Aby zmienić opcję dla wszystkich języków, rozwiń folder **Wszystkie języki** i wybierz pozycję **Ogólne**.
+     Aby zmienić opcję dla wszystkich języków, rozwiń folder **wszystkie języki** , a następnie wybierz pozycję **Ogólne**.
 
-4. W obszarze **Wyświetlanie**wybierz pozycję **Włącz jednokrotne kliknięcie nawigacji adresów URL**.
+4. W obszarze **ekran**zaznacz opcję **Włącz nawigację URL przy pojedynczym kliknięciu**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -72,6 +72,6 @@ przechowywanie obiektów w sklepie (zamiast zwykłych obiektów) zapewnia kilka 
 
 - **Serializacja**. Magazyn zapewnia standardowy sposób serializacji obiektów, które zawiera do pliku. Można dostosować reguły serializacji i deserializacji. Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Zmień rozmiar kontrolek zakładek'
+title: 'Instrukcje: zmiana rozmiaru kontrolek zakładek'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99e5c789f65a1dff460bc22dd4a0c097e11c7e98
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6cc7b26bb767c233ed8699519261d4b5b708306b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252216"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545863"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>Instrukcje: Zmień rozmiar kontrolek zakładek
+# <a name="how-to-resize-bookmark-controls"></a>Instrukcje: zmiana rozmiaru kontrolek zakładek
   Należy ustawić rozmiar <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki, gdy dodasz ją do dokumentu programu Microsoft Office Word. Możesz również zmienić jego rozmiar w późniejszym czasie.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "71252216"
 
    Za każdym razem, gdy dodasz tekst w zakładce, rozmiar zakładki jest automatycznie zwiększany w celu dodania nowego tekstu. Po usunięciu tekstu rozmiar zakładki jest automatycznie zmniejszany.
 
-- <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> Zmień właściwości <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i<xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki.
+- Zmień <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> właściwości i <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki.
 
    Jest to przydatne, jeśli zmieniasz rozmiar tylko przez kilka znaków.
 
@@ -39,7 +39,7 @@ ms.locfileid: "71252216"
 
    Jest to przydatne, jeśli istnieje istotna zmiana rozmiaru lub lokalizacji zakładki.
 
-  W projektach na poziomie dokumentu można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku VSTO można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zakładek do](../vsto/how-to-add-bookmark-controls-to-word-documents.md)dokumentów programu Word.
+  W projektach na poziomie dokumentu można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku VSTO można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -55,9 +55,9 @@ ms.locfileid: "71252216"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-run-time"></a>Aby zmienić rozmiar zakładki w projekcie na poziomie dokumentu w czasie wykonywania
 
-1. <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> Modyfikuj właściwości <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i,którezostałyutworzonewczasiewykonywanialub<xref:Microsoft.Office.Tools.Word.Bookmark> w czasie projektowania.
+1. Modyfikuj <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> właściwości i, <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> <xref:Microsoft.Office.Tools.Word.Bookmark> które zostały utworzone w czasie wykonywania lub w czasie projektowania.
 
-     Poniższy przykład kodu dodaje pięć znaków do początku zakładki o nazwie `SampleBookmark`. Ten kod zakłada, że przed zakładką występuje co najmniej pięć znaków tekstu.
+     Poniższy przykład kodu dodaje pięć znaków do początku zakładki o nazwie `SampleBookmark` . Ten kod zakłada, że przed zakładką występuje co najmniej pięć znaków tekstu.
 
      [!code-csharp[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#2)]
@@ -69,9 +69,9 @@ ms.locfileid: "71252216"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-run-time"></a>Aby zmienić rozmiar zakładki w projekcie dodatku VSTO w czasie wykonywania
 
-1. <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> Modyfikuj właściwości <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i,którezostałyutworzone<xref:Microsoft.Office.Tools.Word.Bookmark> w czasie wykonywania.
+1. Modyfikuj <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> właściwości i, <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> <xref:Microsoft.Office.Tools.Word.Bookmark> które zostały utworzone w czasie wykonywania.
 
-     Poniższy przykład kodu tworzy <xref:Microsoft.Office.Tools.Word.Bookmark> , który zawiera tekst w pierwszym akapicie aktywnego dokumentu, a następnie usuwa pięć znaków z początku i na końcu. <xref:Microsoft.Office.Tools.Word.Bookmark>
+     Poniższy przykład kodu tworzy <xref:Microsoft.Office.Tools.Word.Bookmark> , który zawiera tekst w pierwszym akapicie aktywnego dokumentu, a następnie usuwa pięć znaków z początku i na końcu <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
      [!code-vb[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#16)]
      [!code-csharp[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#16)]
@@ -81,7 +81,7 @@ ms.locfileid: "71252216"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Aby ponownie utworzyć zakładkę w projekcie na poziomie dokumentu w czasie projektowania
 
-1. Zaznacz tekst, który ma zostać uwzględniony w <xref:Microsoft.Office.Tools.Word.Bookmark> nowej kontrolce.
+1. Zaznacz tekst, który ma zostać uwzględniony w nowej <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolce.
 
 2. W menu **Wstaw** kliknij **zakładkę**.
 
@@ -91,6 +91,6 @@ ms.locfileid: "71252216"
 - [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
-- [Instrukcje: Zmień rozmiar kontrolek NamedRange](../vsto/how-to-resize-namedrange-controls.md)
-- [Instrukcje: Zmień rozmiar formantów ListObject](../vsto/how-to-resize-listobject-controls.md)
+- [Instrukcje: zmiana rozmiaru kontrolek NamedRange](../vsto/how-to-resize-namedrange-controls.md)
+- [Instrukcje: Zmienianie rozmiaru formantów ListObject](../vsto/how-to-resize-listobject-controls.md)
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

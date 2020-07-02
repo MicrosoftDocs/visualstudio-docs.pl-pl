@@ -11,17 +11,17 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 96910ffc53e6c48f930232c83d87570f1bc71e00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe9a84280b0124eed6bb0cfffae9c1ec2942bddf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608919"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547722"
 ---
-# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Metody muszą przechowywać spójną jawność podczas nadpisywania metod bazowych
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Metody muszą zachowywać spójną przezroczystość podczas nadpisywania metod bazowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |CheckId|CA2134|
@@ -29,7 +29,7 @@ ms.locfileid: "72608919"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła jest wyzwalana, gdy metoda oznaczona przy użyciu <xref:System.Security.SecurityCriticalAttribute> zastępuje metodę, która jest przezroczysta lub oznaczona przy użyciu <xref:System.Security.SecuritySafeCriticalAttribute>. Reguła jest również wyzwalana, gdy metoda, która jest przezroczysta lub oznaczona przy użyciu <xref:System.Security.SecuritySafeCriticalAttribute> zastępuje metodę, która jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute>.
+ Ta reguła jest wyzwalana, gdy metoda oznaczona przy użyciu <xref:System.Security.SecurityCriticalAttribute> przesłonięć ma metodę, która jest przezroczysta lub oznaczona przy użyciu <xref:System.Security.SecuritySafeCriticalAttribute> . Zasada jest wyzwalana również wtedy, gdy metoda jest przezroczysta lub oznaczona przy użyciu <xref:System.Security.SecuritySafeCriticalAttribute> przesłonięć metody, która jest oznaczona za pomocą <xref:System.Security.SecurityCriticalAttribute> .
 
  Reguła jest stosowana podczas zastępowania metody wirtualnej lub implementującej interfejs.
 
@@ -42,7 +42,7 @@ ms.locfileid: "72608919"
  Aby naprawić naruszenie tej zasady, Zmień przezroczystość metody zastępującej metodę wirtualną lub implementując interfejs, aby dopasować przezroczystość metody wirtualnej lub interfejsu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń z tej reguły. Naruszenia tej reguły spowodują <xref:System.TypeLoadException> środowiska uruchomieniowego dla zestawów, które używają przejrzystości poziomu 2.
+ Nie pomijaj ostrzeżeń z tej reguły. Naruszenia tej reguły spowodują powstanie środowiska uruchomieniowego <xref:System.TypeLoadException> dla zestawów, które używają przejrzystości poziomu 2.
 
 ## <a name="examples"></a>Przykłady
 
@@ -50,4 +50,4 @@ ms.locfileid: "72608919"
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2134.methodsmustoverridewithconsistenttransparency/cs/ca2134 - methodsmustoverridewithconsistenttransparency.cs#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [Kod przezroczysty pod względem zabezpieczeń, poziom 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+ [Kod o przezroczystym poziomie bezpieczeństwa, poziom 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

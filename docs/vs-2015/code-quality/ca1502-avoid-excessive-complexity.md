@@ -15,17 +15,17 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607871"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547839"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Unikaj nadmiernej złożoności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
@@ -50,14 +50,14 @@ ms.locfileid: "72607871"
  Aby naprawić naruszenie tej zasady, należy rozwiązać metodę, aby zmniejszyć jej złożoność cyklomatyczna.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jeśli złożoność nie zostanie łatwo zredukowana, można bezpiecznie pominąć ostrzeżenie z tej reguły, a metoda jest łatwa do zrozumienia, testowania i konserwowania. W szczególności Metoda, która zawiera duże `switch` (`Select` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), jest kandydatem do wykluczenia. Ryzyko destabilizacji podstawy kodu w cyklu programowania lub wprowadzenie nieoczekiwanej zmiany zachowania w czasie wykonywania w wcześniej dostarczonym kodzie może wzważyć korzyści płynące z refaktoryzacji kodu.
+ Jeśli złożoność nie zostanie łatwo zredukowana, można bezpiecznie pominąć ostrzeżenie z tej reguły, a metoda jest łatwa do zrozumienia, testowania i konserwowania. W szczególności Metoda, która zawiera duże `switch` ( `Select` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) instrukcji, jest kandydatem do wykluczenia. Ryzyko destabilizacji podstawy kodu w cyklu programowania lub wprowadzenie nieoczekiwanej zmiany zachowania w czasie wykonywania w wcześniej dostarczonym kodzie może wzważyć korzyści płynące z refaktoryzacji kodu.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Jak jest obliczana Złożoność cyklomatyczna
  Złożoność cyklomatyczna jest obliczana przez dodanie 1 do następujących:
 
-- Liczba gałęzi (takich jak `if`, `while` i `do`)
+- Liczba gałęzi (takich jak `if` , `while` i `do` )
 
-- Liczba instrukcji `case` w `switch`
+- Liczba `case` instrukcji w`switch`
 
   W poniższych przykładach przedstawiono metody, które mają różne złożone cyklomatyczna.
 
@@ -93,4 +93,4 @@ ms.locfileid: "72607871"
  [CA1501: Unikaj nadmiernego dziedziczenia](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

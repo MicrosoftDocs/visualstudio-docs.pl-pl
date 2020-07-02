@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe Włączanie ochrony arkuszy'
+title: 'Instrukcje: programowe Włączanie ochrony arkuszy'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254587"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545902"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Instrukcje: Programowe Włączanie ochrony arkuszy
+# <a name="how-to-programmatically-protect-worksheets"></a>Instrukcje: programowe Włączanie ochrony arkuszy
   Funkcja ochrony w programie Microsoft Office Excel pomaga zapobiegać modyfikowaniu obiektów w arkuszu przez użytkowników i kod. Domyślnie wszystkie komórki są blokowane po włączeniu ochrony.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "71254587"
 > [!NOTE]
 > Nie można dodać formantów Windows Forms do obszarów arkusza, które są chronione.
 
-## <a name="use-the-designer"></a>Korzystanie z narzędzia Projektant
+## <a name="use-the-designer"></a>Korzystanie z projektanta
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>Aby chronić arkusz w projektancie
 
@@ -53,7 +53,7 @@ ms.locfileid: "71254587"
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Aby chronić arkusz przy użyciu kodu w dostosowaniu na poziomie dokumentu
 
-1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metodę arkusza. W tym przykładzie założono, że pracujesz z arkuszem o nazwie `Sheet1`.
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> metodę arkusza. W tym przykładzie założono, że pracujesz z arkuszem o nazwie `Sheet1` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
@@ -67,9 +67,9 @@ ms.locfileid: "71254587"
 
 ## <a name="see-also"></a>Zobacz także
 - [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
-- [Instrukcje: Programowe usuwanie ochrony z arkuszy](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
-- [Instrukcje: Programowo Chroń skoroszyty](../vsto/how-to-programmatically-protect-workbooks.md)
-- [Instrukcje: Programowe ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Instrukcje: Programowane usuwanie ochrony z arkuszy](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [Instrukcje: programowane włączanie ochrony skoroszytów](../vsto/how-to-programmatically-protect-workbooks.md)
+- [Instrukcje: programowe ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Element hosta arkusza](../vsto/worksheet-host-item.md)
 - [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)

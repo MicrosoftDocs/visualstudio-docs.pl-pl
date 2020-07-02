@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 931b1e5099bf221fefc7a8f4a19524d2531a4418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85e27ab04ca81f5513a0b09bc41548f4a7c2430d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609485"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547683"
 ---
-# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Użyj zarządzanych odpowiedników interfejsu API Win32
+# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Użyj zarządzanych odpowiedników funkcji API Win32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
@@ -33,10 +33,10 @@ ms.locfileid: "72609485"
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
- Metoda wywołania platformy jest zdefiniowana, a metoda o równoważnej funkcjonalności istnieje w bibliotece klas [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Metoda wywołania platformy jest zdefiniowana, a metoda o równoważnej funkcjonalności istnieje w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] bibliotece klas.
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda wywołania platformy służy do wywoływania niezarządzanej funkcji DLL i jest definiowana przy użyciu atrybutu <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> lub słowa kluczowego `Declare` w Visual Basic. Nieprawidłowo zdefiniowana Metoda wywołania platformy może prowadzić do wyjątków w czasie wykonywania z powodu problemów, takich jak nieprawidłowa funkcja nazwana, wadliwe mapowanie parametrów i typów danych wartości zwracanej oraz niepoprawne specyfikacje pola, takie jak Konwencja wywoływania i znak zbiór. Jeśli jest dostępna, jest to ogólnie prostsze i mniej podatne na wywoływanie równoważnej metody zarządzanej niż w celu bezpośredniej definicji i wywołania metody niezarządzanej. Wywołanie metody Invoke platformy może również prowadzić do dodatkowych problemów z zabezpieczeniami, które muszą zostać rozwiązane.
+ Metoda wywołania platformy służy do wywoływania niezarządzanej funkcji DLL i jest definiowana przy użyciu <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atrybutu lub `Declare` słowa kluczowego w Visual Basic. Nieprawidłowo zdefiniowana Metoda wywołania platformy może prowadzić do wyjątków w czasie wykonywania z powodu problemów, takich jak nieprawidłowo nazwana funkcja, wadliwe mapowanie parametrów i typów danych wartości zwracanej oraz niewłaściwe specyfikacje pola, takie jak Konwencja wywoływania i zestaw znaków. Jeśli jest dostępna, jest to ogólnie prostsze i mniej podatne na wywoływanie równoważnej metody zarządzanej niż w celu bezpośredniej definicji i wywołania metody niezarządzanej. Wywołanie metody Invoke platformy może również prowadzić do dodatkowych problemów z zabezpieczeniami, które muszą zostać rozwiązane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Zastąp wywołanie funkcji niezarządzanej wywołaniem swojego równoważnego elementu zarządzanego.
@@ -51,12 +51,12 @@ ms.locfileid: "72609485"
  [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1404: Wywołaj metodę GetLastError natychmiast po wywołaniu P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+ [CA1404: Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 
- [CA1060: Przenieś wywołania P/Invoke do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+ [CA1060: Przenieś P/Invoke do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: Powinny istnieć punkty wejścia P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: punkty wejścia P/Invoke powinny istnieć](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: Metody P/Invoke nie powinny być widoczne](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: P/Invoke nie powinna być widoczna](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Określ marshaling dla argumentów ciągu wywołania P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Określ kierowanie dla argumentów ciągu P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

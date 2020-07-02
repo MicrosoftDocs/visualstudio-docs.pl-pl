@@ -1,5 +1,5 @@
 ---
-title: FeatureProperty — Element | Dokumentacja firmy Microsoft
+title: FeatureProperty — element | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20d24192d8613a4f41d9cdfc04371fb9c9d02076
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967308"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546526"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty — element
-  Reprezentuje właściwość niestandardowa, która jest uwzględniany w funkcji, gdy aplikacja jest wdrożona w programie SharePoint. Po wdrożeniu funkcji właściwości są dostępne w kodzie.
+  Reprezentuje właściwość niestandardową, która jest dołączana do funkcji podczas jej wdrażania w programie SharePoint. Po wdrożeniu funkcji można uzyskać dostęp do właściwości w kodzie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,8 +36,8 @@ ms.locfileid: "62967308"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|**Key**|Wymagane **xs:string** atrybutu.<br /><br /> Klucz, który jest używany do przechowywania i pobierania wartości właściwości. Każda właściwość musi mieć klucz, który jest unikatowy w obrębie funkcji.|
-|**Wartość**|Wymagane **xs:string** atrybutu.<br /><br /> Wartość właściwości.|
+|**Klucz**|Wymagany atrybut **xs: String** .<br /><br /> Klucz, który jest używany do przechowywania i pobierania wartości właściwości. Każda właściwość musi mieć klucz, który jest unikatowy w ramach tej funkcji.|
+|**Wartość**|Wymagany atrybut **xs: String** .<br /><br /> Wartość właściwości.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -46,20 +46,20 @@ ms.locfileid: "62967308"
 
 |Element|Opis|
 |-------------|-----------------|
-|[Featureproperties —](../sharepoint/featureproperties-element.md)|Reprezentuje kolekcję wartości właściwości, które są uwzględniane przy użyciu funkcji, gdy aplikacja jest wdrożona w programie SharePoint.|
+|[FeatureProperties —](../sharepoint/featureproperties-element.md)|Reprezentuje kolekcję wartości właściwości, które są dołączone do funkcji podczas jej wdrażania w programie SharePoint.|
 
 ## <a name="remarks"></a>Uwagi
- Aby uzyskać więcej informacji na temat właściwości funkcji, zobacz [wdrażanie pakietów i informacjami w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
+ Więcej informacji o właściwościach funkcji znajduje się [w temacie dostarczanie informacji o pakiecie i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
-## <a name="element-information"></a>Informacje o elementach
+## <a name="element-information"></a>Informacje o elemencie
 
-|||
+|Właściwość|Wartość|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nazwa schematu**|Schemat elementu projektu SharePoint|
-|**Plik walidacji**|ProjectItemModelSchema.xsd|
-|**Może być pusta.**|Nie|
+|**Przestrzeń nazw**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nazwa schematu**|Schemat elementu projektu programu SharePoint|
+|**Plik walidacji**|ProjectItemModelSchema. xsd|
+|**Może być puste**|Nie|
 
 ## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Podaj informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Odwołanie do schematu elementu projektu programu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

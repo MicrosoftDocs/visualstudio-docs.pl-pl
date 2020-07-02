@@ -17,17 +17,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c3e624e4210e59406fd1d5955cd37c2e83ed79a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602865"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546461"
 ---
-# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Jawny kod nie może odwoływać się do elementów krytycznych dla zabezpieczeń
+# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Kod przezroczysty nie może przywoływać elementów krytycznych pod względem zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
@@ -54,16 +54,16 @@ ms.locfileid: "72602865"
 - zwraca typ, który jest oznaczony jako krytyczny dla zabezpieczeń
 
 ## <a name="rule-description"></a>Opis reguły
- Element kodu, który jest oznaczony atrybutem <xref:System.Security.SecurityCriticalAttribute>, ma krytyczne znaczenie dla zabezpieczeń. Przezroczysta metoda nie może użyć elementu krytycznego dla zabezpieczeń. Jeśli typ przezroczysty próbuje użyć typu krytycznego dla zabezpieczeń, zostanie zgłoszony <xref:System.TypeAccessException>, <xref:System.MethodAccessException> lub <xref:System.FieldAccessException>.
+ Element kodu, który jest oznaczony <xref:System.Security.SecurityCriticalAttribute> atrybutem ma krytyczne znaczenie dla zabezpieczeń. Przezroczysta metoda nie może użyć elementu krytycznego dla zabezpieczeń. Jeśli typ przezroczysty próbuje użyć krytycznego typu <xref:System.TypeAccessException> , <xref:System.MethodAccessException> , lub <xref:System.FieldAccessException> jest wywoływany.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, wykonaj jedną z następujących czynności:
 
-- Oznacz element kodu, który używa krytycznego kodu zabezpieczeń z atrybutem <xref:System.Security.SecurityCriticalAttribute>
+- Oznacz element kodu, który używa krytycznego kodu zabezpieczeń z <xref:System.Security.SecurityCriticalAttribute> atrybutem
 
-     \- lub-
+     \-oraz
 
-- Usuń atrybut <xref:System.Security.SecurityCriticalAttribute> z elementów kodu, które są oznaczone jako krytyczne dla zabezpieczeń, a zamiast tego oznacz je atrybutem <xref:System.Security.SecuritySafeCriticalAttribute> lub <xref:System.Security.SecurityTransparentAttribute>.
+- Usuń <xref:System.Security.SecurityCriticalAttribute> atrybut z elementów kodu, które są oznaczone jako krytyczne dla zabezpieczeń, a zamiast tego oznacz je <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> atrybutem or.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
@@ -74,7 +74,7 @@ ms.locfileid: "72602865"
  [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2140.transparentmethodsmustnotreferencecriticalcode/cs/ca2140 - transparentmethodsmustnotreferencecriticalcode.cs#1)]
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Security.SecurityTransparentAttribute><xref:System.Security.SecurityCriticalAttribute>
+ <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute>
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>
  <xref:System.Security?displayProperty=fullName>

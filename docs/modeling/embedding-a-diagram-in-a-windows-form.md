@@ -141,7 +141,7 @@ Diagram DSL można osadzić w kontrolce systemu Windows, która jest wyświetlan
 
      Zwróć uwagę, że pole listy zawiera listę elementów w modelu i że jest poprawna po dodaniu lub usunięciu, a następnie Cofnij i wykonaj ponownie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

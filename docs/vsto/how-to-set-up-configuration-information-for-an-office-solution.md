@@ -1,7 +1,7 @@
 ---
-title: Ustawianie informacji o konfiguracji dla rozwiązań pakietu Office
+title: Konfigurowanie informacji o konfiguracji dla rozwiązania pakietu Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c477068b3aee3325acae0887e11da908d6c33a85
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328899"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545811"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Instrukcje: Ustawianie informacji o konfiguracji dla rozwiązań pakietu Office
-  Pliki konfiguracji można użyć do konfigurowania ustawień, które są specyficzne dla rozwiązania pakietu Office. Można określić ustawienia, takie jak zasady tworzenia powiązań zestawów, obiekty usług zdalnych, debugowania i ustawienia śledzenia.
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Instrukcje: Konfigurowanie informacji o konfiguracji dla rozwiązania pakietu Office
+  Za pomocą plików konfiguracji można skonfigurować ustawienia specyficzne dla rozwiązań pakietu Office. Można określić ustawienia, takie jak zasady powiązań zestawu, obiekty zdalne, debugowanie i ustawienia śledzenia.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -29,21 +29,21 @@ ms.locfileid: "67328899"
 
 ### <a name="to-add-a-configuration-file-to-your-office-project"></a>Aby dodać plik konfiguracji do projektu pakietu Office
 
-1. Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
+1. W menu **projekt** kliknij polecenie **Dodaj nowy element**.
 
-2. W **kategorie** okienku kliknij **ogólne**.
+2. W okienku **Kategorie** kliknij pozycję **Ogólne**.
 
-3. W **szablony** okienku wybierz **pliku konfiguracji aplikacji**.
+3. W okienku **Szablony** wybierz pozycję **plik konfiguracji aplikacji**.
 
-4. W **nazwa** wpisz taką samą nazwę jak zestawu oraz rozszerzenie *.config*. Na przykład plik konfiguracji dla zestawu projektu programu Excel o nazwie *ExcelWorkbook1.dll* będą miały postać *ExcelWorkbook1.dll.config*.
+4. W polu **Nazwa** wpisz taką samą nazwę, jak zestaw i rozszerzenie *. config*. Na przykład plik konfiguracyjny zestawu projektu programu Excel o nazwie *ExcelWorkbook1.dll* zostałby nazwany *ExcelWorkbook1.dll.config*.
 
-5. Kliknij przycisk **Dodaj**.
+5. Kliknij pozycję **Dodaj**.
 
-6. Utwórz plik konfiguracji zgodnie z schemat pliku konfiguracji aplikacji. Aby uzyskać więcej informacji, zobacz [schemat pliku konfiguracji dla programu .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
+6. Utwórz plik konfiguracji zgodnie ze schematem pliku konfiguracji aplikacji. Aby uzyskać więcej informacji, zobacz [Schemat pliku konfiguracji dla .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
 
-   Nie istnieją żadne specjalne uwagi dotyczące za pomocą plików konfiguracji przy użyciu projektów pakietu Office.
+   Nie ma specjalnych zagadnień dotyczących używania plików konfiguracji z projektami pakietu Office.
 
 ## <a name="see-also"></a>Zobacz także
-- [Schemat pliku konfiguracji dla programu .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
+- [Schemat pliku konfiguracji dla .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60823c1fe17613f36e800a2cdf69dd19049ddb27
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919116"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545577"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,11 +48,11 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 ## <a name="prerequisites"></a>Wymagania wstępne
  Przed rozpoczęciem tego instruktażu należy najpierw zainstalować następujące składniki:
 
-|||
+|Produkt|Link pobierania|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
-|{1&gt;{2&gt;Visual Studio Visualisation i Modeling SDK&lt;2}&lt;1}|[Pobieranie zestawu SDK modelowania](https://www.microsoft.com/download/details.aspx?id=48148)|
+|Visual Studio Wizualizacja i Modeling SDK|[Pobieranie zestawu SDK modelowania](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-the-dsl-project"></a>Tworzenie projektu DSL
  Utwórz projekt dla języka specyficznego dla domeny.
@@ -65,17 +65,17 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
     1. Wybierz szablon **MinimalLanguage** .
 
-    2. Użyj domyślnej nazwy dla języka specyficznego dla domeny `TrackingPropertyDSL`.
+    2. Użyj domyślnej nazwy dla języka specyficznego dla domeny `TrackingPropertyDSL` .
 
-    3. Ustaw rozszerzenie dla plików modelu na `trackingPropertyDsl`.
+    3. Ustaw rozszerzenie dla plików modelu `trackingPropertyDsl` .
 
     4. Użyj domyślnej ikony szablonów dla plików modelu.
 
-    5. Ustaw nazwę produktu do `Product Name`.
+    5. Ustaw nazwę produktu na `Product Name` .
 
-    6. Ustaw nazwę firmy na `Company Name`.
+    6. Ustaw nazwę firmy na `Company Name` .
 
-    7. Użyj wartości domyślnej dla głównej przestrzeni nazw dla projektów w rozwiązaniu, `CompanyName.ProductName.TrackingPropertyDSL`.
+    7. Użyj wartości domyślnej dla głównej przestrzeni nazw dla projektów w rozwiązaniu `CompanyName.ProductName.TrackingPropertyDSL` .
 
     8. Zezwól kreatorowi na utworzenie pliku klucza o silnej nazwie dla zestawów.
 
@@ -96,27 +96,27 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
 1. W projektancie DSL kliknij prawym przyciskiem myszy klasę **ExampleModel** domeny, wskaż polecenie **Dodaj**, a następnie kliknij przycisk **DomainProperty**.
 
-    1. Nazwij nową właściwość `DefaultNamespace`.
+    1. Nazwij nową właściwość `DefaultNamespace` .
 
-    2. W oknie **Właściwości** nowej właściwości, ustaw **wartość domyślną** na `DefaultNamespace`i ustaw dla opcji **Typ** **ciąg**.
+    2. W oknie **Właściwości** nowej właściwości, ustaw **wartość domyślną** na `DefaultNamespace` , a następnie ustaw **ciąg**. **Type**
 
-2. Do klasy domeny **ExampleModel** Dodaj właściwość domeny o nazwie `CustomElements`.
+2. Do klasy domeny **ExampleModel** Dodaj właściwość domeny o nazwie `CustomElements` .
 
      W oknie **Właściwości** dla nowej właściwości ustaw wartość **Typ** na **obliczone**.
 
-3. Na **przykład** klasy domeny, Dodaj właściwość domeny o nazwie `Namespace`.
+3. Na **przykład** klasy domeny, Dodaj właściwość domeny o nazwie `Namespace` .
 
      W oknie **Właściwości** dla nowej właściwości ustaw wartość **umożliwia przeglądania** na **Fałsz**, a ustawienie **Typ** na **CustomStorage**.
 
-4. Na **przykład** klasy domeny, Dodaj właściwość domeny o nazwie `IsNamespaceTracking`.
+4. Na **przykład** klasy domeny, Dodaj właściwość domeny o nazwie `IsNamespaceTracking` .
 
-     W oknie **Właściwości** dla nowej właściwości ustaw wartość **umożliwia przeglądania** na **false**, ustawienie **wartości domyślnej** na `true`i ustawienie **Typ** na **wartość logiczna**.
+     W oknie **Właściwości** dla nowej właściwości ustaw wartość **umożliwia przeglądania** na **false**, ustaw dla ustawienia **wartości domyślne** `true` i ustaw **Typ** na **wartość Boolean**.
 
 #### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Aby zaktualizować elementy diagramu i szczegóły języka DSL
 
 1. W projektancie DSL kliknij prawym przyciskiem myszy kształt geometrii **ExampleShape** , wskaż polecenie **Dodaj**, a następnie kliknij polecenie **dekoratora tekstu**.
 
-    1. Nazwij nowy tekst dekoratora `NamespaceDecorator`.
+    1. Nazwij nowy tekst dekoratora `NamespaceDecorator` .
 
     2. W oknie **Właściwości** dekoratora tekstu Ustaw **pozycję pozycja** na **InnerBottomLeft**.
 
@@ -152,20 +152,20 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
 #### <a name="to-create-the-code-files"></a>Aby utworzyć pliki kodu
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DSL** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**. Nadaj nazwę nowemu folderowi `CustomCode`.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DSL** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy folder**. Nazwij nowy folder `CustomCode` .
 
 2. Kliknij prawym przyciskiem myszy nowy folder **atrybut CustomCode** , wskaż polecenie **Dodaj**, a następnie kliknij pozycję **nowy element**.
 
-3. Wybierz szablon **pliku kodu** , ustaw **nazwę** na `NamespaceTrackingProperty.cs`, a następnie kliknij przycisk **OK**.
+3. Wybierz szablon **pliku kodu** , ustaw **nazwę** na `NamespaceTrackingProperty.cs` , a następnie kliknij przycisk **OK**.
 
      Plik NamespaceTrackingProperty.cs jest tworzony i otwierany do edycji.
 
-4. W folderze Utwórz następujące pliki kodu: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`i `TypeDescriptor.cs`.
+4. W folderze Utwórz następujące pliki kodu: `ExampleModel.cs,``HelperClasses.cs` , `Serialization.cs` , i `TypeDescriptor.cs` .
 
-5. W projekcie **DslPackage** , Utwórz również folder `CustomCode` i Dodaj do niego plik `Package.cs` kodu.
+5. W projekcie **DslPackage** , Utwórz również `CustomCode` folder i Dodaj do niego `Package.cs` plik kodu.
 
 ## <a name="adding-helper-classes-to-support-tracking-properties"></a>Dodawanie klas pomocnika do obsługi właściwości śledzenia
- Do pliku HelperClasses.cs Dodaj klasy `TrackingHelper` i `CriticalException` w następujący sposób. Te klasy zostaną odwołane w dalszej części tego przewodnika.
+ Do pliku HelperClasses.cs Dodaj `TrackingHelper` klasy i w `CriticalException` następujący sposób. Te klasy zostaną odwołane w dalszej części tego przewodnika.
 
 #### <a name="to-add-the-helper-classes"></a>Aby dodać klasy pomocnika
 
@@ -245,10 +245,10 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
     ```
 
 ## <a name="adding-custom-code-for-the-custom-type-descriptor"></a>Dodawanie niestandardowego kodu dla deskryptora typu niestandardowego
- Zaimplementuj metodę `GetCustomProperties` dla deskryptora typu dla klasy `ExampleModel` domeny.
+ Zaimplementuj `GetCustomProperties` metodę dla deskryptora typu dla `ExampleModel` klasy domeny.
 
 > [!NOTE]
-> Kod generowany przez narzędzia DSL dla deskryptora typu niestandardowego dla wywołań `ExampleModel` `GetCustomProperties`; Jednak narzędzia DSL nie generują kodu, który implementuje metodę.
+> Kod, który generuje narzędzia DSL dla niestandardowego deskryptora typu dla `ExampleModel` wywołań `GetCustomProperties` ; jednak narzędzia DSL nie generują kodu implementującego metodę.
 
  Zdefiniowanie tej metody powoduje utworzenie deskryptora właściwości śledzenia dla właściwości śledzenia przestrzeni nazw. Ponadto, podanie atrybutów dla właściwości śledzenia pozwala na prawidłowe wyświetlanie właściwości w oknie **Właściwości** .
 
@@ -341,14 +341,14 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
     ```
 
 ## <a name="adding-custom-code-for-the-model"></a>Dodawanie niestandardowego kodu dla modelu
- Zaimplementuj metodę `GetCustomElementsValue` dla klasy domeny `ExampleModel`.
+ Zaimplementuj `GetCustomElementsValue` metodę dla `ExampleModel` klasy domeny.
 
 > [!NOTE]
-> Kod, który generuje narzędzia DSL dla `ExampleModel` wywołań `GetCustomElementsValue`; Jednak narzędzia DSL nie generują kodu, który implementuje metodę.
+> Kod, który generuje narzędzia DSL dla `ExampleModel` wywołań, `GetCustomElementsValue` ale narzędzia DSL nie generują kodu implementującego metodę.
 
- Zdefiniowanie metody `GetCustomElementsValue` udostępnia logikę dla właściwości obliczeniowej CustomElements `ExampleModel`. Ta metoda zlicza `ExampleElement` klas domen, które mają właściwość śledzenia przestrzeni nazw, która ma wartość zaktualizowaną przez użytkownika, i zwraca ciąg, który reprezentuje tę liczbę jako część łącznej liczby elementów w modelu.
+ Zdefiniowanie `GetCustomElementsValue` metody udostępnia logikę dla właściwości obliczeniowej CustomElements `ExampleModel` . Ta metoda zlicza liczbę `ExampleElement` klas domen, które mają właściwość śledzenia przestrzeni nazw, która ma wartość zaktualizowaną przez użytkownika, i zwraca ciąg, który reprezentuje tę liczbę jako część łącznej liczby elementów w modelu.
 
- Dodatkowo Dodaj metodę `OnDefaultNamespaceChanged` do `ExampleModel`i Zastąp metodę `OnValueChanged` `DefaultNamespacePropertyHandler` zagnieżdżonej klasy `ExampleModel`, aby wywołać `OnDefaultNamespaceChanged`.
+ Dodatkowo Dodaj `OnDefaultNamespaceChanged` metodę do `ExampleModel` i Zastąp `OnValueChanged` metodę `DefaultNamespacePropertyHandler` klasy zagnieżdżonej `ExampleModel` wywołania `OnDefaultNamespaceChanged` .
 
  Ponieważ właściwość DefaultNamespace jest używana do obliczania właściwości śledzenia przestrzeni nazw, `ExampleModel` musi powiadomić wszystkie `ExampleElement` klasy domeny o zmianie wartości DefaultNamespace.
 
@@ -418,14 +418,14 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
     ```
 
 ## <a name="adding-custom-code-for-the-tracking-property"></a>Dodawanie niestandardowego kodu dla właściwości śledzenia
- Dodaj metodę `CalculateNamespace` do klasy `ExampleElement` domeny.
+ Dodaj `CalculateNamespace` metodę do `ExampleElement` klasy domeny.
 
- Zdefiniowanie tej metody zapewnia logikę dla właściwości obliczeniowej CustomElements `ExampleModel`. Ta metoda zlicza `ExampleElement` klas domen, które mają właściwość śledzenia przestrzeni nazw, która znajduje się w stanie zaktualizowane przez użytkownika, i zwraca ciąg, który reprezentuje tę liczbę jako część łącznej liczby elementów w modelu.
+ Zdefiniowanie tej metody zapewnia logikę dla właściwości obliczeniowej CustomElements `ExampleModel` . Ta metoda zlicza liczbę `ExampleElement` klas domen, które mają właściwość śledzenia przestrzeni nazw, która jest w zaktualizowanym stanie użytkownika, i zwraca ciąg, który reprezentuje tę liczbę jako część łącznej liczby elementów w modelu.
 
- Ponadto Dodaj magazyn dla i metody, aby uzyskać i ustawić właściwość przestrzeń nazw Custom magazynu klasy `ExampleElement` domeny.
+ Ponadto Dodaj magazyn dla i metody, aby uzyskać i ustawić właściwość przestrzeń nazw Custom Storage `ExampleElement` klasy domeny.
 
 > [!NOTE]
-> Kod generowany przez narzędzia DSL dla `ExampleModel` wywołuje metody get i Set; Jednak narzędzia DSL nie generują kodu, który implementuje metody.
+> Kod generowany przez narzędzia DSL dla `ExampleModel` wywołań metod get i Set, ale narzędzia DSL nie generują kodu, który implementuje metody.
 
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Aby dodać metodę dla deskryptora typu niestandardowego
 
@@ -591,7 +591,7 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
  Dodaj kod obsługujący niestandardowe zachowanie po ładowaniu dla serializacji XML.
 
 > [!NOTE]
-> Kod, który generuje narzędzia DSL, wywołuje metody `OnPostLoadModel` i `OnPostLoadModelAndDiagram`; Jednak narzędzia DSL nie generują kodu, który implementuje te metody.
+> Kod, który generuje narzędzia DSL wywołuje `OnPostLoadModel` metody i, `OnPostLoadModelAndDiagram` ale narzędzia DSL nie generują kodu, który implementuje te metody.
 
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Aby dodać kod do obsługi niestandardowego zachowania po załadowaniu
 
@@ -718,15 +718,15 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
     ```
 
 ## <a name="testing-the-language"></a>Testowanie języka
- Następnym krokiem jest skompilowanie i uruchomienie projektanta DSL w nowym wystąpieniu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], aby można było sprawdzić, czy właściwość śledzenia działa poprawnie.
+ Następnym krokiem jest skompilowanie i uruchomienie projektanta DSL w nowym wystąpieniu, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Aby można było sprawdzić, czy właściwość śledzenia działa poprawnie.
 
 #### <a name="to-exercise-the-language"></a>Aby skorzystać z języka
 
-1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+1. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**.
 
-2. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
+2. W menu **Debugowanie** kliknij polecenie **Rozpocznij debugowanie**.
 
-     Eksperymentalna kompilacja [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] otwiera rozwiązanie **debugowania** , które zawiera pusty plik testowy.
+     Eksperymentalna kompilacja [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] otwiera rozwiązanie do **debugowania** , które zawiera pusty plik testowy.
 
 3. W **Eksplorator rozwiązań**kliknij dwukrotnie plik test. trackingPropertyDsl, aby otworzyć go w projektancie, a następnie kliknij powierzchnię projektu.
 
@@ -760,5 +760,5 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
  Jeśli planujesz użycie więcej niż jednej właściwości śledzenia lub Zaimplementuj właściwości śledzenia w więcej niż jednym DSL, możesz utworzyć szablon tekstowy w celu wygenerowania wspólnego kodu do obsługi każdej właściwości śledzenia. Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).
 
 ## <a name="see-also"></a>Zobacz też
- <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor><xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
+ <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor> <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
  [Jak zdefiniować język specyficzny dla domeny](../modeling/how-to-define-a-domain-specific-language.md) [: Tworzenie](../modeling/how-to-create-a-domain-specific-language-solution.md) przewodnika dotyczącego języka specyficznego dla domeny [: dostosowywanie definicji języka specyficznego dla domeny](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

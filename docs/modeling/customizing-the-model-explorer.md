@@ -111,6 +111,6 @@ Wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla dome
 
      Eksplorator powinien wyświetlać tylko węzeł **aktorzy** i nie powinien wyświetlać węzła **Komentarze** .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

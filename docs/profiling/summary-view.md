@@ -55,7 +55,7 @@ Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach lub obie
 | **Filtrowanie danych raportu** | Wyświetla okienko filtr raportu profilowania, w którym można określić kryteria ograniczające dane w widoku raportu. Aby uzyskać więcej informacji, zobacz [Filtr widoku raportu wydajności](../profiling/performance-report-view-filter.md) |
 | **Przełącz pełny ekran** | Przełącza tryb pełnoekranowy dla widoku raportu. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
 - [Widok podsumowania — dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)
 - [Widok podsumowania — dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)

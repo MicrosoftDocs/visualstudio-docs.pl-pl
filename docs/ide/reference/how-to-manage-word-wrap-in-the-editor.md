@@ -1,7 +1,7 @@
 ---
 title: Zawijanie wierszy
 ms.date: 11/07/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - word wrap
 - editors, text viewing
@@ -12,46 +12,46 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f49925211247e346ac3203de20a97496c54295d
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: c4bf76643ce1ea6e2f449c54fbc31d441418becf
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444807"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770337"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Jak: Zarządzanie zawijaniem wyrazów w edytorze
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
 
-Można ustawić i wyczyścić opcję **zawijania wyrazów.** Gdy ta opcja jest ustawiona, część długiej linii, która wykracza poza bieżącą szerokość okna Edytor kodu, jest wyświetlana w następnym wierszu. Gdy ta opcja jest wyczyszczona, na przykład, aby ułatwić korzystanie z numeracji linii, można przewinąć w prawo, aby zobaczyć końce długich linii.
+Możesz ustawić i wyczyścić opcję **zawijania wyrazów** . Gdy ta opcja jest ustawiona, część długiej linii, która wykracza poza bieżącą szerokość okna edytora kodu, zostanie wyświetlona w następnym wierszu. Gdy ta opcja jest wyczyszczona, na przykład w celu ułatwienia używania numeracji wierszy, można przewijać w prawo, aby zobaczyć zakończenia długich wierszy.
 
 > [!NOTE]
-> W tym temacie stosuje się do programu Visual Studio w systemie Windows. W przypadku programu Visual Studio dla komputerów Mac zobacz [Edytor źródeł: Zawijanie wyrazów](/visualstudio/mac/source-editor#word-wrap).
+> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Edytor źródła: zawijanie wierszy](/visualstudio/mac/source-editor#word-wrap).
 
-## <a name="to-set-word-wrap-preferences"></a>Aby ustawić preferencje zawijania wyrazów
+## <a name="to-set-word-wrap-preferences"></a>Aby ustawić preferencje zawijania wierszy
 
 1. W menu **Tools** (Narzędzia) wybierz pozycję **Options** (Opcje).
 
-2. W folderze **Edytor tekstu** wybierz opcję **Opcje ogólne** w podfolderze **Wszystkie języki,** aby ustawić tę opcję globalnie.
+2. W folderze **Edytor tekstu** wybierz opcje **Ogólne** w podfolderze **wszystkie języki** , aby ustawić tę opcję globalnie.
 
-     — lub —
+     oraz
 
-     Wybierz opcje **ogólne** w podfolderze dla języka, w którym programujesz.
+     Wybierz **Ogólne** opcje w podfolderze języka, w którym planujesz programowanie.
 
-3. W obszarze **Ustawienia**zaznacz lub wyczyść opcję **zawijanie wyrazu.**
+3. W obszarze **Ustawienia**wybierz lub wyczyść opcję **zawijania wyrazów** .
 
-     Po **zaznaczeniu opcji Zawijanie wyrazu** włączona jest opcja **Pokaż glify wizualne dla zawijanych wyrazów.**
+     Gdy zaznaczona jest opcja **zawijania wyrazów** , opcja **Pokaż wizualne glify dla zawijania wyrazów** jest włączona.
 
-4. Wybierz opcję **Pokaż glify wizualne dla otoki wyrazu,** jeśli wolisz wyświetlić wskaźnik strzałki powrotnej, w którym długa linia zawija się na drugą linię. Wyczyść tę opcję, jeśli nie chcesz wyświetlać strzałek wskaźnika.
+4. Wybierz opcję **Pokaż glify wizualne dla zawijania wyrazów** , jeśli wolisz wyświetlić wskaźnik strzałki powrotu, w której długi wiersz jest zawijany do drugiego wiersza. Usuń zaznaczenie tej opcji, jeśli wolisz nie wyświetlać strzałek wskaźnika.
 
     > [!NOTE]
-    > Te strzałki przypomnienia nie są dodawane do kodu; są one przeznaczone wyłącznie do celów wyświetlania.
+    > Te strzałki przypomnień nie są dodawane do kodu; są one przeznaczone tylko do wyświetlania.
 
 ## <a name="known-issues"></a>Znane problemy
 
-Jeśli znasz zawijanie wyrazów w Notatnik++, Tekst wysublimowany lub kod programu Visual Studio, należy pamiętać o następujących problemach, w których program Visual Studio zachowuje się inaczej niż inni redaktorzy:
+Jeśli znasz opcję zawijania wyrazów w Notatniku + +, tekście subwapna lub Visual Studio Code, weź pod uwagę następujące kwestie, w których program Visual Studio działa inaczej w stosunku do innych redaktorów:
 
-* [Potrójne kliknięcie nie wybiera całej linii](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [Dwukrotne naciśnięcie klawisza End nie powoduje przesuń kursora na koniec wiersza](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
+* [Potrójne kliknięcie nie zaznacza cały wiersz](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
+* [Naciśnięcie klawisza End dwa razy nie powoduje przeniesienia kursora do końca wiersza](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

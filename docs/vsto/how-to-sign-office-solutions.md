@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Podpisywanie rozwiązań pakietu Office'
+title: 'Instrukcje: podpisywanie rozwiązań pakietu Office'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,36 +14,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971124"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545759"
 ---
-# <a name="how-to-sign-office-solutions"></a>Instrukcje: Podpisywanie rozwiązań pakietu Office
-  Jeśli utworzysz rozwiązanie, możesz udzielić zaufania do rozwiązania przy użyciu certyfikatu jako dowód. Możesz użyć tego samego certyfikatu dla wielu rozwiązań, a wszystkie rozwiązania pozostaną zaufane, nie dodatkowe aktualizacje zasad.
+# <a name="how-to-sign-office-solutions"></a>Instrukcje: podpisywanie rozwiązań pakietu Office
+  Po podpisaniu rozwiązania można udzielić zaufania do rozwiązania przy użyciu certyfikatu jako dowodu. Możesz użyć tego samego certyfikatu dla wielu rozwiązań, a wszystkie rozwiązania będą zaufane bez dodatkowych aktualizacji zasad zabezpieczeń.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Jeśli ręcznie edytować aplikację i manifesty wdrożenia za pomocą narzędzia do edytowania i Manifest Generation (*mage.exe* i *mageui.exe*), musisz ją ponownie podpisać manifesty, zanim będzie można ich użyć. Aby uzyskać więcej informacji, zobacz [jak: Ponowne podpisywanie manifestów aplikacji i wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ W przypadku ręcznego edytowania manifestów aplikacji i wdrażania przy użyciu Narzędzie tworzenia i edycji manifestów (*mage.exe* i *mageui.exe*) należy je zarejestrować przed użyciem. Aby uzyskać więcej informacji, zobacz [jak: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
-## <a name="sign-by-using-a-certificate"></a>Zaloguj się przy użyciu certyfikatu
- Certyfikat jest plik, który zawiera unikatowego klucza oraz tożsamość wydawcy rozwiązań. Można kupić certyfikaty z urzędu certyfikacji, lub utworzyć własny certyfikat i podpisać go urzędu certyfikacji.
+## <a name="sign-by-using-a-certificate"></a>Logowanie przy użyciu certyfikatu
+ Certyfikat to plik zawierający unikatowy klucz i tożsamość wydawcy rozwiązania. Można zakupić certyfikaty z urzędu certyfikacji lub utworzyć własny certyfikat oraz podpisać go za pomocą urzędu certyfikacji.
 
- Program Visual Studio podpisuje rozwiązań pakietu Office przy użyciu tymczasowego certyfikatu, aby włączyć debugowanie. Nie należy używać tymczasowy certyfikat w przypadku rozwiązań wdrożonych jako dowodu.
+ Program Visual Studio podpisuje rozwiązania pakietu Office z certyfikatem tymczasowym w celu włączenia debugowania. Certyfikatu tymczasowego nie należy używać w ramach wdrożonych rozwiązań jako dowodu.
 
-### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Do podpisania rozwiązania do pakietu Office przy użyciu certyfikatu
+### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Aby podpisać rozwiązanie pakietu Office przy użyciu certyfikatu
 
-1. Na **projektu** menu, kliknij przycisk _SolutionName_**właściwości**.
+1. W menu **projekt** kliknij pozycję właściwości _rozwiązania_**Properties**.
 
-2. Kliknij przycisk **podpisywanie** kartę.
+2. Kliknij kartę **podpisywanie** .
 
-3. Wybierz **Podpisz manifesty ClickOnce**.
+3. Wybierz pozycję **Podpisz manifesty ClickOnce**.
 
-4. Znajdź certyfikat, klikając **wybierać Store** lub **wybierz z pliku** i przejdź do certyfikatu.
+4. Znajdź certyfikat, klikając **pozycję Wybierz z magazynu** lub **wybierając pozycję z pliku** i przechodząc do certyfikatu.
 
-5. Aby zweryfikować, że używany jest poprawny certyfikat, kliknij przycisk **więcej szczegółów** do wyświetlania informacji o certyfikacie.
+5. Aby sprawdzić, czy jest używany prawidłowy certyfikat, kliknij pozycję **więcej szczegółów** , aby wyświetlić informacje o certyfikacie.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie polecenia do menu skrótów'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594737"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545720"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
 
@@ -48,7 +48,7 @@ Użyj metody w tym temacie, jeśli:
 
    W przeciwnym razie Rozważ użycie metody MEF w celu zdefiniowania poleceń. Aby uzyskać więcej informacji, zobacz sekcję "Rozpoznaj [swój DSL" przy użyciu MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-## <a name="VSCT"></a>Zadeklaruj polecenie w poleceniach. vsct
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a>Zadeklaruj polecenie w poleceniach. vsct
  Polecenia menu są zadeklarowane w DslPackage\Commands.vsct. Te definicje określają etykiety elementów menu i miejsca, w których są wyświetlane w menu.
 
  Plik, który edytujesz, Commands. vsct, Importuje definicje z kilku plików. h, które znajdują się w katalogu *Visual Studio SDK ścieżka instalacji*\VisualStudioIntegration\Common\Inc. Zawiera również GeneratedVsct. vsct, który jest generowany na podstawie definicji DSL.
@@ -59,7 +59,7 @@ Użyj metody w tym temacie, jeśli:
 
 1. W **Eksplorator rozwiązań**w projekcie **DslPackage** Otwórz polecenie Commands. vsct.
 
-2. W `Commands` elementu Zdefiniuj jeden lub więcej przycisków i grupę. *Przycisk* jest elementem menu. *Grupa* jest sekcją w menu. Aby zdefiniować te elementy, Dodaj następujące elementy:
+2. W `Commands` elemencie Zdefiniuj jeden lub więcej przycisków i grupę. *Przycisk* jest elementem menu. *Grupa* jest sekcją w menu. Aby zdefiniować te elementy, Dodaj następujące elementy:
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -86,11 +86,11 @@ Użyj metody w tym temacie, jeśli:
     ```
 
     > [!NOTE]
-    > Każdy przycisk lub grupa są identyfikowane za pomocą identyfikatora GUID i identyfikatora w postaci liczby całkowitej. Można utworzyć kilka grup i przycisków z tym samym identyfikatorem GUID. Jednak muszą mieć różne identyfikatory. Nazwy i nazwy identyfikatorów GUID są tłumaczone na rzeczywiste identyfikatory GUID i identyfikatory liczbowe w węźle `<Symbols>`.
+    > Każdy przycisk lub grupa są identyfikowane za pomocą identyfikatora GUID i identyfikatora w postaci liczby całkowitej. Można utworzyć kilka grup i przycisków z tym samym identyfikatorem GUID. Jednak muszą mieć różne identyfikatory. Nazwy i nazwy identyfikatorów GUID są tłumaczone na rzeczywiste identyfikatory GUID i identyfikatory liczbowe w `<Symbols>` węźle.
 
 3. Dodaj ograniczenie widoczności dla polecenia, aby było ładowane tylko w kontekście języka specyficznego dla domeny. Aby uzyskać więcej informacji, zobacz [VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md).
 
-     W tym celu Dodaj następujące elementy w `CommandTable` element po elemencie `Commands`.
+     Aby to zrobić, Dodaj następujące elementy w `CommandTable` elemencie po `Commands` elemencie.
 
     ```xml
     <VisibilityConstraints>
@@ -100,7 +100,7 @@ Użyj metody w tym temacie, jeśli:
     </VisibilityConstraints>
     ```
 
-4. Zdefiniuj nazwy używane dla identyfikatorów GUID i identyfikator. Aby to zrobić, Dodaj element `Symbols` w elemencie `CommandTable` po elemencie `Commands`.
+4. Zdefiniuj nazwy używane dla identyfikatorów GUID i identyfikator. Aby to zrobić, Dodaj `Symbols` element do `CommandTable` elementu po `Commands` elemencie.
 
     ```xml
     <Symbols>
@@ -113,10 +113,10 @@ Użyj metody w tym temacie, jeśli:
     </Symbols>
     ```
 
-5. Zastąp `{000...000}` identyfikatorem GUID, który identyfikuje grupy i elementy menu. Aby uzyskać nowy identyfikator GUID, użyj narzędzia **Tworzenie identyfikatora GUID** w menu **Narzędzia** .
+5. Zamień na `{000...000}` Identyfikator GUID, który identyfikuje grupy i elementy menu. Aby uzyskać nowy identyfikator GUID, użyj narzędzia **Tworzenie identyfikatora GUID** w menu **Narzędzia** .
 
     > [!NOTE]
-    > Jeśli dodasz więcej grup lub elementów menu, możesz użyć tego samego identyfikatora GUID. Należy jednak użyć nowych wartości dla `IDSymbols`.
+    > Jeśli dodasz więcej grup lub elementów menu, możesz użyć tego samego identyfikatora GUID. Należy jednak użyć nowych wartości dla `IDSymbols` .
 
 6. W kodzie skopiowanym z tej procedury Zastąp każde wystąpienie następujących ciągów własnymi ciągami:
 
@@ -128,8 +128,8 @@ Użyj metody w tym temacie, jeśli:
 
     - `My Context Menu Command`
 
-## <a name="version"></a>Aktualizowanie wersji pakietu w programie Package.tt
- Za każdym razem, gdy dodasz lub zmienisz polecenie, zaktualizuj `version` parametr <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>, który jest stosowany do klasy pakietu przed wydaniem nowej wersji języka specyficznego dla domeny.
+## <a name="update-the-package-version-in-packagett"></a><a name="version"></a>Aktualizowanie wersji pakietu w programie Package.tt
+ Za każdym razem, gdy dodasz lub zmienisz polecenie, zaktualizuj `version` parametr, <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> który jest stosowany do klasy pakietu przed wydaniem nowej wersji języka specyficznego dla domeny.
 
  Ponieważ Klasa pakietu jest zdefiniowana w wygenerowanym pliku, zaktualizuj atrybut w pliku szablonu tekstu, który generuje plik Package.cs.
 
@@ -137,17 +137,17 @@ Użyj metody w tym temacie, jeśli:
 
 1. W **Eksplorator rozwiązań**w projekcie **DslPackage** w folderze **GeneratedCode** Otwórz plik Package.tt.
 
-2. Znajdź atrybut `ProvideMenuResource`.
+2. Znajdź `ProvideMenuResource` atrybut.
 
-3. Zwiększ parametr `version` atrybutu, który jest drugim parametrem. Jeśli chcesz, możesz jawnie napisać nazwę parametru, aby przypominać o swoim przeznaczeniu. Na przykład:
+3. Zwiększ `version` parametr atrybutu, który jest drugim parametrem. Jeśli chcesz, możesz jawnie napisać nazwę parametru, aby przypominać o swoim przeznaczeniu. Przykład:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="CommandSet"></a>Zdefiniuj zachowanie polecenia
+## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a>Zdefiniuj zachowanie polecenia
 
-Twoje DSL ma już kilka poleceń, które są zaimplementowane w klasie częściowej zadeklarowanej w DslPackage\GeneratedCode\CommandSet.cs. Aby dodać nowe polecenia, należy ją rozwinąć, tworząc nowy plik, który zawiera częściową deklarację tej samej klasy. Nazwa klasy jest zwykle *\<YourDslName >* `CommandSet`. Warto zacząć od zweryfikowania nazwy klasy i sprawdzenia jej zawartości.
+Twoje DSL ma już kilka poleceń, które są zaimplementowane w klasie częściowej zadeklarowanej w DslPackage\GeneratedCode\CommandSet.cs. Aby dodać nowe polecenia, należy ją rozwinąć, tworząc nowy plik, który zawiera częściową deklarację tej samej klasy. Nazwa klasy jest zwykle *\<YourDslName>* `CommandSet` . Warto zacząć od zweryfikowania nazwy klasy i sprawdzenia jej zawartości.
 
-Klasa zestawu poleceń pochodzi od <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+Klasa zestawu poleceń pochodzi od <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> .
 
 ### <a name="extend-the-commandset-class"></a>Poszerzenie klasy element CommandSet
 
@@ -157,9 +157,9 @@ Klasa zestawu poleceń pochodzi od <xref:Microsoft.VisualStudio.Modeling.Shell.C
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. W **DslPackage**Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs`.
+2. W **DslPackage**Utwórz folder o nazwie **kod niestandardowy**. W tym folderze Utwórz nowy plik klasy o nazwie `CommandSet.cs` .
 
-3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Na przykład:
+3. W nowym pliku Napisz deklarację częściową, która ma taką samą przestrzeń nazw i nazwę jak wygenerowana Klasa częściowa. Przykład:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -193,7 +193,7 @@ namespace Company.Language1 /* Make sure this is correct */
 Należy zdefiniować dwie metody, jeden, aby określić, kiedy polecenie będzie widoczne w menu po kliknięciu prawym przyciskiem myszy, a drugie, aby wykonać polecenie. Te metody nie są zastępują zastąpień; Zamiast tego rejestruje się je na liście poleceń.
 
 ### <a name="define-when-the-command-will-be-visible"></a>Zdefiniuj, kiedy polecenie będzie widoczne
- Dla każdego polecenia Zdefiniuj metodę `OnStatus...`, która określa, czy polecenie pojawi się w menu, oraz czy zostanie włączone lub wyszarzone. Ustaw właściwości `Visible` i `Enabled` `MenuCommand`, jak pokazano w poniższym przykładzie. Ta metoda jest wywoływana w celu skonstruowania menu skrótów za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram, dzięki czemu musi on szybko rozpocząć pracę.
+ Dla każdego polecenia Zdefiniuj metodę, `OnStatus...` która określa, czy polecenie pojawi się w menu, oraz czy zostanie włączone lub wyszarzone. Ustaw `Visible` właściwości i `Enabled` `MenuCommand` , jak pokazano w poniższym przykładzie. Ta metoda jest wywoływana w celu skonstruowania menu skrótów za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram, dzięki czemu musi on szybko rozpocząć pracę.
 
  W tym przykładzie polecenie jest widoczne tylko wtedy, gdy użytkownik wybrał określony typ kształtu i jest włączone tylko wtedy, gdy co najmniej jeden z wybranych elementów jest w określonym stanie. Przykład jest oparty na szablonie diagramu DSL, a ClassShape i ModelClass są typami, które są zdefiniowane w DSL:
 
@@ -222,26 +222,26 @@ Następujące fragmenty są często przydatne w metodach OnStatus:
 
 - `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy, jest zawsze uwzględniony na tej liście. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
-- `this.IsDiagramSelected()` - `true`, jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()` - `true`Jeśli użytkownik kliknął pustą część diagramu.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` — użytkownik nie wybrał wielu obiektów
+- `this.IsSingleSelection()`-Użytkownik nie wybrał wielu obiektów
 
-- `this.SingleSelection` — kształt lub diagram, który kliknięto prawym przyciskiem myszy.
+- `this.SingleSelection`-kształt lub diagram, który kliknął użytkownik prawym przyciskiem myszy.
 
-- `shape.ModelElement as MyLanguageElement` — element modelu reprezentowany przez kształt.
+- `shape.ModelElement as MyLanguageElement`— element modelu reprezentowany przez kształt.
 
-Ogólnie rzecz biorąc, właściwość `Visible` zależy od tego, co jest zaznaczone, i ustaw właściwość `Enabled` zależą od stanu wybranych elementów.
+Ogólnie rzecz biorąc, ustaw `Visible` Właściwość zależnie od tego, co jest zaznaczone, i ustaw `Enabled` Właściwość zależnie od stanu wybranych elementów.
 
 Metoda OnStatus nie powinna zmieniać stanu magazynu.
 
 ### <a name="define-what-the-command-does"></a>Zdefiniuj działanie polecenia
- Dla każdego polecenia Zdefiniuj metodę `OnMenu...`, która wykonuje wymaganą akcję, gdy użytkownik kliknie polecenie menu.
+ Dla każdego polecenia Zdefiniuj `OnMenu...` metodę, która wykonuje wymaganą akcję, gdy użytkownik kliknie polecenie menu.
 
  W przypadku wprowadzania zmian do elementów modelu należy to zrobić wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
- W tym przykładzie `ClassShape`, `ModelClass`i `Comment` są typami, które są zdefiniowane w DSL, które pochodzą z szablonu klasy diagramu DSL.
+ W tym przykładzie, `ClassShape` , `ModelClass` i `Comment` są typami, które są zdefiniowane w DSL, które są uzyskiwane z szablonu klasy diagramu DSL.
 
 ```csharp
 private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
@@ -283,7 +283,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
  Aby uzyskać więcej informacji na temat sposobu nawigowania z obiektu do obiektu w modelu i informacje o sposobie tworzenia obiektów i linków, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Zarejestruj polecenie
- Powtórz w C# deklaracjach wartości identyfikatora GUID i identyfikatora, które zostały wprowadzone w sekcji symbole element CommandSet. vsct:
+ Powtarzaj w języku C# deklaracje identyfikatora GUID i wartości identyfikatora, które zostały wprowadzone w sekcji symboli w element CommandSet. vsct:
 
 ```csharp
 private Guid guidCustomMenuCmdSet =
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Jeśli zmienisz sekcję symboli pliku VSCT, musisz również zmienić te deklaracje tak, aby były zgodne. Należy również zwiększyć numer wersji w Package.tt
 
- Zarejestruj polecenia menu w ramach tego zestawu poleceń. `GetMenuCommands()` jest wywoływana jednokrotnie po zainicjowaniu diagramu:
+ Zarejestruj polecenia menu w ramach tego zestawu poleceń. `GetMenuCommands()`jest wywoływana jednokrotnie po zainicjowaniu diagramu:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -329,11 +329,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Kliknij prawym przyciskiem myszy różne elementy na diagramie, aby sprawdzić, czy polecenie jest prawidłowo włączone lub wyłączone, i odpowiednio wyświetlane lub ukryte, w zależności od wybranego elementu.
 
-## <a name="troubleshoot"></a>Rozwiązywanie problemów
+## <a name="troubleshoot"></a>Rozwiąż problemy
 
 **Polecenie nie jest wyświetlane w menu:**
 
-- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
+- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Upewnij się, że próbka eksperymentalna ma poprawne rozszerzenie nazwy pliku dla tego języka DSL. Aby sprawdzić rozszerzenie nazwy pliku, Otwórz DslDefinition. DSL w głównym wystąpieniu programu Visual Studio. Następnie w Eksploratorze DSL kliknij prawym przyciskiem myszy węzeł Edytor, a następnie kliknij polecenie Właściwości. W okno Właściwości, zapoznaj się z właściwością FileExtension.
 

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe zliczanie znaków w dokumentach'
+title: 'Instrukcje: Programowane zliczanie znaków w dokumentach'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,44 +14,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb4bbb124575346c930fa5539801deb3c9981cac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81ee7c3d798ae2c38ed80b261a6d87190daa59a2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575247"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546071"
 ---
-# <a name="how-to-programmatically-count-characters-in-documents"></a>Instrukcje: Programowe zliczanie znaków w dokumentach
-  Pierwszy znak w dokumencie jest od pozycji znaku 0, który reprezentuje punkt wstawiania. Ostatnia pozycja znaku jest równa całkowita liczba znaków w dokumencie. Można określić liczbę znaków w dokumencie za pomocą <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> właściwość <xref:Microsoft.Office.Interop.Word.Characters> kolekcji.
+# <a name="how-to-programmatically-count-characters-in-documents"></a>Instrukcje: Programowane zliczanie znaków w dokumentach
+  Pierwszy znak w dokumencie znajduje się na pozycji znaku 0, która reprezentuje punkt wstawiania. Ostatnia pozycja znaku jest równa łącznej liczbie znaków w dokumencie. Możesz określić liczbę znaków w dokumencie przy użyciu <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> właściwości <xref:Microsoft.Office.Interop.Word.Characters> kolekcji.
 
- Zliczane są wszystkie znaki w dokumencie, łącznie ze spacjami, znaczniki akapitu i innych znaków, które zwykle są ukryte. Nawet nowy pusty dokument zwraca liczbę o jeden znak, ponieważ zawiera ona akapitu.
+ Wszystkie znaki w dokumencie są zliczane, w tym spacje, znaczniki akapitu i inne znaki, które są normalnie ukryte. Nawet nowy pusty dokument zwraca liczbę jednego znaku, ponieważ zawiera znacznik akapitu.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="to-display-the-number-of-characters-in-a-document-level-customization"></a>Aby wyświetlić liczbę znaków w dostosowaniu na poziomie dokumentu
 
-1. Wybierz cały dokument.
+1. Zaznacz cały dokument.
 
      [!code-vb[Trin_VstcoreWordAutomation#98](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#98)]
      [!code-csharp[Trin_VstcoreWordAutomation#98](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#98)]
 
-2. Wyświetl liczbę znaków w dokumencie, w oknie komunikatu.
+2. Wyświetl liczbę znaków w dokumencie w oknie komunikatu.
 
      [!code-vb[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#99)]
 
 ## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Aby wyświetlić liczbę znaków w dodatku narzędzi VSTO
 
-1. Wybierz cały dokument. Poniższy przykład wybiera aktywnego dokumentu.
+1. Zaznacz cały dokument. Poniższy przykład wybiera aktywny dokument.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#98](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#98)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#98](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#98)]
 
-2. Wyświetl liczbę znaków w dokumencie, w oknie komunikatu.
+2. Wyświetl liczbę znaków w dokumencie w oknie komunikatu.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Programowe pobieranie znaków początkowych i końcowych w zakresach](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Instrukcje: programowe pobieranie znaków początkowych i końcowych w zakresach](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Instrukcje: programowe Definiowanie i wybieranie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)

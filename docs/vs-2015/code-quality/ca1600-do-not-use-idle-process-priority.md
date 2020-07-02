@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d4260db808d9c50f78388cf6ba976f7ace52e6a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f6233136dcf7f1db5d622a02419d33e0eedacf5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669297"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545681"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu bezczynności
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu o wartości Bezczynny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
@@ -33,13 +33,13 @@ ms.locfileid: "72669297"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Ta reguła występuje, gdy dla procesów ustawiono wartość `ProcessPriorityClass.Idle`.
+ Ta reguła występuje, gdy procesy są ustawione na `ProcessPriorityClass.Idle` .
 
 ## <a name="rule-description"></a>Opis reguły
- Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają `System.Diagnostics.ProcessPriorityClass.Idle` będą zajmowały procesor CPU, gdy będzie w przeciwnym razie w stanie bezczynności.
+ Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają `System.Diagnostics.ProcessPriorityClass.Idle` zajmować procesor CPU, gdy byłyby w stanie bezczynności, w związku z tym blokują zablokowanie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ustaw procesy na `ProcessPriorityClass.BelowNormal`.
+ Ustaw procesy na `ProcessPriorityClass.BelowNormal` .
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Ta reguła powinna być pomijana tylko wtedy, gdy wymagany jest priorytet bezczynnego procesu, a zagadnienia dotyczące mobilności można bezpiecznie zignorować.

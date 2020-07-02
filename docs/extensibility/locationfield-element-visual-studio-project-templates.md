@@ -1,8 +1,8 @@
 ---
-title: Element LocationField (szablony projektów programu Visual Studio) | Dokumenty firmy Microsoft
+title: LocationField —, element (szablony projektów Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -13,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702887"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770019"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>Element LocationField (szablony projektów programu Visual Studio)
-Określa, czy pole tekstowe **Lokalizacja** w oknie dialogowym **Nowy projekt** jest włączone, wyłączone czy ukryte dla szablonu projektu.
+# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField —, element (szablony projektów Visual Studio)
+Określa, czy pole tekstowe **lokalizacji** w oknie dialogowym **Nowy projekt** jest włączone, wyłączone czy ukryte dla szablonu projektu.
 
- \<> \<> Template>Data \<LocationField>
+ \<VSTemplate> \<TemplateData>
+ \<LocationField>
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,28 +45,28 @@ Określa, czy pole tekstowe **Lokalizacja** w oknie dialogowym **Nowy projekt** 
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób jego wyświetlania w **nowym projekcie**.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w **nowym projekcie**.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
  Prawidłowe wartości tekstowe to:
 
-- `Enabled`, który określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest włączone.
+- `Enabled`, która określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest włączone.
 
-- `Disabled`, który określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest wyłączone.
+- `Disabled`, która określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest wyłączone.
 
-- `Hidden`, który określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest ukryte.
+- `Hidden`, która określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest ukryte.
 
 ## <a name="remarks"></a>Uwagi
- Wartością domyślną jest `Enabled`.
+ Wartość domyślna to `Enabled`.
 
- Pole tekstowe **Lokalizacja** w oknie dialogowym **Nowy projekt** umożliwia użytkownikom zmianę domyślnego katalogu, w którym są zapisywane nowe projekty.
+ Pole tekstowe **Lokalizacja** w oknie dialogowym **Nowy projekt** umożliwia użytkownikom zmianę domyślnego katalogu, w którym zapisywane są nowe projekty.
 
- Wartość określona `Location` w elemencie jest honorowana tylko przez okno dialogowe, jeśli podstawowy system projektu obsługuje go.
+ Wartość określona w `Location` elemencie jest uznawana tylko przez okno dialogowe, jeśli system projektu jest obsługiwany.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje metadane szablonu. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]
+ Poniższy przykład ilustruje metadane [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,6 +93,6 @@ Określa, czy pole tekstowe **Lokalizacja** w oknie dialogowym **Nowy projekt** 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -16,17 +16,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7f2bd0042b6f9a8e46939ab34c86294218fb79f4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 45639afc9946aa43df121a5a1881174371413c25
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610158"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546383"
 ---
-# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Jawne metody nie mogą używać potwierdzeń zabezpieczeń
+# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Metody przezroczyste nie mogą używać asercji zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|SecurityTransparentCodeShouldNotAssert|
 |CheckId|CA2147|
@@ -37,27 +37,27 @@ ms.locfileid: "72610158"
  Kod, który jest oznaczony jako <xref:System.Security.SecurityTransparentAttribute> nie ma wystarczających uprawnień do potwierdzenia.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła analizuje wszystkie metody i typy w zestawie, który jest na 100% przezroczysty lub mieszany przezroczysty/krytyczny, i flaguje wszelkie deklaratywne lub bezwzględne użycie <xref:System.Security.CodeAccessPermission.Assert%2A>.
+ Ta reguła analizuje wszystkie metody i typy w zestawie, który jest na 100% przezroczysty lub mieszany przezroczysto-krytyczny, i flaguje wszelkie deklaratywne lub bezwzględne użycie <xref:System.Security.CodeAccessPermission.Assert%2A> .
 
- W czasie wykonywania wszystkie wywołania <xref:System.Security.CodeAccessPermission.Assert%2A> z przezroczystego kodu spowodują, że <xref:System.InvalidOperationException> zostanie zgłoszone. Może to wystąpić w obu zestawach przezroczystych na 100%, a także w mieszanych, przejrzystych i krytycznych zestawach, w których metoda lub typ są zadeklarowane jako przezroczyste, ale zawierają deklaracyjne lub bezwzględne potwierdzenie.
+ W czasie wykonywania wszystkie wywołania <xref:System.Security.CodeAccessPermission.Assert%2A> z przezroczystego kodu spowodują, że <xref:System.InvalidOperationException> zostaną zgłoszone. Może to wystąpić w obu zestawach przezroczystych na 100%, a także w mieszanych, przejrzystych i krytycznych zestawach, w których metoda lub typ są zadeklarowane jako przezroczyste, ale zawierają deklaracyjne lub bezwzględne potwierdzenie.
 
- W [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2,0 wprowadzono funkcję o nazwie *przezroczystość*. Poszczególne metody, pola, interfejsy, klasy i typy mogą być przezroczyste lub krytyczne.
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]2,0 wprowadzono funkcję o nazwie *przezroczystość*. Poszczególne metody, pola, interfejsy, klasy i typy mogą być przezroczyste lub krytyczne.
 
- Kod przezroczysty nie może podwyższyć poziomu uprawnień zabezpieczeń. W związku z tym wszelkie uprawnienia udzielone lub żądanie są automatycznie przenoszone przez kod do domeny wywołującej lub aplikacji hosta. Przykłady podniesienia uprawnień obejmują potwierdzenia, LinkDemands, SuppressUnmanagedCode i kod `unsafe`.
+ Kod przezroczysty nie może podwyższyć poziomu uprawnień zabezpieczeń. W związku z tym wszelkie uprawnienia udzielone lub żądanie są automatycznie przenoszone przez kod do domeny wywołującej lub aplikacji hosta. Przykłady podniesienia uprawnień obejmują potwierdzenia, LinkDemands, SuppressUnmanagedCode i `unsafe` kod.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać ten problem, należy oznaczyć kod, który wywołuje potwierdzenie z <xref:System.Security.SecurityCriticalAttribute>, lub usunąć potwierdzenie.
+ Aby rozwiązać ten problem, należy oznaczyć kod, który wywołuje potwierdzenie z <xref:System.Security.SecurityCriticalAttribute> lub usunąć potwierdzenie.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj komunikatu z tej reguły.
 
 ## <a name="example"></a>Przykład
- Ten kod zakończy się niepowodzeniem, jeśli `SecurityTestClass` jest przezroczysty, gdy metoda `Assert` zgłosi <xref:System.InvalidOperationException>.
+ Ten kod zakończy się niepowodzeniem `SecurityTestClass` , jeśli jest przezroczysty, gdy `Assert` metoda wygeneruje <xref:System.InvalidOperationException> .
 
  [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2147.transparentmethodsmustnotusesecurityasserts/cs/ca2147 - transparentmethodsmustnotusesecurityasserts.cs#1)]
 
 ## <a name="example"></a>Przykład
- Jedną z opcji jest zapoznania się z kodem Metoda SecurityTransparentMethod w poniższym przykładzie, a jeśli metoda jest uważana za bezpieczną dla podniesienia uprawnień, Oznacz SecurityTransparentMethod z bezpiecznym krytycznym warunkiem, że jest to wymagane przez szczegółowe, kompletne i bezproblemowe zabezpieczenia Inspekcja musi być wykonywana na metodzie wraz z wszelkimi wywołaniami, które występują w ramach metody pod potwierdzeniem:
+ Jedną z opcji jest zapoznania się z kodem Metoda SecurityTransparentMethod w poniższym przykładzie, a jeśli metoda jest uważana za bezpieczną dla podniesienia uprawnień, Oznacz SecurityTransparentMethod z bezpiecznym krytycznym warunkiem, że należy wykonać szczegółową, kompletną i bezproblemową inspekcję zabezpieczeń na metodzie wraz z dowolnymi wywołaniami, które występują w ramach metody pod potwierdzeniem:
 
  [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SecurityTransparentCode2/cs/FxCop.Security.SecurityTransparentCode2.cs#1)]
 
