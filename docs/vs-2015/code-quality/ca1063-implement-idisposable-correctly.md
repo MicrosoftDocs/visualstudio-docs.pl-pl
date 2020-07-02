@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663635"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539363"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Należy prawidłowo zaimplementować interfejs IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
@@ -33,7 +33,7 @@ ms.locfileid: "72663635"
 |Zmiana kluczowa|Nieprzerwanie|
 
 ## <a name="cause"></a>Przyczyna
- `IDisposable` nie został poprawnie zaimplementowany. Niektóre przyczyny tego problemu są wymienione tutaj:
+ `IDisposable`nie został poprawnie zaimplementowany. Niektóre przyczyny tego problemu są wymienione tutaj:
 
 - Interfejs IDisposable jest zaimplementowany w klasie.
 
@@ -59,21 +59,21 @@ ms.locfileid: "72663635"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Sprawdź kod i ustal, które z poniższych rozwiązań spowodują rozwiązanie tego naruszenia.
 
-- Usuń interfejs IDisposable z listy interfejsów, które są implementowane przez {0} i Zastąp zamiast niej implementację Dispose klasy podstawowej.
+- Usuń interfejs IDisposable z listy interfejsów, które są implementowane przez {0} , i Zastąp zamiast niej implementację Dispose klasy podstawowej.
 
-- Usuń finalizator z typu {0}, przesłonić metodę Dispose (usuwanie bool) i umieścić logikę finalizacji w ścieżce kodu, w której element "Dispose" ma wartość false.
+- Usuń finalizator z typu {0} , Przesłoń metodę Dispose (usuwanie bool) i umieść logikę finalizacji w ścieżce kodu, w której element "Dispose" ma wartość false.
 
-- Usuń {0}, Zastąp metodę Dispose (likwidacja bool) i umieść logikę usuwania w ścieżce kodu, w której element "Dispose" ma wartość true.
+- Usuń {0} , Przesłoń metodę Dispose (likwidacja bool) i umieść logikę usuwania w ścieżce kodu, w której "Dispose" ma wartość true.
 
 - Upewnij się, że {0} jest zadeklarowany jako publiczny i zapieczętowany.
 
-- Zmień nazwę {0} na "Dispose" i upewnij się, że jest on zadeklarowany jako publiczny i zapieczętowany.
+- Zmień nazwę {0} na "Dispose" i upewnij się, że jest zadeklarowany jako publiczny i zapieczętowany.
 
 - Upewnij się, że {0} jest zadeklarowany jako chroniony, wirtualny i niezapieczętowany.
 
-- Zmodyfikuj {0} tak, aby wywoływał metodę Dispose (true), a następnie wywołuje metodę GC. SuppressFinalize dla bieżącego wystąpienia obiektu ("This" lub "Me" w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), a następnie zwraca wartość.
+- Zmodyfikuj, {0} tak aby wywołuje metodę Dispose (true), a następnie wywołuje metodę GC. SuppressFinalize dla bieżącego wystąpienia obiektu ("This" lub "Me" in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), a następnie zwraca wartość.
 
-- Zmodyfikuj {0} tak, aby wywołuje metodę Dispose (false), a następnie zwraca wartość.
+- Zmodyfikuj, {0} Aby wywołuje metodę Dispose (false), a następnie zwraca wartość.
 
 - W przypadku pisania niezapieczętowanej klasy głównej IDisposable upewnij się, że implementacja interfejsu IDisposable jest zgodna ze wzorcem opisanym wcześniej w tej sekcji.
 

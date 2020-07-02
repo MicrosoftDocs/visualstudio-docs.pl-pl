@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe drukowanie arkuszy'
+title: 'Instrukcje: Programowane drukowanie arkuszy'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490583"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537894"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Instrukcje: Programowe drukowanie arkuszy
+# <a name="how-to-programmatically-print-worksheets"></a>Instrukcje: Programowane drukowanie arkuszy
 
 Można wydrukować każdy arkusz w skoroszycie.
 
@@ -31,12 +31,12 @@ Można wydrukować każdy arkusz w skoroszycie.
 
 ### <a name="to-print-a-worksheet"></a>Aby wydrukować arkusz
 
-1. Wywołaj `PrintOut` `Sheet1`metodę, zażądaj dwóch kopii i Wyświetl podgląd dokumentu przed rozpoczęciem drukowania.
+1. Wywołaj `PrintOut` metodę `Sheet1` , zażądaj dwóch kopii i Wyświetl podgląd dokumentu przed rozpoczęciem drukowania.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
 
-   Metoda umożliwia wyświetlenie określonego obiektu w oknie **podglądu wydruku.** <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> Poniższy kod założono, że masz <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta o `Sheet1`nazwie.
+   <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>Metoda umożliwia wyświetlenie określonego obiektu w oknie **podglądu wydruku** . Poniższy kod założono, że masz <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta o nazwie `Sheet1` .
 
 ### <a name="to-preview-a-page-before-printing"></a>Aby wyświetlić podgląd strony przed rozpoczęciem drukowania
 
@@ -54,7 +54,7 @@ Można wydrukować każdy arkusz w skoroszycie.
     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
 
-   Metoda umożliwia wyświetlenie określonego obiektu w oknie **podglądu wydruku.** <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>
+   <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>Metoda umożliwia wyświetlenie określonego obiektu w oknie **podglądu wydruku** .
 
 ### <a name="to-preview-a-page-before-printing"></a>Aby wyświetlić podgląd strony przed rozpoczęciem drukowania
 
@@ -66,7 +66,7 @@ Można wydrukować każdy arkusz w skoroszycie.
 ## <a name="see-also"></a>Zobacz także
 
 - [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
-- [Instrukcje: Programowe sprawdzanie pisowni w arkuszach](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Instrukcje: Programowane sprawdzanie pisowni w arkuszach](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Element hosta arkusza](../vsto/worksheet-host-item.md)
 - [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -48,5 +48,5 @@ ms.locfileid: "85537413"
 
  Aby zarządzać efektem programu IEESC i Internet Explorer 7 lub nowszego, zidentyfikuj Zaufane witryny sieci Web i ścieżki UNC (Universal Naming Convention), a następnie dodaj je do jednej z zaufanych stref zabezpieczeń (Lokalny intranet lub Zaufane witryny). Informacje o sposobach zarządzania strefami znajdują się w temacie [Konfigurowanie zaufanych wydawców ClickOnce](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

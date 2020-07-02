@@ -63,6 +63,6 @@ ms.locfileid: "85538154"
 
 10. Przeciągnij elementy z okna **struktury XML** do miejsc w dokumencie, w których chcesz utworzyć odpowiednie kontrolki.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Instrukcje: mapowanie schematów do arkuszy w programie Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [Schematy XML i dane w dostosowaniach na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe otwieranie skoroszytów'
+title: 'Instrukcje: Programowane otwieranie skoroszytów'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812388"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537907"
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>Instrukcje: Programowe otwieranie skoroszytów
-  <xref:Microsoft.Office.Interop.Excel.Workbooks> Kolekcji w programie Microsoft Office Excel sprawia, że jest to możliwe do pracy ze skoroszytami wszystkie otwarte i otwieranie skoroszytów.
+# <a name="how-to-programmatically-open-workbooks"></a>Instrukcje: Programowane otwieranie skoroszytów
+  <xref:Microsoft.Office.Interop.Excel.Workbooks>Kolekcja w programie Microsoft Office Excel umożliwia współpracę ze wszystkimi otwartymi skoroszytami i otwieranie skoroszytów.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -32,17 +32,17 @@ ms.locfileid: "62812388"
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
 
-## <a name="compile-the-code"></a>Skompilować kod
- Ten przykład kodu wymaga następujących elementów:
+## <a name="compile-the-code"></a>Kompiluj kod
+ Ten przykład kodu wymaga następujących czynności:
 
-- Jest skoroszyt o nazwie `YourWorkbook.xls` muszą istnieć w katalogu o nazwie `Test` na dysku C.
+- Skoroszyt o nazwie `YourWorkbook.xls` musi znajdować się w katalogu o nazwie `Test` na dysku C.
 
 ## <a name="see-also"></a>Zobacz także
-- [Praca ze skoroszytami](../vsto/working-with-workbooks.md)
-- [Instrukcje: Programowe otwieranie plików tekstowych jako skoroszytu](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
-- [Instrukcje: Programowe tworzenie nowych skoroszytów](../vsto/how-to-programmatically-create-new-workbooks.md)
-- [Instrukcje: Programowe zapisywanie skoroszytów](../vsto/how-to-programmatically-save-workbooks.md)
-- [Instrukcje: Programowe zamykanie skoroszytów](../vsto/how-to-programmatically-close-workbooks.md)
+- [Pracuj ze skoroszytami](../vsto/working-with-workbooks.md)
+- [Instrukcje: programowe otwieranie plików tekstowych jako skoroszytów](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
+- [Instrukcje: Programowane tworzenie nowych skoroszytów](../vsto/how-to-programmatically-create-new-workbooks.md)
+- [Instrukcje: programowe zapisywanie skoroszytów](../vsto/how-to-programmatically-save-workbooks.md)
+- [Instrukcje: programowe zamykanie skoroszytów](../vsto/how-to-programmatically-close-workbooks.md)
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

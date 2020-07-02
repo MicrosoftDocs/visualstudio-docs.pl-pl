@@ -1,9 +1,9 @@
 ---
-title: '&lt;formRegions&gt; — element (Office development w programie Visual Studio)'
+title: '&lt;formRegions — &gt; element (Programowanie Office w Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a24560df1da153702cfca2a206ea38cc8fac94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f98c74c2df998f0e79f5b95a316a7917304e029
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972333"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538362"
 ---
-# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; — element (Office development w programie Visual Studio)
-  `formRegions` Elementu `vstov4` przestrzeń nazw zawiera regionów formularzy programu Microsoft Office Outlook, które są skojarzone z dodatku narzędzi VSTO.
+# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions — &gt; element (Programowanie Office w Visual Studio)
+  `formRegions`Element `vstov4` przestrzeni nazw Microsoft Office zawiera regiony formularzy programu Outlook, które są skojarzone z dodatkiem narzędzi VSTO.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,22 +35,22 @@ ms.locfileid: "62972333"
 </formRegions>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `formRegions` Elementu `vstov4` przestrzeń nazw zawiera wszystkie `formRegion` elementów dla dodatku narzędzi VSTO dla programu Outlook. Jest wymagane tylko dla dodatków narzędzi VSTO dla programu Outlook, obejmujących regionów formularza.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `formRegions`Element `vstov4` przestrzeni nazw zawiera wszystkie `formRegion` elementy dodatku narzędzi VSTO dla programu Outlook. Jest to wymagane tylko w przypadku dodatków VSTO programu Outlook, które obejmują regiony formularzy.
 
- Może istnieć tylko jeden `formRegions` elementu zdefiniowanego w manifeście aplikacji.
+ `formRegions`W manifeście aplikacji może być zdefiniowany tylko jeden element.
 
- `formRegions` Element nie ma żadnych atrybutów.
+ `formRegions`Element nie ma żadnych atrybutów.
 
- `formRegions` Element ma następujący element.
+ `formRegions`Element ma następujący element.
 
 ### <a name="formregion"></a>formRegion
- Wymagana dla dodatków narzędzi VSTO dla programu Outlook, obejmujących regionów formularza. `formRegion` Element jest zdefiniowany w [ &#60;elementu formRegion&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).
+ Wymagane dla dodatków VSTO programu Outlook obejmujących regiony formularzy. `formRegion`Element jest zdefiniowany w [&#60;FormRegion&#62; elementu &#40;Programowanie Office w&#41;programu Visual Studio ](../vsto/formregion-element-office-development-in-visual-studio.md).
 
-## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO
+## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie kodu pokazano `formRegions` elementu w manifeście aplikacji dla rozwiązań pakietu Office dodatku poziomu aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
+ Poniższy przykład kodu ilustruje `formRegions` element w manifeście aplikacji dla rozwiązania Office na poziomie aplikacji wdrożonego za pomocą programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 

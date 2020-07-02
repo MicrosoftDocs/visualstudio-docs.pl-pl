@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2062c7518545300074a0377b7a9cca7ddf1a8aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: babef652bbfa55d6549cf0e43ddae0920b3ff302
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603379"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539493"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: Parametry identyfikatora URI nie powinny być ciągami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|
 |CheckId|CA1054|
@@ -33,19 +33,19 @@ ms.locfileid: "72603379"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ deklaruje metodę z parametrem ciągu, którego nazwa zawiera "URI", "URI", "urn", "urn", "URL" lub "URL", a typ nie deklaruje odpowiedniego przeciążenia, które przyjmuje parametr <xref:System.Uri?displayProperty=fullName>.
+ Typ deklaruje metodę z parametrem ciągu, którego nazwa zawiera "URI", "URI", "urn", "urn", "URL" lub "URL", a typ nie deklaruje odpowiedniego przeciążenia, które pobiera <xref:System.Uri?displayProperty=fullName> parametr.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła dzieli nazwę parametru na tokeny na podstawie Konwencji notacji CamelCase wielkości liter i sprawdza, czy każdy token jest równy "URI", "URI", "urn", "urn", "URL" lub "URL". Jeśli istnieje dopasowanie, reguła zakłada, że parametr reprezentuje jednolity identyfikator zasobów (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. Jeśli metoda przyjmuje ciąg reprezentujący identyfikator URI, należy dostarczyć odpowiednie Przeciążenie, które przyjmuje wystąpienie klasy <xref:System.Uri>, która udostępnia te usługi w bezpieczny i bezpieczny sposób.
+ Ta reguła dzieli nazwę parametru na tokeny na podstawie Konwencji notacji CamelCase wielkości liter i sprawdza, czy każdy token jest równy "URI", "URI", "urn", "urn", "URL" lub "URL". Jeśli istnieje dopasowanie, reguła zakłada, że parametr reprezentuje jednolity identyfikator zasobów (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. Jeśli metoda przyjmuje ciąg reprezentujący identyfikator URI, należy dostarczyć odpowiednie Przeciążenie, które przyjmuje wystąpienie <xref:System.Uri> klasy, które udostępnia te usługi w bezpieczny i bezpieczny sposób.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Zmień parametr na typ <xref:System.Uri>; jest to istotna zmiana. Alternatywnie Podaj Przeciążenie metody, która przyjmuje parametr <xref:System.Uri>; jest to zmiana nieprzerwana.
+ Aby naprawić naruszenie tej zasady, należy zmienić parametr na <xref:System.Uri> Typ; jest to istotna zmiana. Alternatywnie Podaj Przeciążenie metody, która przyjmuje <xref:System.Uri> parametr; jest to nieprzerwana zmiana.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jeśli parametr nie reprezentuje identyfikatora URI, można bezpiecznie pominąć ostrzeżenie z tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia typ, `ErrorProne`, który narusza tę regułę i typ `SaferWay`, który spełnia regułę.
+ Poniższy przykład pokazuje typ, `ErrorProne` , który narusza tę regułę i typ, `SaferWay` który spełnia regułę.
 
  [!code-cpp[FxCop.Design.UriNotString#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cpp/FxCop.Design.UriNotString.cpp#1)]
  [!code-csharp[FxCop.Design.UriNotString#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cs/FxCop.Design.UriNotString.cs#1)]
@@ -56,6 +56,6 @@ ms.locfileid: "72603379"
 
  [CA1055: Wartości zwracane identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
 
- [CA2234: Przekaż obiekty System.Uri zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+ [CA2234: Przekazuj obiekty System.Uri zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
- [CA1057: Przeciążenia identyfikatora URI w postaci ciągu wywołują przeciążenia metody System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+ [CA1057: Identyfikator URI typu string przeciąża wywołanie przeciążane przez typ System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

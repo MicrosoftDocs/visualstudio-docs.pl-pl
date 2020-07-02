@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2df740abf25344253627b614fdbd80dce86c7bfa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847471"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539259"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie należy wyrzucać wyjątków w nieoczekiwanych lokalizacjach
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nie wywołuj wyjątków w nieoczekiwanych lokalizacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Kategoria|Microsoft.Design|
+|Kategoria|Microsoft. Design|
 |Zmiana kluczowa|Bez przerywania|
 
 ## <a name="cause"></a>Przyczyna
@@ -65,24 +65,24 @@ ms.locfileid: "75847471"
 
  Następujące wyjątki mogą być zgłaszane z metody get właściwości:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName> i wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName>i wszystkie pochodne
 
-- <xref:System.ArgumentException?displayProperty=fullName> (tylko ze indeksowanych Get)
+- <xref:System.ArgumentException?displayProperty=fullName>(tylko ze indeksowanych Get)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (tylko ze indeksowanych Get)
+- <xref:System.Collections.Generic.KeyNotFoundException>(tylko ze indeksowanych Get)
 
 ### <a name="event-accessor-methods"></a>Metody dostępu do zdarzeń
  Metody dostępu zdarzeń powinny być prostymi operacjami, które nie generują wyjątków. Zdarzenie nie powinno zgłosić wyjątku podczas próby dodania lub usunięcia programu obsługi zdarzeń.
 
  Następujące wyjątki mogą zostać zgłoszone przez obiekt dostępu do zdarzeń:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>i wszystkie pochodne (w tym <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName> i wszystkie pochodne
+- <xref:System.NotSupportedException?displayProperty=fullName>i wszystkie pochodne
 
-- <xref:System.ArgumentException> i pochodne
+- <xref:System.ArgumentException>i pochodne
 
 ### <a name="equals-methods"></a>Equals — metody
  Następujące metody **równości** nie powinny generować wyjątków:
@@ -91,21 +91,21 @@ ms.locfileid: "75847471"
 
 - [M:IEquatable.Equals](https://msdn2.microsoft.com/library/ms131190(VS.80).aspx)
 
-  Metoda **Equals** powinna zwracać `true` lub `false` zamiast zgłaszać wyjątek. Na przykład jeśli wartość Equals jest przenoszona dwa niezgodne typy, należy po prostu zwrócić `false` zamiast zgłaszać <xref:System.ArgumentException>.
+  Metoda **Equals** powinna zwracać `true` lub `false` zamiast zgłaszać wyjątek. Na przykład, jeśli wartość Equals jest przenoszona dwa niezgodne typy, należy po prostu zwrócić `false` zamiast wyrzucać <xref:System.ArgumentException> .
 
 ### <a name="gethashcode-methods"></a>Metody GetHashCode
  Następujące metody **GetHashCode** zazwyczaj nie generują wyjątków:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
+- [M:IEqualityComparer.GetHashCode (T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
 
   **GetHashCode** zawsze powinna zwracać wartość. W przeciwnym razie można utracić elementy w tabeli skrótów.
 
-  Wersje **GetHashCode** , które przyjmują argument mogą zgłosić <xref:System.ArgumentException>. Jednak **obiekt. GetHashCode** nigdy nie powinien zgłosić wyjątku.
+  Wersje **GetHashCode** , które przyjmują argument, mogą zgłosić <xref:System.ArgumentException> . Jednak **obiekt. GetHashCode** nigdy nie powinien zgłosić wyjątku.
 
 ### <a name="tostring-methods"></a>Metody ToString
- Debuger używa <xref:System.Object.ToString%2A?displayProperty=fullName>, aby wyświetlić informacje o obiektach w formacie ciągu. W związku z tym **ToString** nie powinien zmieniać stanu obiektu i nie powinien generować wyjątków.
+ Debuger używa <xref:System.Object.ToString%2A?displayProperty=fullName> do wyświetlania informacji o obiektach w formacie ciągu. W związku z tym **ToString** nie powinien zmieniać stanu obiektu i nie powinien generować wyjątków.
 
 ### <a name="static-constructors"></a>Konstruktory statyczne
  Wyrzucanie wyjątków od konstruktora statycznego powoduje, że typ nie będzie bezużyteczny w bieżącej domenie aplikacji. Aby zgłaszać wyjątek z konstruktora statycznego, należy mieć bardzo dobry powód (na przykład problem z zabezpieczeniami).
@@ -114,7 +114,7 @@ ms.locfileid: "75847471"
  Zgłaszanie wyjątku od finalizatora powoduje, że środowisko CLR może szybko zakończyć pracę, co spowoduje rozbicie procesu. W związku z tym, należy zawsze unikać zgłaszania wyjątków w finalizatorze.
 
 ### <a name="dispose-methods"></a>Metody Dispose
- Metoda <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> nie powinna zgłosić wyjątku. Metoda Dispose jest często wywoływana jako część logiki oczyszczania w klauzuli `finally`. W związku z tym jawne zgłaszanie wyjątku z metody Dispose wymusza, aby użytkownik dodał obsługę wyjątków wewnątrz klauzuli `finally`.
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>Metoda nie powinna zgłosić wyjątku. Metoda Dispose jest często wywoływana jako część logiki oczyszczania w `finally` klauzuli. W związku z tym jawne zgłaszanie wyjątku z metody Dispose wymusza, aby użytkownik dodał obsługę wyjątków wewnątrz `finally` klauzuli.
 
  Ścieżka kodu **Dispose (false)** nigdy nie powinna zgłaszać wyjątków, ponieważ jest prawie zawsze wywoływana z finalizatora.
 
@@ -133,7 +133,7 @@ ms.locfileid: "75847471"
  Można bezpiecznie pominąć ostrzeżenie z tej reguły, jeśli naruszenie zostało spowodowane przez deklarację wyjątku zamiast zgłoszonego wyjątku.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątku](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)
+ [Ostrzeżenia projektu](../code-quality/design-warnings.md)

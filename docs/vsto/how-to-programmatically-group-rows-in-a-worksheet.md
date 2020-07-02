@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Programowe grupowanie wierszy w arkuszu'
+title: 'Instrukcje: Programowane Grupowanie wierszy w arkuszu'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,46 +20,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412616"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537881"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Instrukcje: Programowe grupowanie wierszy w arkuszu
-  Można grupować jedną lub więcej całych wierszy. Aby utworzyć grupę w arkuszu, należy użyć <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Instrukcje: Programowane Grupowanie wierszy w arkuszu
+  Można grupować jeden lub więcej całych wierszy. Aby utworzyć grupę w arkuszu, użyj <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki lub natywnego obiektu zakresu programu Excel.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="use-a-namedrange-control"></a>Używanie formantu NamedRange
- Jeśli dodasz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli na poziomie dokumentu projekt w czasie projektowania, możesz użyć formantu, aby programowo utworzyć grupę. W poniższym przykładzie założono, że dostępne są trzy <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolek na tym samym arkuszu: `data2001`, `data2002`, i `dataAll`. Każdy z zakresów, o nazwie odwołuje się do całego wiersza w arkuszu.
+## <a name="use-a-namedrange-control"></a>Korzystanie z kontrolki NamedRange
+ Jeśli dodasz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę do projektu na poziomie dokumentu w czasie projektowania, możesz użyć kontrolki, aby programowo utworzyć grupę. W poniższym przykładzie przyjęto założenie, że istnieją trzy <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki w tym samym arkuszu: `data2001` , `data2002` , i `dataAll` . Każdy nazwany zakres odwołuje się do całego wiersza w arkuszu.
 
-### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Aby utworzyć grupę kontrolek NamedRange do arkusza
+### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Aby utworzyć grupę kontrolek NamedRange w arkuszu
 
-1. Grupa trzech nazwane zakresy, wywołując <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> metoda każdego zakresu. Ten kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.
+1. Grupuj trzy nazwane zakresy, wywołując <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> metodę każdego zakresu. Ten kod musi być umieszczony w klasie arkusza, a nie w `ThisWorkbook` klasie.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    > Aby rozgrupować wierszy, należy wywołać <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> metody.
+    > Aby rozgrupować wiersze, wywołaj <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> metodę.
 
-## <a name="use-native-excel-ranges"></a>Użyj natywnego zakresów programu Excel
- W kodzie założono, że masz trzy zakresy programu Excel o nazwie `data2001`, `data2002`, i `dataAll` w arkuszu.
+## <a name="use-native-excel-ranges"></a>Użyj natywnych zakresów programu Excel
+ W kodzie założono, że masz trzy zakresy programu Excel o nazwach `data2001` , `data2002` i `dataAll` w arkuszu.
 
 ### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Aby utworzyć grupę zakresów programu Excel w arkuszu
 
-1. Grupa trzech nazwane zakresy, wywołując <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> metoda każdego zakresu. W poniższym przykładzie założono, że dostępne są trzy <xref:Microsoft.Office.Interop.Excel.Range> kontrolki o nazwie `data2001`, `data2002`, i `dataAll` na tym samym arkuszu. Każdy z zakresów, o nazwie odwołuje się do całego wiersza w arkuszu.
+1. Grupuj trzy nazwane zakresy, wywołując <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> metodę każdego zakresu. W poniższym przykładzie przyjęto założenie, że istnieją trzy <xref:Microsoft.Office.Interop.Excel.Range> kontrolki o nazwach `data2001` , `data2002` i `dataAll` w tym samym arkuszu. Każdy nazwany zakres odwołuje się do całego wiersza w arkuszu.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    > Aby rozgrupować wierszy, należy wywołać <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> metody.
+    > Aby rozgrupować wiersze, wywołaj <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> metodę.
 
 ## <a name="see-also"></a>Zobacz także
-- [Praca z arkuszami](../vsto/working-with-worksheets.md)
-- [Namedrange — formant](../vsto/namedrange-control.md)
-- [Instrukcje: Dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
+- [NamedRange — formant](../vsto/namedrange-control.md)
+- [Instrukcje: Dodawanie kontrolek NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

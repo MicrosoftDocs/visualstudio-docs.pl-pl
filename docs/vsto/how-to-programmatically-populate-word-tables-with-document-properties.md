@@ -1,7 +1,7 @@
 ---
-title: Programowe Wypełnianie tabel programu Word właściwościami dokumentu
+title: Wypełnianie tabel programu Word przy użyciu właściwości dokumentu
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177785"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537816"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Instrukcje: Programowe Wypełnianie tabel programu Word właściwościami dokumentu
-  Poniższy przykład tworzy tabelę programu Microsoft Office Word w górnej części dokumentu i wypełnia właściwości dokumentu hosta.
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Instrukcje: Programowane Wypełnianie tabel programu Word przy użyciu właściwości dokumentu
+  Poniższy przykład tworzy tabelę programu Microsoft Office Word w górnej części dokumentu i wypełnia ją właściwościami dokumentu hosta.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="populate-tables-in-a-document-level-customization"></a>Wypełnianie tabel w dostosowaniu na poziomie dokumentu
+## <a name="populate-tables-in-a-document-level-customization"></a>Wypełnij tabele w dostosowaniu na poziomie dokumentu
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Aby utworzyć tabelę i wypełnić ją właściwościami dokumentu
 
@@ -34,7 +34,7 @@ ms.locfileid: "66177785"
     [!code-vb[Trin_VstcoreWordAutomation#90](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#90)]
     [!code-csharp[Trin_VstcoreWordAutomation#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#90)]
 
-2. Wstaw tytuł tabeli i zawierać znaczników akapitu.
+2. Wstaw tytuł tabeli i Uwzględnij znaczniki akapitu.
 
     [!code-vb[Trin_VstcoreWordAutomation#91](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#91)]
     [!code-csharp[Trin_VstcoreWordAutomation#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#91)]
@@ -44,22 +44,22 @@ ms.locfileid: "66177785"
     [!code-vb[Trin_VstcoreWordAutomation#92](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#92)]
     [!code-csharp[Trin_VstcoreWordAutomation#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#92)]
 
-4. Formatowanie tabeli i zastosować styl.
+4. Sformatuj tabelę i Zastosuj styl.
 
     [!code-vb[Trin_VstcoreWordAutomation#93](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#93)]
     [!code-csharp[Trin_VstcoreWordAutomation#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#93)]
 
-5. Wstaw właściwości dokumentu do komórki.
+5. Wstaw właściwości dokumentu do komórek.
 
     [!code-vb[Trin_VstcoreWordAutomation#94](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#94)]
     [!code-csharp[Trin_VstcoreWordAutomation#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#94)]
 
-   Poniższy przykład pokazuje kompletną procedurą. Aby użyć tego kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+   Poniższy przykład pokazuje kompletną procedurę. Aby użyć tego kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
 
    [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]
 
-## <a name="populate-tables-in-a-vsto-add-in"></a>Wypełnianie tabel w dodatku narzędzi VSTO
+## <a name="populate-tables-in-a-vsto-add-in"></a>Wypełnij tabele w dodatku narzędzi VSTO
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Aby utworzyć tabelę i wypełnić ją właściwościami dokumentu
 
@@ -68,7 +68,7 @@ ms.locfileid: "66177785"
     [!code-vb[Trin_VstcoreWordAutomationAddIn#90](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#90)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#90)]
 
-2. Wstaw tytuł tabeli i zawierać znaczników akapitu.
+2. Wstaw tytuł tabeli i Uwzględnij znaczniki akapitu.
 
     [!code-vb[Trin_VstcoreWordAutomationAddIn#91](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#91)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#91)]
@@ -78,23 +78,23 @@ ms.locfileid: "66177785"
     [!code-vb[Trin_VstcoreWordAutomationAddIn#92](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#92)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#92)]
 
-4. Formatowanie tabeli i zastosować styl.
+4. Sformatuj tabelę i Zastosuj styl.
 
     [!code-vb[Trin_VstcoreWordAutomationAddIn#93](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#93)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#93)]
 
-5. Wstaw właściwości dokumentu do komórki.
+5. Wstaw właściwości dokumentu do komórek.
 
     [!code-vb[Trin_VstcoreWordAutomationAddIn#94](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#94)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#94)]
 
-   Poniższy przykład pokazuje kompletną procedurą. Aby użyć tego kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+   Poniższy przykład pokazuje kompletną procedurę. Aby użyć tego kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
 
    [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Programowe tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)
-- [Instrukcje: Programowe Dodawanie tekstu i formatowania do komórek w tabelach programu Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Instrukcje: Programowe Dodawanie wierszy i kolumn do tabel programu Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Instrukcje: Programowane tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)
+- [Instrukcje: Programowane dodawanie tekstu i formatowania do komórek w tabelach programu Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Instrukcje: programowe Dodawanie wierszy i kolumn do tabel programu Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
 - [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

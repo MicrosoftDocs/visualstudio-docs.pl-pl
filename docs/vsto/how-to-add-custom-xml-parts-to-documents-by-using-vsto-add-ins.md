@@ -81,6 +81,6 @@ ms.locfileid: "85538297"
 ## <a name="robust-programming"></a>Niezawodne programowanie
  Dla uproszczenia w tym przykładzie użyto ciągu XML, który jest definiowany jako zmienna lokalna w metodzie. Zazwyczaj należy uzyskać kod XML ze źródła zewnętrznego, takiego jak plik lub baza danych.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Niestandardowe części XML — Omówienie](../vsto/custom-xml-parts-overview.md)
 - [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

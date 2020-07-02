@@ -1,7 +1,7 @@
 ---
 title: Skoroszyt użyty do tworzenia tego projektu zawiera formanty ActiveX, których projektant nie może załadować
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: error-reference
 f1_keywords:
 - VST.SelectDocWizard.ContainsActiveXControls
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27feb1c6a85740d8a9287ce3a2a47800595e178a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4485489b48c4d1b03b608c6072cfc859e8bc8f59
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253780"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537348"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>Skoroszyt użyty do tworzenia tego projektu zawiera formanty ActiveX, których projektant nie może załadować
   Ten błąd jest wyświetlany, gdy dodasz kontrolkę do dokumentu programu Word lub arkusza programu Excel programowo, Zapisz dokument lub skoroszyt, a następnie utwórz nowe rozwiązanie na poziomie dokumentu na podstawie dokumentu lub skoroszytu.
@@ -33,5 +33,5 @@ ms.locfileid: "71253780"
 3. Utwórz rozwiązanie na poziomie dokumentu na podstawie dokumentu lub skoroszytu.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Tworzenie projektów pakietu Office w programie Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)

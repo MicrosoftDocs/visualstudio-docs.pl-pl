@@ -1,7 +1,7 @@
 ---
-title: Programowe pobieranie nieprzeczytanych wiadomości ze skrzynki odbiorczej
+title: Programowe pobieranie nieprzeczytanych wiadomości z skrzynki odbiorczej
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9a718d6a8ee4eb633b34e1e12f85d578dc99fa6
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: dc913379546c80eef70671ea0ecbd441001e6ab5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328930"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537608"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Instrukcje: Programowe pobieranie nieprzeczytanych wiadomości ze skrzynki odbiorczej
-  W tym przykładzie pobiera nieprzeczytanych wiadomości programu Outlook **skrzynki odbiorczej** i wyświetla liczbę elementów.
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Instrukcje: programowe pobieranie nieprzeczytanych wiadomości ze skrzynki odbiorczej
+  Ten przykład pobiera nieprzeczytane wiadomości e-mail ze **skrzynki odbiorczej** programu Outlook i wyświetla liczbę elementów.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,8 +32,8 @@ ms.locfileid: "67328930"
  [!code-csharp[Trin_Outlook_RL_UnreadItems#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Praca z elementami poczty](../vsto/working-with-mail-items.md)
+- [Pracuj z elementami poczty](../vsto/working-with-mail-items.md)
 - [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Instrukcje: Programowe tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [Instrukcje: Programowo Wyślij wiadomość e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Instrukcje: Programowe wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Instrukcje: programowe tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Instrukcje: Programowane wysyłanie wiadomości e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Instrukcje: Programowane wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

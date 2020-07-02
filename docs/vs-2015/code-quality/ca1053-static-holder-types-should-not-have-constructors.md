@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29cc322dd59dc0de66af8f92a46524d15b0022c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653821"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539584"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Typy obsługi statycznej nie powinny mieć konstruktorów
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Statyczne typy przechowujące nie powinny mieć konstruktorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
@@ -48,6 +48,6 @@ ms.locfileid: "72653821"
  Nie pomijaj ostrzeżeń dla tej reguły. Obecność konstruktora sugeruje, że typ nie jest typem statycznym.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje typ, który narusza tę regułę. Zwróć uwagę, że w kodzie źródłowym nie ma domyślnego konstruktora. Gdy ten kod jest kompilowany do zestawu, C# kompilator wstawi Konstruktor domyślny, który będzie naruszał tę regułę. Aby rozwiązać ten konieczność, zadeklaruj konstruktora prywatnego.
+ Poniższy przykład pokazuje typ, który narusza tę regułę. Zwróć uwagę, że w kodzie źródłowym nie ma domyślnego konstruktora. Gdy ten kod jest kompilowany do zestawu, kompilator języka C# wstawi Konstruktor domyślny, który będzie naruszał tę regułę. Aby rozwiązać ten konieczność, zadeklaruj konstruktora prywatnego.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]

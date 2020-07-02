@@ -88,7 +88,7 @@ Ten przykład kodu wymaga następujących czynności:
 
 - Aby zapisać dokument o nowej nazwie, katalog o nazwie *test* musi znajdować się na dysku C.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Instrukcje: programowe Zamykanie dokumentów](../vsto/how-to-programmatically-close-documents.md)
 - [Instrukcje: programowe otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)
