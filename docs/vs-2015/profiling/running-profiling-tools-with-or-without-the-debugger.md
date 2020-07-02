@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6fb07e9bc6c308e27e3ad054c5aeb0b12c092054
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298209"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534007"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Program Visual Studio oferuje teraz możliwość wyboru narzędzi do oceny wydaj
   
      Kompilacje debugowania nie mają pewnych optymalizacji udostępnianych przez kompilacje wydań, na przykład wywołania funkcji defragmentowania i stałe, oczyszczanie nieużywanych ścieżek kodu i przechowywanie zmiennych w sposób, który nie może być używany przez debuger. Debuger zmienia czasy wydajności, ponieważ wykonuje pewne operacje, które są niezbędne do debugowania (na przykład przechwytując zdarzenia wyjątku i ładowania modułu). Dlatego numery wydajności w narzędziach zintegrowanych z debugerem są dokładne tylko w ciągu dziesiątek milisekund. Numery wydajności dla konfiguracji wydań z narzędziami niebędącymi debugerem są znacznie dokładniejsze.  
   
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieraj dane profilowania podczas debugowania  
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieraj dane profilowania podczas debugowania  
  Poniższa sekcja dotyczy debugowania lokalnie. Informacje na temat debugowania na urządzeniu lub w odniesieniu do zdalnego debugowania można znaleźć w kolejnych sekcjach.  
   
 1. Otwórz projekt, który chcesz debugować, a następnie kliknij pozycję **Debuguj/Rozpocznij debugowanie** (lub **Rozpocznij** na pasku narzędzi lub **F5**).  
@@ -76,7 +76,7 @@ Program Visual Studio oferuje teraz możliwość wyboru narzędzi do oceny wydaj
   
 2. W menu **debugowanie** wybierz pozycję **Profiler wydajności...** (klawisz skrótu: Alt + F2).  
   
-3. Na stronie Uruchamianie diagnostyczne wybierz co najmniej jedno narzędzie do uruchomienia w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i języka programowania. Po wybraniu narzędzia diagnostycznego wybory dla narzędzi, które nie mogą zostać uruchomione w tej samej sesji diagnostycznej, są wyłączone. Oto, C# jak wybrane opcje mogą szukać aplikacji uniwersalnej systemu Windows:  
+3. Na stronie Uruchamianie diagnostyczne wybierz co najmniej jedno narzędzie do uruchomienia w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i języka programowania. Po wybraniu narzędzia diagnostycznego wybory dla narzędzi, które nie mogą zostać uruchomione w tej samej sesji diagnostycznej, są wyłączone. Oto, jak wybrane opcje mogą szukać aplikacji uniwersalnej systemu Windows w języku C#:  
   
     ![Wybierz Narzędzia diagnostyczne](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
@@ -99,7 +99,7 @@ Program Visual Studio oferuje teraz możliwość wyboru narzędzi do oceny wydaj
 ## <a name="the-profiling-report"></a>Raport profilowania  
  ![Raport dotyczący narzędzi diagnostycznych](../profiling/media/diag-report.png "DIAG_Report")  
   
-|||  
+|Image (Obraz)|Opis|  
 |-|-|  
 |![Krok 1](../profiling/media/procguid-1.png "ProcGuid_1")|Na osi czasu są widoczne długość sesji profilowania, zdarzenia aktywacji cyklu życia aplikacji i znaczniki użytkownika.|  
 |![Krok 2](../profiling/media/procguid-2.png "ProcGuid_2")|Raport można ograniczyć do części osi czasu, przeciągając niebieskie paski w celu wybrania regionu na osi czasu.|  

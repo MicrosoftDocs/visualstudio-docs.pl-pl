@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b11ea380f9012bc64f577d2da54a4a88b9f94daf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348239"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536555"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Rozpoczynanie sesji debugowania aplikacji platformy UWP
 
@@ -76,7 +76,7 @@ Debugowanie jest kontynuowane do momentu, gdy zostanie osiągnięty punkt przerw
 
 Możesz ustawić cel debugowania na pasku narzędzi programu Visual Studio lub na stronie właściwości debugowania projektu. Wybierz jedną z następujących opcji:
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Maszyna lokalna**|Debuguj aplikację w bieżącej sesji na komputerze lokalnym.|
 |**Simulator**|Debuguj aplikację w symulatorze programu Visual Studio dla aplikacji platformy UWP. Symulator to okno pulpitu, które symuluje funkcje urządzenia, takie jak gesty dotykowe i rotacja urządzeń, które mogą nie istnieć na komputerze lokalnym. Opcja symulator jest dostępna tylko wtedy, gdy **minimalna wersja platformy docelowej** aplikacji jest mniejsza lub równa systemowi operacyjnemu na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji platformy UWP w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -114,7 +114,7 @@ W aplikacjach C++ Program Visual Studio domyślnie Debuguj kod natywny. Można z
 
 - W przypadku aplikacji C++ wybierz jeden z następujących debugerów z listy rozwijanej **Typ debugera** na stronie właściwości **debugowania** .
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Tylko zarządzane**|Debuguj kod zarządzany w aplikacji. Kod JavaScript i natywny kod C/C++ są ignorowane.|
 |**Tylko natywny**|Debuguj natywny kod C/C++ w aplikacji. Kod zarządzany i kod JavaScript są ignorowane.|
@@ -216,6 +216,6 @@ Aby dołączyć debuger do [!INCLUDE[win8_appname_long](../debugger/includes/win
 > Najprostszym sposobem dołączenia do aplikacji JavaScript jest zamknięcie wszystkich innych aplikacji JavaScript. Można też zauważyć identyfikatory PID uruchomionych *wwahost.exe* procesów w Menedżerze zadań systemu Windows przed rozpoczęciem aplikacji. Po uruchomieniu aplikacji jego identyfikator PID *wwahost.exe* będzie różnić się od podanych wcześniej.
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie aplikacji w programie Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md)

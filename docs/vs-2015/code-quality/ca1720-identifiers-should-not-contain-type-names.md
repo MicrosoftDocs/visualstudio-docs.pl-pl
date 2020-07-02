@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 34ebe4848bbbe49b9a67449795f0aea7d104af8b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d228b0fbf5507ba135f9ddc35d6d8b161f0011
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671636"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534852"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identyfikatory nie powinny zawierać nazw typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
@@ -35,16 +35,16 @@ ms.locfileid: "72671636"
 ## <a name="cause"></a>Przyczyna
  Nazwa parametru w widocznym na zewnątrz elemencie członkowskim zawiera nazwę typu danych.
 
- —lub—
+ -lub-
 
  Nazwa widocznego na zewnątrz elementu członkowskiego zawiera nazwę typu danych specyficzną dla języka.
 
 ## <a name="rule-description"></a>Opis reguły
- Nazwy parametrów i składowych są lepiej używane do przekazywania ich znaczenia niż opisywanie ich typu, który powinien być udostępniany przez narzędzia deweloperskie. W przypadku nazw członków, jeśli nazwa typu danych musi być użyta, należy użyć nazwy niezależnej od języka, a nie dla konkretnego języka. Na przykład zamiast nazwy C# typu "int" należy użyć nazwy typu danych niezależnej od języka, Int32.
+ Nazwy parametrów i składowych są lepiej używane do przekazywania ich znaczenia niż opisywanie ich typu, który powinien być udostępniany przez narzędzia deweloperskie. W przypadku nazw członków, jeśli nazwa typu danych musi być użyta, należy użyć nazwy niezależnej od języka, a nie dla konkretnego języka. Na przykład zamiast nazwy typu C# "int" należy użyć nazwy typu danych niezależnej od języka, Int32.
 
  Każdy token dyskretny w nazwie parametru lub elementu członkowskiego jest sprawdzany pod kątem następujących nazw typów danych specyficznych dla języka, w sposób niezależny od wielkości liter:
 
-- Logiczna
+- Wartość logiczna
 
 - WChar
 
@@ -60,7 +60,7 @@ ms.locfileid: "72671636"
 
 - UInt
 
-- Liczba całkowita
+- Integer
 
 - UInteger —
 
@@ -112,7 +112,7 @@ ms.locfileid: "72671636"
 
 - PTR
 
-- Przytrzymaj
+- Wskaźnik
 
 - UInptr
 
@@ -120,13 +120,13 @@ ms.locfileid: "72671636"
 
 - UPointer
 
-- Single
+- Pojedyncze
 
 - Double
 
 - Wartość dziesiętna
 
-- Ident
+- Guid (identyfikator GUID)
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  **Jeśli jest uruchamiany dla parametru:**
@@ -145,6 +145,6 @@ ms.locfileid: "72671636"
 
  [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Identyfikatory nie powinny zawierać znaków podkreślenia](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719: Nazwy parametrów nie powinny odpowiadać nazwom składowych](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+ [CA1719: Nazwy parametrów nie powinny być zgodne z nazwami składowych](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

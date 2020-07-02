@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c20ea7bd7bba6f221395c7e2c21d6c1dcc241fb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6ab93c24cd97d498ae886c7a9184fd4a5f111f1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661293"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534917"
 ---
-# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Unikaj argumentów Int64 dla klientów programu Visual Basic 6
+# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Unikaj używania argumentów typu Int64 w klientach w języku Visual Basic 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|AvoidInt64ArgumentsForVB6Clients|
 |CheckId|CA1406|
@@ -33,15 +33,15 @@ ms.locfileid: "72661293"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ, który jest jawnie oznaczony jako widoczny dla Component Object Model (COM) deklaruje element członkowski, który przyjmuje argument <xref:System.Int64?displayProperty=fullName>.
+ Typ, który jest jawnie oznaczony jako widoczny dla Component Object Model (COM) deklaruje element członkowski przyjmujący <xref:System.Int64?displayProperty=fullName> argument.
 
 ## <a name="rule-description"></a>Opis reguły
  Klienci Visual Basic 6 COM nie mogą uzyskać dostępu do 64-bitowych liczb całkowitych.
 
- Domyślnie następujące elementy są widoczne dla modelu COM: zestawy, typy publiczne, składowe wystąpienia publicznego w typach publicznych oraz wszystkie elementy członkowskie publicznych typów wartości. Jednak aby zmniejszyć liczbę fałszywych wartości dodatnich, ta reguła wymaga jawnego określenia widoczności COM typu; zestaw zawierający musi być oznaczony atrybutem <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> ustawionym na wartość `false`, a typ musi być oznaczony jako <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawionym na `true`.
+ Domyślnie następujące elementy są widoczne dla modelu COM: zestawy, typy publiczne, składowe wystąpienia publicznego w typach publicznych oraz wszystkie elementy członkowskie publicznych typów wartości. Jednak aby zmniejszyć liczbę fałszywych wartości dodatnich, ta reguła wymaga jawnego określenia widoczności COM typu; zestaw zawierający musi być oznaczony <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> zestawem do `false` , a typ musi być oznaczony z <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną na `true` .
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły dla parametru, którego wartość może być zawsze wyrażona jako liczba całkowita 32-bitowa, Zmień typ parametru na <xref:System.Int32?displayProperty=fullName>. Jeśli wartość parametru może być większa niż może być wyrażona jako liczba całkowita 32-bitowa, Zmień typ parametru na <xref:System.Decimal?displayProperty=fullName>. Należy zauważyć, że obie <xref:System.Single?displayProperty=fullName> i <xref:System.Double?displayProperty=fullName> nie mają dokładności w górnych zakresach typu danych <xref:System.Int64>. Jeśli element członkowski nie ma być widoczny dla modelu COM, oznacz go atrybutem <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawionym na wartość `false`.
+ Aby naprawić naruszenie tej reguły dla parametru, którego wartość może być zawsze wyrażona jako liczba całkowita 32-bitowa, Zmień typ parametru na <xref:System.Int32?displayProperty=fullName> . Jeśli wartość parametru może być większa niż może być wyrażona jako liczba całkowita 32-bitowa, Zmień typ parametru na <xref:System.Decimal?displayProperty=fullName> . Należy zauważyć, że obie <xref:System.Single?displayProperty=fullName> i <xref:System.Double?displayProperty=fullName> tracą dokładność w górnych zakresach <xref:System.Int64> typu danych. Jeśli element członkowski nie ma być widoczny dla modelu COM, oznacz go z <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawionym na `false` .
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  W przypadku, gdy okaże się, że Visual Basic 6 klienci COM nie będą mieć dostępu do tego typu, można bezpiecznie pominąć ostrzeżenie z tej reguły.
@@ -53,9 +53,9 @@ ms.locfileid: "72661293"
  [!code-vb[FxCop.Interoperability.LongArgument#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LongArgument/vb/FxCop.Interoperability.LongArgument.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1413: Unikaj pól niepublicznych w typach wartości widocznych dla modelu COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413: Unikaj niepublicznych pól w typach wartości widocznych w modelu COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: Unikaj składowych statycznych w typach widocznych dla modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+ [CA1407: Unikaj statycznych składowych w typach widocznych dla modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
  [CA1017: Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 

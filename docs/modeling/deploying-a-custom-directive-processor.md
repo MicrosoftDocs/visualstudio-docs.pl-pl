@@ -1,7 +1,7 @@
 ---
 title: Wdrażanie niestandardowego procesora dyrektywy
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596674"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536022"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 
@@ -52,25 +52,25 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
     1. W edytorze manifestu VSIX na karcie **zasoby** wybierz pozycję **Nowy** i ustaw właściwości nowego elementu:
 
-         **Typ zawartości** = **pakietu VSPackage**
+         **Typ zawartości**  =  **Pakietu VSPackage**
 
-         **Projekt źródłowy** = \<*bieżącym projekcie*>
+         **Projekt źródłowy** = \<*the current project*>
 
     2. Kliknij pozycję **wybrane wersje** i Sprawdź typy instalacji, na których ma być możliwe użycie procesora dyrektywy.
 
 3. Dodaj plik .pkgdef i ustaw jego właściwości, które mają zostać uwzględnione w VSIX.
 
-    1. Utwórz plik tekstowy i nadaj mu nazwę \<*assemblyName*>. pkgdef.
+    1. Utwórz plik tekstowy i nadaj mu nazwę \<*assemblyName*> pkgdef.
 
-         \<*assemblyName*> jest zwykle taka sama jak nazwa projektu.
+         \<*assemblyName*>jest zwykle taka sama jak nazwa projektu.
 
     2. Wybierz go w oknie Eksploratora rozwiązań i ustaw jego właściwości w następujący sposób:
 
-         **Akcja kompilacji** = **Zawartość**
+         **Akcja kompilacji**  =  **Zawartość**
 
-         **Kopiuj do katalogu wyjściowego** = **Kopiuj zawsze**
+         **Kopiuj do katalogu wyjściowego**  =  **Zawsze Kopiuj**
 
-         **Uwzględnij w VSIX** = **true**
+         **Uwzględnij w VSIX**  =  **Wartość true**
 
     3. Ustaw nazwę VSIX i upewnij się, że identyfikator jest unikatowy.
 
@@ -85,19 +85,19 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
     "CodeBase"="$PackageFolder$\AssemblyName.dll"
     ```
 
-     Zastąp następujące nazwy własnymi nazwami: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName``AssemblyName`.
+     Zastąp następujące nazwy własnymi nazwami: `CustomDirectiveProcessorName` , `NamespaceName` , `ClassName` , `AssemblyName` .
 
 5. Dodaj następujące odwołania do projektu:
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 2,0**
 
-    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \* . 2,0**
 
-    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. VSHost. \* . 2,0**
 
 6. Dodaj niestandardową klasę procesora dyrektywy do projektu.
 
-     Jest to Klasa publiczna, która powinna implementować <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
+     Jest to Klasa publiczna, która powinna implementować <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> .
 
 #### <a name="to-install-the-custom-directive-processor"></a>Aby zainstalować procesor dyrektywy niestandardowej
 
@@ -120,11 +120,11 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Rozwiązywanie problemów z procesorem dyrektywy w VSIX
  Jeśli procesor dyrektywy nie działa, poniższe sugestie mogą pomóc:
 
-- Nazwa procesora określona w dyrektywie niestandardowej powinna być zgodna z `CustomDirectiveProcessorName`, który został określony w pliku. pkgdef.
+- Nazwa procesora określona w dyrektywie niestandardowej powinna być zgodna z `CustomDirectiveProcessorName` określoną w pliku. pkgdef.
 
-- Metoda `IsDirectiveSupported` musi zwrócić `true`, gdy zostanie przeniesiona nazwa `CustomDirective`.
+- `IsDirectiveSupported`Metoda musi zwrócić `true` , gdy zostanie przeniesiona nazwa `CustomDirective` .
 
-- Jeśli nie widzisz rozszerzenia w Menedżerze rozszerzeń, ale system nie zezwoli na jego instalację, Usuń rozszerzenie z **%localappdata%\Microsoft\VisualStudio\\\*0 \ Extensions\\** .
+- Jeśli nie widzisz rozszerzenia w Menedżerze rozszerzeń, ale system nie zezwoli na jego instalację, Usuń rozszerzenie z **%LocalAppData%\Microsoft\VisualStudio \\ \* 0 \ Extensions \\ **.
 
 - Otwórz plik .vsix i sprawdź jego zawartość. Aby go otworzyć, zmień rozszerzenie nazwy pliku na .zip. Sprawdź, czy zawiera on pliki .dll, .pkgdef i extension.vsixmanifest. Plik extension.vsixmanifest powinien zawierać odpowiednią listę w węźle SupportedProducts i powinien też zawierać węzeł VsPackage w węźle Content:
 
@@ -148,7 +148,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
  Plik .pkgdef zostanie wygenerowany podczas tworzenia projektu. Podczas instalowania pakietu VSPackage plik .pkgdef zarejestruje procesor dyrektywy.
 
- Sprawdź, czy plik .pkgdef pojawia się w folderze kompilacji, zwykle bin\Debug lub bin\Release. Jeśli nie jest wyświetlany, Otwórz plik. csproj w edytorze tekstu i usuń następujący węzeł: `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.
+ Sprawdź, czy plik .pkgdef pojawia się w folderze kompilacji, zwykle bin\Debug lub bin\Release. Jeśli nie jest wyświetlany, Otwórz plik. csproj w edytorze tekstu i usuń następujący węzeł: `<GeneratePkgDefFile>false</GeneratePkgDefFile>` .
 
  Aby uzyskać więcej informacji, zobacz [pakietów VSPackage](../extensibility/internals/vspackages.md).
 
@@ -156,7 +156,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
  Ta metoda instalacji procesora dyrektywy niestandardowej jest najmniej polecana. Nie zapewnia wygodnego sposobu włączania i wyłączania procesora dyrektywy i nie zapewnia metody dystrybucji procesora dyrektywy do innych użytkowników.
 
 > [!CAUTION]
-> Niepoprawne edytowanie rejestru może spowodować poważne uszkodzenie systemu. Przed wprowadzeniem zmian w rejestrze należy wykonać kopię zapasową wszystkich cennych danych, które znajdują się na komputerze.
+> Niewłaściwe edytowanie rejestru może poważnie uszkodzić system. Przed wprowadzeniem zmian w rejestrze należy wykonać kopię zapasową wszystkich cennych danych, które znajdują się na komputerze.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Aby zarejestrować procesor dyrektywy przez ustawienie klucza rejestru
 
@@ -164,7 +164,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
 2. W edytorze regedit przejdź do
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     Jeśli chcesz zainstalować procesor dyrektywy w eksperymentalnej wersji programu Visual Studio, Wstaw "EXP" po "11,0".
 
@@ -185,16 +185,16 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 |Nazwa|Typ|Dane|
 |-|-|-|
 |(Domyślnie)|REG_SZ|(wartość nieustawiona)|
-|Klasa|REG_SZ|**> \<nazwy przestrzeni nazw. Nazwa klasy\<**|
-|CodeBase|REG_SZ|**\<ścieżkę >\\< nazwą zestawu\>**|
+|Klasa|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|CodeBase|REG_SZ|**\<Your Path>\\<nazwę zestawu\>**|
 
  W przypadku zestawu w pamięci podręcznej GAC, podklucze rejestru powinny wyglądać tak, jak w poniższej tabeli:
 
 |Nazwa|Typ|Dane|
 |-|-|-|
 |(Domyślnie)|REG_SZ|(wartość nieustawiona)|
-|Klasa|REG_SZ|\<w **pełni kwalifikowaną nazwę klasy**>|
-|Zestaw|REG_SZ|\<**nazwę zestawu w pamięci PODręcznej GAC**>|
+|Klasa|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Zestaw|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,8 +1,8 @@
 ---
 title: Szablony elementów dla projektów języka Python
-description: Lista odwołań szablonów elementów dla projektu języka Python, które są dostępne za pośrednictwem okna dialogowego Dodaj > nowy element w programie Visual Studio.
+description: Lista referencyjna szablonów elementów dla projektu języka Python, które są dostępne za pomocą okna dialogowego Dodawanie > nowego elementu w programie Visual Studio.
 ms.date: 12/06/2018
-ms.topic: tutorial
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,44 +10,44 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62430345"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533396"
 ---
 # <a name="python-item-templates"></a>Szablony elementów języka Python
 
-Szablony elementów są dostępne w projektach języka Python za pomocą polecenia menu Dodaj**nowy element** **projektu** > lub polecenia **Dodaj** > **nowy element** w menu kontekstowym w **Eksploratorze rozwiązań**.
+Szablony elementów są dostępne w projektach języka Python za pomocą **Project**  >  polecenia menu**Dodaj nowy element** lub polecenie **Dodaj**  >  **nowy element** w menu kontekstowym w **Eksplorator rozwiązań**.
 
 ![Okno dialogowe Dodawanie nowego elementu](media/project-item-templates.png)
 
-Używając nazwy nadającej element, szablon zazwyczaj tworzy jeden lub więcej plików i folderów w aktualnie wybranym folderze w projekcie (kliknięcie prawym przyciskiem myszy folderu w celu wywołania menu kontekstowego powoduje automatyczne wybranie tego folderu). Dodanie elementu zawiera go w projekcie programu Visual Studio, a element pojawi się w **Eksploratorze rozwiązań**.
+Przy użyciu nazwy podanym dla elementu szablon zwykle tworzy jeden lub więcej plików i folderów w aktualnie wybranym folderze w projekcie (kliknij prawym przyciskiem myszy folder, aby wyświetlić menu kontekstowe automatycznie zaznacza ten folder). Dodanie elementu zawiera go w projekcie programu Visual Studio, a element pojawi się w **Eksplorator rozwiązań**.
 
-W poniższej tabeli pokrótce wyjaśniono efekt każdego szablonu elementu w ramach projektu języka Python:
+W poniższej tabeli opisano efekt każdego szablonu elementu w ramach projektu języka Python:
 
 | Szablon | Co tworzy szablon |
 | --- | --- |
-| **Pusty plik Pythona** | Pusty plik z rozszerzeniem *py.* |
-| **Klasa Pythona** | Plik *py zawierający* pojedynczą pustą definicję klasy Języka Python. |
-| **Pakiet Pythona** | Folder zawierający * \_ \_plik\_\_.py init.* |
-| **Test jednostkowy Języka Python** | Plik *.py* z pojedynczym testem `unittest` jednostkowym opartym `unittest.main()` na platformie, wraz z wywołaniem uruchomienia testów w pliku. |
-| **Strona HTML** | Plik *.html* z prostą strukturą `<head>` `<body>` strony składającą się z elementu i elementu. |
-| **Javascript** | Pusty plik *.js.* |
-| **Arkusz stylów** | Plik *css zawierający* pusty styl `body`dla . |
-| **Plik tekstowy** | Pusty plik *txt.* |
-| **Aplikacja Django 1.9**<br/>**Aplikacja Django 1.4** | Folder o nazwie aplikacji, który zawiera podstawowe pliki dla aplikacji Django, jak wyjaśniono w [Learn Django w Programie Visual Studio, Krok 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) dla Django 1.9. W przypadku Django 1.4 folder *migracji,* plik *admin.py* i plik *apps.py* nie są uwzględniane. |
-| **Okno WPF IronPython** | Okno WPF składające się z dwóch plików side-by-side: pliku *xaml,* który definiuje `<Window>` z pustym `<Grid>` elementem i skojarzonego `wpf` pliku *py,* który ładuje plik XAML za pomocą biblioteki. Zazwyczaj używane w ramach projektu utworzonego przy użyciu jednego z szablonów projektu IronPython. Zobacz [Zarządzanie projektami języka Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates). |
-| **Pliki obsługi ról sieci Web** | Folder *pojemnika* w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślny skrypt wdrażania i plik *web.config* dla ról sieci Web usługi Azure Cloud Service. Szablon zawiera również plik *readme.html,* który wyjaśnia szczegóły. |
-| **Pliki obsługi ról procesu roboczego** | Folder *pojemnika* w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślny skrypt wdrażania i uruchamiania wraz z plikiem *web.config* dla ról procesu roboczego usługi Azure Cloud Service. Szablon zawiera również plik *readme.html,* który wyjaśnia szczegóły. |
-| **Usługa Azure web.config (FastCGI)** | Plik *web.config* zawierający wpisy dla aplikacji używających obiektu [WSGI](https://wsgi.readthedocs.io/en/latest/) do obsługi połączeń przychodzących. Ten plik jest zazwyczaj wdrażany w katalogu głównym serwera sieci web z uruchomionymi usługami IIS. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla aplikacji IIS](configure-web-apps-for-iis-windows.md). |
-| **Usługa Azure web.config (httpplatformhandler)** | Plik *web.config* zawierający wpisy dla aplikacji, które nasłuchiwają na gnieździe dla połączeń przychodzących. Ten plik jest zazwyczaj wdrażany w katalogu głównym serwera sieci web z uruchomionymi usługami IIS, takich jak usługa Azure App Service. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla aplikacji IIS](configure-web-apps-for-iis-windows.md). |
-| **Pliki statyczne platformy Azure web.config** | Plik *web.config* zazwyczaj dodawany do folderu *statycznego* (lub innego folderu zawierającego elementy statyczne), aby wyłączyć obsługę języka Python dla tego folderu. Ten plik konfiguracyjny działa w połączeniu z jednym z plików config FastCGI lub HttpPlatformHandler powyżej. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla aplikacji IIS](configure-web-apps-for-iis-windows.md). |
-| **Zdalne debugowanie usługi Azure web.config** | Przestarzałe (był używany do zdalnego debugowania w usłudze Azure App Service dla systemu Windows, który nie jest już obsługiwany). |
+| **Pusty plik języka Python** | Pusty plik z rozszerzeniem *. PR* . |
+| **Klasa języka Python** | Plik *. PR* zawierający pojedynczą pustą definicję klasy języka Python. |
+| **Pakiet języka Python** | Folder zawierający plik * \_ \_ init \_ \_ . PR* . |
+| **Test jednostkowy języka Python** | Plik *. PR* z pojedynczym testem jednostkowym opartym na `unittest` strukturze, wraz z wywołaniem do `unittest.main()` uruchomienia testów w pliku. |
+| **Strona HTML** | Plik *. html* z prostą strukturą strony składającą się `<head>` z `<body>` elementów i. |
+| **JavaScript** | Pusty plik *. js* . |
+| **Arkusz stylów** | Plik *. css* zawierający pusty styl dla `body` . |
+| **Plik tekstowy** | Pusty plik *txt* . |
+| **Aplikacja Django 1,9**<br/>**Aplikacja Django 1,4** | Folder o nazwie aplikacji, który zawiera podstawowe pliki dla aplikacji Django, zgodnie z opisem w temacie [Django in Visual Studio, krok 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) dla Django 1,9. W przypadku Django 1,4 nie są uwzględniane foldery *migracji* , plik *admin.py* i plik *Apps.py* . |
+| **IronPython okno WPF** | Okno WPF składające się z dwóch plików obok siebie: plik *XAML* , który definiuje `<Window>` element z pustym `<Grid>` elementem i skojarzony z nim plik *. PR* , który ładuje plik XAML przy użyciu `wpf` biblioteki. Zwykle używane w projekcie utworzonym przy użyciu jednego z szablonów projektów IronPython. Zobacz [Zarządzanie projektami Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates). |
+| **Pliki obsługi roli sieci Web** | Folder *bin* w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślny skrypt wdrażania i plik *web.config* dla ról sieci Web usług w chmurze platformy Azure. Szablon zawiera również plik *readme.html* , który objaśnia szczegóły. |
+| **Pliki obsługi roli proces roboczy** | Folder *bin* w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślne wdrożenie i skrypt uruchamiania wraz z plikiem *web.config* dla ról procesów roboczych usługi w chmurze platformy Azure. Szablon zawiera również plik *readme.html* , który objaśnia szczegóły. |
+| **web.config platformy Azure (FastCGI)** | Plik *web.config* zawierający wpisy dla aplikacji korzystających z obiektu [WSGI](https://wsgi.readthedocs.io/en/latest/) do obsługi połączeń przychodzących. Ten plik jest zwykle wdrażany w katalogu głównym serwera sieci Web z uruchomionymi usługami IIS. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
+| **web.config platformy Azure (HttpPlatformHandler)** | Plik *web.config* zawierający wpisy dla aplikacji, które nasłuchują w gnieździe dla połączeń przychodzących. Ten plik jest zwykle wdrażany w katalogu głównym serwera sieci Web z uruchomionymi usługami IIS, takimi jak Azure App Service. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
+| **web.configplików statycznych platformy Azure** | Plik *web.config* zwykle dodawany do folderu *statycznego* (lub innego folderu zawierającego elementy statyczne), aby wyłączyć obsługę języka Python dla tego folderu. Ten plik konfiguracji działa w połączeniu z jednym z plików konfiguracji FastCGI lub HttpPlatformHandler powyżej. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
+| **web.configzdalnego debugowania platformy Azure** | Przestarzałe (użyto do zdalnego debugowania w Azure App Service dla systemu Windows, które nie jest już obsługiwane). |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie projektami języka Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates)
-- [Szablony projektów sieci Web języka Python](python-web-application-project-templates.md)
+- [Szablony projektu sieci Web w języku Python](python-web-application-project-templates.md)
 - [Publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

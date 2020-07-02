@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184253"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536789"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Zdalne debugowanie ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio
 
@@ -175,15 +175,15 @@ Tej opcji można użyć do utworzenia pliku ustawień publikowania i zaimportowa
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-    > [!NOTE]
-    > If you restart an Azure VM, the IP address may change.
+> [!NOTE]
+> Po ponownym uruchomieniu maszyny wirtualnej platformy Azure adres IP może się zmienić.
 
 Po pomyślnym wdrożeniu aplikacji należy uruchomić ją automatycznie. Jeśli aplikacja nie uruchamia się z programu Visual Studio, uruchom aplikację w usługach IIS, aby sprawdzić, czy działa poprawnie. W przypadku ASP.NET Core należy również upewnić się, że w polu Pula aplikacji **dla tej opcji określono wartość** **Brak kodu zarządzanego**.
 
 1. W oknie dialogowym **Ustawienia** Włącz debugowanie, klikając przycisk **dalej**, wybierz konfigurację **debugowania** , a następnie wybierz pozycję **Usuń dodatkowe pliki w miejscu docelowym** w obszarze Opcje **publikowania plików** .
 
     > [!IMPORTANT]
-    > W przypadku wybrania konfiguracji wydania podczas publikowania należy wyłączyć debugowanie w pliku *Web. config* .
+    > W przypadku wybrania konfiguracji wydania można wyłączyć debugowanie w pliku *web.config* podczas publikowania.
 
 1. Kliknij przycisk **Zapisz** , a następnie ponownie Opublikuj aplikację.
 
@@ -255,11 +255,11 @@ Pobierz wersję narzędzi zdalnych, która pasuje do używanej wersji programu V
 
 6. Wpisz pierwszą literę nazwy procesu, aby szybko znaleźć aplikację.
 
-    * Jeśli używasz [modelu hostingu w procesie](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) dla usług IIS, wybierz właściwy proces **w3wp. exe** . Począwszy od platformy .NET Core 3, jest to ustawienie domyślne.
+    * Jeśli używasz [modelu hostingu w procesie](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) na serwerze IIS, wybierz właściwy proces **w3wp.exe** . Począwszy od platformy .NET Core 3, jest to ustawienie domyślne.
 
-    * W przeciwnym razie wybierz proces **dotnet. exe** . (Jest to model hostingu poza procesem).
+    * W przeciwnym razie wybierz proces **dotnet.exe** . (Jest to model hostingu poza procesem).
 
-    Jeśli masz wiele procesów pokazujących *w3wp. exe* lub *dotnet. exe*, Sprawdź kolumnę **Nazwa użytkownika** . W niektórych scenariuszach kolumna **Nazwa użytkownika** zawiera nazwę puli aplikacji, na przykład **APPPOOL\DefaultAppPool IIS**. Jeśli zobaczysz pulę aplikacji, ale nie jest ona unikatowa, Utwórz nową nazwę puli aplikacji dla wystąpienia aplikacji, które chcesz debugować, a następnie możesz ją łatwo znaleźć w kolumnie **Nazwa użytkownika** .
+    Jeśli masz wiele procesów pokazujących *w3wp.exe* lub *dotnet.exe*, Sprawdź kolumnę **Nazwa użytkownika** . W niektórych scenariuszach kolumna **Nazwa użytkownika** zawiera nazwę puli aplikacji, na przykład **APPPOOL\DefaultAppPool IIS**. Jeśli zobaczysz pulę aplikacji, ale nie jest ona unikatowa, Utwórz nową nazwę puli aplikacji dla wystąpienia aplikacji, które chcesz debugować, a następnie możesz ją łatwo znaleźć w kolumnie **Nazwa użytkownika** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")

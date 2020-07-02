@@ -2,17 +2,17 @@
 title: Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ab824d1d277478dc2feec2803303d136a92830
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653938"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536087"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 Interfejs API niezmienności w programie Visual Studio Wizualizacja i Modeling SDK umożliwia programowi zablokowanie części lub całego modelu języka specyficznego dla domeny (DSL), który może być odczytywany, ale nie zmieniany. Tej opcji tylko do odczytu można na przykład użyć, aby użytkownik mógł poproś współpracowników o dodawanie adnotacji i przeglądanie modelu DSL, ale może uniemożliwić im zmianę oryginalnego.
@@ -36,16 +36,16 @@ element.SetLocks(Locks.Delete | Locks.Property);
 
  Inne wartości blokowania mogą służyć do zapobiegania zmianom w relacjach, tworzeniu elementów, przesunięciu między partycjami oraz zmiany kolejności linków w roli.
 
- Blokady stosują się do akcji użytkownika i kodu programu. Jeśli kod programu próbuje wprowadzić zmianę, zostanie wygenerowany `InvalidOperationException`. Blokady są ignorowane w operacji cofania lub ponawiania.
+ Blokady stosują się do akcji użytkownika i kodu programu. Jeśli kod programu próbuje wprowadzić zmianę, `InvalidOperationException` zostanie zgłoszony. Blokady są ignorowane w operacji cofania lub ponawiania.
 
- Można stwierdzić, czy element ma jakąkolwiek blokadę w danym zestawie przy użyciu `IsLocked(Locks)` i można uzyskać bieżący zestaw blokad dla elementu przy użyciu `GetLocks()`.
+ Można stwierdzić, czy element ma jakąkolwiek blokadę w danym zestawie przy użyciu `IsLocked(Locks)` i można uzyskać bieżący zestaw blokad dla elementu przy użyciu `GetLocks()` .
 
  Można ustawić blokadę bez użycia transakcji. Zablokuj bazę danych nie należy do magazynu. Jeśli ustawisz blokadę w reakcji na zmianę wartości w magazynie, na przykład w OnValueChanged, należy zezwolić na zmiany, które są częścią operacji cofania.
 
- Te metody to metody rozszerzające, które są zdefiniowane w przestrzeni nazw <xref:Microsoft.VisualStudio.Modeling.Immutability>.
+ Te metody to metody rozszerzające, które są zdefiniowane w <xref:Microsoft.VisualStudio.Modeling.Immutability> przestrzeni nazw.
 
 ### <a name="locks-on-partitions-and-stores"></a>Blokady w partycjach i sklepach
- Blokady można także stosować do partycji i magazynu. Blokada ustawiona na partycji dotyczy wszystkich elementów w partycji. W związku z tym, na przykład, Poniższa instrukcja uniemożliwi usunięcie wszystkich elementów w partycji, niezależnie od stanu ich własnych blokad. Niemniej jednak inne blokady, takie jak `Locks.Property`, można nadal ustawić dla poszczególnych elementów:
+ Blokady można także stosować do partycji i magazynu. Blokada ustawiona na partycji dotyczy wszystkich elementów w partycji. W związku z tym, na przykład, Poniższa instrukcja uniemożliwi usunięcie wszystkich elementów w partycji, niezależnie od stanu ich własnych blokad. Niemniej jednak inne blokady, takie jak `Locks.Property` można nadal ustawić dla poszczególnych elementów:
 
 ```csharp
 partition.SetLocks(Locks.Delete);
@@ -67,7 +67,7 @@ partition.SetLocks(Locks.Delete);
 - Nie Zezwalaj na dodawanie i usuwanie elementów i relacji określonych klas, ale Zezwalaj na zmiany właściwości. Zapewnia to użytkownikom stałą formę, w której mogą wypełnić właściwości.
 
 ## <a name="lock-values"></a>Zablokuj wartości
- Blokady można ustawić dla magazynu, partycji lub pojedynczych ModelElement. Blokady są wyliczeniem `Flags`: można połączyć jego wartości za pomocą elementu&#124;"".
+ Blokady można ustawić dla magazynu, partycji lub pojedynczych ModelElement. Blokady są `Flags` wyliczeniem: można połączyć jego wartości przy użyciu elementu "&#124;".
 
 - Blokady elementu ModelElement zawsze obejmują blokady jego partycji.
 
@@ -79,28 +79,28 @@ partition.SetLocks(Locks.Delete);
 |-|-|
 |Brak|Brak ograniczeń.|
 |Właściwość|Nie można zmienić właściwości domeny elementów. Nie dotyczy to właściwości, które są generowane przez rolę klasy domeny w relacji.|
-|Dodaj|Nie można utworzyć nowych elementów i linków w partycji lub magazynie.<br /><br /> Nie ma zastosowania do `ModelElement`.|
-|Przenieś|Nie można przenieść elementu między partycjami, jeśli `element.IsLocked(Move)` ma wartość true lub jeśli `targetPartition.IsLocked(Move)` ma wartość true.|
-|Usuwanie|Nie można usunąć elementu, jeśli ta blokada została ustawiona w samym elemencie lub na dowolnym z elementów, do których zostanie ono propagowane, takich jak osadzone elementy i kształty.<br /><br /> Za pomocą `element.CanDelete()` można stwierdzić, czy element może zostać usunięty.|
+|Dodaj|Nie można utworzyć nowych elementów i linków w partycji lub magazynie.<br /><br /> Nie dotyczy `ModelElement` .|
+|Move|Nie można przenieść elementu między partycjami `element.IsLocked(Move)` , jeśli ma wartość true, lub jeśli `targetPartition.IsLocked(Move)` ma wartość true.|
+|Usuń|Nie można usunąć elementu, jeśli ta blokada została ustawiona w samym elemencie lub na dowolnym z elementów, do których zostanie ono propagowane, takich jak osadzone elementy i kształty.<br /><br /> Można użyć, `element.CanDelete()` Aby stwierdzić, czy element może być usunięty.|
 |Zmienić kolejność|Nie można zmienić kolejności linków w RolePlayer.|
 |RolePlayer|Nie można zmienić zestawu linków, które są źródłem w tym elemencie. Na przykład nowe elementy nie mogą być osadzone w tym elemencie. Nie ma to wpływu na linki, dla których ten element jest elementem docelowym.<br /><br /> Jeśli ten element jest łączem, jego źródło i cel nie są modyfikowane.|
-|Wszystkie|Wartości bitowe lub inne.|
+|Wszystko|Wartości bitowe lub inne.|
 
 ## <a name="locking-policies"></a>Zasady blokowania
- Jako autor DSL można zdefiniować *zasady blokowania*. Zasada blokowania powoduje umiarkowane działanie operacji SetLocks (), dzięki czemu można zapobiec ustawianiu określonych blokad lub określić, że należy ustawić określone blokady. Zazwyczaj należy użyć zasad blokowania, aby zniechęcić użytkowników lub deweloperów przed przypadkowe contravening zamierzonym użyciem DSL, w taki sam sposób, w jaki można zadeklarować zmienną `private`.
+ Jako autor DSL można zdefiniować *zasady blokowania*. Zasada blokowania powoduje umiarkowane działanie operacji SetLocks (), dzięki czemu można zapobiec ustawianiu określonych blokad lub określić, że należy ustawić określone blokady. Zazwyczaj należy użyć zasad blokowania, aby zniechęcić użytkowników lub deweloperów przed przypadkowe contravening zamierzonym użyciem DSL, w taki sam sposób, w jaki można zadeklarować zmienną `private` .
 
- Można również użyć zasad blokowania, aby ustawić blokady dla wszystkich elementów zależnych od typu elementu. Dzieje się tak, ponieważ `SetLocks(Locks.None)` jest zawsze wywoływana, gdy element jest najpierw tworzony lub deserializowany z pliku.
+ Można również użyć zasad blokowania, aby ustawić blokady dla wszystkich elementów zależnych od typu elementu. Jest to spowodowane tym, że `SetLocks(Locks.None)` jest zawsze wywoływana, gdy element jest najpierw tworzony lub deserializowany z pliku.
 
- Nie można jednak używać zasad do różnicowania blokad w elemencie w trakcie jego życia. Aby osiągnąć ten efekt, należy użyć wywołań do `SetLocks()`.
+ Nie można jednak używać zasad do różnicowania blokad w elemencie w trakcie jego życia. Aby osiągnąć ten efekt, należy użyć wywołań do `SetLocks()` .
 
  Aby zdefiniować zasady blokowania, należy:
 
-- Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
+- Utwórz klasę implementującą <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> .
 
 - Dodaj tę klasę do usług, które są dostępne za pomocą DocData DSL.
 
 ### <a name="to-define-a-locking-policy"></a>Aby zdefiniować zasady blokowania
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> ma następującą definicję:
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>ma następującą definicję:
 
 ```csharp
 public interface ILockingPolicy
@@ -111,9 +111,9 @@ public interface ILockingPolicy
 }
 ```
 
- Te metody są wywoływane, gdy nastąpi wywołanie `SetLocks()` w magazynie, partycji lub ModelElement. W każdej metodzie są udostępniane proponowane zestawy blokad. Można zwrócić proponowany zestaw lub można dodać i odjąć blokady.
+ Metody te są wywoływane w przypadku wywołania `SetLocks()` w sklepie, partycji lub ModelElement. W każdej metodzie są udostępniane proponowane zestawy blokad. Można zwrócić proponowany zestaw lub można dodać i odjąć blokady.
 
- Na przykład:
+ Przykład:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -142,7 +142,7 @@ namespace Company.YourDsl.DslPackage // Change
     }
 ```
 
- Aby upewnić się, że użytkownicy mogą zawsze usuwać elementy, nawet jeśli inne wywołania kodu `SetLocks(Lock.Delete):`
+ Aby upewnić się, że użytkownicy mogą zawsze usuwać elementy, nawet jeśli inne wywołania kodu`SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 
@@ -151,7 +151,7 @@ namespace Company.YourDsl.DslPackage // Change
  `return element is MyClass ? (proposedLocks | Locks.Property) : proposedLocks;`
 
 ### <a name="to-make-your-policy-available-as-a-service"></a>Aby udostępnić zasady jako usługę
- W projekcie `DslPackage` Dodaj nowy plik zawierający kod, który jest podobny do następującego:
+ W `DslPackage` projekcie Dodaj nowy plik zawierający kod, który jest podobny do następującego:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

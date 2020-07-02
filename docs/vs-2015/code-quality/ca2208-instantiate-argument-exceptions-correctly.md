@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5b5e1525d1ee706f9cd46a58c022763d2ed234bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a63ebb7f3946926864c4dd882c281b5dcd7c6c5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662687"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535840"
 ---
-# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Utwórz poprawne wystąpienia wyjątków argumentów
+# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Poprawnie twórz wystąpienia wyjątków argumentów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
 |CheckId|CA2208|
@@ -42,26 +42,26 @@ ms.locfileid: "72662687"
 ## <a name="rule-description"></a>Opis reguły
  Zamiast wywoływania domyślnego konstruktora, wywołaj jedno z przeciążeń konstruktora, które pozwala na podano bardziej zrozumiały komunikat wyjątku. Komunikat o wyjątku powinien wskazywać dewelopera i jasno wyjaśnić warunek błędu oraz jak poprawić lub uniknąć wyjątku.
 
- Sygnatury jednego i dwóch konstruktorów ciągów <xref:System.ArgumentException> i ich typów pochodnych nie są spójne w odniesieniu do parametrów `message` i `paramName`. Upewnij się, że te konstruktory są wywoływane z prawidłowymi argumentami ciągu. Podpisy są następujące:
+ Sygnatury jednego i dwóch konstruktorów ciągów <xref:System.ArgumentException> i jego typów pochodnych nie są spójne z uwzględnieniem `message` `paramName` parametrów i. Upewnij się, że te konstruktory są wywoływane z prawidłowymi argumentami ciągu. Podpisy są następujące:
 
- <xref:System.ArgumentException> (ciąg `message`)
+ <xref:System.ArgumentException>(ciąg `message` )
 
- <xref:System.ArgumentException> (ciąg `message`, ciąg `paramName`)
+ <xref:System.ArgumentException>(String `message` , String `paramName` )
 
- <xref:System.ArgumentNullException> (ciąg `paramName`)
+ <xref:System.ArgumentNullException>(ciąg `paramName` )
 
- <xref:System.ArgumentNullException> (ciąg `paramName`, ciąg `message`)
+ <xref:System.ArgumentNullException>(String `paramName` , String `message` )
 
- <xref:System.ArgumentOutOfRangeException> (ciąg `paramName`)
+ <xref:System.ArgumentOutOfRangeException>(ciąg `paramName` )
 
- <xref:System.ArgumentOutOfRangeException> (ciąg `paramName`, ciąg `message`)
+ <xref:System.ArgumentOutOfRangeException>(String `paramName` , String `message` )
 
- <xref:System.DuplicateWaitObjectException> (ciąg `parameterName`)
+ <xref:System.DuplicateWaitObjectException>(ciąg `parameterName` )
 
- <xref:System.DuplicateWaitObjectException> (ciąg `parameterName`, ciąg `message`)
+ <xref:System.DuplicateWaitObjectException>(String `parameterName` , String `message` )
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Wywołaj konstruktora, który przyjmuje komunikat, nazwę parametru lub oba parametry, i upewnij się, że argumenty są odpowiednie dla typu <xref:System.ArgumentException>.
+ Aby naprawić naruszenie tej reguły, Wywołaj konstruktora, który przyjmuje komunikat, nazwę parametru lub oba parametry, i upewnij się, że argumenty są odpowiednie dla typu <xref:System.ArgumentException> wywoływanego.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Można bezpiecznie pominąć ostrzeżenie z tej reguły tylko wtedy, gdy Konstruktor sparametryzowany jest wywoływany z prawidłowymi argumentami ciągu.

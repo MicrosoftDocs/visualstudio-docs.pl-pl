@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 49a693224b6552340d2a01051318842749a84cc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01ad9fc4fc57917c123404d8863d04240585793
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663678"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533435"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś P/Invokes do klasy NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Element|Wartość|
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
@@ -36,15 +36,15 @@ ms.locfileid: "72663678"
  Metoda używa usług wywołania platformy w celu uzyskania dostępu do kodu niezarządzanego i nie jest elementem członkowskim jednej z klas **NativeMethods** .
 
 ## <a name="rule-description"></a>Opis reguły
- Metody wywołania platformy, takie jak te, które są oznaczone za pomocą atrybutu <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> lub metody, które są zdefiniowane za pomocą słowa kluczowego `Declare` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], uzyskują dostęp do kodu niezarządzanego. Metody te powinny znajdować się w jednej z następujących klas:
+ Metody wywołania platformy, takie jak te, które są oznaczone przy użyciu <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atrybutu lub metod, które są zdefiniowane za pomocą `Declare` słowa kluczowego w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , uzyskują dostęp do niezarządzanego kodu. Metody te powinny znajdować się w jednej z następujących klas:
 
-- **NativeMethods** — Ta klasa nie pomija przechodzenia stosu dla niezarządzanego kodu. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> nie może być zastosowany do tej klasy). Ta klasa jest dla metod, które mogą być używane w dowolnym miejscu, ponieważ zostanie wykonane przeszukiwanie stosu.
+- **NativeMethods** — Ta klasa nie pomija przechodzenia stosu dla niezarządzanego kodu. ( <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> nie może być zastosowany do tej klasy). Ta klasa jest dla metod, które mogą być używane w dowolnym miejscu, ponieważ zostanie wykonane przeszukiwanie stosu.
 
-- **SafeNativeMethods** — Ta klasa pomija przeszukiwania stosu dla niezarządzanego kodu. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest zastosowany do tej klasy). Ta klasa jest dla metod, które są bezpieczne dla każdego do wywołania. Osoby wywołujące te metody nie są wymagane do przeprowadzenia pełnego przeglądu zabezpieczeń, aby upewnić się, że użycie jest bezpieczne, ponieważ metody są nieszkodliwe dla każdego obiektu wywołującego.
+- **SafeNativeMethods** — Ta klasa pomija przeszukiwania stosu dla niezarządzanego kodu. ( <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest zastosowany do tej klasy). Ta klasa jest dla metod, które są bezpieczne dla każdego do wywołania. Osoby wywołujące te metody nie są wymagane do przeprowadzenia pełnego przeglądu zabezpieczeń, aby upewnić się, że użycie jest bezpieczne, ponieważ metody są nieszkodliwe dla każdego obiektu wywołującego.
 
-- **UnsafeNativeMethods** — Ta klasa pomija przeszukiwania stosu dla niezarządzanego kodu. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest zastosowany do tej klasy). Ta klasa jest dla metod, które są potencjalnie niebezpieczne. Każdy obiekt wywołujący te metody musi wykonać pełny przegląd zabezpieczeń, aby upewnić się, że użycie jest bezpieczne, ponieważ nie zostanie wykonane żadne przeszukiwanie stosu.
+- **UnsafeNativeMethods** — Ta klasa pomija przeszukiwania stosu dla niezarządzanego kodu. ( <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest zastosowany do tej klasy). Ta klasa jest dla metod, które są potencjalnie niebezpieczne. Każdy obiekt wywołujący te metody musi wykonać pełny przegląd zabezpieczeń, aby upewnić się, że użycie jest bezpieczne, ponieważ nie zostanie wykonane żadne przeszukiwanie stosu.
 
-  Klasy te są zadeklarowane jako `internal` (`Friend`, in Visual Basic) i deklarują Konstruktor prywatny, aby zapobiec tworzeniu nowych wystąpień. Metody w tych klasach powinny mieć `static` i `internal` (`Shared` i `Friend` w Visual Basic).
+  Klasy te są zadeklarowane jako `internal` ( `Friend` , w Visual Basic) i deklarują Konstruktor prywatny, aby zapobiec tworzeniu nowych wystąpień. Metody w tych klasach powinny mieć wartość `static` i `internal` ( `Shared` i `Friend` w Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Przenieś metodę do odpowiedniej klasy **NativeMethods** . W przypadku większości aplikacji przeniesienie P/Invoke do nowej klasy o nazwie **NativeMethods** jest wystarczające.
@@ -69,7 +69,7 @@ ms.locfileid: "72663678"
 ### <a name="description"></a>Opis
  Ponieważ Klasa **NativeMethods** nie powinna być oznaczona przy użyciu **SuppressUnmanagedCodeSecurityAttribute**, P/Invoke, które są umieszczane, będzie wymagały uprawnienia **UnmanagedCode** . Ponieważ większość aplikacji jest uruchamiana z komputera lokalnego i działa z pełnym zaufaniem, zazwyczaj nie jest to problem. Jeśli jednak tworzysz biblioteki wielokrotnego użytku, należy rozważyć zdefiniowanie klasy **SafeNativeMethods** lub **UnsafeNativeMethods** .
 
- Poniższy przykład przedstawia sposób **interakcji. dźwięk** , który otacza funkcję **MessageBeep** z User32. dll. **MessageBeep** P/Invoke jest umieszczana w klasie **NativeMethods** .
+ Poniższy przykład przedstawia sposób **interakcji. dźwięk** , który otacza funkcję **MessageBeep** z user32.dll. **MessageBeep** P/Invoke jest umieszczana w klasie **NativeMethods** .
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.NativeMethods#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethods/cs/FxCop.Design.NativeMethods.cs#1)]
@@ -80,7 +80,7 @@ ms.locfileid: "72663678"
 ### <a name="description"></a>Opis
  Metody P/Invoke, które mogą być bezpiecznie uwidocznione dla dowolnej aplikacji i które nie mają żadnych efektów ubocznych, powinny być umieszczane w klasie o nazwie **SafeNativeMethods**. Nie musisz zażądać uprawnień i nie musisz zwracać uwagi do lokalizacji, z której są wywoływane.
 
- W poniższym przykładzie przedstawiono Właściwość **Environment.** nieruchomości, która otacza funkcję **GetTickCount** z pliku Kernel32. dll.
+ W poniższym przykładzie przedstawiono Właściwość **Environment.** nieruchomości, która zawija funkcję **GetTickCount** z kernel32.dll.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.NativeMethodsSafe#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethodsSafe/cs/FxCop.Design.NativeMethodsSafe.cs#1)]
@@ -91,11 +91,11 @@ ms.locfileid: "72663678"
 ### <a name="description"></a>Opis
  Metody P/Invoke, które nie mogą być bezpiecznie wywoływane i mogą spowodować, że efekty uboczne powinny zostać umieszczone w klasie o nazwie **UnsafeNativeMethods**. Metody te powinny być ściśle sprawdzone, aby upewnić się, że nie są narażone na użytkownika przypadkowo. Reguła [CA2118: przegląd użycia SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) może Ci pomóc. Alternatywnie metody powinny mieć inne uprawnienia, które są żądane, zamiast **UnmanagedCode** , gdy ich używają.
 
- Poniższy przykład przedstawia **kursor. Ukryj** metodę, która otacza funkcję **ShowCursor** z User32. dll.
+ Poniższy przykład przedstawia **kursor. Ukryj** metodę, która zawija funkcję **ShowCursor** z user32.dll.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.NativeMethodsUnsafe#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethodsUnsafe/cs/FxCop.Design.NativeMethodsUnsafe.cs#1)]
  [!code-vb[FxCop.Design.NativeMethodsUnsafe#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethodsUnsafe/vb/FxCop.Design.NativeMethodsUnsafe.vb#1)]
 
 ## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)
+ [Ostrzeżenia projektu](../code-quality/design-warnings.md)

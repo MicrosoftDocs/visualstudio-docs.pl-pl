@@ -49,7 +49,7 @@ Opublikuj w [Azure Container Registry](/azure/container-registry/) , wykonując 
 
 Skonfiguruj ciągłą integrację i dostarczanie (CI/CD) za pomocą [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Wdróż do Azure App Service](deploy-app-service.md) 
  [Narzędzia kontenerów programu Visual Studio](/visualstudio/containers/).

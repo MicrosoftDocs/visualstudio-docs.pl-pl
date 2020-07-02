@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 537223aab878aee2fb00e9417d0415f0a17d2dd5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662221"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534137"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,9 +59,9 @@ Autoformatowanie może wystąpić, gdy zostanie wykryte dowolne z poniższych zd
 
   Można określić, które zdarzenia będą powodowały Autoformatowanie.
 
-|||
+|Nazwa|Opis|
 |-|-|
-|**Po zakończeniu tagu końcowego lub tagu prostego**|Autoformatowanie występuje po zakończeniu wpisywania tagu końcowego lub tagu prostego. Tag prosty nie ma żadnych atrybutów, na przykład `<Button />`.|
+|**Po zakończeniu tagu końcowego lub tagu prostego**|Autoformatowanie występuje po zakończeniu wpisywania tagu końcowego lub tagu prostego. Tag prosty nie ma żadnych atrybutów, na przykład `<Button />` .|
 |**Po zakończeniu tagu początkowego**|Autoformatowanie występuje po zakończeniu wpisywania tagu początkowego.|
 |**Przy wklejaniu ze schowka**|Autoformatowanie występuje po wklejeniu kodu XAML ze schowka do widoku XAML.|
 
@@ -70,7 +70,7 @@ To ustawienie wskazuje, czy wartości atrybutów są ujęte w znaki pojedynczego
 
 Po ustawieniu tej opcji będzie to miało zastosowanie tylko atrybuty dodane w projektancie lub ręcznie w widoku XAML.
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Podwójne cudzysłowy (")**|Wartości atrybutów są ujęte w cudzysłów.<br /><br /> `<Button Name="button1">Hello</Button>`|
 |**Apostrofy (')**|Wartości atrybutów są ujęte w apostrofy.<br /><br /> `<Button Name='button1'>Hello</Button>`|
@@ -78,7 +78,7 @@ Po ustawieniu tej opcji będzie to miało zastosowanie tylko atrybuty dodane w p
 ## <a name="tag-wrapping"></a>Zawijanie tagów
 Możesz określić długość linii dla zawijania tagów. Gdy funkcja zawijania tagów jest włączona, wszystkie XAML dodane później za pomocą projektanta zostaną odpowiednio opakowane.
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Zawijaj tagi, które przekraczają określoną długość**|Określa, czy linie są opakowane w długości linii określonej przez **Długość**.|
 |**Długość**|Liczba znaków, jaką może zawierać linia. W razie potrzeby niektóre linie XAML mogą przekroczyć określoną długość wiersza.|
@@ -86,7 +86,7 @@ Możesz określić długość linii dla zawijania tagów. Gdy funkcja zawijania 
 ## <a name="attribute-spacing"></a>Odstępy między atrybutami
 Użyj tego ustawienia, aby kontrolować sposób, w jaki atrybuty są rozmieszczone w dokumencie XAML
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Zachowaj znaki nowego wiersza i odstępy między atrybutami**|Autoformatowanie nie ma wpływ na nowe wiersze i odstępy między atrybutami.<br /><br /> `<Button Height="23" Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 |**Wstaw pojedyncze odstępy między atrybutami**|Atrybuty zajmują jedną linię, z jedną spacją oddzielającą sąsiednie atrybuty. Ustawienia zawijania tagów są stosowane.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
@@ -105,7 +105,7 @@ Użyj tego ustawienia, aby kontrolować sposób ułożenia elementów w dokumenc
 ## <a name="auto-insert"></a>Autowstawianie
 To ustawienie służy do określania, kiedy Tagi i cudzysłowy są generowane automatycznie.
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Tagi zamykające**|Określa, czy tag zamykający elementu jest generowany automatycznie po zamknięciu tagu otwierającego o znaku większości (>).|
 |**Cudzysłowy atrybutów**|Określa, czy otaczające cudzysłowy są generowane, gdy wartość atrybutu jest wybierana z listy rozwijanej uzupełniania instrukcji.|
@@ -115,18 +115,18 @@ To ustawienie służy do określania, kiedy Tagi i cudzysłowy są generowane au
 ## <a name="default-view"></a>Widok domyślny
 Użyj tego ustawienia, aby określić, czy widok Projekt pojawia się po załadowaniu dokumentów XAML.
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Zawsze otwieraj dokumenty w pełnym widoku XAML**|Określa, czy dokumenty XAML są wyświetlane tylko w widoku XAML, bez widok Projekt. Przydatne do ładowania dużych dokumentów.|
 
 ## <a name="toolbox"></a>Przybornik
 Użyj tego ustawienia, aby określić, czy kontrolki użytkownika i kontrolki niestandardowe są wyświetlane w przyborniku.
 
-|||
+|Nazwa|Opis|
 |-|-|
 |**Automatycznie Wypełnij elementy przybornika**|Określa, czy kontrolki użytkownika i kontrolki niestandardowe w bieżącym rozwiązaniu są automatycznie wyświetlane w przyborniku.|
 
 ## <a name="see-also"></a>Zobacz też
 [XAML w WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
-[instrukcje: Zmienianie ustawień widoku XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
-[języka XAML i instruktażów kodu](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+ [Instrukcje: Zmienianie ustawień](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+ widoku XAML [Przewodniki XAML i kodu](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

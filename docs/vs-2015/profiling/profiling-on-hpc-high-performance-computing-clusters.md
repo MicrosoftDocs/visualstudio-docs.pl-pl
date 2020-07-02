@@ -21,42 +21,42 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eeb5375d636ef16fde658b88dbf662cdd9f1e27d
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983808"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535541"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można profilować węzły obliczeniowe klastrów HPC systemu Microsoft Windows przy użyciu metody próbkowania narzędzia profilowania [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] lub [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Aby uzyskać więcej informacji na temat HPC zobacz [duże ilości obliczeń: hpc & Batch](https://azure.microsoft.com/solutions/big-compute/) w witrynie sieci Web firmy Microsoft.  
+Można profilować węzły obliczeniowe klastrów HPC systemu Microsoft Windows przy użyciu metody próbkowania [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] lub [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] narzędzia profilowania. Aby uzyskać więcej informacji na temat HPC zobacz [duże ilości obliczeń: hpc & Batch](https://azure.microsoft.com/solutions/big-compute/) w witrynie sieci Web firmy Microsoft.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby profilować w węźle obliczeniowym HPC, należy wykonać następujące czynności:  
   
-- Zainstaluj pakiet Microsoft HPC Pack 2008 na tym samym komputerze co [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Komputer nie musi być częścią klastra HPC. Pakiet HPC Pack można zainstalować w [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=2800).  
+- Zainstaluj pakiet Microsoft HPC Pack 2008 na tym samym komputerze, co [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Komputer nie musi być częścią klastra HPC. Pakiet HPC Pack można zainstalować w [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=2800).  
   
-- Zainstaluj [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] i autonomiczną wersję narzędzia profilowania w węźle obliczeniowym HPC. Zainstaluj programy zarówno dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], jak i dla autonomicznego profilera są dostępne na nośniku instalacyjnym [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Uwaga** Należy ponownie uruchomić obliczenia po zainstalowaniu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] i przed zainstalowaniem narzędzia profilowania.  
+- Zainstaluj i autonomiczną [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] wersję narzędzia profilowania w węźle obliczeniowym HPC. Zainstaluj programy zarówno dla programu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , jak i dla autonomicznego profilera są dostępne na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośniku instalacyjnym programu. **Uwaga** Po zainstalowaniu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programu i przed zainstalowaniem narzędzia profilowania należy ponownie uruchomić obliczenia.  
   
-  Aby zainstalować [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] i autonomiczną narzędzia profilowania w aktywnym węźle obliczeniowym HPC i włączyć profilowanie na maszynie klastra, wykonaj następujące kroki:  
+  Aby zainstalować [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] i autonomiczną narzędzia profilowania na aktywnym węźle obliczeniowym HPC i włączyć profilowanie na maszynie klastra, wykonaj następujące kroki:  
   
 1. Otwórz okno wiersza polecenia, które jest instalowane z pakietem HPC Pack.  
   
 2. Wpisz następujące polecenia w oddzielnych wierszach polecenia:  
   
-    1. `clusrun /all /scheduler:` *% węzła głównego%% FxPath%* `/q /norestart`  
+    1. `clusrun /all /scheduler:`*% Węzła głównego%% FxPath%*`/q /norestart`  
   
-    2. `clusrun /all /scheduler:` *% węzła głównego%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2. `clusrun /all /scheduler:`*% Węzła głównego%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
-    3. `clusrun /all /scheduler:` *% węzła głównego%% ProfilerPath%* `/q /norestart`  
+    3. `clusrun /all /scheduler:`*% Węzła głównego%% ProfilerPath%*`/q /norestart`  
   
-|||  
+|Element składni|Opis|  
 |-|-|  
 |*Węzła głównego*|Nazwa węzła głównego klastra.|  
-|*%FxPath%*|Ścieżka do Instalatora [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Na nośniku instalacyjnym [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] ścieżka to: WCU\dotNetFramework\ dotNetFx40_Full_x86_x64. exe|  
-|*%ProfilerPath%*|Ścieżka do autonomicznej wersji Instalatora narzędzia profilowania. Na nośniku instalacyjnym [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] ścieżka to: autonomiczna Profiler\x64\ vs_profiler. exe|  
+|*%FxPath%*|Ścieżka do [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] Instalatora. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośniku instalacyjnym ścieżka jest: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Ścieżka do autonomicznej wersji Instalatora narzędzia profilowania. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośniku instalacyjnym ścieżka jest: autonomiczna Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilowanie w węźle obliczeniowym HPC  
  Aby określić klaster HPC i informacje docelowe, należy skonfigurować sesję profilowania przy użyciu Kreatora wydajności HPC. Dodatkowe opcje można ustawić na stronie właściwości sesji wydajności. Narzędzia profilowania automatycznie wdrażać niezbędne docelowe pliki binarne i uruchamiać Profiler i aplikację HPC.  
@@ -69,7 +69,7 @@ Można profilować węzły obliczeniowe klastrów HPC systemu Microsoft Windows 
   
 3. Na drugiej stronie kreatora wybierz aplikację, którą chcesz profilować.  
   
-    - Aby profilować projekt, który jest aktualnie otwarty w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], zaznacz opcję **co najmniej jeden dostępny projekt** , a następnie wybierz nazwę projektu z listy.  
+    - Aby profilować projekt, który jest aktualnie otwarty w programie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , wybierz opcję **co najmniej jeden dostępny projekt** , a następnie wybierz nazwę projektu z listy.  
   
     - Aby profilować plik binarny, który nie znajduje się w otwartym projekcie, wybierz **plik wykonywalny (. Plik EXE)** .  
   
@@ -139,13 +139,13 @@ Można profilować węzły obliczeniowe klastrów HPC systemu Microsoft Windows 
   
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|**Nazwa projektu**|Nazwa bieżącego projektu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] lub rozwiązania.|  
+|**Nazwa projektu**|Nazwa bieżącego [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] projektu lub rozwiązania.|  
 |**Wyczyść po zatrzymaniu profilera**|W przypadku wartości true program usuwa pliki binarne, które zostały wdrożone w katalogu wykonywania. Pliki i katalogi utworzone przez program użytkownika nie są usuwane w tym kroku. Jeśli katalog wykonywania i katalog wdrożenia zostały utworzone przez IDE, środowisko IDE próbuje je usunąć, ale nie tak, jeśli mają pliki, które nie są wdrażane przez IDE.|  
-|**Dodatkowe pliki do wdrożenia**|Określa rozdzielaną średnikami listę dodatkowych plików do wdrożenia w węźle obliczeniowym. Możesz kliknąć przycisk wielokropka ( **...** ), aby wybrać wiele plików przy użyciu okna dialogowego.|  
-|**Mpiexec — polecenie**|Określa aplikację, która uruchamia aplikację MPI. Wartość domyślna to **mpiexec. exe**|  
-|**Argumenty mpiexec**|Określa argumenty, które zostaną przekazane do polecenia mpiexec. exe.|  
+|**Dodatkowe pliki do wdrożenia**|Określa rozdzielaną średnikami listę dodatkowych plików do wdrożenia w węźle obliczeniowym. Możesz kliknąć przycisk wielokropka (**...**), aby wybrać wiele plików przy użyciu okna dialogowego.|  
+|**Mpiexec — polecenie**|Określa aplikację, która uruchamia aplikację MPI. Wartość domyślna to **mpiexec.exe**|  
+|**Argumenty mpiexec**|Określa argumenty, które zostaną przekazane do polecenia mpiexec.exe.|  
 |**Żądane węzły w klastrze**|Określa liczbę węzłów w klastrze, na którym ma zostać uruchomiona aplikacja.|  
-|**Wdróż pliki CRT**|W przypadku wartości true program wdraża w klastrzeC++ czas wykonywania C/Run.|  
+|**Wdróż pliki CRT**|W przypadku wartości true program wdraża w klastrze czas wykonywania C/C++.|  
 |**Skrypt przed profilem**|Określa ścieżkę i nazwę pliku skryptu do uruchomienia na lokalnym komputerze deweloperskim przed rozpoczęciem sesji profilowania.|  
 |**Argumenty skryptu przed profilem**|Określa argumenty, które mają zostać przekazane do skryptu przed profilem.|  
 |**Skrypt po profilu**|Określa ścieżkę i nazwę pliku skryptu do uruchomienia na lokalnym komputerze deweloperskim po zakończeniu sesji profilowania.|  
