@@ -1,49 +1,49 @@
 ---
-title: Przegląd rozszerzalności usługi Visual Studio, otwórz Folder | Dokumentacja firmy Microsoft
+title: Omówienie rozszerzalności otwartych folderów programu Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806486"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905971"
 ---
-# <a name="open-folder-extensibility"></a>Otwórz Folder rozszerzalności
+# <a name="open-folder-extensibility"></a>Rozszerzalność folderu Open
 
-[Otwórz Folder](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) funkcja umożliwia użytkownikom otworzyć dowolny bazy kodu w programie Visual Studio bez konieczności plików projektu ani rozwiązania. Otwórz Folder zapewnia, że użytkownicy funkcji oczekiwać od programu Visual Studio, takich jak:
+Funkcja [Otwórz folder](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) umożliwia użytkownikom otwieranie dowolnej bazy kodu w programie Visual Studio bez konieczności stosowania plików projektu lub rozwiązania. Folder Otwórz zawiera funkcje, których użytkownicy oczekują od programu Visual Studio, na przykład:
 
-* Integracja z Eksploratorem rozwiązań i wyszukiwanie
+* Eksplorator rozwiązań integrację i wyszukiwanie
 * Kolorowanie edytora
 * Przejdź do nawigacji
-* Znajdź w plikach wyszukiwania
+* Wyszukiwanie w poszukiwaniu plików
 
-W przypadku użycia z obciążeniami takie samo jak w przypadku programowania .NET i C++, użytkownicy również otrzymać:
+W przypadku użycia z obciążeniami, takimi jak dla programowania .NET i C++, użytkownicy otrzymują również następujące możliwości:
 
-* Rozbudowana funkcja Intellisense
-* Funkcje językowe
+* Zaawansowana technologia IntelliSense
+* Funkcje specyficzne dla języka
 
-Otwórz Folder twórcy rozszerzenia umożliwia tworzenie zaawansowanych funkcji w dowolnym języku. Brak interfejsów API do obsługi tworzenia, debugowania i wyszukiwania symboli dla każdego pliku w użytkownika ścieżce bazowej kodu zespołu. Bieżący rozszerzeń można zaktualizować ich istniejących funkcji programu Visual Studio, aby zrozumieć kod bez zapasowego projektów lub rozwiązań.
+Za pomocą folderu Open folder autorzy rozszerzeń mogą tworzyć bogate funkcje w dowolnym języku. Istnieją interfejsy API do obsługi kompilowania, debugowania i wyszukiwania symboli dla dowolnego pliku w bazie kodu użytkownika. Obecnie rozszerzalne mogą zaktualizować swoje istniejące funkcje programu Visual Studio, aby zrozumieć kod bez tworzenia kopii zapasowej projektów lub rozwiązania.
 
-## <a name="an-api-without-project-systems"></a>Interfejs API bez systemy projektu
+## <a name="an-api-without-project-systems"></a>Interfejs API bez systemów projektów
 
-W przeszłości Visual Studio rozumieć pliki w rozwiązaniu i jego projekty, korzystając z systemów projektu. System projektu jest odpowiedzialny za interakcje funkcji i użytkownika załadowanego projektu. Sam co pliki projekt zawiera wizualnej reprezentacji treści projektu zależności w innych projektach i modyfikacji elementu bazowego pliku projektu. Jest za pośrednictwem tych hierarchie i możliwości, które inne składniki działają w imieniu użytkownika. Nie wszystkie ścieżek bazowych kodów również są reprezentowane w strukturze projektu i rozwiązania. Języki skryptów i kodu typu open source napisana w języku C++ dla systemu Linux są dobre przykłady. Z otwartego folderu programu Visual Studio zapewnia użytkownikom nowy sposób interakcji z kodu źródłowego.
+W przeszłości program Visual Studio zrozumiał tylko pliki w rozwiązaniu i jego projektach korzystających z systemów projektów. System projektu jest odpowiedzialny za funkcje i interakcje użytkownika dla załadowanego projektu. Zrozumienie, jakie pliki zawiera projekt, wizualna reprezentacja zawartości projektu, zależności od innych projektów i modyfikacja bazowego pliku projektu. Są to hierarchie i możliwości, które inne składniki działają w imieniu użytkownika. Nie wszystkie bazy kodu są dobrze reprezentowane w strukturze projektu i rozwiązania. Przydatne przykłady języków skryptów i kodu open source pisanego w języku C++ dla systemu Linux. Za pomocą folderu Open folder Program Visual Studio zapewnia użytkownikom nowy sposób współpracy z kodem źródłowym.
 
-Otwarte interfejsy API w folderze znajdują się pod `Microsoft.VisualStudio.Workspace.*` przestrzeni nazw są dostępne dla urządzenia Extender do tworzenia i wykorzystywania danych lub akcje wokół pliki znajdujące się w otwartym folderze. Rozszerzenia można użyć tych interfejsów API umożliwiają korzystanie z funkcji do wielu obszarów, takich jak:
+Interfejsy API otwartego folderu znajdują się pod `Microsoft.VisualStudio.Workspace.*` przestrzenią nazw i są dostępne dla rozszerzeń, które umożliwiają tworzenie i używanie danych lub akcji związanych z plikami w otwartym folderze. Rozszerzenia mogą korzystać z tych interfejsów API w celu zapewnienia funkcjonalności wielu obszarów, w tym:
 
-- [Obszary robocze](workspaces.md) — od punktu funkcja otwierania folderu rozszerzeń jest obszar roboczy i jej interfejsów API.
-- [Plik kontekstów i akcje](workspace-file-contexts.md) — plik określonego kodu analizy dostępne za pośrednictwem konteksty plików.
-- [Indeksowanie](workspace-indexing.md) — zbierania, i utrwalić dane dotyczące obszarów roboczych Otwórz Folder.
-- [Usługi języka](workspace-language-services.md) -Integrowanie usług językowych Otwórz Folder w obszarach roboczych.
-- [Tworzenie](workspace-build.md) — Obsługa otwierania folderu obszarów roboczych kompilacji.
+- [Obszary robocze](workspaces.md) — punkt początkowy rozszerzalności rozszerzeń otwartych folderów to obszar roboczy i jego interfejsy API.
+- [Konteksty pliku i akcje](workspace-file-contexts.md) — Analiza kodu specyficzna dla pliku dostępna za poorednictwem kontekstów plików.
+- [Indeksowanie](workspace-indexing.md) — zbieranie i utrwalanie danych dotyczących otwartych obszarów roboczych folderu.
+- [Usługi językowe](workspace-language-services.md) — Integruj usługi językowe z obszarami roboczymi otwartych folderów.
+- [Kompilacja](workspace-build.md) — obsługa kompilacji dla obszarów roboczych otwartych folderów.
 
-Funkcje, które korzystają z następujących typów należy przyjąć nowe interfejsy API do obsługi Otwórz Folder:
+Do obsługi otwartych folderów należy zastosować nowe interfejsy API, które używają następujących typów:
 
 - `IVsHierarchy`
 - `IVsProject`
@@ -51,8 +51,8 @@ Funkcje, które korzystają z następujących typów należy przyjąć nowe inte
 
 ## <a name="feedback-comments-issues"></a>Opinie, komentarze, problemy
 
-Otwórz Folder i `Microsoft.VisualStudio.Workspace.*` interfejsy API są opracowywane active. Jeśli widzisz nieoczekiwane zachowanie, zobacz znane problemy dotyczące wersji zainteresowania. [Społeczność deweloperów](https://developercommunity.visualstudio.com) jest to zalecane miejsce do głosowania i utworzyć wszelkie problemy. Dla każdej informacji zwrotnych zdecydowanie zalecamy szczegółowy opis problemu. Obejmują wersji programu Visual Studio, którą tworzysz oprogramowanie, interfejsów API, używasz (zastało zaimplementowane i jakie są interakcje z), oczekiwany wynik i rzeczywistym wynikiem. Jeśli to możliwe obejmują zrzut procesu devenv.exe. Użyj śledzenie wyrażanie opinii na ten problem z serwisu GitHub i związane z dokumentacją.
+Otwarte foldery i `Microsoft.VisualStudio.Workspace.*` interfejsy API są w trakcie aktywnego programowania. Jeśli widzisz nieoczekiwane zachowanie, zobacz znane problemy związane z jego wersją. [Społeczność deweloperów](https://developercommunity.visualstudio.com) jest zalecanym miejscem do głosowania i tworzenia wszelkich problemów. Dla każdej opinii zdecydowanie zalecamy szczegółowy opis problemu. Uwzględnij wersję programu Visual Studio, z której korzystasz, używane interfejsy API (zarówno zaimplementowane elementy, jak i informacje, z którymi prowadzisz działania), oczekiwany wynik i rzeczywisty wynik. Jeśli to możliwe, Uwzględnij zrzut procesu devenv.exe. Skorzystaj ze śledzenia problemów usługi GitHub, aby przekazać opinię na temat tej i powiązanej dokumentacji.
 
 ## <a name="next-steps"></a>Następne kroki
 
-* [Obszary robocze](workspaces.md) — informacje o obszarze roboczym otwórz Folder interfejsu API.
+* [Obszary robocze](workspaces.md) — informacje o interfejsie API obszaru roboczego otwartego folderu.

@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f195c0f2a165dae1d17697fb351ee6f576864a37
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289433"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906085"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.

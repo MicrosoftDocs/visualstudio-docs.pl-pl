@@ -1,7 +1,7 @@
 ---
-title: Implementowanie kolorowanki składni | Dokumenty firmy Microsoft
+title: Implementowanie kolorowania składni | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -12,55 +12,55 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83ce66dd6a31e3ef852feb91e2ba304e6688a723
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707646"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905203"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowania składni
-Gdy usługa językowa zapewnia kolorowanie składni, analizator konwertuje wiersz tekstu na tablicę elementów colorable i zwraca typy tokenów odpowiadające tym elementom colorable. Analizator powinien zwracać typy tokenów, które należą do listy elementów colorable. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]wyświetla każdy element colorable w oknie kodu zgodnie z atrybutami przypisanymi przez obiekt colorizer do odpowiedniego typu tokenu.
+Gdy usługa językowa zapewnia kolorowanie składni, Analizator konwertuje wiersz tekstu na tablicę elementów z możliwością przykolorowania i zwraca typy tokenów odpowiadające tym elementom, które można przykolorować. Analizator powinien zwrócić typy tokenów, które należą do listy elementów z możliwością koloru. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]wyświetla każdy element, który można kolorować w oknie kodu zgodnie z atrybutami przypisanymi przez obiekt Koloruj do odpowiedniego typu tokenu.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]nie określa interfejsu analizatora, a implementacja analizatora jest całkowicie do Ciebie. Jednak domyślna implementacja analizatora jest dostępna w projekcie pakietu językowego programu Visual Studio. Dla kodu zarządzanego, struktura pakietów zarządzanych (MPF) zapewnia pełną obsługę kolorowania tekstu.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]nie określa interfejsu analizatora i implementacja analizatora jest całkowicie do Ciebie. Jednak domyślna implementacja analizatora jest dostępna w projekcie pakietu języka programu Visual Studio. Dla kodu zarządzanego, Struktura pakietu zarządzanego (MPF) zapewnia pełną obsługę kolorowania tekstu.
 
- Starsze usługi języka są implementowane jako część VSPackage, ale nowszym sposobem implementowania funkcji usługi języka jest użycie rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementowania kolorowania składni, zobacz [Przewodnik: Wyróżnianie tekstu](../../extensibility/walkthrough-highlighting-text.md).
+ Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji kolorowania składni, zobacz [Przewodnik: podświetlanie tekstu](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
-> Zaleca się, aby rozpocząć korzystanie z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i umożliwi korzystanie z nowych funkcji edytora.
+> Zalecamy rozpoczęcie korzystania z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i pozwala korzystać z nowych funkcji edytora.
 
-## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Kroki, po których następuje edytor w celu pokolorowania tekstu
+## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Kroki, po których następuje edytor do kolorowania tekstu
 
-1. Edytor pobiera colorizer wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metodę na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> obiekcie.
+1. Edytor pobiera kolor, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metodę dla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> obiektu.
 
-2. Edytor wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> metodę, aby ustalić, czy colorizer wymaga stanu każdej linii, które mają być utrzymywane poza colorizer.
+2. Edytor wywołuje metodę, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> Aby określić, czy kolorowanie wymaga stanu każdego wiersza, który ma być obsługiwany poza kolorem.
 
-3. Jeśli colorizer wymaga stanu, który ma być utrzymywany <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> poza colorizer, edytor wywołuje metodę, aby uzyskać stan pierwszego wiersza.
+3. Jeśli kolor, który ma być obsługiwany poza kolorem, Edytor wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> metodę w celu uzyskania stanu pierwszego wiersza.
 
-4. Dla każdego wiersza w buforze <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> edytor wywołuje metodę, która wykonuje następujące kroki:
+4. Dla każdego wiersza w buforze, Edytor wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodę, wykonując następujące czynności:
 
-    1. Wiersz tekstu jest przekazywany do skanera w celu przekonwertowania tekstu na tokeny. Każdy token określa tekst tokenu i typ tokenu.
+    1. Wiersz tekstu jest przesyłany do skanera w celu przekonwertowania tekstu na tokeny. Każdy token Określa tekst tokenu i typ tokenu.
 
-    2. Typ tokenu jest konwertowany na indeks na listę elementów colorable.
+    2. Typ tokenu jest konwertowany na indeks na listę elementów z możliwością przydzielenia.
 
-    3. Informacje tokenu jest używany do wypełnienia tablicy w taki sposób, że każdy element tablicy odpowiada znak w wierszu. Wartości przechowywane w tablicy są indeksy do listy elementów colorable.
+    3. Informacje o tokenach są używane do wypełniania tablicy w taki sposób, że każdy element tablicy odpowiada znakowi w wierszu. Wartości przechowywane w tablicy są indeksami na liście elementy, które mogą być kolorowe.
 
     4. Stan na końcu wiersza jest zwracany dla każdego wiersza.
 
-5. Jeśli colorizer wymaga stanu do utrzymania, edytor buforuje stan dla tego wiersza.
+5. Jeśli kolor jest wymagany do utrzymania stanu, Edytor buforuje stan dla tego wiersza.
 
-6. Edytor renderuje wiersz tekstu przy użyciu informacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> zwróconych z metody. Wymaga to następujących kroków:
+6. Edytor renderuje wiersz tekstu przy użyciu informacji zwracanych z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metody. Wymaga to wykonania następujących czynności:
 
-    1. Dla każdego znaku w wierszu pobierz indeks elementu colorable.
+    1. Dla każdego znaku w wierszu Pobierz indeks elementu, który można kolorować.
 
-    2. Jeśli używasz domyślnych elementów colorable, dostęp do listy elementów colorable edytora.
+    2. W przypadku używania domyślnych elementów z możliwością kolorowania można uzyskać dostęp do listy elementów z możliwością kolorowania edytora.
 
-    3. W przeciwnym razie wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metodę usługi języka, aby uzyskać element colorable.
+    3. W przeciwnym razie Wywołaj metodę języka w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> celu uzyskania elementu z możliwością kolorowania.
 
-    4. Użyj informacji w elementu colorable do renderowania tekstu na ekranie.
+    4. Użyj informacji z elementu kolorowego, aby renderować tekst na ekranie.
 
-## <a name="managed-package-framework-colorizer"></a>Colorizer struktury zarządzanej pakietów
- Struktura pakietu zarządzanego (MPF) zawiera wszystkie klasy, które są wymagane do zaimplementowania colorizer. Klasa usługi języka należy <xref:Microsoft.VisualStudio.Package.LanguageService> dziedziczyć klasy i zaimplementować wymagane metody. Należy podać skaner i analizator przez <xref:Microsoft.VisualStudio.Package.IScanner> implementowanie interfejsu i zwracać wystąpienie tego interfejsu z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metody (jedna <xref:Microsoft.VisualStudio.Package.LanguageService> z metod, które muszą być zaimplementowane w klasie). Aby uzyskać więcej informacji, zobacz [Kolorowanie składni w starszej usłudze językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
+## <a name="managed-package-framework-colorizer"></a>Kolorowanie struktury pakietu zarządzanego
+ Struktura pakietu zarządzanego (MPF) udostępnia wszystkie klasy, które są wymagane do zaimplementowania Kolorka. Klasa usługi językowej powinna dziedziczyć <xref:Microsoft.VisualStudio.Package.LanguageService> klasę i zaimplementować wymagane metody. Należy dostarczyć skaner i analizator składni przez implementację <xref:Microsoft.VisualStudio.Package.IScanner> interfejsu i zwrócić wystąpienie tego interfejsu z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metody (jedną z metod, które muszą być zaimplementowane w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie). Aby uzyskać więcej informacji, zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="see-also"></a>Zobacz też
 - [Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

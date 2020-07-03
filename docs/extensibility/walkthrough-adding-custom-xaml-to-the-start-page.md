@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik: Dodawanie niestandardowego kodu XAML do strony początkowej | Dokumenty firmy Microsoft'
+title: 'Przewodnik: Dodawanie niestandardowego kodu XAML do strony startowej | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - custom start page
 - xaml start page
@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4e2afc90dc96978e8a8290afaa2d3278e8b621b3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: a13aada6cca9b54d8469885ab4c314a89cd06d6c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697670"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905966"
 ---
-# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Instruktaż: Dodawanie niestandardowego kodu XAML do strony początkowej
+# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Przewodnik: Dodawanie niestandardowego kodu XAML do strony początkowej
 
-W tym przewodniku pokazano, jak utworzyć niestandardową stronę początkową programu Visual Studio zawierającą przeglądarkę sieci Web.
+W tym instruktażu pokazano, jak utworzyć niestandardową stronę początkową programu Visual Studio, która zawiera przeglądarkę internetową.
 
-## <a name="add-custom-xaml"></a>Dodawanie niestandardowego kodu XAML
+## <a name="add-custom-xaml"></a>Dodaj niestandardowy kod XAML
 
-1. Utwórz stronę początkową, postępując zgodnie z instrukcjami w [polu Utwórz niestandardową stronę początkową](../extensibility/creating-a-custom-start-page.md).
+1. Utwórz stronę początkową, postępując zgodnie z instrukcjami podanymi w temacie [Tworzenie niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md).
 
-2. W pliku *MainWindow.xaml* znajdź \<sekcję> siatki.
+2. W pliku *MainWindow. XAML* Znajdź \<Grid> sekcję.
 
-3. Dodaj \<Element> TabControl i \<TabItem> wewnątrz \< Grid> element, jak pokazano w poniższym przykładzie.
+3. Dodaj \<TabControl> element i \<TabItem> wewnątrz \< Grid> elementu, jak pokazano w poniższym przykładzie.
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ W tym przewodniku pokazano, jak utworzyć niestandardową stronę początkową p
     </Grid>
     ```
 
-4. Dodaj drugi \<> TabItem z \<button> element, który otwiera nowy projekt:
+4. Dodaj drugi \<TabItem> , z \<Button> elementem otwierającym nowy projekt:
 
     ```xml
     <Grid>
@@ -63,31 +63,31 @@ W tym przewodniku pokazano, jak utworzyć niestandardową stronę początkową p
 
 1. Naciśnij klawisz **F5**.
 
-     Zostanie otwarte eksperymentalne wystąpienie programu Visual Studio z zainstalowaną niestandardową stroną startową, ale nie wybraną.
+     Zostanie otwarte doświadczalne wystąpienie programu Visual Studio z zainstalowaną niestandardową stroną startową, ale nie została wybrana.
 
-2. W eksperymentalnym wystąpieniu programu Visual Studio otwórz stronę **Narzędzia /Opcje / Środowisko.**
+2. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz stronę **Narzędzia/Options/środowisko** .
 
-3. Wybierz **pozycję Uruchamianie**. Na liście **Dostosowywanie strony początkowej** wybierz plik *xaml* i kliknij przycisk **OK**.
+3. Wybierz pozycję **Uruchamianie**. Na liście **Dostosuj stronę początkową** wybierz plik *XAML* , a następnie kliknij przycisk **OK**.
 
-4. W menu **Widok** kliknij polecenie **Strona początkowa**.
+4. W menu **Widok** kliknij pozycję **Strona początkowa**.
 
-5. Kliknij kartę **Bing.**
+5. Kliknij kartę **Bing** .
 
-     Powinna zostać wyświetlona strona internetowa usługi Bing.
+     Powinna zostać wyświetlona strona sieci Web Bing.
 
-6. Kliknij kartę **Mój przycisk.**
+6. Kliknij kartę Moje **przyciski** .
 
-     Powinien zostać wyświetlony przycisk **MyProject,** który otwiera okno dialogowe **Nowy projekt.**
+     Powinien zostać wyświetlony przycisk "mój **projekt** ", który otwiera okno dialogowe **Nowy projekt** .
 
 7. Zamknij wystąpienie eksperymentalne.
 
-Aby zastosować niestandardową stronę początkową, w **obszarze** > **Środowisko****opcji** > narzędzi wybierz pozycję **Startup**. Na liście **Dostosowywanie strony początkowej** wybierz plik *xaml* i kliknij przycisk **OK**.
+Aby zastosować niestandardową stronę początkową, w obszarze **Narzędzia**  >  **Opcje**  >  **środowisko**wybierz pozycję **Uruchamianie**. Na liście **Dostosuj stronę początkową** wybierz plik *XAML* , a następnie kliknij przycisk **OK**.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Strona początkowa programu Visual Studio zawiera teraz kartę, na którym jest wyświetlana karta przeglądarka sieci Web i karta MyButton. Niestandardowe strony startowe, które mają inne funkcje, można utworzyć za pomocą modelu *zawierającego kod* w celu dodania niestandardowej biblioteki dll, jak pokazano w obszarze [Dodawanie sterowania użytkownikiem do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md). Niestandardowe strony początkowe można udostępniać innym użytkownikom, publikując wynikowy plik vsix w witrynie sieci Web [programu Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub w innej witrynie sieci Web lub udziale sieci Web. Aby uzyskać więcej informacji, zobacz [Wdrażanie niestandardowych stron startowych](../extensibility/deploying-custom-start-pages.md).
+Strona startowa programu Visual Studio zawiera teraz kartę wyświetlającą kartę przeglądarki sieci Web i kartę z przyciskiem. Można utworzyć niestandardowe strony startowe, które mają inne funkcje przy użyciu modelu *związanego z kodem* do dodania pliku Custom. dll, jak pokazano w temacie [Dodawanie kontrolki użytkownika do strony Start](../extensibility/adding-user-control-to-the-start-page.md). Niestandardowe strony startowe można udostępniać innym użytkownikom, publikując plik. vsix w witrynie sieci Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub do innej witryny sieci Web lub udziału sieciowego. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron początkowych](../extensibility/deploying-custom-start-pages.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Dostosowywanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)
-- [Kontrolki kontenera WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Dostosuj stronę początkową](../ide/customizing-the-start-page-for-visual-studio.md)
+- [Formanty kontenera WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)

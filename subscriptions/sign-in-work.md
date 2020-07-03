@@ -1,81 +1,81 @@
 ---
-title: Logowanie się do subskrypcji programu Visual Studio za pomocą konta służbowego | Dokumenty firmy Microsoft
+title: Logowanie do subskrypcji programu Visual Studio przy użyciu konta służbowego | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
-ms.topic: conceptual
-description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio za pomocą konta służbowego.
-ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.topic: how-to
+description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio przy użyciu konta służbowego.
+ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233209"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906126"
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Logowanie się do subskrypcji programu Visual Studio za pomocą konta służbowego 
+# <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Logowanie do subskrypcji programu Visual Studio przy użyciu konta służbowego 
 
-Kroki, aby zalogować się do subskrypcji programu Visual Studio zależą od rodzaju konta, którego używasz.  Na przykład użytkownik może używać konta Microsoft (MSA) lub adresu e-mail podanego przez pracodawcę lub szkołę.  Od stycznia 2019 r. możesz teraz również korzystać z konta Usługi GitHub, aby zalogować się do niektórych subskrypcji. 
+Kroki umożliwiające zalogowanie się do subskrypcji programu Visual Studio zależą od rodzaju konta, którego używasz.  Na przykład może być używane konto Microsoft (MSA) lub adres e-mail dostarczony przez pracodawcę lub szkołę.  Od stycznia 2019 możesz teraz zalogować się do niektórych subskrypcji przy użyciu konta usługi GitHub. 
 
-W tym artykule przedstawiono kroki logowania się przy za pomocą adresu e-mail podanego przez twoją pracę lub szkołę.
+W tym artykule przedstawiono procedurę logowania przy użyciu adresu e-mail podanego przez służbowe lub szkolne.
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>Logowanie się przy użyciu konta służbowego
 
-1. Odwiedź [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Odwiedź stronę [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) .
 2. Wprowadź adres e-mail, na który została przypisana nowa subskrypcja programu Visual Studio.
 
    > [!NOTE]
-   > Ten adres jest również identyfikowany w otrzymanej wiadomości e-mail powitalnej dla subskrybenta. Sprawdź foldery wiadomości-śmieci, jeśli masz problemy ze znalezieniem powitalnej wiadomości e-mail.
+   > Ten adres jest również identyfikowany w powitalnej wiadomości e-mail otrzymanej na subskrybencie. Sprawdź foldery wiadomości-śmieci, jeśli masz problemy z lokalizowaniem powitalnej wiadomości e-mail.
 
-3. Kliknij przycisk **Kontynuuj**.
-4. Zostaniesz przekierowany na firmową stronę logowania.
+3. Kliknij pozycję **Kontynuuj**.
+4. Nastąpi przekierowanie do firmowej strony logowania.
 5. Wprowadź hasło.
-6. Kliknij **pozycję Zaloguj się**
-7. W tym momencie strona "Korzyści" powinna być wyświetlana
+6. Kliknij przycisk **Zaloguj**
+7. Na tym etapie powinna zostać wyświetlona strona "korzyści"
 
-Teraz możesz zobaczyć typ subskrypcji, którego używasz, wyświetlany na niebieskim pasku w górnej części portalu.
+Na niebieskim pasku w górnej części portalu możesz teraz zobaczyć typ używanej subskrypcji.
 
-Aktualnie wybrana subskrypcja jest również widoczna w prawym górnym rogu pod nazwą użytkownika.  Powie "Pokazano: ", a następnie subskrypcji.  Jeśli masz więcej niż jedną subskrypcję, możesz kliknąć strzałkę rozwijanej i wybrać subskrypcję, której chcesz użyć.
+W prawym górnym rogu możesz także zobaczyć swoją obecnie wybraną subskrypcję w obszarze Nazwa użytkownika.  Zostanie wyświetlony komunikat "pokazywanie:", po którym następuje subskrypcja.  Jeśli masz więcej niż jedną subskrypcję, możesz kliknąć strzałkę listy rozwijanej i wybrać subskrypcję, której chcesz użyć.
 
 ## <a name="using-your-microsoft-account-msa-to-sign-in-to-a-work-or-school-account"></a>Logowanie się do konta służbowego za pomocą konta Microsoft (MSA)
 
-1. Przejdź [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)do .
-2. Wprowadź adres e-mail, do który przypisano nową subskrypcję programu Visual Studio
+1. Przejdź do witryny [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+2. Wprowadź adres e-mail, do którego została przypisana nowa subskrypcja programu Visual Studio
 
    > [!NOTE]
-   > Ten adres jest również identyfikowany w liście powitalnym subskrybenta. Sprawdź foldery wiadomości-śmieci, jeśli list powitalny nie został odebrany
+   > Ten adres jest również identyfikowany na liście powitalnej subskrybenta. Sprawdź foldery wiadomości-śmieci, jeśli nie otrzymano list powitalnych
 
-3. Kliknij przycisk **Kontynuuj**.
-4. Zostaniesz przekierowany na stronę decyzji.
-    - Wybierz **konto służbowe,** jeśli subskrypcja jest skojarzona z kontem "Praca lub szkoła" skojarzonym z dzierżawą usługi Azure Active Directory (AAD).
-    - Wybierz **opcję Osobiste,** jeśli subskrypcja jest skojarzona z "firmowym" adresem e-mail, ale została również przekonwertowana na "osobiste" konto Microsoft (MSA).
+3. Kliknij pozycję **Kontynuuj**.
+4. Nastąpi przekierowanie do strony decyzji.
+    - Wybierz pozycję **konto służbowe** , jeśli subskrypcja jest skojarzona z kontem "służbowym" skojarzonym z dzierżawą usługi Azure Active Directory (AAD).
+    - Wybierz pozycję **osobiste** , jeśli subskrypcja jest skojarzona z adresem E-mail "firmowa", ale została również przekonwertowane na "osobiste" konto Microsoft (MSA).
 
         > [!NOTE]
-        > Będzie to miało miejsce w przypadku wielu subskrybentów, którzy korzystali z subskrypcji programu Visual Studio (dawniej MSDN) w przeszłości.
+        > Jest to przypadek dla wielu subskrybentów, którzy korzystali z subskrypcji programu Visual Studio (dawniej MSDN) w przeszłości.
 
-    - Jeśli jedna ścieżka nie powiedzie się, spróbuj drugiej.  Administratorzy subskrypcji mogli zmodyfikować twoją subskrypcję.
+    - W przypadku niepowodzenia jednej ścieżki Wypróbuj drugą.  Administratorzy subskrypcji mogli zmodyfikować twoją subskrypcję.
 
 5. Wprowadź hasło.
-6. Kliknij pozycję **Zaloguj się**.
-7. W tym momencie powinna zostać wyświetlona strona "Korzyści".
+6. Kliknij przycisk **Zaloguj**.
+7. Na tym etapie powinna zostać wyświetlona strona "korzyści".
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
-### <a name="q--im-unable-to-sign-in-using-my-work-or-school-email-address"></a>P: Nie mogę zalogować się przy użyciu służbowego adresu e-mail.  
-Odp.: Najczęstszą przyczyną problemów z logowaniem jest próba zalogowania się przy za pomocą konta, które różni się od konta skojarzonego z subskrypcją.  Jeśli używasz kilku różnych adresów e-mail, możesz zalogować się przy użyciu niewłaściwego adresu.  Spróbuj zalogować się przy innym adresie.  Jeśli to się nie powiedzie, możesz skontaktować się z naszym zespołem [pomocy technicznej subskrypcji,](https://visualstudio.microsoft.com/subscriptions/support/) aby uzyskać pomoc.  
+### <a name="q--im-unable-to-sign-in-using-my-work-or-school-email-address"></a>Pytanie: nie mogę zalogować się przy użyciu służbowego adresu e-mail.  
+Odp.: Najczęstszą przyczyną problemów z logowaniem jest próba zalogowania się przy użyciu konta innego niż konto skojarzone z subskrypcją.  Jeśli używasz kilku różnych adresów e-mail, możliwe jest, że próbujesz zalogować się przy użyciu nieprawidłowego adresu.  Spróbuj zalogować się przy użyciu innego adresu.  Jeśli to się nie powiedzie, możesz skontaktować się z naszym zespołem [pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/) , aby uzyskać pomoc.  
 
-### <a name="q--i-cant-see-my-subscription-where-is-it"></a>P: Nie widzę mojej subskrypcji. Gdzie to jest?
-Odp.: Wielu użytkowników ma więcej niż jedną subskrypcję.  Jeśli możesz zalogować się do portalu https://my.visualstudio.com subskrypcji, ale nie widzisz subskrypcji, istnieją dwie typowe przyczyny:
-1. Jesteś zalogowany przy innym koncie Microsoft.  Istnieje możliwość, że masz wiele subskrypcji, takich jak subskrypcja Professional lub Enterprise i członkostwo Visual Studio Dev Essentials i są one skojarzone z różnymi adresami e-mail. Aby wyświetlić inne subskrypcje, wyloguj się i zaloguj się z powrotem przy użyciu innego msa.
-2. Masz wiele subskrypcji skojarzonych z tym samym adresem e-mail.  Aby wyświetlić wszystkie subskrypcje powiązane z Twoim https://my.visualstudio.com/subscriptions adresem e-mail, odwiedź i wybierz subskrypcję, której chcesz użyć. 
+### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Pytanie: nie mogę zobaczyć subskrypcji. Gdzie jest?
+Odp.: wielu użytkowników ma więcej niż jedną subskrypcję.  Jeśli możesz zalogować się do portalu subskrypcji https://my.visualstudio.com , ale nie widzisz subskrypcji, istnieją dwa typowe przyczyny:
+1. Użytkownik jest zalogowany przy użyciu innego konta Microsoft.  Istnieje możliwość, że masz wiele subskrypcji, takich jak subskrypcja wersji Professional lub Enterprise i członkostwo w Visual Studio Dev Essentials, i są one skojarzone z różnymi adresami e-mail. Aby wyświetlić inne subskrypcje, Wyloguj się i zaloguj ponownie przy użyciu innego MSA.
+2. Masz wiele subskrypcji skojarzonych z tym samym adresem e-mail.  Aby wyświetlić wszystkie subskrypcje skojarzone z Twoim adresem e-mail, odwiedź stronę https://my.visualstudio.com/subscriptions i wybierz subskrypcję, której chcesz użyć. 
 
-Jeśli nadal masz problemy, możesz skontaktować się z naszym zespołem [pomocy technicznej subskrypcji,](https://visualstudio.microsoft.com/subscriptions/support/) aby uzyskać pomoc.  
+Jeśli nadal masz problemy, możesz skontaktować się z naszym zespołem [pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/) , aby uzyskać pomoc.  
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Po pomyślnym zalogowaniu się do portalu subskrypcji zalecamy odwiedzenie strony Korzyści https://my.visualstudio.com/benefits i zapoznanie się z doskonałymi narzędziami, usługami i ofertami dostępnymi dla Ciebie.  
+Po pomyślnym zalogowaniu się do portalu subskrypcji zalecamy odwiedzenie strony korzyści w witrynie https://my.visualstudio.com/benefits i eksplorowanie doskonałych narzędzi, usług i ofert dostępnych dla Ciebie.  

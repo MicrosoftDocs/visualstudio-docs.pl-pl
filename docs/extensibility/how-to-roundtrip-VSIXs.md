@@ -1,19 +1,19 @@
 ---
 title: Jak przełączać się do obu rozszerzeń
 ms.date: 06/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
 ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269060"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905784"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Instrukcje: Udostępnianie rozszerzeń dla programu Visual Studio 2019/2017 i Visual Studio 2015
 
@@ -31,14 +31,14 @@ Poniżej przedstawiono zarys kroków, które należy wykonać w tym dokumencie w
     * Miejsce docelowe instalacji
     * Wymagania wstępne
 3. CSProj aktualizacji:
-    * Update `<MinimumVisualStudioVersion>`.
-    * Dodaj właściwość `<VsixType>`.
+    * Aktualizacja `<MinimumVisualStudioVersion>` .
+    * Dodaj `<VsixType>` Właściwość.
     * Dodaj właściwość debugowania `($DevEnvDir)` 3 razy.
     * Dodaj warunki do importowania narzędzi kompilacji i elementów docelowych.
 
-4. Kompilowanie i testowanie
+4. Kompiluj i Testuj
 
-## <a name="environment-setup"></a>Omgeving instellen
+## <a name="environment-setup"></a>Konfigurowanie środowiska
 
 W tym dokumencie przyjęto założenie, że na maszynie zainstalowano następujące elementy:
 
@@ -49,16 +49,16 @@ W tym dokumencie przyjęto założenie, że na maszynie zainstalowano następuj�
 
 Zdecydowanie zaleca się uruchomienie tego uaktualnienia z programem Visual Studio 2015 zamiast programu Visual Studio 2019 lub 2017. Główną zaletą programowania w programie Visual Studio 2015 jest upewnienie się, że nie odwołują się do zestawów, które nie są dostępne w programie Visual Studio 2015. W przypadku tworzenia aplikacji w programie Visual Studio 2019 lub 2017 istnieje ryzyko, że możesz wprowadzić zależność od zestawu, który istnieje tylko w programie Visual Studio 2019 lub 2017.
 
-## <a name="ensure-there-is-no-reference-to-projectjson"></a>Upewnij się, że nie ma odwołań do pliku Project. JSON
+## <a name="ensure-there-is-no-reference-to-projectjson"></a>Upewnij się, że nie ma odwołań do project.jsna
 
-W dalszej części tego dokumentu dodamy instrukcje importu warunkowego do pliku * *. csproj* . Nie będzie to miało wpływu na to, czy odwołania do programu NuGet są przechowywane w pliku *Project. JSON*. W związku z tym zaleca się przeniesienie wszystkich odwołań NuGet do pliku *Packages. config* .
-Jeśli projekt zawiera plik *Project. JSON* :
+W dalszej części tego dokumentu dodamy instrukcje importu warunkowego do pliku **. csproj* . Ta operacja nie będzie działała, jeśli odwołania NuGet są przechowywane w *project.jsna*. W związku z tym zaleca się przeniesienie wszystkich odwołań NuGet do pliku *packages.config* .
+Jeśli projekt zawiera *project.jsw* pliku:
 
-* Zanotuj odwołania w pliku *Project. JSON*.
-* Z **Eksplorator rozwiązań**Usuń plik *Project. JSON* z projektu. Spowoduje to usunięcie pliku *Project. JSON* i usunięcie go z projektu.
+* Zanotuj odwołania w *project.js*.
+* Z **Eksplorator rozwiązań**Usuń *project.jsna* pliku z projektu. Spowoduje to usunięcie *project.js* pliku i usunięcie go z projektu.
 * Dodaj odwołania NuGet z powrotem do projektu:
   * Kliknij prawym przyciskiem myszy **rozwiązanie** i wybierz polecenie **Zarządzaj pakietami NuGet dla rozwiązania**.
-  * Program Visual Studio automatycznie tworzy plik *Packages. config* .
+  * Program Visual Studio automatycznie tworzy plik *packages.config* .
 
 > [!NOTE]
 > Jeśli projekt zawiera pakiety EnvDTE, mogą one być dodawane przez kliknięcie prawym przyciskiem myszy na **odwołaniach** , wybierając pozycję **Dodaj odwołanie** i dodając odpowiednie odwołanie. Użycie pakietów NuGet może spowodować błędy podczas próby skompilowania projektu.
@@ -127,7 +127,7 @@ Zdecydowanie zaleca się, aby w ramach tego kroku było otwarte odwołanie do zm
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. Zaktualizuj MinimumVisualStudioVersion
 
-* Ustaw minimalną wersję programu Visual Studio do `$(VisualStudioVersion)` i Dodaj do niej instrukcję warunkowa. Dodaj te Tagi, jeśli nie istnieją. Upewnij się, że znaczniki są ustawione w następujący sposób:
+* Ustaw minimalną wersję programu Visual Studio `$(VisualStudioVersion)` , aby dodać do niej instrukcję warunkową. Dodaj te Tagi, jeśli nie istnieją. Upewnij się, że znaczniki są ustawione w następujący sposób:
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -139,7 +139,7 @@ Zdecydowanie zaleca się, aby w ramach tego kroku było otwarte odwołanie do zm
 * Dodaj następujący tag `<VsixType>v3</VsixType>` do grupy właściwości.
 
 > [!NOTE]
-> Zaleca się dodanie go poniżej tagu `<OutputType></OutputType>`.
+> Zaleca się dodanie tego `<OutputType></OutputType>` tagu poniżej znacznika.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Dodaj właściwości debugowania
 
@@ -163,33 +163,33 @@ Zdecydowanie zaleca się, aby w ramach tego kroku było otwarte odwołanie do zm
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. Dodaj warunki do importowanych narzędzi kompilacji
 
-* Dodaj dodatkowe instrukcje warunkowe do tagów `<import>`, które mają odwołanie Microsoft. VSSDK. BuildTools. Wstaw `'$(VisualStudioVersion)' != '14.0' And` na przedniej instrukcji Condition. Te instrukcje pojawią się w nagłówku i stopce pliku csproj.
+* Dodaj dodatkowe instrukcje warunkowe do `<import>` tagów, które mają odwołanie Microsoft. VSSDK. BuildTools. Wstaw `'$(VisualStudioVersion)' != '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w nagłówku i stopce pliku csproj.
 
-Na przykład:
+Przykład:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* Dodaj dodatkowe instrukcje warunkowe do tagów `<import>`, które mają Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Wstaw `'$(VisualStudioVersion)' == '14.0' And` na przedniej instrukcji Condition. Te instrukcje pojawią się w nagłówku i stopce pliku csproj.
+* Dodaj dodatkowe instrukcje warunkowe do `<import>` tagów, które mają element Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Wstaw `'$(VisualStudioVersion)' == '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w nagłówku i stopce pliku csproj.
 
-Na przykład:
+Przykład:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Dodaj dodatkowe instrukcje warunkowe do tagów `<Error>`, które mają odwołanie Microsoft. VSSDK. BuildTools. Aby to zrobić, Wstaw `'$(VisualStudioVersion)' != '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w stopce pliku csproj.
+* Dodaj dodatkowe instrukcje warunkowe do `<Error>` tagów, które mają odwołanie Microsoft. VSSDK. BuildTools. Zrób to, wstawiając `'$(VisualStudioVersion)' != '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w stopce pliku csproj.
 
-Na przykład:
+Przykład:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Dodaj dodatkowe instrukcje warunkowe do tagów `<Error>`, które mają Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Wstaw `'$(VisualStudioVersion)' == '14.0' And` na przedniej instrukcji Condition. Te instrukcje pojawią się w stopce pliku csproj.
+* Dodaj dodatkowe instrukcje warunkowe do `<Error>` tagów, które mają element Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Wstaw `'$(VisualStudioVersion)' == '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w stopce pliku csproj.
 
-Na przykład:
+Przykład:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
@@ -207,7 +207,7 @@ W tym momencie projekt powinien być gotowy do kompilowania nowego vsixv3, któr
 * Przejdź do katalogu projektu.
 * Otwórz folder *\bin\debug* .
 * Kliknij dwukrotnie plik VSIX i zainstaluj swoje rozszerzenie w programie Visual Studio 2015 i Visual Studio 2019/2017.
-* Upewnij się, że rozszerzenie znajduje się w **narzędziach** > **rozszerzenia i aktualizacje** w sekcji **zainstalowane** .
+* Upewnij się, że rozszerzenie znajduje się w sekcji **Narzędzia**  >  **rozszerzenia i aktualizacje** w **zainstalowanej** części.
 * Spróbuj uruchomić lub użyć rozszerzenia, aby sprawdzić, czy działa.
 
 ![Znajdź VSIX](media/finding-a-VSIX-example.png)
