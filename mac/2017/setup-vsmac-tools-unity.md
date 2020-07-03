@@ -1,84 +1,85 @@
 ---
-title: Konfigurowanie programu Visual Studio dla komputerów Mac Tools for Unity
-description: Konfigurowanie i instalowanie narzędzi Unity do użytku w programie Visual Studio dla komputerów Mac
+title: Visual Studio dla komputerów Mac narzędzia Instalatora dla aparatu Unity
+description: Konfigurowanie i Instalowanie narzędzi Unity do użycia w Visual Studio dla komputerów Mac
 author: therealjohn
 ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d490b4c1268beb4a5ad55263cb186d838005f718
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 1ea23f701f251476693108b51da570fbcbaa7756
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79303282"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950428"
 ---
-# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Konfigurowanie programu Visual Studio dla komputerów Mac Tools for Unity
+# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Konfigurowanie narzędzi Visual Studio dla komputerów Mac dla aparatu Unity
 
-W tej sekcji wyjaśniono, jak rozpocząć korzystanie z programu Visual Studio dla komputerów Mac Tools for Unity.
+W tej sekcji wyjaśniono, jak zacząć korzystać z narzędzi Visual Studio dla komputerów Mac Tools for Unity.
 
 ## <a name="install-visual-studio-for-mac"></a>Instalowanie programu Visual Studio dla komputerów Mac
 
-### <a name="unity-bundled-installation"></a>Instalacja w pakiecie Unity
+### <a name="unity-bundled-installation"></a>Instalacja z pakietem Unity
 
-Począwszy od Unity 2018.1, Visual Studio dla komputerów Mac jest domyślnym środowiskiem programistycznym (IDE) zintegrowanym w języku C# dla unity i jest zawarte w Unity Download Assistant, a także w narzędziu instalacyjnym Unity Hub. Pobierz Unity z [store.unity.com](https://store.unity.com/).
+Począwszy od aparatu Unity 2018,1, Visual Studio dla komputerów Mac jest domyślnym zintegrowanym środowiskiem projektowym C# (IDE) dla aparatu Unity i znajduje się w Asystencie pobierania aparatu Unity, a także narzędzia instalacji centrum Unity. Pobierz aparat Unity z [Store.Unity.com](https://store.unity.com/).
 
-Podczas instalacji upewnij się, że program Visual Studio dla komputerów Mac jest sprawdzany na liście składników do zainstalowania w unity:
+Podczas instalacji upewnij się, że Visual Studio dla komputerów Mac jest zaznaczone na liście składników do zainstalowania przy użyciu aparatu Unity:
 
-#### <a name="unity-hub"></a>Centrum Jedności
+#### <a name="unity-hub"></a>Centrum Unity
 
-![instalacja koncentratora unity](media/setup-vsmac-tools-unity-image7.png)
+![Instalacja centrum Unity](media/setup-vsmac-tools-unity-image7.png)
 
-#### <a name="unity-download-assistant"></a>Asystent pobierania Unity
+#### <a name="unity-download-assistant"></a>Asystent pobierania aparatu Unity
 
-![instalacja asystenta pobierania unity](media/setup-vsmac-tools-unity-image8.png)
+![instalacja Asystenta pobierania aparatu Unity](media/setup-vsmac-tools-unity-image8.png)
 
-#### <a name="check-for-updates-to-visual-studio-for-mac"></a>Sprawdzanie dostępności aktualizacji programu Visual Studio dla komputerów Mac
+#### <a name="check-for-updates-to-visual-studio-for-mac"></a>Sprawdź dostępność aktualizacji Visual Studio dla komputerów Mac
 
-Wersja programu Visual Studio dla komputerów Mac dołączonej do instalacji Unity może nie być najnowsza. Zaleca się sprawdzanie dostępności aktualizacji, aby upewnić się, że masz dostęp do najnowszych narzędzi i funkcji.
+Wersja Visual Studio dla komputerów Mac dołączonego do instalacji aparatu Unity może nie być najnowsza. Zalecane jest sprawdzenie dostępności aktualizacji, aby upewnić się, że masz dostęp do najnowszych narzędzi i funkcji.
 
-* [Aktualizowanie programu Visual Studio dla komputerów Mac](update.md)
+* [Aktualizowanie Visual Studio dla komputerów Mac](update.md)
 
 ### <a name="manual-installation"></a>Instalacja ręczna
 
-Jeśli masz już unity 5.6.1 lub nowszy, ale nie masz visual studio dla komputerów Mac, można zainstalować visual studio dla komputerów Mac ręcznie. Wszystkie wersje programu Visual Studio dla komputerów Mac są dołączone do programu Visual Studio for Mac Tools for Unity, w tym bezpłatnej wersji społecznościowej:
+Jeśli masz już 5.6.1 aparatu Unity lub nowszego, ale nie masz Visual Studio dla komputerów Mac, możesz zainstalować Visual Studio dla komputerów Mac ręcznie. Wszystkie wersje Visual Studio dla komputerów Mac są powiązane z narzędziami Visual Studio dla komputerów Mac Tools for Unity, w tym z bezpłatną wersją Community:
 
-* Pobierz program Visual Studio dla komputerów Mac z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
-* Visual Studio for Mac Tools for Unity są instalowane automatycznie podczas procesu instalacji.
-* Postępuj zgodnie z instrukcjami w [przewodniku instalacji,](/visualstudio/mac/installation/?view=vsmac-2017) aby uzyskać dodatkową pomoc dotyczącą instalacji.
+* Pobierz Visual Studio dla komputerów Mac z [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/).
+* Visual Studio dla komputerów Mac Tools for Unity są instalowane automatycznie podczas procesu instalacji.
+* Wykonaj kroki opisane w [przewodniku instalacji](/visualstudio/mac/installation/?view=vsmac-2017) , aby uzyskać dodatkową pomoc dotyczącą instalacji.
 
 > [!NOTE]
-> Visual Studio for Mac Tools for Unity wymaga unity w wersji 5.6.1 lub nowszej. Aby sprawdzić, czy narzędzia programu Visual Studio dla unity są włączone w wersji Unity, wybierz **o jedności** z menu Unity i poszukaj tekstu "Microsoft Visual Studio Tools for Unity enabled" w lewym dolnym rogu okna dialogowego.
+> Narzędzia Visual Studio dla komputerów Mac dla aparatu Unity wymagają środowiska Unity w wersji 5.6.1 lub nowszej. Aby sprawdzić, czy Visual Studio Tools for Unity są włączone w używanej wersji aparatu Unity, wybierz pozycję **informacje z aparatu** Unity z menu aparatu Unity i poszukaj tekstu "Microsoft Visual Studio Tools for Unity Enabled" w lewym dolnym rogu okna dialogowego.
 >
-> ![Więcej o: Unity](media/setup-vsmac-tools-unity-image3.png)
+> ![Informacje o aparacie Unity](media/setup-vsmac-tools-unity-image3.png)
 
-## <a name="confirm-that-the-visual-studio-for-mac-tools-for-unity-extension-is-enabled"></a>Upewnij się, że jest włączone rozszerzenie Visual Studio Tools for Mac Tools for Unity
+## <a name="confirm-that-the-visual-studio-for-mac-tools-for-unity-extension-is-enabled"></a>Upewnij się, że rozszerzenie Visual Studio dla komputerów Mac Tools for Unity jest włączone
 
-Podczas gdy rozszerzenie Visual Studio For Mac Tools for Unity powinno być domyślnie włączone, możesz to potwierdzić i sprawdzić numer zainstalowanej wersji:
+Mimo że rozszerzenie Visual Studio dla komputerów Mac Tools for Unity powinno być domyślnie włączone, można je potwierdzić i sprawdzić numer zainstalowanej wersji:
 
-1. Z menu Visual Studio wybierz polecenie **Rozszerzenia...**.
+1. Z menu programu Visual Studio wybierz pozycję **rozszerzenia..**..
 
    ![Wybierz rozszerzenia](media/setup-vsmac-tools-unity-image1.png)
 
-2. Rozwiń sekcję Tworzenie gier i potwierdź wpis Visual Studio dla komputerów Mac Tools for Unity.
+2. Rozwiń sekcję Programowanie gier i Potwierdź wpis Visual Studio dla komputerów Mac Tools for Unity.
 
-   ![Wyświetl wpis jedności](media/setup-vsmac-tools-unity-image2.png)
+   ![Wyświetl wpis Unity](media/setup-vsmac-tools-unity-image2.png)
 
-## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>Konfigurowanie unity do użytku z programem Visual Studio dla komputerów Mac
+## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>Konfigurowanie aparatu Unity do użycia z Visual Studio dla komputerów Mac
 
-Począwszy od Unity 2018.1, Visual Studio powinien być domyślny edytor skryptów zewnętrznych w Unity. Można to potwierdzić lub zmienić zewnętrzny edytor skryptów na Visual Studio:
+Począwszy od aparatu Unity 2018,1, program Visual Studio powinien być domyślnym zewnętrznym edytorem skryptów w aparacie Unity. Możesz to potwierdzić lub zmienić zewnętrzny edytor skryptów na Visual Studio:
 
-1. Wybierz **preferencje...** z menu Jedność.
+1. Wybierz pozycję **Preferencje...** z menu aparatu Unity.
 
-   ![Wybierz preferencje](media/setup-vsmac-tools-unity-image4.png)
+   ![Wybierz Preferencje](media/setup-vsmac-tools-unity-image4.png)
 
-2. W oknie dialogowym Preferencje wybierz kartę **Narzędzia zewnętrzne.**
+2. W oknie dialogowym preferencji wybierz kartę **narzędzia zewnętrzne** .
 
-3. Z listy rozwijanej Edytor skryptów zewnętrznych wybierz pozycję **Visual Studio,** jeśli jest na liście, w przeciwnym razie wybierz **pozycję Przeglądaj...**.
+3. Z listy rozwijanej zewnętrzny edytor skryptów wybierz pozycję **Visual Studio** (jeśli jest wyświetlana), w przeciwnym razie wybierz pozycję **Przeglądaj...**.
 
    ![Wybierz program Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 
-4. Jeśli wybrano **opcję Przeglądaj...** przejdź do katalogu Aplikacje i wybierz pozycję Visual Studio, a następnie kliknij przycisk **Otwórz**.
+4. Jeśli wybrano opcję **Przeglądaj...** , przejdź do katalogu aplikacji, a następnie wybierz pozycję Visual Studio, a następnie kliknij przycisk **Otwórz**.
 
-   ![Wybierz otwórz](media/setup-vsmac-tools-unity-image6.png)
+   ![Wybierz pozycję Otwórz](media/setup-vsmac-tools-unity-image6.png)
 
-5. Po wybraniu programu Visual Studio na liście **Edytor skryptów zewnętrznych** zamknij okno dialogowe Preferencje, aby zakończyć proces konfiguracji.
+5. Po wybraniu programu Visual Studio na liście **zewnętrznych edytorów skryptów** Zamknij okno dialogowe preferencji, aby zakończyć proces konfiguracji.

@@ -1,22 +1,23 @@
 ---
 title: Konfigurowanie repozytorium podwersji
-description: Korzystanie z Subversion w programie Visual Studio dla komputerów Mac.
+description: Używanie Subversion w Visual Studio dla komputerów Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 7d95c73b8d745826b256d515f161194ee9dbb587
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 78a5dd2abbef177e2eb949d25d779a46ecc65bda
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692382"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950687"
 ---
 # <a name="set-up-a-subversion-repository"></a>Konfigurowanie repozytorium Subversion
 
-Subversion to scentralizowany _system kontroli wersji,_ co oznacza, że istnieje jeden serwer, który zawiera wszystkie pliki i poprawki, z których użytkownicy mogą sprawdzić dowolną wersję dowolnego pliku. Gdy pliki są wyewidencjonowane ze zdalnego repozytorium Subversion, użytkownik pobiera migawkę repozytorium w tym momencie.
+Subversion to scentralizowany _system kontroli wersji_, co oznacza, że istnieje jeden serwer, który zawiera wszystkie pliki i poprawki, z którego użytkownicy mogą wyewidencjonować dowolną wersję dowolnego pliku. Gdy pliki są wyewidencjonowane ze zdalnego repozytorium podwersji, użytkownik otrzymuje migawkę repozytorium w tym momencie.
 
-Aby użyć Subversion do kontroli wersji, musi być zainstalowany na komputerze. Aby sprawdzić, czy urządzenie Subversion jest zainstalowane, użyj następującego polecenia w terminalu:
+Aby można było używać Subversion dla kontroli wersji, należy ją zainstalować na maszynie. Aby sprawdzić, czy Podwersja jest zainstalowana na komputerze, użyj następującego polecenia w terminalu:
 
 ```bash
 svn --version
@@ -24,38 +25,38 @@ svn --version
 
 To polecenie zwraca numer wersji.
 
-Jeśli Subversion nie jest jeszcze zainstalowany, najprostszym sposobem, aby go uzyskać jest zainstalowanie _narzędzia wiersza polecenia Xcode_. Użyj poniższego polecenia, aby zainstalować narzędzia Xcode Command Line Tools i Subversion.
+Jeśli Podwersja nie jest już zainstalowana, najprostszym sposobem na jej uzyskanie jest zainstalowanie _narzędzi wiersza polecenia Xcode_. Użyj poniższego polecenia, aby zainstalować narzędzia i podwersję XCode wiersza polecenia.
 
 ```bash
 xcode-select --install
 ```
 
-Po zainstalowaniu subwersji na komputerze, należy wykonać następujące kroki, aby opublikować projekt w SVN.
+Po zainstalowaniu podwersji na maszynie wykonaj następujące kroki, aby opublikować projekt w systemie SVN.
 
-1. Stwórz darmowe repozytorium SVN online. W tym przykładzie [użyto Assembla.](https://app.assembla.com/) Po utworzeniu zostanie podany adres URL, który będzie używany do łączenia się z repozytorium:
+1. Utwórz bezpłatne repozytorium SVN w trybie online. W tym przykładzie użyto [asemblera](https://app.assembla.com/) . Po utworzeniu zostanie dostarczony adres URL, który zostanie użyty do nawiązania połączenia z repozytorium:
 
-    ![kopiowanie adresu URL SVN](media/version-control-subversion1-sml.png)
+    ![Skopiuj adres URL SVN](media/version-control-subversion1-sml.png)
 
-2. Otwórz lub utwórz program Visual Studio for Mac Project.
+2. Otwórz lub Utwórz projekt Visual Studio dla komputerów Mac.
 
-3. Kliknij prawym przyciskiem myszy projekt i wybierz **formę kontroli wersji > opublikować w kontroli wersji...**:
+3. Kliknij prawym przyciskiem myszy projekt i wybierz pozycję **Kontrola wersji > Opublikuj w kontroli wersji...**:
 
     ![Rozpocznij publikowanie projektu](media/version-control-subversion2.png)
 
-4. Na karcie **Połącz z repozytorium** wybierz pozycję **Subversion** z górnej listy rozwijanej.
+4. Na karcie **Połącz z repozytorium** wybierz pozycję **podwersję** z listy rozwijanej górne.
 
-5. Wprowadź adres URL z kroku 1. Po wprowadzeniu adresu URL pozostałe pola są wypełniane domyślnie:
+5. Wprowadź adres URL z kroku 1. Po wprowadzeniu adresu URL inne pola są domyślnie wypełniane:
 
     ![Okno dialogowe Wybieranie repozytorium i wprowadzanie szczegółów](media/version-control-subversion3.png)
 
-7. Kliknij **przycisk OK,** a następnie potwierdź, naciskając przycisk **Publikuj**.
+7. Kliknij przycisk **OK** , a następnie potwierdź, naciskając pozycję **Publikuj**.
 
-7. Jeśli zostanie wyświetlony monit, wprowadź poświadczenia dla witryny, w której utworzysz repozytorium, jak pokazano poniżej:
+7. Jeśli zostanie wyświetlony monit, wprowadź swoje poświadczenia dla witryny, w której tworzysz repozytorium, jak pokazano poniżej:
 
-    ![Wprowadzanie poświadczeń dla repozytorium wywrotowego](media/version-control-subversion5.png)
+    ![Wprowadzanie poświadczeń dla repozytorium Subversion](media/version-control-subversion5.png)
 
-8. Wszystkie dostępne polecenia kontroli wersji powinny być teraz widoczne w menu kontroli wersji.
+8. Wszystkie dostępne polecenia kontroli wersji powinny teraz być widoczne w menu kontroli wersji.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Praca z podwersją](working-with-subversion.md)

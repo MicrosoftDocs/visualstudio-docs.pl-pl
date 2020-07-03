@@ -1,25 +1,26 @@
 ---
 title: Podczas pobierania informacji występują błędy aktualizatora
-description: Instrukcje dotyczące naprawy po wyświetleniu błędu "Błąd podczas pobierania informacji o aktualizacji". w programie Visual Studio 2017 dla komputerów Mac
+description: Instrukcje dotyczące sposobu naprawy w przypadku wyświetlenia błędu "błąd podczas pobierania informacji o aktualizacji". w programie Visual Studio 2017 dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
-ms.openlocfilehash: 2ff0703171f5854baed2dd9be3767571a930bcb7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: troubleshooting
+ms.openlocfilehash: c631bae40d06a000e2e90c26ae5a9862c1e09aaa
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983484"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950578"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Rozwiązywanie problemów: Updater ma błędy pobierania informacji
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Rozwiązywanie problemów: Podczas pobierania informacji występują błędy aktualizatora
 
-W rzadkich przypadkach podczas próby aktualizacji programu Visual Studio dla komputerów [Mac](update.md)może zostać wyświetlony komunikat o błędzie "Informacje o błędzie podczas pobierania aktualizacji". Jeśli tak się stanie, spróbuj wykonać następujące czynności, aby to naprawić:
+W rzadkich przypadkach może zostać wyświetlony komunikat o błędzie "błąd podczas pobierania informacji o aktualizacji" wyświetlany podczas próby [zaktualizowania Visual Studio dla komputerów Mac](update.md). W takim przypadku spróbuj wykonać następujące czynności, aby rozwiązać ten problem:
 
-- Sprawdź połączenie internetowe. Spadek połączenia jest najczęstszą przyczyną tego błędu.
-  - Jeśli nie można pobrać składnika, można kliknąć przycisk ponowienia próby obok nazwy składnika, aby spróbować pobrać ponownie.
-- Uruchom ponownie ide.
-- Jeśli ten komunikat o błędzie nadal jest wyświetlany, możesz również spróbować zaktualizować za pomocą programu Visual Studio 2017 dla mac Installer, jeśli **plik dmg** jest nadal na komputerze lub można go pobrać z [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac)
+- Sprawdź połączenie internetowe. To najczęstsze przyczyny tego błędu.
+  - Jeśli pobranie składnika nie powiedzie się, możesz kliknąć przycisk Ponów próbę obok nazwy składnika, aby ponowić próbę pobrania.
+- Uruchom ponownie IDE.
+- Jeśli ten komunikat o błędzie będzie nadal wyświetlany, możesz również spróbować zaktualizować za pomocą Instalatora programu Visual Studio 2017 dla komputerów Mac, jeśli **dmg** jest nadal na maszynie lub można pobrać z witryny [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac)
   - Instalator zaktualizuje wszystkie zainstalowane składniki na komputerze.
-  - Po ponownym uruchomieniu instalatora można również zainstalować brakujące składniki, które nie zostały wcześniej zainstalowane.
+  - Po ponownym uruchomieniu Instalatora można także zainstalować brakujące składniki, które nie zostały wcześniej zainstalowane.
