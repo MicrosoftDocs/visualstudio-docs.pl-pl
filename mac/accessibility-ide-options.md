@@ -5,50 +5,51 @@ author: alanjclark
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
-ms.openlocfilehash: aece4bec978b609dd1fd5f67d2562bd87f847a3a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 265ad820ea478ac59d8209cc14ce4fe6be29c7af
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985116"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939162"
 ---
 # <a name="set-ide-accessibility-options"></a>Ustawianie opcji ułatwień dostępu środowiska IDE
 
-Oprócz funkcji wbudowanych w system macOS program Visual Studio dla komputerów Mac ma szereg funkcji ułatwień dostępu umożliwiających użytkownikom o różnych zdolnościach.
+Oprócz funkcji wbudowanych bezpośrednio w macOS, Visual Studio dla komputerów Mac ma wiele funkcji ułatwień dostępu, które umożliwiają użytkownikom różne możliwości.
 
-## <a name="resize-pad-and-editor-content"></a>Ponowne rozmiary konsoli i zawartości edytora
+## <a name="resize-pad-and-editor-content"></a>Zmiana rozmiaru konsoli i zawartości edytora
 
-1. Wybierz podkładkę lub okno, dla którego chcesz zmienić rozmiar zawartości.
+1. Wybierz konsolę lub okno, dla którego chcesz zmienić rozmiar zawartości.
 
-1. Wybierz **polecenie Widok (menu),** a następnie wybierz polecenie **Powiększenie (&#8984;+)** lub **Pomniejsz (&#8984;-)**.
+1. Wybierz **Widok (menu)**, a następnie wybierz pozycję **powiększ (&#8984;+)** lub **Pomniejsz (&#8984;-)**.
 
 > [!TIP]
-> Aby zresetować zawartość do rozmiaru domyślnego, można wybrać **opcję Wyświetl (menu)** > **Normalny rozmiar (&#8984;0)**.
+> Aby zresetować zawartość do rozmiaru domyślnego, możesz wybrać **Widok (menu)**  >  **normalny rozmiar (&#8984;0)**.
 
-## <a name="change-the-content-font-and-size"></a>Zmienianie czcionki i rozmiaru zawartości
+## <a name="change-the-content-font-and-size"></a>Zmień rozmiar i czcionkę zawartości
 
-Istnieje możliwość dostosowania czcionki i rozmiaru zawartości w większości pól w programie Visual Studio dla komputerów Mac. Oto kroki tej procedury:
+Można dostosować czcionkę i rozmiar zawartości w większości podkładków w Visual Studio dla komputerów Mac. Oto jak:
 
-1. Przejdź do **programu Visual Studio (menu)** > **Preferencje... (&#8984;,)**.
+1. Przejdź do okna Preferencje **programu Visual Studio (menu)**  >  **... (&#8984;,)**.
 
-1. W **preferencjach**przejdź do pozycji**Czcionki** **środowiska** > .
+1. W obszarze **Preferencje**przejdź do **Environment**pozycji  >  **czcionki**środowiska.
 
-1. W przypadku **edytora tekstu,** **tekstu pola ogólnego**lub zawartości konsoli **wyjściowej**wybierz przycisk czcionki i rozmiaru.
+1. Dla **edytora tekstu**, **tekstu w konsoli ogólnej**lub **zawartości konsoli wyjściowej**, wybierz przycisk Czcionka i rozmiar.
 
 1. Wybierz żądaną czcionkę, styl i rozmiar, a następnie wybierz **przycisk OK**.
 
 > [!TIP]
-> Aby powrócić do domyślnej czcionki i stylu dla każdego ustawienia, wybierz pozycję **Ustaw wartość Domyślna**.
+> Aby przywrócić domyślną czcionkę i styl dla każdego ustawienia, wybierz pozycję **Ustaw jako domyślny**.
 
-## <a name="change-the-editor-syntax-highlighting"></a>Zmienianie wyróżniania składni edytora
+## <a name="change-the-editor-syntax-highlighting"></a>Zmień wyróżnianie składni edytora
 
-Niektórzy użytkownicy mogą stwierdzić, że domyślny schemat kolorów nie spełnia ich wymagań dotyczących kontrastu lub koloru. Visual Studio dla komputerów Mac ma wiele alternatywnych motywów, które użytkownik może wybrać, w tym dwa motywy o wysokim kontraście.
+Niektórzy użytkownicy mogą stwierdzić, że domyślny schemat kolorów nie spełnia wymagań związanych z kontrastem lub kolorem. Visual Studio dla komputerów Mac zawiera wiele alternatywnych motywów, które użytkownik może wybrać, w tym dwa motywy dużego kontrastu.
 
-1. Przejdź do **programu Visual Studio (menu)** > **Preferencje... (&#8984;,)**.
+1. Przejdź do okna Preferencje **programu Visual Studio (menu)**  >  **... (&#8984;,)**.
 
-1. W **preferencjach**przejdź do**tematu Kolor** **edytora** > tekstu .
+1. W obszarze **Preferencje**przejdź do obszaru **Edytor tekstu**  >  **Color Theme**.
 
 1. Wybierz żądany motyw.
 
 > [!TIP]
-> Motyw zostanie zaktualizowany w edytorze w czasie rzeczywistym, dzięki czemu można wyświetlić podgląd i wybrać preferowany motyw.
+> Motyw zostanie zaktualizowany w edytorze w czasie rzeczywistym, aby można było wyświetlić podgląd i wybrać preferowany motyw.

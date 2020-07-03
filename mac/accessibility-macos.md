@@ -1,39 +1,40 @@
 ---
-title: Korzystanie z opcji ułatwień dostępu dla systemu macOS
-description: Korzystanie z opcji i funkcji ułatwień dostępu dla systemu macOS, takich jak wysoki kontrast, nawigacja za pomocą klawiatury i Funkcja VoiceOver
+title: Korzystanie z opcji ułatwień dostępu macOS
+description: Korzystanie z opcji i funkcji ułatwień dostępu macOS, takich jak wysoki kontrast, Nawigacja po klawiaturze i VoiceOver
 author: alanjclark
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
-ms.openlocfilehash: 095a65ab27bdcac6521eb771dcca1936b87409cd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: b74a150e21e29ddbee51d02be6dda91740a060f1
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985085"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938467"
 ---
-# <a name="accessibility-features-of-macos"></a>Funkcje ułatwień dostępu systemu macOS
+# <a name="accessibility-features-of-macos"></a>Funkcje ułatwień dostępu w programie macOS
 
-macOS to dostępny system operacyjny z wieloma funkcjami ułatwiającymi użytkownikom różne umiejętności. Funkcje te obejmują tryb wysokiego kontrastu, nawigację za pomocą klawiatury i VoiceOver (czytnik ekranu macOS).
+macOS to dostępny system operacyjny z szeregiem funkcji, które ułatwiają użytkownikom różne możliwości. Te funkcje obejmują tryb dużego kontrastu, nawigację klawiatury i VoiceOver (czytnik ekranu macOS).
 
-## <a name="enable-accessibility-features"></a>Włączanie funkcji ułatwień dostępu
+## <a name="enable-accessibility-features"></a>Włącz funkcje ułatwień dostępu
 
-W programie Visual Studio dla komputerów Mac obsługa technologii pomocniczych jest domyślnie wyłączona. Aby włączyć obsługę ułatwień dostępu:
+W Visual Studio dla komputerów Mac obsługa technologii pomocniczych jest domyślnie wyłączona. Aby włączyć obsługę ułatwień dostępu:
 
-1. Przejdź do **programu Visual Studio (menu)** > **Preferencje** > **Inne**i wybierz pozycję **Ułatwienia dostępu**.
+1. Przejdź do pozycji Preferencje **programu Visual Studio (menu)**  >  **Preferences**  >  **inne**i wybierz pozycję **ułatwienia dostępu**.
 
-1. Zaznacz pole wyboru **Włącz ułatwienia dostępu.**
+1. Zaznacz pole wyboru **Włącz ułatwienia dostępu** .
 
-   ![Zrzut ekranu przedstawiający preferencje ułatwień dostępu z wybraną wybraną wybraną pozycją Włącz ułatwienia dostępu](media/accessibility-preferences.png)
+   ![Zrzut ekranu z preferencjami dostępności z wybraną opcją Włącz ułatwienia dostępu](media/accessibility-preferences.png)
 
-1. Wybierz **opcję Uruchom ponownie program Visual Studio,** aby włączyć obsługę technologii pomocniczych firmy Apple.
+1. Wybierz pozycję **Uruchom ponownie program Visual Studio** , aby włączyć obsługę technologii pomocniczych firmy Apple.
 
-## <a name="increase-the-contrast-in-macos"></a>Zwiększenie kontrastu w systemie macOS
+## <a name="increase-the-contrast-in-macos"></a>Zwiększ kontrast w macOS
 
-Program Visual Studio dla komputerów Mac obsługuje zwiększony kontrast w systemie macOS, zwiększając kontrast elementów interfejsu użytkownika i czyniąc kontury bardziej zdefiniowanymi. Aby włączyć tę funkcję:
+Visual Studio dla komputerów Mac obsługuje zwiększony kontrast w macOS, zwiększając kontrast elementów interfejsu użytkownika i wprowadzając konspekty bardziej zdefiniowane. Aby włączyć to:
 
-1. Otwórz **preferencje systemowe**.
+1. Otwórz okno **preferencji systemu**.
 
-1. Przejdź do **aplikacji Ułatwień dostępu**i wybierz pozycję **Wyświetl**.
+1. Przejdź do pozycji **ułatwienia dostępu**, a następnie wybierz pozycję **Wyświetl**.
 
-1. Zaznacz pole wyboru **Zwiększ kontrast.**
+1. Zaznacz pole wyboru **Zwiększ kontrast** .

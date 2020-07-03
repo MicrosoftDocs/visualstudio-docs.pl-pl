@@ -6,12 +6,13 @@ ms.author: johmil
 ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: overview
+ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183989"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939078"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debugowanie za pomocą Visual Studio dla komputerów Mac
 
@@ -89,7 +90,7 @@ Poniżej przedstawiono cztery przyciski:
 
 ## <a name="change-which-statement-is-executed-next"></a>Zmień, która instrukcja jest wykonywana dalej
 
-Gdy debuger jest wstrzymany, strzałka na marginesie pokazuje, który wiersz kodu zostanie wykonany dalej. Możesz kliknąć i przeciągnąć strzałkę do innego wiersza kodu, aby zmienić, która instrukcja zostanie wykonana. Można to zrobić, klikając prawym przyciskiem myszy wiersz kodu i wybierając polecenie **Ustaw następną instrukcję** z menu kontekstowego.
+Po wstrzymaniu działania debugera strzałka na marginesie pokazuje, który wiersz kodu zostanie wykonany jako następny. Możesz kliknąć i przeciągnąć strzałkę do innego wiersza kodu, aby zmienić instrukcję, która zostanie wykonana. Można to zrobić, klikając prawym przyciskiem myszy wiersz kodu i wybierając polecenie **Ustaw następną instrukcję** z menu kontekstowego.
 
 ![Przeciągnij i upuść strzałkę, aby ustawić następną instrukcję](media/debugger-drag-setnextstatement.gif)
 
@@ -106,6 +107,6 @@ Aby włączyć tę funkcję, przejdź do **Visual Studio dla komputerów Mac > p
 
 ![Opcja do kodu zewnętrznego](media/debugging-image8.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie w programie Visual Studio (w systemie Windows)](/visualstudio/debugger/)

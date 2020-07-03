@@ -6,12 +6,13 @@ ms.author: jogallow
 ms.date: 12/17/2019
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
-ms.openlocfilehash: 978e3676d587bcd54a8e9d0b8b81f5d6c52a92bc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: how-to
+ms.openlocfilehash: ac7fcd9044aa6367f140ac4aa96e6aaf4a9f5885
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180285"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939147"
 ---
 # <a name="create-blazor-web-apps"></a>Tworzenie aplikacji sieci Web Blazor
 
@@ -78,7 +79,7 @@ Ten folder zawiera składniki udostępnione, również przy użyciu rozszerzenia
 
 ### <a name="app-settings"></a>Ustawienia aplikacji
 
-Plik *appSettings. JSON* zawiera dane konfiguracyjne, takie jak parametry połączenia.
+*appSettings.jsw* pliku zawiera dane konfiguracyjne, takie jak parametry połączenia.
 
 Aby uzyskać więcej informacji na temat konfiguracji, zobacz [Konfiguracja w przewodniku ASP.NET](/aspnet/core/fundamentals/configuration/index).
 
@@ -97,6 +98,6 @@ Ten plik zawiera kod konfigurujący zachowanie aplikacji, na przykład czy aplik
 ## <a name="summary"></a>Podsumowanie
 W tym samouczku pokazano, jak utworzyć nową aplikację serwera Blazor w Visual Studio dla komputerów Mac i poznać niektóre funkcje, które Visual Studio dla komputerów Mac oferty ułatwiające tworzenie aplikacji Blazor.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 Aby uzyskać bardziej obszerny przewodnik tworzenia Blazor Web Apps, zobacz [wprowadzenie do ASP.NET Core Blazor](/aspnet/core/blazor/index).

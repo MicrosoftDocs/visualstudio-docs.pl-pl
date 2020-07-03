@@ -1,28 +1,29 @@
 ---
 title: Projekty i rozwiązania
-description: Ten dokument zawiera omówienie projektów i rozwiązań w programie Visual Studio dla komputerów Mac.
+description: Ten dokument zawiera omówienie projektów i rozwiązań w Visual Studio dla komputerów Mac.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: d0cf61c94161e6d6bef6cd580e5fb342a177c1c4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 9ef6ecdb5dce8d337aa74232a0bffa8a63f87ea8
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983512"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939034"
 ---
 # <a name="projects-and-solutions"></a>Projekty i rozwiązania
 
-Visual Studio dla komputerów Mac udostępnia _platformę solution pad_ do wyświetlania widoku drzewa całego otwartego rozwiązania. **Panel rozwiązania** umożliwia łatwy dostęp do kodu źródłowego, zasobów, interfejsów użytkownika i odwołań do zestawu zawartych w poszczególnych projektach. Solution Pad domyślnie otwiera jedno rozwiązanie naraz. Każde rozwiązanie może zawierać wiele projektów, a każdy projekt może zawierać wiele elementów.
+Visual Studio dla komputerów Mac udostępnia _okienko rozwiązania_   do wyświetlania widoku drzewa całego otwartego rozwiązania. Konsola **rozwiązania** umożliwia łatwy dostęp do kodu źródłowego, zasobów, interfejsów użytkownika i odwołań do zestawów zawartych w poszczególnych projektach. Okienko rozwiązania domyślnie otwiera jedno rozwiązanie w danym momencie. Każde rozwiązanie może zawierać wiele projektów, a każdy projekt może zawierać wiele elementów.
 
 ## <a name="using-projects-and-solutions"></a>Korzystanie z projektów i rozwiązań
 
-Aby utworzyć nowy projekt lub rozwiązanie, zapoznaj się z artykułem [Tworzenie nowych projektów i rozwiązań.](create-new-projects.md)
+Aby utworzyć nowy projekt lub rozwiązanie, zapoznaj się z artykułem [Tworzenie nowych projektów i rozwiązań](create-new-projects.md) .
 
 ## <a name="project-and-solution-options"></a>Opcje projektu i rozwiązania
 
-Właściwości zarówno projektów, jak i rozwiązań można zarządzać, klikając dwukrotnie nazwę projektu lub rozwiązania lub klikając prawym przyciskiem myszy i przeglądając **polecenie Opcje**. Więcej informacji na temat tych opcji znajduje się w [artykule Zarządzanie rozwiązaniami i właściwościami projektu.](managing-solutions-and-project-properties.md)
+Właściwościami projektów i rozwiązań można zarządzać przez dwukrotne kliknięcie projektu lub nazwy rozwiązania lub kliknięcie prawym przyciskiem myszy i przechodzenie do **opcji**. Więcej informacji na temat tych opcji znajduje się w artykule [zarządzanie rozwiązaniami i właściwościami projektu](managing-solutions-and-project-properties.md) .
 
 ## <a name="see-also"></a>Zobacz też
 
