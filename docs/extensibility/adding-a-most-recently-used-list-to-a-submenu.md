@@ -1,7 +1,7 @@
 ---
 title: Dodawanie ostatnio używanej listy do podmenu | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5624fe4a4f3c9ba774313e862f9e84a6f6d70862
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183278"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904209"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Dodaj ostatnio używaną listę do podmenu
 Ten przewodnik jest oparty na pokazach w oknie [Dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)i pokazuje, jak dodać listę dynamiczną do podmenu. Lista dynamiczna stanowi podstawę tworzenia ostatnio używanej listy (MRU).
@@ -199,5 +199,5 @@ Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual 
 
 4. Ponownie Otwórz podmenu. Zauważ, że **element 3** znajduje się teraz w górnej części listy, a pozostałe elementy zostały wypchnięte do jednego stanowiska. Kliknij ponownie **element Item 3** i zwróć uwagę, że w oknie komunikatu nadal jest wyświetlany **wybrany element 3**, który wskazuje, że tekst został prawidłowo przeniesiony do nowej pozycji i z etykietą polecenia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dynamiczne dodawanie elementów menu](../extensibility/dynamically-adding-menu-items.md)

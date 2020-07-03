@@ -1,57 +1,57 @@
 ---
-title: Wprowadzenie do portalu zarządzania subskrypcjami | Visual Studio Marketplace
+title: Rozpoczynanie pracy z portalem administracyjnym subskrypcji | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
-ms.topic: conceptual
-description: Dowiedz się, jak rozpocząć zarządzanie subskrypcjami programu Visual Studio w organizacji za pomocą portalu administracyjnego subskrypcji.
-ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.topic: overview
+description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
+ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808360"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902943"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
-Portal administracyjny subskrypcji programu Visual Studio udostępnia narzędzia do zarządzania subskrypcjami organizacji w jednym miejscu. 
+Portal administrowania subskrypcjami programu Visual Studio udostępnia narzędzia do zarządzania subskrypcjami w jednym miejscu w organizacji. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>Istotne zagadnienia
-Należy pamiętać o tych punktach podczas korzystania z portalu administracyjnego subskrypcji programu Visual Studio:
-- **Subskrypcje programu Visual Studio są licencjonowane dla użytkownika.** Każdy subskrybent może używać oprogramowania na tyle komputerów, ile jest potrzebne do tworzenia i testowania.
-- **Przypisz tylko jeden poziom subskrypcji dla każdego subskrybenta,** odpowiadający subskrypcji programu Visual Studio zakupionej przez organizację. Jeśli masz subskrybentów z więcej niż jednym poziomem subskrypcji przypisanym do nich, edytuj ich ustawienia, aby mieli tylko jeden.
-- **Poziom subskrypcji subskrybenta będzie musiał zostać zaktualizowany** po uaktualnieniu subskrypcji (po zakupie licencji "step-up") lub odnowieniu na niższym poziomie.
-- **Nie udostępniaj subskrypcji subskrybentom.** Subskrypcje muszą być przypisane do nazwanych osób.  Przypisywanie subskrypcji zespołom jest niedozwolone.  Należy przypisać subskrypcję każdemu, kto korzysta z całości lub części korzyści subskrypcyjnych (oprogramowanie do tworzenia i testowania, Microsoft Azure, e-learning itp.).
+W przypadku korzystania z portalu administratora subskrypcji programu Visual Studio należy pamiętać o następujących kwestiach:
+- **Subskrypcje programu Visual Studio są licencjonowane na użytkownika.** Każdy subskrybent może korzystać z oprogramowania na tyle, ile komputerów jest potrzebnych do tworzenia i testowania.
+- **Przypisz tylko jeden poziom subskrypcji dla każdego subskrybenta**, odpowiadający subskrypcji programu Visual Studio zakupionej przez Twoją organizację. Jeśli masz subskrybentów z przypisanym więcej niż jednym poziomem subskrypcji, Edytuj swoje ustawienia tak, aby zawierały tylko jeden z nich.
+- **Poziom subskrypcji subskrybenta będzie musiał zostać zaktualizowany** , gdy subskrypcja zostanie uaktualniona (po zakupie licencji "krok do końca") lub odnowienia na niższym poziomie.
+- **Nie udostępniaj subskrypcji między subskrybentami.** Subskrypcje muszą być przypisane do nazwanych osób.  Przypisanie subskrypcji do zespołów nie jest dozwolone.  Musisz przypisać subskrypcję do każdego, kto korzysta ze wszystkich lub części korzyści z subskrypcji (oprogramowanie do programowania i testowania, Microsoft Azure, uczenie elektroniczne itp.).
 
 ## <a name="the-subscribers-page"></a>Strona Subskrybenci
-Po przypisaniu subskrypcji karta Zarządzaj subskrybentami zawiera szczegółowe informacje o subskrybentach, w tym:
-- Imię i nazwisko każdego abonenta.
+Po przypisaniu subskrypcji Karta Zarządzanie subskrybentami zawiera szczegółowe informacje na temat subskrybentów, w tym:
+- Imię i nazwisko każdego subskrybenta.
 - Adres e-mail tego użytkownika.
-- Poziom subskrypcji, który został do nich przypisany.
-- Data przypisania ich subskrypcji do nich.
+- Przypisany do nich poziom subskrypcji.
+- Data, do której przypisano swoją subskrypcję.
 - Data wygaśnięcia subskrypcji.
-- Opcjonalny opis tekstowy.
-- Wskazanie, czy pobieranie przez subskrybenta zostało włączone lub wyłączone.
+- Opcjonalny opis tekstu.
+- Wskazanie, czy pobieranie subskrybentów zostało włączone czy wyłączone.
 - Kraj, w którym się znajdują.
-- Ich preferencje językowe dla wiadomości e-mail z komunikatów administracyjnych przypisania z portalu administracyjnego.
+- Preferencja języka dla wiadomości e-mail z powiadomieniem o przypisaniu z portalu administracyjnego.
 - Opcjonalne pole dla innego adresu e-mail używanego do komunikacji niż logowanie.
 
-W lewym górnym rogu strony znajduje się kilka ikon, które można wybrać, aby wyświetlić przegląd przydziału subskrypcji, szczegóły umowy i raport maksymalnego użycia.
+W lewym górnym rogu strony istnieje kilka ikon, które można wybrać, aby wyświetlić przegląd przypisania subskrypcji, szczegóły umowy i raport dotyczący maksymalnego użycia.
 
-Aby wyświetlić dodatkowe informacje o liczbie zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy, kliknij górną ikonę, aby włączyć wysusany panel.
+Aby wyświetlić dodatkowe informacje o liczbie licencji subskrypcji zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy, kliknij górną ikonę, aby włączyć panel slajdu.
 > [!div class="mx-imgBorder"]
-> ![Strona Subskrybentów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> ![Strona subskrybentów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
-## <a name="the-details-page"></a>Strona Szczegóły
-Aby uzyskać więcej informacji na temat przeglądanych umów, wybierz drugą ikonę, aby wyświetlić kartę Szczegóły umowy. Wysunął panel pokazuje stan umowy, konto zakupu, szczegóły organizacji, superadministratorów i inne istotne informacje.
+## <a name="the-details-page"></a>Strona szczegółów
+Aby uzyskać więcej informacji na temat umowy, którą przeglądasz, wybierz drugą ikonę, aby wyświetlić kartę Szczegóły umowy. Panel rozwijany zawiera informacje o stanie umowy, koncie zakupu, szczegółach organizacji, administratorach i innych stosownych informacjach.
 > [!div class="mx-imgBorder"]
 > ![Strona szczegółów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 - [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)
@@ -61,13 +61,13 @@ Aby uzyskać więcej informacji na temat przeglądanych umów, wybierz drugą ik
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Dowiedz się więcej o obowiązkach administratorów:
-- [Omówienie obowiązków administratora](admin-responsibilities.md)
-- [Inwentaryzacja środowiska przedprodukcyjnyego](admin-inventory.md)
+Dowiedz się więcej o odpowiedzialności dla administratorów:
+- [Przegląd obowiązków administracyjnych](admin-responsibilities.md)
+- [Spis środowiska przedprodukcyjnego](admin-inventory.md)
 - [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)
 - [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)
-- Śledzenie zobowiązań dotyczących zakupu za pomocą [maksymalnego użycia](maximum-usage.md)
+- Używanie [maksymalnego użycia](maximum-usage.md) do śledzenia zobowiązań zakupu
 

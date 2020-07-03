@@ -1,7 +1,7 @@
 ---
-title: Tworzenie okna narzędzia z wieloma wystąpieniami | Dokumenty firmy Microsoft
+title: Tworzenie okna narzędzia z obsługą wiele wystąpień | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - multi
 - tool windows
@@ -11,28 +11,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33585f623f846e16200d430ad2c886fe0874b537
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739624"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904060"
 ---
-# <a name="create-a-multi-instance-tool-window"></a>Tworzenie okna narzędzia z wieloma wystąpieniami
-Okno narzędzia można zaprogramować, tak aby można było jednocześnie otworzyć wiele jego wystąpień. Domyślnie okna narzędzi mogą mieć tylko jedno wystąpienie otwarte.
+# <a name="create-a-multi-instance-tool-window"></a>Tworzenie okna narzędzia z obsługą wiele wystąpień
+Możesz zaprogramować okno narzędzi, aby można było otworzyć wiele wystąpień go jednocześnie. Domyślnie w oknach narzędzi może być otwarte tylko jedno wystąpienie.
 
-Korzystając z okna narzędzia z wieloma wystąpieniami, można wyświetlić kilka powiązanych źródeł informacji w tym samym czasie. Na przykład można umieścić formant <xref:System.Windows.Forms.TextBox> wielowierszowy w oknie narzędzia wielu wystąpień, tak aby kilka fragmentów kodu były jednocześnie dostępne podczas sesji programowania. Ponadto na przykład można umieścić <xref:System.Windows.Forms.DataGrid> formant i pole listy rozwijanej w oknie narzędzia wielu wystąpień, dzięki czemu można jednocześnie śledzić kilka źródeł danych w czasie rzeczywistym.
+W przypadku korzystania z okna narzędzia z wieloma wystąpieniami można w tym samym czasie pokazać kilka powiązanych źródeł informacji. Na przykład można umieścić formant wielowierszowy <xref:System.Windows.Forms.TextBox> w oknie narzędzia z wieloma wystąpieniami, tak aby kilka fragmentów kodu było jednocześnie dostępnych podczas sesji programowania. Ponadto można na przykład umieścić <xref:System.Windows.Forms.DataGrid> formant i pole listy rozwijanej w oknie narzędzia z wieloma wystąpieniami, aby można było jednocześnie śledzić kilka źródeł danych w czasie rzeczywistym.
 
-## <a name="create-a-basic-single-instance-tool-window"></a>Tworzenie okna narzędzia podstawowego (pojedynczego wystąpienia)
+## <a name="create-a-basic-single-instance-tool-window"></a>Tworzenie podstawowego (pojedynczego wystąpienia) okna narzędziowego
 
-1. Utwórz projekt o nazwie **MultiInstanceToolWindow** przy użyciu szablonu VSIX i dodaj niestandardowy szablon elementu okna narzędzia o nazwie **MIToolWindow**.
+1. Utwórz projekt o nazwie **MultiInstanceToolWindow** przy użyciu szablonu VSIX i Dodaj szablon elementu niestandardowego okna narzędzi o nazwie **MIToolWindow**.
 
     > [!NOTE]
-    > Aby uzyskać więcej informacji na temat tworzenia rozszerzenia z oknem narzędzia, zobacz [Tworzenie rozszerzenia z oknem narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-## <a name="make-a-tool-window-multi-instance"></a>1.
+## <a name="make-a-tool-window-multi-instance"></a>Tworzenie wieloskładnikowego okna narzędziowego
 
-1. Otwórz plik *MIToolWindowPackage.cs* i znajdź `ProvideToolWindow` atrybut. i `MultiInstances=true` parametr, jak pokazano w poniższym przykładzie:
+1. Otwórz plik *MIToolWindowPackage.cs* i Znajdź `ProvideToolWindow` atrybut. i `MultiInstances=true` parametr, jak pokazano w następującym przykładzie:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -44,15 +44,15 @@ Korzystając z okna narzędzia z wieloma wystąpieniami, można wyświetlić kil
     {. . .}
     ```
 
-2. W pliku *MIToolWindowCommand.cs* znajdź `ShowToolWindos()` metodę. W tej metodzie <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> wywołać `create` metodę `false` i ustawić jego flagę, aby iterować `id` za pośrednictwem istniejących wystąpień okna narzędzia, dopóki nie zostanie znaleziony dostępny.
+2. W pliku *MIToolWindowCommand.cs* Znajdź `ShowToolWindos()` metodę. W tej metodzie należy wywołać <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodę i ustawić jej `create` flagę na `false` tak, aby przeprowadzili iterację przez istniejące wystąpienia okna narzędzi do momentu znalezienia dostępnego elementu `id` .
 
-3. Aby utworzyć wystąpienie okna <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> narzędzia, należy `id` wywołać metodę `create` i `true`ustawić jej wartość na dostępną, a flagę na .
+3. Aby utworzyć wystąpienie okna narzędzi, wywołaj <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodę i ustaw jej `id` wartość na dostępna i `create` flagę na `true` .
 
-    Domyślnie wartość parametru `id` <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metody jest `0`. Ta wartość tworzy okno narzędzia pojedynczego wystąpienia. Aby więcej niż jedno wystąpienie było hostowane, `id`każde wystąpienie musi mieć swój własny unikatowy .
+    Domyślnie wartość `id` parametru <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metody to `0` . Ta wartość tworzy okno narzędzia z jednym wystąpieniem. Aby można było obsługiwać więcej niż jedno wystąpienie, każde wystąpienie musi mieć własny unikatowy `id` .
 
-4. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> na obiekcie, <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> który jest zwracany przez właściwość wystąpienia okna narzędzia.
+4. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metodę dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiektu, który jest zwracany przez <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> Właściwość wystąpienia okna narzędzi.
 
-5. Domyślnie metoda `ShowToolWindow` tworzona przez szablon elementu okna narzędzia tworzy okno narzędzia pojedynczego wystąpienia. W poniższym przykładzie `ShowToolWindow` pokazano, jak zmodyfikować metodę tworzenia wielu wystąpień.
+5. Domyślnie `ShowToolWindow` Metoda, która jest tworzona przez szablon elementu okna narzędzi, tworzy okno narzędzia z jednym wystąpieniem. Poniższy przykład pokazuje, jak zmodyfikować `ShowToolWindow` metodę w celu utworzenia wielu wystąpień.
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

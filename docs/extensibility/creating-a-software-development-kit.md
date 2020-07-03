@@ -1,43 +1,43 @@
 ---
-title: Tworzenie zestawu do tworzenia oprogramowania | Dokumenty firmy Microsoft
+title: Tworzenie zestawu Software Development Kit | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7cf6cf092edf96280c566018231cc00d34c0994
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739593"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904116"
 ---
-# <a name="create-a-software-development-kit"></a>Tworzenie zestawu do tworzenia oprogramowania
+# <a name="create-a-software-development-kit"></a>Tworzenie zestawu SDK
 
-Zestaw do tworzenia oprogramowania (SDK) to zbiór interfejsów API, do których można odwoływać się jako pojedynczy element w programie Visual Studio. Okno dialogowe **Menedżer odwołań** zawiera listę wszystkich sks, które są istotne dla projektu. Po dodaniu SDK do projektu interfejsy API są dostępne w programie Visual Studio.
+Zestaw SDK (Software Development Kit) to zbiór interfejsów API, które można odwołać jako pojedyncze elementy w programie Visual Studio. W oknie dialogowym **Menedżer odwołań** są wyświetlane wszystkie zestawy SDK, które są istotne dla projektu. Po dodaniu zestawu SDK do projektu interfejsy API są dostępne w programie Visual Studio.
 
-Istnieją dwa typy sdków:
+Istnieją dwa typy zestawów SDK:
 
-- Platformy SDK są obowiązkowe składniki do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK jest wymagane [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] do tworzenia aplikacji.
+- Zestawy SDK platformy są obowiązkowymi składnikami do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestaw SDK jest wymagany do tworzenia [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.
 
-- ZestawY SDK rozszerzenia są opcjonalnymi składnikami, które rozszerzają platformę, ale nie są obowiązkowe do tworzenia aplikacji dla tej platformy.
+- Rozszerzenia SDK są opcjonalnymi składnikami, które rozszerzają platformę, ale nie są wymagane do tworzenia aplikacji dla tej platformy.
 
-W poniższych sekcjach opisano ogólną infrastrukturę sdków sdk i jak utworzyć sdk platformy i sdk rozszerzenia.
+W poniższych sekcjach opisano ogólną infrastrukturę zestawów SDK oraz sposób tworzenia zestawu SDK platformy i rozszerzenia SDK.
 
-## <a name="platform-sdks"></a>Platformy SDK
+## <a name="platform-sdks"></a>Zestawy SDK platformy
 
-Platformy SDK są wymagane do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../debugger/includes/win81_md.md)] sdk jest wymagane do [!INCLUDE[win81](../debugger/includes/win81_md.md)]tworzenia aplikacji dla .
+Zestawy SDK platformy są wymagane do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestaw SDK jest wymagany do tworzenia aplikacji dla programu [!INCLUDE[win81](../debugger/includes/win81_md.md)] .
 
 ### <a name="installation"></a>Instalacja
 
-Wszystkie pakiety SDK platformy zostaną zainstalowane w *hklm\software\Microsoft\Microsoft SDKs\\[TPI]\v[TPV]\\ @InstallationFolder = [SDK root]*. W związku [!INCLUDE[win81](../debugger/includes/win81_md.md)] z tym pakiet SDK jest instalowany w witrynie *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+Wszystkie zestawy SDK platformy zostaną zainstalowane w *HKLM\Software\Microsoft\Microsoft SDK \\ [TPI] \V [TPV] \\ @InstallationFolder = [główny zestaw SDK]*. W związku z tym [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestaw SDK jest instalowany w *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
-### <a name="layout"></a>Układ
+### <a name="layout"></a>Layout
 
-SDK platformy mają następujący układ:
+Zestawy SDK platformy mają następujący układ:
 
 ```
 \[InstallationFolder root]
@@ -52,39 +52,39 @@ SDK platformy mają następujący układ:
 
 | Węzeł | Opis |
 |------------------------| - |
-| *Folder Odwołania* | Zawiera pliki binarne zawierające interfejsy API, które mogą być kodowane. Mogą to być pliki lub zestawy metadanych systemu Windows (WinMD). |
-| *Folder DesignTime* | Zawiera pliki, które są potrzebne tylko w czasie przed uruchomieniem/debugowaniem. Mogą to być dokumenty XML, biblioteki, nagłówki, pliki binarne czasu projektowania przybornika, artefakty MSBuild itd.<br /><br /> Dokumenty XML, najlepiej, być umieszczone w folderze *\DesignTime,* ale dokumenty XML dla odwołań będą nadal umieszczane obok pliku referencyjnego w programie Visual Studio. Na przykład doc XML dla odwołania<em>\References\\\\[config] [arch]\sample.dll</em> będzie *\\\References [config]\\[arch]\sample.xml*, a zlokalizowaną wersją tego doc będzie *\References\\[config]\\[arch]\\[locale]\sample.xml*. |
-| *Folder konfiguracji* | Mogą istnieć tylko trzy foldery: *Debug*, *Retail* i *CommonConfiguration*. Autorzy zestawu SDK mogą umieszczać swoje pliki w obszarze *CommonConfiguration,* jeśli ten sam zestaw plików zestawu SDK powinien być używane, niezależnie od konfiguracji, do jakiej będzie kierować konsument zestawu SDK. |
-| *Folder Architektury* | Może istnieć dowolny obsługiwany folder *architektury.* Visual Studio obsługuje następujące architektury: x86, x64, ARM i neutralne. Uwaga: Win32 mapuje na x86, a AnyCPU na neutralne.<br /><br /> MSBuild wygląda tylko w obszarze *\CommonConfiguration\neutral* dla sdk platformy. |
-| *Sdkmanifest.xml* | W tym pliku opisano, jak program Visual Studio powinien korzystać z SDK. Spójrz na manifest SDK dla: [!INCLUDE[win81](../debugger/includes/win81_md.md)]<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Nazwa wyświetlacza:** Wartość wyświetlana przez przeglądarkę obiektów na liście Przeglądaj.<br /><br /> **PlatformaTożowość:** Istnienie tego atrybutu informuje Visual Studio i MSBuild, że SDK jest sdk platformy i że odwołania dodane z niego nie powinny być kopiowane lokalnie.<br /><br /> **TargetFramework:** Ten atrybut jest używany przez program Visual Studio, aby upewnić się, że tylko projekty, które są przeznaczone dla tych samych struktur, jak określono w wartości tego atrybutu może korzystać z SDK.<br /><br /> **MinVSVersion:** Ten atrybut jest używany przez program Visual Studio do korzystania tylko z SDK, które mają do niego zastosowanie.<br /><br /> **Odniesienie:** Ten atrybut musi być określony tylko dla tych odwołań, które zawierają formanty. Aby uzyskać informacje na temat określania, czy odwołanie zawiera formanty, zobacz poniżej. |
+| Folder *odwołań* | Zawiera pliki binarne, które zawierają interfejsy API, które można zakodować. Mogą to być pliki lub zestawy metadanych systemu Windows (WinMD). |
+| Folder *DesignTime* | Zawiera pliki, które są wymagane tylko w czasie przed uruchomieniem/debugowaniem. Mogą to być dokumenty XML, biblioteki, nagłówki, Przybornik plików binarnych czasu projektowania, artefakty programu MSBuild i tak dalej.<br /><br /> Dokumentacja XML zostałaby, najlepiej umieszczona w folderze *\DesignTime* , ale dokumentacja XML dla odwołań będzie nadal umieszczana obok pliku referencyjnego w programie Visual Studio. Na przykład dokument XML dla odwołania<em>\References \\ [config] \\ [arch] \sample.dll</em> będzie *\References \\ [config] \\ [arch] \sample.xml*, a zlokalizowana wersja tego dokumentu będzie *\References \\ [config] \\ [arch] \\ [locale] \sample.xml*. |
+| Folder *konfiguracji* | Może istnieć tylko trzy foldery: *Debug*, *handel detaliczny* i *CommonConfiguration*. Autorzy zestawu SDK mogą umieścić pliki w obszarze *CommonConfiguration* , jeśli ten sam zestaw plików zestawu SDK ma być używany, niezależnie od konfiguracji, która będzie celem odbiorcy zestawu SDK. |
+| Folder *architektury* | Może istnieć każdy obsługiwany folder *architektury* . Program Visual Studio obsługuje następujące architektury: x86, x64, ARM i neutralny. Uwaga: system Win32 jest mapowany na architekturę x86, a następnie jest mapowany na neutralną.<br /><br /> MSBuild sprawdza się tylko w obszarze *\CommonConfiguration\neutral* for Platform SDK. |
+| *SDKManifest.xml* | W tym pliku opisano, jak program Visual Studio powinien korzystać z zestawu SDK. Zapoznaj się z manifestem zestawu SDK dla [!INCLUDE[win81](../debugger/includes/win81_md.md)] :<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Nazwa wyświetlana:** Wartość, która Przeglądarka obiektów wyświetlana na liście Przeglądaj.<br /><br /> **PlatformIdentity:** Istnienie tego atrybutu nakazuje programowi Visual Studio i MSBuild, że zestaw SDK jest zestawem SDK platformy i że odwołania dodane z niego nie powinny zostać skopiowane lokalnie.<br /><br /> **TargetFramework:** Ten atrybut jest używany przez program Visual Studio, aby upewnić się, że tylko projekty, które są przeznaczone dla tych samych platform, jak określono w wartości tego atrybutu mogą korzystać z zestawu SDK.<br /><br /> **Brakuje MinVSVersion:** Ten atrybut jest używany przez program Visual Studio do korzystania tylko z zestawów SDK, które mają do nich zastosowanie.<br /><br /> **Dokumentacja:** Ten atrybut musi być określony tylko dla odwołań zawierających formanty. Aby uzyskać informacje na temat sposobu określania, czy odwołanie zawiera kontrolki, zobacz poniżej. |
 
-## <a name="extension-sdks"></a>SDK rozszerzenia
+## <a name="extension-sdks"></a>Zestawy SDK rozszerzenia
 
-W poniższych sekcjach opisano, co należy zrobić, aby wdrożyć sdk rozszerzenia.
+W poniższych sekcjach opisano, co należy zrobić, aby wdrożyć zestaw SDK rozszerzenia.
 
 ### <a name="installation"></a>Instalacja
 
-SDK rozszerzenia można zainstalować dla określonego użytkownika lub dla wszystkich użytkowników bez określania klucza rejestru. Aby zainstalować pakiet SDK dla wszystkich użytkowników, użyj następującej ścieżki:
+Rozszerzenia SDK można zainstalować dla określonego użytkownika lub dla wszystkich użytkowników bez określania klucza rejestru. Aby zainstalować zestaw SDK dla wszystkich użytkowników, użyj następującej ścieżki:
 
-*%Program Files%\Microsoft\<SDKs\>target platform \v\><numer wersji platformy \ExtensionSDKs*
+*% Program Files%\Microsoft SDK \<target platform\> \v<numer wersji platformy \> \ExtensionSDKs*
 
 W przypadku instalacji specyficznej dla użytkownika należy użyć następującej ścieżki:
 
-*%USERPROFILE%\AppData\Local\Microsoft SDKs\<\>target platform \v<\>numer wersji platformy \ExtensionSDKs*
+*%USERPROFILE%\AppData\Local\Microsoft SDK \<target platform\> \v<numer wersji platformy \> \ExtensionSDKs*
 
 Jeśli chcesz użyć innej lokalizacji, musisz wykonać jedną z dwóch czynności:
 
-1. Określ go w kluczu rejestru:
+1. Określ ją w kluczu rejestru:
 
-     **HKLM\Software\Microsoft\Microsoft\<SDKs target platform>\v<\>numer wersji platformy \ExtensionSDKs\<SDKName \<>SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft SDK \<target platform> \v<numer wersji platformy \> \ExtensionSDKs\<SDKName>\<SDKVersion>**\
 
-     i dodaj podklucz (domyślny), `<path to SDK><SDKName><SDKVersion>`który ma wartość .
+     i Dodaj podklucz (domyślny), który ma wartość `<path to SDK><SDKName><SDKVersion>` .
 
-2. Dodaj właściwość `SDKReferenceDirectoryRoot` MSBuild do pliku projektu. Wartość tej właściwości jest osikowo rozdzielona lista katalogów, w których znajdują się SDK rozszerzenia, do których chcesz się odwołać.
+2. Dodaj właściwość programu MSBuild `SDKReferenceDirectoryRoot` do pliku projektu. Wartość tej właściwości jest rozdzielaną średnikami listą katalogów, w których znajdują się zestawy SDK rozszerzenia, które chcesz odwołać.
 
 ### <a name="installation-layout"></a>Układ instalacji
 
-ZestawY SDK rozszerzeń mają następujący układ instalacji:
+Zestawy SDK rozszerzeń mają następujący układ instalacji:
 
 ```
 \<ExtensionSDKs root>
@@ -103,13 +103,13 @@ ZestawY SDK rozszerzeń mają następujący układ instalacji:
 
 ```
 
-1. \\<SDKName\> \\<SDKVersion\>: nazwa i wersja rozszerzenia SDK pochodzi od odpowiednich nazw folderów w ścieżce do katalogu głównego SDK. MSBuild używa tej tożsamości, aby znaleźć SDK na dysku, a program Visual Studio wyświetla tę tożsamość w oknie **Właściwości** i **Menedżerze odwołań.**
+1. \\<SDKName \> \\<SDKVersion \> : Nazwa i wersja rozszerzenia SDK są wyprowadzane z odpowiednich nazw folderów w ścieżce do katalogu głównego zestawu SDK. MSBuild używa tej tożsamości do znajdowania zestawu SDK na dysku, a program Visual Studio Wyświetla tę tożsamość w oknie **Właściwości** i w oknie dialogowym **Menedżer odwołań** .
 
-2. *Folder Odwołania:* pliki binarne zawierające interfejsy API. Mogą to być pliki lub zestawy metadanych systemu Windows (WinMD).
+2. Folder *References* : pliki binarne, które zawierają interfejsy API. Mogą to być pliki lub zestawy metadanych systemu Windows (WinMD).
 
-3. *Folder Redist:* pliki, które są potrzebne do środowiska uruchomieniowego/debugowania i powinny zostać spakowane jako część aplikacji użytkownika. Wszystkie pliki binarne powinny być umieszczone pod *\redist\\<config\> \\<arch\>*, a nazwy binarne powinny mieć następujący format, aby zapewnić unikatowość: *]*\<> firmy. \<> produktu. \<celu>. \<>rozszerzenia <em>. Na przykład *Microsoft.Cpp.Build.dll</em>. Wszystkie pliki o nazwach, które mogą kolidować z nazwami plików z innych SDK (na przykład javascript, css, pri, xaml, png i jpg) powinny być umieszczone pod <em>\redist\\<config\> \\<\> \\ arch<\> \* sdkname z wyjątkiem plików skojarzonych z formantymi XAML. Pliki te powinny być umieszczone pod\\ *\redist\> \\<config\> \\<arch<componentname\></em>.
+3. Folder *Redist* : pliki, które są potrzebne do środowiska uruchomieniowego/debugowania, powinny być spakowane jako część aplikacji użytkownika. Wszystkie pliki binarne należy umieścić poniżej *\redist \\<config \> \\<Arch \> *, a nazwy binarne powinny mieć następujący format, aby zapewnić unikatowość: *]* \<company> . \<product> \<purpose> \<extension> .. <em>. Na przykład * Microsoft.Cpp.Build.dll</em>. Wszystkie pliki o nazwach, które mogą koliduje z nazwami plików z innych zestawów SDK (na przykład JavaScript, CSS, pri, XAML, PNG i jpg), powinny być umieszczone poniżej <em>\redist \\<config \> \\<Arch \> \\<SDKName \> \* , z wyjątkiem plików, które są skojarzone z kontrolkami XAML. Pliki te powinny być umieszczone poniżej * \redist \\<config \> \\<Arch \> \\<ComponentName \> \\ </em>.
 
-4. *Folder DesignTime:* pliki, które są potrzebne tylko w czasie przed uruchomieniem/debugowaniem i nie powinny być pakowane jako część aplikacji użytkownika. Mogą to być dokumenty XML, biblioteki, nagłówki, pliki binarne czasu projektowania przybornika, artefakty MSBuild i tak dalej. Każdy SDK, który jest przeznaczony do użycia przez projekt macierzysty musi mieć plik *SDKName.props.* Poniżej przedstawiono przykład tego typu pliku.
+4. Folder *DesignTime* : pliki, które są wymagane tylko w czasie przed uruchomieniem/debugowaniem i nie powinny być spakowane jako część aplikacji użytkownika. Mogą to być dokumenty XML, biblioteki, nagłówki, Przybornik plików binarnych czasu projektowania, artefakty programu MSBuild i tak dalej. Każdy zestaw SDK, który jest przeznaczony do użycia przez projekt natywny, musi mieć plik *SDKName. props* . Poniżej przedstawiono przykład tego typu pliku.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -127,15 +127,15 @@ ZestawY SDK rozszerzeń mają następujący układ instalacji:
 
    ```
 
-    Dokumenty referencyjne XML są umieszczane obok pliku referencyjnego. Na przykład dokumentem referencyjnym XML dla *\References\\ \> \\<config\><arch \sample.dll* assembly jest *\References\\<config\> \\<\>arch \sample.xml*, a zlokalizowana wersja tego dokumentu to *\References\\<config\>\> \\<arch\> \\<locale \sample.xml*.
+    Dokumenty odwołań XML są umieszczane obok pliku referencyjnego. Na przykład dokument referencyjny XML dla zestawu *\References \\<config \> \\<Arch \>\sample.dll* jest *\References \\<konfiguracji \> \\<Arch \>\sample.xml*, a zlokalizowana wersja tego dokumentu to *\References \\<konfiguracja \> \\<Arch \> \\<ustawienia regionalne \>\sample.xml*.
 
-5. *Folder konfiguracji:* trzy podfoldery: *Debug*, *Handel detaliczny*i *CommonConfiguration*. Autorzy zestawu SDK mogą umieszczać swoje pliki w obszarze *CommonConfiguration,* gdy ten sam zestaw plików zestawu SDK powinien być zużywany, niezależnie od konfiguracji, do jakiej ma dążyć konsument zestawu SDK.
+5. Folder *konfiguracji* : trzy podfoldery: *debugowanie*, *sprzedaż detaliczna*i *CommonConfiguration*. Autorzy zestawu SDK mogą umieszczać swoje pliki w *CommonConfiguration* , gdy ten sam zestaw plików zestawu SDK powinien być używany, niezależnie od konfiguracji wskazywanej przez klienta zestawu SDK.
 
-6. *Folder architektury:* obsługiwane są następujące architektury: x86, x64, ARM, neutralne. Win32 mapuje na x86, a AnyCPU na neutralne.
+6. Folder *architektury* : obsługiwane są następujące architektury: x86, x64, ARM, neutralna. System Win32 jest mapowany na architekturę x86 i jest mapowany na neutralną.
 
-### <a name="sdkmanifestxml"></a>Sdkmanifest.xml
+### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-Plik *SDKManifest.xml* opisuje, jak program Visual Studio powinien korzystać z SDK. Poniżej przedstawiono przykład:
+Plik *SDKManifest.xml* opisuje, jak program Visual Studio powinien korzystać z zestawu SDK. Poniżej przedstawiono przykład:
 
 ```
 <FileList>
@@ -161,45 +161,45 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 Poniższa lista zawiera elementy pliku:
 
-1. DisplayName: wartość, która pojawia się w Menedżerze odwołań, Eksploratorze rozwiązań, przeglądarce obiektów i innych lokalizacjach w interfejsie użytkownika programu Visual Studio.
+1. DisplayName: wartość wyświetlana w Menedżerze odwołań, Eksplorator rozwiązań, Przeglądarka obiektów i innych lokalizacjach w interfejsie użytkownika programu Visual Studio.
 
-2. ProductFamilyName: Ogólna nazwa produktu SDK. Na przykład [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] pakiet SDK nosi nazwy "Microsoft.WinJS.1.0" i "Microsoft.WinJS.2.0", które należą do tej samej rodziny produktów Z rodziny produktów SDK,"Microsoft.WinJS". Ten atrybut umożliwia Visual Studio i MSBuild do tego połączenia. Jeśli ten atrybut nie istnieje, nazwa SDK jest używana jako nazwa rodziny produktu.
+2. ProductFamilyName: ogólna nazwa produktu SDK. Na przykład [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] zestaw SDK nosi nazwę "Microsoft. WinJS. 1.0" i "Microsoft. WinJS. 2.0", który należy do tej samej rodziny produktów zestawu SDK "Microsoft. WinJS". Ten atrybut umożliwia programom Visual Studio i MSBuild nawiązanie tego połączenia. Jeśli ten atrybut nie istnieje, nazwa zestawu SDK jest używana jako nazwa rodziny produktów.
 
-3. FrameworkIdentity: Określa zależność od co najmniej jednej bibliotek składników systemu Windows. Wartość tego atrybutu jest umieszczana w manifeście aplikacji zużywającej. Ten atrybut ma zastosowanie tylko do bibliotek składników systemu Windows.
+3. FrameworkIdentity: określa zależność od co najmniej jednej biblioteki składników systemu Windows. Wartość tego atrybutu jest umieszczana w manifeście aplikacji zużywanej. Ten atrybut ma zastosowanie tylko do bibliotek składników systemu Windows.
 
-4. TargetFramework: Określa zestawy SDK, które są dostępne w Menedżerze odwołań i przyborniku. Jest to lista wstępnie rozdzielanych średnikami monikerów struktury docelowej, na przykład ".NET Framework, version=v2.0; .NET Framework, version=v4.5.1". Jeśli określono kilka wersji tej samej struktury docelowej, Menedżer odwołań używa najniższej określonej wersji do celów filtrowania. Na przykład jeśli określono ".NET Framework, version=v2.0; .NET Framework, version=v4.5.1", Menedżer odwołań użyje ".NET Framework, version=v2.0". Jeśli określony profil struktury docelowej jest określony, tylko ten profil będzie używany przez Menedżera odwołań do celów filtrowania. Na przykład po określeniu "Silverlight, version=v4.0, profile=WindowsPhone" Menedżer odwołań filtruje tylko profil systemu Windows Phone; projekt docelowy pełnej silverlight 4.0 Framework nie widzi SDK w Menedżerze odwołań.
+4. TargetFramework: określa zestawy SDK, które są dostępne w Menedżerze odwołań i przyborniku. Jest to rozdzielana średnikami lista monikerów platformy docelowej, na przykład ".NET Framework, Version = v 2.0, .NET Framework, Version = v 4.5.1". Jeśli określono kilka wersji tej samej platformy docelowej, Menedżer odwołań używa najniższej określonej wersji do celów filtrowania. Na przykład jeśli określono ".NET Framework, Version = v 2.0; .NET Framework, Version = v 4.5.1", Menedżer odwołań będzie używać ".NET Framework, Version = v 2.0". Jeśli określony jest konkretny Profil platformy docelowej, tylko ten profil będzie używany przez Menedżera odwołań do celów filtrowania. Na przykład jeśli określono "Silverlight, Version = v 4.0, profil = WindowsPhone", Menedżer odwołań filtruje tylko dla profilu Windows Phone; projekt przeznaczony dla pełnej struktury Silverlight 4,0 nie widzi zestawu SDK w Menedżerze odwołań.
 
-5. MinVSVersion: minimalna wersja programu Visual Studio.
+5. Brakuje MinVSVersion: minimalna wersja programu Visual Studio.
 
-6. MaxPlatformVerson: Maksymalna wersja platformy docelowej powinna służyć do określenia wersji platformy, na których nie będzie działać moduł SDK rozszerzenia. Na przykład pakiet środowiska wykonawczego programu Microsoft Visual C++ w wersji 11.0 powinien odwoływać się tylko do projektów systemu Windows 8. Tak więc, Projekt Systemu Windows 8 MaxPlatformVersion jest 8.0. Oznacza to, że Menedżer odwołań odfiltruje pakiet środowiska wykonawczego programu Microsoft Visual C++ dla projektu systemu [!INCLUDE[win81](../debugger/includes/win81_md.md)] Windows 8.1, a program MSBuild zgłasza błąd, gdy projekt odwołuje się do niego. Uwaga: ten element jest [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]obsługiwany począwszy od .
+6. MaxPlatformVerson: Maksymalna wersja platformy docelowej powinna być używana do określania wersji platformy, w których zestaw SDK rozszerzenia nie będzie działać. Na przykład pakiet środowiska uruchomieniowego Microsoft Visual C++ v 11.0 powinien być przywoływany tylko przez projekty systemu Windows 8. W tym przypadku MaxPlatformVersion projektu systemu Windows 8 to 8,0. Oznacza to, że Menedżer odwołań filtruje pakiet środowiska uruchomieniowego Microsoft Visual C++ dla projektu Windows 8.1, a MSBuild zgłasza błąd, gdy [!INCLUDE[win81](../debugger/includes/win81_md.md)] projekt odwołuje się do niego. Uwaga: ten element jest obsługiwany, rozpoczynając od [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] .
 
-7. AppliesTo: Określa szepy SDK, które są dostępne w Menedżerze odwołań, określając odpowiednie typy projektów programu Visual Studio. Rozpoznawano dziewięć wartości: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, Managed i Native. Autor SDK może używać i ("+"), lub ("&#124;"), nie ("!") operatorów, aby dokładnie określić zakres typów projektów, które mają zastosowanie do SDK.
+7. AppliesTo: określa zestawy SDK, które są dostępne w Menedżerze odwołań przez określenie odpowiednich typów projektów programu Visual Studio. Są rozpoznawane dziewięć wartości: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, zarządzane i natywne. Autor zestawu SDK może używać i ("+") lub ("&#124;"), a nie ("!") Operatory, aby określić dokładnie zakres typów projektów, które są stosowane do zestawu SDK.
 
-    WindowsAppContainer identyfikuje projekty [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] dla aplikacji.
+    WindowsAppContainer identyfikuje projekty dla [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.
 
-8. SupportPrefer32Bit: Obsługiwane wartości to "True" i "False". Wartość domyślna to "Prawda". Jeśli wartość jest ustawiona na "False", MSBuild zwraca błąd dla [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projektów (lub ostrzeżenie dla projektów pulpitu), jeśli projekt, który odwołuje się do zestawu SDK ma Prefer32Bit włączone. Aby uzyskać więcej informacji na temat Prefer32Bit, zobacz [Strona kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md) lub [Strona Kompilacja, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).
+8. SupportPrefer32Bit: obsługiwane wartości to "true" i "false". Wartość domyślna to "true". Jeśli wartość jest równa "false", MSBuild zwraca błąd dla [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projektów (lub ostrzeżenie dla projektów klasycznych), jeśli projekt, który odwołuje się do zestawu SDK, ma włączone Prefer32Bit. Aby uzyskać więcej informacji na temat Prefer32Bit, zobacz [stronę Kompilacja, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md) lub [stronę kompilacji, projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).
 
-9. ObsługiwaneArchitektury: Lista ograniczona średnikami architektury, które obsługuje zestaw SDK. MSBuild wyświetla ostrzeżenie, jeśli architektura docelowego SDK w projekcie zużywającym nie jest obsługiwana. Jeśli ten atrybut nie jest określony, MSBuild nigdy nie wyświetla tego typu ostrzeżenia.
+9. SupportedArchitectures: rozdzielana średnikami lista architektur obsługiwanych przez zestaw SDK. Program MSBuild wyświetla ostrzeżenie, jeśli dostosowanej architektury zestawu SDK w projekcie zużywanym nie jest obsługiwana. Jeśli ten atrybut nie jest określony, MSBuild nigdy nie wyświetla tego typu ostrzeżenia.
 
-10. SupportsMultipleVersions: Jeśli ten atrybut jest ustawiony na **Błąd** lub **Ostrzeżenie,** MSBuild wskazuje, że ten sam projekt nie może odwoływać się do wielu wersji tej samej rodziny zestawu SDK. Jeśli ten atrybut nie istnieje lub jest ustawiony na **Zezwalaj,** MSBuild nie wyświetla tego typu błędu lub ostrzeżenia.
+10. SupportsMultipleVersions: Jeśli ten atrybut ma wartość **Error** lub **Warning**, MSBuild wskazuje, że ten sam projekt nie może odwoływać się do wielu wersji tej samej rodziny zestawów SDK. Jeśli ten atrybut nie istnieje lub jest ustawiony na **Zezwalaj**, MSBuild nie wyświetla tego typu błędu ani Ostrzeżenia.
 
-11. AppX: Określa ścieżkę do pakietów aplikacji dla biblioteki składników systemu Windows na dysku. Ta wartość jest przekazywana do składnika rejestracji biblioteki składników systemu Windows podczas debugowania lokalnego. Konwencją nazewnictwa nazwy pliku jest * \<firma\<>.> produktu. \<> architektury. \<> konfiguracyjne. Wersja \<>.appx*. Konfiguracja i architektura są opcjonalne w nazwie atrybutu i wartości atrybutu, jeśli nie mają zastosowania do biblioteki składników systemu Windows. Ta wartość ma zastosowanie tylko do bibliotek składników systemu Windows.
+11. AppX: Określa ścieżkę do pakietów aplikacji dla biblioteki składników systemu Windows na dysku. Ta wartość jest przenoszona do składnika rejestracji biblioteki składników systemu Windows podczas lokalnego debugowania. Konwencja nazewnictwa dla nazwy pliku to * \<Company> . \<Product> . \<Architecture> . \<Configuration> \<Version> . APPX*. Konfiguracja i architektura są opcjonalne w nazwie atrybutu i wartości atrybutu, jeśli nie mają zastosowania do biblioteki składników systemu Windows. Ta wartość ma zastosowanie tylko do bibliotek składników systemu Windows.
 
-12. CopyRedistToSubDirectory: Określa, gdzie pliki w *folderze \redist* powinny być kopiowane względem katalogu głównego pakietu aplikacji (czyli **lokalizacji pakietu** wybranego w Kreatorze tworzenia **pakietu aplikacji)** i katalogu głównego układu środowiska uruchomieniowego. Domyślną lokalizacją jest katalog główny pakietu aplikacji i układu **F5.**
+12. CopyRedistToSubDirectory: określa, gdzie należy skopiować pliki w folderze *\redist* względem katalogu głównego pakietu aplikacji (czyli **lokalizacji pakietu** wybranej w kreatorze **tworzenia pakietu aplikacji** ) i katalogu głównego układu środowiska uruchomieniowego. Domyślną lokalizacją jest katalog główny pakietu aplikacji i układu **F5** .
 
-13. DependsOn: Lista tożsamości SDK, które definiują SDK, od których zależy ten SDK. Ten atrybut jest wyświetlany w okienku szczegółów Menedżera odwołań.
+13. DependsOn: Lista tożsamości zestawu SDK, które definiują zestawy SDK, od których zależy ten zestaw SDK. Ten atrybut jest wyświetlany w okienku szczegółów w Menedżerze odwołań.
 
-14. MoreInfo: Adres URL strony sieci Web, który zapewnia pomoc i więcej informacji. Ta wartość jest używana w łączu Więcej informacji w prawym okienku Menedżera odwołań.
+14. MoreInfo: adres URL strony sieci Web, która zawiera pomoc i więcej informacji. Ta wartość jest używana w linku więcej informacji w prawym okienku w Menedżerze odwołań.
 
-15. Typ rejestracji: Określa rejestrację WinMD w manifeście aplikacji i jest wymagany dla natywnego winmd, który ma bibliotekę DLL implementacji odpowiednika.
+15. Typ rejestracji: określa rejestrację WinMD w manifeście aplikacji i jest wymagana dla natywnej WinMD, która ma odpowiednią bibliotekę DLL implementacji.
 
-16. Odwołanie do pliku: Określono tylko dla tych odwołań, które zawierają formanty lub są natywnymi winmdami. Aby uzyskać informacje dotyczące określania, czy odwołanie zawiera formanty, zobacz [Określanie lokalizacji elementów przybornika](#ToolboxItems) poniżej.
+16. Odwołanie do pliku: określone tylko dla tych odwołań, które zawierają kontrolki lub natywnych WinMD. Aby uzyskać informacje na temat sposobu określania, czy odwołanie zawiera kontrolki, zobacz sekcję [Określanie lokalizacji elementów przybornika](#ToolboxItems) poniżej.
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Określanie lokalizacji elementów przybornika
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Określ lokalizację elementów przybornika
 
-**ToolBoxItems** element schematu *SDKManifest.xml* określa kategorię i lokalizację elementów przybornika w platformie i rozszerzenia SDK. Poniższe przykłady pokazują, jak określić różne lokalizacje. Dotyczy to odwołań do winmd lub biblioteki DLL.
+Element **ToolBoxItems** schematu *SDKManifest.xml* Określa kategorię i lokalizację elementów przybornika w zestawach SDK platformy i rozszerzenia. W poniższych przykładach pokazano, jak określić różne lokalizacje. Ma to zastosowanie do odwołań WinMD lub bibliotek DLL.
 
-1. Umieść formanty w kategorii domyślnej przybornika.
+1. Umieść formanty w domyślnej kategorii przybornika.
 
     ```xml
     <File Reference = "sample.winmd">
@@ -207,7 +207,7 @@ Poniższa lista zawiera elementy pliku:
     </File>
     ```
 
-2. Umieść formanty pod określoną nazwą kategorii.
+2. Umieść kontrolki pod nazwą określonej kategorii.
 
     ```xml
     <File Reference = "sample.winmd">
@@ -215,7 +215,7 @@ Poniższa lista zawiera elementy pliku:
     </File>
     ```
 
-3. Umieszczaj formanty pod określonymi nazwami kategorii.
+3. Umieść kontrolki pod określonymi nazwami kategorii.
 
     ```xml
     <File Reference = "sample.winmd">
@@ -226,7 +226,7 @@ Poniższa lista zawiera elementy pliku:
     </File>
     ```
 
-4. Umieść formanty w różnych nazwach kategorii w programie Blend i Visual Studio.
+4. Umieść kontrolki pod różnymi nazwami kategorii w programie Blend i Visual Studio.
 
     ```xml
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -236,7 +236,7 @@ Poniższa lista zawiera elementy pliku:
     </File>
     ```
 
-5. Wyliczaj określone formanty inaczej w blendu i programie Visual Studio.
+5. Wyliczanie określonych kontrolek różni się w programie Blend i Visual Studio.
 
     ```xml
     <File Reference = "sample.winmd">
@@ -247,7 +247,7 @@ Poniższa lista zawiera elementy pliku:
     </File>
     ```
 
-6. Wyliczyć określone formanty i umieścić je w visual studio wspólnej ścieżki lub tylko w grupie Wszystkie formanty.
+6. Wylicz określone kontrolki i umieść je w ramach wspólnej ścieżki programu Visual Studio lub tylko w grupie wszystkie kontrolki.
 
     ```xml
     <File Reference = "sample.winmd">
@@ -258,7 +258,7 @@ Poniższa lista zawiera elementy pliku:
     </File>
     ```
 
-7. Wyliczanie określonych formantów i pokaż tylko określonego zestawu w ChooseItems bez ich w przyborniku.
+7. Wyliczanie określonych kontrolek i wyświetlanie tylko określonego zestawu w ChooseItems bez ich w przyborniku.
 
     ```xml
     <File Reference = "sample.winmd">
@@ -269,6 +269,6 @@ Poniższa lista zawiera elementy pliku:
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Instruktaż: Tworzenie sdk przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
-- [Instruktaż: Tworzenie sdk przy użyciu języka C# lub Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
+- [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
+- [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)

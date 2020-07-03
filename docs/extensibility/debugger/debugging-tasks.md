@@ -1,7 +1,7 @@
 ---
-title: Zadania debugowania | Dokumenty firmy Microsoft
+title: Zadania debugowania | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
@@ -10,39 +10,39 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41f53ab1392ea3c31908faf65a871fa100fbb3f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80738959"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903557"
 ---
-# <a name="debug-tasks"></a>Zadania debugowania
-Aby debugować program, musi zostać uruchomiony i aparat debugowania (DE) musi być dołączony do niego, w przeciwnym razie DE musi być dołączony do wcześniej uruchomionego programu. Po dołączeniu DE musi generować pewne zdarzenia uruchamiania. W odpowiedzi pakiet debugowania próbuje powiązać punkty przerwania ustawione w IDE. Gdy program osiągnie powiązany punkt przerwania, zatrzymuje się i czeka na dane wejściowe użytkownika.
+# <a name="debug-tasks"></a>Debuguj zadania
+Aby debugować program, musi on zostać uruchomiony, a aparat debugowania (DE) musi być dołączony do niego lub w przeciwnym razie element DE musi być dołączony do wcześniej uruchomionego programu. Po dołączeniu Usuń musi generować pewne zdarzenia uruchamiania. W odpowiedzi pakiet debugowania próbuje powiązać punkty przerwania ustawione w IDE. Gdy program trafi związany z punktem przerwania, zatrzymuje i czeka na dane wejściowe użytkownika.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Problemy z bezpieczeństwem](../../extensibility/debugger/security-issues.md) W tym artykule omówiono kroki zabezpieczeń, które są potrzebne do debugowania programu.
+ [Problemy z zabezpieczeniami](../../extensibility/debugger/security-issues.md) W tym artykule omówiono kroki zabezpieczeń, które są niezbędne do debugowania programu.
 
- [Uruchamianie programu](../../extensibility/debugger/launching-a-program.md) Zawiera instrukcje krok po kroku dotyczące określania de, który wywołuje system operacyjny, aby uruchomić program.
+ [Uruchamianie programu](../../extensibility/debugger/launching-a-program.md) Zawiera instrukcje krok po kroku dotyczące sposobu określania, która wywołuje system operacyjny, aby uruchomić program.
 
- [Dołączanie bezpośrednio do programu](../../extensibility/debugger/attaching-directly-to-a-program.md) Opisuje proces używany do debugowania programu w procesie, który jest już uruchomiony.
+ [Dołącz bezpośrednio do programu](../../extensibility/debugger/attaching-directly-to-a-program.md) Opisuje proces używany do debugowania programu w procesie, który jest już uruchomiony.
 
- [Wysyłanie zdarzeń startowych po uruchomieniu](../../extensibility/debugger/sending-startup-events-after-a-launch.md) Wyświetla listę zdarzeń, które mają miejsce po de jest dołączony do programu, dopóki program jest w głównym punkcie wejścia i jest gotowy do debugowania.
+ [Wysyłaj zdarzenia uruchamiania po](../../extensibility/debugger/sending-startup-events-after-a-launch.md) uruchomieniu Wyświetla listę zdarzeń, które miały miejsce po dołączeniu do programu, aż do momentu, w którym program jest w jego głównym punkcie wejścia i jest gotowy do debugowania.
 
- [Kontrola wykonania](../../extensibility/debugger/control-of-execution.md) W tym artykule wyjaśniono, jak DE zazwyczaj wysyła zdarzenie punktu wejścia, zdarzenie zakończenia obciążenia lub zdarzenie zatrzymania, w zależności od okoliczności.
+ [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md) Wyjaśnia, w jaki sposób zwykle wysyła zdarzenie punktu wejścia, zdarzenie ukończenia obciążenia lub zdarzenie zatrzymywania, w zależności od okoliczności.
 
- [Punkty przerwania wiązania](../../extensibility/debugger/binding-breakpoints.md) Opisuje, jak, jeśli użytkownik ustawia punkt przerwania, IDE formułuje żądanie i monituje sesji debugowania, aby utworzyć punkt przerwania.
+ [Powiązywanie punktów przerwania](../../extensibility/debugger/binding-breakpoints.md) Opisuje, w jaki sposób, jeśli użytkownik ustawia punkt przerwania, IDE zgłasza żądanie i poprosi o sesję debugowania, aby utworzyć punkt przerwania.
 
- [Ocena wyrażeń](../../extensibility/debugger/evaluating-expressions.md) Wyjaśniono, jak wyrażenia są tworzone i co się dzieje, gdy wyrażenie jest oceniane.
+ [Oceń wyrażenia](../../extensibility/debugger/evaluating-expressions.md) Wyjaśnia sposób tworzenia wyrażeń i co się dzieje, gdy wyrażenie jest oceniane.
 
- [Wizualizuj i wyświetlaj dane](../../extensibility/debugger/visualizing-and-viewing-data.md) W tym artykule wyjaśniono, jak wizualizatory typów i przeglądarki niestandardowe są obsługiwane przez oceniającego wyrażenie (EE).
+ [Wizualizowanie i wyświetlanie danych](../../extensibility/debugger/visualizing-and-viewing-data.md) Wyjaśnia, jak Wizualizatory typów i niestandardowe osoby przeglądające są obsługiwane przez ewaluatora wyrażeń.
 
-## <a name="related-sections"></a>Powiązane sekcje
- [Pojęcia debugera](../../extensibility/debugger/debugger-concepts.md) W tym artykule opisano główne debugowanie koncepcji architektury.
+## <a name="related-sections"></a>Sekcje pokrewne
+ [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md) Opisuje główne koncepcje dotyczące architektury debugowania.
 
- [Składniki debugera](../../extensibility/debugger/debugger-components.md) Zawiera omówienie składników debugowania programu Visual Studio, które obejmują DE, EE i obsługi symboli (SH).
+ [Składniki debugera](../../extensibility/debugger/debugger-components.md) Zawiera omówienie składników debugowania programu Visual Studio, które obejmują procedurę obsługi DE, EE i symboli (SH).
 
- [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md) Wyjaśniono, jak DE działa jednocześnie w kontekście oceny kodu, dokumentacji i wyrażenia. Opisuje, dla każdego z trzech kontekstów, lokalizacji, pozycji lub oceny istotne dla niego.
+ [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md) Wyjaśnia, jak działa w ramach kodu, dokumentacji i kontekstów oceny wyrażenia. Opisuje dla każdego z trzech kontekstów, lokalizację, pozycję lub ocenę, która jest dla niego odpowiednia.
 
 ## <a name="see-also"></a>Zobacz też
  [Wprowadzenie](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

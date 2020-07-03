@@ -1,7 +1,7 @@
 ---
-title: Tworzenie punktu przerwania | Dokumenty firmy Microsoft
+title: Tworzenie punktu przerwania | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - breakpoints, creating
 - debugging [Debugging SDK], creating breakpoints
@@ -11,18 +11,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d252f1310c3e251c44525cd94c4d9a2943d8171d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739053"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903620"
 ---
-# <a name="create-a-breakpoint"></a>Tworzenie punktu przerwania
+# <a name="create-a-breakpoint"></a>Utwórz punkt przerwania
 Poniżej opisano proces tworzenia punktu przerwania.
 
-## <a name="methods-in-breakpoint-creation"></a>Metody tworzenia punktów przerwania
- Po załadowaniu modułu, który jest potrzebny do powiązania punktu przerwania, menedżer debugowania sesji (SDM) wywołuje następujące metody:
+## <a name="methods-in-breakpoint-creation"></a>Metody w tworzeniu punktu przerwania
+ Gdy ładowany jest moduł, który jest wymagany do powiązania punktu przerwania, Menedżer debugowania sesji (SDM) wywołuje następujące metody:
 
 1. [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)
 
@@ -31,11 +31,11 @@ Poniżej opisano proces tworzenia punktu przerwania.
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 
     > [!NOTE]
-    > **CanBind** jest wywoływana tylko wtedy, gdy użytkownik tworzy punkt przerwania z okna **Punkty przerwania.**
+    > Element **rebind** jest wywoływany tylko wtedy, gdy użytkownik wykonuje punkt przerwania z okna **punkty przerwania** .
 
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 
 5. [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)
+- [Zdarzenia debugera wywołań](../../extensibility/debugger/calling-debugger-events.md)

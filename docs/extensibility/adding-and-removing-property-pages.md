@@ -1,7 +1,7 @@
 ---
-title: Dodawanie i usuwanie stron właściwości | Dokumenty firmy Microsoft
+title: Dodawanie i usuwanie stron właściwości | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
@@ -15,24 +15,24 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c3df3104e48ca0ee972e1a27f2c32fd0661088b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: fdc12f0938d3296cf1bfca37d0b9b01e0f2a704a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740206"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903570"
 ---
 # <a name="add-and-remove-property-pages"></a>Dodawanie i usuwanie stron właściwości
 
-Projektant projektu udostępnia scentralizowaną lokalizację do zarządzania właściwościami projektu, ustawieniami i zasobami w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]programie . Pojawia się jako pojedyncze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno w zintegrowanym środowisku programistycznym (IDE) i zawiera wiele okienek po prawej stronie, które są dostępne za pośrednictwem kart po lewej stronie. Okienka (często nazywane stronami właściwości) w projektancie projektu różnią się w zależności od typu projektu i języka. Projektant projektu można uzyskać za pomocą polecenia **Właściwości** w menu **Projekt.**
+Projektant projektu zapewnia scentralizowaną lokalizację do zarządzania właściwościami, ustawieniami i zasobami projektu w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Jest on wyświetlany jako pojedyncze okno w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE) i zawiera kilka okienek z prawej strony, do których dostęp odbywa się za pomocą kart po lewej stronie. Okienka (często nazywane stronami właściwości) projektanta projektu różnią się w zależności od typu projektu i języka. Dostęp do projektanta projektu można uzyskać za pomocą polecenia **Właściwości** w menu **projekt** .
 
-Podtyp projektu często musi wyświetlać dodatkowe strony właściwości w Projektancie projektu. Podobnie niektóre podtypy projektu mogą wymagać usunięcia stron wbudowanych właściwości. Aby to zrobić, podtyp projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> musi zaimplementować interfejs i zastąpić <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metodę. Zastępując tę metodę i `propId` używając parametru zawierającego jedną <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> z wartości wyliczenia, można filtrować, dodawać lub usuwać właściwości projektu. Na przykład może być konieczne dodanie strony do stron właściwości zależnych od konfiguracji. Aby to zrobić, należy filtrować strony właściwości zależne od konfiguracji, a następnie dodać nową stronę do istniejącej listy.
+Podtyp projektu często musi wyświetlać dodatkowe strony właściwości w projektancie projektu. Podobnie niektóre podtypy projektu mogą wymagać usunięcia wbudowanych stron właściwości. Aby wykonać te czynności, podtyp projektu musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejs i przesłaniać <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metodę. Zastępując tę metodę i używając `propId` parametru zawierającego jedną z wartości <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> wyliczenia, można filtrować, dodawać lub usuwać właściwości projektu. Na przykład może być konieczne dodanie strony do stron właściwości zależnych od konfiguracji. W tym celu należy odfiltrować strony właściwości zależne od konfiguracji, a następnie dodać nową stronę do istniejącej listy.
 
 ## <a name="add-and-remove-property-pages-in-project-designer"></a>Dodawanie i usuwanie stron właściwości w projektancie projektu
 
-### <a name="remove-a-property-page"></a>Usuwanie strony właściwości
+### <a name="remove-a-property-page"></a>Usuń stronę właściwości
 
-1. Zastąpuj `GetProperty(uint itemId, int propId, out object property)` metodę filtrowania stron `clsids` właściwości i uzyskaj listę.
+1. Zastąp `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości i uzyskać `clsids` listę.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ Podtyp projektu często musi wyświetlać dodatkowe strony właściwości w Proj
     }
     ```
 
-2. Usuń stronę **Zdarzenia kompilacji** z listy uzyskane. `clsids`
+2. Usuń stronę **zdarzeń kompilacji** z uzyskanej `clsids` listy.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -168,7 +168,7 @@ Podtyp projektu często musi wyświetlać dodatkowe strony właściwości w Proj
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. Zastąpuj `GetProperty(uint itemId, int propId, out object property)` metodę filtrowania stron `clsids` właściwości, uzyskaj listę i dodaj nową stronę właściwości.
+3. Przesłoń `GetProperty(uint itemId, int propId, out object property)` metodę, aby filtrować strony właściwości, uzyskać `clsids` listę i dodać nową stronę właściwości.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

@@ -1,5 +1,5 @@
 ---
-title: '&lt;sygnatura&gt; elementu (wdrożenie ClickOnce) | Microsoft Docs'
+title: '&lt;Signature — &gt; element (wdrożenie ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,32 +14,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f69dcec6bbee5358184b74a71274cb26e4de60b3
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806845"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835423"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;podpisu elementu&gt; (wdrożenie ClickOnce)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature — &gt; element (wdrażanie ClickOnce)
 Zawiera informacje niezbędne do podpisania cyfrowo tego manifestu wdrożenia.
 
 ## <a name="syntax"></a>Składnia
 
 ```xml
 
-      <Signature> 
+<Signature> 
    XML signature information 
 </Signature>
 ```
 
 ## <a name="remarks"></a>Uwagi
- Podpisywanie manifestu wdrożenia przy użyciu podpisu koperty jest opcjonalne, ale zalecane. Aby uzyskać więcej informacji na temat podpisywania plików XML, zapoznaj się z zaleceniami organizacja World Wide Web Consortium, "składnią i przetwarzaniem podpisu XML" opisanym w [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).
+ Podpisywanie manifestu wdrożenia przy użyciu podpisu koperty jest opcjonalne, ale zalecane. Aby uzyskać więcej informacji na temat podpisywania plików XML, zapoznaj się z zaleceniami organizacja World Wide Web Consortium, "składnią i przetwarzaniem sygnatury XML" opisanymi w temacie [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .
 
  Jeśli chcesz podpisać manifest, należy podać skróty dla wszystkich plików. Nie można podpisać manifestu z plikami, które nie są skrótami, ponieważ użytkownicy nie mogą zweryfikować zawartości plików niebędących skrótami.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu ilustruje `Signature` element w manifeście wdrożenia używanym w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeniu.
+ Poniższy przykład kodu ilustruje `Signature` element w manifeście wdrożenia używanym we [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeniu.
 
 ```xml
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
@@ -70,5 +70,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)

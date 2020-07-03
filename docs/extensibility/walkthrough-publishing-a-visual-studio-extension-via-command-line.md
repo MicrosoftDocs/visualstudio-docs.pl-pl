@@ -1,7 +1,7 @@
 ---
 title: Publikowanie rozszerzenia przy użyciu wiersza polecenia
 ms.date: 07/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - publishing extensions
 - extension, publishing
@@ -11,74 +11,74 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40be0252218f39b4ff98b58caedd7f9f20ce6d5d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697127"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904676"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Instruktaż: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia
+# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia
 
-W tym przewodniku pokazano, jak opublikować rozszerzenie programu Visual Studio do portalu Visual Studio Marketplace przy użyciu wiersza polecenia. Po dodaniu rozszerzenia do portalu Marketplace deweloperzy mogą używać okna dialogowego [**Rozszerzenia i aktualizacje,**](../ide/finding-and-using-visual-studio-extensions.md) aby przeglądać nowe i zaktualizowane rozszerzenia.
+W tym instruktażu przedstawiono sposób publikowania rozszerzenia programu Visual Studio do Visual Studio Marketplace przy użyciu wiersza polecenia. Po dodaniu rozszerzenia do portalu Marketplace deweloperzy mogą skorzystać z okna dialogowego [**rozszerzenia i aktualizacje**](../ide/finding-and-using-visual-studio-extensions.md) , aby wyszukać nowe i zaktualizowane rozszerzenia.
 
-VsixPublisher.exe jest narzędziem wiersza polecenia do publikowania rozszerzeń programu Visual Studio w portalu Marketplace. Dostęp do niego można uzyskać z pliku ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Polecenia dostępne w tym narzędziu to: **publikuj**, **createPublisher**, **deletePublisher**, **deleteExtension**, **login**, **wyloguj się.**
+VsixPublisher.exe jest narzędziem wiersza polecenia do publikowania rozszerzeń programu Visual Studio w portalu Marketplace. Dostęp do niego można uzyskać za pomocą $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Polecenia dostępne w tym narzędziu to **publish**: Publish **,** **deletePublisher**, **deleteExtension**, **login**, **Wyloguj**się.
 
 ## <a name="commands"></a>Polecenia
 
 ### <a name="publish"></a>publish
 
-Publikuje rozszerzenie do portalu Marketplace. Rozszerzenie może być vsix, plik exe/msi lub łącze. Jeśli rozszerzenie już istnieje z tą samą wersją, zastąpi rozszerzenie. Jeśli rozszerzenie jeszcze nie istnieje, utworzy nowe rozszerzenie.
+Publikuje rozszerzenie w portalu Marketplace. Rozszerzeniem może być plik VSIX, exe/MSI lub link. Jeśli rozszerzenie już istnieje w tej samej wersji, spowoduje zastąpienie rozszerzenia. Jeśli rozszerzenie jeszcze nie istnieje, zostanie utworzone nowe rozszerzenie.
 
-|Opcje poleceń |Opis |
+|Opcje polecenia |Opis |
 |---------|---------|
-|ładowność (wymagana) | Ścieżka do ładunku do opublikowania lub łącze do użycia jako "więcej informacji URL". |
+|ładunek (wymagany) | Ścieżka do ładunku do opublikowania lub linku, który ma być używany jako adres URL "więcej informacji". |
 |publishManifest (wymagane) | Ścieżka do pliku manifestu publikowania do użycia. |
-|ignor ignoreWarnings ignoreWarnings ignoreWarnings ignore | Lista ostrzeżeń do zignorowania podczas publikowania rozszerzenia. Ostrzeżenia te są wyświetlane jako komunikaty wiersza polecenia podczas publikowania rozszerzenia. (na przykład "VSIXValidatorWarning01, VSIXValidatorWarning02")
-|osobisteAccessToken | Osobisty token dostępu (PAT), który jest używany do uwierzytelniania wydawcy. Jeśli nie podano, PAT jest nabywany od zalogowanych użytkowników. |
+|ignoreWarnings | Lista ostrzeżeń do ignorowania podczas publikowania rozszerzenia. Te ostrzeżenia są wyświetlane jako komunikaty wiersza polecenia podczas publikowania rozszerzenia. (na przykład "VSIXValidatorWarning01, VSIXValidatorWarning02")
+|personalAccessToken | Osobisty token dostępu używany do uwierzytelniania wydawcy. Jeśli nie zostanie podany, zostanie uzyskana z zalogowanych użytkowników. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
 ```
 
-### <a name="createpublisher"></a>utwórPublisher
+### <a name="createpublisher"></a>Cofnij publikowanie
 
-Tworzy wydawcę w marketplace. Rejestruje również wydawcę na komputerze w celu przyszłych akcji (na przykład usunięcie/opublikowanie rozszerzenia).
+Tworzy wydawcę w portalu Marketplace. Rejestruje także wydawcę na komputerze w celu wykonania przyszłych akcji (na przykład usunięcie/opublikowanie rozszerzenia).
 
-|Opcje poleceń |Opis |
+|Opcje polecenia |Opis |
 |---------|---------|
-|displayName (wymagane) | Wyświetlana nazwa wydawcy. |
-|publisherName (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
-|personalAccessToken (wymagane) | Osobisty token dostępu, który jest używany do uwierzytelniania wydawcy. |
-|krótkiOskrypt | Krótki opis wydawcy (nie plik). |
-|longDescription (opis) | Długi opis wydawcy (nie plik). |
+|displayName (wymagane) | Nazwa wyświetlana wydawcy. |
+|wydawcaname (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|personalAccessToken (wymagane) | Osobisty token dostępu używany do uwierzytelniania wydawcy. |
+|shortDescription | Krótki opis wydawcy (nie plik). |
+|longDescription | Długi opis wydawcy (nie plik). |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
 ```
 
-### <a name="deletepublisher"></a>usuńPublisher
+### <a name="deletepublisher"></a>deletePublisher
 
-Usuwa wydawcę w Marketplace.
+Usuwa wydawcę w portalu Marketplace.
 
-|Opcje poleceń |Opis |
+|Opcje polecenia |Opis |
 |---------|---------|
-|publisherName (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
-|personalAccessToken (wymagane) | Osobisty token dostępu, który jest używany do uwierzytelniania wydawcy. |
+|wydawcaname (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|personalAccessToken (wymagane) | Osobisty token dostępu używany do uwierzytelniania wydawcy. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
 ```
 
-### <a name="deleteextension"></a>deleteWysoki
+### <a name="deleteextension"></a>deleteExtension
 
-Usuwa rozszerzenie z marketplace.
+Usuwa rozszerzenie z portalu Marketplace.
 
-|Opcje poleceń |Opis |
+|Opcje polecenia |Opis |
 |---------|---------|
-|extensionName (wymagane) | Nazwa rozszerzenia do usunięcia. |
-|publisherName (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
-|osobisteAccessToken | Osobisty token dostępu, który jest używany do uwierzytelniania wydawcy. Jeśli nie podano, pat jest nabywany od zalogowanych użytkowników. |
+|ExtensionName (wymagane) | Nazwa rozszerzenia do usunięcia. |
+|wydawcaname (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|personalAccessToken | Osobisty token dostępu używany do uwierzytelniania wydawcy. Jeśli nie zostanie podany, zostanie uzyskana z zalogowanych użytkowników. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -88,11 +88,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Rejestruje wydawcę na komputerze.
 
-|Opcje poleceń |Opis |
+|Opcje polecenia |Opis |
 |---------|---------|
-|personalAccessToken (wymagane | Osobisty token dostępu, który jest używany do uwierzytelniania wydawcy. |
-|publisherName (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
-|Zastąpić | Określa, że każdy istniejący wydawca powinien zostać zastąpiony nowym tokenem dostępu osobistego. |
+|personalAccessToken (wymagane | Osobisty token dostępu używany do uwierzytelniania wydawcy. |
+|wydawcaname (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|pisz | Określa, że istniejący Wydawca powinien zostać zastąpiony nowym osobistym tokenem dostępu. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -102,20 +102,20 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Rejestruje wydawcę z komputera.
 
-|Opcje poleceń |Opis |
+|Opcje polecenia |Opis |
 |---------|---------|
-|publisherName (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|wydawcaname (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
 |ignoreMissingPublisher | Określa, że narzędzie nie powinno być błędem, jeśli określony wydawca nie jest jeszcze zalogowany. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"
 ```
 
-## <a name="publishmanifest-file"></a>pubManifest plik
+## <a name="publishmanifest-file"></a>plik publishManifest
 
-Plik publishManifest jest używany przez polecenie **publikowania.** Reprezentuje wszystkie metadane dotyczące rozszerzenia, które marketplace musi wiedzieć. Jeśli przekazywane rozszerzenie pochodzi z rozszerzenia VSIX, właściwość "identity" musi mieć tylko zestaw "internalName". Dzieje się tak, ponieważ pozostałe właściwości "tożsamości" mogą być generowane z pliku vsixmanifest. Jeśli rozszerzenie jest msi/exe lub rozszerzenie łącza, użytkownik musi podać wymagane pola we właściwości "tożsamość". Pozostała część manifestu zawiera informacje specyficzne dla portalu Marketplace (na przykład kategorie, czy Q&A jest włączone itp.).
+Plik publishManifest jest używany przez polecenie **Publikuj** . Reprezentuje wszystkie metadane dotyczące rozszerzenia, które musi znać witryna Marketplace. Jeśli przekazane rozszerzenie pochodzi z rozszerzenia VSIX, właściwość "Identity" musi mieć tylko ustawioną wartość "InternalName". Wynika to z faktu, że pozostałe właściwości "Identity" można generować z pliku vsixmanifest. Jeśli rozszerzenie jest rozszerzeniem msi/exe lub łączem, użytkownik musi podać wymagane pola we właściwości "Identity" (tożsamość). Pozostała część manifestu zawiera informacje specyficzne dla portalu Marketplace (na przykład kategorie, czy funkcja Q&A jest włączona itp.).
 
-rozszerzenie VSIX publishPróbka plikuManifest:
+Przykład pliku publishManifest rozszerzenia VSIX:
 
 ```json
 {
@@ -134,7 +134,7 @@ rozszerzenie VSIX publishPróbka plikuManifest:
 }
 ```
 
-MSI/EXE lub LINK publishPróbka plikuManifest:
+Przykładowy plik MSI/EXE lub LINK publishManifest:
 
 ```json
 {
@@ -167,7 +167,7 @@ MSI/EXE lub LINK publishPróbka plikuManifest:
 
 ## <a name="asset-files"></a>Pliki zasobów
 
-Pliki zasobów mogą być dostarczane do osadzania takich rzeczy rzeczy jak obrazy w pliku readme. Na przykład, jeśli rozszerzenie ma następujący dokument "przegląd" Markdown:
+Pliki zasobów można dostarczyć do osadzania takich elementów jak obrazy w pliku Readme. Na przykład, jeśli rozszerzenie ma następujący dokument z promocji "przegląd":
 
 ```markdown
 TestExtension
@@ -176,7 +176,7 @@ This is test extension.
 ![Test logo](images/testlogo.png "Test logo")
 ```
 
-Aby rozwiązać "images/testlogo.png" w poprzednim przykładzie, użytkownik może podać "assetFiles" w ich manifest publikowania, jak poniżej:
+W celu rozpoznania "obrazów/testlogo.png" w poprzednim przykładzie użytkownik może podać "assetFiles" w swoim manifeście publikowania, jak poniżej:
 
 ```json
 {
@@ -190,45 +190,45 @@ Aby rozwiązać "images/testlogo.png" w poprzednim przykładzie, użytkownik mo�
 }
 ```
 
-## <a name="publishing-walkthrough"></a>Opublikowanie przewodnika
+## <a name="publishing-walkthrough"></a>Przewodnik po publikowaniu
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-Aby wykonać ten przewodnik, należy zainstalować visual studio SDK. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-### <a name="create-a-visual-studio-extension"></a>Tworzenie rozszerzenia programu Visual Studio
+### <a name="create-a-visual-studio-extension"></a>Utwórz rozszerzenie programu Visual Studio
 
-W takim przypadku użyjemy domyślnego rozszerzenia VSPackage, ale te same kroki są prawidłowe dla każdego rodzaju rozszerzenia.
+W takim przypadku zostanie użyte domyślne rozszerzenie pakietu VSPackage, ale te same kroki są prawidłowe dla każdego rodzaju rozszerzenia.
 
-1. Utwórz VSPackage w języku C# o nazwie "TestPublish", który ma polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie pierwszego rozszerzenia: Hello World](../extensibility/extensibility-hello-world.md).
+1. Utwórz element pakietu VSPackage w języku C# o nazwie "TestPublish", który ma polecenie menu. Aby uzyskać więcej informacji, zobacz [Tworzenie pierwszego rozszerzenia: Hello World](../extensibility/extensibility-hello-world.md).
 
-### <a name="package-your-extension"></a>Pakiet rozszerzenia
+### <a name="package-your-extension"></a>Pakowanie rozszerzenia
 
-1. Zaktualizuj rozszerzenie vsixmanifest z poprawnymi informacjami o nazwie produktu, autorze i wersji.
+1. Zaktualizuj rozszerzenie VSIXMANIFEST o prawidłowe informacje o nazwie produktu, autorze i wersji.
 
-   ![rozszerzenie aktualizacji vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![Aktualizacja rozszerzenia vsixmanifest](media/update-extension-vsixmanifest.png)
 
-2. Tworzenie rozszerzenia w trybie **wydania.** Teraz rozszerzenie zostanie spakowane jako VSIX w folderze \bin\Release.
+2. Kompiluj swoje rozszerzenie w trybie **wydania** . Teraz Twoje rozszerzenie zostanie spakowane jako VSIX w folderze \bin\Release.
 
-3. Można kliknąć dwukrotnie VSIX, aby zweryfikować instalację.
+3. Aby zweryfikować instalację, można kliknąć dwukrotnie VSIX.
 
 ### <a name="test-the-extension"></a>Testowanie rozszerzenia
 
- Przed rozpowszechnieniem rozszerzenia, kompilacji i przetestować go, aby upewnić się, że jest poprawnie zainstalowany w eksperymentalnym wystąpieniu programu Visual Studio.
+ Przed rozpoczęciem dystrybucji rozszerzenia, skompiluj i przetestuj go, aby upewnić się, że jest prawidłowo zainstalowany w eksperymentalnym wystąpieniu programu Visual Studio.
 
-1. W programie Visual Studio rozpocznij debugowanie. , aby otworzyć eksperymentalne wystąpienie programu Visual Studio.
+1. W programie Visual Studio Rozpocznij debugowanie. , aby otworzyć eksperymentalne wystąpienie programu Visual Studio.
 
-2. W przypadku wystąpienia eksperymentalnego przejdź do menu **Narzędzia** i kliknij polecenie **Rozszerzenia i aktualizacje...**. Rozszerzenie TestPublish powinno pojawić się w środkowym okienku i być włączone.
+2. W eksperymentalnym wystąpieniu przejdź do menu **Narzędzia** , a następnie kliknij pozycję **rozszerzenia i aktualizacje..**.. Rozszerzenie TestPublish powinno pojawić się w środkowym okienku i być włączone.
 
-3. W menu **Narzędzia** upewnij się, że jest widoczne polecenie testu.
+3. W menu **Narzędzia** upewnij się, że widzisz polecenie Test.
 
-### <a name="publish-the-extension-to-the-marketplace-via-command-line"></a>Publikowanie rozszerzenia w portalu Marketplace za pomocą wiersza polecenia
+### <a name="publish-the-extension-to-the-marketplace-via-command-line"></a>Publikowanie rozszerzenia w portalu Marketplace za pośrednictwem wiersza polecenia
 
-1. Upewnij się, że została skonstowana wersja wersji rozszerzenia i że jest aktualna.
+1. Upewnij się, że masz wbudowaną wersję wydania rozszerzenia oraz że jest ona aktualna.
 
-2. Upewnij się, że utworzono pliki publishmanifest.json i overview.md.
+2. Upewnij się, że utworzono publishmanifest.jsw plikach i overview.md.
 
-3. Otwórz wiersz polecenia i przejdź do katalogu ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\.
+3. Otwórz wiersz polecenia i przejdź do katalogu $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\.
 
 4. Aby utworzyć nowego wydawcę, użyj następującego polecenia:
 
@@ -236,13 +236,13 @@ W takim przypadku użyjemy domyślnego rozszerzenia VSPackage, ale te same kroki
    VsixPublisher.exe createPublisher -publisherName "TestVSIXPublisher" -displayName "Test VSIX Publisher" -personalAccessToken "{Personal Access Token that is used to authenticate the publisher. If not provided, the pat is acquired from the logged-in users.}"
    ```
 
-5. Po pomyślnym utworzeniu wydawcy zostanie wyświetlony następujący komunikat wiersza polecenia:
+5. Po pomyślnym utworzeniu wydawcy zostanie wyświetlony następujący komunikat z wierszem polecenia:
 
    ```
    Added 'Test VSIX Publisher' as a publisher on the Marketplace.
    ```
 
-6. Nowy wydawca został utworzony, przechodząc do [programu Visual Studio Marketplace](https://marketplace.visualstudio.com/manage/publishers)
+6. Możesz zweryfikować utworzonego nowego wydawcę, przechodząc do [Visual Studio Marketplace](https://marketplace.visualstudio.com/manage/publishers)
 
 7. Aby opublikować nowe rozszerzenie, użyj następującego polecenia:
 
@@ -250,31 +250,31 @@ W takim przypadku użyjemy domyślnego rozszerzenia VSPackage, ale te same kroki
    VsixPublisher.exe publish -payload "{Path to vsix file}"  -publishManifest "{path to publishManifest file}"
    ```
 
-8. Po pomyślnym utworzeniu wydawcy zostanie wyświetlony następujący komunikat wiersza polecenia:
+8. Po pomyślnym utworzeniu wydawcy zostanie wyświetlony następujący komunikat z wierszem polecenia:
 
    ```
    Uploaded 'MyVsixExtension' to the Marketplace.
    ```
 
-9. Opublikowane rozszerzenie można zweryfikować, przechodząc do [programu Visual Studio Marketplace](https://marketplace.visualstudio.com/)
+9. Możesz sprawdzić nowe rozszerzenie opublikowane przez przechodzenie do [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 
-### <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Instalowanie rozszerzenia z portalu Visual Studio Marketplace
+### <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Zainstaluj rozszerzenie z Visual Studio Marketplace
 
-Teraz, gdy rozszerzenie zostanie opublikowane, zainstaluj je w programie Visual Studio i przetestuj je tam.
+Po opublikowaniu rozszerzenia zainstaluj je w programie Visual Studio i przetestuj je w tym miejscu.
 
-1. W programie Visual Studio w menu **Narzędzia** kliknij polecenie **Rozszerzenia i aktualizacje...**.
+1. W programie Visual Studio w menu **Narzędzia** kliknij polecenie **rozszerzenia i aktualizacje...**.
 
-2. Kliknij **pozycję Online,** a następnie wyszukaj pozycję TestPublish.
+2. Kliknij pozycję **online** , a następnie wyszukaj ciąg TestPublish.
 
-3. Kliknij **pozycję Pobierz**. Rozszerzenie zostanie zaplanowane do zainstalowania.
+3. Kliknij pozycję **Pobierz**. Rozszerzenie zostanie zaplanowane do instalacji.
 
-4. Aby zakończyć instalację, zamknij wszystkie wystąpienia programu Visual Studio.
+4. Aby ukończyć instalację, zamknij wszystkie wystąpienia programu Visual Studio.
 
 ## <a name="remove-the-extension"></a>Usuwanie rozszerzenia
 
-Rozszerzenie można usunąć z witryny Visual Studio Marketplace i z komputera.
+Można usunąć rozszerzenie z Visual Studio Marketplace i z komputera.
 
-### <a name="to-remove-the-extension-from-the-marketplace-via-command-line"></a>Aby usunąć rozszerzenie z portalu Marketplace za pomocą wiersza polecenia
+### <a name="to-remove-the-extension-from-the-marketplace-via-command-line"></a>Aby usunąć rozszerzenie z portalu Marketplace za pośrednictwem wiersza polecenia
 
 1. Jeśli chcesz usunąć rozszerzenie, użyj następującego polecenia:
 
@@ -282,7 +282,7 @@ Rozszerzenie można usunąć z witryny Visual Studio Marketplace i z komputera.
    VsixPublisher.exe deleteExtension -publisherName "TestVSIXPublisher" -extensionName "MyVsixExtension"
    ```
 
-2. Po pomyślnym usunięciu rozszerzenia zostanie wyświetlony następujący komunikat wiersza polecenia:
+2. Po pomyślnym usunięciu rozszerzenia zostanie wyświetlony następujący komunikat z wierszem polecenia:
 
    ```
    Removed 'MyVsixExtension' from the Marketplace.
@@ -290,8 +290,8 @@ Rozszerzenie można usunąć z witryny Visual Studio Marketplace i z komputera.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Aby usunąć rozszerzenie z komputera
 
-1. W programie Visual Studio w menu **Narzędzia** kliknij polecenie **Rozszerzenia i aktualizacje**.
+1. W programie Visual Studio w menu **Narzędzia** kliknij pozycję **rozszerzenia i aktualizacje**.
 
-2. Wybierz "MyVsixExtension", a następnie kliknij przycisk **Odinstaluj**. Rozszerzenie zostanie następnie zaplanowane do odinstalowania.
+2. Wybierz pozycję "MyVsixExtension", a następnie kliknij przycisk **Odinstaluj**. Rozszerzenie zostanie zaplanowane do odinstalowania.
 
-3. Aby zakończyć dezinstalację, zamknij wszystkie wystąpienia programu Visual Studio.
+3. Aby ukończyć dezinstalację, zamknij wszystkie wystąpienia programu Visual Studio.

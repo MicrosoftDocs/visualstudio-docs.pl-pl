@@ -1,7 +1,7 @@
 ---
-title: Tworzenie grup przycisków wielokrotnego pożyciem | Dokumenty firmy Microsoft
+title: Tworzenie grup przycisków do wielokrotnego użytku | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
@@ -12,25 +12,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddfba6701890f73ce6438ddc03a338912841a37d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739465"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903647"
 ---
-# <a name="create-reusable-groups-of-buttons"></a>Tworzenie grup przycisków wielokrotnego pożyciem
-Grupa poleceń to zbiór poleceń, które zawsze pojawiają się razem na menu lub pasku narzędzi. Dowolną grupę poleceń można ponownie użyć, przypisując ją do różnych menu nadrzędnych w sekcji CommandPlacements pliku *vsct.*
+# <a name="create-reusable-groups-of-buttons"></a>Tworzenie grup przycisków do wielokrotnego użytku
+Grupa poleceń to kolekcja poleceń, które zawsze pojawiają się w menu lub pasku narzędzi. Każdą grupę poleceń można ponownie użyć, przypisując ją do różnych menu nadrzędnych w sekcji CommandPlacements pliku *. vsct* .
 
  Grupy poleceń zazwyczaj zawierają przyciski, ale mogą również zawierać inne menu lub pola kombi.
 
-## <a name="to-create-a-reusable-group-of-buttons"></a>Aby utworzyć grupę przycisków wielokrotnego pożycie
+## <a name="to-create-a-reusable-group-of-buttons"></a>Aby utworzyć grupę przycisków wielokrotnego użytku
 
-1. Utwórz projekt VSIX o nazwie `ReusableButtons`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Utwórz projekt VSIX o nazwie `ReusableButtons` . Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Po otwarciu projektu dodaj niestandardowy szablon elementu polecenia o nazwie **ReusableCommand**. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** > **nowy element**. W oknie dialogowym **Dodawanie nowego elementu** przejdź do pozycji**Rozszerzalność** **programu Visual C#** > i wybierz polecenie **Niestandardowe**. W polu **Nazwa** u dołu okna zmień nazwę pliku polecenia na *ReusableCommand.cs*.
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **ReusableCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *ReusableCommand.cs*.
 
-3. W pliku *vsct* przejdź do sekcji Symbole i znajdź element GuidSymbol zawierający grupy i polecenia dla projektu. Powinien być nazwany guidReusableCommandPackageCmdSet.
+3. W pliku *. vsct* przejdź do sekcji symbole i Znajdź element GuidSymbol, który zawiera grupy i polecenia dla projektu. Powinien być nazwany guidReusableCommandPackageCmdSet.
 
 4. Dodaj IDSymbol dla każdego przycisku, który zostanie dodany do grupy, jak w poniższym przykładzie.
 
@@ -42,9 +42,9 @@ Grupa poleceń to zbiór poleceń, które zawsze pojawiają się razem na menu l
     </GuidSymbol>
     ```
 
-     Domyślnie szablon elementu polecenia tworzy grupę o nazwie **MyMenuGroup** i przycisk, który ma podaną nazwę, wraz z wpisem IDSymbol dla każdego.
+     Domyślnie szablon elementu polecenia tworzy grupę o nazwie **webmenu** i przycisk o podanej nazwie, a także wpis IDSymbol dla każdego z nich.
 
-5. W sekcji Grupy utwórz element Grupy, który ma takie same atrybuty GUID i ID, jak te podane w sekcji Symbole. Można również użyć istniejącej grupy lub użyć wpisu, który jest dostarczany przez szablon polecenia, jak w poniższym przykładzie. Ta grupa pojawi się w menu **Narzędzia**
+5. W sekcji grupy Utwórz element grupy, który ma te same atrybuty GUID i identyfikator, co podane w sekcji symbole. Możesz również użyć istniejącej grupy lub użyć wpisu dostarczonego przez szablon polecenia, jak w poniższym przykładzie. Ta grupa pojawia się w menu **Narzędzia**
 
     ```xml
     <Groups>
@@ -56,9 +56,9 @@ Grupa poleceń to zbiór poleceń, które zawsze pojawiają się razem na menu l
 
 ## <a name="to-create-a-group-of-buttons-for-reuse"></a>Aby utworzyć grupę przycisków do ponownego użycia
 
-1. Można umieścić polecenie lub menu w grupie za pomocą grupy jako element nadrzędny w definicji polecenia lub menu lub umieszczając polecenie lub menu w grupie za pomocą commandPlacements sekcji.
+1. Możesz umieścić polecenie lub menu w grupie za pomocą grupy jako elementu nadrzędnego w definicji polecenia lub menu lub przez umieszczenie polecenia lub menu w grupie przy użyciu sekcji CommandPlacements.
 
-     W sekcji Przyciski zdefiniuj przycisk, który ma grupę jako element nadrzędny, lub użyj przycisku dostarczonego przez szablon pakietu, jak pokazano w poniższym przykładzie.
+     W sekcji przyciski Zdefiniuj przycisk, który ma swoją grupę jako element nadrzędny, lub użyj przycisku dostarczonego przez szablon pakietu, jak pokazano w poniższym przykładzie.
 
     ```xml
     <Button guid="guidReusableCommandPackageCmdSet" id="ReusableCommandId" priority="0x0100" type="Button">
@@ -70,7 +70,7 @@ Grupa poleceń to zbiór poleceń, które zawsze pojawiają się razem na menu l
     </Button>
     ```
 
-2. Jeśli przycisk musi pojawić się w więcej niż jednej grupie, utwórz dla niego wpis w sekcji CommandPlacements, który musi zostać umieszczony po sekcji Polecenia. Ustaw atrybuty identyfikatora GUID i identyfikatora elementu CommandPlacement, aby były zgodne z atrybutami przycisku, który chcesz umieścić, a następnie ustaw identyfikator GUID i identyfikator jego elementu nadrzędnego na atrybuty grupy docelowej, jak pokazano w poniższym przykładzie.
+2. Jeśli przycisk musi znajdować się w więcej niż jednej grupie, Utwórz dla niego wpis w sekcji CommandPlacements, który musi być umieszczony po sekcji Commands. Ustaw identyfikatory GUID i identyfikator elementu CommandPlacement, aby pasowały do przycisków, które chcesz umieścić w pozycji, a następnie ustaw identyfikator GUID i identyfikator jego elementu nadrzędnego dla grupy docelowej, jak pokazano w poniższym przykładzie.
 
     ```xml
     <CommandPlacements>
@@ -81,13 +81,13 @@ Grupa poleceń to zbiór poleceń, które zawsze pojawiają się razem na menu l
     ```
 
     > [!NOTE]
-    > Wartość pola Priorytet określa położenie polecenia w nowej grupie poleceń. Priorytety ustawione w elemencie CommandPlacement zastępują te ustawione w definicji elementu. Polecenia o niższym priorytecie są wyświetlane przed poleceniami o wyższym priorytecie. Zduplikowane wartości priorytetu są dozwolone, ale względne położenie poleceń, które mają taką samą wartość priorytetu, nie może być zagwarantowane, ponieważ kolejność, w jakiej polecenie **devenv /setup** tworzy końcowy interfejs z rejestru, może nie być spójna.
+    > Wartość pola priorytet określa pozycję polecenia w nowej grupie poleceń. Priorytety ustawione w elemencie CommandPlacement przesłaniają te ustawienia w definicji elementu. Polecenia o niższych wartościach priorytetów są wyświetlane przed poleceniami, które mają wyższe wartości priorytetów. Wartości zduplikowanych priorytetów są dozwolone, ale względne położenie poleceń o tej samej wartości priorytetu nie może być gwarantowane, ponieważ kolejność, w której polecenie **devenv/setup** tworzy końcowy interfejs z rejestru, może być niespójna.
 
-## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Aby umieścić grupę przycisków wielokrotnegoużytnia w menu
+## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Aby umieścić w menu grupę przycisków do wielokrotnego użytku
 
-1. Utwórz wpis `CommandPlacements` w sekcji. Ustaw identyfikator GUID i `CommandPlacement` identyfikator elementu na identyfikator grupy i ustaw nadrzędny identyfikator GUID i identyfikator na identyfikator lokalizacji docelowej.
+1. Utwórz wpis w `CommandPlacements` sekcji. Ustaw identyfikator GUID i identyfikator `CommandPlacement` elementu dla grupy, a następnie ustaw nadrzędny identyfikator GUID i identyfikator dla lokalizacji docelowej.
 
-    Sekcja CommandPlacements powinna być umieszczona tuż po sekcji Polecenia:
+    Sekcja CommandPlacements powinna zostać umieszczona bezpośrednio po sekcji Commands:
 
    ```xml
    <CommandTable>
@@ -98,9 +98,9 @@ Grupa poleceń to zbiór poleceń, które zawsze pojawiają się razem na menu l
    </CommandTable>
    ```
 
-    Grupa poleceń może być uwzględniona w więcej niż jednym menu. Menu nadrzędne może być jednym, który został [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utworzony, który jest dostarczany przez (zgodnie z opisem w *ShellCmdDef.vsct* lub *SharedCmdDef.vsct),* lub taki, który jest zdefiniowany w innym VSPackage. Liczba warstw nadrzędnych jest nieograniczona, o ile menu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nadrzędne jest ostatecznie połączone z lub z menu skrótów, które jest wyświetlane przez vspackage.
+    Grupa poleceń może być uwzględniona w więcej niż jednym menu. Menu nadrzędne może być jedną z utworzonych przez siebie, która jest dostarczana przez program [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (zgodnie z opisem w *ShellCmdDef. vsct* lub *SharedCmdDef. vsct*) lub jeden, który jest zdefiniowany w innym pakietu VSPackage. Liczba warstw nadrzędnych jest nieograniczona, o ile menu nadrzędne jest ostatecznie połączone z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub do menu skrótów, które jest wyświetlane przez pakietu VSPackage.
 
-    Poniższy przykład umieszcza grupę na pasku narzędzi **Eksploratora rozwiązań,** po prawej stronie innych przycisków.
+    Poniższy przykład umieszcza grupę na pasku narzędzi **Eksplorator rozwiązań** po prawej stronie innych przycisków.
 
    ```xml
    <CommandPlacements>

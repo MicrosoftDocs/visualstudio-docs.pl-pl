@@ -1,7 +1,7 @@
 ---
-title: Tworzenie okien dialogowych modalnych i zarządzanie nimi | Dokumenty firmy Microsoft
+title: Tworzenie modalnych okien dialogowych i zarządzanie nimi | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
@@ -10,48 +10,48 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 786a2fbe2b75c51420668eb1ab6f596213d3da9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739494"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903780"
 ---
-# <a name="create-and-manage-modal-dialog-boxes"></a>Tworzenie okien dialogowych modalnych i zarządzanie nimi
-Podczas tworzenia modalnego okna dialogowego w programie Visual Studio należy upewnić się, że okno nadrzędne okna dialogowego jest wyłączone podczas wyświetlania okna dialogowego, a następnie ponownie włączyć okno nadrzędne po zamknięciu okna dialogowego. Jeśli tego nie zrobisz, może pojawić się błąd: *Program Microsoft Visual Studio nie może zostać zamknięty, ponieważ modalne okno dialogowe jest aktywne. Zamknij aktywne okno dialogowe i spróbuj ponownie.*
+# <a name="create-and-manage-modal-dialog-boxes"></a>Tworzenie modalnych okien dialogowych i zarządzanie nimi
+Gdy tworzysz modalne okno dialogowe w programie Visual Studio, musisz upewnić się, że okno dialogowe nadrzędne jest wyłączone podczas wyświetlania okna dialogowego, a następnie ponownie włącz okno nadrzędne po zamknięciu okna dialogowego. Jeśli tego nie zrobisz, może zostać wyświetlony komunikat o błędzie: *Microsoft Visual Studio nie może zostać zamknięty, ponieważ modalne okno dialogowe jest aktywne. Zamknij aktywne okno dialogowe i spróbuj ponownie.*
 
-Istnieją dwa sposoby, aby to zrobić. Zalecanym sposobem, jeśli masz okno dialogowe WPF, <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>jest wyprowadzenie go z programu , a następnie wywołanie <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> wyświetlania okna dialogowego. Jeśli to zrobisz, nie trzeba zarządzać stanem modalnej okna nadrzędnego.
+Istnieją dwa sposoby wykonania tej czynności. Zalecanym sposobem, jeśli masz okno dialogowe WPF, jest to pochodne od <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> , a następnie Wywołaj, <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> Aby wyświetlić okno dialogowe. Jeśli to zrobisz, nie musisz zarządzać stanem modalnym okna nadrzędnego.
 
-Jeśli okno dialogowe nie jest WPF, lub z innego powodu <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>nie można wyprowadzić klasy okna dialogowego <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> z , a następnie należy <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> uzyskać element nadrzędny okna dialogowego, wywołując i zarządzać stan modalny samodzielnie, wywołując metodę z parametrem 0 (false) przed wyświetleniem okna dialogowego i wywołanie metody ponownie z parametrem 1 (true) po zamknięciu okna dialogowego.
+Jeśli okno dialogowe nie jest WPF lub z innego powodu nie można utworzyć klasy okna dialogowego z <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> , należy uzyskać nadrzędne okno dialogowe, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> i zarządzając stan modalny samodzielnie, przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> metody z parametrem 0 (false) przed wyświetleniem okna dialogowego i wywołaniem metody z parametrem 1 (true) po zamknięciu okna dialogowego.
 
-## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>Tworzenie okna dialogowego uzyskanego z okna dialogowego DialogWindow
+## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>Utwórz okno dialogowe pochodzące z DialogWindow
 
-1. Utwórz projekt VSIX o nazwie **OpenDialogTest** i dodaj polecenie menu o nazwie **OpenDialog**. Aby uzyskać więcej informacji na temat tego, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Utwórz projekt VSIX o nazwie **OpenDialogTest** i Dodaj polecenie menu o nazwie **openDialog**. Aby uzyskać więcej informacji o tym, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Aby użyć <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> tej klasy, należy dodać odwołania do następujących zestawów (na karcie Framework w oknie dialogowym **Dodawanie odwołania):**
+2. Aby użyć <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy, należy dodać odwołania do następujących zestawów (na karcie struktura okna dialogowego **Dodaj odwołanie** ):
 
-    - *PrezentacjaCore*
+    - *'Presentationcore*
 
-    - *PresentationFramework (Ramwork prezentacji)*
+    - *Platformie docelowej*
 
-    - *Windowsbase*
+    - *'Windowsbase*
 
-    - *System.xaml*
+    - *System. XAML*
 
-3. W *OpenDialog.cs*dodaj następującą `using` instrukcję:
+3. W *openDialog.cs*, Dodaj następującą `using` instrukcję:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
     ```
 
-4. Deklaruj klasę o nazwie, `TestDialogWindow` która pochodzi od: <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>
+4. Zadeklaruj klasę o nazwie `TestDialogWindow` , która pochodzi od <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> :
 
     ```csharp
     class TestDialogWindow : DialogWindow
     {. . .}
     ```
 
-5. Aby zminimalizować i zmaksymalizować okno dialogowe, ustaw <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> i <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> wartość true:
+5. Aby możliwe było zminimalizowanie i Zmaksymalizowanie okna dialogowego, ustaw <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> i <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> na true:
 
     ```csharp
     internal TestDialogWindow()
@@ -61,18 +61,18 @@ Jeśli okno dialogowe nie jest WPF, lub z innego powodu <xref:Microsoft.VisualSt
     }
     ```
 
-6. W `OpenDialog.ShowMessageBox` metodzie zastąp istniejący kod następującymi:
+6. W `OpenDialog.ShowMessageBox` metodzie Zastąp istniejący kod następującym kodem:
 
     ```csharp
     TestDialogWindow testDialog = new TestDialogWindow();
     testDialog.ShowModal();
     ```
 
-7. Skompiluj i uruchom aplikację. Powinno pojawić się eksperymentalne wystąpienie programu Visual Studio. W menu **Narzędzia** wystąpienia eksperymentalnego powinno być widoczne polecenie o nazwie **Invoke OpenDialog**. Po kliknięciu tego polecenia powinno zostać wyświetlone okno dialogowe. Powinieneś być w stanie zminimalizować i zmaksymalizować okno.
+7. Skompiluj i uruchom aplikację. Powinno zostać wyświetlone eksperymentalne wystąpienie programu Visual Studio. W menu **Narzędzia** wystąpienia eksperymentalnego powinno zostać wyświetlone polecenie o nazwie **Invoke openDialog**. Po kliknięciu tego polecenia zostanie wyświetlone okno dialogowe. Powinno być możliwe minimalizowanie i Zmaksymalizowanie okna.
 
-## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Tworzenie okna dialogowego nie pochodzące z okna dialogowego DialogWindow i zarządzanie nim
+## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Tworzenie okna dialogowego i zarządzanie nim, które nie pochodzi od DialogWindow
 
-1. W tej procedurze można użyć **OpenDialogTest** rozwiązanie utworzone w poprzedniej procedurze, z tych samych odwołań do zestawu.
+1. W przypadku tej procedury można użyć rozwiązania **OpenDialogTest** utworzonego w poprzedniej procedurze z tymi samymi odwołaniami do zestawu.
 
 2. Dodaj następujące `using` deklaracje:
 
@@ -81,20 +81,20 @@ Jeśli okno dialogowe nie jest WPF, lub z innego powodu <xref:Microsoft.VisualSt
     using Microsoft.Internal.VisualStudio.PlatformUI;
     ```
 
-3. Utwórz klasę `TestDialogWindow2` o nazwie, która wywodzi się z: <xref:System.Windows.Window>
+3. Utwórz klasę o nazwie `TestDialogWindow2` , która pochodzi od <xref:System.Windows.Window> :
 
     ```csharp
     class TestDialogWindow2 : Window
     {. . .}
     ```
 
-4. Dodaj prywatne odwołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>do:
+4. Dodaj odwołanie prywatne do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> :
 
     ```
     private IVsUIShell shell;
     ```
 
-5. Dodaj konstruktora, który <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>ustawia odwołanie do:
+5. Dodaj Konstruktor, który ustawia odwołanie do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> :
 
     ```csharp
     public TestDialogWindow2(IVsUIShell uiShell)
@@ -103,7 +103,7 @@ Jeśli okno dialogowe nie jest WPF, lub z innego powodu <xref:Microsoft.VisualSt
     }
     ```
 
-6. W `OpenDialog.ShowMessageBox` metodzie zastąp istniejący kod następującymi:
+6. W `OpenDialog.ShowMessageBox` metodzie Zastąp istniejący kod następującym kodem:
 
     ```csharp
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));
@@ -125,4 +125,4 @@ Jeśli okno dialogowe nie jest WPF, lub z innego powodu <xref:Microsoft.VisualSt
     }
     ```
 
-7. Skompiluj i uruchom aplikację. W menu **Narzędzia** powinno być widoczne polecenie o nazwie **Invoke OpenDialog**. Po kliknięciu tego polecenia powinno zostać wyświetlone okno dialogowe.
+7. Skompiluj i uruchom aplikację. W menu **Narzędzia** powinien pojawić się polecenie o nazwie **Invoke openDialog**. Po kliknięciu tego polecenia zostanie wyświetlone okno dialogowe.

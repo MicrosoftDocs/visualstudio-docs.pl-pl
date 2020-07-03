@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
@@ -13,20 +13,20 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0181ee305c99a1d0af1d3e1e965c6ac8fe16f375
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572270"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835670"
 ---
 # <a name="active-script-debugging-overview"></a>Przegląd debugowania aktywnego skryptu
 Interfejsy debugowania aktywnego skryptu zezwalają na niezależną od języka, debugowaniem neutralnym dla hosta i obsługują szeroką gamę środowisk programistycznych.  
   
  ![Proces hosta skryptu](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
-Rysunek 1  
+Rysunek 1.  
   
- Środowisko debugowania niezależne od języka może obsługiwać dowolny język programowania lub kombinację języków programowania bez konkretnej znajomości któregokolwiek z tych języków. Środowisko debugowania obsługuje również przechodzenie między językami i punkty przerwania. (To omówienie dotyczy głównie języków obsługi skryptów, takich jak VBScript i [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]).  
+ Środowisko debugowania niezależne od języka może obsługiwać dowolny język programowania lub kombinację języków programowania bez konkretnej znajomości któregokolwiek z tych języków. Środowisko debugowania obsługuje również przechodzenie między językami i punkty przerwania. (To omówienie dotyczy głównie języków obsługi skryptów, takich jak VBScript i [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] .)  
   
  Debuger neutralny od hosta może być automatycznie używany z dowolnym aktywnym hostem skryptów, takim jak Internet Explorer lub hostem niestandardowym. Host kontroluje, jakie elementy Debugger prezentuje użytkownikowi, od struktury drzewa dokumentu do zawartości i kolorowania składni dokumentów debugowania. Umożliwia to wyświetlanie debugowanego kodu źródłowego w kontekście dokumentu hosta. Na przykład program Internet Explorer może wyświetlić skrypt na stronie HTML.  
   
@@ -95,13 +95,13 @@ Rysunek 1
   [IDebugStackFrame, interfejs](../winscript/reference/idebugstackframe-interface.md)  
   Reprezentuje logiczną ramkę stosu na stosie wątków.  
   
-  [IDebugExpressionContext, interfejs](../winscript/reference/idebugexpressioncontext-interface.md)  
+  [Interfejs IDebugExpressionContext](../winscript/reference/idebugexpressioncontext-interface.md)  
   Zawiera kontekst, w którym można obliczyć wyrażenia.  
   
   [IDebugStackFrameSniffer, interfejs](../winscript/reference/idebugstackframesniffer-interface.md)  
   Umożliwia Wyliczenie logicznych ramek stosu.  
   
-  [IDebugExpression, interfejs](../winscript/reference/idebugexpression-interface.md)  
+  [Interfejs IDebugExpression](../winscript/reference/idebugexpression-interface.md)  
   Reprezentuje wyrażenie asynchronicznie oceniane.  
   
   [IDebugSyncOperation, interfejs](../winscript/reference/idebugsyncoperation-interface.md)  
@@ -111,10 +111,10 @@ Rysunek 1
   Zapewnia asynchroniczny dostęp do synchronicznej operacji debugowania.  
   
   [IDebugAsyncOperationCallBack, interfejs](../winscript/reference/idebugasyncoperationcallback-interface.md)  
-  Udostępnia zdarzenia stanu dotyczące postępu oceny interfejsu `IDebugAsyncOperation`.  
+  Udostępnia zdarzenia stanu dotyczące postępu `IDebugAsyncOperation` oceny interfejsu.  
   
   [IEnumDebugExpressionContexts, interfejs](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
-  Wylicza kolekcję obiektów `IDebugExpressionContexts`.  
+  Wylicza kolekcję `IDebugExpressionContexts` obiektów.  
   
   [IProvideExpressionContexts, interfejs](../winscript/reference/iprovideexpressioncontexts-interface.md)  
   Umożliwia Wyliczenie kontekstów wyrażeń znanych przez określony składnik.  
@@ -125,7 +125,7 @@ Rysunek 1
   [IDebugStackFrameSnifferEx, interfejs](../winscript/reference/idebugstackframesnifferex-interface.md)  
   Wylicza logiczne ramki stosu dla PDM.  
   
-## <a name="hosts"></a>Pracując  
+## <a name="hosts"></a>Hosts  
  Host:  
   
 - Hostuje aparaty języka.  
@@ -143,7 +143,7 @@ Rysunek 1
 - Inteligentny host obsługuje większy zestaw interfejsów, który umożliwia działowi IT Definiowanie drzewa dokumentów, zawartości dokumentu i kolorowanie składni. Istnieje zestaw interfejsów pomocnika opisany w następnej podsekcji, które znacznie ułatwiają hostowi inteligentnego hosta.  
   
 ### <a name="smart-host-helper-interfaces"></a>Interfejsy pomocnika inteligentnego hosta  
- Metody `IDebugDocumentHelper` zapewniają znacznie uproszczony zestaw interfejsów, które mogą być używane przez hosta w celu uzyskania korzyści z inteligentnego hostingu bez obsługi pełnej złożoności (i mocy) pełnych interfejsów hosta.  
+ `IDebugDocumentHelper`Metody zapewniają znacznie uproszczony zestaw interfejsów, które mogą być używane przez hosta w celu uzyskania korzyści z inteligentnego hostingu bez obsługi pełnej złożoności (i mocy) pełnych interfejsów hosta.  
   
  Host nie jest wymagany do korzystania z tych interfejsów. Jednak użycie tych interfejsów może uniknąć implementacji lub użycia wielu bardziej skomplikowanych interfejsów.  
   
@@ -163,7 +163,7 @@ Rysunek 1
  [IDebugDocumentInfo, interfejs](../winscript/reference/idebugdocumentinfo-interface.md)  
  Zawiera informacje o dokumencie, który może lub nie można utworzyć wystąpienia.  
   
- [IDebugDocumentProvider, interfejs](../winscript/reference/idebugdocumentprovider-interface.md)  
+ [Interfejs IDebugDocumentProvider](../winscript/reference/idebugdocumentprovider-interface.md)  
  Zapewnia sposób tworzenia wystąpienia dokumentu na żądanie.  
   
  [IDebugDocument, interfejs](../winscript/reference/idebugdocument-interface.md)  
@@ -172,19 +172,19 @@ Rysunek 1
  [IDebugDocumentText, interfejs](../winscript/reference/idebugdocumenttext-interface.md)  
  Zapewnia dostęp do wersji tekstowej dokumentu debugowania.  
   
- [IDebugDocumentTextAuthor, interfejs](../winscript/reference/idebugdocumenttextauthor-interface.md)  
+ [Interfejs IDebugDocumentTextAuthor](../winscript/reference/idebugdocumenttextauthor-interface.md)  
  Umożliwia edytowanie wersji tekstowej dokumentu debugowania.  
   
- [IDebugDocumentContext, interfejs](../winscript/reference/idebugdocumentcontext-interface.md)  
+ [Interfejs IDebugDocumentContext](../winscript/reference/idebugdocumentcontext-interface.md)  
  Zapewnia abstrakcyjną reprezentację części debugowanego dokumentu.  
   
  Interfejsy zaimplementowane przez PDM w imieniu hosta:  
   
  [IDebugApplicationNode, interfejs](../winscript/reference/idebugapplicationnode-interface.md)  
- Rozszerza funkcjonalność interfejsu `IDebugDocumentProvider` przez udostępnienie kontekstu w drzewie projektu.  
+ Rozszerza funkcjonalność `IDebugDocumentProvider` interfejsu przez udostępnienie kontekstu w drzewie projektu.  
   
 ## <a name="debugger-ide"></a>Debuger IDE  
- IDE jest niezależnym od języka interfejsem użytkownika debugowania. Zapewnia:  
+ IDE jest niezależnym od języka interfejsem użytkownika debugowania. Oferuje ona następujące możliwości:  
   
 - Przeglądający dokumenty/redaktorzy.  
   
@@ -207,13 +207,13 @@ Rysunek 1
   Zapewnia, że składnik zewnętrzny ma większą kontrolę nad interfejsem użytkownika (UI) debugera.  
   
   [IDebugExpressionCallBack, interfejs](../winscript/reference/idebugexpressioncallback-interface.md)  
-  Udostępnia zdarzenia stanu dla `IDebugExpression` oceny postępu.  
+  Udostępnia zdarzenia stanu do `IDebugExpression` oceny postępu.  
   
   [IDebugDocumentTextEvents, interfejs](../winscript/reference/idebugdocumenttextevents-interface.md)  
   Zapewnia zdarzenia wskazujące zmiany w skojarzonym dokumencie tekstowym.  
   
   [IDebugApplicationNodeEvents, interfejs](../winscript/reference/idebugapplicationnodeevents-interface.md)  
-  Udostępnia interfejs zdarzenia dla interfejsu `IDebugApplicationNode`.  
+  Udostępnia interfejs zdarzenia dla `IDebugApplicationNode` interfejsu.  
   
 ### <a name="machine-debug-manager"></a>Menedżer debugowania maszyn  
  Menedżer debugowania maszynowego udostępnia punkt podłączenie między aplikacjami wirtualnymi i debugerami przez utrzymywanie i wyliczanie listy aktywnych aplikacji wirtualnych.  
@@ -225,9 +225,9 @@ Rysunek 1
  Podstawowy interfejs Menedżera debugowania maszynowego.  
   
  [IMachineDebugManagerCookie, interfejs](../winscript/reference/imachinedebugmanagercookie-interface.md)  
- Podobnie jak w przypadku interfejsu `IMachineDebugManager`, ale ten interfejs obsługuje debugowanie plików cookie.  
+ Podobnie jak w przypadku `IMachineDebugManager` interfejsu, ale ten interfejs obsługuje debugowanie plików cookie.  
   
- [IMachineDebugManagerEvents, interfejs](../winscript/reference/imachinedebugmanagerevents-interface.md)  
+ [Interfejs IMachineDebugManagerEvents](../winscript/reference/imachinedebugmanagerevents-interface.md)  
  Sygnalizuje zmiany na działającej liście aplikacji obsługiwane przez Menedżera debugowania maszyny.  
   
  [IEnumRemoteDebugApplications, interfejs](../winscript/reference/ienumremotedebugapplications-interface.md)  
@@ -252,16 +252,16 @@ Rysunek 1
   
   Poniżej przedstawiono interfejsy udostępniane przez Menedżera debugowania procesów.  
   
-  [IProcessDebugManager, interfejs](../winscript/reference/iprocessdebugmanager-interface.md)  
+  [Interfejs IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md)  
   Interfejs podstawowy do Menedżera debugowania procesów. Ten interfejs może tworzyć, dodawać lub usuwać aplikacje wirtualne z procesu.  
   
   [IRemoteDebugApplication, interfejs](../winscript/reference/iremotedebugapplication-interface.md)  
   Reprezentuje uruchomioną aplikację.  
   
-  [IDebugApplication, interfejs](../winscript/reference/idebugapplication-interface.md)  
+  [Interfejs IDebugApplication](../winscript/reference/idebugapplication-interface.md)  
   Uwidacznia metody debugowania inne niż zdalne do użycia przez aparaty i hosty języka.  
   
-  [IRemoteDebugApplicationThread, interfejs](../winscript/reference/iremotedebugapplicationthread-interface.md)  
+  [Interfejs IRemoteDebugApplicationThread](../winscript/reference/iremotedebugapplicationthread-interface.md)  
   Reprezentuje wątek wykonania w ramach określonej aplikacji.  
   
   [IDebugApplicationThread, interfejs](../winscript/reference/idebugapplicationthread-interface.md)  
@@ -291,5 +291,5 @@ Rysunek 1
   [ISimpleConnectionPoint, interfejs](../winscript/reference/isimpleconnectionpoint-interface.md)  
   Zapewnia prosty sposób opisywania i wyliczania zdarzeń wyzwalanych w określonym punkcie połączenia dla aparatów skryptów.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Interfejsy debugera aktywnego skryptu](../winscript/reference/active-script-debugger-interfaces.md)

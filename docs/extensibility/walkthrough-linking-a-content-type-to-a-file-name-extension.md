@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku | Dokumenty firmy Microsoft'
+title: 'Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
@@ -10,36 +10,36 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328be013b5d522938cd7450fc53d4866c632abb3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697090"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904681"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Instruktaż: łączenie typu zawartości z rozszerzeniem nazwy pliku
-Można zdefiniować własny typ zawartości i połączyć rozszerzenie nazwy pliku do niego za pomocą edytora Managed Extensibility Framework (MEF) rozszerzenia. W niektórych przypadkach rozszerzenie nazwy pliku jest już zdefiniowane przez usługę języka. Ale, aby używać go z MEF, nadal należy połączyć go z typem zawartości.
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku
+Można zdefiniować własny typ zawartości i połączyć z nim rozszerzenie nazwy pliku przy użyciu rozszerzeń edytora Managed Extensibility Framework (MEF). W niektórych przypadkach rozszerzenie nazwy pliku jest już zdefiniowane przez usługę języka. Jednak aby użyć go z MEF, należy nadal połączyć go z typem zawartości.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dołączana jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Tworzenie projektu MEF
 
-1. Utwórz projekt VSIX języka C#. (W oknie dialogowym **Nowy projekt** wybierz pozycję **Visual C# / Extensibility**, a następnie **VSIX Project**.) Nazwij `ContentTypeTest`rozwiązanie .
+1. Utwórz projekt VSIX języka C#. (W oknie dialogowym **Nowy projekt** wybierz pozycję **Visual C#/rozszerzalność**, a następnie **Projekt VSIX**). Nadaj nazwę rozwiązanie `ContentTypeTest` .
 
-2. W pliku **source.extension.vsixmanifest** przejdź do karty **Zasoby** i ustaw pole **Typ** na **Microsoft.VisualStudio.MefComponent**, pole **Źródło** na Projekt w **bieżącym rozwiązaniu**i pole **Projekt** na nazwę projektu.
+2. W pliku **source. Extension. vsixmanifest** przejdź do karty **zasoby** , a następnie ustaw pole **Typ** na **Microsoft. VisualStudio. MefComponent**, pole **Źródło** **w projekcie w bieżącym rozwiązaniu**, a pole **projektu** na nazwę projektu.
 
-## <a name="define-the-content-type"></a>Definiowanie typu zawartości
+## <a name="define-the-content-type"></a>Zdefiniuj typ zawartości
 
-1. Dodaj plik klasy i `FileAndContentTypes`nadaj jego nazwę .
+1. Dodaj plik klasy i nadaj mu nazwę `FileAndContentTypes` .
 
 2. Dodaj odwołania do następujących zestawów:
 
-    1. System.componentmodel.composition
+    1. System. ComponentModel. kompozycji
 
-    2. Microsoft.VisualStudio.Text.Logic
+    2. Microsoft. VisualStudio. Text. Logic
 
-    3. Microsoft.VisualStudio.CoreUtility
+    3. Microsoft. VisualStudio. CoreUtility
 
 3. Dodaj następujące `using` dyrektywy.
 
@@ -50,14 +50,14 @@ Można zdefiniować własny typ zawartości i połączyć rozszerzenie nazwy pli
 
     ```
 
-4. Deklaruj klasę statyczną, która zawiera definicje.
+4. Zadeklaruj klasę statyczną, która zawiera definicje.
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
     {. . .}
     ```
 
-5. W tej klasie <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> wyeksportuj nazwany "ukrył" i zadeklarować jego podstawową definicję jako "tekst".
+5. W tej klasie należy wyeksportować <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> nazwany "HID" i zadeklarować jego definicję podstawową jako "text".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -71,7 +71,7 @@ Można zdefiniować własny typ zawartości i połączyć rozszerzenie nazwy pli
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>Łączenie rozszerzenia nazwy pliku z typem zawartości
 
-- Aby zamapować ten typ zawartości na <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> rozszerzenie nazwy pliku, wyeksportuj rozszerzenie *.hid* i typ zawartości "ukrył".
+- Aby zmapować ten typ zawartości na rozszerzenie nazwy pliku, należy wyeksportować element, <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> który ma rozszerzenie *. HID* i typ zawartości "HID".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -90,11 +90,11 @@ Można zdefiniować własny typ zawartości i połączyć rozszerzenie nazwy pli
 
 ## <a name="add-the-content-type-to-an-editor-export"></a>Dodawanie typu zawartości do eksportu edytora
 
-1. Tworzenie rozszerzenia edytora. Na przykład można użyć rozszerzenia glifów marginesu opisanego w [przewodniku: Utwórz glif marginesu](../extensibility/walkthrough-creating-a-margin-glyph.md).
+1. Utwórz rozszerzenie edytora. Na przykład można użyć rozszerzenia symbolu marginesu opisanego w [przewodniku: Utwórz symbol marginesu](../extensibility/walkthrough-creating-a-margin-glyph.md).
 
 2. Dodaj klasę zdefiniowaną w tej procedurze.
 
-3. Podczas eksportowania klasy rozszerzenia <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> dodaj do niej typ "ukrył".
+3. Podczas eksportowania klasy rozszerzeń należy dodać <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> do niej typ "HID".
 
     ```csharp
     [Export]
@@ -102,4 +102,4 @@ Można zdefiniować własny typ zawartości i połączyć rozszerzenie nazwy pli
     ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
+- [Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

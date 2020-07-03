@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik: Implementowanie fragmentów kodu | Dokumenty firmy Microsoft'
+title: 'Przewodnik: implementowanie fragmentów kodu | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: acangialosi
 ms.author: anthc
@@ -11,45 +11,45 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba1b6e0852c1ec1b306938b791eed78e79d211ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697098"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904712"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>Instruktaż: Implementowanie fragmentów kodu
-Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, dzięki czemu użytkownicy rozszerzenia mogą dodać je do własnego kodu.
+# <a name="walkthrough-implement-code-snippets"></a>Przewodnik: implementowanie fragmentów kodu
+Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, aby użytkownicy rozszerzenia mogli dodawać je do własnego kodu.
 
- Fragment kodu jest fragment kodu lub inny tekst, który może być włączony do pliku. Aby wyświetlić wszystkie urywki, które zostały zarejestrowane dla określonych języków programowania, w menu **Narzędzia** kliknij polecenie **Menedżer fragmentów kodu**. Aby wstawić fragment kodu do pliku, kliknij prawym przyciskiem myszy miejsce, w którym ma być fragment kodu, kliknij polecenie Wstaw fragment kodu lub **Za pomocą przycisku Surround With**, znajdź odpowiedni urywek, a następnie kliknij go dwukrotnie. Naciśnij **klawisz Tab** lub Klawisz **Shift**+**Tab,** aby zmodyfikować odpowiednie części fragmentu kodu, a następnie naciśnij klawisz **Enter** lub **Esc,** aby go zaakceptować. Aby uzyskać więcej informacji, zobacz [Fragmenty kodu](../ide/code-snippets.md).
+ Fragment kodu jest fragmentem kodu lub innym tekstem, który można dołączyć do pliku. Aby wyświetlić wszystkie fragmenty kodu, które zostały zarejestrowane dla określonych języków programowania, w menu **Narzędzia** kliknij polecenie **Menedżer fragmentów kodu**. Aby wstawić fragment kodu do pliku, kliknij prawym przyciskiem myszy w miejscu, w którym chcesz umieścić fragment kodu, kliknij polecenie Wstaw fragment kodu lub **Otocz za pomocą**, Znajdź odpowiedni fragment kodu, a następnie kliknij go dwukrotnie. Naciśnij klawisz **Tab** lub **SHIFT** + **Tab** , aby zmodyfikować odpowiednie fragmenty fragmentu kodu, a następnie naciśnij klawisz **Enter** lub **ESC** , aby je zaakceptować. Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md).
 
- Fragment kodu znajduje się w pliku XML z rozszerzeniem nazwy pliku .snippet*. Fragment kodu może zawierać pola, które są wyróżnione po wstawieniu fragmentu kodu, aby użytkownik mógł je znaleźć i zmienić. Plik urywka zawiera również informacje dotyczące **Menedżera fragmentów kodu,** dzięki czemu może wyświetlać nazwę fragmentu kodu w odpowiedniej kategorii. Aby uzyskać informacje na temat schematu fragmentu kodu, zobacz [Odwołanie do fragmentów kodu](../ide/code-snippets-schema-reference.md).
+ Fragment kodu jest zawarty w pliku XML, który ma rozszerzenie nazwy pliku. fragment *. Fragment kodu może zawierać pola, które są wyróżnione po wstawieniu wstawki, aby użytkownik mógł je znaleźć i zmienić. Plik wstawki zawiera również informacje dotyczące **Menedżera fragmentów kodu** , aby można było wyświetlić nazwę fragmentu w prawidłowej kategorii. Aby uzyskać więcej informacji na temat schematu fragmentu kodu, zobacz [odwołania do schematu](../ide/code-snippets-schema-reference.md).
 
- W tym przewodniku uczy się, jak wykonać następujące zadania:
+ W tym instruktażu przedstawiono sposób wykonywania następujących zadań:
 
-1. Tworzenie i rejestrowanie fragmentów kodu dla określonego języka.
+1. Utwórz i zarejestruj fragmenty kodu dla określonego języka.
 
 2. Dodaj polecenie **Wstaw fragment kodu** do menu skrótów.
 
-3. Implementowanie rozszerzenia fragmentu kodu.
+3. Zaimplementuj rozszerzenie fragmentu kodu.
 
-   Ten instruktaż jest oparty na [instruktażu: Zakończenie instrukcji wyświetlania](../extensibility/walkthrough-displaying-statement-completion.md).
+   Ten przewodnik jest oparty na [przewodniku: wyświetla uzupełnianie instrukcji](../extensibility/walkthrough-displaying-statement-completion.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dołączana jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-and-register-code-snippets"></a>Tworzenie i rejestrowanie fragmentów kodu
- Zazwyczaj fragmenty kodu są skojarzone z zarejestrowaną usługą językową. Jednak nie trzeba zaimplementować <xref:Microsoft.VisualStudio.Package.LanguageService> fragmenty kodu, aby zarejestrować. Zamiast tego wystarczy określić identyfikator GUID w pliku indeksu fragmentu kodu, a następnie użyć tego samego identyfikatora <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> GUID w dodaniu do projektu.
+ Zwykle fragmenty kodu są skojarzone z zarejestrowanej usługi językowej. Nie trzeba jednak wdrażać programu <xref:Microsoft.VisualStudio.Package.LanguageService> w celu zarejestrowania fragmentów kodu. Zamiast tego wystarczy określić identyfikator GUID w pliku indeksu fragmentu kodu, a następnie użyć tego samego identyfikatora GUID w elemencie <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> , który zostanie dodany do projektu.
 
- W poniższych krokach pokazano, jak utworzyć fragmenty kodu i skojarzyć je z określonym identyfikatorem GUID.
+ Poniższe kroki przedstawiają sposób tworzenia fragmentów kodu i kojarzenia ich z określonym identyfikatorem GUID.
 
 1. Utwórz następującą strukturę katalogów:
 
-    **%InstallDir%\TestSnippets\Urywki\1033\\**
+    **%InstallDir%\TestSnippets\Snippets\1033\\**
 
-    gdzie *%InstallDir%* jest folderem instalacyjnym programu Visual Studio. (Chociaż ta ścieżka jest zwykle używana do instalowania fragmentów kodu, można określić dowolną ścieżkę).
+    gdzie *% INSTALLDIR%* jest folderem instalacyjnym programu Visual Studio. (Chociaż ta ścieżka jest zwykle używana do instalowania fragmentów kodu, można określić dowolną ścieżkę).
 
-2. W folderze \1033\ utwórz plik *xml* i nazwij go **TestSnippets.xml**. (Mimo że ta nazwa jest zwykle używana dla pliku indeksu fragmentu kodu, można określić dowolną nazwę, o ile ma rozszerzenie nazwy pliku *xml.* Dodaj następujący tekst, a następnie usuń zastępczy identyfikator GUID i dodaj własny.
+2. W folderze \ 1033 \ Utwórz plik *. XML* i nadaj mu nazwę **TestSnippets.xml**. (Chociaż ta nazwa jest zwykle używana w pliku indeksu fragmentu kodu, można określić dowolną nazwę, o ile ma rozszerzenie nazwy pliku *. XML* ). Dodaj następujący tekst, a następnie usuń zastępczy identyfikator GUID i Dodaj własny.
 
    ```xml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -66,7 +66,7 @@ Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, dzięk
    </SnippetCollection>
    ```
 
-3. Utwórz plik w folderze urywka, nazwij go **testem,**`.snippet`a następnie dodaj następujący tekst:
+3. Utwórz plik w folderze fragmentu, nadaj mu nazwę **test** `.snippet` , a następnie Dodaj następujący tekst:
 
    ```xml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -112,78 +112,78 @@ Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, dzięk
 
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Aby zarejestrować fragmenty kodu dla określonego identyfikatora GUID
 
-1. Otwórz projekt **CompletionTest.** Aby uzyskać informacje dotyczące tworzenia tego projektu, zobacz [Instruktaż: Zakończenie wyświetlania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md).
+1. Otwórz projekt **CompletionTest** . Aby uzyskać informacje o sposobach tworzenia tego projektu, zobacz [Przewodnik: Kończenie instrukcji Display](../extensibility/walkthrough-displaying-statement-completion.md).
 
-2. W projekcie dodaj odwołania do następujących zestawów:
+2. W projekcie Dodaj odwołania do następujących zestawów:
 
-    - Microsoft.VisualStudio.TextManager.Interop
+    - Microsoft. VisualStudio. TextManager. Interop
 
-    - Microsoft.VisualStudio.TextManager.Interop.8.0
+    - Microsoft. VisualStudio. TextManager. Interop. 8.0
 
-    - plik microsoft.msxml
+    - Microsoft. MSXML
 
-3. W projekcie otwórz plik **source.extension.vsixmanifest.**
+3. W projekcie Otwórz plik **source. Extension. vsixmanifest** .
 
-4. Upewnij się, że **karta Zasoby** zawiera typ zawartości **VsPackage** i że **program Project** jest ustawiony na nazwę projektu.
+4. Upewnij się, że karta **zasoby** zawiera typ zawartości **pakietu VSPackage** i że **projekt** jest ustawiony na nazwę projektu.
 
-5. Wybierz projekt CompletionTest i w oknie Właściwości zestaw **Generate Pkgdef File** to **true**. Zapisz projekt.
+5. Wybierz projekt CompletionTest, a następnie w okno Właściwości Set **Generate pkgdef File** **.** Zapisz projekt.
 
-6. Dodaj klasę `SnippetUtilities` statyczną do projektu.
+6. Dodaj klasę statyczną `SnippetUtilities` do projektu.
 
      [!code-csharp[VSSDKCompletionTest#22](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_1.cs)]
      [!code-vb[VSSDKCompletionTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_1.vb)]
 
-7. W klasie Narzędzia urywek zdefiniuj identyfikator GUID i nadaj mu wartość używaną w pliku *SnippetsIndex.xml.*
+7. W klasie SnippetUtilities zdefiniuj identyfikator GUID i nadaj mu wartość użytą w pliku *SnippetsIndex.xml* .
 
      [!code-csharp[VSSDKCompletionTest#23](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_2.cs)]
      [!code-vb[VSSDKCompletionTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_2.vb)]
 
-8. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> do `TestCompletionHandler` klasy. Ten atrybut można dodać do dowolnej klasy publicznej lub wewnętrznej (niestatyczne) w projekcie. (Może być trzeba `using` dodać dyrektywę dla obszaru nazw Microsoft.VisualStudio.Shell.)
+8. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> do `TestCompletionHandler` klasy. Ten atrybut można dodać do dowolnej klasy publicznej lub wewnętrznej (niestatycznej) w projekcie. (Może być konieczne dodanie `using` dyrektywy do przestrzeni nazw Microsoft. VisualStudio. Shell).
 
      [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
      [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
 
-9. Tworzenie i uruchamianie projektu. W eksperymentalnym wystąpieniu programu Visual Studio, który rozpoczyna się po uruchomieniu projektu, fragment kodu, który właśnie zarejestrowałeś, powinien być wyświetlany w **Menedżerze urywków kodu** w języku **TestSnippets.**
+9. Skompiluj i Uruchom projekt. W eksperymentalnym wystąpieniu programu Visual Studio, które zaczyna się, gdy projekt jest uruchomiony, ten fragment kodu, który właśnie zarejestrowałeś, powinien zostać wyświetlony w **Menedżerze fragmentów kodów** w języku **TestSnippets** .
 
-## <a name="add-the-insert-snippet-command-to-the-shortcut-menu"></a>Dodawanie polecenia Wstaw fragment kodu do menu skrótów
- Polecenie **Wstaw fragment** kodu nie znajduje się w menu skrótów pliku tekstowego. W związku z tym należy włączyć polecenie.
+## <a name="add-the-insert-snippet-command-to-the-shortcut-menu"></a>Dodaj polecenie Wstaw fragment kodu do menu skrótów
+ Polecenie **Wstaw fragment kodu** nie jest zawarte w menu skrótów dla pliku tekstowego. W związku z tym należy włączyć polecenie.
 
-#### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>Aby dodać polecenie Wstaw fragment kodu do menu skrótów
+#### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>Aby dodać polecenie Wstaw wstawki do menu skrótów
 
 1. Otwórz `TestCompletionCommandHandler` plik klasy.
 
-     Ponieważ ta klasa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>implementuje, można aktywować **polecenie Wstaw urywek** w metodzie. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Przed włączeniem polecenia sprawdź, czy ta metoda nie jest wywoływana wewnątrz funkcji automatyzacji, ponieważ po kliknięciu polecenia Wstaw urywek wyświetla interfejs użytkownika selektora urywków.Before you enable the command, check that this method is not being called inside an automation function because when the **Insert Snippet** command is clicked, it displays the 000ppet picker user interface (UI).
+     Ponieważ ta klasa implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> , można aktywować polecenie **Wstaw fragment kodu** w <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodzie. Przed włączeniem polecenia Sprawdź, czy ta metoda nie jest wywoływana wewnątrz funkcji automatyzacji, ponieważ po kliknięciu polecenia **Wstaw fragment** kodu zostanie wyświetlony selektor fragmentu interfejsu użytkownika (UI).
 
      [!code-csharp[VSSDKCompletionTest#25](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_4.cs)]
      [!code-vb[VSSDKCompletionTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_4.vb)]
 
-2. Tworzenie i uruchamianie projektu. W eksperymentalnym wystąpieniu otwórz plik z rozszerzeniem nazwy pliku *.zzz,* a następnie kliknij prawym przyciskiem myszy w dowolnym miejscu. Polecenie **Wstaw fragment** powinien pojawić się w menu skrótów.
+2. Skompiluj i Uruchom projekt. W eksperymentalnym wystąpieniu Otwórz plik, który ma rozszerzenie nazwy pliku *. zzz* , a następnie kliknij prawym przyciskiem myszy w dowolnym miejscu. Polecenie **Wstaw fragment kodu** powinno pojawić się w menu skrótów.
 
-## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>Implementowanie rozszerzenia fragmentu kodu w interfejsie użytkownika selektora urywek
- W tej sekcji pokazano, jak zaimplementować rozszerzenie fragmentu kodu, tak aby interfejs użytkownika selektora fragmentów kodu był wyświetlany po kliknięciu w menu skrótów **wstawiania fragmentu kodu.** Fragment kodu jest również rozwijany, gdy użytkownik wpisuje skrót do fragmentu kodu, a następnie naciśnie **klawisz Tab**.
+## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>Implementuj rozszerzanie fragmentu kodu w interfejsie użytkownika selektora fragmentów kodu
+ W tej sekcji pokazano, jak zaimplementować rozszerzenie fragmentu kodu, tak aby interfejs użytkownika selektora fragmentów był wyświetlany po kliknięciu przycisku **Wstaw fragment** w menu skrótów. Fragment kodu jest również rozszerzany, gdy użytkownik wpisze skrót do fragmentu kodu, a następnie naciśnie klawisz **Tab**.
 
- Aby wyświetlić interfejs użytkownika selektora fragmentów kodu i włączyć akceptację fragmentu kodu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> nawigacji i po wstawieniu, należy użyć tej metody. Samo wstawienie jest <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> obsługiwane przez metodę.
+ Aby wyświetlić interfejs użytkownika selektora fragmentów i włączyć funkcję nawigacji i zatwierdzania fragmentów kodu po wstawieniu, użyj <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Samo wstawienie jest obsługiwane przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> metodę.
 
- Implementacja rozszerzenia fragmentu kodu używa <xref:Microsoft.VisualStudio.TextManager.Interop> starszych interfejsów. Podczas tłumaczenia z bieżących klas edytora do starszego kodu, należy pamiętać, że starsze interfejsy używają kombinacji numerów wierszy i numerów kolumn, aby określić lokalizacje w buforze tekstowym, ale bieżące klasy używają jednego indeksu. W związku z tym jeśli bufor ma trzy wiersze, z których każdy ma 10 znaków (plus nowy wiersz, który liczy się jako jeden znak), czwarty znak w trzecim wierszu znajduje się na pozycji 27 w bieżącej implementacji, ale znajduje się w wierszu 2, pozycja 3 w starej implementacji.
+ Implementacja rozszerzenia fragmentu kodu używa starszych <xref:Microsoft.VisualStudio.TextManager.Interop> interfejsów. W przypadku tłumaczenia z bieżących klas edytora do starszego kodu, należy pamiętać, że starsze interfejsy używają kombinacji numerów wierszy i numerów kolumn do określania lokalizacji w buforze tekstowym, ale bieżące klasy używają jednego indeksu. W związku z tym, jeśli bufor ma trzy wiersze, z których każdy ma 10 znaków (plus znak nowego wiersza, który liczy jako jeden znak), czwarty znak w trzecim wierszu znajduje się na pozycji 27 bieżącej implementacji, ale jest w wierszu 2, pozycja 3 w starej implementacji.
 
 #### <a name="to-implement-snippet-expansion"></a>Aby zaimplementować rozszerzenie fragmentu kodu
 
-1. Do pliku, który `TestCompletionCommandHandler` zawiera klasę, `using` dodaj następujące dyrektywy.
+1. Do pliku, który zawiera `TestCompletionCommandHandler` klasę, Dodaj następujące `using` dyrektywy.
 
      [!code-csharp[VSSDKCompletionTest#26](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_5.cs)]
      [!code-vb[VSSDKCompletionTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_5.vb)]
 
-2. Upewnij `TestCompletionCommandHandler` się, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> że klasa implementuje interfejs.
+2. Ustaw `TestCompletionCommandHandler` klasę jako implementującą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interfejs.
 
      [!code-csharp[VSSDKCompletionTest#27](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_6.cs)]
      [!code-vb[VSSDKCompletionTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_6.vb)]
 
-3. W `TestCompletionCommandHandlerProvider` klasie zaimportuj plik <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
+3. W `TestCompletionCommandHandlerProvider` klasie zaimportuj <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> .
 
      [!code-csharp[VSSDKCompletionTest#28](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_7.cs)]
      [!code-vb[VSSDKCompletionTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_7.vb)]
 
-4. Dodaj kilka pól prywatnych dla interfejsów rozszerzenia kodu i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
+4. Dodaj pola prywatne dla interfejsów rozszerzających kod i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .
 
      [!code-csharp[VSSDKCompletionTest#29](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_8.cs)]
      [!code-vb[VSSDKCompletionTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_8.vb)]
@@ -193,60 +193,60 @@ Można utworzyć fragmenty kodu i dołączyć je do rozszerzenia edytora, dzięk
      [!code-csharp[VSSDKCompletionTest#30](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_9.cs)]
      [!code-vb[VSSDKCompletionTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_9.vb)]
 
-6. Aby wyświetlić selektor urywków, gdy użytkownik kliknie polecenie **Wstaw urywek,** dodaj do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody następujący kod. (Aby to wyjaśnienie było bardziej `Exec()`czytelne, kod, który jest używany do uzupełniania instrukcji nie jest wyświetlany; zamiast tego bloki kodu są dodawane do istniejącej metody.) Dodaj następujący blok kodu po kodzie, który sprawdza znak.
+6. Aby wyświetlić selektor wstawki, gdy użytkownik kliknie polecenie **Wstaw fragment** kodu, Dodaj następujący kod do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. (Aby to wyjaśnienie było bardziej czytelne, `Exec()` kod używany do uzupełniania instrukcji nie jest wyświetlany; zamiast tego, bloki kodu są dodawane do istniejącej metody). Dodaj następujący blok kodu po kodzie, który sprawdza znak.
 
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7. Jeśli fragment kodu ma pola, które można nawigować, sesja rozszerzenia jest otwarta, dopóki rozszerzenie nie zostanie jawnie zaakceptowane; Jeśli fragment kodu nie ma pól, sesja jest zamykana i zwracana jako `null` metoda. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> W <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodzie po kod interfejsu użytkownika selektora fragmentów kodu, który został dodany w poprzednim kroku, dodaj następujący kod do obsługi nawigacji fragmentu kodu (gdy użytkownik naciśnie **Tab** lub **Shift**+**Tab** po wstawieniu fragmentu).
+7. Jeśli fragment kodu zawiera pola, które mogą być przechodzenie, sesja rozszerzania jest otwarta do momentu, gdy rozszerzanie zostanie jawnie zaakceptowane; Jeśli fragment kodu nie zawiera żadnych pól, sesja jest zamknięta i jest zwracana `null` przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> metodę. W tej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodzie, po kodzie interfejsu użytkownika selektora fragmentów, który został dodany w poprzednim kroku, Dodaj następujący kod, aby obsłużyć nawigację fragmentu (gdy użytkownik naciśnie klawisz **Tab** lub **SHIFT** + **Tab** po wstawieniu fragmentu kodu).
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8. Aby wstawić fragment kodu, gdy użytkownik wpisze odpowiedni skrót, a następnie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> naciśnie klawisz **Tab**, dodaj kod do metody. Metoda prywatna, która wstawia fragment kodu, zostanie wyświetlona w późniejszym kroku. Dodaj następujący kod po kodzie nawigacyjnym dodanym w poprzednim kroku.
+8. Aby wstawić fragment kodu, gdy użytkownik wpisze odpowiedni skrót, a następnie naciśnij klawisz **Tab**, Dodaj kod do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Metoda prywatna, która wstawia fragment kodu, zostanie wyświetlona w późniejszym kroku. Dodaj następujący kod po kodzie nawigacji, który został dodany w poprzednim kroku.
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
 
-9. Zaimplementuj metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interfejsu. W tej realizacji jedynymi metodami zainteresowania są <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.EndExpansion%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A>. Inne metody powinny <xref:Microsoft.VisualStudio.VSConstants.S_OK>po prostu powrócić .
+9. Zaimplementuj metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interfejsu. W tej implementacji jedyną metodą zainteresowania są <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.EndExpansion%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> . Pozostałe metody powinny po prostu zwrócić <xref:Microsoft.VisualStudio.VSConstants.S_OK> .
 
      [!code-csharp[VSSDKCompletionTest#34](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_13.cs)]
      [!code-vb[VSSDKCompletionTest#34](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_13.vb)]
 
-10. Zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> metodę. Metoda pomocnika, która faktycznie wstawia rozszerzenia jest omówiona w późniejszym kroku. Zawiera <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> informacje o wierszu i kolumnie, które można uzyskać z pliku <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
+10. Zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> metodę. Metoda pomocnika, która wstawia rozszerzenia, jest omówiona w późniejszym kroku. <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>Zawiera informacje o wierszu i kolumnie, które można uzyskać od <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .
 
      [!code-csharp[VSSDKCompletionTest#35](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_14.cs)]
      [!code-vb[VSSDKCompletionTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_14.vb)]
 
-11. Następująca metoda prywatna wstawia fragment kodu, oparty na skrótze lub na tytule i ścieżce. Następnie wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansion.InsertNamedExpansion%2A> metodę z fragmentem kodu.
+11. Poniższa metoda prywatna wstawia fragment kodu na podstawie skrótu lub tytułu i ścieżki. Następnie wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansion.InsertNamedExpansion%2A> metodę za pomocą fragmentu kodu.
 
      [!code-csharp[VSSDKCompletionTest#36](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_15.cs)]
      [!code-vb[VSSDKCompletionTest#36](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_15.vb)]
 
-## <a name="build-and-test-code-snippet-expansion"></a>Tworzenie i testowanie rozszerzenia fragmentu kodu
- Można sprawdzić, czy rozszerzenie fragmentu kodu działa w projekcie.
+## <a name="build-and-test-code-snippet-expansion"></a>Kompiluj i Testuj rozszerzanie fragmentu kodu
+ Możesz sprawdzić, czy rozszerzenie fragmentu działa w projekcie.
 
-1. Skompiluj rozwiązanie. Po uruchomieniu tego projektu w debugerze zostanie uruchomione drugie wystąpienie programu Visual Studio.
+1. Skompiluj rozwiązanie. Po uruchomieniu tego projektu w debugerze uruchomione jest drugie wystąpienie programu Visual Studio.
 
 2. Otwórz plik tekstowy i wpisz tekst.
 
-3. Kliknij prawym przyciskiem myszy miejsce w tekście, a następnie kliknij polecenie **Wstaw fragment kodu**.
+3. Kliknij prawym przyciskiem myszy w tekście, a następnie kliknij **Wstaw fragment kodu**.
 
-4. Interfejs użytkownika selektora fragmentów kodu powinien pojawić się z wyskakującym okienkiem z **napisem Test pola wymiany**. Kliknij dwukrotnie okno podręczne.
+4. Interfejs użytkownika selektora fragmentów powinien pojawić się z wyskakującym menu zawierającym **pola zastępujące testy**. Kliknij dwukrotnie wyskakujące okienko.
 
-     Należy wstawić następujący fragment kodu.
+     Należy wstawić poniższy fragment kodu.
 
     ```
     MessageBox.Show("first");
     MessageBox.Show("second");
     ```
 
-     Nie **naciskaj klawiszy Enter** lub **Esc**.
+     Nie naciskaj klawisza **Enter** ani **ESC**.
 
-5. Naciśnij **klawisz Tab** i klawisz **Shift**+**Tab,** aby przełączać się między "pierwszym" a "drugim".
+5. Naciśnij klawisz **Tab** i **SHIFT** + **,** aby przełączać się między elementami "First" i "Second".
 
-6. Zaakceptuj wstawienie, naciskając **klawisz Enter** lub **Esc**.
+6. Zaakceptuj Wstawianie, naciskając klawisz **Enter** lub **ESC**.
 
-7. W innej części tekstu wpisz "test", a następnie naciśnij **klawisz Tab**. Ponieważ "test" jest skrótem fragmentu kodu, fragment kodu powinien zostać ponownie wstawiony.
+7. W innej części tekstu wpisz "test", a następnie naciśnij klawisz **Tab**. Ponieważ "test" jest skrótem fragmentu kodu, fragment powinien zostać wstawiony ponownie.
 
 ## <a name="next-steps"></a>Następne kroki

@@ -1,110 +1,110 @@
 ---
-title: Korzyści pluralsight w subskrypcjach programu Visual Studio | Dokumenty firmy Microsoft
+title: Pluralsight korzyść w subskrypcjach programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
-ms.topic: conceptual
-description: Dowiedz się więcej o subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 6ae0a77cf4849f0e648eeed17830911c90c8b584
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.topic: how-to
+description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
+ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649802"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902815"
 ---
-# <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkoleniowe pluralsight w subskrypcjach programu Visual Studio
+# <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
 
-Rozwijaj swoje umiejętności dzięki specjalistycznym kursom, ścieżkom edukacyjnym, adaptacyjnemu pomiarowi umiejętności i nie tylko!  W zależności od posiadanej subskrypcji programu Visual Studio lub członkostwa w programie możesz mieć prawo do maksymalnie sześciu miesięcy bezpłatnego, nieograniczonego dostępu do całego katalogu Pluralsight.
+Zwiększ swoje umiejętności dzięki kursom tworzonym przez ekspertów, ścieżkom szkoleniowym, adaptacyjnemu pomiarowi umiejętności i nie tylko.  W zależności od posiadanej subskrypcji programu Visual Studio lub członkostwa w programie można kwalifikować się do korzystania z bezpłatnego okresu nieograniczonego dostępu do całego wykazu Pluralsight.
 
-W poniższej tabeli szczegółowo, jakie korzyści subskrypcji Pluralsight są dostępne dla każdego typu subskrypcji programu Visual Studio.  Niektórzy subskrybenci będą mogli również korzystać z ograniczonych kursów po wygaśnięciu pełnej subskrypcji dostępu do katalogu. Pluralsight poprowadzi Cię przez ten proces po wygaśnięciu pełnej subskrypcji katalogu.
+W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Pluralsight są dostępne dla każdego typu subskrypcji programu Visual Studio.  Niektórzy subskrybenci będą również mogli korzystać z ograniczonych kursów po wygaśnięciu pełnej subskrypcji dostępu do katalogu. Pluralsight przeprowadzi Cię przez ten proces w przypadku wygaśnięcia pełnej subskrypcji katalogu.
 
- W zależności od typu subskrypcji, którą mają, nie wszyscy subskrybenci, którzy wcześniej korzystali z subskrypcji Pluralsight udostępnianej za pośrednictwem subskrypcji programu Visual Studio, będą mogli realizować nowe oferty korzyści Pluralsight. Jeśli nie kwalifikujesz się do skorzystania z dodatkowych korzyści szkoleniowych w pluralsight, otrzymasz powiadomienie o próbie aktywowania świadczenia na stronie internetowej Pluralsight.
+ W zależności od typu posiadanej subskrypcji, nie wszyscy Subskrybenci, którzy wcześniej korzystali z subskrypcji usługi Pluralsight udostępnionej za pomocą subskrypcji programu Visual Studio, będą mogli zrealizować oferty nowych korzyści Pluralsight. Jeśli nie masz uprawnień do skorzystania z dodatkowych korzyści z szkolenia Pluralsight, otrzymasz powiadomienie przy próbie aktywowania korzyści w witrynie sieci Web Pluralsight.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
-1. Aby aktywować subskrypcję, połącz się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) z linkiem Pobierz **kod** na kafelku Korzyści Pluralsight, znajdującym się w sekcji Rozwój zawodowy.
+1. Aby aktywować subskrypcję, Połącz się z usługą [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij link **uzyskaj kod** na kafelku korzyści Pluralsight, który znajduje się w sekcji Programowanie profesjonalne.
    > [!div class="mx-imgBorder"]
-   > ![Płytka korzyści pluralsight](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
+   > ![Kafelek korzyści Pluralsight](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
    >
    > [!IMPORTANT]
-   > Po kliknięciu linku "Pobierz kod" na kafelku korzyści Pluralsight może pojawić się następujący komunikat:
+   > Po kliknięciu linku "Pobierz kod" na kafelku korzyści Pluralsight może zostać wyświetlony następujący komunikat:
    >
-   > **"Uwaga: Jeśli wcześniej aktywowano inną ofertę Pluralsight za pośrednictwem subskrypcji programu Visual Studio, ten kod może nie umożliwiać tworzenia nowego konta Pluralsight."**
+   > **"Uwaga: Jeśli wcześniej aktywowano inną ofertę Pluralsight w ramach subskrypcji programu Visual Studio, ten kod może nie pozwalać na utworzenie nowego konta Pluralsight".**
 
-2. Otrzymasz powiadomienie, że kod kuponu został pomyślnie pobrany.  Kliknij pozycję **Aktywuj**.
+2. Otrzymasz powiadomienie o pomyślnym pobraniu kodu kuponu.  Kliknij pozycję **Aktywuj**.
 
-3. Zostaniesz przekierowany do strony Pluralsight dla korzyści, która jest dołączona do subskrypcji programu Visual Studio.
+3. Nastąpi przekierowanie do strony Pluralsight, która jest dostępna w ramach subskrypcji programu Visual Studio.
    - Podaj informacje kontaktowe wymagane w formularzu
-   - Kliknij to pole wyboru, aby zaakceptować warunki użytkowania i politykę prywatności
-   - Kliknij **zgadzam się, aktywuj korzyści**.
+   - Kliknij pole wyboru, aby zaakceptować warunki użytkowania i zasady zachowania poufności informacji
+   - Kliknij przycisk **Zgadzam się, Aktywuj korzyść**.
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight Aktywuj swoje korzyści](_img/vs-pluralsight/vs-pluralsight-create-account.png)
+   > ![Pluralsight Aktywuj korzyść](_img/vs-pluralsight/vs-pluralsight-create-account.png)
 
-5. Skonfigurowanie konta może chwilę potrwać.  Po zakończeniu zobaczysz potwierdzenie na stronie i otrzymasz wiadomość e-mail z danymi logowania.  Wiadomość e-mail zostanie wysłana na alias podany podczas tworzenia konta.  Jeśli masz problemy ze znalezieniem wiadomości, sprawdź foldery wiadomości-śmieci lub spam.
+5. Skonfigurowanie Twojego konta może chwilę potrwać.  Po wykonaniu tej czynności zobaczysz potwierdzenie na stronie i otrzymasz wiadomość e-mail z informacjami o logowaniu.  Wiadomość e-mail zostanie wysłana na alias określony podczas tworzenia konta.  Jeśli masz problemy z znalezieniem komunikatu, pamiętaj, aby sprawdzić foldery poczty wiadomości-śmieci lub spamu.
 
    > [!NOTE]
-   > Jeśli Twoje konto nie kwalifikuje się do realizacji nowych ofert, otrzymana wiadomość e-mail wyjaśni, że wystąpił problem z utworzeniem konta, ponieważ nie kwalifikuje się ono do udziału w programach.  Będzie również zawierać informacje, które pomogą Ci skontaktować się z zespołem pomocy technicznej Pluralsight, który może odpowiedzieć na wszelkie pytania dotyczące twojego konta.
+   > Jeśli Twoje konto nie kwalifikuje się do skorzystania z nowych ofert, otrzymasz wiadomość e-mail z informacją, że wystąpił problem podczas tworzenia konta, ponieważ nie jest on uprawniony.  Zawiera również informacje ułatwiające kontaktowanie się z zespołem pomocy technicznej firmy Pluralsight, który może odpowiedzieć na pytania dotyczące Twojego konta.
    
 
-6. Po pomyślnym utworzeniu konta otrzymany adres e-mail będzie zawierał twoją nazwę użytkownika i poprosi o utworzenie hasła.  Podaj hasło, wprowadź go ponownie, aby go potwierdzić, a następnie kliknij przycisk **Zaloguj się do Pluralsight**.
+6. Po pomyślnym utworzeniu konta otrzymana wiadomość e-mail będzie zawierać nazwę użytkownika i poprosił o utworzenie hasła.  Podaj hasło, wprowadź je ponownie, aby je potwierdzić, a następnie kliknij przycisk **Zaloguj się do Pluralsight**.
 
-7. Wprowadź nazwę użytkownika podana w wiadomości e-mail powitalnej i hasło, które właśnie utworzono, a następnie kliknij przycisk **Zaloguj**się .
+7. Wprowadź nazwę użytkownika podaną w powitalnej wiadomości e-mail, a właśnie utworzone hasło, a następnie kliknij przycisk **Zaloguj**.
 
-8. Gotowe.  Teraz możesz rozpocząć naukę z tysiącami kursów Pluralsight!
+8. Gotowe.  Teraz możesz zacząć uczenie się z tysiącami kursów Pluralsight!
 
-## <a name="eligibility"></a>Kwalifikowalności
+## <a name="eligibility"></a>Kryteria
 
-|                          Poziom subskrypcji                          |     Kanały      |    Korzyść    |   Odnawialnej?   |
+|                          Poziom subskrypcji                          |     Kanały      |    Korzyść    |   Odnawialny?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (standard)           | VL, Azure, Handel detaliczny |   6 miesięcy    | Tak<sup>2</sup> |
-|          Visual Studio Enterprise z gitHub Enterprise          | Vl  |   6 miesięcy    | Tak<sup>2</sup> |
-|         Visual Studio Professional (standard)          | VL, Azure, Handel detaliczny |   3 miesiące    | Tak<sup>2</sup> |
-|         Visual Studio Professional z gitHub Enterprise          | Vl  |   3 miesiące    | Tak<sup>2</sup> |
-|              Visual Studio Test Professional (standard)              |    VL, Handel detaliczny     |   Niedostępne    | Nie dotyczy  |
-|                      Platformy MSDN (standard)                       |    VL, Handel detaliczny     |   Niedostępne    | Nie dotyczy  |
+|          Visual Studio Enterprise (standardowa)           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   6 miesięcy    | Tak<sup>2</sup> |
+|          Visual Studio Enterprise z usługą GitHub Enterprise          | Licencja  |   6 miesięcy    | Tak<sup>2</sup> |
+|         Visual Studio Professional (standardowa)          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   3 miesiące    | Tak<sup>2</sup> |
+|         Visual Studio Professional z usługą GitHub Enterprise          | Licencja  |   3 miesiące    | Tak<sup>2</sup> |
+|              Visual Studio Test Professional (standardowa)              |    LICENCJONOWANie detaliczne     |   Niedostępne    | Nie dotyczy  |
+|                      Platformy MSDN (standardowa)                       |    LICENCJONOWANie detaliczne     |   Niedostępne    | Nie dotyczy  |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) |       Azure       | Niedostępne |       Nie dotyczy       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       Nie dotyczy       |
 ||
 
-<sup>1</sup>  *Obejmuje: Nie dla odsprzedaży (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD), Microsoft Partner Network (MPN), pełnego etatu.*
 
-<sup>2</sup>  *Korzyści Pluralsight w wybranych subskrypcji programu Visual Studio odnawia się po odnowieniu subskrypcji. Jeśli na przykład masz roczną subskrypcję odnawianą co roku, świadczenie jest dostępne każdego roku po odnowieniu. Jeśli masz subskrypcję wieloletnią, świadczenie Pluralsight jest dostępne raz w okresie subskrypcji.  Jeśli odnowisz subskrypcję wieloletnią, świadczenie będzie ponownie dostępne po odnowieniu.*
+<sup>2</sup>  *korzyść Pluralsight w wybranych subskrypcjach programu Visual Studio jest odnawiana w przypadku odnowienia subskrypcji. Na przykład jeśli masz roczną subskrypcję, którą można odnowić w każdym roku, korzyść będzie dostępna dla każdego roku po odnowieniu. Jeśli masz subskrypcję wieloletnią, korzyść Pluralsight jest dostępna raz w okresie obowiązywania subskrypcji.  W przypadku odnowienia subskrypcji wieloletniej korzyść będzie dostępna ponownie po odnowieniu.*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już rocznych subskrypcji programu Visual Studio Professional i rocznych subskrypcji programu Visual Studio Enterprise w subskrypcjach w chmurze. Nie będzie żadnych zmian w istniejącym doświadczeniu klientów i możliwości odnawiania, zwiększania, zmniejszania lub anulowania subskrypcji. Zachęcamy nowych klientów, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) aby przejść do eksplorowania różnych opcji zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) przeglądania różnych opcji zakupu programu Visual Studio.
 
-Nie wiesz, której subskrypcji używasz?  Połącz [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) się, aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przypisanych do innego adresu e-mail.  Aby wyświetlić te subskrypcje, musisz zalogować się przy tym adresie e-mail.
+Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>P: Mam subskrypcję programu Visual Studio Enterprise, ale nie widzę kafelka Pluralsight na stronie Korzyści. Co jest nie tak?
-Odp.: Nie wszystkie subskrypcje programu Visual Studio Enterprise zawierają korzyść Pluralsight.  Sprawdź [tabelę uprawnień,](#eligibility) aby sprawdzić, czy twoja subskrypcja kwalifikuje się.
+### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>P: mam subskrypcję Visual Studio Enterprise, ale nie widzę kafelka Pluralsight na stronie korzyści. Co jest nie tak?
+Odp.: nie wszystkie subskrypcje Visual Studio Enterprise obejmują korzyść Pluralsight.  Sprawdź [tabelę kwalifikowania](#eligibility) , aby sprawdzić, czy Twoja subskrypcja kwalifikuje się do korzystania z niej.
 
-### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: Czy mam dostęp do dowolnych niestandardowych playlist lub kanałów edukacyjnych?
-Odp.: Tak, jako subskrybent programu Visual Studio masz dostęp do kanałów ekspertów w ramach korzyści szkoleniowych Pluralsight. Te kanały zostały specjalnie wyselekcjonowane przez ekspertów firmy Microsoft i są ukierunkowane na uczenie się w obszarach .Net, Azure, DevOps i mobility. Aktywuj korzyści Pluralsight za pośrednictwem [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) portalu subskrypcji programu Visual Studio, aby uzyskać dostęp do tych kanałów na stronie docelowej Pluralsight —
+### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: czy mam dostęp do dowolnych dostosowanych list odtwarzania lub kanałów szkoleniowych?
+Odp.: tak, jako subskrybent programu Visual Studio uzyskujesz dostęp do kanałów ekspertów w ramach korzyści z szkolenia Pluralsight. Te kanały zostały specjalnie nadzorowane przez ekspertów firmy Microsoft i są przeznaczone do uczenia się w obszarach platformy .NET, platformy Azure, DevOps i mobilności. Aktywuj korzyść Pluralsight za poorednictwem portalu subskrypcji programu Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) , aby uzyskać dostęp do tych kanałów na stronie docelowej Pluralsight —
 
-• Scott Hanselmann (.Net, Azure) -[https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
+• Scott Hanselmann (.NET, Azure) —[https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
 
-• Donovan Brown (DevOps) -[https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
+• Donovan Brown (DevOps) —[https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
 
-• James Montemagno (Mobilność) -[https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
+• Kuba Montemagno (mobilność) —[https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
 
-### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: Co się stanie, gdy skończy się moja subskrypcja Pluralsight?
-O: Po zakończeniu bezpłatnej subskrypcji Pluralsight możesz kupić subskrypcję bezpośrednio od Pluralsight.  W celu uzyskania szczegółowych informacji prosimy o kontakt z [firmą Pluralsight.](https://www.pluralsight.com)
+### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: co się stanie, gdy subskrypcja usługi Pluralsight zostanie uruchomiona?
+Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić subskrypcję bezpośrednio z Pluralsight.  Aby uzyskać szczegółowe informacje, skontaktuj się z [Pluralsight](https://www.pluralsight.com) .
 
-## <a name="support-resources"></a>Zasoby pomocnicze
-- [Centrum pomocy Pluralsight](https://help.pluralsight.com/help) zapewnia pomoc w kursach Pluralsight lub korzystaniu ze strony internetowej Pluralsight.
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
-- Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Zasoby pomocy technicznej
+- [Centrum pomocy Pluralsight](https://help.pluralsight.com/help) zapewnia pomoc dotyczącą opracowywania kursów Pluralsight lub korzystania z witryny sieci Web Pluralsight.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Po utworzeniu konta możesz rozpocząć szkolenie.  Odwiedź [https://www.pluralsight.com](https://www.pluralsight.com) i naciśnij **zaloguj się w** prawym górnym rogu strony, aby rozpocząć nowy kurs lub powrócić do kursu już w toku.
+Po utworzeniu konta możesz zacząć uczenie się.  Odwiedź [https://www.pluralsight.com](https://www.pluralsight.com) i naciśnij pozycję **Zaloguj** się w prawym górnym rogu strony, aby rozpocząć nowy kurs, lub Wróć do kursu, który jest już w toku.
 
-Skorzystaj z własnego piaskownicy programistycznej, aktywując [indywidualny kredyt usługi Azure DevTest.](vs-azure.md) 
+Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md). 

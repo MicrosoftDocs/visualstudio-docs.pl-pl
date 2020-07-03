@@ -1,28 +1,28 @@
 ---
-title: Interfejsy skryptów Windows | Dokumentacja firmy Microsoft
+title: Interfejsy skryptów systemu Windows | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 141f3f0e60e797a4104c3e276775631f6e9196c5
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840034"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835410"
 ---
 # <a name="windows-script-interfaces"></a>Interfejsy skryptów systemu Windows
 
-Interfejsy skryptów systemu Microsoft Windows umożliwiają aplikację w celu dodania skryptów i automatyzacji OLE. Hosty, które zależą od skryptów Windows Scripting umożliwia aparatów obsługi skryptów z wielu źródeł i dostawców Zarządzanie skryptów między składnikami. Implementacja sam skrypt — język, składni, trwałym formacie, model wykonywania i tak dalej — pozostało do dostawcy skryptu.
+Interfejsy skryptów systemu Microsoft Windows umożliwiają aplikacji Dodawanie skryptów i automatyzacji OLE. Hosty obsługujące skrypty, które opierają się na skrypcie systemu Windows, mogą używać aparatów skryptów z wielu źródeł i dostawców do zarządzania skryptami między składnikami. Implementacja samego skryptu — język, składnia, format trwały, model wykonywania i tak dalej — jest pozostawiony do dostawcy skryptów.
 
-Dokumentacja skryptów Windows jest podzielona na następujące sekcje:
+Dokumentacja skryptów systemu Windows jest podzielona na następujące sekcje:
 
 [Hosty skryptów systemu Windows](../winscript/windows-script-hosts.md)
 
@@ -34,60 +34,60 @@ Dokumentacja skryptów Windows jest podzielona na następujące sekcje:
 
 [Dokumentacja interfejsów skryptów systemu Windows](../winscript/reference/windows-script-interfaces-reference.md)
 
-## <a name="windows-script-background"></a>Tło skrypt Windows
+## <a name="windows-script-background"></a>Tło skryptu systemu Windows
 
-Interfejsy skryptów Windows można podzielić na dwie kategorie: Hosty skryptów Windows i aparatów skryptów Windows. Host tworzy silnik wykonywania skryptów i wywołuje na aparacie na uruchamianie skryptów. Hosty skryptów Windows należą:
+Interfejsy skryptów systemu Windows dzielą się na dwie kategorie: hosty skryptów systemu Windows i aparaty skryptów systemu Windows. Host tworzy aparat skryptów i wywołuje aparat do uruchamiania skryptów. Przykłady hostów skryptów systemu Windows obejmują:
 
 - Microsoft Internet Explorer
 
-- Narzędzia do tworzenia internetowego
+- Narzędzia autorskie Internetu
 
 - Powłoka
 
-Aparaty skryptów Windows mogą być tworzone dla dowolnego języka lub środowiska wykonawczego, w tym:
+Aparaty skryptów systemu Windows można opracować dla dowolnego języka lub środowiska wykonawczego, w tym:
 
 - Microsoft Visual Basic Scripting Edition (VBScript)
 
-- Perl
+- Języku
 
 - Lisp
 
-Do wdrożenia hosta był jak najbardziej elastyczny, otoka automatyzacji OLE dla skryptu Windows jest dostarczany. Hosta, który używa tego obiektu otoki do utworzenia wystąpienia silnika wykonywania skryptów nie ma jednak stopnia kontroli nad przestrzeń nazw czasu wykonywania, stan trwały modelu i tak dalej, która będzie używać skryptów Windows bezpośrednio.
+Aby zapewnić, że implementacja hosta jest możliwie elastyczna, udostępniana jest funkcja otoki automatyzacji OLE dla systemu Windows. Jednak Host używający tego obiektu otoki do tworzenia wystąpienia aparatu skryptów nie ma kontroli nad przestrzenią nazw czasu wykonywania, modelem trwałości i tak dalej, że gdyby używał bezpośrednio skryptu systemu Windows.
 
-Projekt skryptu Windows izoluje elementy interfejsu wymagane tylko w środowisku tworzenia pakietów administracyjnych, aby nonauthoring hostów (takie jak przeglądarki i przeglądarki) i aparatów skryptów (np. VBScript) mogą być przechowywane uproszczone.
+Projekt skryptu systemu Windows izoluje elementy interfejsu wymagane tylko w środowisku autorskim, aby hosty nietworzące autorstwa (takie jak przeglądarki i przeglądarki) i aparaty skryptów (na przykład VBScript) mogły być lekkie.
 
-## <a name="windows-script-basic-architecture"></a>Podstawowa architektura skrypt Windows
+## <a name="windows-script-basic-architecture"></a>Podstawowa architektura skryptów systemu Windows
 
-Poniższa ilustracja przedstawia interakcję między hostem skryptów Windows i aparat skryptów Windows.
+Poniższa ilustracja przedstawia interakcję między hostem skryptów systemu Windows i aparatem skryptów systemu Windows.
 
-Kroki związane z interakcji między hostem i aparat są podane w poniższej liście.
+Kroki związane z interakcją między hostem i aparatem są podane na poniższej liście.
 
-1. Utwórz projekt. Host ładuje projektu lub dokumentu. (Ten krok nie jest na Windows skryptu, ale został tu zawarty, aby informacje były kompletne).
+1. Utwórz projekt. Host ładuje projekt lub dokument. (Ten krok nie jest szczególny dla skryptu systemu Windows, ale jest tutaj uwzględniony do kompletności).
 
-2. Utwórz aparat skryptu Windows. Wywołania hosta `CoCreateInstance` Aby utworzyć nowy aparat skryptu Windows, określając identyfikator klasy (CLSID) z konkretnego aparatu skryptów do użycia. Na przykład przeglądarki HTML programu Internet Explorer otrzymuje identyfikator klasy silnik wykonywania skryptów za pomocą identyfikatora CLSID = atrybutu HTML \<obiektu > tag.
+2. Utwórz aparat skryptów systemu Windows. Host wywołuje `CoCreateInstance` , aby utworzyć nowy aparat skryptów systemu Windows, określając identyfikator klasy (CLSID) określonego aparatu skryptów do użycia. Na przykład przeglądarka HTML programu Internet Explorer otrzymuje identyfikator klasy aparatu skryptów za pomocą atrybutu CLSID = w \<OBJECT> tagu HTML.
 
-3. Ładowanie skryptu przez. Jeśli zawartość skryptu zostały utrwalone, host, wywołuje aparat skryptu `IPersist*::Load` metoda ze źródłem danych, jej skrypt zbioru storage, stream lub właściwość. W przeciwnym razie host używa `IPersist*::InitNew` lub [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) metodę, aby utworzyć skrypt o wartości null. Host, który przechowuje skrypt jako tekst, można używać [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) ze źródłem danych silnik wykonywania skryptów tekst skryptu, po wywołaniu `IActiveScriptParse::InitNew`.
+3. Załaduj skrypt. Jeśli zawartość skryptu została utrwalona, Host wywołuje metodę aparatu skryptów, `IPersist*::Load` Aby uzyskać strumieniowe źródło danych, strumień lub zbiór właściwości. W przeciwnym razie host używa `IPersist*::InitNew` metody lub [IActiveScriptParse:: InitNew](../winscript/reference/iactivescriptparse-initnew.md) , aby utworzyć skrypt o wartości null. Host, który utrzymuje skrypt jako tekst, może używać [IActiveScriptParse::P arsescripttext](../winscript/reference/iactivescriptparse-parsescripttext.md) do strumieniowego aparatu obsługi skryptów tekstu skryptu po wywołaniu `IActiveScriptParse::InitNew` .
 
-4. Dodaj elementy o nazwie. Dla każdego najwyższego poziomu o nazwie elementu (na przykład stron i formularzy) zaimportowane do przestrzeni nazw aparatu skryptów, wywołuje hosta [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) metodę, aby utworzyć wpis w przestrzeni nazw aparatu. Ten krok nie jest konieczne, jeśli elementy najwyższego poziomu o nazwie są już częścią trwały stan skryptu załadowane w kroku 3. Host nie używa `IActiveScript::AddNamedItem` dodać podpoziomu o nazwie elementy (takie jak formanty na stronie HTML); zamiast aparat pośrednio uzyskuje dostęp do elementów podpoziomu z elementów najwyższego poziomu za pomocą hosta `ITypeInfo` i `IDispatch` interfejsów.
+4. Dodaj nazwane elementy. Dla każdego elementu o nazwie najwyższego poziomu (takiego jak strony i formularze) zaimportowanego do obszaru nazw aparatu skryptów, Host wywołuje metodę [IActiveScript:: AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) , aby utworzyć wpis w przestrzeni nazw aparatu. Ten krok nie jest konieczny, jeśli nazwane elementy najwyższego poziomu są już częścią trwałego stanu skryptu załadowanego w kroku 3. Host nie używa `IActiveScript::AddNamedItem` do dodawania elementów o nazwach podpoziomu (takich jak kontrolki na stronie HTML); aparat pośredni pośrednio uzyskuje elementy poziomu z elementów najwyższego poziomu przy użyciu `ITypeInfo` interfejsów hosta i `IDispatch` .
 
-5. Uruchom skrypt. Host powoduje, że aparat rozpocząć uruchamianie skryptu przez ustawienie flagi SCRIPTSTATE_CONNECTED w [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) metody. To wywołanie prawdopodobnie wykona wszelkich skryptów aparatu konstrukcji pracy, w tym statyczne powiązania, Podłączanie do zdarzeń (patrz poniżej) i wykonywanie kodu, w sposób podobny do inicjowanych przez skrypty `main()` funkcji.
+5. Uruchom skrypt. Host powoduje uruchomienie skryptu przez aparat przez ustawienie flagi SCRIPTSTATE_CONNECTED w metodzie [IActiveScript:: SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) . To wywołanie prawdopodobnie wykona wszystkie prace konstrukcyjne aparatu skryptów, w tym powiązania statyczne, podłączając do zdarzeń (patrz poniżej) i wykonując kod, w sposób podobny do funkcji skryptowej `main()` .
 
-6. Uzyskaj informacje o elementach. Każdorazowo, aparat skryptu musi skojarzyć symbolu z elementem najwyższego poziomu wywoływanych przez nią [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) metody, która zwraca informacje na temat danego elementu.
+6. Pobierz informacje o elemencie. Za każdym razem, gdy aparat skryptów musi skojarzyć symbol z elementem najwyższego poziomu, wywołuje metodę [IActiveScriptSite:: GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) , która zwraca informacje dotyczące danego elementu.
 
-7. Podpinanie zdarzeń. Przed uruchomieniem skryptu rzeczywiste, aparat skryptów łączy się z zdarzeń z odpowiednich obiektów za pomocą `IConnectionPoint` interfejsu.
+7. Podłącz zdarzenia. Przed uruchomieniem rzeczywistego skryptu aparat skryptów łączy się ze zdarzeniami wszystkich odpowiednich obiektów za pomocą `IConnectionPoint` interfejsu.
 
-8. Wywoływanie właściwości i metody. Po uruchomieniu skryptu, aparat skryptów potrafi rozpoznać odwołania do metod i właściwości na nazwane obiekty za pośrednictwem `IDispatch::Invoke` lub innych standardowych mechanizmów powiązania OLE.
+8. Wywoływanie właściwości i metod. Po uruchomieniu skryptu aparat skryptów realizuje odwołania do metod i właściwości obiektów nazwanych za pośrednictwem `IDispatch::Invoke` lub innych standardowych mechanizmów powiązań OLE.
 
-## <a name="windows-script-terms"></a>Warunki skrypt Windows
+## <a name="windows-script-terms"></a>Warunki skryptów systemu Windows
 
-Ta lista zawiera definicje terminów związanych z obsługi skryptów, używane w tym dokumencie.
+Ta lista zawiera definicje terminów związanych z skryptami używanych w tym dokumencie.
 
 |Termin|Definicja|
 |----------|----------------|
-|Kod obiektu|Wystąpienia utworzone przez silnik wykonywania skryptów, który jest skojarzony z elementem nazwanych, takim jak modułu formularza w języku Visual Basic lub skojarzone z elementem o nazwie klasy języka C++. Najlepiej jest obiekt OLE Component Object Model (COM), który obsługuje automatyzacji OLE, więc hosta lub inny organ-script można manipulować obiektu kodu.|
-|Element o nazwie|Obiekt OLE COM (najlepiej obsługującej automatyzacji OLE), hosta jeśli uzna, że interesujące do skryptu. Przykłady obejmują strony HTML i przeglądarki w przeglądarce sieci Web i dokumentów i okien dialogowych w programie Microsoft Word.|
-|Skrypt|Dane, które tworzą program uruchamiany przez silnik wykonywania skryptów. Skrypt może być ciągłe danych pliku wykonywalnego, tym fragmentów tekstu, bloki konstrukcyjne `pcode`, a nawet kody bajt pliku wykonywalnego specyficzny dla komputera. Host ładuje skrypt do silnika wykonywania skryptów za pomocą jednego z `IPersist*` interfejsy lub za pomocą [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) interfejsu.|
-|Silnik wykonywania skryptów|Obiekt OLE, który przetwarza skryptów. Implementuje silnik wykonywania skryptów [IActiveScript](../winscript/reference/iactivescript.md) i, opcjonalnie, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) interfejsów.|
-|Host skryptów|Aplikacja lub program, który jest właścicielem aparat skryptu Windows. Implementuje hosta [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) i, opcjonalnie, [IActiveScriptSiteWindow](../winscript/reference/iactivescriptsitewindow.md) interfejsów.|
-|Scriptlet|Część skryptu, który jest dołączany do obiektu za pomocą [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) interfejsu. Kolekcja agregacji skryptlety jest skrypt.|
-|Język skryptów|Język, w którym skrypt jest napisane (VBScript, na przykład) i semantyka tego języka.|
+|Obiekt kodu|Wystąpienie utworzone przez aparat skryptów, który jest skojarzony z nazwanym elementem, taki jak moduł za formularzem w Visual Basic, lub Klasa C++ skojarzona z nazwanym elementem. Najlepiej jest to obiekt OLE Component Object Model (COM), który obsługuje automatyzację OLE, dzięki czemu Host lub inna jednostka niebędąca skryptami mogą manipulować obiektem kodu.|
+|Nazwany element|Obiekt OLE COM (najlepiej obsługujący automatyzację OLE), który jest uważany za interesujący dla skryptu. Przykładami mogą być strony HTML i przeglądarki w przeglądarce internetowej oraz dokumenty i okna dialogowe programu Microsoft Word.|
+|Skrypt|Dane, które tworzą program, który jest uruchamiany przez aparat skryptów. Skrypt może być wszelkimi ciągłymi danymi wykonywalnymi, w tym fragmentami tekstu, blokami `pcode` , a nawet kodami bajtów wykonywalnych specyficznych dla maszyn. Host ładuje skrypt do aparatu skryptów za pomocą jednego z `IPersist*` interfejsów lub interfejsu [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) .|
+|Aparat skryptów|Obiekt OLE, który przetwarza skrypty. Aparat skryptów implementuje interfejsy [IActiveScript](../winscript/reference/iactivescript.md) i, opcjonalnie, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) .|
+|Host skryptów|Aplikacja lub program, który jest właścicielem aparatu skryptów systemu Windows. Host implementuje interfejsy [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) i, opcjonalnie, [IActiveScriptSiteWindow](../winscript/reference/iactivescriptsitewindow.md) .|
+|Scriptlet|Część skryptu, która jest dołączona do obiektu za pomocą interfejsu [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) . Agregowana kolekcja skryptlety jest skryptem.|
+|Język skryptu|Język, w którym skrypt jest pisany (na przykład VBScript) i semantyką tego języka.|
