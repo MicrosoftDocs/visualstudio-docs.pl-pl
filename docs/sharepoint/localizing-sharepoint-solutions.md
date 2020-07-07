@@ -1,7 +1,7 @@
 ---
 title: Lokalizowanie rozwiązań SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -17,18 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189225"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017139"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
 
   Proces przygotowywania aplikacji w taki sposób, aby mogły być używane na całym świecie, jest znany jako lokalizacja. Lokalizacja tłumaczy zasoby na określoną kulturę. Aby uzyskać więcej informacji, zobacz [globalizacja i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md). Ten temat zawiera omówienie sposobu lokalizowania rozwiązania programu SharePoint.
 
- Aby zlokalizować rozwiązanie, Usuń zakodowane ciągi z kodu i podziel je na pliki zasobów. Plik zasobów to plik oparty na [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]z rozszerzeniem *resx* . Plik zasobów zawiera przetłumaczone wersje ciągów używanych w rozwiązaniu. Aby uzyskać więcej informacji, zobacz [zasoby w aplikacjach](/previous-versions/dotnet/netframework-4.0/f45fce5x(v=vs.100)).
+ Aby zlokalizować rozwiązanie, Usuń zakodowane ciągi z kodu i podziel je na pliki zasobów. Plik zasobów jest [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] plikiem opartym na rozszerzeniu *resx* . Plik zasobów zawiera przetłumaczone wersje ciągów używanych w rozwiązaniu. Aby uzyskać więcej informacji, zobacz [zasoby w aplikacjach](/previous-versions/dotnet/netframework-4.0/f45fce5x(v=vs.100)).
 
 > [!NOTE]
 > Dodaj tylko zasoby ciągu do plików zasobów rozwiązania programu SharePoint. Mimo że edytor zasobów pozwala dodawać zasoby niebędące ciągami, nie należy wdrażać zasobów niebędących ciągami w programie SharePoint.
@@ -38,23 +37,23 @@ ms.locfileid: "73189225"
 
 |Typ pliku zasobu|Opis|
 |------------------------|-----------------|
-|Domyślny|Znany również jako zasób rezerwowy, domyślne pliki zasobów zawierają ciągi zlokalizowane dla kultury domyślnej, takie jak angielski. Są one używane, jeśli nie można znaleźć zlokalizowanych plików zasobów dla określonego języka. Zasoby domyślne nie mają oddzielnych plików, są one przechowywane w głównym zestawie aplikacji.|
+|Domyślne|Znany również jako zasób rezerwowy, domyślne pliki zasobów zawierają ciągi zlokalizowane dla kultury domyślnej, takie jak angielski. Są one używane, jeśli nie można znaleźć zlokalizowanych plików zasobów dla określonego języka. Zasoby domyślne nie mają oddzielnych plików, są one przechowywane w głównym zestawie aplikacji.|
 |Niezależny od języka|Plik zasobów zawierający ciągi zlokalizowane dla języka, ale nie do określonej kultury. Na przykład "fr" dla języka francuskiego.|
 |Specyficzne dla języka|Plik zasobów zawierający ciągi zlokalizowane dla języka i kultury. Na przykład "fr-CA" dla francuskiego Kanady.|
 
  Aby uzyskać więcej informacji, zobacz [hierarchiczna organizacja zasobów do lokalizacji](../ide/globalizing-and-localizing-applications.md).
 
- Aby określić domyślne pliki zasobów w projektach programu SharePoint, które tworzysz w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz opcję **Język niezmienny (kraj niezmienny)** na liście kultura okna dialogowego **Dodawanie zasobu** , gdy dodasz plik zasobów.
+ Aby określić domyślne pliki zasobów w projektach programu SharePoint, które są opracowywane w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wybierz pozycję **niezmienny język (kraj** niebędący) na liście kultura okna dialogowego **Dodawanie zasobu** , gdy zostanie dodany plik zasobów.
 
 ## <a name="localize-visual-studio-sharepoint-solutions"></a>Lokalizowanie rozwiązań programu Visual Studio SharePoint
- Podczas lokalizowania rozwiązania należy wziąć pod uwagę wszystkie informacje tekstowe, które są wyświetlane dla danego rozwiązania użytkownikom. Komunikaty informacyjne, komunikaty o błędach i ciągi [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] muszą być tłumaczone i te tłumaczenia są umieszczane w plikach zasobów.
+ Podczas lokalizowania rozwiązania należy wziąć pod uwagę wszystkie informacje tekstowe, które są wyświetlane dla danego rozwiązania użytkownikom. Komunikaty informacyjne, komunikaty o błędach i [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] ciągi muszą być tłumaczone i te tłumaczenia są umieszczane w plikach zasobów.
 
  Każdy ciąg w pliku zasobów ma unikatowy identyfikator. Użyj tego samego identyfikatora dla przetłumaczonego ciągu w każdym pliku zasobów. Na przykład, jeśli "ciąg1" jest identyfikatorem pierwszego ciągu w domyślnym pliku zasobów, użyj tego samego identyfikatora dla pierwszego ciągu w plikach zasobów specyficznych dla języka.
 
- Istnieją trzy obszary, które są zwykle lokalizowane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplikacji programu SharePoint: funkcje, znaczniki strony ASPX i kod. Na potrzeby ilustracji w poniższych sekcjach założono, że masz rozwiązanie SharePoint, które chcesz zlokalizować w języku niemieckim i japońskim. Język domyślny to angielski.
+ Istnieją trzy obszary, które są zwykle lokalizowane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplikacjach SharePoint: funkcje, znaczniki strony aspx i kod. Na potrzeby ilustracji w poniższych sekcjach założono, że masz rozwiązanie SharePoint, które chcesz zlokalizować w języku niemieckim i japońskim. Językiem domyślnym jest język angielski.
 
 ### <a name="localize-features"></a>Lokalizowanie funkcji
- Aby zlokalizować funkcję, należy zamienić trwale zakodowany tytuł i opis funkcji na wyrażenie odwołujące się do przetłumaczonego tytułu i ciągu w zlokalizowanym pliku zasobów. Ta zmiana została wprowadzona w **Projektancie funkcji** w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [How to: lokalizuje funkcję](../sharepoint/how-to-localize-a-feature.md).
+ Aby zlokalizować funkcję, należy zamienić trwale zakodowany tytuł i opis funkcji na wyrażenie odwołujące się do przetłumaczonego tytułu i ciągu w zlokalizowanym pliku zasobów. Ta zmiana została wprowadzona w **Projektancie funkcji** w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [How to: lokalizuje funkcję](../sharepoint/how-to-localize-a-feature.md).
 
  Aby zlokalizować funkcję w języku angielskim w językach niemieckim i japońskim, Dodaj trzy elementy projektu pliku zasobów do projektu: jeden dla języka angielskiego, jeden dla języka niemieckiego i jeden dla języka japońskiego. Plików zasobów funkcji nie można używać do lokalizowania znaczników ASPX ani kodu; dla nich wymagane są osobne pliki zasobów.
 
@@ -64,16 +63,16 @@ ms.locfileid: "73189225"
 $Resources:String ID
 ```
 
- Zasoby funkcji w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] są zawsze nazwanymi zasobami. W przypadku wybrania języka innego niż Język niezmienny, do nazwy pliku zasobu zostanie dodana kultura [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Na przykład, jeśli dodasz plik zasobów funkcji o niezmiennym języku (default), jest on nazywany *resources. resx*. Jeśli dodasz zasób funkcji specyficzny dla języka, wybierając kulturę języka japońskiego (Japonia), plik ma nazwę *resources. ja-JP. resx*. Nazwy plików zasobów funkcji są automatycznie przypisywane i nie można ich zmienić.
+ Zasoby funkcji w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] są zawsze nazwanymi zasobami. W przypadku wybrania języka innego niż Język niezmienny, [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] do nazwy pliku zasobu zostanie dodana kultura. Na przykład, jeśli dodasz plik zasobów funkcji o niezmiennym języku (default), jest on nazywany *resources. resx*. Jeśli dodasz zasób funkcji specyficzny dla języka, wybierając kulturę języka japońskiego (Japonia), plik ma nazwę *resources. ja-JP. resx*. Nazwy plików zasobów funkcji są automatycznie przypisywane i nie można ich zmienić.
 
  Zakres zasobów funkcji jest lokalny dla funkcji, do której są dodawane. Aby utworzyć zasoby, które mogą być używane przez dowolny plik funkcji lub elementu w rozwiązaniu, Dodaj element projektu **plik zasobów globalnych** zamiast pliku zasobów funkcji. Element projektu **plik zasobów globalnych** znajduje się w folderze **2010** w obszarze **SharePoint** w oknie dialogowym **Dodaj nowy element** . Pliki zasobów globalnych są wdrażane w folderze \Resources folderu głównego programu SharePoint.
 
 ### <a name="localize-aspx-page-markup"></a>Lokalizowanie znaczników strony ASPX
  Aby zlokalizować [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony, Dodaj trzy elementy projektu pliku zasobów do projektu: jeden dla języka angielskiego, jeden dla języka niemieckiego i jeden dla języka japońskiego. Jeśli nie trzeba lokalizować kodu oprócz znaczników, zamiast tego można dodać pliki zasobów globalnych.
 
- Podaj nazwę domyślnego pliku zasobów języka. Nadaj zlokalizowanym plikom zasobów taką samą nazwę, która jest dołączana do [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]kultury specyficznej dla języka. Na przykład *MyAppResources.de-de. resx* dla języka niemieckiego i *MyAppResources. ja-JP. resx* dla języka japońskiego.
+ Podaj nazwę domyślnego pliku zasobów języka. Nadaj zlokalizowanym plikom zasobów taką samą nazwę dołączoną do kultury specyficznej dla języka [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Na przykład *MyAppResources.de-de. resx* dla języka niemieckiego i *MyAppResources. ja-JP. resx* dla języka japońskiego.
 
- Ustaw właściwość **typ wdrożenia** każdego pliku zasobów na **AppGlobalResource**. Powoduje to, że pliki zasobów zostaną wdrożone w folderze App_GlobalResources, gdzie są dostępne dla wszystkich stron ASPX i kontrolek w rozwiązaniu. Folder App_GlobalResources znajduje się w C:\inetpub\wwwroot\wss\VirtualDirectories\\< numer portu\>\App_GlobalResources.
+ Ustaw właściwość **typ wdrożenia** każdego pliku zasobów na **AppGlobalResource**. Powoduje to, że pliki zasobów zostaną wdrożone w folderze App_GlobalResources, gdzie są dostępne dla wszystkich stron ASPX i kontrolek w rozwiązaniu. Folder App_GlobalResources znajduje się w folderze C:\inetpub\wwwroot\wss\VirtualDirectories \\<numer portu \> \ App_GlobalResources.
 
 > [!NOTE]
 > Jeśli używasz plików zasobów nieglobalnych, przenieś je do folderu elementów projektu, aby włączyć właściwość typu wdrożenia i inne właściwości specyficzne dla programu SharePoint.
@@ -107,15 +106,15 @@ $Resources:String ID
  Aby uzyskać więcej informacji, zobacz [How to: lokalizuje znaczniki aspx](../sharepoint/how-to-localize-aspx-markup.md).
 
 ### <a name="localize-code"></a>Lokalizowanie kodu
- Oprócz lokalizowania ciągów funkcji i znaczników [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] należy również lokalizować ciągi komunikatów i ciągi błędów, które pojawiają się w kodzie rozwiązania. Zlokalizowane informacje informacyjne i komunikaty o błędach są zawarte w zestawach satelickich. Zestawy satelickie zawierają ciągi, które są widoczne dla użytkowników, takie jak [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] komunikatów tekstowych i wyjściowych, takich jak wyjątki.
+ Oprócz lokalizowania ciągów i znaczników funkcji należy [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] również lokalizować ciągi komunikatów i ciągi błędów, które pojawiają się w kodzie rozwiązania. Zlokalizowane informacje informacyjne i komunikaty o błędach są zawarte w zestawach satelickich. Zestawy satelickie zawierają ciągi, które są widoczne dla użytkowników, takie jak [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] komunikaty tekstowe i wyjściowe, takie jak wyjątki.
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] używa standardowego modelu centrum .NET Framework i satelity. Koncentrator lub zestaw programu głównego zawiera zasoby języka domyślnego. Szprychy lub zestawy satelickie zawierają zasoby specyficzne dla języka. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie zasobów](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Zestawy satelickie są kompilowane z plików zasobów ( *. resx*). Po dodaniu plików zasobów specyficznych dla języka do projektu i pakietu rozwiązania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kompiluje pliki zasobów do zestawów satelickich o nazwie *{Project Name}. resources. dll*.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]używa standardowego modelu .NET Framework Hub i szprych. Koncentrator lub zestaw programu głównego zawiera zasoby języka domyślnego. Szprychy lub zestawy satelickie zawierają zasoby specyficzne dla języka. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie zasobów](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Zestawy satelickie są kompilowane z plików zasobów (*. resx*). Po dodaniu plików zasobów specyficznych dla języka do projektu i pakietu rozwiązania program [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kompiluje pliki zasobów do zestawów satelickich o nazwie *{Project Name} .resources.dll*.
 
- Podobnie jak w przypadku znaczników ASPX, można zlokalizować kod aplikacji programu SharePoint, dodając oddzielne elementy projektu pliku zasobów do projektu; jeden dla języka domyślnego i jeden dla każdego zlokalizowanego języka. Jednak jak wspomniano wcześniej, jeśli masz już pliki zasobów do lokalizowania znaczników ASPX, można użyć ich ponownie w celu zlokalizowania kodu. Jeśli musisz utworzyć pliki zasobów, Nadaj plikowi zasobów języka domyślnego nazwę dołączoną z rozszerzeniem *resx* . Nazwij zlokalizowane pliki zasobów o tej samej nazwie, która jest dołączana do [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]kultury specyficznej dla języka. Ustaw właściwość Akcja kompilacji każdego pliku zasobów na zasób osadzony, aby umożliwić tworzenie zestawów zasobów satelity.
+ Podobnie jak w przypadku znaczników ASPX, można zlokalizować kod aplikacji programu SharePoint, dodając oddzielne elementy projektu pliku zasobów do projektu; jeden dla języka domyślnego i jeden dla każdego zlokalizowanego języka. Jednak jak wspomniano wcześniej, jeśli masz już pliki zasobów do lokalizowania znaczników ASPX, można użyć ich ponownie w celu zlokalizowania kodu. Jeśli musisz utworzyć pliki zasobów, Nadaj plikowi zasobów języka domyślnego nazwę dołączoną z rozszerzeniem *resx* . Nazwij zlokalizowane pliki zasobów o tej samej nazwie dołączonej do kultury specyficznej dla języka [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Ustaw właściwość Akcja kompilacji każdego pliku zasobów na zasób osadzony, aby umożliwić tworzenie zestawów zasobów satelity.
 
- Aby utworzyć zestawy satelickie, Skompiluj projekt, a następnie Dodaj pliki jako dodatkowe zestawy za pomocą karty **Zaawansowane** **projektanta pakietów**. Podczas dodawania zestawów, Dołącz do folderu [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] kultury do ścieżki lokalizacji, na przykład *de-de\\{nazwa elementu projektu}. resources. dll*. Dzięki temu pakiet będzie zawierać pliki o tej samej nazwie.
+ Aby utworzyć zestawy satelickie, Skompiluj projekt, a następnie Dodaj pliki jako dodatkowe zestawy za pomocą karty **Zaawansowane** **projektanta pakietów**. Podczas dodawania zestawów Dołącz [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] folder kultury do ścieżki lokalizacji, na przykład *DE-de \\ {Nazwa elementu projektu} .resources.dll*. Dzięki temu pakiet będzie zawierać pliki o tej samej nazwie.
 
- W kodzie Zastąp stałe kodowane ciągi wywołaniami metody <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> przy użyciu następującej składni:
+ W kodzie Zastąp stałe kodowane ciągi wywołaniami <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> metody przy użyciu następującej składni:
 
 ```aspx-csharp
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")

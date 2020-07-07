@@ -1,7 +1,7 @@
 ---
 title: Wprowadzenie (Programowanie SharePoint w Visual Studio) | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc6d6083b9a764acc915e6c0f800cb70569652b7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
-ms.translationtype: MT
+ms.openlocfilehash: 999a23f8765a72feb22822120a11e1b38b9ac946
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586667"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017093"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Wprowadzenie (Programowanie SharePoint w Visual Studio)
-  Ta sekcja ułatwia rozpoczęcie pracy z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] programem w celu opracowania rozwiązań programu SharePoint, które [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] korzystają [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]z systemów i.
+  Ta sekcja ułatwia rozpoczęcie pracy z programem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] w celu opracowania rozwiązań programu SharePoint, które korzystają z systemów [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] .
 
  Aby uzyskać informacje na temat dodatków SharePoint 2013 i SharePoint, zobacz [sharepoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) i [Build Add-ins programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
- Program SharePoint oferuje platformy współpracy opartej na sieci Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Program udostępnia wiele szablonów projektów do tworzenia witryn i zawartości programu SharePoint, w tym definicji list, przepływów pracy, modeli łączności danych firmowych i definicji lokacji. Ponadto można tworzyć rozszerzenia dla projektów i narzędzi programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Program SharePoint oferuje platformy współpracy opartej na sieci Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Program udostępnia wiele szablonów projektów do tworzenia witryn i zawartości programu SharePoint, w tym definicji list, przepływów pracy, modeli łączności danych firmowych i definicji lokacji. Ponadto można tworzyć rozszerzenia dla projektów i narzędzi programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -38,7 +37,7 @@ ms.locfileid: "82586667"
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Opisuje programowanie SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Opisuje programowanie SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Konfigurowanie ogólnego środowiska programistycznego dla programu SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Opisuje instalacje wymagane do utworzenia rozwiązania programu SharePoint|
 |[Tworzenie kolumn witryn, typów zawartości i list dla programu SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Opisuje, jak tworzyć niestandardowe kolumny witryny, typy zawartości i listy dla programu SharePoint przy użyciu narzędzi Visual Studio Tools for SharePoint Development.|
 |[Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Opisuje projektowanie i programowanie przepływu pracy.|

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dodawanie istniejącego modelu BDC do projektu programu SharePoint | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie istniejącego pliku modelu BDC do projektu programu SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.ImportDialog
 dev_langs:
@@ -17,37 +17,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c10dcf48e5c047778b86c524b35b4e1d5d8cc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 92063b5aeaf4f86919b9eabf783b102a9f5b8f34
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967056"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016517"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Instrukcje: Dodawanie istniejącego modelu BDC do projektu programu SharePoint
-  Można dostosować, pakowanie i ponowne wdrażanie modelu łączności danych biznesowych (BDC) przy użyciu programu Visual Studio, aby dodać plik modelu (*.bdcm*) do każdego projektu programu SharePoint w farmie. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Instrukcje: Dodawanie istniejącego pliku modelu BDC do projektu programu SharePoint
+  Można dostosować, spakować i ponownie wdrożyć model łączności danych biznesowych (BDC) przy użyciu programu Visual Studio, aby dodać plik modelu (*. bdcm*) do dowolnego projektu farmy programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Aby dodać plik modelu usługi BDC do projektu programu SharePoint
 
-1. W **Eksploratora rozwiązań**, wybierz folder dla projektu programu SharePoint.
+1. W **Eksplorator rozwiązań**wybierz folder dla projektu programu SharePoint.
 
-2. Na pasku menu wybierz **projektu** > **Dodaj istniejący element**.
+2. Na pasku menu wybierz **projekt**  >  **Dodaj istniejący element**.
 
-3. W **Dodaj istniejący element** okno dialogowe, przejdź do lokalizacji pliku definicji modelu, który chcesz dodać do projektu, wybierz plik a następnie wybierz **Dodaj** przycisku.
+3. W oknie dialogowym **Dodaj istniejący element** przejdź do lokalizacji pliku definicji modelu, który chcesz dodać do projektu, wybierz plik, a następnie wybierz przycisk **Dodaj** .
 
-    Jeśli nie zdefiniowano modelu *Line of Business (LOB) systemu typu zestawu .NET*, **element LobSystem zestawu .NET Dodawanie** zostanie otwarte okno dialogowe.
+    Jeśli model nie definiuje *systemu LOB typu zestawu .NET*, zostanie otwarte okno dialogowe **Dodawanie klasy LobSystem zestawu platformy .NET** .
 
-4. Jeśli pojawi się okno dialogowe, wykonaj jedną z następujących czynności:
+4. Jeśli zostanie wyświetlone okno dialogowe, wykonaj jedną z następujących czynności:
 
-   - Jeśli chcesz napisać kod niestandardowy i zdefiniuj metadanych dla modelu importowany, wybierz za pomocą projektanta **tak** przycisk, system nazwę, a następnie wybierz **OK** przycisku.
+   - Jeśli chcesz napisać kod niestandardowy i użyć projektanta do zdefiniowania metadanych dla zaimportowanego modelu, wybierz przycisk **tak** , nazwij system, a następnie wybierz przycisk **OK** .
 
-   - W przeciwnym razie wybierz **nie** przycisk, a następnie wybierz **OK** przycisku.
+   - W przeciwnym razie wybierz przycisk **nie** , a następnie wybierz przycisk **OK** .
 
-     **Model usługi łączności danych biznesowych** element zostanie dodany do projektu.
+     Element **modelu łączności danych firmowych** jest dodawany do projektu.
 
 ## <a name="see-also"></a>Zobacz także
-- [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Instrukcje: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)
-- [Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
-- [Instrukcje: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
-- [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Tworzenie modelu łączności danych firmy](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Instrukcje: Tworzenie modelu usługi BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Instrukcje: korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Instrukcje: uwzględnianie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
+- [Integrowanie danych firmowych z programem SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

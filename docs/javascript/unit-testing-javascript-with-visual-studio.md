@@ -1,7 +1,7 @@
 ---
 title: Testowanie jednostkowe JavaScript i TypeScript
 description: Program Visual Studio zapewnia obsługę testów jednostkowych w języku JavaScript i kodzie TypeScript przy użyciu narzędzi Node.js Tools for Visual Studio
-ms.date: 06/06/2018
+ms.date: 07/06/2020
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
-ms.translationtype: MT
+ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
+ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289004"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033354"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostkowe JavaScript i TypeScript w programie Visual Studio
 
@@ -72,25 +71,32 @@ Po otwarciu Eksploratora testów (wybierz **test**  >  **Windows**  >  **Eksplor
 ![Eksplorator testów](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Nie używaj `outdir` `outfile` opcji or w *tsconfig.json*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych w plikach TypeScript.
+> W przypadku języka TypeScript nie używaj `outdir` opcji or `outfile` w *tsconfig.json*, ponieważ Eksplorator testów nie będzie w stanie znaleźć testów jednostkowych.
 
 ## <a name="run-tests"></a>Uruchom testy
 
-Testy można uruchamiać w programie Visual Studio 2017 lub w wierszu polecenia.
+Testy można uruchamiać w programie Visual Studio lub w wierszu polecenia.
 
-### <a name="run-tests-in-visual-studio-2017"></a>Uruchamianie testów w programie Visual Studio 2017
+### <a name="run-tests-in-visual-studio"></a>Uruchamianie testów w programie Visual Studio
 
+::: moniker range=">=vs-2019"
+Testy można uruchomić, klikając link **Uruchom wszystkie** w Eksploratorze testów. Lub można uruchomić testy, wybierając jeden lub więcej testów lub grup, klikając prawym przyciskiem myszy i wybierając polecenie **Uruchom** z menu skrótów. Testy są uruchamiane w tle, a Eksplorator testów automatycznie aktualizuje i wyświetla wyniki. Ponadto można debugować wybrane testy, klikając je prawym przyciskiem myszy i wybierając polecenie **Debuguj**.
+::: moniker-end
+::: moniker range="vs-2017"
 Testy można uruchomić, klikając link **Uruchom wszystkie** w Eksploratorze testów. Lub można uruchomić testy, wybierając jeden lub więcej testów lub grup, klikając prawym przyciskiem myszy i wybierając polecenie **Uruchom wybrane testy** z menu skrótów. Testy są uruchamiane w tle, a Eksplorator testów automatycznie aktualizuje i wyświetla wyniki. Ponadto można debugować wybrane testy, wybierając **Debuguj wybrane testy**.
+::: moniker-end
 
-> [!Warning]
-> Debugowanie testów jednostkowych za pomocą węzła 8 + obecnie działa tylko w przypadku plików testowych języka JavaScript, pliki testowe TypeScript nie trafią na punkty przerwania. Aby obejść ten element, użyj `debugger` słowa kluczowego.
+W przypadku języka TypeScript testy jednostkowe są uruchamiane względem wygenerowanego kodu JavaScript.
+
+> [!NOTE]
+> W większości scenariuszy języka TypeScript można debugować test jednostkowy przez ustawienie punktu przerwania w kodzie TypeScript, kliknięcie prawym przyciskiem myszy w Eksploratorze testów i wybranie polecenia **Debuguj**. W bardziej złożonych scenariuszach, takich jak niektóre scenariusze korzystające z map źródła, może wystąpić problem, który sprawia, że punkty przerwania w kodzie TypeScript. Aby obejść ten sposób, spróbuj użyć `debugger` słowa kluczowego.
 
 > [!NOTE]
 > Obecnie nie obsługujemy testów profilowania ani pokrycia kodu.
 
 ### <a name="run-tests-from-the-command-line"></a>Uruchamianie testów z poziomu wiersza polecenia
 
-Testy można uruchomić z [wiersz polecenia dla deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs) dla programu Visual Studio 2017 przy użyciu następującego polecenia:
+Testy można uruchomić z [wiersz polecenia dla deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs) dla programu Visual Studio przy użyciu następującego polecenia:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter

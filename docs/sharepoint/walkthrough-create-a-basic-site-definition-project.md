@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik: Tworzenie podstawowego projektu definicji witryny | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Tworzenie podstawowego projektu definicji lokacji | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,86 +13,85 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009414"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016772"
 ---
-# <a name="walkthrough-create-a-basic-site-definition-project"></a>Przewodnik: Tworzenie podstawowego projektu definicji witryny
-  W tym instruktażu dowiesz się, jak utworzyć definicję podstawową witryny, zawierający wizualny składnik Web part za pomocą niektóre kontrolki. Dla jasności wizualny składnik Web part, które tworzysz ma tylko kilka formantów. Można jednak utworzyć bardziej złożone definicje witryn programu SharePoint, które zawierają więcej funkcji.
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>Przewodnik: Tworzenie podstawowego projektu definicji lokacji
+  W tym instruktażu pokazano, jak utworzyć podstawową definicję witryny, która zawiera wizualny składnik Web Part z niektórymi kontrolkami. Dla jasności, tworzony składnik Web Part ma tylko kilka kontrolek. Można jednak utworzyć bardziej zaawansowane definicje witryn programu SharePoint, które zawierają więcej funkcji.
 
- W tym instruktażu pokazano następujące zagadnienia:
+ W tym instruktażu przedstawiono następujące zadania:
 
-- Tworzenie definicji witryny za pomocą [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] szablonu projektu.
+- Tworzenie definicji lokacji przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] szablonu projektu.
 
 - Tworzenie witryny programu SharePoint przy użyciu definicji lokacji w programie SharePoint.
 
-- Dodawanie wizualny składnik Web part do rozwiązania.
+- Dodawanie wizualnego składnika Web Part do rozwiązania.
 
-- Dostosowywanie strony default.aspx witryny przez dodanie nowych wizualny składnik Web part do niego.
+- Dostosowywanie domyślnej strony. aspx witryny przez dodanie do niej nowego, wizualnego składnika Web Part.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji zobacz wymagania dotyczące opracowywania rozwiązań programu SharePoint.
+- Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz Wymagania dotyczące opracowywania rozwiązań programu SharePoint.
 
 - Program Visual Studio.
 
-## <a name="create-a-site-definition-solution"></a>Tworzenie rozwiązania definicji witryny
- Najpierw utwórz projekt definicji witryny w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+## <a name="create-a-site-definition-solution"></a>Tworzenie rozwiązania definicji lokacji
+ Najpierw utwórz projekt definicji lokacji w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 #### <a name="to-create-a-site-definition-project"></a>Aby utworzyć projekt definicji witryny
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu**. Jeśli środowisko IDE jest ustawione do użycia ustawienia programowania Visual Basic, na pasku menu, wybierz opcję **pliku** > **nowy projekt**.
+1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. Jeśli środowisko IDE jest ustawione na używanie Visual Basic ustawień deweloperskich, na pasku menu wybierz pozycję **plik**  >  **Nowy projekt**.
 
-    **Nowy projekt** pojawi się okno dialogowe.
+    Zostanie wyświetlone okno dialogowe **Nowy projekt**.
 
-2. Rozwiń **Visual C#**  węzła lub **języka Visual Basic** węzła, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** węzła.
+2. Rozwiń węzeł **Visual C#** lub węzeł **Visual Basic** , rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-3. W **szablony** wybierz **projekt programu SharePoint 2010** szablonu.
+3. Na liście **Szablony** wybierz szablon **projektu programu SharePoint 2010** .
 
-4. W **nazwa** wprowadź **TestSiteDef**, a następnie wybierz **OK** przycisku.
+4. W polu **Nazwa** wprowadź **TestSiteDef**, a następnie wybierz przycisk **OK** .
 
-    **Kreator ustawień niestandardowych SharePoint** pojawia się.
+    Zostanie wyświetlony **Kreator dostosowania programu SharePoint** .
 
-5. Na **Określanie witryny i poziomu zabezpieczeń dla debugowania** strony, wprowadź adres URL witryny programu SharePoint, w którym chcesz debugować definicji witryny lub użyj domyślnej lokalizacji (http://<em>Nazwa systemowa</em>/).
+5. Na stronie **Określanie poziomu lokacji i zabezpieczeń na potrzeby debugowania** wprowadź adres URL witryny programu SharePoint, w której ma być debugowana definicja lokacji, lub Użyj domyślnej lokalizacji (http://<em>system Name</em>/).
 
-6. W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz pozycję **Wdróż jako rozwiązanie farmy** przycisku opcji.
+6. W sekcji **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz przycisk opcji **Wdróż jako farmę** .
 
-    Wszystkie witryna definicji projektów musi zostać wdrożony jako rozwiązania farmy. Aby uzyskać więcej informacji dotyczących rozwiązań sandbox w porównaniu z rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).
+    Wszystkie projekty definicji lokacji należy wdrożyć jako rozwiązania farmy. Aby uzyskać więcej informacji o rozwiązaniach w trybie piaskownicy a rozwiązaniach farmy, zobacz [zagadnienia dotyczące rozwiązania w trybie piaskownicy](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Wybierz **Zakończ** przycisku.
+7. Wybierz przycisk **Zakończ** .
 
-    Projekt, który pojawia się w **Eksploratora rozwiązań**.
+    Projekt pojawia się w **Eksplorator rozwiązań**.
 
-8. W **Eksploratora rozwiązań**, wybierz węzeł projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+8. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-9. W obszarze **Visual C#** lub **języka Visual Basic**, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** węzła.
+9. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-10. W **szablony** okienku wybierz **definicji witryny** szablonu, pozostaw **nazwa** jako **SiteDefinition1**, a następnie wybierz polecenie  **Dodaj** przycisku.
+10. W okienku **Szablony** wybierz szablon **Definicja witryny** , pozostaw **nazwę** jako **SiteDefinition1**, a następnie wybierz przycisk **Dodaj** .
 
-## <a name="create-a-visual-web-part"></a>Utwórz wizualny składnik web part
- Następnie należy utworzyć wizualny składnik Web part na stronie głównej definicji witryny.
+## <a name="create-a-visual-web-part"></a>Tworzenie wizualnego składnika Web Part
+ Następnie utwórz wizualny składnik Web Part, który zostanie wyświetlony na stronie głównej definicji witryny.
 
-#### <a name="to-create-a-visual-web-part"></a>Aby utworzyć wizualny składnik web part
+#### <a name="to-create-a-visual-web-part"></a>Aby utworzyć wizualny składnik Web Part
 
-1. W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki** przycisku.
+1. W **Eksplorator rozwiązań**wybierz przycisk **Pokaż wszystkie pliki** .
 
-2. Wybierz **SiteDefinition1** węzła projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Wybierz węzeł projektu **SiteDefinition1** , a następnie na pasku menu wybierz kolejno opcje **projekt**  >  **Dodaj nowy element**.
 
-     **Dodaj nowy element** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Dodawanie nowego elementu**.
 
-3. Rozwiń **Visual C#**  węzła lub **języka Visual Basic** węzła, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** węzła.
+3. Rozwiń węzeł **Visual C#** lub węzeł **Visual Basic** , rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
-4. Z listy szablonów wybierz **wizualny składnik Web Part** szablonu, zachowaj domyślną nazwę VisualWebPart1, a następnie wybierz **Dodaj** przycisku.
+4. Na liście szablonów wybierz szablon **Visual Web Part** , Zachowaj nazwę domyślną VisualWebPart1, a następnie wybierz przycisk **Dodaj** .
 
-     *VisualWebPart1.ascx* plik zostanie otwarty.
+     Zostanie otwarty plik *VisualWebPart1. ascx* .
 
-5. W dolnej części *VisualWebPart1.ascx*, Dodaj następujący kod do dodawania trzech formantów do formularza: pole tekstowe, przycisk i etykietę:
+5. W dolnej części *VisualWebPart1. ascx*Dodaj następujące znaczniki, aby dodać trzy kontrolki do formularza: pole tekstowe, przycisk i etykieta:
 
     ```aspx-csharp
     <table>
@@ -110,27 +109,27 @@ ms.locfileid: "63009414"
     </table>
     ```
 
-6. W obszarze *VisualWebPart1.ascx*, otwórz *VisualWebPart1.ascx.cs* pliku (dla [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) lub *VisualWebPart1.ascx.vb* (dla [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), a następnie dodaj Poniższy kod:
+6. W obszarze *VisualWebPart1. ascx*otwórz plik *VisualWebPart1.ascx.cs* (dla [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) lub *VisualWebPart1. ascx. vb* (dla [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), a następnie Dodaj następujący kod:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
 
-     Ten kod dodaje funkcjonalność dotyczącą składnika web part, kliknij przycisk.
+     Ten kod dodaje funkcję dla przycisku części sieci Web.
 
-## <a name="add-the-visual-web-part-to-the-default-aspx-page"></a>Dodaj wizualny składnik web part do domyślnej strony ASPX
- Następnie dodaj wizualny składnik Web part do domyślnej strony ASPX — definicji witryny.
+## <a name="add-the-visual-web-part-to-the-default-aspx-page"></a>Dodaj wizualny składnik Web Part do domyślnej strony ASPX
+ Następnie Dodaj wizualny składnik Web Part do domyślnej strony ASPX definicji witryny.
 
-#### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>Aby dodać wizualny składnik web part do domyślnej strony ASPX
+#### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>Aby dodać wizualny składnik Web Part do domyślnej strony ASPX
 
-1. Otwórz stronę default.aspx, a następnie dodaj następujący wiersz w obszarze `WebPartPages` tag:
+1. Otwórz stronę Default. aspx, a następnie Dodaj następujący wiersz pod `WebPartPages` tagiem:
 
     ```aspx-csharp
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>
     ```
 
-     Ten wiersz kojarzy nazwę MyWebPartControls za pomocą składnika Web part i jego kodu. *Namespace* parametr odpowiada przestrzeni nazw, który jest używany w *VisualWebPart1.ascx* pliku kodu.
+     Ten wiersz kojarzy nazwę MyWebPartControls z częścią sieci Web i jej kodem. Parametr *Namespace* jest zgodny z przestrzenią nazw, która jest używana w pliku kodu *VisualWebPart1. ascx* .
 
-2. Po `</asp:Content>` elementu, Zastąp całą `ContentPlaceHolderId="PlaceHolderMain"` sekcji i jego zawartość następującym kodem:
+2. Po `</asp:Content>` elemencie Zastąp całą `ContentPlaceHolderId="PlaceHolderMain"` sekcję i jej zawartość następującym kodem:
 
     ```aspx-csharp
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
@@ -138,49 +137,49 @@ ms.locfileid: "63009414"
     </asp:Content>
     ```
 
-     Ten kod tworzy odwołanie do wizualny składnik Web part, który został utworzony wcześniej.
+     Ten kod tworzy odwołanie do utworzonego wcześniej elementu Visual Web Part.
 
-3. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SiteDefinition1** węzła, a następnie wybierz **Ustaw jako element startowy**.
+3. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła **SiteDefinition1** , a następnie wybierz polecenie **Ustaw jako element startowy**.
 
-## <a name="deploy-and-run-the-site-definition-solution"></a>Wdrażanie i uruchamianie rozwiązania definicji witryny
- Następnie wdrażanie projektu programu SharePoint, a następnie uruchomić projekt.
+## <a name="deploy-and-run-the-site-definition-solution"></a>Wdrażanie i uruchamianie rozwiązania definicji lokacji
+ Następnie wdróż projekt w programie SharePoint, a następnie Uruchom projekt.
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>Aby wdrożyć i uruchomić definicję witryny
 
-- Na pasku menu wybierz **kompilacji** > **wdrażanie TestSiteDef**.
+- Na pasku menu wybierz kolejno pozycje **kompilacja**  >  **Wdróż TestSiteDef**.
 
-- Wybierz **F5** klucza.
+- Wybierz klawisz **F5** .
 
-     Program Visual Studio kompiluje kod, dodaje jej funkcje, pakiety wszystkie pliki w plik rozwiązania (WSP) programu SharePoint i wdrażania z plikiem WSP do serwera programu SharePoint. Program SharePoint następnie instaluje pliki, a następnie aktywuje funkcje.
+     Program Visual Studio kompiluje kod, dodaje jego funkcje, pakuje wszystkie pliki do pliku rozwiązania programu SharePoint (WSP) i wdraża plik WSP na serwerze programu SharePoint. Program SharePoint zainstaluje następnie pliki, a następnie uaktywni funkcje.
 
-## <a name="create-a-site-based-on-the-site-definition"></a>Tworzenie witryny na podstawie definicji witryny
- Następnie utwórz lokację przy użyciu nowych definicji witryny.
+## <a name="create-a-site-based-on-the-site-definition"></a>Tworzenie witryny na podstawie definicji lokacji
+ Następnie utwórz lokację przy użyciu nowej definicji lokacji.
 
 #### <a name="to-create-a-site-by-using-the-site-definition"></a>Aby utworzyć witrynę przy użyciu definicji witryny
 
-1. W witrynie programu SharePoint zostanie wyświetlona strona nową witrynę programu SharePoint.
+1. W witrynie programu SharePoint zostanie wyświetlona strona Nowa witryna programu SharePoint.
 
-2. W **tytuł i opis** sekcji, wprowadź **Moje nowej lokacji** tytuł i opis witryny.
+2. W sekcji **tytuł i opis** wprowadź **moją nową witrynę** dla tytułu i opis witryny.
 
-3. W **adres witryny sieci Web** sekcji, wprowadź **MojaNowaWitryna** w **nazwa adresu URL** pole.
+3. W sekcji **adres witryny sieci Web** wprowadź **mynewsite** w polu **nazwa adresu URL** .
 
-4. W **szablonu** wybierz pozycję **dostosowania SharePoint** kartę.
+4. W sekcji **szablon** wybierz kartę **dostosowania programu SharePoint** .
 
-5. W **wybierz szablon** wybierz **SiteDefinition1**.
+5. Na liście **Wybierz szablon** wybierz pozycję **SiteDefinition1**.
 
-6. Pozostaw inne ustawienia ich wartości domyślne, a następnie wybierz **Utwórz** przycisku.
+6. Pozostaw wartości domyślne pozostałych ustawień, a następnie wybierz przycisk **Utwórz** .
 
-     Pojawi się nowa lokacja.
+     Zostanie wyświetlona nowa witryna.
 
-## <a name="test-the-new-site"></a>Testuj nową stronę
- Następnie przetestuj nowej lokacji, aby sprawdzić, czy działa poprawnie.
+## <a name="test-the-new-site"></a>Przetestuj nową witrynę
+ Następnie przetestuj nową lokację, aby sprawdzić, czy działa poprawnie.
 
 #### <a name="to-test-the-new-site"></a>Aby przetestować nową stronę
 
-- Na stronie domyślnej ASPX wprowadź jakiś tekst, a następnie wybierz **tekst etykiety zmiany** przycisk znajdujący się obok pola tekstowego.
+- Na domyślnej stronie ASPX wprowadź tekst, a następnie wybierz przycisk **zmiany tekstu etykiety** obok pola tekstowego.
 
      Tekst jest wyświetlany w etykiecie po prawej stronie przycisku.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
+- [Instrukcje: Tworzenie odbiorcy zdarzeń](../sharepoint/how-to-create-an-event-receiver.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

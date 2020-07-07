@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986250"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016736"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania
   Deskryptory filtru umożliwiają odbiorcom modelu przekazywanie wartości do metod przed ich wykonaniem. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986250"
 
 2. W oknie **Szczegóły metody** wybierz deskryptor typu parametru.
 
-3. Na pasku menu wybierz polecenie **wyświetl** > **okno właściwości**.
+3. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
 
 4. W oknie **Właściwości** ustaw właściwość **Nazwa typu** na typ danych, który jest odpowiedni dla filtra.
 
@@ -45,7 +44,7 @@ ms.locfileid: "72986250"
 
      Nowy Deskryptor filtru pojawia się pod węzłem **deskryptorów filtru** .
 
-7. Na pasku menu wybierz polecenie **wyświetl** > **okno właściwości**.
+7. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
 
 8. W oknie **Właściwości** wybierz właściwość **Typ** .
 
@@ -62,7 +61,7 @@ ms.locfileid: "72986250"
      Poniższy przykład zwraca zamówienia sprzedaży z określoną datą zamówienia.
 
     > [!NOTE]
-    > Zastąp wartość pola `ServerName` nazwą serwera.
+    > Zamień wartość `ServerName` pola na nazwę serwera.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]

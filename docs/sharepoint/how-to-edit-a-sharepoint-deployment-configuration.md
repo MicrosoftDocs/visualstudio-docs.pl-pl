@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Edytowanie konfiguracji wdrażania SharePoint | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: edytowanie konfiguracji wdrożenia programu SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
@@ -14,42 +14,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444697"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016783"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Instrukcje: Edytowanie konfiguracji wdrażania SharePoint
-  Można utworzyć konfiguracji wdrożenia lub Modyfikuj istniejącą konfigurację wdrożenia. Na przykład możesz uruchomić jednym kroku lub zmiana kolejności kroków w procesie wdrażania. Można tworzyć lub modyfikować konfiguracje wdrożenia, ponieważ nie można zmienić konfiguracji programowo dodanych i wbudowane.
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Instrukcje: edytowanie konfiguracji wdrożenia programu SharePoint
+  Można utworzyć konfigurację wdrożenia lub zmodyfikować istniejącą konfigurację wdrożenia. Można na przykład uruchomić pojedynczy krok lub zmienić kolejność kroków w procesie wdrażania. Możesz chcieć utworzyć lub zmodyfikować konfiguracje wdrożenia, ponieważ wbudowane i programowo dodane konfiguracje nie mogą zostać zmienione.
 
-## <a name="create-a-sharepoint-deployment-configuration"></a>Tworzenie konfiguracji wdrażania SharePoint
+## <a name="create-a-sharepoint-deployment-configuration"></a>Tworzenie konfiguracji wdrożenia programu SharePoint
 
-#### <a name="to-create-a-sharepoint-deployment-configuration"></a>Aby utworzyć konfiguracji wdrażania SharePoint
+#### <a name="to-create-a-sharepoint-deployment-configuration"></a>Aby utworzyć konfigurację wdrożenia programu SharePoint
 
-1. W **Eksploratora rozwiązań**, wybierz projekt programu SharePoint, a następnie na pasku menu wybierz **projektu**, _ProjectName_**właściwości**.
+1. W **Eksplorator rozwiązań**wybierz projekt SharePoint, a następnie na pasku menu wybierz **projekt**,**Właściwości** _ProjectName_.
 
-2. Na **SharePoint** kartę, wybrać **New** przycisku.
+2. Na karcie **SharePoint** wybierz przycisk **Nowy** .
 
-     **Dodawanie nowej konfiguracji wdrożenia** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Dodawanie nowej konfiguracji wdrożenia** .
 
-3. W **nazwa** tekstu wprowadź nazwę dla konfiguracji wdrażania.
+3. W polu tekstowym **Nazwa** wprowadź nazwę konfiguracji wdrożenia.
 
-4. W **dostępne kroki związane z wdrażaniem** okienku wybierz kroki, które chcesz dodać do konfiguracji wdrożenia, wybierz (**>**) przycisk, a następnie wybierz **OK** przycisku.
+4. W okienku **dostępne kroki wdrożenia** wybierz czynności, które chcesz dodać do konfiguracji wdrożenia, wybierz **>** przycisk (), a następnie wybierz przycisk **OK** .
 
     > [!NOTE]
-    > Po skonfigurowaniu polecenia przed wdrożeniem lub polecenia po wdrożeniu te kroki uruchamiane tylko wtedy, gdy należy dodać je do konfiguracji wdrożenia dostosowane.
+    > Jeśli skonfigurowano polecenie przed wdrożeniem lub polecenie po wdrożeniu, te kroki są wykonywane tylko wtedy, gdy zostaną dodane do niestandardowej konfiguracji wdrożenia.
 
 ## <a name="change-the-active-deployment-configuration"></a>Zmiana konfiguracji aktywnego wdrożenia
 
-#### <a name="to-change-the-active-deployment-configuration"></a>Zmiana konfiguracji aktywnego wdrożenia
+#### <a name="to-change-the-active-deployment-configuration"></a>Aby zmienić konfigurację aktywnego wdrożenia
 
-1. W **Eksploratora rozwiązań**, wybierz projekt programu SharePoint, a następnie na pasku menu wybierz **projektu** > **\<*ProjectName*> Właściwości**.
+1. W **Eksplorator rozwiązań**wybierz projekt SharePoint, a następnie na pasku menu wybierz **Project**  >  ** \<*ProjectName*> Właściwości**projektu.
 
-2. Wybierz **SharePoint** kartę.
+2. Wybierz kartę **SharePoint** .
 
-3. W **aktywnej konfiguracji wdrożenia** pola listy, wybierz nazwę konfiguracji wdrożenia, którego chcesz używać.
+3. W polu listy **Konfiguracja wdrożenia aktywnego** wybierz nazwę konfiguracji wdrożenia, która ma być używana.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

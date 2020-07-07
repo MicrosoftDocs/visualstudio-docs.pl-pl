@@ -1,7 +1,7 @@
 ---
-title: Wdrażanie, publikowanie i aktualizowanie rozwiązań SharePoint zdalnie
+title: Zdalne wdrażanie, publikowanie & Uaktualnianie rozwiązań SharePoint
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,67 +15,66 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401444"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016809"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Instrukcje: Wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym
-  Oprócz wdrażania rozwiązań programu SharePoint do systemu lokalnego, można publikować rozwiązania w trybie piaskownicy programu SharePoint na lokacjach zdalnych i lokalnych witryn programu SharePoint. Zdalnej kopii procesu publikowania *.wsp* pliku na serwerze programu SharePoint, instaluje rozwiązanie i następnie umożliwia aktywację rozwiązania. Możesz również uaktualnić zdalnej instalacji rozwiązania programu SharePoint, po wprowadzeniu zmian do niego.
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Instrukcje: wdrażanie, publikowanie i uaktualnianie rozwiązań SharePoint na serwerze zdalnym
+  Oprócz wdrażania rozwiązań programu SharePoint w systemie lokalnym można publikować rozwiązania programu SharePoint w trybie piaskownicy w witrynach zdalnych lub lokalnych witrynach programu SharePoint. Proces publikowania zdalnego kopiuje plik *. wsp* do serwera programu SharePoint, instaluje rozwiązanie, a następnie umożliwia aktywowanie rozwiązania. Możesz również uaktualnić zdalną instalację rozwiązania SharePoint po wprowadzeniu zmian.
 
-## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Aby opublikować rozwiązanie w trybie piaskownicy programu SharePoint na serwerze zdalnym programu SharePoint
+## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Aby opublikować rozwiązanie SharePoint w trybie piaskownicy na zdalnym serwerze programu SharePoint
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla piaskownicy projektu programu SharePoint, który chcesz opublikować, a następnie wybierz **Publikuj**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu programu SharePoint w trybie piaskownicy, który chcesz opublikować, a następnie wybierz polecenie **Publikuj**.
 
-2. W **Publikuj** okna dialogowego wybierz **publikowania w witrynie SharePoint** przycisk opcji, a następnie wprowadź adres URL witryny do publikowania online, takich jak: `https://mytestsite.sharepoint.microsoftonline.com`.
+2. W oknie dialogowym **Publikowanie** wybierz przycisk opcji **Publikuj w witrynie SharePoint** , a następnie wprowadź adres URL dla witryny publikacji online, na przykład: `https://mytestsite.sharepoint.microsoftonline.com` .
 
-3. Wybierz **Otwórz stronę Galeria rozwiązań w przeglądarce po opublikowaniu** przycisk opcji, aby wyświetlić listę rozwiązań w **Galeria rozwiązań** strony po opublikowaniu.
+3. Aby wyświetlić listę rozwiązań na stronie **galerii rozwiązań** po opublikowaniu, wybierz **stronę Otwórz galerię rozwiązań w przeglądarce po opublikowaniu** przycisku opcji.
 
-4. Wybierz **Publikuj** przycisku.
+4. Wybierz przycisk **Publikuj** .
 
-5. Zaloguj się do serwera zdalnego, jeśli wymagane jest uwierzytelnienie użytkownika.
+5. Zaloguj się na serwerze zdalnym, jeśli wymagane jest uwierzytelnianie użytkownika.
 
-     Publikowanie postępu jest wyświetlana w programie Visual Studio **dane wyjściowe** okna. Po zakończeniu procesu rozwiązania ( *.wsp*) pliku jest zainstalowany na zdalnym serwerze programu SharePoint. Jednak go nadal należy aktywować zanim będzie można używać w programie SharePoint.
+     Postęp publikowania pojawia się w oknie **danych wyjściowych** programu Visual Studio. Po zakończeniu procesu na zdalnym serwerze programu SharePoint jest instalowany plik rozwiązania (*wsp*). Jednak nadal musi być aktywowany, zanim będzie można go używać w programie SharePoint.
 
-6. Na **Galeria rozwiązań** stronie, wybierz aplikację programu SharePoint, a następnie na Wstążce, wybierz **Aktywuj** przycisku.
+6. Na stronie **Galeria rozwiązań** wybierz aplikację SharePoint, a następnie na wstążce wybierz przycisk **Aktywuj** .
 
-7. W **Aktywowanie rozwiązania** okno dialogowe, na Wstążce, wybierz **Aktywuj** ponownie przycisk.
+7. W oknie dialogowym **Aktywuj rozwiązanie** na wstążce wybierz ponownie przycisk **Aktywuj** .
 
-     **Stan** kolumny na **Galeria rozwiązań** strona wskazuje, że aplikacja jest aktywna.
+     Kolumna **stan** na stronie **Galeria rozwiązań** wskazuje, że aplikacja jest aktywna.
 
-## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>Aby uaktualnić rozwiązanie w trybie piaskownicy programu SharePoint na zdalnym serwerze programu SharePoint
- Jeśli rozwiązanie w trybie piaskownicy programu SharePoint został już opublikowany na serwerze zdalnym, następujący proces pozwala na uaktualnianie go po wprowadzeniu zmian do aplikacji w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>Aby uaktualnić rozwiązanie programu SharePoint w trybie piaskownicy na zdalnym serwerze programu SharePoint
+ Jeśli rozwiązanie programu SharePoint w trybie piaskownicy jest już opublikowane na serwerze zdalnym, poniższy proces umożliwia uaktualnienie go po wprowadzeniu zmian w aplikacji w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-1. Zmień nazwę pakietu programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby to zrobić, w **Eksploratora rozwiązań** Otwórz pakiet. Zostanie on wyświetlony na **narzędziu Package Explorer**.
+1. Zmień nazwę pakietu programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . W tym celu w **Eksplorator rozwiązań** otworzyć pakiet. Jest on wyświetlany w **Eksploratorze pakietów**.
 
-2. W **narzędziu Package Explorer**w **nazwa** pola, Zmień nazwę pakietu na unikatową nazwę.
+2. W **Eksploratorze pakietów**w polu **Nazwa** Zmień nazwę pakietu na unikatową.
 
 3. Zapisz projekt.
 
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Publikuj**.
+4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Publikuj**.
 
-5. W **Publikuj** okna dialogowego wybierz **publikowania w witrynie SharePoint** przycisk opcji, a następnie, jeśli brakuje adresu URL dla serwera zdalnego, w którym rozwiązanie jest zapisywana, wprowadź go.
+5. W oknie dialogowym **Publikowanie** wybierz przycisk opcji **Publikuj w witrynie programu SharePoint** , a następnie, jeśli brakuje adresu URL serwera zdalnego, na którym zapisano rozwiązanie, wprowadź je.
 
-6. Wybierz **Otwórz stronę Galeria rozwiązań w przeglądarce po opublikowaniu** przycisk opcji, aby wyświetlić listę rozwiązań w **Galeria rozwiązań** strony po opublikowaniu.
+6. Aby wyświetlić listę rozwiązań na stronie **galerii rozwiązań** po opublikowaniu, wybierz **stronę Otwórz galerię rozwiązań w przeglądarce po opublikowaniu** przycisku opcji.
 
-7. Wybierz **Publikuj** przycisku.
+7. Wybierz przycisk **Publikuj** .
 
-8. Zaloguj się do serwera zdalnego, jeśli wymagane jest uwierzytelnienie użytkownika.
+8. Zaloguj się na serwerze zdalnym, jeśli wymagane jest uwierzytelnianie użytkownika.
 
-     Jeśli użytkownik zalogował się do serwera zdalnego niedawno, uwierzytelniania nie może być wymagane.
+     Jeśli ostatnio zalogowano się na serwerze zdalnym, uwierzytelnianie może nie być wymagane.
 
-     Jeśli starszą wersję aplikacji, która ma taką samą nazwę, która jest nadal istnieje na serwerze programu SharePoint, zostanie wyświetlony błąd, który pakiet o tej samej nazwie już istnieje na serwerze programu SharePoint. Należy zmienić nazwę pakietu na unikatową nazwę, przed opublikowaniem.
+     Jeśli starsza wersja aplikacji, która ma taką samą nazwę, nadal istnieje na serwerze programu SharePoint, zostanie wyświetlony komunikat o błędzie, że pakiet o tej samej nazwie już istnieje na serwerze programu SharePoint. Przed opublikowaniem należy zmienić nazwę pakietu na unikatową.
 
-9. Wybierz nową aplikację w programie SharePoint, a następnie na Wstążce, wybierz **uaktualnienia** przycisku.
+9. Wybierz nową aplikację w programie SharePoint, a następnie na wstążce wybierz przycisk **Uaktualnij** .
 
-10. W **Uaktualnij rozwiązanie** okno dialogowe, na Wstążce, wybierz **uaktualnienia** ponownie przycisk. **Stan** kolumny na **Galeria rozwiązań** strony powinny teraz wskazywać, że aplikacja jest aktywna.
+10. W oknie dialogowym **uaktualnienie rozwiązania** na wstążce wybierz ponownie przycisk **Uaktualnij** . Kolumna **stan** na stronie **Galeria rozwiązań** powinna teraz wskazywać, że aplikacja jest aktywna.
 
-     Dezaktywacji starą wersję rozwiązania, nowa wersja rozwiązania jest uaktualniany razem z danych zachowywanych ze starego rozwiązania, a nowe rozwiązanie jest aktywna w programie SharePoint.
+     Stara wersja rozwiązania została zdezaktywowana, Nowa wersja rozwiązania zostanie uaktualniona przy użyciu danych przechowywanych ze starego rozwiązania, a nowe rozwiązanie zostanie aktywowane w programie SharePoint.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
+- [Instrukcje: wdrażanie i publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)

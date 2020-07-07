@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dodawanie metody Creator | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie metody Creator | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,58 +17,57 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 962e353b5ae82f6dd3eccc2898385fd4b9ee30ee
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443585"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017059"
 ---
 # <a name="how-to-add-a-creator-method"></a>Instrukcje: Dodawanie metody Creator
-  Metody Creator dodaje nowe dane do źródła danych jednostki. Usługa łączności danych biznesowych (BDC) wywołuje tę metodę, gdy użytkownicy wybiorą **nowy element** znajdujący się na **wstążki** listy, która jest oparta na modelu. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
+  Metoda Creator dodaje nowe dane do źródła danych jednostki. Usługa łączności danych biznesowych (BDC) wywołuje tę metodę, gdy użytkownicy wybierają przycisk **nowy element** na **Wstążce** listy, która jest oparta na modelu. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-### <a name="to-add-a-creator-method"></a>Aby dodać metody Creator
+### <a name="to-add-a-creator-method"></a>Aby dodać metodę Creator
 
-1. Na **projektanta łączności danych biznesowych**, wybierz jednostkę.
+1. W **projektancie BDC**wybierz jednostkę.
 
-2. Na pasku menu wybierz **widoku** > **Windows inne** >**szczegóły metody BDC**.
+2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  > **Szczegóły metody BDC**systemu Windows.
 
-    **Szczegóły metody BDC** zostanie otwarte okno. Aby uzyskać więcej informacji na temat tego okna, zobacz [Omówienie narzędzia projektowania modelu usługi łączności danych biznesowych](../sharepoint/bdc-model-design-tools-overview.md).
+    Zostanie otwarte okno **Szczegóły metody BDC** . Aby uzyskać więcej informacji na temat tego okna, zobacz [narzędzia projektowania modelu usługi BDC — Omówienie](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. W **Dodaj metodę** wybierz **utworzyć metody Creator**.
+3. Z listy **Dodaj metodę** wybierz polecenie **Utwórz twórcę metody**.
 
-    Program Visual Studio dodaje następujące elementy w modelu, a te elementy są wyświetlane w **szczegóły metody BDC** okna.
+    Program Visual Studio dodaje do modelu następujące elementy, które są wyświetlane w oknie **Szczegóły metody BDC** .
 
-   - Metodę o nazwie **Utwórz**.
+   - Metoda o nazwie **Create**.
 
-   - Parametr wejściowy metody.
+   - Parametr wejściowy dla metody.
 
-   - Parametr zwracany przez metodę.
+   - Parametr Return dla metody.
 
-   - Deskryptory parametrów typu.
+   - Deskryptory typu dla parametrów.
 
-   - Wystąpienia metody dla metody.
+   - Wystąpienie metody dla metody.
 
-     Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz **Wyświetl kod**.
+4. W **Eksplorator rozwiązań**Otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz polecenie **Wyświetl kod**.
 
-    Pliku kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).
+    Plik kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-5. Dodaj kod do metody Creator, który dodaje dane do źródła danych. Poniższy przykład dodaje kontakt do przykładowej bazy danych AdventureWorks programu SQL Server.
+5. Dodaj kod do metody Creator, która dodaje dane do źródła danych. Poniższy przykład dodaje kontakt do przykładowej bazy danych AdventureWorks dla SQL Server.
 
    > [!NOTE]
-   > Zastąp wartość `ServerName` pole z nazwą serwera.
+   > Zamień wartość `ServerName` pola na nazwę serwera.
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]
 
 ## <a name="see-also"></a>Zobacz także
-- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)
-- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)
+- [Instrukcje: dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Instrukcje: Dodawanie metody usuwania](../sharepoint/how-to-add-a-deleter-method.md)
+- [Instrukcje: Dodawanie metody Aktualizator](../sharepoint/how-to-add-an-updater-method.md)
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
 - [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)

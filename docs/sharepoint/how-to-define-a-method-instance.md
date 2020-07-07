@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Definiowanie wystąpienia metody | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e21900e87278ad500ee8497d1dd0c49350695d1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981808"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016828"
 ---
 # <a name="how-to-define-a-method-instance"></a>Instrukcje: Definiowanie wystąpienia metody
   Należy zdefiniować co najmniej jedno wystąpienie metody dla każdej metody w modelu.
 
- Dodaj wystąpienie metody przy użyciu okna **Szczegóły metody BDC** . Po dodaniu wystąpienia metody program Visual Studio dodaje element `<MethodInstance>` do pliku XML w projekcie. Aby uzyskać więcej informacji na temat atrybutów elementu `<MethodInstance>`, zobacz element [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
+ Dodaj wystąpienie metody przy użyciu okna **Szczegóły metody BDC** . Po dodaniu wystąpienia metody program Visual Studio dodaje `<MethodInstance>` element do pliku XML w projekcie. Aby uzyskać więcej informacji na temat atrybutów `<MethodInstance>` elementu, zobacz [Klasa MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
 ### <a name="to-define-a-method-instance"></a>Aby zdefiniować wystąpienie metody
 
@@ -35,7 +34,7 @@ ms.locfileid: "72981808"
 
      Nowe wystąpienie metody pojawi się poniżej węzła **Instances** .
 
-3. Na pasku menu wybierz polecenie **wyświetl** > **okno właściwości**.
+3. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
 
 4. W oknie **Właściwości** ustaw właściwości wystąpienia metody. Aby uzyskać więcej informacji na temat każdej właściwości, zobacz element [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 

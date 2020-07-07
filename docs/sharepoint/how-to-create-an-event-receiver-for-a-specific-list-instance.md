@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Tworzenie obsługiwanego odbiornika dla określonej listy formularzy | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie odbiorcy zdarzeń dla określonego wystąpienia listy | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,78 +13,77 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408549"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016961"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Instrukcje: Tworzenie obsługiwanego odbiornika dla określonej listy formularzy
-  Odbiornik zdarzeń wystąpienia listy reaguje na zdarzenia występujące w żadnym wystąpieniu definicji listy. Choć szablonu odbiorcy zdarzenia nie przeznaczonych dla określonej listy formularzy, możesz zmodyfikować odbiorcy zdarzeń, które są ograniczone do definicji listy w celu reagowania na zdarzenia w określonej listy formularzy.
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Instrukcje: Tworzenie odbiorcy zdarzeń dla określonego wystąpienia listy
+  Odbiorca zdarzenia wystąpienia listy odpowiada na zdarzenia występujące w dowolnym wystąpieniu definicji listy. Mimo że szablon odbiorcy zdarzeń nie umożliwia określania wartości docelowej określonego wystąpienia listy, można zmodyfikować odbiorcę zdarzeń, który jest objęty zakresem definicji listy w celu reagowania na zdarzenia w określonym wystąpieniu listy.
 
- Pod kątem określonej listy formularzy w *Elements.xml* odbiorcy zdarzeń można zastąpić `ListTemplateId` z `ListUrl` i Dodaj adres URL wystąpienia listy.
+ Aby określić konkretne wystąpienie listy, w *Elements.xml* dla odbiorcy zdarzeń Zastąp wartość `ListTemplateId` `ListUrl` i Dodaj adres URL wystąpienia listy.
 
-## <a name="create-a-list-instance-event-receiver"></a>Utwórz odbiornik zdarzeń wystąpienia listy
- Poniższe kroki pokazują sposób modyfikowania odbiorca zdarzenia elementu listy, ma odpowiadać tylko na zdarzenia występujące w wystąpieniu Niestandardowa lista anonsów.
+## <a name="create-a-list-instance-event-receiver"></a>Utwórz odbiorcę zdarzeń wystąpienia listy
+ Poniższe kroki pokazują, jak zmodyfikować odbiorcę zdarzeń elementu listy w celu reagowania tylko na zdarzenia występujące w wystąpieniu listy anonsów niestandardowych.
 
-#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Aby zmodyfikować odbiorcy zdarzenia i reagować na określonej listy formularzy
+#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Aby zmodyfikować odbiorcę zdarzeń w celu reagowania na określone wystąpienie listy
 
-1. W przeglądarce otwórz witrynę programu SharePoint.
+1. W przeglądarce Otwórz witrynę programu SharePoint.
 
-2. W okienku nawigacji **Wyświetla** łącza.
+2. W okienku nawigacji **listy** łączy.
 
-3. W **całą zawartość lokacji** wybierz **Utwórz** łącza.
+3. Na stronie **cała zawartość witryny** wybierz łącze **Utwórz** .
 
-4. W **Utwórz** okna dialogowego wybierz **anonsów** wpisz, określ nazwę anonsu **TestAnnouncements**, a następnie wybierz **Utwórz**przycisku.
+4. W oknie dialogowym **Tworzenie** wybierz typ **anonsów** , nazwij anons **TestAnnouncements**, a następnie wybierz przycisk **Utwórz** .
 
-5. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt odbiorcy zdarzeń.
+5. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Utwórz projekt odbiorcy zdarzeń.
 
-6. W **jakiego typu odbiorcę zdarzeń chcesz wykonać?** wybierz **zdarzenia elementu listy**.
+6. Na liście żądany **Typ odbiorcy zdarzeń** wybierz pozycję **Wyświetl zdarzenia elementów**.
 
     > [!NOTE]
-    > Możesz również wybrać dowolny inny rodzaj odbiorcy zdarzeń, który zakresów w definicji listy, na przykład **listę zdarzeń poczty E-mail** lub **zdarzenia przepływu pracy listy**.
+    > Możesz również wybrać dowolnego innego rodzaju odbiorcę zdarzeń, który ma zakresy do definicji listy, na przykład **listę zdarzeń poczty e-mail** lub **listę zdarzeń przepływu pracy**.
 
-7. W **jaki element ma być źródła zdarzeń?** wybierz **anonsów**.
+7. Na liście **element, który powinien być źródłem zdarzenia?** wybierz pozycję **Anonsy**.
 
-8. W **obsługę następujących zdarzeń** listy wybierz **zostanie dodany element** pole wyboru, a następnie wybierz **Zakończ** przycisku.
+8. Na liście **Obsługuj poniższe zdarzenia** zaznacz pole wyboru **element jest dodawany** , a następnie wybierz przycisk **Zakończ** .
 
-9. W **Eksploratora rozwiązań**, w obszarze EventReceiver1, otwórz *Elements.xml*.
+9. W **Eksplorator rozwiązań**w obszarze EventReceiver1 Otwórz *Elements.xml*.
 
-     Odbiorcy zdarzeń obecnie odwołuje się do definicji listy ogłoszeń przy użyciu następujący wiersz:
+     Odbiorca zdarzeń odwołuje się obecnie do definicji listy anonsów, używając następującego wiersza:
 
     ```xml
     <Receivers ListTemplateId="104">
     ```
 
-     Zmień ten wiersz do następującego tekstu:
+     Zmień ten wiersz na następujący tekst:
 
     ```xml
     <Receivers ListUrl="Lists/TestAnnouncements">
     ```
 
-     Spowoduje to nieprzekazywanie odbiorcy zdarzeń ma odpowiadać tylko na zdarzenia występujące w nowym **TestAnnouncements** Lista anonsów, który został utworzony. Możesz zmienić `ListURL` atrybutu, aby odwoływać się do dowolnego wystąpienia listy na serwerze programu SharePoint.
+     Powoduje to skierowanie odbiornika zdarzeń do odpowiedzi tylko na zdarzenia występujące na nowej liście anonsów **TestAnnouncements** , która została właśnie utworzona. Można zmienić atrybut, `ListURL` Aby odwoływać się do dowolnego wystąpienia listy na serwerze programu SharePoint.
 
 10. Otwórz plik kodu dla odbiorcy zdarzeń i umieść punkt przerwania w metodzie ItemAdding.
 
-11. Wybierz **F5** klawisz, aby skompilować i uruchomić rozwiązanie.
+11. Wybierz klawisz **F5** , aby skompilować i uruchomić rozwiązanie.
 
-12. W programie SharePoint, wybierz **TestAnnouncements** łącze w okienku nawigacji.
+12. W programie SharePoint wybierz łącze **TestAnnouncements** w okienku nawigacji.
 
-13. Wybierz **Dodaj nowy anons** łącza.
+13. Wybierz łącze **Dodaj nowe powiadomienie** .
 
-14. Wprowadź tytuł powiadomienia, a następnie wybierz **Zapisz** przycisku.
+14. Wprowadź tytuł anonsu, a następnie wybierz przycisk **Zapisz** .
 
-     Należy zauważyć, że punkt przerwania zostaje trafiony, gdy nowy element zostanie dodany do listy niestandardowej anonsów.
+     Należy zauważyć, że punkt przerwania jest trafień po dodaniu nowego elementu do listy anonsów niestandardowych.
 
-15. Wybierz **F5** klawisz, aby wznowić.
+15. Wybierz klawisz **F5** , który ma zostać wznowiony.
 
-16. W okienku nawigacji wybierz **Wyświetla** łącze, a następnie wybierz **anonsów** łącza.
+16. W okienku nawigacji wybierz łącze **listy** , a następnie wybierz łącze **Anonsy** .
 
-17. Dodaj nowe zawiadomienie.
+17. Dodawanie nowego anonsu.
 
-     Należy zauważyć, że odbiorca zdarzenia nie będzie wyzwalać na nowy anons odbiornika skonfigurowano brane są tylko zdarzenia w wystąpienia listy niestandardowej anonsu, **TestAnnouncements**.
+     Należy zauważyć, że odbiorca zdarzeń nie wyzwala nowego anonsu, ponieważ odbiornik jest skonfigurowany do odpowiadania tylko na zdarzenia w wystąpieniu listy anonsów niestandardowych, **TestAnnouncements**.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
+- [Instrukcje: Tworzenie odbiorcy zdarzeń](../sharepoint/how-to-create-an-event-receiver.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Tworzenie strony aplikacji SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0eaf7bda4ac4ed67dae79b8dd83bb59ba6985343
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985025"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016496"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Przewodnik: Tworzenie strony aplikacji SharePoint
 
@@ -45,7 +44,7 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 Najpierw Utwórz **pusty projekt programu SharePoint**. Później dodasz element **strony aplikacji** do tego projektu.
 
-1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 2. Otwórz okno dialogowe **Nowy projekt** , rozwiń węzeł **Office/SharePoint** w języku, którego chcesz użyć, a następnie wybierz węzeł **rozwiązania SharePoint** .
 
@@ -61,19 +60,19 @@ Aby utworzyć stronę aplikacji, Dodaj element **strony aplikacji** do projektu.
 
 1. W **Eksplorator rozwiązań**wybierz projekt **MyShareProject** .
 
-2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
 3. W oknie dialogowym **Dodaj nowy element** wybierz **stronę aplikacji (szablon tylko rozwiązanie farmy** ).
 
 4. Nadaj stronie nazwę **SearchItems**, a następnie wybierz przycisk **Dodaj** .
 
-     Projektant Visual Web Developer wyświetla stronę aplikacji w widoku **źródła** , w której można zobaczyć elementy HTML strony. Projektant wyświetla znaczniki dla kilku kontrolek <xref:System.Web.UI.WebControls.Content>. Każda kontrolka mapuje do kontrolki <xref:System.Web.UI.WebControls.ContentPlaceHolder>, która jest zdefiniowana na domyślnej stronie wzorcowej aplikacji.
+     Projektant Visual Web Developer wyświetla stronę aplikacji w widoku **źródła** , w której można zobaczyć elementy HTML strony. Projektant wyświetla znaczniki dla kilku <xref:System.Web.UI.WebControls.Content> kontrolek. Każda kontrolka mapuje do <xref:System.Web.UI.WebControls.ContentPlaceHolder> kontrolki zdefiniowanej na domyślnej stronie wzorcowej aplikacji.
 
 ## <a name="design-the-layout-of-the-application-page"></a>Projektowanie układu strony aplikacji
 
 Element Strona aplikacji umożliwia dodawanie formantów ASP.NET do strony aplikacji przy użyciu projektanta. Ten Projektant jest tym samym projektantem, który jest używany w Visual Web Developer. Dodaj etykietę, listę przycisków radiowych i tabelę do widoku **źródła** projektanta, a następnie ustaw właściwości tak samo jak podczas projektowania dowolnej standardowej strony ASP.NET.
 
-1. Na pasku menu wybierz **widok** > **Przybornik**.
+1. Na pasku menu wybierz **Widok**  >  **Przybornik**.
 
 2. W węźle standardowy **przybornika**wykonaj jedną z następujących czynności:
 
@@ -83,9 +82,9 @@ Element Strona aplikacji umożliwia dodawanie formantów ASP.NET do strony aplik
 
 3. Powtórz poprzedni krok, aby dodać element **DropDownList** i element **tabeli** do kontrolki zawartości **PlaceHolderMain** .
 
-4. W projektancie Zmień wartość atrybutu `Text` kontrolki etykieta, aby **wyświetlić wszystkie elementy**.
+4. W projektancie Zmień wartość `Text` atrybutu kontrolki etykieta, aby **wyświetlić wszystkie elementy**.
 
-5. W projektancie Zastąp element `<asp:DropDownList>` następującym kodem XML.
+5. W projektancie Zastąp `<asp:DropDownList>` element następującym kodem XML.
 
     ```xml
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"
@@ -97,13 +96,13 @@ Element Strona aplikacji umożliwia dodawanie formantów ASP.NET do strony aplik
 
 ## <a name="handle-the-events-of-controls-on-the-page"></a>Obsługa zdarzeń formantów na stronie
 
-Obsłuż kontrolki na stronie aplikacji tak samo jak każda strona ASP.NET. W tej procedurze zostanie obsłużone zdarzenie `SelectedIndexChanged` listy rozwijanej.
+Obsłuż kontrolki na stronie aplikacji tak samo jak każda strona ASP.NET. W tej procedurze zostanie obsłużyć `SelectedIndexChanged` zdarzenie listy rozwijanej.
 
 1. W menu **Widok** wybierz polecenie **kod**.
 
      Plik kodu strony aplikacji zostanie otwarty w edytorze kodu.
 
-2. Dodaj następującą metodę do klasy `SearchItems`. Ten kod obsługuje zdarzenie <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> <xref:System.Web.UI.WebControls.DropDownList> przez wywołanie metody, która zostanie utworzona w dalszej części tego instruktażu.
+2. Dodaj następującą metodę do `SearchItems` klasy. Ten kod obsługuje <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> zdarzenie, <xref:System.Web.UI.WebControls.DropDownList> wywołując metodę, która zostanie utworzona w dalszej części tego instruktażu.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +112,12 @@ Obsłuż kontrolki na stronie aplikacji tak samo jak każda strona ASP.NET. W te
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Dodaj następującą metodę do klasy `SearchItems`. Ta metoda iteruje przez wszystkie lokacje w farmie serwerów i wyszukuje elementy utworzone lub zmodyfikowane przez bieżącego użytkownika.
+4. Dodaj następującą metodę do `SearchItems` klasy. Ta metoda iteruje przez wszystkie lokacje w farmie serwerów i wyszukuje elementy utworzone lub zmodyfikowane przez bieżącego użytkownika.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Dodaj następującą metodę do klasy `SearchItems`. Ta metoda wyświetla elementy utworzone lub zmodyfikowane przez bieżącego użytkownika w tabeli.
+5. Dodaj następującą metodę do `SearchItems` klasy. Ta metoda wyświetla elementy utworzone lub zmodyfikowane przez bieżącego użytkownika w tabeli.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -153,5 +152,5 @@ Aby dowiedzieć się więcej na temat projektowania zawartości strony programu 
 
 ## <a name="see-also"></a>Zobacz także
 
-[Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)
-[aplikacji _layouts typ strony](/previous-versions/office/aa979604(v=office.14))
+[Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md) 
+ [Typ strony _layouts aplikacji](/previous-versions/office/aa979604(v=office.14))

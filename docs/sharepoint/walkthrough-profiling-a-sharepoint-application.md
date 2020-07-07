@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Profilowanie aplikacji SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MT
+ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77277647"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017104"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profilowanie aplikacji SharePoint
   W tym instruktażu pokazano, jak za pomocą narzędzi profilowania w programie Visual Studio zoptymalizować wydajność aplikacji SharePoint. Przykładowa aplikacja jest odbiorcą zdarzeń funkcji programu SharePoint, który zawiera pętlę bezczynności, która obniża wydajność odbiorcy zdarzeń funkcji. Program Visual Studio profiler umożliwia znalezienie i wyeliminowanie najbardziej kosztownego (najwolniejszego wykonania) części projektu, zwanej również *ścieżką gorącą*.
@@ -49,9 +48,9 @@ ms.locfileid: "77277647"
 
 ### <a name="to-create-a-sharepoint-project"></a>Aby utworzyć projekt programu SharePoint
 
-1. Na pasku menu wybierz kolejno opcje **plik** > **Nowy** > **projekt** , aby wyświetlić okno dialogowe **Nowy projekt** .
+1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt** , aby wyświetlić okno dialogowe **Nowy projekt** .
 
-2. Rozwiń węzeł **SharePoint** w obszarze **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz węzeł **2010** .
+2. Rozwiń węzeł **SharePoint** w **Visual C#** lub **Visual Basic**, a następnie wybierz węzeł **2010** .
 
 3. W okienku szablony wybierz szablon **projektu programu SharePoint 2010** .
 
@@ -92,7 +91,7 @@ ms.locfileid: "77277647"
     private string webUrl = "/";
     ```
 
-4. Zastąp procedurę `FeatureActivated` poniższym kodem.
+4. Zastąp `FeatureActivated` procedurę poniższym kodem.
 
     ```vb
     Public Overrides Sub FeatureActivated(properties As SPFeatureReceiverProperties)
@@ -151,7 +150,7 @@ ms.locfileid: "77277647"
     }
     ```
 
-5. Dodaj następującą procedurę poniżej procedury `FeatureActivated`.
+5. Dodaj następującą procedurę poniżej `FeatureActivated` procedury.
 
     ```vb
 
@@ -212,7 +211,7 @@ ms.locfileid: "77277647"
      Kreator umożliwia Profilowanie aplikacji na serwerze, wyświetla okno **Eksplorator wydajności** , a następnie kompiluje, wdraża i uruchamia aplikację SharePoint.
 
 ## <a name="run-the-sharepoint-application"></a>Uruchom aplikację SharePoint
- Aktywuj funkcję w programie SharePoint, wyzwalając kod zdarzenia `FeatureActivation` do uruchomienia.
+ Aktywuj funkcję w programie SharePoint, wyzwalając `FeatureActivation` Kod zdarzenia do uruchomienia.
 
 ### <a name="to-run-the-sharepoint-application"></a>Aby uruchomić aplikację SharePoint
 
@@ -222,7 +221,7 @@ ms.locfileid: "77277647"
 
 3. Na liście **funkcje** wybierz przycisk **Aktywuj** obok pozycji **ProfileTest Feature1**.
 
-     Gdy to zrobisz, występuje pauza z powodu wywołania bezczynnej pętli w funkcji `FeatureActivated`.
+     Po wykonaniu tej czynności występuje pauza z powodu wywołania bezczynnej pętli w `FeatureActivated` funkcji.
 
 4. Na pasku **szybkiego uruchamiania** wybierz pozycję **listy** , a następnie **na liście listy** wybierz pozycję **Anonsy**.
 
@@ -237,17 +236,17 @@ ms.locfileid: "77277647"
 
 ### <a name="to-view-and-interpret-the-profile-results"></a>Aby wyświetlać i interpretować wyniki profilu
 
-1. W obszarze **funkcje wykonujące najwięcej poszczególnych zadań** w przykładowym raporcie profilowania należy zauważyć, że `TimeCounter` znajduje się w górnej części listy.
+1. W oknie funkcje, w której znajduje się **najbardziej szczególna część pracy** przykładowego raportu profilowania, Zauważ, że `TimeCounter` znajduje się w górnej części listy.
 
-     Ta lokalizacja wskazuje, że `TimeCounter` była jedną z funkcji o najwyższej liczbie próbek, co oznacza, że jest to jeden z największych wąskich gardeł wydajności aplikacji. Ta sytuacja nie jest jednak zaskakujące, ponieważ została celowo zaprojektowana w celach demonstracyjnych.
+     Ta lokalizacja wskazuje, że `TimeCounter` była jedną z funkcji o najwyższej liczbie próbek, co oznacza, że jest to jeden z największych wąskich gardeł w aplikacji. Ta sytuacja nie jest jednak zaskakujące, ponieważ została celowo zaprojektowana w celach demonstracyjnych.
 
-2. W obszarze **funkcje wykonujące najwięcej poszczególnych zadań** wybierz łącze `ProcessRequest`, aby wyświetlić dystrybucję kosztów dla funkcji `ProcessRequest`.
+2. W obszarze **funkcje wykonujące najwięcej poszczególnych zadań** wybierz `ProcessRequest` łącze, aby wyświetlić dystrybucję kosztów dla `ProcessRequest` funkcji.
 
-     W sekcji **wywołane funkcje** dla `ProcessRequest`należy zauważyć, że funkcja **FeatureActiviated** jest wyświetlana jako najbardziej kosztowna funkcja.
+     **Called functions** `ProcessRequest` Zwróć uwagę, że funkcja **FeatureActiviated** jest wyświetlana w sekcji o nazwie Functions jako najbardziej kosztownej nazwie funkcji.
 
 3. W sekcji **wywoływane funkcje** wybierz przycisk **FeatureActivated** .
 
-     W sekcji **o nazwie** Functions for **FeatureActivated**funkcja `TimeCounter` jest wyświetlana jako najbardziej kosztowna funkcja. W okienku **Widok kodu funkcji** wyróżniony kod (`TimeCounter`) jest punktem aktywnym i wskazuje, gdzie jest wymagana korekta.
+     W sekcji **o nazwie** Functions for **FeatureActivated** `TimeCounter` Funkcja jest wyświetlana jako najbardziej kosztowna funkcja. W okienku **Widok kodu funkcji** wyróżniony kod ( `TimeCounter` ) jest punktem aktywnym i wskazuje, gdzie jest wymagana korekta.
 
 4. Zamknij przykładowy raport profilowania.
 
@@ -258,7 +257,7 @@ ms.locfileid: "77277647"
 
 ### <a name="to-fix-the-code-and-reprofile-the-application"></a>Aby naprawić kod i zmienić profil aplikacji
 
-1. W kodzie odbiorniku zdarzenia funkcji Dodaj komentarz do wywołania metody `TimeCounter` w `FeatureActivated`, aby zapobiec jego wywołaniu.
+1. W kodzie odbiorcy zdarzeń funkcji należy dodać komentarz do `TimeCounter` wywołania metody w `FeatureActivated` celu uniemożliwienia jego wywołania.
 
 2. Zapisz projekt.
 
@@ -272,7 +271,7 @@ ms.locfileid: "77277647"
 
      Funkcja powinna aktywować znacznie szybciej, gdy wywołanie do pętli bezczynności zostało wyeliminowane. Przykładowy raport profilowania powinien odzwierciedlać ten sposób.
 
-## <a name="see-also"></a>Zobacz też
-- [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)
-- [Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)
+## <a name="see-also"></a>Zobacz także
+- [Przegląd sesji wydajności](../profiling/performance-session-overview.md)
+- [Początkujący Przewodnik dotyczący profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md)
 - [Znajdowanie wąskich gardeł aplikacji za pomocą programu Visual Studio profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

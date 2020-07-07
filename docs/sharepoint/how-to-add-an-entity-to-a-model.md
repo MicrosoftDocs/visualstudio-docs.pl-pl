@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie jednostki do modelu | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - EntityTool
 dev_langs:
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a7ec1eab5cdcf2e415a4803c51c9da91be29c9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: b80f39494b98014a75d4265f228906be2ff45188
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985243"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016673"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Instrukcje: Dodawanie jednostki do modelu
   Aby utworzyć jednostkę, Dodaj kontrolkę jednostki z **przybornika** programu Visual Studio do projektanta łączności danych biznesowych (BDC).

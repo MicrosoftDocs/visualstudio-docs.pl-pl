@@ -1,7 +1,7 @@
 ---
-title: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild
+title: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu elementów docelowych programu MSBuild
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,22 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401510"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016888"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild
-  Przy użyciu docelowych elementów MSBuild w wierszu polecenia, można dostosować, jak program Visual Studio tworzy pliki pakietu programu SharePoint ( *.wsp*). Na przykład można dostosować właściwości programu MSBuild, aby zmienić katalog pośredni pakowania i grup elementów MSBuild, określających wyliczany plików.
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu elementów docelowych MSBuild
+  Za pomocą obiektów docelowych programu MSBuild w wierszu polecenia można dostosować sposób, w jaki program Visual Studio tworzy pliki pakietu SharePoint (*wsp*). Na przykład można dostosować właściwości programu MSBuild, aby zmienić katalog pośredni pakietu i grupy elementów MSBuild, które określają pliki wyliczane.
 
-## <a name="customize-and-run-msbuild-targets"></a>Dostosowywanie i uruchamianie elementów docelowych MSBuild
- Możesz dostosować BeforeLayout i AfterLayout obiekty docelowe, po wykonaniu zadań przed układu pakietu, takie jak dodawanie, usuwanie lub modyfikowanie plików, które zostanie umieszczony w pakiecie.
+## <a name="customize-and-run-msbuild-targets"></a>Dostosowywanie i uruchamianie obiektów docelowych programu MSBuild
+ W przypadku dostosowania obiektów docelowych BeforeLayout i AfterLayout można wykonywać zadania przed układem pakietu, takie jak dodawanie, usuwanie lub modyfikowanie plików, które będą spakowane.
 
-#### <a name="to-customize-the-beforelayout-target"></a>Aby dostosować docelowej BeforeLayout
+#### <a name="to-customize-the-beforelayout-target"></a>Aby dostosować element docelowy BeforeLayout
 
-1. Otwórz edytora, takiego jak Notatnik, a następnie dodaj następujący kod.
+1. Otwórz Edytor, taki jak Notatnik, a następnie Dodaj następujący kod.
 
    ```xml
    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -37,15 +36,15 @@ ms.locfileid: "66401510"
    </Project>
    ```
 
-    W tym przykładzie wyświetla komunikat przed opakowanie ten element docelowy.
+    Ten przykład wyświetla komunikat przed opakowaniem tego obiektu docelowego.
 
-2. Nadaj plikowi nazwę **CustomLayout.SharePoint.targets**, a następnie zapisz go w folderze projektu programu SharePoint.
+2. Nazwij plik **CustomLayout. SharePoint. targets**, a następnie zapisz go w folderze dla projektu programu SharePoint.
 
-3. Otwórz projekt, otwórz jego menu skrótów, a następnie wybierz **Zwolnij projekt**.
+3. Otwórz projekt, otwórz jego menu skrótów, a następnie wybierz polecenie **Zwolnij projekt**.
 
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Edytuj**  *\<nazwa_projektu > .vbproj* lub **Edytuj**  *\<Nazwa_projektu > .csproj*.
+4. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz **Edytuj** * \<ProjectName> . vbproj* lub **Edytuj** * \<ProjectName> . csproj*.
 
-5. Po `Import` wiersz w pobliżu końca pliku projektu, Dodaj następujący wiersz.
+5. Po `Import` wierszu blisko końca pliku projektu Dodaj następujący wiersz.
 
    ```xml
    <Import Project="CustomLayout.SharePoint.targets" />
@@ -53,17 +52,17 @@ ms.locfileid: "66401510"
 
 6. Zapisz i zamknij plik projektu.
 
-7. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Załaduj ponownie projekt**.
+7. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Załaduj ponownie projekt**.
 
-   Podczas publikowania projektu, zostanie wyświetlony komunikat w danych wyjściowych przed rozpoczęciem tworzenia pakietów.
+   Podczas publikowania projektu, komunikat pojawi się w danych wyjściowych przed rozpoczęciem pakowania.
 
-#### <a name="to-customize-the-afterlayout-target"></a>Aby dostosować docelowej AfterLayout
+#### <a name="to-customize-the-afterlayout-target"></a>Aby dostosować element docelowy AfterLayout
 
-1. Na pasku menu wybierz **pliku** > **Otwórz** > **pliku**.
+1. Na pasku menu wybierz **plik**  >  **Otwórz**  >  **plik**.
 
-2. W **Otwórz plik** okno dialogowe, przejdź do folderu projektu, wybierz plik CustomLayout.target, a następnie wybierz **Otwórz** przycisku.
+2. W oknie dialogowym **Otwórz plik** przejdź do folderu projektu, wybierz plik CustomLayout. Target, a następnie wybierz przycisk **Otwórz** .
 
-3. Tuż przed `</Project>` tag, Dodaj następujący kod:
+3. Tuż przed `</Project>` tagiem Dodaj następujący kod:
 
    ```xml
    <Target Name="AfterLayout">
@@ -71,13 +70,13 @@ ms.locfileid: "66401510"
    </Target>
    ```
 
-    W tym przykładzie wyświetla komunikat po ten element docelowy jest spakowany.
+    Ten przykład wyświetla komunikat po spakowaniu tego obiektu docelowego.
 
-4. Zapisz i zamknij plik elementów docelowych.
+4. Zapisz i zamknij plik targets.
 
 5. Uruchom ponownie program Visual Studio, a następnie otwórz projekt.
 
-   Podczas publikowania projektu, pojawi się komunikat BeforeLayout przed rozpoczęciem tworzenia pakietów, a AfterLayout komunikat jest wyświetlany po zakończeniu tworzenia pakietów.
+   Po opublikowaniu projektu komunikat BeforeLayout jest wyświetlany przed rozpoczęciem tworzenia pakietu, a po zakończeniu tworzenia pakietu pojawi się komunikat AfterLayout.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

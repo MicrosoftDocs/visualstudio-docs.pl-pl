@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Tworzenie obsługiwanego odbiornika | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie odbiorcy zdarzeń | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
 dev_langs:
@@ -17,57 +17,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 26d8c9f433fad051716b6ebd37e3d1f3b3f9f4eb
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966760"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016926"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Instrukcje: Tworzenie obsługiwanego odbiornika
-  Tworząc *odbiorcy zdarzeń*, mogą odpowiadać, gdy użytkownik korzysta z elementów programu SharePoint, takich jak listy lub elementów listy. Na przykład kod w odbiorcy zdarzeń mogą być wyzwalane, gdy użytkownik zmienia kalendarza lub usuwa nazwę z listy kontaktów. Korzystając z tego tematu, można poznać sposoby dodawania odbiorców zdarzenia do wystąpienia listy.
+# <a name="how-to-create-an-event-receiver"></a>Instrukcje: Tworzenie odbiorcy zdarzeń
+  Tworząc *odbiorcy zdarzeń*, możesz odpowiedzieć, gdy użytkownik współdziała z elementami programu SharePoint, takimi jak listy lub elementy listy. Na przykład kod w odbiorcy zdarzeń może być wyzwalany, gdy użytkownik zmieni Kalendarz lub usunie nazwę z listy kontaktów. Postępując zgodnie z tym tematem, można dowiedzieć się, jak dodać odbiorcę zdarzeń do wystąpienia listy.
 
- Aby wykonać te kroki, musisz zainstalować [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i obsługiwane wersje systemu Windows i programu SharePoint. Ponieważ w tym przykładzie wymaga projektu programu SharePoint, należy również wykonać procedurę opisaną w temacie [instruktażu: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+ Aby wykonać te czynności, musisz mieć zainstalowane [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i obsługiwane wersje systemu Windows i programu SharePoint. Ponieważ ten przykład wymaga projektu programu SharePoint, należy również wykonać procedurę opisaną w temacie [Przewodnik: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-## <a name="adding-an-event-receiver"></a>Dodanie odbiorcy zdarzeń
- Projekt, który został utworzony w [instruktażu: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) zawiera kolumny niestandardowej witryny, listy niestandardowej i typu zawartości. W poniższej procedurze będzie rozwinąć tego projektu, dodając procedurę obsługi zdarzenia prostego (odbiorca zdarzenia) do wystąpienia listy, aby pokazać sposób obsługi zdarzeń występujących w elementach programu SharePoint, takich jak listy.
+## <a name="adding-an-event-receiver"></a>Dodawanie odbiorcy zdarzeń
+ Projekt utworzony w [przewodniku: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) zawiera niestandardowe kolumny witryny, listę niestandardową i typ zawartości. Poniższa procedura umożliwia rozwinięcie tego projektu przez dodanie prostego programu obsługi zdarzeń (odbiorcy zdarzeń) do wystąpienia listy w celu pokazania sposobu obsługi zdarzeń występujących w elementach programu SharePoint, takich jak listy.
 
-#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Aby dodać odbiorca zdarzenia do wystąpienia listy
+#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Aby dodać odbiorcę zdarzeń do wystąpienia listy
 
-1. Otwórz projekt, który został utworzony w [instruktażu: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1. Otwórz projekt, który został utworzony w [przewodniku: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-2. W **Eksploratora rozwiązań**, wybierz węzeł projektu programu SharePoint, która nosi nazwę **Clinic**.
+2. W **Eksplorator rozwiązań**wybierz węzeł projektu programu SharePoint o nazwie **Klinika**.
 
-3. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+3. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-4. W obszarze **Visual C#** lub **języka Visual Basic**, rozwiń węzeł **SharePoint** węzła, a następnie wybierz **2010** elementu.
+4. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz element **2010** .
 
-5. W **szablony** okienku wybierz **odbiorcy zdarzeń**, nadaj jej nazwę **TestEventReceiver1**, a następnie wybierz **OK** przycisku.
+5. W okienku **Szablony** wybierz pozycję **Odbiorca zdarzenia**, nadaj jej nazwę **TestEventReceiver1**, a następnie wybierz przycisk **OK** .
 
-     **Kreator ustawień niestandardowych SharePoint** pojawia się.
+     Zostanie wyświetlony **Kreator dostosowania programu SharePoint** .
 
-6. W **jakiego typu odbiorcę zdarzeń chcesz wykonać?** wybierz **zdarzenia elementu listy**.
+6. Na liście żądany **Typ odbiorcy zdarzeń** wybierz pozycję **Wyświetl zdarzenia elementów**.
 
-7. W **jaki element ma być źródła zdarzeń?** wybierz **pacjentów (Clinic\Patients)**.
+7. Na liście **element, który powinien być źródłem zdarzenia?** wybierz pozycję **pacjenci (Clinic\Patients)**.
 
-8. W **obsługę następujących zdarzeń** listy, zaznacz pole wyboru obok pozycji **dodano element**, a następnie wybierz **Zakończ** przycisku.
+8. Na liście **Obsługuj poniższe zdarzenia** zaznacz pole wyboru obok **elementu**, a następnie wybierz przycisk **Zakończ** .
 
-     Plik kodu dla nowego odbiorcę zdarzeń zawiera jedną metodę o nazwie `ItemAdded`. W następnym kroku dodasz kod do tej metody, aby każdy kontakt będzie miała Scott Brown domyślnie.
+     Plik kodu dla nowego odbiorcy zdarzeń zawiera pojedynczą metodę o nazwie `ItemAdded` . W następnym kroku dodasz kod do tej metody, aby każdy kontakt miał domyślnie nazwę Scott Brown.
 
-9. Zastąp istniejące `ItemAdded` metody za pomocą następujących kodu, a następnie wybierz **F5** klucza:
+9. Zastąp istniejącą `ItemAdded` metodę poniższym kodem, a następnie wybierz klawisz **F5** :
 
      [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
      [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]
 
-     Uruchamia kod, a witryna jest wyświetlana w przeglądarce sieci web programu SharePoint.
+     Kod zostanie uruchomiony, a witryna programu SharePoint zostanie wyświetlona w przeglądarce sieci Web.
 
-10. Na pasku szybkiego uruchamiania wybierz **pacjentów** łącze, a następnie wybierz **Dodaj nowy element** łącza.
+10. Na pasku szybkiego uruchamiania wybierz łącze **pacjentów** , a następnie wybierz link **Dodaj nowy element** .
 
      Zostanie otwarty formularz wprowadzania dla nowych elementów.
 
-11. Wprowadź dane w polach, a następnie wybierz **Zapisz** przycisku.
+11. Wprowadź dane w polach, a następnie wybierz przycisk **Zapisz** .
 
-     Po wybraniu **Zapisz** przycisku **nazwa pacjenta** kolumny automatycznie aktualizuje nazwę Scott Brown.
+     Po wybraniu przycisku **Zapisz** kolumna **Nazwa pacjenta** zostanie automatycznie zaktualizowana do nazwy Scott Brown.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dodawanie właściwości niestandardowej | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie właściwości niestandardowej | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
@@ -17,34 +17,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556860"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017082"
 ---
 # <a name="how-to-add-a-custom-property"></a>Instrukcje: Dodawanie właściwości niestandardowej
-  Można dodać właściwości niestandardowe do modelu przy użyciu **Edytor właściwości**. Możesz uzyskać dostęp tych właściwości w kodzie, aby pobrać informacje, takie jak parametry połączenia i inne dane w czasie wykonywania.
+  Do modelu można dodać właściwości niestandardowe przy użyciu **edytora właściwości**. Możesz uzyskać dostęp do tych właściwości w kodzie, aby pobrać informacje takie jak parametry połączenia i inne dane w czasie wykonywania.
 
 ### <a name="to-add-a-custom-property"></a>Aby dodać właściwość niestandardową
 
-1. W **Eksplorator BDC**, wybierz węzeł, który reprezentuje element modelu, do której chcesz zastosować właściwości niestandardowej.
+1. W **Eksploratorze BDC**wybierz węzeł, który reprezentuje element modelu, do którego chcesz zastosować właściwość niestandardową.
 
-2. Na pasku menu wybierz **widoku** > **okno właściwości**.
+2. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
 
-3. W **właściwości** oknie Wybierz **właściwościami niestandardowymi** właściwości, a następnie wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ASP. Projektant Mobile NET elipsy")).
+3. W oknie **Właściwości** wybierz właściwość **właściwości niestandardowe** , a następnie wybierz przycisk wielokropka (![ASP.net Mobile Designer Elipsa](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")).
 
-     **Edytor właściwości** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Edytor właściwości** .
 
-4. W polu tekstowym w **nazwa** kolumny, określ nazwę właściwości.
+4. W polu tekstowym w kolumnie **Nazwa** Określ nazwę właściwości.
 
-5. Aby uzyskać **typu** pole właściwości niestandardowej, wybierz odpowiedni typ danych.
+5. Dla pola **Typ** właściwości niestandardowej wybierz odpowiedni typ danych.
 
-6. Dla **wartość** pole właściwości niestandardowej, określ wartość, a następnie wybierz **OK** przycisku.
+6. Dla pola **wartość** właściwości niestandardowej Określ wartość, a następnie wybierz przycisk **OK** .
 
 ## <a name="see-also"></a>Zobacz także
-- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Tworzenie modelu łączności danych firmy](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Integrowanie danych firmowych z programem SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

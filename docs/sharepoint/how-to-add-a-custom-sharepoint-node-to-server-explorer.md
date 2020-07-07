@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dodawanie niestandardowego węzła SharePoint do Eksploratora serwera | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie niestandardowego węzła programu SharePoint do Eksplorator serwera | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ece5c207a0244a55078ef44f9156e7e95cedf5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556692"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017052"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Instrukcje: Dodawanie niestandardowego węzła SharePoint do Eksploratora serwera
-  Możesz dodać niestandardowe węzły w obszarze **połączeń SharePoint** w węźle **Eksploratora serwera**. Jest to przydatne, jeśli chcesz wyświetlić dodatkowe składniki programu SharePoint, które nie są wyświetlane w **Eksploratora serwera** domyślnie. Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Instrukcje: Dodawanie niestandardowego węzła programu SharePoint do Eksplorator serwera
+  Węzły niestandardowe można dodać w węźle **połączenia programu SharePoint** w **Eksplorator serwera**. Jest to przydatne, gdy chcesz wyświetlić dodatkowe składniki programu SharePoint, które nie są domyślnie wyświetlane w **Eksplorator serwera** . Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [węzeł połączenia SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
- Aby dodać niestandardowy węzeł, najpierw należy utworzyć klasę, która definiuje nowy węzeł. Następnie utwórz rozszerzenie, które dodaje węzeł jako element podrzędny istniejący węzeł.
+ Aby dodać węzeł niestandardowy, najpierw Utwórz klasę, która definiuje nowy węzeł. Następnie utwórz rozszerzenie, które dodaje węzeł jako element podrzędny istniejącego węzła.
 
 ### <a name="to-define-the-new-node"></a>Aby zdefiniować nowy węzeł
 
@@ -31,71 +30,71 @@ ms.locfileid: "62556692"
 
 2. Dodaj odwołania do następujących zestawów:
 
-    - Microsoft.VisualStudio.SharePoint
+    - Microsoft. VisualStudio. SharePoint
 
-    - Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+    - Microsoft. VisualStudio. SharePoint. Explorer. Extensions
 
-    - System.ComponentModel.Composition
+    - System. ComponentModel. kompozycji
 
-    - System.Drawing
+    - System. Drawing
 
-3. Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interfejsu.
+3. Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interfejs.
 
 4. Dodaj następujące atrybuty do klasy:
 
-    - <xref:System.ComponentModel.Composition.ExportAttribute>. Ten atrybut umożliwia środowisku Visual Studio wykrycie i załadowanie swoje <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> typu konstruktora atrybutu.
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. Ten atrybut umożliwia programowi Visual Studio odnajdywanie i ładowanie <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Typ do konstruktora atrybutu.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. W definicji węzła ten atrybut określa identyfikator ciągu dla nowego węzła. Zalecane jest użycie formatu *nazwa firmy*. *Nazwa węzła* aby upewnić się, że wszystkie węzły mają unikatowy identyfikator.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. W definicji węzła ten atrybut określa identyfikator ciągu dla nowego węzła. Zalecamy użycie formatu *Nazwa firmy*. *nazwa węzła* , aby upewnić się, że wszystkie węzły mają unikatowy identyfikator.
 
-5. W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> metody, użyj członkowie *typeDefinition* parametru, aby skonfigurować zachowanie nowego węzła. Ten parametr jest <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> obiektu, który zapewnia dostęp do zdarzenia, zdefiniowany w <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interfejsu.
+5. W implementacji <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> metody należy użyć elementów członkowskich parametru *typeDefinition* , aby skonfigurować zachowanie nowego węzła. Ten parametr jest <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> obiektem, który zapewnia dostęp do zdarzeń zdefiniowanych w <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interfejsie.
 
-     Poniższy przykład kodu demonstruje sposób definiowania nowego węzła. W tym przykładzie przyjęto założenie, że projekt zawiera ikony o nazwie CustomChildNodeIcon jako zasobu osadzonego.
+     Poniższy przykład kodu demonstruje sposób definiowania nowego węzła. W tym przykładzie przyjęto założenie, że projekt zawiera ikonę o nazwie CustomChildNodeIcon jako zasób osadzony.
 
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#6)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#6)]
 
-### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>Aby dodać nowy węzeł jako element podrzędny istniejący węzeł
+### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>Aby dodać nowy węzeł jako element podrzędny istniejącego węzła
 
-1. W tym samym projekcie jako swojej definicji węzła, należy utworzyć klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interfejsu.
+1. W tym samym projekcie, w którym znajduje się definicja węzła, Utwórz klasę, która implementuje <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interfejs.
 
-2. Dodaj <xref:System.ComponentModel.Composition.ExportAttribute> do klasy atrybutu. Ten atrybut umożliwia środowisku Visual Studio wykrycie i załadowanie swoje <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> typu konstruktora atrybutu.
+2. Dodaj <xref:System.ComponentModel.Composition.ExportAttribute> atrybut do klasy. Ten atrybut umożliwia programowi Visual Studio odnajdywanie i ładowanie <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Typ do konstruktora atrybutu.
 
-3. Dodaj <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> do klasy atrybutu. W rozszerzeniu węzła ten atrybut określa identyfikator ciągu dla typu węzła, który ma zostać rozszerzony.
+3. Dodaj <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> atrybut do klasy. W rozszerzeniu węzła ten atrybut określa identyfikator ciągu dla typu węzła, który ma zostać rozszerzona.
 
-     Aby określić typów wbudowanego węzła przez program Visual Studio, należy przekazać jeden z następujących wartości wyliczenia do konstruktora atrybutu:
+     Aby określić wbudowane typy węzłów dostarczone przez program Visual Studio, Przekaż jedną z następujących wartości wyliczenia do konstruktora atrybutów:
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Użyj tych wartości, aby określić węzeł połączenia witryny (węzły, które wyświetlają adresów URL witryn), lokacji węzłów lub wszystkich innych węzłów nadrzędnych w **Eksploratora serwera**.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Użyj tych wartości, aby określić węzły połączenia lokacji (węzły, które wyświetlają adresy URL lokacji), węzły lokacji lub wszystkie węzły nadrzędne w **Eksplorator serwera**.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Aby określić jedną z wbudowanych węzły, które reprezentują poszczególnych składników w witrynie programu SharePoint, takich jak węzeł, który reprezentuje listę, pole lub typ zawartości, należy użyć tych wartości.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Użyj tych wartości, aby określić jeden z wbudowanych węzłów, które reprezentują poszczególne składniki w witrynie programu SharePoint, takie jak węzeł, który reprezentuje listę, pole lub typ zawartości.
 
-4. W danej implementacji <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> metody, uchwyt <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> zdarzenia <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> parametru.
+4. W implementacji <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> metody należy obsłużyć <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> zdarzenie <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> parametru.
 
-5. W <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> procedura obsługi zdarzeń, Dodaj nowy węzeł do kolekcji węzłów podrzędnych <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> obiektu uwidocznionego przez parametr argumenty zdarzenia.
+5. W programie <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> obsługi zdarzeń Dodaj nowy węzeł do kolekcji węzłów podrzędnych <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> obiektu, który jest udostępniany przez parametr argumenty zdarzenia.
 
-     Poniższy przykład kodu demonstruje sposób dodawania nowego węzła jako element podrzędny węzła witryny programu SharePoint w **Eksploratora serwera**.
+     Poniższy przykład kodu pokazuje, jak dodać nowy węzeł jako element podrzędny węzła witryny programu SharePoint w **Eksplorator serwera**.
 
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]
 
-## <a name="complete-example"></a>Kompletny przykład
- Poniższy przykład kodu zawiera kompletny kod, aby zdefiniować prostą węzeł i dodaj go jako element podrzędny węzła witryny programu SharePoint w **Eksploratora serwera**.
+## <a name="complete-example"></a>Pełny przykład
+ Poniższy przykład kodu zawiera kompletny kod definiujący prosty węzeł i dodaj go jako element podrzędny węzła witryny programu SharePoint w **Eksplorator serwera**.
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]
 
 ## <a name="compiling-the-code"></a>Kompilowanie kodu
- W tym przykładzie przyjęto założenie, że projekt zawiera ikony o nazwie CustomChildNodeIcon jako zasobu osadzonego. Ten przykład wymaga także odwołania do następujących zestawów:
+ W tym przykładzie przyjęto założenie, że projekt zawiera ikonę o nazwie CustomChildNodeIcon jako zasób osadzony. Ten przykład wymaga również odwołań do następujących zestawów:
 
-- Microsoft.VisualStudio.SharePoint
+- Microsoft. VisualStudio. SharePoint
 
-- System.ComponentModel.Composition
+- System. ComponentModel. kompozycji
 
-- System.Drawing
+- System. Drawing
 
-## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia
- Aby wdrożyć **Eksploratora serwera** rozszerzenia, Utwórz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
+ Aby wdrożyć rozszerzenie **Eksplorator serwera** , Utwórz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Instrukcje: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
-- [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Instrukcje: zwiększanie węzła programu SharePoint w Eksplorator serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
+- [Przewodnik: rozszerzona Eksplorator serwera do wyświetlania składników Web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

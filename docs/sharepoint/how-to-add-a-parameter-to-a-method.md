@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie parametru do metody | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb1a1c1e8f11ac6daa46f9fe1468a1ff3509e135
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986237"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016714"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Instrukcje: Dodawanie parametru do metody
   Użyj parametru, aby przekazać informacje do metody lub zwrócić informacje z metody. Wszystkie metody muszą mieć co najmniej jeden parametr. Aby uzyskać więcej informacji na temat projektowania parametru do obsługi typu metody, którą chcesz utworzyć, zobacz [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986237"
 
 1. Dodaj metodę do jednostki.
 
-2. Na pasku menu wybierz opcję **wyświetl** > inne **Szczegóły metody usługi BDC** **systemu Windows** > .
+2. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC**systemu Windows.
 
      Zostanie otwarte okno **Szczegóły metody BDC** . Aby uzyskać więcej informacji, zobacz [Omówienie narzędzi projektowania modelu usługi BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -43,7 +42,7 @@ ms.locfileid: "72986237"
 
      Nowy parametr zostanie wyświetlony poniżej węzła **Parameters** .
 
-5. Na pasku menu wybierz polecenie **wyświetl** > **okno właściwości**.
+5. Na pasku menu wybierz **View**  >  **okno właściwości**widoku.
 
 6. W oknie **Właściwości** ustaw właściwość **Nazwa** na dowolną nazwę, która ma sens. Na przykład jeśli metoda zwróci klientów, można nazwać metodę **Getcustomerss**.
 

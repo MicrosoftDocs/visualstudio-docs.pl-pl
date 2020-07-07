@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie skojarzenia między jednostkami | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981833"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016932"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Instrukcje: Tworzenie skojarzenia między jednostkami
   Możesz definiować relacje między jednostkami w modelu łączności danych biznesowych (BDC), tworząc skojarzenia. Program Visual Studio generuje metody zapewniające odbiorcom modelu informacje o każdym skojarzeniu. Te metody mogą być używane przez składniki Web Part programu SharePoint, listy lub aplikacje niestandardowe do wyświetlania relacji danych w interfejsie użytkownika.
@@ -45,7 +44,7 @@ ms.locfileid: "72981833"
 
     1. W kolumnie **identyfikator źródła** tabeli **Mapowanie identyfikatora** wybierz identyfikator obok każdego zgodnego deskryptora typu, który pojawia się w kolumnie **pole** .
 
-         Na przykład w kolumnie **identyfikator źródła** wybierz `ContactID` obok deskryptora typu `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` i deskryptora typu `ReadItem.salesOrder.SalesOrder.ContactID`.
+         Na przykład w kolumnie **identyfikator źródła** wybierz pozycję `ContactID` obok `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` deskryptora typu i `ReadItem.salesOrder.SalesOrder.ContactID` deskryptora typu.
 
 4. Jeśli chcesz utworzyć skojarzenie z obcym kluczem, usuń zaznaczenie pola wyboru **to skojarzenie klucza obcego** .
 

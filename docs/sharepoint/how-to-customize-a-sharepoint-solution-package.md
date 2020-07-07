@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dostosowywanie pakietu rozwiązania programu SharePoint | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
 - VS.SharePointTools.RAD.PackageDesigner.Manifest
@@ -17,75 +17,74 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 77b66160d489f711b5588fdcdd024d13769d734f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420199"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016874"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint
-  W Projektancie pakietu można użyć do tworzenia i dostosowywania pakietu (*.wsp*). Na przykład można dodać elementów projektu programu SharePoint i funkcje, określić, czy serwer sieci Web jest zresetować po wdrożeniu rozwiązania i Ustaw typ serwera wdrożenia.
+  Można użyć projektanta pakietów do tworzenia i dostosowywania pakietu (*. wsp*). Można na przykład dodać elementy i funkcje projektu programu SharePoint, określić, czy serwer sieci Web ma być resetowany po wdrożeniu rozwiązania, i ustawić typ serwera wdrażania.
 
 ## <a name="open-the-package-designer"></a>Otwórz projektanta pakietów
 
 #### <a name="to-open-the-package-designer"></a>Aby otworzyć projektanta pakietów
 
-- W **Eksploratora rozwiązań**, kliknij dwukrotnie **pakietu**, lub wybierz **Projektant widoków** menu skrótów dla **pakietu**.
+- W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **pakiet**lub wybierz pozycję **Widok projektanta** w menu skrótów **pakietu**.
 
-## <a name="view-the-packaged-manifestffile"></a>Wyświetl spakowanych manifestfFile
- W Projektancie pakietu można użyć do zmodyfikowania, a następnie wygenerować pakowanego pliku manifestu. Następnie można wyświetlić kod XML dla tego pliku w programie Visual Studio.
+## <a name="view-the-packaged-manifestffile"></a>Wyświetl spakowany manifestfFile
+ Za pomocą projektanta pakietów można modyfikować i generować spakowany plik manifestu. Następnie można wyświetlić kod XML dla tego pliku w programie Visual Studio.
 
 #### <a name="to-view-the-xml-source-file"></a>Aby wyświetlić plik źródłowy XML
 
-1. W **projektancie pakietu**, wybierz **manifestu**.
+1. W **projektancie pakietów**wybierz pozycję **manifest**.
 
-#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Aby wyświetlić spakowany plik manifestu za pomocą Eksploratora rozwiązań
+#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Aby wyświetlić spakowany plik manifestu za pomocą Eksplorator rozwiązań
 
-1. W **Eksploratora rozwiązań**, wybierz **Pokaż wszystkie pliki**.
+1. W **Eksplorator rozwiązań**wybierz opcję **Pokaż wszystkie pliki**.
 
-2. Rozwiń węzeł pakietu, rozwiń Package.package, a następnie otwórz *Package.Template.xml* pliku.
+2. Rozwiń węzeł pakiet, rozwiń pozycję pakiet. pakiet, a następnie otwórz plik *Package.Template.xml* .
 
     > [!NOTE]
-    > Po otwarciu pliku manifestu XML dla szablonu pakietu, pliki są automatycznie zweryfikowana, i można zignorować te ostrzeżenia, które pojawiają się w oknie Lista błędów.
+    > Po otwarciu pliku XML manifestu dla szablonu pakietu pliki są automatycznie sprawdzane i można zignorować ostrzeżenia, które pojawiają się w oknie Lista błędów.
 
 ## <a name="change-the-manifest-template"></a>Zmiana szablonu manifestu
- Możesz zmienić kod XML dla pakowanego pliku manifestu w edytorze XML programu Visual Studio lub w okienku manifestu szablonu. Wszelkie zmiany w kodzie XML są scalane w pakowanego pliku manifestu pakietu.
+ Kod XML dla spakowanego pliku manifestu można zmienić w edytorze XML programu Visual Studio lub w okienku szablonu manifestu. Wszelkie zmiany w kodzie XML są scalane do spakowanego pliku manifestu pakietu.
 
-#### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Aby zmienić szablon manifestu za pomocą edytora XML
+#### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Aby zmienić szablon manifestu przy użyciu edytora XML
 
-1. W **projektancie pakietu**, wybierz **manifestu** kartę, a następnie rozwiń **opcje edytowania** węzła, a następnie wybierz **otwarty w edytorze XML** łącze.
+1. W **projektancie pakietów**wybierz kartę **manifest** , rozwiń węzeł **Opcje edycji** , a następnie wybierz łącze **Otwórz w edytorze XML** .
 
-     Zmiany w pliku XML są scalane w spakowanym pliku manifestu.
+     Zmiany w kodzie XML są scalane w spakowany plik manifestu.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Aby zmienić szablon manifestu przy użyciu okienka szablonu manifestu
 
-1. W **projektancie pakietu**, wybierz **manifestu** kartę, a następnie rozwiń **opcje edytowania** węzeł, a następnie zmień plik XML, który jest wyświetlany w okienku manifestu szablonu.
+1. W **projektancie pakietów**wybierz kartę **manifest** , rozwiń węzeł **Opcje edycji** , a następnie Zmień kod XML, który pojawia się w okienku szablon manifestu.
 
-     Zmiany w pliku XML są wyświetlane w okienku **Podgląd spakowanego manifestu**.
+     Zmiany w kodzie XML pojawiają się w **wersji zapoznawczej okienka spakowanego manifestu** .
 
-## <a name="overwrite-the-packaged-manifest-file"></a>Zastąpienie spakowanego pliku manifestu
- Można wyłączyć projektanta pakietów i utworzyć *manifest.xml* plik ręcznie. Aby wykonać tę procedurę, po raz pierwszy bieżące ustawienia w Projektancie pakietu są zapisywane w pliku XML pakietu szablonu. Następnie można zmodyfikować lub zastąpić ten kod XML.
+## <a name="overwrite-the-packaged-manifest-file"></a>Zastąp spakowany plik manifestu
+ Można wyłączyć projektanta pakietów i ręcznie utworzyć plik *manifest.xml* . Po pierwszym wykonaniu tej procedury bieżące ustawienia w projektancie pakietów są zapisywane w pliku XML szablonu pakietu. Następnie można zmodyfikować lub zastąpić kod XML.
 
 > [!NOTE]
-> Jeśli dodawanie lub usuwanie elementów projektu programu SharePoint i funkcji w pliku XML, gdy projektant pakietu jest wyłączony, nie są spakowane te elementy projektu i funkcje.
+> Jeśli dodasz lub usuniesz elementy projektu programu SharePoint i funkcje w pliku XML, podczas gdy projektant pakietów jest wyłączony, te elementy i funkcje projektu nie są spakowane.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Aby zastąpić spakowany plik manifestu poprzez wyłączenie projektanta
 
-1. W **projektancie pakietu**, wybierz **manifestu** kartę.
+1. W **projektancie pakietów**wybierz kartę **manifest** .
 
-2. Rozwiń węzeł **Opcje edycji**, wybierz link **Zastąp wygenerowany kod XML i edytuj manifest w edytorze XML**, a następnie wybierz przycisk **Tak**.
+2. Rozwiń węzeł **Opcje edycji** , wybierz opcję **Zastąp wygenerowany plik XML i edytuj manifest w edytorze XML** , a następnie wybierz przycisk **tak** .
 
-     Szablon zostanie zaktualizowany o spakowany plik bieżącego manifestu.
+     Szablon zostanie zaktualizowany przy użyciu bieżącego spakowanego pliku manifestu.
 
-## <a name="enable-the-package-designer"></a>Włącz projektanta pakietów
- Można ponownie włączyć projektanta pakietów, aby dostosować *manifest.xml* pliku.
+## <a name="enable-the-package-designer"></a>Włączanie projektanta pakietów
+ Można ponownie włączyć projektanta pakietów, aby dostosować plik *manifest.xml* .
 
-#### <a name="to-re-enable-the-designer"></a>Aby ponownie włączyć Projektanta
+#### <a name="to-re-enable-the-designer"></a>Aby ponownie włączyć projektanta
 
-1. W **projektancie pakietu**, wybierz **Odrzuć modyfikacje manifestu i ponownie włącz projektanta** łącze, a następnie wybierz **tak** przycisku.
+1. W **projektancie pakietów**wybierz pozycję **Odrzuć edycje manifestu i ponownie włącz link projektanta** , a następnie wybierz przycisk **tak** .
 
-     Szablon zostanie odświeżony z początkowym tekstem, a zmiany wprowadzone w pliku XML zostaną utracone.
+     Szablon jest odświeżany oryginalnym tekstem i wszelkie zmiany wprowadzone w pliku XML zostaną utracone.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
