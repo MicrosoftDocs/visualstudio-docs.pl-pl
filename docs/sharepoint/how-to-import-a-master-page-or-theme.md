@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Importowanie strony wzorcowej lub motywu | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,23 +13,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c5078d31e2dcb7f11e5c19e0f8cb228e2f75d50
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984197"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015292"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Instrukcje: Importowanie strony wzorcowej lub motywu
-  Możesz nadać stronom w witrynie programu SharePoint spójny wygląd, tworząc i używając stron wzorcowych i motywów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie udostępnia szablonów dla tych elementów, ale można je utworzyć w programie SharePoint Designer, a następnie zaimportować je do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [Budowanie bloków: strony i interfejs użytkownika](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) w witrynie sieci Web firmy Microsoft.
+  Możesz nadać stronom w witrynie programu SharePoint spójny wygląd, tworząc i używając stron wzorcowych i motywów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]nie udostępnia szablonów dla tych elementów, ale można je utworzyć w programie SharePoint Designer, a następnie zaimportować je do programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Budowanie bloków: strony i interfejs użytkownika](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) w witrynie sieci Web firmy Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Aby zaimportować stronę wzorcową lub motyw
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Utwórz lub Otwórz projekt programu SharePoint.
+1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Utwórz lub Otwórz projekt programu SharePoint.
 
      Aby uzyskać informacje na temat sposobu tworzenia projektu programu SharePoint, zobacz [Szablony projektów i elementów projektu programu SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. Na pasku menu wybierz **projekt**  > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
 3. W oknie dialogowym **Dodaj nowy element** rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
@@ -37,11 +36,11 @@ ms.locfileid: "72984197"
 
      Moduł zawiera pliki (na przykład strony wzorcowe lub pliki motywu) do wdrożenia w lokalizacji określonej w programie SharePoint.
 
-5. W module Usuń plik domyślny o nazwie *Sample. txt*.
+5. W module Usuń plik domyślny o nazwie *Sample.txt*.
 
 6. Wybierz węzeł modułu.
 
-7. Na pasku menu wybierz **projekt** > **Dodaj istniejący element**, a następnie wybierz stronę wzorcową lub plik motywu.
+7. Na pasku menu wybierz **projekt**  >  **Dodaj istniejący element**, a następnie wybierz stronę wzorcową lub plik motywu.
 
      Pliki stron głównych mają rozszerzenie. Master, a pliki motywów mają rozszerzenie. THMX.
 
@@ -50,9 +49,9 @@ ms.locfileid: "72984197"
     > [!NOTE]
     > Błędy mogą wystąpić, jeśli nazwa strony głównej jest taka sama jak nazwa istniejącej strony wzorcowej, która jest oznaczona jako domyślna Strona główna lub niestandardowa strona wzorcowa. Aby uzyskać informacje na temat sposobu rozwiązania tego problemu, zobacz [Przewodnik: Importowanie niestandardowej strony wzorcowej i strony witryny z obrazem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
-9. W module Otwórz *element elementy. XML*.
+9. W module Otwórz *Elements.xml*.
 
-     Musisz zaktualizować plik *. XML* , aby odwołać się do dodanej strony wzorcowej lub motywu.
+     Należy zaktualizować plik *Elements.xml* , aby odwoływała się do dodanej strony wzorcowej lub motywu.
 
 10. Dla strony wzorcowej Zastąp istniejący znacznik modułu następującym znacznikiem.
 
@@ -74,7 +73,7 @@ ms.locfileid: "72984197"
 
      Pamiętaj, aby zastąpić wartości symboli zastępczych rzeczywistymi nazwami modułu oraz stroną wzorcową lub motywem.
 
-     Atrybut `Type="GhostableInLibrary"` wskazuje, że element jest dodawany do bazy danych zawartości, a `Url` atrybutu modułu określa miejsce przechowywania pliku w bazie danych zawartości programu SharePoint.
+     Ten atrybut `Type="GhostableInLibrary"` wskazuje, że element jest dodawany do bazy danych zawartości, a `Url` atrybut modułu określa miejsce przechowywania pliku w bazie danych zawartości programu SharePoint.
 
 11. Aby zmienić zakres wdrożenia dla strony wzorcowej, w **Eksplorator rozwiązań**Otwórz plik funkcji w Projektancie funkcji, a następnie wybierz nowy zakres wdrożenia z listy **zakres** .
 
@@ -83,7 +82,7 @@ ms.locfileid: "72984197"
     > [!NOTE]
     > Ponieważ motywy stosują się tylko do poziomu zbioru witryn, zalecamy, aby nie ustawiać zakresu motywu do elementów innych niż **lokacja**. Błędy mogą wystąpić, jeśli motyw jest używany w podwitrynie.
 
-12. Na pasku menu wybierz kolejno opcje **kompiluj** > **Wdróż rozwiązanie**.
+12. Na pasku menu wybierz kolejno opcje **kompilacja**  >  **Wdróż rozwiązanie**.
 
 13. Aby sprawdzić, czy pliki zostały wdrożone prawidłowo, Otwórz witrynę programu SharePoint, wybierz menu **Akcje witryny** , wybierz polecenie **Ustawienia witryny** , a następnie wybierz łącze **strony główne** lub link **motywy** .
 

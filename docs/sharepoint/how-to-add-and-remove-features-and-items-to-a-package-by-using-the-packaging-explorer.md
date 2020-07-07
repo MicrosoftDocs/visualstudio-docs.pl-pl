@@ -1,7 +1,7 @@
 ---
-title: 'Eksploratora pakietów: Dodaj & Usuń funkcje i elementy pakietu'
+title: 'Eksplorator pakietów: Dodawanie & usuwanie funkcji & elementów do pakietu'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
@@ -14,53 +14,52 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f01ecb67cb82ffe325ea471ad5fb5913c8e4d28
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401558"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014562"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów
-  Aby skonfigurować pakiet do wdrożenia programu SharePoint elementy i funkcje, można użyć Eksploratora pakietów. Elementów projektu programu SharePoint i funkcje można dostosować w pliku wsp.
+  Aby skonfigurować pakiet do wdrażania elementów i funkcji programu SharePoint, można użyć Eksploratora pakietów. Elementy projektu programu SharePoint i funkcje można dostosować wewnątrz pliku. wsp.
 
- Alternatywnie można użyć projektanta pakietu do wyświetlania i zmieniać ich kolejność te funkcje, aby zmienić kolejność aktywacji. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).
+ Alternatywnie można użyć projektanta pakietów do wyświetlania i zmiany kolejności tych funkcji, aby zmienić kolejność aktywacji. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).
 
 ## <a name="open-the-packaging-explorer"></a>Otwórz Eksploratora pakietów
- Jeśli rozwiązanie programu Visual Studio ma co najmniej jeden projekt programu SharePoint, można użyć poniższej procedury można otworzyć Eksploratora pakietów. Alternatywnie Eksploratora pakietów zostanie otwarty automatycznie po wyświetleniu funkcji lub pakietu projektanta. Po zamknięciu wszystkich funkcji i pakietów projektantów zamyka się również Eksploratora pakietów
+ Korzystając z poniższej procedury, można otworzyć Eksploratora pakietów, jeśli rozwiązanie Visual Studio zawiera co najmniej jeden projekt programu SharePoint. Alternatywnie Eksplorator pakietów otwiera się automatycznie podczas wyświetlania funkcji lub projektanta pakietów. Po zamknięciu wszystkich projektantów funkcji i pakietów Eksplorator pakietów zostanie również zamknięty.
 
 #### <a name="to-open-the-packaging-explorer"></a>Aby otworzyć Eksploratora pakietów
 
-1. Na pasku menu wybierz **widoku** > **Windows inne** > **Eksploratora pakietów**.
+1. Na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Eksplorator pakietów**systemu Windows.
 
-     **Eksploratora pakietów** pojawia się w **przybornika**.
+     **Eksplorator pakietów** zostanie wyświetlony w **przyborniku**.
 
-## <a name="adding-a-feature-to-a-package"></a>Dodanie funkcji do pakietu
+## <a name="adding-a-feature-to-a-package"></a>Dodawanie funkcji do pakietu
  Nowe i istniejące funkcje można dodać do pakietu przy użyciu Eksploratora pakietów.
 
 #### <a name="to-add-a-sharepoint-feature"></a>Aby dodać funkcję programu SharePoint
 
-1. Otwórz **Eksploratora pakietów**, otwórz menu skrótów dla projektu, a następnie wybierz **Dodaj funkcję**.
+1. Otwórz **Eksploratora pakietów**, otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Dodaj funkcję**.
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>Aby przenieść istniejącą funkcję programu SharePoint
 
 1. Otwórz **Eksploratora pakietów**, a następnie wykonaj jedną z następujących czynności:
 
-    - Przeciągnij **funkcji** z jednego projektu do innego projektu.
+    - Przeciągnij **funkcję** z jednego projektu do innego projektu.
 
-    - Otwórz menu skrótów dla funkcji, wybierz polecenie **Wytnij**, otwórz menu skrótów dla projektu, do którego chcesz przenieść tę funkcję, a następnie wybierz **Wklej**.
+    - Otwórz menu skrótów dla funkcji, wybierz polecenie **Wytnij**, otwórz menu skrótów dla projektu, do którego chcesz przenieść funkcję, a następnie wybierz **Wklej**.
 
     > [!NOTE]
     > Użyj tej procedury, jeśli masz więcej niż jeden projekt programu SharePoint w rozwiązaniu.
 
-## <a name="validate-a-feature-or-package"></a>Sprawdzanie poprawności funkcji lub pakietów
- Potencjalne problemy w funkcji programu SharePoint i pakietów można zidentyfikować, sprawdzając poprawność plików. Ostrzeżenia i błędy są wyświetlane w oknie danych wyjściowych i oknie Lista błędów.
+## <a name="validate-a-feature-or-package"></a>Weryfikowanie funkcji lub pakietu
+ Możesz zidentyfikować potencjalne problemy w funkcjach i pakietach programu SharePoint, sprawdzając pliki. Ostrzeżenia i błędy są wyświetlane w oknie dane wyjściowe i w oknie Lista błędów.
 
-#### <a name="to-validate-a-sharepoint-feature-or-package"></a>Aby sprawdzić poprawność funkcji programu SharePoint lub pakietu
+#### <a name="to-validate-a-sharepoint-feature-or-package"></a>Aby sprawdzić poprawność funkcji lub pakietu programu SharePoint
 
 1. Otwórz **Eksploratora pakietów**.
 
-2. Otwórz menu skrótów dla funkcji lub pakietu, a następnie wybierz **weryfikacji**.
+2. Otwórz menu skrótów dla funkcji lub pakietu, a następnie wybierz polecenie **Weryfikuj**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

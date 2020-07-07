@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Kompilowanie rozwiązań SharePoint | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: kompilowanie rozwiązań SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,24 +14,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: d3beb1602a6572ed578208d6dd85951f1ea1c30b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966890"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014512"
 ---
-# <a name="how-to-build-sharepoint-solutions"></a>Instrukcje: Kompilowanie rozwiązań SharePoint
+# <a name="how-to-build-sharepoint-solutions"></a>Instrukcje: kompilowanie rozwiązań SharePoint
 
-Tworzenie użytkownika programu SharePoint rozwiązania nie różni się od tworzenia innych aplikacji w programie Visual Studio. Aby uzyskać więcej informacji o tworzeniu aplikacji, zobacz [skompilować i utworzyć w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Aby uzyskać informacje o pewnych kwestiach, które są specyficzne dla rozwiązań SharePoint, zobacz [jak: Wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
+Kompiluj rozwiązanie SharePoint nie różni się od tworzenia innych aplikacji w programie Visual Studio. Aby uzyskać więcej informacji na temat kompilowania aplikacji, zobacz [Kompilowanie i kompilowanie w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Aby zapoznać się z przykładami dotyczącymi rozwiązań programu SharePoint, zobacz [jak: wdrażanie i publikowanie rozwiązania SharePoint w lokalnej witrynie programu SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
 
-## <a name="to-build-sharepoint-solutions"></a>Tworzenie rozwiązań programu SharePoint
+## <a name="to-build-sharepoint-solutions"></a>Aby skompilować rozwiązania programu SharePoint
 
-1. Zdecyduj, czy wykonujesz debugowanie lub kompilację wydania. Aby uzyskać więcej informacji, zobacz [ustawienia projektu debugera](../debugger/debugger-project-settings.md).
+1. Zdecyduj, czy przeprowadzasz debugowanie lub kompilację wydania. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu debugera](../debugger/debugger-project-settings.md).
 
-2. Wybierz opcję odpowiednią dla tworzenia lub odbudowywania rozwiązania lub projektu. Aby uzyskać więcej informacji, zobacz [kompilowanie i tworzenie w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+2. Wybierz odpowiednią opcję, aby skompilować lub ponownie skompilować rozwiązanie lub projekt. Aby uzyskać więcej informacji, zobacz [Kompilowanie i kompilowanie w programie Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-3. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
+3. Na pasku menu wybierz polecenie **Kompiluj**  >  **kompilację rozwiązania**.
 
 ## <a name="see-also"></a>Zobacz także
 

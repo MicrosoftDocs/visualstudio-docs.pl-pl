@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: dodawanie określonej metody wyszukiwania | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985263"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014821"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Instrukcje: dodawanie określonej metody wyszukiwania
   Wystąpienie pojedynczej jednostki można zwrócić, tworząc określoną metodę *wyszukiwania* . Usługa łączności danych biznesowych (BDC) wykonuje określoną metodę wyszukiwania, gdy użytkownik wybierze jednostkę w składniku Web Part danych biznesowych lub liście zewnętrznej. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych firmowych](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72985263"
 
     Aby uzyskać informacje na temat dodawania jednostki do **projektanta usługi BDC** w programie Visual Studio, zobacz [How to: Add a Entity to a model](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Na pasku menu wybierz **widok** > **inne okna**, **Szczegóły metody BDC**.
+2. Na pasku menu wybierz kolejno opcje **Wyświetl**  >  **inne okna**, **Szczegóły metody BDC**.
 
     Zostanie otwarte okno **Szczegóły metody BDC** . Aby uzyskać więcej informacji na temat tego okna, zobacz [narzędzia projektowania modelu usługi BDC — Omówienie](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -71,7 +70,7 @@ ms.locfileid: "72985263"
 
     Plik kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych firmowych](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-9. Dodaj kod do określonej metody wyszukiwania. Kod będzie wykonywał następujące zadania:
+9. Dodaj kod do określonej metody wyszukiwania. Ten kod wykonuje następujące zadania:
 
    - Pobiera rekord ze źródła danych.
 
@@ -80,7 +79,7 @@ ms.locfileid: "72985263"
      Poniższy przykład zwraca kontakt z przykładowej bazy danych AdventureWorks dla SQL Server.
 
      > [!NOTE]
-     > Zastąp wartość pola `ServerName` nazwą serwera.
+     > Zamień wartość `ServerName` pola na nazwę serwera.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

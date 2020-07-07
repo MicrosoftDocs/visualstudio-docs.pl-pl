@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik: Dodawanie odbiorców zdarzeń funkcji | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Dodawanie odbiorników zdarzeń funkcji | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,31 +16,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008292"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015357"
 ---
-# <a name="walkthrough-add-feature-event-receivers"></a>Przewodnik: Dodawanie odbiorców zdarzeń funkcji
-  Funkcji odbiorcy zdarzeń są metodami wykonywanymi gdy wystąpi jedno z następujących zdarzeń związanych z funkcji w programie SharePoint:
+# <a name="walkthrough-add-feature-event-receivers"></a>Przewodnik: dodawanie odbiorców zdarzeń funkcji
+  Odbiorcy zdarzeń funkcji to metody, które są wykonywane po wystąpieniu jednego z następujących zdarzeń związanych z funkcjami w programie SharePoint:
 
-- Funkcja zostanie zainstalowana.
+- Zainstalowana jest funkcja.
 
 - Funkcja jest aktywowana.
 
-- Dezaktywacją funkcji.
+- Funkcja została zdezaktywowana.
 
-- Funkcja zostanie usunięta.
+- Funkcja jest usuwana.
 
-  W tym instruktażu przedstawiono sposób dodawania odbiorców zdarzenia do funkcji w projekcie programu SharePoint. Pokazuje następujące zadania:
+  W tym instruktażu pokazano, jak dodać odbiorcę zdarzeń do funkcji w projekcie programu SharePoint. Przedstawiono w nim następujące zadania:
 
-- Tworzenie pustego projektu za pomocą odbiorcy zdarzeń funkcji.
+- Tworzenie pustego projektu z odbiorcą zdarzeń funkcji.
 
-- Obsługa **FeatureDeactivating** metody.
+- Obsługa metody **FeatureDeactivating** .
 
-- Dodawanie anonsu do listy anonsów przy użyciu modelu obiektu projektu programu SharePoint.
+- Za pomocą modelu obiektów projektu programu SharePoint do dodania anonsu do listy anonsów.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -51,73 +50,73 @@ ms.locfileid: "63008292"
 
 - Program Visual Studio.
 
-## <a name="create-a-feature-event-receiver-project"></a>Tworzenie projektu funkcji odbiorcy zdarzeń
- Najpierw utwórz projekt, który zawiera odbiorcę zdarzeń funkcji.
+## <a name="create-a-feature-event-receiver-project"></a>Utwórz projekt odbiorcy zdarzeń funkcji
+ Najpierw utwórz projekt, aby zawierał odbiorcę zdarzeń funkcji.
 
-#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Aby utworzyć projekt za pomocą odbiorcy zdarzeń funkcji
+#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Aby utworzyć projekt z odbiorcą zdarzeń funkcji
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.
+1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt** , aby wyświetlić okno dialogowe **Nowy projekt** .
 
-2. Rozwiń **SharePoint** węźle albo **Visual C#** lub **języka Visual Basic**, a następnie wybierz **2010** węzła.
+2. Rozwiń węzeł **SharePoint** w **Visual C#** lub **Visual Basic**, a następnie wybierz węzeł **2010** .
 
-3. W **szablony** okienku wybierz **projekt programu SharePoint 2010** szablonu.
+3. W okienku **Szablony** wybierz szablon **projektu programu SharePoint 2010** .
 
-     Użyjesz tego typu projektu dla odbiorców zdarzeń funkcji, ponieważ mają one nie szablonu projektu.
+     Ten typ projektu jest używany dla odbiorników zdarzeń funkcji, ponieważ nie mają szablonu projektu.
 
-4. W **nazwa** wprowadź **FeatureEvtTest**, a następnie wybierz **OK** przycisk, aby wyświetlić **Kreator ustawień niestandardowych SharePoint**.
+4. W polu **Nazwa** wprowadź **FeatureEvtTest**, a następnie wybierz przycisk **OK** , aby wyświetlić **Kreatora dostosowania programu SharePoint**.
 
-5. Na **Określanie witryny i poziomu zabezpieczeń dla debugowania** strony, wprowadź adres URL witryny serwera programu SharePoint, do której chcesz dodać nowy element pole niestandardowe lub użyj domyślnej lokalizacji (http://\<*systemu Nazwa*> /).
+5. Na stronie **Określanie poziomu lokacji i zabezpieczeń na potrzeby debugowania** wprowadź adres URL witryny programu SharePoint Server, do której chcesz dodać nowy element pola niestandardowego, lub Użyj domyślnej lokalizacji (http:// \<*system name*> /).
 
-6. W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz pozycję **Wdróż jako rozwiązanie farmy** przycisku opcji.
+6. W sekcji **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz przycisk opcji **Wdróż jako farmę** .
 
-     Aby uzyskać więcej informacji dotyczących rozwiązań sandbox w porównaniu z rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).
+     Aby uzyskać więcej informacji o rozwiązaniach w trybie piaskownicy a rozwiązaniach farmy, zobacz [zagadnienia dotyczące rozwiązania w trybie piaskownicy](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Wybierz **Zakończ** przycisk, a następnie zwróć uwagę, że funkcja, która nosi nazwę Feature1 pojawia się w obszarze **funkcji** węzła.
+7. Wybierz przycisk **Zakończ** , a następnie Zwróć uwagę, że funkcja o nazwie Feature1 pojawia się w węźle **funkcje** .
 
-## <a name="add-an-event-receiver-to-the-feature"></a>Dodaj odbiorcę zdarzeń funkcji
- Następnie dodaj odbiorcę zdarzeń funkcji i Dodaj kod, który jest wykonywany po dezaktywowaniu tej funkcji.
+## <a name="add-an-event-receiver-to-the-feature"></a>Dodawanie odbiorcy zdarzeń do funkcji
+ Następnie dodaj odbiorcę zdarzeń do funkcji i Dodaj kod, który jest wykonywany, gdy funkcja zostanie zdezaktywowana.
 
-#### <a name="to-add-an-event-receiver-to-the-feature"></a>Aby dodać odbiorcę zdarzeń funkcji
+#### <a name="to-add-an-event-receiver-to-the-feature"></a>Aby dodać odbiorcę zdarzeń do funkcji
 
-1. Otwórz menu skrótów dla węzła funkcji, a następnie wybierz **Dodaj funkcję** Aby utworzyć funkcję.
+1. Otwórz menu skrótów dla węzła funkcje, a następnie wybierz polecenie **Dodaj funkcję** , aby utworzyć funkcję.
 
-2. W obszarze **funkcji** węzła, otwórz menu skrótów dla **Feature1**, a następnie wybierz **Dodaj odbiorcę zdarzeń** do dodawania odbiorców zdarzenia dla funkcji.
+2. W węźle **funkcje** Otwórz menu skrótów dla **Feature1**, a następnie wybierz polecenie **Dodaj odbiorcę zdarzeń** , aby dodać do funkcji odbiorcę zdarzeń.
 
-     Spowoduje to dodanie pliku z kodem w ramach Feature1. W tym przypadku jest on nazwany albo *Feature1.EventReceiver.cs* lub *Feature1.EventReceiver.vb*, w zależności od języka programowania Twojego projektu.
+     Spowoduje to dodanie pliku kodu w obszarze Feature1. W tym przypadku jest to nazwa *Feature1.EventReceiver.cs* lub *Feature1. EventReceiver. vb*, w zależności od języka deweloperskiego projektu.
 
-3. Jeśli projekt został napisany w [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], Dodaj następujący kod w górnej części odbiorcy zdarzeń, jeśli nie jest już istnieje:
+3. Jeśli projekt jest zapisany [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] , Dodaj poniższy kod u góry odbiorcy zdarzeń, jeśli jeszcze nie istnieje:
 
      [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
 
-4. Klasy odbiorcy zdarzeń zawiera kilka metod zakomentowany, które działają jako wydarzenia. Zastąp **FeatureDeactivating** metoda następującym kodem:
+4. Klasa odbiorcy zdarzeń zawiera kilka metod z komentarzem, które działają jako zdarzenia. Zastąp metodę **FeatureDeactivating** poniższymi:
 
      [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
      [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
 
-## <a name="test-the-feature-event-receiver"></a>Testowanie funkcji odbiorcy zdarzeń
- Następnie zdezaktywować funkcję do testowania czy **FeatureDeactivating** metoda generuje powiadomienia na liście programu SharePoint anonsów.
+## <a name="test-the-feature-event-receiver"></a>Testowanie odbiorcy zdarzeń funkcji
+ Następnie Dezaktywuj funkcję, aby sprawdzić, czy metoda **FeatureDeactivating** wyprowadza anons na listę anonsów programu SharePoint.
 
 #### <a name="to-test-the-feature-event-receiver"></a>Aby przetestować odbiorcę zdarzeń funkcji
 
-1. Ustaw wartość projektu **aktywnej konfiguracji wdrożenia** właściwości **aktywacji nie**.
+1. Ustaw wartość właściwości **Konfiguracja aktywnego wdrożenia** projektu na **Brak aktywacji**.
 
-     Ustawienie tej właściwości zapobiega funkcji aktywacji w programie SharePoint i umożliwia debugowanie odbiorców zdarzeń funkcji. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint debugowania](../sharepoint/debugging-sharepoint-solutions.md).
+     Ustawienie tej właściwości uniemożliwia Aktywowanie funkcji w programie SharePoint i umożliwia debugowanie odbiorników zdarzeń funkcji. Aby uzyskać więcej informacji, zobacz [Debugowanie rozwiązań programu SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
-2. Wybierz **F5** klawisz, aby uruchomić projekt i wdrożyć ją w programie SharePoint.
+2. Wybierz klawisz **F5** , aby uruchomić projekt i wdrożyć go w programie SharePoint.
 
-3. W górnej części strony sieci Web programu SharePoint, należy otworzyć **Akcje witryny** menu, a następnie wybierz **ustawienia lokacji**.
+3. W górnej części strony sieci Web programu SharePoint otwórz menu **Akcje witryny** , a następnie wybierz pozycję **Ustawienia lokacji**.
 
-4. W obszarze **Akcje witryny** części **ustawienia lokacji** wybierz **Zarządzanie funkcjami witryny** łącza.
+4. W sekcji **Akcje witryny** na stronie **Ustawienia witryny** wybierz łącze **Zarządzaj funkcjami lokacji** .
 
-5. Na **funkcji** wybierz **Aktywuj** znajdujący się obok **FeatureEvtTest Feature1** funkcji.
+5. Na stronie **funkcje** wybierz przycisk **Aktywuj** obok funkcji **FeatureEvtTest Feature1** .
 
-6. Na **funkcji** wybierz **Dezaktywuj** znajdujący się obok **FeatureEvtTest Feature1** funkcji, a następnie wybierz **Dezaktywuj tę funkcję**  potwierdzenie link, aby zdezaktywować funkcję.
+6. Na stronie **funkcje** wybierz przycisk **Dezaktywuj** obok funkcji **FeatureEvtTest Feature1** , a następnie wybierz link **Dezaktywuj tę funkcję** , aby dezaktywować tę funkcję.
 
-7. Wybierz **Home** przycisku.
+7. Wybierz przycisk **Strona główna** .
 
-     Należy zauważyć, że anons pojawi się w **anonsów** listę po dezaktywowaniu tej funkcji.
+     Zwróć uwagę, że anons pojawia się na liście **Anonsy** Po zdezaktywowaniu funkcji.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)
+- [Instrukcje: Tworzenie odbiorcy zdarzeń](../sharepoint/how-to-create-an-event-receiver.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

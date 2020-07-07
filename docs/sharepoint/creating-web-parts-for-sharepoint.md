@@ -1,7 +1,7 @@
 ---
 title: Tworzenie składniki Web Part dla programu SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -23,12 +23,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82e0d860f21f0fe2744c8c05c4ebeb3590be68fc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984475"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015049"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Tworzenie składników Web Part dla programu SharePoint
   Za pomocą części sieci Web, można modyfikować zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki. Części sieci Web to kontrolki po stronie serwera, które są uruchamiane wewnątrz strony składnika Web Part: są to bloki konstrukcyjne stron, które są wyświetlane w witrynie programu SharePoint. Zobacz [blok konstrukcyjny: składniki Web Part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -45,7 +44,7 @@ ms.locfileid: "72984475"
 
 |Plik|Opis|
 |----------|-----------------|
-|*Elementy. XML*|Zawiera informacje, które są używane przez plik definicji funkcji w projekcie do wdrażania składnika Web Part.|
+|*Elements.xml*|Zawiera informacje, które są używane przez plik definicji funkcji w projekcie do wdrażania składnika Web Part.|
 |plik WebPart|Zawiera informacje o tym, że program SharePoint musi wyświetlić składnik Web Part w galerii składników Web Part.|
 |Plik kodu|Zawiera metody, które dodają formanty do składnika Web Part i generują zawartość niestandardową w składniku Web Part.|
 
@@ -67,7 +66,7 @@ ms.locfileid: "72984475"
 |[ProjectProperty](/previous-versions/office/sharepoint-server/ms478990(v=office.15))|Zwraca właściwość globalną bieżącej witryny sieci Web.|
 |[RssLink](/previous-versions/office/sharepoint-server/ms457574(v=office.15))|Wstawia link do źródła danych RSS do strony *. aspx* .|
 |[ScriptLink](/previous-versions/office/sharepoint-server/ms411959(v=office.15))|Udostępnia właściwości i metody rejestrowania zasobów, takich jak skrypty, na stronie, aby można było żądać ich podczas renderowania strony.|
-|[Tematów](/previous-versions/office/sharepoint-server/ms460735(v=office.15))|Stosuje motyw do strony *. aspx* .|
+|[Motyw](/previous-versions/office/sharepoint-server/ms460735(v=office.15))|Stosuje motyw do strony *. aspx* .|
 
 ## <a name="debug-a-web-part"></a>Debugowanie składnika Web Part
  Można debugować projekt programu SharePoint, który zawiera składnik Web Part tak samo jak debugowanie innych projektów programu Visual Studio. Po uruchomieniu debugera programu Visual Studio program Visual Studio otwiera witrynę programu SharePoint.
@@ -91,22 +90,22 @@ ms.locfileid: "72984475"
 
    Chociaż można dodać wbudowany kod JavaScript do pliku znaczników po stronie serwera, debugowanie nie jest obsługiwane dla punktów przerwania dodanych do znacznika. Aby debugować JavaScript, odwołując się do zewnętrznego pliku JavaScript w pliku znaczników, a następnie ustaw punkty przerwania w pliku JavaScript.
 
-- Debugowanie kodu [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] śródwierszowego należy wykonać w wygenerowanym pliku kodu, a nie w pliku znaczników.
+- Debugowanie kodu śródwierszowego [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] należy wykonać w wygenerowanym pliku kodu, a nie w pliku znaczników.
 
-- Wizualne składniki Web Part nie obsługują stosowania dyrektywy `<@ Assembly Src=`.
+- Wizualne składniki Web Part nie obsługują stosowania `<@ Assembly Src=` dyrektywy.
 
-- Formanty sieci Web programu SharePoint i niektóre formanty [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] nie są obsługiwane w środowisku piaskownicy programu SharePoint. Jeśli formanty nieobsługiwane są używane w składniku Web Part w rozwiązaniu w trybie piaskownicy, zostanie wyświetlony komunikat o błędzie "typ lub nazwa przestrzeni nazw" motyw "nie istnieje w przestrzeni nazw" Microsoft. SharePoint. WebControls "".
+- Kontrolki sieci Web programu SharePoint i niektóre [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] kontrolki nie są obsługiwane w środowisku w trybie piaskownicy programu SharePoint. Jeśli formanty nieobsługiwane są używane w składniku Web Part w rozwiązaniu w trybie piaskownicy, zostanie wyświetlony komunikat o błędzie "typ lub nazwa przestrzeni nazw" motyw "nie istnieje w przestrzeni nazw" Microsoft. SharePoint. WebControls "".
 
   Aby uzyskać więcej informacji o rozwiązaniach w trybie piaskownicy, zobacz [różnice między rozwiązaniami w trybie piaskownicy a farmą](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Tworzenie starszych składników Web Part opartych na programie SharePoint
- Za pomocą szablonów w programie Visual Studio można tworzyć niestandardowe składniki Web Part [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] dla programu SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] części sieci Web są zbudowane na podstawie [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktury części sieci Web i są zalecanym typem dla nowych projektów.
+ Za pomocą szablonów w programie Visual Studio można tworzyć niestandardowe [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] składniki Web Part dla programu SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]części sieci Web są zbudowane na podstawie [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktury składnika Web Part i są zalecanym typem dla nowych projektów.
 
  W bardzo niewielkich przypadkach może być konieczne utworzenie składnika Web Part przy użyciu starszej części sieci Web opartej na programie SharePoint. Możesz użyć programu Visual Studio, aby utworzyć te typy części sieci Web, ale program Visual Studio nie udostępnia żadnych szablonów, które zostały zaprojektowane specjalnie w celu ułatwienia ich tworzenia.
 
  Aby uzyskać więcej informacji na temat sytuacji, w których można utworzyć starszy, oparty na programie SharePoint składnik Web Part, zobacz [infrastruktura części sieci Web w programie Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms415560(v=office.14)). Aby uzyskać więcej informacji na temat sposobu tworzenia składnika Web Part przy użyciu starszego dla programu SharePoint składnika sieci Web, zobacz [Przewodnik tworzenia podstawowej części sieci Web programu SharePoint](/previous-versions/office/ms452873(v=office.14)).
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|

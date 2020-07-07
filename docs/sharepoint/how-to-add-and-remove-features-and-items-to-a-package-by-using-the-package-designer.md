@@ -1,7 +1,7 @@
 ---
-title: 'Projektant pakietu: Dodawanie i usuwanie funkcji oraz elementów do pakietu'
+title: 'Projektant pakietów: Dodawanie & usuwanie funkcji i elementów do pakietu'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerDesign
 dev_langs:
@@ -14,49 +14,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbd44bbf3b337815c8c72cea66dd4d56fc645ade
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: 4dfbda711c42e475af5f17c8799e53b13e26611a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401613"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014607"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów
-  Podczas tworzenia rozwiązania programu SharePoint, Visual Studio dodaje funkcje programu SharePoint domyślne do pakietu w rozwiązaniu. Przed wdrożeniem końcowego może Dodawanie i usuwanie elementów projektu programu SharePoint oraz funkcje, aby zmodyfikować pakiet programu SharePoint.
+  Podczas tworzenia rozwiązania programu SharePoint program Visual Studio dodaje domyślne funkcje programu SharePoint do pakietu w rozwiązaniu. Przed ostatecznym wdrożeniem można dodawać i usuwać elementy projektu programu SharePoint oraz funkcje, aby zmodyfikować pakiet programu SharePoint.
 
- Alternatywnie można użyć Eksploratora pakietów do dodawania i usuwania elementów projektu programu SharePoint. Można również wyświetlić i zmienić hierarchię elementów projektu programu SharePoint i funkcje, które są umieszczane w pakietu (wsp). Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
+ Alternatywnie można użyć Eksploratora pakietów do dodawania i usuwania elementów projektu programu SharePoint. Możesz również wyświetlić i zmienić hierarchię elementów projektu programu SharePoint i funkcji umieszczanych w pakiecie (wsp). Aby uzyskać więcej informacji, zobacz [jak: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu Eksploratora pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
 
 ## <a name="add-features-to-a-sharepoint-package"></a>Dodawanie funkcji do pakietu programu SharePoint
- Aby dodać funkcje do pakietu programu SharePoint, można użyć projektanta pakietów.
+ Za pomocą projektanta pakietów można dodawać funkcje do pakietu programu SharePoint.
 
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Aby dodać funkcje programu SharePoint przy użyciu projektanta pakietów
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Aby dodać funkcje programu SharePoint za pomocą projektanta pakietów
 
-1. Otwórz **pakietu projektanta**.
+1. Otwórz **projektanta pakietów**.
 
-    Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+    Aby uzyskać więcej informacji, zobacz [How to: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Dodaj jeden lub więcej funkcji programu SharePoint, wykonując jedną lub więcej z następujących czynności:
+2. Dodaj co najmniej jedną funkcję programu SharePoint, wykonując następujące czynności:
 
-   1. Kliknij dwukrotnie każdego elementu w **elementów w rozwiązaniu** listy, który chcesz dodać.
+   1. Kliknij dwukrotnie każdy element w elementach listy **rozwiązań** , który chcesz dodać.
 
-   2. Wybierz element, który chcesz dodać, a następnie wybierz **Dodaj** przycisku (>).
+   2. Wybierz element, który chcesz dodać, a następnie wybierz przycisk **Dodaj** (>).
 
-   3. Wybierz **Dodaj wszystkie** przycisku (>>) aby dodać wszystkich elementów jednocześnie.
+   3. Wybierz przycisk **Dodaj wszystko** (>>), aby dodać wszystkie elementy jednocześnie.
 
-      Można na przykład kliknij dwukrotnie element **elementów w rozwiązaniu** listy, aby dodać go do **elementów w pakiecie** listy.
+      Na przykład można kliknąć dwukrotnie element w elementach **na liście rozwiązania** , aby dodać go do **elementów na liście pakietów** .
 
-      Elementy projektu programu SharePoint i funkcje są wyświetlane w **elementów w pakiecie** listy.
+      Elementy projektu programu SharePoint i funkcje pojawiają się na liście **elementów listy pakietów** .
 
 ## <a name="remove-features-from-a-sharepoint-package"></a>Usuwanie funkcji z pakietu programu SharePoint
- Projektanta pakietów służy do usuwania funkcji do pakietu programu SharePoint.
+ Możesz użyć projektanta pakietów, aby usunąć funkcje pakietu programu SharePoint.
 
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Aby usunąć funkcji programu SharePoint przy użyciu projektanta pakietów
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Aby usunąć funkcje programu SharePoint za pomocą projektanta pakietów
 
-1. W **elementów w pakiecie** , wybierz element, który chcesz usunąć, a następnie wybierz **Usuń** (<) przycisku, lub wybierz **Usuń wszystkie** przycisku (<<) do usunięcia wszystkie elementy.
+1. Z listy **elementy na liście pakiet** wybierz element, który chcesz usunąć, a następnie wybierz przycisk **Usuń** (<) lub wybierz przycisk **Usuń wszystko** (<<), aby usunąć wszystkie elementy.
 
-     Elementy programu SharePoint są wyświetlane w **elementów w rozwiązaniu** listy.
+     Elementy programu SharePoint są wyświetlane w **elementach listy rozwiązań** .
 
 ## <a name="see-also"></a>Zobacz także
 - [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [Instrukcje: Utwórz pakiet](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)
+- [Instrukcje: Tworzenie pakietu](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dodaj plik zasobów | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie pliku zasobów | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,42 +13,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7b8394d0c21ed5a45639e4dad5fe3695aaccc27
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440003"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015183"
 ---
-# <a name="how-to-add-a-resource-file"></a>Instrukcje: Dodawanie pliku zasobu
-  Polecenia służące do dodawania plików zasobów znajduje się w menu skrótów dla węzła rozwiązania i funkcja węzły w Eksploratorze rozwiązań. Aby uzyskać więcej informacji, zobacz [rozwiązań SharePoint lokalizowanie](../sharepoint/localizing-sharepoint-solutions.md).
+# <a name="how-to-add-a-resource-file"></a>Instrukcje: Dodawanie pliku zasobów
+  Polecenia służące do dodawania plików zasobów znajduje się w menu skrótów węzła rozwiązania i funkcji w Eksplorator rozwiązań. Aby uzyskać więcej informacji, zobacz [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md).
 
-### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Aby dodać plik globalnych zasobów do rozwiązania programu SharePoint
+### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Aby dodać globalny plik zasobów do rozwiązania programu SharePoint
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], otwórz rozwiązanie programu SharePoint.
+1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwórz rozwiązanie SharePoint.
 
-2. W **Eksploratora rozwiązań**, wybierz węzeł projektu programu SharePoint, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. W **Eksplorator rozwiązań**wybierz węzeł projektu programu SharePoint, a następnie na pasku menu wybierz pozycję **projekt**  >  **Dodaj nowy element**.
 
-3. W **Dodaj nowy element** okna dialogowego wybierz **plik zasobów globalnych** szablonu, a następnie wybierz **Dodaj** przycisku.
+3. W oknie dialogowym **Dodaj nowy element** wybierz szablon **plik zasobów globalnych** , a następnie wybierz przycisk **Dodaj** .
 
    > [!NOTE]
-   > Plik zasobów globalnych szablonu elementu projektu pojawia się tylko w przypadku wybrania elementu projektu programu SharePoint.
+   > Szablon elementu projekt pliku zasobów globalnych pojawia się tylko wtedy, gdy wybrano element projektu programu SharePoint.
 
-4. W **Dodaj zasób** okna dialogowego Wybierz kulturę pliku zasobów, takich jak angielski (Stany Zjednoczone).
+4. W oknie dialogowym **Dodawanie zasobu** wybierz kulturę dla pliku zasobów, na przykład angielski (Stany Zjednoczone).
 
-    Ten krok powoduje dodanie plik globalnych zasobów do swojego rozwiązania w formacie Resource_x_**.** <em>kultury</em><strong>.</strong> Program resx, takich jak *Resource1.en US.resx*.
+    Ten krok powoduje dodanie globalnego pliku zasobów do rozwiązania w formacie, Resource_x_**.** <em>kultura</em><strong>.</strong> resx, np. *Resource1. pl-US. resx*.
 
-5. Gdy **Edytor zasobów** zostanie otwarty w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dodać zasoby do pliku zasobów.
+5. Gdy **Edytor zasobów** zostanie otwarty w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , Dodaj zasoby do pliku zasobów.
 
-### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Aby dodać plik zasobów funkcji do funkcji SharePoint
+### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Aby dodać plik zasobów funkcji do funkcji programu SharePoint
 
-1. Jeśli rozwiązania programu SharePoint nie jest już otwarty w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], otwórz rozwiązanie.
+1. Jeśli rozwiązanie SharePoint nie jest jeszcze otwarte w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , Otwórz rozwiązanie.
 
-2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla nazwy funkcji w obszarze **funkcji** węzła, a następnie wybierz **Dodaj zasób funkcji**.
+2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla nazwy funkcji w węźle **funkcje** , a następnie wybierz pozycję **Dodaj zasób funkcji**.
 
-     Ten krok powoduje dodanie pliku zasobu do funkcji w formacie _Nazwaplikuzasobów_**.** _kultury_**resx**, takich jak *Feature1.en US.resx*.
+     Ten krok powoduje dodanie pliku zasobów do funkcji w formacie, _nazwaplikuzasobów_**.** _Culture_**. resx**, np. *Feature1. pl-US. resx*.
 
-3. Gdy **Edytor zasobów** zostanie otwarty w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dodać zasoby do pliku zasobów.
+3. Gdy **Edytor zasobów** zostanie otwarty w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , Dodaj zasoby do pliku zasobów.
 
 ## <a name="see-also"></a>Zobacz także
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

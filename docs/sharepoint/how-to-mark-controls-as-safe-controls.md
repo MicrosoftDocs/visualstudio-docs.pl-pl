@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Oznaczanie kontrolek jako bezpiecznych formantów | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982730"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016259"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Instrukcje: Oznaczanie kontrolek jako bezpiecznych formantów
-  W celu zapewnienia bezpieczeństwa program SharePoint rozróżnia kontrolki sieci Web, które są chronione przed iniekcją skryptu i kontrolkami sieci Web, które nie są. Dostęp do formantów chronionych lub *bezpiecznych kontrolek*można uzyskać za pomocą niezaufanych użytkowników. Kontrolki można oznaczyć jako bezpieczne we właściwości wpisy kontroli bezpieczeństwa elementu projektu programu SharePoint lub w **projektancie pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz artykuł
+  W celu zapewnienia bezpieczeństwa program SharePoint rozróżnia kontrolki sieci Web, które są chronione przed iniekcją skryptu i kontrolkami sieci Web, które nie są. Dostęp do formantów chronionych lub *bezpiecznych kontrolek*można uzyskać za pomocą niezaufanych użytkowników. Kontrolki można oznaczyć jako bezpieczne we właściwości wpisy kontroli bezpieczeństwa elementu projektu programu SharePoint lub w **projektancie pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz
 
-- [Ustawienia pliku Web. config zmieniają](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) i [rejestrują zestaw części sieci Web jako bezpieczną kontrolę](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
+- [web.config zmianę ustawień plików](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) i [zarejestrowanie zestawu składnika Web Part jako bezpiecznej kontroli](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
 > [!IMPORTANT]
 > Te procedury są przeznaczone do celów informacyjnych. Oznacz formanty jako bezpieczne tylko wtedy, gdy masz pewność, że są one bezpieczne.
@@ -63,7 +62,7 @@ ms.locfileid: "72982730"
 
      Zwróć uwagę na przestrzeń nazw kontrolki, ponieważ jest ona używana później.
 
-3. Na pasku menu wybierz kolejno opcje **kompiluj** > **Kompiluj rozwiązanie** , aby skompilować projekt.
+3. Na pasku menu wybierz **kompilację**Kompiluj  >  **rozwiązanie** , aby skompilować projekt.
 
 4. Utwórz kolejne rozwiązanie programu SharePoint.
 

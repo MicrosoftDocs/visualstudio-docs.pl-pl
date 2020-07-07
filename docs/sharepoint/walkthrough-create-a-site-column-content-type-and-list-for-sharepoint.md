@@ -1,7 +1,7 @@
 ---
 title: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
-ms.translationtype: MT
+ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879359"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015277"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Przewodnik: Tworzenie kolumny witryny, typu zawartości i listy dla programu SharePoint
   W poniższych procedurach pokazano, jak utworzyć niestandardowe kolumny witryny programu SharePoint — lub *pola*— a także typ zawartości, która używa kolumn witryny. Przedstawiono w nim również sposób tworzenia listy korzystającej z nowego typu zawartości.
@@ -44,24 +43,24 @@ ms.locfileid: "74879359"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Obsługiwane edycje systemu Windows i programu SharePoint.
+- Obsługiwane wersje systemu Windows i programu SharePoint.
 
 - [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Tworzenie niestandardowych kolumn witryny
- Ten przykład tworzy listę do zarządzania pacjentami w szpitalu. Najpierw należy utworzyć projekt programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i dodać do niego kolumny witryny w następujący sposób.
+ Ten przykład tworzy listę do zarządzania pacjentami w szpitalu. Najpierw należy utworzyć projekt SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i dodać do niego kolumny witryny, jak pokazano poniżej.
 
 #### <a name="to-create-the-project"></a>Aby utworzyć projekt
 
-1. W menu **plik** [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wybierz pozycję **Nowy** > **projekt**.
+1. W menu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **plik** wybierz pozycję **Nowy**  >  **projekt**.
 ::: moniker range="=vs-2017"
-2. W oknie **dialogowym Nowy projekt** w obszarze **Wizualizacja C#**  lub **Visual Basic**rozwiń węzeł **Office/SharePoint** , a następnie wybierz pozycję **rozwiązania programu SharePoint**.
+2. W oknie dialogowym **Nowy projekt** w obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **Office/SharePoint** , a następnie wybierz pozycję **rozwiązania programu SharePoint**.
 
 3. W okienku **Szablony** wybierz **pusty projekt programu SharePoint** dla konkretnej zainstalowanej wersji programu SharePoint. Na przykład jeśli masz instalację programu SharePoint 2016, wybierz szablon **programu sharepoint 2016-pusty** .  
 
 4. Zmień nazwę projektu na **klinikę**, a następnie wybierz przycisk **OK** .
 
-5. W oknie dialogowym **Określanie poziomu lokacji i zabezpieczeń dla debugowania** wprowadź adres URL lokalnej witryny programu SharePoint, do której chcesz dodać nowy element pola niestandardowego, lub Użyj domyślnej lokalizacji (`http://<`*SystemName*`>/)`.
+5. W oknie dialogowym **Określanie poziomu lokacji i zabezpieczeń dla debugowania** wprowadź adres URL lokalnej witryny programu SharePoint, do której chcesz dodać nowy element pola niestandardowego, lub Użyj domyślnej lokalizacji ( `http://<` *SystemName* `>/)` .
 
 6. W sekcji **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** Użyj wartości domyślnej **wdrożonej jako rozwiązanie w trybie piaskownicy**.
 
@@ -75,7 +74,7 @@ ms.locfileid: "74879359"
 
 3. Zmień nazwę projektu na **klinikę**, a następnie wybierz przycisk **Utwórz** .
 
-4. W oknie dialogowym **Określanie poziomu lokacji i zabezpieczeń dla debugowania** wprowadź adres URL lokalnej witryny programu SharePoint, do której chcesz dodać nowy element pola niestandardowego, lub Użyj domyślnej lokalizacji (`http://<`*SystemName*`>/)`.
+4. W oknie dialogowym **Określanie poziomu lokacji i zabezpieczeń dla debugowania** wprowadź adres URL lokalnej witryny programu SharePoint, do której chcesz dodać nowy element pola niestandardowego, lub Użyj domyślnej lokalizacji ( `http://<` *SystemName* `>/)` .
 
 5. W sekcji **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** Użyj wartości domyślnej **wdrożonej jako rozwiązanie w trybie piaskownicy**.
 
@@ -86,11 +85,11 @@ ms.locfileid: "74879359"
 
 #### <a name="to-add-site-columns"></a>Aby dodać kolumny witryny
 
-1. Dodaj nową kolumnę witryny. W tym celu w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **kliniki** , a następnie wybierz polecenie **Dodaj** > **nowy element**.
+1. Dodaj nową kolumnę witryny. W tym celu w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **kliniki** , a następnie wybierz polecenie **Dodaj**  >  **nowy element**.
 
 2. W oknie dialogowym **Dodaj nowy element** wybierz **kolumnę lokacja**, Zmień nazwę na **pacjentname**, a następnie wybierz przycisk **Dodaj** .
 
-3. W pliku *. XML* kolumny witryny pozostaw ustawienie **Typ** jako **tekst**, Zmień ustawienie **grupy** na **kolumny witryny kliniki**. Po zakończeniu, plik *. XML* kolumny witryny powinien wyglądać podobnie do poniższego przykładu.
+3. W pliku *Elements.xml* kolumny witryny pozostaw ustawienie **Typ** jako **tekst**, Zmień ustawienie **grupy** na **kolumny witryny kliniki**. Po zakończeniu plik *Elements.xml* kolumny witryny powinien wyglądać podobnie do poniższego przykładu.
 
     ```xml
     <Field
@@ -116,9 +115,9 @@ ms.locfileid: "74879359"
 
 1. Dodaj typ zawartości do projektu. W tym celu w **Eksplorator rozwiązań**wybierz węzeł projektu
 
-2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-3. W obszarze **Wizualizacja C#**  lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+3. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 4. W okienku **Szablony** wybierz szablon **Typ zawartości** , Zmień nazwę na dane **pacjenta**, a następnie wybierz przycisk **Dodaj** .
 
@@ -141,7 +140,7 @@ ms.locfileid: "74879359"
 
 10. Zmień **nazwę grupy** na **typy zawartości kliniki**, a pozostałe ustawienia pozostaw wartości domyślne.
 
-11. Na pasku menu wybierz kolejno opcje **plik** > **Zapisz wszystko**, a następnie zamknij projektanta typów zawartości.
+11. Na pasku menu wybierz kolejno opcje **plik**  >  **Zapisz wszystko**, a następnie zamknij projektanta typów zawartości.
 
 ## <a name="create-a-list"></a>Utwórz listę
  Teraz Utwórz listę, która używa nowego typu zawartości i kolumn lokacji.
@@ -150,13 +149,13 @@ ms.locfileid: "74879359"
 
 1. Dodaj listę do projektu. W tym celu w **Eksplorator rozwiązań**wybierz węzeł projektu.
 
-2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-3. W obszarze **Wizualizacja C#**  lub **Visual Basic**rozwiń węzeł **SharePoint** .
+3. W obszarze **Visual C#** lub **Visual Basic**rozwiń węzeł **SharePoint** .
 
 4. W okienku **Szablony** wybierz szablon **listy** , Zmień nazwę na **pacjentów**, a następnie wybierz przycisk **Dodaj** .
 
-5. Pozostaw pole wyboru **Dostosuj listę na podstawie** ustawienia jako **domyślne (Lista niestandardowa)** , a następnie wybierz przycisk **Zakończ** .
+5. Pozostaw pole wyboru **Dostosuj listę na podstawie** ustawienia jako **domyślne (Lista niestandardowa)**, a następnie wybierz przycisk **Zakończ** .
 
 6. W projektancie listy wybierz przycisk **typy zawartości** , aby wyświetlić okno dialogowe **Ustawienia typu zawartości** .
 
@@ -172,7 +171,7 @@ ms.locfileid: "74879359"
 
     - Telefon domowy
 
-    - E-mail
+    - E-Mail
 
     - Nazwa lekarza
 
@@ -205,7 +204,7 @@ ms.locfileid: "74879359"
 
     - Telefon domowy
 
-    - E-mail
+    - E-Mail
 
     - Nazwa lekarza
 
@@ -222,7 +221,7 @@ ms.locfileid: "74879359"
 
 #### <a name="to-test-the-application"></a>Aby przetestować aplikację
 
-1. Na pasku menu wybierz kolejno opcje **plik** > **Zapisz wszystko**.
+1. Na pasku menu wybierz kolejno opcje **plik**  >  **Zapisz wszystko**.
 
 2. Wybierz klawisz **F5** , aby uruchomić aplikację.
 
@@ -230,7 +229,7 @@ ms.locfileid: "74879359"
 
 3. Na pasku Szybki pasek nawigacyjny wybierz łącze **pacjentów** , aby wyświetlić listę **pacjentów** .
 
-     Nazwy kolumn na liście powinny być zgodne z ustawieniami wprowadzonymi na karcie **widoki** w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+     Nazwy kolumn na liście powinny być zgodne z ustawieniami wprowadzonymi na karcie **widoki** w temacie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 4. Wybierz link **Dodaj nowy element** , aby utworzyć kartę informacji pacjenta.
 
@@ -243,4 +242,4 @@ ms.locfileid: "74879359"
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Instrukcje: Tworzenie niestandardowego typu pola](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
 - [Typy zawartości](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))
-- [Kolumny](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))
+- [kolumny](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))

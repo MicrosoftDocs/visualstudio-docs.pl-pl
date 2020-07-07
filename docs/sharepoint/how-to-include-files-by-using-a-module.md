@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dołączanie plików za pomocą modułu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dołączanie plików przy użyciu modułu | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,55 +13,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813647"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016304"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Instrukcje: Dołączanie plików za pomocą modułu
-  *Moduły* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułów) to kontenery, które umożliwia wdrażanie obrazów, plików tekstowych lub plików, takich jak strony wzorcowe ASPX w programie SharePoint.
+# <a name="how-to-include-files-by-using-a-module"></a>Instrukcje: Dołączanie plików przy użyciu modułu
+  *Moduły* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułami) to kontenery, które umożliwiają wdrażanie plików, takich jak strony wzorcowe aspx, pliki tekstowe lub obrazy, do programu SharePoint.
 
- Możesz wdrożyć plik do biblioteki dokumentów lub jako zwykłego pliku (np. default.aspx) poza bibliotekę dokumentów. Aby dodać plik do biblioteki dokumentów, należy określić `Type="GhostableInLibrary"` jako atrybut w **pliku** elementu. To ustawienie powoduje, że Utwórz element listy, aby przejść z plikiem, gdy zostanie dodany do biblioteki programu SharePoint. Aby wdrożyć plik poza bibliotekę dokumentów, albo określić `Type="Ghostable"` lub po prostu pominąć **typu** atrybutu.
+ Możesz wybrać wdrożenie pliku w bibliotece dokumentów lub jako normalny plik (na przykład Default. aspx) poza biblioteką dokumentów. Aby dodać plik do biblioteki dokumentów, określ `Type="GhostableInLibrary"` jako atrybut w elemencie **pliku** . To ustawienie powoduje, że program SharePoint utworzy element listy, który będzie przełączać się do pliku, gdy zostanie on dodany do biblioteki. Aby wdrożyć plik poza biblioteką dokumentów, należy określić `Type="Ghostable"` lub po prostu pominąć atrybut **typu** .
 
-## <a name="add-a-module-to-a-sharepoint-solution"></a>Dodaj moduł do rozwiązania programu SharePoint
+## <a name="add-a-module-to-a-sharepoint-solution"></a>Dodawanie modułu do rozwiązania programu SharePoint
 
 #### <a name="to-add-a-module"></a>Aby dodać moduł
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otwórz lub Utwórz projekt programu SharePoint.
+1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwórz lub Utwórz projekt programu SharePoint.
 
-     Aby uzyskać więcej informacji, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).
+     Aby uzyskać więcej informacji, zobacz [Szablony projektów i elementów projektu programu SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. W **Eksploratora rozwiązań**, wybierz węzeł projektu, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+2. W **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
-     **Dodaj nowy element** zostanie otwarte okno dialogowe.
+     Zostanie otwarte okno dialogowe **Dodaj nowy element** .
 
-3. Na liście szablonów programu SharePoint, wybierz opcję **modułu** szablonu, a następnie wybierz **Dodaj** przycisku.
+3. Na liście szablonów programu SharePoint wybierz szablon **modułu** , a następnie wybierz przycisk **Dodaj** .
 
-     W tym kroku tworzy węzeł w projekcie o nazwie Module1.
+     Ten krok powoduje utworzenie węzła w projekcie o nazwie Module1.
 
-4. W obszarze Module1, Usuń *przykład.txt* pliku.
+4. W obszarze Module1 Usuń plik *Sample.txt* .
 
-     Przykład.txt znajduje się we wszystkich modułach nowy przykład celów i nie jest potrzebna. (Należy pamiętać, że usunięcie pliku spowoduje również usunięcie jego wpis z modułu *Elements.xml* pliku.)
+     Sample.txt jest uwzględniona we wszystkich nowych modułach na przykład i nie jest wymagana. (Należy zauważyć, że usunięcie pliku spowoduje również usunięcie jego wpisu z *Elements.xml* pliku modułu).
 
-5. Pliki do wdrożenia na strukturę określonego folderu w programie SharePoint, utworzyć te foldery, w obszarze Module1 w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , wybierając węzeł Module1, a następnie na pasku menu, wybierając **projektu**, **New Folder**.
+5. Jeśli chcesz, aby pliki zostały wdrożone w określonej strukturze folderów w programie SharePoint, Utwórz te foldery w obszarze Module1 w programie, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wybierając węzeł Module1, a następnie na pasku menu wybierz **projekt**, **Nowy folder**.
 
-6. Wybierz folder, w której chcesz dodać plik, a następnie na pasku menu wybierz **projektu**, **Dodaj istniejący element**.
+6. Wybierz folder, do którego chcesz dodać plik, a następnie na pasku menu wybierz **projekt**, **Dodaj istniejący element**.
 
-7. Wybierz jeden lub więcej plików, które mają być wdrażane do programu SharePoint, a następnie wybierz **Dodaj** przycisku.
+7. Wybierz co najmniej jeden plik, który chcesz wdrożyć w programie SharePoint, a następnie wybierz przycisk **Dodaj** .
 
-     Po dodaniu pliku do projektu wpis dla niej jest automatycznie dodawane do pliku Elements.xml modułu. Podczas wdrażania projektu pliki są kopiowane do programu SharePoint server względem katalogu głównego projektu, która jest określona przez **pliku** elementu **adresu Url** atrybutów, takich jak `Url="Module1/New Folder/SomeFile.doc`. Jeśli chcesz zmienić lokalizację wdrażania dla pliku, albo przenieść do innego folderu w **Eksploratora rozwiązań** lub zmienić jego **adresu Url** ustawienie.
+     Po dodaniu pliku do projektu, jego wpis jest automatycznie dodawany do pliku Elements.xml modułu. Po wdrożeniu projektu pliki są kopiowane do programu SharePoint Server względem katalogu głównego projektu, który jest określony przez atrybut **adresu URL** elementu **pliku** , na przykład `Url="Module1/New Folder/SomeFile.doc` . Jeśli chcesz zmienić lokalizację wdrożenia pliku, przenieś go do innego folderu w **Eksplorator rozwiązań** lub zmień jego ustawienie **adresu URL** .
 
-8. Wszystkie pliki, które mają być wyświetlane w bibliotece dokumentów, można dołączyć `Type="GhostableInLibrary"` atrybutu do swojego wpisu w *Elements.xml*. Na przykład
+8. Dla wszystkich plików, które mają być wyświetlane w bibliotece dokumentów, Dołącz `Type="GhostableInLibrary"` atrybut do ich wpisu w *Elements.xml*. Na przykład
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />
     ```
 
-9. Wdrażanie projektu.
+9. Wdróż projekt.
 
-     Skopiuj pliki do określonej lokalizacji w programie SharePoint.
+     Pliki są kopiowane do określonych lokalizacji w programie SharePoint.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

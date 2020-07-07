@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa2fec260921d66328b2c16075d44b38686c08de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982556"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015401"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Instrukcje: korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień
   Za pomocą pliku zasobów można zapewnić zlokalizowane nazwy, definiować właściwości i stosować uprawnienia tor, które są zdefiniowane w modelu łączności danych biznesowych (BDC). Aby określić te informacje, należy dodać element **zasobu łączności danych firmowych** do projektu, który zawiera element **modelu łączności danych firmowych** . Następnie należy określić nazwy, właściwości i uprawnienia, edytując kod XML dla pliku zasobu.
@@ -33,7 +32,7 @@ ms.locfileid: "72982556"
 
 1. W **Eksplorator rozwiązań**rozwiń folder dla projektu programu SharePoint, a następnie wybierz folder, który zawiera model usługi BDC.
 
-2. Na pasku menu wybierz **projekt**  > **Dodaj nowy element**.
+2. Na pasku menu wybierz **projekt**  >  **Dodaj nowy element**.
 
 3. Rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 

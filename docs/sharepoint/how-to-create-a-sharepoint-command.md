@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Tworzenie polecenia SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c07d541dc4f68f33d48e7cb41b6bc3923b2ea52
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189231"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016216"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Instrukcje: Tworzenie polecenia SharePoint
   Jeśli chcesz użyć modelu obiektów serwera w rozszerzeniu narzędzi programu SharePoint, musisz utworzyć niestandardowe *polecenie programu SharePoint* , aby wywołać interfejs API. Zdefiniuj polecenie programu SharePoint w zestawie, które może bezpośrednio wywołać model obiektów serwera.
@@ -33,7 +32,7 @@ ms.locfileid: "73189231"
     - Dotyczy platformy AnyCPU lub x64. Domyślnie platformą docelową dla projektów biblioteki klas jest AnyCPU. Aby uzyskać więcej informacji na temat wybierania platformy docelowej, zobacz [How to: Configure projects to target platforms](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    > Nie można zaimplementować polecenia programu SharePoint w tym samym projekcie, który definiuje rozszerzenie narzędzi programu SharePoint, ponieważ polecenia programu SharePoint są przeznaczone dla .NET Framework 3,5 i rozszerzeń narzędzi programu SharePoint przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Należy zdefiniować wszystkie polecenia programu SharePoint, które są używane przez rozszerzenie w oddzielnym projekcie. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Nie można zaimplementować polecenia programu SharePoint w tym samym projekcie, który definiuje rozszerzenie narzędzi programu SharePoint, ponieważ polecenia programu SharePoint są przeznaczone dla narzędzi .NET Framework 3,5 i SharePoint Tools Target [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . Należy zdefiniować wszystkie polecenia programu SharePoint, które są używane przez rozszerzenie w oddzielnym projekcie. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Dodaj odwołania do następujących zestawów:
 
@@ -45,7 +44,7 @@ ms.locfileid: "73189231"
 
     - Może mieć jeden lub dwa parametry.
 
-         Pierwszy parametr musi być obiektem <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext>. Ten obiekt zawiera Microsoft. SharePoint. SPSite lub Microsoft. SharePoint. SPWeb, w którym polecenie jest wykonywane. Udostępnia również obiekt <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger>, który może służyć do zapisywania komunikatów w oknie **danych wyjściowych** lub **Lista błędów** oknie w programie Visual Studio.
+         Pierwszy parametr musi być <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> obiektem. Ten obiekt zawiera Microsoft. SharePoint. SPSite lub Microsoft. SharePoint. SPWeb, w którym polecenie jest wykonywane. Udostępnia również <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> obiekt, którego można użyć do zapisu komunikatów w oknie **danych wyjściowych** lub oknie **Lista błędów** w programie Visual Studio.
 
          Drugi parametr może być wybranym typem, ale ten parametr jest opcjonalny. Możesz dodać ten parametr do polecenia programu SharePoint, jeśli chcesz przekazać dane z rozszerzenia narzędzi SharePoint Tools do polecenia.
 
@@ -60,12 +59,12 @@ ms.locfileid: "73189231"
      Należy określić ten sam unikatowy identyfikator, gdy wywołasz polecenie z rozszerzenia narzędzi programu SharePoint. Aby uzyskać więcej informacji, zobacz [How to: Execute a SharePoint Command](../sharepoint/how-to-execute-a-sharepoint-command.md).
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu demonstruje polecenie programu SharePoint, które ma identyfikator `Contoso.Commands.UpgradeSolution`. To polecenie używa interfejsów API w modelu obiektów serwera do uaktualnienia do wdrożonego rozwiązania.
+ Poniższy przykład kodu demonstruje polecenie programu SharePoint o identyfikatorze `Contoso.Commands.UpgradeSolution` . To polecenie używa interfejsów API w modelu obiektów serwera do uaktualnienia do wdrożonego rozwiązania.
 
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
 
- Oprócz niejawnego pierwszego parametru <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> to polecenie ma także niestandardowy parametr ciągu, który zawiera pełną ścieżkę pliku. wsp, który jest uaktualniany do witryny programu SharePoint. Aby wyświetlić ten kod w kontekście większego przykładu, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+ Oprócz niejawnego pierwszego <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parametru to polecenie ma także niestandardowy parametr ciągu, który zawiera pełną ścieżkę pliku. wsp, który jest uaktualniany do witryny programu SharePoint. Aby wyświetlić ten kod w kontekście większego przykładu, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="compiling-the-code"></a>Kompilowanie kodu
  Ten przykład wymaga odwołania do następujących zestawów:
@@ -75,7 +74,7 @@ ms.locfileid: "73189231"
 - Microsoft. SharePoint
 
 ## <a name="deploying-the-command"></a>Wdrażanie polecenia
- Aby wdrożyć polecenie, należy uwzględnić zestaw poleceń w tym samym pakiecie rozszerzenia [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] (*VSIX*) z zestawem rozszerzeń, który używa polecenia. Należy również dodać wpis dla zestawu poleceń w pliku Extension. vsixmanifest. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Aby wdrożyć polecenie, należy uwzględnić zestaw poleceń w tym samym [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiecie rozszerzenia (*VSIX*) z zestawem rozszerzeń, który używa polecenia. Należy również dodać wpis dla zestawu poleceń w pliku Extension. vsixmanifest. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Wywoływanie modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)

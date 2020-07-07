@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do programu Visual Studio | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
@@ -15,19 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9924b3d709f882fdd552708a795a4b23bd22b070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665402"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015705"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Przewodnik: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do programu Visual Studio
-  W tym instruktażu przedstawiono sposób importowania przepływu pracy wielokrotnego użytku utworzonego w programie SharePoint Designer 2010 do projektu przepływu pracy programu SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+  W tym instruktażu przedstawiono sposób importowania przepływu pracy wielokrotnego użytku utworzonego w programie SharePoint Designer 2010 do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu przepływu pracy programu SharePoint.
 
- Przepływy pracy utworzone w projektancie programu SharePoint lub *deklaracyjne przepływy pracy*składają się z instrukcji [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] zamiast kodu. Program SharePoint Designer 2010 wprowadza *przepływy pracy wielokrotnego użytku*, które są przenośnymi, deklaratywnymi przepływami pracy, które mogą być używane przez różne listy w witrynach programu SharePoint.
+ Przepływy pracy utworzone w projektancie programu SharePoint lub *deklaracyjne przepływy pracy*składają się z [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcji zamiast kodu. Program SharePoint Designer 2010 wprowadza *przepływy pracy wielokrotnego użytku*, które są przenośnymi, deklaratywnymi przepływami pracy, które mogą być używane przez różne listy w witrynach programu SharePoint.
 
- Przepływy pracy utworzone w [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], takie jak sekwencyjne i przepływy pracy automatu, są nazywane *przepływami pracy kodu*. Przepływy pracy kodu składają się z plików XML i modułów kodu, w których użytkownicy mogą dostosować zachowanie przepływu pracy.
+ Przepływy pracy utworzone w programie [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] , takie jak sekwencyjne i przepływy pracy automatu, są nazywane *przepływami pracy kodu*. Przepływy pracy kodu składają się z plików XML i modułów kodu, w których użytkownicy mogą dostosować zachowanie przepływu pracy.
 
  Program Visual Studio umożliwia importowanie przepływów pracy wielokrotnego użytku utworzonych w programie SharePoint Designer 2010 i konwertowanie ich na przepływy pracy kodu do użycia w witrynach programu SharePoint.
 
@@ -37,7 +36,7 @@ ms.locfileid: "72665402"
 
 - Eksportowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do pliku *. wsp* i do programu SharePoint.
 
-- Importowanie pliku *wsp* do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] przy użyciu importu przepływu pracy do wielokrotnego użytku.
+- Importowanie pliku *. wsp* do programu przy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] użyciu importu przepływu pracy do wielokrotnego użytku.
 
 - Modyfikowanie przepływu pracy przez dodanie kodu.
 
@@ -48,7 +47,7 @@ ms.locfileid: "72665402"
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Obsługiwane wersje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.
+- Obsługiwane wersje programów [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i SharePoint.
 
 - Program Visual Studio.
 
@@ -59,7 +58,7 @@ ms.locfileid: "72665402"
 
 #### <a name="to-create-sharepoint-subsites"></a>Aby utworzyć podwitrynę programu SharePoint
 
-1. W programie SharePoint Designer 2010 na pasku menu wybierz pozycję **plik**  > **nową pustą witrynę sieci Web**.
+1. W programie SharePoint Designer 2010 na pasku menu wybierz pozycję **plik**  >  **Nowa pusta witryna sieci Web**.
 
 2. W oknie dialogowym **Nowa pusta witryna sieci Web** przejdź do witryny programu SharePoint, w której chcesz utworzyć przepływ pracy, lub użyj wartości http://<em>SystemName</em>/, a następnie wybierz przycisk **OK** .
 
@@ -73,7 +72,7 @@ ms.locfileid: "72665402"
 
     Spowoduje to otwarcie nowej podwitryny w programie SharePoint Designer. Zamknij to wystąpienie programu SharePoint Designer i wróć do pierwszego wystąpienia (lokacji najwyższego poziomu).
 
-6. Powtórz kroki 3-5, aby utworzyć drugą podlokację, tym razem zastępując **podlokację** programu word w [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] za pomocą **SPD2**.
+6. Powtórz kroki 3-5, aby utworzyć drugą podlokację, tym razem zastępując **podlokację** programu Word [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] w **SPD2**.
 
 ## <a name="create-a-sharepoint-designer-reusable-workflow"></a>Tworzenie przepływu pracy wielokrotnego użytku projektanta programu SharePoint
  Ponieważ program SharePoint nie zawiera żadnych przepływów pracy wielokrotnego użytku, których można użyć do tego przykładu, utworzysz go. W tym prostym przepływie pracy, gdy użytkownik wprowadzi nowe zadanie na liście zadań z określonym tytułem, zadanie zostanie przypisane do tego użytkownika.
@@ -121,7 +120,7 @@ ms.locfileid: "72665402"
      Instrukcja Action odczytuje teraz **zestaw przypisano do do bieżącego elementu: CreatedBy**.
 
 ## <a name="save-and-deploy-the-reusable-workflow"></a>Zapisz i Wdróż przepływ pracy wielokrotnego użytku
- Ponieważ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] może importować tylko pliki *wsp* , należy zapisać przepływ pracy wielokrotnego użytku jako plik *. wsp* i wdrożyć go w programie SharePoint przed zaimportowaniem go do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Ponieważ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] program może importować tylko pliki *. wsp* , należy zapisać przepływ pracy wielokrotnego użytku jako plik *. wsp* i wdrożyć go w programie SharePoint przed zaimportowaniem go do programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 > [!IMPORTANT]
 > Jeśli wystąpi błąd w czasie wykonywania poniższej procedury, należy wykonać procedurę w systemie, który ma dostęp do witryny programu SharePoint.
@@ -149,19 +148,19 @@ ms.locfileid: "72665402"
 9. W oknie dialogowym **Pobieranie pliku** wybierz przycisk **Zapisz** , aby zapisać plik *. wsp* w systemie lokalnym.
 
 ## <a name="import-the-wsp-file-into-visual-studio"></a>Zaimportuj plik wsp do programu Visual Studio
- Zaimportuj plik *. wsp* do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] przy użyciu importowania projektu przepływu pracy wielokrotnego użytku. Ten projekt konwertuje przepływ pracy na podstawie deklaratywnego przepływu pracy do kodu w przepływie pracy. Po przekonwertowaniu przepływu pracy zostanie użyty kod modyfikujący jego zachowanie.
+ Zaimportuj plik *wsp* do programu przy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] użyciu importu przepływu pracy do wielokrotnego użytku. Ten projekt konwertuje przepływ pracy na podstawie deklaratywnego przepływu pracy do kodu w przepływie pracy. Po przekonwertowaniu przepływu pracy zostanie użyty kod modyfikujący jego zachowanie.
 
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>Aby zaimportować przepływu danych z pliku .wsp, a następnie go zmodyfikować
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na pasku menu wybierz pozycję **plik**  > **Nowy**  > **projekt**.
+1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **SharePoint** w obszarze  **C# Wizualizacja** lub **Visual Basic**, a następnie wybierz węzeł **2010** .
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **SharePoint** w obszarze **Visual C#** lub **Visual Basic**, a następnie wybierz węzeł **2010** .
 
 3. W okienku **Szablony** wybierz szablon **przepływu pracy wielokrotnego użytku programu SharePoint 2010** , pozostaw nazwę projektu jako **WorkflowImportProject1**, a następnie wybierz przycisk **OK** .
 
     Zostanie wyświetlony Kreator dostosowania programu SharePoint.
 
-4. Na stronie **Określanie poziomu lokacji i zabezpieczeń na potrzeby debugowania** wprowadź [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] dla drugiej utworzonej wcześniej witryny programu SharePoint: http://<em>system Name</em>/SPD2.
+4. Na stronie **Określanie poziomu lokacji i zabezpieczeń na potrzeby debugowania** wprowadź [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] nazwę dla drugiej podwitryny programu SharePoint, która została wcześniej utworzona: http://<em>system Name</em>/SPD2.
 
 5. W sekcji **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz przycisk opcji **Wdróż jako farmę** , a następnie wybierz przycisk **dalej** .
 
@@ -176,13 +175,13 @@ ms.locfileid: "72665402"
 
 7. W polu **Wybierz elementy do zaimportowania** wybierz przepływ pracy **zadania SPD** , a następnie wybierz przycisk **Zakończ** .
 
-    Po zakończeniu operacji importowania zostanie utworzony projekt o nazwie **WorkflowImportProject1** zawierający przepływ pracy o nazwie **SPD_Workflow_TestFT**. W tym folderze znajduje się plik definicji przepływu pracy *. XML* i plik projektanta przepływu pracy ( *. xoml*). Projektant zawiera dwa pliki: plik reguł (. Rules) i plik związany z kodem ( *. cs* lub *. vb*, w zależności od języka programowania projektu).
+    Po zakończeniu operacji importowania zostanie utworzony projekt o nazwie **WorkflowImportProject1** zawierający przepływ pracy o nazwie **SPD_Workflow_TestFT**. W tym folderze jest plikiem definicji przepływu pracy *Elements.xml* i plikiem projektanta przepływu pracy (*. xoml*). Projektant zawiera dwa pliki: plik reguł (. Rules) i plik związany z kodem ( *. cs* lub *. vb*, w zależności od języka programowania projektu).
 
 8. W **Eksplorator rozwiązań**Usuń folder **inne zaimportowane pliki** .
 
-9. W pliku *elementy. XML* Usuń `InstantiationURL="_layouts/IniErkflIP.sspx"`.
+9. W pliku *Elements.xml* Usuń `InstantiationURL="_layouts/IniErkflIP.sspx"` .
 
-10. W **Eksplorator rozwiązań**wybierz pozycję **WorkflowImportProject1**, a następnie na pasku menu wybierz pozycję **projekt**  > **Ustaw jako projekt startowy** , aby ustawić **WorkflowImportProject1** jako element startowy.
+10. W **Eksplorator rozwiązań**wybierz pozycję **WorkflowImportProject1**, a następnie na pasku menu wybierz pozycję **projekt**  >  **Ustaw jako projekt startowy** , aby ustawić **WorkflowImportProject1** jako element startowy.
 
      Spowoduje to wyświetlenie listy natychmiast podczas debugowania projektu.
 
@@ -194,7 +193,7 @@ ms.locfileid: "72665402"
 
     3. Wypełnij brakujące wartości w Kreatorze dostosowywania programu SharePoint, a następnie wybierz przycisk **Zakończ** .
 
-12. Wybierz plik xoml, a następnie na pasku menu wybierz polecenie **wyświetl**  > **projektanta** , aby wyświetlić zaimportowany przepływ pracy w Projektancie przepływu pracy.
+12. Wybierz plik xoml, a następnie na pasku menu wybierz polecenie **View**  >  **Projektant** widoków, aby wyświetlić zaimportowany przepływ pracy w Projektancie przepływu pracy.
 
 13. W węźle **Windows Workflow v 3.0** **przybornika**wykonaj jedną z następujących czynności:
 
@@ -215,7 +214,7 @@ ms.locfileid: "72665402"
      [!code-csharp[SP_SPDWFImport#1](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#1)]
      [!code-vb[SP_SPDWFImport#1](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#1)]
 
-16. Zastąp `codeActivity1_ExecuteCode` następującym:
+16. Zamień na `codeActivity1_ExecuteCode` następujące elementy:
 
      [!code-csharp[SP_SPDWFImport#2](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#2)]
      [!code-vb[SP_SPDWFImport#2](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#2)]
@@ -225,7 +224,7 @@ ms.locfileid: "72665402"
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>Aby wdrożyć projekt i skojarzyć przepływ danych
 
-1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wybierz klawisz **F5** , aby uruchomić i wdrożyć przekonwertowany projekt przepływu pracy.
+1. W programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Wybierz klawisz **F5** , aby uruchomić i wdrożyć przekonwertowany projekt przepływu pracy.
 
 2. Na pasku szybkiego uruchamiania wybierz link **zadania** , aby wyświetlić listę zadań.
 

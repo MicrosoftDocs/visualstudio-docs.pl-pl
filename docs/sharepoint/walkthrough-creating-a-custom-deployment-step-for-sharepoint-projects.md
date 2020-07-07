@@ -1,7 +1,7 @@
 ---
 title: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0053b279dfdc0fd80608efb7fb663cacf217f1c7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984940"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015897"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, program Visual Studio wykonuje serię kroków wdrożenia w określonej kolejności. Program Visual Studio zawiera wiele wbudowanych kroków wdrażania, ale można również utworzyć własne.
@@ -67,11 +66,11 @@ ms.locfileid: "72984940"
 
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX
 
-1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-2. Na pasku menu wybierz kolejno pozycje **plik**  > **Nowy**  > **projekt**.
+2. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
 
-3. W oknie dialogowym **Nowy projekt** rozwiń węzły **wizualizacji C#**  lub **Visual Basic** , a następnie wybierz węzeł **rozszerzalności** .
+3. W oknie dialogowym **Nowy projekt** rozwiń węzły **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **rozszerzalności** .
 
     > [!NOTE]
     > Węzeł **rozszerzalności** jest dostępny tylko w przypadku instalowania programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz sekcję wymagania wstępne we wcześniejszej części tego tematu.
@@ -80,19 +79,19 @@ ms.locfileid: "72984940"
 
 5. Wybierz szablon **projektu VSIX** , nazwij projekt **UpgradeDeploymentStep**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **UpgradeDeploymentStep** do **Eksplorator rozwiązań**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **UpgradeDeploymentStep** do **Eksplorator rozwiązań**.
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie UpgradeDeploymentStep, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń węzły **wizualizacji C#**  lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
+2. W oknie dialogowym **Nowy projekt** rozwiń węzły **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
 3. W górnej części okna dialogowego wybierz pozycję **.NET Framework 4,5** na liście wersji .NET Framework.
 
 4. Wybierz szablon projektu **Biblioteka klas** , nazwij projekt **DeploymentStepExtension**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **DeploymentStepExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **DeploymentStepExtension** do rozwiązania i otwiera domyślny plik kodu Class1.
 
 5. Usuń plik kodu Class1 z projektu.
 
@@ -100,7 +99,7 @@ ms.locfileid: "72984940"
 
 1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie UpgradeDeploymentStep, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz węzeł **systemu Windows** .
+2. W oknie dialogowym **Nowy projekt** rozwiń pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz węzeł **systemu Windows** .
 
 3. W górnej części okna dialogowego wybierz pozycję **.NET Framework 3,5** na liście wersji .NET Framework.
 
@@ -140,7 +139,7 @@ ms.locfileid: "72984940"
     - Microsoft. VisualStudio. SharePoint. Commands
 
 ## <a name="define-the-custom-deployment-step"></a>Definiowanie niestandardowego kroku wdrożenia
- Utwórz klasę, która definiuje krok wdrożenia uaktualniania. Aby zdefiniować krok wdrożenia, Klasa implementuje interfejs <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>. Zaimplementuj ten interfejs w każdym przypadku, gdy chcesz zdefiniować niestandardowy krok wdrożenia.
+ Utwórz klasę, która definiuje krok wdrożenia uaktualniania. Aby zdefiniować krok wdrożenia, Klasa implementuje <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interfejs. Zaimplementuj ten interfejs w każdym przypadku, gdy chcesz zdefiniować niestandardowy krok wdrożenia.
 
 #### <a name="to-define-the-custom-deployment-step"></a>Aby zdefiniować niestandardowy krok wdrożenia
 
@@ -155,7 +154,7 @@ ms.locfileid: "72984940"
 ## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Utwórz konfigurację wdrożenia obejmującą niestandardowy krok wdrożenia
  Utwórz rozszerzenie projektu dla nowej konfiguracji wdrożenia, w tym kilka wbudowanych kroków wdrażania i nowego kroku wdrożenia uaktualnienia. Utworzenie tego rozszerzenia ułatwia deweloperom programu SharePoint korzystanie z kroku Uaktualnij wdrożenie w projektach programu SharePoint.
 
- Aby utworzyć konfigurację wdrożenia, Klasa implementuje interfejs <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>. Zaimplementuj ten interfejs w każdym przypadku, gdy chcesz utworzyć rozszerzenie projektu SharePoint.
+ Aby utworzyć konfigurację wdrożenia, Klasa implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interfejs. Zaimplementuj ten interfejs w każdym przypadku, gdy chcesz utworzyć rozszerzenie projektu SharePoint.
 
 #### <a name="to-create-the-deployment-configuration"></a>Aby utworzyć konfigurację wdrożenia
 
@@ -174,7 +173,7 @@ ms.locfileid: "72984940"
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
 
-## <a name="checkpoint"></a>Elementu
+## <a name="checkpoint"></a>Punkt kontrolny
  W tym momencie w przewodniku wszystkie kod niestandardowego kroku wdrożenia i poleceń programu SharePoint znajdują się teraz w projektach. Kompiluj je, aby upewnić się, że kompilują się bez błędów.
 
 #### <a name="to-build-the-projects"></a>Aby skompilować projekty
@@ -205,7 +204,7 @@ ms.locfileid: "72984940"
 6. Na liście **Typ** wybierz **Microsoft. VisualStudio. MefComponent**.
 
     > [!NOTE]
-    > Ta wartość odpowiada elementowi `MefComponent` w pliku Extension. vsixmanifest. Ten element określa nazwę zestawu rozszerzenia w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MefComponent element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Ta wartość odnosi się do `MefComponent` elementu w pliku Extension. vsixmanifest. Ten element określa nazwę zestawu rozszerzenia w pakiecie VSIX. Aby uzyskać więcej informacji, zobacz [MefComponent element (schemat VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Z listy **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.
 
@@ -224,7 +223,7 @@ ms.locfileid: "72984940"
 
 12. Na liście **projekt** wybierz pozycję **SharePointCommands**, a następnie wybierz przycisk **OK** .
 
-13. Na pasku menu wybierz **kompiluj** > **Kompiluj rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
+13. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
 
 14. Upewnij się, że folder danych wyjściowych kompilacji dla projektu UpgradeDeploymentStep zawiera teraz plik UpgradeDeploymentStep. VSIX.
 
@@ -239,17 +238,17 @@ ms.locfileid: "72984940"
 
 1. Uruchom ponownie program Visual Studio z poświadczeniami administracyjnymi, a następnie otwórz rozwiązanie UpgradeDeploymentStep.
 
-2. W projekcie DeploymentStepExtension Otwórz plik kodu UpgradeStep, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w metodzie `CanExecute` i `Execute`.
+2. W projekcie DeploymentStepExtension Otwórz plik kodu UpgradeStep, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w `CanExecute` `Execute` metodach i.
 
-3. Rozpocznij debugowanie, wybierając klawisz **F5** lub na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
+3. Rozpocznij debugowanie, wybierając klawisz **F5** lub na pasku menu, wybierając **Debuguj**  >  **Rozpocznij debugowanie**.
 
 4. Program Visual Studio instaluje rozszerzenie%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade krok wdrożenia dla programu SharePoint Projects\1.0 i uruchamia eksperymentalne wystąpienie programu Visual Studio. Krok Uaktualnij wdrożenie zostanie przetestowany w tym wystąpieniu programu Visual Studio.
 
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Aby utworzyć projekt programu SharePoint z definicją listy i wystąpieniem listy
 
-1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
 
-2. W oknie **dialogowym Nowy projekt** rozwiń węzeł **wizualizacji C#**  lub **Visual Basic** węzeł, rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual C#** lub węzeł **Visual Basic** , rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 3. Na początku okna dialogowego upewnij się, że na liście wersji .NET Framework pojawia się **.NET Framework 3,5** .
 
@@ -266,7 +265,7 @@ ms.locfileid: "72984940"
 
 7. Wybierz przycisk **Zakończ** .
 
-    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy projekt EmployeesListDefinition.
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tworzy projekt EmployeesListDefinition.
 
 8. Otwórz menu skrótów dla projektu EmployeesListDefinition, wybierz **Dodaj**, a następnie wybierz **nowy element**.
 
@@ -284,13 +283,13 @@ ms.locfileid: "72984940"
 
     3. **Wartość domyślna (pusta)** jest wybierana na liście **Utwórz listę dostosowywalną opartą na:** .
 
-       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy element listy pracownicy z kolumną title i jednym pustym wystąpieniem i otwiera projektanta list.
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tworzy element listy pracownicy z kolumną title i jednym pustym wystąpieniem i otwiera projektanta list.
 
 12. W projektancie list na karcie **kolumny** wybierz wiersz **Nazwa nowej lub istniejącej kolumny** , a następnie Dodaj następujące kolumny do listy **Nazwa wyświetlana kolumny** :
 
     1. Imię
 
-    2. Przedsiębiorstwo
+    2. Firma
 
     3. Telefon służbowy
 
@@ -300,7 +299,7 @@ ms.locfileid: "72984940"
 
 14. W **Eksplorator rozwiązań**rozwiń węzeł **Lista pracownicy** , a następnie rozwiń węzeł podrzędny **wystąpienia listy pracowników** .
 
-15. W pliku repliks *. XML* Zastąp domyślny kod XML w tym pliku następującym kodem XML. Ten kod XML zmienia nazwę listy na **pracowników** i dodaje informacje dla pracownika o nazwie Jim Hance.
+15. W pliku *Elements.xml* Zastąp domyślny kod XML w tym pliku następującym kodem XML. Ten kod XML zmienia nazwę listy na **pracowników** i dodaje informacje dla pracownika o nazwie Jim Hance.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -325,7 +324,7 @@ ms.locfileid: "72984940"
     </Elements>
     ```
 
-16. Zapisz i zamknij plik *. XML* .
+16. Zapisz i zamknij plik *Elements.xml* .
 
 17. Otwórz menu skrótów dla projektu EmployeesListDefinition, a następnie wybierz **Otwórz** lub **Właściwości**.
 
@@ -339,17 +338,17 @@ ms.locfileid: "72984940"
 
 2. W oknie **Właściwości** upewnij się, że właściwość **Konfiguracja aktywnego wdrożenia** ma wartość **domyślne**.
 
-3. Wybierz klawisz **F5** lub na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
+3. Wybierz klawisz **F5** lub na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie**.
 
 4. Sprawdź, czy projekt został pomyślnie skompilowany, że przeglądarka sieci Web otworzy witrynę programu SharePoint, że element **listy** na pasku szybkiego uruchamiania zawiera listę nowych **pracowników** i że lista **pracownicy** zawiera wpis dla Jim Hance.
 
-5. Zamknij przeglądarkę sieci Web.
+5. Zamknij przeglądarkę internetową.
 
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>Aby zmodyfikować definicję listy i wystąpienie listy i ponownie je wdrożyć
 
-1. W projekcie EmployeesListDefinition Otwórz plik Items *. XML* , który jest elementem podrzędnym elementu projektu **wystąpienia listy pracowników** .
+1. W projekcie EmployeesListDefinition Otwórz plik *Elements.xml* , który jest elementem podrzędnym elementu projektu **wystąpienia listy pracowników** .
 
-2. Usuń element `Data` i jego elementy podrzędne, aby usunąć z listy wpis Jim Hance.
+2. Usuń `Data` element i jego elementy podrzędne, aby usunąć z listy wpis Jim Hance.
 
      Po zakończeniu plik powinien zawierać następujący kod XML.
 
@@ -365,7 +364,7 @@ ms.locfileid: "72984940"
     </Elements>
     ```
 
-3. Zapisz i zamknij plik *. XML* .
+3. Zapisz i zamknij plik *Elements.xml* .
 
 4. Otwórz menu skrótów dla elementu projektu **listy Employees** , a następnie wybierz **Otwórz** lub **Właściwości**.
 
@@ -377,7 +376,7 @@ ms.locfileid: "72984940"
 
      Ta akcja spowoduje usunięcie tych pól z widoku domyślnego listy **pracownicy** w witrynie programu SharePoint.
 
-8. Rozpocznij debugowanie, wybierając klawisz **F5** lub na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
+8. Rozpocznij debugowanie, wybierając klawisz **F5** lub na pasku menu, wybierając **Debuguj**  >  **Rozpocznij debugowanie**.
 
 9. Sprawdź, czy pojawia się okno dialogowe **konflikty wdrożenia** .
 
@@ -428,19 +427,19 @@ ms.locfileid: "72984940"
 
     Zostanie otwarty Edytor właściwości/Projektant.
 
-4. Na karcie **widoki** wybierz kolumnę **wiadomość E-mail** , a następnie wybierz klucz **<** , aby przenieść tę kolumnę z listy **wybrane kolumny** na listę **Dostępne kolumny** .
+4. Na karcie **widoki** wybierz kolumnę **wiadomość E-mail** , a następnie wybierz **<** klucz, aby przenieść tę kolumnę z listy **wybrane kolumny** na listę **Dostępne kolumny** .
 
     Ta akcja spowoduje usunięcie tych pól z widoku domyślnego listy **pracownicy** w witrynie programu SharePoint.
 
-5. Rozpocznij debugowanie, wybierając klawisz **F5** lub na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
+5. Rozpocznij debugowanie, wybierając klawisz **F5** lub na pasku menu, wybierając **Debuguj**  >  **Rozpocznij debugowanie**.
 
-6. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio jest zatrzymany w punkcie przerwania, który został ustawiony wcześniej w metodzie `CanExecute`.
+6. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio jest zatrzymany w punkcie przerwania, który został ustawiony wcześniej w `CanExecute` metodzie.
 
-7. Wybierz ponownie klawisz **F5** lub na pasku menu wybierz kolejno opcje **Debuguj** > **Kontynuuj**.
+7. Wybierz ponownie klawisz **F5** lub na pasku menu wybierz **Debuguj**  >  **Kontynuuj**.
 
-8. Sprawdź, czy kod został zatrzymany w punkcie przerwania, który został ustawiony wcześniej w metodzie `Execute`.
+8. Sprawdź, czy kod został zatrzymany w punkcie przerwania, który został ustawiony wcześniej w `Execute` metodzie.
 
-9. Wybierz klawisz **F5** lub na pasku menu wybierz kolejno opcje **Debuguj** > **Kontynuuj** czas ostateczny.
+9. Wybierz klawisz **F5** lub na pasku menu wybierz kolejno opcje **Debuguj**  >  **Kontynuuj** czas ostateczny.
 
      Przeglądarka sieci Web otworzy witrynę programu SharePoint.
 
@@ -467,13 +466,13 @@ ms.locfileid: "72984940"
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>Aby usunąć definicję listy z witryny programu SharePoint
 
-1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **kompilacja** > **wycofywanie**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno pozycje **kompilacja**  >  **wycofywanie**.
 
      Program Visual Studio wycofuje definicję listy z witryny programu SharePoint.
 
 #### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenie
 
-1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **narzędzia** > **rozszerzenia i aktualizacje**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **Narzędzia**  >  **rozszerzenia i aktualizacje**.
 
      Zostanie otwarte okno dialogowe **rozszerzenia i aktualizacje** .
 

@@ -1,7 +1,7 @@
 ---
 title: Debuguj aplikację SharePoint przy użyciu IntelliTrace
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe1130880db42e920e656d5efef1ea6a5af4d2d0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984141"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015753"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace
 
@@ -73,9 +72,9 @@ Najpierw należy utworzyć pusty projekt programu SharePoint, który ma odbiorc�
 
 ## <a name="add-code-to-the-feature-receiver"></a>Dodawanie kodu do odbiorcy funkcji
 
-Następnie Dodaj kod do dwóch metod w odbiorniku funkcji: `FeatureActivated` i `FeatureDeactivating`. Te metody wyzwalają za każdym razem, gdy funkcja jest aktywowana lub dezaktywowana odpowiednio w programie SharePoint.
+Następnie Dodaj kod do dwóch metod w odbiorniku funkcji: `FeatureActivated` i `FeatureDeactivating` . Te metody wyzwalają za każdym razem, gdy funkcja jest aktywowana lub dezaktywowana odpowiednio w programie SharePoint.
 
-1. W górnej części klasy `Feature1EventReceiver` Dodaj następujący kod, który deklaruje zmienne określające witrynę i podlokację programu SharePoint:
+1. W górnej części `Feature1EventReceiver` klasy Dodaj następujący kod, który deklaruje zmienne określające witrynę programu SharePoint i podlokację:
 
     ```vb
     ' SharePoint site and subsite.
@@ -89,7 +88,7 @@ Następnie Dodaj kod do dwóch metod w odbiorniku funkcji: `FeatureActivated` i 
     private string webUrl = "/";
     ```
 
-2. Zastąp metodę `FeatureActivated` następującym kodem:
+2. Zastąp metodę `FeatureActivated` poniższym kodem:
 
     ```vb
     Public Overrides Sub FeatureActivated(ByVal properties As SPFeatureReceiverProperties)
@@ -155,7 +154,7 @@ Następnie Dodaj kod do dwóch metod w odbiorniku funkcji: `FeatureActivated` i 
     }
     ```
 
-3. Zastąp metodę `FeatureDeactivating` następującym kodem:
+3. Zastąp metodę `FeatureDeactivating` poniższym kodem:
 
     ```vb
     Public Overrides Sub FeatureDeactivating(ByVal properties As SPFeatureReceiverProperties)
@@ -295,7 +294,7 @@ W przypadku zainstalowania Microsoft Monitoring Agent w systemie, w którym dzia
 
 3. W oknie programu PowerShell uruchom polecenie [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) , aby utworzyć plik. iTrace, Zatrzymaj monitorowanie i ponownie uruchom rozwiązanie programu SharePoint.
 
-     **Stop-WebApplicationMonitoring**  *"\<SharePointSite >\\< SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring***" \<SharePointSite> \\<SharePointAppName \> "*  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Debuguj i rozwiązuj rozwiązanie SharePoint
 

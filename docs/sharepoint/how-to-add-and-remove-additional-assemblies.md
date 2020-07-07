@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: Dodawanie i usuwanie dodatkowych zestawów | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdcc1c478bead4df89622a7311b074965cdc0226
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985234"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014831"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Instrukcje: Dodawanie i usuwanie dodatkowych zestawów
   Jeśli pakiet programu SharePoint zależy od innych zestawów dla funkcjonalności lub danych, można dodać zestawy do pakietu rozwiązania (. wsp). Dzięki temu serwer programu SharePoint sprawdza, czy zestawy niestandardowe są instalowane z pakietem.
@@ -41,7 +40,7 @@ ms.locfileid: "72985234"
 
 4. Wybierz wielokropek (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")), a następnie wybierz zestaw, który chcesz dodać. Zalecamy używanie ścieżki względnej do wybranego zestawu do celów przenośności.
 
-5. W przypadku celu **wdrożenia**wybierz przycisk opcji **GlobalAssemblyCache** , aby wdrożyć zestaw w globalnej pamięci podręcznej zestawów, lub wybierz przycisk opcji **WebApplication** , aby wdrożyć zestaw w folderze WebApplication na stronie serwer z uruchomionym programem SharePoint.
+5. W przypadku celu **wdrożenia**wybierz przycisk opcji **GlobalAssemblyCache** , aby wdrożyć zestaw w globalnej pamięci podręcznej zestawów, lub wybierz przycisk opcji **WebApplication** , aby wdrożyć zestaw w folderze WebApplication na serwerze, na którym działa program SharePoint.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>Aby dodać zestaw z danych wyjściowych projektu
 
@@ -57,7 +56,7 @@ ms.locfileid: "72985234"
 
 4. Na liście **projekt źródłowy** i wybierz projekt źródłowy, który chcesz dodać.
 
-5. W przypadku celu **wdrożenia**wybierz przycisk opcji **GlobalAssemblyCache** , aby wdrożyć zestaw w globalnej pamięci podręcznej zestawów, lub wybierz przycisk opcji **WebApplication** , aby wdrożyć zestaw w folderze WebApplication na stronie serwer z uruchomionym programem SharePoint.
+5. W przypadku celu **wdrożenia**wybierz przycisk opcji **GlobalAssemblyCache** , aby wdrożyć zestaw w globalnej pamięci podręcznej zestawów, lub wybierz przycisk opcji **WebApplication** , aby wdrożyć zestaw w folderze WebApplication na serwerze, na którym działa program SharePoint.
 
 #### <a name="to-add-a-safe-control"></a>Aby dodać bezpieczną kontrolę
 

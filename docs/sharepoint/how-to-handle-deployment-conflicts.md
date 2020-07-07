@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Obsługa konfliktów wdrożenia | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: obsługa konfliktów wdrożenia | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
@@ -9,19 +9,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e7740915d341eee1bbf5e112c4f09297c98be1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813802"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015309"
 ---
-# <a name="how-to-handle-deployment-conflicts"></a>Instrukcje: Obsługa konfliktów wdrożenia
-  Możesz podać kod do obsługi konflikty wdrażania dla elementu projektu programu SharePoint. Na przykład można określić, czy wszystkie pliki w bieżącym elemencie projektu już istnieje w lokalizacji wdrożenia, a następnie usunąć wdrożonych plików, przed wdrożeniem bieżącego elementu projektu. Aby uzyskać więcej informacji na temat konflikty wdrażania zobacz [rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
+# <a name="how-to-handle-deployment-conflicts"></a>Instrukcje: obsługa konfliktów wdrożenia
+  Możesz podać własny kod do obsługi konfliktów wdrożenia dla elementu projektu programu SharePoint. Można na przykład określić, czy wszystkie pliki w bieżącym elemencie projektu istnieją już w lokalizacji wdrożenia, a następnie usunąć wdrożone pliki przed wdrożeniem bieżącego elementu projektu. Aby uzyskać więcej informacji na temat konfliktów wdrożenia, zobacz [rozszerzanie pakietów i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
-### <a name="to-handle-a-deployment-conflict"></a>Do obsługi konfliktów wdrożenia
+### <a name="to-handle-a-deployment-conflict"></a>Aby obsłużyć konflikt wdrożenia
 
-1. Tworzenie rozszerzenia elementu projektu, rozszerzenia projektu lub definicji typu elementu projektu. Więcej informacji znajduje się w następujących tematach:
+1. Utwórz rozszerzenie elementu projektu, rozszerzenie projektu lub definicję nowego typu elementu projektu. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
     - [Instrukcje: Tworzenie rozszerzenia elementu projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
@@ -29,34 +28,34 @@ ms.locfileid: "62813802"
 
     - [Instrukcje: Definiowanie typu elementu projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2. Do rozszerzenia obsługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> zdarzenia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> obiektu (w rozszerzenia elementu projektu lub rozszerzenia projektu) lub <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> obiektu (w definicji typu elementu projektu).
+2. W rozszerzeniu Obsługuj <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> zdarzenie <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> obiektu (w rozszerzeniu elementu projektu lub rozszerzeniu projektu) lub <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> obiekt (w definicji nowego typu elementu projektu).
 
-3. W procedurze obsługi zdarzeń Ustal, czy niezgodności elementu projektu, który jest wdrażany z wdrożonym rozwiązaniem w witrynie programu SharePoint, na podstawie kryteriów, które są stosowane do danego scenariusza. Możesz użyć <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> właściwość parametru argumenty zdarzeń do analizowania elementu projektu, który jest wdrażany, na które można analizować plików w lokalizacji wdrożenia, wywołując polecenie programu SharePoint, które są definiowane w tym celu.
+3. W programie obsługi zdarzeń Ustal, czy występuje konflikt między wdrażanym elementem projektu a wdrożonym rozwiązaniem w witrynie programu SharePoint na podstawie kryteriów, które są stosowane do danego scenariusza. Można użyć <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> Właściwości parametru argumenty zdarzenia do analizy elementu projektu, który jest wdrażany, i można analizować pliki w lokalizacji wdrożenia, wywołując polecenie SharePoint zdefiniowane do tego celu.
 
-     Dla wielu typów konfliktów najpierw warto określić kroku wdrożenia, który jest wykonywany. Można to zrobić za pomocą <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> właściwość parametru argumenty zdarzeń. Mimo że zazwyczaj warto wykrywanie konfliktów podczas wbudowane <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> kroku wdrożenia można sprawdzić konflikty podczas którykolwiek z kroków wdrażania.
+     W przypadku wielu typów konfliktów można najpierw określić, który krok wdrożenia ma być wykonywany. Można to zrobić przy użyciu <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> Właściwości parametru argumenty zdarzenia. Chociaż zwykle warto wykryć konflikty podczas wbudowanego <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> kroku wdrożenia, można wyszukać konflikty podczas dowolnego kroku wdrożenia.
 
-4. Jeśli istnieje konflikt, użyj <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> metody <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> właściwość argumenty zdarzenia, aby utworzyć nowy <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> obiektu. Ten obiekt reprezentuje konflikt wdrażania. W przypadku wywołania do <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> metody również określić metodę, która jest wywoływana, aby rozwiązać konflikt.
+4. Jeśli istnieje konflikt, użyj <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> metody <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> Właściwości argumentów zdarzenia, aby utworzyć nowy <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> obiekt. Ten obiekt reprezentuje konflikt wdrożenia. W wywołaniu <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> metody, należy również określić metodę, która jest wywoływana w celu rozwiązania konfliktu.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu demonstruje podstawowy proces obsługi konflikt wdrażania w rozszerzenia elementu projektu dla elementów projektu definicji listy. Aby obsłużyć konflikt wdrożenia do innego typu elementu projektu, przekazać inny ciąg do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Aby uzyskać więcej informacji, zobacz [elementów projektu programu SharePoint z rozszerzenia](../sharepoint/extending-sharepoint-project-items.md).
+ Poniższy przykład kodu demonstruje podstawowy proces obsługi konfliktu wdrożenia w rozszerzeniu elementu projektu dla elementów projektu definicji listy. Aby obsłużyć konflikt wdrożenia dla innego typu elementu projektu, Przekaż inny ciąg do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> . Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając elementy projektu programu SharePoint](../sharepoint/extending-sharepoint-project-items.md).
 
- Dla uproszczenia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> programu obsługi zdarzeń w tym przykładzie przyjęto założenie, że istnieje konflikt wdrażania (czyli zawsze dodaje nowy <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> obiektu) i `Resolve` metoda po prostu zwraca **true** z informacją, że Konflikt został rozwiązany. W przypadku rzeczywistych swoje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> obsługi zdarzenia czy najpierw ustalić, czy istnieje konflikt między plik w bieżącym elemencie projektów i plików w lokalizacji wdrożenia, a następnie dodaj <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> obiektu tylko, jeśli istnieje konflikt. Na przykład, można na przykład `e.ProjectItem.Files` właściwości programu obsługi zdarzeń do przeanalizowania plików w elementu projektu, a może wywołać polecenie programu SharePoint do przeanalizowania plików w lokalizacji wdrożenia. Podobnie w przypadku rzeczywistych `Resolve` metoda może wywoływać polecenia programu SharePoint, aby rozwiązać konflikt w witrynie programu SharePoint. Aby uzyskać więcej informacji na temat tworzenia poleceń programu SharePoint, zobacz [jak: Tworzenie polecenia SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).
+ Dla uproszczenia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> w programie obsługi zdarzeń w tym przykładzie przyjęto założenie, że istnieje konflikt wdrożenia (oznacza to, że zawsze dodaje nowy <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> obiekt), a `Resolve` Metoda po prostu zwraca **wartość true** , aby wskazać, że konflikt został rozwiązany. W rzeczywistym scenariuszu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> program obsługi zdarzeń najpierw określi, czy istnieje konflikt między plikiem w bieżącym elemencie projektu i plikiem w lokalizacji wdrożenia, a następnie Dodaj <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> obiekt tylko wtedy, gdy istnieje konflikt. Na przykład można użyć `e.ProjectItem.Files` właściwości w programie obsługi zdarzeń do przeanalizowania plików w elemencie projektu i można wywołać polecenie programu SharePoint w celu przeanalizowania plików w lokalizacji wdrożenia. Podobnie w rzeczywistym scenariuszu `Resolve` Metoda może wywołać polecenie programu SharePoint w celu rozwiązania konfliktu w witrynie programu SharePoint. Aby uzyskać więcej informacji na temat tworzenia poleceń programu SharePoint, zobacz [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).
 
  [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]
 
-## <a name="compile-the-code"></a>Skompilować kod
+## <a name="compile-the-code"></a>Kompiluj kod
  Ten przykład wymaga odwołania do następujących zestawów:
 
-- Microsoft.VisualStudio.SharePoint
+- Microsoft. VisualStudio. SharePoint
 
-- System.ComponentModel.Composition
+- System. ComponentModel. kompozycji
 
-## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia
- Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+## <a name="deploy-the-extension"></a>Wdróż rozszerzenie
+ Aby wdrożyć rozszerzenie, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX) dla zestawu i wszystkie inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Rozszerzanie pakowania i wdrażania SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [Rozszerzanie elementów projektu programu SharePoint](../sharepoint/extending-sharepoint-project-items.md)
-- [Instrukcje: Uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
+- [Rozszerzona pakowanie i wdrażanie programu SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [Zwiększ elementy projektu SharePoint](../sharepoint/extending-sharepoint-project-items.md)
+- [Instrukcje: uruchamianie kodu po wykonaniu kroków wdrożenia](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Instrukcje: Tworzenie polecenia SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: wdrażanie definicji Lista zadań projektu | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,16 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
-ms.translationtype: MT
+ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661874"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015770"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Przewodnik: wdrażanie definicji listy zadań projektu
 
-W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] tworzyć, dostosowywać, debugować i wdrażać listę programu SharePoint w celu śledzenia zadań projektu.
+W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] programu tworzyć, dostosowywać, debugować i wdrażać listę programu SharePoint w celu śledzenia zadań projektu.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -43,7 +42,7 @@ Utwórz projekt listy programu SharePoint i skojarz definicję listy z zadaniami
 
 3. Określ lokalną witrynę programu SharePoint, która będzie używana do debugowania, wybierz przycisk opcji **Wdróż jako farmę** , a następnie wybierz przycisk **Zakończ** .
 
-4. Otwórz menu skrótów dla projektu, a następnie wybierz **dodaj** > **nowy element**.
+4. Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Dodaj**  >  **nowy element**.
 
 5. W okienku **Szablony** wybierz szablon **listy** , a następnie wybierz przycisk **Dodaj** .
 
@@ -73,7 +72,7 @@ Na liście zadań można dodać odbiorcę zdarzeń, który automatycznie ustawia
 
      Do projektu zostanie dodany nowy węzeł odbiorcy zdarzeń z plikiem kodu o nazwie **ProjectTaskListEventReceiver**.
 
-6. Dodaj kod do metody `ItemAdded` w pliku kodu **ProjectTaskListEventReceiver** . Za każdym razem, gdy nowe zadanie zostanie dodane, do zadania zostanie dodany domyślny termin ukończenia i opis. Domyślna Data ukończenia to 1 lipca 2009.
+6. Dodaj kod do `ItemAdded` metody w pliku kodu **ProjectTaskListEventReceiver** . Za każdym razem, gdy nowe zadanie zostanie dodane, do zadania zostanie dodany domyślny termin ukończenia i opis. Domyślna Data ukończenia to 1 lipca 2009.
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
@@ -136,13 +135,13 @@ Po skompilowaniu i przetestowaniu listy zadań projektu można wdrożyć ją w *
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Aby wdrożyć listę zadań projektu w systemie lokalnym
 
-Na pasku menu programu Visual Studio wybierz pozycję **kompilacja** > **Wdróż rozwiązanie**.
+Na pasku menu programu Visual Studio wybierz kolejno pozycje **kompilacja**  >  **Wdróż rozwiązanie**.
 
 Program Visual Studio odtwarza pulę aplikacji usług IIS, wycofuje wszystkie istniejące wersje rozwiązania, kopiuje plik pakietu rozwiązań (*wsp*) do programu SharePoint, a następnie aktywuje jego funkcje. Możesz teraz używać rozwiązania w programie SharePoint. Aby uzyskać więcej informacji na temat kroków konfiguracji wdrożenia, zobacz [How to: Edit a SharePoint Deployment Configuration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Aby wdrożyć listę zadań projektu w systemie zdalnym
 
-1. Na pasku menu programu Visual Studio wybierz kolejno opcje **kompiluj** > **Publikuj**.
+1. Na pasku menu programu Visual Studio wybierz kolejno opcje **Kompiluj**  >  **Publikuj**.
 
 2. W oknie dialogowym **Publikowanie** wybierz przycisk opcji **Publikuj w systemie plików** .
 
@@ -154,11 +153,11 @@ Program Visual Studio odtwarza pulę aplikacji usług IIS, wycofuje wszystkie is
 
 4. Skopiuj plik *. wsp* do zdalnego systemu SharePoint.
 
-5. Użyj polecenia `Add-SPUserSolution` programu PowerShell, aby zainstalować pakiet w zdalnej instalacji programu SharePoint. (W przypadku rozwiązań farmy Użyj `Add-SPSolution` polecenie).
+5. Użyj polecenia programu PowerShell, `Add-SPUserSolution` Aby zainstalować pakiet w zdalnej instalacji programu SharePoint. (W przypadku rozwiązań farmy Użyj `Add-SPSolution` polecenia).
 
      Na przykład `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
-6. Użyj polecenia `Install-SPUserSolution` programu PowerShell, aby wdrożyć rozwiązanie. (W przypadku rozwiązań farmy Użyj `Install-SPSolution` polecenie).
+6. Użyj polecenia programu PowerShell, `Install-SPUserSolution` Aby wdrożyć rozwiązanie. (W przypadku rozwiązań farmy Użyj `Install-SPSolution` polecenia).
 
      Na przykład `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 

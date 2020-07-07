@@ -1,7 +1,7 @@
 ---
 title: Pakowanie i wdrażanie rozwiązań SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45815e03d887f4d22f2559acf741f612cab34c49
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986208"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015601"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Pakowanie i wdrażanie rozwiązań SharePoint
   Zazwyczaj rozwiązanie SharePoint jest wdrażane na serwerze programu SharePoint przy użyciu pliku pakietu rozwiązania (wsp). Za pomocą programu Visual Studio można organizować elementy projektu programu SharePoint w funkcje i utworzyć pakiet do wdrażania funkcji programu SharePoint.
@@ -95,7 +94,7 @@ ms.locfileid: "72986208"
 
  Na przykład, aby dodać plik *XML* do projektu programu SharePoint, wykonaj jedną z następujących czynności:
 
-- Dodaj zamapowany folder "Layouts" programu SharePoint do projektu. Powoduje to utworzenie w **Eksplorator rozwiązań** folderu o nazwie **Layouts** , który ma podfolder dla projektu. Dodaj plik *XML* do nowego podfolderu. Domyślnie plik jest wdrażany w systemie plików programu SharePoint w obszarze *.. \TEMPLATE\LAYOUTS\\\<> nazw folderów*. Aby uzyskać informacje o sposobach dodawania zamapowanych folderów, zobacz [How to: Add and Remove zamapowany Folders](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+- Dodaj zamapowany folder "Layouts" programu SharePoint do projektu. Powoduje to utworzenie w **Eksplorator rozwiązań** folderu o nazwie **Layouts** , który ma podfolder dla projektu. Dodaj plik *XML* do nowego podfolderu. Domyślnie plik jest wdrażany w systemie plików programu SharePoint w obszarze *.. \\\TEMPLATE\LAYOUTS \<Folder Name> *. Aby uzyskać informacje o sposobach dodawania zamapowanych folderów, zobacz [How to: Add and Remove zamapowany Folders](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 - Dodaj plik *XML* do folderu elementu projektu programu SharePoint, a następnie zmień właściwość **typ wdrożenia** pliku *XML* z **NoDeployment** na inne ustawienie, takie jak **RootFile** lub **elementu**. Odpowiednie ustawienie **typu wdrożenia** zależy od pliku i projektu. Aby uzyskać więcej informacji na temat ustawień właściwości **typu wdrożenia** , zobacz [opracowywanie rozwiązań programu SharePoint](../sharepoint/developing-sharepoint-solutions.md).
 

@@ -1,7 +1,7 @@
 ---
-title: 'Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie i usuwanie elementów do funkcji programu SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
@@ -14,44 +14,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966903"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014530"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint
-  Podczas tworzenia rozwiązania programu SharePoint, programu Visual Studio dodaje domyślne elementy projektu programu SharePoint do Twojej funkcji. Przed przystąpieniem do wdrożenia można dodawać i usuwać elementów projektu programu SharePoint, aby zmodyfikować funkcji programu SharePoint.
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Instrukcje: Dodawanie i usuwanie elementów do funkcji programu SharePoint
+  Podczas tworzenia rozwiązania programu SharePoint program Visual Studio dodaje domyślne elementy projektu programu SharePoint do funkcji. Przed wdrożeniem można dodawać i usuwać elementy projektu programu SharePoint, aby modyfikować funkcję programu SharePoint.
 
-## <a name="add-sharepoint-project-items-to-a-feature"></a>Dodaj elementy projektu programu SharePoint do funkcji
+## <a name="add-sharepoint-project-items-to-a-feature"></a>Dodawanie elementów projektu programu SharePoint do funkcji
 
-#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>Aby dodać elementów projektu programu SharePoint za pomocą projektanta funkcji
+#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>Aby dodać elementy projektu programu SharePoint za pomocą projektanta funkcji
 
 1. Otwórz projektanta funkcji.
 
-    Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
+    Aby uzyskać więcej informacji, zobacz [How to: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
-2. Dodaj jeden lub więcej elementów z **elementów w rozwiązaniu** do listy **elementy w funkcji** listę, wykonując jedną lub więcej z następujących czynności:
+2. Dodaj jeden lub więcej elementów z listy **rozwiązania** do **elementów na liście funkcji** , wykonując jedną lub więcej z następujących czynności:
 
    - Kliknij dwukrotnie każdy element, który chcesz dodać.
 
-   - Wybierz element, który chcesz dodać, a następnie wybierz **Dodaj** przycisku (>).
+   - Wybierz element, który chcesz dodać, a następnie wybierz przycisk **Dodaj** (>).
 
-   - Wybierz **Dodaj wszystkie** przycisku (>>).
+   - Wybierz przycisk **Dodaj wszystko** (>>).
 
-     Elementy projektu programu SharePoint są wyświetlane w **elementy w funkcji** listy.
+     Elementy projektu programu SharePoint są wyświetlane w **elementach na liście funkcji** .
 
 ## <a name="remove-sharepoint-project-items-from-a-feature"></a>Usuwanie elementów projektu programu SharePoint z funkcji
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Aby usunąć elementy programu SharePoint za pomocą projektanta funkcji
 
-1. Wybierz co najmniej jeden element w **elementy w funkcji** listy.
+1. Wybierz jeden lub więcej elementów z listy **funkcji** .
 
-2. Wybierz **Usuń** przycisk (<), aby usunąć pojedynczy element, lub wybierz **Usuń wszystkie** przycisku (<<) aby usunąć wszystkie elementy.
+2. Wybierz przycisk **Usuń** (<), aby usunąć jeden element naraz, lub wybierz przycisk **usuń wszystko** (<<), aby usunąć wszystkie elementy.
 
-     Elementy projektu programu SharePoint są wyświetlane w **elementów w rozwiązaniu** listy.
+     Elementy projektu programu SharePoint są wyświetlane w **elementach listy rozwiązań** .
 
 ## <a name="see-also"></a>Zobacz także
-- [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)
+- [Tworzenie funkcji programu SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

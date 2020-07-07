@@ -1,7 +1,7 @@
 ---
-title: Rozszerzanie narzędzi SharePoint w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Rozszerzanie narzędzi programu SharePoint w programie Visual Studio | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,46 +14,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d70d9b5bac260dc0731d06ebb11780114f0edf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 7dc0cc0d0af73d032d870629877b62c94e6b347b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967425"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016042"
 ---
-# <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Rozszerzanie narzędzi SharePoint w programie Visual Studio
-  Narzędzia programu SharePoint w programie Visual Studio wymagań wiele scenariuszy programowania aplikacji. Jednak można wykryć przypadki, w którym nie zapewniają funkcji, które wymagają zostanie lub innym deweloperom. W takich przypadkach można rozszerzyć narzędzia programu SharePoint do tworzenia potrzebne funkcje.
+# <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Poszerzanie narzędzi programu SharePoint w programie Visual Studio
+  Narzędzia programu SharePoint w programie Visual Studio spełniają wymagania wielu scenariuszy tworzenia aplikacji. Można jednak odkryć przypadki, w których nie udostępniają one funkcji, które są wymagane przez użytkownika lub innych deweloperów. W takich przypadkach można rozwinąć narzędzia programu SharePoint w celu utworzenia potrzebnych funkcji.
 
-## <a name="how-to-extend-the-sharepoint-tools"></a>Jak Rozszerzanie narzędzi SharePoint
- Możesz rozszerzyć systemu projektu programu SharePoint i **połączeń SharePoint** w węźle **Eksploratora serwera** okna.
+## <a name="how-to-extend-the-sharepoint-tools"></a>Jak rozłożyć narzędzia programu SharePoint
+ W oknie **Eksplorator serwera** można rozwinąć System projektu programu SharePoint i węzeł **połączenia programu SharePoint** .
 
-### <a name="extend-the-sharepoint-project-system"></a>Rozszerzanie systemu projektu SharePoint
- Visual Studio zawiera zestaw szablonów projektów i szablonów elementów, które umożliwia tworzenie rozwiązań programu SharePoint. Na przykład istnieją szablony dla odbiorcy zdarzeń, definicje list, przepływów pracy i składniki Web Part. Jednakże można także zdefiniować własne typy elementów projektu programu SharePoint do tworzenia składników programu SharePoint, takich jak pola lub akcje niestandardowe. Można również utworzyć rozszerzenia dla typów elementów projektu SharePoint, które są już zainstalowane w programie Visual Studio, a następnie można utworzyć rozszerzenia dla projektów programu SharePoint.
+### <a name="extend-the-sharepoint-project-system"></a>Poszerzanie systemu projektu SharePoint
+ Program Visual Studio zawiera zestaw szablonów projektu i szablonów elementów, których można użyć do tworzenia rozwiązań programu SharePoint. Na przykład istnieją szablony dla odbiorców zdarzeń, definicje list, przepływy pracy i składniki Web Part. Można jednak definiować własne typy elementów projektu programu SharePoint do tworzenia składników programu SharePoint, takich jak pola lub akcje niestandardowe. Można również tworzyć rozszerzenia dla typów elementów projektu programu SharePoint, które są już zainstalowane w programie Visual Studio, i można tworzyć rozszerzenia dla projektów programu SharePoint.
 
- Aby uzyskać więcej informacji, zobacz [rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
+ Aby uzyskać więcej informacji, zobacz Rozpoznaj [system projektu programu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
-### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera
- W programie Visual Studio, można użyć **połączeń SharePoint** w węźle **Eksploratora serwera** okna, aby wyświetlić wiele składników w jednej lub więcej lokalnych witryn programu SharePoint w hierarchicznym widoku drzewa. Można także rozszerzyć **połączeń SharePoint** węzła w następujący sposób:
+### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera
+ W programie Visual Studio można użyć węzła **połączenia programu SharePoint** w oknie **Eksplorator serwera** , aby wyświetlić wiele składników jednej lub wielu lokalnych witryn programu SharePoint w hierarchicznym widoku drzewa. Możesz również zwiększyć węzeł **połączenia SharePoint** w następujący sposób:
 
-- Przez dodanie własnych węzłów. Jest to przydatne, jeśli chcesz wyświetlić składniki witryny programu SharePoint, które nie są wyświetlane domyślnie.
+- Dodając własne węzły. Jest to przydatne, jeśli chcesz wyświetlać składniki witryn programu SharePoint, które nie są wyświetlane domyślnie.
 
-- Rozszerzając istniejących węzłów. Na przykład można dodać nowego węzła podrzędnego do istniejącego węzła lub można dodać element menu skrótów dla węzła i wykonywać zadania, gdy deweloper kliknie element menu.
+- Rozszerzając istniejące węzły. Na przykład można dodać nowy węzeł podrzędny do istniejącego węzła lub dodać element menu skrótów do węzła i wykonać zadania, gdy deweloper kliknie element menu.
 
-  Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Aby uzyskać więcej informacji, zobacz sekcję Rozpoznaj [węzeł połączenia SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
-## <a name="development-computer-requirements"></a>Wymagania dotyczące komputera rozwoju
- Aby utworzyć rozszerzeń dla narzędzi SharePoint, komputer deweloperski musi spełniać te same wymagania dotyczące tworzenia rozwiązań programu SharePoint w Visual Studio.
+## <a name="development-computer-requirements"></a>Wymagania dotyczące komputera deweloperskiego
+ Aby można było tworzyć rozszerzenia dla narzędzi programu SharePoint, komputer deweloperski musi spełniać te same wymagania dotyczące tworzenia rozwiązań programu SharePoint w programie Visual Studio.
 
- Firma Microsoft zaleca również zainstalowanie [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Zestaw SDK zawiera szablony projektów i narzędzi, które służą do rozszerzenia programu Visual Studio. W szczególności zestaw SDK zawiera szablon projektu, który umożliwia łatwe tworzenie pakietu Visual Studio rozszerzenia (VSIX). Pakiety VSIX są preferowanym sposobem wdrażania rozszerzeń programu Visual Studio w programie Visual Studio. Wszystkie rozszerzenia narzędzi programu SharePoint musi zostać wdrożony za pomocą pakietów VSIX. Wszystkie przewodniki w tej dokumentacji założono, że [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] zainstalowane.
+ Zalecamy również zainstalowanie programu [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] . Zestaw SDK zawiera szablony i narzędzia projektu, których można użyć do rozszerania programu Visual Studio. W szczególności zestaw SDK zawiera szablon projektu, którego można użyć do łatwego tworzenia pakietu Visual Studio Extension (VSIX). Pakiety VSIX są preferowanym sposobem wdrożenia rozszerzeń programu Visual Studio w programie Visual Studio. Wszystkie rozszerzenia narzędzi programu SharePoint muszą zostać wdrożone przy użyciu pakietów VSIX. We wszystkich przewodnikach w tej dokumentacji założono, że [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] zainstalowano program.
 
- Aby zainstalować program Visual Studio SDK, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md). Aby uzyskać więcej informacji na temat rozszerzeń programu Visual Studio, zobacz [Rozpoczynanie tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
+ Aby zainstalować zestaw Visual Studio SDK, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md). Aby uzyskać więcej informacji na temat rozszerzeń programu Visual Studio, zobacz [Rozpoczynanie tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Koncepcje programowania oraz funkcje dla rozszerzeń narzędzi SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
-- [Odwołanie &#40;rozszerzalność narzędzi SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
-- [Debugowanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
-- [Wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Poszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Rozwiń węzeł połączenia programu SharePoint w Eksplorator serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Koncepcje programowania i funkcje dla rozszerzeń narzędzi SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [Dokumentacja &#40;rozszerzalności narzędzi programu SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
+- [Debugowanie rozszerzeń dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Wdróż rozszerzenia dla narzędzi programu SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie stron dla programu SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297ebf0e7c2ed1273dd5a8ac973ce497c4c64781
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986357"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015163"
 ---
 # <a name="create-pages-for-sharepoint"></a>Tworzenie stron dla programu SharePoint
   Można tworzyć strony aplikacji, strony witryny, strony wzorcowe i układy stron dla witryny programu SharePoint.
@@ -39,7 +38,7 @@ ms.locfileid: "72986357"
 |Strony aplikacji|Utwórz stronę aplikacji, jeśli chcesz, aby strona zawierała kod niestandardowy, lub chcesz, aby strona była współdzielona między wieloma lokacjami. W przeciwnym razie na stronie witryny może być najlepszym wyborem.|
 |Strony witryny|Utwórz stronę witryny, jeśli chcesz wykonać dowolne z następujących zadań:<br /><br /> -Dodaj stronę do biblioteki programu SharePoint.<br />-Włącz funkcję hostowania funkcji, takich jak dynamiczne składniki Web Part i strefy składników Web Part.<br />— Umożliwia użytkownikom Dostosowywanie strony przy użyciu programu SharePoint Designer.<br /><br /> Nie twórz strony witryny, jeśli chcesz, aby strona zawierała kod niestandardowy. Mimo że można dodać niestandardowy kod do strony witryny, kod przestaje działać, gdy użytkownik dostosowuje stronę przy użyciu programu SharePoint Designer.|
 |Strony wzorcowe|Utwórz stronę wzorcową, jeśli chcesz zdefiniować strukturę wspólną dla stron witryny i stron aplikacji.|
-|Układy stron|Układy stron są specyficzne dla [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] i umożliwiają dokładniejsze zdefiniowanie typowej struktury stron i stron aplikacji.|
+|Układy stron|Układy stron są specyficzne dla programu [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] i umożliwiają dokładniejsze zdefiniowanie wspólnej struktury stron witryny i stron aplikacji.|
 
  Aby zapoznać się z omówieniem każdego typu strony, zobacz [blok konstrukcyjny: strony i interfejs użytkownika](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14))oraz [układów stron i stron wzorcowych](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14)).
 
@@ -60,7 +59,7 @@ ms.locfileid: "72986357"
 
  Aby uzyskać więcej informacji na temat tworzenia kaskadowe arkusze stylów, zobacz [kaskadowe arkusze stylów klasy użycie w programie SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ms438349(v=office.14)). Aby uzyskać więcej informacji na temat tworzenia plików JavaScript i JScript dla rozwiązania SharePoint, zobacz [Konfigurowanie podstawowej strony aspx dla języka ECMAScript](/previous-versions/office/developer/sharepoint-2010/ee535709(v=office.14)). Aby uzyskać więcej informacji na temat motywów, zobacz [Building Block: Pages and the User Interface](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)).
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|

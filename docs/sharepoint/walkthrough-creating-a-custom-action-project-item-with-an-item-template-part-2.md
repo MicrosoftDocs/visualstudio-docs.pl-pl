@@ -1,7 +1,7 @@
 ---
 title: Utwórz niestandardowy element projektu akcji z szablonem elementu, część 2
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
@@ -11,17 +11,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189150"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016103"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Przewodnik: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu programu SharePoint i skojarzeniu go z szablonem elementu w programie Visual Studio, można również udostępnić Kreator szablonu. Za pomocą kreatora można zbierać informacje od użytkowników, gdy używają one szablonu, aby dodać nowe wystąpienie elementu projektu do projektu. Zbierane informacje mogą służyć do inicjowania elementu projektu.
 
- W tym instruktażu dodasz kreatora do elementu projektu akcji niestandardowej, który jest prezentowany w [przewodniku: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Gdy użytkownik dodaje niestandardowy element projektu akcji do projektu programu SharePoint, Kreator zbiera informacje o akcji niestandardowej (na przykład o lokalizacji i adresie URL, do którego należy przejść po wybraniu przez użytkownika końcowego) i dodaje te informacje do pliku Items *. XML* w nowy element projektu.
+ W tym instruktażu dodasz kreatora do elementu projektu akcji niestandardowej, który jest prezentowany w [przewodniku: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Gdy użytkownik dodaje niestandardowy element projektu akcji do projektu programu SharePoint, Kreator zbiera informacje o akcji niestandardowej (na przykład o lokalizacji i adresie URL, do którego należy przejść po wybraniu przez użytkownika końcowego) i dodaje te informacje do pliku *Elements.xml* w nowym elemencie projektu.
 
  W tym instruktażu przedstawiono następujące zadania:
 
@@ -47,12 +46,12 @@ ms.locfileid: "73189150"
 
   Znajomość następujących pojęć jest pomocna, ale nie jest wymagana, aby ukończyć Przewodnik:
 
-- Kreatorzy szablonów projektów i elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: korzystanie z kreatorów z szablonami projektów](../extensibility/how-to-use-wizards-with-project-templates.md) i interfejsem <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.
+- Kreatorzy szablonów projektów i elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: korzystanie z kreatorów z szablonami projektów](../extensibility/how-to-use-wizards-with-project-templates.md) i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsem.
 
 - Akcje niestandardowe w programie SharePoint. Aby uzyskać więcej informacji, zobacz [Akcja niestandardowa](/previous-versions/office/developer/sharepoint-2010/ms458635(v=office.14)).
 
 ## <a name="create-the-wizard-project"></a>Utwórz projekt Kreatora
- Aby ukończyć ten Instruktaż, należy dodać projekt do rozwiązania CustomActionProjectItem, które zostało utworzone w [przewodniku: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Zostanie wdrożony interfejs <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> i zdefiniujesz interfejs użytkownika kreatora w tym projekcie.
+ Aby ukończyć ten Instruktaż, należy dodać projekt do rozwiązania CustomActionProjectItem, które zostało utworzone w [przewodniku: Tworzenie niestandardowego elementu projektu akcji z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Interfejs zostanie wdrożony <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> i zdefiniujesz interfejs użytkownika kreatora w tym projekcie.
 
 #### <a name="to-create-the-wizard-project"></a>Aby utworzyć projekt Kreatora
 
@@ -60,13 +59,13 @@ ms.locfileid: "73189150"
 
 2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-3. W oknie dialogowym **Nowy projekt** rozwiń węzły **wizualizacji C#**  lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
+3. W oknie dialogowym **Nowy projekt** rozwiń węzły **Visual C#** lub **Visual Basic** , a następnie wybierz węzeł **systemu Windows** .
 
 4. W górnej części okna dialogowego **Nowy projekt** upewnij się, że na liście wersji .NET Framework wybrano **.NET Framework 4,5** .
 
 5. Wybierz szablon projektu **Biblioteka formantów użytkownika WPF** , nazwij projekt **ItemTemplateWizard**, a następnie wybierz przycisk **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje projekt **ItemTemplateWizard** do rozwiązania.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje projekt **ItemTemplateWizard** do rozwiązania.
 
 6. Usuń element UserControl1 z projektu.
 
@@ -79,7 +78,7 @@ ms.locfileid: "73189150"
 
 2. W **projektancie projektu**upewnij się, że struktura docelowa jest ustawiona na .NET Framework 4,5.
 
-     W przypadku C# projektów wizualnych można ustawić tę wartość na karcie **aplikacja** . W przypadku projektów Visual Basic można ustawić tę wartość na karcie **Kompilowanie** . Aby uzyskać więcej informacji, zobacz [How to: Target of a wersja .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+     W przypadku projektów Visual C# można ustawić tę wartość na karcie **aplikacja** . W przypadku projektów Visual Basic można ustawić tę wartość na karcie **Kompilowanie** . Aby uzyskać więcej informacji, zobacz [How to: Target of a wersja .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 3. W projekcie **ItemTemplateWizard** Dodaj element **window (WPF)** do projektu, a następnie nadaj mu nazwę Item **WizardWindow**.
 
@@ -102,7 +101,7 @@ ms.locfileid: "73189150"
 9. W oknie **Właściwości** Zmień wartość właściwości **Osadź typy** współdziałania na **wartość false**.
 
 ## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>Zdefiniuj domyślne parametry lokalizacji i identyfikatora dla akcji niestandardowych
- Każda akcja niestandardowa ma lokalizację i identyfikator, który jest określony w `GroupID` i `Location` atrybutów elementu `CustomAction` w pliku. *XML* . W tym kroku zdefiniujesz kilka prawidłowych ciągów dla tych atrybutów w projekcie ItemTemplateWizard. Po zakończeniu tego instruktażu te ciągi są zapisywane w pliku Items *. XML* w niestandardowym elemencie projektu akcji, gdy użytkownicy określą lokalizację i identyfikator w kreatorze.
+ Każda akcja niestandardowa ma lokalizację i identyfikator, który jest określony `GroupID` w `Location` atrybuty i `CustomAction` elementu w pliku *Elements.xml* . W tym kroku zdefiniujesz kilka prawidłowych ciągów dla tych atrybutów w projekcie ItemTemplateWizard. Po zakończeniu tego instruktażu te ciągi są zapisywane w pliku *Elements.xml* w elemencie projektu akcji niestandardowej, gdy użytkownicy określą lokalizację i identyfikator w kreatorze.
 
  Dla uproszczenia ten przykład obsługuje tylko podzestaw dostępnych domyślnych lokalizacji i identyfikatorów. Aby uzyskać pełną listę, zobacz [domyślne lokalizacje i identyfikatory akcji niestandardowych](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14)).
 
@@ -130,9 +129,9 @@ ms.locfileid: "73189150"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > Okno, które jest tworzone w tym języku XAML, pochodzi od klasy bazowej <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Po dodaniu niestandardowego okna dialogowego WPF do programu Visual Studio zalecamy, aby można było utworzyć okno dialogowe z tej klasy, aby mieć spójne style z innymi oknach dialogowych w programie Visual Studio i uniknąć problemów, które mogłyby wystąpić w innych oknach dialogowych modalnych. Aby uzyskać więcej informacji, zobacz [Tworzenie modalnych okien dialogowych i zarządzanie nimi](../extensibility/creating-and-managing-modal-dialog-boxes.md).
+    > Okno, które zostało utworzone w tym języku XAML, pochodzi od <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> klasy bazowej. Po dodaniu niestandardowego okna dialogowego WPF do programu Visual Studio zalecamy, aby można było utworzyć okno dialogowe z tej klasy, aby mieć spójne style z innymi oknach dialogowych w programie Visual Studio i uniknąć problemów, które mogłyby wystąpić w innych oknach dialogowych modalnych. Aby uzyskać więcej informacji, zobacz [Tworzenie modalnych okien dialogowych i zarządzanie nimi](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
-3. Jeśli tworzysz projekt Visual Basic, Usuń przestrzeń nazw `ItemTemplateWizard` z nazwy klasy `WizardWindow` w atrybucie `x:Class` elementu `Window`. Ten element znajduje się w pierwszym wierszu XAML. Gdy skończysz, pierwszy wiersz powinien wyglądać podobnie do następującego kodu:
+3. Jeśli tworzysz projekt Visual Basic, Usuń `ItemTemplateWizard` przestrzeń nazw z `WizardWindow` nazwy klasy w `x:Class` atrybucie `Window` elementu. Ten element znajduje się w pierwszym wierszu XAML. Gdy skończysz, pierwszy wiersz powinien wyglądać podobnie do następującego kodu:
 
     ```xml
     <Window x:Class="WizardWindow"
@@ -144,7 +143,7 @@ ms.locfileid: "73189150"
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
 
 ## <a name="implement-the-wizard"></a>Zaimplementuj Kreatora
- Zdefiniuj funkcje Kreatora, implementując interfejs <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.
+ Definiowanie funkcji Kreatora przez implementację <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.
 
 #### <a name="to-implement-the-wizard"></a>Aby zaimplementować Kreatora
 
@@ -153,12 +152,12 @@ ms.locfileid: "73189150"
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
 
-## <a name="checkpoint"></a>Elementu
+## <a name="checkpoint"></a>Punkt kontrolny
  W tym momencie w przewodniku cały kod kreatora jest teraz w projekcie. Skompiluj projekt, aby upewnić się, że kompiluje się bez błędów.
 
 #### <a name="to-build-your-project"></a>Aby skompilować projekt
 
-1. Na pasku menu wybierz **kompiluj**  > **Kompiluj rozwiązanie**.
+1. Na pasku menu wybierz polecenie **Kompiluj**  >  **kompilację rozwiązania**.
 
 ## <a name="associate-the-wizard-with-the-item-template"></a>Skojarz kreatora z szablonem elementu
  Po zaimplementowaniu kreatora należy skojarzyć go z szablonem **niestandardowego elementu akcji** , wykonując trzy podstawowe kroki:
@@ -175,21 +174,21 @@ ms.locfileid: "73189150"
 
 2. Na karcie **podpisywanie** wybierz pole wyboru **podpisz zestaw** .
 
-3. Z listy **Wybierz plik klucza o silnej nazwie** wybierz pozycję **\<nowy... >** .
+3. Z listy **Wybierz plik klucza o silnej nazwie** wybierz opcję **\<New...>** .
 
 4. W oknie dialogowym **Tworzenie klucza silnej nazwy** wprowadź nazwę, wyczyść pole wyboru **Chroń mój klucz z hasłem** , a następnie wybierz przycisk **OK** .
 
-5. Na pasku menu wybierz **kompiluj**  > **Kompiluj rozwiązanie**.
+5. Na pasku menu wybierz polecenie **Kompiluj**  >  **kompilację rozwiązania**.
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Aby uzyskać token klucza publicznego dla zestawu Kreatora
 
-1. W oknie wiersza polecenia programu Visual Studio Uruchom następujące polecenie, zastępując *PathToWizardAssembly* z pełną ścieżką do skompilowanego zestawu ItemTemplateWizard. dll dla projektu ItemTemplateWizard na komputerze deweloperskim.
+1. W oknie wiersza polecenia programu Visual Studio Uruchom następujące polecenie, zastępując *PathToWizardAssembly* z pełną ścieżką do skompilowanego zestawu ItemTemplateWizard.dll dla projektu ItemTemplateWizard na komputerze deweloperskim.
 
     ```xml
     sn.exe -T PathToWizardAssembly
     ```
 
-     Token klucza publicznego dla zestawu *ItemTemplateWizard. dll* jest zapisywana w oknie wiersza polecenia programu Visual Studio.
+     Token klucza publicznego dla zestawu *ItemTemplateWizard.dll* jest zapisywana w oknie wiersza polecenia programu Visual Studio.
 
 2. Pozostaw otwarte okno wiersza polecenia programu Visual Studio. Aby ukończyć następną procedurę, potrzebny będzie token klucza publicznego.
 
@@ -197,7 +196,7 @@ ms.locfileid: "73189150"
 
 1. W **Eksplorator rozwiązań**rozwiń węzeł projektu **ItemTemplate** , a następnie otwórz plik *ItemTemplate. vstemplate* .
 
-2. Obok końca pliku Dodaj następujący element `WizardExtension` między tagami `</TemplateContent>` i `</VSTemplate>`. Zastąp wartość *YourToken* atrybutu `PublicKeyToken` kluczem publicznym, który został uzyskany w poprzedniej procedurze.
+2. W prawie na końcu pliku Dodaj następujący `WizardExtension` element między `</TemplateContent>` `</VSTemplate>` tagami i. Zastąp wartość *YourToken* `PublicKeyToken` atrybutu tokenem klucza publicznego uzyskanym w poprzedniej procedurze.
 
     ```xml
     <WizardExtension>
@@ -206,18 +205,18 @@ ms.locfileid: "73189150"
     </WizardExtension>
     ```
 
-     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [Szablony &#40;&#41;programu Visual Studio WizardExtension —](../extensibility/wizardextension-element-visual-studio-templates.md).
+     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [wizardextension — elementu &#40;szablonów programu Visual Studio&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Zapisz i zamknij plik.
 
-## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Dodawanie parametrów wymiennych do pliku Items *. XML* w szablonie elementu
- Dodaj kilka wymiennych parametrów do pliku repliks *. XML* w projekcie ItemTemplate. Te parametry są inicjowane w metodzie `PopulateReplacementDictionary` w zdefiniowanej wcześniej klasie `CustomActionWizard`. Gdy użytkownik dodaje niestandardowy element projektu akcji do projektu, program Visual Studio automatycznie zastępuje te parametry w pliku Items *. XML* w nowym elemencie projektu wartościami określonymi w kreatorze.
+## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Dodawanie parametrów wymiennych do pliku *Elements.xml* w szablonie elementu
+ Dodaj kilka wymiennych parametrów do pliku *Elements.xml* w projekcie ItemTemplate. Te parametry są inicjowane w `PopulateReplacementDictionary` metodzie `CustomActionWizard` zdefiniowanej wcześniej w klasie. Gdy użytkownik dodaje niestandardowy element projektu akcji do projektu, program Visual Studio automatycznie zastępuje te parametry w pliku *Elements.xml* w nowym elemencie projektu wartościami określonymi w kreatorze.
 
  Parametr wymienny jest tokenem rozpoczynającym się i kończącym znakiem dolara ($). Oprócz definiowania własnych parametrów do przemieszczenia można używać wbudowanych parametrów, które system projektu SharePoint definiuje i inicjuje. Aby uzyskać więcej informacji, zobacz [Parametry wymienne](../sharepoint/replaceable-parameters.md).
 
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Aby dodać parametry wymienne do pliku *. XML*
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Aby dodać do pliku *Elements.xml* parametry wymienne
 
-1. W projekcie ItemTemplate Zastąp zawartość pliku repliks *. XML* następującym kodem XML.
+1. W projekcie ItemTemplate Zastąp zawartość pliku *Elements.xml* następującym kodem XML.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -233,7 +232,7 @@ ms.locfileid: "73189150"
     </Elements>
     ```
 
-     Nowy kod XML zmienia wartości atrybutów `Id`, `GroupId`, `Location`, `Description`i `Url` do wymiennych parametrów.
+     Nowy kod XML zmienia wartości `Id` atrybutów,,, `GroupId` `Location` `Description` i `Url` do wymiennych parametrów.
 
 2. Zapisz i zamknij plik.
 
@@ -254,7 +253,7 @@ ms.locfileid: "73189150"
 
 5. Na liście **projekt** wybierz pozycję **ItemTemplateWizard**, a następnie wybierz przycisk **OK** .
 
-6. Na pasku menu wybierz **kompiluj** > **Kompiluj rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
+6. Na pasku menu wybierz kompilacja Kompiluj **Build**  >  **rozwiązanie**, a następnie upewnij się, że rozwiązanie kompiluje się bez błędów.
 
 ## <a name="test-the-wizard"></a>Testowanie Kreatora
  Teraz można przystąpić do testowania kreatora. Najpierw Rozpocznij debugowanie rozwiązania CustomActionProjectItem w eksperymentalnym wystąpieniu programu Visual Studio. Następnie przetestuj kreatora dla elementu projektu akcji niestandardowej w projekcie programu SharePoint w eksperymentalnym wystąpieniu programu Visual Studio. Na koniec Skompiluj i Uruchom projekt programu SharePoint, aby sprawdzić, czy działanie niestandardowe działa zgodnie z oczekiwaniami.
@@ -263,21 +262,21 @@ ms.locfileid: "73189150"
 
 1. Uruchom ponownie program Visual Studio z poświadczeniami administracyjnymi, a następnie otwórz rozwiązanie CustomActionProjectItem.
 
-2. W projekcie ItemTemplateWizard Otwórz plik kodu CustomActionWizard, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w metodzie `RunStarted`.
+2. W projekcie ItemTemplateWizard Otwórz plik kodu CustomActionWizard, a następnie Dodaj punkt przerwania do pierwszego wiersza kodu w `RunStarted` metodzie.
 
-3. Na pasku menu wybierz kolejno opcje **debuguj** > **wyjątki**.
+3. Na pasku menu wybierz polecenie **Debuguj**  >  **wyjątki**.
 
 4. Upewnij się, że w oknie dialogowym **wyjątki** zostały wyczyszczone pola wyboru **zgłoszone** i **nieobsługiwane przez użytkownika** dla **wyjątków środowiska uruchomieniowego języka wspólnego** , a następnie wybierz przycisk **OK** .
 
-5. Rozpocznij debugowanie, wybierając klawisz **F5** lub na pasku menu wybierz polecenie **Debuguj** > **Rozpocznij debugowanie**.
+5. Rozpocznij debugowanie, wybierając klawisz **F5** lub na pasku menu, wybierając **Debuguj**  >  **Rozpocznij debugowanie**.
 
      Program Visual Studio instaluje rozszerzenie do%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom akcji projektu Item\1.0 i uruchamia eksperymentalne wystąpienie programu Visual Studio. Testujesz element projektu w tym wystąpieniu programu Visual Studio.
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Aby przetestować kreatora w programie Visual Studio
 
-1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
 
-2. Rozwiń węzeł **wizualizacji C#**  lub **Visual Basic** (w zależności od języka obsługiwanego przez szablon elementu), rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
+2. Rozwiń węzeł **Visual C#** lub **Visual Basic** (w zależności od języka obsługiwanego przez szablon elementu), rozwiń węzeł **SharePoint** , a następnie wybierz węzeł **2010** .
 
 3. Na liście szablonów projektu wybierz **projekt SharePoint 2010**, nazwij projekt **CustomActionWizardTest**, a następnie wybierz przycisk **OK** .
 
@@ -289,9 +288,9 @@ ms.locfileid: "73189150"
 
 7. Na liście elementów projektu wybierz element **Akcja niestandardowa** , a następnie wybierz przycisk **Dodaj** .
 
-8. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio jest zatrzymany w punkcie przerwania, który został ustawiony wcześniej w metodzie `RunStarted`.
+8. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio jest zatrzymany w punkcie przerwania, który został ustawiony wcześniej w `RunStarted` metodzie.
 
-9. Kontynuuj debugowanie projektu, wybierając klawisz **F5** lub na pasku menu wybierz polecenie **Debuguj** > **Kontynuuj**.
+9. Kontynuuj debugowanie projektu, wybierając klawisz **F5** lub na pasku menu wybierz **Debuguj**  >  **Kontynuuj**.
 
      Zostanie wyświetlony Kreator dostosowania programu SharePoint.
 
@@ -305,11 +304,11 @@ ms.locfileid: "73189150"
 
 14. W polu **adres URL** wprowadź **https://docs.microsoft.com/sharepoint/dev/** , a następnie wybierz przycisk **Zakończ** .
 
-     Program Visual Studio dodaje element o nazwie **CustomAction1** do projektu i otwiera plik Items *. XML* w edytorze. Sprawdź, czy *element. XML* zawiera wartości, które zostały określone w kreatorze.
+     Program Visual Studio dodaje element o nazwie **CustomAction1** do projektu i otwiera *Elements.xml* plik w edytorze. Sprawdź, czy *Elements.xml* zawiera wartości, które zostały określone w kreatorze.
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>Aby przetestować akcję niestandardową w programie SharePoint
 
-1. W eksperymentalnym wystąpieniu programu Visual Studio, wybierz klawisz **F5** lub na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio, wybierz klawisz **F5** lub na pasku menu wybierz **Debuguj**  >  **Rozpocznij debugowanie**.
 
      Akcja niestandardowa zostanie spakowana i wdrożona w witrynie programu SharePoint określonej przez właściwość **adres URL witryny** projektu, a w przeglądarce sieci Web zostanie otwarta strona domyślna tej witryny.
 
@@ -324,14 +323,14 @@ ms.locfileid: "73189150"
 
      Zostanie wyświetlona strona **Ustawienia listy** .
 
-4. W obszarze nagłówka **komunikacja** w górnej części strony wybierz łącze **Centrum deweloperów programu SharePoint** , sprawdź, czy przeglądarka otwiera witrynę sieci Web https://docs.microsoft.com/sharepoint/dev/, a następnie zamknij przeglądarkę.
+4. W obszarze nagłówka **komunikacja** w górnej części strony wybierz łącze **Centrum deweloperów programu SharePoint** , sprawdź, czy przeglądarka otwiera witrynę sieci Web https://docs.microsoft.com/sharepoint/dev/ , a następnie zamknij przeglądarkę.
 
 ## <a name="cleaning-up-the-development-computer"></a>Czyszczenie komputera deweloperskiego
  Po zakończeniu testowania elementu projektu, Usuń szablon elementu projektu z eksperymentalnego wystąpienia programu Visual Studio.
 
 #### <a name="to-clean-up-the-development-computer"></a>Aby wyczyścić komputer deweloperski
 
-1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **narzędzia** > **rozszerzenia i aktualizacje**.
+1. W eksperymentalnym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **Narzędzia**  >  **rozszerzenia i aktualizacje**.
 
      Zostanie otwarte okno dialogowe **rozszerzenia i aktualizacje** .
 
@@ -346,5 +345,5 @@ ms.locfileid: "73189150"
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Porady: korzystanie z kreatora z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Domyślne lokalizacje i identyfikatory akcji niestandardowych](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))
