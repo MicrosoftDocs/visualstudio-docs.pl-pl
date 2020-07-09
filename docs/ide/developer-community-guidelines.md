@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
+ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938265"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137564"
 ---
 # <a name="developer-community-guidelines"></a>Wytyczne od społeczności deweloperów
 
@@ -64,6 +64,17 @@ Gdy w przypadku problemu brakuje ważnych informacji, przypiszemy stan _więcej 
 ### <a name="wont-fix-bugs"></a>Nie naprawianie usterek
 
 Niektóre usterki są zamykane w przypadku niekorzystnego zrównoważenia kosztów. Na przykład, Jeśli poprawka jest tak skomplikowana, ryzyko związane z ryzykiem IT dla wielu użytkowników, naprawianie może być nieuzasadnione. Po zamknięciu usterki w takiej sytuacji wyjaśnimy, dlaczego to zrobimy.
+
+### <a name="other-product"></a>Inny produkt
+
+Czasami podczas zgłaszania problemu zostaje on spowodowany przez inny produkt, a nie program Visual Studio. Może to być inna powiązana aplikacja lub rozszerzenie. 
+
+Gdy tak się stanie, zamknie problem i poprosił Cię o otwarcie go przy użyciu innego produktu. Poniżej przedstawiono niektóre typowe miejsca, w których można nawiązać te problemy:
+
+* [SQL Server](https://feedback.azure.com/forums/908035-sql-server)
+* [Obsługa Visual Studio Subscription](https://feedback.azure.com/forums/908035-sql-server)
+* [Office](https://support.office.com/article/how-do-i-give-feedback-on-microsoft-office-2b102d44-b43f-4dd2-9ff4-23cf144cfb11)
+* [Windows](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)
 
 #### <a name="additional-information"></a>Dodatkowe informacje
 

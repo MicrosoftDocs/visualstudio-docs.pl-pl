@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770526"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092313"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Instrukcje: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)
 
@@ -74,7 +74,7 @@ Możesz użyć następujących skrótów klawiaturowych z oknem **definicji wgl�
 |-------------------|:-----------------------:|
 |Otwórz okno definicji|**Alt** + **F12**|
 |Zamknij okno definicji|**Esc**|
-|Promuj okno definicji do karty zwykłego dokumentu|**SHIFT** + **Alt** + **Strona główna**|
+|Promuj okno definicji do karty zwykłego dokumentu|**Ctrl** + **Alt** + **Strona główna**|
 |Przechodzenie między oknami definicji|**Ctrl** + **Alt** + Alt **-** i **Ctrl** + **Alt**+**=**|
 |Przechodzenie między wieloma wynikami|**F8** i **SHIFT** + **F8**|
 |Przełączanie się między oknem edytora kodu i oknem definicji|**SHIFT** + **ESC**|
@@ -82,7 +82,7 @@ Możesz użyć następujących skrótów klawiaturowych z oknem **definicji wgl�
 > [!NOTE]
 > Możesz również użyć tych samych skrótów klawiaturowych do edycji kodu w oknie **definicji wglądu** w innym miejscu w programie Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Nawiguj po kodzie](../ide/navigating-code.md)
 - [Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)

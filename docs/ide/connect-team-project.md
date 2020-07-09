@@ -1,16 +1,16 @@
 ---
 title: Nawiązywanie połączenia z projektami w Team Explorer
-ms.date: 05/19/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 31fab067ec9844b36c287b80ed481a68861b222e
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183707"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092326"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Nawiązywanie połączenia z projektami w Team Explorer
 
@@ -40,8 +40,9 @@ Aby nawiązać połączenie z projektem:
 > [!TIP]
 > Jeśli musisz utworzyć nowy projekt lub dodać użytkowników do projektu, zobacz [Tworzenie projektu (Azure DevOps)](/azure/devops/organizations/projects/create-project) i [Dodawanie użytkowników do projektu lub zespołu (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
+- [Samouczek: Otwieranie projektu z repozytorium](../get-started/tutorial-open-project-from-repo.md)
 - [Dokumentacja wtyczki Team Explorer](reference/team-explorer-reference.md)
 - [Nawiązywanie połączenia z projektem (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
 - [Rozwiązywanie problemów z nawiązywaniem połączenia z projektem](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
