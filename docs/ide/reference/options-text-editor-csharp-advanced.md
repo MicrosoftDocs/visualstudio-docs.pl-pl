@@ -10,57 +10,31 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
+ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431491"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86181069"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
-Strona Opcje **zaawansowane** służy do modyfikowania ustawień formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla języka C#. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję**Opcje** **narzędzi** > , a następnie wybierz pozycję **Edytor** > tekstu**C#** > **Zaawansowane**.
+Na stronie opcje **Zaawansowane** można modyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komentarzy dokumentacji XML dla języka C#. Aby uzyskać dostęp do tej strony opcji **Tools**, wybierz  >  **Opcje**narzędzia, a następnie wybierz **Edytor tekstu**  >  **C#**  >  **Advanced**.
 
 > [!NOTE]
-> Nie wszystkie opcje mogą być wymienione tutaj.
+> Nie wszystkie opcje mogą być wyświetlane w tym miejscu.
 
 ## <a name="analysis"></a>Analiza
 
 - Analiza kodu na żywo lub zakres analizy w tle
 
-   Skonfiguruj zakres analizy w tle dla kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [Jak: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
+   Skonfiguruj zakres analizy w tle dla kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [How to: Configure Live Code Analysis Scope for Managed Code](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
-## <a name="using-directives"></a>Korzystanie z dyrektyw
+## <a name="using-directives"></a>Dyrektywy using
 
-- Umieść dyrektywy "System" na pierwszym miejscu podczas sortowania za pomocą
+- Umieść dyrektywy "system" jako pierwsze podczas sortowania przy użyciu
 
-   Po wybraniu tej opcji polecenie **Usuń i posortuj usings** w menu prawym przyciskiem myszy sortuje `using` dyrektywy i umieszcza obszary nazw "System" u góry listy.
-
-   Przed sortowaniem:
-
-   ```csharp
-   using AutoMapper;
-   using FluentValidation;
-   using System.Collections.Generic;
-   using System.Linq;
-   using Newtonsoft.Json;
-   using System;
-   ```
-
-   Po sortowaniu:
-
-   ```csharp
-   using System;
-   using System.Collections.Generic;
-   using System.Linq;
-   using AutoMapper;
-   using FluentValidation;
-   using Newtonsoft.Json;
-   ```
-
-- Oddzielanie grup dyrektyw przy użyciu
-
-   Po wybraniu tej opcji polecenie **Usuń i sortuj usings** w menu po kliknięciu prawym przyciskiem myszy oddziela `using` dyrektywy, wstawiając pustą linię między grupami dyrektyw, które mają ten sam główny obszar nazw.
+   Po wybraniu polecenia **Usuń i Sortuj przy użyciu** w menu rozwijanym po kliknięciu prawym przyciskiem myszy sortuje `using` dyrektywy i umieszcza przestrzenie nazw "system" w górnej części listy.
 
    Przed sortowaniem:
 
@@ -76,6 +50,32 @@ Strona Opcje **zaawansowane** służy do modyfikowania ustawień formatowania ed
    Po sortowaniu:
 
    ```csharp
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using AutoMapper;
+   using FluentValidation;
+   using Newtonsoft.Json;
+   ```
+
+- Oddziel przy użyciu grupy dyrektywy
+
+   Po wybraniu polecenia **Usuń i Sortuj przy użyciu** w menu rozwijanym prawym przyciskiem myszy oddziela `using` dyrektywy przez wstawianie pustego wiersza między grupami dyrektyw, które mają tę samą główną przestrzeń nazw.
+
+   Przed sortowaniem:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+
+   Po sortowaniu:
+
+   ```csharp
    using AutoMapper;
 
    using FluentValidation;
@@ -87,49 +87,56 @@ Strona Opcje **zaawansowane** służy do modyfikowania ustawień formatowania ed
    using System.Linq;
    ```
 
-- Sugerowanie użycia typów w zestawach programu .NET Framework
-- Sugerowanie użycia typów w pakietach NuGet
+::: moniker range=">=vs-2019"                                              
+- Sugeruj użycie dla typów w zestawach .NET Framework
+::: moniker-end
+                                         
+::: moniker range="vs-2017"                                                
+- Sugeruj użycie dla typów w zestawach odwołań
+::: moniker-end                                                            
 
-   Gdy te opcje są zaznaczone, [szybka akcja](../quick-actions.md) jest dostępna `using` do zainstalowania pakietu NuGet i dodać dyrektywę dla typów bez odwołań.
+- Sugeruj użycie dla typów w pakietach NuGet
 
-   ![Szybka akcja instalowania pakietu NuGet w programie Visual Studio](media/nuget-lightbulb.png)
+   Po wybraniu tych opcji można wykonać [szybką akcję](../quick-actions.md) , aby zainstalować pakiet NuGet i dodać `using` dyrektywę dla typów bez odwołań.
+
+   ![Szybka akcja instalacji pakietu NuGet w programie Visual Studio](media/nuget-lightbulb.png)
 
 ## <a name="highlighting"></a>Wyróżnianie
 
-- Wyróżnianie odniesień do symbolu pod kursorem
+- Wyróżnij odwołania do symbolu pod kursorem
 
-   Gdy kursor jest umieszczony wewnątrz symbolu lub po kliknięciu symbolu, wszystkie wystąpienia tego symbolu w pliku kodu są podświetlone.
+   Gdy kursor jest umieszczony wewnątrz symbolu lub po kliknięciu symbolu, wszystkie wystąpienia tego symbolu w pliku kodu są wyróżnione.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 
-- Wprowadzanie trybu tworzenia po otwarciu plików
+- Wejdź do trybu konspektu przy otwieraniu plików
 
-   Gdy ta opcja jest zaznaczona, automatycznie konspektuje plik kodu, który tworzy zwijane bloki kodu. Przy pierwszym otwarciu pliku #regions bloków i nieaktywnych bloków kodu zwijają się.
+   Po wybraniu automatycznie określa plik kodu, który tworzy zwijane bloki kodu. Przy pierwszym otwarciu pliku, bloki #regions bloków i nieaktywnych bloków kodu są zwijane.
 
-- Pokaż separatory linii procedury
+- Pokaż separatory wierszy procedury
 
-   Edytor tekstu wskazuje wizualny zakres procedur. Wiersz jest rysowany w plikach źródłowych *.cs* projektu w lokalizacjach wymienionych w poniższej tabeli:
+   Edytor tekstu wskazuje wizualny zakres procedur. Wiersz jest rysowany w plikach źródłowych *. cs* projektu w lokalizacjach wymienionych w poniższej tabeli:
 
-   |Lokalizacja w pliku źródłowym .cs|Przykład lokalizacji wiersza|
+   |Lokalizacja w pliku źródłowym. cs|Przykład lokalizacji wiersza|
    |---------------------------------|------------------------------|
-   |Po zamknięciu konstrukcji deklaracji bloku|- Na końcu klasy, struktury, modułu, interfejsu lub wyliczenia<br />- Po właściwości, funkcji lub sub<br />- Nie między get i set klauzule w właściwości|
-   |Po zestawie konstrukcji jednoliniowych|- Po instrukcjach importu przed definicją typu w pliku klasy<br />- Po zmiennych zadeklarowanych w klasie, przed jakimikolwiek procedurami|
-   |Po deklaracjach jednowierszowych (deklaracje na poziomie nieblokowym)|- Po instrukcji importu, dziedziczy instrukcje, deklaracje zmiennych, deklaracje zdarzeń, deklaracje delegata i dll zadeklarować instrukcje|
+   |Po zamknięciu konstrukcji deklaracji bloku|-Na końcu klasy, struktury, modułu, interfejsu lub wyliczenia<br />-Po właściwości, funkcji lub sub<br />-Nie między klauzulami get i Set we właściwości|
+   |Po zestawie pojedynczych konstrukcji|-Po instrukcjach importu przed definicją typu w pliku klasy<br />-Po zmiennych zadeklarowanych w klasie przed wszelkimi procedurami|
+   |Po deklaracjach pojedynczego wiersza (deklaracje na poziomie niebloku)|-Następujące instrukcje importu, instrukcje dziedziczenia, deklaracje zmiennych, deklaracje zdarzeń, deklaracje delegata i instrukcje dotyczące bibliotek DLL|
 
-## <a name="block-structure-guides"></a>Prowadnice struktury bloków
+## <a name="block-structure-guides"></a>Prowadnice struktury blokowej
 
-Zaznacz te pola wyboru, aby wyświetlić kropkowane pionowe linie między nawiasami klamrowymi (**{}**) w kodzie. Następnie można łatwo wyświetlić poszczególne bloki kodu dla poziomu deklaracji i konstrukcji poziomu kodu.
+Zaznacz te pola wyboru, aby wyświetlić kropkowane linie pionowe między nawiasami klamrowymi ( **{}** ) w kodzie. Następnie można łatwo zobaczyć pojedyncze bloki kodu dla poziomu deklaracji i konstrukcji na poziomie kodu.
 
 ## <a name="editor-help"></a>Pomoc edytora
 
-- Generowanie komentarzy dokumentacji XML dla ///
+- Generuj komentarze dokumentacji XML dla///
 
-   Gdy ta opcja jest zaznaczona, po wpisaniu `///` komentarza wstawia elementy XML dla komentarzy dokumentacji XML. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [Komentarze do dokumentacji XML (Przewodnik po programowaniu w języku C#).](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+   Po wybraniu Wstawia elementy XML dla komentarzy dokumentacji XML po wprowadzeniu `///` komentarza. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [Komentarze dokumentacji XML (Przewodnik programowania w języku C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Jak: Wstawianie komentarzy XML do generowania dokumentacji](../../ide/reference/generate-xml-documentation-comments.md)
+- [Instrukcje: wstawianie komentarzy XML do generacji dokumentacji](../../ide/reference/generate-xml-documentation-comments.md)
 - [Komentarze dokumentacji XML (Przewodnik programowania w języku C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
-- [Dokumentowanie kodu za pomocą komentarzy XML (Przewodnik języka C#)](/dotnet/csharp/codedoc)
+- [Dokumentowanie kodu za pomocą komentarzy XML (Przewodnik C#)](/dotnet/csharp/codedoc)
 - [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
 - [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de463fbc941273bed9b949958b9463be6ea1fa3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 35bd6f26b56ea7c3a1d578e5721504a91f60b74c
+ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285637"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86156862"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -152,7 +152,7 @@ Można zdefiniować własne poziomy hierarchii i według **stanu** , a następni
 |Grupa|Opis|
 |-|-----------------|
 |**Czas trwania**|Testy grup według czasu wykonywania: **szybka**, **średnia**i **wolna**.|
-|**Wynik**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
+|**Wynikiem**|Grupuje testy według wyników wykonywania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 |**Cech**|Grupuje testy według par kategorii/wartości zdefiniowanych przez użytkownika. Składnia określająca kategorie i wartości cech jest definiowana przez strukturę testów jednostkowych.|
 |**Project**|Grupuje testy według nazwy projektów.|
 ::: moniker-end
@@ -211,11 +211,21 @@ Można utworzyć i zapisać listę testów, które chcesz uruchomić lub wyświe
 
 Lista odtwarzania zostanie otwarta na nowej karcie programu Test Explorer. Możesz użyć tej listy odtwarzania raz, a następnie odrzucić ją. Możesz też kliknąć przycisk **Zapisz** na pasku narzędzi okna listy odtwarzania, a następnie wybrać nazwę i lokalizację, aby zapisać listę odtwarzania.
 
-![Lista odtwarzania zostanie otwarta na osobnej karcie Eksploratora testów](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
+![Lista odtwarzania zostanie otwarta na osobnej karcie Eksploratora testów](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
 **Aby utworzyć listę odtwarzania**, wybierz jeden lub więcej testów w Eksploratorze testów. Kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do listy odtwarzania**  >  **Nowa lista odtwarzania**.
 
 **Aby otworzyć listę odtwarzania**, wybierz ikonę listy odtwarzania na pasku narzędzi programu Visual Studio i wybierz wcześniej zapisany plik listy odtwarzania z menu.
+
+**Aby edytować listę odtwarzania**, kliknij prawym przyciskiem myszy dowolny test i użyj opcji menu, aby dodać lub usunąć go z listy odtwarzania.
+
+Począwszy od programu Visual Studio 2019 w wersji 16,7, można wybrać przycisk **Edytuj** na pasku narzędzi. Obok testów zostaną wyświetlone pola wyboru pokazujące, które testy są uwzględnione i wykluczone na liście odtwarzania. Edytuj grupy zgodnie z potrzebami.
+
+![Przycisk Edytuj listę odtwarzania](../test/media/vs-2019/test-explorer-playlist-edit-16-7.png)
+
+Możesz również sprawdzić lub usunąć zaznaczenie pól grup nadrzędnych w hierarchii. Ta akcja tworzy dynamiczną listę odtwarzania, która zawsze aktualizuje listę odtwarzania w oparciu o testy, które znajdują się w tej grupie. Na przykład jeśli umieścisz znacznik wyboru obok klasy, każdy test dodany z tej klasy będzie częścią tej listy odtwarzania. Po usunięciu testu z tej klasy zostanie on usunięty z listy odtwarzania. Aby dowiedzieć się więcej na temat reguł, można zapisać listę odtwarzania z przyciskiem Zapisz na pasku narzędzi i otworzyć plik *listy odtwarzania* , który jest tworzony na dysku. Ten plik zawiera listę wszystkich reguł i testów indywidualnych, które tworzą listę odtwarzania.
+
+![Plik XML z listą odtwarzania](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -272,7 +282,7 @@ Aby odfiltrować według innych kryteriów:
 |**Ścieżka pliku**|Wyszukuje dopasowania w w pełni kwalifikowanych nazwach plików źródłowych testów.|
 |**W pełni kwalifikowana nazwa**|Przeszukuje w pełni kwalifikowaną nazwę testowanych przestrzeni nazw, klas i metod w celu dopasowania.|
 |**Dane wyjściowe**|Wyszukuje komunikaty o błędach zdefiniowane przez użytkownika, które są zapisywane w standardowym wyjściu (stdout) lub w standardowym błędzie (stderr). Składnia służąca do określania komunikatów wyjściowych jest definiowana przez strukturę testów jednostkowych.|
-|**Wynik**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
+|**Wynikiem**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Kwalifikator|Opis|
