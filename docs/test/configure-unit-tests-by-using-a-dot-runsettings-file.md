@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288770"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211601"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -67,7 +67,7 @@ Istnieją trzy sposoby określania pliku parametrów uruchomieniowych w programi
     </Project>
     ```
 
-- Umieść plik parametrów uruchomieniowych o nazwie ". runsettings" w katalogu głównym rozwiązania.
+- Umieść plik parametrów uruchomieniowych o nazwie *. runsettings* w katalogu głównym rozwiązania.
 
   Jeśli jest włączone Autowykrywanie plików uruchomieniowych, ustawienia w tym pliku są stosowane do wszystkich przebiegów testów. Funkcję automatycznego wykrywania plików runsettings można włączyć z dwóch miejsc:
   
@@ -205,6 +205,11 @@ Poniższy kod XML przedstawia zawartość typowego pliku *. runsettings* . Każd
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ Poniższy kod XML przedstawia zawartość typowego pliku *. runsettings* . Każd
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ Moduł zbierający dane wideo przechwytuje nagrywanie ekranu, gdy testy są uruc
 
 Aby dostosować każdy inny typ adapterów danych diagnostycznych, należy użyć [pliku ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
+
+### <a name="blame-data-collector"></a>Moduł zbierający dane polecenia Blame
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+Ta opcja może pomóc wyizolować problematyczny test, który powoduje awarię hosta testowego. Uruchomienie modułu zbierającego tworzy plik wyjściowy (*Sequence.xml*) w *TestResults*, który przechwytuje kolejność wykonywania testu przed awarią. 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -374,7 +390,7 @@ Aby użyć parametrów przebiegu testowego, Dodaj <xref:Microsoft.VisualStudio.T
 
 Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody testowe mające <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybut.
 
-|Konfiguracja|Domyślne|Wartości|
+|Konfigurowanie|Domyślne|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|fałsz|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli istnieje plik *app.config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|fałsz|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w MSTest lub z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
@@ -387,7 +403,34 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 |**InProcMode**|fałsz|Jeśli chcesz, aby testy były uruchamiane w tym samym procesie co karta MSTest, ustaw tę wartość na **true**. To ustawienie zapewnia mniejszy przyrost wydajności. Ale jeśli test kończy się wyjątkiem, pozostałe testy nie są uruchamiane.|
 |**AssemblyResolution**|fałsz|Można określić ścieżki do dodatkowych zestawów podczas znajdowania i uruchamiania testów jednostkowych. Na przykład użyj tych ścieżek dla zestawów zależności, które nie znajdują się w tym samym katalogu, co zestaw testowy. Aby określić ścieżkę, użyj elementu **ścieżki katalogu** . Ścieżki mogą zawierać zmienne środowiskowe.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>Określanie zmiennych środowiskowych w pliku *. runsettings*
+
+Zmienne środowiskowe można ustawić w pliku *runsettings* , który może bezpośrednio korzystać z hosta testowego. Określanie zmiennych środowiskowych w pliku *runsettings* jest niezbędne do obsługi nieuproszczonych projektów, które wymagają ustawienia zmiennych środowiskowych, takich jak *DOTNET_ROOT*. Te zmienne są ustawiane podczas duplikowania procesu hosta testowego i są dostępne na hoście.
+
+### <a name="example"></a>Przykład
+
+Poniższy kod to przykładowy plik *. runsettings* , który przekazuje zmienne środowiskowe:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+Węzeł **RunConfiguration** powinien zawierać węzeł **EnvironmentVariables** . Zmienna środowiskowa może być określona jako nazwa elementu i jego wartość.
+
+> [!NOTE]
+> Ponieważ te zmienne środowiskowe zawsze powinny być ustawiane podczas uruchamiania hosta testowego, testy powinny być zawsze uruchamiane w osobnym procesie. Dla tej flagi flaga */inisolation.* zostanie ustawiona, gdy istnieją zmienne środowiskowe, aby Host testowy był zawsze wywoływany.
+
+## <a name="see-also"></a>Zobacz także
 
 - [Konfigurowanie przebiegu testowego](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)

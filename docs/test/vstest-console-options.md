@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289043"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211570"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -52,7 +52,7 @@ W poniższej tabeli wymieniono wszystkie opcje *VSTest.Console.exe* i krótkie o
 |**/ListExecutors**|Wyświetla listę zainstalowanych programów wykonujących testy.|
 |**/ListLoggers**|Wyświetla listę zainstalowanych rejestratorów testów.|
 |**/ListSettingsProviders**|Wyświetla listę zainstalowanych dostawców ustawień testu.|
-|**/Blame**|Śledzi testy w trakcie ich wykonywania, a jeśli proces hosta testowego ulega awarii, emituje nazwy testów w sekwencji wykonywania do i włącznie z konkretnym testem, który był uruchomiony w chwili awarii. Te dane wyjściowe ułatwiają odizolowanie badanego testu i dalsze zdiagnozowanie. [Więcej informacji](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/Blame**|Uruchamia testy w trybie polecenia Blame. Ta opcja jest przydatna do izolowania problematycznych testów, które powodują awarię hosta testowego. Gdy zostanie wykryta awaria, tworzy plik sekwencji w programie `TestResults/<Guid>/<Guid>_Sequence.xml` , który przechwytuje kolejność testów, które zostały uruchomione przed awarią. Aby uzyskać więcej informacji, zobacz [polecenia Blame Data Collector](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag: [*Nazwa pliku*]**|Zapisuje dzienniki śledzenia diagnostycznego do określonego pliku.|
 |**/ResultsDirectory: [*ścieżka*]**|Katalog wyników testu zostanie utworzony w określonej ścieżce, jeśli nie istnieje.<br />Przykład: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId: [*ParentProcessId*]**|Identyfikator procesu nadrzędnego odpowiedzialny za uruchamianie bieżącego procesu.|
@@ -64,24 +64,44 @@ W poniższej tabeli wymieniono wszystkie opcje *VSTest.Console.exe* i krótkie o
 
 ## <a name="examples"></a>Przykłady
 
-Składnia *VSTest.Console.exe* jest następująca:
+Składnia *vstest.console.exe* jest następująca:
 
-`Vstest.console.exe [TestFileNames] [Options]`
+`vstest.console.exe [TestFileNames] [Options]`
 
-Następujące polecenie działa *VSTest.Console.exe* dla biblioteki testów **myTestProject.dll**:
+Następujące polecenie działa *vstest.console.exe* dla biblioteki testów *myTestProject.dll*:
 
 ```cmd
 vstest.console.exe myTestProject.dll
 ```
 
-Następujące polecenie działa *VSTest.Console.exe* z wieloma plikami testowymi. Oddziel nazwy plików testowych spacjami:
+Następujące polecenie działa *vstest.console.exe* z wieloma plikami testowymi. Oddziel nazwy plików testowych spacjami:
 
 ```cmd
-Vstest.console.exe myTestFile.dll myOtherTestFile.dll
+vstest.console.exe myTestFile.dll myOtherTestFile.dll
 ```
 
-Następujące polecenie działa *VSTest.Console.exe* z kilkoma opcjami. Uruchamia testy w pliku *myTestFile.dll* w procesie izolowanym i używa ustawień określonych w *lokalnym pliku. runsettings* . Ponadto uruchamia tylko testy oznaczone "Priority = 1" i rejestruje wyniki w pliku *. TRX* .
+Następujące polecenie działa *vstest.console.exe* z kilkoma opcjami. Uruchamia testy w pliku *myTestFile.dll* w procesie izolowanym i używa ustawień określonych w *lokalnym pliku. runsettings* . Ponadto uruchamia tylko testy oznaczone "Priority = 1" i rejestruje wyniki w pliku *. TRX* .
 
 ```cmd
-vstest.console.exe  myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+vstest.console.exe myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+```
+
+Następujące polecenie działa *vstest.console.exe* z `/blame` opcją dla biblioteki testów *myTestProject.dll*:
+
+```cmd
+vstest.console.exe myTestFile.dll /blame
+```
+
+Jeśli wystąpi awaria hosta testowego, zostanie wygenerowany plik *sequence.xml* . Plik zawiera w pełni kwalifikowane nazwy testów w sekwencji wykonywania do i włącznie z konkretnym testem, który był uruchomiony w chwili awarii.
+
+Jeśli nie wystąpi awaria hosta testowego, plik *sequence.xml* nie zostanie wygenerowany.
+
+Przykład wygenerowanego pliku *sequence.xml* : 
+
+```xml
+<?xml version="1.0"?>
+<TestSequence>
+  <Test Name="TestProject.UnitTest1.TestMethodB" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+  <Test Name="TestProject.UnitTest1.TestMethodA" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+</TestSequence>
 ```

@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Wynajęcie Visual Studio Professional lub Visual Studio Enterprise w ciągu miesiąca do miesiąca lub rocznego, bez długoterminowej umowy.
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906029"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211639"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji Visual Studio Professional i Visual Studio Enterprise w chmurze
 Możesz kupić [Visual Studio Professional i Visual Studio Enterprise subskrypcje](https://visualstudio.microsoft.com/subscriptions/) w [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są one nazywane **"subskrypcjami w chmurze"**.
@@ -40,7 +40,7 @@ Każda osoba mająca [właściciela](https://docs.microsoft.com/azure/role-based
 
 4. Wybierz liczbę subskrypcji do zakupu.
     > [!div class="mx-imgBorder"]
-    > ![Wybierz liczbę subskrypcji](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![Wybierz liczbę subskrypcji](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Wybierz liczbę subskrypcji do zakupu")
 
     Jeśli nie chcesz, aby subskrypcje zostały przypisane do siebie, usuń zaznaczenie pola wyboru **Przypisz tę subskrypcję do mnie**.
 
@@ -62,12 +62,18 @@ Jeśli zakupiono więcej niż jedną subskrypcję, należy przejoć do [portalu 
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Anuluj odnowienia zakupionych subskrypcji w chmurze
 
-* Aby zmienić liczbę zakupionych subskrypcji:
+Aby anulować subskrypcje, wystarczy ustawić liczbę subskrypcji dla umowy na zero (0).  Wykonaj następujące kroki, aby zmniejszyć liczbę subskrypcji:
+1. Zaloguj się na stronie <https://manage.visualstudio.com>
+1. Jeśli masz więcej niż jedną umowę, wybierz żądaną umowę z listy rozwijanej.
+1. Kliknij ikonę **przeglądu** w lewym górnym rogu, aby wyświetlić informacje o Twoich subskrypcjach.  
+> [!div class="mx-imgBorder"]
+> ![Wyświetlanie informacji o subskrypcji](_img/buy-vs-subscriptions/overview-button.png "Kliknij przycisk przegląd, aby wyświetlić szczegóły subskrypcji")
+
+4. Znajdź wpis dla subskrypcji, które chcesz anulować, a następnie kliknij pozycję **Zmień ilość**.
+1. Ustaw liczbę na zero (0). Twoje subskrypcje będą obowiązywać do momentu zaplanowania daty rozliczenia, ale nie będą odnawiane po osiągnięciu daty rozliczenia.   
 
 > [!div class="mx-imgBorder"]
-> ![Zmień subskrypcje](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* Aby anulować te subskrypcje, zmniejsz liczbę subskrypcji na zero (0). Nie będą odnawiane na początku następnego okresu rozliczeniowego (pierwszy miesiąc w przypadku miesięcznych subskrypcji w chmurze; 12 miesięcy później w przypadku rocznych subskrypcji w chmurze).
+> ![Zmień subskrypcje](_img/buy-vs-subscriptions/manage-subscriptions.png "Kliknij pozycję "Zmień liczbę", aby anulować subskrypcje")
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -120,7 +126,7 @@ Odp.: Chociaż nie będą mogli kupić innej rocznej subskrypcji w chmurze, istn
 - [Rozliczenia subskrypcji w chmurze programu Visual Studio — często zadawane pytania](vscloud-billing-faq.md)
 - [Kupowanie subskrypcji w chmurze programu Visual Studio dla dostawców CSP](vscloud-csp.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
