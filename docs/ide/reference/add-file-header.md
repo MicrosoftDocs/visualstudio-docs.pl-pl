@@ -1,20 +1,20 @@
 ---
 title: Dodaj nagłówek pliku
-ms.date: 06/08/2020
+ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 24b0905eed167a99f8a75086c9b5ec6cbbdd8b6a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 44cf9c34a69d665186a9f386e7ec34c5a59b8cdc
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290580"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285384"
 ---
-# <a name="add-debuggerdisplay-attribute"></a>Dodawanie atrybutu DebuggerDisplay
+# <a name="add-file-header"></a>Dodaj nagłówek pliku
 
 Ta generacja kodu ma zastosowanie do:
 
@@ -57,7 +57,7 @@ Ta generacja kodu ma zastosowanie do:
 
 8. Wybierz pozycję **Zastosuj** , aby zastosować zmiany.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)
