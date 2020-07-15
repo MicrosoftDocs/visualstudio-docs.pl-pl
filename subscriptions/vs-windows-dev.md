@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat konta dewelopera systemu Windows dołączonego do subskrypcji programu Visual Studio.
-ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906004"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301463"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera systemu Windows w subskrypcjach programu Visual Studio
 Konto dewelopera systemu Windows, dołączone do wybranej subskrypcji programu Visual Studio, umożliwia przesyłanie bezpłatnych i płatnych aplikacji systemu Windows do sklepu Windows.
@@ -26,7 +26,7 @@ Zalecamy utworzenie "prywatnego" okna przeglądarki dla tego procesu.  Na przyk�
 2. Znajdź kafelek konto dewelopera systemu Windows w sekcji Narzędzia i kliknij link **uzyskaj kod** w dolnej części kafelka korzyści.  Skopiuj kod do schowka, a następnie kliknij przycisk **Aktywuj**.
    > [!div class="mx-imgBorder"]
    > ![Kafelek korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. W [https://developer.microsoft.com](https://developer.microsoft.com) witrynie można rozpocząć proces rejestracji.  Kliknij przycisk **Utwórz konto** , aby kontynuować.
+3. W [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) witrynie można rozpocząć proces rejestracji.  Kliknij przycisk **Utwórz konto** , aby kontynuować.
    > [!div class="mx-imgBorder"]
    > ![Rejestracja korzyści dla deweloperów systemu Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 4. Zaloguj się do subskrypcji.  Jeśli masz wiele kont, wybierz konto skojarzone z subskrypcją przedsiębiorstwa.
@@ -73,6 +73,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
