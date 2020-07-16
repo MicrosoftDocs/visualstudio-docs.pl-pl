@@ -42,6 +42,8 @@
       items:
         - name: Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
           href: run-unit-tests-with-test-explorer.md
+        - name: Debugowanie testów jednostkowych za pomocą narzędzia Eksplorator testów
+          href: debug-unit-tests-with-test-explorer.md
         - name: Eksplorator testów — często zadawane pytania
           href: test-explorer-faq.md
     - name: Uruchamianie testów z poziomu wiersza polecenia
@@ -103,7 +105,7 @@
       items:
         - name: Test jednostkowy biblioteki DLL platformy UWP w języku C++
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Test jednostkowy kodu języka Visual C# w aplikacjach platformy UWP'
+        - name: Test jednostkowy kodu języka Visual C# w aplikacjach platformy UWP
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 'Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
