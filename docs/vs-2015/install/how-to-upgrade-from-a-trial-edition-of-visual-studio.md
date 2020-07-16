@@ -1,5 +1,5 @@
 ---
-title: 'Porady: uaktualnienie z wersji próbnej | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Uaktualnianie z wersji próbnej | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -9,28 +9,28 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a9af78dc373734905c703a3b9ee5c9462af3e116
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298061"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386683"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Porady: aktualizacja z wersji próbnej wersji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wstępna wersja programu Visual Studio możesz ocenić 14 dni bez rejestracji produktu. Po zarejestrowaniu, logując się przy użyciu konta Microsoft, aż do daty bomba czasu jest prawidłowy licencji wersji wstępnej.
+Wersję wstępną programu Visual Studio można oszacować przez 14 dni bez rejestracji produktu. Po zarejestrowaniu przez zalogowanie się za pomocą konto Microsoft licencja wstępna jest ważna do daty wygaśnięcia.
 
- Oceń wersji wersje Professional i Enterprise programu Visual Studio przez 30 dni, rozpoczynając od instalacji produktu. [Zalogowanie się do programu Visual Studio](../ide/signing-in-to-visual-studio.md) powoduje dodanie 60 dni do okresu próbnego, przez co łączną liczbę dni równą 90. Jeżeli nie zarejestrujesz wersji próbnej Visual Studio w ciągu 30 dni, okres próbny wygaśnie 30 dni po zainstalowaniu produktu.
+ Możesz oszacować wersję wersji Professional i Enterprise programu Visual Studio przez 30 dni, rozpoczynając od instalacji produktu. [Zalogowanie się do programu Visual Studio](../ide/signing-in-to-visual-studio.md) powoduje dodanie 60 dni do okresu próbnego, przez co łączną liczbę dni równą 90. Jeżeli nie zarejestrujesz wersji próbnej Visual Studio w ciągu 30 dni, okres próbny wygaśnie 30 dni po zainstalowaniu produktu.
 
- Jeśli na przykład pobierzesz i używasz [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] przez 10 dni, a następnie zarejestrujesz go, możesz użyć go przez dodatkowe 80 dni. Aby dalej używać produktu po 90 dniach, musisz podać prawidłowy klucz produktu lub zaloguj się do programu Visual Studio za pomocą konta Microsoft lub konta organizacyjnego, który jest skojarzony z subskrypcją MSDN lub subskrypcji programu Visual Studio Online. Aby uzyskać informacje dotyczące sposobu lokalizowania lub uzyskiwania klucza produktu, zobacz [How to: Zlokalizuj klucz produktu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) i [Jak kupić program Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).
+ Jeśli na przykład pobierzesz i używasz [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] przez 10 dni, a następnie zarejestrujesz go, możesz użyć go przez dodatkowe 80 dni. Aby nadal korzystać z produktu po 90 dniach, musisz podać prawidłowy klucz produktu lub zalogować się do programu Visual Studio za pomocą konto Microsoft lub konta organizacyjnego, które jest skojarzone z subskrypcją MSDN lub subskrypcją usługi Visual Studio Online. Aby uzyskać informacje dotyczące sposobu lokalizowania lub uzyskiwania klucza produktu, zobacz [How to: Zlokalizuj klucz produktu Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) i [Jak kupić program Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).
 
 > [!IMPORTANT]
-> Okres próbny wersji w wersjach Express programu Visual Studio to również 30 dni. Aby rozszerzyć na czas nieokreślony okres próbny edycji Express programu Visual Studio, zarejestruj się w Visual Studio lub zarejestruj produkt.
+> Okres próbny wersji wersji Express programu Visual Studio jest również 30 dni. Aby rozszerzyć na czas nieokreślony okres próbny edycji Express programu Visual Studio, zarejestruj się w Visual Studio lub zarejestruj produkt.
 
  Przed uaktualnieniem należy pobrać i przejrzeć [oficjalny dokument dotyczący licencjonowania programu Visual Studio i MSDN](https://www.microsoft.com/download/details.aspx?id=13350) z witryny sieci Web firmy Microsoft. Aby uzyskać dodatkową pomoc, zobacz [Pomoc techniczna dla programu Visual Studio](https://support.microsoft.com/ph/1117/en-us).
 
-### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Aby uaktualnić z edycji próbnej Visual Studio Professional lub Enterprise
+### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Aby uaktualnić wersję próbną programu Visual Studio Professional lub Enterprise
 
 1. Uruchom program Visual Studio w trybie **Uruchom jako administrator** .
 

@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769933"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387320"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio
 
@@ -69,7 +69,7 @@ Pliki zrzutu śledzenia i sterty są przydatne podczas diagnozowania problemów.
 
 1. Wybierz kartę **rekord** .
 
-1. W obszarze **Rejestrowanie akcji**wybierz bieżące wystąpienie programu Visual Studio, jeśli możesz odtworzyć problem. Jeśli nie jest to możliwe, na przykład jeśli program Visual Studio jest zawieszony, wybierz opcję **\<Create a new instance>** rejestrowania akcji w nowym wystąpieniu programu Visual Studio.
+1. W obszarze **Rejestrowanie akcji**wybierz bieżące wystąpienie programu Visual Studio, jeśli możesz odtworzyć problem. Jeśli nie możesz na przykład, jeśli program Visual Studio przestanie odpowiadać, wybierz opcję **\<Create a new instance>** rejestrowania akcji w nowym wystąpieniu programu Visual Studio.
 
 1. Wybierz pozycję **Rozpocznij nagrywanie**. Nadaj uprawnienia do uruchamiania tego narzędzia.
 
@@ -117,7 +117,7 @@ Jeśli nie chcesz lub nie możesz użyć programu Visual Studio, aby zgłosić p
 
 Jeśli nie masz problemu z raportowaniem, ale chcesz zasugerować funkcję, istnieje już miejsce. Aby uzyskać więcej informacji, zobacz stronę [Sugeruj funkcję](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
 * [Zgłoś problem z Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)

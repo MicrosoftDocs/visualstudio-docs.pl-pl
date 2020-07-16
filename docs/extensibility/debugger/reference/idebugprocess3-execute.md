@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Wykonaj | Dokumenty firmy Microsoft
+title: 'IDebugProcess3:: Execute | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 444eadcce38adbd8ecd8655e8e0dc3f36f446848
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: baa607e62732cdf0e04413e07966658bb6a0b8f4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723678"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386514"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
-Kontynuuje uruchamianie tego procesu ze stanu zatrzymanego. Każdy poprzedni stan wykonywania (na przykład krok) jest czyszczony i proces rozpoczyna wykonywanie ponownie.
+Kontynuuje wykonywanie tego procesu ze stanu zatrzymanego. Wszystkie poprzednie Stany wykonania (takie jak krok) są wyczyszczone, a proces zostanie uruchomiony ponownie.
 
 > [!NOTE]
 > Ta metoda powinna być używana zamiast [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
@@ -44,19 +44,19 @@ int Execute(
 
 ## <a name="parameters"></a>Parametry
 `pThread`\
-[w] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątek do wykonania.
+podczas Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) reprezentujący wątek do wykonania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Gdy użytkownik rozpoczyna wykonywanie ze stanu zatrzymanego w wątku innego procesu, ta metoda jest wywoływana w tym procesie. Ta metoda jest również wywoływana, gdy użytkownik wybiera polecenie **Start** z menu **debugowania** w IDE. Implementacja tej metody może być tak proste, jak [wywołanie Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) metody w bieżącym wątku w procesie.
+ Gdy użytkownik uruchamia wykonywanie z stanu zatrzymanego w innym wątku procesu, ta metoda jest wywoływana w tym procesie. Ta metoda jest również wywoływana, gdy użytkownik wybierze polecenie **Uruchom** z menu **DEBUGUJ** w środowisku IDE. Implementacja tej metody może być prosta jako wywołanie metody [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) w bieżącym wątku w procesie.
 
 > [!WARNING]
-> Nie wysyłaj zdarzenia zatrzymania ani natychmiastowego (synchroniczowego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może zawiesić.
+> Nie wysyłaj zdarzenia zatrzymania ani bezpośredniego (synchronicznego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może przestać odpowiadać.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Wznawianie](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

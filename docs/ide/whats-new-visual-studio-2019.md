@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283596"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387047"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -220,7 +220,7 @@ Dlaczego warto wysłać opinię do zespołu programu Visual Studio? Ze względu 
 
 * Jeśli chcesz dowiedzieć się, jak możemy ulepszyć program Visual Studio, możesz to zrobić za pomocą narzędzia [Sugeruj funkcję](suggest-a-feature.md) .
 
-* W przypadku wystąpienia zawieszenia, awarii lub innego problemu z wydajnością można łatwo udostępnić Odtwórz kroki i pliki pomocnicze za pomocą narzędzia [Zgłoś problem](how-to-report-a-problem-with-visual-studio.md) .
+* Jeśli wystąpi problem polegający na tym, że program Visual Studio przestaje odpowiadać, ulegnie awarii lub inny problem z wydajnością, można łatwo udostępnić Odtwórz kroki i pliki pomocnicze za pomocą narzędzia [Zgłoś problem](how-to-report-a-problem-with-visual-studio.md) .
 
 ## <a name="see-also"></a>Zobacz też
 

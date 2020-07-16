@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: f195c0f2a165dae1d17697fb351ee6f576864a37
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 247a2b9d4649aae6f3a32a6156e2f9558c481e68
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906085"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387294"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -39,7 +39,7 @@ Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicz
 2. Spowoduje to zainicjowanie sesji rozmowy z przedstawicielem, który może utworzyć **identyfikator kontraktu** i **identyfikator dostępu** , i udostępnić je za pośrednictwem poczty e-mail, dzięki czemu będziesz mieć do nich dostęp.
 
 3. Aby ukończyć ten proces, należy podać jego przedstawiciela:
-   - Twój kraj
+   - Kraj/region
    - Nazwa firmy
    - Twoja pełna nazwa
    - Adres e-mail używany do logowania się do subskrypcji
@@ -52,10 +52,10 @@ Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicz
 4. Po zakończeniu procesu otrzymasz wiadomość e-mail zawierającą **identyfikator kontraktu** i **identyfikator dostępu** , który będzie używany podczas tworzenia zdarzenia pomocy technicznej.  Zawiera również instrukcje przesyłania zdarzeń pomocy technicznej przy użyciu nowego identyfikatora dostępu i identyfikatora kontraktu. 
 
 > [!NOTE]
-> Aby aktywować konto pomocy technicznej w języku innym niż angielski, wybierz swój kraj z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).
+> Aby aktywować konto pomocy technicznej w języku innym niż angielski, wybierz swój kraj/region z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Jak przesłać zdarzenie przy użyciu korzyści
-Po skonfigurowaniu identyfikatora **kontraktu** i **identyfikatora dostępu** można go użyć do przesłania zgłoszenia do pomocy technicznej w [trybie online](https://support.microsoft.com/oas/) (wymagane jest zalogowanie się) lub za pośrednictwem [Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) lub przez wywołanie numeru pomocy technicznej dla Twojego kraju. Jeśli przesyłasz zdarzenie w trybie online, masz możliwość zadzwonienia do pomoc techniczna firmy Microsoft Professional.
+Po skonfigurowaniu identyfikatora **kontraktu** i **identyfikatora dostępu** można go użyć do przesłania zgłoszenia do pomocy technicznej w [trybie online](https://support.microsoft.com/oas/) (wymagane jest zalogowanie się) lub za pośrednictwem [Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) lub przez wywołanie numeru pomocy technicznej dla kraju/regionu. Jeśli przesyłasz zdarzenie w trybie online, masz możliwość zadzwonienia do pomoc techniczna firmy Microsoft Professional.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Masz już identyfikator kontraktu i identyfikator dostępu skojarzony z kontem używanym do logowania się w celu przesłania zgłoszenia do pomocy technicznej w trybie online?
 Podczas przesyłania zdarzenia w trybie online najpierw zostanie wyświetlony monit o zalogowanie się. Zaloguj się przy użyciu konta, które jest skojarzone z IDENTYFIKATORem kontraktu i IDENTYFIKATORem dostępu. Twoja istniejąca korzyść z planu pomocy technicznej skojarzona z kontem zostanie wyświetlona w kroku 3 w przepływie pracy pomocy technicznej. Po prostu wybierz ten plan i Kontynuuj przesyłanie sprawy. Można przesłać zdarzenia do limitu wskazanego w planie lub do daty wygaśnięcia planu, zależnie od tego, co nastąpi wcześniej. Po pozostałym zdarzeniu Pokaż wartość "0" lub jeśli plan wygaśnie, nie jest już aktywny.
@@ -99,7 +99,7 @@ Podczas przesyłania zdarzenia w trybie online najpierw zostanie wyświetlony mo
 6. Wykonaj pozostałe kroki (ważność, informacje kontaktowe, przegląd).   Po przesłaniu incydentu zostanie wyświetlone potwierdzenie, że zdarzenie zostało pomyślnie przesłane i można przekazać pliki do przypadku. Pracownik działu pomocy technicznej zostanie przypisany do zdarzenia i skontaktuje się z Tobą w celu rozwiązania problemu przy użyciu wybranej metody kontaktu.
 
 #### <a name="submit-an-incident-by-phone"></a>Prześlij zdarzenie przez telefon
-Jeśli chcesz utworzyć zdarzenie pomocy technicznej za pośrednictwem telefonu, odszukaj numer telefonu [usługi klienta](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) w Twoim kraju. Upewnij się, że masz identyfikator kontraktu i identyfikator dostępu dostępne podczas wywoływania.
+Jeśli chcesz utworzyć zdarzenie pomocy technicznej za pośrednictwem telefonu, odszukaj numer telefonu [usługi klienta](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) w Twoim kraju/regionie. Upewnij się, że masz identyfikator kontraktu i identyfikator dostępu dostępne podczas wywoływania.
 
 #### <a name="submit-an-incident-within-the-azure-portal"></a>Prześlij zdarzenie w Azure Portal
 Aby skorzystać z pomocy technicznej subskrypcji programu Visual Studio w przypadku problemów związanych z platformą Azure, musisz połączyć identyfikator kontraktu i identyfikator dostępu z subskrypcją platformy Azure.
@@ -135,6 +135,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

@@ -1,5 +1,5 @@
 ---
-title: Kontrola wykonania | Dokumenty firmy Microsoft
+title: Kontrola wykonywania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,54 +10,54 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2d338c5470611a5eea0c6279404c4eaddebb2d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739076"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387008"
 ---
-# <a name="control-of-execution"></a>Kontrola wykonania
-Aparat debugowania (DE) zazwyczaj wysyła jedno z następujących zdarzeń jako ostatnie zdarzenie uruchamiania:
+# <a name="control-of-execution"></a>Kontrola wykonywania
+Aparat debugowania (DE) zwykle wysyła jedno z następujących zdarzeń jako ostatnie zdarzenie uruchamiania:
 
-- Zdarzenie punktu wejścia, jeśli dołączanie do nowo uruchomionego programu
+- Zdarzenie punktu wejścia w przypadku dołączania do nowo uruchomionego programu
 
-- Zdarzenie zakończenie ładowania, jeśli dołączanie do programu, który jest już uruchomiony
+- Zdarzenie ukończenia ładowania, jeśli dołączanie do programu, który jest już uruchomiony
 
-  Oba te zdarzenia są zatrzymywanie zdarzeń, co oznacza, że DE czeka na odpowiedź od użytkownika za pomocą IDE. Aby uzyskać więcej informacji, zobacz [Tryby operacyjne](../../extensibility/debugger/operational-modes.md).
+  Oba te zdarzenia są zatrzymywane zdarzenia, co oznacza, że czas oczekiwania na odpowiedź od użytkownika jest spowodowany przez środowisko IDE. Aby uzyskać więcej informacji, zobacz [Tryby operacyjne](../../extensibility/debugger/operational-modes.md).
 
-## <a name="stopping-event"></a>Zdarzenie zatrzymania
- Gdy zdarzenie zatrzymania jest wysyłane do sesji debugowania:
+## <a name="stopping-event"></a>Zatrzymywanie zdarzenia
+ Po wysłaniu zdarzenia zatrzymania do sesji debugowania:
 
-1. Program i wątek, które zawierają bieżący wskaźnik instrukcji można uzyskać z interfejsu zdarzenia.
+1. Program i wątek, który zawiera bieżący wskaźnik instrukcji, można uzyskać z interfejsu zdarzenia.
 
-2. IDE określa bieżący plik kodu źródłowego i pozycję, który jest wyświetlany jako wyróżniony w edytorze.
+2. IDE określa bieżący plik i położenie kodu źródłowego, który jest wyświetlany jako wyróżniony w edytorze.
 
-3. Sesja debugowania zazwyczaj odpowiada na to pierwsze zdarzenie zatrzymania, wywołując metodę **Continue** programu.
+3. Sesja debugowania zazwyczaj odpowiada na to pierwsze zdarzenie zatrzymywania przez wywołanie metody **Kontynuuj** programu.
 
-4. Program jest następnie uruchamiany, dopóki nie napotka stanu zatrzymania, takiego jak trafienie punktu przerwania. W takim przypadku DE wysyła zdarzenie punktu przerwania do sesji debugowania. Zdarzenie punktu przerwania jest zdarzeniem zatrzymania i DE ponownie czeka na odpowiedź użytkownika.
+4. Program zostanie uruchomiony do momentu napotkania warunku zatrzymania, takiego jak naciśnięcie punktu przerwania. W takim przypadku element DE wysyła zdarzenie punktu przerwania do sesji debugowania. Zdarzenie punktu przerwania jest zdarzeniem zatrzymania, a czas oczekiwania na odpowiedź użytkownika.
 
-5. Jeśli użytkownik zdecyduje się wkroczyć, nad lub z funkcji, IDE monituje sesji debugowania `Step` do wywołania metody programu. IDE następnie przekazuje jednostkę kroku (instrukcja, instrukcja lub wiersz) i typ kroku (czy krok do, nad lub z funkcji). Po zakończeniu kroku DE wysyła zdarzenie ukończenia kroku do sesji debugowania, która jest zdarzeniem zatrzymania.
+5. Jeśli użytkownik wybierze krok po kroku, przekroczenia lub z funkcji, IDE będzie monitował sesję debugowania, aby wywołać `Step` metodę programu. Środowisko IDE przekazuje następnie jednostkę kroku (instrukcję, instrukcję lub line) i typ kroku (określa, czy należy wkroczyć, przekroczyć lub z funkcji). Po wykonaniu kroku element DE wysyła zdarzenie Ukończ krok do sesji debugowania, która jest zdarzeniem zatrzymania.
 
-    — lub —
+    -lub-
 
-    Jeśli użytkownik zdecyduje się kontynuować wykonywanie z bieżącego wskaźnika instrukcji, IDE monituje sesji debugowania do wywołania programu **Execute** metody. Program wznawia wykonywanie, dopóki nie napotka następnego stanu zatrzymania.
+    Jeśli użytkownik zdecyduje się kontynuować wykonywanie od bieżącego wskaźnika instrukcji, IDE poprosi o sesję debugowania, aby wywołać metodę **Execute** programu. Program wznawia wykonywanie do momentu napotkania następnego warunku zatrzymywania.
 
-    — lub —
+    -lub-
 
-    Jeśli sesja debugowania ma zignorować określone zdarzenie zatrzymania, sesja debugowania wywołuje metodę **Continue** programu. Jeśli program był stepping into, over, lub out of a function when it encountered the stopping condition, then it continues the step.
+    Jeśli sesja debugowania to ignorowanie określonego zdarzenia zatrzymania, sesja debugowania wywołuje metodę **Continue** programu. Jeśli program przeprowadził do, przekroczenia lub z funkcji po napotkaniu warunku zatrzymania, kontynuuje ten krok.
 
-   Programowo, gdy DE napotka warunek zatrzymania, wysyła takie zdarzenia zatrzymania jak [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) lub [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) do menedżera debugowania sesji (SDM) za pomocą interfejsu [IDebugEventCallback2.](../../extensibility/debugger/reference/idebugeventcallback2.md) DE przekazuje [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) i [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interfejsów, które reprezentują program i wątek zawierający bieżący wskaźnik instrukcji. SDM wywołuje [IDebugThread2::EnumFrameInfo,](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) aby uzyskać górną ramkę stosu i wywołuje [IDebugStackFrame2::GetDocumentContext,](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) aby uzyskać kontekst dokumentu skojarzony z bieżącym wskaźnikiem instrukcji. Ten kontekst dokumentu jest zazwyczaj nazwą pliku kodu źródłowego, wierszem i numerem kolumny. IDE używa ich do podświetlenia kodu źródłowego, który zawiera bieżący wskaźnik instrukcji.
+   Program programowo, gdy napotyka warunek zatrzymania, wysyła takie zdarzenia zatrzymywania jako [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) lub [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) do Menedżera debugowania sesji (SDM) za pomocą interfejsu [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) . Powoduje, że interfejsy [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) i [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) reprezentujące program i wątek zawierający bieżący wskaźnik instrukcji. Model SDM wywołuje [IDebugThread2:: EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) , aby pobrać górną ramkę stosu i wywołuje [IDebugStackFrame2:: GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) w celu pobrania kontekstu dokumentu skojarzonego z bieżącym wskaźnikiem instrukcji. Ten kontekst dokumentu jest zazwyczaj nazwą pliku kodu źródłowego, wierszem i numerem kolumny. IDE używa tych funkcji do wyróżnienia kodu źródłowego, który zawiera bieżący wskaźnik instrukcji.
 
-   SDM zazwyczaj odpowiada na to pierwsze zdarzenie zatrzymania, wywołując [IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Program następnie uruchamia się, dopóki nie napotka warunek zatrzymania, takich jak uderzenie punktu przerwania, w którym to przypadku DE wysyła [IDebugBreakpointEvent2 interface](../../extensibility/debugger/reference/idebugbreakpointevent2.md) do SDM. Zdarzenie punktu przerwania jest zdarzeniem zatrzymania i DE ponownie czeka na odpowiedź użytkownika.
+   Model SDM zazwyczaj odpowiada na to pierwsze zdarzenie zatrzymywania przez wywołanie [IDebugProgram2:: Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Program zostanie uruchomiony do momentu napotkania warunku zatrzymania, takiego jak naciśnięcie punktu przerwania, w którym to przypadku DE wysyła [interfejs IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) do modelu SDM. Zdarzenie punktu przerwania jest zdarzeniem zatrzymania, a czas oczekiwania na odpowiedź użytkownika.
 
-   Jeśli użytkownik zdecyduje się wkroczyć, nad lub z funkcji, IDE monituje SDM do wywołania [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md). IDE następnie przekazuje [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) (instrukcja, instrukcja lub wiersz) i [STEPKIND](../../extensibility/debugger/reference/stepkind.md), czyli, czy krok do, ponad lub z funkcji. Po zakończeniu kroku DE wysyła interfejs [IDebugStepLeteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) do SDM, który jest zdarzeniem zatrzymania.
+   Jeśli użytkownik zdecyduje się na przekroczenie lub wyjście z funkcji, IDE poprosi model SDM o wywołanie [IDebugProgram2:: Step](../../extensibility/debugger/reference/idebugprogram2-step.md). IDE przekazuje następnie [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) (instrukcję, instrukcję lub line) i [STEPKIND](../../extensibility/debugger/reference/stepkind.md), czyli czy należy wkroczyć, przekroczyć lub z funkcji. Po zakończeniu kroku element DE wysyła Interfejs [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) do modelu SDM, który jest zdarzeniem zatrzymywania.
 
-   Jeśli użytkownik zdecyduje się kontynuować wykonywanie z bieżącego wskaźnika instrukcji, IDE prosi SDM do wywołania [IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md). Program wznawia wykonywanie, dopóki nie napotka następnego stanu zatrzymania.
+   Jeśli użytkownik zdecyduje się kontynuować wykonywanie od bieżącego wskaźnika instrukcji, IDE prosi model SDM o wywołanie [IDebugProgram2:: Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md). Program wznawia wykonywanie do momentu napotkania następnego warunku zatrzymywania.
 
-   Jeśli pakiet debugowania ma zignorować określone zdarzenie zatrzymania, pakiet debugowania wywołuje SDM, który wywołuje [IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Jeśli program był stepping into, over, lub out of a function when it encountered the stopping condition, it continues the step. Oznacza to, że program utrzymuje stan stepping, tak, że wie, jak kontynuować.
+   Jeśli pakietem debugowania jest ignorowanie określonego zdarzenia zatrzymania, pakiet debugowania wywołuje model SDM, który wywołuje [IDebugProgram2:: Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Jeśli program przeprowadził do, przekroczenia lub z funkcji po napotkaniu warunku zatrzymania, kontynuuje ten krok. Oznacza to, że program zachowuje stan stopniowania, dzięki czemu wie, jak kontynuować.
 
-   Wywołania SDM do `Step`, **Execute**i **Continue** są asynchroniczne, co oznacza, że SDM oczekuje, że wywołanie szybko powrócić. Jeśli DE wysyła SDM zdarzenie zatrzymania w `Step`tym samym wątku przed , **Execute**lub **Continue** zwraca, SDM zawiesza.
+   Wywołania modelu SDM `Step` są **wykonywane**, a i **kontynuuje** są asynchroniczne, co oznacza, że model SDM oczekuje, że wywołanie ma być szybko zwracane. Jeśli po stronie Anuluj wyśle zdarzenie zatrzymywania modelu SDM w tym samym wątku przed `Step` , **Execute**lub **Continue** , model SDM przestanie odpowiadać.
 
 ## <a name="see-also"></a>Zobacz też
-- [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)
+- [Debuguj zadania](../../extensibility/debugger/debugging-tasks.md)

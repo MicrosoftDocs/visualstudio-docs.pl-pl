@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce11689cc8cba45473a918668a07ddcc6cdc2ee3
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283479"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387164"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za zaporą lub serwerem proxy
 
@@ -43,7 +43,7 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i ic
 
 #### <a name="microsoft-domains"></a>Domeny firmy Microsoft
 
-| Domain | Przeznaczenie |
+| Domena | Przeznaczenie |
 | - | - |
 | go.microsoft.com | Rozwiązywanie problemów z adresem URL |
 | aka.ms | Rozwiązywanie problemów z adresem URL |
@@ -65,7 +65,7 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i ic
 
 #### <a name="non-microsoft-domains"></a>Domeny inne niż firmy Microsoft
 
-| Domain | Instaluje te obciążenia |
+| Domena | Instaluje te obciążenia |
 | - | - |
 | archive.apache.org | Programowanie aplikacji mobilnych za pomocą języka JavaScript (Cordova) |
 | cocos2d-x.org | Programowanie gier za pomocą języka C++ (Wyspy Kokosowe) |
@@ -94,7 +94,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Adres URL<br>rozwiązanie | go.microsoft.com<br><br>aka.ms | | Służy do skracania adresów URL, które następnie są rozpoznawane jako dłuższe adresy URL |
 | Strona początkowa | vsstartpage.blob.core.windows.net | 443 | Służy do wyświetlania wiadomości dla deweloperów wyświetlanych na stronie startowej (tylko w programie Visual Studio 2017) |
 | Docelowe<br> Powiadomienie <br>Usługa | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Służy do filtrowania globalnej listy powiadomień do listy, która ma zastosowanie tylko do określonych typów maszyn/scenariuszy użycia |
-| Wewnętrzny <br>sprawdzenie aktualizacji | marketplace.visualstudio.com<br><br>&#42;. windows.net <br>&#42;. microsoftonline.com <br>&#42;. live.com | 443 | Służy do dostarczania powiadomień, gdy dostępne jest aktualizacje z zainstalowanym rozszerzeniem <br><br> Używane jako lokalizacja logowania |
+| Rozszerzenie <br>sprawdzenie aktualizacji | marketplace.visualstudio.com<br><br>&#42;. windows.net <br>&#42;. microsoftonline.com <br>&#42;. live.com | 443 | Służy do dostarczania powiadomień, gdy dostępne jest aktualizacje z zainstalowanym rozszerzeniem <br><br> Używane jako lokalizacja logowania |
 | Projekt AI <br>Integracja | az861674.vo.msecnd.net | 443<br> | Służy do konfigurowania nowych projektów w celu wysyłania danych użycia do zarejestrowanego konta Application Insights |
 | Soczewki kodu | codelensprodscus1su0. app.<br>codelens.visualstudio.com | 443 | Służy do przekazywania informacji w edytorze o momencie ostatniej aktualizacji pliku, osi czasu zmian, elementów roboczych, do których te zmiany są skojarzone, autorów itd. |
 | Eksperymentalne <br>Włączanie funkcji | visualstudio-devdiv-c2s.msedge.net | 80 | Służy do uaktywniania eksperymentalnych nowych funkcji lub zmian funkcji |
@@ -108,17 +108,17 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Informacje o repozytorium GitHub | api.github.com | https/443 | Wymagane do uzyskania dodatkowych informacji na temat pakietów Bower |
 | Linterów sieci Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | protokół http/80 | |
 | Cookiecutter<br>Szablon Eksploratora<br>odnajdywanie <br><br>Cookiecutter <br>Projekt Eksploratora<br> tworzenie | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | Służy do odnajdywania szablonów online z naszych zalecanych kanałów informacyjnych i repozytoriów GitHub <br><br>Służy do tworzenia projektu na podstawie szablonu cookiecutter, który wymaga jednokrotnej instalacji pakietu języka Python cookiecutter z poziomu indeksu pakietu języka Python (PyPI) |
-| Pakiet języka Python <br>odnajdywanie<br><br>Pakiet języka Python <br>zarządzanie<br><br>Nowa <br>Python <br> projekt <br>szablonów | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Zapewnia możliwość wyszukiwania pakietów PIP<br><br>Używane do automatycznego instalowania PIP, jeśli brakuje <br><br>Służy do rozwiązywania następujących nowych szablonów projektów języka Python do adresów URL szablonów cookiecutter:<br> -Projekt klasyfikatora<br>— Projekt klastrowania <br> — Projekt regresji <br> -PyGame przy użyciu PyKinect <br> -Pyvot projekt |
+| Pakiet języka Python <br>odnajdywanie<br><br>Pakiet języka Python <br>zarządzanie<br><br>Nowy <br>Python <br> projekt <br>szablonów | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Zapewnia możliwość wyszukiwania pakietów PIP<br><br>Używane do automatycznego instalowania PIP, jeśli brakuje <br><br>Służy do rozwiązywania następujących nowych szablonów projektów języka Python do adresów URL szablonów cookiecutter:<br> -Projekt klasyfikatora<br>— Projekt klastrowania <br> — Projekt regresji <br> -PyGame przy użyciu PyKinect <br> -Pyvot projekt |
 | Sieć Web pakietu Office <br>dodatek <br> Manifest <br>Weryfikacja <br>Usługa | verificationservice.osi.office.net | https/443 | Służy do sprawdzania poprawności manifestów dla dodatków sieci Web pakietu Office |
 | SharePoint i <br>Dodatki pakietu Office | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | Służy do publikowania i testowania dodatków programu SharePoint i pakietu Office do usługi SharePoint Online i pakietu Office 365 |
 | Menedżer przepływów pracy <br>Usługa testowa<br> Host | | http/12292 | Reguła zapory, która jest tworzona automatycznie dla testowania dodatków programu SharePoint przy użyciu przepływów pracy |
-| Zbierane automatycznie <br>Statystyka niezawodności <br>i inne <br>Obsługa klienta <br>Programy poprawy jakości obsługi klienta (CEIP)<br> dla zestawu Azure SDK i <br>dla narzędzi SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Służy do wysyłania statystyk dotyczących niezawodności (danych awarii/zawieszenia) od użytkownika do firmy Microsoft. Rzeczywiste zrzuty awarii/zawieszenia będą nadal przekazywane, Jeśli Raportowanie błędów systemu Windows jest włączona; tylko informacje statystyczne zostaną pominięte; <br>Służy do ujawniania anonimowych wzorców użycia rozszerzenia zestawu SDK narzędzi platformy Azure do programu Visual Studio oraz dla wzorców użycia narzędzi SQL dla programu Visual Studio |
+| Zbierane automatycznie <br>Statystyka niezawodności <br>i inne <br>Obsługa klienta <br>Programy poprawy jakości obsługi klienta (CEIP)<br> dla zestawu Azure SDK i <br>dla narzędzi SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Służy do wysyłania statystyk dotyczących niezawodności (danych awarii/nieodpowiadających) od użytkownika do firmy Microsoft. Rzeczywiste zrzuty awarii/braku odpowiedzi będą nadal przekazywane, Jeśli Raportowanie błędów systemu Windows jest włączona; tylko informacje statystyczne zostaną pominięte; <br>Służy do ujawniania anonimowych wzorców użycia rozszerzenia zestawu SDK narzędzi platformy Azure do programu Visual Studio oraz dla wzorców użycia narzędzi SQL dla programu Visual Studio |
 | Visual Studio <br> Obsługa klienta <br>Program poprawy jakości obsługi klienta (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Służy do zbierania anonimowych wzorców użycia i dzienników błędów <br><br>Służy do śledzenia problemów z blokowaniem interfejsu użytkownika |
 | Tworzenie i<br>Zarządzanie <br>Zasoby platformy Azure | management.azure.com <br>management.core.windows.net | https/443 | Służy do tworzenia usługi Azure Websites lub innych zasobów w celu obsługi publikowania aplikacji sieci Web, Azure Functions lub zadań WebJob |
 | Zaktualizowano narzędzia do publikacji w sieci Web <br>sprawdzenia i rozszerzenie <br>zalecenia | marketplace.visualstudio.com | https/443 | Służy do sprawdzania dostępności zaktualizowanych narzędzi publikacji. Jeśli ta wartość jest wyłączona, możliwe jest, że zalecane rozszerzenie publikacji w sieci Web nie może być wyświetlane |
 | Zaktualizowano zasób platformy Azure <br>Informacje o punkcie końcowym tworzenia | \*.blob.core.windows.net | https/443 | Służy do aktualizowania punktów końcowych używanych do tworzenia zasobów platformy Azure dla niektórych usług platformy Azure. Jeśli ta wartość jest wyłączona, zamiast tego są używane ostatnio pobierane lub wbudowane lokalizacje punktów końcowych |
 | Debugowanie zdalne i <br>Zdalne profilowanie <br>Azure Websites | &#42;. cloudapp.net <br> &#42;. azurewebsites.net | 4022 | Służy do dołączania zdalnego debugera do usługi Azure Websites. Po wyłączeniu dołączenie zdalnego debugera do usługi Azure Websites nie będzie działało |
-| Usługa Active Directory <br>Graph | graph.windows.net | https/443 | Używane do aprowizacji nowych aplikacji Azure Active Directory. Używany także przez dostawcę usługi połączonej z pakietem Office 365 MSGraph |
+| Active Directory <br>Graph | graph.windows.net | https/443 | Używane do aprowizacji nowych aplikacji Azure Active Directory. Używany także przez dostawcę usługi połączonej z pakietem Office 365 MSGraph |
 | Azure Functions <br>Aktualizacja interfejsu wiersza polecenia <br>Zaznacz | functionscdn.azureedge.net | https/443 | Służy do sprawdzania dostępności zaktualizowanych wersji interfejsu wiersza polecenia Azure Functions. Jeśli ta wartość jest wyłączona, zamiast tego zostanie użyty buforowana kopia (lub kopia wykonywana przez składnik Azure Functions) interfejsu wiersza polecenia |
 | Cordova | npmjs.org<br>gradle.org | & http/80<br/>https/443 | Protokół HTTP jest używany do pobierania Gradle podczas kompilacji; Protokół HTTPS jest używany do dołączania wtyczek Cordova do projektów |
 | Eksplorator chmury | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;punkt końcowy zarządzania&#62;<br>Ogólna usługa wydatków w chmurze <br>3. &#60;punkt końcowy programu Graph&#62;<br>Ogólna usługa wydatków w chmurze<br>4. &#60;punktu końcowego konta magazynu&#62;<br>Węzły magazynu <br>5. &#60;adresy URL Azure Portal&#62;<br>Ogólna usługa wydatków w chmurze <br>6. &#60;punkty końcowe magazynu kluczy&#62; <br>Azure Resource Manager węzły maszyny wirtualnej<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric debugowanie zdalne i śledzenie ETW | <br>1. https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7. TCP/dynamiczny | 1. przykład: test12.eastus.cloudapp.com<br>2. pobiera subskrypcje i pobiera/zarządza zasobami platformy Azure<br>3. pobiera Azure Stack subskrypcje<br>4. zarządza zasobami magazynu (przykład: mystorageaccount.blob.core.windows.net)<br>5. opcja menu kontekstowego "Otwórz w portalu" (otwiera zasób w Azure Portal)<br>6. tworzy i używa magazynów kluczy na potrzeby debugowania maszyn wirtualnych (przykład: myvault.vault.azure.net) <br><br>7. dynamicznie przydziela blok portów na podstawie liczby węzłów w klastrze i dostępnych portów. <br><br>Blok portu spróbuje uzyskać trzykrotnie liczbę węzłów z co najmniej 10 portami.<br><br>W przypadku śladów przesyłania strumieniowego jest podejmowana próba pobrania bloku portu z 810. Jeśli którykolwiek z tych bloków portu jest już używany, podejmowana jest próba pobrania następnego bloku i tak dalej. (Moduł równoważenia obciążenia jest pusty, a następnie porty z 810 są najprawdopodobniej używane) <br><br>Podobnie w przypadku debugowania są zarezerwowane cztery zestawy bloków portów: <br>-connectorPort: 30398, <br>-forwarderPort: 31398, <br>-forwarderPortx86:31399,<br>-fileUploadPort: 32398<br> |

@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Szczegóły dotyczące subskrypcji, których dotyczą reguły, oraz liczbę subskrypcji oferowanych w programie MPN.
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183057"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387151"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Subskrypcje programu Visual Studio oferowane partnerom w Microsoft Partner Network (MPN)
 
@@ -44,7 +44,7 @@ Bez względu na liczbę uprawnień uzyskiwanych przez partnera, liczba subskrypc
 
 | Maksymalna korzyść dla partnerów mających tylko kompetencje Silver                   | Maksymalna korzyść dla partnerów z co najmniej jedną kompetencją Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 25 Visual Studio Enterprise subskrypcji na kraj; 75 na całym świecie          | 50 Visual Studio Enterprise subskrypcje na kraj; 150 na całym świecie         |
+| 25 Visual Studio Enterprise subskrypcji na kraj/region; 75 na całym świecie          | 50 Visual Studio Enterprise subskrypcje na kraj/region; 150 na całym świecie         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Subskrypcje dla partnerów, którzy kupują Action Pack
 
@@ -70,14 +70,14 @@ To wewnętrzne ograniczenie tylko do użycia polega na tym, że partnerzy nie mo
 
 W przypadku subskrypcji programu Visual Studio oferowanych za pośrednictwem usługi MPN licencjonowany użytkownik musi zalogować się do programu Visual Studio przy użyciu tej samej tożsamości/nazwy logowania, która została użyta w celu aktywowania subskrypcji programu Visual Studio. Klucze produktów nie są oferowane w celu odblokowania produktu. Logowanie jest jedyną opcją dla uruchamiania programu Visual Studio. Subskrybenci programu Visual Studio mogą działać w trybie offline przez maksymalnie 30 dni, zanim program Visual Studio przestanie działać. Podczas pracy w trybie online program Visual Studio dyskretnie odświeża stan licencji użytkownika, aby upewnić się, że subskrypcja jest nadal ważna.
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 
 - [Przewodnik po programach Microsoft Partner Network](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Przypisywanie subskrypcji programu Visual Studio do pracowników MPN](manage-mpn-subscriptions.md)
 - [Warunki użytkowania](https://www.microsoft.com/useterms/) — subskrypcje programu Visual Studio oferowane za pośrednictwem usługi MPN podlegają subskrypcji programu Visual Studio nieprzeznaczonej do odsprzedaży (NFR).
 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

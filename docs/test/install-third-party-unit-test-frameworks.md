@@ -1,18 +1,18 @@
 ---
 title: Instalowanie platform testów jednostkowych innych firm
-ms.date: 04/01/2019
+ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286976"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387190"
 ---
 # <a name="install-unit-test-frameworks"></a>Zainstaluj platformy testów jednostkowych
 
@@ -20,7 +20,12 @@ Program Visual Studio Test Explorer może uruchamiać testy z dowolnego środowi
 
 Rozwiązanie programu Visual Studio może zawierać projekty testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków.
 
+::: moniker range=">=vs-2019"
+W przypadku platformy .NET, [MSTest, nunit i xUnit](getting-started-with-unit-testing.md) są to platformy testowe zapewniane przez program Visual Studio, które są instalowane domyślnie.
+::: moniker-end
+::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) to Platforma testowa dostępna w programie Visual Studio, która jest instalowana domyślnie.
+::: moniker-end
 
 ## <a name="acquire-frameworks"></a>Platformy pozyskiwania
 

@@ -1,7 +1,7 @@
 ---
 title: Co nowego w programie Visual Studio 2017
 titleSuffix: ''
-description: Dowiedz się więcej o nowych funkcjach programu Visual Studio 2017.
+description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2017.
 ms.date: 12/18/2018
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -18,377 +18,377 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74955039"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386852"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
-**Aktualizacja [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Zaktualizowano w [wersji 15,9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
-Chcesz uaktualnić z poprzedniej wersji programu Visual Studio? Oto, co program Visual Studio 2017 może zaoferować: Niezrównana produktywność dla każdego dewelopera, dowolnej aplikacji i dowolnej platformy. Program Visual Studio 2017 służy do tworzenia aplikacji dla systemów Android, iOS, Windows, Linux, web i cloud. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystaj z kontroli wersji, bądź zwinny i współpracuj wydajnie z tą wersją!
+Chcesz uaktualnić poprzednią wersję programu Visual Studio? Oto, co może być oferowane przez program Visual Studio 2017: Niezrównana wydajność dla każdego dewelopera, każdej aplikacji i dowolnej platformy. Użyj programu Visual Studio 2017 do tworzenia aplikacji dla systemów Android, iOS, Windows, Linux, sieci Web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Używaj kontroli wersji, być Agile i wydajnie Współpracuj z tą wersją.
 
 >[!div class="button"]
 >[Pobierz program Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
-Oto podsumowanie wysokiego poziomu zmian wprowadzonych od poprzedniej wersji programu Visual Studio 2015:
+Oto ogólny podsumowanie zmian wprowadzonych od czasu poprzedniej wersji programu Visual Studio 2015:
 
-* **[Przedefiniowane podstawy](#redefined-fundamentals)**. Nowe środowisko konfiguracji oznacza, że można zainstalować szybciej i zainstalować to, co chcesz, gdy jest to potrzebne.
-* **[Wydajność i produktywność](#performance-and-productivity)**. Skupiliśmy się na nowych i nowoczesnych możliwościach rozwoju urządzeń mobilnych, chmur i komputerów stacjonarnych. Program Visual Studio uruchamia się szybciej, jest bardziej responsywny i zużywa mniej pamięci niż wcześniej.
-* **[Tworzenie aplikacji w chmurze za pomocą platformy Azure](#cloud-app-development-with-azure)**. Wbudowany zestaw narzędzi platformy Azure umożliwia łatwe tworzenie aplikacji opartych na chmurze z platformą Microsoft Azure. Visual Studio ułatwia konfigurowanie, tworzenie, debugowanie, pakowanie i wdrażanie aplikacji i usług na platformie Azure.
-* **[Tworzenie aplikacji systemu Windows](#windows-app-development)**. Użyj szablonów platformy uniwersalnej systemu Windows w programie Visual Studio 2017, aby utworzyć pojedynczy projekt dla wszystkich urządzeń &ndash; z systemem Windows 10 PC, tablet, telefon, Xbox, HoloLens, Surface Hub i innych.
-* **[Tworzenie aplikacji mobilnych](#mobile-app-development)**. Wprowadzaj innowacje i szybko utrzymuj wyniki dzięki platformie Xamarin, która ujednolica wymagania mobilne na wielu platformach z jedną podstawową bazą kodu i zestawem umiejętności.
-* **[Rozwój międzyplatformowy](#cross-platform-development)**. Bezproblemowe dostarczanie oprogramowania na dowolną docelową platformę. Rozszerzanie procesów DevOps do programu SQL Server za pośrednictwem narzędzi Redgate Data Tools i bezpieczne automatyzacja wdrożeń bazy danych z programu Visual Studio. Można też używać programu .NET Core do pisania aplikacji i bibliotek, które działają bez modyfikacji w systemach operacyjnych Windows, Linux i macOS.
-* **[Rozwój gier](#games-development)**. Za pomocą programu Visual Studio Tools for Unity (VSTU) można używać programu Visual Studio do pisania skryptów gier i edytorów w języku C#, a następnie używać zaawansowanego debugera do znajdowania i naprawiania błędów.
-* **[rozwój SI](#ai-development)**. Dzięki narzędziom programu Visual Studio dla urządzeń SI można korzystać z funkcji zwiększających produktywność programu Visual Studio w celu przyspieszenia innowacji w zakresie ai. Twórz, testuj i wdrażaj rozwiązania deep learning/ sztucznej inteligencji, które bezproblemowo integrują się z usługą Azure Machine Learning w celu uzyskania niezawodnych możliwości eksperymentowania.
+* **[Definicje podstawowe](#redefined-fundamentals)**. Nowe środowisko instalacji oznacza, że można je instalować szybciej i instalować w razie potrzeby.
+* **[Wydajność i produktywność](#performance-and-productivity)**. Firma Microsoft koncentruje się na nowych i nowoczesnych możliwościach deweloperskich, chmurowych i klasycznych. Program Visual Studio jest uruchamiany szybciej, jest bardziej wydajny i zużywa mniej pamięci niż wcześniej.
+* **[Tworzenie aplikacji w chmurze przy użyciu platformy Azure](#cloud-app-development-with-azure)**. Wbudowany zestaw narzędzi platformy Azure umożliwia łatwe tworzenie aplikacji w chmurze, które są obsługiwane przez Microsoft Azure. Program Visual Studio ułatwia konfigurowanie, kompilowanie, debugowanie, pakowanie i wdrażanie aplikacji oraz usług na platformie Azure.
+* **[Programowanie aplikacji systemu Windows](#windows-app-development)**. Użyj szablonów platformy UWP w programie Visual Studio 2017, aby utworzyć pojedynczy projekt dla wszystkich urządzeń z systemem Windows 10 &ndash; , tabletu, telefonu, konsoli Xbox, Hololens, Surface Hub i innych.
+* **[Opracowywanie aplikacji mobilnych](#mobile-app-development)**. Wprowadzaj innowacje i uzyskuj wyniki szybko przy użyciu platformy Xamarin, która łączy wymagania dotyczące wielu platform dla urządzeń przenośnych do jednej podstawowej bazy kodu i zestawu umiejętności.
+* **[Programowanie dla wielu platform](#cross-platform-development)**. Bezproblemowo dostarcza oprogramowanie do dowolnej platformy dostosowanej. Rozszerzając DevOps procesy, aby SQL Server za pośrednictwem narzędzi Redgate Data Tools i bezpiecznie automatyzować wdrożenia baz danych z programu Visual Studio. Można też używać platformy .NET Core do zapisywania aplikacji i bibliotek, które są uruchamiane niemodyfikowane w systemach operacyjnych Windows, Linux i macOS.
+* **[Opracowywanie gier](#games-development)**. Za pomocą Visual Studio Tools for Unity (rozszerzenia VSTU) można używać programu Visual Studio do zapisywania skryptów gier i edytorów w języku C#, a następnie używać swojego zaawansowanego debugera do znajdowania i naprawiania błędów.
+* **[Programowanie AI](#ai-development)**. Za pomocą Visual Studio Tools for AI można korzystać z funkcji produktywności programu Visual Studio w celu przyspieszenia innowacji AI. Kompiluj, Testuj i wdrażaj rozwiązania głębokiego uczenia/AI, które bezproblemowo integrują się z Azure Machine Learning w celu zapewnienia niezawodnej obsługi eksperymentów.
 
 > [!NOTE]
-> Aby uzyskać pełną listę nowych funkcji i funkcji w programie Visual Studio 2017, zobacz [Bieżące informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Aby zapoznać się z przyszłymi ofertami funkcji, zobacz [informacje o wersji podglądu](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
+> Aby uzyskać pełną listę nowych funkcji i funkcji w programie Visual Studio 2017, zobacz [bieżące informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Aby uzyskać wgląd w przyszłe oferty funkcji, zobacz informacje o [wersji zapoznawczej](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
-Oto bardziej szczegółowe informacje na temat niektórych z najbardziej znaczących ulepszeń i nowych funkcji w programie Visual Studio 2017.
+Poniżej przedstawiono bardziej szczegółowe informacje na temat niektórych najbardziej istotnych ulepszeń i nowych funkcji w programie Visual Studio 2017.
 
-## <a name="redefined-fundamentals"></a>Przedefiniowane podstawy
+## <a name="redefined-fundamentals"></a>Definicje podstawowe
 
-### <a name="a-new-setup-experience"></a>Nowe środowisko konfiguracji
+### <a name="a-new-setup-experience"></a>Nowe środowisko instalacji
 
-Visual Studio ułatwia i przyspiesza instalowanie tylko tych funkcji, których potrzebujesz, gdy ich potrzebujesz. I, to odinstalowuje czysto, zbyt.
+Program Visual Studio ułatwia i przyspiesza Instalowanie tylko potrzebnych funkcji, gdy będą potrzebne. Ponadto Odinstalowuje również czyste.
 
-Najważniejszą zmianą, na którą należy zwrócić uwagę podczas instalowania programu Visual Studio, jest jego nowe środowisko konfiguracji. Na karcie **Obciążenia** zobaczysz opcje instalacji, które są zgrupowane w celu reprezentowania wspólnych struktur, języków i platform. Obejmuje wszystko, od tworzenia pulpitu .NET do tworzenia aplikacji C++ w systemach Windows, Linux i iOS.
+Najważniejszym zmianą do uwagi podczas instalowania programu Visual Studio jest jego nowe środowisko konfiguracji. Na karcie **obciążenia** zobaczysz opcje instalacji, które są pogrupowane w celu reprezentowania typowych struktur, języków i platform. Obejmuje ona wszystkie czynności związane z programowaniem aplikacji klasycznych na platformie .NET w systemach Windows, Linux i iOS.
 
-Wybierz potrzebne obciążenia i zmień je, gdy zajdzie taka potrzeba.
+Wybierz potrzebne obciążenia i zmień je w razie potrzeby.
 
-![Okno dialogowe ustawień programu Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
+![Okno dialogowe Instalatora programu Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
 
-Masz też opcje dostrojenia instalacji:
+Dostępne są również opcje umożliwiające precyzyjne dostosowanie instalacji:
 
-* Chcesz wybrać własne składniki zamiast obciążeń? Wybierz kartę **Poszczególne składniki** z instalatora.
-* Chcesz zainstalować pakiety językowe bez konieczności zmiany opcji języka systemu Windows? Wybierz kartę **Pakiety językowe** instalatora.
-* **Nowość w wersji 15.7**: Chcesz zmienić lokalizację instalacji programu Visual Studio? Wybierz kartę **Opcje instalacji** instalatora.
+* Chcesz wybrać własne składniki zamiast korzystać z obciążeń? Wybierz kartę **poszczególne składniki** w instalatorze.
+* Czy chcesz zainstalować pakiety językowe bez konieczności zmiany opcji języka systemu Windows? Wybierz kartę **pakiety językowe** Instalatora.
+* **Nowość w 15,7**: chcesz zmienić lokalizację instalacji programu Visual Studio? Wybierz kartę **Opcje instalacji** w instalatorze.
 
-Aby dowiedzieć się więcej o nowym środowisko instalacji, w tym instrukcje krok po kroku, które cię przez to, zobacz [Install Visual Studio](../install/install-visual-studio.md) strony.
+Aby dowiedzieć się więcej na temat nowego środowiska instalacji, w tym instrukcje krok po kroku, które przeprowadzą Cię przez ten proces, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
 
-### <a name="a-focus-on-accessibility"></a>Nacisk na dostępność
+### <a name="a-focus-on-accessibility"></a>Skupienie się na ułatwieniach dostępu
 
-**Nowością w wersji 15.3,** dokonaliśmy ponad 1700 ukierunkowanych poprawek w celu poprawy zgodności między programem Visual Studio a technologiami pomocniczymi używanymi przez wielu klientów. Istnieją dziesiątki scenariuszy, które są bardziej zgodne z czytnikami ekranu, motywami o wysokim kontraście i innymi technologiami pomocniczymi niż kiedykolwiek wcześniej. Debuger, edytor i powłoka mają wszystkie zdobyć znaczące ulepszenia, zbyt.
+**Nowość w 15,3**, wprowadziliśmy ponad 1 700 poprawek do poprawy zgodności między programem Visual Studio i technologiami pomocniczymi używanymi przez wielu klientów. Istnieje wiele scenariuszy, które są bardziej zgodne z czytnikami zawartości ekranu, kompozycjami o dużym kontraście i innymi technologiami pomocniczymi niż kiedykolwiek wcześniej. Narzędzia debugger, Editor i Shell mają również znacznie znaczące ulepszenia.
 
-Aby uzyskać więcej informacji, zobacz wpis w blogu [dotyczące ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3.](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)
+Aby uzyskać więcej informacji, zobacz wpisy w blogu dotyczące [ulepszeń ułatwień dostępu w programie Visual Studio 2017 w wersji 15,3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) .
 
 ## <a name="performance-and-productivity"></a>Wydajność i produktywność
 
 ### <a name="sign-in-across-multiple-accounts"></a>Logowanie się na wielu kontach
 
-Wprowadziliśmy nową usługę tożsamości w programie Visual Studio, która umożliwia udostępnianie kont użytkowników w Eksploratorze zespołu, narzędziach platformy Azure, publikowaniu w sklepie Microsoft Store i innych.
+W programie Visual Studio wprowadziliśmy nową usługę tożsamości, która umożliwia udostępnianie kont użytkowników w ramach Team Explorer, narzędzi platformy Azure, Microsoft Store publikowania i nie tylko.
 
-Możesz pozostać zalogowany dłużej, zbyt. Visual Studio nie prosi o ponowne zalogowanie się co 12 godzin. Aby dowiedzieć się więcej, zobacz wpis w blogu [Monity o mniej logowania programu Visual Studio.](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/)
+Możesz już się zalogować. Program Visual Studio nie będzie prosił o ponowne zalogowanie co 12 godzin. Aby dowiedzieć się więcej, zobacz wpis w blogu dotyczący mniej informacji dotyczących [logowania w programie Visual Studio](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/) .
 
 ### <a name="start-visual-studio-faster"></a>Szybsze uruchamianie programu Visual Studio
 
-Nowe Centrum wydajności programu Visual Studio może pomóc zoptymalizować czas uruchamiania ide. Centrum wydajności zawiera listę wszystkich rozszerzeń i okien narzędzi, które mogą spowolnić uruchamianie IDE. Można go użyć, aby poprawić wydajność uruchamiania, określając, kiedy rozszerzenia są uruchamiane lub czy okna narzędzi są otwarte podczas uruchamiania.
+Nowe centrum wydajności programu Visual Studio może pomóc zoptymalizować czas uruchamiania środowiska IDE. Centrum wydajności zawiera listę wszystkich rozszerzeń i okien narzędzi, które mogą spowalniać Uruchamianie środowiska IDE. Można jej użyć, aby zwiększyć wydajność uruchamiania przez określenie, kiedy rozszerzenia zaczynają się lub czy okna narzędzi są otwarte przy uruchamianiu.
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Szybsze ładowanie rozszerzeń na żądanie
 
-Visual Studio przenosi jego rozszerzenia (i pracy z rozszerzeniami innych firm też), tak aby załadować na żądanie, a nie podczas uruchamiania IDE. Zastanawiasz się, które rozszerzenia wpływają na wydajność uruchamiania, ładowania rozwiązań i wpisywania tekstu? Informacje te można wyświetlić w **programie Pomoc** > w**zarządzaniu wydajnością programu Visual Studio**.
+Program Visual Studio przenosi swoje rozszerzenia (i współpracuje z rozszerzeniami innych firm), aby załadować je na żądanie, a nie przy uruchamianiu IDE. Chcesz wiedzieć o tym, które rozszerzenia mają wpływ na uruchamianie, ładowanie rozwiązań i wprowadzanie wydajności? Te informacje można znaleźć w temacie **ułatwiają**  >  **Zarządzanie wydajnością programu Visual Studio**.
 
   ![Okno dialogowe Opcje w programie Visual Studio 2017](media/vs2017ide-manage-vs-perf.png)
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Zarządzanie rozszerzeniami za pomocą Menedżera rozszerzeń roamingu
 
-Jest to łatwiejsze do skonfigurowania każdego środowiska programistycznego z ulubionych rozszerzeń po zalogowaniu się do programu Visual Studio. Nowy Menedżer rozszerzeń roamingu śledzi wszystkie ulubione rozszerzenia, tworząc zsynchronizowany wykaz w chmurze.
+W przypadku logowania się do programu Visual Studio łatwiej jest skonfigurować każde środowisko programistyczne przy użyciu ulubionych rozszerzeń. Nowy Menedżer rozszerzenia roamingu śledzi wszystkie ulubione rozszerzenia przez utworzenie zsynchronizowanej listy w chmurze.
 
-Aby wyświetlić listę rozszerzeń w programie Visual Studio, kliknij pozycję Rozszerzenia **narzędzi** > **& aktualizacje**, a następnie kliknij pozycję Menedżer **rozszerzeń mobilnych**.
+Aby wyświetlić listę rozszerzeń w programie Visual Studio, kliknij pozycję **Narzędzia**  >  **rozszerzenia & aktualizacje**, a następnie kliknij pozycję **Menedżer rozszerzenia roamingu**.
 
-![Visual Studio 2017 — okno dialogowe Rozszerzenia i aktualizacje](media/vs2017ide-extensions-and-updates.png)
+![Visual Studio 2017 — okno dialogowe rozszerzenia i aktualizacje](media/vs2017ide-extensions-and-updates.png)
 
-Menedżer rozszerzeń mobilnych śledzi wszystkie instalowane rozszerzenia, ale możesz wybrać te, które chcesz dodać do listy roamingu.
+Menedżer rozszerzenia roamingu śledzi wszystkie instalowane rozszerzenia, ale możesz wybrać, które z nich mają zostać dodane do listy roamingu.
 
-![Visual Studio 2017 — okno dialogowe Rozszerzenia i aktualizacje](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017 — okno dialogowe rozszerzenia i aktualizacje](media/vs2017ide-RoamingExtensionManager.png)
 
-Podczas korzystania z Menedżera rozszerzeń roamingu na liście znajdują się trzy typy ikon:
+W przypadku korzystania z Menedżera rozszerzenia roamingu na liście istnieją trzy typy ikon:
 
-* ![Wędrowała ikona](media/vs2017ide-roamedicon.png) **_Roamed:_** Rozszerzenie, które jest częścią tej listy roamingu, ale nie jest zainstalowane na komputerze.
-  (Można je zainstalować za pomocą przycisku **Pobierz).**
-* ![Wędrował & Zainstalowana](media/vs2017ide-roamedinstalledicon.png) **_ikona Roamed & Zainstalowany:_** Wszystkie rozszerzenia, które są częścią tej listy roamingu i zainstalowane w środowisku deweloperskim.
-  (Jeśli zdecydujesz, że nie chcesz wędrować, możesz je usunąć za pomocą przycisku **Zatrzymaj roaming).**
-* ![Zainstalowana](media/vs2017ide-installedicon.png) **_ikona zainstalowana:_** Wszystkie rozszerzenia, które są zainstalowane w tym środowisku, ale nie są częścią listy roamingu.
-  (Rozszerzenia można dodawać do listy roamingowej za pomocą przycisku **Rozpocznij roaming).**
+* ![Mobilny ](media/vs2017ide-roamedicon.png) **_dostęp_** do ikony: rozszerzenie, które jest częścią tej listy roamingu, ale nie jest zainstalowane na komputerze.
+  (Można je zainstalować przy użyciu przycisku **Pobierz** ).
+* ![& zainstalowana ikona instalacji z roamingiem ](media/vs2017ide-roamedinstalledicon.png) **_& zainstalowana_**: wszystkie rozszerzenia, które są częścią tej listy roamingu i zainstalowane w środowisku deweloperskim.
+  (Jeśli zdecydujesz, że nie chcesz korzystać z roamingu, możesz je usunąć za pomocą przycisku **Zatrzymaj roaming** ).
+* ![](media/vs2017ide-installedicon.png) **_Zainstalowana_** ikona instalacji: wszystkie rozszerzenia, które są zainstalowane w tym środowisku, ale nie są częścią listy roamingu.
+  (Rozszerzenia można dodać do listy roaming przy użyciu przycisku **Uruchom roaming** ).
 
-Każde rozszerzenie pobrane po zalogowaniu się jest dodawane do listy jako **Roamed & Installed**. Rozszerzenie staje się częścią listy roamingu, co daje dostęp do niego z dowolnego komputera.
+Wszystkie rozszerzenia pobrane po zalogowaniu się zostaną dodane do listy jako **Zainstalowano & roamingu**. Rozszerzenie zostanie następnie częścią listy roamingu, co zapewnia dostęp do niego z dowolnego komputera.
 
-### <a name="experience-live-unit-testing"></a>Doświadcz testów jednostkowych na żywo
+### <a name="experience-live-unit-testing"></a>Testowanie jednostkowe na żywo
 
-W programie Visual Studio Enterprise 2017 testowanie jednostek na żywo zapewnia wyniki testów jednostkowych na żywo i pokrycie kodu w edytorze podczas kodowania. Działa z projektami języka C# i Visual Basic dla platformy .NET Framework i .NET Core i obsługuje trzy struktury testowe mstest, xUnit i NUnit.
+W Visual Studio Enterprise 2017 testy jednostkowe na żywo umożliwiają dynamiczne wyniki testów jednostkowych i pokrycie kodu w edytorze podczas kodowania. Działa w przypadku projektów C# i Visual Basic dla .NET Framework i .NET Core, a ponadto obsługuje trzy platformy testowe MSTest, xUnit i NUnit.
 
 ![Live Unit Testing](media/lut-codewindow.png)
 
-Aby uzyskać więcej informacji, zobacz [Wprowadzenie do testowania jednostek na żywo](../test/live-unit-testing-intro.md). Aby uzyskać listę nowych funkcji dodanych w każdej wersji programu Visual Studio Enterprise 2017, zobacz [Co nowego w testach jednostek na żywo](../test/live-unit-testing-whats-new.md).
+Aby uzyskać więcej informacji, zobacz [wprowadzenie Live Unit Testing](../test/live-unit-testing-intro.md). Aby zapoznać się z listą nowych funkcji dodanych w poszczególnych wersjach Visual Studio Enterprise 2017, zobacz [co nowego w programie Live Unit Testing](../test/live-unit-testing-whats-new.md).
 
 ### <a name="set-up-a-cicd-pipeline"></a>Konfigurowanie potoku ciągłej integracji/ciągłego dostarczania
 
-#### <a name="automated-testing"></a>Automatyczne testowanie
+#### <a name="automated-testing"></a>Testowanie automatyczne
 
-Automatyczne testowanie jest kluczową częścią każdego potoku DevOps. Pozwala na spójne i niezawodne testowanie i uwalnianie rozwiązania w znacznie krótszych cyklach. Przepływy ciągłej integracji i ciągłego dostarczania (ciągła integracja i ciągłe dostarczanie) mogą pomóc w zwiększenia wydajności procesu.
+Testowanie automatyczne jest kluczowym elementem dowolnego potoku DevOps. Pozwala to na spójne i niezawodne testowanie i wydawanie rozwiązań w znacznie krótszych cyklach. Przepływy ciągłej integracji i ciągłego dostarczania mogą pomóc zwiększyć wydajność procesu.
 
-Aby uzyskać więcej informacji na temat testów automatycznych, zobacz [potok ciągłej integracji/ciągłego wdrażania dla zautomatyzowanych testów w blogu DevOps.](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/)
+Aby uzyskać więcej informacji o zautomatyzowanych testach, zobacz potok ciągłej integracji/ciągłego wdrażania [w blogu DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) .
 
-Aby uzyskać więcej informacji na temat nowości w [narzędziach ciągłego dostarczania dla](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozszerzenia Visual Studio DevLabs, zobacz Wpis w blogu [Commit with confidence: Commit time code quality.](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/)
+Aby uzyskać więcej informacji na temat Nowości w rozszerzeniu [Narzędzia do ciągłego dostarczania dla rozszerzenia Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs, zobacz wpis w blogu dotyczącym zatwierdzeń [: zatwierdzenie kodu czasu](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) .
 
-### <a name="visual-studio-ide-enhancements"></a>Ulepszenia IDE programu Visual Studio
+### <a name="visual-studio-ide-enhancements"></a>Ulepszenia środowiska IDE programu Visual Studio
 
 #### <a name="multi-caret-editing"></a>Edycja przy użyciu wielokaretki
 
-**Nowość w 15.8**: Jednoczesna edycja wielu lokalizacji w pliku jest teraz łatwa. Zacznij od utworzenia punktów wstawiania i zaznaczeń w wielu lokalizacjach w pliku. Następnie użyj funkcji edycji wielu elementów, aby dokonać tej samej edycji w dwóch lub więcej miejscach w tym samym czasie.
+**Nowość w 15,8**: Edytowanie wielu lokalizacji w pliku jednocześnie jest teraz łatwe. Zacznij od utworzenia punktów wstawiania i opcji w wielu lokalizacjach w pliku. Następnie użyj funkcji edycji wielokolorowej, aby zmienić tę samą edycję w dwóch lub więcej miejscach w tym samym czasie.
 
-Aby uzyskać więcej informacji, zobacz sekcję [Wyboru wielu łóżek](finding-and-replacing-text.md#multi-caret-selection) na stronie [tekstowej Znajdź i zastąp.](finding-and-replacing-text.md)
+Aby uzyskać więcej informacji, zobacz sekcję [wybór wielu karetki](finding-and-replacing-text.md#multi-caret-selection) na stronie [Znajdowanie i zastępowanie tekstu](finding-and-replacing-text.md) .
 
-#### <a name="keep-keybinding-profiles-consistent"></a>Utrzymuj spójność profili wiązania kluczy
+#### <a name="keep-keybinding-profiles-consistent"></a>Zachowaj spójne profile powiązanie klawiszy
 
-**Nowość w wersji 15.8**: Teraz można zachować spójność funkcji wiązania klawiszy w narzędziach za pomocą dwóch nowych profilów klawiatury: Visual Studio Code i ReSharper (Visual Studio). Schematy te można znaleźć w menu **Narzędzia** > **Opcje** > **klawiatury** **ogólnej** > i menu rozwijanego.
+**Nowość w 15,8**: teraz można zachować spójność powiązań klawiszy dla narzędzi z dwoma nowymi profilami klawiatury: Visual Studio Code i Resharper (Visual Studio). Te schematy można znaleźć w obszarze **Narzędzia**  >  **Opcje**  >  **Ogólne**  >  **Klawiatura** i górne menu rozwijane.
 
-  ![Nowe profile wiązania kluczy dla programu Visual Studio Code i ReSharper](media/vs-keyboard-mappings-code-resharper.png)
+  ![Nowe profile powiązanie klawiszy dla Visual Studio Code i Resharper](media/vs-keyboard-mappings-code-resharper.png)
 
-#### <a name="use-new-refactorings"></a>Używanie nowych refaktoryzacji
+#### <a name="use-new-refactorings"></a>Użyj nowych refaktoryzacji
 
-Refaktoryzowanie jest procesem poprawy kodu po jego zapisaniu. Refaktoryzowanie zmienia wewnętrzną strukturę kodu bez zmiany jego zachowania. Często dodajemy nowe refaktoryzje; oto kilka z nich:
+Refaktoryzacja to proces ulepszania kodu po jego zapisaniu. Refaktoryzacja zmienia wewnętrzną strukturę kodu bez zmiany jego działania. Często dodawane są nowe refaktoryzacje; Oto kilka z nich:
 
-* Dodaj parametr (z callsite)
-* Generowanie przesłomów
-* Dodawanie nazwanego argumentu
-* Dodawanie sprawdzania wartości null pod kątem parametrów
+* Dodaj parametr (z szczegóły)
+* Generuj zastąpienia
+* Dodaj nazwany argument
+* Dodaj sprawdzanie wartości null dla parametrów
 * Wstawianie separatorów cyfr do literałów
-* Zmień podstawę dla literałów liczbowych (na przykład sześciokątnych na binarne)
-* Konwertowanie if-to-switch
-* Usuwanie nieużywanych zmiennych
+* Zmień bazę dla literałów liczbowych (na przykład szesnastkowe na Binary)
+* Konwertuj przełącznik if-to-switch
+* Usuń nieużywaną zmienną
 
-Aby uzyskać więcej informacji, zobacz [Szybkie akcje](common-quick-actions.md).
+Aby uzyskać więcej informacji, zobacz [szybkie akcje](common-quick-actions.md).
 
-#### <a name="interact-with-git"></a>Interakcja z gitem
+#### <a name="interact-with-git"></a>Korzystanie z narzędzia Git
 
-Podczas pracy z projektem w programie Visual Studio, można skonfigurować i szybko zatwierdzić i opublikować kod do usługi Git. Repozytoria Git można również zarządzać za pomocą kliknięć menu z przycisków w prawym dolnym rogu IDE.
+Podczas pracy z projektem w programie Visual Studio można skonfigurować i szybko zatwierdzić i opublikować swój kod w usłudze git. Repozytoriami git można także zarządzać za pomocą menu kliknięć z przycisków w prawym dolnym rogu IDE.
 
-![Visual Studio 2017 wchodzi w interakcję z dialogiem git](media/vsIDE-GitInteraction.png)
+![Program Visual Studio 2017 współdziała z oknem dialogowym usługi git](media/vsIDE-GitInteraction.png)
 
-#### <a name="experience-improved-navigation-controls"></a>Doświadcz ulepszonych kontroli nawigacji
+#### <a name="experience-improved-navigation-controls"></a>Udoskonalone kontrolki nawigacji
 
-Odświeżyliśmy nawigację, aby pomóc Ci uzyskać od A do B z większą pewnością siebie i mniejszą ilością zakłóceń.
+Odświeżono środowisko nawigacji, aby pomóc w uzyskaniu od A do B z większą pewnością i mniejszą liczbą odniesień.
 
-* **Nowość w 15.4**: **Przejdź do definicji** &ndash; **(Ctrl**+**kliknij** lub **F12**) Użytkownicy myszy mają łatwiejszy sposób, aby przejść do definicji członka, naciskając **Ctrl,** a następnie klikając element członkowski. Naciśnięcie **klawisza Ctrl** i najechanie kursorem na symbol kodu podkreśli go i zmieni w łącze. Aby uzyskać więcej informacji, zobacz [Przejdź do definicji i Zajrzeć do definicji.](go-to-and-peek-definition.md)
+* **Nowość w 15,4**: **Przejdź do definicji** (**Ctrl** + **kliknięcia** lub **F12**) &ndash; Użytkownicy myszy mają łatwiejszy sposób, aby przejść do definicji elementu członkowskiego, naciskając klawisz **Ctrl** , a następnie klikając element członkowski. Naciśnięcie klawisza **Ctrl** i umieszczenie kursora nad symbolem kodu spowoduje podkreślenie go i przełączenie go do linku. Aby uzyskać więcej informacji, zobacz sekcję [Przejdź do definicji i wgląd do definicji](go-to-and-peek-definition.md) .
 
-* **Przejdź do implementacji** **(Ctrl**+**F12**) &ndash; Przejdź od dowolnego typu podstawowego lub elementu członkowskiego do jego różnych implementacji.
+* **Przejdź do implementacji** (**Ctrl** + **F12**) &ndash; przechodzenie z dowolnego typu podstawowego lub elementu członkowskiego do jego różnych implementacji.
 
-* **Przejdź do wszystkich** **(Ctrl**+**T** &ndash; lub **Ctrl**+**,**) Przejdź bezpośrednio do dowolnego pliku / typu / elementu członkowskiego / symbol deklaracji. Możesz filtrować listę wyników lub użyć składni kwerendy (na przykład "f searchTerm" dla plików, "t searchTerm" dla typów itp.).
+* **Przejdź do wszystkich** (**Ctrl** + **T** lub **Ctrl** + **,**), &ndash; Przejdź bezpośrednio do dowolnej deklaracji File/Type/member/symbol. Możesz filtrować listę wyników lub użyć składni zapytania (na przykład "f searchTerm" dla plików "t searchTerm" dla typów itp.).
 
-  ![Ulepszone Przejdź do wszystkich](media/vs2017ide-navigation-go-to.png)
+  ![Udoskonalone przechodzenie do wszystkiego](media/vs2017ide-navigation-go-to.png)
 
-* **Znajdź wszystkie odwołania** **(Shift**+**F12)** &ndash; Za pomocą koloryzacji składni można pogrupować wyniki znajdź wszystkie odniesienia według kombinacji projektu, definicji i ścieżki. Można również "zablokować" wyniki, dzięki czemu można nadal znaleźć inne odwołania bez utraty oryginalnych wyników.
+* **Znajdź wszystkie odwołania** (**SHIFT** + **F12**) &ndash; przy użyciu kolorowania składni, można zgrupować wyniki wyszukiwania wszystkich odwołań według kombinacji projektu, definicji i ścieżki. Możesz również "zablokować" wyniki, aby można było dalej znajdować inne odwołania bez utraty oryginalnych wyników.
 
-  ![Narzędzie Nowe znajdź wszystkie odwołania](media/vs2017ide-find-all-references.png)
+  ![Nowe narzędzie Znajdź wszystkie odwołania](media/vs2017ide-find-all-references.png)
 
-* **Wizualizacja struktury** &ndash; Kropkowane, szare pionowe linie (linie pomocnicze wcięci) działają jako punkty orientacyjne w kodzie, aby zapewnić kontekst w ramce widoku. Możesz je rozpoznać w popularnych narzędziach zwiększających produktywność. Możesz ich użyć do wizualizacji i odkrycia, w jakim bloku kodu jesteś w dowolnym momencie bez konieczności przewijania. Kursowanie kursorem nad wierszami powoduje wyświetlenie etykietki narzędzia, która pokazuje otwarcie tego bloku i jego chyłek. Jest on dostępny dla wszystkich języków obsługiwanych za pośrednictwem gramatyki TextMate, a także C#, Visual Basic i XAML.
+* **Wizualizator struktury** &ndash; Kropkowane, szare linie pionowe (prowadnice wcięcia) działają jako dzielnice w kodzie, aby zapewnić kontekst w ramce widoku. Można je rozpoznać z popularnych narzędzi do wydajnej pracy. Można ich używać do wizualizacji i wykrywania bloku kodu w dowolnym momencie bez konieczności przewijania. Umieszczenie kursora nad wierszami powoduje wyświetlenie etykietki narzędzia, która pokazuje otwieranie tego bloku i jego obiektów nadrzędnych. Jest ona dostępna dla wszystkich języków obsługiwanych za pośrednictwem gramatyki textautomatyzuj, a także C#, Visual Basic i XAML.
 
   ![Wizualizator struktury programu Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Aby uzyskać więcej informacji na temat nowych funkcji produktywności, zobacz wpis w blogu [programu Visual Studio 2017: Produktywność, wydajność i partnerzy.](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/)
+Aby uzyskać więcej informacji na temat nowych funkcji produktywności, zobacz wpis w blogu dotyczący programu [Visual Studio 2017: produktywność, wydajność i partnerzy](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) .
 
 ### <a name="visual-c"></a>Visual C++
 
-Zobaczysz kilka ulepszeń w programie Visual Studio, takich jak dystrybucja C++ Podstawowych Wskazówek z visual studio, aktualizowanie kompilatora przez dodanie rozszerzonej obsługi funkcji C++ 11 i C++ oraz dodawanie i aktualizowanie funkcji w bibliotekach języka C++. Firma We've also improved the performance of the C++ IDE, installation workloads, and more.
+Zobaczysz kilka ulepszeń programu Visual Studio, takich jak dystrybucja podstawowe wytyczne dotyczące języka C++ w programie Visual Studio, aktualizowanie kompilatora przez dodanie rozszerzonej obsługi funkcji C++ 11 i C++ oraz dodawanie i aktualizowanie funkcji w bibliotekach C++. Ulepszono również wydajność środowiska IDE języka C++, obciążeń instalacji i nie tylko.
 
-Naprawiliśmy również ponad 250 błędów i zgłosiliśmy problemy w kompilatorze i narzędziach, wiele przesłanych przez klientów za pośrednictwem [społeczności programistów dla języka C++](https://developercommunity.visualstudio.com/spaces/62/index.html "Społeczność programistów dla języka C++").
+Ponadto Naprawiono ponad 250 usterek i zgłoszono problemy w kompilatorze i narzędziach, wiele przesłanych przez klientów za pośrednictwem [społeczności deweloperów dla języka C++](https://developercommunity.visualstudio.com/spaces/62/index.html "Społeczność deweloperów dla języka C++").
 
-Aby uzyskać szczegółowe informacje, zobacz [co nowego dla języka Visual C++ w visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) strony.
+Aby uzyskać szczegółowe informacje, zobacz artykuł [co nowego w Visual C++ na stronie Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) .
 
-### <a name="debugging-and-diagnostics"></a>Debugowanie i diagnostyka
+### <a name="debugging-and-diagnostics"></a>Debugowanie i Diagnostyka
 
 #### <a name="run-to-click"></a>Uruchom do kliknięcia
 
-Teraz można łatwiej przejść do przodu podczas debugowania bez ustawiania punktu przerwania, aby zatrzymać na linii, który chcesz. Po zatrzymaniu w debugerze, po prostu kliknij ikonę, która pojawia się obok wiersza kodu. Kod zostanie uruchomiony i zatrzyma się w tym wierszu, gdy następnym razem zostanie trafiony w ścieżce kodu.
+Teraz można łatwiej przechodzić w trakcie debugowania bez ustawiania punktu przerwania, który ma zostać zatrzymany w pożądanym wierszu. Po zatrzymaniu w debugerze wystarczy kliknąć ikonę widoczną obok wiersza kodu. Kod zostanie uruchomiony i zatrzymany w tym wierszu przy następnym trafieniu w ścieżce kodu.
 
 ![Debugowanie programu Visual Studio 2017 — uruchamianie do kliknięcia](media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>Nowy pomocnik wyjątków
 
-Nowy Pomocnik wyjątków ułatwia przeglądanie informacji o wyjątkach w skrócie. Informacje są prezentowane w formie kompaktowej z natychmiastowym dostępem do wewnętrznych wyjątków. Podczas diagnozowania NullReferenceException, można szybko zobaczyć, co było null prawo wewnątrz Pomocnika wyjątku.
+Nowy pomocnik wyjątków ułatwia wyświetlanie informacji o wyjątkach w skrócie. Informacje są prezentowane w postaci kompaktowej z natychmiastowym dostępem do wyjątków wewnętrznych. Po zdiagnozowaniu NullReferenceException można szybko zobaczyć, co miało prawo null w Pomocniku wyjątków.
 
-![Okno dialogowe Pomocnik nowego wyjątku w programie Visual Studio](media/vs2017ide-ExceptionHelper.png)
+![Okno dialogowe nowego pomocnika wyjątków w programie Visual Studio](media/vs2017ide-ExceptionHelper.png)
 
-Aby uzyskać więcej informacji, zobacz [użyj nowego pomocnika wyjątków w blogu programu Visual Studio.](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/)
+Aby uzyskać więcej informacji, zobacz wpis w blogu [Korzystanie z nowego pomocnika wyjątków w programie Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) .
 
-#### <a name="snapshots-and-intellitrace-step-back"></a>Migawki i krok po kroku IntelliTrace
+#### <a name="snapshots-and-intellitrace-step-back"></a>Migawki i IntelliTrace krok po kroku
 
-**Nowość w 15.5:** IntelliTrace step-back automatycznie wykonuje migawkę aplikacji przy każdym zdarzeniu kroku punktu przerwania i debugera. Zarejestrowane migawki umożliwiają powrót do poprzednich punktów przerwania lub kroki i wyświetlić stan aplikacji, jak to było w przeszłości. IntelliTrace krok wstecz można zaoszczędzić czas, gdy chcesz zobaczyć poprzedni stan aplikacji, ale nie chcesz ponownie debugowania lub ponownie utworzyć żądany stan aplikacji.
+**Nowość w 15,5**: IntelliTrace Step-back automatycznie wykonuje migawkę aplikacji przy każdym punkcie przerwania i zdarzeniu debugera. Zapisane migawki umożliwiają powrót do poprzednich punktów przerwania lub kroków oraz wyświetlanie stanu aplikacji w przeszłości. IntelliTrace krokowo umożliwia zaoszczędzenie czasu, gdy chcesz zobaczyć poprzedni stan aplikacji, ale nie chcesz ponownie uruchomić debugowania ani odtworzyć żądanego stanu aplikacji.
 
-Migawki można nawigować i wyświetlać za pomocą przycisków **Krok do tyłu** i Krok do **przodu** na pasku narzędzi **Debugowania.** Te przyciski nawigują po zdarzeniach wyświetlanych na karcie **Zdarzenia** w oknie **Narzędzia diagnostyczne.** Przechodzenie do tyłu lub do przodu do zdarzenia automatycznie aktywuje debugowanie historyczne na wybrane zdarzenie.
+Możesz nawigować i przeglądać migawki przy użyciu przycisków **krok wstecz** i **dalej** na pasku narzędzi **debugowania** . Te przyciski służą do przechodzenia do zdarzeń, które pojawiają się na karcie **zdarzenia** w oknie **Narzędzia diagnostyczne** . Przechodzenie do tyłu lub w przód do zdarzenia automatycznie aktywuje debugowanie historyczne na wybranym zdarzeniu.
 
-![Okno dialogowe Pomocnik nowego wyjątku w programie Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Przyciski Krok do tyłu i Do przodu")
+![Okno dialogowe nowego pomocnika wyjątków w programie Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Przyciski do tyłu i do przodu")
 
-Aby uzyskać więcej informacji, zobacz [Wyświetlanie migawek przy użyciu strony krok po kroku IntelliTrace.](../debugger/view-historical-application-state.md)
+Aby uzyskać więcej informacji, zobacz stronę [Wyświetlanie migawek przy użyciu IntelliTrace kroku-back](../debugger/view-historical-application-state.md) .
 
 ### <a name="containerization"></a>Przechowywanie w kontenerach
 
-Kontenery zapewniają większą gęstość aplikacji i niższe koszty wdrożenia wraz z lepszą wydajnością i elastycznością DevOps.
+Kontenery zapewniają zwiększoną gęstość aplikacji i niższe koszty wdrożenia oraz zwiększają produktywność i elastyczność DevOps.
 
 #### <a name="docker-container-tooling"></a>Narzędzia kontenerów Docker
 
-**Nowość w 15.5**:
+**Nowość w 15,5**:
 
-* Program Visual Studio zawiera narzędzia dla kontenerów platformy Docker, które teraz obsługują wieloetapowe pliki dockerfiles, które usprawniają tworzenie zoptymalizowanych obrazów kontenerów.
+* Program Visual Studio zawiera narzędzia dla kontenerów platformy Docker, które teraz obsługują Wieloetapową wieloetapowe dockerfile, co upraszcza tworzenie zoptymalizowanych obrazów kontenerów.
 * Domyślnie program Visual Studio będzie automatycznie ściągać, kompilować i uruchamiać niezbędne obrazy kontenera w tle podczas otwierania projektu obsługującego platformę Docker. Tę opcję można wyłączyć za pomocą ustawienia **Automatycznie uruchom kontenery w tle** w programie Visual Studio.
 
-## <a name="cloud-app-development-with-azure"></a>Tworzenie aplikacji w chmurze za pomocą platformy Azure
+## <a name="cloud-app-development-with-azure"></a>Programowanie aplikacji w chmurze przy użyciu platformy Azure
 
-### <a name="azure-functions-tools"></a>Narzędzia usługi Azure Functions
+### <a name="azure-functions-tools"></a>Narzędzia Azure Functions
 
-W ramach obciążenia "rozwoju platformy Azure" uwzględniliśmy narzędzia ułatwiające tworzenie funkcji platformy Azure przy użyciu wstępnie skompilowanych bibliotek klas C#. Teraz można tworzyć, uruchamiać i debugować na komputerze lokalnego tworzenia, a następnie publikować bezpośrednio na platformie Azure z programu Visual Studio.
+W ramach obciążenia "Programowanie platformy Azure" dołączono narzędzia ułatwiające tworzenie usługi Azure Functions przy użyciu wstępnie skompilowanych bibliotek klas języka C#. Teraz można kompilować, uruchamiać i debugować na lokalnym komputerze deweloperskim, a następnie publikować je bezpośrednio na platformie Azure z poziomu programu Visual Studio.
 
-Aby uzyskać więcej informacji, zobacz [narzędzia usługi Azure Functions dla programu Visual Studio](/azure/azure-functions/functions-develop-vs) strony.
+Aby uzyskać więcej informacji, zobacz stronę [Azure Functions Tools for Visual Studio](/azure/azure-functions/functions-develop-vs) .
 
-### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Debugowanie aplikacji na żywo ASP.NET przy użyciu punktów przyciągania i punktów dziennika w aplikacjach platformy Azure na żywo
+### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Debuguj aplikacje Live ASP.NET za pomocą punkty przyciągania i punkty rejestrowania w aplikacjach na żywo platformy Azure
 
-**Nowość w 15.5:** Debuger migawki wykonuje migawkę aplikacji w produkcji, gdy kod, który cię interesuje wykonuje. Aby poinstruować debugera, aby zrobić migawkę, należy ustawić punkty przyciągania i punkty dziennika w kodzie. Debuger pozwala zobaczyć dokładnie, co poszło nie tak, bez wpływu na ruch aplikacji produkcyjnej. Debuger migawek może pomóc znacznie skrócić czas potrzebny do rozwiązania problemów występujących w środowiskach produkcyjnych.
+**Nowość w 15,5**: Snapshot Debugger wykonuje migawkę aplikacji w środowisku produkcyjnym, gdy interesujący kod jest wykonywany. Aby polecić debugerowi wykonanie migawki, należy ustawić punkty przyciągania i punkty rejestrowania w kodzie. Debuger pozwala zobaczyć dokładnie, co poszło źle, bez wpływu na ruch aplikacji produkcyjnej. Snapshot Debugger może pomóc znacząco skrócić czas potrzebny do rozwiązania problemów występujących w środowiskach produkcyjnych.
 
-Kolekcja migawek jest dostępna dla następujących aplikacji sieci web uruchomionych w usłudze Azure App Service:
+Kolekcja migawek jest dostępna dla następujących aplikacji sieci Web działających w Azure App Service:
 
-* ASP.NET aplikacji uruchomionych w programie .NET Framework 4.6.1 lub nowszym.
-* ASP.NET aplikacje Core działające w systemie .NET Core 2.0 lub nowszym w systemie Windows.
+* ASP.NET aplikacje działające w .NET Framework 4.6.1 lub nowszych.
+* ASP.NET Core aplikacje działające na platformie .NET Core 2,0 lub nowszej w systemie Windows.
 
-Aby uzyskać więcej informacji, zobacz [Debugowanie aplikacji na żywo ASP.NET przy użyciu punktów przyciągania i punktów dziennika](../debugger/debug-live-azure-applications.md).
+Aby uzyskać więcej informacji, zobacz [debugowanie live ASP.NET Apps przy użyciu punkty przyciągania i punkty rejestrowania](../debugger/debug-live-azure-applications.md).
 
 ## <a name="windows-app-development"></a>Tworzenie aplikacji na komputer z systemem Windows
 
 ### <a name="universal-windows-platform"></a>Platforma uniwersalna systemu Windows
 
-Uniwersalna platforma systemu Windows (UWP) to platforma aplikacji dla systemu Windows 10. Możesz tworzyć aplikacje dla platformy uniwersalnej systemu Windows za pomocą jednego zestawu interfejsu &ndash; API, jednego pakietu aplikacji i jednego sklepu, aby dotrzeć do wszystkich urządzeń z systemem Windows 10 PC, tablet, telefon, Xbox, HoloLens, Surface Hub i innych. Platforma uniwersalna systemuśpicia obsługuje różne rozmiary ekranu i różne modele interakcji, niezależnie od tego, czy są to dotyk, mysz i klawiatura, kontroler gier czy pióro. Sednem aplikacji platformy uniwersalnej systemu Windows jest pomysł, że użytkownicy chcą, aby ich środowiska były mobilne na wszystkich swoich urządzeniach i że chcą używać dowolnego urządzenia, które jest najwygodniejsze lub produktywne do wykonywanego zadania.
+Platforma uniwersalna systemu Windows (platformy UWP) to platforma aplikacji dla systemu Windows 10. Aplikacje dla platformy UWP można opracowywać przy użyciu tylko jednego zestawu interfejsów API, jednego pakietu aplikacji i jednego sklepu, aby uzyskać dostęp do wszystkich urządzeń z systemem Windows 10 &ndash; , tabletów, telefonów, Xbox, Hololens, Surface Hub i innych. Program platformy UWP obsługuje różne rozmiary ekranu i różne modele interakcji, bez względu na to, czy jest to dotyk, mysz, klawiatura, kontroler gier czy pióro. Na początku aplikacji platformy UWP jest dobrym pomysłem, że użytkownicy chcą, aby ich środowiska były mobilne na wszystkich swoich urządzeniach, oraz że chcą korzystać z każdego urządzenia, które jest najbardziej wygodne lub produktywne dla tego zadania.
 
 ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp_coreextensions.png)
 
-Wybierz preferowany&mdash;język programowania z języka C#, Visual&mdash;Basic, C++ lub JavaScript, aby utworzyć aplikację uniwersalną platformy systemu Windows dla urządzeń z systemem Windows 10. Visual Studio 2017 udostępnia szablon aplikacji platformy uniwersalnej systemu Windows dla każdego języka, który umożliwia utworzenie jednego projektu dla wszystkich urządzeń. Po zakończeniu pracy można utworzyć pakiet aplikacji i przesłać go do sklepu Microsoft Store z poziomu programu Visual Studio, aby uzyskać aplikację do klientów na dowolnym urządzeniu z systemem Windows 10.
+Wybierz preferowany język programowania &mdash; w języku C#, Visual Basic, C++ lub JavaScript, &mdash; Aby utworzyć aplikację platforma uniwersalna systemu Windows dla urządzeń z systemem Windows 10. Program Visual Studio 2017 udostępnia szablon aplikacji platformy UWP dla każdego języka, który umożliwia tworzenie pojedynczego projektu dla wszystkich urządzeń. Po zakończeniu pracy możesz utworzyć pakiet aplikacji i przesłać go do Microsoft Store z poziomu programu Visual Studio, aby uzyskać dostęp do aplikacji klientom na dowolnym urządzeniu z systemem Windows 10.
 
-**Nowość w wersji 15.5**: Visual Studio 2017 w wersji 15.5 zapewnia najlepszą obsługę pakietu SDK aktualizacji Windows 10 Fall Creators Update (10.0.16299.0). Aktualizacja Windows 10 Fall Creators Update zawiera również wiele ulepszeń dla programistów platformy uniwersalnej systemu Windows. Oto niektóre z największych zmian: 
+**Nowość w 15,5**: program Visual Studio 2017 w wersji 15,5 zapewnia najlepszą obsługę zestawu SDK aktualizacji systemu Windows 10 dla twórców (10.0.16299.0). Aktualizacja systemu Windows 10 dla twórców oferuje także wiele ulepszeń dla deweloperów platformy UWP. Poniżej przedstawiono niektóre największe zmiany: 
 
-* **Obsługa platformy .NET Standard 2.0**<br/>Oprócz usprawnienia wdrażania aplikacji, Windows 10 Fall Creators Update jest pierwszą wersją systemu Windows 10, która zapewnia obsługę .NET Standard 2.0. Skutecznie [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) jest implementacją odwołania biblioteki klas podstawowych, które można zaimplementować dowolnej platformy .NET. Celem programu .NET Standard jest ułatwienie deweloperom platformy .NET udostępniania kodu na dowolnej platformie platformy .NET, nad którą chcą pracować.
-* **Najlepsze zarówno platformy uniwersalne systemu jak uwp i Win32**<br/>Ulepszyliśmy platformę Windows 10 za pomocą [mostka pulpitu,](/windows/uwp/porting/desktop-to-uwp-root) aby system Windows 10 był lepszy dla wszystkich programistów platformy .NET, niezależnie od tego, czy ich obecne skupienie się na platformie UWP, WPF, Windows Forms czy Xamarin. Dzięki nowemu typowi projektu pakowania aplikacji w programie Visual Studio 2017 w wersji 15.5 można tworzyć pakiety aplikacji systemu Windows dla projektów WPF lub Formularze systemu Windows, tak jak w przypadku projektów platformy uniwersalnej systemu Windows. Po spakowaniu aplikacji otrzymasz wszystkie korzyści związane z wdrażaniem aplikacji systemu Windows 10 i możesz rozpowszechniać za pośrednictwem sklepu Microsoft Store (dla aplikacji konsumenckich) lub sklepu Microsoft Store dla firm i edukacji. Ponieważ spakowane aplikacje mają dostęp zarówno do pełnej powierzchni interfejsu API platformy uniwersalnej systemu Windows, jak i interfejsów API systemu Win32 na komputerze, można teraz stopniowo modernizować aplikacje WPF i formularzy systemu Windows za pomocą interfejsów API systemu Windows i funkcji systemu Windows 10. Ponadto można uwzględnić składniki Win32 w aplikacjach platformy uniwersalnej systemu Windows, które zapalają się na pulpicie ze wszystkimi funkcjami usługi Win32.
+* **Obsługa .NET Standard 2,0**<br/>Oprócz usprawnionego wdrażania aplikacji Aktualizacja systemu Windows 10 dla twórców jest pierwszą wersją systemu Windows 10, aby zapewnić obsługę .NET Standard 2,0. Efektywnie, [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) jest implementacją referencyjną biblioteki klas podstawowych, którą można zaimplementować na dowolnej platformie .NET. Celem .NET Standard jest ułatwienie deweloperom platformy .NET udostępniania kodu na dowolnej platformie .NET, w której pracują.
+* **Najlepsze zarówno platformy UWP, jak i Win32**<br/>Ulepszono platformę Windows 10 za pomocą [mostka Desktop](/windows/uwp/porting/desktop-to-uwp-root) , aby zapewnić lepszą obsługę systemu Windows 10 dla wszystkich deweloperów platformy .NET, niezależnie od tego, czy bieżący fokus to platformy UWP, WPF, Windows Forms czy Xamarin. Nowy typ projektu pakietu aplikacji w programie Visual Studio 2017 w wersji 15,5 umożliwia tworzenie pakietów aplikacji dla platformy WPF lub Windows Forms projektów, podobnie jak w przypadku projektów platformy UWP. Po spakowaniu aplikacji uzyskasz wszystkie korzyści z wdrożenia aplikacji dla systemu Windows 10 i możesz skorzystać z opcji dystrybucji za pośrednictwem Microsoft Store (dla aplikacji konsumenckich) lub Microsoft Store dla firm i edukacji. Ponieważ spakowane aplikacje mają dostęp do całej powierzchni interfejsu API platformy UWP i interfejsów API Win32 na komputerze stacjonarnym, można teraz przeprowadzić modernizację środowiska WPF i Windows Forms aplikacji stopniowo przy użyciu interfejsów API platformy UWP i funkcji systemu Windows 10. Ponadto możesz dołączać składniki Win32 do aplikacji platformy UWP, które są widoczne na pulpicie ze wszystkimi funkcjami Win32.
 
-Aby uzyskać więcej informacji na temat platformy uniwersalnej systemu Windows, zobacz stronę [Tworzenie aplikacji dla platformy uniwersalnej systemu Windows (PLATFORMY UNIWERSALNEJ SYSTEMU Windows).](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)
+Aby uzyskać więcej informacji na temat platformy UWP, zobacz stronę [opracowywanie aplikacji dla platforma uniwersalna systemu Windows (platformy UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) .
 
 ## <a name="mobile-app-development"></a>Tworzenie aplikacji mobilnych
 
 ### <a name="xamarin"></a>Xamarin
 
-W ramach obciążenia "Mobile development with .NET" deweloperzy zaznajomieni z C#, .NET i Visual Studio mogą dostarczać natywne aplikacje dla systemów Android, iOS i Windows przy użyciu platformy Xamarin. Deweloperzy mogą cieszyć się taką samą mocą i wydajnością podczas pracy z platformą Xamarin&mdash;dla aplikacji mobilnych, w tym zdalnego debugowania na urządzeniach z systemem Android, iOS i Windows bez konieczności uczenia się natywnych języków kodowania, takich jak Objective-C lub Java.
+W ramach obciążenia "Programowanie aplikacji mobilnych za pomocą platformy .NET" deweloperzy znający Języki C#, .NET i Visual Studio mogą dostarczać natywne aplikacje dla systemów Android, iOS i Windows przy użyciu platformy Xamarin. Deweloperzy mogą korzystać z tych samych możliwości i wydajności podczas pracy z platformą Xamarin dla aplikacji mobilnych, w tym do zdalnego debugowania na urządzeniach z systemami Android, iOS i Windows &mdash; bez konieczności uczenia natywnych języków kodowania, takich jak obiektyw-C lub Java.
 
-Aby uzyskać więcej informacji, zobacz [Visual Studio i Xamarin](/xamarin/) strony.
+Aby uzyskać więcej informacji, zobacz stronę [Visual Studio i Xamarin](/xamarin/) .
 
 ### <a name="entitlements-editor"></a>Edytor uprawnień
 
-**Nowość w 15.3**: Dla potrzeb programistów systemu iOS dodaliśmy autonomiczny edytor uprawnień. Zawiera przyjazny dla użytkownika interfejs użytkownika, który można łatwo przeglądać. Aby go uruchomić, kliknij dwukrotnie plik *entitlements.plist.*
+**Nowość w 15,3**: dla potrzeb deweloperskich dla systemu iOS dodaliśmy Edytor uprawnień autonomicznych. Zawiera przyjazny dla użytkownika interfejs użytkownika, który można łatwo przeglądać. Aby go uruchomić, kliknij dwukrotnie plik *uprawnień. plist* .
 
 ![Edytor uprawnień dla platformy Xamarin](media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
-**Nowość w wersji 15.4:** Xamarin Live umożliwia deweloperom ciągłe wdrażanie, testowanie i debugowanie aplikacji bezpośrednio na urządzeniach z systemami iOS i Android. Po pobraniu programu Xamarin Live Player&mdash;dostępnego&mdash;w sklepie App Store lub Google Play możesz sparować urządzenie z programem Visual Studio i zrewolucjonizować sposób tworzenia aplikacji mobilnych. Ta funkcja jest teraz dostępna w programie Visual Studio i można ją włączyć, przechodząc do**opcji** >  **Narzędzia** > **Xamarin** > **Inne** > **Włącz Xamarin Live Player**.
+**Nowość w 15,4**: platforma Xamarin Live umożliwia deweloperom ciągłe wdrażanie, testowanie i debugowanie swoich aplikacji bezpośrednio na urządzeniach z systemami iOS i Android. Po pobraniu Xamarin Live Player &mdash; dostępnych w sklepie App Store lub na Google Play można &mdash; sparować urządzenie z programem Visual Studio i zrewolucjonizować sposób tworzenia aplikacji mobilnych. Ta funkcja jest teraz zawarta w programie Visual Studio i można ją włączyć, przechodząc do opcji **Narzędzia** > **Opcje** > **Xamarin** > **Inne** > **Włącz Xamarin Live Player**.
 
-![Animacja pary, wdrażania i edycji na żywo w trybach programu Xamarin Live Player](media/xamarinliveplayer.gif)
+![Animacja Xamarin Live Player para, wdrożenie i tryby edycji na żywo](media/xamarinliveplayer.gif)
 
-### <a name="support-for-google-android-emulator"></a>Obsługa emulatora Google Android
+### <a name="support-for-google-android-emulator"></a>Obsługa usługi Google Emulator systemu Android
 
-**Nowość w wersji 15.8**: Korzystając z funkcji Hyper-V, teraz możesz używać emulatora Androida Google obok innych technologii opartych na technologii Hyper-V, takich jak maszyny wirtualne Hyper-V, narzędzia Docker, emulator HoloLens i inne. (Ta funkcja wymaga aktualizacji systemu Windows 10 z kwietnia 2018 r. lub nowszej).
+**Nowość w 15,8: w**przypadku korzystania z funkcji Hyper-v można teraz używać usługi firmy Google emulator systemu Android obok innych technologii opartych na funkcji Hyper-v, takich jak maszyny wirtualne funkcji Hyper-v, narzędzia platformy Docker, Emulator Hololens i inne. (Ta funkcja wymaga aktualizacji systemu Windows 10 kwiecień 2018 lub nowszej).
 
-![Emulator Google Android na technologiach Hyper-V](media/xamarin-hyperv-android-emulator.png)
+![Emulator systemu Google Android w technologiach funkcji Hyper-V](media/xamarin-hyperv-android-emulator.png)
 
-#### <a name="xamarinandroid-designer-split-view-editor"></a>Xamarin.Android Designer edytor widoku podzielonego
+#### <a name="xamarinandroid-designer-split-view-editor"></a>Xamarin. Android Designer — Edytor Split-View
 
-Również **nowy w 15.8:** Zrobiliśmy znaczące ulepszenia do doświadczenia projektanta dla Xamarin.Android. Wyróżnione to nowy edytor widoku podzielonego, który umożliwia tworzenie, edytowanie i wyświetlanie podglądu układów w tym samym czasie.
+**Nowość w 15,8**: wprowadziliśmy znaczne ulepszenia środowiska projektanta dla platformy Xamarin. Android. Wyróżnienie jest nowym edytorem podzielonym widoku, który umożliwia tworzenie, edytowanie i Podgląd układów w tym samym czasie.
 
-![Edytor widoku podzielonego Xamarin.Adroid Designer](media/android-designer-split-view.png)
+![Edytor zestawu Split-View projektanta platformy Xamarin. Adroid](media/android-designer-split-view.png)
 
-Aby uzyskać więcej informacji, zobacz [Przyspieszanie sprzętowe w celu uzyskania wydajności emulatora](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)
+Aby uzyskać więcej informacji, zobacz [przyspieszanie sprzętowe dla wydajności emulatora](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-**Nowość w wersji 15.5:** Visual Studio App Center,&mdash;która jest teraz ogólnie&mdash;dostępna dla aplikacji android, iOS, macOS i Windows, ma wszystko, czego potrzebujesz do zarządzania cyklem życia aplikacji, w tym automatyczne kompilacje, testowanie na rzeczywistych urządzeniach w chmurze, dystrybucja do testerów wersji beta i sklepów z aplikacjami oraz monitorowanie rzeczywistego użycia za pomocą danych dotyczących awarii i analiz. Aplikacje napisane w językach Objective-C, Swift, Java, C#, Xamarin i React Native są obsługiwane we wszystkich funkcjach.
+**Nowość w 15,5**: Visual Studio App Center, &mdash; która jest teraz ogólnie dostępna dla aplikacji dla systemów Android, iOS, macOS i Windows, &mdash; ma wszystko, czego potrzebujesz, aby zarządzać cyklem życia aplikacji, w tym zautomatyzowanymi kompilacjami, testowaniem rzeczywistych urządzeń w chmurze, dystrybucją do testerów wersji beta i sklepów z aplikacjami oraz monitorować rzeczywiste użycie za pomocą danych o awarii i analizie. Aplikacje, które są zapisywane w języku "zamierzenia-C", Swift, Java, C#, Xamarin i reagują natywną, są obsługiwane we wszystkich funkcjach.
 
-  ![Środowisko testowe centrum aplikacji programu Visual Studio](media/app-center-test-env.png)
+  ![Środowisko testowe Visual Studio App Center](media/app-center-test-env.png)
 
-Aby uzyskać więcej informacji, zobacz [Wprowadzenie Centrum aplikacji: tworzenie, testowanie, rozpowszechnianie i monitorowanie aplikacji w blogu w chmurze.](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/)
+Aby uzyskać więcej informacji, zobacz [wprowadzenie App Center: kompilowanie, testowanie, dystrybuowanie i monitorowanie aplikacji w blogu w chmurze](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) .
 
-## <a name="cross-platform-development"></a>Tworzenie aplikacji wieloplatformowych
+## <a name="cross-platform-development"></a>Tworzenie aplikacji dla różnych platform
 
-### <a name="redgate-data-tools"></a>Narzędzia do przekazywania danych
+### <a name="redgate-data-tools"></a> Redgate Data Tools
 
-Aby rozszerzyć możliwości Programu DevOps na tworzenie bazy danych programu SQL Server, narzędzia Redgate Data Tools są teraz dostępne w programie Visual Studio.
+Aby zwiększyć możliwości DevOps na SQL Server potrzeby tworzenia baz danych, narzędzia danych Redgate są teraz dostępne w programie Visual Studio.
 
-Dołączone do programu Visual Studio 2017 Enterprise:
+Uwzględniono w programie Visual Studio 2017 Enterprise:
 
-* [Redgate ReadyRoll Core](https://www.red-gate.com/products/sql-development/sql-change-automation/?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) pomaga tworzyć skrypty migracji, zarządzać zmianami bazy danych za pomocą kontroli źródła i bezpiecznie zautomatyzować wdrożenia zmian bazy danych programu SQL Server wraz ze zmianami aplikacji.
-* [Redgate SQL Prompt Core](https://www.red-gate.com/products/sql-development/sql-prompt/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) pomaga pisać SQL szybciej i dokładniej za pomocą inteligentnego uzupełniania kodu. Dodatek SQL Prompt pozwala automatycznie uzupełnić bazę danych, obiekty systemowe oraz słowa kluczowe i oferuje sugestie dla kolumn podczas wpisywania. Powoduje to czystsze kodu i mniej błędów, ponieważ nie trzeba pamiętać każdej nazwy kolumny lub aliasu.
+* [Redgate ReadyRoll Core](https://www.red-gate.com/products/sql-development/sql-change-automation/?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) ułatwia tworzenie skryptów migracji, zarządzanie zmianami bazy danych przy użyciu kontroli źródła i bezpieczne Automatyzowanie wdrożeń SQL Server zmian w bazie danych wraz ze zmianami aplikacji.
+* Usługa [Redgate w wierszu polecenia SQL](https://www.red-gate.com/products/sql-development/sql-prompt/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) ułatwia szybsze i precyzyjne pisanie kodu SQL za pomocą inteligentnego uzupełniania kodów. Dodatek SQL Prompt pozwala automatycznie uzupełnić bazę danych, obiekty systemowe oraz słowa kluczowe i oferuje sugestie dla kolumn podczas wpisywania. Powoduje to niewielką liczbę błędów, ponieważ nie trzeba pamiętać każdej nazwy kolumny lub aliasu.
 
-Zawiera wszystkie wersje programu Visual Studio 2017:
+Uwzględnione we wszystkich wersjach programu Visual Studio 2017:
 
-* [Redgate SQL Search](https://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) zwiększa produktywność, pomagając szybko znaleźć fragmenty SQL i obiekty w wielu bazach danych.
+* [Redgate Search SQL](https://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) zwiększa produktywność, pomagając szybko znaleźć fragmenty i obiekty SQL w wielu bazach danych.
 
-Aby dowiedzieć się więcej, zobacz [Redgate Data Tools w programie Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/) wpis w blogu.
+Aby dowiedzieć się więcej, zobacz wpis w blogu [Redgate Data Tools in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/) .
 
 ### <a name="net-core"></a>.NET Core
 
-.NET Core jest implementacją standardu .NET ogólnego przeznaczenia, modułowego, wieloplatformowego i open source i zawiera wiele tych samych interfejsów API co program .NET Framework.
+.NET Core to implementacja ogólna, modularna, międzyplatformowa i typu open source .NET Standard i zawiera wiele z tych samych interfejsów API, co .NET Framework.
 
-Platforma .NET Core składa się z kilku składników, które obejmują kompilatory zarządzane, środowisko wykonawcze, biblioteki klas podstawowych i wiele modeli aplikacji, takich jak ASP.NET Core. Program .NET Core obsługuje trzy główne systemy operacyjne: Windows, Linux i macOS. Można użyć programu .NET Core w scenariuszach urządzenia, chmury i osadzonych/IoT.
+Platforma .NET Core zawiera kilka składników, takich jak zarządzane kompilatory, środowisko uruchomieniowe, biblioteki klas podstawowych i liczne modele aplikacji, takie jak ASP.NET Core. Platforma .NET Core obsługuje trzy główne systemy operacyjne: Windows, Linux i macOS. Można używać platformy .NET Core w scenariuszach dotyczących urządzeń, chmury i osadzonych/IoT.
 
-I teraz zawiera obsługę platformy Docker.
+Teraz zawiera również obsługę platformy Docker.
 
-**Nowość w wersji 15.3**: Visual Studio 2017 w wersji 15.3 obsługuje program .NET Core 2.0. Korzystanie z platformy .NET Core 2.0 wymaga oddzielnego pobierania i instalowania zestawu .NET Core 2.0 SDK.
+**Nowość w 15,3**: program Visual Studio 2017 w wersji 15,3 obsługuje programowanie na platformie .net Core 2,0. Korzystanie z programu .NET Core 2,0 wymaga oddzielnego pobierania i instalowania zestawu SDK programu .NET Core 2,0.
 
-Aby uzyskać więcej informacji, zobacz stronę [przewodnika .NET Core.](/dotnet/core/index)
+Aby uzyskać więcej informacji, zobacz stronę [przewodnika dotyczącego platformy .NET Core](/dotnet/core/index) .
 
-## <a name="games-development"></a>Rozwój gier
+## <a name="games-development"></a>Programowanie gier
 
 ### <a name="visual-studio-tools-for-unity"></a>Narzędzia Visual Studio Tools for Unity
 
-W ramach zadania "Tworzenie gier dla jedności" uwzględniliśmy narzędzia ułatwiające tworzenie wieloplatformowych gier 2D i 3D oraz interaktywnych treści. Twórz raz i publikuj na 21 platformach, w tym na wszystkich platformach mobilnych, WebGL, Mac, PC i Linux, w sieci Web lub konsolach za pomocą programu Visual Studio 2017 i Unity 5.6.
+W ramach obciążenia "opracowywanie gier dla środowiska Unity" dołączono narzędzia ułatwiające tworzenie międzyplatformowych aplikacji do tworzenia gier 2D i 3W oraz zawartości interaktywnej. Twórz raz i Publikuj na 21 platformach, w tym wszystkie platformy mobilne, komputery z systemami WebGL, Mac, komputery i Linux, sieci Web lub konsole przy użyciu programu Visual Studio 2017 i aparatu Unity 5,6.
 
-Aby uzyskać więcej informacji, zobacz Visual [Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) strony.
+Aby uzyskać więcej informacji, zobacz stronę [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) .
 
-## <a name="ai-development"></a>Rozwój SI
+## <a name="ai-development"></a>Programowanie AI
 
-### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
+### <a name="visual-studio-tools-for-ai"></a>Narzędzia Visual Studio Tools for AI
 
-**Nowość w wersji 15.5**: Wykorzystaj funkcje zwiększające produktywność programu Visual Studio, aby przyspieszyć innowacje w dziedzinie si. Użyj wbudowanych funkcji edytora kodu, takich jak wyróżnianie składni, IntelliSense i automatyczne formatowanie tekstu. Aplikację uczenia głębokiego można interaktywnie przetestować w środowisku lokalnym przy użyciu debugowania krok po kroku na zmiennych lokalnych i modeli.
+**Nowość w 15,5**: Korzystaj z funkcji produktywności programu Visual Studio, aby przyspieszyć innowacje AI. Korzystaj z wbudowanych funkcji edytora kodu, takich jak wyróżnianie składni, IntelliSense i formatowanie tekstu. Możesz interaktywnie przetestować aplikację głębokiego uczenia w środowisku lokalnym, używając debugowania krok po kroku dla zmiennych lokalnych i modeli.
 
-  ![Ide uczenia głębokiego](../ai/media/about/ide.png)
+  ![Środowisko IDE uczenia głębokiego](../ai/media/about/ide.png)
 
-Aby uzyskać więcej informacji, zobacz visual [studio narzędzia dla ai](../ai/about-ai-tools.md) stronie.
+Aby uzyskać więcej informacji, zobacz stronę [Visual Studio Tools for AI](../ai/about-ai-tools.md) .
 
 ## <a name="whats-next"></a>Co dalej
 
-Możemy aktualizować Visual Studio 2017 często z nowymi funkcjami, które mogą uczynić swoje środowisko programistyczne jeszcze lepiej. Oto podsumowanie niektórych z naszych najbardziej znaczących aktualizacji, które są w wersji zapoznawczej eksperymentalnej:
+Często aktualizujemy program Visual Studio 2017 dzięki nowym funkcjom, które mogą usprawnić pracę programistyczną. Oto podsumowanie niektórych z naszych najbardziej istotnych aktualizacji, które są w wersji eksperymentalnej:
 
-* **[Udostępnianie na żywo](https://visualstudio.microsoft.com/services/live-share/)**, nowe narzędzie, które pozwala na udostępnianie bazy kodu i jego kontekst z kolegą z zespołu i uzyskać natychmiastową dwukierunkową współpracę bezpośrednio z poziomu programu Visual Studio. Dzięki usłudze Live Share członek zespołu może czytać, nawigować, edytować i debugować projekt, który został mu udostępniony, i robić to bezproblemowo i bezpiecznie.<br><br>Aby uzyskać więcej informacji, zobacz często zadawane [pytania dotyczące udostępniania na żywo](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, nowa funkcja, która usprawnia tworzenie oprogramowania za pomocą AI, aby zapewnić lepsze uzupełnianie kodu kontekstowe, przewodnik programistów do kodu do wzorców i stylów ich zespołu, znaleźć trudne do złapania problemy z kodem i skupić przeglądy kodu na obszarach, które naprawdę mają znaczenie. <br><br>Aby uzyskać więcej informacji, zobacz często zadawane pytania [dotyczące intellicode](/visualstudio/intellicode/faq).
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, nowe narzędzie, które umożliwia udostępnianie bazy kodu i jej kontekstu członkom zespołu i szybkie współpracę dwukierunkową bezpośrednio z poziomu programu Visual Studio. Za pomocą Live Share, członkowie zespołu mogą odczytywać, nawigować, edytować i debugować projekt, który został Ci udostępniony, a tym samym bezproblemowo i bezpieczniej.<br><br>Aby uzyskać więcej informacji, zobacz [Live Share często zadawanych pytań](/visualstudio/liveshare/faq).<br><br>
+* **[Rozszerzenia intellicode](https://visualstudio.microsoft.com/services/intellicode/)**, Nowa funkcja, która zwiększa rozwój oprogramowania przy użyciu systemu AI, aby zapewnić lepsze uzupełnianie kodu z obsługą kontekstu, ułatwić deweloperom wykonywanie kodu wzorców i stylów ich zespołu, znajdowanie trudnych do przechwycenia problemów z kodem i skupienie się na przeglądach kodu na obszarach, które naprawdę ważne. <br><br>Aby uzyskać więcej informacji, zobacz [często zadawane pytania](/visualstudio/intellicode/faq)dotyczące usługi rozszerzenia intellicode.
 
-Chcesz dowiedzieć się więcej o tym, co jeszcze znajduje się w pracach dla programu Visual Studio 2017? Zobacz stronę [mapy drogowej programu Visual Studio.](/visualstudio/productinfo/vs2018-roadmap)
+Chcesz dowiedzieć się więcej na temat tego, co jeszcze znajduje się w programie Works dla programu Visual Studio 2017? Zobacz stronę z [planem programu Visual Studio](/visualstudio/productinfo/vs2018-roadmap) .
 
-I nie zapomnij sprawdzić naszą najnowszą wersję, [Visual Studio 2019](whats-new-visual-studio-2019.md).
+Nie zapomnij zaewidencjonować naszej najnowszej wersji [programu Visual Studio 2019](whats-new-visual-studio-2019.md).
 
 ## <a name="contact-us"></a>Skontaktuj się z nami
 
-Dlaczego warto wysyłać opinie do zespołu programu Visual Studio? Ponieważ traktujemy opinie klientów poważnie. To napędza wiele z tego, co robimy.
+Dlaczego warto wysłać opinię do zespołu programu Visual Studio? Ze względu na to, że potraktujemy Opinie klientów. To wszystko, co robimy.
 
-Jeśli chcesz przedstawić sugestię dotyczącą sposobu, w jaki możemy ulepszyć program Visual Studio lub dowiedzieć się więcej o opcjach pomocy technicznej dotyczącej produktu, zobacz stronę [Wyślij nam opinię.](feedback-options.md)
+Jeśli chcesz dowiedzieć się, jak możemy ulepszyć program Visual Studio, lub Dowiedz się więcej o opcjach pomocy technicznej, zobacz stronę [Prześlij nam opinię](feedback-options.md) .
 
 ### <a name="report-a-problem"></a>zgłaszanie problemu
 
-Czasami wiadomość nie wystarczy, aby przekazać pełny wpływ napotkanego problemu. Jeśli wystąpi problem z zawieszaniem się, awarią lub innym problemem z wydajnością, możesz łatwo udostępnić nam kroki ponownego tworzenia i pliki pomocnicze (takie jak zrzuty ekranu oraz pliki śledzenia i zrzutu sterty) za pomocą narzędzia **Zgłoś problem.** Aby uzyskać więcej informacji na temat korzystania z tego narzędzia, zobacz [jak zgłosić problem](how-to-report-a-problem-with-visual-studio.md) strony.
+Czasami komunikat jest zbyt mały, aby przekazać pełny wpływ napotkanego problemu. Jeśli wystąpi problem polegający na tym, że program Visual Studio przestaje odpowiadać, ulega awarii lub innym problemom z wydajnością, można łatwo udostępniać Odtwórz kroki i pliki pomocnicze (takie jak zrzuty ekranu, pliki śledzenia i Zrzuty sterty) za pomocą narzędzia **Zgłoś problem** . Aby uzyskać więcej informacji na temat korzystania z tego narzędzia, zobacz stronę [Jak zgłosić problem](how-to-report-a-problem-with-visual-studio.md) .
 
 ## <a name="see-also"></a>Zobacz też
 
 * [Informacje o wersji programu Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
 * [Co nowego w zestawie Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
-* [Co nowego w języku Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [Co nowego w Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Co nowego w języku C#](/dotnet/csharp/whats-new)
 * [Co nowego w Team Foundation Server](/azure/devops/server/whats-new)
-* [Co nowego w programie Visual Studio dla komputerów Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Co nowego w Visual Studio dla komputerów Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Co nowego w programie Visual Studio 2019](whats-new-visual-studio-2019.md)

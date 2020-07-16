@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350774"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386254"
 ---
 # <a name="debug-64-bit-applications"></a>Debugowanie aplikacji 64-bitowych
 Można debugować aplikację 64-bitową uruchomioną na komputerze lokalnym lub na komputerze zdalnym.
@@ -50,7 +50,7 @@ Można debugować aplikację 64-bitową uruchomioną na komputerze lokalnym lub 
 
 - Na komputerze jest zainstalowane oprogramowanie zabezpieczeń sieci, które spowodowało, że stos sieciowy jest niezawodny i porzucane są pakiety przechodzące przez hosty localhost. Spróbuj wyłączyć wszystkie oprogramowanie zabezpieczeń sieci i sprawdź, czy to rozwiązanie go rozwiązuje. Jeśli tak, zgłoś dostawcę oprogramowania zabezpieczeń sieci, że oprogramowanie zakłóca ruch z hosta lokalnego.
 
-- Wystąpił problem z zawieszaniem lub wydajnością w programie Visual Studio. Jeśli problem występuje regularnie, można zbierać zrzuty programu Visual Studio (devenv.exe) i procesu roboczego (msvsmon.exe) i wysyłać je do firmy Microsoft. Aby uzyskać informacje o raportowaniu problemu, zobacz artykuł [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+- W trakcie działania programu Visual Studio przestaje odpowiadać lub Wystąpił inny problem z wydajnością. Jeśli problem występuje regularnie, można zbierać zrzuty programu Visual Studio (devenv.exe) i procesu roboczego (msvsmon.exe) i wysyłać je do firmy Microsoft. Aby uzyskać informacje o raportowaniu problemu, zobacz artykuł [Jak zgłosić problem w programie Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz też
 

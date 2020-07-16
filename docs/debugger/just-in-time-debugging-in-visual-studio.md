@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903868"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386124"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Wyłączanie debugera just in time
 
@@ -32,15 +32,15 @@ Jeśli nie masz zainstalowanego programu Visual Studio, możesz zapobiec debugow
 
 - Jeśli próbujesz uruchomić aplikację sieci Web, wyłącz debugowanie skryptów:
 
-  W **Panelu sterowania** systemu Windows ** > sieci i Internetu** > **Opcje internetowe**, wybierz opcję **Wyłącz debugowanie skryptów (Internet Explorer)** i **Wyłącz debugowanie skryptów (inne)** . Dokładne kroki i ustawienia zależą od używanej wersji systemu Windows i przeglądarki.
+  W oknie **Control Panel**  >  **Opcje sieciowe i internetowe**w panelu sterowania systemu Windows  >  **Internet Options**wybierz opcję **Wyłącz debugowanie skryptów (Internet Explorer)** i **Wyłącz debugowanie skryptów (inne)**. Dokładne kroki i ustawienia zależą od używanej wersji systemu Windows i przeglądarki.
 
   ![Opcje internetowe w trybie JIT](../debugger/media/jitinternetoptions.png "Opcje internetowe w trybie JIT")
 
 - Jeśli przechowujesz aplikację sieci Web ASP.NET w usługach IIS, wyłącz debugowanie po stronie serwera:
 
   1. W obszarze **Widok funkcji**Menedżera usług IIS w **sekcji ASP.NET** kliknij dwukrotnie pozycję **kompilacja platformy .NET**lub zaznacz ją, a następnie wybierz pozycję **Otwórz funkcję** w okienku **Akcje** .
-  1. W obszarze **zachowanie** > **Debuguj**wybierz **wartość FAŁSZ**. Kroki różnią się w przypadku starszych wersji usług IIS.
+  1. W **Behavior**obszarze  >  **debugowanie**zachowania wybierz opcję **Fałsz**. Kroki różnią się w przypadku starszych wersji usług IIS.
 
 Po wyłączeniu debugowania just-in-Time aplikacja może być w stanie obsłużyć błąd i działać normalnie.
 
-Jeśli aplikacja nadal ma nieobsługiwany błąd, może zostać wyświetlony komunikat o błędzie lub aplikacja może ulec awarii lub zawiesić się. Aplikacja nie będzie działać normalnie do czasu naprawienia błędu. Możesz spróbować skontaktować się z właścicielem aplikacji i poproś o jej rozwiązanie.
+Jeśli aplikacja nadal ma nieobsługiwany błąd, może zostać wyświetlony komunikat o błędzie lub aplikacja może ulec awarii lub przestać odpowiadać. Aplikacja nie będzie działać normalnie do czasu naprawienia błędu. Możesz spróbować skontaktować się z właścicielem aplikacji i poproś o jej rozwiązanie.

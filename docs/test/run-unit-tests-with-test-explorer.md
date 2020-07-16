@@ -1,7 +1,7 @@
 ---
-title: Uruchamianie i debugowanie testów jednostkowych za pomocą Eksploratora testów
-description: Dowiedz się, jak uruchamiać testy za pomocą Eksploratora testów w programie Visual Studio. W tym temacie opisano sposób włączania automatycznych przebiegów testów po kompilacji, wyświetlania wyników testów, grupowania i filtrowania listy testów, tworzenia list odtwarzania, debugowania testów i używania skrótów testowych.
-ms.date: 07/29/2019
+title: Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
+description: Dowiedz się, jak uruchamiać testy za pomocą Eksploratora testów w programie Visual Studio. W tym temacie opisano sposób włączania automatycznych przebiegów testów po kompilacji, wyświetlania wyników testów, grupowania i filtrowania listy testów, tworzenia list odtwarzania i używania skrótów testowych.
+ms.date: 07/14/2020
 ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,24 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35bd6f26b56ea7c3a1d578e5721504a91f60b74c
-ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
+ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86156862"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386644"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
-Użyj Eksploratora testów do uruchomienia testów jednostkowych z programu Visual Studio lub projektów testów jednostkowych innych firm. Za pomocą Eksploratora testów można także grupować testy w kategorie, filtrować listę testów oraz tworzyć, zapisywać i uruchamiać listy odtwarzania testów. Można debugować testy i analizować wydajność testów i pokrycie kodu.
+Użyj Eksploratora testów do uruchomienia testów jednostkowych z programu Visual Studio lub projektów testów jednostkowych innych firm. Za pomocą Eksploratora testów można także grupować testy w kategorie, filtrować listę testów oraz tworzyć, zapisywać i uruchamiać listy odtwarzania testów. Możesz również analizować pokrycie kodu i [testy jednostkowe debugowania](../test/debug-unit-tests-with-test-explorer.md).
+
+**Eksplorator testów** może uruchamiać testy z wielu projektów testowych w rozwiązaniu i z klas testowych, które są częścią projektów kodu produkcyjnego. Projekty testowe mogą korzystać z różnych platform testów jednostkowych. Gdy testowy kod jest zapisywana dla platformy .NET, projekt testowy można napisać w dowolnym języku, który jest również przeznaczony dla platformy .NET, niezależnie od języka kodu docelowego. Natywne projekty kodu C/C++ muszą być testowane przy użyciu struktury testów jednostkowych języka C++.
+
+## <a name="build-your-test-project"></a>Kompilowanie projektu testowego
+
+Jeśli projekt testowy nie został jeszcze skonfigurowany w rozwiązaniu programu Visual Studio, należy najpierw utworzyć i skompilować projekt testowy.
+
+- [Wprowadzenie do testów jednostkowych (.NET)](../test/getting-started-with-unit-testing.md)
+- [Zapisz testy jednostkowe dla C/C++](writing-unit-tests-for-c-cpp.md)
 
 Program Visual Studio zawiera struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego i natywnego. Jednak w Eksploratorze testów można także uruchomić dowolną strukturę testów jednostkowych, która wdrożyła adapter programu Test Explorer. Aby uzyskać więcej informacji na temat instalowania platform testów jednostkowych innych firm, zobacz [Instalowanie platform testów jednostkowych](../test/install-third-party-unit-test-frameworks.md) innych firm
 
-**Eksplorator testów** może uruchamiać testy z wielu projektów testowych w rozwiązaniu i z klas testowych, które są częścią projektów kodu produkcyjnego. Projekty testowe mogą korzystać z różnych platform testów jednostkowych. Gdy testowy kod jest zapisywana dla platformy .NET, projekt testowy można napisać w dowolnym języku, który jest również przeznaczony dla platformy .NET, niezależnie od języka kodu docelowego. Natywne projekty kodu C/C++ muszą być testowane przy użyciu struktury testów jednostkowych języka C++. Aby uzyskać więcej informacji, zobacz [pisać testy jednostkowe dla C/C++](writing-unit-tests-for-c-cpp.md).
-
 ## <a name="run-tests-in-test-explorer"></a>Uruchom testy w Eksploratorze testów
 
-Podczas [kompilowania projektu testowego](../test/getting-started-with-unit-testing.md), testy są wyświetlane w Eksploratorze testów. Jeśli Eksplorator testów nie jest widoczny, wybierz **Testuj** w menu programu Visual Studio, wybierz pozycję **Windows**, a następnie wybierz **Eksplorator testów**.
+Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze testów. Jeśli Eksplorator testów nie jest widoczny, wybierz **Testuj** w menu programu Visual Studio, wybierz pozycję **Windows**, a następnie wybierz **Eksplorator testów**.
 
 ::: moniker range="vs-2017"
 ![Eksplorator testów jednostkowych](../test/media/ute_failedpassednotrunsummary.png)
@@ -304,23 +311,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 Na przykład `FullName:"MyClass" - FullName:"PerfTest"` zwraca wszystkie testy, które zawierają ciąg "MyClass" w nazwie, z wyjątkiem testów, które zawierają również ciąg "PerfTest" w nazwie.
 
-## <a name="debug-and-analyze-unit-tests"></a>Debuguj i Analizuj testy jednostkowe
-
-Możesz użyć Eksploratora testów, aby rozpocząć sesję debugowania dla testów. Przechodzenie przez kod za pomocą debugera programu Visual Studio bezproblemowo przeprowadzi Cię z powrotem między testami jednostkowymi i badanym projektem. Aby rozpocząć debugowanie:
-
-1. W edytorze programu Visual Studio Ustaw punkt przerwania w co najmniej jednej metodzie testowej, która ma być debugowana.
-
-    > [!NOTE]
-    > Ponieważ metody testowe mogą być uruchamiane w dowolnej kolejności, należy ustawić punkty przerwania we wszystkich metodach testowych, które mają być debugowane.
-
-2. W Eksploratorze testów wybierz metody testowe, a następnie wybierz **Debuguj wybrane testy** w menu po kliknięciu prawym przyciskiem myszy.
-
-   Aby uzyskać więcej informacji o debugerze, zobacz [debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md).
-
-### <a name="diagnose-test-method-performance-issues"></a>Diagnozuj problemy z wydajnością metody testowej
-
-Aby zdiagnozować Dlaczego metoda testowa trwa zbyt wiele czasu, wybierz metodę w Eksploratorze testów, a następnie wybierz pozycję **profil wybrany test** w menu po kliknięciu prawym przyciskiem myszy. Zobacz [raport profilowania Instrumentacji](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
-
 ### <a name="analyze-unit-test-code-coverage"></a>Analizuj pokrycie kodu testu jednostkowego
 
 Można określić ilość kodu produktu, który jest faktycznie testowany przez testy jednostkowe za pomocą narzędzia pokrycia kodu w programie Visual Studio dostępnego w wersji Visual Studio Enterprise. Można uruchomić pokrycie kodu dla wybranych testów lub wszystkich testów w rozwiązaniu.
@@ -351,7 +341,7 @@ Aby uzyskać więcej informacji, zobacz [Korzystanie z pokrycia kodu w celu okre
 
 ## <a name="test-shortcuts"></a>Skróty testowe
 
-Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przyciskiem myszy w edytorze kodu na test i wybierając polecenie **Uruchom test** lub używając domyślnych [skrótów Eksploratora testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) w programie Visual Studio. Niektóre skróty są oparte na kontekście. Oznacza to, że uruchamiają lub debugują testy w zależności od tego, gdzie znajduje się kursor w edytorze kodu. Jeśli kursor znajduje się wewnątrz metody testowej, ta metoda testowa jest uruchamiana. Jeśli kursor znajduje się na poziomie klasy, wszystkie testy w tej klasie są uruchamiane. Jest to taka sama dla poziomu przestrzeni nazw.
+Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przyciskiem myszy w edytorze kodu na test i wybierając polecenie **Uruchom test** lub używając domyślnych [skrótów Eksploratora testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) w programie Visual Studio. Niektóre skróty są oparte na kontekście. Oznacza to, że uruchamiają lub [debugują testy](../test/debug-unit-tests-with-test-explorer.md) w zależności od tego, gdzie znajduje się kursor w edytorze kodu. Jeśli kursor znajduje się wewnątrz metody testowej, ta metoda testowa jest uruchamiana. Jeśli kursor znajduje się na poziomie klasy, wszystkie testy w tej klasie są uruchamiane. Jest to taka sama dla poziomu przestrzeni nazw.
 
 |Częste polecenia| Skróty klawiaturowe|
 |-|------------------------|
@@ -366,5 +356,6 @@ Testy można uruchomić z poziomu Eksploratora testów, klikając prawym przycis
 ## <a name="see-also"></a>Zobacz też
 
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
+- [Debuguj testy jednostkowe za pomocą Eksploratora testów](../test/debug-unit-tests-with-test-explorer.md)
 - [Uruchamianie testu jednostkowego jako procesu 64-bitowego](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Eksplorator testów — często zadawane pytania](test-explorer-faq.md)

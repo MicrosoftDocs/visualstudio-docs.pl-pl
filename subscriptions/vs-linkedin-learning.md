@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z uczenia serwisu LinkedIn dostępnych w ramach subskrypcji usługi LinkedIn Premium zawartej w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904418"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387138"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa serwisu LinkedIn w ramach subskrypcji programu Visual Studio
 
@@ -36,7 +36,7 @@ Aby aktywować subskrypcję serwisu LinkedIn Premium i korzyść uczenia serwisu
 
 5. Wprowadź swoje dane osobowe, wybierz nazwę użytkownika i hasło, a następnie kliknij pozycję **Dołącz teraz**.
 
-6. Określ swój kraj i kod pocztowy, a następnie kliknij przycisk **dalej**.
+6. Określ swój kraj/region i kod pocztowy, a następnie kliknij przycisk **dalej**.
 
 7. Następnie podajmy pewne informacje dotyczące Twojego profilu.  Wskaż, czy jesteś uczniem, i podaj najnowszy tytuł zadania, firmę i branżę.
 

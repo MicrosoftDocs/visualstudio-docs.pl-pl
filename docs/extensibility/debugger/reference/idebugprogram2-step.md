@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Krok | Dokumenty firmy Microsoft
+title: 'IDebugProgram2:: Step | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 194e72eba5a3f137e4650752a090d91ad7c402fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80722757"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387242"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Wykonuje krok.
 
 > [!NOTE]
-> Ta metoda jest przestarzała. Zamiast tego użyj [metody Krok.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+> Ta metoda jest przestarzała. Zamiast tego użyj metody [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,24 +48,24 @@ int Step( 
 
 ## <a name="parameters"></a>Parametry
 `pThread`\
-[w] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek jest stopniowane.
+podczas Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , który reprezentuje poddany wątek.
 
 `sk`\
-[w] Wartość z wyliczenia [STEPKIND,](../../../extensibility/debugger/reference/stepkind.md) która określa rodzaj kroku.
+podczas Wartość z wyliczenia [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) , która określa rodzaj kroku.
 
 `step`\
-[w] Wartość z wyliczenia [STEPUNIT,](../../../extensibility/debugger/reference/stepunit.md) która określa jednostkę kroku (na przykład według instrukcji lub instrukcji).
+podczas Wartość z wyliczenia [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) , która określa jednostkę kroku (na przykład przez instrukcję lub instrukcję).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- W przypadku, gdy istnieje synchronizacja wątku lub komunikacji między wątkami, inne wątki w programie powinny działać, gdy określony wątek jest stepping.
+ W przypadku gdy istnieje jakakolwiek synchronizacja wątków lub komunikacja między wątkami, inne wątki w programie powinny być uruchamiane, gdy określony wątek działa.
 
 > [!WARNING]
-> Nie wysyłaj zdarzenia zatrzymania ani natychmiastowego (synchroniczowego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może zawiesić.
+> Nie wysyłaj zdarzenia zatrzymania ani bezpośredniego (synchronicznego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może przestać odpowiadać.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

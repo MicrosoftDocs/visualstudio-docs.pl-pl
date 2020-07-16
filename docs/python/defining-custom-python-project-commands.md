@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540871"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386988"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definiowanie poleceń niestandardowych dla projektów języka Python
 
@@ -144,7 +144,7 @@ Wszystkie wartości atrybutów nie uwzględnia wielkości liter.
 | Atrybut | Wymagane | Opis |
 | --- | --- | --- |
 | Typ | Tak | Określa, co zawiera atrybut target i jak jest używany wraz z atrybutem arguments:<ul><li>**plik wykonywalny**: Uruchom plik wykonywalny o nazwie in Target, dołączając wartość w argumentach, tak jak w przypadku wprowadzenia bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom *python.exe* z nazwą pliku w miejscu docelowym, a następnie z wartością w argumentach.</li><li>**moduł**: przebieg `python -m` , po którym następuje nazwa modułu w miejscu docelowym, a następnie wartość w argumentach.</li><li>**kod**: Uruchom wbudowany kod zawarty w elemencie docelowym. Wartość argumentów jest ignorowana.</li><li>**PIP**: przebieg `pip` przy użyciu polecenia w elemencie Target, a następnie argumentów; to Execute jest ustawione na "output", jednak PIP przyjmuje `install` polecenie i używa elementu Target jako nazwy pakietu.</li></ul> |
-| Środowisko docelowe | Tak | Nazwa pliku, nazwę modułu, kod lub polecenie PIP, które ma być używane, w zależności od TargetType. |
+| Cel | Tak | Nazwa pliku, nazwę modułu, kod lub polecenie PIP, które ma być używane, w zależności od TargetType. |
 | Argumenty | Opcjonalne | Określa ciąg argumentów (jeśli istnieją) do przekazania do obiektu docelowego. Należy pamiętać, że gdy TargetType ma wartość `script` , argumenty są przydawane do programu w języku Python, a nie *python.exe*. Zignorowano dla `code` TargetType. |
 | Wykonaj | Tak | Określa środowisko, w którym należy uruchomić polecenie:<ul><li>**konsola**: (domyślnie) uruchamia obiekt docelowy i argumenty, tak jak w przypadku wprowadzania ich bezpośrednio w wierszu polecenia. Okno polecenia pojawia się, gdy obiekt docelowy jest uruchomiony, a następnie jest zamykane automatycznie.</li><li>**consolepause**: taki sam jak konsola, ale czeka na naciśnięcie przed zamknięciem okna.</li><li>**Output**: uruchamia obiekt docelowy i wyświetla jego wyniki w oknie **danych wyjściowych** w programie Visual Studio. Jeśli TargetType jest "PIP", program Visual Studio używa elementu docelowego jako nazwy pakietu i dołącza argumenty.</li><li>**REPL**: uruchamia cel w oknie [interaktywnym języka Python](python-interactive-repl-in-visual-studio.md) ; opcjonalna nazwa wyświetlana jest używana dla tytułu okna.</li><li>**Brak**: działa tak samo jak konsola.</li></ul>|
 | WorkingDirectory | Opcjonalne | Folder, w którym ma zostać uruchomione polecenie. |
@@ -384,7 +384,7 @@ Wskazuje, że zawartość `<Target>` lub `<CreatePythonCommandItem>` elementów 
 
 Wartości atrybutów mogą być puste, jeśli odwołujesz się do właściwości, która nie została zdefiniowana. Na przykład, jeśli używasz tokenu `$(StartupFile)` , ale nie zdefiniowano pliku startowego w projekcie, token jest rozpoznawany jako pusty ciąg. W takich przypadkach może być konieczne zdefiniowanie wartości domyślnej. Na przykład polecenia **Uruchom serwer** i **Uruchom serwer debugowania** zdefiniowane w szablonach projektu butelka, kolby i Django domyślnie są *manage.py* , jeśli nie określono w inny sposób pliku startowego serwera we właściwościach projektu.
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Program Visual Studio zawiesza się i ulega awarii podczas uruchamiania polecenia
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Program Visual Studio przestaje odpowiadać i ulega awarii podczas uruchamiania polecenia
 
 Prawdopodobnie próbujesz uruchomić polecenie konsoli za pomocą programu `ExecuteIn="output"` , w którym to przypadku program Visual Studio może ulec awarii podczas próby przeanalizowania danych wyjściowych. Zamiast tego użyj polecenia cmdlet `ExecuteIn="console"`. (Zobacz [problem 3682](https://github.com/Microsoft/PTVS/issues/3681)).
 

@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Obliczenie funkcji &#39;funkcja&#39; przekroczyła limit czasu i konieczne było przerwanie procesu w niebezpieczny sposób | Dokumentacja firmy Microsoft'
+title: 'Błąd: szacowanie &#39;funkcji&#39; Przekroczono limit czasu i wymaganie przerwania w sposób niebezpieczny | Microsoft Docs'
 ms.date: 11/15/2016
 ms.topic: reference
 f1_keywords:
@@ -9,40 +9,40 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a27bf67770eef770fddef0301a804e6c45579539
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197066"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387125"
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Błąd: Obliczenie funkcji &#39;funkcja&#39; przekroczyła limit czasu i konieczne było przerwanie procesu w niebezpieczny sposób
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Błąd: szacowanie &#39;funkcji&#39; przekroczony limit czasu i wymaganie przerwania w sposób niebezpieczny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Komunikat pełny tekst: Ocena funkcji "function" Upłynął limit czasu i konieczne było przerwanie procesu w niebezpieczny sposób. Może to uszkodzenia procesu docelowego. 
+Pełny tekst komunikatu: przekroczono limit czasu obliczania funkcji "Function" i wymaganie zostało przerwane w sposób niebezpieczny. Może to spowodować uszkodzenie procesu docelowego. 
 
-Aby ułatwić sprawdzić stan obiektów platformy .NET, debuger automatycznie wymusi debugowanego procesu do uruchomienia dodatkowych kodu (zwykle metody pobierającej właściwości i funkcji ToString). W większości przypadków wszystkie te funkcje są wykonywane szybko i znacznie ułatwia debugowanie. Debuger nie uruchamiać aplikację w piaskownicy. W rezultacie metoda pobierająca właściwości lub metody ToString, który wywołuje w funkcji natywnej, która jest używana z może prowadzić do długie limity czasu, który może nie być możliwe do odzyskania. Jeśli napotkasz ten komunikat o błędzie, ten błąd wystąpił.
+Aby ułatwić sprawdzenie stanu obiektów .NET, debuger automatycznie wymusi w debugowanym procesie uruchomić dodatkowy kod (zazwyczaj metody pobierające właściwości i funkcje ToString). W większości przypadków te funkcje są szybko i ułatwiają debugowanie. Jednak debuger nie uruchamia aplikacji w piaskownicy. W związku z tym metoda pobierająca lub ToString właściwości, która wywołuje funkcję natywną, która przestaje odpowiadać, może prowadzić do długotrwałych limitów czasu, które mogą nie być możliwe do odzyskania. Ten komunikat o błędzie wystąpił.
  
-Jednym z najczęstszych przyczyn tego problemu jest gdy debuger ocenia właściwością, tylko możliwość wątku poddawana do wykonania. Więc jeśli właściwość oczekuje na inne wątki były uruchomione w debugowanym aplikacji i oczekuje ono w taki sposób, że środowisko uruchomieniowe platformy .NET nie jest w stanie przerwania, ten problem będzie się zdarzyć.
+Jednym z typowych przyczyn tego problemu jest to, że gdy debuger szacuje właściwość, umożliwia tylko poddane inspekcji do wykonania. Dlatego jeśli właściwość oczekuje na inne wątki do uruchomienia w debugowanej aplikacji i jeśli oczekuje na to, że środowisko uruchomieniowe platformy .NET nie może przerwać działania, ten problem wystąpi.
  
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
  
 Istnieją trzy możliwe rozwiązania tego problemu.
  
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Rozwiązanie #1: Debuger uniemożliwić wywołanie metody pobierającej właściwości lub metody ToString
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 rozwiązania: Uniemożliwianie debugerowi wywoływania właściwości pobierającej lub metody ToString
  
-Komunikat o błędzie informuje o nazwę funkcji, w której debuger próbował wywołać. Jeśli zmodyfikujesz tę funkcję, można uniemożliwić wywołanie metody pobierającej właściwości lub metody ToString debugera. Wypróbuj jedną z następujących czynności:
+Komunikat o błędzie informuje o nazwie funkcji, którą debuger próbował wywołać. Jeśli można zmodyfikować tę funkcję, można uniemożliwić debugerowi wywoływanie metody pobierającej lub ToString właściwości. Wypróbuj jedną z następujących czynności:
  
-* Zmienić metodę na inny rodzaj kodu oprócz pobierającą właściwość lub metoda ToString i problem znikną.
-    —lub—
-* (W przypadku ToString) Zdefiniuj atrybut DebuggerDisplay od typu, i może mieć debugera coś innego niż ToString oceny.
-    —lub—
-* (Dla metody pobierającej właściwości) Umieść `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atrybutu dla właściwości. Może to być przydatne, jeśli masz metodę, która musi znajdować się właściwości interfejsu API ze względu na zgodność, ale należy go tak naprawdę metody.
+* Zmień metodę na inny typ kodu oprócz metody pobierającej lub ToString właściwości, a problem zostanie wysunięty.
+    -lub-
+* (Dla ToString) Zdefiniuj atrybut DebuggerDisplay w typie, a debuger może oszacować coś innego niż ToString.
+    -lub-
+* (Dla metody pobierającej właściwości) Umieść `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atrybut we właściwości. Może to być przydatne, jeśli masz metodę, która musi pozostać właściwością ze względu na zgodność interfejsu API, ale w rzeczywistości powinna być to metoda.
  
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Rozwiązanie #2: Kod docelowy, poproś debugera, aby przerwać oceny
+### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>#2 rozwiązania: czy kod docelowy poprosił debugera o przerwanie oceny
  
-Komunikat o błędzie informuje o nazwę funkcji, w której debuger próbował wywołać. Jeśli metoda pobierająca właściwości lub metody ToString niepowodzenia by działała poprawnie, szczególnie w sytuacjach, gdy ten problem, które jest kod wymaga innego wątku, aby uruchomić kod, a następnie wywołać funkcję implementacji `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` poprosić debugera do przerwania funkcji Ocena. Za pomocą tego rozwiązania jest nadal możliwe jawnie ocenić tych funkcji, ale domyślne zachowanie to, zatrzyma wykonywanie po wystąpieniu wywołania NotifyOfCrossThreadDependency.
+Komunikat o błędzie informuje o nazwie funkcji, którą debuger próbował wywołać. Jeśli metoda getter lub ToString właściwości czasami nie działa prawidłowo, szczególnie w sytuacjach, gdy problem polega na tym, że kod wymaga innego wątku do uruchomienia kodu, funkcja implementacji może wywołać, `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` Aby polecić debugerowi przerwanie oceny funkcji. W tym rozwiązaniu nadal można jawnie oszacować te funkcje, ale domyślne zachowanie jest wykonywane, gdy nastąpi wywołanie NotifyOfCrossThreadDependency.
  
-### <a name="solution-3-disable-all-implicit-evaluation"></a>Rozwiązanie #3: Wyłącz wszystkie bezwarunkowa ocena
+### <a name="solution-3-disable-all-implicit-evaluation"></a>#3 rozwiązania: Wyłącz wszystkie niejawne oceny
  
-Jeśli poprzednie rozwiązania nie rozwiązują problemu, przejdź do strony *narzędzia* / *opcje*i usuń zaznaczenie opcji *debugowanie*  /   *Ogólne* / *Włącz obliczanie właściwości i inne niejawne wywołania funkcji*. To spowoduje wyłączenie większość Obliczanie funkcji niejawnie i powinno rozwiązać problem.
+Jeśli poprzednie rozwiązania nie rozwiążą problemu, przejdź do *Tools*  /  *opcji*narzędzia, a następnie usuń zaznaczenie pola *Debuguj*  /  *Ogólne*  /  *Włącz Obliczanie właściwości i inne niejawne wywołania funkcji*. Spowoduje to wyłączenie najbardziej niejawnych ocen funkcji i powinno rozwiązać problem.

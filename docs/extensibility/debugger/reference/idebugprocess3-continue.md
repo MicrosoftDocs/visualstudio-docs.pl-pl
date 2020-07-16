@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Kontynuuj | Dokumenty firmy Microsoft
+title: 'IDebugProcess3:: Continue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8fa2e21e31297279a173c9c9edd087adc560903
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: aba0863ad7c50bf5c14e7a30c06097825b8cf5ec
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723779"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386800"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Kontynuuje uruchamianie tego procesu ze stanu zatrzymanego. Każdy poprzedni stan wykonywania (na przykład krok) jest zachowywany, a proces rozpoczyna wykonywanie ponownie.
+Kontynuuje wykonywanie tego procesu ze stanu zatrzymanego. Wszystkie poprzednie Stany wykonania (takie jak krok) są zachowywane i proces zostaje uruchomiony ponownie.
 
 > [!NOTE]
 > Ta metoda powinna być używana zamiast [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
@@ -44,17 +44,17 @@ int Continue(
 
 ## <a name="parameters"></a>Parametry
 `pThread`\
-[w] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątek, który ma być kontynuowany.
+podczas Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) reprezentujący wątek, który ma być kontynuowany.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest wywoływana w tym procesie, niezależnie od tego, ile procesów są debugowane lub który proces wygenerował zdarzenie zatrzymania. Implementacja musi zachować poprzedni stan wykonywania (na przykład krok) i kontynuować wykonywanie tak, jakby nigdy nie zatrzymał się przed zakończeniem jego wcześniejszego wykonania. Oznacza to, że jeśli wątek w tym procesie robi operację step-over `Continue` i został zatrzymany, ponieważ niektóre inne procesy zatrzymane, a następnie został wywołany, określony wątek musi zakończyć oryginalną operację step-over.
+ Ta metoda jest wywoływana w tym procesie bez względu na liczbę debugowanych procesów lub proces wygenerował zdarzenie zatrzymania. Implementacja musi zachować poprzedni stan wykonania (na przykład krok) i kontynuować wykonywanie, tak jakby nigdy nie zostało zatrzymane przed ukończeniem jego wcześniejszego wykonania. Oznacza to, że jeśli wątek w tym procesie wykonywał operację krok po kroku i został zatrzymany, ponieważ jakiś inny proces został zatrzymany, a następnie `Continue` został wywołany, określony wątek musi wykonać pierwotną operację krok po kroku.
 
- **Ostrzeżenie** Nie wysyłaj zdarzenia zatrzymania ani natychmiastowego (synchroniczowego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może zawiesić.
+ **Ostrzeżenie** Nie wysyłaj zdarzenia zatrzymania ani bezpośredniego (synchronicznego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może przestać odpowiadać.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

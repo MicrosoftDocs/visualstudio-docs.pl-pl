@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Krok | Dokumenty firmy Microsoft
+title: 'IDebugProcess3:: Step | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5c4927f3f997b7fdbdca2b32977f2aa31a51219
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 054cfc305400e3916ed7ba796a74370dfc2c77a5
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723550"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386696"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-Powoduje, że proces krok jeden instrukcji lub instrukcji.
+Powoduje, że proces przechodzi krok po kroku jedną instrukcję lub instrukcję.
 
 > [!NOTE]
 > Ta metoda powinna być używana zamiast [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md).
@@ -48,25 +48,25 @@ int Step(
 
 ## <a name="parameters"></a>Parametry
 `pThread`\
-[w] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątek jest stopniowane.
+podczas Obiekt [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) reprezentujący poddany wątek.
 
 `sk`\
-[w] Jedna z wartości [STEPKIND.](../../../extensibility/debugger/reference/stepkind.md)
+podczas Jedna z wartości [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) .
 
 `step`\
-[w] Jedna z wartości [STEPUNIT.](../../../extensibility/debugger/reference/stepunit.md)
+podczas Jedna z wartości [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- W przypadku, gdy istnieje synchronizacja wątku lub komunikacji między wątkami, inne wątki w procesie należy uruchomić, gdy określony wątek jest stepping.
+ W przypadku każdej synchronizacji wątków lub komunikacji między wątkami inne wątki w procesie powinny być uruchamiane, gdy określony wątek działa.
 
- **Ostrzeżenie** Nie wysyłaj zdarzenia zatrzymania ani natychmiastowego (synchroniczowego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może zawiesić.
+ **Ostrzeżenie** Nie wysyłaj zdarzenia zatrzymania ani bezpośredniego (synchronicznego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może przestać odpowiadać.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)
 - [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)
-- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

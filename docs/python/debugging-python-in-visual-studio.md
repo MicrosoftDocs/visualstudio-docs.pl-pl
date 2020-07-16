@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541157"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387034"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -66,7 +66,7 @@ Podczas ustawiania warunków można także ustawić **akcję** i utworzyć komun
 
 Po zatrzymaniu w punkcie przerwania masz różne sposoby przechodzenia przez kod lub uruchamiania bloków kodu przed ponownym rozdzieleniem. Te polecenia są dostępne w wielu miejscach, w tym na górnym pasku narzędzi do debugowania, **w menu** kontekstowym po kliknięciu prawym przyciskiem myszy w edytorze kodu oraz za pomocą skrótów klawiaturowych (chociaż nie wszystkie polecenia znajdują się we wszystkich miejscach):
 
-| Cecha | Klawiszy | Opis |
+| Obiekt feature | Klawiszy | Opis |
 | --- | --- | --- |
 | **Kontynuuj** | **F5** | Uruchamia kod do momentu osiągnięcia następnego punktu przerwania. |
 | **Wkrocz do** | **F11** | Uruchamia następną instrukcję i kończy. Jeśli następna instrukcja jest wywołaniem funkcji, debuger zatrzyma się w pierwszym wierszu wywoływanej funkcji. |
@@ -253,7 +253,7 @@ Poniższe kroki umożliwiają debugowanie w bieżącej sesji programu Visual Stu
 
     ![Dane wyjściowe rejestrowania debugera w oknie danych wyjściowych](media/debugger-logging-output.png)
 
-1. Jeśli program Visual Studio zawiesza się lub w przeciwnym razie nie można uzyskać dostępu do okna **danych wyjściowych** , uruchom ponownie program Visual Studio, Otwórz okno polecenia i wprowadź następujące polecenie:
+1. Jeśli program Visual Studio przestanie odpowiadać lub nie można uzyskać dostępu do okna **danych wyjściowych** , uruchom ponownie program Visual Studio, Otwórz okno polecenia i wprowadź następujące polecenie:
 
     ```ps
     DebugAdapterHost.Logging /On
@@ -261,6 +261,6 @@ Poniższe kroki umożliwiają debugowanie w bieżącej sesji programu Visual Stu
 
 1. Rozpocznij debugowanie i ponownie Odtwórz swój problem. Dzienniki debugera można znaleźć w temacie `%temp%\DebugAdapterHostLog.txt` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 Aby uzyskać szczegółowe informacje na temat debugera programu Visual Studio, zobacz [debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md).

@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat korzyści z usługi CODE Magazine dostępnych w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: 30b97c42c3ead60859aed593a3ffbad6ed721227
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906072"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387177"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazyn kodu uwzględniony w subskrypcjach programu Visual Studio
 
@@ -28,7 +28,7 @@ Proces konfigurowania subskrypcji magazynu kodu jest prosty.  Wykonaj następuj�
 3. Zobaczysz komunikat informujący o tym, że kod został pobrany.  Kliknij przycisk **Aktywuj** , aby kontynuować.  (Jeśli nie jesteś gotowy do aktywacji, to jest dobry.  Zawsze możesz wrócić do kafelka, aby aktywować.  Łącze "Pobierz kod" spowoduje odczytanie "aktywacji" po pobraniu kodu.
    > [!div class="mx-imgBorder"]
    > ![Pobrany kod magazynu kodu](_img/vs-code-magazine/vs-code-magazine-success.png "Kod został pomyślnie pobrany")
-4. Nastąpi przekierowanie do strony docelowej magazynu magazynów kodu. Wybierz swój kraj i wybierz, w jaki sposób chcesz otrzymywać magazyn. 
+4. Nastąpi przekierowanie do strony docelowej magazynu magazynów kodu. Wybierz swój kraj/region i wybierz, w jaki sposób chcesz otrzymywać magazyn. 
    > [!NOTE]
    > Członkowie Visual Studio Dev Essentials mają dostęp tylko do subskrypcji cyfrowej. 
 5. Na podstawie wybranych opcji zobaczysz notatkę przedstawiającą cenę subskrypcji wraz z ilością zastosowanego kuponu.
@@ -55,7 +55,7 @@ Po zakończeniu zamówienia subskrypcji zobaczysz stronę potwierdzenia zawieraj
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Dostępne                                                            |  Nie          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Nie          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Dostępne                                              |  Nie          |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), równoważnik, BizSpark, wyobraźc Premium.  Wyklucza: Microsoft Partner Network (MPN), najbardziej cenny specjalista (MVP), kierownik regionalny (RD), MCT Software & Services Developer, MCT Software & Services.*
 

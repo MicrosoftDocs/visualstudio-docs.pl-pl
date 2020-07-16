@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f687672de4bc3511fa0c9198f7ad4145b26dcd11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460801"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386722"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Błąd: szacowanie &#39;funkcji&#39; przekroczony limit czasu i wymaganie przerwania w sposób niebezpieczny
 
 Pełny tekst komunikatu: przekroczono limit czasu obliczania funkcji "Function" i wymaganie zostało przerwane w sposób niebezpieczny. Może to spowodować uszkodzenie procesu docelowego.
 
-Aby ułatwić sprawdzenie stanu obiektów .NET, debuger automatycznie wymusi w debugowanym procesie uruchomić dodatkowy kod (zazwyczaj metody pobierające właściwości i funkcje ToString). W większości przypadków te funkcje są szybko i ułatwiają debugowanie. Jednak debuger nie uruchamia aplikacji w piaskownicy. W związku z tym metoda pobierająca lub ToString właściwości, która wywołuje funkcję natywną, która zawiesza się, może prowadzić do długotrwałych limitów czasu, które mogą nie być możliwe do odzyskania. Ten komunikat o błędzie wystąpił.
+Aby ułatwić sprawdzenie stanu obiektów .NET, debuger automatycznie wymusi w debugowanym procesie uruchomić dodatkowy kod (zazwyczaj metody pobierające właściwości i funkcje ToString). W większości przypadków te funkcje są szybko i ułatwiają debugowanie. Jednak debuger nie uruchamia aplikacji w piaskownicy. W związku z tym metoda pobierająca lub ToString właściwości, która wywołuje funkcję natywną, która przestaje odpowiadać, może prowadzić do długotrwałych limitów czasu, które mogą nie być możliwe do odzyskania. Ten komunikat o błędzie wystąpił.
 
 Jednym z typowych przyczyn tego problemu jest to, że gdy debuger szacuje właściwość, umożliwia tylko poddane inspekcji do wykonania. Dlatego jeśli właściwość oczekuje na inne wątki do uruchomienia w debugowanej aplikacji i jeśli oczekuje na to, że środowisko uruchomieniowe platformy .NET nie może przerwać działania, ten problem wystąpi.
 

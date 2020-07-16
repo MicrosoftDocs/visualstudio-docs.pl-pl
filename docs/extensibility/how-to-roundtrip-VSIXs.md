@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905784"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387281"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Instrukcje: Udostępnianie rozszerzeń dla programu Visual Studio 2019/2017 i Visual Studio 2015
 
@@ -165,7 +165,7 @@ Zdecydowanie zaleca się, aby w ramach tego kroku było otwarte odwołanie do zm
 
 * Dodaj dodatkowe instrukcje warunkowe do `<import>` tagów, które mają odwołanie Microsoft. VSSDK. BuildTools. Wstaw `'$(VisualStudioVersion)' != '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w nagłówku i stopce pliku csproj.
 
-Przykład:
+Na przykład:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ Przykład:
 
 * Dodaj dodatkowe instrukcje warunkowe do `<import>` tagów, które mają element Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Wstaw `'$(VisualStudioVersion)' == '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w nagłówku i stopce pliku csproj.
 
-Przykład:
+Na przykład:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ Przykład:
 
 * Dodaj dodatkowe instrukcje warunkowe do `<Error>` tagów, które mają odwołanie Microsoft. VSSDK. BuildTools. Zrób to, wstawiając `'$(VisualStudioVersion)' != '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w stopce pliku csproj.
 
-Przykład:
+Na przykład:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +189,7 @@ Przykład:
 
 * Dodaj dodatkowe instrukcje warunkowe do `<Error>` tagów, które mają element Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Wstaw `'$(VisualStudioVersion)' == '14.0' And` na początku instrukcji Condition. Te instrukcje pojawią się w stopce pliku csproj.
 
-Przykład:
+Na przykład:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
@@ -213,5 +213,4 @@ W tym momencie projekt powinien być gotowy do kompilowania nowego vsixv3, któr
 ![Znajdź VSIX](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> Jeśli projekt zawiesza się z komunikatem **otwierającym plik**, Wymuś wyłączenie programu Visual Studio, przejdź do katalogu projektu, Pokaż ukryte foldery i Usuń folder *. vs* .
- 
+> Jeśli projekt przestanie odpowiadać z komunikatem **otwierającym plik**, Wymuś zamknięcie programu Visual Studio, przejdź do katalogu projektu, Pokaż ukryte foldery i Usuń folder *. vs* .
