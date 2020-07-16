@@ -5,16 +5,17 @@ metadata:
   title: JavaScript i TypeScript w programie Visual Studio
   description: Dowiedz się, jak używać programu Visual Studio do tworzenia aplikacji JavaScript i TypeScript.
   ms.topic: landing-page
+  ms.technology: vs-javascript
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 01b4232b4933197f06bb77793fb638281e5b5748
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "75678951"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405382"
 landingContent:
 - title: Wprowadzenie
   linkLists:
@@ -42,7 +43,7 @@ landingContent:
       url: quickstart-vuejs-with-nodejs.md
     - text: Tworzenie aplikacji ASP.NET Core w języku TypeScript
       url: tutorial-aspnet-with-typescript.md
-- title: Poznaj program Visual Studio
+- title: Poznawanie programu Visual Studio
   linkLists:
   - linkListType: how-to-guide
     links:
