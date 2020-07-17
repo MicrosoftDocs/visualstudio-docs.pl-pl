@@ -20,7 +20,7 @@
           items:
             - name: 'Tworzenie kolumn witryn, typów zawartości oraz list dla SharePoint'
               href: creating-site-columns-content-types-and-lists-for-sharepoint.md
-            - name: 'Wskazówki: tworzenie kolumny witryny, typu zawartości oraz listy dla SharePoint'
+            - name: 'Przewodnik: tworzenie kolumny witryny, typu zawartości oraz listy dla programu SharePoint'
               href: walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md
         - name: Tworzenie obsługiwanego odbiornika
           href: how-to-create-an-event-receiver.md
@@ -32,15 +32,15 @@
               href: creating-sharepoint-workflow-solutions.md
             - name: Obsługa formularzy w przepływach pracy
               href: form-support-in-workflows.md
-            - name: 'Wskazówki: tworzenie i debugowanie rozwiązania przepływu pracy SharePoint'
+            - name: 'Przewodnik: tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint'
               href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
-            - name: 'Wskazówki: tworzenie i przepływu pracy z formularzami inicjacji i skojarzenia'
+            - name: 'Przewodnik: tworzenie i przepływu pracy z formularzami inicjacji i skojarzenia'
               href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
-            - name: 'Wskazówki: dodawanie strony aplikacji do przepływu pracy'
+            - name: 'Przewodnik: dodawanie strony aplikacji do przepływu pracy'
               href: walkthrough-add-an-application-page-to-a-workflow.md
-            - name: 'Wskazówki: tworzenie niestandardowego działania przepływu pracy witryny'
+            - name: 'Przewodnik: tworzenie niestandardowego działania przepływu pracy witryny'
               href: walkthrough-create-a-custom-site-workflow-activity.md
-            - name: 'Wskazówki: importowanie wielokrotnego przepływu danych programu SharePoint Designer do Visual Studio'
+            - name: 'Przewodnik: importowanie przepływu danych programu SharePoint Designer wielokrotnego użytku do programu Visual Studio'
               href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
         - name: Tworzenie stron dla SharePoint
           items:
@@ -50,7 +50,7 @@
               href: creating-application-pages-for-sharepoint.md
             - name: Tworzenie strony aplikacji
               href: how-to-create-an-application-page.md
-            - name: 'Wskazówki: tworzenie strony aplikacji SharePoint'
+            - name: 'Przewodnik: tworzenie strony aplikacji SharePoint'
               href: walkthrough-creating-a-sharepoint-application-page.md
         - name: Tworzenie części sieciowych dla SharePoint
           items:
@@ -60,11 +60,11 @@
               href: how-to-create-a-sharepoint-web-part.md
             - name: Tworzenie składnika Web Part programu SharePoint za pomocą projektanta
               href: how-to-create-a-sharepoint-web-part-by-using-a-designer.md
-            - name: 'Wskazówki: tworzenie części sieciowej dla SharePoint'
+            - name: 'Przewodnik: tworzenie składnika Web Part dla programu SharePoint'
               href: walkthrough-creating-a-web-part-for-sharepoint.md
-            - name: 'Wskazówki: tworzenie składnika Web part dla SharePoint za pomocą Projektanta'
+            - name: 'Przewodnik: tworzenie składnika Web part dla programu SharePoint za pomocą Projektanta'
               href: walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md
-            - name: 'Wskazówki: Tworzenie składnika Web Part programu Silverlight wyświetlającego dane OData dla programu SharePoint'
+            - name: 'Przewodnik: tworzenie składnika Web Part programu Silverlight wyświetlającego dane OData dla programu SharePoint'
               href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
         - name: Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji
           items:
@@ -120,25 +120,25 @@
                   href: creating-an-association-between-entities.md
                 - name: Tworzenie skojarzenia między jednostkami
                   href: how-to-create-an-association-between-entities.md
-                - name: 'Wskazówki: tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych'
+                - name: 'Przewodnik: tworzenie listy zewnętrznej w programie SharePoint przy użyciu danych biznesowych'
                   href: walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md
         - name: Tworzenie definicji witryny dla SharePoint
           items:
             - name: Tworzenie definicji witryny dla SharePoint
               href: creating-site-definitions-for-sharepoint.md
-            - name: 'Wskazówki: Tworzenie podstawowego projektu definicji witryny'
+            - name: 'Przewodnik: tworzenie podstawowego projektu definicji witryny'
               href: walkthrough-create-a-basic-site-definition-project.md
         - name: Importowanie elementów z istniejącej witryny SharePoint
           items:
             - name: Importowanie elementów z istniejącej witryny SharePoint
               href: importing-items-from-an-existing-sharepoint-site.md
-            - name: 'Wskazówki: importowanie elementów z istniejącej witryny SharePoint'
+            - name: 'Przewodnik: importowanie elementów z istniejącej witryny programu SharePoint'
               href: walkthrough-import-items-from-an-existing-sharepoint-site.md
             - name: Wytyczne dotyczące importowania wielokrotnych przepływów danych
               href: guidelines-for-importing-reusable-workflows.md
             - name: Importowanie motywu lub strony wzorcowej
               href: how-to-import-a-master-page-or-theme.md
-            - name: 'Wskazówki: importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem'
+            - name: 'Przewodnik: importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem'
               href: walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md
         - name: Stosowanie z modułów podczas dołączania plików do rozwiązania
           items:
@@ -192,13 +192,13 @@
           items:
             - name: Weryfikowanie i debugowanie kodu aplikacji programu SharePoint
               href: verifying-and-debugging-sharepoint-code.md
-            - name: 'Wskazówki: debugowanie aplikacji SharePoint przy użyciu narzędzia IntelliTrace'
+            - name: 'Przewodnik: debugowanie aplikacji SharePoint przy użyciu narzędzia IntelliTrace'
               href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
         - name: Profilowanie wydajności aplikacji SharePoint
           items:
             - name: Profilowanie wydajności aplikacji SharePoint
               href: profiling-the-performance-of-sharepoint-applications.md
-            - name: 'Wskazówki: Profilowanie aplikacji SharePoint'
+            - name: 'Przewodnik: profilowanie aplikacji SharePoint'
               href: walkthrough-profiling-a-sharepoint-application.md
         - name: Różnice między rozwiązaniami w trybie piaskownicy oraz rozwiązaniami farmy
           href: differences-between-sandboxed-and-farm-solutions.md
@@ -222,7 +222,7 @@
               href: how-to-add-and-remove-items-to-sharepoint-features.md
             - name: Dodawanie i usuwanie zależności funkcji
               href: how-to-add-and-remove-feature-dependencies.md
-            - name: 'Wskazówki: dodawanie przyszłych obsługiwanych odbiorników'
+            - name: 'Przewodnik: dodawanie odbiorców zdarzeń funkcji'
               href: walkthrough-add-feature-event-receivers.md
         - name: Tworzenie pakietów rozwiązania SharePoint
           items:
@@ -252,7 +252,7 @@
               href: how-to-set-sharepoint-deployment-commands.md
             - name: Edytowanie konfiguracji wdrażania programu SharePoint
               href: how-to-edit-a-sharepoint-deployment-configuration.md
-            - name: 'Wskazówki: Wdrażanie definicji listy zadań projektu'
+            - name: 'Przewodnik: wdrażanie definicji listy zadań projektu'
               href: walkthrough-deploying-a-project-task-list-definition.md
         - name: Parametry wymienne
           href: replaceable-parameters.md
@@ -290,13 +290,13 @@
                   href: how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md
                 - name: Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint
                   href: creating-item-templates-and-project-templates-for-sharepoint-project-items.md
-                - name: 'Przewodnik: tworzenie niestandardowego elementu projektu (akcja) przy użyciu szablonu elementu — część 1'
+                - name: 'Przewodnik: tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1'
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md
-                - name: 'Wskazówki: tworzenie niestandardowej akcji elementu projektu z Szablonem elementu, Część 2'
+                - name: 'Przewodnik: tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2'
                   href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
-                - name: 'Wskazówki: tworzenie elementu projektu kolumn witryny z Szablonem projektu, Część 1'
+                - name: 'Przewodnik: tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1'
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
-                - name: 'Przewodnik: tworzenie elementu projektu (kolumna witryny) przy użyciu szablonu projektu — część 2'
+                - name: 'Przewodnik: tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2'
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
             - name: Rozszerzanie pozycji projektu SharePoint
               items:
@@ -308,7 +308,7 @@
                   href: how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md
                 - name: Dodawanie właściwości do rozszerzenia elementu projektu programu SharePoint
                   href: how-to-add-a-property-to-a-sharepoint-project-item-extension.md
-                - name: 'Wskazówki: rozszerzanie typu elementu projektu SharePoint'
+                - name: 'Przewodnik: rozszerzenie typu elementu projektu programu SharePoint'
                   href: walkthrough-extending-a-sharepoint-project-item-type.md
             - name: Rozszerzanie projektów SharePoint
               items:
@@ -320,7 +320,7 @@
                   href: how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md
                 - name: Dodawanie właściwości do projektów programu SharePoint
                   href: how-to-add-a-property-to-sharepoint-projects.md
-                - name: 'Wskazówki: tworzenie rozszerzenia projektu SharePoint'
+                - name: 'Przewodnik: tworzenie rozszerzenia projektu programu SharePoint'
                   href: walkthrough-creating-a-sharepoint-project-extension.md
             - name: Rozszerzanie pakowania i wdrażania SharePoint
               items:
@@ -332,7 +332,7 @@
                   href: how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md
                 - name: Obsługa konfliktów wdrożenia
                   href: how-to-handle-deployment-conflicts.md
-                - name: 'Wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint'
+                - name: 'Przewodnik: tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint'
                   href: walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md
                 - name: Tworzenie niestandardowych reguł walidacji pakietu i funkcji dla rozwiązań programu SharePoint
                   href: how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md
@@ -350,7 +350,7 @@
               href: how-to-add-a-custom-sharepoint-node-to-server-explorer.md
             - name: Pobieranie danych dla wbudowanego węzła programu SharePoint w Eksploratorze serwera
               href: how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md
-            - name: 'Wskazówki: rozszerzanie Eksploratora serwera do potrzeb wyświetlania elementów sieci web'
+            - name: 'Przewodnik: rozszerzanie Eksploratora serwera do potrzeb wyświetlania składników Web Part'
               href: walkthrough-extending-server-explorer-to-display-web-parts.md
         - name: Koncepcje programowania oraz funkcje dla rozszerzeń narzędzi SharePoint
           items:
@@ -364,7 +364,7 @@
                   href: how-to-create-a-sharepoint-command.md
                 - name: Wykonywanie polecenia programu SharePoint
                   href: how-to-execute-a-sharepoint-command.md
-                - name: 'Wskazówki: wywoływanie Client Object Model SharePoint w rozszerzeniu Eksploratora serwera'
+                - name: 'Przewodnik: wywoływanie modelu obiektów klienta programu SharePoint w rozszerzeniu Eksploratora serwera'
                   href: walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md
             - name: Korzystanie z usługi projektu SharePoint
               items:

@@ -1,4 +1,4 @@
-- name: 'Samouczki języka C#'
+- name: Samouczki języka C#
   href: index.yml
 - name: Omówienie
   items:
@@ -13,7 +13,7 @@
 - name: Tworzenie aplikacji
   expanded: true
   items:
-    - name: 'Tworzenie pierwszej aplikacji C#'
+    - name: Tworzenie pierwszej aplikacji C#
       href: tutorial-console.md
     - name: tworzenie aplikacji internetowej
       href: tutorial-aspnet-core.md
@@ -35,7 +35,7 @@
           href: tutorial-aspnet-core-ef-step-04.md
         - name: 5 — Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure
           href: tutorial-aspnet-core-ef-step-05.md
-- name: Poznaj program Visual Studio
+- name: Poznawanie programu Visual Studio
   expanded: true
   items:
     - name: Uruchamianie programu
