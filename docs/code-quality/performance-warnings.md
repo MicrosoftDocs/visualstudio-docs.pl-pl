@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3fc631a2a99dd6090893393ee20ecec23945713
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: dabcd99e4807d60db53487527d9b3a554169c8c4
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814931"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454153"
 ---
 # <a name="performance-warnings"></a>Wydajność — Ostrzeżenia
 Ostrzeżenia dotyczące wydajności obsługują biblioteki i aplikacje o wysokiej wydajności.
@@ -33,7 +33,7 @@ Ostrzeżenia dotyczące wydajności obsługują biblioteki i aplikacje o wysokie
 | [CA1801: Dokonaj przeglądu nieużywanych parametrów](../code-quality/ca1801.md) | Podpis metody zawiera parametr, który nie jest używany w jej treści. |
 | [CA1802: Używaj literałów w odpowiednich miejscach](../code-quality/ca1802.md) | Pole jest zadeklarowane jako static i tylko do odczytu (Shared i ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) i jest inicjowane z wartością, która jest obliczanej w czasie kompilacji. Ponieważ wartość przypisana do pola Target jest obliczanej w czasie kompilacji, należy zmienić deklarację na pole const (const w), [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aby wartość była obliczana w czasie kompilacji, a nie w czasie wykonywania. |
 | [CA1804: Usuwaj nieużywane zmienne lokalne](../code-quality/ca1804.md) | Nieużywane zmienne lokalne i niepotrzebne przydziały zwiększają rozmiar zestawu i zmniejszają wydajność. |
-| [CA1805: nie należy inicjować niepotrzebnie](../code-quality/ca1805.md) | Środowisko uruchomieniowe platformy .NET inicjuje wszystkie pola typów odwołań do ich wartości domyślnych przed uruchomieniem konstruktora. W większości przypadków jawne zainicjowanie pola do jego wartości domyślnej jest nadmiarowe, co zwiększa koszty konserwacji i może obniżyć wydajność (na przykład większy rozmiar zestawu). |
+| [CA1805: Nie inicjuj niepotrzebnie](../code-quality/ca1805.md) | Środowisko uruchomieniowe platformy .NET inicjuje wszystkie pola typów odwołań do ich wartości domyślnych przed uruchomieniem konstruktora. W większości przypadków jawne zainicjowanie pola do jego wartości domyślnej jest nadmiarowe, co zwiększa koszty konserwacji i może obniżyć wydajność (na przykład większy rozmiar zestawu). |
 | [CA1806: Nie ignoruj wyników metod](../code-quality/ca1806.md) | Nowy obiekt jest tworzony, ale nigdy nie jest używany lub metoda, która tworzy i zwraca nowy ciąg, jest wywoływana, a nowy ciąg nigdy nie jest używany lub metoda Component Object Model (COM) lub P/Invoke zwraca wynik HRESULT lub kod błędu, który nigdy nie jest używany. |
 | [CA1809: Unikaj zbyt wielu zmiennych lokalnych](../code-quality/ca1809.md) | Typowa optymalizacja wydajności polega na przechowywaniu wartości w rejestrze procesora zamiast w pamięci, co określa się jako „rejestrowanie wartości”.  Aby zwiększyć szansę, że wszystkie zmienne lokalne są przechowywane, Ogranicz liczbę zmiennych lokalnych do 64. |
 | [CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo](../code-quality/ca1810.md) | Podczas gdy typ deklaruje jawny, statyczny konstruktor, kompilator just in time (JIT) do każdej metody statycznej dodaje sprawdzenie i konstruktora wystąpienia, aby upewnić się, że konstruktor statyczny został wcześniej wywołany. Sprawdzenia konstruktora statycznego mogą obniżyć wydajność. |
@@ -59,3 +59,4 @@ Ostrzeżenia dotyczące wydajności obsługują biblioteki i aplikacje o wysokie
 | [CA1832: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części ReadOnlySpan lub ReadOnlyMemory dla tablicy](../code-quality/ca1832.md) | W przypadku korzystania z indeksatora zakresu w tablicy i niejawnego przypisywania wartości <xref:System.ReadOnlySpan%601> do <xref:System.ReadOnlyMemory%601> typu lub, Metoda <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> zostanie użyta zamiast <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , która tworzy kopię żądanego fragmentu tablicy. |
 | [CA1833: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części Memory dla tablicy](../code-quality/ca1833.md) | W przypadku korzystania z indeksatora zakresu w tablicy i niejawnego przypisywania wartości <xref:System.Span%601> do <xref:System.Memory%601> typu lub, Metoda <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> zostanie użyta zamiast <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , która tworzy kopię żądanego fragmentu tablicy. |
 | [CA1835: Preferuj przeciążenia oparte na Memory' dla elementu "ReadAsync" i "WriteAsync"](../code-quality/ca1835.md) | Element "Stream" ma Przeciążenie "ReadAsync", które przyjmuje &lt; &gt; jako pierwszy argument "bajt pamięci", i Przeciążenie "WriteAsync", które pobiera "ReadOnlyMemory &lt; Byte &gt; " jako pierwszy argument. Preferuj wywoływanie przeciążeń opartych na pamięci, co jest bardziej wydajne. |
+| [CA1836: Preferuj `IsEmpty` , `Count` Jeśli są dostępne](../code-quality/ca1836.md) | Preferuj `IsEmpty` Właściwość, która jest bardziej wydajna niż `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> lub, <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> Aby określić, czy obiekt zawiera elementy, czy nie. |

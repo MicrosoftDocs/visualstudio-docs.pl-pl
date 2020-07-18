@@ -1,23 +1,23 @@
 ---
 title: Organizowanie obiektów w kontenery układów w projektancie XAML
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592939"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459297"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
 
 W tym artykule opisano panele i kontrolki układu dla projektant XAML.
 
-Załóżmy, że obiekty mają być wyświetlane na stronie&mdash;obiektów, takich jak obrazy, przyciski i wideo. Być może chcesz, aby były wyświetlane w wierszach i kolumnach, w jednym wierszu w pionie lub w poziomie lub w stałej pozycji.
+Załóżmy, gdzie obiekty mają być wyświetlane na &mdash; obiektach stron, takich jak obrazy, przyciski i wideo. Być może chcesz, aby były wyświetlane w wierszach i kolumnach, w jednym wierszu w pionie lub w poziomie lub w stałej pozycji.
 
 Po dodaniu szansy myślisz, jak może wyglądać Strona, wybierz Panel układu. Wszystkie strony zaczynają się od siebie, ponieważ potrzebujesz czegoś, do którego chcesz dodać obiekty. Domyślnie jest to **Siatka**, ale można ją zmienić.
 
@@ -71,7 +71,7 @@ Rozmieść obiekty w taki sposób, aby stały się one lub *zadokowane*, do jedn
 
 ![Panel układu DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Obejrzyj krótkie wideo:** przycisk ![Odtwórz](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Obejrzyj krótkie wideo:** ![ Przycisk odtwarzania ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [— WPF — DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Kontrolki układu
 
@@ -98,8 +98,6 @@ Zezwól użytkownikom na przewijanie w dół strony lub obszaru strony. Można d
 ### <a name="viewbox"></a>Okno widoku
 
 Skaluj obiekty w taki sam sposób, jak w przypadku kontrolki powiększenia. Do **Viewbox**można dodać tylko jeden obiekt. Jeśli chcesz zastosować ten efekt do więcej niż jednego obiektu, Dodaj panel układu do **Viewbox**, a następnie Dodaj kontrolki do tego panelu układu.
-
-(Dostępne tylko dla projektów WPF).
 
 ![Kontrolka układu ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 

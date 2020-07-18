@@ -171,6 +171,7 @@ f1_keywords:
 - CA1832
 - CA1833
 - CA1835
+- CA1836
 - CA1900
 - CA1901
 - CA1903
@@ -290,12 +291,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835436"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454192"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
 
@@ -460,6 +461,7 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA1832 |[CA1832: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części ReadOnlySpan lub ReadOnlyMemory dla tablicy](../code-quality/ca1832.md) | W przypadku korzystania z indeksatora zakresu w tablicy i niejawnego przypisywania wartości <xref:System.ReadOnlySpan%601> do <xref:System.ReadOnlyMemory%601> typu lub, Metoda <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> zostanie użyta zamiast <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , która tworzy kopię żądanego fragmentu tablicy. |
 | CA1833 |[CA1833: Użyj metody AsSpan lub AsMemory zamiast indeksatorów opartych na zakresie do pobierania części Memory dla tablicy](../code-quality/ca1833.md) | W przypadku korzystania z indeksatora zakresu w tablicy i niejawnego przypisywania wartości <xref:System.Span%601> do <xref:System.Memory%601> typu lub, Metoda <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> zostanie użyta zamiast <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , która tworzy kopię żądanego fragmentu tablicy. |
 | CA1835 |[CA1835: Preferuj przeciążenia oparte na Memory' dla elementu "ReadAsync" i "WriteAsync"](../code-quality/ca1835.md) | Element "Stream" ma Przeciążenie "ReadAsync", które przyjmuje &lt; &gt; jako pierwszy argument "bajt pamięci", i Przeciążenie "WriteAsync", które pobiera "ReadOnlyMemory &lt; Byte &gt; " jako pierwszy argument. Preferuj wywoływanie przeciążeń opartych na pamięci, co jest bardziej wydajne. |
+| CA1836 |[CA1836: Preferuj `IsEmpty` , `Count` Jeśli są dostępne](../code-quality/ca1836.md) | Preferuj `IsEmpty` Właściwość, która jest bardziej wydajna niż `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> lub, <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> Aby określić, czy obiekt zawiera elementy, czy nie. |
 | CA1900 | [CA1900: Pola typu wartości powinny być przenośne](../code-quality/ca1900.md) | Reguła ta sprawdza, czy struktury, które są zadeklarowane przez użycie jawnego układu, zostaną prawidłowo wyrównane podczas przekazywania do kodu niezarządzanego w 64-bitowych systemach operacyjnych. |
 | CA1901 | [CA1901: deklaracje P/Invoke powinny być przenośne](../code-quality/ca1901.md) | Ta reguła oblicza rozmiar każdego parametru oraz wartości zwróconej przez metodę P/Invoke i sprawdza, czy rozmiar parametru jest poprawny podczas przekazywania do kodu niezarządzanego w 32-bitowych i 64-bitowych systemach operacyjnych. |
 | CA1903 | [CA1903: Używaj tylko interfejsu API platformy docelowej](../code-quality/ca1903.md) | Element członkowski lub typ używa elementu członkowskiego lub typu wprowadzonego w dodatku Service Pack, który nie został uwzględniony razem ze wskazanym środowiskiem docelowym projektu. |

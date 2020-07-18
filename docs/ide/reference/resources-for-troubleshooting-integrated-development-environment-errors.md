@@ -1,6 +1,6 @@
 ---
-title: Zasoby dotyczące rozwiązywania problemów z błędami
-ms.date: 11/04/2016
+title: Zasoby do rozwiązywania problemów z błędami
+ms.date: 07/17/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,35 +93,35 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593619"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459284"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby do rozwiązywania problemów ze zintegrowanymi błędami środowiska programistycznego
+# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby do rozwiązywania błędów zintegrowanego środowiska programistycznego
 
-Nie wszystkie komunikaty o błędach mają określony skojarzony temat Pomocy. Jeśli informacje zawarte w komunikacie o błędzie nie pomagają w rozwiązaniu problemu, można zapoznać się z innymi zasobami, takimi jak artykuły bazy wiedzy Knowledge Base, fora lub pomoc techniczna dotycząca produktów.
+Nie wszystkie komunikaty o błędach mają określony skojarzony temat pomocy. Jeśli informacje w komunikacie o błędzie nie pomogą rozwiązać problemu, możesz zapoznać się z innymi zasobami, takimi jak artykuły bazy wiedzy, fora lub pomoc techniczna.
 
 > [!NOTE]
-> W tym temacie stosuje się do programu Visual Studio w systemie Windows. W przypadku programu Visual Studio dla komputerów Mac zobacz [Rozwiązywanie problemów z programem Visual Studio dla komputerów Mac](/visualstudio/mac/troubleshooting).
+> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Rozwiązywanie problemów z Visual Studio dla komputerów Mac](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy
 
-Artykuły dotyczące problemów z produktem można przeszukiwać bazę wiedzy (KB) w internecie. Nie wszystkie problemy mają odpowiedni artykuł KB, ale błędy napotkane przez znaczną liczbę klientów są zazwyczaj udokumentowane. Dostęp do artykułów z bazy wiedzy można uzyskać w witrynie [pomocy technicznej firmy Microsoft](https://support.microsoft.com) w sieci Web.
+Możesz wyszukać artykuły w bazie wiedzy (KB) w trybie online, aby zapoznać się z artykułami dotyczącymi problemów produktów. Nie wszystkie problemy mają odpowiadające im artykuły z bazy wiedzy, ale zazwyczaj udokumentowano błędy napotykane przez znaczną liczbę klientów. Dostęp do artykułów bazy wiedzy można uzyskać w witrynie sieci Web [Pomoc techniczna firmy Microsoft](https://support.microsoft.com) . Możesz również wyświetlić kolekcję artykułów bazy wiedzy dla programu Visual Studio na stronie [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
 
 ## <a name="developer-forums"></a>Fora dla deweloperów
 
-Fora umożliwiają interakcję z innymi deweloperami, a także z pracownikami firmy Microsoft. Jeśli napotkasz błąd, dla którego nie możesz znaleźć rozwiązania problemu, możesz opublikować pytania dotyczące problemu na forum. Można również przeszukać grupy dyskusyjne, aby sprawdzić, czy inne osoby opublikowały informacje o tym samym problemie.
+Fora umożliwiają współpracę z innymi deweloperami, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, którego nie można znaleźć, możesz ogłosić pytania dotyczące problemu na forum. Możesz również przeszukać grupy dyskusyjne, aby sprawdzić, czy inne osoby opublikowały ten sam problem.
 
-Dostęp do forów, blogów, czatów i innych zasobów można uzyskać w witrynie internetowej [microsoft technical communities.](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities)
+Dostęp do forów, blogów, rozmów i innych zasobów można uzyskać w witrynie sieci Web [społeczności firmy Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) .
 
 ## <a name="product-support"></a>Pomoc techniczna
 
-Jeśli po wypróbowaniu innych zasobów nadal masz pytania, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę [pomocy technicznej firmy Microsoft.](https://support.microsoft.com/en-us) Aby uzyskać informacje na temat pomocy technicznej produktu dostępne w danym obszarze, zobacz visual [studio opcje opinii](../../ide/feedback-options.md) strony.
+Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować się z pomocą techniczną firmy Microsoft, odwiedzając witrynę [Pomoc techniczna firmy Microsoft](https://support.microsoft.com/en-us) . Aby uzyskać informacje na temat pomocy technicznej dotyczącej produktów dostępnych w Twoim regionie, zobacz stronę [Opcje opinii programu Visual Studio](../../ide/feedback-options.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Rozwiązywanie problemów z błędami związanymi z siecią lub serwerem proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Rozwiązywanie problemów (Visual Studio dla komputerów Mac)](/visualstudio/mac/troubleshooting)

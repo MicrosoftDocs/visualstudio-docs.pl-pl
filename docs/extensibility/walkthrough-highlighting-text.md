@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bfd94a55fe207f5c20e2ed1e5630d62c73c9ba2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
+ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904721"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86418067"
 ---
 # <a name="walkthrough-highlight-text"></a>Wskazówki: wyróżnianie tekstu
 Do edytora można dodawać różne efekty wizualne przez tworzenie części składników Managed Extensibility Framework (MEF). W tym instruktażu pokazano, jak wyróżnić każde wystąpienie bieżącego wyrazu w pliku tekstowym. Jeśli słowo występuje więcej niż jeden raz w pliku tekstowym i położenie karetki w jednym wystąpieniu, każde wystąpienie zostanie wyróżnione.
@@ -104,7 +104,7 @@ Do edytora można dodawać różne efekty wizualne przez tworzenie części skł
     ```csharp
     public HighlightWordFormatDefinition()
     {
-                this.BackgroundColor = Colors.LightBlue;
+        this.BackgroundColor = Colors.LightBlue;
         this.ForegroundColor = Colors.DarkBlue;
         this.DisplayName = "Highlight Word";
         this.ZOrder = 5;
@@ -405,5 +405,5 @@ Do edytora można dodawać różne efekty wizualne przez tworzenie części skł
 
 4. Umieść kursor w jednym z wystąpień elementu "Hello". Każde wystąpienie powinno być wyróżnione kolorem niebieskim.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
