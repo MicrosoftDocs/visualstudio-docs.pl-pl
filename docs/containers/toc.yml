@@ -11,15 +11,13 @@
           href: container-tools.md
         - name: Aplikacja jednostronicowa platformy React.js w kontenerze
           href: container-tools-react.md
-        - name: Programowanie na platformie Kubernetes przy użyciu usługi Azure Dev Spaces >>
-          href: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - name: Tworzenie na platformie Kubernetes
+          href: local-process-kubernetes.md
     - name: Samouczki
       expanded: true
       items:
         - name: Aplikacja obsługująca wiele kontenerów przy użyciu narzędzia Docker Compose
           href: tutorial-multicontainer.md
-        - name: Platforma Kubernetes w programie Visual Studio
-          href: tutorial-kubernetes-tools.md
     - name: Instrukcje
       items:
         - name: Debugowanie aplikacji w lokalnym kontenerze platformy Docker
@@ -48,3 +46,11 @@
           href: docker-compose-properties.md
         - name: Ustawienia uruchamiania
           href: container-launch-settings.md
+- name: Tworzenie przy użyciu platformy Kubernetes
+  items:
+    - name: Platforma Kubernetes w programie Visual Studio
+      href: tutorial-kubernetes-tools.md
+    - name: Proces lokalny z platformą Kubernetes (wersja zapoznawcza)
+      href: local-process-kubernetes.md
+    - name: Jak działa proces lokalny z platformą Kubernetes (wersja zapoznawcza)
+      href: overview-local-process-kubernetes.md
