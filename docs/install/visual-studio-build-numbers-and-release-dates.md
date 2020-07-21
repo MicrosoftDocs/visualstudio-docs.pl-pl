@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 63a9929ea4e70a085f41e0f3dd2f8a71c1eb487e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 641119c278f5bd489eb45b4e97ad2c89c4529c59
+ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386189"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86476033"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -27,12 +27,12 @@ ms.locfileid: "86386189"
 
 W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Visual Studio 2019.
 
-| **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
+| **Wersja**| **Ukierunkowan** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.7.0 | Wersja zapoznawcza 4 | 14 lipca 2020 | 16.7.30310.162 |
-| 16.6.4 | Wydanie | 14 lipca 2020 | 16.6.30309.148 |
-| 16.4.11 | Wydanie | 14 lipca 2020 | 16.4.30308.118 |
-| 16.0.16 | Wydanie | 14 lipca 2020 | 16.0.28803.791 |
+| 16.7.0 | Wersja zapoznawcza 4 | 14 lipca 2020 r. | 16.7.30310.162 |
+| 16.6.4 | Wydanie | 14 lipca 2020 r. | 16.6.30309.148 |
+| 16.4.11 | Wydanie | 14 lipca 2020 r. | 16.4.30308.118 |
+| 16.0.16 | Wydanie | 14 lipca 2020 r. | 16.0.28803.791 |
 | 16.6.3 | Wydanie | 30 czerwca 2020 r. | 16.6.30225.117 |
 | 16.7.0 | Wersja zapoznawcza 3,1 | 25 czerwca 2020 | 16.7.30223.230 |
 | 16.7.0 | Wersja zapoznawcza 3 | 23 czerwca 2020 | 16.7.30218.91 |
@@ -159,9 +159,9 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Visual Studio 2017.
 
-| **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
+| **Wersja**| **Ukierunkowan** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.25 | Wydanie | 14 lipca 2020 | 15.9.28307.1216 |
+| 15.9.25 | Wydanie | 14 lipca 2020 r. | 15.9.28307.1216 |
 | 15.9.24 | Wydanie | 9 czerwca 2020 r. | 15.9.28307.1177 |
 | 15.9.23 | Wydanie | 12 maj 2020 r. | 15.9.28307.1146 |
 | 15.9.22 | Wydanie | 14 kwietnia 2020 r. | 15.9.28307.1093 |
@@ -339,7 +339,8 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Rytm wydawania programu Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Harmonogram działania programu Visual Studio](/visualstudio/productinfo/vs-roadmap)
+* [Rytm wydawania programu Visual Studio](/visualstudio/productinfo/release-rhythm)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
