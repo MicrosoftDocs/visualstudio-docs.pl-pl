@@ -3,21 +3,21 @@ title: Projektanci działań Projektant przepływu pracy — elementy pierwotne
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b71b8d882bd91525c0fdbe5504cd4b44110f51
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b5300af2bc011cb6ae5255d2d55aa425ca9f1925
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188932"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875920"
 ---
 # <a name="primitives-activity-designers"></a>Projektanci działań Primitives
 
-Projektanci działań podstawowych służą do tworzenia i konfigurowania różnych działań w przestrzeni nazw <xref:System.Activities.Statements>, takich jak przypisanie i opóźnienie. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z Projektant przepływu pracy działań i projektantów szablonów.
+Projektanci działań podstawowych służą do tworzenia i konfigurowania różnych działań w <xref:System.Activities.Statements> przestrzeni nazw, takich jak Przypisywanie i opóźnienie. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z Projektant przepływu pracy działań i projektantów szablonów.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)

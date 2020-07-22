@@ -1,7 +1,7 @@
 ---
 title: Zmiana sygnatury metody
 description: Dodaj, Usuń lub Zmień kolejność parametrów metody. Kliknij prawym przyciskiem myszy metodę, wybierz pozycję szybkie akcje i refaktoryzacje, a następnie wybierz pozycję Zmień sygnaturę.
-ms.date: 06/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283887"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869571"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Zmiana refaktoryzacji sygnatury metody
 
@@ -79,16 +79,7 @@ To Refaktoryzacja dotyczy:
 
     ![Okno dialogowe Zmienianie sygnatury](media/change-signature.png)
 
-6. Naciśnij przycisk **OK** , aby wyświetlić zmiany.
-   - C#:
-
-      ![Zmień wynik podpisu-C #](media/changesignature-result-cs.png)
-
-   - Visual Basic:
-
-      ![Zmień wynik podpisu — Visual Basic](media/changesignature-result-vb.png)
-
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

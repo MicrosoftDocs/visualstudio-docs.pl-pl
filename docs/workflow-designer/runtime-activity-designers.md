@@ -3,17 +3,17 @@ title: Projektant przepływu pracy — Projektanci działań środowiska uruchom
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c553b7069243d5a701b94fd1f5f011e4075d4c9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 366a590daefa2fae33b3e76959444ad7fc9d2504
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188920"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875491"
 ---
 # <a name="runtime-activity-designers"></a>Projektanci działań Runtime
 Projektanci działań środowiska uruchomieniowego są używane do utrwalania i kończenia działań przepływu pracy. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące korzystania z projektantów działań Projektant przepływu pracy.

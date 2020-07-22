@@ -1,45 +1,45 @@
 ---
-title: Projektant przepływu pracy — Wyczyść projektanta działań <T>
+title: Projektant przepływu pracy-ClearCollection — <T> Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4808c046c4da23bc5c95d3978965afd938962f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a96f0b56172684c5c82910b34f40aa44fd6aec81
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650690"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876180"
 ---
-# <a name="clearcollectiont-activity-designer"></a>Wyczyść \<T projektanta działań >
+# <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T>, projektant działań
 
-**@No__t_1T clearcollection >** Designer służy do tworzenia i konfigurowania działania <xref:System.Activities.Statements.ClearCollection%601>.
+Projektant działań **ClearCollection \<T> ** służy do tworzenia i konfigurowania <xref:System.Activities.Statements.ClearCollection%601> działania.
 
-## <a name="the-clearcollectiont-activity"></a>Działanie > Wyczyśćcollection \<T
+## <a name="the-clearcollectiont-activity"></a>Działanie ClearCollection \<T>
 
-Działanie <xref:System.Activities.Statements.ClearCollection%601> czyści określoną kolekcję wszystkich elementów.
+<xref:System.Activities.Statements.ClearCollection%601>Działanie czyści określoną kolekcję wszystkich elementów.
 
-### <a name="using-the-clearcollectiont-activity-designer"></a>Korzystanie z programu ClearCollection \<T > Projektant działań
+### <a name="using-the-clearcollectiont-activity-designer"></a>Korzystanie z \<T> projektanta działania ClearCollection
 
-Program **clearcollection \<T >** Projektant działań można znaleźć w kategorii **kolekcji** **przybornika**, do którego jest uzyskiwany dostęp, klikając kartę **przybornika** w Projektant przepływu pracy. Alternatywnie wybierz pozycję **Przybornik** z menu **Widok** lub naciśnij **klawisze CTRL** +**Alt** +**X**.
+Projektant **działań \<T> ClearCollection** można znaleźć w kategorii **kolekcji** **przybornika**, do którego jest uzyskiwany dostęp, klikając kartę **przybornika** Projektant przepływu pracy. Alternatywnie możesz wybrać **Przybornik** z menu **Widok** lub nacisnąć **klawisze CTRL** + **Alt** + **X**.
 
-**@No__t_1T Wyczyść** projektanta działań > można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracyą powierzchnię wszędzie tam, gdzie działania są umieszczane, na przykład w <xref:System.Activities.Statements.Sequence>. Porzucenie projektanta działań powoduje utworzenie działania <xref:System.Activities.Statements.ClearCollection%601> z domyślnym <xref:System.Activities.Activity.DisplayName%2A>m ClearCollection < Int32 \>. (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) Wartość <xref:System.Activities.Activity.DisplayName%2A> można edytować w nagłówku projektanta działań **clearcollection < t \>** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
+Projektant działań **ClearCollection \<T> ** można przeciągnąć z **przybornika** i porzucić na Projektant przepływu pracy powierzchnię, wszędzie tam, gdzie działania są umieszczane, na przykład wewnątrz <xref:System.Activities.Statements.Sequence> . Porzucenie projektanta działań powoduje utworzenie <xref:System.Activities.Statements.ClearCollection%601> działania z wartością domyślną <xref:System.Activities.Activity.DisplayName%2A> clearcollection<Int32 \> . (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A>Wartość może być edytowana w nagłówku projektanta działania **clearcollection<T \> ** lub w polu **DisplayName** siatki właściwości. Inne właściwości muszą być edytowane w siatce właściwości.
 
-### <a name="the-clearcollectiont-properties"></a>Właściwości > \<T czyszczenia
+### <a name="the-clearcollectiont-properties"></a>Właściwości ClearCollection \<T>
 
-W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.ClearCollection%601> i opisano sposób ich używania w projektancie.
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.ClearCollection%601> właściwości i opisano sposób ich użycia w projektancie.
 
-|Nazwa właściwości|Wymagane|Użycie|
+|Nazwa właściwości|Wymagany|Użycie|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.ClearCollection%601>. Wartość domyślna to ClearCollection < Int32 \>. Mimo że wartość <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
-|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|Oznacza|Określa kolekcję, która ma zostać wyczyszczona elementów. Ta kolekcja jest typu **\<TypeArgument ICollection >.** Aby określić kolekcję, wpisz wyrażenie Visual Basic w siatce właściwości.|
-|*Elementu TypeArgument*|Oznacza|Określa typ T elementów zawartych w <xref:System.Collections.Generic.ICollection%601>. Domyślnie ten typ *elementu TypeArgument* jest ustawiony na **Int32**. Aby zmienić typ, Zmień wartość *elementu TypeArgument* w polu kombi w siatce właściwości.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Określa opcjonalną przyjazną nazwę <xref:System.Activities.Statements.ClearCollection%601> działania. Wartość domyślna to ClearCollection<Int32 \> . Chociaż <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|Prawda|Określa kolekcję, która ma zostać wyczyszczona elementów. Ta kolekcja jest typu **ICollection \<TypeArgument> .** Aby określić kolekcję, wpisz wyrażenie Visual Basic w siatce właściwości.|
+|*Elementu TypeArgument*|Prawda|Określa typ T elementów zawartych w <xref:System.Collections.Generic.ICollection%601> . Domyślnie ten typ *elementu TypeArgument* jest ustawiony na **Int32**. Aby zmienić typ, Zmień wartość *elementu TypeArgument* w polu kombi w siatce właściwości.|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0918ee1fc0676f37445f14b078c48c365144644c
-ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
+ms.openlocfilehash: 1a840d4aca1a6eda3f549278e36a1d64725cd8ad
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86476020"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869623"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 
@@ -238,9 +238,7 @@ Ta opcja może pomóc wyizolować problematyczny test, który powoduje awarię h
 </DataCollector>
 ```
 
-## <a name="testrunparameters-element"></a>TestRunParameters, element
-
-Parametry przebiegu testowego zapewniają sposób definiowania zmiennych i wartości, które są dostępne dla testów w czasie wykonywania. 
+### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
 <TestRunParameters>
@@ -249,17 +247,20 @@ Parametry przebiegu testowego zapewniają sposób definiowania zmiennych i warto
 </TestRunParameters>
 ```
 
-W kodzie testowym Uzyskuj dostęp do parametrów przy użyciu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> Właściwości:
+Parametry przebiegu testowego zapewniają sposób definiowania zmiennych i wartości, które są dostępne dla testów w czasie wykonywania. Uzyskaj dostęp do parametrów przy użyciu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> właściwości MSTest (lub nunit [TestContext](https://docs.nunit.org/articles/nunit/writing-tests/TestContext.html)):
 
 ```csharp
-[TestMethod]
+private string _appUrl;
+public TestContext TestContext { get; set; }
+
+[TestMethod] // [Test] for NUnit
 public void HomePageTest()
 {
-    string appURL = TestContext.Properties["webAppUrl"];
+    string _appURL = TestContext.Properties["webAppUrl"];
 }
 ```
 
-Aby użyć parametrów przebiegu testowego, Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole prywatne i Właściwość publiczną <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> do klasy testowej.
+Aby użyć parametrów przebiegu testowego, Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> Właściwość publiczną do klasy testowej.
 
 ## <a name="loggerrunsettings-element"></a>LoggerRunSettings, element
 
@@ -303,7 +304,7 @@ Te ustawienia są specyficzne dla adaptera testowego, który uruchamia metody te
 </MSTest>
 ```
 
-|Konfiguracja|Domyślne|Wartości|
+|Konfigurowanie|Domyślne|Wartości|
 |-|-|-|
 |**ForcedLegacyMode**|fałsz|W programie Visual Studio 2012 karta MSTest została zoptymalizowana tak, aby była szybsza i bardziej skalowalna. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** , aby użyć starszego adaptera testowego.<br /><br />Można na przykład użyć tego ustawienia, jeśli istnieje plik *app.config* określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|fałsz|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w MSTest lub z Microsoft Test Manager (przestarzałe w programie Visual Studio 2017). To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz, [które testy należy uruchomić od poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
