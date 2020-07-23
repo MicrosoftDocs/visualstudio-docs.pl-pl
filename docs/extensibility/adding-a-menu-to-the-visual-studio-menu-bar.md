@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39dee051991efe05b9a661ce1d213e71b456590b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 61321555a6896fad926d2ee38c5d73d50801d6b9
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904254"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972351"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Dodawanie menu do paska menu programu Visual Studio
 
@@ -26,7 +26,7 @@ Przed dodaniem nowego menu do paska menu programu Visual Studio należy rozważy
 
 Menu są zadeklarowane w pliku *. vsct* projektu. Aby uzyskać więcej informacji na temat menu i plików *. vsct* , zobacz [polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).
 
-Wykonując ten Instruktaż, można utworzyć menu o nazwie **TestMenu** , które zawiera jedno polecenie.
+Wykonując ten Instruktaż, można utworzyć menu o nazwie **menu testowego** , które zawiera jedno polecenie.
 
 :::moniker range=">=vs-2019"
 > [!NOTE]
@@ -41,7 +41,17 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Utwórz projekt VSIX o nazwie `TopLevelMenu` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".  Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
+::: moniker range="vs-2017"
+
 2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
+
+::: moniker-end
 
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Tworzenie menu na pasku menu IDE
 
@@ -49,13 +59,13 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. W **Eksplorator rozwiązań**Otwórz *TestCommandPackage. vsct*.
 
-    Na końcu pliku znajduje się \<Symbols> węzeł, który zawiera kilka \<GuidSymbol> węzłów. W węźle o nazwie guidTestCommandPackageCmdSet Dodaj nowy symbol w następujący sposób:
+    Na końcu pliku znajduje się `<Symbols>` węzeł, który zawiera kilka `<GuidSymbol>` węzłów. W węźle o nazwie `guidTestCommandPackageCmdSet` Dodaj nowy symbol w następujący sposób:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Utwórz pusty \<Menus> węzeł w \<Commands> węźle tuż przed \<Groups> . W \<Menus> węźle Dodaj \<Menu> węzeł w następujący sposób:
+2. Utwórz pusty `<Menus>` węzeł w `<Commands>` węźle tuż przed `<Groups>` . W `<Menus>` węźle Dodaj `<Menu>` węzeł w następujący sposób:
 
    ```xml
    <Menus>
@@ -63,8 +73,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
            <Parent guid="guidSHLMainMenu"
                    id="IDG_VS_MM_TOOLSADDINS" />
            <Strings>
-             <ButtonText>TestMenu</ButtonText>
-             <CommandName>TestMenu</CommandName>
+             <ButtonText>Test Menu</ButtonText>
            </Strings>
        </Menu>
    </Menus>
@@ -74,9 +83,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
     `guid`Wartości i `id` pozycji elementu nadrzędnego menu w sekcji na pasku menu programu Visual Studio, które zawierają menu Narzędzia i dodatki.
 
-    Wartość `CommandName` ciągu określa, że tekst powinien pojawić się w elemencie menu.
+    `<ButtonText>`Element określa, że tekst powinien pojawić się w elemencie menu.
 
-3. W \<Groups> sekcji Znajdź \<Group> i Zmień \<Parent> element, aby wskazywał menu, które właśnie dodałeś:
+3. W `<Groups>` sekcji Znajdź `<Group>` i Zmień `<Parent>` element, aby wskazywał menu, które właśnie dodałeś:
 
    ```xml
    <Groups>
@@ -94,13 +103,13 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. W **Eksplorator rozwiązań**Otwórz *TopLevelMenuPackage. vsct*.
 
-    Na końcu pliku znajduje się \<Symbols> węzeł, który zawiera kilka \<GuidSymbol> węzłów. W węźle o nazwie guidTopLevelMenuPackageCmdSet Dodaj nowy symbol w następujący sposób:
+    Na końcu pliku znajduje się `<Symbols>` węzeł, który zawiera kilka `<GuidSymbol>` węzłów. W węźle o nazwie `guidTopLevelMenuPackageCmdSet` Dodaj nowy symbol w następujący sposób:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Utwórz pusty \<Menus> węzeł w \<Commands> węźle tuż przed \<Groups> . W \<Menus> węźle Dodaj \<Menu> węzeł w następujący sposób:
+2. Utwórz pusty `<Menus>` węzeł w `<Commands>` węźle tuż przed `<Groups>` . W `<Menus>` węźle Dodaj `<Menu>` węzeł w następujący sposób:
 
    ```xml
    <Menus>
@@ -108,8 +117,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
            <Parent guid="guidSHLMainMenu"
                    id="IDG_VS_MM_TOOLSADDINS" />
            <Strings>
-             <ButtonText>TestMenu</ButtonText>
-             <CommandName>TestMenu</CommandName>
+             <ButtonText>Test Menu</ButtonText>
            </Strings>
        </Menu>
    </Menus>
@@ -119,9 +127,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
     `guid`Wartości i `id` pozycji elementu nadrzędnego menu w sekcji na pasku menu programu Visual Studio, które zawierają menu Narzędzia i dodatki.
 
-    Wartość `CommandName` ciągu określa, że tekst powinien pojawić się w elemencie menu.
+    `<ButtonText>`Element określa, że tekst powinien pojawić się w elemencie menu.
 
-3. W \<Groups> sekcji Znajdź \<Group> i Zmień \<Parent> element, aby wskazywał menu, które właśnie dodałeś:
+3. W `<Groups>` sekcji Znajdź `<Group>` i Zmień `<Parent>` element, aby wskazywał menu, które właśnie dodałeś:
 
    ```xml
    <Groups>
@@ -135,7 +143,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker-end
 
-4. Znajdź `Buttons` sekcję. Zwróć uwagę, że [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablon pakietu spowodował wygenerowanie `Button` elementu, który ma jego element nadrzędny ustawiony na `MyMenuGroup` . W związku z tym to polecenie pojawia się w menu.
+4. `<Buttons>`Znajdź węzeł w sekcji `<Button>` . Następnie w `<Strings>` węźle Zmień `<ButtonText>` element na `Test Command` .
+
+    Zwróć uwagę, że [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablon pakietu spowodował wygenerowanie `Button` elementu, który ma jego element nadrzędny ustawiony na `MyMenuGroup` . W związku z tym to polecenie pojawia się w menu.
 
 ## <a name="build-and-test-the-extension"></a>Kompiluj i Testuj rozszerzenie
 
@@ -143,20 +153,20 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker range="vs-2017"
 
-2. Pasek menu w eksperymentalnym wystąpieniu powinien zawierać menu **TestMenu** .
+2. Pasek menu w eksperymentalnym wystąpieniu powinien zawierać menu **menu testowego** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Menu **rozszerzeń** w eksperymentalnym wystąpieniu powinno zawierać menu **TestMenu** .
+2. Menu **rozszerzenia** w eksperymentalnym wystąpieniu powinno zawierać menu **menu testowego** .
 
 ::: moniker-end
 
-3. W menu **TestMenu** kliknij polecenie **Invoke test**.
+3. W menu **test menu** , kliknij **polecenie Testuj**.
 
-     Powinien pojawić się okno komunikatu z komunikatem "pakiet TestCommand wewnątrz TopLevelMenu. TestCommand. MenuItemCallback ()".
+    Powinien pojawić się okno komunikatu z komunikatem "TestCommand wewnątrz TopLevelMenu. TestCommand. MenuItemCallback ()".
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

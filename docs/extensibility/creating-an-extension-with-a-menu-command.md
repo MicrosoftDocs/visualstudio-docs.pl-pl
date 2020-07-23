@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9e9963e05b0991beaea7da4027f4db3df4e4eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903920"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972338"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
 
@@ -32,7 +32,17 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 1. Utwórz projekt VSIX o nazwie **FirstMenuCommand**. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
 
+::: moniker range="vs-2017"
+
 2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **FirstCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstCommand.cs*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **FirstCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do rozszerzalności **Visual C#**  >  **Extensibility** i wybierz **polecenie**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *FirstCommand.cs*.
+
+::: moniker-end
 
 3. Skompiluj projekt i Rozpocznij debugowanie.
 
@@ -50,7 +60,7 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker-end
 
-Teraz przejdź do menu **Narzędzia** w wystąpieniu eksperymentalnym. Powinien pojawić się polecenie **Invoke FirstCommand** . W tym momencie polecenie wyświetla okno komunikatu z informacją, że **FirstCommandPackage wewnątrz FirstMenuCommand. FirstCommand. MenuItemCallback ()**. Zobaczymy, jak faktycznie uruchomić Notatnik z tego polecenia w następnej sekcji.
+Teraz przejdź do menu **Narzędzia** w wystąpieniu eksperymentalnym. Powinien pojawić się polecenie **Invoke FirstCommand** . W tym momencie polecenie wyświetla okno komunikatu z informacją, że **FirstCommand wewnątrz FirstMenuCommand. FirstCommand. MenuItemCallback ()**. Zobaczymy, jak faktycznie uruchomić Notatnik z tego polecenia w następnej sekcji.
 
 ## <a name="change-the-menu-command-handler"></a>Zmień procedurę obsługi poleceń menu
 
@@ -77,11 +87,13 @@ Teraz zaktualizujmy procedurę obsługi poleceń, aby uruchomić Notatnik.
     }
     ```
 
-3. Usuń `MenuItemCallback` metodę i Dodaj `StartNotepad` metodę, która spowoduje jedynie uruchomienie Notatnika:
+3. Usuń `Execute` metodę i Dodaj `StartNotepad` metodę, która spowoduje jedynie uruchomienie Notatnika:
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
     {
+        ThreadHelper.ThrowIfNotOnUIThread();
+
         Process proc = new Process();
         proc.StartInfo.FileName = "notepad.exe";
         proc.Start();
@@ -102,7 +114,7 @@ Możesz uzyskać dostęp do tego skryptu na jeden z dwóch sposobów:
 
 2. W wierszu polecenia Uruchom następujące polecenie:
 
-    ```xml
+    ```cmd
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
@@ -113,7 +125,7 @@ Teraz, gdy masz już swoje rozszerzenie narzędzia, Możesz pomyśleć o udostę
 
 Plik *VSIX* dla tego rozszerzenia można znaleźć w katalogu bin *FirstMenuCommand* . W celu założenia, że została skompilowana konfiguracja wydania, będzie ona dostępna w:
 
-*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand. vsix*
+*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 
 Aby zainstalować rozszerzenie, znajomy musi zamknąć wszystkie otwarte wystąpienia programu Visual Studio, a następnie kliknąć dwukrotnie plik *. vsix* , który powoduje uruchomienie **Instalatora VSIX**. Pliki są kopiowane do katalogu *%LocalAppData%\Microsoft\VisualStudio \<version> \Extensions* .
 

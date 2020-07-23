@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543731"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972364"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -183,7 +183,7 @@ Jeśli pracujesz z językiem Python 2,7, zapoznaj się z tematem [Rozszerzanie k
     #include <Python.h>
     ```
 
-1. Zmodyfikuj `tanh_impl` metodę, aby akceptować i zwracać typy języka Python (a `PyOjbect*` , czyli):
+1. Zmodyfikuj `tanh_impl` metodę, aby akceptować i zwracać typy języka Python (a `PyObject*` , czyli):
 
     ```cpp
     PyObject* tanh_impl(PyObject *, PyObject* o) {
@@ -410,6 +410,6 @@ Istnieją różne metody tworzenia rozszerzeń języka Python zgodnie z opisem w
 | cffi | 2013 | [Kryptografia](https://cryptography.io/en/latest/), [PyPy](https://pypy.org/) | Łatwość integracji i zgodność PyPy. | Nowsze, mniej dojrzałe. |
 | [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Podobne do cffi przy użyciu języka C++. | Nowszy może mieć pewne problemy z programem VS 2017. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 Ukończony przykład z tego przewodnika można znaleźć w języku [Python-Samples-vs-CPP-Extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).
