@@ -6,12 +6,12 @@ ms.topic: conceptual
 description: Opisuje procesy związane z używaniem procesu lokalnego z usługą Kubernetes w celu połączenia komputera deweloperskiego z klastrem Kubernetes
 keywords: Proces lokalny z Kubernetes, Docker, Kubernetes, Azure, Containers
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: adde9d8ecab93bdb6f0aebbd74730ef60bd80cf6
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454336"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133982"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Jak działa proces lokalny z usługą Kubernetes
 
@@ -40,6 +40,44 @@ Gdy proces lokalny z usługą Kubernetes nawiązuje połączenie z klastrem,:
 
 Po nawiązaniu połączenia z klastrem można uruchomić i debugować kod natywnie na komputerze bez kontenerach, a kod może bezpośrednio współdziałać z resztą klastra. Każdy ruch sieciowy odbierany przez agenta zdalnego jest przekierowywany do portu lokalnego określonego podczas połączenia, dzięki czemu kod natywnie uruchomiony może zaakceptować i przetworzyć ten ruch. Zmienne środowiskowe, woluminy i wpisy tajne z klastra są udostępniane w kodzie uruchomionym na komputerze deweloperskim. Ponadto ze względu na to, że wpisy pliku Hosts i przekazywanie portów zostały dodane do komputera dewelopera przez proces lokalny z Kubernetes, kod może wysyłać ruch sieciowy do usług uruchomionych w klastrze przy użyciu nazw usług z klastra, a ruch jest przesyłany do usług uruchomionych w klastrze. Ruch jest kierowany między komputerem deweloperskim i klastrem przez cały czas, gdy masz połączenie.
 
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Korzystanie z funkcji routingu do programowania w izolacji
+
+Domyślnie proces lokalny z usługą Kubernetes przekierowuje cały ruch dla usługi do komputera deweloperskiego. Istnieje również możliwość użycia funkcji routingu do przekierowywania tylko żądań do usługi pochodzącej z poddomeny do komputera deweloperskiego. Dzięki tym funkcjom routingu można korzystać z procesu lokalnego z Kubernetes, aby rozwijać izolację i unikać zakłócania innego ruchu w klastrze.
+
+Poniższe animacje przedstawiają dwóch deweloperów pracujących nad tym samym klastrem w izolacji:
+
+![Animowanie izolowania obrazu GIF](media/local-process-kubernetes/lpk-graphic-isolated.gif)
+
+Po włączeniu pracy w trybie izolacji proces lokalny z programem Kubernetes wykonuje następujące czynności oprócz nawiązywania połączenia z klastrem Kubernetes:
+
+* Sprawdza, czy klaster Kubernetes nie ma włączonej Azure Dev Spaces.
+* Replikuje wybraną usługę w klastrze w tej samej przestrzeni nazw i dodaje etykietę *Routing.VisualStudio.IO/Route-from=service_name* i *Routing.VisualStudio.IO/Route-on-header=Kubernetes-Route-as: GENERATED_NAME* adnotację.
+* Konfiguruje i uruchamia Menedżera routingu w tej samej przestrzeni nazw klastra Kubernetes. Menedżer routingu używa selektora etykiet do wyszukiwania etykiet *Routing.VisualStudio.IO/Route-from=service_name* i *Routing.VisualStudio.IO/Route-on-header=Kubernetes-Route-as: GENERATED_NAME* adnotacji podczas konfigurowania routingu w przestrzeni nazw.
+
+Jeśli proces lokalny z Kubernetes wykryje, że Azure Dev Spaces jest włączona w klastrze Kubernetes, zostanie wyświetlony monit o wyłączenie Azure Dev Spaces przed użyciem procesu lokalnego z Kubernetes.
+
+Podczas uruchamiania Menedżer routingu wykonuje następujące czynności:
+* Duplikuje wszystkie ingresses Znalezione w przestrzeni nazw za pomocą *GENERATED_NAME* dla domeny podrzędnej. 
+* Tworzy wysłannika pod dla każdej usługi skojarzonej z powielonym ingresses z poddomeną *GENERATED_NAME* .
+* Tworzy dodatkowy wysłannika pod względem usługi, w której pracujesz w izolacji. Pozwala to na kierowanie żądań z poddomeną do komputera deweloperskiego.
+* Konfiguruje reguły routingu dla każdego wysłannika pod względem obsługi routingu dla usług z poddomeną.
+
+Gdy w klastrze zostanie odebrane żądanie z poddomeną *GENERATED_NAME* , do żądania zostanie dodany nagłówek *Kubernetes-Route-as = GENERATED_NAME* . Wysłannika, które obsługują Routing, który żąda odpowiedniej usługi w klastrze. Jeśli żądanie jest kierowane do usługi, która jest przetwarzana w izolacji, żądanie jest przekierowywane do komputera deweloperskiego przez agenta zdalnego.
+
+Gdy w klastrze zostanie odebrane żądanie bez poddomeny *GENERATED_NAME* , nagłówek nie zostanie dodany do żądania. Wysłannika, które obsługują Routing, który żąda odpowiedniej usługi w klastrze. Jeśli żądanie jest kierowane do usługi, która jest zastępowana, to żądanie jest wysyłane do oryginalnej usługi zamiast agenta zdalnego.
+
+> [!IMPORTANT]
+> Każda usługa w klastrze musi przesłać dalej nagłówek *Kubernetes-Route-as = GENERATED_NAME* podczas wykonywania dodatkowych żądań. Na przykład gdy *Usługa Service* w odbierze żądanie, wysyła żądanie *serviceB* przed zwróceniem odpowiedzi. W tym przykładzie *Usługa Service* . musi przesłać dalej nagłówek *Kubernetes-Route-as = GENERATED_NAME* w żądaniu do *serviceB*. Niektóre języki, takie jak [ASP.NET][asp-net-header], mogą mieć metody obsługi propagacji nagłówka.
+
+Po rozłączeniu z klastrem domyślnie proces lokalny z programem Kubernetes usunie wszystkie wysłannikay i powieloną usługę. 
+
+> KORYGUJĄC Wdrożenie i usługa Menedżera routingu pozostaną uruchomione w Twojej przestrzeni nazw. Aby usunąć wdrożenie i usługę, uruchom następujące polecenia dla swojej przestrzeni nazw.
+>
+> ```azurecli
+> kubectl delete deployment routingmanager-deployment -n NAMESPACE
+> kubectl delete service routingmanager-service -n NAMESPACE
+> ```
+
 ## <a name="diagnostics-and-logging"></a>Diagnostyka i rejestrowanie
 
 W przypadku korzystania z procesu lokalnego z Kubernetes w celu nawiązania połączenia z klastrem dzienniki diagnostyczne z klastra są rejestrowane w [katalogu tymczasowym][azds-tmp-dir]komputera deweloperskiego.
@@ -52,11 +90,17 @@ Proces lokalny z Kubernetes ma następujące ograniczenia:
 * Aby można było połączyć się z tą usługą, usługa musi być objęta usługą. Nie można nawiązać połączenia z usługą z wieloma zasobnikami, takimi jak usługa z replikami.
 * W przypadku procesu lokalnego z usługą Kubernetes w celu pomyślnego nawiązania połączenia na komputerze może znajdować się tylko jeden kontener uruchomiony w tym pod. Proces lokalny z usługą Kubernetes nie może połączyć się z usługami za pomocą zasobników z dodatkowymi kontenerami, takimi jak kontenery przyczepek z systemem.
 * Proces lokalny z Kubernetes wymaga podniesionych uprawnień do uruchamiania na komputerze deweloperskim, aby można było edytować plik Hosts.
+* Nie można używać procesu lokalnego z usługą Kubernetes w przypadku klastrów z włączonym Azure Dev Spaces.
+
+### <a name="local-process-with-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Proces lokalny z Kubernetes i klastrami z włączonym Azure Dev Spaces
+
+Nie można użyć procesu lokalnego z Kubernetes w klastrze z włączonym Azure Dev Spaces. Jeśli chcesz użyć procesu lokalnego z Kubernetes w klastrze z włączonym Azure Dev Spaces, musisz wyłączyć Azure Dev Spaces przed nawiązaniem połączenia z klastrem.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Aby rozpocząć korzystanie z procesu lokalnego z usługą Kubernetes w celu nawiązania połączenia z lokalnym komputerem deweloperskim z klastrem, zobacz [Korzystanie z procesu lokalnego z Kubernetes](local-process-kubernetes.md).
 
+[asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest

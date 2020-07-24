@@ -1,27 +1,27 @@
 ---
-ms.openlocfilehash: 09d58e682424e09f0e8d5c37c1c6e0b8839495d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf93d619ddeb385960eae74de8b64a7f11b7be4d
+ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62422088"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115296"
 ---
 # <a name="visual-studio-documentation"></a>Dokumentacja programu Visual Studio
 
-Witaj! To repozytorium zawiera pliki źródłowe dla dokumentacji technicznej programu Visual Studio. Tematy są publikowane na [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
+Witamy! To repozytorium zawiera pliki źródłowe dokumentacji technicznej programu Visual Studio. Tematy są publikowane w witrynie [docs.Microsoft.com](https://docs.microsoft.com/visualstudio).
 
-To repozytorium zostało przeniesione 23 czerwca https://github.com/Microsoft/vsdocs2017 r. z . Ruch do starych adresów URL jest przekierowywane tutaj.
+To repozytorium zostało przeniesione z 23 czerwca 2017 z https://github.com/Microsoft/vsdocs . Ruch do starych adresów URL jest przekierowywany w tym miejscu.
 
-Dokumentacja dla języka Visual Basic i Visual C# znajduje się w [repozytorium dotnet docs](https://github.com/dotnet/docs/tree/master/docs), a dokumentacja programu Visual C++ znajduje się w [repozytorium dokumentów C++](http://github.com/MicrosoftDocs/cpp-docs).
+Dokumentacja dla Visual Basic i Visual C# znajduje się w [repozytorium docs](https://github.com/dotnet/docs/tree/master/docs)w witrynie programu dotnet, a dokumentacja dotycząca Visual C++ znajduje się w [repozytorium dokumentacji języka C++](https://github.com/MicrosoftDocs/cpp-docs).
 
 ## <a name="contribute-to-the-documentation"></a>Współtworzenie dokumentacji
 
-Z zadowoleniem przyjmujemy twój wkład, aby pomóc nam udoskonalić dokumenty programu Visual Studio. Wszystkie artykuły w tym repozytorium używają znaczników o smaku GitHub.
+Zachęcamy do wnoszenia Twoich wkładów, aby pomóc nam ulepszyć dokumentację programu Visual Studio. Wszystkie artykuły w tym repozytorium korzystają z promocji z obsługą usługi GitHub.
 
-Kilka obszarów funkcji programu Visual Studio mają własne foldery w tym repozytorium, takie jak **debuger** dla tematów dotyczących debugowania, **ide** dla tematów w interaktywnym środowisku deweloperskim programu Visual Studio (IDE) i tak dalej. **Podfolder /media** w każdym folderze zawiera pliki grafiki dla tematów.
+Niektóre obszary funkcji programu Visual Studio mają swoje własne foldery w tym repozytorium, takie jak **debuger** tematów dotyczących debugowania, środowisko **IDE** dla tematów w programie Visual Studio Interactive Development Environment (IDE) i tak dalej. Podfolder **/Media** w każdym folderze zawiera pliki ozdobne tematów.
 
-Aby uzyskać więcej informacji na temat współtworzenia, zobacz [Przewodnik przyczyniający się](CONTRIBUTING.md).
+Aby uzyskać więcej informacji na temat współtworzenia, zobacz [Przewodnik dotyczący](CONTRIBUTING.md)współtworzenia.
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Kodeks postępowania oprogramowania Open Source firmy Microsoft
 
-W tym projekcie przyjęto [Kodeks postępowania oprogramowania Open Source firmy Microsoft](https://opensource.microsoft.com/codeofconduct/). Aby uzyskać więcej informacji, zapoznaj się [opencode@microsoft.com](mailto:opencode@microsoft.com) z często [zadawanymi pytaniami](https://opensource.microsoft.com/codeofconduct/faq/) dotyczącymi kodeksu postępowania lub kontaktem z pytaniami lub komentarzami.
+W tym projekcie przyjęto [Kodeks postępowania oprogramowania Open Source firmy Microsoft](https://opensource.microsoft.com/codeofconduct/). Aby uzyskać więcej informacji, zobacz [Kodeks postępowania — często zadawane pytania](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się [opencode@microsoft.com](mailto:opencode@microsoft.com) z pytaniami lub komentarzami.
