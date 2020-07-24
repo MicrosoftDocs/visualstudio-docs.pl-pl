@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 85929f803733026dfbf7ced8cf8553c3e96ed1c3
+  ms.sourcegitcommit: 239a8ed2c4474769297b42b5ce1f7c8694d62856
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "77904064"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "86944597"
 highlightedContent:
   items:
   - title: Konfiguracja i instalacja
@@ -207,4 +207,4 @@ additionalContent:
         url: /cpp/linux/
       - text: Programowanie dla wielu platform w środowisku .NET Core
         url: /dotnet/core/
-  footer: '[Blogi](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Zgłaszanie problemów](../ide/talk-to-us.md) - [Społeczność deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+  footer: '[Blogi](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Zgłaszanie problemów](../ide/talk-to-us.md) - [Społeczność deweloperów](https://developercommunity.visualstudio.com/spaces/8/index.html) - [Rozwiązywanie problemów](/troubleshoot/visualstudio/welcome-visual-studio)'
