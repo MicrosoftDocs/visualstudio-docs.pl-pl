@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66a98a822cd9aac6d93b4964e2e8bdadc98972e5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85381902"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235163"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
 W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić podczas wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, i przedstawiono kroki umożliwiające rozwiązanie każdego problemu.
@@ -136,6 +136,7 @@ W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić 
 | Skrótów nie można aktywować za pośrednictwem sieci. | Skróty do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji można uruchamiać tylko na lokalnym dysku twardym. Nie można ich uruchomić, otwierając adres URL wskazujący na plik skrótu na serwerze zdalnym. |
 | Aplikacja jest zbyt duża, aby można było uruchomić ją w trybie online w częściowej relacji zaufania. Skontaktuj się z dostawcą aplikacji lub administratorem systemu, aby uzyskać pomoc. | Aplikacja działająca w częściowej relacji zaufania nie może być większa niż połowa rozmiaru limitu przydziału aplikacji online, która domyślnie wynosi 250 MB. |
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Rozwiązywanie problemów z wdrożeniami technologii ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+- [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -1,6 +1,6 @@
 ---
 title: Zasoby do rozwiązywania problemów z błędami
-ms.date: 07/17/2020
+ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459284"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234734"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby do rozwiązywania błędów zintegrowanego środowiska programistycznego
 
@@ -109,7 +109,7 @@ Nie wszystkie komunikaty o błędach mają określony skojarzony temat pomocy. J
 
 ## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy
 
-Możesz wyszukać artykuły w bazie wiedzy (KB) w trybie online, aby zapoznać się z artykułami dotyczącymi problemów produktów. Nie wszystkie problemy mają odpowiadające im artykuły z bazy wiedzy, ale zazwyczaj udokumentowano błędy napotykane przez znaczną liczbę klientów. Dostęp do artykułów bazy wiedzy można uzyskać w witrynie sieci Web [Pomoc techniczna firmy Microsoft](https://support.microsoft.com) . Możesz również wyświetlić kolekcję artykułów bazy wiedzy dla programu Visual Studio na stronie [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
+Możesz wyszukać artykuły w bazie wiedzy (KB) w trybie online, aby zapoznać się z artykułami dotyczącymi problemów produktów. Nie wszystkie problemy mają odpowiadające im artykuły z bazy wiedzy, ale zazwyczaj udokumentowano błędy napotykane przez znaczną liczbę klientów. Artykuły bazy wiedzy dla programu Visual Studio można wyświetlić na stronie [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
 
 ## <a name="developer-forums"></a>Fora dla deweloperów
 
@@ -124,4 +124,5 @@ Jeśli nadal masz pytania po wypróbie innych zasobów, możesz skontaktować si
 ## <a name="see-also"></a>Zobacz także
 
 * [Rozwiązywanie problemów z błędami związanymi z siecią lub serwerem proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Rozwiązywanie problemów (Visual Studio dla systemu Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)
 * [Rozwiązywanie problemów (Visual Studio dla komputerów Mac)](/visualstudio/mac/troubleshooting)

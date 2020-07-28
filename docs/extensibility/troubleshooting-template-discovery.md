@@ -7,12 +7,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5225c741206e6a43ff024a5f184404f1ac2bc63
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904492"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235046"
 ---
 # <a name="troubleshooting-template-installation"></a>Rozwiązywanie problemów z instalacją szablonu
 
@@ -70,6 +70,7 @@ Plik dziennika zawiera następujące kolumny:
 > [!NOTE]
 > Aby wyłączyć rejestrowanie, usuń plik pkgdef lub zmień wartość `EnableTemplateDiscoveryLog` na `dword:00000000` , a następnie uruchom `devenv /updateConfiguration` ponownie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie niestandardowych szablonów projektów i elementów](creating-custom-project-and-item-templates.md)
+- [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -2,7 +2,7 @@
 title: Logowanie do programu Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 03/10/2020
+ms.date: 07/24/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285299"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235202"
 ---
 # <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
@@ -38,7 +38,7 @@ Po zalogowaniu się możesz wzbogacić środowisko programu Visual Studio. Na pr
 Poniżej znajduje się pełna lista elementów, których można oczekiwać, oraz czynności, które można wykonać po zalogowaniu:
 - **Zwiększ okres próbny programu Visual Studio** — możesz użyć Visual Studio Professional lub Visual Studio Enterprise przez dodatkowe 90 dni, a nie ograniczyć się do okresu próbnego 30 dni. Aby uzyskać więcej informacji, zobacz temat [zwiększanie wersji próbnej lub aktualizowanie licencji](../ide/how-to-unlock-visual-studio.md).
 
-- **Odblokuj wersję Visual Studio Community Edition** — Jeśli Twoja instalacja Community Edition poprosi o licencję, zaloguj się do środowiska IDE, aby odblokować siebie.
+- **Kontynuuj korzystanie z programu Visual Studio Community Edition** — Jeśli w ramach instalacji Community zostanie wyświetlony komunikat z prośbą o licencję, zaloguj się do środowiska IDE, aby nadal **bezpłatnie**korzystać z programu Visual Studio Community. 
 
 - **Odblokuj program Visual Studio, jeśli używasz konta skojarzonego z subskrypcją programu Visual Studio lub organizacją usługi Azure DevOps**. Aby uzyskać szczegółowe instrukcje, zobacz sekcję [zwiększanie wersji próbnej lub aktualizowanie licencji](../ide/how-to-unlock-visual-studio.md).
 
@@ -80,7 +80,7 @@ Jeśli nie wylogujesz się, nastąpi automatyczne zalogowanie do programu Visual
 
 Jeśli podczas logowania wystąpią jakiekolwiek problemy, skontaktuj się z [pomocą techniczną](https://visualstudio.microsoft.com/subscriptions/support/) , aby uzyskać pomoc.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Rozszerzanie wersji próbnej lub aktualizowanie licencji](../ide/how-to-unlock-visual-studio.md)
 * [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)

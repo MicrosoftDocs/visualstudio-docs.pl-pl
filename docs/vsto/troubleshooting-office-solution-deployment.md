@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679a6e753e61ecb1af9097692a741c35e531c7cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545746"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234981"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office
   Ten temat zawiera informacje o sposobach rozwiązywania typowych problemów, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.
@@ -129,3 +129,4 @@ ms.locfileid: "85545746"
 
 - [Rozwiązywanie problemów z wdrożeniami technologii ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

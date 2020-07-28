@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537322"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234695"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
   Podczas opracowywania rozwiązań pakietu Office w programie Visual Studio mogą wystąpić problemy związane z wykonywaniem następujących zadań:
@@ -217,3 +217,4 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 - [Rozwiązywanie problemów z rozwiązaniami pakietu Office](../vsto/troubleshooting-office-solutions.md)
 - [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)
 - [Rozwiązywanie problemów z wdrażaniem rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

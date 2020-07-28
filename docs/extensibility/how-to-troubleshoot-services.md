@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 588396f3f152222c4e79b03a1d733524a8ff3ca9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905730"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234955"
 ---
 # <a name="how-to-troubleshoot-services"></a>Instrukcje: Rozwiązywanie problemów z usługami
 Istnieje kilka typowych problemów, które mogą wystąpić podczas próby uzyskania usługi:
@@ -66,7 +66,8 @@ if (log == null) return;
 
     Jeśli okno narzędzi hostuje kontrolkę użytkownika lub inny kontener sterowania, kontener będzie zlokalizowany przez model składników systemu Windows i nie będzie miał dostępu do żadnych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usług. Możesz wywołać, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Aby uzyskać dostawcę usług pakietu VSPackage z poziomu kontenera kontroli.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Lista dostępnych usług](../extensibility/internals/list-of-available-services.md)
 - [Używanie i udostępnianie usług](../extensibility/using-and-providing-services.md)
 - [Podstawowa usługa](../extensibility/internals/service-essentials.md)
+- [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

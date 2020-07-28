@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Dowiedz się, jak ustawić preferencje dotyczące języka, kontaktów, poziomu subskrypcji i innych elementów w portalu administracyjnym
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183499"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234617"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Ustawianie preferencji dla umów w portalu administracyjnym
 Administratorzy mogą ustawić pewne preferencje w portalu administracyjnym (portalu administracyjnym), które będą stosowane globalnie dla każdej umowy.  Te preferencje automatycznie wypełniają szczegóły subskrypcji dla administratorów podczas dodawania subskrybentów i mogą być modyfikowane tylko przez administratorów.  
@@ -24,18 +24,18 @@ Aby ustawić preferencje:
 1. Zaloguj się do portalu administracyjnego przy użyciu identyfikatora, który ma uprawnienia administratora.
 2. Kliknij kartę **Zarządzanie administratorami** .
    > [!div class="mx-imgBorder"]
-   > ![Przycisk preferencji administratora](_img/admin-prefs/admin-prefs-button.png)
+   > ![Przycisk preferencji administratora](_img/admin-prefs/admin-prefs-button.png "Kliknij kolejno pozycje Zarządzaj administratorami, a następnie Preferencje umów, aby wyświetlić Preferencje")
 
 3. Kliknij pozycję **Preferencje umowy**.
 Panel zostanie otwarty po prawej stronie, a Twoje dostępne Preferencje zostaną wyświetlone. 
 
    > [!div class="mx-imgBorder"]
-   > ![Okno dialogowe preferencji administratora](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![Okno dialogowe preferencji administratora](_img/admin-prefs/admin-prefs-flyout.png "Ustaw preferencje i kliknij przycisk Zapisz.")
 
 ## <a name="set-your-preferences"></a>Ustawianie preferencji
 Zapoznaj się z wszystkimi dostępnymi preferencjami i ich wpływami. 
 
-### <a name="agreement"></a>Rozumie
+### <a name="agreement"></a>Umowa
 Jeśli masz wiele umów, dla których jesteś administratorem, możesz wybrać odpowiednią umowę z listy rozwijanej.  Ustawione Preferencje będą stosowane tylko do tej umowy.  Indywidualni Administratorzy mogą przesłonić niektóre z tych preferencji w zależności od wielkości liter podczas przypisywania subskrypcji. 
 
 Jeśli istnieje tylko jedna umowa skojarzona z adresem e-mail użytym do zalogowania się, zostanie wyświetlona i lista rozwijana zostanie wyłączona. 
@@ -86,6 +86,3 @@ Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
 - [Przypisywanie wielu subskrypcji](assign-license-bulk.md)
 - [Edytowanie subskrypcji](edit-license.md)
 - [Określanie maksymalnego użycia](maximum-usage.md)
-
-
-

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do wielu subskrybentów za pomocą funkcji zbiorczego dodawania lub grup Microsoft Azure Active Directory
-ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903282"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235137"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administrowania subskrypcjami pozwala dodawać użytkowników jeden w czasie lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
@@ -30,7 +30,7 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
 
 1. Dodawanie zbiorcze używa szablonu programu Microsoft Excel do przekazywania informacji o subskrybencie. W oknie dialogowym przekazywanie wielu subskrybentów kliknij pozycję **Pobierz** , aby pobrać szablon.
    > [!div class="mx-imgBorder"]
-   > ![Pobierz szablon programu Excel, aby przekazać wielu subskrybentów](media/download-template-upload-subscribers.png)
+   > ![Pobierz szablon programu Excel, aby przekazać wielu subskrybentów](media/download-template-upload-subscribers.png "Pobierz pusty szablon programu Excel, aby rozpocząć proces przydziału zbiorczego.")
    >
    > [!NOTE]
    > Zawsze Pobieraj najnowszą wersję tego szablonu. Jeśli używasz starszej wersji, przekazywanie zbiorcze może zakończyć się niepowodzeniem.
@@ -50,17 +50,17 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
 
 1. Wróć do portalu administracyjnego subskrypcji programu Visual Studio. W oknie dialogowym **przekazywanie wielu subskrybentów** kliknij przycisk **Przeglądaj**.
    > [!div class="mx-imgBorder"]
-   > ![Przejdź do zapisanego szablonu, aby przekazać wielu subskrybentów](media/bulk-add-browse-saved-template.png)
+   > ![Przejdź do zapisanego szablonu, aby przekazać wielu subskrybentów](media/bulk-add-browse-saved-template.png "Możesz przejść do lokalizacji pliku lub przeciągnąć i upuścić ją w tym oknie dialogowym.")
 
 1. Przejdź do zapisanego pliku programu Excel, a następnie kliknij przycisk **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Przekaż szablon programu Excel, aby przekazać wielu subskrybentów](media/bulk-upload-subscribers.png)
+   > ![Przekaż szablon programu Excel, aby przekazać wielu subskrybentów](media/bulk-upload-subscribers.png "Szablon zawierający dane zostanie wyświetlony w tym miejscu.  Kliknij przycisk OK, aby rozpocząć przekazywanie.")
 
     Zostanie wyświetlone okno dialogowe postęp przekazywania.
 
     Jeśli szablon zawiera błędy, przekazywanie zakończy się niepowodzeniem, a błędy zostaną wyświetlone, aby można było poprawić szablon i ponowić próbę przekazania zbiorczego.
    > [!div class="mx-imgBorder"]
-   > ![Komunikat o błędzie, jeśli przekazywanie wielu subskrybentów zakończy się niepowodzeniem](_img/assign-license-bulk/bulk-add-upload-failure.png)
+   > ![Komunikat o błędzie, jeśli przekazywanie wielu subskrybentów zakończy się niepowodzeniem](_img/assign-license-bulk/bulk-add-upload-failure.png "Ten komunikat zostanie wyświetlony, jeśli przekazany plik zawiera błędy.  Usuń błędy i ponownie wykonaj proces dodawania zbiorczego.")
 
    Jeśli wystąpi błąd, wykonaj następujące kroki:
    1. Otwórz utworzony plik programu Excel, Usuń problemy i Zapisz plik.
@@ -72,7 +72,7 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
 
     Po pomyślnym przekazaniu zostanie wyświetlona lista subskrybentów i komunikat z potwierdzeniem.
    > [!div class="mx-imgBorder"]
-   > ![Komunikat z potwierdzeniem, jeśli przekazywanie wielu subskrybentów powiedzie się](_img/assign-license-bulk/bulk-add-upload-success.png)
+   > ![Komunikat z potwierdzeniem, jeśli przekazywanie wielu subskrybentów powiedzie się](_img/assign-license-bulk/bulk-add-upload-success.png "Gdy przekazywanie zakończy się pomyślnie, zostanie wyświetlony komunikat z potwierdzeniem.")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Przypisywanie subskrypcji przy użyciu grup Azure Active Directory 
 Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskrypcji. Możesz dodać Azure Active Directory grupy zabezpieczeń w portalu administratora subskrypcji, co zapewni, że wszyscy użytkownicy w grupie mają przypisaną subskrypcję. Aby ułatwić, gdy użytkownicy opuszczają Twoją organizację i zostaną usunięci z Azure Active Directory, ich dostęp do subskrypcji zostanie również usunięty. 
@@ -100,14 +100,14 @@ Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskryp
 3. Wybierz kartę **Dodaj** , a następnie na liście rozwijanej wybierz pozycję **Grupa Azure Active Directory** .  
 
    > [!div class="mx-imgBorder"]
-   > ![Wybierz pozycję Dodaj zbiorczo za pomocą usługi Azure AD](_img/assign-license-bulk/bulk-add-aad.png)
+   > ![Wybierz pozycję Dodaj zbiorczo za pomocą usługi Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Wybierz pozycję Dodaj zbiorczo przy użyciu funkcji usługi Azure AD, aby ściągnąć subskrybentów z grupy Azure Active Directory.")
 
 4. Rozpocznij wprowadzanie nazwy grupy usługi Azure AD, która ma zostać dodana do pola formularza. Spowoduje to przeszukanie dostępnych grup usługi Azure AD w organizacji. 
 
 5. Po wybraniu grupy pole zostanie automatycznie wypełnione nazwą grupy. W tej grupie będzie dostępna opcja wyświetlania użytkowników przed ich dodaniem. Następnie można wybrać poziom subskrypcji, prawa do pobierania i preferencje komunikacji dla grupy. Jeśli chcesz, możesz dodać szczegóły do pola odwołanie. 
 
    > [!div class="mx-imgBorder"]
-   > ![Wybierz pozycję Dodaj zbiorczo za pomocą usługi Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Wybierz grupę usługi Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Wybierz nazwę grupy usługi Azure AD, aby dodać subskrybentów z tej grupy.")
 
 6. Kliknij przycisk **Dodaj** , a następnie **Potwierdź**. 
 
@@ -126,10 +126,10 @@ Odp.: nie — wszyscy użytkownicy w grupie otrzymują tę samą subskrypcję.
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>P: Czy można edytować szczegóły subskrybenta dodanych do grupy usługi Azure AD?  
 Odp.: nie--aby zmodyfikować informacje dla poszczególnych subskrybentów, należy usunąć je z grupy zabezpieczeń usługi Azure AD i przypisać im pojedynczą subskrypcję.  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: dodano kogoś do grupy zabezpieczeń usługi Azure AD, ale nie są one widoczne w portalu administracyjnym subskrypcji i nie mają subskrypcji. Dlaczego nie?  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: dodano kogoś do grupy zabezpieczeń usługi Azure AD, ale nie są one widoczne w portalu administracyjnym subskrypcji i nie mają subskrypcji. Czemu nie?  
 Odp.: w zależności od tego, jak Twoja organizacja skonfigurował usługę Azure AD, można zobaczyć opóźnienia nawet przez 24 godziny przed dodaniem użytkownika. Jeśli jest dłuższa niż 24 godziny, [skontaktuj się z pomocą techniczną](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

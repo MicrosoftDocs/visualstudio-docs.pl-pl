@@ -1,21 +1,21 @@
 ---
-title: Przypisywanie określonych identyfikatorów GUID do subskrybentów programu Visual Studio | Dokumenty firmy Microsoft
+title: Przypisywanie określonych identyfikatorów GUID do subskrybentów programu Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
-description: Dowiedz się, jak administratorzy mogą określać identyfikator GUID subskrypcji subskrybentom
-ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+description: Dowiedz się, jak Administratorzy mogą uzyskać określony identyfikator GUID subskrypcji dla subskrybentów
+ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072596"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235189"
 ---
-# <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie określonych subskrypcji w portalu administracyjnym subskrypcji programu Visual Studio
+# <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Przypisywanie określonych subskrypcji w portalu administratora subskrypcji programu Visual Studio
 
-Administratorzy mogą teraz używać portalu administracyjnego subskrypcji programu Visual Studio do przypisywania określonych subskrypcji poszczególnym subskrybentom.  Może to być przydatne w sytuacjach, gdy organizacja ma pracowników tymczasowych lub dostawców, którzy potrzebują dostępu do subskrypcji na krótki okres.  Administratorzy mogą przypisać subskrypcję, która została już częściowo wykorzystana, pozostawiając nowe subskrypcje do dłuższego użytku.  
+Administratorzy mogą teraz używać portalu administracyjnego subskrypcji programu Visual Studio do przypisywania określonych subskrypcji do poszczególnych subskrybentów.  Może to być przydatne w sytuacjach, w których organizacja ma tymczasowego pracownika lub dostawców, którzy potrzebują dostępu do subskrypcji przez krótki okres.  Administratorzy mogą przypisywać subskrypcję, która została już częściowo użyta, pozostawiając ich nowe subskrypcje do dłuższego użycia.  
 
 <br>
 
@@ -24,51 +24,51 @@ Administratorzy mogą teraz używać portalu administracyjnego subskrypcji progr
 
 ## <a name="assign-specific-subscription-guids-to-users"></a>Przypisywanie określonych identyfikatorów GUID subskrypcji do użytkowników
 
-Proces przypisywania określonych subskrypcji do osób fizycznych polega na wykorzystaniu dwóch istniejących procesów administracyjnych w celu przypisania określonych unikatowych identyfikatorów (GUID) globalnej subskrypcji do poszczególnych użytkowników.  Trzyetapowy proces obejmuje eksportowanie listy bieżących subskrypcji i przypisań, używanie tej listy do identyfikowania określonych identyfikatorów GUID, które chcesz przypisać, a następnie używanie zbiorczego procesu dodawania do przekazywania nowych przypisań.
+Proces przypisywania określonych subskrypcji do poszczególnych użytkowników polega na użyciu dwóch istniejących procesów administracyjnych w celu przypisania unikatowych identyfikatorów globalnych (GUID) w ramach subskrypcji indywidualnym użytkownikom.  Proces trójstanowy obejmuje wyeksportowanie listy bieżących subskrypcji i przypisań przy użyciu tej listy w celu zidentyfikowania określonych identyfikatorów GUID, które chcesz przypisać, a następnie użycie zbiorczego procesu dodawania do przekazywania nowych przypisań.
 
 ### <a name="export-your-subscriptions-information"></a>Eksportowanie informacji o subskrypcjach
 
 Aby przeprowadzić eksport:
 1. Zaloguj się do [portalu administracyjnego](https://manage.visualstudio.com).
-2. Wybierz kartę **Eksportuj,** a plik zostanie pobrany na komputer lokalny. Plik będzie zawierał nazwę umowy zawierającą subskrypcje użytkowników, a także datę eksportu.
+2. Wybierz kartę **Eksportuj** . plik zostanie pobrany na komputer lokalny. Plik będzie zawierać nazwę umowy zawierającej subskrypcje użytkowników, a także datę eksportu.
 > [!div class="mx-imgBorder"]
-> ![Eksportowanie subskrybentów](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![Eksportowanie subskrybentów](_img/exporting-subscriptions/exporting-subscriptions.png "Kliknij przycisk Eksportuj, aby zapisać listę przypisanych subskrypcji z informacjami o subskrybencie.")
 
-### <a name="identify-the-guids-you-want-to-assign"></a>Identyfikowanie identyfikatorów GUID, które chcesz przypisać
+### <a name="identify-the-guids-you-want-to-assign"></a>Zidentyfikuj identyfikatory GUID, które chcesz przypisać
 
-Jeśli narzędzie Eksportuj było wcześniej używane, zauważysz, że do tworzonego arkusza kalkulacyjnego dodano nowe pola.  Pomogą one określić stan każdej subskrypcji i te, które chcesz przypisać do użytkowników.  
+Jeśli wcześniej używasz narzędzia eksportu, Zauważ, że nowe pola zostały dodane do arkusza kalkulacyjnego, który został utworzony.  Pomoże to określić stan każdej subskrypcji, a które mają być przypisane do użytkowników.  
 
-- **Stan subskrypcji:** To pole wskazuje "przypisany" lub "nieprzypisany".  Jeśli subskrypcja ma stan "przypisany", będzie również mieć informacje o użytkowniku z nią związane, takie jak nazwa, adres e-mail itp. 
-- **Stan użycia:** Stan użycia wskazuje "nowy", co oznacza, że nigdy nie został przypisany do użytkownika lub "używany", co oznacza, że został przypisany do użytkownika w pewnym momencie.  
+- **Stan subskrypcji**: w tym polu będzie wskazywana wartość "przypisany" lub "nieprzypisane".  Jeśli subskrypcja ma stan "przypisany", będzie również zawierać skojarzone z nią informacje o użytkowniku, takie jak nazwa, adres e-mail itd. 
+- **Stan użycia**: stan użycia będzie wskazywać na "nowe", co oznacza, że nigdy nie został przypisany do użytkownika lub "używany", co oznacza, że został przypisany do użytkownika w pewnym momencie.  
 
-Wartości w tych polach wraz z innymi informacjami w arkuszu kalkulacyjnym można użyć do określenia subskrypcji, które mają zostać przypisane poszczególnym użytkownikom. Możesz zastosować filtr w programie Excel, aby zawęzić listę według stanu, poziomu subskrypcji, daty wygaśnięcia itp. 
+Możesz użyć wartości w tych polach wraz z innymi informacjami w arkuszu kalkulacyjnym, aby określić, które subskrypcje mają być przypisane do poszczególnych użytkowników. Możesz zastosować filtr w programie Excel, aby ograniczyć listę według stanu, poziomu subskrypcji, daty wygaśnięcia itd. 
 
-### <a name="upload-your-new-assignments"></a>Przesyłanie nowych zadań
+### <a name="upload-your-new-assignments"></a>Przekaż nowe przypisania
 
-Ostatnim krokiem jest pobranie szablonu **zbiorczego dodawania,** wypełnienie wymaganych informacji dla subskrypcji, które chcesz przypisać, i przekazanie szablonu.  Pełny opis tego procesu można znaleźć w artykule [Dodaj wielu użytkowników.](assign-license-bulk.md)  
+Ostatnim krokiem jest pobranie **zbiorczego szablonu Dodaj** , wypełnienie wymaganych informacji dotyczących subskrypcji, które chcesz przypisać, i przekazanie szablonu.  Aby uzyskać pełny opis tego procesu, zobacz nasz artykuł [Dodawanie wielu użytkowników](assign-license-bulk.md) .  
 
 > [!IMPORTANT]
-> Aby zapewnić pomyślne przesłanie, upewnij się, że:
-> - Używasz szablonu połączonego w oknie dialogowym po **wybraniu opcji Dodaj zbiorczo**.  Nie należy używać lokalnie przechowywanej kopii szablonu, ponieważ może ona nie zawierać wszystkich wymaganych pól.  Użycie starego szablonu spowoduje niepowodzenie przekazywania. 
+> Aby zapewnić pomyślne przekazywanie, upewnij się, że:
+> - W przypadku wybrania opcji **Dodaj zbiorczo**używasz szablonu połączonego w oknie dialogowym.  Nie należy używać lokalnie przechowywanej kopii szablonu, ponieważ może nie zawierać wszystkich wymaganych pól.  Użycie starego szablonu spowoduje niepowodzenie przekazywania. 
 > - Wszystkie pola wyświetlane jako **wymagane** w szablonie są kompletne.
-> - W kolumnie **Komunikat o błędzie** nie ma żadnych błędów.
+> - Brak błędów wymienionych w kolumnie **komunikat o błędzie** .
 > - Każdy identyfikator GUID jest używany tylko raz w szablonie. 
-> - Poziom subskrypcji w szablonie odpowiada subskrypcji identyfikatora GUID na liście eksportowanych. 
-> - Identyfikator GUID nie jest jeszcze przypisany do innego użytkownika na wyeksportowanym liście. 
+> - Poziom subskrypcji w szablonie jest zgodny z subskrypcją identyfikatora GUID na wyeksportowanej liście. 
+> - Identyfikator GUID nie jest już przypisany do innego użytkownika na wyeksportowanej liście. 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>P: Jak zmienić subskrypcję, która jest obecnie przypisana do indywidualnego użytkownika?
-Odp.: Jeśli chcesz zmienić identyfikator GUID przypisany do użytkownika, należy najpierw usunąć subskrypcję dla tego użytkownika.  Aby uzyskać więcej informacji, zobacz nasz artykuł [Usuń subskrypcje,](delete-license.md) aby uzyskać więcej informacji.  Po usunięciu subskrypcji dla tego użytkownika użyj procesu opisanego powyżej, aby wyeksportować listę i przekazać nowe informacje o subskrypcji.  
+### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q:How zmienić, która subskrypcja jest obecnie przypisana do pojedynczego użytkownika?
+Odp.: Jeśli chcesz zmienić identyfikator GUID przypisany do użytkownika, musisz najpierw usunąć subskrypcję dla tego użytkownika.  Aby uzyskać więcej informacji, zobacz artykuł [usuwanie subskrypcji](delete-license.md) , aby uzyskać więcej informacji.  Po usunięciu subskrypcji dla tego użytkownika należy użyć podanego powyżej procesu, aby wyeksportować listę i przekazać nowe informacje o subskrypcji.  
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
-- [Dokumentacja usługi Microsoft 365](/microsoft-365/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Teraz, gdy przypisano subskrypcje do użytkowników, dowiedz się, jak wykonywać inne zadania administracyjne.
-- [Przypisywanie poszczególnych subskrypcji](assign-license.md)
+Teraz, gdy masz przypisane subskrypcje użytkownikom, Dowiedz się, jak wykonywać inne zadania administracyjne.
+- [Przypisywanie pojedynczych subskrypcji](assign-license.md)
 - [Przypisywanie wielu subskrypcji](assign-license-bulk.md)
 - [Edytowanie subskrypcji](edit-license.md)
 - [Usuwanie subskrypcji](delete-license.md)
