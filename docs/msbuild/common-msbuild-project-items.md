@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182914"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425397"
 ---
-# <a name="common-msbuild-project-items"></a>Wspólne elementy projektu MSBuild
+# <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 
 W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie Visual Studio mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku *Microsoft. Build. CommonTypes. xsd*.
 
@@ -30,7 +30,7 @@ W programie MSBuild element jest nazwanym odwołaniem do co najmniej jednego pli
 
 Poniżej znajduje się lista wszystkich wspólnych elementów projektu.
 
-### <a name="reference"></a>Dokumentacja
+### <a name="reference"></a>Tematy pomocy
 
 Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 
@@ -41,7 +41,7 @@ Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.
 |FusionName|Opcjonalny ciąg. Określa prostą lub silną nazwę syntezy dla elementu.<br /><br /> Gdy ten atrybut jest obecny, może zaoszczędzić czas, ponieważ plik zestawu nie musi być otwarty w celu uzyskania nazwy Fusion.|
 |Ustawienie SpecificVersion|Opcjonalna wartość logiczna. Określa, czy należy odwoływać się tylko do wersji w nazwie Fusion.|
 |Aliasy|Opcjonalny ciąg. Wszelkie aliasy odwołania.|
-|Private|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|
+|Prywatne|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -55,7 +55,7 @@ Reprezentuje odwołanie do składnika COM (niezarządzane) w projekcie. Ten elem
 |VersionMinor|Wymagany ciąg. Pomocnicza część numeru wersji składnika. Na przykład "46", jeśli pełny numer wersji to "5,46".|
 |Identyfikator LCID|Opcjonalny ciąg. LocaleID dla składnika.|
 |WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, które jest używane w składniku, na przykład "tlbimp".|
-|Izolowany|Opcjonalna wartość logiczna. Określa, czy składnik jest składnikiem bezpłatnym reg.|
+|Izolowana|Opcjonalna wartość logiczna. Określa, czy składnik jest składnikiem bezpłatnym reg.|
 
 ### <a name="comfilereference"></a>COMFileReference
 
@@ -166,7 +166,8 @@ Reprezentuje projekt FxCop do zaimportowania.
 
 Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez kompilator Visual Basic.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Wspólne właściwości projektu MSBuild](../msbuild/common-msbuild-project-properties.md)
+- [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Właściwości programu MSBuild dla projektów zestaw .NET Core SDK](/dotnet/core/project-sdk/msbuild-props)
+- [Typowe metadane elementu MSBuild](common-msbuild-item-metadata.md)

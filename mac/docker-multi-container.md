@@ -3,14 +3,14 @@ title: Samouczek — Tworzenie aplikacji z obsługą kontenera przy użyciu Dock
 description: Dowiedz się, jak zarządzać więcej niż jednym kontenerem i komunikować się między nimi w Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 06/17/2019
+ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: 03adc2385c202710425fbc8e6b12c832526b5f90
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: b15ba0200520d8a04abc30b606b5b10215e3c22e
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938944"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425432"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Tworzenie aplikacji z wieloma kontenerami przy użyciu narzędzia Docker Compose
 
@@ -24,8 +24,8 @@ W tym samouczku dowiesz się, jak zarządzać więcej niż jednym kontenerem i k
 ## <a name="create-an-aspnet-core-web-application-and-add-docker-support"></a>Tworzenie aplikacji sieci Web ASP.NET Core i Dodawanie obsługi platformy Docker
 
 1. Utwórz nowe rozwiązanie, przechodząc do **pliku > nowe rozwiązanie**.
-1. W obszarze **aplikacja .NET Core >** wybierz szablon **aplikacja sieci Web** : ![ Utwórz nową aplikację ASP.NET](media/docker-quickstart-1.png)
-1. Wybierz platformę docelową. W tym przykładzie będziemy używać platformy .NET Core 2,2: ![ Ustaw platformę docelową](media/docker-quickstart-2.png)
+1. W obszarze **aplikacja sieci Web i konsola >** wybierz szablon **aplikacji sieci Web** : ![ Utwórz nową aplikację ASP.NET](media/docker-quickstart-1.png)
+1. Wybierz platformę docelową. W tym przykładzie będziemy używać platformy .NET Core 3,1: ![ Ustaw platformę docelową](media/docker-quickstart-2.png)
 1. Wprowadź szczegóły projektu, takie jak nazwa projektu (_DockerDemoFrontEnd_ w tym przykładzie) i nazwa rozwiązania (_DockerDemo_). Utworzony projekt zawiera wszystkie podstawowe informacje niezbędne do kompilowania i uruchamiania witryny sieci Web ASP.NET Core.
 1. W okienko rozwiązania kliknij prawym przyciskiem myszy projekt DockerDemoFrontEnd i wybierz polecenie **dodaj > Dodawanie obsługi platformy Docker**: ![ Dodawanie obsługi platformy Docker](media/docker-quickstart-3.png)
 
@@ -36,14 +36,14 @@ Visual Studio dla komputerów Mac automatycznie doda nowy projekt do rozwiązani
 Następnie utworzymy drugi projekt, który będzie pełnić rolę interfejsu API zaplecza. Szablon **interfejsu API programu .NET Core** zawiera kontroler, który pozwala nam obsługiwać żądania RESTful.
 
 1. Dodaj nowy projekt do istniejącego rozwiązania, klikając rozwiązanie prawym przyciskiem myszy i wybierając polecenie **dodaj > Dodaj nowy projekt**.
-1. W obszarze **aplikacja .NET Core >** wybierz szablon **interfejsu API** .
-1. Wybierz platformę docelową. W tym przykładzie będziemy używać platformy .NET Core 2,2
-1. Wprowadź szczegóły projektu, takie jak nazwa projektu (_DockerDemoAPI_ w tym przykładzie).
-1. Po utworzeniu przejdź do okienko rozwiązania i kliknij prawym przyciskiem myszy projekt DockerDemoAPI i wybierz polecenie **dodaj > Dodaj obsługę platformy Docker**.
+1. W obszarze **Sieć Web i konsola > aplikacji** wybierz szablon **interfejsu API** .
+1. Wybierz platformę docelową. W tym przykładzie będziemy używać platformy .NET Core 3,1.
+1. Wprowadź szczegóły projektu, takie jak nazwa projektu (_MyWebAPI_ w tym przykładzie).
+1. Po utworzeniu przejdź do okienko rozwiązania i kliknij prawym przyciskiem myszy projekt MyWebAPI i wybierz polecenie **dodaj > Dodaj obsługę platformy Docker**.
 
 Plik **Docker-Compose. yml** w projekcie programu **Docker — redagowanie** zostanie automatycznie zaktualizowany w taki sposób, aby obejmował projekt interfejsu API wraz z istniejącym projektem aplikacji sieci Web. Po skompilowaniu i uruchomieniu projektu **platformy Docker —** każdy z tych projektów zostanie wdrożony w osobnym kontenerze platformy Docker.
 
-```
+```yaml
 version: '3.4'
 
 services:
@@ -53,18 +53,18 @@ services:
       context: .
       dockerfile: DockerDemoFrontEnd/Dockerfile
 
-  dockerdemoapi:
-    image: ${DOCKER_REGISTRY-}dockerdemoapi
+  mywebapi:
+    image: ${DOCKER_REGISTRY-}mywebapi
     build:
       context: .
-      dockerfile: DockerDemoAPI/Dockerfile
+      dockerfile: MyWebAPI/Dockerfile
 ```
 
 ## <a name="integrate-the-two-containers"></a>Integruj dwa kontenery
 
 Mamy teraz dwa projekty ASP.NET w naszym rozwiązaniu, a oba są skonfigurowane z obsługą platformy Docker. Następnie musimy dodać kod!
 
-1. W `DockerDemoFrontEnd` projekcie Otwórz plik *index.cshtml.cs* i Zastąp `OnGet` metodę następującym kodem:
+1. W `DockerDemoFrontEnd` projekcie Otwórz plik *Pages/index.* , a następnie zastąp `OnGet` metodę następującym kodem:
 
    ```csharp
     public async Task OnGet()
@@ -75,12 +75,15 @@ Mamy teraz dwa projekty ASP.NET w naszym rozwiązaniu, a oba są skonfigurowane 
        {
           // Call *mywebapi*, and display its response in the page
           var request = new System.Net.Http.HttpRequestMessage();
-          request.RequestUri = new Uri("http://dockerdemoapi/api/values/1");
+          request.RequestUri = new Uri("http://mywebapi/WeatherForecast");
           var response = await client.SendAsync(request);
           ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
        }
     }
    ```
+   
+    > [!NOTE]
+    > W kodzie produkcyjnym nie należy zbyć się `HttpClient` po każdym żądaniu. Aby uzyskać najlepsze rozwiązania, zobacz [Używanie HttpClientFactory do implementowania odpornych żądań HTTP](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
 1. W pliku *index. cshtml* Dodaj wiersz do wyświetlenia, aby `ViewData["Message"]` plik wyglądał jak poniższy kod:
 
@@ -97,16 +100,11 @@ Mamy teraz dwa projekty ASP.NET w naszym rozwiązaniu, a oba są skonfigurowane 
           <p>@ViewData["Message"]</p>
       </div>
       ```
-
-1. Teraz w projekcie interfejsu API sieci Web Dodaj kod do kontrolera wartości, aby dostosować komunikat zwracany przez interfejs API dla wywołania, które zostało dodane z elementu *webfrontonu*:
+  
+1. W projektach frontonu i interfejsu API sieci Web Dodaj komentarz do wywołania [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) w `Configure` metodzie w *Startup.cs*, ponieważ ten przykładowy kod używa protokołu HTTP, a nie https, aby wywołać internetowy interfejs API.
 
       ```csharp
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "webapi (with value " + id + ")";
-        }
+                  //app.UseHttpsRedirection();
       ```
 
 1. Ustaw `docker-compose` projekt jako projekt startowy, a następnie przejdź do pozycji **Uruchom > Rozpocznij debugowanie**. Jeśli wszystko jest prawidłowo skonfigurowane, zobaczysz komunikat "Hello z webfrontonu i WebAPI (z wartością 1)":

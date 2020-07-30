@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 08c790af5504c902bf5fe37d2cddba9b9f63aa40
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770870"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425371"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 
@@ -134,6 +134,8 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | Win32Manifest | .NET | Nazwa pliku manifestu, który powinien być osadzony w końcowym zestawie. Ten parametr jest równoważny z `/win32Manifest` przełącznikiem kompilatora. |
 | Win32Resource | .NET | Nazwa pliku zasobu Win32, który ma zostać osadzony w końcowym zestawie. Ten parametr jest równoważny z `/win32resource` przełącznikiem kompilatora. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Typowe metadane elementu MSBuild](common-msbuild-item-metadata.md)
+- [Właściwości zarezerwowane i dobrze znane dla programu MSBuild](msbuild-reserved-and-well-known-properties.md)

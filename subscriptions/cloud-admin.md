@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Konfigurowanie administratorów dla miesięcznych subskrypcji
-ms.openlocfilehash: ef1536eb27beb501fc278d1a95521905c9d9485a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903108"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434308"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Konfigurowanie administratorów dla miesięcznych subskrypcji programu Visual Studio
 
@@ -36,19 +36,19 @@ Aby dodać administratorów:
 2. Zaloguj się przy użyciu konta użytego do zakupu miesięcznych subskrypcji programu Visual Studio.
 3. W obszarze **usługi platformy Azure**wybierz pozycję **Cost Management + rozliczenia**.
    > [!div class="mx-imgBorder"]
-   > ![Wybieranie Cost Management i rozliczeń w ramach usług platformy Azure](_img/cloud-admin/azure-cost-billing.png)
+   > ![Wybieranie Cost Management i rozliczeń w ramach usług platformy Azure](_img/cloud-admin/azure-cost-billing.png "Wybierz Cost Management z grupy usług platformy Azure")
 4. Z listy **Moje subskrypcje** wybierz subskrypcję platformy Azure, która została użyta do dokonania zakupu.
    > [!div class="mx-imgBorder"]
-   > ![Wybierz subskrypcję](_img/cloud-admin/subscription-list.png)
+   > ![Wybierz subskrypcję](_img/cloud-admin/subscription-list.png "Wybierz subskrypcję platformy Azure, której chcesz użyć do dokonania zakupu.")
 5. Kliknij pozycję **Kontrola dostępu (IAM)**, która znajduje się w górnej części listy w okienku nawigacji po lewej stronie.
 6. Kliknij kartę **Dodaj** w górnej części strony.
 7. Kliknij pozycję **Dodaj przypisanie roli**.
    > [!div class="mx-imgBorder"]
-   > ![Wybieranie kontroli dostępu, Dodawanie, Dodawanie przypisania roli](_img/cloud-admin/access-control-add.png)
+   > ![Wybieranie kontroli dostępu, Dodawanie, Dodawanie przypisania roli](_img/cloud-admin/access-control-add.png "Z listy po lewej stronie wybierz pozycję Kontrola dostępu, a następnie wybierz pozycję Dodaj.")
 8. W okienku po prawej stronie kliknij listę rozwijaną **rola** w górnej części okienka, przewiń w dół i wybierz pozycję **administrator dostępu użytkowników**.
 9. Na liście użytkowników przewiń w dół do użytkownika, który ma być administratorem, i wybierz go. 
    > [!div class="mx-imgBorder"]
-   > ![Wybieranie roli, administrator dostępu użytkowników](_img/cloud-admin/add-role-user-access-admin.png)
+   > ![Wybieranie roli, administrator dostępu użytkowników](_img/cloud-admin/add-role-user-access-admin.png "Wybierz pozycję rola, wybierz pozycję Administrator dostępu użytkowników, a następnie wybierz nazwę użytkownika, który ma być administratorem.")
 10. Kliknij pozycję **Zapisz**.
 11. Kliknij kartę **przypisania ról** , aby sprawdzić, czy wybrany użytkownik jest teraz widoczny jako administrator dostępu użytkownika.
 
