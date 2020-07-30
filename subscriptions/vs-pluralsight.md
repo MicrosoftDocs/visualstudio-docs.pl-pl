@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
+ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902815"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87375901"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
 
@@ -82,13 +82,7 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 Odp.: nie wszystkie subskrypcje Visual Studio Enterprise obejmują korzyść Pluralsight.  Sprawdź [tabelę kwalifikowania](#eligibility) , aby sprawdzić, czy Twoja subskrypcja kwalifikuje się do korzystania z niej.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: czy mam dostęp do dowolnych dostosowanych list odtwarzania lub kanałów szkoleniowych?
-Odp.: tak, jako subskrybent programu Visual Studio uzyskujesz dostęp do kanałów ekspertów w ramach korzyści z szkolenia Pluralsight. Te kanały zostały specjalnie nadzorowane przez ekspertów firmy Microsoft i są przeznaczone do uczenia się w obszarach platformy .NET, platformy Azure, DevOps i mobilności. Aktywuj korzyść Pluralsight za poorednictwem portalu subskrypcji programu Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) , aby uzyskać dostęp do tych kanałów na stronie docelowej Pluralsight —
-
-• Scott Hanselmann (.NET, Azure) —[https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
-
-• Donovan Brown (DevOps) —[https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
-
-• Kuba Montemagno (mobilność) —[https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
+Odp. Tak. Jako subskrybent programu Visual Studio uzyskasz dostęp do polecanych ról, ścieżek szkoleniowych i kanałów niestandardowych (list odtwarzania) w ramach korzyści z szkolenia Pluralsight. Polecana zawartość została specjalnie zanadzorowana przez firmę Microsoft i Pluralsight i jest ukierunkowana na uczenie się w kluczowych obszarach zainteresowania. Aktywuj korzyść usługi Pluralsight za poorednictwem portalu subskrypcji programu Visual Studio, <https://my.visualstudio.com/benefits> Aby uzyskać dostęp do tej i innej zawartości na stronie głównej Pluralsight.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: co się stanie, gdy subskrypcja usługi Pluralsight zostanie uruchomiona?
 Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić subskrypcję bezpośrednio z Pluralsight.  Aby uzyskać szczegółowe informacje, skontaktuj się z [Pluralsight](https://www.pluralsight.com) .
@@ -98,7 +92,7 @@ Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić sub
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

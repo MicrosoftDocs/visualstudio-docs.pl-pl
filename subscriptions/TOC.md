@@ -22,15 +22,14 @@
 ## [Omówienie portalu subskrypcji](using-the-subscriber-portal.md)
 ## [Zarządzanie subskrypcjami](manage-vs-subscriptions.md)
 ## [Kontaktowanie się z administratorem subskrypcji](contact-my-admin.md)
-## Zalety
-### Narzędzia
+## Korzyści
+### narzędzia
 #### [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure DevTest — płatność zgodnie z rzeczywistym użyciem](vs-azure-payg.md)
 #### [Azure DevTest — Enterprise Agreement](azure-ea-devtest.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
-#### [Enterprise Mobility & Security](vs-ems.md)
 #### [Aplikacje platformy Microsoft 365 dla przedsiębiorstw](microsoft-365-apps-for-enterprise.md)
 #### [Microsoft 365 Developer](vs-m365.md)
 #### [Parasoft](vs-parasoft.md)
@@ -89,7 +88,7 @@
 ### [Scenariusze logowania subskrybenta](aliasing.md)
 ### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
 ### [Zarządzanie Visual Studio z usługą GitHub Enterprise](assign-github.md)
-# Resources
+# Zasoby
 ## [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 ## [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)
