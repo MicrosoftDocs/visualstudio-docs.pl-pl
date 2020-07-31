@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: Dowiedz się, jak skontaktować się z administratorem subskrypcji, aby uzyskać pomoc dotyczącą pytań lub problemów.
-ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904566"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434258"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Uzyskaj pomoc od administratora subskrypcji
 Jeśli Twoja subskrypcja programu Visual Studio jest świadczona przez służbowe lub szkolne, prawdopodobnie została przypisana do Ciebie przez administratora subskrypcji lub administratora.  Administratorzy mogą przypisywać lub usuwać subskrypcje, zmieniać adresy e-mail logowania, określać, czy użytkownik ma możliwość pobrania oprogramowania i wykonywania innych funkcji związanych z subskrypcją.
@@ -24,7 +24,7 @@ Mając na uwadze rozmiar i złożoność wielu organizacji, użytkownik może ni
 2. Kliknij kartę **subskrypcje** . 
 3. Kliknij przycisk **skontaktuj się z moim administratorem** w prawym górnym rogu. 
    > [!div class="mx-imgBorder"]
-   > ![Skontaktuj się z moim administratorem](_img/contact-my-admin/contact-my-admin-button.png)
+   > ![Skontaktuj się z moim administratorem](_img/contact-my-admin/contact-my-admin-button.png "Kliknij przycisk skontaktuj się z administratorem, wprowadź swój komunikat, a następnie kliknij przycisk Wyślij.")
 4. Wprowadź komunikat dla administratora.
 5. Jeśli chcesz otrzymać kopię wiadomości wysłanej do administratora, kliknij pole wyboru **Wyślij do mnie kopię** . 
 6. Na koniec kliknij pozycję **Wyślij**.
