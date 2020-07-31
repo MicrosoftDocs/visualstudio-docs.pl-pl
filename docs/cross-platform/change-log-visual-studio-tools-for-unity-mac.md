@@ -10,16 +10,74 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4fa5a68a15dd5b53d5a626ff5c46e9739db504fc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
+ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184565"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87471535"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 
 Visual Studio Tools for Unity dziennik zmian.
+
+## <a name="2710"></a>2.7.1.0
+Wydana 5 sierpnia 2020
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integration**
+
+  - Zaktualizowano interfejs API komunikatów aparatu Unity do 2019,4.
+
+  - Dodano [`USP0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0013.md) pominięcie dla elementu `CA1823` . Pola prywatne z `SerializeField` `SerializeReference` atrybutami lub nie powinny być oznaczone jako nieużywane (FxCop).
+  
+  - Dodano [`USP0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0014.md) pominięcie dla elementu `CA1822` . Komunikaty aparatu Unity nie powinny być oflagowane jako kandydaci dla `static` modyfikatora (FxCop).
+
+  - Dodano [`USP0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0015.md) pominięcie dla elementu `CA1801` . Nie należy usuwać nieużywanych parametrów z komunikatów Unity (FxCop).
+  
+  - Dodano `MenuItem` obsługę do funkcji [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) pomijania.  
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integration**
+
+  - Naprawione [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md) i [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md) pomijające nie działają z dodatkowymi nawiasami ani z argumentami metod.
+  
+  - Naprawione obowiązkowe odświeżenie bazy danych zasobów, nawet jeśli funkcja AutoRefresh została wyłączona w ustawieniach aparatu Unity.
+
+## <a name="2700"></a>2.7.0.0
+Wydanie 23 czerwca 2020
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integration**
+
+  - Dodano obsługę utrwalania folderów rozwiązań, gdy aparat Unity ponownie generuje rozwiązanie i projekty.
+
+  - Dodano [`UNT0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0015.md) diagnostykę. Wykryj niepoprawną sygnaturę metody z `InitializeOnLoadMethod` `RuntimeInitializeOnLoadMethod` atrybutem or.
+
+  - Dodano [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md) diagnostykę. Użycie `Invoke` , `InvokeRepeating` , `StartCoroutine` lub `StopCoroutine` z pierwszym argumentem będącym literałem ciągu nie jest bezpieczne.
+
+  - Dodano [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md) diagnostykę. `SetPixels`wywołanie jest powolne.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Oknie**
+
+  - Naprawiono Tworzenie punktów przerwania, gdy gra jest uruchomiona w starym środowisku uruchomieniowym mono (próba powiązania punktu przerwania zaraz po jego utworzeniu). 
+  
+- **Integration**
+
+  - Nie należy resetować zaznaczenia podczas filtrowania komunikatów w Kreatorze komunikatów aparatu Unity.
+  
+  - Stałe [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md) [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) i [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) pomijane z następującymi regułami: pomijanie `IDE0044` (tylko do odczytu), `IDE0051` (nieużywane), `CS0649` (nigdy nie są przypisywane) dla wszystkich pól, które mają atrybut SerializeField. Pomiń `CS0649` (nigdy nie przypisano) dla pól publicznych wszystkich typów rozszerzających `Unity.Object` .
+
+  - Stałe sprawdzanie parametrów typu ogólnego [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) .
+
+- **Sprawozdanie**
+
+  - Stałe porównanie równości z wyliczeniem.
 
 ## <a name="2610"></a>2.6.1.0
 Wydana 19 maja 2020
@@ -43,19 +101,19 @@ Opublikowano 14 kwietnia 2020
 
 - **Integration**
 
-  - Dodano [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md) diagnostykę. Wykrywaj i Zawijaj wywołania procedur wspólnych w programie `StartCoroutine()` .
+  - Dodano [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md) diagnostykę. Wykrywaj i Zawijaj wywołania procedur wspólnych w programie `StartCoroutine()` .
 
-  - Dodano [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md) diagnostykę. Wykryj i usuń nieprawidłowy lub nadmiarowy `SerializeField` atrybut.
+  - Dodano [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md) diagnostykę. Wykryj i usuń nieprawidłowy lub nadmiarowy `SerializeField` atrybut.
 
-  - Dodano [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md) diagnostykę. Wykryto `GetComponent()` wywołanie z typem niebędącym składnikiem lub bez interfejsu.
+  - Dodano [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) diagnostykę. Wykryto `GetComponent()` wywołanie z typem niebędącym składnikiem lub bez interfejsu.
 
-  - Dodano [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md) pominięcie dla elementu `IDE0051` . Nie należy flagować metod przy użyciu `ContextMenu` atrybutu lub odwołania do pola z `ContextMenuItem` atrybutem jako nieużywane.
+  - Dodano [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) pominięcie dla elementu `IDE0051` . Nie należy flagować metod przy użyciu `ContextMenu` atrybutu lub odwołania do pola z `ContextMenuItem` atrybutem jako nieużywane.
 
-  - Dodano [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md) pominięcie dla elementu `IDE0051` . Nie należy oznaczać pól `ContextMenuItem` atrybutem jako nieużywane.
+  - Dodano [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) pominięcie dla elementu `IDE0051` . Nie należy oznaczać pól `ContextMenuItem` atrybutem jako nieużywane.
 
-  - Dodano [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md) pominięcie dla elementu `IDE0044` . Nie należy tworzyć pól z `ContextMenuItem` atrybutem tylko do odczytu.
+  - Dodano [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) pominięcie dla elementu `IDE0044` . Nie należy tworzyć pól z `ContextMenuItem` atrybutem tylko do odczytu.
 
-  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md)[`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)i [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) teraz działa dla obu `SerializeReference` `SerializeField` atrybutów.
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md)[`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md)i [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) teraz działa dla obu `SerializeReference` `SerializeField` atrybutów.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -67,7 +125,7 @@ Opublikowano 14 kwietnia 2020
 
   - Stały zakres komunikatów dla `CreateInspectorGUI` wiadomości.
 
-  - Nie należy raportować [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) metod z modyfikatorami polimorficznymi.
+  - Nie należy raportować [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md) metod z modyfikatorami polimorficznymi.
 
 - **Sprawozdanie**
 
@@ -93,7 +151,7 @@ Wydana 3 marca 2020
 
 - **Integration**
 
-  - Dodano [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) pominięcie dla elementu `IDE0051` . Metody prywatne używane z metodami Invoke, InvokeRepeating, StartCoroutine lub StopCoroutine nie powinny być oznaczone jako nieużywane.
+  - Dodano [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md) pominięcie dla elementu `IDE0051` . Metody prywatne używane z metodami Invoke, InvokeRepeating, StartCoroutine lub StopCoroutine nie powinny być oznaczone jako nieużywane.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -113,7 +171,7 @@ Wydana 19 lutego 2020
 
 - **Integration**
 
-  - Naprawiono [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) sprawdzenie diagnostyki dla nieprawidłowej sygnatury wiadomości. Podczas sprawdzania typów z wieloma poziomami dziedziczenia ta Diagnostyka może zakończyć się niepowodzeniem z następującym komunikatem: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` .
+  - Naprawiono [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) sprawdzenie diagnostyki dla nieprawidłowej sygnatury wiadomości. Podczas sprawdzania typów z wieloma poziomami dziedziczenia ta Diagnostyka może zakończyć się niepowodzeniem z następującym komunikatem: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` .
 
 ## <a name="2500"></a>2.5.0.0
 
@@ -129,9 +187,9 @@ Wydana 22 stycznia 2020
   
   - Przełączono do nowej dostępnej siatki właściwości dla ustawień.
 
-  - Dodano [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) pominięcie dla elementu `IDE0051` . Pola prywatne z `SerializeField` atrybutem nie powinny być oznaczone jako nieużywane.
+  - Dodano [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) pominięcie dla elementu `IDE0051` . Pola prywatne z `SerializeField` atrybutem nie powinny być oznaczone jako nieużywane.
 
-  - Dodano [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) pominięcie dla elementu `CS0649` . Pola z `SerializeField` atrybutem nie powinny być oznaczone jako nieprzypisane.  
+  - Dodano [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) pominięcie dla elementu `CS0649` . Pola z `SerializeField` atrybutem nie powinny być oznaczone jako nieprzypisane.  
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -187,7 +245,7 @@ Wydanie 15 października 2019
 
 - **Integration**
 
-  - Dodano [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) pominięcie dla `IDE0060` (nieużywany parametr) dla wszystkich komunikatów aparatu Unity.
+  - Dodano [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) pominięcie dla `IDE0060` (nieużywany parametr) dla wszystkich komunikatów aparatu Unity.
 
   - Dodano szybką etykietkę narzędzia dla pól otagowanych za pomocą `TooltipAttribute` . (Ta wartość będzie działała w przypadku prostej metody dostępu get używającej również tego pola).
 
@@ -341,7 +399,7 @@ Wydana 20 czerwca 2019
 
   - Wyłączono pełną kompilację dla projektów środowiska Unity, na korzyść używania błędów i ostrzeżeń funkcji IntelliSense. Istotny aparat Unity tworzy rozwiązanie programu Visual Studio z projektami biblioteki klas, które reprezentują, co Unity działa wewnętrznie. Z tego powodu wynik kompilacji w programie Visual Studio nigdy nie jest używany lub nie jest wybierany przez środowisko Unity, ponieważ ich potok kompilacji jest zamknięty. Kompilowanie w programie Visual Studio jest samo zużywanie zasobów. Jeśli potrzebujesz pełnej kompilacji, ponieważ masz narzędzia lub Instalatora, które od niego zależą, możesz wyłączyć tę optymalizację (ustawienia/narzędzia dla aparatu Unity/wyłączyć pełną kompilację projektów).
   
-  - Dodano obsługę pakietów Unity w UPE. Widoczne są tylko pakiety, do których istnieją odwołania (przy użyciu manifest. JSON w `Packages` folderze) i pakiety lokalne (osadzone w `Packages` folderze).
+  - Dodano obsługę pakietów Unity w UPE. Widoczne są tylko pakiety, do których istnieją odwołania (przy użyciu manifest.jsw `Packages` folderze) i pakiety lokalne (osadzone w `Packages` folderze).
 
 ## <a name="2021"></a>2.0.2.1
 
@@ -738,7 +796,7 @@ Wydana 12 lipca 2017
 
   - Stałe odwołania do nazw zestawów za pomocą plików MCS. rsp.
 
-  - Dodano obsługę jednostek kompilacji zestawu. JSON.
+  - Dodano obsługę assembly.jsw jednostkach kompilacji.
 
   - Stałe definiuje z poziomu interfejsu API.
 

@@ -2,17 +2,17 @@
 title: Edytuj subskrypcje w portalu administracyjnym | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 03/03/2020
+ms.date: 07/30/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą edytować przypisania subskrypcji.
-ms.openlocfilehash: 32d430ac4afe88541fd839827652ec7613ba03b1
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902927"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453730"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edytuj przypisania subskrypcji programu Visual Studio
 Administrator subskrypcji może wprowadzać zmiany w subskrypcjach przypisanych do osób w organizacji.  W tym artykule omówiono typy zmian, które można wprowadzić, i przedstawiono niezbędne kroki.
@@ -25,7 +25,7 @@ Można edytować informacje o subskrybencie w celu poprawienia błędów lub akt
 
 Aby edytować abonenta, wybierz wielokropek (...), który pojawia się obok adresu e-mail subskrybenta po umieszczeniu nad nim wskaźnika myszy. Zostanie wyświetlona lista rozwijana.  Wybierz pozycję **Edytuj** , aby zmodyfikować szczegóły subskrybenta. 
 > [!div class="mx-imgBorder"]
-> ![Wybierz subskrybenta do edycji](_img/edit-license/select-subscriber.png)
+> ![Wybierz subskrybenta do edycji](_img/edit-license/select-subscriber.png "Kliknij wielokropek i wybierz polecenie Edytuj.")
 
 Możesz zaktualizować imię i nazwisko subskrybenta, nazwisko, poziom subskrypcji, adres e-mail, kraj, język, pobrania i pole odwołania. Edytuj informacje o subskrybencie i kliknij przycisk **Zapisz**.
 
@@ -45,17 +45,17 @@ Jednocześnie można edytować wielu subskrybentów przy użyciu procesu edycji 
 
 2. Edycja zbiorcza używa szablonu programu Excel do wprowadzania zmian w informacjach o subskrybencie. W polu edycji zbiorczej kliknij pozycję **Eksportuj ten program Excel** , aby pobrać bieżącą listę subskrybentów, w tym wszystkie informacje.
    > [!div class="mx-imgBorder"]
-   > ![Edycja licencji-eksportowanie list edycji zbiorczej](_img/edit-license/edit-license-bulk-edit-export.png)
+   > ![Edycja licencji-eksportowanie list edycji zbiorczej](_img/edit-license/edit-license-bulk-edit-export.png "Kliknij pozycję Eksportuj ten program Excel, aby utworzyć listę bieżących subskrypcji.")
 
 3. Następnie Zapisz plik lokalnie, aby można było go łatwo znaleźć i wprowadzić wszelkie niezbędne zmiany przed jego przekazaniem. Aby zapewnić pomyślne przekazywanie, **nie należy edytować poziomu subskrypcji lub identyfikatora GUID subskrypcji** w pliku edycji zbiorczej w taki sposób, że spowoduje to niepowodzenie przekazywania.
 
 4. Wróć do portalu administracyjnego subskrypcji programu Visual Studio i w oknie dialogowym Edycja zbiorcza kliknij przycisk **Przeglądaj**. Wybierz zapisany plik programu Excel, a następnie kliknij przycisk **OK**. Postęp przekazywania zostanie wyświetlony na ekranie.
    > [!div class="mx-imgBorder"]
-   > ![Edytowanie licencji — przekazywanie plików edycji zbiorczej](_img/edit-license/edit-license-bulk-file-upload1.png)
+   > ![Edytowanie licencji — przekazywanie plików edycji zbiorczej](_img/edit-license/edit-license-bulk-file-upload1.png "Przejdź do lokalizacji ukończonego pliku programu Excel, wybierz go, a następnie kliknij przycisk OK.")
 
 5. Po przesłaniu pliku zobaczysz powiadomienie informujące o pomyślnym zapoznaniu się z nim. W tym momencie zmiany zostaną odzwierciedlone w informacjach o subskrybencie.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
@@ -65,5 +65,3 @@ Jednocześnie można edytować wielu subskrybentów przy użyciu procesu edycji 
 - Chcesz przypisać określony identyfikator subskrypcji? Sprawdź przypisanie identyfikatora subskrypcji. 
 - Aby uzyskać pomoc dotyczącą znajdowania określonej subskrypcji, zapoznaj się z tematem [Wyszukiwanie w ramach subskrypcji](search-license.md).
 - Chcesz utworzyć listę wszystkich Twoich subskrypcji?  Sprawdź [subskrypcje eksportowania](exporting-subscriptions.md).
-
-

@@ -11,64 +11,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: a4cdb685a11df8e013025fd91dd8869fe5851d93
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544292"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453669"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript i TypeScript w programie Visual Studio 2019
 
 ## <a name="overview"></a>Omówienie
 
-Visual Studio 2019 zapewnia bogatą obsługę programowania JavaScript, zarówno przy użyciu języka JavaScript bezpośrednio, jak i przy użyciu [języka programowania TypeScript](http://www.typescriptlang.org/), który został opracowany w celu zapewnienia bardziej wydajne i przyjemne środowisko programowania JavaScript, zwłaszcza podczas tworzenia projektów na dużą skalę. Kod JavaScript lub TypeScript można napisać w programie Visual Studio dla wielu typów aplikacji i usług.
+Program Visual Studio 2019 zapewnia rozbudowaną obsługę programowania w języku JavaScript, zarówno przy użyciu języka JavaScript, jak i przy użyciu [języka programowania TypeScript](http://www.typescriptlang.org/), który został opracowany w celu zapewnienia wydajniejszych i atrakcyjnych funkcji programowania JavaScript, szczególnie podczas opracowywania projektów na dużą skalę. Można napisać kod JavaScript lub TypeScript w programie Visual Studio dla wielu typów i usług aplikacji.
 
 ## <a name="javascript-language-service"></a>Usługa języka JavaScript
 
-Środowisko JavaScript w programie Visual Studio 2019 jest obsługiwane przez ten sam aparat, który zapewnia obsługę języka TypeScript. Zapewnia to lepszą obsługę funkcji, bogactwo i integrację natychmiast po wyjęciu z pudełka.
+Środowisko JavaScript w programie Visual Studio 2019 jest obsługiwane przez ten sam aparat, który zapewnia obsługę języka TypeScript. Zapewnia to lepszą pomoc techniczną, rozbudowaną i integrację.
 
-Opcja przywrócenia starszej usługi języka JavaScript nie jest już dostępna. Użytkownicy mają teraz nową usługę języka JavaScript out-of-the-box. Nowa usługa językowa jest oparta wyłącznie na usłudze języka TypeScript, która jest obsługiwana przez analizę statyczną. Dzięki temu możemy zapewnić ci lepsze narzędzia, dzięki czemu kod JavaScript może korzystać z bogatsze IntelliSense na podstawie definicji typów. Nowa usługa jest lekka i zużywa mniej pamięci niż starsza usługa, zapewniając lepszą wydajność w miarę skalowania kodu. Poprawiliśmy również wydajność usługi językowej do obsługi większych projektów.
+Opcja przywrócenia starszej wersji usługi językowej JavaScript nie jest już dostępna. Użytkownicy mają teraz nową usługę językową JavaScript. Nowa usługa języka jest oparta wyłącznie na usłudze języka TypeScript, która jest obsługiwana przez analizę statyczną. Dzięki temu możemy zapewnić lepsze narzędzia, dzięki czemu kod JavaScript może korzystać z bogatszej technologii IntelliSense na podstawie definicji typów. Nowa usługa jest lekki i zużywa mniejszą ilość pamięci niż Starsza usługa, co zapewnia lepszą wydajność w miarę skalowania kodu. Ulepszono również wydajność usługi językowej w celu obsługi większych projektów.
 
 ## <a name="typescript-support"></a>Obsługa języka TypeScript
 
-Program Visual Studio 2019 udostępnia kilka opcji integracji kompilacji TypeScript z projektem:
+Program Visual Studio 2019 udostępnia kilka opcji integracji kompilacji języka TypeScript z projektem:
 
-* [Pakiet NuGet typescript](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Po zainstalowaniu pakietu NuGet dla języka TypeScript 3.2 lub nowszego w projekcie odpowiednia wersja usługi języka TypeScript zostanie załadowana do edytora.
-* [Pakiet TypeScript npm](https://www.npmjs.com/package/typescript). Po zainstalowaniu pakietu npm dla języka TypeScript 2.1 lub nowszego w projekcie odpowiednia wersja usługi języka TypeScript zostanie załadowana do edytora.
-* Pakiet SDK typescript, dostępny domyślnie w instalatorze programu Visual Studio, a także samodzielny pakiet SDK pobierany z [portalu VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
+* [Pakiet NuGet języka TypeScript](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Gdy pakiet NuGet dla języka TypeScript 3,2 lub nowszego jest zainstalowany w projekcie, odpowiednia wersja usługi języka TypeScript zostanie załadowana w edytorze.
+* [Pakiet TypeScript npm](https://www.npmjs.com/package/typescript). Gdy pakiet npm dla języka TypeScript 2,1 lub nowszego jest instalowany w projekcie, odpowiednia wersja usługi języka TypeScript zostanie załadowana w edytorze.
+* TypeScript SDK, dostępna domyślnie w Instalatorze programu Visual Studio, a także do pobrania autonomicznego zestawu SDK z [witryny vs Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-395).
 
 > [!TIP]
-> W przypadku projektów opracowanych w programie Visual Studio 2019 firma My zachęcamy do korzystania z pakietu TypeScript NuGet lub TypeScript npm w celu zwiększenia przenośności na różnych platformach i środowiskach.
-
-Jednym z typowych zastosowań pakietu NuGet jest skompilowanie języka TypeScript przy użyciu interfejsu wiersza polecenia .NET Core. Jeśli plik projektu nie zostanie ręcznie edytowany w celu zaimportowania obiektów docelowych kompilacji z instalacji zestawu SDK TypeScript, pakiet NuGet jest jedynym sposobem włączenia kompilacji TypeScript przy użyciu poleceń .NET Core CLI, takich jak `dotnet build` i `dotnet publish`.
-
-## <a name="remove-default-imports-aspnet-core-projects"></a>Usuwanie domyślnych importów (ASP.NET projektów podstawowych)
-
-W starszych projektach, które używają [formatu w stylu nienawiązanego do SDK,](https://docs.microsoft.com/nuget/resources/check-project-format)może być konieczne usunięcie niektórych elementów pliku projektu.
-
-Jeśli używasz pakietu NuGet dla obsługi MSBuild dla projektu, `Microsoft.TypeScript.Default.props` plik `Microsoft.TypeScript.targets`projektu nie może importować ani . Pliki są importowane przez pakiet NuGet, więc dołączając je oddzielnie może spowodować niezamierzone zachowanie.
-
-1. Kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zwolnij projekt**.
-
-1. Kliknij prawym przyciskiem myszy projekt i wybierz polecenie ** \<Edytuj *nazwę*\>pliku projektu**.
-
-   Zostanie otwarty plik projektu.
-
-1. Usuń odwołania `Microsoft.TypeScript.Default.props` do `Microsoft.TypeScript.targets`i .
-
-   Importy do usunięcia wyglądają podobnie do następujących:
-
-   ```xml
-   <Import
-      Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props"
-      Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
-
-   <Import
-      Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets"
-      Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
-   ```
+> W przypadku projektów utworzonych w programie Visual Studio 2019 zachęcamy do korzystania z NuGet języka TypeScript lub pakietu npm języka TypeScript w celu uzyskania większej przenośności na różnych platformach i środowiskach. Aby uzyskać więcej informacji, zobacz [kompilowanie kodu TypeScript przy użyciu NuGet](../javascript/compile-typescript-code-nuget.md) i [kompilowanie kodu TypeScript przy użyciu TSC](../javascript/compile-typescript-code-npm.md).
 
 ## <a name="projects"></a>Projekty
 
-Aplikacje JavaScript platformy uniwersalnej systemu Windows nie są już obsługiwane w programie Visual Studio 2019. Nie można tworzyć ani otwierać projektów platformy uniwersalnej systemu JavaScript (plików z rozszerzeniem *.jsproj*). Możesz dowiedzieć się więcej, korzystając z naszej dokumentacji dotyczącej [tworzenia progresywnych aplikacji sieci Web (PWA),](/microsoft-edge/progressive-web-apps/get-started) które działają dobrze w systemie Windows.
+Aplikacje JavaScript platformy uniwersalnej systemu Windows nie są już obsługiwane w programie Visual Studio 2019. Nie można tworzyć ani otwierać projektów platformy UWP JavaScript (pliki z rozszerzeniem *JSProj*). Więcej informacji można znaleźć w naszej dokumentacji dotyczącej [tworzenia progresywnych Web Apps (PWAs)](/microsoft-edge/progressive-web-apps/get-started) , które działają prawidłowo w systemie Windows.

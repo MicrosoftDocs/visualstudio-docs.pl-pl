@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289095"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453758"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak używać edytora kodu
 
 W tym krótkim wprowadzeniu do edytora kodu w programie Visual Studio zapoznajemy się z innymi sposobami, w których program Visual Studio wykonuje pisanie, nawigowanie i zrozumienie kodu.
 
 > [!TIP]
-> Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie. W zależności od typu opracowywanej aplikacji może być konieczne zainstalowanie **Node.js obciążenia programistycznego** w programie Visual Studio.
+> Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie. W zależności od typu opracowywanej aplikacji może być konieczne zainstalowanie **Node.js obciążenia programistycznego** w programie Visual Studio. Aby uzyskać więcej informacji na temat pobierania usługi językowej dla języka TypeScript, zobacz [Obsługa TypeScript](../javascript/javascript-in-vs-2019.md#typescript-support).
 
 W tym artykule założono, że znasz już programowanie JavaScript. Jeśli nie, zalecamy zaprezentowanie samouczka, takiego jak najpierw [utwórz Node.js i aplikację Express](../javascript/tutorial-nodejs.md) .
 
@@ -65,6 +65,8 @@ W dolnym okienku możesz kliknąć kartę **Lista błędów** , aby wyświetlić
 ![Wyświetl listę błędów](../javascript/media/write-code-error-list.png)
 
 Możesz naprawić ten kod przez dodanie przecinka ( `,` ) przed `"data"` .
+
+Aby uzyskać dodatkowe informacje na temat Zaznaczanie błędów, zobacz [Zaznaczanie błędów](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md).
 
 ## <a name="comment-out-code"></a>Dodawanie komentarza do kodu
 
@@ -116,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >  **IntelliSense**  >  **wstawkę**IntelliSense, a następnie wybierając folder języka.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Nawiguj po kodzie](../ide/navigating-code.md)

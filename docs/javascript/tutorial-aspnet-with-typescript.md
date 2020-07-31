@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283570"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453696"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Samouczek: Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript w programie Visual Studio
 
@@ -36,10 +36,10 @@ Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do stro
 
 Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]
-> * Tworzenie projektu ASP.NET Core
+> * Tworzenie projektu platformy ASP.NET Core
 > * Dodaj pakiet NuGet dla obsługi języka TypeScript
 > * Dodaj jakiś kod TypeScript
-> * Uruchomienie aplikacji
+> * Uruchamianie aplikacji
 > * Dodawanie biblioteki innej firmy przy użyciu usługi npm
 
 ## <a name="prerequisites"></a>Wymagania wstępne
@@ -91,9 +91,6 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
    ![Dodaj pakiet NuGet](../javascript/media/aspnet-core-ts-nuget.png)
 
    Program Visual Studio dodaje pakiet NuGet w węźle **zależności** w Eksplorator rozwiązań.
-
-   > [!NOTE]
-   > Ten samouczek wymaga pakietu NuGet. Alternatywnie, w własnych aplikacjach, możesz chcieć użyć [pakietu npm języka TypeScript](https://www.npmjs.com/package/typescript).
 
 1. Kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **dodaj > nowy element**. Wybierz **plik konfiguracji języka TYPESCRIPT JSON**, a następnie kliknij przycisk **Dodaj**.
 

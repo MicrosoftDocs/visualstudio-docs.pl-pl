@@ -1,6 +1,6 @@
 ---
 title: Kończenie operacji DateTime i TimeSpan za poorednictwem menu IntelliSense
-ms.date: 06/08/2020
+ms.date: 07/31/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: eaa8a344e46c031b37b52106ba9aef25dac59b0c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 36b6d5440e532653845638f87f7f1d7066af6ba3
+ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290576"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87471560"
 ---
 # <a name="datetime-and-timespan-completion-through-intellisense-menu"></a>Kończenie operacji DateTime i TimeSpan za poorednictwem menu IntelliSense
 
@@ -22,20 +22,20 @@ To Refaktoryzacja dotyczy:
 
 - C#
 
-**Co:** Uzupełnianie literałów ciągu DateTime i TimeSpan za poorednictwem menu IntelliSense.
+**Co:** Literał ciągu DateTime i TimeSpan oraz kończenie ciągu formatu za poorednictwem menu IntelliSense.
 
-**Kiedy:** Chcesz napisać literały ciągu DateTime i TimeSpan. Technologia IntelliSense zapewnia podstawowe zakończenie i wyjaśnienie, co oznacza każdy znak. 
+**Kiedy:** Chcesz napisać literał ciągu DateTime i TimeSpan oraz ciąg formatu. Technologia IntelliSense zapewnia podstawowe zakończenie i wyjaśnienie, co oznacza każdy znak. 
 
 **Dlaczego:** Zapamiętywanie formatów daty i godziny jest trudne, a technologia IntelliSense może pomóc w ich pisaniu.
 
 ## <a name="how-to"></a>Porady
 
-1. Umieść kursor w literale DateTime lub w ciągu TimeSpan.
+1. Umieść kursor w ciągu formatu DateTime lub TimeSpan.
 2. Naciśnij klawisz **Ctrl** + **Space** , aby wyzwolić menu **IntelliSense** .
 3. Wybierz znak, który chcesz dodać.
 
    ![Funkcja IntelliSense uzupełniania daty i godziny](media/datetime-completion.png)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

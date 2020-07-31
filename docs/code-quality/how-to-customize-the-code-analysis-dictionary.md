@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371875"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453648"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Porady: dostosowywanie słownika analizy kodu
 
@@ -266,12 +266,12 @@ Warunki w węźle słownik/akronimy/CasingExceptions są stosowane do następuj�
 
 1. W **Eksplorator rozwiązań**Użyj jednej z następujących procedur:
 
-2. Aby dodać słownik do pojedynczego projektu, kliknij prawym przyciskiem myszy nazwę projektu, a następnie kliknij pozycję **Dodaj istniejący element**. Określ plik w oknie dialogowym **Dodaj istniejący element** .
+    - Aby dodać słownik do pojedynczego projektu, kliknij prawym przyciskiem myszy nazwę projektu, a następnie kliknij pozycję **Dodaj istniejący element**. Określ plik w oknie dialogowym **Dodaj istniejący element** .
+  
+    - Aby dodać słownik współużytkowany przez dwa lub więcej projektów, zlokalizuj plik do udostępnienia w oknie dialogowym **Dodaj istniejący element** , kliknij strzałkę w dół na przycisku **Dodaj** , a następnie kliknij przycisk **Dodaj jako link**.
 
-3. Aby dodać słownik współużytkowany przez dwa lub więcej projektów, zlokalizuj plik do udostępnienia w oknie dialogowym **Dodaj istniejący element** , kliknij strzałkę w dół na przycisku **Dodaj** , a następnie kliknij przycisk **Dodaj jako link**.
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nazwę pliku **CustomDictionary.xml** i kliknij polecenie **Właściwości**.
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy nazwę pliku **CustomDictionary.xml** i kliknij polecenie **Właściwości**.
+3. Z listy **Akcja kompilacji** wybierz pozycję **CodeAnalysisDictionary**.
 
-5. Z listy **Akcja kompilacji** wybierz pozycję **CodeAnalysisDictionary**.
-
-6. Z listy **Kopiuj do katalogu wyjściowego** wybierz pozycję nie **Kopiuj**.
+4. Z listy **Kopiuj do katalogu wyjściowego** wybierz pozycję nie **Kopiuj**.
