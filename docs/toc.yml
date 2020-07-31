@@ -42,6 +42,8 @@
       items:
         - name: Omówienie
           href: install/visual-studio-administrator-guide.md
+        - name: Podręcznik użytkowania programu Visual Studio w przedsiębiorstwie
+          href: install/visual-studio-enterprise-guide.md
         - name: Korzystanie z wiersza polecenia
           items:
             - name: Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio
