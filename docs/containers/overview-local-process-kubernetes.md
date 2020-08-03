@@ -6,12 +6,15 @@ ms.topic: conceptual
 description: Opisuje procesy związane z używaniem procesu lokalnego z usługą Kubernetes w celu połączenia komputera deweloperskiego z klastrem Kubernetes
 keywords: Proces lokalny z Kubernetes, Docker, Kubernetes, Azure, Containers
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+manager: jillfra
+author: ghogen
+ms.author: ghogen
+ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133982"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507888"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Jak działa proces lokalny z usługą Kubernetes
 
@@ -20,6 +23,9 @@ Proces lokalny z programem Kubernetes umożliwia uruchamianie i debugowanie kodu
 Proces lokalny z Kubernetes pozwala uniknąć konieczności kompilowania i wdrażania kodu w klastrze przez utworzenie połączenia bezpośrednio między komputerem deweloperskim i klastrem. Połączenie komputera deweloperskiego z klastrem podczas debugowania umożliwia szybkie testowanie i opracowywanie usługi w kontekście pełnej aplikacji bez konieczności tworzenia żadnej konfiguracji platformy Docker lub Kubernetes.
 
 Proces lokalny z Kubernetes przekierowuje ruch między podłączonym klastrem Kubernetes i komputerem deweloperskim. To przekierowywanie ruchu umożliwia kod na komputerze deweloperskim i usługach uruchomionych w klastrze Kubernetes, aby komunikować się tak, jakby znajdowały się w tym samym klastrze Kubernetes. Proces lokalny z usługą Kubernetes umożliwia także replikować zmienne środowiskowe i zainstalowane woluminy dostępne dla zasobników w klastrze Kubernetes na komputerze deweloperskim. Zapewnianie dostępu do zmiennych środowiskowych i zainstalowanych woluminów na komputerze deweloperskim pozwala szybko korzystać z kodu bez konieczności ręcznego replikowania tych zależności.
+
+> [!WARNING]
+> Proces lokalny dla Kubernetes jest przeznaczony do użycia tylko w scenariuszach deweloperskich i testowych. Nie jest ona przeznaczona do użycia ani nie jest obsługiwana w przypadku klastrów produkcyjnych lub usług na żywo w aktywnym użytkowaniu.
 
 ## <a name="using-local-process-with-kubernetes"></a>Używanie procesu lokalnego z Kubernetes
 
@@ -39,6 +45,12 @@ Gdy proces lokalny z usługą Kubernetes nawiązuje połączenie z klastrem,:
 * Uruchamia uruchamianie i debugowanie kodu na komputerze deweloperskim. W razie potrzeby proces lokalny z usługą Kubernetes będzie zwalniać wymagane porty na komputerze deweloperskim przez zatrzymywanie usług lub procesów, które aktualnie korzystają z tych portów.
 
 Po nawiązaniu połączenia z klastrem można uruchomić i debugować kod natywnie na komputerze bez kontenerach, a kod może bezpośrednio współdziałać z resztą klastra. Każdy ruch sieciowy odbierany przez agenta zdalnego jest przekierowywany do portu lokalnego określonego podczas połączenia, dzięki czemu kod natywnie uruchomiony może zaakceptować i przetworzyć ten ruch. Zmienne środowiskowe, woluminy i wpisy tajne z klastra są udostępniane w kodzie uruchomionym na komputerze deweloperskim. Ponadto ze względu na to, że wpisy pliku Hosts i przekazywanie portów zostały dodane do komputera dewelopera przez proces lokalny z Kubernetes, kod może wysyłać ruch sieciowy do usług uruchomionych w klastrze przy użyciu nazw usług z klastra, a ruch jest przesyłany do usług uruchomionych w klastrze. Ruch jest kierowany między komputerem deweloperskim i klastrem przez cały czas, gdy masz połączenie.
+
+Ponadto proces lokalny z Kubernetes zapewnia sposób replikowania zmiennych środowiskowych i zainstalowanych plików dostępnych dla zasobników w klastrze na komputerze deweloperskim za pomocą `KubernetesLocalProcessConfig.yaml` pliku. Możesz również użyć tego pliku, aby utworzyć nowe zmienne środowiskowe i instalacje woluminów.
+
+## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Dodatkowa konfiguracja z KubernetesLocalProcessConfig. YAML
+
+`KubernetesLocalProcessConfig.yaml`Plik umożliwia replikowanie zmiennych środowiskowych i zainstalowanych plików dostępnych dla Twojego zasobnika w klastrze. Więcej informacji o dodatkowych opcjach konfiguracji znajduje się w temacie [Configure Local Process with Kubernetes][using-config-yaml].
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Korzystanie z funkcji routingu do programowania w izolacji
 
@@ -108,3 +120,4 @@ Aby rozpocząć korzystanie z procesu lokalnego z usługą Kubernetes w celu naw
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[using-config-yaml]: configure-local-process-with-kubernetes.md
