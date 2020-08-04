@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 01b4232b4933197f06bb77793fb638281e5b5748
-  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
+  ms.openlocfilehash: bb5bb2bc31527acc497e429030516cdfdb8ccd2e
+  ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 07/15/2020
-  ms.locfileid: "86405382"
+  ms.lasthandoff: 07/31/2020
+  ms.locfileid: "87453711"
 landingContent:
 - title: Wprowadzenie
   linkLists:
@@ -49,6 +49,10 @@ landingContent:
     links:
     - text: Pisanie i edytowanie kodu
       url: write-and-edit-code.md
+    - text: Kompilowanie kodu języka TypeScript przy użyciu kompilatora tsc
+      url: compile-typescript-code-npm.md
+    - text: Kompilowanie kodu języka TypeScript przy użyciu menedżera NuGet
+      url: compile-typescript-code-nuget.md
     - text: Zarządzanie pakietami npm
       url: npm-package-management.md
     - text: Używanie interaktywnej pętli REPL środowiska Node.js
