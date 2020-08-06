@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019.
-ms.date: 05/20/2020
+ms.date: 08/05/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
+ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387047"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87818589"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
-**Zaktualizowano w [wersji 16,6](/visualstudio/releases/2019/release-notes/)**
+**Zaktualizowano w [wersji 16,7](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Pobierz program Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -86,7 +86,7 @@ Aby uzyskać więcej informacji na temat rozszerzenia intellicode, zobacz temat 
 
 ### <a name="code-cleanup"></a>Czyszczenie kodu
 
-Sparowany z nowym wskaźnikiem kondycji dokumentu jest nowym poleceniem oczyszczania kodu. To nowe polecenie służy do identyfikowania i naprawiania zarówno ostrzeżeń, jak i sugestii po kliknięciu przycisku.
+Sparowany z nowym wskaźnikiem kondycji dokumentu jest nowym poleceniem oczyszczania kodu. To nowe polecenie służy do identyfikowania i rozwiązywania problemów z ostrzeżeniami i sugestiami z pojedynczą akcją (lub kliknięciem przycisku).
 
 Oczyszczanie sformatuje kod i zastosuje wszelkie poprawki kodu zgodnie z sugerowanymi przez [bieżące ustawienia](code-styles-and-code-cleanup.md) i [pliki. editorconfig](create-portable-custom-editor-options.md).
 
@@ -178,7 +178,7 @@ Prawdopodobnie już wcześniej szukasz w okno wyrażeń kontrolnych ciągu z zes
 
    ![Animacja pokazująca okno wyszukiwania debugowania w programie Visual Studio 2019](media/vs-2019/debug-window-search.gif)
 
-Możesz również sformatować sposób wyświetlania wartości w oknach czujki, lokalne i autouzupełniania.  Kliknij dwukrotnie jeden z elementów w dowolnym z okien i Dodaj przecinek (","), aby uzyskać dostęp do listy rozwijanej możliwych specyfikatorów formatu, z których każdy zawiera opis zamierzonego efektu.
+Możesz również sformatować sposób wyświetlania wartości w oknach czujki, lokalne i autouzupełniania. Zaznacz (po dwukrotnym kliknięciu) jeden z elementów w dowolnym z okien i Dodaj przecinek (","), aby uzyskać dostęp do listy rozwijanej możliwych specyfikatorów formatu, z których każdy zawiera opis zamierzonego efektu.
 
    ![Nowa funkcja wartości okno wyrażeń kontrolnych i format w programie Visual Studio 2019](media/search-watch-window.png)
 
@@ -212,7 +212,21 @@ Aby uzyskać więcej informacji, zobacz [Pinnablee właściwości: Debug & Wyśw
 
 Często aktualizujemy program Visual Studio 2019 dzięki nowym funkcjom, które mogą usprawnić pracę programistyczną. Aby dowiedzieć się więcej na temat najnowszych innowacji, zapoznaj się z [blogiem dotyczącym programu Visual Studio](https://devblogs.microsoft.com/visualstudio/). Aby zapoznać się z rekordem, który został ogłoszony w wersji zapoznawczej, zapoznaj się z informacjami dotyczącymi [wersji zapoznawczej](/visualstudio/releases/2019/release-notes-preview/). Aby zapoznać się z listą zaplanowanych do wydania usługi, zobacz [Przewodnik po programie Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
-Chcesz dowiedzieć się więcej na temat tego, co jeszcze znajduje się w programie Works dla programu Visual Studio 2019? Zapoznaj się z [planem programu Visual Studio](/visualstudio/productinfo/vs-roadmap/).
+W tym miejscu poniżej przedstawiono kilka nowych funkcji dostępnych obecnie w programie Works.
+
+- **Visual Studio 2019 support for Visual Studio Codespaces (wersja zapoznawcza)**
+
+  Teraz więcej niż kiedykolwiek wcześniej deweloperzy są Juggling wiele projektów w pracy i w domu. Nowe funkcje, poprawki błędów, przeglądy żądań ściągnięcia, &amp; prototypy wszystkich konkurowania na czas i wymagają stałego przełączania kontekstu. [Program Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) może pomóc. W ciągu kilku sekund możesz tworzyć w chmurze dedykowane, niestandardowe środowiska dla każdego projektu. Za pomocą programu Visual Studio 2019 można nawiązać połączenie z usługą codespace i działać tak samo jak lokalnie.
+
+  Aby uzyskać więcej informacji, zobacz stronę [co to jest program Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline/) .
+
+- **Ulepszone środowisko Git w programie Visual Studio 2019 (wersja zapoznawcza)**
+
+   Kontynuujemy iterację w środowisku odnowionych git, aby zwiększyć produktywność podczas pracy z kodem w witrynie GitHub, Azure Repos i innych zdalnych usługach hostingu. Możesz inicjować i wypchnąć z programu Visual Studio 2019 przy użyciu jednej akcji (lub kliknięcia). Można również tworzyć nowe gałęzie, zarządzać bieżącymi gałęziami i rozwiązywać konflikty scalania.
+
+   Aby uzyskać więcej informacji, zobacz artykuł [atrakcyjne nowe aktualizacje środowiska Git w blogu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) .
+
+Aby uzyskać więcej informacji na temat wersji zapoznawczej &mdash; i linku pobierania, jeśli chcesz ją wypróbować, &mdash; Zobacz stronę **[wersji zapoznawczej programu Visual Studio](https://visualstudio.microsoft.com/vs/preview/)** .
 
 ## <a name="give-us-feedback"></a>Wyślij do nas swoją opinię
 
@@ -222,7 +236,7 @@ Dlaczego warto wysłać opinię do zespołu programu Visual Studio? Ze względu 
 
 * Jeśli wystąpi problem polegający na tym, że program Visual Studio przestaje odpowiadać, ulegnie awarii lub inny problem z wydajnością, można łatwo udostępnić Odtwórz kroki i pliki pomocnicze za pomocą narzędzia [Zgłoś problem](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Informacje o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Informacje o wersji programu Visual Studio 2019 dla komputerów Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
