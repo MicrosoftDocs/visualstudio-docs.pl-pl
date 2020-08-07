@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137564"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972476"
 ---
 # <a name="developer-community-guidelines"></a>Wytyczne od społeczności deweloperów
 
@@ -89,12 +89,15 @@ Jeśli zaproponujesz funkcję, możesz zrezygnować z wywieszania, że nie zamie
 
 W naszym procesie podejmowania decyzji Przyjrzyjmy się następującej charakterystyce dotyczącej sugestii funkcji:
 
+- Czy jest ono zgodne z naszym ogólnym kierownictwem produktu?
 - Czy możemy stworzyć i obsługiwać ją?
 - Czy jest ono zgodne z naszą ogólną strategią [planu](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) ?
 - Czy dział IT ma pomoc techniczną, jak wskazuje głosy i Komentarze?
 - Podoba nam się to, nawet w przypadku niskich wsparcia dla społeczności?
 
 Jeśli nie możemy odpowiedzieć na żadne z tych pytań, zostanie ono zamknięte. Jednak często sugestia pozostanie otwarta w _ramach przeglądu_ , aby zebrać więcej opinii społeczności.
+
+Jeśli sugestia nie jest zgodna z naszym ogólnym kierunkiem produktu, zostanie ona ZAMKNIĘTA *poza zakresem*. Na przykład firma Microsoft może mieć podobne inwestycje w innych członków rodziny produktów Visual Studio. Lub Sugerowana funkcja może być przeznaczona tylko dla kilku osób, dzięki czemu rozszerzenie jest lepiej dopasowane do jego udostępniania.
 
 Śledź postęp swojej sugestii dotyczących funkcji, odwołując się do [Stanów sugestii i często ZAdawanych pytań](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
 
