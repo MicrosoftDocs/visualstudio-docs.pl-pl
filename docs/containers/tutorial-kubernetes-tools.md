@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283193"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913296"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Wprowadzenie do narzędzi Visual Studio Kubernetes Tools
 
@@ -123,7 +123,7 @@ Dodane pliki to:
 
 - *azds. YAML*. Zawiera ustawienia Azure Dev Spaces, które zapewniają szybkie i iteracyjne środowisko debugowania w usłudze Azure Kubernetes Service. Aby uzyskać więcej informacji, zobacz [dokumentację Azure dev Spaces](/azure/dev-spaces/azure-dev-spaces).
 
-::: moniker range="vs-2017"
+:::moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikowanie w usłudze Azure Kubernetes Service (AKS)
 
@@ -166,6 +166,16 @@ Aby to zrobić, należy najpierw sprawdzić, czy zainstalowano wszystkie element
 ::: moniker-end
 
 Gratulacje! Możesz teraz używać pełnych możliwości programu Visual Studio do tworzenia aplikacji Kubernetes.
+
+## <a name="remove-kubernetes-support"></a>Usuń pomoc techniczną Kubernetes
+
+1. W **Eksplorator rozwiązań**, w obszarze **właściwości**, Otwórz *launchSettings.jsna*.
+
+1. Usuń kontener sekcji **w Kubernetes**.
+
+1. Jeśli przełączasz się z powrotem do obszaru redagowanie platformy Docker, zaznacz ten projekt w **Eksplorator rozwiązań**, kliknij prawym przyciskiem myszy i wybierz polecenie **Ustaw jako projekt startowy**.
+
+1. Obowiązkowe Można również usunąć inne artefakty wymienione wcześniej w artykule, takie jak folder **wykresów** i *azds. YAML*.
 
 ## <a name="next-steps"></a>Następne kroki
 

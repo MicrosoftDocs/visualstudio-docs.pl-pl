@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8deed53d2789afb964989e4e995e3120e9842bd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543848"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913310"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak tworzyć środowiska Python i zarządzać nimi w programie Visual Studio
 
@@ -262,7 +262,7 @@ Aby poprawić środowisko, które chcesz zachować, najpierw spróbuj użyć pro
 Aby poprawić środowisko, w którym nie jest dostępna opcja naprawy lub aby usunąć nieprawidłowe środowisko, wykonaj następujące kroki, aby bezpośrednio zmodyfikować rejestr. Program Visual Studio automatycznie aktualizuje okno **środowiska Python** , gdy wprowadzisz zmiany w rejestrze.
 
 1. Uruchom *regedit.exe*.
-1. Przejdź do **HKEY_LOCAL_MACHINE \software\python**. W przypadku IronPython należy poszukać polecenia **IronPython** .
+1. Przejdź do **HKEY_LOCAL_MACHINE \software\python** lub **HKEY_CURRENT_USER \software\python**. W przypadku IronPython należy poszukać polecenia **IronPython** .
 1. Rozwiń węzeł, który pasuje do dystrybucji, na przykład **Python Core** dla CPython lub **ContinuumAnalytics** dla Anaconda. W przypadku IronPython rozwiń węzeł numer wersji.
 1. Sprawdź wartości w węźle **InstallPath** :
 
@@ -270,8 +270,9 @@ Aby poprawić środowisko, w którym nie jest dostępna opcja naprawy lub aby us
 
     - Jeśli środowisko nadal istnieje na komputerze, Zmień wartość **ścieżka pliku wykonywalnego** na poprawną lokalizację. W razie potrzeby skoryguj również wartości **(domyślne)** i **WindowedExecutablePath** .
     - Jeśli środowisko nie istnieje już na komputerze i chcesz je usunąć z okna **środowiska języka Python** , Usuń węzeł nadrzędny **InstallPath**, taki jak **3,6** na powyższym obrazie.
-
-## <a name="see-also"></a>Zobacz też
+    - Nieprawidłowe ustawienia w **HKEY_CURRENT_USER \software\python** zastąpić ustawienia w **HKEY_LOCAL_MACHINE \software\python**
+    
+## <a name="see-also"></a>Zobacz także
 
 - [Instalowanie interpreterów języka Python](installing-python-interpreters.md)
 - [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)

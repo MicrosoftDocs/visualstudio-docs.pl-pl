@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 5b6c07d5987c52d818a35babd16681652ddf5830
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507888"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913263"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Jak działa proces lokalny z usługą Kubernetes
 
@@ -47,6 +47,9 @@ Gdy proces lokalny z usługą Kubernetes nawiązuje połączenie z klastrem,:
 Po nawiązaniu połączenia z klastrem można uruchomić i debugować kod natywnie na komputerze bez kontenerach, a kod może bezpośrednio współdziałać z resztą klastra. Każdy ruch sieciowy odbierany przez agenta zdalnego jest przekierowywany do portu lokalnego określonego podczas połączenia, dzięki czemu kod natywnie uruchomiony może zaakceptować i przetworzyć ten ruch. Zmienne środowiskowe, woluminy i wpisy tajne z klastra są udostępniane w kodzie uruchomionym na komputerze deweloperskim. Ponadto ze względu na to, że wpisy pliku Hosts i przekazywanie portów zostały dodane do komputera dewelopera przez proces lokalny z Kubernetes, kod może wysyłać ruch sieciowy do usług uruchomionych w klastrze przy użyciu nazw usług z klastra, a ruch jest przesyłany do usług uruchomionych w klastrze. Ruch jest kierowany między komputerem deweloperskim i klastrem przez cały czas, gdy masz połączenie.
 
 Ponadto proces lokalny z Kubernetes zapewnia sposób replikowania zmiennych środowiskowych i zainstalowanych plików dostępnych dla zasobników w klastrze na komputerze deweloperskim za pomocą `KubernetesLocalProcessConfig.yaml` pliku. Możesz również użyć tego pliku, aby utworzyć nowe zmienne środowiskowe i instalacje woluminów.
+
+> [!NOTE]
+> Na czas trwania połączenia z klastrem (plus dodatkowe 15 minut) proces lokalny z usługą Kubernetes uruchamia proces o nazwie *endpointmanager* z uprawnieniami administratora na komputerze lokalnym.
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Dodatkowa konfiguracja z KubernetesLocalProcessConfig. YAML
 
@@ -92,7 +95,7 @@ Po rozłączeniu z klastrem domyślnie proces lokalny z programem Kubernetes usu
 
 ## <a name="diagnostics-and-logging"></a>Diagnostyka i rejestrowanie
 
-W przypadku korzystania z procesu lokalnego z Kubernetes w celu nawiązania połączenia z klastrem dzienniki diagnostyczne z klastra są rejestrowane w [katalogu tymczasowym][azds-tmp-dir]komputera deweloperskiego.
+W przypadku korzystania z procesu lokalnego z Kubernetes w celu nawiązania połączenia z klastrem dzienniki diagnostyczne z klastra są rejestrowane w katalogu *tymczasowym* komputera deweloperskiego w *procesie lokalnym z* folderem Kubernetes.
 
 ## <a name="limitations"></a>Ograniczenia
 

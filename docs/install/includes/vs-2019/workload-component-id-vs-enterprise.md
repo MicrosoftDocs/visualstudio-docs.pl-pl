@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 038e2c22eec878ff79f90aa6aae3a53995cef948
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 204777b0209b2ca0b1c88717e9908828743087d9
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183223"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805787"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio Core Editor (zawarty w Visual Studio Enterprise 2019)
 
@@ -47,52 +47,52 @@ Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Wymagane
 Microsoft.Net. Component. 4.5.2. TargetingPack | .NET Framework 4.5.2 — pakiet docelowy | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. 4.5. TargetingPack | Pakiet docelowy .NET Framework 4,5 | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.28517.75 | Wymagane
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Wymagane
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Wymagane
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Wymagane
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Wymagane
 Microsoft. WebCore. Component. DevelopmentTools | Narzędzia programistyczne dla platformy .NET Core | 16.5.29721.120 | Wymagane
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Wymagane
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Wymagane
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Wymagane
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Wymagane
 Microsoft. WebCore. Component. Web | Narzędzia programistyczne dla platformy .NET Core | 16.5.29721.120 | Wymagane
 Microsoft. VisualStudio. Component. Azure. AuthoringTools | Narzędzia autorskie platformy Azure | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. Azure. ClientLibs | Biblioteki platformy Azure dla platformy .NET | 16.0.28315.86 | Wymagane
-Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. Azure. Storage. emulator | Emulator usługi Azure Storage | 16.4.29313.120 | Wymagane
 Microsoft. VisualStudio. Component. Eksplorator chmury | Cloud Explorer | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Wymagane
-Microsoft. VisualStudio. Component. DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Wymagane
+Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Wymagane
 Microsoft. VisualStudio. Component. FSharp | Obsługa języka F # | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. FSharp. Webtemplates | Obsługa języka F # dla projektów sieci Web | 16.3.29207.166 | Wymagane
 Microsoft. VisualStudio. Component. IISExpress | IIS Express  | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Wymagane
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Wymagane
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. ManagedDesktop. Core | Rdzeń obciążeń zarządzanych komputerów stacjonarnych | 16.4.29318.151 | Wymagane
 Microsoft. VisualStudio. Component. MSODBC. SQL | Sterownik SQL Server ODBC | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. MSSQL. CMDLnUtils | Narzędzia wiersza polecenia SQL Server | 16.0.28707.177 | Wymagane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. SQL. ADAL | Środowisko uruchomieniowe ADAL SQL | 16.0.28517.75 | Wymagane
 Microsoft. VisualStudio. Component. SQL. CLR | Typy danych CLR dla SQL Server | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. SQL. DataSources | Źródła danych na potrzeby obsługi SQL Server | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. SQL. SSDT | SQL Server Data Tools | 16.3.29207.166 | Wymagane
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Wymagane
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Wymagane
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. Web | Narzędzia deweloperskie ASP.NET i sieci Web | 16.0.28517.75 | Wymagane
-Microsoft. VisualStudio. Component. Azure. wymagania wstępne | Wymagania wstępne dotyczące projektowania platformy Azure | 16.4.29409.204 | Wymagane
+Microsoft. VisualStudio. Component. Azure. wymagania wstępne | Wymagania wstępne dotyczące projektowania platformy Azure | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. AzureFunctions | Narzędzia Azure WebJobs | 16.0.28621.142 | Wymagane
 Microsoft. VisualStudio. Component. Web | Wymagania wstępne dotyczące narzędzi deweloperskich ASP.NET i Web | 16.4.29318.151 | Wymagane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Wymagane
-Microsoft. Component. Azure. datalake. Tools | Narzędzia Azure Data Lake i Stream Analytics | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Wymagane
+Microsoft. Component. Azure. datalake. Tools | Narzędzia Azure Data Lake i Stream Analytics | 16.7.30310.162 | Zalecane
 Microsoft.Net. Component. 4.5.1. TargetingPack | Pakiet .NET Framework 4.5.1 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4.6. TargetingPack | Pakiet docelowy .NET Framework 4,6 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4. TargetingPack | Pakiet docelowy .NET Framework 4 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. TargetingPacks. Common | .NET Framework 4 — narzędzia deweloperskie 4,6 | 16.0.28516.191 | Zalecane
-Microsoft. NET. Core. Component. SDK. 2.1 | Środowisko uruchomieniowe LTS programu .NET Core 2,1 | 16.6.30107.105 | Zalecane
+Microsoft. NET. Core. Component. SDK. 2.1 | Środowisko uruchomieniowe programu .NET Core 2,1 (LTS) | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. AspNet45 | Zaawansowane funkcje ASP.NET | 16.0.28315.86 | Zalecane
-Microsoft. VisualStudio. Component. Azure. Kubernetes. Tools | Narzędzia Visual Studio Tools for Kubernetes | 16.0.28625.61 | Zalecane
+Microsoft. VisualStudio. Component. Azure. Kubernetes. Tools | Narzędzia Visual Studio Tools for Kubernetes | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. Azure. PowerShell | Azure PowerShell | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. Azure. ResourceManager. Tools | Narzędzia Azure Resource Manager Core | 16.4.29409.204 | Zalecane
 Microsoft. VisualStudio. Component. Azure. servicefabric. Tools | Narzędzia usługi Service Fabric | 16.4.29313.120 | Zalecane
@@ -100,14 +100,14 @@ Microsoft. VisualStudio. Component. Azure. Waverton | Podstawowe narzędzia Clou
 Microsoft. VisualStudio. Component. Azure. Waverton. BuildTools | Narzędzia kompilacji Cloud Services platformy Azure | 16.3.29207.166 | Zalecane
 Microsoft. VisualStudio. Component. Debugger. snapshot | Debuger migawek | 16.5.29813.82 | Zalecane
 Microsoft. VisualStudio. Component. Debugger. TimeTravel | Debuger podróży czasu | 16.5.29515.121 | Zalecane
-Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.5.29515.121 | Zalecane
+Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. IntelliTrace. fronton | IntelliTrace | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. webdeploy | Web Deploy | 16.0.28517.75 | Zalecane
 Microsoft. VisualStudio. Component. Azure. CloudServices | Narzędzia Cloud Services platformy Azure | 16.4.29409.204 | Zalecane
 Microsoft. VisualStudio. Component. Azure. ResourceManager. Tools | Narzędzia Azure Resource Manager | 16.0.28528.71 | Zalecane
 Microsoft.Net. Component. 4.6.2. TargetingPack | Pakiet .NET Framework 4.6.2 | 16.0.28517.75 | Opcjonalne
-Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.6.30027.131 | Opcjonalne
-Microsoft.Net. Component. 4.7. TargetingPack | Pakiet docelowy .NET Framework 4,7 | 16.6.30027.131 | Opcjonalne
+Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.7.30310.162 | Opcjonalne
+Microsoft.Net. Component. 4.7. TargetingPack | Pakiet docelowy .NET Framework 4,7 | 16.7.30310.162 | Opcjonalne
 Microsoft.Net. Component. 4.8. TargetingPack | Pakiet docelowy .NET Framework 4,8 | 16.4.29313.120 | Opcjonalne
 Microsoft.Net. Component. 4.6.1. DeveloperTools | Narzędzia programistyczne .NET Framework 4.6.1 | 16.3.29207.166 | Opcjonalne
 Microsoft.Net. Component. 4.6.2. DeveloperTools | Narzędzia programistyczne .NET Framework 4.6.2 | 16.3.29207.166 | Opcjonalne
@@ -129,47 +129,47 @@ Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Składnik. Microsoft. VisualStudio. RazorExtension | Usługi języka Razor | 16.0.28714.129 | Zalecane
 Składnik. Microsoft. Web. Librarymanager | Library Manager | 16.0.28315.86 | Zalecane
-Microsoft. Component. Azure. datalake. Tools | Narzędzia Azure Data Lake i Stream Analytics | 16.6.30013.169 | Zalecane
+Microsoft. Component. Azure. datalake. Tools | Narzędzia Azure Data Lake i Stream Analytics | 16.7.30310.162 | Zalecane
 Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Zalecane
 Microsoft.Net. Component. 4.5.1. TargetingPack | Pakiet .NET Framework 4.5.1 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4.5.2. TargetingPack | .NET Framework 4.5.2 — pakiet docelowy | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4.5. TargetingPack | Pakiet docelowy .NET Framework 4,5 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4.6. TargetingPack | Pakiet docelowy .NET Framework 4,6 | 16.0.28517.75 | Zalecane
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Zalecane
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Zalecane
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Zalecane
 Microsoft.Net. Component. 4. TargetingPack | Pakiet docelowy .NET Framework 4 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Zalecane
 Microsoft.Net. Component. TargetingPacks. Common | .NET Framework 4 — narzędzia deweloperskie 4,6 | 16.0.28516.191 | Zalecane
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Zalecane
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Zalecane
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Zalecane
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. Azure. AuthoringTools | Narzędzia autorskie platformy Azure | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. Azure. ClientLibs | Biblioteki platformy Azure dla platformy .NET | 16.0.28315.86 | Zalecane
-Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. Azure. Storage. emulator | Emulator usługi Azure Storage | 16.4.29313.120 | Zalecane
 Microsoft. VisualStudio. Component. Azure. Waverton | Podstawowe narzędzia Cloud Services platformy Azure | 16.4.29409.204 | Zalecane
 Microsoft. VisualStudio. Component. Azure. Waverton. BuildTools | Narzędzia kompilacji Cloud Services platformy Azure | 16.3.29207.166 | Zalecane
 Microsoft. VisualStudio. Component. Eksplorator chmury | Cloud Explorer | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Zalecane
-Microsoft. VisualStudio. Component. DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Zalecane
+Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Zalecane
 Microsoft. VisualStudio. Component. IISExpress | IIS Express  | 16.0.28315.86 | Zalecane
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Zalecane
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Zalecane
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. ManagedDesktop. Core | Rdzeń obciążeń zarządzanych komputerów stacjonarnych | 16.4.29318.151 | Zalecane
 Microsoft. VisualStudio. Component. MSODBC. SQL | Sterownik SQL Server ODBC | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. MSSQL. CMDLnUtils | Narzędzia wiersza polecenia SQL Server | 16.0.28707.177 | Zalecane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Zalecane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Zalecane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. SQL. ADAL | Środowisko uruchomieniowe ADAL SQL | 16.0.28517.75 | Zalecane
 Microsoft. VisualStudio. Component. SQL. CLR | Typy danych CLR dla SQL Server | 16.0.28315.86 | Zalecane
 Microsoft. VisualStudio. Component. SQL. DataSources | Źródła danych na potrzeby obsługi SQL Server | 16.0.28315.86 | Zalecane
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. SQL. SSDT | SQL Server Data Tools | 16.3.29207.166 | Zalecane
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Zalecane
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Zalecane
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. Web | Narzędzia deweloperskie ASP.NET i sieci Web | 16.0.28517.75 | Zalecane
 Microsoft. VisualStudio. Component. Web | Wymagania wstępne dotyczące narzędzi deweloperskich ASP.NET i Web | 16.4.29318.151 | Zalecane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Zalecane
 Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.28517.75 | Opcjonalne
 Microsoft. VisualStudio. Component. FSharp. Desktop | Obsługa języka F # dla komputerów stacjonarnych | 16.0.28315.86 | Opcjonalne
 
@@ -189,18 +189,18 @@ Microsoft. Component. PythonTools. Web | Obsługa sieci Web w języku Python | 1
 Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.28517.75 | Zalecane
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Zalecane
 Microsoft. VisualStudio. Component. FSharp. Desktop | Obsługa języka F # dla komputerów stacjonarnych | 16.0.28315.86 | Zalecane
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Zalecane
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Zalecane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Zalecane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Zalecane
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Zalecane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Zalecane
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. webdeploy | Web Deploy | 16.0.28517.75 | Zalecane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Zalecane
 Microsoft. Components. PythonTools. NativeDevelopment | Natywne narzędzia programistyczne języka Python | 16.2.29020.229 | Opcjonalne
 Microsoft. VisualStudio. Component. Graphics. Tools | Debuger grafiki i Profiler procesora GPU dla programu DirectX | 16.0.28625.61 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.0.28625.61 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. VC. DiagnosticTools | Narzędzia profilowania języka C++ | 16.5.29515.121 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.26) | 16.6.30013.169 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.27) | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK | Uniwersalne środowisko uruchomieniowe języka C systemu Windows | 16.4.29409.204 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK. 18362 | Zestaw SDK systemu Windows 10 (10.0.18362.0) | 16.1.28829.92 | Opcjonalne
 
@@ -215,19 +215,19 @@ Microsoft. VisualStudio. Component. Windows10SDK. 18362 | Zestaw SDK systemu Win
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Wymagane
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Wymagane
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Wymagane
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Wymagane
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Wymagane
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Wymagane
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Wymagane
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Wymagane
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
 Microsoft. VisualStudio. Component. ManagedDesktop. Core | Rdzeń obciążeń zarządzanych komputerów stacjonarnych | 16.4.29318.151 | Wymagane
-Microsoft. VisualStudio. Component. ManagedDesktop. Pres | Narzędzia programistyczne dla programu .NET Desktop | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. ManagedDesktop. Pres | Narzędzia programistyczne dla programu .NET Desktop | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. SQL. CLR | Typy danych CLR dla SQL Server | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Wymagane
-Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.1998 | Zalecane
+Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.2517 | Zalecane
 Microsoft. Components. Blend | Blend for Visual Studio | 16.0.28315.86 | Zalecane
 Microsoft.Net. Component. 4.5.1. TargetingPack | Pakiet .NET Framework 4.5.1 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4.5.2. TargetingPack | .NET Framework 4.5.2 — pakiet docelowy | 16.0.28517.75 | Zalecane
@@ -236,12 +236,12 @@ Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.285
 Microsoft.Net. Component. 4.6. TargetingPack | Pakiet docelowy .NET Framework 4,6 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4. TargetingPack | Pakiet docelowy .NET Framework 4 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. TargetingPacks. Common | .NET Framework 4 — narzędzia deweloperskie 4,6 | 16.0.28516.191 | Zalecane
-Microsoft. NET. Core. Component. SDK. 2.1 | Środowisko uruchomieniowe LTS programu .NET Core 2,1 | 16.6.30107.105 | Zalecane
+Microsoft. NET. Core. Component. SDK. 2.1 | Środowisko uruchomieniowe programu .NET Core 2,1 (LTS) | 16.7.30310.162 | Zalecane
 Microsoft. WebCore. Component. DevelopmentTools | Narzędzia programistyczne dla platformy .NET Core | 16.5.29721.120 | Zalecane
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Zalecane
 Microsoft. VisualStudio. Component. Debugger. JustInTime | Debuger just in Time | 16.0.28517.75 | Zalecane
-Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.5.29515.121 | Zalecane
-Microsoft. VisualStudio. Component. DotNetModelBuilder | ML.NET model Builder (wersja zapoznawcza) | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.7.30310.162 | Zalecane
+Microsoft. VisualStudio. Component. DotNetModelBuilder | ML.NET model Builder (wersja zapoznawcza) | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. EntityFramework | Narzędzia Entity Framework 6 | 16.0.28315.86 | Zalecane
 Microsoft. VisualStudio. Component. FSharp | Obsługa języka F # | 16.0.28315.86 | Zalecane
 Microsoft. VisualStudio. Component. IntelliTrace. fronton | IntelliTrace | 16.5.29515.121 | Zalecane
@@ -251,8 +251,8 @@ Składnik. Dotfuscator | PreEmptive Protection — Dotfuscator | 16.0.28528.71 |
 Składnik. Microsoft. VisualStudio. RazorExtension | Usługi języka Razor | 16.0.28714.129 | Opcjonalne
 Składnik. Microsoft. Web. Librarymanager | Library Manager | 16.0.28315.86 | Opcjonalne
 Microsoft.Net. Component. 4.6.2. TargetingPack | Pakiet .NET Framework 4.6.2 | 16.0.28517.75 | Opcjonalne
-Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.6.30027.131 | Opcjonalne
-Microsoft.Net. Component. 4.7. TargetingPack | Pakiet docelowy .NET Framework 4,7 | 16.6.30027.131 | Opcjonalne
+Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.7.30310.162 | Opcjonalne
+Microsoft.Net. Component. 4.7. TargetingPack | Pakiet docelowy .NET Framework 4,7 | 16.7.30310.162 | Opcjonalne
 Microsoft.Net. Component. 4.8. TargetingPack | Pakiet docelowy .NET Framework 4,8 | 16.4.29313.120 | Opcjonalne
 Microsoft.Net. Component. 4.6.1. DeveloperTools | Narzędzia programistyczne .NET Framework 4.6.1 | 16.3.29207.166 | Opcjonalne
 Microsoft.Net. Component. 4.6.2. DeveloperTools | Narzędzia programistyczne .NET Framework 4.6.2 | 16.3.29207.166 | Opcjonalne
@@ -263,27 +263,27 @@ Microsoft. VisualStudio. Component. ClassDesigner | Projektant klas | 16.0.28528
 Microsoft. VisualStudio. Component. CodeClone | Klonowanie kodu | 16.4.29409.204 | Opcjonalne
 Microsoft. VisualStudio. Component. CodeMap | Mapa kodu | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. DependencyValidation. Enterprise | Walidacja aktywnej zależności | 16.0.28625.61 | Opcjonalne
-Microsoft. VisualStudio. Component. DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Opcjonalne
+Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Opcjonalne
 Microsoft. VisualStudio. Component. FSharp. Desktop | Obsługa języka F # dla komputerów stacjonarnych | 16.0.28315.86 | Opcjonalne
 Microsoft. VisualStudio. Component. GraphDocument | Edytor DGML | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. IISExpress | IIS Express  | 16.0.28315.86 | Opcjonalne
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Opcjonalne
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Opcjonalne
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. MSODBC. SQL | Sterownik SQL Server ODBC | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. MSSQL. CMDLnUtils | Narzędzia wiersza polecenia SQL Server | 16.0.28707.177 | Opcjonalne
-Microsoft. VisualStudio. Component. PortableLibrary | Pakiet docelowy biblioteki przenośnej platformy .NET | 16.0.28517.75 | Opcjonalne
+Microsoft. VisualStudio. Component. PortableLibrary | Pakiet docelowy biblioteki przenośnej platformy .NET | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. ADAL | Środowisko uruchomieniowe ADAL SQL | 16.0.28517.75 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. DataSources | Źródła danych na potrzeby obsługi SQL Server | 16.0.28315.86 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. SSDT | SQL Server Data Tools | 16.3.29207.166 | Opcjonalne
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Opcjonalne
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. WCF. narzędzia | Windows Communication Foundation | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. Web | Narzędzia deweloperskie ASP.NET i sieci Web | 16.0.28517.75 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK. 18362 | Zestaw SDK systemu Windows 10 (10.0.18362.0) | 16.1.28829.92 | Opcjonalne
 Microsoft. VisualStudio. Component. ArchitectureTools. Managed | Narzędzia architektury i analizy | 16.5.29514.35 | Opcjonalne
-Microsoft. VisualStudio. Component. MSIX. pakowanie | Narzędzia do pakowania MSIX | 16.4.29409.204 | Opcjonalne
+Microsoft.VisualStudio.ComponentGroup.MSIX. pakowanie | Narzędzia do pakowania MSIX | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Web | Wymagania wstępne dotyczące narzędzi deweloperskich ASP.NET i Web | 16.4.29318.151 | Opcjonalne
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Opcjonalne
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Opcjonalne
 
 ## <a name="game-development-with-unity"></a>Opracowywanie gier za pomocą aparatu Unity
 
@@ -296,12 +296,12 @@ Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Microsoft.Net. Component. 3.5. DeveloperTools | Narzędzia programistyczne .NET Framework 3,5 | 16.0.28517.75 | Wymagane
-Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.6.30027.131 | Wymagane
+Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. Unity | Narzędzia Visual Studio Tools for Unity | 16.0.28315.86 | Wymagane
-Składnik. UnityEngine. x64 | Unity 2019,2 64 — Edytor bitowy | 16.5.29515.121 | Zalecane
+Składnik. UnityEngine. x64 | Centrum Unity | 16.7.30310.162 | Zalecane
 Component. UnityEngine. x86 | Unity 5,6 32 — Edytor bitowy | 16.1.28811.260 | Zalecane
 
 ## <a name="linux-development-with-c"></a>Programowanie dla systemu Linux w języku C++
@@ -316,9 +316,9 @@ Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Składnik. MDD języka. Linux | Programowanie w języku C++ dla systemu Linux | 16.5.29515.121 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
-Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.0.28625.61 | Wymagane
+Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.7.30310.162 | Wymagane
 Składnik. Linux. CMake | C++ CMake Tools dla systemu Linux | 16.2.29003.222 | Zalecane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Zalecane
 Component. MDD języka. Linux. w zatoce. ARM | Narzędzia programistyczne Embedded i IoT | 16.5.29515.121 | Opcjonalne
 
 ## <a name="desktop-development-with-c"></a>Programowanie aplikacji klasycznych w języku C++
@@ -339,11 +339,11 @@ Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Wymagane
-Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.0.28625.61 | Wymagane
+Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. VC. Redist. 14. Najnowsza | Aktualizacja pakietu redystrybucyjnego języka C++ 2019 | 16.5.29515.121 | Wymagane
 Microsoft. VisualStudio. Component. ArchitectureTools. Native | Narzędzia architektury dla języka C++ | 16.0.28621.142 | Wymagane
 Microsoft. VisualStudio. Component. NativeDesktop. Core | Podstawowe funkcje pulpitu języka C++ | 16.2.29012.281 | Wymagane
-Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.1998 | Zalecane
+Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.2517 | Zalecane
 Microsoft. VisualStudio. Component. Debugger. JustInTime | Debuger just in Time | 16.0.28517.75 | Zalecane
 Microsoft. VisualStudio. Component. Graphics. Tools | Debuger grafiki i Profiler procesora GPU dla programu DirectX | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. IntelliTrace. fronton | IntelliTrace | 16.5.29515.121 | Zalecane
@@ -354,7 +354,7 @@ Microsoft. VisualStudio. Component. VC. CMake. Project | C++ CMake Tools dla sys
 Microsoft. VisualStudio. Component. VC. DiagnosticTools | Narzędzia profilowania języka C++ | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. VC. TestAdapterForBoostTest | Adapter testowy do zwiększenia. test | 16.0.28517.75 | Zalecane
 Microsoft. VisualStudio. Component. VC. TestAdapterForGoogleTest | Test Adapter for Google Test | 16.0.28517.75 | Zalecane
-Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.26) | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.27) | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. Windows10SDK. 18362 | Zestaw SDK systemu Windows 10 (10.0.18362.0) | 16.1.28829.92 | Zalecane
 Microsoft. VisualStudio. Component. WebToolsExtensions. CMake | edytor JSON | 16.3.29207.166 | Zalecane
 Składnik. Incredibuild | IncrediBuild — przyspieszanie kompilacji | 16.5.29721.120 | Opcjonalne
@@ -363,17 +363,17 @@ Microsoft. Component. VC. Runtime. UCRTSDK | Zestaw SDK uniwersalnej CRT systemu
 Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.28517.75 | Opcjonalne
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Opcjonalne
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. 140 | MSVC wersji 140-VS 2015 C++ build Tools (v 14.00) | 16.0.28625.61 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. 140 | MSVC wersji 140-VS 2015 C++ build Tools (v 14.00) | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. VC. ATLMFC | C++ MFC dla najnowszych narzędzi kompilacji v142 (x86 & x64) | 16.4.29313.120 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,26) | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. LLVM. Clang | Kompilator C++ Clang dla systemu Windows (10.0.0) | 16.6.30027.131 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,27) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. LLVM. Clang | Kompilator C++ Clang dla systemu Windows (10.0.0) | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. VC. LLVM. ClangToolset | C++ Clang-CL dla narzędzi kompilacji v142 (x64/x86) | 16.3.29207.166 | Opcjonalne
 Microsoft. VisualStudio. Component. VC. modules. x86. x64 | Moduły C++ dla narzędzi do kompilacji v142 (x64/x86 — eksperymentalne) | 16.0.28625.61 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. najnowsze 141. x86. x64 | MSVC najnowsze 141-VS 2017 C++ x64/x86 Build Tools (v 14.16) | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. Windows10SDK. 16299 | Zestaw SDK systemu Windows 10 (10.0.16299.0) | 16.6.30027.131 | Opcjonalne
-Microsoft. VisualStudio. Component. Windows10SDK. 17134 | Zestaw SDK systemu Windows 10 (10.0.17134.0) | 16.6.30027.131 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. najnowsze 141. x86. x64 | MSVC najnowsze 141-VS 2017 C++ x64/x86 Build Tools (v 14.16) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. Windows10SDK. 16299 | Zestaw SDK systemu Windows 10 (10.0.16299.0) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. Windows10SDK. 17134 | Zestaw SDK systemu Windows 10 (10.0.17134.0) | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK. 17763 | Zestaw SDK systemu Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcjonalne
-Microsoft. VisualStudio. Component. NativeDesktop. LLVM. Clang | C++ Clang Tools for Windows (10.0.0-x64/x86) | 16.6.30027.131 | Opcjonalne
+Microsoft. VisualStudio. Component. NativeDesktop. LLVM. Clang | C++ Clang Tools for Windows (10.0.0-x64/x86) | 16.7.30310.162 | Opcjonalne
 
 ## <a name="game-development-with-c"></a>Programowanie gier w języku C++
 
@@ -386,16 +386,16 @@ Microsoft. VisualStudio. Component. NativeDesktop. LLVM. Clang | C++ Clang Tools
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
-Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.0.28625.61 | Wymagane
+Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. VC. Redist. 14. Najnowsza | Aktualizacja pakietu redystrybucyjnego języka C++ 2019 | 16.5.29515.121 | Wymagane
-Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.26) | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.27) | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. Windows10SDK | Uniwersalne środowisko uruchomieniowe języka C systemu Windows | 16.4.29409.204 | Wymagane
 Microsoft. VisualStudio. Component. Graphics. Tools | Debuger grafiki i Profiler procesora GPU dla programu DirectX | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. IntelliTrace. fronton | IntelliTrace | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. VC. ASAN | C++ AddressSanitizer (eksperymentalne) | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. VC. DiagnosticTools | Narzędzia profilowania języka C++ | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. Windows10SDK. 18362 | Zestaw SDK systemu Windows 10 (10.0.18362.0) | 16.1.28829.92 | Zalecane
-Składnik. Android. NDK. R16B | Android NDK (R16B) | 16.6.30107.105 | Opcjonalne
+Składnik. Android. NDK. R16B | Android NDK (R16B) | 16.7.30316.201 | Opcjonalne
 Składnik. Android. SDK25. Private | Konfiguracja Android SDK (poziom interfejsu API 25) (lokalna instalacja na potrzeby opracowywania aplikacji mobilnych za pomocą języka C++) | 16.0.28625.61 | Opcjonalne
 Składnik. ANT | Apache Ant (1.9.3) | 1.9.3.8 | Opcjonalne
 Składnik. | Cocos | 16.0.28315.86 | Opcjonalne
@@ -410,16 +410,16 @@ Microsoft.Net. Component. 4.5.2. TargetingPack | .NET Framework 4.5.2 — pakiet
 Microsoft.Net. Component. 4.5. TargetingPack | Pakiet docelowy .NET Framework 4,5 | 16.0.28517.75 | Opcjonalne
 Microsoft.Net. Component. 4.6.2. TargetingPack | Pakiet .NET Framework 4.6.2 | 16.0.28517.75 | Opcjonalne
 Microsoft.Net. Component. 4.6. TargetingPack | Pakiet docelowy .NET Framework 4,6 | 16.0.28517.75 | Opcjonalne
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Opcjonalne
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Opcjonalne
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Opcjonalne
 Microsoft.Net. Component. 4. TargetingPack | Pakiet docelowy .NET Framework 4 | 16.0.28517.75 | Opcjonalne
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Opcjonalne
 Microsoft.Net. Component. TargetingPacks. Common | .NET Framework 4 — narzędzia deweloperskie 4,6 | 16.0.28516.191 | Opcjonalne
 Microsoft. VisualStudio. Component. NuGet. BuildTools | Cele i zadania kompilacji NuGet | 16.1.28829.92 | Opcjonalne
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Opcjonalne
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. Windows10SDK. 16299 | Zestaw SDK systemu Windows 10 (10.0.16299.0) | 16.6.30027.131 | Opcjonalne
-Microsoft. VisualStudio. Component. Windows10SDK. 17134 | Zestaw SDK systemu Windows 10 (10.0.17134.0) | 16.6.30027.131 | Opcjonalne
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. Windows10SDK. 16299 | Zestaw SDK systemu Windows 10 (10.0.16299.0) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. Windows10SDK. 17134 | Zestaw SDK systemu Windows 10 (10.0.17134.0) | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK. 17763 | Zestaw SDK systemu Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcjonalne
 
 ## <a name="mobile-development-with-c"></a>Tworzenie aplikacji mobilnych w języku C++
@@ -435,18 +435,18 @@ Identyfikator składnika | Nazwa | Wersja | Typ zależności
 Składnik. Android. SDK25. Private | Konfiguracja Android SDK (poziom interfejsu API 25) (lokalna instalacja na potrzeby opracowywania aplikacji mobilnych za pomocą języka C++) | 16.0.28625.61 | Wymagane
 Składnik. OpenJDK | OpenJDK (dystrybucja firmy Microsoft) | 16.1.28811.260 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
-Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.0.28625.61 | Wymagane
-Składnik. Android. NDK. R16B | Android NDK (R16B) | 16.6.30107.105 | Zalecane
+Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.7.30310.162 | Wymagane
+Składnik. Android. NDK. R16B | Android NDK (R16B) | 16.7.30316.201 | Zalecane
 Składnik. ANT | Apache Ant (1.9.3) | 1.9.3.8 | Zalecane
 Składnik. MDD języka. Android | Narzędzia programistyczne w języku C++ dla systemu Android | 16.0.28517.75 | Zalecane
-Składnik. Android. NDK. R16B_3264 | Android NDK (R16B) (32-bitowe) | 16.6.30107.105 | Opcjonalne
+Składnik. Android. NDK. R16B_3264 | Android NDK (R16B) (32-bitowe) | 16.7.30316.201 | Opcjonalne
 Składnik. Google. Android. emulator. API25. Private | Google Emulator systemu Android (poziom interfejsu API 25) (Instalacja lokalna) | 16.1.28810.153 | Opcjonalne
 Component. HAXM. Private | Intel Hardware Accelerated Execution Manager (HAXM) (Instalacja lokalna) | 16.0.28528.71 | Opcjonalne
 Składnik. Incredibuild | IncrediBuild — przyspieszanie kompilacji | 16.5.29721.120 | Opcjonalne
 Składnik. IncredibuildMenu | IncrediBuildMenu | 1.5.0.13 | Opcjonalne
 Składnik. MDD języka. IOS | Narzędzia programistyczne w języku C++ dla systemu iOS | 16.0.28517.75 | Opcjonalne
 
-## <a name="net-core-cross-platform-development"></a>Tworzenie aplikacji dla wielu platform w środowisku .NET Core
+## <a name="net-core-cross-platform-development"></a>Programowanie dla wielu platform w środowisku .NET Core
 
 **Identyfikator:** Microsoft. VisualStudio. obciążeni. NetCoreTools
 
@@ -462,49 +462,49 @@ Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Wymagane
 Microsoft.Net. Component. 4.5.2. TargetingPack | .NET Framework 4.5.2 — pakiet docelowy | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. 4.5. TargetingPack | Pakiet docelowy .NET Framework 4,5 | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.28517.75 | Wymagane
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Wymagane
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Wymagane
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Wymagane
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Wymagane
 Microsoft. WebCore. Component. DevelopmentTools | Narzędzia programistyczne dla platformy .NET Core | 16.5.29721.120 | Wymagane
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Wymagane
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Wymagane
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Wymagane
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Wymagane
 Microsoft. WebCore. Component. Web | Narzędzia programistyczne dla platformy .NET Core | 16.5.29721.120 | Wymagane
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Wymagane
-Microsoft. VisualStudio. Component. DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Wymagane
+Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Wymagane
 Microsoft. VisualStudio. Component. FSharp | Obsługa języka F # | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. FSharp. Webtemplates | Obsługa języka F # dla projektów sieci Web | 16.3.29207.166 | Wymagane
 Microsoft. VisualStudio. Component. IISExpress | IIS Express  | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Wymagane
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Wymagane
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. ManagedDesktop. Core | Rdzeń obciążeń zarządzanych komputerów stacjonarnych | 16.4.29318.151 | Wymagane
 Microsoft. VisualStudio. Component. MSODBC. SQL | Sterownik SQL Server ODBC | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. MSSQL. CMDLnUtils | Narzędzia wiersza polecenia SQL Server | 16.0.28707.177 | Wymagane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. SQL. ADAL | Środowisko uruchomieniowe ADAL SQL | 16.0.28517.75 | Wymagane
 Microsoft. VisualStudio. Component. SQL. CLR | Typy danych CLR dla SQL Server | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. SQL. DataSources | Źródła danych na potrzeby obsługi SQL Server | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. SQL. SSDT | SQL Server Data Tools | 16.3.29207.166 | Wymagane
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Wymagane
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Wymagane
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. Web | Wymagania wstępne dotyczące narzędzi deweloperskich ASP.NET i Web | 16.4.29318.151 | Wymagane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Wymagane
-Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.1998 | Zalecane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Wymagane
+Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.2517 | Zalecane
 Składnik. Microsoft. VisualStudio. Web. AzureFunctions | Narzędzia Azure WebJobs | 16.0.28714.129 | Zalecane
-Microsoft. NET. Core. Component. SDK. 2.1 | Środowisko uruchomieniowe LTS programu .NET Core 2,1 | 16.6.30107.105 | Zalecane
+Microsoft. NET. Core. Component. SDK. 2.1 | Środowisko uruchomieniowe programu .NET Core 2,1 (LTS) | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. AppInsights. Tools | Narzędzia do analizy dla deweloperów | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. Azure. AuthoringTools | Narzędzia autorskie platformy Azure | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. Azure. ClientLibs | Biblioteki platformy Azure dla platformy .NET | 16.0.28315.86 | Zalecane
-Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. Azure. Storage. emulator | Emulator usługi Azure Storage | 16.4.29313.120 | Zalecane
 Microsoft. VisualStudio. Component. Eksplorator chmury | Cloud Explorer | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. Debugger. snapshot | Debuger migawek | 16.5.29813.82 | Zalecane
 Microsoft. VisualStudio. Component. Debugger. TimeTravel | Debuger podróży czasu | 16.5.29515.121 | Zalecane
-Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.5.29515.121 | Zalecane
-Microsoft. VisualStudio. Component. DotNetModelBuilder | ML.NET model Builder (wersja zapoznawcza) | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.7.30310.162 | Zalecane
+Microsoft. VisualStudio. Component. DotNetModelBuilder | ML.NET model Builder (wersja zapoznawcza) | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. IntelliTrace. fronton | IntelliTrace | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. LiveUnitTesting | Live Unit Testing | 16.1.28811.260 | Zalecane
 Microsoft. VisualStudio. Component. Web | Narzędzia deweloperskie ASP.NET i sieci Web | 16.0.28517.75 | Zalecane
@@ -513,7 +513,7 @@ Microsoft. VisualStudio. Component. AzureFunctions | Narzędzia Azure WebJobs | 
 Microsoft. VisualStudio. Component. Web. CloudTools | Narzędzia chmurowe do programowania w sieci Web | 16.2.29003.222 | Zalecane
 Microsoft. VisualStudio. Component. Windows10SDK. 18362 | Zestaw SDK systemu Windows 10 (10.0.18362.0) | 16.1.28829.92 | Opcjonalne
 Microsoft. VisualStudio. Component. IISDevelopment | Obsługa usług IIS w czasie opracowywania | 16.0.28315.86 | Opcjonalne
-Microsoft. VisualStudio. Component. MSIX. pakowanie | Narzędzia do pakowania MSIX | 16.4.29409.204 | Opcjonalne
+Microsoft.VisualStudio.ComponentGroup.MSIX. pakowanie | Narzędzia do pakowania MSIX | 16.7.30310.162 | Opcjonalne
 
 ## <a name="mobile-development-with-net"></a>Programowanie aplikacji mobilnych za pomocą platformy .NET
 
@@ -526,23 +526,23 @@ Microsoft. VisualStudio. Component. MSIX. pakowanie | Narzędzia do pakowania MS
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Składnik. OpenJDK | OpenJDK (dystrybucja firmy Microsoft) | 16.1.28811.260 | Wymagane
-Składnik. Xamarin | Xamarin | 16.6.30013.169 | Wymagane
+Składnik. Xamarin | Xamarin | 16.7.30310.162 | Wymagane
 Składnik. Xamarin. RemotedSimulator | Zdalny symulator Xamarin | 16.0.28315.86 | Wymagane
 Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Wymagane
 Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.28517.75 | Wymagane
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Wymagane
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Wymagane
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Wymagane
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Wymagane
 Microsoft. WebCore. Component. DevelopmentTools | Narzędzia programistyczne dla platformy .NET Core | 16.5.29721.120 | Wymagane
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Wymagane
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Wymagane
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Wymagane
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. FSharp | Obsługa języka F # | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
 Microsoft. VisualStudio. Component. Merq | Popularne narzędzia wewnętrzne platformy Xamarin | 16.2.29012.281 | Wymagane
 Microsoft. VisualStudio. Component. dedebugger | Debuger mono | 16.0.28517.75 | Wymagane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. WebToolsExtensions. TemplateEngine | Aparat tworzenia szablonów ASP.NET | 16.0.28315.86 | Wymagane
 Składnik. Android. SDK28 | Konfiguracja Android SDK (poziom interfejsu API 28) | 16.2.29003.222 | Zalecane
 
@@ -562,54 +562,54 @@ Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Wymagane
 Microsoft.Net. Component. 4.5.2. TargetingPack | .NET Framework 4.5.2 — pakiet docelowy | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. 4.5. TargetingPack | Pakiet docelowy .NET Framework 4,5 | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.28517.75 | Wymagane
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Wymagane
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Wymagane
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Wymagane
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Wymagane
 Microsoft. WebCore. Component. DevelopmentTools | Narzędzia programistyczne dla platformy .NET Core | 16.5.29721.120 | Wymagane
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Wymagane
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Wymagane
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Wymagane
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Wymagane
 Microsoft. WebCore. Component. Web | Narzędzia programistyczne dla platformy .NET Core | 16.5.29721.120 | Wymagane
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Wymagane
-Microsoft. VisualStudio. Component. DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Wymagane
+Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Wymagane
 Microsoft. VisualStudio. Component. FSharp | Obsługa języka F # | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. FSharp. Webtemplates | Obsługa języka F # dla projektów sieci Web | 16.3.29207.166 | Wymagane
 Microsoft. VisualStudio. Component. IISExpress | IIS Express  | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Wymagane
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Wymagane
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. ManagedDesktop. Core | Rdzeń obciążeń zarządzanych komputerów stacjonarnych | 16.4.29318.151 | Wymagane
 Microsoft. VisualStudio. Component. MSODBC. SQL | Sterownik SQL Server ODBC | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. MSSQL. CMDLnUtils | Narzędzia wiersza polecenia SQL Server | 16.0.28707.177 | Wymagane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. SQL. ADAL | Środowisko uruchomieniowe ADAL SQL | 16.0.28517.75 | Wymagane
 Microsoft. VisualStudio. Component. SQL. CLR | Typy danych CLR dla SQL Server | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. SQL. DataSources | Źródła danych na potrzeby obsługi SQL Server | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. SQL. SSDT | SQL Server Data Tools | 16.3.29207.166 | Wymagane
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Wymagane
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Wymagane
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. Web | Narzędzia deweloperskie ASP.NET i sieci Web | 16.0.28517.75 | Wymagane
 Microsoft. VisualStudio. Component. Web | Wymagania wstępne dotyczące narzędzi deweloperskich ASP.NET i Web | 16.4.29318.151 | Wymagane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Wymagane
-Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.1998 | Zalecane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Wymagane
+Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.2517 | Zalecane
 Składnik. Microsoft. VisualStudio. Web. AzureFunctions | Narzędzia Azure WebJobs | 16.0.28714.129 | Zalecane
 Microsoft.Net. Component. 4.5.1. TargetingPack | Pakiet .NET Framework 4.5.1 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4.6. TargetingPack | Pakiet docelowy .NET Framework 4,6 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4. TargetingPack | Pakiet docelowy .NET Framework 4 | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. TargetingPacks. Common | .NET Framework 4 — narzędzia deweloperskie 4,6 | 16.0.28516.191 | Zalecane
-Microsoft. NET. Core. Component. SDK. 2.1 | Środowisko uruchomieniowe LTS programu .NET Core 2,1 | 16.6.30107.105 | Zalecane
+Microsoft. NET. Core. Component. SDK. 2.1 | Środowisko uruchomieniowe programu .NET Core 2,1 (LTS) | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. AppInsights. Tools | Narzędzia do analizy dla deweloperów | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. AspNet45 | Zaawansowane funkcje ASP.NET | 16.0.28315.86 | Zalecane
 Microsoft. VisualStudio. Component. Azure. AuthoringTools | Narzędzia autorskie platformy Azure | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. Azure. ClientLibs | Biblioteki platformy Azure dla platformy .NET | 16.0.28315.86 | Zalecane
-Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. Azure. Storage. emulator | Emulator usługi Azure Storage | 16.4.29313.120 | Zalecane
 Microsoft. VisualStudio. Component. Eksplorator chmury | Cloud Explorer | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. Debugger. snapshot | Debuger migawek | 16.5.29813.82 | Zalecane
 Microsoft. VisualStudio. Component. Debugger. TimeTravel | Debuger podróży czasu | 16.5.29515.121 | Zalecane
-Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.5.29515.121 | Zalecane
+Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. EntityFramework | Narzędzia Entity Framework 6 | 16.0.28315.86 | Zalecane
 Microsoft. VisualStudio. Component. IntelliTrace. fronton | IntelliTrace | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. LiveUnitTesting | Live Unit Testing | 16.1.28811.260 | Zalecane
@@ -617,8 +617,8 @@ Microsoft. VisualStudio. Component. webdeploy | Web Deploy | 16.0.28517.75 | Zal
 Microsoft. VisualStudio. Component. AzureFunctions | Narzędzia Azure WebJobs | 16.0.28621.142 | Zalecane
 Microsoft. VisualStudio. Component. Web. CloudTools | Narzędzia chmurowe do programowania w sieci Web | 16.2.29003.222 | Zalecane
 Microsoft.Net. Component. 4.6.2. TargetingPack | Pakiet .NET Framework 4.6.2 | 16.0.28517.75 | Opcjonalne
-Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.6.30027.131 | Opcjonalne
-Microsoft.Net. Component. 4.7. TargetingPack | Pakiet docelowy .NET Framework 4,7 | 16.6.30027.131 | Opcjonalne
+Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.7.30310.162 | Opcjonalne
+Microsoft.Net. Component. 4.7. TargetingPack | Pakiet docelowy .NET Framework 4,7 | 16.7.30310.162 | Opcjonalne
 Microsoft.Net. Component. 4.8. TargetingPack | Pakiet docelowy .NET Framework 4,8 | 16.4.29313.120 | Opcjonalne
 Microsoft.Net. Component. 4.6.1. DeveloperTools | Narzędzia programistyczne .NET Framework 4.6.1 | 16.3.29207.166 | Opcjonalne
 Microsoft.Net. Component. 4.6.2. DeveloperTools | Narzędzia programistyczne .NET Framework 4.6.2 | 16.3.29207.166 | Opcjonalne
@@ -636,28 +636,28 @@ Microsoft. VisualStudio. Component. AdditionalWebProjectTemplates | Dodatkowe sz
 Microsoft. VisualStudio. Component. ArchitectureTools. Managed | Narzędzia architektury i analizy | 16.5.29514.35 | Opcjonalne
 Microsoft. VisualStudio. Component. IISDevelopment | Obsługa usług IIS w czasie opracowywania | 16.0.28315.86 | Opcjonalne
 
-## <a name="nodejs-development"></a>Programowanie w programie Node. js
+## <a name="nodejs-development"></a>Opracowywanie Node.js
 
 **Identyfikator:** Microsoft. VisualStudio. obciążeni. Node
 
-**Opis:** Twórz skalowalne aplikacje sieciowe przy użyciu środowiska Node. js, asynchronicznego, opartego na zdarzeniach środowisko uruchomieniowe JavaScript. 
+**Opis:** Twórz skalowalne aplikacje sieciowe przy użyciu Node.js, asynchronicznego środowiska uruchomieniowego JavaScript opartego na zdarzeniach. 
 
 ### <a name="components-included-by-this-workload"></a>Składniki zawarte w tym obciążeniu
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Wymagane
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Wymagane
-Microsoft. VisualStudio. Component. Node. Tools | Narzędzia programistyczne środowiska Node. js | 16.5.29515.121 | Wymagane
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Wymagane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Wymagane
-Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.1998 | Zalecane
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Wymagane
+Microsoft. VisualStudio. Component. Node. Tools | Narzędzia programistyczne Node.js | 16.5.29515.121 | Wymagane
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Wymagane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Wymagane
+Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.2517 | Zalecane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Zalecane
 Microsoft. VisualStudio. Component. webdeploy | Web Deploy | 16.0.28517.75 | Zalecane
 Microsoft. VisualStudio. Component. AppInsights. Tools | Narzędzia do analizy dla deweloperów | 16.5.29515.121 | Opcjonalne
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.0.28625.61 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.26) | 16.6.30013.169 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.27) | 16.7.30310.162 | Opcjonalne
 
 ## <a name="officesharepoint-development"></a>Programowanie Office/SharePoint
 
@@ -675,26 +675,26 @@ Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Wymagane
 Microsoft.Net. Component. 4.5.2. TargetingPack | .NET Framework 4.5.2 — pakiet docelowy | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. 4.5. TargetingPack | Pakiet docelowy .NET Framework 4,5 | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. 4.6.1. TargetingPack | .NET Framework 4.6.1 | 16.0.28517.75 | Wymagane
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Wymagane
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Wymagane
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Wymagane
 Microsoft.Net. Component. 4. TargetingPack | Pakiet docelowy .NET Framework 4 | 16.0.28517.75 | Wymagane
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Wymagane
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Wymagane
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Wymagane
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Wymagane
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. AppInsights. Tools | Narzędzia do analizy dla deweloperów | 16.5.29515.121 | Wymagane
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Wymagane
-Microsoft. VisualStudio. Component. DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Wymagane
+Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Wymagane
 Microsoft. VisualStudio. Component. IISExpress | IIS Express  | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Wymagane
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Wymagane
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. ManagedDesktop. Core | Rdzeń obciążeń zarządzanych komputerów stacjonarnych | 16.4.29318.151 | Wymagane
-Microsoft. VisualStudio. Component. ManagedDesktop. Pres | Narzędzia programistyczne dla programu .NET Desktop | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. ManagedDesktop. Pres | Narzędzia programistyczne dla programu .NET Desktop | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. MSODBC. SQL | Sterownik SQL Server ODBC | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. MSSQL. CMDLnUtils | Narzędzia wiersza polecenia SQL Server | 16.0.28707.177 | Wymagane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. SharePoint. Tools | Office Developer Tools for Visual Studio | 16.4.29409.204 | Wymagane
 Microsoft. VisualStudio. Component. SQL. ADAL | Środowisko uruchomieniowe ADAL SQL | 16.0.28517.75 | Wymagane
 Microsoft. VisualStudio. Component. SQL. CLR | Typy danych CLR dla SQL Server | 16.0.28315.86 | Wymagane
@@ -702,17 +702,17 @@ Microsoft. VisualStudio. Component. SQL. DataSources | Źródła danych na potrz
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. SQL. SSDT | SQL Server Data Tools | 16.3.29207.166 | Wymagane
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Wymagane
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Wymagane
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. WCF. narzędzia | Windows Communication Foundation | 16.0.28625.61 | Wymagane
 Microsoft. VisualStudio. Component. Web | Narzędzia deweloperskie ASP.NET i sieci Web | 16.0.28517.75 | Wymagane
 Microsoft. VisualStudio. Component. Workflow | Windows Workflow Foundation | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. Web | Wymagania wstępne dotyczące narzędzi deweloperskich ASP.NET i Web | 16.4.29318.151 | Wymagane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. TeamOffice | Visual Studio Tools pakietu Office (VSTO) | 16.4.29409.204 | Zalecane
 Microsoft. VisualStudio. Component. webdeploy | Web Deploy | 16.0.28517.75 | Zalecane
 Microsoft.Net. Component. 4.6.2. TargetingPack | Pakiet .NET Framework 4.6.2 | 16.0.28517.75 | Opcjonalne
-Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.6.30027.131 | Opcjonalne
-Microsoft.Net. Component. 4.7. TargetingPack | Pakiet docelowy .NET Framework 4,7 | 16.6.30027.131 | Opcjonalne
+Microsoft.Net. Component. 4.7.1. TargetingPack | Pakiet .NET Framework 4.7.1 | 16.7.30310.162 | Opcjonalne
+Microsoft.Net. Component. 4.7. TargetingPack | Pakiet docelowy .NET Framework 4,7 | 16.7.30310.162 | Opcjonalne
 Microsoft.Net. Component. 4.8. TargetingPack | Pakiet docelowy .NET Framework 4,8 | 16.4.29313.120 | Opcjonalne
 Microsoft.Net. Component. 4.6.1. DeveloperTools | Narzędzia programistyczne .NET Framework 4.6.1 | 16.3.29207.166 | Opcjonalne
 Microsoft.Net. Component. 4.6.2. DeveloperTools | Narzędzia programistyczne .NET Framework 4.6.2 | 16.3.29207.166 | Opcjonalne
@@ -733,36 +733,36 @@ Microsoft. VisualStudio. Component. SharePoint. WIF | Środowisko Windows Identi
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Microsoft. Component. PythonTools | Obsługa języka Python | 16.5.29515.121 | Wymagane
-Składnik. CPython3. x64 | Python 3 64-bit (3.7.5) | 3.7.5 | Zalecane
-Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.1998 | Zalecane
+Składnik. CPython3. x64 | Python 3 64-bit (3.7.8) | 3.7.8 | Zalecane
+Składnik. Microsoft. VisualStudio. LiveShare | Live Share | 1.0.2517 | Zalecane
 Microsoft. Component. PythonTools. Minicondax64 | Miniconda Python | 16.2.29003.222 | Zalecane
 Microsoft. Component. PythonTools. Web | Obsługa sieci Web w języku Python | 16.0.28517.75 | Zalecane
 Microsoft. VisualStudio. Component. Common. Azure. Tools | Narzędzia do łączności i publikowania | 16.4.29409.204 | Zalecane
-Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.5.29721.120 | Zalecane
-Microsoft. VisualStudio. Component. TypeScript. 3.8 | Zestaw SDK języka TypeScript 3,8 | 16.0.29813.82 | Zalecane
+Microsoft. VisualStudio. Component. JavaScript. TypeScript | Obsługa języków JavaScript i TypeScript | 16.7.30310.162 | Zalecane
+Microsoft. VisualStudio. Component. TypeScript. 3.9 | Zestaw SDK języka TypeScript 3,9 | 16.0.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. webdeploy | Web Deploy | 16.0.28517.75 | Zalecane
-Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.6.30013.169 | Zalecane
+Microsoft. VisualStudio. Component. WebToolsExtensions | Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowych | 16.7.30310.162 | Zalecane
 Składnik. CPython2. x64 | Python 2 64-bit (2.7.16) | 2.7.16 | Opcjonalne
 Component. CPython2. x86 | Python 2 32-bit (2.7.16) | 2.7.16 | Opcjonalne
-Component. CPython3. x86 | Python 3 32-bit (3.7.5) | 3.7.5 | Opcjonalne
+Component. CPython3. x86 | Python 3 32-bit (3.7.8) | 3.7.8 | Opcjonalne
 Składnik. Microsoft. VisualStudio. RazorExtension | Usługi języka Razor | 16.0.28714.129 | Opcjonalne
 Składnik. Microsoft. Web. Librarymanager | Library Manager | 16.0.28315.86 | Opcjonalne
 Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Opcjonalne
 Microsoft. Components. PythonTools. NativeDevelopment | Natywne narzędzia programistyczne języka Python | 16.2.29020.229 | Opcjonalne
 Microsoft.Net. Component. 4.5.2. TargetingPack | .NET Framework 4.5.2 — pakiet docelowy | 16.0.28517.75 | Opcjonalne
 Microsoft.Net. Component. 4.5. TargetingPack | Pakiet docelowy .NET Framework 4,5 | 16.0.28517.75 | Opcjonalne
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Opcjonalne
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Opcjonalne
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Opcjonalne
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Opcjonalne
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Opcjonalne
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Opcjonalne
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Opcjonalne
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Azure. AuthoringTools | Narzędzia autorskie platformy Azure | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. Azure. ClientLibs | Biblioteki platformy Azure dla platformy .NET | 16.0.28315.86 | Opcjonalne
-Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.6.30013.169 | Opcjonalne
+Microsoft. VisualStudio. Component. Azure. COMPUTE. emulator | Emulator obliczeń Azure | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Azure. Storage. emulator | Emulator usługi Azure Storage | 16.4.29313.120 | Opcjonalne
 Microsoft. VisualStudio. Component. Azure. Waverton | Podstawowe narzędzia Cloud Services platformy Azure | 16.4.29409.204 | Opcjonalne
 Microsoft. VisualStudio. Component. Azure. Waverton. BuildTools | Narzędzia kompilacji Cloud Services platformy Azure | 16.3.29207.166 | Opcjonalne
-Microsoft. VisualStudio. Component. DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Opcjonalne
+Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 16.4.29409.204 | Opcjonalne
 Microsoft. VisualStudio. Component. Graphics. Tools | Debuger grafiki i Profiler procesora GPU dla programu DirectX | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. IISExpress | IIS Express  | 16.0.28315.86 | Opcjonalne
 Microsoft. VisualStudio. Component. JavaScript. Diagnostics | Diagnostyka JavaScript | 16.0.28517.75 | Opcjonalne
@@ -771,16 +771,16 @@ Microsoft. VisualStudio. Component. MSODBC. SQL | Sterownik SQL Server ODBC | 16
 Microsoft. VisualStudio. Component. MSSQL. CMDLnUtils | Narzędzia wiersza polecenia SQL Server | 16.0.28707.177 | Opcjonalne
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Opcjonalne
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Opcjonalne
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Opcjonalne
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. ADAL | Środowisko uruchomieniowe ADAL SQL | 16.0.28517.75 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. CLR | Typy danych CLR dla SQL Server | 16.0.28315.86 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. DataSources | Źródła danych na potrzeby obsługi SQL Server | 16.0.28315.86 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. SSDT | SQL Server Data Tools | 16.3.29207.166 | Opcjonalne
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.0.28625.61 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. VC. DiagnosticTools | Narzędzia profilowania języka C++ | 16.5.29515.121 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.26) | 16.6.30013.169 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.27) | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Web | Narzędzia deweloperskie ASP.NET i sieci Web | 16.0.28517.75 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK | Uniwersalne środowisko uruchomieniowe języka C systemu Windows | 16.4.29409.204 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK. 18362 | Zestaw SDK systemu Windows 10 (10.0.18362.0) | 16.1.28829.92 | Opcjonalne
@@ -799,18 +799,18 @@ Identyfikator składnika | Nazwa | Wersja | Typ zależności
 Microsoft. Component. NetFX. Native | Architektura .NET Native | 16.5.29515.121 | Wymagane
 Microsoft. Components. Blend | Blend for Visual Studio | 16.0.28315.86 | Wymagane
 Microsoft.Net. Component. 4.5. TargetingPack | Pakiet docelowy .NET Framework 4,5 | 16.0.28517.75 | Wymagane
-Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.6.30107.105 | Wymagane
-Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.6.30107.105 | Wymagane
+Microsoft. servicecore. Component. Runtime. 3.1 | Środowisko uruchomieniowe LTS programu .NET Core 3,1 | 16.7.30310.162 | Wymagane
+Microsoft. WebCore. Component. SDK | Zestaw .NET Core SDK | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. AppInsights. Tools | Narzędzia do analizy dla deweloperów | 16.5.29515.121 | Wymagane
-Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.5.29515.121 | Wymagane
+Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. Graphics | Edytory obrazów i modeli 3W | 16.0.28517.75 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. SQL. CLR | Typy danych CLR dla SQL Server | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Component. Windows10SDK. 18362 | Zestaw SDK systemu Windows 10 (10.0.18362.0) | 16.1.28829.92 | Wymagane
-Microsoft. VisualStudio. Component. MSIX. pakowanie | Narzędzia do pakowania MSIX | 16.4.29409.204 | Wymagane
+Microsoft.VisualStudio.ComponentGroup.MSIX. pakowanie | Narzędzia do pakowania MSIX | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. platformy UWP. NetCoreAndStandard | .NET Native i .NET Standard | 16.3.29102.218 | Wymagane
 Microsoft. VisualStudio. Components. platformy UWP. Support | Narzędzia platforma uniwersalna systemu Windows | 16.4.29409.204 | Wymagane
 Microsoft. VisualStudio. Component. platformy UWP. Xamarin | Narzędzia platforma uniwersalna systemu Windows Tools dla platformy Xamarin | 16.5.29514.35 | Wymagane
@@ -824,20 +824,20 @@ Microsoft. VisualStudio. Component. GraphDocument | Edytor DGML | 16.0.28625.61 
 Microsoft. VisualStudio. Component. Graphics. Tools | Debuger grafiki i Profiler procesora GPU dla programu DirectX | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. SQL. LocalDB. Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Opcjonalne
 Microsoft. VisualStudio. Component. platformy UWP. VC. ARM64 | Obsługa języka C++ platforma uniwersalna systemu Windows dla narzędzi kompilacji v142 (ARM64) | 16.3.29207.166 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.0.28625.61 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. Tools. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.26) | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. Tools. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.26) | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.26) | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. najnowsze 141. ARM | MSVC najnowsze 141-VS 2017 C++ ARM Build Tools (v 14.16) | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. najnowsze 141. ARM64 | MSVC najnowsze 141-VS 2017 C++ ARM64 Build Tools (v 14.16) | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. VC. najnowsze 141. x86. x64 | MSVC najnowsze 141-VS 2017 C++ x64/x86 Build Tools (v 14.16) | 16.6.30013.169 | Opcjonalne
-Microsoft. VisualStudio. Component. Windows10SDK. 16299 | Zestaw SDK systemu Windows 10 (10.0.16299.0) | 16.6.30027.131 | Opcjonalne
-Microsoft. VisualStudio. Component. Windows10SDK. 17134 | Zestaw SDK systemu Windows 10 (10.0.17134.0) | 16.6.30027.131 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. CoreIde | Podstawowe funkcje języka C++ | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. Tools. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.27) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. Tools. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.27) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. Tools. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.27) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. najnowsze 141. ARM | MSVC najnowsze 141-VS 2017 C++ ARM Build Tools (v 14.16) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. najnowsze 141. ARM64 | MSVC najnowsze 141-VS 2017 C++ ARM64 Build Tools (v 14.16) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. VC. najnowsze 141. x86. x64 | MSVC najnowsze 141-VS 2017 C++ x64/x86 Build Tools (v 14.16) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. Windows10SDK. 16299 | Zestaw SDK systemu Windows 10 (10.0.16299.0) | 16.7.30310.162 | Opcjonalne
+Microsoft. VisualStudio. Component. Windows10SDK. 17134 | Zestaw SDK systemu Windows 10 (10.0.17134.0) | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK. 17763 | Zestaw SDK systemu Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcjonalne
-Microsoft. VisualStudio. Component. Windows10SDK. 19041 | Zestaw SDK systemu Windows 10 (10.0.19041.0) | 16.6.30107.105 | Opcjonalne
+Microsoft. VisualStudio. Component. Windows10SDK. 19041 | Zestaw SDK systemu Windows 10 (10.0.19041.0) | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. Windows10SDK. IpOverUsb | Łączność urządzeń USB | 16.5.29515.121 | Opcjonalne
 Microsoft. VisualStudio. Component. ArchitectureTools. Managed | Narzędzia architektury i analizy | 16.5.29514.35 | Opcjonalne
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ (v142) — narzędzia platforma uniwersalna systemu Windows | 16.6.30013.169 | Opcjonalne
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ (v142) — narzędzia platforma uniwersalna systemu Windows | 16.7.30310.162 | Opcjonalne
 Microsoft. VisualStudio. Component. platformy UWP. VC. najnowsze 141 | C++ (najnowsze 141) — narzędzia platforma uniwersalna systemu Windows | 16.1.28810.153 | Opcjonalne
 
 ## <a name="visual-studio-extension-development"></a>Programowanie rozszerzeń programu Visual Studio
@@ -852,16 +852,16 @@ Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Microsoft. Component. MSBuild | MSBuild | 16.5.29515.121 | Wymagane
 Microsoft.Net. Component. 4.6. TargetingPack | Pakiet docelowy .NET Framework 4,6 | 16.0.28517.75 | Wymagane
-Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.6.30027.131 | Wymagane
+Microsoft.Net. Component. 4.7.2. TargetingPack | Pakiet .NET Framework 4.7.2 | 16.7.30310.162 | Wymagane
 Microsoft. NET. Component. 4.8. SDK | Zestaw .NET Framework 4,8 SDK | 16.4.29313.120 | Wymagane
 Microsoft.Net. Component. DevelopmentPrerequisites | Narzędzia programistyczne .NET Framework 4.7.2 | 16.3.29207.166 | Wymagane
 Microsoft. VisualStudio. Component. rozszerzenia intellicode | IntelliCode | 0,2 | Wymagane
 Microsoft. VisualStudio. Component. NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Wymagane
 Microsoft. VisualStudio. Component. Roslyn. kompilator | Kompilatory języka C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
-Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.6.30013.169 | Wymagane
+Microsoft. VisualStudio. Component. Roslyn. LanguageServices | C# i Visual Basic | 16.7.30310.162 | Wymagane
 Microsoft. VisualStudio. Component. VSSDK | Visual Studio SDK | 16.0.28315.86 | Wymagane
 Microsoft. VisualStudio. Components. VisualStudioExtension. Pres | Wymagania wstępne dotyczące programowania rozszerzeń programu Visual Studio | 16.4.29318.151 | Wymagane
-Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.5.29515.121 | Zalecane
+Microsoft. VisualStudio. Component. DiagnosticTools | Narzędzia profilowania platformy .NET | 16.7.30310.162 | Zalecane
 Microsoft. VisualStudio. Component. IntelliTrace. fronton | IntelliTrace | 16.5.29515.121 | Zalecane
 Microsoft. VisualStudio. Component. TextTemplating | Transformacja szablonu tekstu | 16.0.28625.61 | Zalecane
 Microsoft. Component. CodeAnalysis. SDK | Zestaw SDK platformy kompilatora .NET | 16.2.29003.222 | Opcjonalne
@@ -883,18 +883,18 @@ Microsoft. NET. Component. 4.6.2. SDK | .NET Framework 4.6.2 SDK | 16.4.29409.20
 Microsoft. NET. Component. 4.7.1. SDK | .NET Framework 4.7.1 SDK | 16.4.29409.204
 Microsoft. NET. Component. 4.7.2. SDK | .NET Framework 4.7.2 SDK | 16.4.29409.204
 Microsoft. NET. Component. 4.7. SDK | Zestaw .NET Framework 4,7 SDK | 16.4.29409.204
-Microsoft. NET. Core. Component. SDK. 2.2 | Środowisko uruchomieniowe programu .NET Core 2,2 (EOL) | 16.6.30013.169
-Microsoft. NET. Core. Component. SDK. 3.0 | Środowisko uruchomieniowe programu .NET Core 3,0 (EOL) | 16.6.30107.105
+Microsoft. NET. Core. Component. SDK. 2.2 | Środowisko uruchomieniowe programu .NET Core 2,2 (poza obsługą) | 16.7.30310.162
+Microsoft. NET. Core. Component. SDK. 3.0 | Środowisko uruchomieniowe programu .NET Core 3,0 (poza obsługą) | 16.7.30310.162
 Microsoft. rdzeń. Component. DevelopmentTools. 2.1 | Narzędzia programistyczne i .NET Core 2,1 | 16.3.29207.166
 Microsoft. WebCore. Component. Web. 2.1 | Narzędzia programistyczne dla sieci Web i .NET Core 2,1 | 16.3.29207.166
 Microsoft. VisualStudio. Component. AzureDevOps. OfficeIntegration | Integracja z usługą Azure DevOps Office | 16.0.28625.61
-Microsoft. VisualStudio. Component. Debugger. VSOnline | Debuger dla środowisk usługi Visual Studio Online | 16.6.30013.169
+Microsoft. VisualStudio. Component. Debugger. VSOnline | Debuger dla programu Visual Studio Codespaces | 16.7.30310.162
 Microsoft. VisualStudio. Component. git | Git dla systemu Windows | 16.0.28625.61
 Microsoft. VisualStudio. Component. LinqToSql | LINQ to SQL Tools | 16.0.28625.61
 Microsoft. VisualStudio. Component. TestTools. zestaw SDK CodedUITest | Kodowany test interfejsu użytkownika | 16.0.28327.66
-Microsoft. VisualStudio. Component. VC. 14.20. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.20) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.20. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.20) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.20. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.20) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.20. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.20) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.20. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.20) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.20. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.20) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.20. ATL | C++ v 14.20 ATL dla narzędzi kompilacji v142 (x86 & x64) | 16.1.28829.92
 Microsoft. VisualStudio. Component. VC. 14.20. ATL. ARM | C++ v 14.20 ATL dla narzędzi kompilacji v142 (ARM) | 16.5.29515.121
@@ -909,11 +909,11 @@ Microsoft. VisualStudio. Component. VC. 14.20. MFC. ARM. Spectre | C++ v 14.20 M
 Microsoft. VisualStudio. Component. VC. 14.20. MFC. ARM64 | C++ v 14.20 MFC for v142 Build Tools (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.20. MFC. ARM64. Spectre | C++ v 14.20 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.20. MFC. Spectre | C++ v 14.20 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.20. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.20) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.20. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.20) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.20. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.20) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.21. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.21) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.21. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.21) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.21. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.21) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.21. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.21) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.21. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.21) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.21. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.21) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.21. ATL | C++ v 14.21 ATL dla narzędzi kompilacji v142 (x86 & x64) | 16.2.29019.55
 Microsoft. VisualStudio. Component. VC. 14.21. ATL. ARM | C++ v 14.21 ATL dla narzędzi kompilacji v142 (ARM) | 16.2.29019.55
@@ -928,11 +928,11 @@ Microsoft. VisualStudio. Component. VC. 14.21. MFC. ARM. Spectre | C++ v 14.21 M
 Microsoft. VisualStudio. Component. VC. 14.21. MFC. ARM64 | C++ v 14.21 MFC for v142 Build Tools (ARM64) | 16.2.29019.55
 Microsoft. VisualStudio. Component. VC. 14.21. MFC. ARM64. Spectre | C++ v 14.21 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.21. MFC. Spectre | C++ v 14.21 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.21. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.21) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.21. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.21) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.21. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.21) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.22. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.22) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.22. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.22) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.22. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.22) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.22. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.22) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.22. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.22) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.22. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.22) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.22. ATL | C++ v 14.22 ATL dla narzędzi kompilacji v142 (x86 & x64) | 16.4.29313.120
 Microsoft. VisualStudio. Component. VC. 14.22. ATL. ARM | C++ v 14.22 ATL dla narzędzi kompilacji v142 (ARM) | 16.4.29313.120
@@ -940,18 +940,18 @@ Microsoft. VisualStudio. Component. VC. 14.22. ATL. ARM. Spectre | C++ v 14.22 A
 Microsoft. VisualStudio. Component. VC. 14.22. ATL. ARM64 | C++ v 14.22 ATL dla narzędzi kompilacji v142 (ARM64) | 16.4.29313.120
 Microsoft. VisualStudio. Component. VC. 14.22. ATL. ARM64. Spectre | C++ v 14.22 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.22. ATL. Spectre | C++ v 14.22 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.22. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,22) | 16.6.30020.68
+Microsoft. VisualStudio. Component. VC. 14.22. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,22) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.22. MFC | C++ v 14.22 MFC for v142 Build Tools (x86 & x64) | 16.4.29313.120
 Microsoft. VisualStudio. Component. VC. 14.22. MFC. ARM | C++ v 14.22 MFC for v142 Build Tools (ARM) | 16.4.29313.120
 Microsoft. VisualStudio. Component. VC. 14.22. MFC. ARM. Spectre | C++ v 14.22 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.22. MFC. ARM64 | C++ v 14.22 MFC for v142 Build Tools (ARM64) | 16.4.29313.120
 Microsoft. VisualStudio. Component. VC. 14.22. MFC. ARM64. Spectre | C++ v 14.22 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.22. MFC. Spectre | C++ v 14.22 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.22. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.22) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.22. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.22) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.22. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.22) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.23. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.23) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.23. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.23) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.23. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.23) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.23. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.23) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.23. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.23) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.23. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.23) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. ATL | C++ v 14.23 ATL dla narzędzi kompilacji v142 (x86 & x64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. ATL. ARM | C++ v 14.23 ATL dla narzędzi kompilacji v142 (ARM) | 16.5.29515.121
@@ -959,18 +959,18 @@ Microsoft. VisualStudio. Component. VC. 14.23. ATL. ARM. Spectre | C++ v 14.23 A
 Microsoft. VisualStudio. Component. VC. 14.23. ATL. ARM64 | C++ v 14.23 ATL dla narzędzi kompilacji v142 (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. ATL. ARM64. Spectre | C++ v 14.23 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. ATL. Spectre | C++ v 14.23 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.23. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,23) | 16.6.30020.68
+Microsoft. VisualStudio. Component. VC. 14.23. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,23) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.23. MFC | C++ v 14.23 MFC for v142 Build Tools (x86 & x64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. MFC. ARM | C++ v 14.23 MFC for v142 Build Tools (ARM) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. MFC. ARM. Spectre | C++ v 14.23 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. MFC. ARM64 | C++ v 14.23 MFC for v142 Build Tools (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. MFC. ARM64. Spectre | C++ v 14.23 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. 14.23. MFC. Spectre | C++ v 14.23 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.23. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.23) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.23. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.23) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.23. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.23) | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. 14.24. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.24) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.24. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.24) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.24. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.24) | 16.5.29721.120
-Microsoft. VisualStudio. Component. VC. 14.24. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.24) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.24. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.24) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.24. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.24) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. ATL | C++ v 14.24 ATL dla narzędzi kompilacji v142 (x86 & x64) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. ATL. ARM | C++ v 14.24 ATL dla narzędzi kompilacji v142 (ARM) | 16.5.29721.120
@@ -978,34 +978,53 @@ Microsoft. VisualStudio. Component. VC. 14.24. ATL. ARM. Spectre | C++ v 14.24 A
 Microsoft. VisualStudio. Component. VC. 14.24. ATL. ARM64 | C++ v 14.24 ATL dla narzędzi kompilacji v142 (ARM64) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. ATL. ARM64. Spectre | C++ v 14.24 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. ATL. Spectre | C++ v 14.24 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.5.29721.120
-Microsoft. VisualStudio. Component. VC. 14.24. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,24) | 16.6.30020.68
+Microsoft. VisualStudio. Component. VC. 14.24. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,24) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.24. MFC | C++ v 14.24 MFC for v142 Build Tools (x86 & x64) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. MFC. ARM | C++ v 14.24 MFC for v142 Build Tools (ARM) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. MFC. ARM. Spectre | C++ v 14.24 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. MFC. ARM64 | C++ v 14.24 MFC for v142 Build Tools (ARM64) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. MFC. ARM64. Spectre | C++ v 14.24 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. 14.24. MFC. Spectre | C++ v 14.24 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.5.29721.120
-Microsoft. VisualStudio. Component. VC. 14.24. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.24) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.24. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.24) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. 14.24. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.24) | 16.5.29721.120
-Microsoft. VisualStudio. Component. VC. 14.25. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.25) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.25) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.25) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.25) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ATL | C++ v 14.25 ATL dla narzędzi kompilacji v142 (x86 & x64) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ATL. ARM | C++ v 14.25 ATL dla narzędzi kompilacji v142 (ARM) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ATL. ARM. Spectre | C++ v 14.25 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ATL. ARM64 | C++ v 14.25 ATL dla narzędzi kompilacji v142 (ARM64) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ATL. ARM64. Spectre | C++ v 14.25 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. ATL. Spectre | C++ v 14.25 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,25) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. MFC | C++ v 14.25 MFC for v142 Build Tools (x86 & x64) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. MFC. ARM | C++ v 14.25 MFC for v142 Build Tools (ARM) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. MFC. ARM. Spectre | C++ v 14.25 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. MFC. ARM64 | C++ v 14.25 MFC for v142 Build Tools (ARM64) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. MFC. ARM64. Spectre | C++ v 14.25 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. MFC. Spectre | C++ v 14.25 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.25) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. 14.25. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.25) | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. 14.25. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.25) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.25) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.25) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.25) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ATL | C++ v 14.25 ATL dla narzędzi kompilacji v142 (x86 & x64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ATL. ARM | C++ v 14.25 ATL dla narzędzi kompilacji v142 (ARM) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ATL. ARM. Spectre | C++ v 14.25 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ATL. ARM64 | C++ v 14.25 ATL dla narzędzi kompilacji v142 (ARM64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ATL. ARM64. Spectre | C++ v 14.25 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. ATL. Spectre | C++ v 14.25 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,25) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. MFC | C++ v 14.25 MFC for v142 Build Tools (x86 & x64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. MFC. ARM | C++ v 14.25 MFC for v142 Build Tools (ARM) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. MFC. ARM. Spectre | C++ v 14.25 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. MFC. ARM64 | C++ v 14.25 MFC for v142 Build Tools (ARM64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. MFC. ARM64. Spectre | C++ v 14.25 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. MFC. Spectre | C++ v 14.25 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.25) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.25. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.25) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ARM | MSVC v142-VS 2019 C++ ARM Build Tools (v 14.26) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.26) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ARM64 | MSVC v142-VS 2019 C++ ARM64 Build Tools (v 14.26) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.26) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ATL | C++ v 14.26 ATL dla narzędzi kompilacji v142 (x86 & x64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ATL. ARM | C++ v 14.26 ATL dla narzędzi kompilacji v142 (ARM) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ATL. ARM. Spectre | C++ v 14.26 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ATL. ARM64 | C++ v 14.26 ATL dla narzędzi kompilacji v142 (ARM64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ATL. ARM64. Spectre | C++ v 14.26 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. ATL. Spectre | C++ v 14.26 ATL dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. CLI. Support | Obsługa języka C++/CLI dla narzędzi kompilacji v142 (14,26) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. MFC | C++ v 14.26 MFC for v142 Build Tools (x86 & x64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. MFC. ARM | C++ v 14.26 MFC for v142 Build Tools (ARM) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. MFC. ARM. Spectre | C++ v 14.26 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. MFC. ARM64 | C++ v 14.26 MFC for v142 Build Tools (ARM64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. MFC. ARM64. Spectre | C++ v 14.26 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. MFC. Spectre | C++ v 14.26 MFC dla narzędzi kompilacji v142 z ograniczeniami Spectre (x86 & x64) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. x86. x64 | MSVC v142-VS 2019 C++ x64/x86 Build Tools (v 14.26) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. 14.26. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.26) | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. ATL. ARM | C++ ATL dla najnowszych narzędzi kompilacji v142 (ARM) | 16.4.29313.120
 Microsoft. VisualStudio. Component. VC. ATL. ARM. Spectre | C++ ATL dla najnowszych narzędzi kompilacji v142 z ograniczeniami Spectre (ARM) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. ATL. ARM64 | C++ ATL dla najnowszych narzędzi kompilacji v142 (ARM64) | 16.4.29313.120
@@ -1017,9 +1036,9 @@ Microsoft. VisualStudio. Component. VC. MFC. ARM. Spectre | C++ MFC dla najnowsz
 Microsoft. VisualStudio. Component. VC. MFC. ARM64 | C++ MFC dla najnowszych narzędzi kompilacji v142 (ARM64) | 16.4.29313.120
 Microsoft. VisualStudio. Component. VC. MFC. ARM64. Spectre | C++ MFC dla najnowszych narzędzi kompilacji v142 z ograniczeniami Spectre (ARM64) | 16.5.29721.120
 Microsoft. VisualStudio. Component. VC. Redist. MSM | MSMs redystrybucyjny języka C++ 2019 | 16.5.29515.121
-Microsoft. VisualStudio. Component. VC. Runtimes. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.26) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. Runtimes. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.26) | 16.6.30013.169
-Microsoft. VisualStudio. Component. VC. Runtimes. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.26)  | 16.6.30013.169
+Microsoft. VisualStudio. Component. VC. Runtimes. ARM. Spectre | MSVC v142-VS 2019 C++ ARM Spectre-libs (v 14.27) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. Runtimes. ARM64. Spectre | MSVC v142-VS 2019 C++ ARM64 Spectre — skorygowane libs (v 14.27) | 16.7.30310.162
+Microsoft. VisualStudio. Component. VC. Runtimes. x86. x64. Spectre | MSVC v142-VS 2019 C++ x64/x86 Spectre-łagodzeni libs (v 14.27)  | 16.7.30310.162
 Microsoft. VisualStudio. Component. VC. najnowsze 141. ARM. Spectre | MSVC najnowsze 141-VS 2017 C++ ARM Spectre-libs (v 14.16) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. najnowsze 141. ARM64. Spectre | MSVC najnowsze 141-VS 2017 C++ ARM64 Spectre — skorygowane libs (v 14.16) | 16.5.29515.121
 Microsoft. VisualStudio. Component. VC. najnowsze 141. ATL | C++ ATL dla narzędzi kompilacji najnowsze 141 (x86 & x64) | 16.0.28625.61
