@@ -16,6 +16,7 @@
 ### [Logowanie przy użyciu kont Microsoft](sign-in-msa.md)
 ### [Logowanie przy użyciu kont służbowych](sign-in-work.md)
 ### [Logowanie przy użyciu usługi GitHub](sign-in-github.md)
+### [Połączone tożsamości](use-connected-identities.md)
 ### [Alternatywne tożsamości](vs-alternate-identity.md)
 ### [Problemy z logowaniem](sign-in-issues.md)
 ### [Anonimizacje danych subskrybentów](anonymization.md)
