@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie procesu kompilacji
+title: Rozwiń proces kompilacji
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,34 +14,33 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093947"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041041"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Jak: Rozszerzenie procesu kompilacji programu Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Instrukcje: zwiększanie procesu kompilacji programu Visual Studio
 
-Proces kompilacji programu Visual Studio jest definiowany przez serię plików MSBuild *.targets,* które są importowane do pliku projektu. Jeden z tych importowanych plików, *Microsoft.Common.targets,* można rozszerzyć, aby umożliwić uruchamianie zadań niestandardowych w kilku punktach procesu kompilacji. W tym artykule opisano dwie metody, których można użyć do rozszerzenia procesu kompilacji programu Visual Studio:
+Proces kompilacji programu Visual Studio jest definiowany przez serię plików programu MSBuild *. targets* , które są importowane do pliku projektu. Jeden z tych zaimportowanych plików, *Microsoft. Common. targets*, można rozszerzyć, aby umożliwić uruchamianie niestandardowych zadań w kilku punktach procesu kompilacji. W tym artykule opisano dwie metody, których można użyć do rozbudowy procesu kompilacji programu Visual Studio:
 
-- Zastępowanie określonych wstępnie zdefiniowanych celów zdefiniowanych we wspólnych celach (*Microsoft.Common.targets* lub plikach importowanych).
+- Zastępowanie określonych wstępnie zdefiniowanych elementów docelowych zdefiniowanych we wspólnych celach (*Microsoft. Common. targets* lub importowanych plikach).
 
-- Zastępowanie właściwości "DependsOn" zdefiniowanych we wspólnych obiektach docelowych.
+- Zastępowanie właściwości "DependsOn" zdefiniowanych w wspólnych elementach docelowych.
 
-## <a name="override-predefined-targets"></a>Zastępowanie wstępnie zdefiniowanych obiektów docelowych
+## <a name="override-predefined-targets"></a>Przesłoń wstępnie zdefiniowane elementy docelowe
 
-Wspólne obiekty docelowe zawiera zestaw wstępnie zdefiniowanych pustych obiektów docelowych, który jest wywoływany przed i po niektórych głównych obiektów docelowych w procesie kompilacji. Na przykład MSBuild `BeforeBuild` wywołuje obiekt `CoreBuild` docelowy `AfterBuild` przed głównym `CoreBuild` celem i miejsce docelowe po miejsce docelowe. Domyślnie puste obiekty docelowe we wspólnych elementach docelowych nic nie robią, ale można zastąpić ich domyślne zachowanie, definiując obiekty docelowe, które chcesz w pliku projektu, który importuje wspólne obiekty docelowe. Zastępując wstępnie zdefiniowane obiekty docelowe, można użyć zadań MSBuild, aby zapewnić większą kontrolę nad procesem kompilacji.
-Wspólne obiekty docelowe zawiera zestaw wstępnie zdefiniowanych pustych obiektów docelowych, który jest wywoływany przed i po niektórych głównych obiektów docelowych w procesie kompilacji. Na przykład MSBuild `BeforeBuild` wywołuje obiekt `CoreBuild` docelowy `AfterBuild` przed głównym `CoreBuild` celem i miejsce docelowe po miejsce docelowe. Domyślnie puste obiekty docelowe we wspólnych elementach docelowych nic nie robią, ale można zastąpić ich domyślne zachowanie, definiując obiekty docelowe, które chcesz w pliku projektu, który importuje wspólne obiekty docelowe. Zastępując wstępnie zdefiniowane obiekty docelowe, można użyć zadań MSBuild, aby zapewnić większą kontrolę nad procesem kompilacji.
+Wspólne obiekty docelowe zawierają zestaw wstępnie zdefiniowanych pustych obiektów docelowych, które są wywoływane przed i po niektórych głównych elementach docelowych w procesie kompilacji. Na przykład program MSBuild wywołuje `BeforeBuild` element docelowy przed głównym `CoreBuild` elementem docelowym i `AfterBuild` elementem docelowym po `CoreBuild` elemencie docelowym. Domyślnie puste elementy docelowe w wspólnych elementach docelowych nie wykonują żadnych operacji, ale można przesłonić swoje domyślne zachowanie przez zdefiniowanie obiektów docelowych w pliku projektu, który importuje wspólne elementy docelowe. Zastępując wstępnie zdefiniowane elementy docelowe, można użyć zadań programu MSBuild, aby zapewnić większą kontrolę nad procesem kompilacji.
 
 > [!NOTE]
-> Projekty w stylu SDK mają niejawny import obiektów docelowych *po ostatnim wierszu pliku projektu*. Oznacza to, że nie można zastąpić domyślnych obiektów docelowych, chyba że importujesz je ręcznie, zgodnie z opisem w [obszarze Jak: Użyj sDK projektu MSBuild](how-to-use-project-sdk.md).
+> Projekty w stylu zestawu SDK mają niejawny import elementów docelowych *po ostatnim wierszu pliku projektu*. Oznacza to, że nie można przesłonić domyślnych obiektów docelowych, chyba że ręcznie określisz swoje Importy zgodnie z opisem w artykule [jak: Użyj zestawów SDK projektu MSBuild](how-to-use-project-sdk.md).
 
-#### <a name="to-override-a-predefined-target"></a>Aby zastąpić wstępnie zdefiniowany cel
+#### <a name="to-override-a-predefined-target"></a>Aby zastąpić wstępnie zdefiniowany element docelowy
 
-1. Zidentyfikuj wstępnie zdefiniowany obiekt docelowy we wspólnych obiektach docelowych, które chcesz zastąpić. Zobacz poniższą tabelę, aby uzyskać pełną listę obiektów docelowych, które można bezpiecznie zastąpić.
+1. Zidentyfikuj wstępnie zdefiniowany element docelowy w wspólnych celach, które chcesz przesłonić. Zapoznaj się z poniższą tabelą, aby uzyskać pełną listę obiektów docelowych, które można bezpiecznie przesłonić.
 
-2. Zdefiniuj obiekt docelowy lub obiekty docelowe na końcu pliku projektu, bezpośrednio przed tagiem. `</Project>` Przykład:
+2. Zdefiniuj element docelowy lub docelowy na końcu pliku projektu bezpośrednio przed `</Project>` tagiem. Na przykład:
 
     ```xml
     <Project>
@@ -55,23 +54,23 @@ Wspólne obiekty docelowe zawiera zestaw wstępnie zdefiniowanych pustych obiekt
     </Project>
     ```
 
-3. Tworzenie pliku projektu.
+3. Kompiluj plik projektu.
 
-W poniższej tabeli przedstawiono wszystkie obiekty docelowe we wspólnych celach, które można bezpiecznie zastąpić.
+W poniższej tabeli przedstawiono wszystkie elementy docelowe, które można bezpiecznie przesłonić.
 
-|Nazwa obiektu docelowego|Opis|
+|Nazwa elementu docelowego|Opis|
 |-----------------|-----------------|
-|`BeforeCompile`, `AfterCompile`|Zadania, które są wstawiane w jednym z tych obiektów docelowych są uruchamiane przed lub po zakończeniu kompilacji rdzenia. Większość dostosowań odbywa się w jednym z tych dwóch obiektów docelowych.|
-|`BeforeBuild`, `AfterBuild`|Zadania, które są wstawiane w jednym z tych obiektów docelowych będzie działać przed lub po wszystko inne w kompilacji. **Uwaga:**  Obiekty `BeforeBuild` `AfterBuild` docelowe i są już zdefiniowane w komentarzach na końcu większości plików projektu, co pozwala na łatwe dodawanie zdarzeń przed i po kompilacji do pliku projektu.|
-|`BeforeRebuild`, `AfterRebuild`|Zadania, które są wstawiane w jednym z tych obiektów docelowych są uruchamiane przed lub po wywoływaniu funkcji przebudowy rdzenia. Kolejność wykonywania docelowych w *pliku Microsoft.Common.targets* to: `BeforeRebuild` `Clean`, , `Build`a następnie `AfterRebuild`.|
-|`BeforeClean`, `AfterClean`|Zadania, które są wstawiane w jednym z tych obiektów docelowych są uruchamiane przed lub po wywołaniu podstawowych funkcji czyszczenia.|
-|`BeforePublish`, `AfterPublish`|Zadania, które są wstawiane w jednym z tych obiektów docelowych są uruchamiane przed lub po wywoływaniu podstawowej funkcji publikowania.|
-|`BeforeResolveReferences`, `AfterResolveReferences`|Zadania, które są wstawiane w jednym z tych obiektów docelowych są uruchamiane przed lub po odwołań do zestawu są rozpoznawane.|
-|`BeforeResGen`, `AfterResGen`|Zadania, które są wstawiane w jednym z tych obiektów docelowych są uruchamiane przed lub po generowaniu zasobów.|
+|`BeforeCompile`, `AfterCompile`|Zadania, które są wstawiane w jednym z tych obiektów docelowych, są wykonywane przed lub po kompilacji podstawowej. Większość dostosowań odbywa się w jednym z tych dwóch celów.|
+|`BeforeBuild`, `AfterBuild`|Zadania, które są wstawiane w jednym z tych elementów docelowych, zostaną uruchomione przed lub po wszystkich innych w kompilacji. **Uwaga:**  `BeforeBuild`Elementy i `AfterBuild` są już zdefiniowane w komentarzach na końcu większości plików projektu, co pozwala łatwo dodawać zdarzenia przed i po kompilacji do pliku projektu.|
+|`BeforeRebuild`, `AfterRebuild`|Zadania, które są wstawiane w jednym z tych celów, są uruchamiane przed wywołaniem podstawowej funkcji odbudowywania lub po niej. Kolejność wykonywania obiektów docelowych w elemencie *Microsoft. Common. targets* to: `BeforeRebuild` , `Clean` , `Build` , i `AfterRebuild` .|
+|`BeforeClean`, `AfterClean`|Zadania, które są wstawiane w jednym z tych celów, są uruchamiane przed wywołaniem lub po wywołaniu podstawowych funkcji czystych.|
+|`BeforePublish`, `AfterPublish`|Zadania, które są wstawiane w jednym z tych celów, są uruchamiane przed wywołaniem podstawowej funkcji publikowania lub po niej.|
+|`BeforeResolveReferences`, `AfterResolveReferences`|Zadania, które są wstawiane w jednym z tych celów, są uruchamiane przed lub po rozwiązaniu odwołań do zestawów.|
+|`BeforeResGen`, `AfterResGen`|Zadania, które są wstawiane w jednym z tych celów, są uruchamiane przed wygenerowaniem zasobów lub po nich.|
 
 ## <a name="example-aftertargets-and-beforetargets"></a>Przykład: AfterTargets i BeforeTargets
 
-W poniższym przykładzie `AfterTargets` pokazano, jak użyć atrybutu, aby dodać niestandardowy obiekt docelowy, który robi coś z plikami wyjściowymi. W takim przypadku kopiuje pliki wyjściowe do nowego folderu *CustomOutput*.  W przykładzie pokazano również, jak oczyścić pliki utworzone `CustomClean` przez operację `BeforeTargets` kompilacji niestandardowej z obiektu docelowego `CoreClean` przy użyciu atrybutu i określając, że niestandardowe czyste operacji działa przed obiektem docelowym.
+Poniższy przykład pokazuje, jak używać atrybutu, `AfterTargets` Aby dodać niestandardowy obiekt docelowy, który wykonuje coś w przypadku plików wyjściowych. W takim przypadku program kopiuje pliki wyjściowe do nowego folderu *CustomOutput*.  W przykładzie pokazano również, jak wyczyścić pliki utworzone przez niestandardową operację kompilacji z `CustomClean` elementem docelowym przy użyciu `BeforeTargets` atrybutu i określając, że niestandardowa operacja czyszczenia jest uruchamiana przed `CoreClean` elementem docelowym.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -106,19 +105,19 @@ W poniższym przykładzie `AfterTargets` pokazano, jak użyć atrybutu, aby doda
 ```
 
 > [!WARNING]
-> Pamiętaj, aby używać innych nazw niż wstępnie zdefiniowane obiekty docelowe wymienione w tabeli w `CustomAfterBuild`poprzedniej `AfterBuild`sekcji (na przykład nazwaliśmy tutaj niestandardowy obiekt docelowy kompilacji , nie), ponieważ te wstępnie zdefiniowane obiekty docelowe są zastępowane przez import SDK, który również je definiuje. Nie widać importu pliku docelowego, który zastępuje te obiekty docelowe, ale jest niejawnie dodawany `Sdk` na końcu pliku projektu, gdy używasz metody atrybutu odwoływania się do SDK.
+> Upewnij się, że używasz innych nazw niż wstępnie zdefiniowane elementy docelowe wymienione w tabeli w poprzedniej sekcji (na przykład w tym miejscu nazywamy niestandardową docelową kompilacją `CustomAfterBuild` `AfterBuild` ), ponieważ te wstępnie zdefiniowane elementy docelowe są zastępowane przez import zestawu SDK, który również definiuje. Nie widzisz importu pliku docelowego, który zastępuje te elementy docelowe, ale jest on niejawnie dodany na końcu pliku projektu, gdy używasz `Sdk` metody atrybutu odwołania do zestawu SDK.
 
-## <a name="override-dependson-properties"></a>Właściwości Zastępowanie dependson
+## <a name="override-dependson-properties"></a>Zastąp właściwości DependsOn
 
-Zastępowanie wstępnie zdefiniowanych celów jest łatwym sposobem rozszerzenia procesu kompilacji, ale ponieważ MSBuild ocenia definicję celów sekwencyjnie, nie ma sposobu, aby zapobiec innemu projektowi, który importuje projekt, przed zastąpieniem już posiadanych celów, które zostały już Zastąpiona. Tak więc, na `AfterBuild` przykład ostatni cel zdefiniowany w pliku projektu, po zaimportowaniu wszystkich innych projektów, będzie tym, który jest używany podczas kompilacji.
+Zastępowanie wstępnie zdefiniowanych elementów docelowych jest łatwym sposobem na rozbudowanie procesu kompilacji, ale ponieważ MSBuild ocenia definicje elementów docelowych sekwencyjnie, nie ma żadnego sposobu, aby uniemożliwić inny projekt, który importuje projekt z przesłania obiektów docelowych, które zostały już zastąpione. Na przykład ostatni `AfterBuild` element docelowy zdefiniowany w pliku projektu, po zaimportowaniu wszystkich innych projektów, będzie używany podczas kompilacji.
 
-Można chronić przed niezamierzone zastąpienia obiektów docelowych przez zastąpienie DependsOn właściwości, które są używane w atrybutach w `DependsOnTargets` całej wspólnych obiektów docelowych. Na przykład `Build` obiekt docelowy zawiera wartość `DependsOnTargets` atrybutu `"$(BuildDependsOn)"`. Rozważ następujące kwestie:
+Można zabezpieczyć przed niezamierzonymi zastąpieniami elementów docelowych, zastępując właściwości DependsOn, które są używane w `DependsOnTargets` atrybutach we wspólnych elementach docelowych. Na przykład `Build` element docelowy zawiera `DependsOnTargets` wartość atrybutu `"$(BuildDependsOn)"` . Rozważ następujące kwestie:
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
 ```
 
-Ten fragment XML wskazuje, `Build` że przed docelowym można uruchomić, wszystkie cele określone we `BuildDependsOn` właściwości musi działać jako pierwsze. Właściwość `BuildDependsOn` jest zdefiniowana jako:
+Ten fragment XML wskazuje, że przed `Build` uruchomieniem elementu docelowego wszystkie elementy docelowe określone we `BuildDependsOn` właściwości muszą zostać uruchomione jako pierwsze. `BuildDependsOn`Właściwość jest definiowana jako:
 
 ```xml
 <PropertyGroup>
@@ -130,7 +129,7 @@ Ten fragment XML wskazuje, `Build` że przed docelowym można uruchomić, wszyst
 </PropertyGroup>
 ```
 
-Tę wartość właściwości można zastąpić, deklarując `BuildDependsOn` inną właściwość o nazwie na końcu pliku projektu. Dołączając poprzednią `BuildDependsOn` właściwość w nowej właściwości, można dodać nowe obiekty docelowe na początku i na końcu listy docelowej. Przykład:
+Można zastąpić tę wartość właściwości, deklarując inną właściwość o nazwie `BuildDependsOn` na końcu pliku projektu. Dołączając poprzednią `BuildDependsOn` Właściwość w nowej właściwości, można dodać nowe cele na początku i na końcu listy docelowej. Na przykład:
 
 ```xml
 <PropertyGroup>
@@ -149,31 +148,31 @@ Tę wartość właściwości można zastąpić, deklarując `BuildDependsOn` inn
 </Target>
 ```
 
-Projekty importując pliki projektu można zastąpić te właściwości bez zastępowania dostosowań, które zostały wprowadzone.
+Projekty, które importują pliki projektu, mogą przesłaniać te właściwości bez zastępowania wprowadzonych dostosowań.
 
-#### <a name="to-override-a-dependson-property"></a>Aby zastąpić właściwość DependsOn
+#### <a name="to-override-a-dependson-property"></a>Aby przesłonić Właściwość DependsOn
 
-1. Zidentyfikuj wstępnie zdefiniowaną właściwość DependsOn we wspólnych obiektach docelowych, które chcesz zastąpić. Zobacz poniższą tabelę, aby uzyskać listę często zastępowane właściwości DependsOn.
+1. Zidentyfikuj wstępnie zdefiniowaną Właściwość DependsOn w wspólnych elementach docelowych, które chcesz przesłonić. Lista najczęściej zasłoniętych właściwości DependsOn znajduje się w poniższej tabeli.
 
-2. Zdefiniuj inne wystąpienie właściwości lub właściwości na końcu pliku projektu. Dołącz oryginalną właściwość, na przykład `$(BuildDependsOn)`w nowej właściwości.
+2. Zdefiniuj inne wystąpienie właściwości lub właściwości na końcu pliku projektu. Dołącz oryginalną właściwość, na przykład `$(BuildDependsOn)` w nowej właściwości.
 
-3. Zdefiniuj niestandardowe obiekty docelowe przed lub po definicji właściwości.
+3. Zdefiniuj niestandardowe elementy docelowe przed definicją właściwości lub po niej.
 
-4. Tworzenie pliku projektu.
+4. Kompiluj plik projektu.
 
-### <a name="commonly-overridden-dependson-properties"></a>Często zastępowane właściwości DependsOn
+### <a name="commonly-overridden-dependson-properties"></a>Często zastąpione właściwości DependsOn
 
 |Nazwa właściwości|Opis|
 |-------------------|-----------------|
-|`BuildDependsOn`|Właściwość do zastąpienia, jeśli chcesz wstawić niestandardowe obiekty docelowe przed lub po całym procesie kompilacji.|
-|`CleanDependsOn`|Właściwość do zastąpienia, jeśli chcesz oczyścić dane wyjściowe z niestandardowego procesu kompilacji.|
-|`CompileDependsOn`|Właściwość do zastąpienia, jeśli chcesz wstawić procesy niestandardowe przed lub po kroku kompilacji.|
+|`BuildDependsOn`|Właściwość, która ma zostać zastąpiona, jeśli chcesz wstawić niestandardowe elementy docelowe przed lub po całym procesie kompilacji.|
+|`CleanDependsOn`|Właściwość do zastąpienia, jeśli chcesz wyczyścić dane wyjściowe z niestandardowego procesu kompilacji.|
+|`CompileDependsOn`|Właściwość do zastąpienia, jeśli chcesz wstawić niestandardowe procesy przed lub po kroku kompilacji.|
 
 ## <a name="example-builddependson-and-cleandependson"></a>Przykład: BuildDependsOn i CleanDependsOn
 
-Poniższy przykład jest `BeforeTargets` podobny `AfterTargets` do i przykład, ale pokazuje, jak osiągnąć podobną funkcjonalność. Rozszerza kompilację za `BuildDependsOn` pomocą dodawania `CustomAfterBuild` własnego zadania, które kopiuje pliki wyjściowe `CustomClean` po `CleanDependsOn`kompilacji, a także dodaje odpowiednie zadanie za pomocą programu .  
+Poniższy przykład jest podobny do poniższego `BeforeTargets` `AfterTargets` przykładu, ale pokazuje, jak osiągnąć podobną funkcjonalność. Rozszerza kompilację za pomocą programu, `BuildDependsOn` dodając własne zadanie `CustomAfterBuild` , które kopiuje pliki wyjściowe po kompilacji, a także dodaje odpowiednie zadanie przy `CustomClean` użyciu `CleanDependsOn` .  
 
-W tym przykładzie jest to projekt w stylu SDK. Jak wspomniano w uwadze o projektach w stylu SDK wcześniej w tym artykule, należy użyć metody ręcznego importu zamiast atrybutu, `Sdk` który używa programu Visual Studio podczas generowania plików projektu.
+W tym przykładzie jest to projekt w stylu zestawu SDK. Jak wspomniano w uwagi na temat projektów w stylu zestawu SDK wcześniej w tym artykule, należy użyć metody Import ręczny zamiast `Sdk` atrybutu, który jest używany przez program Visual Studio podczas generowania plików projektu.
 
 ```xml
 <Project>
@@ -221,10 +220,10 @@ W tym przykładzie jest to projekt w stylu SDK. Jak wspomniano w uwadze o projek
 </Project>
 ```
 
-Kolejność elementów jest ważna. Elementy `BuildDependsOn` `CleanDependsOn` i muszą pojawić się po zaimportowaniu standardowego pliku docelowego SDK.
+Kolejność elementów jest ważna. `BuildDependsOn`Elementy i `CleanDependsOn` muszą występować po zaimportowaniu standardowego pliku obiektów docelowych zestawu SDK.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
-- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
-- [Pliki .targets](../msbuild/msbuild-dot-targets-files.md)
+- [integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [pliki. targets](../msbuild/msbuild-dot-targets-files.md)
