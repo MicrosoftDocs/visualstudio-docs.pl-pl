@@ -748,6 +748,10 @@
                   href: ca2355.md
                 - name: 'CA2356: Niebezpieczny typ DataSet lub DataTable w internetowym deserializowanym wykresie obiektu'
                   href: ca2356.md
+                - name: 'CA2361: Upewnij się, że automatycznie wygenerowana klasa zawierająca element DataSet.ReadXml() nie jest używana z niezaufanymi danymi'
+                  href: ca2361.md
+                - name: 'CA2362: Niebezpieczny element DataSet lub DataTable w automatycznie wygenerowanym typie, który można serializować, może być narażony na ataki polegające na zdalnym wykonaniu kodu'
+                  href: ca2362.md
                 - name: 'CA2330: Upewnij się, że podczas deserializacji rozwiązania JsonSerializer ma bezpieczną konfigurację'
                   href: ca2330.md
                 - name: 'CA3001: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL'
