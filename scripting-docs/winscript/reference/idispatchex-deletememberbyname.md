@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: cf62972b192d73bd130d15066d79ea70fe24beb8
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576611"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144600"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Usuwa element członkowski według nazwy.  
@@ -41,7 +41,7 @@ HRESULT DeleteMemberByName(
  Nazwa elementu członkowskiego, który ma zostać usunięty.  
   
  `grfdex`  
- Określa, czy w nazwie elementu członkowskiego jest uwzględniana wielkość liter. Może to być jedna z następujących wartości:  
+ Określa, czy w nazwie elementu członkowskiego jest uwzględniana wielkość liter. To ustawienie może zwracać jedną z następujących wartości:  
   
 |Wartość|Znaczenie|  
 |-----------|-------------|  
@@ -51,13 +51,13 @@ HRESULT DeleteMemberByName(
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
-|||  
+|Wartość|Znaczenie|
 |-|-|  
-|`S_OK`|Prawnego.|  
+|`S_OK`|Powodzenie.|  
 |`S_FALSE`|Element członkowski istnieje, ale nie można go usunąć.|  
   
 ## <a name="remarks"></a>Uwagi  
- W przypadku usunięcia elementu członkowskiego DISPID musi pozostać prawidłowy dla `GetNextDispID`.  
+ W przypadku usunięcia elementu członkowskiego DISPID musi pozostać prawidłowy dla `GetNextDispID` .  
   
  Jeśli element członkowski o danej nazwie zostanie usunięty, a później członek o tej samej nazwie zostanie odtworzony, identyfikator DISPID powinien być taki sam. (Czy elementy członkowskie, które różnią się tylko wielkością liter są "takie same", są zależne od obiektu).  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 8dbfb82e986ed6d1738bcc0cffeec35e5ba4515c
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574109"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144613"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Pobiera nazwę elementu członkowskiego.  
@@ -41,14 +41,14 @@ HRESULT GetMemberName(
  Określa element członkowski. Używa `GetDispID` lub `GetNextDispID` do uzyskania identyfikatora wysyłania.  
   
  `pbstrName`  
- Adres `BSTR`, który otrzymuje nazwę elementu członkowskiego. Aplikacja wywołująca jest odpowiedzialna za zwolnienie tej wartości.  
+ Adres `BSTR` , który otrzymuje nazwę elementu członkowskiego. Aplikacja wywołująca jest odpowiedzialna za zwolnienie tej wartości.  
   
-## <a name="return-value"></a>Wartość zwrócona  
+## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
-|||  
+|Wartość|Znaczenie|
 |-|-|  
-|`S_OK`|Prawnego.|  
+|`S_OK`|Powodzenie.|  
 |`DISP_E_UNKNOWNNAME`|Nazwa jest nieznana.|  
   
 ## <a name="example"></a>Przykład  
@@ -75,6 +75,6 @@ HRESULT hr;
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDispatchEx  interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

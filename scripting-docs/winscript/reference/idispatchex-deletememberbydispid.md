@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38ead33fb51caff1103ca9abe6bc01f3e0aa6aa3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0c3dbb040e39fd15b77e42b2eaa9fb2cdda0b1b2
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576636"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144639"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 Usuwa element członkowski przez identyfikator DISPID.  
@@ -39,16 +39,16 @@ HRESULT DeleteMemberByDispID(
  `id`  
  Identyfikator elementu członkowskiego. Używa `GetDispID` lub `GetNextDispID` do uzyskania identyfikatora wysyłania.  
   
-## <a name="return-value"></a>Wartość zwrócona  
+## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
-|||  
+|Wartość|Znaczenie|
 |-|-|  
-|`S_OK`|Prawnego.|  
+|`S_OK`|Powodzenie.|  
 |`S_FALSE`|Element członkowski istnieje, ale nie można go usunąć.|  
   
 ## <a name="remarks"></a>Uwagi  
- W przypadku usunięcia elementu członkowskiego DISPID musi pozostać prawidłowy dla `GetNextDispID`.  
+ W przypadku usunięcia elementu członkowskiego DISPID musi pozostać prawidłowy dla `GetNextDispID` .  
   
  Jeśli element członkowski o danej nazwie zostanie usunięty, a później członek o tej samej nazwie zostanie odtworzony, identyfikator DISPID powinien być taki sam. (Czy nazwy elementów członkowskich, które różnią się tylko wielkością liter są "takie same" są zależne od obiektu).  
   
@@ -65,6 +65,6 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDispatchEx  interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

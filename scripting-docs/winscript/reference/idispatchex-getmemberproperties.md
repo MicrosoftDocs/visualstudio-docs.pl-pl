@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 488f8790ec25532fb611f18e8b24e7e7dba2e2f4
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574099"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144553"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Pobiera właściwości elementu członkowskiego.  
@@ -42,9 +42,9 @@ HRESULT GetMemberProperties(
  Określa element członkowski. Używa `GetDispID` lub `GetNextDispID` do uzyskania identyfikatora wysyłania.  
   
  `grfdexFetch`  
- Określa, które właściwości mają być pobierane. Może to być kombinacja wartości wymienionych w obszarze `pgrfdex` i/lub kombinacji następujących wartości:  
+ Określa, które właściwości mają być pobierane. Może to być kombinacja wartości wymienionych poniżej `pgrfdex` i/lub kombinacji następujących wartości:  
   
-|Value|Znaczenie|  
+|Wartość|Znaczenie|  
 |-----------|-------------|  
 |grfdexPropCanAll|Łączy fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct i fdexPropCanSourceEvents.|  
 |grfdexPropCannotAll|Łączy fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct i fdexPropCannotSourceEvents.|  
@@ -52,9 +52,9 @@ HRESULT GetMemberProperties(
 |grfdexPropAll|Łączy grfdexPropCanAll, grfdexPropCannotAll i grfdexPropExtraAll.|  
   
  `pgrfdex`  
- Adres `DWORD`, który odbiera żądane właściwości. Może to być kombinacja następujących wartości:  
+ Adres `DWORD` , który odbiera żądane właściwości. Może to być kombinacja następujących wartości:  
   
-|Value|Znaczenie|  
+|Wartość|Znaczenie|  
 |-----------|-------------|  
 |fdexPropCanGet|Element członkowski można uzyskać przy użyciu DISPATCH_PROPERTYGET.|  
 |fdexPropCannotGet|Nie można uzyskać elementu członkowskiego przy użyciu DISPATCH_PROPERTYGET.|  
@@ -71,12 +71,12 @@ HRESULT GetMemberProperties(
 |fdexPropCanSourceEvents|Element członkowski może uruchamiać zdarzenia.|  
 |fdexPropCannotSourceEvents|Składowa nie może wyzwalać zdarzeń.|  
   
-## <a name="return-value"></a>Wartość zwrócona  
+## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
-|||  
+|Wartość|Znaczenie|
 |-|-|  
-|`S_OK`|Prawnego.|  
+|`S_OK`|Powodzenie.|  
 |`DISP_E_UNKNOWNNAME`|Nazwa jest nieznana.|  
   
 ## <a name="example"></a>Przykład  
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [IDispatchEx  interfejsu](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -13,21 +13,20 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56b2a749eb3553044bda5816639498a0682e37e0
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: dcf95f74e05ebff6e1cc430c32b9fd7bdb3b005f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72570089"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144665"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Zaimplementowane przez hosta w celu utworzenia lokacji dla aparatu skryptów systemu Windows. Zwykle ta lokacja zostanie skojarzona z kontenerem wszystkich obiektów, które są widoczne dla skryptu (na przykład kontrolki ActiveX). Zazwyczaj ten kontener będzie odpowiadać przeglądanemu dokumentowi lub stronie. Na przykład program Microsoft Internet Explorer utworzy taki kontener dla każdej wyświetlanej strony HTML. Każdy formant ActiveX (lub inny obiekt automatyzacji) na stronie i sam aparat skryptów zostałyby wyliczalne w tym kontenerze.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
   
-|||  
-|-|-|  
-|Metoda|Opis|  
+|Metoda|Opis|
+|-|-|
 |[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Pobiera identyfikator ustawień regionalnych, który jest wykorzystywany przez hosta do wyświetlania elementów interfejsu użytkownika.|  
 |[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Uzyskuje informacje o elemencie, który został dodany do aparatu przez wywołanie metody [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .|  
 |[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|Pobiera ciąg zdefiniowany przez hosta, który jednoznacznie identyfikuje bieżącą wersję dokumentu z punktu widzenia hosta.|  

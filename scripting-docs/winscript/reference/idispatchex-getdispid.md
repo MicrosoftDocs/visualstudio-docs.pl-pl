@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f0faf6004e2219600f0dbd63749a7e65ca438c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 81bb33a1e793f38e15dc51b37c4fa062eb54e7fa
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576604"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144536"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-Mapuje pojedynczą nazwę elementu członkowskiego do odpowiadającego mu identyfikatora DISPID, który można następnie użyć podczas kolejnych wywołań do `IDispatchEx::InvokeEx`.  
+Mapuje pojedynczą nazwę elementu członkowskiego do odpowiadającego mu identyfikatora DISPID, który można następnie użyć podczas kolejnych wywołań do `IDispatchEx::InvokeEx` .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,7 +47,7 @@ HRESULT GetDispID(
 |Wartość|Znaczenie|  
 |-----------|-------------|  
 |fdexNameCaseSensitive|Żądania wyszukania nazwy są wykonywane w sposób uwzględniający wielkość liter. Może być ignorowany przez obiekt, który nie obsługuje wyszukiwania z uwzględnieniem wielkości liter.|  
-|fdexNameEnsure|Żąda utworzenia elementu członkowskiego, jeśli jeszcze nie istnieje. Nowy element członkowski powinien zostać utworzony przy użyciu wartości `VT_EMPTY`.|  
+|fdexNameEnsure|Żąda utworzenia elementu członkowskiego, jeśli jeszcze nie istnieje. Należy utworzyć nowy element członkowski z wartością `VT_EMPTY` .|  
 |fdexNameImplicit|Wskazuje, że obiekt wywołujący wyszukuje obiekty dla elementu członkowskiego o określonej nazwie, jeśli obiekt podstawowy nie został jawnie określony.|  
 |fdexNameCaseInsensitive|Żądania wyszukania nazwy są wykonywane w sposób niezależny od wielkości liter. Może być ignorowany przez obiekt, który nie obsługuje wyszukiwania bez uwzględniania wielkości liter.|  
   
@@ -57,18 +57,18 @@ HRESULT GetDispID(
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
   
-|||  
+|Wartość|Znaczenie|
 |-|-|  
-|`S_OK`|Prawnego.|  
+|`S_OK`|Powodzenie.|  
 |`E_OUTOFMEMORY`|Za mało pamięci.|  
 |`DISP_E_UNKNOWNNAME`|Nazwa jest nieznana.|  
   
 ## <a name="remarks"></a>Uwagi  
- `GetDispID` można użyć zamiast `GetIDsOfNames`, aby uzyskać identyfikator DISPID dla danego elementu członkowskiego.  
+ `GetDispID`można go użyć zamiast `GetIDsOfNames` , aby uzyskać identyfikator DISPID dla danego elementu członkowskiego.  
   
- Ponieważ `IDispatchEx` zezwala na dodawanie i usuwanie elementów członkowskich, zestaw identyfikatorów SPID nie pozostaje stały dla okresu istnienia obiektu.  
+ Ponieważ `IDispatchEx` umożliwia dodanie i usunięcie elementów członkowskich, zestaw identyfikatorów SPID nie pozostaje stały dla okresu istnienia obiektu.  
   
- Nieużywany parametr `riid` w `IDispatch::GetIDsOfNames` został usunięty.  
+ Nieużywany `riid` parametr w `IDispatch::GetIDsOfNames` został usunięty.  
   
 ## <a name="example"></a>Przykład  
   

@@ -1,6 +1,6 @@
 ---
-title: Wizualizacja danych za pomocą języka R
-description: Jak wykreślić dane z programów języka R w programie Visual Studio przy użyciu okien wydruku.
+title: Wizualizowanie danych za pomocą języka R
+description: Jak wykreślić dane z programów R w programie Visual Studio przy użyciu okien wykresów.
 ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
@@ -8,84 +8,89 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62811189"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144704"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Tworzenie wykresów danych wizualnych za pomocą języka R
 
-Kreślenie jest kluczową częścią przepływu pracy analityka danych. W programie R Tools for Visual Studio (RTVS) wszystkie centra aktywności kreślenia wokół jednego lub więcej okien wydruku, które mają na celu zwiększenie wydajności dzięki temu kluczowemu działaniu.
+Wykreślanie jest kluczową częścią przepływu pracy analityka danych. W R Tools for Visual Studio (RTVS) wszystkie Wykreślanie centrów aktywności wokół jednego lub kilku okien kreolenia, które zostały zaprojektowane w celu zwiększenia produktywności przy użyciu tego klucza działania.
 
-![Kreślenie obrazu bohatera](media/plotting-hero-image.png)
+![Kreślenie obrazu Hero](media/plotting-hero-image.png)
 
-|   |   |
-|---|---|
-| ![ikona kamery filmowa dla wideo](../install/media/video-icon.png "Obejrzyj film") | [Obejrzyj film (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) na temat drukowania z R (2m 02s). |
+:::row:::
+    :::column:::
+        ![ikona aparatu filmu wideo](../install/media/video-icon.png "Obejrzyj film")
+    :::column-end:::
+    :::column:::
+        [Obejrzyj film wideo (YouTube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) na Wykreślanie przy użyciu języka R (2 mln 02s).
+    :::column-end:::
+:::row-end:::
 
-## <a name="the-plot-window"></a>Okno wydruku
+## <a name="the-plot-window"></a>Okno wykresu
 
-Okno wydruku zawiera serię wykresów, w których `plot` każdy wykres jest generowany przez polecenie. Na przykład `plot(1:100)` użycie powoduje utworzenie nowego okna wydruku, jeśli nie jest jeszcze dostępne:
+Okno wykresu zawiera serię wykresów, w których poszczególne wykresy są generowane przez `plot` polecenie. Na przykład za pomocą `plot(1:100)` tworzenia nowego okna wykresu, jeśli jest ono jeszcze niedostępne:
 
-![1 do 100 Wykres liniowy](media/plotting-1-to-100.png)
+![od 1 do 100 liniowego wykresu](media/plotting-1-to-100.png)
 
-Technicznie rzecz biorąc, `plot` polecenia R renderują swoje dane wyjściowe na urządzeniu graficznym R; okno wydruku renderuje zawartość urządzenia graficznego R, dlatego każde okno wydruku otrzymuje numer urządzenia.
+Mówiąc technicznie, `plot` polecenia języka r renderują dane wyjściowe do urządzenia graficznego języka r; w oknie wykresu są renderowane zawartość urządzenia grafiki r, co oznacza, że każde okno wykresu otrzymuje numer urządzenia.
 
-Okna wydruku są niezależne od projektów programu Visual Studio i pozostają otwarte podczas ładowania i zamykania projektów.
+Okna wykresów są niezależne od projektów programu Visual Studio i pozostają otwarte podczas ładowania i zamykania projektów.
 
-Generowanie wykresu wykorzystuje okno "aktywnego" wykresu, zapisując poprzednią fabułę historii wydruku (patrz [Historia wydruku).](#plot-history) Na przykład `plot(100:1)` wprowadź, a pierwszy wykres zostanie zastąpiony linią w dół.
+Generowanie wykresu jest przy użyciu okna kreślenia "aktywne", co umożliwia zapisanie wszystkich poprzednich wykresów w historii wykresów (zobacz [historia kreślenia](#plot-history)). Na przykład wprowadź, `plot(100:1)` a pierwszy wykres jest zastępowany linią z dołu.
 
-Podobnie jak wszystkie inne okna programu Visual Studio. okno wydruku obsługuje niestandardowe układy (zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Okna wydruku mogą być zadokowane w różnych lokalizacjach w ramce programu Visual Studio, zmiany rozmiaru w tej ramce lub wyciągnięte z ramki całkowicie w celu niezależnej zmiany rozmiaru.
+Podobnie jak w przypadku wszystkich innych okien programu Visual Studio. okno wykresu obsługuje niestandardowe układy (zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Okna wykresów mogą być zadokowane w różnych lokalizacjach w ramce programu Visual Studio, w których rozmiar jest zmieniany w ramach tej ramki lub całkowicie wyciągnięcie z ramki do niezależnej zmiany rozmiaru.
 
-Zmiana rozmiaru okna wydruku zawsze powoduje ponowne renderowanie wykresu w celu zapewnienia najlepszej jakości obrazu. Zazwyczaj chcesz zmienić rozmiar wykresu przed wyeksportowaniem wykresu do pliku lub do schowka za pomocą poleceń opisanych w następnej sekcji.
+Zmiana rozmiarów okna wykresu zawsze powoduje ponowne renderowanie wykresu w celu zapewnienia najlepszej jakości obrazu. Zazwyczaj chcesz zmienić rozmiar wykresu przed wyeksportowaniem wykresu do pliku lub do schowka przy użyciu poleceń opisanych w następnej sekcji.
 
-## <a name="plot-window-commands"></a>Polecenia okna wydruku
+## <a name="plot-window-commands"></a>Polecenia okna wykresu
 
-Pasek narzędzi okna wydruku zawiera odpowiednie polecenia, z których większość jest również dostępna za pośrednictwem menu **R Tools** > **Plots.**
+Pasek narzędzi okna wykresu zawiera odpowiednie polecenia, z których większość jest również dostępna w menu wykresy **Narzędzia R Tools**  >  **Plots** .
 
-| Button | Polecenie | Opis |
+| Przycisk | Polecenie | Opis |
 | --- | --- | --- |
-| ![Przycisk Okna nowego wydruku](media/plotting-toolbar-01-new-plot-window.png) | Nowe okno działki | Tworzy oddzielne okno wydruku z własną historią. Zobacz [Wiele okien wydruku](#multiple-plot-windows). |
-| ![Przycisk Uaktywnianie okna wydruku](media/plotting-toolbar-02-activate-plot-window.png) | Aktywowanie okna wydruku | Ustawia bieżące okno wydruku jako aktywne `plot` okno, tak aby kolejne polecenia były renderowane w tym oknie. Zobacz [Wiele okien wydruku](#multiple-plot-windows). Zobacz [Wiele okien wydruku](#multiple-plot-windows). |
-| ![Przycisk okna historii kreślenia](media/plotting-toolbar-03-plot-history.png) | Okno Historia wydruku | Otwiera okno ze wszystkimi wykresami w historii wyświetlanymi jako miniatury. Zobacz [Historia wydruku](#plot-history). |
-| ![Wykreślanie przycisków historii](media/plotting-toolbar-04-plot-history-arrows.png) | Poprzednia/następna działka |  Przechodzi do poprzedniego lub następnego wykresu w historii. Historię można również nawigować za pomocą klawiszy Ctrl+Alt+F11 (Poprzedni) i Ctrl+Alt+F12 (Dalej). Zobacz [Historia wydruku](#plot-history). |
-| ![Przycisk Zapisz jako obraz](media/plotting-toolbar-05-save-as-image.png)| Zapisz jako obraz | Monituje o podanie nazwy pliku i zapisuje bieżący wykres (zawartość okna, w rozmiarze okna) w pliku obrazu. Dostępne formaty `.png` `.jpg`to `.bmp`, `.tif`, i . |
-| ![Przycisk Zapisz jako PDF](media/plotting-toolbar-06-save-as-pdf.png)| Zapisz w formacie PDF | Zapisuje bieżący wykres w pliku PDF przy użyciu bieżącego rozmiaru okna. Wykres zostanie ponownie renderowany, jeśli plik PDF jest skalowany. |
-| ![Przycisk Kopiuj jako bitmapę](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopiowanie jako mapa bitowa | Kopiuje wykres do schowka jako mapę bitową rastrową przy użyciu bieżącego rozmiaru okna. |
-| ![Przycisk Kopiuj jako metaplik](media/plotting-toolbar-08-copy-as-metafile.png)| Kopiuj jako metaplik | Kopiuje wykres do schowka jako [metaplik systemu Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). |
-| ![Przycisk Usuń wydruk](media/plotting-toolbar-09-remove-plot.png)| Usuń wykres | Usuwa bieżący wykres z historii. |
+| ![Przycisk nowego okna wykresu](media/plotting-toolbar-01-new-plot-window.png) | Nowe okno wykresu | Tworzy osobne okno kreślenia z własną historią. Zobacz [wiele okien wykresów](#multiple-plot-windows). |
+| ![Aktywuj przycisk okna kreślenia](media/plotting-toolbar-02-activate-plot-window.png) | Aktywuj okno wykresu | Ustawia bieżące okno wykresu jako aktywne okno, tak aby kolejne `plot` polecenia były renderowane do tego okna. Zobacz [wiele okien wykresów](#multiple-plot-windows). Zobacz [wiele okien wykresów](#multiple-plot-windows). |
+| ![Przycisk okna historii kreślenia](media/plotting-toolbar-03-plot-history.png) | Okno historii kreślenia | Otwiera okno ze wszystkimi wykresami w historii pokazywanych jako miniatury. Zobacz [historię wykresów](#plot-history). |
+| ![Przyciski historii kreślenia](media/plotting-toolbar-04-plot-history-arrows.png) | Poprzedni/następny wykres |  Przechodzi do poprzedniego lub następnego wykresu w historii. Możesz również przejść do historii przy użyciu kombinacji klawiszy CTRL + ALT + F11 (Previous) i Ctrl + Alt + F12 (dalej). Zobacz [historię wykresów](#plot-history). |
+| ![Przycisk Zapisz jako obraz](media/plotting-toolbar-05-save-as-image.png)| Zapisz jako obraz | Wyświetli wiersz polecenia i zapisuje bieżącą powierzchnię (zawartość okna, w rozmiarze okna) do pliku obrazu. Dostępne formaty to `.png` , `.jpg` , `.bmp` , i `.tif` . |
+| ![Przycisk Zapisz jako PDF](media/plotting-toolbar-06-save-as-pdf.png)| Zapisz jako plik PDF | Zapisuje bieżącą powierzchnię do pliku PDF przy użyciu bieżącego rozmiaru okna. Wykres będzie odtwarzany po przeskalowaniu pliku PDF. |
+| ![Przycisk kopiowania jako mapy bitowej](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopiuj jako mapę bitową | Kopiuje wykres do Schowka w postaci mapy bitowej rastrowej przy użyciu bieżącego rozmiaru okna. |
+| ![Kopiuj jako przycisk metapliku](media/plotting-toolbar-08-copy-as-metafile.png)| Kopiuj jako metaplik | Kopiuje wykres do Schowka jako [Metaplik systemu Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). |
+| ![Usuń przycisk kreślenia](media/plotting-toolbar-09-remove-plot.png)| Usuń wykres | Usuwa bieżącą powierzchnię z historii. |
 | ![Przycisk Wyczyść wszystkie wykresy](media/plotting-toolbar-10-clear-all-plots.png) | Wyczyść wszystkie wykresy | Usuwa wszystkie wykresy z historii (monituje o potwierdzenie). |
 
-## <a name="multiple-plot-windows"></a>Wiele okien wydruku
+## <a name="multiple-plot-windows"></a>Okna wielu wykresów
 
-Ponieważ analitycy danych często pracują z wieloma wykresami z wielu różnych zestawów danych, RTVS umożliwia tworzenie jak największej liczby niezależnych okien wydruku. Następnie można rozmieścić te okna, jak chcesz w ramce programu Visual Studio lub poza ramką całkowicie. (Zobacz [Dostosowywanie układów okien w programie Visual Studio,](../ide/customizing-window-layouts-in-visual-studio.md) aby uzyskać ogólne informacje na temat dokowania i zmiany rozmiaru okien).
+Ponieważ analityki danych często pracują z wieloma wykresami z wielu różnych zestawów danych, RTVS pozwala utworzyć dowolną liczbę niezależnych okien wykresów. Następnie można rozmieścić te okna w ramce programu Visual Studio lub poza tą ramką. (Zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) , aby uzyskać ogólne informacje na temat dokowania i zmiany rozmiarów okien).
 
-Nowe okno wydruku można utworzyć za pomocą przycisku paska narzędzi lub **R Narzędzia** > **Wykresy** > **Nowe okno wydruku**. Nowe okno wydruku staje się *aktywnym* oknem, w którym renderowane są nowe wykresy. Aby zmienić aktywne okno, przełącz się do niego i wybierz przycisku **Aktywuj okno wydruku** lub **R Narzędzia** > **Wykresy** > **Aktywuj okno kreślenia**.
+Nowe okno wykresu można utworzyć za pomocą przycisku paska narzędzi lub **Narzędzia R Tools**  >  **Plots**  >  **New Plot Window**. Nowe okno wykresu zostanie *uaktywnione w aktywnym* oknie, w którym są renderowane nowe wykresy. Aby zmienić aktywne okno, przejdź do niego i wybierz przycisk paska narzędzi **Aktywuj okno** wykresu lub **Narzędzia R Tools**  >  **wykresy**  >  **Aktywuj okno**.
 
-Wykresy są również niezależnymi obiektami, co oznacza, że można je kopiować lub przenosić między oknami wydruku za pomocą przeciągania i upuszczania za pomocą myszy lub za pomocą poleceń **Kopiuj**, **Wytnij**i Wklej w **kontekście** i **menu Edycja.**
+Wykresy są również obiektami niezależnymi, co oznacza, że można je skopiować lub przenieść między oknami kreolenia przy użyciu przeciągania i upuszczania za pomocą myszy albo za pomocą poleceń **kopiowania**, **wycinania**i **wklejania** w kontekście prawym przyciskiem myszy i w menu **Edycja** .
 
-Domyślnym zachowaniem przeciągania i upuszczania jest kopiowanie; , aby przenieść, przeciągnij i upuść, przytrzymując klawisz **Shift.**
+Domyślne zachowanie funkcji przeciągania i upuszczania to Copy; Aby przenieść, przeciągnij i upuść, trzymając wciśnięty klawisz **SHIFT** .
 
-## <a name="plot-history"></a>Historia wydruku
+## <a name="plot-history"></a>Historia wykresów
 
-Polecenia wydruku są zachowywane w historii wydruku dla każdego okna, zapewniając zachowanie wszystkich kreśleń w ramach sesji. Aby poruszać się po historii, użyj przycisków strzałek na pasku narzędzi okna wydruku lub **Ctrl**+**Alt**+**F11** i **Ctrl**+**Alt**+**F12**. Można również ponownie usunąć pojedyncze wykresy lub wyczyścić wszystkie wykresy z okna za pomocą przycisków paska narzędzi lub poleceń menu **R Tools** > **Plots.**
+Polecenia kreolenia są utrzymywane w historii wykresu dla każdego okna, co gwarantuje, że wszystkie wykresy w ramach sesji są zachowywane. Aby nawigować do historii, użyj przycisków strzałek na pasku narzędzi okna kreślenia lub **Ctrl** + **Alt** + **F11** i **Ctrl** + **Alt** + **F12**. Możesz również usunąć pojedyncze wykresy lub wyczyścić wszystkie wykresy z okna przy użyciu przycisków paska narzędzi lub poleceń menu **Narzędzia R Tools**  >  **Plots** .
 
-Aby wyświetlić całą kolekcję wykresów, otwórz okno historii wydruku za pomocą przycisku paska narzędzi lub **R Tools** > **Plots Plots** > **History Window**.
-Historia zawiera listę miniatur wykresów, które zostały wyświetlone w tym oknie, pogrupowanych według różnych okien wydruku (lub urządzeń). Za pomocą przycisków powiększenia na pasku narzędzi zmienia się rozmiar miniatur.
+Aby wyświetlić całą kolekcję wykresów, Otwórz okno Historia kreślenia przy użyciu przycisku paska narzędzi lub wykresu **Narzędzia R**w  >  **Plots**  >  **oknie Historia wykresów**.
+Historia zawiera listę miniatur dla wykresów, które zostały wyświetlone w tym oknie, pogrupowane według różnych okien wykresów (lub urządzeń). Za pomocą przycisków powiększenia na pasku narzędzi zmienia rozmiar miniatur.
 
-![Okno Historia wydruku](media/plotting-plot-history-window.png)
+![Okno historii kreślenia](media/plotting-plot-history-window.png)
 
-Aby otworzyć wykres w skojarzonym oknie, kliknij dwukrotnie ten wykres, zaznacz go, a następnie wybierz przycisk **Pokaż pasek** narzędzi Wykres lub kliknij prawym przyciskiem myszy i wybierz polecenie **Pokaż wykres**. Można również wybrać pojedynczy wykres i skopiować, wyciąć lub usunąć z kontekstu i **menu edycji.**
+Aby otworzyć wykres w skojarzonym oknie, kliknij dwukrotnie ten wykres, zaznacz go, a następnie wybierz przycisk paska narzędzi **Pokaż wykres** lub kliknij prawym przyciskiem myszy i wybierz polecenie **Pokaż wykres**. Możesz również wybrać pojedynczy wykres i skopiować, wyciąć lub usunąć z menu kontekstowego kliknięcia prawym przyciskiem myszy lub **edycji** .
 
-Okres istnienia historii wydruku we wszystkich oknach jest powiązany z okresem istnienia interaktywnej sesji języka R. Jeśli zresetujesz sesję języka R lub zakończysz i uruchomisz ponownie program Visual Studio, historia wydruku zostanie zresetowana.
+Okres istnienia historii kreślenia w całym systemie Windows jest powiązany z okresem istnienia interaktywnej sesji języka R. W przypadku zresetowania sesji języka R lub zamknięcia i ponownego uruchomienia programu Visual Studio historia wykresów zostanie zresetowana.
 
-## <a name="programmatically-manipulate-plot-windows"></a>Programowo manipuluj oknami wydruku
+## <a name="programmatically-manipulate-plot-windows"></a>Programowe manipulowanie oknami wykresów
 
-Można programowo manipulować oknami wydruku z kodu R, używając numerów urządzeń do identyfikowania określonych okien wydruku.
+Można programistycznie manipulować oknami z kodem R przy użyciu numerów urządzeń w celu identyfikowania określonych okien wykresów.
 
-- `dev.list()`: Lista wszystkich urządzeń graficznych w ramach bieżącej sesji R.
-- `dev.new()`: Utwórz nowe urządzenie graficzne (nowe okno wydruku).
-- `dev.set(<device number>)`: Ustaw aktywne urządzenie graficzne.
-- `dev.off()`: Usuń aktywne urządzenie.
+- `dev.list()`: Wyświetla listę wszystkich urządzeń graficznych w bieżącej sesji języka R.
+- `dev.new()`: Utwórz nowe urządzenie graficzne (nowe okno wykresu).
+- `dev.set(<device number>)`: Ustawianie aktywnego urządzenia graficznego.
+- `dev.off()`: Usuwanie aktywnego urządzenia.

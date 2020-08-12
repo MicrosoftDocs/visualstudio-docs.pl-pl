@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286833"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144691"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Używanie środowiska laboratoryjnego do DevOps
 
@@ -34,9 +34,14 @@ Poniżej przedstawiono przykłady typowych topologii środowiska laboratoryjnego
 |![Środowisko laboratoryjne w chmurze](../media/topology_cloud.png)| To środowisko laboratoryjne zapewnia podobne funkcje i funkcje, co _topologia serwera_, ale eliminuje wymaganie dla maszyn fizycznych lub wirtualnych działających w środowisku lokalnym; pozwala to skrócić czas instalacji, uprościć konserwację i zminimalizować koszt. Konfigurowanie wielu witryn sieci Web i maszyn wirtualnych wraz z niestandardowymi sieciami jest szybkie i łatwe w środowisku chmury, takim jak Microsoft Azure.|
 |![Środowisko programu Client-Server Lab](../media/topology_clientserver.png)| To środowisko laboratoryjne ma *topologię klienta-serwera*, która jest często używana do testowania aplikacji, która ma składniki serwera i klienta. W topologii klient/serwer wszystkie komputery klienckie i serwery używane do testowania aplikacji są w środowisku laboratoryjnym. Korzystając z tej topologii, można zbierać dane testowe z każdego komputera, który ma wpływ na testy.|
 
-| | |
-|---|---|
-| ![ikona aparatu filmu wideo](../../install/media/video-icon.png) | [Obejrzyj wideo,](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) aby zarządzać środowiskami laboratoryjnymi na potrzeby testowania. |
+:::row:::
+    :::column:::
+        ![ikona aparatu filmu wideo](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        [Obejrzyj wideo,](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) aby zarządzać środowiskami laboratoryjnymi na potrzeby testowania.
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Korzystanie z chmury z Azure Pipelines lub Team Foundation Server kompilowania i wydawania
 
@@ -127,7 +132,7 @@ Aby uzyskać więcej informacji na temat programu Lab Management, zobacz:
 * [Planowanie laboratorium](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
 * [Administrowanie laboratorium](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
 * [Konfiguracja dla środowisk SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Zarządzaj uprawnieniami](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
+* [Zarządzanie uprawnieniami](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
 * [Zmień konfigurację](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
 * [Rozwiązywanie problemów](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 
@@ -139,7 +144,7 @@ Aby uzyskać informacje o konfigurowaniu środowisk, zobacz:
 * [Tworzenie środowiska izolowanego od sieci i korzystanie z niego](https://msdn.microsoft.com/library/ee518924.aspx)
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie i konfigurowanie agentów testowych](../../test/lab-management/install-configure-test-agents.md)
 * [Przewodnik Visual Studio Lab Management](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)

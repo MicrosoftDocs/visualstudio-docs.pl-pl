@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Microsoft Docs
+title: 'IDispatchEx:: GetNextDispID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8811e828a6701769badf45ca7c37f9c53529150f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997357"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144432"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 
@@ -41,29 +41,29 @@ HRESULT GetNextDispID(
 ## <a name="parameters"></a>Parametry
 
 `grfdex`\
-Określa zbiór elementów, które mają być wyliczane. Może to być kombinacją następujących wartości:
+Określa zestaw elementów, które mają zostać wyliczone. Może to być kombinacja następujących wartości:
 
 |Wartość|Znaczenie|
 |-----------|-------------|
-|fdexEnumDefault|Żądania, że obiekt wylicza domyślne elementy. Obiekt może wyliczyć dowolny zbiór elementów.|
-|fdexEnumAll|Żądania obiektu wylicza wszystkie elementy. Obiekt może wyliczyć dowolny zbiór elementów.|
+|fdexEnumDefault|Żąda, aby obiekt wyliczał elementy domyślne. Obiekt może wyliczyć dowolny zestaw elementów.|
+|fdexEnumAll|Żąda, aby obiekt wyliczał wszystkie elementy. Obiekt może wyliczyć dowolny zestaw elementów.|
 
 `id`\
-Identyfikuje bieżącego elementu członkowskiego. GetNextDispID pobiera element w wyliczeniu po niej. Używa GetDispID lub poprzednie wywołanie GetNextDispID w celu uzyskania tego identyfikatora. Używa wartości DISPID_STARTENUM, aby uzyskać pierwszy identyfikator pierwszego elementu.
+Identyfikuje bieżącego członka. GetNextDispID Pobiera element w wyliczeniu. W celu uzyskania tego identyfikatora używa metody getdispid lub Previous do GetNextDispID. Używa wartości DISPID_STARTENUM do uzyskania pierwszego identyfikatora pierwszego elementu.
 
 `pid`\
-Adres zmiennej DISPID, która odbiera identyfikator następnej pozycji w wyliczeniu.
+Adres zmiennej DISPID, która odbiera identyfikator następnego elementu w wyliczeniu.
 
-Jeśli członek zostanie usunięty przez `DeleteMemberByName` lub `DeleteMemberByDispID`, `DISPID` powinna być prawidłowa dla `GetNextDispID`.
+Jeśli element członkowski jest usuwany przez `DeleteMemberByName` lub `DeleteMemberByDispID` , `DISPID` musi pozostać prawidłowy dla `GetNextDispID` .
 
 ## <a name="return-value"></a>Wartość zwracana
 
 Zwraca jedną z następujących wartości:
 
-|||
+|Wartość|Znaczenie|
 |-|-|
 |`S_OK`|Powodzenie.|
-|`S_FALSE`|Wyliczenie jest wykonywane.|
+|`S_FALSE`|Wyliczanie zostało wykonane.|
 
 ## <a name="example"></a>Przykład
 
