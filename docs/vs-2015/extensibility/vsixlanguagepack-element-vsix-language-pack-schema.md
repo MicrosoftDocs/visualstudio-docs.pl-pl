@@ -8,12 +8,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e2e1df362fddeab5be98ff90460a8a1a7d4b7876
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: cd3ed1477d1c4d345e5fc6f6496d12044d4af244
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558005"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114235"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack — element (schemat pakietu językowego VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,16 +59,42 @@ Wymagany. Dostarcza element główny pakietu językowego VSIX. Pakiet językowy 
   
 |Element|Opis|  
 |-------------|-----------------|  
-|None||  
+|Brak||  
   
 ## <a name="element-information"></a>Informacje o elementach  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    Przestrzeń nazw    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   Nazwa schematu   |                 Schemat pakietu Language Pack VSIX                 |
-| Plik walidacji |                VSIXLanguagePackSchema.xsd                 |
-|  Może być puste   |                            Nie                             |
+
+:::row:::
+    :::column:::
+        Przestrzeń nazw
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Nazwa schematu
+    :::column-end:::
+    :::column:::
+        Schemat pakietu Language Pack VSIX
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Plik walidacji
+    :::column-end:::
+    :::column:::
+        VSIXLanguagePackSchema. xsd
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Może być puste
+    :::column-end:::
+    :::column:::
+        Nie
+    :::column-end:::
+:::row-end:::
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu pakietu językowego VSX](../extensibility/vsx-language-pack-schema-reference.md) [lokalizowania pakietów VSIX](../extensibility/localizing-vsix-packages.md) [schemat rozszerzenia VSIX schematu 1,0](/previous-versions/dd393700(v=vs.110))

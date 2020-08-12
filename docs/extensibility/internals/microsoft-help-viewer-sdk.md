@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f79ead04e1c8a77ba605d4463bf8b2009f7ce71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536191"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114261"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 
@@ -445,16 +445,16 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 
 **Branding.xml**
 
-| | |
+| Cechy | Opis |
 | - | - |
 | Ona | **CollapsibleArea** |
 | Używanych | Rozwiń Zwiń tekst kontrolki zawartości |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | ExpandText | Rozwiń |
 | CollapseText | Zwiń |
 | Ona | **CodeSnippet** |
 | Używanych | Tekst kontrolki fragmentu kodu.  Uwaga: zawartość fragmentu kodu z rozrywanym miejscem zostanie zmieniona na spacja. |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | CopyToClipboard | Kopiuj do schowka |
 | ViewColorizedText | Wyświetl kolory |
 | CombinedVBTabDisplayLanguage | Visual Basic (przykład) |
@@ -462,8 +462,8 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | VBUsage | Użycie |
 | Ona | **Opinie, stopki i logo** |
 | Używanych | Podaj kontrolę opinii dla klienta, aby przesłać opinię na temat bieżącego tematu za pośrednictwem poczty e-mail.  Tekst praw autorskich dla zawartości.  Definicja logo. |
-| **Postaci** | **Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).** |
-| Prawo | © 2013 Microsoft Corporation. Wszelkie prawa zastrzeżone. |
+| **Element** | **Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).** |
+| Prawo | © 2013 Microsoft Corporation. All rights reserved. |
 | SendFeedback | \<a href="{0}" {1}>Prześlij opinię \</a> na temat tego tematu do firmy Microsoft. |
 | FeedbackLink | |
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
@@ -471,7 +471,7 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | LogoFileNameHC | vs_logo_wh.gif |
 | Ona | **Disclaimer** |
 | Używanych | Zbiór odrzutów specyficznych dla każdego przypadku dla zawartości przetłumaczonej maszynowo. |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | MT_Editable | Ten artykuł został przetłumaczony maszynowo. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | MT_NonEditable | Ten artykuł został przetłumaczony maszynowo. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | MT_QualityEditable | Ten artykuł został przetłumaczony ręcznie. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
@@ -480,14 +480,14 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | MT_BetaRecycledContents | Ten artykuł został przetłumaczony ręcznie w wersji wstępnej. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie. |
 | Ona | **Połącz z** |
 | Używanych | Obsługa linków tematów online |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | LinkTableTitle | Tabela łączy |
 | TopicEnuLinkText | Zapoznaj się z angielską wersją \</a> tego tematu, która jest dostępna na komputerze. |
 | TopicOnlineLinkText | Wyświetl ten temat \<a href="{0}" {1}> online\</a> |
-| OnlineText | Online |
+| OnlineText | Tryb online |
 | Ona | **Kontrolka audio wideo** |
 | Używanych | Wyświetlanie elementów i tekstu dla zawartości wideo |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | MultiMediaNotSupported | Aby można było obsługiwać zawartość, musi być zainstalowany program Internet Explorer 9 lub nowszy {0} . |
 | VideoText | Wyświetlanie wideo |
 | AudioText | przesyłanie strumieniowe audio |
@@ -495,25 +495,25 @@ Uwaga: zmienne zapisane przez "{n}" mają zależności kodu — usunięcie lub z
 | OnlineAudioLinkText | \<p>Aby nawiązać połączenie z dźwiękiem skojarzonym z tym tematem, kliknij {0} \<a href="{1}"> {2} tutaj \</a> .\</p> |
 | Ona | **Niezainstalowana Kontrola zawartości** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania contentnotinstalled.htm |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | ContentNotInstalledTitle | Nie znaleziono zawartości na komputerze. |
 | ContentNotInstalledDownloadContentText | \<p>Aby pobrać zawartość na komputer, \<a href="{0}" {1}> kliknij kartę Zarządzanie \</a> .\</p> |
 | ContentNotInstalledText | \<p>Na komputerze nie jest zainstalowana żadna zawartość. Skontaktuj się z administratorem w celu zainstalowania lokalnej zawartości pomocy.\</p> |
 | Ona | **Nie znaleziono tematu — formant** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania topicnotfound.htm |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | TopicNotFoundTitle | Nie można znaleźć żądanego tematu na komputerze. |
 | TopicNotFoundViewOnlineText | \<p>Nie znaleziono żądanego tematu na komputerze, ale można \<a href="{0}" {1}> wyświetlić temat w trybie online \</a> .\</p> |
 | TopicNotFoundDownloadContentText | \<p>Zobacz okienko nawigacji, aby uzyskać linki do podobnych tematów, lub \<a href="{0}" {1}> kliknij kartę Zarządzanie, \</a> Aby pobrać zawartość do komputera.\</p> |
 | TopicNotFoundText | \<p>Nie znaleziono żądanego tematu na komputerze.\</p> |
 | Ona | **Formant uszkodzony** |
 | Używanych | Elementy tekstowe (ciągi) używane do renderowania topiccorrupted.htm |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | TopicCorruptedTitle | Nie można wyświetlić żądanego tematu. |
 | TopicCorruptedViewOnlineText | \<p>Podgląd pomocy nie może wyświetlić żądanego tematu. Może wystąpić błąd w zawartości tematu lub podstawowej zależności od systemu.\</p> |
 | Ona | **Strona główna — formant** |
 | Używanych | Tekst obsługujący wyświetlanie zawartości węzła najwyższego poziomu podglądu pomocy. |
-| **Postaci** | **Wartość** |
+| **Element** | **Wartość** |
 | HomePageTitle | Strona główna podglądu pomocy |
 | HomePageIntroduction | \<p>Witamy w Podgląd Pomocy firmy Microsoft, podstawowe źródło informacji dla wszystkich osób korzystających z narzędzi, produktów, technologii i usług firmy Microsoft. Podgląd pomocy zapewnia dostęp do informacji o sposobach i odwołaniach, przykładowym kodzie, artykułach technicznych i innych. Aby znaleźć potrzebną zawartość, przejrzyj Spis treści, użyj wyszukiwania pełnotekstowego lub przejdź przez zawartość przy użyciu indeksu słowa kluczowego.\</p> |
 | HomePageContentInstallText | \<p>\<br />Za pomocą \<a href="{0}" {1}> karty Zarządzanie zawartością \</a> można wykonać następujące czynności: \<ul> \<li> Dodaj zawartość do komputera. \</li> \<li> Sprawdź, czy są aktualizacje zawartości lokalnej. \</li> \<li> Usuń zawartość z komputera.\</li>\</ul>\</p> |
@@ -563,7 +563,7 @@ Plik branding.js zawiera kod JavaScript używany przez elementy oznakowania podg
 
 Pakiet znakowania zawiera zestaw plików HTM, które obsługują scenariusze przekazywania informacji o kluczach w celu ułatwienia użytkownikom zawartości, na przykład Strona główna zawierająca sekcję opisującą, które zestawy zawartości są zainstalowane, oraz strony informujące użytkownika o tym, że nie można znaleźć tematów w lokalnym zestawie tematów. Te pliki HTM można modyfikować na produkt.  Dostawcy powłoki ISO mogą korzystać z domyślnego pakietu znakowania i zmieniać zachowanie i zawartość tych stron w celu ich potrzeby.  Te pliki odnoszą się do odpowiedniego pakietu markowego, aby Tagi znakowania pobierają odpowiednią zawartość z pliku branding.xml.
 
-|**Plik**|**Użycie**|**Wyświetlone źródło zawartości**|
+|**Plik**|**Używanych**|**Wyświetlone źródło zawartości**|
 |-|-|-|
 |homepage.htm|Jest to strona wyświetlająca aktualnie zainstalowaną zawartość oraz wszelkie inne komunikaty, które są odpowiednie dla użytkownika dotyczące ich zawartości.  Ten plik ma dodatkowy atrybut metadanych "Microsoft.Help.Id" Content = "-1", który umieszcza tę zawartość w górnej części lokalnego SPISu treści zawartości.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, tag\<HomePageTitle>|
@@ -597,7 +597,7 @@ Marking. pliki CSS zawierają definicje dla prezentacji tematu programu Visual S
 
 Zawartość programu Visual Studio zawiera logo programu Visual Studio, a także inne grafiki.  Poniżej przedstawiono kompletną listę plików graficznych w pakiecie znakowania podglądu pomocy programu Visual Studio.
 
-|**Plik**|**Użycie**|**Przykłady**|
+|**Plik**|**Używanych**|**Przykłady**|
 |-|-|-|
 |clear.gif|Używane do renderowania zwijanego obszaru||
 |footer_slice.gif|Prezentacja stopki||
@@ -826,7 +826,7 @@ Aby przetestować ten sposób jako jeśli został wdrożony:
 
 12. W środowisku IDE firmy Contoso wybierz klawisz F1, aby przetestować funkcję F1.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Zasoby dodatkowe
 
 Aby uzyskać interfejs API środowiska uruchomieniowego, zobacz [interfejs API pomocy systemu Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 

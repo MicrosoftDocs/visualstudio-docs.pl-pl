@@ -286,18 +286,19 @@ f1_keywords:
 - CA2247
 - CA5122
 - CA5374
+- IL3000
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aca6889b46b58828db59be634275e99d6721ee49
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235098"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114152"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
 
@@ -603,3 +604,4 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA5400 | [CA5400 upewnij się, że sprawdzanie listy odwołania certyfikatów HttpClient nie jest wyłączone](../code-quality/ca5400.md) | Odwołany certyfikat nie jest już zaufany. Mogą one być używane przez osoby atakujące, które przechodzą z pewnych złośliwych danych lub kradzieży poufnych danych w komunikacji przy użyciu protokołu HTTPS. |
 | CA5401 | [CA5401 nie używaj modułu szyfrującego z wartością niedomyślną IV](../code-quality/ca5401.md) | Szyfrowanie symetryczne powinno zawsze używać niepowtarzalnych wektorów inicjalizacji, aby zapobiec atakom słownikowym. |
 | CA5402 | [CA5402 Użyj szyfrowania z wartością domyślną IV](../code-quality/ca5402.md) | Szyfrowanie symetryczne powinno zawsze używać niepowtarzalnych wektorów inicjalizacji, aby zapobiec atakom słownikowym. |
+| IL3000 | [IL3000 Unikaj używania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczego pliku](../code-quality/il3000.md) | Unikaj używania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczego pliku |
