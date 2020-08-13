@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869889"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168752"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aktualizowanie programu Visual Studio przy użyciu minimalnego układu offline
 
@@ -56,12 +56,13 @@ To narzędzie tworzy układy aktualizacji dla programu Visual Studio 2017 (15,9)
 #### <a name="commands"></a>Polecenia
 * **Wersja zapoznawcza**: Użyj tego polecenia, aby wyświetlić informacje o liczbie pobieranych pakietów oraz o łącznym miejscu użytym do utworzenia tego układu. 
 * **Generuj**: to polecenie służy do generowania minimalnego układu aktualizacji programu Visual Studio.
-* **Wygeneruj ponownie**: to polecenie służy do ponownego generowania układu przy użyciu istniejącego pliku odpowiedzi o minimalnym układzie. Każdy minimalny układ tworzy `MinimalLayout.json` plik odpowiedzi, który zawiera oryginalne parametry wejściowe układu minimalnego. Możesz użyć polecenia **Regenerate** i `MinimalLayout.json` pliku odpowiedzi, aby ponownie wygenerować minimalny układ. Jest to przydatne, jeśli chcesz utworzyć minimalny układ nowej aktualizacji programu Visual Studio na podstawie pliku odpowiedzi poprzedniego układu minimalnego. 
-   - Dla tego polecenia `MinimalLayout.json` wymagana jest ścieżka pliku z już wygenerowanego układu. 
+* **Wygeneruj ponownie**: to polecenie służy do ponownego generowania układu przy użyciu istniejącego pliku odpowiedzi o minimalnym układzie. Każdy minimalny układ tworzy `MinimalLayout.json` plik odpowiedzi, który zawiera oryginalne parametry wejściowe układu minimalnego. Możesz użyć polecenia **Regenerate** i `MinimalLayout.json` pliku odpowiedzi, aby ponownie wygenerować minimalny układ. Jest to przydatne, jeśli chcesz utworzyć minimalny układ nowej aktualizacji programu Visual Studio na podstawie pliku odpowiedzi poprzedniego układu minimalnego.
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   Dla tego polecenia `MinimalLayout.json` wymagana jest ścieżka pliku z już wygenerowanego układu. 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **Weryfikuj**: Użyj tego polecenia, aby określić, czy folder układu jest uszkodzony.
 * **Poprawka**: Użyj tego polecenia, aby naprawić uszkodzony folder układu, w tym zastępując wszystkie brakujące pakiety z folderu układu.
