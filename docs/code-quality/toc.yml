@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: Automatyczne wstrzymanie funkcji
               href: automatic-feature-suspension.md
+            - name: Ostrzeżenia dotyczące publikowania
+              items:
+                - name: Omówienie
+                  displayName: publish warnings
+                - name: 'IL3000: Unikaj uzyskiwania dostępu do ścieżki pliku zestawu podczas publikowania w postaci jednoplikowej'
+                  href: il3000.md
