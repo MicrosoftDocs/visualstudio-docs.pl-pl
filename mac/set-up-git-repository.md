@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 9d6fd5ffefcd6696fa67302a8d59fd46e498a472
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950602"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214696"
 ---
 # <a name="set-up-a-git-repository"></a>Konfigurowanie repozytorium git
 
@@ -55,7 +55,7 @@ Jeśli masz istniejący projekt, który _nie jest_ jeszcze w kontroli wersji, wy
 
 3. Wybierz kartę **Wybierz z zarejestrowanych** i naciśnij przycisk **Dodaj** :
 
-    ![](media/version-control-git5.png)
+    ![Okno dialogowe Dodawanie zarejestrowanego repozytorium.](media/version-control-git5.png)
 
 4. Wprowadź nazwę repozytorium, które ma być wyświetlane lokalnie, a następnie wklej adres URL z kroku #3. Okno dialogowe konfiguracji repozytorium powinno wyglądać podobnie do poniższego. Naciśnij przycisk OK:
 
@@ -163,6 +163,6 @@ Jeśli masz problemy z zainicjowaniem projektu za pomocą pustego repozytorium z
 1. Przejdź do menu kontroli wersji i wybierz polecenie **Publikuj w kontroli wersji**.
 1. Wykonaj kroki opisane powyżej samouczka, rozpoczynając od kroku 6.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kontrola wersji w programie Visual Studio (w systemie Windows)](/visualstudio/version-control/)

@@ -1,6 +1,6 @@
 ---
-title: Opcje, Edytor tekstu, Podstawowy (VB), Zaawansowane
-ms.date: 01/16/2019
+title: Opcje, Edytor tekstu, Basic (VB), zaawansowane
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,99 +13,106 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431478"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214652"
 ---
-# <a name="options-text-editor-basic-visual-basic-advanced"></a>Opcje, Edytor tekstu, Podstawowy (Visual Basic), Zaawansowane
-Strona właściwości **VB Specific** w folderze **Podstawowe** folderu **Edytor tekstu** w oknie dialogowym **Opcje** **(Narzędzia)** zawiera następujące właściwości:
+# <a name="options-text-editor-basic-visual-basic-advanced"></a>Opcje, Edytor tekstu, podstawowe (Visual Basic), zaawansowane
+Strona **właściwości specyficzne dla języka vb** w folderze **podstawowa** folderu **Edytor tekstu** okna dialogowego **Opcje** (menu**Narzędzia** ) zawiera następujące właściwości:
 
 ## <a name="analysis"></a>Analiza
 
 - Analiza kodu na żywo lub zakres analizy w tle
 
-   Skonfiguruj zakres analizy w tle dla kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [Jak: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
+   Skonfiguruj zakres analizy w tle dla kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [How to: Configure Live Code Analysis Scope for Managed Code](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
-## <a name="using-directives"></a>Korzystanie z dyrektyw
+## <a name="using-directives"></a>Dyrektywy using
 
-- Umieść dyrektywy "System" na pierwszym miejscu podczas sortowania za pomocą
+- Umieść dyrektywy "system" jako pierwsze podczas sortowania przy użyciu
 
-   Po wybraniu tej opcji polecenie **Usuń i posortuj usings** w menu prawym przyciskiem myszy sortuje `using` dyrektywy i umieszcza obszary nazw "System" u góry listy.
+   Po wybraniu polecenia **Usuń i Sortuj przy użyciu** w menu rozwijanym po kliknięciu prawym przyciskiem myszy sortuje `using` dyrektywy i umieszcza przestrzenie nazw "system" w górnej części listy.
 
-- Oddzielanie grup dyrektyw przy użyciu
+- Oddziel przy użyciu grupy dyrektywy
 
-   Po wybraniu tej opcji polecenie **Usuń i sortuj usings** w menu po kliknięciu prawym przyciskiem myszy oddziela `using` dyrektywy, wstawiając pustą linię między grupami dyrektyw, które mają ten sam główny obszar nazw.
+   Po wybraniu polecenia **Usuń i Sortuj przy użyciu** w menu rozwijanym prawym przyciskiem myszy oddziela `using` dyrektywy przez wstawianie pustego wiersza między grupami dyrektyw, które mają tę samą główną przestrzeń nazw.
 
-- Sugerowanie użycia typów w złożeniach referencyjnych
-- Sugerowanie użycia typów w pakietach NuGet
+- Sugeruj użycie dla typów w zestawach odwołań
+- Sugeruj użycie dla typów w pakietach NuGet
 
-   Gdy te opcje są zaznaczone, [szybka akcja](../quick-actions.md) jest dostępna `using` do zainstalowania pakietu NuGet i dodać dyrektywę dla typów bez odwołań.
+   Po wybraniu tych opcji można wykonać [szybką akcję](../quick-actions.md) , aby zainstalować pakiet NuGet i dodać `using` dyrektywę dla typów bez odwołań.
 
-   ![Szybka akcja instalowania pakietu NuGet w programie Visual Studio](media/nuget-lightbulb.png)
+   ![Szybka akcja instalacji pakietu NuGet w programie Visual Studio](media/nuget-lightbulb.png)
 
 ## <a name="highlighting"></a>Wyróżnianie
 
- **Włączanie wyróżniania odwołań i słów kluczowych**
+ **Włącz podświetlanie odwołań i słów kluczowych**
 
-Edytor tekstu może wyróżnić wszystkie wystąpienia symbolu lub wszystkie `If..Then`słowa `While...End While`kluczowe `Try...Catch...Finally`w klauzuli, takie jak , lub . Możesz poruszać się między wyróżnionymi odniesieniami lub słowami kluczowymi, naciskając **klawisze Ctrl** + **Shift** + **w dół** lub klawisz **Ctrl** + **Shift** + w**górę**.
+Edytor tekstu może wyróżnić wszystkie wystąpienia symbolu lub wszystkie słowa kluczowe w klauzuli, takiej jak `If..Then` , `While...End While` , lub `Try...Catch...Finally` . Możesz przechodzić między wyróżnionymi odwołaniami lub słowami kluczowymi, naciskając **klawisze CTRL**  +  **SHIFT**  +  **Strzałka w dół** lub **Ctrl**  +  **SHIFT**  +  **Strzałka w górę**.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 
-**Włącz tryb tworzenia zamielenia**
+**Włącz tryb tworzenia konspektu**
 
-Po otwarciu pliku w edytorze kodu można wyświetlić dokument w trybie tworzenia. Zobacz [Tworzenie przedstawiające, aby](../../ide/outlining.md) uzyskać więcej informacji. Po wybraniu tej opcji funkcja tworzenia wartości jest aktywowana po otwarciu pliku.
+Po otwarciu pliku w edytorze kodu można wyświetlić dokument w trybie tworzenia konspektu. Aby uzyskać więcej informacji, zobacz [Tworzenie konspektu](../../ide/outlining.md) . Po wybraniu tej opcji funkcja tworzenia konspektu jest uaktywniana po otwarciu pliku.
 
-**Pokaż separatory linii procedury**
+**Pokaż separatory wierszy procedury**
 
-Edytor tekstu wskazuje wizualny zakres procedur. Linia jest rysowana w plikach *źródłowych .vb* projektu w lokalizacjach wymienionych w poniższej tabeli:
+Edytor tekstu wskazuje wizualny zakres procedur. Wiersz jest rysowany w plikach źródłowych *. vb* projektu w lokalizacjach wymienionych w poniższej tabeli:
 
-|Lokalizacja w pliku źródłowym .vb|Przykład lokalizacji wiersza|
+|Lokalizacja w pliku źródłowym. vb|Przykład lokalizacji wiersza|
 |---------------------------------|------------------------------|
-|Po zamknięciu konstrukcji deklaracji bloku|- Na końcu klasy, struktury, modułu, interfejsu lub wyliczenia<br />- Po właściwości, funkcji lub sub<br />- Nie między get i set klauzule w właściwości|
-|Po zestawie konstrukcji jednoliniowych|- Po instrukcjach importu przed definicją typu w pliku klasy<br />- Po zmiennych zadeklarowanych w klasie, przed jakimikolwiek procedurami|
-|Po deklaracjach jednowierszowych (deklaracje na poziomie nieblokowym)|- Po instrukcji importu, dziedziczy instrukcje, deklaracje zmiennych, deklaracje zdarzeń, deklaracje delegata i dll zadeklarować instrukcje|
+|Po zamknięciu konstrukcji deklaracji bloku|-Na końcu klasy, struktury, modułu, interfejsu lub wyliczenia<br />-Po właściwości, funkcji lub sub<br />-Nie między klauzulami get i Set we właściwości|
+|Po zestawie pojedynczych konstrukcji|-Po instrukcjach importu przed definicją typu w pliku klasy<br />-Po zmiennych zadeklarowanych w klasie przed wszelkimi procedurami|
+|Po deklaracjach pojedynczego wiersza (deklaracje na poziomie niebloku)|-Następujące instrukcje importu, instrukcje dziedziczenia, deklaracje zmiennych, deklaracje zdarzeń, deklaracje delegata i instrukcje dotyczące bibliotek DLL|
 
-## <a name="block-structure-guides"></a>Prowadnice struktury bloków
+## <a name="block-structure-guides"></a>Prowadnice struktury blokowej
 
-Po zaznaczeniu tej opcji w edytorze pojawiają się pionowe linie, które są zgodne ze strukturalnymi blokami kodu, co umożliwia łatwą identyfikację poszczególnych bloków kodu. Na przykład zostanie wyświetlony wiersz `Sub` `EndSub` między `Sub` i w instrukcji.
+Po wybraniu linie pionowe pojawiają się w edytorze, który jest wierszem ze strukturą bloków kodu, dzięki czemu można łatwo identyfikować poszczególne bloki kodu. Na przykład zobaczysz linię między `Sub` i `EndSub` w `Sub` instrukcji.
 
 ## <a name="editor-help"></a>Pomoc edytora
 
-**Ładna lista (formatowanie) kodu** Edytor tekstu formatuje kod odpowiednio. Po wybraniu tej opcji edytor kodu:
+::: moniker range=">=vs-2019"
+**Wskazówki dotyczące nazwy parametru wbudowanego**    
+Po wybraniu wstawia wskazówki dotyczące nazw parametrów dla literałów, literałów rzutowania i wystąpień obiektów przed każdym argumentem w wywołaniach funkcji.  
 
-- Wyrównaj kod do prawidłowego położenia karty
+![Wskazówki dotyczące nazwy parametru wbudowanego dla Visual Basic](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
 
-- Ponowne przywróć słowa kluczowe, zmienne i obiekty do prawidłowej sprawy
+**Łatwa lista (ponowne formatowanie) kodu** Edytor tekstu ponownie sformatuje kod zgodnie z potrzebami. Po wybraniu tej opcji Edytor kodu będzie:
 
-- Dodawanie brakujących `Then` `If...Then` do instrukcji
+- Dopasuj kod do poprawnej pozycji tabulacji
 
-- Dodawanie nawiasów do wywołań funkcji
+- Przypadki słowa kluczowego, zmienne i obiekty w poprawnej wielkości liter
 
-- Dodawanie brakujących cudzysłowów końcowych do ciągów
+- Dodaj brakujący `Then` element do `If...Then` instrukcji
 
-- Sformatowanie wykładniczego notacji
+- Dodawanie nawiasu do wywołań funkcji
 
-- Daty formaty
+- Dodaj brakujące cudzysłowy końcowe do ciągów
+
+- Formatowanie notacji wykładniczej
+
+- Formatowanie dat
 
 **Automatyczne wstawianie konstrukcji końcowych**
 
-Po wpisaniu — na przykład pierwszym wierszu `Sub Main`deklaracji procedury — i naciśnięciu **klawisza Enter**edytor tekstu dodaje pasujący `End Sub` wiersz. Podobnie po dodaniu [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) pętli, edytor tekstu `Next` dodaje pasujące instrukcji. Gdy ta opcja jest zaznaczona, edytor kodu automatycznie dodaje konstruktora końcowego.
+Gdy wpiszesz — na przykład pierwszy wiersz deklaracji procedury, `Sub Main` — i naciśnij klawisz **Enter**, Edytor tekstu dodaje pasujący `End Sub` wiersz. Podobnie, jeśli dodasz pętlę [for](/dotnet/visual-basic/language-reference/statements/for-next-statement) , Edytor tekstu dodaje pasującą `Next` instrukcję. Gdy ta opcja jest zaznaczona, Edytor kodu automatycznie dodaje końcową konstrukcję.
 
-**Automatyczne wstawianie elementów członkowskich interfejsu i mustoverride**
+**Automatyczne wstawianie elementów członkowskich interfejsu i MustOverride**
 
-Podczas zatwierdzania `Implements` instrukcji `Inherits` lub instrukcji dla klasy edytor tekstu wstawia prototypy dla elementów członkowskich, które muszą być zaimplementowane lub zastąpione, odpowiednio.
+Podczas zatwierdzania `Implements` instrukcji lub `Inherits` instrukcji dla klasy, Edytor tekstu wstawia prototypy dla elementów członkowskich, które muszą być odpowiednio zaimplementowane lub zastąpione.
 
-**Włączanie sugestii korekcji błędów**
+**Włącz sugestie dotyczące korekcji błędów**
 
-Edytor tekstu może sugerować rozwiązania typowych błędów i umożliwia wybranie odpowiedniej korekty, która jest następnie stosowana do kodu.
+Edytor tekstu może sugerować rozwiązania typowych błędów i umożliwia wybranie odpowiedniej poprawki, która zostanie następnie zastosowana do Twojego kodu.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,21 +1,21 @@
 ---
 title: Opcje, edytor tekstu, C#, zaawansowane
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181069"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214666"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
@@ -128,7 +128,13 @@ Na stronie opcje **Zaawansowane** można modyfikować ustawienia formatowania ed
 Zaznacz te pola wyboru, aby wyświetlić kropkowane linie pionowe między nawiasami klamrowymi ( **{}** ) w kodzie. Następnie można łatwo zobaczyć pojedyncze bloki kodu dla poziomu deklaracji i konstrukcji na poziomie kodu.
 
 ## <a name="editor-help"></a>Pomoc edytora
-
+::: moniker range=">=vs-2019"
+- Wskazówki dotyczące nazwy parametru wbudowanego 
+    
+    Po wybraniu wstawia wskazówki dotyczące nazw parametrów dla literałów, literałów rzutowania i wystąpień obiektów przed każdym argumentem w wywołaniach funkcji.  
+    
+    ![Wskazówki dotyczące nazwy parametru wbudowanego dla CSharp](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - Generuj komentarze dokumentacji XML dla///
 
    Po wybraniu Wstawia elementy XML dla komentarzy dokumentacji XML po wprowadzeniu `///` komentarza. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [Komentarze dokumentacji XML (Przewodnik programowania w języku C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
