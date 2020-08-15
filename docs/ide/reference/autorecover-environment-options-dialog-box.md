@@ -1,6 +1,6 @@
 ---
 title: AutoRecover, środowisko, opcje — Okno dialogowe
-ms.date: 11/04/2016
+ms.date: 08/14/2020
 ms.topic: reference
 f1_keywords:
 - VS.DialogAutoRestore
@@ -17,27 +17,42 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585668"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250291"
 ---
-# <a name="autorecover-environment-options-dialog-box"></a>Okno dialogowe Autoodzyserwanie, Środowisko, Opcje
+# <a name="autorecover-environment-options-dialog-box"></a>Autoodzyskiwanie, środowisko, Opcje — okno dialogowe
 
-Użyj tej strony w oknie dialogowym **Opcje,** aby określić, czy pliki mają być automatycznie odtwarzane z kopii zapasowej plików. Można również określić, czy chcesz przywrócić zmodyfikowane pliki, jeśli program Visual Studio zostanie nieoczekiwanie zamknięty.
+Użyj tej strony w oknie dialogowym **Opcje** , aby określić, czy automatycznie tworzyć kopie zapasowe plików, czy nie. Możesz również określić, czy chcesz przywrócić zmodyfikowane pliki, jeśli program Visual Studio nieoczekiwanie się zamknie.
 
-Dostęp do tego okna dialogowego można uzyskać, zaznaczając polecenie **Narzędzia,** wybierając polecenie **Opcje**, a następnie wybierając pozycję**Autoredzydodzydodzydozysk** **Environment** > środowiska . Jeśli ta strona nie jest wyświetlana na liście, wybierz pozycję **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje.**
+Aby uzyskać dostęp do tego okna dialogowego, przejdź do pozycji **Narzędzia**  >  **Opcje**  >  **środowisko**  >  **Autoodzyskiwanie**.
 
-**Zapisywanie informacji autoodzyserowania co [n] minut**
+:::image type="content" source="media/autorecover-options.png" alt-text="Zrzut ekranu przedstawiający sekcję Autoodzyskiwanie w oknie dialogowym Opcje":::
 
-Użyj tej opcji, aby dostosować często plik jest automatycznie zapisywany w edytorze. W przypadku wcześniej zapisanych plików kopia pliku jest zapisywana w *pliku\\%USERPROFILE%\Documents\Visual Studio [wersja]\Pliki\\kopii zapasowej [nazwa projektu]*. Jeśli plik jest nowy i nie został jeszcze zapisany, plik jest automatycznie zapisywany przy użyciu losowo wygenerowanej nazwy pliku.
+**Zapisuj informacje Autoodzyskiwania co [n] min**
 
-**Zachowaj informacje o autoodzyserwowanie przez [n] dni**
+::: moniker range="vs-2019"
 
-Ta opcja służy do określania, jak długo program Visual Studio przechowuje pliki utworzone dla autorecovery.
+Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików program Visual Studio 2019 w wersji 16,2 i nowszej zapisuje kopię pliku w ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [ProjectName]***. Jeśli plik jest nowy i jeszcze go nie zapisano, program Visual Studio automatycznie zapisze go przy użyciu losowo wygenerowanej nazwy pliku.
+
+> [!NOTE]
+> Jeśli używasz programu Visual Studio 2019 w wersji 16,1 lub starszej, lokalizacja pliku to *%USERPROFILE%\Documents\Visual Studio [wersja] \backup pliki \\ [ProjectName]*. Aby uzyskać więcej informacji, zobacz stronę [historii informacji o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików program Visual Studio 2017 zapisuje kopię pliku w programie *%USERPROFILE%\Documents\Visual Studio [Version] \backup Files \\ [ProjectName]*. Jeśli plik jest nowy i jeszcze go nie zapisano, program Visual Studio automatycznie zapisze go przy użyciu losowo wygenerowanej nazwy pliku.
+
+::: moniker-end
+
+**Zachowaj informacje Autoodzyskiwania dla [n] dni**
+
+Użyj tej opcji, aby określić, jak długo program Visual Studio ma nadal tworzyć pliki do odzyskania.
 
 ### <a name="see-also"></a>Zobacz też
 
-- [Okno dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Opcje — Okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)

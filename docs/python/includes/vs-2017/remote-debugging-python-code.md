@@ -10,20 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541085"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88246342"
 ---
 Program Visual Studio może uruchamiać i debugować aplikacje języka Python lokalnie i zdalnie na komputerze z systemem Windows (zobacz [debugowanie zdalne](../../../debugger/remote-debugging.md)). Może on również debugować zdalnie w innym systemie operacyjnym, urządzeniu lub implementacji języka Python innym niż CPython za pomocą [biblioteki ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 W przypadku korzystania z ptvsd kod języka Python jest debugowany na serwerze debugowania, do którego można dołączyć Visual Studio. Hosting ten wymaga niewielkiej modyfikacji kodu w celu zaimportowania i włączenia serwera i może wymagać konfiguracji sieci lub zapory na komputerze zdalnym, aby zezwolić na połączenia TCP.
 
-|   |   |
-|---|---|
-| ![ikona aparatu filmu wideo](../../../install/media/video-icon.png "Obejrzyj film") | Aby zapoznać się z wprowadzeniem do zdalnego debugowania, zobacz [szczegółowe szczegółowe: Międzyplatformowe debugowanie zdalne](https://youtu.be/y1Qq7BrV6Cc) (YouTube.com, 6m22s), które ma zastosowanie zarówno dla programu Visual Studio 2015, jak i 2017. |
+![ikona aparatu filmu wideo](../../../install/media/video-icon.png "Obejrzyj film") Aby zapoznać się z wprowadzeniem do zdalnego debugowania, zobacz [szczegółowe szczegółowe: Międzyplatformowe debugowanie zdalne](https://youtu.be/y1Qq7BrV6Cc) (YouTube.com, 6m22s), które ma zastosowanie zarówno dla programu Visual Studio 2015, jak i 2017.
 
 ## <a name="set-up-a-linux-computer"></a>Konfigurowanie komputera z systemem Linux
 

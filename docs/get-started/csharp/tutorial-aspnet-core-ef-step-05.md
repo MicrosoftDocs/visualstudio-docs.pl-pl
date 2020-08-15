@@ -1,8 +1,8 @@
 ---
-title: 'Krok 5: Wdrażanie aplikacji ASP.NET Core na platformie Azure'
-description: Wdrażanie ASP.NET core aplikacji sieci Web na platformie Azure za pomocą tego samouczka wideo i instrukcji krok po kroku.
+title: Krok 5. wdrażanie aplikacji ASP.NET Core na platformie Azure
+description: Wdróż aplikację sieci Web ASP.NET Core na platformie Azure za pomocą tego samouczka wideo i instrukcji krok po kroku.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 08/14/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,73 +16,99 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580031"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248673"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Krok 5: Wdrażanie aplikacji ASP.NET Core na platformie Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Krok 5. wdrażanie aplikacji ASP.NET Core na platformie Azure
 
 Wykonaj następujące kroki, aby wdrożyć aplikację ASP.NET Core i jej bazę danych na platformie Azure.
 
-_Obejrzyj ten klip wideo i postępuj zgodnie z tym, aby wdrożyć pierwszą aplikację ASP.NET Core na platformie Azure._
+_Obejrzyj ten film wideo i postępuj zgodnie z instrukcjami, aby wdrożyć swoją pierwszą aplikację ASP.NET Core na platformie Azure._
 
 > [!VIDEO https://www.youtube.com/embed/n8wz_f5_4wI]
 
-## <a name="open-your-project"></a>Otwórz swój projekt
+## <a name="open-your-project"></a>Otwórz projekt
 
-Otwórz aplikację ASP.NET Core w programie Visual Studio 2019. Aplikacja powinna już używać konfiguracji z EF Core i działającym interfejsem API sieci web, zgodnie z konfiguracją w [kroku 4 tej serii samouczków](tutorial-aspnet-core-ef-step-04.md).
+Otwórz aplikację ASP.NET Core w programie Visual Studio 2019. Aplikacja powinna już korzystać z konfiguracji z EF Core i działającego internetowego interfejsu API, zgodnie z konfiguracją w [kroku 4 tej serii samouczków](tutorial-aspnet-core-ef-step-04.md).
 
 ## <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
-Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz pozycję **Publikuj**. Pozostaw domyślne ustawienia **usługi App Service** i **Utwórz nowy** i kliknij przycisk **Publikuj.** Jeśli nie masz jeszcze konta platformy Azure, kliknij **pozycję Utwórz bezpłatne konto platformy Azure** i zakończ krótki proces rejestracji.
+1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz polecenie **Publikuj**. W kreatorze **publikowania** wybierz **platformę Azure** jako element docelowy.
 
-Dodaj program SQL Server. Określ nazwę użytkownika i hasło administratora.
+   ![Zrzut ekranu przedstawiający Azure App Service 1](media/vs-2019/app-service-screen-1.png)
 
-![Program Visual Studio 2019 tworzenie programu Azure SQL Server](media/vs-2019/vs2019-azure-sql-server.png)
+1. Dla konkretnego obiektu docelowego wybierz **Azure App Service (Windows)**.
 
-Dodaj wgląd w aplikacje.
+   ![Zrzut ekranu przedstawiający Azure App Service 2](media/vs-2019/app-service-screen-2.png)
 
-Kliknij przycisk **Utwórz,** aby kontynuować.
+1. Wybierz pozycję **Utwórz nowy Azure App Service**. Jeśli nie masz jeszcze konta platformy Azure, kliknij przycisk **Utwórz bezpłatne konto platformy Azure** i Ukończ proces rejestracji.
 
-![Visual Studio 2019 Tworzenie nowej usługi aplikacji platformy Azure](media/vs-2019/vs2019-azure-create-new-app-service.png)
+   ![Zrzut ekranu przedstawiający Azure App Service 3](media/vs-2019/app-service-screen-3.png)
 
-## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>Eksplorowanie portalu Platformy Azure i hostowanych aplikacji
+1. Określ nazwę i grupę zasobów lub zaakceptuj wartości domyślne, a następnie wybierz pozycję **Utwórz**. Grupa zasobów jest tylko sposobem organizowania powiązanych zasobów na platformie Azure, takich jak usługi, które współpracują z kontami magazynu, magazynami kluczy i bazami danych.
 
-Po utworzeniu usługi aplikacji witryna zostanie uruchomiona w przeglądarce. Podczas ładowania można również znaleźć usługę app service w witrynie Azure portal. Eksplorując dostępne opcje usługi aplikacji, znajdziesz sekcję **Przegląd,** w której możesz uruchomić i zatrzymać aplikację.
+   ![Zrzut ekranu przedstawiający Azure App Service 4](media/vs-2019/app-service-screen-4.png)
 
-![Opcje usługi azure app service](media/vs-2019/vs2019-azure-app-service-menu-options.png)
+1. Wybierz pozycję **Zakończ**. Zasoby są tworzone na platformie Azure, aplikacja zostanie wdrożona, a karta **Publikowanie** zostanie wypełniona informacjami o właśnie utworzonych elementach. Karta **Publikowanie** zawiera przycisk umożliwiający opublikowanie jednego kliknięcia z taką samą konfiguracją, wyświetlenie szczegółów konfiguracji lub dodanie usług, takich jak baza danych.
+
+Teraz Dodaj bazę danych usługi Azure SQL Server.
+
+1. Na karcie **Publikowanie** w obszarze **zależności usługi**obok pozycji **SQL Server baza danych**wybierz pozycję **Konfiguruj**.
+
+1. Na następnym ekranie wybierz **Azure SQL Database**.
+
+   ![Zrzut ekranu przedstawiający ekran Azure SQL Database](media/vs-2019/app-service-azure-sql-db.png)
+
+1. Na ekranie **konfigurowanie SQL Database** wybierz pozycję **Utwórz SQL Database**.
+
+   ![Zrzut ekranu przedstawiający ekran Konfigurowanie SQL Database](media/vs-2019/app-service-azure-sql-db-2.png)
+
+1. Na **Azure SQL Database: Utwórz nowy** ekran Utwórz nowy serwer bazy danych.
+
+   ![Zrzut ekranu Azure SQL Database: Utwórz nowy](media/vs-2019/app-service-azure-sql-db-3.png)
+
+1. Na **SQL Server: Utwórz nowy** ekran, wybierz nazwę i lokalizację, a następnie określ nazwa użytkownika i hasło administratora.
+
+   ![Tworzenie SQL Server platformy Azure w programie Visual Studio 2019](media/vs-2019/app-service-azure-sql-db-overlayed.png)
+
+## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>Eksplorowanie Azure Portal i hostowanej aplikacji
+
+Po utworzeniu usługi App Service witryna zostanie uruchomiona w przeglądarce. Podczas ładowania można również znaleźć App Service w Azure Portal. Eksplorowanie dostępnych opcji usługi App Service znajdziesz w sekcji **Omówienie** , w której można uruchomić i zatrzymać aplikację.
+
+![Opcje Azure App Service](media/vs-2019/vs2019-azure-app-service-menu-options.png)
 
 ### <a name="scalability"></a>Skalowalność
 
-Można zbadać opcje skalowania aplikacji w górę, jak również na zewnątrz. Skalowanie w górę odnosi się do zwiększenia zasobów podanych do każdego wystąpienia hosting aplikacji. Skalowanie w poziomie odnosi się do zwiększenia liczby wystąpień hostujących aplikację. Można skonfigurować skalowanie automatyczne dla aplikacji, co automatycznie zwiększy liczbę wystąpień używanych do hosta aplikacji w odpowiedzi na obciążenie, a następnie zmniejszyć je po zmniejszeniu obciążenia.
+Możesz sprawdzić, czy są dostępne opcje skalowania aplikacji. Skalowanie w górę dotyczy zwiększenia zasobów przyznanych każdemu wystąpieniu, które obsługuje aplikację. Skalowanie w górę dotyczy zwiększenia liczby wystąpień obsługujących aplikację. Możesz skonfigurować Skalowanie automatyczne dla swojej aplikacji, która automatycznie zwiększy liczbę wystąpień używanych do hostowania aplikacji w odpowiedzi na załadowanie, a następnie obniży je po zmniejszeniu obciążenia.
 
-### <a name="security-and-compliance"></a>Bezpieczeństwo i zgodność
+### <a name="security-and-compliance"></a>Zabezpieczenia i zgodność
 
-Kolejną zaletą hostowania naszej aplikacji przy użyciu platformy Azure jest bezpieczeństwo i zgodność. Usługa Azure App Service zapewnia zgodność z zasadami ISO, SOC i PCI. Możemy wybrać uwierzytelnienie użytkowników za pomocą usługi Azure Active Directory lub loginów społecznościowych, takich jak Twitter, Facebook, Google lub Microsoft. Możemy tworzyć ograniczenia adresów IP, zarządzać tożsamościami usług, dodawać domeny niestandardowe i obsługiwać protokół SSL dla aplikacji, a także konfigurować kopie zapasowe za pomocą kopii archiwalnych, które można przywrócić, że zawartość, konfiguracja i baza danych aplikacji można je przywrócić. Te funkcje są dostępne w opcjach menu Uwierzytelnianie / Autoryzacja, Tożsamość, kopie zapasowe i Ustawienia SSL.
+Kolejną zaletą hostingu aplikacji przy użyciu platformy Azure jest bezpieczeństwo i zgodność. Azure App Service zapewnia zgodność ze standardami ISO, SOC i PCI. Możemy zdecydować się na uwierzytelnianie użytkowników przy użyciu Azure Active Directory lub takich logowań, jak Twitter, Facebook, Google lub Microsoft. Możemy tworzyć ograniczenia adresów IP, zarządzać tożsamościami usług, dodawać domeny niestandardowe i obsługiwać protokół SSL dla aplikacji, a także konfigurować kopie zapasowe za pomocą dostępnych archiwum kopii zawartości, konfiguracji i bazy danych aplikacji. Te funkcje są dostępne w opcjach uwierzytelnianie/autoryzacja, tożsamość, kopie zapasowe i ustawienia protokołu SSL.
 
 ### <a name="deployment-slots"></a>Miejsca wdrożenia
 
-Często podczas wdrażania aplikacji, istnieje niewielki okres przestojów podczas ponownego uruchamiania aplikacji. Gniazda wdrażania uniknąć tego problemu, umożliwiając wdrożenie do oddzielnego wystąpienia przemieszczania lub zestaw wystąpień i ogrzać je przed zamianą ich do środowiska produkcyjnego. Zamiana jest tylko natychmiastowe i bezproblemowe przekierowanie ruchu. Jeśli istnieją jakiekolwiek problemy w produkcji po zamianie, zawsze można zamienić z powrotem do ostatniego znanego stanu produkcji dobrego.
+Często podczas wdrażania aplikacji istnieje niewielki okres przestoju podczas ponownego uruchamiania aplikacji. Miejsca wdrożenia uniknięcie tego problemu można wdrożyć w osobnym wystąpieniu przejściowym lub w zestawie wystąpień i rozgrzać przed zainstalowaniem ich w środowisku produkcyjnym. Wymiana jest tylko natychmiastowym i bezproblemowym przekierowaniem ruchu. W przypadku wystąpienia problemów w środowisku produkcyjnym po wymianie można zawsze wrócić do ostatniego znanego dobrego stanu produkcji.
 
-## <a name="update-connection-string"></a>Aktualizowanie ciągu połączenia
+## <a name="update-connection-string"></a>Zaktualizuj parametry połączenia
 
-Domyślnie platforma Azure oczekuje, że połączenie nowej aplikacji z nową bazą danych programu SQL Server będzie używać ciągu połączenia o nazwie `DefaultConnection`. Obecnie aplikacja, którą utworzyliśmy wcześniej w tej `AppDbContext`serii samouczków używa ciągu połączenia o nazwie . Musimy to zmienić w *appsettings.json* i *Startup.cs* a następnie ponownie wdrożyć aplikację.
+Domyślnie platforma Azure oczekuje połączenia nowej aplikacji z nową bazą danych SQL Server, aby używać parametrów połączenia o nazwie `DefaultConnection` . Obecnie aplikacja utworzona wcześniej w tej serii samouczków używa parametrów połączenia o nazwie `AppDbContext` . Musimy zmienić tę wartość w *appsettings.jsna* i *Startup.cs* , a następnie ponownie wdrożyć aplikację.
 
-## <a name="test-the-app-running-in-azure"></a>Testowanie aplikacji uruchomionej na platformie Azure
+## <a name="test-the-app-running-in-azure"></a>Testowanie aplikacji działającej na platformie Azure
 
-Przejdź do ścieżki */Games* i powinieneś być w stanie dodać nową grę i zobaczyć ją na liście. Następnie przejdź do *ścieżki /swagger* i powinieneś być w stanie użyć punktów końcowych interfejsu API sieci web stamtąd, aby potwierdzić, że interfejs API aplikacji działa również.
+Przejdź do ścieżki */Games* , aby móc dodać nową grę i zobaczyć ją na liście. Następnie przejdź do ścieżki */Swagger* i z tego miejsca powinna być możliwe użycie punktów końcowych internetowego interfejsu API, aby upewnić się, że interfejs API aplikacji również działa.
 
-Gratulacje! Ukończyłeś tę serię samouczków wideo!
+Gratulacje! Ta seria filmów wideo została ukończona.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się więcej o tym, jak projektować ASP.NET aplikacje Core za pomocą tych bezpłatnych zasobów.
+Dowiedz się więcej o tym, jak architektować ASP.NET Core aplikacje za pomocą tych bezpłatnych zasobów.
 
-[ASP.NET architektura aplikacji podstawowych](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
+[Architektura aplikacji ASP.NET Core](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Publikowanie aplikacji ASP.NET Core na platformie Azure za pomocą programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)
+- [Publikowanie aplikacji ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)

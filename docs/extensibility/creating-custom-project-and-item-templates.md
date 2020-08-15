@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c702aaaa51d86e2b8aac18a6b55201be03a635f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903325"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248579"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Tworzenie niestandardowych szablonów projektów i elementów
 
@@ -72,9 +72,9 @@ W przypadku scenariuszy tworzenia szablonu podstawowego należy użyć kreatora 
 
 1. Utwórz projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablon projektu VSIX](../extensibility/vsix-project-template.md).
 
-2. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
+2. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX, wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy), a następnie wybierz pozycję **Ustaw jako projekt startowy**.
 
-3. Ustaw projekt szablonu projektu jako element zawartości projektu VSIX. Otwórz plik *. vsixmanifest* . Przejdź do karty **składniki** i kliknij pozycję **Nowy**.
+3. Ustaw projekt szablonu projektu jako element zawartości projektu VSIX. Otwórz plik *. vsixmanifest* . Przejdź do karty **składniki** i wybierz pozycję **Nowy**.
 
     1. Ustaw wartość pola **Typ** na **Microsoft. VisualStudio. ProjectTemplate** lub **Microsoft. VisualStudio. ItemTemplate**.
 
@@ -82,7 +82,7 @@ W przypadku scenariuszy tworzenia szablonu podstawowego należy użyć kreatora 
 
 4. Skompiluj rozwiązanie i naciśnij klawisz **F5**. Zostanie wyświetlone wystąpienie eksperymentalne.
 
-5. W przypadku projektu szablonu projektu powinien zostać wyświetlony szablon projektu w oknie dialogowym **Nowy projekt** (**plik**  >  **Nowy**  >  **projekt**) w węźle Visual C# lub Visual Basic. Dla projektu szablonu elementu powinien zostać wyświetlony szablon elementu na liście w oknie dialogowym **Dodaj nowy element** . Aby wyświetlić okno dialogowe **Dodawanie nowego elementu** , w **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie kliknij przycisk **Dodaj**  >  **nowy element**).
+5. W przypadku projektu szablonu projektu powinien zostać wyświetlony szablon projektu w oknie dialogowym **Nowy projekt** (**plik**  >  **Nowy**  >  **projekt**) w węźle Visual C# lub Visual Basic. Dla projektu szablonu elementu powinien zostać wyświetlony szablon elementu na liście w oknie dialogowym **Dodaj nowy element** . Aby wyświetlić okno dialogowe **Dodawanie nowego elementu** , w **Eksplorator rozwiązań**wybierz węzeł projektu i wybierz pozycję **Dodaj**  >  **nowy element**).
 
 ## <a name="see-also"></a>Zobacz też
 
