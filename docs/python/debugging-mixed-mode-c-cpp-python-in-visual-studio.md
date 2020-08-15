@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 953ff26a6094a9de9dcf974d5e4cb5a02aaa503f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533565"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238663"
 ---
 # <a name="debug-python-and-c-together"></a>Debugowanie kodu Python i języka C++
 
@@ -36,9 +36,8 @@ Funkcje debugowania w trybie mieszanym obejmują następujące elementy, jak wyj
 
 ![Debugowanie w trybie mieszanym dla języka Python w programie Visual Studio](media/mixed-mode-debugging.png)
 
-|   |   |
-|---|---|
-| ![ikona aparatu filmu wideo](../install/media/video-icon.png "Obejrzyj film") | Aby zapoznać się z wprowadzeniem do kompilowania, testowania i debugowania natywnych modułów C przy użyciu programu Visual Studio, zobacz [głębokie szczegółowe: Create Native modules](https://youtu.be/D9RlT06a1EI) (YouTube.com, 9 m 09s). Film wideo ma zastosowanie zarówno do programu Visual Studio 2015, jak i 2017. |
+![ikona aparatu filmu wideo](../install/media/video-icon.png "Obejrzyj film") Aby zapoznać się z wprowadzeniem do kompilowania, testowania i debugowania natywnych modułów C przy użyciu programu Visual Studio, zobacz [głębokie szczegółowe: Create Native modules](https://youtu.be/D9RlT06a1EI) (YouTube.com, 9 m 09s). Film wideo ma zastosowanie zarówno do programu Visual Studio 2015, jak i 2017.
+
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Włączanie debugowania w trybie mieszanym w projekcie języka Python
 

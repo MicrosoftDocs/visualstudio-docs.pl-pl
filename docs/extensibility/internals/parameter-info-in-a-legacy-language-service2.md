@@ -1,5 +1,5 @@
 ---
-title: Informacje o parametrach w starszej usłudze językowej2 | Dokumenty firmy Microsoft
+title: Informacje o parametrach w starszej wersji językowej Językowej2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2c40c9ca5c038a70714545f4133db0c0dd686d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80706748"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237961"
 ---
-# <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
-IntelliSense Parameter Info to etykietka narzędzia, która wyświetla podpis metody, gdy użytkownik wpisuje znak początkowy listy parametrów (zazwyczaj otwarty nawias) dla listy parametrów metody. Po wprowadzeniu każdego parametru i wpisaniu separatora parametrów (zazwyczaj przecinka) etykietka narzędzia jest aktualizowana w celu wyświetlenia następnego parametru pogrubioną czcionką.
+# <a name="parameter-info-in-a-legacy-language-service-2"></a>Informacje o parametrach w starszej wersji usługi językowej 2
+Informacje o parametrach IntelliSense to etykietka narzędzia, która wyświetla podpis metody, gdy użytkownik wpisze znak początkowy listy parametrów (zwykle jest to otwarty nawias) dla listy parametrów metody. Gdy jest wprowadzany każdy parametr, a separator parametru (zwykle przecinek) jest wpisywany, etykietka narzędzia jest aktualizowana, aby pokazać następny parametr pogrubioną czcionką.
 
- Klasy frameworkum zarządzanego pakietu (MPF) zapewniają obsługę zarządzania etykietką narzędzia Informacje o parametrach. Analizator parser musi wykryć znaki początkowe parametrów, parametrów i końcowych parametrów i musi dostarczyć listę podpisów metody i skojarzonych z nimi parametrów.
+ Klasy struktury zarządzanego pakietu (MPF) zapewniają obsługę zarządzania etykietami narzędzi informacji o parametrach. Parser musi wykryć parametry Start, Next i End parametrów, a następnie musi podać listę sygnatur metod i ich skojarzonych parametrów.
 
- Starsze usługi języka są implementowane jako część VSPackage, ale nowszym sposobem implementowania funkcji usługi języka jest użycie rozszerzeń MEF. Aby dowiedzieć się więcej, zobacz [Rozszerzanie edytora i usług językowych](../../extensibility/extending-the-editor-and-language-services.md).
-
-> [!NOTE]
-> Zaleca się, aby rozpocząć korzystanie z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i umożliwi korzystanie z nowych funkcji edytora.
-
-## <a name="implementation"></a>Wdrażanie
- Analizator parser należy <xref:Microsoft.VisualStudio.Package.TokenTriggers> ustawić wartość wyzwalacza jest ustawiona, gdy znajdzie znak początkowy listy parametrów (często otwarty nawias). Należy ustawić <xref:Microsoft.VisualStudio.Package.TokenTriggers> wyzwalacz, gdy znajdzie separator parametrów (często przecinek). Powoduje to, że etykietka narzędzia Informacje o parametrach ma być aktualizowana i wyświetla następny parametr pogrubioną czcionką. Analizator parser należy <xref:Microsoft.VisualStudio.Package.TokenTriggers> ustawić wartość wyzwalacza, gdy znajdzie znak końcowy listy parametrów (często zamknij nawias).
-
- Wartość <xref:Microsoft.VisualStudio.Package.TokenTriggers> wyzwalacza inicjuje <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> wywołanie metody, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> która z kolei wywołuje analizator <xref:Microsoft.VisualStudio.Package.ParseReason>metody z powodu analizy . Jeśli analizator stwierdzi, że identyfikator przed znakiem rozpoczęcia listy parametrów jest rozpoznawaną nazwą metody, <xref:Microsoft.VisualStudio.Package.AuthoringScope> zwraca listę pasujących podpisów metod w obiekcie. Jeśli znaleziono podpisy jakiejkolwiek metody, etykietka narzędzia Informacje o parametrach jest wyświetlana z pierwszym podpisem na liście. Ta etykietka narzędzia jest następnie aktualizowana w miarę wpisywania większej liczby podpisów. Po wpisaniu znaku końcowego listy parametrów etykietka narzędzia Informacje o parametrach jest usuwana z widoku.
+ Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie edytora i usług językowych](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Aby upewnić się, że etykietka narzędzia Informacje o parametrach jest <xref:Microsoft.VisualStudio.Package.Methods> poprawnie sformatowana, należy zastąpić właściwości klasy, aby podać odpowiednie znaki. Klasa <xref:Microsoft.VisualStudio.Package.Methods> podstawowa przyjmuje podpis metody w stylu C#. Zobacz <xref:Microsoft.VisualStudio.Package.Methods> klasy szczegółowe informacje na temat tego, jak można to zrobić.
+> Zalecamy rozpoczęcie korzystania z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i pozwala korzystać z nowych funkcji edytora.
+
+## <a name="implementation"></a>Implementacja
+ Analizator powinien ustawić wartość wyzwalacza, <xref:Microsoft.VisualStudio.Package.TokenTriggers> gdy odnajdzie znak początkowy listy parametrów (często otwarty nawias). Należy ustawić <xref:Microsoft.VisualStudio.Package.TokenTriggers> wyzwalacz po znalezieniu separatora parametrów (często przecinkiem). Spowoduje to zaktualizowanie etykietki narzędzia informacji o parametrach i pokazywanie następnego parametru pogrubioną czcionką. Analizator powinien ustawić wartość wyzwalacza, <xref:Microsoft.VisualStudio.Package.TokenTriggers> gdy odnajdzie znak końcowy listy parametrów (często nawias zamykający).
+
+ <xref:Microsoft.VisualStudio.Package.TokenTriggers>Wartość wyzwalacza inicjuje wywołanie <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> metody, która z kolei wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> parser metody z przyczyną analizy <xref:Microsoft.VisualStudio.Package.ParseReason> . Jeśli analizator określi, że identyfikator przed znakiem początkowym listy parametrów jest rozpoznawaną nazwą metody, zwraca listę zgodnych sygnatur metod w <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiekcie. Jeśli zostaną znalezione jakiekolwiek sygnatury metod, etykietka narzędzia informacji o parametrach jest wyświetlana z pierwszym podpisem na liście. Ta etykietka narzędzia jest następnie aktualizowana w miarę wpisywania większej liczby sygnatur. Po wpisaniu znaku końcowego listy parametrów, etykietka narzędzia informacje o parametrach jest usuwana z widoku.
+
+> [!NOTE]
+> Aby upewnić się, że etykietka narzędzia informacje o parametrach jest poprawnie sformatowana, należy zastąpić właściwości w <xref:Microsoft.VisualStudio.Package.Methods> klasie, aby podać odpowiednie znaki. Klasa bazowa <xref:Microsoft.VisualStudio.Package.Methods> przyjmuje sygnaturę metody w stylu C#. Zapoznaj się z <xref:Microsoft.VisualStudio.Package.Methods> klasą, aby uzyskać szczegółowe informacje na temat tego, jak to zrobić.
 
 ## <a name="enabling-support-for-the-parameter-info"></a>Włączanie obsługi informacji o parametrach
- Aby obsługiwać etykietki narzędzi Informacje `ShowCompletion` o parametrach, należy ustawić nazwany parametr <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> na `true`. Usługa języka odczytuje wartość tego wpisu rejestru z <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> właściwości.
+ Aby można było obsługiwać etykietki narzędzi informacji o parametrach, należy ustawić `ShowCompletion` parametr nazwany elementu <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> na `true` . Usługa języka odczytuje wartość tego wpisu rejestru z <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> właściwości.
 
- Ponadto <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> właściwość musi być `true` ustawiona na dla etykietki narzędzia Informacje o parametrach, które mają być wyświetlane.
+ Ponadto <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> Właściwość musi być ustawiona na wartość `true` dla etykietki narzędzia informacje o parametrach, która ma być wyświetlana.
 
 ### <a name="example"></a>Przykład
- Oto uproszczony przykład wykrywania znaków listy parametrów i ustawiania odpowiednich wyzwalaczy. Ten przykład służy wyłącznie do celów ilustracyjnych. Przyjęto założenie, że skaner `GetNextToken` zawiera metodę, która identyfikuje i zwraca tokeny z wiersza tekstu. Przykładowy kod po prostu ustawia wyzwalacze, gdy widzi odpowiedni rodzaj znaku.
+ Poniżej przedstawiono uproszczony przykład wykrywania znaków listy parametrów i ustawiania odpowiednich wyzwalaczy. Ten przykład służy tylko do celów informacyjnych. Przyjęto założenie, że skaner zawiera metodę `GetNextToken` , która identyfikuje i zwraca tokeny z wiersza tekstu. Przykładowy kod po prostu ustawia wyzwalacze za każdym razem, gdy widzi właściwy rodzaj znaku.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -91,17 +91,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Obsługa etykietki narzędzia Informacje o parametrach w analizatorze
- Klasa <xref:Microsoft.VisualStudio.Package.Source> sprawia, że niektóre założenia <xref:Microsoft.VisualStudio.Package.AuthoringScope> dotyczące <xref:Microsoft.VisualStudio.Package.AuthoringSink> zawartości i klas, gdy etykietka narzędzia Informacje o parametrach jest wyświetlany i aktualizowany.
+## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Obsługa etykietki narzędzia informacji o parametrach w analizatorze
+ <xref:Microsoft.VisualStudio.Package.Source>Klasa przyjmuje pewne założenia dotyczące zawartości <xref:Microsoft.VisualStudio.Package.AuthoringScope> klas i, <xref:Microsoft.VisualStudio.Package.AuthoringSink> gdy zostanie wyświetlona i zaktualizowana etykietka narzędzia informacji o parametrach.
 
-- Analizator jest podawany <xref:Microsoft.VisualStudio.Package.ParseReason> po wpisaniu znaku początkowego listy parametrów.
+- Analizator jest podawany, <xref:Microsoft.VisualStudio.Package.ParseReason> gdy wpisano znak początkowy listy parametrów.
 
-- Lokalizacja podana <xref:Microsoft.VisualStudio.Package.ParseRequest> w obiekcie jest natychmiast po znaku początkowego listy parametrów. Analizator parser musi zbierać podpisy wszystkich deklaracji metody dostępnych w tej pozycji <xref:Microsoft.VisualStudio.Package.AuthoringScope> i przechowywać je na liście w wersji obiektu. Ta lista zawiera nazwę metody, typ metody (lub typ zwracany) oraz listę możliwych parametrów. Ta lista jest później wyszukiwana pod kątem podpisu metody lub podpisów do wyświetlenia w etykietce narzędzia Informacje o parametrach.
+- Lokalizacja określona w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekcie jest natychmiast po znaku początkowego listy parametrów. Analizator musi zbierać sygnatury wszystkich deklaracji metod dostępnych w tym położeniu i przechowywać je na liście w używanej wersji <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu. Ta lista zawiera nazwę metody, typ metody (lub zwracany typ) oraz listę możliwych parametrów. Ta lista jest później przeszukiwana sygnatury metody lub podpisy do wyświetlenia w etykietce narzędzia informacji o parametrach.
 
-  Analizator musi następnie przeanalizować wiersz określony <xref:Microsoft.VisualStudio.Package.ParseRequest> przez obiekt, aby zebrać nazwę wprowadzonej metody, a także jak daleko wzdłuż użytkownika jest w parametrach wpisywania. Jest to realizowane przez przekazanie nazwy metody <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> do <xref:Microsoft.VisualStudio.Package.AuthoringSink> metody na obiekcie, a następnie wywołanie <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> metody, gdy <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> znak początkowy listy parametrów jest analizowany, wywołując <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> metodę, gdy lista parametrów następny znak jest analizowany, a na koniec wywołanie metody, gdy znak końcowy listy parametrów jest analizowany. Wyniki tych wywołań metody są <xref:Microsoft.VisualStudio.Package.Source> używane przez klasę, aby odpowiednio zaktualizować etykietkę narzędzia Informacje o parametrach.
+  Analizator musi następnie przeanalizować wiersz określony przez <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt, aby zebrać nazwę wprowadzonej metody, a także czas, w jakim użytkownik jest w trakcie wpisywania parametrów. W tym celu należy przekazać nazwę metody do <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> metody na <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiekcie, a następnie wywołać <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> metodę, gdy zostanie przeanalizowany znak początkowy listy parametrów, wywołując metodę, gdy zostanie przeanalizowany <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> Następny znak listy parametrów, a następnie wywołując <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> metodę, gdy zostanie przeanalizowany znak końcowy listy parametrów. Wyniki tych wywołań metod są używane przez <xref:Microsoft.VisualStudio.Package.Source> klasę do odpowiedniej aktualizacji etykietki narzędzia informacji o parametrach.
 
 ### <a name="example"></a>Przykład
- Oto wiersz tekstu, który użytkownik może wprowadzić. Liczby poniżej wiersza wskazują, który krok jest podejmowany przez analizator w tej pozycji w wierszu (przy założeniu, że analizowanie przesuwa się od lewej do prawej). Założenie jest takie, że wszystko, zanim wiersz został już przeanalizowany dla podpisów metody, w tym podpis metody "testfunc".
+ Oto wiersz tekstu, który użytkownik może wprowadzić. Liczby poniżej wiersza wskazują, który krok jest wykonywany przez analizator w tej pozycji w wierszu (przy założeniu, że analiza przesuwa się od lewej do prawej). W tym miejscu założono, że wszystko przed wierszem jest już analizowane dla sygnatur metod, w tym sygnatury metody "testfunc".
 
 ```
 testfunc("a string",3);
@@ -109,12 +109,12 @@ testfunc("a string",3);
      12          3 4
 ```
 
- Kroki, które wykonuje analizator są opisane poniżej:
+ Poniżej przedstawiono kroki, które wykonuje analizator składni:
 
-1. Parser wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> z tekstem "testfunc".
+1. Analizator wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> z tekstem "testfunc".
 
-2. Parser wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
+2. Parser wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> .
 
-3. Parser wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
+3. Parser wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> .
 
-4. Parser wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4. Parser wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> .

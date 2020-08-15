@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184058"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238611"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Uzyskiwanie dzienników kompilacji przy użyciu programu MSBuild
 
@@ -47,9 +47,9 @@ msbuild MyProject.proj -t:go -v:diag
 
 W poniższej tabeli przedstawiono, w jaki sposób poziom szczegółowości dziennika (wartości kolumn) ma wpływ na to, które typy komunikatów (wartości wierszy) są rejestrowane.
 
-|                                       | Quiet | Minimalny | Normalne | szczegółowo | Diagnostyce |
+| Typ komunikatu/poziom szczegółowości              | Quiet | Minimalny | Normalne | szczegółowo | Diagnostyka |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
-| Errors                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| błędy                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Ostrzeżenia                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Komunikaty o wysokiej ważności              |       |    ✅    |    ✅   |     ✅    |      ✅     |
 | Komunikaty o normalnej ważności           |       |         |    ✅   |     ✅    |      ✅     |
@@ -102,10 +102,10 @@ Aby uzyskać więcej informacji, zobacz informacje [dotyczące wiersza polecenia
 
  W wierszu polecenia programu MSBuild należy określić rejestratora niestandardowego przy użyciu przełącznika **-rejestratora** . Aby wyłączyć domyślny rejestratora konsoli, można również użyć przełącznika **-noconsolelogger** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [Rejestratory kompilacji](../msbuild/build-loggers.md)
 - [Rejestrowanie w środowisku wieloprocesorowym](../msbuild/logging-in-a-multi-processor-environment.md)
-- [Tworzenie rejestratorów przekazywania](../msbuild/creating-forwarding-loggers.md)
+- [Tworzenie rejestratorów przekazujących](../msbuild/creating-forwarding-loggers.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

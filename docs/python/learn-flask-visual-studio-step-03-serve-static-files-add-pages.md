@@ -1,7 +1,7 @@
 ---
-title: Dowiedz się samouczek Flask w programie Visual Studio krok 3, pliki statyczne i strony
+title: Samouczek dotyczący kolby w programie Visual Studio krok 3, pliki statyczne i strony
 titleSuffix: ''
-description: Przewodnik po podstawach flask w kontekście projektów programu Visual Studio, w szczególności pokazując, jak obsługiwać pliki statyczne, dodawać strony do aplikacji i używać dziedziczenia szablonów
+description: Przewodnik dotyczący części kolb w kontekście projektów programu Visual Studio, w tym szczegółowe informacje o sposobie obsługi plików statycznych, dodawaniu stron do aplikacji i używania dziedziczenia szablonów
 ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -11,58 +11,58 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72985185"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238745"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i używanie dziedziczenia szablonów
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Krok 3. Korzystanie z plików statycznych, dodawanie stron i dziedziczenie szablonów przy użyciu aplikacji do kolby
 
-**Poprzedni krok: [Tworzenie aplikacji Flask z widokami i szablonami stron](learn-flask-visual-studio-step-02-create-app.md)**
+**Poprzedni krok: [Tworzenie aplikacji do kolby z widokami i szablonami stron](learn-flask-visual-studio-step-02-create-app.md)**
 
-W poprzednich krokach tego samouczka dowiesz się, jak utworzyć minimalną aplikację Flask z pojedynczą stroną samodzielnego kodu HTML. Nowoczesne aplikacje internetowe składają się jednak zazwyczaj z wielu stron i korzystają z zasobów udostępnionych, takich jak pliki CSS i JavaScript, aby zapewnić spójne stylizacje i zachowanie.
+W poprzednich krokach tego samouczka wiesz już, jak utworzyć aplikację minimalnej kolby za pomocą pojedynczej strony z niezależnym kodem HTML. Nowoczesne aplikacje sieci Web, jednak zwykle składają się z wielu stron i używają zasobów udostępnionych, takich jak pliki CSS i JavaScript, do zapewnienia spójnego stylu i zachowania.
 
 W tym kroku dowiesz się, jak:
 
 > [!div class="checklist"]
-> - Za pomocą szablonów elementów programu Visual Studio można szybko dodawać nowe pliki różnych typów za pomocą wygodnego kodu standardowego (krok 3-1)
-> - Obsługa plików statycznych z kodu (krok 3-2, opcjonalnie)
+> - Użyj szablonów elementów programu Visual Studio, aby szybko dodawać nowe pliki różnych typów przy użyciu wygodnego kodu standardowego (krok 3-1)
+> - Obsługuj pliki statyczne z kodu (krok 3-2, opcjonalnie)
 > - Dodawanie dodatkowych stron do aplikacji (krok 3-3)
-> - Tworzenie nagłówka i paska nawigacyjnych używanego na różnych stronach za pomocą dziedziczenia szablonów
+> - Użyj dziedziczenia szablonów, aby utworzyć nagłówek i pasek nawigacyjny, który jest używany na stronach (krok 3-4)
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 3-1: Zapoznaj się z szablonami przedmiotów
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 3-1: Zapoznaj się z szablonami elementów
 
-Podczas tworzenia aplikacji Flask zazwyczaj dodajesz o wiele więcej plików Python, HTML, CSS i JavaScript. Dla każdego typu pliku (a także innych plików, takich jak *web.config,* które mogą być potrzebne do wdrożenia), visual studio zapewnia wygodne [szablony elementów,](python-item-templates.md) aby rozpocząć.
+Podczas tworzenia aplikacji do kolby zazwyczaj dodawane są pliki języka Python, HTML, CSS i JavaScript. Dla każdego typu pliku (a także innych plików, takich jak *web.config* , które mogą być potrzebne do wdrożenia), program Visual Studio udostępnia wygodne [Szablony elementów](python-item-templates.md) umożliwiające rozpoczęcie pracy.
 
-Aby wyświetlić dostępne szablony, przejdź do **Programu Solution Explorer**, kliknij prawym przyciskiem myszy folder, w którym chcesz utworzyć element, wybierz pozycję **Dodaj** > **nowy element:**
+Aby wyświetlić dostępne szablony, przejdź do **Eksplorator rozwiązań**, kliknij prawym przyciskiem myszy folder, w którym chcesz utworzyć element, wybierz pozycję **Dodaj**  >  **nowy element**:
 
-![Dodawanie nowego okna dialogowego elementu w programie Visual Studio](media/flask/step03-add-new-item-dialog.png)
+![Okno dialogowe Dodawanie nowego elementu w programie Visual Studio](media/flask/step03-add-new-item-dialog.png)
 
-Aby użyć szablonu, wybierz żądany szablon, określ nazwę pliku i wybierz **przycisk OK**. Dodawanie elementu w ten sposób automatycznie dodaje plik do projektu programu Visual Studio i oznacza zmiany dla kontroli źródła.
+Aby użyć szablonu, wybierz odpowiedni szablon, określ nazwę pliku, a następnie wybierz **przycisk OK**. Dodanie elementu w ten sposób powoduje automatyczne dodanie pliku do projektu programu Visual Studio i oznaczenie zmian w kontroli źródła.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pytanie: Skąd program Visual Studio wie, które szablony elementów do zaoferowania?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pytanie: w jaki sposób program Visual Studio wie, które szablony elementów mają być oferowane?
 
-Odpowiedź: Plik projektu programu Visual Studio (*.pyproj*) zawiera identyfikator typu projektu, który oznacza go jako projekt języka Python. Visual Studio używa tego identyfikatora typu, aby wyświetlić tylko te szablony elementów, które są odpowiednie dla typu projektu. W ten sposób visual studio może dostarczyć bogaty zestaw szablonów elementów dla wielu typów projektów bez pytania, aby sortować je za każdym razem.
+Odpowiedź: plik projektu programu Visual Studio (*. pyproj*) zawiera identyfikator typu projektu, który oznacza go jako projekt języka Python. Program Visual Studio używa tego identyfikatora typu do wyświetlania tylko szablonów elementów, które są odpowiednie dla typu projektu. Dzięki temu program Visual Studio może dostarczyć bogaty zestaw szablonów elementów dla wielu typów projektów bez monitowania o sortowanie za każdym razem.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3-2: Obsługa plików statycznych z aplikacji
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3-2: obchodzenie plików statycznych z aplikacji
 
-W aplikacji internetowej utworzonej za pomocą języka Python (przy użyciu dowolnej struktury) pliki Języka Python są zawsze uruchamiane na serwerze hosta internetowego i nigdy nie są przesyłane do komputera użytkownika. Inne pliki, takie jak CSS i JavaScript, są używane wyłącznie przez przeglądarkę, więc serwer hosta po prostu dostarcza je w stanie takim, w jakim są wymagane. Takie pliki są określane jako "statyczne" pliki, a Flask może dostarczyć je automatycznie bez konieczności pisania kodu. W plikach HTML, na przykład, można po prostu odwołać się do plików statycznych przy użyciu ścieżki względnej w projekcie. Pierwsza sekcja w tym kroku dodaje plik CSS do istniejącego szablonu strony.
+W aplikacji sieci Web skompilowanej za pomocą języka Python (przy użyciu dowolnej platformy) pliki języka Python są zawsze uruchamiane na serwerze hosta sieci Web i nigdy nie są przesyłane do komputera użytkownika. Inne pliki, takie jak CSS i JavaScript, są używane wyłącznie przez przeglądarkę, więc serwer hosta po prostu dostarcza je w miarę ich żądania. Takie pliki są określane jako pliki "static", a kolby mogą być dostarczane automatycznie bez konieczności pisania kodu. Na przykład w plikach HTML można odwoływać się tylko do plików statycznych przy użyciu ścieżki względnej w projekcie. Pierwsza sekcja w tym kroku dodaje plik CSS do istniejącego szablonu strony.
 
-Gdy trzeba dostarczyć plik statyczny z kodu, takich jak za pośrednictwem implementacji punktu końcowego interfejsu API, Flask zapewnia wygodną metodę, która pozwala odwoływać się do plików przy użyciu ścieżek względnych w folderze o nazwie *statyczne* (w katalogu głównym projektu). Druga sekcja w tym kroku pokazuje tę metodę przy użyciu prostego statycznego pliku danych.
+Gdy konieczne jest dostarczenie pliku statycznego z kodu, na przykład przez implementację punktu końcowego interfejsu API, kolba zapewnia wygodną metodę, która umożliwia odwoływanie się do plików przy użyciu ścieżek względnych w folderze o nazwie *static* (w katalogu głównym projektu). Druga sekcja w tym kroku pokazuje, że metoda korzysta z prostego pliku danych statycznych.
 
-W obu przypadkach można organizować pliki w *stanie statycznym,* jak chcesz.
+W obu przypadkach można organizować pliki w sposób *statyczny* .
 
 ### <a name="use-a-static-file-in-a-template"></a>Używanie pliku statycznego w szablonie
 
-1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy folder **HelloFlask** w `static`projekcie programu Visual Studio, wybierz pozycję **Dodaj** > nowy**folder**i nazwij folder .
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **HelloFlask** w projekcie programu Visual Studio, wybierz polecenie **Dodaj**  >  **Nowy folder**i Nazwij folder `static` .
 
-1. Kliknij prawym przyciskiem myszy folder **statyczny** i wybierz polecenie **Dodaj** > **nowy element**. W wyświetlonym oknie dialogowym zaznacz szablon **arkusza stylów,** nazwij plik `site.css`i wybierz przycisk **OK**. Plik **site.css** pojawi się w projekcie i zostanie otwarty w edytorze. Struktura folderów powinna wyglądać podobnie do następującej ilustracji:
+1. Kliknij prawym przyciskiem myszy folder **statyczny** i wybierz polecenie **Dodaj**  >  **nowy element**. W wyświetlonym oknie dialogowym wybierz szablon **arkusza stylów** , Nazwij plik `site.css` , a następnie wybierz **przycisk OK**. Plik **site. css** zostanie wyświetlony w projekcie i otwarty w edytorze. Struktura folderów powinna wyglądać podobnie do poniższej ilustracji:
 
-    ![Statyczna struktura plików, jak pokazano w Eksploratorze rozwiązań](media/flask/step03-static-file-structure.png)
+    ![Struktura pliku statycznego, jak pokazano w Eksplorator rozwiązań](media/flask/step03-static-file-structure.png)
 
-1. Zastąp zawartość *witryny site.css* następującym kodem i zapisz plik:
+1. Zastąp zawartość pliku *site. css* następującym kodem i Zapisz plik:
 
     ```css
     .message {
@@ -71,7 +71,7 @@ W obu przypadkach można organizować pliki w *stanie statycznym,* jak chcesz.
     }
     ```
 
-1. Zastąp zawartość pliku *templates/index.html* aplikacji następującym kodem, który `<strong>` zastępuje element używany w `<span>` kroku 2, który odwołuje się do klasy `message` stylu. Korzystanie z klasy stylu w ten sposób zapewnia znacznie większą elastyczność w stylizacji elementu.
+1. Zastąp zawartość pliku *templates/index.html* aplikacji następującym kodem, który zastępuje `<strong>` element użyty w kroku 2, `<span>` który odwołuje się do `message` klasy style. Użycie klasy stylu w ten sposób zapewnia znacznie większą elastyczność w stylu elementu.
 
     ```html
     <html>
@@ -85,15 +85,15 @@ W obu przypadkach można organizować pliki w *stanie statycznym,* jak chcesz.
     </html>
     ```
 
-1. Uruchom projekt, aby obserwować wyniki. Zatrzymaj aplikację po zakończeniu i zaobewaj zmiany do kontroli źródła, jeśli chcesz (jak wyjaśniono w [kroku 2](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)).
+1. Uruchom projekt, aby obserwować wyniki. Zatrzymaj aplikację po zakończeniu i zatwierdź zmiany w kontroli źródła, jeśli chcesz (zgodnie z opisem w [kroku 2](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)).
 
-### <a name="serve-a-static-file-from-code"></a>Obsługa pliku statycznego z kodu
+### <a name="serve-a-static-file-from-code"></a>Obsługiwanie pliku statycznego z kodu
 
-Flask zapewnia funkcję `serve_static_file` wywoływaną z kodu, aby odwołać się do dowolnego pliku w folderze *statycznym* projektu. Poniższy proces tworzy prosty punkt końcowy interfejsu API, który zwraca statyczny plik danych.
+Kolba zawiera funkcję o nazwie `serve_static_file` , którą można wywołać z kodu, aby odwołać się do dowolnego pliku w folderze *statycznym* projektu. Poniższy proces tworzy prosty punkt końcowy interfejsu API, który zwraca plik danych statycznych.
 
-1. Jeśli jeszcze tego nie zrobiono, utwórz folder *statyczny:* w **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy folder **HelloFlask** w projekcie programu Visual Studio, wybierz pozycję **Dodaj** > **nowy folder**i nazwij folder `static`.
+1. Jeśli jeszcze tego nie zrobiono, Utwórz folder *statyczny* : w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **HelloFlask** w projekcie programu Visual Studio, wybierz pozycję **Dodaj**  >  **Nowy folder**i nadaj nazwę folderowi `static` .
 
-1. W folderze *statycznym* utwórz statyczny plik danych JSON o nazwie *data.json* z następującą zawartością (które są bezsensownymi danymi próbki):
+1. W folderze *statycznym* Utwórz statyczny plik danych JSON o nazwie *data.jsprzy* użyciu następującej zawartości (które mają znaczenie przykładowe dane):
 
     ```json
     {
@@ -103,7 +103,7 @@ Flask zapewnia funkcję `serve_static_file` wywoływaną z kodu, aby odwołać s
     }
     ```
 
-1. W *views.py*, dodaj funkcję z marszrutą /api/data, która zwraca `send_static_file` statyczny plik danych przy użyciu metody:
+1. W *views.py*Dodaj funkcję z/API/Data trasy, która zwraca plik danych statycznych przy użyciu `send_static_file` metody:
 
     ```python
     @app.route('/api/data')
@@ -111,32 +111,32 @@ Flask zapewnia funkcję `serve_static_file` wywoływaną z kodu, aby odwołać s
       return app.send_static_file('data.json')
     ```
 
-1. Uruchom aplikację i przejdź do punktu końcowego /api/data, aby zobaczyć, że zwracany jest plik statyczny. Zatrzymaj aplikację po zakończeniu.
+1. Uruchom aplikację i przejdź do punktu końcowego/API/Data, aby zobaczyć, że plik statyczny jest zwracany. Zatrzymaj aplikację po zakończeniu.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pytanie: Czy istnieją jakieś konwencje organizowania plików statycznych?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pytanie: czy istnieją konwencje do organizowania plików statycznych?
 
-Odpowiedź: W folderze *statycznym* możesz dodawać inne pliki CSS, JavaScript i HTML. Typowym sposobem organizowania plików statycznych jest tworzenie podfolderów o nazwie *czcionki,* *skrypty*i *zawartość* (dla arkuszy stylów i innych plików).
+Odpowiedź: możesz jednak dodać inne pliki CSS, JavaScript i HTML do folderu *statycznego* . Typowym sposobem organizowania plików statycznych jest tworzenie podfolderów o nazwach *Fonts*, *scripts*i *Content* (dla arkuszy stylów i innych plików).
 
-### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pytanie: Jak obsługiwać zmienne adresu URL i parametry kwerend w interfejsie API?
+### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pytanie: Jak mogę obsługiwać zmienne adresów URL i parametrów zapytania w interfejsie API?
 
-Odpowiedź: Zobacz odpowiedź w kroku 1-4 na [pytanie: Jak flask działa ze zmiennymi trasami adresów URL i parametrami zapytania?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Odpowiedź: Zobacz odpowiedź w kroku 1-4 dla [pytania: jak działa Kolba z zmiennymi adresami URL i parametrami zapytania?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Krok 3-3: Dodawanie strony do aplikacji
 
-Dodanie kolejnej strony do aplikacji oznacza, że:
+Dodanie innej strony do aplikacji oznacza następujące kwestie:
 
-- Dodaj funkcję Języka Python, która definiuje widok.
-- Dodaj szablon znaczników strony.
-- Dodaj niezbędną routing do pliku *urls.py* projektu Flask.
+- Dodaj funkcję języka Python, która definiuje widok.
+- Dodaj szablon dla znacznika strony.
+- Dodaj wymagane Routing do pliku *URLs.py* projektu kolby.
 
-Następujące kroki dodają stronę "Informacje" do projektu "HelloFlask" i łącza do tej strony ze strony głównej:
+Poniższe kroki umożliwiają dodanie strony "informacje" do projektu "HelloFlask" i linków do tej strony ze strony głównej:
 
-1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy folder **szablonów,** wybierz `about.html`polecenie **Dodaj** > nowy**element,** zaznacz szablon elementu strony **HTML,** nazwij plik i wybierz przycisk **OK**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **Szablony** , wybierz polecenie **Dodaj**  >  **nowy element**, wybierz szablon elementu **strony HTML** , Nazwij plik `about.html` , a następnie wybierz **przycisk OK**.
 
     > [!Tip]
-    > Jeśli polecenie **Nowy element** nie jest wyświetlane w menu **Dodaj,** upewnij się, że aplikacja została zatrzymana, aby program Visual Studio zakończył działanie trybu debugowania.
+    > Jeśli polecenie **nowy element** nie pojawia się w menu **Dodaj** , upewnij się, że aplikacja została zatrzymana, aby program Visual Studio opuszcza tryb debugowania.
 
-1. Zastąp zawartość *about.html* następującym znacznikiem (łącze jawne do strony głównej zastępujesz prostym paskiem nawigacyjnym w kroku 3-4):
+1. Zastąp zawartość *about.html* następującym znacznikiem (w kroku 3-4 zostanie zastąpione łącze bezpośrednie do strony głównej z prostym paskiem nawigacyjnym):
 
     ```html
     <html>
@@ -151,7 +151,7 @@ Następujące kroki dodają stronę "Informacje" do projektu "HelloFlask" i łą
     </html>
     ```
 
-1. Otwórz plik *views.py* aplikacji i dodaj funkcję `about` o nazwie, która używa szablonu:
+1. Otwórz plik *views.py* aplikacji i Dodaj funkcję o nazwie `about` , która używa szablonu:
 
     ```python
     @app.route('/about')
@@ -162,37 +162,37 @@ Następujące kroki dodają stronę "Informacje" do projektu "HelloFlask" i łą
             content = "Example app page for Flask.")
     ```
 
-1. Otwórz plik *templates/index.html* i natychmiast dodaj następujący wiersz `<body>` w elemencie, aby utworzyć łącze do strony Informacje (ponownie zastąp to łącze paskiem nawigacyjnym w kroku 3-4):
+1. Otwórz plik *templates/index.html* i Dodaj następujący wiersz bezpośrednio w elemencie, `<body>` Aby połączyć się ze stroną informacje (ponownie, zastępując ten link paskiem nawigacyjnym w kroku 3-4):
 
     ```html
     <div><a href="about">About</a></div>
     ```
 
-1. Zapisz wszystkie pliki za pomocą polecenia menu **Zapisz** > **wszystko** lub po prostu naciśnij **klawisze Ctrl**+**Shift**+**S**. (Technicznie ten krok nie jest potrzebny, ponieważ uruchomienie projektu w programie Visual Studio automatycznie zapisuje pliki. Niemniej jednak, jest to dobra komenda, aby wiedzieć o!)
+1. **Zapisz wszystkie**pliki przy użyciu  >  polecenia**Zapisz wszystko** menu lub po prostu naciśnij klawisz **Ctrl** + **SHIFT** + **S**. (Technicznie ten krok nie jest wymagany, ponieważ uruchomienie projektu w programie Visual Studio powoduje automatyczne zapisanie plików. Jednak dobrym poleceniem jest poznanie!)
 
 1. Uruchom projekt, aby obserwować wyniki i sprawdzić nawigację między stronami. Zatrzymaj aplikację po zakończeniu.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Pytanie: Czy nazwa funkcji strony ma znaczenie dla Flask?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Pytanie: czy nazwa funkcji strony ma być poddana kolbie?
 
-Odpowiedź: Nie, ponieważ to `@app.route` dekorator określa adresy URL, dla których Flask wywołuje funkcję, aby wygenerować odpowiedź. Deweloperzy zazwyczaj pasują do nazwy funkcji do trasy, ale takie dopasowanie nie jest wymagane.
+Odpowiedź: nie, ponieważ jest to `@app.route` dekoratora, który określa adresy URL, dla których Kolba wywołuje funkcję w celu wygenerowania odpowiedzi. Deweloperzy zwykle pasują do nazwy funkcji do trasy, ale takie dopasowanie nie jest wymagane.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3-4: Tworzenie nagłówka i paska nawigacyjnych za pomocą dziedziczenia szablonu
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3-4: Użyj dziedziczenia szablonu, aby utworzyć nagłówek i pasek nawigacyjny
 
-Zamiast jawnych łączy nawigacyjnych na każdej stronie, nowoczesne aplikacje internetowe zazwyczaj używają nagłówka znakowania i paska nawigacyjnego, który zawiera najważniejsze łącza stron, menu podręczne i tak dalej. Aby upewnić się, że nagłówek i pasek nawigacyjny są takie same na wszystkich stronach, nie chcesz jednak powtarzać tego samego kodu w każdym szablonie strony. Zamiast tego chcesz zdefiniować wspólne części wszystkich stron w jednym miejscu.
+Zamiast mieć jawne linki nawigacyjne na każdej stronie, nowoczesne aplikacje sieci Web zwykle używają nagłówka znakowania i paska nawigacyjnego, który zawiera najważniejsze linki stron, menu podręczne i tak dalej. Aby upewnić się, że nagłówek i pasek nawigacyjny są takie same na wszystkich stronach, ale nie chcesz powtarzać tego samego kodu w każdym szablonie strony. Zamiast tego chcesz zdefiniować wspólne części wszystkich stron w jednym miejscu.
 
-System tworzenia szablonów flask (Domyślnie Jinja) zapewnia dwa środki do ponownego użytku określonych elementów w wielu szablonach: zawiera i dziedziczenia.
+System tworzenia szablonów kolby (domyślnie jinja) zapewnia dwa sposoby wielokrotnego używania określonych elementów w wielu szablonach: zawiera i dziedziczenie.
 
-- *Zawiera* inne szablony stron wstawiane w określonym miejscu w szablonie odsyłający przy użyciu składni `{% include <template_path> %}`. Można również użyć zmiennej, jeśli chcesz dynamicznie zmienić ścieżkę w kodzie. Obejmuje są zazwyczaj używane w treści strony do ściągania w szablonie udostępnionym w określonej lokalizacji na stronie.
+- *Obejmuje* inne szablony stron, które są wstawiane w konkretnym miejscu w szablonie odwołującym przy użyciu składni `{% include <template_path> %}` . Możesz również użyć zmiennej, jeśli chcesz zmienić ścieżkę dynamicznie w kodzie. Dołączenia są zwykle używane w treści strony do ściągania szablonu udostępnionego w określonej lokalizacji na stronie.
 
-- *Dziedziczenie* używa `{% extends <template_path> %}` na początku szablonu strony, aby określić udostępniony szablon podstawowy, który następnie opiera się na szablonie odsyłający. Dziedziczenie jest powszechnie używane do definiowania układu udostępnionego, paska nawigacyjnyego i innych struktur dla stron aplikacji, w ten sposób, że szablony odwołujące się muszą tylko dodawać lub modyfikować określone obszary szablonu podstawowego o nazwie *bloki*.
+- *Dziedziczenie* używa na `{% extends <template_path> %}` początku szablonu strony, aby określić współużytkowany szablon podstawowy, na którym zostanie utworzony szablon odwołujący się. Dziedziczenie jest często używane do definiowania współużytkowanego układu, paska nawigacyjnego i innych struktur dla stron aplikacji, takich jak szablony odwołujące się potrzebują tylko dodawania lub modyfikowania określonych obszarów szablonu podstawowego o nazwie *Blocks*.
 
-W obu `<template_path>` przypadkach jest względem folderu *szablonów* aplikacji (`../` lub `./` są również dozwolone).
+W obu przypadkach `<template_path>` jest względna w stosunku do folderu *szablonów* aplikacji ( `../` lub `./` są również dozwolone).
 
-Szablon podstawowy wyznacza *bloki* `{% block <block_name> %}` przy `{% endblock %}` użyciu i tagi. Jeśli szablon odsyłający używa tagów o tej samej nazwie bloku, jego zawartość bloku zastępuje zawartość szablonu podstawowego.
+Wyznacza szablonu podstawowego *blokuje* używanie `{% block <block_name> %}` tagów i `{% endblock %}` . Jeśli szablon odwołujący używa tagów o tej samej nazwie bloku, jego zawartość bloku zastępuje szablon podstawowy.
 
-Następujące kroki pokazują dziedziczenie:
+W poniższych krokach przedstawiono dziedziczenie:
 
-1. W folderze *szablony* aplikacji utwórz nowy plik HTML (za pomocą menu**kontekstowego** **Dodaj** > nowy element lub **Dodaj** > **stronę HTML**) o nazwie *layout.html*i zastąp jego zawartość poniższymi znacznikami. Widać, że ten szablon zawiera blok o nazwie "zawartość", który jest wszystkim, co strony odsyłający muszą zastąpić:
+1. W folderze *Szablony* aplikacji Utwórz nowy plik HTML (za pomocą **Add**  >  menu kontekstowego Dodaj**nowy element** lub **Dodaj**  >  **stronę HTML**) o nazwie *layout.html*i Zastąp jego zawartość następującym znacznikiem:. Można zobaczyć, że ten szablon zawiera blok o nazwie "Content", który ma zostać zastąpiony przez strony odwołujące:
 
     ```html
     <!DOCTYPE html>
@@ -222,7 +222,7 @@ Następujące kroki pokazują dziedziczenie:
     </html>
     ```
 
-1. Dodaj następujące style do pliku *statycznego/site.css* aplikacji (w tym instruktażu nie próbuje się tutaj zademonstrować responsywnego projektu; te style są po prostu generują interesujące wyniki):
+1. Dodaj następujące style do pliku *CSS, statycznego/witryny* aplikacji (w tym instruktażu nie jest podejmowana próba pokazania w tym miejscu odpowiedzi na projekt; te style mają po prostu generowanie interesującego wyniku):
 
     ```css
     .navbar {
@@ -254,7 +254,7 @@ Następujące kroki pokazują dziedziczenie:
     }
     ```
 
-1. Zmodyfikuj *templates/index.html,* aby odwoływać się do szablonu podstawowego i zastąpić blok zawartości. Widać, że za pomocą dziedziczenia ten szablon staje się prosty:
+1. Zmodyfikuj szablon */index.html* , aby odwołać się do szablonu bazowego i zastąpić blok zawartości. Można zobaczyć, że za pomocą dziedziczenia, ten szablon stanie się prosty:
 
     ```html
     {% extends "layout.html" %}
@@ -263,7 +263,7 @@ Następujące kroki pokazują dziedziczenie:
     {% endblock %}
     ```
 
-1. Zmodyfikuj *templates/about.html,* aby również odwoływać się do szablonu podstawowego i zastępować blok zawartości:
+1. Zmodyfikuj *Szablony/about.html* , aby odwoływać się również do szablonu podstawowego i zastąpić blok zawartości:
 
     ```html
     {% extends "layout.html" %}
@@ -272,20 +272,20 @@ Następujące kroki pokazują dziedziczenie:
     {% endblock %}
     ```
 
-1. Uruchom serwer, aby obserwować wyniki. Zamknij serwer po zakończeniu.
+1. Uruchom serwer, aby obserwować wyniki. Po zakończeniu zamknij serwer.
 
-    ![Uruchamianie aplikacji z pasem nawigacyjnym](media/flask/step03-nav-bar.png)
+    ![Uruchomiona aplikacja wyświetlająca pasek nawigacyjny](media/flask/step03-nav-bar.png)
 
-1. Ponieważ wprowadzono istotne zmiany w aplikacji, to znowu dobry moment, aby [zatwierdzić zmiany do kontroli źródła](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control).
+1. Ze względu na to, że wprowadzono znaczące zmiany w aplikacji, jest to dobry moment na [zatwierdzenie zmian w kontroli źródła](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control).
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Użyj pełnego szablonu projektu flask Web Project](learn-flask-visual-studio-step-04-full-flask-project-template.md)
+> [Użyj szablonu projektu sieci Web pełnej kolby](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="go-deeper"></a>Głębiej
+## <a name="go-deeper"></a>Przejdź głębiej
 
-- [Wdrażanie aplikacji sieci Web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Aby uzyskać więcej możliwości szablonów Jinja, takich jak przepływ sterowania, zobacz [Dokumentacja projektanta szablonów Jinja](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org)
-- Szczegółowe informacje `url_for`na temat używania , patrz [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for) w dokumentacji obiektu aplikacji kolby (flask.pocoo.org)
-- Kod źródłowy samouczka w usłudze GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Wdróż aplikację sieci Web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- Aby uzyskać więcej możliwości szablonów Jinja, takich jak przepływ sterowania, zobacz [Dokumentacja projektanta szablonów jinja](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org)
+- Aby uzyskać szczegółowe informacje na temat korzystania z programu `url_for` , zobacz [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for) w dokumentacji dotyczącej obiektu aplikacji w kolbie (Flask.pocoo.org).
+- Kod źródłowy samouczka w witrynie GitHub: [Microsoft/Python-Sample-vs-Learning-Kolba](https://github.com/Microsoft/python-sample-vs-learning-flask)

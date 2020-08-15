@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d80a8d2ab334495daac4d82fe5c8faa2ad04683d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544251"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238247"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 
@@ -46,7 +46,7 @@ W tym instruktażu utworzysz język specyficzny dla domeny (DSL), który ma wła
 
 Przed rozpoczęciem tego instruktażu należy najpierw zainstalować następujące składniki:
 
-| | |
+| Składnik | Link |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
@@ -754,7 +754,7 @@ Następnym krokiem jest skompilowanie i uruchomienie projektanta DSL w nowym wys
 
 Jeśli planujesz użycie więcej niż jednej właściwości śledzenia lub Zaimplementuj właściwości śledzenia w więcej niż jednym DSL, możesz utworzyć szablon tekstowy w celu wygenerowania wspólnego kodu do obsługi każdej właściwości śledzenia. Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

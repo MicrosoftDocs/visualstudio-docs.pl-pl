@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0e971a2a38013ae75287467404e3321e3c4d37
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544199"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238897"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -75,11 +75,11 @@ Aby uzyskać więcej informacji na temat Team Foundation Server, zobacz:
 
 - [Testowanie, sprawdzanie poprawności i sprawdzanie zaktualizowanego kodu](#TestValidateCheckInCode)
 
-## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a>Role architektury i diagramy modelowania w programowaniu oprogramowania
+## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a> Role architektury i diagramy modelowania w programowaniu oprogramowania
 
 W poniższej tabeli opisano role, które te narzędzia mogą odtwarzać na różnych etapach cyklu tworzenia oprogramowania:
 
-||**Modelowanie wymagań użytkownika**|**Modelowanie procesów firmy**|**Projekt architektury systemowej &**|**Wizualizacja kodu & Eksploracja**|**Weryfikacja**|
+|Narzędzie/rola|Modelowanie wymagań użytkownika|Modelowanie procesów firmy|Projekt architektury systemowej &|Wizualizacja kodu & Eksploracja|Weryfikacja|
 |------|-|-|-|-|-|
 |Diagram języka specyficznego dla domeny (DSL)|Tak|Tak|Tak|||
 |Diagram zależności, walidacja warstwy|||Tak|Tak|Tak|
@@ -167,7 +167,7 @@ Kolacja teraz musi oszacować koszt zaspokajania nowego wymagania. Jest to zale�
 |-|-|
 |*Diagram klas oparty na kodzie*<br /><br /> Zobacz [jak: Dodawanie diagramów klas do projektów (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Istniejące klasy w kodzie.|
 
-### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a>Zachowaj spójność kodu z projektem
+### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a> Zachowaj spójność kodu z projektem
  Teraz należy upewnić się, że zaktualizowany kod pozostaje zgodny z projektem. Tworzą one diagramy zależności opisujące warstwy funkcji w systemie, określają dozwolone zależności między nimi i kojarzą artefakty rozwiązań z tymi warstwami.
 
 |**4b**|**Szczegół**|
@@ -220,7 +220,7 @@ Zobacz:
 
 - [Tworzenie zaległości i zadań przy użyciu projektu](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
-### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a>Testowanie, sprawdzanie poprawności i ewidencjonowanie kodu
+### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a> Testowanie, sprawdzanie poprawności i ewidencjonowanie kodu
 
 Gdy zespoły ukończyją każde zadanie, sprawdzają swój kod w kontroli źródła i odbierają przypomnienia z Team Foundation Server, jeśli zapomnieć. Zanim Team Foundation Server zaakceptuje zaewidencjonowania, zespoły uruchomią testy jednostkowe i walidację zależności w celu zweryfikowania kodu względem ich przypadków testowych i projektu. Używają Team Foundation Server do uruchamiania kompilacji, zautomatyzowanych testów jednostkowych i weryfikacji zależności regularnie. Pomaga to upewnić się, że kod spełnia następujące kryteria:
 
@@ -262,7 +262,7 @@ Zobacz:
 
 - [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)
 
-### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a>Wizualizowanie istniejącego kodu: mapy kodu
+### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a> Wizualizowanie istniejącego kodu: mapy kodu
 
 Mapy kodu pokazują bieżącą organizację i relacje w kodzie. Elementy są reprezentowane przez *węzły* na mapie, a relacje są reprezentowane przez *linki*. Mapy kodu mogą pomóc w wykonywaniu następujących rodzajów zadań:
 
@@ -332,7 +332,7 @@ Ta mapa pokazuje, że Klasa PaymentApprover znajduje się teraz w przestrzeni na
 |Diagram zależności|Logiczna architektura systemu. Użyj walidacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących zależności lub zamierzonych zależności, Utwórz mapę kodu i pogrupuj powiązane elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> - [Tworzenie diagramów zależności na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)|
 |Diagram klas (oparty na kodzie)|Istniejące klasy w kodzie dla określonego projektu.<br /><br /> Aby wizualizować i modyfikować istniejącą klasę w kodzie, użyj Projektant klas.<br /><br /> Zobacz [jak: Dodawanie diagramów klas do projektów (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
-### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a>Definiowanie słownika typów: diagramy klas
+### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a> Definiowanie słownika typów: diagramy klas
  Diagramy klas definiują jednostki, terminy lub koncepcje, które uczestniczą w systemie i ich relacji ze sobą. Na przykład można użyć tych diagramów podczas programowania, aby opisać atrybuty i operacje dla każdej klasy, niezależnie od ich języka lub stylu implementacji.
 
  Aby pomóc lucerny opisać i omówić jednostki, które uczestniczą w przypadku użycia w procesie płatności, narysujemy następujący Diagram klas:
@@ -401,7 +401,7 @@ Jako punkt początkowy do eksplorowania i omawiania istniejących klas można u�
 |Diagram zależności|Zdefiniuj architekturę logiczną systemu, która odnosi się do klas.<br /><br /> Użyj walidacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Sprawdzanie poprawności kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapa kodu|Wizualizuj organizację i relacje w istniejącym kodzie.<br /><br /> Aby zidentyfikować klasy, ich relacje i ich metody, Utwórz mapę kodu, która pokazuje te elementy.<br /><br /> Zobacz:<br /><br /> - [Mapowanie zależności między rozwiązaniami](../modeling/map-dependencies-across-your-solutions.md)|
 
-### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a>Opisywanie architektury logicznej: diagramy zależności
+### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a> Opisywanie architektury logicznej: diagramy zależności
  Diagramy zależności opisują architekturę logiczną systemu przez organizowanie artefaktów w rozwiązaniu do grup abstrakcyjnych lub *warstw*. Artefakty mogą mieć wiele rzeczy, takich jak przestrzenie nazw, projekty, klasy, metody i tak dalej. Warstwy reprezentują i opisują role lub zadania wykonywane przez artefakty w systemie. Możesz również uwzględnić walidację warstwy w operacjach kompilacji i zaewidencjonowania, aby upewnić się, że kod pozostaje zgodny z projektem.
 
  Aby zachować kod spójny z projektem, obiad teraz i Lucerny, użyj następującego diagramu zależności, aby zweryfikować swój kod w miarę rozwoju:
@@ -480,7 +480,7 @@ Diagramy zależności pomagają:
 |-|-|
 |**Fora**|- [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Wizualizacja & modelowania SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)
 - [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)

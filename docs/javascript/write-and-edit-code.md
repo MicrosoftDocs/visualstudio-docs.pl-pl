@@ -10,14 +10,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453758"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238183"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak używać edytora kodu
+# <a name="learn-to-use-the-code-editor-for-javascript"></a>Dowiedz się, jak używać edytora kodu dla języka JavaScript
 
 W tym krótkim wprowadzeniu do edytora kodu w programie Visual Studio zapoznajemy się z innymi sposobami, w których program Visual Studio wykonuje pisanie, nawigowanie i zrozumienie kodu.
 
@@ -118,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 Możesz sprawdzić dostępne fragmenty kodu dla danego języka, wybierając pozycję **Edytuj**  >  **IntelliSense**  >  **wstawkę**IntelliSense, a następnie wybierając folder języka.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Nawiguj po kodzie](../ide/navigating-code.md)

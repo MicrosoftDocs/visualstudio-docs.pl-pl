@@ -1,5 +1,5 @@
 ---
-title: Dane w pamięci podręcznej dostosowywane na poziomie dokumentu
+title: Dane w pamięci podręcznej w dostosowaniu na poziomie dokumentu
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,48 +18,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62b0d04e37072af1f0053a6e395edcb856a115c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939323"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238351"
 ---
-# <a name="cached-data-in-document-level-customizations"></a>Dane w pamięci podręcznej dostosowywane na poziomie dokumentu
-  Podstawowym celem dostosowania poziomu dokumentu jest oddzielenie danych z widoku w dokumentach pakietu Office. Danych odnosi się do informacji, które są przechowywane w dokumencie, w tym liczby i tekst. Widok odwołuje się do interfejsu użytkownika i modelu obiektów programu Microsoft Office Word i Microsoft Office Excel.
+# <a name="cached-data-in-document-level-customizations"></a>Dane w pamięci podręcznej w dostosowaniu na poziomie dokumentu
+  Podstawowym celem dostosowań na poziomie dokumentu jest oddzielenie danych z widoku w dokumentach pakietu Office. Dane odnoszą się do informacji przechowywanych w dokumencie, w tym liczb i tekstu. Widok odnosi się do interfejsu użytkownika i modelu obiektów Microsoft Office Word i Microsoft Office Excel.
 
- Program Visual Studio oddziela dane z widoku w dostosowaniach na poziomie dokumentu, należy włączyć danych w celu osadzenia jako *Wyspy danych*, nazywane również *pamięci podręcznej danych*. Ty możesz odczytywać i modyfikować dane bezpośrednio bez konieczności uruchamiania programu Word lub Excel. Jest to przydatne, jeśli zachodzi konieczność zmiany danych w dokumentach na serwerze, na którym nie ma zainstalowany w Microsoft Office. Word i Excel, które są przeznaczone do użytku w środowiskach klienckich; nie są przeznaczone do uruchamiania na serwerze.
+ Program Visual Studio oddziela dane z widoku w dostosowaniach na poziomie dokumentu przez włączenie danych do osadzenia jako *wyspa danych*, nazywanej również *pamięcią podręczną danych*. Możesz odczytywać lub modyfikować dane bezpośrednio bez uruchamiania programu Word lub Excel. Jest to przydatne w przypadku konieczności modyfikacji danych w dokumentach na serwerze, na którym nie zainstalowano Microsoft Office. Programy Word i Excel są przeznaczone do użycia w środowiskach klienckich. nie są one przeznaczone do uruchamiania na serwerze.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Aby uzyskać więcej informacji na temat dostosowywania poziomie dokumentu, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).
+ Aby uzyskać więcej informacji na temat dostosowań na poziomie dokumentu, zobacz temat [programowanie rozwiązań pakietu Office omówienie &#40;narzędzia VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) i [architektury dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).
 
-## <a name="understand-the-cached-data-programming-model"></a>Informacje o modelu programowania dane w pamięci podręcznej
- Wyspy danych może zawierać dowolny obiekt w Twoim rozwiązaniu, które spełnia określone wymagania. Te obiekty obejmują <xref:System.Data.DataSet> obiektów <xref:System.Data.DataTable> obiektów i inny obiekt, który może być serializowany przez <xref:System.Xml.Serialization.XmlSerializer> klasy. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).
+## <a name="understand-the-cached-data-programming-model"></a>Omówienie modelu programowania danych w pamięci podręcznej
+ Wyspa danych może zawierać dowolne obiekty w rozwiązaniu, które spełniają określone wymagania. Te obiekty obejmują <xref:System.Data.DataSet> obiekty, <xref:System.Data.DataTable> obiekty i inne inne obiekty, które mogą być serializowane przez <xref:System.Xml.Serialization.XmlSerializer> klasę. Aby uzyskać więcej informacji, zobacz [cache Data](../vsto/caching-data.md).
 
- Aby zapewnić widoku dane w pamięci podręcznej, można powiązać kontrolek formularzy Windows Forms i *hostowania kontrolek* dokumentu do obiektów w Wyspy danych. Powiązanie danych między Wyspy danych i kontrolek powiązanych z danymi przechowuje dwie zsynchronizowane. Można również dodać kod sprawdzania poprawności, danych, który jest niezależny od kontrolek. Aby uzyskać więcej informacji, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+ Aby zapewnić widok danych w pamięci podręcznej, można powiązać kontrolki Windows Forms i *kontrolki hosta* w dokumencie z obiektami na Wyspach danych. Powiązanie danych między wyspami danych i kontrolkami związanymi z danymi utrzymuje dwie zsynchronizowane. Możesz również dodać kod weryfikacyjny do danych, które są niezależne od kontrolek. Aby uzyskać więcej informacji, zobacz temat [Powiązywanie danych z kontrolkami w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
- Formanty hosta zostały rozszerzone wersji obiektów natywnych w modelach obiektów programu Excel i Word. W przeciwieństwie do natywnych obiektów formanty hosta może być powiązana bezpośrednio do obiektów zarządzanych danych. Aby uzyskać więcej informacji, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md) i [kontrolek formularzy Windows w przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+ Formanty hosta są rozszerzonymi wersjami obiektów natywnych w modelu obiektów programu Excel i programu Word. W przeciwieństwie do obiektów natywnych, formanty hosta mogą być powiązane bezpośrednio z obiektami danych zarządzanych. Aby uzyskać więcej informacji, zobacz [Omówienie elementów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md) oraz [formanty Windows Forms w dokumentach pakietu Office — omówienie](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
-## <a name="access-cached-data-on-the-server"></a>Dostęp do pamięci podręcznej danych na serwerze
- Aby uzyskać dostęp do danych z pamięci podręcznej dokumentu, można użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy. Ta klasa jest częścią [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], i mogą być używane na serwerze bez uruchomionego programu Excel lub Word. Gdy użytkownik otwiera dokument po modyfikować dane w pamięci podręcznej, formanty, które są powiązane z danymi są automatycznie synchronizowane na zmiany, a użytkownik zobaczy ze zaktualizowanymi danymi. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).
+## <a name="access-cached-data-on-the-server"></a>Dostęp do danych w pamięci podręcznej na serwerze
+ Aby uzyskać dostęp do danych w pamięci podręcznej w dokumencie, można użyć <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy. Ta klasa jest częścią [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] i może być używana na serwerze bez programu Excel lub Word. Gdy użytkownik otwiera dokument po zmodyfikowaniu danych w pamięci podręcznej, wszystkie kontrolki, które są powiązane z danymi, są automatycznie synchronizowane ze zmianami, a użytkownik otrzymuje zaktualizowane dane. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).
 
- Program Excel i Word nie są potrzebne do zapisu danych na serwerze, tylko po to, aby wyświetlić go na komputerze klienckim. Program Excel i Word nie musi nawet można zainstalować na serwerze. Dzięki temu zwiększona skalowalność i możliwość wykonywania przetwarzania wsadowego szybkie dokumentów zawierających Wyspy danych.
+ Program Excel i program Word nie są niezbędne do zapisu danych na serwerze, tylko w celu wyświetlenia ich na kliencie. Programy Excel i Word nie muszą nawet być zainstalowane na serwerze. Zapewnia to lepszą skalowalność i możliwość szybkiego przetwarzania wsadowego dokumentów zawierających Wyspy danych.
 
-## <a name="data-caching-for-offline-use"></a>Buforowanie w trybie offline danych
- Przechowywanie danych w Wyspy danych pozwala scenariusze w trybie offline. Gdy użytkownik najpierw otwiera dokument lub żądań dokumentu z serwera, Wyspy danych jest wypełniony przy użyciu najnowszych danych. Wyspy danych są buforowane w dokumencie i będzie dostępny w trybie offline. Użytkownik (i kodu) można manipulować danymi, nawet jeśli nie połączenie na żywo jest dostępna. Gdy użytkownik połączy się ponownie, zmiany w danych można propagowany z powrotem do źródła danych serwera.
+## <a name="data-caching-for-offline-use"></a>Buforowanie danych do użycia w trybie offline
+ Przechowywanie danych na Wyspach danych umożliwia wykonywanie scenariuszy w trybie offline. Gdy użytkownik otwiera dokument lub żąda dokumentu z serwera, Wyspa danych jest wypełniana najnowszymi danymi. Wyspa danych jest buforowana w dokumencie, a następnie jest dostępna w trybie offline. Użytkownik (i kod) mogą manipulować danymi, nawet jeśli nie jest dostępne żadne połączenie na żywo. Gdy użytkownik ponownie nawiązuje połączenie, zmiany danych mogą zostać przekazane z powrotem do źródła danych serwera.
 
-## <a name="cached-data-and-custom-xml-parts-compared"></a>Dane w pamięci podręcznej i niestandardowe elementy XML w porównaniu
- Niestandardowe elementy XML zostały wprowadzone w programie Microsoft Office system 2007 jako sposób na przechowywanie dowolnych fragmentów kodu XML w dokumencie. Mimo że niestandardowe elementy XML są przydatne w wielu z tych samych scenariuszy co pamięć podręczna danych, istnieją pewne różnice między Wyspy danych i niestandardowe elementy XML. Aby uzyskać więcej informacji na temat niestandardowych części XML, zobacz [przegląd części niestandardowy kod XML](../vsto/custom-xml-parts-overview.md).
+## <a name="cached-data-and-custom-xml-parts-compared"></a>Porównano dane buforowane i niestandardowe części XML
+ Niestandardowe części XML wprowadzono w systemie 2007 Microsoft Office jako sposób przechowywania dowolnych fragmentów kodu XML w dokumencie. Chociaż niestandardowe części XML są przydatne w wielu różnych scenariuszach, co w przypadku pamięci podręcznej, istnieją pewne różnice między wyspami danych i niestandardowymi składnikami XML. Aby uzyskać więcej informacji na temat niestandardowych części XML, zobacz temat [niestandardowe składniki XML — Omówienie](../vsto/custom-xml-parts-overview.md).
 
- Poniższa lista zawiera niektóre różnice i podobieństwa.
+ W poniższej tabeli wymieniono niektóre różnice i podobieństwa.
 
-||Pamięć podręczna danych|Niestandardowe elementy XML|
+|Pytanie/cecha|Pamięć podręczna danych|Niestandardowe części XML|
 |-|----------------|----------------------|
-|Które aplikacje pakietu Office można użyć tych?|Dostosowania poziomu dokumentu dla następujących aplikacji:<br /><br /> — Excel<br />-Programu Word|Rozwiązania dokumentu i na poziomie aplikacji dla następujących aplikacji:<br /><br /> — Excel<br />— PowerPoint<br />-Programu Word|
-|Jakie typy danych można przechowywać?|Dowolnego obiektu publicznego w zestawie swoje dostosowania, który spełnia określone wymagania. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).|Wszelkie dane XML.|
-|Czy masz dostęp do danych bez uruchamiania aplikacji Microsoft Office?|Tak, za pomocą <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> dostarczane przez klasy [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|Tak, korzystając z klas w <xref:System.IO.Packaging> przestrzeni nazw, lub za pomocą Open XML Format SDK.|
+|Które aplikacje pakietu Office mogą z nich korzystać?|Dostosowania na poziomie dokumentu dla następujących aplikacji:<br /><br /> — Excel<br />-Word|Rozwiązania na poziomie dokumentu i aplikacji dla następujących aplikacji:<br /><br /> — Excel<br />— PowerPoint<br />-Word|
+|Jakie typy danych można przechowywać?|Dowolny obiekt publiczny w zestawie dostosowań, który spełnia określone wymagania. Aby uzyskać więcej informacji, zobacz [cache Data](../vsto/caching-data.md).|Dowolne dane XML.|
+|Czy można uzyskać dostęp do danych bez uruchamiania Microsoft Office aplikacji?|Tak, za pomocą <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy dostarczonej przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Tak, przy użyciu klas w <xref:System.IO.Packaging> przestrzeni nazw lub przy użyciu zestawu SDK Open XML format.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

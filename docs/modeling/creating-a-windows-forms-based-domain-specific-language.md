@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547319"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238364"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na Windows Forms
 
@@ -30,10 +30,8 @@ Szablon DSL **projektanta w minimalnym** stopniu pozwala utworzyć minimalny DSL
 
     W tym instruktażu założono następujące nazwy:
 
-   | | |
-   |-|-|
-   | Rozwiązanie i nazwa DSL | FarmApp |
-   | Przestrzeń nazw | Firma. FarmApp |
+    - Nazwa rozwiązania i DSL: `FarmApp`
+    - Obszaru `Company.FarmApp`
 
 2. Eksperymentuj z początkowym przykładem udostępnianym przez szablon:
 
@@ -51,9 +49,9 @@ Szablon DSL **projektanta w minimalnym** stopniu pozwala utworzyć minimalny DSL
 
    W głównym wystąpieniu programu Visual Studio Zwróć uwagę na następujące kwestie dotyczące rozwiązania DSL:
 
-- `DslDefinition.dsl`nie zawiera elementów diagramu. Dzieje się tak dlatego, że nie będziesz używać diagramów DSL do wyświetlania modeli wystąpień tego języka DSL. Zamiast tego utworzysz powiązanie formularza systemu Windows z modelem, a elementy w formularzu będą wyświetlały model.
+- `DslDefinition.dsl` nie zawiera elementów diagramu. Dzieje się tak dlatego, że nie będziesz używać diagramów DSL do wyświetlania modeli wystąpień tego języka DSL. Zamiast tego utworzysz powiązanie formularza systemu Windows z modelem, a elementy w formularzu będą wyświetlały model.
 
-- Oprócz `Dsl` `DslPackage` projektów i, rozwiązanie zawiera trzeci projekt o nazwie `UI.` projekt **interfejsu użytkownika** zawiera definicję kontrolki Windows Forms. `DslPackage`zależy od `UI` , i `UI` zależy od `Dsl` .
+- Oprócz `Dsl` `DslPackage` projektów i, rozwiązanie zawiera trzeci projekt o nazwie `UI.` projekt **interfejsu użytkownika** zawiera definicję kontrolki Windows Forms. `DslPackage` zależy od `UI` , i `UI` zależy od `Dsl` .
 
 - W `DslPackage` projekcie, `UI\DocView.cs` zawiera kod, który wyświetla formant Windows Forms, który jest zdefiniowany w `UI` projekcie.
 
@@ -86,9 +84,9 @@ W tym instruktażu zostanie użyta następująca Definicja DSL.
 
 4. Użyj narzędzia **klasy nazwanej domeny** do utworzenia następujących klas domeny:
 
-    - `Field`-Nadaj tej domenie dodatkową właściwość o nazwie `Size` .
+    - `Field` -Nadaj tej domenie dodatkową właściwość o nazwie `Size` .
 
-    - `Animal`-W okno Właściwości ustaw **modyfikator dziedziczenia** na **abstrakcyjny**.
+    - `Animal` -W okno Właściwości ustaw **modyfikator dziedziczenia** na **abstrakcyjny**.
 
 5. Użyj narzędzia **klasy domeny** do utworzenia następujących klas:
 
@@ -162,7 +160,7 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
      Ustaw właściwość **DataMember** na **zwierzęta** lub **pola**.
 
-10. Ustaw właściwości **źródła danych** `AnimalGridView` na `AnimalBinding` , i z `FieldGridView` na `FieldBinding` .
+10. Ustaw właściwości **źródła danych** `AnimalGridView` na `AnimalBinding` , i z  `FieldGridView` na `FieldBinding` .
 
 11. Dostosuj układ kontrolki farmy do swojego smaku.
 
@@ -220,7 +218,7 @@ Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później
 
 3. W **Eksploratorze FarmApp**Otwórz menu skrótów w węźle głównym **farmy** i wybierz polecenie **Dodaj nowe kozy**.
 
-     `Goat1`pojawia się w widoku **zwierzęta** .
+     `Goat1` pojawia się w widoku **zwierzęta** .
 
     > [!WARNING]
     > Musisz użyć menu skrótów w węźle **farmy** , a nie w węźle **zwierzęta** .
