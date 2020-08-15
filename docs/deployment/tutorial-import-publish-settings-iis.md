@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b18d1b123e32807575ac2c6601166891d6c25be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fff3ded8607f7faf534e6e61a27bd4d3e38d9e38
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183304"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247563"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usługach IIS przez zaimportowanie ustawień publikowania w programie Visual Studio
 
@@ -58,15 +58,15 @@ Plik ustawień publikowania (* \* . publishsettings*) jest inny niż profil publ
 
 1. Na komputerze z uruchomionym programem Visual Studio Utwórz nowy projekt.
 
-    Wybierz odpowiedni szablon. W tym przykładzie wybierz pozycję **aplikacja sieci web ASP.NET (.NET Framework)** lub (tylko w przypadku języka C#) **ASP.NET Core aplikacji sieci Web**, a następnie kliknij przycisk **OK**.
+    Wybierz odpowiedni szablon. W tym przykładzie wybierz pozycję **aplikacja sieci web ASP.NET (.NET Framework)** lub (tylko w przypadku języka C#) **ASP.NET Core aplikacja internetowa**, a następnie wybierz przycisk **OK**.
 
-    Jeśli nie widzisz określonych szablonów projektu, kliknij link **otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Zostanie uruchomiona Instalator programu Visual Studio. Zainstaluj **ASP.NET i programowanie aplikacji sieci Web** .
+    Jeśli nie widzisz określonych szablonów projektu, przejdź do linku **otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Zostanie uruchomiona Instalator programu Visual Studio. Zainstaluj **ASP.NET i programowanie aplikacji sieci Web** .
 
     Wybrany szablon projektu (ASP.NET lub ASP.NET Core) musi odpowiadać wersji ASP.NET zainstalowanej na serwerze sieci Web.
 
-1. Wybierz opcję **MVC** (.NET Framework) lub **aplikacja sieci Web (Model-View-Controller)** (dla platformy .NET Core) i upewnij się, że nie wybrano **żadnego uwierzytelniania** , a następnie kliknij przycisk **OK**.
+1. Wybierz opcję **MVC** (.NET Framework) lub **aplikacja sieci Web (Model-View-Controller)** (dla platformy .NET Core) i upewnij się, że nie wybrano **żadnego uwierzytelniania** , a następnie wybierz przycisk **OK**.
 
-1. Wpisz nazwę, taką jak **MyWebApp** , i kliknij przycisk **OK**.
+1. Wpisz nazwę, taką jak **MyWebApp** , i wybierz **przycisk OK**.
 
     Program Visual Studio tworzy projekt.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 19eca9747fa4e9ef80f7de05799a2cee685ce821
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 461b99261eb88d5267b062cb5d471f1b6ed4ee60
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285525"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248030"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publish a Web app to Azure App Service using Visual Studio (Publikowanie aplikacji internetowej w usłudze Azure App Service przy użyciu programu Visual Studio)
 
@@ -39,7 +39,7 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Wybieranie elementu docelowego publikowania](../deployment/media/quickstart-publish-azure-new.png)
 
-1. Wybierz pozycję * * Azure App Service (Windows) * * i **dalej**.
+1. Wybierz **Azure App Service (Windows)** i **dalej**.
 
     ![Wybierz Azure App Service w systemie Linux](../deployment/media/quickstart-publish-windows-select-azure-service.png)
 
@@ -55,11 +55,11 @@ W tym artykule opisano sposób korzystania z narzędzia do **publikowania** na p
 
     ![Wybierz Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
 
-1. Wybierz polecenie **Publikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
+1. Kliknij pozycję **Opublikuj**. Program Visual Studio wdraża aplikację w Azure App Service, a aplikacja sieci Web ładuje się w przeglądarce. W okienku **Publikowanie** właściwości projektu wyświetlany jest adres URL witryny i inne szczegóły.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-windows-summary-page.png)
 
-## <a name="clean-up-resources"></a>Oczyszczanie zasobów
+## <a name="clean-up-resources"></a>Czyszczenie zasobów
 
 W poprzednich krokach utworzono zasoby platformy Azure w grupie zasobów. Jeśli nie będziesz już potrzebować tych zasobów w przyszłości, możesz je usunąć przez usunięcie grupy zasobów.
 W menu znajdującym się po lewej stronie w witrynie Azure Portal wybierz pozycję **Grupy zasobów**, a następnie wybierz pozycję **myResourceGroup**.

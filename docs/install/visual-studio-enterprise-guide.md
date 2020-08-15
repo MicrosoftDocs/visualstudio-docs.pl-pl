@@ -1,5 +1,5 @@
 ---
-title: Przewodnik po programie Visual Studio Enterprise
+title: Podręcznik użytkowania programu Visual Studio w przedsiębiorstwie
 description: Konfigurowanie i rozwiązywanie problemów z programem Visual Studio w środowisku przedsiębiorstwa.
 ms.date: 07/29/2020
 ms.custom: seodec18
@@ -16,17 +16,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3d223d6e1e6ed3bf4b75b1c66bcc0f9dc897cfed
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87440678"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247645"
 ---
-# <a name="visual-studio-enterprise-guide"></a>Przewodnik po programie Visual Studio Enterprise
+# <a name="visual-studio-enterprise-guide"></a>Podręcznik użytkowania programu Visual Studio w przedsiębiorstwie
 Jeśli chcesz zaoszczędzić czas podczas korzystania z firmy w programie Visual Studio, Zacznij tutaj. Ten przewodnik po przedsiębiorstwie zawiera wskazówki, które mogą pomóc w instalacji i aktualizacji programu Visual Studio w typowych scenariuszach dla przedsiębiorstw, uzyskać odblokowywanie w przypadku wystąpienia problemów i dowiedzieć się, jak zgłosić problem, jeśli potrzebujesz więcej pomocy. 
 
-## <a name="get-started"></a>Rozpoczęcie pracy 
+## <a name="get-started"></a>Wprowadzenie 
 Dowiedz się, jak wdrożyć program Visual Studio w przedsiębiorstwie w środowiskach sieciowych i w trybie offline. 
 
 - Informacje **o opcjach wdrażania w przedsiębiorstwie w środowiskach sieciowych**. [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md) zawiera wskazówki oparte na scenariuszu dla administratorów systemu. 
@@ -70,6 +70,3 @@ Dowiedz się, jak pomyślnie zaktualizować program Visual Studio i rozwiązać 
 ## <a name="see-also"></a>Zobacz też 
 
 - [Przewodnik dotyczący produktywności dla programu Visual Studio](../ide/productivity-features.md)
-
-
-

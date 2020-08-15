@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Jak dodać alternatywną tożsamość dla subskrypcji programu Visual Studio, aby korzystać z usługi Azure DevOps i platformy Azure
-ms.openlocfilehash: f8b634bd2f59bf3de038e7200900ee9930d79fff
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0db6f0f37127c600d529734085da23c30df73b9b
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289379"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248405"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Tożsamości dla subskrybentów programu Visual Studio
 Gdy aktywujesz swoją subskrypcję programu Visual Studio, połączymy tożsamość (lub logowanie), która została użyta podczas aktywacji z subskrypcją programu Visual Studio. W ten sposób możemy rozpoznać użytkownika w [portalu subskrybentów programu Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), na platformie Azure DevOps i na platformie Azure.
@@ -33,7 +33,7 @@ W przypadku wszystkich subskrypcji możesz dodać "konto służbowe", aby można
 
 ### <a name="add-the-alternate-account"></a>Dodawanie alternatywnego konta
 1. Zaloguj się do portalu subskrybentów programu Visual Studio przy użyciu konto Microsoft ( https://my.visualstudio.com) .
-2. Kliknij kartę **subskrypcje** .
+2. Wybierz kartę **subskrypcje** .
 3. Wybierz pozycję **Dodaj alternatywne konto**.
 4. Dodaj swoje konto służbowe.
     > [!div class="mx-imgBorder"]
@@ -67,4 +67,4 @@ Jeśli usługa Azure DevOps nadal nie rozpoznaje Twojej subskrypcji, skontaktuj 
 Aby uzyskać więcej informacji na temat korzystania z platformy Azure, platformy Azure DevOps lub środowiska IDE programu Visual Studio, zapoznaj się z następującymi zasobami:
 - [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b1e4362755bbbfa9ea220fcbdf92abf92723521
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85462126"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249186"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Instrukcje: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego
 
@@ -25,17 +25,17 @@ ms.locfileid: "85462126"
 Program Visual Studio wykonuje wiele analiz kodu na żywo, nazywanych również *analizą w tle*, podczas edytowania plików źródłowych w edytorze. Niektóre z nich są wymagane do minimalnej analizy dla akceptowalnego środowiska edytowania środowiska IDE programu Visual Studio. Niektóre z nich mają na celu zwiększenie czasu odpowiedzi dla funkcji środowiska IDE. Niektóre z nich umożliwiają włączenie dodatkowych funkcji środowiska IDE, takich jak diagnostyka i poprawki kodu z analizatorów Roslyn. W oparciu o funkcje te analizy można grupować w następujący sposób:
 
 - **Obliczanie danych diagnostycznych w tle**: Analiza błędów, ostrzeżeń i sugestii w plikach źródłowych. Te diagnostyki są wyświetlane jako wpisy na liście błędów i w edytorze. Mogą być klasyfikowane do dwóch kategorii:
-    - Diagnostyka kompilatora C# i Visual Basic
-    - Diagnostyka analizatora Roslyn, która obejmuje:
+  - Diagnostyka kompilatora C# i Visual Basic
+  - Diagnostyka analizatora Roslyn, która obejmuje:
 
-        - Wbudowane analizatory środowiska IDE do sugestii w stylu kodu i
-        - Pakiety analizatora innych firm [zainstalowane](./install-roslyn-analyzers.md) dla projektów w bieżącym rozwiązaniu.
+    - Wbudowane analizatory środowiska IDE do sugestii w stylu kodu i
+    - Pakiety analizatora innych firm [zainstalowane](./install-roslyn-analyzers.md) dla projektów w bieżącym rozwiązaniu.
 
 - **Inne analizy w tle**: Analiza w celu poprawy czasu reakcji i interakcji z programu Visual Studio na potrzeby funkcji środowiska IDE. Przykłady takich analiz są następujące:
-    - Analiza otwartych plików w tle.
-    - Kompilacja w tle projektów z otwartymi plikami w celu zrealizowania symboli w celu uzyskania ulepszonej reakcji niektórych funkcji środowiska IDE.
-    - Tworzenie składni i pamięci podręcznych symboli.
-    - Wykrywanie skojarzenia projektanta dla plików źródłowych, takich jak formularze, kontrolki itp.
+  - Analiza otwartych plików w tle.
+  - Kompilacja w tle projektów z otwartymi plikami w celu zrealizowania symboli w celu uzyskania ulepszonej reakcji niektórych funkcji środowiska IDE.
+  - Tworzenie składni i pamięci podręcznych symboli.
+  - Wykrywanie skojarzenia projektanta dla plików źródłowych, takich jak formularze, kontrolki itp.
 
 ## <a name="default-analysis-scope"></a>Domyślny zakres analizy
 
@@ -43,7 +43,7 @@ Domyślnie Analiza kodu na żywo dla obliczeń w tle jest wykonywana dla wszystk
 
 ## <a name="custom-analysis-scope"></a>Zakres analizy niestandardowej
 
-Domyślny zakres każdej analizy w tle został dostrojony, aby zapewnić optymalne środowisko użytkownika, funkcjonalność i wydajność większości scenariuszy i rozwiązań klientów. Istnieją jednak przypadki, w których klienci mogą chcieć dostosować ten zakres, aby zmniejszyć lub zwiększyć analizę w tle. Na przykład:
+Domyślny zakres każdej analizy w tle został dostrojony, aby zapewnić optymalne środowisko użytkownika, funkcjonalność i wydajność większości scenariuszy i rozwiązań klientów. Istnieją jednak przypadki, w których klienci mogą chcieć dostosować ten zakres, aby zmniejszyć lub zwiększyć analizę w tle. Przykład:
 
 - Tryb oszczędzania energii: Użytkownicy korzystający z baterii laptop mogą chcieć zminimalizować zużycie energii, aby wydłużyć czas pracy baterii. W tym scenariuszu chcą zminimalizować analizę w tle.
 - Analiza kodu na żądanie: Jeśli użytkownicy wolą wyłączać wykonywanie usługi Live Analyzer i ręcznie przeprowadzać analizę kodu na żądanie, chcą zminimalizować analizę w tle. Zobacz [jak: ręczne przeprowadzanie analizy kodu na żądanie](./how-to-run-code-analysis-manually-for-managed-code.md).

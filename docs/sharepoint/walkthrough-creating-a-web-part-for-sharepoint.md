@@ -14,11 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "86014579"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247649"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Przewodnik: Tworzenie składnika Web Part dla programu SharePoint
 
@@ -203,7 +204,7 @@ Aby wypełnić siatkę danych, która pojawia się w składniku Web Part, okreś
 
 ## <a name="test-the-web-part-verb"></a>Testowanie zlecenia składnika Web Part
 
-Pokaż i Ukryj pracowników, którzy nie są menedżerami, klikając element, który pojawia się w menu zleceń składnika Web Part.
+Pokaż i Ukryj pracowników, którzy nie są menedżerami, wybierając element, który pojawia się w menu zleceń składnika Web Part.
 
 1. Wybierz strzałkę, która pojawia się po prawej stronie składnika Web Part, a następnie wybierz pozycję **Pokaż menedżerów tylko** z wyświetlonego menu.
 
@@ -213,7 +214,7 @@ Pokaż i Ukryj pracowników, którzy nie są menedżerami, klikając element, kt
 
      Wszyscy pracownicy są wyświetlani w składniku Web Part.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Instrukcje: Tworzenie składnika Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

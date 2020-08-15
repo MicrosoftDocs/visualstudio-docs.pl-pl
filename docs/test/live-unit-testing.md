@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906219"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249899"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Jak skonfigurować i używać Live Unit Testing
 
@@ -142,7 +142,7 @@ W oknie **Eksploratora testów** można zauważyć, że niektóre testy są wybl
 
 ![Test zakończony niepowodzeniem w Eksploratorze testów](media/lut-test-explorer.png)
 
-Wszystkie testy, które są wyświetlane, można uruchomić ponownie, wybierając opcję **Uruchom wszystkie** lub **Uruchom** z menu **Eksplorator testów** . Lub wybierz jeden lub więcej testów w menu **Eksploratora testów** , kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom wybrane testy** lub **Debuguj wybrane testy** z menu podręcznego. Gdy testy są uruchamiane, są one rzutowane do góry.
+Wszystkie testy, które są wyświetlane, można uruchomić ponownie, wybierając opcję **Uruchom wszystkie** lub **Uruchom** z menu **Eksplorator testów** . Lub wybierz jeden lub więcej testów w menu  **Eksploratora testów** , kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom wybrane testy** lub **Debuguj wybrane testy** z menu podręcznego. Gdy testy są uruchamiane, są one rzutowane do góry.
 
 Istnieją pewne różnice między Live Unit Testing automatycznie uruchamiać i aktualizować wyniki testów oraz jawnie uruchamiać testy z **Eksploratora testów**. Różnice te obejmują:
 
@@ -191,16 +191,16 @@ W przypadku rozwiązań z wieloma projektami testowymi można kontrolować, któ
 
 Aby wybrać poszczególne projekty w testach jednostkowych, wykonaj następujące czynności po rozpoczęciu Live Unit Testing:
 
-1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz pozycję **testy na żywo**,  >  **Exclude** aby wykluczyć całe rozwiązanie.
-1. Kliknij prawym przyciskiem myszy każdy projekt testowy, który chcesz uwzględnić w testach, a następnie wybierz pozycję **testy na żywo**  >  **Include**.
+1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz **Live Unit Testing**  >  **Wyklucz** , aby wykluczyć całe rozwiązanie.
+1. Kliknij prawym przyciskiem myszy każdy projekt testowy, który ma zostać uwzględniony w testach, a następnie wybierz **Live Unit Testing**  >  **Uwzględnij**.
 
 ### <a name="exclude-individual-tests-from-the-code-editor-window"></a>Wyklucz pojedyncze testy z okna edytora kodu
 
 Można użyć okna edytora kodu, aby dołączyć lub wykluczyć poszczególne metody testowe. Kliknij prawym przyciskiem myszy podpis metody testowej w oknie Edytor kodu, a następnie wybierz jedną z następujących opcji:
 
-- **Testy**  >  na żywo **Uwzględnij \<selected method> **
-- **Testy**  >  na żywo **Wyklucz \<selected method> **
-- **Testy**  >  na żywo **Wyklucz wszystkie \<selected method> oprócz**
+- **Live Unit Testing**  >  **Uwzględnij \<selected method> **
+- **Live Unit Testing**  >  **Wyklucz \<selected method> **
+- **Live Unit Testing**  >  **Wyklucz wszystkie \<selected method> oprócz**
 
 ### <a name="exclude-tests-programmatically"></a>Programowe wykluczanie testów
 
@@ -208,15 +208,15 @@ Można zastosować atrybut, <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCod
 
 Użyj następujących atrybutów, aby wykluczyć poszczególne metody z Live Unit Testing:
 
-- Dla xUnit:`[Trait("Category", "SkipWhenLiveUnitTesting")]`
-- Dla NUnit:`[Category("SkipWhenLiveUnitTesting")]`
-- Dla MSTest:`[TestCategory("SkipWhenLiveUnitTesting")]`
+- Dla xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+- Dla NUnit: `[Category("SkipWhenLiveUnitTesting")]`
+- Dla MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 Użyj następujących atrybutów, aby wykluczyć cały zestaw testów z Live Unit Testing:
 
-- Dla xUnit:`[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
-- Dla NUnit:`[assembly: Category("SkipWhenLiveUnitTesting")]`
-- Dla MSTest:`[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
+- Dla xUnit: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
+- Dla NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
+- Dla MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Zobacz też
 

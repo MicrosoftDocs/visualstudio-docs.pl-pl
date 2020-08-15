@@ -7,12 +7,12 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.topic: how-to
-ms.openlocfilehash: ee30af4ed578bbc59924fcd8968b97dcf9306619
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 518dd80d230e3d2518ae69520781818826363ecc
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950025"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247460"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie programu Visual Studio dla komputerów Mac
 
@@ -198,10 +198,10 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 W przypadku starszych wersji należy ręcznie usunąć następujące artefakty:
 
-* Usuń aplikację skoroszyty pod adresem`"/Applications/Xamarin Workbooks.app"`
-* Usuń aplikację inspektora pod adresem`"Applications/Xamarin Inspector.app"`
-* Usuń dodatki: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` i`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* Usuń inspektora i pliki pomocnicze tutaj: `/Library/Frameworks/Xamarin.Interactive.framework` i`/Library/Frameworks/Xamarin.Inspector.framework`
+* Usuń aplikację skoroszyty pod adresem `"/Applications/Xamarin Workbooks.app"`
+* Usuń aplikację inspektora pod adresem `"Applications/Xamarin Inspector.app"`
+* Usuń dodatki: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` i `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
+* Usuń inspektora i pliki pomocnicze tutaj: `/Library/Frameworks/Xamarin.Interactive.framework` i `/Library/Frameworks/Xamarin.Inspector.framework`
 
 ## <a name="uninstall-the-xamarin-profiler"></a>Odinstaluj Xamarin Profiler
 
@@ -222,11 +222,7 @@ rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
 
-* * * 
-
-
-
-
+* * *
 
 ## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Odinstalowywanie programu Visual Studio 2019 for Mac (wersja zapoznawcza)
 
@@ -244,6 +240,6 @@ Możesz również usunąć plik podglądu plist za pomocą następującego polec
 rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odinstalowywanie programu Visual Studio (w systemie Windows)](/visualstudio/install/uninstall-visual-studio)

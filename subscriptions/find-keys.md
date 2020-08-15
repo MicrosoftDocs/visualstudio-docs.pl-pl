@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Dowiedz się, jak znaleźć, zatwierdzić i wyeksportować klucze produktów w subskrypcjach programu Visual Studio
-ms.openlocfilehash: 8ee21c544a44bfd5eca831cdc9fd1c8e00adb35b
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453749"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250734"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Znajdowanie i pojmowanie kluczy produktów w subskrypcjach programu Visual Studio
 W tym artykule opisano sposób lokalizowania, zgłaszania i eksportowania kluczy produktów z programu https://my.visualstudio.com/productkeys .  Aby uzyskać więcej informacji na temat aktywowania produktu przy użyciu klucza, wersji programu Key i licencji zbiorczych oraz dziennych limitów roszczeń dotyczących klucza produktu, przejdź do [omówienia kluczy produktów](product-keys.md).
@@ -20,7 +20,7 @@ W tym artykule opisano sposób lokalizowania, zgłaszania i eksportowania kluczy
 ## <a name="locating-and-claiming-product-keys"></a>Lokalizowanie i pojmowanie kluczy produktów
 Musisz się zalogować do subskrypcji programu Visual Studio, aby wyświetlić klucze produktów. Poszczególne klucze produktu można znaleźć, wybierając niebieskie łącze **Uzyskaj klucz** dla określonego produktu na stronie [pliki do pobrania](https://my.visualstudio.com/downloads) , jak pokazano poniżej.  Wszystkie klucze są również dostępne w agregacji na stronie [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Jeśli istnieje wiele kluczy dla pojedynczego produktu, w kolumnie uwagi zostanie wyświetlona informacja, która ułatwia zidentyfikowanie, który klucz ma być używany.
 > [!div class="mx-imgBorder"]
-> ![Pobierz klucz ze strony plików do pobrania](_img/product-keys/download-get-key.png "Na stronie informacje kliknij pozycję Pobierz klucz, aby pobrać klucz dla tego produktu.")
+> ![Pobierz klucz ze strony plików do pobrania](_img/product-keys/download-get-key.png "Wybierz pozycję Pobierz klucz na stronie informacje, aby pobrać klucz dla tego produktu.")
 
 Niektóre produkty łączą wiele wersji produktu w jeden plik do pobrania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
 Niektóre klucze są udostępniane automatycznie, takie jak klucze "static", których można użyć dowolną liczbę razy, ponieważ aktywacja nie jest wymagana. Inne klucze muszą zostać przejęte przez wybranie linku **Pobierz klucz** dla produktu.
@@ -50,7 +50,7 @@ Tylko subskrybenci z aktywnymi subskrypcjami mogą pobierać produkty i zgłasza
 
 Aby zgłosić klucz produktu:
 1. Zaloguj się do swojej subskrypcji programu Visual Studio.  Musisz się zalogować, aby pobrać produkty lub zatwierdzić klucze produktów.
-2. Kliknij kartę [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) .
+2. Wybierz kartę [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) .
 3. Klucze produktów są wyświetlane alfabetycznie według nazwy produktu.  Możesz albo przewinąć w dół do nazwy żądanego produktu, albo poszukać go za pomocą paska wyszukiwania w górnej części strony.
 > [!div class="mx-imgBorder"]
 > ![Wyszukaj klucz produktu](_img/product-keys/search-keys.png "Przewiń do żądanego produktu lub użyj pola wyszukiwania, aby szybko zlokalizować każdy produkt.")
@@ -64,9 +64,9 @@ Można wyeksportować listę wszystkich przejętych kluczy, a także duży wybó
 > [!IMPORTANT]
 > Jeśli subskrypcja wygaśnie, nie będzie już można żądać nowych kluczy ani eksportować pożądanych kluczy.
 
-Aby wyeksportować klucze, po prostu kliknij link **Eksportuj wszystkie klucze** z prawej strony na stronie klucze produktów.  Zostanie utworzony plik XML zatytułowany KeysExport.xml i będzie można otworzyć lub zapisać plik.  Otwarcie tego pliku jest możliwe przy użyciu aplikacji obsługującej pliki XML.  Na przykład możesz otworzyć ten plik jako skoroszyt tylko do odczytu w programie Excel.
+Aby wyeksportować klucze, po prostu wybierz link **Eksportuj wszystkie klucze** z prawej strony na stronie klucze produktów.  Zostanie utworzony plik XML zatytułowany KeysExport.xml i będzie można otworzyć lub zapisać plik.  Otwarcie tego pliku jest możliwe przy użyciu aplikacji obsługującej pliki XML.  Na przykład możesz otworzyć ten plik jako skoroszyt tylko do odczytu w programie Excel.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

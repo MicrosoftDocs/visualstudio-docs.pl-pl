@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281009"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249216"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 
@@ -44,7 +44,7 @@ Debuger programu Visual Studio można dołączyć do działającego procesu na k
 > [!TIP]
 > Nie masz pewności, czy chcesz użyć **dołączania do procesu** debugowania? Zobacz [typowe scenariusze debugowania](#BKMK_Scenarios).
 
-## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a>Dołączanie do uruchomionego procesu na komputerze lokalnym
+## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a> Dołączanie do uruchomionego procesu na komputerze lokalnym
 
 Aby szybko ponownie dołączyć do dołączonego wcześniej procesu, zobacz Ponowne [dołączanie do procesu](#BKMK_reattach).
 
@@ -85,7 +85,7 @@ Aby szybko ponownie dołączyć do dołączonego wcześniej procesu, zobacz Pono
 >[!NOTE]
 >Można dołączać do wielu aplikacji do debugowania, ale tylko jedna aplikacja jest aktywna w debugerze w danym momencie. Aktywną aplikację można ustawić na pasku narzędzi lub w oknie **procesy** **debugowania** programu Visual Studio.
 
-## <a name="attach-to-a-process-on-a-remote-computer"></a><a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>Dołączanie do procesu na komputerze zdalnym
+## <a name="attach-to-a-process-on-a-remote-computer"></a><a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Dołączanie do procesu na komputerze zdalnym
 
 Możesz również wybrać komputer zdalny w oknie dialogowym **Dołącz do procesu** , wyświetlić listę dostępnych procesów uruchomionych na tym komputerze, a następnie dołączyć do jednego lub kilku procesów debugowania. Zdalny debuger (*msvsmon.exe*) musi być uruchomiony na komputerze zdalnym. Aby uzyskać więcej informacji, zobacz [debugowanie zdalne](../debugger/remote-debugging.md).
 
@@ -157,7 +157,7 @@ Aby uzyskać pełniejsze instrukcje dotyczące debugowania aplikacji ASP.NET, kt
 
 W niektórych przypadkach podczas debugowania w ramach sesji Pulpit zdalny (usług terminalowych) na liście **dostępne procesy** nie będą wyświetlane wszystkie dostępne procesy. Jeśli używasz programu Visual Studio jako użytkownika z ograniczonym kontem użytkownika, lista **dostępne procesy** nie będzie zawierać procesów uruchomionych w sesji 0. Sesja 0 jest używana dla usług i innych procesów serwera, w tym *w3wp.exe*. Problem można rozwiązać, uruchamiając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] konto administratora lub uruchamiając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] z poziomu konsoli serwera zamiast z sesji usług terminalowych.
 
-Jeśli żadne z tych obejść nie jest możliwe, trzecią opcją jest dołączenie do procesu przez uruchomienie `vsjitdebugger.exe -p <ProcessId>` z wiersza polecenia systemu Windows. Identyfikator procesu można określić przy użyciu *tlist.exe*. Aby uzyskać *tlist.exe*, Pobierz i zainstaluj narzędzia debugowania dla systemu Windows, które są dostępne w [plikach WDK i WinDbg](/windows-hardware/drivers/download-the-wdk).
+Jeśli żadne z tych obejść nie jest możliwe, trzecią opcją jest dołączenie do procesu przez uruchomienie `vsjitdebugger.exe -p <ProcessId>` z wiersza polecenia systemu Windows. Identyfikator procesu można określić przy użyciu *tlist.exe*. Aby uzyskać *tlist.exe*, Pobierz i zainstaluj narzędzia debugowania dla systemu Windows, które są dostępne w  [plikach WDK i WinDbg](/windows-hardware/drivers/download-the-wdk).
 
 ::: moniker range=">= vs-2019"
 
@@ -165,7 +165,7 @@ Jeśli żadne z tych obejść nie jest możliwe, trzecią opcją jest dołączen
 
 Aby uzyskać więcej informacji, zobacz [zdalne debugowanie .NET Core działającego w systemie Linux przy użyciu protokołu SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a>Dołączanie do procesu działającego w kontenerze platformy Docker systemu Linux
+## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Dołączanie do procesu działającego w kontenerze platformy Docker systemu Linux
 
 Debuger programu Visual Studio można dołączyć do procesu działającego w kontenerze Docker platformy Linux .NET Core na komputerze lokalnym lub zdalnym przy użyciu okna dialogowego **Dołącz do procesu** .
 
@@ -199,17 +199,15 @@ Debuger programu Visual Studio można dołączyć do procesu działającego w ko
         ![Nawiązywanie połączenia z systemem zdalnym](../debugger/media/connect-remote-system.png "Nawiązywanie połączenia z systemem zdalnym")
         1. Wybierz uruchomiony kontener do dołączenia po pomyślnym nawiązaniu połączenia z protokołem SSH lub demonem, a następnie naciśnij przycisk **OK**.
 
-    
     1. ***Aby ustawić docelowy kontener zdalny, na którym działa proces za pośrednictwem [demona platformy Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
         1. Określ adres demona (tj. za pośrednictwem protokołu TCP, IP itp.) w obszarze **host platformy Docker (opcjonalnie)** , a następnie kliknij link Refresh (Odśwież).
         1. Wybierz uruchomiony kontener do dołączenia po pomyślnym nawiązaniu połączenia z demonem, a następnie naciśnij przycisk **OK**.
 
 4. Wybierz odpowiedni proces kontenera z listy **dostępnych procesów** , a następnie wybierz pozycję **Dołącz** , aby rozpocząć debugowanie procesu kontenera języka C# w programie Visual Studio.
 
-    ![Gotowe menu dołączone do platformy Docker](../debugger/media/docker-attach-complete.png "Ukończono menu dołączania Docker systemu Linux")
-    
+    ![Gotowe menu dołączone do platformy Docker](../debugger/media/docker-attach-complete.png "Ukończono menu dołączania Docker systemu Linux")    
 
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a>Dołączanie do procesu działającego w kontenerze platformy Docker systemu Windows
+## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Dołączanie do procesu działającego w kontenerze platformy Docker systemu Windows
 
 Debuger programu Visual Studio można dołączyć do procesu działającego w kontenerze platformy Docker systemu Windows na komputerze lokalnym przy użyciu okna dialogowego **Dołącz do procesu** .
 
@@ -238,21 +236,19 @@ Debuger programu Visual Studio można dołączyć do procesu działającego w ko
 4. Wybierz odpowiedni proces kontenera z listy **dostępnych procesów** , a następnie wybierz pozycję **Dołącz** , aby rozpocząć debugowanie procesu kontenera języka C#.
 
     ![Gotowe menu dołączone do platformy Docker](../debugger/media/docker-attach-complete-windows.png "Zakończono menu dołączania Docker systemu Windows")
-    
 
 5.  Wybierz odpowiedni proces kontenera z listy dostępnych procesów, a następnie wybierz pozycję **Dołącz** , aby rozpocząć debugowanie procesu kontenera języka C#.
 
-
 ::: moniker-end
 
-## <a name="reattach-to-a-process"></a><a name="BKMK_reattach"></a>Dołącz ponownie do procesu
+## <a name="reattach-to-a-process"></a><a name="BKMK_reattach"></a> Dołącz ponownie do procesu
 
 Można szybko ponownie dołączyć do procesów, do których wcześniej dołączono, wybierając **debugowanie**ponownie  >  **Dołącz do procesu** (**SHIFT** + **Alt** + **P**). Po wybraniu tego polecenia debuger natychmiast podejmie próbę dołączenia do ostatnich procesów, do których dołączono, najpierw próbując dopasować poprzedni identyfikator procesu i jeśli to się nie powiedzie, dopasowując do poprzedniej nazwy procesu. Jeśli nie znaleziono żadnych dopasowań lub jeśli kilka procesów ma taką samą nazwę, zostanie otwarte okno dialogowe **Dołącz do procesu** , aby można było wybrać właściwy proces.
 
 > [!NOTE]
 > Polecenie **ponownie Dołącz do procesu** jest dostępne w programie Visual Studio 2017.
 
-## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a>Typowe scenariusze debugowania
+## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a> Typowe scenariusze debugowania
 
 W poniższej tabeli przedstawiono kilka typowych scenariuszy debugowania z linkami do dodatkowych instrukcji, jeśli są dostępne, aby ułatwić określenie, czy należy użyć **dołączania do procesu** i dołączenia do niego. (Lista nie jest wyczerpująca).
 
@@ -270,7 +266,7 @@ Aby szybko wybrać uruchomiony proces do dołączenia, w programie Visual Studio
 |ASP.NET Core debugowania zdalnego na serwerze IIS|Korzystanie z zdalnych narzędzi i **dołączanie do procesu**|*w3wp.exe* lub *dotnet.exe*|Począwszy od platformy .NET Core 3, proces *w3wp.exe* jest używany dla domyślnego [modelu hostingu w aplikacji](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models). W przypadku wdrażania aplikacji zobacz [Publikowanie w usługach IIS](/aspnet/core/host-and-deploy/iis/). Aby uzyskać szczegółowe informacje, zobacz [zdalne debugowanie ASP.NET Core na zdalnym komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
 |Debugowanie skryptu po stronie klienta na lokalnym serwerze usług IIS, dla obsługiwanych typów aplikacji |Użyj **dołączania do procesu**|*chrome.exe*, *MicrosoftEdgeCP.exe*lub *iexplore.exe*|Debugowanie skryptów musi być włączone. Dla programu Chrome należy również uruchomić polecenie Chrome w trybie debugowania (typ `chrome.exe --remote-debugging-port=9222` z wiersza polecenia) i wybrać **JavaScript (Chrome)** w polu **Dołącz do** .|
 |Debugowanie aplikacji C#, Visual Basic lub C++ na komputerze lokalnym|Użyj standardowego debugowania (**F5**) lub **Dołącz do procesu**|*\<appname>. exe*|W większości scenariuszy należy używać debugowania standardowego i nie **dołączać do procesu**.|
-|Debugowanie zdalne aplikacji klasycznej systemu Windows|Narzędzia zdalne|Nie dotyczy| Zobacz [debugowanie zdalne w języku C# lub aplikacji Visual Basic](../debugger/remote-debugging-csharp.md) lub [zdalne debugowanie aplikacji w języku C++](../debugger/remote-debugging-cpp.md)|
+|Debugowanie zdalne aplikacji klasycznej systemu Windows|Zdalne narzędzia|Nie dotyczy| Zobacz [debugowanie zdalne w języku C# lub aplikacji Visual Basic](../debugger/remote-debugging-csharp.md) lub [zdalne debugowanie aplikacji w języku C++](../debugger/remote-debugging-cpp.md)|
 |Debugowanie programu .NET Core w systemie Linux|Użyj **dołączania do procesu**|*dotnet.exe*|Aby korzystać z protokołu SSH, zobacz [zdalne debugowanie programu .NET Core działającego w systemie Linux przy użyciu protokołu SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). W przypadku aplikacji kontenerowych zapoznaj się z poprzednimi sekcjami w tym artykule.|
 |Zdalne debugowanie Python w systemie Linux|Użyj **dołączania do procesu**|*debugpy*|Zobacz [dołączanie zdalnie z narzędzi Python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Debuguj aplikację ASP.NET na maszynie lokalnej po uruchomieniu aplikacji bez debugera|Użyj **dołączania do procesu**|*iiexpress.exe*|Może to być przydatne do szybszego ładowania aplikacji, takich jak (na przykład), podczas profilowania. |
@@ -286,7 +282,7 @@ W przypadku scenariuszy zdalnego debugowania trzeba mieć kod źródłowy (lub k
 
 W niektórych lokalnych scenariuszach debugowania można debugować w programie Visual Studio bez dostępu do źródła, jeśli w aplikacji znajdują się poprawne pliki symboli. Domyślnie wymaga to kompilacji debugowania. Aby uzyskać więcej informacji, zobacz [Określanie symboli i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="troubleshoot-attach-errors"></a><a name="BKMK_Troubleshoot_attach_errors"></a>Rozwiązywanie problemów z dołączaniem błędów
+## <a name="troubleshoot-attach-errors"></a><a name="BKMK_Troubleshoot_attach_errors"></a> Rozwiązywanie problemów z dołączaniem błędów
 
 W niektórych scenariuszach debuger może potrzebować pomocy w celu poprawnego zidentyfikowania typu kodu do debugowania. Jeśli wartości połączenia są ustawione prawidłowo (można wyświetlić poprawny proces na liście **dostępne procesy** ), ale debuger nie może dołączyć, spróbuj wybrać najbardziej odpowiedni typ połączenia na liście **Typ połączenia** , który może być wymagany, na przykład w przypadku debugowania aplikacji systemu Linux lub Python. Jeśli używasz domyślnego typu połączenia, możesz alternatywnie wybrać konkretny typ kodu, z którym chcesz się połączyć, zgodnie z opisem w dalszej części tej sekcji.
 

@@ -7,12 +7,12 @@ ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Dowiedz się, jak kupić subskrypcje programu Visual Studio w Microsoft Store i aktywować je w portalu subskrypcji programu Visual Studio.
-ms.openlocfilehash: 217c19ea0f8c4a793fc11a84eaa8f276960af3da
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903095"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247490"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Subskrypcje programu Visual Studio są dostępne za pomocą Microsoft Store
 Subskrypcje programu Visual Studio są dostępne za pomocą różnych kanałów, takich jak [Licencjonowanie zbiorowe](https://www.microsoft.com/licensing/default), dostawcy rozwiązań w chmurze, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)i Microsoft Store.  W tym artykule przedstawiono zakup i aktywowanie subskrypcji za pomocą [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
@@ -33,15 +33,15 @@ Każda z tych subskrypcji oferuje opcję dokonania początkowego zakupu lub odno
 ## <a name="how-to-activate-subscriptions"></a>Jak aktywować subskrypcje
 Po zakupie subskrypcji programu Visual Studio za pośrednictwem Microsoft Store można rozpocząć proces aktywacji ze strony potwierdzenia płatności lub wiadomości E-mail z potwierdzeniem, otrzymanej po dokonaniu zakupu.
 
-1. Kliknij **tutaj, aby zalogować** się w wiadomości e-mail z potwierdzeniem lub na stronie potwierdzenia zakupu.
+1. Wybierz **pozycję kliknij tutaj, aby zalogować** się w wiadomości e-mail z potwierdzeniem lub na stronie potwierdzenia zakupu.
 2. Nastąpi przekierowanie do [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) .
-3. Wprowadź adres e-mail, który wymaga dostępu do subskrypcji programu Visual Studio, a następnie kliknij przycisk **Kontynuuj**.
+3. Wprowadź adres e-mail, który wymaga dostępu do subskrypcji programu Visual Studio, a następnie wybierz pozycję **Kontynuuj**.
 4. Użytkownik może zostać przekierowany do jednej z dwóch różnych stron logowania w zależności od używanego typu konta:
     - Subskrybenci korzystający z osobistego konta Microsoft (MSA) będą widzieć stronę hasło do konta Microsoft.
     - Subskrybenci korzystający z kont służbowych zostaną przekierowani do strony logowania swojej organizacji.
 5. Wprowadź hasło lub Wypełnij wymagania dotyczące logowania w organizacji.
 6. Po pomyślnym zalogowaniu zostanie wyświetlone okno "Aktywuj Visual Studio Subscription".
-7. Wprowadź informacje o kluczu produktu dostępne na stronie potwierdzenia płatności lub w wiadomości E-mail z potwierdzeniem, a następnie kliknij przycisk **Aktywuj**.
+7. Wprowadź informacje o kluczu produktu dostępne na stronie potwierdzenia płatności lub w wiadomości E-mail z potwierdzeniem, a następnie wybierz pozycję **Aktywuj**.
 8. Subskrypcja powinna być teraz widoczna na stronie [subskrypcje](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) i powinna mieć dostęp do wszystkich korzyści z subskrypcji.
 
 ## <a name="support-for-microsoft-store"></a>Obsługa Microsoft Store
@@ -55,5 +55,5 @@ Jeśli masz pytania dotyczące kupowania za pomocą Microsoft Store, dostępna j
 
 ## <a name="next-steps"></a>Następne kroki
 Po aktywowaniu subskrypcji odwiedź stronę [korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie narzędzia, usługi, szkolenia i pomoc techniczną zawarte w subskrypcji.  Zalecamy skonfigurowanie tych korzyści, aby rozpocząć:
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

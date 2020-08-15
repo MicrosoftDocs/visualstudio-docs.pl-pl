@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ec98f8d17465e95369eb6e2ecd88051f8daa59
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330453"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247802"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analizowanie użycia pamięci za pomocą narzędzia alokacji obiektów platformy .NET
 
@@ -109,7 +109,7 @@ Widok **drzewa wywołań**   przedstawia ścieżki wykonywania funkcji, które
 - Przycisk **Rozwiń ścieżkę gorącą** powoduje wyróżnienie ścieżki wykonywania funkcji, która zawiera wiele obiektów przydzielających pamięć. Algorytm jest uruchamiany w węźle, który wybierzesz i podświetla ścieżkę najbardziej przydziałów.
 - Przycisk **Pokaż ścieżkę gorącą** pokazuje lub ukrywa symbole płomienia wskazujące, które węzły są częścią ścieżki aktywnej.
 
-### <a name="functions"></a>Funkcje
+### <a name="functions"></a>Functions
 
 ![Widok funkcji](../profiling/media/functionslight.png "Widok funkcji")
 
@@ -118,11 +118,11 @@ Widok **funkcji** zawiera procesy, moduły i funkcje, które są przydzielane pa
 - Kolumna **name** zawiera procesy jako węzły najwyższego poziomu. Procesy poniżej są modułami, a poniżej moduły są funkcjami.
 - Te kolumny zawierają te same informacje, co w widokach drzewa **alokacji** i **wywołań** :
 
-   - **Suma (przydziały)**
-   - **Własne (alokacje)**
-   - **Łączny rozmiar (w bajtach)**
-   - **Własny rozmiar (w bajtach)**
-   - **Średni rozmiar (w bajtach)**
+  - **Suma (przydziały)**
+  - **Własne (alokacje)**
+  - **Łączny rozmiar (w bajtach)**
+  - **Własny rozmiar (w bajtach)**
+  - **Średni rozmiar (w bajtach)**
 
 ### <a name="collection"></a>Kolekcja
 

@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
-ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453677"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248427"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -30,10 +30,10 @@ Na stronie korzyści subskrypcja w użyciu będzie widoczna w kolorze niebieskim
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Aby przełączać się między subskrypcjami, możesz:
 
-- Kliknij listę rozwijaną w prawym górnym rogu i wybierz subskrypcję z listy.
-- Kliknij kartę subskrypcje, a następnie kliknij żądaną subskrypcję.
+- Wybierz listę rozwijaną w prawym górnym rogu i wybierz subskrypcję z listy.
+- Wybierz kartę subskrypcje, a następnie wybierz odpowiednią subskrypcję.
   > [!div class="mx-imgBorder"]
-  > ![Przełączanie subskrypcji](_img/manage-vs-subscriptions/change-subscription-resized.png "Kliknij kartę subskrypcje, aby wyświetlić szczegółowe informacje o wszystkich subskrypcjach i przełączać się między nimi.")
+  > ![Przełączanie subskrypcji](_img/manage-vs-subscriptions/change-subscription-resized.png "Wybierz kartę subskrypcje, aby wyświetlić szczegółowe informacje o wszystkich subskrypcjach i przełączać się między nimi.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Jeśli Twoja subskrypcja nie jest widoczna...
 
@@ -68,17 +68,17 @@ Portal subskrypcje umożliwia tworzenie i Zarządzanie profilem, dzięki czemu z
 
 Informacje o kontakcie i preferencje można łatwo zmienić w Twoim profilu.
 
-1. Kliknij swoją nazwę w prawym górnym rogu portalu subskrybenta.
-2. Kliknij przycisk **Edytuj profil** .
+1. Wybierz swoją nazwę w prawym górnym rogu portalu subskrybenta.
+2. Wybierz przycisk **Edytuj profil** .
 3. Na karcie **informacje** można zmienić nazwę, adres e-mail, kraj/region, zdjęcie profilu i preferencje kontaktu. Na karcie **Preferencje** możesz wybrać preferowany język, wzorce daty i godziny, strefę czasową i motyw interfejsu użytkownika.
-4. Po sfinalizowaniu zmian kliknij przycisk **Zapisz**.
-5. Kliknij przycisk **Wstecz** w przeglądarce, aby powrócić do strony korzyści.
+4. Po sfinalizowaniu zmian wybierz pozycję **Zapisz**.
+5. Wybierz przycisk **Wstecz** w przeglądarce, aby powrócić do strony korzyści.
 
 ### <a name="setting-communications-preferences"></a>Ustawianie preferencji komunikacji
 Jeśli chcesz otrzymywać okresowe aktualizacje dotyczące subskrypcji i korzyści, w tym biuletyn comiesięcznych subskrypcji programu Visual Studio, [zaktualizuj swoje preferencje](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) , zaznaczając pole wyboru subskrypcje programu Visual Studio w profilu programu Visual Studio. Możesz zmienić te Preferencje i anulować subskrypcję w dowolnym momencie. 
 
    > [!div class="mx-imgBorder"]
-   > ![Ustawianie preferencji](_img/manage-vs-subscriptions/change-prefs.png "Kliknij pole wyboru wiadomości e-mail programu Visual Studio subskrypcje, aby otrzymywać aktualizacje.")
+   > ![Ustawianie preferencji](_img/manage-vs-subscriptions/change-prefs.png "Wybierz pole wyboru wiadomości e-mail programu Visual Studio subskrypcje, aby otrzymywać aktualizacje.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Łączenie subskrypcji z istniejącymi Azure DevOps Servicesami lub subskrypcjami platformy Azure
 Jeśli zalogujesz się do subskrypcji przy użyciu osobistego konto Microsoft (MSA) i masz subskrypcję obejmującą Azure DevOps Services lub Microsoft Azure przy użyciu konta służbowego zarządzanego przez platformę Azure, możesz połączyć te dwie subskrypcje. Jest to nazywane "alternatywnym kontem" i pozwala nadal korzystać z usługi MSA do logowania się do subskrypcji, gdy masz dostęp do istniejących zasobów platformy Azure, Azure DevOps Services lub IDE, które są skojarzone z kontami służbowymi.
@@ -88,11 +88,11 @@ Nawet jeśli oba konta używają tego samego adresu e-mail, musisz dodać swoje 
 Aby dodać alternatywne konto:
 
 1. Zaloguj się do [portalu subskrybenta](https://my.visualstudio.com?wt.mc_id=o~msft~docs) przy użyciu konta Microsoft (MSA).
-2. Kliknij kartę **subskrypcje** .
+2. Wybierz kartę **subskrypcje** .
 3. W obszarze **Linki pokrewne**wybierz pozycję **Dodaj alternatywne konto**.
-4. Wprowadź adres e-mail konta służbowego, a następnie kliknij przycisk **Dodaj**.
+4. Wprowadź adres e-mail konta służbowego i wybierz pozycję **Dodaj**.
 
-Po dodaniu alternatywnego konta możesz je zaktualizować lub usunąć w dowolnym momencie, klikając kartę **subskrypcje** i wybierając odpowiednią opcję w sekcji **Linki pokrewne** .
+Po dodaniu alternatywnego konta możesz je zaktualizować lub usunąć w dowolnym momencie, wybierając kartę **subskrypcje** i wybierając odpowiednią opcję w sekcji **Linki pokrewne** .
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -113,7 +113,7 @@ Odp.: w zależności od kanału zakupu firma Microsoft zachowuje dane klienta pr
 > - Jeśli zdecydujesz się zamknąć konto Microsoft lub usługę Azure AD, Twoje dane osobowe będą anonimowe od razu.
 > - Nie będziemy w pełni usuwać wszystkich Twoich danych osobowych, jeśli masz aktywne subskrypcje.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

@@ -1,21 +1,21 @@
 ---
-title: Narzędzia kontenera programu Visual Studio z ASP.NET Core i reagują na platformie. js
+title: Narzędzia kontenera programu Visual Studio z ASP.NET Core i React.js
 author: ghogen
 description: Dowiedz się, jak używać narzędzi kontenera programu Visual Studio i Docker for Windows
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182794"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249196"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Szybki Start: korzystanie z platformy Docker z aplikacją jednostronicową do reagowania w programie Visual Studio
 
-Za pomocą programu Visual Studio można łatwo kompilować, debugować i uruchamiać kontenery ASP.NET Core aplikacje, w tym za pomocą kodu JavaScript po stronie klienta, takich jak aplikacja do obsługi aplikacji jednostronicowych. js, a następnie publikować je w Azure Container Registry (ACR), Docker Hub, Azure App Service lub własnym rejestrze kontenerów. W tym artykule opublikujemy ACR.
+Za pomocą programu Visual Studio można łatwo kompilować, debugować i uruchamiać kontenery ASP.NET Core aplikacje, w tym za pomocą skryptów JavaScript po stronie klienta, takich jak React.js aplikacji jednostronicowej, i publikować je w Azure Container Registry (ACR), Docker Hub, Azure App Service lub własnym rejestrze kontenerów. W tym artykule opublikujemy ACR.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -43,9 +43,9 @@ W przypadku instalacji platformy Docker najpierw przejrzyj informacje na [pulpic
 
 ::: moniker range="vs-2017"
 1. Utwórz nowy projekt za pomocą szablonu **aplikacji sieci Web ASP.NET Core** .
-1. Wybierz pozycję **reagować. js**. Nie możesz wybrać opcji **Włącz obsługę platformy Docker**, ale nie martw się, możesz dodać tę obsługę po utworzeniu projektu.
+1. Wybierz **React.js**. Nie możesz wybrać opcji **Włącz obsługę platformy Docker**, ale nie martw się, możesz dodać tę obsługę po utworzeniu projektu.
 
-   ![Zrzut ekranu przedstawiający nowy projekt reaguje. js](media/container-tools-react/vs2017/new-react-project.png)
+   ![Zrzut ekranu przedstawiający nowy projekt React.js](media/container-tools-react/vs2017/new-react-project.png)
 
 1. Kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Dodaj** > **obsługę platformy Docker** , aby dodać pliku dockerfile do projektu.
 
@@ -55,9 +55,9 @@ W przypadku instalacji platformy Docker najpierw przejrzyj informacje na [pulpic
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Utwórz nowy projekt za pomocą szablonu **aplikacji sieci Web ASP.NET Core** .
-1. Wybierz pozycję **reagując. js**, a następnie kliknij pozycję **Utwórz**. Nie możesz wybrać opcji **Włącz obsługę platformy Docker**, ale nie martw się, możesz dodać tę obsługę później.
+1. Wybierz pozycję **React.js**, a następnie kliknij pozycję **Utwórz**. Nie możesz wybrać opcji **Włącz obsługę platformy Docker**, ale nie martw się, możesz dodać tę obsługę później.
 
-   ![Zrzut ekranu przedstawiający nowy projekt reaguje. js](media/container-tools-react/vs2019/new-react-project.png)
+   ![Zrzut ekranu przedstawiający nowy projekt React.js](media/container-tools-react/vs2019/new-react-project.png)
 
 1. Kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Dodaj** > **obsługę platformy Docker** , aby dodać pliku dockerfile do projektu.
 
@@ -72,7 +72,7 @@ Następny krok jest różny w zależności od tego, czy używane są kontenery s
 
 *Pliku dockerfile*, przepis dotyczący tworzenia końcowego obrazu platformy Docker, jest tworzony w projekcie. Opis poleceń znajdujących się w tym pliku można znaleźć w [dokumentacji pliku Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
-Otwórz *pliku dockerfile* w projekcie i Dodaj następujące wiersze, aby zainstalować Node. js 10. x w kontenerze. Pamiętaj, aby dodać te wiersze w pierwszej sekcji, aby dodać instalację węzła Menedżera pakietów *npm. exe* do obrazu podstawowego, a także w `build` sekcji.
+Otwórz *pliku dockerfile* w projekcie i Dodaj następujące wiersze, aby zainstalować Node.js 10. x w kontenerze. Pamiętaj, aby dodać te wiersze w pierwszej sekcji, aby dodać instalację Menedżera pakietów węzła *npm.exe* do obrazu podstawowego, a także w `build` sekcji.
 
 ```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
@@ -123,7 +123,7 @@ Otwórz plik projektu przez dwukrotne kliknięcie węzła projektu i zaktualizow
 Zaktualizuj pliku dockerfile przez dodanie następujących wierszy. Spowoduje to skopiowanie węzła i npm do kontenera.
 
    1. Dodaj ``# escape=` `` do pierwszego wiersza pliku dockerfile
-   1. Dodaj następujące wiersze przed`FROM … base`
+   1. Dodaj następujące wiersze przed `FROM … base`
 
       ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
@@ -133,7 +133,7 @@ Zaktualizuj pliku dockerfile przez dodanie następujących wierszy. Spowoduje to
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. Dodaj następujący wiersz przed i po`FROM … build`
+   1. Dodaj następujący wiersz przed i po `FROM … build`
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
@@ -177,13 +177,13 @@ Zaktualizuj pliku dockerfile przez dodanie następujących wierszy. Spowoduje to
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. Zaktualizuj plik dockerignore przez usunięcie `**/bin` .
+   1. Zaktualizuj plik dockerignore przez usunięcie `**/bin` .
 
 ## <a name="debug"></a>Debugowanie
 
 Wybierz pozycję **Docker** z listy rozwijanej debugowania na pasku narzędzi i rozpocznij debugowanie aplikacji. Może pojawić się komunikat z monitem o zaufać certyfikatowi; Wybierz relację zaufania certyfikatu, aby kontynuować.  Przy pierwszym kompilowaniu program Docker pobiera obrazy podstawowe, dzięki czemu może trwać nieco dłużej.
 
-Opcja **Narzędzia kontenera** w oknie **danych wyjściowych** pokazuje, jakie akcje są wykonywane. Powinny zostać wyświetlone kroki instalacji skojarzone z *npm. exe*.
+Opcja **Narzędzia kontenera** w oknie **danych wyjściowych** pokazuje, jakie akcje są wykonywane. Należy zapoznać się z procedurami instalacji skojarzonymi z *npm.exe*.
 
 W przeglądarce zostanie wyświetlona strona główna aplikacji.
 

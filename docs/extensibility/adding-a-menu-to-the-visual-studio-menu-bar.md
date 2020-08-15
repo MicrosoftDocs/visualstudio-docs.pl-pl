@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61321555a6896fad926d2ee38c5d73d50801d6b9
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.openlocfilehash: aa3ab53bbda2582d1a9b3c60ac07fd3617d51ddf
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86972351"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248781"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Dodawanie menu do paska menu programu Visual Studio
 
@@ -43,13 +43,13 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker range="vs-2017"
 
-2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań**wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) węzeł projektu, a następnie wybierz pozycję **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
+2. Po otwarciu projektu Dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksplorator rozwiązań**wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) węzeł projektu, a następnie wybierz pozycję **Dodaj**  >   **nowy element**. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na *TestCommand.cs*.
 
 ::: moniker-end
 
@@ -163,10 +163,10 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
 ::: moniker-end
 
-3. W menu **test menu** , kliknij **polecenie Testuj**.
+3. W menu **test menu** wybierz **polecenie Test**.
 
     Powinien pojawić się okno komunikatu z komunikatem "TestCommand wewnątrz TopLevelMenu. TestCommand. MenuItemCallback ()".
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

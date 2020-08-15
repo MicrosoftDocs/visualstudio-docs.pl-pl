@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 4e38084d4dc1e5095581846d0810ad44b742bcdf
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938955"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250556"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Zainstaluj program Visual Studio 2019 dla komputerów Mac
 
@@ -38,7 +38,7 @@ Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne 
 
     [![Kliknij dużą strzałkę, aby rozpocząć instalację.](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-3. Może zostać wyświetlone ostrzeżenie o aplikacji pobieranej z Internetu. Kliknij przycisk **Open** (Otwórz).
+3. Może zostać wyświetlone ostrzeżenie o aplikacji pobieranej z Internetu. Kliknij przycisk **Otwórz**.
 4. Zaczekaj, aż Instalator sprawdzi swój system:
 
     [![Instalator sprawdza system pod kątem zainstalowanych składników](media/install-checking-sml.png)](media/install-checking.png#lightbox)
@@ -53,18 +53,16 @@ Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne 
 
    Jeśli nie chcesz instalować wszystkich platform, Skorzystaj z poniższego przewodnika, aby ułatwić podjęcie decyzji o tym, które platformy instalować:
 
-
-|Typ aplikacji  |Środowisko docelowe  |Wybór  |Uwagi  |
-|---------|---------|---------|---------|
-|**Aplikacje korzystające z platformy Xamarin**| Xamarin.Forms|Wybierz platformy **Android** i **iOS** |Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/) |
-||Tylko system iOS|Wybierz platformę **iOS**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
-||Tylko system Android|Wybierz platformę **Android**|Pamiętaj, że należy również wybrać odpowiednie zależności|
-||Tylko Mac|Wybierz platformę **macOS (kakao)**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
-|**Aplikacje platformy .NET Core**|         |Wybierz platformę **.NET Core** .|         |
-|**Aplikacje internetowe ASP.NET Core**|         |Wybierz platformę **.NET Core** .|         |
-|**Azure Functions**|         |Wybierz platformę **.NET Core** .|         |
-|**Programowanie gier dla wielu platform w środowisku Unity**|         |Nie trzeba instalować dodatkowych platform poza Visual Studio dla komputerów Mac.| Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity, zapoznaj się z [przewodnikiem Instalatora aparatu Unity](/visualstudio/mac/setup-vsmac-tools-unity) .|
-
+   |Typ aplikacji  |Cel  |Wybór  |Uwagi  |
+   |---------|---------|---------|---------|
+   |**Aplikacje korzystające z platformy Xamarin**| Xamarin.Forms|Wybierz platformy **Android** i **iOS** |Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/) |
+   ||Tylko system iOS|Wybierz platformę **iOS**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
+   ||Tylko system Android|Wybierz platformę **Android**|Pamiętaj, że należy również wybrać odpowiednie zależności|
+   ||Tylko Mac|Wybierz platformę **macOS (kakao)**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
+   |**Aplikacje platformy .NET Core**|         |Wybierz platformę **.NET Core** .|         |
+   |**Aplikacje internetowe ASP.NET Core**|         |Wybierz platformę **.NET Core** .|         |
+   |**Azure Functions**|         |Wybierz platformę **.NET Core** .|         |
+   |**Programowanie gier dla wielu platform w środowisku Unity**|         |Nie trzeba instalować dodatkowych platform poza Visual Studio dla komputerów Mac.| Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity, zapoznaj się z [przewodnikiem Instalatora aparatu Unity](/visualstudio/mac/setup-vsmac-tools-unity) .|
 
 7. Po dokonaniu wyboru Naciśnij przycisk **Zainstaluj** .
 8. Instalator wyświetli postęp, gdy pobiera i instaluje Visual Studio dla komputerów Mac i wybrane obciążenia. Zostanie wyświetlony monit o wprowadzenie hasła w celu udzielenia uprawnień niezbędnych do instalacji.

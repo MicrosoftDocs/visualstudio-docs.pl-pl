@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2e5718740b9219ee988859e530591305394fb239
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284311"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250509"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
 
@@ -32,15 +32,15 @@ Wiele problemów może nie mieć żadnych odrębnych podpisów ani kroków do od
 
 Poniżej opisano problemy, które trudno zdiagnozować bez prawidłowych plików diagnostycznych. Po zidentyfikowaniu przypadku, który najlepiej opisuje Twój problem, postępuj zgodnie z instrukcjami dotyczącymi opinii specyficznymi dla tego przypadku.
 
--   [Awarie:](#crashes) Awaria występuje, gdy proces (Visual Studio) kończy się nieoczekiwanie.
+- [Awarie:](#crashes) Awaria występuje, gdy proces (Visual Studio) kończy się nieoczekiwanie.
 
--   Brak [odpowiedzi:](#unresponsiveness) VS przestaje odpowiadać przez dłuższy czas.
+- Brak [odpowiedzi:](#unresponsiveness) VS przestaje odpowiadać przez dłuższy czas.
 
--   [Problemy z spowolnieniem:](#slowness-and-high-cpu-issues) Każda określona akcja w programie VS jest wolniejsza niż wymagana
+- [Problemy z spowolnieniem:](#slowness-and-high-cpu-issues) Każda określona akcja w programie VS jest wolniejsza niż wymagana
 
--   [Wysoki procesor CPU:](#slowness-and-high-cpu-issues) Rozszerzone okresy nieoczekiwanie wysokiego użycia procesora CPU
+- [Wysoki procesor CPU:](#slowness-and-high-cpu-issues) Rozszerzone okresy nieoczekiwanie wysokiego użycia procesora CPU
 
--   [Problemy pozaprocesowe:](#out-of-process-issues) Problem spowodowany przez proces satelitarny programu Visual Studio
+- [Problemy pozaprocesowe:](#out-of-process-issues) Problem spowodowany przez proces satelitarny programu Visual Studio
 
 ## <a name="crashes"></a>Stąp
 Awaria występuje, gdy proces (Visual Studio) kończy się nieoczekiwanie.
@@ -57,14 +57,13 @@ Bezpośrednie odtwarzalne awarie to przypadki, które mają wszystkie następuj�
 
 Aby uzyskać te problemy, wykonaj kroki opisane w temacie "[Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i pamiętaj, aby uwzględnić następujące informacje:
 
--   Kroki prowadzące do odtworzenia problemu
+- Kroki prowadzące do odtworzenia problemu
 
--   Autonomiczny projekt Odtwórz, zgodnie z powyższym opisem. Jeśli autonomiczna Odtwórz nie jest możliwa, należy dołączyć:
+- Autonomiczny projekt Odtwórz, zgodnie z powyższym opisem. Jeśli autonomiczna Odtwórz nie jest możliwa, należy dołączyć:
 
-    -   Język otwartych projektów (C \# , C++ itd.)
+  - Język otwartych projektów (C \# , C++ itd.)
 
-    -   Rodzaj projektu (Aplikacja konsolowa, ASP.NET itp.)
-
+  - Rodzaj projektu (Aplikacja konsolowa, ASP.NET itp.)
 
 > [!NOTE]
 > **Najbardziej cenna opinia:** W takim przypadku najbardziej cenną opinią jest zestaw kroków służących do odtworzenia problemu wraz z przykładowym kodem źródłowym.
@@ -99,11 +98,11 @@ Za każdym razem, gdy program Visual Studio ulega awarii, utworzy plik zrzutu **
 
 Następnie użyj programu Visual Studio "Zgłoś problem..." ona. Umożliwi to dołączenie odpowiedniego zrzutu.
 
-1.  Zlokalizuj plik zrzutu dla zgłaszanej awarii (Poszukaj pliku o poprawnym czasie tworzenia)
+1. Zlokalizuj plik zrzutu dla zgłaszanej awarii (Poszukaj pliku o poprawnym czasie tworzenia)
 
-2.  Jeśli to możliwe, należy pliku zip ( \* . zip), aby zmniejszyć jego rozmiar przed przesłaniem opinii
+2. Jeśli to możliwe, należy pliku zip ( \* . zip), aby zmniejszyć jego rozmiar przed przesłaniem opinii
 
-3.  Wykonaj kroki opisane w temacie "[Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i Dołącz zrzut sterty do nowego elementu opinii.
+3. Wykonaj kroki opisane w temacie "[Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i Dołącz zrzut sterty do nowego elementu opinii.
 
 > [!NOTE] 
 > **Najbardziej cenna opinia:** W takim przypadku najbardziej cenną opinią jest zrzut sterty przechwytywany w chwili awarii.
@@ -135,33 +134,33 @@ Na przykład, jeśli wpisywanie i nawigacja jest niska, wykonaj poniższe czynno
 
 Aby uzyskać najlepsze wyniki przechwytywania wydajności, wykonaj następujące kroki:
 
-1.  Jeśli jeszcze nie działa, należy otworzyć kopię programu Visual Studio, w której będzie można odtworzyć problem.
+1. Jeśli jeszcze nie działa, należy otworzyć kopię programu Visual Studio, w której będzie można odtworzyć problem.
 
-    -   Mam wszystko skonfigurowane w celu odtworzenia problemu. Na przykład jeśli potrzebujesz określonego projektu do załadowania z określonym plikiem otwartym, upewnij się, że oba te kroki zostały wykonane przed kontynuowaniem.
+    - Mam wszystko skonfigurowane w celu odtworzenia problemu. Na przykład jeśli potrzebujesz określonego projektu do załadowania z określonym plikiem otwartym, upewnij się, że oba te kroki zostały wykonane przed kontynuowaniem.
 
-    -   Jeśli *nie* zgłaszasz problemu specyficznego dla ładowania rozwiązania, spróbuj odczekać 5-10 minut (lub więcej, w zależności od rozmiaru rozwiązania) po otwarciu rozwiązania przed zarejestrowaniem śladu wydajności. Proces ładowania rozwiązań tworzy dużą ilość danych, więc oczekiwanie na kilka minut pozwala nam skupić się na konkretnym wytworzonym problemie.
+    - Jeśli *nie* zgłaszasz problemu specyficznego dla ładowania rozwiązania, spróbuj odczekać 5-10 minut (lub więcej, w zależności od rozmiaru rozwiązania) po otwarciu rozwiązania przed zarejestrowaniem śladu wydajności. Proces ładowania rozwiązań tworzy dużą ilość danych, więc oczekiwanie na kilka minut pozwala nam skupić się na konkretnym wytworzonym problemie.
 
-2.  Rozpocznij drugą kopię programu Visual Studio *bez otwartego rozwiązania*
+2. Rozpocznij drugą kopię programu Visual Studio *bez otwartego rozwiązania*
 
-3.  W nowej kopii programu Visual Studio Otwórz narzędzie **Zgłoś problem**
+3. W nowej kopii programu Visual Studio Otwórz narzędzie **Zgłoś problem**
 
-4.  Postępuj zgodnie z instrukcjami w temacie [Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) do momentu osiągnięcia kroku "Podaj ślad i zrzut sterty (opcjonalnie)".
+4. Postępuj zgodnie z instrukcjami w temacie [Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) do momentu osiągnięcia kroku "Podaj ślad i zrzut sterty (opcjonalnie)".
 
-5.  Wybierz, aby zarejestrować pierwszą kopię programu Visual Studio (jeden napotkany problem z wydajnością) i Rozpocznij nagrywanie.
+5. Wybierz, aby zarejestrować pierwszą kopię programu Visual Studio (jeden napotkany problem z wydajnością) i Rozpocznij nagrywanie.
 
-    -   Zostanie wyświetlona aplikacja rejestratora kroków i rozpocznie się nagrywanie.
+    - Zostanie wyświetlona aplikacja rejestratora kroków i rozpocznie się nagrywanie.
 
-    -   **Podczas nagrywania** wykonaj działanie problematyczne w pierwszej kopii programu Visual Studio. Trudno jest poprawić konkretne problemy z wydajnością, jeśli nie są one wyświetlane w zarejestrowanym czasie.
+    - **Podczas nagrywania** wykonaj działanie problematyczne w pierwszej kopii programu Visual Studio. Trudno jest poprawić konkretne problemy z wydajnością, jeśli nie są one wyświetlane w zarejestrowanym czasie.
 
-    -   Jeśli akcja jest krótsza niż 30 sekund i można ją łatwo powtórzyć, powtórz tę czynność, aby bardziej zademonstrować problem.
+    - Jeśli akcja jest krótsza niż 30 sekund i można ją łatwo powtórzyć, powtórz tę czynność, aby bardziej zademonstrować problem.
 
-    -   W większości przypadków śledzenie 60 sekund jest wystarczające do zademonstrowania problemów, szczególnie jeśli problematyczna akcja zakończyła się (lub została powtórzona) przez więcej niż 30 sekund. Czas trwania można dostosować w miarę potrzeb, aby przechwytywać zachowanie, które chcesz naprawić.
+    - W większości przypadków śledzenie 60 sekund jest wystarczające do zademonstrowania problemów, szczególnie jeśli problematyczna akcja zakończyła się (lub została powtórzona) przez więcej niż 30 sekund. Czas trwania można dostosować w miarę potrzeb, aby przechwytywać zachowanie, które chcesz naprawić.
 
-6.  Kliknij pozycję "Zatrzymaj rekord" w rejestratorze kroków zaraz po zakończeniu operacji wolnej lub wysokiego procesora CPU, które chcesz zgłosić. Przetworzenie śledzenia wydajności może potrwać kilka minut.
+6. Kliknij pozycję "Zatrzymaj rekord" w rejestratorze kroków zaraz po zakończeniu operacji wolnej lub wysokiego procesora CPU, które chcesz zgłosić. Przetworzenie śledzenia wydajności może potrwać kilka minut.
 
-7.  Po zakończeniu nastąpi kilka załączników do Twojej opinii. Dołącz wszelkie dodatkowe pliki, które mogą pomóc odtworzyć problem (przykładowy projekt, zrzuty ekranu, wideo itp.).
+7. Po zakończeniu nastąpi kilka załączników do Twojej opinii. Dołącz wszelkie dodatkowe pliki, które mogą pomóc odtworzyć problem (przykładowy projekt, zrzuty ekranu, wideo itp.).
 
-8.  Prześlij opinię.
+8. Prześlij opinię.
 
 Podczas rejestrowania śladu wydajności, jeśli zbyt niska operacja lub wysoki procesor CPU jest na końcu, natychmiast zatrzymać nagranie. W przypadku zebrania zbyt dużej ilości informacji najstarsze informacje są zastępowane. Jeśli śledzenie nie zostanie wkrótce zatrzymane (w ciągu kilku sekund) po interesującej operacji, przydatne dane śledzenia zostaną nadpisywane.
 
@@ -183,13 +182,13 @@ Istnieje wiele procesów satelitarnych, które działają równolegle z programe
 
 Co sprawia, że te typy problemów są najbardziej funkcjonalne, należy dostarczyć dodatkowe dzienniki, które mogą być zbierane, wykonując następujące czynności:
 
-1.  Jeśli ten problem jest bezpośrednio powtarzalny, Zacznij od usunięcia folderu **% temp%/servicehub/Logs** . Jeśli nie można odtworzyć tego problemu, pozostaw ten folder bez zmian i zignoruj następujące punktory:
+1. Jeśli ten problem jest bezpośrednio powtarzalny, Zacznij od usunięcia folderu **% temp%/servicehub/Logs** . Jeśli nie można odtworzyć tego problemu, pozostaw ten folder bez zmian i zignoruj następujące punktory:
 
-    -   Ustaw globalną zmienną środowiskową **ServiceHubTraceLevel** na **wszystkie**
-    -   Odtwórz problem.
+    - Ustaw globalną zmienną środowiskową **ServiceHubTraceLevel** na **wszystkie**
+    - Odtwórz problem.
 
-2.  Pobierz [Narzędzie do](https://www.microsoft.com/download/details.aspx?id=12493)zbierania dzienników Microsoft Visual Studio i .NET Framework.
-3.  Uruchom narzędzie. Spowoduje to wyjście z pliku zip do **% temp%/vslogs.zip**. Dołącz ten plik do swojej opinii.
+2. Pobierz [Narzędzie do](https://www.microsoft.com/download/details.aspx?id=12493)zbierania dzienników Microsoft Visual Studio i .NET Framework.
+3. Uruchom narzędzie. Spowoduje to wyjście z pliku zip do **% temp%/vslogs.zip**. Dołącz ten plik do swojej opinii.
 
 ## <a name="see-also"></a>Zobacz też
 

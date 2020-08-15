@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902943"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249860"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
@@ -42,7 +42,7 @@ Po przypisaniu subskrypcji Karta Zarządzanie subskrybentami zawiera szczegóło
 
 W lewym górnym rogu strony istnieje kilka ikon, które można wybrać, aby wyświetlić przegląd przypisania subskrypcji, szczegóły umowy i raport dotyczący maksymalnego użycia.
 
-Aby wyświetlić dodatkowe informacje o liczbie licencji subskrypcji zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy, kliknij górną ikonę, aby włączyć panel slajdu.
+Aby wyświetlić dodatkowe informacje o liczbie licencji subskrypcji zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy, wybierz górną ikonę, aby włączyć panel slajdu.
 > [!div class="mx-imgBorder"]
 > ![Strona subskrybentów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
 

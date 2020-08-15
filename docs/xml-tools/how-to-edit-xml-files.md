@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85817206"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249509"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: edytowanie plików XML
 
@@ -22,7 +22,7 @@ Edytor XML jest nowym edytorem plików XML. Może być używany w autonomicznym 
 > [!NOTE]
 > Dokumenty XHTML są obsługiwane przez Edytor HTML.
 
-Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
+Aby edytować plik XML, Otwórz plik, który chcesz edytować.
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>Dodawanie nowego pliku XML do projektu
 
@@ -50,7 +50,7 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 2. Wybierz **plik XML** , aby utworzyć nowy plik XML; lub wybierz opcję **plik XSLT** , aby utworzyć nowy arkusz stylów XSLT.
 
-3. Kliknij przycisk **Open** (Otwórz).
+3. Wybierz pozycję **Otwórz**.
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Utwórz pusty projekt dla plików XML
 
@@ -62,7 +62,7 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 2. Wybierz wybrany język kodu, a następnie wybierz szablon **pusty projekt (.NET Framework)** .
 
-3. Kliknij przycisk **OK**.
+3. Wybierz przycisk **OK**.
 
 ::: moniker-end
 
@@ -70,9 +70,9 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
 1. Z menu **plik** wybierz pozycję **Nowy** > **projekt**.
 
-2. W polu wyszukiwania szablonu wprowadź **pusty projekt** , wybierz szablon **pusty projekt (.NET Framework)** , a następnie kliknij przycisk **dalej**.
+2. W polu wyszukiwania szablonu wprowadź **pusty projekt** , wybierz szablon **pusty projekt (.NET Framework)** , a następnie wybierz przycisk **dalej**.
 
-3. Kliknij pozycję **Utwórz**.
+3. Wybierz przycisk **Utwórz**.
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
    Edytor XML znajduje schematy dodawane do tego projektu i używa ich do sprawdzania poprawności i IntelliSense w dowolnym pliku XML, schemacie lub XSLT, który można edytować, gdy ten projekt jest otwarty.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor XML](../xml-tools/xml-editor.md)
 - [Właściwości dokumentu XML, okno właściwości](../xml-tools/xml-document-properties-properties-window.md)

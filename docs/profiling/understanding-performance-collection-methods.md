@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285754"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250777"
 ---
 # <a name="understand-performance-collection-methods"></a>Zrozumienie metod zbierania danych o wydajności
 
@@ -86,21 +86,21 @@ Liczniki wydajności procesora i oprogramowania można również zbierać przy u
 
 Profilowanie współbieżności zbiera informacje o aplikacjach wielowątkowych. Profilowanie rywalizacji o zasoby zbiera szczegółowe informacje o stosie wywołań, gdy konkurujące wątki oczekują na dostęp do zasobu udostępnionego. Wizualizacja współbieżności zbiera również bardziej ogólne informacje o sposobie interakcji aplikacji wielowątkowej z:
 
-  - Sam.
-  - Sprzęt.
-  - System operacyjny.
-  - Inne procesy na komputerze-hoście.
+- Sam.
+- Sprzęt.
+- System operacyjny.
+- Inne procesy na komputerze-hoście.
 
 Raporty rywalizacji o zasoby przedstawiają łączną liczbę rywalizacji. Zgłaszają one również łączny czas, przez który moduły, funkcje, wiersze kodu źródłowego i instrukcje oczekują na zasób. Wykresy osi czasu pokazują rywalizacje w miarę ich wystąpienia.
 
 Wizualizator współbieżności wyświetla informacje graficzne pomocne w odnalezieniu:
 
-  - Wąskie gardła wydajności.
-  - Niedostateczne wykorzystanie procesora CPU.
-  - Rywalizacja o wątki.
-  - Migracja wątku.
-  - Opóźnienia synchronizacji.
-  - Obszary nakładających się operacji we/wy.
+- Wąskie gardła wydajności.
+- Niedostateczne wykorzystanie procesora CPU.
+- Rywalizacja o wątki.
+- Migracja wątku.
+- Opóźnienia synchronizacji.
+- Obszary nakładających się operacji we/wy.
 
   Gdy jest to możliwe, graficzne dane wyjściowe łączą się z danymi z stosu wywołań i kodu źródłowego. Dane wizualizacji współbieżności można zbierać tylko dla aplikacji wiersza polecenia i aplikacji systemu Windows.
 

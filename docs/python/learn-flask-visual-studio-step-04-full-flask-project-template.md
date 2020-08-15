@@ -1,7 +1,7 @@
 ---
-title: Dowiedz się samouczek Kolby w programie Visual Studio krok 4, szablony projektów sieci Web
+title: Samouczek dotyczący kolby w programie Visual Studio krok 4, szablony projektów sieci Web
 titleSuffix: ''
-description: Przewodnik po podstawach flask w kontekście projektów programu Visual Studio, w szczególności funkcje dostarczone przez flask Web Project i Flask/Jade Web Project szablonów.
+description: Wskazówki dotyczące kolb w kontekście projektów programu Visual Studio, w tym funkcje udostępniane przez projekt sieci Web, kolby/Jade.
 ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -11,82 +11,82 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62957319"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250570"
 ---
-# <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Użyj pełnego szablonu projektu Flask Web Project
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4. Korzystanie z szablonu projektu sieci Web pełnej kolby
 
-**Poprzedni krok: [Obsługa plików statycznych, dodawanie stron i używanie dziedziczenia szablonów](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Poprzedni krok: [Obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
-Teraz, gdy zostały zbadane podstawy Flask przez tworzenie aplikacji na "Blank Flask App Project" szablon w programie Visual Studio, można łatwo zrozumieć pełniejszą aplikację, która jest produkowana przez szablon "Flask Web Project".
+Teraz, gdy znasz już podstawowe informacje o kolbie, tworząc aplikację na podstawie szablonu "pustej kolby projektu aplikacji" w programie Visual Studio, można łatwo zrozumieć aplikację, która jest tworzona przez szablon "Przeanalizuj projekt sieci Web".
 
-W tym kroku teraz:
+W tym kroku:
 
 > [!div class="checklist"]
-> - Tworzenie pełniejszej aplikacji internetowej Flask przy użyciu szablonu "Flask Web Project" i badanie struktury projektu (krok 4-1)
-> - Zrozumienie widoków i szablonów stron utworzonych przez szablon projektu, które składają się z trzech stron, które dziedziczą z szablonu strony podstawowej i które wykorzystują statyczne biblioteki JavaScript, takie jak jQuery i Bootstrap (krok 4-2)
-> - Opis routingu adresów URL dostarczonych przez szablon (krok 4-3)
+> - Utwórz kompletną aplikację sieci Web przy użyciu szablonu "Analizuj projekt sieci Web" i przejrzyj strukturę projektu (krok 4-1)
+> - Zapoznaj się z widokami i szablonami stron utworzonymi przez szablon projektu, które składają się z trzech stron, które dziedziczą z szablonu strony podstawowej i które wykorzystują statyczne biblioteki JavaScript, takie jak jQuery i Bootstrap (krok 4-2).
+> - Opis routingu URL dostarczonego przez szablon (krok 4-3)
 
-Ten artykuł dotyczy również szablonu "Flask/Jade Web Project", który tworzy aplikację identyczną z aplikacją "Flask Web Project" przy użyciu silnika szablonów Jade zamiast Jinja. Dodatkowe szczegóły znajdują się na końcu tego artykułu.
+Ten artykuł dotyczy również szablonu "Kolba/Jade projektu sieci Web", który tworzy aplikację, która jest identyczna z "projektem w sieci Web" przy użyciu aparatu tworzenia szablonów Jade zamiast jinja. Dodatkowe szczegóły znajdują się na końcu tego artykułu.
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 4-1: Tworzenie projektu na podstawie szablonu
 
-1. W programie Visual Studio przejdź do **programu Solution Explorer**, kliknij prawym przyciskiem myszy rozwiązanie **LearningFlask** utworzone wcześniej w tym samouczku i wybierz pozycję **Dodaj** > **nowy projekt**. (Alternatywnie, jeśli chcesz użyć nowego rozwiązania, wybierz **pozycję Plik** > **nowego** > **projektu).**
+1. W programie Visual Studio przejdź do **Eksplorator rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie **LearningFlask** utworzone wcześniej w tym samouczku, a następnie wybierz pozycję **Dodaj**  >  **Nowy projekt**. (Alternatywnie, jeśli chcesz użyć nowego rozwiązania, wybierz pozycję **plik**  >  **Nowe**  >  W zamian **projekt** ).
 
-1. W oknie dialogowym nowego projektu wyszukaj i wybierz szablon **Flask Web Project,** zadzwoń do projektu "FlaskWeb" i wybierz **przycisk OK**.
+1. W oknie dialogowym Nowy projekt Wyszukaj i wybierz szablon **projektu sieci Web z kolbą** , wywołaj projekt "FlaskWeb" i wybierz **przycisk OK**.
 
-1. Ponieważ szablon ponownie zawiera plik *requirements.txt,* visual studio pyta, gdzie zainstalować te zależności. Wybierz opcję **Zainstaluj w środowisku wirtualnym,** a następnie w oknie dialogowym **Dodaj środowisko wirtualne** wybierz pozycję **Utwórz,** aby zaakceptować wartości domyślne.
+1. Ponieważ szablon ponownie zawiera plik *requirements.txt* , program Visual Studio pyta, gdzie zainstalować te zależności. Wybierz opcję, **Zainstaluj w środowisku wirtualnym**, a następnie w oknie dialogowym **Dodawanie środowiska wirtualnego** wybierz pozycję **Utwórz** , aby zaakceptować ustawienia domyślne.
 
-1. Po zakończeniu konfigurowania środowiska wirtualnego w programie Visual Studio ustaw projekt **FlaskWeb** jako domyślny dla rozwiązania programu Visual Studio, klikając prawym przyciskiem myszy ten projekt w **Eksploratorze rozwiązań** i wybierając **pozycję Ustaw jako projekt uruchamiania.** Projekt uruchamiania, który jest wyświetlany pogrubioną czcionką, jest tym, co jest uruchamiane po uruchomieniu debugera.
+1. Gdy program Visual Studio zakończy Konfigurowanie środowiska wirtualnego, ustaw projekt **FlaskWeb** jako domyślny dla rozwiązania Visual Studio, klikając prawym przyciskiem myszy ten projekt w **Eksplorator rozwiązań** i wybierając pozycję **Ustaw jako projekt startowy**. Projekt startowy, który jest wyświetlany pogrubiony, jest uruchamiany po uruchomieniu debugera.
 
-    ![Eksplorator rozwiązań przedstawiający projekt FlaskWeb jako projekt startowy](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
+    ![Eksplorator rozwiązań pokazujący projekt FlaskWeb jako projekt startowy](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Wybierz **debugowanie** > **rozpocznij debugowanie** **(F5)** lub użyj przycisku Serwera sieci **Web** na pasku narzędzi, aby uruchomić serwer:
+1. Wybierz pozycję **Debuguj**  >  **Rozpocznij debugowanie** (**F5**) lub użyj przycisku **serwer sieci Web** na pasku narzędzi, aby uruchomić serwer:
 
-    ![Uruchamianie przycisku paska narzędzi serwera sieci Web w programie Visual Studio](media/flask/run-web-server-toolbar-button.png)
+    ![Przycisk paska narzędzi uruchamiania serwera sieci Web w programie Visual Studio](media/flask/run-web-server-toolbar-button.png)
 
-1. Aplikacja utworzona przez szablon ma trzy strony: Strona główna, Informacje i Kontakt, które można nawigować między za pomocą paska nawigacji. Poświęć minutę lub dwie, aby zbadać różne części aplikacji. Aby uwierzytelnić się za pomocą aplikacji za pomocą polecenia **Zaloguj,** użyj poświadczeń administratora utworzonych wcześniej.
+1. Aplikacja utworzona przez szablon ma trzy strony, Strona główna, informacje i kontakt, które są przełączane między przy użyciu paska nawigacyjnego. Poświęć minutę lub dwie, aby przeanalizować różne części aplikacji. Aby uwierzytelnić się w aplikacji za pomocą polecenia **Zaloguj** , użyj wcześniej utworzonych poświadczeń administratora.
 
-    ![Pełny widok przeglądarki aplikacji Flask Web Project](media/flask/step04-full-app-desktop-view.png)
+    ![Pełny widok przeglądarki dla aplikacji projektu sieci Web](media/flask/step04-full-app-desktop-view.png)
 
-1. Aplikacja stworzona przez szablon "Flask Web Project" używa Bootstrap do elastycznego układu, który pasuje do mobilnych rozmiarów. Aby zobaczyć tę responsywność, zmienić rozmiar przeglądarki na wąski widok, tak aby zawartość była renderowana w pionie, a pasek nawigacyjny zamienia się w ikonę menu:
+1. Aplikacja utworzona za pomocą szablonu "Kolba w sieci Web" używa programu Bootstrap do dynamicznego układu, który jest zgodny ze współczynnikiem formularza przenośnego. Aby wyświetlić ten czas odpowiedzi, Zmień rozmiar przeglądarki na wąski widok, aby zawartość była renderowana w pionie, a na pasku nawigacyjnym zostanie wyświetlona ikona menu:
 
-    ![Mobilny (wąski) widok aplikacji Flask Web Project](media/flask/step04-full-app-mobile-view.png)
+    ![Widok Mobile (wąski) dla aplikacji projektu sieci Web](media/flask/step04-full-app-mobile-view.png)
 
-1. Możesz pozostawić aplikację z uruchomiona dla sekcji, które należy wykonać.
+1. Możesz pozostawić aplikację działającą dla następujących sekcji.
 
-    Jeśli chcesz zatrzymać aplikację i [zatwierdzić zmiany w formancie źródłowym,](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)najpierw otwórz stronę **Zmiany** w **Eksploratorze zespołu,** kliknij prawym przyciskiem myszy folder środowiska wirtualnego (prawdopodobnie **env)** i wybierz pozycję **Ignoruj te elementy lokalne**.
+    Jeśli chcesz zatrzymać aplikację i [zatwierdzić zmiany w kontroli źródła](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), najpierw Otwórz stronę **zmiany** w **Team Explorer**, kliknij prawym przyciskiem myszy folder dla środowiska wirtualnego (prawdopodobnie **ENV**), a następnie wybierz polecenie **Ignoruj te elementy lokalne**.
 
 ### <a name="examine-what-the-template-creates"></a>Sprawdzanie, co tworzy szablon
 
-Szablon "Flask Web Project" tworzy strukturę poniżej. Zawartość jest bardzo podobna do zawartości utworzonej w poprzednich krokach. Różnica polega na tym, że szablon "Flask Web Project" zawiera więcej struktury w folderze *statycznym,* ponieważ zawiera jQuery i Bootstrap do responsywnego projektowania. Szablon dodaje również stronę kontaktową. Ogólnie rzecz biorąc, jeśli po poprzednich krokach w tym samouczku wszystko z szablonu powinno być znane.
+Szablon "Kolba" projektu sieci Web "tworzy strukturę poniżej. Zawartość jest bardzo podobna do utworzonych w poprzednich krokach. Różnica polega na tym, że szablon "projekt sieci Web" zawiera więcej struktur w folderze *statycznym* , ponieważ zawiera jQuery i Bootstrap na potrzeby projektowania. Szablon dodaje również stronę kontaktu. Ogólnie, jeśli wykonano poprzednie kroki w tym samouczku, wszystkie elementy z szablonu powinny być znane.
 
-- Pliki w katalogu głównym projektu:
-  - *runserver.py*, skrypt do uruchamiania aplikacji na serwerze deweloperów.
-  - *requirements.txt* zawierający zależność od Flask 0.x.
+- Pliki w folderze głównym projektu:
+  - *runserver.py*skrypt służący do uruchamiania aplikacji na serwerze deweloperskim.
+  - *requirements.txt* zawierający zależność od kolby 0. x.
 - Folder *FlaskWeb* zawiera wszystkie pliki aplikacji:
-  - init.py oznacza kod aplikacji jako moduł Języka Python, tworzy obiekt Flask i importuje widoki aplikacji. * \_ \_\_ *
+  - init.py oznacza kod aplikacji jako moduł języka Python, tworzy obiekt kolby i importuje widoki aplikacji. * \_ \_ \_ \_ *
   - *views.py* zawiera kod do renderowania stron.
-  - Folder *statyczny* zawiera podfoldery o nazwie *content* (pliki CSS), *czcionki* (pliki czcionek) i *skrypty* (pliki JavaScript).
-  - Folder *szablonów* zawiera szablon podstawowy *layout.html* wraz z *plikem about.html*, *contact.html*i *index.html* dla określonych stron, które rozszerzają *layout.html*.
+  - Folder *statyczny* zawiera podfoldery o nazwie *zawartość* (pliki CSS), *czcionki* (pliki czcionek) i *skrypty* (pliki JavaScript).
+  - Folder *templates* zawiera szablon podstawowy *layout.html* wraz z *about.html*, *contact.html*i *index.html* dla określonych stron, które zostały rozszerzone *layout.html*.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pytanie: Czy można udostępniać środowisko wirtualne między projektami programu Visual Studio?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pytanie: czy jest możliwe udostępnianie środowiska wirtualnego między projektami programu Visual Studio?
 
-Odpowiedź: Tak, ale zrób to ze świadomością, że różne projekty mogą używać różnych pakietów w czasie, a zatem udostępnione środowisko wirtualne musi zawierać wszystkie pakiety dla wszystkich projektów, które go używają.
+Odpowiedź: tak, ale należy to zrobić, korzystając z świadomości, że różne projekty mogą korzystać z różnych pakietów w miarę upływu czasu, dlatego udostępnione środowisko wirtualne musi zawierać wszystkie pakiety dla wszystkich projektów, które go używają.
 
 Niemniej jednak, aby użyć istniejącego środowiska wirtualnego, wykonaj następujące czynności:
 
-1. Po wyświetleniu monitu o zainstalowanie zależności w programie Visual Studio wybierz opcję **Zainstaluję je samodzielnie.**
-1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł **Środowiska języka Python** i wybierz polecenie Dodaj istniejące środowisko **wirtualne**.
-1. Przejdź do folderu zawierającego środowisko wirtualne i wybierz go, a następnie wybierz przycisk **OK**.
+1. Po wyświetleniu monitu o zainstalowanie zależności w programie Visual Studio wybierz opcję **zainstaluję je samodzielnie** .
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj istniejące środowisko wirtualne**.
+1. Przejdź do folderu zawierającego środowisko wirtualne i wybierz go, a następnie wybierz **przycisk OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4-2: Zrozumienie widoków i szablonów stron utworzonych przez szablon projektu
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4-2: informacje o widokach i szablonach stron utworzonych przez szablon projektu
 
-Jak obserwować po uruchomieniu projektu, aplikacja zawiera trzy widoki: Strona główna, Informacje i Kontakt. Kod tych widoków znajduje się w *flaskWeb/views.py*. Każda funkcja widoku `flask.render_template` po prostu wywołuje ze ścieżką do szablonu i zmienną listę argumentów dla wartości, które mają być podane do szablonu. Na przykład strona Informacje jest obsługiwana przez `about` funkcję (której dekorator udostępnia routing adresu URL):
+Po uruchomieniu projektu aplikacja zawiera trzy widoki: Home, about i Contact. Kod dla tych widoków znajduje się w *FlaskWeb/views. PR*. Każda funkcja widoku po prostu wywołuje `flask.render_template` ze ścieżką do szablonu i zmienną listę argumentów dla wartości, które mają zostać przekazane do szablonu. Na przykład strona informacje jest obsługiwana przez `about` funkcję (której dekoratora zapewnia Routing adresów URL):
 
 ```python
 @app.route('/about')
@@ -100,9 +100,9 @@ def about():
     )
 ```
 
-`home` Funkcje `contact` i funkcje są prawie identyczne, z podobnymi dekoratorami i nieco innymi argumentami.
+`home`Funkcje i `contact` są niemal identyczne, z podobnymi dekoratoryami i nieco różnymi argumentami.
 
-Szablony znajdują się w folderze *szablonów* aplikacji. Szablon podstawowy, *layout.html*, jest najbardziej obszerny. Odnosi się do wszystkich niezbędnych plików statycznych (JavaScript i CSS), definiuje blok o nazwie "zawartość", który inne strony zastępują, i udostępnia inny blok o nazwie "skrypty". Następujące fragmenty z adnotacjami z *layout.html* przedstawiają następujące konkretne obszary:
+Szablony znajdują się w folderze *Szablony* aplikacji. Szablon podstawowy, *layout.html*, jest najbardziej obszerny. Odnosi się do wszystkich niezbędnych plików statycznych (JavaScript i CSS), definiuje blok o nazwie "Content", który przesłonił inne strony i udostępnia inny blok o nazwie "Scripts" (skrypty). Następujące fragmenty z adnotacjami z *layout.html* pokazują następujące obszary:
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ Szablony znajdują się w folderze *szablonów* aplikacji. Szablon podstawowy, *
 </html>
 ```
 
-Poszczególne szablony stron, *about.html*, *contact.html*i *index.html*, każdy rozszerza szablon podstawowy *layout.html*. *about.html* jest najprostszy i `{% extends %}` `{% block content %}` pokazuje i tagi:
+Szablony poszczególnych stron, *about.html*, *contact.html*i *index.html*, każdy rozszerzy szablon podstawowy *layout.html*. *about.html* jest najprostszym i zawierającym `{% extends %}` `{% block content %}` znaczniki i:
 
 ```html
 {% extends "app/layout.html" %}
@@ -156,23 +156,23 @@ Poszczególne szablony stron, *about.html*, *contact.html*i *index.html*, każdy
 {% endblock %}
 ```
 
-*index.html* i *contact.html* używają tej samej struktury i zapewniają dłuższą zawartość w bloku "content".
+*index.html* i *contact.html* używają tej samej struktury i udostępniają zawartość dłuższa w bloku "Content" (zawartość).
 
-## <a name="the-flaskjade-web-project-template"></a>Szablon projektu sieci Web Flask/Jade
+## <a name="the-flaskjade-web-project-template"></a>Szablon projektu sieci Web kolby/Jade
 
-Jak wspomniano na początku tego artykułu, Visual Studio zapewniają "Flask/Jade Web Project" szablon, który tworzy aplikację, która jest wizualnie identyczne z tym, co jest produkowane przez "Flask Web Project". Podstawową różnicą jest to, że używa jadeitowego silnika szablonów, który jest rozszerzeniem do Jinja, który implementuje te same pojęcia z bardziej zwięzłym językiem. W szczególności Jade używa słów kluczowych zamiast tagów ujętych w ogranicznikach {% %} i umożliwia odwoływanie się do stylów CSS i elementów HTML przy użyciu słów kluczowych.
+Jak wspomniano na początku tego artykułu, program Visual Studio udostępnia szablon "kolby/Jade projektu sieci Web", który tworzy aplikację, która jest wizualnie identyczna z tym, co zostało utworzone przez "projekt sieci Web". Podstawowa różnica polega na tym, że używa aparatu Jade tworzenia szablonów, który jest rozszerzeniem Jinja, które implementuje te same koncepcje z bardziej zwięzłym językiem. W odniesieniu do Jade używa słów kluczowych zamiast tagów ujętych w ograniczniki {%%}, na przykład, i umożliwia odwoływanie się do stylów CSS i elementów HTML przy użyciu słów kluczowych.
 
-Aby włączyć Jade, szablon projektu najpierw zawiera pakiet pyjade w *pliku requirements.txt*.
+Aby włączyć Jade, szablon projektu najpierw zawiera pakiet pyjade w *requirements.txt*.
 
-Plik * \_ \_.py\_\_init* aplikacji zawiera wiersz
+Plik * \_ \_ init \_ \_ . PR* aplikacji zawiera wiersz do
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
 
-W folderze *szablony* są widoczne pliki *.jade* zamiast szablonów *.html,* a widoki w *views.py* odnoszą `flask.render_template`się do tych plików w ich połączeniach do . W przeciwnym razie kod widoków jest taka sama.
+W folderze *Szablony* widoczne są pliki *Jade* zamiast szablonów *html* , a widoki w *views.py* odnoszą się do tych plików w ramach wywołań do programu `flask.render_template` . W przeciwnym razie kod widoków jest taki sam.
 
-Otwierając jeden z plików *.jade,* możesz zobaczyć bardziej zwięzłe wyrażenie szablonu. Na przykład, oto zawartość *templates/layout.jade,* utworzona przez szablon "Flask/Jade Web Project":
+Otwarcie jednego z plików *. Jade* można zobaczyć bardziej zwięzłe wyrażenie szablonu. Załóżmy na przykład, że zawartość *szablonów/Layout. Jade* została utworzona przez szablon "Kolba/Jade projekt sieci Web":
 
 ```jade
 doctype html
@@ -214,7 +214,7 @@ html
     block scripts
 ```
 
-A oto zawartość *szablonów / about.jade*, pokazując `#{ <name>}` wykorzystanie dla symboli zastępczych:
+A Oto zawartość *szablonów/about. Jade*, które pokazują użycie `#{ <name>}` dla symboli zastępczych:
 
 ```jade
 extends layout
@@ -225,15 +225,15 @@ block content
   p Use this area to provide additional information.
 ```
 
-Zachęcamy do eksperymentowania zarówno z jinja i jade składni, aby zobaczyć, który z nich działa najlepiej dla Ciebie.
+Śmiało, aby eksperymentować ze składnią jinja i jade, aby zobaczyć, która z nich najlepiej sprawdza się.
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Szablon projektu sieci Web Sondy Kolby](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+> [Szablon projektu sieci Web kolby sondy](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
-## <a name="go-deeper"></a>Głębiej
+## <a name="go-deeper"></a>Przejdź głębiej
 
-- [Pisanie pierwszej aplikacji Flask, część 4 - formularze i widoki ogólne](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
-- [Jade na GitHib (Dokumentacja)](https://github.com/liuliqiang/pyjade) (github.com)
-- Kod źródłowy samouczka w usłudze GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Pisanie pierwszej kolby, część 4 — formularze i widoki ogólne](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
+- [Jade w witrynie GitHub (dokumentacja)](https://github.com/liuliqiang/pyjade) (GitHub.com)
+- Kod źródłowy samouczka w witrynie GitHub: [Microsoft/Python-Sample-vs-Learning-Kolba](https://github.com/Microsoft/python-sample-vs-learning-flask)

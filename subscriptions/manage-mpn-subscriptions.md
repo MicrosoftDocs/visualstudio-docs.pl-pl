@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: how-to
 description: Jak przypisać subskrypcje programu Visual Studio do użytkowników końcowych w przypadku partnerów MPN.
-ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902862"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250716"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Zarządzaj subskrypcjami programu Visual Studio oferowanymi za pomocą Microsoft Partner Network (MPN)
 Partnerzy, którzy uzyskają kompetencje lub kupują Action Pack w MPN, mogą korzystać z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane dla poszczególnych użytkowników i są prawidłowe tylko wtedy, gdy są przypisane do określonego użytkownika nazwanego, który działa dla firmy partnerskiej.
@@ -29,7 +29,7 @@ Subskrybent programu Microsoft Action Pack i subskrypcje programu Visual Studio
 6. Wybieranie **uprawnień**
 7. Wybierz **subskrypcje programu Visual Studio** (Uwaga: oczekująca aktualizacja subskrypcji programu Visual Studio)
 8. Wybierz żądaną **osobę**
-9. Kliknij przycisk **Prześlij**
+9. Wybierz pozycję **Prześlij**
 10. Osoba otrzyma wiadomość e-mail
 11. Przypisana osoba będzie mieć dostęp [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) do logowania
 12. Może zostać wyświetlona strona profilu programu Visual Studio, w tym:
@@ -43,7 +43,7 @@ Subskrybent programu Microsoft Action Pack i subskrypcje programu Visual Studio
 2. Wybieranie **uprawnień**
 3. Wybieranie **subskrypcji MSDN** (Uwaga: wkrótce zostanie oznaczona etykieta "subskrypcje programu Visual Studio")
 4. Znajdź żądaną **osobę**
-5. Kliknij przycisk **Prześlij**
+5. Wybierz pozycję **Prześlij**
 6. Osoba otrzyma wiadomość e-mail
 7. Przypisana osoba będzie mieć dostęp [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) do logowania
 8. Może zostać wyświetlona strona profilu programu Visual Studio

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: d90567e86d782a64f42f7fdbd06f295a5f130b3a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280866"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250849"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługa w chmurze platformy Azure może mieć co najmniej jedną rolę procesu roboczego lub sieci Web. Dla każdej roli należy zdefiniować sposób konfigurowania tej roli, a także skonfigurować sposób jej uruchamiania. Aby dowiedzieć się więcej o rolach w usługach w chmurze, zobacz [wprowadzenie do usługi Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -112,7 +112,7 @@ Przy użyciu innej wartości dla każdej konfiguracji usługi nie trzeba używa�
 
 1. W oknie dialogowym **Tworzenie parametrów połączenia magazynu** wybierz opcję **połączenia za pomocą programu**. Następnie postępuj zgodnie z instrukcjami dotyczącymi wybranej opcji:
 
-    - **Microsoft Azure emulatora magazynu** — w przypadku wybrania tej opcji pozostałe ustawienia w oknie dialogowym zostaną wyłączone, ponieważ mają zastosowanie tylko do platformy Azure. Wybierz przycisk **OK**.
+    - **Emulator magazynu Microsoft Azure** — w przypadku wybrania tej opcji pozostałe ustawienia w oknie dialogowym zostaną wyłączone, ponieważ mają zastosowanie tylko do platformy Azure. Wybierz przycisk **OK**.
     - **Twoja subskrypcja** — w przypadku wybrania tej opcji Użyj listy rozwijanej, aby wybrać i zalogować się do konto Microsoft lub dodać konto Microsoft. Wybierz subskrypcję platformy Azure i konto magazynu. Wybierz przycisk **OK**.
     - **Ręcznie wprowadzone poświadczenia** — wprowadź nazwę konta magazynu i klucz podstawowy lub drugi. Wybierz opcję **połączenia** (protokół HTTPS jest zalecany w przypadku większości scenariuszy). Wybierz **przycisk OK**.
 

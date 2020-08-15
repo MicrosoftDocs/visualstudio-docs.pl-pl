@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183668"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247584"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 
@@ -124,7 +124,7 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 
  Element może mieć zero lub więcej wartości metadanych. Wartości metadanych można zmienić w dowolnym momencie. Jeśli ustawisz metadane na wartość pustą, możesz skutecznie usunąć ją z kompilacji.
 
-### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a>Metadane elementu odwołania w pliku projektu
+### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> Metadane elementu odwołania w pliku projektu
 
  Metadane elementu można odwoływać w całym pliku projektu przy użyciu składni%( \<ItemMetadataName> ). Jeśli istnieje niejednoznaczność, można kwalifikować odwołanie przy użyciu nazwy typu elementu. Na przykład można określić%( \<ItemType.ItemMetaDataName> ). Poniższy przykład używa metadanych wyświetlania do wsadowego zadania wiadomości. Aby uzyskać więcej informacji o sposobach używania metadanych elementu na potrzeby tworzenia pakietów wsadowych, zobacz [metadane elementu w usłudze Batch zadania](../msbuild/item-metadata-in-task-batching.md).
 
@@ -144,11 +144,11 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </Project>
 ```
 
-### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a>Metadane dobrze znanego elementu
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Metadane dobrze znanego elementu
 
  Gdy element zostanie dodany do typu elementu, do tego elementu są przypisane pewne dobrze znane metadane. Na przykład wszystkie elementy mają dobrze znane metadane%( \<Filename> ), których wartość jest nazwą pliku elementu (bez rozszerzenia). Aby uzyskać więcej informacji, zobacz [dobrze znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).
 
-### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a>Przekształcanie typów elementów za pomocą metadanych
+### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> Przekształcanie typów elementów za pomocą metadanych
 
  Listy elementów można przekształcać na nowe listy elementów przy użyciu metadanych. Na przykład można przekształcić typ elementu `CppFiles` zawierający elementy, które reprezentują pliki *. cpp* , do odpowiedniej listy plików *. obj* przy użyciu wyrażenia `@(CppFiles -> '%(Filename).obj')` .
 
@@ -191,7 +191,7 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 
  Począwszy od .NET Framework 3,5, `Target` elementy mogą zawierać elementy elementu [Item](../msbuild/itemgroup-element-msbuild.md) , które mogą zawierać elementy Item. Atrybuty w tej sekcji są prawidłowe, jeśli są określone dla elementu w elemencie `ItemGroup` `Target` .
 
-### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a>Usuń atrybut
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> Usuń atrybut
 
  Ten `Remove` atrybut usuwa określone elementy (pliki) z typu elementu. Ten atrybut został wprowadzony w .NET Framework 3,5 (tylko wewnątrz elementów docelowych). W programie MSBuild 15,0 obsługiwane są zarówno elementy docelowe wewnątrz, jak i poza nią.
 
@@ -205,7 +205,7 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </Target>
 ```
 
-### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a>KeepMetadata — atrybut
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a> KeepMetadata — atrybut
 
  Jeśli element jest generowany w obiekcie docelowym, element Item może zawierać `KeepMetadata` atrybut. Jeśli ten atrybut jest określony, tylko metadane określone na liście rozdzielanej średnikami nazw będą transferowane z elementu źródłowego do elementu docelowego. Pusta wartość tego atrybutu jest równoważna z nieokreśleniem go. `KeepMetadata`Atrybut został wprowadzony w .NET Framework 4,5.
 
@@ -248,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a>RemoveMetadata — atrybut
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> RemoveMetadata — atrybut
 
  Jeśli element jest generowany w obiekcie docelowym, element Item może zawierać `RemoveMetadata` atrybut. Jeśli ten atrybut jest określony, wszystkie metadane są przesyłane z elementu źródłowego do elementu docelowego, z wyjątkiem metadanych, których nazwy są zawarte na liście rozdzielanych średnikami nazw. Pusta wartość tego atrybutu jest równoważna z nieokreśleniem go. `RemoveMetadata`Atrybut został wprowadzony w .NET Framework 4,5.
 
@@ -298,9 +298,9 @@ Output:
 -->
 ```
 
-### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a>KeepDuplicates — atrybut
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> KeepDuplicates — atrybut
 
- Jeśli element jest generowany w obiekcie docelowym, element Item może zawierać `KeepDuplicates` atrybut. `KeepDuplicates`jest `Boolean` atrybutem określającym, czy element powinien zostać dodany do grupy docelowej, jeśli element jest dokładny duplikat istniejącego elementu.
+ Jeśli element jest generowany w obiekcie docelowym, element Item może zawierać `KeepDuplicates` atrybut. `KeepDuplicates` jest `Boolean` atrybutem określającym, czy element powinien zostać dodany do grupy docelowej, jeśli element jest dokładny duplikat istniejącego elementu.
 
  Jeśli element źródłowy i docelowy mają tę samą wartość include, ale różne metadane, element jest dodawany nawet wtedy, gdy `KeepDuplicates` jest ustawiony na `false` . Pusta wartość tego atrybutu jest równoważna z nieokreśleniem go. `KeepDuplicates`Atrybut został wprowadzony w .NET Framework 4,5.
 
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Aktualizowanie metadanych dla elementów w elemencie ItemType poza elementem docelowym
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Aktualizowanie metadanych dla elementów w elemencie ItemType poza elementem docelowym
 
 Elementy poza obiektami docelowymi mogą mieć zaktualizowane metadane przy użyciu `Update` atrybutu. Ten atrybut **nie** jest dostępny dla elementów w obszarze obiekty docelowe.
 
@@ -593,10 +593,10 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
-- [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Instrukcje: Wybieranie plików do skompilowania](../msbuild/how-to-select-the-files-to-build.md)
