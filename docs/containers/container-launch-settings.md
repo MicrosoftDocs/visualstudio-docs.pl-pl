@@ -6,18 +6,19 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 07dd9dd4c5c61014eecf245719b142cdbaecbc38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283336"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247974"
 ---
 # <a name="container-tools-launch-settings"></a>Ustawienia uruchamiania narzędzi kontenera
 
 W folderze *Właściwości* w projekcie ASP.NET Core można znaleźć launchSettings.jsw pliku, który zawiera ustawienia kontrolujące sposób uruchamiania aplikacji sieci Web na komputerze deweloperskim. Aby uzyskać szczegółowe informacje na temat sposobu użycia tego pliku w programowaniu ASP.NET, zobacz [Używanie wielu środowisk w ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). W *launchSettings.jsna*, ustawienia w sekcji **Docker** dotyczą sposobu, w jaki program Visual Studio obsługuje aplikacje w kontenerach.
 
 ::: moniker range="vs-2017"
+
 ```json
     "Docker": {
       "commandName": "Docker",

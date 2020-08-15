@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat i zainstaluj Microsoft 365 aplikacje dla przedsiębiorstw
-ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902981"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250748"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 aplikacje dla przedsiębiorstw w subskrypcjach programu Visual Studio
 W wybranych subskrypcjach programu Visual Studio jest dostępna Microsoft 365 aplikacje dla przedsiębiorstw (dawniej Office 365 Pro Plus). 
@@ -25,30 +25,30 @@ Utwórz najlepszą swoją służbę. Pracuj wszędzie z aplikacjami, które są 
 ## <a name="activation-steps"></a>Kroki aktywacji
 Proces aktywowania aplikacji Microsoft 365 dla subskrypcji przedsiębiorstwa jest prosty.  Wykonaj następujące kroki, aby aktywować subskrypcję i zainstalować swoje aplikacje:
 
-1. Zaloguj się do subskrypcji programu Visual Studio w witrynie[https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-1. Znajdź kafelek Microsoft 365 aplikacje dla przedsiębiorstw, a następnie kliknij przycisk **Aktywuj**.
+1. Zaloguj się do subskrypcji programu Visual Studio w witrynie [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+1. Znajdź kafelek Microsoft 365 aplikacje dla przedsiębiorstw i wybierz pozycję **Aktywuj**.
    > [!div class="mx-imgBorder"]
-   > ![Kafelki Microsoft 365 aplikacje dla przedsiębiorstw](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Kliknij pozycję "Aktywuj", aby rozpocząć pracę z subskrypcją.")
+   > ![Kafelki Microsoft 365 aplikacje dla przedsiębiorstw](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Wybierz pozycję "Aktywuj", aby rozpocząć pracę z subskrypcją.")
 
-1. W oknie dialogowym "Zapraszamy, przyjrzyjmy się użytkownikowi" podaj żądane informacje kontaktowe, a następnie kliknij przycisk **dalej**.
+1. W oknie dialogowym "Zapraszamy, skontaktuj się z tobą" podaj żądane informacje kontaktowe, a następnie wybierz przycisk **dalej**.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplikacje dla firmowych informacji o kliencie](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "Wprowadź informacje kontaktowe")
 
-1. W oknie dialogowym "Tworzenie identyfikatora użytkownika" Utwórz nazwę użytkownika i hasło dla dzierżawy, a następnie kliknij pozycję **Utwórz moją konto**.
+1. W oknie dialogowym "Tworzenie identyfikatora użytkownika" Utwórz nazwę użytkownika i hasło dla dzierżawy, a następnie wybierz pozycję **Utwórz moją konto**.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplikacji do tworzenia identyfikatora użytkownika przedsiębiorstwa](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "Utwórz identyfikator użytkownika i hasło")
 
-1. Następnie zostanie wyświetlony monit o podanie kodu, aby udowodnić, że nie jesteś robotem.  Kod można wysłać do Ciebie jako wiadomość SMS.  Wprowadź kod i kliknij przycisk **dalej**. 
+1. Następnie zostanie wyświetlony monit o podanie kodu, aby udowodnić, że nie jesteś robotem.  Kod można wysłać do Ciebie jako wiadomość SMS.  Wprowadź kod i wybierz przycisk **dalej**. 
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplikacje dla przedsiębiorstw nie jesteś robotem](_img/microsoft-365-apps-for-enterprise/prove-youre-not-a-robot.png "Zażądaj kodu i wprowadź go, aby kontynuować")
 
-1. Po pomyślnym utworzeniu konta zobaczysz okno dialogowe z wyświetlaną stroną logowania w portalu usługi Office i nowym IDENTYFIKATORem użytkownika.  Zanotuj te informacje do późniejszego użycia, a następnie kliknij pozycję **Rozpocznij instalację** , aby rozpocząć instalowanie aplikacji Microsoft 365.
+1. Po pomyślnym utworzeniu konta zobaczysz okno dialogowe z wyświetlaną stroną logowania w portalu usługi Office i nowym IDENTYFIKATORem użytkownika.  Zanotuj te informacje do późniejszego użycia i wybierz pozycję **Rozpocznij instalację** , aby rozpocząć instalowanie aplikacji Microsoft 365.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 aplikacje dla przedsiębiorstw Zapisz te informacje](_img/microsoft-365-apps-for-enterprise/save-this-info.png "Zapisz nowy identyfikator użytkownika i link do portalu pakietu Office.")
 
-1. Użytkownik zostanie automatycznie zalogowany do portalu Office i będzie gotowy do instalacji aplikacji.  Kliknij przycisk **Instaluj** , aby rozpocząć.
+1. Użytkownik zostanie automatycznie zalogowany do portalu Office i będzie gotowy do instalacji aplikacji.  Wybierz przycisk **Zainstaluj** , aby rozpocząć.
    > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 aplikacji do zainstalowania w przedsiębiorstwie](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Kliknij przycisk "Zainstaluj", aby zainstalować swoje aplikacje.")
+   > ![Microsoft 365 aplikacji do zainstalowania w przedsiębiorstwie](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Wybierz przycisk "Zainstaluj", aby zainstalować swoje aplikacje.")
 1. Postępuj zgodnie z monitami, aby zainstalować wybrane aplikacje.  
 
 ## <a name="eligibility"></a>Kryteria
@@ -85,6 +85,6 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
-- [Program Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - Kredyty na korzystanie z [usługi Azure DevTest](vs-azure.md) Jeśli planujesz opracowywać aplikacje dla pakietu Office, chcesz aktywować [subskrypcję dewelopera pakietu Office](vs-office-dev.md)

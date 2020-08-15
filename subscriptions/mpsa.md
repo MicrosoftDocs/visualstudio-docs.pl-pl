@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
-ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289355"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247315"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
 Jeśli masz zakupione subskrypcje programu Visual Studio w programie MPSA, musisz znać kilka kwestii, aby móc stać się administratorem subskrypcji programu Visual Studio i przypisać subskrypcje użytkownikom. Jeśli użytkownik został już skonfigurowany jako administrator, możesz przejść bezpośrednio do [portalu administracyjnego](https://manage.visualstudio.com/)subskrypcji programu Visual Studio.
@@ -39,14 +39,14 @@ Poniżej przedstawiono kilka wymagań/kroków, które trzeba wykonać, aby zosta
 
 Po spełnieniu powyższych kryteriów można utworzyć skojarzenie konta zakupu z dzierżawcą, wykonując poniższe kroki.
 1. Zaloguj się do programu [Business Center](https://businessaccount.microsoft.com/Customer).
-2. Kliknij kartę **konto** i wybierz pozycję **Skojarz domeny**.
+2. Wybierz kartę **konto** i wybierz pozycję **Skojarz domeny**.
 3. Wybierz **konto zakupu** (Jeśli masz więcej niż jeden).
 4. Wybierz **dzierżawę** (np. contoso.onmicrosoft.com).
-5. Kliknij pozycję **Skojarz domenę**.
+5. Wybierz pozycję **Skojarz domenę**.
 
 Po skojarzeniu wszyscy użytkownicy spełniający kryteria będą zazwyczaj udostępniać Administratorzy subskrypcji programu Visual Studio w ciągu kilku minut. Jednak czasami może to potrwać do 24 godzin. Po zainicjowaniu obsługi dzierżawy będzie można uzyskać dostęp do portalu administracyjnego subskrypcji programu Visual Studio. Jeśli trwa to dłużej niż 24 godziny, skontaktuj się z pomocą techniczną usługi MPSA, wykonując następujące czynności:
-1. Połącz z<https://www.microsoft.com/licensing/mpsa/default>
-2. Kliknij menu **więcej** w górnej części strony. 
+1. Połącz z <https://www.microsoft.com/licensing/mpsa/default>
+2. Wybierz menu **więcej** w górnej części strony. 
 3. Wybierz **Pomoc techniczną**
 4. Wybierz **Pomoc techniczną licencjonowania**
 5. Wybierz opcję pomocy technicznej, która najlepiej odpowiada Twoim potrzebom. 

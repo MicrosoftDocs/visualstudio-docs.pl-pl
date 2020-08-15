@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Dowiedz się, jak aktywować usługę Azure DevTest z korzyściami z tytułu skorzystania z subskrypcji programu Visual Studio.
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902918"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247323"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Używanie Microsoft Azure w subskrypcjach programu Visual Studio
 Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
@@ -20,19 +20,19 @@ Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dod
 ## <a name="activation-steps"></a>Kroki aktywacji
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Znajdź kafelek platformy Azure w sekcji Tools na stronie korzyści, a następnie kliknij pozycję **Aktywuj** link w dolnej części kafelka korzyści.
+2. Znajdź kafelek platformy Azure w sekcji Tools na stronie korzyści i wybierz pozycję **Aktywuj** link w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
    > ![Kafelek platformy Azure](_img/vs-azure/vs-azure-tile.png)
 
-3. Jeśli nie masz istniejącej subskrypcji platformy Azure, zostanie wyświetlony monit o wypełnienie wymaganych informacji w celu utworzenia subskrypcji platformy Azure.  Pierwszym krokiem jest podanie informacji osobistych, a następnie kliknięcie **przycisku Dalej**.
+3. Jeśli nie masz istniejącej subskrypcji platformy Azure, zostanie wyświetlony monit o wypełnienie wymaganych informacji w celu utworzenia subskrypcji platformy Azure.  Pierwszym krokiem jest podanie informacji osobistych, a następnie wybranie **przycisku Dalej**.
    > [!div class="mx-imgBorder"]
    > ![Rejestracja na platformie Azure](_img/vs-azure/vs-azure-about-you.png)
 
-4. Następnie musisz zweryfikować swoją tożsamość przy użyciu prostego kodu weryfikacyjnego. Podaj numer telefonu, a następnie wybierz, czy chcesz otrzymać kod za pomocą tekstu, czy telefonu.  Wprowadź otrzymany kod, a następnie kliknij przycisk **Weryfikuj kod**.   
+4. Następnie musisz zweryfikować swoją tożsamość przy użyciu prostego kodu weryfikacyjnego. Podaj numer telefonu, a następnie wybierz, czy chcesz otrzymać kod za pomocą tekstu, czy telefonu.  Wprowadź otrzymany kod, a następnie wybierz pozycję **Weryfikuj kod**.   
    > [!div class="mx-imgBorder"]
    > ![Trwa przygotowywanie platformy Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. W przypadku kroku końcowego kliknij pole wyboru, aby zaakceptować warunki, a następnie kliknij pozycję **Utwórz konto**.  To wszystko!
+5. W przypadku kroku końcowego zaznacz pole wyboru, aby zaakceptować warunki, a następnie wybierz pozycję **Utwórz konto**.  To wszystko!
    > [!div class="mx-imgBorder"]
    > ![Trwa przygotowywanie platformy Azure](_img/vs-azure/vs-azure-agreement.png)
 
@@ -111,7 +111,7 @@ Odp.: własność intelektualna utworzona przez pracownika utworzonego w ramach 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy dotyczącej platformy Azure?  Zapoznaj się z tymi zasobami:
-  - Pomoc techniczna:[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - Pomoc techniczna: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Wskazówki dotyczące platformy Azure & sztuczki](https://microsoft.github.io/AzureTipsAndTricks/ "Wskazówki dotyczące platformy Azure & sztuczki") 
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).

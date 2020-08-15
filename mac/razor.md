@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
-ms.openlocfilehash: 008052c9b78f93b84e650329cd7ebaf6200d21f1
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950529"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249538"
 ---
 # <a name="create-razor-web-apps"></a>Tworzenie aplikacji sieci Web Razor
 
@@ -48,10 +48,10 @@ Aplikacje sieci Web Razor zawierają następujące składniki.
 ### <a name="pages-folder"></a>Folder stron
 
 Ten folder zawiera strony sieci Web projektu wraz z kodem związanym z każdym z nich:
-   - Plik * \* . cshtml* dla znaczników HTML i składnia Razor.
-   - Plik * \* . cshtml.cs* dla kodu w języku C# służący do obsługi zdarzeń na stronach.
+- Plik * \* . cshtml* dla znaczników HTML i składnia Razor.
+- Plik * \* . cshtml.cs* dla kodu w języku C# służący do obsługi zdarzeń na stronach.
 
-Pliki pomocnicze mają nazwy zaczynające się od znaku podkreślenia. Na przykład plik _Layout. cshtml służy do konfigurowania elementów interfejsu użytkownika wspólnych dla wszystkich stron. Ten plik konfiguruje menu nawigacji w górnej części strony i informacje o prawach autorskich u dołu. Aby uzyskać więcej informacji, zobacz [Układ w ASP.NET Core](/aspnet/core/mvc/views/layout).
+Pliki pomocnicze mają nazwy zaczynające się od znaku podkreślenia. Na przykład plik * \_ Layout. cshtml* służy do konfigurowania elementów interfejsu użytkownika wspólnych dla wszystkich stron. Ten plik konfiguruje menu nawigacji w górnej części strony i informacje o prawach autorskich u dołu. Aby uzyskać więcej informacji, zobacz [Układ w ASP.NET Core](/aspnet/core/mvc/views/layout).
 
 ### <a name="launch-settings"></a>Ustawienia uruchamiania
 
@@ -75,6 +75,6 @@ Ten plik zawiera punkt wejścia dla programu. Aby uzyskać więcej informacji, z
 
 Ten plik zawiera kod konfigurujący zachowanie aplikacji, na przykład czy aplikacja wymaga zgody na pliki cookie. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji w ASP.NET Core](/aspnet/core/fundamentals/startup).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 Aby uzyskać bardziej obszerny przewodnik tworzenia aplikacji sieci Web Razor, zobacz [wprowadzenie do Razor Pages w ASP.NET Core](/aspnet/core/razor-pages/index).
