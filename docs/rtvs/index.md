@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 89aa8b9d1b1f288e19252b8a111666f5b4e3e087
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "73189244"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238715"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Praca z językiem R w programie Visual Studio
 
@@ -31,23 +31,21 @@ Aby korzystać z języka R w programie Visual Studio, wykonaj następujące czyn
 
 Następnie skorzystaj z poniższych linków, aby dowiedzieć się więcej na temat funkcji związanych z językiem R, a także ogólnych możliwości programu Visual Studio.
 
-| Funkcja | Opis | Ogólna dokumentacja programu Visual Studio |
+| Cechy | Opis | Ogólna dokumentacja programu Visual Studio |
 | --- | --- | --- |
 | [System projektu programu Visual Studio](r-projects-in-visual-studio.md) | Organizuj powiązane pliki i zarządzaj nimi w wygodnej strukturze oraz korzystaj z przydatnych szablonów dla elementów takich jak kod języka R, dokumentacja języka R, znaczniki R Markdown, zapytania SQL i procedury składowane. Możesz także korzystać z [menedżera pakietów](r-package-manager-in-visual-studio.md) oraz [integracji programu SQL Server](integrating-sql-server-with-r.md).  | [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Obszar roboczy](r-workspaces-in-visual-studio.md) | Narzędzia RTVS można powiązać z lokalnymi i zdalnymi obszarami roboczymi, co pozwala na pisanie kodu R lokalnie przy użyciu mniejszych zestawów danych, a następnie uruchamianie kodu na bardziej zaawansowanych komputerach opartych na chmurze ze znacznie większymi zestawami danych. | n/d |
-| [Opcje narzędzi języka R](options-for-r-tools-in-visual-studio.md) | Kontroluj różne aspekty narzędzi RTVS. | [Okno dialogowe Opcje](../ide/reference/options-dialog-box-visual-studio.md) |
+| [Workspace](r-workspaces-in-visual-studio.md) | Narzędzia RTVS można powiązać z lokalnymi i zdalnymi obszarami roboczymi, co pozwala na pisanie kodu R lokalnie przy użyciu mniejszych zestawów danych, a następnie uruchamianie kodu na bardziej zaawansowanych komputerach opartych na chmurze ze znacznie większymi zestawami danych. | nie dotyczy |
+| [Opcje narzędzi języka R](options-for-r-tools-in-visual-studio.md) | Kontroluj różne aspekty narzędzi RTVS. | [Opcje — Okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md) |
 | [Zaawansowane edytowanie, IntelliSense i fragmenty kodu](editing-r-code-in-visual-studio.md) | Zawiera kolorowanie składni, funkcję [IntelliSense](r-intellisense.md) w całym kodzie i wszystkich bibliotekach, formatowanie kodu, pomoc dotyczącą sygnatury, funkcję Przejdź do definicji, funkcję Znajdź wszystkie odwołania, [fragmenty kodu](code-snippets-for-r.md) i inne funkcje. | [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [Znaczniki R Markdown](rmarkdown-with-r-in-visual-studio.md) | Dokumenty ze znacznikami R Markdown ułatwiają udostępnianie wyników danych przy użyciu zintegrowanego kodu języka R w blokach kodu Markdown. | n/d |
-| [Okno interaktywne](interactive-repl-for-r-in-visual-studio.md) | Zapewnia pełne środowisko REPL dla języka R z możliwością łatwego uruchamiania kodu w pliku źródłowym w oknie interaktywnym. | n/d |
-| [Wizualizowanie danych](visualizing-data-with-r-in-visual-studio.md) | Kreślenie jest integralną częścią środowiska języka R, a narzędzia RTVS obsługują wiele niezależnych okien wykresów, z których każde ma własną historię i możliwość przenoszenia wykresów między oknami. Wykresy można zapisywać w plikach map bitowych i PDF albo kopiować do schowka jako mapy bitowe lub metapliki.  | n/d |
-| [Eksplorator zmiennych](variable-explorer.md) | Sprawdzaj zmienne w zakresach globalnych lub specyficznych dla pakietów z możliwością wyświetlania sortowalnych tabel i eksportowania do pliku CSV. | n/d |
-| [W pełni funkcjonalne debugowanie](debugging-r-in-visual-studio.md) | Obejmuje integrację z oknem interaktywnym. | [Debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md) |
+| [Znaczniki R Markdown](rmarkdown-with-r-in-visual-studio.md) | Dokumenty ze znacznikami R Markdown ułatwiają udostępnianie wyników danych przy użyciu zintegrowanego kodu języka R w blokach kodu Markdown. | nie dotyczy |
+| [Okno interaktywne](interactive-repl-for-r-in-visual-studio.md) | Zapewnia pełne środowisko REPL dla języka R z możliwością łatwego uruchamiania kodu w pliku źródłowym w oknie interaktywnym. | nie dotyczy |
+| [Wizualizowanie danych](visualizing-data-with-r-in-visual-studio.md) | Kreślenie jest integralną częścią środowiska języka R, a narzędzia RTVS obsługują wiele niezależnych okien wykresów, z których każde ma własną historię i możliwość przenoszenia wykresów między oknami. Wykresy można zapisywać w plikach map bitowych i PDF albo kopiować do schowka jako mapy bitowe lub metapliki.  | nie dotyczy |
+| [Eksplorator zmiennych](variable-explorer.md) | Sprawdzaj zmienne w zakresach globalnych lub specyficznych dla pakietów z możliwością wyświetlania sortowalnych tabel i eksportowania do pliku CSV. | nie dotyczy |
+| [W pełni funkcjonalne debugowanie](debugging-r-in-visual-studio.md) | Obejmuje integrację z oknem interaktywnym. | [Debugowanie w Visual Studio](../debugger/debugger-feature-tour.md) |
 
 Zobacz także [Często zadawane pytania](faq.md).
 
-|   |   |
-|---|---|
-| ![ikona kamery dla filmu wideo](../install/media/video-icon.png "Obejrzyj film") | [Obejrzyj klip wideo (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ), aby zapoznać się z omówieniem narzędzi języka R dla programu Visual Studio (12m 36s). Zobacz też [więcej klipów wideo dotyczących narzędzi języka R](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
+![ikona kamery dla wideo](../install/media/video-icon.png "Obejrzyj film") [Obejrzyj wideo (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ), aby zapoznać się z omówieniem rozszerzenia R Tools for Visual Studio (12 min 36 s). Zobacz też [więcej klipów wideo dotyczących narzędzi języka R](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio).
 
 ## <a name="send-us-your-feedback"></a>Wyślij nam swoją opinię!
 
