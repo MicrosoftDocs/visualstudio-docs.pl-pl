@@ -567,6 +567,8 @@
                   href: ca1835.md
                 - name: 'CA1836: Preferuj metodę IsEmpty względem metody Count, jeśli jest dostępna'
                   href: ca1836.md
+                - name: 'CA1838: Unikaj parametrów StringBuilder dla elementów P/Invoke'
+                  href: ca1838.md
             - name: Ostrzeżenia dotyczące przenośności
               items:
                 - name: Omówienie
