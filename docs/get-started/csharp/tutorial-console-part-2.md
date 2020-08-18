@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: aae83c43a106fd68b03a83124ad2ddcea4652c8d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87377173"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507959"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Samouczek: zwiększanie prostej aplikacji konsolowej w języku C#
 
-W tym samouczku dowiesz się, jak za pomocą programu Visual Studio zwiększyć aplikację konsolową utworzoną w pierwszej części. Poznasz niektóre funkcje programu Visual Studio, które ułatwiają wydajniejszą pracę deweloperom, takim jak korzystanie z zaawansowanych funkcji edytora i debugowanie.
+W tym samouczku dowiesz się, jak za pomocą programu Visual Studio zwiększyć aplikację konsolową utworzoną w pierwszej części. Poznasz niektóre funkcje programu Visual Studio, które będą potrzebne do codziennego opracowywania, na przykład zarządzanie wieloma projektami i odwoływanie się do pakietów innych firm.
 
 Po ukończeniu [pierwszej części](tutorial-console.md) tej serii masz już aplikację konsolową Kalkulator.  Aby pominąć część 1, możesz zacząć od otwarcia projektu z repozytorium GitHub. Aplikacja kalkulatora języka C# znajduje się w [repozytorium vs-samouczek-przykłady](https://github.com/MicrosoftDocs/vs-tutorial-samples), więc możesz wykonać kroki opisane w [samouczku: Otwórz projekt z repozytorium](../tutorial-open-project-from-repo.md) , aby rozpocząć pracę.
 

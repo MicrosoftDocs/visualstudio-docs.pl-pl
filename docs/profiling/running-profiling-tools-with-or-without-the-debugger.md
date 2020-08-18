@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45632967c39348e8dc78dc3e2fb95227dcd86d7d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285920"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508083"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
@@ -33,7 +33,7 @@ Aby pomóc w wyborze narzędzi i wyników do użycia, należy wziąć pod uwagę
 - Debuger zmienia czasy wydajności, ponieważ wymaga operacji debugera, takich jak przechwycenie zdarzeń ładowania wyjątków i modułów.
 - Numery wydajności kompilacji wersji w narzędziach profilera wydajności są najbardziej precyzyjne i dokładne. Debuger — wyniki narzędzia zintegrowanego są najbardziej przydatne do porównania z innymi pomiarami związanymi z debugowaniem.
 
-## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieraj dane profilowania podczas debugowania
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieraj dane profilowania podczas debugowania
 
 Po rozpoczęciu debugowania w programie Visual Studio, wybierając **Debuguj**  >  **Rozpocznij debugowanie**lub naciskając klawisz **F5**, domyślnie zostanie wyświetlone okno **Narzędzia diagnostyczne** . Aby otworzyć go ręcznie, wybierz pozycję **Debuguj**  >  **okna**  >  **Pokaż narzędzia diagnostyczne**. Okno **Narzędzia diagnostyczne** zawiera informacje o zdarzeniach, pamięci procesu i użycia procesora CPU.
 
@@ -89,88 +89,4 @@ Raporty można zapisać i otworzyć z listy **ostatnio otwierane sesje** na stro
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Zbieranie danych profilowania z wiersza polecenia
 
-Aby zmierzyć dane dotyczące wydajności z wiersza polecenia, można użyć VSDiagnostics.exe, który jest dołączony do programu Visual Studio lub narzędzi zdalnych. Jest to przydatne w przypadku przechwytywania śladów wydajności w systemach, na których nie zainstalowano programu Visual Studio lub tworzenia skryptów kolekcji śladów wydajności. W przypadku korzystania z VSDiagnostics.exe Rozpocznij sesję diagnostyczną, która przechwytuje i przechowuje dane profilowania, dopóki narzędzie nie zostanie zatrzymane. W tym momencie dane zostaną wyeksportowane do pliku. diagsession. możesz otworzyć ten plik w programie Visual Studio, aby analizować wyniki.
-
-### <a name="launch-an-application"></a>Uruchom aplikację
-
-1. Otwórz wiersz polecenia i przejdź do katalogu z VSDiagnostics.exe:
-
-   ```
-   <Visual Studio Install Folder>\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-2. Uruchom VSDiagnostics.exe przy użyciu następującego polecenia:
-
-   ```
-   VSDiagnostics.exe start <id> /launch:<appToLaunch> /loadConfig:<configFile>
-   ```
-
-   Należy uwzględnić następujące argumenty:
-
-   - \<id\>: Identyfikuje sesję zbierania danych. Identyfikator musi być liczbą z zakresu od 1-255 do.
-   - \<appToLaunch\>: Plik wykonywalny do uruchomienia i profilowania.
-   - \<configFile\>: Plik konfiguracyjny agenta kolekcji, który ma zostać uruchomiony.
-
-3. Aby zatrzymać zbieranie i przeglądać wyniki, wykonaj kroki opisane w sekcji "Zatrzymaj zbieranie" w dalszej części tego artykułu.
-
-### <a name="attach-to-an-existing-application"></a>Dołącz do istniejącej aplikacji
-
-1. Otwórz aplikację, taką jak Notatnik, a następnie otwórz **Menedżera zadań** , aby uzyskać identyfikator procesu (PID). W Menedżerze zadań Znajdź identyfikator PID na karcie **szczegóły**   .
-2. Otwórz wiersz polecenia i przejdź do katalogu przy użyciu pliku wykonywalnego agenta kolekcji. Zwykle jest to tutaj:
-
-   ```
-   <Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-3. Uruchom plik VSDiagnostics.exe, wpisując następujące polecenie.
-
-   ```
-   VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
-   ```
-
-   Należy uwzględnić następujące argumenty:
-
-   - \<id\>: Identyfikuje sesję zbierania danych. Identyfikator musi być liczbą z zakresu od 1-255 do.
-   - \<pid\>: Identyfikator PID procesu, który chcesz profilować, co w tym przypadku jest identyfikatorem PID znalezionym w kroku 1.
-   - \<configFile\>: Plik konfiguracyjny agenta kolekcji, który ma zostać uruchomiony. Aby uzyskać więcej informacji, zobacz [pliki konfiguracji dla agentów](../profiling/profile-apps-from-command-line.md).
-
-4. Aby zatrzymać zbieranie i przeglądać wyniki, wykonaj kroki opisane w następnej sekcji.
-
-### <a name="stop-collection"></a>Zatrzymaj zbieranie
-
-1. Zatrzymaj sesję zbierania i wysyłaj dane wyjściowe do pliku, wpisując następujące polecenie.
-
-   ```
-   VSDiagnostics.exe stop <id> /output:<path to file>
-   ```
-
-2. Przejdź do pliku wyjściowego z poprzedniego polecenia i otwórz go w programie Visual Studio, aby przejrzeć zebrane informacje.
-
-## <a name="agent-configuration-files"></a>Pliki konfiguracji agenta
-
-Agenci kolekcji są składnikami, które zbierają różne typy danych, w zależności od tego, co próbujesz zmierzyć.
-Dla wygody można przechowywać te informacje w pliku konfiguracji agenta. Plik konfiguracji to plik JSON, który zawiera co najmniej nazwę pliku dll i jego identyfikator CLSID COM. Poniżej przedstawiono przykładowe pliki konfiguracyjne, które można znaleźć w następującym folderze:
-
-```
-<Visual Studio installation folder>\Team Tools\DiagnosticsHub\Collector\AgentConfigs\
-```
-
-Aby pobrać i wyświetlić pliki konfiguracji agentów, zobacz następujące linki:
-
-- https://aka.ms/vs/diaghub/agentconfig/cpubase
-- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
-- https://aka.ms/vs/diaghub/agentconfig/cpulow
-- https://aka.ms/vs/diaghub/agentconfig/database
-- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
-
-Konfiguracje CpuUsage (podstawowa/wysoka/niska) odpowiadają danym zebranym dla narzędzia profilowania [użycia procesora CPU](../profiling/cpu-usage.md) .
-Konfiguracje DotNetObjectAlloc (podstawowa/niska) odpowiadają danym zebranym dla [Narzędzia alokacji obiektów platformy .NET](../profiling/dotnet-alloc-tool.md).
-
-Konfiguracje Base/niska/wysoka odnoszą się do częstotliwości próbkowania. Na przykład niska jest 100 próbek/s i wysoka to 4000 próbek/sekundę.
-Aby narzędzie VSDiagnostics.exe działało z agentem kolekcji, wymagany jest zarówno plik DLL, jak i identyfikator CLSID modelu COM dla odpowiedniego agenta. Agent może również mieć dodatkowe opcje konfiguracji. Jeśli używasz agenta bez pliku konfiguracji, użyj formatu w następującym poleceniu:
-
-```
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+Aby zmierzyć dane dotyczące wydajności z wiersza polecenia, można użyć VSDiagnostics.exe, który jest dołączony do programu Visual Studio lub narzędzi zdalnych. Jest to przydatne w przypadku przechwytywania śladów wydajności w systemach, na których nie zainstalowano programu Visual Studio lub tworzenia skryptów kolekcji śladów wydajności. Aby uzyskać szczegółowe instrukcje, zobacz [mierzenie wydajności aplikacji z wiersza polecenia](../profiling/profile-apps-from-command-line.md).

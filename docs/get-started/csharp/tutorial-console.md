@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183291"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508181"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: tworzenie prostej aplikacji konsolowej w języku C# w programie Visual Studio
 
@@ -108,7 +108,7 @@ Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, m
    
 ::: moniker-end
 
-## <a name="create-the-app"></a>Tworzymy aplikację.
+## <a name="create-the-app"></a>Tworzenie aplikacji
 
 Najpierw będziemy poznać niektóre podstawowe wartości matematyczne w języku C#. Następnie dodamy kod, aby utworzyć podstawowy Kalkulator. Następnie debugujemy aplikację w celu znalezienia i naprawienia błędów. A wreszcie będziemy udoskonalić kod w celu zwiększenia wydajności.
 
@@ -378,7 +378,7 @@ Zacznijmy.
 
     ```
 
-1. Następnie Dodaj nową `Program` klasę w następujący sposób:
+1. Następnie Dodaj nową  `Program` klasę w następujący sposób:
 
     ```csharp
     class Program
@@ -600,10 +600,10 @@ namespace Calculator
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy ukończenia tego samouczka. Aby dowiedzieć się jeszcze więcej, przejdź do poniższych samouczków.
+Przejdź do drugiej części tego samouczka:
 
 > [!div class="nextstepaction"]
-> [Kontynuuj pracę z więcej samouczkami w języku C#](/dotnet/csharp/tutorials/)
+> [Kontynuuj z częścią 2](tutorial-console-part-2.md)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: Mierzenie wydajności z wiersza polecenia
+title: Mierzenie wydajności z poziomu wiersza polecenia
 description: Zmierz wydajność procesora CPU i użycie pamięci zarządzanej w aplikacji z wiersza polecenia.
 ms.custom: ''
 ms.date: 02/21/2020
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285847"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508002"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mierzenie wydajności aplikacji z poziomu wiersza polecenia
 
@@ -41,9 +41,9 @@ Profilowanie przy użyciu narzędzi interfejsu wiersza polecenia programu Visual
 
 1. Uruchom Notatnik, a następnie otwórz Menedżera zadań, aby uzyskać identyfikator procesu (PID). W Menedżerze zadań Znajdź identyfikator PID na karcie **szczegóły** .
 
-1. Otwórz wiersz polecenia i przejdź do katalogu przy użyciu pliku wykonywalnego agenta kolekcji, zwykle w tym miejscu.
+1. Otwórz wiersz polecenia i przejdź do katalogu przy użyciu pliku wykonywalnego agenta kolekcji, zwykle w tym miejscu (dla Visual Studio Enterprise).
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. Rozpocznij *VSDiagnostics.exe* , wpisując następujące polecenie.
 
@@ -53,9 +53,15 @@ Profilowanie przy użyciu narzędzi interfejsu wiersza polecenia programu Visual
 
    Argumenty, które muszą być dołączone:
 
-   * \<*id*>Identyfikuje sesję zbierania danych. Identyfikator musi być liczbą z zakresu od 1-255 do.
-   * \<*pid*>, Identyfikator PID procesu, który chcesz profilować, w tym przypadku Identyfikator PID znaleziony w kroku 1
+   * \<*id*> Identyfikuje sesję zbierania danych. Identyfikator musi być liczbą z zakresu od 1-255 do.
+   * \<*pid*>, Identyfikator PID procesu, który chcesz profilować, w tym przypadku Identyfikator PID znaleziony w kroku 1.
    * \<*configFile*>, plik konfiguracyjny agenta kolekcji, który chcesz uruchomić. Aby uzyskać więcej informacji, zobacz [pliki konfiguracji dla agentów](#config_file).
+
+   Na przykład można użyć następującego polecenia dla agenta CPUUsageBase, zastępując *Identyfikator PID* opisany wcześniej.
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
 
 1. Zmień rozmiar Notatnika lub wpisz coś w nim, aby upewnić się, że zbierane są pewne interesujące informacje profilowania.
 
@@ -65,9 +71,11 @@ Profilowanie przy użyciu narzędzi interfejsu wiersza polecenia programu Visual
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Przejdź do pliku wyjściowego z poprzedniego polecenia i otwórz go w programie Visual Studio, aby przejrzeć zebrane informacje.
+1. Znajdź plik *. diagsession* danych wyjściowych z poprzedniego polecenia i otwórz go w programie Visual Studio (**File**  >  **Otwórz**plik), aby przejrzeć zebrane informacje.
 
-## <a name="agent-configuration-files"></a><a name="config_file"></a>Pliki konfiguracji agenta
+   Aby przeanalizować wyniki, zapoznaj się z dokumentacją odpowiedniego narzędzia do oceny wydajności. Może to być na przykład [użycie procesora CPU](../profiling/cpu-usage.md), [Narzędzie alokacji obiektów platformy .NET](../profiling/dotnet-alloc-tool.md)lub narzędzie [bazy danych](../profiling/analyze-database.md) .
+
+## <a name="agent-configuration-files"></a><a name="config_file"></a> Pliki konfiguracji agenta
 
 Agenci kolekcji są składnikami, które zbierają różne typy danych w zależności od tego, co próbujesz zmierzyć.
 

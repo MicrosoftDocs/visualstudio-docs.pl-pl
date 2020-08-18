@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 105583486a9f1420f1670a16abcb28e8268b293d
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
+ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371797"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88286656"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Zainstaluj analizatory FxCop w programie Visual Studio
 
@@ -73,7 +73,7 @@ Skorzystaj z poniższych wskazówek, aby określić, która wersja pakietu anali
 | Wersja programu Visual Studio | Wersja pakietu analizatora FxCop |
 | - | - |
 | Visual Studio 2019 (wszystkie wersje) | [Ostatnia](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) | 
-| Visual Studio 2017 w wersji 15,9 | [2.9.9](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.9) |
+| Visual Studio 2017 w wersji 15,9 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Program Visual Studio 2017 w wersji 15,5 do 15,8 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Program Visual Studio 2017 w wersji 15,3 do 15,4 | [2.3.0 — beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Program Visual Studio 2017 w wersji 15,0 do 15,2 | [2.0.0 — beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -121,7 +121,7 @@ Rozszerzenie [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com
 
 ::: moniker-end
 
-4. Wybierz przycisk **Download** (Pobierz).
+4. Kliknij pozycję **Pobierz**.
 
    Rozszerzenie jest pobierane.
 
@@ -153,7 +153,7 @@ Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz pozycję 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przegląd analizatorów kodu w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Korzystanie z analizatorów kodu w programie Visual Studio](../code-quality/use-roslyn-analyzers.md)

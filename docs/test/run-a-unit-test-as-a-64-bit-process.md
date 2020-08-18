@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 04895e3dd72a7cb4f0373c970db0f12582506ef9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285559"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507989"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Uruchamianie testu jednostkowego jako procesu 64-bitowego
 
@@ -30,7 +30,7 @@ Jeśli masz maszynę 64-bitową, możesz uruchomić testy jednostkowe i przechwy
    ::: moniker-end
 
     > [!TIP]
-    > Aby zapewnić maksymalną elastyczność, skompiluj projekty testowe z dowolną konfiguracją **procesora CPU** . Następnie można uruchomić zarówno na 32-bitowym, jak i 64-bitowym agencie. Nie ma możliwości kompilowania projektów testowych z konfiguracją **64-bitową** .
+    > Aby zapewnić maksymalną elastyczność, skompiluj projekty testowe z dowolną konfiguracją **procesora CPU** . Następnie można uruchomić zarówno na 32-bitowym, jak i 64-bitowym agencie. Nie ma możliwości kompilowania projektów testowych z konfiguracją **64-bitową** , chyba że wywołujesz kod, który jest obsługiwany tylko w 64-bitowym.
 
 2. Ustaw testy jednostkowe do uruchomienia jako proces 64-bitowy.
 
@@ -41,11 +41,11 @@ Jeśli masz maszynę 64-bitową, możesz uruchomić testy jednostkowe i przechwy
    Z menu programu Visual Studio wybierz polecenie **test**, a następnie wybierz pozycję **Ustawienia testu**, a następnie wybierz pozycję **architektura procesora**. Wybierz pozycję **x64** , aby uruchomić testy jako proces 64-bitowy.
    ::: moniker-end
 
-   \-oraz
+   \- oraz
 
    Określ `<TargetPlatform>x64</TargetPlatform>` w pliku *. runsettings* . Zaletą tej metody jest to, że można określić grupy ustawień w różnych plikach i szybko przełączać się między różnymi ustawieniami. Możesz również kopiować ustawienia między rozwiązaniami. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 - [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
