@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
-ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
+ms.openlocfilehash: ca095bf424420fb73ba8f369f7e41daea92fe33d
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87330963"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584505"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Zgłoś problem: Stany i często zadawane pytania
 
@@ -52,7 +52,7 @@ Po zgłoszeniu problemu Stany wskazują, gdzie Twoje zgłoszenia są w cyklu ży
 
 ![Potrzebujesz więcej informacji o stanie raportów o problemach w społeczności deweloperów](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Potrzeba więcej** informacji wskazuje, że potrzebujemy większej ilości danych diagnostycznych, aby umożliwić nam przechodzenie do badania.  [Dowiedz się, jak odpowiadać na żądania dalszych informacji.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
+**Potrzeba więcej** informacji wskazuje, że potrzebujemy większej ilości danych diagnostycznych, aby umożliwić nam przechodzenie do badania.  [Dowiedz się, jak odpowiadać na żądania dalszych informacji.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed)
 
 - - -
 
@@ -82,7 +82,7 @@ Po zgłoszeniu problemu Stany wskazują, gdzie Twoje zgłoszenia są w cyklu ży
 
 ![Zamknięto — nie ma stanu usterki dla raportowania problemów w społeczności deweloperów](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
-**Zamknięte — nie jest to usterka** wskazująca, że raportowane funkcje są zależne od bieżącego projektu.
+**Zamknięte — nie jest to usterka**  wskazująca, że raportowane funkcje są zależne od bieżącego projektu.
 
 - - -
 

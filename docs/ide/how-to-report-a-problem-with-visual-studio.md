@@ -9,107 +9,75 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 2e5f64ebdf93384b7def728ac5d01bcbaf6b0271
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387320"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584578"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Jak zgłosić problem z programem Visual Studio lub Instalator programu Visual Studio
 
 > [!NOTE]
 > Aby uzyskać Visual Studio dla komputerów Mac, zobacz [temat jak zgłosić problem w programie Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem).
 
-Możesz zgłosić problem z programu Visual Studio lub jego instalatora za pomocą dostępnego w nich narzędzia do przesyłania opinii. Narzędzie do przesyłania opinii umożliwia łatwe dołączanie informacji diagnostycznych do opinii i ułatwia zespołom programu Visual Studio łatwiejsze diagnozowanie i rozwiązywanie problemów. Poniżej przedstawiono procedurę zgłaszania problemu.
+Możesz zgłosić problem z programu Visual Studio lub jego Instalatora. Wbudowane narzędzie do przesyłania opinii pozwala łatwo dodać informacje diagnostyczne ułatwiające zespołom programu Visual Studio diagnozowanie i rozwiązywanie problemów. Poniżej przedstawiono procedurę zgłaszania problemu.
 
 1. **W programie Visual Studio**wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem. Możesz również uzyskać dostęp do narzędzia opinii z menu **Pomoc**w  >  **wysyłaniu opinii**  >  **Zgłoś problem**.
-![Zgłoś problem w oknie podręcznym w społeczności deweloperów programu Visual Studio ](media/vsfeedbackentry.png) , zgłoś problem w programie **Instalator programu Visual Studio** , jeśli nie możesz zainstalować programu Visual Studio lub nie możesz uzyskać dostępu do narzędzia opinii w programie Visual Studio.  W instalatorze wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem.
+![Zgłoś problem w oknie podręcznym w społeczności deweloperów programu Visual Studio ](media/feedback-button.png) , zgłoś problem w programie **Instalator programu Visual Studio** , jeśli nie możesz zainstalować programu Visual Studio lub nie możesz uzyskać dostępu do narzędzia opinii w programie Visual Studio.  W instalatorze wybierz ikonę opinii w prawym górnym rogu, a następnie wybierz pozycję Zgłoś problem.
 ![Zgłoś problem w oknie podręcznym w społeczności deweloperów programu Visual Studio](media/installer.png)
 
-1. Jeśli nie jest zalogowany, wybierz pozycję **Zaloguj** , jak pokazano na poniższym zrzucie ekranu. Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby się zalogować.
+1. Kliknięcie przycisku **Zgłoś problem** spowoduje otwarcie domyślnej przeglądarki i zalogowanie się przy użyciu tego samego konta, którego używasz do logowania się do programu Visual Studio
 
-   ![Zaloguj się, aby zgłosić problem](../ide/media/sign-in-new-ux.png)
+   ![Zaloguj się, aby zgłosić problem](../ide/media/feedback-browser-top.png)
 
-   Nie tylko możesz zgłosić problem podczas logowania, ale możesz również zagłosować i komentować wszelkie istniejące Opinie.
+1. Zacznij od wprowadzenia opisowego tytułu raportu o usterce. Musi składać się z co najmniej 25 znaków.
 
-1. Po zalogowaniu będzie można zobaczyć swoje **problemy** i **działanie** na ekranie **obserwowane elementy**
+    ![zgłaszanie problemu](../ide/media/feedback-report.png)
 
-   ![Obserwowane elementy](../ide/media/items-i-follow.png)
+1. Po rozpoczęciu wpisywania w polu Tytuł zostaną wyświetlone możliwe duplikaty.
 
-1. Program Visual Studio udostępnia interfejs do wyszukiwania Twojego problemu i sprawdzenia, czy inne osoby je zgłosiły. Jeśli ktoś zgłosił ją, "do głosowania", aby poinformować nas o tym.
-   > [!NOTE]
-   > Aby wyszukać, wprowadź żądany tekst w polu wyszukiwania, a następnie kliknij przycisk ENTER lub naciśnij ikonę wyszukiwania.
+    ![Wyszukaj duplikaty](../ide/media/feedback-search.png)
 
-   ![Wyszukaj podobne problemy i zagłosuj na nie](../ide/media/search-and-vote.png)
+1. Wybierz możliwe zduplikowane raporty o usterkach, aby sprawdzić, czy występuje jeden pasujący do własnego problemu. Jeśli jest, zagłosuj na nie, zamiast tworzyć własny bilet.
 
-1. Jeśli nie znajdziesz napotkanego problemu, wybierz pozycję **zgłoś nowy problem** u dołu ekranu.
+    ![Zagłosuj na duplikaty](../ide/media/feedback-duplicate.png)
 
-1. Utwórz opisowy tytuł problemu, który pomoże nam skierować go do poprawnego zespołu programu Visual Studio.
+2. Jeśli nie znaleziono żadnych duplikatów, Kontynuuj, wprowadzając opis problemu. Ważne jest, aby być możliwie jasne, aby zwiększyć prawdopodobieństwo odtworzenia usterki przez firmę Microsoft. Upewnij się, że dołączasz jasne kroki odtwarzania.
 
-1. Przekaż dodatkowe szczegóły i w miarę możliwości opisz kroki, które spowodowały wystąpienie problemu.
+3. Jeśli jest to istotne dla raportu o usterce, Zrób zrzut ekranu, zaznaczając pole wyboru *Dołącz zrzut ekranu programu Visual Studio* .
 
-   ![Zgłoś nowy problem](../ide/media/report-new-problem.png)
+    ![Zrób zrzut ekranu ](../ide/media/feedback-screenshot.png) *tylko inżynierowie firmy Microsoft mogą zobaczyć zrzut ekranu*
 
-1. Wybierz przycisk **dalej** , aby przejść do karty **załączniki** . W tym miejscu możesz przechwycić bieżący ekran, aby wysłać go do firmy Microsoft. Aby dołączyć dodatkowe zrzuty ekranu lub inne pliki, wybierz **Dołącz dodatkowe pliki**.
+    Możesz nawet przyciąć zrzut ekranu bezpośrednio w przeglądarce, aby usunąć wszelkie poufne lub niepowiązane części.
 
-   ![Dołącz zrzut ekranu do raportu o problemach programu Visual Studio](media/report-a-problem-screenshot.png)
+4. Najlepszym sposobem, aby pomóc zespołowi inżynieryjnemu programu Visual Studio rozwiązać ten problem, jest udostępnienie śledzenia i plików zrzutu sterty do przeszukania. Można to łatwo zrobić, rejestrując kroki, które spowodowały błąd. 
 
-1. Jeśli nie chcesz dołączyć zrzutu ekranu lub [rekordu Odtwórz](#record-a-repro), wybierz przycisk **dalej** , aby przejść do karty **Podsumowanie** .
+    ![Rejestrowanie akcji ](../ide/media/feedback-recording.png) *tylko inżynierowie firmy Microsoft mogą zobaczyć nagranie*
 
-1. Wybierz pozycję **Prześlij** , aby wysłać raport, wraz z dowolnymi obrazami i plikami śledzenia lub zrzutów. (Jeśli przycisk **Prześlij** jest wyszarzony, upewnij się, że podano tytuł i opis raportu).
+5. Przejrzyj dołączone pliki i przekaż dodatkowe pliki, jeśli uważasz, że pomoże to zdiagnozować problem.   
 
-   Aby uzyskać informacje o zbieranych danych, zobacz zbierane [dane](developer-community-privacy.md#data-we-collect).
+    ![Dołączone pliki ](../ide/media/feedback-attachments.png) *tylko inżynierowie firmy Microsoft mogą zobaczyć dołączone pliki*
 
-## <a name="record-a-repro"></a>Rejestrowanie Odtwórz
+6. Ostatnim krokiem jest naciśnięcie przycisku **Prześlij** . Przesłanie raportu spowoduje jego wysłanie bezpośrednio do wewnętrznego systemu raportowania błędów programu Visual Studio oczekującego na Klasyfikacja.
 
-Pliki zrzutu śledzenia i sterty są przydatne podczas diagnozowania problemów. Dziękujemy za korzystanie z narzędzia **Zgłoś problem** w celu zarejestrowania kroków Odtwórz i wysłania danych do firmy Microsoft. Oto jak to zrobić:
+## <a name="when-further-information-is-needed"></a>Gdy dalsze informacje są zbędne
 
-1. Po wprowadzeniu tytułu i opisu problemu wybierz pozycję **dalej** , aby przejść do karty **załączniki** .
+Gdy w przypadku problemu brakuje ważnych informacji, przypiszemy stan **więcej informacji** . Prosimy o problem z konkretnymi informacjami, których potrzebujemy, i otrzymasz powiadomienie e-mail. Jeśli nie otrzymasz informacji w ciągu siedmiu dni, wyślemy Ci przypomnienie. Po tym czasie będziemy zamykać bilet po 14 dniach braku aktywności.
 
-1. Wybierz kartę **rekord** .
+1. Aby wyświetlić wszystkie raporty w stanie **więcej informacji** , Skorzystaj z linku w wiadomości e-mail lub przejdź do strony Moje opinie.
 
-1. W obszarze **Rejestrowanie akcji**wybierz bieżące wystąpienie programu Visual Studio, jeśli możesz odtworzyć problem. Jeśli nie możesz na przykład, jeśli program Visual Studio przestanie odpowiadać, wybierz opcję **\<Create a new instance>** rejestrowania akcji w nowym wystąpieniu programu Visual Studio.
+    ![Moja opinia](../ide/media/feedback-my-feedback.png)
 
-1. Wybierz pozycję **Rozpocznij nagrywanie**. Nadaj uprawnienia do uruchamiania tego narzędzia.
+1. Po wybraniu linku podaj więcej informacji w raporcie o problemie przejdź do nowego ekranu. W tym miejscu możesz zobaczyć, jakie informacje są żądane.
 
-   ![Wybierz pozycję "Rozpocznij nagrywanie", aby dostarczyć plik śledzenia i zrzut sterty w raporcie o problemach programu Visual Studio](../ide/media/record-dialog-box.png)
-
-1. Po wyświetleniu narzędzia do **rejestrowania kroków** wykonaj kroki, które odtwarzają problem.
-
-1. Gdy skończysz, wybierz przycisk **Zatrzymaj rekord** .
-
-1. Poczekaj kilka minut, aż program Visual Studio będzie zbierać i tworzyć pakiety zarejestrowanych informacji.
-
-   Aby uzyskać informacje o zbieranych danych, zobacz zbierane [dane](developer-community-privacy.md#data-we-collect).
-
-## <a name="when-further-information-is-needed-need-more-info"></a>Gdy są potrzebne dalsze informacje (potrzebne są więcej informacji)
-
-Począwszy od programu Visual Studio 2017 w wersji 15,5, istnieje nowy przepływ pracy, który ułatwia użytkownikom dostarczenie dodatkowych informacji na temat raportów o problemach.
-
-1. Gdy inżynier firmy Microsoft ustawi problem [społeczności dla deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) , aby uzyskać informacje o stanie **więcej informacji** , każdy użytkownik, który opublikował, wygłosował lub dodał komentarz dotyczący problemu, otrzymuje powiadomienie w narzędziu **Zgłoś problem** w programie Visual Studio.
-
-   ![Potrzebujesz więcej informacji o powiadomieniach w programie Visual Studio](../ide/media/nmi-notification.png)
-
-1. Kliknij link **Wyświetl problemy** , aby przefiltrować i posortować widok do problemów wymagających uwagi. Te problemy mają również wskaźnik obok nich, aby odróżnić je od ogólnego wyszukiwania.
-
-1. Kliknij problem, aby wyświetlić widok Szczegóły problemu.
-
-   ![Potrzebna więcej informacji powiadomienie](../ide/media/nmi-details-view.png)
-
-1. Aby wyświetlić **potrzebne więcej informacji** , kliknij link **Wyświetl ich żądanie i odpowiadaj** w widoku Szczegóły problemu. Zostanie wyświetlone okno dialogowe z żądaniem.
-
-   ![Potrzebna więcej informacji powiadomienie](../ide/media/nmi-request.png)
+   ![Moja opinia](../ide/media/feedback-need-more-info.png)
 
 1. Więcej informacji można uzyskać, dodając komentarze, załączniki lub kroki nagrywania. To środowisko jest podobne do zgłaszania nowego problemu lub podawania dodatkowych informacji podczas głosowania na temat problemu.
 
 1. Żądanie inżyniera firmy Microsoft otrzymuje powiadomienie o podanych dodatkowych informacjach. Jeśli mają wystarczającą ilość informacji do zbadania, stan problemu ulegnie zmianie. W przeciwnym razie inżynier prosi o podanie jeszcze dalszych informacji.
 
-   > [!NOTE]
-   > * Po odebraniu odpowiedzi powiadomienie zostanie odrzucone. W swoim miejscu zobaczysz baner, który Cię Dziękujemy i ułatwia zapewnienie jeszcze większej ilości informacji.
-   > * Po zmianie stanu problemu powiadomienie jest odrzucane dla wszystkich użytkowników.
-   > * Więcej niż jedna osoba może odpowiedzieć na to samo żądanie **więcej informacji** .
-   > * Nie jest potrzebny przepływ pracy **więcej informacji** na temat [społeczności deweloperów](https://developercommunity.visualstudio.com/) , gdy dostęp do niego odbywa się bezpośrednio za pomocą przeglądarki sieci Web, ale można również udostępniać Komentarze i załączniki.
+Te żądania są widoczne na ekranie **moje opinie** , wraz z innymi **problemami** i **sugestiami**.
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Wyszukaj rozwiązania lub Prześlij opinię
 
@@ -119,6 +87,7 @@ Jeśli nie masz problemu z raportowaniem, ale chcesz zasugerować funkcję, istn
 
 ## <a name="see-also"></a>Zobacz też
 
+* [Wskazówki dotyczące społeczności deweloperów](https://docs.microsoft.com/visualstudio/ide/developer-community-guidelines)
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
 * [Zgłoś problem z Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)
 * [Zgłoś problem w języku C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
