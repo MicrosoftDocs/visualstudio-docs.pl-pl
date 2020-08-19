@@ -288,18 +288,19 @@ f1_keywords:
 - CA5122
 - CA5374
 - IL3000
+- IL3001
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040df1edf85f2879cd2666e79768e76969464522
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: daaf6854b56b31419408691c27af245c4001ea42
+ms.sourcegitcommit: 328ab0d8e5770f1067e37dcc266c2b50ea07783c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214600"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88612880"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
 
@@ -375,7 +376,7 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA1070 | [CA1070: Nie deklaruj pól zdarzeń jako wirtualnych](../code-quality/ca1070.md) | [Zdarzenie podobne do pola](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) zostało zadeklarowane jako wirtualne. |
 | CA1200 | [CA1200: Unikaj używania tagów cref z prefiksem](../code-quality/ca1200.md) | Atrybut [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) w tagu dokumentacji XML oznacza "odwołanie do kodu". Określa, że wewnętrznym tekstem znacznika jest element kodu, taki jak typ, metoda lub właściwość. Należy unikać używania `cref` tagów z prefiksami, ponieważ uniemożliwia kompilatorowi Weryfikowanie odwołań. Uniemożliwia również znajdowanie i aktualizowanie tych odwołań do tych symboli podczas refaktoryzacji przez program Visual Studio Integrated Development Environment (IDE). |
 | CA1300 | [CA1300: Określ argument MessageBoxOptions](../code-quality/ca1300.md) | Aby poprawnie wyświetlić okno komunikatu dla kultur stosujących pismo od prawej do lewej, członkowie RightAlign i RtlReading wyliczenia MessageBoxOptions muszą być przekazani do metody Show. |
-| CA1301 | [CA1301: Unikaj duplikowania akceleratorów](../code-quality/ca1301.md) | Klucz dostępu, znany również jako akcelerator, umożliwia dostęp z klawiatury do formantu za pomocą klawisza ALT. Gdy wiele kontrolek ma zduplikowane klucze dostępu, zachowanie klucza dostępu nie jest dobrze zdefiniowane. |
+| CA1301 | [CA1301: Unikaj duplikowania akceleratorów](../code-quality/ca1301.md) | Klucz dostępu, znany również jako akcelerator, umożliwia dostęp z klawiatury do formantu za pomocą klawisza ALT. Kiedy wiele formantów ma zduplikowany klucz dostępu, jego zachowanie nie jest dobrze zdefiniowane. |
 | CA1302 | [CA1302: Nie umieszczaj trwale w kodzie ciągów specyficznych dla ustawień regionalnych](../code-quality/ca1302.md) | Wyliczenie System.Environment.SpecialFolder zawiera elementy, które odwołują się do folderów specjalnych systemu. Lokalizacje tych folderów mogą mieć różne wartości w poszczególnych systemach operacyjnych; użytkownik może zmienić niektóre z tych lokalizacji; lokalizacje są zlokalizowane. Metoda Environment.GetFolderPath zwraca lokalizacje, które są skojarzone z wyliczeniem Environment.SpecialFolder, zlokalizowane i odpowiednie dla danego komputera. |
 | CA1303 | [CA1303: Nie przekazuj literałów jako zlokalizowanych parametrów](../code-quality/ca1303.md) | Metoda widoczna na zewnątrz przekazuje literał ciągu jako parametr do konstruktora lub metody .NET, a ten ciąg powinien być Lokalizowalny. |
 | CA1304 | [CA1304: Określ argument CultureInfo](../code-quality/ca1304.md) | Metoda lub konstruktor wywołuje członka mającego przeciążenie, które akceptuje parametr System.Globalization.CultureInfo i metodę lub konstruktor niewywołujący przeciążenia, które wymaga parametru CultureInfo. Kiedy obiekt CultureInfo lub System.IFormatProvider nie jest podany, domyślna wartość, która jest dostarczana przez członka przeciążonego, może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych. |
@@ -606,4 +607,5 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA5400 | [CA5400 upewnij się, że sprawdzanie listy odwołania certyfikatów HttpClient nie jest wyłączone](../code-quality/ca5400.md) | Odwołany certyfikat nie jest już zaufany. Mogą one być używane przez osoby atakujące, które przechodzą z pewnych złośliwych danych lub kradzieży poufnych danych w komunikacji przy użyciu protokołu HTTPS. |
 | CA5401 | [CA5401 nie używaj modułu szyfrującego z wartością niedomyślną IV](../code-quality/ca5401.md) | Szyfrowanie symetryczne powinno zawsze używać niepowtarzalnych wektorów inicjalizacji, aby zapobiec atakom słownikowym. |
 | CA5402 | [CA5402 Użyj szyfrowania z wartością domyślną IV](../code-quality/ca5402.md) | Szyfrowanie symetryczne powinno zawsze używać niepowtarzalnych wektorów inicjalizacji, aby zapobiec atakom słownikowym. |
-| IL3000 | [IL3000 Unikaj używania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczego pliku](../code-quality/il3000.md) | Unikaj używania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczego pliku |
+| IL3000 | [IL3000 Unikaj dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczy plik](../code-quality/il3000.md) | Unikaj używania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczego pliku |
+| IL3001 | [IL3001 unikać uzyskiwania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczego pliku](../code-quality/il3001.md) | Należy unikać uzyskiwania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczego pliku |
