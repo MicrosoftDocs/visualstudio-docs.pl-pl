@@ -1,45 +1,53 @@
 ---
 title: Dodawanie usługi Azure Storage przy użyciu usług połączonych | Microsoft Docs
-description: Dodawanie usługi Azure Storage do aplikacji przy użyciu okna dialogowego Dodawanie usług połączonych programu Visual Studio
+description: Dodawanie zależności usługi Azure Storage do aplikacji przy użyciu usług połączonych programu Visual Studio
 author: ghogen
 manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
-ms.date: 03/26/2017
+ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
+ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280687"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639457"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Dodawanie usługi Azure Storage przy użyciu usług połączonych programu Visual Studio
 
-Za pomocą programu Visual Studio można połączyć dowolne z następujących elementów w usłudze Azure Storage przy użyciu okna dialogowego **Dodawanie połączonych usług** :
+Za pomocą programu Visual Studio można połączyć dowolne z następujących elementów w usłudze Azure Storage przy użyciu funkcji **usługi połączone** :
 
-- Usługa w chmurze w języku C#
-- Usługa mobilna zaplecza platformy .NET
-- ASP.NET witryna sieci Web lub usługa
-- Usługa ASP.NET Core
-- Usługa zadań WebJob platformy Azure
+- Aplikacja konsolowa .NET Framework
+- ASP.NET MVC (.NET Framework) 
+- ASP.NET Core
+- .NET Core (w tym Aplikacja konsolowa, WPF, Windows Forms, Biblioteka klas)
+- Rola procesu roboczego platformy .NET Core
+- Azure Functions
+- Aplikacja platforma uniwersalna systemu Windows
+- Xamarin
+- Cordova
 
 Funkcja połączonej usługi dodaje wszystkie konieczne odwołania i kod połączenia do projektu i odpowiednio modyfikuje pliki konfiguracyjne.
 
-Po zakończeniu okno dialogowe **Dodawanie połączonych usług** automatycznie wyświetli dokumentację opisującą kroki wymagane do rozpoczęcia pracy z magazynem obiektów blob, kolejkami i tabelami.
-
 > [!NOTE]
 > Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [usługi połączone w programie Visual Studio dla komputerów Mac](/visualstudio/mac/connected-services).
+## <a name="prerequisites"></a>Wymagania wstępne
 
-## <a name="connect-to-azure-storage-using-the-connected-services-dialog"></a>Nawiązywanie połączenia z usługą Azure Storage przy użyciu okna dialogowego połączone usługi
+- Program Visual Studio z zainstalowanym obciążeniem platformy Azure.
+- Projekt jednego z obsługiwanych typów
 
-1. Otwieranie projektu w programie Visual Studio
+## <a name="connect-to-azure-storage-using-connected-services"></a>Nawiązywanie połączenia z usługą Azure Storage przy użyciu usług połączonych
+
+::: moniker range="vs-2017"
+
+1. Otwórz projekt w programie Visual Studio.
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
 
-    ![Dodawanie usługi połączonej z platformą Azure](./media/vs-azure-tools-connected-services-storage/IC796702.png)
+    ![Dodawanie usługi połączonej z platformą Azure](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
 1. Na stronie **usługi połączone** wybierz pozycję **Magazyn w chmurze z usługą Azure Storage**.
 
@@ -62,19 +70,55 @@ Po zakończeniu okno dialogowe **Dodawanie połączonych usług** automatycznie 
    1. Po wyświetleniu okna dialogowego **usługi Azure Storage** nowe konto magazynu zostanie wyświetlone na liście. Wybierz nowe konto magazynu z listy, a następnie wybierz pozycję **Dodaj**.
 
 1. Usługa połączona do magazynu jest wyświetlana w węźle **odwołania do usługi** projektu.
+:::moniker-end
 
-## <a name="how-your-project-is-modified"></a>Jak projekt jest modyfikowany
+:::moniker range=">=vs-2019"
 
-Po zakończeniu okna dialogowego program Visual Studio dodaje odwołania i modyfikuje niektóre pliki konfiguracji. Określone zmiany są zależne od typu projektu:
+1. Otwórz projekt w programie Visual Studio.
 
-- Projekt ASP.NET — [co się stało — projekty ASP.NET](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
-- ASP.NET Core Project — [co się stało — projekty ASP.NET 5](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
-- Projekt usługi w chmurze (role sieci Web i proces roboczy) — [co się stało — projekty usług w chmurze](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
-- Projekt Zadania WebJob — [co się stało z projektami zadań WebJob](/azure/visual-studio/vs-storage-webjobs-what-happened)
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **usługi połączone** , a następnie z menu kontekstowego wybierz polecenie **Dodaj podłączoną usługę**.
+
+    ![Dodawanie usługi połączonej z platformą Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
+
+1. Na karcie **połączone usługi** wybierz ikonę + dla **zależności usługi**.
+
+    ![Dodaj zależność usługi](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
+
+1. Na stronie **Dodawanie zależności** wybierz pozycję **Azure Storage**.
+
+    ![Dodawanie usługi Azure Storage](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
+
+    Zaloguj się do konta platformy Azure, jeśli jeszcze nie zalogowano się. Jeśli nie masz konta platformy Azure, możesz zarejestrować się, aby skorzystać z [bezpłatnej wersji próbnej](https://azure.microsoft.com/account/free).
+
+1. Na ekranie **Konfigurowanie usługi Azure Storage** Wybierz istniejące konto magazynu i wybierz pozycję **dalej**.
+
+    Jeśli musisz utworzyć konto magazynu, przejdź do następnego kroku. W przeciwnym razie przejdź do kroku 6.
+
+    ![Dodaj istniejące konto magazynu do projektu](./media/vs-azure-tools-connected-services-storage/vs-2019/select-azure-storage-account.png)
+
+1. Aby utworzyć konto magazynu:
+
+   1. Wybierz pozycję **Utwórz konto magazynu** w dolnej części okna dialogowego.
+
+   1. Wypełnij pola **usługa Azure Storage: Utwórz nowe** okno dialogowe, a następnie wybierz pozycję **Utwórz**.
+
+       ![Nowe konto usługi Azure Storage](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
+
+   1. Po wyświetleniu okna dialogowego **usługi Azure Storage** nowe konto magazynu zostanie wyświetlone na liście. Wybierz nowe konto magazynu z listy, a następnie wybierz pozycję **dalej**.
+
+1. Wprowadź nazwę parametrów połączenia i zdecyduj, czy chcesz, aby parametry połączenia były przechowywane w lokalnym pliku tajemnicy, czy w [Azure Key Vault](/azure/key-vault).
+
+   ![Określ parametry połączenia](./media/vs-azure-tools-connected-services-storage/vs-2019/connection-string.png)
+
+1. Na ekranie **Podsumowanie zmian** są wyświetlane wszystkie modyfikacje, które zostaną wprowadzone w projekcie w przypadku ukończenia procesu. Jeśli zmiany wyglądają na OK, wybierz przycisk **Zakończ**.
+
+   ![Podsumowanie zmian](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
+
+1. Usługa połączona do magazynu jest wyświetlana w węźle **odwołania do usługi** projektu.
+:::moniker-end
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Forum MSDN: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Blog zespołu Microsoft Azure Storage](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Forum usługi Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Dokumentacja usługi Azure Storage](/azure/storage/)
 - [Połączone usługi (Visual Studio dla komputerów Mac)](/visualstudio/mac/connected-services)
