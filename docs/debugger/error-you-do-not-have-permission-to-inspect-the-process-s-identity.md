@@ -1,5 +1,5 @@
 ---
-title: Błąd — nie masz uprawnień do sprawdzenia procesu&#39;s tożsamości | Microsoft Docs
+title: Błąd — nie masz uprawnień do sprawdzania &apos; tożsamości procesu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bd1bc11d42d8aed0b816a667fe5adcc139a42c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: e91745b8910a9e87ccd4a22fe09c6764a2ab4c6a
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85459925"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706532"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Błąd: nie masz uprawnień do sprawdzania tożsamości procesu&#39;s
 Nie masz uprawnień do sprawdzenia tożsamości procesu. Może to być spowodowane konfiguracją systemu.
@@ -42,7 +42,7 @@ Nie masz uprawnień do sprawdzenia tożsamości procesu. Może to być spowodowa
 
 7. W oknie **właściwości usług terminalowych** przejdź do karty **Ogólne** i ustaw **Typ uruchamiania** na **ręczny**.
 
-8. Kliknij przycisk **OK**.
+8. Kliknij pozycję **OK**.
 
 9. Uruchom ponownie komputer.
 
@@ -60,7 +60,7 @@ Nie masz uprawnień do sprawdzenia tożsamości procesu. Może to być spowodowa
 
 4. W obszarze **pulpit zdalny**wybierz opcję **zezwól użytkownikom na zdalne nawiązywanie połączenia z tym komputerem**.
 
-5. Kliknij przycisk **OK**.
+5. Kliknij pozycję **OK**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

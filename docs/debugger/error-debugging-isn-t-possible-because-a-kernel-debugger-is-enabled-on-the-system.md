@@ -1,5 +1,5 @@
 ---
-title: Błąd — debugowanie jest&#39;t możliwy, ponieważ debuger jądra jest włączony w systemie | Microsoft Docs
+title: Błąd — debugowanie jest &apos; t możliwy, ponieważ debuger jądra jest włączony w systemie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c27ef642697a8514a0809095b980d8c38a47d8
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460868"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706636"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Błąd: debugowanie jest&#39;t możliwy, ponieważ w systemie jest włączony debuger jądra
 Podczas debugowania kodu zarządzanego może zostać wyświetlony następujący komunikat o błędzie:
@@ -98,6 +98,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
      `gn`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

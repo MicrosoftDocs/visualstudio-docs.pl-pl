@@ -1,5 +1,5 @@
 ---
-title: Opcje konfiguracji analizatora FxCop
+title: Opcje konfiguracji analizatora jakości kodu platformy .NET
 ms.date: 09/23/2019
 ms.topic: reference
 author: mikejo5000
@@ -7,21 +7,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6b56bec2174ca71cc66f5424b7bdc309330d95
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 0370688b53e87cf6ea1f5079d2e5c706777dd0c7
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248798"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706571"
 ---
-# <a name="rule-scope-options-for-fxcop-analyzers"></a>Opcje zakresu reguł dla analizatorów FxCop
+# <a name="rule-scope-options-for-net-code-quality-analyzers"></a>Opcje zakresu reguł dla analizatorów jakości kodu platformy .NET
 
-Niektóre reguły analizatora FxCop umożliwiają udoskonalanie części bazy kodu, do których powinny być stosowane. Ta strona zawiera listę dostępnych opcji konfiguracji zakresu, ich wartości dopuszczalne i reguły, do których mogą być stosowane. Aby użyć tych opcji, należy określić je w [pliku EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
-
-Te opcje konfiguracji są dostępne od wersji 2.6.3 pakietu NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
+Niektóre reguły analizatora jakości kodu platformy .NET umożliwiają udoskonalenie części bazy kodu, do których mają być stosowane. Ta strona zawiera listę dostępnych opcji konfiguracji zakresu, ich wartości dopuszczalne i reguły, do których mogą być stosowane. Aby użyć tych opcji, należy określić je w [pliku EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 > [!TIP]
-> Aby zapoznać się z pełną listą opcji dostępnych dla danej wersji pakietu FxCopAnalyzers, zapoznaj się z plikiem *analizatora Configuration.MD* w folderze *Dokumentacja* pakietu. Plik znajduje się w lokalizacji *% USERPROFILE% \\ . nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version\> \documentation\Analyzer Configuration.MD*. Ten plik dokumentacji konfiguracji jest dołączony do każdej wersji pakietu, począwszy od wersji 2.6.5. Oto przykład sposobu udokumentowania opcji w pliku *Configuration.MD analizatora* :
+> Aby wyświetlić pełną listę dostępnych opcji, zobacz ten [plik analizatora Configuration.MD](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md). Oto przykład sposobu udokumentowania opcji w pliku *Configuration.MD analizatora* :
 >
 > Nazwa opcji: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > Wartości opcji: wartości całkowite \

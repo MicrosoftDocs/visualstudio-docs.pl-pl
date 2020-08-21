@@ -11,26 +11,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250538"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706519"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: generowanie danych metryk kodu
 
 Dane metryk kodu można generować na trzy sposoby:
 
-- Instalując [analizatory FxCop](#fxcop-analyzers-code-metrics-rules) i włączając cztery zawarte w niej reguły metryki kodu (łatwość konserwacji).
+- Przez włączenie [analizatorów jakości kodu platformy .NET](#net-code-quality-analyzers-code-metrics-rules) i włączenie czterech reguł metryk kodu (łatwość konserwacji), które zawiera.
 
 - Poprzez wybranie polecenia [ **Analizuj**  >  **metryki kodu** ](#calculate-code-metrics-menu-command) w programie Visual Studio.
 
 - Z [wiersza polecenia](#command-line-code-metrics) dla projektów C# i Visual Basic.
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>Reguły metryk kodu analizatorów FxCop
+## <a name="net-code-quality-analyzers-code-metrics-rules"></a>Reguły metryk kodu analizatorów jakości kodu platformy .NET
 
-[Pakiet NuGet FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) zawiera kilka reguł [analizatora](roslyn-analyzers-overview.md) metryk kodu:
+[Analizatory](roslyn-analyzers-overview.md) jakości kodu platformy .NET zawierają kilka reguł analizy metryk kodu:
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
@@ -50,7 +50,7 @@ Te reguły są domyślnie wyłączone, ale można je włączyć z poziomu [**Eks
 
 ### <a name="configuration"></a>Konfiguracja
 
-Można skonfigurować progi, w których reguły metryk kodu są wyzwalane przez program FxCop analizatory.
+Można skonfigurować progi, w których będą wyzwalane reguły metryki kodu.
 
 1. Utwórz plik tekstowy. Na przykład możesz ją nazwać *CodeMetricsConfig.txt*.
 
@@ -62,7 +62,7 @@ Można skonfigurować progi, w których reguły metryk kodu są wyzwalane przez 
 
    W tym przykładzie reguła [CA1502](ca1502.md) jest skonfigurowana do uruchamiania, gdy Złożoność cyklomatyczna metody jest większa niż 10.
 
-3. W oknie **Właściwości** programu Visual Studio lub w pliku projektu Oznacz akcję kompilacja pliku konfiguracji jako [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Przykład:
+3. W oknie **Właściwości** programu Visual Studio lub w pliku projektu Oznacz akcję kompilacja pliku konfiguracji jako [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Na przykład:
 
    ```xml
    <ItemGroup>
@@ -111,7 +111,7 @@ Można generować dane metryk kodu z wiersza polecenia dla projektów C# i Visua
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pakiet NuGet Microsoft. CodeAnalysis. Metrics
 
-Najprostszym sposobem generowania danych metryk kodu z wiersza polecenia jest zainstalowanie pakietu NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Po zainstalowaniu pakietu Uruchom polecenie `msbuild /t:Metrics` z katalogu, który zawiera plik projektu. Przykład:
+Najprostszym sposobem generowania danych metryk kodu z wiersza polecenia jest zainstalowanie pakietu NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Po zainstalowaniu pakietu Uruchom polecenie `msbuild /t:Metrics` z katalogu, który zawiera plik projektu. Na przykład:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Można zastąpić nazwę pliku wyjściowego, określając `/p:MetricsOutputFile=<filename>` . Możesz również uzyskać dane metryk kodu w [starszej wersji](#previous-versions) , określając `/p:LEGACY_CODE_METRICS_MODE=true` . Przykład:
+Można zastąpić nazwę pliku wyjściowego, określając `/p:MetricsOutputFile=<filename>` . Możesz również uzyskać dane metryk kodu w [starszej wersji](#previous-versions) , określając `/p:LEGACY_CODE_METRICS_MODE=true` . Na przykład:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -293,7 +293,7 @@ Jeśli nie chcesz instalować pakietu NuGet, możesz bezpośrednio wygenerować 
 
 #### <a name="metricsexe-usage"></a>Użycie Metrics.exe
 
-Aby uruchomić *Metrics.exe*, podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Przykład:
+Aby uruchomić *Metrics.exe*, podaj projekt lub rozwiązanie oraz wyjściowy plik XML jako argumenty. Na przykład:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -336,7 +336,7 @@ Począwszy od programu Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysi
 
 Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używają tych samych formuł co poprzednie wersje *Metrics.exe*, ale nowe narzędzie zlicza liczbę `IOperations` (instrukcje logicznego źródła) zamiast instrukcji języka pośredniego (IL). Liczby będą nieco inne niż te, które są generowane przez środowisko IDE programu Visual Studio i poprzednie wersje *Metrics.exe*.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z okna wyników metryk kodu](../code-quality/working-with-code-metrics-data.md)
 - [Wartości metryk kodu](../code-quality/code-metrics-values.md)
