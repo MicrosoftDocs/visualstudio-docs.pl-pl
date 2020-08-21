@@ -1,5 +1,5 @@
 ---
-title: Jak używać ciemnego motywu i zmienić kolor tekstu w programie Visual Studio
+title: Jak używać ciemnego motywu i zmienić kolor tekstu w edytorze
 description: Dowiedz się, jak ustawić domyślny motyw kolorów programu Visual Studio do trybu ciemnego i zmienić kolory czcionki w edytorze tekstu.
 ms.date: 08/20/2020
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0015f6abd434884d039407209d741febd41121
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 3b0e7b11fae63b9a2233b7391805760d3fdd7d27
+ms.sourcegitcommit: cf5b5437f0b43c6d52c479e1a2c443338bd27cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711719"
+ms.locfileid: "88724929"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>Instrukcje: personalizowanie środowiska IDE programu Visual Studio i edytora tekstu
 
@@ -68,7 +68,7 @@ Domyślny motyw kolorów dla interfejsu użytkownika programu Visual Studio jest
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>Zmień kolor tekstu
+## <a name="change-text-colors-in-the-editor"></a>Zmień kolory tekstu w edytorze
 
 Teraz dostosowujemy niektóre kolory tekstu dla edytora. Najpierw utwórz nowy plik XML, aby wyświetlić domyślne kolory.
 
