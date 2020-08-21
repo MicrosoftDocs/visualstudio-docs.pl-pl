@@ -989,5 +989,7 @@
               items:
                 - name: Omówienie
                   displayName: publish warnings
-                - name: 'IL3000: Unikaj uzyskiwania dostępu do ścieżki pliku zestawu podczas publikowania w postaci jednoplikowej'
+                - name: 'IL3000: Unikaj dostępu do ścieżki pliku zestawu podczas publikowania w postaci pojedynczego pliku'
                   href: il3000.md
+                - name: 'IL3001: Unikaj dostępu do ścieżki pliku zestawu podczas publikowania w postaci pojedynczego pliku'
+                  href: il3001.md

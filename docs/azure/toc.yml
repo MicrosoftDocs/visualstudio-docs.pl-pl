@@ -17,12 +17,22 @@
 - name: Łączenie z usługami platformy Azure
   expanded: false
   items:
-    - name: Dodawanie magazynu Azure Storage
-      href: vs-azure-tools-connected-services-storage.md
-    - name: Dodawanie magazynu Azure Key Vault
-      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Dodawanie usługi Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Dodawanie usługi Azure App Insights
+      href: azure-app-insights-add-connected-service.md
+    - name: Dodawanie usługi Azure Cache for Redis
+      href: azure-cache-for-redis-add-connected-service.md
+    - name: Dodawanie usługi Azure CosmosDB
+      href: azure-cosmosdb-add-connected-service.md
+    - name: Dodawanie magazynu Azure Key Vault
+      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Dodawanie usługi Azure SignalR
+      href: azure-signalr-add-connected-service.md
+    - name: Dodawanie usługi Azure SQL Database
+      href: azure-sql-database-add-connected-service.md
+    - name: Dodawanie usługi Azure Storage
+      href: vs-azure-tools-connected-services-storage.md
 - name: Programowanie usług w chmurze platformy Azure
   expanded: false
   items:
