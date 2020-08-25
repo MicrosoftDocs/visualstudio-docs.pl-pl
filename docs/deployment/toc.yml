@@ -302,3 +302,7 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: Niezarządzany wykaz interfejsów API ClickOnce
           href: clickonce-unmanaged-api-reference.md
+    - name: Dokumentacja projektów instalatora programu Visual Studio
+      items:
+        - name: Rozszerzenie projektów instalatora programu Visual Studio i platforma .NET Core 3.1
+          href: installer-projects-net-core.md
