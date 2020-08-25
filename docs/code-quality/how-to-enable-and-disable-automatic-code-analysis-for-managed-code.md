@@ -5,12 +5,12 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371888"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801025"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie analizy kodu binarnego dla kodu zarządzanego
 
@@ -21,9 +21,9 @@ Można skonfigurować starszą analizę kodu (analiza binarna) do uruchomienia p
 
 Aby włączyć lub wyłączyć analizę starszego kodu:
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań**wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) projekt, a następnie wybierz pozycję **Właściwości**.
 
-2. W oknie dialogowym właściwości projektu wybierz kartę **Analiza kodu** .
+2. W oknie dialogowym właściwości projektu przejdź do karty **Analiza kodu** .
 
 3. Określ typ kompilacji w obszarze **Konfiguracja** i platforma docelowa na **platformie**. (Tylko projekty Non-.NET Core/. NET standard).
 

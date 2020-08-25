@@ -7,23 +7,23 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Dowiedz się, jak korzystać z usługi Azure DevOps jako subskrybenta programu Visual Studio.
-ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115321"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801077"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści z platformy Azure DevOps dla subskrybentów programu Visual Studio
 Jako aktywną subskrypcję programu Visual Studio możesz korzystać z szeregu funkcji platformy Azure DevOps, które są dostępne w ramach subskrypcji jako korzyści. Będzie można korzystać z tych samych funkcji w każdej organizacji usługi Azure DevOps, w której jesteś członkiem, niezależnie od tego, czy została utworzona organizacja, czy dodana przez kogoś innego.
 
-## <a name="sign-in"></a>Zaloguj
+## <a name="sign-in"></a>Logowanie
 
    > [!div class="mx-imgBorder"]
    > ![Kafelek Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
-Gdy zalogujesz się do usługi Azure DevOps przy użyciu tożsamości użytej do aktywowania subskrypcji programu Visual Studio lub [alternatywnej tożsamości](vs-alternate-identity.md), automatycznie rozpoznajemy to.  W ten sposób można także dodać konto służbowe (używane podczas logowania do programu Visual Studio, pakietu Office 365 lub sieci firmowej), co pozwala na dostęp do usługi Azure DevOps przy użyciu konta osobistego i konta służbowego.
+Gdy zalogujesz się do usługi Azure DevOps przy użyciu tożsamości użytej do aktywowania subskrypcji programu Visual Studio lub [alternatywnej tożsamości](vs-alternate-identity.md), automatycznie rozpoznajemy to.  W ten sposób można także dodać konto służbowe (używane podczas logowania do programu Visual Studio, Microsoft 365 lub sieci firmowej), co umożliwia dostęp do usługi Azure DevOps przy użyciu konta osobistego i konta służbowego.
 
 [Zarejestruj się, aby skorzystać z bezpłatnej organizacji usługi Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 
@@ -33,7 +33,7 @@ Gdy zalogujesz się do usługi Azure DevOps przy użyciu tożsamości użytej do
 | Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup>  | Azure Boards & repozytoria (podstawowe<sup>2</sup>), Azure test Plans, własne zadania równoległe [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Tak          |
 | Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja| Azure Boards & repozytoria (podstawowe<sup>2</sup>), Azure test Plans, własne zadania równoległe [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Tak          |
 | Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                        | Repozytoria & Azure Boards (podstawowa<sup>2</sup>) [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Tak          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja| Repozytoria & Azure Boards (podstawowa<sup>2</sup>) [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Tak          |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja| Repozytoria & Azure Boards (podstawowa<sup>2</sup>)  [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Tak          |
 | Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoriów (podstawowa<sup>2</sup>), Azure test Plans [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Tak          |
 | Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoriów (podstawowa<sup>2</sup>), Azure test Plans [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Tak          |
 ||

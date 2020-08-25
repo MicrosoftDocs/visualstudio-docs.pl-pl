@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911713"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800479"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -24,7 +24,7 @@ ms.locfileid: "72911713"
 
 Jeśli zainstalowano narzędzia platformy Azure dla Microsoft Visual Studio, można wyświetlać dane obiektów blob, kolejek i tabel z kont magazynu dla platformy Azure. Węzeł usługi Azure **Storage** w Eksplorator serwera zawiera dane znajdujące się na koncie emulatora magazynu lokalnego oraz inne konta usługi Azure Storage.
 
-Aby wyświetlić Eksplorator serwera w programie Visual Studio, na pasku menu wybierz pozycję **wyświetl** > **Eksplorator serwera**. W węźle **Magazyn** są wyświetlane wszystkie konta magazynu, które istnieją w ramach każdej subskrypcji lub certyfikatu platformy Azure, z którym nawiązano połączenie. Jeśli konto magazynu nie jest wyświetlane, możesz je dodać, postępując zgodnie z instrukcjami [w dalszej części tego artykułu](#add-storage-accounts-by-using-server-explorer).
+Aby wyświetlić Eksplorator serwera w programie Visual Studio, na pasku menu wybierz pozycję **Wyświetl**  >  **Eksplorator serwera**. W węźle **Magazyn** są wyświetlane wszystkie konta magazynu, które istnieją w ramach każdej subskrypcji lub certyfikatu platformy Azure, z którym nawiązano połączenie. Jeśli konto magazynu nie jest wyświetlane, możesz je dodać, postępując zgodnie z instrukcjami [w dalszej części tego artykułu](#add-storage-accounts-by-using-server-explorer).
 
 Począwszy od zestawu Azure SDK 2,7, można również wyświetlać zasoby platformy Azure i zarządzać nimi za pomocą programu Cloud Explorer. Aby uzyskać więcej informacji, zobacz [Zarządzanie zasobami platformy Azure za pomocą programu Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
@@ -72,7 +72,7 @@ Można wykonać następujące operacje na obiektach Blob przy użyciu przyciskó
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>Aby utworzyć folder lub podfolder w kontenerze obiektów BLOB
 
-1. Wybierz kontener obiektów BLOB w Eksploratorze chmury. W oknie kontenera wybierz przycisk **Przekaż obiekt BLOB** .
+1. Wybierz kontener obiektów BLOB w **Eksploratorze chmury**. W oknie kontenera wybierz przycisk **Przekaż obiekt BLOB** .
 
 1. W oknie dialogowym **Przekaż nowy plik** wybierz przycisk **Przeglądaj** , aby określić plik do przekazania, a następnie wprowadź nazwę folderu w polu **folder (opcjonalnie)** .
 
@@ -94,7 +94,7 @@ Ponieważ foldery w kontenerach obiektów BLOB są folderami wirtualnymi, nie mo
 
 Można filtrować obiekty blob, które są wyświetlane przez określenie wspólnego prefiksu.
 
-Jeśli na przykład wprowadzisz polecenie **Hello** w polu tekstowym filtr, a następnie wybierzesz przycisk **Execute** ( **!** ), zostaną wyświetlone tylko obiekty blob zaczynające się od "Hello".
+Jeśli na przykład wprowadzisz polecenie **Hello** w polu tekstowym filtr, a następnie wybierzesz przycisk **Execute** (**!**), zostaną wyświetlone tylko obiekty blob zaczynające się od "Hello".
 
 ![Pole tekstowe filtru](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,7 +102,7 @@ W polu tekstowym filtr jest rozróżniana wielkość liter i nie jest obsługiwa
 
 ### <a name="to-download-blob-data"></a>Aby pobrać dane obiektów BLOB
 
-W programie Cloud Explorer Użyj dowolnej z następujących metod:
+W programie **Cloud Explorer**Użyj dowolnej z następujących metod:
 
 * Otwórz menu skrótów dla co najmniej jednego obiektu BLOB, a następnie wybierz polecenie **Otwórz**.
 * Wybierz nazwę obiektu BLOB, a następnie wybierz przycisk **Otwórz** .
@@ -147,7 +147,7 @@ Podczas tworzenia usługi w chmurze, która korzysta z kolejek, możesz chcieć 
 W Eksplorator serwera można wyświetlić kolejki na koncie magazynu, utworzyć i usunąć kolejki, otworzyć kolejkę w celu wyświetlenia jej komunikatów oraz dodać komunikaty do kolejki. Po otwarciu kolejki do wyświetlania można wyświetlić poszczególne komunikaty, a następnie wykonać następujące akcje w kolejce przy użyciu przycisków w lewym górnym rogu:
 
 * Odśwież widok kolejki.
-* Dodaj komunikat do kolejki.
+* Dodawanie komunikatu do kolejki.
 * Usuwa komunikat z kolejki najwyższego poziomu.
 * Wyczyść całą kolejkę.
 
@@ -162,16 +162,16 @@ Aby uzyskać więcej informacji o kolejkach usługi Storage, zobacz [Rozpoczynan
 
 ## <a name="work-with-table-resources"></a>Współpraca z zasobami tabeli
 
-Usługa Azure Table Storage przechowuje duże ilości danych strukturalnych. Usługa to magazyn danych NoSQL, który akceptuje uwierzytelnione wywołania z chmury platformy Azure i poza nią. Tabele platformy Azure doskonale nadają się do przechowywania strukturalnych danych nierelacyjnych.
+Usługa Azure Table Storage służy do przechowywania dużych ilości danych strukturalnych. Usługa to magazyn danych NoSQL, który akceptuje uwierzytelnione wywołania z chmury platformy Azure i poza nią. Tabele Azure idealnie nadają się do przechowywania strukturalnych danych nierelacyjnych.
 
 ### <a name="to-create-a-table"></a>Aby utworzyć tabelę
 
-1. W programie Cloud Explorer wybierz węzeł **tabele** konta magazynu, a następnie wybierz pozycję **Utwórz tabelę**.
+1. W programie **Cloud Explorer**wybierz węzeł **tabele** konta magazynu, a następnie wybierz pozycję **Utwórz tabelę**.
 1. W oknie dialogowym **Tworzenie tabeli** wprowadź nazwę tabeli.
 
 ### <a name="to-view-table-data"></a>Aby wyświetlić dane tabeli
 
-1. W programie Cloud Explorer otwórz węzeł **Azure** , a następnie otwórz węzeł **Magazyn** .
+1. W programie **Cloud Explorer**Otwórz węzeł **Azure** , a następnie otwórz węzeł **Magazyn** .
 1. Otwórz węzeł konta magazynu, który Cię interesuje, a następnie otwórz węzeł **tabele** , aby wyświetlić listę tabel dla konta magazynu.
 1. Otwórz menu skrótów dla tabeli, a następnie wybierz polecenie **Wyświetl tabelę**.
 
@@ -181,20 +181,20 @@ Tabela jest zorganizowana według jednostek (pokazanych w wierszach) i właściw
 
 ### <a name="to-edit-table-data"></a>Aby edytować dane tabeli
 
-W Projektancie tabel, otwórz menu skrótów dla jednostki (pojedynczy wiersz) lub właściwość (pojedyncza komórka), a następnie wybierz pozycję **Edytuj**.
+W **Projektancie tabel**, otwórz menu skrótów dla jednostki (pojedynczy wiersz) lub właściwość (pojedyncza komórka), a następnie wybierz pozycję **Edytuj**.
 
 ![Dodawanie lub edytowanie jednostki tabeli](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Jednostki w pojedynczej tabeli nie muszą mieć tego samego zestawu właściwości (kolumn). Należy pamiętać o następujących ograniczeniach dotyczących wyświetlania i edytowania danych tabeli:
 
-* Nie można wyświetlać ani edytować danych binarnych (`type byte[]`), ale można je przechowywać w tabeli.
-* Nie można edytować wartości **PartitionKey** lub **RowKey** , ponieważ magazyn tabel na platformie Azure nie obsługuje tej operacji.
+* Nie można wyświetlać ani edytować danych binarnych ( `type byte[]` ), ale można je przechowywać w tabeli.
+* Nie można edytować wartości **PartitionKey** lub **RowKey** , ponieważ usługa Azure Table Storage nie obsługuje tej operacji.
 * Nie można utworzyć właściwości o nazwie **timestamp**. Usługi Azure Storage używają właściwości o tej nazwie.
 * Jeśli wprowadzisz wartość **daty i godziny** , musisz użyć formatu odpowiedniego dla ustawienia Region i język komputera (na przykład mm/dd/rrrr hh: mm: SS [am | PM] dla angielskiej wersji językowej USA).
 
 ### <a name="to-add-entities"></a>Aby dodać jednostki
 
-1. W Projektancie tabel wybierz przycisk **Dodaj jednostkę** .
+1. W **Projektancie tabel**wybierz przycisk **Dodaj jednostkę** .
 
     ![Przycisk Dodaj jednostkę](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
@@ -235,7 +235,7 @@ Gdy Eksplorator serwera nawiązuje połączenie lub pobiera dane z konta magazyn
 ### <a name="to-refresh-table-data"></a>Aby odświeżyć dane tabeli
 
 * Wybierz węzeł **tabele** pod **magazynem**, a następnie wybierz przycisk **Odśwież** na pasku narzędzi Eksplorator serwera.
-* Aby odświeżyć listę jednostek, które są wyświetlane w Projektancie tabel, wybierz przycisk **Execute (wykonaj** ) w Projektancie tabel.
+* Aby odświeżyć listę jednostek, które są wyświetlane w **Projektancie tabel**, wybierz przycisk **Execute (wykonaj** ) w Projektancie tabel.
 
 ### <a name="to-refresh-queue-data"></a>Aby odświeżyć dane kolejki
 
@@ -260,9 +260,9 @@ Istnieją dwa sposoby dodawania kont magazynu za pomocą Eksplorator serwera. Mo
    * Region lub grupa koligacji (na przykład zachodnie stany USA lub Azja Wschodnia).
    * Typ replikacji, który ma być używany dla konta magazynu, na przykład lokalnie nadmiarowy.
 
-   ![Utwórz konto usługi Azure Storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
+   ![Tworzenie konta usługi Azure Storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Wybierz pozycję **Utwórz**.
+1. Wybierz przycisk **Utwórz**.
 
 Nowe konto magazynu zostanie wyświetlone na liście **Magazyn** w Eksplorator rozwiązań.
 

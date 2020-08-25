@@ -1,7 +1,8 @@
 ---
-title: Przegląd wdrożenia | Microsoft Docs
-ms.custom: seodec18
-ms.date: 06/22/2018
+title: Wdrażanie aplikacji Visual Studio w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym
+description: Dowiedz się więcej o opcjach publikowania aplikacji za pomocą Kreatora publikacji
+ms.custom: contperfq1
+ms.date: 08/21/2020
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -13,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173733"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800839"
 ---
-# <a name="overview-of-deployment-in-visual-studio"></a>Omówienie wdrażania w programie Visual Studio
+# <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Wdrażanie aplikacji w folderze, usługach IIS, na platformie Azure lub w innym miejscu docelowym
 
 Wdrażanie aplikacji, usług i składników to rozpowszechnianie ich w celu instalacji na innych komputerach, urządzeniach, serwerach lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz.
 
@@ -35,19 +36,27 @@ W programie Visual Studio aplikacje można publikować bezpośrednio w następuj
 - [Azure](#azure)
 - [Container Registry platformy Docker](#docker-container-registry)
 - [Folder](#folder)
-- [Niestandardowe elementy docelowe (IIS, FTP)](#Custom targets (IIS, FTP))
-
-Na karcie **Publikowanie** można wybrać istniejący profil publikowania, zaimportować istniejący lub utworzyć nowy, korzystając z opcji opisanych tutaj. Aby zapoznać się z opcjami publikowania w środowisku IDE dla różnych typów aplikacji, zobacz [pierwsze spojrzenie na wdrożenie](../deployment/deploying-applications-services-and-components.md).
+- [Serwer FTP/FTPS](#ftpftps-server)
+- [Serwer sieci Web (IIS)](#web-server-iis)
+- [Importuj profil](#import-profile)
 
 ## <a name="azure"></a>Azure 
 
+Po wybraniu platformy Azure Możesz wybrać jedną z opcji:
+
+- Azure App Service uruchomiony w systemie Windows, Linux lub w postaci obrazu platformy Docker
+- Obraz platformy Docker wdrożony w Azure Container Registry
+- Maszyna wirtualna platformy Azure
+
+![Wybierz usługę platformy Azure](../deployment/media/quickstart-choose-azure-service.png)
+
 ### <a name="azure-app-service"></a>Azure App Service
 
-[Azure App Service](/azure/app-service/app-service-web-overview) , które ułatwiają deweloperom szybkie tworzenie skalowalnych aplikacji sieci Web i usług bez konieczności utrzymywania infrastruktury. App Service działa na maszynach wirtualnych hostowanych w chmurze na platformie Azure, ale te maszyny wirtualne są zarządzane przez Ciebie. Dla każdej aplikacji w App Service zostanie przypisany unikatowy \* adres URL. azurewebsites.NET; wszystkie warstwy cenowe inne niż bezpłatna umożliwiają przypisanie niestandardowych nazw domen do lokacji.
+[Azure App Service](/azure/app-service/app-service-web-overview) ułatwia deweloperom szybkie tworzenie skalowalnych aplikacji sieci Web i usług bez konieczności utrzymywania infrastruktury. App Service działa na maszynach wirtualnych hostowanych w chmurze na platformie Azure, ale te maszyny wirtualne są zarządzane przez Ciebie. Dla każdej aplikacji w App Service zostanie przypisany unikatowy \* adres URL. azurewebsites.NET; wszystkie warstwy cenowe inne niż bezpłatna umożliwiają przypisanie niestandardowych nazw domen do lokacji.
 
 Należy określić, ile mocy obliczeniowej ma App Service, wybierając [warstwę cenową lub plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) dla App Service zawierającej. Można mieć wiele aplikacji sieci Web (i innych typów aplikacji), które współużytkują tę samą App Service bez zmiany warstwy cenowej. Na przykład możesz hostować aplikacje sieci Web do tworzenia, przemieszczania i produkcji w tym samym App Service.
 
-### <a name="when-to-choose-azure-app-service"></a>Kiedy należy wybrać Azure App Service
+#### <a name="when-to-choose-azure-app-service"></a>Kiedy należy wybrać Azure App Service
 
 - Chcesz wdrożyć aplikację sieci Web, która jest dostępna za pomocą Internetu.
 - Chcesz automatycznie skalować aplikację sieci Web zgodnie z zapotrzebowaniem bez konieczności ponownego wdrażania.
@@ -56,7 +65,18 @@ Należy określić, ile mocy obliczeniowej ma App Service, wybierając [warstwę
 
 > Jeśli chcesz używać Azure App Service we własnym centrum danych lub na innych komputerach lokalnych, możesz to zrobić przy użyciu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Aby uzyskać więcej informacji o publikowaniu do App Service, zobacz [Przewodnik Szybki Start — publikowanie w usłudze Azure App Service](quickstart-deploy-to-azure.md) i [szybki start — publikowanie ASP.NET Core w systemie Linux](quickstart-deploy-to-linux.md).
+Aby uzyskać więcej informacji o publikowaniu do App Service, zobacz:
+- [Szybki Start — publikowanie w usłudze Azure App Service](quickstart-deploy-to-azure.md) i [szybki start — publikowanie ASP.NET Core w systemie Linux](quickstart-deploy-to-linux.md).
+- [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+### <a name="azure-container-registry"></a>Azure Container Registry
+
+[Azure Container Registry](/azure/container-registry/) umożliwia tworzenie i przechowywanie obrazów kontenerów platformy Docker i artefaktów oraz zarządzanie nimi w rejestrze prywatnym dla wszystkich typów wdrożeń kontenerów.
+
+#### <a name="when-to-choose-azure-container-registry"></a>Kiedy należy wybrać Azure Container Registry
+
+- Gdy masz istniejący potok platformy Docker do tworzenia i wdrażania kontenerów.
+- Gdy chcesz tworzyć obrazy kontenerów platformy Docker na platformie Azure.
 
 ### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
@@ -66,7 +86,7 @@ Skalowanie aplikacji hostowanej na maszynach wirtualnych obejmuje rozmieszczenie
 
 Dodatkowe informacje znajdują się w [szczegółowym porównaniu](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) między Azure App Service, Azure Virtual Machines i innymi usługami platformy Azure, których można użyć jako celu wdrożenia przy użyciu opcji niestandardowej w programie Visual Studio.
 
-### <a name="when-to-choose-azure-app-virtual-machines"></a>Kiedy należy wybrać usługę Azure App Virtual Machines
+#### <a name="when-to-choose-azure-virtual-machines"></a>Kiedy należy wybrać platformę Azure Virtual Machines
 
 - Chcesz wdrożyć aplikację sieci Web, która jest dostępna za pośrednictwem Internetu, z pełną kontrolą nad okresem istnienia przypisanych adresów IP.
 - Na serwerach programu wymagane są dostosowania na poziomie komputera, w tym dodatkowe oprogramowanie, takie jak wyspecjalizowany system bazy danych, konkretne konfiguracje sieci, partycje dysku i tak dalej.
@@ -99,26 +119,61 @@ Należy pamiętać, że jeśli z jakiegokolwiek powodu (na przykład dostęp do 
 
 Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie do folderu lokalnego](quickstart-deploy-to-local-folder.md) .
 
-## <a name="custom-targets-iis-ftp"></a>Niestandardowe elementy docelowe (IIS, FTP)
+## <a name="ftpftps-server"></a>Serwer FTP/FTPS
 
-Niestandardowy obiekt docelowy pozwala wdrożyć aplikację w miejscu docelowym innym niż Azure App Service, Virtual Machines platformy Azure lub lokalnym systemie plików. Można ją wdrożyć w systemie plików lub na dowolnym innym serwerze (Internet lub intranecie), do którego masz dostęp, w tym także w innych usługach w chmurze. Może współpracować z programem Web Deploy (pliki lub. ZIP) i FTP.
+Serwer FTP/FTPS umożliwia wdrożenie aplikacji na serwerze innym niż Azure. Można ją wdrożyć w systemie plików lub na dowolnym innym serwerze (Internet lub intranecie), do którego masz dostęp, w tym także w innych usługach w chmurze. Może współpracować z programem Web Deploy (pliki lub. ZIP) i FTP.
 
-W przypadku wybrania niestandardowego celu program Visual Studio poprosi o podanie nazwy profilu, a następnie zbiera dodatkowe informacje o **połączeniu** , w tym serwer docelowy lub lokalizację, nazwę lokacji i poświadczenia. Na karcie **Ustawienia** można kontrolować następujące zachowania:
+W przypadku wybrania serwera FTP/FTPS program Visual Studio poprosi o podanie nazwy profilu, a następnie zbiera dodatkowe informacje o **połączeniu** , w tym serwer docelowy lub lokalizację, nazwę lokacji i poświadczenia. Na karcie **Ustawienia** można kontrolować następujące zachowania:
 
 - Konfiguracja, którą chcesz wdrożyć.
 - Czy usunąć istniejące pliki z lokalizacji docelowej.
 - Czy należy prekompilować podczas publikowania.
 - Określa, czy pliki w folderze App_Data mają być wykluczone z wdrożenia.
 
-W programie Visual Studio można utworzyć dowolną liczbę niestandardowych profilów wdrożenia, co umożliwia zarządzanie profilami przy użyciu różnych ustawień.
+W programie Visual Studio można utworzyć dowolną liczbę profilów wdrażania FTP/FTPS, co umożliwia zarządzanie profilami przy użyciu różnych ustawień.
 
-### <a name="when-to-choose-custom-deployment"></a>Kiedy należy wybrać wdrożenie niestandardowe
+### <a name="when-to-choose-ftpftps-server-deployment"></a>Kiedy należy wybrać wdrożenie serwera FTP/FTPS
 
 - Używasz usług w chmurze na dostawcy innym niż Azure, do którego można uzyskać dostęp za pośrednictwem adresów URL.
 - Chcesz wdrożyć przy użyciu poświadczeń innych niż te, które są używane w programie Visual Studio, lub powiązane bezpośrednio z kontami platformy Azure.
 - Chcesz usunąć pliki z obiektu docelowego przy każdym wdrożeniu.
 
-Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md) .
+## <a name="web-server-iis"></a>Serwer sieci Web (IIS)
+
+Serwer sieci Web usług IIS umożliwia wdrożenie aplikacji na serwerze sieci Web innym niż Azure. Można ją wdrożyć na serwerze usług IIS (Internet lub intranecie), do którego masz dostęp, w tym także w innych usługach w chmurze. Może współpracować z Web Deploy lub pakietem Web Deploy.
+
+W przypadku wybrania serwera sieci Web usług IIS program Visual Studio poprosi o podanie nazwy profilu, a następnie zbiera dodatkowe informacje o **połączeniu** , w tym serwer docelowy lub lokalizację, nazwę lokacji i poświadczenia. Na karcie **Ustawienia** można kontrolować następujące zachowania:
+
+- Konfiguracja, którą chcesz wdrożyć.
+- Czy usunąć istniejące pliki z lokalizacji docelowej.
+- Czy należy prekompilować podczas publikowania.
+- Określa, czy pliki w folderze App_Data mają być wykluczone z wdrożenia.
+
+W programie Visual Studio można utworzyć dowolną liczbę profilów wdrażania serwera sieci Web usług IIS, dzięki czemu możliwe jest zarządzanie profilami przy użyciu różnych ustawień.
+
+### <a name="when-to-choose-web-server-iis-deployment"></a>Kiedy należy wybrać wdrożenie serwera sieci Web (IIS)
+
+- Używasz usług IIS do publikowania witryny lub usługi, do której można uzyskać dostęp za pośrednictwem adresów URL.
+- Chcesz wdrożyć przy użyciu poświadczeń innych niż te, które są używane w programie Visual Studio, lub powiązane bezpośrednio z kontami platformy Azure.
+- Chcesz usunąć pliki z obiektu docelowego przy każdym wdrożeniu.
+
+Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md). Aby uzyskać pomoc w rozwiązywaniu problemów ASP.NET Core w usługach IIS, zobacz [Rozwiązywanie problemów ASP.NET Core na Azure App Service i usługach IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+## <a name="import-profile"></a>Importuj profil
+
+Możesz zaimportować profil podczas publikowania w usługach IIS lub Azure App Service. Wdrożenie można skonfigurować przy użyciu *pliku ustawień publikowania* (* \* . publishsettings*). Plik ustawień publikowania jest tworzony przez usługi IIS lub Azure App Service lub można go utworzyć ręcznie, a następnie można go zaimportować do programu Visual Studio.
+
+Użycie pliku ustawień publikowania może uprościć konfigurację wdrożenia i działać lepiej w środowisku zespołu, a jednocześnie ręcznie skonfigurować każdy profil wdrożenia.
+
+### <a name="when-to-choose-import-profile"></a>Po wybraniu opcji Importuj profil
+
+- Publikujesz w usługach IIS i chcesz uprościć konfigurację wdrożenia.
+- Publikujesz w usługach IIS lub Azure App Service i chcesz przyspieszyć konfigurację wdrożenia w celu ponownego użycia lub dla członków zespołu publikowanych w tej samej usłudze.
+
+Aby uzyskać więcej informacji, zobacz następujące tematy:
+
+- [Importowanie ustawień publikowania i wdrażanie w usługach IIS](tutorial-import-publish-settings-iis.md)
+- [Importowanie ustawień publikowania i wdrażanie na platformie Azure](tutorial-import-publish-settings-azure.md)
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -128,5 +183,5 @@ Samouczki:
 - [Publikowanie aplikacji ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Wdrożenie w Visual C++](/cpp/windows/deployment-in-visual-cpp)
 - [Wdrażanie aplikacji platformy UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Publikowanie aplikacji node. js na platformie Azure przy użyciu Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Publikowanie aplikacji Node.js na platformie Azure przy użyciu usługi Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publikowanie aplikacji w języku Python w celu Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

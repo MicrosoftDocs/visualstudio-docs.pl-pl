@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144704"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801623"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Tworzenie wykresów danych wizualnych za pomocą języka R
 
@@ -71,7 +71,7 @@ Nowe okno wykresu można utworzyć za pomocą przycisku paska narzędzi lub **Na
 
 Wykresy są również obiektami niezależnymi, co oznacza, że można je skopiować lub przenieść między oknami kreolenia przy użyciu przeciągania i upuszczania za pomocą myszy albo za pomocą poleceń **kopiowania**, **wycinania**i **wklejania** w kontekście prawym przyciskiem myszy i w menu **Edycja** .
 
-Domyślne zachowanie funkcji przeciągania i upuszczania to Copy; Aby przenieść, przeciągnij i upuść, trzymając wciśnięty klawisz **SHIFT** .
+Domyślne zachowanie funkcji przeciągania i upuszczania to Copy; Aby przenieść, przeciągnij i upuść podczas naciskania klawisza **SHIFT** .
 
 ## <a name="plot-history"></a>Historia wykresów
 
@@ -82,7 +82,7 @@ Historia zawiera listę miniatur dla wykresów, które zostały wyświetlone w t
 
 ![Okno historii kreślenia](media/plotting-plot-history-window.png)
 
-Aby otworzyć wykres w skojarzonym oknie, kliknij dwukrotnie ten wykres, zaznacz go, a następnie wybierz przycisk paska narzędzi **Pokaż wykres** lub kliknij prawym przyciskiem myszy i wybierz polecenie **Pokaż wykres**. Możesz również wybrać pojedynczy wykres i skopiować, wyciąć lub usunąć z menu kontekstowego kliknięcia prawym przyciskiem myszy lub **edycji** .
+Aby otworzyć wykres w skojarzonym oknie, kliknij dwukrotnie ten wykres, zaznacz go, a następnie wybierz przycisk paska narzędzi **Pokaż wykres** . Alternatywnie kliknij prawym przyciskiem myszy wykres i wybierz pozycję **Pokaż wykres**. Możesz również wybrać pojedynczy wykres i skopiować, wyciąć lub usunąć z menu kontekstowego lub **edycji** .
 
 Okres istnienia historii kreślenia w całym systemie Windows jest powiązany z okresem istnienia interaktywnej sesji języka R. W przypadku zresetowania sesji języka R lub zamknięcia i ponownego uruchomienia programu Visual Studio historia wykresów zostanie zresetowana.
 

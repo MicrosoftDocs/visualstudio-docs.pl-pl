@@ -1,7 +1,7 @@
 ---
-title: ASP.NET podstawowa aplikacja internetowa z programem Entity Framework & visual studio 2019
+title: ASP.NET Core aplikację sieci Web z Entity Framework & Visual Studio 2019
 titleSuffix: ''
-description: Jako pierwszy krok przed utworzeniem aplikacji sieci web ASP.NET Core, dowiedz się, jak zainstalować program Visual Studio 2019 za pomocą tego samouczka wideo i instrukcje krok po kroku.
+description: Pierwszy krok przed utworzeniem ASP.NET Core aplikacji sieci Web, Dowiedz się, jak zainstalować program Visual Studio 2019 z tym samouczkiem wideo oraz instrukcje krok po kroku.
 ms.custom: get-started
 ms.date: 03/31/2019
 ms.technology: vs-ide-general
@@ -17,87 +17,87 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580092"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801805"
 ---
-# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Samouczek: Tworzenie pierwszej aplikacji core ASP.NET przy użyciu programu Entity Framework w programie Visual Studio 2019
+# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Samouczek: Tworzenie pierwszej aplikacji ASP.NET Core przy użyciu Entity Framework z programem Visual Studio 2019
 
-W tym samouczku utworzysz ASP.NET podstawową aplikację sieci web, która używa danych, i wdrożysz ją na platformie Azure. Ten samouczek składa się z następujących kroków:
+W tym samouczku utworzysz aplikację sieci Web ASP.NET Core, która używa danych, i Wdróż ją na platformie Azure. Ten samouczek składa się z następujących kroków:
 
-- [Krok 1: Instalowanie programu Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [Krok 2: Tworzenie pierwszej aplikacji sieci web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
-- [Krok 3: Praca z danymi przy użyciu entity framework](tutorial-aspnet-core-ef-step-03.md)
-- [Krok 4: Uwidacznianie internetowego interfejsu API z aplikacji ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
-- [Krok 5: Wdrażanie aplikacji ASP.NET Core na platformie Azure](tutorial-aspnet-core-ef-step-05.md)
+- [Krok 1. Instalowanie programu Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Krok 2. Tworzenie pierwszej aplikacji sieci Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+- [Krok 3. Współpraca z danymi przy użyciu Entity Framework](tutorial-aspnet-core-ef-step-03.md)
+- [Krok 4. Uwidacznianie internetowego interfejsu API w aplikacji ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Krok 5. wdrażanie aplikacji ASP.NET Core na platformie Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>Krok 1: Instalowanie programu Visual Studio 2019
+## <a name="step-1-install-visual-studio-2019"></a>Krok 1. Instalowanie programu Visual Studio 2019
 
-Dowiedz się, jak zainstalować program Visual Studio 2019 za pomocą tego samouczka wideo i instrukcji krok po kroku. Jeśli program Visual Studio został już zainstalowany, przejdź do [kroku 2: Utwórz pierwszą ASP.NET podstawową aplikację sieci Web](tutorial-aspnet-core-ef-step-02.md).
+Dowiedz się, jak zainstalować program Visual Studio 2019 z tym samouczkiem wideo oraz instrukcje krok po kroku. Jeśli masz już zainstalowany program Visual Studio, przejdź do [kroku 2: Tworzenie pierwszej aplikacji sieci web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
 
-_Obejrzyj ten klip wideo i postępuj zgodnie z tym, aby zainstalować program Visual Studio i utworzyć pierwszą aplikację ASP.NET Core._
+_Obejrzyj ten film wideo i postępuj zgodnie z instrukcjami, aby zainstalować program Visual Studio i utworzyć swoją pierwszą aplikację ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/Fz_HAqQGLtY]
 
-## <a name="download-the-installer"></a>Pobierz Instalatora
+## <a name="download-the-installer"></a>Pobierz instalatora
 
-Przejdź do [visualstudio.com,](https://visualstudio.com) aby znaleźć instalatora. Znajdź łącze programu Visual Studio 2019 i kliknij je, aby rozpocząć pobieranie. Aby uzyskać bezpłatną wersję programu Visual Studio, wybierz pozycję Visual Studio Community.
+Przejdź do [VisualStudio.com](https://visualstudio.com) , aby znaleźć Instalatora. Znajdź link programu Visual Studio 2019 i kliknij go, aby rozpocząć pobieranie. W przypadku bezpłatnej wersji programu Visual Studio wybierz pozycję Visual Studio Community.
 
-## <a name="start-the-installer"></a>Uruchamianie Instalatora
+## <a name="start-the-installer"></a>Uruchom Instalatora
 
-Po zakończeniu pobierania kliknij przycisk **Uruchom,** aby uruchomić instalator.
+Po zakończeniu pobierania kliknij przycisk **Uruchom** , aby uruchomić Instalatora.
 
 ![Instalator programu Visual Studio 2019](media/vs-2019/vs2019-installer.png)
 
 ## <a name="choose-workloads"></a>Wybieranie obciążeń
 
-Visual Studio może służyć do wielu różnych rodzajów programowania, a obciążenia ułatwiają pobieranie wszystkiego, czego potrzebujesz dla rodzaju aplikacji, które chcesz utworzyć. Na razie **wybierz ASP.NET i web development** oraz **.NET Core — wieloplatformowe** obciążenia programistyczne. Zawsze można ponownie zainstalować instalator później, aby zainstalować dodatkowe obciążenia i składniki.
+Program Visual Studio może być używany w wielu różnych rodzajach programowania, a obciążenia ułatwiają pobieranie wszystkiego, czego potrzebujesz, dla rodzaju aplikacji, które chcesz skompilować. W tej chwili wybierz pozycję **ASP.NET i programowanie** dla **wielu platform platformy .NET Core** . Później możesz ponownie uruchomić Instalatora, aby zainstalować dodatkowe obciążenia i składniki.
 
 ![Visual Studio 2019 Wybieranie obciążeń](media/vs-2019/vs2019-choose-workloads.png)
 
 ## <a name="install"></a>Instalowanie
 
-Kliknij **pozycję Zainstaluj** i pozwól instalatorowi pobrać i zainstalować program Visual Studio.
+Kliknij przycisk **Zainstaluj** , aby Instalator mógł pobrać i zainstalować program Visual Studio.
 
-## <a name="run-visual-studio-for-the-first-time"></a>Uruchamianie programu Visual Studio po raz pierwszy
+## <a name="run-visual-studio-for-the-first-time"></a>Uruchom program Visual Studio po raz pierwszy
 
-Visual Studio należy uruchomić automatycznie po zakończeniu instalatora. Może zostanie wyświetlony monit o zalogowanie się, co wiąże się z kilkoma ładnymi funkcjami, ale na razie możesz to zrobić później. Następnie możesz wybrać ustawienia motywu i rozwoju. Po dokonaniu tych wyborów będziesz gotowy do rozpoczęcia pierwszego projektu. Kliknij **pozycję Utwórz nowy projekt,** a następnie wybierz pozycję **ASP.NET Podstawowa aplikacja sieci Web**.
+Program Visual Studio powinien być uruchamiany automatycznie po zakończeniu działania Instalatora. Może zostać wyświetlony monit o zalogowanie się, z którym są skojarzone pewne funkcje, ale teraz można wybrać tę opcję później. Następnie możesz wybrać ustawienia motywu i programowania. Po dokonaniu tych wyborów będziesz gotowy rozpocząć swój pierwszy projekt. Kliknij przycisk **Utwórz nowy projekt** , a następnie wybierz **ASP.NET Core aplikacji sieci Web**.
 
-![Visual Studio 2019 Tworzenie nowego projektu aplikacji sieci Web ASP.NET Core](media/vs-2019/vs2019-create-new-project.png)
+![Visual Studio 2019 Utwórz nowy projekt aplikacji sieci Web ASP.NET Core](media/vs-2019/vs2019-create-new-project.png)
 
-## <a name="explore-aspnet-core-project-types"></a>Eksploruj ASP.NET podstawowe typy projektów
+## <a name="explore-aspnet-core-project-types"></a>Eksploruj ASP.NET Core typy projektów
 
-Możesz wybrać nazwę i lokalizację projektu, a następnie wybrać pozycję **Utwórz**. Teraz wybierz szablon, którego chcesz użyć dla aplikacji ASP.NET Core. Możesz wybrać z następujących opcji:
+Możesz wybrać nazwę i lokalizację projektu, a następnie wybrać pozycję **Utwórz**. Teraz wybierz szablon, który ma być używany dla aplikacji ASP.NET Core. Możesz wybrać z następujących opcji:
 
-- Pusty. Pusty szablon projektu, który pozwala rozpocząć od zera.
-- Api. Najlepsze dla internetowych interfejsów API.
-- Aplikacja sieci Web. Standardowa aplikacja internetowa ASP.NET Core zbudowana ze strony Razor Pages.
-- aplikacji sieci Web (model-view-controller). Standardowa aplikacja sieci web ASP.NET Core przy użyciu wzorca model-kontroler widoku.
-- Kątowe.
+- Ciągiem. Pusty szablon projektu, który umożliwia rozpoczęcie od podstaw.
+- Interfejsu API. Najlepsze dla interfejsów API sieci Web.
+- Aplikacja sieci Web. Standardowa aplikacja sieci Web ASP.NET Core skompilowana z Razor Pages.
+- Aplikacja sieci Web (Model-View-Controller). Standardowa aplikacja sieci Web ASP.NET Core przy użyciu wzorca Model-View-Controller.
+- Kątow.
 - React.js.
-- React.js / Redux.
-- Biblioteka klas razor. Służy do udostępniania zasobów Razor między projektami.
+- React.js/Redux.
+- Biblioteka klas Razor. Służy do udostępniania zasobów Razor między projektami.
 
-Należy zauważyć, że w przypadku większości szablonów projektu można również włączyć obsługę platformy Docker, zaznaczając pole wyboru. Można również dodać obsługę uwierzytelniania, klikając przycisk zmień uwierzytelnianie. Stamtąd możesz wybrać:
+Należy pamiętać, że w przypadku większości szablonów projektu można także wybrać opcję włączenia obsługi platformy Docker, zaznaczając pole. Możesz również dodać obsługę uwierzytelniania, klikając przycisk Zmień uwierzytelnianie. Z tego miejsca możesz wybrać jedną z opcji:
 
 - Brak uwierzytelniania.
-- Indywidualne konta użytkowników. Są one przechowywane w lokalnej lub opartej na platformie Azure bazie danych.
-- Konta służbowe lub szkolne. Ta opcja używa usługi Active Directory, usługi Azure AD lub Office 365 do uwierzytelniania.
-- Uwierzytelnianie systemu Windows. Nadaje się do zastosowań intranetowych.
+- Indywidualne konta użytkowników. Są one przechowywane w bazie danych lokalnych lub opartych na platformie Azure.
+- Konta służbowe. Ta opcja używa Active Directory, Azure AD lub Microsoft 365 do uwierzytelniania.
+- Uwierzytelnianie systemu Windows. Odpowiednie dla aplikacji intranetowych.
 
-Wybierz standardowy szablon aplikacji sieci Web bez uwierzytelniania i kliknij przycisk **Utwórz**.
+Wybierz szablon standardowej aplikacji sieci Web bez uwierzytelniania i kliknij przycisk **Utwórz**.
 
-![Visual Studio 2019 Wybierz ASP.NET podstawowe opcje projektu](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+![Visual Studio 2019 wybierz opcje projektu ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
-W następnym filmie dowiesz się więcej o pierwszym projekcie ASP.NET Core.
+W następnym filmie wideo dowiesz się więcej na temat pierwszego projektu ASP.NET Core.
 
-[Samouczek: Tworzenie pierwszej ASP.NET core aplikacji sieci Web](tutorial-aspnet-core-ef-step-02.md)
+[Samouczek: Tworzenie pierwszej aplikacji sieci Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Samouczek: Wprowadzenie do języka C# i ASP.NET Core](tutorial-aspnet-core.md) Bardziej szczegółowy samouczek bez przewodnika wideo
+- [Samouczek: wprowadzenie do języka C# i ASP.NET Core](tutorial-aspnet-core.md) Bardziej szczegółowy samouczek bez instruktażu wideo

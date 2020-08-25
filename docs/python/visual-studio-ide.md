@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520591"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801649"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w programie Visual Studio IDE | Python
 
@@ -95,8 +95,8 @@ Niektóre popularne funkcje programu Visual Studio, które ułatwiają wydajniej
 ::: moniker-end
 
 - [Współpraca przy użyciu programu Visual Studio](/visualstudio/liveshare/)
-  
-    Visual Studio Live Share umożliwia zespołowe edytowanie i debugowanie z innymi osobami w czasie rzeczywistym, niezależnie od używanego języka programowania lub typów aplikacji, które tworzysz. 
+
+    Visual Studio Live Share umożliwia zespołowe edytowanie i debugowanie z innymi osobami w czasie rzeczywistym, niezależnie od używanego języka programowania lub typów aplikacji, które tworzysz.
 
 - [Interaktywny REPL języka Python](python-interactive-repl-in-visual-studio.md)
 
@@ -144,7 +144,7 @@ Poznaj środowisko Python w programie Visual Studio, wykonując jedną z następ
 > [!div class="nextstepaction"]
 > [Rozpocznij pracę z platformą sieci Web w programie Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
 - Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)

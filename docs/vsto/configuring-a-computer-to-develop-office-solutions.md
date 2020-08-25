@@ -12,44 +12,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e559ddfec8570077a78fe980632366b4a57605de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0304c217599e790b8cfa9e738245927336470e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62930962"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801844"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
 
-Do tworzenia dodatków narzędzi VSTO dla programów i dostosowania pakietu Microsoft Office, należy zainstalować obsługiwaną wersję programu Visual Studio, .NET Framework i Microsoft Office.
+Aby utworzyć Dodatki i dostosowania narzędzia VSTO dla Microsoft Office, zainstaluj obsługiwaną wersję programu Visual Studio, .NET Framework i Microsoft Office.
 
 |Oprogramowanie|Obsługiwane wersje|
 |--------------|------------------------|
-|Visual Studio 2017| W każdej wersji za pomocą **rozwoju pakietu Office/SharePoint** obciążenia.|
-|.NET Framework|-.NET Framework 4 lub nowszej.|
-|Microsoft Office|<ul><li>Dowolna wersja pakietu Office, w tym Office Professional Plus dla Office 365.</li><li>Dowolny z następujących aplikacji:<br /><br /> <ul><li>Excel</li><li>InfoPath (pakiet Office 2013 i Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Projekt</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musi być zainstalowany jako część pakietu Office. **Ważne:** Szybka instalacja wersji aplikacji pakietu Office 2010 nie są obsługiwane.|
+|Visual Studio 2017| Dowolna wersja z obciążeniem **programistycznym dla pakietu Office/programu SharePoint** .|
+|.NET Framework|— .NET Framework 4 lub nowszy.|
+|Microsoft Office|<ul><li>Wszystkie wersje pakietu Office, w tym Microsoft 365 aplikacje dla przedsiębiorstw.</li><li>Dowolne z następujących aplikacji autonomicznych:<br /><br /> <ul><li>Excel</li><li>InfoPath (tylko pakiet Office 2013 i pakiet Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musi być zainstalowany w ramach pakietu Office. **Ważne:** Wersje programów pakietu Office 2010 nie są obsługiwane przez klikanie do uruchomienia.|
 
-Aby uzyskać szczegółowe kroki instalacji, zobacz [jak: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
+Aby zapoznać się ze szczegółowymi krokami instalacji, zobacz [jak: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
-## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Jeśli szablony projektu nie pojawiają się lub nie działają w programie Visual Studio
+## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Jeśli szablony projektu nie są wyświetlane lub nie działają w programie Visual Studio
 
-Zainstaluj obsługiwaną wersję programu Visual Studio, .NET Framework i Microsoft Office, ale szablony projektów pakietu Office albo nie są wyświetlane w programie Visual Studio **nowy projekt** okno dialogowe lub komunikat o błędzie podczas próby użycia, Sprawdź następujące informacje:
+W przypadku zainstalowania obsługiwanej wersji programu Visual Studio, .NET Framework i Microsoft Office, ale szablony programu Office Project nie są wyświetlane w oknie dialogowym **Nowy projekt** programu Visual Studio lub wystąpi błąd podczas próby użycia jednego z nich, należy sprawdzić następujące kwestie:
 
-- Upewnij się, że masz zainstalowany na tym komputerze narzędzia Microsoft Office developer tools.
+- Upewnij się, że na komputerze zainstalowano narzędzia deweloperskie Microsoft Office.
 
-     Narzędzia Office developer tools są opcjonalnym składnikiem programu Visual Studio, ale są instalowane automatycznie wraz z Visual Studio. Jeśli dostosowujesz instalację programu Visual Studio przez określenie, które funkcje do zainstalowania, upewnij się, że wybierasz **Microsoft Office Developer Tools** podczas instalacji, aby zainstalować narzędzia.
+     Narzędzia Office Developer Tools są opcjonalnym składnikiem programu Visual Studio, ale są instalowane automatycznie wraz z programem Visual Studio. W przypadku dostosowania instalacji programu Visual Studio przez określenie, które funkcje zainstalować, należy wybrać **Microsoft Office narzędzia deweloperskie** podczas instalacji, aby zainstalować narzędzia.
 
-     Aby upewnić się, że te narzędzia są zainstalowane, uruchom Instalatora programu Visual Studio i wybierz polecenie **Modyfikuj** przycisku. Wybierz **Microsoft Office Developer Tools** pole wyboru, a następnie wybierz **aktualizacji** przycisku.
+     Aby upewnić się, że te narzędzia są zainstalowane, uruchom program instalacyjny programu Visual Studio, a następnie wybierz przycisk **Modyfikuj** . Zaznacz pole wyboru **Microsoft Office narzędzia deweloperskie** , a następnie kliknij przycisk **Aktualizuj** .
 
-- Upewnij się, że nie używasz wersji pakietu Office, który został dostarczony przez kliknięcie do uruchomienia. Zobacz [jak: Sprawdź, czy program Outlook jest aplikacją kliknij polecenie do uruchomienia na komputerze](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
+- Upewnij się, że nie korzystasz z wersji pakietu Office, która została dostarczona przez kliknięcie przycisku do uruchomienia. Zobacz [jak to zrobić: Sprawdź, czy program Outlook jest aplikacją typu "kliknij i uruchom" na komputerze](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
-- Upewnij się, że używasz tylko jedna wersja pakietu Microsoft Office.
+- Upewnij się, że masz uruchomioną tylko jedną wersję Microsoft Office.
 
-Jeśli nadal występują problemy, zobacz [dodatkowa obsługa błędów w rozwiązaniach pakietu Office](../vsto/additional-support-for-errors-in-office-solutions.md).
+Jeśli nadal występują problemy, zobacz [dodatkowe wsparcie dla błędów w rozwiązaniach pakietu Office](../vsto/additional-support-for-errors-in-office-solutions.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+## <a name="see-also"></a>Zobacz też
+- [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Instrukcje: Zainstalować Visual Studio Tools for Office runtime do dystrybucji](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Instrukcje: Instalowanie pakietu redystrybucyjnego środowiska uruchomieniowego Office Visual Studio Tools](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
-- [Typ funkcji według aplikacji pakietu Office i projekt](../vsto/features-available-by-office-application-and-project-type.md)
+- [Funkcje dostępne według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)

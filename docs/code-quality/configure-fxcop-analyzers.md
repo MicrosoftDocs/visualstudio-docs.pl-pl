@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fbd30859c5ee3dbbea80c6d88d68c0211da62c88
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: a131b7d69eec61f9b9106f7a4274b3882c51f0ff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706584"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800739"
 ---
 # <a name="configure-net-code-quality-analyzers"></a>Konfigurowanie analizatorów jakości kodu platformy .NET
 
@@ -75,7 +75,7 @@ Konfigurację analizatora opartego na EditorConfig można włączyć dla następ
 
 Aby włączyć konfigurację, należy dodać plik *. editorconfig* z opcjami w odpowiednim katalogu. Ten plik może również zawierać wpisy konfiguracji dotyczące ważności diagnostyki opartej na EditorConfig. Więcej informacji można znaleźć [tutaj](use-roslyn-analyzers.md#rule-severity).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje zakresu reguł dla analizatorów jakości kodu platformy .NET](fxcop-analyzer-options.md)
 - [Konfiguracja analizatora](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)

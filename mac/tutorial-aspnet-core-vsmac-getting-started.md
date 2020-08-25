@@ -1,23 +1,24 @@
 ---
 title: Rozpoczynanie pracy z platformą ASP.NET Core przy użyciu programu Visual Studio dla komputerów Mac
+titleSuffix: ''
 description: Ten dokument zawiera samouczki wideo pokazujące, jak zacząć korzystać z ASP.NET Core w Visual Studio dla komputerów Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 10/18/2019
 ms.assetid: 591b21ee-8c3f-446b-9505-7d41bfc86701
 ms.topic: tutorial
-ms.openlocfilehash: 3dcd5dc3ae3a3a373d0fed471c4577b859acbf9e
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 1dc07f0ebde1fcf28dd5c379d9360730e357c1ca
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85949956"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801636"
 ---
 # <a name="tutorial-getting-started-with-aspnet-core-in-visual-studio-for-mac"></a>Samouczek: wprowadzenie do ASP.NET Core w Visual Studio dla komputerów Mac
 
 Ten samouczek składa się z dwóch kroków: Instalowanie Visual Studio dla komputerów Mac i kompilowanie pierwszej aplikacji sieci Web ASP.NET Core.
 
-## <a name="before-you-begin"></a>Zanim rozpoczniesz
+## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 Dowiedz się, jak zainstalować program Visual Studio 2019 for Mac z tym samouczkiem wideo i instrukcjami krok po kroku.
 

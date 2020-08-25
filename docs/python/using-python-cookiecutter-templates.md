@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535151"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801584"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Użyj rozszerzenia Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) udostępnia graficzny interfejs użytkownika umożliwiający odnajdywanie szablonów, opcji szablonów wejściowych i tworzenie projektów i plików. Jest on dołączony do programu Visual Studio 2017 lub nowszego i można go zainstalować oddzielnie we wcześniejszych wersjach programu Visual Studio.
 
-Cookiecutter wymaga języka Python 3,3 lub nowszego (32-bit lub 64-bitowy) lub Anaconda 3 4,2 lub nowszego (32-bit lub 64-bit). Jeśli odpowiedni interpreter języka Python nie jest dostępny, program Visual Studio wyświetli ostrzeżenie. Jeśli instalujesz interpreter języka Python, a program Visual Studio jest uruchomiony, kliknij przycisk **Strona główna** na pasku narzędzi Cookiecutter, aby wykryć nowo zainstalowany interpreter. (Zobacz [środowiska Python](managing-python-environments-in-visual-studio.md) , aby uzyskać więcej informacji na temat ogólnych środowisk).
+Cookiecutter wymaga języka Python 3,3 lub nowszego (32-bit lub 64-bitowy) lub Anaconda 3 4,2 lub nowszego (32-bit lub 64-bit). Jeśli odpowiedni interpreter języka Python nie jest dostępny, program Visual Studio wyświetli ostrzeżenie. Jeśli instalujesz interpreter języka Python, a program Visual Studio jest uruchomiony, wybierz przycisk **Strona główna** na pasku narzędzi Cookiecutter, aby wykryć nowo zainstalowany interpreter. (Zobacz [środowiska Python](managing-python-environments-in-visual-studio.md) , aby uzyskać więcej informacji na temat ogólnych środowisk).
 
 Po zainstalowaniu wybierz pozycję **Wyświetl**  >  **Cookiecutter Explorer** , aby otworzyć jej okno:
 
@@ -99,7 +99,7 @@ To renderowanie można ulepszyć, określając dodatkowe metadane w *cookiecutte
 | --- | --- |
 | Etykieta | Określa, co pojawia się powyżej edytora dla zmiennej, zamiast nazwy zmiennej. |
 | Opis | Określa etykietkę narzędzia, która pojawia się w kontrolce Edycja zamiast wartości domyślnej dla tej zmiennej. |
-| Adres URL | Zmienia etykietę w hiperłącze przy użyciu etykietki narzędzia, która zawiera adres URL. Kliknięcie hiperłącza spowoduje otwarcie domyślnej przeglądarki użytkownika dla tego adresu URL. |
+| Adres URL | Zmienia etykietę w hiperłącze przy użyciu etykietki narzędzia, która zawiera adres URL. Wybranie hiperłącza spowoduje otwarcie domyślnej przeglądarki użytkownika dla tego adresu URL. |
 | Selektor | Umożliwia dostosowanie edytora dla zmiennej. Następujące selektory są obecnie obsługiwane:<ul><li>`string`: Standardowe pole tekstowe, domyślne dla ciągów.</li><li>`list`: Standardowe pole kombi, domyślnie dla list.</li><li>`yesno`: Pole kombi do wyboru między `y` i `n` , dla ciągów.</li><li>`odbcConnection`: Pole tekstowe z przyciskiem **...** , które powoduje wyświetlenie okna dialogowego połączenia bazy danych.</li></ul> |
 
 Przykład:
@@ -170,7 +170,7 @@ Jeśli nie musisz przekazać argumentu, pozostaw pusty ciąg lub Pomiń go w kod
 ]
 ```
 
-Użyj tablicy dla wielu argumentów. W przypadku przełączników należy podzielić przełącznik i jego wartość na oddzielne argumenty i użyć odpowiednich cudzysłowów. Przykład:
+Użyj tablicy dla wielu argumentów. W przypadku przełączników należy podzielić przełącznik i jego wartość na oddzielne argumenty i użyć odpowiednich cudzysłowów. Na przykład:
 
 ```json
 "_visual_studio_post_cmds": [

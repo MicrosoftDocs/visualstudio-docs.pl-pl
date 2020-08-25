@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507862"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801051"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Instrukcje: Konfigurowanie starszej analizy dla kodu zarządzanego
 
@@ -91,12 +91,12 @@ Domyślnie wszystkie zarządzane projekty rozwiązania są przypisane do zestawu
 
     - Aby określić zestaw reguł dla danego projektu, wybierz nazwę projektu.
 
-    - Aby określić zestaw reguł dla wielu projektów, przytrzymaj wciśnięty klawisz **Ctrl** i wybierz nazwy projektu.
+    - Aby określić zestaw reguł dla wielu projektów, wybierz pozycję **Ctrl** i nazwy projektów.
 
-    - Aby określić wszystkie projekty w rozwiązaniu, przytrzymaj wciśnięty klawisz **SHIFT** i kliknij na liście projektów.
+    - Aby określić wszystkie projekty w rozwiązaniu, wybierz pozycję **przesunięcia** i listę projektu.
 
 5. Zaznacz pole **zestaw reguł** projektu, a następnie wybierz nazwę zestawu reguł, który ma zostać zastosowany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie zestawu reguł analizy kodu](../code-quality/rule-set-reference.md)

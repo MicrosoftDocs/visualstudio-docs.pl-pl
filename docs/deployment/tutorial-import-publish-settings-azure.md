@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd316956f8e6c385cd59c017af50452b07537dc6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183317"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801714"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji do Azure App Service przez zaimportowanie ustawień publikowania w programie Visual Studio
 
@@ -57,15 +57,15 @@ Plik ustawień publikowania (* \* . publishsettings*) jest inny niż profil publ
 
 1. Na komputerze z uruchomionym programem Visual Studio Utwórz nowy projekt.
 
-    Wybierz odpowiedni szablon. W tym przykładzie wybierz pozycję **aplikacja sieci web ASP.NET (.NET Framework)** lub (tylko w przypadku języka C#) **ASP.NET Core aplikacji sieci Web**, a następnie kliknij przycisk **OK**.
+    Wybierz odpowiedni szablon. W tym przykładzie wybierz pozycję **aplikacja sieci web ASP.NET (.NET Framework)** lub (tylko w przypadku języka C#) **ASP.NET Core aplikacja internetowa**, a następnie wybierz przycisk **OK**.
 
-    Jeśli nie widzisz określonych szablonów projektu, kliknij link **otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Zostanie uruchomiona Instalator programu Visual Studio. Zainstaluj **ASP.NET i programowanie aplikacji sieci Web** .
+    Jeśli nie widzisz określonych szablonów projektu, przejdź do linku **otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Zostanie uruchomiona Instalator programu Visual Studio. Zainstaluj **ASP.NET i programowanie aplikacji sieci Web** .
 
     Wybrany szablon projektu (ASP.NET lub ASP.NET Core) musi odpowiadać wersji ASP.NET zainstalowanej na serwerze sieci Web.
 
-1. Wybierz opcję **MVC** (.NET Framework) lub **aplikacja sieci Web (Model-View-Controller)** (dla platformy .NET Core) i upewnij się, że nie wybrano **żadnego uwierzytelniania** , a następnie kliknij przycisk **OK**.
+1. Wybierz opcję **MVC** (.NET Framework) lub **aplikacja sieci Web (Model-View-Controller)** (dla platformy .NET Core) i upewnij się, że nie wybrano **żadnego uwierzytelniania** , a następnie wybierz przycisk **OK**.
 
-1. Wpisz nazwę, taką jak **MyWebApp** , i kliknij przycisk **OK**.
+1. Wpisz nazwę, taką jak **MyWebApp** , i wybierz **przycisk OK**.
 
     Program Visual Studio tworzy projekt.
 
@@ -75,7 +75,7 @@ Plik ustawień publikowania (* \* . publishsettings*) jest inny niż profil publ
 
 1. W Azure Portal Otwórz Azure App Service.
 
-1. Kliknij pozycję **Pobierz profil publikowania** i Zapisz profil lokalnie.
+1. Przejdź do pozycji **Pobierz profil publikowania** i Zapisz profil lokalnie.
 
     ![Pobieranie profilu publikowania](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 

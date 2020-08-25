@@ -1,6 +1,6 @@
 ---
-title: Jak używać ciemnego motywu i zmienić kolor tekstu w edytorze
-description: Dowiedz się, jak ustawić domyślny motyw kolorów programu Visual Studio do trybu ciemnego i zmienić kolory czcionki w edytorze tekstu.
+title: Ustawianie ciemnego motywu programu Visual Studio i Zmienianie kolorów tekstu
+description: Dowiedz się, jak zmienić domyślny motyw kolorów programu Visual Studio do trybu ciemnego i zmienić kolory czcionki w edytorze kodu.
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperfq1
@@ -9,16 +9,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0e7b11fae63b9a2233b7391805760d3fdd7d27
-ms.sourcegitcommit: cf5b5437f0b43c6d52c479e1a2c443338bd27cda
+ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88724929"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801402"
 ---
-# <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>Instrukcje: personalizowanie środowiska IDE programu Visual Studio i edytora tekstu
+# <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Instrukcje: personalizowanie środowiska IDE programu Visual Studio i edytora
 
-W tym artykule jak można dostosować motyw kolorów programu Visual Studio, wybierając motyw ciemny. Dostosowujemy również kolory dla dwóch różnych typów tekstu w edytorze tekstu.
+W tym artykule z tego artykułu opisano dostosowywanie motywu kolorów programu Visual Studio z domyślnego motywu niebieskiego do ciemnego motywu. Następnie dostosujemy kolory dla dwóch różnych typów tekstu w edytorze kodu.
 
 ::: moniker range="vs-2017"
 
@@ -126,10 +126,10 @@ Teraz dostosowujemy niektóre kolory tekstu dla edytora. Najpierw utwórz nowy p
 
    ![Plik XML z nowymi kolorami czcionki](media/quickstart-personalize-xml-file-new-colors.png)
 
-Eksplorujemy kilka sposobów dostosowywania kolorów w programie Visual Studio. Mamy nadzieję, że zapoznajesz się z innymi opcjami dostosowywania w oknie dialogowym **Opcje** , aby naprawdę wprowadzić własne Visual Studio.
+Eksplorujemy kilka sposobów dostosowywania kolorów w programie Visual Studio. Mamy nadzieję, że zapoznajesz się z innymi opcjami dostosowywania w oknie dialogowym [**Opcje**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) , aby naprawdę wprowadzić własne Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zmień czcionki, kolory i opcje wysokiego kontrastu w programie Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-- [Dopasowywanie edytora](../ide/how-to-change-text-case-in-the-editor.md)
-- [Środowisko IDE programu Visual Studio — przegląd](../get-started/visual-studio-ide.md)
+- [Instrukcje: zmienianie czcionek, kolorów i motywów w programie Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Instrukcje: zmiana wielkości liter w edytorze](../ide/how-to-change-text-case-in-the-editor.md)
+- [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)

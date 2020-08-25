@@ -1,7 +1,7 @@
 ---
-title: Python w programie Visual Studio krok 5, instalowanie pakietów
+title: Samouczek Python w programie Visual Studio — krok 5, instalowanie pakietów
 titleSuffix: ''
-description: Krok 5 podstawowego przewodnika po możliwościach języka Python w programie Visual Studio, demonstrując funkcje programu Visual Studio do zarządzania pakietami w środowisku języka Python.
+description: Krok 5 podstawowych przewodnika w zakresie możliwości języka Python w programie Visual Studio, pokazujący funkcje programu Visual Studio do zarządzania pakietami w środowisku Python.
 ms.date: 03/09/2020
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -11,31 +11,31 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e2644ccfff0e7c653f4ce2680299aea95a55ef9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79372936"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801662"
 ---
-# <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Pythona
+# <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5. Instalowanie pakietów w środowisku języka Python
 
 **Poprzedni krok: [Uruchamianie kodu w debugerze](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
-Społeczność programistów Języka Python wyprodukowała tysiące przydatnych pakietów, które można włączyć do własnych projektów. Visual Studio udostępnia interfejs użytkownika do zarządzania pakietami w środowiskach Języka Python.
+Społeczność deweloperów języka Python wygenerowała tysiące przydatnych pakietów, które można uwzględnić w własnych projektach. Program Visual Studio udostępnia interfejs użytkownika służący do zarządzania pakietami w środowiskach języka Python.
 
 ## <a name="view-environments"></a>Wyświetlanie środowisk
 
-1. Wybierz polecenie menu **Wyświetl** > inne środowiska**języka Windows** > **Python.** Okno **Środowiska języka Python** otwiera się jako element równorzędny dla **Eksploratora rozwiązań** i pokazuje różne dostępne środowiska. Lista zawiera zarówno środowiska zainstalowane przy użyciu instalatora programu Visual Studio, jak i środowiska zainstalowane oddzielnie. Obejmuje to środowiska globalne, wirtualne i conda. Środowisko pogrubione jest domyślnym środowiskiem, które jest używane dla nowych projektów. Aby uzyskać dodatkowe informacje dotyczące pracy ze środowiskami, zobacz [Jak tworzyć środowiska języka Python i zarządzać nimi w środowiskach programu Visual Studio.](managing-python-environments-in-visual-studio.md)
+1. Wybierz polecenie **Wyświetl**  >  **inne**  >  **środowiska języka Python** systemu Windows. Okno **środowiska języka Python** otwiera się jako element równorzędny do **Eksplorator rozwiązań** i pokazuje różne dostępne środowiska. Na liście wyświetlane są oba środowiska, które zostały zainstalowane przy użyciu Instalatora programu Visual Studio oraz zainstalowanych osobno. Obejmuje to globalne, wirtualne i Conda środowiska. Środowisko w pogrubieniu jest domyślnym środowiskiem, które jest używane w przypadku nowych projektów. Aby uzyskać dodatkowe informacje na temat pracy ze środowiskami, zobacz [jak tworzyć środowiska Python i zarządzać nimi w środowiskach programu Visual Studio](managing-python-environments-in-visual-studio.md).
 
-   ![Okna Środowiska języka Python](media/environments/environments-default-view-2019.png)
+   ![Okno środowisk Python](media/environments/environments-default-view-2019.png)
 
    > [!NOTE]
-   > Okno Środowiska języka Python można również otworzyć, klikając okno Eksploratora rozwiązań i używając skrótu klawiaturowego Ctrl+K, Ctrl+.You can also open the Python Environments window by clicking on the Solution Explorer window and using the Ctrl+K, Ctrl+' keyboard shortcut. Jeśli skrót nie działa i nie można znaleźć okna Środowiska Języka Python w menu, możliwe, że nie zainstalowano obciążenia języka Python. Zobacz [Jak zainstalować pomoc techniczną języka Python w programie Visual Studio,](installing-python-support-in-visual-studio.md) aby uzyskać wskazówki dotyczące instalowania języka Python.
+   > Możesz również otworzyć okno środowiska Python, wybierając okno Eksplorator rozwiązań i używając skrótu klawiaturowego **Ctrl + K, CTRL + '** . Jeśli skrót nie działa i nie można znaleźć okna środowiska języka Python w menu, możliwe, że nie zainstalowano obciążenia języka Python. Zobacz [jak zainstalować obsługę języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) , aby uzyskać wskazówki dotyczące sposobu instalowania języka Python.
 
-2. Karta **Przegląd** środowiska zapewnia szybki dostęp do okna **interaktywnego** dla tego środowiska wraz z folderem instalacyjnym i interpreterami środowiska. Na przykład wybierz otwórz **okno interaktywne** i **interaktywne** okno dla tego określonego środowiska pojawi się w programie Visual Studio.
+2. Karta **Przegląd** środowiska zapewnia szybki dostęp do **interaktywnego** okna dla tego środowiska oraz do folderu instalacji i interpreterów środowiska. Na przykład wybierz pozycję **Otwórz okno interaktywne** i okno **interaktywne** dla tego konkretnego środowiska pojawia się w programie Visual Studio.
 
-3. Teraz utwórz nowy projekt za pomocą **pliku** > **nowego** > **projektu**, wybierając szablon aplikacji **języka Python.** W wyświetlonym pliku kodu wklej następujący kod, który tworzy cosine wave, podobnie jak poprzednie kroki samouczka, tylko tym razem wykreślone graficznie. Alternatywnie można użyć projektu, który wcześniej utworzono i zastąpić kod. 
+3. Teraz Utwórz nowy projekt z **plikiem**  >  **Nowy**  >  **projekt**, wybierając szablon aplikacji języka **Python** . W wyświetlonym pliku kodu wklej następujący kod, który tworzy Wave, podobnie jak poprzednie kroki samouczka, tylko ten czas jest rysowany graficznie. Alternatywnie możesz użyć wcześniej utworzonego projektu i zamienić kod.
 
     ```python
     from math import radians
@@ -50,47 +50,47 @@ Społeczność programistów Języka Python wyprodukowała tysiące przydatnych 
     main()
     ```
 
-4. Po otwarciu projektu Języka Python możesz również otworzyć okno Środowiska Języka Python w Eksploratorze rozwiązań, klikając prawym przyciskiem myszy środowisko Języka Python i wybierając **pozycję Wyświetl wszystkie środowiska Języka Python**
+4. Przy otwartym projekcie języka Python możesz również otworzyć okno środowiska Python z poziomu Eksplorator rozwiązań, klikając prawym przyciskiem myszy **środowisko Python** i wybierając polecenie **Wyświetl wszystkie środowiska Python**
 
    ![Środowisko](media/environments/environments-view-all-2019.png)
 
-5. Patrząc na okno edytora, można zauważyć, że `numpy` `matplotlib` jeśli najedziesz kursorem na i zaimportować instrukcje, które nie zostały rozwiązane. To dlatego, że pakiety nie zostały zainstalowane w domyślnym środowisku globalnym.
+5. Przeglądając okno edytora, Zauważ, że po umieszczeniu wskaźnika myszy na `numpy` `matplotlib` instrukcjach i zaimportowaniu nie są one rozwiązane. Wynika to z faktu, że pakiety nie zostały zainstalowane w domyślnym środowisku globalnym.
 
-   ![Nierozstrzygnięty import pakietu](media/packages-unresolved-import.png)
+   ![Nierozpoznany import pakietu](media/packages-unresolved-import.png)
 
-## <a name="install-packages-using-the-python-environments-window"></a>Instalowanie pakietów przy użyciu okna Środowiska języka Python
+## <a name="install-packages-using-the-python-environments-window"></a>Instalowanie pakietów przy użyciu okna środowiska języka Python
 
-1. W oknie Środowiska języka Python kliknij domyślne środowisko dla nowych projektów języka Python i wybierz kartę **Pakiety.** Zostanie wyświetlona lista pakietów, które są obecnie zainstalowane w środowisku.
+1. W oknie środowiska języka Python Wybierz domyślne środowisko dla nowych projektów języka Python i wybierz kartę **pakiety** . Zostanie wyświetlona lista pakietów, które są obecnie zainstalowane w środowisku programu.
 
    ![Pakiety zainstalowane w środowisku](media/environments/environments-installed-packages-2019.png)
 
-2. Zainstaluj, `matplotlib` wprowadzając jego nazwę w polu wyszukiwania, a następnie wybierając **polecenie Uruchom: pip install matplotlib.** To zainstaluje, `matplotlib`jak również wszelkie pakiety, od `numpy`których zależy (w tym przypadku, który zawiera ).
+2. Zainstaluj program `matplotlib` , wprowadzając jego nazwę w polu wyszukiwania, a następnie wybierając opcję **Uruchom polecenie: pip install matplotlib** . Spowoduje to zainstalowanie `matplotlib` programu oraz wszystkich pakietów, od których zależy (w tym przypadku obejmuje `numpy` ).
 
-   ![Instalacja matplotlib w środowisku](media/environments/environments-add-matplotlib-2019.png)
+   ![Instalowanie matplotlib w środowisku](media/environments/environments-add-matplotlib-2019.png)
 
-5. Zgoda na podniesienie uprawnień, jeśli zostanie o to poproszony.
+5. Jeśli zostanie wyświetlony monit, wyrażanie zgody na podniesienie uprawnień.
 
-6. Po zainstalowaniu pakietu pojawia się w oknie **Środowiska Języka Python.** **X** po prawej stronie pakietu odinstalowuje go.
+6. Po zainstalowaniu pakietu jest on wyświetlany w oknie środowiska języka **Python** . **Symbol X** z prawej strony pakietu Odinstalowuje go.
 
-   ![Zakończenie instalacji matplotlib w środowisku](media/environments/environments-add-matplotlib2-2019.png)
+   ![Zakończenie instalowania matplotlib w środowisku](media/environments/environments-add-matplotlib2-2019.png)
 
    > [!NOTE]
-   > Mały pasek postępu może pojawić się pod środowiskiem, aby wskazać, że visual studio buduje swoją bazę danych IntelliSense dla nowo zainstalowanego pakietu. Karta **IntelliSense** zawiera również bardziej szczegółowe informacje. Należy pamiętać, że dopóki ta baza danych nie zostanie ukończona, funkcje IntelliSense, takie jak automatyczne uzupełnianie i sprawdzanie składni, nie będą aktywne w edytorze dla tego pakietu.
-   > 
-   > Visual Studio 2017 w wersji 15.6 i nowszych używa innej i szybszej metody pracy z IntelliSense i wyświetla komunikat o tym wpływ na karcie **IntelliSense.**
+   > Mały pasek postępu może pojawić się poniżej środowiska, aby wskazać, że program Visual Studio tworzy swoją bazę danych IntelliSense dla nowo zainstalowanego pakietu. Karta **IntelliSense** zawiera również bardziej szczegółowe informacje. Należy pamiętać, że dopóki ta baza danych nie zostanie ukończona, funkcje IntelliSense, takie jak Autouzupełnianie i sprawdzanie składni, nie będą aktywne w edytorze dla tego pakietu.
+   >
+   > Program Visual Studio 2017 w wersji 15,6 lub nowszej używa innej i szybszej metody do pracy z technologią IntelliSense i wyświetla komunikat w tym efekcie na karcie **IntelliSense** .
 
 ## <a name="run-the-program"></a>Uruchamianie programu
 
-1. Teraz, [gdy matplotlib](https://matplotlib.org/) jest zainstalowany, uruchom program z (**F5**) lub bez debugera (**Ctrl**+**F5**), aby zobaczyć dane wyjściowe:
+1. Teraz, gdy [matplotlib](https://matplotlib.org/) jest zainstalowany, uruchom program z (**F5**) lub bez debugera (**Ctrl** + **F5**), aby wyświetlić dane wyjściowe:
 
-   ![Wyjście przykład matplotlib](media/environments/environments-add-matplotlib3.png)
+   ![Przykład danych wyjściowych matplotlib](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
-> [Praca z Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+> [Pracuj z usługą git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="go-deeper"></a>Głębiej
+## <a name="go-deeper"></a>Przejdź głębiej
 
 - [Środowiska Python](managing-python-environments-in-visual-studio.md)
 - [Nauka platformy Django w programie Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)

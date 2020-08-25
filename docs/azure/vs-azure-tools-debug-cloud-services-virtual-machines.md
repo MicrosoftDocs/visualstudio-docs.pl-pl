@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 06344d536f0bb6db5f13329ece2c5202205bcefb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280716"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800492"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze lub maszyny wirtualnej platformy Azure w programie Visual Studio
 
@@ -29,7 +29,7 @@ Emulator symuluje usługę obliczeniową platformy Azure i działa w środowisku
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>Aby debugować usługę w chmurze na komputerze lokalnym
 
-1. Na pasku menu wybierz **Debuguj**, **Rozpocznij debugowanie** , aby uruchomić projekt usługi w chmurze platformy Azure. Alternatywnie możesz nacisnąć klawisz F5. Zobaczysz komunikat informujący o tym, że emulator obliczeń jest uruchamiany. Po uruchomieniu emulatora ikona na pasku zadań zostanie poprawna.
+1. Na pasku menu wybierz kolejno opcje **Debuguj**  >  **Rozpocznij debugowanie** , aby uruchomić projekt usługi w chmurze platformy Azure. Alternatywnie możesz nacisnąć klawisz F5. Zobaczysz komunikat informujący o tym, że emulator obliczeń jest uruchamiany. Po uruchomieniu emulatora ikona na pasku zadań zostanie poprawna.
 
     ![Emulator platformy Azure na pasku zadań](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -79,7 +79,7 @@ Włączenie debugowania zdalnego dla usługi w chmurze nie powoduje obniżenia w
 
     ![Okno dialogowe Wybieranie typu kodu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Aby zidentyfikować procesy, do których jest dołączony debuger, Otwórz okno dialogowe procesy, klikając na pasku menu pozycję Debugowanie, okna i procesy. (Klawiatura: Ctrl + Alt + Z) Aby odłączyć określony proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**. Lub zlokalizuj węzeł wystąpienia w Eksplorator serwera, Znajdź proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**.
+4. Aby zidentyfikować procesy, do których jest dołączony debuger, na pasku menu wybierz kolejno opcje **Debuguj**  >  **procesy systemu Windows**  >  **Processes**i Otwórz okno dialogowe **procesy** . (Klawiatura: Ctrl + Alt + Z) Aby odłączyć określony proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**. Lub zlokalizuj węzeł wystąpienia w Eksplorator serwera, Znajdź proces, otwórz jego menu skrótów, a następnie wybierz polecenie **Odłącz proces**.
 
     ![Debugowanie procesów](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -120,7 +120,7 @@ Programy uruchamiane na maszynach wirtualnych platformy Azure można debugować 
 
 3. Po zakończeniu instalacji rozszerzenia debugowania zdalnego Otwórz menu kontekstowe maszyny wirtualnej i wybierz pozycję **Dołącz debuger...**
 
-    Platforma Azure pobiera listę procesów na maszynie wirtualnej i wyświetla je w oknie dialogowym Dołącz do procesu.
+    Platforma Azure pobiera listę procesów na maszynie wirtualnej i wyświetla je w oknie dialogowym **Dołącz do procesu** .
 
     ![Dołącz debuger — polecenie](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -155,7 +155,7 @@ Projekty programu Visual Studio ASP.NET oferują opcję tworzenia przydatnej mas
 
     ![Tworzenie maszyny wirtualnej w systemie Azure — okno dialogowe](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746724.png)
 
-    Platforma Azure tworzy maszynę wirtualną, a następnie inicjuje i konfiguruje punkty końcowe, takie jak Pulpit zdalny i Web Deploy
+    Platforma Azure tworzy maszynę wirtualną, a następnie inicjuje i konfiguruje punkty końcowe, takie jak Pulpit zdalny i Web Deploy.
 
 4. Po całkowitym skonfigurowaniu maszyny wirtualnej wybierz węzeł maszyny wirtualnej w Eksplorator serwera.
 
@@ -175,7 +175,7 @@ Projekty programu Visual Studio ASP.NET oferują opcję tworzenia przydatnej mas
 
 8. Po opublikowaniu projektu w menu kontekstowym maszyny wirtualnej w Eksplorator serwera wybierz pozycję **Dołącz debuger...**
 
-    Platforma Azure pobiera listę procesów na maszynie wirtualnej i wyświetla je w oknie dialogowym Dołącz do procesu.
+    Platforma Azure pobiera listę procesów na maszynie wirtualnej i wyświetla je w oknie dialogowym **Dołącz do procesu** .
 
     ![Dołącz debuger — polecenie](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 

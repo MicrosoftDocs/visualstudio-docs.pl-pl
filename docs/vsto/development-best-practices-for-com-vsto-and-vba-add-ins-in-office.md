@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918625"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801506"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Najlepsze rozwiązania w zakresie programowania dla dodatków COM, VSTO i VBA w pakiecie Office
   Jeśli tworzysz Dodatki COM, VSTO lub VBA dla pakietu Office, postępuj zgodnie z najlepszymi rozwiązaniami programistycznymi opisanymi w tym artykule.   Dzięki temu:
@@ -57,7 +57,7 @@ Jeśli rozwiązanie składa się z dodatku i procesu, który znajduje się poza 
 Ustaw numer wersji plików binarnych w rozwiązaniu i zwiększ go wraz z każdą aktualizacją. Ułatwi to użytkownikom identyfikację zmian między wersjami i ocenę zgodności.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Podaj instrukcje pomocy technicznej dla najnowszych wersji pakietu Office
-Klienci otrzymują pytania dla niezależnych dostawców oprogramowania, aby zapewnić pomoc techniczną dla dodatków COM, VSTO i VBA, które działają w pakiecie Office. Lista jawnych instrukcji pomocy technicznej pomaga klientom przy użyciu narzędzi do gotowości pakietu Office 365 ProPlus.
+Klienci otrzymują pytania dla niezależnych dostawców oprogramowania, aby zapewnić pomoc techniczną dla dodatków COM, VSTO i VBA, które działają w pakiecie Office. Lista jawnych instrukcji pomocy technicznej ułatwia klientom korzystanie z aplikacji Microsoft 365 w przypadku narzędzi do przygotowywania w przedsiębiorstwie.
 
 Aby zapewnić instrukcje pomocy technicznej dla aplikacji klienckich pakietu Office (na przykład Word lub Excel), należy najpierw sprawdzić, czy dodatki działają w bieżącej wersji pakietu Office, a następnie zatwierdzić w celu udostępnienia aktualizacji, jeśli dodatek zostanie podzielony w przyszłej wersji. Nie ma potrzeby testowania dodatków, gdy firma Microsoft publikuje nową kompilację lub aktualizację pakietu Office. Firma Microsoft rzadko zmienia platformę COM, VSTO i VBA na platformie rozszerzalności w pakiecie Office, a te zmiany będą dobrze udokumentowane.
 

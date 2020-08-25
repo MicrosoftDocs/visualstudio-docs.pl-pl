@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 5a69fb83f28f4446a91e4125e75706400401ea1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 175aa7111d77e92fb29a3983db7365e068abba2f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911728"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800388"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
@@ -28,7 +28,7 @@ Podobnie jak [Azure Portal](https://portal.azure.com), Eksplorator chmury jest o
 * Konto Microsoft Azure — Jeśli nie masz konta, możesz [zarejestrować się w celu uzyskania bezpłatnej wersji próbnej](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) lub [aktywować korzyści dla subskrybentów programu Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).
 
 > [!NOTE]
-> Aby wyświetlić program Cloud Explorer, naciśnij klawisz **Ctrl**+**Q** , aby uaktywnić pole wyszukiwania, a następnie wprowadź w **Eksploratorze chmury**.
+> Aby wyświetlić program Cloud Explorer, naciśnij **kombinację klawiszy CTRL** + **Q** , aby uaktywnić pole wyszukiwania, a następnie przejdź do **Eksploratora chmury**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Dodawanie konta platformy Azure do programu Cloud Explorer
 
@@ -48,7 +48,7 @@ Aby wyświetlić zasoby skojarzone z kontem platformy Azure, musisz najpierw dod
 
    ![Eksplorator chmury: wybierz subskrypcje platformy Azure do wyświetlenia](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. Po wybraniu subskrypcji, których zasobów chcesz przeglądać, te subskrypcje i zasoby są wyświetlane w programie Cloud Explorer.
+1. Po wybraniu subskrypcji, których zasobów chcesz przeglądać, te subskrypcje i zasoby są wyświetlane w programie **Cloud Explorer**.
 
    ![Lista zasobów w programie Cloud Explorer dla konta platformy Azure](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
@@ -101,7 +101,7 @@ Dodatkowe akcje i wartości właściwości mogą być również wyświetlane na 
 
 ## <a name="find-resources-in-cloud-explorer"></a>Znajdowanie zasobów w programie Cloud Explorer
 
-Aby zlokalizować zasoby z określoną nazwą w ramach subskrypcji konta platformy Azure, wprowadź nazwę w polu **wyszukiwania** w programie Cloud Explorer.
+Aby zlokalizować zasoby z określoną nazwą w ramach subskrypcji konta platformy Azure, wprowadź nazwę w polu **wyszukiwania** w programie **Cloud Explorer**.
 
   ![Znajdowanie zasobów w programie Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 

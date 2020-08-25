@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 649d40a3b95f9e3d4df51cc4ab22a3fb79ac1498
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85531849"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801311"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publikowanie w usłudze Azure App Service w systemie Windows
 
@@ -34,7 +34,7 @@ Proces publikowania różni się od programu Visual Studio 2017 lub nowszego ora
 
 W tym instruktażu potrzebny jest projekt aplikacji sieci Web oparty na strukturze butelek, kolb lub Django. Jeśli nie masz jeszcze projektu i chcesz wypróbować proces publikowania, Utwórz prosty projekt testowy w następujący sposób:
 
-1. W programie Visual Studio wybierz kolejno pozycje **plik > nowy > projekt**, wyszukaj ciąg "butelka", wybierz **Projekt sieci Web**, podaj nazwę i ścieżkę do projektu, a następnie kliknij przycisk **OK**. (Szablon butelki jest dołączony do obciążenia programowania w języku Python; zobacz [Instalacja](installing-python-support-in-visual-studio.md)).
+1. W programie Visual Studio wybierz kolejno pozycje **plik > nowy > projekt**, wyszukaj ciąg "butelka", wybierz **Projekt sieci Web**, podaj nazwę i ścieżkę do projektu, a następnie wybierz **przycisk OK**. (Szablon butelki jest dołączony do obciążenia programowania w języku Python; zobacz [Instalacja](installing-python-support-in-visual-studio.md)).
 
 1. Postępuj zgodnie z monitami, aby zainstalować pakiety zewnętrzne, wybierając opcję **Zainstaluj w środowisku wirtualnym** i preferowanym interpreterem podstawowym dla środowiska wirtualnego. Ten wybór jest zazwyczaj zgodny z wersją języka Python zainstalowaną na App Service.
 
@@ -185,7 +185,7 @@ Publikowanie w Azure App Service z programu Visual Studio 2017 i nowsze kopiuje 
 > [!Note]
 > Krótkie wideo tego procesu można znaleźć w [samouczku języka Python programu Visual Studio: kompilowanie witryny sieci Web](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (YouTube.com, 3m10s).
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz pozycję **Publikuj**.
+1. W **Eksploratorze rozwiązań** kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Opublikuj**.
 
 1. W oknie dialogowym **Publikowanie** wybierz pozycję **Microsoft Azure App Service**:
 
@@ -202,7 +202,7 @@ Publikowanie w Azure App Service z programu Visual Studio 2017 i nowsze kopiuje 
 
 1. Wybierz pozycję **dalej >** w razie potrzeby, aby przejrzeć dodatkowe ustawienia.
 
-1. Wybierz polecenie **Publikuj**. Po wdrożeniu aplikacji na platformie Azure w tej witrynie zostanie otwarta przeglądarka domyślna.
+1. Kliknij pozycję **Opublikuj**. Po wdrożeniu aplikacji na platformie Azure w tej witrynie zostanie otwarta przeglądarka domyślna.
 
 W ramach tego procesu program Visual Studio wykonuje również następujące czynności:
 

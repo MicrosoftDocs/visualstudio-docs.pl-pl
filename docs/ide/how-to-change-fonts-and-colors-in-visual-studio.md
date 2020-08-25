@@ -1,6 +1,6 @@
 ---
-title: Jak zmienić kolory czcionek, rozmiar tekstu i opcje wysokiego kontrastu
-description: Dowiedz się, jak zmienić kolor czcionki i rozmiar tekstu w programie Visual Studio oraz wybrać opcje kontrastu dotyczące ułatwień dostępu.
+title: Zmień motywy, czcionki, tekst i kontrast na potrzeby ułatwień dostępu
+description: Dowiedz się, jak zmienić Motywy kolorów programu Visual Studio, kolory czcionek, rozmiary tekstu i kolory dodatkowe, aby ułatwić korzystanie z nich i ułatwień dostępu.
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperfq1
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 280873a2f855aa4c0d7e9951e141ca5492357b5a
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711693"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801441"
 ---
-# <a name="how-to-change-fonts-colors-and-high-contrast-options-in-visual-studio"></a>Instrukcje: zmienianie czcionek, kolorów i opcji wysokiego kontrastu w programie Visual Studio
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Instrukcje: zmienianie czcionek, kolorów i motywów w programie Visual Studio
 
-Czcionki i kolory w programie Visual Studio można zmienić na wiele sposobów. Na przykład można zmienić domyślny motyw niebieskiego koloru na motyw ciemny (nazywany także "trybem ciemnym"). I można zmienić domyślną czcionkę i rozmiar tekstu na inną czcionkę i rozmiar. Możesz również wybrać motyw o wysokim kontraście, jeśli najlepiej odpowiada Twoim potrzebom.
+Czcionki i kolory w programie Visual Studio można zmienić na wiele sposobów. Na przykład można zmienić domyślny motyw niebieskiego koloru na motyw ciemny (nazywany także "trybem ciemnym"). Możesz również wybrać motyw o dodatkowych kontrastach, jeśli najlepiej odpowiada Twoim potrzebom. I można zmienić domyślną czcionkę i rozmiar tekstu zarówno w IDE, jak i w edytorze kodu.
 
 ## <a name="change-the-color-theme"></a>Zmień motyw kolorów
 
@@ -122,7 +122,8 @@ Aby dowiedzieć się więcej o innych dostępnych opcjach ułatwień dostępu pr
 
 Aby dowiedzieć się więcej na temat wszystkich elementów interfejsu użytkownika, dla których można zmienić czcionkę i schematy kolorów, zobacz stronę [okna dialogowego czcionki i kolory, środowisko, opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zmień czcionki i kolory dla edytora kodu](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Instrukcje: zmiana czcionek i kolorów dla edytora w programie Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Funkcje edytora kodu programu Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)

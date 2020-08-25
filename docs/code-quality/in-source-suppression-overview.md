@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7ff64d43714fa69c2543a9bb12bb3cd12826c8
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706493"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800856"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomiń ostrzeżenia analizy kodu
 
@@ -35,7 +35,7 @@ W języku C++/CLI Użyj makr urzędu certyfikacji \_ pomija \_ globalnego SUPPRE
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> W przypadku migrowania projektu do programu Visual Studio 2017 może wystąpić nagłe zaistnienie dużej liczby ostrzeżeń dotyczących analizy kodu. Jeśli nie możesz naprawić ostrzeżeń, możesz pominąć wszystkie z nich, wybierając pozycję **Analizuj**  >  **analizę kodu i pominąć aktywne problemy**.
+> W przypadku migrowania projektu do programu Visual Studio 2017 może wystąpić nagłe zaistnienie dużej liczby ostrzeżeń dotyczących analizy kodu. Jeśli nie możesz naprawić ostrzeżeń, możesz pominąć wszystkie z nich, wybierając pozycję **Analizuj**  >  **analizę kodu uruchamiania i pominąć aktywne problemy**.
 >
 > ![Uruchom analizę kodu i Pomiń problemy w programie Visual Studio](media/suppress-active-issues.png)
 
@@ -50,7 +50,7 @@ W języku C++/CLI Użyj makr urzędu certyfikacji \_ pomija \_ globalnego SUPPRE
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage — atrybut
 
-W przypadku wybrania opcji **Pomiń** w menu kontekstowym lub kliknięciu prawym przyciskiem myszy ostrzeżenia analizy kodu w **Lista błędów** <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut zostanie dodany do kodu lub do globalnego pliku pomijania projektu.
+Po wybraniu opcji **Pomiń** w kontekście lub kliknięciu prawym przyciskiem myszy (lub wybierz i przytrzymaj) menu ostrzeżenia analizy kodu w **Lista błędów** <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut jest dodawany w kodzie lub do globalnego pliku pomijania projektu.
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>Atrybut ma następujący format:
 
@@ -195,7 +195,7 @@ W przypadku starszej analizy kodu można zdecydować, czy pomijać ostrzeżenia 
 > [!NOTE]
 > Analiza kodu jest ignorowana, `GeneratedCodeAttribute` gdy jest stosowana do całego zestawu lub jednego parametru.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

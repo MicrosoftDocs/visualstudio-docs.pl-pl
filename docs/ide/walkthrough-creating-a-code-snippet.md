@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f46dc6a1871b6d44c37c1931bf65f1b4a11c9ae
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 46744decddcc2d50fd05ea86cc6ebfad9d210031
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770789"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800505"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Przewodnik: tworzenie fragmentu kodu
 
@@ -96,15 +96,15 @@ Poniższy kod XML jest podstawowym szablonem fragmentu kodu:
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual Studio 2017 \ Code Snippets\Visual C# \Moje fragmenty kodu* 
-    *%USERPROFILE%\Documents\Visual Studio 2017 \ Code Snippets\Visual Basic\My fragmentów kodu*
+   *%USERPROFILE%\Documents\Visual Studio 2017 \ Code Snippets\Visual C# \Moje fragmenty kodu*  
+   *%USERPROFILE%\Documents\Visual Studio 2017 \ Code Snippets\Visual Basic\My fragmentów kodu*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual Studio 2019 \ Code Snippets\Visual C# \Moje fragmenty kodu* 
-    *%USERPROFILE%\Documents\Visual Studio 2019 \ Code Snippets\Visual Basic\My fragmentów kodu*
+   *%USERPROFILE%\Documents\Visual Studio 2019 \ Code Snippets\Visual C# \Moje fragmenty kodu*  
+   *%USERPROFILE%\Documents\Visual Studio 2019 \ Code Snippets\Visual Basic\My fragmentów kodu*
 
    ::: moniker-end
 
@@ -228,6 +228,6 @@ W poniższym kodzie XML przedstawiono fragment kodu, który używa metody `File.
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286656"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800973"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Zainstaluj analizatory FxCop w programie Visual Studio
 
@@ -28,7 +28,7 @@ Można zainstalować te analizatory FxCop jako pakiet NuGet lub rozszerzenie VSI
 
 W programie Visual Studio 2019 w wersji 16,3 lub nowszej można zainstalować pakiet NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) bezpośrednio na stronie właściwości analizy kodu projektu:
 
-1. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań**, wybierz polecenie **Właściwości**, a następnie wybierz kartę **Analiza kodu** .
+1. Kliknij prawym przyciskiem myszy (lub wybierz i przytrzymaj) w węźle projektu w **Eksplorator rozwiązań**, wybierz pozycję **Właściwości**, a następnie przejdź do karty **Analiza kodu** .
 
    ![Zainstaluj pakiet analizatorów FxCop na stronie właściwości w programie Visual Studio](media/install-fxcop-properties-page.png)
 
@@ -59,7 +59,7 @@ Jeśli używasz starszej wersji programu Visual Studio 2019, zainstaluj pakiet p
 
 ### <a name="custom-installation"></a>Instalacja niestandardowa
 
-W przypadku instalacji niestandardowej, na przykład w celu określenia innej wersji pakietu, wybierz przycisk wielokropka (...) na stronie właściwości analizy kodu projektu. Ten przycisk otwiera Menedżera pakietów NuGet przy użyciu "Microsoft. CodeAnalysis. FxCopAnalyzers" jako ciągu wyszukiwania.
+W przypadku instalacji niestandardowej na przykład aby określić inną wersję pakietu, wybierz przycisk wielokropka (...) na stronie właściwości analizy kodu projektu. Ten przycisk otwiera Menedżera pakietów NuGet przy użyciu "Microsoft. CodeAnalysis. FxCopAnalyzers" jako ciągu wyszukiwania.
 
 ![Instalowanie niestandardowego pakietu analizatorów FxCop ze strony właściwości w programie Visual Studio](media/install-fxcop-properties-page-ellipsis.png)
 

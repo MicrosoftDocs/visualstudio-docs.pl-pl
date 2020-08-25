@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Dowiedz się, jak lokalizować i pobierać tytuły oprogramowania firmy Microsoft w subskrypcjach programu Visual Studio
-ms.openlocfilehash: aa0784694b3407c621e8efb1916ed5fe41aee0c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248228"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801831"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio
 W zależności od posiadanej subskrypcji programu Visual Studio może być dostępna szeroka gama tytułów oprogramowania firmy Microsoft.  W tym artykule przedstawiono sposób lokalizowania i pobierania oprogramowania potrzebnego do maksymalnego wykorzystania subskrypcji. 
@@ -22,7 +22,7 @@ Na stronie [pliki do pobrania](https://my.visualstudio.com/downloads/featured) s
 Jeśli Twoja subskrypcja jest świadczona przez służbowe lub szkolne, administrator subskrypcji kontroluje, czy masz dostęp do plików do pobrania. Wyłączenie dostępu do plików do pobrania powoduje także wyłączenie dostępu do kluczy produktów. Jeśli nie masz dostępu do plików do pobrania i kluczy produktów, a ich potrzebujesz, [skontaktuj się z administratorem](contact-my-admin.md).
 
 > [!NOTE]
-> Mamy świadomość problemu dotyczącego dostępności kluczy produktu pakietu Office 365.  Analizujemy przyczynę i aktualizujemy ten artykuł po rozwiązaniu problemu. 
+> Mamy świadomość problemu dotyczącego dostępności kluczy produktów Microsoft 365.  Analizujemy przyczynę i aktualizujemy ten artykuł po rozwiązaniu problemu. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Jak mogę znaleźć pliki do pobrania w portalu subskrybenta?
 Po odwiedzeniu strony [pliki do pobrania](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) zobaczysz popularne pliki do pobrania ułożone w grupach według typu produktu.  Możesz wybrać jeden z popularnych plików do pobrania lub poszukać dowolnego produktu, korzystając z paska wyszukiwania w górnej części strony.

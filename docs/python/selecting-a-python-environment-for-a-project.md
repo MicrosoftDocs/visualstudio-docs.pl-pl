@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcb349f8ff99d1567bf94b83a96be6b2824c208
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520474"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801207"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Jak wybrać środowisko Python dla projektu
 
@@ -46,7 +46,7 @@ Menu kontekstowe w węźle **środowiska Python** zawiera również dodatkowe po
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Aby zmienić środowisko dla projektu, kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj środowisko**lub wybierz pozycję **Dodaj środowisko** z listy rozwijanej środowisko na pasku narzędzi języka Python.
+Aby zmienić środowisko dla projektu, kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj środowisko**. Możesz również wybrać opcję **Dodaj środowisko** z listy rozwijanej środowisko na pasku narzędzi języka Python.
 
 W oknie dialogowym **Dodawanie środowiska** wybierz kartę **istniejące środowisko** , a następnie wybierz nowe środowisko z listy rozwijanej **środowisko** :
 
@@ -86,7 +86,7 @@ Nowe środowisko wirtualne można utworzyć bezpośrednio w programie Visual Stu
 
 1. Wybierz środowisko jako interpreter podstawowy i wybierz pozycję **Utwórz**. Program Visual Studio Wyświetla pasek postępu podczas konfigurowania środowiska i pobiera wszystkie niezbędne pakiety. Po zakończeniu środowisko wirtualne jest wyświetlane w oknie **środowiska języka Python** dla projektu zawierającego.
 
-1. Środowisko wirtualne nie jest domyślnie aktywowane. Aby aktywować go dla projektu, kliknij go prawym przyciskiem myszy i wybierz polecenie **Aktywuj środowisko**.
+1. Środowisko wirtualne nie jest domyślnie aktywowane. Aby uaktywnić środowisko wirtualne dla projektu, kliknij go prawym przyciskiem myszy i wybierz polecenie **Aktywuj środowisko**.
 
 > [!Note]
 > Jeśli ścieżka lokalizacji identyfikuje istniejące środowisko wirtualne, program Visual Studio automatycznie wykryje interpreter podstawowy (przy użyciu pliku *orig-prefix.txt* w katalogu *lib* środowiska) i zmieni przycisk **Utwórz** , aby **dodać**.
@@ -169,9 +169,9 @@ Należy pamiętać, że wyświetlane wpisy mogą być niedokładne, a instalacja
 Należy również zauważyć, że program Visual Studio nie obsługuje obecnie korzystania `conda` z programu w celu zainstalowania pakietów w środowisku Conda. `conda`Zamiast tego użyj z wiersza polecenia.
 
 > [!Tip]
-> Typowa sytuacja, w której nie można zainstalować pakietu przez program PIP, ma miejsce, gdy pakiet zawiera kod źródłowy dla składników natywnych w plikach * \* . PYD* . Bez zainstalowanej wymaganej wersji programu Visual Studio program PIP nie może skompilować tych składników. Komunikat o błędzie wyświetlany w tej sytuacji jest **następujący: nie można odnaleźć vcvarsall.bat**. `easy_install`Program często może pobrać wstępnie skompilowane pliki binarne i pobrać odpowiedni kompilator dla starszych wersji języka Python z programu [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Aby uzyskać więcej informacji, zobacz [temat jak radzić sobie z "znalezieniem vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) w blogu zespołu narzędzi Python.
+> Typowa sytuacja, w której nie można zainstalować pakietu przez program PIP, ma miejsce, gdy pakiet zawiera kod źródłowy dla składników natywnych w plikach * \* . PYD* . Bez zainstalowanej wymaganej wersji programu Visual Studio program PIP nie może skompilować tych składników. Komunikat o błędzie wyświetlany w tej sytuacji jest **następujący: nie można odnaleźć vcvarsall.bat**. `easy_install` Program często może pobrać wstępnie skompilowane pliki binarne i pobrać odpowiedni kompilator dla starszych wersji języka Python z programu [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Aby uzyskać więcej informacji, zobacz [temat jak radzić sobie z "znalezieniem vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) w blogu zespołu narzędzi Python.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie środowiskami języka Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Użyj requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)

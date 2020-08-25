@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706519"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800960"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: generowanie danych metryk kodu
 
@@ -48,7 +48,7 @@ Te reguły są domyślnie wyłączone, ale można je włączyć z poziomu [**Eks
 </RuleSet>
 ```
 
-### <a name="configuration"></a>Konfiguracja
+### <a name="configuration"></a>Konfigurowanie
 
 Można skonfigurować progi, w których będą wyzwalane reguły metryki kodu.
 
@@ -72,15 +72,15 @@ Można skonfigurować progi, w których będą wyzwalane reguły metryki kodu.
 
 ## <a name="calculate-code-metrics-menu-command"></a>Polecenie Oblicz metryki kodu — menu
 
-Generuj metryki kodu dla jednego lub wszystkich otwartych projektów w środowisku IDE przy użyciu menu **Analizuj**  >  **metryki kodu** .
+Generuj metryki kodu dla jednego lub wszystkich otwartych projektów w środowisku IDE, przechodząc do menu **Analizuj**  >  **metryki kodu** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generuj wyniki metryk kodu dla całego rozwiązania
 
 Można generować wyniki metryk kodu dla całego rozwiązania w dowolny z następujących sposobów:
 
-- Na pasku menu wybierz **Analizuj**  >  **Oblicz metryki kodu**  >  **dla rozwiązania**.
+- Na pasku menu wybierz pozycję **Analizuj**  >  **Oblicz metryki kodu**  >  **dla rozwiązania**.
 
-- W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz polecenie **Oblicz metryki kodu**.
+- W **Eksplorator rozwiązań**wybierz i przytrzymaj, a następnie kliknij prawym przyciskiem myszy rozwiązanie, a następnie wybierz polecenie **Oblicz metryki kodu**.
 
 - W oknie **wyników metryk kodu** wybierz przycisk **Oblicz metryki kodu dla rozwiązania** .
 
@@ -88,9 +88,9 @@ Wyniki są generowane i zostanie wyświetlone okno **wyników metryk kodu** . Ab
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generuj wyniki metryk kodu dla jednego lub wielu projektów
 
-1. W **Eksplorator rozwiązań**wybierz co najmniej jeden projekt.
+1. W **Eksplorator rozwiązań**wybierz jeden lub więcej projektów.
 
-1. Na pasku menu wybierz polecenie **Analizuj**  >  **Oblicz metryki kodu**  >  **dla wybranych projektów**.
+1. Na pasku menu wybierz pozycję **Analizuj**  >  **Oblicz metryki kodu**  >  **dla wybranych projektów**.
 
 Wyniki są generowane i zostanie wyświetlone okno **wyników metryk kodu** . Aby wyświetlić szczegóły wyników, rozwiń drzewo w **hierarchii**.
 
@@ -336,7 +336,7 @@ Począwszy od programu Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysi
 
 Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używają tych samych formuł co poprzednie wersje *Metrics.exe*, ale nowe narzędzie zlicza liczbę `IOperations` (instrukcje logicznego źródła) zamiast instrukcji języka pośredniego (IL). Liczby będą nieco inne niż te, które są generowane przez środowisko IDE programu Visual Studio i poprzednie wersje *Metrics.exe*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Korzystanie z okna wyników metryk kodu](../code-quality/working-with-code-metrics-data.md)
 - [Wartości metryk kodu](../code-quality/code-metrics-values.md)

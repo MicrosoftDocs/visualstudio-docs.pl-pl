@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 163b925423ba5afc62b84866e839c5d86a6444e0
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: d2cac7ad0502d82309aa664b8e8fe6bdd0301815
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371940"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800701"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Jak wyłączyć analizę kodu źródłowego dla kodu zarządzanego
 
@@ -41,13 +41,13 @@ Aby otworzyć tę stronę, kliknij prawym przyciskiem myszy węzeł projektu w *
 - Aby wyłączyć analizę źródła na żywo, usuń zaznaczenie opcji **Uruchom przy użyciu analizy na żywo** .
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2019 w wersji 16,5, jeśli wolisz przepływ pracy do analizy kodu na żądanie, możesz wyłączyć wykonywanie analizatora podczas analizy na żywo i/lub skompilować i ręcznie wyzwolić analizę kodu w projekcie lub rozwiązaniu na żądanie. Aby uzyskać informacje na temat ręcznego uruchamiania analizy kodu, zobacz [How to: Run Code Analysis ręcznie dla kodu zarządzanego](how-to-run-code-analysis-manually-for-managed-code.md).  
+> Począwszy od programu Visual Studio 2019 w wersji 16,5, jeśli wolisz przepływ pracy do analizy kodu na żądanie, możesz wyłączyć wykonywanie analizatora podczas analizy na żywo i/lub skompilować i ręcznie wyzwolić analizę kodu w projekcie lub rozwiązaniu na żądanie. Aby uzyskać informacje na temat ręcznego uruchamiania analizy kodu, zobacz [How to: Run Code Analysis ręcznie dla kodu zarządzanego](how-to-run-code-analysis-manually-for-managed-code.md).
 
 ## <a name="net-framework-projects"></a>Projekty .NET Framework
 
 Aby wyłączyć analizę kodu źródłowego dla analizatorów, Dodaj co najmniej jedną z następujących właściwości programu MSBuild do [pliku projektu](../ide/solutions-and-projects-in-visual-studio.md#project-file).
 
-| Właściwość programu MSBuild | Opis | Domyślne |
+| Właściwość programu MSBuild | Opis | Domyślny |
 | - | - | - |
 | `RunAnalyzersDuringBuild` | Określa, czy analizatory są uruchamiane w czasie kompilacji. | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | Określa, czy analizatory analizują kod na żywo w czasie projektowania. | `true` |
@@ -67,7 +67,7 @@ Przykłady:
 
 ## <a name="source-analysis"></a>Analiza źródła
 
-Nie można wyłączyć [analizy źródła](roslyn-analyzers-overview.md) w programie Visual Studio 2017. Jeśli chcesz wyczyścić błędy analizatora z Lista błędów, możesz pominąć wszystkie bieżące naruszenia, wybierając **Analizuj**  >  **Run Code Analysis i pomijając aktywne problemy** na pasku menu. Aby uzyskać więcej informacji, zobacz [pomijanie naruszeń](use-roslyn-analyzers.md#suppress-violations).
+Nie można wyłączyć [analizy źródła](roslyn-analyzers-overview.md) w programie Visual Studio 2017. Jeśli chcesz wyczyścić błędy analizatora z **Lista błędów**, możesz pominąć wszystkie bieżące naruszenia, wybierając **Analizuj**  >  **Run Code Analysis i pomijając aktywne problemy** na pasku menu. Aby uzyskać więcej informacji, zobacz [pomijanie naruszeń](use-roslyn-analyzers.md#suppress-violations).
 
 Począwszy od programu Visual Studio 2019 w wersji 16,3, można wyłączyć analizę kodu źródłowego lub wykonać ją na żądanie. Rozważ uaktualnienie do programu Visual Studio 2019.
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 831e0216bcecff2e9ac6551184ddbfda56a4b525
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816465"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801298"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Samouczek: wprowadzenie do Projektant formularzy systemu Windows
 
@@ -111,7 +111,7 @@ Kontrolka DemoCalculator zawiera kilka kontrolek Windows Forms. Ta procedura pol
 
 Teraz, gdy układ kontrolki jest skonfigurowany, można wypełnić formant DemoCalculator z przyciskami i ekranem.
 
-1. W **przyborniku**kliknij dwukrotnie `TextBox` ikonę kontrolki.
+1. W **przyborniku**wybierz `TextBox` ikonę kontrolki.
 
    `TextBox`Kontrolka jest umieszczana w pierwszej komórce `TableLayoutPanel` formantu.
 
@@ -129,11 +129,11 @@ Teraz, gdy układ kontrolki jest skonfigurowany, można wypełnić formant DemoC
 
 6. Zaznacz `TableLayoutPanel` kontrolkę.
 
-7. W **przyborniku**kliknij dwukrotnie `Button` ikonę.
+7. W **przyborniku**wybierz `Button` ikonę.
 
    `Button`Kontrolka jest umieszczana w następnej otwartej komórce `TableLayoutPanel` formantu.
 
-8. W **przyborniku**kliknij dwukrotnie `Button` ikonę cztery razy, aby wypełnić drugi wiersz `TableLayoutPanel` formantu.
+8. W **przyborniku**wybierz `Button` ikonę cztery razy, aby wypełnić drugi wiersz `TableLayoutPanel` formantu.
 
 9. Zaznacz wszystkie pięć `Button` kontrolek, zaznaczając je, przytrzymując klawisz **SHIFT** . Naciśnij klawisz **Ctrl** + **C** , aby skopiować `Button` kontrolki do Schowka.
 
@@ -233,7 +233,7 @@ Gdy kontrolka lub formularz zostanie wypełniony kilkoma kontrolkami, łatwiej j
 
    - Zmień właściwość Text formantu zeroButton na **0**
 
-   - Zmień właściwość Text formantu changeSignButton na**+/-**
+   - Zmień właściwość Text formantu changeSignButton na **+/-**
 
    - Zmień właściwość Text formantu decimalButton na **.** (kropka)
 
@@ -247,11 +247,11 @@ Spowoduje to zakończenie projektowania formantu DemoCalculator. To wszystko, co
 
 ## <a name="implement-event-handlers"></a>Implementowanie obsługi zdarzeń
 
-Przyciski w kontrolce DemoCalculator mają procedury obsługi zdarzeń, których można użyć do wdrożenia większości logiki kalkulatora. Projektant formularzy systemu Windows umożliwia zaimplementowanie wycinków wszystkich programów obsługi zdarzeń dla wszystkich przycisków jednym kliknięciem.
+Przyciski w kontrolce DemoCalculator mają procedury obsługi zdarzeń, których można użyć do wdrożenia większości logiki kalkulatora. Projektant formularzy systemu Windows umożliwia zaimplementowanie wycinków wszystkich programów obsługi zdarzeń dla wszystkich przycisków z jednym zaznaczeniem.
 
 1. Na powierzchni projektanta zaznacz wszystkie `Button` kontrolki, zaznaczając je, przytrzymując klawisz **SHIFT** .
 
-2. Kliknij dwukrotnie jedną z `Button` kontrolek.
+2. Wybierz jedną z `Button` kontrolek.
 
    Edytor kodu zostanie otwarty dla programów obsługi zdarzeń generowanych przez projektanta.
 
@@ -277,7 +277,7 @@ Pierwszym krokiem jest utworzenie projektu aplikacji. Ten projekt będzie używa
 
 2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DemoCalculatorTest** , a następnie wybierz pozycję **Dodaj odwołanie** , aby otworzyć okno dialogowe **Dodawanie odwołania** .
 
-3. Wybierz kartę **projekty** , a następnie kliknij dwukrotnie projekt DemoCalculatorLib, aby dodać odwołanie do projektu testowego.
+3. Przejdź do karty **projekty** , a następnie wybierz projekt DemoCalculatorLib, aby dodać odwołanie do projektu testowego.
 
 4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **DemoCalculatorTest**, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
 
@@ -297,7 +297,7 @@ Aby użyć kontrolki DemoCalculator w aplikacji, należy ją umieścić w formul
 
 4. Przenieś `Button` kontrolkę wokół kontrolki DemoCalculator i obserwuj, gdzie pojawia się linii wyrównania. Możesz precyzyjnie dostosować kontrolki za pomocą tej funkcji. Usuń `Button` kontrolkę po zakończeniu.
 
-5. Wybierz formant DemoCalculator prawym przyciskiem myszy, a następnie wybierz polecenie **Właściwości**.
+5. Kliknij prawym przyciskiem myszy formant DemoCalculator, a następnie wybierz polecenie **Właściwości**.
 
 6. Zmień wartość `Dock` właściwości na `Fill` .
 
@@ -311,7 +311,7 @@ Aby użyć kontrolki DemoCalculator w aplikacji, należy ją umieścić w formul
 
 W tym artykule przedstawiono sposób konstruowania interfejsu użytkownika dla prostego kalkulatora. Aby kontynuować, możesz przedłużyć jego funkcjonalność, implementując logikę kalkulatora, a następnie [publikując aplikację przy użyciu technologii ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Lub przejdź do innego samouczka, w którym [tworzysz Podgląd obrazów przy użyciu Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [formanty Formularzy systemu Windows](/dotnet/framework/winforms/controls/)
 - [Ułatwienia dostępu dla formantów Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)

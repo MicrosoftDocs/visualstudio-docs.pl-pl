@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a23afff970405bf7ae1bbd1c8aad326eb133780
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520383"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801168"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak program Visual Studio używa ścieżek wyszukiwania języka Python
 
@@ -29,7 +29,7 @@ Program Visual Studio ignoruje zmienną środowiskową ścieżki wyszukiwania, j
 
 W związku z tym program Visual Studio umożliwia określenie ścieżek wyszukiwania bezpośrednio w środowiskach i projektach. Kod uruchamiany lub Debuguj w programie Visual Studio otrzymuje ścieżki wyszukiwania w wartości `PYTHONPATH` (i innych równoważnych zmiennych). Po dodaniu ścieżek wyszukiwania program Visual Studio sprawdza biblioteki w tych lokalizacjach i kompiluje bazy danych IntelliSense dla nich, gdy jest to potrzebne (Visual Studio 2017 w wersji 15,5 i starszej). konstruowanie bazy może zająć trochę czasu w zależności od liczby bibliotek.
 
-Aby dodać ścieżkę wyszukiwania, przejdź do **Eksplorator rozwiązań**, rozwiń węzeł projektu, kliknij prawym przyciskiem myszy pozycję **ścieżki wyszukiwania**, wybierz polecenie **Dodaj folder do ścieżki wyszukiwania**:
+Aby dodać ścieżkę wyszukiwania, przejdź do **Eksplorator rozwiązań**, rozwiń węzeł projektu, kliknij prawym przyciskiem myszy pozycję **ścieżki wyszukiwania**, a następnie wybierz polecenie **Dodaj folder do ścieżki wyszukiwania**:
 
 ::: moniker range="vs-2017"
 ![Dodaj folder do polecenia przeszukiwania ścieżki na ścieżce wyszukiwania w Eksplorator rozwiązań](media/search-paths-command.png)
@@ -46,7 +46,7 @@ Po dodaniu folderów do ścieżek wyszukiwania program Visual Studio używa tych
 
 Pliki z rozszerzeniem *zip* lub *jajka* można również dodać jako ścieżki wyszukiwania, wybierając pozycję **Dodaj archiwum zip do ścieżki wyszukiwania** . Podobnie jak w przypadku folderów, zawartość tych plików jest skanowana i udostępniana w technologii IntelliSense.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie środowiskami języka Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)

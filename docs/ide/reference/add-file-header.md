@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374172"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801324"
 ---
 # <a name="add-file-header"></a>Dodawanie nagłówka pliku
 
@@ -34,12 +34,12 @@ Ta generacja kodu ma zastosowanie do:
 
 2. Dodaj następującą regułę do pliku EditorConfig: *file_header_template*.
 
-3. Ustaw wartość reguły tak, aby była równa tekstowi nagłówka, który ma zostać zastosowany.
+3. Ustaw wartość reguły tak, aby była równa tekstowi nagłówka, który ma zostać zastosowany. Można użyć `{fileName}` jako symbolu zastępczego dla nazwy pliku.
 
     ![Reguła nagłówka pliku EditorConfig](media/add-file-header-rule.png)
 
-> [!NOTE]
-> Nie można mieć jawnych wielowierszowych EditorConfig i będzie trzeba użyć znaku nowego wiersza systemu UNIX, aby wstawić nowe wiersze.
+    > [!NOTE]
+    > Nie można mieć jawnych wielowierszowych EditorConfig i będzie trzeba użyć znaku nowego wiersza systemu UNIX, aby wstawić nowe wiersze.
 
 4. Umieść karetkę na pierwszym wierszu dowolnego pliku C# lub Visual Basic.
 

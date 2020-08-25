@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81462db07941c73b847c009ef8353b00d28fff4f
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371914"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801038"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -26,9 +26,9 @@ Można utworzyć niestandardowy zestaw reguł, który spełnia wymagania projekt
 
 Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca można dodawać lub usuwać określone reguły, a także zmienić akcję, która występuje, gdy reguła zostanie naruszona &mdash; na przykład, pokazać ostrzeżenie lub błąd.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań**wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) projekt, a następnie wybierz pozycję **Właściwości**.
 
-2. Na stronie **Właściwości** wybierz kartę **Analiza kodu** .
+2. Na stronach **Właściwości** przejdź do karty **Analiza kodu** .
 
 ::: moniker range="vs-2017"
 
@@ -44,7 +44,7 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
    - Wybierz zestaw reguł, który chcesz dostosować.
 
-     \-oraz
+     \- oraz
 
    - Wybierz **\<Browse>** , aby określić istniejący zestaw reguł, którego nie ma na liście.
 
@@ -57,11 +57,11 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
 Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy plik** :
 
-1. Wybierz pozycję **plik**  >  **Nowy**  >  **plik**lub naciśnij **klawisze CTRL** + **N**.
+1. Wybierz pozycję **plik**  >  **Nowy**  >  **plik**lub wybierz pozycję **Ctrl** + **N**.
 
 2. W oknie dialogowym **nowy plik** wybierz kategorię **Ogólne** po lewej stronie, a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
-3. Wybierz pozycję **Open** (Otwórz).
+3. Wybierz pozycję **Otwórz**.
 
    *Nowy plik zestawu reguł zostanie* otwarty w edytorze zestawu reguł.
 
@@ -70,9 +70,9 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 > [!NOTE]
 > Poniższa procedura nie dotyczy projektów platformy .NET Core, które nie mają karty właściwości **analizy kodu** .
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
+1. W **Eksplorator rozwiązań**wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) projekt, a następnie wybierz pozycję **Właściwości**.
 
-2. Na stronie **Właściwości** wybierz kartę **Analiza kodu** .
+2. Na stronach **Właściwości** przejdź do karty **Analiza kodu** .
 
 ::: moniker range="vs-2017"
 

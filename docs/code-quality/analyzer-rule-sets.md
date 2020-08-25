@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11b99bb08c82725f19f7985a97656edf65f112d5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573290"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800219"
 ---
 # <a name="enable-a-category-of-rules"></a>Włączanie kategorii reguł
 
@@ -33,12 +33,12 @@ Pakiet NuGet analizatora FxCop zawiera wstępnie zdefiniowane zestawy reguł i p
 - Globalizacja
 - Współdziałanie
 - Łatwość konserwacji
-- Nadawanie nazw
+- Nazewnictwo
 - Wydajność
 - Przewoźny z FxCop
 - Niezawodność
-- Zabezpieczenia
-- Pomiar
+- Bezpieczeństwo
+- Użycie
 
 Każda z tych kategorii reguł ma plik EditorConfig lub zestawu reguł, aby:
 
@@ -53,13 +53,13 @@ Każda z tych kategorii reguł ma plik EditorConfig lub zestawu reguł, aby:
 
 ## <a name="predefined-editorconfig-files"></a>Wstępnie zdefiniowane pliki EditorConfig
 
-Wstępnie zdefiniowane pliki EditorConfig pakietu Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer znajdują się w katalogu *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<wersja\>\editorconfig* . Na przykład plik EditorConfig, aby włączyć wszystkie reguły zabezpieczeń, znajduje się w lokalizacji *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<wersja\>\editorconfig\SecurityRulesEnabled\\. EditorConfig*.
+Wstępnie zdefiniowane pliki EditorConfig pakietu Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer znajdują się w katalogu *% USERPROFILE% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editorconfig* . Na przykład plik EditorConfig, aby włączyć wszystkie reguły zabezpieczeń, znajduje się w lokalizacji *% USERPROFILE% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editorconfig\SecurityRulesEnabled \\ . EditorConfig*.
 
 Skopiuj wybrany plik editorconfig do katalogu głównego projektu.
 
 ## <a name="predefined-rule-sets"></a>Zestawy wstępnie zdefiniowanych reguł
 
-Wstępnie zdefiniowane pliki zestawu reguł dla pakietu Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer znajdują się w katalogu *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<w wersji\>\rulesets* . Na przykład plik zestawu reguł, aby włączyć wszystkie reguły zabezpieczeń, znajduje się w lokalizacji *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<wersji\>\rulesets\SecurityRulesEnabled.RuleSet*.
+Wstępnie zdefiniowane pliki zestawu reguł dla pakietu Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer znajdują się w katalogu *% USERPROFILE% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets* . Na przykład plik zestawu reguł, aby włączyć wszystkie reguły zabezpieczeń, znajduje się w lokalizacji *% USERPROFILE% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets\SecurityRulesEnabled.RuleSet*.
 
 Skopiuj co najmniej jeden zestaw reguł i wklej je w katalogu zawierającym projekt programu Visual Studio lub bezpośrednio do **Eksplorator rozwiązań**.
 
@@ -71,7 +71,7 @@ Proces ustawiania aktywnego zestawu reguł jest nieco inny w zależności od teg
 
 #### <a name="net-core"></a>.NET Core
 
-Aby ustawić regułę zestawu aktywnych reguł dla analizy w projektach .NET Core lub .NET Standard, ręcznie Dodaj właściwość **CodeAnalysisRuleSet** do pliku projektu. Na przykład poniższy fragment kodu ustawia `HelloWorld.ruleset` jako aktywny zestaw reguł.
+Aby ustawić regułę zestawu aktywnych reguł dla analizy w projektach .NET Core lub .NET Standard, ręcznie Dodaj właściwość **CodeAnalysisRuleSet** do pliku projektu. Na przykład poniższy fragment kodu jest ustawiany `HelloWorld.ruleset` jako aktywny zestaw reguł.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -102,7 +102,7 @@ Aby ustawić regułę zestawu aktywnych reguł dla analizy w .NET Framework proj
 
    Teraz widzisz tylko naruszenia reguły dla tych reguł, które są włączone w wybranym zestawie reguł.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizatory — często zadawane pytania](analyzers-faq.md)
 - [Omówienie analizatorów .NET Compiler Platform](roslyn-analyzers-overview.md)

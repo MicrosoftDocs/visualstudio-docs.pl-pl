@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248579"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801259"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Tworzenie niestandardowych szablonów projektów i elementów
 
@@ -72,7 +72,7 @@ W przypadku scenariuszy tworzenia szablonu podstawowego należy użyć kreatora 
 
 1. Utwórz projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablon projektu VSIX](../extensibility/vsix-project-template.md).
 
-2. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX, wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy), a następnie wybierz pozycję **Ustaw jako projekt startowy**.
+2. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
 
 3. Ustaw projekt szablonu projektu jako element zawartości projektu VSIX. Otwórz plik *. vsixmanifest* . Przejdź do karty **składniki** i wybierz pozycję **Nowy**.
 

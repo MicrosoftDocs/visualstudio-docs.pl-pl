@@ -7,19 +7,19 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Dowiedz się, jak korzystać z pulpitu wirtualnego systemu Microsoft Windows za pośrednictwem subskrypcji programu Visual Studio
-ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183590"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800609"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Dostęp do pulpitu wirtualnego systemu Windows w subskrypcjach 
 Subskrybenci programu Visual Studio mogą teraz korzystać z indywidualnych środków na korzystanie z platformy Azure do tworzenia i testowania usług pulpitu wirtualnego systemu Microsoft Windows.  
-Windows Virtual Desktop to kompleksowa usługa wirtualizacji pulpitu i aplikacji działająca w chmurze. Jest to jedyna Infrastruktura pulpitu wirtualnego (VDI), która oferuje uproszczone zarządzanie, wielosesyjne Windows 10, optymalizacje dla pakietu Office 365 ProPlus i obsługę środowisk Usługi pulpitu zdalnego (RDS). Wdrażaj i Skaluj komputery stacjonarne i aplikacje z systemem Windows na platformie Azure w ciągu kilku minut i korzystaj z wbudowanych funkcji zabezpieczeń i zgodności.
+Windows Virtual Desktop to kompleksowa usługa wirtualizacji pulpitu i aplikacji działająca w chmurze. Jest to jedyna Infrastruktura pulpitu wirtualnego (VDI), która oferuje uproszczone zarządzanie, wielosesyjne Windows 10, optymalizacje dla Microsoft 365 aplikacji dla przedsiębiorstw i obsługę środowisk Usługi pulpitu zdalnego (RDS). Wdrażaj i Skaluj komputery stacjonarne i aplikacje z systemem Windows na platformie Azure w ciągu kilku minut i korzystaj z wbudowanych funkcji zabezpieczeń i zgodności.
 Oto co można zrobić w przypadku uruchamiania pulpitu wirtualnego systemu Windows na platformie Azure:
 - Konfigurowanie wdrożenia obejmującego wiele sesji systemu Windows 10, które zapewnia pełną skalowalność systemu Windows 10
-- Wirtualizacja pakietu Office 365 ProPlus i optymalizacja do działania w scenariuszach wirtualnych obejmujących wiele użytkowników
+- Wirtualizacja Microsoft 365 aplikacje dla przedsiębiorstw i optymalizacja do działania w scenariuszach wirtualnych obejmujących wiele użytkowników
 - Udostępnianie pulpitów wirtualnych systemu Windows 7 z bezpłatnymi rozszerzonymi aktualizacjami zabezpieczeń
 - Przenoszenie istniejących Usługi pulpitu zdalnego (RDS) i komputerów stacjonarnych i aplikacji z systemem Windows Server do dowolnego komputera
 - Wirtualizacja zarówno komputerów stacjonarnych, jak i aplikacji
@@ -62,7 +62,7 @@ Gdy zostaną spełnione wszystkie wymagania wstępne, należy wykonać kilka czy
 
 Nie masz pewności, której subskrypcji używasz?  Połącz się z, [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
 - [Dokumentacja usługi Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/)
 
