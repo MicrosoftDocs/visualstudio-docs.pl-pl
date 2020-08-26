@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800856"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893375"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomiń ostrzeżenia analizy kodu
 
@@ -50,7 +50,7 @@ W języku C++/CLI Użyj makr urzędu certyfikacji \_ pomija \_ globalnego SUPPRE
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage — atrybut
 
-Po wybraniu opcji **Pomiń** w kontekście lub kliknięciu prawym przyciskiem myszy (lub wybierz i przytrzymaj) menu ostrzeżenia analizy kodu w **Lista błędów** <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut jest dodawany w kodzie lub do globalnego pliku pomijania projektu.
+W przypadku wybrania opcji **Pomiń** w menu kontekstowym lub kliknięciu prawym przyciskiem myszy ostrzeżenia analizy kodu w **Lista błędów** <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut jest dodawany w kodzie lub do globalnego pliku pomijania projektu.
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>Atrybut ma następujący format:
 
@@ -98,11 +98,11 @@ Gdy widzisz ostrzeżenia w programie Visual Studio, możesz wyświetlić przykł
 
 Ostrzeżenia analizy kodu są pomijane na poziomie, do którego <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> zastosowano atrybut. Na przykład atrybut może być stosowany na poziomie zestawu, modułu, typu, elementu członkowskiego lub parametru. Celem jest ścisłe sprzęganie informacji o pominięciu do kodu, w którym występuje naruszenie.
 
-Ogólna forma pomijania obejmuje kategorię reguły i Identyfikator reguły, która zawiera opcjonalną, czytelną dla człowieka reprezentację nazwy reguły. Na przykład:
+Ogólna forma pomijania obejmuje kategorię reguły i Identyfikator reguły, która zawiera opcjonalną, czytelną dla człowieka reprezentację nazwy reguły. Przykład:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-Jeśli istnieją ścisłe przyczyny dotyczące minimalizowania metadanych pomijania w źródle, nazwa reguły może zostać pominięta. Kategoria reguł i jej Identyfikator reguły składają się na wystarczająco unikatowy identyfikator reguły. Na przykład:
+Jeśli istnieją ścisłe przyczyny dotyczące minimalizowania metadanych pomijania w źródle, nazwa reguły może zostać pominięta. Kategoria reguł i jej Identyfikator reguły składają się na wystarczająco unikatowy identyfikator reguły. Przykład:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

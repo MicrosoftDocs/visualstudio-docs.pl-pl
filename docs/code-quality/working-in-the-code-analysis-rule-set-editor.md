@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801545"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893310"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Korzystanie z edytora zestawu reguł analizy kodu
 
@@ -26,7 +26,7 @@ W poniższej tabeli przedstawiono opcje ważności:
 |Akcja (ważność)|Opis|
 |-|-|
 |Ostrzeżenie|Generuje ostrzeżenie w **Lista błędów** a także w czasie kompilacji.|
-|Błąd|Generuje błąd w **Lista błędów** a także w czasie kompilacji.|
+|Error|Generuje błąd w **Lista błędów** a także w czasie kompilacji.|
 |Info|Generuje komunikat w **Lista błędów**.|
 |Ukryty|Naruszenie nie jest widoczne dla użytkownika. Środowisko IDE jest powiadamiane jednak o naruszeniu.|
 |Brak|Reguła jest pomijana. Zachowanie jest takie samo, jak w przypadku usunięcia reguły z zestawu reguł.|
@@ -38,7 +38,7 @@ Edytor wyświetla reguły w strukturze drzewa, które grupuje reguły według ok
    > [!TIP]
    > Można zmienić sposób grupowania reguł na liście rozwijanej **Grupuj według** .
 
-- W polu **Akcja** grupy Określ akcję, która ma zostać zastosowana do wszystkich reguł w grupie.
+- Kliknij pole **Akcja** w grupie, Określ akcję, która ma zostać zastosowana do wszystkich reguł w grupie.
 
 - Zaznacz lub wyczyść pole wyboru dla pojedynczej reguły. Po zaznaczeniu pola wyboru dla reguły, reguła jest ustawiana na akcję **ostrzeżenia** .
 

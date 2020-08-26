@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/18/2020
+ms.date: 08/25/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 284237edf805ba4d41bbeb17b3675d662efcbd89
-ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
+ms.openlocfilehash: fb9fbc548af552c2704033888d0fffe5d7e7a43c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88584518"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893388"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -27,9 +27,10 @@ ms.locfileid: "88584518"
 
 W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Visual Studio 2019.
 
-| **Wersja**| **Ukierunkowan** | **Data wydania** | **Wersja kompilacji** |
+| **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.7.2 | Release | 18 sierpnia 2020 | 16.7.30413.136 |
+| 16.8.0 | Preview 2 | 25 sierpnia 2020 | 16.8.30420.98 |
+| 16.7.2 | Release | 18 sierpnia 2020 r. | 16.7.30413.136 |
 | 16.7.1 | Release | 11 sierpnia 2020 r. | 16.7.30406.217 |
 | 16.4.12 | Release | 11 sierpnia 2020 r. | 16.4.30406.169 |
 | 16.0.17 | Release | 11 sierpnia 2020 r. | 16.0.28803.806 |
@@ -168,7 +169,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Visual Studio 2017.
 
-| **Wersja**| **Ukierunkowan** | **Data wydania** | **Wersja kompilacji** |
+| **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.26 | Release | 11 sierpnia 2020 r. | 15.9.28307.1234 |
 | 15.9.25 | Release | 14 lipca 2020 r. | 15.9.28307.1216 |

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801038"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893271"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -26,9 +26,9 @@ Można utworzyć niestandardowy zestaw reguł, który spełnia wymagania projekt
 
 Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca można dodawać lub usuwać określone reguły, a także zmienić akcję, która występuje, gdy reguła zostanie naruszona &mdash; na przykład, pokazać ostrzeżenie lub błąd.
 
-1. W **Eksplorator rozwiązań**wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) projekt, a następnie wybierz pozycję **Właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
-2. Na stronach **Właściwości** przejdź do karty **Analiza kodu** .
+2. Na stronie **Właściwości** wybierz kartę **Analiza kodu** .
 
 ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
 Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy plik** :
 
-1. Wybierz pozycję **plik**  >  **Nowy**  >  **plik**lub wybierz pozycję **Ctrl** + **N**.
+1. Wybierz pozycję **plik**  >  **Nowy**  >  **plik**lub naciśnij **klawisze CTRL** + **N**.
 
 2. W oknie dialogowym **nowy plik** wybierz kategorię **Ogólne** po lewej stronie, a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
@@ -70,9 +70,9 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 > [!NOTE]
 > Poniższa procedura nie dotyczy projektów platformy .NET Core, które nie mają karty właściwości **analizy kodu** .
 
-1. W **Eksplorator rozwiązań**wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) projekt, a następnie wybierz pozycję **Właściwości**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
-2. Na stronach **Właściwości** przejdź do karty **Analiza kodu** .
+2. Na stronie **Właściwości** wybierz kartę **Analiza kodu** .
 
 ::: moniker range="vs-2017"
 
@@ -98,7 +98,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 ## <a name="rule-precedence"></a>Pierwszeństwo reguł
 
-- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł z różnymi serwerami, kompilator generuje błąd. Na przykład:
+- Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł z różnymi serwerami, kompilator generuje błąd. Przykład:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -113,7 +113,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
    **CA0063: nie można załadować pliku zestawu reguł " \[ Twoje]. zestaw reguł" lub jeden z jego plików zależnych od tego zestawu. Plik jest niezgodny ze schematem zestawu reguł.**
 
-- Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Na przykład:
+- Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Przykład:
 
    ```xml
    <!-- Parent rule set -->
