@@ -10,12 +10,12 @@ metadata:
   ms.author: lank
   manager: lank
   ms.date: 12/04/2019
-  ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 98e3a19b2e06ee08b8e88dfb6ba15c8c8a5e027c
+  ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74883849"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88801740"
 highlightedContent:
   items:
   - title: Co nowego w subskrypcjach programu Visual Studio
@@ -28,7 +28,7 @@ highlightedContent:
     itemType: how-to-guide
     url: ~/using-admin-portal.md
 conceptualContent:
-  title: Wprowadzenie
+  title: Rozpoczęcie pracy
   items:
   - title: Dostęp do korzyści
     links:
@@ -67,13 +67,13 @@ tools:
   - title: Visual Studio IDE
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
     url: /visualstudio/windows/
-  - title: Azure DevOps Services
+  - title: Usługa Azure DevOps Services
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
     url: /azure/devops/
   - title: Visual Studio Code
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-code.svg
     url: https://code.visualstudio.com/docs
-  - title: Visual Studio for Mac
+  - title: Visual Studio dla komputerów Mac
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
     url: /visualstudio/mac/
   - title: Visual Studio App Center
@@ -97,7 +97,7 @@ additionalContent:
         url: ~/vs-visual-studio-app-center.md
       - text: Azure DevOps Server i licencja CAL
         url: ~/vs-vsts.md
-      - text: Subskrypcja dewelopera usługi Office 365
+      - text: Subskrypcja dewelopera rozwiązania Microsoft 365
         url: ~/vs-office-dev.md
       - text: Konto dewelopera systemu Windows
         url: ~/vs-windows-dev.md

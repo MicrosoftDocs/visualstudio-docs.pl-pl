@@ -2,12 +2,12 @@
   href: index.yml
 - name: Omówienie
   items:
-    - name: Omówienie wdrażania
-      href: deploying-applications-services-and-components-resources.md
-- name: Przewodniki Szybki Start
-  items:
     - name: Pierwsze spojrzenie na wdrażanie
       href: deploying-applications-services-and-components.md
+    - name: 'Wdrażanie w folderze, usługach IIS lub na platformie Azure'
+      href: deploying-applications-services-and-components-resources.md
+- name: Przewodniki Szybki start
+  items:
     - name: Wdrażanie w usłudze Azure App Service
       href: quickstart-deploy-to-azure.md
     - name: Wdrażanie w usłudze App Service dla systemu Linux
