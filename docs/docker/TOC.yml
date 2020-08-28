@@ -1,0 +1,34 @@
+- name: Docker
+  expanded: true
+  items:
+    - name: Wprowadzenie do platformy Docker dla użytkowników programu VS Code
+      expanded: true
+      items:
+        - name: Wprowadzenie
+          href: tutorials/docker-tutorial.md
+        - name: Część 1. Aplikacja
+          href: tutorials/your-application.md
+        - name: Część 2. Aktualizowanie aplikacji
+          href: tutorials/update-your-app.md
+        - name: Część 3. Udostępnianie aplikacji
+          href: tutorials/share-your-app.md
+        - name: Część 4. Utrwalanie bazy danych
+          href: tutorials/persist-your-data.md
+        - name: Część 5. Używanie instalacji powiązanych
+          href: tutorials/use-bind-mounts.md
+        - name: Część 6. Aplikacje z wieloma kontenerami
+          href: tutorials/multi-container-apps.md
+        - name: Część 7. Korzystanie z narzędzia Docker Compose
+          href: tutorials/use-docker-compose.md
+        - name: Część 8. Najlepsze rozwiązania dotyczące tworzenia obrazów
+          href: tutorials/image-building-best-practices.md
+        - name: Część 9. Wdrażanie w chmurze
+          href: tutorials/deploy-to-cloud.md
+        - name: Co dalej?
+          href: tutorials/whats-next.md
+        - name: Źródła
+          items:
+            - name: Przykłady
+              href: 'https://github.com/docker/awesome-compose'
+            - name: Integracja z infrastrukturą ACI platformy Docker
+              href: 'https://github.com/docker/aci-integration-beta/'
