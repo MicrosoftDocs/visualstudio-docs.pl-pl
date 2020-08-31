@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ff6ba1f654f3a9b909012f159cd3daaf2892f3
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382630"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176081"
 ---
 # <a name="usage-warnings"></a>Wykorzystanie — Ostrzeżenia 
 
@@ -75,5 +75,6 @@ Ostrzeżenia dotyczące użycia obsługują poprawne użycie platformy .NET.
 |[CA2244: Nie duplikuj inicjowania indeksowanych elementów](../code-quality/ca2244.md)|Inicjator obiektu ma więcej niż jeden indeks elementu indeksowanego z tym samym indeksem stałym. Wszystkie oprócz ostatniego inicjatora są nadmiarowe.|
 |[CA2245: Nie przypisuj właściwości do jej samej](../code-quality/ca2245.md)|Właściwość została przypadkowo przypisana do samej siebie.|
 |[CA2246: Nie przypisuj symbolu i jego składowej w tej samej instrukcji](../code-quality/ca2246.md)|Przypisanie symbolu i jego elementu członkowskiego, czyli pola lub właściwości, w tej samej instrukcji nie jest zalecane. Nie jest jasne, jeśli dostęp do elementu członkowskiego był przeznaczony do użycia starej wartości symbolu przed przypisaniem lub nową wartością z przypisania w tej instrukcji.|
-|[CA2247: argument przesłany do konstruktora TaskCompletionSource powinien być wyliczeniem opcji TaskCreationOptions zamiast TaskContinuationOptions](../code-quality/ca2246.md)|TaskCompletionSource ma konstruktory, które przyjmują opcji TaskCreationOptions, które kontrolują podstawowe zadanie, i konstruktorów, które przyjmują stan obiektu, który jest przechowywany w zadaniu.  Przypadkowe przekazanie TaskContinuationOptions zamiast opcji TaskCreationOptions spowoduje wywołanie opcji jako stanu.|
+|[CA2247: Argument przekazany do konstruktora TaskCompletionSource musi być wyliczeniem TaskCreationOptions, a nie wyliczeniem TaskContinuationOptions](../code-quality/ca2246.md)|TaskCompletionSource ma konstruktory, które przyjmują opcji TaskCreationOptions, które kontrolują podstawowe zadanie, i konstruktorów, które przyjmują stan obiektu, który jest przechowywany w zadaniu.  Przypadkowe przekazanie TaskContinuationOptions zamiast opcji TaskCreationOptions spowoduje wywołanie opcji jako stanu.|
 |[CA2248: Podaj poprawny argument "enum" dla elementu "enum. HasFlag"](../code-quality/ca2248.md)|Typ wyliczeniowy przesłany jako argument `HasFlag` wywołania metody różni się od typu wyliczeniowego wywołującego.|
+|[CA2249: Rozważ użycie ciągu. Contains zamiast String. IndexOf](../code-quality/ca2249.md)|Wywołania, do `string.IndexOf` których wynik służy do sprawdzania obecności lub braku podciągu, mogą zostać zastąpione przez `string.Contains` .|
