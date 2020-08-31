@@ -1,6 +1,6 @@
 ---
 title: Wyświetl numery wierszy dla kodu
-ms.date: 03/28/2019
+ms.date: 08/28/2020
 ms.topic: how-to
 helpviewer_keywords:
 - line numbers, displaying
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6e0c50ab41f3d18458c736e48b0a4360b8b286
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 02d26a452315f144e52a78d7fcea737d39052f59
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770360"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091476"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Instrukcje: wyświetlanie numerów wierszy w edytorze
 
@@ -32,9 +32,9 @@ Możesz wyświetlić lub ukryć numerowanie wierszy w kodzie.
 
    ![Opcja wyświetlania numerów wierszy w edytorze programu VS](../../ide/reference/media/line-numbers-option.png)
 
-> [!TIP]
-> Numery wierszy nie są dodawane do kodu; są one przeznaczone tylko do celów informacyjnych. Jeśli chcesz wydrukować numery wierszy, w oknie dialogowym **Drukowanie** zaznacz pole wyboru **Dołącz numery wierszy** .
+> [!NOTE]
+> Numery wierszy nie są dodawane do kodu; są one przeznaczone tylko do celów informacyjnych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

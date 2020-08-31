@@ -1,24 +1,24 @@
 ---
-title: Instalowanie analizatorów Roslyn
-ms.date: 08/03/2018
-ms.topic: how-to
+title: Zainstaluj analizatory innych firm
+ms.date: 08/27/2020
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce30dd25c43f1ac8254dbdb6b04b747a976f3557
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371758"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091454"
 ---
-# <a name="install-net-compiler-platform-code-analyzers"></a>Zainstaluj .NET Compiler Platform analizatorów kodu
+# <a name="install-third-party-analyzers"></a>Zainstaluj analizatory innych firm
 
 Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn*) analizatorów. Te analizatory są zawsze włączone. Możesz zainstalować dodatkowe analizatory jako pakiety NuGet lub jako rozszerzenia programu Visual Studio w plikach *VSIX* .
 
@@ -26,7 +26,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn
 
 1. Znajdź pakiet analizatora, który chcesz zainstalować w systemie www.nuget.org.
 
-   Na przykład może być konieczne [zainstalowanie analizatorów FxCop firmy Microsoft](install-fxcop-analyzers.md#nuget-package) w celu sprawdzenia kodu pod kątem problemów z zabezpieczeniami i wydajnością, między innymi. Lub zainstaluj [StyleCop. analizatory](https://www.nuget.org/packages/stylecop.analyzers/) , aby wyszukać problemy z stylem w bazie kodu.
+   Na przykład możesz chcieć zainstalować [StyleCop. analizatory](https://www.nuget.org/packages/stylecop.analyzers/) , aby wyszukać problemy z stylem w bazie kodu.
 
 2. Zainstaluj pakiet w programie Visual Studio przy użyciu [konsoli Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) lub [interfejsu użytkownika Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
@@ -63,7 +63,7 @@ Program Visual Studio zawiera podstawowe zestawy .NET Compiler Platform (*Roslyn
 
 3. W polu wyszukiwania wpisz nazwę rozszerzenia analizatora, które chcesz zainstalować. Na przykład może być konieczne [zainstalowanie analizatorów FxCop firmy Microsoft](install-fxcop-analyzers.md#vsix) w celu sprawdzenia kodu pod kątem problemów z zabezpieczeniami i wydajnością, między innymi.
 
-4. Wybierz przycisk **Download** (Pobierz).
+4. Wybierz pozycję **Pobierz**.
 
    Rozszerzenie jest pobierane.
 
