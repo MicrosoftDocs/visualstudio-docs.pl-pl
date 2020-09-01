@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893427"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219780"
 ---
 # <a name="use-code-analyzers"></a>Korzystanie z analizatorów kodu
 
@@ -67,7 +67,7 @@ W poniższej tabeli przedstawiono różne opcje ważności:
 | Info | `suggestion` | Naruszenia są wyświetlane jako *komunikaty* w Lista błędów, a nie w danych wyjściowych kompilacji wiersza polecenia. | Kod powodujący problemy jest podkreślony szarym i oznaczonym przez małe szare pole na pasku przewijania. |
 | Ukryty | `silent` | Niewidoczny dla użytkownika. | Niewidoczny dla użytkownika. Diagnostyka jest jednak raportowana w aparacie diagnostyki IDE. |
 | Brak | `none` | Całkowicie pomijane. | Całkowicie pomijane. |
-| Domyślny | `default` | Odnosi się do domyślnej wagi reguły. Aby określić, jaka jest wartość domyślna dla reguły, należy poszukać w okno Właściwości. | Odnosi się do domyślnej wagi reguły. |
+| Domyślne | `default` | Odnosi się do domyślnej wagi reguły. Aby określić, jaka jest wartość domyślna dla reguły, należy poszukać w okno Właściwości. | Odnosi się do domyślnej wagi reguły. |
 
 Poniższy zrzut ekranu edytora kodu pokazuje trzy różne naruszenia z różnymi serwerami. Zwróć uwagę na kolor zygzaka i małego, kolorowego kwadratu na pasku przewijania po prawej stronie.
 
@@ -102,6 +102,9 @@ Można ustawić ważność dla określonej kategorii reguł analizatora lub dla 
 - Ustaw ważność reguły dla wszystkich reguł analizatora:
 
 `dotnet_analyzer_diagnostic.severity = <severity>`
+
+> [!NOTE]
+> Wpisy do konfigurowania wielu reguł analizatora jednocześnie dotyczą tylko reguł, które są *domyślnie włączone*. Reguły analizatora, które są oznaczone jako wyłączone domyślnie w pakiecie analizatora, muszą być włączone za pomocą wpisów jawnych `dotnet_diagnostic.<rule ID>.severity = <severity>` .
 
 Jeśli masz wiele wpisów, które mają zastosowanie do określonego identyfikatora reguły, poniżej podano kolejność pierwszeństwa, aby wybrać odpowiedni wpis:
 

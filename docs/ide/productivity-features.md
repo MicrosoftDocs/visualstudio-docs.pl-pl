@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184084"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219767"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Przewodnik dotyczący produktywności dla programu Visual Studio
 
@@ -20,11 +20,11 @@ Jeśli chcesz zaoszczędzić czas podczas pisania kodu, jesteś w odpowiednim mi
 
 Aby uzyskać informacje na temat przydatnych skrótów klawiaturowych, zobacz [Skróty dotyczące produktywności](../ide/productivity-shortcuts.md). Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Wprowadzenie
 
 Oszczędź czas przeszukiwanie stosów za pomocą menu, szybko wyszukując potrzebne elementy, w tym polecenia, ustawienia, dokumentację i opcje instalacji. Zobacz skróty klawiaturowe dla poleceń znajdujących się w wynikach wyszukiwania w programie Visual Studio, dzięki czemu można je łatwo znają. 
 
-- **Symulacja kodu za pomocą listy zadań**. Jeśli nie masz wystarczającej ilości wymaganych do ukończenia fragmentu kodu, użyj Lista zadań do śledzenia komentarzy do kodu, które używają tokenów, takich jak `TODO` i `HACK` , lub tokenów niestandardowych, oraz do zarządzania skrótami, które przenoszą bezpośrednio do wstępnie zdefiniowanej lokalizacji w kodzie. Aby uzyskać więcej informacji, zobacz [Korzystanie z Lista zadań](../ide/using-the-task-list.md.).
+- **Symulacja kodu za pomocą listy zadań**. Jeśli nie masz wystarczającej ilości wymaganych do ukończenia fragmentu kodu, użyj Lista zadań do śledzenia komentarzy do kodu, które używają tokenów, takich jak `TODO` i `HACK` , lub tokenów niestandardowych, oraz do zarządzania skrótami, które przenoszą bezpośrednio do wstępnie zdefiniowanej lokalizacji w kodzie. Aby uzyskać więcej informacji, zobacz [Korzystanie z Lista zadań](../ide/using-the-task-list.md).
 
 - **Użyj Eksplorator rozwiązań skrótów**. Jeśli dopiero zaczynasz w programie Visual Studio, te skróty będą w pełni przydatne i zaoszczędzić czas podczas przygotowywania nowej bazy kodu. Aby zapoznać się z pełną listą skrótów, zobacz [domyślne skróty klawiaturowe w programie Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
 
@@ -60,7 +60,7 @@ Szybsze pisanie kodu przy użyciu następujących funkcji.
 
 - **Korzystaj z przykładowych aplikacji**. Można przyspieszyć tworzenie aplikacji, pobierając i instalując przykładowe aplikacje z [sieci Microsoft Developer Network](https://code.msdn.microsoft.com/). Możesz również poznać konkretną technikę lub koncepcję programowania, pobierając i eksplorowanie przykładowego pakietu dla tego obszaru.
 
-- **Zmień formatowanie nawiasów klamrowych z formatowaniem/nowym wierszem**. Strona Opcje **formatowania** służy do ustawiania opcji formatowania kodu w edytorze kodu, w tym nowych wierszy. Aby uzyskać więcej informacji na temat używania tego ustawienia w języku C#, zobacz [Opcje okno dialogowe: Edytor tekstu > C# > stylu kodu > formatowanie](../ide/reference/options-text-editor-csharp-formatting.md). W przypadku języka C++ zapoznaj się z tematem [Ustawianie preferencji kodowania języka C++ w programie Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). W przypadku języka Python zobacz [Formatowanie kodu](../python/formatting-python-code.md)w języku Python.
+- **Zmień formatowanie nawiasów klamrowych z formatowaniem/nowym wierszem**. Strona Opcje **formatowania**  służy do ustawiania opcji formatowania kodu w edytorze kodu, w tym nowych wierszy. Aby uzyskać więcej informacji na temat używania tego ustawienia w języku C#, zobacz [Opcje okno dialogowe: Edytor tekstu > C# > stylu kodu > formatowanie](../ide/reference/options-text-editor-csharp-formatting.md). W przypadku języka C++ zapoznaj się z tematem [Ustawianie preferencji kodowania języka C++ w programie Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). W przypadku języka Python zobacz [Formatowanie kodu](../python/formatting-python-code.md)w języku Python.
 
 - **Zmień wcięcie przy użyciu kart**. Użyj niestandardowych ustawień edytora, które są dostosowane do poszczególnych baz kodu, aby wymusić spójne style kodowania dla wielu deweloperów pracujących nad tym samym projektem w różnych edytorach i środowisk IDE. Upewnij się, że cały zespół jest zgodny z tymi samymi konwencjami językowymi, konwencjami nazewnictwa i regułami formatowania. Ponieważ te ustawienia niestandardowe są przenośne i podróżują z kodem, można wymusić style kodowania nawet poza programem Visual Studio. Aby uzyskać więcej informacji, zobacz [Opcje, Edytor tekstu, wszystkie języki, karty](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
 
@@ -112,7 +112,7 @@ Oprócz filtrowania zawartości okien narzędzi można przeszukiwać w środowis
 
    Naciśnij klawisz **Ctrl** + **Q** , aby przejść bezpośrednio do pola wyszukiwania.
 
-## <a name="debug-code"></a>Debuguj kod
+## <a name="debug-code"></a>Debugowanie kodu
 
 Debugowanie może zużywać dużo czasu, ale poniższe porady mogą pomóc przyspieszyć proces.
 
@@ -134,7 +134,7 @@ Debugowanie może zużywać dużo czasu, ale poniższe porady mogą pomóc przys
 
      Aby dodać etykietki danych, debuger musi być w trybie przerwania. Umieść kursor na zmiennej, a następnie wybierz przycisk Przypnij na wyświetlonej etykietki danych. Po zatrzymaniu debugowania w pliku źródłowym obok wiersza kodu, który zawiera zmienną, pojawia się niebieska ikona pinezki. Jeśli wskażesz niebieski numer PIN, zostanie wyświetlona wartość zmiennej z ostatniej sesji debugowania.
 
-- **Wyczyść okno bezpośrednie**. Możesz wymazać zawartość [okna bezpośredniego](../ide/reference/immediate-window.md) w czasie projektowania, wprowadzając `>cls` lub`>Edit.ClearAll`
+- **Wyczyść okno bezpośrednie**. Możesz wymazać zawartość [okna bezpośredniego](../ide/reference/immediate-window.md) w czasie projektowania, wprowadzając `>cls` lub `>Edit.ClearAll`
 
      Aby uzyskać więcej informacji na temat dodatkowych poleceń, zobacz [Visual Studio — Aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
 
@@ -176,7 +176,7 @@ W dowolnym momencie możesz pracować w wielu plikach kodu i poruszać się po k
 
 - **Dostosuj czcionki, które pojawiają się w programie Visual Studio**. Można zmienić krój, rozmiar i kolor czcionki używany dla tekstu w IDE. Na przykład można dostosować kolor określonych elementów kodu w edytorze i krój czcionki w oknach narzędzi lub w środowisku IDE. Aby uzyskać więcej informacji, zobacz [How to: Change Fonts and Colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) i [How to: Change Fonts and Colors in the Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio — porady i wskazówki dotyczące wpisu w blogu](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Domyślne skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
