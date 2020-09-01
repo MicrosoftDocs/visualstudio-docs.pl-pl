@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5502989e3866cb28d05e36d4c88e38574e5987c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587605"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219676"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Zestaw reguł globalizacji dla zarządzanego kodu
 
@@ -28,7 +28,8 @@ Zestaw reguł globalizacji firmy Microsoft umożliwia skoncentrowanie się na pr
 |[CA1304](../code-quality/ca1304.md)|Określ argument CultureInfo|
 |[CA1305](../code-quality/ca1305.md)|Określ argument IFormatProvider|
 |[CA1306](../code-quality/ca1306.md)|Ustaw ustawienia regionalne dla typów danych|
-|[CA1307](../code-quality/ca1307.md)|Określ argument StringComparison|
+|[CA1307](../code-quality/ca1307.md)|Określ StringComparison dla jasności|
 |[CA1308](../code-quality/ca1308.md)|Normalizuj ciągi do postaci zapisanej wielkimi literami|
 |[CA1309](../code-quality/ca1309.md)|Użyj porządkowego ustawienia właściwości StringComparison|
+|[CA1310](../code-quality/ca1310.md)|Określ StringComparison dla poprawności|
 |[CA2101](../code-quality/ca2101.md)|Określ kierowanie dla argumentów ciągu P/Invoke|
