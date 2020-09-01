@@ -8,12 +8,12 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8012eb02d143a741cb7eea70c45cabc4ee92002
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: c583d67e1920080f11158a4001e191e93e234006
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114300"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284407"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>MoreInfoURL — element (schemat pakietu językowego VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,40 +51,14 @@ Opcjonalny. Link do zlokalizowanych informacji o rozszerzeniu.
  Opcjonalny. Link do witryny sieci Web. Łącze jest ciągiem tekstowym.  
   
 ## <a name="element-information"></a>Informacje o elementach  
-
-:::row:::
-    :::column:::
-        Przestrzeń nazw
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Nazwa schematu
-    :::column-end:::
-    :::column:::
-        Schemat pakietu Language Pack VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Plik walidacji
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Może być puste
-    :::column-end:::
-    :::column:::
-        Nie dotyczy
-    :::column-end:::
-:::row-end:::
-
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Przestrzeń nazw    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nazwa schematu   |                 Schemat pakietu Language Pack VSIX                 |
+| Plik walidacji |                VSIXLanguagePackSchema. xsd                 |
+|  Może być puste   |                      Nie dotyczy                       |
+  
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja schematu pakietu języka VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)   

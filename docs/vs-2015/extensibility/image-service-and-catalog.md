@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7b351e9f4983f5a2497406f7ca49503254d9fb71
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114127"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284372"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalog obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
 |Importuj|Importuje symbole danego pliku manifestu do użycia w bieżącym manifeście|  
 |Guid (identyfikator GUID)|Symbol reprezentuje identyfikator GUID i musi pasować do formatowania identyfikatora GUID|  
 |ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą|  
-|Ciąg|Symbol reprezentuje arbitralną wartość ciągu|  
+|String|Symbol reprezentuje arbitralną wartość ciągu|  
 
  W symbolach jest rozróżniana wielkość liter i istnieje odwołanie do niej przy użyciu składni $ (symbol-nazwa):  
 
@@ -157,10 +157,12 @@ Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania u
  </Source>  
 ```  
 
-|**Atrybut**|**Definicja**|  
-|-|-|  
-| Adresu | Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może być jedną z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) przy użyciu urzędu Application:///<br />-Bezwzględne odwołanie do zasobu składnika<br />-Ścieżka do pliku zawierającego zasób natywny |
-| Tło  | Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> <em>Ciemny:</em> Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight*lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Atrybut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definicja**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|      Adresu      |                                                                                                                                                                                                                                                                                                               Potrzeb Identyfikator URI, który definiuje miejsce, z którego można załadować obraz. Może być jedną z następujących czynności:<br /><br /> - [Identyfikator URI pakietu](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) przy użyciu urzędu Application:///<br />-Bezwzględne odwołanie do zasobu składnika<br />-Ścieżka do pliku zawierającego zasób natywny                                                                                                                                                                                                                                                                                                               |
+|  Tło   | Obowiązkowe Wskazuje, jaki rodzaj tła ma być używany.<br /><br /> Może być jedną z następujących czynności:<br /><br /> *Jasne:* Źródło może być używane na jasnym tle.<br /><br /> <em>Ciemny:</em> Źródło może być używane w ciemnym tle.<br /><br /> *HighContrast:* Źródło może być używane na dowolnym tle w trybie duży kontrast.<br /><br /> *HighContrastLight:* Źródło może być używane na jasnym tle w trybie duży kontrast.<br /><br /> *HighContrastDark:* Źródło może być używane na ciemnym tle w trybie duży kontrast.<br /><br /> Jeśli atrybut Background zostanie pominięty, źródło może być używane w dowolnym tle.<br /><br /> Jeśli tło jest *jasne*, *ciemne*, *HighContrastLight*lub *HighContrastDark*, kolory źródła nigdy nie są odwracane. Jeśli tło zostanie pominięte lub ustawiona na *HighContrast*, inwersja kolorów źródła jest kontrolowana przez atrybut **AllowColorInversion** obrazu. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  \<Source>Element może mieć dokładnie jeden z następujących opcjonalnych podelementów:  
 
@@ -569,7 +571,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Zamień identyfikator GUID każdego z **ContainedImage**na $ (ImageCatalogGuid), Zastąp każdy identyfikator **ContainedImage**z $ ( \<moniker> ) i Dodaj atrybut External = "true" do każdego **ContainedImage**  
 
-       - \<moniker>należy zastąpić **KnownMoniker** , który pasuje do obrazu, ale z "KnownMonikers". usunięte z nazwy.  
+       - \<moniker> należy zastąpić **KnownMoniker** , który pasuje do obrazu, ale z "KnownMonikers". usunięte z nazwy.  
 
    - Dodaj <zaimportować manifest = "$ (ManifestFolder) \\<względna ścieżka katalogu instalacji do \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \> w górnej części \<Symbols> sekcji.  
 
@@ -643,7 +645,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="testing-your-images"></a>Testowanie obrazów  
  Możesz użyć narzędzia Podgląd biblioteki obrazów do testowania manifestów obrazów, aby upewnić się, że wszystko jest poprawnie utworzone. Narzędzie można znaleźć w [zestawie SDK programu Visual Studio 2015](visual-studio-sdk.md). Dokumentacja tego narzędzia i innych można znaleźć [tutaj](internals/vssdk-utilities.md).  
 
-## <a name="additional-resources"></a>Zasoby dodatkowe  
+## <a name="additional-resources"></a>Dodatkowe zasoby  
 
 ### <a name="samples"></a>Samples  
  Niektóre przykłady programu Visual Studio w witrynie GitHub zostały zaktualizowane, aby pokazać, jak korzystać z usługi Image Service jako części różnych punktów rozszerzalności programu Visual Studio.  

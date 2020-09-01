@@ -8,12 +8,12 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91f0792f64e09292836a3b2d60f669c67903b3a7
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114183"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284385"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>License — element (schemat pakietu Language Pack VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,39 +54,13 @@ Opcjonalny. Ścieżka zlokalizowanej wersji pliku licencji dla rozszerzenia.
  Jeśli `License` element jest zdefiniowany, tekst wyznaczonych licencji zostanie wyświetlony podczas instalacji, a użytkownik musi zaakceptować licencję, aby kontynuować.  
   
 ## <a name="element-information"></a>Informacje o elementach  
-
-:::row:::
-    :::column:::
-        Przestrzeń nazw  
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Nazwa schematu
-    :::column-end:::
-    :::column:::
-        Schemat pakietu Language Pack VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Plik walidacji
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Może być puste
-    :::column-end:::
-    :::column:::
-        Nie dotyczy
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Przestrzeń nazw    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nazwa schematu   |                 Schemat pakietu Language Pack VSIX                 |
+| Plik walidacji |                VSIXLanguagePackSchema. xsd                 |
+|  Może być puste   |                      Nie dotyczy                       |
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja schematu pakietu języka VSX](../extensibility/vsx-language-pack-schema-reference.md)   

@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af70b191e4b9061d08acdc7f76ade843dee41709
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114128"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284419"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interakcje okna
+## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interakcje okna
 
 ### <a name="overview"></a>Omówienie
  Dwa typy główne okna używane w programie Visual Studio to edytory dokumentów i okna narzędzi. Rzadkimi, ale możliwymi, są duże Niemodalne okna dialogowe. Chociaż są one całkowicie niemodalne w powłoce, ich wzorce są zasadniczo różne. W tym temacie omówiono różnice między oknami dokumentów, narzędziami i niemodalnymi oknach dialogowych. Wzorce dialogu modalnego są omówione w [oknach dialogowych](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -40,7 +40,7 @@ ms.locfileid: "88114128"
 |**Wystąpienia**|*Wiele wystąpień*<br /><br /> Kilka edytorów może być otwartych w tym samym czasie i edytować różne pliki, podczas gdy niektóre edytory umożliwiają również otwieranie tego samego pliku w więcej niż jednym edytorze (przy użyciu **okna > nowe okno** polecenia).<br /><br /> Jeden edytor może edytować jeden lub wiele plików jednocześnie (Projektant projektu).|*Pojedyncze lub wiele wystąpień*<br /><br /> Zawartość zmienia się w celu odzwierciedlenia kontekstu (jak w przeglądarce właściwości) lub wypychanie fokusu/kontekstu do innych okien (Lista zadań, Eksplorator rozwiązań).<br /><br /> Zarówno jedno wystąpienie, jak i wiele wystąpień systemu Windows powinno być skojarzone z oknem aktywnego dokumentu, chyba że istnieje uzasadniony powód, aby nie.|*Pojedyncze wystąpienie*|
 |**Przykłady**|**Edytory tekstu**, takie jak edytor kodu<br /><br /> **Powierzchnie projektowe**, takie jak Projektant formularzy lub powierzchnia modelowania<br /><br /> **Układy formantów podobne do okien dialogowych**, takich jak projektant manifestu|**Eksplorator rozwiązań** zawiera rozwiązanie i projekty zawarte w rozwiązaniu<br /><br /> **Eksplorator serwera** zawiera hierarchiczny widok serwerów i połączeń danych, które użytkownik zdecyduje otworzyć w oknie. Otwierając obiekt z hierarchii bazy danych, na przykład zapytania, otwiera okno dokumentu i zezwala użytkownikowi na edytowanie zapytania.<br /><br /> **Przeglądarka właściwości** wyświetla właściwości obiektu wybranego w oknie dokumentu lub w innym oknie narzędzi. Właściwości są prezentowane w hierarchicznym widoku siatki lub w złożonych kontrolkach, takich jak kontrolki podobne do okna dialogowego i umożliwiają użytkownikowi ustawianie wartości tych właściwości.||
 
-## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a>Okna narzędzi
+## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Okna narzędzi
 
 ### <a name="overview"></a>Omówienie
  Okna narzędzi obsługują działania użytkownika, które są wykonywane w oknach dokumentów. Mogą one służyć do wyświetlania hierarchii reprezentującej podstawowy obiekt główny, który program Visual Studio udostępnia i może manipulować.
@@ -131,7 +131,7 @@ ms.locfileid: "88114128"
 |**Debuger:** Grupa systemu Windows specyficzna dla zadań debugowania i działań monitorowania|Liczby||
 |**Debuger:** Grupa systemu Windows specyficzna dla zadań debugowania i działań monitorowania|Wątki||
 
-## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a>Konwencje edytora dokumentów
+## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a> Konwencje edytora dokumentów
 
 ### <a name="document-interactions"></a>Interakcje dokumentów
  "Źródło dokumentu" to największe miejsce w środowisku IDE i polega na tym, że użytkownik ma ogólnie ustawioną uwagę na realizację swoich zadań, wspomagany przez uzupełniające okna narzędzi. Edytory dokumentów reprezentują podstawowe jednostki pracy, które użytkownik otwiera i zapisuje w programie Visual Studio. Zachowują one silny wybór związany z Eksplorator rozwiązańami lub innymi aktywnymi oknami hierarchii. Użytkownik powinien mieć możliwość wskazywania na jednym z tych okien hierarchii i dowiedzieć się, gdzie znajduje się dokument, oraz jego relacji z rozwiązaniem, projektem lub innym obiektem głównym dostarczanym przez pakiet programu Visual Studio.
@@ -239,7 +239,7 @@ ms.locfileid: "88114128"
 
 - Użytkownicy muszą być w stanie korzystać z formantów tylko przy użyciu klawiatury, aktywując Edytor i przechodząc do karty za pośrednictwem formantów lub używając standardowych symboli.
 
-## <a name="dialogs"></a><a name="BKMK_Dialogs"></a>Oknach dialogowych
+## <a name="dialogs"></a><a name="BKMK_Dialogs"></a> Oknach dialogowych
 
 ### <a name="introduction"></a>Wprowadzenie
  Okna dialogowe w programie Visual Studio zwykle obsługują jedną dyskretną jednostkę pracy użytkownika, a następnie są odrzucane.
@@ -295,14 +295,14 @@ ms.locfileid: "88114128"
 
 - [Kreatory](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) są przydatne do kierowania użytkownika za pośrednictwem logicznej sekwencji kroków w kierunku ukończenia zadania. Serie wyborów są oferowane w kolejnych panelach, czasami wprowadzając różne przepływy pracy ("gałęzie") zależnie od wyboru dokonanego w poprzednim panelu.
 
-#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a>Proste okna dialogowe
+#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a> Proste okna dialogowe
  Proste okno dialogowe jest prezentacją formantów w jednym modalnym oknie. Ta prezentacja może obejmować wahania wzorców kontrolek złożonych, takich jak selektor pól. W przypadku prostych okien dialogowych postępuj zgodnie ze standardowym układem ogólnym, a także dowolnym określonym układem wymaganym dla złożonych grup formantów.
 
  ![Proste okno dialogowe w programie Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704 — 01_CreateStrongNameKey")
 
  **Tworzenie klucza silnej nazwy jest przykładem prostego okna dialogowego w programie Visual Studio.**
 
-#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a>Okna dialogowe z warstwami
+#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a> Okna dialogowe z warstwami
  Okna dialogowe z warstwami obejmują karty, pulpity nawigacyjne i osadzone drzewa. Są one używane do maksymalizowania nieruchomości, gdy istnieje wiele grup kontrolek oferowanych w pojedynczym interfejsie użytkownika. Grupowanie odbywa się w warstwach, dzięki czemu użytkownik może wybrać grupowanie, które ma być widoczne w dowolnym momencie.
 
  W najbardziej prostym przypadku mechanizm przełączania między grupami jest formantem tabulacji. Dostępne są różne alternatywy. Zobacz ustalanie priorytetów i warstwowe, aby wybrać najbardziej odpowiedni styl.
@@ -313,7 +313,7 @@ ms.locfileid: "88114128"
 
  **Narzędzia > opcje są przykładem okna dialogowego z warstwą w programie Visual Studio.**
 
-#### <a name="wizards"></a><a name="BKMK_Wizards"></a>Kreatorów
+#### <a name="wizards"></a><a name="BKMK_Wizards"></a> Kreatorów
  Kreatory są przydatne do kierowania użytkownika za pośrednictwem logicznej sekwencji kroków w celu wykonania zadania. Seria opcji jest oferowana w kolejnych panelach, a użytkownik musi przejść przez każdy krok przed przejściem do następnego. Gdy dostępne są wystarczające wartości domyślne, przycisk **Zakończ** jest włączony.
 
  Kreatory modalne są używane do zadań, które:
@@ -394,7 +394,7 @@ ms.locfileid: "88114128"
 #### <a name="imagery"></a>Obrazach
  Oszczędne używanie obrazów w oknach dialogowych. Nie używaj dużych ikon w oknach dialogowych tylko do wykorzystania miejsca. Używaj obrazów tylko wtedy, gdy są ważną częścią przekazywania wiadomości do użytkownika, takich jak ikony ostrzeżeń lub animacje stanu.
 
-### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a>Ustalanie priorytetów i warstwowe
+### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a> Ustalanie priorytetów i warstwowe
 
 #### <a name="prioritizing-your-ui"></a>Określanie priorytetów interfejsu użytkownika
  Może być konieczne przekazanie pewnych elementów interfejsu użytkownika do programu Forefront i umieszczenie bardziej zaawansowanych zachowań i opcji (w tym przesłanianie poleceń) do okien dialogowych. Przenosząc powszechnie używane funkcje do programu Forefront, tworząc w ten sposób pomieszczenie, i przez udostępnienie go domyślnie w interfejsie użytkownika z etykietą tekstową, gdy okno dialogowe jest wyświetlane.
@@ -425,7 +425,7 @@ ms.locfileid: "88114128"
 ##### <a name="adaptive-ui"></a>Adaptacyjny interfejs użytkownika
  Wyświetlanie lub ukrywanie interfejsu użytkownika w oparciu o użycie lub samodzielne środowisko użytkownika jest innym sposobem przedprezentowania niezbędnego interfejsu użytkownika podczas ukrywania innych części. Nie jest to zalecane w programie Visual Studio jako algorytmy podejmowania decyzji o tym, kiedy pokazać lub ukryć interfejs użytkownika może być kłopotliwy, a reguły będą zawsze błędne dla niektórych zestawów przypadków.
 
-## <a name="projects"></a><a name="BKMK_Projects"></a>Projektami
+## <a name="projects"></a><a name="BKMK_Projects"></a> Projektami
 
 ### <a name="projects-in-the-solution-explorer"></a>Projekty w Eksplorator rozwiązań
  Większość projektów jest klasyfikowana jako oparty na odwołaniach, opartych na katalogach lub mieszanych. Wszystkie trzy typy projektów są obsługiwane jednocześnie w Eksplorator rozwiązań. Katalog główny środowiska użytkownika w pracy z projektami odbywa się w tym oknie. Chociaż różne węzły projektu są projektami referencyjnymi, katalogowymi lub w trybie mieszanym, istnieje typowy wzorzec interakcji, który powinien zostać zastosowany jako punkt wyjścia przed rozbieżnością wzorców użytkownika specyficznych dla projektu.
@@ -491,7 +491,7 @@ ms.locfileid: "88114128"
 #### <a name="reference-based-projects"></a>Projekty oparte na odwołaniach
  Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (jak również Wycinanie/kopiowanie/wklejanie), które powinny być wykonywane na podstawie rodzaju elementu źródłowego i klawiszy modyfikujących naciśniętych dla projektów docelowych opartych na odwołaniach:
 
-|Modyfikator|Operacja|Element źródłowy: odwołanie/łącze|Element źródłowy: fizyczny element lub system plików (CF_HDROP)|
+|||Element źródłowy: odwołanie/łącze|Element źródłowy: fizyczny element lub system plików (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Brak modyfikatora|Akcja|Move|Łącze|
 |Brak modyfikatora|Cel|Dodaje odwołanie do oryginalnego elementu|Dodaje odwołanie do oryginalnego elementu|
@@ -522,7 +522,7 @@ ms.locfileid: "88114128"
 #### <a name="directory-based-projects"></a>Projekty oparte na katalogu
  Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (jak również Wycinanie/kopiowanie/wklejanie), które powinny być wykonywane na podstawie rodzaju elementu źródłowego i klawiszy modyfikujących naciśniętych dla projektów docelowych opartych na katalogu:
 
-|Modyfikator|Operacja|Element źródłowy: odwołanie/łącze|Element źródłowy: fizyczny element lub system plików (CF_HDROP)|
+|||Element źródłowy: odwołanie/łącze|Element źródłowy: fizyczny element lub system plików (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Brak modyfikatora|Akcja|Move|Move|
 |Brak modyfikatora|Cel|Kopiuje element do lokalizacji docelowej|Kopiuje element do lokalizacji docelowej|
@@ -549,7 +549,7 @@ ms.locfileid: "88114128"
 #### <a name="mixed-target-projects"></a>Projekty mieszane dla obiektów docelowych
  Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (jak również Wycinanie/kopiowanie/wklejanie), które powinny być wykonywane na podstawie rodzaju elementu źródłowego i klawiszy modyfikujących naciśniętych dla projektów mieszanych:
 
-|Modyfikator|Operacja|Element źródłowy: odwołanie/łącze|Element źródłowy: fizyczny element lub system plików (CF_HDROP)|
+|||Element źródłowy: odwołanie/łącze|Element źródłowy: fizyczny element lub system plików (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Brak modyfikatora|Akcja|Move|Move|
 |Brak modyfikatora|Cel|Dodaje odwołanie do oryginalnego elementu|Kopiuje element do lokalizacji docelowej|

@@ -14,23 +14,23 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7a97068b70a76dfe343de5fa68db77d2ce9781
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111309"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284320"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 
-Użyj **strony Kompilacja** projektanta projektu, aby określić instrukcje kompilacji. Można również określić opcje zaawansowanego kompilatora i zdarzenia przed kompilacją lub po kompilacji na tej stronie.
+Użyj strony **kompilacja** projektanta projektu, aby określić instrukcje kompilacji. Na tej stronie można także określić zaawansowane opcje kompilatora oraz zdarzenia przed kompilacją lub po kompilacji.
 
-Aby uzyskać dostęp do strony **Kompilacja,** wybierz węzeł projektu (a nie węzeł **Rozwiązanie)** w **Eksploratorze rozwiązań**. Następnie wybierz polecenie **Projekt**, **Właściwości** na pasku menu. Po wyświetleniu projektanta projektu kliknij kartę **Kompilacja.**
+Aby uzyskać dostęp do strony **kompilowania** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz **projekt**, **Właściwości** na pasku menu. Gdy pojawi się Projektant projektu, kliknij kartę **kompilacja** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -39,156 +39,156 @@ Aby uzyskać dostęp do strony **Kompilacja,** wybierz węzeł projektu (a nie w
 Poniższe ustawienia umożliwiają wybranie konfiguracji i platformy do wyświetlenia lub zmodyfikowania.
 
 > [!NOTE]
-> W uproszczonych konfiguracjach kompilacji system projektu określa, czy chcesz utworzyć wersję debugowania lub wersji. W związku z tym **konfiguracja** i **platformy** listy nie są wyświetlane.
+> W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. W związku z tym listy **konfiguracji** i **platformy** nie są wyświetlane.
 
 **Konfiguracja**
 
-Określa ustawienia konfiguracji, które mają być wyświetlane lub modyfikowane. Ustawienia to **Debug** (domyślnie), **Zwolnij**lub **Wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [Opis konfiguracji kompilacji](../../ide/understanding-build-configurations.md) i [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).
+Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowane** (ustawienie domyślne), **wydanie**lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [Opis konfiguracji kompilacji](../../ide/understanding-build-configurations.md) i [instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).
 
 **Platforma**
 
-Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny procesor** (domyślny), **x64**lub **x86**.
+Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny procesor** (wartość domyślna), **x64**lub **x86**.
 
 ## <a name="compiler-configuration-options"></a>Opcje konfiguracji kompilatora
 
 Poniższe ustawienia umożliwiają ustawienie opcji konfiguracji kompilatora.
 
-**Tworzenie ścieżki wyjściowej**
+**Ścieżka wyjściowa kompilacji**
 
-Określa lokalizację plików wyjściowych dla konfiguracji tego projektu. Wpisz ścieżkę danych wyjściowych kompilacji w tym polu lub kliknij przycisk **Przeglądaj,** aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie on zapisany jako względny. Domyślną ścieżką jest bin\Debug\\\lub bin\Release .
+Określa lokalizację plików wyjściowych dla konfiguracji projektu. W tym polu wpisz ścieżkę do danych wyjściowych kompilacji lub kliknij przycisk **Przeglądaj** , aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug\ lub bin\Release \\ .
 
-W uproszczonych konfiguracjach kompilacji system projektu określa, czy chcesz utworzyć wersję debugowania lub wersji. Polecenie **Kompilacja** z menu **Debugowanie** (F5) umieści kompilację w lokalizacji debugowania, niezależnie od określonej **ścieżki wyjściowej.** Jednak **build** polecenia z **build** menu umieszcza go w lokalizacji, którą określisz.
+W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Polecenie **Build** z menu **Debuguj** (F5) umieści kompilację w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Build** z menu **kompilacja** umieszcza je w określonej lokalizacji.
 
-**Opcja jawna**
+**Opcja Explicit**
 
-Określa, czy zezwolić na niejawną deklarację zmiennych. Wybierz **włącz,** aby wymagać jawnej deklaracji zmiennych. Powoduje to, że kompilator do raportowania błędów, jeśli zmienne nie są zadeklarowane przed ich użyciem. Wybierz **opcję Wyłączone,** aby zezwolić na niejawną deklarację zmiennych.
+Określa, czy zezwalać na niejawną deklarację zmiennych. Wybierz opcję **Włącz** , aby wymagać jawnej deklaracji zmiennych. Powoduje to, że kompilator zgłasza błędy, jeśli zmienne nie są zadeklarowane przed użyciem. Wybierz pozycję **wyłączone** , aby zezwolić na niejawną deklarację zmiennych.
 
-To ustawienie odpowiada opcji kompilatora [/optionexplicit.](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit)
+To ustawienie odpowiada opcji kompilatora [/optionexplicit —](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit) .
 
-Jeśli plik kodu źródłowego zawiera oświadczenie `On` `Off` [option explicit](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)statement, lub wartość w instrukcji zastępuje ustawienie **Jawne opcji** na stronie **Kompilacja**.
+Jeśli plik kodu źródłowego zawiera [instrukcję Option Explicit](/dotnet/visual-basic/language-reference/statements/option-explicit-statement), `On` `Off` wartość lub w instrukcji przesłania ustawienie **opcji jawnej** na **stronie kompilowania**.
 
-Podczas tworzenia nowego projektu ustawienie **Jawne opcje** na **stronie Kompilacja** jest ustawione na wartość ustawienia **Jawne opcje** w oknie dialogowym **Opcje.** Aby wyświetlić lub zmienić ustawienie w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń pozycję **Projekty i rozwiązania**, a następnie kliknij pozycję **Domyślne ustawienia VB**. Początkowe ustawienie domyślne **opcji Jawne** w **ustawieniach domyślnych VB** to **Wł.**
+Podczas tworzenia nowego projektu **opcja ustawienie jawne** na **stronie kompilowania** jest ustawiana na wartość ustawienie **opcji jawne** w oknie dialogowym **Opcje** . Aby wyświetlić lub zmienić ustawienia w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ustawienia domyślne w języku VB**. Początkowe domyślne ustawienie **opcji Explicit** w **ustawieniach domyślnych języka vb** jest **włączone**.
 
-Opcja **ustawiania Jawne** dla `Off` zazwyczaj nie jest dobrą praktyką. Można błędnie nazwa zmiennej w jednej lub kilku lokalizacjach, co może spowodować nieoczekiwane wyniki po uruchomieniu programu.
+Ustawienie **opcji Explicit** `Off` to generalnie nie jest dobrym rozwiązaniem. W co najmniej jednej lokalizacji można wypróbować nazwę zmiennej, co spowodowałoby nieoczekiwane wyniki, gdy program zostanie uruchomiony.
 
-**Opcja ścisła**
+**Option Strict**
 
-Określa, czy semantyka typu ścisłego ma być wymuszana. Gdy **opcja Strict** jest **wł.,** następujące warunki powodują błąd w czasie kompilacji:
+Określa, czy należy wymusić semantykę typu Strict. Gdy **opcja Strict** jest **włączona**, następujące warunki powodują błąd w czasie kompilacji:
 
 - Niejawne konwersje zawężające
 
 - Późne wiązanie
 
-- Niejawne wpisywanie, które powoduje `Object` typ
+- Niejawne wpisanie, które powoduje wystąpienie `Object` typu
 
-Niejawne błędy konwersji zawężenia występują, gdy istnieje niejawna konwersja typu danych, która jest konwersją zawężającą. Aby uzyskać więcej informacji, zobacz [Opcja Ścisłe oświadczenie](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Konwersje niejawne i jawne](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)oraz [Konwersje rozszerzające i zawężające](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
+Niejawne Zawężanie błędów konwersji występuje, gdy istnieje niejawna konwersja typu danych, która jest konwersją zawęża. Aby uzyskać więcej informacji, zobacz [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [niejawne i jawne konwersje](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)oraz [rozszerzanie i zwężanie konwersji](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
 
-Obiekt jest późno związany, gdy jest przypisany do właściwości lub metody zmiennej, która jest zadeklarowana jako typu `Object`. Aby uzyskać więcej informacji, zobacz [Opcja Ścisłe oświadczenie](/dotnet/visual-basic/language-reference/statements/option-strict-statement) oraz [Wczesne i Późne powiązanie](/dotnet/visual-basic/programming-guide/language-features/early-late-binding).
+Obiekt jest późnie powiązany, gdy jest przypisany do właściwości lub metody zmiennej, która jest zadeklarowana jako typu `Object` . Aby uzyskać więcej informacji, zobacz [Option stricted](/dotnet/visual-basic/language-reference/statements/option-strict-statement) i [wczesne i późne wiązanie](/dotnet/visual-basic/programming-guide/language-features/early-late-binding).
 
-Błędy typu obiektu niejawnego występują, gdy nie można wywnioskować odpowiedniego typu dla zadeklarowanej zmiennej, `Object` więc typ jest wywnioskowany. Dzieje się tak przede `Dim` wszystkim, gdy używasz `As` instrukcji do `Option Infer` deklarowania zmiennej bez użycia klauzuli i jest wyłączona. Aby uzyskać więcej informacji, zobacz [Instrukcja ścisła opcji,](/dotnet/visual-basic/language-reference/statements/option-strict-statement) [Instrukcja wywnioskowania opcji](/dotnet/visual-basic/language-reference/statements/option-infer-statement)i [Specyfikacja języka Visual Basic](/dotnet/visual-basic/reference/language-specification).
+Niejawne błędy typu obiektu występują, gdy odpowiedni typ nie może zostać wywnioskowany dla zadeklarowanej zmiennej, więc typ `Object` jest wywnioskowany. Dzieje się tak głównie w przypadku używania `Dim` instrukcji w celu deklarowania zmiennej bez użycia `As` klauzuli i `Option Infer` jest wyłączona. Aby uzyskać więcej informacji, zobacz temat [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Wniosking](/dotnet/visual-basic/language-reference/statements/option-infer-statement)i [Specyfikacja języka Visual Basic](/dotnet/visual-basic/reference/language-specification).
 
-Ustawienie **Ścisłe opcje** odpowiada opcji kompilatora [/optionstrict.](/dotnet/visual-basic/reference/command-line-compiler/optionstrict)
+Ustawienie **opcji Strict** odpowiada opcji kompilatora [/optionstrict —](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) .
 
-Jeśli plik kodu źródłowego zawiera [instrukcję Option Strict Statement,](/dotnet/visual-basic/language-reference/statements/option-strict-statement) `On` lub `Off` wartość w instrukcji zastępuje ustawienie **Option Strict** na stronie **Kompilacja**.
+Jeśli plik kodu źródłowego zawiera [instrukcję Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement), `On` `Off` wartość lub w instrukcji zastępuje ustawienie **Option Strict** na **stronie kompilowania**.
 
-Podczas tworzenia projektu ustawienie **Ścisłe opcje** na **stronie Kompilacja** jest ustawione na wartość ustawienia **Option Strict** w oknie dialogowym **Opcje.** Aby wyświetlić lub zmienić ustawienie w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń pozycję **Projekty i rozwiązania**, a następnie kliknij pozycję **Domyślne ustawienia VB**. Początkowe ustawienie domyślne **opcji Ścisłe** w **ustawieniach domyślnych VB** jest **wyłączone**.
+Podczas tworzenia projektu ustawienie **opcji Strict** na **stronie kompilowania** jest ustawione na wartość ustawienia **Strict** w oknie dialogowym **Opcje** . Aby wyświetlić lub zmienić ustawienia w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ustawienia domyślne w języku VB**. Początkowe domyślne ustawienie **opcji Strict** w **ustawieniach domyślnych w języku VB** jest **wyłączone**.
 
-**Opcja Ścisłe ostrzeżenia indywidualne**
+**Opcja rygorystycznych indywidualnych ostrzeżeń**
 
-**Ostrzeżenie konfiguracje** sekcji **compile strony** ma ustawienia, które odpowiadają trzy warunki, które `Option Strict` powodują błąd w czasie kompilacji, gdy jest włączony. Poniżej przedstawiono następujące ustawienia:
+Sekcja **konfiguracje ostrzeżeń** **strony kompilowania** zawiera ustawienia, które odpowiadają trzem warunkom, które powodują wystąpienie błędu kompilacji, gdy `Option Strict` jest włączony. Poniżej przedstawiono następujące ustawienia:
 
-- **Konwersja niejawna**
+- **Niejawna konwersja**
 
-- **Późne wiązanie; połączenie może zakończyć się niepowodzeniem w czasie wykonywania**
+- **Późne wiązanie; Wywołanie może zakończyć się niepowodzeniem w czasie wykonywania**
 
-- **Typ niejawny; zakładany obiekt**
+- **Niejawny typ; przyjęto obiekt**
 
-Po ustawieniu **opcji Ścisła** **na Wł.,** wszystkie trzy z tych ustawień konfiguracji ostrzeżenia są ustawione na **Błąd**. Po ustawieniu **opcji Ścisła** na **Wyłączona**wszystkie trzy ustawienia są ustawione na **Brak**.
+Jeśli ustawisz **opcję Strict** to **on**, wszystkie trzy z tych ustawień konfiguracyjnych ostrzeżeń mają ustawioną wartość **błąd**. Ustawienie **opcji Strict** to **off**powoduje, że wszystkie trzy ustawienia mają wartość **none**.
 
-Można indywidualnie zmienić każde ustawienie konfiguracji ostrzeżenia na **Brak,** **Ostrzeżenie**lub **Błąd**. Jeśli wszystkie trzy ustawienia konfiguracji ostrzeżenia `On` są `Option strict` ustawione na **Błąd,** pojawi się w polu. Jeśli wszystkie trzy są `Off` ustawione na **Brak,** pojawi się w tym polu. Dla dowolnej innej kombinacji tych ustawień pojawia się **(niestandardowe).**
+Można indywidualnie zmienić każde ustawienie konfiguracji ostrzegawczej na **none**, **Warning**lub **Error**. Jeśli wszystkie trzy ustawienia konfiguracji ostrzeżeń mają ustawioną wartość **błąd**, `On` pojawi się w `Option strict` polu. Jeśli wszystkie trzy z nich są ustawione na **Brak**, `Off` pojawia się w tym polu. Dla każdej innej kombinacji tych ustawień pojawia się **(niestandardowe)** .
 
-**Porównanie opcji**
+**Opcja Porównaj**
 
-Określa typ porównania ciągów do użycia. Wybierz **opcję Binarny,** aby poinstruować kompilatora, aby używał binarnych porównań ciągów z uwzględnieniem wielkości liter. Wybierz **opcję Tekst,** aby użyć porównań ciągów tekstowych specyficznych dla ustawień regionalnych, niewrażliwych na rozmiary.
+Określa typ porównywania ciągów, który ma być używany. Wybierz pozycję **Binary** , aby wystawić kompilatorowi użycie binarnego porównania ciągów z uwzględnieniem wielkości liter. Zaznacz **tekst** , aby użyć specyficznych dla ustawień regionalnych porównania ciągów tekstowych.
 
-To ustawienie odpowiada opcji kompilatora [/optioncompare.](/dotnet/visual-basic/reference/command-line-compiler/optioncompare)
+To ustawienie odpowiada opcji kompilatora [/optioncompare —](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) .
 
-Jeśli plik kodu źródłowego zawiera [instrukcję porównywania opcji,](/dotnet/visual-basic/language-reference/statements/option-compare-statement) `Binary` lub `Text` wartość w instrukcji zastępuje ustawienie **Porównanie opcji** na stronie **Kompilacja**.
+Jeśli plik kodu źródłowego zawiera [instrukcję Option Compare](/dotnet/visual-basic/language-reference/statements/option-compare-statement), `Binary` `Text` wartość lub w instrukcji przesłania ustawienie **opcji Porównaj** na **stronie kompilowania**.
 
-Podczas tworzenia projektu ustawienie **Porównanie opcji** na stronie **Kompilacja** jest ustawione na wartość ustawienia Porównanie **opcji** w oknie dialogowym **Opcje.** Aby wyświetlić lub zmienić ustawienie w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń pozycję **Projekty i rozwiązania**, a następnie kliknij pozycję **Domyślne ustawienia VB**. Początkowe ustawienie domyślne **opcji Porównaj** w **ustawieniach domyślnych VB** to **Binary**.
+Podczas tworzenia projektu **opcja Porównaj** ustawienia na **stronie kompilowania** jest ustawiona na wartość **opcji Porównaj** ustawienia w oknie dialogowym **Opcje** . Aby wyświetlić lub zmienić ustawienia w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ustawienia domyślne w języku VB**. Początkowe domyślne ustawienie **opcji Compare** w **języku VB domyślnie** jest **binarne**.
 
-**Wywnioskować opcję**
+**Wnioskowanie dotyczące opcji**
 
-Określa, czy w deklaracjach zmiennych zezwolić na wnioskowanie o typie lokalnym. Wybierz **włącz,** aby zezwolić na użycie wnioskowania o typie lokalnym. Wybierz **opcję Wyłączone,** aby zablokować wnioskowanie o typie lokalnym.
+Określa, czy zezwalać na wnioskowanie o typie lokalnym w deklaracjach zmiennych. Wybierz opcję **Włącz** , aby zezwolić na korzystanie z wnioskowania o typie lokalnym. Wybierz pozycję **wyłączone** , aby zablokować wnioskowanie o typie lokalnym.
 
-To ustawienie odpowiada opcji kompilatora [/optioninfer.](/dotnet/visual-basic/reference/command-line-compiler/optioninfer)
+To ustawienie odpowiada opcji kompilatora [/optioninfer —](/dotnet/visual-basic/reference/command-line-compiler/optioninfer) .
 
-Jeśli plik kodu źródłowego zawiera [instrukcję wnioskowania opcji,](/dotnet/visual-basic/language-reference/statements/option-infer-statement) `On` lub `Off` wartość w instrukcji zastępuje ustawienie **Wnioskowanie opcji** na stronie **Kompilacja**.
+Jeśli plik kodu źródłowego zawiera [instrukcję opcji wnioskowania](/dotnet/visual-basic/language-reference/statements/option-infer-statement), `On` `Off` wartość lub w instrukcji przesłania ustawienie **opcji wnioskowania** na **stronie kompilowania**.
 
-Podczas tworzenia projektu ustawienie **Wnioskowanie opcji** na **stronie Kompilacja** jest ustawione na wartość ustawienia **Wywnioskować opcji** w oknie dialogowym **Opcje.** Aby wyświetlić lub zmienić ustawienie w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń pozycję **Projekty i rozwiązania**, a następnie kliknij pozycję **Domyślne ustawienia VB**. Początkowe ustawienie domyślne **opcji Wywnioskowanie** w **ustawieniach domyślnych VB** to **Wł.**
+Podczas tworzenia projektu, **opcja wnioskowanie** dla ustawienia na **stronie kompilowania** jest ustawiona na wartość ustawienia wywnioskowania **opcji** w oknie dialogowym **Opcje** . Aby wyświetlić lub zmienić ustawienia w tym oknie dialogowym, w menu **Narzędzia** kliknij polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ustawienia domyślne w języku VB**. Początkowe domyślne ustawienie **wnioskowania opcji** w **ustawieniach domyślnych w języku VB** jest **włączone**.
 
-**Docelowy procesor**
+**Docelowy procesor CPU**
 
-Określa procesor, na który ma docelow plik wyjściowy. Określ **x86** dla dowolnego 32-bitowego procesora zgodnego z procesorem Intel, **x64** dla dowolnego 64-bitowego procesora zgodnego z procesorem Intel, **ARM** dla dowolnego procesora ARM lub **dowolnego procesora,** aby określić, że dowolny procesor jest dopuszczalny. **Każdy procesor CPU** jest wartością domyślną dla nowych projektów, ponieważ umożliwia aplikacji uruchamianie na największej liczbie typów sprzętu.
+Określa procesor, który ma być przeznaczony dla pliku wyjściowego. Określ **x86** dla dowolnego 32-bitowego procesora zgodnego z technologią Intel, **x64** dla 64 każdego procesora zgodnego z technologią Intel, **ARM** dla dowolnego procesora ARM lub **dowolnego procesora** , aby określić, że dowolny procesor jest akceptowalny. **Każdy procesor** jest wartością domyślną dla nowych projektów, ponieważ umożliwia uruchomienie aplikacji na największej liczbie typów sprzętu.
 
 Aby uzyskać więcej informacji, zobacz [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
 **Preferuj 32-bitowe**
 
-Jeśli zaznaczone jest pole wyboru **Preferuj32-bitowe,** aplikacja działa jako aplikacja 32-bitowa zarówno w 32-bitowych, jak i 64-bitowych wersjach systemu Windows. W przeciwnym razie aplikacja działa jako aplikacja 32-bitowa w 32-bitowych wersjach systemu Windows i jako aplikacja 64-bitowa w 64-bitowych wersjach systemu Windows.
+Jeśli pole wyboru **Prefer32-bitowy** jest zaznaczone, aplikacja działa jako aplikacja 32-bitowa na 32-bitowej i 64-bitowej wersji systemu Windows. W przeciwnym razie aplikacja działa jako aplikacja 32-bitowa w 32-bitowych wersjach systemu Windows i jako aplikacja 64-bitowa w systemie 64-bitowe wersje systemu Windows.
 
-Uruchamianie jako aplikacja 64-bitowa podwaja rozmiar wskaźnika i może powodować problemy ze zgodnością z bibliotekami, które są wyłącznie 32-bitowe. Warto uruchomić aplikację jako 64-bitową tylko wtedy, gdy działa znacznie szybciej lub potrzebuje więcej niż 4 GB pamięci.
+Uruchamianie jako aplikacja 64-bitowa podwaja rozmiar wskaźnika i może spowodować problemy ze zgodnością bibliotek, które są wyłącznie 32-bitowe. Warto uruchomić aplikację jako 64-bitową tylko wtedy, gdy działa znacznie szybciej lub potrzebuje więcej niż 4 GB pamięci.
 
 To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następujące warunki:
 
-- Na **stronie Kompilacja**lista **docelowego procesora** jest **ustawiona**na Dowolny procesor .
+- Na **stronie kompilowania** **docelowa Lista procesorów CPU** jest ustawiana na **dowolny procesor**.
 
-- Na **stronie aplikacji**lista **Typ aplikacji** określa, że projekt jest aplikacją.
+- Na **stronie aplikacja**lista **Typ aplikacji** określa, że projekt jest aplikacją.
 
-- Na **stronie aplikacji**lista **docelowa framework** określa .NET Framework 4.5.
+- Na **stronie aplikacja**lista **platform docelowych** określa .NET Framework 4,5.
 
-**Konfiguracje ostrzegawcze**
+**Konfiguracje ostrzeżeń**
 
-W tej tabeli wymieniono warunki kompilacji i odpowiedni poziom powiadomień **brak,** **ostrzeżenie**lub **błąd** dla każdego z nich.
+Ta tabela zawiera listę warunków kompilacji i odpowiedni poziom powiadomienia dla **każdego z nich,** **Ostrzeżenie**lub **błąd** .
 
-Domyślnie wszystkie ostrzeżenia kompilatora są dodawane do listy zadań podczas kompilacji. Wybierz **opcję Wyłącz wszystkie ostrzeżenia,** aby poinstruować kompilatora, aby nie wystawiał ostrzeżeń ani błędów. Wybierz **opcję Traktuj wszystkie ostrzeżenia jako błędy,** jeśli chcesz, aby kompilator traktował ostrzeżenia jako błędy, które muszą zostać naprawione.
+Domyślnie wszystkie ostrzeżenia kompilatora są dodawane do Lista zadań podczas kompilacji. Wybierz pozycję **Wyłącz wszystkie ostrzeżenia** , aby wystawić kompilatorowi, że nie wystawiasz ostrzeżeń lub błędów. Wybierz pozycję **Traktuj wszystkie ostrzeżenia jako błędy** , jeśli chcesz, aby kompilator traktował ostrzeżenia jako błędy, które muszą zostać naprawione.
 
 **Wyłącz wszystkie ostrzeżenia**
 
-Określa, czy kompilator ma zezwalać kompilatorowi na wystawianie powiadomień zgodnie z tabelą **Warunek i powiadomienie** opisaną wcześniej w tym dokumencie. To pole wyboru jest domyślnie wyczyszczone. Zaznacz to pole wyboru, aby poinstruować kompilatora, aby nie wystawiał ostrzeżeń ani błędów.
+Określa, czy zezwolić kompilatorowi na wydawanie powiadomień zgodnie z opisem w tabeli **warunki i powiadomienia** opisane wcześniej w tym dokumencie. To pole wyboru jest domyślnie wyczyszczone. Zaznacz to pole wyboru, aby spowodować, że kompilator nie wystawia ostrzeżeń lub błędów.
 
-To ustawienie odpowiada opcji kompilatora [/nowarn.](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
+To ustawienie odpowiada opcji kompilatora [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) .
 
 **Traktuj wszystkie ostrzeżenia jako błędy**
 
-Określa sposób leczenia ostrzeżeń. Domyślnie to pole wyboru jest wyczyszczone, dzięki czemu wszystkie powiadomienia ostrzegawcze pozostają ustawione na **Ostrzeżenie**. Zaznacz to pole wyboru, aby zmienić wszystkie powiadomienia ostrzegawcze na **Błąd**.
+Określa sposób traktowania ostrzeżeń. Domyślnie to pole wyboru jest wyczyszczone, tak aby wszystkie powiadomienia ostrzegawcze pozostawały ustawione na **Ostrzeżenie**. Zaznacz to pole wyboru, aby zmienić wszystkie powiadomienia ostrzegawcze na **błąd**.
 
-Ta opcja jest dostępna tylko **wtedy, gdy wyłącz wszystkie ostrzeżenia** są wyczyszczone.
+Ta opcja jest dostępna tylko wtedy, gdy polecenie **Wyłącz wszystkie ostrzeżenia** jest wyczyszczone.
 
-**Generowanie pliku dokumentacji XML**
+**Generuj plik dokumentacji XML**
 
-Określa, czy mają być generowane informacje o dokumentacji. Domyślnie to pole wyboru jest zaznaczone, instruując kompilator do generowania informacji o dokumentacji i dołączania ich do pliku XML. Wyczyść to pole wyboru, aby poinstruować kompilatora, aby nie tworzył dokumentacji.
+Określa, czy informacje o dokumentacji mają być generowane. To pole wyboru jest domyślnie zaznaczone, co powoduje, że kompilator generuje informacje o dokumentacji i umieszcza je w pliku XML. Wyczyść to pole wyboru, aby wylecić kompilatorowi nie tworzenie dokumentacji.
 
-To ustawienie odpowiada opcji kompilatora [/doc.](/dotnet/visual-basic/reference/command-line-compiler/doc)
+To ustawienie odpowiada opcji kompilatora [/doc](/dotnet/visual-basic/reference/command-line-compiler/doc) .
 
-**Zarejestruj się w com interop**
+**Rejestracja w celu współdziałania z modelem COM**
 
-Określa, czy aplikacja zarządzana będzie uwidaczniać obiekt COM (otokę wywoływaną przez COM), która umożliwia obiektowi COM interakcję z aplikacją.
+Określa, czy aplikacja zarządzana będzie uwidaczniać obiekt COM (otoka w modelu COM), która umożliwia obiektowi COM współpracujący z aplikacją.
 
-Domyślnie to pole wyboru jest wyczyszczone, co określa, że aplikacja nie zezwala na współdziałania COM. Zaznacz to pole wyboru, aby zezwolić na połączenie com.
+Domyślnie to pole wyboru jest wyczyszczone, co oznacza, że aplikacja nie będzie zezwalać na współdziałanie z modelem COM. Zaznacz to pole wyboru, aby zezwolić na współdziałanie modelu COM.
 
-Ta opcja nie jest dostępna w przypadku projektów aplikacji systemu Windows lub aplikacji konsoli.
+Ta opcja jest niedostępna dla projektów aplikacji lub aplikacji konsolowych systemu Windows.
 
-**Tworzenie zdarzeń**
+**Zdarzenia kompilacji**
 
-Kliknij ten przycisk, aby uzyskać dostęp do okna dialogowego **Zdarzenia kompilacji.** To okno dialogowe służy do określania instrukcji konfiguracji pre-build i po kompilacji dla projektu. To okno dialogowe dotyczy tylko projektów języka Visual Basic. Aby uzyskać więcej informacji, zobacz [Okno dialogowe Tworzenie zdarzeń (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
+Kliknij ten przycisk, aby uzyskać dostęp do okna dialogowego **zdarzenia kompilacji** . To okno dialogowe służy do określania instrukcji konfiguracji przed kompilacją i po kompilacji dla projektu. To okno dialogowe dotyczy tylko projektów Visual Basic. Aby uzyskać więcej informacji, zobacz [okno dialogowe zdarzenia kompilacji (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
 **Zaawansowane opcje kompilacji**
 
-Kliknij ten przycisk, aby uzyskać dostęp do okna dialogowego **AdvancedCompiler Settings.** Okno dialogowe **Zaawansowane ustawienia kompilatora** służy do określania właściwości zaawansowanej konfiguracji kompilacji projektu. To okno dialogowe dotyczy tylko projektów języka Visual Basic. Aby uzyskać więcej informacji, zobacz [Okno dialogowe Zaawansowane ustawienia kompilatora (Visual Basic).](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+Kliknij ten przycisk, aby uzyskać dostęp do okna dialogowego **Ustawienia AdvancedCompiler** . Okno dialogowe **Ustawienia AdvancedCompiler** służy do określania zaawansowanych właściwości konfiguracji kompilacji projektu. To okno dialogowe dotyczy tylko projektów Visual Basic. Aby uzyskać więcej informacji, zobacz okno [dialogowe Zaawansowane ustawienia kompilatora (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Porady: określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Visual Basic Kompilator wiersza polecenia](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Kompilator wiersza polecenia Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Porady: tworzenie i edycja konfiguracji](../../ide/how-to-create-and-edit-configurations.md)

@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 983a5d91fee40245f6a7d6877ccf38e666fa586e
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114157"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284422"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 
 - [Wprowadzanie dotykowe](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a>Wizualizacja danych
+## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a> Wizualizacja danych
 
 ### <a name="overview"></a>Omówienie
  Wykresy to Wizualizacja Metoda agregowania i wizualizacji danych w celu usprawnienia podejmowania decyzji. Mogą one pomóc użytkownikom z dużą ilością danych, ale niewiele znaczenia Zobacz, co jest zamierzenia uwagi i co może wymagać akcji.
@@ -83,7 +83,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 |![79D7F2 próbki](../../extensibility/ux-guidelines/media/0711-79d7f2.png "0711_79D7F2")|#79D7F2|121 215 242|
 |![B5B5B5 próbki](../../extensibility/ux-guidelines/media/0711-b5b5b5.png "0711_B5B5B5")|#B5B5B5|181 181 181|
 
-## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>Interfejs użytkownika i wgląd w obiekt
+## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a> Interfejs użytkownika i wgląd w obiekt
  Ta sekcja zawiera kontekst do wglądu, znanego również jako widok wglądu w kod, typ interfejsu użytkownika obiektu, który jest unikatowy dla programu Visual Studio.
 
 ### <a name="overview"></a>Omówienie
@@ -249,7 +249,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 
 - **Nigdy nie** Wyświetlaj zawartości na aktywowaniu, która wygląda na możliwość edytowania lub zapraszania interakcji z użytkownikiem. Takie zachowanie może frustrować użytkowników, jeśli próbują przenieść kursor nad zawartością szczegółową, ponieważ standardowe zachowanie etykietki narzędzia jest natychmiast odrzucane, gdy kursor nie znajduje się już nad zawartością główną, która go wygenerowała.
 
-## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a>Modele wyboru
+## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a> Modele wyboru
 
 ### <a name="overview"></a>Omówienie
  Model wyboru jest mechanizmem używanym do wskazywania i potwierdzania operacji na co najmniej jednym obiekcie interesującym w interfejsie użytkownika. W tym temacie omówiono wzorce interakcji zaznaczenia w edytorach dokumentów programu Visual Studio: edytory tekstu, powierzchnie projektowe i powierzchnie modelowania.
@@ -392,19 +392,19 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 
  **Wybór podstawowy z dwoma dodatkowymi opcjami**
 
-#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>Wygląd obiektu graficznego
+#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Wygląd obiektu graficznego
  Uchwyty zaznaczania są kwadratami rysowanymi w prostokątnym wzorcu wokół obwiedni obiektu. Na poniższym wykresie przedstawiono przykłady różnych stanów, które mogą mieć obiekt graficzny z uchwytem, rozmiarem i wyglądem w miejscu. Rozmiary uchwytów powinny być powiązane z obramowaniem okna i metrykami krawędzi za pomocą interfejsu API **GetSystemMetrics** .
 
 |          Stan          |  Wygląd   |                                                                  Szczegóły wizualizacji                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-|     **Niezaznaczone**      |    Domyślny    |                 ![Domyślny stan przycisku](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713 — 10_DefaultState")                 |
+|     **Niezaznaczone**      |    Domyślne    |                 ![Domyślny stan przycisku](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713 — 10_DefaultState")                 |
 |  **Wybór podstawowy**  |   O zmiennych rozmiarach   |       ![Wybór podstawowy z uchwytami zmiany rozmiaru](../../extensibility/ux-guidelines/media/0713-11-primaryresize.png "0713 — 11_PrimaryResize")        |
 |  **Wybór podstawowy**  | Bez możliwości zmiany rozmiaru |    ![Wybór podstawowy bez zmiany rozmiaru](../../extensibility/ux-guidelines/media/0713-13-primarynoresize.png "0713 — 13_PrimaryNoResize")    |
 |  **Wybór podstawowy**  |    Zablokowano     |              ![Zablokowany wybór podstawowy](../../extensibility/ux-guidelines/media/0713-15-primarylocked.png "0713 — 15_PrimaryLocked")              |
 | **Wybór pomocniczy** |   O zmiennych rozmiarach   |    ![Wybór pomocniczy z uchwytami zmiany rozmiaru](../../extensibility/ux-guidelines/media/0713-17-secondaryresize.png "0713 — 17_SecondaryResize")     |
 | **Wybór pomocniczy** | Bez możliwości zmiany rozmiaru | ![Wybór pomocniczy bez zmiany rozmiaru](../../extensibility/ux-guidelines/media/0713-19-secondarynoresize.png "0713 — 19_SecondaryNoResize") |
 | **Wybór pomocniczy** |    Zablokowano     |           ![Zablokowany wybór pomocniczy](../../extensibility/ux-guidelines/media/0713-21-secondarylocked.png "0713 — 21_SecondaryLocked")           |
-|      **Aktywny interfejs użytkownika**      |    Domyślny    |                       ![Stan aktywności interfejsu użytkownika](../../extensibility/ux-guidelines/media/0713-23-uiactive.png "0713 — 23_UIActive")                        |
+|      **Aktywny interfejs użytkownika**      |    Domyślne    |                       ![Stan aktywności interfejsu użytkownika](../../extensibility/ux-guidelines/media/0713-23-uiactive.png "0713 — 23_UIActive")                        |
 
 ### <a name="view-selection-models"></a>Wyświetlanie modeli wyboru
 
@@ -473,7 +473,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 
 - Klawisz F2 aktywuje edytowanie w miejscu dla aktualnie zaznaczonej komórki.
 
-## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>Trwałość i zapisywanie ustawień
+## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a> Trwałość i zapisywanie ustawień
 
 ### <a name="overview"></a>Omówienie
  Chociaż każdy składnik oprogramowania w programie Visual Studio jest zazwyczaj odpowiedzialny za własny stan i trwałość, program Visual Studio automatycznie zapisuje w niektórych przypadkach ustawienia, takie jak rozmiary okna i położenia. Poniższa tabela to kombinacja ustawień zapisywanych automatycznie i ustawień, które wymagają wykonania jawnego użytkownika lub zaprogramowanego działania.
@@ -484,7 +484,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 |Oknie dialogowym|Lokalizacja okna dialogowego, jeśli została przeniesiona<br /><br /> Widok, który ostatnio używał użytkownika w oknie dialogowym|Gdy okno dialogowe zostanie zamknięte<br /><br /> Po zakończeniu sesji programu Visual Studio|W pamięci<br /><br /> Rejestr w **HKEY_CURRENT_USER**|
 |Okno|Rozmiar i lokalizacja okna|Gdy okno zostanie zamknięte<br /><br /> Po zmianie trybu programu Visual Studio<br /><br /> Po zakończeniu sesji programu Visual Studio|Plik **opcji użytkownika (. suo)** dla projektu<br /><br /> Plik opcji niestandardowych dla ustawień okna|
 |Dokument|Bieżące zaznaczenie w dokumencie<br /><br /> Widok dokumentu<br /><br /> Ostatnie miejsce odwiedzone przez użytkownika|Gdy dokument zostanie zapisany|Plik **opcji użytkownika (. suo)** dla projektu|
-|Project|Odwołania do plików<br /><br /> Odwołania do katalogów na dysku<br /><br /> Odwołania do innego oprogramowania<br /><br /> Składniki<br /><br /> Informacje o stanie dotyczące samego projektu|Gdy projekt jest zapisywany|Plik projektu|
+|Projekt|Odwołania do plików<br /><br /> Odwołania do katalogów na dysku<br /><br /> Odwołania do innego oprogramowania<br /><br /> Składniki<br /><br /> Informacje o stanie dotyczące samego projektu|Gdy projekt jest zapisywany|Plik projektu|
 |Rozwiązanie|Odwołania do projektów<br /><br /> Odwołania do plików|Gdy projekt lub rozwiązanie zostanie zapisane|Plik **rozwiązania (. sln)**|
 |Ustawienia w **narzędziach > opcje**|Dostosowanie klawiatury<br /><br /> Dostosowania paska narzędzi<br /><br /> Schematy kolorów|Gdy okno dialogowe **opcje > narzędzia** zostanie zamknięte<br /><br /> Po zakończeniu sesji programu Visual Studio|Rejestr w **HKEY_CURRENT_USER**|
 
@@ -508,7 +508,7 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 #### <a name="profile-specific-layouts"></a>Układy specyficzne dla profilu
  Każdy profil zawiera układy okna narzędzi, zorganizowane w sposób zaznajomiony z konkretną osóbem deweloperów (Visual C++ deweloperzy mogą widzieć **Eksplorator rozwiązań** po lewej stronie IDE, podczas gdy deweloperzy języka C# oczekują na wyświetlenie **Eksplorator rozwiązań** z prawej strony). Układy okien charakterystyczne dla profilu są ładowane, gdy użytkownik wybierze profil podczas uruchamiania. Autor pakietu powinien określić układ okna najbardziej odpowiedni dla środowiska klienta, wiedząc, że zmiany wprowadzane przez użytkownika w konfiguracji okna zostaną utrwalone.
 
-## <a name="touch-input"></a><a name="BKMK_TouchInput"></a>Wprowadzanie dotykowe
+## <a name="touch-input"></a><a name="BKMK_TouchInput"></a> Wprowadzanie dotykowe
  Użytkownicy coraz częściej korzystają z produktów programistycznych firmy Microsoft na urządzeniach dotykowych. Istnieją jednak pewne bariery utrudniające korzystanie z narzędzi programistycznych na urządzeniach dotykowych. Użytkownicy będą oczekiwać naszych produktów, aby zapewnić niezawodne i precyzyjne środowisko dotykowe. Celem tych wytycznych jest informowanie decyzji o tym, które funkcje dotyku należy uwzględnić, i aby zachęcić do spójnego środowiska dotykowego w programie Visual Studio i związanych z nim produktów.
 
 ### <a name="levels-of-experience"></a>Poziomy środowiska
@@ -522,13 +522,13 @@ Wzorce złożone łączą elementy interakcji i projektu w różnych konfiguracj
 
 ||Podstawowe środowisko|Zoptymalizowane środowisko|Obsługa podwyższonego poziomu|
 |-|----------------------|--------------------------|-------------------------|
-|**Umożliwia użytkownikom...**|Popraw kod i rozwiązanie/odczytywanie na poziomie projektu bez martwych punktów końcowych|Wykonywanie czynności konserwacyjnych, refaktoryzacji i nawigacji|Działaj w spójnym, intuicyjnym i płynnym środowisku z pewnością|
-|**Edytor**|Panoramowanie i wybór dotyku<br /><br /> Pasek przewijania Touch do skoku i naciśnij klawisze + przeciągnij|Powiększenie szczypania<br /><br /> Szybkie przewijanie<br /><br /> Wybór<br /><br /> Łatwe korzystanie z menu kontekstowego||
-|**Najważniejsze okna narzędzi**|Przesuwanie listy<br /><br /> Wybór elementu<br /><br /> Pasek przewijania Touch do skoku i naciśnij klawisze + przeciągnij|Łatwe przewijanie i zaznaczanie elementów||
-|**Obsługi okien**||Zmień rozmiar okna<br /><br /> Szybki dostęp||
-|**Źródło dokumentu**||Łatwa nawigacja między otwartymi plikami||
-|**Gestów**||Upewnij się, że typowe gesty działają w środowisku IDE|Akcje na podstawie gestu<br /><br /> Obsługa przeciągania i upuszczania oraz projektantów|
-|**Inne zagadnienia**|||Klawiatura niestandardowa Onscreen|
+|Umożliwia użytkownikom...|Popraw kod i rozwiązanie/odczytywanie na poziomie projektu bez martwych punktów końcowych|Wykonywanie czynności konserwacyjnych, refaktoryzacji i nawigacji|Działaj w spójnym, intuicyjnym i płynnym środowisku z pewnością|
+|Edytor|Panoramowanie i wybór dotyku<br /><br /> Pasek przewijania Touch do skoku i naciśnij klawisze + przeciągnij|Powiększenie szczypania<br /><br /> Szybkie przewijanie<br /><br /> Wybór<br /><br /> Łatwe korzystanie z menu kontekstowego||
+|Najważniejsze okna narzędzi|Przesuwanie listy<br /><br /> Wybór elementu<br /><br /> Pasek przewijania Touch do skoku i naciśnij klawisze + przeciągnij|Łatwe przewijanie i zaznaczanie elementów||
+|Obsługi okien||Zmień rozmiar okna<br /><br /> Szybki dostęp||
+|Źródło dokumentu||Łatwa nawigacja między otwartymi plikami||
+|Gestów||Upewnij się, że typowe gesty działają w środowisku IDE|Akcje na podstawie gestu<br /><br /> Obsługa przeciągania i upuszczania oraz projektantów|
+|Inne zagadnienia|||Klawiatura niestandardowa Onscreen|
 
 #### <a name="gestures"></a>Gestów
  Gesty zapewniają użytkownikom skrót do poleceń, które w przeciwnym razie mogą wymagać bardziej skomplikowanej interakcji. Zapoznaj się z wytycznymi dla systemu Windows dotyczącymi [typowych gestów dotykowych dla aplikacji klasycznych](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)i postępuj zgodnie z tymi wskazówkami dotyczącymi większości gestów, w tym prostych gestów, takich jak panoramowanie i
