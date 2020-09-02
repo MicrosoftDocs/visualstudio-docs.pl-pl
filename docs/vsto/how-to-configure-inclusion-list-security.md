@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541638"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Instrukcje: Konfigurowanie zabezpieczeń listy dołączania
@@ -55,7 +55,7 @@ ms.locfileid: "85541638"
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Disabled (Wyłączone)**|
+    |**UntrustedSites**|**Wyłączone**|
     |**MójKomputer**|**Włączone**|
     |**LocalIntranet**|**Włączone**|
     |**TrustedSites**|**Włączone**|
@@ -113,7 +113,7 @@ ms.locfileid: "85541638"
 
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Disabled (Wyłączone)**|
+    |**UntrustedSites**|**Wyłączone**|
     |**Internet**|**AuthenticodeRequired**|
     |**MójKomputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -170,11 +170,11 @@ ms.locfileid: "85541638"
 
     |Podklucz wartości ciągu|Wartość|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Disabled (Wyłączone)**|
-    |**Internet**|**Disabled (Wyłączone)**|
-    |**MójKomputer**|**Disabled (Wyłączone)**|
-    |**LocalIntranet**|**Disabled (Wyłączone)**|
-    |**TrustedSites**|**Disabled (Wyłączone)**|
+    |**UntrustedSites**|**Wyłączone**|
+    |**Internet**|**Wyłączone**|
+    |**MójKomputer**|**Wyłączone**|
+    |**LocalIntranet**|**Wyłączone**|
+    |**TrustedSites**|**Wyłączone**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Aby programowo wyłączyć listę dołączania
 
@@ -207,6 +207,6 @@ ms.locfileid: "85541638"
 
 3. Skompiluj i uruchom aplikację.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Ufanie rozwiązaniom pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

@@ -1,6 +1,6 @@
 ---
 title: Co nowego w subskrypcjach programu Visual Studio
-description: Dowiedz się więcej o nowych i zaktualizowanych funkcjach, których można używać do zarządzania subskrypcjami programu Visual Studio.
+description: Poznaj nowe i zaktualizowane funkcje, których można użyć do zarządzania subskrypcjami programu Visual Studio.
 ms.custom: ''
 ms.date: 04/01/2020
 ms.topic: conceptual
@@ -9,55 +9,55 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
 ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649659"
 ---
-# <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;nowości w subskrypcjach programu Visual Studio
+# <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s w subskrypcjach programu Visual Studio
 
-Często aktualizujemy pakiet korzyści z subskrypcji, aby był bardziej przydatny. Udostępnimy również nasze portale zarządzania subskrybentami i subskrypcjami, aby zapewnić Ci najlepsze możliwe środowisko.  Czytaj dalej, aby dowiedzieć się więcej o najnowszych funkcjach i aktualizacjach, posortowanych kwartalnie.
+Pakiet korzyści subskrypcji jest często aktualizowany, aby był bardziej przydatny dla Ciebie. Wprowadzimy również ulepszenia dla naszych subskrybentów i portali zarządzania subskrypcjami, aby zapewnić najlepsze możliwe środowisko.  Przeczytaj, aby dowiedzieć się więcej o najnowszych funkcjach i aktualizacjach, które zostały posortowane kwartalnie.
 
 ## <a name="2020-q1-january-march"></a>I kwartał 2020 r. (styczeń – marzec)
 
-### <a name="subscriptions-administration-portal"></a>Portal administracyjny subskrypcji
-W pierwszym kwartale 2020 r. ukazał się nowy wygląd i https://manage.visualstudio.comkilka nowych funkcji portalu administracyjnego subskrypcji programu Visual Studio pod adresem . Zmiany w portalu obejmowały nowy schemat kolorów i zmianę układu niektórych narzędzi.  Przegląd alokacji subskrypcji, szczegóły umowy i maksymalne użycie są teraz kontrolowane przez przyciski w lewym górnym rogu.  Pomaga to zmaksymalizować dostępne miejsce na ekranie dla najczęściej wykonywanych zadań zarządzania, takich jak przypisywanie i edytowanie subskrypcji.  
+### <a name="subscriptions-administration-portal"></a>Portal administrowania subskrypcjami
+Pierwszy kwartał 2020 został wyświetlony nowy wygląd i nowe funkcje portalu administratora subskrypcji programu Visual Studio pod adresem https://manage.visualstudio.com . Zmiany w portalu obejmowały nowy schemat kolorów i ponowne rozmieszczanie niektórych narzędzi.  Przegląd alokacji subskrypcji, szczegółów umowy i maksymalnego użycia są teraz kontrolowane przez przyciski w lewym górnym rogu.  Pozwala to zmaksymalizować ilość dostępnego miejsca na ekranie dla zadań zarządzania wykonywanych najczęściej, takich jak Przypisywanie i edytowanie subskrypcji.  
 
-Połączyliśmy również opcje, aby dodać invididual abonentów i wykonać zbiorcze dodatki w menu rozwijanym **+ Dodaj.** 
+Zostały również połączone opcje dodawania subskrybentów invididual i wykonywania zbiorczych operacji dodawania w menu rozwijanym **+ Dodaj** . 
 
    > [!div class="mx-imgBorder"]
-   > ![Nowy interfejs użytkownika portalu administracji subskrypcjami](_img/whats-new/new-admin-ui.png)
+   > ![Nowy interfejs użytkownika portalu administracyjnego subskrypcji](_img/whats-new/new-admin-ui.png)
 
-#### <a name="connect-emails"></a>Łączenie wiadomości e-mail
-Ułatwiliśmy dopasowywać subskrybentów korzystających z kont Microsoft (MSA) do usługi Azure Active Directory (Azure AD), dzięki czemu można szybko połączyć dwie tożsamości.  Korzystanie z tożsamości usługi Azure AD zapewnia większe bezpieczeństwo i łatwiejsze zarządzanie subskrypcjami.  Sprawdź nasz [osobisty artykuł logowania, aby](personal-email-sign-ins.md) uzyskać więcej informacji. 
+#### <a name="connect-emails"></a>Połącz wiadomości E-mail
+Mamy możliwość łatwego dopasowania do subskrybentów, którzy korzystają z kont Microsoft (MSA) do Azure Active Directory (Azure AD), dzięki czemu możesz szybko połączyć te dwie tożsamości.  Korzystanie z tożsamości usługi Azure AD zapewnia większe bezpieczeństwo i łatwiejsze zarządzanie subskrypcjami.  Aby uzyskać więcej informacji, zapoznaj [się z artykułami](personal-email-sign-ins.md) dotyczącymi osobistych logowań. 
 
-#### <a name="add-subscribers-using-azure-active-directory-groups"></a>Dodawanie subskrybentów przy użyciu grup usługi Azure Active Directory
-Jeśli twoja organizacja korzysta z usługi Azure Active Directory (Azure AD), możesz teraz zarządzać subskrypcjami przy użyciu grup usługi Azure AD.  Przypisywanie subskrypcji do grup umożliwia bardzo szybkie dostarczanie subskrypcji tego samego typu wielu użytkownikom.  Gdy nowi użytkownicy są dodawane do grupy usługi Azure AD, są one automatycznie przypisywane subskrypcji.  Jeśli użytkownik zostanie usunięty z grupy usługi Azure AD, jego subskrypcja jest również usuwany.  Pomaga to organizacji zautomatyzować zarządzanie subskrypcjami, oszczędzając czas i wysiłek administratorów.  Szczegółowe informacje można znaleźć w artykule [Dodaj wielu użytkowników](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) w naszej dokumentacji. 
+#### <a name="add-subscribers-using-azure-active-directory-groups"></a>Dodawanie subskrybentów przy użyciu grup Azure Active Directory
+Jeśli Twoja organizacja korzysta z usługi Azure Active Directory (Azure AD), możesz teraz zarządzać subskrypcjami przy użyciu grup usługi Azure AD.  Przypisywanie subskrypcji do grup daje możliwość bardzo szybkiej obsługi subskrypcji tego samego typu dla wielu użytkowników.  Gdy nowi użytkownicy zostaną dodani do grupy usługi Azure AD, automatycznie przypisuje się subskrypcję.  Jeśli użytkownik zostanie usunięty z grupy usługi Azure AD, ich subskrypcja również zostanie usunięta.  Dzięki temu Twoja organizacja automatyzuje zarządzanie subskrypcjami, oszczędność czasu i wysiłku.  Aby uzyskać szczegółowe informacje, zapoznaj się z artykułem [Dodawanie wielu użytkowników](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) w naszej dokumentacji. 
 
 ### <a name="cast-highlight"></a>CAST Highlight
-Mamy przyjemność ogłosić rozszerzenie korzyści oferowanych przez naszego partnera, CAST Highlight. 
-- Długość świadczenia zawartego w subskrypcjach programu Visual Studio Enterprise została przedłużona do sześciu miesięcy.  
-- Subskrybenci programu Visual Studio Professional mogą teraz otrzymywać subskrypcję umożliwiającą im ocenę pojedynczej aplikacji przez trzy miesiące. 
+Z przyjemnością ogłaszamy rozszerzenie korzyści oferowanych przez naszych partnerów. 
+- Długość korzyści uwzględnionych w subskrypcjach Visual Studio Enterprise została przedłużona na sześć miesięcy.  
+- Subskrybenci Visual Studio Professional mogą teraz otrzymać subskrypcję umożliwiającą im ocenę pojedynczej aplikacji przez trzy miesiące. 
 
 ## <a name="2020-q2-april-june"></a>II kwartał 2020 r. (kwiecień–czerwiec)
 
 ### <a name="visual-studio-subscriptions-portal"></a>Portal subskrypcji programu Visual Studio
 
-Portal subskrypcji programu Visual Studio przeszedł znaczące zmiany w wyglądzie i łatwości użytkowania.  
+W portalu subskrypcji programu Visual Studio wprowadzono znaczące zmiany w wyglądzie i łatwość użycia.  
 
-- Kafelki korzyści zostały przesiąknięty i są wyświetlane w oknie, więc nie trzeba przewijać w lewo lub w prawo, aby wyświetlić wszystkie kafelki w danej kategorii. 
-- Możesz wyświetlić wszystkie dostępne korzyści lub wyświetlić tylko jedną kategorię za pomocą selektora kategorii.
+- Rozmiar kafelków korzyści został zmieniony i wszystkie są wyświetlane w oknie, dzięki czemu nie trzeba przewijać w lewo lub w prawo, aby zobaczyć wszystkie kafelki w danej kategorii. 
+- Możesz wybrać opcję wyświetlania wszystkich dostępnych korzyści lub wyświetlić tylko jedną kategorię przy użyciu selektora kategorii.
    > [!div class="mx-imgBorder"]
-   > ![Nowy selektor kategorii korzyści](_img/whats-new/whats-new-category-picker.png)
-- Przenieśliśmy również selektor subskrypcji z prawego górnego rogu okna do bardziej dostępnej lokalizacji.
+   > ![Selektor kategorii nowe korzyści](_img/whats-new/whats-new-category-picker.png)
+- Został również przesunięty selektor subskrypcji z prawego górnego rogu okna do bardziej dostępnej lokalizacji.
    > [!div class="mx-imgBorder"]
-   > ![Nowy selektor subskrypcji](_img/whats-new/whats-new-sub-picker.png)
-- Dodaliśmy "Wyróżnione korzyści" na górze listy świadczeń, aby przywołać nowe lub popularne korzyści.  
+   > ![Wybór nowej subskrypcji](_img/whats-new/whats-new-sub-picker.png)
+- Dodaliśmy "polecaną korzyść" w górnej części listy korzyści, aby wywoływać nowe lub popularne korzyści.  
    > [!div class="mx-imgBorder"]
-   > ![Nowa wyróżniona korzyść](_img/whats-new/whats-new-featured.png)
+   > ![Nowe proponowane korzyści](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>Następne kroki
-- Zapoznaj się z nowym [interfejsem użytkownika portalu administracji subskrypcji](https://manage.visualstudio.com) z nowymi funkcjami
-- Dowiedz się więcej o [wyróżnieniu CAST](vs-cast.md)
-- Sprawdź tutaj najnowsze informacje na temat nowości w subskrypcjach programu Visual Studio!
+- Zapoznaj się z nowymi funkcjami interfejsu użytkownika [portalu administracyjnego subskrypcji](https://manage.visualstudio.com)
+- Dowiedz się więcej na temat [wyróżniania rzutowania](vs-cast.md)
+- Zapoznaj się z tym tutaj, aby uzyskać najnowsze informacje na temat Nowości w subskrypcjach programu Visual Studio!

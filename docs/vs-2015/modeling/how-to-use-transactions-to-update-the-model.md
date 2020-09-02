@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd66c62d74bfe63d8376b5520b42cb20c8c0a3a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651614"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Porady: użycie transakcji do aktualizacji modelu
@@ -21,12 +21,12 @@ ms.locfileid: "72651614"
 
 W przypadku transakcji upewnij się, że zmiany wprowadzone w sklepie są traktowane jako Grupa. Zmiany pogrupowane mogą być zatwierdzane lub wycofywane jako pojedyncza jednostka.
 
- Za każdym razem, gdy kod programu modyfikuje, dodaje lub usuwa każdy element ze sklepu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wizualizacji i modelowania SDK, musi to zrobić w ramach transakcji. W przypadku zmiany należy mieć aktywne wystąpienie <xref:Microsoft.VisualStudio.Modeling.Transaction> skojarzone z magazynem. Dotyczy to wszystkich elementów modelu, relacji, kształtów, diagramów i ich właściwości.
+ Za każdym razem, gdy kod programu modyfikuje, dodaje lub usuwa każdy element ze sklepu w ramach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zestawu SDK wizualizacji i modelowania, musi to zrobić w ramach transakcji. W przypadku zmiany należy mieć aktywne wystąpienie <xref:Microsoft.VisualStudio.Modeling.Transaction> skojarzone z magazynem. Dotyczy to wszystkich elementów modelu, relacji, kształtów, diagramów i ich właściwości.
 
  Mechanizm transakcji pomaga uniknąć niespójnych Stanów. Jeśli wystąpi błąd w trakcie transakcji, wszystkie zmiany zostaną wycofane. Jeśli użytkownik wykonuje polecenie Cofnij, każda Ostatnia transakcja jest traktowana jako pojedynczy krok. Użytkownik nie może cofnąć części ostatniej zmiany, chyba że jawnie umieści je w osobnych transakcjach.
 
 ## <a name="opening-a-transaction"></a>Otwieranie transakcji
- Najbardziej wygodną metodą zarządzania transakcjami jest wyrażenie `using` ujęte w instrukcji `try...catch`:
+ Najbardziej wygodną metodą zarządzania transakcję jest `using` instrukcja ujęta w `try...catch` instrukcji:
 
 ```
 Store store; ...
@@ -52,11 +52,11 @@ catch (Exception ex)
 }
 ```
 
- Jeśli wyjątek, który uniemożliwia końcową `Commit()` występuje podczas wprowadzania zmian, magazyn zostanie zresetowany do poprzedniego stanu. Dzięki temu można upewnić się, że błędy nie opuszczają modelu w stanie niespójnym.
+ Jeśli wyjątek, który uniemożliwia końcową `Commit()` zmianę, zostanie przywrócony do poprzedniego stanu. Dzięki temu można upewnić się, że błędy nie opuszczają modelu w stanie niespójnym.
 
- Można wprowadzić dowolną liczbę zmian w jednej transakcji. Możesz otworzyć nowe transakcje wewnątrz aktywnej transakcji. Transakcje zagnieżdżone muszą zostać zatwierdzone lub wycofane przed zakończeniem transakcji zawierającej. Aby uzyskać więcej informacji, zobacz przykład właściwości <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>.
+ Można wprowadzić dowolną liczbę zmian w jednej transakcji. Możesz otworzyć nowe transakcje wewnątrz aktywnej transakcji. Transakcje zagnieżdżone muszą zostać zatwierdzone lub wycofane przed zakończeniem transakcji zawierającej. Aby uzyskać więcej informacji, zobacz przykład dla <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> właściwości.
 
- Aby zmiany były trwałe, należy `Commit` transakcji przed jej usunięciem. Jeśli wystąpi wyjątek, który nie jest przechwytywany w ramach transakcji, magazyn zostanie zresetowany do stanu sprzed zmian.
+ Aby zmiany były trwałe, należy wykonać `Commit` transakcję przed jej usunięciem. Jeśli wystąpi wyjątek, który nie jest przechwytywany w ramach transakcji, magazyn zostanie zresetowany do stanu sprzed zmian.
 
 ## <a name="rolling-back-a-transaction"></a>Wycofywanie transakcji
  Aby upewnić się, że magazyn pozostanie w lub powróci do stanu sprzed transakcji, możesz użyć jednego z następujących taktykę:

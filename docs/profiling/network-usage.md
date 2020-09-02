@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541716"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
@@ -58,7 +58,7 @@ Narzędzie Diagnostyka **sieci** programu Visual Studio zbiera dane dotyczące o
 |**Nagłówki**|Informacje o nagłówkach żądań zdarzenia.|
 |**Treść**|Dane ładunku żądania i odpowiedzi.|
 |**Parametry**|Nazwy i wartości parametrów ciągu zapytania.|
-|**Plik cookie**|Odpowiedź i żądanie danych plików cookie.|
+|**Cookie**|Odpowiedź i żądanie danych plików cookie.|
 |**Chronometraż**|Wykres etapów pobierania wybranych zasobów.|
 
  Na pasku **podsumowania** sieci jest wyświetlana liczba operacji w sieci, które są wyświetlane w danym momencie, ilość transferowanych danych, czas ich pobrania oraz liczba błędów (żądań z odpowiedziami 4xx lub 5xx).
@@ -72,7 +72,7 @@ Narzędzie Diagnostyka **sieci** programu Visual Studio zbiera dane dotyczące o
 
 3. Przycisk "Łatwa drukowanie" odpowiedzi (na karcie Body) może pomóc w analizie danych w postaci notacji JSON, XML, HTML, CSS, JavaScript i języka TypeScript przez zwiększenie czytelności zawartości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Blog programu Visual Studio: wprowadzenie do Inspektora sieci programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)

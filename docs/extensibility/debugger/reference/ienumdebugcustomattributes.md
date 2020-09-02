@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes | Dokumenty firmy Microsoft
+title: IEnumDebugCustomAttributes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7f8b521432124267d3f0e179d3a889fb599fa99d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717125"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
@@ -29,26 +29,26 @@ IEnumCustomAttributes : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawca symbolu implementuje ten interfejs do obsługi atrybutów niestandardowych (za pośrednictwem interfejsu [IDebugCustomAttribute).](../../../extensibility/debugger/reference/idebugcustomattribute.md)
+ Dostawca symboli implementuje ten interfejs, aby obsługiwał atrybuty niestandardowe (za pomocą interfejsu [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) ).
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-- [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) zwraca ten interfejs.
+- [EnumCustomAttributes —](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) zwraca ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IEnumDebugCustomAttributes`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IEnumDebugCustomAttributes` .
 
 |Metoda|Opis|
 |------------|-----------------|
 |[Dalej](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|Pobiera określoną liczbę atrybutów niestandardowych w sekwencji wyliczenia.|
-|[Pominąć](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|Pomija określoną liczbę atrybutów niestandardowych w sekwencji wyliczenia.|
-|[Resetuj](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|Resetuje sekwencję wyliczenia do początku.|
-|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|Tworzy wyliczenia, który zawiera ten sam stan wyliczenia jako bieżącego wylicznika.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|Pobiera liczbę atrybutów niestandardowych w wyliczacza.|
+|[Pomiń](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|Pomija określoną liczbę atrybutów niestandardowych w sekwencji wyliczenia.|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|Resetuje sekwencję wyliczenia na początek.|
+|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|Pobiera liczbę atrybutów niestandardowych w module wyliczającym.|
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: sh.h
+ Nagłówek: sh. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

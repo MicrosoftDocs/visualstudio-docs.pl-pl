@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: efe2b176db9f6f22f9e38775d5fc8acad87655ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651385"
 ---
 # <a name="managing-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
@@ -34,11 +34,11 @@ ms.locfileid: "72651385"
 
 Pliki zasobów są plikami, które są częścią aplikacji, ale nie są kompilowane, na przykład pliki ikon lub pliki audio. Ponieważ te pliki nie są częścią procesu kompilacji, można je zmienić bez konieczności ponownego kompilowania plików binarnych. Jeśli planujesz lokalizowanie aplikacji, należy używać plików zasobów dla wszystkich ciągów i innych zasobów, które należy zmienić podczas lokalizowania aplikacji.
 
- Aby uzyskać więcej informacji o zasobach w aplikacjach klasycznych platformy .NET, zobacz [zasoby w aplikacjach klasycznych](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890). Aby uzyskać więcej informacji o zasobach w C++ aplikacjach klasycznych, zobacz [Praca z plikami zasobów](https://msdn.microsoft.com/library/2699a539-b369-4b78-80f0-df03eb7b6780).
+ Aby uzyskać więcej informacji o zasobach w aplikacjach klasycznych platformy .NET, zobacz [zasoby w aplikacjach klasycznych](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890). Aby uzyskać więcej informacji o zasobach w aplikacjach klasycznych C++, zobacz [Praca z plikami zasobów](https://msdn.microsoft.com/library/2699a539-b369-4b78-80f0-df03eb7b6780).
 
  Aplikacje ze sklepu Windows używają różnych modeli zasobów z aplikacji klasycznych. Aby uzyskać informacje o zasobach w aplikacji do sklepu Windows, zobacz [Definiowanie zasobów aplikacji](https://msdn.microsoft.com/library/windows/apps/hh465228.aspx) w witrynie sieci Web Centrum deweloperów systemu Windows.
 
 ## <a name="working-with-resources"></a>Praca z zasobami
- W projekcie kodu zarządzanego Otwórz okno właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz **Właściwości**lub wpisz **właściwości projektu** w oknie **Szybkie uruchamianie** lub wpisz Alt + Enter w  **Okno Eksplorator rozwiązań** ). Wybierz kartę **zasoby** . Plik. resx można dodać, jeśli projekt nie zawiera już jednego z nich, dodawać i usuwać różne rodzaje zasobów oraz modyfikować istniejące zasoby.
+ W projekcie kodu zarządzanego Otwórz okno właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz **Właściwości**lub wpisz **właściwości projektu** w oknie **Szybkie uruchamianie** lub wpisz Alt + Enter w oknie **Eksplorator rozwiązań** ). Wybierz kartę **zasoby** . Plik. resx można dodać, jeśli projekt nie zawiera już jednego z nich, dodawać i usuwać różne rodzaje zasobów oraz modyfikować istniejące zasoby.
 
- Aby dowiedzieć się, jak korzystać z zasobów C++ w projektach, zobacz [How to: Create a Resource](https://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716).
+ Aby dowiedzieć się, jak korzystać z zasobów w projektach C++, zobacz [How to: Create a Resource](https://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716).

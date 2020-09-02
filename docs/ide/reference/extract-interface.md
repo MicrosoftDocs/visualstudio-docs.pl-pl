@@ -13,25 +13,25 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595673"
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnianie refaktoryzacji interfejsu
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
 - Visual Basic
 
-**Co:** Umożliwia utworzenie interfejsu przy użyciu istniejących elementów członkowskich z klasy, struktury lub interfejsu.
+**Co:** Umożliwia utworzenie interfejsu przy użyciu istniejących członków z klasy, struktury lub interfejsu.
 
-**Kiedy:** Masz członków w klasie, struktury lub interfejsu, które mogą być dziedziczone przez inne klasy, struktury lub interfejsów.
+**Kiedy:** Istnieją elementy członkowskie klasy, struktury lub interfejsu, które mogą być dziedziczone przez inne klasy, struktury lub interfejsy.
 
-**Dlaczego?** Interfejsy są świetnymi konstrukcjami dla projektów obiektowych. Wyobraź sobie, że masz zajęcia dla różnych zwierząt (Pies, Kot, Ptak), które mogą mieć wspólne metody, takie jak Jeść, Pić, Spać. Przy pomocy an złącze standardowe podobny IAnimal byłby uznawać Pies, Kot, i Ptak wobec mieć pewien wspólny " podpis" pod kątem tych metody.
+**Dlaczego:** Interfejsy są doskonałymi konstrukcjami dla projektów zorientowanych obiektowo. Wyobraź sobie, że klasy dla różnych zwierząt (Dog, Cat, ptak), które mogą mieć wszystkie typowe metody, takie jak Eat, napoje, uśpienie. Użycie interfejsu, takiego jak IAnimal, zezwoli na dostęp do tych metod dla psów, Cat i ptaka.
 
 ## <a name="extract-an-interface-refactoring"></a>Wyodrębnianie refaktoryzacji interfejsu
 
@@ -39,7 +39,7 @@ Ten refaktoryzator ma zastosowanie do:
 
    - C#:
 
-       ![Wyróżniony kod - C #](media/extractinterface-highlight-cs.png)
+       ![Wyróżniony kod — C #](media/extractinterface-highlight-cs.png)
 
    - Visual Basic:
 
@@ -48,39 +48,39 @@ Ten refaktoryzator ma zastosowanie do:
 2. Następnie wykonaj jedną z następujących czynności:
 
    - **Klawiatura**
-      - Naciśnij **klawisze Ctrl+R**, a następnie **klawisze Ctrl+I**. (Skrót klawiaturowy może się różnić w zależności od wybranego profilu).
-      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania,** a następnie wybrać **opcję Wyodrębnij interfejs** z okna podglądu.
+      - Naciśnij **klawisze CTRL + R**, a następnie **Ctrl + I**. (Skrót klawiaturowy może się różnić w zależności od wybranego profilu).
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** , a następnie wybierz pozycję **Wyodrębnij interfejs** w oknie podręcznym okna podglądu.
    - **Mysz**
-      - Wybierz **pozycję Edytuj > refaktoryzatora > interfejs wyodrębniania**.
-      - Kliknij prawym przyciskiem myszy nazwę klasy, wybierz menu **Szybkie akcje i Refaktoryzowania** i wybierz polecenie **Wyodrębnij interfejs** z okna podglądu.
+      - Wybierz pozycję **edytuj > refaktoryzacja > Wyodrębnij interfejs**.
+      - Kliknij prawym przyciskiem myszy nazwę klasy, wybierz menu **szybkie akcje i refaktoryzacje** i wybierz polecenie **Wyodrębnij interfejs** z menu podręcznego okna podglądu.
 
-3. W oknie dialogowym **Wyodrębnianie interfejsu,** które się pojawia, wprowadź żądane informacje:
+3. W oknie dialogowym **wyodrębnianie interfejsu** , które się pojawi, wprowadź wymagane informacje:
 
    ![Wyodrębnij interface](media/extractinterface-dialog-same-file.png)
 
    | Pole | Opis |
    | - | - |
-   | **Nowa nazwa interfejsu** | Nazwa interfejsu, który ma zostać utworzony. Nazwa domyślnie ma wartość I*ClassName*, gdzie *Nazwa klasy* jest nazwą klasy wybranej powyżej. |
-   | **Nowa nazwa pliku** | Nazwa wygenerowanego pliku, który będzie zawierał interfejs. Podobnie jak w przypadku nazwy interfejsu, ta nazwa będzie domyślnie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. Można również wybrać opcję **Dodaj do bieżącego pliku**. |
-   | **Wybieranie elementów członkowskich do utworzenia interfejsu** | Elementy, które mają być wyodrębnione do interfejsu. Możesz wybrać dowolną liczbę. |
+   | **Nazwa nowego interfejsu** | Nazwa interfejsu, który ma zostać utworzony. Nazwa będzie domyślnie równa I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. |
+   | **Nowa nazwa pliku** | Nazwa wygenerowanego pliku, który będzie zawierać interfejs. Podobnie jak w przypadku nazwy interfejsu, ta nazwa będzie domyślnie równa I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranej powyżej. Możesz również wybrać opcję, która ma zostać **dodana do bieżącego pliku**. |
+   | **Wybierz publiczne elementy członkowskie do interfejsu formularza** | Elementy do wyodrębnienia do interfejsu. Możesz wybrać dowolną liczbę. |
 
-4. Wybierz pozycję **OK**.
+4. Wybierz przycisk **OK**.
 
-   Interfejs jest tworzony w pliku o określonej nazwie. Ponadto wybrana klasa implementuje ten interfejs.
+   Interfejs jest tworzony w pliku o podanej nazwie. Ponadto wybrana Klasa implementuje ten interfejs.
 
    - C#:
 
-      ![Klasa wynikowa - C #](media/extractinterface-class-cs.png)
+      ![Klasa będąca wynikiem #](media/extractinterface-class-cs.png)
 
-      ![Wynikowy interfejs - C #](media/extractinterface-interface-cs.png)
+      ![Interfejs w języku C #](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-      ![Wynikowa klasa — visual basic](media/extractinterface-class-vb.png)
+      ![Klasa będąca wynikiem Visual Basic](media/extractinterface-class-vb.png)
 
-      ![Wynikowy interfejs — Visual Basic](media/extractinterface-interface-vb.png)
+      ![Interfejs uzyskany Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
-- [Wskazówki dla deweloperów platformy .NET](../csharp-developer-productivity.md)
+- [Porady dla deweloperów platformy .NET](../csharp-developer-productivity.md)

@@ -1,5 +1,5 @@
 ---
-title: CommandName, Element | Dokumentacja firmy Microsoft
+title: CommandName — Element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 113f420aa4cbbed9454df1ee0c0dd8aafd09a548
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184316"
 ---
 # <a name="commandname-element"></a>CommandName, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`CommandName` Element Określa tekst, który pojawia się w kategorii klawiatury w **opcje** okno dialogowe, a następnie w **polecenia** listy w **Dostosuj** okna dialogowego pole.  
+`CommandName`Element Określa tekst, który pojawia się w kategorii klawiatury w oknie dialogowym **Opcje** , a na liście **polecenia** w oknie dialogowym **Dostosowywanie** .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,7 +42,7 @@ ms.locfileid: "68184316"
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Strings, element](../extensibility/strings-element.md)|Grupuje elementy tekstu, takie jak `ButtonText` i `CommandName`.|  
+|[Strings, element](../extensibility/strings-element.md)|Grupuje elementy tekstowe, takie jak `ButtonText` i `CommandName` .|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

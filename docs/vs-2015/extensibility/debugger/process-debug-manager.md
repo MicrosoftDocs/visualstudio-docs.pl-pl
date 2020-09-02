@@ -1,5 +1,5 @@
 ---
-title: Menedżer debugowania przetwarzania | Dokumentacja firmy Microsoft
+title: Menedżer debugowania procesów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 186b9601b0146b64edba07ec8470bd86fd0a0a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153680"
 ---
 # <a name="process-debug-manager"></a>Menedżer debugowania procesów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Menedżer debugowania procesów (menedżerów PDM) jest składnikiem programu Visual Studio, która zarządza programów i procesów, udostępniając sesji debugowania, Menedżer i aparaty debugowania.  
+Menedżer debugowania procesów (PDM) to składnik programu Visual Studio, który zarządza programami i procesami, dzięki czemu są one dostępne dla Menedżera debugowania sesji i aparatów debugowania.  
   
- Program PDM zarządza wszystkie procesy, które mogą być debugowane. Do debugowania, program musi być zarejestrowany z menedżerów PDM. Jest to realizowane w czasie, który program jest uruchamiany przez port lub aparatu debugowania.  
+ PDM zarządza wszystkimi procesami, które mogą być debugowane. Aby można było debugować, program musi być zarejestrowany w PDM. Odbywa się to podczas uruchamiania programu przy użyciu portu lub aparatu debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Procesy](../../extensibility/debugger/processes.md)   
+ [Przetwarzające](../../extensibility/debugger/processes.md)   
  [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
- [Porty](../../extensibility/debugger/ports.md)   
- [Programy](../../extensibility/debugger/programs.md)   
+ [Np](../../extensibility/debugger/ports.md)   
+ [Programu](../../extensibility/debugger/programs.md)   
  [Składniki debugera](../../extensibility/debugger/debugger-components.md)

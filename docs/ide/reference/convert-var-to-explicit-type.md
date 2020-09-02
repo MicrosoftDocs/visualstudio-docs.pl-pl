@@ -1,5 +1,5 @@
 ---
-title: Kod refaktoryzatora zastępujący var typem jawnym
+title: Kod refaktoryzacji do zamiany var z typem jawnym
 ms.date: 05/15/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,39 +10,39 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595777"
 ---
-# <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refaktoryzacja w celu zastąpienia var typem jawnym
+# <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refaktoryzacja w celu zastąpienia wariancji typem jawnym
 
-Ta refaktoryzacja służy do zastępowania [var](/dotnet/csharp/language-reference/keywords/var) w deklaracji zmiennej lokalnej typem jawnym.
+Użyj tego refaktoryzacji, aby zastąpić [wariancję](/dotnet/csharp/language-reference/keywords/var) w deklaracji zmiennej lokalnej z typem jawnym.
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
-## <a name="why-to-use-an-explicit-type"></a>Dlaczego warto używać typu jawnego
+## <a name="why-to-use-an-explicit-type"></a>Dlaczego należy używać typu jawnego
 
-Oto kilka powodów, dla których warto zadeklarować zmienną o jawnym typie:
+Poniżej przedstawiono kilka powodów, dla których należy zadeklarować zmienną z typem jawnym:
 
 - Aby poprawić czytelność kodu.
 
-- Jeśli nie chcesz inicjować zmiennej w deklaracji.
+- Gdy nie chcesz inicjować zmiennej w deklaracji.
 
-Jednak [var](/dotnet/csharp/language-reference/keywords/var) musi być używany, gdy zmienna jest inicjowana z typem anonimowym i właściwości obiektu są dostępne w późniejszym punkcie. Aby uzyskać więcej informacji, zobacz [niejawnie wpisane zmienne lokalne (C#)](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables).
+Należy jednak użyć funkcji [var](/dotnet/csharp/language-reference/keywords/var) , gdy zmienna jest inicjowana z typem anonimowym, a właściwości obiektu są dostępne w późniejszym momencie. Aby uzyskać więcej informacji, zobacz [niejawnie wpisane zmienne lokalne (C#)](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables).
 
-## <a name="how-to-use-it"></a>Korzystanie
+## <a name="how-to-use-it"></a>Sposób użycia
 
-1. Umieść cieszę `var` na słowie kluczowym.
+1. Umieść karetkę na `var` słowie kluczowym.
 
-1. Naciśnij **klawisze Ctrl**+**.** lub kliknij ikonę ![ikony](../media/screwdriver-icon.png) śrubokręta na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl** + **.** lub kliknij ![ ikonę ikony śrubokrętu śrubokrętu ](../media/screwdriver-icon.png) na marginesie pliku kodu.
 
-   ![Użyj menu szybkie akcje typu jawnego](media/use-explicit-type.png)
+   ![Użyj jawnego menu szybkie akcje typu](media/use-explicit-type.png)
 
-1. Wybierz **opcję Użyj typu jawnego**. Możesz też wybrać **opcję Podgląd zmian,** aby otworzyć okno dialogowe [Podgląd zmian,](../../ide/preview-changes.md) a następnie wybierz pozycję **Zastosuj**.
+1. Wybierz opcję **Użyj typu jawnego**. Lub wybierz pozycję **Podgląd zmian** , aby otworzyć okno dialogowe [Podgląd zmian](../../ide/preview-changes.md) , a następnie wybierz pozycję **Zastosuj**.
 
 ## <a name="see-also"></a>Zobacz też
 

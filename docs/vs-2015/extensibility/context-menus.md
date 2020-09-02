@@ -1,5 +1,5 @@
 ---
-title: Menu kontekstowe | Dokumentacja firmy Microsoft
+title: Menu kontekstowe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9baab8ef64fa1952eff138165f608e25960c8cfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184266"
 ---
 # <a name="context-menus"></a>Menu kontekstowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Menu kontekstowe są wyświetlane, gdy użytkownik kliknie prawym przyciskiem myszy aktywny region obszaru klienta i usuń zaznaczenie po zwolnieniu prawego przycisku myszy.  
+Menu kontekstowe są wyświetlane, gdy użytkownik kliknie prawym przyciskiem myszy w aktywnym regionie obszaru klienta i wyczyści po zwolnieniu prawego przycisku myszy.  
   
 ## <a name="editor-context-menus"></a>Menu kontekstowe edytora  
- Przechwycenie `ECMD_SHOWCONTEXTMENU`, usługi w języka można kontrolować menu kontekstowe, które będą wyświetlane w edytorze. Aby wyświetlić menu kontekstowe, obsługi tego polecenia, gdy jest przekazywany do usługi <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>. Jeśli nie obsługuje tego polecenia, IDE Wyświetla standardowe menu kontekstowe podane dla edytora. Można także kontrolować zawartość elementu menu kontekstowego na podstawie poszczególnych znacznika. Aby uzyskać więcej informacji na ten temat, zobacz [przy użyciu znaczników tekstu przy użyciu interfejsu API starszych](../extensibility/using-text-markers-with-the-legacy-api.md) i [poleceń usługi języka Legacy przechwytuje](../extensibility/internals/intercepting-legacy-language-service-commands.md).  
+ Dzięki przechwyceniu `ECMD_SHOWCONTEXTMENU` Usługa języka może kontrolować menu kontekstowe, które będą wyświetlane w edytorze. Aby wyświetlić własne menu kontekstowe, należy obsłużyć to polecenie, gdy zostanie ono przesłane do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> telefonu przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A> . Jeśli to polecenie nie jest obsługiwane, środowisko IDE wyświetla standardowe menu kontekstowe dostępne dla edytora. Można również kontrolować zawartość menu kontekstowego dla poszczególnych znaczników. Aby uzyskać więcej informacji na ten temat, zobacz [Używanie znaczników tekstowych ze starszym interfejsem API](../extensibility/using-text-markers-with-the-legacy-api.md) i [przechwycenie starszych poleceń usługi językowej](../extensibility/internals/intercepting-legacy-language-service-commands.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)   
+ [Opracowywanie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)   
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)

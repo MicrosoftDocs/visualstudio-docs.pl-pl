@@ -24,27 +24,27 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c5fd73eb64c79ac9476c0036b9f2d709294d178
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704594"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak można debugować funkcje API systemu Windows?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli chcesz debugować funkcja interfejsu API Windows, która zawiera symbole NT załadowane, wykonaj następujące czynności.  
+Jeśli chcesz debugować funkcję interfejsu API systemu Windows z załadowanymi symbolami NT, należy wykonać następujące czynności.  
   
-### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Aby ustawić punkt przerwania w funkcji Windows API z symbole NT załadowane  
+### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Aby ustawić punkt przerwania w funkcji interfejsu API systemu Windows z załadowanymi symbolami NT  
   
-- Podaj nazwę funkcji wraz z nazwą biblioteki DLL, w której znajduje się funkcja. W 32-bitowego kodu formularz dekorowane nazwy funkcji. Aby ustawić punkt przerwania na **MessageBeep**, na przykład, należy wprowadzić następujące czynności.  
+- Wprowadź nazwę funkcji wraz z nazwą biblioteki DLL, w której znajduje się funkcja. W kodzie 32-bitowym, użyj dekoracyjnej formy nazwy funkcji. Aby ustawić punkt przerwania na **MessageBeep**, na przykład należy wprowadzić następujące polecenie.  
   
     ```  
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Aby uzyskać nazwę z atrybutami, zobacz [wyświetlania nazw Ozdobionych](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Aby uzyskać nazwę dekoracyjną, zobacz [Wyświetlanie dekoracyjnych nazw](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   
+ [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
