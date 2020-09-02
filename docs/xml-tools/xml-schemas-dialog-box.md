@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592337"
 ---
 # <a name="xml-schemas-dialog-box"></a>Schematy XML, okno dialogowe
@@ -23,17 +23,17 @@ Okno dialogowe **schematy XML** służy do wybierania schematu definicji języka
 
 Możesz uzyskać dostęp do okna dialogowego **schematy XML** , klikając przycisk **schematy** w oknie właściwości dokumentu lub wybierając **schematy** z menu **XML** .
 
-## <a name="uielement-list"></a>Lista elementów interfejsu
+## <a name="uielement-list"></a>Lista elementów UI
 
-**Korzystanie**
+**Używanych**
 
 Wybierz, jak schemat XML ma być używany.
 
-- **Automatyczny**. Ten schemat nie jest używany przez bieżący dokument, ale jest dostępny do automatycznego kojarzenia. Jeśli dokument XML deklaruje przestrzeń nazw pasującą do `targetNamespace` tego schematu, schemat zostanie automatycznie skojarzony i zostanie uwzględniony w zestawie schematów.
+- **Automatyczne**. Ten schemat nie jest używany przez bieżący dokument, ale jest dostępny do automatycznego kojarzenia. Jeśli dokument XML deklaruje przestrzeń nazw zgodną `targetNamespace` z tym schematem, schemat zostanie automatycznie skojarzony i zostanie uwzględniony w zestawie schematów.
 
-- **Użyj tego schematu**. Ten schemat jest używany przez bieżący dokument. Użytkownik jawnie zażądał użycia tego schematu przez kliknięcie tej kolumny lub schemat został automatycznie skojarzony na podstawie pasującego `targetNamespace`.
+- **Użyj tego schematu**. Ten schemat jest używany przez bieżący dokument. Użytkownik jawnie zażądał użycia tego schematu przez kliknięcie tej kolumny lub schemat został automatycznie skojarzony na podstawie pasującego elementu `targetNamespace` .
 
-- **Nie używaj wybranych schematów**. Ten schemat nie jest używany przez bieżący dokument, nawet jeśli schemat ma pasujące `targetNamespace`. To ustawienie może być przydatne do rozwiązywania konfliktów, jeśli istnieje więcej niż jedna wersja tego samego schematu w pamięci podręcznej schematów lub w rozwiązaniu.
+- **Nie używaj wybranych schematów**. Ten schemat nie jest używany przez bieżący dokument, nawet jeśli schemat ma pasujący element `targetNamespace` . To ustawienie może być przydatne do rozwiązywania konfliktów, jeśli istnieje więcej niż jedna wersja tego samego schematu w pamięci podręcznej schematów lub w rozwiązaniu.
 
 **Docelowa przestrzeń nazw**
 
@@ -51,7 +51,7 @@ Otwiera okno dialogowe **otwieranie schematu XSD** , które umożliwia wybranie 
 
 Usuwa aktualnie wybrany schemat z zestawu schematów. Spowoduje to usunięcie schematu z pamięci podręcznej schematu w pamięci, ale nie z systemu plików.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Wybieranie schematów XML do użycia](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
-- [Pamięć podręczna schematu](../xml-tools/schema-cache.md)
+- [Pamięć podręczna schematów](../xml-tools/schema-cache.md)

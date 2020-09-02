@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: analizowanieC++ kodu C dla wad | Microsoft Docs'
+title: 'Przewodnik: Analizowanie kodu C-C + + dla wad | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c822dbcc6a1ece2040da22a3442dd584c3926d97
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272434"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Wskazówki: analizowanie kodu C++ pod względem wad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjalnych wad kodu za pomocą narzędzia do analizyC++ kodu dla języka C/Code.  
+W tym instruktażu pokazano, jak analizować kod C/C++ pod kątem potencjalnych wad kodu za pomocą narzędzia do analizy kodu w kodzie C/C++.  
   
- W tym instruktażu krok po kroku przeprowadzisz przez proces korzystania z analizy kodu w celuC++ przeanalizowania kodu C/Code pod kątem potencjalnych usterek kodu.  
+ W tym instruktażu krok po kroku przeprowadzisz przez proces korzystania z analizy kodu w celu przeanalizowania kodu C/C++ pod kątem potencjalnych usterek kodu.  
   
  Wykonaj następujące czynności:  
   
@@ -44,11 +44,11 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
   
 - Kopia [przykładu demonstracyjnego](../code-quality/demo-sample.md).  
   
-- Podstawowe informacje o języku CC++/.  
+- Podstawowe informacje o języku C/C++.  
   
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>Aby uruchomić analizę wad kodu w kodzie natywnym  
   
-1. Otwórz rozwiązanie demonstracyjne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Otwórz rozwiązanie demonstracyjne w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      Rozwiązanie demonstracyjne wypełnia teraz **Eksplorator rozwiązań**.  
   
@@ -64,7 +64,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
   
 5. Kliknij pozycję **Analiza kodu**.  
   
-6. Kliknij pole wyboru **Włącz analizę kodu dla CC++ /on Build** .  
+6. Kliknij pole wyboru **Włącz analizę kodu dla C/C++ podczas kompilacji** .  
   
 7. Skompiluj ponownie projekt CodeDefects.  
   
@@ -74,13 +74,13 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
   
 1. W menu **Widok** kliknij **Lista błędów**.  
   
-     W zależności od profilu dewelopera wybranego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], może być konieczne wskazanie **innych okien** w menu **Widok** , a następnie kliknięcie przycisku **Lista błędów**.  
+     W zależności od wybranego profilu dewelopera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] może być konieczne wskazanie **innych okien** w menu **Widok** , a następnie kliknięcie przycisku **Lista błędów**.  
   
 2. W **Lista błędów**kliknij dwukrotnie następujące ostrzeżenie:  
   
      Ostrzeżenie C6230: niejawne rzutowanie między różnymi semantycznie typami: użycie HRESULT w kontekście Boolean.  
   
-     W edytorze kodu jest wyświetlany wiersz, który spowodował ostrzeżenie w `bool``ProcessDomain()`funkcji. To ostrzeżenie wskazuje, że wynik HRESULT jest używany w instrukcji "If", gdzie oczekiwano wyniku logicznego.  
+     W edytorze kodu jest wyświetlany wiersz, który spowodował ostrzeżenie w funkcji `bool``ProcessDomain()` . To ostrzeżenie wskazuje, że wynik HRESULT jest używany w instrukcji "If", gdzie oczekiwano wyniku logicznego.  
   
 3. Popraw to ostrzeżenie przy użyciu pomyślnego makra. Kod powinien wyglądać podobnie do następującego kodu:  
   
@@ -100,7 +100,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
   
 ### <a name="to-treat-warning-as-an-error"></a>Aby traktować ostrzeżenie jako błąd  
   
-1. W pliku usterek. cpp Dodaj następującą instrukcję `#pragma` na początku pliku, aby traktować ostrzeżenie C6001 jako błąd:  
+1. W pliku usterek. cpp Dodaj następującą `#pragma` instrukcję na początku pliku, aby traktować ostrzeżenie C6001 jako błąd:  
   
     ```  
     #pragma warning (error: 6001)  
@@ -110,7 +110,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
   
      W **Lista błędów**, C6001 teraz pojawia się jako błąd.  
   
-3. Popraw pozostałe dwa błędy C6001 w **Lista błędów** przez zainicjowanie `i` i `j` na 0.  
+3. Popraw pozostałe dwa błędy C6001 w **Lista błędów** przez zainicjowanie `i` i `j` do 0.  
   
 4. Skompiluj ponownie projekt CodeDefects.  
   
@@ -126,7 +126,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
   
 3. Kliknij pozycję **Analiza kodu**.  
   
-4. Zaznacz pole wyboru **Włącz analizę kodu dla CC++ /on Build** .  
+4. Zaznacz pole wyboru **Włącz analizę kodu dla C/C++ podczas kompilacji** .  
   
 5. Kompiluj ponownie projekt adnotacji.  
   
@@ -158,7 +158,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
   
 ### <a name="to-use-source-code-annotation"></a>Aby użyć adnotacji kodu źródłowego  
   
-1. Dodawanie adnotacji do parametrów formalnych i zwracanej wartości funkcji `AddTail` przy użyciu warunków wstępnych i post, jak pokazano w tym przykładzie:  
+1. Dodawanie adnotacji do parametrów formalnych i zwracanej wartości funkcji `AddTail` za pomocą warunków wstępnych i post, jak pokazano w tym przykładzie:  
   
      `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
   
@@ -195,4 +195,4 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
      Projekt kompiluje się bez żadnych ostrzeżeń lub błędów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Analizowanie kodu zarządzanego pod kątem defektów](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+ [Wskazówki: analizowanie zarządzanego kodu pod względem wad kodu](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

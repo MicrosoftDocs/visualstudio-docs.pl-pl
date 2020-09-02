@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetPassCount | Dokumentacja firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: SetPassCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42a4c4b008b34a66a408cbb9a5615ae3fbbf8407
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188610"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ustawia lub zmienia liczba — dostęp próbny skojarzone z Oczekujący punkt przerwania.  
+Ustawia lub zmienia liczbę przebiegów skojarzoną z oczekującym punktem przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int SetPassCount( 
   
 #### <a name="parameters"></a>Parametry  
  `bpPassCount`  
- [in] A [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która zawiera liczbę — dostęp próbny.  
+ podczas Struktura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) , która zawiera liczbę przebiegów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.  
   
 ## <a name="remarks"></a>Uwagi  
- Dowolnej liczbie — dostęp próbny, który był wcześniej skojarzony z Oczekujący punkt przerwania zostaną utracone. Wszystkie punkty przerwania, powiązany z tym oczekujących punktów przerwania są wywoływane w celu ich liczby — dostęp próbny równa `bpPassCount` parametru.  
+ Wszystkie liczby przebiegów, które wcześniej były skojarzone z oczekującym punktem przerwania, zostaną utracone. Wszystkie punkty przerwania powiązane z tym oczekującym punktem przerwania są wywoływane w celu ustawienia liczby przeskoków do `bpPassCount` parametru.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

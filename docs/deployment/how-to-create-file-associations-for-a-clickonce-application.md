@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76ecc41a852d80319f8a171ed590eb73680d92cc
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382500"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Instrukcje: tworzenie skojarzeń plików dla aplikacji ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje mogą być skojarzone z jednym lub więcej rozszerzeniami nazw plików, dzięki czemu aplikacja zostanie uruchomiona automatycznie, gdy użytkownik otworzy plik tych typów. Dodawanie obsługi rozszerzenia nazwy pliku do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji jest proste.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje mogą być skojarzone z jednym lub więcej rozszerzeniami nazw plików, dzięki czemu aplikacja zostanie uruchomiona automatycznie, gdy użytkownik otworzy plik tych typów. Dodawanie obsługi rozszerzenia nazwy pliku do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji jest proste.
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Aby utworzyć skojarzenia plików dla aplikacji ClickOnce
 
@@ -54,6 +54,6 @@ ms.locfileid: "85382500"
     Aby uzyskać więcej informacji, zobacz [Mage.exe (narzędzie tworzenia i edycji manifestów)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="see-also"></a>Zobacz też
-- [\<fileAssociation>postaci](../deployment/fileassociation-element-clickonce-application.md)
+- [\<fileAssociation> postaci](../deployment/fileassociation-element-clickonce-application.md)
 - [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (Narzędzie tworzenia i edycji manifestów)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

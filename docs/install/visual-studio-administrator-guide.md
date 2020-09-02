@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425410"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
@@ -30,7 +30,7 @@ W środowiskach korporacyjnych Administratorzy systemu zwykle wdrażają instala
 
 Ten przewodnik administratora zawiera wskazówki dotyczące scenariusza wdrożenia przedsiębiorstwa w środowiskach sieciowych.
 
-## <a name="before-you-begin"></a>Zanim rozpoczniesz
+## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 Przed wdrożeniem programu Visual Studio w całej organizacji należy wykonać kilka decyzji i wykonać zadania:
 

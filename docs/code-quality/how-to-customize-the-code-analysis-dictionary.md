@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453648"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Porady: dostosowywanie słownika analizy kodu
@@ -74,7 +74,7 @@ Możesz zmodyfikować zachowanie słownika analizy kodu, dodając warunki jako t
 
 - [Słownik/akronimy/CasingExceptions/akronim](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>Słownik/wyrazy/rozpoznane/Word
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a> Słownik/wyrazy/rozpoznane/Word
 
 Aby uwzględnić termin na liście warunków identyfikowanych przez analizę kodu jako prawidłowo wpisany, należy dodać termin jako tekst wewnętrzny słownika/wyrazów/rozpoznany/wyraz. W przypadku wyrazów/słów/rozpoznaje/elementy słowa nie jest rozróżniana wielkość liter.
 
@@ -109,7 +109,7 @@ Warunki dotyczące słownika/słów/rozpoznanych węzłów są stosowane do nast
 
 - [CA2204: Pisownia literałów powinna być poprawna](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Słownik/wyrazy/nierozpoznane/słowo
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Słownik/wyrazy/nierozpoznane/słowo
 
 Aby wykluczyć termin z listy warunków identyfikowanych przez analizę kodu jako prawidłowo wpisany, Dodaj termin do wykluczenia jako tekst wewnętrzny słownika/słów/nierozpoznanego/słowa. W warunkach słownika/słów/nierozpoznawalnych/nierozpoznanych elementów słowa nie jest rozróżniana wielkość liter.
 
@@ -144,7 +144,7 @@ Warunki w słowniku/słowach/nierozpoznanym węźle są stosowane do następują
 
 - [CA2204: Pisownia literałów powinna być poprawna](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Słownik/wyrazy/przestarzałe/wyrażenie [ @PreferredAlternate ]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Słownik/wyrazy/przestarzałe/wyrażenie [ @PreferredAlternate ]
 
 Aby uwzględnić termin na liście warunków identyfikowanych jako przestarzałe przez analizę kodu, Dodaj termin jako tekst wewnętrzny słownika/wyrazów/przestarzałych/terminowych. Przestarzały termin to wyraz, który jest wpisany prawidłowo, ale nie powinien być używany.
 
@@ -181,7 +181,7 @@ Warunki w słowniku/słowach/przestarzałych węzłach są stosowane do następu
 
 - [CA1726: Używaj preferowanych terminów](../code-quality/ca1726.md)
 
-### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Słownik/wyrazy/związek/wyrażenie [ @CompoundAlternate ]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Słownik/wyrazy/związek/wyrażenie [ @CompoundAlternate ]
 
 Wbudowany słownik identyfikuje niektóre terminy jako pojedyncze, osobne warunki, a nie termin złożony. Aby uwzględnić termin na liście warunków identyfikowanych przez analizę kodu jako wyraz złożony i aby określić poprawną wielkość liter w danym okresie, Dodaj termin jako wewnętrzny tekst słownika/wyrazów/elementu złożonego/terminu. W atrybucie CompoundAlternate elementu Term Określ poszczególne wyrazy, które składają się na termin złożony, wielką literą pojedynczych wyrazów (przypadek Pascal). Należy zauważyć, że termin określony w tekście wewnętrznym jest automatycznie dodawany do listy słownik/wyrazy/DiscreteExceptions.
 
@@ -214,7 +214,7 @@ Warunki w słowniku/słowach/węźle złożonym są stosowane do następujących
 
 - [CA1704: Pisownia identyfikatorów powinna być poprawna](../code-quality/ca1704.md)
 
-### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Słownik/wyrazy/DiscreteExceptions/Term
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Słownik/wyrazy/DiscreteExceptions/Term
 
 Aby wykluczyć termin z listy warunków, które Analiza kodu identyfikuje jako pojedynczy, odrębny wyraz, gdy termin jest sprawdzany przez reguły wielkości liter dla wyrazów złożonych, Dodaj termin jako tekst wewnętrzny słownika/wyrazów/DiscreteExceptions/Term. W warunku słownika/słów/DiscreteExceptions/Term nie jest rozróżniana wielkość liter.
 
@@ -239,7 +239,7 @@ Warunki w węźle słownik/wyrazy/DiscreteExceptions są stosowane do następuj�
 
 - [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702.md)
 
-### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Słownik/akronimy/CasingExceptions/akronim
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Słownik/akronimy/CasingExceptions/akronim
 
 Aby dołączyć akronim na liście warunków identyfikowanych przez analizę kodu jako prawidłowo wpisany i aby wskazać, jak akronim ma być sprawdzany przez reguły wielkości liter dla wyrazów złożonych, Dodaj termin jako tekst wewnętrzny słownika/akronimów/CasingExceptions/akronimów. Akronim w elemencie dictionary/Akronims/CasingExceptions/akronim jest uwzględniana wielkość liter.
 
@@ -262,7 +262,7 @@ Warunki w węźle słownik/akronimy/CasingExceptions są stosowane do następuj�
 
 - [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709.md)
 
-## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Aby zastosować słownik niestandardowy do projektu
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Aby zastosować słownik niestandardowy do projektu
 
 1. W **Eksplorator rozwiązań**Użyj jednej z następujących procedur:
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382396"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Instrukcje: uwzględnianie wymagań wstępnych z aplikacją ClickOnce
@@ -21,7 +21,7 @@ Przed dystrybucją wstępnie wymaganego oprogramowania do [!INCLUDE[ndptecclick]
 > [!NOTE]
 > Aby dodać pakiet Instalatora dla .NET Framework, zobacz [.NET Framework Przewodnik wdrażania dla deweloperów](/dotnet/framework/deployment/deployment-guide-for-developers).
 
-## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a>Aby dodać pakiet Instalatora przy użyciu Package.xml
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> Aby dodać pakiet Instalatora przy użyciu Package.xml
 
 1. W Eksploratorze plików otwórz folder **Packages** .
 

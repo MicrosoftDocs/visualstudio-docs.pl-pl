@@ -1,5 +1,5 @@
 ---
-title: Obsługa wielu widoków dokumentu | Dokumentacja firmy Microsoft
+title: Obsługa widoków wielu dokumentów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,34 +11,34 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9377fc12db8cedba65a418fd32b82a1421bd9b43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160524"
 ---
 # <a name="supporting-multiple-document-views"></a>Obsługa wielu widoków dokumentu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz podać więcej niż jeden widok dokumentu, tworząc oddzielny dokument dane i obiekty widoku dokumentu dla edytora. Czasami, w których będzie przydatny widok dokumentu dodatkowe są następujące:  
+Można podać więcej niż jeden widok dokumentu, tworząc oddzielne dane dokumentu i obiekty widoku dokumentu dla edytora. Niektóre przypadki, w których będzie przydatny dodatkowy widok dokumentu, są następujące:  
   
-- Nowe okno obsługi: Chcesz tego edytora, aby zapewnić co najmniej dwa widoki tego samego typu, aby użytkownik, który jest już otwarte w edytorze okna można otworzyć nowe okno, wybierając **nowe okno** polecenia **okna** menu.  
+- Obsługa nowych okien: Edytor ma udostępniać dwa lub więcej widoków tego samego typu, tak aby użytkownik, który ma już otwarte okno w edytorze, mógł otworzyć nowe okno, wybierając polecenie **nowe okno** w menu **okno** .  
   
-- Obsługa widoku formularza i kodu: Potrzebujesz tego edytora, aby zawierają widoki różnych typów. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], na przykład zawiera widok formularza i widoku kodu.  
+- Obsługa formularzy i kodu: chcesz, aby Edytor zapewniał widoki różnych typów. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]na przykład program udostępnia widok formularza i widok kodu.  
   
-  Aby uzyskać więcej informacji na ten temat zobacz procedurę CreateEditorInstance w pliku EditorFactory.cs w projekcie niestandardowy edytor, utworzona przez szablon pakietu Visual Studio. Aby uzyskać więcej informacji na temat tego projektu, zobacz [instruktażu: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Aby uzyskać więcej informacji na ten temat, zobacz procedurę metody CreateEditorInstance w pliku EditorFactory.cs w projekcie edytora niestandardowego utworzonym przez szablon pakietu programu Visual Studio. Aby uzyskać więcej informacji na temat tego projektu, zobacz [Przewodnik: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>Synchronizowanie widoków  
- Podczas implementowania wielu widoków dokumentu obiekt danych jest musi zachować wszystkie widoki zsynchronizowane z danymi. Można użyć obsługi interfejsy na zdarzeń <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> do synchronizowania wielu widoków z danymi.  
+ Podczas implementowania wielu widoków obiekt danych dokumentu jest odpowiedzialny za przechowywanie wszystkich widoków synchronizowanych z danymi. Korzystając z interfejsów obsługi zdarzeń, można <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> synchronizować wiele widoków z danymi.  
   
- Jeśli nie używasz <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiekt, aby zsynchronizować wiele widoków, a następnie należy zaimplementować własny system zdarzeń do obsługi zmiany wprowadzone do obiektu danych dokumentu. Różne poziomy szczegółowości umożliwia aktualizowanie wielu widoków. Ustawienie maksymalnej szczegółowości, podczas wpisywania w jednym widoku inne widoki zostaną zaktualizowane od razu. Za pomocą minimalna szczegółowość innych widoków nie są aktualizowane, dopóki ich aktywacji.  
+ Jeśli nie używasz <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu do synchronizowania wielu widoków, musisz zaimplementować własny system zdarzeń do obsługi zmian wprowadzonych w obiekcie danych dokumentu. Aby zapewnić aktualność wielu widoków, można użyć różnych poziomów szczegółowości. Z ustawieniem maksymalnego stopnia szczegółowości podczas wpisywania w jednym widoku inne widoki są aktualizowane natychmiast. Przy minimalnym poziomie szczegółowości inne widoki nie są aktualizowane, dopóki nie zostaną aktywowane.  
   
-## <a name="determining-whether-document-data-is-already-open"></a>Określanie, czy dane dokumentu jest już otwarty  
- Uruchamianie tabeli dokumentu (Normalizacją) w zintegrowanym środowisku programistycznym (IDE) pomaga śledzić, czy dane dla dokumentu jest jeszcze otwarty, jak pokazano na poniższym diagramie.  
+## <a name="determining-whether-document-data-is-already-open"></a>Określanie, czy dane dokumentu są już otwarte  
+ Uruchomiona tabela dokumentu (RDT) w zintegrowanym środowisku programistycznym (IDE) pomaga sprawdzić, czy dane dla dokumentu są już otwarte, jak pokazano na poniższym diagramie.  
   
- ![DocDataView — grafika](../extensibility/media/docdataview.gif "DocDataView —")  
+ ![Grafika DocDataView](../extensibility/media/docdataview.gif "Docdataview")  
 Wiele widoków  
   
- Domyślnie każdego widoku (obiekt widoku dokumentu) znajduje się w jego własnej ramki okna (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>). Jak już wspomniano, jednak dokumentu dane mogą być wyświetlane w wielu widoków. Aby włączyć tę opcję, Visual Studio sprawdza Normalizacją, aby ustalić, czy danego dokumentu jest już otwarty w edytorze. Kiedy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> do tworzenia edytora, zwracane wartości innej niż NULL, w `punkDocDataExisting` parametr wskazuje, czy dokument jest już otwarty w innym edytorze. Aby uzyskać więcej informacji na temat funkcji Normalizacją, zobacz [uruchamianie tabeli dokumentu](../extensibility/internals/running-document-table.md).  
+ Domyślnie każdy widok (obiekt widoku dokumentu) jest zawarty w osobnym ramce okna ( <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> ). Jak już zauważono, dane dokumentu mogą być wyświetlane w wielu widokach. Aby to umożliwić, program Visual Studio sprawdza RDT, aby określić, czy dokument jest już otwarty w edytorze. Gdy IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> do tworzenia edytora, wartość inna niż null zwracana w `punkDocDataExisting` parametrze wskazuje, że dokument jest już otwarty w innym edytorze. Aby uzyskać więcej informacji na temat sposobu działania funkcji RDT, zobacz [Uruchamianie tabeli dokumentów](../extensibility/internals/running-document-table.md).  
   
- W swojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementacji, sprawdź obiekt danych dokumentu, które są zwracane w `punkDocDataExisting` ustalenie, czy dane dokumentu są odpowiednie dla Twojego edytora. (Na przykład HTML wyświetlone tylko dane powinny przez edytor HTML.) Jeśli jest to odpowiednie, fabryką Edytor powinien zapewniają drugi widok danych. Jeśli `punkDocDataExisting` parametr nie jest `NULL`, istnieje możliwość, albo czy obiekt danych dokument jest otwarty w innym edytorze, a bardziej prawdopodobne, dane dokumentu jest już otwarty w innym widoku z tym samym edytora. Jeśli dane dokumentu jest otwarty w innej edytor, który nie obsługuje usługi fabryka edytora, Visual Studio nie można otworzyć usługi fabryka edytora. Aby uzyskać więcej informacji, zobacz [jak: Dołączanie widoków do danych dokumentów](../extensibility/how-to-attach-views-to-document-data.md).
+ W Twojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementacji Sprawdź obiekt danych dokumentu zwrócony w, `punkDocDataExisting` Aby określić, czy dane dokumentu są odpowiednie dla edytora. (Na przykład tylko dane HTML powinny być wyświetlane przez Edytor HTML). Jeśli jest to odpowiednie, fabryka edytorów powinna udostępnić drugi widok danych. Jeśli `punkDocDataExisting` parametr nie jest `NULL` , możliwe jest, że obiekt danych dokumentu jest otwarty w innym edytorze lub, prawdopodobnie, że dane dokumentu są już otwarte w innym widoku z tym samym edytorem. Jeśli dane dokumentu są otwarte w innym edytorze, który nie jest obsługiwany przez fabrykę edytora, program Visual Studio nie może otworzyć fabryki edytora. Aby uzyskać więcej informacji, zobacz [How to: dołączanie widoków do danych dokumentu](../extensibility/how-to-attach-views-to-document-data.md).

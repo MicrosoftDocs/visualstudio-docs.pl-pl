@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382305"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
@@ -59,7 +59,7 @@ Przed uruchomieniem Kreatora publikacji należy odpowiednio ustawić właściwo�
 
    - Jeśli chcesz uruchomić aplikację bezpośrednio z lokalizacji publikowania, kliknij przycisk **nie, ta aplikacja jest dostępna tylko w trybie online**. Skrót w menu **Start** nie zostanie utworzony.
 
-     Kliknij przycisk **Dalej** , aby kontynuować.
+     Kliknij pozycję **Next** (Dalej), aby kontynuować.
 
 6. Kliknij przycisk **Zakończ** , aby opublikować aplikację.
 
@@ -88,7 +88,7 @@ Przed uruchomieniem Kreatora publikacji należy odpowiednio ustawić właściwo�
 
    - Jeśli aplikacja nie będzie sprawdzać dostępności aktualizacji, kliknij **aplikację nie będzie sprawdzać dostępności aktualizacji**.
 
-     Kliknij przycisk **Dalej** , aby kontynuować.
+     Kliknij pozycję **Next** (Dalej), aby kontynuować.
 
 6. Kliknij przycisk **Zakończ** , aby opublikować aplikację.
 

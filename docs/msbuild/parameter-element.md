@@ -1,5 +1,5 @@
 ---
-title: Element parametru | Dokumenty firmy Microsoft
+title: Element parametru | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -18,17 +18,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78263111"
 ---
-# <a name="parameter-element"></a>Element parametru
+# <a name="parameter-element"></a>Parameter, element
 
-Zawiera informacje o określonym parametrze dla zadania `UsingTask` `TaskFactory`generowanego przez plik .  Nazwa elementu jest nazwą parametru.  Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Zawiera informacje dotyczące określonego parametru zadania, które jest generowane przez `UsingTask` `TaskFactory` .  Nazwa elementu jest nazwą parametru.  Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<> projektu \<UsingTask> \<ParameterGroup> \<Parametr>
+ \<Project> \<UsingTask>
+ \<ParameterGroup>
+ \<Parameter>
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,9 +48,9 @@ Zawiera informacje o określonym parametrze dla zadania `UsingTask` `TaskFactory
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`ParameterType`|Atrybut opcjonalny.<br /><br /> Na przykład typ .NET parametru `System.String`.|
-|`Output`|Opcjonalny atrybut logiczny.<br /><br /> Jeśli `true`parametr ten jest parametrem wyjściowym dla zadania. Domyślna wartość to `false`.|
-|`Required`|Opcjonalny atrybut logiczny.<br /><br /> Jeśli `true`parametr ten jest wymaganym parametrem dla zadania. Domyślna wartość to `false`.|
+|`ParameterType`|Atrybut opcjonalny.<br /><br /> Typ .NET parametru, na przykład `System.String` .|
+|`Output`|Opcjonalny atrybut Boolean.<br /><br /> Jeśli `true` , ten parametr jest parametrem wyjściowym zadania. Domyślna wartość to `false`.|
+|`Required`|Opcjonalny atrybut Boolean.<br /><br /> Jeśli `true` , ten parametr jest wymaganym parametrem zadania. Domyślna wartość to `false`.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -58,11 +60,11 @@ Zawiera informacje o określonym parametrze dla zadania `UsingTask` `TaskFactory
 
 |Element|Opis|
 |-------------|-----------------|
-|[Grupa parametrów](../msbuild/parametergroup-element.md)|Zawiera opcjonalną listę parametrów, które będą obecne w `UsingTask` `TaskFactory`zadaniu generowanym przez program .|
+|[ParameterGroup —](../msbuild/parametergroup-element.md)|Zawiera opcjonalną listę parametrów, które będą obecne w zadaniu wygenerowanym przez `UsingTask` `TaskFactory` .|
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie `Parameter` pokazano, jak używać elementu.
+ Poniższy przykład pokazuje, jak używać `Parameter` elementu.
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
@@ -80,5 +82,5 @@ Zawiera informacje o określonym parametrze dla zadania `UsingTask` `TaskFactory
 ## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Dokumentacja zadań](../msbuild/msbuild-task-reference.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

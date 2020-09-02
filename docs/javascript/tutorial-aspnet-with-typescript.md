@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453696"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Samouczek: Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript w programie Visual Studio

@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą rozwiązywać nadmiernie przydzieloną subskrypcje
 ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453718"
 ---
 # <a name="over-allocated-subscriptions"></a>Nadmiernie przydzieloną subskrypcje
@@ -41,7 +41,7 @@ Jeśli Twoja organizacja ma Umowa Enterprise (EA), Administratorzy mogą przypis
 >
 > Klient jest odpowiedzialny za zagwarantowanie, że dla każdej przypisanej subskrypcji usługi GitHub istnieje odpowiedni program Visual Studio z subskrypcją usługi GitHub przypisany w portalu zarządzania w celu zachowania zgodności z wymaganiami dotyczącymi licencjonowania dla tej subskrypcji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

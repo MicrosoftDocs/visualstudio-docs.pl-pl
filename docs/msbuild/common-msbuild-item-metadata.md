@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c715c16782733a08bb617a464c1aa9510d35b54
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425958"
 ---
-# <a name="common-msbuild-item-metadata"></a>Typowe metadane elementu MSBuild
+# <a name="common-msbuild-item-metadata"></a>Wspólne metadane elementów programu MSBuild
 
 W poniższej tabeli opisano opcjonalne metadane elementów, których znaczenie dotyczy niektórych zestawów SDK lub obiektów docelowych MSBuild, ale które nie są domyślnie ustawione dla każdego elementu. Można ustawić te ustawienia, aby mieć wpływ na zachowanie kompilacji, ale tylko wtedy, gdy plik zestawu SDK lub plików docelowych jest rozpoznawany przez użytkownika.
 

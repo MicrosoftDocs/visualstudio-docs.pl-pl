@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::EnumPorts | Dokumentacja firmy Microsoft
+title: 'IDebugPortSupplier2:: EnumPorts | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9324314160e5efe7174f0f6987d5cf0782ccb1ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188330"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera listę wszystkich portów dostarczanych przez dostawcę portu.  
+Pobiera listę wszystkich portów dostarczonych przez dostawcę portu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,10 +40,10 @@ int EnumPorts( 
   
 #### <a name="parameters"></a>Parametry  
  `ppEnum`  
- [out] Zwraca [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) obiekt zawierający listę portów dostarczony.  
+ określoną Zwraca obiekt [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) zawierający listę dostarczonych portów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   

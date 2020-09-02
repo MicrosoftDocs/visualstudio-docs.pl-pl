@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvInitProvider | Dokumentacja firmy Microsoft
+title: Funkcja CvInitProvider — | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5a8a9e70c85563e95037c754c59b6077ed21f28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188799"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Inicjuje dostawcę znaczników narzędzia. Musi zostać wywołana przed wszystkie inne funkcje SDK narzędzia Concurrency Visualizer.  
+Inicjuje dostawcę znaczników. Musi być wywoływana przed innymi funkcjami zestawu SDK wizualizatora współbieżności.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,16 +36,16 @@ HRESULT CvInitProvider(
   
 #### <a name="parameters"></a>Parametry  
  `pGuid`  
- Identyfikator guid dostawcy. Nie może mieć wartości NULL.  
+ Identyfikator GUID dostawcy. Nie może mieć wartości NULL.  
   
  `ppProvider`  
- Adres zmiennej danych wyjściowych, który będzie przechowywał kontekstu dostawcy. Nie może mieć wartości NULL.  
+ Adres zmiennej wyjściowej, w której będzie przechowywany kontekst dostawcy. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Pomyślnie zainicjowano dostawcy lub kod błędu w przypadku zostały wszystkie błędy, S_OK. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
+ S_OK, gdy dostawca został pomyślnie zainicjowany lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** cvmarkers. h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+ [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

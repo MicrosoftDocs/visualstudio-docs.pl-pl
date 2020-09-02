@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b6717f524f6a2d3f9f09290ac9bfbd8f02fc23fb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544550"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Średni zestaw roboczy w bajtach dla profilowanego procesu
@@ -26,7 +26,7 @@ ms.locfileid: "85544550"
 |-|-|
 |Identyfikator reguły|DA0503|
 |Kategoria|Monitorowanie zasobów|
-|Metoda profilowania|Wszystkie|
+|Metoda profilowania|Wszystko|
 |Komunikat|Te informacje zostały zebrane tylko w celu uzyskania informacji. Licznik zestawu roboczego procesu mierzy użycie pamięci fizycznej przez proces profilowania. Raportowana wartość to średnia obliczona dla wszystkich interwałów pomiarowych.|
 |Typ reguły|Informacje|
 

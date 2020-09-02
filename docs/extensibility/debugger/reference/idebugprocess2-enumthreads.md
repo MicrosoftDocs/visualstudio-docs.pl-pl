@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::WyliczeniaWy | Dokumenty firmy Microsoft
+title: 'IDebugProcess2:: EnumThreads — | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 52383649fc45eae6bbac6831f9bb233b9c0a2fde
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724068"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
@@ -41,15 +41,15 @@ int EnumThreads(
 
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
-[na zewnątrz] Zwraca obiekt [IEnumDebugThreads2,](../../../extensibility/debugger/reference/ienumdebugthreads2.md) który zawiera listę wszystkich wątków we wszystkich programach w procesie.
+określoną Zwraca obiekt [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) , który zawiera listę wszystkich wątków we wszystkich programach w procesie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda wylicza wątki uruchomione w każdym programie, a następnie łączy je w widok procesu wątków. Pojedynczy wątek może działać w wielu programach; ta metoda wylicza ten wątek tylko raz.
+ Ta metoda wylicza wątki działające w każdym programie, a następnie łączy je w widok procesu wątków. Pojedynczy wątek może działać w wielu programach; Ta metoda wylicza ten wątek tylko raz.
 
- Ta metoda przedstawia listę wątków procesu bez duplikatów. W przeciwnym razie, aby wyliczyć wątki uruchomione w określonym programie, należy użyć [Metody Wyliczenia.](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
+ Ta metoda przedstawia listę wątków procesu bez duplikatów. W przeciwnym razie aby wyliczyć wątki działające w określonym programie, należy użyć metody [EnumThreads —](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

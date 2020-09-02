@@ -8,10 +8,10 @@ ms.date: 06/16/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą usuwać przypisania subskrypcji
 ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87434273"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Usuwanie przypisań w subskrypcjach programu Visual Studio

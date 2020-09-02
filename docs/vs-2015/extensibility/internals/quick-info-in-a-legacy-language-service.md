@@ -1,5 +1,5 @@
 ---
-title: Szybkie informacje w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
+title: Szybkie informacje w starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,34 +13,34 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436657"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64781980"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Szybkie informacje w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Szybkie informacje technologii IntelliSense zawiera informacje o odpowiadającym w źródle, gdy użytkownik umieszcza karetkę w identyfikatorze i wybiera **Quick Info** z **IntelliSense** menu lub mieści wskaźnik myszy kursor nad identyfikatorem. Powoduje to etykietki narzędzia się z informacjami o tym identyfikatorze. Te informacje zazwyczaj składa się z typ identyfikatora. Gdy aparat debugowania jest aktywne, te informacje mogą obejmować bieżącą wartość. Aparat debugowania dostarcza wartości wyrażeń, gdy usługa językowa obsługuje tylko identyfikatorów.  
+Funkcja IntelliSense — szybkie informacje wyświetla informacje o identyfikatorze w źródle, gdy użytkownik umieści karetkę w identyfikatorze i wybiera **szybkie informacje** z menu **IntelliSense** lub utrzymuje wskaźnik myszy nad identyfikatorem. Powoduje to wyświetlenie etykietki narzędzia z informacjami o identyfikatorze. Te informacje zwykle składają się z typu identyfikatora. Gdy aparat debugowania jest aktywny, te informacje mogą zawierać bieżącą wartość. Aparat debugowania dostarcza wartości wyrażeń, podczas gdy usługa języka obsługuje tylko identyfikatory.  
   
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [instruktażu: Wyświetlanie etykietek narzędzi Szybkieinfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
+ Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej, zobacz [Przewodnik: wyświetlanie etykietek narzędzi sekcji szybkich informacji](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
-> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
+> Zalecamy rozpoczęcie korzystania z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i pozwala korzystać z nowych funkcji edytora.  
   
- Klasy usługi języka framework (MPF) pakietu zarządzanego zapewniają pełną obsługę wyświetlania etykietki narzędzia Szybkie informacje technologii IntelliSense. To wszystko, co należy zrobić, podaj tekst, który ma być wyświetlane i włączyć funkcję Szybkie informacje.  
+ Klasy usługi języka Managed Package Framework (MPF) zapewniają pełną obsługę wyświetlania porady narzędzia do szybkiej obsługi funkcji IntelliSense. Wystarczy podać tekst do wyświetlenia i włączyć funkcję Szybkie informacje.  
   
- Tekst, który ma być wyświetlany można uzyskać przez wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizatora metody z wartością Przyczyna analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. Z tego powodu Określa, że analizator, aby uzyskać informacje o typie (lub niezależnie od rodzaju jest odpowiednia do wyświetlenia w etykietce narzędzia Szybkie informacje) dla identyfikatora w lokalizacji określonej w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiektu. <xref:Microsoft.VisualStudio.Package.ParseRequest> Obiekt jest co został przekazany do <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody.  
+ Tekst, który ma być wyświetlany, jest uzyskiwany przez wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizatora metody z wartością przyczyny analizy <xref:Microsoft.VisualStudio.Package.ParseReason> . Ten powód nakazuje analizatorowi uzyskanie informacji o typie (lub dowolnego elementu, który jest wyświetlany w etykietce narzędzia szybkiej informacji) dla identyfikatora w lokalizacji określonej w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekcie. <xref:Microsoft.VisualStudio.Package.ParseRequest>Obiekt jest przekazano do <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody.  
   
- Analizator musi przeanalizować wszystko, co do pozycji w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiektu w celu określenia typów wszystkich identyfikatorów. Następnie analizator należy uzyskać identyfikator lokalizacji żądania analizy. Na koniec analizator musi przekazać dane Porada narzędzia, które są skojarzone z danym identyfikatorem do <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu, więc ten obiekt może zwrócić tekst z <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> metody.  
+ Analizator musi analizować wszystko do pozycji w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekcie, aby określić typy wszystkich identyfikatorów. Następnie analizator musi uzyskać identyfikator w lokalizacji żądania analizy. Na koniec analizator musi przekazać dane etykietki narzędzia powiązane z tym identyfikatorem do <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu, aby obiekt mógł zwrócić tekst z <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> metody.  
   
-## <a name="enabling-the-quick-info-feature"></a>Włączenie funkcji Szybkie informacje  
- Aby włączyć funkcję Szybkie informacje, należy ustawić `CodeSense` i `QuickInfo` nazwanych parametrów z <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>. Ustaw te atrybuty <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> i <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> właściwości.  
+## <a name="enabling-the-quick-info-feature"></a>Włączanie funkcji Quick info  
+ Aby włączyć funkcję Szybkie informacje, należy ustawić `CodeSense` `QuickInfo` Parametry i <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Te atrybuty ustawiają <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> właściwości i <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> .  
   
-## <a name="implementing-the-quick-info-feature"></a>Implementowanie funkcji Szybkie informacje  
- <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasa obsługuje operację szybkie informacje technologii IntelliSense. Gdy <xref:Microsoft.VisualStudio.Package.ViewFilter> klasa otrzymuje <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> polecenia, wywołania klasy <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason> i położenie karetki w czasie <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Wysłano polecenie. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Analizatora składni metody należy następnie przeanalizować źródła do danej lokalizacji, a następnie analizować identyfikator w podanej lokalizacji, aby określić, co jest wyświetlane w etykietce narzędzia Szybkie informacje.  
+## <a name="implementing-the-quick-info-feature"></a>Implementowanie funkcji szybkich informacji  
+ <xref:Microsoft.VisualStudio.Package.ViewFilter>Klasa obsługuje operację szybkiej informacji funkcji IntelliSense. Gdy <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasa otrzymuje <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> polecenie, Klasa wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę z przyczyną analizy <xref:Microsoft.VisualStudio.Package.ParseReason> i lokalizacją karetki w momencie <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wysłania polecenia. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>Analizator metody musi następnie przeanalizować źródło do danej lokalizacji, a następnie przeanalizować identyfikator w podanej lokalizacji, aby określić, co ma być wyświetlane w etykietce narzędzia szybkiej informacji.  
   
- Większość parsery zrobić początkowej analizy całego pliku źródłowego i zapisać wyniki w drzewo analizy. Pełna analiza odbywa się podczas <xref:Microsoft.VisualStudio.Package.ParseReason> jest przekazywany do <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody. Inne rodzaje analizy, następnie można użyć w drzewie analizy uzyskać odpowiednie informacje.  
+ Większość analizatorów przeprowadza wstępną analizę całego pliku źródłowego i zapisuje wyniki w drzewie analizy. Zakończenie przeprowadzenia analizy odbywa się, gdy <xref:Microsoft.VisualStudio.Package.ParseReason> zostanie przekazane do <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody. Inne rodzaje analiz mogą następnie użyć drzewa analizy do uzyskania żądanych informacji.  
   
- Na przykład analizy Przyczyna wartość <xref:Microsoft.VisualStudio.Package.ParseReason> można znaleźć identyfikatora w lokalizacji źródłowej i wyszukiwanie w drzewie analizy w celu uzyskania informacji o typie. Informacje o tym typie są następnie przekazywane do <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy i jest zwracany przez <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> metody.
+ Na przykład wartość przyczyny analizy <xref:Microsoft.VisualStudio.Package.ParseReason> może znaleźć identyfikator w lokalizacji źródłowej i wyszukać ją w drzewie analizy, aby uzyskać informacje o typie. Informacje tego typu są następnie przesyłane do <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy i zwracane przez <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> metodę.

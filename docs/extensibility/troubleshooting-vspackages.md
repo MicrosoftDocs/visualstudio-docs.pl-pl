@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235033"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
@@ -123,6 +123,6 @@ Poniżej przedstawiono typowe problemy, które mogą mieć pakietu VSPackage i p
 
    Upewnij się, że wpis InprocServer32 ma poprawną ścieżkę do biblioteki dll pakietu VSPackage.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakiety VSPackage](../extensibility/internals/vspackages.md)
 - [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

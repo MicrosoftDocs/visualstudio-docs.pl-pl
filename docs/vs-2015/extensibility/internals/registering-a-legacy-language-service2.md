@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie starszej wersji usługi językowej2 | Dokumentacja firmy Microsoft
+title: Rejestrowanie starszej wersji językowej Językowej2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,40 +13,40 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188835"
 ---
 # <a name="registering-a-legacy-language-service"></a>Rejestrowanie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Poniższe sekcje zawierają listę wpisów rejestru dla różnych języków opcje usługi dostępne w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+W poniższych sekcjach znajdują się listy wpisów rejestru dla różnych opcji usługi językowej dostępnych w programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
- Na liście poniżej wpisy rejestru *katalogu głównego rejestru programu VS* jest równa HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, gdzie *X.Y* jest [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] numer wersji.  
+ Na poniższej liście wpisów rejestru program *vs reg root* jest równy HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *X. y*, gdzie *x. y* jest [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] numerem wersji.  
   
-## <a name="registry-entries-for-language-service-options"></a>Wpisy rejestru dla opcji usługi w języka  
- *Katalogu głównego rejestru programu VS*usług \Languages\Language\\*Nazwa języka* klucz może zawierać następujących wartości.  
+## <a name="registry-entries-for-language-service-options"></a>Wpisy rejestru dotyczące opcji usługi językowej  
+ Klucz nazwy języka głównego usług \Languages\Language Services programu *vs reg* \\ *Language Name* może zawierać następujące wartości.  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|*\<GUID>*|Identyfikator GUID usługi języka.|  
-|LangResID|REG_DWORD|0x0 0xffff|Ciąg identyfikatora zasobów (ResID) dla nazwy języka zlokalizowanego tekstu.|  
-|Package|REG_SZ|*\<GUID>*|Identyfikator GUID pakietu VSPackage.|  
-|ShowCompletion|REG_DWORD|0-1|Określa, czy **uzupełniania instrukcji** opcji na liście **opcje** okno dialogowe są włączone.|  
-|ShowSmartIndent|REG_DWORD|0-1|Określa, czy możliwość dokonania wyboru **inteligentne** wcięcia w **opcje** okno dialogowe jest włączona.|  
-|RequestStockColors|REG_DWORD|0-1|Określa, czy niestandardowe lub domyślne kolory Kolor słów kluczowych.|  
-|ShowHotURLs|REG_DWORD|0-1|Określa, czy użytkownik może kliknąć adresów URL.|  
-|Domyślnie do adresów URL innych niż gorąca|REG_DWORD|0-1|Określa ustawienia początkowego dla **Włącz nawigację adresów URL jednym kliknięciem** opcji **opcje** okno dialogowe.|  
-|DefaultToInsertSpaces|REG_DWORD|0-1|Określa, czy usługa językowa ma "Wstaw miejsca do magazynowania" jako jego opcji karty domyślnej.|  
-|ShowDropdownBarOption|REG_DWORD|0-1|Włącza lub wyłącza **pasek nawigacyjny** opcji **opcje** okno dialogowe, które pokazuje lub ukrywa **pasek nawigacyjny**.|  
-|Tylko jeden kod okna|REG_DWORD|0-1|Włącza lub wyłącza **nowe okno** choice w **okna** menu dla usługi w języka.|  
-|EnableAdvancedMembersOption|REG_DWORD|0-1|Włącza lub wyłącza **opcje** ustawienie okno dialogowe **Ukryj członków zaawansowanych**.|  
-|Obsługa CF_HTML|REG_DWORD|0-1|Określa, czy edytor umożliwia kopiowanie i wklejanie danych HTML.|  
-|EnableLineNumbersOption|REG_DWORD|0-1|Określa, czy **numery wierszy** opcji na liście **opcje** okno dialogowe jest włączona dla usługi w języka.|  
-|HideAdvancedMembersByDefault|REG_DWORD|0-1|Określa, czy członków zaawansowanych, takich jak pola prywatne są ukryte w listach uzupełniania.|  
-|ShowBraceCompletion|REG_DWORD|0-1|Określa, czy **uzupełniania nawiasów** opcji **opcje** okno dialogowe jest włączona.|  
+|(Domyślnie)|REG_SZ|*\<GUID>*|Identyfikator GUID usługi językowej.|  
+|LangResID|REG_DWORD|0x0 — 0xFFFF|Identyfikator zasobu ciągu (ResID) dla zlokalizowanej nazwy tekstu języka.|  
+|Pakiet|REG_SZ|*\<GUID>*|Identyfikator GUID pakietu VSPackage.|  
+|ShowCompletion|REG_DWORD|0-1|Określa, czy opcje **uzupełniania instrukcji** w oknie dialogowym **Opcje** są włączone.|  
+|ShowSmartIndent|REG_DWORD|0-1|Określa, czy opcja wyboru **inteligentnego** wcięcia w oknie dialogowym **Opcje** jest włączona.|  
+|RequestStockColors|REG_DWORD|0-1|Określa, czy kolory niestandardowe lub domyślne są używane do kolorowania słów kluczowych.|  
+|ShowHotURLs|REG_DWORD|0-1|Określa, czy użytkownik może klikać adresy URL.|  
+|Domyślne dla nieaktywnych adresów URL|REG_DWORD|0-1|Określa ustawienie początkowe opcji nawigacji po **pojedynczym kliknięciu adresu URL** w oknie dialogowym **Opcje** .|  
+|DefaultToInsertSpaces|REG_DWORD|0-1|Określa, czy usługa językowa ma opcję "Wstaw spacje" jako domyślną kartę.|  
+|ShowDropdownBarOption|REG_DWORD|0-1|Włącza lub wyłącza opcję **pasek nawigacyjny** w oknie dialogowym **Opcje** , które pokazuje lub ukrywa **pasek nawigacyjny**.|  
+|Tylko jedno okno kodu|REG_DWORD|0-1|Włącza lub wyłącza wybór **nowego okna** w menu **okno** dla usługi językowej.|  
+|EnableAdvancedMembersOption|REG_DWORD|0-1|Włącza lub wyłącza ustawienie okna dialogowego **Opcje** dla opcji **Ukryj zaawansowane elementy członkowskie**.|  
+|CF_HTML pomocy technicznej|REG_DWORD|0-1|Określa, czy Edytor umożliwia kopiowanie i wklejanie danych HTML.|  
+|EnableLineNumbersOption|REG_DWORD|0-1|Określa, czy opcje **numerów wierszy** w oknie dialogowym **Opcje** są włączone dla usługi językowej.|  
+|HideAdvancedMembersByDefault|REG_DWORD|0-1|Określa, czy zaawansowane elementy członkowskie, takie jak pola prywatne, są ukryte na listach uzupełniania.|  
+|ShowBraceCompletion|REG_DWORD|0-1|Określa, czy opcja **uzupełniania nawiasów** w oknie dialogowym **Opcje** jest włączona.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -63,12 +63,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         ShowDropdownBarOption = reg_dword:0x00000001  
 ```  
   
-## <a name="registry-entries-for-debugger-languages-options"></a>Wpisy rejestru dotyczące języków — opcje debugera  
- *Katalogu głównego rejestru programu VS*usług \Languages\Language\\*Nazwa języka*\Debugger języków\\*GUID*\ klucz może uwzględniać następujące wartości.  
+## <a name="registry-entries-for-debugger-languages-options"></a>Wpisy rejestru dotyczące opcji języków debugera  
+ W programie *vs reg root*\Languages\Language Services \\ *nazwa języka*\Debugger Languages \\ *GUID*\ Key może zawierać następujące wartości.  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|tekst|Wartość domyślna może służyć do dokumentowania nazwę języka. Nazwa tego klucza jest identyfikatorem GUID ewaluatora wyrażeń, który ma odpowiadający mu wpis w  *\<VS Reg główny >* \AD7Metrics\Expression ewaluatora.|  
+|(Domyślnie)|REG_SZ|tekst|Wartość domyślna może służyć do dokumentowania nazwy języka. Nazwa tego klucza jest identyfikatorem GUID ewaluatora wyrażeń, który ma odpowiadający mu wpis w *\<VS Reg Root>* ewaluatora \AD7Metrics\Expression.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -83,13 +83,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-editor-tools-options"></a>Wpisy rejestru dla opcji narzędzi edytora  
- Możesz dodać klucze rejestru w kluczu EditorToolsOptions węzłów właściwości i strony właściwości. Te klucze i ich wartości identyfikują strony właściwości w **opcje** okno dialogowe (na **narzędzia** menu), są używane do konfigurowania usługi języka. W poniższym przykładzie *nazwy strony* to nazwa strony właściwości i *nazwa węzła* znajduje się na nazwę węzła w drzewie **opcje** okno dialogowe. Zapis strony i zapis węzła należy określić osobno.  
+ Klucze rejestru można dodać w kluczu EditorToolsOptions dla stron właściwości i węzłów właściwości. Te klucze i ich wartości identyfikują strony właściwości w oknie dialogowym **Opcje** (w menu **Narzędzia** ), które są używane do konfigurowania usługi językowej. W poniższym przykładzie *nazwa strony* jest nazwą strony właściwości, a *nazwa węzła* jest nazwą węzła w drzewie okna dialogowego **Opcje** . Wpis strony i wpis węzła muszą być określone osobno.  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|Atrybut resID|Zlokalizowana wyświetlana nazwa ta strona opcji. Nazwa może zawierać tekst dosłowny lub #`nnn`, gdzie `nnn` jest identyfikator zasobu ciągu w towarzyszącej bibliotece DLL z określonego pakietu VSPackage.|  
-|Package|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID pakietu VSPackage, który implementuje ta strona opcji.|  
-|Strona|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID strony właściwości, do żądania z pakietu VSPackage, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metody. Jeśli tego wpisu rejestru nie jest obecny, klucz rejestru w tym artykule opisano węzła nie strony.|  
+|(Domyślnie)|REG_SZ|ResID|Zlokalizowana nazwa wyświetlana tej strony opcji. Nazwa może być tekstem literalnym lub # `nnn` , gdzie `nnn` jest identyfikatorem zasobu ciągu w SATELICKIEJ bibliotece DLL określonego pakietu VSPackage.|  
+|Pakiet|REG_SZ|*IDENT*|Identyfikator GUID pakietu VSPackage, który implementuje Tę stronę opcji.|  
+|Strona|REG_SZ|*IDENT*|Identyfikator GUID strony właściwości do żądania od pakietu VSPackage przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metody. Jeśli ten wpis rejestru nie istnieje, klucz rejestru zawiera opis węzła, a nie strony.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -116,12 +116,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
               Page      = reg_sz:{607D8062-68D1-41E4-9A35-B5E7F14D0481}  
 ```  
   
-## <a name="registry-entries-for-file-name-extension-options"></a>Wpisy rejestru dla opcji rozszerzenia nazwy pliku  
- Wpis dla rozszerzenia pliku powinny zawierać poprzedzone kropką, na przykład ".myext".  
+## <a name="registry-entries-for-file-name-extension-options"></a>Wpisy rejestru dotyczące opcji rozszerzenia nazwy pliku  
+ Wpis dla rozszerzenia pliku powinien zawierać kropkę wiodącą, na przykład ". myext".  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID usługi Usługa języka domyślnego dla tego typu rozszerzenia nazwy pliku.|  
+|(Domyślnie)|REG_SZ|*IDENT*|Identyfikator GUID usługi dla domyślnej usługi językowej dla tego typu rozszerzenia nazwy pliku.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -134,16 +134,16 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-editor-options"></a>Wpisy rejestru dla opcji edytora  
- *Katalogu głównego rejestru programu VS*\Editors klucz może zawierać następujących wartości:  
+ Główny klucz \Editors programu *vs reg*może zawierać następujące wartości:  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|""|Nieużywane; Możesz umieścić swoją nazwę, w tym miejscu dla dokumentacji.|  
-|DefaultToolboxTab|REG_SZ|""|Nazwa na karcie przybornika, aby ustawić domyślną, gdy edytora jest aktywny.|  
-|DisplayName|REG_SZ|Atrybut resID|Nazwa do wyświetlenia w **Otwórz za pomocą** okno dialogowe. Nazwa jest identyfikator ciągu zasobu lub nazwę formatu standardowego.|  
-|ExcludeDefTextEditor|REG_DWORD|0-1|Używany do **Otwórz za pomocą** polecenia menu. Jeśli chcesz wyświetlić listę domyślnego edytora tekstu, na liście dostępnych edytorów dla określonego typu pliku, ta wartość 1.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID>*|Używane dla dowolnej usługi języka, który można otworzyć pliku z obsługą stronę kodową. Na przykład po otwarciu pliku txt przy użyciu **Otwórz za pomocą** polecenia i opcje są dostarczane do Edytor kodu źródłowego za pomocą oraz bez kodowania.<br /><br /> GUID określony nazwę podklucza który jest stroną kodową fabryki edytora; połączone GUID określony tego wpisu rejestru to fabryki edytora regularne. Celem tego wpisu jest, że jeśli IDE nie można otworzyć pliku przy użyciu domyślnego edytora, IDE podejmie próbę użycia edytora dalej na liście. Ten edytor dalej nie powinien być fabryka edytora strony kodowej, ponieważ tej fabryki edytora jest zasadniczo taki sam jak fabryka edytora, który uległ awarii.|  
-|Package|REG_SZ|*\<GUID>*|Identyfikator GUID pakietu VSPackage ResID nazwę wyświetlaną.|  
+|(Domyślnie)|REG_SZ|""|Przestrzeń Tutaj możesz umieścić swoją nazwę dokumentacji.|  
+|DefaultToolboxTab|REG_SZ|""|Nazwa karty przybornika, która ma być domyślna, gdy Edytor jest aktywny.|  
+|Nazwa wyświetlana|REG_SZ|ResID|Nazwa do wyświetlenia w oknie dialogowym **Otwórz za pomocą** . Nazwa jest IDENTYFIKATORem zasobu ciągu lub nazwą w formacie standardowym.|  
+|ExcludeDefTextEditor|REG_DWORD|0-1|Używane dla polecenia **Otwórz za pomocą** . Jeśli nie chcesz wyświetlać domyślnego edytora tekstu na liście dostępnych edytorów dla określonego typu pliku, ustaw tę wartość na 1.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|Używane dla każdej usługi językowej, która może otworzyć plik z obsługą strony kodowej. Na przykład po otwarciu pliku txt przy użyciu polecenia **Otwórz za** pomocą opcje są dostępne do użycia w edytorze kodu źródłowego z kodowaniem i bez.<br /><br /> Identyfikator GUID określony w nazwie podklucza jest przeznaczony dla fabryki edytora strony kodowej; połączony identyfikator GUID określony w tym konkretnym wpisie rejestru dotyczy fabryki zwykłych edytorów. Ten wpis polega na tym, że jeśli IDE nie otworzy pliku przy użyciu domyślnego edytora, IDE spróbuje użyć następnego edytora z listy. Ten następny Edytor nie powinien być fabryką edytora strony kodowej, ponieważ ta fabryka edytora jest zasadniczo taka sama jak fabryka edytora, która nie powiodła się.|  
+|Pakiet|REG_SZ|*\<GUID>*|Pakietu VSPackage identyfikator GUID dla ResID nazwy wyświetlanej.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -158,13 +158,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
       Package              = reg_sz:{1B437D20-F8FE-11D2-A6AE-00104BCC7269}  
 ```  
   
-## <a name="registry-entries-for-logical-view-options"></a>Wpisy rejestru dla opcji Widok logiczny  
- *Katalogu głównego rejestru programu VS*\Editors\\*edytora graficznego interfejsu użytkownika >* \LogicalViews klucz może zawierać następujących wartości.  
+## <a name="registry-entries-for-logical-view-options"></a>Wpisy rejestru dotyczące opcji widoku logicznego  
+ *VS Reg Root* \\ *Graficzny interfejs użytkownika edytora *\Editors programu vs reg>klucz \LogicalViews może zawierać następujące wartości.  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ||Nieużywane.|  
-|*\<GUID>*|REG_SZ|""|Klucz do logicznych widoków obsługiwane. Może mieć jako wiele z nich, ilu potrzebujesz. Nazwa wpisu rejestru to, co jest ważne, nie wartość, która zawsze jest ciągiem pustym.|  
+|(Domyślnie)|REG_SZ||Nieużywany.|  
+|*\<GUID>*|REG_SZ|""|Klucz do obsługiwanych widoków logicznych. Możesz mieć dowolną tyle rzeczy, ile potrzebujesz. Nazwa wpisu rejestru jest istotna, a nie wartością, która zawsze jest pustym ciągiem.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -180,15 +180,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
        {7651a703-06e5-11d1-8ebd-00a0c90f26ea} = reg_sz:  
 ```  
   
-## <a name="registry-entries-for-editor-extension-options"></a>Wpisy rejestru dla opcji rozszerzenia Edytora  
- *Katalogu głównego rejestru programu VS*\Editors\\*identyfikator GUID edytora*\Extensions klucz może zawierać następujących wartości. Rozszerzenie nazwy pliku nie być poprzedzone kropką.  
+## <a name="registry-entries-for-editor-extension-options"></a>Wpisy rejestru dla opcji rozszerzenia edytora  
+ Klucz \Extensions \Editors głównego edytora programu *vs reg* \\ *Editor GUID*może zawierać następujące wartości. Rozszerzenie nazwy pliku nie zawiera kropki wiodącej.  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ||Nieużywane.|  
-|*\<ext >*|REG_DWORD|0 0xffffffff|Względny priorytet rozszerzeń. Jeśli co najmniej dwóch języków udostępniają to samo rozszerzenie, wybranym języku wyższy priorytet.|  
+|(Domyślnie)|REG_SZ||Nieużywany.|  
+|*\<ext>*|REG_DWORD|0 – 0xFFFFFFFF|Względny priorytet rozszerzeń. Jeśli co najmniej dwa języki korzystają z tego samego rozszerzenia, wybierany jest język o wyższym priorytecie.|  
   
- Ponadto, wybór domyślny bieżącego użytkownika dla edytora znajduje się w HKEY_Current_User\Software\Microsoft\VisualStudio\\*X.Y*\Default edytory\\*ext*. Identyfikator GUID usługi wybrany język jest we wpisie niestandardowe. To ma pierwszeństwo przed dla bieżącego użytkownika.  
+ Ponadto domyślny wybór bieżącego użytkownika dla edytora jest przechowywany w HKEY_Current_User \Software\Microsoft\VisualStudio \\ *X. Y*\Default Editors \\ *ext*. Identyfikator GUID wybranej usługi językowej znajduje się w niestandardowym wpisie. Ma to pierwszeństwo dla bieżącego użytkownika.  
   
 ### <a name="example"></a>Przykład  
   
@@ -204,25 +204,25 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
        shtml     = reg_dword:0x00000027  
 ```  
   
-## <a name="registry-entries-for-managed-package-framework-language-service-options"></a>Wpisy rejestru dla opcji usługa języka Framework zarządzanego pakietu  
- Następujące wpisy rejestru są specyficzne dla klas usług językowych framework (MPF) zarządzanego pakietu. Te wpisy rejestru wskazują obsługę w usłudze języka dla różnych funkcji IntelliSense i inne zaawansowane funkcje edycji.  
+## <a name="registry-entries-for-managed-package-framework-language-service-options"></a>Wpisy rejestru dotyczące opcji usługi językowej struktury pakietów zarządzanych  
+ Następujące wpisy rejestru są specyficzne dla klas usługi języka Managed Package Framework (MPF). Te wpisy rejestru wskazują pomoc techniczną w usłudze językowej dla różnych funkcji IntelliSense i innych zaawansowanych funkcji edycji.  
   
- Te wpisy rejestru są dostępne za pośrednictwem <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy.  
+ Te wpisy rejestru są dostępne za pomocą <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy.  
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
 |CodeSense|REG_DWORD|0-1|Obsługa operacji IntelliSense.|  
-|MatchBraces|REG_DWORD|0-1|Obsługa dopasowane pary języka, takich jak nawiasy klamrowe, nawiasy i nawiasy.|  
-|Skrócone informacje|REG_DWORD|0-1|Obsługa operacji szybkie informacje technologii IntelliSense.|  
-|ShowMatchingBrace|REG_DWORD|0-1|Obsługa wyświetlania pasującą parę języka na pasku stanu.|  
-|MatchBracesAtCaret|REG_DWORD|0-1|Obsługa wyświetlania zgodnych kierunki, zazwyczaj przez wyróżnianie dwóch elementów.|  
-|MaxErrorMessages|REG_DWORD|0-n|Maksymalną liczbę błędów, które mogą być wyświetlane w **lista błędów** okna.|  
-|CodeSenseDelay|REG_DWORD|0-n|Liczba milisekund, opóźnienie przed rozpoczęciem wszelkich tła analizowanie operacji IntelliSense.|  
-|EnableAsyncCompletion|REG_DWORD|0-1|Obsługa analizowanie w tle.|  
-|EnableCommenting|REG_DWORD|0-1|Obsługa zakomentowując wybrane bloki tekstu i oznacza również obsługę Trwa usuwanie komentarza do zaznaczonego tekstu.|  
-|EnableFormatSelection|REG_DWORD|0-1|Obsługa formatowania tekstu, takie jak automatyczne wcięcie lub dostosowywanie pozycja klamrowych nawiasów.|  
-|AutoOutlining|REG_DWORD|0-1|Obsługa konspekt (regiony, które może zostać zwinięty).|  
-|MaxRegions|REG_DWORD|0-n|Maksymalna liczba ukrytych regionów na plik.|  
+|MatchBraces|REG_DWORD|0-1|Obsługa pasujących par języków, takich jak nawiasy klamrowe, nawiasy i nawiasy kwadratowe.|  
+|Sekcji szybkich informacji|REG_DWORD|0-1|Obsługa operacji szybkiej informacji funkcji IntelliSense.|  
+|ShowMatchingBrace|REG_DWORD|0-1|Obsługa wyświetlania pasującej pary językowej na pasku stanu.|  
+|MatchBracesAtCaret|REG_DWORD|0-1|Obsługa wyświetlania pasujących par języków, zwykle za pomocą wyróżniania dwóch elementów.|  
+|MaxErrorMessages|REG_DWORD|0 – n|Maksymalna liczba błędów, które mogą być wyświetlane w oknie **Lista błędów** .|  
+|CodeSenseDelay|REG_DWORD|0 – n|Liczba milisekund do opóźnienia przed zainicjowaniem analizy w tle dla operacji IntelliSense.|  
+|EnableAsyncCompletion|REG_DWORD|0-1|Obsługa analizy w tle.|  
+|EnableCommenting|REG_DWORD|0-1|Obsługa komentowania zaznaczonych bloków tekstu, a także oznacza obsługę usuwania komentarzy do zaznaczonego tekstu.|  
+|EnableFormatSelection|REG_DWORD|0-1|Obsługa formatowania tekstu, takiego jak automatyczne tworzenie wcięć lub dopasowywanie położenia nawiasów klamrowych.|  
+|AutoOutlining|REG_DWORD|0-1|Obsługa konspektu (regiony, które mogą być zwinięte).|  
+|MaxRegions|REG_DWORD|0 – n|Maksymalna liczba ukrytych regionów na plik.|  
   
 ```  
 ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\  

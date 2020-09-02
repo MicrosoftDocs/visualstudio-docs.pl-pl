@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72e5f82fa3ca4b7ca909ee07e5b77a31b3e20879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650966"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista zadań, środowisko, opcje — Okno dialogowe
@@ -47,7 +47,7 @@ Ta strona opcji pozwala dodawać, usuwać i zmieniać tokeny komentarza generuj�
 ## <a name="tokens"></a>Tokeny
  Po wstawieniu komentarza do kodu, którego tekst zaczyna się od tokenu z **listy tokenów**, **Lista zadań** wyświetla komentarz jako nowy wpis za każdym razem, gdy plik zostanie otwarty do edycji. Możesz kliknąć ten **Lista zadań** wpis, aby przejść bezpośrednio do wiersza komentarza w kodzie. Aby uzyskać więcej informacji, zobacz [używanie Lista zadań](../../ide/using-the-task-list.md).
 
- Lista tokenów wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokenów niestandardowych. Tokeny komentarzy są rozróżniane wielkości C# liter w C++wizualizacji i wizualizacji, ale nie w Visual Basic.
+ Lista tokenów wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokenów niestandardowych. Tokeny komentarzy uwzględniają wielkość liter w języku Visual C# i Visual C++, ale nie w Visual Basic.
 
 > [!NOTE]
 > Jeśli nie wpiszesz żądanego tokenu dokładnie tak, jak pojawia się na **liście tokenów**, zadanie komentarza nie będzie wyświetlane w **Lista zadań**.
