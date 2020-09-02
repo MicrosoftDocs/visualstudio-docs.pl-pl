@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985610"
 ---
 # <a name="ribbon-overview"></a>Omówienie wstążki
@@ -84,9 +84,9 @@ ms.locfileid: "72985610"
  Aby uzyskać więcej informacji o sposobach eksportowania wstążki do formatu XML, zobacz [How to: Export a wstążka z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).
 
 ### <a name="update-the-code"></a>Zaktualizuj kod
- Nowy plik kodu wstążki zostanie dodany do **Eksplorator rozwiązań**. Ten plik zawiera klasę XML wstążki. Należy utworzyć metody wywołania zwrotnego w regionie `Ribbon Callbacks` tej klasy, aby obsługiwać akcje użytkownika, takie jak kliknięcie przycisku. Przenieś swój kod z obsługi zdarzeń do tych metod wywołania zwrotnego i zmodyfikuj kod, aby działał z modelem programowania rozszerzalności wstążki (RibbonX). Aby uzyskać więcej informacji, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
+ Nowy plik kodu wstążki zostanie dodany do **Eksplorator rozwiązań**. Ten plik zawiera klasę XML wstążki. `Ribbon Callbacks`Aby obsłużyć akcje użytkownika, takie jak kliknięcie przycisku, należy utworzyć metody wywołania zwrotnego w regionie tej klasy. Przenieś swój kod z obsługi zdarzeń do tych metod wywołania zwrotnego i zmodyfikuj kod, aby działał z modelem programowania rozszerzalności wstążki (RibbonX). Aby uzyskać więcej informacji, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
- Należy również dodać kod do klasy `ThisAddIn`, `ThisWorkbook`lub `ThisDocument`, która zastępuje metodę `CreateRibbonExtensibilityObject` i zwraca klasę XML wstążki do aplikacji pakietu Office.
+ Należy również dodać kod do `ThisAddIn` `ThisWorkbook` klasy,, lub, `ThisDocument` która zastępuje `CreateRibbonExtensibilityObject` metodę i zwraca klasę XML wstążki do aplikacji pakietu Office.
 
  Aby uzyskać więcej informacji, zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
@@ -103,7 +103,7 @@ ms.locfileid: "72985610"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>Wybierz wstążki, które mają być wyświetlane w czasie wykonywania
  Ponieważ projekt może zawierać więcej niż jedną Wstążkę, można wybrać, która wstążka ma być wyświetlana w czasie wykonywania.
 
- Aby wybrać Wstążkę, która ma być wyświetlana w czasie wykonywania, Zastąp metodę `CreateRibbonExtensibilityObject` w klasie `ThisAddin`, `ThisWorkbook`lub `ThisDocument` projektu i zwróć Wstążkę, która ma zostać wyświetlona. Poniższy przykład sprawdza wartość pola o nazwie `myCondition` i zwraca odpowiednią Wstążkę.
+ Aby wybrać Wstążkę, która ma być wyświetlana w czasie wykonywania, Zastąp `CreateRibbonExtensibilityObject` metodę w `ThisAddin` , `ThisWorkbook` , lub `ThisDocument` klasy projektu i zwróć Wstążkę, która ma zostać wyświetlona. Poniższy przykład sprawdza wartość pola o nazwie `myCondition` i zwraca odpowiednią Wstążkę.
 
 > [!NOTE]
 > Składnia używana w tym przykładzie zwraca Wstążkę, która została utworzona przy użyciu elementu **wstążki (projektant graficzny)** . Składnia zwracająca Wstążkę, która jest tworzona przy użyciu elementu **wstążki (XML)** , jest nieco inna. Aby uzyskać więcej informacji na temat zwracania elementu **wstążki (XML)** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
@@ -113,7 +113,7 @@ ms.locfileid: "72985610"
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs#1)]
 
-### <a name="related-topics"></a>Tematy pokrewne
+### <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|

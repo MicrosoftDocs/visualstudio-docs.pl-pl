@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDebugProperty | Dokumentacja firmy Microsoft
+title: 'IDebugProgram2:: GetDebugProperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29b86a1aa144e553b126445a865330a8edb786ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187908"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera właściwości tego programu.  
+Pobiera właściwości programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,15 +40,15 @@ int GetDebugProperty( 
   
 #### <a name="parameters"></a>Parametry  
  `ppProperty`  
- [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje właściwości tego programu.  
+ określoną Zwraca obiekt [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , który reprezentuje właściwości programu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Właściwości zwracanego przez tę metodę są specyficzne dla programu. Jeśli program musi zwrócić więcej niż jedną właściwość, a następnie [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu zwróconego przez tę metodę jest kontenerem dodatkowe właściwości i wywoływania [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metoda zwraca Lista wszystkich właściwości.  
+ Właściwości zwrócone przez tę metodę są specyficzne dla programu. Jeśli program musi zwrócić więcej niż jedną właściwość, wówczas obiekt [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) zwracany przez tę metodę jest kontenerem dodatkowych właściwości i wywołanie metody [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) zwraca listę wszystkich właściwości.  
   
- Program może narazić dowolną liczbę i rodzaj dodatkowe właściwości, które można opisać za pośrednictwem `IDebugProperty2` interfejsu. Środowisko IDE może wyświetlić właściwości dodatkowy program za pomocą interfejsu użytkownika przeglądarki właściwości ogólnych.  
+ Program może uwidaczniać dowolną liczbę i typ dodatkowych właściwości, które można opisać za pomocą `IDebugProperty2` interfejsu. IDE może wyświetlić dodatkowe właściwości programu za pomocą ogólnego interfejsu użytkownika przeglądarki właściwości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

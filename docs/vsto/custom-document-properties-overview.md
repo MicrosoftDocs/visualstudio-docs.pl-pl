@@ -1,5 +1,5 @@
 ---
-title: Przegląd właściwości niestandardowego dokumentu
+title: Przegląd właściwości dokumentu niestandardowego
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,42 +18,42 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951178"
 ---
-# <a name="custom-document-properties-overview"></a>Przegląd właściwości niestandardowego dokumentu
+# <a name="custom-document-properties-overview"></a>Przegląd właściwości dokumentu niestandardowego
 
-Podczas tworzenia projektów dokumentów programu Visual Studio dodaje dwie właściwości niestandardowych do dokumentu w projekcie: \_AssemblyLocation i \_AssemblyName. Po otwarciu dokumentu aplikacji Microsoft Office wyszukuje te niestandardowe właściwości dokumentu. Jeśli istnieją w dokumencie, ładowania aplikacji [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], co spowoduje włączenie dostosowania. Aby uzyskać więcej informacji, zobacz [rozwiązania architektury pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Podczas kompilowania projektu na poziomie dokumentu program Visual Studio dodaje dwie właściwości niestandardowe do dokumentu w projekcie: \_ AssemblyLocation i \_ AssemblyName. Gdy użytkownik otwiera dokument, aplikacja Microsoft Office sprawdza te właściwości dokumentu niestandardowego. Jeśli istnieją w dokumencie, aplikacja ładuje [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , która uruchamia dostosowanie. Aby uzyskać więcej informacji, zobacz [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_AssemblyName
+## <a name="_assemblyname"></a>\_AssemblyName
 
-Ta właściwość zawiera identyfikator CLSID interfejsu w składniku modułu ładującego rozwiązanie Office z [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Wartość identyfikatora CLSID jest 4E3C66D5 58D 4-491E-A7D4-64AF99AF6E8B. Nigdy nie należy zmieniać tej wartości.
+Ta właściwość zawiera identyfikator CLSID interfejsu w składniku modułu ładującego rozwiązania pakietu Office [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Wartość CLSID to 4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B. Nie należy zmieniać tej wartości.
 
-## <a name="assemblylocation"></a>\_AssemblyLocation
+## <a name="_assemblylocation"></a>\_AssemblyLocation
 
-Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje o pliku manifestu wdrożenia dla dostosowania. Aby uzyskać więcej informacji na temat manifestów, zobacz [stosowania i wdrażania manifestów w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Ta właściwość zawiera ciąg, który zawiera szczegółowe informacje dotyczące manifestu wdrażania dla dostosowywania. Aby uzyskać więcej informacji na temat manifestów, zobacz [manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- \_AssemblyLocation wartość właściwości może mieć różnych formatach, w zależności od tego, w jaki sposób rozwiązanie będzie wdrożone:
+ \_Wartość właściwości AssemblyLocation może mieć różne formaty, w zależności od sposobu wdrożenia rozwiązania:
 
-- Jeśli rozwiązanie zostanie opublikowana do zainstalowania z witryny sieci Web, ścieżka UNC lub dysk CD lub dysk USB, _AssemblyLocation właściwość ma format *DeploymentManifestPath*|*SolutionID*. Następujący ciąg znajduje się przykład:
+- Jeśli rozwiązanie zostało opublikowane do zainstalowania z witryny sieci Web, ścieżki UNC lub dysku CD lub USB, właściwość _AssemblyLocation ma format *DeploymentManifestPath* | *solutionId*. Następujący ciąg jest przykładem:
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- Jeśli są uruchomione lub debugowanie rozwiązania w programie Visual Studio, _AssemblyLocation właściwość ma format *DeploymentManifestName*|*SolutionID*| vstolocal. Następujący ciąg znajduje się przykład:
+- W przypadku uruchamiania lub debugowania rozwiązania z programu Visual Studio Właściwość _AssemblyLocation ma format *DeploymentManifestName* | *solutionId*| vstolocal. Następujący ciąg jest przykładem:
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+     ExcelWorkbook1. VSTO | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal
 
-  *SolutionID* jest identyfikatorem GUID, który [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] używa do identyfikowania rozwiązania. *SolutionID* jest generowana automatycznie podczas tworzenia projektu. **Vstolocal** wskazuje termin [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , z tym samym folderze co dokument powinien można załadować zestawu.
+  *SolutionId* jest identyfikatorem GUID, który służy [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do identyfikowania rozwiązania. *SolutionId* jest generowany automatycznie podczas kompilowania projektu. Termin **vstolocal** wskazuje [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , że zestaw powinien być załadowany z tego samego folderu co dokument.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-- [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
-- [Manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Instrukcje: Publikowanie rozwiązań pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Instrukcje: Tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Architektura dostosowań na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)
+- [Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Instrukcje: publikowanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Instrukcje: Tworzenie i modyfikowanie właściwości dokumentu niestandardowego](../vsto/how-to-create-and-modify-custom-document-properties.md)

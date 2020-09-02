@@ -1,6 +1,6 @@
 ---
-title: Formatowanie kodu języka Python
-description: Visual Studio może automatycznie formatować kod języka Python, w tym odstępy, instrukcje, zawijanie i komentarze.
+title: Formatowanie kodu w języku Python
+description: Program Visual Studio może automatycznie ponownie formatować kod w języku Python, w tym odstępy, instrukcje, zawijanie i komentarze.
 ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -11,90 +11,90 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957541"
 ---
-# <a name="format-python-code"></a>Formatowanie kodu języka Python
+# <a name="format-python-code"></a>Formatowanie kodu w języku Python
 
-Program Visual Studio umożliwia szybkie formatowanie kodu w celu dopasowania do wstępnie skonfigurowanych opcji formatowania.
+Program Visual Studio pozwala szybko ponownie sformatować kod, aby dopasować wstępnie skonfigurowane opcje formatowania.
 
-- Aby sformatować zaznaczenie, wybierz **pozycję Edytuj** > **zaznaczenie formatu** **zaawansowanego** > lub naciśnij **klawisze Ctrl**+**E** > **F**.
-- Aby sformatować cały plik: wybierz **pozycję Edytuj** > **dokument formatu** **zaawansowanego** > lub naciśnij **klawisze Ctrl**+**E** > **D**.
+- Aby sformatować zaznaczenie: wybierz opcję **Edytuj**  >  **Zaawansowany**  >  **Format zaznacz** lub naciśnij **klawisze CTRL** + **E**  >  **F**.
+- Aby sformatować cały plik: wybierz opcję **Edytuj**  >  dokument w formacie**zaawansowanym**  >  **Format Document** lub naciśnij **klawisze CTRL** + **E**  >  **D**.
 
-Opcje są ustawiane za pomocą**opcji** >  **Narzędzia** > **Edytor** > tekstu**Formatowanie** **języka Python** > i jego zagnieżdżone karty. Aby wyświetlić te opcje, musisz wybrać opcję **Pokaż wszystkie ustawienia:**
+Opcje są ustawiane za poorednictwem opcji **Narzędzia**  >  **Options**  >  **Edytor tekstu**  >  w języku**Python**  >  **Formatting** i na kartach zagnieżdżonych. Musisz wybrać opcję **Pokaż wszystkie ustawienia** dla następujących opcji:
 
 ![Opcje formatowania języka Python w programie Visual Studio](media/options-editor-formatting.png)
 
-Domyślnie opcje formatowania są ustawione tak, aby odpowiadało nadzbiorowi [przewodnika po stylu PEP 8](https://www.python.org/dev/peps/pep-0008/). Karta **Ogólne** określa, kiedy stosowane jest formatowanie; ustawienia pozostałych trzech kart są opisane w tym artykule.
+Opcje formatowania domyślnie są ustawione jako zgodne z nadzbiorem [stylu PEP 8](https://www.python.org/dev/peps/pep-0008/). Karta **Ogólne** określa, kiedy jest stosowane formatowanie; w tym artykule opisano ustawienia dla pozostałych trzech kart.
 
-[Obsługa języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) dodaje również przydatne polecenie [**Wypełnij komentarz akapit**](#fill-comment-paragraph-command) do menu **Edytuj** > **zaawansowane,** zgodnie z opisem w dalszej sekcji.
+[Obsługa języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) dodaje także przydatne polecenie [**wypełnienia akapitu**](#fill-comment-paragraph-command) do menu **Edytuj**  >  **Zaawansowane** zgodnie z opisem w dalszej części.
 
 ## <a name="spacing"></a>Odstępy
 
-Kontrolki **odstępów,** w których spacje są wstawiane lub usuwane wokół różnych konstrukcji językowych. Każda opcja ma trzy możliwe wartości:
+**Odstępy** , w których są wstawiane lub usuwane spacje wokół różnych konstrukcji językowych. Każda opcja ma trzy możliwe wartości:
 
-- Zaznaczone: zapewnia zastosowanie odstępów.
-- Wyczyszczone: usuwa wszelkie odstępy.
-- Nieokreślony: pozostawia oryginalne formatowanie na swoim miejscu.
+- Zaznaczone: zapewnia, że odstępy są stosowane.
+- Wyczyszczone: usuwa wszystkie odstępy.
+- Nieokreślone: pozostawia oryginalne formatowanie na miejscu.
 
-Przykłady dla różnych opcji znajdują się w następujących tabelach:
+Przykłady dla różnych opcji podano w następujących tabelach:
 
-| Opcja definicje klas | Zaznaczone | Wyczyszczone |
+| Opcja definicji klas | Zaznaczono | Zaznaczenia |
 | --- | --- | --- |
-| **Wstawianie odstępu między listą nazw i baz deklaracji klasy** | `class X (object): pass` | `class X(object): pass` |
-| **Wstawianie spacji w nawiasach listy baz** | `class X( object ): pass` | `class X(object): pass` |
-| **Wstawianie spacji w nawiasach listy pustych baz** | `class X( ): pass` | `class X(): pass` |
+| **Wstaw spację między nazwą deklaracji klasy a listą baz danych** | `class X (object): pass` | `class X(object): pass` |
+| **Wstaw spację wewnątrz nawiasów listy baz** | `class X( object ): pass` | `class X(object): pass` |
+| **Wstaw spację wewnątrz pustych nawiasów listy baz** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
-| Opcja Definicje funkcji | Zaznaczone | Wyczyszczone |
+| Opcja definicji funkcji | Zaznaczono | Zaznaczenia |
 | --- | --- | --- |
-| **Wstawianie odstępu między nazwą deklaracji funkcji a listą parametrów** | `def X (): pass` | `def X(): pass` |
-| **Wstawianie spacji w nawiasach listy parametrów** | `def X( a, b ): pass` | `def X(a, b): pass` |
-| **Wstawianie miejsca w nawiasach listy pustych parametrów** | `def X( ): pass` | `def X(): pass` |
-| **Wstawianie spacji wokół '=' w domyślnych wartościach parametrów** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| **Wstawianie spacji przed i po zwracaniu operatorów adnotacji** | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Wstaw spację między nazwą a listą parametrów deklaracji funkcji** | `def X (): pass` | `def X(): pass` |
+| **Wstaw spację wewnątrz nawiasów listy parametrów** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **Wstaw spację wewnątrz pustych nawiasów listy parametrów** | `def X( ): pass` | `def X(): pass` |
+| **Wstaw spacje wokół instrukcji "=" w domyślnych wartościach parametrów** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Wstaw spację przed operatorem adnotacji Return i po nim** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
-| Opcja Operatorzy | Zaznaczone | Wyczyszczone |
+| Opcja operatorów | Zaznaczono | Zaznaczenia |
 | --- | --- | --- |
-| **Wstawianie spacji wokół operatorów binarnych** | `a + b` | `a+b` |
-| **Wstawianie spacji wokół przydziałów** | `a = b` | `a=b` |
+| **Wstaw odstępy dookoła operatorów binarnych** | `a + b` | `a+b` |
+| **Wstaw spacje wokół przypisań** | `a = b` | `a=b` |
 
 <br/>
 
-| Opcja odstępów między wyrażeniami | Zaznaczone | Wyczyszczone |
+| Opcja odstępu wyrażenia | Zaznaczono | Zaznaczenia |
 | --- | --- | --- |
-| **Wstawianie odstępu między nazwą i listą argumentów wywołania funkcji** | `X ()` | `X()` |
-| **Wstawianie miejsca w nawiasach pustej listy argumentów** | `X( )` | `X()` |
-| **Wstawianie spacji w nawiasach listy argumentów** | `X( a, b )` | `X(a, b)` |
-| **Wstawianie spacji w nawiasach wyrażenia** | `( a )` | `(a)` |
-| **Wstawianie miejsca w pustych nawiasach krotki** | `( )` | `()` |
-| **Wstawianie spacji w nawiasach krotki** | `( a, b )` | `(a, b)` |
-| **Wstawianie miejsca w pustych nawiasach kwadratowych** | `[ ]` | `[]` |
-| **Wstawianie spacji w nawiasach kwadratowych list** | `[ a, b ]` | `[a, b]` |
-| **Wstawianie miejsca przed otwartym kwadratowym nawiasem** | `x [i]` | `x[i]` |
-| **Wstawianie przestrzeni w nawiasach kwadratowych** | `x[ i ]` | `x[i]` |
+| **Wstaw spację między nazwą wywołania funkcji a listą argumentów** | `X ()` | `X()` |
+| **Wstaw spację wewnątrz nawiasów listy pustych argumentów** | `X( )` | `X()` |
+| **Wstaw spację wewnątrz nawiasów listy argumentów** | `X( a, b )` | `X(a, b)` |
+| **Wstaw spację wewnątrz nawiasów wyrażenia** | `( a )` | `(a)` |
+| **Wstaw spację w nawiasach pustej kolekcji** | `( )` | `()` |
+| **Wstaw spację wewnątrz nawiasów krotek** | `( a, b )` | `(a, b)` |
+| **Wstaw spację wewnątrz pustych nawiasów kwadratowych** | `[ ]` | `[]` |
+| **Wstaw spacje w nawiasach kwadratowych list** | `[ a, b ]` | `[a, b]` |
+| **Wstaw spację przed otwierającym nawiasem kwadratowym** | `x [i]` | `x[i]` |
+| **Wstaw spację wewnątrz nawiasów kwadratowych** | `x[ i ]` | `x[i]` |
 
 <br/>
 
 ## <a name="statements"></a>Instrukcje
 
-Opcje **instrukcji** kontrolować automatyczne przepisywanie różnych instrukcji w więcej form Pythonic.
+Opcje **instrukcji** kontrolują automatyczne ponowne zapisywanie różnych instrukcji w większej liczbie formularzy Python.
 
-| Opcja | Przed formatowaniem | Po sformatowaniu |
+| Opcja | Przed formatowaniem | Po formatowaniu |
 | --- | --- | --- |
-| **Umieszczanie importowanych modułów w nowym wierszu** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **Umieść zaimportowane moduły w nowym wierszu** | `import sys, pickle` | `import sys`<br/>`import pickle` |
 | **Usuń niepotrzebne średniki** | `x = 42;` | `x = 42` |
-| **Umieszczanie wielu instrukcji w nowych wierszach** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **Umieść wiele instrukcji w nowych wierszach** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
-## <a name="wrapping"></a>Zawijania
+## <a name="wrapping"></a>Opakowującego
 
-**Zawijanie** umożliwia ustawienie **maksymalnej szerokości komentarza** (domyślnie jest to 80). Jeśli **Wrap komentarze, które są zbyt szerokie** opcja jest ustawiona, Visual Studio formatuje komentarze, aby nie przekraczać tej maksymalnej szerokości.
+Funkcja **zawijania** umożliwia ustawienie **maksymalnej szerokości komentarza** (wartość domyślna to 80). Jeśli ustawiono opcję **Zawijaj komentarze, które są zbyt szerokie** , program Visual Studio ponownie sformatuje komentarze, aby nie przekroczyć tej maksymalnej szerokości.
 
 ```python
 # Wrapped to 40 columns
@@ -107,11 +107,11 @@ Opcje **instrukcji** kontrolować automatyczne przepisywanie różnych instrukcj
 # There should be one-- and preferably only one --obvious way to do it.
 ```
 
-## <a name="fill-comment-paragraph-command"></a>Polecenie Wypełnij akapit komentarza
+## <a name="fill-comment-paragraph-command"></a>Wypełnienie akapitu komentarza — polecenie
 
-**Edytuj** > **zaawansowaną** > **akapit komentarza do wypełnienia** **(Ctrl**+**E** > **P)** ponownie wlacza i formatuje tekst komentarza, łącząc krótkie wiersze i rozbijając długie.
+**Edytuj**  >  **Zaawansowane**  >  **Wypełnienie komentarza akapitu** (**Ctrl** + **E**  >  **P**) powoduje przepełnienie i sformatowanie tekstu komentarza, połączenie krótkich wierszy i rozdzielenie długich.
 
-Przykład:
+Na przykład:
 
 ```python
 # foo

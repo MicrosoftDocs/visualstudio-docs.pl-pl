@@ -1,5 +1,5 @@
 ---
-title: Czas uśpienia | Dokumentacja firmy Microsoft
+title: Czas uśpienia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8a79bbca9f6275f115105cc2ba6b001ac0ca7d44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198374"
 ---
 # <a name="sleep-time"></a>Czas uśpienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Te segmenty na osi czasu są skojarzone z czasu blokowania, które należą do kategorii uśpienia. Kategoria uśpienia oznacza, że wątek dobrowolnie dało się jego rdzeń logiczny i wykonując żadnej pracy. W tym czasie wątek został zablokowany w interfejsie API, który Concurrency Visualizer jest liczy się jako uśpienia. Interfejsy API, takie jak `Sleep()` i `SwitchToThread()` należą do tej grupy.  
+Te segmenty na osi czasu są skojarzone z czasem blokowania, który jest kategoryzowany jako uśpienie. Kategoria uśpienia oznacza, że wątek jest dobrowolnie przeznaczony do jego rdzenia logicznego i nie działa. W tym czasie wątek został zablokowany w interfejsie API, który Wizualizator współbieżności zlicza jako uśpienie. Interfejsy API, takie jak `Sleep()` i `SwitchToThread()` mieszczą się w tej grupie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

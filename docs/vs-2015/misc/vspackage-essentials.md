@@ -1,5 +1,5 @@
 ---
-title: Podstawowe informacje dotyczące pakietu VSPackage | Dokumentacja firmy Microsoft
+title: Pakietu VSPackage Essentials | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,18 +10,18 @@ ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 7b9f8dc80f7985e7b9b7545dd0c8e78d748cd4d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62953767"
 ---
-# <a name="vspackage-essentials"></a>VSPackage Essentials
-Pakietów VSPackage są modułów oprogramowania, które tworzą i rozszerzanie programu Visual Studio przy użyciu elementów, usług, projekty, edytorów i projektantów interfejsu użytkownika. Pakietów VSPackage są centralna jednostka architektury [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sam jest zapisywany przede wszystkim jako kolekcja pakietów VSPackage.  
+# <a name="vspackage-essentials"></a>Pakietu VSPackage Essentials
+Pakietów VSPackage to moduły oprogramowania, które tworzą i zwiększają program Visual Studio z elementami interfejsu użytkownika, usługami, projektami, edytorami i projektantami. Pakietów VSPackage są centralną jednostką architektury [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sama jest zapisywana głównie jako kolekcja pakietów VSPackage.  
   
- Aby utworzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń aplikacji, należy najpierw utworzyć pakietu VSPackage. Następnie można dodać polecenia menu, okien, okien dokumentu lub innego kodu, aby rozszerzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
+ Aby utworzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplikację rozszerzalności, należy najpierw utworzyć pakietu VSPackage. Następnie można dodać polecenia menu, okna narzędzi, okna dokumentu lub innego kodu, aby zwiększyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
- Aby użyć pakietów VSPackage, należy zainstalować program Visual Studio SDK. Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Aby korzystać z pakietów VSPackage, należy zainstalować Visual Studio SDK. Aby wykonać czynności opisane w tym przewodniku, należy zainstalować Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pakiety VSPackage](../extensibility/internals/vspackages.md)

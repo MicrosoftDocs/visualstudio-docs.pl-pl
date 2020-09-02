@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ustawianie nazw wątków w kodzie natywnym | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Ustawianie nazwy wątku w kodzie natywnym | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 37554c8ba72257ee78b219774425c7e8acb305a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156671"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>Instrukcje: Ustawianie nazwy wątku w kodzie natywnym
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Porady: ustawianie nazw wątków w kodzie natywnym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby Ustawianie nazw wątków w swoim programie, należy użyć `SetThreadName` funkcji, jak pokazano w poniższym przykładzie kodu. Należy pamiętać, że nazwa wątku jest kopiowany do wątku, aby pamięć `threadName` parametru może być zwolnione.  
+Aby ustawić nazwę wątku w programie, należy użyć `SetThreadName` funkcji, jak pokazano w poniższym przykładzie kodu. Należy zauważyć, że nazwa wątku jest kopiowana do wątku, aby można było wydać pamięć dla `threadName` parametru.  
   
 ## <a name="example"></a>Przykład  
   
@@ -68,6 +68,6 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Instrukcje: Ustawianie nazwy wątku w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Instrukcje: ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)

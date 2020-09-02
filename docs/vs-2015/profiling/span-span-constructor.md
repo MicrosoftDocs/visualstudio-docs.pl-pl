@@ -1,5 +1,5 @@
 ---
-title: Konstruktor span::span | Dokumentacja firmy Microsoft
+title: 'span:: span — Konstruktor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df6df731de90a9aad9e6cc637b3f218e481b66b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198298"
 ---
 # <a name="spanspan-constructor"></a>span::span — Konstruktor
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Inicjuje nowe wystąpienie klasy `span` klasy.
+Inicjuje nowe wystąpienie klasy `span`.
 
 ## <a name="syntax"></a>Składnia
 
@@ -57,20 +57,20 @@ span(
 
 #### <a name="parameters"></a>Parametry
 
-`_Series` Kontekst serii prawidłowe znacznika.
+`_Series` Prawidłowy kontekst serii znaczników.
 
-`_Format` Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.
+`_Format` Ciąg formatu złożonego, który zawiera tekst, który jest przemieszany z zerem lub więcej elementów formatu, który odpowiada obiektom na liście argumentów.
 
 `_Importance` Poziom ważności.
 
-`_Category` Kategoria.
+`_Category` Kategorii.
 
 ## <a name="requirements"></a>Wymagania
 
-**Nagłówek:** cvmarkersobj.h
+**Nagłówek:** cvmarkersobj. h
 
-**Namespace:** CONCURRENCY::Diagnostic —
+**Przestrzeń nazw:** Współbieżność::d przesła
 
 ## <a name="see-also"></a>Zobacz też
 
-[span, klasa](../profiling/span-class.md)
+[span — Klasa](../profiling/span-class.md)

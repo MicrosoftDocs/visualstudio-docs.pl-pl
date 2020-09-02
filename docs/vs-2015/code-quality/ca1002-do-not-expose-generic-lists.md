@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6fcc4ae2a07eb7b1f155d6c65020e2c1a9ddc9f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546851"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Nie uwidaczniaj list ogólnych
@@ -36,7 +36,7 @@ ms.locfileid: "85546851"
  Typ zawiera widoczny na zewnątrz element członkowski, który jest <xref:System.Collections.Generic.List%601?displayProperty=fullName> typem, zwraca <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ lub którego sygnatura zawiera <xref:System.Collections.Generic.List%601?displayProperty=fullName> parametr.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>jest kolekcją ogólną, która została zaprojektowana pod kątem wydajności i nie dziedziczenia. <xref:System.Collections.Generic.List%601?displayProperty=fullName>nie zawiera wirtualnych elementów członkowskich, które ułatwiają zmianę zachowania dziedziczonej klasy. Poniższe kolekcje ogólne są przeznaczone do dziedziczenia i powinny być udostępniane zamiast <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> jest kolekcją ogólną, która została zaprojektowana pod kątem wydajności i nie dziedziczenia. <xref:System.Collections.Generic.List%601?displayProperty=fullName> nie zawiera wirtualnych elementów członkowskich, które ułatwiają zmianę zachowania dziedziczonej klasy. Poniższe kolekcje ogólne są przeznaczone do dziedziczenia i powinny być udostępniane zamiast <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 

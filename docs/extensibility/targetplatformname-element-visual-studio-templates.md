@@ -1,5 +1,5 @@
 ---
-title: Element TargetPlatformName (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: TargetPlatformName, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699266"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName, element (szablony Visual Studio)
-Określa platformę, na którą kieruje szablon projektu. Ten element jest używany do określenia, że [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] szablon projektu jest używany do tworzenia aplikacji.
+Określa platformę, do której należy szablon projektu. Ten element służy do określenia, że szablon projektu jest używany do tworzenia [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,22 +37,22 @@ Określa platformę, na którą kieruje szablon projektu. Ten element jest używ
 
 |Element|Opis|
 |-------------|-----------------|
-|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Określa wersję systemu operacyjnego przeznaczoną dla szablonu projektu.|
+|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Określa wersję systemu operacyjnego, do którego odwołuje się szablon projektu.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
 ## <a name="remarks"></a>Uwagi
- Tekst musi być **Windows**.
+ Tekst musi być w **systemie Windows**.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie określono, [!INCLUDE[win8](../debugger/includes/win8_md.md)] że cele szablonu projektu lub później.
+ Ten przykład określa, że szablon projektu jest obiektem docelowym [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszym.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">

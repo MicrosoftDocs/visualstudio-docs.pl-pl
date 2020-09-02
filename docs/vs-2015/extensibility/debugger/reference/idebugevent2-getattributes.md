@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2::GetAttributes | Dokumentacja firmy Microsoft
+title: 'IDebugEvent2:: GetAttributes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8396d633e682eb9c78aef5b1241e7f9fc635a325
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144382"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
@@ -40,13 +40,13 @@ int GetAttribute( 
   
 #### <a name="parameters"></a>Parametry  
  `pdwAttrib`  
- [out] Kombinacja flag z [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) wyliczenia.  
+ określoną Kombinacja flag z wyliczenia [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs jest wspólne dla wszystkich zdarzeń. Metoda opisuje typ zdarzenia; na przykład jest to zdarzenie synchronicznego lub asynchronicznego i zatrzymywania zdarzenie jest.  
+ Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) jest wspólny dla wszystkich zdarzeń. Ta metoda opisuje typ zdarzenia; na przykład jest to zdarzenie synchroniczne lub asynchroniczne i jest zdarzeniem zatrzymania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

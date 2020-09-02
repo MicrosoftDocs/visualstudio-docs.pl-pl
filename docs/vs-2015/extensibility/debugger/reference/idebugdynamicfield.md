@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicField | Dokumentacja firmy Microsoft
+title: IDebugDynamicField | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 41cf0e397834f337863baa46abb4e6bbccee98ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198514"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
@@ -31,21 +31,21 @@ IDebugDynamicField : IDebugField
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Ten interfejs jest implementowany przez dostawców symbol jako klasę bazową dla dowolnego typu, który może być ustalony w czasie wykonywania. Te informacje dotyczą tylko kodu zarządzanego.  
+ Ten interfejs jest implementowany przez dostawców symboli jako klasa bazowa dla dowolnego typu, który może być ustalony w czasie wykonywania. Jest to tylko kod zarządzany.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs reprezentuje klasę bazową, z którego mogą być uzyskane bardziej wyspecjalizowane interfejsy.  
+ Ten interfejs reprezentuje klasę bazową, z której można utworzyć bardziej wyspecjalizowane interfejsy.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- Ten interfejs nie dostarcza żadnych metod innych niż odziedziczone z `IDebugField`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ Ten interfejs nie dostarcza żadnych metod innych niż dziedziczone z `IDebugField` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: sh.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy dostawca symboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfejsy dostawcy symboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

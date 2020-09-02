@@ -1,5 +1,5 @@
 ---
-title: Inne okna dialogowe | Dokumentacja firmy Microsoft
+title: Inne okna dialogowe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,30 +13,30 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0178b9f79daa8ddec51d468cb22f3104c26b7f41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198154"
 ---
 # <a name="other-dialog-boxes"></a>Inne okna dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Okna te zawierają informacje o programie Spy ++.  
+Te okna dialogowe zawierają informacje o programie Spy + +.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Informacje o programie Microsoft Spy++](../debugger/about-microsoft-spy-increment.md)  
- Informacje na temat użytkowania programu Spy ++.  
+ [Informacje o Microsoft Spy++](../debugger/about-microsoft-spy-increment.md)  
+ Informacje na temat własności programu Spy + +.  
   
- [Informacja o prawach autorskich dotyczących pomocy programu Spy++](../debugger/copyright-notice-for-spy-increment-help.md)  
- Informacje prawne praw autorskich.  
+ [Prawa autorskie dla Spy++ — Pomoc](../debugger/copyright-notice-for-spy-increment-help.md)  
+ Uwagi prawne dotyczące praw autorskich.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.  
+ [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)  
+ Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
+ Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.  
   
- [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Spy++ — Widoki](../debugger/spy-increment-views.md)  
+ Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.

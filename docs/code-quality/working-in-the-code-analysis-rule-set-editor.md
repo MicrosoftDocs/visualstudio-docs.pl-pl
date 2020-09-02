@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893310"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Korzystanie z edytora zestawu reguł analizy kodu
@@ -26,7 +26,7 @@ W poniższej tabeli przedstawiono opcje ważności:
 |Akcja (ważność)|Opis|
 |-|-|
 |Ostrzeżenie|Generuje ostrzeżenie w **Lista błędów** a także w czasie kompilacji.|
-|Error|Generuje błąd w **Lista błędów** a także w czasie kompilacji.|
+|Błąd|Generuje błąd w **Lista błędów** a także w czasie kompilacji.|
 |Info|Generuje komunikat w **Lista błędów**.|
 |Ukryty|Naruszenie nie jest widoczne dla użytkownika. Środowisko IDE jest powiadamiane jednak o naruszeniu.|
 |Brak|Reguła jest pomijana. Zachowanie jest takie samo, jak w przypadku usunięcia reguły z zestawu reguł.|
@@ -69,7 +69,7 @@ W poniższej tabeli opisano pola zestawu reguł:
 
 |Pole|Opis|
 |-----------|-----------------|
-|**#C1**|Identyfikator reguły.|
+|**ID**|Identyfikator reguły.|
 |**Kategoria**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [ostrzeżenia analizy kodu](../code-quality/code-analysis-for-managed-code-warnings.md).|
 |**Nazwa**|Tytuł reguły.|
 |**Przestrzeń nazw**|Przestrzeń nazw reguły.|

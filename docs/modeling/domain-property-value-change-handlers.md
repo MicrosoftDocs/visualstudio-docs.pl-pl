@@ -10,21 +10,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594711"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obsługa zmian wartości właściwości domeny
 
-W języku specyficznym dla domeny programu Visual Studio: po zmianie wartości właściwości domeny `OnValueChanging()` i `OnValueChanged()` metody są wywoływane w obsłudze właściwości domeny. Aby reagować na zmiany, można zastąpić tych metod.
+W języku specyficznym dla domeny programu Visual Studio, gdy wartość właściwości domeny ulega zmianie, `OnValueChanging()` `OnValueChanged()` metody i są wywoływane w programie obsługi właściwości domeny. Aby odpowiedzieć na zmianę, można zastąpić te metody.
 
-## <a name="override-the-property-handler-methods"></a>Przesłaniaj metody procedury obsługi właściwości
+## <a name="override-the-property-handler-methods"></a>Przesłoń metody obsługi właściwości
 
-Każda właściwość domeny języka specyficznego dla domeny jest obsługiwany przez klasę, która jest zagnieżdżona w swojej klasie domeny nadrzędnej. Nazwy w formacie *PropertyName*PropertyHandler. Ta klasa procedury obsługi właściwości w pliku możesz sprawdzić **Dsl\Generated Code\DomainClasses.cs**. W klasie `OnValueChanging()` jest wywoływana tuż przed zmianami wartości i `OnValueChanged()` jest wywoływana bezpośrednio po zmianie wartości.
+Każda właściwość domeny języka właściwego dla domeny jest obsługiwana przez klasę, która jest zagnieżdżona wewnątrz klasy domeny nadrzędnej. Jego nazwa jest zgodna z formatem *PropertyName*PropertyHandler. Tę klasę programu obsługi właściwości można sprawdzić w pliku **Dsl\Generated Code\DomainClasses.cs**. W klasie, `OnValueChanging()` jest wywoływana bezpośrednio przed zmianą wartości i `OnValueChanged()` jest wywoływana natychmiast po zmianie wartości.
 
-Załóżmy na przykład, posiadasz klasę domeny o nazwie `Comment` zawierający ciąg właściwość domeny o nazwie `Text` i właściwością liczby całkowitej o nazwie `TextLengthCount`. Aby spowodować `TextLengthCount` zawsze w celu uwzględnienia długość `Text` ciągu, można napisać następujący kod w oddzielnym pliku w projekcie języka Dsl:
+Załóżmy na przykład, że masz klasę domeny o nazwie `Comment` , która ma właściwość domeny typu String o nazwie `Text` i Właściwość Integer o nazwie `TextLengthCount` . Aby `TextLengthCount` zawsze zawierać długość `Text` ciągu, można napisać następujący kod w osobnym pliku w projekcie DSL:
 
 ```csharp
 // Domain Class "Comment":
@@ -52,25 +52,25 @@ public partial class Comment
 
 Zwróć uwagę na następujące kwestie dotyczące obsługi właściwości:
 
-- Metody obsługi właściwości są nazywane po użytkownik wprowadza zmiany do właściwości domeny, i gdy program kod przypisuje inną wartość właściwości.
+- Metody obsługi właściwości są wywoływane zarówno wtedy, gdy użytkownik wprowadza zmiany do właściwości domeny i gdy kod programu przypisuje inną wartość właściwości.
 
-- Metody są wywoływane tylko wtedy, gdy faktycznie zmienia wartość. Program obsługi nie jest wywoływana, jeśli program kod przypisuje wartość, która jest równa wartości bieżącej.
+- Metody są wywoływane tylko wtedy, gdy wartość rzeczywiście ulega zmianie. Procedura obsługi nie jest wywoływana, jeśli kod programu przypisuje wartość równą bieżącej wartości.
 
-- Magazyn obliczone i niestandardowe właściwości domeny nie ma metody OnValueChanged i OnValueChanging.
+- Właściwości obliczeniowe i niestandardowe domeny magazynu nie mają metod OnValueChanged i OnValueChanging.
 
-- Program obsługi zmiany nie można używać do modyfikowania nowych wartości. Jeśli chcesz to zrobić, na przykład ograniczyć wartość do określonego zakresu, definiowanie `ChangeRule`.
+- Nie można użyć obsługi zmiany w celu zmodyfikowania nowej wartości. Jeśli chcesz to zrobić, na przykład w celu ograniczenia wartości do określonego zakresu, zdefiniuj `ChangeRule` .
 
-- Nie można dodać program obsługi zmiany właściwości, który reprezentuje rolę relacji. Zamiast tego Zdefiniuj `AddRule` i `DeleteRule` klasy relacji. Te zasady są wyzwalane, gdy łącza są tworzone lub zmienione. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+- Nie można dodać obsługi zmiany do właściwości, która reprezentuje rolę relacji. Zamiast tego należy zdefiniować `AddRule` i `DeleteRule` dla klasy Relationship. Te reguły są wyzwalane po utworzeniu lub zmianie linków. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
-### <a name="changes-in-and-out-of-the-store"></a>Zmiany i Magazyn
+### <a name="changes-in-and-out-of-the-store"></a>Zmiany w sklepie i poza nim
 
-Metody obsługi właściwości są nazywane wewnątrz transakcji, która zainicjowała zmiany. W związku z tym można wprowadzić więcej zmian w magazynie, bez konieczności otwierania nowych transakcji. Zmiany może prowadzić do dodatkowych obsługi zdarzeń wywołuje.
+Metody obsługi właściwości są wywoływane wewnątrz transakcji, która zainicjowała zmianę. W związku z tym można wprowadzić więcej zmian w sklepie bez otwierania nowej transakcji. Zmiany mogą spowodować dodatkowe wywołania procedury obsługi.
 
-Gdy jest cofnięcie transakcji, ponowne wykonanie pośrednich lub wycofana, możesz nie powinna dokonywać zmian w magazynie, oznacza to, że zmiany do elementów modelu, relacje, kształty, diagramy łączników lub ich właściwości.
+Po cofnięciu lub wycofaniu transakcji nie należy wprowadzać zmian w sklepie, to oznacza, zmiany elementów modelu, relacji, kształtów, łączników lub ich właściwości.
 
-Ponadto należy zwykle nie zaktualizować wartości podczas ładowania modelu z pliku.
+Ponadto zazwyczaj nie można aktualizować wartości podczas ładowania modelu z pliku.
 
-W związku z tym powinny być chronione podobnie zmiany w modelu przez test następująco:
+W związku z tym zmiany w modelu powinny być chronione przez test podobny do tego:
 
 ```csharp
 if (!store.InUndoRedoOrRollback && !store. InSerializationTransaction)
@@ -79,11 +79,11 @@ if (!store.InUndoRedoOrRollback && !store. InSerializationTransaction)
 }
 ```
 
-Z drugiej strony jeśli procedury obsługi właściwości propaguje zmiany poza magazynu, na przykład w pliku, bazy danych lub zmienne-store, następnie należy zawsze wprowadzić te zmiany, tak aby zewnętrzne wartości są aktualizowane, gdy użytkownik wywołuje cofania lub wykonaj ponownie.
+Z kolei, jeśli program obsługi właściwości propaguje zmiany poza magazynem, na przykład do pliku, bazy danych lub zmiennych niemagazynowych, należy zawsze wprowadzić te zmiany, aby wartości zewnętrzne były aktualizowane, gdy użytkownik wywoła polecenie Cofnij lub wykonaj ponownie.
 
 ### <a name="cancel-a-change"></a>Anuluj zmianę
 
-Jeśli chcesz uniemożliwić zmiany, możesz je wycofać bieżącej transakcji. Na przykład możesz chcieć upewnij się, że właściwość pozostanie w określonym zakresie.
+Jeśli chcesz zapobiec zmianie, możesz wycofać bieżącą transakcję. Na przykład możesz chcieć upewnić się, że właściwość pozostaje w określonym zakresie.
 
 ```csharp
 if (newValue > 10)
@@ -93,26 +93,26 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Alternatywna metoda: obliczane właściwości
+### <a name="alternative-technique-calculated-properties"></a>Metoda alternatywna: właściwości obliczeniowe
 
-W poprzednim przykładzie pokazano, jak OnValueChanged() może służyć do propagowania wartości z właściwości w jednej domenie. Każda właściwość ma swój własny przechowywanej wartości.
+W poprzednim przykładzie pokazano, jak OnValueChanged () może służyć do propagowania wartości z jednej domeny do drugiej. Każda właściwość ma własną przechowywaną wartość.
 
-Zamiast tego należy rozważyć Definiowanie właściwości pochodnej jako właściwość obliczeniowe. W tym przypadku właściwość ma nie swój własny magazyn, a jest zdefiniowanie szacowania funkcji będzie zawsze wtedy, gdy jej wartość jest wymagana. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).
+Zamiast tego można rozważyć zdefiniowanie właściwości pochodnej jako właściwości obliczeniowej. W takim przypadku właściwość nie ma własnego magazynu i definiuje funkcję, która jest szacowana, gdy jej wartość jest wymagana. Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).
 
-Zamiast poprzedni przykład można ustawić **rodzaj** pole `TextLengthCount` jako **obliczona** w definicji DSL. Czy podać własne **uzyskać** metody dla tej właściwości domeny. **Uzyskać** metoda zwróci Bieżąca długość `Text` ciągu.
+Zamiast poprzedniego przykładu, można ustawić pole **rodzaju** , które `TextLengthCount` ma zostać **obliczone** w definicji DSL. Należy podać własną metodę **Get** dla tej właściwości domeny. Metoda **Get** zwróci bieżącą długość `Text` ciągu.
 
-Potencjalną wadą właściwości obliczeniowej jest jednak, że wyrażenie jest obliczane, za każdym razem, gdy wartość jest używana, które mogą stanowić problem z wydajnością. Ponadto jest mało bez OnValueChanging() i OnValueChanged() na obliczonej właściwości.
+Jednak potencjalną wadą obliczonych właściwości jest to, że wyrażenie jest oceniane za każdym razem, gdy wartość jest używana, co może stanowić problem z wydajnością. Ponadto nie ma żadnych OnValueChanging () i OnValueChanged () na właściwości obliczeniowej.
 
-### <a name="alternative-technique-change-rules"></a>Alternatywna metoda: zmiana reguł
+### <a name="alternative-technique-change-rules"></a>Alternatywna Technika: reguły zmian
 
-Jeśli zdefiniujesz ChangeRule, jest ono wykonywane na końcu transakcji, w którym ulega zmianie wartość właściwości.  Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+Jeśli zdefiniujesz ChangeRule, jest ono wykonywane na końcu transakcji, w której zmienia się wartość właściwości.  Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
-Jeśli kilka zmian jest wprowadzonych w jednej transakcji, ChangeRule wykonuje, gdy są one wszystkie ukończone. Natomiast OnValue... metody są wykonywane, gdy niektóre zmiany nie zostały wykonane. W zależności od tego, co chcesz osiągnąć to może spowodować ChangeRule bardziej odpowiednie.
+Jeśli w jednej transakcji wprowadzono kilka zmian, ChangeRule wykonuje się po zakończeniu. Z drugiej strony, onvalue... metody są wykonywane, gdy niektóre zmiany nie zostały wykonane. W zależności od tego, co chcesz osiągnąć, może być ChangeRule bardziej odpowiednie.
 
-ChangeRule umożliwia również dostosować nowe wartości właściwości, aby utrzymać ją do określonego zakresu.
+Możesz również użyć ChangeRule, aby dostosować nową wartość właściwości, aby zachować ją w określonym zakresie.
 
 > [!WARNING]
-> Jeśli reguła sprawia, że zmiany do zawartości ze sklepu, inne zasady i procedury obsługi właściwości mogą być wyzwalane. Jeśli reguła zmieni się właściwość, która je wyzwoliło, zostanie ponownie wywołana. Upewnij się, że definicji reguły nie powodują wyzwolenie nieskończone.
+> Jeśli reguła wprowadza zmiany w zawartości magazynu, mogą być wyzwalane inne reguły i programy obsługi właściwości. Jeśli reguła zmieni właściwość, która ją wywołała, zostanie ponownie wywołana. Należy upewnić się, że definicje reguł nie powodują nieskończonego wyzwalania.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -146,7 +146,7 @@ public partial class MyDomainModel
 
 ### <a name="description"></a>Opis
 
-Poniższy przykład zastępuje procedury obsługi właściwości właściwości domeny i powiadamia użytkownika, gdy właściwość `ExampleElement` klasy domeny została zmieniona.
+Poniższy przykład zastępuje procedurę obsługi właściwości domeny i powiadamia użytkownika o `ExampleElement` zmianie właściwości klasy domeny.
 
 ### <a name="code"></a>Kod
 

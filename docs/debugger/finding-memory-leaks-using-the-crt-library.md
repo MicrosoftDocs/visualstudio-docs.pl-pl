@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350488"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Znajdowanie przecieków pamięci za pomocą biblioteki CRT
@@ -186,11 +186,11 @@ Możesz użyć numeru alokacji, aby ustawić punkt przerwania dla alokacji pami�
 
 1. W oknie **czujki** wpisz `_crtBreakAlloc` w kolumnie **Nazwa** .
 
-   Jeśli używasz wielowątkowej biblioteki DLL w bibliotece CRT (opcja/MD), Dodaj Operator kontekstu:`{,,ucrtbased.dll}_crtBreakAlloc`
+   Jeśli używasz wielowątkowej biblioteki DLL w bibliotece CRT (opcja/MD), Dodaj Operator kontekstu: `{,,ucrtbased.dll}_crtBreakAlloc`
    
    Upewnij się, że symbole debugowania są załadowane. W przeciwnym razie `_crtBreakAlloc` zostanie zgłoszone jako *niezidentyfikowane*.
 
-1. Naciśnij klawisz **Enter**.
+1.  Naciśnij klawisz **Enter**.
 
    Debuger oblicza wywołanie i umieszcza wynik w kolumnie **wartość** . Ta wartość będzie równa **-1** , jeśli nie ustawisz żadnych punktów przerwania dla alokacji pamięci.
 
@@ -229,7 +229,7 @@ Aby wyprowadzić zawartość `_CrtMemState` struktury, Przekaż strukturę do `_
 _CrtMemDumpStatistics( &s1 );
 ```
 
-`_ CrtMemDumpStatistics`wyprowadza zrzut stanu pamięci, który wygląda następująco:
+`_ CrtMemDumpStatistics` wyprowadza zrzut stanu pamięci, który wygląda następująco:
 
 ```cmd
 0 bytes in 0 Free Blocks.
@@ -252,13 +252,13 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );
 ```
 
-`_CrtMemDifference`porównuje Stany pamięci `s1` i `s2` zwraca wynik w ( `s3` ), który jest różnicą między `s1` i `s2` .
+`_CrtMemDifference` porównuje Stany pamięci `s1` i `s2` zwraca wynik w ( `s3` ), który jest różnicą między `s1` i `s2` .
 
 Jedna z technik znajdowania przecieków pamięci rozpoczyna się od umieszczenia `_CrtMemCheckpoint` wywołań na początku i na końcu aplikacji, a następnie za pomocą `_CrtMemDifference` programu, aby porównać wyniki. W przypadku `_CrtMemDifference` wyświetlenia przecieku pamięci można dodać więcej `_CrtMemCheckpoint` wywołań, aby podzielić program za pomocą wyszukiwania binarnego, dopóki nie wyizolowano źródła wycieku.
 
 ## <a name="false-positives"></a>Fałszywie dodatnie
 
- `_CrtDumpMemoryLeaks`może dawać fałszywych wskazań przecieków pamięci, jeśli biblioteka oznacza wewnętrzne alokacje jako bloki normalne zamiast bloków CRT lub bloków klienta. W takim przypadku `_CrtDumpMemoryLeaks` nie jest możliwe poinformowanie różnic między przydziałami użytkowników i wewnętrznymi przydziałami bibliotek. Jeśli globalne destruktory alokacji biblioteki są uruchamiane po punkcie, w którym jest wywoływana `_CrtDumpMemoryLeaks` , każda alokacja biblioteki wewnętrznej jest raportowana jako przeciek pamięci. Wersje biblioteki standardowego szablonu starszej niż Visual Studio .NET mogą spowodować `_CrtDumpMemoryLeaks` zgłoszenie fałszywych wyników.
+ `_CrtDumpMemoryLeaks` może dawać fałszywych wskazań przecieków pamięci, jeśli biblioteka oznacza wewnętrzne alokacje jako bloki normalne zamiast bloków CRT lub bloków klienta. W takim przypadku `_CrtDumpMemoryLeaks` nie jest możliwe poinformowanie różnic między przydziałami użytkowników i wewnętrznymi przydziałami bibliotek. Jeśli globalne destruktory alokacji biblioteki są uruchamiane po punkcie, w którym jest wywoływana `_CrtDumpMemoryLeaks` , każda alokacja biblioteki wewnętrznej jest raportowana jako przeciek pamięci. Wersje biblioteki standardowego szablonu starszej niż Visual Studio .NET mogą spowodować `_CrtDumpMemoryLeaks` zgłoszenie fałszywych wyników.
 
 ## <a name="see-also"></a>Zobacz też
 

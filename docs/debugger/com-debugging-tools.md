@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71211276"
 ---
 # <a name="com-debugging-tools"></a>Narzędzia debugowania COM
@@ -40,11 +40,11 @@ Przykłady klas Microsoft Foundation
 
 Przykłady kontrolek ActiveX MFC OCLIENT i SUPERPAD są również dostępne do testowania aplikacji. Uwzględniono pełny kod źródłowy tych przykładów.
 
-### <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz też
 
-- [Debugowanie aplikacji COM i kontrolek ActiveX](../debugger/com-and-activex-debugging.md)
+- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)
 - [Narzędzia debugowania COM](../debugger/com-debugging-tools.md)
-- [Debugowanie w programie Visual Studio](../debugger/index.yml)
+- [Debugowanie w Visual Studio](../debugger/index.yml)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
-- [Przykład OCLIENT: Ilustruje wizualną edycję kontenera aplikacji](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Przykład SUPERPAD: Demonstruje serwer edycji wizualnej, który Edytuje tekst za pomocą elementu CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Przykład OCLIENT: ilustruje wizualną edycję kontenera aplikacji](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Przykład SUPERPAD: pokazuje wizualny serwer edycji, który Edytuje tekst za pomocą elementu CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

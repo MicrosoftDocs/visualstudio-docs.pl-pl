@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3307fc124f50e8c9f73749293c36f53be36c5e3c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71252449"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Tworzenie aplikacji ClickOnce do wdrażania przez inne osoby
@@ -50,13 +50,13 @@ Nie wszyscy deweloperzy, którzy tworzą plan wdrożeń ClickOnce do wdrażania 
  Nawet jeśli deweloper i klient zgadzają się, że klient powinien podpisać manifest aplikacji, wywołuje inne problemy, które ponoszą tożsamość aplikacji, szczególnie w odniesieniu do wdrożenia zaufanej aplikacji. Aby uzyskać więcej informacji na temat tej funkcji, zobacz [Omówienie wdrażania zaufanych aplikacji](../deployment/trusted-application-deployment-overview.md). Załóżmy, że firma Adventure Works chce skonfigurować swoje komputery klienckie w taki sposób, aby każda aplikacja udostępniona przez firmę Microsoft Corporation była uruchomiona z pełnym zaufaniem. Jeśli firma Adventure Works podpisuje Manifest wdrożenia, ClickOnce będzie używać sygnatury zabezpieczeń firmy Adventure Work, aby określić poziom zaufania aplikacji.
 
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Tworzenie wdrożeń klientów przy użyciu manifestu aplikacji dla zaufania
- Technologia ClickOnce w .NET Framework 3,5 zawiera nową funkcję zapewniającą deweloperom i klientom nowe rozwiązanie do scenariusza, w jaki sposób mają być podpisane manifesty. Manifest aplikacji ClickOnce obsługuje nowy element o nazwie `<useManifestForTrust>` , który umożliwia deweloperom oznaczanie, że podpis cyfrowy manifestu aplikacji jest używany do podejmowania decyzji dotyczących zaufania. Deweloper używa narzędzi pakietu ClickOnce, takich jak *Mage. exe*, *MageUI. exe*i Visual Studio — do dołączania tego elementu do manifestu aplikacji, a także do osadzania zarówno nazwy wydawcy, jak i nazwy aplikacji w manifeście.
+ Technologia ClickOnce w .NET Framework 3,5 zawiera nową funkcję zapewniającą deweloperom i klientom nowe rozwiązanie do scenariusza, w jaki sposób mają być podpisane manifesty. Manifest aplikacji ClickOnce obsługuje nowy element o nazwie `<useManifestForTrust>` , który umożliwia deweloperom oznaczanie, że podpis cyfrowy manifestu aplikacji jest używany do podejmowania decyzji dotyczących zaufania. Deweloper używa narzędzi do pakowania ClickOnce, takich jak *Mage.exe*, *MageUI.exe*i Visual Studio — do uwzględnienia tego elementu w manifeście aplikacji, a także do osadzania zarówno nazwy wydawcy, jak i nazwy aplikacji w manifeście.
 
- W przypadku `<useManifestForTrust>`korzystania z programu manifest wdrożenia nie musi być podpisany przy użyciu certyfikatu Authenticode wystawionego przez urząd certyfikacji. Zamiast tego może być podpisany przy użyciu co jest znane jako certyfikat z podpisem własnym. Certyfikat z podpisem własnym jest generowany przez klienta lub dewelopera przy użyciu standardowych narzędzi zestawu SDK .NET Framework, a następnie stosowane do manifestu wdrożenia przy użyciu standardowych narzędzi wdrażania ClickOnce. Aby uzyskać więcej informacji, zobacz [MakeCert](/windows/desktop/SecCrypto/makecert).
+ W przypadku korzystania `<useManifestForTrust>` z programu manifest wdrożenia nie musi być podpisany przy użyciu certyfikatu Authenticode wystawionego przez urząd certyfikacji. Zamiast tego może być podpisany przy użyciu co jest znane jako certyfikat z podpisem własnym. Certyfikat z podpisem własnym jest generowany przez klienta lub dewelopera przy użyciu standardowych narzędzi zestawu SDK .NET Framework, a następnie stosowane do manifestu wdrożenia przy użyciu standardowych narzędzi wdrażania ClickOnce. Aby uzyskać więcej informacji, zobacz [MakeCert](/windows/desktop/SecCrypto/makecert).
 
  Korzystanie z certyfikatu z podpisem własnym dla manifestu wdrożenia ma kilka zalet. Eliminując konieczność, aby klient uzyskał lub utworzył własny certyfikat Authenticode, `<useManifestForTrust>` upraszcza wdrożenie klienta, a jednocześnie pozwala deweloperom na zachowanie własnej tożsamości oznakowania w aplikacji. Wynikiem jest zestaw podpisanych wdrożeń, które są bardziej bezpieczne i mają unikatowe tożsamości aplikacji. Eliminuje to potencjalne konflikty, które mogą wystąpić podczas wdrażania tej samej aplikacji na wielu klientach.
 
- Aby uzyskać szczegółowe informacje na temat sposobu tworzenia wdrożenia ClickOnce z `<useManifestForTrust>` włączonym, zobacz [Przewodnik: Ręcznie Wdróż aplikację ClickOnce, która nie wymaga ponownego podpisywania i zachowuje informacje o](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)znakowaniu.
+ Aby uzyskać szczegółowe informacje na temat sposobu tworzenia wdrożenia ClickOnce z `<useManifestForTrust>` włączonym, zobacz [Przewodnik: ręczne wdrażanie aplikacji ClickOnce, która nie wymaga ponownego podpisywania i zachowuje informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
 
 ### <a name="how-application-manifest-for-trust-works-at-run-time"></a>Jak manifest aplikacji dla zaufania działa w czasie wykonywania
  Aby lepiej zrozumieć sposób używania manifestu aplikacji do zaufania w czasie wykonywania, należy wziąć pod uwagę Poniższy przykład. Aplikacja ClickOnce, która jest przeznaczona dla .NET Framework 3,5, jest tworzona przez firmę Microsoft. Manifest aplikacji używa `<useManifestForTrust>` elementu i jest podpisany przez firmę Microsoft. Firma Adventure Works podpisuje Manifest wdrożenia przy użyciu certyfikatu z podpisem własnym. Klienci firmy Adventure Works są skonfigurowani do ufania wszelkim aplikacji podpisanym przez firmę Microsoft.
@@ -73,7 +73,7 @@ Nie wszyscy deweloperzy, którzy tworzą plan wdrożeń ClickOnce do wdrażania 
 
  Jedną z wad tej metody jest czas i koszt, które są wymagane do jego wdrożenia. Taka usługa może być skompilowana przy użyciu narzędzi dostępnych w zestawie .NET Framework SDK, co spowoduje zwiększenie czasu projektowania do cyklu życia produktu.
 
- Jak wspomniano wcześniej w tym temacie, kolejną wadą jest to, że każda wersja aplikacji klienta będzie miała taką samą tożsamość aplikacji, co może prowadzić do konfliktów. Jeśli jest to problem, deweloper może zmienić pole nazwy, które jest używane podczas generowania manifestu wdrożenia, aby nadać każdej aplikacji unikatową nazwę. Spowoduje to utworzenie oddzielnej tożsamości dla każdej wersji aplikacji i wyeliminowanie potencjalnych konfliktów tożsamości. To pole odnosi się do `-Name` argumentu programu Mage. exe oraz do pola **Nazwa** na karcie **Nazwa** w MageUI. exe.
+ Jak wspomniano wcześniej w tym temacie, kolejną wadą jest to, że każda wersja aplikacji klienta będzie miała taką samą tożsamość aplikacji, co może prowadzić do konfliktów. Jeśli jest to problem, deweloper może zmienić pole nazwy, które jest używane podczas generowania manifestu wdrożenia, aby nadać każdej aplikacji unikatową nazwę. Spowoduje to utworzenie oddzielnej tożsamości dla każdej wersji aplikacji i wyeliminowanie potencjalnych konfliktów tożsamości. To pole odnosi się do `-Name` argumentu Mage.exe i do pola **Nazwa** na karcie **Nazwa** w MageUI.exe.
 
  Załóżmy na przykład, że deweloper utworzył aplikację o nazwie Application1. Zamiast tworzenia jednego wdrożenia z polem nazwa ustawionym na Application1, deweloper może utworzyć kilka wdrożeń z odmianą specyficzną dla klienta, na przykład Application1-Customer, Application1-CustomerB i tak dalej.
 
@@ -97,7 +97,7 @@ Nie wszyscy deweloperzy, którzy tworzą plan wdrożeń ClickOnce do wdrażania 
 
  Wadą tej metody jest to, że wymaga od klienta zainstalowania narzędzi zestawu SDK .NET Framework i posiadania dewelopera lub administratora systemu, który jest wykwalifikowany do korzystania z nich. Niektórzy klienci mogą wymagać rozwiązania, które wymaga niewielkiego lub żadnego nakładu technicznego na ich część.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wdrażaj aplikacje ClickOnce do testowania i serwerów produkcyjnych bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
-- [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, która nie wymaga ponownego podpisywania i zachowuje informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
+- [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [Przewodnik: ręczne wdrażanie aplikacji ClickOnce, która nie wymaga ponownego podpisywania i zachowuje informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

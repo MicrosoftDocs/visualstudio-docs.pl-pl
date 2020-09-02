@@ -1,5 +1,5 @@
 ---
-title: Dane w wskazówki dotyczące rozwiązań pakietu Office
+title: Dane w przewodnikach rozwiązań pakietu Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,45 +14,45 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62956033"
 ---
-# <a name="data-in-office-solutions-walkthroughs"></a>Dane w wskazówki dotyczące rozwiązań pakietu Office
-  Poniższe instruktaże przedstawiają sposób pracy z danymi w dostosowaniach na poziomie dokumentu i dodatków narzędzi VSTO dla programu Microsoft Office Word i Microsoft Office Excel.
+# <a name="data-in-office-solutions-walkthroughs"></a>Dane w przewodnikach rozwiązań pakietu Office
+  Poniższe przewodniki przedstawiają sposób pracy z danymi w dostosowaniach na poziomie dokumentu i dodatkach VSTO dla Microsoft Office Word i Microsoft Office Excel.
 
 ## <a name="bind-controls-to-data"></a>Powiązywanie kontrolek z danymi
-- [Przewodnik: Proste powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) pokazuje, jak powiązać jedno pole danych w bazie danych programu SQL Server, aby <xref:Microsoft.Office.Tools.Excel.NamedRange> w pliku dostosowań poziomu dokumentu dla programu Excel.
+- [Przewodnik: proste powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) Demonstruje sposób powiązania pojedynczego pola danych w bazie danych SQL Server z programem w celu <xref:Microsoft.Office.Tools.Excel.NamedRange> dostosowania na poziomie dokumentu dla programu Excel.
 
-- [Przewodnik: Złożone powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) pokazuje, jak powiązać tabelę w bazie danych programu SQL Server, aby <xref:Microsoft.Office.Tools.Excel.ListObject> w pliku dostosowań poziomu dokumentu dla programu Excel.
+- [Przewodnik: złożone powiązanie danych w projekcie na poziomie dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) Pokazuje, w jaki sposób powiązać tabelę w bazie danych SQL Server z do <xref:Microsoft.Office.Tools.Excel.ListObject> dostosowania na poziomie dokumentu dla programu Excel.
 
-- [Przewodnik: Proste powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) pokazuje, jak powiązać jedno pole danych w bazie danych programu SQL Server, aby <xref:Microsoft.Office.Tools.Word.RichTextContentControl> w dodatku narzędzi VSTO dla programu Word.
+- [Przewodnik: proste powiązanie danych w projekcie dodatku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) Pokazuje, jak powiązać pojedyncze pole danych w bazie danych SQL Server do dodatku narzędzi <xref:Microsoft.Office.Tools.Word.RichTextContentControl> VSTO dla programu Word.
 
-- [Przewodnik: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) pokazuje, jak powiązać tabelę w bazie danych programu SQL Server, aby <xref:Microsoft.Office.Tools.Excel.ListObject> w dodatku narzędzi VSTO dla programu Excel.
+- [Przewodnik: złożone powiązanie danych w projekcie dodatku VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) Pokazuje, w jaki sposób powiązać tabelę w bazie danych SQL Server z <xref:Microsoft.Office.Tools.Excel.ListObject> w dodatku narzędzi VSTO dla programu Excel.
 
-- [Przewodnik: Wiązanie danych z kontrolkami w okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) przedstawiono sposób dodawania formantów, które są powiązane ze źródłem danych do okienka akcji w programie Excel.
+- [Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) Pokazuje, jak dodać formanty, które są powiązane ze źródłem danych, w okienku Akcje w programie Excel.
 
-- [Przewodnik: Wiązanie danych z kontrolkami w okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) pokazuje, jak powiązać z kontrolkami w okienku akcji z danymi. Formanty pokazują wzorzec/szczegół relacji między tabelami w bazie danych programu SQL Server.
+- [Przewodnik: powiązywanie danych z kontrolkami w okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) Pokazuje, jak powiązać kontrolki w okienku akcji z danymi. Kontrolki ilustrują relację wzorzec/szczegóły między tabelami w bazie danych SQL Server.
 
-- [Przewodnik: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md) pokazuje, jak powiązać formanty zawartości w dokumencie programu Word z danymi XML, który znajduje się w dokumencie.
+- Wskazówki [: powiązywanie kontrolek zawartości z niestandardowymi częściami XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md) Pokazuje, jak powiązać kontrolki zawartości w dokumencie programu Word z danymi XML przechowywanymi w dokumencie.
 
-## <a name="cache-data-in-document-level-solutions"></a>Pamięć podręczna danych w rozwiązaniach na poziomie dokumentu
-- [Przewodnik: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md) pokazuje, jak tworzenie relacji wzorzec/szczegół w arkuszu kalkulacyjnym i buforuje te dane, dzięki czemu rozwiązanie może służyć w trybie offline.
+## <a name="cache-data-in-document-level-solutions"></a>Buforuj dane w rozwiązaniach na poziomie dokumentu
+- Wskazówki [: Tworzenie relacji głównej szczegółów przy użyciu buforowanego zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md) Pokazuje, jak utworzyć relację wzorzec/szczegóły w arkuszu i buforować dane, aby można było używać rozwiązania w trybie offline.
 
-- [Przewodnik: Wstawianie danych do skoroszytu na serwerze](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md) pokazuje, jak wstawić dane do zestawu danych, który jest buforowany w skoroszycie programu Microsoft Office Excel, bez konieczności uruchamiania programu Excel.
+- [Przewodnik: Wstawianie danych do skoroszytu na serwerze](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md) Pokazuje, jak wstawiać dane do zestawu danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel.
 
-- [Przewodnik: Pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md) pokazuje, jak pobierać dane z zestawu danych, który jest buforowany w skoroszycie programu Microsoft Office Excel, bez konieczności uruchamiania programu Excel.
+- [Przewodnik: pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md) Pokazuje, jak pobrać dane z zestawu danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel.
 
-- [Przewodnik: Zmień dane w pamięci podręcznej ze skoroszytu na serwerze](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) przedstawia sposób modyfikowania zestawu danych, który jest buforowany w skoroszycie programu Microsoft Office Excel, bez konieczności uruchamiania programu Excel.
+- [Przewodnik: zmiana danych buforowanych w skoroszycie na serwerze](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) Pokazuje, jak zmodyfikować zestaw danych, który jest buforowany w Microsoft Office skoroszycie programu Excel bez uruchamiania programu Excel.
 
-## <a name="see-also"></a>Zobacz także
-- [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)
-- [Wskazówki dotyczące za pomocą programu Excel](../vsto/walkthroughs-using-excel.md)
+## <a name="see-also"></a>Zobacz też
+- [Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)
+- [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)
 - [Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization-walkthroughs.md)
-- [Wskazówki dotyczące wdrażania i zabezpieczeń](../vsto/security-and-deployment-walkthroughs.md)
-- [Office development ― przykłady](../vsto/office-development-samples.md)
-- [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Przewodniki dotyczące zabezpieczeń i wdrażania](../vsto/security-and-deployment-walkthroughs.md)
+- [Przykłady programowania dla pakietu Office](../vsto/office-development-samples.md)
+- [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

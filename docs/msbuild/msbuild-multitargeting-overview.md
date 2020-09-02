@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183525"
 ---
-# <a name="msbuild-multitargeting-overview"></a>Omówienie funkcji wieloadresowych programu MSBuild
+# <a name="msbuild-multitargeting-overview"></a>Przegląd wielowersyjności kodu w programie MSBuild
 
 Za pomocą programu MSBuild można skompilować aplikację do uruchamiania w jednej z kilku wersji .NET Framework i na jednej z kilku platform systemowych. Na przykład można skompilować aplikację do uruchamiania na .NET Framework 2,0 na platformie 32-bitowej i skompilować tę samą aplikację do uruchamiania na .NET Framework 4,5 na platformie 64-bitowej.
 
@@ -40,7 +40,7 @@ Za pomocą programu MSBuild można skompilować aplikację do uruchamiania w jed
 
 ## <a name="toolset-toolsversion"></a>Zestaw narzędzi (ToolsVersion)
 
- Zestaw narzędzi zbiera narzędzia, zadania i elementy docelowe, które są używane do tworzenia aplikacji. Zestaw narzędzi obejmuje kompilatory, takie jak *CSC. exe* i *VBC. exe*, plik wspólnych obiektów docelowych (*Microsoft. Common. targets*) i plik wspólnych zadań (*Microsoft. Common. Tasks*). Zestaw narzędzi 4,5 może służyć do kierowania .NET Framework wersjami 2,0, 3,0, 3,5, 4 i 4,5. Jednak zestaw narzędzi 2,0 może być używany tylko do .NET Framework wersji 2,0. Aby uzyskać więcej informacji, zobacz zestaw [narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Zestaw narzędzi zbiera narzędzia, zadania i elementy docelowe, które są używane do tworzenia aplikacji. Zestaw narzędzi zawiera kompilatory, takie jak *csc.exe* i *vbc.exe*, plik wspólnych obiektów docelowych (*Microsoft. Common. targets*) i plik wspólnych zadań (*Microsoft. Common. Tasks*). Zestaw narzędzi 4,5 może służyć do kierowania .NET Framework wersjami 2,0, 3,0, 3,5, 4 i 4,5. Jednak zestaw narzędzi 2,0 może być używany tylko do .NET Framework wersji 2,0. Aby uzyskać więcej informacji, zobacz zestaw [narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Odwoływanie się do zestawów
 

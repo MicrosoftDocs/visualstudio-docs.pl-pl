@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias | Dokumentacja firmy Microsoft
+title: 'IDebugBinder3:: FindAlias | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47aaaec73d2c364e974b7430335404bf8caf406c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68142959"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda lokalizuje alias podanej nazwy. Przeszuka wszystkie aliasy w programie.  
+Ta metoda służy do lokalizowania aliasu pod nazwą. Spowoduje to przeszukanie wszystkich aliasów w programie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,16 +42,16 @@ int FindAlias(
   
 #### <a name="parameters"></a>Parametry  
  `pcstrName`  
- [in] Nazwa aliasu, aby znaleźć.  
+ podczas Nazwa aliasu do znalezienia.  
   
  `ppAlias`  
- [out] Alias znaleziono (jeśli istnieje) jest reprezentowane przez [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interfejsu.  
+ określoną Znaleziono alias (jeśli istnieje) reprezentowany przez interfejs [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` (Jeśli nie odnaleziono aliasu) lub kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` (jeśli alias nie zostanie znaleziony) lub kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda inicjuje obiekt docelowy, na wartość null, przed wywołaniem; następnie sprawdza zawiera wartości null później określić, czy nie znaleziono aliasu.  
+ Ta metoda inicjuje obiekt docelowy do wartości null przed wywołaniem metody; następnie testuje wartość null w późniejszym zakresie, aby określić, czy alias został znaleziony.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85d3c146775ac06b3118186738ee74932a4c452a
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350475"
 ---
 # <a name="send-messages-to-the-output-window"></a>Wysyłanie komunikatów do okna danych wyjściowych
@@ -37,7 +37,7 @@ Komunikaty czasu wykonywania można zapisywać do okna **danych wyjściowych** p
 
 - Różne `Write` metody, które wyprowadzają informacje wyjściowe bez przerywania wykonywania. Te metody zastępują `Debug.Print` metodę używaną w poprzednich wersjach Visual Basic.
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>i <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, które przerywają wykonywanie i informacje wyjściowe, jeśli określony warunek zakończy się niepowodzeniem. Domyślnie `Assert` Metoda Wyświetla informacje w oknie dialogowym. Aby uzyskać więcej informacji, zobacz [potwierdzenia w kodzie zarządzanym](../debugger/assertions-in-managed-code.md).
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> i <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, które przerywają wykonywanie i informacje wyjściowe, jeśli określony warunek zakończy się niepowodzeniem. Domyślnie `Assert` Metoda Wyświetla informacje w oknie dialogowym. Aby uzyskać więcej informacji, zobacz [potwierdzenia w kodzie zarządzanym](../debugger/assertions-in-managed-code.md).
 
 - <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>Metody i <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> , które zawsze przerywają wykonywanie i informacje wyjściowe. Domyślnie `Fail` metody wyświetlają informacje w oknie dialogowym.
 
@@ -54,6 +54,6 @@ Okno **dane wyjściowe** może również zawierać informacje o:
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Okno wyniku](../ide/reference/output-window.md)
-- [Śledzenie i Instrumentacja aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [Śledzenie i instrumentacja aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [Typy projektów C#, F # i Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)

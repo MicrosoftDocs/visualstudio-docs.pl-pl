@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Dokumentacja firmy Microsoft
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b67ccf926267e3475a43d7f09bf3ccb361dc8484
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159297"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, jakie informacje należy pobrać o polu dezasemblacji.  
+Określa informacje, które mają zostać pobrane dla pola demontażu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -65,60 +65,60 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  DSF_ADDRESS  
- Inicjowanie bądź użyj `bstrAddress` pola.  
+ Zainicjuj/Użyj `bstrAddress` pola.  
   
  DSF_ADDRESSOFFSET  
- Inicjowanie bądź użyj `bstrAddressOffset` pola.  
+ Zainicjuj/Użyj `bstrAddressOffset` pola.  
   
  DSF_CODEBYTES  
- Inicjowanie bądź użyj `bstrCodeBytes` pola.  
+ Zainicjuj/Użyj `bstrCodeBytes` pola.  
   
  DSF_OPCODE  
- Inicjowanie bądź użyj `bstrOpCode` pola.  
+ Zainicjuj/Użyj `bstrOpCode` pola.  
   
  DSF_OPERANDS  
- Inicjowanie bądź użyj `bstrOperands` pola.  
+ Zainicjuj/Użyj `bstrOperands` pola.  
   
  DSF_SYMBOL  
- Inicjowanie bądź użyj `bstrSymbol` pola.  
+ Zainicjuj/Użyj `bstrSymbol` pola.  
   
  DSF_CODELOCATIONID  
- Inicjowanie bądź użyj `uCodeLocationId` pola.  
+ Zainicjuj/Użyj `uCodeLocationId` pola.  
   
  DSF_POSITION  
- Inicjowanie bądź użyj `posBeg` i `posEnd` pola.  
+ Inicjowanie/używanie `posBeg` pól i `posEnd` .  
   
  DSF_DOCUMENTURL  
- Inicjowanie bądź użyj `bstrDocumentUrl` pola.  
+ Zainicjuj/Użyj `bstrDocumentUrl` pola.  
   
  DSF_BYTEOFFSET  
- Inicjowanie bądź użyj `dwByteOffset` pola.  
+ Zainicjuj/Użyj `dwByteOffset` pola.  
   
  DSF_FLAGS  
- Inicjowanie bądź użyj `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) pola.  
+ Zainicjuj/Użyj `dwFlags` pola ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).  
   
  DSF_OPERANDS_SYMBOLS  
- Dołącz nazwy symbolu w `bstrOperands` pola.  
+ Dołącz nazwy symboli w `bstrOperands` polu.  
   
  DSF_ALL  
- Określa wszystkie pola dla strumienia dezasemblacji.  
+ Określa wszystkie pola dla strumienia rozasemblera.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako parametr do [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metodę, aby wskazać, które pola [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury, które mają zostać zainicjowane.  
+ Przekazuje jako parametr do metody [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) , aby wskazać, które pola struktury [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) mają być inicjowane.  
   
- Używany do `dwFields` członkiem `DisassemblyData` struktury, aby wskazać, pola, które są używane i ważne, gdy zwracany jest struktura.  
+ Używane dla `dwFields` składowej struktury, `DisassemblyData` Aby wskazać, które pola są używane i są ważne podczas zwracania struktury.  
   
- Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Te wartości mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Odczyt](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
+ [Przeczytaj](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
  [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

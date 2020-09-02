@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547046"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Instrukcje: programowe wyszukiwanie i zastępowanie tekstu w dokumentach
@@ -110,11 +110,11 @@ ms.locfileid: "85547046"
 
 2. Użyj <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metody <xref:Microsoft.Office.Interop.Word.Find> obiektu, aby zamienić każdy znaleziony element. Aby określić elementy, które mają zostać zamienione, użyj parametru *replace* . Ten parametr może mieć jedną z następujących <xref:Microsoft.Office.Interop.Word.WdReplace> wartości:
 
-    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll>zastępuje wszystkie znalezione elementy.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> zastępuje wszystkie znalezione elementy.
 
-    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone>zastępuje żaden z znalezionych elementów.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> zastępuje żaden z znalezionych elementów.
 
-    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne>zastępuje pierwszy znaleziony element.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> zastępuje pierwszy znaleziony element.
 
 ## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Programowane Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)

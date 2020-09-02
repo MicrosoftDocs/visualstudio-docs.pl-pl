@@ -1,5 +1,5 @@
 ---
-title: Znaczniki zakresu | Dokumentacja firmy Microsoft
+title: Znaczniki zakresu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,32 +12,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f733ccec12e422a11532b8012836422d14d93b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198330"
 ---
 # <a name="span-markers"></a>Znaczniki zakresu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Span znacznik reprezentuje fazę istotnych aplikacji. Na przykład można użyć zakres reprezentujący przedział czasu, w którym jest przetwarzany danego elementu pracy. Jego długość reprezentuje czas trwania określonego etapu aplikacji. Ta ilustracja przedstawia zakres w Wizualizatorze współbieżności:  
+Znacznik span reprezentuje znaczącą fazę aplikacji. Na przykład można użyć zakresu, aby reprezentować przedział czasu, w którym jest przetwarzany konkretny element roboczy. Jego długość reprezentuje czas trwania odpowiedniej fazy aplikacji. Na tej ilustracji przedstawiono zakres w wizualizatorze współbieżności:  
   
- ![Span znacznika w Wizualizatorze współbieżności](../profiling/media/cvmarkerspan.png "CVMarkerSpan")  
-Span znacznika w Wizualizatorze współbieżności  
+ ![Znacznik zakresu w wizualizatorze współbieżności](../profiling/media/cvmarkerspan.png "CVMarkerSpan")  
+Znacznik zakresu w wizualizatorze współbieżności  
   
 ## <a name="span-category"></a>Kategoria zakresu  
- Znacznik zakresu jest wyświetlany w jednej z pięciu różnych kolorach, w zależności od jego kategorii. Kolory są powtarzane, jeśli istnieje więcej niż pięć kategorii. Kategoria może być liczbą całkowitą. Ta ilustracja przedstawia pięć możliwych kolorów:  
+ Znacznik zakresu jest wyświetlany w jednym z pięciu różnych kolorów, w zależności od jego kategorii. Kolory są powtarzane, jeśli istnieje więcej niż pięć kategorii. Kategoria może być dowolną liczbą całkowitą. Na tej ilustracji przedstawiono pięć możliwych kolorów:  
   
- ![Pięć zakresy w różnych kategoriach](../profiling/media/cvmarkerspancategory.png "CVMarkerSpanCategory")  
-Kolory pierwszych pięć kategorii zakresu  
+ ![Pięć zakresów w różnych kategoriach](../profiling/media/cvmarkerspancategory.png "CVMarkerSpanCategory")  
+Kolory pierwszych pięciu kategorii zakresu  
   
-## <a name="span-aggregation-markers"></a>Agregacja znaczniki zakresu  
- Czasami zakresu znaczniki wystąpić tak blisko siebie nawzajem w Wizualizatorze współbieżności, że nie można ich indywidualnie rysowania. Jeśli ten problem wystąpi, szary *znacznika zakresu agregacji* czy reprezentuje podstawowy zakresy jest widoczne. Po umieszczeniu wskaźnika na jednym z tych ikon etykietka narzędzia Wyświetla liczbę podstawowych zakresy, które są reprezentowane. Aby przejrzeć zakresy, powiększania. Jeśli powiększyć aż i nadal się pojawiać znacznika zakresu agregacji, można wyświetlić podstawowy znaczników zakresu w [raport dotyczący znaczników](../profiling/markers-report.md). Ta ilustracja przedstawia znacznika zakresu agregacji:  
+## <a name="span-aggregation-markers"></a>Znaczniki agregacji zakresu  
+ Czasami znaczniki rozciągają się, aby blisko siebie w wizualizatorze współbieżności, które nie mogą być narysowane pojedynczo. W takim przypadku jest pokazywany szary *znacznik agregacji* , który reprezentuje bazowe zakresy. Po umieszczeniu wskaźnika na jednej z tych ikon, w etykietce narzędzia zostanie wyświetlona liczba przedstawionych podstawowych zakresów. Aby wyświetlić zakresy, Powiększ. W przypadku powiększania wszystkich sposobów i nadal uzyskiwania znacznika agregacji zakresu można wyświetlić bazowe znaczniki zakresu w [raporcie znaczniki](../profiling/markers-report.md). Na tej ilustracji przedstawiono znacznik agregacji zakresu:  
   
- ![Wartość zagregowana span znacznika w Wizualizatorze współbieżności](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
-Znacznik zakresu agregacji  
+ ![Znacznik zagregowanego zakresu w wizualizatorze współbieżności](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
+Znacznik agregacji zakresu  
   
 ## <a name="see-also"></a>Zobacz też  
- [Znaczniki CONCURRENCY Visualizer](../profiling/concurrency-visualizer-markers.md)   
- [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)
+ [Znaczniki wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md)   
+ [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md)

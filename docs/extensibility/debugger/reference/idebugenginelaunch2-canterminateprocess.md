@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::CanTerminateProcess | Dokumenty firmy Microsoft
+title: 'IDebugEngineLaunch2:: CanTerminateProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 91c68e0a0e314015c1f2e6df2a96243c6ce854e7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730562"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
-Określa, czy proces można zakończyć.
+Określa, czy proces może być zakończony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int CanTerminateProcess ( 
 
 ## <a name="parameters"></a>Parametry
 `pProcess`\
-[w] [Obiekt IDebugProcess2,](../../../extensibility/debugger/reference/idebugprocess2.md) który reprezentuje proces, który ma zostać zakończony.
+podczas Obiekt [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) , który reprezentuje proces, który ma zostać zakończony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca, `S_FALSE` jeśli aparat nie może zakończyć proces, na przykład, ponieważ odmowa dostępu.
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `S_FALSE` czy aparat nie może zakończyć procesu, na przykład z powodu odmowy dostępu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli ta `S_OK`metoda zwraca , a następnie [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) metoda może być wywołana faktycznie zakończyć proces.
+ Jeśli ta metoda zwraca `S_OK` , Metoda [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) może być wywoływana w celu rzeczywistego zakończenia procesu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

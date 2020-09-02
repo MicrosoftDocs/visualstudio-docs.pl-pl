@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595023"
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojarzone z kategorią **środowiskową** `DTE.Properties("Environment", <Property Page>)`, w oknie dialogowym **Opcje** . Tytuł każdej podsekcji to wywołanie, które jest używane w celu uzyskania dostępu do kolekcji właściwości, a tabela w każdej podsekcji wyświetla właściwości w kolekcji.
+W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojarzone z kategorią **środowiska** , w oknie `DTE.Properties("Environment", <Property Page>)` dialogowym **Opcje** . Tytuł każdej podsekcji to wywołanie, które jest używane w celu uzyskania dostępu do kolekcji właściwości, a tabela w każdej podsekcji wyświetla właściwości w kolekcji.
 
 ## <a name="general"></a>Ogólne
  `DTE.Properties("Environment", "General")`
@@ -35,7 +35,7 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojar
 |Animacje|Get/Set (wartość logiczna)|Określa, czy zintegrowane środowisko programistyczne (IDE) używa animacji na pasku stanu.|
 |AnimationSpeed|Pobierz/ustaw (krótki)||
 |AutoAdjustExperience|Get/Set (wartość logiczna)|Program automatycznie dostosowuje działanie wizualizacji w zależności od wydajności klienta.|
-|RichClientExperienceOptions|Get/Set (Wyliczenie)|Umożliwia rozbudowane środowisko klienta z wartościami w <xref:EnvDTE100.vsRichClientExperienceOptions>.|
+|RichClientExperienceOptions|Get/Set (Wyliczenie)|Umożliwia rozbudowane środowisko klienta z wartościami w <xref:EnvDTE100.vsRichClientExperienceOptions> .|
 |CloseButtonActiveTabOnly|Get/Set (wartość logiczna)|Określa, czy przycisk **Zamknij** jest pokazywany tylko na aktywnej karcie.|
 |AutohidePinActiveTabOnly|Get/Set (wartość logiczna)|Określa, czy przycisk **Autoukrywanie** ma wpływ tylko na aktywną kartę.|
 
@@ -55,8 +55,8 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojar
 |------------------------|-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (wartość logiczna)|Określa, czy otwieranie nowego pliku ponownie używa bieżącego okna dokumentu, jeśli bieżący dokument zostanie zapisany. `false` oznacza, że zawsze otwiera nowe okno dokumentu dla każdego otwartego dokumentu.|
 |DetectFileChangesOutsideIDE|Get/Set (wartość logiczna)|Określa, czy środowisko automatycznie ponownie ładuje pliki otwierane w środowisku IDE, gdy system operacyjny powiadamia IDE o tym, że pliki zostały zmodyfikowane na dysku.|
-|AutoloadExternalChanges|Get/Set (wartość logiczna)|Określa, czy wykryte modyfikacje zewnętrzne otwierają dokumenty automatycznie ładują zmodyfikowany plik, jeśli otwarty dokument nie jest modyfikowany. Jeśli otwarty dokument jest modyfikowany, a ta właściwość jest `true`, IDE będzie monitowany o to, czy ta właściwość została `false`.|
-|InitializeOpenFileFromCurrentDocument|Get/Set (wartość logiczna)|Określa, czy <xref:EnvDTE.DTEClass.OpenFile%2A> polecenie podzieli nazwę katalogu i pliku z ostatniego aktywnego dokumentu lub z ostatniego miejsca, w którym otwarto plik.|
+|AutoloadExternalChanges|Get/Set (wartość logiczna)|Określa, czy wykryte modyfikacje zewnętrzne otwierają dokumenty automatycznie ładują zmodyfikowany plik, jeśli otwarty dokument nie jest modyfikowany. Jeśli otwarty dokument zostanie zmodyfikowany i ta właściwość ma wartość `true` , środowisko IDE będzie monitował o to, czy ta właściwość była `false` .|
+|InitializeOpenFileFromCurrentDocument|Get/Set (wartość logiczna)|Określa, czy polecenie podzieli <xref:EnvDTE.DTEClass.OpenFile%2A> nazwę katalogu i pliku z ostatniego aktywnego dokumentu, czy z ostatniego otwartego pliku.|
 |MiscFilesProjectSavesLastNItems|Pobierz/ustaw (krótki)|Określa, ile plików jest rekordów projektu różne pliki. W związku z tym można zobaczyć, co ostatnio było otwarte jako różne pliki na dysku przy następnym użyciu środowiska IDE.|
 |ShowMiscFilesProject|Get/Set (wartość logiczna)|Określa, czy jest wyświetlany projekt różne pliki.|
 |CheckForConsisentLineEndings|Get/Set (wartość logiczna)|Sprawdza spójność końców wierszy podczas ładowania pliku.|
@@ -135,7 +135,7 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojar
 
 |Nazwa elementu właściwości|Wartość|Opis|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Wyliczenie)|Akcja do podjęcia przy uruchamianiu, z <xref:EnvDTE.vsStartUp>, z wartościami 0 – 5:<br /><br /> -0: Otwórz stronę główną<br />-1: Załaduj ostatnio załadowane rozwiązanie<br />-2: Pokaż okno dialogowe **Otwieranie projektu**<br />-3: Pokaż **Nowy projekt** okno dialogowe<br />-4: Pokaż puste środowisko<br />-5: Pokaż stronę początkową|
+|OnStart|Get/Set (Wyliczenie)|Akcja, która ma zostać podjęta przy uruchamianiu, z <xref:EnvDTE.vsStartUp> , z wartościami od 0 do 5:<br /><br /> -0: Otwórz stronę główną<br />-1: Załaduj ostatnio załadowane rozwiązanie<br />-2: Pokaż okno dialogowe **Otwieranie projektu**<br />-3: Pokaż **Nowy projekt** okno dialogowe<br />-4: Pokaż puste środowisko<br />-5: Pokaż stronę początkową|
 |StartPageRSSUrl|Get/set (ciąg)|Adres URL źródła danych RSS, które jest używane podczas uruchamiania.|
 |StartPageRefreshDownloadedContent|Get/Set (wartość logiczna)|Odświeża stronę początkową po każdym przejściu interwału określonego w StartPageRefreshInterval.|
 |StartPageRefreshInterval|Pobierz/ustaw (krótki)|Interwał odświeżania strony początkowej (w minutach).|
@@ -148,9 +148,9 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojar
 |ConfirmTaskDeletion|Get/Set (wartość logiczna)|Określa, czy pole potwierdzenia ma być wyświetlane podczas usuwania zadań z **Lista zadań**.|
 |WarnOnAddingHiddenItem|Get/Set (wartość logiczna)|Określa, czy ma być wyświetlane ostrzeżenie podczas dodawania zadania użytkownika, które nie będzie wyświetlane.|
 |DontShowFilePaths|Get/Set (wartość logiczna)|Określa, czy mają być pokazywane pełne ścieżki plików w Lista zadań.|
-|CommentTokens|SafeArray|Zwraca element SafeArray wartości tokenów komentarzy. Każdy z nich zawiera pola, `Name` (ciąg) i `Priority` (<xref:EnvDTE.vsTaskPriority>, wysoki, średni lub niski).|
+|CommentTokens|SafeArray|Zwraca element SafeArray wartości tokenów komentarzy. Każdy ma pola `Name` (ciąg) i `Priority` ( <xref:EnvDTE.vsTaskPriority> , wysoki, średni lub niski).|
 
-## <a name="web-browser"></a>Przeglądarki sieci Web
+## <a name="web-browser"></a>Przeglądarka internetowa
  `DTE.Properties("Environment", "WebBrowser")`
 
 |Nazwa elementu właściwości|Wartość|Opis|

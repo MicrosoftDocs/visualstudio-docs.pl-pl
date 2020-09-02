@@ -1,5 +1,5 @@
 ---
-title: AutoMark | Microsoft Docs
+title: Oznacz jako automarkę | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb849b43e21010d9183f53e31ccf6bbc70736b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157192"
 ---
 # <a name="automark"></a>AutoMark
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**AutoMark** opcja określa liczbę milisekund między zbierania zdarzeń liczników wydajności oprogramowania Windows. Liczniki wydajności Windows są określone w **WinCounter** opcji.  
+Opcja automatycznego **oznaczania** określa liczbę milisekund między kolekcją zdarzeń licznika wydajności oprogramowania systemu Windows. Liczniki wydajności systemu Windows są określone w opcji **WinCounter** .  
   
- Tylko jeden **AutoMark** opcja może być określona w wierszu polecenia. Należy pamiętać, że **WinCounter** interwał próbkowania określony przez **AutoMark** jest niezależna od interwału próbkowania głównego.  
+ W wierszu polecenia można określić tylko jedną opcję **Autooznaczania** . Należy zauważyć, że interwał próbkowania **WinCounter** określony przez **automarkę** jest niezależny od głównego interwału próbkowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,14 +31,14 @@ VSPerfCmd.exe /Start:Method /WinCounter:Path /AutoMark:Milliseconds
   
 #### <a name="parameters"></a>Parametry  
  `Milliseconds`  
- Określa liczbę milisekund między kolekcji zdarzeń licznika wydajności Windows.  
+ Określa liczbę milisekund między kolekcjami zdarzeń licznika wydajności systemu Windows.  
   
 ## <a name="required-options"></a>Wymagane opcje  
- **WinCounter:** `Path`  
- Określa Windows licznika wydajności do zbierania. Korzystając z metody instrumentacji, można określić wiele liczników Windows. Korzystając z metody pobierania próbek, można określić tylko jeden licznik oprogramowania. **WinCounter** opcja musi być określona w wierszu polecenia, który zawiera **Start** opcji.  
+ **WinCounter:**`Path`  
+ Określa licznik wydajności systemu Windows do zebrania. W przypadku korzystania z metody instrumentacji można określić wiele liczników systemu Windows. W przypadku korzystania z metody próbkowania można określić tylko jeden licznik oprogramowania. Opcja **WinCounter** musi być określona w wierszu polecenia zawierającym opcję **Start** .  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie dla dwóch liczników wydajności Windows ustawiono interwał próbkowania 1000 milisekund.  
+ W tym przykładzie interwał próbkowania 1000 milisekund jest ustawiany dla dwóch liczników wydajności systemu Windows.  
   
 ```  
 VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /WinCounter:"\Process(*)\% Processor Time" /WinCounter:"\ASP.NET\Pages/sec" /AutoMark:1000  
@@ -47,6 +47,6 @@ VSPerfCmd.exe /Launch:TestApp.exe
   
 ## <a name="see-also"></a>Zobacz też  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web platformy ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilowania aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

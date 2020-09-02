@@ -1,5 +1,5 @@
 ---
-title: Obszar roboczy indeksowania w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Indeksowanie obszaru roboczego w programie Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -8,29 +8,29 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952714"
 ---
 # <a name="workspace-indexing"></a>Indeksowanie obszaru roboczego
 
-W rozwiązaniu systemów projektu jest odpowiedzialny za dostarczanie funkcji dla kompilacji, debugowania, **GoTo** wyszukiwania symboli i nie tylko. Systemy projektu mogą wykonać to zadanie, ponieważ rozumieją relacji i możliwości pliki w projekcie. [Otwórz Folder](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) obszaru roboczego wymaga takiego samego wglądu, aby zapewnić rozbudowane środowisko IDE funkcji, jak również. Zbieranie i z magazynu trwałego tych danych jest w procesie zwanym indeksowania obszaru roboczego. Indeksowane dane mogą być przeszukiwane przy użyciu zestawu asynchronicznych interfejsów API. Urządzenia Extender mogą uczestniczyć w procesie indeksowania, zapewniając <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScanner>s, wiesz, że sposób obsługi niektórych typów plików.
+W rozwiązaniu systemy projektów są odpowiedzialne za dostarczanie funkcji kompilowania, debugowania, przeszukiwania **symboli i** nie tylko. Systemy projektu mogą wykonać tę czynność, ponieważ rozumieją relację i możliwości plików w ramach projektu. Obszar roboczy [otwartego folderu](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) wymaga tego samego wglądu w celu zapewnienia również rozbudowanych funkcji środowiska IDE. Kolekcja i trwały magazyn danych to proces nazywany indeksem obszaru roboczego. Te indeksowane dane można zbadać za pomocą zestawu asynchronicznych interfejsów API. Rozszerzalne mogą uczestniczyć w procesie indeksowania przez udostępnienie klasy <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScanner> , które wiedzą, jak obsługiwać pewne typy plików.
 
-## <a name="types-of-indexed-data"></a>Typy indeksowane dane
+## <a name="types-of-indexed-data"></a>Typy indeksowanych danych
 
-Istnieją trzy rodzaje danych, które są indeksowane. Należy zauważyć, że typ oczekiwany ze skanerów pliku różni się od typu deserializacji z indeksu.
+Istnieją trzy rodzaje danych, które są indeksowane. Należy pamiętać, że typ oczekiwany przez skanery plików różni się od typu deserializowanego od indeksu.
 
-|Dane|Typ skanera pliku|Typ wyniku zapytania indeksu|Powiązanych typów|
+|Dane|Typ skanera plików|Typ wyniku zapytania indeksu|Powiązane typy|
 |--|--|--|--|
-|Odwołania|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
-|Symbole|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> należy użyć zamiast `IIndexWorkspaceService` zapytań|
+|Dokumentacja|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
+|Symbole|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> powinien być używany zamiast `IIndexWorkspaceService` zapytań|
 |Wartości danych|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataValue>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataResult`1>||
 
-## <a name="querying-for-indexed-data"></a>Wykonanie zapytania dotyczącego indeksowane dane
+## <a name="querying-for-indexed-data"></a>Wykonywanie zapytań o indeksowane dane
 
-Istnieją dwa typy asynchronicznego umożliwiających dostęp do danych. Pierwsza to za pośrednictwem <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceData>. Zapewnia podstawowe dostęp do jednego pliku `FileReferenceResult` i `FileDataResult` danych i zapisuje w pamięci podręcznej wyników. Drugi to <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceService> który nie korzysta z pamięci podręcznej, ale umożliwia więcej możliwości zapytań.
+Istnieją dwa typy asynchroniczne dostępne do uzyskiwania dostępu do utrwalonych danych. Pierwszy z nich to <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceData> . Zapewnia on podstawowy dostęp do pojedynczego pliku `FileReferenceResult` i `FileDataResult` danych, a następnie buforuje wyniki. Druga z <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceService> nich nie korzysta z buforowania, ale umożliwia wykonywanie zapytań o więcej możliwości.
 
 ```csharp
 using Microsoft.VisualStudio.Workspace;
@@ -50,23 +50,23 @@ private static IIndexWorkspaceService GetDirectIndexedData(IWorkspace workspace)
 }
 ```
 
-## <a name="participating-in-indexing"></a>Udział w indeksowaniu
+## <a name="participating-in-indexing"></a>Uczestnictwo w indeksowaniu
 
-Poniższa sekwencja około indeksowania obszaru roboczego są następujące:
+Indeksowanie obszaru roboczego jest w przybliżeniu następująca:
 
-1. Odnajdywanie i trwałość obiektów systemowych plików w obszarze roboczym (tylko na otwieranie początkowego skanowania).
-1. Na plik, pasującego dostawcy z najwyższym priorytetem jest proszony o skanowania w poszukiwaniu `FileReferenceInfo`s.
-1. Na plik, pasującego dostawcy z najwyższym priorytetem jest proszony o skanowania w poszukiwaniu `SymbolDefinition`s.
-1. Na plik, wszyscy dostawcy monit o podanie `FileDataValue`s.
+1. Odnajdywanie i trwałość jednostek systemu plików w obszarze roboczym (tylko podczas początkowego skanowania otwarcia).
+1. Dla każdego pliku zostanie wyświetlony monit o przeszukanie w poszukiwaniu plików o najwyższym priorytecie `FileReferenceInfo` .
+1. Dla każdego pliku zostanie wyświetlony monit o przeszukanie w poszukiwaniu plików o najwyższym priorytecie `SymbolDefinition` .
+1. Dla każdego pliku są zadawane pytania dla wszystkich dostawców `FileDataValue` .
 
-Rozszerzenia można wyeksportować skaner implementując `IWorkspaceProviderFactory<IFileScanner>` i eksportowanie typu za pomocą <xref:Microsoft.VisualStudio.Workspace.Indexing.ExportFileScannerAttribute>. `SupportedTypes` Argument atrybutu musi być co najmniej jedną wartość z <xref:Microsoft.VisualStudio.Workspace.Indexing.FileScannerTypeConstants>. Skanera przykład zobacz zestaw SDK programu VS [przykładowe](https://github.com/Microsoft/VSSDK-Extensibility-Samples/blob/master/Open_Folder_Extensibility/C%23/SymbolScannerSample/TxtFileSymbolScanner.cs).
+Rozszerzenia mogą eksportować skaner, implementując `IWorkspaceProviderFactory<IFileScanner>` i eksportując typ za pomocą <xref:Microsoft.VisualStudio.Workspace.Indexing.ExportFileScannerAttribute> . `SupportedTypes`Argument atrybutu powinien mieć co najmniej jedną wartość z <xref:Microsoft.VisualStudio.Workspace.Indexing.FileScannerTypeConstants> . Przykładowy skaner można znaleźć w przykładowym [zestawie SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples/blob/master/Open_Folder_Extensibility/C%23/SymbolScannerSample/TxtFileSymbolScanner.cs)programu vs.
 
 > [!WARNING]
-> Nie Eksportuj skaner pliku, który obsługuje `FileScannerTypeConstants.FileScannerContentType` typu. Służy do firmy Microsoft, tylko wewnętrznie.
+> Nie Eksportuj skanera plików, który obsługuje `FileScannerTypeConstants.FileScannerContentType` Typ. Jest ona używana wyłącznie w celach wewnętrznych firmy Microsoft.
 
-W sytuacjach zaawansowane rozszerzenia dynamicznie może obsługiwać dowolny zestaw typów plików. Zamiast eksportu MEF `IWorkspaceProviderFactory<IFileScanner>`, można wyeksportować rozszerzenie `IWorkspaceProviderFactory<IFileScannerProvider>`. Po rozpoczęciu indeksowanie tego typu fabryki zostanie zaimportowany, uruchomiony i mają jego <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScannerProvider.GetSymbolScannersAsync%2A> wywołana metoda. `IFileScanner` Obsługa dowolną wartość z wystąpienia `FileScannerTpeConstants` będzie uznawany, nie tylko symbole.
+W sytuacjach zaawansowanych rozszerzenie może dynamicznie obsługiwać dowolny zestaw typów plików. Zamiast MEF eksportowanie `IWorkspaceProviderFactory<IFileScanner>` , rozszerzenie może eksportować `IWorkspaceProviderFactory<IFileScannerProvider>` . Po rozpoczęciu indeksowania ten typ fabryki zostanie zaimportowany, skonkretyzowany i zostanie <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScannerProvider.GetSymbolScannersAsync%2A> wywołana metoda. `IFileScanner` wystąpienia obsługujące dowolną wartość z `FileScannerTpeConstants` będą honorowane, a nie tylko symbole.
 
 ## <a name="next-steps"></a>Następne kroki
 
-* [Obszary robocze i usług językowych](workspace-language-services.md) — informacje o sposobie integrowania usług językowych z obszarem roboczym otwórz Folder.
-* [Obszar roboczy kompilacji](workspace-build.md) — funkcja otwierania folderu obsługuje tworzenie systemów, takich jak MSBuild i pliki reguł programu make.
+* [Obszary robocze i usługi językowe](workspace-language-services.md) — informacje na temat integrowania usług językowych z obszarem roboczym otwartego folderu.
+* [Kompilacja obszaru roboczego](workspace-build.md) — otwarty folder obsługuje systemy kompilacji, takie jak MSBuild i pliki reguł programu make.

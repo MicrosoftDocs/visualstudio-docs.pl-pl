@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547033"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Instrukcje: programowe wyszukiwanie tekstu w zakresach arkusza

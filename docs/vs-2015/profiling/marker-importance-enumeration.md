@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie marker_importance | Dokumentacja firmy Microsoft
+title: Wyliczenie marker_importance | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198382"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance — Wyliczenie
+# <a name="marker_importance-enumeration"></a>marker_importance — Wyliczenie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Reprezentuje poziom ważności znaczników narzędzia Concurrency Visualizer.  
+Reprezentuje poziom ważności znacznika Concurrency Visualizer.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,15 +37,15 @@ enum marker_importance;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|`critical_importance`|Określa, że znacznika ma krytyczne znaczenie.|  
-|`high_importance`|Określa, że znacznika ma o wysokiej ważności.|  
-|`low_importance`|Określa, że znacznika ma niską ważnością.|  
-|`normal_importance`|Określa, że znacznika ma znaczenie normalny.|  
+|`critical_importance`|Określa, że znacznik ma krytyczne znaczenie.|  
+|`high_importance`|Określa, że znacznik ma wysoką ważność.|  
+|`low_importance`|Określa, że znacznik ma niską ważność.|  
+|`normal_importance`|Określa, że znacznik ma normalne znaczenie.|  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** cvmarkersobj. h  
   
- **Namespace:** CONCURRENCY::Diagnostic —  
+ **Przestrzeń nazw:** Współbieżność::d przesła  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przestrzeń nazw diagnostic](../profiling/diagnostic-namespace.md)
+ [Przestrzeń nazw diagnostyki](../profiling/diagnostic-namespace.md)

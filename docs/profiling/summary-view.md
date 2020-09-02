@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546890"
 ---
 # <a name="summary-view"></a>Widok podsumowania
@@ -55,7 +55,7 @@ Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach lub obie
 | **Filtrowanie danych raportu** | Wyświetla okienko filtr raportu profilowania, w którym można określić kryteria ograniczające dane w widoku raportu. Aby uzyskać więcej informacji, zobacz [Filtr widoku raportu wydajności](../profiling/performance-report-view-filter.md) |
 | **Przełącz pełny ekran** | Przełącza tryb pełnoekranowy dla widoku raportu. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
 - [Widok podsumowania — dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)
 - [Widok podsumowania — dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)

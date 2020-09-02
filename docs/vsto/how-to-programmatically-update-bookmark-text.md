@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546955"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Instrukcje: Programowane aktualizowanie tekstu zakładki
@@ -30,11 +30,11 @@ ms.locfileid: "85546955"
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolka hosta.
 
-   <xref:Microsoft.Office.Tools.Word.Bookmark>formanty rozszerzają <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty natywne przez włączenie powiązań danych i Uwidacznianie zdarzeń. Aby uzyskać więcej informacji na temat kontrolek hosta, zobacz temat [elementy hosta i kontrolki hosta](../vsto/host-items-and-host-controls-overview.md).
+   <xref:Microsoft.Office.Tools.Word.Bookmark> formanty rozszerzają <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty natywne przez włączenie powiązań danych i Uwidacznianie zdarzeń. Aby uzyskać więcej informacji na temat kontrolek hosta, zobacz temat [elementy hosta i kontrolki hosta](../vsto/host-items-and-host-controls-overview.md).
 
 - Obiekt macierzysty <xref:Microsoft.Office.Interop.Word.Bookmark> .
 
-   <xref:Microsoft.Office.Interop.Word.Bookmark>obiekty nie mają możliwości zdarzeń ani powiązań danych.
+   <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty nie mają możliwości zdarzeń ani powiązań danych.
 
   Po przypisaniu tekstu do zakładki zachowanie różni się od <xref:Microsoft.Office.Interop.Word.Bookmark> i <xref:Microsoft.Office.Tools.Word.Bookmark> . Aby uzyskać więcej informacji, zobacz [kontrolka zakładka](../vsto/bookmark-control.md).
 

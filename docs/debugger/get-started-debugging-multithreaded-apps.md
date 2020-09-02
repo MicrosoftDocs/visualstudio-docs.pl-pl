@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350514"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpocznij debugowanie aplikacji wielowątkowych (C#, Visual Basic, C++)
@@ -67,7 +67,7 @@ Najpierw musisz mieć projekt aplikacji wielowątkowej. Poniżej przedstawiono p
 
    Następnie wpisz nazwę, na przykład *MyThreadWalkthroughApp* , i kliknij przycisk **OK**.
 
-   Wybierz przycisk **OK**.
+   Wybierz pozycję **OK**.
    ::: moniker-end
 
    Zostanie wyświetlony nowy projekt konsoli. Po utworzeniu projektu zostanie wyświetlony plik źródłowy. W zależności od wybranego języka plik źródłowy może mieć nazwę *program.cs*, *MyThreadWalkthroughApp. cpp*lub *Module1. vb*.
@@ -209,7 +209,7 @@ Najpierw musisz mieć projekt aplikacji wielowątkowej. Poniżej przedstawiono p
     End Class
     ```
 
-1. W menu **plik** wybierz pozycję **Zapisz wszystko**.
+1. W menu **File** (Plik) wybierz polecenie **Save all** (Zapisz wszystko).
 
 1. (Tylko Visual Basic) W Eksplorator rozwiązań (prawego okienka) kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Właściwości**. Na karcie **aplikacja** Zmień **obiekt startowy** na **prosty**.
 
@@ -313,7 +313,7 @@ Można oflagować wątki, aby śledzić ważne wątki i ignorować pozostałe w�
 
 5. Aby usunąć flagę wątków, kliknij prawym przyciskiem myszy jeden lub więcej oflagowanych wątków w oknie **czujki równoległej** i wybierz polecenie Usuń **flagę**.
 
-### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Zamrażanie i odblokowywanie wykonywania wątku
+### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> Zamrażanie i odblokowywanie wykonywania wątku
 
 > [!TIP]
 > Można zablokować i odrozmrażać wątki (Wstrzymywanie i wznawianie), aby kontrolować kolejność, w jakiej wątki działają. Może to pomóc w rozwiązywaniu problemów współbieżności, takich jak zakleszczenie i sytuacje wyścigu.
@@ -332,7 +332,7 @@ Można oflagować wątki, aby śledzić ważne wątki i ignorować pozostałe w�
 
     Aplikacja może również tworzyć wystąpienia niektórych nowych wątków. Wszystkie nowe wątki nie są oflagowane i nie są zamrożone.
 
-### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a>Wykonaj jeden wątek z warunkowymi punktami przerwania
+### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a> Wykonaj jeden wątek z warunkowymi punktami przerwania
 
 Pomocne może być wykonanie jednego wątku w debugerze. Jednym ze sposobów jest zamarzanie wątków, które nie są interesujące. W niektórych scenariuszach może być konieczne wykonanie jednego wątku bez zamarzania innych wątków, na przykład w celu odtworzenia konkretnego błędu. Aby obserwować wątek bez zamarzania innych wątków, należy unikać dzielenia na kod, z wyjątkiem wątku, który Cię interesuje. Można to zrobić przez ustawienie [warunkowego punktu przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 

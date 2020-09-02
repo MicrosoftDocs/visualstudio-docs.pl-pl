@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893349"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Zainstaluj analizatory FxCop w programie Visual Studio
@@ -121,7 +121,7 @@ Rozszerzenie [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com
 
 ::: moniker-end
 
-4. Kliknij pozycję **Pobierz**.
+4. Wybierz pozycję **Pobierz**.
 
    Rozszerzenie jest pobierane.
 

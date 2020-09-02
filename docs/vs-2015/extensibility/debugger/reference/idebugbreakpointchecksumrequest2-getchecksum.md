@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Dokumentacja firmy Microsoft
+title: 'IDebugBreakpointChecksumRequest2:: GetCheckSum | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bff00b5cbe0d59d3c7515d0a384746cd9303097c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158825"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera suma kontrolna dokumentu żądania punktu przerwania podane Unikatowy identyfikator algorytmu sumy kontrolnej do użycia.  
+Pobiera sumę kontrolną dokumentu dla żądania punktu przerwania, który ma unikatowy identyfikator algorytmu sumy kontrolnej do użycia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,16 +40,16 @@ public int GetChecksum(
   
 #### <a name="parameters"></a>Parametry  
  `guidAlgorithm`  
- [in] Unikatowy identyfikator algorytmu sumy kontrolnej.  
+ podczas Unikatowy identyfikator algorytmu sum kontrolnych.  
   
  `pChecksumData`  
- [out] Suma kontrolna dokumentu dla żądania punktu przerwania.  
+ określoną Suma kontrolna dokumentu dla żądania punktu przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Funkcja, która sprawdza, czy suma kontrolna dokumentu, które ma być powiązana, jest zgodna z interfejsu użytkownika można znaleźć w poniższym przykładzie.  
+ Poniższy przykład pokazuje funkcję, która sprawdza, czy suma kontrolna dokumentu, która ma zostać powiązana, dopasowuje jeden z interfejsu użytkownika.  
   
 ```cpp#  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  

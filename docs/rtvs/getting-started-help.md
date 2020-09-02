@@ -1,6 +1,6 @@
 ---
-title: Okno pomocy dla R
-description: Pomoc dla języka R jest zintegrowana bezpośrednio z interaktywnym oknem w programie Visual Studio za pośrednictwem programu ? Polecenia.
+title: Okno pomocy dla języka R
+description: Pomoc dla języka R jest zintegrowana bezpośrednio z oknem interaktywnym w programie Visual Studio za pomocą? dotyczące.
 ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
@@ -9,55 +9,55 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62950605"
 ---
-# <a name="help-in-r-tools-for-visual-studio"></a>Pomoc w programie R Tools for Visual Studio
+# <a name="help-in-r-tools-for-visual-studio"></a>Pomoc w R Tools for Visual Studio
 
-Pomoc dla języka R jest zintegrowana bezpośrednio z interaktywnym oknem w programie Visual Studio. Za każdym razem, gdy używasz `?` polecenia, takie jak `?mtcars`, pomoc z dokumentacji języka R pojawia się w oknie programu Visual Studio:
+Pomoc dla języka R jest zintegrowana bezpośrednio z oknem interaktywnym w programie Visual Studio. Za każdym razem, gdy użyjesz `?` polecenia, na przykład `?mtcars` , w oknie programu Visual Studio pojawi się pomoc z dokumentacji języka R:
 
-![Okno Pomocy w programie Visual Studio](media/help-window.png)
+![Okno Pomoc w programie Visual Studio](media/help-window.png)
 
 > [!Tip]
-> Okno pomocy, podobnie jak wszystkie inne w programie Visual Studio, mogą być rozmieszczone i zadokowane w trybie 1999, jak chcesz. Zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
+> Okno pomocy, podobnie jak wszystkie inne w programie Visual Studio, może być ułożone i zadokowane. Zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Aby otworzyć wyniki pomocy w przeglądarce, wybierz menu**Opcje** **narzędzi** >  `External`R i ustaw właściwość R Help **Browser** na . Zobacz [Opcje](options-for-r-tools-in-visual-studio.md).
+> Aby otworzyć wyniki pomocy w przeglądarce, wybierz menu Opcje **Narzędzia R Tools**  >  **Options** i ustaw właściwość **Pomoc dla języka R Browser** na `External` . Zobacz [Opcje](options-for-r-tools-in-visual-studio.md).
 
-Aby wyszukać `??` pomoc, użyj polecenia, po którym następuje wyszukiwany termin. Użyj cudzysłowów, jeśli wyszukiwany termin zawiera spacje:
+Aby wyszukać pomoc, użyj `??` polecenia, a następnie wyszukiwanego terminu. Jeśli termin wyszukiwania zawiera spacje, użyj cudzysłowów:
 
 ```R
 ??"Motor Trend"
 ```
 
-![Pomoc w wynikach wyszukiwania](media/help-search1.png)
+![Wyniki wyszukiwania pomocy](media/help-search1.png)
 
-Okno pomocy zawiera również pole wprowadzania wyszukiwania, za pomocą którego można bezpośrednio przeprowadzić dalsze wyszukiwania w dokumentacji R:
+Okno Pomoc zawiera również pole danych wejściowych wyszukiwania, za pomocą którego można przeprowadzić dalsze wyszukiwanie w dokumentacji języka R bezpośrednio:
 
-![Pomoc w wynikach wyszukiwania przy użyciu pola wejściowego](media/help-search2.png)
+![Pomóż w wyszukiwaniu wyników przy użyciu pola wejściowego](media/help-search2.png)
 
 ## <a name="integrated-help-lookup"></a>Zintegrowane wyszukiwanie pomocy
 
-Deweloperzy często przeszukują dokumentację R w poszukiwaniu pomocy w przypadku nazw funkcji, zestawów danych i innych elementów. R Tools for Visual Studio (RTVS) usprawnia proces, integrując wyszukiwania pomocy bezpośrednio do edytora i interaktywnych okien.
+Deweloperzy często przeszukują dokumentację języka R, aby uzyskać pomoc dotyczącą nazw funkcji, zestawów danych i innych elementów. R Tools for Visual Studio (RTVS) usprawnia proces przez integrację przeszukiwania pomocy bezpośrednio z edytorem i oknami interaktywnymi.
 
-- Naciśnięcie **klawisza F1** podczas operacji automatycznego uzupełniania tworzy listę wyników pomocy, które pasują do podciągu.
-- Kliknięcie prawym przyciskiem myszy wyszukiwanego hasła (np. funkcji) i wybranie polecenia **Pomoc w** tej funkcji powoduje otwarcie pomocy dla tej funkcji. Można również wywołać **Pomoc dla** dowolnego zaznaczenia.
+- Naciśnięcie klawisza **F1** podczas operacji autouzupełniania tworzy listę wyników pomocy, które pasują do podciągu.
+- Kliknij prawym przyciskiem myszy termin wyszukiwania (na przykład funkcję), a następnie wybierając polecenie **Pomoc dla** tej funkcji. Możesz również wywołać **Pomoc** dla dowolnego zaznaczenia.
 
-    ![Wywoływanie pomocy za pomocą menu kontekstowego kliknięcia prawym przyciskiem myszy](media/help-right-click.png)
+    ![Wywoływanie pomocy za pomocą menu kontekstowego po kliknięciu prawym przyciskiem myszy](media/help-right-click.png)
 
 > [!Tip]
-> Aby otworzyć zintegrowaną pomoc w przeglądarce, wybierz opcję `External`**Opcje** **narzędzi** > R i ustaw **przeglądarkę F1 na** . Zobacz [Opcje](options-for-r-tools-in-visual-studio.md).
+> Aby otworzyć zintegrowaną pomoc w przeglądarce, wybierz **Opcje narzędzia R Tools**  >  **Options** i ustaw **przeglądarkę internetową F1** na `External` . Zobacz [Opcje](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Zintegrowane wyszukiwanie StackOverflow
 
-Oprócz wyszukiwania w dokumentacji R, deweloperzy często wyszukiwania StackOverflow podczas pisania kodu. RTVS usprawnia ten proces. Kliknij prawym przyciskiem myszy termin lub zaznaczenie, wybierz polecenie **Wyszukaj** w sieci Web **(Ctrl**+**F1),** a program Visual Studio otworzy okno z wynikami wyszukiwania o zakresie do StackOverflow:
+Oprócz wyszukiwania w dokumentacji języka R, deweloperzy często wyszukują StackOverflow podczas pisania kodu. RTVS upraszcza to również proces. Kliknij prawym przyciskiem myszy termin lub wybór, wybierz pozycję **Wyszukaj w sieci Web dla** polecenia (**Ctrl** + **F1**), a program Visual Studio otwiera okno z wynikami wyszukiwania w zakresie StackOverflow:
 
 ![Wyniki wyszukiwania w sieci Web w programie Visual Studio](media/help-web-search-results.png)
 
-Załączony ciąg zakresu można zmienić `R site:stackoverflow`za pomocą opcji R **Tools** > **Options** > **F1 Web search string:**
+Można zmienić dołączany ciąg zakresu, `R site:stackoverflow` za pomocą opcji **Narzędzia R Tools**  >  **Options**  >  **F1 ciąg wyszukiwania w sieci Web** :
 
-![Zmienianie opcji wyszukiwania w sieci Web F1](media/options-dialog.png)
+![Zmiana opcji ciągu wyszukiwania w sieci Web F1](media/options-dialog.png)
 
-Jeśli wolisz wyświetlać wyniki w przeglądarce, zmień opcję **F1 Web Browser** zgodnie z [opisem w opcji](options-for-r-tools-in-visual-studio.md).
+Jeśli wolisz wyświetlać wyniki w przeglądarce, Zmień opcję **przeglądarki sieci Web F1** zgodnie z opisem w temacie [Opcje](options-for-r-tools-in-visual-studio.md).

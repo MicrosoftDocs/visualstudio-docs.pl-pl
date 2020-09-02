@@ -1,5 +1,5 @@
 ---
-title: Taskbody — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: TaskBody — — element (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,20 +18,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7918844915d32893491f69b4e7f58a5867c3613c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144327"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zawiera dane, które są przekazywane do `UsingTask``TaskFactory`. Aby uzyskać więcej informacji, zobacz [usingtask — Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+Zawiera dane, które są przesyłane do `UsingTask``TaskFactory` . Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
  \<Project>  
  \<UsingTask>  
- \<Taskbody — >  
+ \<TaskBody>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,22 +46,22 @@ Zawiera dane, które są przekazywane do `UsingTask``TaskFactory`. Aby uzyskać 
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Evaluate`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, MSBuild ocenia wszelkie elementy wewnętrzne, a następnie rozwija elementów i właściwości przed przekazaniem informacje `TaskFactory` podczas konkretyzacji tego zadania.|  
+|`Evaluate`|Opcjonalny atrybut Boolean.<br /><br /> Jeśli `true` , MSBuild ocenia wszystkie elementy wewnętrzne i rozszerza elementy i właściwości przed przekazaniem informacji do `TaskFactory` momentu wystąpienia zadania.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Dane|Tekst pomiędzy `TaskBody` znaczniki są wysyłane verbatim do `TaskFactory`.|  
+|Dane|Tekst między `TaskBody` tagami jest wysyłany Verbatim do `TaskFactory` .|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[UsingTask](../msbuild/usingtask-element-msbuild.md)|Zapewnia sposób zarejestrować zadań w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Może wynosić zero lub więcej `UsingTask` elementy w projekcie.|  
+|[UsingTask](../msbuild/usingtask-element-msbuild.md)|Zapewnia sposób rejestrowania zadań w programie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] . W projekcie może istnieć zero lub więcej `UsingTask` elementów.|  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak używać `TaskBody` element z `Evaluate` atrybutu.  
+ Poniższy przykład pokazuje, jak używać `TaskBody` elementu z `Evaluate` atrybutem.  
   
 ```  
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">  
@@ -77,6 +77,6 @@ Zawiera dane, które są przekazywane do `UsingTask``TaskFactory`. Aby uzyskać 
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zadania](../msbuild/msbuild-tasks.md)   
+ [Widoku](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber::get_addresssection — | Dokumentacja firmy Microsoft
+title: 'IDiaLineNumber:: get_addressSection | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1d3b981002ebefb1644baa580b7f9ecc181cc16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198525"
 ---
-# <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
+# <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera część sekcji adres pamięci, gdzie rozpoczyna się w bloku.  
+Pobiera część sekcji adresu pamięci, w której rozpoczyna się blok.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,10 +35,10 @@ HRESULT get_addressSection ( 
   
 #### <a name="parameters"></a>Parametry  
  pRetVal  
- [out] Zwraca część sekcji adres pamięci, gdzie rozpoczyna się w bloku.  
+ określoną Zwraca część sekcji adresu pamięci, w której rozpoczyna się blok.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
   
@@ -49,5 +49,5 @@ pLine->get_addressSection( &seg );
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)
