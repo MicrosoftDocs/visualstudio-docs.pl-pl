@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592844"
 ---
 # <a name="edit-xslt-style-sheets"></a>Edytuj arkusze stylów XSLT
@@ -25,7 +25,7 @@ W poniższej tabeli opisano funkcje specyficzne dla pracy z arkuszami stylów XS
 
 **Kolorowanie składni**
 
-Słowa kluczowe XSLT, takie jak `template` i `match`, są wyświetlane w kolorze słowa kluczowego XSLT określonego w ustawieniach **czcionek i kolorów** .
+Słowa kluczowe XSLT, takie jak `template` i `match` , są wyświetlane w kolorze słowa kluczowego XSLT określonego w ustawieniach **czcionek i kolorów** .
 
 **Faliste podkreślenie**
 
@@ -39,10 +39,10 @@ Kod w blokach skryptu jest obsługiwany przez debuger XSLT, aby można było ust
 
 Można wykonać transformację XSL i wyświetlić dane wyjściowe edytora XML. Aby uzyskać więcej informacji, zobacz [How to: Execute a XSLT Transformation from the XML editor](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
-**Debuguj kod XSLT**
+**Debugowanie XSLT**
 
 Debuger XSLT można uruchomić z pliku XSLT w edytorze XML. Debuger obsługuje ustawianie punktów przerwania w pliku XSLT, wyświetlanie stanu wykonywania XSLT i tak dalej. Umieszczenie wskaźnika myszy na zmiennej XSLT powoduje wyświetlenie etykietki narzędzia z wartością zmiennej. Debuger może służyć do debugowania arkusza stylów lub debugowania skompilowanego przekształcenia XSL wywoływanego z innej aplikacji. Aby uzyskać więcej informacji, zobacz [debugowanie XSLT](../xml-tools/debugging-xslt.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor XML](../xml-tools/xml-editor.md)

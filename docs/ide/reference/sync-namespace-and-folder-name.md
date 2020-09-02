@@ -10,31 +10,31 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67160727"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Synchronizowanie przestrzeni nazw i nazwy folderu
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
-**Co:** Synchronizowanie obszaru nazw i nazwy folderu.
+**Co:** Synchronizuj przestrzeń nazw i nazwę folderu.
 
-**Kiedy:** Chcesz ponownie wywrzeć część rozwiązania, przeciągając plik do nowego folderu. 
+**Kiedy:** Chcesz replikować części rozwiązania, przeciągając plik do nowego folderu. 
 
-**Dlaczego?** Chcesz upewnić się, że obszar nazw jest na bieżąco z nową strukturą folderów.
+**Dlaczego:** Chcesz upewnić się, że przestrzeń nazw jest aktualna przy użyciu nowej struktury folderów.
 
 ## <a name="how-to"></a>Porady
 
-1. Umieść kursor w nazwie obszaru nazw.
-2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
-3. Wybierz **pozycję Zmień \<obszar nazw na nazwę folderu>**.
+1. Umieść kursor w nazwie przestrzeni nazw.
+2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
+3. Wybierz pozycję **Zmień przestrzeń \<folder name> nazw na **.
 
-   ![Synchronizowanie nazwy obszaru nazw i folderu](media/sync-namespace-and-folder-name.png)
+   ![Synchronizuj przestrzeń nazw i nazwę folderu](media/sync-namespace-and-folder-name.png)
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,5 @@
 ---
-title: Ustawienia dla konfiguracji debugowania w języku C# projektu | Dokumentacja firmy Microsoft
+title: Ustawienia projektu dla konfiguracji debugowania w języku C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,39 +24,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f1ec1c18fe92409a72994e4544215da01325d209
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687519"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Ustawienia projektu dla konfiguracji debugowania w C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka C# w **stron właściwości** zgodnie z opisem w oknie [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okna.  
+Ustawienia projektu dla konfiguracji debugowania języka C# można zmienić w oknie **strony właściwości** , zgodnie z opisem w sekcji [konfiguracje debugowania i wydania](../debugger/how-to-set-debug-and-release-configurations.md). W poniższych tabelach przedstawiono, gdzie znaleźć ustawienia związane z debugerem w oknie **strony właściwości** .  
   
 > [!WARNING]
-> Ten temat nie dotyczy aplikacji Windows Store. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+> Ten temat nie dotyczy aplikacji ze sklepu Windows. Zobacz [Rozpoczynanie sesji debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-## <a name="BKMK_Debug_tab"></a> Debugowanie kartę  
+## <a name="debug-tab"></a><a name="BKMK_Debug_tab"></a> Karta debugowanie  
   
 |**Ustawienie**|**Opis**|  
 |-----------------|---------------------|  
-|**Konfiguracja**|Ustawia tryb do kompilowania aplikacji. Można wybrać jedną z **aktywna (debugowanie)**, **debugowania**, **wersji**, **wszystkie konfiguracje**.|  
-|**Akcja uruchamiania**|Ta grupa formantów Określa akcję, która ma miejsce, gdy z menu debugowanie wybierz przycisk Start.<br /><br /> -   **Rozpocznij projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. Aby uzyskać więcej informacji, zobacz [Wybieranie projektu startowego](https://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Uruchom zewnętrzny program** pozwala uruchomić i Dołącz do programu, który nie jest częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchamiania programu](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Uruchom przeglądarkę w adresie URL** umożliwia debugowanie aplikacji sieci Web.|  
-|**Argumenty wiersza polecenia**|Określa argumenty wiersza polecenia dla programu do debugowania. Nazwa polecenia jest nazwa programu, określone w uruchomienia programu zewnętrznego. Jeśli akcja uruchamiania jest ustawiony na początkowy adres URL, nie można określić argumenty wiersza polecenia.|  
-|**Katalog roboczy**|Określa katalog roboczy debugowanego programu. W [!INCLUDE[csprcs](../includes/csprcs-md.md)], katalog roboczy jest katalog, aplikacja zostanie uruchomiona z \bin\debug domyślny.|  
-|**Użyj komputera zdalnego**|Nazwa komputera zdalnego, gdy aplikacja zostanie uruchomiona na potrzeby debugowania lub [nazwy serwera Msvsmon](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). Lokalizacja pliku EXE na komputerze zdalnym jest określona przez właściwość ścieżkę wyjściową w folderze właściwości konfigurowania kategorii kompilacji. Lokalizacja musi być możliwe do udostępnienia katalogu na komputerze zdalnym.|  
-|**Włącz debugowanie kodu niezarządzanego**|Umożliwia debugowanie wywołań do kodu natywnego (niezarządzanego) Win32 z zarządzanych aplikacji.|  
-|**Włącz debugowanie programu SQL Server**|Umożliwia debugowanie obiektów bazy danych programu SQL Server.|  
+|**Konfiguracja**|Tryb zestawów do kompilowania aplikacji. Wybierz spośród **aktywnych (Debuguj)**, **Debug**, **Release**, **All Configurations**.|  
+|**Uruchom akcję**|Ta grupa formantów określa akcję, która będzie wykonywana po wybraniu polecenia Rozpocznij z menu Debuguj.<br /><br /> -   **Początkowy projekt** jest domyślnie uruchamiany i uruchamia projekt startowy na potrzeby debugowania. Aby uzyskać więcej informacji, zobacz [Wybieranie projektu startowego](https://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Uruchom program zewnętrzny** umożliwia uruchamianie i dołączanie do programu, który nie jest częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionego programu](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   Polecenie **Uruchom przeglądarkę w adresie URL** umożliwia debugowanie aplikacji sieci Web.|  
+|**Argumenty wiersza polecenia**|Określa argumenty wiersza polecenia dla programu, który ma być debugowany. Nazwa polecenia to nazwa programu określona w początkowym programie zewnętrznym. Jeśli akcja uruchamiania jest ustawiona na początkowy adres URL, nie można określić argumentów wiersza polecenia.|  
+|**Katalog roboczy**|Określa katalog roboczy debugowanego programu. W programie [!INCLUDE[csprcs](../includes/csprcs-md.md)] katalog roboczy jest katalogiem, w którym aplikacja jest domyślnie uruchamiana z \bin\debug.|  
+|**Użyj maszyny zdalnej**|Nazwa komputera zdalnego, na którym aplikacja będzie działać na potrzeby debugowania lub [nazwy serwera msvsmon](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). Lokalizacja pliku EXE na komputerze zdalnym jest określana przez właściwość Ścieżka wyjściowa w folderze właściwości konfiguracji, Kategoria kompilacji. Lokalizacja musi być katalogiem udostępnionym na komputerze zdalnym.|  
+|**Włącz debugowanie kodu niezarządzanego**|Umożliwia debugowanie wywołań natywnego (niezarządzanego) kodu Win32 z aplikacji zarządzanej.|  
+|**Włącz debugowanie SQL Server**|Umożliwia debugowanie obiektów SQL Server bazy danych.|  
   
-## <a name="BKMK_Build_tab"></a> Tworzenie karty  
+## <a name="build-tab"></a><a name="BKMK_Build_tab"></a> Karta kompilacja  
   
 |Ustawienie|Opis|  
 |-------------|-----------------|  
-|**Symbole kompilacji warunkowej:**|Stałe debugowania i śledzenia są zdefiniowane w tym miejscu.<br /><br /> Te stałe Włącz kompilację warunkową [Klasa Debug](https://msdn.microsoft.com/library/system.diagnostics.debug.aspx) i [klasa śledzenia](https://msdn.microsoft.com/library/system.diagnostics.trace.aspx). Za pomocą tych zdefiniowanych stałych, debugowania i śledzenia metod klasy generują dane wyjściowe do [okno danych wyjściowych](../ide/reference/output-window.md). Bez tych stałe debugowania i śledzenia metod klasy nie są kompilowane i generowane żadne dane wyjściowe.<br /><br /> -Debug jest zwykle zdefiniowane w wersji debugowania programu i niezdefiniowana w pełnej wersji.<br />-Śledzenia jest zwykle definiowany w wersjach zarówno Debug i Release.|  
-|**Optymalizuj kod**|Jeśli nie możesz znaleźć usterkę, która pojawia się tylko w zoptymalizowanym kodzie, należy pozostawić to ustawienie wyłączone w wersji do debugowania. Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ instrukcje nie odpowiadają bezpośrednio do instrukcji w źródłowych z systemem windows.|  
-|**Ścieżka wyjściowa:**|Ustaw zazwyczaj bin\Debug do debugowania.|  
+|**Symbole kompilacji warunkowej:**|W tym miejscu są zdefiniowane stałe debugowania i śledzenia.<br /><br /> Te stałe umożliwiają kompilację warunkową [klasy debugowania](https://msdn.microsoft.com/library/system.diagnostics.debug.aspx) i [klasy śledzenia](https://msdn.microsoft.com/library/system.diagnostics.trace.aspx). Dzięki tym stałym definicjom metody klasy Debug i Trace generują dane wyjściowe do [okna danych wyjściowych](../ide/reference/output-window.md). Bez tych stałych metody klasy Debug i Trace nie są kompilowane i nie są generowane żadne dane wyjściowe.<br /><br /> -Debugowanie jest zwykle zdefiniowane w wersji debugowej programu i niezdefiniowane w wersji.<br />-Trace jest zwykle zdefiniowane w wersjach Debug i Release.|  
+|**Optymalizuj kod**|Jeśli nie znajdziesz błędu, który pojawia się tylko w zoptymalizowanym kodzie, należy pozostawić to ustawienie wyłączone w wersji Debug. Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ instrukcje nie odpowiadają bezpośrednio na instrukcje w oknach źródłowych.|  
+|**Ścieżka wyjściowa:**|Zwykle ustawiona na bin\Debug na potrzeby debugowania.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Dokumentacja firmy Microsoft
+title: EXCEPTION_STATE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4e30d9cc9df592cc6feb97c14449dbc6a122ec63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149362"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
+# <a name="exception_state"></a>EXCEPTION_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Określa stan wyjątku.  
@@ -77,61 +77,61 @@ public enum enum_EXCEPTION_STATE { 
   
 ## <a name="members"></a>Elementy członkowskie  
  EXCEPTION_NONE  
- Nie zatrzymanie przy wyjątku.  
+ Nie przerywaj z powodu wyjątku.  
   
  EXCEPTION_STOP_FIRST_CHANCE  
- Zatrzymaj przy pierwszym uruchomieniu którego wyjątku. W opisie zdarzenia wyjątków, ta flaga wskazuje, czy zdarzenie wyjątku jest zdarzenie wyjątku pierwszej szansy.  
+ Zatrzymaj przy pierwszym wyzwalaniu wyjątku. W przypadku opisywania zdarzenia wyjątku ta flaga wskazuje, że zdarzenie wyjątku jest zdarzeniem wyjątku pierwszej szansy.  
   
  EXCEPTION_STOP_SECOND_CHANCE  
- Zatrzymaj po uruchomieniu drugiego którego wyjątku. W opisie zdarzenia wyjątków, wskazuje zdarzenie wyjątku zdarzeń wyjątku szansy na sekundę.  
+ Zatrzymaj przy drugim zapłonie wyjątku. Podczas opisywania zdarzenia wyjątku wskazuje, że zdarzenie wyjątku jest zdarzeniem wyjątku drugiej szansy.  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE  
- Zatrzymaj przy pierwszym uruchomieniu którego wyjątku trybu użytkownika. W opisie zdarzenia wyjątków, wskazuje zdarzenie wyjątku zdarzenie wyjątku pierwszej szansy użytkownika.  
+ Zatrzymaj podczas pierwszego uruchamiania wyjątku trybu użytkownika. Podczas opisywania zdarzenia wyjątku wskazuje, że zdarzenie wyjątku jest zdarzeniem wyjątku użytkownika pierwszej szansy.  
   
  EXCEPTION_STOP_USER_UNCAUGHT  
- Zatrzymaj, gdy nie przechwycono wyjątku trybu użytkownika. W opisie zdarzenia wyjątków, wskazuje zdarzenie wyjątku zdarzenie wyjątku tryb nieprzechwycony użytkownika.  
+ Zatrzymaj, gdy nie przechwycono wyjątku trybu użytkownika. Podczas opisywania zdarzenia wyjątku wskazuje, że zdarzenie wyjątku jest nieprzechwycone zdarzenie wyjątku trybu użytkownika.  
   
  EXCEPTION_STOP_ALL  
- Zatrzymaj przy każdym wyjątku. Nie można używać w opisie zdarzenia wyjątku.  
+ Zatrzymaj na dowolnym wyjątku. Nieużywane podczas opisywania zdarzenia wyjątku.  
   
  EXCEPTION_CANNOT_BE_CONTINUED  
- W opisie zdarzenia wyjątków, wskazuje, że wyjątek nie może być kontynuowana z.  
+ Podczas opisywania zdarzenia wyjątku, wskazuje, że nie można kontynuować z powodu wyjątku.  
   
  EXCEPTION_CODE_SUPPORTED  
- Wskazuje, że wyjątek ma kod obsługi go. Służącego do wyświetlania wyjątek  
+ Wskazuje, że wyjątek ma kod obsługujący go. Używane podczas wyświetlania wyjątku  
   
  EXCEPTION_CODE_DISPLAY_IN_HEX  
- Wskazuje, że kod wyjątku powinien być wyświetlany w formacie szesnastkowym. Używany podczas wyświetlania wyjątek.  
+ Wskazuje, że kod wyjątku powinien być wyświetlany w formacie szesnastkowym. Używane podczas wyświetlania wyjątku.  
   
  EXCEPTION_JUST_MY_CODE_SUPPORTED  
- Wskazuje, że kod wyjątku obsługuje JustMyCode. Używany podczas wyświetlania wyjątek.  
+ Wskazuje, że kod wyjątku obsługuje JustMyCode. Używane podczas wyświetlania wyjątku.  
   
  EXCEPTION_MANAGED_DEBUG_ASSISTANT  
- Wskazuje, że debuger kodu zarządzanego powinna obsługiwać wyjątki. W przeciwnym razie zestawu, debuger domyślnej obsługi wyjątków. Te informacje są przekazywane do [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) metody i nie są używane w [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struktury.  
+ Wskazuje, że debuger kodu zarządzanego powinien obsługiwać wyjątki. Jeśli nie zostanie ustawiona, domyślny Debuger obsługuje wyjątki. Jest ona przenoszona do metody [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) i nie jest używana w strukturze [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) .  
   
  EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
- PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.  
+ PRZESTARZAŁE, NIE UŻYWAJ.  
   
  EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
- PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.  
+ PRZESTARZAŁE, NIE UŻYWAJ.  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
- PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.  
+ PRZESTARZAŁE, NIE UŻYWAJ.  
   
  EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
- PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.  
+ PRZESTARZAŁE, NIE UŻYWAJ.  
   
 ## <a name="remarks"></a>Uwagi  
- Używane jako `dwState` członkiem [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) strukturę, aby wskazać jej stan wyjątku i co można zrobić na jego temat.  
+ Używany jako `dwState` element członkowski struktury [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , aby wskazać stan wyjątku i jak można go wykonać.  
   
- Te wartości również są przekazywane do [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) metodę, aby ustawić stan wszystkich wyjątków.  
+ Te wartości są również przesyłane do metody [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) w celu ustawienia stanu wszystkich wyjątków.  
   
- Te flagi mogą być łączone z bitowe OR.  
+ Flagi te mogą być połączone z bitowym lub.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82153035"
 ---
 # <a name="get-started-with-unit-testing"></a>Rozpoczynanie pracy z testami jednostkowymi
@@ -40,7 +40,7 @@ W tej sekcji opisano sposób tworzenia projektu testów jednostkowych.
       }
    ```
 
-1. W **Eksplorator rozwiązań**wybierz węzeł rozwiązania. Następnie z górnego paska menu wybierz pozycję **plik** > **Dodaj** > **Nowy projekt**.
+1. W **Eksplorator rozwiązań**wybierz węzeł rozwiązania. Następnie z górnego paska menu wybierz pozycję **plik**  >  **Dodaj**  >  **Nowy projekt**.
 
 1. W oknie dialogowym Nowy projekt Znajdź szablon projektu test jednostkowy dla struktury testowej, która ma zostać użyta, i wybierz ją.
 
@@ -145,7 +145,7 @@ W tej sekcji opisano sposób tworzenia projektu testów jednostkowych.
    Aby otworzyć Eksploratora testów, wybierz **test** > **Eksplorator testów** z górnego paska menu.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Aby otworzyć Eksploratora testów, wybierz pozycję **Testuj** > **Eksplorator testów** **systemu Windows** > z górnego paska menu.
+   Aby otworzyć Eksploratora testów, wybierz pozycję **Testuj** > **Windows** > **Eksplorator testów** systemu Windows z górnego paska menu.
    ::: moniker-end
 
 1. Uruchom testy jednostkowe, klikając pozycję **Uruchom wszystkie**.
@@ -166,7 +166,7 @@ Jeśli używasz platformy testowania MSTest, xUnit lub NUnit w programie Visual 
 > [!NOTE]
 > Testy jednostkowe na żywo są dostępne tylko w wersji Enterprise Edition.
 
-1. Włącz funkcję Live Unit Testing z menu **test** , wybierając pozycję **test** > **Live Unit Testing** > **Rozpocznij**.
+1. Włącz funkcję Live Unit Testing z menu **test** , wybierając pozycję **test**  >  **Live Unit Testing**  >  **Rozpocznij**.
 
    ::: moniker range="vs-2017"
 
@@ -211,7 +211,7 @@ Aby utworzyć testy jednostkowe używające [nunit](https://nunit.org/):
 
 1. Otwórz rozwiązanie, które zawiera kod, który chcesz przetestować.
 
-2. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**.
+2. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **Nowy projekt**.
 
 3. Wybierz szablon projektu **testu nunit** .
 
@@ -235,7 +235,7 @@ Aby utworzyć testy jednostkowe używające [nunit](https://nunit.org/):
 
 4. Dodaj odwołanie z projektu testowego do projektu, który zawiera kod, który chcesz przetestować.
 
-   Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Dodaj** > **odwołanie**. (Można również dodać odwołanie z menu po kliknięciu prawym przyciskiem myszy węzła **odwołania** lub **zależności** ).
+   Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**, a następnie wybierz polecenie **Dodaj**  >  **odwołanie**. (Można również dodać odwołanie z menu po kliknięciu prawym przyciskiem myszy węzła **odwołania** lub **zależności** ).
 
 5. Dodaj kod do metody testowej.
 
@@ -243,7 +243,7 @@ Aby utworzyć testy jednostkowe używające [nunit](https://nunit.org/):
 
 6. Uruchom test z **Eksploratora testów** lub klikając prawym przyciskiem myszy kod testu i wybierając polecenie **Uruchom testy**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Utwórz testy jednostkowe, polecenie](create-unit-tests-menu.md)

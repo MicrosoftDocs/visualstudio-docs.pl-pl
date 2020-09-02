@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70739321"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (skrypt programu Windows PowerShell)
@@ -37,77 +37,77 @@ Publish-WebApplicationVM
 
 | Aliasy | brak |
 | --- | --- |
-| Wymagany? |true |
-| Pozycja |nazwane |
+| Wymagane? |true |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 Nazwa subskrypcji platformy Azure, w której chcesz utworzyć maszynę wirtualną.
 
 | Aliasy | brak |
 | --- | --- |
-| Wymagany? |false |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |Używa pierwszej subskrypcji w pliku subskrypcji |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
-### <a name="webdeploypackage"></a>WebDeployPackage
-Ścieżka do pakietu wdrożeniowego sieci Web, która ma zostać opublikowana na maszynie wirtualnej. Ten pakiet można utworzyć przy użyciu Kreatora publikacji w sieci Web w programie Visual Studio. Zobacz [How to: Utwórz pakiet wdrożeniowy sieci Web w programie](https://msdn.microsoft.com/library/dd465323.aspx)Visual Studio.
+### <a name="webdeploypackage"></a>Webdeploypackage została
+Ścieżka do pakietu wdrożeniowego sieci Web, która ma zostać opublikowana na maszynie wirtualnej. Ten pakiet można utworzyć przy użyciu Kreatora publikacji w sieci Web w programie Visual Studio. Zobacz [jak: Tworzenie pakietu wdrożeniowego sieci Web w programie Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
 
 | Aliasy | brak |
 | --- | --- |
-| Wymagany? |false |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
 W przypadku wartości true Zezwalaj na korzystanie z certyfikatów, które nie są podpisane przez zaufany główny urząd certyfikacji.
 
 | Aliasy | brak |
 | --- | --- |
-| Wymagany? |false |
-| Pozycja |nazwane |
-| Wartość domyślna |false |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
+| Wartość domyślna |fałsz |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ### <a name="vmpassword"></a>VMPassword
 Poświadczenia dla konta maszyny wirtualnej. Przykład:-VMPassword @ {Name = "admin"; Hasło = "hasło"}
 
 | Aliasy | brak |
 | --- | --- |
-| Wymagany? |false |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
 Poświadczenia dla bazy danych SQL na platformie Azure. Przykład:-DatabaseServerPassword @ {Name = "admin"; Hasło = "hasło"}
 
 | Aliasy | brak |
 | --- | --- |
-| Wymagany? |false |
-| Pozycja |nazwane |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Jeśli wartość jest równa true, Wydrukuj komunikaty ze skryptu do strumienia wyjściowego.
 
 | Aliasy | brak |
 | --- | --- |
-| Wymagany? |false |
-| Pozycja |nazwane |
-| Wartość domyślna |false |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Wymagane? |fałsz |
+| Położenie |nazwane |
+| Wartość domyślna |fałsz |
+| Akceptujesz dane wejściowe potoku? |fałsz |
+| Akceptować symbole wieloznaczne? |fałsz |
 
 ## <a name="remarks"></a>Uwagi
 Aby uzyskać pełne wyjaśnienie, jak używać skryptu do tworzenia środowisk deweloperskich i testowych, zobacz [Używanie skryptów programu Windows PowerShell do publikowania w środowiskach deweloperskich i testowych](vs-azure-tools-publishing-using-powershell-scripts.md).

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ed637943d7a849357338593ffc684e4f45c09a30
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662443"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opcje — Okno dialogowe [Visual Studio]
@@ -46,4 +46,4 @@ Okno dialogowe **Opcje** umożliwia skonfigurowanie zintegrowanego środowiska p
  Wybranie lub zaznaczenie pola wyboru **Pokaż wszystkie ustawienia** powoduje zastosowanie wszystkich zmian wprowadzonych w oknie dialogowym **Opcje** , mimo że jeszcze nie kliknięto **OK**.
 
 ## <a name="see-also"></a>Zobacz też
- [Dostosowywanie edytora](../../ide/customizing-the-editor.md)
+ [Dopasowywanie edytora](../../ide/customizing-the-editor.md)

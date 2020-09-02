@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76e89c89bca8b164645c71df6083b230850e61ca
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468274"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
@@ -32,7 +32,7 @@ HRESULT Item ( 
 ```
 
 #### <a name="parameters"></a>Parametry
- indeks
+ index
 
 podczas Indeks obiektu [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) do pobrania. Indeks jest zakresem od 0 do `count` -1, gdzie `count` jest zwracany przez metodę [IDiaEnumInjectedSources:: get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) .
 

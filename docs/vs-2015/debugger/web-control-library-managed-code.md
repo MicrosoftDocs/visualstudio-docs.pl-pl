@@ -1,5 +1,5 @@
 ---
-title: Biblioteka formantów (kod zarządzany) sieci Web | Dokumentacja firmy Microsoft
+title: Biblioteka kontrolek sieci Web (kod zarządzany) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,38 +18,38 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688173"
 ---
 # <a name="web-control-library-managed-code"></a>Biblioteka formantów sieci Web (zarządzany kod)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Szablon projektu Biblioteka formantów sieci Web tworzy bibliotekę DLL. Ponieważ biblioteki klas jest biblioteką DLL, nie możesz uruchomić go bezpośrednio. Należy utworzyć [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strona, która osadza formantu. Aby uzyskać więcej informacji, zobacz [szablon biblioteki kontrolki sieci Web](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
+Szablon projektu biblioteki kontrolek sieci Web tworzy plik DLL. Ponieważ biblioteka klas jest biblioteką DLL, nie można jej uruchomić bezpośrednio. Należy utworzyć [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stronę, która osadza formant. Aby uzyskać więcej informacji, zobacz [szablon Biblioteka kontrolek sieci Web](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
-### <a name="to-debug-a-web-control-library-method-1"></a>Aby debugować Biblioteka formantów sieci Web (metoda 1)  
+### <a name="to-debug-a-web-control-library-method-1"></a>Aby debugować bibliotekę kontrolek sieci Web (Metoda 1)  
   
-1. Otwórz istniejący projekt Biblioteka formantów sieci Web, lub Utwórz nową.  
+1. Otwórz istniejący projekt biblioteki kontrolek sieci Web lub Utwórz nowy.  
   
-2. Utwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strona, która osadza formantu.  
+2. Utwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stronę, która osadza formant.  
   
-3. W witrynie sieci Web, który jest hostem [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kontroler testu, Utwórz podkatalog o nazwie `/Code`.  
+3. W witrynie sieci Web, w której znajduje się [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] zespół programu testowego, Utwórz podkatalog o nazwie `/Code` .  
   
-4. Skopiuj kod źródłowy dla formantu do `/Code` podkatalogu.  
+4. Skopiuj kod źródłowy formantu do `/Code` podkatalogu.  
   
-5. Otwórz kod źródłowy w `/Code` podkatalogu i ustawiania punktów przerwania.  
+5. Otwórz kod źródłowy w `/Code` podkatalogu i ustaw punkty przerwania.  
   
-6. Otwórz okno przeglądarki z adresem URL, który wskazuje na kontroler testów. Punkt przerwania w kontrolce spowoduje osiągnięcie i uruchomić debugowanie.  
+6. Otwórz okno przeglądarki z adresem URL wskazującym zespół testów. Punkt przerwania w kontrolce zostanie trafiony i możesz rozpocząć debugowanie.  
   
-### <a name="to-debug-a-web-control-library-method-2"></a>Aby debugować Biblioteka formantów sieci Web (metoda 2)  
+### <a name="to-debug-a-web-control-library-method-2"></a>Aby debugować bibliotekę kontrolek sieci Web (Metoda 2)  
   
-1. Utwórz projekt aplikacji hosta i projektu kontrolki sieci Web, w tym samym rozwiązaniu.  
+1. Utwórz projekt aplikacji hosta i projekt kontrolki sieci Web w tym samym rozwiązaniu.  
   
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy aplikację hosta i wybierz polecenie **Dodaj odwołanie**.  
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy aplikację hosta i wybierz polecenie **Dodaj odwołanie**.  
   
-3. Dodaj odwołanie do projektu sieci web kontroli.  
+3. Dodaj odwołanie do projektu kontrolki sieci Web.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Aplikacje internetowe ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)
+ [ASP.NET aplikacje sieci Web](../debugger/debugging-preparation-aspnet-web-applications.md)

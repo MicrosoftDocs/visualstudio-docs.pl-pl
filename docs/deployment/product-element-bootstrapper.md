@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produkt&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;Produkt — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747452"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produkt&gt; — element (program inicjujący)
-`Product` Element jest elementem XML najwyższego poziomu w pliku produktu.
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Product — &gt; element (program inicjujący)
+`Product`Element jest elementem XML najwyższego poziomu w pliku produktu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -137,15 +137,15 @@ ProductCode
 </Package>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `Product` Element jest wymagany w pliku produktu. Następujący atrybut w nim.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `Product`Element jest wymagany w pliku produktu. Ma następujący atrybut.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`ProductCode`|Unikatowy identyfikator dla tego produktu.|
+|`ProductCode`|Unikatowy identyfikator produktu.|
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu pokazuje plik kompletnego produktu dla instalacji programu .NET Framework.
+ Poniższy przykład kodu przedstawia kompletny plik produktu na potrzeby instalacji .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -249,5 +249,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

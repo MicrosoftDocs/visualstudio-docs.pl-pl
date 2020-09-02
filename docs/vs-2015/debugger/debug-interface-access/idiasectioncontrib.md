@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib — | Dokumentacja firmy Microsoft
+title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc263d7238166f4f381bac35f0482ca2433f7b33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150481"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera dane opisujące wkład sekcji, czyli ciągłego bloku pamięci pochodzącego z danego obrazu compiland —.  
+Pobiera dane opisujące udział sekcji, czyli ciągły blok pamięci, który tworzy obraz przez jednostka kompilacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,43 +31,43 @@ Pobiera dane opisujące wkład sekcji, czyli ciągłego bloku pamięci pochodzą
 IDiaSectionContrib : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDiaSectionContrib`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metody `IDiaSectionContrib` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|Pobiera odwołanie do compiland — symbol, który zamieszczone w tej sekcji.|  
-|[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|Pobiera część sekcji adres wkładu.|  
-|[IDiaSectionContrib::get_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|Pobiera przesunięcia część adresu wkładu.|  
-|[IDiaSectionContrib::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-relativevirtualaddress.md)|Pobiera obraz wirtualny adres względny (RVA) wkładu.|  
-|[IDiaSectionContrib::get_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|Pobiera adres wirtualny (oceny luk w zabezpieczeniach) wkładu.|  
+|[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|Pobiera odwołanie do symbolu jednostka kompilacji, który należy do tej sekcji.|  
+|[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|Pobiera część sekcji adresu udziału.|  
+|[IDiaSectionContrib::get_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|Pobiera część przesunięcia adresu udziału.|  
+|[IDiaSectionContrib::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-relativevirtualaddress.md)|Pobiera adres wirtualny względem obrazu (RVA) udziału.|  
+|[IDiaSectionContrib::get_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|Pobiera adres wirtualny (VA) udziału.|  
 |[IDiaSectionContrib::get_length](../../debugger/debug-interface-access/idiasectioncontrib-get-length.md)|Pobiera liczbę bajtów w sekcji.|  
-|[IDiaSectionContrib::get_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|Pobiera flagę wskazującą, czy sekcja nie może być stronicowana za mało pamięci.|  
-|[IDiaSectionContrib::get_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|Pobiera flagę wskazującą, czy sekcja nie powinien dopełniana do następnej granicy w pamięci.|  
+|[IDiaSectionContrib::get_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|Pobiera flagę wskazującą, czy nie można stronicować sekcji poza pamięcią.|  
+|[IDiaSectionContrib::get_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|Pobiera flagę wskazującą, czy sekcja nie powinna być uzupełniona do następnej granicy pamięci.|  
 |[IDiaSectionContrib::get_code](../../debugger/debug-interface-access/idiasectioncontrib-get-code.md)|Pobiera flagę wskazującą, czy sekcja zawiera kod wykonywalny.|  
-|[IDiaSectionContrib::get_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|Pobiera flagę wskazującą, czy sekcja zawiera 16-bitowego kodu.|  
-|[IDiaSectionContrib::get_initializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-initializeddata.md)|Pobiera flagę wskazującą, czy sekcja zawiera dane zainicjowane.|  
-|[IDiaSectionContrib::get_uninitializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-uninitializeddata.md)|Pobiera flagę wskazującą, czy sekcja zawiera niezainicjowanych danych.|  
+|[IDiaSectionContrib::get_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|Pobiera flagę wskazującą, czy sekcja zawiera kod 16-bitowy.|  
+|[IDiaSectionContrib::get_initializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-initializeddata.md)|Pobiera flagę wskazującą, czy sekcja zawiera zainicjowane dane.|  
+|[IDiaSectionContrib::get_uninitializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-uninitializeddata.md)|Pobiera flagę wskazującą, czy sekcja zawiera niezainicjowane dane.|  
 |[IDiaSectionContrib::get_informational](../../debugger/debug-interface-access/idiasectioncontrib-get-informational.md)|Pobiera flagę wskazującą, czy sekcja zawiera komentarze lub podobne informacje.|  
-|[IDiaSectionContrib::get_remove](../../debugger/debug-interface-access/idiasectioncontrib-get-remove.md)|Pobiera flagę wskazującą, czy sekcja jest usuwany, zanim staje się częścią obrazu w pamięci.|  
-|[IDiaSectionContrib::get_comdat](../../debugger/debug-interface-access/idiasectioncontrib-get-comdat.md)|Pobiera flagę wskazującą, czy sekcja jest rekord COMDAT.|  
-|[IDiaSectionContrib::get_discardable](../../debugger/debug-interface-access/idiasectioncontrib-get-discardable.md)|Pobiera flagę wskazującą, czy można odrzucać sekcji.|  
+|[IDiaSectionContrib::get_remove](../../debugger/debug-interface-access/idiasectioncontrib-get-remove.md)|Pobiera flagę wskazującą, czy sekcja zostanie usunięta przed wprowadzeniem jej do części obrazu znajdującej się w pamięci.|  
+|[IDiaSectionContrib::get_comdat](../../debugger/debug-interface-access/idiasectioncontrib-get-comdat.md)|Pobiera flagę wskazującą, czy sekcja jest rekordem COMDAT.|  
+|[IDiaSectionContrib::get_discardable](../../debugger/debug-interface-access/idiasectioncontrib-get-discardable.md)|Pobiera flagę wskazującą, czy sekcja może zostać odrzucona.|  
 |[IDiaSectionContrib::get_notCached](../../debugger/debug-interface-access/idiasectioncontrib-get-notcached.md)|Pobiera flagę wskazującą, czy nie można buforować sekcji.|  
-|[IDiaSectionContrib::get_share](../../debugger/debug-interface-access/idiasectioncontrib-get-share.md)|Pobiera flagę wskazującą, czy sekcja mogą być udostępniane w pamięci.|  
-|[IDiaSectionContrib::get_execute](../../debugger/debug-interface-access/idiasectioncontrib-get-execute.md)|Pobiera flagę wskazującą, czy sekcja jest plik wykonywalny jako kod.|  
-|[IDiaSectionContrib::get_read](../../debugger/debug-interface-access/idiasectioncontrib-get-read.md)|Pobiera flagę wskazującą, czy może odczytywać sekcji.|  
-|[IDiaSectionContrib::get_write](../../debugger/debug-interface-access/idiasectioncontrib-get-write.md)|Pobiera flagę wskazującą, czy mogą być zapisywane sekcji.|  
-|[IDiaSectionContrib::get_dataCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-datacrc.md)|Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) danych w tej sekcji.|  
-|[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Pobiera CRC przenoszenia informacji w sekcji.|  
-|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Pobiera identyfikator compiland — w sekcji.|  
+|[IDiaSectionContrib::get_share](../../debugger/debug-interface-access/idiasectioncontrib-get-share.md)|Pobiera flagę wskazującą, czy sekcja może być udostępniana w pamięci.|  
+|[IDiaSectionContrib::get_execute](../../debugger/debug-interface-access/idiasectioncontrib-get-execute.md)|Pobiera flagę wskazującą, czy sekcja jest wykonywalna jako kod.|  
+|[IDiaSectionContrib::get_read](../../debugger/debug-interface-access/idiasectioncontrib-get-read.md)|Pobiera flagę wskazującą, czy można odczytać sekcję.|  
+|[IDiaSectionContrib::get_write](../../debugger/debug-interface-access/idiasectioncontrib-get-write.md)|Pobiera flagę wskazującą, czy można pisać sekcję.|  
+|[IDiaSectionContrib::get_dataCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-datacrc.md)|Pobiera cykliczne sprawdzenie nadmiarowości (CRC) danych w sekcji.|  
+|[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Pobiera kod CRC informacji o relokacji dla sekcji.|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Pobiera identyfikator jednostka kompilacji dla sekcji.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs jest można uzyskać przez wywołanie [idiaenumsectioncontribs::Item —](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) i [idiaenumsectioncontribs::Next —](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) metody. Zobacz [idiaenumsectioncontribs —](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) interfejsu, na przykład uzyskiwania `IDiaSectionContrib` interfejsu.  
+ Ten interfejs jest uzyskiwany przez wywołanie metody [IDiaEnumSectionContribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) i [IDiaEnumSectionContribs:: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) . Zobacz interfejs [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) , aby zapoznać się z przykładem uzyskiwania `IDiaSectionContrib` interfejsu.  
   
 ## <a name="example"></a>Przykład  
- Ta funkcja zawiera adres każdej sekcji oraz wszystkie skojarzone z nią symbole. Zobacz [idiaenumsectioncontribs —](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) interfejsu, aby zobaczyć, jak `IDiaSectionContrib` uzyskuje się interfejs.  
+ Ta funkcja pokazuje adres każdej sekcji wraz ze wszystkimi skojarzonymi symbolami. Zobacz interfejs [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) , aby zobaczyć, jak `IDiaSectionContrib` uzyskiwany jest interfejs.  
   
 ```cpp#  
 void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)  
@@ -130,14 +130,14 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: dia2. h  
   
- Biblioteka: diaguids.lib  
+ Biblioteka: diaguids. lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumsectioncontribs —](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
- [Idiaenumsectioncontribs::Item —](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
+ [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
+ [IDiaEnumSectionContribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
  [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)

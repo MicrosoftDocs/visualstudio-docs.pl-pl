@@ -1,5 +1,5 @@
 ---
-title: Generatebootstrapper — zadanie | Dokumentacja firmy Microsoft
+title: GenerateBootstrapper — — Zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,55 +20,55 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149632"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej wstępnie wymagane składniki. Służy on jako jeden Instalator, który integruje osobne instalatory dla wszystkich składników tworzących aplikację.  
+Zapewnia zautomatyzowany sposób wykrywania, pobierania i instalowania aplikacji oraz jej wymagań wstępnych. Służy on jako pojedynczy Instalator, który integruje osobne Instalatory dla wszystkich składników tworzących aplikację.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
  W poniższej tabeli opisano parametry `GenerateBootstrapper` zadania.  
   
 - `ApplicationFile`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa plik, który program inicjujący będzie używać do instalowania aplikacji po wszystkie wstępnie wymagane składniki zostały zainstalowane. Spowoduje błąd kompilacji, jeśli żadna `BootstrapperItems` ani `ApplicationFile` określono parametr.  
+   Określa plik używany przez program inicjujący do rozpoczęcia instalacji aplikacji po zainstalowaniu wszystkich wymagań wstępnych. Wystąpił błąd kompilacji, jeśli nie `BootstrapperItems` `ApplicationFile` zostanie określony ani parametr.  
   
 - `ApplicationName`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa nazwę aplikacji, w którym zostanie zainstalowany program inicjujący. Ta nazwa będzie wyświetlana w Interfejsie użytkownika program inicjujący używany podczas instalacji.  
+   Określa nazwę aplikacji, która zostanie zainstalowana przez program inicjujący. Ta nazwa będzie wyświetlana w interfejsie użytkownika używanego przez program inicjujący podczas instalacji.  
   
 - `ApplicationRequiresElevation`  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, składnik jest uruchamiany z podwyższonym poziomem uprawnień, gdy jest zainstalowany na komputerze docelowym.  
+   Jeśli `true` składnik jest uruchomiony z podwyższonym poziomem uprawnień, gdy jest zainstalowany na komputerze docelowym.  
   
 - `ApplicationUrl`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa lokalizację sieci Web, który jest hostem Instalator aplikacji.  
+   Określa lokalizację sieci Web, w której znajduje się Instalator aplikacji.  
   
 - `BootstrapperComponentFiles`  
   
-   Opcjonalnie `String[]` parametr wyjściowy.  
+   Opcjonalny `String[]` parametr wyjściowy.  
   
-   Określa lokalizację skompilowane pliki pakietu programu inicjującego.  
+   Określa wbudowaną lokalizację plików pakietu programu inicjującego.  
   
 - `BootstrapperItems`  
   
-   Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.  
+   Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.  
   
-   Określa produktów, które mają wbudowane w program inicjujący. Elementy przekazany do tego parametru powinna mieć następującą składnię:  
+   Określa produkty do skompilowania do programu inicjującego. Elementy przesłane do tego parametru powinny mieć następującą składnię:  
   
   ```  
   <BootstrapperItem  
@@ -79,83 +79,83 @@ Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej ws
   </BootstrapperItem>  
   ```  
   
-   `Include` Atrybut jest używany do reprezentowania nazwy testów wymagań wstępnych, która powinna zostać zainstalowana. `ProductName` Metadanych elementu jest opcjonalna i używaną przez aparat kompilacji jako nazwę przyjazną dla użytkownika w przypadku, gdy nie można odnaleźć pakietu. Te elementy nie są wymagane [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] parametrów wejściowych, o ile nie `ApplicationFile` jest określony. Powinien zawierać jeden element dla każdego wstępnie wymaganego składnika, który musi być zainstalowany dla swojej aplikacji.  
+   Ten `Include` atrybut jest używany do reprezentowania nazwy wymagania wstępnego, które należy zainstalować. `ProductName`Metadane elementu są opcjonalne i będą używane przez aparat kompilacji jako przyjazna dla użytkownika nazwa na wypadek, gdyby nie można znaleźć pakietu. Te elementy nie są wymaganymi [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] parametrami wejściowymi, chyba że żadne nie `ApplicationFile` zostanie określone. Należy uwzględnić jeden element dla każdego wymagania wstępnego, które musi być zainstalowane dla aplikacji.  
   
-   Spowoduje błąd kompilacji, jeśli żadna `BootstrapperItems` ani `ApplicationFile` określono parametr.  
+   Wystąpił błąd kompilacji, jeśli nie `BootstrapperItems` `ApplicationFile` zostanie określony ani parametr.  
   
 - `BootstrapperKeyFile`  
   
-   Opcjonalnie `String` parametr wyjściowy.  
+   Opcjonalny `String` parametr wyjściowy.  
   
-   Określa lokalizację utworzonych setup.exe  
+   Określa zbudowaną lokalizację setup.exe  
   
 - `ComponentsLocation`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa lokalizację programu inicjującego do sprawdzania wymagań wstępnych dotyczących instalacji zainstalować. Ten parametr może mieć następujące wartości:  
+   Określa lokalizację programu inicjującego, aby znaleźć wymagania wstępne instalacji do zainstalowania. Ten parametr może mieć następujące wartości::  
   
-  - `HomeSite`: Wskazuje, że wstępnie wymaganego składnika jest hostowany przez dostawcę składnika.  
+  - `HomeSite`: Wskazuje, że wymaganie wstępne jest obsługiwane przez dostawcę składnika.  
   
   - `Relative`: Wskazuje, że preqrequisite znajduje się w tej samej lokalizacji aplikacji.  
   
-  - `Absolute`: Wskazuje, że wszystkie składniki znajdują się pod adresem URL scentralizowany. Ta wartość będzie używana w połączeniu z `ComponentsUrl` parametr wejściowy.  
+  - `Absolute`: Wskazuje, że wszystkie składniki mają być znalezione w scentralizowanym adresie URL. Ta wartość powinna być używana w połączeniu z `ComponentsUrl` parametrem wejściowym.  
   
-    Jeśli `ComponentsLocation` nie zostanie określony, `HomeSite` jest używane domyślnie.  
+    Jeśli `ComponentsLocation` nie jest określony, `HomeSite` jest używany domyślnie.  
   
 - `ComponentsUrl`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
    Określa adres URL zawierający wymagania wstępne instalacji.  
   
 - `CopyComponents`  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, program inicjujący kopiuje wszystkie pliki wyjściowe do ścieżki określonej w `OutputPath` parametru. Wartości `BootstrapperComponentFiles` parametr powinien wszystkie opierać się na tę ścieżkę. Jeśli `false`, pliki nie są kopiowane i `BootstrapperComponentFiles` wartości są oparte na wartości `Path` parametru.  Wartość domyślna tego parametru to `true`.  
+   Jeśli `true` program inicjujący kopiuje wszystkie pliki wyjściowe do ścieżki określonej w `OutputPath` parametrze. `BootstrapperComponentFiles`Wszystkie wartości parametru powinny być oparte na tej ścieżce. Jeśli `false` pliki nie są kopiowane, a `BootstrapperComponentFiles` wartości są zależne od wartości `Path` parametru.  Wartość domyślna tego parametru to `true` .  
   
 - `Culture`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa kulturę do użycia dla programu inicjującego interfejsu użytkownika i wymagania wstępne instalacji. Jeśli określona kultura jest niedostępny, zadanie używa wartości `FallbackCulture` parametru.  
+   Określa kulturę, która ma być używana przez interfejs użytkownika programu inicjującego i wymagania wstępne instalacji. Jeśli określona kultura to niedostępny, zadanie używa wartości `FallbackCulture` parametru.  
   
 - `FallbackCulture`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa kulturę pomocniczego na użytek bootstraper interfejsu użytkownika i wymagania wstępne instalacji.  
+   Określa kulturę pomocniczą, która ma być używana dla interfejsu użytkownika programu Bootstrap i wymagań wstępnych instalacji.  
   
 - `OutputPath`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa lokalizację kopii setup.exe i wszystkie pliki pakietu.  
+   Określa lokalizację do skopiowania setup.exe i wszystkich plików pakietów.  
   
 - `Path`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa lokalizację wszystkie dostępne wstępnie wymagane pakiety.  
+   Określa lokalizację wszystkich dostępnych wstępnie wymaganych pakietów.  
   
 - `SupportUrl`  
   
-   Opcjonalnie `String` parametru.  
+   Opcjonalny `String` parametr.  
   
-   Określa adres URL, aby zapewnić, w przypadku instalacji programu inicjującego nie  
+   Określa adres URL, który należy podać, jeśli instalacja programu inicjującego nie powiedzie się  
   
 - `Validate`  
   
-   Opcjonalnie `Boolean` parametru.  
+   Opcjonalny `Boolean` parametr.  
   
-   Jeśli `true`, program inicjujący przeprowadza weryfikację XSD elementów określony wejściowy programu inicjującego. Wartość domyślna tego parametru to `false`.  
+   Jeśli `true` program inicjujący wykonuje walidację XSD dla określonych wejściowych elementów programu inicjującego. Wartość domyślna tego parametru to `false` .  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `GenerateBootstrapper` zadanie, aby zainstalować aplikację, która musi mieć [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] zainstalowany jako warunek wstępny.  
+ Poniższy przykład używa `GenerateBootstrapper` zadania w celu zainstalowania aplikacji, która musi mieć zainstalowany program [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] jako warunek wstępny.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -179,5 +179,5 @@ Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej ws
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zadania](../msbuild/msbuild-tasks.md)   
+ [Widoku](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

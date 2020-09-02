@@ -34,69 +34,69 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80472819"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Okno dialogowe Opcje: Edytor \> tekstu ogólny
+# <a name="options-dialog-box-text-editor--general"></a>Opcje — okno dialogowe: Edytor tekstu — \> Ogólne
 
-To okno dialogowe umożliwia zmianę ustawień globalnych dla edytora kodu i tekstu programu Visual Studio. Aby wyświetlić to okno dialogowe, wybierz polecenie **Opcje** w menu **Narzędzia,** rozwiń folder **Edytor tekstu,** a następnie wybierz pozycję **Ogólne**.
+To okno dialogowe pozwala zmienić ustawienia globalne programu Visual Studio Code i edytora tekstu. Aby wyświetlić to okno dialogowe, wybierz opcję **Opcje** w menu **Narzędzia** , rozwiń folder **Edytor tekstu** , a następnie wybierz pozycję **Ogólne**.
 
 ## <a name="settings"></a>Ustawienia
 
-### <a name="drag-and-drop-text-editing"></a>Przeciągnij i upuść edycję tekstu
+### <a name="drag-and-drop-text-editing"></a>Edytowanie tekstu metodą "przeciągnij i upuść"
 
-Gdy ta opcja jest zaznaczona, można przenieść tekst, zaznaczając go i przeciągając myszą w inne miejsce w bieżącym dokumencie lub innym otwartym dokumencie.
+Gdy ta opcja jest zaznaczona, umożliwia przeniesienie tekstu, zaznaczając go i przeciągając myszą do innej lokalizacji w bieżącym dokumencie lub dowolnym innym otwartym dokumencie.
 
-### <a name="automatic-delimiter-highlighting"></a>Automatyczne wyróżnianie ogranicznika
+### <a name="automatic-delimiter-highlighting"></a>Automatyczne Wyróżnianie ogranicznika
 
-Gdy ta opcja jest zaznaczona, wyróżnione są znaki ogranicznika, które oddzielają parametry lub pary wartości towaru, a także pasujące nawiasy klamrowe.
+Gdy jest zaznaczone, znaki ogranicznika oddzielające parametry lub pary element-wartość, a także pasujące nawiasy klamrowe, są wyróżnione.
 
 ### <a name="track-changes"></a>Śledzenie zmian
 
-Po wybraniu edytora kodu na marginesie zaznaczenia pojawia się pionowa żółta linia, aby oznaczyć kod, który uległ zmianie od czasu ostatnio zapisanego pliku. Po zapisaniu zmian pionowe linie stają się zielone.
+Po wybraniu edytora kodu w marginesie zaznaczenia zostanie wyświetlona pionowa żółta linia, aby oznaczyć kod zmieniony od czasu ostatniego zapisania pliku. Po zapisaniu zmian linie pionowe stają się kolorem zielonym.
 
 ### <a name="auto-detect-utf-8-encoding-without-signature"></a>Automatyczne wykrywanie kodowania UTF-8 bez podpisu
 
-Domyślnie edytor wykrywa kodowanie, wyszukując znaczniki kolejności bajtów lub znaczniki zestawu znaków. Jeśli żaden z nich nie zostanie znaleziony w bieżącym dokumencie, edytor kodu próbuje automatycznie wyekstywać kodowanie UTF-8 przez skanowanie sekwencji bajtów. Aby wyłączyć automatyczne wykrywanie kodowania, wyczyść tę opcję.
+Domyślnie Edytor wykrywa kodowanie, wyszukując znaczniki kolejności bajtów lub Tagi charset. Jeśli żaden z nich nie zostanie znaleziony w bieżącym dokumencie, Edytor kodu podejmie próbę automatycznego wykrycia kodowania UTF-8 przez skanowanie sekwencji bajtów. Aby wyłączyć Autowykrywanie kodowania, usuń zaznaczenie tej opcji.
 
-### <a name="follow-project-coding-conventions"></a>Postępuj zgodnie z konwencjami kodowania projektów
+### <a name="follow-project-coding-conventions"></a>Przestrzegaj konwencji kodowania projektu
 
-Po wybraniu tej opcji określone konwencje kodowania projektu zastępują wszystkie konwencje kodowania używane w projektach osobistych.
+Po wybraniu zasady kodowania określone dla projektu zastępują wszelkie konwencje kodowania używane w Twoich projektach osobistych.
 
-### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Włącz kliknięcie myszą, aby wykonać przejdź do definicji
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Włącz kliknięcie myszą, aby wykonać operację przejdź do definicji
 
-Po wybraniu tej opcji można nacisnąć klawisz **Ctrl** i najechać kursorem na element, klikając myszą. W ten sposób prowadzi do definicji wybranego elementu. Z listy rozwijanej **Użyj klawisza modyfikatora** można również wybrać **alt** lub **klawisz Ctrl** + **Alt.**
+Po zaznaczeniu można nacisnąć klawisz **Ctrl** i umieścić kursor nad elementem, a następnie klikając myszą. Wykonanie tej operacji spowoduje przejście do definicji wybranego elementu. Możesz również wybrać **Alt** lub **Ctrl**  +  **Alt** z listy rozwijanej **Użyj klawisza modyfikującego** .
 
-Zaznacz pole wyboru **Otwórz definicję w widoku wglądu,** aby wyświetlić definicję elementu w oknie bez przechodzenia z dala od bieżącej lokalizacji w edytorze kodu.
+Zaznacz pole wyboru **Otwórz definicję w widoku wglądu** , aby wyświetlić definicję elementu w oknie bez nawigowania do bieżącej lokalizacji w edytorze kodu.
 
-## <a name="display"></a>Monitor
+## <a name="display"></a>Wyświetlanie
 
-### <a name="selection-margin"></a>Margines wyboru
+### <a name="selection-margin"></a>Margines zaznaczenia
 
-Gdy ta opcja jest zaznaczona, wyświetla pionowy margines wzdłuż lewej krawędzi obszaru tekstowego edytora. Możesz kliknąć ten margines, aby zaznaczyć cały wiersz tekstu, lub kliknąć i przeciągnąć, aby zaznaczyć kolejne wiersze tekstu.
+Po wybraniu Wyświetla pionowy margines wzdłuż lewej krawędzi obszaru tekstowego edytora. Możesz kliknąć ten margines, aby zaznaczyć cały wiersz tekstu, lub kliknij i przeciągnij, aby zaznaczyć kolejne wiersze tekstu.
 
-|Margines wyboru na|Margines zaznaczenia wyłączony|
+|Margines zaznaczenia na|Margines zaznaczenia jest wyłączony|
 | - | - |
-|![HTMLpageSelectionMarginOn zrzut ekranu](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff zrzut ekranu](../../ide/reference/media/vxselmaroff.gif)|
+|![Zrzut ekranu HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Zrzut ekranu HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Margines wskaźnika
 
-Gdy ta opcja jest zaznaczona, wyświetla pionowy margines poza lewą krawędzią obszaru tekstowego edytora. Po kliknięciu na tym marginesie pojawi się ikona i etykietka narzędzia, które są związane z tekstem. Na przykład skróty do punktu przerwania lub listy zadań są wyświetlane na marginesie wskaźnika. Informacje o marginesie wskaźnika nie są drukowane.
+Po wybraniu Wyświetla pionowy margines poza lewą krawędzią obszaru tekstowego edytora. Po kliknięciu tego marginesu zostanie wyświetlona ikona i etykietka narzędzia, które są powiązane z tekstem. Na przykład skróty do punktów przerwania lub listy zadań pojawiają się na marginesie wskaźnika. Informacje o marginesie wskaźnika nie są drukowane.
 
-### <a name="highlight-current-line"></a>Wyróżnianie bieżącej linii
+### <a name="highlight-current-line"></a>Wyróżnij bieżący wiersz
 
-Gdy ta opcja jest zaznaczona, wyświetla szare pole wokół linii kodu, w której znajduje się kursor.
+Po wybraniu Wyświetla szare pole wokół wiersza kodu, w którym znajduje się kursor.
 
-### <a name="show-structure-guide-lines"></a>Pokaż linie prowadzące konstrukcji
+### <a name="show-structure-guide-lines"></a>Pokaż linie prowadnic struktury
 
-Po zaznaczeniu tej opcji w edytorze pojawiają się pionowe linie, które są zgodne ze strukturalnymi blokami kodu, co umożliwia łatwą identyfikację poszczególnych bloków kodu.
+Po wybraniu linie pionowe pojawiają się w edytorze, który jest wierszem ze strukturą bloków kodu, dzięki czemu można łatwo identyfikować poszczególne bloki kodu.
 
 ### <a name="show-file-health-indicator"></a>Pokaż wskaźnik kondycji pliku
 
-Po wybraniu tej opcji pasek wskaźnika kondycji pliku (błędy, ostrzeżenia) z opcjami oczyszczania kodu zostanie wyświetlony w lewym dolnym rogu edytora.
+Gdy ta opcja jest zaznaczona, pasek stanu wskaźnika kondycji pliku (błędy, ostrzeżenia) z opcjami czyszczenia kodu zostanie wyświetlony w lewym dolnym rogu edytora.
 
 ## <a name="see-also"></a>Zobacz też
 
@@ -105,4 +105,4 @@ Po wybraniu tej opcji pasek wskaźnika kondycji pliku (błędy, ostrzeżenia) z 
 - [Opcje, Edytor tekstów, Rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md)
 - [Identyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Dopasowywanie edytora](../how-to-change-text-case-in-the-editor.md)
-- [Korzystanie z IntelliSense](../../ide/using-intellisense.md)
+- [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

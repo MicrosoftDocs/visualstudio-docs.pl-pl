@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie właściwości | Dokumentacja firmy Microsoft
+title: Rozszerzanie właściwości | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,82 +11,82 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b5d2e7d15f7b479941c3186d8cd694c92f762bbf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690994"
 ---
 # <a name="extending-properties"></a>Rozszerzanie właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Właściwości** okna jest przeglądarkę właściwości uniwersalnych dla składników COM i COM + i obsługuje wszystkie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] produktów. **Właściwości** okna współpracuje z `ITypeInfo` typu informacji i metadanych modelu COM +, aby wyświetlić listę właściwości czasu projektowania dla aktualnie wybranego obiektu w innym oknie zintegrowanego środowiska programistycznego (IDE).  
+Okno [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Właściwości** to uniwersalna przeglądarka właściwości dla składników com i com+, która obsługuje wszystkie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] produkty. Okno **Właściwości** działa z `ITypeInfo` informacjami o typie i metadanych modelu COM+, aby wyświetlić właściwości czasu projektowania aktualnie zaznaczonego obiektu w dowolnym innym oknie w zintegrowanym środowisku programistycznym (IDE).  
   
- **Właściwości** okno, które można otworzyć, naciskając klawisz F4 na klawiaturze lub wybierając **okno właściwości** na **widoku** menu służy do wyświetlania i edytowania niezależne od konfiguracji, w czasie projektowania, właściwości i zdarzeń zaznaczonych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązaniami i projektami, są wyświetlane na [stron właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji, zobacz [właściwości NIB: projektu](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md), i [zarządzania NIB: element w projektach](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Okno **Właściwości** , które można otworzyć przez naciśnięcie klawisza F4 na klawiaturze lub wybranie **okna właściwości** w menu **Widok** , służy do wyświetlania i edytowania właściwości niezależnych od konfiguracji, czasu projektowania i zdarzeń wybranych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązaniami i projektami, są wyświetlane na [stronach właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji, zobacz [NIB: właściwości projektu](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md)i [NIB: Zarządzanie elementami w projektach](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  ![Omówienie okna właściwości](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Okno właściwości  
   
- Ta sekcja zawiera szczegółowe informacje, które odnoszą się do poszczególnych obszarów **właściwości** okna i interfejsy, które należy zaimplementować i wywołania do wypełnienia okna.  
+ Ta sekcja zawiera szczegółowe informacje dotyczące poszczególnych obszarów okna **Właściwości** oraz interfejsów, które należy zaimplementować, i wywoływać w celu wypełnienia okna.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Omówienie okna właściwości](../../extensibility/internals/properties-window-overview.md)  
- Zawiera wyjaśnienie przeznaczenia **właściwości** okna względem okna narzędzi i okna dokumentu.  
+ Wyjaśnia przeznaczenie okna **Właściwości** względem okna narzędzi i okna dokumentu.  
   
  [Szablon zasad i okno właściwości](../../extensibility/internals/template-policy-and-the-properties-window.md)  
- W tym artykule omówiono, jak projekt jest zawarta w szablonie projektu w przedsiębiorstwie i jak ten szablon projektu przedsiębiorstwa mogą wymusić zasady.  
+ W tym artykule omówiono sposób, w jaki projekt jest zawarty w projekcie szablonu przedsiębiorstwa, oraz sposób, w jaki projekt szablonu przedsiębiorstwa może wymusić zasady.  
   
  [Pola i interfejsy okna właściwości](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
- Wyjaśnia podstawę do wyboru, która określa, jakie informacje są wyświetlane w **właściwości** okna.  
+ Wyjaśnia podstawę wyboru, która określa, jakie informacje są wyświetlane w oknie **Właściwości** .  
   
  [Lista obiektów okna właściwości](../../extensibility/internals/properties-window-object-list.md)  
- Opisuje przeznaczenie **właściwości** lista obiektów okna, opisujące, jak to zrobić, gdy inny obiekt z tej listy wyzwala wywołanie, środowisko jest informowany wybrano nowego obiektu.  
+ Opisuje przeznaczenie listy obiektów okna **Właściwości** , opisując, w jaki sposób, gdy inny obiekt z tej listy wyzwala wywołanie, środowisko jest poinformowane o tym, że został wybrany nowy obiekt.  
   
  [Przyciski okna właściwości](../../extensibility/internals/properties-window-buttons.md)  
- Zawiera wyjaśnienie przeznaczenia cztery domyślne przyciski wyświetlane na **właściwości** pasek narzędzi okna.  
+ Wyjaśnia przeznaczenie czterech domyślnych przycisków wyświetlanych na pasku narzędzi okna **Właściwości** .  
   
  [Siatka wyświetlania właściwości](../../extensibility/internals/properties-display-grid.md)  
- W tym artykule wyjaśniono, w którym nazw właściwości i pola wartości właściwości znajdują się w siatce.  
+ Wyjaśnia, gdzie nazwy właściwości i pola wartości właściwości znajdują się w siatce.  
   
- [Ogłoszenie wybór okna właściwości śledzenia](../../misc/announcing-property-window-selection-tracking.md)  
- W tym artykule opisano wybór śledzenie **właściwości** okna.  
+ [Ogłoszenie śledzenia wyboru okna właściwości](../../misc/announcing-property-window-selection-tracking.md)  
+ Opisuje śledzenie wyboru dla okna **Właściwości** .  
   
- [Ukrywanie właściwości, które mają właściwości podrzędnej](../../misc/hiding-properties-that-have-child-properties.md)  
- Wyjaśnia, jak Ukryj właściwości, które mają właściwości podrzędnej implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> interfejsu.  
+ [Ukrywanie właściwości, które mają właściwości podrzędne](../../misc/hiding-properties-that-have-child-properties.md)  
+ Wyjaśnia, jak ukryć właściwości, które mają właściwości podrzędne przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> interfejsu.  
   
- [Zapewnianie okno właściwości niestandardowe](../../misc/providing-a-custom-properties-window.md)  
- Szczegółowe kroki zapewniające przeglądarkę właściwości.  
+ [Udostępnianie okna właściwości niestandardowych](../../misc/providing-a-custom-properties-window.md)  
+ Szczegółowe instrukcje dotyczące udostępniania własnej przeglądarki właściwości.  
   
- [Wprowadzenie opisy pól z okna właściwości](../../misc/getting-field-descriptions-from-the-properties-window.md)  
- Wyjaśnia, gdzie można znaleźć obszaru Opis, który wyświetla informacje związane z pól wybranych właściwości.  
+ [Pobieranie opisów pól z okna właściwości](../../misc/getting-field-descriptions-from-the-properties-window.md)  
+ Wyjaśnia, gdzie znaleźć obszar opisu, który wyświetla informacje powiązane z wybranym polem właściwości.  
   
- [Aktualizowanie wartości właściwości w oknie dialogowym właściwości](../../misc/updating-property-values-in-the-properties-window.md)  
- Zawiera instrukcje krok po kroku, w których wyświetlane są dwa sposoby, aby zachować **właściwości** okna synchronizowane z zmiany wartości właściwości.  
+ [Aktualizowanie wartości właściwości w oknie właściwości](../../misc/updating-property-values-in-the-properties-window.md)  
+ Zawiera instrukcje krok po kroku, które pokazują dwa sposoby synchronizowania okna **Właściwości** ze zmianami wartości właściwości.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Typy projektów](../../extensibility/internals/project-types.md)  
- W tym artykule omówiono projektów jako bloki konstrukcyjne [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+ Omawia projekty jako bloki konstrukcyjne [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] środowiska IDE.  
   
  [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)  
- W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] platformy ciągłe testowanie i debugowanie aplikacji podczas ich tworzenia.  
+ Opisuje, w jaki sposób można używać [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] platformy do ciągłego testowania i debugowania aplikacji podczas ich kompilowania.  
   
  [Właściwości dokumentu HTML, okno właściwości](https://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
- Zawiera instrukcje dotyczące edytowania dokumentu HTML bezpośrednio w oknie właściwości i zawiera tabela przedstawiająca szczegółowo pola w dokumencie HTML w oknie dialogowym właściwości.  
+ Zawiera instrukcje dotyczące edytowania dokumentu HTML bezpośrednio z okno Właściwości i zawiera tabelę zawierającą szczegółowe informacje o polach w dokumencie HTML w okno Właściwości.  
   
  [IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
- W tym artykule opisano `IDispatch` interfejs, który pierwotnie opracowano do obsługi automatyzacji, zapewnienie mechanizmu przekazującego z późnym wiązaniem dostępu i pobieranie informacji na temat metod i właściwości obiektu.  
+ Opisuje `IDispatch` interfejs, który został pierwotnie zaprojektowany do obsługi automatyzacji, zapewniając mechanizm z późnym wiązaniem do uzyskiwania dostępu i pobierania informacji o metodach i właściwościach obiektu.  
   
- [NIB: Wprowadzenie do właściwości dynamicznych (Visual Studio)](https://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
- Zawiera omówienie właściwości dynamicznych, które pozwalają skonfigurować aplikację tak, aby wartości właściwości są przechowywane w pliku konfiguracji zewnętrznego zamiast skompilowany kod aplikacji.  
+ [NIB: wprowadzenie do właściwości dynamicznych (Visual Studio)](https://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
+ Zawiera omówienie właściwości dynamicznych, które umożliwiają skonfigurowanie aplikacji w taki sposób, aby wartości właściwości były przechowywane w zewnętrznym pliku konfiguracji, a nie w skompilowanym kodzie aplikacji.  
   
- [NIB: projekty, jako kontenery](https://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
- W tym artykule opisano rolę projektu jako kontener w rozwiązaniu do logicznie zarządzania, tworzenie i debugowanie elementy, które składają się na aplikację.  
+ [NIB: projekty jako kontenery](https://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
+ Opisuje rolę projektu jako kontener w rozwiązaniu, aby logicznie zarządzać, kompilować i debugować elementy wchodzące w skład aplikacji.  
   
- [NIB:Project Properties](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
- W tym artykule opisano, jak projekt zarządza ustawienia, które umożliwiają właściwości kontrolki, które są stosowane do całego projektu, a także właściwości, które są ograniczone do niektórych konfiguracje kompilacji projektu.  
+ [NIB: właściwości projektu](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
+ Opisuje, w jaki sposób projekt zarządza ustawieniami, które umożliwiają kontrolowanie właściwości, które mają zastosowanie do całego projektu, a także właściwości, które są ograniczone do niektórych konfiguracji kompilacji projektu.  
   
  [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)  
- Wyjaśnia, jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] efektywnie zarządza elementy, takie jak odwołania, połączenia danych, folderów i plików, które są wymagane przez nakładów pracy programowania za pomocą rozwiązań i projektów.  
+ Wyjaśnia, jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] efektywnie zarządza elementami, takimi jak odwołania, połączenia danych, foldery i pliki, które są wymagane przez nakład pracy deweloperskiej za pomocą rozwiązań i projektów.  
   
  [Rozszerzanie innych części programu Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Opis sposobu użycia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usługi, aby tworzyć elementy interfejsu użytkownika, które pasują reszty [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+ Wyjaśnia, jak używać [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usług do tworzenia elementów interfejsu użytkownika, które pasują do pozostałej części [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903836"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Tworzenie rozszerzenia z szablonem elementu edytora
@@ -36,7 +36,7 @@ Za pomocą szablonów elementów zawartych w zestawie SDK programu Visual Studio
 
     - *EditorClassifier1ClassificationDefinition.cs* zawiera `EditorClassifier1ClassificationDefinition` klasę.
 
-    - *EditorClassifier1Format.cs* zawiera `EditorClassifier1Format` klasę.
+    - *EditorClassifier1Format.cs* zawiera `EditorClassifier1Format`  klasę.
 
     - *EditorClassifier1Provider.cs* zawiera `EditorClassifier1Provider` klasę.
 

@@ -24,21 +24,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5eba30fce1a2333d04db8485498700853372d154
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691669"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Jak można używać okien debugera przy debugowaniu programu pierwszego planu?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Opis problemu  
- Próbuję debugować problem, malowaniu ekranu. Aby obserwować ten problem, muszę zachować program na pierwszym planie, co oznacza, że nie mam dostępu do debugowania systemu windows. Co mogę zrobić?  
+ Próbuję debugować problem z narysowaniem ekranu. Aby obsłużyć ten problem, muszę zachować mój program na pierwszym planie, co oznacza, że nie ma dostępu do okien debugowania. Co mogę zrobić?  
   
 ## <a name="solution"></a>Rozwiązanie  
- Jeśli masz drugiego komputera, można użyć, zdalne debugowanie. Podczas działania debugera na hoście z konfiguracją dwóch komputerach możesz obejrzeć malowaniu ekranu na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [ustawienie zapasowej zdalne debugowanie](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+ Jeśli używasz drugiego komputera, możesz użyć zdalnego debugowania. W przypadku konfiguracji z dwoma komputerami można obejrzeć malowanie ekranu na komputerze zdalnym podczas korzystania z debugera na hoście. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [Konfigurowanie zdalnego debugowania](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   
+ [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

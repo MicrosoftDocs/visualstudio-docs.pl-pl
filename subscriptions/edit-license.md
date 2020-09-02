@@ -8,10 +8,10 @@ ms.date: 07/30/2020
 ms.topic: how-to
 description: Dowiedz się, jak Administratorzy mogą edytować przypisania subskrypcji.
 ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453730"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edytuj przypisania subskrypcji programu Visual Studio
@@ -55,7 +55,7 @@ Jednocześnie można edytować wielu subskrybentów przy użyciu procesu edycji 
 
 5. Po przesłaniu pliku zobaczysz powiadomienie informujące o pomyślnym zapoznaniu się z nim. W tym momencie zmiany zostaną odzwierciedlone w informacjach o subskrybencie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

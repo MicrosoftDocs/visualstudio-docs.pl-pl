@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Dokumentacja firmy Microsoft
+title: EVALFLAGS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e6ee00402c13b2a79e4e6757a127211eda9c3c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149389"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa flagi, które kontrolują Obliczanie wyrażenia.  
+Określa flagi kontrolujące Obliczanie wyrażenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,35 +53,35 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>Elementy członkowskie  
  EVAL_RETURNVALUE  
- Określa, że wartość zwracana, jeśli istnieje, można obliczyć.  
+ Określa, że wartość zwracana, jeśli ma zostać obliczona.  
   
  EVAL_NOSIDEEFFECTS  
- Określa, że efekty uboczne niemożliwe.  
+ Określa, że efekty uboczne nie są dozwolone.  
   
  EVAL_ALLOWBPS  
- Określa zatrzymywanie punktów przerwania.  
+ Określa zatrzymanie dla punktów przerwania.  
   
  EVAL_ALLOWERRORREPORT  
- Określa raportów o błędach do hosta mają być dozwolone. Używane głównie do obliczenia wyrażenia w skrypcie w programie Internet Explorer.  
+ Określa, że raportowanie błędów ma być dozwolone dla hosta. Służy głównie do oceny wyrażeń w skrypcie w programie Internet Explorer.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- Funkcje wymusza, aby zostały uznane za adresów, zamiast wywoływania funkcji.  
+ Wymusza, aby funkcje były oceniane jako adresy zamiast wywoływania funkcji.  
   
  EVAL_NOFUNCEVAL  
- Funkcja zapobiega oceniane. Na przykład, rozważmy `int` tokenu w wyrażeniu `myExpression(int) + 10`. Ta funkcja może być poprawnie określona jako adres, ale nie jako wartość.  
+ Zapobiega ocenie funkcji. Rozważmy na przykład `int` token w wyrażeniu `myExpression(int) + 10` . Ta funkcja może być poprawnie oceniona jako adres, ale nie jako wartość.  
   
  EVAL_NOEVENTS  
- Flaga wskazująca, że zdarzenia, które wystąpiły podczas obliczania wyrażenia nie powinny być wysyłane, Menedżer debugowania sesji (SDM) lub środowiska IDE.  
+ Flaga wskazująca, że zdarzenia występujące podczas obliczania wyrażenia nie powinny być wysyłane do Menedżera debugowania sesji (SDM) ani do IDE.  
   
 ## <a name="remarks"></a>Uwagi  
- Te flagi są przekazywane jako argument do [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) i [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metody.  
+ Flagi te są przenoszone jako argumenty do metod [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) i [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .  
   
- Te flagi mogą być łączone z bitowe OR.  
+ Flagi te mogą być połączone z bitowym lub.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

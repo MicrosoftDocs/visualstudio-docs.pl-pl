@@ -1,5 +1,5 @@
 ---
-title: OnError — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: OnError — element (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,20 +20,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46f6907bea5954cffae92b41398717a8247350e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195659"
 ---
 # <a name="onerror-element-msbuild"></a>OnError — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` atrybut jest `false` dla zadania nie powiodło się.  
+Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli `ContinueOnError` atrybut dotyczy `false` zadania zakończonego niepowodzeniem.  
   
  \<Project>  
- \<Docelowy >  
- \<OnError — >  
+ \<Target>  
+ \<OnError>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,8 +49,8 @@ Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` at
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
-|`ExecuteTargets`|Atrybut wymagany.<br /><br /> Cele do wykonania, jeśli zadanie nie powiedzie się. Wiele elementów docelowych należy oddzielić średnikami. Wiele elementów docelowych są wykonywane w określonej kolejności.|  
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|`ExecuteTargets`|Atrybut wymagany.<br /><br /> Elementy docelowe do wykonania, jeśli zadanie zakończy się niepowodzeniem. Rozdziel wiele obiektów docelowych średnikami. Wiele obiektów docelowych jest wykonywanych w określonej kolejności.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -59,15 +59,15 @@ Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` at
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Docelowy](../msbuild/target-element-msbuild.md)|Element kontenera służy do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadania.|  
+|[Obiektów](../msbuild/target-element-msbuild.md)|Element kontenera [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadań.|  
   
 ## <a name="remarks"></a>Uwagi  
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] wykonuje `OnError` elementu, jeśli jest to jeden z `Target` elementu zadań kończy się niepowodzeniem z `ContinueOnError` ustawioną wartość atrybutu `ErrorAndStop` (lub `false`). Jeśli zadanie nie powiedzie się, obiektów docelowych określonych w `ExecuteTargets` atrybutu jest wykonywany. Jeśli istnieje więcej niż jedna `OnError` elementu w miejscu docelowym, `OnError` elementy są wykonywane sekwencyjnie, gdy zadanie nie powiodło się.  
+ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] wykonuje `OnError` element, jeśli jeden z `Target` zadań elementu kończy się niepowodzeniem z `ContinueOnError` atrybutem ustawionym na `ErrorAndStop` (lub `false` ). Gdy zadanie nie powiedzie się, obiekty docelowe określone w `ExecuteTargets` atrybucie są wykonywane. Jeśli obiekt docelowy zawiera więcej niż jeden `OnError` element, `OnError` elementy są wykonywane sekwencyjnie, gdy zadanie zakończy się niepowodzeniem.  
   
- Aby uzyskać informacje o `ContinueOnError` atrybutów, zobacz [Task — Element (MSBuild)](../msbuild/task-element-msbuild.md). Aby uzyskać informacje o środowiskach docelowych, zobacz [cele](../msbuild/msbuild-targets.md).  
+ Aby uzyskać informacje na temat `ContinueOnError` atrybutu, zobacz [element Task (MSBuild)](../msbuild/task-element-msbuild.md). Aby uzyskać informacje o celach, zobacz [targets](../msbuild/msbuild-targets.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod wykonuje `TaskOne` i `TaskTwo` zadania. Jeśli `TaskOne` zakończy się niepowodzeniem, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ocenia `OnError` elementu i wykonuje `OtherTarget` docelowej.  
+ Poniższy kod wykonuje `TaskOne` `TaskTwo` zadania i. W przypadku `TaskOne` niepowodzenia program [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] oblicza `OnError` element i wykonuje element `OtherTarget` docelowy.  
   
 ```  
 <Target Name="ThisTarget">  
@@ -81,4 +81,4 @@ Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` at
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Docelowe elementy](../msbuild/msbuild-targets.md)
+ [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

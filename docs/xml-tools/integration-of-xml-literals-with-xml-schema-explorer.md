@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 576f403d92ae1c80d9c7fba1757278ae5c5f25ac
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592597"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integracja literałów XML z Eksploratorem schematu XML
@@ -29,6 +29,6 @@ Spowoduje to otwarcie **Eksploratora schematu XML** obok pliku Visual Basic.
 
 ![Visual Basic literały XML; Eksplorator schematu XML](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: korzystanie z projektanta schematu XML z literałami XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

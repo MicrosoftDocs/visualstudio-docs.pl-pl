@@ -1,5 +1,5 @@
 ---
-title: Potwierdzenia C i C++ | Dokumentacja firmy Microsoft
+title: Potwierdzenia języka c-C + + | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,94 +30,94 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c26cc17d00881a72928806089a4c2880fdbce2f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702338"
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Instrukcji asercji określa warunek, który chcą mieć wartość true w punkcie, w programie. Jeśli ten warunek nie zostanie spełniony, potwierdzenie nie powiedzie się, wykonania programu zostanie przerwany, a [błędy potwierdzenia — okno dialogowe](../debugger/assertion-failed-dialog-box.md) pojawia się.  
+Instrukcja Assert określa warunek, który powinien być prawdziwy w punkcie w programie. Jeśli ten warunek nie ma wartości true, potwierdzenie nie powiedzie się, wykonywanie programu zostanie przerwane i zostanie wyświetlone okno [dialogowe potwierdzenie nie powiodło](../debugger/assertion-failed-dialog-box.md) się.  
 
- Visual C++ obsługuje instrukcji potwierdzania, które są oparte na następujące elementy:  
+ Visual C++ obsługuje instrukcje assertion, które są oparte na następujących konstrukcjach:  
 
 - Potwierdzenia MFC dla programów MFC.  
 
-- [ATLASSERT](https://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) dla programów, które używają ATL.  
+- [ATLASSERT](https://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) dla programów korzystających z biblioteki ATL.  
 
 - Potwierdzenia CRT dla programów, które używają biblioteki wykonawczej C.  
 
-- ANSI [assert — funkcja](https://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) innych programów C/C++.  
+- [Funkcja potwierdzenia](https://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) ANSI dla innych programów C/C++.  
 
-  Potwierdzenia umożliwia przechwytywania błędów logiki, sprawdź wyniki operacji i testowanie warunki błędów, które powinno zostać obsłużone.  
+  Można użyć potwierdzeń, aby przechwytywać błędy logiki, sprawdzać wyniki operacji i testować warunki błędów, które powinny być obsługiwane.  
 
-## <a name="BKMK_In_this_topic"></a> W tym temacie  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> W tym temacie  
  [Jak działają potwierdzenia](#BKMK_How_assertions_work)  
 
- [Potwierdzenia w kompilacjach debugowania, jak i wydania](#BKMK_Assertions_in_Debug_and_Release_builds)  
+ [Potwierdzenia w kompilacjach debugowania i wydania](#BKMK_Assertions_in_Debug_and_Release_builds)  
 
- [Efekty uboczne za pomocą potwierdzenia](#BKMK_Side_effects_of_using_assertions)  
+ [Efekty uboczne używania potwierdzeń](#BKMK_Side_effects_of_using_assertions)  
 
  [Potwierdzenia CRT](#BKMK_CRT_assertions)  
 
  [Potwierdzenia MFC](#BKMK_MFC_assertions)  
 
-- [MFC ASSERT_VALID i CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)  
+- [MFC ASSERT_VALID i CObject:: AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)  
 
-- [Ograniczenia AssertValid](#BKMK_Limitations_of_AssertValid)  
+- [Ograniczenia dotyczące AssertValid](#BKMK_Limitations_of_AssertValid)  
 
-  [Za pomocą potwierdzenia](#BKMK_Using_assertions)  
+  [Używanie potwierdzeń](#BKMK_Using_assertions)  
 
-- [Wychwytywanie błędów logicznych](#BKMK_Catching_logic_errors)  
+- [Przechwytywanie błędów logiki](#BKMK_Catching_logic_errors)  
 
 - [Sprawdzanie wyników](#BKMK_Checking_results_)  
 
-- [Błędy braku obsługi wyszukiwania](#BKMK_Testing_error_conditions_)  
+- [Znajdowanie nieobsłużonych błędów](#BKMK_Testing_error_conditions_)  
 
-## <a name="BKMK_How_assertions_work"></a> Jak działają potwierdzenia  
- Gdy debuger zatrzymuje ze względu na potwierdzenie bibliotekę uruchomieniową C i MFC, następnie Jeśli źródło jest niedostępne, debuger przechodzi do punktu w pliku źródłowym, w którym wystąpiło potwierdzenia. Zostanie wyświetlony komunikat potwierdzenia w obu [okno danych wyjściowych](../ide/reference/output-window.md) i **potwierdzenie nie powiodło się** okno dialogowe. Możesz skopiować komunikat potwierdzenia z **dane wyjściowe** okna okna tekstowego, jeśli chcesz go zapisać do użytku w przyszłości. **Dane wyjściowe** okna może zawierać inne komunikaty o błędach także. Sprawdź te komunikaty ostrożnie, ponieważ zapewniają wskazówki do przyczynę błędu asercji.  
+## <a name="how-assertions-work"></a><a name="BKMK_How_assertions_work"></a> Jak działają potwierdzenia  
+ Gdy debuger zatrzymuje działanie z powodu potwierdzenia biblioteki wykonawczej MFC lub C, a następnie Jeśli źródło jest dostępne, debuger przechodzi do punktu w pliku źródłowym, w którym wystąpiło potwierdzenie. Komunikat potwierdzenia pojawia się zarówno w [oknie danych wyjściowych](../ide/reference/output-window.md) , jak i w oknie dialogowym **potwierdzenie nie powiodło się** . Możesz skopiować komunikat potwierdzenia z okna **danych wyjściowych** do okna tekstowego, jeśli chcesz go zapisać do użytku w przyszłości. Okno **dane wyjściowe** może również zawierać inne komunikaty o błędach. Uważnie sprawdzaj te komunikaty, ponieważ zapewniają one wskazówki dotyczące przyczyny niepowodzenia potwierdzenia.  
 
- Użyj potwierdzenia do wykrywania błędów w czasie projektowania. Zgodnie z zasadą należy użyć jednego potwierdzenia dla każdego założeń. Na przykład jeśli zakładać, że argument nie jest NULL, należy użyć potwierdzenie do przetestowania tego założeń.  
+ Użyj potwierdzeń w celu wykrycia błędów podczas opracowywania. Jako regułę Użyj jednego potwierdzenia dla każdego założenia. Na przykład jeśli założono, że argument nie ma wartości NULL, Użyj potwierdzenia do przetestowania tego założeń.  
 
  [W tym temacie](#BKMK_In_this_topic)  
 
-## <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Potwierdzenia w kompilacjach debugowania, jak i wydania  
- Instrukcje asercji skompilować tylko wtedy, gdy `_DEBUG` jest zdefiniowana. W przeciwnym razie kompilator traktuje potwierdzenia jako instrukcji o wartości null. W związku z tym, instrukcji potwierdzania nałożyć bez lub wydajność koszt w programach ostatecznego wydania i pozwalają unikać `#ifdef` dyrektywy.  
+## <a name="assertions-in-debug-and-release-builds"></a><a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Potwierdzenia w kompilacjach debugowania i wydania  
+ Instrukcje Assertion kompilują się tylko wtedy, gdy `_DEBUG` jest zdefiniowana. W przeciwnym razie kompilator traktuje potwierdzenia jako instrukcje o wartości null. W związku z tym instrukcje Assertion nie nakładają kosztów ani kosztu wydajności w końcowym programie wydania i umożliwiają uniknięcie stosowania `#ifdef` dyrektyw.  
 
-## <a name="BKMK_Side_effects_of_using_assertions"></a> Efekty uboczne za pomocą potwierdzenia  
- Po dodaniu potwierdzenia w kodzie, upewnij się, że potwierdzenia nie mieć skutki uboczne. Na przykład, należy wziąć pod uwagę następujące asercja, która modyfikuje `nM` wartość:  
+## <a name="side-effects-of-using-assertions"></a><a name="BKMK_Side_effects_of_using_assertions"></a> Efekty uboczne używania potwierdzeń  
+ Po dodaniu potwierdzeń do kodu upewnij się, że potwierdzenia nie mają efektów ubocznych. Rozważmy na przykład następujące potwierdzenie, które modyfikuje `nM` wartość:  
 
 ```  
 ASSERT(nM++ > 0); // Don't do this!  
 
 ```  
 
- Ponieważ `ASSERT` w wydanej wersji programu, nie jest obliczane wyrażenie `nM` mają różne wartości w wersjach Debug i Release. Aby uniknąć tego problemu w MFC, można użyć [Sprawdź](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makr zamiast `ASSERT`.  `VERIFY` oblicza wyrażenie we wszystkich wersjach, ale nie sprawdza wynik w pełnej wersji.  
+ Ponieważ `ASSERT` wyrażenie nie jest oceniane w wydanej wersji programu, program `nM` będzie miał różne wartości w wersjach Debug i Release. Aby uniknąć tego problemu w MFC, można użyć [Weryfikuj](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makro zamiast `ASSERT` .  `VERIFY` oblicza wyrażenie we wszystkich wersjach, ale nie sprawdza wynik w wersji wydania.  
 
- Należy zachować ostrożność szczególnie przy użyciu wywołania funkcji w instrukcji potwierdzania, ponieważ obliczania funkcji może mieć nieoczekiwane działania niepożądane.  
+ Należy zwrócić szczególną uwagę na używanie wywołań funkcji w instrukcjach Assert, ponieważ obliczenie funkcji może mieć nieoczekiwane skutki uboczne.  
 
 ```  
 ASSERT ( myFnctn(0)==1 ) // unsafe if myFnctn has side effects  
 VERIFY ( myFnctn(0)==1 ) // safe  
 ```  
 
- `VERIFY` wywołania `myFnctn` w wersjach zarówno debugowania, jak i wersji, więc jest można użyć. Jednak przy użyciu `VERIFY` nakłada obciążenie wywołanie zbędnych funkcji w wersji.  
+ `VERIFY` wywołania `myFnctn` w wersji Debug i Release, aby można było ich używać. Jednak użycie `VERIFY` nakłada narzuty niepotrzebnego wywołania funkcji w wersji wydanej.  
 
  [W tym temacie](#BKMK_In_this_topic)  
 
-## <a name="BKMK_CRT_assertions"></a> Potwierdzenia CRT  
- CRTDBG. Określa plik nagłówkowy H [_ASSERT i _asserte — makra](https://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) sprawdzania potwierdzenia.  
+## <a name="crt-assertions"></a><a name="BKMK_CRT_assertions"></a> Potwierdzenia CRT  
+ CRTDBG. Plik nagłówkowy H definiuje [_ASSERT i _ASSERTE makra](https://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) do sprawdzania potwierdzenia.  
 
-|   Macro    |                                             Wynik                                              |
+|   Makro    |                                             Wynik                                              |
 |------------|-------------------------------------------------------------------------------------------------|
-| `_ASSERT`  | Jeśli określone wyrażenie zwróci wartość FALSE, pliku nazwa i numer wiersza `_ASSERT`. |
-| `_ASSERTE` |      Taki sam jak `_ASSERT`, oraz ciąg reprezentujący wyrażenie, które zostało potwierdzone.       |
+| `_ASSERT`  | Jeśli określone wyrażenie zwróci wartość FALSE, nazwa pliku i numer wiersza `_ASSERT` . |
+| `_ASSERTE` |      Analogicznie jak `_ASSERT` , i ciąg reprezentujący wyrażenie, które zostało potwierdzone.       |
 
- `_ASSERTE` jest bardziej wydajne, ponieważ raportuje potwierdzone wyrażenie, które są wartość FALSE. Może to być wystarczająco dużo, aby zidentyfikować problem bez odwołujące się do kodu źródłowego. Jednak wersji debugowania aplikacji będzie zawierać stałą typu string dla każdego wyrażenia potwierdzone przy użyciu `_ASSERTE`. Jeśli używasz wielu `_ASSERTE` makra, te wyrażenia ciągu potrwać znacznej ilości pamięci. Jeśli okaże się to być problem, użyj `_ASSERT` zapisanie w pamięci.  
+ `_ASSERTE` jest bardziej wydajny, ponieważ raportuje wyrażenie potwierdzone, które wystąpiło jako FAŁSZ. Może to być wystarczające do zidentyfikowania problemu bez odwoływania się do kodu źródłowego. Jednak wersja do debugowania aplikacji będzie zawierać stałą ciągu dla każdego wyrażenia potwierdzonego za pomocą `_ASSERTE` . Jeśli używasz wielu `_ASSERTE` makr, te wyrażenia ciągu zajmują znaczną ilość pamięci. Jeśli okaże się to problem, użyj, `_ASSERT` Aby zaoszczędzić pamięć.  
 
- Gdy `_DEBUG` jest zdefiniowany, `_ASSERTE` — makro jest zdefiniowany następująco:  
+ Gdy `_DEBUG` jest zdefiniowany, `_ASSERTE` makro jest zdefiniowane w następujący sposób:  
 
 ```  
 #define _ASSERTE(expr) \  
@@ -128,30 +128,30 @@ VERIFY ( myFnctn(0)==1 ) // safe
    } while (0)  
 ```  
 
- Jeśli potwierdzona wyrażenie ma wartość FALSE, [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) jest wywoływana, aby zgłosić błąd potwierdzenia (przy użyciu okno dialogowe komunikatu, domyślnie). Jeśli wybierzesz **ponów** w oknie dialogowym komunikatu `_CrtDbgReport` zwraca 1 i `_CrtDbgBreak` wywołuje debugera za pomocą `DebugBreak`.  
+ Jeśli potwierdzone wyrażenie daje w wyniku wartość FALSE, [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) jest wywoływana w celu zgłaszania błędu potwierdzenia (domyślnie przy użyciu okna dialogowego komunikatu). W przypadku wybrania opcji **Ponów** w oknie dialogowym komunikat `_CrtDbgReport` zwraca wartość 1 i `_CrtDbgBreak` wywołuje debuger za pomocą polecenia `DebugBreak` .  
 
-### <a name="checking-for-heap-corruption"></a>Sprawdzanie, czy uszkodzenie sterty  
- W poniższym przykładzie użyto [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) aby wykryć ewentualne uszkodzenia sterty:  
+### <a name="checking-for-heap-corruption"></a>Sprawdzanie uszkodzenia sterty  
+ Poniższy przykład używa [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) , aby sprawdzić uszkodzenie sterty:  
 
 ```  
 _ASSERTE(_CrtCheckMemory());  
 ```  
 
 ### <a name="checking-pointer-validity"></a>Sprawdzanie poprawności wskaźnika  
- W poniższym przykładzie użyto [_crtisvalidpointer —](https://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) Aby sprawdzić, czy zakres pamięci danego nadaje się do odczytu lub zapisu.  
+ Poniższy przykład używa [_CrtIsValidPointer](https://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) , aby sprawdzić, czy dany zakres pamięci jest prawidłowy do odczytu lub zapisu.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( address, size, TRUE );  
 ```  
 
- W poniższym przykładzie użyto [_crtisvalidheappointer —](https://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) Aby sprawdzić, wskaźnik wskazuje pamięci lokalnej sterty (sterty tworzony i zarządzany przez to wystąpienie biblioteki wykonawczej C — Biblioteka DLL może mieć własne wystąpienie biblioteki, i w związku z tym swój własny sterty, poza stosu aplikacji). Ta asercja nie przechwytuje tylko wartość null lub liczbach adresy, ale także wskaźniki do zmiennych statycznych, zmiennych stosu i inne nielokalnych pamięci.  
+ W poniższym przykładzie używa się [_CrtIsValidHeapPointer](https://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) , aby sprawdzić, czy wskaźnik wskazuje pamięć w stercie lokalnym (sterta utworzona i zarządzana przez to wystąpienie biblioteki wykonawczej C — Biblioteka DLL może mieć własne wystąpienie biblioteki, a w związku z tym jej własne sterty poza stertą aplikacji). To potwierdzenie przechwytuje nie tylko adresy null lub spoza zakresu, ale również wskaźniki do zmiennych statycznych, zmiennych stosu i innych pamięci nielokalnych.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( myData );  
 ```  
 
 ### <a name="checking-a-memory-block"></a>Sprawdzanie bloku pamięci  
- W poniższym przykładzie użyto [_crtismemoryblock —](https://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) Aby sprawdzić, czy blok pamięci znajduje się w lokalnej sterty i ma typ bloku prawidłowe.  
+ Poniższy przykład używa [_CrtIsMemoryBlock](https://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) , aby sprawdzić, czy blok pamięci jest w stercie lokalnym i ma prawidłowy typ bloku.  
 
 ```  
 _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber));  
@@ -159,32 +159,32 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 
  [W tym temacie](#BKMK_In_this_topic)  
 
-## <a name="BKMK_MFC_assertions"></a> Potwierdzenia MFC  
- Definiuje MFC [ASERCJA](https://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) — makro sprawdzania potwierdzenia. Umożliwia on również definiowanie `MFC ASSERT_VALID` i `CObject::AssertValid` metody do sprawdzania stanu wewnętrznego `CObject`-pochodnych obiektu.  
+## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> Potwierdzenia MFC  
+ MFC definiuje makro [potwierdzenia](https://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) do sprawdzenia potwierdzenia. Definiuje również `MFC ASSERT_VALID` `CObject::AssertValid` metody i do sprawdzania stanu wewnętrznego `CObject` obiektu pochodnego.  
 
- Jeśli argument MFC `ASSERT` — makro osiągnie wartość zero lub wartość FAŁSZ, makro zatrzymuje wykonywanie programów, a ostrzega o tym użytkownika; w przeciwnym razie wykonywanie jest kontynuowane.  
+ Jeśli argument makra MFC ma wartość `ASSERT` zero lub false, makro zatrzymuje wykonywanie programu i ostrzega użytkownika; w przeciwnym razie wykonywanie jest kontynuowane.  
 
- Jeśli potwierdzenie nie powiedzie się, okno dialogowe komunikatu zawiera nazwę pliku źródłowego i numer wiersza asercji. Jeśli w oknie dialogowym wybierz pozycję Ponów próbę polu wywołanie [afxdebugbreak —](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) powoduje wykonanie na przerwanie i przejście do debugera. W tym momencie możesz analizować stos wywołań i użyj innych obiektów debugera, aby określić, dlaczego potwierdzenie nie powiodło się. Po włączeniu [Just-in-time debugging](../debugger/just-in-time-debugging-in-visual-studio.md)i debuger nie została jeszcze uruchomiona, okno dialogowe można uruchomić debugera.  
+ Gdy potwierdzenie nie powiedzie się, zostanie wyświetlone okno dialogowe komunikatu z nazwą pliku źródłowego oraz numerem wiersza potwierdzenia. W przypadku wybrania opcji ponów w oknie dialogowym wywołanie [AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) powoduje przerwanie działania w debugerze. W tym momencie można sprawdzić stos wywołań i użyć innych obiektów debugera, aby określić, dlaczego potwierdzenie nie powiodło się. Jeśli włączono [debugowanie just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md), a debuger nie był jeszcze uruchomiony, okno dialogowe może uruchomić debuger.  
 
- Poniższy przykład pokazuje, jak używać `ASSERT` Aby sprawdzić wartość zwracaną przez funkcję:  
+ Poniższy przykład pokazuje, jak używać `ASSERT` do sprawdzania wartości zwracanej przez funkcję:  
 
 ```  
 int x = SomeFunc(y);  
 ASSERT(x >= 0);   //  Assertion fails if x is negative  
 ```  
 
- Możesz użyć ASSERT, za pomocą [IsKindOf](https://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) funkcję, aby zapewnić typ sprawdzania argumentów funkcji:  
+ Można użyć potwierdzeń z funkcją [IsKindOf](https://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) , aby zapewnić sprawdzanie typu argumentów funkcji:  
 
 ```  
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
 
- `ASSERT` — Makro nie tworzy kodu w pełnej wersji. Jeśli potrzebujesz można obliczyć wartości wyrażenia w pełnej wersji, użyj [Sprawdź](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makr zamiast ASSERT.  
+ `ASSERT`Makro nie daje kodu w wersji wydania. Jeśli chcesz oszacować wyrażenie w wersji wydania, użyj makra [verify](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) zamiast Assert.  
 
-### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID i CObject::AssertValid  
- [CObject::AssertValid](https://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) metoda zapewnia sprawdzania w trakcie wykonywania wewnętrznego stanu obiektu. Mimo że nie musisz przesłonić `AssertValid` po utworzeniu klasy pochodnej klasy z `CObject`, aby włączyć klasy bardziej niezawodna w ten sposób. `AssertValid` należy wykonać potwierdzenia na wszystkich zmiennych Członkowskich obiektu, aby sprawdzić, czy zawierają one prawidłowe wartości. Na przykład należy sprawdzić, wskaźnik zmienne składowe nie mają wartości NULL.  
+### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID i CObject:: AssertValid  
+ [CObject:: AssertValid](https://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) Metoda zapewnia sprawdzenie stanu wewnętrznego obiektu w czasie wykonywania. Chociaż nie jest wymagane przesłonięcie w `AssertValid` przypadku wyprowadzania klasy z `CObject` , można zwiększyć niezawodność klasy. `AssertValid` należy wykonać potwierdzenia wszystkich zmiennych składowych obiektu, aby sprawdzić, czy zawierają one prawidłowe wartości. Na przykład należy sprawdzić, czy zmienne elementu członkowskiego wskaźnika nie są puste.  
 
- Poniższy przykład pokazuje sposób deklarowania `AssertValid` funkcji:  
+ Poniższy przykład pokazuje, jak zadeklarować `AssertValid` funkcję:  
 
 ```  
 class CPerson : public CObject  
@@ -202,7 +202,7 @@ public:
 
 ```  
 
- Gdy zastąpisz `AssertValid`, wywołaj klasę bazową wersję `AssertValid` przed wykonaniem własne testy. Następnie za makro ASSERT Sprawdź elementy członkowskie unikatowe dla swojej otrzymanej klasy, jak pokazano poniżej:  
+ Podczas przesłonięcia `AssertValid` należy wywołać wersję klasy bazowej `AssertValid` przed wykonaniem własnych sprawdzeń. Następnie użyj makra ASSERT, aby sprawdzić składowe unikatowe dla klasy pochodnej, jak pokazano poniżej:  
 
 ```  
 #ifdef _DEBUG  
@@ -221,9 +221,9 @@ void CPerson::AssertValid() const
 
 ```  
 
- Dowolny zmiennych Członkowskich przechowywać obiekty, można użyć `ASSERT_VALID` makra w celu testowania ich ważność wewnętrznego (Jeśli zastąpisz ich klasy `AssertValid`).  
+ Jeśli dowolna ze zmiennych składowych przechowuje obiekty, można użyć `ASSERT_VALID` makra do przetestowania ich wewnętrznej ważności (jeśli ich klasy zastępują `AssertValid` ).  
 
- Rozważmy na przykład klasa `CMyData`, które sklepy [CObList](https://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) w jednym z jego zmiennych Członkowskich. `CObList` Zmiennej `m_DataList`, przechowuje kolekcję `CPerson` obiektów. Deklaracja skróconej `CMyData` wygląda podobnie do następującego:  
+ Rozważmy na przykład klasę `CMyData` , która przechowuje [CObList](https://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) w jednej z jej zmiennych członkowskich. `CObList`Zmienna, `m_DataList` , przechowuje kolekcję `CPerson` obiektów. Skrócona deklaracja wygląda następująco `CMyData` :  
 
 ```  
 class CMyData : public CObject  
@@ -242,7 +242,7 @@ class CMyData : public CObject
 
 ```  
 
- `AssertValid` Zastąpić w `CMyData` wygląda podobnie do następującego:  
+ `AssertValid`Przesłonięcie w następujący `CMyData` sposób:  
 
 ```  
 #ifdef _DEBUG  
@@ -258,45 +258,45 @@ void CMyData::AssertValid( ) const
 
 ```  
 
- `CMyData` używa `AssertValid` mechanizmu, aby sprawdzić poprawność obiekty przechowywane w jego element członkowski danych. Zastępowanie `AssertValid` z `CMyData` wywołuje `ASSERT_VALID` makro dla własnej m_pDataList zmiennej składowej.  
+ `CMyData` używa `AssertValid` mechanizmu do testowania ważności obiektów przechowywanych w jego składowej danych. Zastąpienie `AssertValid` `CMyData` wywołuje `ASSERT_VALID` makro dla własnej m_pDataList zmiennej składowej.  
 
- Testowanie poprawności nie zatrzymuje się na tym poziomie ponieważ klasy `CObList` zastępuje również `AssertValid`. To zastąpienie wykonuje dodatkowe ważności testowanie na wewnętrzny stan listy. W efekcie ważności Testuj je na `CMyData` obiektu prowadzi do ważności dodatkowe testy dla wewnętrznego stanów przechowywaną `CObList` obiekt listy.  
+ Testowanie ważności nie jest zatrzymywane na tym poziomie, ponieważ Klasa `CObList` również przesłania `AssertValid` . To zastąpienie wykonuje dodatkowe Testowanie poprawności na wewnętrznym stanie listy. W rezultacie test ważności na `CMyData` obiekcie prowadzi do dodatkowych testów ważności dla Stanów wewnętrznych przechowywanego `CObList` obiektu listy.  
 
- Za pomocą niektórych więcej pracy, można dodać testy poprawności dla `CPerson` również przechowywane na liście obiektów. Można wyprowadzić klasę `CPersonList` z `CObList` i zastąpić `AssertValid`. W przesłonięciu, możesz wywołać `CObject::AssertValid` i następnie iterację liście wywoływania `AssertValid` na każdym `CPerson` obiektu przechowywanego na liście. `CPerson` Zastępuje klasy wyświetlane na początku tego tematu już `AssertValid`.  
+ W przypadku większej ilości pracy można dodać testy ważności dla `CPerson` obiektów przechowywanych na liście również. Można utworzyć klasy `CPersonList` z `CObList` i przesłonić `AssertValid` . W przesłonięciu należy wywołać, `CObject::AssertValid` a następnie wykonać iterację na liście, wywołując `AssertValid` dla każdego `CPerson` obiektu przechowywanego na liście. `CPerson`Klasa wyświetlana na początku tego tematu już zastępuje `AssertValid` .  
 
- Jest to zaawansowany mechanizm podczas kompilacji do debugowania. Gdy tworzysz później w wersji, mechanizm jest wyłączony automatycznie.  
+ Jest to zaawansowany mechanizm podczas kompilowania na potrzeby debugowania. Po późniejszej kompilacji do wydania mechanizm zostanie wyłączony automatycznie.  
 
-### <a name="BKMK_Limitations_of_AssertValid"></a> Ograniczenia AssertValid  
- Wyzwolono asercję wskazuje, że obiekt jest zdecydowanie zły i wykonanie zostanie zatrzymane. Brak potwierdzenia informuje jednak tylko nie znaleziono problemów, że obiekt nie jest gwarantowana dobre.  
+### <a name="limitations-of-assertvalid"></a><a name="BKMK_Limitations_of_AssertValid"></a> Ograniczenia dotyczące AssertValid  
+ Wyzwolone potwierdzenie wskazuje, że obiekt jest nieskończonie zły i wykonywanie zostanie zatrzymane. Jednakże brak potwierdzenia wskazuje tylko, że nie znaleziono problemu, ale nie ma gwarancji, że obiekt jest dobry.  
 
  [W tym temacie](#BKMK_In_this_topic)  
 
-## <a name="BKMK_Using_assertions"></a> Za pomocą potwierdzenia  
+## <a name="using-assertions"></a><a name="BKMK_Using_assertions"></a> Używanie potwierdzeń  
 
-### <a name="BKMK_Catching_logic_errors"></a> Wychwytywanie błędów logicznych  
- Potwierdzenie można ustawić na warunek, który musi mieć wartość true, zgodnie z logiki programu. Potwierdzenie nie ma wpływu, chyba że wystąpi błąd logiczny.  
+### <a name="catching-logic-errors"></a><a name="BKMK_Catching_logic_errors"></a> Przechwytywanie błędów logiki  
+ Można ustawić potwierdzenie dla warunku, który musi być spełniony zgodnie z logiką programu. Potwierdzenie nie działa, chyba że wystąpi błąd logiki.  
 
- Załóżmy, że są symulowania cząsteczek gaz w kontenerze, a zmienna `numMols` reprezentuje sumę cząsteczek. Ten numer nie może być mniejsza od zera, dzięki czemu może zawierać instrukcji asercji MFC następująco:  
+ Załóżmy na przykład, że symulowane są cząsteczki gazu w kontenerze, a zmienna `numMols` reprezentuje łączną liczbę cząsteczek. Ta liczba nie może być mniejsza od zera, więc można uwzględnić w niej instrukcję potwierdzenia MFC:  
 
 ```  
 ASSERT(numMols >= 0);  
 
 ```  
 
- Lub można umieścić potwierdzenie CRT w następujący sposób:  
+ Może również zawierać potwierdzenie CRT podobne do tego:  
 
 ```  
 _ASSERT(numMols >= 0);  
 ```  
 
- Te instrukcje nie nic robić, jeśli program działa poprawnie. Jeśli powoduje błąd logiczny `numMols` do być mniejsza niż zero, jednak Potwierdzenie zatrzymuje wykonywanie programu i wyświetla [potwierdzenie nie powiodło się — okno dialogowe](../debugger/assertion-failed-dialog-box.md).  
+ Te instrukcje nie działają, jeśli program działa poprawnie. Jeśli błąd logiki jest `numMols` mniejszy od zera, to potwierdzenie zatrzymuje wykonywanie programu i wyświetla okno [dialogowe potwierdzenie nie powiodło się](../debugger/assertion-failed-dialog-box.md).  
 
  [W tym temacie](#BKMK_In_this_topic)  
 
-### <a name="BKMK_Checking_results_"></a> Sprawdzanie wyników  
- Potwierdzenia są przydatne do testowania operacje, których wyniki nie są oczywiste z szybkich kontroli.  
+### <a name="checking-results"></a><a name="BKMK_Checking_results_"></a> Sprawdzanie wyników  
+ Potwierdzenia są przydatne w przypadku operacji testowych, których wyniki nie są oczywiste od szybkiej inspekcji wizualnej.  
 
- Na przykład rozważmy następujący kod, który aktualizuje zmienną `iMols` na podstawie zawartości listy dwukierunkowej, wskazywana przez `mols`:  
+ Rozważmy na przykład poniższy kod, który aktualizuje zmienną `iMols` na podstawie zawartości listy połączonej wskazywanej przez `mols` :  
 
 ```  
 /* This code assumes that type has overloaded the != operator  
@@ -312,12 +312,12 @@ ASSERT(iMols<=numMols); // MFC version
 _ASSERT(iMols<=numMols); // CRT version  
 ```  
 
- Liczba cząsteczek zliczane przez `iMols` zawsze musi być mniejsza niż łączna liczba cząsteczki `numMols`. Kontroli wizualnej pętli nie pokazuje, że zawsze będzie to przypadek, więc asercja instrukcja jest używane po pętli do testu dla tego warunku.  
+ Liczba cząsteczek zliczonych przez `iMols` musi być zawsze mniejsza lub równa łącznej liczbie cząsteczek, `numMols` . Kontrola wzrokowa pętli nie pokazuje, że taka sytuacja będzie konieczna, więc instrukcja Assert jest używana po pętli do przetestowania dla tego warunku.  
 
  [W tym temacie](#BKMK_In_this_topic)  
 
-### <a name="BKMK_Testing_error_conditions_"></a> Błędy braku obsługi wyszukiwania  
- Potwierdzenia można użyć do testowania dla warunków błędu w punkcie, w kodzie, gdzie wszelkie błędy powinny został obsłużony. W poniższym przykładzie procedury graficznego zwraca kod błędu lub zero w celu osiągnięcia sukcesu.  
+### <a name="finding-unhandled-errors"></a><a name="BKMK_Testing_error_conditions_"></a> Znajdowanie nieobsłużonych błędów  
+ Za pomocą potwierdzeń można testować w przypadku wystąpienia błędów w punkcie w kodzie, w którym zostały obsłużone wszystkie błędy. W poniższym przykładzie procedura graficzna zwraca kod błędu lub zero dla sukcesu.  
 
 ```  
 myErr = myGraphRoutine(a, b);  
@@ -329,9 +329,9 @@ ASSERT(!myErr); -- MFC version
 _ASSERT(!myErr); -- CRT version  
 ```  
 
- Jeśli kod obsługi błędów działa prawidłowo, powinien zostać obsłużony błąd i `myErr` resetowania zero przed osiągnięciem potwierdzenia. Jeśli `myErr` ma inną wartość, potwierdzenie kończy się niepowodzeniem, zatrzymanie programu i [potwierdzenie nie powiodło się — okno dialogowe](../debugger/assertion-failed-dialog-box.md) pojawia się.  
+ Jeśli kod obsługi błędu działa prawidłowo, błąd powinien zostać obsłużony i `myErr` zresetowany do zera przed osiągnięciem potwierdzenia. Jeśli `myErr` ma inną wartość, potwierdzenie kończy się niepowodzeniem, program zostaje zatrzymany i zostanie wyświetlone okno [dialogowe potwierdzenie nie powiodło](../debugger/assertion-failed-dialog-box.md) się.  
 
- Instrukcje asercji nie są jednak zamiast kodu obsługi błędu. Instrukcję asercja, która może prowadzić do problemów w kodzie ostatecznej wersji można znaleźć w poniższym przykładzie:  
+ Instrukcje Assertion nie są jednak substytutem kodu obsługującego błędy. W poniższym przykładzie pokazano instrukcję assertion, która może prowadzić do problemów w końcowym kodzie zlecenia:  
 
 ```  
 myErr = myGraphRoutine(a, b);  
@@ -342,11 +342,11 @@ ASSERT(!myErr); // Don't do this!
 _ASSERT(!myErr); // Don't do this, either!  
 ```  
 
- Ten kod zależy od instrukcji asercji obsługę warunku błędu. W rezultacie, każdy kod błędu zwrócony przez `myGraphRoutine` zostanie obsłużony w kodzie ostatecznej wersji.  
+ Ten kod opiera się na instrukcji Assert, aby obsłużyć warunek błędu. W związku z tym kod błędu zwracany przez nie `myGraphRoutine` zostanie obsłużony w końcowym kodzie zlecenia.  
 
  [W tym temacie](#BKMK_In_this_topic)  
 
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)   
- [Asercje w kodzie zarządzanym](../debugger/assertions-in-managed-code.md)
+ [Potwierdzenia w zarządzanym kodzie](../debugger/assertions-in-managed-code.md)

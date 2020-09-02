@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72737940"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Edytuj i kontynuuj — okno dialogowe
@@ -29,6 +29,6 @@ ms.locfileid: "72737940"
 
  **Nigdy nie pokazuj tego okna dialogowego ponownie** Jeśli zaznaczysz to pole wyboru, polecenie **Edytuj i Kontynuuj** zastosuje zmiany kodu bez pytania o zgodę w przyszłości. To ostrzeżenie można ponownie włączyć, przechodząc do okna dialogowego **Opcje** , otwierając folder **debugowanie** , klikając stronę **Edytuj i Kontynuuj** , a następnie wybierając polecenie **wywoływane przez polecenia debugowania** i **pytaj mnie jako pierwsze**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Edytuj i Kontynuuj, debugowanie, Opcje — okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)

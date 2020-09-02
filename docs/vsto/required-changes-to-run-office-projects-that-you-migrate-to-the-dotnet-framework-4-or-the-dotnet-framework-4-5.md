@@ -1,5 +1,5 @@
 ---
-title: Zmiany są wymagane dla projektów pakietu Office migracji do platformy .NET Framework 4, 4.5
+title: Zmiany wymagane przez projekty pakietu Office migrowane do .NET Framework 4, 4,5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66836057"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Zmiany wymagane w celu uruchamiania projektów pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
-  Jeśli platforma docelowa projektu pakietu Office jest zmieniana na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy z wcześniejszej wersji programu .NET Framework, należy wykonać następujące zadania, aby upewnić się, że rozwiązanie można uruchomić na komputerze deweloperskim i na komputerach użytkowników końcowych:
+# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Wymagane zmiany w celu uruchomienia projektów pakietu Office migrowanych do .NET Framework 4 lub .NET Framework 4,5
+  Jeśli docelowa platforma projektu pakietu Office zostanie zmieniona na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub w późniejszym czasie ze starszej wersji .NET Framework, należy wykonać następujące zadania, aby upewnić się, że rozwiązanie można uruchomić na komputerze deweloperskim i na komputerach użytkowników końcowych:
 
-- Usuń <xref:System.Security.SecurityTransparentAttribute> z projektu w przypadku uaktualnienia z programu Visual Studio 2008.
+- Usuń <xref:System.Security.SecurityTransparentAttribute> z projektu, jeśli został uaktualniony z programu Visual Studio 2008.
 
-- Wykonaj **czysty** polecenia w programie Visual Studio, aby można było uruchomić ani debugować projektu na komputerze deweloperskim.
+- Wykonaj polecenie **Clean** w programie Visual Studio, aby móc uruchamiać lub debugować projekt na komputerze deweloperskim.
 
-- Aktualizacja programu .NET Framework wymagań wstępnych dla projektu.
+- Zaktualizuj .NET Framework wymaganie wstępne dla projektu.
 
-- Użytkownicy końcowi również należy ponownie zainstalować rozwiązania, jeśli została wcześniej wdrożona przy użyciu technologii ClickOnce, przed zmianą platformy docelowej.
+- Użytkownicy końcowi muszą również ponownie zainstalować rozwiązanie, jeśli wcześniej zostały wdrożone przy użyciu technologii ClickOnce przed zmianą platformy docelowej.
 
-  Aby uzyskać więcej informacji na temat każdego z tych zadań zobacz poniższe sekcje odpowiednie.
+  Aby uzyskać więcej informacji na temat każdego z tych zadań, zobacz odpowiednie sekcje poniżej.
 
-## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Usuń atrybut atrybutów SecurityTransparent projektach, które uaktualniania z programu Visual Studio 2008
- Jeśli uaktualniasz projekt Office z programu Visual Studio 2008 i docelowa platforma projektu później zmieni się na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, musisz usunąć <xref:System.Security.SecurityTransparentAttribute> z projektu. Program Visual Studio nie są automatycznie usuwane ten atrybut za Ciebie. Jeśli ten atrybut nie zostanie usunięty, otrzymasz komunikat o błędzie, podczas kompilowania projektu.
+## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Usuń atrybut SecurityTransparent z projektów uaktualnianych z programu Visual Studio 2008
+ W przypadku uaktualniania projektu pakietu Office z programu Visual Studio 2008 i docelowej platformy projektu następnie zmiany w programie [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym należy usunąć <xref:System.Security.SecurityTransparentAttribute> z projektu. Program Visual Studio nie usuwa automatycznie tego atrybutu. Jeśli ten atrybut nie zostanie usunięty, podczas kompilowania projektu zostanie wyświetlony komunikat o błędzie.
 
- Aby uzyskać więcej informacji o warunkach, w których program Visual Studio można zmienić platformę docelową uaktualnionego projektu do [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], zobacz [uaktualnianie i migracja rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md).
+ Aby uzyskać więcej informacji na temat warunków, w których program Visual Studio może zmienić platformę docelową uaktualnionego projektu na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , zobacz [uaktualnianie i migrowanie rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md).
 
-#### <a name="to-remove-the-securitytransparentattribute"></a>Aby usunąć atrybut SecurityTransparentAttribute
+#### <a name="to-remove-the-securitytransparentattribute"></a>Aby usunąć SecurityTransparentAttribute
 
-1. Otwarty projekt w programie Visual Studio, otwórz **Eksploratora rozwiązań**.
+1. Po otwarciu projektu w programie Visual Studio Otwórz **Eksplorator rozwiązań**.
 
-2. W obszarze **właściwości** węzeł (C#) lub **mój projekt** węzeł (Visual Basic), kliknij dwukrotnie plik kodu AssemblyInfo, aby otworzyć go w edytorze kodu.
+2. W węźle **Właściwości** (dla języka C#) lub węzła **mój projekt** (dla Visual Basic) kliknij dwukrotnie plik kodu AssemblyInfo, aby otworzyć go w edytorze kodu.
 
     > [!NOTE]
-    > W projektach języka Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** znajdujący się w **Eksploratora rozwiązań** aby zobaczyć plik kodu AssemblyInfo.
+    > W projektach Visual Basic należy kliknąć przycisk **Pokaż wszystkie pliki** w **Eksplorator rozwiązań** , aby wyświetlić plik kodu AssemblyInfo.
 
-3. Znajdź <xref:System.Security.SecurityTransparentAttribute> i usuń go z pliku lub komentarz dotyczący działanie.
+3. Znajdź <xref:System.Security.SecurityTransparentAttribute> i usuń go z pliku lub Dodaj do niego komentarz.
 
     ```vb
     <Assembly: SecurityTransparent()>
@@ -56,18 +56,18 @@ ms.locfileid: "66836057"
     [assembly: SecurityTransparent()]
     ```
 
-## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Wykonaj czystą polecenie, aby debugować lub uruchomić projekt na komputerze deweloperskim
- Jeśli został zbudowany projektu pakietu Office, przed zmianą platformy docelowej projektu do [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, należy wykonać **czysty** poleceń i skompiluj ponownie projekt po zmianie platformy docelowej. Jeśli nie wykonuj **czysty** polecenia zostanie wyświetlony <xref:System.Runtime.InteropServices.COMException> podczas debugowania lub uruchomienia projektu przebudowanymi pod inne środowisko.
+## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Wykonaj polecenie Clean, aby debugować lub uruchomić projekt na komputerze deweloperskim
+ Jeśli projekt pakietu Office został skompilowany przed zmianą platformy docelowej projektu na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, należy wykonać **czyste** polecenie, a następnie ponownie skompilować projekt po zmianie platformy docelowej. Jeśli nie wykonuj **czystego** polecenia, otrzymasz komunikat <xref:System.Runtime.InteropServices.COMException> podczas próby debugowania lub uruchomienia projektu przekierowania.
 
- Aby uzyskać więcej informacji na temat **czysty** polecenia, zobacz [rozwiązań kompilacji pakietu Office](../vsto/building-office-solutions.md).
+ Aby uzyskać więcej informacji na temat polecenia **Clean** , zobacz [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md).
 
-## <a name="update-the-prerequisites-for-deployment"></a>Wymagania wstępne dotyczące wdrażania aktualizacji
- Jeśli przekierowanie projektu pakietu Office w taki sposób, aby [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, należy również zaktualizować odpowiednie wstępnie wymaganego programu .NET Framework w **wymagania wstępne** okno dialogowe. W przeciwnym razie wdrażanie ClickOnce lub projekt InstallShield Limited Edition wyszukuje i instaluje poprzedniej wersji programu .NET Framework.
+## <a name="update-the-prerequisites-for-deployment"></a>Aktualizowanie wymagań wstępnych dotyczących wdrożenia
+ W przypadku przekierowania projektu pakietu Office do [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszego, należy również zaktualizować odpowiednie wymagania wstępne .NET Framework w oknie dialogowym **wstępnie wymagane składniki** . W przeciwnym razie wdrożenie ClickOnce lub program InstallShield Limited Edition sprawdza i instaluje poprzednią wersję .NET Framework.
 
- Aby uzyskać więcej informacji o aktualizowaniu wymagania wstępne dotyczące wdrażania na komputerach użytkowników końcowych, zobacz [jak: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+ Aby uzyskać więcej informacji na temat aktualizacji wymagań wstępnych dotyczących wdrażania na komputerach użytkowników końcowych, zobacz [How to: Install Preinstallations on End Computers to the user Solutions](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
-## <a name="reinstall-solutions-on-end-user-computers"></a>Ponownie zainstaluj rozwiązania na komputerach użytkowników końcowych
- Jeśli użycie technologii ClickOnce do wdrażania rozwiązania pakietu Office, który jest przeznaczony dla .NET Framework 3.5, a następnie zmień platformę docelową projektu, aby [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, użytkownicy końcowi należy odinstalować rozwiązania, a następnie zainstaluj ponownie rozwiązanie po ponownie ją opublikować. Jeśli publikujesz przekierowane rozwiązanie, a rozwiązanie jest aktualizowana na komputerach użytkowników końcowych, użytkownicy końcowi będą otrzymywać <xref:System.Runtime.InteropServices.COMException> uruchamiania do zaktualizowane rozwiązanie.
+## <a name="reinstall-solutions-on-end-user-computers"></a>Ponowne instalowanie rozwiązań na komputerach użytkowników końcowych
+ Jeśli używasz technologii ClickOnce do wdrożenia rozwiązania pakietu Office przeznaczonego dla .NET Framework 3,5, a następnie przekierujesz projekt do programu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszego, użytkownicy końcowi muszą odinstalować rozwiązanie, a następnie ponownie zainstalować rozwiązanie po ponownym opublikowaniu. Jeśli ponownie opublikowano rozwiązanie przekierowania, a rozwiązanie zostanie zaktualizowane na komputerach użytkowników końcowych, użytkownicy końcowi otrzymają komunikat, <xref:System.Runtime.InteropServices.COMException> gdy uruchomili zaktualizowane rozwiązanie.
 
-## <a name="see-also"></a>Zobacz także
-- [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+## <a name="see-also"></a>Zobacz też
+- [Migrowanie rozwiązań pakietu Office do .NET Framework 4 lub nowszego](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

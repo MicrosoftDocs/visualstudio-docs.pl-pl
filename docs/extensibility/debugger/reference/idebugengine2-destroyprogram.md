@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::DestroyProgram | Dokumenty firmy Microsoft
+title: IDebugEngine2::D estroyProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce139dd22361d9914693cbe8ad723656ab7d4f26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731112"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-Informuje aparat debugowania (DE), że określony program został nietypowo zakończony i że DE należy oczyścić wszystkie odwołania do programu i wysłać zdarzenie zniszczenia programu.
+Informuje aparat debugowania (DE), że określony program został nietypowym zakończony i że DE powinien czyścić wszystkie odwołania do programu i wysyłać zdarzenie zniszczenia programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ int DestroyProgram( 
 
 ## <a name="parameters"></a>Parametry
 `pProgram`\
-[w] Obiekt [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) reprezentujący program, który został nietypowo zakończony.
+podczas Obiekt [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , który reprezentuje program, który został nietypowym zakończony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Po wywołaniu tej metody DE następnie wysyła [zdarzenie IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) z powrotem do menedżera debugowania sesji (SDM).
+ Po wywołaniu tej metody, a następnie wysyła zdarzenie [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) z powrotem do Menedżera debugowania sesji (SDM).
 
- Ta metoda nie jest `E_NOTIMPL`zaimplementowana (zwraca), jeśli DE działa w tym samym procesie co program jest debugowany. Ta metoda jest implementowana tylko wtedy, gdy DE działa w tym samym procesie co SDM.
+ Ta metoda nie jest zaimplementowana (zwraca `E_NOTIMPL` ), jeśli nie działa w tym samym procesie co debugowany program. Ta metoda jest implementowana tylko wtedy, gdy nie działa w tym samym procesie co model SDM.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

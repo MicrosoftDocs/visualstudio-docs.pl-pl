@@ -1,5 +1,5 @@
 ---
-title: '&lt;Zadaniach PackageFiles&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;PackageFiles — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747511"
 ---
-# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Zadaniach PackageFiles&gt; — element (program inicjujący)
-`PackageFiles` Element zawiera `PackageFile` elementów, które definiują pakietów instalacyjnych, wykonywane na `Command` elementu.
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles — &gt; element (program inicjujący)
+`PackageFiles`Element zawiera `PackageFile` elementy, które definiują pakiety instalacyjne wykonywane w wyniku `Command` elementu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,28 +41,28 @@ ms.locfileid: "66747511"
 </PackageFiles>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `PackageFiles` Element ma atrybut.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `PackageFiles`Element ma następujący atrybut.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|Opcjonalna. Jeśli ustawiono `false`, Instalator pobierze tylko pliki, do których odwołuje się z `Command` elementu. Jeśli ustawiono `true`, wszystkie pliki zostaną pobrane.<br /><br /> Jeśli ustawiono `IfNotHomesite`, Instalator będzie działa tak samo tak, jakby `False` Jeśli `ComponentsLocation` jest ustawiona na `HomeSite`, a w przeciwnym razie zostanie działa tak samo tak, jakby `True`. To ustawienie może być przydatne zezwolenie na pakiety, które znajdują się programów inicjujących można wykonać swoje własne zachowanie w przypadku scenariusza HomeSite.<br /><br /> Wartość domyślna to `true`.|
+|`CopyAllPackageFiles`|Opcjonalny. Jeśli jest ustawiona na `false` , instalator pobierze tylko pliki, do których odwołuje się `Command` element. Jeśli jest ustawiona na `true` , zostaną pobrane wszystkie pliki.<br /><br /> Jeśli jest ustawiona na `IfNotHomesite` , Instalator będzie zachowywać się tak samo, jak Jeśli `False` `ComponentsLocation` jest ustawiona na `HomeSite` , a w przeciwnym razie będzie działać tak samo jak w przypadku `True` . To ustawienie może być przydatne, aby zezwalać na pakiety, które same uruchamiają program inicjujący, aby wykonywały własne zachowanie w scenariuszu HomeSite.<br /><br /> Wartość domyślna to `true`.|
 
 ## <a name="packagefile"></a>PackageFile
- `PackageFile` Element jest elementem podrzędnym `PackageFiles` elementu. A `PackageFiles` element musi mieć co najmniej jeden `PackageFile` elementu.
+ `PackageFile`Element jest elementem podrzędnym `PackageFiles` elementu. `PackageFiles`Element musi zawierać co najmniej jeden `PackageFile` element.
 
  `PackageFile` ma następujące atrybuty.
 
 | Atrybut | Opis |
 |---------------| - |
-| `Name` | Wymagana. Nazwa pliku pakietu. Jest to nazwa która `Command` elementu, będzie stanowiła odwołanie podczas definiuje warunki, w których pakiet instaluje. Ta wartość jest również używana jako klucz do `Strings` tabelę, aby pobrać zlokalizowana nazwa, która narzędzia takie jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używany do opisania pakietu. |
-| `HomeSite` | Opcjonalna. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest dołączony do Instalatora. |
-| `CopyOnBuild` | Opcjonalna. Określa, czy program inicjujący należy skopiować plik pakietu na dysku w czasie kompilacji. Wartość domyślna to true. |
-| `PublicKey` | Zaszyfrowany klucz publiczny podpisu certyfikatu pakietu. Jeśli wymagane `HomeSite` jest używany; w przeciwnym razie opcjonalne. |
-| `Hash` | Opcjonalna. Skrót SHA1 pliku pakietu. Służy to sprawdzić integralność pliku w czasie instalacji. Jeśli nie można obliczyć skrótu identyczne z pliku pakietu, pakietu nie zostanie zainstalowana. |
+| `Name` | Wymagany. Nazwa pliku pakietu. Jest to nazwa, do której `Command` element będzie się odwoływać podczas definiowania warunków, w których pakiet jest instalowany. Ta wartość jest również używana jako klucz w `Strings` tabeli w celu pobrania zlokalizowanej nazwy, która [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używana przez narzędzia do opisywania pakietu. |
+| `HomeSite` | Opcjonalny. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest zawarta w instalatorze. |
+| `CopyOnBuild` | Opcjonalny. Określa, czy program inicjujący powinien skopiować plik pakietu na dysk w czasie kompilacji. Wartość domyślna to true. |
+| `PublicKey` | Zaszyfrowany klucz publiczny podpisującego certyfikat pakietu. Wymagane `HomeSite` , jeśli jest używany; w przeciwnym razie opcjonalny. |
+| `Hash` | Opcjonalny. Skrót SHA1 pliku pakietu. Służy do weryfikowania integralności pliku w czasie instalacji. Jeśli tego samego skrótu nie można obliczyć z pliku pakietu, pakiet nie zostanie zainstalowany. |
 
 ## <a name="example"></a>Przykład
- Poniższy kod definiuje pakiety dla pakietu redystrybucyjnego .NET Framework i jego zależności, takich jak Instalator Windows.
+ Poniższy przykład kodu definiuje pakiety dla .NET Framework pakiet redystrybucyjny i jego zależności, takie jak Instalator Windows.
 
 ```xml
 <PackageFiles>
@@ -73,7 +73,7 @@ ms.locfileid: "66747511"
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [\<Produktu > element](../deployment/product-element-bootstrapper.md)
-- [\<Pakiet > element](../deployment/package-element-bootstrapper.md)
-- [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [\<Product> postaci](../deployment/product-element-bootstrapper.md)
+- [\<Package> postaci](../deployment/package-element-bootstrapper.md)
+- [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Wskazówki dotyczące umieszczania poleceń | Dokumentacja firmy Microsoft
+title: Wskazówki dotyczące umieszczania poleceń | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,50 +13,50 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d88a477403c98ff11c5f7303b55f5eb713b668c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195102"
 ---
 # <a name="command-placement-guidelines"></a>Wskazówki dotyczące umieszczania poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najlepsze rozwiązania dotyczące pozycjonowania poleceń w programie Visual Studio zintegrowane środowisko programistyczne (IDE) różnią się w zależności od rozmiaru zestawu poleceń. Polecenia są zdefiniowane i pozycjonować względem informacji w .vsct — pliki.  
+Najlepsze praktyki dotyczące pozycjonowania poleceń w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio różnią się w zależności od rozmiaru zestawu poleceń. Polecenia są definiowane i pozycjonowane zgodnie z informacjami w plikach. vsct.  
   
-## <a name="best-practices-for-all-command-sets"></a>Najlepsze rozwiązania dotyczące wszystkie zestawy poleceń  
- Dla każdego zestawu poleceń należy przestrzegać następujących wytycznych:  
+## <a name="best-practices-for-all-command-sets"></a>Najlepsze rozwiązania dotyczące wszystkich zestawów poleceń  
+ Dla każdego zestawu poleceń postępuj zgodnie z następującymi wskazówkami:  
   
-- Przygotuj wcześniej wykres strukturę polecenia. Zidentyfikuj poleceń, pola kombi, grup poleceń i menu skrótów, które będą używane w więcej niż jednej lokalizacji.  
+- Przygotuj wykres z zaawansowaną strukturą poleceń. Zidentyfikuj polecenia, pola kombi, grupy poleceń i menu skrótów, które będą używane w więcej niż jednej lokalizacji.  
   
-- Polecenia, które pojawiają się w tej samej grupy, musi być powiązany.  
+- Polecenia, które pojawiają się w tej samej grupie, powinny być powiązane.  
   
-- Grupy zawierające tylko jednego polecenia są akceptowane.  
+- Grupy zawierające tylko jedno polecenie są dopuszczalne.  
   
-- Pakiety nie należy dodawać wiele poleceń do istniejącego menu programu Visual Studio. Zamiast tego należy ich utworzyć menu i podmenu do obsługi nowych poleceń.  
+- Pakiety nie powinny dodawać wielu poleceń do istniejących menu programu Visual Studio. Zamiast tego należy utworzyć menu lub podmenu, aby hostować nowe polecenia.  
   
-- Po umieszczeniu polecenia w istniejącego menu, a nazwa polecenia tak, aby jej przeznaczenie było jasne, i nie należy mylić przy użyciu istniejących poleceń.  
+- Gdy umieszczasz polecenie w istniejącym menu, nazwij to polecenie, tak aby jego przeznaczenie było jasne i nie będzie mylić z istniejącymi poleceniami.  
   
-## <a name="best-practices-for-small-command-sets"></a>Najlepsze rozwiązania dotyczące polecenia małych zestawów  
- Jeśli opracowujesz pakietu VSPackage, który ma kilka poleceń, należy również przestrzegać następujących wytycznych:  
+## <a name="best-practices-for-small-command-sets"></a>Najlepsze rozwiązania dotyczące małych zestawów poleceń  
+ Jeśli opracowujesz pakietu VSPackage, który zawiera zaledwie kilka poleceń, postępuj zgodnie z następującymi wskazówkami:  
   
-- Jeśli to możliwe, użyj [elementu nadrzędnego](../../extensibility/parent-element.md) polecenia, pola kombi, grupy lub menu podrzędne umieść go w odpowiedniej grupie.  
+- Gdy to możliwe, użyj [elementu nadrzędnego](../../extensibility/parent-element.md) polecenia, pola kombi, grupy lub menu podrzędnego, aby umieścić je w odpowiedniej grupie.  
   
-- Przypisz te grupy do menu wyświetlane przez pakietu VSPackage.  
+- Przypisz te grupy do menu wyświetlanych przez pakietu VSPackage.  
   
-- Element nadrzędny elementu menu podrzędne lub polecenia musi być [Element grupy](../../extensibility/group-element.md). Przypisać do grup poleceń i menu podrzędne, a następnie przypisać je do menu nadrzędnego.  
+- Elementem nadrzędnym menu podrzędnego lub polecenia musi być [element grupy](../../extensibility/group-element.md). Przypisz polecenia i menu podrzędne do grup, a następnie przypisz grupy do menu nadrzędnego.  
   
-- Polecenia można umieścić w dodatkowych grup, dodając [CommandPlacements, Element](../../extensibility/commandplacements-element.md) sekcji po definicji polecenia, a następnie dodając do `CommandPlacements Element` [CommandPlacement, Element](../../extensibility/commandplacement-element.md) dla każdego dodatkowe grupy.  
+- Możesz umieścić polecenie w dodatkowych grupach, dodając sekcję [elementu CommandPlacements](../../extensibility/commandplacements-element.md) po definicji polecenia, a następnie dodając do `CommandPlacements Element` [elementu CommandPlacement](../../extensibility/commandplacement-element.md) dla każdej dodatkowej grupy.  
   
-## <a name="best-practices-for-large-command-sets"></a>Najlepsze rozwiązania dotyczące polecenia dużych zestawów  
- Jeśli Twojego pakietu VSPackage będzie miał wiele poleceń, które pojawią się w wielu sytuacjach, należy również przestrzegać następujących wytycznych:  
+## <a name="best-practices-for-large-command-sets"></a>Najlepsze rozwiązania dotyczące dużych zestawów poleceń  
+ Jeśli pakietu VSPackage będzie zawierać wiele poleceń, które pojawią się w wielu kontekstach, należy również przestrzegać następujących wytycznych:  
   
-- Upewnij się, menu, grupy i polecenia własnym elementy nadrzędne. Oznacza to, nie należy przypisywać `Parent Element` w definicji elementu.  
+- Utwórz własne menu, grupy i polecenia. Oznacza to, że nie należy przypisywać `Parent Element` w definicji elementu.  
   
-- Użyj `CommandPlacement Element` wpisów w `CommandPlacements Element` sekcji, aby umieścić w swojej grupy nadrzędnej menu i menu, grupy i polecenia.  
+- Użyj `CommandPlacement Element` wpisów w `CommandPlacements Element` sekcji, aby umieścić menu, grupy i polecenia w ich nadrzędnych menu i grupach.  
   
-- W `CommandPlacements` sekcji wpisów, służące do wypełniania danego menu lub grupa powinna być przylegające do siebie nawzajem. To pomaga zwiększyć czytelność i sprawia, że `Priority` łatwiej określić klasyfikacji.  
+- W `CommandPlacements` sekcji wpisy, które wypełniają dany menu lub grupę, powinny należeć do siebie nawzajem. To ułatwia czytelność i ułatwia `Priority` określenie klasyfikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

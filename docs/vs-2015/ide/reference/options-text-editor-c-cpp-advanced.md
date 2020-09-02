@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, C-C++, zaawansowane | Microsoft Docs
+title: Opcje, Edytor tekstu, C-C + +, zaawansowane | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 236135cd4b4f813471ece7a0eeb1b221c7242df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662367"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opcje, edytor tekstu, C/C++, zaawansowane
@@ -27,7 +27,7 @@ ms.locfileid: "72662367"
 
 Zmieniając te opcje, można zmienić zachowanie związane z technologią IntelliSense i bazą danych przeglądania podczas programowania w języku C lub C++.
 
- Aby uzyskać dostęp do tej strony, w oknie dialogowym **Opcje** w okienku po lewej stronie rozwiń pozycję **Edytor tekstu**, rozwiń węzeł **C++C/** , a następnie wybierz pozycję **Zaawansowane**.
+ Aby uzyskać dostęp do tej strony, w oknie dialogowym **Opcje** w okienku po lewej stronie rozwiń pozycję **Edytor tekstu**, rozwiń węzeł **C/C++**, a następnie wybierz pozycję **Zaawansowane**.
 
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -43,7 +43,7 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
 
  **Wyłącz niejawne pliki** Baza danych przeglądania kodu nie zbiera danych dla plików, które nie są określone w projekcie. Projekt zawiera pliki źródłowe i pliki nagłówkowe, które są jawnie określone. Pliki niejawne są zawarte w jawnych plikach (na przykład afxwin. h, Windows. h i atlbase. h). Zwykle system znajduje te pliki, a także indeksuje je pod kątem różnych funkcji przeglądania (w tym do przejścia do). W przypadku wybrania tej opcji te pliki nie są indeksowane, a niektóre funkcje nie są dla nich dostępne. W przypadku wybrania tej opcji "Wyłącz niejawne czyszczenie" i "Wyłącz zależności zewnętrzne" również są wybierane niejawnie.
 
- **Wyłącz niejawne czyszczenie** Baza danych przeglądania kodu nie czyści niejawnych plików, które nie są już przywoływane. Ta opcja uniemożliwia usuwanie niejawnych plików z bazy danych, gdy nie są one już używane. Na przykład, jeśli dodasz dyrektywę `#include`, która odwołuje się do jednego z plików źródłowych, interfejs MAPI. h zostanie znaleziony i zindeksowany. Jeśli następnie usuniesz #include i plik nie jest przywoływany w innym miejscu, informacje na jego temat zostaną ostatecznie usunięte, chyba że wybierzesz tę opcję. (Zobacz opcja **interwału ponownego skanowania** ). Ta opcja jest ignorowana, gdy użytkownik jawnie skanuje ponownie rozwiązanie.
+ **Wyłącz niejawne czyszczenie** Baza danych przeglądania kodu nie czyści niejawnych plików, które nie są już przywoływane. Ta opcja uniemożliwia usuwanie niejawnych plików z bazy danych, gdy nie są one już używane. Na przykład, jeśli dodasz `#include` dyrektywę, która odwołuje się do interfejsu MAPI. h do jednego z plików źródłowych, zostanie znaleziony i zindeksowany MAPI. h. Jeśli następnie usuniesz #include i plik nie jest przywoływany w innym miejscu, informacje na jego temat zostaną ostatecznie usunięte, chyba że wybierzesz tę opcję. (Zobacz opcja **interwału ponownego skanowania** ). Ta opcja jest ignorowana, gdy użytkownik jawnie skanuje ponownie rozwiązanie.
 
  **Wyłącz foldery zależności zewnętrznych** Folder zależności zewnętrznych dla każdego projektu nie został utworzony ani zaktualizowany. W **Eksplorator rozwiązań**każdy projekt zawiera folder zależności zewnętrznych, który zawiera wszystkie niejawne pliki dla tego projektu. Jeśli wybierzesz tę opcję, ten folder nie zostanie wyświetlony.
 
@@ -88,7 +88,7 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
 ## <a name="intellisense"></a>IntelliSense
  **Autoszybkie informacje** Włącza etykietki narzędzi sekcji szybkich informacji po przesunięciu wskaźnika nad tekstem.
 
- **Wyłącz funkcję IntelliSense** Wyłącza wszystkie funkcje IntelliSense. IDE nie tworzy procesów VCPkgSrv. exe do obsługi żądań IntelliSense, a żadne funkcje IntelliSense nie będą działały (sekcji szybkich informacji, Lista członków, funkcja autouzupełniania, Pomoc dotycząca parametrów). Kolorowanie semantyczne i wyróżnianie odwołań również jest wyłączone. Ta opcja nie powoduje wyłączenia funkcji przeglądania, które są zależne wyłącznie od bazy danych (w tym pasek nawigacyjny, ClassView i okno właściwości).
+ **Wyłącz funkcję IntelliSense** Wyłącza wszystkie funkcje IntelliSense. IDE nie tworzy procesów VCPkgSrv.exe do obsługi żądań IntelliSense, a żadne funkcje IntelliSense nie będą działały (sekcji szybkich informacji, lista elementów członkowskich, funkcja autouzupełniania, Pomoc dotycząca parametrów). Kolorowanie semantyczne i wyróżnianie odwołań również jest wyłączone. Ta opcja nie powoduje wyłączenia funkcji przeglądania, które są zależne wyłącznie od bazy danych (w tym pasek nawigacyjny, ClassView i okno właściwości).
 
  **Wyłącz Autoaktualizowanie** Aktualizacja IntelliSense jest opóźniona, dopóki nie zostanie wykonane rzeczywiste żądanie dotyczące technologii IntelliSense. To opóźnienie może skutkować dłuższym czasem wykonywania pierwszej operacji IntelliSense na pliku, ale może być przydatne, aby ustawić tę opcję na maszynach o bardzo niskiej lub ograniczonej ilości zasobów. W przypadku wybrania tej opcji można również niejawnie wybrać opcje "Wyłącz raportowanie błędów" i "Wyłącz zawijania".
 
@@ -96,17 +96,17 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
 
  **Wyłącz** zygzaki Wyłącza opcję zygzaków błędów funkcji IntelliSense. Czerwony "zygzaks" nie jest wyświetlany w oknie edytora, ale błąd nadal pojawia się w oknie Lista błędów.
 
- **Wyłącz funkcję Autowypełniania #include** Wyłącza Autouzupełnianie instrukcji `#include`.
+ **Wyłącz funkcję Autowypełniania #include** Wyłącza Autouzupełnianie `#include` instrukcji.
 
- **Użyj ukośnika do przodu w #include Autouzupełnianie** Wyzwala Autouzupełnianie instrukcji `#include`, gdy zostanie użyta wartość "/". Domyślny ogranicznik jest ukośnikiem odwrotnym "\". Kompilator może zaakceptować jedną z tych opcji, aby określić, do czego służy kod podstawowy.
+ **Użyj ukośnika do przodu w #include Autouzupełnianie** Wyzwala Autouzupełnianie `#include` instrukcji, gdy jest używana wartość "/". Domyślny ogranicznik jest ukośnikiem odwrotnym "\". Kompilator może zaakceptować jedną z tych opcji, aby określić, do czego służy kod podstawowy.
 
- **Maksymalna liczba buforowanych jednostek translacji** Maksymalna liczba jednostek translacji, które będą przechowywane w dowolnym momencie w przypadku żądań IntelliSense. Należy określić wartość z przedziału od 2 do 15. Ta liczba bezpośrednio odnosi się do maksymalnej liczby procesów VCPkgSrv. exe, które będą uruchamiane (dla danego wystąpienia programu Visual Studio). Wartość domyślna to 2, ale jeśli masz dostępną pamięć, możesz zwiększyć tę wartość i zapewnić nieco lepszą wydajność funkcji IntelliSense.
+ **Maksymalna liczba buforowanych jednostek translacji** Maksymalna liczba jednostek translacji, które będą przechowywane w dowolnym momencie w przypadku żądań IntelliSense. Należy określić wartość z przedziału od 2 do 15. Ta liczba bezpośrednio odnosi się do maksymalnej liczby procesów VCPkgSrv.exe, które będą uruchamiane (dla danego wystąpienia programu Visual Studio). Wartość domyślna to 2, ale jeśli masz dostępną pamięć, możesz zwiększyć tę wartość i zapewnić nieco lepszą wydajność funkcji IntelliSense.
 
  Aby uzyskać więcej informacji na temat jednostek translacji, zobacz [etapy tłumaczenia](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).
 
  **Wyłącz agresywną listę elementów członkowskich** Lista elementów członkowskich nie jest wyświetlana podczas wpisywania nazwy typu lub zmiennej. Lista zostanie wyświetlona tylko po wpisaniu jednego z znaków zatwierdzenia, jak zdefiniowano w opcji **zatwierdzanie znaków listy składowych** .
 
- **Wyłącz słowa kluczowe list elementów członkowskich** Słowa kluczowe języka, takie jak `void`, `class` `switch` nie są wyświetlane na listach elementów członkowskich.
+ **Wyłącz słowa kluczowe list elementów członkowskich** Słowa kluczowe języka, takie jak `void` , `class` , `switch` nie są wyświetlane na listach elementów członkowskich.
 
  **Wyłącz fragmenty kodu list składowych** Fragmenty kodu nie są wyświetlane na listach elementów członkowskich.
 
@@ -118,7 +118,7 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
 
  **Znaki zatwierdzania listy składowych** Określa znaki, które powodują zatwierdzenie listy aktualnie wyróżnionych elementów członkowskich. Możesz dodawać lub usuwać znaki z tej listy.
 
-## <a name="references"></a>Odwołania
+## <a name="references"></a>Dokumentacja
  **Wyłącz Rozwiązywanie** Ze względu na wydajność polecenie "Znajdź wszystkie odwołania" domyślnie wyświetla nieprzetworzone wyniki wyszukiwania tekstu, a nie za pomocą technologii IntelliSense, aby zweryfikować każdy kandydat. Możesz wyczyścić to pole wyboru, aby uzyskać dokładniejsze wyniki dla wszystkich operacji znajdowania. Aby odfiltrować według przeszukiwania, otwórz menu skrótów dla listy wyników, a następnie wybierz polecenie "Rozwiąż wyniki".
 
  **Ukryj niepotwierdzone** Ukryj niepotwierdzone elementy w wynikach "Znajdź wszystkie odwołania". W przypadku ustawienia opcji "Wyłącz rozpoznawanie" można użyć tej opcji do ukrycia niepotwierdzonych elementów w wynikach.
@@ -126,4 +126,4 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
  **Wyłącz podświetlanie odwołań**
 
 ## <a name="see-also"></a>Zobacz też
- [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
+ [Ustawianie opcji Edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
