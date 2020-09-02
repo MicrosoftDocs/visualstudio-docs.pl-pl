@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 192f9a5ca9928e4c325d67c340276ef12de14686
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816192"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Błąd składni w wyrażeniu regularnym (JavaScript)
@@ -28,7 +28,7 @@ Struktura ciągu wyszukiwania narusza co najmniej jedną regułę gramatyczną [
   
 - Upewnij się, że struktura ciągu wyszukiwania wyrażenia regularnego jest zgodna z [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] składnią wyrażenia regularnego.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Obiekt wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)   
  [Składnia wyrażenia regularnego (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile, metoda (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

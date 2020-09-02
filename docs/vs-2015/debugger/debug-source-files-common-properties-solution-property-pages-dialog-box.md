@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe strony właściwości rozwiązania źródła plików, typowe właściwości, debugowanie | Dokumentacja firmy Microsoft
+title: Pliki źródłowe debugowania, wspólne właściwości, okno dialogowe strony właściwości rozwiązania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,24 +27,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47fb2511e39153753a2c27483dd6ac96c26c9e83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143029"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Debugowanie plików źródłowych, typowe właściwości, strony właściwości rozwiązania — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta strona właściwości określa, gdzie debuger będzie szukać plików źródłowych, podczas debugowania rozwiązania.  
+Ta strona właściwości określa, gdzie debuger ma szukać plików źródłowych podczas debugowania rozwiązania.  
   
- Aby uzyskać dostęp do **Debuguj pliki źródłowe** strony właściwości, kliknij prawym przyciskiem myszy w rozwiązaniu w **Eksploratora rozwiązań** i wybierz **właściwości** z menu skrótów. Rozwiń **wspólne właściwości** folder, a następnie kliknij przycisk **Debuguj pliki źródłowe** strony.  
+ Aby uzyskać dostęp do strony właściwości **pliki źródłowe debugowania** , kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości** z menu skrótów. Rozwiń folder **wspólne właściwości** , a następnie kliknij stronę **debugowanie plików źródłowych** .  
   
  **Katalogi zawierające kod źródłowy**  
- Zawiera listę katalogów, w których debuger wyszukuje pliki źródłowe podczas debugowania rozwiązania. Przeszukiwane są również podkatalogi w określonych katalogach.  
+ Zawiera listę katalogów, w których debuger wyszukuje pliki źródłowe podczas debugowania rozwiązania. Podkatalogi określonych katalogów są również przeszukiwane.  
   
- **Wyglądają dla tych plików źródłowych**  
- Wprowadź nazwy plików, które nie chcesz, aby debuger do odczytu. Jeśli debuger wykryje jeden z tych plików w jednym z katalogów wymienione powyżej, zignoruje go. Jeśli **Znajdź źródło** okno dialogowe funkcjonuje podczas debugowania, a następnie kliknij **anulować**, plik wyszukiwany pobiera dodana do tej listy, aby debuger nie będzie kontynuowane wyszukiwanie dla tego pliku.  
+ **Nie wyszukuj tych plików źródłowych**  
+ Wprowadź nazwy wszystkich plików, które nie mają być odczytywane przez debuger. Jeśli debuger odnajdzie jeden z tych plików w jednym z katalogów określonych powyżej, zostanie on zignorowany. Jeśli okno dialogowe **Znajdowanie źródła** pojawia się w trakcie debugowania i klikniesz przycisk **Anuluj**, wyszukiwany plik zostanie dodany do tej listy, dzięki czemu debuger nie będzie kontynuował wyszukiwania tego pliku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235176"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Rozwiązywanie problemów z wdrożeniami technologii ClickOnce
@@ -56,7 +56,7 @@ Ten temat ułatwia diagnozowanie i rozwiązywanie typowych problemów z [!INCLUD
 
  Opisuje technikę debugowania aplikacji ClickOnce używających System. Deployment. Application.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 28eec125914f0207fbdf79a39ea2140dd74d6d0d
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816231"
 ---
 # <a name="object-expected"></a>Oczekiwany obiekt
@@ -46,6 +46,6 @@ Podjęto próbę wywołania metody lub właściwości obiektu typu innego niż `
     }  
     ```  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Object — obiekt](../../javascript/reference/object-object-javascript.md)   
  [Obiekty i tablice](../../javascript/objects-and-arrays-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertySetter | Dokumenty firmy Microsoft
+title: 'IDebugPropertyField:: GetPropertySetter | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 76834b3d4d61f0a58d7a0d2c36f8e30c444ddca2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720851"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
@@ -41,13 +41,13 @@ int GetPropertySetter(
 
 ## <a name="parameters"></a>Parametry
 `ppField`\
-[na zewnątrz] Zwraca obiekt [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) reprezentujący metodę, która ustawia właściwość.
+określoną Zwraca obiekt [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) reprezentujący metodę, która ustawia właściwość.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Aby uzyskać metodę, która pobiera właściwość, wywołać [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) metody.
+ Aby uzyskać metodę, która pobiera właściwość, wywołaj metodę [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)

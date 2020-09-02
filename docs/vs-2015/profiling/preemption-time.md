@@ -1,5 +1,5 @@
 ---
-title: Czas wywłaszczania | Dokumentacja firmy Microsoft
+title: Czas zastępujący | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,24 +14,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fd209f65464126650106eb4509cd3de39ad8c25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198063"
 ---
 # <a name="preemption-time"></a>Czas wywłaszczania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Te segmenty na osi czasu są skojarzone z czasu blokowania, które należą do kategorii Wywłaszczania. Ta kategoria wynika, że wątek jest przełączenie ze względu na jeden z następujących powodów:  
+Te segmenty na osi czasu są skojarzone z czasem blokowania, który jest kategoryzowany jako zastępujący. Ta kategoria oznacza, że wątek jest przełączany z jednego z następujących powodów:  
   
-- Harmonogram zastąpiono ją za pomocą wyższy priorytet wątku.  
+- Harmonogram zamienił go przy użyciu wątku o wyższym priorytecie.  
   
-- Wygasłe quantum wykonanie wątku, i inne wątki były gotowe do wykonania.  
+- Upłynął czas wykonywania wątku Quantum i inne wątki były gotowe do wykonania.  
   
-  W tym czasie wątek został zablokowany przez jądro powód oczekiwania, który zlicza Concurrency Visualizer jako Wywłaszczania. Wywłaszczanie segmentów Uruchom gdy wątek jest przekazywane poza rdzeń logiczny, a kończyć, kiedy wątek wznawia działanie.  
+  W tym czasie wątek został zablokowany przez powód oczekiwania jądra, który jest używany przez Wizualizator współbieżności jako zastępujący. Segmenty przeprowadzenia zastępują uruchomione, gdy wątek zostanie wysunięty z rdzenia logicznego i kończyć się, gdy ten wątek wznowi wykonywanie.  
   
-  Etykietka narzędzia dla segmentu preempted Wyświetla nazwę proces lub wątek, który spowodował wywłaszczania. Jednak to nie oznacza, że proces lub wątek, który zajął stanowisko dyrektora faktycznie uruchomiła przez cały okres preempted.  
+  Etykietka narzędzia dla segmentu przeniesiona zawiera nazwę procesu lub wątku, który spowodował zastępujący. Nie oznacza to jednak, że proces lub wątek, który przeprzejął w rzeczywistości faktycznie działał w okresie przenoszonego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816010"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: zapisywanie testów jednostkowych dla bibliotek DLL języka C++
@@ -34,7 +34,7 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL języka C++ 
 
 8. [Izoluj jednostki od zasobów zewnętrznych](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). Zazwyczaj Biblioteka DLL jest zależna od innych składników systemu, które tworzysz, takich jak inne biblioteki DLL, bazy danych lub zdalne podsystemy. Warto przetestować każdą jednostkę w izolacji od jej zależności. Składniki zewnętrzne mogą sprawiać, że testy działają wolno. W trakcie programowania inne składniki mogą nie być kompletne.
 
-## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a>Utwórz natywny projekt testów jednostkowych
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> Utwórz natywny projekt testów jednostkowych
 
 1. W menu **plik** wybierz pozycję **Nowy**  >  **projekt**.
 
@@ -82,7 +82,7 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL języka C++ 
 
          ![Eksplorator testów jednostkowych z jednym zakończonym testem](../test/media/utecpp04.png)
 
-## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>Tworzenie projektu DLL
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> Tworzenie projektu DLL
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
 ::: moniker-end
 
-## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a>Połącz projekt testowy z projektem DLL
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a> Połącz projekt testowy z projektem DLL
 
 1. Dodaj projekt DLL do odwołań projektu projektu testowego:
 
@@ -194,7 +194,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
    Został skonfigurowany test i projekty kodu i zweryfikowane, że można uruchomić testy, które uruchamiają funkcje w projekcie kodu. Teraz możesz zacząć pisać prawdziwe testy i kod.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>Iteracyjnie rozszerza testy i przekazują je
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Iteracyjnie rozszerza testy i przekazują je
 
 1. Dodaj nowy test:
 
@@ -252,7 +252,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
     > [!TIP]
     > Opracowuj kod przez dodanie testów pojedynczo. Upewnij się, że wszystkie testy są zakończone po każdej iteracji.
 
-## <a name="debug-a-failing-test"></a><a name="debug"></a>Debuguj test zakończony niepowodzeniem
+## <a name="debug-a-failing-test"></a><a name="debug"></a> Debuguj test zakończony niepowodzeniem
 
 1. Dodaj inny test:
 
@@ -337,7 +337,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
 ::: moniker-end
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>Refaktoryzacja kodu bez zmiany testów
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Refaktoryzacja kodu bez zmiany testów
 
 1. Uprość Obliczanie centralne w funkcji SquareRoot:
 
@@ -366,7 +366,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
    Istnieje również możliwość przydzielenia minimalnego poziomu pokrycia kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

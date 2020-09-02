@@ -1,5 +1,5 @@
 ---
-title: Narzędzia wyszukiwania dotyczące widoków programu Spy ++ | Dokumentacja firmy Microsoft
+title: Narzędzia wyszukiwania dla widoków Spy + + | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,39 +13,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d520f8b3b4ec67dc9166acf97a313e52d0eb655
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157318"
 ---
 # <a name="search-tools-for-spy-views"></a>Narzędzia wyszukiwania dla Widoków Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Użyj tych okien dialogowych, aby określić, jakie dane będą wyświetlane w oknie widoków programu Spy ++:  
+Użyj tych okien dialogowych, aby określić, jakie dane będą wyświetlane w oknie widoki programu Spy + +:  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Okno dialogowe Znajdź okno](../debugger/find-window-dialog-box.md)  
- Używane, aby wyświetlić właściwości lub komunikaty z określonym oknie.  
+ Służy do wyświetlania właściwości lub komunikatów z określonego okna.  
   
- [Wyszukiwanie okien, okno dialogowe](../debugger/window-search-dialog-box.md)  
- Umożliwia znalezienie węzła w określonym oknie, w widoku Windows.  
+ [Wyszukiwanie okien — Okno dialogowe](../debugger/window-search-dialog-box.md)  
+ Służy do znajdowania węzła dla określonego okna w widoku systemu Windows.  
   
- [Wyszukiwanie komunikatów, okno dialogowe](../debugger/message-search-dialog-box.md)  
- Umożliwia znalezienie węzeł, aby uzyskać szczegółowy komunikat o błędzie w widoku komunikatów.  
+ [Wyszukiwanie komunikatów — Okno dialogowe](../debugger/message-search-dialog-box.md)  
+ Służy do znajdowania węzła określonego komunikatu w widoku komunikatów.  
   
- [Wyszukiwanie procesów, okno dialogowe](../debugger/process-search-dialog-box.md)  
- Umożliwia znalezienie węzła dla określonego procesu w widoku proces.  
+ [Wyszukiwanie procesów — Okno dialogowe](../debugger/process-search-dialog-box.md)  
+ Służy do znajdowania węzła dla określonego procesu w widoku procesu.  
   
- [Wyszukiwanie wątków, okno dialogowe](../debugger/thread-search-dialog-box.md)  
- Umożliwia znalezienie węzła dla określonego wątku w widoku wątków.  
+ [Wyszukiwanie wątków — Okno dialogowe](../debugger/thread-search-dialog-box.md)  
+ Służy do znajdowania węzła dla określonego wątku w widoku wątków.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
+ [Spy++ — Widoki](../debugger/spy-increment-views.md)  
+ Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
+ Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.  
   
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.
+ [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)  
+ Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.

@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Dokumentacja firmy Microsoft
+title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95a537c703d4afd68bb291205e0c7da8d9b8fc59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143015"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, dlaczego ten proces został uruchomiony dla debugowania.  
+Określa, dlaczego proces został uruchomiony na potrzeby debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,27 +49,27 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>Parametry  
  DEBUG_REASON_ERROR  
- Wystąpił błąd nieokreślonym (są one używane jako domyślne warunku, gdy żaden z innych powodów, dla których Dopasuj).  
+ Wystąpił błąd nieokreślony (jest używany jako warunek domyślny, gdy żadna z innych przyczyn nie jest zgodna).  
   
  DEBUG_REASON_USER_LAUNCHED  
  Proces został uruchomiony na żądanie użytkownika.  
   
  DEBUG_REASON_USER_ATTACHED  
- Proces działa już został dołączony do przez użytkownika.  
+ Użytkownik załączył już uruchomiony proces.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- Proces został dołączony do automatycznie, podczas jej uruchamiania.  
+ Proces został automatycznie dołączony do momentu jego uruchomienia.  
   
  DEBUG_REASON_CAUSALITY  
- Proces został uruchomiony ze względu na *Just-In-Time* zdarzenia debugowania (JIT).  
+ Proces został uruchomiony z powodu zdarzenia debugowania *just-in-Time* (JIT).  
   
 ## <a name="remarks"></a>Uwagi  
- Zwrócone w wyniku [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.  
+ Zwrócone z metody [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

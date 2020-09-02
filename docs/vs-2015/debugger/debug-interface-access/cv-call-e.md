@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd1ee4c024894e5752277a5000d37745c88c4ac6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442113"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64810332"
 ---
-# <a name="cvcalle"></a>CV_call_e
+# <a name="cv_call_e"></a>CV_call_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Określa konwencję wywołania funkcji.  
+Określa konwencję wywoływania dla funkcji.  
   
 > [!NOTE]
-> Tylko najbardziej typowych wartości wyliczenia są opisane tutaj. Pełne wyliczenia jest dostępna w pliku nagłówkowym cvconst.h.  
+> Tutaj opisano tylko najczęstsze wartości wyliczenia. Pełne Wyliczenie jest dostępne w pliku nagłówkowym cvconst. h.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,28 +43,28 @@ typedef enum CV_call_e { 
   
 ## <a name="elements"></a>Elementy  
  CV_CALL_NEAR_C  
- Określa Konwencję wywoływania funkcji przy użyciu prawie wypychane od prawej do lewej. Funkcja wywołująca czyści stos.  
+ Określa konwencję wywoływania funkcji przy użyciu wypychania od prawej do lewej. Funkcja wywołująca czyści stos.  
   
  CV_CALL_NEAR_FAST  
- Określa Konwencję wywoływania funkcji za pomocą rejestrów przy użyciu prawie wypychane od lewej do prawej. Wywołana funkcja używa Suma bajtów parametrów można wyczyścić stosu.  
+ Określa konwencję wywoływania funkcji używającą niemal od lewej do prawej wypychania z rejestrami. Wywołana funkcja używa sumy parametrów bajtów do wyczyszczenia stosu.  
   
  CV_CALL_NEAR_STD  
- Określa Konwencję wywoływania funkcji przy użyciu prawie standardowe wywołanie (push od prawej do lewej).  
+ Określa konwencję wywoływania funkcji przy użyciu wywołania blisko standardowego (wypychania od prawej do lewej).  
   
  CV_CALL_NEAR_SYS  
- Określa Konwencję wywoływania funkcji przy użyciu prawie wywołanie systemowe.  
+ Określa konwencję wywoływania funkcji przy użyciu wywołania blisko systemu.  
   
  CV_CALL_THISCALL  
- Określa Konwencję wywoływania funkcji przy użyciu `this` wywołania (`this` wskaźnik przekazywane w rejestrze).  
+ Określa konwencję wywoływania funkcji przy użyciu `this` wywołania ( `this` wskaźnik przeszedł do rejestru).  
   
  CV_CALL_CLRCALL  
- Określa Konwencję wywoływania funkcji używane przez wspólnego języka środowiska uruchomieniowego (CLR) (znany także jako kod zarządzany Konwencja wywoływania).  
+ Określa konwencję wywoływania funkcji używaną przez środowisko uruchomieniowe języka wspólnego (CLR) (znaną również jako konwencja wywoływania kodu zarządzanego).  
   
 ## <a name="remarks"></a>Uwagi  
- Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_callingconvention —](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez wywołanie metody [IDiaSymbol:: get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: cvconst.h  
+ Nagłówek: cvconst. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   

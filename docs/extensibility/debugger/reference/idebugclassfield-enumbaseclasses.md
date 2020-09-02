@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses | Dokumenty firmy Microsoft
+title: 'IDebugClassField:: EnumBaseClasses | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 12317c549050be31ac9e19bc7b3d8a6683f743d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734476"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
-Tworzy wyliczenia dla klas podstawowych tej klasy.
+Tworzy moduł wyliczający dla klas bazowych tej klasy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,13 +42,13 @@ int EnumBaseClasses(
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
 
-[na zewnątrz] Zwraca obiekt [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) reprezentujący listę klas podstawowych. Zwraca wartość null, jeśli nie ma żadnych klas podstawowych.
+określoną Zwraca obiekt [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) reprezentujący listę klas bazowych. Zwraca wartość null, jeśli nie ma klas bazowych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK, zwraca S_SH_NO_BASE_CLASSES, jeśli nie ma `ppEnum` żadnych klas podstawowych (a parametr jest ustawiony na wartość null); w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK, zwraca S_SH_NO_BASE_CLASSES, jeśli nie ma klas bazowych (a `ppEnum` parametr ma ustawioną wartość null); w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Klasy podstawowe w obiekcie wyliczacza są określone w kolejności najbardziej natychmiastowe (lub najbardziej pochodne) klasy podstawowej do najbardziej zdalnej klasy podstawowej. Na przykład biorąc pod uwagę klasy C++:
+ Klasy bazowe w obiekcie Enumerator są określone w kolejności najbardziej bezpośredniej (lub najbardziej pochodnej) klasy bazowej do najbardziej zdalnej klasy podstawowej. Na przykład, uwzględniając klasy języka C++:
 
 ```
 class Root { }
@@ -57,7 +57,7 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }
 ```
 
- Wyliczenie spowoduje zwrócenie klas podstawowych `Level2` `Level1`w `Root`kolejności , .
+ Wyliczenie zwróci klasy bazowe w kolejności `Level2` , `Level1` , `Root` .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

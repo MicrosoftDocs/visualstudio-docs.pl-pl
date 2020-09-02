@@ -1,5 +1,5 @@
 ---
-title: Zapisywanie standardowego dokumentu | Dokumentacja firmy Microsoft
+title: Zapisywanie standardowego dokumentu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,51 +13,51 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198088"
 ---
 # <a name="saving-a-standard-document"></a>Zapisywanie standardowego dokumentu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Środowisko obsługuje Zapisz, Zapisz jako i Zapisz wszystkie polecenia. Gdy użytkownik wybierze **Zapisz**, **Zapisz jako**, lub **Zapisz wszystko** z **pliku** menu lub zamyka rozwiązania skutkuje  **Zapisz wszystko**, odbywa się następujący proces.  
+Środowisko obsługuje polecenia Zapisz, Zapisz jako i Zapisz wszystkie. Gdy użytkownik wybierze pozycję **Zapisz**, **Zapisz jako**lub **Zapisz wszystko** w menu **plik** lub zamknie rozwiązanie, spowoduje to wystąpienie następującego procesu: **Zapisz wszystko**.  
   
- ![Edytor standardowy](../../extensibility/internals/media/public.gif "publiczne")  
-Zapisz, Zapisz jako, a następnie Zapisz wszystko obsługi poleceń dla edytora standardowego  
+ ![Edytor standardowy](../../extensibility/internals/media/public.gif "Publiczne")  
+Zapisz, Zapisz jako i Zapisz całą obsługę poleceń dla edytora standardowego  
   
- Ten proces opisano szczegółowo w poniższych krokach:  
+ Ten proces jest szczegółowo opisany w następujących krokach:  
   
-1. Gdy **Zapisz** i **Zapisz jako** polecenia są zaznaczone, używa środowiska <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service, aby ustalić aktywne okno dokumentu i w ten sposób elementy powinny być zapisywane. Gdy aktywne okno dokumentu jest znany, środowiska znajduje wskaźnik hierarchii i identyfikator elementu (identyfikator elementu) dla dokumentów w uruchomionej tabeli dokumentu. Aby uzyskać więcej informacji, zobacz [uruchamianie tabeli dokumentu](../../extensibility/internals/running-document-table.md).  
+1. Gdy wybrane są polecenia **Zapisz** i **Zapisz jako** , środowisko używa <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> usługi do określenia okna aktywnego dokumentu, a tym samym elementów, które powinny być zapisane. Po znalezieniu okna aktywnego dokumentu środowisko odnajdzie wskaźnik hierarchii i identyfikator elementu (itemID) dla dokumentu w uruchomionej tabeli dokumentów. Aby uzyskać więcej informacji, zobacz [Uruchamianie tabeli dokumentów](../../extensibility/internals/running-document-table.md).  
   
-    Gdy **Zapisz wszystko** polecenie jest zaznaczone, środowisko używa tych informacji w uruchomionej tabeli dokumentu do listy wszystkich elementów do zapisania.  
+    Gdy jest zaznaczone polecenie **Zapisz wszystko** , środowisko używa informacji w uruchomionej tabeli dokumentu do skompilowania listy wszystkich elementów do zapisania.  
   
-2. Po odebraniu rozwiązania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> wywołania iteruje zbiór wybranych elementów (czyli udostępnianych przez wiele zaznaczeń <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> usługi).  
+2. Gdy rozwiązanie odbiera <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> wywołanie, przechodzi przez zestaw wybranych elementów (to znaczy wybór wielokrotny uwidoczniony przez <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> usługę).  
   
-3. Dla każdego elementu w zaznaczeniu odbywa się za wskaźnik hierarchii wywołań <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> metodę pozwala ustalić czy **Zapisz** polecenie powinno być włączone. Jeśli co najmniej jednego elementu zostały zmienione, a następnie **Zapisz** polecenie jest włączone. Jeśli hierarchia używa standardowy edytor, następnie delegatów hierarchii, wykonanie zapytania dotyczącego zakłóconych stanu do edytora, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> metody.  
+3. Dla każdego elementu w zaznaczeniu, rozwiązanie używa wskaźnika hierarchii do wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> metody, aby określić, czy polecenie **Zapisz** menu powinno być włączone. Jeśli co najmniej jeden element jest zanieczyszczony, polecenie **Zapisz** jest włączone. Jeśli hierarchia używa edytora standardowego, wówczas obiekt delegowany wykonuje zapytania o zmieniony stan do edytora przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> metody.  
   
-4. Dla każdego wybranego elementu, który został zmieniony, odbywa się za wskaźnik hierarchii wywołań <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> metody w odpowiedniej hierarchii.  
+4. W przypadku każdego zaznaczonego elementu, który jest zanieczyszczony, rozwiązanie używa wskaźnika hierarchii do wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> metody w odpowiednich hierarchiach.  
   
-    Jest to częsty problem w hierarchii, aby edytować dokument za pomocą edytora standardowego. W tym przypadku dane dokumentu obiekt powinien obsługiwać tego edytora <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfejsu. Odebrane <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> wywołania metody projektu powinien poinformować edytor, który dokument jest zapisywany przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> metody na obiekt danych dokumentu. Edytor umożliwia środowisku do obsługi **Zapisz jako** okno dialogowe, wywołując `Query Service` dla <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> interfejsu. Zwraca wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejsu. Edytor następnie należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> metody przekazywania wskaźnika do edytora <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> implementacji poprzez `pPersistFile` parametru. Środowisko następnie wykonuje operację zapisywania i zapewnia **Zapisz jako** okno dialogowe edytora. Środowisko wywołuje powrót do edytora za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>.  
+    W hierarchii często można edytować dokument przy użyciu standardowego edytora. W takim przypadku obiekt danych dokumentu dla tego edytora powinien obsługiwać <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfejs. Po odebraniu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> wywołania metody projekt powinien poinformować Edytor, że dokument jest zapisywany przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> metody w obiekcie danych dokumentu. Edytor może pozwolić, aby środowisko obsługiwało okno dialogowe **Zapisywanie jako** , wywołując `Query Service` dla <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> interfejsu. Zwraca wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejsu. Edytor musi następnie wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> metodę, przekazując wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> implementacji edytora za pomocą `pPersistFile` parametru. Środowisko następnie wykonuje operację zapisywania i udostępnia okno dialogowe **Zapisz jako** dla edytora. Środowisko następnie wywołuje z powrotem do edytora za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> .  
   
-5. Jeśli użytkownik próbuje zapisać dokument bez tytułu (oznacza to, że wcześniej niezapisane dokumenty), polecenia Zapisz jako faktycznie jest wykonywana.  
+5. Jeśli użytkownik podejmuje próbę zapisania dokumentu bez tytułu (czyli poprzednio niezapisanego dokumentu), wówczas jest wykonywane polecenie Zapisz jako.  
   
-6. Dla polecenia Zapisz jako środowisko Wyświetla okno dialogowe Zapisz jako z monitem użytkownika o podanie nazwy pliku.  
+6. W przypadku polecenia Zapisz jako środowisko wyświetla okno dialogowe Zapisz jako z monitem o nazwę pliku.  
   
-    Jeśli nazwa pliku została zmieniona, a następnie hierarchii odpowiada za aktualizowanie ramki dokumentu buforowanych informacji przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument).  
+    Jeśli nazwa pliku została zmieniona, hierarchia jest odpowiedzialna za aktualizowanie informacji w pamięci podręcznej ramki dokumentu przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> (VSFPROPID_MkDocument).  
   
-   Jeśli **Zapisz jako** polecenia powoduje przeniesienie lokalizacji dokumentu i hierarchii jest wrażliwa na lokalizację dokumentu, a następnie hierarchii jest odpowiedzialny za przekazywanie własności otwartego okna dokumentu do innej hierarchii. Na przykład dzieje się tak Jeśli projekt śledzi, czy plik jest wewnętrzny lub zewnętrzny plik (różne) w odniesieniu do projektu. Aby zmienić własność pliku do projektu różne pliki, należy użyć poniższej procedury.  
+   Jeśli polecenie **Zapisz jako** przenosi lokalizację dokumentu, a hierarchia jest wrażliwa na lokalizację dokumentu, hierarchia jest odpowiedzialna za przekazanie własności otwartego okna dokumentu do innej hierarchii. Na przykład dzieje się tak, jeśli projekt śledzi, czy plik jest plikiem wewnętrznym lub zewnętrznym (plik różne) w odniesieniu do projektu. Aby zmienić własność pliku na projekt różne pliki, należy wykonać poniższą procedurę.  
   
 ## <a name="changing-file-ownership"></a>Zmiana własności pliku  
   
-#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Aby zmienić własność pliku do projektu różne pliki  
+#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Aby zmienić własność plików na projekt różne pliki  
   
-1. Zapytanie usługi dla <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfejsu.  
+1. Usługa zapytań dla <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfejsu.  
   
-     Wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> jest zwracana.  
+     Wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> jest zwracany.  
   
-2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) metodę, aby przenieść dokument do nowej hierarchii. Hierarchia, wykonując polecenia Zapisz jako wywołuje tę metodę.  
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` metodę (, `punkWindowFrame` ), aby przesłać dokument do nowej hierarchii. Hierarchia wykonująca polecenie Zapisz jako wywołuje tę metodę.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

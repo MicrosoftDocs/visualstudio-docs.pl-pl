@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie generatorów pojedynczych plików | Dokumenty firmy Microsoft
+title: Rejestrowanie generatorów pojedynczych plików | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705808"
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatorów jednoplikowych
-Aby udostępnić niestandardowe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]narzędzie w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , należy go zarejestrować, aby można było utworzyć jego wystąpienie i skojarzyć je z określonym typem projektu.
+Aby udostępnić niestandardowe narzędzie w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , należy je zarejestrować, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można było je utworzyć i kojarzyć z określonym typem projektu.
 
 ### <a name="to-register-a-custom-tool"></a>Aby zarejestrować narzędzie niestandardowe
 
-1. Zarejestruj bibliotekę DLL narzędzia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] niestandardowego w rejestrze lokalnym lub w rejestrze systemowym, w obszarze HKEY_CLASSES_ROOT.
+1. Zarejestruj bibliotekę DLL narzędzia niestandardowego w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rejestrze lokalnym lub w rejestrze systemowym w obszarze HKEY_CLASSES_ROOT.
 
-    Oto na przykład informacje rejestracyjne zarządzanego narzędzia niestandardowego MSDataSetGenerator, które pochodzi z: [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
+    Na przykład poniżej przedstawiono informacje o rejestracji zarządzanego narzędzia niestandardowego MSDataSetGenerator, które zawiera [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] :
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]
@@ -36,24 +36,24 @@ Aby udostępnić niestandardowe [!INCLUDE[vsprvs](../../code-quality/includes/vs
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Utwórz klucz rejestru [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] w żądanej\\gałęzi w obszarze*GuiD* generatory, gdzie *identyfikator GUID* jest identyfikatorem GUID zdefiniowanym przez system lub usługę projektu określonego języka. Nazwa klucza staje się programową nazwą narzędzia niestandardowego. Niestandardowy klucz narzędzia ma następujące wartości:
+2. Utwórz klucz rejestru w odpowiedniej gałęzi, w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obszarze Identyfikator GUID generatorów \\ *GUID* , gdzie *GUID* jest identyfikatorem GUID zdefiniowanym przez system lub usługę projektu określonego języka. Nazwa klucza jest programowaną nazwą narzędzia niestandardowego. Klucz niestandardowego narzędzia ma następujące wartości:
 
    - (Domyślnie)
 
-        Element opcjonalny. Zawiera przyjazny dla użytkownika opis narzędzia niestandardowego. Ten parametr jest opcjonalny, ale zalecane.
+        Opcjonalny. Zapewnia przyjazny dla użytkownika opis niestandardowego narzędzia. Ten parametr jest opcjonalny, ale zalecany.
 
-   - Clsid
+   - Identyfikator
 
-        Wymagany. Określa identyfikator biblioteki klas składnika COM, który <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>implementuje .
+        Wymagany. Określa identyfikator biblioteki klas składnika COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
 
    - GeneratesDesignTimeSource
 
-        Wymagany. Wskazuje, czy typy z plików wyprodukowanych przez to narzędzie niestandardowe są udostępniane projektantom wizualnym. Wartość tego parametru musi być (zero) 0 dla typów niedostępnych dla projektantów wizualnych lub (jeden) 1 dla typów dostępnych dla projektantów wizualnych.
+        Wymagany. Wskazuje, czy typy z plików utworzonych przez to narzędzie niestandardowe są udostępniane projektantom wizualizacji. Wartość tego parametru musi być równa (zero) 0 dla typów niedostępnych dla projektantów wizualizacji lub (jeden) 1 dla typów dostępnych dla projektantów wizualizacji.
 
    > [!NOTE]
-   > Narzędzie niestandardowe należy zarejestrować oddzielnie dla każdego języka, dla którego ma być dostępne narzędzie niestandardowe.
+   > Narzędzie niestandardowe należy zarejestrować osobno dla każdego języka, dla którego ma być dostępne narzędzie niestandardowe.
 
-    Na przykład MSDataSetGenerator rejestruje się raz dla każdego języka:
+    Na przykład MSDataSetGenerator rejestruje się osobno dla każdego języka:
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]

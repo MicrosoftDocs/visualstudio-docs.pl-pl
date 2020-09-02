@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816127"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Kompilacja warunkowa jest wyłączona
@@ -36,9 +36,9 @@ Podjęto próbę użycia zmiennej kompilacji warunkowej bez wcześniejszego wł�
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onMerge](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@ifMerge](../../javascript/reference/at-if-statement-javascript.md)   
- [@setMerge](../../javascript/reference/at-set-statement-javascript.md)
+ [@cc_on Merge](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if Merge](../../javascript/reference/at-if-statement-javascript.md)   
+ [@set Merge](../../javascript/reference/at-set-statement-javascript.md)

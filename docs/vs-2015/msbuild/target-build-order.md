@@ -1,5 +1,5 @@
 ---
-title: Docelowa kompilacja — kolejność | Dokumentacja firmy Microsoft
+title: Docelowy porządek kompilacji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,77 +12,77 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144276"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Aby określić kolejność uruchamiania elementów docelowych, można użyć tych atrybutów:  
+Elementy docelowe muszą być uporządkowane, jeśli dane wejściowe do jednego obiektu docelowego są zależne od danych wyjściowych innego obiektu docelowego. Można użyć tych atrybutów do określenia kolejności, w której są uruchamiane obiekty docelowe:  
   
-- `InitialTargets`. To `Project` atrybut określa elementy docelowe, które będą uruchamiane po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu.  
+- `InitialTargets`. Ten `Project` atrybut określa elementy docelowe, które będą uruchamiane jako pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybucie.  
   
-- `DefaultTargets`. To `Project` atttribute Określa, które elementy docelowe są uruchamiane, jeśli element docelowy nie jest jawnie określona w wierszu polecenia.  
+- `DefaultTargets`. Ta `Project` atrybut określa, które obiekty docelowe są uruchamiane, jeśli element docelowy nie zostanie określony jawnie w wierszu polecenia.  
   
-- `DependsOnTargets`. To `Target` atrybut określa elementy docelowe, które muszą zostać uruchomione przed uruchomieniem tego obiektu docelowego.  
+- `DependsOnTargets`. Ten `Target` atrybut określa elementy docelowe, które muszą zostać uruchomione, aby można było uruchomić ten element docelowy.  
   
-- `BeforeTargets` i `AfterTargets`. Te `Target` atrybuty określają, że ten element docelowy powinien być wykonywany przed lub po określonych celów (MSBuild 4.0).  
+- `BeforeTargets` i `AfterTargets` . Te `Target` atrybuty określają, że ten element docelowy powinien zostać uruchomiony przed lub po określonych obiektach docelowych (MSBuild 4,0).  
   
-  Obiekt docelowy nigdy nie jest uruchamiane dwa razy podczas kompilacji, nawet wtedy, gdy kolejne docelowego w kompilacji zależy od niego. Po uruchomieniu elementu docelowego swój wkład zgodnie z kompilacją zostało ukończone.  
+  Element docelowy nigdy nie jest uruchamiany dwukrotnie podczas kompilacji, nawet jeśli kolejny element docelowy w kompilacji zależy od niej. Po uruchomieniu elementu docelowego jego udział w kompilacji jest zakończony.  
   
-  Obiekty docelowe może mieć `Condition` atrybutu. Jeśli określony warunek ma `false`, element docelowy nie jest wykonywane i nie ma wpływu na kompilację. Aby uzyskać więcej informacji o warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).  
+  Elementy docelowe mogą mieć `Condition` atrybut. Jeśli określony warunek ma wartość `false` , element docelowy nie zostanie wykonany i nie ma wpływu na kompilację. Aby uzyskać więcej informacji o warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Cele początkowe  
- `InitialTargets` Atrybutu [projektu](../msbuild/project-element-msbuild.md) element określa elementy docelowe, które będą uruchamiane po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu. Cele początkowe są zwykle używane do sprawdzania błędów.  
+ `InitialTargets`Atrybut elementu [projektu](../msbuild/project-element-msbuild.md) określa elementy docelowe, które będą uruchamiane jako pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybucie. Początkowe cele są zwykle używane do sprawdzania błędów.  
   
- Wartość `InitialTargets` atrybut może być rozdzielone średnikami, uporządkowanych lista elementów docelowych. Poniższy przykład określa, że `Warm` docelowy działa, a następnie `Eject` docelowych uruchomienia.  
+ Wartością `InitialTargets` atrybutu może być rozdzielana średnikami lista elementów docelowych. W poniższym przykładzie określono, że `Warm` obiekt docelowy jest uruchamiany, a następnie `Eject` jest uruchamiany element docelowy.  
   
 ```  
 <Project InitialTargets="Warm;Eject" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Importowany projektów może mieć własne `InitialTargets` atrybutów. Wszystkie cele początkowe są zagregowane ze sobą i są uruchamiane w kolejności.  
+ Importowane projekty mogą mieć własne `InitialTargets` atrybuty. Wszystkie początkowe elementy docelowe są agregowane i uruchamiane w kolejności.  
   
- Aby uzyskać więcej informacji, zobacz [jak: Określanie pierwszego obiektu docelowego do kompilacji](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Aby uzyskać więcej informacji, zobacz [How to: Określ, który element docelowy należy skompilować jako pierwszy](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Domyślne elementy docelowe  
- `DefaultTargets` Atrybutu [projektu](../msbuild/project-element-msbuild.md) element określa, których cel lub cele są tworzone, jeśli element docelowy nie jest jawnie określona w wierszu polecenia.  
+ `DefaultTargets`Atrybut elementu [projektu](../msbuild/project-element-msbuild.md) określa, które elementy docelowe lub docelowe są kompilowane, jeśli element docelowy nie został jawnie określony w wierszu polecenia.  
   
- Wartość `DefaultTargets` atrybut może być rozdzielaną średnikami, uporządkowaną listę domyślnych elementów docelowych. Poniższy przykład określa, że `Clean` docelowy działa, a następnie `Build` docelowych uruchomienia.  
+ Wartością `DefaultTargets` atrybutu może być rozdzielana średnikami lista domyślnych elementów docelowych. W poniższym przykładzie określono, że `Clean` obiekt docelowy jest uruchamiany, a następnie `Build` jest uruchamiany element docelowy.  
   
 ```  
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Można zastąpić domyślne elementy docelowe za pomocą **/target** Przejdź w wierszu polecenia. Poniższy przykład określa, że `Build` docelowy działa, a następnie `Report` docelowych uruchomienia. Po określeniu elementów docelowych w ten sposób wszystkie domyślne elementy docelowe są ignorowane.  
+ Domyślne obiekty docelowe można przesłonić przy użyciu przełącznika **/Target** w wierszu polecenia. W poniższym przykładzie określono, że `Build` obiekt docelowy jest uruchamiany, a następnie `Report` jest uruchamiany element docelowy. Gdy określisz elementy docelowe w ten sposób, wszystkie domyślne elementy docelowe zostaną zignorowane.  
   
  `msbuild /target:Build;Report`  
   
- Jeśli określono zarówno cele początkowe i domyślne elementy docelowe, a jeśli nie określono żadnych elementów docelowych w wiersza polecenia, MSBuild uruchamia cele początkowe najpierw, a następnie uruchomić domyślnych elementów docelowych.  
+ Jeśli określono zarówno początkowe elementy docelowe, jak i domyślne elementy docelowe, a jeśli nie określono elementów docelowych wiersza polecenia, program MSBuild najpierw uruchamia początkowe elementy docelowe, a następnie uruchamia domyślne elementy docelowe.  
   
- Importowany projektów może mieć własne `DefaultTargets` atrybutów. Pierwszy `DefaultTargets` napotkano atrybut określa, które domyślne elementy docelowe zostanie uruchomiony.  
+ Importowane projekty mogą mieć własne `DefaultTargets` atrybuty. Podczas pierwszego `DefaultTargets` napotkanego atrybutu określa się, które domyślne elementy docelowe zostaną uruchomione.  
   
- Aby uzyskać więcej informacji, zobacz [jak: Określanie pierwszego obiektu docelowego do kompilacji](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Aby uzyskać więcej informacji, zobacz [How to: Określ, który element docelowy należy skompilować jako pierwszy](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Pierwszy element docelowy  
- Jeśli nie ma żadnych cele początkowe, domyślne elementy docelowe ani wiersza polecenia obiekty docelowe, MSBuild uruchamia pierwszego obiektu docelowego napotka w pliku projektu lub jakiegokolwiek projektu, zaimportowane pliki.  
+ Jeśli nie ma początkowych elementów docelowych, domyślnych obiektów docelowych lub obiektów docelowych wiersza polecenia, program MSBuild uruchamia pierwszy element docelowy napotkany w pliku projektu lub zaimportowanych plikach projektu.  
   
 ## <a name="target-dependencies"></a>Miejsce docelowe zależności  
- Obiekty docelowe można opisać relacji zależności ze sobą. `DependsOnTargets` Atrybut wskazuje, że obiekt docelowy zależy od innych elementów docelowych. Na przykład  
+ Obiekty docelowe mogą opisywać relacje zależności ze sobą. Ten `DependsOnTargets` atrybut wskazuje, że element docelowy zależy od innych elementów docelowych. Przykład:  
   
 ```  
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />  
 ```  
   
- informuje o MSBuild `Serve` zależy obiekt docelowego `Chop` docelowego i `Cook` docelowej. MSBuild uruchamia `Chop` docelowego, a następnie uruchamia `Cook` docelowy przed uruchomieniem `Serve` docelowej.  
+ informuje program MSBuild, że `Serve` element docelowy zależy od `Chop` elementu docelowego i `Cook` celu. Program MSBuild uruchamia `Chop` obiekt docelowy, a następnie uruchamia `Cook` obiekt docelowy przed uruchomieniem `Serve` obiektu docelowego.  
   
-## <a name="beforetargets-and-after-targets"></a>BeforeTargets i po obiektach docelowych  
- W wersji 4.0 programu MSBuild, należy określić kolejność obiektów docelowych za pomocą `BeforeTargets` i `AfterTargets` atrybutów.  
+## <a name="beforetargets-and-after-targets"></a>BeforeTargets i After targets  
+ W programie MSBuild 4,0 można określić kolejność obiektów docelowych przy użyciu `BeforeTargets` atrybutów i `AfterTargets` .  
   
- Rozważmy poniższy skrypt.  
+ Rozważmy następujący skrypt.  
   
 ```  
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -95,7 +95,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
 </Project>  
 ```  
   
- Do utworzenia obiektu docelowego pośrednich `Optimize` , które jest uruchamiane `Compile` docelowej, lecz przed `Link` obiekt docelowy, Dodaj następujący element docelowy gdziekolwiek w `Project` elementu.  
+ Aby utworzyć pośredni cel, `Optimize` który jest uruchamiany po `Compile` elemencie docelowym, ale przed `Link` elementem docelowym, Dodaj następujący element docelowy gdziekolwiek w `Project` elemencie.  
   
 ```  
 <Target Name="Optimize"   
@@ -105,21 +105,21 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
 ```  
   
 ## <a name="determining-the-target-build-order"></a>Określenie kolejności kompilacji docelowej  
- MSBuild określa kolejność kompilowania obiektów docelowych w następujący sposób:  
+ Program MSBuild określa docelowy porządek kompilacji w następujący sposób:  
   
-1. `InitialTargets` obiekty docelowe są uruchamiane.  
+1. `InitialTargets` elementy docelowe są uruchamiane.  
   
-2. Cele określone w wierszu polecenia przez **/target** przełącznika są uruchamiane. Jeśli określisz żadnych elementów docelowych w wierszu polecenia, a następnie `DefaultTargets` obiekty docelowe są uruchamiane. Jeśli nie jest obecny, pierwszy napotkano element docelowy zostanie uruchomiony.  
+2. Elementy docelowe określone w wierszu polecenia przez przełącznik **/Target** są uruchamiane. Jeśli w wierszu polecenia nie określono żadnych elementów docelowych, `DefaultTargets` zostaną uruchomione obiekty docelowe. Jeśli żaden z nich nie jest obecny, zostanie uruchomiony pierwszy element docelowy.  
   
-3. `Condition` Atrybut docelowy jest oceniany. Jeśli `Condition` atrybut jest obecny i daje w wyniku `false`, element docelowy nie jest wykonywane i nie ma dalszych wpływu na kompilację.  
+3. `Condition`Atrybut elementu docelowego jest obliczany. Jeśli `Condition` atrybut jest obecny i szacuje się `false` , obiekt docelowy nie jest wykonywany i nie ma żadnego wpływu na kompilację.  
   
-4. Przed wykonaniem celu jego `DependsOnTargets` obiekty docelowe są uruchamiane.  
+4. Przed wykonaniem elementu docelowego, jego `DependsOnTargets` obiekty docelowe są uruchamiane.  
   
-5. Przed wykonaniem celu dowolnej docelowej, jest wyświetlany w `BeforeTargets` atrybutu jest uruchamiany.  
+5. Przed wykonaniem elementu docelowego, każdy element docelowy, który wyświetla go w `BeforeTargets` atrybucie jest uruchamiany.  
   
-6. Przed wykonaniem celu jego `Inputs` atrybutu i `Outputs` atrybutu są porównywane. Jeśli program MSBuild ustali, że wszystkie pliki wyjściowe są nieaktualne w odniesieniu do odpowiedniego pliku wejściowego lub pliki, a następnie program MSBuild wykonuje element docelowy. W przeciwnym razie program MSBuild pomija element docelowy.  
+6. Przed wykonaniem elementu docelowego jego `Inputs` atrybut i `Outputs` atrybut są porównywane. Jeśli program MSBuild ustali, że wszystkie pliki wyjściowe są nieaktualne w odniesieniu do odpowiedniego pliku lub plików wejściowych, MSBuild wykonuje miejsce docelowe. W przeciwnym razie program MSBuild pomija element docelowy.  
   
-7. Po obiekt docelowy jest wykonywany czy pomijany, wszelkie docelowy, który jest wyświetlany w `AfterTargets` atrybutu jest uruchamiany.  
+7. Po wykonaniu lub pominięciu elementu docelowego, każdy element docelowy, który wyświetla go w `AfterTargets` atrybucie jest uruchamiany.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Docelowe elementy](../msbuild/msbuild-targets.md)
+ [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

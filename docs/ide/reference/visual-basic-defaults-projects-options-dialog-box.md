@@ -15,32 +15,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596389"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Domyślne ustawienia programu Visual Basic, Projekty, okno dialogowe Opcje
-Określa domyślne ustawienia opcji projektu języka Visual Basic. Po utworzeniu nowego projektu, określone instrukcje opcji zostaną dodane do nagłówka projektu w Edytorze kodu. Opcje dotyczą wszystkich projektów języka Visual Basic.
+Określa ustawienia domyślne dla opcji projektu Visual Basic. Po utworzeniu nowego projektu określone instrukcje opcji zostaną dodane do nagłówka projektu w edytorze kodu. Opcje stosują się do wszystkich projektów Visual Basic.
 
-Aby uzyskać dostęp do tego okna dialogowego, w menu **Narzędzia** kliknij polecenie **Opcje**, rozwiń folder **Projekty i rozwiązania,** a następnie kliknij polecenie **Vb Defaults**.
+Aby uzyskać dostęp do tego okna dialogowego, w menu **Narzędzia** kliknij pozycję **Opcje**, rozwiń folder **projekty i rozwiązania** , a następnie kliknij pozycję **domyślne ustawienia języka vb**.
 
- **Opcja jawna**
+ **Opcja Explicit**
 
-Ustawia domyślne kompilatora, tak aby wymagane są jawne deklaracje zmiennych. Domyślnie **opcja Jawna** jest ustawiona **na Wł.** Aby uzyskać więcej informacji, zobacz [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
+Ustawia wartość domyślną kompilatora, tak aby jawne deklaracje zmiennych są wymagane. Domyślnie **opcja Explicit** jest ustawiona na wartość **włączone**. Aby uzyskać więcej informacji, zobacz [/optionexplicit —](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
- **Opcja Ścisła**
+ **Option Strict**
 
-Ustawia domyślne kompilatora, tak aby jawne konwersje zawężające są wymagane i późne powiązanie nie jest dozwolone. Domyślnie **opcja Strict** jest ustawiona na **Wyłącz .** Aby uzyskać więcej informacji, zobacz [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
+Ustawia wartość domyślną kompilatora, tak aby jawne konwersje zawężające są wymagane i późne wiązanie jest niedozwolone. Domyślnie ustawienie **Option Strict** jest **wyłączone**. Aby uzyskać więcej informacji, zobacz [/optionstrict —](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
- **Porównanie opcji**
+ **Opcja Porównaj**
 
-Ustawia domyślne porównania ciągów kompilatora: binarne (z uwzględnieniem wielkości liter) lub tekst (bez uwzględniania wielkości liter). Domyślnie **opcja Porównaj** jest ustawiona na **Binary**. Aby uzyskać więcej informacji, zobacz [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Ustawia domyślny kompilator dla porównań ciągów: binarny (z uwzględnieniem wielkości liter) lub tekst (bez uwzględniania wielkości liter). Domyślnie **opcja Porównaj** jest ustawiona na wartość **binarną**. Aby uzyskać więcej informacji, zobacz [/optioncompare —](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
- **Wywnioskować opcję**
+ **Wnioskowanie dotyczące opcji**
 
-Ustawia domyślny kompilator dla wnioskowania o typie lokalnym. Domyślnie **opcja Wywnioskować** jest ustawiona **na Włączone** dla nowo utworzonych projektów i **Wyłącz** dla migrowanych projektów utworzonych we wcześniejszych wersjach programu Visual Basic. Aby uzyskać więcej informacji, zobacz [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
+Ustawia wartość domyślną kompilatora dla wnioskowania o typie lokalnym. Domyślnie **opcja wnioskowanie** jest ustawiona na wartość **włączone** dla nowo utworzonych projektów i **wyłączone** dla zmigrowanych projektów utworzonych we wcześniejszych wersjach Visual Basic. Aby uzyskać więcej informacji, zobacz [/optioninfer —](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
 ## <a name="see-also"></a>Zobacz też
 

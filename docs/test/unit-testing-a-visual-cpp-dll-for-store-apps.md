@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: corob-msft
 ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285612"
 ---
 # <a name="how-to-test-a-c-dll"></a>Testowanie biblioteki DLL języka C++
@@ -22,7 +22,7 @@ W tym temacie przedstawiono sposób korzystania z testów jednostkowych jako pie
 
 W tym temacie jest również tworzone pojedyncze rozwiązanie programu Visual Studio i oddzielne projekty dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie DLL lub utworzyć oddzielne rozwiązania dla testów jednostkowych i. Bibliotece. Zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/how-to-use-microsoft-test-framework-for-cpp.md) , aby uzyskać wskazówki dotyczące struktury do użycia.
 
-## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a>Utwórz rozwiązanie i projekt testu jednostkowego
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> Utwórz rozwiązanie i projekt testu jednostkowego
 
 ::: moniker range="vs-2019"
 
@@ -58,7 +58,7 @@ Zacznij od utworzenia nowego projektu testowego. W menu **plik** wybierz pozycj�
 
          Gdy testy są uruchamiane, tworzone jest wystąpienie każdej klasy testowej. Metody testowe są wywoływane w nieokreślonej kolejności. Można zdefiniować metody specjalne, które są wywoływane przed i po każdym module, klasie lub metodzie. Aby uzyskać więcej informacji, zobacz [using Microsoft. VisualStudio. TestTools. CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Sprawdź, czy testy są uruchamiane w Eksploratorze testów
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sprawdź, czy testy są uruchamiane w Eksploratorze testów
 
 1. Wstaw kod testu:
 
@@ -77,7 +77,7 @@ Zacznij od utworzenia nowego projektu testowego. W menu **plik** wybierz pozycj�
 
      ![Eksplorator testów](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a>Dodawanie projektu DLL do rozwiązania
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> Dodawanie projektu DLL do rozwiązania
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 
     ```
 
-## <a name="make-the-dll-functions-visible-to-the-test-code"></a><a name="make_the_dll_functions_visible_to_the_test_code"></a>Uczyń funkcje biblioteki DLL widocznymi dla kodu testu
+## <a name="make-the-dll-functions-visible-to-the-test-code"></a><a name="make_the_dll_functions_visible_to_the_test_code"></a> Uczyń funkcje biblioteki DLL widocznymi dla kodu testu
 
 1. Dodaj RooterLib do projektu RooterLibTests.
 
@@ -196,7 +196,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 
    Został skonfigurowany test i projekty kodu i zweryfikowane, że można uruchomić testy, które uruchamiają funkcje w projekcie kodu. Teraz możesz zacząć pisać prawdziwe testy i kod.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Iteracyjnie rozszerza testy i przekazują je
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Iteracyjnie rozszerza testy i przekazują je
 
 1. Dodaj nowy test:
 
@@ -256,7 +256,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 > [!TIP]
 > Opracowuj kod przez dodanie testów pojedynczo. Upewnij się, że wszystkie testy są zakończone po każdej iteracji.
 
-## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a>Debuguj test zakończony niepowodzeniem
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a> Debuguj test zakończony niepowodzeniem
 
 1. Dodaj inny test do *UnitTest1. cpp*:
 
@@ -325,7 +325,7 @@ W **Eksplorator rozwiązań**wybierz nazwę rozwiązania. Z menu skrótów wybie
 
    ![Wszystkie testy zakończone powodzeniem](../test/media/ute_ult_alltestspass.png)
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a>Refaktoryzacja kodu bez zmiany testów
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a> Refaktoryzacja kodu bez zmiany testów
 
 1. Uprość Obliczanie centralne w `SquareRoot` funkcji:
 

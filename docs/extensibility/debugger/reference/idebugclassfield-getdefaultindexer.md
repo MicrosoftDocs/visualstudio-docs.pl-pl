@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Dokumenty firmy Microsoft
+title: 'IDebugClassField:: GetDefaultIndexer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734422"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
 ```
 
 ## <a name="parameters"></a>Parametry
-`pbstrIndexer`[na zewnątrz] Zwraca ciąg zawierający nazwę domyślnego indeksatora.
+`pbstrIndexer` określoną Zwraca ciąg zawierający nazwę domyślnego indeksatora.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK lub zwraca S_FALSE, jeśli nie ma domyślnego indeksatora. W przeciwnym razie zwraca kod błędu.
+ Jeśli to się powiedzie, zwraca S_OK lub zwraca S_FALSE, jeśli nie ma domyślnego indeksatora. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Domyślny indeksator klasy jest właściwość, która `Default` jest oznaczona jako właściwość dla dostępu do tablicy. Jest to [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]specyficzne dla . Oto przykład domyślnego indeksatora [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] zadeklarowanego w i jak jest używany.
+ Domyślny indeksator klasy jest właściwością, która jest oznaczona jako `Default` Właściwość dla dostępu do tablicy. Jest to specyficzne dla programu [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] . Oto przykład domyślnego indeksatora zadeklarowanego w [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] i sposobu jego użycia.
 
 ```vb
 Imports System.Collections;

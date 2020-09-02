@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetObject | Dokumentacja firmy Microsoft
+title: 'IDebugAlias:: GetObject | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bced4d6ea45cc33c3811e42428aa43c334b7b83b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187231"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera obiekt, który dotyczy tego aliasu.  
+Pobiera obiekt, dla którego odnosi się ten alias.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,10 +40,10 @@ int GetObject(
   
 #### <a name="parameters"></a>Parametry  
  `ppObject`  
- [out] [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) reprezentuje ten alias.  
+ określoną [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) tego aliasu reprezentuje.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)   

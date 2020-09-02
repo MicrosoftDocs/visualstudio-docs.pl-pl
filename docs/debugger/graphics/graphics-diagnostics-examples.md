@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4df2fafb523d04a8ec222b10e1ac9ed3aa95454d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187932"
 ---
 # <a name="graphics-diagnostics-examples"></a>Przykłady diagnostyki grafiki
-W poniższych przykładach pokazano, jak debugować problemy z renderowaniem w aplikacjach opartych na technologii DirectX za pomocą Diagnostyka grafiki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+W poniższych przykładach pokazano, jak debugować problemy z renderowaniem w aplikacjach opartych na technologii DirectX przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnostyka grafiki.
 
 ## <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
  Aby móc używać Diagnostyka grafiki do diagnozowania problemów z renderowaniem w aplikacji, musisz przechwycić informacje graficzne z aplikacji, gdy jest ona uruchomiona. Informacje o grafice mogą być przechwytywane z aplikacji, która jest uruchamiana lokalnie, lub z aplikacji uruchomionej na komputerze zdalnym lub innym urządzeniu. Te instruktaże pokazują, jak można ręcznie przechwycić informacje graficzne z aplikacji lub programowo:
 
-- [Przewodnik: przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)
+- [Przewodnik: Przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)
 
 - [Przewodnik: programowe przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information-programmatically.md)
 

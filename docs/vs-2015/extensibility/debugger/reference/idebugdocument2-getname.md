@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Dokumentacja firmy Microsoft
+title: 'IDebugDocument2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09456b20faf4d5f5ea09baa55e0a7fd78a19a95c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186648"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera nazwę dokumentu w jednym z wielu formularzy.  
+Pobiera nazwę dokumentu w jednym z kilku formularzy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,16 +42,16 @@ int GetName( 
   
 #### <a name="parameters"></a>Parametry  
  `gnType`  
- [in] Wartość z zakresu od [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) wyliczenie, który określa typ nazwy do zwrócenia.  
+ podczas Wartość z wyliczenia [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) , która określa typ nazwy do zwrócenia.  
   
  `pbstrFileName`  
- [out] Zwraca ciąg zawierający nazwę dokumentu.  
+ określoną Zwraca ciąg zawierający nazwę dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Tej metody na przykład, można zwrócić nazwę dokumentu jako tytuł lub nazwę pliku lub nawet część nazwy pliku.  
+ Ta metoda może na przykład zwrócić nazwę dokumentu jako tytuł lub nazwę pliku lub parzystą część nazwy pliku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

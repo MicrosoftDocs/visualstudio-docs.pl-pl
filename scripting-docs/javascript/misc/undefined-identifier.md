@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3de7f224b6ff40f1606f9593704f799cd64d32da
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816062"
 ---
 # <a name="undefined-identifier"></a>Niezdefiniowany identyfikator
@@ -34,6 +34,6 @@ Podjęto próbę użycia identyfikatora, którego [!INCLUDE[javascript](../../ja
   
 - Zadeklaruj zmienną za pomocą instrukcji **var** (jak w `var` x;).  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Modyfikacj](../../javascript/variables-javascript.md)   
  [Zakres zmiennej](../../javascript/advanced/variable-scope-javascript.md)

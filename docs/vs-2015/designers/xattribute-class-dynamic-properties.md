@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbafba72829a5dff8dd5665b6271088a3f9339db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663871"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>Właściwości dynamiczne klasy XAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tej sekcji opisano właściwości dynamiczne <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>.
+W tej sekcji opisano właściwości dynamiczne <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> .
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -28,4 +28,4 @@ W tej sekcji opisano właściwości dynamiczne <xref:System.Xml.Linq.XAttribute?
 |[Wartość](../designers/value-xattribute-dynamic-property.md)|Pobiera lub ustawia wartość atrybutu XML.|
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> [LINQ to XML właściwości dynamiczne](../designers/linq-to-xml-dynamic-properties.md) [XElement właściwości dynamiczne](../designers/xelement-class-dynamic-properties.md)
+ <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>[LINQ to XML właściwości dynamiczne](../designers/linq-to-xml-dynamic-properties.md) [XElement właściwości dynamiczne](../designers/xelement-class-dynamic-properties.md)

@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538388"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word
@@ -48,7 +48,7 @@ ms.locfileid: "85538388"
 
   Aby uzyskać informacje o kontrolkach zawartości, zobacz [formanty zawartości](../vsto/content-controls.md).
 
-## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a>Dodawanie kontrolek zawartości w czasie projektowania
+## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> Dodawanie kontrolek zawartości w czasie projektowania
  Istnieje kilka sposobów dodawania kontrolek zawartości do dokumentu w projekcie na poziomie dokumentu w czasie projektowania:
 
 - Dodaj kontrolkę zawartość z karty **formanty słowa** w **przyborniku**.
@@ -94,7 +94,7 @@ ms.locfileid: "85538388"
 
 3. W grupie **formanty** kliknij ikonę dla kontrolki zawartości, którą chcesz dodać.
 
-## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Dodawanie kontrolek zawartości w czasie wykonywania w projekcie na poziomie dokumentu
+## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Dodawanie kontrolek zawartości w czasie wykonywania w projekcie na poziomie dokumentu
  Kontrolki zawartości można dodawać programowo do dokumentu w czasie wykonywania przy użyciu metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości `ThisDocument` klasy w projekcie. Każda metoda ma trzy przeciążenia, których można użyć do dodania kontrolki zawartości w następujący sposób:
 
 - Dodaj kontrolkę w bieżącym zaznaczeniu.
@@ -135,7 +135,7 @@ ms.locfileid: "85538388"
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Dodawanie kontrolek zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Dodawanie kontrolek zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO
  Formanty zawartości można dodawać programowo do dowolnego otwartego dokumentu w czasie wykonywania przy użyciu dodatku VSTO. W tym celu należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> element hosta, który jest oparty na otwartym dokumencie, a następnie użyć metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu hosta. Każda metoda ma trzy przeciążenia, których można użyć do dodania kontrolki zawartości w następujący sposób:
 
 - Dodaj kontrolkę w bieżącym zaznaczeniu.

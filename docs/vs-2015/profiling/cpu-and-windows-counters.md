@@ -1,5 +1,5 @@
 ---
-title: CPU i liczniki Windows | Dokumentacja firmy Microsoft
+title: Liczniki procesora i systemu Windows | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,40 +15,40 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434302"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64808653"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU i liczniki systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio Profiler umożliwia zbieranie danych wydajności, który został wygenerowany przez system operacyjny (liczniki Windows) i dane wydajności, który został wygenerowany przez jednostkę procesora (liczniki CPU).  
+Program Visual Studio profiler umożliwia zbieranie danych wydajności wygenerowanych przez system operacyjny (liczniki systemu operacyjnego) i dane wydajności, które zostały wygenerowane przez jednostkę procesora (liczniki procesora).  
   
  **Wymagania**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje ze sklepu Windows wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="windows-counters"></a>Liczniki Windows  
- Windows liczniki są częścią infrastruktury diagnostycznej Windows, który zawiera informacje o wydajności systemu operacyjnego lub aplikacji, usługi lub sterownika. Liczniki Windows zależą od konfiguracji bieżącego komputera i mogą nie być dostępne na innych komputerach. Liczniki wydajności Windows są gromadzone w pliku danych jako znaczników, które następnie mogą być używane do filtrowania, widoki i raporty profilowania profilowania.  
+## <a name="windows-counters"></a>Liczniki systemu Windows  
+ Liczniki systemu Windows są częścią infrastruktury diagnostyki systemu Windows, która zawiera informacje o wydajności systemu operacyjnego lub aplikacji, usługi lub sterownika. Liczniki systemu Windows są zależne od konfiguracji bieżącego komputera i mogą nie być dostępne na innych komputerach. Liczniki wydajności systemu Windows są zbierane w profilowanych plikach danych jako znaczniki profilowania, które mogą być następnie używane do filtrowania widoków i raportów.  
   
 ## <a name="cpu-counters"></a>Liczniki procesora CPU  
- Liczniki procesora CPU są funkcją procesora komputera, które przechowują liczbę zdarzeń związanych ze sprzętem.  Podczas zbierania danych licznika Procesora przy użyciu Instrumentacji, metoda profilowania, dane są dołączane do danych dla funkcji i modułów. Możesz zbierać wiele liczników CPU przy użyciu metody instrumentacji. Korzystając z metody pobierania próbek, możesz wybrać jeden licznik do użycia jako zdarzenia mają być pobrane próbki.  
+ Liczniki procesora są funkcją procesora komputera, która przechowuje liczbę zdarzeń związanych ze sprzętem.  Podczas zbierania danych licznika procesora przy użyciu metody profilowania Instrumentacji dane są dołączane do danych dla funkcji i modułów. Można zbierać wiele liczników procesora CPU przy użyciu metody instrumentacji. Korzystając z metody próbkowania, należy wybrać jeden licznik, który będzie używany jako zdarzenie do próbkowania.  
   
- Liczniki wydajności są specyficzne dla procesora CPU. Różne modele i wersje Procesora mogą mieć znacząco różnych ustawień konfiguracji umożliwiające tego samego licznika wydajności. [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Zdarzenia przenośne Profiler rozdzielenie kilka typowych liczników wydajności z określonych procesorów i umożliwiają zbieranie i przykładowe zdarzenia ogólnych problemów z wydajnością.  
+ Liczniki wydajności są specyficzne dla procesora. Różne modele i wersje procesora mogą mieć znacznie różne ustawienia konfiguracji umożliwiające włączenie tego samego licznika wydajności. [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Zdarzenia przenośne profilera oddzielą niektóre typowe liczniki wydajności z określonych procesorów i umożliwiają zbieranie lub próbkowanie ogólnych zdarzeń wydajności.  
   
- Jeśli zechcesz policzyć określonego zdarzenia, gdy używasz programu profilującego, na przykład Chybienia pamięci podręcznej L2, tworzyć sesji pomiaru wydajności wokół tego nadawcy zdarzeń. Można to zrobić na dowolny procesor CPU z pamięci podręcznej L2. Sesja wydajności można przenosić z platformami bez żadnych modyfikacji.  
+ Jeśli chcesz zliczać konkretne zdarzenie przy użyciu profilera, na przykład Chybienia pamięci podręcznej L2, możesz utworzyć sesję wydajności dla tego nadawcy zdarzeń. Można to zrobić na dowolnym PROCESORze z pamięcią podręczną L2. Sesję wydajności można przenieść z platformy na platformę bez modyfikacji.  
   
- Profilera Visual Studio w dalszym ciągu obsługuje określonych zdarzeń dla określonej platformy. Na przykład Deweloper na platformie Pentium 4 chcieć liczba zdarzeń, które są specyficzne dla architektury NetBurst. To zdarzenie nie jest przenośny, ale nadal dostępne dla dewelopera dla sesji wydajności określonych na danej platformie.  
+ Program Visual Studio profiler kontynuuje obsługę określonych zdarzeń dla określonej platformy. Na przykład Deweloper na platformie Pentium 4 może chcieć obliczyć zdarzenia specyficzne dla architektury sieci. To zdarzenie nie jest przenośne, ale nadal jest dostępne dla dewelopera dla konkretnej sesji wydajności na określonej platformie.  
   
-## <a name="portable-and-platform-events"></a>Przenośny i zdarzenia platformy  
- Zdarzenia przenośne są grupy liczniki procesora CPU, które nie są specyficzne dla określonego procesora. Wszystkie liczniki procesora CPU są nazywane zdarzeń platformy i może nie być obsługiwany na różnych platformach.  
+## <a name="portable-and-platform-events"></a>Zdarzenia przenośne i platformy  
+ Zdarzenia przenośne są grupą liczników procesora, które nie są specyficzne dla określonego procesora. Wszystkie inne liczniki procesora CPU są nazywane zdarzeniami platformy i mogą nie być obsługiwane na różnych platformach.  
   
- Liczniki dla zdarzenia przenośne i platformy są definiowane w. Pliki XML, gdzie znajdują się określonej wartości, które są związane z licznikami. Istnieją różne procesory, wiele plików, ponieważ dane dotyczące firmy Intel i procesory AMD, na przykład różnią się. [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Profiler używa tych informacji do przedstawienia odpowiednich liczników, przenośne i platformy, dla użytkownika na potrzeby pomiaru wydajności.  
+ Liczniki dla zdarzeń przenośnych i platform są zdefiniowane w. Pliki XML, gdzie określone wartości, które są związane z licznikami, są dostarczane. Istnieje wiele plików dla różnych procesorów CPU, ponieważ dane dla procesorów Intel i AMD, na przykład są różne. [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)]Profiler używa tych informacji, aby przedstawić odpowiednie liczniki, zarówno przenośne, jak i platformy, do użytkownika w celu pomiaru wydajności.  
   
 ### <a name="portable-events"></a>Zdarzenia przenośne  
  Zdarzenia przenośne zawierają następujące zdarzenia:  
@@ -57,80 +57,80 @@ Visual Studio Profiler umożliwia zbieranie danych wydajności, który został w
   
 |Nazwa zdarzenia|Opis zdarzenia|  
 |----------------|-----------------------|  
-|Wycofane instrukcje|Wskazuje liczbę instrukcji, które wykonywane do momentu zakończenia zdarzenia.|  
-|Cykle niezatrzymane|Wskazuje tylko te cykle, w których procesor nie jest wyłączana, na przykład oczekiwania na We/Wy.|  
+|Wycofane instrukcje|Wskazuje liczbę instrukcji, które są wykonywane do momentu ukończenia zdarzenia.|  
+|Cykle niezatrzymane|Wskazuje tylko te cykle, w których procesor nie jest zatrzymany, na przykład w przypadku oczekiwania na we/wy.|  
   
  **Zdarzenia frontonu**  
   
 |Nazwa zdarzenia|Opis zdarzenia|  
 |----------------|-----------------------|  
-|Chybienia buforu ITLB|Wskazuje liczbę wyszukiwania buforu wygląd odkładania do tłumaczenia instrukcji, które spowodowało trafienia.|  
+|Chybienia ITLB|Wskazuje liczbę przeszukiwanych buforów przeszukiwanych w tłumaczeniach instrukcji, które spowodowały brak.|  
   
- **Zdarzenia dotyczące gałęzi**  
-  
-|Nazwa zdarzenia|Opis zdarzenia|  
-|----------------|-----------------------|  
-|Wycofane gałęzie|Wskazuje liczbę instrukcji gałęzi wykonywana do czasu zakończenia zdarzenia.|  
-|Źle przewidziane gałęzie|Wskazuje źle przewidziane gałęzie, które występują, ponieważ procesor przewidzieć ścieżka jest niepoprawna. Źle przewidziane gałęzie wpłynąć na wydajność, ponieważ procesor Odrzuć wszystkie prace wykonane i uruchom ponownie na poprawną ścieżkę.|  
-  
- **Zdarzeń pamięci:**  
+ **Zdarzenia gałęzi**  
   
 |Nazwa zdarzenia|Opis zdarzenia|  
 |----------------|-----------------------|  
-|L2 Chybienia odczytu pamięci podręcznej|Wskazuje, że liczba drugiego poziomu pamięci podręcznej odczytu Chybienia.|  
-|L2 Odwołania odczytu pamięci podręcznej|Wskazuje, że liczba drugiego poziomu pamięci podręcznej odczytu odwołania. Zawiera Chybienia ładowania i przeczytaj Chybienia własności (RFO) i trafień.|  
+|Wycofane gałęzie|Wskazuje liczbę instrukcji gałęzi wykonywanych do momentu ukończenia zdarzenia.|  
+|Nieprzewidywalne gałęzie|Wskazuje źle przewidywalną gałąź, która występuje, ponieważ procesor przewidział niepoprawną ścieżkę. Nieprawidłowo przewidywane gałęzie mają wpływ na wydajność, ponieważ procesor musi odrzucić wszystkie wykonane zadania i ponownie uruchomić w poprawnej ścieżce.|  
   
-## <a name="viewing-available-counters"></a>Wyświetlanie dostępne liczniki  
- Możesz wyświetlić listę dostępne liczniki procesora CPU w środowisku IDE programu Visual Studio w oknie wiersza polecenia.  
+ **Zdarzenia pamięci:**  
   
-### <a name="visual-studio-ui"></a>Visual Studio UI  
- Aby wyświetlić listę dostępnych liczników na komputerze w środowisku IDE programu Visual Studio, konieczne jest posiadanie sesję wydajności programu profilującego, Otwórz w Eksploratorze wydajności.  
+|Nazwa zdarzenia|Opis zdarzenia|  
+|----------------|-----------------------|  
+|Chybienia odczytu pamięci podręcznej L2|Wskazuje liczbę chybień odczytu pamięci podręcznej drugiego poziomu.|  
+|Odwołania odczytu pamięci podręcznej L2|Wskazuje liczbę odwołań do odczytu pamięci podręcznej drugiego poziomu. Obejmuje to chybień i odczyty dla chybień (RFO) i trafień.|  
   
-##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Aby wyświetlić listę listę wszystkie liczniki procesora CPU, które są obsługiwane na bieżącej platformie  
+## <a name="viewing-available-counters"></a>Wyświetlanie dostępnych liczników  
+ Dostępne liczniki procesora można wyświetlić w środowisku IDE programu Visual Studio, w oknie wiersza polecenia.  
   
-1. W Eksploratorze wydajności, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.  
+### <a name="visual-studio-ui"></a>Interfejs użytkownika programu Visual Studio  
+ Aby wyświetlić listę dostępnych liczników na komputerze w środowisku IDE programu Visual Studio, należy otworzyć sesję wydajności profilera w Eksplorator wydajności.  
+  
+##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Aby wyświetlić listę wszystkich liczników procesora CPU, które są obsługiwane przez bieżącą platformę  
+  
+1. W Eksplorator wydajności kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.  
   
 2. Wykonaj jedną z następujących czynności:  
   
-   - Kliknij przycisk **próbkowania**, a następnie wybierz pozycję **licznika wydajności** z **przykładowe** listy zdarzeń. Liczniki procesora CPU są wymienione w **dostępnych liczników wydajności**.  
+   - Kliknij pozycję **próbkowanie**, a następnie wybierz pozycję **licznik wydajności** z listy zdarzeń **przykładowych** . Liczniki procesora CPU są wymienione w **dostępnych licznikach wydajności**.  
   
-      **Uwaga** kliknij **anulować** aby powrócić do poprzedniej konfiguracji pobierania próbek.  
+      **Uwaga** Kliknij przycisk **Anuluj** , aby powrócić do poprzedniej konfiguracji próbkowania.  
   
-     —lub—  
+     -lub-  
   
-   - Wybierz **liczniki CPU**, a następnie wybierz pozycję **zbierania liczników Procesora**. Liczniki procesora CPU są wymienione w **dostępne liczniki**.  
+   - Wybierz pozycję **liczniki procesora**, a następnie wybierz pozycję **Zbierz liczniki procesora CPU**. Liczniki procesora CPU są wymienione w **dostępnych licznikach**.  
   
-      **Uwaga** kliknij **anulować** aby powrócić do poprzedniej konfiguracji licznika w kolekcji.  
+      **Uwaga** Kliknij przycisk **Anuluj** , aby powrócić do poprzedniej konfiguracji kolekcji liczników.  
   
-##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Aby wyświetlić listę listę liczników okna, które są obsługiwane na bieżącej platformie  
+##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Aby wyświetlić listę liczników okna, które są obsługiwane przez bieżącą platformę  
   
-1. W Eksploratorze wydajności, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.  
+1. W Eksplorator wydajności kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **liczniki Windows**.  
+2. Kliknij pozycję **liczniki systemu Windows**.  
   
-3. Wybierz **Zbierz liczniki Windows**.  
+3. Wybierz pozycję **Zbierz liczniki systemu Windows**.  
   
-4. Z **kategorii licznika** , wybierz grupę liczników na liście. Licznik Windows grupy jest wyświetlana w polu listy.  
+4. Z listy **Kategoria licznika** wybierz grupę liczników. W polu listy zostanie wyświetlony licznik systemu Windows dla grupy.  
   
-     **Uwaga:** Kliknij przycisk **anulować** aby powrócić do poprzedniej konfiguracji licznika w kolekcji.  
+     **Uwaga:** Kliknij przycisk **Anuluj** , aby powrócić do poprzedniej konfiguracji kolekcji liczników.  
   
 ### <a name="command-line"></a>Wiersz polecenia  
- Za pomocą [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, możesz wyświetlić listę liczniki procesora CPU, które są dostępne na komputerze z poziomu wiersza polecenia.  
+ Za pomocą narzędzia wiersza polecenia [VSPerfCmd](../profiling/vsperfcmd.md) można wyświetlić listę liczników procesora, które są dostępne na komputerze z wiersza polecenia.  
   
-##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Na liście liczników procesora CPU, które są obsługiwane na bieżącej platformie  
+##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Aby wyświetlić listę liczników procesora, które są obsługiwane przez bieżącą platformę  
   
 1. Otwórz okno wiersza polecenia.  
   
 2. Typ  
   
-     **\<Katalog narzędzi wydajności w usłudze Visual Studio >/querycounters \VSPerfCmd**  
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd/QueryCounters**  
   
-     gdzie  **\<katalogu narzędzi wydajności w usłudze Visual Studio >** zazwyczaj jest to ścieżka do narzędzia do oceny wydajności katalogu instalacji programu Visual Studio  
+     gdzie **\<Visual Studio Performance Tools Directory>** jest ścieżką do katalogu narzędzi wydajności instalacji programu Visual Studio, zazwyczaj  
   
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+     C:\Program Files\Microsoft Visual Studio 10.0 \ Team Tools\Performance Tools  
   
 ## <a name="see-also"></a>Zobacz też  
  [Omówienie](../profiling/overviews-performance-tools.md)   
- [Instrukcje: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)   
- [Instrukcje: Zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)   
- [Instrukcje: Zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)
+ [Instrukcje: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)   
+ [Instrukcje: zbieranie danych licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Instrukcje: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)

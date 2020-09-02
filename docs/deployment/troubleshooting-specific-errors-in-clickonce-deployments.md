@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235163"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
@@ -47,7 +47,7 @@ W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić 
 
 - Ustal, czy ten błąd wystąpił, ponieważ `deploymentProvider` adres URL w manifeście wdrożenia wskazuje inną lokalizację niż adres URL używany na potrzeby aktywacji.
 
-- Upewnij się, że wszystkie pliki są obecne na serwerze; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Dziennik powinien poinformować o tym, który plik nie został znaleziony.
+- Upewnij się, że wszystkie pliki są obecne na serwerze; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Dziennik powinien poinformować o tym, który plik nie został znaleziony.
 
 - Sprawdź, czy występują problemy z łącznością sieciową; Możesz otrzymać ten komunikat, jeśli komputer kliencki przeszedł w tryb offline podczas pobierania.
 
@@ -68,13 +68,13 @@ W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić 
 
 - Sprawdź interwał aktualizacji w manifeście wdrożenia. Jeśli dla tego interwału określono okresowe interwały, na przykład co sześć godzin, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] program nie będzie skanować w poszukiwaniu aktualizacji, dopóki ten interwał nie zostanie zakończony. Można zmienić manifest, aby przeprowadzić skanowanie w poszukiwaniu aktualizacji za każdym razem, gdy aplikacja zostanie uruchomiona. Zmiana interwału aktualizacji jest wygodną opcją w czasie projektowania w celu sprawdzenia, czy aktualizacje są instalowane, ale spowalniają aktywację aplikacji.
 
-- Spróbuj ponownie uruchomić aplikację w menu Start. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Program mógł wykryć aktualizację w tle, ale wyświetli monit o zainstalowanie usługi BITS przy następnej aktywacji.
+- Spróbuj ponownie uruchomić aplikację w menu Start. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Program mógł wykryć aktualizację w tle, ale wyświetli monit o zainstalowanie usługi BITS przy następnej aktywacji.
 
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Podczas aktualizacji zostanie wyświetlony komunikat o błędzie o następującym wpisie dziennika: "odwołanie w tym wdrożeniu nie jest zgodne z tożsamością zdefiniowaną w manifeście aplikacji"
  Ten błąd może wystąpić, ponieważ zostały ręcznie edytowane manifesty wdrożenia i aplikacji oraz spowodowały, że opis tożsamości zestawu w jednym manifeście stanie się niezsynchronizowany z drugim. Tożsamość zestawu składa się z jego nazwy, wersji, kultury i tokenu klucza publicznego. Sprawdź opisy tożsamości w manifestach i popraw różnice.
 
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Po raz pierwszy Aktywacja z dysku lokalnego lub dysku CD-ROM powiedzie się, ale kolejna Aktywacja z menu Start nie powiedzie się
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]przy użyciu adresu URL dostawcy wdrożenia otrzymuje aktualizacje aplikacji. Sprawdź, czy lokalizacja wskazywana przez adres URL jest poprawna.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przy użyciu adresu URL dostawcy wdrożenia otrzymuje aktualizacje aplikacji. Sprawdź, czy lokalizacja wskazywana przez adres URL jest poprawna.
 
 #### <a name="error-cannot-start-the-application"></a>Błąd: "nie można uruchomić aplikacji"
  Ten komunikat o błędzie zazwyczaj wskazuje, że występuje problem z instalowaniem tej aplikacji w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sklepie. Wystąpił błąd aplikacji albo magazyn jest uszkodzony. Plik dziennika może poinformować o miejscu wystąpienia błędu.
@@ -128,15 +128,15 @@ W tym artykule wymieniono następujące typowe błędy, które mogą wystąpić 
 | Nie można kontynuować. Aplikacja jest nieprawidłowo sformatowana. Skontaktuj się z wydawcą aplikacji w celu uzyskania pomocy.<br /><br /> Weryfikacja aplikacji nie powiodła się. Nie można kontynuować.<br /><br /> Nie można pobrać plików aplikacji. Pliki są uszkodzone we wdrożeniu. | Jeden z plików manifestu we wdrożeniu jest syntaktycznie nieprawidłowy lub zawiera skrót, którego nie można uzgodnić z odpowiednim plikiem. Ten błąd może również wskazywać na uszkodzenie manifestu osadzonego wewnątrz zestawu. Ponownie Utwórz wdrożenie i skompiluj swoją aplikację lub ręcznie Znajdź i napraw błędy w manifestach. |
 | Nie można pobrać aplikacji. Błąd uwierzytelniania.<br /><br /> Instalacja aplikacji nie powiodła się. Nie można zlokalizować plików aplikacji na serwerze. Skontaktuj się z wydawcą aplikacji lub administratorem w celu uzyskania pomocy. | Nie można pobrać co najmniej jednego pliku we wdrożeniu, ponieważ nie masz uprawnień dostępu do nich. Może to być spowodowane błędem zakazanym przez 403 błąd, który może wystąpić, jeśli jeden z plików w danym wdrożeniu zostanie zakończony rozszerzeniem, który sprawia, że serwer sieci Web traktuje go jako plik chroniony. Ponadto katalog zawierający co najmniej jeden plik aplikacji może wymagać nazwy użytkownika i hasła w celu uzyskania dostępu. |
 | Nie można pobrać aplikacji. W aplikacji brakuje wymaganych plików. Skontaktuj się z dostawcą aplikacji lub administratorem systemu, aby uzyskać pomoc. | Na serwerze nie można odnaleźć co najmniej jednego pliku wymienionego w manifeście aplikacji. Sprawdź, czy wszystkie pliki zależne od wdrożenia zostały przekazane, i spróbuj ponownie. |
-| Pobieranie aplikacji nie powiodło się. Sprawdź połączenie sieciowe lub skontaktuj się z administratorem systemu lub dostawcą usług sieciowych. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]nie można nawiązać połączenia sieciowego z serwerem. Sprawdź dostępność serwera i stan sieci. |
+| Pobieranie aplikacji nie powiodło się. Sprawdź połączenie sieciowe lub skontaktuj się z administratorem systemu lub dostawcą usług sieciowych. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nie można nawiązać połączenia sieciowego z serwerem. Sprawdź dostępność serwera i stan sieci. |
 | URLDownloadToCacheFile nie powiodła się. wynik HRESULT to " \<number> ". Wystąpił błąd podczas próby pobrania " \<file> ". | Jeśli Użytkownik ustawił opcję zaawansowanego zabezpieczeń programu Internet Explorer "Ostrzegaj w przypadku zmiany między trybem bezpiecznym i niezabezpieczonym" na komputerze docelowym wdrożenia, a jeśli adres URL instalacji instalowanej aplikacji ClickOnce zostanie przekierowany z niezabezpieczonej do zabezpieczonej lokacji (lub odwrotnie), instalacja zakończy się niepowodzeniem, ponieważ ostrzeżenie programu Internet Explorer przerwie ją.<br /><br /> Aby rozwiązać ten problem, można wykonać jedną z następujących czynności:<br /><br /> -Wyczyść opcję Zabezpieczenia.<br />-Upewnij się, że adres URL instalacji nie jest przekierowywany w taki sposób, że zmienia tryby zabezpieczeń.<br />-Usuń Przekierowanie całkowicie i wskaż rzeczywisty adres URL instalacji. |
 | Wystąpił błąd podczas zapisywania na dysku twardym. Na dysku może być za mało dostępnego miejsca. Skontaktuj się z dostawcą aplikacji lub administratorem systemu, aby uzyskać pomoc. | Może to wskazywać na niewystarczającą ilość miejsca na dysku do przechowywania aplikacji, ale może także wskazywać bardziej ogólny błąd we/wy podczas próby zapisania plików aplikacji na dysku. |
 | Nie można uruchomić aplikacji. Za mało dostępnego miejsca na dysku. | Dysk twardy jest pełny. Wyczyść wolne miejsce i spróbuj ponownie uruchomić aplikację. |
-| Podjęto próbę załadowania zbyt wielu wdrożonych aktywacji jednocześnie. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ogranicza liczbę różnych aplikacji, które mogą być uruchamiane w tym samym czasie. Jest to bardzo duże bezpieczeństwo przed złośliwymi próbami zaewidencjonowania ataków typu "odmowa usługi" [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] w usłudze lokalnej; Użytkownicy, którzy próbują wielokrotnie uruchomić tę samą aplikację, w krótkim sukcesie będą kończyć się tylko jednym wystąpieniem aplikacji. |
+| Podjęto próbę załadowania zbyt wielu wdrożonych aktywacji jednocześnie. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ogranicza liczbę różnych aplikacji, które mogą być uruchamiane w tym samym czasie. Jest to bardzo duże bezpieczeństwo przed złośliwymi próbami zaewidencjonowania ataków typu "odmowa usługi" [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] w usłudze lokalnej; Użytkownicy, którzy próbują wielokrotnie uruchomić tę samą aplikację, w krótkim sukcesie będą kończyć się tylko jednym wystąpieniem aplikacji. |
 | Skrótów nie można aktywować za pośrednictwem sieci. | Skróty do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji można uruchamiać tylko na lokalnym dysku twardym. Nie można ich uruchomić, otwierając adres URL wskazujący na plik skrótu na serwerze zdalnym. |
 | Aplikacja jest zbyt duża, aby można było uruchomić ją w trybie online w częściowej relacji zaufania. Skontaktuj się z dostawcą aplikacji lub administratorem systemu, aby uzyskać pomoc. | Aplikacja działająca w częściowej relacji zaufania nie może być większa niż połowa rozmiaru limitu przydziału aplikacji online, która domyślnie wynosi 250 MB. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Rozwiązywanie problemów z wdrożeniami technologii ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

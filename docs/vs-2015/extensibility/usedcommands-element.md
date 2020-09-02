@@ -1,5 +1,5 @@
 ---
-title: UsedCommands, Element | Dokumentacja firmy Microsoft
+title: UsedCommands — element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba37458e0f8abca27047574170ab8aa3cc7a44ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186293"
 ---
 # <a name="usedcommands-element"></a>UsedCommands, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-UsedCommands, element grupy elementów UsedCommand i inne grupy UsedCommands.  
+Element UsedCommands Grupuje elementy UsedCommand i inne grupowania UsedCommands.  
   
- UsedCommands, element jest opcjonalne. Nie wywołuj polecenia zdefiniowane poza pakietu, nie trzeba umieścić w tej sekcji w pliku vsct.  
+ Element UsedCommands jest opcjonalny. Jeśli nie wywołasz poleceń zdefiniowanych poza pakietem, nie musisz uwzględniać tej sekcji w pliku. vsct.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,13 +48,13 @@ UsedCommands, element grupy elementów UsedCommand i inne grupy UsedCommands.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[UsedCommand, element](../extensibility/usedcommand-element.md)|Polecenie, które jest implementowany przez inny kod.|  
+|[UsedCommand, element](../extensibility/usedcommand-element.md)|Polecenie, które jest implementowane przez inny kod.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń (na przykład, elementy menu, menu, paski narzędzi i pola kombi), które zapewnia pakietu VSPackage do zintegrowanego środowiska programistycznego (IDE).|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia (na przykład elementy menu, menu, paski narzędzi i pola kombi), które pakietu VSPackage zapewnia zintegrowane środowisko programistyczne (IDE).|  
   
 ## <a name="example"></a>Przykład  
   
@@ -67,5 +67,5 @@ UsedCommands, element grupy elementów UsedCommand i inne grupy UsedCommands.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [UsedCommand, Element](../extensibility/usedcommand-element.md)   
+ [UsedCommand, element](../extensibility/usedcommand-element.md)   
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

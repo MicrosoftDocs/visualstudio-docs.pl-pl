@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285412"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Wdrażanie aplikacji w folderze lokalnym przy użyciu programu Visual Studio
@@ -40,7 +40,7 @@ Za pomocą narzędzia do **publikowania** można publikować aplikacje ASP.NET, 
 
     ![Określ ścieżkę do folderu](../deployment/media/quickstart-publish-folder-path.png "Wybierz folder")
 
-1. Wybierz polecenie **Publikuj**. Program Visual Studio kompiluje projekt i publikuje go w określonym folderze. Zostanie wyświetlone okienko **Publikowanie** właściwości projektu przedstawiające Podsumowanie profilu.
+1. Wybierz pozycję **Opublikuj**. Program Visual Studio kompiluje projekt i publikuje go w określonym folderze. Zostanie wyświetlone okienko **Publikowanie** właściwości projektu przedstawiające Podsumowanie profilu.
 
     ![Okienko właściwości publikowania przedstawiające Podsumowanie profilu](../deployment/media/quickstart-publish-folder-summary.png)
 

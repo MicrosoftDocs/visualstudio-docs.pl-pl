@@ -1,5 +1,5 @@
 ---
-title: Datakind — | Dokumentacja firmy Microsoft
+title: Typ datakind | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197633"
 ---
 # <a name="datakind"></a>DataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wskazuje zakresu określonej wartości danych.  
+Wskazuje konkretny zakres wartości danych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,19 +44,19 @@ enum DataKind { 
   
 ## <a name="elements"></a>Elementy  
  DataIsUnknown  
- Nie można ustalić symbol danych.  
+ Nie można określić symbolu danych.  
   
  DataIsLocal  
  Element danych jest zmienną lokalną.  
   
  DataIsStaticLocal  
- Element danych jest statyczna zmienna lokalna.  
+ Element danych jest statyczną zmienną lokalną.  
   
  DataIsParam  
- Element danych jest parametrów formalnych.  
+ Element danych jest parametrem formalnym.  
   
  DataIsObjectPtr  
- Element danych jest wskaźnikiem obiektu (`this`).  
+ Element danych jest wskaźnikiem obiektu ( `this` ).  
   
  DataIsFileStatic  
  Element danych jest zmienną o zakresie pliku.  
@@ -68,16 +68,16 @@ enum DataKind { 
  Element danych jest zmienną elementu członkowskiego obiektu.  
   
  DataIsStaticMember  
- Element danych jest zmienna statyczna klasy.  
+ Element danych jest zmienną statyczną klasy.  
   
  DataIsConstant  
- Element danych jest wartością stałą.  
+ Element danych jest stałą wartością.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_datakind —](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez metodę [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: cvconst.h  
+ Nagłówek: cvconst. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   

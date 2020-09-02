@@ -1,5 +1,5 @@
 ---
-title: Raport znaczników | Dokumenty firmy Microsoft
+title: Raport znaczników | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,34 +11,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64808272"
 ---
 # <a name="markers-report"></a>Raport dotyczący znaczników
-Raport znaczników zawiera listę znaczników w wyświetlonym przedziale czasowym.  Przesuwanie, powiększanie lub ukrywanie pasów ruchu może spowodować pojawienie się lub zniknięcie znaczników. Raport zawiera te informacje o każdym znaczniku:
+Raport znaczniki wyświetla listę znaczników w wyświetlanym czasie.  Kadrowanie lub powiększanie lub ukrywanie ścieżek może spowodować, że znaczniki będą widoczne lub znikane. Raport zawiera te informacje o każdym znaczniku:
 
-- Czas, kiedy się rozpoczął, w stosunku do początku śledzenia.
+- Godzina rozpoczęcia śledzenia, odnosząca się do początku.
 
-- Jego czas trwania. Czas trwania wynosi zero dla flag i wiadomości, ponieważ reprezentują one chwilę.
+- Jego czas trwania. Czas trwania flag i komunikatów jest równy zero, ponieważ reprezentuje on natychmiastowe.
 
 - Identyfikator wątku, który go wygenerował.
 
 - Dostawca śledzenia zdarzeń dla systemu Windows (ETW), który go wygenerował.
 
-- Seria znaczników, z której została napisana.
+- Seria znaczników, z której został zapisany.
 
 - Kategoria zdarzeń, do której należy.
 
 - Jego poziom ważności.
 
-- Jego typ (zakres, flaga lub wiadomość).
+- Jego typ (zakres, flaga lub komunikat).
 
-- Opis wysokiego poziomu tego, co reprezentuje
+- Ogólny opis tego, co reprezentuje
 
-  Wybierz przycisk **Eksportuj,** aby zapisać raport znaczników jako plik CSV. Dane w pliku CSV można używać z innymi aplikacjami lub narzędziami.
+  Wybierz przycisk **Eksportuj** , aby zapisać raport znaczników jako plik CSV. Możesz użyć danych z pliku CSV z innymi aplikacjami lub narzędziami.
 
 > [!NOTE]
-> Raport znaczników może wyświetlać 1000 znaczników. Aby wyświetlić wszystkie znaczniki, wyeksportuj pełny raport do pliku CSV.
+> Raport znaczników może zawierać 1 000 znaczników. Aby wyświetlić wszystkie znaczniki, należy wyeksportować pełny raport do pliku CSV.

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538323"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Instrukcje: Dodawanie formantów ListObject do arkuszy
@@ -37,7 +37,7 @@ ms.locfileid: "85538323"
 
   Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolek, zobacz [ListObject Control](../vsto/listobject-control.md).
 
-## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a>Dodawanie formantów ListObject w czasie projektowania
+## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Dodawanie formantów ListObject w czasie projektowania
  Istnieje kilka sposobów dodawania <xref:Microsoft.Office.Tools.Excel.ListObject> formantów do arkusza w projekcie na poziomie dokumentu w czasie projektowania: z poziomu programu Excel, z **przybornika**programu Visual Studio i z okna **źródła danych** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "85538323"
 
      <xref:Microsoft.Office.Tools.Excel.ListObject>Do arkusza zostanie dodany formant powiązany z danymi. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych i Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Dodawanie formantów ListObject w czasie wykonywania w projekcie na poziomie dokumentu
+## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Dodawanie formantów ListObject w czasie wykonywania w projekcie na poziomie dokumentu
  Formant można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> dynamicznie w czasie wykonywania. Dzięki temu można tworzyć kontrolki hosta w odpowiedzi na zdarzenia. Obiekty list utworzone dynamicznie nie są utrwalane w arkuszu jako kontrolki hosta, gdy arkusz jest zamknięty. Aby uzyskać więcej informacji, zobacz [Dodawanie kontrolek do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Aby programowo dodać formant ListObject do arkusza
@@ -76,7 +76,7 @@ ms.locfileid: "85538323"
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Dodawanie formantów ListObject w czasie wykonywania w projekcie dodatku narzędzi VSTO
+## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Dodawanie formantów ListObject w czasie wykonywania w projekcie dodatku narzędzi VSTO
  Formant można dodać <xref:Microsoft.Office.Tools.Excel.ListObject> programowo do dowolnego otwartego arkusza w projekcie dodatku VSTO. Obiekty list utworzone dynamicznie nie są utrwalane w arkuszu jako formanty hosta, gdy arkusz jest zapisywany, a następnie zamknięty. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzając dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Aby programowo dodać formant ListObject do arkusza
@@ -86,7 +86,7 @@ ms.locfileid: "85538323"
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rozwiń dokumenty programu Word i skoroszyty programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)
 - [ListObject — formant](../vsto/listobject-control.md)

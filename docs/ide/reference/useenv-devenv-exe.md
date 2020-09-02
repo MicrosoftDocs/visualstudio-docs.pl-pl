@@ -20,18 +20,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596399"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
-Uruchamia program Visual Studio i ładuje niektóre zmienne środowiskowe do kompilacji.
+Uruchamia program Visual Studio i ładuje pewne zmienne środowiskowe do kompilacji.
 
 > [!NOTE]
-> Ten przełącznik jest zainstalowany z programem Desktop development z obciążeniem **języka C++.**
+> Ten przełącznik jest instalowany z **programowaniem aplikacji klasycznych w języku C++** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,22 +45,22 @@ devenv /UseEnv {SolutionName|ProjectName}
 
   Pełna ścieżka i nazwa pliku rozwiązania.
 
-- *Nazwaprojektu*
+- *ProjectName*
 
   Pełna ścieżka i nazwa pliku projektu.
 
 ## <a name="remarks"></a>Uwagi
 
-Ten przełącznik wpływa na IDE programu Visual Studio we właściwościach projektu dla **katalogów VC++.** Jeśli `/UseEnv` zostanie określony przełącznik, węzeł **Katalogi VC++** wyświetla wartości zmiennych środowiskowych PATH, INCLUDE, LIBPATH i LIB. (Pokazuje również wartości **katalogów źródłowych** i **wykluczów katalogów**.) W przeciwnym razie węzeł zastępuje zmienne środowiskowe pięcioma wartościami katalogów: **Katalogi wykonywalne**, **Dołącz katalogi,** **Katalogi odwołań,** **Katalogi bibliotek**i **Katalogi Bibliotek WinRT**.
+Ten przełącznik ma wpływ na środowisko IDE programu Visual Studio we właściwościach projektu dla **katalogów VC + +**. Jeśli określisz `/UseEnv` przełącznik, w węźle **Katalogi VC + +** są wyświetlane wartości zmiennych środowiskowych Path, include, LIBPATH i lib. (Pokazuje również wartości **katalogów źródłowych** i **Wyklucz katalogi**). W przeciwnym razie w węźle są zastępowane zmienne środowiskowe o pięciu wartościach katalogu: **katalogi wykonywalne** **, katalogi,** **katalogi odwołań**, **katalogi bibliotek**i **katalogi WinRT**.
 
 > [!TIP]
-> Dostęp do właściwości projektu można uzyskać, klikając prawym przyciskiem myszy projekt C++ i wybierając polecenie **Właściwości**. W oknie dialogowym **Strony właściwości** wybierz pozycję **Właściwości konfiguracji,** a następnie pozycję **Katalogi VC++.**
+> Aby uzyskać dostęp do właściwości projektu, kliknij prawym przyciskiem myszy projekt C++ i wybierz polecenie **Właściwości**. W oknie dialogowym **strony właściwości** wybierz opcję **Właściwości konfiguracji** , a następnie **Katalogi VC + +**.
 
-Gdy nazwa projektu jest określona za pomocą tego przełącznika, narzędzie wyświetla zmienne środowiskowe dla wszystkich projektów w ramach rozwiązania nadrzędnego projektu.
+Jeśli dla tego przełącznika zostanie określona nazwa projektu, narzędzie wyświetli zmienne środowiskowe dla wszystkich projektów w rozwiązaniu nadrzędnym projektu.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład uruchamia Visual Studio i ładuje zmienne `MySolution` środowiskowe do stron właściwości rozwiązania.
+Poniższy przykład uruchamia program Visual Studio i ładuje zmienne środowiskowe do stron właściwości `MySolution` rozwiązania.
 
 ```shell
 devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
@@ -69,4 +69,4 @@ devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ## <a name="see-also"></a>Zobacz też
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Strona właściwości katalogów VC++ (Windows)](/cpp/build/reference/vcpp-directories-property-page)
+- [Strona właściwości katalogów VC + + (system Windows)](/cpp/build/reference/vcpp-directories-property-page)

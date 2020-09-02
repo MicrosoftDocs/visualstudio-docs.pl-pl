@@ -1,5 +1,5 @@
 ---
-title: '&lt;Pakiet&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;Package — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157686"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pakiet&gt; — Element (program inicjujący)
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package — &gt; element (program inicjujący)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Package` Element jest elementem XML najwyższego poziomu w pliku pakietu.  
+`Package`Element jest elementem XML najwyższego poziomu w pliku pakietu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -143,17 +143,17 @@ ms.locfileid: "68157686"
 </Package>  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `Package` Element jest wymagany. Ma następujące atrybuty.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `Package`Element jest wymagany. Ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Culture`|Wymagana. Określa kulturę używaną do tego pakietu, która określa język, który ma być używany. Ten atrybut jest kluczem do `Strings` element, który wyświetla ciągi dla kultury dla nazw produktów i komunikaty o błędach podczas instalacji.|  
-|`Name`|Wymagana. Nazwa pakietu, takich jak wyświetlany dla deweloperów w narzędziu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ten atrybut jest kluczem do `Strings` element, który powinien zawierać `String` element z `Name` i `Culture` ustawić właściwości, aby dopasować `Name` i `Culture` właściwości `Package`.|  
-|`LicenseAgreement`|Opcjonalny. Określa nazwę pliku pakietu dystrybucji, który zawiera umowy licencyjnej użytkownika oprogramowania (EULA).  Ten plik może być zwykły tekst (txt) lub tekst sformatowany. (RTF)|  
+|`Culture`|Wymagany. Definiuje kulturę dla tego pakietu, która określa język, który ma być używany. Ten atrybut jest kluczem do `Strings` elementu, który zawiera listę ciągów specyficznych dla kultury dla nazw produktów i komunikatów o błędach podczas instalacji.|  
+|`Name`|Wymagany. Nazwa pakietu wyświetlanego dla dewelopera w ramach narzędzia, takiego jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Ten atrybut jest kluczem do `Strings` elementu, który powinien zawierać `String` element z `Name` `Culture` właściwością i ustawioną tak, aby pasował do `Name` `Culture` właściwości i `Package` .|  
+|`LicenseAgreement`|Opcjonalny. Określa nazwę pliku w pakiecie dystrybucji, który zawiera umowę licencyjną użytkownika oprogramowania (EULA).  Ten plik może być w formacie zwykłego tekstu (txt) lub tekstu sformatowanego. (RTF)|  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje plik kompletny pakiet dla redystrybucji [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].  
+ Poniższy przykład kodu pokazuje kompletny plik pakietu do redystrybucji [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -191,4 +191,4 @@ ms.locfileid: "68157686"
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
+ [Produkt i pakiet — odwołanie do schematu](../deployment/product-and-package-schema-reference.md)

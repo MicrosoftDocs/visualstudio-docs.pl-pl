@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Dokumentacja firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: rebind | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d4e22da57eb5cc286bee18601079ea39da1b7b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143800"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, czy ten oczekujący punkt przerwania można powiązać z lokalizacji kodu.  
+Określa, czy ten oczekujący punkt przerwania można powiązać z lokalizacją w kodzie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,16 +41,16 @@ int CanBind ( 
   
 #### <a name="parameters"></a>Parametry  
  `ppErrorEnum`  
- [out] Zwraca [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) obiekt, który zawiera listę [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) obiekty, jeśli mogą wystąpić błędy.  
+ określoną Zwraca obiekt [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) , który zawiera listę obiektów [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , jeśli wystąpiły błędy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK.` zwraca `S_FALSE` , jeśli nie można powiązać punkt przerwania, w którym to przypadku błędy są zwracane przez `ppErrorEnum` parametru. W przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli to się powiedzie, zwraca `S_OK.` wartość Returns, `S_FALSE` Jeśli punkt przerwania nie może utworzyć powiązania, w takim przypadku błędy są zwracane przez `ppErrorEnum` parametr. W przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana w celu ustalenia, co się stanie, jeśli oczekująca punkt przerwania był powiązany. Wywołaj [powiązać](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) metody oczekujący punkt przerwania w rzeczywistości wiązania.  
+ Ta metoda jest wywoływana, aby określić, co się stanie, jeśli ten oczekujący punkt przerwania został powiązany. Wywołaj metodę [bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) , aby rzeczywiście powiązać oczekujący punkt przerwania.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiektu, który uwidacznia Interfejs [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
@@ -141,4 +141,4 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+ [Węglowodor](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

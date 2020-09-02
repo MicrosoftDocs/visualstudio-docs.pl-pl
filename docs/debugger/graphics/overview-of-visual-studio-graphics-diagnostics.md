@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187915"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Omówienie diagnostyki grafiki w programie Visual Studio
@@ -21,7 +21,7 @@ Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następ
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Używanie Graphics Diagnostics do debugowania problemów z renderowaniem
  Debugowanie problemów z renderowaniem w aplikacji rozbudowanej graficznie nie jest tak proste, jak uruchomienie debugera i krokowe wykonywanie kodu. W każdej klatce są produkowane setki tysięcy unikatowych pikseli, każdy na podstawie złożonego zestawu stanu, danych, parametrów i kodu — możliwe, że tylko kilka z powyższych pikseli pokaże problem, który próbujesz zdiagnozować. Aby jeszcze bardziej skomplikować sprawy, kod, który generuje każdy piksel, jest wykonywany na wyspecjalizowanym sprzęcie, który przetwarza setki pikseli równolegle. Tradycyjne narzędzia i techniki debugowania, z których trudno się korzysta nawet w kodzie mało skomplikowanym pod względem wątków, są nieskuteczne w obliczu tak dużej ilości danych.
 
- Narzędzia Diagnostyka grafiki w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są przeznaczone do ułatwienia lokalizowania problemów z renderowaniem, zaczynając od artefaktów wizualizacji, które wskazują na problem, a następnie śledzenia z powrotem do źródła problemu przez skoncentrowanie się tylko na odpowiednim kodzie programu do cieniowania, etapy potoku , narysuj wywołania, zasoby i stan urządzenia — w kodzie źródłowym aplikacji.
+ Narzędzia Diagnostyka grafiki w programie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mają pomóc w znalezieniu problemów z renderowaniem, rozpoczynając od artefaktów wizualizacji, które wskazują na problem, a następnie śledzenia z powrotem do źródła problemu przez skoncentrowanie się tylko na odpowiednim kodzie programu do cieniowania, etapach potoku, nawiązaniu połączenia, zasobach i stanie urządzenia — w kodzie źródłowym aplikacji.
 
 ## <a name="directx-version-compatibility"></a>Zgodność wersji programu DirectX
  Diagnostyka grafiki obsługuje aplikacje korzystające z programu Direct3D 10 lub nowszego i oferuje ograniczoną obsługę aplikacji korzystających z Direct2D. Nie obsługuje aplikacji, które używają starszych wersji Direct3D, DirectDraw lub innych graficznych interfejsów API.
@@ -45,7 +45,7 @@ Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następ
 ### <a name="diagnostics-capture-interface"></a>Interfejs przechwytywania diagnostyki
  Po uruchomieniu aplikacji w obszarze Diagnostyka grafiki program Visual Studio wyświetla interfejs sesji diagnostycznej, którego można użyć do przechwytywania ramek, a także wyświetla bieżące obciążenie procesora CPU i procesora GPU. Zostanie wyświetlone obciążenie procesora CPU i procesora GPU ułatwiające zidentyfikowanie ramek, które mogą być przechwytywane ze względu na ich charakterystykę wydajności zamiast błędów renderowania.
 
- Nie jest to jedynym sposobem przechwytywania ramek. Możesz również przechwytywać ramki przy użyciu interfejsu przechwytywania programistycznego lub programu do przechwytywania wiersza polecenia, DXCap. exe.
+ Nie jest to jedynym sposobem przechwytywania ramek. Możesz również przechwytywać ramki przy użyciu interfejsu przechwytywania programistycznego lub programu w celu przechwycenia wiersza polecenia dxcap.exe.
 
  Aby uzyskać więcej informacji, zobacz [Przechwytywanie informacji graficznych](capturing-graphics-information.md) .
 
@@ -108,7 +108,7 @@ Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następ
 ### <a name="object-table"></a>Tabela obiektów
  Wszystkie ramki renderowane przez aplikację są prawdopodobnie obsługiwane przez setki lub nawet tysiące obiektów zasobów. Mogą one obejmować bufory wsteczne i elementy docelowe renderowania, tekstury, bufory wierzchołków, bufory indeksów, ogólne bufory, a niemal wszystkie elementy członkowskie Direct3D to obiekt.
 
- W [tabeli obiektów](graphics-object-table.md) są wyświetlane wszystkie obiekty, które istnieją w momencie zdarzenia grafiki wybranego na liście zdarzeń. Ponieważ większość obiektów w typowej aplikacji jest teksturą, lista zdarzeń jest zoptymalizowana pod kątem szybkiego wyświetlania szczegółów dotyczących obrazów. Kolumna Typ zawiera informacje o rodzaju obiektu znajdującego się w każdym wierszu, a w kolumnie format w dalszej części tego typu znajduje się podtype lub wersja obiektu. Wyświetlane są również inne szczegóły. Niektóre obiekty mają również hiperłącza, które można wykonać, aby wyświetlić obiekt z bardziej wyspecjalizowaną przeglądarką, taką jak tekstury (można wyświetlić teksturę jako obraz) lub bufory (możesz wybrać sposób analizowania i wyświetlania nieprzetworzonych bajtów przez program, definiując bufor). Format).
+ W [tabeli obiektów](graphics-object-table.md) są wyświetlane wszystkie obiekty, które istnieją w momencie zdarzenia grafiki wybranego na liście zdarzeń. Ponieważ większość obiektów w typowej aplikacji jest teksturą, lista zdarzeń jest zoptymalizowana pod kątem szybkiego wyświetlania szczegółów dotyczących obrazów. Kolumna Typ zawiera informacje o rodzaju obiektu znajdującego się w każdym wierszu, a w kolumnie format w dalszej części tego typu znajduje się podtype lub wersja obiektu. Wyświetlane są również inne szczegóły. Niektóre obiekty mają również hiperłącza, które można wykonać, aby wyświetlić obiekt z bardziej wyspecjalizowaną przeglądarką, taką jak tekstury (można wyświetlić teksturę jako obraz) lub bufory (można wybrać sposób analizowania i wyświetlania nieprzetworzonych bajtów przez program, definiując format buforu).
 
 ### <a name="frame-analysis"></a>Analiza klatek
  Grafiki Twojej aplikacji nie muszą być poprawnie — muszą one być również szybkie. Nawet w przypadku mniej wydajnych urządzeń, takich jak laptopy ze zintegrowaną grafiką lub telefonami przenośnymi. I nadal muszą wyglądać zbyt dobrze.
@@ -117,6 +117,6 @@ Visual Studio *Diagnostyka grafiki* to zestaw narzędzi do nagrywania, a następ
 
  Jednak analiza klatek nie jest w stanie szybko postępować — ma to na celu uzyskanie najwyższej wydajności, dzięki czemu można uzyskać najmniejszą ilość jakości wizualnej. Czasami kosztowny efekt, który wygląda doskonale na dużym wyświetlaczu, nie ma takiego samego wpływu, gdy jest wyświetlany na małym ekranie telefonu, gdzie łatwiejszy efekt może wyglądać podobnie, bez opróżniania baterii. Automatyczne zmiany i testy porównawcze zapewniane przez analizę grafiki mogą pomóc w znalezieniu równowagi odpowiednich dla aplikacji na różnych urządzeniach.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Narzędzie wiersza polecenia do przechwytywania](command-line-capture-tool.md)
 - [Debuger HLSL](hlsl-shader-debugger.md)

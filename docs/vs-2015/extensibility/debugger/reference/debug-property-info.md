@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO | Dokumentacja firmy Microsoft
+title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4c4200cb5a44e185d50158829fe44152707ee459
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143045"
 ---
-# <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
+# <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Zawiera informacje dotyczące właściwości debugowania.  
+Zawiera informacje o właściwości debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,7 +52,7 @@ public struct DEBUG_PROPERTY_INFO { 
   
 ## <a name="members"></a>Elementy członkowskie  
  dwValidFields  
- Kombinacja flag z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenia, która określa, które pola są wypełniane.  
+ Kombinacja flag z wyliczenia [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) , która określa, które pola są wypełnione.  
   
  bstrFullName  
  Pełna nazwa właściwości.  
@@ -60,36 +60,36 @@ public struct DEBUG_PROPERTY_INFO { 
  bstrName  
  Nazwa właściwości w kontekście.  
   
- bstrType  
- Typ właściwości jako ciąg formatowania.  
+ bstrtype  
+ Typ właściwości jako sformatowany ciąg.  
   
  bstrValue  
- Wartość właściwości jako ciąg formatowania.  
+ Wartość właściwości jako sformatowany ciąg.  
   
  pProperty  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektem opisanym przez tę strukturę.  
+ Obiekt [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) opisany przez tę strukturę.  
   
  dwAttrib  
- Kombinacja flag z [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) wyliczenie opisujące atrybuty tej właściwości.  
+ Kombinacja flag z wyliczenia [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) opisującego atrybuty tej właściwości.  
   
 ## <a name="remarks"></a>Uwagi  
- Właściwość jest obiekt hierarchiczny charakter, który ma nazwę, typ i wartość. Na przykład właściwość można opisać zmiennych lokalnych, parametrów, Czujka, zmienne i wyrażenia i rejestrów.  
+ Właściwość jest obiektem o charakterze hierarchicznym, który ma nazwę, typ i wartość. Na przykład właściwość może opisywać zmienne lokalne, parametry, obserwacje zmiennych i wyrażeń oraz rejestrów.  
   
- Ta struktura jest przekazywany do [getpropertyinfo —](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metody, gdzie jest wypełnione. Ta struktura jest także zwracany jako część listy tej struktury z [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) interfejs, który z kolei jest zwracany z wywołania [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) i [ Enumproperties —](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) metody.  
+ Ta struktura jest przenoszona do metody [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) , gdzie jest wypełniona. Ta struktura jest również zwracana jako część listy tej struktury z interfejsu [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , który z kolei jest zwracany z wywołania metod [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) i [EnumProperties —](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
  [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [Getpropertyinfo —](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
+ [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
  [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
  [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

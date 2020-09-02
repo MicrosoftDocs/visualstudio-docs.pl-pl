@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize | Dokumentacja firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: Wirtualizacja | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caf4277afc63d403cc3d02c4d79b9e5f2b1b8d26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143879"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Włącza/wyłącza zwirtualizowane stan to oczekujące punktu przerwania. Jeśli oczekujący punkt przerwania zostaje zwirtualizowany, aparat debugowania będzie podejmować próby powiązać go za każdym razem, gdy nowy kod ładuje się do programu.  
+Przełącza zwirtualizowany stan tego oczekującego punktu przerwania. Gdy jest zwirtualizowany oczekujący punkt przerwania, aparat debugowania podejmie próbę powiązania z nim za każdym razem, gdy nowy kod ładuje się do programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,16 +41,16 @@ int Virtualize( 
   
 #### <a name="parameters"></a>Parametry  
  `fVirtualize`  
- [in] Ustaw na wartość różną od zera (`TRUE`) do wirtualizacji oczekujący punkt przerwania lub równą zero (`FALSE`) Aby wyłączyć wirtualizacji.  
+ podczas Ustaw na wartość różną od zera ( `TRUE` ), aby przeprowadzić wirtualizację oczekującego punktu przerwania, lub zero ( `FALSE` ), aby wyłączyć wirtualizację.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwirtualizowane punkt przerwania jest powiązany za każdym razem, gdy kod jest ładowany.  
+ Zwirtualizowany punkt przerwania jest powiązany za każdym razem, gdy ładowany jest kod.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiektu, który uwidacznia Interfejs [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538310"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Instrukcje: Tworzenie obsługi zdarzeń w projektach pakietu Office
@@ -42,7 +42,7 @@ ms.locfileid: "85538310"
 
 ### <a name="to-create-an-event-handler-in-c"></a>Aby utworzyć procedurę obsługi zdarzeń w języku C\#
 
-1. Utwórz delegata zdarzenia w zdarzeniu **uruchamiania** klasy, wpisując kwalifikowaną nazwę zdarzenia, a następnie spację, a następnie wpisując **+=** bez odstępów. Przykład:
+1. Utwórz delegata zdarzenia w zdarzeniu **uruchamiania** klasy, wpisując kwalifikowaną nazwę zdarzenia, a następnie spację, a następnie wpisując **+=** bez odstępów. Na przykład:
 
      `this.<object name>.<event name> +=`
 
@@ -50,7 +50,7 @@ ms.locfileid: "85538310"
 
      Program Visual Studio automatycznie uzupełnia wiersz kodu, tworzy program obsługi zdarzeń i przenosi punkt wstawiania do nowo utworzonego programu obsługi zdarzeń.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
 - [Przewodnik: program dla zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)
