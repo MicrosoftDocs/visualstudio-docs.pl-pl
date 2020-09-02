@@ -1,5 +1,5 @@
 ---
-title: Czas wywłaszczenia | Dokumenty firmy Microsoft
+title: Czas zastępujący | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62935896"
 ---
-# <a name="preemption-time"></a>Czas wywłaszczenia
-Te segmenty na osi czasu są skojarzone z czasem blokowania, który jest klasyfikowany jako Pierwok. Ta kategoria oznacza, że wątek jest wyłączony z jednego z następujących powodów:
+# <a name="preemption-time"></a>Czas zastępujący
+Te segmenty na osi czasu są skojarzone z czasem blokowania, który jest kategoryzowany jako wywłaszczania. Ta kategoria oznacza, że wątek jest przełączany z jednego z następujących powodów:
 
-- Harmonogram zastąpił go przy użyciu wątku o wyższym priorytecie.
+- Harmonogram zamienił go przy użyciu wątku o wyższym priorytecie.
 
-- Kwantowa wykonanie wątku wygasła i inne wątki były gotowe do wykonania.
+- Upłynął czas wykonywania wątku Quantum i inne wątki były gotowe do wykonania.
 
-  W tym czasie wątek został zablokowany przez jądro czekać powodu, że wizualizator współbieżności jest zliczanie jako pre-emption. Segmenty pierkupu rozpoczynają się, gdy wątek jest wypychany z rdzenia logicznego i kończą się, gdy ten wątek wznawia wykonywanie.
+  W tym czasie wątek został zablokowany przez powód oczekiwania jądra, który jest używany przez Wizualizator współbieżności jako wywłaszczania. Segmenty przedwywłaszczania są uruchamiane, gdy wątek jest wypychany z rdzenia logicznego i kończy się, gdy ten wątek wznawia wykonywanie.
 
-  Etykietka narzędzia dla segmentu wywłaszczonego wyświetla nazwę procesu lub wątku, który spowodował wywłaszczanie. Nie oznacza to jednak, że proces lub wątek, który przejął faktycznie prowadził przez cały wywłaszczony okres.
+  Etykietka narzędzia dla segmentu przedwypartea wyświetla nazwę procesu lub wątku, który spowodował wystąpienie klasy pre-wywłaszczania. Nie oznacza to jednak, że proces lub wątek, który przeprzejął w rzeczywistości faktycznie działał w okresie przenoszonego.
 
 ## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

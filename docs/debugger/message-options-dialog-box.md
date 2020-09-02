@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Opcje komunikatów | Dokumentacja firmy Microsoft
+title: Okno dialogowe Opcje komunikatów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62931325"
 ---
 # <a name="message-options-dialog-box"></a>Opcje komunikatów — Okno dialogowe
-Umożliwia to okno dialogowe Wybierz wiadomości, które są wymienione w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić to okno dialogowe, wybierz **komunikaty dziennika** z **Spy** menu.
+To okno dialogowe służy do wybierania komunikatów, które są wyświetlane w [widoku wiadomości](../debugger/messages-view.md). Aby wyświetlić to okno dialogowe, wybierz pozycję **komunikaty dziennika** z menu **Spy** .
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Karta Windows, okno dialogowe opcji komunikatów](../debugger/windows-tab-message-options-dialog-box.md) używany do wybierania typy komunikatów, aby wyświetlić listę. Obejmuje narzędzia wyszukiwania.
+ [Karta okna, okno dialogowe Opcje komunikatów](../debugger/windows-tab-message-options-dialog-box.md) Służy do wybierania typów komunikatów do wyświetlenia. Zawiera narzędzie wyszukiwania.
 
- [Messages — karta, okno dialogowe Opcje komunikatów](../debugger/messages-tab-message-options-dialog-box.md) używany do wybierania typów wiadomości do wyświetlenia.
+ [Karta komunikaty, okno dialogowe Opcje komunikatów](../debugger/messages-tab-message-options-dialog-box.md) Służy do wybierania typów komunikatów do wyświetlania.
 
- [Karta dane wyjściowe, okno dialogowe opcji komunikatów](../debugger/output-tab-message-options-dialog-box.md) używany do określenia dane komunikat do wyświetlenia.
+ [Karta dane wyjściowe, okno dialogowe Opcje komunikatów](../debugger/output-tab-message-options-dialog-box.md) Służy do określania, jakie dane komunikaty mają być wyświetlane.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Okno dialogowe Wyszukiwanie komunikatów](../debugger/message-search-dialog-box.md) używana do znajdowania węzeł, aby uzyskać szczegółowy komunikat o błędzie w widoku komunikatów.
+ [Wyszukiwanie komunikatów](../debugger/message-search-dialog-box.md) — okno dialogowe Służy do znajdowania węzła określonego komunikatu w widoku komunikatów.
 
- [Okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md) używany do wyświetlania właściwości wiadomości wybrany w widoku komunikatów.
+ Okno [dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md) Służy do wyświetlania właściwości komunikatu wybranego w widoku wiadomości.
 
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+ [Spy + + — Odwołanie](../debugger/spy-increment-reference.md) Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.
 
- [Wyszukiwanie komunikatu w widoku komunikatów](../debugger/how-to-search-for-a-message-in-messages-view.md) wyjaśnia, jak znaleźć szczegółowy komunikat o błędzie w widoku komunikatów.
+ [Wyszukiwanie komunikatu w widoku komunikatów](../debugger/how-to-search-for-a-message-in-messages-view.md) Wyjaśnia, jak znaleźć konkretny komunikat w widoku komunikatów.
 
- [Otwieranie widoku komunikatów w Znajdź okno](../debugger/how-to-open-messages-view-from-find-window.md) wyjaśnia, jak otwieranie widoku komunikatów w Znajdź okno dialogowe.
+ [Otwieranie widoku komunikatów z okna wyszukiwania](../debugger/how-to-open-messages-view-from-find-window.md) Wyjaśnia, jak otworzyć widok komunikatów z okna dialogowego Znajdowanie okna.
 
- [Widoku komunikatów](../debugger/messages-view.md) Wyświetla strumienia komunikatów skojarzony z okna, proces lub wątek.
+ [Widok komunikatów](../debugger/messages-view.md) Wyświetla strumień wiadomości skojarzony z oknem, procesem lub wątkiem.
 
- [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Widoki Spy + +](../debugger/spy-increment-views.md) Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.
 
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+ [Korzystanie z programu Spy + +](../debugger/using-spy-increment.md) Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.

@@ -1,5 +1,5 @@
 ---
-title: Karta przestrzeń, okno dialogowe właściwości procesu | Dokumentacja firmy Microsoft
+title: Karta przestrzeń, okno dialogowe właściwości procesu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929818"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Karta Przestrzeń, okno dialogowe właściwości procesu
-Użyj **miejsca** kartę do zbadania przestrzeni adresowej procesu. Aby wyświetlić [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do [widok procesy](../debugger/processes-view.md) okna. Zaznacz dowolny węzeł procesu w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+Użyj zakładki **Space (miejsce** ), aby przeanalizować przestrzeń adresową procesu. Aby wyświetlić okno [dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md), Przenieś fokus do okna [widok procesów](../debugger/processes-view.md) . Wybierz dowolny węzeł procesu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
 
- Następujące ustawienia są dostępne na **miejsca** karty:
+ Na karcie **Space (miejsce** ) dostępne są następujące ustawienia:
 
 |Wpis|Opis|
 |-----------|-----------------|
-|**Pokaż dla przestrzeni oznaczonej jako**|Użyj tego pola listy, aby wybrać kategorię miejsca (obraz, mapowana, zastrzeżone lub nieprzypisane).|
-|**Bajty wykonywalne**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej używanej przez ten proces. Pamięć pliku wykonywalnego jest pamięci, które mogą być wykonywane przez programy, ale może nie być odczytu lub zapisu.|
-|**Exec — tylko do odczytu w bajtach**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej używany przy użyciu właściwości tylko do odczytu, które są używane przez ten proces. Exec — tylko do odczytu pamięci jest pamięcią, która może być wykonane, a także odczytu.|
-|**Exec odczyt / zapis bajtów**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej używany przy użyciu właściwości odczytu / zapisu, które używa tego procesu. Exec — odczytu i zapisu pamięci jest pamięci, która jest wykonywana przez programy, a także do odczytu i modyfikować.|
-|**Exec — zapis bajtów kopiowania**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej, które można wykonać przez programy, a także odczytywać i zapisywać. Ten typ ochrony jest używany, gdy pamięci musi być współużytkowane między procesami. Jeśli procesy do udostępniania tylko do odczytu pamięci, następnie wszystkie używają tej samej pamięci. Jeśli proces współużytkujący żąda dostępu do zapisu, kopia tej pamięci zostaną wprowadzone dla procesu.|
-|**Bajty niedostępne**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej procesu uniemożliwia używanie go. Naruszenie zasad dostępu jest generowany, gdy zapisu lub odczytu zostanie podjęta.|
-|**Tylko do odczytu w bajtach**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej, które mogą być wykonywane, a także odczytu.|
-|**Bajty odczytu / zapisu**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej, która umożliwia odczytywanie i zapisywanie.|
-|**Zapis / kopia bajtów**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej, która umożliwia udostępnianie pamięci, do odczytu, ale nie do zapisu. Procesy odczytują tę pamięć, mogą współużytkować ten sam pamięci. Jednak gdy procesy chce mieć odczyt/zapis dostęp do tej pamięci współużytkowanej, kopię pamięci składa się do zapisu.|
+|**Pokaż dla przestrzeni oznaczonej jako**|Użyj tego pola listy, aby wybrać kategorię miejsca (obraz, zamapowane, zarezerwowane lub nieprzypisane).|
+|**Bajty wykonywalne**|Dla wybranej kategorii suma całej przestrzeni adresowej używanej przez ten proces. Pamięć wykonywalna jest pamięcią, która może być wykonywana przez programy, ale nie może być odczytywana ani zapisywana.|
+|**Wykonywalne bajty tylko do odczytu**|Dla wybranej kategorii suma całej używanej przestrzeni adresowej z właściwościami tylko do odczytu, które są używane przez ten proces. Pamięć exec-tylko do odczytu jest pamięcią, którą można wykonać, a także odczytać.|
+|**Bajty wykonywalne odczytu i zapisu**|Dla wybranej kategorii suma całej używanej przestrzeni adresowej z właściwościami odczytu i zapisu, które są używane przez ten proces. Pamięć exec do odczytu i zapisu jest pamięcią, która może być wykonywana przez programy, a także odczytywane i modyfikowane.|
+|**Bajty kopii wykonywalnych i zapisu**|Dla wybranej kategorii suma wszystkich przestrzeni adresowej, które mogą być wykonywane przez programy, a także odczyt i zapis. Ten typ ochrony jest używany, gdy pamięć musi być współdzielona między procesami. Jeśli proces udostępniania tylko odczytaje pamięć, wszystkie będą używać tej samej pamięci. Jeśli proces udostępniania żąda dostępu do zapisu, zostanie przeprowadzona kopia tej pamięci dla tego procesu.|
+|**Bajty bez dostępu**|Dla wybranej kategorii suma wszystkich przestrzeni adresowej, która uniemożliwia procesowi korzystanie z niego. Jest generowane naruszenie zasad dostępu w przypadku próby zapisu lub odczytu.|
+|**Bajty tylko do odczytu**|Dla wybranej kategorii suma wszystkich przestrzeni adresowej, które można wykonać, a także odczytać.|
+|**Bajty odczytu i zapisu**|Dla wybranej kategorii suma wszystkich przestrzeni adresowej, która umożliwia odczytywanie i zapisywanie.|
+|**Bajty zapisu i kopiowania**|Dla wybranej kategorii suma wszystkich przestrzeni adresowej, która umożliwia udostępnianie pamięci do odczytu, ale nie do zapisu. Gdy procesy odczytują tę pamięć, mogą współużytkować tę samą pamięć. Jednak gdy proces udostępniania chce mieć dostęp do odczytu i zapisu do tej pamięci współdzielonej, kopia tej pamięci jest wykonywana do zapisu.|

@@ -1,5 +1,5 @@
 ---
-title: Wyświetl polecenia Menu | Dokumentacja firmy Microsoft
+title: Polecenia menu Widok | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929625"
 ---
 # <a name="view-menu-commands"></a>Polecenia menu Widok
-**Widoku** menu zawiera polecenia służące do kontrolowania Spy ++ interfejsu użytkownika.
+Menu **Widok** zawiera polecenia służące do sterowania interfejsem użytkownika programu Spy + +.
 
- **Czcionka** otwiera **czcionki** okno dialogowe, w którym można wybrać czcionki do użycia w bieżącym widoku programu Spy ++.
+ **Czcionka** Otwiera okno dialogowe **czcionka** , w którym można wybrać czcionkę do użycia w bieżącym widoku Spy + +.
 
- **Pasek narzędzi** ukrywa lub Wyświetla pasek narzędzi.
+ **Pasek narzędzi** Ukrywa lub wyświetla pasek narzędzi.
 
- **Pasek stanu** ukrywa lub wyświetla na pasku stanu.
+ **Pasek stanu** Ukrywa lub wyświetla pasek stanu.
 
- **Właściwości** otwiera **właściwości** okno dialogowe bieżącym widokiem.
+ **Właściwości** Otwiera okno dialogowe **Właściwości** dla aktywnego widoku.

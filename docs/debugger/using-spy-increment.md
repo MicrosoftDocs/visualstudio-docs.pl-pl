@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z programu Spy ++ | Dokumentacja firmy Microsoft
+title: Korzystanie z programu Spy + + | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929910"
 ---
 # <a name="using-spy"></a>Korzystanie z programu Spy++
-Spy ++ (SPYXX. Z rozszerzeniem EXE) jest narzędziem oparte na Win32 umożliwia graficzne przedstawienie procesy, wątki, windows i komunikatów okien systemu. Ten rozdział z programu Spy ++ pomocy zawiera następujące tematy pomocy:
+Program Spy + + (SPYXX.EXE) jest narzędziem opartym na Win32, które zapewnia graficzny widok procesów, wątków, okien i komunikatów systemu Windows. Ta sekcja pomocy programu Spy + + zawiera następujące tematy pomocy:
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Wprowadzenie programu Spy ++](../debugger/introducing-spy-increment.md) opisano typy informacji, można wyświetlić za pomocą narzędzia Spy ++.
+ [Wprowadzenie do narzędzia Spy + +](../debugger/introducing-spy-increment.md) Wyjaśnia typy informacji, które można wyświetlić za pomocą narzędzia Spy + +.
 
- [Instrukcje: Uruchom narzędzie Spy ++](../debugger/how-to-start-spy-increment.md) wyjaśnia, jak można uruchomić programu Spy ++ z menu Narzędzia.
+ [Instrukcje: Uruchamianie programu Spy + +](../debugger/how-to-start-spy-increment.md) W tym artykule wyjaśniono, jak uruchomić aplikację Spy + + z menu Narzędzia.
 
- [Spy ++ — pasek narzędzi](../debugger/spy-increment-toolbar.md) opisano poleceń dostępnych w programie Spy ++ — pasek narzędzi.
+ [Pasek narzędzi Spy + +](../debugger/spy-increment-toolbar.md) Opisuje polecenia dostępne na pasku narzędzi Spy + +.
 
- [Instrukcje: Wyświetlanie widoków Spy ++](../debugger/how-to-display-spy-increment-views.md) sposób wyświetlania widoku Windows, widoku komunikatów, widok procesy i Widok wątków.
+ [Instrukcje: wyświetlanie widoków Spy + +](../debugger/how-to-display-spy-increment-views.md) Jak wyświetlić widok systemu Windows, widok komunikatów, widok procesów i Widok wątków.
 
- [Instrukcje: Odśwież widok](../debugger/how-to-refresh-the-view.md) wyjaśnia polecenia Odśwież.
+ [Instrukcje: odświeżanie widoku](../debugger/how-to-refresh-the-view.md) Wyjaśnia polecenie Refresh.
 
- [Instrukcje: Zmienianie czcionek](../debugger/how-to-change-fonts.md) wyjaśnia, jak zmienić sposób wyświetlania widoku.
+ [Instrukcje: zmienianie czcionek](../debugger/how-to-change-fonts.md) Wyjaśnia, jak zmienić sposób wyświetlania widoku.
 
- [Instrukcje: Rozwiń i Zwiń Spy ++ drzew](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) opisano sposób modyfikowania widoku.
+ [Instrukcje: rozwijanie i zwijanie drzew w programie Spy + +](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) Wyjaśnia, jak manipulować widokiem.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Widoki Spy + +](../debugger/spy-increment-views.md) Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.
 
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+ [Spy + + — Odwołanie](../debugger/spy-increment-reference.md) Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.

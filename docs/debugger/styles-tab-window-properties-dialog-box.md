@@ -1,5 +1,5 @@
 ---
-title: Karta style, okno dialogowe właściwości | Dokumentacja firmy Microsoft
+title: Karta style, okno dialogowe Właściwości okna | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 581ad210e5e8b11fec35e2171f4e8c4b5553baa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929676"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Karta stylów, okno dialogowe właściwości okna
-Użyj **style** kartę, aby pokazać stylów zastosowana do wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+Użyj karty **Style** , aby wyświetlić style zastosowane do wybranego okna. Aby wyświetlić okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md), Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
 
- Następujące ustawienia są dostępne na **style** karty:
+ Na karcie **Style** dostępne są następujące ustawienia:
 
 |Wpis|Opis|
 |-----------|-----------------|
-|**Style okna ramowego**|Kombinacja okna stylu kodów i kontrolować style, jeśli ma to zastosowanie.|
-|**Rozszerzone style**|Kombinacja kodów style rozszerzone okno.|
+|**Style okna**|Kombinacja kodów stylu okna i stylów kontrolki, jeśli ma zastosowanie.|
+|**Style rozszerzone**|Kombinacja kodów stylu okna rozszerzonego.|

@@ -1,5 +1,5 @@
 ---
-title: Polecenia Menu Spy | Dokumentacja firmy Microsoft
+title: Polecenia menu Spy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929753"
 ---
 # <a name="spy-menu-commands"></a>Polecenia w menu Spy
-**Spy** menu zawiera polecenia służące do pracy z programu Spy ++ Windows i widoków.
+Menu **Spy** zawiera polecenia do pracy z oknami i widokami programu Spy + +.
 
- **Windows** otwiera nowy widok Windows.
+ **System Windows** Otwiera nowy widok systemu Windows.
 
- **Procesy** otwiera nowy widok procesów.
+ **Procesy** Otwiera nowy widok procesów.
 
- **Wątki** otwiera nowy widok wątki.
+ **Wątki** Otwiera widok nowych wątków.
 
- **Komunikaty dziennika** otwiera nowy widok komunikatów i otwiera [okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md) widoku.
+ **Komunikaty dziennika** Otwiera nowy widok wiadomości i otwiera okno [dialogowe Opcje wiadomości](../debugger/message-options-dialog-box.md) dla tego widoku.
 
- **Znajdź okno** Wyświetla **FindWindow** okno dialogowe, aby wybrać okno za pomocą myszy.
+ **Znajdź okno** Wyświetla okno dialogowe **FindWindow** , aby wybrać okno z myszą.
 
- **Zakończ** Zamyka narzędzie Spy ++.
+ **Zakończ** Zamyka narzędzie Spy + +.

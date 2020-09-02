@@ -1,5 +1,5 @@
 ---
-title: Karta Windows, okno dialogowe opcji komunikatów | Dokumentacja firmy Microsoft
+title: Karta okna, okno dialogowe Opcje komunikatów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,29 +11,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929170"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Karta Okna, okno dialogowe opcji komunikatów
-Użyj **Windows** kartę, aby ustawić zakres wiadomości na liście [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić [okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md), wybierz **komunikaty dziennika** z **Spy** menu.
+Użyj karty **Windows** , aby ustawić zakres komunikatów wymienionych w [widoku komunikaty](../debugger/messages-view.md). Aby wyświetlić okno [dialogowe Opcje wiadomości](../debugger/message-options-dialog-box.md), wybierz pozycję **komunikaty dziennika** z menu **Spy** .
 
- Następujące ustawienia są dostępne na **Windows** karty:
+ Na karcie **Windows** dostępne są następujące ustawienia:
 
- **Narzędzia wyszukiwania** używany do wybierania okna Narzędzie przeciągania i upuszczania.
+ **Narzędzie wyszukiwania** Narzędzie do przeciągania i upuszczania używane do wybierania okna.
 
- **Ukryj narzędzie Spy ++** usuwa głównego okna programu Spy ++ i pozostawia **MessageOptions** okno dialogowe widoczne na podstawie innych aplikacji.
+ **Ukryj Spy + +** Usuwa główne okno programu Spy + + i pozostawia okno dialogowe **MessageOptions** widoczne na wierzchu innych aplikacji.
 
- **Okno nadrzędne** wyświetla komunikaty dla wybranego okna i okna bezpośredni obiekt nadrzędny.
+ **Okno nadrzędne** Wyświetla komunikaty dla wybranego okna i jego bezpośrednie okno nadrzędne.
 
- **Okno podrzędne** wyświetlanie komunikatów dla wybranego okna i wszystkie jego podrzędne windows, w tym zagnieżdżone okien podrzędnych.
+ **Okno podrzędne** Wyświetla komunikaty dla wybranego okna i wszystkich jego okien podrzędnych, w tym zagnieżdżonych okien podrzędnych.
 
- **Windows tym samym wątku** wyświetla komunikaty dla wybranego okna i wszystkich innych okien należące do tego samego wątku.
+ **Windows z tego samego wątku** Wyświetla komunikaty dla wybranego okna i wszystkich innych okien należących do tego samego wątku.
 
- **Windows ten sam proces** wyświetla komunikaty dla wybranego okna i wszystkich innych okien należące do tego samego procesu.
+ **Windows tego samego procesu** Wyświetla komunikaty dla wybranego okna i wszystkich innych okien należących do tego samego procesu.
 
- **Wszystkie Windows w systemie** wyświetlania komunikatów dla wszystkich okien.
+ **Wszystkie okna w systemie** Wyświetla komunikaty dla wszystkich okien.
 
- **Zapisz ustawienia jako domyślne** Zapisz powyższych ustawień dla nowych komunikatów — windows strumienia. Te ustawienia są również zapisywane podczas zamykania programu Spy ++.
+ **Zapisz ustawienia jako domyślne** Zapisz poprzednie ustawienia dla nowych okien strumienia komunikatów. Te ustawienia są również zapisywane podczas kończenia działania Spy + +.

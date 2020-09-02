@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe właściwości | Dokumentacja firmy Microsoft
+title: Okno dialogowe Właściwości okna | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929213"
 ---
 # <a name="window-properties-dialog-box"></a>Okno dialogowe właściwości okna
-Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego okna. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego okna. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Karta Ogólne. Okno dialogowe właściwości](../debugger/general-tab-window-properties-dialog-box.md) informacjami na temat wybranego okna.
+ [Karta Ogólne okno dialogowe Właściwości okna](../debugger/general-tab-window-properties-dialog-box.md) Pokazuje informacje o wybranym oknie.
 
- [Karta stylów. Okno dialogowe właściwości](../debugger/styles-tab-window-properties-dialog-box.md) pokazuje stylów zastosowana do wybranego okna.
+ [Karta style. okno dialogowe Właściwości okna](../debugger/styles-tab-window-properties-dialog-box.md) Pokazuje style zastosowane do wybranego okna.
 
- [Windows Tab. Okno dialogowe właściwości](../debugger/windows-tab-window-properties-dialog-box.md) Wyświetla informacje o windows powiązane z wybranego okna.
+ [Karta okna — okno dialogowe Właściwości okna](../debugger/windows-tab-window-properties-dialog-box.md) Pokazuje informacje o systemie Windows powiązane z wybranym oknem.
 
- [Klasa — karta. Okno dialogowe właściwości](../debugger/class-tab-window-properties-dialog-box.md) Wyświetla informacje o klasie wybranego okna.
+ [Karta klasy. okno dialogowe Właściwości okna](../debugger/class-tab-window-properties-dialog-box.md) Pokazuje informacje o klasie wybranego okna.
 
- [Karta proces. Okno dialogowe właściwości](../debugger/process-tab-window-properties-dialog-box.md) identyfikuje proces wybranego okna.
+ [Karta procesu. okno dialogowe Właściwości okna](../debugger/process-tab-window-properties-dialog-box.md) Identyfikuje proces wybranego okna.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Okno dialogowe Wyszukiwanie](../debugger/window-search-dialog-box.md) używana do znajdowania węzła w określonym oknie, w widoku Windows.
+ [Wyszukiwanie okna](../debugger/window-search-dialog-box.md) — okno dialogowe Służy do znajdowania węzła dla określonego okna w widoku systemu Windows.
 
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+ [Spy + + — Odwołanie](../debugger/spy-increment-reference.md) Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.
 
- [Za pomocą narzędzia Znajdź](../debugger/how-to-use-the-finder-tool.md) pokazuje, jak to narzędzie skanowania systemu windows do właściwości lub komunikaty.
+ [Korzystanie z narzędzia wyszukiwania](../debugger/how-to-use-the-finder-tool.md) Pokazuje, w jaki sposób to narzędzie skanuje okna pod kątem właściwości lub komunikatów.
 
- [Wyszukiwanie okna w widoku Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) wyjaśnia, jak można odnaleźć określonego okna w widoku Windows.
+ [Wyszukiwanie okna w widoku systemu Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) Wyjaśnia, jak znaleźć określone okno w widoku systemu Windows.
 
- [Wyświetl Windows](../debugger/windows-view.md) wyświetlany widok drzewa dostępne okien i formantów.
+ [Widok systemu Windows](../debugger/windows-view.md) Wyświetla widok drzewa dostępnych okien i kontrolek.
 
- [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+ [Widoki Spy + +](../debugger/spy-increment-views.md) Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.
 
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+ [Korzystanie z programu Spy + +](../debugger/using-spy-increment.md) Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.

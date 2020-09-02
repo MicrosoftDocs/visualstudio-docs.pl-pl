@@ -1,5 +1,5 @@
 ---
-title: Polecenia Menu Wyszukaj | Dokumentacja firmy Microsoft
+title: Polecenia menu Wyszukaj | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c61dc9e752dccee909baa742e4c8d677df865a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929800"
 ---
 # <a name="search-menu-commands"></a>Polecenia menu Wyszukaj
-**Wyszukiwania** menu zawiera polecenia służące do wyszukiwania określonego systemu windows.
+Menu **Wyszukaj** zawiera polecenia służące do wyszukiwania określonych okien.
 
- **Znajdź/procesu/wątku/komunikatów okien** otwiera **okna**/**procesu**/**wątku** /  **MessageSearch** okno dialogowe, w którym można korzystać z **FinderTool** lub określić kryteria wyszukiwania.
+ **Znajdź okno/proces/wątek/komunikat** Otwiera okno **Window** / **Process** / **Thread** / dialogowe**MessageSearch** wątku procesu okna, w którym można użyć **FinderTool** lub określić kryterium wyszukiwania.
 
- **Znajdź następny** wyszukuje w bieżącym widoku następne zgodne okno, proces, wątek lub wiadomość. Ten element menu (i przycisk paska narzędzi) jest dostępna tylko wtedy, gdy wynik wyszukiwania prawidłowe, która nie jest unikatowa.
+ **Znajdź następny** Wyszukuje w bieżącym widoku następne pasujące okno, proces, wątek lub komunikat. Ten element menu (i przycisk pokrewnego paska narzędzi) jest dostępny tylko wtedy, gdy istnieje prawidłowy wynik wyszukiwania, który nie jest unikatowy.
 
- **Znajdź poprzedni** wyszukuje w bieżącym widoku poprzednie zgodne okno, proces, wątek lub wiadomość. Ten element menu (i przycisk paska narzędzi) jest dostępna tylko wtedy, gdy wynik wyszukiwania prawidłowe, która nie jest unikatowa.
+ **Znajdź poprzedni** Wyszukuje w bieżącym widoku poprzednie zgodne okno, proces, wątek lub komunikat. Ten element menu (i przycisk pokrewnego paska narzędzi) jest dostępny tylko wtedy, gdy istnieje prawidłowy wynik wyszukiwania, który nie jest unikatowy.
