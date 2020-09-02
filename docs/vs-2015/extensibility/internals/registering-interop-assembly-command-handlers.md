@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie programów obsługi zestawu międzyoperacyjnego | Dokumentacja firmy Microsoft
+title: Rejestrowanie programów obsługi poleceń zestawu międzyoperacyjnego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,30 +12,30 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705815"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Rejestrowanie programów obsługi zestawu międzyoperacyjnego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Należy zarejestrować pakietu VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tak, aby prawidłowo polecenia kieruje zintegrowanego środowiska programistycznego (IDE).  
+Pakietu VSPackage musi się zarejestrować w programie, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Aby zintegrowane środowisko programistyczne (IDE) prawidłowo kieruje swoje polecenia.  
   
- Rejestru mogą być aktualizowane ręcznie edytując lub przy użyciu pliku rejestratora (.rgs). Aby uzyskać więcej informacji, zobacz [tworzenie skryptów rejestratora](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Rejestr można aktualizować przez ręczną edycję lub przy użyciu pliku rejestratora (. RGS). Aby uzyskać więcej informacji, zobacz [Tworzenie skryptów rejestratora](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
- Framework pakietu zarządzanego (MPF) oferuje tę funkcję za pośrednictwem <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> klasy.  
+ Struktura pakietu zarządzanego (MPF) udostępnia tę funkcję za pomocą <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> klasy.  
   
- [Polecenie dokument referencyjny dotyczący formatowania tabeli](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) zasoby znajdują się w niezarządzanych satelitarnej biblioteki DLL interfejsu użytkownika.  
+ Zasoby [referencyjne w formacie tabeli poleceń](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) znajdują się w niezarządzanych satelitach DLL interfejsu użytkownika.  
   
-## <a name="command-handler-registration-of-a-vspackage"></a>Polecenie obsługi rejestracji pakietu VSPackage  
- Pakietu VSPackage działający jako procedura obsługi interfejsu użytkownika (UI)-na podstawie polecenia wymaga wpis rejestru o nazwie po pakietu VSPackage `GUID`. Ten wpis rejestru określa lokalizację pliku zasobów interfejsu użytkownika pakietu VSPackage i zasobu menu, w tym pliku. Wpis rejestru sam znajduje się w folderze HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<wersji >* \Menus, gdzie  *\<wersji >* jest wersją [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], na przykład 9.0.  
+## <a name="command-handler-registration-of-a-vspackage"></a>Rejestracja procedury obsługi poleceń pakietu VSPackage  
+ Pakietu VSPackage działający jako program obsługi poleceń opartych na interfejsie użytkownika wymaga wpisu rejestru o nazwie po pakietu VSPackage `GUID` . Ten wpis rejestru określa lokalizację pliku zasobów interfejsu użytkownika pakietu VSPackage i zasobu menu w tym pliku. Sam wpis rejestru znajduje się w obszarze HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, gdzie *\<Version>* jest wersją programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , na przykład 9,0.  
   
 > [!NOTE]
-> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<wersji >* może zostać zastąpiona przez alternatywne główne, kiedy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powłoki jest zainicjowany. Aby uzyskać więcej informacji o ścieżce katalogu głównego, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+> Ścieżka katalogu głównego HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* może zostać zastąpiona alternatywnym elementem głównym, gdy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powłoka zostanie zainicjowana. Aby uzyskać więcej informacji na temat ścieżki katalogu głównego, zobacz [Installing pakietów VSPackage With Instalator Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
-### <a name="the-ctmenu-resource-registry-entry"></a>Wpis rejestru CTMENU zasobów  
+### <a name="the-ctmenu-resource-registry-entry"></a>Wpis rejestru zasobów CTMENU  
  Struktura wpisu rejestru to:  
   
 ```  
@@ -44,22 +44,22 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>  
 ```  
   
- \<*Identyfikator GUID*> jest `GUID` z pakietu VSPackage w formie {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
+ \<*GUID*> jest `GUID` pakietu VSPackage w postaci {XXXXXX-xxxx-xxxx-xxxx-xxxxxxxxx}.  
   
- *\<Informacje o zasobach >* składa się z trzech elementów oddzielonych przecinkami. Te elementy są w kolejności:  
+ *\<Resource Information>* składa się z trzech elementów oddzielonych przecinkami. Te elementy są w kolejności:  
   
- \<*Ścieżka do biblioteki DLL zasobu*>, \< *identyfikator zasobu Menu*>, \< *Menu wersji*>  
+ \<*Path to Resource DLL*>, \<*Menu Resource ID*>, \<*Menu Version*>  
   
- W poniższej tabeli opisano pola \< *informacje o zasobach*>.  
+ W poniższej tabeli opisano pola \<*Resource Information*> .  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|\<*Ścieżka do biblioteki DLL zasobu*>|Jest to pełna ścieżka do zasobu biblioteki DLL, która zawiera zasób menu lub to pole pozostanie puste, co oznacza, że zasób pakietu VSPackage DLL ma być używany (jak określono w podkluczu pakiety, w którym pakietu VSPackage, sama jest zarejestrowany).<br /><br /> Jest zwyczajowego można pozostawić to pole puste.|  
-|\<*Identyfikator zasobu menu*>|To jest identyfikator zasobu `CTMENU` zasób, który zawiera wszystkie elementy interfejsu użytkownika dla pakietu VSPackage opracowanych z [vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) pliku.|  
-|\<*Menu wersji*>|Jest to numer używany jako wersja dla `CTMENU` zasobów. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używa tej wartości w celu określenia, czy wymagane remerge zawartość `CTMENU` zasób z pamięci podręcznej wszystkich `CTMENU` zasobów. Remerge jest wyzwalany przez wykonanie polecenia devenv Instalatora.<br /><br /> Ta wartość powinna początkowo ustawiona na 1 i zwiększany po każdej zmianie w `CTMENU` zasobów i przed wystąpieniem remerge.|  
+|\<*Path to Resource DLL*>|Jest to pełna ścieżka do biblioteki DLL zasobu, która zawiera zasób menu lub to pole pozostanie puste, co oznacza, że biblioteka DLL zasobów pakietu VSPackage ma być używana (jak określono w podkluczu Packages, w którym jest zarejestrowana sama pakietu VSPackage).<br /><br /> Jest to niestandardowa wartość pola pozostaw puste.|  
+|\<*Menu Resource ID*>|Jest to identyfikator zasobu `CTMENU` zawierający wszystkie elementy interfejsu użytkownika dla pakietu VSPackage jako skompilowane z pliku [vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) .|  
+|\<*Menu Version*>|Jest to numer używany jako wersja dla `CTMENU` zasobu. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używa tej wartości, aby określić, czy należy ponownie scalić zawartość `CTMENU` zasobu z jego pamięcią podręczną wszystkich `CTMENU` zasobów. Scalanie jest wyzwalane przez wykonanie polecenia Instalatora devenv.<br /><br /> Ta wartość powinna początkowo być ustawiona na 1 i zwiększona po każdej zmianie `CTMENU` zasobu i przed ponownym scaleniem.|  
   
 ### <a name="example"></a>Przykład  
- Oto przykład kilka wpisów zasobów:  
+ Oto przykład kilku wpisów zasobów:  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\  
@@ -69,5 +69,5 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Polecenia i menu, w których używane są zestawy międzyoperacyjne](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

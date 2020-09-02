@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: debugowanie aplikacji wielowątkowej | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,42 +18,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ce391523a256bcb195deccf0c14868b5eae707
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683083"
 ---
-# <a name="walkthrough-debugging-a-multithreaded-application"></a>Przewodnik: Debugowanie aplikacji wielowątkowych
+# <a name="walkthrough-debugging-a-multithreaded-application"></a>Wskazówki: Debugowanie aplikacji wielowątkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] zapewnia ulepszone **wątków** okna i inny użytkownik interfejsu ulepszenia, aby ułatwić debugowanie aplikacji wielowątkowych. W tym przewodniku zajmuje tylko kilka minut, ale jego ukończenia umożliwia zapoznanie się z nowymi funkcjami interfejsu do debugowania aplikacji wielowątkowych.  
+[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] oferuje ulepszone okno **wątków** i inne udoskonalenia interfejsu użytkownika ułatwiające debugowanie aplikacji wielowątkowych. Ten przewodnik zajmuje zaledwie kilka minut, ale jego zakończenie zapoznaje się z nowymi funkcjami interfejsu na potrzeby debugowania aplikacji wielowątkowych.  
   
- Zanim rozpoczniesz ten Instruktaż, musisz projektu aplikacji wielowątkowych. Wykonaj kroki wymienione w tym miejscu do utworzenia tego projektu.  
+ Aby rozpocząć ten przewodnik, potrzebny jest projekt aplikacji wielowątkowej. Wykonaj kroki wymienione w tym miejscu, aby utworzyć projekt.  
   
-#### <a name="to-create-the-walkthrough-project"></a>Aby utworzyć projekt wskazówki  
+#### <a name="to-create-the-walkthrough-project"></a>Aby utworzyć projekt instruktażu  
   
-1. Na **pliku** menu, wybierz **New** a następnie kliknij przycisk **projektu**.  
+1. W menu **plik** wybierz polecenie **Nowy** , a następnie kliknij pozycję **projekt**.  
   
-     **Nowy projekt** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Nowy projekt**.  
   
-2. W **typu projektu**s kliknij wybranego przez siebie języka: **Visual Basic**, **Visual C#** , lub **Visual C++**.  
+2. W polu **Typ projektu**kliknij wybrany język: **Visual Basic**, **Visual C#** lub **Visual C++**.  
   
-3. W **szablony** wybierz **aplikację Konsolową** lub **Aplikacja konsoli CLR**.  
+3. W polu **Szablony** wybierz **Aplikacja konsolowa** lub **Aplikacja konsolowa CLR**.  
   
-4. W **nazwa** wpisz nazwę MyThreadWalkthroughApp.  
+4. W polu **Nazwa** wpisz nazwę MyThreadWalkthroughApp.  
   
 5. Kliknij przycisk **OK**.  
   
-     Pojawi się nowy projekt konsoli. Po utworzeniu projektu, zostanie wyświetlony plik źródłowy. W zależności od języka wybranego pliku źródłowego może mieć nazwę Module1.vb, Program.cs lub MyThreadWalkthroughApp.cpp  
+     Zostanie wyświetlony nowy projekt konsoli. Po utworzeniu projektu zostanie wyświetlony plik źródłowy. W zależności od wybranego języka plik źródłowy może mieć nazwę Module1. vb, Program.cs lub MyThreadWalkthroughApp. cpp  
   
-6. Usuń kod, który pojawia się w pliku źródłowym i zastąp go przykładowy kod, który pojawia się w sekcji "Tworzenie wątek" tego tematu [Tworzenie wątków i przekazywanie danych na czas rozpoczęcia](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
+6. Usuń kod, który pojawia się w pliku źródłowym i zamień go na przykładowy kod, który pojawia się w sekcji "Tworzenie wątku" tematu [Tworzenie wątków i przekazywanie danych w czasie rozpoczęcia](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
-7. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
+7. W menu **File** kliknij pozycję **Save All**.  
   
-#### <a name="to-begin-the-walkthrough"></a>Aby rozpocząć przewodnik  
+#### <a name="to-begin-the-walkthrough"></a>Aby rozpocząć Przewodnik  
   
-- W oknie źródła Wyszukaj następujący kod:  
+- W oknie Źródło znajdź następujący kod:  
   
     ```vb  
     Thread.Sleep(3000)   
@@ -72,17 +72,17 @@ Console.WriteLine();
   
 #### <a name="to-start-debugging"></a>Aby rozpocząć debugowanie  
   
-1. Kliknij prawym przyciskiem myszy `Console.WriteLine` instrukcji, wskaż **punktu przerwania** a następnie kliknij przycisk **Wstaw punkt przerwania**.  
+1. Kliknij prawym przyciskiem myszy `Console.WriteLine` instrukcję, wskaż punkt **przerwania** , a następnie kliknij polecenie **Wstaw punkt przerwania**.  
   
-     Na marginesie po lewej stronie okna źródła pojawi się czerwone piłki. Oznacza to, że punkt przerwania są teraz ustawione w tej lokalizacji.  
+     Na marginesie po lewej stronie okna źródłowego pojawia się czerwona kulka. Oznacza to, że punkt przerwania jest teraz ustawiany w tej lokalizacji.  
   
-2. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
+2. W menu **Debugowanie** kliknij polecenie **Rozpocznij debugowanie**.  
   
-     Rozpoczyna debugowania, uruchamiania aplikacji konsoli, aby uruchomić i następnie zatrzymuje w punkcie przerwania.  
+     Rozpoczęcie debugowania spowoduje uruchomienie aplikacji konsolowej, a następnie zatrzymanie w punkcie przerwania.  
   
-3. Jeśli okno konsoli w aplikacji ma fokus w tym momencie, kliknij w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna powrót do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Jeśli okno aplikacji konsoli ma fokus w tym momencie, kliknij w oknie, aby [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przywrócić fokus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-4. W oknie źródła zlokalizuj wiersz, który zawiera następujący kod:  
+4. W oknie Źródło Zlokalizuj wiersz zawierający następujący kod:  
   
     ```vb  
     Thread.Sleep(5000)   
@@ -98,164 +98,164 @@ Thread::Sleep(3000);
   
 1. 
   
-#### <a name="to-discover-the-thread-marker"></a>Aby odnaleźć znacznika wątku  
+#### <a name="to-discover-the-thread-marker"></a>Aby odnaleźć znacznik wątku  
   
-1. Kliknij prawym przyciskiem myszy **wątków** okna, następnie kliknij przycisk **Pokaż wątki w źródle**.  
+1. Kliknij prawym przyciskiem myszy w oknie **wątki** , a następnie kliknij pozycję **Pokaż wątki w źródle**.  
   
-2. Spójrz na oprawę w lewej części okna. W tym wierszu będzie widoczna ikona podobny dwoma wątkami ręczników. Jeden wątek ma kolor czerwony, a druga niebieski. Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji. Ewentualnie wątek został zatrzymany w tej lokalizacji.  
+2. Spójrz na odstępy po lewej stronie okna. W tym wierszu zostanie wyświetlona ikona przypominająca dwuczęściowe wątki. Jeden wątek jest czerwony, a drugi jest niebieski. Znacznik wątku wskazuje, że wątek jest zatrzymany w tej lokalizacji. Prawdopodobnie wątek zostanie zatrzymany w tej lokalizacji.  
   
-3. Umieść wskaźnik myszy nad znacznika wątku. Etykietka danych, który pojawia się. DataTip informuje numer identyfikacyjny nazwy i wątku dla każdego wątku zatrzymania. W tym przypadku istnieje tylko jeden wątek, którego nazwa jest prawdopodobnie `<noname>`.  
+3. Umieść wskaźnik myszy nad znacznikiem wątku. Zostanie wyświetlona etykietki danych. Etykietki danych informuje o nazwie i numerze wątku dla każdego zatrzymanego wątku. W takim przypadku istnieje tylko jeden wątek, którego nazwa jest prawdopodobnie `<noname>` .  
   
-4. Kliknij prawym przyciskiem myszy znacznika wątku. Należy pamiętać, opcje menu skrótów.  
+4. Kliknij prawym przyciskiem myszy znacznik wątku. Zanotuj opcje dostępne w menu skrótów.  
   
-   Ta ikona jest *znacznika wątku*:  
+   Ta ikona jest *znacznikiem wątku*:  
   
    ![Znacznik wątku](../debugger/media/threadmarker.gif "ThreadMarker")  
   
-## <a name="flagging-and-unflagging-threads"></a>Flagami i Unflagging wątków  
- W [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)], można Oflaguj wątki, które chcesz poświęcić szczególną uwagę. Flagowanie wątków jest dobrym sposobem na śledzenie ważnych wątków i Ignoruj wątki, które nie są istotne informacje.  
+## <a name="flagging-and-unflagging-threads"></a>Oflagowanie i nieoflagowanie wątków  
+ W programie [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] można oflagować wątki, które mają dawać szczególną uwagę. Oflagowane wątki to dobry sposób na śledzenie ważnych wątków i ignorowanie wątków, które nie są potrzebne.  
   
-#### <a name="to-flag-threads"></a>Do oflagowania wątków  
+#### <a name="to-flag-threads"></a>Aby oflagować wątki  
   
-1. Na **widoku** menu wskaż **pasków narzędzi**.  
+1. W menu **Widok** wskaż pozycję **paski narzędzi**.  
   
-     Upewnij się, że **Lokalizacja debugowania** pasek narzędzi jest zaznaczony.  
+     Upewnij się, że wybrano pasek narzędzi **Lokalizacja debugowania** .  
   
-2. Przejdź do **debugowania lokalizacji** paska narzędzi i kliknij przycisk **wątku** listy.  
+2. Przejdź do paska narzędzi **Lokalizacja debugowania** i kliknij listę **wątków** .  
   
     > [!NOTE]
-    > Możesz rozpoznać tego paska narzędzi przez trzy wyraźną listy: **Proces**, **wątku**, i **ramki stosu**.  
+    > Można rozpoznać ten pasek narzędzi o trzech widocznych listach: **proces**, **wątek**i **Ramka stosu**.  
   
-3. Zwróć uwagę, jak wiele wątków, są wyświetlane na liście.  
+3. Zauważ, jak wiele wątków pojawia się na liście.  
   
-4. Wróć do okna źródłowego i kliknij prawym przyciskiem myszy **wątku** ponownie znacznika.  
+4. Wróć do okna źródłowego i ponownie kliknij prawym przyciskiem myszy znacznik **wątku** .  
   
-5. W menu skrótów wybierz polecenie **flagi**, a następnie kliknij nazwę wątku i numerem Identyfikacyjnym.  
+5. W menu skrótów wskaż polecenie **Flaga**, a następnie kliknij nazwę wątku i numer identyfikacyjny.  
   
-6. Wróć do **debugowania lokalizacji** paska narzędzi i kliknij przycisk **wątku** ponownie listę.  
+6. Wróć do paska narzędzi **Lokalizacja debugowania** i kliknij ponownie listę **wątków** .  
   
-     Na liście pojawi się teraz tylko wątków oflagowanych. Przycisk flagi, który jest tylko do prawej **wątku** listy. Ikony flagi przycisk został wyszarzony przed. Teraz jest czerwony jasny, stałe.  
+     Tylko oflagowany wątek pojawia się na liście teraz. Przycisk flagi, który znajduje się po prawej stronie listy **wątków** . Ikona flagi na przycisku została wyszarzona przed. Teraz jest to pełna, jasna czerwona.  
   
-7. Umieść wskaźnik myszy na ikonie flagi.  
+7. Umieść wskaźnik myszy nad ikoną flagi.  
   
-     Pojawi się okno podręczne. Są one informuje, jakie tryb **wątku** listy jest: **Pokaż tylko oflagowane wątki**.  
+     Zostanie wyświetlone okno podręczne. To okno podręczne informuje o tym, w jakim trybie znajduje się lista **wątków** : **Pokaż tylko Oflagowane wątki**.  
   
-8. Kliknij przycisk flagi, aby powrócić do **Pokaż wszystkie wątki** trybu.  
+8. Kliknij przycisk flagi, aby przełączyć z powrotem do trybu **Pokaż wszystkie wątki** .  
   
-9. Kliknij przycisk **wątku** ponownie i sprawdź, czy będą teraz widoczne wszystkie wątki ponownie.  
+9. Kliknij ponownie listę **wątków** i sprawdź, czy teraz można ponownie zobaczyć wszystkie wątki.  
   
-10. Kliknij przycisk flagi, aby powrócić do **Pokaż tylko oflagowane wątki**.  
+10. Kliknij przycisk flagi, aby przełączyć z powrotem do **wyświetlania tylko wątków oflagowanych**.  
   
-11. Na **debugowania** menu wskaż **Windows** a następnie kliknij przycisk **wątków**.  
+11. W menu **debugowanie** wskaż polecenie **Windows** , a następnie kliknij pozycję **wątki**.  
   
-     **Wątków** zostanie wyświetlone okno. Jeden wątek ma ikony flagi wyraźną podłączone do niego.  
+     Zostanie wyświetlone okno **wątki** . Jeden wątek ma dołączoną ikonę flagi z widocznym elementem.  
   
-12. W oknie źródłowym kliknij prawym przyciskiem myszy znacznika wątku ponownie.  
+12. W oknie źródło ponownie kliknij prawym przyciskiem myszy znacznik wątku.  
   
-     Zwróć uwagę, jakie opcje są teraz dostępne w menu skrótów. Zamiast **flagi**, pojawi się informacja **Unflag**. Nie klikaj **Unflag**.  
+     Zauważ, jakie opcje są teraz dostępne w menu skrótów. Zamiast **flagować**zobaczysz opcję Usuń **flagę**. Nie klikaj przycisku Usuń **flagę**.  
   
-13. Przejdź do następnej procedury dotyczące usuwanie oflagowania wątków.  
+13. Przejdź do następnej procedury dotyczącej tworzenia flag wątków.  
   
-#### <a name="to-unflag-threads"></a>Aby usuwanie oflagowania wątków  
+#### <a name="to-unflag-threads"></a>Aby Usuń flagę wątków  
   
-1. Na **wątków** okna, kliknij prawym przyciskiem myszy wiersz odpowiadający wątków oflagowanych.  
+1. W oknie **wątki** kliknij prawym przyciskiem myszy wiersz odpowiadający wątkowi oflagowanemu.  
   
-     Zostanie wyświetlone menu skrótów. Ma funkcje umożliwiające **Unflag** i **Usuń flagę ze wszystkich**.  
+     Zostanie wyświetlone menu skrótów. Ma opcje **unflaging** i **Unflag All**.  
   
-2. Aby Usuń flagę z wątku, kliknij przycisk **Unflag**.  
+2. Aby odoflagować wątek, kliknij przycisk Usuń **flagę**.  
   
-3. Kliknij ikonę flagi czerwony.  
+3. Kliknij ikonę czerwona flaga.  
   
-4. Przyjrzyj się **debugowania lokalizacji** narzędzi ponownie. Flaga jest wygaszony ponownie. Oflagowanie jest tylko wątków oflagowanych. Ponieważ nie istnieją wątki oflagowane, pasek narzędzi stała się wstecz do **Pokaż wszystkie wątki** trybu. Kliknij przycisk **wątku** listy i sprawdź, czy można wyświetlić wszystkie wątki.  
+4. Sprawdź ponownie pasek narzędzi **Lokalizacja debugowania** . Przycisk flagi jest wyszarzony ponownie. Użytkownik oznaczył tylko oflagowany wątek. Ponieważ nie ma żadnych oflagowanych wątków, pasek narzędzi powróci do **wyświetlania wszystkich trybów wątków** . Kliknij listę **wątków** i sprawdź, czy można zobaczyć wszystkie wątki.  
   
-5. Wróć do **wątków** okna i zbadaj kolumny informacji.  
+5. Wróć do okna **wątki** i przejrzyj kolumny informacji.  
   
-     U góry każdej kolumny większość przycisków mają tytułów, które identyfikują kolumny. Jednak pierwsza kolumna po lewej stronie nie ma tytułu. Zamiast tego zawiera ikonę, która jest zarys flagę. Można zauważyć w tych samych konturu w każdym wierszu listy wątków. Konspekt oznacza, że wątek bez flagi.  
+     W górnej części każdej kolumny większość przycisków ma tytuły, które identyfikują kolumnę. Jednak pierwsza kolumna po lewej stronie nie ma tytułu. Zamiast tego ma ikonę, która jest konturem flagi. Zobaczysz ten sam Konspekt w każdym wierszu listy wątków. Konspekt oznacza, że wątek nie jest oflagowany.  
   
-6. Kliknij przycisk opisanych flagi dla dwóch wątków drugie i trzecie w dolnej części listy.  
+6. Kliknij kontury flagi dla dwóch wątków, drugi i trzeci od dołu listy.  
   
-     Ikony flag stają się czerwony, zamiast pustego konturów.  
+     Ikony flag stają się pełnymi kolorami czerwonymi, a nie z pustymi konturami.  
   
-7. Kliknij przycisk w górnej części kolumny flag.  
+7. Kliknij przycisk w górnej części kolumny flaga.  
   
-     Kolejność listy wątków zmieniany, gdy kliknięto przycisk. Lista wątków jest obecnie posortowana w oflagowane wątki na górze.  
+     Kolejność na liście wątków została zmieniona po kliknięciu przycisku. Lista wątków jest teraz sortowana przy użyciu oflagowanych wątków w górnej części.  
   
-8. Ponownie kliknij przycisk w górnej części kolumny flag.  
+8. Ponownie kliknij przycisk w górnej części kolumny flaga.  
   
-     Jej ponownie zmienić porządek sortowania.  
+     Porządek sortowania został zmieniony ponownie.  
   
-## <a name="more-about-the-threads-window"></a>Więcej informacji na temat okna wątków  
+## <a name="more-about-the-threads-window"></a>Więcej informacji o oknie wątków  
   
-#### <a name="to-learn-more-about-the-threads-window"></a>Aby dowiedzieć się więcej na temat okna wątków  
+#### <a name="to-learn-more-about-the-threads-window"></a>Aby dowiedzieć się więcej o oknie wątków  
   
-1. W **wątków** oknie Sprawdź trzecia kolumna z lewej strony. Przycisk w górnej części w tej kolumnie jest wyświetlany komunikat **identyfikator**.  
+1. W oknie **wątki** Przeanalizuj trzecią kolumnę z lewej strony. W górnej części tej kolumny znajduje się przycisk **ID**.  
   
-2. Kliknij przycisk **identyfikator**.  
+2. Kliknij pozycję **Identyfikator**.  
   
-     Lista wątków jest teraz posortowane według numer identyfikacyjny wątku.  
+     Lista wątków jest teraz posortowana według numeru ID wątku.  
   
-3. Kliknij prawym przyciskiem myszy dowolnego wątku, na liście. W menu skrótów kliknij **wyświetlanie szesnastkowe**.  
+3. Kliknij prawym przyciskiem myszy dowolny wątek na liście. W menu skrótów kliknij pozycję **Wyświetlanie w formacie szesnastkowym**.  
   
-     Format liczb identyfikator wątku jest zmieniany.  
+     Format numerów identyfikatorów wątków jest zmieniany.  
   
-4. Umieść wskaźnik myszy nad żadnym z wątków na liście.  
+4. Umieść wskaźnik myszy nad dowolnym wątkiem na liście.  
   
-     Po chwili przechwytują pojawia się DataTip. Przedstawia on częściowe stosu dla wątku.  
+     Po chwilowo opóźnieniu pojawi się etykietki danych. Pokazuje częściowy stos wywołań wątku.  
   
-5. Przyjrzyj się czwartej kolumnie z lewej strony, która jest oznaczona etykietą **kategorii**. Wątki są przydzielane do kategorii.  
+5. Przyjrzyj się czwartej kolumnie od lewej, która jest oznaczona etykietą **Kategoria**. Wątki są klasyfikowane do kategorii.  
   
-     Pierwszym wątkiem utworzone w procesie jest nazywana wątku głównego. Znajdź je w listy wątków.  
+     Pierwszy wątek utworzony w procesie jest określany jako wątek główny. Znajdź ją na liście wątków.  
   
-6. Kliknij prawym przyciskiem myszy w wątku głównym, a następnie kliknij przycisk **Przełącz do wątku**.  
+6. Kliknij prawym przyciskiem myszy główny wątek, a następnie kliknij polecenie **Przełącz do wątku**.  
   
-     Pojawi się okno dialogowe ostrzeżenia. Informuje, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie może wyświetlić kodu źródłowego dla głównego wątku.  
+     Zostanie wyświetlone okno dialogowe ostrzeżenia. Informuje o tym, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie można wyświetlić kodu źródłowego dla głównego wątku.  
   
      Kliknij przycisk **OK**.  
   
-7. Przyjrzyj się **stos wywołań** okna i **Lokalizacja debugowania** paska narzędzi.  
+7. Sprawdź okno **stosu wywołań** i pasek narzędzi **Lokalizacja debugowania** .  
   
-     Zawartość **stos wywołań** okna uległy zmianie.  
+     Zawartość okna **stosu wywołań** została zmieniona.  
   
 ## <a name="switching-the-active-thread"></a>Przełączanie aktywnego wątku  
   
-#### <a name="to-switch-threads"></a>Aby przełączyć wątków  
+#### <a name="to-switch-threads"></a>Aby przełączyć wątki  
   
-1. W **wątków** okna, sprawdź w drugiej kolumnie z lewej strony. Przycisk u góry tej kolumny nie ma tekstu lub ikonę. Ta kolumna znajduje się **aktywnego wątku** kolumny.  
+1. W oknie **wątki** Przejrzyj drugą kolumnę po lewej stronie. Przycisk w górnej części tej kolumny nie ma tekstu ani ikony. Ta kolumna jest kolumną **aktywnego wątku** .  
   
-2. Przyjrzyj się **aktywnego wątku** kolumny i zwróć uwagę, że jeden wątek ma żółta strzałka. Jest to *wskaźnik aktywnego wątku*.  
+2. Spójrz na **aktywną kolumnę wątku** i zwróć uwagę, że jeden wątek ma żółtą strzałkę. Jest to *wskaźnik aktywnego wątku*.  
   
-3. Zanotuj numer identyfikacyjny wątku gdzie znajduje się wskaźnik aktywnego wątku. Wskaźnik aktywnego wątku przejdzie do innego wątku, ale konieczne będzie umieszczenie go ponownie, po zakończeniu.  
+3. Zanotuj numer identyfikatora wątku, w którym znajduje się wskaźnik aktywnego wątku. Wskaźnik aktywnego wątku zostanie przesunięty do innego wątku, ale będzie trzeba go przywrócić po zakończeniu.  
   
-4. Kliknij prawym przyciskiem myszy innego wątku, a następnie kliknij przycisk **Przełącz do wątku**.  
+4. Kliknij prawym przyciskiem myszy inny wątek, a następnie kliknij polecenie **Przełącz do wątku**.  
   
-5. Przyjrzyj się **stos wywołań** okna w oknie źródła. Zmieniono zawartość.  
+5. Sprawdź okno **stos wywołań** w oknie źródło. Zawartość została zmieniona.  
   
-6. Przyjrzyj się **Lokalizacja debugowania** paska narzędzi. Aktywny wątek został zmieniony, zbyt.  
+6. Spójrz na pasek narzędzi **Lokalizacja debugowania** . Aktywny wątek został również zmieniony.  
   
-7. Przejdź do **Lokalizacja debugowania** paska narzędzi. Kliknij przycisk **wątku** polu i wybierz inny wątek z listy rozwijanej.  
+7. Przejdź do paska narzędzi **Lokalizacja debugowania** . Kliknij pole **wątek** i wybierz inny wątek z listy rozwijanej.  
   
-8. Przyjrzyj się **wątków** okna. Wskaźnik wątku active została zmieniona.  
+8. Zapoznaj się z oknem **wątki** . Wskaźnik aktywnego wątku został zmieniony.  
   
-9. W oknie źródłowym kliknij prawym przyciskiem myszy znacznika wątku. W menu skrótów wybierz polecenie **przełączyć się do** i kliknij numer Identyfikatora/nazwy wątku.  
+9. W oknie źródło kliknij prawym przyciskiem myszy znacznik wątku. W menu skrótów wskaż polecenie **Przełącz do** i kliknij nazwę wątku/Numer ID.  
   
-     Zauważyliśmy już teraz trzy sposoby zmiany aktywnego wątku: przy użyciu **wątków** oknie **wątku** pole w **Lokalizacja debugowania** narzędzi, a wskaźnik wątku w Okno źródłowe.  
+     Widzisz teraz trzy sposoby zmiany aktywnego wątku: przy użyciu okna **wątki** , pola **wątku** na pasku narzędzi **lokalizacji debugowania** oraz wskaźnika wątku w oknie źródłowym.  
   
-     Za pomocą wskaźnik wątku można przełączyć tylko dla wątków, które zostały zatrzymane w tej konkretnej lokalizacji. Za pomocą **wątków** okna i **Lokalizacja debugowania** narzędzi można przełączyć na żadnym z wątków.  
+     Za pomocą wskaźnika wątku można przełączyć tylko na wątki, które są zatrzymane w danej lokalizacji. Za pomocą okna **wątki** i paska narzędzi **lokalizacji debugowania** można przełączyć się na dowolny wątek.  
   
-## <a name="freezing-and-thawing-thread-execution"></a>Zawiesza się i odblokowania wykonywanie wątków  
+## <a name="freezing-and-thawing-thread-execution"></a>Zamrażanie i odblokowywanie wykonywania wątku  
   
-#### <a name="to-freeze-and-unfreeze-threads"></a>Zablokuj i Odblokuj wątki  
+#### <a name="to-freeze-and-unfreeze-threads"></a>Aby zablokować i odmrozić wątki  
   
-1. W **wątków** okna, kliknij prawym przyciskiem myszy dowolnego wątku, a następnie kliknij przycisk **Freeze**.  
+1. W oknie **wątki** kliknij prawym przyciskiem myszy dowolny wątek, a następnie kliknij pozycję **Zablokuj**.  
   
-2. Przyjrzyj się kolumna aktywnego wątku. Para pionowych słupków pojawiają się dostępne. Niebieskie paski w tych dwóch wskazują, że wątek jest zablokowane.  
+2. Spójrz na aktywną kolumnę wątku. Para pionowych słupków znajduje się teraz. Te dwa niebieskie paski wskazują, że wątek jest zablokowany.  
   
-3. Przyjrzyj się **Wstrzymaj** kolumny. Wstrzymania liczenia wątku, jest teraz 1.  
+3. Zapoznaj się z kolumną **Wstrzymaj** . Liczba wstrzymań dla wątku wynosi teraz 1.  
   
-4. Kliknij prawym przyciskiem myszy zablokowanego wątku, a następnie kliknij przycisk **Odblokuj**.  
+4. Kliknij prawym przyciskiem myszy zablokowany wątek, a następnie kliknij polecenie **rozmrażanie**.  
   
-     Kolumna aktywnego wątku i **Wstrzymaj** zmiany kolumny.  
+     Kolumna aktywnego wątku i zmiana kolumny **zawieszenia** .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Instrukcje: Przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Instrukcje: przełączanie do innego wątku podczas debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)

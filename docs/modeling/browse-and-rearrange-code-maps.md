@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2683ec839d8eae41d3f4ab59112a31ba6d893848
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541977"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Przeglądanie i rozmieszczanie map kodu
@@ -41,7 +41,7 @@ Mapy kodu można dostosować bez wpływu na kod źródłowy w rozwiązaniu. Jest
 
 - Można wyświetlić mapy kodu i wprowadzić ograniczone edycje map kodu w Visual Studio Professional.
 
-## <a name="get-started-working-with-code-maps"></a><a name="ManageLargeGraphs"></a>Wprowadzenie do pracy z mapami kodu
+## <a name="get-started-working-with-code-maps"></a><a name="ManageLargeGraphs"></a> Wprowadzenie do pracy z mapami kodu
 
 Utwórz mapę kodu (zobacz [zależności mapy w rozwiązaniach](../modeling/map-dependencies-across-your-solutions.md) , aby uzyskać więcej informacji). Jeśli nie chcesz czekać na zakończenie generowania mapy, kliknij link **Anuluj** w dowolnym momencie, aby zatrzymać proces generacji. Jeśli to zrobisz, nie będzie można zobaczyć szczegółów wszystkich zależności i linków.
 
@@ -57,9 +57,9 @@ Po wygenerowaniu mapy Rozpocznij z tymi wskazówkami dotyczącymi recenzowania k
 
 - Maksymalizuj wydajność dużych map. Aby uzyskać więcej informacji, zobacz [Mapowanie zależności między rozwiązaniami](../modeling/map-dependencies-across-your-solutions.md) . Na przykład Włącz opcję **Pomiń kompilację** na pasku narzędzi mapy, aby program Visual Studio nie odbudowuje Twojego rozwiązania podczas aktualizacji elementów na mapie.
 
-## <a name="change-the-map-layout"></a><a name="Selecting"></a>Zmienianie układu mapy
+## <a name="change-the-map-layout"></a><a name="Selecting"></a> Zmienianie układu mapy
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Rozmieść przepływ zależności dla całej mapy w określonym kierunku. Może to pomóc w wyświetleniu warstw architektury w kodzie.|Na pasku narzędzi Mapa wybierz **Układ**, a następnie:<br /><br /> -   **Od góry do dołu** ![ Przycisk wykresu u góry do dołu](../modeling/media/topbottomgraphbutton.gif)<br />-   **Od dołu do góry** ![ Przycisk dolny do górnego wykresu](../modeling/media/bottomtopgraphbutton.gif)<br />-   **Od lewej do prawej** ![ Przycisk układu od lewej do prawej](../modeling/media/leftrightgraphbutton.gif)<br />-   **Od prawej do lewej** ![ Przycisk "od prawej do lewej" wykresu](../modeling/media/rightleftgraphbutton.gif)|
 |Zobacz naturalne klastry zależności w kodzie z najbardziej zależnymi węzłami w centrum klastrów i najniższymi węzłami zależnymi znajdującymi się poza tymi klastrami.|Na pasku narzędzi mapy wybierz pozycję **Układ**, a następnie przycisk Szybkie klastry **klastrów** ![ na pasku narzędzi grafu ](../modeling/media/quickclustersicon.gif) .|
@@ -68,9 +68,9 @@ Po wygenerowaniu mapy Rozpocznij z tymi wskazówkami dotyczącymi recenzowania k
 |Zmień układ wewnątrz grupy niezależnie od innych węzłów i grup na mapie.|Wybierz węzeł i otwórz menu skrótów. Wybierz **Układ** i wybierz styl układu.<br /><br /> — lub —<br /><br /> Wybierz węzeł i rozwiń go, aby wyświetlić węzły podrzędne. Kliknij tytuł węzła, aby wyświetlić podręczny pasek narzędzi grupy, a następnie otwórz pozycję **Zmień styl układu** ![ wykresu zależności grupy &#45; pasku narzędzi &#45; ](../modeling/media/dependencygraph_grouptoolbar.gif) Lista układu. Wybierz jeden z układów drzewa, **szybkie klastry**lub **Widok listy** , który organizuje zawartość grupy w postaci listy.<br /><br /> Aby uzyskać więcej informacji, zobacz [węzły grup](#OrganizeGroups) .|
 |Cofnij akcję na mapie.|Naciśnij klawisz **Ctrl**  +  **Z** lub użyj polecenia **Undo** programu Visual Studio.|
 
-## <a name="browse-the-map"></a><a name="Explore"></a>Przeglądaj mapę
+## <a name="browse-the-map"></a><a name="Explore"></a> Przeglądaj mapę
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Zeskanuj mapę.|Przeciągnij mapę w dowolnym kierunku przy użyciu myszy.<br /><br /> — lub —<br /><br /> Przytrzymaj klawisz **SHIFT** i obróć kółko myszy, aby przewinąć w poziomie. Przytrzymaj klawisz **SHIFT**  +  **CTRL** i obróć kółkiem myszy, aby przewinąć w poziomie.|
 |Powiększ lub Zmniejsz mapę.|Obróć kółko myszy.<br /><br /> — lub —<br /><br /> Użyj listy rozwijanej **powiększenie** na pasku narzędzi mapy kodu.<br /><br /> — lub —<br /><br /> Użyj skrótów klawiaturowych. Aby powiększyć, naciśnij **klawisze Ctrl + Shift +.** (kropka). Aby pomniejszyć, naciśnij **klawisze CTRL + SHIFT +,** (przecinek).|
@@ -80,9 +80,9 @@ Po wygenerowaniu mapy Rozpocznij z tymi wskazówkami dotyczącymi recenzowania k
 |Zaznacz wszystkie niewybrane węzły.|Otwórz menu skrótów dla wybranych węzłów. Wybierz pozycję **zaznacz**, **Odwróć zaznaczenie**.|
 |Wybierz dodatkowe węzły, które łączą się z wybranymi.|Otwórz menu skrótów dla wybranych węzłów. Wybierz **pozycję Wybierz** i jedną z następujących opcji:<br /><br /> -Aby zaznaczyć dodatkowe węzły, które łączą się bezpośrednio z wybranym węzłem, wybierz pozycję **zależności przychodzące**.<br />-Aby wybrać dodatkowe węzły, które łączą się bezpośrednio z wybranego węzła, wybierz pozycję **zależności wychodzące**.<br />-Aby wybrać dodatkowe węzły, które łączą się bezpośrednio z i z wybranego węzła, wybierz **oba**te elementy.<br />-Aby zaznaczyć wszystkie węzły, które łączą się z wybranym węzłem i z niego wybierz opcję **połączony wykres**podrzędny.<br />-Aby zaznaczyć wszystkie elementy podrzędne wybranego węzła, wybierz pozycję **elementy podrzędne**.|
 
-## <a name="filter-nodes-and-links"></a><a name="FilterNodes"></a>Filtruj węzły i linki
+## <a name="filter-nodes-and-links"></a><a name="FilterNodes"></a> Filtruj węzły i linki
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Pokaż lub Ukryj okienko filtry.|Wybierz przycisk **filtry** na pasku narzędzi mapy kodu. Domyślnie okienko **filtry** jest wyświetlane jako strona z kartami w **Eksplorator rozwiązań**.|
 |Filtrowanie typów węzłów, które są wyświetlane na mapie.|Ustaw lub wyczyść pola wyboru na liście **elementy kodu** w okienku filtry.|
@@ -91,7 +91,7 @@ Po wygenerowaniu mapy Rozpocznij z tymi wskazówkami dotyczącymi recenzowania k
 
 Ikony wyświetlane w panelu legendy mapy odzwierciedlają ustawienia wprowadzone na liście. Aby pokazać lub ukryć panel legenda, kliknij przycisk **Legenda** na pasku narzędzi mapy kodu.
 
-## <a name="examine-nodes-and-links"></a><a name="Inspect"></a>Sprawdzanie węzłów i linków
+## <a name="examine-nodes-and-links"></a><a name="Inspect"></a> Sprawdzanie węzłów i linków
 
 Mapy kodu pokazują następujące rodzaje łączy:
 
@@ -104,16 +104,16 @@ Mapy kodu pokazują następujące rodzaje łączy:
 > [!TIP]
 > Domyślnie mapa pokazuje linki między grupami tylko dla wybranych węzłów. Aby zmienić to zachowanie, aby pokazać lub ukryć zagregowane łącza między grupami, kliknij przycisk **Układ** na pasku narzędzi Mapa kodu i wybierz pozycję **Zaawansowane**, a następnie **Wyświetl wszystkie linki między grupami** lub **Ukryj wszystkie linki między grupami**. Aby uzyskać więcej informacji, zobacz [ukrywanie lub pokazywanie węzłów i linków](#HidingShowing) .
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Zobacz więcej informacji na temat węzła lub łącza.|Przesuń wskaźnik myszy nad węzłem lub linkiem do momentu wyświetlenia etykietki narzędzia.<br /><br /> Etykietka narzędzia dla łącza zagregowanego zawiera listę poszczególnych zależności, które reprezentuje.<br /><br /> — lub —<br /><br /> Otwórz menu skrótów dla węzła lub łącza. Wybierz kolejno opcje **Edytuj**i **Właściwości**.|
 |Pokaż lub Ukryj zawartość grupy.|-Aby rozwinąć grupę, otwórz menu skrótów dla węzła, a następnie wybierz pozycję **Grupa**, **Rozwiń**.<br />     — lub —<br />     Przesuń wskaźnik myszy nad węzłem do momentu, gdy zostanie wyświetlony przycisk cudzysłów ostrokątny (Strzałka w dół). Kliknij ten przycisk, aby rozwinąć grupę. Klawiatura: aby rozwinąć lub zwinąć wybraną grupę, naciśnij klawisz **Plus** ( **+** ) lub **znak minus** ( **-** ).<br />— Aby zwinąć grupę, otwórz menu skrótów dla węzła, a następnie wybierz pozycję **Grupa**, **Zwiń**.<br />     — lub —<br />     Przesuń wskaźnik myszy na górną grupę do momentu, gdy zostanie wyświetlony przycisk Pagon (Strzałka w górę). Kliknij ten przycisk, aby zwinąć grupę.<br />-Aby rozwinąć wszystkie grupy, naciśnij **kombinację klawiszy CTRL**  +  **A** , aby zaznaczyć wszystkie węzły. Otwórz menu skrótów dla mapy i wybierz pozycję **Grupa**, **Rozwiń**. **Uwaga:**      To polecenie jest niedostępne, jeśli rozwinięcie wszystkich grup generuje niezdatną mapę lub problemy z pamięcią. Zaleca się, aby rozszerzyć mapę tylko na poziom szczegółowości, który Cię interesuje.<br />-Aby zwinąć wszystkie grupy, otwórz menu skrótów dla węzła lub dla mapy. Wybierz kolejno pozycje **Grupa**i **Zwiń wszystko**.|
-|Zobacz definicję kodu dla przestrzeni nazw, typu lub składowej.|Otwórz menu skrótów dla węzła i wybierz polecenie **Przejdź do definicji**.<br /><br /> -lub-<br /><br /> Kliknij dwukrotnie węzeł. W przypadku rozwiniętych grup kliknij dwukrotnie nagłówek w grupie.<br /><br /> -lub-<br /><br /> Wybierz węzeł i naciśnij klawisz **F12**.<br /><br /> Przykład:<br /><br /> — W przypadku przestrzeni nazw zawierającej jedną klasę plik kodu dla klasy zostanie otwarty w celu wyświetlenia definicji tej klasy. W innych przypadkach okno **Znajdź wyniki symboli** zawiera listę plików kodu. **Uwaga:**      Po wykonaniu tego zadania w Visual Basic przestrzeni nazw plik kodu za przestrzenią nazw nie jest otwarty. Ten problem występuje również w przypadku wykonywania tego zadania w grupie wybranych węzłów, które zawierają przestrzeń nazw Visual Basic. Aby obejść ten problem, przejrzyj ręcznie plik z kodem znajdujący się za przestrzenią nazw lub Pomiń ten węzeł dla przestrzeni nazw.<br />— W przypadku klasy lub klasy częściowej plik kodu dla tej klasy zostanie otwarty w celu wyświetlenia definicji klasy.<br />-Dla metody, plik kodu dla klasy nadrzędnej otwiera się, aby wyświetlić definicję metody.|
-|Sprawdzanie zależności i elementów, które uczestniczą w łączu agregującym.|Wybierz interesujące Cię linki i otwórz menu skrótów dla zaznaczenia. Wybierz pozycję **Pokaż linki** do współtworzenia lub **Pokaż linki współautorów na nowej mapie kodu**.<br /><br /> Program Visual Studio rozwija grupy na obu końcach połączenia i pokazuje tylko te elementy i zależności, które w nim uczestniczą. **Uwaga:**  Podczas badania zależności między elementami w grupach częściowych może zostać wyświetlone następujące zachowanie: <ul><li>Linki do elementów, które nie uczestniczą w badaniu, znikają z mapy, mimo że te linki nadal istnieją.</li><li>Załóżmy, że analizujesz link do elementu w grupie częściowej, a następnie przebadasz inny link do tego samego elementu. Podczas drugiego badania Grupa docelowa częściowa zawiera tylko elementy z pierwszego badania. Linki i elementy docelowe, które nie uczestniczyły w pierwszej analizie, ale uczestniczą w drugim badaniu nie są wyświetlane.</li></ul> Aby wyświetlić brakujące elementy z grupy, wybierz opcję ponownie **Pobierz elementy podrzędne** ![ ponownie pobierz ikonę elementu podrzędnego ](../modeling/media/dependencygraph_deletednodesicon.png) (co oznacza, że nie wszystkie elementy członkowskie grupy są wyświetlane na mapie). Możesz również spróbować cofać akcje (klawiatura: Naciśnij **klawisze Ctrl + Z**) i sprawdź zależności na nowej mapie.|
+|Zobacz definicję kodu dla przestrzeni nazw, typu lub składowej.|Otwórz menu skrótów dla węzła i wybierz polecenie **Przejdź do definicji**.<br /><br /> -lub-<br /><br /> Kliknij dwukrotnie węzeł. W przypadku rozwiniętych grup kliknij dwukrotnie nagłówek w grupie.<br /><br /> -lub-<br /><br /> Wybierz węzeł i naciśnij klawisz **F12**.<br /><br /> Na przykład:<br /><br /> — W przypadku przestrzeni nazw zawierającej jedną klasę plik kodu dla klasy zostanie otwarty w celu wyświetlenia definicji tej klasy. W innych przypadkach okno **Znajdź wyniki symboli** zawiera listę plików kodu. **Uwaga:**      Po wykonaniu tego zadania w Visual Basic przestrzeni nazw plik kodu za przestrzenią nazw nie jest otwarty. Ten problem występuje również w przypadku wykonywania tego zadania w grupie wybranych węzłów, które zawierają przestrzeń nazw Visual Basic. Aby obejść ten problem, przejrzyj ręcznie plik z kodem znajdujący się za przestrzenią nazw lub Pomiń ten węzeł dla przestrzeni nazw.<br />— W przypadku klasy lub klasy częściowej plik kodu dla tej klasy zostanie otwarty w celu wyświetlenia definicji klasy.<br />-Dla metody, plik kodu dla klasy nadrzędnej otwiera się, aby wyświetlić definicję metody.|
+|Sprawdzanie zależności i elementów, które uczestniczą w łączu agregującym.|Wybierz interesujące Cię linki i otwórz menu skrótów dla zaznaczenia. Wybierz pozycję **Pokaż linki**  do współtworzenia lub **Pokaż linki współautorów na nowej mapie kodu**.<br /><br /> Program Visual Studio rozwija grupy na obu końcach połączenia i pokazuje tylko te elementy i zależności, które w nim uczestniczą. **Uwaga:**  Podczas badania zależności między elementami w grupach częściowych może zostać wyświetlone następujące zachowanie: <ul><li>Linki do elementów, które nie uczestniczą w badaniu, znikają z mapy, mimo że te linki nadal istnieją.</li><li>Załóżmy, że analizujesz link do elementu w grupie częściowej, a następnie przebadasz inny link do tego samego elementu. Podczas drugiego badania Grupa docelowa częściowa zawiera tylko elementy z pierwszego badania. Linki i elementy docelowe, które nie uczestniczyły w pierwszej analizie, ale uczestniczą w drugim badaniu nie są wyświetlane.</li></ul> Aby wyświetlić brakujące elementy z grupy, wybierz opcję ponownie **Pobierz elementy podrzędne** ![ ponownie pobierz ikonę elementu podrzędnego ](../modeling/media/dependencygraph_deletednodesicon.png) (co oznacza, że nie wszystkie elementy członkowskie grupy są wyświetlane na mapie). Możesz również spróbować cofać akcje (klawiatura: Naciśnij **klawisze Ctrl + Z**) i sprawdź zależności na nowej mapie.|
 |Sprawdzanie zależności między wieloma węzłami w różnych grupach.|Rozwiń grupy, aby zobaczyć wszystkie ich elementy podrzędne. Zaznacz wszystkie węzły, które Cię interesują, w tym ich elementy podrzędne. Mapa pokazuje linki między grupami między wybranymi węzłami.<br /><br /> Aby zaznaczyć wszystkie węzły w grupie, naciśnij i przytrzymaj klawisz **SHIFT** oraz lewy przycisk myszy podczas rysowania prostokąta wokół tej grupy. Aby zaznaczyć wszystkie węzły na mapie, naciśnij klawisz **Ctrl** + **a**. **Porada:**  Aby wyświetlić linki między grupami przez cały czas, wybierz pozycję **Układ** na pasku narzędzi Mapa, **Zaawansowane**, **Pokaż wszystkie linki między grupami**.|
 |Zobacz elementy, do których odwołuje się węzeł lub link.|Otwórz menu skrótów dla węzła i wybierz polecenie **Znajdź wszystkie odwołania**. **Uwaga:**  Ma to zastosowanie tylko wtedy, gdy `Reference` atrybut jest ustawiony dla węzła lub łącza w pliku DGML mapy. Aby dodać odwołania do elementów z węzłów lub linków, zobacz [Dostosowywanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|
 
-## <a name="hide-or-show-nodes-and-links"></a><a name="HidingShowing"></a>Ukrywanie lub pokazywanie węzłów i linków
+## <a name="hide-or-show-nodes-and-links"></a><a name="HidingShowing"></a> Ukrywanie lub pokazywanie węzłów i linków
 
 Ukrywanie węzłów wyklucza je z udziału w układzie algorytmów. Domyślnie łącza między grupami są ukryte. Łącza grupy współzależności są poszczególnymi łączami połączenia między grupami węzłów. Gdy grupy są zwinięte, Mapa agreguje wszystkie linki między grupami do pojedynczych linków między grupami. Gdyby rozwinąć grupę i wybrać węzły wewnątrz grupy, łącza grupy współzależności pojawiają się i pokażą zależności w tej grupie.
 
@@ -122,7 +122,7 @@ Ukrywanie węzłów wyklucza je z udziału w układzie algorytmów. Domyślnie �
 
 ### <a name="to-hide-or-show-nodes"></a>Aby ukryć lub pokazać węzły
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Ukryj wybrane węzły.|1. Wybierz węzły, które chcesz ukryć.<br />2. Otwórz menu skrótów dla wybranych węzłów lub dla mapy. Wybierz pozycję **zaznacz**, **Ukryj zaznaczone**.|
 |Ukryj niewybrane węzły.|1. Wybierz węzły, które mają pozostać widoczne.<br />2. Otwórz menu skrótów dla wybranych węzłów lub dla mapy. Wybierz pozycję **zaznacz**, **Ukryj niezaznaczone**.|
@@ -130,16 +130,16 @@ Ukrywanie węzłów wyklucza je z udziału w układzie algorytmów. Domyślnie �
 
 ### <a name="to-hide-or-show-links"></a>Aby ukryć lub pokazać linki
 
-|**Do**|**Na pasku narzędzi mapy wybierz pozycję Układ, zaawansowane, a następnie wybierz pozycję**|
+|**Działanie**|**Na pasku narzędzi mapy wybierz pozycję Układ, zaawansowane, a następnie wybierz pozycję**|
 |-|-|
 |Pokaż linki między grupami przez cały czas.|**Pokaż wszystkie linki między grupami**. Powoduje to ukrycie agregowanych łącz między grupami.|
 |Ukryj linki między grupami przez cały czas.|**Ukryj wszystkie linki między grupami**|
 |Pokaż tylko linki międzygrupowe dla wybranych węzłów.|**Pokaż linki między grupami w wybranych węzłach**|
 |Ukryj wszystkie linki.|**Ukryj wszystkie linki**. Aby wyświetlić linki ponownie, wybierz jedną z opcji wymienionych powyżej.|
 
-## <a name="group-nodes"></a><a name="OrganizeGroups"></a>Grupuj węzły
+## <a name="group-nodes"></a><a name="OrganizeGroups"></a> Grupuj węzły
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Pokaż węzły kontenera jako węzły grupy lub węzły liścia.|Aby wyświetlić węzły kontenera jako węzły liścia: Zaznacz węzły, otwórz menu skrótów dla zaznaczenia, a następnie wybierz pozycję **Grupuj**, **Konwertuj na liść**.<br /><br /> Aby wyświetlić węzły kontenera jako węzły grupy: Zaznacz węzły, otwórz menu skrótów dla zaznaczenia, a następnie wybierz pozycję **Grupuj**, **Konwertuj na grupę**.|
 |Zmień układ wewnątrz grupy.|Wybierz grupę, otwórz menu skrótów, wybierz **Układ**i wybierz styl układu.<br /><br /> — lub —<br /><br /> 1. Wybierz grupę i upewnij się, że została rozwinięta.<br />2. Kliknij ponownie nagłówek grupy, a zostanie wyświetlony pasek narzędzi grupy.<br />     ![Pasek narzędzi grupy &#45; wykresu zależności](../modeling/media/dependencygraph_group.png)<br />3. Otwórz pozycję **Zmień styl układu** ![ wykresu zależności listy grup &#45; pasek narzędzi grupy &#45; układ ](../modeling/media/dependencygraph_grouptoolbar.gif) i wybierz żądany styl układu.<br /><br /> **Widok listy** rozdziela członków grupy na listę. **Domyślnie program Graph** resetuje układ grupy do domyślnego układu mapy. Aby poznać inne opcje, zobacz [Zmiana układu mapy](#Selecting).|
@@ -149,7 +149,7 @@ Ukrywanie węzłów wyklucza je z udziału w układzie algorytmów. Domyślnie �
 |Usuń grupy.|Zaznacz jedną grupę lub kilka, które chcesz usunąć. Otwórz menu skrótów dla zaznaczenia, a następnie wybierz pozycję **Grupa**, **Usuń grupę**.|
 |Usuń węzły z grupy nadrzędnej.|Zaznacz węzły, które chcesz przenieść. Otwórz menu skrótów dla zaznaczenia, a następnie wybierz pozycję **Grupa**, **Usuń z elementu nadrzędnego**. Spowoduje to usunięcie węzłów do ich nadrzędnego lub spoza grupy, jeśli nie mają grupy nadrzędnych.<br /><br /> — lub —<br /><br /> Wybierz węzły i przeciągnij je poza grupę.|
 
-## <a name="add-remove-or-rename-nodes-links-and-comments"></a><a name="AddRemoveNodesLinks"></a>Dodawanie, usuwanie lub zmienianie nazw węzłów, linków i komentarzy
+## <a name="add-remove-or-rename-nodes-links-and-comments"></a><a name="AddRemoveNodesLinks"></a> Dodawanie, usuwanie lub zmienianie nazw węzłów, linków i komentarzy
 
 Możesz wyświetlić więcej lub mniej elementów na mapie, aby przechodzenie do szczegółów lub uprościć mapę. Możesz również zmienić nazwy elementów i dodać komentarze do elementów.
 
@@ -158,7 +158,7 @@ Możesz wyświetlić więcej lub mniej elementów na mapie, aby przechodzenie do
 
 ### <a name="add-a-node-for-a-code-element"></a>Dodawanie węzła dla elementu kodu
 
-|**Do**|**Wykonaj następujące kroki**|
+|**Działanie**|**Wykonaj następujące kroki**|
 |-|-|
 |Dodaj nowy węzeł ogólny w bieżącej lokalizacji wskaźnika myszy.|1. Przenieś wskaźnik myszy do miejsca na mapie, w której chcesz umieścić nowy element kodu, a następnie naciśnij klawisz **INSERT**.<br />     — lub —<br />     Otwórz menu skrótów dla mapy i wybierz polecenie **Edytuj**, **Dodaj**, **węzeł generyczny**.<br />2. Wpisz nazwę nowego węzła i naciśnij przycisk **Return**.|
 |Dodaj konkretny typ węzła elementu kodu w bieżącej lokalizacji wskaźnika myszy.|1. Przenieś wskaźnik myszy do położenia na mapie, w której chcesz umieścić nowy element kodu, a następnie otwórz menu skrótów dla mapy.<br />2. Wybierz pozycję **Edytuj**, **Dodaj**i wybierz żądany typ węzła.<br />3. Wpisz nazwę nowego węzła i naciśnij przycisk **Return**.|
@@ -195,7 +195,7 @@ Możesz wyświetlić więcej lub mniej elementów na mapie, aby przechodzenie do
 
 4. I wybierz docelowy element kodu dla linku.
 
-5. Naciśnij klawisz **Enter**.
+5.  Naciśnij klawisz **Enter**.
 
 ### <a name="AddComments"></a>
 
@@ -207,7 +207,7 @@ Możesz wyświetlić więcej lub mniej elementów na mapie, aby przechodzenie do
 
 2. Na pasku narzędzi wybierz trzecią ikonę, **Utwórz nowy węzeł komentarza z nowym linkiem do wybranego węzła**.
 
-     \-oraz
+     \- oraz
 
      Otwórz menu skrótów dla elementu Code i wybierz polecenie **Edytuj**  >  **Nowy komentarz**.
 
@@ -239,7 +239,7 @@ Możesz wyświetlić więcej lub mniej elementów na mapie, aby przechodzenie do
 
 1. Wybierz element kodu lub łącze, a następnie naciśnij klawisz **delete** .
 
-     \-oraz
+     \- oraz
 
      Otwórz menu skrótów dla elementu kodu lub łącza, a następnie wybierz polecenie **Edytuj**  >  **Usuń**.
 
@@ -259,7 +259,7 @@ Możesz wyświetlić więcej lub mniej elementów na mapie, aby przechodzenie do
 
 - Zmień kolor tła elementu lub wyczyść flagę monitującej, wybierając **Edytuj**  >  **inne kolory flagi**.
 
-## <a name="change-the-style-of-a-code-element-or-link"></a><a name="ChangeStyleCodeOrLink"></a>Zmień styl elementu lub linku kodu
+## <a name="change-the-style-of-a-code-element-or-link"></a><a name="ChangeStyleCodeOrLink"></a> Zmień styl elementu lub linku kodu
 
 Można zmienić ikony elementów kodu oraz kolory elementów kodu i linków przy użyciu wstępnie zdefiniowanych ikon i kolorów. Na przykład można wybrać kolor, aby wyróżnić elementy kodu i linki z określoną kategorią lub właściwością. Pozwala to na identyfikację i skoncentrowanie się na określonych obszarach mapy. Możesz określić niestandardowe ikony i kolory, edytując plik. dgml mapy; Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
@@ -297,7 +297,7 @@ Można zmienić ikony elementów kodu oraz kolory elementów kodu i linków przy
     > [!NOTE]
     > Można zmienić rozmieszczenie, usunąć lub tymczasowo dezaktywować style w polu **Legenda** . Zobacz [Edytowanie pola legendy](#ModifyLegend).
 
-## <a name="edit-the-legend-box"></a><a name="ModifyLegend"></a>Edytuj pole legendy
+## <a name="edit-the-legend-box"></a><a name="ModifyLegend"></a> Edytuj pole legendy
 
 Można zmienić rozmieszczenie, usunąć lub tymczasowo dezaktywować style w polu **Legenda** :
 
@@ -305,14 +305,14 @@ Można zmienić rozmieszczenie, usunąć lub tymczasowo dezaktywować style w po
 
 2. Wykonaj jedno z następujących zadań:
 
-    |**Do**|**Wybierz ikonę**|
+    |**Działanie**|**Wybierz ikonę**|
     |-|-|
     |Dezaktywuj element kodu|**Wyłącz**|
-    |Usuń element kodu|**Usuwanie**|
+    |Usuń element kodu|**Usuń**|
     |Przenieś styl w górę|**Przenieś w górę**|
     |Przenieś element kodu w dół|**Przenieś w dół**|
 
-## <a name="copy-styles-from-one-map-to-another"></a><a name="CopyLegend"></a>Kopiuj style z jednej mapy do innej
+## <a name="copy-styles-from-one-map-to-another"></a><a name="CopyLegend"></a> Kopiuj style z jednej mapy do innej
 
 1. Upewnij się, że pole **Legenda** jest widoczne na mapie źródłowej. Jeśli nie jest widoczny, na pasku narzędzi Mapa kliknij pozycję **Legenda**.
 
@@ -320,13 +320,13 @@ Można zmienić rozmieszczenie, usunąć lub tymczasowo dezaktywować style w po
 
 3. Wklej legendę do mapy docelowej.
 
-## <a name="merge-code-maps"></a><a name="MergeMaps"></a>Scalanie map kodu
+## <a name="merge-code-maps"></a><a name="MergeMaps"></a> Scalanie map kodu
 
 Mapy można scalać przez kopiowanie i wklejanie elementów kodu między mapami. Jeśli identyfikatory elementów kodu są zgodne, wklejanie elementów kodu funkcjonuje podobnie jak operacja scalania. Aby ułatwić to zadanie, należy umieścić wszystkie zestawy lub pliki binarne, które chcesz wizualizować w tym samym folderze, aby pełna ścieżka każdego zestawu lub pliku binarnego była taka sama dla każdej mapy, która ma zostać scalona.
 
 Alternatywnie możesz przeciągnąć te zestawy lub pliki binarne na tę samą mapę z tego folderu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 - [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)

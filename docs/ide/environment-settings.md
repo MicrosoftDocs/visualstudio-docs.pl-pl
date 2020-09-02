@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301882"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313032"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Ustawienia środowiska dla programu Visual Studio
 
-Po otwarciu programu Visual Studio po raz pierwszy można zoptymalizować środowisko programistyczne dla typu rozwoju, który można wykonać najbardziej, wybierając kolekcję ustawień. Każda kolekcja optymalizuje elementy, takie jak skróty klawiaturowe, układy okien, szablony projektów i elementów oraz widoczność poleceń.
+Po pierwszym otwarciu programu Visual Studio można zoptymalizować środowisko programistyczne dla typu rozwoju, który można wykorzystać, wybierając kolekcję ustawień. Każda kolekcja optymalizuje elementy, takie jak skróty klawiaturowe, układy okien, szablony projektów i elementów oraz widoczność poleceń.
 
 Dostępne są następujące kolekcje ustawień:
 
@@ -25,26 +25,26 @@ Dostępne są następujące kolekcje ustawień:
 - Visual Basic
 - Visual C#
 - Visual C++
-- Tworzenie stron internetowych
-- Tworzenie stron internetowych (tylko kod)
+-  Programowanie dla sieci Web
+- Programowanie dla sieci Web (tylko kod)
 
-## <a name="reset-settings"></a>Resetowanie ustawień
+## <a name="reset-settings"></a>Resetuj ustawienia
 
-Aby zmienić ustawienia programistyczne po pierwszym otwarciu programu Visual Studio, wykonaj następujące kroki:
+Aby zmienić ustawienia programistyczne po otwarciu programu Visual Studio po raz pierwszy, wykonaj następujące kroki:
 
-1. Wybierz **pozycję Ustawienia** > **importu i eksportu** narzędzi na pasku menu, aby otworzyć **Kreatora importu i eksportu ustawień**.
+1. Wybierz pozycję **Narzędzia**  >  **Importuj i Eksportuj ustawienia** z paska menu, aby otworzyć **Kreatora importowania i eksportowania ustawień**.
 
-1. W **Kreatorze importu i eksportu wybierz**pozycję **Resetuj wszystkie ustawienia**, a następnie wybierz pozycję **Dalej**.
+1. W **Kreatorze importowania i eksportowania ustawień**wybierz opcję **Zresetuj wszystkie ustawienia**, a następnie wybierz przycisk **dalej**.
 
-   ![Kreator importu i eksportu ustawień w programie Visual Studio](media/reset-all-settings.png)
+   ![Kreator importowania i eksportowania ustawień w programie Visual Studio](media/reset-all-settings.png)
 
-1. Na stronie **Zapisz bieżące ustawienia** wybierz pozycję **Tak** lub **Nie**, a następnie wybierz pozycję **Dalej**.
+1. Na stronie **Zapisywanie bieżących ustawień** wybierz opcję **tak** lub **nie**, a następnie wybierz przycisk **dalej**.
 
-1. Na stronie **Wybieranie domyślnej kolekcji ustawień** wybierz kolekcję, a następnie wybierz pozycję **Zakończ**.
+1. Na stronie **Wybierz domyślną kolekcję ustawień** wybierz kolekcję, a następnie wybierz pozycję **Zakończ**.
 
    ![Kolekcje ustawień w programie Visual Studio](media/settings-collections.png)
 
-1. Na stronie **Resetowanie zakończone** wybierz pozycję **Zamknij**.
+1. Na stronie **Resetowanie ukończone** wybierz pozycję **Zamknij**.
 
 ## <a name="see-also"></a>Zobacz też
 

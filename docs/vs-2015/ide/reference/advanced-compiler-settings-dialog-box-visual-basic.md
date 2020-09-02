@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba666b0ff5544b185f82a66c78d6259e9f1268fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651766"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
@@ -42,7 +42,7 @@ Za pomocą okna dialogowego **Ustawienia AdvancedCompiler** **projektanta projek
 
  **Usuń sprawdzanie przepełnienia liczby całkowitej** To pole wyboru jest domyślnie wyczyszczone, aby włączyć sprawdzanie przepełnienia liczby całkowitej. Zaznacz to pole wyboru, aby usunąć sprawdzanie przepełnienia liczby całkowitej. Jeśli zaznaczysz to pole wyboru, obliczenia liczby całkowitej mogą być szybsze. Jeśli jednak usuniesz sprawdzanie przeciążenia i przepełnienie pojemności typu danych, nieprawidłowe wyniki mogą być przechowywane bez zgłaszania błędu.
 
- Jeśli sprawdzane są warunki przepełnienia, a operacja całkowita przekracza przepływ, zostanie zgłoszony wyjątek <xref:System.OverflowException>. Jeśli warunki przepełnienia nie są zaznaczone, operacje typu Integer nie generują wyjątku.
+ Jeśli sprawdzane są warunki przepełnienia, a operacja całkowita przekracza przepływ, <xref:System.OverflowException> zostanie zgłoszony wyjątek. Jeśli warunki przepełnienia nie są zaznaczone, operacje typu Integer nie generują wyjątku.
 
  **Włącz optymalizacje** To pole wyboru jest domyślnie wyczyszczone, aby wyłączyć optymalizacje kompilatora. Zaznacz to pole wyboru, aby włączyć optymalizacje kompilatora. Optymalizacje kompilatora sprawiają, że plik wyjściowy jest mniejszy, szybszy i bardziej wydajny. Jednakże, ponieważ optymalizacje powodują ponowne rozmieszczanie kodu w pliku wyjściowym, optymalizacje kompilatora mogą utrudniać debugowanie.
 
@@ -57,10 +57,10 @@ Za pomocą okna dialogowego **Ustawienia AdvancedCompiler** **projektanta projek
 
  **Zdefiniuj stałą Trace** To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała śledzenia.
 
- **Stałe niestandardowe** Wprowadź dowolne niestandardowe stałe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, przy użyciu tej formy: **Name1 = "wartość1", NAME2 = "wartość2", nazwa3 = "wartość3"** .
+ **Stałe niestandardowe** Wprowadź dowolne niestandardowe stałe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, przy użyciu tej formy: **Name1 = "wartość1", NAME2 = "wartość2", nazwa3 = "wartość3"**.
 
 ## <a name="other-settings"></a>Inne ustawienia
- **Generuj zestawy serializacji** To ustawienie określa, czy kompilator ma tworzyć zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność uruchamiania <xref:System.Xml.Serialization.XmlSerializer>, jeśli użyto tej klasy do serializacji typów w kodzie. Domyślnie ta opcja jest ustawiona na wartość **automatycznie**, co oznacza, że zestawy serializacji są generowane tylko wtedy, gdy użyto <xref:System.Xml.Serialization.XmlSerializer> do kodowania typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to, czy kod używa <xref:System.Xml.Serialization.XmlSerializer>. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll.
+ **Generuj zestawy serializacji** To ustawienie określa, czy kompilator ma tworzyć zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność uruchamiania, <xref:System.Xml.Serialization.XmlSerializer> Jeśli użyto tej klasy do serializacji typów w kodzie. Domyślnie ta opcja jest ustawiona na wartość **automatycznie**, co oznacza, że zestawy serializacji są generowane tylko wtedy, gdy używane jest <xref:System.Xml.Serialization.XmlSerializer> kodowanie typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to, czy kod używa <xref:System.Xml.Serialization.XmlSerializer> . **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`.XmlSerializers.dll.
 
 ## <a name="see-also"></a>Zobacz też
  [Strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

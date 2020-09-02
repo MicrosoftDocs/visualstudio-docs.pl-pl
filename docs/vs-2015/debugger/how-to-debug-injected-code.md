@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie wprowadzonego kodu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie wstrzykniętego kodu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,47 +27,47 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df35a25534961c6ab94891d2da6fe54f05c37a3e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681089"
 ---
-# <a name="how-to-debug-injected-code"></a>Instrukcje: Debugowanie wprowadzonego kodu
+# <a name="how-to-debug-injected-code"></a>Porady: Debugowanie wprowadzonego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-UWAGA]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+KORYGUJĄC
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- Przy użyciu atrybutów znacznie upraszcza programowania w języku C++. Aby uzyskać więcej informacji, zobacz [pojęcia](https://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Niektóre atrybuty są interpretowane bezpośrednio przez kompilator. Inne atrybuty wstrzyknięcie kodu do źródło programu, w którym kompilator następnie kompiluje. Ten kod wprowadzonego sprawia, że ułatwia programowanie dzięki zmniejszeniu ilości kodu, który trzeba napisać. Jednak czasami usterkę może spowodować awarię podczas wykonywania wprowadzonego kodu aplikacji. W takim przypadku prawdopodobnie można przyjrzeć się wprowadzonego kodu. Program Visual Studio udostępnia dwa sposoby, aby wprowadzony kod:  
+ Używanie atrybutów może znacznie uprościć programowanie w języku C++. Aby uzyskać więcej informacji, zobacz [pojęcia](https://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Niektóre atrybuty są interpretowane bezpośrednio przez kompilator. Inne atrybuty wstrzyknąć kod do źródła programu, które następnie Kompilator kompiluje. Ten wstrzyknięty kod ułatwia programowanie przez zmniejszenie ilości kodu, który trzeba napisać. Czasami jednak usterka może spowodować niepowodzenie aplikacji podczas wykonywania wstrzykniętego kodu. Gdy tak się stanie, prawdopodobnie zechcesz przyjrzeć się wprowadzonym kodem. Program Visual Studio oferuje dwa sposoby wyświetlania wstrzykiwanego kodu:  
   
-- Możesz wyświetlić wprowadzonego kodu w **dezasemblacji** okna.  
+- Wprowadzany kod można wyświetlić w oknie **demontażu** .  
   
-- Za pomocą [/Fx](https://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), można utworzyć pliku scalonego źródła, który zawiera oryginalną i wprowadzonego kodu.  
+- Za pomocą [/FX](https://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560)można utworzyć scalony plik źródłowy zawierający oryginalny i wprowadzający kod.  
   
-  **Dezasemblacji** okno przedstawia instrukcje języka asemblera, które odnoszą się do kodu źródłowego i kodu, wprowadzony przez atrybuty. Ponadto **dezasemblacji** okna można wyświetlić adnotacji kodu źródłowego.  
+  Okno **demontażowe** zawiera instrukcje dotyczące języka zestawu, które odpowiadają kodowi źródłowej i kod wstrzykiwany przez atrybuty. Ponadto w oknie **demontażu** można wyświetlić adnotację kodu źródłowego.  
   
-### <a name="to-turn-on-source-annotation"></a>Aby włączyć funkcję adnotacji źródła  
+### <a name="to-turn-on-source-annotation"></a>Aby włączyć adnotację źródłową  
   
-- Kliknij prawym przyciskiem myszy **dezasemblacji** oknie i wybierz polecenie **Pokaż kod źródłowy** z menu skrótów.  
+- Kliknij prawym przyciskiem myszy okno **demontaż** i wybierz polecenie **Pokaż kod źródłowy** z menu skrótów.  
   
-     Jeśli znasz lokalizację atrybutu w oknie źródła, można użyć menu skrótów, można znaleźć wprowadzonego kodu w **dezasemblacji** okna.  
+     Jeśli znasz lokalizację atrybutu w oknie źródłowym, możesz użyć menu skrótów, aby znaleźć wprowadzony kod w oknie **demontażu** .  
   
-### <a name="to-view-injected-code"></a>Aby wyświetlić wprowadzonego kodu  
-  
-1. Debuger musi być w trybie przerwania.  
-  
-2. W oknie kodu źródłowego umieść kursor w miejscu dostępnym dla atrybutu, którego wprowadzonego kodu, którą chcesz wyświetlić.  
-  
-3. Kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **przejdź do demontażu** z menu skrótów.  
-  
-     Jeśli lokalizacja atrybutu zbliża się bieżący punkt wykonania, możesz wybrać **dezasemblacji** w oknie **debugowania** menu.  
-  
-### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Aby wyświetlić kod dezasemblacji w bieżącym punkcie Wykonywanie  
+### <a name="to-view-injected-code"></a>Aby wyświetlić wstrzyknięty kod  
   
 1. Debuger musi być w trybie przerwania.  
   
-2. Z **debugowania** menu, wybierz **Windows**i kliknij przycisk **dezasemblacji**.  
+2. W oknie kod źródłowy Umieść kursor przed atrybutem, którego kod został dodany.  
+  
+3. Kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Przejdź do demontażu** z menu skrótów.  
+  
+     Jeśli lokalizacja atrybutu znajduje się w bliskim bieżącym punkcie wykonywania, możesz wybrać okno **demontaż** z menu **debugowanie** .  
+  
+### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Aby wyświetlić kod demontażu w bieżącym punkcie wykonywania  
+  
+1. Debuger musi być w trybie przerwania.  
+  
+2. Z menu **Debuguj** wybierz opcję **Windows**, a następnie kliknij pozycję **demontaż**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

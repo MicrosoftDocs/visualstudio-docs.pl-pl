@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541885"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime — &gt; element (Programowanie Office w Visual Studio)
@@ -44,7 +44,7 @@ ms.locfileid: "85541885"
 |`version`|Wymagany. Numer wersji Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
 |`supportUrl`|Opcjonalny. Link do lokalizacji instalacji Visual Studio Tools dla środowiska uruchomieniowego pakietu Office.|
 
- `vstoRuntime`nie ma elementów.
+ `vstoRuntime` nie ma elementów.
 
 ## <a name="example"></a>Przykład
  Poniższy przykład kodu ilustruje `vstoRuntime` element w manifeście aplikacji dla rozwiązania pakietu Office wdrożonego za pomocą programu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Ten przykład kodu jest częścią większego przykładu dostępnego w [manifestach aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).

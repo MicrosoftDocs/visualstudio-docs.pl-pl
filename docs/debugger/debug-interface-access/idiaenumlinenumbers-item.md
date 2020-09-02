@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1eae34788cfed9f509e979df8efae6657f330d5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468218"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
@@ -32,7 +32,7 @@ HRESULT Item ( 
 ```
 
 #### <a name="parameters"></a>Parametry
- indeks
+ index
 
 podczas Indeks obiektu [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) do pobrania. Indeks znajduje się w zakresie od 0 do `count` -1, gdzie `count` jest zwracany przez metodę [IDiaEnumLineNumbers:: get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) .
 

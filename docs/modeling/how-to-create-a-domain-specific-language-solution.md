@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541794"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: tworzenie rozwiązania języka właściwego dla domeny
@@ -65,7 +65,7 @@ Przed rozpoczęciem tej procedury należy zainstalować następujące składniki
    > [!NOTE]
    > Jeśli zostanie wyświetlony komunikat z alertami, że nie chcesz uruchamiać szablonów tekstowych z niezaufanych źródeł, kliknij przycisk **OK**. Możesz ustawić ten komunikat, aby nie pojawiał się ponownie.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Strony kreatora projektant DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> Strony kreatora projektant DSL
  Można pozostawić kilka pól niezmienionych z wartości domyślnych. Należy jednak upewnić się, że pole rozszerzenie pliku jest ustawione.
 
 ### <a name="solution-settings-page"></a>Strona Ustawienia rozwiązania
@@ -87,11 +87,11 @@ Wpisz nowe rozszerzenie pliku.
 
 - Wpisz inne rozszerzenie pliku.
 
-     \-oraz
+     \- oraz
 
 - Zresetuj wystąpienie eksperymentalne programu Visual Studio. Spowoduje to Wyrejestrowanie wszystkich utworzonych wcześniej językami DSL. W menu **Start** kliknij pozycję **wszystkie programy**, **Microsoft Visual Studio zestaw SDK 2010**, **Narzędzia**, a następnie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. Możesz ponownie skompilować wszystkie inne językami DSL, których chcesz użyć.
 
-     \-oraz
+     \- oraz
 
 - Jeśli rozszerzenie programu Visual Studio, które używa tego rozszerzenia pliku, zostało w pełni zainstalowane na komputerze, odinstaluj je. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
 
@@ -116,7 +116,7 @@ Ta wartość domyślna to nazwa składająca się z nazwy firmy i produktów.
 
  Aby uzyskać więcej informacji na temat silnego nazewnictwa, zobacz [Tworzenie i używanie zestawów o silnej nazwie](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

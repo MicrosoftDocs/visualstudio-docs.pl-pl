@@ -1,5 +1,5 @@
 ---
-title: Bscmake — zadanie | Dokumentacja firmy Microsoft
+title: BscMake — Zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -22,31 +22,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ed246255fc20b9660d24f234767fdeb451102f8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684543"
 ---
 # <a name="bscmake-task"></a>BscMake — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[WAŻNE]
-> bscmake nie jest już używany przez program Visual Studio IDE. Od programu Visual Studio 2008 informacji o przeglądaniu jest automatycznie przechowywany w pliku .sdf w folderze rozwiązania.  
+WAŻNE
+> BSCMAKE nie jest już używana przez środowisko IDE programu Visual Studio. Ponieważ program Visual Studio 2008, informacje o przeglądaniu są automatycznie przechowywane w pliku. sdf w folderze rozwiązania.  
   
- Opakowuje Microsoft Przeglądaj informacje narzędzie konserwacji (bscmake.exe).  Narzędzie bscmake.exe kompilacji pliku informacyjnego przeglądarki (.bsc) z pliki przeglądarki źródeł (.sbr), które są tworzone podczas kompilacji. Użyj **przeglądarki obiektów** do wyświetlenia pliku .bsc. Aby uzyskać więcej informacji, zobacz [odwołanie BSCMAKE](https://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13).  
+ Pakuje narzędzie do konserwacji informacji przeglądarki Microsoft (bscmake.exe).  Narzędzie bscmake.exe kompiluje plik informacji o przeglądaniu (BSC) z plików przeglądarki źródłowej (. sbr), które są tworzone podczas kompilacji. Użyj **Przeglądarka obiektów** , aby wyświetlić plik. BSC. Aby uzyskać więcej informacji, zobacz [BSCMAKE Reference](https://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13).  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **BscMake** zadania. Większość parametrów zadania odpowiada opcji wiersza polecenia.  
+ W poniższej tabeli opisano parametry zadania **BSCMAKE** . Większość parametrów zadań odpowiada opcji wiersza polecenia.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|**AdditionalOptions**|Opcjonalnie **ciąg** parametru.<br /><br /> Lista opcji określonych w wierszu polecenia. Na przykład "/*opcja1* /*opcja2* /*opcja #*". Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez inne **BscMake** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w [opcje BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
-|**OutputFile**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa nazwę pliku, która zastępuje domyślną nazwę pliku wyjściowego.<br /><br /> Aby uzyskać więcej informacji, zobacz **/o** opcji [opcje BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
-|**PreserveSBR**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, wymusza nieprzyrostowa kompilacji. Pełne, nieprzyrostowa kompilacji odbywa się niezależnie od tego, czy istnieje plik .bsc i zapobiega obcinania plików SBR.<br /><br /> Aby uzyskać więcej informacji, zobacz **/n** opcji [opcje BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
-|**Źródła**|Opcjonalnie **[] ITaskItem** parametru.<br /><br /> Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.|  
-|**SuppressStartupBanner**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcji [opcje BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
-|**TrackerLogDirectory**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  
+|**AdditionalOptions**|Opcjonalny parametr **ciągu** .<br /><br /> Lista opcji określona w wierszu polecenia. Na przykład "/*opcja1*  / *opcja2*  / *Option #*". Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez żaden inny parametr zadania **BSCMAKE** .<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w [opcjach BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
+|**Plik_wyjściowy**|Opcjonalny parametr **ciągu** .<br /><br /> Określa nazwę pliku, która zastępuje domyślną nazwę pliku wyjściowego.<br /><br /> Aby uzyskać więcej informacji, zobacz **/o** opcja w [opcjach BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
+|**PreserveSBR**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true` , wymusza nieprzyrostową kompilację. Pełna, nieprzyrostowa kompilacja odbywa się niezależnie od tego, czy plik. bsc istnieje i uniemożliwia obcinanie plików. sbr.<br /><br /> Aby uzyskać więcej informacji, zobacz **/n** opcji w [opcjach BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
+|**Źródła**|Opcjonalny parametr **ITaskItem []** .<br /><br /> Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.|  
+|**SuppressStartupBanner**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true` , program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.<br /><br /> Aby uzyskać więcej informacji, zobacz opcja **/nologo** w opcjach [BSCMAKE](https://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2).|  
+|**Katalog trackerlogdirectory**|Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog dziennika śledzenia.|  
   
 ## <a name="remarks"></a>Uwagi  
   

@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe selektora URL (Programowanie SharePoint)
+title: Okno dialogowe selektora adresów URL (Programowanie SharePoint)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,43 +16,43 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66261945"
 ---
-# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Okno dialogowe selektora URL (Programowanie SharePoint w programie Visual Studio)
-  W okno dialogowe selektora URL można wybrać pliki, takie jak pliki strony wzorcowej lub pliki obrazów, które znajdują się w projekcie lub na serwerze lokalnym, na którym uruchomiony jest SharePoint.
+# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Okno dialogowe selektora adresów URL (Programowanie SharePoint w Visual Studio)
+  W oknie dialogowym Selektor adresów URL możesz wybrać pliki, takie jak pliki strony głównej lub pliki obrazów, które znajdują się w projekcie lub na serwerze lokalnym, na którym działa program SharePoint.
 
- To okno dialogowe pojawia się, gdy masz opcję, aby wybrać plik do ustawiania właściwości. To okno dialogowe można otworzyć, wybierając przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) obok różne właściwości w **właściwości** okna. Przycisk wielokropka są także przedstawione jako IntelliSense monitu podczas przypisywania wartości do określonych atrybutów w **źródła** Widok projektanta.
+ To okno dialogowe pojawia się, gdy masz opcję wybrania pliku do ustawienia właściwości. To okno dialogowe można otworzyć, wybierając przycisk wielokropka (![ASP.net Mobile Designer](../sharepoint/media/mwellipsis.gif "Wielokropek projektanta ASP.NET Mobile")) obok różnych właściwości w oknie **Właściwości** . Przycisk wielokropka jest również wyświetlany jako monit IntelliSense podczas przypisywania wartości do określonych atrybutów w widoku **źródła** projektanta.
 
-## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika
- **Foldery projektu** Wyświetla listę folderów zdefiniowane w projekcie lub na serwerze lokalnym, na którym uruchomiony jest SharePoint. Wybierz przycisk rozszerzenia, aby wyświetlić jego podfolderach.
+## <a name="uielement-list"></a>Lista elementów UIElement
+ **Foldery projektu** Wyświetla listę folderów zdefiniowanych w projekcie lub na serwerze lokalnym, na którym działa program SharePoint. Wybierz przycisk rozwinięcia, aby wyświetlić podfoldery.
 
- Rozwiń **projektu** węzeł, aby wybrać pliki w projekcie. Aby w oknie dialogowym są wyświetlane jako możliwy, pliki w projekcie musi spełniać następujące kryteria:
+ Rozwiń węzeł **projektu** , aby wybrać pliki w projekcie. Aby były wyświetlane jako wybrane w oknie dialogowym, pliki w projekcie muszą spełniać następujące kryteria:
 
-- Plik musi być zawarty w zamapowany folder.
+- Plik musi być zawarty w mapowanym folderze.
 
-- Konieczne jest dodanie pliku do pakietu rozwiązań.
+- Plik należy dodać do pakietu rozwiązania.
 
 - Plik nie może znajdować się w innym projekcie.
 
-  Aby odwoływać się do plików, które nie spełniają tych kryteriów, musisz ręcznie wprowadź ścieżkę pliku.
+  Jeśli chcesz odwołać się do plików, które nie spełniają tych kryteriów, musisz ręcznie wprowadzić ścieżkę do pliku.
 
-  Rozwiń **serwera** węzeł, aby wybrać pliki, które znajdują się na serwerze lokalnym, na którym uruchomiony jest SharePoint. Aby w oknie dialogowym są wyświetlane jako możliwy, te pliki muszą spełniać następujące kryteria:
+  Rozwiń węzeł **serwera** , aby wybrać pliki znajdujące się na serwerze lokalnym, na którym działa program SharePoint. Aby były wyświetlane jako wybrane w oknie dialogowym, te pliki muszą spełniać następujące kryteria:
 
-- Plik musi znajdować się w jednym z następujących folderów mapowanych: **Obrazy**, **układy**, lub **ControlTemplates**.
+- Plik musi znajdować się w jednym z następujących mapowanych folderów: **images**, **Layouts**lub **elementy ControlTemplates**.
 
 - Plik nie może znajdować się w bazie danych zawartości programu SharePoint.
 
-  Aby odwoływać się do plików, które nie spełniają tych kryteriów, musisz ręcznie wprowadź ścieżkę pliku.
+  Jeśli chcesz odwołać się do plików, które nie spełniają tych kryteriów, musisz ręcznie wprowadzić ścieżkę do pliku.
 
-  **Zawartość folderu** Wyświetla listę plików w wybranym folderze. Wybierz plik, a następnie wybierz **OK** przycisk, aby zamknąć okno dialogowe i Wyślij zaznaczenie do procesu, który ją wywołuje.
+  **Zawartość folderu** Wyświetla listę plików w wybranym folderze. Wybierz plik, a następnie wybierz przycisk **OK** , aby zamknąć okno dialogowe i wysłać zaznaczenie do procesu, który go wywołał.
 
-  **Pliki typu** pozwala na wybranie z listy plików, które są odpowiednie dla zadania są wykonywane.
+  **Pliki typu** Umożliwia wybranie z listy plików, które są odpowiednie dla wykonywanego zadania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Tworzenie kontrolek wielokrotnego użytku dla części sieci Web lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

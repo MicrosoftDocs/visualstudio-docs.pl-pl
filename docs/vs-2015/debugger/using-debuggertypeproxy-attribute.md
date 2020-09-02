@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z atrybutu DebuggerTypeProxy | Dokumentacja firmy Microsoft
+title: Używanie atrybutu DebuggerTypeProxy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684073"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Korzystanie z atrybutu DebuggerTypeProxy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Debuggertypeproxyattribute —] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & autoUpgrade = True) Określa serwer proxy lub podstawiony dla typu i zmiany sposobu typu jest wyświetlana w oknach debugera. Po wyświetleniu zmiennej, która ma serwer proxy serwera proxy oznacza oryginalnego typu w **wyświetlić**. W oknie zmiennych debugera zostaną wyświetlone tylko publiczne składowe typ serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.  
+DebuggerTypeProxyAttribute —] (assetId:///T: System. Diagnostics. DebuggerTypeProxyAttribute —? qualifyHint = false&autoupgrade = true) Określa serwer proxy lub autonomiczny typ i zmienia sposób wyświetlania typu w oknach debugera. Podczas wyświetlania zmiennej, która ma serwer proxy, serwer proxy znajduje się dla oryginalnego typu na **ekranie**. W oknie zmienna debugera są wyświetlane tylko publiczne elementy członkowskie typu serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.  
   
- Ten atrybut można zastosować do:  
+ Ten atrybut może być stosowany do:  
   
 - Struktury  
   
@@ -38,28 +38,28 @@ Debuggertypeproxyattribute —] (assetId:///T:System.Diagnostics.DebuggerTypePro
   
 - Zestawy  
   
-  Klasa proxy typu musi mieć konstruktora, który przyjmuje argument typu, który zastąpi serwer proxy. Debuger tworzy nowe wystąpienie klasy proxy typu za każdym razem, gdy wymaganych, aby wyświetlić zmienną typu docelowego. Może to mieć wpływ na wydajność. W rezultacie nie należy przeprowadzać więcej pracy w Konstruktorze niż jest to absolutnie konieczne.  
+  Klasa proxy typu musi mieć konstruktora, który przyjmuje argument typu, który zostanie zamieniony na serwer proxy. Debuger tworzy nowe wystąpienie klasy proxy typu za każdym razem, gdy musi wyświetlić zmienną typu docelowego. Może to mieć wpływ na wydajność. W związku z tym nie należy wykonywać więcej pracy w konstruktorze niż absolutnie konieczne.  
   
-  Aby zminimalizować spadku wydajności, Ewaluator wyrażeń nie analizuje atrybuty na serwerze proxy wyświetlania tego typu, chyba że typ jest rozwinięta, użytkownika, klikając pozycję + symboli w oknie debugera lub przy użyciu <xref:System.Diagnostics.DebuggerBrowsableAttribute>. W związku z tym nie należy umieszczać atrybutów na sam typ wyświetlania. Atrybuty można i powinny być używane w treści typ wyświetlania.  
+  Aby zminimalizować kary wydajności, ewaluatora wyrażeń nie bada atrybutów na ekranie proxy typu, chyba że typ jest rozwinięty przez użytkownika, klikając symbol + w oknie debugera lub przez użycie <xref:System.Diagnostics.DebuggerBrowsableAttribute> . W związku z tym nie należy umieszczać atrybutów dla samego typu wyświetlania. Atrybuty mogą i powinny być używane w treści typu wyświetlania.  
   
-  Dobrym rozwiązaniem dla obiektu pośredniczącego typu jako prywatne klasa zagnieżdżona w klasie, docelowe atrybuty. Dzięki temu można łatwo dostęp do wewnętrznych składowych.  
+  Dobrym pomysłem jest, aby typ proxy był prywatną klasą zagnieżdżoną w klasie, do której odwołuje się atrybut. Dzięki temu można łatwo uzyskać dostęp do wewnętrznych członków.  
   
-  Jeśli <xref:System.Diagnostics.DebuggerTypeProxyAttribute> jest używana na poziomie zestawu `Target` parametr określa typ, który zastąpi serwer proxy.  
+  Jeśli <xref:System.Diagnostics.DebuggerTypeProxyAttribute> jest używana na poziomie zestawu, `Target` parametr określa typ, który zostanie zastąpiony przez serwer proxy.  
   
-  Aby uzyskać przykład sposobu użycia tego atrybutu, wraz z <xref:System.Diagnostics.DebuggerDisplayAttribute> i <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, zobacz[korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
+  Przykład korzystania z tego atrybutu wraz z <xref:System.Diagnostics.DebuggerDisplayAttribute> i <xref:System.Diagnostics.DebuggerTypeProxyAttribute> , można znaleźć w temacie[using the DebuggerDisplay Attribute](../debugger/using-the-debuggerdisplay-attribute.md).  
   
-## <a name="using-generics-with-debuggertypeproxy"></a>Za pomocą typów ogólnych za pomocą DebuggerTypeProxy  
- Obsługa typów ogólnych jest ograniczona. Dla języka C# `DebuggerTypeProxy` obsługuje tylko Otwórz typy. Typem otwartym, jest określana skrótem typu unconstructed jest typ ogólny, który nie utworzono wystąpienia z argumentami dla jego parametrów typu. Zamknięte typy, nazywany również typy utworzone, nie są obsługiwane.  
+## <a name="using-generics-with-debuggertypeproxy"></a>Używanie typów ogólnych z DebuggerTypeProxy  
+ Obsługa typów ogólnych jest ograniczona. Język C# `DebuggerTypeProxy` obsługuje tylko typy otwarte. Typ otwarty, nazywany również niekonstruowanym typem, jest typem ogólnym, który nie został skonkretyzowany przy użyciu argumentów dla parametrów typu. Typy zamknięte, nazywane również konstruowanymi typami, nie są obsługiwane.  
   
- Składnia służąca do typu otwartego wygląda następująco:  
+ Składnia typu otwartego wygląda następująco:  
   
  `Namespace.TypeName<,>`  
   
- Jeśli używasz typu ogólnego jako cel w `DebuggerTypeProxy`, należy użyć następującej składni. `DebuggerTypeProxy` Mechanizm wnioskuje parametrów typu dla Ciebie.  
+ W przypadku użycia typu ogólnego jako elementu docelowego w programie `DebuggerTypeProxy` należy użyć tej składni. `DebuggerTypeProxy`Mechanizm wnioskuje o parametry typu.  
   
- Aby uzyskać więcej informacji o typach otwarte i zamknięte w języku C# zobacz [specyfikacji języka C#](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), otwórz sekcję 20.5.2 i zamknięte typy.  
+ Aby uzyskać więcej informacji na temat typów otwartych i zamkniętych w języku C#, zobacz [specyfikację języka c#](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), sekcja 20.5.2 Open i Closed Types.  
   
- Visual Basic nie ma składni typu otwartego, więc nie możesz zrobić to samo w języku Visual Basic. Zamiast tego należy użyć ciąg reprezentujący nazwę typu otwartego.  
+ Visual Basic nie ma składni typu otwartego, dlatego nie można wykonać tej czynności w Visual Basic. Zamiast tego należy użyć ciągu reprezentującego nazwę typu otwartego.  
   
  `"Namespace.TypeName'2"`  
   

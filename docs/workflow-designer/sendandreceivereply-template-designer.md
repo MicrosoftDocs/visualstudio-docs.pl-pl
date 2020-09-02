@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17512337b58fb394352ccaab153ca72badbb4652
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875907"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply, projektant szablonów
@@ -45,12 +45,12 @@ W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.ReceiveRe
 | Nazwa właściwości | Wymagany | Użycie |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | Fałsz | Opcjonalna przyjazna nazwa <xref:System.ServiceModel.Activities.ReceiveReply> działania. Wartość domyślna to ReceiveReplyForSend.<br /><br /> Chociaż użycie wartości innej niż domyślna dla elementu friendly <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, najlepszym rozwiązaniem jest użycie takiej wartości. |
-| <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> | Prawda | Odwołanie do <xref:System.ServiceModel.Activities.Send> działania sparowanego z tym <xref:System.ServiceModel.Activities.ReceiveReply> działaniem. Ta właściwość nie może mieć **wartości null**. <xref:System.ServiceModel.Activities.Send>i <xref:System.ServiceModel.Activities.ReceiveReply> działania są używane razem z klientem w celu modelowania wzorca komunikatów żądania/odpowiedzi. Ta właściwość określa, które <xref:System.ServiceModel.Activities.Send> działanie jest sparowane. W projektancie nie można edytować tej właściwości, ponieważ jest ona automatycznie powiązana z <xref:System.ServiceModel.Activities.Send> działaniem, z którego zostało utworzone <xref:System.ServiceModel.Activities.ReceiveReply> działanie. |
+| <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> | Prawda | Odwołanie do <xref:System.ServiceModel.Activities.Send> działania sparowanego z tym <xref:System.ServiceModel.Activities.ReceiveReply> działaniem. Ta właściwość nie może mieć **wartości null**. <xref:System.ServiceModel.Activities.Send> i <xref:System.ServiceModel.Activities.ReceiveReply> działania są używane razem z klientem w celu modelowania wzorca komunikatów żądania/odpowiedzi. Ta właściwość określa, które <xref:System.ServiceModel.Activities.Send> działanie jest sparowane. W projektancie nie można edytować tej właściwości, ponieważ jest ona automatycznie powiązana z <xref:System.ServiceModel.Activities.Send> działaniem, z którego zostało utworzone <xref:System.ServiceModel.Activities.ReceiveReply> działanie. |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Content%2A> | Fałsz | Określa komunikat lub zawartość parametru do odebrania. Może to być <xref:System.ServiceModel.Activities.ReceiveMessageContent> działanie lub <xref:System.ServiceModel.Activities.ReceiveParametersContent> działanie. Edytuj tę właściwość, klikając przycisk wielokropka obok pola **zawartość** w siatce właściwości lub klikając przycisk **Definiuj** obok etykiety **zawartość** na powierzchni **projektanta działań.** Wyświetla okno dialogowe **definicji zawartości** . Aby uzyskać więcej informacji na temat korzystania z tego pola, zobacz [okno dialogowe Definicja zawartości](../workflow-designer/content-definition-dialog-box.md). |
 | <xref:System.ServiceModel.Activities.ReceiveReply.CorrelationInitializers%2A> | Fałsz | Określa kolekcję <xref:System.ServiceModel.Activities.CorrelationInitializer> obiektów, które inicjują wiele <xref:System.ServiceModel.Activities.CorrelationHandle> obiektów, które konfigurują to <xref:System.ServiceModel.Activities.Receive> działanie w ramach przepływu pracy. Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> właściwości w siatce właściwości, aby otworzyć okno dialogowe **Dodawanie inicjatorów korelacji** . Aby uzyskać więcej informacji na temat korzystania z tego pola, zobacz [Dodawanie CorrelationInitializers dialogowego](../workflow-designer/add-correlationinitializers-dialog-box.md). |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Action%2A> | Fałsz | Określa nagłówek akcji wiadomości. Jeśli nie jest on jawnie ustawiony, jego wartość domyślna to:<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

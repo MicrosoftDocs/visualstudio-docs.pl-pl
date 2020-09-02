@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85347966"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Poinformuj debugera o typie, który ma być wyświetlany przy użyciu atrybutu DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute>Określa serwer proxy lub przystawkę dla typu i zmienia sposób wyświetlania typu w oknach debugera. Podczas wyświetlania zmiennej, która ma serwer proxy, serwer proxy znajduje się dla oryginalnego typu na **ekranie**. W oknie zmienna debugera są wyświetlane tylko publiczne elementy członkowskie typu serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> Określa serwer proxy lub przystawkę dla typu i zmienia sposób wyświetlania typu w oknach debugera. Podczas wyświetlania zmiennej, która ma serwer proxy, serwer proxy znajduje się dla oryginalnego typu na **ekranie**. W oknie zmienna debugera są wyświetlane tylko publiczne elementy członkowskie typu serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.
 
 Ten atrybut może być stosowany do:
 
@@ -43,7 +43,7 @@ Aby zminimalizować kary wydajności, ewaluatora wyrażeń nie bada atrybutów n
 
 Dobrym pomysłem jest, aby typ proxy był prywatną klasą zagnieżdżoną w klasie, do której odwołuje się atrybut. Dzięki temu można łatwo uzyskać dostęp do wewnętrznych członków.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute>może być dziedziczona, więc jeśli w klasie podstawowej określono serwer proxy typu, będzie on stosowany do wszystkich klas pochodnych, chyba że klasy pochodne określają swój własny typ proxy.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> może być dziedziczona, więc jeśli w klasie podstawowej określono serwer proxy typu, będzie on stosowany do wszystkich klas pochodnych, chyba że klasy pochodne określają swój własny typ proxy.
 
 Jeśli <xref:System.Diagnostics.DebuggerTypeProxyAttribute> jest używana na poziomie zestawu, `Target` parametr określa typ, który zostanie zastąpiony przez serwer proxy.
 

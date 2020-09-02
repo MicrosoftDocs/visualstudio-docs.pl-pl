@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332231"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Skróty klawiaturowe w Blend for Visual Studio
@@ -46,7 +46,7 @@ ms.locfileid: "85332231"
 |Wytnij|**Ctrl** + **X**|
 |Kopiuj|**Ctrl** + **C**|
 |Wklej|**Ctrl** + **V**|
-|Usuń|**Usuwanie**|
+|Usuń|**Usuń**|
 |Znajdź tekst (tylko widok XAML lub Edytor JavaScript)|**Ctrl** + **F**|
 |Znajdź następne wystąpienie tekstu (tylko widok XAML lub Edytor JavaScript)|**F3** lub **Ctrl** + **H**|
 

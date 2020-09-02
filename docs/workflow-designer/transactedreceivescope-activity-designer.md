@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875933"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope, projektant działań
@@ -41,7 +41,7 @@ W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Transacte
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Prawda|Odrzuca <xref:System.ServiceModel.Activities.Receive> działanie do bloku **żądania** na powierzchni projektanta aktywności.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|Fałsz|Opuszcza <xref:System.Activities.Activity> blok **treści** na powierzchni projektanta aktywności.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

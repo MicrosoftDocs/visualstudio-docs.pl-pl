@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Automatyczne ClickOnce zwiększenie wersji publikacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: automatyczne zwiększanie wersji publikacji ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,31 +19,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50faf70e8eda6ef7ab01201102540729497eb87b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683920"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Instrukcje: Automatyczne zwiększanie wersji publikacji ClickOnce
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Porady: automatyczne zwiększenie wersji publikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację, zmieniając `Publish Version` właściwości powoduje, że aplikacja opublikowana jako aktualizację. Domyślnie, Visual Studio automatycznie zwiększa `Revision` liczby `Publish Version` każdorazowo, możesz opublikować aplikację.  
+W przypadku publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji zmiana `Publish Version` właściwości powoduje opublikowanie aplikacji jako aktualizacji. Domyślnie program Visual Studio automatycznie zwiększa `Revision` liczbę przy `Publish Version` każdej publikacji aplikacji.  
   
- To zachowanie można wyłączyć na **Publikuj** strony **projektanta projektu**.  
+ To zachowanie można wyłączyć na stronie **Publikowanie** **projektanta projektu**.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-### <a name="to-disable-automatically-incrementing-the-publish-version"></a>Aby wyłączyć automatyczne zwiększenie wersji publikowania  
+### <a name="to-disable-automatically-incrementing-the-publish-version"></a>Aby wyłączyć automatyczne zwiększanie wersji publikacji  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij kartę **Publikowanie** .  
   
-3. W **opublikować wersję** sekcji wyczyść **automatycznie zwiększ numer poprawki przy każdym wydaniu** pole wyboru.  
+3. W sekcji **Publikowanie wersji** wyczyść pole wyboru **automatycznie Zwiększ numer poprawki przy każdej wersji** .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: ClickOnce ustawienie wersji publikacji](../deployment/how-to-set-the-clickonce-publish-version.md)   
+ [Instrukcje: Ustawianie wersji publikacji ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

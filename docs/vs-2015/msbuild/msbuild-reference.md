@@ -1,5 +1,5 @@
 ---
-title: Odwołanie do MSBuild | Dokumentacja firmy Microsoft
+title: Odwołanie MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -17,62 +17,62 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683015"
 ---
 # <a name="msbuild-reference"></a>Odwołanie do narzędzia MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] jest systemem kompilacji dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Poniższe linki prowadzą do tematów, które zawierają [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] informacje referencyjne.  
+[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] jest systemem kompilacji dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Poniższe linki prowadzą do tematów zawierających [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] informacje referencyjne.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)  
- W tym artykule opisano elementy XML, które tworzą [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] format pliku.  
+ Opisuje elementy XML, które składają się na [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Format pliku.  
   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)  
- W tym artykule opisano niektóre typowe zadania, które są dołączone [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ W tym artykule opisano niektóre typowe zadania, które są zawarte w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .  
   
  [Warunki](../msbuild/msbuild-conditions.md)  
- Opisuje warunki, które są dostępne w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plików.  
+ Opisuje warunki, które są dostępne w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plikach.  
   
  [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)  
- Opisuje sposób używania `Choose`, `When`, i `Otherwise` elementów.  
+ Opisuje sposób używania `Choose` `When` elementów, i `Otherwise` .  
   
- [Właściwości MSBuild zarezerwowane i dobrze znane](../msbuild/msbuild-reserved-and-well-known-properties.md)  
- W tym artykule opisano [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zastrzeżone właściwości.  
+ [Właściwości zarezerwowane i dobrze znane dla programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
+ Opisuje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] właściwości zastrzeżone.  
   
- [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)  
- Opisuje właściwości projektu, które są wspólne dla wszystkich typów projektów, a także właściwości, które są często używane przez typy konkretnego projektu.  
+ [Wspólne właściwości projektu MSBuild](../msbuild/common-msbuild-project-properties.md)  
+ Opisuje właściwości projektu, które są wspólne dla wszystkich typów projektów, a także właściwości, które są często używane przez poszczególne typy projektów.  
   
- [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)  
- W tym artykule opisano elementy projektu, które są wspólne dla wszystkich typów projektów i elementów, które są często używane przez typy konkretnego projektu.  
+ [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)  
+ Opisuje elementy projektu, które są wspólne dla wszystkich typów projektów, a także elementy, które są często używane przez poszczególne typy projektów.  
   
  [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)  
- W tym artykule opisano argumenty i przełączników, które mogą być używane z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].exe.  
+ Opisuje argumenty i przełączniki, które mogą być używane z [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] . exe.  
   
  [Pliki Targets](../msbuild/msbuild-dot-targets-files.md)  
- W tym artykule opisano. Plik elementów docelowych, który znajduje się w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ Opisuje. Plik docelowy, który jest zawarty w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .  
   
  [Metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md)  
- Wyświetla metadane, który jest tworzony wraz z każdego elementu.  
+ Wyświetla listę metadanych, które są tworzone razem z każdym elementem.  
   
  [Pliki odpowiedzi](../msbuild/msbuild-response-files.md)  
- W tym artykule wyjaśniono .rsp — pliki, które zawierają przełączniki wiersza polecenia.  
+ Wyjaśnia pliki. rsp, które zawierają przełączniki wiersza polecenia.  
   
  [Dodatkowe zasoby](../msbuild/additional-resources-for-msbuild.md)  
- Zawiera łącza do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] witryn sieci Web i grup dyskusyjnych.  
+ Oferuje linki do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] witryn sieci Web i grup dyskusyjnych.  
   
  [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
- Zawiera [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] cele i zadania, odwołanie Windows Presentation Foundation (WPF).  
+ Zawiera [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] elementy docelowe i odwołania do zadań dla Windows Presentation Foundation (WPF).  
   
- [Znaki specjalne wyjścia](../msbuild/special-characters-to-escape.md)  
- Wyświetla listę znaków, które mogą mieć "dodać znak ucieczki" Aby były prawidłowo interpretowane. Sekwencja unikowa to ciąg znaków oznacza, że występuje alternatywnych interpretacji.  
+ [Znaki specjalne do wyjścia](../msbuild/special-characters-to-escape.md)  
+ Wyświetla listę znaków, które mogą być "ucieczkd" w celu poprawnego interpretowania. Sekwencja ucieczki to seria znaków, która oznacza, że poniżej jest alternatywną interpretacją.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Przegląd MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Introduces [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] i zawiera łącza do tematów, które wyjaśniają, jak z niej korzystać do tworzenia projektów.  
+ [Omówienie programu MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Wprowadza [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] i oferuje linki do tematów, które wyjaśniają, jak używać jej do kompilowania projektów.  
   
  <xref:Microsoft.Build.Conversion>  
  Zawiera odwołanie do przestrzeni nazw konwersji  
@@ -81,7 +81,7 @@ ms.locfileid: "65683015"
  Zawiera odwołanie do przestrzeni nazw oceny  
   
  <xref:Microsoft.Build.Execution>  
- Zawiera odwołanie do wykonywania w przestrzeni nazw  
+ Zawiera odwołanie do przestrzeni nazw wykonywania  
   
  <xref:Microsoft.Build.Framework>  
  Zawiera odwołanie do przestrzeni nazw platformy  
@@ -90,7 +90,7 @@ ms.locfileid: "65683015"
  Zawiera odwołanie do przestrzeni nazw rejestrowania  
   
  <xref:Microsoft.Build.Tasks>  
- Zawiera odwołanie do przestrzeni nazw zadania  
+ Zawiera odwołanie do przestrzeni nazw zadań  
   
  <xref:Microsoft.Build.Utilities>  
- Zawiera odwołanie do przestrzeni nazw narzędzi
+ Zawiera odwołanie do przestrzeni nazw programów Utilities
