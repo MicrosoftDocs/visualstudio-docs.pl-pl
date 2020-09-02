@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findlinesbyrva — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findLinesByRVA | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c066e183d60a1f7d967cafa1114d6241b28caa4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165495"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera wierszy w określonej compiland —, które zawierają określony względny adres wirtualny (RVA).  
+Pobiera wiersze w określonym jednostka kompilacji, które zawierają określony względny adres wirtualny (RVA).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,19 +37,19 @@ HRESULT findLinesByRVA ( 
   
 #### <a name="parameters"></a>Parametry  
  `rva`  
- [in] Określa adres jako adres RVA.  
+ podczas Określa adres jako RVA.  
   
  `length`  
- [in] Określa liczbę bajtów zakres adresów, aby pokrywał się z tym zapytaniem.  
+ podczas Określa liczbę bajtów zakresu adresów, które mają być pokryte dla tego zapytania.  
   
  `ppResult`  
- [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) obiektu, który zawiera listę wszystkich linii numery określające określony zakres adresów.  
+ określoną Zwraca obiekt [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , który zawiera listę wszystkich numerów wierszy, które obejmują określony zakres adresów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie pokazano funkcję, która uzyskuje wszystkie numery wierszy zawartych w określonej funkcji przy użyciu funkcji względny adres wirtualny i długości.  
+ Ten przykład pokazuje funkcję, która uzyskuje wszystkie numery wierszy zawarte w określonej funkcji przy użyciu względnego adresu i długości wirtualnej funkcji.  
   
 ```cpp#  
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
@@ -68,5 +68,5 @@ IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSessio
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
+ [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

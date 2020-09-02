@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider | Dokumenty firmy Microsoft
+title: IPropertyProxyProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714792"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
-Ten interfejs dostarcza interfejs serwera proxy do wyświetlania i zmiany danych obiektu.
+Ten interfejs dostarcza interfejs proxy do wyświetlania i zmieniania danych obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,25 +29,25 @@ IPropertyProxyProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Oceniający wyrażenie (EE) implementuje ten interfejs na tym samym obiekcie, który implementuje interfejs [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) jako część obsługi EE wizualizatorów typu.
+ Ewaluatora wyrażeń służy do implementowania tego interfejsu w tym samym obiekcie, który implementuje interfejs [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) w ramach pomocy technicznej EE dla wizualizatorów typu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [QueryInterface](/cpp/atl/queryinterface) na interfejsie, `IDebugProperty3` aby uzyskać ten interfejs.
+ Wywołaj metodę [QueryInterface](/cpp/atl/queryinterface) na `IDebugProperty3` interfejsie, aby uzyskać ten interfejs.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- Interfejs `IPropertyProxyProvider` implementuje następującą metodę:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ `IPropertyProxyProvider`Interfejs implementuje następującą metodę:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Pobiera interfejs serwera proxy właściwości, aby wyświetlić dane na obiekcie.|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Pobiera interfejs proxy właściwości w celu wyświetlenia danych w obiekcie.|
 
 ## <a name="remarks"></a>Uwagi
- Chociaż EE implementuje ten interfejs, implementacja [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) jest zazwyczaj obsługiwane przez [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Zobacz [wizualizacji i wyświetlania danych, aby](../../../extensibility/debugger/visualizing-and-viewing-data.md) uzyskać szczegółowe informacje na temat uzyskiwania interfejsu IEEVisualizerService.
+ Chociaż usługa EE implementuje ten interfejs, implementacja [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) jest zwykle obsługiwana przez [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Zobacz [wizualizowanie i wyświetlanie danych,](../../../extensibility/debugger/visualizing-and-viewing-data.md) Aby uzyskać szczegółowe informacje na temat uzyskiwania interfejsu IEEVisualizerService.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

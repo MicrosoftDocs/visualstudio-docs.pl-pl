@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547280"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
@@ -36,18 +36,18 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 > [!NOTE]
 > Aby utworzyć mapy kodu, musisz mieć wersję Visual Studio Enterprise. Podczas edytowania mapy kodu w programie Visual Studio czyści wszystkie nieużywane elementy DGML i atrybuty, usuwając je po zapisaniu pliku. dgml. Automatycznie tworzy również elementy kodu przy ręcznym dodawaniu nowych linków. Podczas zapisywania pliku .dgml wszelkie atrybuty, które są dodawane do elementu, mogą się ponownie rozmieszczać w kolejności alfabetycznej.
 
-## <a name="group-code-elements"></a><a name="OrganizeNodes"></a>Grupuj elementy kodu
+## <a name="group-code-elements"></a><a name="OrganizeNodes"></a> Grupuj elementy kodu
  Możesz dodać nowe grupy lub przekonwertować istniejące węzły na grupę.
 
 1. Otwórz plik. dgml w edytorze tekstu lub XML.
 
 2. Aby skonwertować element kodu na grupę, Znajdź `<Node/>` element dla tego elementu kodu.
 
-    \-oraz
+    \- oraz
 
     Aby dodać nową grupę, Znajdź `<Nodes>` sekcję. Dodaj nowy `<Node/>` element.
 
-3. W `<Node/>` elemencie Dodaj `Group` atrybut, aby określić, czy grupa jest rozwinięta, czy zwinięta. Przykład:
+3. W `<Node/>` elemencie Dodaj `Group` atrybut, aby określić, czy grupa jest rozwinięta, czy zwinięta. Na przykład:
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
    - `Category`Atrybut, który określa `Contains` relację między elementem kodu grupy a jego podrzędnym elementem kodu
 
-     Przykład:
+     Na przykład:
 
    ```xml
    <Links>
@@ -77,7 +77,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
     Aby uzyskać więcej informacji na temat `Category` atrybutu, zobacz [Przypisywanie kategorii do elementów kodu i linków](#AssignCategories).
 
-## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a>Zmiana stylu mapy
+## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a> Zmiana stylu mapy
  Możesz zmienić kolor tła i kolor obramowania mapy, edytując plik. dgml mapy. Aby zmienić styl elementów kodu i linków, zobacz [zmiana stylu elementów kodu i linków](#Highlight).
 
 1. Otwórz plik. dgml w edytorze tekstu lub XML.
@@ -96,7 +96,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
     Stroke="StrokeValue"
     ```
 
-     Przykład:
+     Na przykład:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -105,7 +105,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
     </DirectedGraph>
     ```
 
-## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a>Zmiana stylu elementów kodu i linków
+## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a> Zmiana stylu elementów kodu i linków
 
 ### <a name="CreateCustomStyles"></a>
  Style niestandardowe można stosować do następujących elementów kodu:
@@ -201,7 +201,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
     Shape="ShapeFilePathLocation"
     ```
 
-     Przykład:
+     Na przykład:
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     Przykład:
+     Na przykład:
 
     ```xml
     <Links>
@@ -252,7 +252,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 3. W `<Styles></Styles>` elemencie pod `<Style/>` elementem i określ następujące atrybuty:
 
-   - `TargetType="Node`&#124;`Link | Graph"`
+   - `TargetType="Node` &#124; `Link | Graph"`
 
    - `GroupLabel="`*NameInLegendBox*`"`
 
@@ -266,7 +266,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 2. W `<Style/>` elemencie Dodaj `<Condition/>` element, który zawiera `Expression` atrybut, aby określić wyrażenie zwracające wartość logiczną.
 
-    Przykład:
+    Na przykład:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
     Wyrażenie to używa następującej składni notacji Backusa-Naura (BNF):
 
-    \<Expression>:: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124;\<Number>
+    \<Expression> :: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
     \<BinaryExpression>::= \<Expression> \<Operator>\<Expression>
 
-    \<UnaryExpression>::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-"\<Expression>
+    \<UnaryExpression> ::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
 
-    \<Operator>:: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "lub" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; ""
+    \<Operator> :: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "lub" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; ""
 
-    \<MemberBindings>:: = \<MemberBindings> &#124; \<MemberBinding> "."\<MemberBinding>
+    \<MemberBindings> :: = \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>
 
-    \<MemberBinding>:: = \<MethodCall> &#124;\<PropertyGet>
+    \<MemberBinding> :: = \<MethodCall> &#124; \<PropertyGet>
 
-    \<MethodCall>::= \<Identifier> "(" \<MethodArgs> ")"
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet>:: = Identyfikator
+    \<PropertyGet> :: = Identyfikator
 
-    \<MethodArgs>:: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124;\<empty>
+    \<MethodArgs> :: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    \<Identifier>::= [^. ]*
+    \<Identifier> ::= [^. ]*
 
-    \<Literal>:: = literał typu Single lub Double w cudzysłowie
+    \<Literal> :: = literał typu Single lub Double w cudzysłowie
 
-    \<Number>:: = ciąg cyfr z opcjonalnym punktem dziesiętnym
+    \<Number> :: = ciąg cyfr z opcjonalnym punktem dziesiętnym
 
     Można określić wiele `<Condition/>` elementów, które muszą być spełnione, aby zastosować styl.
 
 3. W następnym wierszu po `<Condition/>` elemencie Dodaj jeden lub wiele `<Setter/>` elementów, aby określić `Property` atrybut i stały `Value` atrybut lub obliczany `Expression` atrybut, który ma zostać zastosowany do mapy, elementów kodu lub linków, które spełniają warunek.
 
-    Przykład:
+    Na przykład:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -435,14 +435,14 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 </DirectedGraph>
 ```
 
-## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a>Przypisywanie właściwości do elementów kodu i linków
+## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a> Przypisywanie właściwości do elementów kodu i linków
  Elementy kodu i linki można organizować, przypisując do nich właściwości. Na przykład można wybrać elementy kodu, które mają określone właściwości, aby można je było grupować, zmienić ich styl lub ukryć.
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>Aby przypisać właściwość do elementu kodu
 
 1. Otwórz plik. dgml w edytorze tekstu lub XML.
 
-2. Znajdź `<Node/>` element dla tego elementu kodu. Określ nazwę właściwości i jej wartość. Przykład:
+2. Znajdź `<Node/>` element dla tego elementu kodu. Określ nazwę właściwości i jej wartość. Na przykład:
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 2. Znajdź `<Link/>` element, który zawiera zarówno nazwę elementu kodu źródłowego, jak i docelowy element kodu.
 
-3. W `<Node/>` elemencie Określ nazwę właściwości i jej wartość. Przykład:
+3. W `<Node/>` elemencie Określ nazwę właściwości i jej wartość. Na przykład:
 
     ```xml
     <Links>
@@ -480,7 +480,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
     </Properties>
     ```
 
-## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a>Przypisywanie kategorii do elementów kodu i linków
+## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a> Przypisywanie kategorii do elementów kodu i linków
  W poniższych sekcjach pokazano, jak można organizować elementy kodu, przypisując do nich kategorie, a także jak tworzyć kategorie hierarchiczne, które ułatwiają organizowanie elementów kodu i Dodawanie atrybutów do kategorii podrzędnych przy użyciu dziedziczenia.
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>Aby przypisać kategorię do elementu kodu
@@ -489,7 +489,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 - Znajdź `<Node/>` element dla żądanego elementu kodu.
 
-- W `<Node/>` elemencie Dodaj `Category` atrybut, aby określić nazwę kategorii. Przykład:
+- W `<Node/>` elemencie Dodaj `Category` atrybut, aby określić nazwę kategorii. Na przykład:
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 2. Znajdź `<Link/>` element, który zawiera zarówno nazwę elementu kodu źródłowego, jak i docelowy element kodu.
 
-3. W `<Link/>` elemencie Dodaj `Category` atrybut, aby określić nazwę kategorii. Przykład:
+3. W `<Link/>` elemencie Dodaj `Category` atrybut, aby określić nazwę kategorii. Na przykład:
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 2. Dodaj `<Category/>` element dla kategorii nadrzędnej, a następnie Dodaj `BasedOn` atrybut do elementu kategorii podrzędnej `<Category/>` .
 
-     Przykład:
+     Na przykład:
 
     ```xml
     <Nodes>
@@ -551,7 +551,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
      W tym przykładzie tło `MyFirstNode` jest zielone, ponieważ jego `Category` atrybut dziedziczy `Background` atrybut `MyParentCategory` .
 
-## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a>Połącz dokumenty lub adresy URL z elementami kodu i łączami
+## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a> Połącz dokumenty lub adresy URL z elementami kodu i łączami
  Można połączyć dokumenty lub adresy URL z elementami kodu lub łącza, edytując plik. dgml mapy i dodając `Reference` atrybut do `<Node/>` elementu dla elementu kodu lub `<Link/>` elementu łącza. Następnie można otworzyć i wyświetlić tę zawartość z elementu kodu lub łącza. Ten `Reference` atrybut określa ścieżkę do tej zawartości. Może to być ścieżka względem lokalizacji pliku .dgml lub ścieżka bezwzględna.
 
 > [!CAUTION]
@@ -582,7 +582,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
      > [!NOTE]
      > Można mieć tylko jeden `Reference` atrybut na element.
 
-     Przykład:
+     Na przykład:
 
    ```xml
    <Nodes>
@@ -607,7 +607,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
       4. Użyj `Label` atrybutu, aby określić tekst wyświetlany dla elementu kodu **Przejdź do** menu skrótów.
 
-      Przykład:
+      Na przykład:
 
    ```xml
    <Nodes>

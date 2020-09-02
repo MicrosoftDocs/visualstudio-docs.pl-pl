@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do szablonu projektu VSIX | Dokumentacja firmy Microsoft
+title: Wprowadzenie z szablonem projektu VSIX | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,78 +11,78 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204298"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Wprowadzenie do szablonu projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby utworzyć rozszerzenie lub istniejące rozszerzenie wdrożenia pakietu, można użyć szablonu projektu VSIX. Szablon projektu VSIX w wersji Visual Basic i Visual C# i jest instalowany jako część programu Visual Studio SDK.  
+Możesz użyć szablonu projektu VSIX, aby utworzyć rozszerzenie lub spakować istniejące rozszerzenie do wdrożenia. Szablon projektu VSIX ma wersje Visual Basic i Visual C# i jest instalowany jako część zestawu Visual Studio SDK.  
   
- Szablon projektu VSIX po prostu składa się z plik source.extension.vsixmanifest, który zawiera informacje o rozszerzeniu i zasobów, które wysłaniem go.  
+ Szablon projektu VSIX składa się tylko z pliku source. Extension. vsixmanifest, który zawiera informacje o rozszerzeniu i zasobach, które dostarcza.  
   
- Aby znaleźć szablonu projektu VSIX, należy zainstalować zestawu SDK programu Visual Studio. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Aby znaleźć szablon projektu VSIX, należy zainstalować Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="deploying-a-custom-project-template-using-the-vsix-project-template"></a>Wdrażanie niestandardowego szablonu projektu przy użyciu szablonu projektu VSIX  
- Poniższe kroki pokazują sposób używania projektu VSIX do pakietu szablonu projektu, który można udostępniać innym deweloperom lub przekazania do galerii Visual Studio.  
+ W poniższych krokach pokazano, jak za pomocą projektu VSIX spakować szablon projektu, który można udostępnić innym deweloperom lub przekazać do galerii programu Visual Studio.  
   
 1. Utwórz szablon projektu.  
   
-    1. Otwórz projekt służący do utworzenia szablonu. Ten projekt może być dowolnym typem projektu.  
+    1. Otwórz projekt, z którego ma zostać utworzony szablon. Ten projekt może być dowolnego typu projektu.  
   
-    2. Na **pliku** menu, kliknij przycisk **Eksportuj szablon**. Wykonaj kroki kreatora.  
+    2. W menu **plik** kliknij polecenie **Eksportuj szablon**. Wykonaj kroki kreatora.  
   
-         Plik zip jest tworzony w %USERPROFILE%\My Documents\Visual Studio  *\<wersji >* \My wyeksportowane szablony\\.  
+         Plik. zip jest tworzony w programie%USERPROFILE%\My Documents\Visual Studio *\<version>* \Moje wyeksportowane szablony \\ .  
   
 2. Utwórz pusty projekt VSIX.  
   
-     Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **projektu**. Wybierz opcję **języka Visual Basic** lub **Visual C#** . W obszarze wybranego węzła, wybierz **rozszerzalności**, a następnie wybierz pozycję **projekt VSIX**.  
+     W menu **plik** kliknij pozycję **Nowy** , a następnie kliknij pozycję **projekt**. Wybierz pozycję **Visual Basic** lub **Visual C#**. W obszarze wybrany węzeł wybierz pozycję **rozszerzalność**, a następnie wybierz pozycję **Projekt VSIX**.  
   
-3. Dodaj plik zip do projektu. Ustaw jego **Kopiuj do katalogu wyjściowego** właściwość `Copy Always`.  
+3. Dodaj plik. zip do projektu. Ustaw właściwość **Kopiuj do katalogu wyjściowego** na `Copy Always` .  
   
-4. W **Eksploratora rozwiązań**, kliknij dwukrotnie `source.extension.vsixmanifest` plik, aby otworzyć go w **Projektant manifestu VSIX**, a następnie dokonaj następujących zmian:  
+4. W **Eksplorator rozwiązań**kliknij dwukrotnie `source.extension.vsixmanifest` plik, aby otworzyć go w **projektancie manifestu VSIX**, a następnie wprowadź następujące zmiany:  
   
-    - Ustaw **nazwa produktu** pole **mój szablon projektu**.  
+    - W polu **Nazwa produktu** ustaw wartość **mój szablon projektu**.  
   
-    - Ustaw **identyfikator produktu** pole **MyProjectTemplate - 1**.  
+    - Ustaw wartość pola **Identyfikator produktu** na **MyProjectTemplate-1**.  
   
-    - Ustaw **Autor** pole **Fabrikam**.  
+    - Ustaw pole **autor** na **Fabrikam**.  
   
-    - Ustaw **opis** pole **mój szablon projektu**.  
+    - Ustaw pole **Opis** na **mój szablon projektu**.  
   
-    - W **zasoby** Dodaj **Microsoft.VisualStudio.ProjectTemplate** wpisz i ustaw jego ścieżki na nazwę pliku zip.  
+    - W sekcji **elementy zawartości** Dodaj typ **Microsoft. VisualStudio. ProjectTemplate** i ustaw jego ścieżkę na nazwę pliku. zip.  
   
-5. Zapisz i zamknij plik source.extension.vsixmanifest.  
+5. Zapisz i zamknij plik source. Extension. vsixmanifest.  
   
 6. Skompiluj projekt.  
   
-7. W katalogu wyjściowym kliknij dwukrotnie plik .vsix.  
+7. W katalogu wyjściowym kliknij dwukrotnie plik. VSIX.  
   
-8. A **Instalator VSIX** pojawi się okno komunikatu. Postępuj zgodnie z instrukcjami, aby zainstalować rozszerzenie.  
+8. Zostanie wyświetlone okno komunikatu **Instalatora VSIX** . Postępuj zgodnie z instrukcjami, aby zainstalować rozszerzenie.  
   
 9. Zamknij program Visual Studio, a następnie otwórz go ponownie.  
   
-10. Wybierz **rozszerzenia i aktualizacje** (na **narzędzia** menu) i wybierz **szablony** kategorii. Jeden z dostępnych rozszerzeń powinien być **mój szablon projektu**.  
+10. Wybierz pozycję **rozszerzenia i aktualizacje** (w menu **Narzędzia** ) i wybierz kategorię **Szablony** . Jednym z dostępnych rozszerzeń powinien być **mój szablon projektu**.  
   
-11. Nowy szablon projektu pojawia się w **nowy projekt** okna dialogowego, w tym samym miejscu co oryginalny szablon projektu. Na przykład, jeśli utworzono szablon o nazwie **konsoli VB** z aplikacji konsoli języka Visual Basic, **konsoli VB** pojawia się w tym samym okienku jako języka Visual Basic **aplikację Konsolową**szablonu.  
+11. Nowy szablon projektu pojawi się w oknie dialogowym **Nowy projekt** w tym samym miejscu co oryginalny szablon projektu. Jeśli na przykład utworzono szablon o nazwie **konsola VB** z poziomu aplikacji konsolowej Visual Basic, **konsola VB** zostanie wyświetlona w tym samym okienku co szablon **aplikacji konsolowej** Visual Basic.  
   
 #### <a name="to-specify-the-location-of-the-template-in-the-new-project-dialog-box"></a>Aby określić lokalizację szablonu w oknie dialogowym Nowy projekt  
   
-1. Szablon foldery znajdują się w *ścieżkę instalacji w usłudze Visual Studio*\Common7\IDE\ProjectTemplates i *ścieżkę instalacji w usłudze Visual Studio*\Common7\IDE\ItemTemplates katalogów. Nazwy sekcji najwyższego poziomu w oknie dialogowym Nowy projekt nie odpowiadają dokładnie nazwy folderów szablonu. W przypadku, gdy będą się różnić, należy użyć nazwy folderu szablonu.  
+1. Foldery szablonów znajdują się w *ścieżce instalacji programu Visual Studio*\Common7\IDE\ProjectTemplates i *ścieżce instalacji programu Visual Studio*\Common7\IDE\ItemTemplates. Nazwy sekcji najwyższego poziomu w oknie dialogowym Nowy projekt nie są dokładnie zgodne z nazwami folderów szablonów. Gdzie się różnią, użyj nazwy folderu szablonów.  
   
-     Zmień rozszerzenie pliku .vsix na .zip, a następnie otwórz plik.  
+     Zmień rozszerzenie pliku VSIX na zip, a następnie otwórz plik.  
   
-2. Utwórz nowy folder o takiej samej nazwie jak części okna dialogowego Nowy projekt szablonu powinny być wyświetlane w.  
+2. Utwórz nowy folder o takiej samej nazwie jak sekcja okna dialogowego Nowy projekt, w którym powinien się znajdować szablon.  
   
-3. Jeśli szablon jest pojawią się w podsekcji, utwórz podfolder o takiej samej nazwie.  
+3. Jeśli szablon jest wyświetlany w podsekcji, utwórz podfolder o tej samej nazwie.  
   
-4. Przenieś plik zip szablonu do nowego folderu.  
+4. Przenieś plik Template. zip do nowego folderu.  
   
-5. Zmień rozszerzenie ZIP na .vsix.  
+5. Zmień rozszerzenie zip na. VSIX.  
   
-6. Otwórz manifestu VSIX.  
+6. Otwórz manifest VSIX.  
   
-7. VSIX manifest zaktualizować **zasobów** ścieżka szablonu, tak aby punkty do katalogu głównego drzewa katalogów, który zawiera plik szablonu. Na przykład jeśli szablon \CSharp\Windows, powinien wskazywać odwołania \CSharp.
+7. W manifeście VSIX zaktualizuj ścieżkę **zasobu** szablonu, tak aby wskazywała katalog główny drzewa katalogów zawierającego plik szablonu. Na przykład jeśli szablon znajduje się w \CSharp\Windows, odwołanie powinno wskazywać na \CSharp.

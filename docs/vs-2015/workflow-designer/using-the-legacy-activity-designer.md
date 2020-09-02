@@ -17,14 +17,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846151"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Używanie starszej wersji projektanta działań
-W tym temacie opisano, jak używać projektanta działań w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego projektanta podczas określania [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób używania projektanta działań w starszej wersji programu [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszego projektanta, gdy celem jest [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  Projektant działań umożliwia tworzenie własnych działań niestandardowych.
 
@@ -51,7 +51,7 @@ W tym temacie opisano, jak używać projektanta działań w starszej [!INCLUDE[w
 |**Nazwa**|Nazwa działania.|
 |**Klasa bazowa**|Klasa bazowa, z której pochodzi działanie. Domyślną klasą bazową jest [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx). W oknie **Właściwości** kliknij wielokropek **klasy bazowej** **[...]** , aby wybrać inną klasę bazową w oknie [dialogowym Przeglądaj i wybierz typ platformy .NET (starsza wersja)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
 |**Opis**|Opis działania zdefiniowany przez użytkownika.|
-|**Włączono**|Domyślnie Ustaw **wartość true** , aby włączyć wykonywanie i sprawdzanie poprawności działania. Ustaw **wartość false** , aby wyłączyć wykonywanie i sprawdzanie poprawności działania. Informacje o wykonywaniu i walidacji działania znajdują się w temacie [opracowywanie działań przepływu pracy](https://msdn2.microsoft.com/library/ms734413.aspx).|
+|**Włączone**|Domyślnie Ustaw **wartość true** , aby włączyć wykonywanie i sprawdzanie poprawności działania. Ustaw **wartość false** , aby wyłączyć wykonywanie i sprawdzanie poprawności działania. Informacje o wykonywaniu i walidacji działania znajdują się w temacie [opracowywanie działań przepływu pracy](https://msdn2.microsoft.com/library/ms734413.aspx).|
 
 ## <a name="adding-child-activities"></a>Dodawanie działań podrzędnych
  Możesz przeciągać działania podrzędne z przybornika do projektowanego działania. Następnie można skonfigurować każde działanie podrzędne przy użyciu przeglądarki właściwości.

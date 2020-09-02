@@ -10,37 +10,37 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40f17913864f80e04c3e8b8e703f057094c9bdea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656930"
 ---
 # <a name="control-flow-activity-designers"></a>Projektanci działań przepływu sterowania
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] obejmuje wiele działań dostarczonych przez system, których można używać podczas konstruowania przepływów pracy. Ta sekcja zawiera działania dostarczone przez system służące do kontrolowania przepływu w ramach przepływu pracy. W poniższych tematach opisano te działania i przedstawiono wskazówki dotyczące ich używania.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] zawiera szereg działań dostarczonych przez system, których można użyć podczas konstruowania przepływów pracy. Ta sekcja zawiera działania dostarczone przez system służące do kontrolowania przepływu w ramach przepływu pracy. W poniższych tematach opisano te działania i przedstawiono wskazówki dotyczące ich używania.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [DoWhile](../workflow-designer/dowhile-activity-designer.md) Wykonuje działanie zawarte w jego treści co najmniej raz, do momentu, gdy określony warunek zwróci **wartość true**.
 
- [@No__t_1T ForEach >](foreach-t-activity-designer.md) Wykonuje działanie zawarte w jego treści dla każdego elementu w określonej kolekcji.
+ [Instrukcja \<T> foreach](foreach-t-activity-designer.md) Wykonuje działanie zawarte w jego treści dla każdego elementu w określonej kolekcji.
 
  [Jeśli](../workflow-designer/if-activity-designer.md) Ocenia warunek i wykonuje działanie w zależności od wyników tej oceny.
 
  [Równolegle](../workflow-designer/parallel-activity-designer.md) Wykonuje kolekcję działań podrzędnych jednocześnie.
 
- [ParallelForEach \<T >](../workflow-designer/parallelforeach-t-activity-designer.md) Wylicza elementy kolekcji i wykonuje osadzoną instrukcję dla każdego elementu kolekcji równolegle
+ [ParallelForEach \<T> ](../workflow-designer/parallelforeach-t-activity-designer.md) Wylicza elementy kolekcji i wykonuje osadzoną instrukcję dla każdego elementu kolekcji równolegle
 
  [Wybierz](../workflow-designer/pick-activity-designer.md) Wykonuje jedną z kilku gałęzi w odpowiedzi na zdarzenie, które zapewnia sterowanie przepływem opartym na zdarzeniach.
 
- [PickBranch](../workflow-designer/pickbranch-activity-designer.md) Zapewnia potencjalną ścieżkę wykonywania w ramach działania <xref:System.Activities.Statements.Pick>.
+ [PickBranch](../workflow-designer/pickbranch-activity-designer.md) Zapewnia potencjalną ścieżkę wykonywania w ramach <xref:System.Activities.Statements.Pick> działania.
 
  [Sekwencja](../workflow-designer/sequence-activity-designer.md) Zawiera uporządkowaną kolekcję działań podrzędnych wykonywanych w określonej kolejności.
 
- [Przełącz \<T >](switch-t-activity-designer.md) Oblicza określone wyrażenie i wykonuje działanie z kolekcji działań, których skojarzony klucz jest zgodny z wartością uzyskaną z oceny.
+ [Przełącz \<T> ](switch-t-activity-designer.md) Oblicza określone wyrażenie i wykonuje działanie z kolekcji działań, których skojarzony klucz jest zgodny z wartością uzyskaną z oceny.
 
  [While](../workflow-designer/while-activity-designer.md) Wykonuje działanie zawarte w swojej treści, podczas gdy określony warunek ma **wartość true**.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.DoWhile>

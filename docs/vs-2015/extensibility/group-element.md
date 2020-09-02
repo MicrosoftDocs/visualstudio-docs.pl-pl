@@ -1,5 +1,5 @@
 ---
-title: Element grupy | Dokumentacja firmy Microsoft
+title: Element grupy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204278"
 ---
 # <a name="group-element"></a>Group, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiuje grupy poleceń pakietu VSPackage.  
+Definiuje grupę poleceń pakietu VSPackage.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,23 +38,23 @@ Definiuje grupy poleceń pakietu VSPackage.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
-|identyfikator|Wymagany. Identyfikator GUID/ID identyfikator polecenia.|  
-|priority|Opcjonalny. Wartość liczbowa określająca priorytet.|  
+|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|  
+|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|  
+|priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|  
 |Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Nadrzędny|Opcjonalna. Elementu nadrzędnego przycisku.|  
+|Nadrzędny|Opcjonalny. Element nadrzędny przycisku.|  
 |Adnotacja|Opcjonalny komentarz.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.|  
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   

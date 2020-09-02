@@ -1,5 +1,5 @@
 ---
-title: Instalowanie wielu wersji językowych | Dokumentacja firmy Microsoft
+title: Instalowanie wielu wersji językowych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,26 +13,26 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165453"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Instalowanie wielu wersji językowych programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [zainstalować pakiety językowe](/visualstudio/install/install-visual-studio?view=vs-2019#step-6---install-language-packs-optional).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [Install Language Pack](/visualstudio/install/install-visual-studio?view=vs-2019#step-6---install-language-packs-optional).
 
-Przez zainstalowanie co najmniej jeden pakiet językowy, można uruchomić programu Visual Studio 2015 w innych językach, na tym samym komputerze. Należy uzyskać pakiet językowy osobne dla każdego języka, który chcesz zainstalować.
+Instalując co najmniej jeden pakiet językowy, można uruchomić program Visual Studio 2015 w innych językach na tym samym komputerze. Musisz uzyskać oddzielny pakiet językowy dla każdego języka, który chcesz zainstalować.
 
-## <a name="important-considerations"></a>Istotne zagadnienia
+## <a name="important-considerations"></a>Ważne zagadnienia
 
-- Po zainstalowaniu pakietu language, pliki zasobów dla zainstalowane funkcje są automatycznie instalowane dla każdej wersji językowej.
+- Po zainstalowaniu pakietu językowego pliki zasobów dla zainstalowanych funkcji są automatycznie instalowane dla każdej wersji językowej.
 
-- Pakiety usługi Visual Studio mają zastosowanie do wszystkich wersji językowych zainstalowanego programu Visual Studio. Nie są już potrzebne do zainstalowania pakietu usług dla każdej wersji językowej programu Visual Studio, który został zainstalowany.
+- Pakiety usługi Visual Studio mają zastosowanie do wszystkich zainstalowanych wersji językowych programu Visual Studio. Nie trzeba już instalować pakietu usługi dla każdej zainstalowanej wersji językowej programu Visual Studio.
 
-- Pakietów językowych można odinstalować za pomocą trybu konserwacji w Instalatorze programu Visual Studio. Otwórz **Panelu sterowania**, otwórz **programy i funkcje**, wybierz swoją wersję programu Visual Studio, a następnie wybierz **Odinstaluj/Zmień**.
+- Pakiety językowe można odinstalować za pomocą trybu konserwacji Instalatora programu Visual Studio. Otwórz **Panel sterowania**, Otwórz aplet **programy i funkcje**, wybierz swoją wersję programu Visual Studio, a następnie wybierz polecenie **Odinstaluj/Zmień**.
 
 ## <a name="see-also"></a>Zobacz też
 
