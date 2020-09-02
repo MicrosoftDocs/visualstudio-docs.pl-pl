@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Dokumentacja firmy Microsoft
+title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c088b27e686d42d800a6470fbbced8192c100bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153601"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
@@ -47,7 +47,7 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
   
 ## <a name="members"></a>Elementy członkowskie  
  ALR_NAME  
- Zestaw znajduje się w bieżącej przestrzeni nazw.  
+ Zestaw znajduje się w bieżącym obszarze nazw.  
   
  ALR_USERDIR  
  Zestaw znajduje się w katalogu użytkownika.  
@@ -59,14 +59,14 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
  Zestaw znajduje się w katalogu zdalnym.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są zwracane przez [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) i [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metody.  
+ Te wartości są zwracane przez metody [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) i [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .  
   
- Te wartości mogą być łączone z `OR` operacji.  
+ Te wartości można łączyć z `OR` operacją.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

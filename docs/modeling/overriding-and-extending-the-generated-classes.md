@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595894"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Przesłoń i rozwiń wygenerowane klasy
@@ -28,7 +28,7 @@ Dostępnych jest kilka mechanizmów umożliwiających rozbudowanie wygenerowaneg
 
 Częściowe definicje klas umożliwiają zdefiniowanie klasy w więcej niż jednym miejscu. Dzięki temu możesz oddzielić wygenerowany kod od kodu, który napiszesz samodzielnie. W kodzie ręcznym, można przesłonić klasy dziedziczone przez wygenerowany kod.
 
-Na przykład jeśli w definicji DSL zdefiniujesz klasę domeny o nazwie `Book`, możesz napisać niestandardowy kod, który dodaje metody zastąpień:
+Na przykład, jeśli w definicji DSL definiujesz klasę domeny o nazwie `Book` , można napisać niestandardowy kod, który dodaje metody zastąpień:
 
 ```csharp
 public partial class Book
@@ -52,13 +52,13 @@ Większość metod w wygenerowanych klasach jest dziedziczona ze stałego zestaw
 
 Niemniej jednak można zastąpić te metody przez ustawienie opcji **Generuj podwójną flagę pochodną** dla klasy domeny. Powoduje to wygenerowanie dwóch klas, jedną z nich jest abstrakcyjną klasą bazową drugiej. Wszystkie definicje metody i właściwości znajdują się w klasie bazowej, a tylko Konstruktor znajduje się w klasie pochodnej.
 
-Na przykład w bibliotece Sample. DSL Klasa `CirculationBook` domeny ma właściwość `Generates``Double Derived` ustawioną na `true`. Wygenerowany kod dla tej klasy domeny zawiera dwie klasy:
+Na przykład w bibliotece Sample. DSL `CirculationBook` Klasa domeny ma `Generates``Double Derived` ustawioną właściwość `true` . Wygenerowany kod dla tej klasy domeny zawiera dwie klasy:
 
 - `CirculationBookBase`, który jest abstrakcyjny i zawiera wszystkie metody i właściwości.
 
-- `CirculationBook`, który pochodzi od `CirculationBookBase`. Jest ona pusta, z wyjątkiem konstruktorów.
+- `CirculationBook`, który pochodzi od `CirculationBookBase` . Jest ona pusta, z wyjątkiem konstruktorów.
 
-Aby zastąpić dowolną metodę, należy utworzyć częściową definicję klasy pochodnej, takiej jak `CirculationBook`. Można zastąpić zarówno wygenerowane metody, jak i metody dziedziczone z struktury modelowania.
+Aby zastąpić każdą metodę, należy utworzyć częściową definicję klasy pochodnej, na przykład `CirculationBook` . Można zastąpić zarówno wygenerowane metody, jak i metody dziedziczone z struktury modelowania.
 
 Tej metody można użyć z wszystkimi typami elementów, w tym elementami modelu, relacjami, kształtami, diagramami i łącznikami. Można również przesłonić metody innych wygenerowanych klas. Niektóre wygenerowane klasy, takie jak ToolboxHelper, są zawsze wyprowadzane podwójnie.
 
@@ -66,13 +66,13 @@ Tej metody można użyć z wszystkimi typami elementów, w tym elementami modelu
 
 Nie można zastąpić konstruktora. Nawet w przypadku klas o podwójnej pochodnej Konstruktor musi znajdować się w klasie pochodnej.
 
-Aby zapewnić własny Konstruktor, można to zrobić przez ustawienie `Has Custom Constructor` dla klasy domeny w definicji DSL. Po kliknięciu przycisku **Przekształć wszystkie szablony**, wygenerowany kod nie będzie zawierać konstruktora dla tej klasy. Będzie zawierać wywołanie brakującego konstruktora. Powoduje to raport o błędach podczas kompilowania rozwiązania. Kliknij dwukrotnie raport o błędach, aby wyświetlić komentarz w wygenerowanym kodzie, który wyjaśnia, co należy podać.
+Aby zapewnić własny Konstruktor, można to zrobić przez ustawienie `Has Custom Constructor` klasy domeny w definicji DSL. Po kliknięciu przycisku **Przekształć wszystkie szablony**, wygenerowany kod nie będzie zawierać konstruktora dla tej klasy. Będzie zawierać wywołanie brakującego konstruktora. Powoduje to raport o błędach podczas kompilowania rozwiązania. Kliknij dwukrotnie raport o błędach, aby wyświetlić komentarz w wygenerowanym kodzie, który wyjaśnia, co należy podać.
 
 Napisz częściową definicję klasy w pliku, który jest oddzielony od wygenerowanych plików, i podaj konstruktora.
 
 ### <a name="flagged-extension-points"></a>Oflagowane punkty rozszerzenia
 
-Oflagowany punkt rozszerzenia to miejsce w definicji DSL, w którym można ustawić właściwość lub pole wyboru, aby wskazać, że zostanie określona metoda niestandardowa. Konstruktory niestandardowe są jednym przykładem. Inne przykłady obejmują ustawienie `Kind` właściwości domeny na obliczeniową lub niestandardową magazyn lub ustawienie flagi **is Custom** w konstruktorze połączeń.
+Oflagowany punkt rozszerzenia to miejsce w definicji DSL, w którym można ustawić właściwość lub pole wyboru, aby wskazać, że zostanie określona metoda niestandardowa. Konstruktory niestandardowe są jednym przykładem. Inne przykłady obejmują ustawienie `Kind` właściwości domeny na obliczeniową lub niestandardową magazyn lub ustawienie flagi **is Custom** w konstruktorze połączenia.
 
 W każdym przypadku, gdy ustawisz flagę i wygenerujesz ponownie kod, zostanie zwrócony błąd kompilacji. Kliknij dwukrotnie błąd, aby wyświetlić komentarz wyjaśniający, co należy podać.
 

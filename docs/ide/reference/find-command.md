@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595647"
 ---
 # <a name="find-command"></a>Find — Polecenie
-Wyszukuje pliki przy użyciu podzbioru opcji dostępnych na karcie **Znajdź w plikach** w oknie **Znajdź i zamień.**
+Przeszukuje pliki za pomocą podzestawu opcji dostępnych na karcie **Znajdź w plikach** okna **Znajdź i Zamień** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,47 +31,47 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="arguments"></a>Argumenty
-`findwhat`Wymagane. Tekst do dopasowania.
+`findwhat` Wymagane. Tekst do dopasowania.
 
 ## <a name="switches"></a>Przełączniki
-/case lub /c\
-Element opcjonalny. Dopasowania występują tylko wtedy, gdy wielkie i małe litery `findwhat` dokładnie odpowiadają tym określonym w argumie.
+/Case lub/c\
+Opcjonalny. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do znaków określonych w `findwhat` argumencie.
 
-/doc lub /d\
-Element opcjonalny. Przeszukuje tylko bieżący dokument. Określ tylko jeden z dostępnych `/doc` `/proc`zakresów wyszukiwania, , , `/open`lub `/sel`.
+/doc lub/d\
+Opcjonalny. Przeszukuje tylko bieżący dokument. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc` , `/proc` , `/open` lub `/sel` .
 
-/markall lub /m\
-Element opcjonalny. Umieszcza grafikę w każdym wierszu zawierającym dopasowanie wyszukiwania w bieżącym dokumencie.
+/markall lub/m\
+Opcjonalny. Umieszcza grafikę w każdym wierszu, który zawiera dopasowanie wyszukiwania w bieżącym dokumencie.
 
-/open lub /o\
-Element opcjonalny. Przeszukuje wszystkie otwarte dokumenty tak, jakby były jednym dokumentem. Określ tylko jeden z dostępnych `/doc` `/proc`zakresów wyszukiwania, , , `/open`lub `/sel`.
+/Open lub/O\
+Opcjonalny. Przeszukuje wszystkie otwarte dokumenty, tak jakby były one jednym dokumentem. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc` , `/proc` , `/open` lub `/sel` .
 
-/options lub /t\
-Element opcjonalny. Wyświetla listę bieżących ustawień opcji wyszukiwania i nie przeprowadza wyszukiwania.
+/Options lub/t\
+Opcjonalny. Wyświetla listę bieżących ustawień opcji Znajdź i nie wykonuje wyszukiwania.
 
-/proc lub /p\
-Element opcjonalny. Przeszukuje tylko bieżącą procedurę. Określ tylko jeden z dostępnych `/doc` `/proc`zakresów wyszukiwania, , , `/open`lub `/sel`.
+/proc lub/p\
+Opcjonalny. Przeszukuje tylko bieżącą procedurę. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc` , `/proc` , `/open` lub `/sel` .
 
-/reset lub /e\
-Element opcjonalny. Zwraca opcje wyszukiwania do ustawień domyślnych i nie wykonuje wyszukiwania.
+/Reset lub/e\
+Opcjonalny. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
 
-/sel lub /s\
-Element opcjonalny. Przeszukuje tylko bieżące zaznaczenie. Określ tylko jeden z dostępnych `/doc` `/proc`zakresów wyszukiwania, , , `/open`lub `/sel`.
+/SEL lub/s\
+Opcjonalny. Przeszukuje tylko bieżące zaznaczenie. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc` , `/proc` , `/open` lub `/sel` .
 
-/up lub /u\
-Element opcjonalny. Wyszukuje z bieżącej lokalizacji w pliku na początku pliku. Domyślnie wyszukiwanie rozpoczyna się w bieżącej lokalizacji w pliku i wyszukuje pod koniec pliku.
+/up lub/U\
+Opcjonalny. Wyszukuje z bieżącej lokalizacji pliku w kierunku początku pliku. Domyślnie wyszukiwania zaczynają się w bieżącej lokalizacji w pliku i wyszukuje na końcu pliku.
 
-/regex lub /r\
-Element opcjonalny. Używa wstępnie zdefiniowanych znaków `findwhat` specjalnych w argurze jako notacji, które reprezentują wzorce tekstu, a nie znaki dosłowne. Aby uzyskać pełną listę znaków wyrażeń regularnych, zobacz [Wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
+/Regex lub/r\
+Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji, które reprezentują wzorce tekstu, a nie znaki literału. Aby uzyskać pełną listę znaków wyrażenia regularnego, zobacz [wyrażenia regularne](../../ide/using-regular-expressions-in-visual-studio.md).
 
-/wild lub /l\
-Element opcjonalny. Używa wstępnie zdefiniowanych znaków `findwhat` specjalnych w argumie jako notacji do reprezentowania znaku lub sekwencji znaków.
+/Wild lub/l\
+Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w `findwhat` argumencie jako notacji do reprezentowania znaku lub sekwencji znaków.
 
-/słowo lub /w\
-Element opcjonalny. Wyszukuje tylko całe słowa.
+/Word lub/w\
+Opcjonalny. Wyszukuje tylko całe wyrazy.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie wykonuje wyszukiwanie z uwzględnieniem wielkości liter dla słowa "somestring" w aktualnie wybranej sekcji kodu.
+W tym przykładzie jest wykonywane wyszukiwanie z uwzględnieniem wielkości liter dla słowa "someString" w aktualnie zaznaczonej sekcji kodu.
 
 ```cmd
 >Edit.Find somestring /sel /case
@@ -80,6 +80,6 @@ W tym przykładzie wykonuje wyszukiwanie z uwzględnieniem wielkości liter dla 
 ## <a name="see-also"></a>Zobacz też
 
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

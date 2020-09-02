@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ffa24dce2691f061c5947e15d7fc7923d632b38
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706545"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T>, projektant działań
@@ -42,7 +42,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.AddToCollec
 |<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|Prawda|Kolekcja, do której należy dodać element. Ta kolekcja jest typu **ICollection<elementu TypeArgument \> **. Aby określić kolekcję, wpisz wyrażenie Visual Basic w siatce właściwości.|
 |*Elementu TypeArgument*|Prawda|Typ T elementów zawartych w <xref:System.Collections.Generic.ICollection%601> . Domyślnie ten typ *elementu TypeArgument* jest ustawiony na **Int32**. Aby zmienić typ, Zmień wartość *elementu TypeArgument* w polu kombi w siatce właściwości.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kolekcja](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection, \<T> Projektant działań](../workflow-designer/addtocollection-t-activity-designer.md)

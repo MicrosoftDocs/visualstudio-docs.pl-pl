@@ -13,23 +13,23 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 63d405b0e62735c0c1e3d7bb716ea2db29bc19fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651573"
 ---
 # <a name="in-source-suppression-overview"></a>Ograniczanie w kodzie źródłowym - Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pomijanie w źródle to możliwość pomijania lub ignorowania naruszeń analizy kodu w kodzie zarządzanym przez dodanie atrybutu **SuppressMessage** do segmentów kodu, które powodują naruszenia. Atrybut **SuppressMessage** jest atrybutem warunkowym, który jest zawarty w metadanych Il zestawu kodu zarządzanego tylko wtedy, gdy symbol kompilacji CODE_ANALYSIS jest zdefiniowany w czasie kompilacji.
+Pomijanie w źródle to możliwość pomijania lub ignorowania naruszeń analizy kodu w kodzie zarządzanym przez dodanie atrybutu **SuppressMessage** do segmentów kodu, które powodują naruszenia. Atrybut **SuppressMessage** jest atrybutem warunkowym, który jest zawarty w metadanych Il zestawu kodu zarządzanego tylko wtedy, gdy CODE_ANALYSIS symbol kompilacji jest zdefiniowany w czasie kompilacji.
 
- W C++programie/CLI Użyj makr CA_SUPPRESS_MESSAGE lub CA_GLOBAL_SUPPRESS_MESSAGE w pliku nagłówkowym, aby dodać atrybut.
+ W języku C++/CLI Użyj makr CA_SUPPRESS_MESSAGE lub CA_GLOBAL_SUPPRESS_MESSAGE w pliku nagłówkowym, aby dodać atrybut.
 
  Nie należy używać pominięć ze źródła w kompilacjach wydania, aby zapobiec przypadkowemu wysłaniu metadanych pomijania w źródle. Ze względu na koszt przetwarzania w przypadku pomijania w źródle wydajność aplikacji może być również obniżona poprzez dołączenie metadanych pomijania w źródle.
 
 > [!NOTE]
-> Nie ma potrzeby ręcznego kodu tych atrybutów. Aby uzyskać więcej informacji, zobacz [How to: pomijanie ostrzeżeń przy użyciu elementu menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Element menu nie jest dostępny dla C++ kodu.
+> Nie ma potrzeby ręcznego kodu tych atrybutów. Aby uzyskać więcej informacji, zobacz [How to: pomijanie ostrzeżeń przy użyciu elementu menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Element menu nie jest dostępny dla kodu C++.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage — atrybut
  Po kliknięciu prawym przyciskiem myszy ostrzeżenia analizy kodu w **Lista błędów** , a następnie kliknięciu opcji **Pomiń komunikaty**, atrybut **SuppressMessage** jest dodawany w kodzie lub do globalnego pliku pominięć tego projektu.
@@ -72,18 +72,18 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
   - Typ
 
-  - Element członkowski
+  - Członek
 
 - **Target** — identyfikator, który jest używany do określenia elementu docelowego, na którym jest pomijane ostrzeżenie. Musi zawierać w pełni kwalifikowaną nazwę elementu.
 
 ## <a name="suppressmessage-usage"></a>SuppressMessage użycie
  Ostrzeżenia analizy kodu są pomijane na poziomie, do którego zastosowano wystąpienie atrybutu **SuppressMessage** . Celem jest ścisłe sprzęganie informacji o pominięciu do kodu, w którym występuje naruszenie.
 
- Ogólna forma pomijania obejmuje kategorię reguły i Identyfikator reguły, która zawiera opcjonalną, czytelną dla człowieka reprezentację nazwy reguły. Na przykład
+ Ogólna forma pomijania obejmuje kategorię reguły i Identyfikator reguły, która zawiera opcjonalną, czytelną dla człowieka reprezentację nazwy reguły. Przykład:
 
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
- Jeśli istnieją ścisłe przyczyny dotyczące minimalizowania metadanych pomijania w źródle, sama nazwa reguły może zostać pozostawiona. Kategoria reguł i jej Identyfikator reguły składają się na wystarczająco unikatowy identyfikator reguły. Na przykład
+ Jeśli istnieją ścisłe przyczyny dotyczące minimalizowania metadanych pomijania w źródle, sama nazwa reguły może zostać pozostawiona. Kategoria reguł i jej Identyfikator reguły składają się na wystarczająco unikatowy identyfikator reguły. Przykład:
 
  `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

@@ -1,5 +1,5 @@
 ---
-title: Widoków programu Spy ++ | Dokumentacja firmy Microsoft
+title: Widoki w programie Spy + + | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,36 +13,36 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91d62f251af2fd2f7c029712e4f15874a68de177
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153862"
 ---
 # <a name="spy-views"></a>Spy++ — Widoki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spy ++ Wyświetla widoki drzewa systemu windows, wiadomości, procesów i wątków dostępnych na komputerze.  
+W programie Spy + + są wyświetlane widoki drzewa okien, komunikatów, procesów i wątków dostępnych na komputerze.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Widok okien](../debugger/windows-view.md)  
- Wyświetla widok drzewa dostępne okien i formantów.  
+ Wyświetla widok drzewa dostępnych okien i kontrolek.  
   
  [Widok komunikatów](../debugger/messages-view.md)  
- Przedstawia strumień komunikatu skojarzonego z okna, proces lub wątek.  
+ Wyświetla strumień wiadomości skojarzony z oknem, procesem lub wątkiem.  
   
  [Widok procesów](../debugger/processes-view.md)  
- Wyświetla aktywne procesy w widoku drzewa.  
+ Wyświetla widok drzewa aktywnych procesów.  
   
  [Widok wątków](../debugger/threads-view.md)  
- Wyświetla aktywne wątki w widoku drzewa.  
+ Wyświetla widok drzewa aktywnych wątków.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Narzędzia wyszukiwania dotyczące widoków programu Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Okna dialogowe używana do znajdowania określonych węzłów w systemie windows widoków programu Spy ++.  
+ [Narzędzia wyszukiwania dla Widoków Spy++](../debugger/search-tools-for-spy-increment-views.md)  
+ Okna dialogowe używane do znajdowania określonych węzłów w oknach widoków Spy + +.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
+ Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.  
   
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.
+ [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)  
+ Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.

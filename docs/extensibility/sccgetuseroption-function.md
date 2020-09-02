@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccGetUserOption | Dokumenty firmy Microsoft
+title: Funkcja SccGetUserOption | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700686"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption, funkcja
-Ta funkcja pobiera wiele opcji specyficznych dla użytkownika.
+Ta funkcja pobiera różne opcje specyficzne dla użytkownika.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,24 +33,24 @@ SCCRTN SccGetUserOption(
 ```
 
 #### <a name="parameters"></a>Parametry
- Pcontext
+ pContext
 
-[w] Wskaźnik kontekstu wtyczki formantu źródła.
+podczas Wskaźnik kontekstu wtyczki kontroli źródła.
 
- nOpcja
+ nOption
 
-[w] Opcja pobierania (zobacz Uwagi dotyczące możliwych opcji).
+podczas Opcja pobrania (Zobacz uwagi dotyczące możliwych opcji).
 
- lpVal (ł.
+ lpVal
 
-[na zewnątrz] Wartość skojarzona z opcją.
+określoną Wartość skojarzona z opcją.
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Opcja została pobrana pomyślnie.|
+|SCC_OK|Pomyślnie pobrano opcję.|
 |SCC_E_OPNOTSUPPORTED|Opcja nie jest obsługiwana.|
 |SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|
 
@@ -59,7 +59,7 @@ SCCRTN SccGetUserOption(
 
 |Opcja użytkownika|Opis|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Określa, czy użytkownik chce wyewidencjonować lokalną wersję plików. `lpVal``SCC_USEROPT_COLV_YES` (użytkownik chce wyewidencjonować pliki `SCC_USEROPT_COLV_NO`lokalne) lub .|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Określa, czy użytkownik chce wyewidencjonować lokalną wersję plików. `lpVal` jest przypisany `SCC_USEROPT_COLV_YES` (użytkownik chce wyewidencjonować pliki lokalne) lub `SCC_USEROPT_COLV_NO` .|
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

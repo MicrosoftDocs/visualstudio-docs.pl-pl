@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie manifestu pakietu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie manifestu pakietu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,30 +20,30 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153839"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Instrukcje: Tworzenie manifestu pakietu
+# <a name="how-to-create-a-package-manifest"></a>Porady: tworzenie manifestu pakietu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Zestawu funkcji wspólnych w różnych wersjach zlokalizowanych powinny należeć do manifestu produktu.  
+Aby wdrożyć wymagania wstępne dla aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera jeden plik manifestu produktu, ale manifest pakietu dla każdego ustawienia regionalnego. Funkcje udostępnione w różnych zlokalizowanych wersjach powinny przechodzić do manifestu produktu.  
   
- Aby uzyskać więcej informacji na temat manifestów pakietu zobacz [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).  
+ Aby uzyskać więcej informacji na temat manifestów pakietów, zobacz [How to: Create a Product](../deployment/how-to-create-a-product-manifest.md)for.  
   
 ## <a name="creating-the-package-manifest"></a>Tworzenie manifestu pakietu  
   
 #### <a name="to-create-the-package-manifest"></a>Aby utworzyć manifest pakietu  
   
-1. Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie użyto C:\package.  
+1. Utwórz katalog dla pakietu programu inicjującego. W tym przykładzie używa C:\Package.  
   
-2. Utwórz podkatalog o nazwie ustawień regionalnych, np. en, w języku angielskim.  
+2. Utwórz podkatalog o nazwie ustawień regionalnych, takich jak pl dla języka angielskiego.  
   
-3. W programie Visual Studio, należy utworzyć plik XML, który nosi nazwę `package.xml`i zapisz go w folderze C:\package\en.  
+3. W programie Visual Studio Utwórz plik XML o nazwie `package.xml` i Zapisz go w folderze C:\package\en.  
   
-4. Dodaj kod XML, aby wyświetlić listę Nazwa pakietu programu inicjującego, kultura tego manifestu pakietu zlokalizowane i umowę licencyjną opcjonalne. Następujący kod XML używa zmiennych `DisplayName` i `Culture`, które są określone w elemencie nowsze.  
+4. Dodaj plik XML, aby wyświetlić nazwę pakietu programu inicjującego, kulturę dla tego zlokalizowanego manifestu pakietu i opcjonalną umowę licencyjną. W poniższym kodzie XML są stosowane zmienne `DisplayName` i `Culture` , które są zdefiniowane w późniejszym elemencie.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
         LicenseAgreement="eula.txt">  
     ```  
   
-5. Dodaj kod XML, aby wyświetlić listę wszystkich plików, które znajdują się w katalogu specyficzny dla ustawień regionalnych. Następujący kod XML, używany jest plik o nazwie eula.txt, który ma zastosowanie do **en** ustawień regionalnych.  
+5. Dodaj plik XML, aby wyświetlić listę wszystkich plików znajdujących się w katalogu specyficznym dla ustawień regionalnych. Poniższy kod XML używa pliku o nazwie eula.txt, który jest stosowany dla ustawień regionalnych **EN** .  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
     </PackageFiles>  
     ```  
   
-6. Dodaj kod XML do definiowania możliwych do zlokalizowania ciągi dla pakietu programu inicjującego. Następujący kod XML dodaje ciągi błędów dla ustawień regionalnych en.  
+6. Dodaj kod XML, aby zdefiniować lokalizowalne ciągi dla pakietu programu inicjującego. Poniższy kod XML dodaje ciągi błędów dla ustawień regionalnych en.  
   
     ```  
       <Strings>  
@@ -74,10 +74,10 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu pro
     </Strings>  
     ```  
   
-7. Skopiuj C:\package folder katalogu program inicjujący Instalatora programu Visual Studio. Dla programu Visual Studio 2010 to jest katalog SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
+7. Skopiuj folder C:\Package do katalogu inicjującego programu Visual Studio. W przypadku programu Visual Studio 2010 jest to katalog \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
 ## <a name="example"></a>Przykład  
- Manifest pakietu zawiera informacje specyficzne dla ustawień regionalnych, takie jak komunikaty o błędach, postanowienia licencyjne dotyczące oprogramowania i pakietów językowych.  
+ Manifest pakietu zawiera informacje specyficzne dla ustawień regionalnych, takie jak komunikaty o błędach, postanowienia licencyjne dotyczące oprogramowania i pakiety językowe.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -102,4 +102,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
+ [Produkt i pakiet — odwołanie do schematu](../deployment/product-and-package-schema-reference.md)

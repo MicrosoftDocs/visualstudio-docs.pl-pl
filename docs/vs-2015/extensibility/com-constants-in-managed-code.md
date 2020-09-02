@@ -1,5 +1,5 @@
 ---
-title: Stałe modelu COM w kodzie zarządzanym | Dokumentacja firmy Microsoft
+title: Stałe modelu COM w kodzie zarządzanym | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,18 +11,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f502f8ac10c28ff8c25433792ab60caf6ee05bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184436"
 ---
 # <a name="com-constants-in-managed-code"></a>Stałe modelu COM w kodzie zarządzanym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Framework pakietu zarządzanego (MPF) sprawia, że niektóre standardowe stałe modelu COM jest dostępne dla kodu zarządzanego. Te stałe są wymienione poniżej, dla której można się odwołać.  
+Struktura pakietu zarządzanego (MPF) udostępnia kilka standardowych stałych modelu COM dostępnych w kodzie zarządzanym. Te stałe są wymienione poniżej jako odwołanie.  
   
-## <a name="boolean-hresult-values"></a>Wartości HRESULT logiczna  
+## <a name="boolean-hresult-values"></a>Logiczne wartości HRESULT  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  

@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Nie można uzyskać dostępu do interfejsu debugowania programu SQL Server | Dokumentacja firmy Microsoft'
+title: 'Błąd: nie można uzyskać dostępu do interfejsu debugowania SQL Server | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 323e67458d934d27800cac710f79857a98d6c6c5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682657"
 ---
-# <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Błąd: Nie można uzyskać dostępu do interfejsu debugowania programu SQL Server
+# <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Błąd: Nie można uzyskać dostępu do interfejsu debugowania SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten komunikat występuje podczas próby debugowania SQL na maszynie, gdzie debugowanie SQL nie jest włączone.  
+Ten komunikat występuje podczas próby debugowania SQL na komputerze, na którym debugowanie SQL nie jest włączone.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   

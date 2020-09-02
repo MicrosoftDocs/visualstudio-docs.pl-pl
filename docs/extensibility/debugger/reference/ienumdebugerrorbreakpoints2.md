@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2 | Dokumenty firmy Microsoft
+title: IEnumDebugErrorBreakpoints2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ea841a095964b71e301e966bfd0a10c8f7c0c65d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716882"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
@@ -29,29 +29,29 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs jako część jego obsługi punktów przerwania.
+ Aparat debugowania (DE) implementuje ten interfejs w ramach obsługi punktów przerwania.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Visual Studio wywołuje [CanBind,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) aby uzyskać ten interfejs reprezentujący listę punktów przerwania, które nie mogą być powiązane, lub [EnumErrorBreakpoints,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) aby uzyskać ten interfejs reprezentujący listę punktów przerwania, które nie były powiązane.
+ Program Visual Studio wywołuje metodę " [bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) ", aby uzyskać ten interfejs reprezentujący listę punktów przerwania, które nie mogą być powiązane, lub [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) , aby uzyskać ten interfejs reprezentujący listę punktów przerwań, które nie zostały powiązane.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IEnumDebugErrorBreakpoints2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IEnumDebugErrorBreakpoints2` .
 
 |Metoda|Opis|
 |------------|-----------------|
 |[Dalej](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Pobiera określoną liczbę punktów przerwania błędów w sekwencji wyliczenia.|
-|[Pominąć](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Pomija określoną liczbę punktów przerwania błędów w sekwencji wyliczenia.|
-|[Resetuj](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Resetuje sekwencję wyliczenia do początku.|
-|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Tworzy wyliczenia, który zawiera ten sam stan wyliczenia jako bieżącego wylicznika.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Pobiera liczbę punktów przerwania błędów w wyliczacza.|
+|[Pomiń](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Pomija określoną liczbę punktów przerwania błędów w sekwencji wyliczenia.|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Resetuje sekwencję wyliczenia na początek.|
+|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Pobiera liczbę punktów przerwania błędów w wyliczeniu.|
 
 ## <a name="remarks"></a>Uwagi
- Ten interfejs zawiera listę interfejsów [IDebugErrorBreakpoint2,](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) z których każdy opisuje punkt przerwania, który nie może być związany i dlaczego nie może być związany. Visual Studio używa `IEnumDebugErrorBreakpoint2` interfejsu, aby zaktualizować punkty przerwania wyświetlane w IDE.
+ Ten interfejs zawiera listę interfejsów [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , z których każdy opisuje punkt przerwania, którego nie można powiązać i dlaczego nie można go powiązać. Program Visual Studio używa `IEnumDebugErrorBreakpoint2` interfejsu do aktualizowania punktów przerwania widocznych w IDE.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

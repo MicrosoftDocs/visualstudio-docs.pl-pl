@@ -1,5 +1,5 @@
 ---
-title: StartTrackingContext | Dokumentacja firmy Microsoft
+title: StartTrackingContext | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da002fe757d623a665b39c16cc10e77e492e2660
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199933"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
@@ -36,14 +36,14 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```  
   
 #### <a name="parameters"></a>Parametry  
- [in] `intermediateDirectory`  
- Katalog, w którym mają zostać zapisane w dzienniku śledzenia.  
+ podczas `intermediateDirectory`  
+ Katalog, w którym ma być przechowywany dziennik śledzenia.  
   
- [in] `taskName`  
+ podczas `taskName`  
  Identyfikuje kontekst śledzenia. Ta nazwa jest używana do tworzenia nazwy pliku dziennika.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) with ([sukces]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ustawiony bit, jeśli kontekst śledzenia został utworzony.  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) z [powodzenie] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) Ustaw bit w przypadku utworzenia kontekstu śledzenia.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** FileTracker.h
+ **Nagłówek:** FileTracker. h

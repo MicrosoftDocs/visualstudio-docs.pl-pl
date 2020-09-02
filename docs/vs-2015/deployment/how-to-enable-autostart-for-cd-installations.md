@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Włączenie funkcji AutoStart dla instalacji z dysku CD | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Włączanie autostartu dla instalacji z dysku CD | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,35 +18,35 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153787"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>Instrukcje: Włączanie funkcji AutoStart dla instalacji z dysku CD
+# <a name="how-to-enable-autostart-for-cd-installations"></a>Porady: włączenie funkcji AutoStart dla instalacji z dysku CD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W przypadku wdrażania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji za pomocą nośników wymiennych, takich jak dysk CD-ROM lub DVD-ROM, aby umożliwić `AutoStart` tak, aby [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacja jest uruchamiana automatycznie, gdy nośnik zostanie wstawiona.  
+W przypadku wdrażania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji za pomocą nośników wymiennych, takich jak CD-ROM lub DVD-ROM, można włączyć `AutoStart` [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Automatyczne uruchamianie aplikacji po włożeniu nośnika.  
   
- `AutoStart` można włączyć dla **Publikuj** strony **projektanta projektu**.  
+ `AutoStart` można ją włączyć na stronie **Publikuj** **projektanta projektu**.  
   
-### <a name="to-enable-autostart"></a>Aby włączyć automatyczne uruchamianie  
+### <a name="to-enable-autostart"></a>Aby włączyć Autostart  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij kartę **Publikowanie** .  
   
-3. Kliknij przycisk **opcje** przycisku.  
+3. Kliknij przycisk **Opcje** .  
   
-     **Opcji publikowania** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Opcje publikowania** .  
   
-4. Kliknij przycisk **wdrożenia**.  
+4. Kliknij pozycję **wdrażanie**.  
   
-5. Wybierz **dla instalacji z dysku CD, automatycznie Rozpocznij instalację po włożeniu dysku CD** pole wyboru.  
+5. Wybierz **instalacje dla dysków CD, automatycznie Rozpocznij instalację po wstawieniu dysku CD** .  
   
-     Plik Autorun.inf zostaną skopiowane do lokalizacji publikowania, gdy aplikacja została opublikowana.  
+     Plik autorun. inf zostanie skopiowany do lokalizacji publikowania po opublikowaniu aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

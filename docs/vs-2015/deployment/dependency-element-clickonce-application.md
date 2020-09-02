@@ -1,5 +1,5 @@
 ---
-title: '&lt;zależność&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;Dependency — &gt; element (Aplikacja ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -28,16 +28,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199884"
 ---
-# <a name="ltdependencygt-element-clickonce-application"></a>&lt;zależność&gt; — Element (aplikacja ClickOnce)
+# <a name="ltdependencygt-element-clickonce-application"></a>&lt;Dependency — &gt; element (Aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.  
+Identyfikuje platformę lub zależność zestawu, która jest wymagana dla aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -89,91 +89,91 @@ Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.
 </dependency>  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `dependency` Element jest wymagany. Może istnieć wiele wystąpień `dependency` w tym samym manifestu aplikacji.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `dependency`Element jest wymagany. Może istnieć wiele wystąpień tego `dependency` samego manifestu aplikacji.  
   
- `dependency` Element nie ma żadnych atrybutów i zawiera następujące elementy podrzędne.  
+ `dependency`Element nie ma żadnych atrybutów i zawiera następujące elementy podrzędne.  
   
 ### <a name="dependentos"></a>dependentOS  
- Opcjonalny. Zawiera `osVersionInfo` elementu. `dependentOS` i `dependentAssembly` elementy wykluczają się wzajemnie: jednej z nich, musi istnieć przez `dependency` elementu, ale nie oba.  
+ Opcjonalny. Zawiera `osVersionInfo` element. `dependentOS`Elementy i `dependentAssembly` wzajemnie się wykluczają: jeden lub drugi musi istnieć dla `dependency` elementu, ale nie oba.  
   
  `dependentOS` obsługuje następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`supportUrl`|Opcjonalny. Określa adres URL pomocy technicznej dla platformy zależnych. Ten adres URL jest wyświetlany użytkownikowi, jeśli znajduje się wymagane platformy.|  
-|`description`|Opcjonalny. W tym artykule opisano, w postaci czytelnej dla człowieka, systemu operacyjnego opisana przez `dependentOS` elementu.|  
+|`supportUrl`|Opcjonalny. Określa adres URL pomocy technicznej dla platformy zależnej. Ten adres URL jest pokazywany użytkownikowi, gdy zostanie znaleziona wymagana platforma.|  
+|`description`|Opcjonalny. Opisuje w formularzu czytelnym dla człowieka system operacyjny opisany przez `dependentOS` element.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Wymagane. Ten element jest elementem podrzędnym `dependentOS` elementu i zawiera `os` elementu. Ten element nie ma żadnych atrybutów.  
+ Wymagany. Ten element jest elementem podrzędnym `dependentOS` elementu i zawiera `os` element. Ten element nie ma atrybutów.  
   
-### <a name="os"></a>system operacyjny  
- Wymagane. Ten element jest elementem podrzędnym `osVersionInfo` elementu. Ten element ma następujące atrybuty.  
+### <a name="os"></a>os  
+ Wymagany. Ten element jest elementem podrzędnym `osVersionInfo` elementu. Ten element ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`majorVersion`|Wymagane. Określa główny numer wersji systemu operacyjnego.|  
-|`minorVersion`|Wymagane. Określa pomocniczy numer wersji systemu operacyjnego.|  
-|`buildNumber`|Wymagana. Określa numer kompilacji systemu operacyjnego.|  
-|`servicePackMajor`|Wymagany. Określa usługę pakiet główny numer systemu operacyjnego.|  
-|`servicePackMinor`|Opcjonalny. Określa numer pomocnicza usługa pakietu systemu operacyjnego.|  
-|`productType`|Opcjonalna. Umożliwia określenie wartości typu produktu. Prawidłowe wartości to `server`, `workstation`, i `domainController`. Na przykład Windows 2000 Professional, ta wartość atrybutu jest `workstation`.|  
-|`suiteType`|Opcjonalna. Identyfikuje pakiet produktów systemu lub typ konfiguracji systemu. Prawidłowe wartości to `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, i `terminal`. Na przykład Windows 2000 Professional, ta wartość atrybutu jest `professional`.|  
+|`majorVersion`|Wymagany. Określa numer wersji głównej systemu operacyjnego.|  
+|`minorVersion`|Wymagany. Określa numer wersji pomocniczej systemu operacyjnego.|  
+|`buildNumber`|Wymagany. Określa numer kompilacji systemu operacyjnego.|  
+|`servicePackMajor`|Wymagany. Określa numer wersji głównej dodatku Service Pack dla systemu operacyjnego.|  
+|`servicePackMinor`|Opcjonalny. Określa numer pomocniczy dodatku Service Pack dla systemu operacyjnego.|  
+|`productType`|Opcjonalny. Identyfikuje wartość typu produktu. Prawidłowe wartości to `server` , `workstation` , i `domainController` . Na przykład w przypadku systemu Windows 2000 Professional wartość tego atrybutu to `workstation` .|  
+|`suiteType`|Opcjonalny. Identyfikuje pakiet produktów dostępny w systemie lub typ konfiguracji systemu. Prawidłowe wartości to `backoffice` , `blade` ,,,,, `datacenter` `enterprise` ,, `home` `professional` `smallbusiness` `smallbusinessRestricted` i `terminal` . Na przykład w przypadku systemu Windows 2000 Professional wartość tego atrybutu to `professional` .|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
- Opcjonalna. Zawiera `assemblyIdentity` elementu. `dependentOS` i `dependentAssembly` elementy wykluczają się wzajemnie: jednej z nich, musi istnieć przez `dependency` elementu, ale nie oba.  
+ Opcjonalny. Zawiera `assemblyIdentity` element. `dependentOS`Elementy i `dependentAssembly` wzajemnie się wykluczają: jeden lub drugi musi istnieć dla `dependency` elementu, ale nie oba.  
   
  `dependentAssembly` ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`dependencyType`|Wymagane. Określa typ zależności. Prawidłowe wartości to `preprequisite` i `install`. `install` Zestawów jest instalowany jako część [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. A `prerequisite` zestawu musi znajdować się w globalnej pamięci podręcznej zestawów (GAC) przed [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] można zainstalować aplikacji.|  
-|`allowDelayedBinding`|Wymagana. Określa, czy zestaw można załadować programowo w czasie wykonywania.|  
-|`group`|Opcjonalny. Jeśli `dependencyType` ma ustawioną wartość atrybutu `install`, Określa nazwaną grupę zestawów tę instalację tylko na żądanie. Aby uzyskać więcej informacji, zobacz [instruktażu: Pobieranie zestawów na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Jeśli ustawiono `framework` i `dependencyType` ma ustawioną wartość atrybutu `prerequisite`, określa zestaw jako część programu .NET Framework. Dla tego zestawu nie zaznaczono assemby globalnej pamięci podręcznej (GAC), podczas instalowania na [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] i nowszych wersjach.|  
-|`codeBase`|Wymagany, gdy `dependencyType` ma ustawioną wartość atrybutu `install`. Ścieżka do zestawu zależnego. Może być ścieżką bezwzględną lub ścieżką względną wobec manifestu kod podstawowy. Ta ścieżka musi być prawidłowym identyfikatorem URI w kolejności do manifestu zestawu był prawidłowy.|  
-|`size`|Wymagany, gdy `dependencyType` ma ustawioną wartość atrybutu `install`. Rozmiar zależnego zestawu, w bajtach.|  
+|`dependencyType`|Wymagany. Określa typ zależności. Prawidłowe wartości to `preprequisite` i `install` . `install`Zestaw jest instalowany jako część [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. `prerequisite`Aby [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] można było zainstalować aplikację, zestaw musi znajdować się w globalnej pamięci podręcznej zestawów (GAC).|  
+|`allowDelayedBinding`|Wymagany. Określa, czy zestaw może być ładowany programowo w czasie wykonywania.|  
+|`group`|Opcjonalny. Jeśli `dependencyType` atrybut jest ustawiony na `install` , wyznacza nazwaną grupę zestawów, które są instalowane tylko na żądanie. Aby uzyskać więcej informacji, zobacz [Przewodnik: pobieranie zestawów na żądanie za pomocą interfejsu API wdrażania ClickOnce przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Jeśli jest ustawiona na `framework` `dependencyType` , a atrybut jest ustawiony na `prerequisite` , wyznacza zestaw jako część .NET Framework. Globalna pamięć podręczna Assemby (GAC) nie jest sprawdzana dla tego zestawu podczas instalacji w systemie [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] i nowszych wersjach.|  
+|`codeBase`|Wymagane, gdy `dependencyType` atrybut jest ustawiony na `install` . Ścieżka do zestawu zależnego. Może być ścieżką bezwzględną lub ścieżką względem bazy kodu manifestu. Ta ścieżka musi być prawidłowym identyfikatorem URI, aby manifest zestawu był prawidłowy.|  
+|`size`|Wymagane, gdy `dependencyType` atrybut jest ustawiony na `install` . Rozmiar zestawu zależnego, w bajtach.|  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- Wymagane. Ten element jest elementem podrzędnym `dependentAssembly` elementu i ma następujące atrybuty.  
+ Wymagany. Ten element jest elementem podrzędnym `dependentAssembly` elementu i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`name`|Wymagana. Określa nazwę aplikacji.|  
+|`name`|Wymagany. Identyfikuje nazwę aplikacji.|  
 |`version`|Wymagany. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|  
-|`publicKeyToken`|Opcjonalny. Określa ciąg szesnastkowy 16-znakowy, który reprezentuje ostatnie 8 bajtów `SHA-1` wyznaczania wartości skrótu wartość klucza publicznego, w ramach której aplikacja lub zestaw jest podpisany. Klucz publiczny używany do podpisywania katalogu musi być 2048 bitów lub więcej.|  
-|`processorArchitecture`|Opcjonalny. Określa procesor. Prawidłowe wartości to `x86` dla Windows 32-bitowe i `I64` dla Windows 64-bitowych.|  
-|`language`|Opcjonalny. Identyfikuje części dwóch kodów języków, takim jak pl-pl. zestawu.|  
+|`publicKeyToken`|Opcjonalny. Określa 16-znakowy ciąg szesnastkowy, który reprezentuje ostatnie 8 bajtów `SHA-1` wartości skrótu klucza publicznego, w którym aplikacja lub zestaw są podpisane. Klucz publiczny używany do podpisywania wykazu musi mieć 2048 bitów lub więcej.|  
+|`processorArchitecture`|Opcjonalny. Określa procesor. Prawidłowe wartości to `x86` 32-bitowy system Windows i `I64` dla systemu Windows 64-bit.|  
+|`language`|Opcjonalny. Identyfikuje dwa kody języka części, takie jak EN-US, zestawu.|  
   
 ### <a name="hash"></a>hash  
- `hash` Element jest opcjonalny element podrzędny elementu `assemblyIdentity` elementu. `hash` Element nie ma żadnych atrybutów.  
+ `hash`Element jest opcjonalnym elementem podrzędnym `assemblyIdentity` elementu. `hash`Element nie ma żadnych atrybutów.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] używa konsolidatorze skrótów wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żaden z plików zostały zmienione po wdrożeniu. Jeśli `hash` element nie jest uwzględniony, ten test nie zostanie wykonane. W związku z pominięciem `hash` element nie jest zalecane.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] używa skrótu algorytmu dla wszystkich plików w aplikacji jako sprawdzenie zabezpieczeń, aby upewnić się, że żaden z plików nie został zmieniony po wdrożeniu. Jeśli `hash` element nie jest uwzględniony, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` elementu nie jest zalecane.  
   
-### <a name="dsigtransforms"></a>DSIG:TRANSFORMS  
- `dsig:Transforms` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:Transforms` Element nie ma żadnych atrybutów.  
+### <a name="dsigtransforms"></a>dsig: przekształcenia  
+ `dsig:Transforms`Element jest wymaganym elementem podrzędnym `hash` elementu. `dsig:Transforms`Element nie ma żadnych atrybutów.  
   
-### <a name="dsigtransform"></a>DSIG:Transform  
- `dsig:Transform` Element jest wymagany element podrzędny elementu `dsig:Transforms` elementu. `dsig:Transform` Element ma następujące atrybuty.  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
-  
-### <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
- `dsig:DigestMethod` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestMethod` Element ma następujące atrybuty.  
+### <a name="dsigtransform"></a>dsig: Przekształć  
+ `dsig:Transform`Element jest wymaganym elementem podrzędnym `dsig:Transforms` elementu. `dsig:Transform`Element ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+|`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie jedyną wartością używaną przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] is jest `urn:schemas-microsoft-com:HashTransforms.Identity` .|  
   
-### <a name="dsigdigestvalue"></a>DSIG:DigestValue  
- `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.  
+### <a name="dsigdigestmethod"></a>dsig: DigestMethod  
+ `dsig:DigestMethod`Element jest wymaganym elementem podrzędnym `hash` elementu. `dsig:DigestMethod`Element ma następujące atrybuty.  
+  
+|Atrybut|Opis|  
+|---------------|-----------------|  
+|`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie jedyną wartością używaną przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] is jest `http://www.w3.org/2000/09/xmldsig#sha1` .|  
+  
+### <a name="dsigdigestvalue"></a>dsig: DigestValue  
+ `dsig:DigestValue`Element jest wymaganym elementem podrzędnym `hash` elementu. `dsig:DigestValue`Element nie ma żadnych atrybutów. Wartość tekstowa jest obliczanym skrótem dla określonego pliku.  
   
 ## <a name="remarks"></a>Uwagi  
- Wszystkie zestawy używanych przez aplikację muszą mieć odpowiedni `dependency` elementu. Zależnych zestawów zawiera zestawy, które musi być wstępnie zainstalowane w globalnej pamięci podręcznej jako zestawy dla platform.  
+ Wszystkie zestawy używane przez aplikację muszą mieć odpowiadający `dependency` element. Zestawy zależne nie obejmują zestawów, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów jako zestawy platform.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie kodu pokazano `dependency` elementów w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md) tematu.  
+ Poniższy przykład kodu ilustruje `dependency` elementy w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeście aplikacji. Ten przykład kodu jest częścią większego przykładu dostarczonego w temacie [manifestu aplikacji ClickOnce](../deployment/clickonce-application-manifest.md) .  
   
 ```  
 <dependency>  
@@ -221,4 +221,4 @@ Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<dependency>, element](../deployment/dependency-element-clickonce-deployment.md)
+ [\<dependency> Postaci](../deployment/dependency-element-clickonce-deployment.md)

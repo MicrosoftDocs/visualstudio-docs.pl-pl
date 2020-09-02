@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595491"
 ---
 # <a name="list-threads-command"></a>Lista wątków — Polecenie
@@ -33,10 +33,10 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>Argumenty
 `index`
 
-Element opcjonalny. Wybiera wątek według jego indeksu, aby był bieżącym wątkiem.
+Opcjonalny. Wybiera wątek według indeksu, który będzie bieżącym wątkiem.
 
 ## <a name="remarks"></a>Uwagi
-Po określeniu `index` argument oznacza wskazany wątek jako bieżący wątek. Gwiazdka (*) jest wyświetlana na liście obok bieżącego wątku.
+Gdy jest określony, `index` argument oznacza wskazany wątek jako bieżący wątek. Gwiazdka (*) jest wyświetlana na liście obok bieżącego wątku.
 
 ## <a name="example"></a>Przykład
 
@@ -46,9 +46,9 @@ Po określeniu `index` argument oznacza wskazany wątek jako bieżący wątek. G
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Lista stosu wywołań — Polecenie](../../ide/reference/list-call-stack-command.md)
-- [Lista dezasemblacji — Polecenie](../../ide/reference/list-disassembly-command.md)
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Listing stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)
+- [List demontażu — polecenie](../../ide/reference/list-disassembly-command.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
-- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Znajdź/pole polecenia](../../ide/find-command-box.md)
 - [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

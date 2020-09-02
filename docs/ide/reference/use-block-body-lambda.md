@@ -10,34 +10,34 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65531916"
 ---
-# <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Używanie treści wyrażenia lub treści bloku dla wyrażeń lambda
+# <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Użyj treści wyrażenia lub treści bloku dla wyrażeń lambda
 
-Ten refaktoryzator ma zastosowanie do:
+To Refaktoryzacja dotyczy:
 
 - C#
 
-**Co:** Umożliwia refaktoryzator wyrażenie lambda, aby użyć treści wyrażenia lub obiektu bloku.
+**Co:** Umożliwia refaktoryzację wyrażenia lambda, aby użyć treści wyrażenia lub treści bloku.
 
-**Kiedy:** Wolisz wyrażenia lambda, aby używać treści wyrażenia lub obiektu bloku.
+**Kiedy:** Preferuj wyrażenia lambda, aby użyć treści wyrażenia lub treści bloku.
 
-**Dlaczego?** Wyrażenia Lambda mogą być refaktoryzowane w celu poprawy czytelności zgodnie z preferencjami użytkownika.
+**Dlaczego:** Wyrażenia lambda można refaktoryzację, aby zwiększyć czytelność zgodnie z preferencjami użytkownika.
 
-## <a name="lambda-expression-body-or-block-body-refactoring"></a>Refaktoryzowanie treści wyrażenia Lambda lub refaktoryzacji korpusu bloku
+## <a name="lambda-expression-body-or-block-body-refactoring"></a>Treść wyrażenia lambda lub Refaktoryzacja treści bloku
 
 1. Umieść kursor po prawej stronie operatora lambda.
-2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+2. Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
 
-  ![Użyj wyrażenia lambda/korpusu bloku](media/block-body-lambda.png)
+  ![Użyj wyrażenia lambda/treści bloku](media/block-body-lambda.png)
 
-3. Wybierz **opcję Użyj treści bloku dla wyrażeń lambda** lub Użyj treści wyrażenia dla **wyrażeń lambda**.
+3. Wybierz opcję **Użyj treści bloku dla wyrażeń lambda** lub **Użyj treści wyrażenia dla wyrażeń lambda**.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
-- [Wskazówki dla deweloperów platformy .NET](../csharp-developer-productivity.md)
+- [Porady dla deweloperów platformy .NET](../csharp-developer-productivity.md)

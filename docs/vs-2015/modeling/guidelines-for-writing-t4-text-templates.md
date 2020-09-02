@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d1e15a8c00a0614d020defd2df7b06665289a8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666048"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Te ogólne wskazówki mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nie są to reguły ustalone.
+Te ogólne wskazówki mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Nie są to reguły ustalone.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Wskazówki dotyczące szablonów T4 czasu projektowania
- Szablony T4 w czasie projektowania to szablony, które generują kod w projekcie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w czasie projektowania. Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ Szablony T4 w czasie projektowania to szablony generujące kod w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekcie w czasie projektowania. Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Generuj zmienne aspekty aplikacji.
 Generowanie kodu jest najbardziej przydatne w przypadku tych aspektów aplikacji, które mogą ulec zmianie w projekcie, lub zmienią się między różnymi wersjami aplikacji. Należy oddzielić te zmienne aspekty od bardziej niezmiennych aspektów, dzięki czemu można łatwiej określić, co ma zostać wygenerowane. Na przykład jeśli aplikacja udostępnia witrynę sieci Web, należy oddzielić stronę standardową, która obsługuje funkcje z logiki, która definiuje ścieżki nawigacji z jednej strony do drugiej.
 
  Koduj zmienne aspekty w jednym lub większej liczbie modeli źródłowych.
-Model jest plikiem lub bazą danych, którą każdy szablon odczytuje w celu uzyskania określonych wartości dla zmiennych części kodu, który ma zostać wygenerowany. Modele mogą być bazami danych, plikami XML własnych projektów, diagramów lub języków specyficznych dla domeny. Zazwyczaj jeden model jest używany do generowania wielu plików w projekcie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Każdy plik jest generowany na podstawie oddzielnego szablonu.
+Model jest plikiem lub bazą danych, którą każdy szablon odczytuje w celu uzyskania określonych wartości dla zmiennych części kodu, który ma zostać wygenerowany. Modele mogą być bazami danych, plikami XML własnych projektów, diagramów lub języków specyficznych dla domeny. Zazwyczaj jeden model jest używany do generowania wielu plików w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekcie. Każdy plik jest generowany na podstawie oddzielnego szablonu.
 
  Można użyć więcej niż jednego modelu w projekcie. Można na przykład zdefiniować model nawigacji między stronami sieci Web a oddzielnym modelem układu stron.
 
@@ -43,22 +43,22 @@ Użyj ręcznych lub zautomatyzowanych testów, aby sprawdzić, czy otrzymany kod
  W niektórych przypadkach ogólne testy mogą być wykonywane bezpośrednio na modelu. Można na przykład napisać test, który zapewnia, że każda Strona w witrynie sieci Web może zostać osiągnięta przez nawigację z innych.
 
  Zezwalaj na kod niestandardowy: Generuj klasy częściowe.
-Zezwalaj na kod, który można napisać ręcznie, oprócz wygenerowanego kodu. Schemat generowania kodu jest nietypowy, aby można było uwzględnić wszystkie możliwe zmiany, które mogą wystąpić. W związku z tym należy oczekiwać, aby dodać lub zastąpić część wygenerowanego kodu. W przypadku, gdy wygenerowany materiał znajduje się w języku .NET, takim jak [!INCLUDE[csprcs](../includes/csprcs-md.md)] lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], są szczególnie przydatne dwie strategie:
+Zezwalaj na kod, który można napisać ręcznie, oprócz wygenerowanego kodu. Schemat generowania kodu jest nietypowy, aby można było uwzględnić wszystkie możliwe zmiany, które mogą wystąpić. W związku z tym należy oczekiwać, aby dodać lub zastąpić część wygenerowanego kodu. W przypadku, gdy wygenerowany materiał jest w języku .NET, takim jak [!INCLUDE[csprcs](../includes/csprcs-md.md)] lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , są szczególnie przydatne dwie strategie:
 
 - Wygenerowane klasy powinny być częściowe. Pozwala to na dodawanie zawartości do wygenerowanego kodu.
 
 - Klasy powinny być generowane w parach, po jednym dziedziczeniu. Klasa bazowa powinna zawierać wszystkie wygenerowane metody i właściwości, a Klasa pochodna powinna zawierać tylko konstruktory. Pozwala to na ręczne pisanie kodu w celu przesłonięcia dowolnej z wygenerowanych metod.
 
-  W innych wygenerowanych językach, takich jak XML, użyj dyrektywy `<#@include#>`, aby tworzyć proste kombinacje zawartości z ręcznym i wygenerowanym. W bardziej złożonych przypadkach może być konieczne napisanie kroku przetwarzania końcowego, który łączy wygenerowany plik z dowolnymi plikami ręcznymi.
+  W innych wygenerowanych językach, takich jak XML, użyj `<#@include#>` dyrektywy, aby utworzyć proste kombinacje zawartości z ręcznym i wygenerowanym. W bardziej złożonych przypadkach może być konieczne napisanie kroku przetwarzania końcowego, który łączy wygenerowany plik z dowolnymi plikami ręcznymi.
 
-  Przenieś wspólny materiał do dołączania plików lub szablonów czasu wykonywania, aby uniknąć powtarzania podobnych bloków tekstu i kodu w wielu szablonach, użyj dyrektywy `<#@ include #>`. Aby uzyskać więcej informacji, zobacz [T4 include dyrektywy](../modeling/t4-include-directive.md).
+  Przenieś wspólny materiał do dołączania plików lub szablonów czasu wykonywania, aby uniknąć powtarzania podobnych bloków tekstu i kodu w wielu szablonach, użyj `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [T4 include dyrektywy](../modeling/t4-include-directive.md).
 
-  Możesz również utworzyć szablony tekstu w czasie wykonywania w osobnym projekcie, a następnie wywołać je z szablonu czasu projektowania. Aby to zrobić, użyj dyrektywy `<#@ assembly #>` w celu uzyskania dostępu do oddzielnego projektu.
+  Możesz również utworzyć szablony tekstu w czasie wykonywania w osobnym projekcie, a następnie wywołać je z szablonu czasu projektowania. Aby to zrobić, użyj `<#@ assembly #>` dyrektywy w celu uzyskania dostępu do oddzielnego projektu.
 
   Rozważ przeniesienie dużych bloków kodu do oddzielnego zestawu.
-  Jeśli masz duże bloki kodu i bloki funkcji klasy, warto przenieść część tego kodu do metod kompilowanych w osobnym projekcie. Aby uzyskać dostęp do kodu w szablonie, można użyć dyrektywy `<#@ assembly #>`. Aby uzyskać więcej informacji, zobacz [Dyrektywa zestawu T4](../modeling/t4-assembly-directive.md).
+  Jeśli masz duże bloki kodu i bloki funkcji klasy, warto przenieść część tego kodu do metod kompilowanych w osobnym projekcie. Możesz użyć dyrektywy, `<#@ assembly #>` Aby uzyskać dostęp do kodu w szablonie. Aby uzyskać więcej informacji, zobacz [Dyrektywa zestawu T4](../modeling/t4-assembly-directive.md).
 
-  Metody można umieścić w klasie abstrakcyjnej, którą szablon może dziedziczyć. Klasa abstrakcyjna musi dziedziczyć po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Aby uzyskać więcej informacji, zobacz [dyrektywa dotycząca szablonu T4](../modeling/t4-template-directive.md).
+  Metody można umieścić w klasie abstrakcyjnej, którą szablon może dziedziczyć. Klasa abstrakcyjna musi dziedziczyć po elemencie <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Aby uzyskać więcej informacji, zobacz [dyrektywa dotycząca szablonu T4](../modeling/t4-template-directive.md).
 
   Generuj kod, a nie pliki konfiguracji jedna metoda pisania aplikacji zmiennej polega na zapisaniu kodu programu generycznego, który akceptuje plik konfiguracji. Aplikacja zapisywana w ten sposób jest bardzo elastyczna i można ją ponownie skonfigurować w przypadku zmiany wymagań firmy, bez konieczności ponownego kompilowania aplikacji. Jednak Wadą tego podejścia jest to, że aplikacja będzie działać mniej dobrze niż bardziej konkretna aplikacja. Ponadto kod programu będzie trudniejszy do odczytania i utrzymania, częściej, ponieważ zawsze zajmuje się najbardziej ogólnymi typami.
 
@@ -100,7 +100,7 @@ Każdy szablon czasu wykonywania generuje definicję klasy częściowej, która 
 
  `private string ComputeTotal() { ... }`
 
- Zezwalaj na kod niestandardowy: Podaj punkty rozszerzenia Rozważ wygenerowanie metod wirtualnych w \< # + bloki funkcji klasy # >. Pozwala to na użycie jednego szablonu w wielu kontekstach bez modyfikacji. Zamiast modyfikować szablon, można utworzyć klasę pochodną, która dostarcza minimalną dodatkową logikę. Klasa pochodna może być zwykłym kodem lub szablonem czasu wykonywania.
+ Zezwalaj na kod niestandardowy: Podaj punkty rozszerzenia Rozważ wygenerowanie metod wirtualnych w \<#+ class feature blocks #> . Pozwala to na użycie jednego szablonu w wielu kontekstach bez modyfikacji. Zamiast modyfikować szablon, można utworzyć klasę pochodną, która dostarcza minimalną dodatkową logikę. Klasa pochodna może być zwykłym kodem lub szablonem czasu wykonywania.
 
  Na przykład w MyStandardRunTimeTemplate.tt:
 
@@ -122,9 +122,9 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Wskazówki dotyczące wszystkich szablonów T4
- Oddzielne gromadzenie danych z generacji tekstu próbuje uniknąć mieszania bloków obliczeń i tekstu. W każdym szablonie tekstu użyj pierwszej \< # # Code # >, aby ustawić zmienne i wykonywać złożone obliczenia. Od pierwszego bloku tekstu do końca szablonu lub pierwszej \< # + blok funkcji klasy # >, unikania długich wyrażeń i unikania pętli i warunkowych, chyba że zawierają bloki tekstu. To rozwiązanie ułatwia odczytywanie i konserwowanie szablonu.
+ Oddzielne gromadzenie danych z generacji tekstu próbuje uniknąć mieszania bloków obliczeń i tekstu. W każdym szablonie tekstu użyj pierwszej, \<# code block #> Aby ustawić zmienne i wykonywać złożone obliczenia. Od pierwszego bloku tekstu do końca szablonu lub pierwszego \<#+ class feature block #> , unikaj długich wyrażeń i unikaj pętli i warunkowych, chyba że zawierają bloki tekstu. To rozwiązanie ułatwia odczytywanie i konserwowanie szablonu.
 
- Nie używaj `.tt` w przypadku plików dołączanych Użyj innego rozszerzenia nazwy pliku, takiego jak `.ttinclude` plików dołączanych. Używaj `.tt` tylko dla plików, które mają być przetwarzane jako szablony tekstu w czasie wykonywania lub w czasie projektowania. W niektórych przypadkach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoznaje pliki `.tt` i automatycznie ustawia ich właściwości do przetwarzania.
+ Nie używaj `.tt` dla plików dołączanych Użyj innego rozszerzenia nazwy pliku, takiego jak `.ttinclude` w przypadku plików dołączanych. Służy `.tt` tylko do plików, które mają być przetwarzane jako szablony tekstu w czasie wykonywania lub w czasie projektowania. W niektórych przypadkach program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoznaje `.tt` pliki i automatycznie ustawia ich właściwości do przetwarzania.
 
  Uruchom każdy szablon jako stały prototyp.
 Napisz przykład kodu lub tekstu, który ma zostać wygenerowany, i upewnij się, że jest on poprawny. Następnie zmień jego rozszerzenie na. tt i przyrostowo Wstaw kod, który modyfikuje zawartość, odczytując model.

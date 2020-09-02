@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2 | Dokumenty firmy Microsoft
+title: IDebugEngine2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e00751db052adeefee828829ec89309a3adba4b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730863"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
-Ten interfejs reprezentuje aparat debugowania (DE). Służy do zarządzania różnymi aspektami sesji debugowania, od tworzenia punktów przerwania do ustawiania i wyczyszczenie wyjątków.
+Ten interfejs reprezentuje aparat debugowania (DE). Służy do zarządzania różnymi aspektami sesji debugowania, od tworzenia punktów przerwania do ustawiania i czyszczenia wyjątków.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,34 +29,34 @@ IDebugEngine2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Ten interfejs jest implementowany przez de niestandardowe do zarządzania debugowania programów. Ten interfejs musi być zaimplementowany przez DE.
+ Ten interfejs jest implementowany przez niestandardową DEZINSTALACJę debugowania programów. Ten interfejs musi być zaimplementowany przez DE.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Ten interfejs jest wywoływany przez menedżera debugowania sesji (SDM) do zarządzania sesją debugowania, w tym zarządzania wyjątkami, tworzenia punktów przerwania i odpowiadania na zdarzenia synchroniczne wysyłane przez DE.
+ Ten interfejs jest wywoływany przez Menedżera debugowania sesji (SDM) do zarządzania sesją debugowania, w tym do zarządzania wyjątkami, tworzenia punktów przerwania i reagowania na zdarzenia synchroniczne wysyłane przez DE.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- W poniższej tabeli `IDebugEngine2`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ W poniższej tabeli przedstawiono metody `IDebugEngine2` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Tworzy wyliczyć dla wszystkich programów są debugowane przez DE.|
-|[Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Dołącza DE do programu.|
-|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Tworzy oczekujący punkt przerwania w DE.|
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Tworzy moduł wyliczający dla wszystkich programów, które są debugowane przez DE.|
+|[Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Dołącza do programu.|
+|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Tworzy oczekujący punkt przerwania w elemencie DE.|
 |[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Określa, jak DE powinien obsługiwać dany wyjątek.|
-|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Usuwa określony wyjątek, dzięki czemu nie jest już obsługiwany przez aparat debugowania.|
-|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Usuwa listę wyjątków, które IDE ustawił dla określonej architektury lub języka w czasie wykonywania.|
+|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Usuwa określony wyjątek, dlatego nie jest już obsługiwany przez aparat debugowania.|
+|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Usuwa listę wyjątków ustawionych przez środowisko IDE dla określonej architektury lub języka w czasie wykonywania.|
 |[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Pobiera identyfikator GUID DE.|
-|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informuje DE, że określony program został nietypowo zakończony i że DE powinien oczyścić wszystkie odwołania do programu i wysłać zdarzenie zniszczenia programu.|
-|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Wywoływane przez SDM, aby wskazać, że synchroniczne zdarzenie debugowania, wcześniej wysłane przez DE do SDM, został odebrany i przetworzony.|
-|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Ustawia ustawienia regionalne DE.|
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Ustawia katalog główny rejestru aktualnie używany przez DE.|
+|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informuje o tym, że określony program został nietypowym zakończony i że DE powinien czyścić wszystkie odwołania do programu i wysyłać zdarzenie zniszczenia programu.|
+|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Wywoływane przez model SDM, aby wskazać, że zdarzenie debugowania synchronicznego, wcześniej wysłane przez DE do modelu SDM, zostało odebrane i przetworzone.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Ustawia ustawienia regionalne dla DE.|
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Ustawia katalog główny rejestru, który jest aktualnie używany przez DE.|
 |[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Ustawia metrykę.|
-|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Żądania, że wszystkie programy są debugowane przez to wykonanie de zatrzymać następnym razem jeden z ich wątków próbuje uruchomić.|
+|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Żądania, które wszystkie programy są debugowane przez to COFNIĘCIe wykonania przy następnym uruchomieniu jednego z ich wątków.|
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

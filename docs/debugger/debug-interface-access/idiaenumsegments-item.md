@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e03c01efb9f2dca13009a7dc7eeb8282b5c9082c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468045"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
@@ -32,7 +32,7 @@ HRESULT Item ( 
 ```
 
 #### <a name="parameters"></a>Parametry
- indeks
+ index
 
 podczas Indeks obiektu [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) do pobrania. Indeks znajduje się w zakresie od 0 do `count` -1, gdzie `count` jest zwracany przez metodę [IDiaEnumSegments:: get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) .
 

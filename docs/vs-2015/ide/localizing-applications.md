@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7fa9aa7a4a19ebd5ae45ee84364e71043a28f6be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651462"
 ---
 # <a name="localizing-applications"></a>Lokalizowanie aplikacji
@@ -32,12 +32,12 @@ ms.locfileid: "72651462"
 
  [Zabezpieczenia i zlokalizowane zestawy satelickie](../ide/security-and-localized-satellite-assemblies.md) W tym artykule omówiono podpisywanie zestawów satelickich za pomocą par kluczy publiczny-prywatny.
 
- [Numery wersji dla głównych i zlokalizowanych zestawów satelickich](../ide/version-numbers-for-main-and-localized-satellite-assemblies.md) Wprowadza klasę <xref:System.Resources.SatelliteContractVersionAttribute>, która określa, które zestawy satelickie współpracują z głównym zestawem aplikacji.
+ [Numery wersji dla głównych i zlokalizowanych zestawów satelickich](../ide/version-numbers-for-main-and-localized-satellite-assemblies.md) Wprowadza <xref:System.Resources.SatelliteContractVersionAttribute> klasę, która określa, które zestawy satelickie współpracują z głównym zestawem aplikacji.
 
- [Neutralne Języki zasobów dla lokalizacji](../ide/neutral-resources-languages-for-localization.md) Wprowadza klasę <xref:System.Resources.NeutralResourcesLanguageAttribute>, która określa kulturę zasobów uwzględnionych w głównym zestawie aplikacji.
+ [Neutralne Języki zasobów dla lokalizacji](../ide/neutral-resources-languages-for-localization.md) Wprowadza <xref:System.Resources.NeutralResourcesLanguageAttribute> klasę, która określa kulturę zasobów uwzględnionych w głównym zestawie aplikacji.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Wprowadzenie do aplikacji międzynarodowych opartych na .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) W tym artykule omówiono koncepcje związane z tworzeniem oprogramowania na rynku międzynarodowym przy użyciu C#Visual Basic lub wizualizacji.
+ [Wprowadzenie do aplikacji międzynarodowych opartych na .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) W tym artykule omówiono koncepcje związane z tworzeniem oprogramowania na rynku międzynarodowym przy użyciu Visual Basic lub Visual C#.
 
  [Windows Forms globalizacji](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) Zawiera łącza do stron dotyczących tworzenia aplikacji systemu Windows, które obsługują wiele kultur.
 

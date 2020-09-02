@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188543"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Sprawdzanie danych przy użyciu okien debugera w programie Visual Studio
@@ -43,10 +43,10 @@ Większość okien debugera można otworzyć podczas debugowania programu. Aby w
 |Dynamiczne drzewo wizualne|-|[Sprawdzanie właściwości XAML podczas debugowania](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Eksplorator właściwości na żywo|-|[Sprawdzanie właściwości XAML podczas debugowania](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Procesy|CTRL + ALT + Z|[Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md)|
-|Pamięć|CTRL + ALT + M, (1, 2, 3, 4)|[Okna pamięci](../debugger/memory-windows.md)|
-|Dezasemblacji|CTRL + ALT + D|[Instrukcje: korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)|
-|Liczby|CTRL + ALT + G|[Instrukcje: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)|
+|Pamięć|CTRL + ALT + M, (1, 2, 3, 4)|[Okno pamięci](../debugger/memory-windows.md)|
+|Dezasemblacji|CTRL + ALT + D|[Porady: korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)|
+|Liczby|CTRL + ALT + G|[Porady: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

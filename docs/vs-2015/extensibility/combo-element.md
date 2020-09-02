@@ -1,5 +1,5 @@
 ---
-title: Combo, Element | Dokumentacja firmy Microsoft
+title: Element kombi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184413"
 ---
 # <a name="combo-element"></a>Combo, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa polecenia, które są wyświetlane w polu kombi. Istnieją cztery rodzaje pola kombi w następujący sposób: Typu pole kombi, DynamicCombo, IndexCombo i MRUCombo.  
+Definiuje polecenia, które pojawiają się w polu kombi. Istnieją cztery rodzaje pól kombi w następujący sposób: DropDownCombo, DynamicCombo, IndexCombo i MRUCombo.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,21 +40,21 @@ Określa polecenia, które są wyświetlane w polu kombi. Istnieją cztery rodza
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
-|identyfikator|Wymagane. Identyfikator GUID/ID identyfikator polecenia.|  
-|defaultWidth|Wymagana. Liczba całkowita, która określa szerokość pikseli dla pola kombi.|  
-|idCommandList|Wymagane. Identyfikator, którego są wysyłane do obiektu docelowego active polecenia narzędzia do pobrania listy elementów, które mają być wyświetlane w polu kombi. Identyfikator jest w tym samym zakresie identyfikatora GUID jako formant.|  
-|priority|Opcjonalny. Wartość liczbowa określająca priorytet.|  
-|— typ|Opcjonalna. Wartość wyliczana, który określa typ przycisku.<br /><br /> Jeśli nie zostanie podana, używa przycisku.<br /><br /> DropDownCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnianie zawartość dla tego pola kombi. Użytkownik nie może wpisać cokolwiek w polu tekstowym w tym listy rozwijanej.<br /><br /> DynamicCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnianie zawartość tego pola kombi. Użytkownik może edytować ten kombi i również wybrać elementy w nim.<br /><br /> IndexCombo<br /> Taka sama jak DynamicCombo, z wyjątkiem że zgłasza indeks elementu, a nie jego tekstu.<br /><br /> MRUCombo<br /> Wypełnione przez zintegrowanego środowiska programistycznego (IDE) w imieniu pakietu VSPackage.  Użytkownik może edytować w tym polu kombi. IDE zapamiętuje maksymalnie 16 ostatnich wpisów na pola kombi.<br /><br /> Gdy użytkownik wybierze element w polu kombi lub wprowadza coś nowego, IDE powiadamia odpowiednie pakietu VSPackage.|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|  
+|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|  
+|defaultWidth|Wymagany. Liczba całkowita, która określa szerokość pikseli dla pola kombi.|  
+|idCommandList|Wymagany. Identyfikator, który jest wysyłany do aktywnego elementu docelowego polecenie w celu pobrania listy elementów do wyświetlenia w polu kombi. Identyfikator będzie mieć ten sam zakres identyfikatorów GUID co formant.|  
+|priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|  
+|typ|Opcjonalny. Wartość wyliczana, która określa typ przycisku.<br /><br /> Jeśli nie zostanie określona, używa przycisku.<br /><br /> DropDownCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnienie zawartości dla tego pola kombi. Użytkownik nie może wpisać niczego w polu tekstowym tego listy rozwijanej.<br /><br /> DynamicCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnienie zawartości tego pola kombi. Użytkownik może edytować to pole kombi, a także wybrać elementy.<br /><br /> IndexCombo<br /> Taka sama jak DynamicCombo, z tą różnicą, że wywołuje indeks elementu, a nie jego tekst.<br /><br /> MRUCombo<br /> Wypełnione przez zintegrowane środowisko programistyczne (IDE) w imieniu pakietu VSPackage.  Użytkownik może edytować w tym polu kombi. Środowisko IDE zapamiętuje do ostatnich 16 wpisów na pole kombi.<br /><br /> Gdy użytkownik wybierze coś w polu kombi lub wprowadzi coś nowego, środowisko IDE powiadamia odpowiednie pakietu VSPackage.|  
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Nadrzędny|Opcjonalny. Elementu nadrzędnego przycisku.|  
-|CommandFlag|Wymagana. Zobacz [Command Flag, Element](../extensibility/command-flag-element.md). Prawidłowe wartości CommandFlag dla przycisku, to w następujący sposób.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -KlawiszeFiltru<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|Ciągi|Wymagane. Zobacz [ciągi elementu](../extensibility/strings-element.md). ButtonText, element podrzędny musi być zdefiniowany.|  
+|Nadrzędny|Opcjonalny. Element nadrzędny przycisku.|  
+|CommandFlag|Wymagany. Zobacz [element flagi polecenia](../extensibility/command-flag-element.md). Prawidłowe wartości CommandFlag dla przycisku są następujące.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility<br /><br /> -KlawiszeFiltru<br /><br /> - IconAndText<br /><br /> -Noautouzupełnianie<br /><br /> - NoButtonCustomize<br /><br /> -Nodostosowywanie<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|  
+|Ciągi|Wymagany. Zobacz [element Strings](../extensibility/strings-element.md). Element podrzędny ButtonText musi być zdefiniowany.|  
 |Adnotacja|Opcjonalny komentarz.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  

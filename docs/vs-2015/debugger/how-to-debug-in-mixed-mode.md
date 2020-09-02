@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie w trybie mieszanym | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie w trybie mieszanym | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,33 +20,33 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5e2dd4ea0000eefdbd9f74c8fa97c4c63e06fab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681132"
 ---
-# <a name="how-to-debug-in-mixed-mode"></a>Instrukcje: Debugowanie w trybie mieszanym
+# <a name="how-to-debug-in-mixed-mode"></a>Porady: debugowanie w trybie mieszanym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W poniższych procedurach opisano sposób debugowania kodu zarządzanego i natywnego, tzw. debugowanie w trybie mieszanym. Istnieją dwa scenariusze, aby to zrobić, w zależności od tego, czy biblioteka DLL lub w aplikacji są zapisywane w kodzie natywnym:  
+Poniższe procedury opisują sposób debugowania kodu zarządzanego i natywnego, znanego również jako debugowanie w trybie mieszanym. Istnieją dwa scenariusze umożliwiające wykonanie tej czynności, w zależności od tego, czy biblioteka DLL lub aplikacja jest zapisywana w kodzie natywnym:  
   
-- Aplikacja wywołująca, która wywołuje bibliotekę DLL są zapisywane w kodzie natywnym. W tym przypadku jest zarządzana biblioteka DLL i debugery zarówno zarządzanego i natywnego musi być włączona debugować oba. Można to sprawdzić  **\<Projekt > strony właściwości** okno dialogowe. Jak to zrobić, zależy od tego, czy rozpoczynasz debugowanie z projektu DLL lub wywoływania projektu aplikacji.  
+- Aplikacja wywołująca, która wywołuje bibliotekę DLL, jest zapisywana w kodzie natywnym. W takim przypadku Biblioteka DLL jest zarządzana, a zarówno debugery zarządzane, jak i natywne muszą być włączone do debugowania obu. Możesz to sprawdzić w oknie dialogowym ** \<Project> strony właściwości** . Jak to zrobić, zależy od tego, czy rozpoczynasz debugowanie z projektu DLL lub projektu aplikacji wywołującej.  
   
-- Aplikacja wywołująca, która wywołuje bibliotekę DLL są zapisywane w kodzie zarządzanym i biblioteki DLL są zapisywane w kodzie natywnym.  
+- Wywoływana aplikacja wywołująca bibliotekę DLL jest zapisywana w kodzie zarządzanym, a Biblioteka DLL jest zapisywana w kodzie natywnym.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-enable-mixed-mode-debugging"></a>Aby włączyć debugowanie w trybie mieszanym  
   
-1. W **Eksploratora rozwiązań**, wybierz projekt.  
+1. W **Eksplorator rozwiązań**wybierz projekt.  
   
-2. Na **widoku** menu, kliknij przycisk **stron właściwości**.  
+2. W menu **Widok** kliknij polecenie **strony właściwości**.  
   
-3. W  **\<Projekt > strony właściwości** okna dialogowego rozwiń **właściwości konfiguracji** węzeł, a następnie wybierz **debugowanie**.  
+3. W oknie dialogowym ** \<Project> strony właściwości** rozwiń węzeł **Właściwości konfiguracji** , a następnie wybierz pozycję **debugowanie**.  
   
-4. Ustaw **typ debugera** do **mieszane** lub **automatycznie**.  
+4. Ustaw **Typ debugera** na **mieszany** lub **Auto**Auto.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)
+ [Instrukcje: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)

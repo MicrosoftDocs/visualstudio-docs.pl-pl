@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1f2f3c26d89616f083c218c6b11610fe5e329a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651318"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
@@ -37,7 +37,7 @@ Przed napisaniem kodu w składniku zewnętrznym lub połączonej usłudze, proje
 
  Aby dodać odwołanie, kliknij prawym przyciskiem myszy węzeł odwołania w Eksplorator rozwiązań i wybierz polecenie **Dodaj odwołanie**. Aby uzyskać więcej informacji, zobacz [How to: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
- ![Dodaj odwołanie w Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")
+ ![Dodaj odwołanie w&#43;&#43;Visual C ](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")
 
  Można utworzyć odwołanie do następujących typów składników/usług:
 
@@ -54,26 +54,26 @@ Przed napisaniem kodu w składniku zewnętrznym lub połączonej usłudze, proje
 ## <a name="windows-store-app-references"></a>Odwołania do aplikacji ze sklepu Windows
 
 ### <a name="project-references"></a>Informacje o projekcie
- Projekty platforma uniwersalna systemu Windows (platformy UWP), które są przeznaczone dla systemu Windows 10, mogą tworzyć odwołania do innych projektów platformy UWP w rozwiązaniu lub do projektów Windows Store lub plików binarnych, które są przeznaczone dla [!INCLUDE[win81](../includes/win81-md.md)], pod warunkiem, że te projekty nie używają interfejsów API przestarzałych w programie System Windows 10. Aby uzyskać więcej informacji, zobacz [przenoszenie z środowisko wykonawcze systemu Windows 8 do platformy UWP](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx).
+ Projekty platforma uniwersalna systemu Windows (platformy UWP) przeznaczone dla systemu Windows 10 mogą tworzyć odwołania do innych projektów platformy UWP w rozwiązaniu lub do projektów Windows Store lub plików binarnych, które są przeznaczone dla [!INCLUDE[win81](../includes/win81-md.md)] tych projektów, pod warunkiem, że te projekty nie używają interfejsów API przestarzałych w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [przenoszenie z środowisko wykonawcze systemu Windows 8 do platformy UWP](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx).
 
- Jeśli zdecydujesz się przekierować projekty [!INCLUDE[win81](../includes/win81-md.md)] do systemu Windows 10, zobacz Przenoszenie [, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ Jeśli zdecydujesz się przekierować [!INCLUDE[win81](../includes/win81-md.md)] projekty do systemu Windows 10, zobacz Przenoszenie [, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
 ### <a name="extension-sdk-references"></a>Odwołania do zestawu SDK rozszerzeń
- Visual Basic, C# C++ i projekty języka JavaScript dla systemu Windows przeznaczone dla platforma uniwersalna systemu Windows (platformy UWP) mogą odwoływać się do zestawów SDK rozszerzeń, które są przeznaczone dla [!INCLUDE[win81](../includes/win81-md.md)], o ile te zestawy SDK rozszerzenia nie używają interfejsów API przestarzałych w systemie Windows 10. Sprawdź witrynę dostawcy zestawu SDK rozszerzenia, aby dowiedzieć się, czy można odwoływać się do niej projekty sklepu Windows przeznaczone dla platformy UWP.
+ Visual Basic, C#, C++ i JavaScript projekty Windows Store, które są przeznaczone dla platforma uniwersalna systemu Windows (platformy UWP), mogą odwoływać się do zestawów SDK rozszerzeń, które są docelowe, o ile [!INCLUDE[win81](../includes/win81-md.md)] te zestawy SDK rozszerzenia nie używają interfejsów API przestarzałych w systemie Windows 10. Sprawdź witrynę dostawcy zestawu SDK rozszerzenia, aby dowiedzieć się, czy można odwoływać się do niej projekty sklepu Windows przeznaczone dla platformy UWP.
 
  Jeśli określisz, że zestaw SDK, do którego odwołuje się aplikacja, nie jest obsługiwany, należy wykonać następujące czynności:
 
-1. Spójrz na nazwę projektu, który powoduje błąd. Platforma, do której należy projekt, jest zapisywana w nawiasach obok nazwy projektu. Na przykład, **. ProjectName (Windows 8.1)** oznacza, że projekt **ProjectName jest** ukierunkowany na wersję platformy [!INCLUDE[win81](../includes/win81-md.md)].
+1. Spójrz na nazwę projektu, który powoduje błąd. Platforma, do której należy projekt, jest zapisywana w nawiasach obok nazwy projektu. Na przykład, **. ProjectName (Windows 8.1)** oznacza, że projekt **ProjectName jest** ukierunkowany na platformę [!INCLUDE[win81](../includes/win81-md.md)] .
 
 2. Przejdź do lokacji dostawcy, który jest właścicielem nieobsługiwanego zestawu SDK rozszerzenia i Zainstaluj wersję zestawu SDK rozszerzenia z zależnościami, które są zgodne z wersją platformy, dla której projekt jest przeznaczony.
 
     > [!NOTE]
-    > Jednym ze sposobów ustalenia, czy rozszerzenie SDK ma zależności od innych zestawów SDK rozszerzeń, jest ponowne uruchomienie programu Visual Studio, utworzenie C# nowego projektu Windows Store, kliknięcie prawym przyciskiem myszy nad projektem i wybierz polecenie **Dodaj odwołanie**, przejdź do karty **Windows** , przejdź do okna Podkartę **rozszerzenia** , wybierz zestaw SDK rozszerzeń i Sprawdź okienko po prawej stronie w **Menedżerze odwołań**. Jeśli ma zależności, zostaną one wyświetlone.
+    > Jednym ze sposobów sprawdzenia, czy rozszerzenie zestawu SDK ma zależności od innych zestawów SDK rozszerzeń, jest ponowne uruchomienie programu Visual Studio, utworzenie nowego projektu C# Windows Store, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj odwołanie**, przejdź do karty **Windows** , przejdź do karty podrzędnej **rozszerzenia** , wybierz zestaw SDK rozszerzenia i sprawdź prawe okienko w **Menedżerze odwołań**. Jeśli ma zależności, zostaną one wyświetlone.
 
     > [!IMPORTANT]
-    > Jeśli projekt jest przeznaczony dla systemu Windows 10, a rozszerzenie SDK zainstalowane w poprzednim kroku jest zależne od pakietu Microsoft Visual C++ Runtime, wersja pakietu Microsoft Visual C++ Runtime, która jest zgodna z systemem Windows 10, to v 14.0 i Program jest instalowany z programem Visual Studio 2015.
+    > Jeśli projekt jest przeznaczony dla systemu Windows 10, a rozszerzenie SDK zainstalowane w poprzednim kroku ma zależność od pakietu środowiska uruchomieniowego Microsoft Visual C++, wersja pakietu Microsoft Visual C++ Runtime, która jest zgodna z systemem Windows 10, to 14.0 i jest instalowana z programem Visual Studio 2015.
 
-3. Jeśli zestaw SDK rozszerzenia zainstalowany w poprzednim kroku ma zależności od innych zestawów SDK rozszerzeń, przejdź do witryn dostawców, którzy są właścicielami zależności, i zainstaluj wersje tych zależności, które są zgodne z wersją platformy. projekt jest celem.
+3. Jeśli zestaw SDK rozszerzenia zainstalowany w poprzednim kroku ma zależności od innych zestawów SDK rozszerzeń, przejdź do witryn dostawców, którzy są właścicielami zależności, i zainstaluj wersje tych zależności, które są zgodne z wersją platformy, dla której projekt jest przeznaczony.
 
 4. Uruchom ponownie program Visual Studio i Otwórz aplikację.
 
@@ -82,26 +82,26 @@ Przed napisaniem kodu w składniku zewnętrznym lub połączonej usłudze, proje
 6. Kliknij kartę **Windows** , a następnie podkartę **rozszerzenia** , a następnie usuń zaznaczenie pól wyboru dla starych zestawów SDK rozszerzenia i zaznacz pola wyboru dla nowych zestawów SDK rozszerzenia. Kliknij przycisk **OK**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Dodawanie odwołania w czasie projektowania
- Gdy wprowadzisz odwołanie do zestawu w projekcie, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyszukuje zestaw w następujących lokalizacjach:
+ Po wprowadzeniu odwołania do zestawu w projekcie program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyszukuje zestaw w następujących lokalizacjach:
 
 - Bieżący katalog projektu. (Zestawy te można znaleźć za pomocą karty **Przeglądaj** ).
 
 - Inne katalogi projektu w tym samym rozwiązaniu. (Te zestawy można znaleźć na karcie **projekty** ).
 
 > [!NOTE]
-> Wszystkie projekty zawierają implikowane odwołanie do biblioteki mscorlib. Projekty Visual Basic zawierają implikowane odwołanie do `Microsoft.VisualBasic`.
+> Wszystkie projekty zawierają implikowane odwołanie do biblioteki mscorlib. Projekty Visual Basic zawierają implikowane odwołanie do `Microsoft.VisualBasic` .
 >
-> Wszystkie projekty w programie Visual Studio zawierają implikowane odwołanie do `System.Core` nawet wtedy, gdy `System.Core` zostanie usunięty z listy odwołań.
+> Wszystkie projekty w programie Visual Studio zawierają implikowane odwołanie do `System.Core` , nawet jeśli `System.Core` jest usuwany z listy odwołań.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Odwołania do współużytkowanych składników w czasie wykonywania
- W czasie wykonywania składniki muszą znajdować się w ścieżce wyjściowej projektu lub w [globalnej pamięci podręcznej zestawów](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Jeśli projekt zawiera odwołanie do obiektu, który nie znajduje się w jednej z tych lokalizacji, należy skopiować odwołanie do ścieżki wyjściowej projektu podczas kompilowania projektu. Właściwość <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> wskazuje, czy należy wykonać tę kopię. Jeśli wartość jest **równa true**, odwołanie jest kopiowane do katalogu projektu podczas kompilowania projektu. Jeśli wartość jest równa **false**, odwołanie nie jest kopiowane.
+ W czasie wykonywania składniki muszą znajdować się w ścieżce wyjściowej projektu lub w [globalnej pamięci podręcznej zestawów](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Jeśli projekt zawiera odwołanie do obiektu, który nie znajduje się w jednej z tych lokalizacji, należy skopiować odwołanie do ścieżki wyjściowej projektu podczas kompilowania projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>Właściwość wskazuje, czy należy wykonać tę kopię. Jeśli wartość jest **równa true**, odwołanie jest kopiowane do katalogu projektu podczas kompilowania projektu. Jeśli wartość jest równa **false**, odwołanie nie jest kopiowane.
 
- W przypadku wdrożenia aplikacji, która zawiera odwołanie do składnika niestandardowego, który jest zarejestrowany w pamięci podręcznej GAC, składnik nie zostanie wdrożony z aplikacją, bez względu na ustawienie <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>. We wcześniejszych wersjach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można ustawić właściwość <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> na odwołanie, aby upewnić się, że zestaw został wdrożony. Teraz musisz ręcznie dodać zestaw do folderu \Bin. Powoduje to umieszczenie całego niestandardowego kodu w ramach kontroli, co zmniejsza ryzyko związane z publikowaniem niestandardowego kodu, którego nie znasz.
+ W przypadku wdrożenia aplikacji, która zawiera odwołanie do składnika niestandardowego, który jest zarejestrowany w pamięci podręcznej GAC, składnik nie zostanie wdrożony z aplikacją, bez względu na <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> ustawienie. We wcześniejszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można było ustawić <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Właściwość odwołania, aby upewnić się, że zestaw został wdrożony. Teraz musisz ręcznie dodać zestaw do folderu \Bin. Powoduje to umieszczenie całego niestandardowego kodu w ramach kontroli, co zmniejsza ryzyko związane z publikowaniem niestandardowego kodu, którego nie znasz.
 
- Domyślnie właściwość <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> jest ustawiona na **false** , jeśli zestaw lub składnik znajduje się w globalnej pamięci podręcznej zestawów lub jest składnikiem struktury. W przeciwnym razie wartość jest równa **true**. Odwołania między projektami są zawsze ustawione na **wartość true**.
+ Domyślnie <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Właściwość jest ustawiona na **false** , jeśli zestaw lub składnik znajduje się w globalnej pamięci podręcznej zestawów lub jest składnikiem struktury. W przeciwnym razie wartość jest równa **true**. Odwołania między projektami są zawsze ustawione na **wartość true**.
 
 ## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Odwoływanie się do projektu lub zestawu, który jest przeznaczony dla innej wersji .NET Framework
- Można tworzyć aplikacje odwołujące się do projektów lub zestawów przeznaczonych dla różnych wersji .NET Framework. Można na przykład utworzyć aplikację, która jest przeznaczona dla [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)], która odwołuje się do zestawu, który jest przeznaczony [!INCLUDE[dnprdnext](../includes/dnprdnext-md.md)]. W przypadku utworzenia projektu, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], nie można ustawić odwołania w tym projekcie do projektu lub zestawu, który jest przeznaczony dla [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] lub .NET Framework wersji 4.
+ Można tworzyć aplikacje odwołujące się do projektów lub zestawów przeznaczonych dla różnych wersji .NET Framework. Na przykład można utworzyć aplikację, która jest przeznaczona dla [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] elementu, który odwołuje się do zestawu, który jest celem [!INCLUDE[dnprdnext](../includes/dnprdnext-md.md)] . W przypadku utworzenia projektu, który jest przeznaczony dla starszej wersji programu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , nie można ustawić odwołania w tym projekcie do projektu lub zestawu, który jest przeznaczony dla [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] lub .NET Framework w wersji 4.
 
  Aby uzyskać więcej informacji, zobacz [Określanie konkretnej wersji .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 

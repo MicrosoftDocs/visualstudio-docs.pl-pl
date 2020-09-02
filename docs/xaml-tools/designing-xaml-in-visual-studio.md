@@ -1,5 +1,5 @@
 ---
-title: Projektowanie kodu XAML w programie Visual Studio i w programie Blend for Visual Studio
+title: Projektuj kod XAML w programie Visual Studio i w Blend for Visual Studio
 titleSuffix: ''
 ms.date: 02/28/2020
 ms.topic: conceptual
@@ -8,59 +8,59 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: eb18a2face5d9f1831bec35379a423f272c3e6ce
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649824"
 ---
-# <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Projektowanie xaml w programie Visual Studio i blend dla programu Visual Studio
+# <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio
 
-Visual Studio i Blend for Visual Studio zapewniają narzędzia wizualne do tworzenia atrakcyjnych interfejsów użytkownika i środowisk multimedialnych za pomocą języka XAML dla różnych typów aplikacji. Oba zintegrowane środowiska programistyczne (IDE) mają wspólny zestaw funkcji, w tym wizualny edytor XAML (projektant). Blend for Visual Studio, który obsługuje platformy WPF i platformy platformy platformy uniwersalnej systemu i platformy uniwersalnej systemu, zapewnia dodatkowe narzędzia do projektowania stanów wizualnych i tworzenia animacji.
+Programy Visual Studio i Blend for Visual Studio oferują narzędzia wizualne do tworzenia atrakcyjnych interfejsów użytkownika i bogate środowiska multimedialne przy użyciu języka XAML dla różnych typów aplikacji. Oba zintegrowane środowiska deweloperskie (IDE) udostępniają wspólny zestaw funkcji, w tym edytor języka Visual XAML (Projektant). Blend for Visual Studio, który obsługuje platformy WPF i platformy UWP, oferuje dodatkowe narzędzia do projektowania Stanów wizualnych i tworzenia animacji.
 
-Można przełączać się tam iz powrotem między programami Visual Studio i Blend dla programu Visual Studio, a nawet można mieć ten sam projekt otwarty w obu ice w tym samym czasie. Zmiany zapisane w plikach XAML w jednym IDE można zastosować za pomocą automatycznego ponownego ładowania po przełączeniu do innego IDE. Zachowanie ponownego ładowania można kontrolować, przechodząc do**dokumentów** **środowiska** > **opcje** >  **narzędzi** > w obu IDE.
+Można przełączać się między programem Visual Studio i Blend for Visual Studio, a nawet w tym samym czasie może być otwarty w obu środowisk ideach. Zmiany zapisane w plikach XAML w jednym środowisku IDE mogą być stosowane przez automatyczne ponowne ładowanie po przełączeniu do innego środowiska IDE. Możesz kontrolować zachowanie ponownego ładowania, przechodząc do opcji **Narzędzia**  >  **Options**  >  **Environment**  >  **dokumenty** środowiska w środowisku IDE.
 
 ## <a name="installation"></a>Instalacja
 
-- Aby utworzyć aplikacje WPF, zainstaluj .NET obciążenia **deweloperskie pulpitu** w programie Visual Studio. Zostanie również zainstalowana aplikacja Blend for Visual Studio.
+- Aby utworzyć aplikacje WPF, zainstaluj obciążenie **Programowanie aplikacji klasycznych platformy .NET** w programie Visual Studio. Zostanie również zainstalowany Blend for Visual Studio.
 
-     ![Zrzut ekranu przedstawiający obciążenie programem .NET desktop development z instalatora programu Visual Studio](../xaml-tools/media/dotnet-desktop-dev-workload.png)
+     ![Zrzut ekranu przedstawiający obciążenie Programowanie aplikacji klasycznych platformy .NET z Instalator programu Visual Studio](../xaml-tools/media/dotnet-desktop-dev-workload.png)
 
-- Aby utworzyć aplikacje platformy uniwersalnej systemu Windows, należy zainstalować obciążenie **deweloperskie platformy uniwersalnej systemu Windows** w programie Visual Studio. Zostanie również zainstalowana aplikacja Blend for Visual Studio.
+- Aby tworzyć aplikacje platformy UWP, zainstaluj obciążenie **programowanie platforma uniwersalna systemu Windows** w programie Visual Studio. Zostanie również zainstalowany Blend for Visual Studio.
 
-     ![Zrzut ekranu przedstawiający obciążenie deweloperskie platformy systemu Windows z Instalatora programu Visual Studio](../xaml-tools/media/uwp-workload.png)
+     ![Zrzut ekranu przedstawiający obciążenie związane z programowaniem platforma uniwersalna systemu Windows z Instalator programu Visual Studio](../xaml-tools/media/uwp-workload.png)
 
-- Aby utworzyć aplikacje platformy Xamarin.Forms, należy zainstalować program Mobile development z obciążeniem **platformy .NET** w programie Visual Studio. Program Blend for Visual Studio *nie* jest zainstalowany; Blend nie obsługuje aplikacji platformy Xamarin.Forms.
+- Aby utworzyć aplikacje platformy Xamarin. Forms, zainstaluj **Programowanie aplikacji mobilnych przy użyciu obciążenia .NET** w programie Visual Studio. *Nie* zainstalowano Blend for Visual Studio. Program Blend nie obsługuje aplikacji Xamarin. Forms.
 
-     ![Zrzut ekranu przedstawiający program Mobile Development z obciążeniem platformy .NET z instalatora programu Visual Studio](../xaml-tools/media/mobile-dev-dotnet-workload.png)
+     ![Zrzut ekranu przedstawiający opracowywanie aplikacji mobilnych za pomocą obciążenia .NET z Instalator programu Visual Studio](../xaml-tools/media/mobile-dev-dotnet-workload.png)
 
 ## <a name="shared-capabilities"></a>Współdzielone możliwości
 
-W przypadku większości podstawowych zadań programistycznych program Visual Studio i Blend for Visual Studio współużytkują ten sam zestaw okien i możliwości z pewnymi subtelnymi różnicami. Jej najważniejsze funkcje obejmują:
+W przypadku większości podstawowych zadań programistycznych program Visual Studio i Blend for Visual Studio współdzielą ten sam zestaw okien i możliwości z niewielkimi różnicami. Jej najważniejsze funkcje obejmują:
 
-- **Technologia IntelliSense:** Oba identyfikatory obsługują funkcje intellisense, takie jak uzupełnianie instrukcji.
+- Funkcja **IntelliSense:** Obie środowisk IDE obsługują funkcje IntelliSense, takie jak uzupełnianie instrukcji.
 
-- **Debugowanie:** Można debugować w [programie Visual Studio](inspect-xaml-properties-while-debugging.md) i Blend dla programu Visual [Studio](../xaml-tools/debug-xaml-in-blend.md), w tym ustawienie punktów przerwania w kodzie do debugowania uruchomionej aplikacji i za pomocą [hot reload,](../xaml-tools/xaml-hot-reload.md) aby zmienić kod XAML, gdy aplikacja jest uruchomiona. Aby zachować spójne środowisko debugowania z visual studio, Blend dla programu Visual Studio zawiera większość okien debugowania programu Visual Studio i pasków narzędzi.
+- **Debugowanie:** Można debugować w programie [Visual Studio](inspect-xaml-properties-while-debugging.md) i [Blend for Visual Studio](../xaml-tools/debug-xaml-in-blend.md), w tym ustawienia punktów przerwania w kodzie, aby debugować działającą aplikację i za pomocą funkcji [ponownego ładowania](../xaml-tools/xaml-hot-reload.md) , można zmienić kod XAML, gdy aplikacja jest uruchomiona. Aby zachować spójne środowisko debugowania w programie Visual Studio, Blend for Visual Studio zawiera większość okien debugowania i pasków narzędzi programu Visual Studio.
 
-- **Ponowne załadowanie pliku:** Pliki XAML można edytować w programie Visual Studio lub programie Blend for Visual Studio. Edytowane pliki, które zostały zapisane, ładują się ponownie automatycznie podczas przełączania się między tymi plikami. Zachowanie ponownego ładowania można kontrolować, przechodząc do**dokumentów** **środowiska** > **opcje** >  **narzędzi** > w obu IDE.
+- **Załaduj plik:** Pliki XAML można edytować w programie Visual Studio lub Blend for Visual Studio. Edytowane pliki, które zostały zapisane automatycznie Załaduj, podczas przełączania między środowisk IDE. Możesz kontrolować zachowanie ponownego ładowania, przechodząc do opcji **Narzędzia**  >  **Options**  >  **Environment**  >  **dokumenty** środowiska w środowisku IDE.
 
-- **Zsynchronizowane układy i ustawienia:** Układy okien okien narzędzi dostosowywania projektowania i preferencje ustawień programu Visual Studio lub Blend dla programu Visual Studio są synchronizowane między urządzeniami i wersjami po zalogowaniu się przy tym samym koncie personalizacji. Zobacz [Synchronizowanie ustawień na wielu komputerach](../ide/synchronized-settings-in-visual-studio.md).
+- **Zsynchronizowane układy i ustawienia:** Preferencje i ustawienia okna narzędzia dostosowywania projektu dla programu Visual Studio lub Blend for Visual Studio są synchronizowane przez urządzenia i wersje po zalogowaniu się przy użyciu tego samego konta personalizacji. Zobacz [Synchronizowanie ustawień na wielu komputerach](../ide/synchronized-settings-in-visual-studio.md).
 
-## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Zaawansowane możliwości w programie Blend dla programu Visual Studio
+## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Zaawansowane możliwości w Blend for Visual Studio
 
-Aby zwiększyć produktywność, należy rozważyć użycie programu Blend for Visual Studio do następujących zadań. Są to obszary, w których Blend for Visual Studio oferuje więcej funkcji niż projektant programu Visual Studio lub sam kod.
+Aby zwiększyć produktywność, należy rozważyć użycie Blend for Visual Studio dla następujących zadań. Poniżej znajdują się obszary, w których Blend for Visual Studio oferuje więcej funkcji niż Projektant lub sam kod programu Visual Studio.
 
 | Zadanie | Visual Studio | Blend for Visual Studio | Więcej informacji |
 | - | - | - | - |
-| **Projektowanie stanów wizualnych** | Nie ma żadnego narzędzia, które pomaga w projektowaniu stanów wizualnych; należy je utworzyć programowo. | Użyj narzędzi do projektowania, aby zmienić wygląd formantu na podstawie jego stanu. | [Stany wizualne](modify-the-style-of-objects-in-blend.md#visual-states) |
-| **Tworzenie animacji** |Nie ma narzędzia do projektowania animacji; musisz je tworzyć programowo. Wymaga to zrozumienia systemu animacji i chronometrażu w WPF i rozległej wiedzy na temat kodowania.|Animacje są wyświetlane wizualnie i można wyświetlać ich podgląd w programie Blend for Visual Studio. Jest to szybsze i dokładniejsze niż tworzenie animacji w kodzie. Można dodać wyzwalacze do obsługi interakcji z użytkownikiem i można przełączyć się do kodu, aby dodać programy obsługi zdarzeń i inne funkcje.|[Animowanie obiektów](../xaml-tools/animate-objects-in-xaml-designer.md)|
-|**Przekształcanie kształtów i tekstu w ścieżki w celu łatwiejszej manipulacji**|Bez pomocy technicznej.|Można wprowadzić subtelne lub dramatyczne zmiany kształtów (takie jak prostokąty i elipsy), konwertując je na ścieżki, które zapewniają lepszą kontrolę edycji. Można zmienić kształt lub połączyć ścieżki oraz utworzyć ścieżki złożone z wielu kształtów.<br /><br />Można również konwertować bloki tekstowe na ścieżki, aby manipulować nimi jako obrazami wektorowymi.|[Rysowanie kształtów i ścieżek](../xaml-tools/draw-shapes-and-paths.md)|
-|**Edytowanie formantów, szablonów i stylów**|Wymaga kodowania i znajomości stylów I szablonów WPF.|Przeksztuj dowolny obraz w formant.<br /><br />Narzędzia do edycji szablonów umożliwia wprowadzanie zmian w formantach, stylach i szablonach za pomocą zaledwie kilku kliknięć myszą.<br /><br />Na przykład można użyć zasobów stylu Programu Blend for Visual Studio do zaimplementowania typowych formantów WPF (takich jak przyciski, pola listy, paski przewijania, menu itp.) i zmienić ich kolor, styl lub szablon podstawowy bezpośrednio w programie Blend for Visual Studio. Następnie można przełączyć się do kodu do wykończenia, jeśli chcesz.|[Modyfikowanie stylu obiektów](modify-the-style-of-objects-in-blend.md)|
-|**Łączenie interfejsu użytkownika z danymi**|Źródło danych można utworzyć z zasobów, takich jak baza danych programu SQL Server, WCF lub usługa sieci web, obiekt lub lista programu SharePoint, a następnie powiązać źródło danych z formantami interfejsu użytkownika.<br /><br />Dane w czasie projektowania muszą być tworzone ręcznie, aby uzyskać interaktywne środowisko projektowania.|W przypadku aplikacji platformy .NET Framework łatwo utwórz przykładowe dane do tworzenia prototypów i testowania. Przełączaj się na dane na żywo, gdy będziesz gotowy.<br /><br />Możliwości generowania danych programu Blend For Visual Studio są wyjątkowe (można łatwo dodawać nazwy, numery, adresy URL i zdjęcia w locie) i zaoszczędzić dużo czasu.<br /><br />W przypadku danych na żywo można powiązać formanty interfejsu użytkownika z plikiem XML lub dowolnym źródłem danych CLR.|[Wyświetlanie danych](display-data-in-blend.md)|
+| **Projektowanie Stanów wizualnych** | Nie jest dostępne żadne narzędzie ułatwiające projektowanie Stanów wizualnych; należy je tworzyć programowo. | Narzędzia do projektowania umożliwiają zmianę wyglądu kontrolki na podstawie jej stanu. | [Stany wizualne](modify-the-style-of-objects-in-blend.md#visual-states) |
+| **Tworzenie animacji** |Nie istnieje narzędzie projektowania dla animacji; należy je tworzyć programowo. Wymaga to wiedzy na temat animacji i systemu chronometrażu w WPF i obszernej znajomości kodu.|Animacje można tworzyć wizualnie i wyświetlać je w Blend for Visual Studio. Jest to szybsze i bardziej dokładne niż Kompilowanie animacji w kodzie. Możesz dodać wyzwalacze do obsługi interakcji z użytkownikiem i można przełączyć się do kodu, aby dodać programy obsługi zdarzeń i inne funkcje.|[Animowanie obiektów](../xaml-tools/animate-objects-in-xaml-designer.md)|
+|**Przekształcanie kształtów i tekstu w ścieżki w celu ułatwienia manipulowania**|Nieobsługiwane.|Można wprowadzać delikatne lub znaczące zmiany w kształtach (takich jak prostokąty i wielokropki), konwertując je na ścieżki, co zapewnia lepszą kontrolę edycji. Można przekształcać i łączyć ścieżki oraz tworzyć ścieżki złożone z wielu kształtów.<br /><br />Możesz również skonwertować bloki tekstu na ścieżki, aby manipulować nimi w postaci obrazów wektorowych.|[Rysowanie kształtów i ścieżek](../xaml-tools/draw-shapes-and-paths.md)|
+|**Edytowanie kontrolek, szablonów i stylów**|Wymaga kodowania i znajomości stylów i szablonów WPF.|Przekształcenie dowolnego obrazu w kontrolkę.<br /><br />Za pomocą narzędzi do edycji szablonów można wprowadzać zmiany w kontrolkach, stylach i szablonach za pomocą zaledwie kilku kliknięć myszą.<br /><br />Na przykład możesz użyć zasobów stylów Blend for Visual Studio do implementowania wspólnych kontrolek WPF (takich jak przyciski, pola listy, paski przewijania, menu itp.), a także zmieniać kolory, style lub szablony bazowe bezpośrednio w Blend for Visual Studio. Następnie możesz przełączyć się do kodu, aby dokończył się w razie potrzeby.|[Modyfikowanie stylu obiektów](modify-the-style-of-objects-in-blend.md)|
+|**Połącz interfejs użytkownika z danymi**|Można utworzyć źródło danych z zasobów, takich jak baza danych SQL Server, usług WCF lub sieci Web, obiektów lub listy programu SharePoint, a następnie powiązać źródło danych z kontrolkami interfejsu użytkownika.<br /><br />Dane czasu projektowania muszą być tworzone ręcznie dla interaktywnego środowiska projektowego.|W przypadku aplikacji .NET Framework można łatwo tworzyć przykładowe dane w celu tworzenia prototypów i testowania. Przejdź do danych na żywo, gdy wszystko będzie gotowe.<br /><br />Funkcje generacji danych Blend for Visual Studio są zaległe (można łatwo dodawać nazwy, cyfry, adresy URL i zdjęcia), a także zaoszczędzić dużo czasu.<br /><br />W przypadku danych na żywo można powiązać kontrolki interfejsu użytkownika z plikiem XML lub dowolnym źródłem danych CLR.|[Wyświetlanie danych](display-data-in-blend.md)|
 
-Aby uzyskać więcej informacji na temat zaawansowanego projektu XAML, zobacz [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
+Aby uzyskać więcej informacji na temat zaawansowanego projektowania XAML, zobacz [Tworzenie interfejsu użytkownika przy użyciu Blend for Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Przegląd XAML](xaml-overview.md)
-- [Omówienie programu Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Przegląd Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)

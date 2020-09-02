@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596583"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generowanie kodu z języka specyficznego dla domeny
 
-Firma Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] zapewnia zaawansowany sposób generowania kodu, dokumentów, plików konfiguracji i innych artefaktów z danych przedstawionych w modelach. Za pomocą [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]można utworzyć zestaw klas, które reprezentują dane, i można napisać szablony tekstowe w klasach, których nazwy i właściwości odzwierciedlają te dane.
+Firma Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] zapewnia zaawansowany sposób generowania kodu, dokumentów, plików konfiguracji i innych artefaktów z danych przedstawionych w modelach. Za pomocą programu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] można utworzyć zestaw klas, które reprezentują dane, i można napisać szablony tekstowe w klasach, których nazwy i właściwości odzwierciedlają te dane.
 
 Na przykład firma Fabrikam ma plik XML z nazwami klientów i adresami e-mail. Deweloperzy tworzą model, w którym klient jest klasą z właściwościami nazwa i adres e-mail. Piszą one kilka szablonów tekstowych do przetwarzania danych, w tym ten fragment, który tworzy tabelę wszystkich klientów w ramach strony HTML:
 
@@ -28,11 +28,11 @@ Na przykład firma Fabrikam ma plik XML z nazwami klientów i adresami e-mail. D
 <# } #>  </table>
 ```
 
-Podczas przetwarzania bazy danych klienta plik XML jest odczytywany do magazynu modeli. *Procesor dyrektywy*utworzony przy użyciu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], sprawia, że Klasa klienta jest dostępna dla kodu w szablonie tekstu. Wiele szablonów tekstowych można uruchamiać w ramach tego samego magazynu.
+Podczas przetwarzania bazy danych klienta plik XML jest odczytywany do magazynu modeli. *Procesor dyrektywy*utworzony przy użyciu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , sprawia, że Klasa klienta jest dostępna dla kodu w szablonie tekstu. Wiele szablonów tekstowych można uruchamiać w ramach tego samego magazynu.
 
-Szablony tekstowe mają kluczowe znaczenie dla [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Są one używane do generowania kodu źródłowego dla elementów modelu domeny, a także dla pakietu VSPackage i formantów, które są używane do integracji narzędzi z programem Visual Studio.
+Szablony tekstowe mają kluczowe znaczenie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] . Są one używane do generowania kodu źródłowego dla elementów modelu domeny, a także dla pakietu VSPackage i formantów, które są używane do integracji narzędzi z programem Visual Studio.
 
-W tej sekcji omówiono niektóre sposoby tworzenia, modyfikowania i debugowania szablonów tekstu używanych w [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+W tej sekcji omówiono niektóre sposoby tworzenia, modyfikowania i debugowania szablonów tekstu używanych w programie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] .
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -45,10 +45,10 @@ Opisuje sposób rozwiązywania problemów i debugowania dla szablonu tekstu, kt�
 [Przewodnik: łączenie hosta z wygenerowanym procesorem dyrektywy](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)\
 Opisuje sposób nawiązywania połączenia z hostem niestandardowym z wygenerowanym procesorem dyrektywy.
 
-[DslTextTransform polecenie](../modeling/the-dsltexttransform-command.md)\
+[Polecenie DslTextTransform](../modeling/the-dsltexttransform-command.md)\
 Opisuje plik poleceń, który wykonuje element wykonywalny TextTransform w wierszu polecenia dla szablonów tekstowych, które odwołują się do języków specyficznych dla domeny.
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 
 [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)\
 Zawiera składnię dyrektyw szablonu tekstu i bloków sterujących.

@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Wykonanie Transact-SQL zakończyło się bez debugowania | Dokumentacja firmy Microsoft'
+title: 'Błąd: wykonywanie kodu Transact-SQL zakończyło się bez debugowania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,39 +18,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681076"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>Błąd: Wykonywanie kodu Transact-SQL zakończyło się bez debugowania
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>Błąd: Wykonanie Transact-SQL zakończyło się bez debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten błąd występuje podczas próby debugowania języka Transact-SQL lub procedury SQLCLR i debuger nie odbiera komunikaty debugowania z programu SQL Server.  
+Ten błąd występuje podczas próby debugowania procedury języka Transact-SQL lub SQLCLR, a debuger nie odbiera komunikatów debugowania z SQL Server.  
   
- Może to być ze względu na problemy z siecią lub problemy w programie SQL Server, ale najbardziej prawdopodobną przyczyną jest problem z uprawnieniami.  
+ Przyczyną mogą być problemy z siecią lub problemy z SQL Server, ale najbardziej prawdopodobną przyczyną jest problem z uprawnieniami.  
   
- Zaangażowanych dwa konta:  
+ Istnieją dwa konta:  
   
-- Konto aplikacji znajduje się konto użytkownika, który [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] działa jako.  
+- Konto aplikacji to konto użytkownika, na którym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] działa program.  
   
-- Konto połączenia jest to tożsamość używana do nawiązywania połączeń z programem SQL Server. To nie jest zawsze taki sam jak tożsamość, która Visual Studio działa tak, jakby połączenie za pomocą uwierzytelniania SQL.  
+- Konto połączenia to tożsamość użyta do nawiązania połączenia z SQL Server. Nie musi to być taka sama jak tożsamość, która jest uruchomiona w programie Visual Studio, jeśli połączenie korzysta z uwierzytelniania SQL.  
   
-  Debugowanie SQL wymaga, aby konto aplikacji musi odpowiadać kontu połączenia lub być sysadmin.  
+  Debugowanie SQL wymaga, aby konto aplikacji było zgodne z kontem połączenia lub administratorem systemu.  
   
-  Jeśli używasz identyfikatora logowania SQL, takich jak Ameryka Południowa konta aplikacji musi być Instalatora na serwerze SQL, administrator systemu. Domyślnie administratorzy na komputerze program SQL server jest uruchomiony są głównym programu SQL Server.  
+  Jeśli używasz logowania SQL, takiego jak sa, konto aplikacji musi być skonfigurowane na SQL Server jako administrator. Domyślnie Administratorzy na komputerze, na którym jest uruchomiony program SQL Server, są SQL Server Sysadmins.  
   
-  Aby naprawić ten błąd, konieczne może być:  
+  Aby naprawić ten błąd, może być konieczne:  
   
-- Sprawdź ustawienia uprawnień. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie uprawnień programu SQL Server do debugowania](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Sprawdź ustawienia uprawnień. Aby uzyskać więcej informacji, zobacz [How to: Set SQL Server Permissions for debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
-- Upewnij się, że debugowanie SQL, jeśli skonfigurowane prawidłowo.  
+- Upewnij się, że debugowanie SQL zostało prawidłowo skonfigurowane.  
   
-- Zapoznaj się z administratorem sieci lub bazy danych.  
+- Skontaktuj się z administratorem sieci lub bazy danych.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie debugowania SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Instrukcje: Ustawianie uprawnień programu SQL Server do debugowania](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Instrukcje: Ustawianie uprawnień SQL Server na potrzeby debugowania](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)

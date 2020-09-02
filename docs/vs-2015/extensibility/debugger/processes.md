@@ -1,5 +1,5 @@
 ---
-title: Procesy | Dokumentacja firmy Microsoft
+title: Procesy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,37 +11,37 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82718a7ceb7a18f9978840f35ca0c5fce5628e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153667"
 ---
 # <a name="processes"></a>Procesy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pod względem architektury debugera **procesu**:  
+W zakresie architektury debugera, **proces**:  
   
-- To kontener dla zestawu programów. Jest ściśle analogiczne do procesu Windows, który jest kontenerem dla zestawu wątków.  
+- Jest kontenerem dla zestawu programów. Jest to ściśle analogiczne do procesu systemu Windows, który jest kontenerem dla zestawu wątków.  
   
-- Można zidentyfikować sama nazwa, identyfikator lub identyfikator fizycznych.  
+- Może identyfikować siebie według nazwy, identyfikatora lub identyfikatora fizycznego.  
   
-- Można wyliczyć wszystkie uruchomione programy (i ich wątków).  
+- Może wyliczyć wszystkie uruchomione programy (i ich wątki).  
   
-- Można opisać, port, na którym jest uruchomiona w i komputer który go zawiera.  
+- Może opisywać siebie, port, na którym działa program, oraz maszynę, która ją zawiera.  
   
-- Można utworzyć jeden lub więcej programów zakończenie dowolnych programów, które tworzy i spowodować, że program przestanie.  
+- Program może utworzyć jeden lub więcej programów, zakończyć każdy z tworzonych przez niego programów lub spowodować zatrzymanie programu.  
   
-- Jest reprezentowany przez [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) interfejs, który jest tworzony, gdy proces jest uruchamiany. Proces jest uruchamiany przez albo Menedżer debugowania sesji (SDM) lub [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+- Jest reprezentowany przez interfejs [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) , który jest tworzony podczas uruchamiania procesu. Proces jest uruchamiany przez Menedżera debugowania sesji (SDM) lub [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
-  Pakiet debugowania można dołączyć aparat debugowania (DE) do procesu przez wywołanie metody [Dołącz](../../extensibility/debugger/reference/idebugprocess2-attach.md). Oznacza to, że Niemcy dołącza wszystkie możliwe programy działający w procesie, który może obsługiwać. Na przykład jeśli środowisko uruchomieniowe języka wspólnego DE dołącza do procesu, dołącza tylko do programów uruchomionych w kodzie zarządzanym.  
+  Pakiet debugowania może dołączyć aparat debugowania (Anuluj) do procesu przez wywołanie metody [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Oznacza to, że po dołączeniu do wszystkich możliwych programów uruchomionych w procesie, który może obsłużyć. Na przykład jeśli środowisko uruchomieniowe języka wspólnego nie dołącza do procesu, dołącza tylko do programów, które są uruchomione w kodzie zarządzanym.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Programy](../../extensibility/debugger/programs.md)   
- [Wątki](../../extensibility/debugger/threads.md)   
+ [Programu](../../extensibility/debugger/programs.md)   
+ [Wątk](../../extensibility/debugger/threads.md)   
  [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)   
- [Pakiet debugowania](../../extensibility/debugger/debug-package.md)   
+ [Debuguj pakiet](../../extensibility/debugger/debug-package.md)   
  [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
- [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)
+ [Dołącz](../../extensibility/debugger/reference/idebugprocess2-attach.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 366a590daefa2fae33b3e76959444ad7fc9d2504
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875491"
 ---
 # <a name="runtime-activity-designers"></a>Projektanci działań Runtime
@@ -33,6 +33,6 @@ Projektanci działań środowiska uruchomieniowego są używane do utrwalania i 
 
  [Obsługa błędów](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Używanie projektantów działań](control-flow-activity-designers.md)

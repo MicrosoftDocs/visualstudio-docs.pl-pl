@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189684"
 ---
 # <a name="data-in-office-solutions"></a>Dane w rozwiązaniach pakietu Office
@@ -50,7 +50,7 @@ ms.locfileid: "73189684"
 
  Wyświetla listę tematów, które ilustrują sposób pracy z danymi w programie Visual Studio.
 
-- [Zapisz dane](../data-tools/save-data-back-to-the-database.md)
+- [Zapisywanie danych](../data-tools/save-data-back-to-the-database.md)
 
  Zawiera łącza do tematów dotyczących pracy z zestawami danych, w tym modyfikowania i zapisywania zmian w źródle danych.
 

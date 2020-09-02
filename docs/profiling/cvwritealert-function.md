@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332168"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert, funkcja
@@ -55,11 +55,11 @@ HRESULT CvWriteAlertVA(
 ```
 
 #### <a name="parameters"></a>Parametry
- `argList`Lista argumentów.
+ `argList` Lista argumentów.
 
- `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.
+ `pMarkerSeries` Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.
 
- `pMessage`Ciąg formatu komunikatu. Nie może mieć wartości NULL.
+ `pMessage` Ciąg formatu komunikatu. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
  S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.

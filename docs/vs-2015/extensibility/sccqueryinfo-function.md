@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccQueryInfo | Dokumentacja firmy Microsoft
+title: Funkcja SccQueryInfo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199983"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta funkcja pobiera informacje o stanie dla zestawu wybranych plików pod kontrolą źródła.  
+Ta funkcja uzyskuje informacje o stanie zestawu wybranych plików pod kontrolą źródła.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,41 +37,41 @@ SCCRTN SccQueryInfo(
   
 #### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekście wtyczki kontroli źródła.  
+ podczas Struktura kontekstu wtyczki kontroli źródła.  
   
- Niepowodzeń  
- [in] Liczba plików określonych w `lpFileNames` tablicy i długość `lpStatus` tablicy.  
+ nFiles  
+ podczas Liczba plików określona w `lpFileNames` tablicy i długość `lpStatus` tablicy.  
   
  lpFileNames  
- [in] Tablica nazw plików, które ma zostać zbadany.  
+ podczas Tablica nazw plików, do których mają być wysyłane zapytania.  
   
  lpStatus  
- [out w] Tablica, w którym wtyczka do kontroli źródła zwraca flagi stanu dla każdego pliku. Aby uzyskać więcej informacji, zobacz [kod stanu pliku](../extensibility/file-status-code-enumerator.md).  
+ [in. out] Tablica, w której wtyczka do kontroli źródła zwraca flagi stanu dla każdego pliku. Aby uzyskać więcej informacji, zobacz [kod stanu pliku](../extensibility/file-status-code-enumerator.md).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Zapytania zakończyło się pomyślnie.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskiwaniem dostępu do systemu kontroli źródła prawdopodobnie spowodowane przez problemy z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|  
-|SCC_E_PROJNOTOPEN|Projekt nie jest otwarty pod kontrolą źródła.|  
-|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|  
+|SCC_OK|Zapytanie zostało wykonane pomyślnie.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie spowodowany przez problemy z siecią lub rywalizacją. Zalecana jest ponowna próba.|  
+|SCC_E_PROJNOTOPEN|Projekt nie jest otwarty w kontroli źródła.|  
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli `lpFileName` jest pustym ciągiem, jest obecnie nie informacje o stanie do zaktualizowania. W przeciwnym razie jest pełna nazwa ścieżki pliku, dla którego zostały zmienione informacje o stanie.  
+ Jeśli `lpFileName` jest pustym ciągiem, nie ma obecnie informacji o stanie do zaktualizowania. W przeciwnym razie jest to pełna nazwa ścieżki pliku, dla którego mogą ulec zmianie informacje o stanie.  
   
- Zwracana tablica może być maską bitów z `SCC_STATUS_xxxx` usługi bits. Aby uzyskać więcej informacji, zobacz [kod stanu pliku](../extensibility/file-status-code-enumerator.md). System kontroli źródła może nie obsługiwać wszystkich typów bitowych. Na przykład jeśli `SCC_STATUS_OUTOFDATE` nie jest dostępna, ale nie ustawiono bitu.  
+ Tablica zwracana może być maską bitową `SCC_STATUS_xxxx` bitów. Aby uzyskać więcej informacji, zobacz [kod stanu pliku](../extensibility/file-status-code-enumerator.md). System kontroli źródła może nie obsługiwać wszystkich typów bitowych. Na przykład jeśli `SCC_STATUS_OUTOFDATE` nie jest oferowana, bit nie jest ustawiony.  
   
- Wyewidencjonowywanie plików za pomocą tej funkcji, należy pamiętać o następujących `MSSCCI` stan wymagania:  
+ W przypadku używania tej funkcji do wyewidencjonowania plików należy pamiętać o następujących `MSSCCI` wymaganiach dotyczących stanu:  
   
-- `SCC_STATUS_OUTBYUSER` jest ustawiona, gdy bieżący użytkownik ma wyewidencjonowania pliku.  
+- `SCC_STATUS_OUTBYUSER` jest ustawiany, gdy bieżący użytkownik wyewidencjonuje plik.  
   
-- `SCC_STATUS_CHECKEDOUT` Nie można ustawić, chyba że `SCC_STATUS_OUTBYUSER` jest ustawiona.  
+- `SCC_STATUS_CHECKEDOUT` nie można ustawić, chyba że `SCC_STATUS_OUTBYUSER` jest ustawiony.  
   
-- `SCC_STATUS_CHECKEDOUT` jest tylko ustawiona, gdy plik jest wyewidencjonowany do wyznaczonej katalogu roboczego.  
+- `SCC_STATUS_CHECKEDOUT` jest ustawiana tylko wtedy, gdy plik jest wyewidencjonowany do wyznaczonych katalogów roboczych.  
   
-- Jeśli plik jest wyewidencjonowany przez bieżącego użytkownika w katalogu innym niż katalog roboczy `SCC_STATUS_OUTBYUSER` jest ustawiona, ale `SCC_STATUS_CHECKEDOUT` nie jest.  
+- Jeśli plik jest wyewidencjonowany przez bieżącego użytkownika do katalogu innego niż katalog roboczy, `SCC_STATUS_OUTBYUSER` jest ustawiony, ale `SCC_STATUS_CHECKEDOUT` nie jest.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   

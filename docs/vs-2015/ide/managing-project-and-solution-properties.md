@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ec48aac60a8f15527c92d19a38ca9f996dcfdd6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651361"
 ---
 # <a name="managing-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
@@ -33,19 +33,19 @@ Projekty mają właściwości, które regulują wiele aspektów kompilowania, de
 ## <a name="project-properties"></a>Właściwości projektu
  Właściwości projektu są zorganizowane w grupy, a każda grupa ma własną stronę właściwości, a strony mogą być różne dla różnych języków i typów projektów.
 
-### <a name="c-and-visual-basic-projects"></a>C#i projekty Visual Basic
- W C# projektach i Visual Basic, właściwości są ujawniane w **projektancie projektu**. Na poniższej ilustracji przedstawiono stronę właściwości kompilacja dla projektu WPF w C#:
+### <a name="c-and-visual-basic-projects"></a>Projekty C# i Visual Basic
+ W projektach C# i Visual Basic właściwości są ujawniane w **projektancie projektu**. Na poniższej ilustracji przedstawiono stronę właściwości kompilacja dla projektu WPF w języku C#:
 
  ![Projektant projektu programu Visual Studio](../ide/media/vs2015-proppage-build.png "VS2015_PropPage_Build")
 
  Aby uzyskać informacje na temat każdej strony właściwości w projektancie projektu, zobacz [Informacje o właściwościach projektu](../ide/reference/project-properties-reference.md).
 
-### <a name="c-and-javascript-projects"></a>C++i projekty JavaScript
- C++i projekty JavaScript mają inny interfejs użytkownika do zarządzania właściwościami projektu. Na C++ tej ilustracji przedstawiono stronę właściwości projektu (strony JavaScript są podobne):
+### <a name="c-and-javascript-projects"></a>Projekty języka C++ i JavaScript
+ Projekty języka C++ i JavaScript mają inny interfejs użytkownika do zarządzania właściwościami projektu. Na tej ilustracji przedstawiono stronę właściwości projektu C++ (strony JavaScript są podobne):
 
- ![Właściwości projektu&#43; &#43; języka Visual C](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")
+ ![Właściwości projektu&#43;&#43; Visual C](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")
 
- Aby uzyskać informacje C++ na temat właściwości projektu, zobacz [Praca z właściwościami projektu](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Aby uzyskać więcej informacji na temat właściwości języka JavaScript, zobacz [strony właściwości, JavaScript](../ide/reference/property-pages-javascript.md).
+ Aby uzyskać informacje o właściwościach projektu C++, zobacz [Praca z właściwościami projektu](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Aby uzyskać więcej informacji na temat właściwości języka JavaScript, zobacz [strony właściwości, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Właściwości rozwiązania
  Aby uzyskać dostęp do właściwości w rozwiązaniu, kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**. W oknie dialogowym można ustawić konfiguracje projektu dla kompilacji lub kompilacje wydań, wybrać projekty, które powinny być projektem startowym po naciśnięciu klawisza F5 i ustawić opcje analizy kodu.

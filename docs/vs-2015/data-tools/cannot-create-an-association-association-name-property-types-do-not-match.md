@@ -1,5 +1,5 @@
 ---
-title: Nie można utworzyć skojarzenia &lt;association nazwa &gt; — typy właściwości nie są zgodne | Microsoft Docs
+title: Nie można utworzyć &lt; nazwy skojarzenia skojarzenia &gt; — typy właściwości nie są zgodne | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c93221710f8adc2421f902f27fdb96d957c9cd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651154"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć skojarzenia &lt;association nazwa &gt; — typy właściwości nie są zgodne.
+# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć &lt; nazwy skojarzenia skojarzenia &gt; — typy właściwości nie są zgodne.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nie można utworzyć skojarzenia \<association nazwa > — typy właściwości nie są zgodne. Właściwości nie mają pasujących typów: \<property nazw >.
+Nie można utworzyć skojarzenia \<association name> — typy właściwości nie są zgodne. Właściwości nie mają pasujących typów: \<property names> .
 
  Skojarzenia są definiowane przez wybrane **właściwości skojarzenia** w oknie dialogowym **Edytor skojarzeń** . Właściwości po obu stronach skojarzenia muszą być tego samego typu danych.
 

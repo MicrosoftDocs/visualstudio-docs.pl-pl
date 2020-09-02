@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetRegistryRoot | Dokumenty firmy Microsoft
+title: 'IDebugEngine2:: SetRegistryRoot | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: beba304e846126b262c23c0fc8232f79de5fd794
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730868"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
-Ustawia katalog główny rejestru dla aparatu debugowania (DE).
+Ustawia katalog główny rejestru dla aparatu debugowania (Niemcy).
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int SetRegistryRoot( 
 
 ## <a name="parameters"></a>Parametry
 `pszRegistryRoot`\
-[w] Katalog główny rejestru do użycia.
+podczas Katalog główny rejestru do użycia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pozwala określić alternatywny katalog główny rejestru, który de powinien używać do uzyskania ustawień rejestru; na przykład "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp".
+ Ta metoda pozwala [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] określić alternatywny katalog główny rejestru, który powinien być używany do uzyskiwania ustawień rejestru, na przykład "HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0Exp".
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87a27cdb6b278a01434662017e05e5dca38b8c9d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665862"
 ---
 # <a name="customizing-the-editor"></a>Dopasowywanie edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz dostosować formatowanie, karty, czcionki i kolory, IntelliSense i wiele innych funkcji edytora w ogólny lub w określonym edytorze języka, zmieniając opcje. Aby uzyskać więcej informacji na temat tych opcji, zobacz okno [dialogowe Opcje edytora tekstu](../ide/reference/text-editor-options-dialog-box.md) lub wpisz `Editor` do **szybkiego uruchamiania**. Możesz również zmienić sposób wyświetlania okien edytora.
+Możesz dostosować formatowanie, karty, czcionki i kolory, IntelliSense i wiele innych funkcji edytora w ogólny lub w określonym edytorze języka, zmieniając opcje. Aby uzyskać więcej informacji na temat tych opcji, zobacz [okno dialogowe Opcje edytora tekstu](../ide/reference/text-editor-options-dialog-box.md) lub typ `Editor` do **szybkiego uruchamiania**. Możesz również zmienić sposób wyświetlania okien edytora.
 
 ## <a name="in-this-section"></a>W tej sekcji
  W tych tematach wyjaśniono, jak dostosować wygląd i zachowanie edytora tekstu i kodu.

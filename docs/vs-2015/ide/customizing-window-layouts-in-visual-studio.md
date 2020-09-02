@@ -25,21 +25,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665838"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można dostosować położenie, rozmiar i zachowanie systemu Windows w celu utworzenia układów okna, które działają najlepiej dla różnych przepływów pracy deweloperskiej. Po dostosowaniu układu środowisko IDE zapamiętuje go. Na przykład jeśli zmienisz lokalizację dokowania **Eksplorator rozwiązań** a następnie zamkniesz program Visual Studio, przy następnym uruchomieniu, nawet jeśli pracujesz na innym komputerze, **Eksplorator rozwiązań** zostanie zadokowany w tej samej lokalizacji. Możesz również nadać niestandardowemu układowi nazwę i zapisać go, a następnie przełączać się między układami za pomocą jednego polecenia. Na przykład można utworzyć układ do edycji, drugi dla debugowania, i przełączać się między nimi przy użyciu polecenia **menu &#124; układ okna zastosowania** .
+W programie Visual Studio można dostosować położenie, rozmiar i zachowanie systemu Windows w celu utworzenia układów okna, które działają najlepiej dla różnych przepływów pracy deweloperskiej. Po dostosowaniu układu środowisko IDE zapamiętuje go. Na przykład jeśli zmienisz lokalizację dokowania **Eksplorator rozwiązań** a następnie zamkniesz program Visual Studio, przy następnym uruchomieniu, nawet jeśli pracujesz na innym komputerze, **Eksplorator rozwiązań** zostanie zadokowany w tej samej lokalizacji. Możesz również nadać niestandardowemu układowi nazwę i zapisać go, a następnie przełączać się między układami za pomocą jednego polecenia. Na przykład można utworzyć układ do edycji, drugi dla debugowania i przełączać się między nimi przy użyciu **okna &#124; Zastosuj Układ okna** polecenie menu.
 
 ## <a name="kinds-of-windows"></a>Rodzaje okien
 
 ### <a name="tool-and-document-windows"></a>Okna narzędzi i dokumentów
- Środowisko IDE ma dwa podstawowe typy okien, okna *narzędzi* i *okna dokumentów*. Okna narzędzi obejmują Eksplorator rozwiązań, Eksplorator serwera, Okno Dane wyjściowe, Lista błędów, projektantów, okien debugera i tak dalej. Okna dokumentów zawierają pliki kodu źródłowego, dowolne pliki tekstowe, pliki konfiguracji i tak dalej. Rozmiar okien narzędzi można zmienić i przeciągnąć je na pasku tytułu. Okna dokumentów można przeciągać według ich kart. Kliknij prawym przyciskiem myszy kartę lub pasek tytułu, aby ustawić inne opcje okna.
+ Środowisko IDE ma dwa podstawowe typy okien, okna *narzędzi* i *okna dokumentów*. Okna narzędzi obejmują Eksplorator rozwiązań, Eksplorator serwera, Okno Dane wyjściowe, Lista błędów, projektantów, okien debugera i tak dalej. Okna dokumentów zawierają pliki kodu źródłowego, dowolne pliki tekstowe, pliki konfiguracji i tak dalej. Rozmiar okien narzędzi można zmienić i przeciągnąć je na pasku tytułu. Okna dokumentów można przeciągnąć przez ich kartę. Kliknij prawym przyciskiem myszy kartę lub pasek tytułu, aby ustawić inne opcje okna.
 
  Menu **okno** zawiera opcje dokowania, zmiennoprzecinkowe i ukrywające okna w IDE. Kliknij prawym przyciskiem myszy kartę okna lub pasek tytułu, aby wyświetlić dodatkowe opcje dla danego okna. Można wyświetlić więcej niż jedno wystąpienie niektórych okien narzędzi naraz. Można na przykład wyświetlić więcej niż jedno okno przeglądarki sieci Web i utworzyć dodatkowe wystąpienia niektórych okien narzędzi, wybierając pozycję **nowe okno** w menu **okno** .
 
@@ -133,7 +133,7 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Tworzenie projektu interfejsu użytkownika i dostosowywanie układu
 
-1. W oknie dialogowym **Nowy projekt** Utwórz aplikację klasyczną C# Visual WPF i Wywołaj ją w dowolny sposób. Poudawać, że jest to projekt, w którym pracujemy nad interfejsem użytkownika, więc chcemy zmaksymalizować miejsce dla okna projektanta i przenieść inne okna narzędzi w sposób niezależny.
+1. W oknie dialogowym **Nowy projekt** Utwórz aplikację klasyczną Visual C# WPF i Wywołaj ją w dowolny sposób. Poudawać, że jest to projekt, w którym pracujemy nad interfejsem użytkownika, więc chcemy zmaksymalizować miejsce dla okna projektanta i przenieść inne okna narzędzi w sposób niezależny.
 
 2. Jeśli masz wiele monitorów, Pobierz okno **Eksplorator rozwiązań** i okno **Właściwości** do drugiego monitora. W jednym systemie monitorowania Spróbuj zamknąć wszystkie okna z wyjątkiem projektanta.
 
@@ -180,6 +180,6 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 |Tytuł|Opis|
 |-----------|-----------------|
 |[Rodzaje okien](../misc/kinds-of-windows.md)|W tym artykule omówiono różnice między oknami narzędzi i oknami dokumentu w IDE.|
-|[Instrukcje: rozmieszczanie i Dokowanie okien](../misc/how-to-arrange-and-dock-windows.md)|W tym artykule opisano, jak dokować, automatycznie ukrywać i rozkładać sąsiadująco okna, a także jak zresetować układ okien.|
+|[Porady: aranżowanie i dokowanie okien](../misc/how-to-arrange-and-dock-windows.md)|W tym artykule opisano, jak dokować, automatycznie ukrywać i rozkładać sąsiadująco okna, a także jak zresetować układ okien.|
 |[Instrukcje: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|W tym artykule opisano, jak przechodzić kolejno przez otwarte okna w IDE, w kolejności ich użycia. Opisano również, jak można przejść do określonych dokumentów.|
 |[Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Zawiera informacje dotyczące kombinacji ustawień i wpływu ustawień na układy okien, skróty klawiaturowe i inne elementy w IDE.|
