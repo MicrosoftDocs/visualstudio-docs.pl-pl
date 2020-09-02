@@ -34,10 +34,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 705b1a5992d1a3e7931c316c713d46e7e8c7f72e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657769"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, środowisko, opcje — Okno dialogowe
@@ -69,7 +69,7 @@ Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem
 > [!NOTE]
 > Wybierz tę opcję, aby włączyć polecenie **Widok w przeglądarce** w menu **plik** dla dokumentów sieci Web, które nie są uwzględnione w aktywnej aplikacji sieci Web.
 
- **\<** *n* **> elementy zapisane w projekcie różne pliki** określa liczbę plików, które mają być przechowywane w folderze **MiscellaneousFiles** w **Eksplorator rozwiązań**. Te pliki są wyświetlane nawet wtedy, gdy nie są już otwierane w edytorze. Można określić dowolną liczbę całkowitą od 0 do 256. Wartość domyślna to 0.
+ ** \<** *n* **> elementy zapisywane w projekcie różne pliki** określa liczbę plików, które mają być utrwalane w folderze **MiscellaneousFiles** **Eksplorator rozwiązań**. Te pliki są wyświetlane nawet wtedy, gdy nie są już otwierane w edytorze. Można określić dowolną liczbę całkowitą od 0 do 256. Wartość domyślna to 0.
 
  Na przykład jeśli ustawisz tę opcję na 5 i masz otwarte 10 różnych plików, po zamknięciu wszystkich 10 plików, pierwsze 5 będzie nadal wyświetlane w folderze **różne pliki** .
 

@@ -17,21 +17,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 560587e70365a485c3391a0623b959f88d417698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671059"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zapytanie sparametryzowane zwraca dane, które spełniają warunki klauzuli WHERE w zapytaniach. Na przykład możesz Sparametryzuj listę klientów, aby wyświetlić tylko klientów w określonym mieście, dodając `WHERE City = @City` na końcu instrukcji SQL, która zwraca listę klientów.
+Zapytanie sparametryzowane zwraca dane, które spełniają warunki klauzuli WHERE w zapytaniach. Na przykład możesz Sparametryzuj listę klientów, aby wyświetlić tylko klientów w określonym mieście przez dodanie `WHERE City = @City` do końca instrukcji SQL, która zwraca listę klientów.
 
 W Projektant obiektów Dataset można tworzyć sparametryzowane zapytania TableAdapter. Można je również utworzyć w aplikacji systemu Windows za pomocą polecenia **Sparametryzuj źródło danych** w menu **dane** . Polecenie **Sparametryzuj Data Source** tworzy kontrolki w formularzu, gdzie można wprowadzać wartości parametrów i uruchamiać zapytanie.
 
 > [!NOTE]
-> Podczas konstruowania zapytania parametrycznego należy użyć notacji parametru, która jest specyficzna dla bazy danych, względem której jest używane kodowanie. Na przykład źródła danych dostępu i OleDb używają znaku zapytania "?" do określenia parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?`.
+> Podczas konstruowania zapytania parametrycznego należy użyć notacji parametru, która jest specyficzna dla bazy danych, względem której jest używane kodowanie. Na przykład źródła danych dostępu i OleDb używają znaku zapytania "?" do określenia parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?` .
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy, w zależności od ustawień aktywnych lub używanej wersji. Aby zmienić ustawienia, przejdź do menu **Narzędzia** , a następnie wybierz pozycję **Importuj i Eksportuj ustawienia**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -40,7 +40,7 @@ W Projektant obiektów Dataset można tworzyć sparametryzowane zapytania TableA
 
 - Utwórz nowy TableAdapter, dodając klauzulę WHERE z odpowiednimi parametrami do instrukcji SQL. Aby uzyskać więcej informacji, zobacz [Tworzenie i Konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     —lub—
+     -lub-
 
 - Dodaj zapytanie do istniejącego TableAdapter, dodając klauzulę WHERE z odpowiednimi parametrami do instrukcji SQL.
 
@@ -59,23 +59,23 @@ W Projektant obiektów Dataset można tworzyć sparametryzowane zapytania TableA
 2. W menu **dane** wybierz pozycję **Dodaj zapytanie** lub **Tagi inteligentne danych**.
 
    > [!NOTE]
-   > Jeśli polecenie **Dodaj zapytanie** nie jest dostępne w menu **dane** , zaznacz kontrolkę w formularzu wyświetlającym źródło danych, do którego chcesz dodać parametryzacja. Na przykład, jeśli formularz wyświetla dane w kontrolce <xref:System.Windows.Forms.DataGridView>, zaznacz ją. Jeśli formularz wyświetla dane w poszczególnych kontrolkach, wybierz dowolny formant powiązany z danymi.
+   > Jeśli polecenie **Dodaj zapytanie** nie jest dostępne w menu **dane** , zaznacz kontrolkę w formularzu wyświetlającym źródło danych, do którego chcesz dodać parametryzacja. Na przykład, jeśli formularz wyświetla dane w <xref:System.Windows.Forms.DataGridView> kontrolce, zaznacz ją. Jeśli formularz wyświetla dane w poszczególnych kontrolkach, wybierz dowolny formant powiązany z danymi.
 
 3. W obszarze **Wybierz tabelę źródła danych** wybierz tablethat, do którego chcesz dodać parametryzacja.
 
 4. Wpisz nazwę w polu **Nowa nazwa zapytania** , jeśli tworzysz nowe zapytanie.
 
-    —lub—
+    -lub-
 
     W polu **Nazwa istniejącej kwerendy** wybierz zapytanie.
 
 5. W polu **tekstowym zapytanie** Wpisz zapytanie, które pobiera parametry.
 
-6. Wybierz **przycisk OK**.
+6. Wybierz pozycję **OK**.
 
-    Kontrolka do wprowadzania parametru i przycisk **ładowania** są dodawane do formularza w kontrolce <xref:System.Windows.Forms.ToolStrip>.
+    Kontrolka do wprowadzania parametru i przycisk **ładowania** są dodawane do formularza w <xref:System.Windows.Forms.ToolStrip> kontrolce.
 
-   Parametry TableAdapter mogą mieć przypisane wartości null, jeśli chcesz wysyłać zapytania o rekordy, które nie mają bieżącej wartości. Rozważmy na przykład następujące zapytanie, które ma `ShippedDate` parametr w jego klauzuli `WHERE`:
+   Parametry TableAdapter mogą mieć przypisane wartości null, jeśli chcesz wysyłać zapytania o rekordy, które nie mają bieżącej wartości. Rozważmy na przykład następujące zapytanie, które ma `ShippedDate` parametr w jego `WHERE` klauzuli:
 
    ```sql
    SELECT CustomerID, OrderDate, ShippedDate
@@ -93,10 +93,10 @@ Jeśli było to zapytanie w TableAdapter, można wykonać zapytanie o wszystkie 
 
 1. W **Projektant obiektów DataSet**wybierz zapytanie TableAdapter, które wymaga zaakceptowania wartości parametrów null.
 
-2. W oknie **Właściwości** wybierz pozycję **Parametry**. Następnie naciśnij przycisk wielokropka ( **...** ), aby otworzyć **Edytor kolekcji parametrów**.
+2. W oknie **Właściwości** wybierz pozycję **Parametry**. Następnie naciśnij przycisk wielokropka (**...**), aby otworzyć **Edytor kolekcji parametrów**.
 
-3. Wybierz parametr, który dopuszcza wartości null i ustaw właściwość **AllowDBNull** na `true`.
+3. Wybierz parametr, który dopuszcza wartości null i ustaw właściwość **AllowDBNull** na `true` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

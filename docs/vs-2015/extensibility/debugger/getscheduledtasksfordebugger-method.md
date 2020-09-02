@@ -1,5 +1,5 @@
 ---
-title: Metoda GetScheduledTasksForDebugger | Dokumentacja firmy Microsoft
+title: GetScheduledTasksForDebugger — Metoda | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4ac6fa753be7672f1e698bda231bd11217c10d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152734"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger, metoda
@@ -22,11 +22,11 @@ ms.locfileid: "68152734"
 
 Pobiera tablicę wszystkich zaplanowanych zadań.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Zestaw:** mscorlib (w mscorlib.dll)  
   
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,10 +35,10 @@ Pobiera tablicę wszystkich zaplanowanych zadań.
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Tablica wszystkich zaplanowanych zadań. Każde zadanie podrzędne jest wykonywanie lub zakończenia.  
+ Tablica wszystkich zaplanowanych zadań. Każde zadanie jest wykonywane lub zostało zakończone.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda nie jest bezpieczny dla wątków i nie powinny być używane równocześnie z innymi wystąpieniami <xref:System.Threading.Tasks.TaskScheduler> powinna być wywoływana z debugera tylko wtedy, gdy jest debugera wstrzymał inne wątki.  
+ Ta metoda nie jest bezpieczna wątkowo i nie należy jej używać jednocześnie z innymi wystąpieniami, <xref:System.Threading.Tasks.TaskScheduler> należy wywołać z debugera tylko wtedy, gdy debuger zatrzymał wszystkie pozostałe wątki.  
   
 ## <a name="see-also"></a>Zobacz też  
  [TaskScheduler, klasa](../../extensibility/debugger/taskscheduler-class-internal-members.md)

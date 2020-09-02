@@ -1,5 +1,5 @@
 ---
-title: Uidmanager — zadanie | Dokumentacja firmy Microsoft
+title: UidManager — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -21,27 +21,27 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703697"
 ---
 # <a name="uidmanager-task"></a>UidManager — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-<xref:Microsoft.Build.Tasks.Windows.UidManager> Zadanie sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby zlokalizować wszystkie [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] elementy, które znajdują się w źródle [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plików.  
+<xref:Microsoft.Build.Tasks.Windows.UidManager>Zadanie sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID) w celu zlokalizowania wszystkich [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] elementów uwzględnionych w [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plikach źródłowych.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`IntermediateDirectory`|Opcjonalnie **ciąg** parametru.<br /><br /> Określa katalog, który służy do tworzenia kopii zapasowej źródła [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] pliki, które są określone przez **MarkupFiles** parametru.|  
-|`MarkupFiles`|Wymagane **[] ITaskItem** parametru.<br /><br /> Określa źródło [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] pliki do dołączenia do UID sprawdzania, aktualizowania lub usuwania.|  
-|`Task`|Wymagane **ciąg** parametru.<br /><br /> Określa zadanie zarządzania UID, które chcesz wykonać. Prawidłowe opcje to **Sprawdź**, **aktualizacji**, lub **Usuń**.|  
+|`IntermediateDirectory`|Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog, który jest używany do tworzenia kopii zapasowych [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plików źródłowych, które są określone przez parametr **MarkupFiles** .|  
+|`MarkupFiles`|Wymagany parametr **ITaskItem []** .<br /><br /> Określa pliki źródłowe [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] , które mają być objęte sprawdzaniem UID, aktualizowaniem lub usuwaniem.|  
+|`Task`|Wymagany parametr **ciągu** .<br /><br /> Określa zadanie zarządzania UID, które ma zostać wykonane. Prawidłowe opcje to **check**, **Update**lub **Remove**.|  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto <xref:Microsoft.Build.Tasks.Windows.UidManager> zadania, aby sprawdzić, czy określone źródło [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] pliki zawierają [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] elementy, które mają odpowiednie UID.  
+ Poniższy przykład używa zadania, <xref:Microsoft.Build.Tasks.Windows.UidManager> Aby sprawdzić, czy określone pliki źródłowe [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] zawierają [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] elementy, które mają odpowiednie identyfikatory UID.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -60,7 +60,7 @@ ms.locfileid: "65703697"
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
+ [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Kompilowanie aplikacji WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Instrukcje: Lokalizowanie aplikacji](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
+ [Jak lokalizować aplikację](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

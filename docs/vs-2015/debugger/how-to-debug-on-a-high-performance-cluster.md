@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie w klastrze o wysokiej wydajności | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie w klastrze o wysokiej wydajności | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,92 +18,92 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702689"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Porady: debugowanie w klastrze o wysokiej wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajności jest podobne do debugowania zwykłego programu na komputerze zdalnym. Istnieją jednak pewne dodatkowe zagadnienia. Aby uzyskać wymagania ogólne instalacji zdalnej, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
+Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajności jest podobne do debugowania zwykłego programu na komputerze zdalnym. Jednak istnieją pewne dodatkowe zagadnienia. Ogólne wymagania dotyczące instalacji zdalnej można znaleźć w temacie [zdalne debugowanie](../debugger/remote-debugging.md).  
   
- Podczas debugowania w klastrze o wysokiej wydajności, można używać wszystkich [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugowania systemu windows i technik, które są dostępne dla zdalnego debugowania. Ponieważ przeprowadzasz debugowanie zdalne, jednak zewnętrzne okno konsoli nie jest dostępna.  
+ Podczas debugowania w klastrze o wysokiej wydajności można używać wszystkich [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okien debugowania i technik, które są dostępne do zdalnego debugowania. Ponieważ debugowanie jest przeprowadzane zdalnie, nie jest jednak dostępne okno konsoli zewnętrznej.  
   
- **Wątków** okna i **procesy** są szczególnie przydatne podczas debugowania aplikacji równoległych. Aby uzyskać porady na temat sposobu korzystania z tych okien, zobacz [jak: Korzystanie z okna procesów](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) i [jak: Korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md).  
+ Okno **wątków** okna i **procesy** są szczególnie przydatne w przypadku debugowania aplikacji równoległych. Aby uzyskać porady dotyczące korzystania z tych okien, zobacz [How to: Use the processs Window](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) i [How to: use Window Threads](../debugger/how-to-use-the-threads-window.md).  
   
  W poniższych procedurach przedstawiono kilka technik, które są szczególnie przydatne podczas debugowania w klastrze o wysokiej wydajności.  
   
- Podczas debugowania aplikacji równoległej, można ustawić punkt przerwania w określonym wątku, proces lub komputer. Można to zrobić, tworząc normalny punkt przerwania, a następnie dodając filtr punktu przerwania.  
+ Podczas debugowania aplikacji równoległej można ustawić punkt przerwania dla określonego wątku, procesu lub komputera. Można to zrobić, tworząc normalny punkt przerwania, a następnie dodając filtr punktu przerwania.  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Aby otworzyć okno dialogowe Filtr punktów przerwania  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Aby otworzyć okno dialogowe Filtr punktu przerwania  
   
-1. Kliknij prawym przyciskiem myszy symbol punktu przerwania w oknie źródła, **dezasemblacji** oknie **stos wywołań** oknie lub **punktów przerwania** okna.  
+1. Kliknij prawym przyciskiem myszy symbol punktu przerwania w oknie źródła, oknie **demontażu** , oknie **stos wywołań** lub oknie **punkty przerwania** .  
   
-2. W menu skrótów kliknij **filtru**. Ta opcja może pojawić się u góry poziomie lub w podmenu w obszarze **punktów przerwania**.  
+2. W menu skrótów kliknij polecenie **Filtruj**. Ta opcja może pojawić się na najwyższym poziomie lub w podmenu w obszarze **punkty przerwania**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Aby ustawić punkt przerwania na określonym komputerze  
   
-1. Pobierz nazwę komputera z **procesy** okna.  
+1. Pobierz nazwę komputera z okna **procesy** .  
   
-2. Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, zgodnie z opisem w poprzedniej procedurze.  
+2. Wybierz punkt przerwania, a następnie otwórz okno dialogowe **Filtr punktu przerwania** zgodnie z opisem w poprzedniej procedurze.  
   
-3. W **filtr punktów przerwania** okno dialogowe, typ:  
+3. W oknie dialogowym **Filtr punktu przerwania** wpisz:  
   
      MachineName =*yourmachinename*  
   
-     Aby utworzyć bardziej złożony filtr, można połączyć klauzule za pomocą `&`, operator i `||`, operatora OR `!`, operatora NOT i nawiasów.  
+     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&` , operatora i, `||` ,, operatora OR, operatora `!` not i nawiasów.  
   
 4. Kliknij przycisk **OK**.  
   
-### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Aby ustawić punkt przerwania w określonym procesie  
+### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Aby ustawić punkt przerwania dla określonego procesu  
   
-1. Pobierz nazwę procesu lub numer identyfikacyjny procesu z **procesy** okna.  
+1. Pobierz nazwę procesu lub numer IDENTYFIKACYJNy procesu z okna **procesy** .  
   
-2. Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, jak w pierwszej procedurze.  
+2. Wybierz punkt przerwania, a następnie otwórz okno dialogowe **Filtr punktu przerwania** , jak w pierwszej procedurze.  
   
-3. W **filtr punktów przerwania** okno dialogowe, typ:  
+3. W oknie dialogowym **Filtr punktu przerwania** wpisz:  
   
      `ProcessName =`  *yourprocessname*  
   
      —lub—  
   
-     `ProcessID =` *yourprocessIDnumber*  
+     `ProcessID =`*yourprocessIDnumber*  
   
-     Aby utworzyć bardziej złożony filtr, można połączyć klauzule za pomocą `&`, operator i `||`, operatora OR `!`, operatora NOT i nawiasów.  
+     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&` , operatora i, `||` ,, operatora OR, operatora `!` not i nawiasów.  
   
 4. Kliknij przycisk **OK**.  
   
-### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Aby ustawić punkt przerwania w określonym wątku  
+### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Aby ustawić punkt przerwania dla określonego wątku  
   
-1. Pobierz nazwę wątku lub numer identyfikacyjny wątku z **wątków** okna.  
+1. Pobierz nazwę wątku lub numer IDENTYFIKACYJNy wątku z okna **wątki** .  
   
-2. Zaznacz punkt przerwania, a następnie otwórz **filtr punktów przerwania** okno dialogowe, zgodnie z opisem w pierwszej procedurze.  
+2. Wybierz punkt przerwania i Otwórz okno dialogowe **Filtr punktu przerwania** zgodnie z opisem w pierwszej procedurze.  
   
-3. W **filtr punktów przerwania** okno dialogowe, typ:  
+3. W oknie dialogowym **Filtr punktu przerwania** wpisz:  
   
-     `ThreadName =` *yourthreadname*  
+     `ThreadName =`*yourthreadname*  
   
      —lub—  
   
-     `ThreadID =` *yourthreadIDnumber*  
+     `ThreadID =`*yourthreadIDnumber*  
   
-     Aby utworzyć bardziej złożony filtr, można połączyć klauzule za pomocą `&`, operator i `||`, operatora OR `!`, operatora NOT i nawiasów.  
+     Aby utworzyć bardziej skomplikowany filtr, można łączyć klauzule przy użyciu `&` , operatora i, `||` ,, operatora OR, operatora `!` not i nawiasów.  
   
 4. Kliknij przycisk **OK**.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak utworzyć filtr dla punktu przerwania na komputerze o nazwie `marvin` i wątek o nazwie `fourier1`.  
+ Poniższy przykład pokazuje, jak utworzyć filtr dla punktu przerwania na komputerze o nazwie `marvin` i wątku o nazwie `fourier1` .  
   
 ```  
 (MachineName = marvin) & (ThreadName = fourier1)  
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)   
- [Instrukcje: Korzystanie z okna procesów](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [Instrukcje: Korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md)   
- [Wątków i procesów](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Instrukcje: korzystanie z okna procesy](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Instrukcje: korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md)   
+ [Wątki i procesy](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)

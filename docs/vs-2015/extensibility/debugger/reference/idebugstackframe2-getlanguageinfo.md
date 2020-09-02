@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Dokumentacja firmy Microsoft
+title: 'IDebugStackFrame2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d370670ed86ee3484243fe5dc7cfdd8ea64be084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153139"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera język skojarzone z tą ramką stosu.  
+Pobiera język skojarzony z tą ramką stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,10 +42,10 @@ int GetLanguageInfo ( 
   
 #### <a name="parameters"></a>Parametry  
  `pbstrLanguage`  
- [out] Zwraca nazwę języka, który implementuje metodę skojarzoną z tą ramką stosu.  
+ określoną Zwraca nazwę języka implementującego metodę skojarzoną z tą ramką stosu.  
   
  `pguidLanguage`  
- [out] Zwraca `GUID` języka. Aby uzyskać [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] języków, na przykład, następujące mogą zostać zwrócone:  
+ określoną Zwraca wartość `GUID` języka. Na [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] przykład dla języków można zwrócić następujące elementy:  
   
 - `guidVBScriptLang`  
   
@@ -60,7 +60,7 @@ int GetLanguageInfo ( 
 - `guidScriptLang`  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

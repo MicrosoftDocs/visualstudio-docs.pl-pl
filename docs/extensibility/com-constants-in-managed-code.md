@@ -1,5 +1,5 @@
 ---
-title: Stałe COM w kodzie zarządzanym | Dokumenty firmy Microsoft
+title: Stałe modelu COM w kodzie zarządzanym | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739829"
 ---
-# <a name="com-constants-in-managed-code"></a>Stałe COM w kodzie zarządzanym
-Rama pakietu zarządzanego (MPF) udostępnia niektóre standardowe stałe COM do kodu zarządzanego. Te stałe są wymienione poniżej dla twojego odniesienia.
+# <a name="com-constants-in-managed-code"></a>Stałe modelu COM w kodzie zarządzanym
+Struktura pakietu zarządzanego (MPF) udostępnia kilka standardowych stałych modelu COM dostępnych w kodzie zarządzanym. Te stałe są wymienione poniżej jako odwołanie.
 
-## <a name="boolean-hresult-values"></a>Wartości HRESULT logiczne
+## <a name="boolean-hresult-values"></a>Logiczne wartości HRESULT
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
 
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>
@@ -89,7 +89,7 @@ Rama pakietu zarządzanego (MPF) udostępnia niektóre standardowe stałe COM do
 
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>
 
-## <a name="ole-dispatch-errors"></a>Błędy wysyłki OLE
+## <a name="ole-dispatch-errors"></a>Błędy wysyłania OLE
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>
@@ -127,4 +127,4 @@ Rama pakietu zarządzanego (MPF) udostępnia niektóre standardowe stałe COM do
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
 ## <a name="see-also"></a>Zobacz też
-- [Obsługa błędów i zwracanie wartości](../extensibility/error-handling-and-return-values.md)
+- [Obsługa błędów i zwracane wartości](../extensibility/error-handling-and-return-values.md)

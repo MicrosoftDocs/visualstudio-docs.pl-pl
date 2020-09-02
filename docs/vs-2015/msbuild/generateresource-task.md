@@ -1,5 +1,5 @@
 ---
-title: Generateresource — zadanie | Dokumentacja firmy Microsoft
+title: GenerateResource — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,58 +20,58 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 712d0de957ff7f780567c927fb1b18b100f8f6ca
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703519"
 ---
 # <a name="generateresource-task"></a>GenerateResource — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wykonuje konwersję między txt i pliki resx (w formacie zasobów opartych na języku XML) i common language runtime binarnych plików Resources, które mogą być osadzone w wykonywalnym pliku danych binarnych środowiska uruchomieniowego lub skompilowane do zestawów satelickich. To zadanie jest zazwyczaj używany w konwersji plików txt lub resx na pliki .resource. `GenerateResource` Zadanie jest podobne do [resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
+Konwertuje pliki. txt i. resx (format zasobów opartych na języku XML) i pliki binarne środowiska uruchomieniowego języka wspólnego, które mogą być osadzone w binarnym pliku wykonywalnym środowiska uruchomieniowego lub skompilowane w zestawach satelickich. To zadanie jest zwykle używane do konwertowania plików txt lub resx na pliki zasobów. `GenerateResource`Zadanie jest podobne do [resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry `GenerateResource` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AdditionalInputs`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Zawiera dodatkowe dane wejściowe, aby sprawdzanie zależności wykonywane przez to zadanie. Na przykład pliki projektu i obiektów docelowych zwykle należy danych wejściowych, więc, że jeśli są one aktualizowane wszystkie zasoby są generowane.|  
-|`EnvironmentVariables`|Opcjonalnie `String[]` parametru.<br /><br /> Określa tablicę par nazwa wartość w środowisku zmiennych, które powinny być przekazywane do zduplikowanych resgen.exe, oprócz (lub selektywnie zastępowanie) blok regularnych środowiska.|  
-|`ExcludedInputPaths`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa tablicę elementów, które określają ścieżek, z których śledzone dane wejściowe zostaną zignorowane podczas sprawdzania na bieżąco.|  
-|`ExecuteAsTool`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, uruchamia tlbimp.exe i aximp.exe z odpowiedniego obiektu docelowego framework-procesem do generowania zestawów niezbędne otoki. Ten parametr umożliwia wielowersyjności kodu programu `ResolveComReferences`.|  
-|`FilesWritten`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera nazwy wszystkie pliki zapisane na dysku. Obejmuje to plik pamięci podręcznej, jeśli istnieje. Ten parametr jest przydatne w przypadku implementacji czysty.|  
-|`MinimalRebuildFromTracking`|Opcjonalnie `Boolean` parametru.<br /><br /> Pobiera lub ustawia przełącznik, który określa, czy będzie używana śledzonych kompilacji przyrostowej. Jeśli `true`, kompilacja przyrostowa jest włączone; w przeciwnym razie zostanie wymuszone ponownej kompilacji.|  
-|`NeverLockTypeAssemblies`|Opcjonalnie `Boolean` parametru.<br /><br /> Określa nazwę wygenerowanego plików, na przykład plików Resources. Jeśli nie określisz nazwy, używana jest nazwa odpowiedniego pliku wejściowego i plik Resources, który jest tworzony jest umieszczany w katalogu, który zawiera plik wejściowy.|  
-|`OutputResources`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa nazwę wygenerowanego plików, na przykład plików Resources. Jeśli nie określisz nazwy, używana jest nazwa odpowiedniego pliku wejściowego i plik Resources, który jest tworzony jest umieszczany w katalogu, który zawiera plik wejściowy.|  
-|`PublicClass`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, tworzy silnie typizowanej klasy zasobów jako klasę publiczną.|  
-|`References`|Opcjonalnie `String[]` parametru.<br /><br /> Odwołania można załadować typów w plikach resx z. Elementy danych pliku ResX może mieć typ architektury .NET. Podczas odczytywania pliku ResX to muszą zostać rozwiązane. Zwykle rozwiązania problemu pomyślnie za pomocą standardowej, trwa ładowanie reguł. Jeśli podasz zestawów w `References`, ich wyższy priorytet.<br /><br /> Ten parametr nie jest wymagane dla silnie typizowanych zasobów.|  
-|`SdkToolsPath`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak resgen.exe.|  
-|`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy do przekonwertowania. Pozycji przekazanych do tego parametru musi mieć jedną z następujących rozszerzeń pliku:<br /><br /> -   `.txt`: Określa rozszerzenie pliku tekstowego do przekonwertowania. Pliki tekstowe mogą zawierać tylko zasoby w postaci ciągów.<br />-   `.resx`: Określa rozszerzenie pliku zasobów w formacie XML do konwersji.<br />-   `.restext`: Określa ten sam format jak txt. To rozszerzenie innej jest przydatne, jeśli chcesz wyraźnie odróżnić pliki źródłowe, zawierające zasoby z innych plikach źródłowych w procesie kompilacji.<br />-   `.resources`: Określa rozszerzenie pliku zasobu do konwersji.|  
-|`StateFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa ścieżkę do pliku opcjonalne pamięci podręcznej, który jest używany w celu przyspieszenia sprawdzania łączy w danych wejściowych plików resx zależności.|  
-|`StronglyTypedClassName`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę klasy dla silnie typizowanej klasy zasobów. Jeśli ten parametr nie jest określony, używany jest podstawowej nazwy pliku zasobów.|  
-|`StronglyTypedFilename`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa nazwę pliku dla pliku źródłowego. Jeśli ten parametr nie jest określony, nazwa klasy jest używany jako podstawowej nazwy pliku z rozszerzeniem zależne od języka. Na przykład: `MyClass.cs`.|  
-|`StronglyTypedLanguage`|Opcjonalnie `String` parametru.<br /><br /> Określa język do użycia podczas generowania klasy źródło silnie typizowanych zasobów. Ten parametr musi być zgodna dokładnie jeden z języków używany przez element CodeDomProvider. Na przykład: `VB` lub `C#`.<br /><br /> Przez przekazanie wartości do tego parametru, możesz poinstruować zadania, aby wygenerować silnie typizowanych zasobów.|  
-|`StronglyTypedManifestPrefix`|Opcjonalnie `String` parametru.<br /><br /> Określa prefiks przestrzeni nazw lub manifest zasobu, do użytku w źródle wygenerowanej klasy silnie typizowanych zasobów.|  
-|`StronglyTypedNamespace`|Opcjonalnie `String` parametru.<br /><br /> Określa przestrzeń nazw dla generowanej klasy źródło silnie typizowanych zasobów. Jeśli ten parametr nie jest określony, wszystkie zasoby silnie typizowane znajdują się w globalnej przestrzeni nazw.|  
-|`TLogReadFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru tylko do odczytu.<br /><br /> Pobiera tablicę elementów, które reprezentują odczytu dzienniki śledzenia.|  
-|`TLogWriteFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru tylko do odczytu.<br /><br /> Pobiera tablicę elementów, które reprezentują zapisu dzienniki śledzenia.|  
-|`ToolArchitecture`|(Opcjonalne [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Używany do określenia, czy Tracker.exe musi zostać użyte zduplikować ResGen.exe.<br /><br /> Powinien być przeanalizowania do elementu członkowskiego <xref:Microsoft.Build.Utilities.ExecutableType> wyliczenia. Jeśli `String.Empty`, używa heurystyki do określenia architektura domyślne. Powinien być przeanalizowania do elementu członkowskiego wyliczenia Microsoft.Build.Utilities.ExecutableType.|  
-|`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa ścieżkę do odpowiedniej lokalizacji środowiska .NET Framework, który zawiera FileTracker.dll.<br /><br /> Jeśli zestaw, użytkownik przyjmuje odpowiedzialność za zapewnienie, że wartości bitowości FileTracker.dll, który przekazują dopasowuje wartości bitowości programu ResGen.exe, które będą one używane. W przeciwnym razie zestawu, zadanie decyduje, odpowiednią lokalizację, w oparciu o bieżącą wersję systemu .NET Framework.|  
-|`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa katalog pośredni, w którym zostaną umieszczone dzienniki śledzenia uruchamianie tego zadania.|  
-|`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa ścieżkę do odpowiedniej lokalizacji zestawu Windows SDK, który zawiera Tracker.exe.<br /><br /> Jeśli zestaw, użytkownik przyjmuje odpowiedzialność za zapewnienie, że wartości bitowości Tracker.exe który przekazują dopasowuje wartości bitowości programu ResGen.exe, które będą one używane. W przeciwnym razie zestawu, zadanie decyduje, odpowiednią lokalizację, w oparciu o bieżący zestaw Windows SDK.|  
-|`TrackFileAccess`|(Opcjonalnie) [logiczną]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> W przypadku opcji true rozpoznawania względnych ścieżek plików jest używany katalog pliku wejściowego.|  
-|`UseSourcePath`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, określa, że katalog pliku wejściowego ma być używany do rozpoznawania względnych ścieżek plików.|  
+|`AdditionalInputs`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Zawiera dodatkowe dane wejściowe do sprawdzania zależności wykonane przez to zadanie. Na przykład pliki projektu i elementów docelowych zazwyczaj powinny być danymi wejściowymi, aby w przypadku ich aktualizacji wszystkie zasoby zostały ponownie wygenerowane.|  
+|`EnvironmentVariables`|Opcjonalny `String[]` parametr.<br /><br /> Określa tablicę par nazwa-wartość zmiennych środowiskowych, które powinny być przesyłane do zduplikowanego resgen.exe, oprócz (lub selektywnego przesłaniania) zwykłego bloku środowiska.|  
+|`ExcludedInputPaths`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Określa tablicę elementów, które określają ścieżki, z których śledzone dane wejściowe zostaną zignorowane podczas sprawdzania.|  
+|`ExecuteAsTool`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` program uruchamia tlbimp.exe i aximp.exe z odpowiedniego platformy docelowej, aby wygenerować niezbędne zestawy otoki. Ten parametr umożliwia wiele elementów docelowych `ResolveComReferences` .|  
+|`FilesWritten`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera nazwy wszystkich plików, które są zapisywane na dysku. Obejmuje to plik pamięci podręcznej, jeśli istnieje. Ten parametr jest przydatny w przypadku implementacji czystego.|  
+|`MinimalRebuildFromTracking`|Opcjonalny `Boolean` parametr.<br /><br /> Pobiera lub ustawia przełącznik określający, czy zostanie użyta śledzona kompilacja przyrostowa. Jeśli `true` kompilacja przyrostowa jest włączona; w przeciwnym razie zostanie wymuszone ponowne kompilowanie.|  
+|`NeverLockTypeAssemblies`|Opcjonalny `Boolean` parametr.<br /><br /> Określa nazwę wygenerowanych plików, takich jak pliki resources. Jeśli nazwa nie zostanie określona, zostanie użyta nazwa pasującego pliku wejściowego, a utworzony plik resources zostanie umieszczony w katalogu zawierającym plik wejściowy.|  
+|`OutputResources`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa nazwę wygenerowanych plików, takich jak pliki resources. Jeśli nazwa nie zostanie określona, zostanie użyta nazwa pasującego pliku wejściowego, a utworzony plik resources zostanie umieszczony w katalogu zawierającym plik wejściowy.|  
+|`PublicClass`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , tworzy klasę zasobów o jednoznacznie określonym typie jako Klasa publiczna.|  
+|`References`|Opcjonalny `String[]` parametr.<br /><br /> Odwołania do typów ładowania w plikach resx z. Elementy danych resx mogą mieć typ .NET. Po odczytaniu pliku resx należy rozwiązać ten problem. Zwykle jest ona rozwiązywana pomyślnie przy użyciu standardowych reguł ładowania typów. Jeśli postanowisz zestawy w `References` , mają one pierwszeństwo.<br /><br /> Ten parametr nie jest wymagany w przypadku zasobów o jednoznacznie określonym typie.|  
+|`SdkToolsPath`|Opcjonalny `String` parametr.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak resgen.exe.|  
+|`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy do przekonwertowania. Elementy przesłane do tego parametru muszą mieć jedno z następujących rozszerzeń:<br /><br /> -   `.txt`: Określa rozszerzenie pliku tekstowego do przekonwertowania. Pliki tekstowe mogą zawierać tylko zasoby w postaci ciągów.<br />-   `.resx`: Określa rozszerzenie pliku zasobów opartego na języku XML do przekonwertowania.<br />-   `.restext`: Określa ten sam format jako txt. To inne rozszerzenie jest przydatne, jeśli chcesz wyraźnie odróżnić pliki źródłowe zawierające zasoby z innych plików źródłowych w procesie kompilacji.<br />-   `.resources`: Określa rozszerzenie pliku zasobu do przekonwertowania.|  
+|`StateFile`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa ścieżkę do opcjonalnego pliku pamięci podręcznej, który jest używany do przyspieszenia sprawdzania zależności linków w plikach wejściowych. resx.|  
+|`StronglyTypedClassName`|Opcjonalny `String` parametr.<br /><br /> Określa nazwę klasy dla klasy zasobów o jednoznacznie określonym typie. Jeśli ten parametr nie jest określony, zostanie użyta nazwa podstawowa pliku zasobu.|  
+|`StronglyTypedFilename`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa nazwę pliku źródłowego. Jeśli ten parametr nie jest określony, nazwa klasy zostanie użyta jako podstawowa nazwa pliku z rozszerzeniem zależnym od języka. Na przykład: `MyClass.cs`.|  
+|`StronglyTypedLanguage`|Opcjonalny `String` parametr.<br /><br /> Określa język, który ma być używany podczas generowania źródła klasy dla zasobu silnie określonego typu. Ten parametr musi być zgodny z dokładnie jednym z języków używanych przez CodeDomProvider. Na przykład: `VB` lub `C#` .<br /><br /> Przekazując wartość do tego parametru, nakazujesz zadanie generowania zasobów o jednoznacznie określonym typie.|  
+|`StronglyTypedManifestPrefix`|Opcjonalny `String` parametr.<br /><br /> Określa przestrzeń nazw zasobów lub prefiks manifestu do użycia w wygenerowanym źródle klasy dla zasobu silnie określonego typu.|  
+|`StronglyTypedNamespace`|Opcjonalny `String` parametr.<br /><br /> Określa przestrzeń nazw, która ma być używana dla wygenerowanego źródła klasy dla zasobu silnie określonego typu. Jeśli ten parametr nie jest określony, wszystkie zasoby o jednoznacznie określonym typie znajdują się w globalnej przestrzeni nazw.|  
+|`TLogReadFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr tylko do odczytu.<br /><br /> Pobiera tablicę elementów reprezentujących dzienniki śledzenia odczytu.|  
+|`TLogWriteFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr tylko do odczytu.<br /><br /> Pobiera tablicę elementów reprezentujących dzienniki śledzenia zapisu.|  
+|`ToolArchitecture`|Optional [ciąg] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->konstruktora.<br /><br /> Służy do określenia, czy Tracker.exe należy użyć do duplikowania ResGen.exe.<br /><br /> Powinien być możliwy do przeanalizowania dla elementu członkowskiego <xref:Microsoft.Build.Utilities.ExecutableType> wyliczenia. Jeśli `String.Empty` , używa algorytmu heurystycznego do określenia architektury domyślnej. Powinien być możliwy do przeanalizowania w składowej Microsoft.Build.Utilities.Exewyliczenia cutableType.|  
+|`TrackerFrameworkPath`|Opcjonalne <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> konstruktora.<br /><br /> Określa ścieżkę do odpowiedniej lokalizacji .NET Framework zawierającej FileTracker.dll.<br /><br /> W przypadku ustawienia użytkownik jest odpowiedzialny za upewnienie się, że liczba bitów FileTracker.dll przekazana jest zgodna z bitową ResGen.exe, która ma być używana. Jeśli nie zostanie ustawiona, zadanie decyduje o odpowiedniej lokalizacji w oparciu o bieżącą wersję .NET Framework.|  
+|`TrackerLogDirectory`|Opcjonalne <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> konstruktora.<br /><br /> Określa katalog pośredni, w którym będą umieszczane dzienniki śledzenia z uruchamiania tego zadania.|  
+|`TrackerSdkPath`|Opcjonalne <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> konstruktora.<br /><br /> Określa ścieżkę do odpowiedniej lokalizacji Windows SDK zawierającej Tracker.exe.<br /><br /> W przypadku ustawienia użytkownik jest odpowiedzialny za upewnienie się, że liczba bitów Tracker.exe przekazana jest zgodna z bitową ResGen.exe, która ma być używana. Jeśli nie zostanie ustawiona, zadanie decyduje o odpowiedniej lokalizacji na podstawie bieżącego Windows SDK.|  
+|`TrackFileAccess`|Optional [Boolean] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->konstruktora.<br /><br /> W przypadku wartości true katalog pliku wejściowego jest używany do rozpoznawania względnych ścieżek plików.|  
+|`UseSourcePath`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli `true` , określa, że katalog pliku wejściowego ma być używany do rozpoznawania względnych ścieżek plików.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ponieważ pliki resx może zawierać łącza do innych plików zasobów, nie jest wystarczające, aby po prostu porównania .resx oraz .resource sygnatury czasowe pliku, aby sprawdzić, czy dane wyjściowe są aktualne. Zamiast tego `GenerateResource` zadanie śledzi linki w plikach resx i sprawdza, czy znacznikami czasu plików połączonych. Oznacza to, że nie należy generalnie używać `Inputs` i `Outputs` atrybutów na docelowym zawierający `GenerateResource` zadania, ponieważ może to doprowadzić do pominięcia podczas faktycznie należy uruchomić.  
+ Ponieważ pliki RESX mogą zawierać linki do innych plików zasobów, nie wystarczy po prostu porównać sygnatury czasowe plików resx i zasobów, aby sprawdzić, czy dane wyjściowe są aktualne. Zamiast tego `GenerateResource` zadanie następuje po linków w plikach resx i sprawdza również sygnatury czasowe połączonych plików. Oznacza to, że nie należy generalnie używać `Inputs` i `Outputs` atrybutów w miejscu docelowym zawierającym `GenerateResource` zadanie, ponieważ może to spowodować, że zostanie pominięte, gdy powinien zostać rzeczywiście uruchomiony.  
   
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
- Przy użyciu programu MSBuild 4.0 projektów docelowych .NET 3.5, kompilacja może zakończyć się niepowodzeniem na x86 zasobów. Aby obejść ten problem, możesz utworzyć element docelowy jako zestawu AnyCPU.  
+ W przypadku używania programu MSBuild 4,0 do celów projektów programu .NET 3,5 kompilacja może zakończyć się niepowodzeniem w zasobach x86. Aby obejść ten problem, można utworzyć obiekt docelowy jako zestaw AnyCPU.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `GenerateResource` zadania, aby wygenerować plików Resources z plików określone przez `Resx` elementu kolekcji.  
+ Poniższy przykład używa `GenerateResource` zadania do generowania plików Resources z plików określonych przez `Resx` kolekcję elementów.  
   
 ```  
 <GenerateResource  
@@ -83,16 +83,16 @@ Wykonuje konwersję między txt i pliki resx (w formacie zasobów opartych na j�
 </GenerateResource>  
 ```  
   
- `GenerateResource` Zadanie używa \<LogicalName > Metadane \<EmbeddedResource > element, aby nazwa zasobu, który jest osadzony w zestawie.  
+ `GenerateResource`Zadanie używa \<LogicalName> metadanych \<EmbeddedResource> elementu, aby nazwać zasób osadzony w zestawie.  
   
- Przy założeniu, że zestaw jest o nazwie myAssembly, poniższy kod generuje osadzony zasób o nazwie someQualifier.someResource.resources:  
+ Przy założeniu, że zestaw nosi nazwę, poniższy kod generuje osadzony zasób o nazwie someQualifier. someResource. Resources:  
   
 ```  
 <ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
- Bez \<LogicalName > metadane, zasobu będą miały postać myAssembly.myResource.resources.  Ten przykład dotyczy tylko dla procesu kompilacji w Visual Basic i Visual C#.  
+ Bez \<LogicalName> metadanych zasób zostałby nazwany. WebResource. resources.  Ten przykład dotyczy tylko procesu kompilacji Visual Basic i Visual C#.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zadania](../msbuild/msbuild-tasks.md)   
+ [Widoku](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

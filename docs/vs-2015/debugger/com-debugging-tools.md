@@ -1,5 +1,5 @@
 ---
-title: Narzędzia debugowania COM | Dokumentacja firmy Microsoft
+title: Narzędzia debugowania modelu COM | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,26 +23,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca08eb272b51c256fb9f5f7b5b9d998982c6e5d0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702456"
 ---
 # <a name="com-debugging-tools"></a>Narzędzia debugowania COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten temat zawiera narzędzia, które mogą pomóc Ci testowanie i sprawdzanie programy COM.  
+Ten temat zawiera listę narzędzi, które mogą pomóc w testowaniu i sprawdzaniu programów COM.  
   
  Przeglądarka obiektów OLE/COM  
- OLEVIEW Wyświetla zainstalowane na komputerze i interfejsy, które obsługują obiekty ActiveX i OLE. Umożliwia także edytować rejestr i przyjrzyj się bibliotek typów. Aby uzyskać więcej informacji, zobacz [przy użyciu OLE/COM Object Viewer](https://msdn.microsoft.com/library/a3359e31-2869-451d-9571-129b4e8b41f0).  
+ OLEVIEW wyświetla ActiveX i obiekty OLE zainstalowane na komputerze oraz obsługiwane przez nich interfejsy. Pozwala również edytować rejestr i przeglądać biblioteki typów. Aby uzyskać więcej informacji, zobacz [Korzystanie z przeglądarki obiektów OLE/com](https://msdn.microsoft.com/library/a3359e31-2869-451d-9571-129b4e8b41f0).  
   
  Przykłady klas Microsoft Foundation  
- Przykłady MFC ActiveX OCLIENT i SUPERPAD są również możliwe było przetestowanie aplikacji przed. Dołączono pełny kod źródłowy dla tych przykładów.  
+ Przykłady kontrolek ActiveX MFC OCLIENT i SUPERPAD są również dostępne do testowania aplikacji. Uwzględniono pełny kod źródłowy tych przykładów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)   
- [Narzędzia debugowania COM](../debugger/com-debugging-tools.md)   
+ [Debugowanie modelu COM i ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Narzędzia debugowania modelu COM](../debugger/com-debugging-tools.md)   
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Przykład OCLIENT: Pokazuje wizualną edycję aplikacji kontenera](https://msdn.microsoft.com/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)   
- [Przykład SUPERPAD: Pokazuje wizualną edycję serwera, który umożliwia edycję tekstu za pomocą CEditView](https://msdn.microsoft.com/7b14e975-d986-4e6a-8289-226485cfcb72)
+ [Przykład OCLIENT: ilustruje wizualną edycję kontenera aplikacji](https://msdn.microsoft.com/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)   
+ [Przykład SUPERPAD: pokazuje wizualny serwer edycji, który Edytuje tekst za pomocą elementu CEditView](https://msdn.microsoft.com/7b14e975-d986-4e6a-8289-226485cfcb72)

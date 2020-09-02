@@ -1,5 +1,5 @@
 ---
-title: Izolowany Parametry punktu wejścia powłoki (C++) | Dokumentacja firmy Microsoft
+title: Parametry punktu wejścia izolowanej powłoki (C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439808"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64825159"
 ---
-# <a name="isolated-shell-entry-point-parameters-c"></a>Parametry punktu wejścia Isolated Shell (C++)
+# <a name="isolated-shell-entry-point-parameters-c"></a>Parametry punktu wejścia w programie Shell (izolowanym) — C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po uruchomieniu aplikacji opartych na powłoce Visual Studio wywołuje punkt wejścia uruchamiania powłoki programu Visual Studio. Następujące ustawienia można zastąpić w wywołaniu do punktu wejścia uruchamiania powłoki. Aby uzyskać opis każdego ustawienia, zobacz [. Pliki Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
+Gdy uruchamiana jest aplikacja oparta na programie Visual Studio Shell, wywołuje początkowy punkt wejścia powłoki programu Visual Studio. Następujące ustawienia mogą zostać zastąpione w wywołaniu punktu wejścia uruchomienia powłoki. Opis każdego ustawienia można znaleźć w temacie [. Pliki pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
 - AddinsAllowed  
   
 - AllowsDroppedFilesOnMainWindow  
   
-- AppName  
+- Argumentu  
   
 - CommandLineLogo  
   
@@ -57,27 +57,27 @@ Po uruchomieniu aplikacji opartych na powłoce Visual Studio wywołuje punkt wej
   
 - UserOptsFileExt  
   
-  Visual Studio Shell izolowane szablon tworzy plik źródłowy *solutionName*.cpp, gdzie *solutionName* jest nazwą rozwiązania dla aplikacji. Ten plik definiuje główny punkt wejścia dla aplikacji funkcji _tWinMain. Ta funkcja wywołuje punkt wejścia początkowy powłoki.  
+  Szablon izolowany programu Visual Studio Shell tworzy plik źródłowy, *SolutionName*. cpp, gdzie *SolutionName* jest nazwą rozwiązania dla aplikacji. Ten plik definiuje główny punkt wejścia dla aplikacji, funkcję _tWinMain. Ta funkcja wywołuje początkowy punkt wejścia powłoki.  
   
-  Sposób działania aplikacji można zmienić, zmieniając tych ustawień podczas uruchamiania aplikacji.  
+  Zachowanie aplikacji można zmienić, zmieniając te ustawienia podczas uruchamiania aplikacji.  
   
 ## <a name="parameters"></a>Parametry  
- Punkt wejścia uruchamiania powłoki programu Visual Studio definiuje pięć parametrów. Nie zmieniaj pierwsze cztery parametry. Piąty parametr przyjmuje listę zastąpienie ustawień. Punkt wejścia początkowy powłoki jest wywoływana z główny punkt wejścia aplikacji.  
+ Początkowy punkt wejścia powłoki programu Visual Studio definiuje pięć parametrów. Nie należy zmieniać pierwszych czterech parametrów. Piąty parametr przyjmuje listę ustawień zastąpień. Początkowy punkt wejścia powłoki jest wywoływany z głównego punktu wejścia aplikacji.  
   
- Punkt wejścia początkowy powłoki ma następujący podpis.  
+ Początkowy punkt wejścia powłoki ma następującą sygnaturę.  
   
 ```  
 typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);  
 ```  
   
- Jeśli nie chcesz zastąpić wszelkie ustawienia aplikacji, pozostaw wartość ustawienia zastępowania parametru jako wskaźnikiem typu null.  
+ Jeśli nie chcesz przesłonić żadnych ustawień aplikacji, pozostaw wartość parametru ustawienia jako wskaźnik o wartości null.  
   
- Aby zastąpić co najmniej jedno ustawienie, należy przekazać ciąg Unicode, który zawiera ustawienia do zastąpienia. Ten ciąg jest rozdzieloną średnikami listę par nazwa wartość. Każda para zawiera nazwę ustawienie, aby zastąpić, następuje znak równości (=), a następnie według wartości, aby zastosować ustawienia.  
+ Aby zastąpić jedno lub więcej ustawień, należy przekazać ciąg Unicode zawierający ustawienia, które mają zostać zastąpione. Ciąg jest rozdzielaną średnikami listą par nazwa-wartość. Każda para zawiera nazwę ustawienia do przesłonięcia, po którym następuje znak równości (=), a następnie wartość, która ma zostać zastosowana do ustawienia.  
   
 > [!NOTE]
-> Nie dołączaj białe znaki w ciągach znaków Unicode.  
+> W ciągach Unicode nie należy umieszczać białych znaków.  
   
- Wartość logiczna ustawień następujące ciągi reprezentować wartość true; inne ciągi reprezentować wartość false. Tych ciągów jest rozróżniana wielkość liter.  
+ W przypadku ustawień logicznych następujące ciągi reprezentują wartość true; wszystkie inne ciągi reprezentują wartość false. W tych ciągach nie jest rozróżniana wielkość liter.  
   
 - \+  
   
@@ -92,8 +92,8 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 - tak  
   
 ## <a name="example"></a>Przykład  
- Aby wyłączyć dodatki i zmiany domyślnej lokalizacji projektów aplikacji, można ustawić ostatni parametr "AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp".  
+ Aby wyłączyć dodatki i zmienić domyślną lokalizację projektów dla aplikacji, można ustawić ostatni parametr na "AddinsAllowed = false; DefaultProjectsLocation =%USERPROFILE%\temp".  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dostosowywanie programu Isolated Shell](../extensibility/customizing-the-isolated-shell.md)   
- [Pliki pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [Dostosowywanie powłoki izolowanej](../extensibility/customizing-the-isolated-shell.md)   
+ [Pliki .Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

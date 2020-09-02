@@ -1,5 +1,5 @@
 ---
-title: Signfile — zadanie | Dokumentacja firmy Microsoft
+title: SignFile — — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,37 +20,37 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703736"
 ---
 # <a name="signfile-task"></a>SignFile — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podpisuje określonego pliku przy użyciu określonego certyfikatu.  
+Podpisuje określony plik przy użyciu podanego certyfikatu.  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry `SignFile` zadania.  
   
- Należy pamiętać, że certyfikaty algorytmu SHA-256 są dozwolone tylko na maszynach mających .NET 4.5 lub nowszy.  
+ Należy pamiętać, że certyfikaty SHA-256 są dozwolone tylko na maszynach z platformą .NET 4,5 lub nowszym.  
   
 > [!WARNING]
-> Począwszy od programu Visual Studio 2013 Update 3 to zadanie ma nowy podpisu, który pozwala na określenie wersji platformy docelowej dla pliku. Jesteś, zaleca się stosowanie nowa sygnatura wszędzie tam, gdzie to możliwe, ponieważ proces MSBuild używa algorytmu SHA-256 skróty, tylko wtedy, gdy platforma docelowa jest .NET 4.5 lub nowszej. Jeśli platformę docelową jest program .NET 4.0 lub poniżej, nie można używać skrótu SHA-256.  
+> Począwszy od Visual Studio 2013 Update 3, to zadanie ma nowy podpis, który pozwala określić wersję platformy docelowej dla tego pliku. Zaleca się używanie nowej sygnatury wszędzie tam, gdzie jest to możliwe, ponieważ proces MSBuild używa skrótów SHA-256 tylko wtedy, gdy platformą docelową jest program .NET 4,5 lub nowszy. Jeśli platformą docelową jest program .NET 4,0 lub niższy, skrót SHA-256 nie zostanie użyty.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`CertificateThumbprint`|Wymagane `String` parametru.<br /><br /> Określa certyfikat do użycia podczas podpisywania. Ten certyfikat musi znajdować się w magazynie osobistym bieżącego użytkownika.|  
-|`SigningTarget`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa pliki, aby zalogować się przy użyciu certyfikatu.|  
-|`TimestampUrl`|Opcjonalnie `String` parametru.<br /><br /> Określa adres URL serwera sygnatur czasowych.|  
+|`CertificateThumbprint`|Wymagany parametr interfejsu `String`.<br /><br /> Określa certyfikat, który ma być używany do podpisywania. Ten certyfikat musi znajdować się w magazynie osobistym bieżącego użytkownika.|  
+|`SigningTarget`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa pliki do podpisania przy użyciu certyfikatu.|  
+|`TimestampUrl`|Opcjonalny `String` parametr.<br /><br /> Określa adres URL serwera sygnatury czasowej.|  
 |`TargetFrameworkVersion`|Wersja .NET Framework, która jest używana dla elementu docelowego.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [klasa podstawowa zadania](../msbuild/task-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [Klasa bazowa zadania](../msbuild/task-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `SignFile` zadania do podpisywania plików określonych w `FilesToSign` elementu kolekcji za pomocą certyfikatu określonego przez `Certificate` właściwości.  
+ Poniższy przykład używa `SignFile` zadania do podpisywania plików określonych w `FilesToSign` kolekcji elementów z certyfikatem określonym przez `Certificate` Właściwość.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -70,10 +70,10 @@ Podpisuje określonego pliku przy użyciu określonego certyfikatu.
 ```  
   
 > [!NOTE]
-> Odcisk palca certyfikatu jest Skrót SHA-1 certyfikatu. Aby uzyskać więcej informacji, zobacz [uzyskać Skrót SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
+> Odcisk palca certyfikatu to skrót SHA-1 certyfikatu. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie skrótu SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `Exec` zadania do podpisywania plików określonych w `FilesToSign` elementu kolekcji za pomocą certyfikatu określonego przez `Certificate` właściwości. Służy to do podpisywania plików Instalatora Windows podczas procesu kompilacji.  
+ Poniższy przykład używa `Exec` zadania do podpisywania plików określonych w `FilesToSign` kolekcji elementów z certyfikatem określonym przez `Certificate` Właściwość. Można go użyć do podpisywania plików Instalator Windows podczas procesu kompilacji.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

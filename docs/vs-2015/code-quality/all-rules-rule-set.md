@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e4cc53b623003fce3c47b7230650ae5a92e3c335
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671148"
 ---
 # <a name="all-rules-rule-set"></a>Zestaw reguł All Rules
@@ -21,6 +21,6 @@ ms.locfileid: "72671148"
 
 Zestaw reguł wszystkie reguły zawiera wszystkie reguły dla kodu natywnego i zarządzanego. Zestaw reguł zawiera wszystkie reguły, które są opisane w następujących tematach:
 
-1. [Analiza kodu C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)
+1. [Analiza kodu dla ostrzeżeń C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
 
-2. [Analiza kodu zarządzanego — ostrzeżenia](../code-quality/code-analysis-for-managed-code-warnings.md)
+2. [Analiza kodu dla ostrzeżeń związanych z kodem zarządzanym](../code-quality/code-analysis-for-managed-code-warnings.md)

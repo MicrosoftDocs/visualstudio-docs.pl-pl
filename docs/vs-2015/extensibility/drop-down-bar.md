@@ -1,5 +1,5 @@
 ---
-title: Listę rozwijaną paska | Dokumentacja firmy Microsoft
+title: Pasek listy rozwijanej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,44 +11,44 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4296a8fa4146a52d167bce3d8b051aa3ca073
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204650"
 ---
 # <a name="drop-down-bar"></a>Pasek list rozwijanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pasek listy rozwijanej znajduje się w górnej części okna kodu i zawiera dwie listy rozwijanej.  
+Pasek listy rozwijanej znajduje się u góry okna kod i zawiera dwie listy rozwijane.  
   
-## <a name="drop-down-bar-interfaces"></a>Interfejsy listę rozwijaną paska  
- W [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], na przykład pasek lista rozwijana zawiera listy dla [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] elementów i [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] elementy członkowskie funkcji, jak pokazano na poniższej ilustracji.  
+## <a name="drop-down-bar-interfaces"></a>Interfejsy słupków rozwijanych  
+ Na [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] przykład na pasku listy rozwijanej znajdują się listy [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] elementów członkowskich elementy i [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] elementy, jak pokazano na poniższej ilustracji.  
   
- ![Upuść&#45;dół paski](../extensibility/media/vsdropdown-bar.gif "vsDropdown_bar")  
-Listę rozwijaną paska  
+ ![Upuść&#45;słupki w dół](../extensibility/media/vsdropdown-bar.gif "vsDropdown_bar")  
+Pasek listy rozwijanej  
   
- Podczas implementowania pasek listy rozwijanej, dostępne są cztery interfejsy podstawowe znaczenie:  
+ Podczas implementowania paska rozwijanego istnieją cztery interfejsy podstawowej ważności:  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>  
   
-     Implementuje ten interfejs do wstawiania zawartości paska listy rozwijanej. Każda kombinacja listy rozwijanej może zawierać zwykły tekst lub ozdobnych tekst (pogrubienie, podkreślenie lub kursywa), może zawierać kolorowanie czcionki tekstu okna lub wygaszone się czcionki, kolorowanie, a opcjonalnie możesz podać małe mapy bitowe obok elementu listy rozwijanej. Podobnie jak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfejsu, obrazy bitmapowe znajdują się na listach obrazów. Każda kombinacja listy rozwijanej może się znajdować lista innego obrazu; Jednak każda lista obrazu musi zawierać obrazów sama wysokość. Ponadto za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> metoda, może dostarczyć etykietkę narzędzia dla każdej kombinacji.  
+     Zaimplementuj ten interfejs, aby wstawić zawartość paska listy rozwijanej. Każda kombinacja rozwijana może zawierać zwykły tekst lub ozdobny tekst (pogrubiony, podkreślenie lub kursywa), może mieć kolorowanie czcionki okna lub wyszarzone, a opcjonalnie zapewnić małą mapę bitową obok elementu listy rozwijanej. Podobnie jak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfejs, obrazy map bitowych są udostępniane na listach obrazów. Każda kombinacja rozwijana może mieć inną listę obrazów; jednak każda lista obrazów musi zawierać obrazy o tej samej wysokości. Ponadto za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> metody można podać etykietkę narzędzia dla każdej kombinacji.  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>  
   
-     Wywołanie tego interfejsu, aby utworzyć lub zniszczyć pasek listy rozwijanej w oknie kodu. Ten interfejs może również określić, czy pasek listy rozwijanej jest już dołączony do okna kodu, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> metody. Wywołaj <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> dla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.  
+     Wywołaj ten interfejs, aby utworzyć lub zniszczyć pasek listy rozwijanej dla okna kodu. Tego interfejsu można także użyć do określenia, czy pasek listy rozwijanej jest już dołączony do okna kodu przez wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> metody. Wywołaj <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> od <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> .  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>  
   
-     Wywołanie tego interfejsu, aby komunikować się bezpośrednio z paska listy rozwijanej. Można użyć tego interfejsu, aby wymusić odświeżenie listy rozwijanej paska zawartość lub aby zmienić wybór w jednym z pól listy.  
+     Wywołaj ten interfejs, aby komunikować się bezpośrednio z paskiem listy rozwijanej. Możesz użyć tego interfejsu, aby wymusić odświeżenie zawartości paska rozwijanego lub zmianę zaznaczenia w jednym z pól listy.  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>  
   
-     Jeśli zarejestrowano `ShowDropdownBarOption` w ten sposób klucza rejestru usługi języka następnie Menedżera okna kodu należy monitorować to zdarzenie, aby zapewnić synchronizację z preferencje użytkownika dotyczące tego, czy powinien być wyświetlany pasek listy rozwijanej. Jeśli ta opcja nie zostanie zarejestrowany w ten sposób klucza usługi w języka, a następnie opcję, aby pokazać lub ukryć pasek listy rozwijanej jest wyłączona na **opcje** menu.  
+     Jeśli zarejestrowano `ShowDropdownBarOption` w kluczu rejestru usługi językowej, Menedżer okien kodu musi monitorować to zdarzenie, aby synchronizować się z preferencjami użytkownika dotyczącymi tego, czy ma być wyświetlany pasek listy rozwijanej. Jeśli nie zarejestrujesz tej opcji w kluczu usługi językowej, opcja pokazywania lub ukrywania paska rozwijanego jest wyłączona w menu **Opcje** .  
   
-## <a name="attaching-a-drop-down-bar-to-a-code-window"></a>Dołączanie pasek listy rozwijanej do okna kodu  
- Aby dołączyć listę rozwijaną paska do okna kodu podczas jego tworzenia, usługa języka należy dołączać do listy rozwijanej paska, kiedy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> metoda jest wywoływana. Jeśli wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> metoda wskazuje, że pasek listy rozwijanej jeszcze nie istnieje, a następnie wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A>. Aby uzyskać dostęp do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> interfejsu, zadzwoń <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> wskaźnik zwrócona do Ciebie, gdy usługi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> implementacja została dołączona.  
+## <a name="attaching-a-drop-down-bar-to-a-code-window"></a>Dołączanie paska listy rozwijanej do okna kodu  
+ Aby dołączyć pasek listy rozwijanej do okna kodu podczas jego tworzenia, usługa języka powinna dołączyć do paska listy rozwijanej, gdy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> wywoływana jest metoda. Jeśli wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> metody wskazuje, że pasek listy rozwijanej jeszcze nie istnieje, a następnie Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A> . Aby uzyskać dostęp do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> interfejsu, wywołaj <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> od <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> wskaźnika zwróconego do Ciebie, gdy Twoja <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> implementacja została dołączona.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dostosowywanie kodu Windows za pomocą starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
+ [Dostosowywanie systemu Windows przy użyciu starszego interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
  [Obsługa paska nawigacyjnego w starszej wersji usługi językowej](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)

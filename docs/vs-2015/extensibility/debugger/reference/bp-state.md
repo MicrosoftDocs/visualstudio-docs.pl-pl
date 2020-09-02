@@ -1,5 +1,5 @@
 ---
-title: BP_STATE | Dokumentacja firmy Microsoft
+title: BP_STATE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4de23d462136ad417859d7064fef6b4ace7e59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153252"
 ---
-# <a name="bpstate"></a>BP_STATE
+# <a name="bp_state"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa istnienie powiązany punkt przerwania i określa, czy jest włączony.  
+Określa istnienie powiązanego punktu przerwania, a także określa, czy jest włączony.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,24 +47,24 @@ public enum enum_BP_STATE { 
   
 ## <a name="members"></a>Elementy członkowskie  
  BPS_NONE  
- Określa, czy istnieje nie punktu przerwania.  
+ Określa, że punkt przerwania nie istnieje.  
   
  BPS_DELETED  
  Określa, że punkt przerwania został usunięty.  
   
  BPS_DISABLED  
- Określa, że punkt przerwania jest wyłączona.  
+ Określa, że punkt przerwania jest wyłączony.  
   
  BPS_ENABLED  
  Określa, że punkt przerwania jest włączony.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwrócone w wyniku [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) metody.  
+ Zwrócone z metody [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

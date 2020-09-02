@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249186"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Instrukcje: Konfigurowanie zakresu analizy kodu na żywo dla kodu zarządzanego
@@ -43,7 +43,7 @@ Domyślnie Analiza kodu na żywo dla obliczeń w tle jest wykonywana dla wszystk
 
 ## <a name="custom-analysis-scope"></a>Zakres analizy niestandardowej
 
-Domyślny zakres każdej analizy w tle został dostrojony, aby zapewnić optymalne środowisko użytkownika, funkcjonalność i wydajność większości scenariuszy i rozwiązań klientów. Istnieją jednak przypadki, w których klienci mogą chcieć dostosować ten zakres, aby zmniejszyć lub zwiększyć analizę w tle. Przykład:
+Domyślny zakres każdej analizy w tle został dostrojony, aby zapewnić optymalne środowisko użytkownika, funkcjonalność i wydajność większości scenariuszy i rozwiązań klientów. Istnieją jednak przypadki, w których klienci mogą chcieć dostosować ten zakres, aby zmniejszyć lub zwiększyć analizę w tle. Na przykład:
 
 - Tryb oszczędzania energii: Użytkownicy korzystający z baterii laptop mogą chcieć zminimalizować zużycie energii, aby wydłużyć czas pracy baterii. W tym scenariuszu chcą zminimalizować analizę w tle.
 - Analiza kodu na żądanie: Jeśli użytkownicy wolą wyłączać wykonywanie usługi Live Analyzer i ręcznie przeprowadzać analizę kodu na żądanie, chcą zminimalizować analizę w tle. Zobacz [jak: ręczne przeprowadzanie analizy kodu na żądanie](./how-to-run-code-analysis-manually-for-managed-code.md).

@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING | Dokumentacja firmy Microsoft
+title: BP_LOCATION_CODE_STRING | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50c48098aee3b1077edec99210e7ab624d2a8d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153462"
 ---
-# <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
+# <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Używana do ustawiania punktów przerwania kodu na podstawie ciągu, który użytkownik może wprowadzić ze zintegrowanego środowiska programistycznego (IDE).  
+Służy do ustawiania punktów przerwania kodu na podstawie ciągu, który użytkownik może wprowadzić z zintegrowanego środowiska programistycznego (IDE).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,21 +35,21 @@ typedef struct _BP_LOCATION_CODE_STRING { 
   
 ## <a name="members"></a>Elementy członkowskie  
  `bstrContext`  
- Kontekst punktu przerwania w kodzie, zazwyczaj nazwę metody lub funkcji wyświetlanego w stosie wywołań.  
+ Kontekst punktu przerwania w kodzie, zazwyczaj nazwa metody lub funkcji, jak pokazano na stosie wywołań.  
   
  `bstrCodeExpr`  
- Ciąg, który użytkownik wpisze w celu opisania punktu przerwania kodu.  
+ Ciąg, w którym użytkownik wpisze, aby opisać punkt przerwania kodu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktur w ramach złożenia.  
+ Ta struktura jest składową struktury [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) w ramach Unii.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccInitialize | Dokumenty firmy Microsoft
+title: Funkcja SccInitialize | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700631"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize, funkcja
-Ta funkcja inicjuje wtyczkę kontroli źródła i zapewnia możliwości i ograniczenia zintegrowanego środowiska programistycznego (IDE).
+Ta funkcja inicjuje wtyczkę kontroli źródła i zapewnia możliwości i limity zintegrowanego środowiska programistycznego (IDE).
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,56 +40,56 @@ SCCRTN SccInitialize (
 #### <a name="parameters"></a>Parametry
  `ppvContext`
 
-[w] Wtyczka kontroli źródła można umieścić wskaźnik do jego struktury kontekstu w tym miejscu.
+podczas Wtyczka do kontroli źródła może umieścić wskaźnik do jego struktury kontekstu w tym miejscu.
 
  `hWnd`
 
-[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
+podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
 
  `lpCallerName`
 
-[w] Nazwa programu wywołującego wtyczkę kontroli źródła.
+podczas Nazwa programu wywołującego wtyczkę kontroli źródła.
 
  `lpSccName`
 
-[w, na zewnątrz] Bufor, w którym wtyczka kontroli źródła umieszcza własną `SCC_NAME_LEN`nazwę (nie przekracza).
+[in. out] Bufor, w którym wtyczka do kontroli źródła umieszcza własną nazwę (nie przekracza `SCC_NAME_LEN` ).
 
  `lpSccCaps`
 
-[na zewnątrz] Zwraca flagi wtyczki funkcji wtyczki kontroli źródła.
+określoną Zwraca flagi możliwości wtyczki kontroli źródła.
 
  `lpAuxPathLabel`
 
-[w, na zewnątrz] Bufor, w którym wtyczka formantu źródła `lpAuxProjPath` umieszcza ciąg opisujący parametr zwrócony przez [SccOpenProject](../extensibility/sccopenproject-function.md) `SCC_AUXLABEL_LEN`i [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (nie przekracza).
+[in. out] Bufor, w którym Wtyczka kontroli źródła umieszcza ciąg, który opisuje `lpAuxProjPath` parametr zwracany przez [SccOpenProject](../extensibility/sccopenproject-function.md) i [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (nie przekroczenia wartości `SCC_AUXLABEL_LEN` ).
 
  `pnCheckoutCommentLen`
 
-[na zewnątrz] Zwraca maksymalną dopuszczalną długość komentarza do wyewidencjonowania.
+określoną Zwraca maksymalną dopuszczalną długość komentarza do wyewidencjonowania.
 
  `pnCommentLen`
 
-[na zewnątrz] Zwraca maksymalną dopuszczalną długość dla innych komentarzy.
+określoną Zwraca maksymalną dopuszczalną długość dla innych komentarzy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Inicjowanie kontroli źródła powiodło się.|
+|SCC_OK|Inicjalizacja kontroli źródła zakończyła się pomyślnie.|
 |SCC_E_INITIALIZEFAILED|Nie można zainicjować systemu.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać określonej operacji.|
-|SCC_E_NONSPECFICERROR|Niespecyficzna awaria; system kontroli źródła nie został zainicjowany.|
+|SCC_E_NONSPECFICERROR|Nieokreślony błąd; System kontroli źródła nie został zainicjowany.|
 
 ## <a name="remarks"></a>Uwagi
- IDE wywołuje tę funkcję, gdy po raz pierwszy ładuje wtyczkę kontroli źródła. Umożliwia IDE przekazać pewne informacje, takie jak nazwa wywołującego, do wtyczki. IDE pobiera również pewne informacje, takie jak maksymalna dopuszczalna długość komentarzy i możliwości wtyczki.
+ IDE wywołuje tę funkcję, gdy najpierw ładuje wtyczkę kontroli źródła. Umożliwia IDE przekazywanie pewnych informacji, takich jak nazwa obiektu wywołującego, do wtyczki. IDE pobiera również pewne informacje, takie jak maksymalna dozwolona długość komentarzy i możliwości wtyczki.
 
- Wskazuje `ppvContext` na `NULL` wskaźnik. Wtyczka formantu źródła może przydzielić strukturę do własnego użytku `ppvContext`i zapisać wskaźnik do tej struktury w . IDE przekaże ten wskaźnik do każdej innej funkcji interfejsu API VSSCI, dzięki czemu dodatek umożliwia dostęp do informacji kontekstowych bez uciekania się do magazynu globalnego i obsługuje wiele wystąpień dodatku plug-in. Ta struktura powinna być cofnięta alokacji, gdy [SccUninitialize](../extensibility/sccuninitialize-function.md) jest wywoływana.
+ `ppvContext`Punkty do `NULL` wskaźnika. Wtyczka do kontroli źródła może przydzielić strukturę do własnego użytku i przechowywać wskaźnik do tej struktury w `ppvContext` . IDE przekaże ten wskaźnik do każdej innej funkcji interfejsu API VSSCI, dzięki czemu wtyczka będzie mieć dostęp do informacji kontekstowych bez konieczności używania magazynu globalnego i obsługi wielu wystąpień wtyczki. Ta struktura powinna zostać cofnięta alokacja, gdy zostanie wywołana [SccUninitialize](../extensibility/sccuninitialize-function.md) .
 
- Parametry `lpCallerName` `lpSccName` i umożliwiają IDE i wtyczki formantu źródła do wymiany nazw. Nazwy te mogą być używane po prostu do rozróżniania między wieloma wystąpieniami lub mogą faktycznie pojawić się w menu lub oknach dialogowych.
+ `lpCallerName`Parametry i `lpSccName` umożliwiają Włączanie środowiska IDE i wtyczki kontroli źródła do nazw programu Exchange. Nazwy te mogą być używane po prostu do rozróżnienia między wieloma wystąpieniami lub mogą być wyświetlane w menu lub oknach dialogowych.
 
- Parametr `lpAuxPathLabel` jest ciągiem używanym jako komentarz do identyfikowania pomocniczej ścieżki projektu, która jest przechowywana w pliku rozwiązania i przekazywana do wtyczki kontroli źródła w wywołaniu [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]używa ciągu "SourceSafe Project:"; inne wtyczki kontroli źródła powinny powstrzymać się od używania tego konkretnego ciągu.
+ `lpAuxPathLabel`Parametr jest ciągiem używanym jako komentarz do identyfikacji pomocniczej ścieżki projektu przechowywanej w pliku rozwiązania i przekazaną do wtyczki kontroli źródła w wywołaniu [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] używa ciągu "Project SourceSafe:"; inne wtyczki kontroli źródła nie mogą korzystać z tego konkretnego ciągu.
 
- Parametr `lpSccCaps` zapewnia wtyczkę sterującą źródłem w miejscu przechowywania bitflags wskazujących możliwości wtyczki. (Aby uzyskać pełną listę bitflags możliwości, zobacz [Flagi możliwości](../extensibility/capability-flags.md)). Na przykład jeśli dodatek typu plug-in planuje zapisywać wyniki w funkcji wywołania zwrotnego dostarczonej przez wywołującego, dodatek umożliwia ustawienie bitu SCC_CAP_TEXTOUT. Oznaczałoby to IDE, aby utworzyć okno dla wyników kontroli wersji.
+ `lpSccCaps`Parametr udostępnia wtyczkę kontroli źródła w miejscu do przechowywania bitflags wskazujących możliwości wtyczki. (Aby zapoznać się z pełną listą możliwości bitflags, zobacz [flagi możliwości](../extensibility/capability-flags.md)). Na przykład, jeśli wtyczka planuje pisać wyniki do funkcji wywołania zwrotnego dostarczonej przez wywołującego, wtyczka ustawi SCC_CAP_TEXTOUT bit możliwości. Spowoduje to nasygnalizowanie środowiska IDE w celu utworzenia okna dla wyników kontroli wersji.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e1669affa89c91ca3ae1958c22ff3ec4d56bb8c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670952"
 ---
 # <a name="editing-xslt-style-sheets"></a>Edytowanie arkuszy stylów XSLT
@@ -24,7 +24,7 @@ Edytor XML może również służyć do edytowania arkuszy stylów XSLT. Można 
 ## <a name="xslt-features"></a>Funkcje XSLT
  W poniższej tabeli opisano funkcje specyficzne dla pracy z arkuszami stylów XSLT.
 
- **Kolorowanie składni** Słowa kluczowe XSLT, takie jak `template`, `match` i tak dalej, są wyświetlane w kolorze słowa kluczowego XSLT określonego w ustawieniach **czcionek i kolorów** .
+ **Kolorowanie składni** Słowa kluczowe XSLT, takie jak `template` , `match` i tak dalej, są wyświetlane w kolorze słowa kluczowego XSLT określonego przez **Ustawienia Fonts i Colors** .
 
  **Faliste podkreślenie** Edytor XML używa zainstalowanego pliku XSLT. xsd do walidacji arkuszy stylów XSLT. Błędy walidacji są wyświetlane jako niebieskie faliste podkreślenia. Edytor XML kompiluje także arkusz stylów w tle i raportuje błędy lub ostrzeżenia kompilatora z odpowiednimi falistymi podkreśleniami.
 

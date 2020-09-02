@@ -1,5 +1,5 @@
 ---
-title: Przykładowy implementacji zmiennych lokalnych | Dokumentacja firmy Microsoft
+title: Przykładowa implementacja elementów lokalnych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,62 +12,62 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e943fd7ba27fe21029bab4d818803186147476e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704889"
 ---
 # <a name="sample-implementation-of-locals"></a>Przykłady implementacji zmiennych lokalnych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Poniżej przedstawiono omówienie, jak Visual Studio uzyskuje dostęp do zmiennych lokalnych dla metody z Ewaluator wyrażeń (EE):  
+ Poniżej przedstawiono omówienie sposobu, w jaki program Visual Studio uzyskuje wartości lokalne dla metody z ewaluatora wyrażeń (EE):  
   
-1. Program Visual Studio wywołuje aparat debugowania (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) można pobrać [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje wszystkie właściwości ramki stosu, w tym zmienne lokalne.  
+1. Program Visual Studio wywołuje [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) aparatu debugowania, aby uzyskać obiekt [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , który reprezentuje wszystkie właściwości ramki stosu, łącznie z lokalnymi.  
   
-2. `IDebugStackFrame2::GetDebugProperty` wywołania [metody GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) uzyskać obiekt, który opisuje metodę, w którym wystąpił punkt przerwania. DE dostarcza dostawca symboli ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), adres ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)), a obiekt wiążący ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
+2. `IDebugStackFrame2::GetDebugProperty` wywołuje [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) , aby uzyskać obiekt, który opisuje metodę, w której wystąpiło punkt przerwania. DE dostawy dostawca symboli ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), adres ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) i spinacz ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
   
-3. `IDebugExpressionEvaluator::GetMethodProperty` wywołania [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) z podanym `IDebugAddress` można uzyskać [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) reprezentujący metodę, zawierający podany adres.  
+3. `IDebugExpressionEvaluator::GetMethodProperty` wywołuje [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) z podanym `IDebugAddress` obiektem, aby uzyskać [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) reprezentujący metodę zawierającą określony adres.  
   
-4. `IDebugContainerField` Zostaje przesłane zapytanie interfejsu [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) interfejsu. Jest to interfejs, który zapewnia dostęp do zmiennych lokalnych metody.  
+4. `IDebugContainerField`Interfejs jest pytany dla interfejsu [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) . Jest to interfejs, który zapewnia dostęp do zmiennych lokalnych metody.  
   
-5. `IDebugExpressionEvaluator::GetMethodProperty` tworzy klasę (o nazwie `CFieldProperty` w przykładzie), który zawiera `IDebugProperty2` interfejsu do reprezentowania metody zmiennych lokalnych. `IDebugMethodField` Obiekt jest umieszczany w tym `CFieldProperty` obiektu wraz z `IDebugSymbolProvider`, `IDebugAddress` i `IDebugBinder` obiektów.  
+5. `IDebugExpressionEvaluator::GetMethodProperty` tworzy wystąpienie klasy (wywoływana `CFieldProperty` w przykładzie) implementującej `IDebugProperty2` interfejs do reprezentowania ustawień lokalnych metody. `IDebugMethodField`Obiekt jest umieszczony w tym `CFieldProperty` obiekcie wraz z `IDebugSymbolProvider` `IDebugAddress` `IDebugBinder` obiektami i.  
   
-6. Gdy `CFieldProperty` co inicjacja obiektu, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) jest wywoływana w `IDebugMethodField` obiektu w celu uzyskania [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) strukturę, która zawiera wszystkie informacje zawiera temat sama metoda .  
+6. Po `CFieldProperty` zainicjowaniu obiektu [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) jest wywoływana na obiekcie, `IDebugMethodField` Aby uzyskać strukturę [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) , która zawiera wszystkie informacje, które można wyświetlić.  
   
-7. `IDebugExpressionEvaluator::GetMethodProperty` Zwraca `CFieldProperty` obiektu jako `IDebugProperty2` obiektu.  
+7. `IDebugExpressionEvaluator::GetMethodProperty` zwraca `CFieldProperty` obiekt jako `IDebugProperty2` obiekt.  
   
-8. Visual Studio wywołania [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) na zwracanego `IDebugProperty2` obiektu z filtrem `guidFilterLocalsPlusArgs`. Spowoduje to zwrócenie [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) obiekt zawierający metodę zmiennych lokalnych. To wyliczenie jest wypełniane przez wywołania [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) i [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
+8. Program Visual Studio wywołuje [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) na zwracanym `IDebugProperty2` obiekcie z filtrem `guidFilterLocalsPlusArgs` . Zwraca obiekt [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) zawierający elementy lokalne metody. To wyliczenie jest wypełniane przez wywołania do [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) i [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
   
-9. Visual Studio wywołania [dalej](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) uzyskać [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) strukturę dla każdej lokalnej. Ta struktura zawiera wskaźnik do `IDebugProperty2` interfejsu lokalnej.  
+9. Program Visual Studio wywołuje [obok](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) siebie strukturę [DEBUG_PROPERTY_INFOą](../../extensibility/debugger/reference/debug-property-info.md) dla każdego lokalnego. Ta struktura zawiera wskaźnik do `IDebugProperty2` interfejsu dla lokalnego.  
   
-10. Visual Studio wywołania [getpropertyinfo —](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) dla każdej lokalnej można uzyskać nazwę, wartość i typ lokalnego. Jest to informacja, która jest wyświetlana w **lokalne** okna.  
+10. Program Visual Studio wywołuje [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) dla każdego lokalnego, aby uzyskać nazwę, wartość i typ lokalnego. Są to informacje, które są wyświetlane w oknie **zmiennych lokalnych** .  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Implementowanie metody GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)  
- W tym artykule opisano implementację [metody GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).  
+ Opisuje implementację programu [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).  
   
  [Wyliczanie zmiennych lokalnych](../../extensibility/debugger/enumerating-locals.md)  
- W tym artykule opisano, jak aparat debugowania (DE) nawiązuje połączenie wyliczanie zmiennych lokalnych lub argumentów.  
+ Opisuje, jak aparat debugowania (DE) wykonuje wywołanie wyliczające zmienne lokalne lub argumenty.  
   
  [Pobieranie właściwości lokalnych](../../extensibility/debugger/getting-local-properties.md)  
- W tym artykule opisano, jak DE dzwoni do pobierania nazwy, typ i wartość jednego lub więcej zmiennych lokalnych.  
+ Opisuje, jak cofnięte jest wywołanie pobrania nazwy, typu i wartości co najmniej jednego elementu lokalnego.  
   
  [Pobieranie wartości lokalnych](../../extensibility/debugger/getting-local-values.md)  
- W tym artykule omówiono uzyskiwania wartości elementu lokalnego, który wymaga usług obiekt integratora, określone przez kontekst oceny.  
+ W tym artykule omówiono uzyskiwanie wartości lokalnej, która wymaga usług obiektu spinacza danego kontekstu szacowania.  
   
  [Ocenianie zmiennych lokalnych](../../extensibility/debugger/evaluating-locals.md)  
- W tym artykule wyjaśniono, jak są obliczane zmiennych lokalnych.  
+ Wyjaśnia, jak są oceniane wartości lokalne.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Kontekst oceny](../../extensibility/debugger/evaluation-context.md)  
- Zawiera argumenty, które są przekazywane, gdy DE wywołuje Ewaluator wyrażeń (EE).  
+ Dostarcza argumenty, które są przesyłane, gdy wywołują ewaluatora wyrażeń.  
   
- [Przykładowe MyCEE](https://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
- Demonstruje jedno z podejść do tworzenia ewaluatora wyrażeń dla języków MyC implementacji.  
+ [Przykład MyCEE](https://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ Przedstawia jedno podejście implementacji do tworzenia ewaluatora wyrażeń dla języka MyC.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie aplikacji częściowej relacji zaufania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie częściowej aplikacji zaufania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,68 +19,68 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704490"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>Instrukcje: Debugowanie aplikacji częściowej relacji zaufania
+# <a name="how-to-debug-a-partial-trust-application"></a>Porady: debugowanie częściowo zaufanych aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ma zastosowanie do Windows i aplikacji konsoli.  
+Dotyczy systemu Windows i aplikacji konsolowych.  
   
- [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md) ułatwia wdrażanie aplikacji częściowej relacji zaufania, które wykorzystują [zabezpieczenia dostępu kodu](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) Aby ograniczyć dostęp do zasobów na komputerze.  
+ [Zabezpieczenia i wdrożenie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md) ułatwiają wdrażanie aplikacji częściowo zaufanych, które wykorzystują [zabezpieczenia dostępu kodu](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) , aby ograniczyć dostęp do zasobów na komputerze.  
   
- Debugowanie aplikacji częściowego zaufania może stanowić wyzwanie, ponieważ aplikacje częściowo zaufane mają uprawnienia zabezpieczeń (i działają inaczej niż w związku z tym) w zależności od tego, gdzie są one zainstalowane. Jeśli zainstalowany z Internetu, częściowo zaufanych aplikacji będą miały uprawnienia kilka. Jeśli została zainstalowana ze lokalny intranet, mają większe uprawnienia, a jeśli zainstalowane z komputera lokalnego, mają pełne uprawnienia. Mogą również mieć niestandardowej strefy, przy użyciu uprawnień niestandardowych. Może być konieczne debugowanie aplikacji częściowej relacji zaufania w ramach poszczególnych lub wszystkich tych warunków. Na szczęście program Visual Studio ułatwia to również.  
+ Debugowanie aplikacji częściowo zaufanej może być wyzwaniem, ponieważ częściowo zaufane aplikacje mają różne uprawnienia zabezpieczeń (i w związku z tym zachowują się inaczej) w zależności od tego, gdzie są zainstalowane. Jeśli program jest instalowany z Internetu, częściowo zaufana aplikacja będzie miała kilka uprawnień. Jeśli program jest instalowany z lokalnego intranetu, będzie miał więcej uprawnień i w przypadku instalacji z komputera lokalnego będzie miał pełne uprawnienia. Mogą również istnieć strefy niestandardowe z uprawnieniami niestandardowymi. Może być konieczne debugowanie częściowej aplikacji zaufania w ramach dowolnego lub wszystkich tych warunków. Na szczęście program Visual Studio również ułatwia.  
   
- Przed rozpoczęciem sesji debugowania w programie Visual Studio można wybrać strefy chcesz symulować zainstalowaną z aplikacją. Podczas uruchamiania debugowania, aplikacja będzie wymagać uprawnień aplikacji częściowej relacji zaufania, instalowane z tej strefy. Dzięki temu można sprawdzić sposób działania aplikacji, jak będzie wyglądał użytkownikowi, który pobrana z tej strefy.  
+ Przed rozpoczęciem sesji debugowania w programie Visual Studio można wybrać strefę, z której ma zostać zasymulowana aplikacja. Po rozpoczęciu debugowania aplikacja będzie mieć uprawnienia odpowiednie dla aplikacji częściowo zaufanej zainstalowanej z tej strefy. Dzięki temu można zobaczyć zachowanie aplikacji w taki sposób, aby była widoczna dla użytkownika, który pobrał go z tej strefy.  
   
- Jeśli aplikacja próbuje wykonać akcję, która nie ma uprawnień do, wystąpi wyjątek. W tym momencie Asystent wyjątków daje szansę, aby dodać dodatkowe uprawnienia, która pozwala na ponowne uruchomienie sesji debugowania z wystarczającymi uprawnieniami, aby uniknąć tego problemu.  
+ Jeśli aplikacja próbuje wykonać akcję, do której nie ma uprawnień, wystąpi wyjątek. W tym momencie Asystent wyjątków umożliwia dodanie dodatkowych uprawnień, co umożliwia ponowne uruchomienie sesji debugowania z odpowiednimi uprawnieniami w celu uniknięcia problemu.  
   
- Można później, przejdź wstecz i wyświetlić uprawnienia, które dodano podczas debugowania. Gdyby trzeba było dodać uprawnienia podczas debugowania, prawdopodobnie oznacza to, należy dodać użytkownika monitu wyrazić zgodę na tym etapie w kodzie.  
+ Później można wrócić i zobaczyć, które uprawnienia zostały dodane podczas debugowania. Jeśli użytkownik musiał dodać uprawnienie podczas debugowania, prawdopodobnie wskazuje, że musisz dodać monit o zgodę użytkownika w tym momencie w kodzie.  
   
 > [!NOTE]
-> Wizualizatory debugera wymagają większe uprawnienia niż jest to dozwolone przez aplikację do częściowego zaufania. Wizualizatory nie zostanie załadowany, gdy zostały zatrzymane w kod z częściowej relacji zaufania. Aby debugować za pomocą wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
+> Wizualizatory debugera wymagają większych uprawnień niż jest to dozwolone w przypadku aplikacji częściowo zaufanej. Wizualizatory nie będą ładowane po zatrzymaniu w kodzie z częściowym zaufaniem. Aby debugować przy użyciu wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
   
-### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Aby wybrać strefy aplikacji częściowego zaufania  
+### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Aby wybrać strefę dla aplikacji częściowej zaufania  
   
-1. Z **projektu** menu, wybierz _Projectname_**właściwości**.  
+1. W menu **projekt** wybierz polecenie właściwości _ProjectName_**Properties**.  
   
-2. W *Projectname* strony właściwości, kliknij przycisk **zabezpieczeń** strony.  
+2. Na stronach właściwości *ProjectName* kliknij stronę **zabezpieczenia** .  
   
-3. Wybierz **włączenie ustawień zabezpieczeń technologii ClickOnce**.  
+3. Wybierz pozycję **Włącz ustawienia zabezpieczeń ClickOnce**.  
   
-4. W obszarze **strefy, aplikacja zostanie zainstalowana z**, kliknij pole listy rozwijanej i wybierz strefę, którą chcesz symulować aplikacji instalowanych z.  
+4. W obszarze **strefa, z której zostanie zainstalowana aplikacja**, kliknij listę rozwijaną i wybierz strefę, z której ma zostać zasymulowana instalacja aplikacji.  
   
-     **Uprawnień wymaganych przez aplikację** siatce są wyświetlane wszystkie dostępne uprawnienia. Znacznik wyboru wskazuje uprawnień udzielonych aplikacji.  
+     **Uprawnienia wymagane przez** siatkę aplikacji pokazują wszystkie dostępne uprawnienia. Znacznik wyboru oznacza uprawnienia przyznane aplikacji.  
   
-5. Jeśli strefa wybierzesz **(niestandardowy)**, wybierz poprawne ustawienia niestandardowe w **ustawienie** kolumny **uprawnienia** siatki.  
+5. Jeśli wybrana strefa była **(niestandardowa)**, wybierz odpowiednie ustawienia niestandardowe w kolumnie **Ustawienia** w siatce **uprawnienia** .  
   
-6. Kliknij przycisk **OK** zamknąć na stronach właściwości.  
+6. Kliknij przycisk **OK** , aby zamknąć strony właściwości.  
   
-### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Aby dodać dodatkowe uprawnienia, gdy wystąpi wyjątek zabezpieczeń  
+### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Aby dodać dodatkowe uprawnienie w przypadku wystąpienia wyjątku zabezpieczeń  
   
-1. **Asystenta wyjątków** pojawi się okno dialogowe z komunikatem: **Securityexception — jest nieobsługiwany.**  
+1. Zostanie wyświetlone okno dialogowe **Asystent wyjątków** z komunikatem: **SecurityException nie został obsłużony.**  
   
-2. W **Asystenta wyjątków** dialogowego **akcje**, kliknij przycisk **Dodaj uprawnienia do projektu**.  
+2. W oknie dialogowym **Asystent wyjątków** w obszarze **Akcje**kliknij pozycję **Dodaj uprawnienie do projektu**.  
   
-3. **Uruchom ponownie debugowanie** pojawi się okno dialogowe.  
+3. Zostanie wyświetlone okno dialogowe **Ponowne uruchamianie debugowania** .  
   
-    - Jeśli chcesz ponownie uruchomić sesję debugowania za pomocą nowego uprawnienia, kliknij przycisk **tak**.  
+    - Jeśli chcesz ponownie uruchomić sesję debugowania z nowym uprawnieniem, kliknij przycisk **tak**.  
   
-    - Jeśli nie chcesz ponownie uruchomić jeszcze, kliknij przycisk **nie**.  
+    - Jeśli nie chcesz jeszcze uruchamiać ponownie, kliknij przycisk **nie**.  
   
-### <a name="to-view-extra-permissions-added-while-debugging"></a>Aby wyświetlić dodatkowe uprawnienia dodany podczas debugowania  
+### <a name="to-view-extra-permissions-added-while-debugging"></a>Aby wyświetlić dodatkowe uprawnienia dodane podczas debugowania  
   
-1. Z **projektu** menu, wybierz _Projectname_**właściwości**.  
+1. W menu **projekt** wybierz polecenie właściwości _ProjectName_**Properties**.  
   
-2. W *Projectname* strony właściwości, kliknij przycisk **zabezpieczeń** strony.  
+2. Na stronach właściwości *ProjectName* kliknij stronę **zabezpieczenia** .  
   
-3. Przyjrzyj się **uprawnień wymaganych przez aplikację** siatki. Żadnych dodatkowych uprawnień, możesz dodać ma dwie ikony w **uwzględnione** kolumny: Normalny znacznik wyboru, które dołączane mają uprawnienia i dodatkowe ikonę, która ma postać dymek zawierającej literę "i".  
+3. Sprawdź **uprawnienia wymagane przez** siatkę aplikacji. Wszelkie dodane dodatkowe uprawnienia mają dwie ikony w **dołączonej** kolumnie: normalny znacznik wyboru, który ma wszystkie dołączone uprawnienia, oraz dodatkową ikonę, która wygląda jak dymek zawierający literę "i".  
   
-4. Użyj pionowy pasek przewijania, aby wyświetlić całą **uprawnień wymaganych przez aplikację** siatki.  
+4. Użyj pionowego paska przewijania, aby wyświetlić wszystkie **uprawnienia wymagane przez** siatkę aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Bezpieczeństwo i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)

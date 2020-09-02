@@ -1,5 +1,5 @@
 ---
-title: Caller-Callee View - Dane instrumentacji pamięci NET | Dokumenty firmy Microsoft
+title: Widok wywołujący-wywoływany-Dane instrumentacji usługi NET Memory | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,22 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c51f4bc1e823f565670bf1f6df77553ff4658d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779730"
 ---
-# <a name="callercallee-view---net-memory-instrumentation-data"></a>Widok wywołujący/wywoływany — dane instrumentacji pamięci .NET
-Widok wywołujący/wywoływany danych profilowania pamięci .NET, który został zebrany przy użyciu metody instrumentacji wyświetla dane alokacji i chronometrażu dla wybranej funkcji oraz funkcji nadrzędnych i podrzędnych tej wybranej funkcji. Widok wywołujący/wywoływany zawiera trzy siatki.
+# <a name="callercallee-view---net-memory-instrumentation-data"></a>Widok elementu wywołującego/wywoływanego — dane Instrumentacji pamięci platformy .NET
+Widok wywołujący/wywoływany pamięci platformy .NET, który został zebrany za pomocą metody instrumentacji, wyświetla dane alokacji i chronometraż dla wybranej funkcji oraz funkcje nadrzędne i podrzędne tej wybranej funkcji. Widok wywołujący/wywoływany zawiera trzy siatki.
 
- **Bieżąca funkcja** jest wyświetlana w środkowej siatce i pokazuje informacje profilowania pamięci o wybranej funkcji. Wartości obejmują wszystkie próbkowanie wywołań funkcji.
+ **Bieżąca funkcja** jest wyświetlana w środkowej siatce i zawiera informacje profilowania pamięci dotyczące wybranej funkcji. Wartości obejmują wszystkie przykładowe wywołania funkcji.
 
- **Funkcje, które wywołały bieżącą funkcję,** są wyświetlane w górnej siatce i pokazują wartość wybranej (bieżącej) funkcji wygenerowanej przez wywołania z funkcji wywołującego (nadrzędnego).
+ **Funkcje, które wywołały bieżącą funkcję** , są wyświetlane w górnej siatce i pokazują ilość wartości wybranej (bieżącej) funkcji wygenerowanej przez wywołania z funkcji wywołującej (nadrzędnej).
 
- **Funkcje, które zostały wywołane przez bieżącą funkcję** jest wyświetlany w dolnej siatce i pokazuje dane profilowania pamięci dla wywoływane (podrzędne) funkcje wybranej funkcji, gdy funkcja podrzędna została wywołana przez bieżącą funkcję.
+ **Funkcje, które zostały wywołane przez bieżącą funkcję** , są wyświetlane w dolnej siatce i wyświetlają dane profilowania pamięci dla funkcji wywoływanych (podrzędnych) wybranej funkcji, gdy funkcja podrzędna została wywołana przez bieżącą funkcję.
 
- Kliknij dwukrotnie wiersz funkcji wywołującego lub wywoływanego, aby ten wiersz był bieżącą funkcją.
+ Kliknij dwukrotnie obiekt wywołujący lub element wywoływanej funkcji, aby uczynić ten wiersz bieżącą funkcją.
 
 ## <a name="general"></a>Ogólne
 
@@ -35,77 +35,77 @@ Widok wywołujący/wywoływany danych profilowania pamięci .NET, który został
 |------------|-----------------|
 |**Nazwa funkcji**|Nazwa funkcji.|
 |**Adres funkcji**|Adres funkcji.|
-|**Numer wiersza funkcyjnego**|Numer wiersza początku tej funkcji w pliku źródłowym.|
-|**Liczba połączeń**|Całkowita liczba wywołań, które są wykonane do tej funkcji.|
-|**Plik źródłowy**|Plik źródłowy zawierający definicję tej funkcji.|
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|
+|**Liczba połączeń**|Całkowita liczba wywołań wykonanych dla tej funkcji.|
+|**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|
 |**Nazwa modułu**|Nazwa modułu, który zawiera funkcję.|
 |**Ścieżka modułu**|Ścieżka modułu, który zawiera funkcję.|
-|**Identyfikator procesu**|Identyfikator procesu przebiegu profilowania.|
+|**Identyfikator procesu**|Identyfikator procesu uruchomienia profilowania.|
 |**Nazwa procesu**|Nazwa, która jest przypisana do procesu.|
-|**Narzucie sondy na wyłączność czasu**|Obciążenie czasowe dla tej funkcji z powodu instrumentacji. Obciążenie sondy zostało odjęte od wszystkich czasów wyłączności.|
-|**Narzucie sondy włącznie z czasem**|Obciążenie czasowe dla tej funkcji i jej funkcji podrzędnych z powodu instrumentacji. Obciążenie sondy zostało odjęte od czasów all inclusive.|
-|**Typ**|Kontekst funkcji:<br /><br /> **0** - bieżąca funkcja<br /><br /> **1** - funkcja, która wywołuje bieżącą funkcję<br /><br /> **2** - funkcja wywoływana przez bieżącą funkcję<br /><br /> Tylko w raportach wiersza polecenia [VSPerfReport.](../profiling/vsperfreport.md)|
-|**Nazwa funkcji głównej**|Nazwa bieżącej funkcji. Tylko w raportach wiersza polecenia [VSPerfReport.](../profiling/vsperfreport.md)|
+|**Obciążenie sondy czasu wyłącznego**|Narzut czasu dla tej funkcji ze względu na instrumentację. Narzuty sondowania zostały odjęte od wszystkich wyłączeń.|
+|**Narzut sondy czasu włącznego**|Narzut czasu dla tej funkcji i jej funkcji podrzędnych ze względu na instrumentację. Narzuty sondowania zostały odjęte od wszystkich czasów włączania.|
+|**Typ**|Kontekst funkcji:<br /><br /> **0** — bieżąca funkcja<br /><br /> **1** — funkcja, która wywołuje bieżącą funkcję<br /><br /> **2** — funkcja, która jest wywoływana przez bieżącą funkcję<br /><br /> Tylko w raportach wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .|
+|**Nazwa funkcji głównej**|Nazwa bieżącej funkcji. Tylko w raportach wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .|
 
-## <a name="net-memory-allocation-values"></a>Wartości alokacji pamięci .NET
-
-|Kolumna|Opis|
-|------------|-----------------|
-|**Alokacje wyłączne**|- Dla bieżącej funkcji liczba obiektów, które zostały utworzone, gdy funkcja była wykonywanie kodu w treści funkcji (czyli gdy funkcja była w górnej części stosu wywołań). Liczba nie obejmuje obiektów, które zostały utworzone w funkcjach, które były wywoływane przez tę funkcję.<br />- Dla funkcji wywołującego, numer wyłącznych alokacji bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji wywołującego.<br />- Dla funkcji wywoływanej liczba obiektów, które zostały utworzone przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Ten numer nie obejmuje obiektów, które zostały utworzone przez funkcje, które zostały wywołane przez funkcję wywoływana.|
-|**Alokacje wyłączne %**|Procent wszystkich obiektów, które zostały utworzone w przebiegu profilowania, które były wyłączne alokacje tej funkcji.|
-|**Alokacje włącznie**|- Dla bieżącej funkcji liczba obiektów, które zostały przydzielone przez funkcję w przebiegu profilowania. Numer zawiera obiekty, które zostały utworzone w wywoływanych funkcji, które zostały wywołane przez funkcję.<br />- Dla funkcji wywołującego, numer alokacji włącznie bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji wywołującego.<br />- Dla funkcji wywoływanej liczba obiektów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba ta obejmuje alokacje wykonane przez funkcje, które były wywoływane przez tę funkcję wywoływana.|
-|**Alokacje włącznie %**|Procent wszystkich obiektów, które zostały utworzone w przebiegu profilowania, które były alokacje włącznie tej funkcji.|
-|**Bajty wyłączne**|- Dla bieżącej funkcji liczba bajtów pamięci, które zostały przydzielone przez funkcję w przebiegu profilowania. Numer nie zawiera pamięci, która została przydzielona w wywoływanych funkcji, które zostały wywołane przez funkcję.<br />- Dla funkcji wywołującego, numer wyłącznych bajtów bieżącej funkcji, które zostały wygenerowane z wywołań przez tę funkcję wywołującego.<br />- Dla funkcji wywoływanej liczba bajtów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Numer nie zawiera bajtów, które zostały przydzielone przez funkcje, które zostały wywołane przez funkcję wywoływana.|
-|**Bajty wyłączności %**|Procent wszystkich bajtów pamięci, które zostały przydzielone w przebiegu profilowania, które były wyłączne alokacje tej funkcji.|
-|**Bajty włącznie**|- Dla bieżącej funkcji liczba bajtów w pamięci, które zostały przydzielone przez funkcję w przebiegu profilowania. Numer zawiera pamięć, która została przydzielona w wywoływanych funkcji, które zostały wywołane przez funkcję.<br />- Dla funkcji wywołującego, numer bajtów włącznie wystąpień bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji wywołującego.<br />- Dla funkcji wywoływanej liczba bajtów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba zawiera bajty, które zostały przydzielone przez funkcje, które były wywoływane przez tę funkcję wywoływana.|
-|**Bajty włącznie %**|Procent wszystkich bajtów pamięci, które zostały przydzielone w przebiegu profilowania, które były alokacje włącznie tej funkcji.|
-
-## <a name="elapsed-inclusive-values"></a>Wartości włącznie, które upłynęło
- Wartości włącznie, które upłynęło, wskazują czas, przez jaki funkcja znajdowała się na stosie wywołań. Czas obejmuje czas spędzony w funkcjach podrzędnych i wywołaniach systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia.
+## <a name="net-memory-allocation-values"></a>Wartości przydziału pamięci platformy .NET
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Czas włącznie, który upłynął**|- Dla bieżącej funkcji, czas spędzony w funkcji. Wartość obejmuje czas spędzony w funkcjach podrzędnych i wywołaniach systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia.<br />- Dla funkcji wywołującego, ilość czasu włącznie, który upłynął włącznie bieżącej funkcji, która została wygenerowana przez wywołania z tej funkcji wywołującego.<br />- Dla funkcji wywoływanego, czas spędzony w tej funkcji, który został wygenerowany przez wywołania z bieżącej funkcji. Wartość obejmuje czas spędzony w funkcjach podrzędnych i wywołaniach systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia.|
-|**Czas włącznie, który upłynął %**|Procent całkowitego czasu włącznie przebiegu profilowania, który został spędzony w czasie włącznie tej funkcji w tym kontekście.|
-|**Średni czas włącznie, który upłynął**|Średni czas włącznie wywołania tej funkcji w tym kontekście.|
-|**Maksymalny czas włącznie, który upłynął**|Maksymalny czas włącznie wywołania tej funkcji w tym kontekście.|
-|**Min. Czas włącznie, który upłynął**|Minimalny czas włącznie wywołania tej funkcji w tym kontekście.|
+|**Alokacje wyłączne**|— Dla bieżącej funkcji — liczba obiektów, które zostały utworzone, gdy funkcja wykonywała kod w treści funkcji (to oznacza, gdy funkcja była w górnej części stosu wywołań). Liczba nie obejmuje obiektów, które zostały utworzone w funkcjach, które zostały wywołane przez tę funkcję.<br />— Dla funkcji wywołującej, liczba wyłącznych alokacji bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji wywołującej.<br />-Dla funkcji wywoływanej, liczba obiektów utworzonych przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Ta liczba nie obejmuje obiektów, które zostały utworzone przez funkcje, które zostały wywołane przez wywoływaną funkcję.|
+|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone w ramach uruchomienia profilowania, które wystąpiły na wyłączność alokacji tej funkcji.|
+|**Przydziały włączne**|— Dla bieżącej funkcji liczba obiektów, które zostały przydzielone przez funkcję w przebiegu profilowania. Liczba zawiera obiekty, które zostały utworzone w funkcjach wywoływanych przez funkcję.<br />-Dla funkcji wywołującej liczba przydziałów włącznie dla bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji wywołującej.<br />-Dla funkcji wywoływanej liczba obiektów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba obejmuje alokacje wykonane przez funkcje, które zostały wywołane przez tę funkcję wywoływanej.|
+|**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały utworzone w ramach uruchomienia profilowania, które były przydzielone do tej funkcji.|
+|**Bajty wyłączne**|— Dla bieżącej funkcji — liczba bajtów pamięci przydzielonej przez funkcję w ramach uruchomienia profilowania. Liczba nie obejmuje pamięci, która została przypisana w funkcjach wywoływanych przez funkcję.<br />-Dla funkcji wywołującej liczba wyłącznych bajtów bieżącej funkcji, które zostały wygenerowane na podstawie wywołań przez tę funkcję wywołującego.<br />-Dla funkcji wywoływanej liczba bajtów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba nie obejmuje bajtów, które zostały przydzielone przez funkcje, które zostały wywołane przez wywoływaną funkcję.|
+|**% Bajtów wyłącznych**|Wartość procentowa wszystkich bajtów pamięci przydzielonych w ramach uruchomienia profilowania, która wystąpiła na wyłączność alokacji tej funkcji.|
+|**Bajty włączne**|— Dla bieżącej funkcji liczba bajtów w pamięci, które zostały przydzielone przez funkcję w przebiegu profilowania. Liczba zawiera pamięć przydzieloną w funkcjach wywoływanych, które zostały wywołane przez funkcję.<br />-Dla funkcji wywołującej liczba bajtów włącznie wystąpień bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji wywołującej.<br />-Dla funkcji wywoływanej liczba bajtów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba zawiera bajty, które zostały przydzielone przez funkcje, które zostały wywołane przez tę wbudowaną funkcję.|
+|**% Bajtów włącznych**|Wartość procentowa wszystkich bajtów pamięci przydzielonych w ramach uruchomienia profilowania, która obejmuje przydziały tej funkcji.|
 
-## <a name="elapsed-exclusive-values"></a>Wartości wyłączne, które upłynęło
- Wartości wyłączne, które upłynęło, wskazują czas, przez który funkcja była wykonywana bezpośrednio u góry stosu wywołań. Czas obejmuje czas w wywołaniach systemu operacyjnego, takich jak przełączniki kontekstu i operacji wejścia/wyjścia, ale nie obejmuje czasu spędzonego w funkcjach podrzędnych.
-
-|Kolumna|Opis|
-|------------|-----------------|
-|**Czas wyłączny, który upłynął**|- Dla bieżącej funkcji, czas spędzony na wykonywaniu treści funkcji. Wartość nie obejmuje czasu spędzonego w funkcjach podrzędnych, ale obejmuje wywołania systemu operacyjnego, takie jak przełączniki kontekstu i operacje wejścia/wyjścia.<br />- Dla funkcji wywołującego, ilość czasu wyłącznego, który upłynął bieżącej funkcji, która została wygenerowana przez wywołania z tej funkcji wywołującego.<br />- Dla funkcji wywoływanego, czas spędzony w tej funkcji, który został wygenerowany przez wywołania z bieżącej funkcji. Wartość nie obejmuje czasu spędzonego w funkcjach podrzędnych funkcji wywoływanego, ale obejmuje wywołania systemu operacyjnego, takie jak przełączniki kontekstu i operacje wejścia/wyjścia.|
-|**Czas wyłączny, który upłynął %**|Procent całkowitego czasu wyłącznego przebiegu profilowania, który został wydany w całkowitym czasie wyłącznym tej funkcji w tym kontekście.|
-|**Średni czas wyłączny, który upłynął**|Średni czas wyłączny wywołania tej funkcji w tym kontekście.|
-|**Maksymalny czas wyłączny**|Maksymalny czas wyłączny wywołania tej funkcji w tym kontekście.|
-|**Min Upłynął czas wyłączny**|Minimalny czas wyłączny wywołania tej funkcji w tym kontekście.|
-
-## <a name="application-inclusive-values"></a>Wartości włącznie aplikacji
- Wartości włącznie aplikacji wskazują czas, że funkcja była na stosie wywołań. Czas nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia, ale obejmuje czas spędzony w funkcjach podrzędnych.
+## <a name="elapsed-inclusive-values"></a>Wartości włączne, które upłynęły
+ Wartości włączne (włącznie) wskazują czas, przez który funkcja była w stosie wywołań. Czas obejmuje czas spędzony w funkcjach podrzędnych i w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Czas włącznie aplikacji**|- Dla bieżącej funkcji, czas spędzony w funkcji i jej funkcji podrzędnych. Wartość nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia.<br />- Dla funkcji wywołującego, ilość aplikacji włącznie czas bieżącej funkcji, która została wygenerowana przez wywołania z tej funkcji wywołującego.<br />- Dla funkcji wywoływanego, czas spędzony w tej funkcji i jego funkcji podrzędnych, który został wygenerowany przez wywołania z bieżącej funkcji. Wartość nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia.|
-|**Czas włącznie z aplikacją %**|Procent całkowitego czasu włącznie przebiegu profilowania, który został spędzony w całkowitym czasie włącznie aplikacji tej funkcji w tym kontekście.|
-|**Średni czas włącznie aplikacji**|Średni czas włącznie aplikacji wywołania tej funkcji w tym kontekście.|
-|**Maksymalny czas włącznie aplikacji**|Maksymalny czas włącznie aplikacji wywołania tej funkcji w tym kontekście.|
-|**Min. czas włącznie aplikacji**|Minimalny czas włącznie aplikacji wywołania tej funkcji w tym kontekście.|
+|**Czas włączny, który upłynął**|— Dla bieżącej funkcji, czas spędzony w funkcji. Wartość obejmuje czas spędzony w funkcjach podrzędnych i w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.<br />— Dla funkcji wywołującej, ilość czasu włącznego dla bieżącej funkcji wygenerowanej przez wywołania z tej funkcji wywołującej.<br />-Dla funkcji wywoływanej, czas spędzony w tej funkcji, który został wygenerowany przez wywołania z bieżącej funkcji. Wartość obejmuje czas spędzony w funkcjach podrzędnych i w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.|
+|**% Czasu włącznego, który upłynął**|Procent łącznego czasu trwania przebiegu profilowania, który był spędzony w czasie trwania tej funkcji w tym kontekście.|
+|**Średni łączny czas, który upłynął**|Średni czas włączny, który upłynął w tym kontekście w przypadku wywołania tej funkcji.|
+|**Maksymalny łączny czas, który upłynął**|Maksymalny łączny czas, który upłynął w przypadku wywołania tej funkcji w tym kontekście.|
+|**Minimalny łączny czas, który upłynął**|Minimalny łączny czas, który upłynął w przypadku wywołania tej funkcji w tym kontekście.|
 
-## <a name="application-exclusive-values"></a>Wyłączne wartości aplikacji
- Wyłączne wartości aplikacji wskazują czas spędzony w funkcji, z wyłączeniem czasu spędzonego w funkcjach podrzędnych. Wskazany czas wyklucza również czas spędzony na zawołaniach do systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia.
+## <a name="elapsed-exclusive-values"></a>Wartości wyłączne, które upłynęły
+ Wartości wyłączne, które upłynęły, wskazują czas, przez który funkcja została bezpośrednio uruchomiona w górnej części stosu wywołań. Czas obejmuje czas wywołań systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia, ale nie obejmuje czasu spędzonego w funkcjach podrzędnych.
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Czas wyłączności aplikacji**|- Dla bieżącej funkcji, czas spędzony na wykonywaniu treści funkcji. Wartość nie obejmuje czasu spędzonego w funkcjach podrzędnych ani nie obejmuje wywołań systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia.<br />- Dla funkcji wywołującego, ilość wyłącznego czasu aplikacji bieżącej funkcji, która została wygenerowana przez wywołania z tej funkcji wywołującego.<br />- Dla funkcji wywoływanego, czas spędzony w tej funkcji, który został wygenerowany przez wywołania z bieżącej funkcji. Wartość nie obejmuje czasu spędzonego w funkcjach podrzędnych funkcji wywoływanego ani nie obejmuje wywołań systemu operacyjnego, takich jak przełączniki kontekstu i operacje wejścia/wyjścia.|
-|**Ekskluzywny czas aplikacji %**|Procent całkowitego czasu wyłącznego przebiegu profilowania, który został spędzony w całkowitym czasie wyłączności aplikacji tej funkcji w tym kontekście.|
-|**Średni czas wyłączny aplikacji**|Średni czas wyłączności aplikacji wywołania tej funkcji w tym kontekście.|
-|**Maksymalny czas wyłączności aplikacji**|Maksymalny czas wyłączności aplikacji wywołania tej funkcji w tym kontekście.|
-|**Minimalny czas wyłączności aplikacji**|Minimalny czas wyłączności aplikacji wywołania tej funkcji w tym kontekście.|
+|**Czas wyłączny, który upłynął**|— Dla bieżącej funkcji czas spędzony w wykonywaniu treści funkcji. Wartość wyklucza czas spędzony w funkcjach podrzędnych, ale obejmuje wywołania systemu operacyjnego, takie jak operacje przełączania kontekstu i operacji wejścia/wyjścia.<br />— Dla funkcji wywołującej, ilość czasu wyłącznego bieżącej funkcji wygenerowanej przez wywołania z tej funkcji wywołującej.<br />-Dla funkcji wywoływanej, czas spędzony w tej funkcji, który został wygenerowany przez wywołania z bieżącej funkcji. Wartość wyklucza czas spędzony w funkcjach podrzędnych funkcji wywoływanej, ale obejmuje wywołania systemu operacyjnego, takie jak przełączniki kontekstu i operacje wejścia/wyjścia.|
+|**% Czasu wyłącznego, który upłynął**|Wartość procentowa całkowitego czasu, który upłynął w przypadku uruchomienia profilowania w łącznym czasie trwania tej funkcji w tym kontekście.|
+|**Średni czas wyłączny, który upłynął**|Średni czas wyłączny dla wywołania tej funkcji w tym kontekście.|
+|**Maksymalny czas wyłączny, który upłynął**|Maksymalny czas wyłączny w wywołaniu tej funkcji w tym kontekście.|
+|**Minimalny czas, który upłynął**|Minimalny czas, który upłynął w przypadku wywołania tej funkcji w tym kontekście.|
+
+## <a name="application-inclusive-values"></a>Wartości włączne aplikacji
+ Wartości włącznie obejmują czas, przez który funkcja była w stosie wywołań. Czas nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia, ale obejmuje czas spędzony w funkcjach podrzędnych.
+
+|Kolumna|Opis|
+|------------|-----------------|
+|**Czas włączny aplikacji**|— Dla bieżącej funkcji, czas spędzony w funkcji i jej funkcjach podrzędnych. Wartość wyklucza czas spędzony w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.<br />-Dla funkcji wywołującej, ilość łącznego czasu aplikacji wygenerowanej przez wywołania z tej funkcji wywołującej.<br />-Dla funkcji wywoływanej, czas spędzony w tej funkcji i jej funkcjach podrzędnych, które zostały wygenerowane przez wywołania z bieżącej funkcji. Wartość nie obejmuje czasu spędzonego w wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.|
+|**% Włącznego czasu aplikacji**|Wartość procentowa łącznego czasu trwania przebiegu profilowania, która została wykorzystana w łącznym czasie włącznie aplikacji w tym kontekście.|
+|**Średni czas włączny aplikacji**|Średni czas włączny aplikacji wywołania tej funkcji w tym kontekście.|
+|**Maksymalny czas włączny aplikacji**|Maksymalny czas włączny aplikacji wywołania tej funkcji w tym kontekście.|
+|**Minimalny czas włączny aplikacji**|Minimalny czas włączny aplikacji w tym kontekście w przypadku wywołania tej funkcji.|
+
+## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji
+ Wartości wyłączne aplikacji wskazują czas spędzony w funkcji, z wyłączeniem czasu spędzonego w funkcjach podrzędnych. Określony czas również wyklucza czas spędzony na wywołaniach systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.
+
+|Kolumna|Opis|
+|------------|-----------------|
+|**Czas wyłączny aplikacji**|— Dla bieżącej funkcji czas spędzony w wykonywaniu treści funkcji. Wartość nie obejmuje czasu spędzonego w funkcjach podrzędnych ani nie obejmuje wywołań do systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.<br />— Dla funkcji wywołującej, ilość czasu wyłącznego aplikacji dla bieżącej funkcji wygenerowanej przez wywołania z tej funkcji wywołującej.<br />-Dla funkcji wywoływanej, czas spędzony w tej funkcji, który został wygenerowany przez wywołania z bieżącej funkcji. Wartość nie obejmuje czasu spędzonego w funkcjach podrzędnych funkcji wywoływanej ani nie obejmuje wywołań do systemu operacyjnego, takich jak przełączenia kontekstu i operacje wejścia/wyjścia.|
+|**% Wyłącznego czasu aplikacji**|Wartość procentowa całkowitego czasu, który upłynął w przypadku uruchomienia profilowania, który został spędzony w łącznym czasie trwania tej funkcji aplikacji w tym kontekście.|
+|**Średni czas wyłączny aplikacji**|Średni czas wyłączny aplikacji wywołania tej funkcji w tym kontekście.|
+|**Maksymalny czas wyłączny aplikacji**|Maksymalny czas wyłączny aplikacji wywołania tej funkcji w tym kontekście.|
+|**Minimalny czas wyłączny aplikacji**|Minimalny czas wyłączny aplikacji w wywołaniu tej funkcji w tym kontekście.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
-- [Widok wywołujący/wywoływany — dane próbkowania pamięci .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Widok rozmówcy/wywoływania — dane oprzyrządowania](../profiling/caller-callee-view-instrumentation-data.md)
-- [Widok wywołujący/wywoływany — dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
+- [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
+- [Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Widok wywołujący/wywoływany-Dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
+- [Widok wywołujący/wywoływany-Dane próbkowania](../profiling/caller-callee-view-sampling-data.md)

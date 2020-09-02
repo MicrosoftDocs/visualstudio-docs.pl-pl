@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Odnajdywanie DLL, która nastąpiła awaria programu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Znajdowanie biblioteki DLL, w której nastąpiła awaria programu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,34 +27,34 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44ebe042ff6e2507530e4be410e768550e922b44
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703631"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Instrukcje: Odnajdywanie DLL, która nastąpiła awaria programu
+# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Porady: odnajdywanie biblioteki DLL, w której nastąpiła awaria programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-UWAGA]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+KORYGUJĄC
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- Jeśli aplikacja ulegnie awarii podczas wywoływania biblioteki DLL systemu lub innej osoby kodu, musisz znaleźć się, które biblioteki DLL była aktywna podczas wystąpienia awarii. Jeśli wystąpi awaria w bibliotece DLL poza własny program, można zidentyfikować lokalizację za pomocą **modułów** okna.  
+ Jeśli aplikacja ulegnie awarii podczas wywołania do systemowej biblioteki DLL lub kodu innej osoby, należy dowiedzieć się, która Biblioteka DLL była aktywna w przypadku wystąpienia awarii. Jeśli wystąpi awaria w bibliotece DLL poza własnym programem, można zidentyfikować lokalizację przy użyciu okna **moduły** .  
   
-### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Aby dowiedzieć się, w przypadku, gdy awaria wystąpił podczas korzystania z okna modułów  
+### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Aby sprawdzić, w którym miejscu wystąpił awaria przy użyciu okna moduły  
   
-1. Zanotuj adres, w których wystąpiła awaria.  
+1. Zanotuj adres, na którym wystąpiła awaria.  
   
-2. Na **debugowania** menu, wybierz **Windows**i kliknij przycisk **modułów**.  
+2. W menu **Debuguj** wybierz pozycję **Windows**, a następnie kliknij opcję **moduły**.  
   
-3. W **modułów** oknie Znajdź **adres** kolumny. Może być konieczne sprawdzenie za pomocą paska przewijania.  
+3. W oknie **moduły** Znajdź kolumnę **adres** . Może być konieczne użycie paska przewijania, aby go zobaczyć.  
   
-4. Kliknij przycisk **adres** przycisku w górnej części kolumny, aby sortować biblioteki DLL przy użyciu adresu.  
+4. Kliknij przycisk **adresu** w górnej części kolumny, aby posortować biblioteki DLL według adresu.  
   
-5. Skanowanie posortowaną listę można znaleźć biblioteki DLL, którego zakres adresów zawiera lokalizację awarii.  
+5. Zeskanuj posortowaną listę, aby znaleźć bibliotekę DLL, której zakres adresów zawiera lokalizację awarii.  
   
-6. Przyjrzyj się **nazwa** i **ścieżki** kolumny, aby wyświetlić nazwę biblioteki DLL i ścieżkę.  
+6. Przejrzyj kolumny **Nazwa** i **ścieżka** , aby wyświetlić nazwę i ścieżkę biblioteki DLL.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Debugowanie natywnych bibliotek DLL](../debugger/how-to-debug-native-dlls.md)   
- [Instrukcje: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)
+ [Instrukcje: debugowanie natywnych bibliotek DLL](../debugger/how-to-debug-native-dlls.md)   
+ [Instrukcje: korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)

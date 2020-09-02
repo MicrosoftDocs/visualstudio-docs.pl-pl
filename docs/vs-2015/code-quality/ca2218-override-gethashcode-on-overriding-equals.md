@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538804"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Przesłaniaj metodę GetHashCode w razie przesłaniania metody Equals
@@ -36,7 +36,7 @@ ms.locfileid: "85538804"
  Typ publiczny przesłania, <xref:System.Object.Equals%2A?displayProperty=fullName> ale nie przesłania <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Object.GetHashCode%2A>Zwraca wartość opartą na bieżącym wystąpieniu, która jest odpowiednia dla algorytmów wyznaczania wartości skrótu i struktur danych, takich jak tabela skrótów. Dwa obiekty, które są tego samego typu i są równe, muszą zwracać ten sam kod skrótu, aby upewnić się, że wystąpienia następujących typów działają poprawnie:
+ <xref:System.Object.GetHashCode%2A> Zwraca wartość opartą na bieżącym wystąpieniu, która jest odpowiednia dla algorytmów wyznaczania wartości skrótu i struktur danych, takich jak tabela skrótów. Dwa obiekty, które są tego samego typu i są równe, muszą zwracać ten sam kod skrótu, aby upewnić się, że wystąpienia następujących typów działają poprawnie:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ ms.locfileid: "85538804"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Typy, które implementują<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Typy, które implementują <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy wprowadzić implementację programu <xref:System.Object.GetHashCode%2A> . Dla pary obiektów tego samego typu, należy się upewnić, że implementacja zwraca tę samą wartość, jeśli implementacja <xref:System.Object.Equals%2A> zwraca `true` dla pary.
@@ -101,7 +101,7 @@ ms.locfileid: "85538804"
 
  [CA2231: Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
