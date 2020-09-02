@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5069a40f4e3ea4b1fba74c8133a18b46f2b3f2d2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386228"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
@@ -68,4 +68,4 @@ int Step(
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)   
  [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)   
- [Zdarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

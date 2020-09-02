@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537374"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mierzenie wydajności aplikacji przez analizowanie użycia procesora CPU
@@ -134,7 +134,7 @@ Zalecamy rozpoczęcie analizowania danych przez badanie listy funkcji w obszarze
     ![Drzewo wywołań narzędzi diagnostycznych](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |Image (Obraz)|Opis|
+    |Obraz|Opis|
     |-|-|
     |![Krok 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołań użycia procesora CPU jest pseudo-węzłem|
     |![Krok 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|W większości aplikacji, gdy opcja [Pokaż zewnętrzny kod](#view-external-code) jest wyłączona, węzeł drugiego poziomu jest węzłem **[zewnętrzny kod]** zawierającym kod systemowy i program, który rozpoczyna i kończy działanie aplikacji, rysuje interfejs użytkownika, kontroluje planowanie wątków i udostępnia inne usługi niskiego poziomu aplikacji.|

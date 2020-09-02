@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression Wartośćwacja::SetRegistryRoot | Dokumenty firmy Microsoft
+title: 'IDebugExpressionEvaluator:: SetRegistryRoot | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729414"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-Ta metoda ustawia katalog główny rejestru. Służy do debugowania obok siebie.
+Ta metoda ustawia katalog główny rejestru. Używany do debugowania równoczesnego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int SetRegistryRoot(
 
 ## <a name="parameters"></a>Parametry
 `ustrRegistryRoot`\
-[w] Nowy katalog główny rejestru.
+podczas Nowy katalog główny rejestru.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Określony katalog główny rejestru jest zazwyczaj ustawiany, gdy oceniający wyrażenie jest najpierw wystąpienia i wskazuje klucz rejestru dla określonej wersji programu\\Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio*X.Y*, gdzie *X.Y* jest numerem wersji).
+ Określony katalog główny rejestru jest zazwyczaj ustawiany podczas pierwszego tworzenia wystąpienia ewaluatora wyrażeń i wskazuje na klucz rejestru dla określonej wersji programu Visual Studio (HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*, gdzie *X. y* jest numerem wersji).
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

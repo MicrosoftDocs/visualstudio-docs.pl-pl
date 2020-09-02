@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 672d472d4e592782f7ae06920c518b154fba6cba
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329877"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -32,7 +32,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ```
 
 #### <a name="parameters"></a>Parametry
- `Path`Licznik wydajności systemu Windows w formacie ścieżki licznika PDH.
+ `Path` Licznik wydajności systemu Windows w formacie ścieżki licznika PDH.
 
 ## <a name="required-options"></a>Wymagane opcje
  Opcji **WinCounter** można użyć tylko z opcją **Start** .

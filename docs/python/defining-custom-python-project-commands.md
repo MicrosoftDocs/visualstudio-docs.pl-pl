@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386988"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definiowanie poleceń niestandardowych dla projektów języka Python
@@ -379,7 +379,7 @@ Wskazuje, że zawartość `<Target>` lub `<CreatePythonCommandItem>` elementów 
 - Wymagany `Target` atrybut jest pusty.
 - Wymagany `TargetType` atrybut jest pusty lub zawiera nierozpoznaną wartość.
 - Wymagany `ExecuteIn` atrybut jest pusty lub zawiera nierozpoznaną wartość.
-- `ErrorRegex`lub `WarningRegex` jest określony bez ustawienia `ExecuteIn="output"` .
+- `ErrorRegex` lub `WarningRegex` jest określony bez ustawienia `ExecuteIn="output"` .
 - W elemencie istnieją nierozpoznane atrybuty. Można na przykład użyć `Argumnets` (błędne słowo) zamiast `Arguments` .
 
 Wartości atrybutów mogą być puste, jeśli odwołujesz się do właściwości, która nie została zdefiniowana. Na przykład, jeśli używasz tokenu `$(StartupFile)` , ale nie zdefiniowano pliku startowego w projekcie, token jest rozpoznawany jako pusty ciąg. W takich przypadkach może być konieczne zdefiniowanie wartości domyślnej. Na przykład polecenia **Uruchom serwer** i **Uruchom serwer debugowania** zdefiniowane w szablonach projektu butelka, kolby i Django domyślnie są *manage.py* , jeśli nie określono w inny sposób pliku startowego serwera we właściwościach projektu.

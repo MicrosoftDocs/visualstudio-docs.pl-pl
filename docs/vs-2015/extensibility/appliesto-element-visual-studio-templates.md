@@ -1,5 +1,5 @@
 ---
-title: AppliesTo, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: AppliesTo — element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,20 +9,20 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698939"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zobacz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Funkcje są udostępniane przez typy projektów za pośrednictwem hierarchii jako właściwość <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. W ten sposób szablon może być współużytkowany przez wiele typów projektów, które mają wspólne odnośne funkcje.  
+Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zobacz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher> ). Możliwości są udostępniane przez typy projektów za pośrednictwem hierarchii jako właściwości <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5> . W ten sposób szablon może być współużytkowany przez wiele typów projektów, które mają wspólne odnośne funkcje.  
   
- Ten element jest opcjonalny. Plik szablonu może zawierać maksymalnie jedno jego wystąpienie. Element umożliwia jedynie potwierdzenie zgodności szablonu elementu z funkcjami aktualnie zaznaczonego aktywnego projektu. Nie można za jego pomocą ustawić niezgodności szablonu. Jeśli `AppliesTo` jest nieobecny lub wyrażenie pomyślnie zgadzaj, następnie `TemplateID` lub `TemplateGroupID` służy do potwierdzana, jak w poprzednich wersjach produktu.  
+ Ten element jest opcjonalny. Plik szablonu może zawierać maksymalnie jedno jego wystąpienie. Element umożliwia jedynie potwierdzenie zgodności szablonu elementu z funkcjami aktualnie zaznaczonego aktywnego projektu. Nie można za jego pomocą ustawić niezgodności szablonu. Jeśli `AppliesTo` jest nieobecny lub wyrażenie nie powiodło się w, a `TemplateID` następnie `TemplateGroupID` jest używane w celu zastosowania szablonu, tak jak w poprzednich wersjach produktu.  
   
- Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do poprawnej wersji, zobacz [odwołuje się do zestawów zapewniane przez program Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Wprowadzono w Visual Studio 2013 Update 2. Aby odwołać się do odpowiedniej wersji, zobacz [odwołania do zestawów dostarczonych w Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,11 +54,11 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
   
  Prawidłową składnię wyrażeń definiuje się następująco:  
   
-- Wyrażenie funkcji, takich jak "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- Wyrażenie możliwości, takie jak "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
-- "&#124;" Jest operatorem lub.  
+- "&#124;" jest operatorem OR.  
   
-- "&" I "+" znaki są operatorami i.  
+- Znaki "&" i "+" są zarówno operatorami, jak i.  
   
 - Znak „!” jest operatorem NIE.  
   
@@ -66,10 +66,10 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
   
 - Wyrażenie o wartości null lub puste jest interpretowane jako zgodność.  
   
-- Możliwości projektu może być dowolny znak z wyjątkiem następujących znaków zastrzeżonych: "'' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
+- Możliwości projektu mogą być dowolnego znaku z wyjątkiem tych, które są zarezerwowane: "' ':;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <>? \t\b\n\r  
   
 ## <a name="example"></a>Przykład  
- W przykładzie poniżej widać trzy różne szablony. `Template1` ma zastosowanie do wszystkich typów projektów języka C# lub dowolnego innego typu projektu, który obsługuje `WindowsAppContainer` możliwości. `Template2` ma zastosowanie do wszystkich projektów języka C# wszelkiego rodzaju. `Template3` mają zastosowanie do projektów C#, które nie są `WindowsAppContainer` projektów.  
+ W przykładzie poniżej widać trzy różne szablony. `Template1` stosuje się do wszystkich typów projektów C# lub dowolnego innego typu projektu, który obsługuje tę `WindowsAppContainer` funkcję. `Template2` dotyczy wszystkich projektów w języku C# dowolnego rodzaju. `Template3` dotyczy projektów języka C#, które nie są `WindowsAppContainer` projektami.  
   
 ```xml  
 <!--  Template 1 -->  
@@ -99,5 +99,5 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

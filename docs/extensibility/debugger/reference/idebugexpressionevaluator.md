@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionAwartuator | Dokumenty firmy Microsoft
+title: IDebugExpressionEvaluator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e8dd910e4edc110abb40dde14b4cb85ff54a70a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729372"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Ten interfejs reprezentuje oceniającego wyrażenie.
+Ten interfejs reprezentuje ewaluatora wyrażeń.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,36 +32,36 @@ IDebugExpressionEvaluator : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
-Oceniający wyrażenie musi zaimplementować ten interfejs.
+Ewaluatora wyrażeń musi implementować ten interfejs.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
-Aby uzyskać ten interfejs, wystąpienia oceniającego `CoCreateInstance` wyrażenie za pomocą metody przy użyciu identyfikatora klasy (CLSID) oceniającego. Zobacz przykład.
+Aby uzyskać ten interfejs, Utwórz wystąpienie Ewaluatora wyrażenia za pośrednictwem `CoCreateInstance` metody przy użyciu identyfikatora klasy (CLSID) ewaluatora. Zapoznaj się z przykładem.
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
-W poniższej tabeli `IDebugExpressionEvaluator`przedstawiono metody .
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+W poniższej tabeli przedstawiono metody `IDebugExpressionEvaluator` .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Konwertuje ciąg wyrażenia na wyrażenie analizowane.|
+|[Analizuj](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Konwertuje ciąg wyrażenia na wyrażenie analizowane.|
 |[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Pobiera zmienne lokalne, argumenty i inne właściwości metody.|
 |[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Konwertuje lokalizację metody i przesunięcie na adres pamięci.|
-|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Określa, który język ma być używany do tworzenia wyników drukowania.|
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Ustawia katalog główny rejestru. Służy do debugowania obok siebie.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Określa język, który ma być używany do tworzenia wyników drukowalnych.|
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Ustawia katalog główny rejestru. Używany do debugowania równoczesnego.|
 
 ## <a name="remarks"></a>Uwagi
-W typowej sytuacji aparat debugowania (DE) wystąpienia oceniającego wyrażenie (EE) w wyniku wywołania [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Ponieważ DE zna język i dostawcy EE chce użyć, DE pobiera CSID EE z rejestru [(Pomocników SDK dla debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funkcji, `GetEEMetric`, pomaga w tym pobieranie).
+W typowej sytuacji aparat debugowania (DE) tworzy wystąpienie ewaluatora wyrażeń (EE) w wyniku wywołania [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Ze względu na to, że język i dostawca wersji EE, której chce użyć, nie pobiera identyfikatora CLSID EE z rejestru ( [Pomoc zestawu SDK dla funkcji debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , `GetEEMetric` ułatwia to pobieranie).
 
-Po wystąpieniu EE DE wywołuje [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) do analizować wyrażenie i przechowywać go w [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu. Później wywołanie [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) ocenia wyrażenie.
+Po utworzeniu wystąpienia EE wszystkie wywołania [przeanalizują](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) , aby przeanalizować wyrażenie i zapisać je w obiekcie [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) . Później wywołanie [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) oblicza wyrażenie.
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: ee.h
+Nagłówek: EE. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Przykład
-W tym przykładzie pokazano, jak utworzyć wystąpienia oceniającego wyrażenie podane dostawcy symbolu i adres w kodzie źródłowym. W tym przykładzie `GetEEMetric`użyto funkcji , z [pomocników SDK dla biblioteki debugowania,](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) dbgmetric.lib.
+Ten przykład pokazuje, jak utworzyć wystąpienie ewaluatora wyrażeń z dostawcą symboli i adresem w kodzie źródłowym. Ten przykład używa funkcji, `GetEEMetric` , od [pomocników zestawu SDK dla biblioteki debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , dbgmetric. lib.
 
 ```cpp
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,

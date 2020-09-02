@@ -1,5 +1,5 @@
 ---
-title: Widok znaczników | Dokumentacja firmy Microsoft
+title: Widok znaczników | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,24 +15,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699762"
 ---
 # <a name="marks-view"></a>Widok znaczników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Widok znaczników wyświetla próbki i zdarzenie ETW, które zostały wstawione do aplikacji.  
+Widok znaczniki wyświetla próbki i zdarzenia ETW, które zostały wstawione do aplikacji.  
   
- Znaczniki domyślne, które są wstępnie wypełnione w raporcie etykiety uruchamiania tego programu oraz koniec programu.  
+ Domyślne znaczniki, które są wstępnie wypełnione w raporcie etykieta początku programu i końca programu.  
   
- Dane liczników Windows z automatycznie generowanych znaczników są również przedstawione w tym widoku. Aby uzyskać więcej informacji, zobacz [jak: Zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ W tym widoku jest również prezentowane dane liczników systemu Windows z automatycznie generowanych znaczników. Aby uzyskać więcej informacji, zobacz [jak: zbierać dane liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
- Aby utworzyć filtr pomiędzy dwoma znakami, zaznacz znaki, kliknij prawym przyciskiem myszy, a następnie kliknij **Dodaj filtr dla znaczników** lub **Dodaj filtr dla znacznika czasu**.  
+ Aby utworzyć filtr między dwoma znakami, zaznacz znaczniki, kliknij prawym przyciskiem myszy, a następnie kliknij polecenie **Dodaj filtr według znaczników** lub **Dodaj filtr według sygnatury czasowej**.  
   
- Poniższa tabela zawiera definicje kolumn, które są dostępne w widoku znaczników.  
+ Poniższa tabela zawiera definicje kolumn, które są dostępne w widoku znaczniki.  
   
  **Identyfikator znacznika**  
  Unikatowy identyfikator znacznika profilowania.  
@@ -40,15 +40,15 @@ Widok znaczników wyświetla próbki i zdarzenie ETW, które zostały wstawione 
  **Nazwa znacznika**  
  Nazwa zdarzenia.  
   
- **Znacznik czasu:**  
- Czas od rozpoczęcia profilowania do momentu, że zdarzenie jest rejestrowane.  
+ **Timestamp**  
+ Czas od rozpoczęcia profilowania do czasu rejestrowania zdarzenia.  
   
- Dane licznika wydajności Windows  
- Po zebraniu danych licznika wydajności Windows wartości są wyświetlane w kolumnie, która zawiera nazwę licznika.  
+ Dane licznika wydajności systemu Windows  
+ Po zebraniu danych licznika wydajności systemu Windows wartości są wyświetlane w kolumnie, która ma nazwę licznika.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przegląd raportu wydajności](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > jak: Konfigurowanie znaczników profilowania](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > jak: Wstaw znaczniki w pliku danych Profiler](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
- [Instrukcje: Zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; okno Kontrola zbierania danych](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [<PAVE_OVER> How to: Configure Profiling Marks](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [<PAVE_OVER> jak wstawiać znaczniki w pliku danych profilera](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [Instrukcje: zbieranie danych licznika systemu Windows](../profiling/how-to-collect-windows-counter-data.md)   
+ [ Okno kontrolki zbierania danych&#91;NIB&#93;](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

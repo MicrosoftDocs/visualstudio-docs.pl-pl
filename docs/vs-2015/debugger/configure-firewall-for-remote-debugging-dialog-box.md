@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie zapory dla zdalnego debugowania okno dialogowe | Dokumentacja firmy Microsoft
+title: Okno dialogowe Konfigurowanie zapory dla zdalnego debugowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,29 +22,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26e2b1300feb8d2a15e63089ee9bddde5f2d1ef4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702284"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Konfigurowanie zapory do zdalnego debugowania — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-To okno dialogowe pojawia się, gdy Zapora Windows zablokuje debugera na odbieranie informacji za pośrednictwem sieci. Aby kontynuować, zdalne debugowanie, możesz otworzyć dziury w zaporze aby debuger może odbierać informacje.  
+To okno dialogowe pojawia się, gdy Zapora systemu Windows zablokuje dostęp do informacji za pośrednictwem sieci. Aby kontynuować debugowanie zdalne, musisz otworzyć otwór w zaporze, aby debuger mógł odbierać informacje.  
   
 > [!CAUTION]
-> Otwieranie dziury w zaporze może narazić komputer na zagrożenia, które Zapora jest przeznaczony do blokowania zabezpieczeń. Otwieranie dziury dla zdalnego debugowania odblokowuje porty 4020 i 4021 w programie Visual Studio 2015. W innych wersjach programu Visual Studio używane są inne numery portów. Aby uzyskać więcej informacji, zobacz [zdalnego przypisania portów debugera](../debugger/remote-debugger-port-assignments.md). Ponadto umożliwia debugera, otwarcie dodatkowych portów. Aby uzyskać więcej informacji, zobacz [skonfigurować zaporę Windows do zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
+> Otwarcie otworu w zaporze może narazić komputer na zagrożenia bezpieczeństwa, które jest przeznaczone do blokowania przez zaporę. Otwarcie otworu dla zdalnego debugowania odblokowuje porty 4020 i 4021 w programie Visual Studio 2015. W innych wersjach programu Visual Studio używane są inne numery portów. Aby uzyskać więcej informacji, zobacz [zdalne przydziały portów zdalnego debugera](../debugger/remote-debugger-port-assignments.md). Ponadto umożliwia debugerowi otwieranie dodatkowych portów. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zapory systemu Windows pod kątem zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Anuluj debugowanie zdalne**  
- Anuluje próby zdalnego debugowania. Ustawienia zabezpieczeń komputera pozostają bez zmian.  
+ Anuluje próbę debugowania zdalnego. Ustawienia zabezpieczeń na komputerze pozostają nienaruszone.  
   
- **Odblokuj debugowanie zdalne z komputerami w sieci lokalnej (podsieci)**  
- Umożliwia zdalne debugowanie maszyn w podsieci lokalnej. To może być otwarcie luk w zabezpieczeniach do komputerów w podsieci lokalnej, ale zapory w dalszym ciągu Blokuj informacje pochodzące spoza tej podsieci.  
+ **Odblokuj debugowanie zdalne z komputerów w sieci lokalnej (podsieci)**  
+ Włącza zdalne debugowanie maszyn w podsieci lokalnej. Może to spowodować otwarcie luk w zabezpieczeniach maszyn w podsieci lokalnej, ale Zapora nadal blokuje informacje pochodzące spoza podsieci.  
   
  **Odblokuj debugowanie zdalne z dowolnego komputera**  
- Umożliwia zdalne debugowanie maszyn w dowolnym miejscu w sieci. To ustawienie jest najniższy poziom zabezpieczeń.  
+ Umożliwia zdalne debugowanie maszyn w dowolnym miejscu w sieci. To ustawienie jest najmniej bezpieczne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

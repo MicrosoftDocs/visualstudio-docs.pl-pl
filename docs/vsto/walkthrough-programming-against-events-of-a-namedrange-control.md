@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Program w odniesieniu do zdarzeń formantu NamedRange'
+title: 'Przewodnik: program dla zdarzeń kontrolki NamedRange'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,24 +17,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446923"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64825059"
 ---
-# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Przewodnik: Program w odniesieniu do zdarzeń formantu NamedRange
-  W tym instruktażu przedstawiono sposób dodawania <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolę do arkusza programu Microsoft Office Excel i programowanie ze zdarzeniami przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
+# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Przewodnik: program dla zdarzeń kontrolki NamedRange
+  W tym instruktażu pokazano, jak dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę do Microsoft Office arkusza i programu Excel z jego zdarzeń przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Z tego instruktażu dowiesz się jak:
+ W tym instruktażu dowiesz się, jak:
 
-- Dodaj <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu do arkusza.
+- Dodaj <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę do arkusza.
 
-- Programować przy użyciu <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolować zdarzenia.
+- Program przed <xref:Microsoft.Office.Tools.Excel.NamedRange> zdarzeniami kontroli.
 
-- Testowanie projektu.
+- Przetestuj projekt.
 
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -46,120 +46,120 @@ ms.locfileid: "63446923"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Utwórz projekt
- W tym kroku utworzysz projektu skoroszytu programu Excel przy użyciu programu Visual Studio.
+## <a name="create-the-project"></a>Tworzenie projektu
+ W tym kroku utworzysz projekt skoroszytu programu Excel za pomocą programu Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt
 
-1. Utwórz projektu skoroszytu programu Excel o nazwie **Moje zdarzenia zakresu o nazwie**. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Utwórz projekt skoroszytu programu Excel z nazwą **Moje nazwane zdarzenia zakresu**. Upewnij się, że wybrano **Utwórz nowy dokument** . Aby uzyskać więcej informacji, zobacz [How to: Create Office projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje zdarzenia zakresu o nazwie** projekt **Eksploratora rozwiązań**.
+     Program Visual Studio otwiera nowy skoroszyt programu Excel w Projektancie i dodaje do **Eksplorator rozwiązań**projekt **Moje nazwane zdarzenia zakresu** .
 
-## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Dodawanie tekstu i nazwanych zakresów do arkusza
- Ponieważ formanty hosta są rozszerzonych obiektów pakietu Office, możesz je dodać do dokumentu w taki sam sposób możesz dodać obiekt natywny. Na przykład można dodać programu Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu do arkusza, otwierając **Wstaw** menu, wskazać polecenie **nazwa**i wybierając pozycję **Definiuj**. Można również dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki, przeciągając go z **przybornika** do arkusza.
+## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Dodaj tekst i nazwane zakresy do arkusza
+ Ponieważ formanty hosta są rozszerzonymi obiektami pakietu Office, można je dodać do dokumentu w taki sam sposób, jak dodać obiekt macierzysty. Na przykład można dodać kontrolkę programu Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> do arkusza, otwierając menu **Wstaw** , wskazując **nazwę**i wybierając **Definiuj**. Możesz również dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formant, przeciągając go z **przybornika** do arkusza.
 
- W tym kroku dodasz dwóch kontrolek nazwanych zakresów do arkusza za pomocą **przybornika**, a następnie dodaj tekst do arkusza.
+ W tym kroku dodasz dwie kontrolki z nazwanymi zakresami do arkusza za pomocą **przybornika**, a następnie dodasz tekst do arkusza.
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>Aby dodać zakres do arkusza
 
-1. Upewnij się, że *Events.xlsx zakresu o nazwie My* skoroszyt jest otwarty w Projektancie Visual Studio za pomocą `Sheet1` wyświetlane.
+1. Upewnij się, że skoroszyt *mój nazwany zakres Events.xlsx* jest otwarty w projektancie programu Visual Studio z `Sheet1` wyświetlonym poleceniem.
 
-2. Z **kontrolki programu Excel** kartę przybornika przeciągnij <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę komórki **A1** w `Sheet1`.
+2. Na karcie **formanty programu Excel** przybornika przeciągnij <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę do komórki **a1** w `Sheet1` .
 
-     **Dodaj kontrolkę NamedRange** pojawi się okno dialogowe.
+     Pojawi się okno dialogowe **Dodaj kontrolkę NamedRange** .
 
-3. Upewnij się, że **$A$ 1** pojawia się w polu tekst do edycji, a tej komórki **A1** jest zaznaczone. Jeśli nie, kliknij pozycję komórki **A1** aby go zaznaczyć.
+3. Sprawdź, czy **$A $1** pojawia się w edytowalnym polu tekstowym, a komórka **a1** jest zaznaczona. Jeśli tak nie jest, kliknij komórkę **a1** , aby ją zaznaczyć.
 
 4. Kliknij przycisk **OK**.
 
-     Komórka **A1** staje się zakres o nazwie `namedRange1`. Nie ma żadnego wskazania widoczne w arkuszu, ale `namedRange1` pojawia się w **nazwa** pole (znajdujące się tuż nad arkusz po lewej stronie) gdy komórka **A1** wybrano.
+     Komórka **a1** otrzymuje zakres o nazwie `namedRange1` . W arkuszu nie ma widocznych wskazań, ale `namedRange1` pojawia się w polu **Nazwa** (znajdującym się tuż nad arkuszem po lewej stronie), gdy jest zaznaczona komórka **a1** .
 
-5. Dodaj kolejną <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę komórki **B3**.
+5. Dodaj kolejną <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę do komórki **B3**.
 
-6. Upewnij się, że **$B$ 3** pojawia się w polu tekst do edycji, a tej komórki **B3** jest zaznaczone. Jeśli nie, kliknij pozycję komórki **B3** aby go zaznaczyć.
+6. Sprawdź, czy **$B $3** pojawia się w edytowalnym polu tekstowym, a następnie wybierz komórkę **B3** . Jeśli tak nie jest, kliknij komórkę **B3** , aby ją zaznaczyć.
 
 7. Kliknij przycisk **OK**.
 
-     Komórka **B3** staje się zakres o nazwie `namedRange2`.
+     Komórka **B3** jest zakresem o nazwie `namedRange2` .
 
 ### <a name="to-add-text-to-your-worksheet"></a>Aby dodać tekst do arkusza
 
-1. W komórce **A1**, wpisz następujący tekst:
+1. W komórce **a1**wpisz następujący tekst:
 
     **Jest to przykład kontrolki NamedRange.**
 
-2. W komórce **A3** (po lewej stronie `namedRange2`), wpisz następujący tekst:
+2. W komórce **a3** (po lewej stronie `namedRange2` ) wpisz następujący tekst:
 
-    **Zdarzenia:**
+    **Wydarzeniach**
 
-   W poniższych sekcjach, trzeba napisać kod, który wstawia tekst do `namedRange2` i modyfikuje właściwości `namedRange2` formant w odpowiedzi na <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, i <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> zdarzenia `namedRange1`.
+   W poniższych sekcjach napiszesz kod, który wstawia tekst do `namedRange2` i modyfikuje właściwości `namedRange2` kontrolki w odpowiedzi na <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenia, i <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> `namedRange1` .
 
-## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>Dodaj kod w celu zareagowania na zdarzenie BeforeDoubleClick
+## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>Dodaj kod odpowiadający zdarzeniu BeforeDoubleClick
 
-### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>Aby wstawić tekst na NamedRange2 na podstawie zdarzeń BeforeDoubleClick
+### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>Aby wstawić tekst do NamedRange2 na podstawie zdarzenia BeforeDoubleClick
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.vb** lub **Sheet1.cs** i wybierz **Wyświetl kod**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **Arkusz1. vb** lub **Sheet1.cs** i wybierz polecenie **Wyświetl kod**.
 
-2. Dodaj kod, więc `namedRange1_BeforeDoubleClick` program obsługi zdarzeń wygląda podobnie do następującej:
+2. Dodaj kod, aby `namedRange1_BeforeDoubleClick` program obsługi zdarzeń wyglądał następująco:
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]
 
-3. W języku C#, należy dodać procedury obsługi zdarzeń dla zakresu o nazwie, jak pokazano na <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> poniższe zdarzenie. Aby uzyskać informacje na temat tworzenia procedury obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. W języku C# należy dodać procedury obsługi zdarzeń dla nazwanego zakresu, jak pokazano w <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> poniższym zdarzeniu. Aby uzyskać informacje dotyczące tworzenia programów obsługi zdarzeń, zobacz [jak: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]
 
-## <a name="add-code-to-respond-to-the-change-event"></a>Dodaj kod, aby reagować na zdarzenia zmiany
+## <a name="add-code-to-respond-to-the-change-event"></a>Dodaj kod, aby odpowiedzieć na zdarzenie zmiany
 
-### <a name="to-insert-text-into-namedrange2-based-on-the-change-event"></a>Aby wstawić tekst na namedRange2 na podstawie zdarzeń zmiany
+### <a name="to-insert-text-into-namedrange2-based-on-the-change-event"></a>Aby wstawić tekst do namedRange2 na podstawie zdarzenia zmiany
 
-1. Dodaj kod, więc `NamedRange1_Change` program obsługi zdarzeń wygląda podobnie do następującej:
+1. Dodaj kod, aby `NamedRange1_Change` program obsługi zdarzeń wyglądał następująco:
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    > Ponieważ dwukrotnie komórkę w zakresie programu Excel przejdzie do trybu edycji, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenie występuje, gdy wybór zostanie przeniesiony poza zakresem, nawet wtedy, gdy wystąpił brak zmian do tekstu.
+    > Ponieważ dwukrotne kliknięcie komórki w zakresie programu Excel spowoduje przejście do trybu edycji, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenie występuje, gdy zaznaczenie jest przenoszone poza zakres nawet wtedy, gdy nie wystąpiły żadne zmiany w tekście.
 
-## <a name="add-code-to-respond-to-the-selectionchange-event"></a>Dodaj kod, aby odpowiedzieć na SelectionChange, zdarzenie
+## <a name="add-code-to-respond-to-the-selectionchange-event"></a>Dodaj kod odpowiadający zdarzeniu SelectionChange
 
-### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>Aby wstawić tekst na namedRange2 w oparciu o SelectionChange, zdarzenie
+### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>Aby wstawić tekst do namedRange2 na podstawie zdarzenia SelectionChange
 
-1. Dodaj kod, więc **NamedRange1_SelectionChange** programu obsługi zdarzeń wygląda podobnie do następującej:
+1. Dodaj kod, aby program obsługi zdarzeń **NamedRange1_SelectionChange** wyglądał następująco:
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    > Dwukrotne kliknięcie komórki w zakresie programu Excel powoduje, że zaznaczenie, aby przenieść do zakresu, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> zdarzenie występuje przed <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> wystąpi zdarzenie.
+    > Ponieważ dwukrotne kliknięcie komórki w zakresie programu Excel powoduje przeniesienie zaznaczenia do zakresu, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> zdarzenie występuje przed <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> wystąpieniem zdarzenia.
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
- Teraz możesz przetestować skoroszytu, aby zweryfikować ten tekst opisem zdarzeń <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki są wstawiane do innego nazwany zakres, gdy zdarzenia są wywoływane.
+ Teraz można testować skoroszyt, aby sprawdzić, czy tekst opisujący zdarzenia <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki został wstawiony do innego nazwanego zakresu, gdy zdarzenia są zgłaszane.
 
-### <a name="to-test-your-document"></a>Aby przetestować dokumentu
+### <a name="to-test-your-document"></a>Aby przetestować dokument
 
-1. Naciśnij klawisz **F5** Aby uruchomić projekt.
+1. Naciśnij klawisz **F5** , aby uruchomić projekt.
 
-2. Umieść kursor w `namedRange1`i sprawdź, czy tekst dotyczące <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> dodaje zdarzenie, a komentarz zostaną wstawione do arkusza.
+2. Umieść kursor w obszarze `namedRange1` i sprawdź, czy tekst dotyczący <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> zdarzenia jest wstawiany i czy komentarz jest wstawiany do arkusza.
 
-3. Kliknij dwukrotnie wewnątrz `namedRange1`i sprawdź, czy tekst dotyczące <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> zdarzeń dodaje się czerwony tekst kursywą w `namedRange2`.
+3. Kliknij dwukrotnie wewnątrz `namedRange1` i sprawdź, czy tekst dotyczący <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> zdarzeń jest wstawiany z czerwonym kursywą w tekście `namedRange2` .
 
-4. Kliknij poza `namedRange1` i zwróć uwagę, że zdarzenia zmiany występuje podczas zamykania trybu edycji, nawet jeśli nie zmiany w tekście.
+4. Kliknij poza `namedRange1` i pamiętaj, że zdarzenie zmiany występuje podczas kończenia trybu edycji, nawet jeśli nie wprowadzono zmiany w tekście.
 
-5. Zmienianie tekstu w `namedRange1`.
+5. Zmień tekst w `namedRange1` .
 
-6. Kliknij poza `namedRange1`i sprawdź, czy tekst dotyczące <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzeń dodaje się z niebieski tekst pod `namedRange2`.
+6. Kliknij poza `namedRange1` i sprawdź, czy w polu tekst dotyczący <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenia jest wstawiany niebieski tekst `namedRange2` .
 
 ## <a name="next-steps"></a>Następne kroki
- W tym przewodniku przedstawiono podstawowe informacje dotyczące programowania w odniesieniu do zdarzeń <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli. W tym polu jest zadaniem, które mogą pochodzić dalej:
+ W tym instruktażu przedstawiono podstawowe informacje dotyczące programowania względem zdarzeń <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki. Oto zadanie, które może się pojawić w następnej kolejności:
 
-- Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrożyć rozwiązanie Office](../vsto/deploying-an-office-solution.md).
+- Wdrażanie projektu. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)
+## <a name="see-also"></a>Zobacz też
+- [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)
 - [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)
-- [Namedrange — formant](../vsto/namedrange-control.md)
-- [Instrukcje: Zmiana rozmiaru formantów NamedRange](../vsto/how-to-resize-namedrange-controls.md)
-- [Instrukcje: Dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [NamedRange — formant](../vsto/namedrange-control.md)
+- [Instrukcje: zmiana rozmiaru kontrolek NamedRange](../vsto/how-to-resize-namedrange-controls.md)
+- [Instrukcje: Dodawanie kontrolek NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Instrukcje: Tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md)

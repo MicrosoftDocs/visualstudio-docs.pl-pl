@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538639"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Przesłaniaj metodę equals w przypadku przeciążania operatora równości
@@ -50,7 +50,7 @@ ms.locfileid: "85538639"
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Przykłady niespójnych definicji równości
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie przedstawiono typ z niespójnymi definicjami równości. `BadPoint`zmienia znaczenie, dostarczając niestandardową implementację operatora równości, ale nie przesłania się <xref:System.Object.Equals%2A> tak, że zachowuje się identycznie.
+ W poniższym przykładzie przedstawiono typ z niespójnymi definicjami równości. `BadPoint` zmienia znaczenie, dostarczając niestandardową implementację operatora równości, ale nie przesłania się <xref:System.Object.Equals%2A> tak, że zachowuje się identycznie.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]

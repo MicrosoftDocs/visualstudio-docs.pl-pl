@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeLength | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_liveRangeLength | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33f56615334b7d33516c6c967f165dac3942b5f8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64825229"
 ---
-# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
+# <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zwraca długość zakresu adresów, w którym symbolu lokalnego jest poprawna.  
+Zwraca długość zakresu adresów, w którym lokalny symbol jest prawidłowy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,20 +35,20 @@ HRESULT get_liveRangeLength ( 
   
 #### <a name="parameters"></a>Parametry  
  `length`  
- [out] Zwraca długość zakresu adresów.  
+ określoną Zwraca długość zakresu adresów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
-> Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.  
+> Zwrócony kod błędu oznacza, że symbol nie zawiera informacji o zakresie na żywo.  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2. h  
   
- Biblioteka: diaguids.lib  
+ Biblioteka: diaguids. lib  
   
  DLL: msdia100.dll  
   

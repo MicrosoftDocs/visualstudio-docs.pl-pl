@@ -1,5 +1,5 @@
 ---
-title: Element funkcji | Dokumentacja firmy Microsoft
+title: Funkcje elementów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,23 +12,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192897"
 ---
 # <a name="item-functions"></a>Funkcje elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Począwszy od programu MSBuild 4.0, kod w zadania i elementy docelowe można wywołać elementu funkcji, aby uzyskać informacje na temat elementów w projekcie. Te funkcje upraszczają pobierania elementów Distinct() i są szybsze niż elementy w pętli.  
+Począwszy od programu MSBuild 4,0, kod w zadaniach i obiektach docelowych może wywoływać funkcje elementu, aby uzyskać informacje o elementach w projekcie. Te funkcje upraszczają pobieranie elementów DISTINCT () i są szybsze niż pętle w elementach.  
   
-## <a name="string-item-functions"></a>Ciąg funkcje elementów  
- Do działania na dowolną wartość elementu, można użyć właściwości i metod ciągów w programie .NET Framework. Aby uzyskać <xref:System.String> metod, określ nazwę metody. Aby uzyskać <xref:System.String> właściwości, określ nazwę właściwości, po przekroczeniu "rzeczoznawcy".  
+## <a name="string-item-functions"></a>Funkcje elementu String  
+ Można użyć metod i właściwości ciągu w .NET Framework, aby wykonywać operacje na dowolnej wartości elementu. Dla <xref:System.String> metod należy określić nazwę metody. Dla <xref:System.String> właściwości, należy określić nazwę właściwości po "get_".  
   
- Elementy, które mają wiele ciągów ciąg metodę lub właściwość uruchamiane dla każdego ciągu.  
+ Dla elementów, które mają wiele ciągów, Metoda ciągu lub właściwość jest uruchamiana dla każdego ciągu.  
   
- Poniższy przykład pokazuje, jak używać tych funkcji element ciągu.  
+ Poniższy przykład pokazuje, jak używać tych funkcji ciągów znaków.  
   
 ```  
 <ItemGroup>  
@@ -51,23 +51,23 @@ Począwszy od programu MSBuild 4.0, kod w zadania i elementy docelowe można wyw
   -->  
 ```  
   
-## <a name="intrinsic-item-functions"></a>Funkcje wewnętrzne elementów  
- W tabeli poniżej wymieniono funkcje wewnętrzne dostępne dla elementów.  
+## <a name="intrinsic-item-functions"></a>Funkcje elementu wewnętrznego  
+ W poniższej tabeli wymieniono funkcje wewnętrzne dostępne dla elementów.  
   
 |Funkcja|Przykład|Opis|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Zwraca liczbę elementów.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Zwraca odpowiednik `Path.DirectoryName` dla każdego elementu.|  
-|`Distinct`|`@(MyItem->Distinct())`|Zwraca elementy, które mają różne `Include` wartości. Metadanych jest ignorowany. Wynik porównania jest uwzględniana wielkość liter.|  
-|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Zwraca elementy, które mają różne `itemspec` wartości. Metadanych jest ignorowany. Wynik porównania jest uwzględniana wielkość liter.|  
-|`Reverse`|`@(MyItem->Reverse())`|Zwraca elementy w odwrotnej kolejności.|  
-|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Zwraca `boolean` do wskazywania, czy dowolny element ma określonych metadanych nazwą i wartością. Wynik porównania jest uwzględniana wielkość liter.|  
-|`ClearMetadata`|`@(MyItem->ClearMetadata())`|Zwraca elementy z ich metadanymi wyczyszczone. Tylko `itemspec` są zachowywane.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName")`|Zwraca elementy, które mają taką nazwę określonych metadanych. Wynik porównania jest uwzględniana wielkość liter.|  
-|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Zwraca wartości metadanych, których nazwa metadanych.|  
-|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue")`|Zwraca elementy, które mają dane określone metadane nazwą i wartością. Wynik porównania jest uwzględniana wielkość liter.|  
+|`Distinct`|`@(MyItem->Distinct())`|Zwraca elementy, które mają różne `Include` wartości. Metadane zostały zignorowane. W porównaniu jest rozróżniana wielkość liter.|  
+|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Zwraca elementy, które mają różne `itemspec` wartości. Metadane zostały zignorowane. W porównaniu z rozróżnianiem wielkości liter.|  
+|`Reverse`|`@(MyItem->Reverse())`|Zwraca elementy w kolejności odwrotnej.|  
+|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Zwraca wartość, `boolean` Aby wskazać, czy dowolny element ma daną nazwę metadanych, i jego wartości. W porównaniu jest rozróżniana wielkość liter.|  
+|`ClearMetadata`|`@(MyItem->ClearMetadata())`|Zwraca elementy z wyczyszczonymi metadanymi. Tylko `itemspec` jest zachowywane.|  
+|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName")`|Zwraca elementy, które mają daną nazwę metadanych. W porównaniu jest rozróżniana wielkość liter.|  
+|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Zwraca wartości metadanych, które mają nazwę metadanych.|  
+|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue")`|Zwraca elementy, które mają daną nazwę i wartość metadanych. W porównaniu jest rozróżniana wielkość liter.|  
   
- Poniższy przykład pokazuje, jak używać funkcji wewnętrznych elementów.  
+ Poniższy przykład pokazuje, jak używać funkcji elementu wewnętrznego.  
   
 ```  
 <ItemGroup>  

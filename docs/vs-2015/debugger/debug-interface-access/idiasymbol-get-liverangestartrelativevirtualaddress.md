@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_liveRangeStartRelativeVirtualAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3dc0c42fe5dd5bc99e806ffbc20f42aa897d4c22
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64824935"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zwraca początek zakresu adresów, w którym symbolu lokalnego jest poprawna.  
+Zwraca początek zakresu adresów, w którym lokalny symbol jest prawidłowy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,20 +35,20 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
   
 #### <a name="parameters"></a>Parametry  
  `address`  
- [out] Zwraca początek zakresu adresów.  
+ określoną Zwraca początek zakresu adresów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Względny adres wirtualny, zwracany jest początek zakresu, w którym symbol jest poprawna.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwrócony adres wirtualny jest początkiem zakresu, w którym symbol jest prawidłowy.  
   
 > [!NOTE]
-> Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.  
+> Zwrócony kod błędu oznacza, że symbol nie zawiera informacji o zakresie na żywo.  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2. h  
   
- Biblioteka: diaguids.lib  
+ Biblioteka: diaguids. lib  
   
  DLL: msdia100.dll  
   

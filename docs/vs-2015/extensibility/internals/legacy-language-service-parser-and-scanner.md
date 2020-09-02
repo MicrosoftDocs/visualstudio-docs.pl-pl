@@ -1,5 +1,5 @@
 ---
-title: Starszego języka usługi analizator i skaner | Dokumentacja firmy Microsoft
+title: Analizator i skaner starszej usługi językowej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,19 +12,19 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434362"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64825173"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Analizator jest niezwykle usługi języka. Klasy języka zarządzanego pakietu Framework (MPF) wymagają analizatora języka, aby wybrać informacje związane z kodem są wyświetlane. Analizator składni dzieli tekst na tokeny leksykalne, a następnie identyfikuje tych tokenów według typu i funkcje.  
+Analizator jest sercem usługi językowej. Klasy języka Managed Package Framework (MPF) wymagają parsera języka w celu wybrania informacji o wyświetlanym kodzie. Parser oddziela tekst do tokenów leksykalnych, a następnie identyfikuje te tokeny według typu i funkcji.  
   
 ## <a name="discussion"></a>Dyskusja  
- Poniżej przedstawiono metodę języka C#.  
+ Poniżej znajduje się Metoda języka C#.  
   
 ```csharp  
 namespace MyNamespace  
@@ -39,102 +39,102 @@ namespace MyNamespace
 }  
 ```  
   
- W tym przykładzie tokeny są wyrazy i znaków interpunkcyjnych. Dostępne są następujące typy tokenów.  
+ W tym przykładzie tokeny są słowami i znakami interpunkcyjnych. Rodzaje tokenów są następujące.  
   
 |Nazwa tokenu|Typ tokenu|  
 |----------------|----------------|  
-|przestrzeń nazw, klasy, publiczna, void "," int|Słowo kluczowe|  
+|Przestrzeń nazw, Klasa, Public, void, int|kodu|  
 |=|operator|  
-|{ } ( ) ;|Ogranicznik|  
-|MyNamespace MyClass, MyFunction, arg1, var1|identyfikator|  
-|MyNamespace|— przestrzeń nazw|  
+|{ } ( ) ;|ogranicznik|  
+|Przestrzeń nazw, MyClass, myFunction, arg1, var1|identyfikator|  
+|MyNamespace|namespace|  
 |MyClass|class|  
-|MyFunction|— metoda|  
+|MyFunction|method|  
 |arg1|parametr|  
 |var1|Zmienna lokalna|  
   
- Rola Analizator jest do identyfikowania tokenów. Niektóre tokeny może mieć więcej niż jednego typu. Po analizator zidentyfikowała tokenów, usługa językowa użyć informacji, aby zapewnić przydatne funkcje, takie jak wyróżnianie składni, dopasowywanie nawiasów i operacje IntelliSense.  
+ Rolą parsera jest zidentyfikowanie tokenów. Niektóre tokeny mogą mieć więcej niż jeden typ. Po zidentyfikowaniu tokenów przez analizator, usługa języka może używać informacji w celu zapewnienia użytecznych funkcji, takich jak wyróżnianie składni, dopasowywanie nawiasów klamrowych i operacje IntelliSense.  
   
-## <a name="types-of-parsers"></a>Typy analizatory składni  
- Analizatora usługa języka nie jest taka sama jak analizator używany jako część kompilatora. Jednak tego rodzaju analizator musi używać analizator i skaner w taki sam sposób jak analizatora kompilator.  
+## <a name="types-of-parsers"></a>Typy analizatorów  
+ Analizator usługi językowej nie jest taki sam jak parser używany jako część kompilatora. Jednak ten rodzaj parsera musi używać skanera i analizatora w taki sam sposób jak parser kompilatora.  
   
-- Skaner służy do identyfikowania typy tokenów. Te informacje są używane, wyróżnianie składni i szybko zidentyfikować typy tokenów, które mogą wyzwalać inne operacje, na przykład, parowanie nawiasów klamrowych. Ten skaner jest reprezentowany przez <xref:Microsoft.VisualStudio.Package.IScanner> interfejsu.  
+- Skaner służy do identyfikowania typów tokenów. Te informacje są używane do wyróżniania składni i szybkiego identyfikowania typów tokenów, które mogą wyzwalać inne operacje, na przykład Dopasowywanie nawiasów klamrowych. Ten skaner jest reprezentowany przez <xref:Microsoft.VisualStudio.Package.IScanner> interfejs.  
   
-- Analizator jest używany do opisu funkcji i zakresu tokenów. Te informacje jest używany w funkcji IntelliSense, operacjach, aby zidentyfikować elementy języka, takich jak metody, zmiennych, parametrów i deklaracji i zawierają listy elementów członkowskich i podpisy metod na podstawie kontekstu. Ten parser również jest używana do lokalizowania pasujących par elementu języka, takich jak nawiasy i nawiasy. Ten parser odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy.  
+- Parser służy do opisywania funkcji i zakresu tokenów. Te informacje są używane w operacjach IntelliSense do identyfikowania elementów języka, takich jak metody, zmienne, parametry i deklaracje, oraz do udostępniania list elementów członkowskich i sygnatur metod opartych na kontekście. Ten parser jest również używany do lokalizowania pasujących par elementów języka, takich jak nawiasy klamrowe i nawiasy. Dostęp do tego parsera uzyskuje się za pomocą <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie.  
   
-  Sposób implementacji skanera i analizatora dla usługi w języka zależy od użytkownika. Dostępnych jest kilka zasobów opisujące, jak działają analizatory i jak napisać własny analizator składni. Ponadto są dostępne kilka produktów bezpłatne i komercyjne to pomoże w tworzeniu analizatora składni.  
+  Zaimplementowanie skanera i parsera dla usługi językowej jest możliwe. Dostępnych jest kilka zasobów, które opisują, jak działają analizatory i jak pisać własne parsery. Ponadto dostępne są kilka bezpłatnych i komercyjnych produktów, które ułatwiają tworzenie parsera.  
   
 ### <a name="the-parsesource-parser"></a>Analizator ParseSource  
- W przeciwieństwie do analizatora, która jest używana jako część kompilatora (gdzie tokeny są konwertowane na jakiegoś kodu wykonywalnego) analizatora usług języka może być wywoływana wiele różnych powodów i w wielu różnych kontekstach. Jak zaimplementować to podejście w <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy zależy od użytkownika. Ważne jest, aby pamiętać, że <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda może być wywoływana w wątku tła.  
+ W przeciwieństwie do analizatora, który jest używany jako część kompilatora (w którym tokeny są konwertowane na pewną postać kodu wykonywalnego), Analizator usługi językowej można wywołać z wielu różnych powodów i w wielu różnych kontekstach. Sposób implementacji tego podejścia w <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodzie w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie jest do użytkownika. Należy pamiętać, że <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Metoda może być wywoływana w wątku w tle.  
   
 > [!CAUTION]
-> <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktura zawiera odwołanie do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiektu. To <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiektu nie można używać w wątku w tle. W rzeczywistości wielu klas bazowych MPF nie można używać w wątku w tle. Obejmują one <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> klasy i inne klasy, który bezpośrednio lub pośrednio komunikuje się z widoku.  
+> <xref:Microsoft.VisualStudio.Package.ParseRequest>Struktura zawiera odwołanie do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiektu. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>Nie można użyć tego obiektu w wątku w tle. W rzeczywistości wiele podstawowych klas MPF nie można używać w wątku w tle. Obejmują one <xref:Microsoft.VisualStudio.Package.Source> , <xref:Microsoft.VisualStudio.Package.ViewFilter> , <xref:Microsoft.VisualStudio.Package.CodeWindowManager> klasy i inne klasy, które bezpośrednio lub pośrednio komunikują się z widokiem.  
   
- Ten parser zazwyczaj analizuje czas pliku pierwszy całego źródła, jest on nazywany lub podczas analizy przyczyny wartość <xref:Microsoft.VisualStudio.Package.ParseReason> otrzymuje. Kolejne wywołania <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody obsługi niewielką część przeanalizowany kodu i mogą być wykonywane szybciej przy użyciu wyników poprzedniej operacji pełnej analizy. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Metoda komunikuje się wyniki operacji analizowania za pośrednictwem <xref:Microsoft.VisualStudio.Package.AuthoringSink> i <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektów. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Obiekt jest używany do zbierania informacji z określonego powodu analizy, na przykład informacje o zakresy dopasowywanie nawiasów zwykłych lub podpisy metody, które ma listy parametrów. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Zawiera kolekcje deklaracje i podpisy metod oraz pomocy technicznej przejdź do zaawansowanej edycji opcji (**przejdź do definicji**, **przejdź do deklaracji**, **przejdź do Odwołanie**).  
+ Ten parser zwykle analizuje cały plik źródłowy przy pierwszym wywołaniu lub w przypadku podaniu wartości przyczyny analizy <xref:Microsoft.VisualStudio.Package.ParseReason> . Kolejne wywołania <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody obsługują niewielką część przeanalizowanego kodu i mogą być wykonywane znacznie szybciej przy użyciu wyników poprzedniej operacji pełnej analizy. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>Metoda przekazuje wyniki operacji analizowania za pomocą <xref:Microsoft.VisualStudio.Package.AuthoringSink> <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektów i. <xref:Microsoft.VisualStudio.Package.AuthoringSink>Obiekt służy do zbierania informacji o konkretnym przyczynie analizy, na przykład informacje o zakresach pasujących nawiasów klamrowych lub sygnaturach metod, które mają listy parametrów. <xref:Microsoft.VisualStudio.Package.AuthoringScope>Zawiera kolekcje deklaracji i sygnatur metod, a także obsługę opcji przejdź do zaawansowanej edycji (**Przejdź do definicji**, przejdź do **deklaracji**, **Przejdź do odwołania**).  
   
-### <a name="the-iscanner-scanner"></a>Skaner IScanner  
- Należy także zaimplementować skanera, który implementuje <xref:Microsoft.VisualStudio.Package.IScanner>. Jednakże ponieważ ten skaner działa na zasadzie wiersz po wierszu za pomocą <xref:Microsoft.VisualStudio.Package.Colorizer> klasy, jest zazwyczaj łatwiejsze do wdrożenia. Na początku każdego wiersza, zapewnia MPF <xref:Microsoft.VisualStudio.Package.Colorizer> klasy wartości do użycia jako zmiennej stanu, który jest przekazywany do skanera. Na końcu każdego wiersza skaner zwraca zmienną zaktualizowany stan. MPF buforuje tych informacji o stanie dla każdego wiersza, tak, aby uruchomić skanera analizy z każdego wiersza bez konieczności uruchamiania na początku pliku źródłowego. Szybkie skanowanie jednowierszowym umożliwia szybkie opinii użytkownika w edytorze.  
+### <a name="the-iscanner-scanner"></a>Skaner ispuszker  
+ Należy również zaimplementować skaner, który implementuje <xref:Microsoft.VisualStudio.Package.IScanner> . Jednak ponieważ ten skaner działa w oparciu o linię po wierszu przez <xref:Microsoft.VisualStudio.Package.Colorizer> klasę, zazwyczaj łatwiej jest zaimplementować. Na początku każdego wiersza MPF nadaje klasie wartości, która <xref:Microsoft.VisualStudio.Package.Colorizer> ma być używana jako zmienna stanu, która jest przenoszona do skanera. Na końcu każdego wiersza skaner zwraca zaktualizowaną zmienną stanu. MPF buforuje informacje o stanie dla każdego wiersza, dzięki czemu skaner może rozpocząć analizowanie z dowolnego wiersza bez konieczności uruchamiania na początku pliku źródłowego. To szybkie skanowanie pojedynczego wiersza umożliwia edytorowi szybkie przesyłanie opinii do użytkownika.  
   
-## <a name="parsing-for-matching-braces"></a>Analiza kodu dla dopasowywanie nawiasów klamrowych  
- Ten przykład przedstawia przepływ sterowania do dopasowania zamykającego nawiasu klamrowego, wpisany przez użytkownika. W ramach tego procesu skanera, który jest używany do kolorowania umożliwia również określanie typu tokenu i tego, czy token można wyzwolić operacji nawias klamrowy dopasowania. Jeśli wyzwalacz zostanie znaleziony, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda jest wywoływana w celu znalezienia pasującego nawiasu klamrowego. Na koniec dwa nawiasy klamrowe są wyróżnione.  
+## <a name="parsing-for-matching-braces"></a>Analizowanie pasujących nawiasów klamrowych  
+ Ten przykład pokazuje przepływ sterowania do dopasowania zamykającego nawiasu klamrowego wpisanego przez użytkownika. W tym procesie skaner używany do kolorowania jest również używany do określenia typu tokenu oraz tego, czy token może wyzwolić operację dopasowywania nawiasów klamrowych. Jeśli wyzwalacz zostanie znaleziony, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Metoda jest wywoływana w celu znalezienia pasującego nawiasu klamrowego. Na koniec dwa nawiasy klamrowe są wyróżnione.  
   
- Mimo że nawiasy klamrowe są używane w nazwach wyzwalaczy i analizować przyczyny, ten proces nie jest ograniczona do rzeczywistego nawiasów klamrowych. Pary znaków, który jest określony jako pasującą parę jest obsługiwane. Przykłady obejmują (a) \< i >, a [i].  
+ Mimo że nawiasy klamrowe są używane w nazwach wyzwalaczy i z powodów analizy, ten proces nie jest ograniczony do rzeczywistych nawiasów klamrowych. Obsługiwana jest jakakolwiek para znaków określona jako pasująca para. Przykłady obejmują (i), \< and > i [oraz].  
   
  Załóżmy, że usługa językowa obsługuje pasujące nawiasy klamrowe.  
   
-1. Użytkownik wpisuje zamykający nawias klamrowy (}).  
+1. Użytkownik wpisze zamykający nawias klamrowy (}).  
   
-2. Nawiasów klamrowych jest wstawiana w lokalizacji kursora w pliku źródłowym i kursora jest zaawansowany o jeden.  
+2. Nawias klamrowy zostanie wstawiony do kursora w pliku źródłowym, a kursor jest zaawansowany o jeden.  
   
-3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> klasy jest wywoływana z kontrolą typów zamykającego nawiasu klamrowego.  
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>Metoda w <xref:Microsoft.VisualStudio.Package.Source> klasie jest wywoływana przy użyciu zamykającego nawiasu klamrowego.  
   
-4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> klasy w celu uzyskania tokenu w położeniu tuż przed aktualną pozycją kursora. Ten token odnosi się do typizowanych zamykający nawias klamrowy).  
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>Metoda wywołuje <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metodę w <xref:Microsoft.VisualStudio.Package.Source> klasie w celu uzyskania tokenu w pozycji tuż przed bieżącą pozycją kursora. Ten token odnosi się do wpisanego zamykającego nawiasu klamrowego.  
   
-    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody <xref:Microsoft.VisualStudio.Package.Colorizer> obiektu, aby uzyskać wszystkie tokeny w bieżącym wierszu.  
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>Metoda wywołuje <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodę w <xref:Microsoft.VisualStudio.Package.Colorizer> obiekcie, aby uzyskać wszystkie tokeny w bieżącym wierszu.  
   
-    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Wywołania metody <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metody <xref:Microsoft.VisualStudio.Package.IScanner> obiekt z tekstem bieżącego wiersza.  
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>Metoda wywołuje <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metodę na <xref:Microsoft.VisualStudio.Package.IScanner> obiekcie z tekstem bieżącego wiersza.  
   
-    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Wielokrotnie wywołuje metodę <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metody <xref:Microsoft.VisualStudio.Package.IScanner> obiektu, aby zebrać wszystkie tokeny z bieżącego wiersza.  
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>Metoda wielokrotnie wywołuje <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metodę na <xref:Microsoft.VisualStudio.Package.IScanner> obiekcie, aby zebrać wszystkie tokeny z bieżącego wiersza.  
   
-    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Metoda wywołuje metodę prywatnej <xref:Microsoft.VisualStudio.Package.Source> klasy do uzyskania tokenu, który zawiera żądanej pozycji, a następnie przekazuje na liście tokenów uzyskany z <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody.  
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>Metoda wywołuje metodę prywatną w klasie w <xref:Microsoft.VisualStudio.Package.Source> celu uzyskania tokenu, który zawiera pożądaną pozycję, i przekazuje listę tokenów uzyskanych z <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metody.  
   
-5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Metoda szuka Flaga tokenów wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> na token, który jest zwracany z <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metody; oznacza to, że token, który reprezentuje zamykający nawias klamrowy).  
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>Metoda szuka flagi wyzwalacza tokena w odniesieniu <xref:Microsoft.VisualStudio.Package.TokenTriggers> do tokenu zwracanego z <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metody; oznacza to, że token reprezentuje nawias zamykający.  
   
-6. Jeśli wyzwalacz flagę <xref:Microsoft.VisualStudio.Package.TokenTriggers> zostanie znaleziony, <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.Source> nosi nazwę klasy.  
+6. Jeśli <xref:Microsoft.VisualStudio.Package.TokenTriggers> zostanie znaleziona flaga wyzwalacza, <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> wywoływana jest metoda w <xref:Microsoft.VisualStudio.Package.Source> klasie.  
   
-7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Metoda zaczyna się od operacji analizowania wartości Przyczyna analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. Ta operacja ostatecznie wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody <xref:Microsoft.VisualStudio.Package.LanguageService> klasy. Jeśli włączono asynchroniczną analizy to wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda występuje w wątku tła.  
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>Metoda rozpoczyna operację analizowania z powodu wartości przyczyny analizy <xref:Microsoft.VisualStudio.Package.ParseReason> . Ta operacja ostatecznie wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie. Jeśli jest włączone analizowanie asynchroniczne, to wywołanie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody odbywa się w wątku w tle.  
   
-8. Po zakończeniu operacji analizowania, wewnętrznej procedury obsługi zakończenia (znany także jako metoda wywołania zwrotnego) o nazwie `HandleMatchBracesResponse` jest wywoływana w <xref:Microsoft.VisualStudio.Package.Source> klasy. To wywołanie jest wykonywane automatycznie przez <xref:Microsoft.VisualStudio.Package.LanguageService> podstawowej klasy, nie przez analizator.  
+8. Gdy operacja analizowania zostanie zakończona, wewnętrzna procedura obsługi uzupełniania (znana również jako metoda wywołania zwrotnego) nazywa `HandleMatchBracesResponse` się w <xref:Microsoft.VisualStudio.Package.Source> klasie. To wywołanie jest wykonywane automatycznie przez <xref:Microsoft.VisualStudio.Package.LanguageService> klasę bazową, a nie przez analizatora.  
   
-9. `HandleMatchBracesResponse` Metoda uzyskuje listę zakresów z <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiekt, który jest przechowywany w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiektu. (Zakres jest <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> strukturę, która określa zakres wierszy i znaków w pliku źródłowym.) Ta lista zakresy zazwyczaj zawiera dwa zakresy, jeden dla otwierające i zamykające nawiasy klamrowe.  
+9. `HandleMatchBracesResponse`Metoda uzyskuje listę zakresów z <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiektu, który jest przechowywany w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekcie. (Zakres jest <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> strukturą, która określa zakres wierszy i znaków w pliku źródłowym). Ta lista zakresów obejmuje zazwyczaj dwa zakresy, jeden z nich dla otwierających i zamykających nawiasów klamrowych.  
   
-10. `HandleBracesResponse` Wywołania metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiekt, który jest przechowywany w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiektu. Spowoduje to wyróżnienie danego zakresy.  
+10. `HandleBracesResponse`Metoda wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A> metodę dla <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> obiektu, który jest przechowywany w <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekcie. Powoduje to wyróżnienie określonych zakresów.  
   
-11. Jeśli <xref:Microsoft.VisualStudio.Package.LanguagePreferences> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> jest włączona, `HandleBracesResponse` metoda uzyskuje tekst, który jest objęty przez zakres dopasowania i wyświetla 80 pierwszych znaków ten zakres na pasku stanu. To działa najlepiej, gdy <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda zawiera element języka, który towarzyszy pasującą parę. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> właściwości.  
+11. Jeśli <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> jest włączona, `HandleBracesResponse` metoda uzyskuje tekst obejmujący pasujący zakres i wyświetla pierwsze 80 znaków tego zakresu na pasku stanu. To działa najlepiej, jeśli <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Metoda zawiera element języka, który towarzyszy pasującej parze. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> Właściwość.  
   
 12. Gotowe.  
   
 ### <a name="summary"></a>Podsumowanie  
- Operacji dopasowywania nawiasów klamrowych jest zazwyczaj ograniczone do prostych pary elementów języka. Bardziej złożone elementy, takie jak dopasowanie trójek ("`if(…)`","`{`"i"`}`", lub "`else`","`{`"i"`}`"), może być wyróżniony jako część operacji dokończenie wyrazu. Na przykład po zakończeniu słowo "else", dopasowywania "`if`" może być wyróżniony instrukcji. Gdyby szereg `if` / `else if` instrukcji, wszystkie z nich może być wyróżniony za pomocą tego samego mechanizmu jako dopasowywanie nawiasów klamrowych. <xref:Microsoft.VisualStudio.Package.Source> Klasa bazowa już obsługuje tę funkcję, w następujący sposób: Skaner musi zwracać wartość tokenów wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> połączeniu z wartością wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> dla tokenu przed pozycja kursora.  
+ Operacje pasujących nawiasów klamrowych zwykle są ograniczone do prostych par elementów języka. Bardziej złożone elementy, takie jak Dopasowywanie potrójnych (" `if(…)` ", "" i "", "", `{` "" i " `}` `else` `{` `}` "), można podróżnić w ramach operacji uzupełniania wyrazów. Na przykład po zakończeniu słowa "" else " `if` można wyróżnić pasującą instrukcję" ". Jeśli wystąpiły serie `if` / `else if` instrukcji, wszystkie z nich można podróżnić przy użyciu tego samego mechanizmu, co pasujące nawiasy klamrowe. <xref:Microsoft.VisualStudio.Package.Source>Klasa bazowa jest już obsługiwana w następujący sposób: skaner musi zwrócić wartość wyzwalacza tokenu <xref:Microsoft.VisualStudio.Package.TokenTriggers> połączonej z wartością wyzwalającą <xref:Microsoft.VisualStudio.Package.TokenTriggers> dla tokenu, który jest przed pozycją kursora.  
   
- Aby uzyskać więcej informacji, zobacz [parowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
+ Aby uzyskać więcej informacji, zobacz [dopasowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   
-## <a name="parsing-for-colorization"></a>Podczas analizowania kolorowania  
- Kolorowanie kodu źródłowego jest bardzo proste, należy po prostu zidentyfikować typ koloru tokenu i zwracają informacje o danym typie. <xref:Microsoft.VisualStudio.Package.Colorizer> Klasa działa jako pośrednik między edytora i skaner w celu zapewnienia kolor informacji na temat każdy token. <xref:Microsoft.VisualStudio.Package.Colorizer> Klasy używa <xref:Microsoft.VisualStudio.Package.IScanner> obiektu, aby pomóc w kolorowanie linię, a także do zbierania informacji o stanie dla wszystkich wierszy w pliku źródłowym. W klasach usługi języka MPF <xref:Microsoft.VisualStudio.Package.Colorizer> klasa nie ma zostać przesłoniona, ponieważ jego komunikuje się za pomocą skanera usługi tylko za pośrednictwem <xref:Microsoft.VisualStudio.Package.IScanner> interfejsu. Podaj obiekt, który implementuje <xref:Microsoft.VisualStudio.Package.IScanner> interfejsu przez zastąpienie <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metody <xref:Microsoft.VisualStudio.Package.LanguageService> klasy.  
+## <a name="parsing-for-colorization"></a>Analizowanie na potrzeby kolorowania  
+ Kolorowanie kodu źródłowego jest proste, po prostu Zidentyfikuj typ tokenu i zwróć informacje o kolorach tego typu. <xref:Microsoft.VisualStudio.Package.Colorizer>Klasa pełni rolę pośrednika między edytorem a skanerem, aby dostarczyć informacje o kolorach każdego tokenu. <xref:Microsoft.VisualStudio.Package.Colorizer>Klasa używa obiektu, <xref:Microsoft.VisualStudio.Package.IScanner> Aby ułatwić kolorowanie linii, a także zbierać informacje o stanie dla wszystkich wierszy w pliku źródłowym. W klasach usługi językowej MPF <xref:Microsoft.VisualStudio.Package.Colorizer> Klasa nie musi zostać zastąpiona, ponieważ komunikuje się z skanerem tylko za pomocą <xref:Microsoft.VisualStudio.Package.IScanner> interfejsu. Należy podać obiekt implementujący <xref:Microsoft.VisualStudio.Package.IScanner> interfejs poprzez zastąpienie <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metody <xref:Microsoft.VisualStudio.Package.LanguageService> klasy.  
   
- <xref:Microsoft.VisualStudio.Package.IScanner> Skanera otrzymuje wiersza kodu źródłowego za pomocą <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metody. Wywołania <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metoda powtarzają się uzyskać następnego tokenu, w wierszu wyczerpania wiersz tokenów. Kolorowania MPF traktuje każdy kod źródłowy jako sekwencja wierszy. W związku z tym skaner musi mieć możliwość poradzić sobie ze źródłem pochodzące go jako wiersze. Ponadto wiersza mogą być przekazywane do skanera w dowolnym momencie, a jedyną gwarancją jest to, że skaner otrzyma zmiennej stanu z wiersza przed wierszem o do przeskanowania.  
+ Skaner uzyskuje <xref:Microsoft.VisualStudio.Package.IScanner> wiersz kodu źródłowego za pomocą <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metody. Wywołania <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metody są powtórzone w celu uzyskania następnego tokenu w wierszu do momentu wyczerpania wiersza tokenów. W przypadku kolorowania MPF traktuje cały kod źródłowy jako sekwencję wierszy. W związku z tym skaner musi być w stanie poradzić sobie ze źródłem, tak jak linie. Ponadto każda linia może być przenoszona do skanera w dowolnym momencie, a jedyną gwarancją jest, że skaner otrzymuje zmienną stanu z wiersza przed przeskanowaniem wiersza.  
   
- <xref:Microsoft.VisualStudio.Package.Colorizer> Klasa również służy do identyfikowania tokenu wyzwalaczy. Te wyzwalacze Poinformuj MPF, że dany token może zainicjować bardziej złożonych operacji, takich jak uzupełnianie wyrazów lub pasujące nawiasy klamrowe. Ponieważ identyfikowanie tych wyzwalaczy muszą być szybkie i musi wystąpić w dowolnym miejscu, skaner jest najbardziej odpowiednia dla tego zadania.  
+ <xref:Microsoft.VisualStudio.Package.Colorizer>Klasa jest również używana do identyfikowania wyzwalaczy tokenów. Te wyzwalacze informują MPF, że określony token może inicjować bardziej skomplikowaną operację, taką jak uzupełnianie wyrazów lub pasujące nawiasy klamrowe. Ponieważ takie wyzwalacze muszą być szybkie i muszą wystąpić w dowolnym miejscu, skaner jest najlepiej dostosowany do tego zadania.  
   
  Aby uzyskać więcej informacji, zobacz [kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
   
-## <a name="parsing-for-functionality-and-scope"></a>Analiza kodu dla funkcji i zakresu  
- Podczas analizowania funkcjonalności i zakres wymaga więcej niż tylko identyfikacji typów tokenów, które zostaną napotkane. Analizator musi zidentyfikować nie tylko typ tokenu, ale także funkcje, dla którego token jest używany. Na przykład identyfikator jest po prostu nazwy, ale w Twoim języku odpowiadającym może być nazwa klasy, przestrzeni nazw, metody lub zmienną, w zależności od kontekstu. Ogólny typ tokenu może być identyfikator, ale identyfikator mogą także mieć inne znaczenie w zależności od tego, co to jest i w którym jest zdefiniowana. Ten identyfikator wymaga analizatora, które mają bardziej rozległe wiedzę na temat języka, które są analizowane. Jest to miejsce <xref:Microsoft.VisualStudio.Package.AuthoringSink> klasy pochodzą. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasy zbiera informacje na temat identyfikatorów, metody, pasujących par języka (na przykład i nawiasów klamrowych) i trójek języka (podobne do kierunki, z tą różnicą, że istnieją trzy części, na przykład "`foreach()`" "`{`"i"`}`"). Ponadto, możesz zastąpić <xref:Microsoft.VisualStudio.Package.AuthoringSink> klasy do obsługi identyfikacji kodu, który jest używany w weryfikacji wczesnych punktów przerwania, tak, aby debuger musi być załadowany, oraz **Autos** debugowania okno, które przedstawia lokalnych zmienne i parametry automatycznie kiedy program jest debugowany i wymaga analizatora składni, aby zidentyfikować odpowiednie zmienne lokalne i parametry oprócz tych, które prezentują debugera.  
+## <a name="parsing-for-functionality-and-scope"></a>Analizowanie funkcjonalności i zakresu  
+ Analizowanie funkcjonalności i zakresu wymaga większego nakładu pracy niż zidentyfikowanie typów tokenów, które są napotkane. Analizator ma identyfikować nie tylko typ tokenu, ale również funkcje, dla których token jest używany. Na przykład identyfikator jest tylko nazwą, ale w Twoim języku Identyfikator może być nazwą klasy, przestrzeni nazw, metody lub zmiennej, w zależności od kontekstu. Ogólny typ tokenu może być identyfikatorem, ale identyfikator może również mieć inne znaczenie, w zależności od tego, co jest i gdzie jest zdefiniowane. Ta identyfikacja wymaga, aby Analizator miał bardziej obszerną wiedzę o analizowanym języku. Jest to miejsce, w którym znajduje się <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasa. <xref:Microsoft.VisualStudio.Package.AuthoringSink>Klasa zbiera informacje o identyfikatorach, metodach, pasujących parach języka (takich jak nawiasy klamrowe i nawiasy) oraz potrójnie w języku (podobnie jak w przypadku par językowych, z wyjątkiem takich jak "" " `foreach()` `{` i" `}` "). Ponadto można przesłonić <xref:Microsoft.VisualStudio.Package.AuthoringSink> klasę, aby obsługiwała identyfikację kodu, która jest używana podczas wczesnej walidacji punktów przerwania, tak aby debuger nie musiał być ładowany, oraz okno debugowanie **Automatyczne** , które wyświetla zmienne lokalne i parametry automatycznie, gdy program jest debugowany i wymaga analizatora do identyfikowania odpowiednich zmiennych lokalnych i parametrów oprócz tych, które są wyświetlane przez debuger.  
   
- <xref:Microsoft.VisualStudio.Package.AuthoringSink> Obiekt jest przekazywany do analizatora jako część <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt i nową <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiekt jest utworzony każdym razem, gdy nowy <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt zostanie utworzony. Ponadto <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda musi zwracać <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu, który jest używany do obsługi różnych operacji IntelliSense. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Obiekt utrzymuje listę dla deklaracji i listy dla metod, albo Kolekcja została wypełniona, w zależności od przyczyny do analizy. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasy należy zaimplementować.  
+ <xref:Microsoft.VisualStudio.Package.AuthoringSink>Obiekt jest przesyłany do analizatora jako część <xref:Microsoft.VisualStudio.Package.ParseRequest> obiektu, a nowy <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiekt jest tworzony za każdym razem, gdy <xref:Microsoft.VisualStudio.Package.ParseRequest> tworzony jest nowy obiekt. Ponadto <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Metoda musi zwracać <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiekt, który jest używany do obsługi różnych operacji IntelliSense. <xref:Microsoft.VisualStudio.Package.AuthoringScope>Obiekt zachowuje listę deklaracji i listę metod, z których każdy jest wypełniony, w zależności od przyczyny analizy. <xref:Microsoft.VisualStudio.Package.AuthoringScope>Należy zaimplementować klasę.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
- [Omówienie usługi starszego języka](../../extensibility/internals/legacy-language-service-overview.md)   
+ [Omówienie starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-overview.md)   
  [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Parowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
