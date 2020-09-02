@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::LaunchSuspended | Dokumentacja firmy Microsoft
+title: 'IDebugPortEx2:: LaunchSuspended | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c5e57c003257650f5ca60d4a7c3d9becea3e776
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188459"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
@@ -54,36 +54,36 @@ int LaunchSuspended( 
   
 #### <a name="parameters"></a>Parametry  
  `pszExe`  
- [in] Nazwa pliku wykonywalnego do uruchomienia. Może to być pełna ścieżka lub względna do katalogu roboczego, określone w `pszDir` parametru.  
+ podczas Nazwa pliku wykonywalnego, który ma zostać uruchomiony. Może to być pełna ścieżka lub względem katalogu roboczego określonego w `pszDir` parametrze.  
   
  `pszArgs`  
- [in] Argumenty do przekazania do pliku wykonywalnego. Może być wartością null, jeśli nie wymaga argumentów.  
+ podczas Argumenty do przekazania do pliku wykonywalnego. Może mieć wartość null, jeśli nie ma żadnych argumentów.  
   
  `pszDir`  
- [in] Nazwa katalogu roboczego używane przez plik wykonywalny. Może być wartością null, jeśli katalog roboczy nie jest wymagana.  
+ podczas Nazwa katalogu roboczego używanego przez plik wykonywalny. Może mieć wartość null, jeśli nie jest wymagany żaden katalog roboczy.  
   
  `bstrEnv`  
- [in] Blok środowiska ciągów zakończony znakiem null, następuje dodatkowe terminator o wartości NULL.  
+ podczas Blok środowiska ciągów zakończonych wartością null, a po nim dodatkowy terminator o wartości null.  
   
  `hStdInput`  
- [in] Dojście do alternatywnego strumienia wejściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
+ podczas Dojście do alternatywnego strumienia wejściowego. Może mieć wartość 0, jeśli przekierowanie nie jest wymagane.  
   
  `hStdOutput`  
- [in] Dojście do strumienia wyjściowego alternatywne. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
+ podczas Dojście do alternatywnego strumienia wyjściowego. Może mieć wartość 0, jeśli przekierowanie nie jest wymagane.  
   
  `hStdError`  
- [in] Dojście do błędu alternatywnego strumienia wyjściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
+ podczas Dojście do alternatywnego strumienia wyjściowego błędu. Może mieć wartość 0, jeśli przekierowanie nie jest wymagane.  
   
  `ppPortProcess`  
- [out] Zwraca [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) obiekt, który reprezentuje uruchomienie procesu.  
+ określoną Zwraca obiekt [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , który reprezentuje uruchomiony proces.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda powinna Uruchom proces, że jest zawieszony, a nie działa każdy kod. [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) metoda jest wywoływana, aby wznowić proces.  
+ Ta metoda powinna uruchamiać proces w taki sposób, aby był wstrzymany i nie był uruchomiony żaden kod. Metoda [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) jest wywoływana w celu wznowienia procesu.  
   
- Program można także uruchomić z aparatu debugowania. Aby uzyskać więcej informacji, zobacz [uruchamianie programu](../../../extensibility/debugger/launching-a-program.md).  
+ Program może być również uruchamiany z aparatu debugowania. Aby uzyskać szczegółowe informacje, zobacz [Uruchamianie programu](../../../extensibility/debugger/launching-a-program.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   

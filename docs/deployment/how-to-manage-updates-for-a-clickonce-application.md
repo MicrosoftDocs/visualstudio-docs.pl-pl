@@ -20,14 +20,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382357"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Instrukcje: Zarządzanie aktualizacjami aplikacji ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje mogą automatycznie sprawdzać dostępność aktualizacji lub programowo. Jako deweloper możesz określić, kiedy i w jaki sposób testy aktualizacji są wykonywane, czy aktualizacje są obowiązkowe i gdzie aplikacja ma sprawdzać dostępność aktualizacji.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje mogą automatycznie sprawdzać dostępność aktualizacji lub programowo. Jako deweloper możesz określić, kiedy i w jaki sposób testy aktualizacji są wykonywane, czy aktualizacje są obowiązkowe i gdzie aplikacja ma sprawdzać dostępność aktualizacji.
 
  Można skonfigurować aplikację, aby automatycznie sprawdzać dostępność aktualizacji przed uruchomieniem aplikacji, lub w ustalonych odstępach czasu po uruchomieniu aplikacji. Dodatkowo można określić minimalną wymaganą wersję; oznacza to, że aktualizacja jest zainstalowana, jeśli wersja użytkownika jest niższa niż wymagana wersja.
 

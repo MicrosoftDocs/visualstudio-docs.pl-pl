@@ -1,5 +1,5 @@
 ---
-title: Elementy wspólne projektu MSBuild | Dokumentacja firmy Microsoft
+title: Wspólne elementy projektów MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -17,54 +17,54 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160405"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], element jest nazwane odwołanie do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżek i numery wersji. Wszystkich typów projektów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w microsoft.build.commontypes.xsd pliku.  
+W programie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] element jest nazwanym odwołaniem do co najmniej jednego pliku. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy projektów w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mają kilka elementów wspólnych. Te elementy są zdefiniowane w pliku Microsoft. Build. CommonTypes. xsd.  
   
-## <a name="common-items"></a>Wspólne elementy  
- Oto lista wszystkie wspólne elementy projektów.  
+## <a name="common-items"></a>Elementy wspólne  
+ Poniżej znajduje się lista wszystkich wspólnych elementów projektu.  
   
-### <a name="reference"></a>Tematy pomocy  
- Reprezentuje odwołanie do zestawu (zarządzane) w projekcie.  
+### <a name="reference"></a>Dokumentacja  
+ Reprezentuje odwołanie zestawu (zarządzanego) w projekcie.  
   
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
-|HintPath|Opcjonalny ciąg. Względna lub bezwzględna ścieżka zestawu.|  
-|Nazwa|Opcjonalny ciąg. Nazwa wyświetlana zestawu, na przykład, "przestrzeń nazw System.Windows.Forms."|  
-|FusionName|Opcjonalny ciąg. Określa nazwę fusion prostej lub silne dla elementu.<br /><br /> Jeśli ten atrybut jest obecny, można zaoszczędzić czas, ponieważ plik zestawu nie ma zostać otwarty, można uzyskać nazwy fusion.|  
-|SpecificVersion|Opcjonalny atrybut typu wartość logiczna. Określa, czy tylko do wersji w nazwie połączenia powinny istnieć odwołania.|  
-|Aliasy|Opcjonalny ciąg. Aliasy dla odwołania.|  
-|Private|Opcjonalny atrybut typu wartość logiczna. Określa, czy odwołania powinny zostać skopiowane do folderu wyjściowego. Ten atrybut jest zgodna **Kopiuj lokalnie** właściwość odniesienia, który znajduje się w środowisku IDE programu Visual Studio.|  
+|HintPath|Opcjonalny ciąg. Ścieżka względna lub bezwzględna zestawu.|  
+|Nazwa|Opcjonalny ciąg. Nazwa wyświetlana zestawu, na przykład "System. Windows. Forms".|  
+|FusionName|Opcjonalny ciąg. Określa prostą lub silną nazwę syntezy dla elementu.<br /><br /> Gdy ten atrybut jest obecny, może zaoszczędzić czas, ponieważ plik zestawu nie musi być otwarty w celu uzyskania nazwy Fusion.|  
+|Ustawienie SpecificVersion|Opcjonalna wartość logiczna. Określa, czy należy odwoływać się tylko do wersji w nazwie Fusion.|  
+|Aliasy|Opcjonalny ciąg. Wszelkie aliasy odwołania.|  
+|Prywatne|Opcjonalna wartość logiczna. Określa, czy odwołanie ma być kopiowane do folderu wyjściowego. Ten atrybut jest zgodny z właściwością **copy lokalnego** odwołania, która znajduje się w środowisku IDE programu Visual Studio.|  
   
 ### <a name="comreference"></a>COMReference  
- Reprezentuje com. (niezarządzany) odwoływać się w projekcie.  
+ Reprezentuje odwołanie do składnika COM (niezarządzane) w projekcie.  
   
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana składnika.|  
-|Guid|Opcjonalny ciąg. Identyfikator GUID dla składnika w formularzu {12345678-1234-1234-1234-1234567891234}.|  
-|VersionMajor|Opcjonalny ciąg. Główna część numeru wersji składnika. Na przykład "5" Jeśli pełny numer wersji jest "5.46".|  
-|VersionMinor|Opcjonalny ciąg. Pomocnicza część numeru wersji składnika. Na przykład "46" Jeśli pełny numer wersji jest "5.46".|  
-|LCID|Opcjonalny ciąg. Identyfikator ustawień regionalnych dla składnika.|  
-|WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, która jest używana w składniku, na przykład, "tlbimp".|  
-|Izolowany|Opcjonalny atrybut typu wartość logiczna. Określa, czy składnik jest składnik bezpłatne reg.|  
+|Guid (identyfikator GUID)|Opcjonalny ciąg. Identyfikator GUID składnika w formularzu {12345678-1234-1234-1234-1234567891234} .|  
+|VersionMajor|Opcjonalny ciąg. Główna część numeru wersji składnika. Na przykład "5", jeśli pełny numer wersji to "5,46".|  
+|VersionMinor|Opcjonalny ciąg. Pomocnicza część numeru wersji składnika. Na przykład "46", jeśli pełny numer wersji to "5,46".|  
+|Identyfikator LCID|Opcjonalny ciąg. LocaleID dla składnika.|  
+|WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, które jest używane w składniku, na przykład "tlbimp".|  
+|Izolowana|Opcjonalna wartość logiczna. Określa, czy składnik jest składnikiem bezpłatnym reg.|  
   
 ### <a name="comfilereference"></a>COMFileReference  
- Reprezentuje listę bibliotek typów, które źródła danych do obiektu docelowego ResolvedComreference.  
+ Reprezentuje listę bibliotek typów, które są źródłem do elementu docelowego ResolvedComreference.  
   
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
-|WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, która jest używana w składniku, na przykład, "tlbimp".|  
+|WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, które jest używane w składniku, na przykład "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
- Reprezentuje natywnego pliku manifestu lub odwołanie do tego pliku.  
+ Reprezentuje natywny plik manifestu lub odwołanie do takiego pliku.  
   
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
@@ -77,70 +77,70 @@ W [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], element jest nazwane
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|  
-|Projekt|Opcjonalny ciąg. Identyfikator GUID odwołania, w postaci {12345678-1234-1234-1234-1234567891234}.|  
-|Package|Opcjonalny ciąg. Ścieżka pliku projektu, do którego prowadzi odwołanie.|  
+|Projekt|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|  
+|Pakiet|Opcjonalny ciąg. Ścieżka do pliku projektu, do którego istnieje odwołanie.|  
   
-### <a name="compile"></a>Kompilacji  
- Reprezentuje pliki źródłowe dla kompilatora.  
+### <a name="compile"></a>Opracowania  
+ Reprezentuje pliki źródłowe kompilatora.  
   
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
-|DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji.|  
-|Automatyczne generowanie|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE).|  
-|Łącze|Opcjonalny ciąg. Ścieżka notational wyświetlany, gdy plik znajduje się fizycznie poza wpływają na pliku projektu.|  
-|Widoczne|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy mają być wyświetlane w pliku w **Eksploratora rozwiązań** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy należy skopiować plik do katalogu wyjściowego. Dostępne są następujące wartości:<br /><br /> 1.  nigdy nie<br />2.  zawsze<br />3.  PreserveNewest|  
+|DependentUpon|Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować poprawnie.|  
+|AutoGen|Opcjonalna wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowane środowisko programistyczne (IDE).|  
+|Link|Opcjonalny ciąg. Ścieżka zapisu, która ma być wyświetlana, gdy plik jest fizycznie zlokalizowany poza wpływem pliku projektu.|  
+|Widoczne|Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany **Solution Explorer** w Eksplorator rozwiązań [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Reprezentuje zasoby do osadzenia w wygenerowanym zestawie.  
   
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
-|DependentUpon|Opcjonalny ciąg. Określa plik który zależy od tego pliku do poprawnej kompilacji|  
+|DependentUpon|Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować prawidłowo|  
 |Generator|Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie.|  
-|LastGenOutput|Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny generator plików, który uruchomił ten element.|  
-|CustomToolNamespace|Wymagany ciąg. Przestrzeń nazw, w którym każdy plik, generator, który działa na tym elemencie, powinien utworzyć kod.|  
-|Łącze|Opcjonalny ciąg. Ścieżka notational jest wyświetlana, jeśli plik znajduje się fizycznie poza wpływ projektu.|  
-|Widoczne|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy mają być wyświetlane w pliku w **Eksploratora rozwiązań** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy należy skopiować plik do katalogu wyjściowego. Dostępne są następujące wartości:<br /><br /> 1.  nigdy nie<br />2.  zawsze<br />3.  PreserveNewest|  
-|LogicalName|Wymagany ciąg. Nazwa logiczna zasobu osadzonego.|  
+|LastGenOutput|Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie.|  
+|CustomToolNamespace|Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod.|  
+|Link|Opcjonalny ciąg. Ścieżka notacji jest wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu.|  
+|Widoczne|Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany **Solution Explorer** w Eksplorator rozwiązań [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest|  
+|Logicznaname|Wymagany ciąg. Nazwa logiczna zasobu osadzonego.|  
   
 ### <a name="content"></a>Zawartość  
- Reprezentuje pliki, które nie są kompilowane do projektu, ale mogą być osadzone lub opublikowane wraz z jej.  
+ Reprezentuje pliki, które nie są kompilowane do projektu, ale mogą być osadzone lub opublikowane razem z nim.  
   
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
-|DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji.|  
+|DependentUpon|Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować poprawnie.|  
 |Generator|Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie.|  
-|LastGenOutput|Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny generator plików, która została uruchomiona na tym elemencie.|  
-|CustomToolNamespace|Wymagany ciąg. Przestrzeń nazw, w którym każdy plik, generator, który działa na tym elemencie, powinien utworzyć kod.|  
-|Łącze|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy mają być wyświetlane w pliku w **Eksploratora rozwiązań** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|PublishState|Wymagany ciąg. Stan publikowania zawartości, albo:<br /><br /> -Domyślnie<br />— Włączone<br />— Wyłączone<br />-Pliku danych<br />-Wymagań wstępnych|  
-|IsAssembly|Opcjonalny atrybut typu wartość logiczna. Określa, czy plik jest zestawem.|  
-|Widoczne|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy mają być wyświetlane w pliku w **Eksploratora rozwiązań** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy należy skopiować plik do katalogu wyjściowego. Dostępne są następujące wartości:<br /><br /> 1.  nigdy nie<br />2.  zawsze<br />3.  PreserveNewest|  
+|LastGenOutput|Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie.|  
+|CustomToolNamespace|Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod.|  
+|Link|Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany **Solution Explorer** w Eksplorator rozwiązań [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|PublishState|Wymagany ciąg. Stan publikowania zawartości:<br /><br /> -Domyślne<br />-Uwzględnione<br />-Wykluczone<br />-Plik<br />-Wymaganie wstępne|  
+|IsAssembly|Opcjonalna wartość logiczna. Określa, czy plik jest zestawem.|  
+|Widoczne|Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany **Solution Explorer** w Eksplorator rozwiązań [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest|  
   
 ### <a name="none"></a>Brak  
- Reprezentuje pliki, które powinny mieć żadnej roli w procesie kompilacji.  
+ Reprezentuje pliki, które nie powinny mieć roli w procesie kompilacji.  
   
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
-|DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji.|  
+|DependentUpon|Opcjonalny ciąg. Określa plik, od którego zależy plik, aby skompilować poprawnie.|  
 |Generator|Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie.|  
-|LastGenOutput|Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny generator plików, który uruchomił ten element.|  
-|CustomToolNamespace|Wymagany ciąg. Przestrzeń nazw, w którym każdy plik, generator, który działa na tym elemencie, powinien utworzyć kod.|  
-|Łącze|Opcjonalny ciąg. Ścieżka notational mają być wyświetlane, jeśli plik znajduje się fizycznie poza wpływ projektu.|  
-|Widoczne|Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy mają być wyświetlane w pliku w **Eksploratora rozwiązań** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy należy skopiować plik do katalogu wyjściowego. Dostępne są następujące wartości:<br /><br /> 1.  nigdy nie<br />2.  zawsze<br />3.  PreserveNewest|  
+|LastGenOutput|Wymagany ciąg. Nazwa pliku, który został utworzony przez dowolny Generator plików uruchomiony na tym elemencie.|  
+|CustomToolNamespace|Wymagany ciąg. Przestrzeń nazw, w której każdy Generator plików uruchomiony na tym elemencie powinien utworzyć kod.|  
+|Link|Opcjonalny ciąg. Ścieżka notacji, która ma być wyświetlana, jeśli plik jest fizycznie zlokalizowany poza wpływem projektu.|  
+|Widoczne|Opcjonalna wartość logiczna. Wskazuje, czy plik ma być wyświetlany **Solution Explorer** w Eksplorator rozwiązań [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|CopyToOutputDirectory|Opcjonalny ciąg. Określa, czy plik ma być kopiowany do katalogu wyjściowego. Wartości to:<br /><br /> 1. nigdy nie<br />2. zawsze<br />3. PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
- Reprezentuje podstawowy manifest aplikacji dla kompilacji i zawiera [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] informacji o zabezpieczeniach wdrożenia.  
+ Reprezentuje podstawowy manifest aplikacji dla kompilacji i zawiera [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Informacje o zabezpieczeniach wdrożenia.  
   
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport  
- Reprezentuje projekt programu FxCop, aby zaimportować.  
+ Reprezentuje projekt FxCop do zaimportowania.  
   
-### <a name="import"></a>Import  
- Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilatora.  
+### <a name="import"></a>Importuj  
+ Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilator.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)
+ [Wspólne właściwości projektu MSBuild](../msbuild/common-msbuild-project-properties.md)

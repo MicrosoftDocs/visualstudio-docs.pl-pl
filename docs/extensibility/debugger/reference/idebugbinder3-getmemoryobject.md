@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject | Dokumenty firmy Microsoft
+title: 'IDebugBinder3:: getmemoryobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735717"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-Ta metoda pobiera obiekt pamięci, który reprezentuje pamięć, która jest powiązana z tym obiektem.
+Ta metoda pobiera obiekt pamięci, który reprezentuje pamięć, z którą jest powiązany ten obiekt.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,16 +45,16 @@ int GetMemoryObject(
 
 ## <a name="parameters"></a>Parametry
 `pField`\
-[w] Określa pole, dla którego ma zostać wyjętym z obiektu pamięci.
+podczas Określa pole, dla którego ma zostać pobrany Obiekt pamięci.
 
 `uConstant`\
-[w] Reprezentuje adres pamięci lub wartość dla wartości stałej.
+podczas Reprezentuje adres lub wartość pamięci dla stałej wartości.
 
 `ppObject`\
-[na zewnątrz] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący pamięć, do których jest powiązany ten obiekt.
+określoną [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący pamięć, z którą jest powiązany ten obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramCreateEvent2 | Dokumentacja firmy Microsoft
+title: IDebugProgramCreateEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 24a1a1942031dac71ddad7b528f0e5df161c629e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148618"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), gdy program jest dołączony do.  
+Ten interfejs jest wysyłany przez aparat debugowania (DE) do Menedżera debugowania sesji (SDM), gdy program jest dołączony do programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,18 +31,18 @@ IDebugProgramCreateEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- DE lub dostawcę, port niestandardowy implementuje raportu, czy program została utworzona, zwykle w czasie, który program jest dołączony do tego interfejsu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM `QueryInterface` metody w celu uzyskania dostępu do `IDebugEvent2` interfejsu.  
+ Niestandardowi dostawca portu implementuje ten interfejs, aby zgłosić, że program został utworzony, zazwyczaj w czasie, gdy program jest dołączony. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany w tym samym obiekcie co ten interfejs. Model SDM używa `QueryInterface` metody, aby uzyskać dostęp do `IDebugEvent2` interfejsu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- DE lub dostawcę, port niestandardowy, tworzy i wysyła tego obiektu zdarzenia w celu tworzenia programu raportów. DE wysyła tego zdarzenia przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu. Dostawca numery portów wysyła tego zdarzenia przy użyciu [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interfejsu.  
+ Niestandardowa dostawca portu tworzy i wysyła ten obiekt zdarzenia w celu raportowania tworzenia programu. Po wysłaniu tego zdarzenia za pomocą funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , która jest dostarczana przez model SDM, gdy jest on dołączony do debugowanego programu. Dostawca portu niestandardowego wysyła to zdarzenie przy użyciu interfejsu [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) .  
   
 ## <a name="remarks"></a>Uwagi  
- DE lub portu niestandardowego dostawcy publikuje nową [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu, wywołując [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).  
+ Dostawca DE lub Custom Ports publikuje nowy interfejs [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) przez wywołanie [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

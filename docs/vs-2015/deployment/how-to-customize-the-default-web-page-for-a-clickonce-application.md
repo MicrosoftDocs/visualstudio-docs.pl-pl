@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dostosowywanie domyślnej strony sieci Web dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: dostosowywanie domyślnej strony sieci Web dla aplikacji ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,39 +19,39 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ec63fe5ae4b99252321b86b44066c46842a0851
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433893"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64779691"
 ---
-# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Instrukcje: Dostosowywanie domyślnej strony internetowej dla aplikacji ClickOnce
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Porady: dostosowywanie domyślnej strony sieci Web dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas publikowania aplikacji ClickOnce w sieci Web, strony sieci Web jest automatycznie generowany i opublikowanych wraz z aplikacji. Domyślna strona zawiera nazwę aplikacji i linki do zainstalowania aplikacji, instalowanie wstępnie wymaganego oprogramowania lub dostępu do pomocy w witrynie MSDN.  
+Podczas publikowania aplikacji ClickOnce w sieci Web strona sieci Web jest automatycznie generowana i publikowana razem z aplikacją. Strona domyślna zawiera nazwę aplikacji i linki do zainstalowania aplikacji, instalacji wymagań wstępnych lub uzyskania dostępu do pomocy w witrynie MSDN.  
   
 > [!NOTE]
-> Rzeczywiste łącza, widocznych na stronie zależy od komputera, na którym wyświetlania strony i wymagania wstępne są włącznie.  
+> Rzeczywiste linki widoczne na stronie zależą od komputera, na którym strona jest wyświetlana i jakie są wymagania wstępne.  
   
- Domyślna nazwa strony sieci Web to Publish.htm; Możesz zmienić nazwę w **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [jak: Określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
+ Nazwa domyślna strony sieci Web jest Publish.htm; można zmienić nazwę w **projektancie projektu**. Aby uzyskać więcej informacji, zobacz [How to: Określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
   
- Strona sieci Publish.htm Web została opublikowana, tylko wtedy, gdy Wykryto nowszą wersję.  
+ Strona sieci Web Publish.htm jest publikowana tylko w przypadku wykrycia nowszej wersji.  
   
 > [!NOTE]
-> Zmiany wprowadzone do usługi **Publikuj** ustawienia nie wpłynie na stronie Publish.htm z jednym wyjątkiem: Jeśli dodasz lub usuniesz wymagania wstępne po początkowym opublikowaniu, listę wymagań wstępnych nie będzie już dokładne. Należy edytować tekst łącza wymagań wstępnych odzwierciedlić zmiany.  
+> Zmiany wprowadzone w ustawieniach **publikowania** nie wpłyną na stronę Publish.htm, z wyjątkiem jednego wyjątku: Jeśli po wstępnym opublikowaniu zostaną dodane lub usunięte wymagania wstępne, lista wymagań wstępnych nie będzie już dokładna. Aby odzwierciedlić zmiany, należy zmodyfikować tekst linku wymagań wstępnych.  
   
-### <a name="to-customize-the-publish-web-page"></a>Aby dostosować strony sieci Web publikowania  
+### <a name="to-customize-the-publish-web-page"></a>Aby dostosować stronę publikowania w sieci Web  
   
-1. Publikowanie aplikacji ClickOnce do lokalizacji w sieci Web. Aby uzyskać więcej informacji, zobacz [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+1. Opublikuj aplikację ClickOnce w lokalizacji sieci Web. Aby uzyskać więcej informacji, zobacz [jak: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-2. Na serwerze sieci Web otwórz plik Publish.htm w Visual Web Designer lub innego edytora HTML.  
+2. Na serwerze sieci Web otwórz plik Publish.htm w Visual Web Designer lub innym edytorze HTML.  
   
-3. Dostosowywanie strony zgodnie z potrzebami i zapisz go.  
+3. Dostosuj stronę zgodnie z potrzebami i Zapisz ją.  
   
-4. Opcjonalna. Aby zapobiec zastąpieniu strony sieci Web publikowanie niestandardowych programu Visual Studio, usuń zaznaczenie pola wyboru **automatycznie Generuj stronę sieci web wdrożenia po każdej publikowania** w oknie dialogowym Opcje publikowania.  
+4. Opcjonalny. Aby zapobiec zastąpieniu przez program Visual Studio dostosowanej strony publikowania w sieci Web, usuń zaznaczenie pola wyboru **automatycznie Generuj stronę sieci Web wdrożenia po każdej publikacji** w oknie dialogowym Opcje publikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Bezpieczeństwo i wdrażanie technologii ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+ [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Instrukcje: określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

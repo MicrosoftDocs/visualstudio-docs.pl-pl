@@ -1,5 +1,5 @@
 ---
-title: Definicje elementów | Dokumentacja firmy Microsoft
+title: Definicje elementów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,36 +12,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433587"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64779612"
 ---
 # <a name="item-definitions"></a>Definicje elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] w wersji 2.0 umożliwia deklarację statycznych elementów w plikach projektu za pomocą [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Jednak metadane mogą być dodawane tylko na poziomie elementu, nawet jeśli metadane są identyczne dla wszystkich elementów. Począwszy od [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, element projektu o nazwie [ItemDefinitionGroup —](../msbuild/itemdefinitiongroup-element-msbuild.md) pozwala pokonać tego ograniczenia. *ItemDefinitionGroup —* umożliwiają definiowanie zestawu definicji elementu, aby dodać wartości metadanych domyślne dla wszystkich elementów w typie elementu o nazwie.  
+[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2,0 włącza statyczną deklarację elementów w plikach projektu przy użyciu elementu [Item](../msbuild/itemgroup-element-msbuild.md) . Metadane mogą jednak być dodawane tylko na poziomie elementu, nawet jeśli metadane są identyczne dla wszystkich elementów. Począwszy od [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3,5, element projektu o nazwie [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) przejdzie do tego ograniczenia. *ItemDefinitionGroup* umożliwia zdefiniowanie zestawu definicji elementów, który dodaje domyślne wartości metadanych do wszystkich elementów w nazwanym typie elementu.  
   
- *ItemDefinitionGroup —* element pojawia się natychmiast po [projektu](../msbuild/project-element-msbuild.md) elementu w pliku projektu. Definicje elementów zapewniają następujące funkcje:  
+ Element *ItemDefinitionGroup* pojawia się bezpośrednio po elemencie [projektu](../msbuild/project-element-msbuild.md) pliku projektu. Definicje elementów zapewniają następujące funkcje:  
   
-- Można zdefiniować metadane domyślnie globalne dla elementów poza obiekt docelowy. Oznacza to tych samych metadanych ma zastosowanie do wszystkich elementów określonego typu.  
+- Można zdefiniować globalne metadane dla elementów poza obiektem docelowym. Oznacza to, że te same metadane odnoszą się do wszystkich elementów określonego typu.  
   
-- Typy elementów może mieć wielu definicji. Dodanie specyfikacje dodatkowe metadane na typ specyfikację ostatni ma pierwszeństwo. \(Metadane następuje po takiej samej kolejności importu następujące właściwości czynności.\)  
+- Typy elementów mogą mieć wiele definicji. Gdy do typu są dodawane dodatkowe specyfikacje metadanych, Ostatnia Specyfikacja ma pierwszeństwo. \(Metadane są zgodne z tą samą kolejnością importu, co właściwości.\)  
   
-- Metadane mogą być dodatku. Na przykład CDefines wartości są zbierane warunkowo, w zależności od właściwości, które są ustawiane. Na przykład `MT;STD_CALL;DEBUG;UNICODE`.  
+- Metadane mogą być dodatkiem. Na przykład wartości CDefines są wykonywane warunkowo, w zależności od właściwości, które są ustawiane. Na przykład `MT;STD_CALL;DEBUG;UNICODE`.  
   
-- Metadane mogą zostać usunięte.  
+- Metadane można usunąć.  
   
-- Warunki może służyć do kontrolowania włączenia metadanych.  
+- Warunki mogą służyć do kontrolowania dołączania metadanych.  
   
-## <a name="item-metadata-default-values"></a>Element metadanych domyślne wartości  
- Metadane elementu, który jest zdefiniowany w ItemDefinitionGroup — jest po prostu deklarację domyślnej metadanych. Metadane nie ma zastosowania, chyba że zdefiniujesz elementu, który używa ItemGroup zawiera wartości metadanych.  
+## <a name="item-metadata-default-values"></a>Wartości domyślne metadanych elementu  
+ Metadane elementu, które są zdefiniowane w ItemDefinitionGroup, to tylko deklaracja metadanych domyślnych. Metadane nie są stosowane, chyba że zdefiniujesz element, który używa elementu element, aby zawierał wartości metadanych.  
   
 > [!NOTE]
-> W wielu przykładach w niniejszym temacie ItemDefinitionGroup — element jest wyświetlane, ale jego odpowiedniej definicji ItemGroup została pominięta w celu przejrzystości.  
+> W wielu przykładach w tym temacie jest pokazywany element ItemDefinitionGroup, ale jego definicja elementów Item została pominięta w celu przejrzystości.  
   
- Metadane jawnie zdefiniowany w ItemGroup mają pierwszeństwo przed metadanych w ItemDefinitionGroup —. Metadane w ItemDefinitionGroup — są stosowane tylko w przypadku niezdefiniowane metadanych w ItemGroup. Na przykład:  
+ Metadane jawnie zdefiniowane w elemencie Itemmanager mają pierwszeństwo przed metadanymi w ItemDefinitionGroup. Metadane w ItemDefinitionGroup są stosowane tylko dla niezdefiniowanych metadanych w elemencie Items. Na przykład:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -58,41 +58,41 @@ ms.locfileid: "63433587"
 </ItemGroup>  
 ```  
   
- W tym przykładzie domyślne metadanych "m" jest stosowany do elementu "i", ponieważ metadane "m" nie jest jawnie zdefiniowany przez element "i". Jednak domyślne metadanych "n" nie ma zastosowania do elementu "i", ponieważ metadane "n" jest już zdefiniowany przez element "i".  
+ W tym przykładzie domyślne metadane "m" są stosowane do elementu "i", ponieważ metadane "m" nie są jawnie zdefiniowane przez element "i". Jednak domyślne metadane "n" nie są stosowane do elementu "i", ponieważ metadane "n" są już zdefiniowane przez element "i".  
   
 > [!NOTE]
-> Nazwy elementu XML i parametru jest uwzględniana wielkość\-poufnych. Element metadanych i elementu\/nazwy właściwości nie są przypadków\-poufnych. W związku z tym ItemDefinitionGroup — elementy, których nazwy różnią się tylko wielkością liter powinny być traktowane jako ten sam element ItemGroup.  
+> W nazwach elementów i parametrów XML jest \- uwzględniana wielkość liter. W przypadku metadanych elementów i \/ nazw właściwości elementów nie jest \- rozróżniana wielkość liter. W związku z tym elementy ItemDefinitionGroup o nazwach, które różnią się tylko wielkością liter, powinny być traktowane jako te same elementy.  
   
-## <a name="value-sources"></a>Wartość źródła  
- Wartości metadanych, który jest zdefiniowany w ItemDefinitionGroup — mogą pochodzić z różnych źródeł, w następujący sposób:  
+## <a name="value-sources"></a>Źródła wartości  
+ Wartości metadanych zdefiniowane w ItemDefinitionGroup mogą pochodzić z wielu różnych źródeł w następujący sposób:  
   
-- PropertyGroup — właściwość  
+- Właściwość właściwości  
   
-- ItemDefinitionGroup — element  
+- Element z ItemDefinitionGroup  
   
-- Przekształć element ItemDefinitionGroup — element  
+- Przekształcanie elementu na element ItemDefinitionGroup  
   
 - Zmienna środowiskowa  
   
-- Global — właściwość \(z wiersza polecenia MSBuild.exe\)  
+- Właściwość Global \( z wiersza polecenia MSBuild.exe\)  
   
-- Właściwości zastrzeżone  
+- Właściwość zastrzeżona  
   
-- Dobrze\-znanych metadanych elementu z ItemDefinitionGroup —  
+- Dobrze \- znane metadane elementu z ItemDefinitionGroup  
   
-- Sekcja CDATA \< \! \[CDATA\[tutaj niczego nie jest analizowana\]\]\>  
+- Sekcja CDATA \<\!\[CDATA\[anything here is not parsed\]\]\>  
   
 > [!NOTE]
-> Metadane elementu z ItemGroup nie jest przydatne w deklaracji metadanych ItemDefinitionGroup —, ponieważ ItemDefinitionGroup — elementy są przetwarzane przed ItemGroup elementów.  
+> Metadane elementu z elementu Itemobject nie są przydatne w deklaracji metadanych ItemDefinitionGroup, ponieważ elementy ItemDefinitionGroup są przetwarzane przed elementami elementów Item.  
   
 ## <a name="additive-and-multiple-definitions"></a>Dodatek i wiele definicji  
- Podczas dodawania definicji lub użyć wielu ItemDefinitionGroups, pamiętaj o następujących kwestiach:  
+ Podczas dodawania definicji lub używania wielu ItemDefinitionGroups należy pamiętać o następujących kwestiach:  
   
-- Specyfikacja dodatkowych metadanych jest dodawana do typu.  
+- Dodatkowa Specyfikacja metadanych jest dodawana do typu.  
   
-- Specyfikacja ostatni ma pierwszeństwo.  
+- Ostatnia Specyfikacja ma pierwszeństwo.  
   
-  W przypadku wielu ItemDefinitionGroups każda kolejne specyfikacji dodaje jego metadane do poprzednią definicję. Na przykład:  
+  W przypadku wielu ItemDefinitionGroups każda kolejna Specyfikacja dodaje swoje metadane do poprzedniej definicji. Na przykład:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -108,9 +108,9 @@ ms.locfileid: "63433587"
 </ItemDefinitionGroup>  
 ```  
   
- W tym przykładzie zostanie dodany metadanych "o", "m" i "n".  
+ W tym przykładzie metadane "o" są dodawane do "m" i "n".  
   
- Ponadto można również dodać wartości metadanych uprzednio zdefiniowany. Na przykład:  
+ Dodatkowo można również dodać poprzednio zdefiniowane wartości metadanych. Na przykład:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -125,12 +125,12 @@ ms.locfileid: "63433587"
 </ItemDefinitionGroup>    
 ```  
   
- W tym przykładzie wartością uprzednio zdefiniowany dla metadanych "m" \(m1\) jest dodawana do nowej wartości \(m2\), dzięki czemu jest końcowa wartość "m1; m2".  
+ W tym przykładzie wcześniej zdefiniowana wartość dla metadanych "m" \( M1 \) jest dodawana do nowej wartości \( m2 \) , więc końcowa wartość to "M1; M2".  
   
 > [!NOTE]
-> To może również wystąpić w ten sam element ItemDefinitionGroup.  
+> Może to również wystąpić w tym samym ItemDefinitionGroup.  
   
- Podczas zastąpienia wcześniej zdefiniowane metadane specyfikację ostatni ma pierwszeństwo. W poniższym przykładzie końcowa wartość metadanych "m" przechodzi od "m1" do "m1a".  
+ Gdy zastąpisz poprzednio zdefiniowane metadane, Ostatnia Specyfikacja ma pierwszeństwo. W poniższym przykładzie końcowa wartość metadanych "m" przechodzi z "M1" do "M1A".  
   
 ```  
 <ItemDefinitionGroup>  
@@ -145,8 +145,8 @@ ms.locfileid: "63433587"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Za pomocą warunków w ItemDefinitionGroup —  
- Warunki w ItemDefinitionGroup — służy do sterowania włączenia metadanych. Na przykład:  
+## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Używanie warunków w ItemDefinitionGroup  
+ Możesz użyć warunków w ItemDefinitionGroup, aby kontrolować dodawanie metadanych. Na przykład:  
   
 ```  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -156,12 +156,12 @@ ms.locfileid: "63433587"
 </ItemDefinitionGroup>  
 ```  
   
- W tym przypadku metadane domyślny "m1" w elemencie "i" są dołączone, tylko wtedy, gdy wartość właściwości "Konfiguracja" "Debug".  
+ W takim przypadku domyślne metadane "M1" w elemencie "i" są uwzględniane tylko wtedy, gdy wartość właściwości "Configuration" to "debug".  
   
 > [!NOTE]
-> Tylko odwołania do metadanych lokalnego są obsługiwane w warunkach.  
+> W warunkach są obsługiwane tylko odwołania do metadanych lokalnych.  
   
- Odwołania do metadanych zdefiniowanych w starszych ItemDefinitionGroup — są lokalne do elementu, a nie grupy definicji. Oznacza to, że zakres odwołania są elementu\-określone. Na przykład:  
+ Odwołania do metadanych zdefiniowanych we wcześniejszych ItemDefinitionGroup są lokalne dla elementu, a nie do grupy definicji. Oznacza to, że zakres odwołań jest \- specyficzny dla elementu. Na przykład:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -177,7 +177,7 @@ ms.locfileid: "63433587"
  W tym przykładzie element "i" odwołuje się do elementu "test" w warunku.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Zastępowanie i usuwanie metadanych  
- Metadane zdefiniowane w ItemDefinitionGroup — element może być zastąpiona w późniejszym ItemDefinitionGroup — element, ustawiając wartość metadanych na wartość pustą. Możesz również skutecznie usunąć element metadanych, ustawiając dla niej wartość pustą. Na przykład:  
+ Metadane zdefiniowane w elemencie ItemDefinitionGroup można zastąpić w późniejszym elemencie ItemDefinitionGroup, ustawiając wartość metadanych na pustą. Możesz również skutecznie usunąć element metadanych, ustawiając go na wartość pustą. Na przykład:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -192,10 +192,10 @@ ms.locfileid: "63433587"
 </ItemDefinitionGroup>  
 ```  
   
- Element "i" nadal zawiera metadane "m", ale jej wartość jest obecnie pusta.  
+ Element "i" nadal zawiera metadane "m", ale jego wartość jest pusta.  
   
 ## <a name="scope-of-metadata"></a>Zakres metadanych  
- ItemDefinitionGroups mieć zakresu globalnego zdefiniowanego i globalne właściwości wszędzie tam, gdzie są zdefiniowane. Definicje metadanych domyślne w ItemDefinitionGroup — może być samodzielnie\-referencyjną. Na przykład następujące używa odwołania proste metadanych:  
+ ItemDefinitionGroups mają zakres globalny dla zdefiniowanych i globalnych właściwości wszędzie tam, gdzie są zdefiniowane. Domyślne definicje metadanych w ItemDefinitionGroup mogą być odwołujące się do siebie \- . Na przykład następujące użycie prostego odwołania do metadanych:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -206,7 +206,7 @@ ms.locfileid: "63433587"
 </ItemDefinitionGroup>  
 ```  
   
- Można także odwołania kwalifikowaną metadanych:  
+ Można również użyć kwalifikowanego odwołania do metadanych:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -217,7 +217,7 @@ ms.locfileid: "63433587"
 </ItemDefinitionGroup>  
 ```  
   
- Jednak że jest nieprawidłowa:  
+ Jednak następujące elementy są nieprawidłowe:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -228,7 +228,7 @@ ms.locfileid: "63433587"
 </ItemDefinitionGroup>  
 ```  
   
- Począwszy od [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, ItemGroups może być również samodzielnie\-referencyjną. Na przykład:  
+ Począwszy od [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3,5, ItemGroups może być również własnym \- odwołaniem. Na przykład:  
   
 ```  
 <ItemGroup>  

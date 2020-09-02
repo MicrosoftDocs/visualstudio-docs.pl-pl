@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425384"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Dobrze znane metadane elementów programu MSBuild
@@ -51,7 +51,7 @@ W pierwszej tabeli w tym artykule opisano metadane przypisane do każdego elemen
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Typowe metadane elementu MSBuild](common-msbuild-item-metadata.md)
+- [Wspólne metadane elementów programu MSBuild](common-msbuild-item-metadata.md)
 - [Elementy](../msbuild/msbuild-items.md)
 - [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

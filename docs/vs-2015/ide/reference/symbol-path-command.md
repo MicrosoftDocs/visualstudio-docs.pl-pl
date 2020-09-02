@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651003"
 ---
 # <a name="symbol-path-command"></a>Ścieżka symboli — Polecenie
@@ -34,10 +34,10 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
 ## <a name="arguments"></a>Argumenty
- `pathname` opcjonalny. Rozdzielana średnikami lista ścieżek dla debugera do wyszukiwania symboli.
+ `pathname` Obowiązkowe. Rozdzielana średnikami lista ścieżek dla debugera do wyszukiwania symboli.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli `pathname` nie zostanie określona, polecenie wyświetli bieżące ścieżki symboli.
+ Jeśli wartość nie `pathname` jest określona, polecenie wyświetla listę bieżących ścieżek symboli.
 
 ## <a name="example"></a>Przykład
  Ten przykład dodaje dwie ścieżki do listy katalogów symboli.

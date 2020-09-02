@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccWillCreateSccFile | Dokumentacja firmy Microsoft
+title: Funkcja SccWillCreateSccFile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb0df475098a0fb0675327cece6dd9c643a0c4d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147960"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta funkcja sprawdza, czy wtyczka do kontroli źródła obsługuje tworzenie MSSCCPRJ. Plik SCC dla każdego danego pliku.  
+Ta funkcja określa, czy wtyczka do kontroli źródła obsługuje tworzenie MSSCCPRJ. Plik SCC dla każdego z określonych plików.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,28 +37,28 @@ SCCRTN SccWillCreateSccFile(
   
 #### <a name="parameters"></a>Parametry  
  pContext  
- [in] Wskaźnik kontekście wtyczki kontroli źródła.  
+ podczas Wskaźnik kontekstu wtyczki kontroli źródła.  
   
- Niepowodzeń  
- [in] Liczba nazwy plików zawarte w `lpFileNames` tablicy, a także długość `pbSccFiles` tablicy.  
+ nFiles  
+ podczas Liczba nazw plików zawartych w `lpFileNames` tablicy, a także długość `pbSccFiles` tablicy.  
   
  lpFileNames  
- [in] Tablicy w pełni kwalifikowanych nazw do sprawdzenia (tablicy muszą być przydzielane przez wywołującego).  
+ podczas Tablica w pełni kwalifikowanych nazw plików do sprawdzenia (Tablica musi być przydzielone przez obiekt wywołujący).  
   
  pbSccFiles  
- [out w] Tablica do przechowywania wyników.  
+ [in. out] Tablica, w której mają być przechowywane wyniki.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |SCC_OK|Powodzenie.|  
-|SCC_E_INVALIDFILEPATH|Jedna ze ścieżek używanych w tablicy jest nieprawidłowa.|  
-|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|  
+|SCC_E_INVALIDFILEPATH|Jedna ze ścieżek w tablicy jest nieprawidłowa.|  
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta funkcja jest wywoływana z listą plików w celu określenia, jeśli wtyczka do kontroli źródła zapewnia obsługę w MSSCCPRJ. Plik SCC dla każdego z plików danego (Aby uzyskać więcej informacji na temat MSSCCPRJ. Plik SCC zobacz [MSSCCPRJ. Plik SCC](../extensibility/mssccprj-scc-file.md)). Wtyczki kontroli źródła można zadeklarować, czy ma on możliwość tworzenia MSSCCPRJ. Pliki SCC przez zadeklarowanie `SCC_CAP_SCCFILE` podczas inicjowania. Zwraca wtyczki `TRUE` lub `FALSE` każdego pliku `pbSccFiles` tablicy, aby określić, które pliki danego ma MSSCCPRJ. Obsługa SCC. Jeśli wtyczka zwróci kod powodzenia z funkcji, wartości w tablicy zwracanej są uznawane. W przypadku awarii tablica jest ignorowany.  
+ Ta funkcja jest wywoływana z listą plików, aby określić, czy wtyczka do kontroli źródła zapewnia obsługę w MSSCCPRJ. Plik SCC dla każdego z podanych plików (Aby uzyskać więcej informacji na temat MSSCCPRJ. Plik SCC, zobacz [MSSCCPRJ. Plik SCC](../extensibility/mssccprj-scc-file.md)). Wtyczki kontroli źródła mogą zadeklarować, czy mają możliwość tworzenia MSSCCPRJ. Pliki SCC przez zadeklarowanie `SCC_CAP_SCCFILE` podczas inicjalizacji. Wtyczka zwraca `TRUE` lub `FALSE` na plik w `pbSccFiles` tablicy, aby wskazać, które z tych plików mają MSSCCPRJ. Obsługa SCC. Jeśli wtyczka zwraca kod sukcesu z funkcji, wartości w tablicy zwracanej są honorowane. W przypadku niepowodzenia tablica jest ignorowana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   

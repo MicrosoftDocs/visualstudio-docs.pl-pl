@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: how-to
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
 ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87375901"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
@@ -92,7 +92,7 @@ Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić sub
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)

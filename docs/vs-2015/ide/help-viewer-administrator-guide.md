@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03cacd8de574de92002b44b237cd84c22e761eaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645574"
 ---
 # <a name="help-viewer-administrator-guide"></a>Podręcznik administratora programu Podgląd Pomocy
@@ -27,20 +27,20 @@ Podgląd pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
 
  Podstawowa składnia jest następująca:
 
- \<*ścieżkę do*> \HlpCtntmgr.exe/operation \<*argument*>/CatalogName \<*name*> wymaganego/locale. \<*locale*>/SourceUri \< *. msha Path lub URL* 0
+ \<*path to*>\HlpCtntmgr.exe/operation \<*argument*> /catalogname \<*name*> wymaganego/locale. \<*locale*> /SourceUri \<*.msha path or URL*>
 
- Aby uzyskać więcej informacji na temat składni wiersza polecenia HlpCtntMgr. exe, zobacz [argumenty wiersza polecenia dla Menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
+ Aby uzyskać więcej informacji na temat składni wiersza polecenia HlpCtntMgr.exe, zobacz [argumenty wiersza polecenia dla Menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
 
  Aby uzyskać więcej informacji na temat tworzenia zawartości, tworzenia punktu końcowego usługi sieci intranet i podobnych rodzajów działań, zobacz zestaw SDK podglądu pomocy.
 
 ## <a name="deploying-local-help-content-from-the-internet"></a>Wdrażanie lokalnej zawartości pomocy z Internetu
  Za pomocą usługi pakietu zawartości MSDN można wdrożyć lokalną zawartość pomocy z Internetu na komputerach klienckich. Użyj następującej składni:
 
- \\ <*ścieżkę do*> \v2.2\HlpCtntmgr.exe/operation \<*name*>/catalogname \<*Catalog Name*> wymaganego/locale. \<*locale* >
+ \\<*ścieżka do* # C0\v2.2\HlpCtntmgr.exe/operation \<*name*> /catalogname \<*catalog name*> wymaganego/locale. \<*locale*>
 
- Aby uzyskać więcej informacji na temat składni wiersza polecenia HlpCtntMgr. exe, zobacz [argumenty wiersza polecenia dla Menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
+ Aby uzyskać więcej informacji na temat składni wiersza polecenia HlpCtntMgr.exe, zobacz [argumenty wiersza polecenia dla Menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
 
- Wymagania
+ Wymagania:
 
 - Komputery klienckie muszą mieć dostęp do Internetu.
 
@@ -51,9 +51,9 @@ Podgląd pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
 - Domyślne źródło pomocy nadal będzie w trybie online.
 
   > [!TIP]
-  > Można zmienić domyślne źródło pomocy, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Aby uzyskać więcej informacji, zobacz [przesłonięcia Menedżera zawartości pomocy](../ide/help-content-manager-overrides.md).
+  > Domyślne źródło pomocy można zmienić, modyfikując klucz rejestru HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Aby uzyskać więcej informacji, zobacz [przesłonięcia Menedżera zawartości pomocy](../ide/help-content-manager-overrides.md).
 
-- Klienci będą nadal monitowani o zainstalowanie podstawowej zawartości pomocy przy pierwszym uruchomieniu programu Visual Studio. Możesz wyłączyć ten monit, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.
+- Klienci będą nadal monitowani o zainstalowanie podstawowej zawartości pomocy przy pierwszym uruchomieniu programu Visual Studio. Możesz wyłączyć ten monit, modyfikując klucz rejestru HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.
 
 ### <a name="example"></a>Przykład
  Poniższy przykład instaluje zawartość w języku angielskim dla programu Visual Studio na komputerze klienckim.
@@ -64,14 +64,14 @@ Podgląd pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
 
 2. Wpisz następujące polecenie:
 
-     C:\Program Files (x86) \Microsoft help Viewer\v2.2\HlpCtntmgr.exe/operation Install/CatalogName VisualStudio14 wymaganego/locale. en-us
+     C:\Program Files (x86) \Microsoft help Viewer\v2.2\hlpctntmgr.exe/Operation Install/CatalogName VisualStudio14 wymaganego/locale. en-us
 
 3. Naciśnij klawisz ENTER.
 
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Wdrażanie wstępnie zainstalowanej lokalnej zawartości pomocy na komputerach klienckich
  Możesz zainstalować zestaw zawartości z trybu online na jednym komputerze, a następnie skopiować ten zainstalowany zestaw zawartości na inne komputery.
 
- Wymagania
+ Wymagania:
 
 - Komputer, na którym jest instalowany zestaw zawartości, musi mieć dostęp do Internetu.
 
@@ -101,7 +101,7 @@ Podgląd pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
 
 4. Wybierz pozycję **Rozpocznij** , aby odinstalować
 
-5. Przejdź do *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 i sprawdź, czy folder zawiera tylko plik catalogType. XML.
+5. Przejdź do *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 i sprawdź, czy folder zawiera tylko plik catalogType.xml.
 
    Po usunięciu wszystkich wcześniej zainstalowanych lokalnych zawartości pomocy programu Visual Studio możesz pobrać podstawowy zestaw zawartości.
 
@@ -121,13 +121,13 @@ Podgląd pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
 
      Na przykład: c:\VS12Help.
 
-2. Otwórz cmd. exe z uprawnieniami administratora.
+2. Otwórz cmd.exe z uprawnieniami administratora.
 
 3. Przejdź do folderu utworzonego w kroku 1.
 
 4. Wpisz następujące polecenie:
 
-     XCOPY%SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nazwafolderu*> \/y/e/k/o
+     XCOPY%SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*> \/y/e/k/o
 
      Na przykład: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
 

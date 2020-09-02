@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczanie wdrożenia
+title: Bezpieczne wdrożenie
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978380"
 ---
-# <a name="secure-deployment"></a>Zabezpieczanie wdrożenia
-  Podczas tworzenia rozwiązań pakietu Office, komputer deweloperski jest aktualizowany automatycznie uruchamianie kodu w projekcie do uruchomienia. Jednak podczas wdrażania rozwiązania, należy podać dowód, na którym można oprzeć decyzji o zaufaniu rozwiązania przy użyciu certyfikatu podpisywania lub używając [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] klucz monitu zaufania. Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).
+# <a name="secure-deployment"></a>Bezpieczne wdrożenie
+  Podczas tworzenia rozwiązania pakietu Office komputer deweloperski zostanie automatycznie zaktualizowany, aby umożliwić uruchomienie kodu w projekcie. Jednak podczas wdrażania rozwiązania należy podać dowody, na których należy oprzeć decyzję zaufania, podpisywanie rozwiązania za pomocą certyfikatu lub przy użyciu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] klucza monitu zaufania. Aby uzyskać więcej informacji, zobacz [udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Przypadku dostosowań na poziomie dokumentu w przypadku wdrożenia dokument do lokalizacji sieciowej, należy również dodać lokalizacji tego dokumentu do listy zaufanych lokalizacji w Centrum zaufania w aplikacji pakietu Office. Aby uzyskać więcej informacji na temat sposobu ustawiania uprawnień do dokumentu na komputerach użytkowników końcowych, zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
+ W przypadku dostosowań na poziomie dokumentu, jeśli dokument jest wdrażany w lokalizacji sieciowej, należy również dodać lokalizację dokumentu do listy zaufanych lokalizacji w centrum zaufania aplikacji pakietu Office. Aby uzyskać więcej informacji na temat sposobu ustawiania uprawnień do dokumentów na komputerach użytkowników końcowych, zobacz [Grant Trust to Documents](../vsto/granting-trust-to-documents.md).
 
-## <a name="prevent-office-solutions-from-running-code"></a>Uniemożliwienie rozwiązań pakietu Office kodu
- Administratorzy mogą używać rejestru, aby zapobiec wszystkich rozwiązań pakietu Office na komputerze z systemem. Gdy rozwiązań pakietu Office, który zawiera rozszerzenia kodu zarządzanego jest otwarty, Visual Studio Tools for Office runtime kontroli czy wpisu o nazwie `Disabled` istnieje w jednej z następujących kluczy rejestru na komputerze:
+## <a name="prevent-office-solutions-from-running-code"></a>Zapobiegaj uruchamianiu kodu w rozwiązaniach pakietu Office
+ Administratorzy mogą używać rejestru, aby zapobiec uruchamianiu wszystkich rozwiązań pakietu Office na komputerze. Gdy zostanie otwarte rozwiązanie pakietu Office, które ma rozszerzenia kodu zarządzanego, Visual Studio Tools dla środowiska uruchomieniowego pakietu Office sprawdza, czy wpis o nazwie `Disabled` istnieje w ramach jednego z następujących kluczy rejestru na komputerze:
 
-- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
+- **HKEY_CURRENT_USER \Software\Microsoft\VSTO**
 
-- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
+- **HKEY_LOCAL_MACHINE \Software\Microsoft\VSTO**
 
-  Aby uniemożliwić uruchamianie kodu rozwiązań pakietu Office, należy utworzyć `Disabled` wpis w co najmniej jeden z tych kluczy rejestru i określ jedną z następujących typów danych i wartości dla `Disabled`:
+  Aby zapobiec uruchamianiu kodu przez rozwiązania pakietu Office, należy utworzyć `Disabled` wpis w ramach jednego lub obu tych kluczy rejestru i określić jeden z następujących typów danych i wartości dla `Disabled` :
 
-- REG_SZ lub REG_EXPAND_SZ, który jest ustawiony na dowolny ciąg, innego niż "0" (zero).
+- REG_SZ lub REG_EXPAND_SZ, które są ustawione na dowolny ciąg inny niż "0" (zero).
 
-- REG_DWORD, który jest ustawiony na wartość inną niż 0 (zero).
+- REG_DWORD, która jest ustawiona na dowolną wartość inną niż 0 (zero).
 
-  Aby włączyć rozwiązań pakietu Office uruchomić kod, ustaw obie `Disabled` wpisy na 0 (zero), lub Usuń wpisy rejestru.
+  Aby włączyć obsługę kodu dla rozwiązań pakietu Office, ustaw oba `Disabled` wpisy na 0 (zero) lub Usuń wpisy rejestru.
 
-## <a name="see-also"></a>Zobacz także
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
-- [Przygotowywanie komputerów pozwala uruchamiać lub hostować rozwiązań pakietu Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
+## <a name="see-also"></a>Zobacz też
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)
+- [Przygotowywanie komputerów do uruchamiania lub hostowania rozwiązań pakietu Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
 - [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)

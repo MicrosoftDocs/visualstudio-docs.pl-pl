@@ -1,5 +1,5 @@
 ---
-title: Interfejsy (debugowanie w programie Visual Studio) | Dokumentacja firmy Microsoft
+title: Interfejsy (debugowanie Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37ff35e5b073c820f77e5cd861c517bfccbf6ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199542"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfejsy (Debugowanie w programie Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Metody są wymieniane alfabetycznie w ramach każdego interfejsu w tabeli treści i na stronie interfejsu w Vtable kolejności.  
+Metody są wyświetlane alfabetycznie w każdym interfejsie w spisie treści i na stronie interfejsu w kolejności tablic wirtualnych.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)  
- W tym artykule opisano interfejsy używane w aparacie debugowania.  
+ Opisuje interfejsy używane w aparacie debugowania.  
   
  [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
- W tym artykule opisano interfejsy, które oceny wyrażenia w stosie wywołań w trybie break.  
+ Opisuje interfejsy, które obliczają wyrażenia w stosie wywołań w trybie przerwania.  
   
  [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
- W tym artykule opisano interfejsy, które implementuje dostawca symboli w celu skojarzenia typów identyfikatorów.  
+ Opisuje interfejsy, które implementuje dostawca symboli, aby skojarzyć typy z identyfikatorami.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
- Zawiera dokumentację dla interfejsów, wyliczenia i struktury [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugowanie zestawu SDK.  
+ Zawiera dokumentację dla interfejsów, modułów wyliczających i struktur [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] zestawu SDK debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

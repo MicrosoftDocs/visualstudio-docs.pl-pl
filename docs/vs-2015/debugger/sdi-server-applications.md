@@ -1,5 +1,5 @@
 ---
-title: Aplikacje serwera SDI | Dokumentacja firmy Microsoft
+title: Aplikacje serwera SDI | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,22 +18,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148145"
 ---
 # <a name="sdi-server-applications"></a>Aplikacje serwera SDI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli debugujesz aplikację serwera SDI, należy określić `/Embedding` lub `/Automation` w **argumenty wiersza polecenia** właściwość *projektu* okno dialogowe strony właściwości dla C/C++, C#, lub Projekty języka Visual Basic.  
+W przypadku debugowania aplikacji serwera SDI należy określić `/Embedding` lub `/Automation` w właściwości **argumenty wiersza polecenia** w oknie dialogowym strony właściwości *projektu* dla projektów C/C++, C# lub Visual Basic.  
   
- Za pomocą tych argumentów wiersza polecenia debugera można uruchomić aplikacji serwera, tak, jakby zostały uruchomione z kontenera. Uruchamianie kontenera za pomocą Menedżera programu lub Menedżer plików następnie spowoduje, że kontener, aby użyć wystąpienia programu server uruchomiony w debugerze.  
+ Za pomocą tych argumentów wiersza polecenia debuger może uruchomić aplikację serwera, tak jakby była uruchamiana z kontenera. Uruchomienie kontenera z Menedżera programu lub Menedżera plików spowoduje, że kontener użyje wystąpienia serwera uruchomionego w debugerze.  
   
-## <a name="finding-the-command-line-arguments-property"></a>Wyszukiwanie właściwości argumenty wiersza polecenia  
- Aby uzyskać dostęp do *projektu* okno dialogowe strony właściwości, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie z menu skrótów wybierz polecenie Właściwości. Aby znaleźć właściwości argumenty wiersza polecenia, rozwiń kategorię właściwości konfiguracji, a następnie kliknij przycisk na stronie debugowanie.  
+## <a name="finding-the-command-line-arguments-property"></a>Znajdowanie Właściwości argumentów wiersza polecenia  
+ Aby uzyskać dostęp do okna dialogowego strony właściwości *projektu* , kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań, a następnie wybierz polecenie Właściwości z menu skrótów. Aby znaleźć Właściwość argumenty wiersza polecenia, rozwiń kategorię właściwości konfiguracji i kliknij stronę debugowanie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)   
- [Instrukcje: Debugowanie serwerów COM](../debugger/how-to-debug-com-servers.md)
+ [Debugowanie modelu COM i ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Instrukcje: debugowanie serwerów COM](../debugger/how-to-debug-com-servers.md)

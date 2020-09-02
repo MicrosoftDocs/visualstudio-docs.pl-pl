@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903420"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Tworzenie podstawowego systemu projektu, część 1
@@ -520,7 +520,7 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  Podczas konstruowania wystąpienia `ProjectNode` Klasa bazowa ładuje *Resources.imagelis.bmp*, w których są osadzone powszechnie używane 16 x 16 map bitowych z *Resources\imagelis.bmp*. Ta lista mapy bitowej jest udostępniana `SimpleProjectNode` jako `ImageHandler.ImageList` . `SimpleProjectNode`dołącza mapę bitową węzła projektu do listy. Przesunięcie mapy bitowej węzła projektu na liście obrazów jest buforowane do późniejszego użycia jako wartość `ImageIndex` Właściwości publicznej. Program Visual Studio używa tej właściwości, aby określić, która mapa bitowa ma być wyświetlana jako ikona węzła projektu.
+  Podczas konstruowania wystąpienia `ProjectNode` Klasa bazowa ładuje *Resources.imagelis.bmp*, w których są osadzone powszechnie używane 16 x 16 map bitowych z *Resources\imagelis.bmp*. Ta lista mapy bitowej jest udostępniana `SimpleProjectNode` jako `ImageHandler.ImageList` . `SimpleProjectNode` dołącza mapę bitową węzła projektu do listy. Przesunięcie mapy bitowej węzła projektu na liście obrazów jest buforowane do późniejszego użycia jako wartość `ImageIndex` Właściwości publicznej. Program Visual Studio używa tej właściwości, aby określić, która mapa bitowa ma być wyświetlana jako ikona węzła projektu.
 
 ## <a name="test-the-custom-project-node-icon"></a>Przetestuj ikonę niestandardowego węzła projektu
  Przetestuj fabrykę projektu, aby zobaczyć, czy tworzy hierarchię projektu, która ma niestandardową ikonę węzła projektu.
@@ -601,9 +601,9 @@ Templates
 
 3. Przeanalizuj wartości `nameSpace` `className` parametrów i.
 
-   - `nameSpace`otrzymuje wartość \<RootNamespace> elementu w pliku szablonu projektu *\Templates\Projects\SimpleProject\SimpleProject.myproj* . W tym przypadku wartość jest `MyRootNamespace` .
+   - `nameSpace` otrzymuje wartość \<RootNamespace> elementu w pliku szablonu projektu *\Templates\Projects\SimpleProject\SimpleProject.myproj* . W tym przypadku wartość jest `MyRootNamespace` .
 
-   - `className`otrzymuje wartość nazwy pliku źródłowego klasy, bez rozszerzenia nazwy pliku. W takim przypadku pierwszy plik do skopiowania do folderu docelowego to *AssemblyInfo.cs*; w związku z tym wartość className jest `AssemblyInfo` .
+   - `className` otrzymuje wartość nazwy pliku źródłowego klasy, bez rozszerzenia nazwy pliku. W takim przypadku pierwszy plik do skopiowania do folderu docelowego to *AssemblyInfo.cs*; w związku z tym wartość className jest `AssemblyInfo` .
 
 4. Usuń punkt przerwania i naciśnij klawisz **F5** , aby kontynuować wykonywanie.
 

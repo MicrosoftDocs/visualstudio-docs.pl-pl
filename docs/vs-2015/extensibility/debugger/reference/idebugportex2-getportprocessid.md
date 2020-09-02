@@ -1,51 +1,52 @@
 ---
-title: IDebugPortEx2::GetPortProcessId | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+title: 'IDebugPortEx2:: GetPortProcessId | Microsoft Docs'
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugPortEx2::GetPortProcessId
 helpviewer_keywords:
 - IDebugPortEx2::GetPortProcessId
 ms.assetid: be85be66-47e6-415f-b0ca-24599aa5f13c
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 50041c41874edbbb66d0e19023d32e50686a8bfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188494"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
-Pobiera identyfikator procesu samego portu.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Składnia
-
-```cpp
-HRESULT GetPortProcessId ( 
-   DWORD* pdwProcessId
-);
-```
-
-```csharp
-int GetPortProcessId ( 
-   out uint pdwProcessId
-);
-```
-
-#### <a name="parameters"></a>Parametry
- `pdwProcessId`
-
- [out] Zwraca identyfikator procesu fizyczny port sam.
-
-## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
-
-## <a name="remarks"></a>Uwagi
- W środowisku uruchomieniowym Win32 na przykład tej metody zwykle wywołuje funkcję Win32 `GetCurrentProcessId` można pobrać identyfikatora procesu fizycznych.
-
-## <a name="see-also"></a>Zobacz też
-- [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
+Pobiera identyfikator procesu samego portu.  
+  
+## <a name="syntax"></a>Składnia  
+  
+```cpp#  
+HRESULT GetPortProcessId (   
+   DWORD* pdwProcessId  
+);  
+```  
+  
+```csharp  
+int GetPortProcessId (   
+   out uint pdwProcessId  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametry  
+ `pdwProcessId`  
+ określoną Zwraca identyfikator procesu fizycznego samego portu.  
+  
+## <a name="return-value"></a>Wartość zwracana  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
+  
+## <a name="remarks"></a>Uwagi  
+ Na przykład w środowisku uruchomieniowym Win32 ta metoda zazwyczaj wywołuje funkcję Win32 `GetCurrentProcessId` w celu uzyskania identyfikatora procesu fizycznego.  
+  
+## <a name="see-also"></a>Zobacz też  
+ [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

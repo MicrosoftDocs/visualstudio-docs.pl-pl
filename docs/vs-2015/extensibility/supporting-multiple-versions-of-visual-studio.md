@@ -1,5 +1,5 @@
 ---
-title: Obsługiwanie wielu wersji programu Visual Studio 2015 | Dokumentacja firmy Microsoft
+title: Obsługa wielu wersji programu Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,38 +13,38 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f4393a88a689e2a923291ada37a9b6d85718db5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431365"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64779415"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Obsługiwanie wielu wersji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Termin *side-by-side* oznacza, że można zainstalować i zarządzać wieloma wersjami produktu na tym samym komputerze. Dla pakietów VSPackage oznacza to, że użytkownik może mieć różne wersje programu Visual Studio zainstalowany na tym samym komputerze. Jednak nie może mieć side-by-side wersje usługi pakietów VSPackage załadowane do jednej wersji programu Visual Studio.
+Termin *równoczesny* oznacza, że można zainstalować i zachować wiele wersji produktu na tym samym komputerze. W przypadku pakietów VSPackage oznacza, że użytkownik może mieć kilka wersji programu Visual Studio zainstalowanych na tym samym komputerze. Nie można jednak korzystać ze równoległych wersji pakietów VSPackage załadowanych w jednej wersji programu Visual Studio.
 
- Przed wprowadzeniem Twojego pakietu VSPackage, mogą być ładowane do side-by-side wersji programu Visual Studio, należy rozważyć następujące kwestie:
+ Przed udostępnieniem pakietu VSPackage można załadować do kolejnych wersji programu Visual Studio, weź pod uwagę następujące kwestie:
 
-- Należy ustalić strategię wdrażania side-by-side, w jakiej chcesz obserwować.
+- Należy określić, którą strategię implementacji obok siebie chcesz wykonać.
 
-     Aby uzyskać więcej informacji, zobacz [wybór między udostępnionych i kontrolą wersji pakietów VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
+     Aby uzyskać więcej informacji, zobacz [Wybieranie między udostępnionymi a wersjami pakietów VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
 
-- Formaty plików rozwiązania i projektu należy dopasować strategii wdrażania.
+- Twoje rozwiązanie i formaty plików projektu muszą pasować do strategii implementacji.
 
-     Aby uzyskać więcej informacji, zobacz [Uaktualnianie projektów niestandardowych](../misc/upgrading-custom-projects.md) i [rejestrowanie rozszerzeń nazw plików dla wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
+     Aby uzyskać więcej informacji, zobacz [uaktualnianie projektów niestandardowych](../misc/upgrading-custom-projects.md) i [Rejestrowanie rozszerzeń nazw plików dla wdrożeń równoległych](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
-- Instalatora musi obsługiwać swoją strategię wdrażania, aby składniki numerów wersji, a także składniki współużytkowane przez wszystkie wersje, są poprawnie zainstalowane i zarejestrowane.
+- Instalator musi obsłużyć strategię implementacji, aby składniki wersji, a także składniki udostępnione dla wszystkich wersji, były poprawnie zainstalowane i zarejestrowane.
 
-     Aby uzyskać więcej informacji, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , a także [Zarządzanie składnikami](../extensibility/internals/component-management.md).
+     Aby uzyskać więcej informacji, zobacz [Installing pakietów VSPackage With Instalator Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , a także [Zarządzanie składnikami](../extensibility/internals/component-management.md).
 
     > [!NOTE]
-    > Instalowanie wersji programu Visual Studio instaluje odpowiednią wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Na przykład instalowania programu Visual Studio 2010 i Visual Studio 2012 na tym samym komputerze instaluje wersjach 4.0 i 4.5 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]odpowiednio.
+    > Zainstalowanie wersji programu Visual Studio powoduje także zainstalowanie odpowiedniej wersji programu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] . Na przykład zainstalowanie programu Visual Studio 2010 i programu Visual Studio 2012 na tym samym komputerze powoduje także zainstalowanie odpowiednio wersji 4,0 i 4,5 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Wybór między udostępnionych i kontrolą wersji pakietów VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md) wyjaśnia, jak rozwiązywać problemy side-by-side w swojej pakietu VSPackage.
+ [Wybieranie między udostępnionym i z wersją pakietów VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md) Wyjaśniono, jak rozwiązywać problemy obok siebie w pakietu VSPackage.
 
- [Rejestrowanie rozszerzeń nazw plików dla wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) w tym artykule opisano, jak zarejestrować skojarzenia plików w scenariuszu side-by-side Twojego pakietu VSPackage.
+ [Rejestrowanie rozszerzeń nazw plików dla wdrożeń równoległych](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) Opisuje, w jaki sposób pakietu VSPackage może rejestrować skojarzenia plików w scenariuszu równoległym.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Instalowanie pakietów VSPackage](../misc/installing-vspackages.md) w tym artykule omówiono sposób tworzenia i instalowania pakietów VSPackage i sposób obsługi użytkowników korzystających z wielu wersji programu Visual Studio, w tym samym czasie.
+ [Instalowanie pakietów VSPackage](../misc/installing-vspackages.md) W tym artykule omówiono sposób kompilowania i instalowania pakietów VSPackage oraz obsługi użytkowników, którzy uruchamiali wiele wersji programu Visual Studio w tym samym czasie.

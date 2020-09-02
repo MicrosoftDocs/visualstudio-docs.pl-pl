@@ -1,5 +1,5 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION | Dokumentacja firmy Microsoft
+title: INTERCEPT_EXCEPTION_ACTION | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4fcccffecaf465af36d5e4925d43214ff132756f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147509"
 ---
-# <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
+# <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, jakie działania podejmowane w momencie przechwytuje wyjątki.  
+Określa akcje, które należy wykonać podczas przechwytywania wyjątków.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,15 +43,15 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
   
 #### <a name="parameters"></a>Parametry  
  IEA_INTERCEPT  
- Umożliwia przechwytywanie bieżący wyjątek. Jest to jedyna wartość obsługiwana w chwili obecnej i musi być określona.  
+ Włącza przechwytywanie bieżącego wyjątku. Jest to jedyna obsługiwana wartość, która musi być określona.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane do [interceptcurrentexception —](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) metody.  
+ Te wartości są przesyłane do metody [InterceptCurrentException —](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

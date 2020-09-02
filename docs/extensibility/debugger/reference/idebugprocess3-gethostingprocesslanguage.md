@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetHostingProcessLanguage | Dokumenty firmy Microsoft
+title: 'IDebugProcess3:: GetHostingProcessLanguage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3b27be0850755a1a2808c8c5c758a3ad59b41d7e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723614"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
-Ta metoda `GUID` zwraca reprezentujący język tego procesu, zgodnie z wywołaniem [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).
+Ta metoda zwraca `GUID` reprezentowanie języka tego procesu jako zestawu przez wywołanie [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ int GetHostingProcessLanguage(
 
 ## <a name="parameters"></a>Parametry
 `pguidLang`\
-[na zewnątrz] Język `GUID` tego procesu. `GUID_NULL`(C++) `Guid.Empty` lub (C#) oznacza, że język nie jest ustawiony.
+określoną `GUID` Język tego procesu. `GUID_NULL` (C++) lub `Guid.Empty` (C#) oznacza, że język nie jest ustawiony.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

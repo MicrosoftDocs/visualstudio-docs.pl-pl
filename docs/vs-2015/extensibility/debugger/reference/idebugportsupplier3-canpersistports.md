@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Dokumentacja firmy Microsoft
+title: 'IDebugPortSupplier3:: CanPersistPorts | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: edc989771b41cc4a5cc5b4710de4cbb5632873e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188184"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda określa, czy dostawca portu można utrwalić portów (zapisując je na dysku) między wywołań debugera.  
+Ta metoda określa, czy dostawca portu może utrzymywać porty (pisząc je na dysku) między wywołaniami debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,10 +38,10 @@ int CanPersistPorts();
  Brak.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- `S_OK` Jeśli porty mogą zostać utrwalone, lub `S_FALSE` do wskazania, czy porty nie może zostać utrwalona.  
+ `S_OK` Jeśli porty mogą być utrwalane lub `S_FALSE` wskazywać, że nie można utrwalić portów.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli dostawcy portu można utrwalić portów, należy to zrobić, kiedy niszczony jest i ponownie załadować, gdy zostanie uruchomiony ponownie.  
+ Jeśli dostawca portu może utrzymywać porty, należy to zrobić, gdy zostanie zniszczony, a następnie ponownie załaduj ponownie po utworzeniu wystąpienia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

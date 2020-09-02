@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName | Dokumentacja firmy Microsoft
+title: 'IDebugProgramNode2:: getprogramname | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c46cb55140159bff12d297adbc5c0346ffe0409
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148550"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
@@ -40,16 +40,16 @@ int GetProgramName ( 
   
 #### <a name="parameters"></a>Parametry  
  `pbstrProgramName`  
- [out] Zwraca nazwę programu.  
+ określoną Zwraca nazwę programu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Nazwa programu nie jest tak samo jak ścieżka do programu, mimo że nazwę programu, może być częścią znajdzie takiej ścieżki.  
+ Nazwa programu nie jest taka sama jak ścieżka do programu, chociaż nazwa programu może być częścią takiej ścieżki.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiekt, który implementuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu. `MakeBstr` Funkcja przydziela kopię określonego ciągu jako ciąg BSTR.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiektu, który implementuje interfejs [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) . `MakeBstr`Funkcja alokuje kopię określonego ciągu jako BSTR.  
   
 ```cpp#  
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    

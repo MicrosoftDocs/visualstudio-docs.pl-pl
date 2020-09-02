@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z usługi projektu SharePoint | Dokumentacja firmy Microsoft
+title: Korzystanie z usługi projektu SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,37 +14,37 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63007942"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Korzystanie z usługi projektu SharePoint
-  Systemu projektu programu SharePoint zawiera usługa projektu, która służy do wykonywania zadań związanych z system projektu. Usługa projektu jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektu.
+  System projektu programu SharePoint zawiera usługę projektu, której można użyć do wykonywania zadań związanych z systemem projektu. Usługa projektu jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> obiektem.
 
- Dostępne usługi projektu programu SharePoint w wszelkich rozszerzeń narzędzi programu SharePoint. Można także przejść w innych rodzajów rozszerzeń programu Visual Studio, takich jak dodatki i pakiety VSPackages. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).
+ Dostęp do usługi projektu SharePoint można uzyskać w dowolnym rozszerzeniu narzędzi programu SharePoint. Możesz również uzyskać do niego dostęp w innych typach rozszerzeń programu Visual Studio, takich jak dodatki i pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [How to: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).
 
 ## <a name="project-service-features"></a>Funkcje usługi projektu
- Poniższa tabela zawiera listę zadań, które można wykonać przy użyciu usługi projektu programu SharePoint i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> metody lub właściwości służące do wykonania poszczególnych zadań.
+ Poniższa tabela zawiera listę zadań, które można wykonać przy użyciu usługi projektu SharePoint oraz <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> metody lub właściwości, które mają być używane do wykonywania poszczególnych zadań.
 
-|Zadanie|Element członkowski do użycia|
+|Zadanie|Członek do użycia|
 |----------|-------------------|
-|Dostęp do każdego projektu programu SharePoint, która jest otwarta w programie Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A> Właściwość.|
-|Dostęp do wszystkich typów elementów projektu SharePoint, które są dostępne (w tym typów elementów projektu wbudowanych i niestandardowych).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A> Właściwość.|
-|Dostęp do wszystkich kroków wdrażania, które są dostępne dla projektów programu SharePoint (w tym kroki wdrażania wbudowanych i niestandardowych).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A> Właściwość.|
-|Zdarzenia dostępu, które są wywoływane, gdy deweloper refactors kodu w projekcie programu SharePoint.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A> Właściwość.|
-|Wykonywanie niestandardowej *polecenia SharePoint* wywołująca w modelu obiektów serwera SharePoint. Aby uzyskać więcej informacji na temat poleceń programu SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> Właściwość.|
-|Konwertowanie typu w systemie projektu programu SharePoint do typu w modelu obiektu automatyzacji programu Visual Studio lub model obiektów integracji i na odwrót. Aby uzyskać więcej informacji, zobacz [konwersji między typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> Metoda.|
-|Zapisywanie komunikatów **dane wyjściowe** okna lub **lista błędów** okna w programie Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A> Właściwość.|
-|Dostęp do innych usług, które są dostępne w programie Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A> Właściwość.|
-|Pobierz ścieżkę do folderu instalacji lokalnej witryny programu SharePoint, która jest używana do debugowania rozwiązania.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A> Właściwość.|
-|Określić, czy [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] lub [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] jest zainstalowany na komputerze.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A> Właściwość.|
-|Sprawdź poprawność funkcji lub pakietu w rozwiązaniu programu SharePoint.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A> Właściwość.|
+|Uzyskaj dostęp do dowolnego projektu programu SharePoint, który jest otwarty w programie Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A> wartość.|
+|Dostęp do wszystkich dostępnych typów elementów projektu programu SharePoint (w tym wbudowanych i niestandardowych typów elementów projektu).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A> wartość.|
+|Uzyskaj dostęp do wszystkich kroków wdrożenia dostępnych dla projektów programu SharePoint (w tym wbudowanych i niestandardowych kroków wdrażania).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A> wartość.|
+|Zdarzenia dostępu, które są zgłaszane, gdy kod refaktoryzacji dewelopera w projekcie programu SharePoint.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A> wartość.|
+|Wykonaj niestandardowe *polecenie programu SharePoint* , które wywołuje model obiektów programu SharePoint Server. Aby uzyskać więcej informacji na temat poleceń programu SharePoint, zobacz [wywołanie do modeli obiektów programu SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> wartość.|
+|Przekonwertuj typ w systemie projektu SharePoint na typ w modelu obiektów automatyzacji programu Visual Studio lub modelu obiektów integracji i odwrotnie. Aby uzyskać więcej informacji, zobacz [konwertowanie między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> Method.|
+|Napisz komunikaty do okna **danych wyjściowych** lub okna **Lista błędów** w programie Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A> wartość.|
+|Uzyskaj dostęp do innych usług, które są dostępne w programie Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A> wartość.|
+|Pobierz ścieżkę do folderu instalacji lokalnej witryny programu SharePoint, która jest używana do debugowania rozwiązania.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A> wartość.|
+|Ustal, [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] czy [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] na komputerze jest zainstalowany.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A> wartość.|
+|Sprawdź poprawność funkcji lub pakietu w rozwiązaniu programu SharePoint.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A> wartość.|
 
-## <a name="see-also"></a>Zobacz także
-- [Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
-- [Instrukcje: Pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
-- [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Instrukcje: Pobierz usługę z obiektu DTE](https://msdn.microsoft.com/library/bb166401.aspx)
+## <a name="see-also"></a>Zobacz też
+- [Konwersja między typami systemu projektu SharePoint a innymi typami projektów programu Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
+- [Instrukcje: pobieranie usługi projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Poszerzanie narzędzi programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Instrukcje: Uzyskiwanie usługi z obiektu DTE](https://msdn.microsoft.com/library/bb166401.aspx)

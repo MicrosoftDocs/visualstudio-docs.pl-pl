@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3 | Dokumenty firmy Microsoft
+title: IDebugBinder3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa85872337fdc1f7519d0de98cffe1436ef41c67
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735672"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ten interfejs zapewnia dostęp do typów, aliasów i usług wizualizatora niestandardowego.
+ Ten interfejs zapewnia dostęp do typów, aliasów i usług niestandardowego wizualizatora.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,26 +35,26 @@ IDebugBinder3 : IDebugBinder
  Aparat debugowania implementuje ten interfejs do obsługi aliasów, niestandardowych usług wizualizatora i dostępu do informacji o typie obiektu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Interfejs [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) uzyskuje ten interfejs przy użyciu [QueryInterface](/cpp/atl/queryinterface).
+ Interfejs [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) uzyskuje ten interfejs przy użyciu [polecenia QueryInterface](/cpp/atl/queryinterface).
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- Oprócz metod dostarczonych przez interfejs [IDebugBinder,](../../../extensibility/debugger/reference/idebugbinder.md) ten interfejs implementuje następujące czynności:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ Oprócz metod dostarczonych przez interfejs [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) , ten interfejs implementuje następujące elementy:
 
 |Metoda|Opis|
 |------------|-----------------|
 |[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Pobiera obiekt pamięci reprezentujący pamięć, z którą jest powiązany ten obiekt.|
 |[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Pobiera wyjątek skojarzony z tym obiektem (jeśli istnieje),|
-|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Pobiera alias o swojej nazwie,|
+|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Pobiera alias o nazwie,|
 |[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Pobiera tablicę wszystkich aliasów dla tego obiektu,|
 |[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Pobiera liczbę typów argumentów skojarzonych z tym obiektem,|
 |[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Pobiera listę typów argumentów skojarzonych z tym obiektem,|
 |[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Pobiera interfejs do usługi wizualizatora,|
-|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konwertuje lokalizację obiektu lub 64-bitowy adres pamięci do kontekstu pamięci.|
+|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konwertuje lokalizację obiektu lub adres pamięci 64-bitowej na kontekst pamięci.|
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: ee.h
+ Nagłówek: EE. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

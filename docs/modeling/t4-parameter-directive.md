@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591804"
 ---
 # <a name="t4-parameter-directive"></a>Dyrektywa T4 dotycząca parametru
 
-W szablonie tekstu programu Visual Studio dyrektywa `parameter` deklaruje właściwości w kodzie szablonu, które są inicjowane z wartości przekazywania z zewnętrznego kontekstu. Możesz ustawić te wartości, jeśli piszesz kod, który wywołuje transformację tekstu.
+W szablonie tekstu programu Visual Studio `parameter` dyrektywa deklaruje właściwości w kodzie szablonu, które są inicjowane z wartości przekazywania z zewnętrznego kontekstu. Możesz ustawić te wartości, jeśli piszesz kod, który wywołuje transformację tekstu.
 
 ## <a name="using-the-parameter-directive"></a>Używanie dyrektywy Parameter
 
@@ -24,9 +24,9 @@ W szablonie tekstu programu Visual Studio dyrektywa `parameter` deklaruje właś
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- Dyrektywa `parameter` deklaruje właściwości w kodzie szablonu, które są inicjowane z wartości przekazywania z zewnętrznego kontekstu. Możesz ustawić te wartości, jeśli piszesz kod, który wywołuje transformację tekstu. Wartości mogą być przesyłane w słowniku `Session` lub w <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ `parameter`Dyrektywa deklaruje właściwości w kodzie szablonu, które są inicjowane z wartości przekazywania z zewnętrznego kontekstu. Możesz ustawić te wartości, jeśli piszesz kod, który wywołuje transformację tekstu. Wartości mogą być przesyłane w `Session` słowniku lub w <xref:System.Runtime.Remoting.Messaging.CallContext> .
 
- Można zadeklarować parametry dowolnego typu zdalnego. Oznacza to, że typ musi być zadeklarowany za pomocą <xref:System.SerializableAttribute>lub musi pochodzić od <xref:System.MarshalByRefObject>. Pozwala to na przekazywanie wartości parametrów do domeny AppDomain, w której szablon jest przetwarzany.
+ Można zadeklarować parametry dowolnego typu zdalnego. Oznacza to, że typ musi być zadeklarowany z <xref:System.SerializableAttribute> lub musi pochodzić od <xref:System.MarshalByRefObject> . Pozwala to na przekazywanie wartości parametrów do domeny AppDomain, w której szablon jest przetwarzany.
 
  Można na przykład napisać szablon tekstowy z następującą zawartością:
 
@@ -59,7 +59,7 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 ```
 
 ## <a name="passing-values-in-the-call-context"></a>Przekazywanie wartości w kontekście wywołania
- Możesz Alternatywnie przekazać wartości jako dane logiczne w <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ Możesz Alternatywnie przekazać wartości jako dane logiczne w <xref:System.Runtime.Remoting.Messaging.CallContext> .
 
  Poniższy przykład przekazuje wartości przy użyciu obu metod:
 
@@ -83,9 +83,9 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Przekazywanie wartości do szablonu tekstu czasu wykonywania (wstępnie przetworzonym)
- Nie jest zazwyczaj konieczne używanie dyrektywy `<#@parameter#>` z szablonami tekstu czasu wykonywania (wstępnie przetworzonym). Zamiast tego można zdefiniować dodatkowy Konstruktor lub właściwość settable dla wygenerowanego kodu, za pomocą którego są przekazywane wartości parametrów. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Nie jest zazwyczaj konieczne używanie `<#@parameter#>` dyrektywy z szablonami tekstu czasu wykonywania (wstępnie przetworzonym). Zamiast tego można zdefiniować dodatkowy Konstruktor lub właściwość settable dla wygenerowanego kodu, za pomocą którego są przekazywane wartości parametrów. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Jeśli jednak chcesz użyć `<#@parameter>` w szablonie czasu wykonywania, możesz przekazać do niego wartości przy użyciu słownika sesji. Załóżmy na przykład, że plik został utworzony jako wstępnie przetworzony szablon o nazwie `PreTextTemplate1`. Możesz wywołać szablon w programie przy użyciu następującego kodu.
+ Jeśli jednak chcesz użyć `<#@parameter>` w szablonie czasu wykonywania, możesz przekazać do niego wartości przy użyciu słownika sesji. Załóżmy na przykład, że plik został utworzony jako wstępnie przetworzony szablon o nazwie `PreTextTemplate1` . Możesz wywołać szablon w programie przy użyciu następującego kodu.
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -96,7 +96,7 @@ t.Initialize(); // Must call this to transfer values.
 string resultText = t.TransformText();
 ```
 
-## <a name="obtaining-arguments-from-texttemplateexe"></a>Uzyskiwanie argumentów z texttemplate. exe
+## <a name="obtaining-arguments-from-texttemplateexe"></a>Uzyskiwanie argumentów z TextTemplate.exe
 
 > [!IMPORTANT]
-> Dyrektywa `parameter` nie pobiera wartości ustawionych w parametrze `-a` narzędzia `TextTransform.exe`. Aby uzyskać te wartości, ustaw `hostSpecific="true"` w dyrektywie `template` i użyj `this.Host.ResolveParameterValue("","","argName")`.
+> `parameter`Dyrektywa nie pobiera wartości ustawionych w `-a` parametrze `TextTransform.exe` Narzędzia. Aby uzyskać te wartości, ustaw `hostSpecific="true"` w `template` dyrektywie i Użyj `this.Host.ResolveParameterValue("","","argName")` .

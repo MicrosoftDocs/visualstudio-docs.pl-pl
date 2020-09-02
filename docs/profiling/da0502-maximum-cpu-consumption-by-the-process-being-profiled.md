@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a2555344b402513bdea7795e2e71fde1683b08d1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544563"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: maksymalne użycie procesora CPU przez profilowany proces
@@ -26,7 +26,7 @@ ms.locfileid: "85544563"
 |-|-|
 |Identyfikator reguły|DA0502|
 |Kategoria|Monitorowanie zasobów|
-|Metoda profilowania|Wszystkie|
+|Metoda profilowania|Wszystko|
 |Komunikat|Ta reguła służy tylko do celów informacyjnych. \\Licznik czas procesora (%) mierzy użycie procesora przez proces profilowania. Raportowana wartość jest maksimum zaobserwowane we wszystkich interwałach pomiarowych.|
 |Typ reguły|Informacyjne|
 

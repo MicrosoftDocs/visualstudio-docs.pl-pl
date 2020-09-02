@@ -11,10 +11,10 @@ ms.author: ghogen
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 998103828d20827e8a1d99e0cc34d7f9beb6bd7c
-ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87401036"
 ---
 # <a name="solution-filters-in-msbuild"></a>Filtry rozwiązań w programie MSBuild
@@ -77,7 +77,7 @@ Oto plik filtru rozwiązania generowany przez program Visual Studio:
 
 W tym przykładzie podczas kompilowania z włączonym filtrowaniem (przy użyciu polecenia `MSBuild [options] MyFilter.slnf` ) MSBuild kompiluje aplikacje i projekt, ponieważ są one jawnie wymienione w pliku filtru rozwiązania. W ramach kompilowania projektu, MSBuild kompiluje ClassLibrary1, ponieważ zależy od niego projekt.  ProjectB nie jest skompilowany. (W tej dyskusji założono czystą kompilację. Jeśli projekty zostały skompilowane wcześniej, zazwyczaj reguły dotyczą pomijania projektów, które są już aktualne.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązania filtrowane](../ide/filtered-solutions.md)
 - [Dokumentacja wiersza polecenia programu MSBuild](msbuild-command-line-reference.md)

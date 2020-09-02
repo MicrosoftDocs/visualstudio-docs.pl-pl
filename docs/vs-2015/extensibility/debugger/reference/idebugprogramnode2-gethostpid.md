@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostPid | Dokumentacja firmy Microsoft
+title: 'IDebugProgramNode2:: GetHostPid | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 38b2889689f45127e507147da0d5488e9e4a8f9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148579"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera identyfikator procesu systemu dla procesu hostingu programu.  
+Pobiera identyfikator procesu systemowego dla procesu, który hostuje program.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int GetHostPid ( 
   
 #### <a name="parameters"></a>Parametry  
  `pdwHostPid`  
- [out] Zwraca identyfikator procesu systemu dla procesu hostingu.  
+ określoną Zwraca identyfikator procesu systemowego dla procesu hostingu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiekt, który implementuje [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiektu, który implementuje interfejs [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .  
   
 ```cpp#  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    

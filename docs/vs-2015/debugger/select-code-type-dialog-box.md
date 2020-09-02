@@ -1,5 +1,5 @@
 ---
-title: Wybieranie typu kodu — okno dialogowe | Dokumentacja firmy Microsoft
+title: Okno dialogowe Wybieranie typu kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,23 +26,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 21e678df1fa3dc9ca237e9a8cb4e377fb27b0aaf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148140"
 ---
 # <a name="select-code-type-dialog-box"></a>Wybór typu kodu — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby otworzyć to okno dialogowe, otwórz **dołączyć do procesu** okno dialogowe, a następnie kliknij przycisk **wybierz** przycisku.  
+Aby otworzyć to okno dialogowe, Otwórz okno dialogowe **Dołącz do procesu** , a następnie kliknij przycisk **Wybierz** .  
   
  **Automatycznie Określ typ kodu do debugowania**  
- Odpowiednie debugera zostanie wybrany oparte na rodzaju kodu, który jest uruchomiony.  
+ Odpowiedni debuger zostanie wybrany na podstawie rodzaju kodu, który jest uruchomiony.  
   
- **Debugowania tych typów kodu:**  
- Z listy wybierz typ kodu, nad którym chcesz debugować.  
+ **Debuguj te typy kodu:**  
+ Z podanej listy wybierz typ kodu, który chcesz debugować.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+ [Dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

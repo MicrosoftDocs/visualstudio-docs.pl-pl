@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2::GetDocumentContext | Dokumentacja firmy Microsoft
+title: 'IDebugActivateDocumentEvent2:: GetDocumentContext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 855ff83786a02632304ed397ab8d2844c186bded
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160118"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera kontekst dokumentu, który opisuje pozycji w dokumencie, który ma być przeprowadzone przy użyciu pakietu debugowania aktywnego.  
+Pobiera kontekst dokumentu opisujący położenie w dokumencie, który ma zostać uaktywniony przez pakiet debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetDocumentContext ( 
   
 #### <a name="parameters"></a>Parametry  
  `ppDocContext`  
- [out] Zwraca [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekt, który reprezentuje pozycji w dokumencie pliku źródłowym.  
+ określoną Zwraca obiekt [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) , który reprezentuje pozycję w dokumencie pliku źródłowego.  
   
 ## <a name="remarks"></a>Uwagi  
- Aby wyświetlić daszek, na przykład, mogą być używane tej pozycji.  
+ Ta pozycja może być używana do wyświetlania karetki, na przykład.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   

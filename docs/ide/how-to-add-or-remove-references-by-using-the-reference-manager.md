@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
-ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87390265"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
@@ -114,7 +114,7 @@ Należy unikać dodawania odwołań do plików do danych wyjściowych innego pro
 
   - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć za pomocą karty **projekty** ).
 
-  \-oraz
+  \- oraz
 
 - Ustaw klucz rejestru określający lokalizację zestawów do wyświetlenia:
 
@@ -212,6 +212,6 @@ W przypadku odwoływania się do pliku winmd, oczekiwany układ polega na tym, �
 
 Pasek wyszukiwania w oknie dialogowym Menedżer odwołań działa nad kartą, na której się skupia. Na przykład, jeśli użytkownik wpisze na pasku wyszukiwania przycisk "system", podczas gdy karta **rozwiązanie** jest fokusem, wyszukiwanie nie zwróci żadnych wyników, chyba że rozwiązanie składa się z nazwy projektu zawierającej "system".
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)

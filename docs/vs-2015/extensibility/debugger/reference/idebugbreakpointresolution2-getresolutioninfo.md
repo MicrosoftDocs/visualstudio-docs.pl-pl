@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo | Dokumentacja firmy Microsoft
+title: 'IDebugBreakpointResolution2:: GetResolutionInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 03cdeb1539fc9811a1692a1f7a768da0114a90c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160094"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera informacje o rozdzielczości punkt przerwania, opisujący tego punktu przerwania.  
+Pobiera informacje o rozdzielczości punktu przerwania, które opisują ten punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,16 +42,16 @@ int GetResolutionInfo( 
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Kombinacja flag z [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) wyliczenie, które określają, które pola `pBPResolutionInfo` parametru są do wypełniania.  
+ podczas Kombinacja flag z wyliczenia [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) , która określa, które pola `pBPResolutionInfo` parametru mają zostać wypełnione.  
   
  `pBPResolutionInfo`  
- [out] [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury w celu wprowadzenia informacji na temat tego punktu przerwania.  
+ określoną Struktura [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) , która ma zostać wypełniona informacjami o tym punkcie przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład implementuje tej metody dla prostego `CDebugBreakpointResolution` obiekt ujawniający [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejsu.  
+ Poniższy przykład implementuje tę metodę dla prostego `CDebugBreakpointResolution` obiektu, który uwidacznia Interfejs [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(  

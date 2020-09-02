@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::RemoveProgramNode | Dokumentacja firmy Microsoft
+title: 'IDebugPortNotify2:: RemoveProgramNode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc4ac539fdf0a5b27f8e9eb94e7644fa44070b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188413"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Wyrejestrowuje program, który może być debugowany z portu, na którym jest uruchomiona na.  
+Wyrejestrowuje program, który może być debugowany z portu, w którym jest uruchomiony.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int RemoveProgramNode( 
   
 #### <a name="parameters"></a>Parametry  
  `pProgramNode`  
- [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objecy, który reprezentuje program do wyrejestrowania.  
+ podczas [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objecy, który reprezentuje program do wyrejestrowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda usuwa węzła program, który został dodany z wywołaniem [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metody.  
+ Ta metoda usuwa węzeł programu, który został dodany z wywołaniem metody [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   

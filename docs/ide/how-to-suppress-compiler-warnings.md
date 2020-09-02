@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283960"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Instrukcje: pomijanie ostrzeżeń kompilatora
@@ -87,7 +87,7 @@ Ten przykład pokazuje, jak edytować plik *. vbproj* , aby pominąć określone
     ```
 
    > [!NOTE]
-   > Projekty .NET Core nie zawierają domyślnie grup właściwości konfiguracji kompilacji. Aby pominąć ostrzeżenia w projekcie .NET Core, należy ręcznie dodać sekcję Konfiguracja kompilacji do pliku. Przykład:
+   > Projekty .NET Core nie zawierają domyślnie grup właściwości konfiguracji kompilacji. Aby pominąć ostrzeżenia w projekcie .NET Core, należy ręcznie dodać sekcję Konfiguracja kompilacji do pliku. Na przykład:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">

@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235085"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools for Unity)
@@ -170,6 +170,6 @@ Spróbuj uaktualnić program Visual Studio 2015 do wersji Update 3.
 
 Na koniec Wyślij zrzut wątku do programu [vstusp@microsoft.com](mailto:vstusp@microsoft.com) wraz z opisem tego, co zostało wykonywane, gdy program Visual Studio został zablokowany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązywanie problemów z programem Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

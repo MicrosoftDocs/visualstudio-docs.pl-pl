@@ -1,5 +1,5 @@
 ---
-title: rozpiętość::konstruktor zakresu | Dokumenty firmy Microsoft
+title: 'span:: span — Konstruktor | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979825"
 ---
 # <a name="spanspan-constructor"></a>span::span — Konstruktor
@@ -54,20 +54,20 @@ span(
 
 #### <a name="parameters"></a>Parametry
 
-`_Series`Prawidłowy kontekst serii znaczników.
+`_Series` Prawidłowy kontekst serii znaczników.
 
-`_Format`Ciąg formatu złożonego, który zawiera tekst połączony z elementami formatu zero lub więcej, które odpowiadają obiektom na liście argumentów.
+`_Format` Ciąg formatu złożonego, który zawiera tekst, który jest przemieszany z zerem lub więcej elementów formatu, który odpowiada obiektom na liście argumentów.
 
-`_Importance`Poziom ważności.
+`_Importance` Poziom ważności.
 
-`_Category`Kategorii.
+`_Category` Kategorii.
 
 ## <a name="requirements"></a>Wymagania
 
-**Nagłówek:** *cvmarkersobj.h*
+**Nagłówek:** *cvmarkersobj. h*
 
-**Obszar nazw:** Współbieżność::dignostyk
+**Przestrzeń nazw:** Współbieżność::d przesła
 
 ## <a name="see-also"></a>Zobacz też
 
-- [klasa span](../profiling/span-class.md)
+- [span, klasa](../profiling/span-class.md)

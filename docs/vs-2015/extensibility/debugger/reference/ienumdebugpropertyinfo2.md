@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2 | Dokumentacja firmy Microsoft
+title: IEnumDebugPropertyInfo2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ee305083957f6d2f2ada09aec1747497fcf6db68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147828"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs wylicza [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury.  
+Ten interfejs wylicza [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktur.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,29 +31,29 @@ IEnumDebugPropertyInfo2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Aparat debugowania (DE) implementuje ten interfejs do przedstawiania informacji dla określonej właściwości.  
+ Aparat debugowania (DE) implementuje ten interfejs, aby reprezentować informacje dla konkretnej właściwości.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołaj [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) uzyskać ten interfejs reprezentujący element podrzędny elementu określonej właściwości. Wywołaj [enumproperties —](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) uzyskać ten interfejs reprezentujący właściwości ramki określonego stosu.  
+ Wywołaj [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) , aby uzyskać ten interfejs reprezentujący elementy podrzędne określonej właściwości. Wywołaj [EnumProperties —](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) , aby uzyskać ten interfejs reprezentujący właściwości określonej ramki stosu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IEnumDebugPropertyInfo2`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metody `IEnumDebugPropertyInfo2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Next](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Pobiera określoną liczbę [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktur w kolejności wyliczenia.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Pomija określoną liczbę [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktur w kolejności wyliczenia.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Pobiera liczbę [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury w moduł wyliczający.|  
+|[Dalej](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Pobiera określoną liczbę struktur [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) w sekwencji wyliczenia.|  
+|[Pomiń](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Pomija określoną liczbę struktur [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) w sekwencji wyliczenia.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Resetuje sekwencję wyliczenia na początek.|  
+|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczania co bieżący moduł wyliczający.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Pobiera liczbę struktur [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) w module wyliczającym.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ogólnie rzecz biorąc właściwość jest hierarchią informacje, które mogą obejmować nazwę, wartość, adresu i typ, a także inne informacje odpowiednie dla skojarzonej właściwości obiektu lub stosu ramki. Zobacz [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Aby uzyskać więcej informacji.  
+ Ogólnie rzecz biorąc właściwość jest hierarchią informacji, które mogą zawierać nazwę, wartość, adres i typ, a także inne informacje odpowiednie do obiektu właściwości skojarzonego lub ramki stosu. Aby uzyskać więcej informacji, zobacz [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

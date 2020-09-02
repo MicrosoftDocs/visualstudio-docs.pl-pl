@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41c3fd765977a1f92f5cf125bb64bb7f5b0cd2cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664299"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Skróty klawiaturowe w programie Blend
@@ -26,8 +26,8 @@ Skróty projektu
 |Tworzenie nowego projektu|CTRL + SHIFT + N|
 |Otwórz projekt lub rozwiązanie (nie lokację)|CTRL + SHIFT + O|
 |Zamknij rozwiązanie|CTRL + SHIFT + C|
-|Zapisz kopię rozwiązania lub lokacji|CTRL + SHIFT + P|
-|Dodaj istniejący element do projektu|CTRL + I|
+|Zapisz kopię rozwiązania lub lokacji|CTRL+SHIFT+P|
+|Dodaj istniejący element do projektu|CTRL+I|
 |Dodawanie odwołania do biblioteki DLL (WPF)|ALT + SHIFT + R|
 |Kompilowanie projektu|CTRL + SHIFT + B|
 |Testowanie projektu lub witryny|F5|
@@ -39,23 +39,23 @@ Skróty projektu
 |Przełączanie między otwartymi dokumentami|CTRL + TAB|
 |Zapisz aktywny dokument|CTRL+S|
 |Zapisz wszystkie dokumenty|CTRL + SHIFT + S|
-|Zamknij aktywny dokument|CTRL + W|
+|Zamknij aktywny dokument|CTRL+W|
 |Zamknij wszystkie otwarte dokumenty|CTRL + SHIFT + W|
-|Cofnij ostatnią akcję|CTRL + Z|
+|Cofnij ostatnią akcję|CTRL+Z|
 |Wykonaj ponownie ostatnią cofniętą akcję|CTRL + Y lub CTRL + SHIFT + Z|
 |Tworzenie adnotacji w czasie projektowania|CTRL + SHIFT + T|
 |Wytnij|CTRL+X|
 |Kopiuj|CTRL+C|
 |Wklej|CTRL+V|
-|Usuwanie|DELETE|
-|Znajdź tekst (tylko widok XAML lub Edytor JavaScript)|CTRL + F|
+|Usuń|DELETE|
+|Znajdź tekst (tylko widok XAML lub Edytor JavaScript)|CTRL+F|
 |Znajdź następne wystąpienie tekstu (tylko widok XAML lub Edytor JavaScript)|F3 lub CTRL + H|
 
 ## <a name="object-shortcuts"></a>Skróty do obiektów
 
 |Wymagana czynność|Zrób to|
 |----------------|-------------|
-|Utwórz nowy element|CTRL + N|
+|Utwórz nowy element|CTRL+N|
 |Duplikowanie obiektu|Przytrzymaj klawisz ALT i przeciągnij obiekt|
 |Zmień element nadrzędny obiektu|Przeciągnij obiekt na panel układu i naciśnij klawisz ALT.|
 |Edytowanie tekstu w kontrolce|F2 (ESC, aby wyjść)|
@@ -68,7 +68,7 @@ Skróty projektu
 |Zaznacz wiele obiektów|Przytrzymaj klawisz CTRL|
 |Zaznacz wiele sąsiadujących obiektów|Przytrzymaj klawisz SHIFT|
 |Dopasuj zaznaczenie do rozmiaru ekranu|CTRL + 9|
-|Przypnij aktywny kontener|CTRL + SHIFT + D|
+|Przypnij aktywny kontener|CTRL+SHIFT+D|
 |Posuń zaznaczone obiekty|Klawisze strzałek|
 |Dopasuj szerokość do rozmiaru|CTRL + SHIFT + 5|
 |Dopasuj wysokość do rozmiaru|CTRL + SHIFT + 6|
@@ -85,10 +85,10 @@ Skróty projektu
 |Zwolnij ścieżkę przycinającą|CTRL + SHIFT + 7|
 |Utwórz ścieżkę złożoną|CTRL + 8|
 |Zwolnij ścieżkę złożoną|CTRL + SHIFT + 8|
-|Zablokuj zaznaczenie|CTRL + L|
-|Odblokuj wszystkie obiekty|CTRL + SHIFT + L|
-|Pokaż zaznaczenie|CTRL + T|
-|Ukryj zaznaczenie|CTRL + 3|
+|Zablokuj zaznaczenie|CTRL+L|
+|Odblokuj wszystkie obiekty|CTRL+SHIFT+L|
+|Pokaż zaznaczenie|CTRL+T|
+|Ukryj zaznaczenie|CTRL+3|
 |Zaznacz wszystkie obiekty|CTRL + A|
 |Wyczyść zaznaczenie wszystkich obiektów|CTRL + SHIFT + A|
 
@@ -96,17 +96,17 @@ Skróty projektu
 
 |Wymagana czynność|Zrób to|
 |----------------|-------------|
-|Przełączanie między widokami **projektu**, **kodu**i **dzielenia**|ALT+F11|
+|Przełączanie między widokami **projektu**, **kodu**i **dzielenia**|F11|
 |Powiększ w obszarze kompozycji|CTRL + ZNAK RÓWNOŚCI|
 |Pomniejsz w obszarze kompozycji|CTRL + ZNAK MINUS (-)|
 |Powiększ lub Pomniejsz w obszarze kompozycji|Obróć kółko myszy|
 |Przenoszenie obszaru roboczego w lewo lub w prawo|PRZESUWAnie i obracanie kółka myszy|
 |Przenoszenie obszaru kompozycji w górę lub w dół|CTRL i obracanie kółka myszy|
 |Dopasuj zaznaczenie do rozmiaru ekranu|CTRL + 0|
-|Wyświetl obszar kompozycji w rzeczywistym rozmiarze|CTRL + 1|
+|Wyświetl obszar kompozycji w rzeczywistym rozmiarze|CTRL+1|
 |Pokaż lub Ukryj uchwyty|F9|
 |Pokaż lub Ukryj granice obiektów|CTRL + SHIFT + H|
-|Przełączanie między widokami **projektu**, **XAML**i **Split**|ALT+F11|
+|Przełączanie między widokami **projektu**, **XAML**i **Split**|F11|
 
 ## <a name="workspace-shortcuts"></a>Skróty obszaru roboczego
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21c94cc7ab97070b138cbae108c617094faf09b5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382214"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Instrukcje: publikowanie aplikacji WPF z włączonymi stylami wizualizacji
@@ -119,7 +119,7 @@ Style wizualne umożliwiają zmianę wyglądu wspólnych kontrolek w zależnośc
    > - Rozwiązanie znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\` .
    >
    > - Rozwiązanie jest publikowane w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` .
-   > - Najnowsza wersja opublikowanych plików aplikacji znajduje się w następującym katalogu:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
+   > - Najnowsza wersja opublikowanych plików aplikacji znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
    >
    > Nie trzeba używać nazwy ani lokalizacji katalogów opisanych powyżej. Nazwy i lokalizacje opisane powyżej są używane tylko w celu zilustrowania kroków wymaganych do opublikowania rozwiązania.
 

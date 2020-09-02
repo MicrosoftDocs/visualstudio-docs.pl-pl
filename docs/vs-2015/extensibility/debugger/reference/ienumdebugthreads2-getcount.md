@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2::GetCount | Dokumentacja firmy Microsoft
+title: 'IEnumDebugThreads2:: GetCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1ffe42c0faf764fb54bfc2cdec9970f48c6440c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147784"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
@@ -40,13 +40,13 @@ int GetCount(
   
 #### <a name="parameters"></a>Parametry  
  `pcelt`  
- [out] Zwraca liczbę elementów w wyliczeniu.  
+ określoną Zwraca liczbę elementów w wyliczeniu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda nie jest częścią zwyczajowego interfejs wyliczanie modelu COM, który określa, że tylko `Next`, `Clone`, `Skip`, i `Reset` metod, które muszą zostać zaimplementowane.  
+ Ta metoda nie jest częścią niestandardowego interfejsu wyliczenia modelu COM, który określa, że należy `Next` `Clone` zaimplementować tylko metody,, `Skip` i `Reset` .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

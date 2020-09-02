@@ -10,20 +10,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591791"
 ---
 # <a name="text-template-control-blocks"></a>Bloki formantów szablonów tekstowych
 Bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu zróżnicowania danych wyjściowych. Istnieją trzy rodzaje bloków sterowania, które są rozróżniane przez ich nawiasy otwierające:
 
-- `<# Standard control blocks #>` może zawierać instrukcji.
+- `<# Standard control blocks #>` może zawierać instrukcje.
 
 - `<#= Expression control blocks #>` może zawierać wyrażenia.
 
-- `<#+ Class feature control blocks #>` mogą zawierać metody, pola i właściwości.
+- `<#+ Class feature control blocks #>` może zawierać metody, pola i właściwości.
 
 ## <a name="standard-control-block"></a>Standardowy blok kontrolny
  Standardowe bloki sterujące zawierają instrukcje. Na przykład następujący blok standardowy pobiera nazwy wszystkich atrybutów w dokumencie XML:
@@ -47,7 +47,7 @@ Bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu zróżn
 #>
 ```
 
- Możesz osadzić zwykły tekst wewnątrz instrukcji złożonej, takiej jak `if` lub `for`. Na przykład ten fragment generuje linię wyjściową w każdej iteracji pętli:
+ Możesz osadzić zwykły tekst wewnątrz instrukcji złożonej, takiej jak `if` lub `for` . Na przykład ten fragment generuje linię wyjściową w każdej iteracji pętli:
 
 ```
 <#
@@ -115,7 +115,7 @@ Some text.
 ```
 
 > [!NOTE]
-> Po bloku sterowania funkcją klasy nie mogą następować standardowe bloki kontrolne w tym samym pliku szablonu. Jednak to ograniczenie nie ma zastosowania do wyniku stosowania dyrektyw `<#@include#>`. Każdy dołączony plik może mieć bloki standardowe, a następnie bloki funkcji klasy.
+> Po bloku sterowania funkcją klasy nie mogą następować standardowe bloki kontrolne w tym samym pliku szablonu. Jednak to ograniczenie nie dotyczy wyniku stosowania `<#@include#>` dyrektyw. Każdy dołączony plik może mieć bloki standardowe, a następnie bloki funkcji klasy.
 
  Można utworzyć funkcję, która generuje dane wyjściowe przez osadzenie bloków tekstowych i wyrażeń wewnątrz bloku sterowania funkcją klasy. Na przykład:
 
@@ -141,15 +141,15 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Jak używać bloków sterowania
- Cały kod we wszystkich blokach formantów standardowych i wyrażeń w pojedynczym szablonie (w tym cały kod w dołączonych szablonach) jest połączony, aby utworzyć metodę `TransformText()` wygenerowanego kodu. (Aby uzyskać więcej informacji na temat dołączania innych szablonów tekstowych do dyrektywy `include`, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md)).
+ Cały kod we wszystkich blokach standardowego i wyrażenia kontroli w pojedynczym szablonie (w tym cały kod w dołączonych szablonach) jest połączony z formularzem `TransformText()` metody wygenerowanego kodu. (Aby uzyskać więcej informacji na temat dołączania innych szablonów tekstowych do `include` dyrektywy, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md)).
 
  Podczas używania bloków sterowania należy pamiętać o następujących kwestiach:
 
-- **Język.** Możesz użyć kodu C# lub Visual Basic w szablonie tekstowym. Językiem domyślnym jest C#, ale można określić Visual Basic z parametrem `language` dyrektywy `template`. (Aby uzyskać więcej informacji na temat dyrektywy `template`, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md)).
+- **Językowe.** W szablonie tekstowym można użyć kodu w języku C# lub Visual Basic. Językiem domyślnym jest C#, ale można określić Visual Basic przy użyciu `language` parametru `template` dyrektywy. (Aby uzyskać więcej informacji na temat `template` dyrektywy, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md)).
 
-     Język używany w blokach kontroli nie ma nic robić z językiem lub formatem tekstu wygenerowanego w szablonie tekstowym. Można generować C# przy użyciu kodu Visual Basic lub odwrotnie.
+     Język używany w blokach kontroli nie ma nic robić z językiem lub formatem tekstu wygenerowanego w szablonie tekstowym. Można wygenerować C# przy użyciu kodu Visual Basic lub odwrotnie.
 
-     W danym szablonie tekstowym można używać tylko jednego języka, w tym wszystkich szablonów tekstowych zawartych w dyrektywie `include`.
+     W danym szablonie tekstowym można używać tylko jednego języka, w tym wszystkich szablonów tekstowych zawartych w `include` dyrektywie.
 
 - **Zmienne lokalne.** Ponieważ cały kod w blokach Standard i Expression Control w szablonie tekstowym jest generowany jako pojedyncza Metoda, należy upewnić się, że nie występują żadne konflikty z nazwami zmiennych lokalnych. W przypadku dołączania innych szablonów tekstu należy się upewnić, że nazwy zmiennych są unikatowe we wszystkich dołączonych szablonach. Jednym ze sposobów upewnienia się, że jest dodanie ciągu do każdej nazwy zmiennej lokalnej identyfikującej szablon tekstu, w którym został zadeklarowany.
 
@@ -167,4 +167,4 @@ Some text.
     <# } #>
     ```
 
-- **Refaktoryzacji.** Aby zachować czytelność szablonów tekstu i ułatwić ich zrozumienie, zdecydowanie zaleca się uniknięcie powtarzania kodu za pomocą refaktoryzacji kodu wielokrotnego użytku do funkcji pomocnika w blokach funkcji klasy lub przez utworzenie własnej klasy szablonu tekstu, która dziedziczy z klasy Microsoft. VisualStudio. TextTemplating. TextTransformation.
+- **Refaktoryzacji.** Aby zachować czytelność szablonów tekstu i ułatwić ich zrozumienie, zdecydowanie zalecamy uniknięcie powtarzania kodu przez umieszczenie kodu wielokrotnego użytku w funkcjach pomocniczych w blokach funkcji klasy lub przez utworzenie własnej klasy szablonu tekstu, która dziedziczy z klasy Microsoft. VisualStudio. TextTemplating. TextTransformation.

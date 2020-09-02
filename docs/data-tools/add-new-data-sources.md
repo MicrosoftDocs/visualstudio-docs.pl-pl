@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283050"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
@@ -63,7 +63,7 @@ Na poniższej ilustracji przedstawiono zestaw danych, który został porzucony w
 
 Można utworzyć zestaw danych lub model Entity Framework, który będzie używany jako źródło danych dla bazy danych lub pliku bazy danych.
 
-### <a name="dataset"></a>Dataset
+### <a name="dataset"></a>Zestaw danych
 
 Aby utworzyć zestaw danych jako źródło danych, uruchom **Kreatora konfiguracji źródła danych** , wybierając pozycję **projekt**  >  **Dodaj nowe źródło danych**. Wybierz typ **źródła danych,** a następnie postępuj zgodnie z monitami, aby określić nowe lub istniejące połączenie z bazą danych albo plik bazy danych.
 
