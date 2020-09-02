@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
-ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88041054"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globalny dostęp do obiektów w projektach pakietu Office
@@ -43,7 +43,7 @@ ms.locfileid: "88041054"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="how-to-use-the-globals-class"></a>Jak używać klasy Globals
- `Globals`jest klasą statyczną, która zachowuje odwołania do określonych elementów w projekcie. Korzystając z `Globals` klasy, można uzyskać dostęp do następujących elementów z dowolnego kodu w projekcie w czasie wykonywania:
+ `Globals` jest klasą statyczną, która zachowuje odwołania do określonych elementów w projekcie. Korzystając z `Globals` klasy, można uzyskać dostęp do następujących elementów z dowolnego kodu w projekcie w czasie wykonywania:
 
 - `ThisWorkbook`Klasy i `Sheet` *n* w skoroszycie programu Excel lub w projekcie szablonu. Dostęp do tych obiektów można uzyskać przy użyciu `Globals.ThisWorkbook` `Sheet` *n* właściwości i.
 
@@ -75,7 +75,7 @@ ms.locfileid: "88041054"
 > [!NOTE]
 > `Globals`Klasa nigdy nie została zainicjowana w czasie projektowania, ale instancje sterujące są tworzone przez projektanta. Oznacza to, że w przypadku utworzenia kontrolki użytkownika, która używa właściwości `Globals` klasy z wewnątrz klasy kontrolki użytkownika, należy sprawdzić, czy właściwość zwraca **wartość null** przed podjęciem próby użycia zwracanego obiektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Dostęp do regionu formularza w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)
 - [Elementy hosta i formanty hosta — Omówienie](../vsto/host-items-and-host-controls-overview.md)

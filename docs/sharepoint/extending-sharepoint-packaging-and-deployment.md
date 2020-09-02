@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie pakowania i wdrażania SharePoint | Dokumentacja firmy Microsoft
+title: Rozszerzanie pakowania i wdrażania programu SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,47 +13,47 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62967468"
 ---
-# <a name="extend-sharepoint-packaging-and-deployment"></a>Rozszerzanie pakowania i wdrażania SharePoint
-  Możesz rozszerzyć pakowania i proces wdrażania dla projektów programu SharePoint.
+# <a name="extend-sharepoint-packaging-and-deployment"></a>Rozszerzona pakowanie i wdrażanie programu SharePoint
+  Można rozłożyć proces tworzenia pakietów i wdrożeń dla projektów programu SharePoint.
 
-## <a name="create-deployment-steps"></a>Utwórz kroki związane z wdrażaniem
- Podczas wdrażania projektu programu SharePoint [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] wykonuje serię kroków wdrażania. Visual Studio zawiera kroki wdrażania wbudowanych w przypadku wielu zadań, takich jak wycofywanie i dodawanie rozwiązań. Jednak można również utworzyć własne kroki wdrażania.
+## <a name="create-deployment-steps"></a>Tworzenie kroków wdrożenia
+ Podczas wdrażania projektu programu SharePoint program [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] wykonuje serię kroków wdrożenia. Program Visual Studio zawiera wbudowane kroki wdrażania dla wielu zadań, takich jak wycofywanie i Dodawanie rozwiązań. Można jednak również utworzyć własne kroki wdrażania.
 
- Aby wskazówki, który demonstruje, jak utworzyć kroku wdrożenia, zobacz [instruktażu: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+ Aby zapoznać się z przewodnikiem, który ilustruje sposób tworzenia kroku wdrożenia, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="create-deployment-configurations"></a>Tworzenie konfiguracji wdrożenia
- Konfiguracja wdrożenia jest zestaw kroków wdrażania, który jest wykonywany dla danego projektu, ale mogą mieć wpływ na wszystkich elementów projektu programu SharePoint. Każdej konfiguracji wdrożenia zawiera jeden zestaw kroków wykonanych podczas wdrażania projektu, a kolejny zestaw, który jest wykonywany, gdy projekt jest wycofana. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] obejmuje dwie konfiguracje wdrożenia wbudowanych, ale można także tworzyć własne. Podczas tworzenia konfiguracji wdrożenia może zawierać kroki wdrażania wbudowanych i kroków wdrażania, które tworzysz.
+ Konfiguracja wdrożenia to zestaw kroków wdrażania, które są wykonywane dla danego projektu, ale mogą mieć wpływ na wszystkie elementy projektu programu SharePoint. Każda konfiguracja wdrożenia obejmuje jeden zestaw kroków wykonywanych podczas wdrażania projektu oraz inny zestaw, który jest wykonywany podczas wycofywania projektu. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] obejmuje dwie wbudowane konfiguracje wdrażania, ale można również utworzyć własne. Podczas tworzenia konfiguracji wdrożenia można uwzględnić wbudowane kroki wdrażania i etapy wdrażania.
 
- Aby wskazówki, który demonstruje, jak utworzyć konfigurację wdrożenia, zobacz [instruktażu: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+ Aby zapoznać się z przewodnikiem, który pokazuje, jak utworzyć konfigurację wdrożenia, zobacz [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
-## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Uruchamianie kodu, gdy rozwiązania programu SharePoint jest wdrożony lub wycofany
- Możesz obsłużyć zdarzenia na wykonywanie dodatkowych zadań, gdy rozwiązania programu SharePoint jest wdrożony lub wycofany. Program Visual Studio wywołuje zdarzenia, które może obsłużyć w następujących scenariuszach:
+## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Uruchom kod, gdy rozwiązanie SharePoint zostanie wdrożone lub wycofane
+ Można obsługiwać zdarzenia w celu wykonywania dodatkowych zadań, gdy rozwiązanie SharePoint zostanie wdrożone lub wycofane. Program Visual Studio zgłasza zdarzenia, które można obsłużyć w następujących scenariuszach:
 
-- Przed i po każdym wdrożeniu krok jest wykonywany dla elementu projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [jak: Uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Przed i po wykonaniu każdego kroku wdrożenia dla elementu projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [How to: Run Code, gdy wykonywane są kroki wdrażania](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
-- Przed i po projektu programu SharePoint jest wdrożony lub wycofany. Aby uzyskać więcej informacji, zobacz [jak: Uruchamianie kodu, podczas projektu programu SharePoint jest wdrożony lub wycofany](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Przed i po wdrożeniu lub wycofaniu projektu programu SharePoint. Aby uzyskać więcej informacji, zobacz [How to: Run Code, gdy projekt SharePoint jest wdrożony lub wycofany](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Obsługa konfliktów wdrożenia
- Niektóre typy elementów projektu programu SharePoint, w tym moduły, części sieci Web, przejrzenia listy wystąpień i typów zawartości, podaj Rozwiązywanie konfliktów wdrażania wbudowanych. Podczas wdrażania rozwiązania, który zawiera jeden z tych elementów projektu programu Visual Studio najpierw sprawdza, czy plik istnieje już w witrynie programu SharePoint przy użyciu tej samej nazwie, adres URL lub identyfikator jako plik na element, który jest wdrażany. W przypadku konfliktu, program Visual Studio może automatycznie rozwiązać konfliktu lub monitować umożliwia ustalenie, czy zainstalowano oprogramowania Visual Studio rozwiązać konflikt, lub przycisk Anuluj, wdrożenie. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
+ Niektóre typy elementów projektu programu SharePoint, w tym moduły, składniki Web Part, wystąpienia list i typy zawartości, zapewniają wbudowane rozwiązanie konfliktu wdrożenia. Po wdrożeniu rozwiązania, które zawiera jeden z tych elementów projektu, program Visual Studio najpierw sprawdza, czy plik już istnieje w witrynie programu SharePoint o tej samej nazwie, adresie URL lub IDENTYFIKATORze co plik w elemencie, który jest wdrażany. Jeśli istnieje konflikt, program Visual Studio może automatycznie rozwiązać konflikt lub może monitować o określenie, czy chcesz, aby program Visual Studio rozwiązał konflikt lub anulował wdrożenie. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
 
- Możesz rozszerzyć tę funkcję, podając własny kod, który sprawdza i rozwiązuje konflikty wdrażania. Aby uzyskać więcej informacji, zobacz [jak: Obsługa konfliktów wdrożenia](../sharepoint/how-to-handle-deployment-conflicts.md).
+ Tę funkcję można zwiększyć, dostarczając własny kod, który sprawdza i rozwiązuje konflikty wdrożenia. Aby uzyskać więcej informacji, zobacz [How to: handlee konflikty wdrożenia](../sharepoint/how-to-handle-deployment-conflicts.md).
 
-## <a name="run-command-line-operations-before-or-after-a-project-is-deployed"></a>Uruchamianie operacji wiersza polecenia przed lub po wdrożeniu projektu
- Jeśli chcesz uruchomić operacji wiersza polecenia po wdrożeniu rozwiązania programu SharePoint, możesz ustawić <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PreDeploymentCommand%2A> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PostDeploymentCommand%2A> właściwości <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> obiektu. Visual Studio wykonuje polecenia przed i po wdrożeniu projektu.
+## <a name="run-command-line-operations-before-or-after-a-project-is-deployed"></a>Uruchom operacje wiersza polecenia przed wdrożeniem projektu lub po nim
+ Jeśli chcesz uruchomić operację wiersza polecenia podczas wdrażania rozwiązania programu SharePoint, możesz ustawić <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PreDeploymentCommand%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.PostDeploymentCommand%2A> właściwości i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> obiektu. Program Visual Studio wykonuje te polecenia przed wdrożeniem projektu i po nim.
 
- W niektórych przypadkach może zostać wyświetlony konflikty wdrażania. Istnieje kilka różnych sposobów, aby rozwiązać konflikty. Aby uzyskać więcej informacji, zobacz [SharePoint Rozwiązywanie problemów z pakowaniem i wdrażaniem](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
+ W niektórych przypadkach mogą wystąpić konflikty wdrożenia. Istnieje kilka różnych sposobów rozwiązywania konfliktów. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z pakietami i wdrażaniem programu SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
 
-## <a name="customize-validation-rules"></a>Dostosowywanie reguł sprawdzania poprawności
- Przed wdrożeniem pakietu rozwiązania (wsp), można utworzyć funkcji niestandardowych i pakietu reguł sprawdzania poprawności, aby sprawdzić, czy funkcja lub pakietu jest prawidłowa. Na przykład możesz zgłaszać informacje, ostrzeżenia lub błędy dla deweloperów, aby ułatwić rozwiązywanie problemów z weryfikacji. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+## <a name="customize-validation-rules"></a>Dostosuj reguły walidacji
+ Przed wdrożeniem pakietu rozwiązań (wsp) można utworzyć niestandardowe reguły sprawdzania poprawności pakietów, aby sprawdzić, czy funkcja lub pakiet są prawidłowe. Można na przykład zgłosić informacje, ostrzeżenia lub błędy do deweloperów, aby ułatwić im Rozwiązywanie problemów z walidacją. Aby uzyskać więcej informacji, zobacz [How to: Create Custom Feature and Package Rules for SharePoint Solutions](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Uruchamianie kodu, gdy są wykonywane kroki związane z wdrażaniem](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: uruchamianie kodu po wykonaniu kroków wdrożenia](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
-- [Instrukcje: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)
-- [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Instrukcje: Tworzenie niestandardowych reguł walidacji pakietu dla rozwiązań SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)
+- [Poszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c1030068ad083ff9bc8f4bdf5b203eb75eed7617
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670320"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refaktoryzacja w programie Visual Studio
@@ -31,17 +31,17 @@ Refaktoryzacja to proces modyfikacji kodu w celu ułatwienia utrzymania, zrozumi
 
    Ponieważ logika refaktoryzacji jest ściśle związana ze składnią języka, każda usługa językowa w programie Visual Studio zapewnia własne możliwości refaktoryzacji. Aby uzyskać więcej informacji, zobacz następujące strony:
 
-### <a name="refactoring-in-c"></a>Refaktoryzacja w języku C \#
+### <a name="refactoring-in-c"></a>Refaktoryzacja w języku C\#
  [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>Refaktoryzacja w Visual Basic
  [Refaktoryzacja i zmiana nazwy — okno dialogowe (Visual Basic)](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
 
-### <a name="refactoring-in-c"></a>Refaktoryzacja wC++
+### <a name="refactoring-in-c"></a>Refaktoryzacja w języku C++
  [Pisanie i refaktoryzacja kodu (C++)](https://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
-### <a name="refactoring-in-f"></a>Refaktoryzacja w języku F \#
- Obsługa refaktoryzacji dla programu F# jest dostępna w [narzędziach Visual F# PowerShell](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), rozszerzeniu programu Visual Studio innej firmy.
+### <a name="refactoring-in-f"></a>Refaktoryzacja w F\#
+ Obsługa refaktoryzacji dla języka F # jest zapewniana w [Visual F# narzędziach zaawansowanych](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), rozszerzenie programu Visual Studio innej firmy.
 
 ## <a name="see-also"></a>Zobacz też
  [Visual Studio IDE](../ide/visual-studio-ide.md) [pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md)

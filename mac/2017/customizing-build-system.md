@@ -1,42 +1,42 @@
 ---
 title: Dostosowywanie systemu kompilacji
-description: Ten artykuł jest krótkim wprowadzeniem do systemu kompilacji MSBuild używanego przez program Visual Studio dla komputerów Mac
+description: Ten artykuł zawiera krótkie wprowadzenie do systemu kompilacji MSBuild używanego przez Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983449"
 ---
 # <a name="customizing-the-build-system"></a>Dostosowywanie systemu kompilacji
 
-MSBuild to aparat kompilacji, opracowany przez firmę Microsoft, który umożliwia tworzenie aplikacji głównie .NET. Mono framework ma również własną implementację Microsoft Build Engine, o nazwie **xbuild**. Jednak xbuild został wycofany na rzecz korzystania z MSBuild we wszystkich systemach operacyjnych.
+MSBuild jest aparatem kompilacji opracowanym przez firmę Microsoft, który umożliwia tworzenie aplikacji głównie platformy .NET. Platforma mono ma również własną implementację aparatu kompilacji firmy Microsoft o nazwie **Xbuild**. Jednak Xbuild został wystawiony na korzyść z używania MSBuild we wszystkich systemach operacyjnych.
 
-**MSBuild** jest używany głównie jako system kompilacji dla projektów w programie Visual Studio dla komputerów Mac.
+Program **MSBuild** jest używany głównie jako system kompilacji dla projektów w Visual Studio dla komputerów Mac.
 
-MSBuild działa przez wykonanie zestawu danych wejściowych, takich jak pliki źródłowe, i przekształca je w dane wyjściowe, takie jak pliki wykonywalne. Osiąga ten wynik, wywołując narzędzia, takie jak kompilator.
+MSBuild działa przez pobranie zestawu danych wejściowych, takich jak pliki źródłowe, i przekształca je w dane wyjściowe, takie jak wykonywalne. Osiąga to dane wyjściowe przez wywoływanie narzędzi, takich jak kompilator.
 
 ## <a name="msbuild-file"></a>Plik MSBuild
 
-MSBuild używa pliku XML, o nazwie plik projektu, który definiuje *elementy,* które są częścią projektu (takie jak zasoby obrazu) i *właściwości* wymagane do utworzenia projektu. Ten plik projektu zawsze będzie miał `proj`rozszerzenie `.csproj` pliku kończące się na , na przykład dla projektów Języka C#.
+MSBuild używa pliku XML o nazwie plik projektu, który definiuje *elementy* , które są częścią projektu (na przykład zasoby obrazu) i *Właściwości* wymagane do skompilowania projektu. Ten plik projektu zawsze zawiera rozszerzenie pliku, na przykład w `proj` `.csproj` przypadku projektów C#.
 
 ### <a name="viewing-the-msbuild-file"></a>Wyświetlanie pliku MSBuild
 
-Znajdź plik MSBuild, klikając prawym przyciskiem myszy nazwę projektu i wybierając **pozycję Odsłonięcie w finderze**. W oknie findera są wyświetlane wszystkie pliki i foldery związane z projektem, w tym `.csproj` plik, jak pokazano na poniższej ilustracji:
+Znajdź plik programu MSBuild, klikając prawym przyciskiem myszy nazwę projektu i wybierając polecenie **Odsłoń w programie Finder**. W oknie wyszukiwania są wyświetlane wszystkie pliki i foldery powiązane z projektem, `.csproj` w tym plik, jak pokazano na poniższej ilustracji:
 
-![lokalizacja csproj w Finderze](media/customizing-build-system-image1.png)
+![Lokalizacja csproj w programie Finder](media/customizing-build-system-image1.png)
 
-Aby wyświetlić nową kartę `.csproj` w programie Visual Studio dla komputerów Mac, kliknij prawym przyciskiem myszy nazwę projektu i przejdź do pozycji Narzędzia > edytuj **plik:**
+Aby wyświetlić na `.csproj` nowej karcie w Visual Studio dla komputerów Mac, kliknij prawym przyciskiem myszy nazwę projektu i przejdź do **menu Narzędzia > Edytuj plik**:
 
-![otwieranie csproj w edytorze źródłowym](media/customizing-build-system-image2.png)
+![Otwieranie csproj w edytorze źródła](media/customizing-build-system-image2.png)
 
-### <a name="composition-of-the-msbuild-file"></a>Skład pliku MSBuild
+### <a name="composition-of-the-msbuild-file"></a>Kompozycja pliku MSBuild
 
-Wszystkie pliki MSBuild zawierają `Project` obowiązkowy element główny, na przykład:
+Wszystkie pliki MSBuild zawierają obowiązkowy element główny `Project` , na przykład:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -44,25 +44,25 @@ Wszystkie pliki MSBuild zawierają `Project` obowiązkowy element główny, na p
 </Project>
 ```
 
-Zazwyczaj projekt zaimportuje `.targets` również plik. Ten plik zawiera wiele reguł, które opisują sposób przetwarzania i tworzenia różnych plików. Import zwykle pojawia się w `proj` dolnej części pliku, a dla projektów języka C# wygląda mniej więcej tak:
+Zazwyczaj projekt również importuje `.targets` plik. Ten plik zawiera wiele reguł, które opisują sposób przetwarzania i kompilowania różnych plików. Import zazwyczaj pojawia się w dolnej części `proj` pliku, a w przypadku projektów C# wyglądać następująco:
 
 ```xml
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
-Plik docelowy jest inny plik MSBuild. Ten plik zawiera kod MSBuild, który jest wielokrotnegoużyny przez wiele projektów. Na przykład `Microsoft.CSharp.targets` plik, który znajduje się w katalogu `MSBuildBinPath` reprezentowanym przez właściwość (lub zmienną), zawiera logikę tworzenia zestawów C# z plików źródłowych języka C#.
+Plik TARGETS jest innym plikiem programu MSBuild. Ten plik zawiera kod programu MSBuild, który jest wielokrotnego użytku przez wiele projektów. Na przykład `Microsoft.CSharp.targets` plik, który znajduje się w katalogu reprezentowane przez `MSBuildBinPath` Właściwość (lub zmienną), zawiera logikę do kompilowania zestawów c# z plików źródłowych języka c#.
 
 ### <a name="items-and-properties"></a>Elementy i właściwości
 
-Istnieją dwa podstawowe typy danych w MSBuild: *elementy* i właściwości , które są *wyjaśnione*bardziej szczegółowo w poniższych sekcjach.
+W programie MSBuild istnieją dwa podstawowe typy danych: *elementy* i *Właściwości*, które zostały omówione bardziej szczegółowo w poniższych sekcjach.
 
 #### <a name="properties"></a>Właściwości
 
-Właściwości są pary klucz/wartość, które są używane do przechowywania ustawień, które wpływają na kompilacji, takich jak opcje kompilatora.
+Właściwości to pary klucz/wartość, które są używane do przechowywania ustawień, które mają wpływ na kompilację, takie jak opcje kompilatora.
 
-Są one ustawiane przy użyciu PropertyGroup i może zawierać dowolną liczbę PropertiesGroups, które mogą zawierać dowolną liczbę właściwości.
+Są one ustawiane przy użyciu właściwości i mogą zawierać dowolną liczbę PropertiesGroups, która może zawierać dowolną liczbę właściwości.
 
-Na przykład PropertyGroup dla prostej aplikacji konsoli może wyglądać następująco XML:
+Na przykład, obiekt właściwości dla prostej aplikacji konsolowej może wyglądać podobnie do następującego kodu XML:
 
 ```xml
 <PropertyGroup>
@@ -76,15 +76,15 @@ Na przykład PropertyGroup dla prostej aplikacji konsoli może wyglądać nastę
 </PropertyGroup>
 ```
 
-Właściwości mogą być odwoływane z `$()` wyrażeń przy użyciu składni. Na przykład `$(Foo)` będą oceniane jako wartość `Foo` właściwości. Jeśli właściwość nie została ustawiona, oceni jako pusty ciąg, bez żadnego błędu.
+Właściwości mogą być określane z wyrażeń przy użyciu `$()` składni. Na przykład, `$(Foo)` zostanie oszacowany jako wartość `Foo` właściwości. Jeśli właściwość nie została ustawiona, zostanie oszacowana jako pusty ciąg, bez żadnego błędu.
 
-#### <a name="items"></a>Items
+#### <a name="items"></a>Elementy
 
-Elementy zapewniają sposób radzenia sobie z danych wejściowych do systemu kompilacji jako listy lub zestawy i zazwyczaj reprezentują pliki. Każdy element ma *typ*elementu, *specyfikację*elementu i opcjonalne dowolne *metadane.* Należy zauważyć, że MSBuild nie działa na poszczególnych elementach, zajmuje wszystkie elementy danego typu o nazwie *zestaw* towarów
+Elementy zapewniają sposób postępowania z danymi wejściowymi do systemu kompilacji jako list lub zestawów i zazwyczaj reprezentują pliki. Każdy element ma *Typ*elementu, *specyfikację*elementu i opcjonalne dowolnych *metadanych*. Zwróć uwagę, że program MSBuild nie działa na poszczególnych elementach, przyjmuje wszystkie elementy danego typu — nazywane *zestawem* elementów.
 
-Elementy są tworzone przez `ItemGroup`zadeklarowanie . Może istnieć dowolna liczba ItemGroups, które mogą zawierać dowolną liczbę elementów.
+Elementy są tworzone przez zadeklarowanie `ItemGroup` . Może być dowolna liczba ItemGroups, która może zawierać dowolną liczbę elementów.
 
-Na przykład poniższy fragment kodu tworzy ekrany uruchamiania systemu iOS. Ekrany uruchamiania mają `BundleResource`typ kompilacji, ze specyfikacją jako ścieżką do obrazu:
+Na przykład poniższy fragment kodu tworzy ekrany uruchamiania systemu iOS. Ekrany uruchamiania mają typ kompilacji `BundleResource` , z specyfikacją jako ścieżką do obrazu:
 
 ```xml
  <ItemGroup>
@@ -97,11 +97,11 @@ Na przykład poniższy fragment kodu tworzy ekrany uruchamiania systemu iOS. Ekr
   </ItemGroup>
  ```
 
- Zestawy elementów mogą być odwoływane `@()` z wyrażeń przy użyciu składni. Na przykład `@(BundleResource)` zostanie oceniony jako bundleResource zestaw elementów, co oznacza, że wszystkie bundleResource elementów. Jeśli nie ma żadnych elementów tego typu, będzie pusty, bez żadnego błędu.
+ Zestawy elementów mogą być odwołujące się do wyrażeń przy użyciu `@()` składni. Na przykład program `@(BundleResource)` zostanie oceniony jako zestaw elementów BundleResource, co oznacza, że wszystkie elementy BundleResource. Jeśli nie ma żadnych elementów tego typu, będzie on pusty, bez żadnego błędu.
 
-## <a name="resources-for-learning-msbuild"></a>Zasoby do nauki MSBuild
+## <a name="resources-for-learning-msbuild"></a>Zasoby do uczenia programu MSBuild
 
-Następujące zasoby mogą służyć do zapoznania się z MSBuild bardziej szczegółowo:
+Poniższe zasoby mogą służyć do bardziej szczegółowych informacji na temat programu MSBuild:
 
-* [Omówienie msbuild](/visualstudio/msbuild/msbuild)
+* [Omówienie programu MSBuild](/visualstudio/msbuild/msbuild)
 * [Pojęcia dotyczące programu MSBuild](/visualstudio/msbuild/msbuild-concepts)

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie projektu usługi w chmurze platformy Azure
-description: Dowiedz się teraz, jak utworzyć projekt usługi w chmurze platformy Azure z programem Visual Studio
+description: Dowiedz się teraz, jak utworzyć projekt usługi w chmurze platformy Azure za pomocą programu Visual Studio
 author: ghogen
 manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
@@ -12,46 +12,46 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c4daf3d92aa08e6dbbb81eac79112772900d08d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964047"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio
-Azure Tools dla programu Visual Studio zawiera szablon projektu umożliwiający tworzenie [usłudze w chmurze Azure](/azure/cloud-services/cloud-services-choose-me), który jest prostą usługę Azure ogólnego przeznaczenia. Po utworzeniu projektu programu Visual Studio pozwala konfigurować, debugować i wdrożyć usługę w chmurze na platformie Azure.
+Narzędzia systemu Azure dla programu Visual Studio udostępniają szablon projektu, który umożliwia tworzenie [usługi w chmurze platformy Azure](/azure/cloud-services/cloud-services-choose-me), która jest prostą usługą platformy Azure ogólnego przeznaczenia. Po utworzeniu projektu program Visual Studio umożliwia skonfigurowanie, debugowanie i wdrożenie usługi w chmurze na platformie Azure.
 
-## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Kroki, aby utworzyć projekt usługi w chmurze platformy Azure w programie Visual Studio
-Ta sekcja przeprowadzi Cię przez tworzenie projektu usługi w chmurze platformy Azure w programie Visual Studio za pomocą co najmniej jedną rolę sieci web.
+## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Procedura tworzenia projektu usługi w chmurze platformy Azure w programie Visual Studio
+W tej sekcji omówiono tworzenie projektu usługi w chmurze platformy Azure w programie Visual Studio z co najmniej jedną rolą sieci Web.
 
 1. Uruchom program Visual Studio jako administrator.
 
-1. W menu głównym wybierz **pliku** > **New** > **projektu**.
+1. W menu głównym wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
 
-1. Wybierz **chmury** z Visual C# lub Visual Basic projektu węzłów szablonu, a następnie wybierz **usługa w chmurze** z listy szablonów.
+1. Wybierz pozycję **chmura** z węzłów szablonu projektu Visual C# lub Visual Basic, a następnie wybierz pozycję **Usługa w chmurze platformy Azure** z listy szablonów.
 
     ![Nowa usługa w chmurze platformy Azure](./media/vs-azure-tools-azure-project-create/new-project-wizard-for-cloud-service.png)
 
-1. Określenie, która wersja programu .NET Framework, którego chcesz użyć do tworzenia projektu.
+1. Określ wersję .NET Framework, która ma zostać użyta do opracowania projektu.
 
-1. Wprowadź nazwę i lokalizację projektu i nazwę rozwiązania.
+1. Wprowadź nazwę i lokalizację projektu oraz nazwę rozwiązania.
 
-1. Wybierz **OK**.
+1. Wybierz pozycję **OK**.
 
-1. W **nową usługę w chmurze Azure Microsoft** okno dialogowe, wybierz role, które chcesz dodać, a następnie wybierz przycisk strzałki w prawo, aby dodać je do swojego rozwiązania.
+1. W oknie dialogowym **Nowa usługa w chmurze Microsoft Azure** wybierz role, które chcesz dodać, a następnie wybierz przycisk strzałki w prawo, aby dodać je do rozwiązania.
 
-    ![Wybierz nowy ról usługi w chmurze platformy Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service.png)
+    ![Wybierz nowe role usługi w chmurze platformy Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service.png)
 
-1. Aby zmienić nazwę roli, które zostały dodane, umieść kursor na rolę w **nową usługę w chmurze Azure Microsoft** okno dialogowe i z menu kontekstowego wybierz **Zmień nazwę**. Można również zmienić nazwę roli w ramach rozwiązania usługi (w **Eksploratora rozwiązań**) po został dodany.
+1. Aby zmienić nazwę dodanej roli, umieść wskaźnik myszy na roli w oknie dialogowym **nowa Microsoft Azure usługa w chmurze** , a następnie z menu kontekstowego wybierz polecenie **Zmień nazwę**. Możesz również zmienić nazwę roli w rozwiązaniu (w **Eksplorator rozwiązań**) po dodaniu.
 
     ![Zmień nazwę roli usługi w chmurze platformy Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service-rename.png)
 
-Projekt programu Visual Studio na platformie Azure ma skojarzenia z projektów ról w rozwiązaniu. Zawiera także projekt *pliku definicji usługi* i *pliku konfiguracji usługi*:
+Projekt programu Visual Studio Azure ma skojarzenia z projektami ról w rozwiązaniu. Projekt zawiera również plik *definicji usługi* i *plik konfiguracji usługi*:
 
-- **Plik definicji usługi** — definiuje ustawienia środowiska uruchomieniowego dla aplikacji, w tym, jakie role są wymagane, punkty końcowe i rozmiar maszyny wirtualnej.
-- **Plik konfiguracji usługi** -Określa, ile wystąpień roli są wykonywania i wartości ustawienia zdefiniowane dla roli.
+- **Plik definicji usługi** — definiuje ustawienia środowiska uruchomieniowego dla aplikacji, w tym informacje o wymaganych rolach, punktach końcowych i rozmiarze maszyny wirtualnej.
+- **Plik konfiguracji usługi** — określa, ile wystąpień roli jest uruchomionych i wartości ustawień zdefiniowanych dla roli.
 
-Aby uzyskać więcej informacji o tych plikach, zobacz [konfigurowania ról usługi w chmurze platformy Azure z programem Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
+Aby uzyskać więcej informacji o tych plikach, zobacz [Konfigurowanie ról dla usługi w chmurze platformy Azure za pomocą programu Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 
 ## <a name="next-steps"></a>Następne kroki
-- [Zarządzanie rolami w projekty usługi w chmurze platformy Azure z programem Visual Studio](./vs-azure-tools-cloud-service-project-managing-roles.md)
+- [Zarządzanie rolami w projektach usług w chmurze platformy Azure za pomocą programu Visual Studio](./vs-azure-tools-cloud-service-project-managing-roles.md)

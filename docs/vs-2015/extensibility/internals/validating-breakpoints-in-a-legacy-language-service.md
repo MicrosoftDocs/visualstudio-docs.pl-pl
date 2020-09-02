@@ -1,5 +1,5 @@
 ---
-title: Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
+title: Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,33 +12,33 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163677"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Punkt przerwania wskazuje, że wykonywanie programu powinna zostać przerwana w określonym punkcie, gdy są one uruchamiane w debugerze. Użytkownika można umieścić punkt przerwania w dowolnym wierszu w pliku źródłowym, ponieważ edytor ma nie wie, co stanowi prawidłowej lokalizacji punktu przerwania. Gdy debuger jest uruchamiany, wszystkie oznaczone punkty przerwania (nazywane oczekujących punktów przerwania) są powiązane z odpowiedniej lokalizacji w uruchomionego programu. W tym samym czasie, które punkty przerwania są sprawdzane w celu zapewnienia, że ich oznaczenie lokalizacje prawidłowy kod. Na przykład punkt przerwania w komentarz nie jest prawidłowy, ponieważ nie ma kodu w tej lokalizacji w kodzie źródłowym. Debuger wyłącza nieprawidłowy punktów przerwania.  
+Punkt przerwania wskazuje, że wykonanie programu powinno zostać zatrzymane w określonym momencie, gdy jest uruchamiane w debugerze. Użytkownik może umieścić punkt przerwania w dowolnym wierszu w pliku źródłowym, ponieważ Edytor nie ma informacji o tym, co stanowi prawidłową lokalizację punktu przerwania. Po uruchomieniu debugera wszystkie oznaczone punkty przerwania (nazywane punktami przerwania w toku) są powiązane z odpowiednią lokalizacją w uruchomionym programie. W tym samym czasie punkty przerwania są sprawdzane, aby upewnić się, że oznaczają poprawne lokalizacje kodu. Na przykład punkt przerwania komentarza jest nieprawidłowy, ponieważ nie ma kodu w tej lokalizacji w kodzie źródłowym. Debuger wyłącza nieprawidłowe punkty przerwania.  
   
- Ponieważ usługa językowa wie o kodzie źródłowym, są wyświetlane, można sprawdzić punkty przerwania, zanim debuger jest uruchamiany. Można zastąpić <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodę, aby zwrócić zakresu, określając prawidłową lokalizacją punktu przerwania. Nadal jest weryfikowana lokalizacji punktu przerwania, gdy debuger jest uruchamiany, ale użytkownik jest powiadamiany nieprawidłowy punktów przerwania, bez konieczności oczekiwania na debugera do załadowania.  
+ Ponieważ usługa językowa wie o wyświetlanym kodzie źródłowym, może sprawdzić poprawność punktów przerwania przed uruchomieniem debugera. Można zastąpić <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodę w celu zwrócenia zakresu określającego prawidłową lokalizację dla punktu przerwania. Lokalizacja punktu przerwania jest nadal weryfikowana, gdy zostanie uruchomiony debuger, ale użytkownik jest powiadamiany o nieprawidłowych punktach przerwania bez oczekiwania na załadowanie debugera.  
   
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementowanie obsługi sprawdzania poprawności punktów przerwania  
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementowanie obsługi walidacji punktów przerwania  
   
-- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Metoda otrzymuje położenie punktu przerwania. Implementacji należy zdecydować, czy lokalizacja jest prawidłowa i wskazują, że to zwracając obszaru tekstu, który identyfikuje kod skojarzone z pozycji wiersz punktu przerwania.  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>Metoda otrzymuje pozycję punktu przerwania. Twoja implementacja musi zdecydować, czy lokalizacja jest prawidłowa, i wskazać ją poprzez zwrócenie zakresu tekstu, który identyfikuje kod skojarzony z wierszem Umieść punkt przerwania.  
   
-- Zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK> Jeśli lokalizacja jest prawidłowa, lub <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Jeśli nie jest prawidłowy.  
+- Zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK> , jeśli lokalizacja jest prawidłowa, lub <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> Jeśli nie jest prawidłowa.  
   
-- Jeśli punkt przerwania jest prawidłowy zakres tekstu jest wyróżniona wraz z punktu przerwania.  
+- Jeśli punkt przerwania jest prawidłowy, zakres tekstu jest wyróżniony wraz z punktem przerwania.  
   
-- Jeśli punkt przerwania jest nieprawidłowa, na pasku stanu pojawi się komunikat o błędzie.  
+- Jeśli punkt przerwania jest nieprawidłowy, na pasku stanu pojawi się komunikat o błędzie.  
   
 ### <a name="example"></a>Przykład  
- Ten przykład pokazuje implementację <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodę, która wywołuje analizator uzyskać zakres kodu (jeśli istnieją) w określonej lokalizacji.  
+ W tym przykładzie przedstawiono implementację <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metody, która wywołuje parser w celu uzyskania zakresu kodu (jeśli istnieje) w określonej lokalizacji.  
   
- W tym przykładzie założono, że dodano `GetCodeSpan` metody <xref:Microsoft.VisualStudio.Package.AuthoringSink> klasę weryfikującą zakres tekstu i zwraca `true` przypadku lokalizacji nieprawidłowy punkt przerwania.  
+ W tym przykładzie przyjęto założenie, że dodano `GetCodeSpan` metodę do <xref:Microsoft.VisualStudio.Package.AuthoringSink> klasy, która sprawdza poprawność zakresu tekstu i zwraca, `true` Jeśli jest prawidłową lokalizacją punktu przerwania.  
   
 ```csharp  
 using Microsoft VisualStudio;  

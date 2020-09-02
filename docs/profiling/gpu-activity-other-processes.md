@@ -1,5 +1,5 @@
 ---
-title: Aktywność GPU (inne procesy) | Dokumenty firmy Microsoft
+title: Aktywność procesora GPU (inne procesy) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a502590c20fce1455d9259ae681178d9cd48e33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62969505"
 ---
 # <a name="gpu-activity-other-processes"></a>Aktywność procesora GPU (inne procesy)
-Segmenty **aktywności gpu (inne procesy)** w widoku Wątki wizualizatora współbieżności reprezentują czasy, kiedy procesor GPU przetwarzał żądania w imieniu innych procesów w systemie. Te żądania są wysyłane gpu jako pakiety bezpośredniego dostępu do pamięci (DMA).  Długość segmentu reprezentuje czas, przez który pakiet został przetworzony przez procesor GPU.
+Segmenty **działania procesora GPU (inne procesy)** w widoku wątki wizualizatora współbieżności przedstawiają czasy, kiedy procesor GPU przetwarzał żądania w imieniu innych procesów w systemie. Te żądania są wysyłane przez procesor GPU jako pakiety bezpośredniego dostępu do pamięci (DMA).  Długość segmentu reprezentuje czas, przez który pakiet został przetworzony przez procesor GPU.
 
- Po wybraniu tego rodzaju segmentu raport na karcie **Bieżący** wyświetla informacje o przetworzonym pakiecie.  Informacje obejmują czas oczekiwania pakietu w kolejce sprzętowej skojarzonej z aparatem DirectX, proces przesyłania pakietu oraz czas wymagany do przetworzenia pakietu.
+ Po wybraniu tego rodzaju segmentu raport na **bieżącej** karcie zawiera informacje o przetworzonym pakiecie.  Informacje obejmują ilość czasu oczekiwania pakietu w kolejce sprzętowej skojarzonej z aparatem DirectX, proces, który przesłał pakiet, oraz czas wymagany do przetworzenia pakietu.

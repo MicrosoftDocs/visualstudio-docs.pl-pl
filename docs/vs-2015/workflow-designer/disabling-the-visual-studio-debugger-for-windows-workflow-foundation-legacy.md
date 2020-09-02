@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eddd72d648e7349f51096a21131f38c2e370a277
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656782"
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Wyłączanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)
-W tym temacie opisano, jak wyłączyć debuger [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przy użyciu pliku konfiguracji podczas kompilowania aplikacji [!INCLUDE[wf](../includes/wf-md.md)] w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano, jak wyłączyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debuger przy użyciu pliku konfiguracji podczas kompilowania [!INCLUDE[wf](../includes/wf-md.md)] aplikacji w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
- Domyślnie debuger [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] dla [!INCLUDE[wf](../includes/wf-md.md)] jest włączony dla procesu hosta. Aby wyłączyć debugowanie przepływu pracy, należy jawnie ją wyłączyć, dodając wpis "DisableWorkflowDebugging" **\<switches >** elementu w sekcji **\<system. Diagnostics >** pliku konfiguracji hosta.
+ Domyślnie [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] debuger dla programu [!INCLUDE[wf](../includes/wf-md.md)] jest włączony dla procesu hosta. Aby wyłączyć debugowanie przepływu pracy, należy jawnie ją wyłączyć przez dodanie elementu wpisu "DisableWorkflowDebugging" **\<switches>** w **\<system.diagnostics>** sekcji pliku konfiguracji hosta.
 
  Poniższy przykład pokazuje, jak zmodyfikować plik konfiguracji hosta w celu wyłączenia debugowania przepływu pracy.
 

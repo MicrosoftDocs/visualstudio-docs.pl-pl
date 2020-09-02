@@ -13,24 +13,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62977864"
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>Jedna właściwość lub więcej w pliku .ofs jest nieprawidłowa dla klasy wybranego komunikatu
-  Ten błąd jest wyświetlany, gdy importowanie regionów formularzy zaprojektowanych w programie Outlook, ale co najmniej jedno pole na region formularza nie są zgodne z klas wiadomości, które można wybrać na ostatniej stronie **nowy Region formularza** kreatora.
+  Ten błąd jest wyświetlany podczas importowania regionu formularza zaprojektowanego w programie Outlook, ale co najmniej jedno pole w regionie formularza nie jest zgodne z klasami wiadomości wybieranymi na ostatniej stronie kreatora **nowego regionu formularza** .
 
-Na przykład, możesz wybrać **zadań (IPM. Zadanie)** na ostatniej stronie **nowy Region formularza** kreatora. Jeśli region formularza ma **adres służbowy** pola, otrzymasz ten błąd, ponieważ zadanie nie ma adres służbowy. W związku z tym **adres służbowy** pole nie jest zgodny z `IPM.Task` klasą wiadomości.
+Na przykład możesz wybrać **zadanie (IPM. Zadanie)** na ostatniej stronie kreatora **nowego regionu formularza** . Jeśli region formularza zawiera pole **adres służbowy** , zostanie wyświetlony następujący błąd, ponieważ zadanie nie ma adresu służbowego. W związku z tym pole **adres służbowy** nie jest zgodne z `IPM.Task` klasą wiadomości.
 
- Możesz wybrać **zadań (IPM. Zadanie)** na ostatniej stronie **nowy Region formularza** kreatora. Jeśli region formularza ma **adres służbowy** pola, otrzymasz ten błąd, ponieważ zadanie nie ma adres służbowy. W związku z tym **adres służbowy** pole nie jest zgodny z `IPM.Task` klasą wiadomości.
+ Możesz wybrać **zadanie (IPM. Zadanie)** na ostatniej stronie kreatora **nowego regionu formularza** . Jeśli region formularza zawiera pole **adres służbowy** , zostanie wyświetlony następujący błąd, ponieważ zadanie nie ma adresu służbowego. W związku z tym pole **adres służbowy** nie jest zgodne z `IPM.Task` klasą wiadomości.
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-- Na ostatniej stronie **nowy Region formularza** kreatora, zaznacz klasę wiadomości, która jest zgodna z pól na region formularza.
+- Na ostatniej stronie kreatora **nowego regionu formularza** wybierz klasę komunikatów, która jest zgodna z polami w regionie formularza.
 
-- W projektancie formularzy w programie Outlook usuń pola, które nie są zgodne z klas wiadomości. Usuń pola, które zamierzasz wybierz na ostatniej stronie **nowy Region formularza** kreatora.
+- W projektancie formularzy w programie Outlook usuń pola, które nie są zgodne z klasami komunikatów. Usuń pola, które planujesz wybrać na ostatniej stronie kreatora **nowego regionu formularza** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

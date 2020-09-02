@@ -1,5 +1,5 @@
 ---
-title: Stan pakietu VSPackage | Dokumentacja firmy Microsoft
+title: Stan pakietu VSPackage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,70 +12,70 @@ ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: jillfra
 ms.openlocfilehash: f3140b527673f87b1d7c552e99584232494aed7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979998"
 ---
 # <a name="vspackage-state"></a>Stan pakietu VSPackage
-Wpływa wiele czynników zbiór wartości trwałe lub stan z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplikacji.  
+Wiele czynników określa zbiór wartości utrwalonych lub stanu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplikacji.  
   
-- Projekt ma właściwości projektu i konfiguracji.  
+- Projekty mają właściwości projektu i konfiguracji.  
   
 - Rozwiązania mają właściwości.  
   
-- Ustawienia użytkownika określić rozmiar i położenie okna dokumentów, okien narzędzi, stan dokowania i skróty klawiaturowe.  
+- Ustawienia użytkownika określają rozmiar i położenie okien dokumentów, okien narzędzi, stanu dokowania i skrótów klawiaturowych.  
   
-- Aplikacje mogą mieć opcje, które są ustawiane przez użytkownika.  
+- Aplikacje mogą mieć opcje ustawiane przez użytkownika.  
   
-- Obiekty utworzone przez aplikację może mieć własne właściwości.  
+- Obiekty tworzone przez aplikację mogą mieć własne właściwości.  
   
-  Oto kilka sposobów, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stan aplikacji, które mogą być zarządzane:  
+  Oto kilka sposobów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zarządzania stanem aplikacji:  
   
-- Za pomocą strony właściwości projektu i rozwiązania.  
+- Za pomocą stron właściwości projektu i rozwiązania.  
   
-- Za pomocą **Kreatora importowania i eksportowania ustawień**, który umożliwia użytkownikowi przenoszenie ustawień z jednego komputera na inny.  
+- Za pomocą **Kreatora importowania i eksportowania ustawień**, który umożliwia użytkownikowi przenoszenie ustawień z jednego komputera do drugiego.  
   
-- Za pomocą **opcje** okno dialogowe, które zawiera opcje dotyczące aplikacji.  
+- Za pomocą okna dialogowego **Opcje** , które zawiera opcje związane z aplikacjami.  
   
-- Za pomocą **właściwości** okno, które udostępnia właściwości obiektów.  
+- Za pomocą okna **Właściwości** , które uwidacznia właściwości obiektów.  
   
-- Dzięki automatyzacji. Aplikacja ma dostęp do właściwości obiektu i pakietu VSPackage, które została udostępniona z automatyzacją.  
+- Za poorednictwem automatyzacji. Aplikacja może uzyskiwać dostęp do pakietu VSPackage i właściwości obiektów, które zostały uwidocznione w usłudze Automation.  
   
-  Podstawowy stan aplikacji są różne mechanizmy trwałości, umożliwiające stan aplikacji być zapisywany i przywracany.  
+  Podstawowym stanem aplikacji są różne mechanizmy trwałości, które umożliwiają zapisanie i przywrócenie stanu aplikacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Obsługa stanu trwałości](../misc/support-for-state-persistence.md)  
- Zawiera listę typowych strategii zapisywania, przywracania i zresetowanie stanu pakietu VSPackage.  
+ [Obsługa trwałości stanu](../misc/support-for-state-persistence.md)  
+ Wyświetla listę typowych strategii zapisywania, przywracania i resetowania stanu pakietu VSPackage.  
   
  [Opcje i strony opcji](../extensibility/internals/options-and-options-pages.md)  
- Wprowadza ogólne i niestandardowe strony opcji i objaśnienie sposobu ich wykonania.  
+ Wprowadza ogólne i niestandardowe strony opcji oraz wyjaśnia, jak je wdrożyć.  
   
  [Tworzenie strony opcji](../extensibility/creating-an-options-page.md)  
- Wyjaśnia, jak utworzyć dwie opcje strony, prostą stronę i niestandardowej strony.  
+ Wyjaśnia, jak utworzyć dwie strony opcji, prostą stronę i stronę niestandardową.  
   
- [Obsługa ustawień kategorii](../misc/support-for-settings-categories.md)  
- W tym artykule omówiono ustawienia użytkownika i jak są tworzone i utrwalone.  
+ [Obsługa kategorii ustawień](../misc/support-for-settings-categories.md)  
+ Omawia ustawienia użytkownika oraz sposób ich tworzenia i utrwalania.  
   
  [Tworzenie kategorii ustawień](../extensibility/creating-a-settings-category.md)  
- Wyjaśnia sposób tworzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ustawienia kategorii i użyć go do wartości, aby zapisać i przywrócić wartości z pliku ustawień.  
+ Wyjaśnia, jak utworzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kategorię ustawień i użyć jej do zapisania wartości i przywrócenia wartości z pliku ustawień.  
   
  [Rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md)  
- Wyjaśnia, jak wyświetlić i zmienić wartość obiektu w **właściwości** okna.  
+ Wyjaśnia, jak wyświetlić i zmienić wartość obiektu w oknie **Właściwości** .  
   
  [Uwidacznianie właściwości w oknie właściwości](../extensibility/exposing-properties-to-the-properties-window.md)  
- Wyjaśnia, jak udostępniać właściwości publiczne obiektu **właściwości** okna.  
+ Wyjaśnia, jak uwidocznić właściwości publiczne obiektu do okna **Właściwości** .  
   
  [Pomoc techniczna dotycząca właściwości projektu i konfiguracji](../extensibility/internals/support-for-project-and-configuration-properties.md)  
- Wyjaśnia, jak wyświetlić i zmienić właściwości projektu i konfiguracji.  
+ Wyjaśnia, jak wyświetlać i zmieniać właściwości projektu i konfiguracji.  
   
  [Pobieranie właściwości projektu](../extensibility/getting-project-properties.md)  
- Przeprowadzi Cię przez kroki tworzenia zarządzanego pakietu VSPackage, który wyświetla właściwości projektu w oknie narzędzi.  
+ Przeprowadzi Cię przez kroki tworzenia zarządzanego pakietu VSPackage, które wyświetla właściwości projektu w oknie narzędzi.  
   
  [Korzystanie z magazynu ustawień](../extensibility/using-the-settings-store.md)  
- Wyjaśnia Store ustawienia mechanizmu stanu trwałego i jak z niej korzystać.  
+ Wyjaśnia ustawienia mechanizmu trwałości magazynu i sposobu jego użycia.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Pakiety VSPackage](../extensibility/internals/vspackages.md)  
- Udostępnia ogólne orientacja do tematów, które opisują sposób tworzenia i używania pakietów VSPackage.
+ Zawiera ogólne wskazówki dotyczące sposobu tworzenia i używania pakietów VSPackage.

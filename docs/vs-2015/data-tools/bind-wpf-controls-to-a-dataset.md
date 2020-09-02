@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 937e28e923c26a72940b0181da16cf34199bb9aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852159"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
@@ -57,7 +57,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 - Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
-## <a name="create-the-project"></a>Utwórz projekt
+## <a name="create-the-project"></a>Tworzenie projektu
  Utwórz nowy projekt WPF. Projekt będzie wyświetlał rekordy produktów.
 
 #### <a name="to-create-the-project"></a>Aby utworzyć projekt
@@ -66,20 +66,20 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 2. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-3. Rozwiń węzeł **Visual Basic** lub **Wizualizacja C#** , a następnie wybierz pozycję **Windows**.
+3. Rozwiń węzeł **Visual Basic** lub **Visual C#**, a następnie wybierz pozycję **Windows**.
 
 4. Wybierz szablon projektu **aplikacji WPF** .
 
 5. W polu **Nazwa** wpisz `AdventureWorksProductsEditor` i kliknij przycisk **OK**.
 
-     Program Visual Studio tworzy projekt `AdventureWorksProductsEditor`.
+     Program Visual Studio tworzy `AdventureWorksProductsEditor` projekt.
 
 ## <a name="create-a-dataset-for-the-application"></a>Tworzenie zestawu danych dla aplikacji
  Aby można było tworzyć kontrolki powiązane z danymi, należy zdefiniować model danych dla aplikacji i dodać go do okna **źródła danych** . W tym instruktażu utworzysz zestaw danych, który będzie używany jako model danych.
 
 #### <a name="to-create-a-dataset"></a>Aby utworzyć zestaw danych
 
-1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
 
      Zostanie otwarte okno **źródła danych** .
 
@@ -103,12 +103,12 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 8. Kliknij przycisk **Zakończ**.
 
-     Program Visual Studio dodaje nowy plik XSD AdventureWorksLTDataSet do projektu i dodaje odpowiadający element **AdventureWorksLTDataSet** do okna **źródła danych** . Plik AdventureWorksLTDataSet. xsd definiuje określony zestaw danych o nazwie `AdventureWorksLTDataSet` i TableAdapter o nazwie `ProductTableAdapter`. W dalszej części tego instruktażu użyjesz `ProductTableAdapter`, aby wypełnić zestaw danych danymi i zapisać zmiany z powrotem w bazie danych.
+     Program Visual Studio dodaje nowy plik XSD AdventureWorksLTDataSet do projektu i dodaje odpowiadający element **AdventureWorksLTDataSet** do okna **źródła danych** . Plik AdventureWorksLTDataSet. xsd definiuje określony zestaw danych o nazwie `AdventureWorksLTDataSet` i TableAdapter o nazwie `ProductTableAdapter` . W dalszej części tego instruktażu zostanie użyta funkcja `ProductTableAdapter` do wypełnienia zestawu danych danymi i zapisania zmian z powrotem w bazie danych.
 
 9. Skompiluj projekt.
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Edytuj domyślną metodę Fill elementu TableAdapter
- Aby wypełnić zestaw danych danymi, użyj metody `Fill` `ProductTableAdapter`. Domyślnie metoda `Fill` wypełnia `ProductDataTable` w `AdventureWorksLTDataSet` ze wszystkimi wierszami danych z tabeli Product. Możesz zmodyfikować tę metodę, aby zwrócić tylko podzestaw wierszy. W tym instruktażu zmodyfikuj metodę `Fill`, aby zwracała tylko wiersze dla produktów mających zdjęcia.
+ Aby wypełnić zestaw danych danymi, użyj `Fill` metody `ProductTableAdapter` . Domyślnie `Fill` Metoda wypełnia `ProductDataTable` w programie `AdventureWorksLTDataSet` wszystkie wiersze danych z tabeli Product. Możesz zmodyfikować tę metodę, aby zwrócić tylko podzestaw wierszy. W tym instruktażu zmodyfikuj `Fill` metodę, aby zwracała tylko wiersze dla produktów mających zdjęcia.
 
 #### <a name="to-load-product-rows-that-have-photos"></a>Aby załadować wiersze produktu z fotografiami
 
@@ -120,7 +120,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
      Zostanie otwarty Kreator **konfiguracji TableAdapter** .
 
-3. Na stronie **wprowadzanie instrukcji SQL** Dodaj następującą klauzulę WHERE po instrukcji `SELECT` w polu tekstowym.
+3. Na stronie **wprowadzanie instrukcji SQL** Dodaj następującą klauzulę WHERE po `SELECT` instrukcji w polu tekstowym.
 
     ```
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
@@ -137,7 +137,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
      Okno zostanie otwarte w projektancie WPF.
 
-2. W widoku [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] projektanta Dodaj następujący kod między tagami `<Grid>`:
+2. W [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] widoku projektanta Dodaj następujący kod między `<Grid>` tagami:
 
     ```
     <Grid.RowDefinitions>
@@ -152,7 +152,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 3. Skompiluj projekt.
 
 ## <a name="createdata-bound-controls"></a>Kontrolki powiązane z danymi
- Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając tabelę `Product` z okna **źródła danych** do projektanta WPF.
+ Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając `Product` tabelę z okna **źródła danych** do projektanta WPF.
 
 #### <a name="to-create-data-bound-controls"></a>Aby utworzyć formanty powiązane z danymi
 
@@ -168,9 +168,9 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
     - ThumbnailPhotoFileName
 
-    - ROWGUID
+    - danej
 
-    - Data modyfikacji
+    - ModifiedDate
 
 4. Kliknij menu rozwijane obok węzła **ThumbNailPhoto** i wybierz pozycję **obraz**.
 
@@ -186,27 +186,27 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 7. W oknie **Właściwości** zaznacz pole wyboru obok właściwości **IsReadOnly** .
 
 ## <a name="navigating-product-records"></a>Nawigowanie po rekordach produktów
- Dodaj kod, który umożliwia użytkownikom przewijanie rekordów produktów za pomocą przycisków **\<** i **>** .
+ Dodaj kod, który umożliwia użytkownikom przewijanie rekordów produktów za pomocą **\<** and **>** przycisków.
 
 #### <a name="to-enable-users-to-navigate-product-records"></a>Aby umożliwić użytkownikom nawigowanie w rekordach produktów
 
-1. W projektancie kliknij dwukrotnie przycisk **<** na powierzchni okna.
+1. W projektancie kliknij dwukrotnie **<** przycisk na powierzchni okna.
 
-     Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `backButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
+     Program Visual Studio otwiera plik związany z kodem i tworzy nowy `backButton_Click` program obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzenia.
 
-2. Zmodyfikuj procedurę obsługi zdarzeń `Window_Loaded`, więc `ProductViewSource`, `AdventureWorksLTDataSet`i `AdventureWorksLTDataSetProductTableAdapter` znajdują się poza metodą i są dostępne dla całego formularza. Zadeklaruj tylko te, które mają być globalne dla formularza, i przypisz je w ramach procedury obsługi zdarzeń `Window_Loaded`, podobne do następujących:
+2. Zmodyfikuj `Window_Loaded` procedurę obsługi zdarzeń, a więc `ProductViewSource` , `AdventureWorksLTDataSet` , i, `AdventureWorksLTDataSetProductTableAdapter` znajdują się poza metodą i dostępną dla całego formularza. Zadeklaruj tylko te, które mają być globalne dla formularza, i przypisz je w ramach `Window_Loaded` procedury obsługi zdarzeń podobne do następujących:
 
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]
 
-3. Dodaj następujący kod do programu obsługi zdarzeń `backButton_Click`:
+3. Dodaj następujący kod do `backButton_Click` programu obsługi zdarzeń:
 
      [!code-csharp[Data_WPFDATASET#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFDATASET#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#2)]
 
-4. Wróć do projektanta i kliknij dwukrotnie przycisk **>** .
+4. Wróć do projektanta i kliknij dwukrotnie **>** przycisk.
 
-5. Dodaj następujący kod do programu obsługi zdarzeń `nextButton_Click`:
+5. Dodaj następujący kod do `nextButton_Click` programu obsługi zdarzeń:
 
      [!code-csharp[Data_WPFDATASET#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFDATASET#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#3)]
@@ -218,15 +218,15 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 1. W projektancie kliknij dwukrotnie przycisk **Zapisz zmiany** .
 
-     Program Visual Studio otwiera plik związany z kodem i tworzy nowy program obsługi zdarzeń `saveButton_Click` dla zdarzenia <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.
+     Program Visual Studio otwiera plik związany z kodem i tworzy nowy `saveButton_Click` program obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzenia.
 
-2. Dodaj następujący kod do programu obsługi zdarzeń `saveButton_Click`:
+2. Dodaj następujący kod do `saveButton_Click` programu obsługi zdarzeń:
 
      [!code-csharp[Data_WPFDATASET#4](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#4)]
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]
 
     > [!NOTE]
-    > W tym przykładzie zastosowano metodę `Save` `TableAdapter`, aby zapisać zmiany. Jest to odpowiednie w tym instruktażu, ponieważ zmieniana jest tylko jedna tabela danych. Jeśli zachodzi potrzeba zapisania zmian w wielu tabelach danych, można użyć metody `UpdateAll` `TableAdapterManager`, którą program Visual Studio generuje wraz z zestawem danych. Aby uzyskać więcej informacji, zobacz [TableAdapterManager Overview (przegląd](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)).
+    > W tym przykładzie zastosowano `Save` metodę, `TableAdapter` Aby zapisać zmiany. Jest to odpowiednie w tym instruktażu, ponieważ zmieniana jest tylko jedna tabela danych. Jeśli zachodzi potrzeba zapisania zmian w wielu tabelach danych, można alternatywnie użyć `UpdateAll` metody `TableAdapterManager` , która generuje program Visual Studio z zestawem danych. Aby uzyskać więcej informacji, zobacz [TableAdapterManager Overview (przegląd](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)).
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
  Skompiluj i uruchom aplikację. Sprawdź, czy można wyświetlać i aktualizować rekordy produktów.
@@ -239,7 +239,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
     - Pola tekstowe wyświetlają dane z pierwszego rekordu produktu, który ma zdjęcie. Ten produkt ma identyfikator produktu 713, a nazwa w **logo z długą cyfrą**().
 
-    - Możesz kliknąć przycisk **>** lub **<** , aby nawigować po innych rekordach produktu.
+    - Możesz kliknąć przycisk **>** lub, **<** Aby nawigować po innych rekordach produktu.
 
 2. W jednym z rekordów produktu Zmień wartość w polu **rozmiar** , a następnie kliknij przycisk **Zapisz zmiany**.
 

@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938857"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
@@ -91,10 +91,10 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz opcję **publikuj > publikowanie na platformie Azure**: ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image5.png)
+1. Kliknij prawym przyciskiem myszy nazwę projektu i wybierz opcję **publikuj > publikowanie na platformie Azure**:  ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image5.png)
 2. Jeśli masz już połączenie z kontem platformy Azure w celu Visual Studio dla komputerów Mac zostanie wyświetlona lista dostępnych usług App Services. Jeśli użytkownik nie zalogował się, zostanie wyświetlony odpowiedni monit.
 3. W oknie dialogowym **Publikowanie w Azure App Service** możesz wybrać istniejącą usługę App Service lub utworzyć nową, klikając przycisk **Nowy**.
-4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia: ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image7.png)
+4. W oknie dialogowym **Tworzenie nowego App Service** wprowadź ustawienia:  ![ Publikowanie w usłudze Azure — opcja menu](media/azure-functions-image7.png)
 
     |Ustawienie  |Opis  |
     |---------|---------|

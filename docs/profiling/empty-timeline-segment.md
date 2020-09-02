@@ -1,5 +1,5 @@
 ---
-title: Pusty segment osi czasu | Dokumenty firmy Microsoft
+title: Pusty segment osi czasu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62970112"
 ---
-# <a name="empty-timeline-segment"></a>Opróżnianie segmentu osi czasu
-W wizualizatorze współbieżności przyczyna, że sekcja osi czasu jest pusta (ma białe tło) zależy od rodzaju kanału.
+# <a name="empty-timeline-segment"></a>Pusty segment osi czasu
+W wizualizatorze współbieżności powód, dla którego sekcja osi czasu jest pusta (ma białe tło) zależy od rodzaju kanału.
 
-- Dla kanału wątku procesora CPU oznacza to, że wątek nie istnieje podczas tej części osi czasu. Jeśli jesteś zainteresowany wątku, można znaleźć jego sekcji wykonywania za pomocą kontroli powiększenia lub przewijanie w poziomie.
+- W przypadku kanału wątku procesora CPU oznacza to, że wątek nie istniał w tej części osi czasu. Jeśli interesuje Cię wątek, możesz znaleźć jego sekcję wykonywania przy użyciu kontrolki powiększenia lub przewijania w poziomie.
 
-- W przypadku kanału We/Wy oznacza to, że w tym momencie nie wystąpił żaden dostęp do dysku w imieniu procesu docelowego.
+- W przypadku kanału we/wy oznacza to, że w tym momencie nie wystąpił dostęp do dysku w imieniu procesu docelowego.
 
-- W przypadku kanału DirectX oznacza to, że podczas tej części osi czasu nie wykonano żadnej pracy gpu w imieniu procesu docelowego.
+- W przypadku kanału DirectX oznacza to, że nie wykonano żadnych zadań procesora GPU w imieniu procesu docelowego w tej części osi czasu.
 
-- Oznacza to, że w przypadku kanału znaczników nie zostały wygenerowane żadne znaczniki.
+- W przypadku kanału znacznika oznacza to, że nie Wygenerowano żadnych znaczników.
 
 ## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)
-- [Kontrolka powiększenia (widok wątków)](../profiling/zoom-control-threads-view.md)
+- [Kontrolka powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)

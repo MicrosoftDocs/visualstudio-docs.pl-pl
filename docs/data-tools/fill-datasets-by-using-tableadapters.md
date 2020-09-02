@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282439"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnianie zestawów danych za pomocą adapterów TableAdapter
@@ -52,7 +52,7 @@ TableAdapters to składniki generowane przez projektanta, które łączą się z
 
 ![Przepływ danych w aplikacji klienckiej](../data-tools/media/clientdatadiagram.gif)
 
-Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet**, klasy TableAdapter nie są generowane jako klasy zagnieżdżone <xref:System.Data.DataSet> . Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład, jeśli masz zestaw danych o nazwie `NorthwindDataSet` , TableAdapters, które są skojarzone z <xref:System.Data.DataTable> s w, `NorthwindDataSet` zostałyby w `NorthwindDataSetTableAdapters` przestrzeni nazw. Aby programowo uzyskać dostęp do określonego TableAdapter, należy zadeklarować nowe wystąpienie TableAdapter. Przykład:
+Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet**, klasy TableAdapter nie są generowane jako klasy zagnieżdżone  <xref:System.Data.DataSet> . Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład, jeśli masz zestaw danych o nazwie `NorthwindDataSet` , TableAdapters, które są skojarzone z  <xref:System.Data.DataTable> s w, `NorthwindDataSet` zostałyby w `NorthwindDataSetTableAdapters` przestrzeni nazw. Aby programowo uzyskać dostęp do określonego TableAdapter, należy zadeklarować nowe wystąpienie TableAdapter. Na przykład:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -129,9 +129,9 @@ Poniżej przedstawiono często używane metody i właściwości `TableAdapterMan
 |Członek|Opis|
 |------------|-----------------|
 |Metoda `UpdateAll`|Zapisuje wszystkie dane ze wszystkich tabel danych.|
-|`BackUpDataSetBeforeUpdate`wartość|Określa, czy należy utworzyć kopię zapasową zestawu danych przed wykonaniem `TableAdapterManager.UpdateAll` metody. Typu.|
+|`BackUpDataSetBeforeUpdate` wartość|Określa, czy należy utworzyć kopię zapasową zestawu danych przed wykonaniem `TableAdapterManager.UpdateAll` metody. Typu.|
 |*tabela* `TableAdapter` wartość|Reprezentuje TableAdapter. Wygenerowany TableAdapterManager zawiera właściwość dla każdej `TableAdapter` zarządzanej przez nią właściwości. Na przykład zestaw danych z tabelą Customers i Orders generuje z TableAdapterManager, który zawiera `CustomersTableAdapter` `OrdersTableAdapter` właściwości i.|
-|`UpdateOrder`wartość|Kontroluje kolejność poszczególnych poleceń INSERT, Update i DELETE. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczeniu.<br /><br /> Domyślnie `UpdateOrder` jest ustawiona wartość **InsertUpdateDelete**. Oznacza to, że operacje INSERT, then Update, a następnie usunięć są wykonywane dla wszystkich tabel w zestawie danych.|
+|`UpdateOrder` wartość|Kontroluje kolejność poszczególnych poleceń INSERT, Update i DELETE. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczeniu.<br /><br /> Domyślnie `UpdateOrder` jest ustawiona wartość **InsertUpdateDelete**. Oznacza to, że operacje INSERT, then Update, a następnie usunięć są wykonywane dla wszystkich tabel w zestawie danych.|
 
 ## <a name="security"></a>Zabezpieczenia
 
@@ -139,4 +139,4 @@ W przypadku korzystania z poleceń danych z właściwością CommandType o warto
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Narzędzia do obsługi zestawów danych](../data-tools/dataset-tools-in-visual-studio.md)
+- [Narzędzia zestawu danych](../data-tools/dataset-tools-in-visual-studio.md)

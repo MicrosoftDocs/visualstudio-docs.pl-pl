@@ -1,5 +1,5 @@
 ---
-title: Itemmetadata — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: ItemMetadata — — element (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,20 +18,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e3d9f72abfd095288b50ab8de9b9bc3eae4cc51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162368"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz wartość metadanych.  
+Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz-wartość metadanych.  
   
  \<Project>  
  \<ItemGroup>  
- \<Element >  
+ \<Item>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,7 +46,7 @@ Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawi
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -60,12 +60,12 @@ Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawi
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest opcjonalna.  
   
- Ten tekst Określa wartość elementu metadanych, które mogą być tekstem lub XML.  
+ Ten tekst Określa wartość metadanych elementu, która może być tekstem lub XML.  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie kodu przedstawiono sposób dodawania `Culture` metadanych z wartością `fr` do elementu `CSFile`.  
+ Poniższy przykład kodu pokazuje, jak dodać `Culture` metadane z wartością `fr` do elementu `CSFile` .  
   
 ```  
 <ItemGroup>  

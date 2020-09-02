@@ -1,6 +1,6 @@
 ---
-title: Linting Kod R
-description: Jak pracować z visual studio wbudowanej linting obsługi języka R, w tym opcje linter.
+title: Zaznaczanie błędów kod R
+description: Jak korzystać z obsługi kompilacji Zaznaczanie błędów w programie Visual Studio dla języka R, w tym opcji Linter.
 ms.date: 07/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -11,64 +11,64 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62970744"
 ---
-# <a name="lint-r-code-in-visual-studio"></a>Kod Lint R w programie Visual Studio
+# <a name="lint-r-code-in-visual-studio"></a>Lint kod R w programie Visual Studio
 
-Linter analizuje kod, aby ujawnić potencjalne błędy, problemy z formatowaniem i inne szumy kodu, takie jak fałszywe odstępy. Za pomocą linter pomaga również zachęcić niektórych konwencji kodowania, takich jak identyfikatory są nazwane. Takie konwencje są pomocne w zespołach i innych sytuacjach współpracy.
+Linter analizuje kod, aby odsłonić potencjalne błędy, problemy z formatowaniem i inne zakłócenia kodu, takie jak fałszywe. Korzystanie z Linter również pomaga zachęcić do pewnych konwencji kodowania, takich jak identyfikatory. Takie konwencje są przydatne w zespołach i w innych sytuacjach wspólnych.
 
-R Tools for Visual Studio (RTVS) zapewnia wbudowany linter dla języka R, którego zachowanie jest kontrolowane za pomocą różnych opcji opisanych w tym artykule. Te opcje znajdują się w **narzędzia** > **opcje** > **edytor** > tekstu**R** > **Lint**.
+R Tools for Visual Studio (RTVS) to wbudowana Linter dla języka R, którego zachowanie jest kontrolowane za pomocą różnych opcji opisanych w tym artykule. Te opcje są dostępne w **Tools**  >  **opcji**narzędzia  >  **Edytor tekstu**  >  **R**  >  **lint**.
 
-Lint jest domyślnie wyłączona. Aby włączyć lint, ustaw opcję **Wszystkie** > **włączynie lint** na **True**.
+Lint jest domyślnie wyłączona. Aby włączyć lint, ustaw dla opcji **All**  >  **enable lint** **wartość true**.
 
-Po włączeniu linter działa w edytorze podczas pisania. Problemy pojawiają się jako zielone faliszki. Na przykład w poniższej `=` grafice RTVS zidentyfikował sześć problemów z `<-` kłaczkami, w tym użycie zamiast przypisania, brak odstępów między argumentami funkcji, użycie wielkości liter Pascala i wielkich identyfikatorów oraz użycie średnika. Najechanie kursorem na problem zawiera opis.
+Po włączeniu Linter jest uruchamiany w edytorze podczas wpisywania. Problemy są wyświetlane jako zielono. Na poniższej ilustracji, na przykład, RTVS zidentyfikował sześć lintych problemów, w tym użycie `=` zamiast `<-` dla przypisania, brak odstępów wokół argumentów funkcji, użycie przypadku Pascala i wielkich identyfikatorów oraz użycie średnika. Umieszczenie kursora nad problemem zawiera opis.
 
-![Przykłady wyjścia linter dla kodu R](media/linting-01.png)
+![Przykłady danych wyjściowych Linter dla kodu R](media/linting-01.png)
 
-Często zmieniasz opcje linter w zależności od potrzeb projektu lub pliku. Na przykład przykładowy kod z `=` kursu online `<-` może być używany zamiast identyfikatorów przypadków pascala. Taki kod będzie wyświetlać częste ostrzeżenia linter, ponieważ domyślne opcje linter flagi tych przypadkach. Podczas pracy z tym kodem, a następnie można wyłączyć opcje zamiast spędzać czas poprawiania każdego wystąpienia.
+Często zmienia się opcje Linter w zależności od potrzeb projektu lub pliku. Przykładowo można użyć przykładowego kodu z kursu online `=` zamiast z `<-` identyfikatorów przypadku w języku Pascal. Taki kod będzie wyświetlał częste ostrzeżenia Linter, ponieważ domyślne opcje Linter flagą te przypadki. Podczas pracy z tym kodem można wyłączyć opcje zamiast spędzać czas korygowania każdego wystąpienia.
 
-## <a name="assignment-group"></a>Grupa przydziałów
+## <a name="assignment-group"></a>Grupa przypisania
 
-| Opcja | Wartość domyślna | Efekt kłających się |
+| Opcja | Wartość domyślna | Lint efekt |
 | --- | --- | --- |
-| **Wymusić\<-** | **True** | Określa, `<-` kiedy nie jest używany do przypisywania. |
+| **Określają \<-** | **True** | Określa, kiedy `<-` nie jest używany do przypisywania. |
 
 ## <a name="naming-group"></a>Grupa nazewnictwa
 
-Te opcje flagi identyfikatory, które używają różnych konwencji nazewnictwa:
+Te opcje służą do określania identyfikatorów, które używają różnych konwencji nazewnictwa:
 
-| Opcja | Wartość domyślna | Efekt kłających się |
+| Opcja | Wartość domyślna | Lint efekt |
 | --- | --- | --- |
-| **Flaga camelCase** | **False** | Flagi identyfikatory, które używają camelCase. |
-| **Flaga długie nazwy** | **False** | Flagi identyfikatorów, których nazwy przekraczają **ustawienie Maksymalna długość nazwy.** |
-| **Oznaczanie wielu punktów** | **True** | Flagi identyfikatory, które używają wielu punktów. |
-| **Flaga PascalCase** | **True** | Flagi identyfikatory, które używają PascalCase. |
-| **Flaga snake_case** | **False** | Flagi identyfikatory, które używają podkreślenia. |
-| **Flaga wielkie litery** | **True** | Flagi identyfikatory, które używają wszystkich wersalików. |
-| **Maksymalna długość nazwy** | **32** | Długość zastosowana z **ustawieniem Nazwy długie flagi.** |
+| **Oflaguj camelCase** | **False** | Identyfikatory flag używające camelCase. |
+| **Oflaguj długie nazwy** | **False** | Identyfikatory flag, których nazwy przekraczają **maksymalną długość nazwy** . |
+| **Oflaguj wiele kropek** | **True** | Identyfikatory flag używające wielu kropek. |
+| **Oflaguj PascalCase** | **True** | Identyfikatory flag używające PascalCase. |
+| **Snake_case flagi** | **False** | Identyfikatory flag używające podkreśleń. |
+| **Oflaguj wielkie litery** | **True** | Identyfikatory flag używające wersalików. |
+| **Maksymalna długość nazwy** | **32** | Długość zastosowana z ustawieniem **flagi Long Names** . |
 
 ## <a name="spacing-group"></a>Grupa odstępów
 
-Te opcje, z których wszystkie są domyślnie ustawione na **True,** kontrolują, gdzie linter identyfikuje odstępy problemy: po nazwy funkcji, wokół przecinków, wokół operatorów, otwieranie i zamykanie kręte pozycje, spacja przed (i miejsce wewnątrz ().
+Te opcje, dla których wszystkie są domyślnie ustawione na **wartość true** , kontrolują, gdzie Linter identyfikują problemy z odstępami: po nazwach funkcji, wokół przecinków, wokół operatorów, otwieraniu i zamykaniu pozycji klamrowych, spacja przed znakiem ().
 
-## <a name="statements-group"></a>Grupa wyciągów
+## <a name="statements-group"></a>Grupa instrukcji
 
-| Opcja | Wartość domyślna | Efekt kłających się |
+| Opcja | Wartość domyślna | Lint efekt |
 | --- | --- | --- |
-| **Wiele** | **True** | Identyfikuje, gdy wiele instrukcji są w tym samym wierszu. |
-| **Średnikami** | **True** | Identyfikuje zastosowania średników. |
+| **Wiele** | **True** | Określa, kiedy wiele instrukcji znajduje się w tym samym wierszu. |
+| **Średnikami** | **True** | Identyfikuje użycie średników. |
 
 ## <a name="text-group"></a>Grupa tekstowa
 
-| Opcja | Wartość domyślna | Efekt kłających się |
+| Opcja | Wartość domyślna | Lint efekt |
 | --- | --- | --- |
-| **Granica długości linii** | **False** | Określa, czy linter flagi linii dłużej niż **Max długość linii** opcji. |
-| **Maksymalna długość linii** | **80** | Ustawia długość linii zastosowaną przez opcję **Limit długości linii.** |
+| **Limit długości wiersza** | **False** | Określa, czy flagi Linter są dłuższe niż **Maksymalna długość wiersza** . |
+| **Maksymalna długość linii** | **80** | Ustawia długość wiersza zastosowana przez opcję **limitu długości wiersza** . |
 
-## <a name="whitespace-group"></a>Grupa odstępów
+## <a name="whitespace-group"></a>Grupa białych znaków
 
-Te opcje, z których wszystkie są domyślnie ustawione na **True,** kontrolują, gdzie linter identyfikuje problemy z odstępami: użycie kart, użycie cudzysłowów podwójnych, końcowe puste linie i końcowe odstępy.
+Te opcje, dla których wszystkie są domyślnie ustawione na **true** , kontrolują, gdzie Linter identyfikują problemy ze znakami: użycie kart, użycie podwójnych cudzysłowów, końcowe puste wiersze i końcowe odstępy.

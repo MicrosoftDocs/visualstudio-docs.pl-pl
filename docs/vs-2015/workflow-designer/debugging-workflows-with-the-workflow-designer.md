@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b2b5dcbc69853007eebec65142f522f8a942abd1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656833"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Debugowanie przepływów pracy za pomocą Projektanta przepływu pracy
-@No__t_0 zapewnia możliwość debugowania przepływów pracy i działań niestandardowych. Proces i zachowanie są podobne do domyślnego debugera [!INCLUDE[vs2010](../includes/vs2010-md.md)]. W tematach w tej sekcji opisano sposób wykonywania tradycyjnych procedur debugowania, jak również debugowania języka XAML i wyrażeń.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)]Zapewnia możliwość debugowania przepływów pracy i działań niestandardowych. Proces i zachowanie są podobne do [!INCLUDE[vs2010](../includes/vs2010-md.md)] debugera domyślnego. W tematach w tej sekcji opisano sposób wykonywania tradycyjnych procedur debugowania, jak również debugowania języka XAML i wyrażeń.
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Instrukcje: Wywoływanie debugera przepływu pracy](../workflow-designer/how-to-invoke-the-workflow-debugger.md)

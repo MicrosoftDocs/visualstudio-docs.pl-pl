@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c01c034fb08315737c57ef8674230b837a9fa6de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670338"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
@@ -27,7 +27,7 @@ W tej sekcji opisano sposób personalizowania programu Visual Studio na różne 
  Aby rozmieścić pozycje okna i zachowania, a następnie zapisać układy niestandardowe, zobacz [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md).
 
 ### <a name="general-environment-options"></a>Ogólne opcje środowiska
- Aby dostosować wiele ustawień środowiska, wpisz `environment` w obszarze **szybkiego uruchamiania**. Gdy zostanie wyświetlona strona właściwości, możesz nacisnąć klawisz **F1** , aby uzyskać pomoc dotyczącą różnych ustawień na tej stronie. Zobacz też [okno dialogowe Opcje środowiska](../ide/reference/environment-options-dialog-box.md).
+ Aby dostosować wiele ustawień środowiska, wpisz `environment` w obszarze **szybkiego uruchamiania**. Gdy zostanie wyświetlona strona właściwości, możesz nacisnąć klawisz  **F1** , aby uzyskać pomoc dotyczącą różnych ustawień na tej stronie. Zobacz też [okno dialogowe Opcje środowiska](../ide/reference/environment-options-dialog-box.md).
 
 ### <a name="external-tools"></a>Narzędzia zewnętrzne
  Aby dostosować, które narzędzia zewnętrzne pojawiają się w menu i paskach narzędzi, zobacz [Zarządzanie narzędziami zewnętrznymi](../ide/managing-external-tools.md).
@@ -36,13 +36,13 @@ W tej sekcji opisano sposób personalizowania programu Visual Studio na różne 
  Aby utworzyć niestandardową stronę początkową dla Ciebie i Twojego zespołu, zobacz [Dostosowywanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)
 
 ### <a name="environment-color-themes"></a>Motywy kolorów środowiska
- Aby zmienić motyw kolorów między jasnymi, ciemnymi i niebieskimi, wpisz środowisko w obszarze **szybkiego uruchamiania** i wybierz **środowisko &#124; ogólne**. Aby zmienić opcje kolorowania w edytorze, wpisz `environment` w obszarze **szybkiego uruchamiania** i wybierz pozycję **czcionki i kolory środowiska &#124;** . Zobacz również [instrukcje: zmienianie czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Aby zmienić motyw kolorów między jasnymi, ciemnymi i niebieskimi, wpisz środowisko w obszarze **szybkiego uruchamiania** i wybierz **środowisko &#124; ogólne**. Aby zmienić opcje kolorowania w edytorze, wpisz `environment` w obszarze **szybkiego uruchamiania** i wybierz pozycję **środowisko &#124; czcionki i kolory**. Zobacz również [instrukcje: zmienianie czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Menu i paski narzędzi
  Aby dodać lub usunąć elementy menu lub paska narzędzi, zobacz [How to: Dostosowywanie menu i pasków](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)narzędzi.
 
 ### <a name="main-menu-casing"></a>Główna wielkość liter w menu
- Ze względu na popularne żądanie można zmienić wielkość liter w menu głównym między **wielkości tytułu** a **wersalikami** , wpisując `environment` w obszarze **szybkiego uruchamiania** i wybierając  **&#124; środowisko ogólne**.
+ Ze względu na popularne żądanie można zmienić wielkość liter w menu głównym między **wielkości tytułu** a **wersalikami** , wpisując `environment` w obszarze **szybkiego uruchamiania** i wybierając pozycję **środowisko &#124; ogólne**.
 
 ## <a name="see-also"></a>Zobacz też
  [Visual Studio IDE](../ide/visual-studio-ide.md)

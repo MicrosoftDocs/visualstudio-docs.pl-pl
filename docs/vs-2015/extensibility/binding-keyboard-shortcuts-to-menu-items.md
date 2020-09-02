@@ -15,10 +15,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852215"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Wiązanie skrótów klawiaturowych z elementami menu
@@ -52,16 +52,16 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
   
 1. Otwórz plik. vsct dla pakietu.  
   
-2. Utwórz pustą sekcję `<KeyBindings>` po `<Commands>`, jeśli jeszcze jej nie ma.  
+2. Utwórz pustą `<KeyBindings>` sekcję po elemencie, `<Commands>` Jeśli nie jest jeszcze obecna.  
   
    > [!WARNING]
    > Aby uzyskać więcej informacji na temat powiązań kluczy, zobacz [powiązanie klawiszy](../extensibility/keybinding-element.md).  
   
-    W sekcji `<KeyBindings>` Utwórz wpis `<KeyBinding>`.  
+    W `<KeyBindings>` sekcji Utwórz `<KeyBinding>` wpis.  
   
-    Ustaw atrybuty `guid` i `id` na wartości poleceń, które chcesz wywołać.  
+    Ustaw `guid`  atrybuty i  `id` dla poleceń, które chcesz wywołać.  
   
-    Ustaw atrybut `mod1` na **Control**, **Alt**lub **SHIFT**.  
+    Ustaw `mod1` atrybut na **Control**, **Alt**lub **SHIFT**.  
   
     Sekcja powiązania klawiszy powinna wyglądać następująco:  
   
@@ -73,18 +73,18 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
   
    ```  
   
-   Jeśli skrót klawiaturowy wymaga więcej niż dwóch kluczy, ustaw atrybuty `mod2` i `key2`.  
+   Jeśli skrót klawiaturowy wymaga więcej niż dwóch kluczy, ustaw `mod2` atrybuty i `key2` .  
   
    W większości sytuacji nie należy używać **klawisza Shift** bez drugiego modyfikatora, ponieważ jego naciśnięcie już powoduje, że większość klawiszy alfanumerycznych może wpisać wielką literę lub symbol.  
   
    Kody kluczy wirtualnych umożliwiają dostęp do kluczy specjalnych, które nie mają skojarzonego z nimi znaku, na przykład klawisze funkcyjne i klawisz **Backspace** . Aby uzyskać więcej informacji, zobacz [kody kluczy wirtualnych](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
-   Aby polecenie było dostępne w edytorze programu Visual Studio, ustaw atrybut `editor` na `guidVSStd97`.  
+   Aby polecenie było dostępne w edytorze programu Visual Studio, należy ustawić `editor` atrybut na `guidVSStd97` .  
   
-   Aby polecenie było dostępne tylko w edytorze niestandardowym, należy ustawić atrybut `editor` na nazwę niestandardowego edytora, który został wygenerowany przez szablon pakietu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podczas tworzenia pakietu VSPackage zawierającego Edytor niestandardowy. Aby znaleźć wartość nazwy, zapoznaj się z sekcją `<Symbols>` węzła `<GuidSymbol>`, którego atrybut `name` jest zakończony "`editorfactory`". To jest nazwa niestandardowego edytora.  
+   Aby polecenie było dostępne tylko w edytorze niestandardowym, należy ustawić `editor` atrybut na nazwę niestandardowego edytora, który został wygenerowany przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablon pakietu podczas tworzenia pakietu VSPackage zawierającego Edytor niestandardowy. Aby znaleźć wartość nazwy, zapoznaj się z `<Symbols>` sekcją `<GuidSymbol>` węzła, którego `name` atrybut jest kończący się znakiem " `editorfactory` ." To jest nazwa niestandardowego edytora.  
   
 ## <a name="example"></a>Przykład  
- Ten przykład wiąże skrót klawiaturowy CTRL + ALT + C do polecenia o nazwie `cmdidMyCommand` w pakiecie o nazwie `MyPackage`.  
+ Ten przykład wiąże skrót klawiaturowy CTRL + ALT + C do polecenia o nazwie `cmdidMyCommand` w pakiecie o nazwie `MyPackage` .  
   
 ```  
 <CommandTable>  
@@ -101,7 +101,7 @@ Aby powiązać skrót klawiaturowy z niestandardowym poleceniem menu, po prostu 
 ```  
   
 ## <a name="example"></a>Przykład  
- Ten przykład wiąże skrót klawiaturowy CTL + B z poleceniem o nazwie `cmdidBold` w projekcie o nazwie `TestEditor`. Polecenie jest dostępne tylko w edytorze niestandardowym, a nie w innych edytorach.  
+ Ten przykład wiąże skrót klawiaturowy CTL + B z poleceniem o nazwie `cmdidBold` w projekcie o nazwie `TestEditor` . Polecenie jest dostępne tylko w edytorze niestandardowym, a nie w innych edytorach.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  

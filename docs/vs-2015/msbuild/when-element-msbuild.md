@@ -1,5 +1,5 @@
 ---
-title: Gdy Element (MSBuild) | Dokumentacja firmy Microsoft
+title: When — element (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,24 +20,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e23b89ab9aa48a87505eb9b53a8646da06df4931
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162306"
 ---
 # <a name="when-element-msbuild"></a>When — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa możliwe blok kodu dla `Choose` element, aby wybrać.  
+Określa możliwy blok kodu dla `Choose` elementu do wybrania.  
   
  \<Project>  
- \<Wybierz >  
- \<Gdy >  
- \<Wybierz >  
+ \<Choose>  
+ \<When>  
+ \<Choose>  
  ...  
- \<W przeciwnym razie >  
- \<Wybierz >  
+ \<Otherwise>  
+ \<Choose>  
  ...  
   
 ## <a name="syntax"></a>Składnia  
@@ -57,15 +57,15 @@ Określa możliwe blok kodu dla `Choose` element, aby wybrać.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Warunek|Atrybut wymagany.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|Warunek|Atrybut wymagany.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Wybierz opcję](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `When` elementu.|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Może wynosić zero lub więcej `ItemGroup` elementów w `When` elementu.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Może wynosić zero lub więcej `PropertyGroup` elementów w `When` elementu.|  
+|[Wybierz ikonę](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Element może mieć zero lub więcej `Choose` elementów `When` .|  
+|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild.md) użytkownika. Element może mieć zero lub więcej `ItemGroup` elementów `When` .|  
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.md) zdefiniowanych przez użytkownika. Element może zawierać zero lub więcej `PropertyGroup` elementów `When` .|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
@@ -74,12 +74,12 @@ Określa możliwe blok kodu dla `Choose` element, aby wybrać.
 |[Choose, element (MSBuild)](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli `Condition` atrybutu daje w wyniku wartość true, element podrzędny `ItemGroup` i `PropertyGroup` elementy `When` elementu są wykonane i wszystkich kolejnych `When` elementy są pomijane.  
+ Jeśli `Condition` atrybut ma wartość true, element podrzędny `ItemGroup` i `PropertyGroup` elementy `When` elementu są wykonywane i wszystkie kolejne `When` elementy są pomijane.  
   
- `Choose`, `When`, I `Otherwise` elementy są używane razem w sposób wybrać jedną sekcję kodu w celu wykonania wielu możliwych alternatyw. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).  
+ `Choose`Elementy, `When` , i `Otherwise` są używane razem, aby zapewnić możliwość wyboru jednej sekcji kodu do wykonania z wielu możliwych wariantów. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy projekt używa `Choose` element, aby wybrać, który zestaw wartości właściwości w `When` elementy, aby ustawić. Jeśli `Condition` oba atrybuty `When` zwrócić elementy `false`, wartości właściwości w `Otherwise` elementu są ustawione.  
+ Następujący projekt używa elementu, `Choose` Aby wybrać zestaw wartości właściwości w elementach, które `When` mają zostać ustawione. Jeśli `Condition` atrybuty obu `When` elementów są oceniane do `false` , wartości właściwości w `Otherwise` elemencie są ustawiane.  
   
 ```  
 <Project  

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40772919031200466999df2dfbf651fae3ee01e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670570"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Porady: Podgląd i edycja kodu za pomocą definicji wglądu (Alt+F12)
@@ -21,7 +21,7 @@ ms.locfileid: "72670570"
 
 Aby wyświetlić i edytować kod bez przełączania się z kodu, który piszesz, można użyć polecenia Sprawdź **definicję** . Zobacz **definicję** i **Przejdź do definicji** Pokaż te same informacje, ale w oknie podręcznym wybierz pozycję **Definicja wglądu** , a następnie **Przejdź do** definicji — pokazuje kod w oddzielnym oknie kodu. Polecenie **Przejdź do definicji** powoduje, że kontekst (czyli aktywne okno kodu, bieżący wiersz i pozycja kursora) do przełączenia do okna kodu definicji. Przy użyciu **definicji wglądu**można wyświetlać i edytować definicję i poruszać się wewnątrz pliku definicji, zachowując swoje miejsce w oryginalnym pliku kodu.
 
- Możesz użyć **definicji wglądu** z C#, Visual Basic i C++ kodu. W Visual Basic, **wgląd do definicji** pokazuje link do **Przeglądarka obiektów** dla symboli, które nie mają metadanych definicji (na przykład typy .NET Framework wbudowane).
+ Możesz użyć **definicji wglądu** z kodem C#, Visual Basic i C++. W Visual Basic, **wgląd do definicji** pokazuje link do **Przeglądarka obiektów** dla symboli, które nie mają metadanych definicji (na przykład typy .NET Framework wbudowane).
 
 > [!IMPORTANT]
 > Tego polecenia nie można użyć w dowolnej wersji Express programu Visual Studio 2013.
@@ -32,11 +32,11 @@ Aby wyświetlić i edytować kod bez przełączania się z kodu, który piszesz,
 
 1. Możesz znaleźć **definicję wglądu** , otwierając menu skrótów dla metody, którą chcesz zbadać. (Klawiatura: Alt+F12)
 
-     Na tej ilustracji przedstawiono okno **definicji wglądu** dla metody o nazwie `Print()`:
+     Na tej ilustracji przedstawiono okno **definicji wglądu** dla metody o nazwie `Print()` :
 
      ![Okno wglądu](../ide/media/peekwindow.png "PeekWindow")
 
-     Okno definicji jest wyświetlane poniżej wiersza `printer.Print(“Hello World!”)` w oryginalnym pliku. Okno nie ukrywa żadnego kodu w pliku oryginalnym. Wiersze, które po wywołaniu `printer.Print(“Hello World!”)` są wyświetlane w oknie definicji.
+     Okno definicji jest wyświetlane poniżej `printer.Print(“Hello World!”)` wiersza w oryginalnym pliku. Okno nie ukrywa żadnego kodu w pliku oryginalnym. Wiersze, które następują po `printer.Print(“Hello World!”)` wywołaniu, pojawią się w oknie definicji.
 
 2. Możesz przenieść kursor w inne miejsce w oknie definicji kodu. Nadal możesz się przemieszczać w oknie oryginalnego kodu powyżej lub poniżej okna definicji.
 
@@ -79,4 +79,4 @@ Aby wyświetlić i edytować kod bez przełączania się z kodu, który piszesz,
     > Możesz również użyć tych samych skrótów klawiaturowych do edycji kodu w oknie **definicji wglądu** w innym miejscu w programie Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
- [Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)
+ [Porady dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)

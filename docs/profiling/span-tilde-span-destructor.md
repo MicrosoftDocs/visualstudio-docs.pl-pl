@@ -1,5 +1,5 @@
 ---
-title: rozpiętość::~span Destruktor | Dokumenty firmy Microsoft
+title: 'span:: ~ span — destruktor | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b7174418267a77cc668ab0a79092fc7daefbf58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979669"
 ---
-# <a name="spanspan-destructor"></a>rozpiętość::~destruktor zakresu
+# <a name="spanspan-destructor"></a>span:: ~ span — destruktor
 
 Niszczy `span` obiekt i zwalnia jego zasoby.
 
@@ -31,10 +31,10 @@ Niszczy `span` obiekt i zwalnia jego zasoby.
 
 ## <a name="requirements"></a>Wymagania
 
-**Nagłówek:** *cvmarkersobj.h*
+**Nagłówek:** *cvmarkersobj. h*
 
-**Obszar nazw:** Współbieżność::dignostyk
+**Przestrzeń nazw:** Współbieżność::d przesła
 
 ## <a name="see-also"></a>Zobacz też
 
-- [klasa span](../profiling/span-class.md)
+- [span, klasa](../profiling/span-class.md)
