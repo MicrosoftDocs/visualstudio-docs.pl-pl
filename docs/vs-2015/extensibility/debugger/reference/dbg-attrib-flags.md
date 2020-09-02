@@ -1,5 +1,5 @@
 ---
-title: DBG_ATTRIB_FLAGS | Dokumentacja firmy Microsoft
+title: DBG_ATTRIB_FLAGS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 74694c903040b278ed8864b46756cac66381405a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445009"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64789144"
 ---
-# <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
+# <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-W tym artykule opisano różne atrybuty dla [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) lub [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interfejsu. Członek [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury.  
+Opisuje różne atrybuty interfejsu [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) lub [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Składowa struktury [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -166,19 +166,19 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
   
 ## <a name="members"></a>Elementy członkowskie  
  DBG_ATTRIB_NONE  
- Wskazuje żadnych atrybutów.  
+ Nie wskazuje żadnych atrybutów.  
   
  DBG_ATTRIB_ALL  
  Wskazuje wszystkie atrybuty.  
   
  DBG_ATTRIB_OBJ_IS_EXPANDABLE  
- Wskazuje, że odwołanie lub właściwość ma elementy podrzędne.  
+ Wskazuje, że odwołanie lub właściwość zawiera elementy podrzędne.  
   
  DBG_ATTRIB_OBJ_HAS_ID  
- Wskazuje, że utworzono Identyfikatora dla tego obiektu.  
+ Wskazuje, że identyfikator dla tego obiektu został utworzony.  
   
  DBG_ATTRIB_OBJ_CAN_HAVE_ID  
- Wskazuje, że można utworzyć Identyfikatora dla tego obiektu.  
+ Wskazuje, że można utworzyć identyfikator dla tego obiektu.  
   
  DBG_ATTRIB_VALUE_READONLY  
  Wskazuje, że wartość jest tylko do odczytu.  
@@ -187,129 +187,129 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Wskazuje, że wartość jest błędem.  
   
  DBG_ATTRIB_VALUE_SIDE_EFFECT  
- Wskazuje, że ocena ma efekt uboczny.  
+ Wskazuje, że Ocena miała efekt uboczny.  
   
  DBG_ATTRIB_OVERLOADED_CONTAINER  
- Wskazuje, że tę właściwość tak naprawdę jest kontenerem przeciążenia.  
+ Wskazuje, że ta właściwość jest w rzeczywistości kontenerem przeciążenia.  
   
  DBG_ATTRIB_VALUE_BOOLEAN  
- Oznacza to, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` jest wartością logiczną.  
+ Wskazuje, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` jest wartością logiczną.  
   
  DBG_ATTRIB_VALUE_BOOLEAN_TRUE  
- Oznacza to, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` jest atrybut typu wartość logiczna i `TRUE`.  
+ Wskazuje, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` jest wartością logiczną i `TRUE` .  
   
  DBG_ATTRIB_VALUE_INVALID  
- Oznacza to, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` jest nieprawidłowy.  
+ Wskazuje, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` jest nieprawidłowa.  
   
  DBG_ATTRIB_VALUE_NAT  
- Oznacza to, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` jest "*nie niczego*" (NAT). Translator adresów Sieciowych w tym artykule opisano flagę rejestru w 64-bitowych procesorów Intel wskazującą odroczonego spekulacyjnego wyjątków.  
+ Wskazuje, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` to "*nie jako*" (NAT). Translator adresów sieciowych opisuje flagę Register w procesorze Intel 64-bitowym, która wskazuje odroczone wyjątki.  
   
  DBG_ATTRIB_VALUE_AUTOEXPANDED  
- Oznacza to, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` prawdopodobnie został rozszerzony automatycznie.  
+ Wskazuje, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` jest prawdopodobnie rozszerzona.  
   
  DBG_ATTRIB_VALUE_TIMEOUT  
- Wskazuje, że ocena przekroczyła limit czasu.  
+ Wskazuje, że upłynął limit czasu obliczania.  
   
  DBG_ATTRIB_VALUE_RAW_STRING  
- Oznacza to, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` może być reprezentowany przez nieprzetworzonego ciągu.  
+ Wskazuje, że wartość w `DEBUG_PROPERTY_INFO::bstrValue` może być reprezentowana przez nieprzetworzony ciąg.  
   
  DBG_ATTRIB_VALUE_CUSTOM_VIEWER  
- Wskazuje, że ta właściwość ma co najmniej jeden Przeglądarka niestandardowa skojarzonych z nim.  
+ Wskazuje, że ta właściwość ma skojarzoną co najmniej jedną przeglądarkę niestandardową.  
   
  DBG_ATTRIB_ACCESS_NONE  
- Określa obiekt, który nie ma `public`, `private`, ani `protected` typu dostępu.  
+ Wskazuje obiekt, który nie ma ani nie ma `public` `private` `protected` dostępu do typu.  
   
  DBG_ATTRIB_ACCESS_PUBLIC  
- Określa obiekt, który ma dostęp publiczny.  
+ Wskazuje obiekt, który ma dostęp publiczny.  
   
  DBG_ATTRIB_ACCESS_PRIVATE  
- Określa obiekt, który ma dostęp prywatny.  
+ Wskazuje obiekt z dostępem prywatnym.  
   
  DBG_ATTRIB_ACCESS_PROTECTED  
- Określa obiekt, który został ochroną dostępu.  
+ Wskazuje obiekt z dostępem chronionym.  
   
  DBG_ATTRIB_ACCESS_FINAL  
- Określa obiekt, który ma dostęp do końcowej.  
+ Wskazuje obiekt, który ma końcowy dostęp.  
   
  DBG_ATTRIB_ACCESS_ALL  
- Maskę, aby wyodrębnić atrybuty dostępu z `DBG_ATTRIB_FLAGS`.  
+ Maska, z której mają zostać wyodrębnione atrybuty dostępu `DBG_ATTRIB_FLAGS` .  
   
  DBG_ATTRIB_STORAGE_NONE  
- Wskazuje, że istnieje bez określonego typu magazynu.  
+ Wskazuje, że nie określono typu magazynu.  
   
  DBG_ATTRIB_STORAGE_GLOBAL  
- Wskazuje globalnej pamięci masowej.  
+ Wskazuje globalny magazyn.  
   
  DBG_ATTRIB_STORAGE_STATIC  
- Wskazuje statycznego magazynu.  
+ Wskazuje magazyn statyczny.  
   
  DBG_ATTRIB_STORAGE_REGISTER  
- Wskazuje magazynu w rejestrze.  
+ Wskazuje magazyn w rejestrze.  
   
  DBG_ATTRIB_STORAGE_ALL  
- Maskę, aby wyodrębnić atrybuty magazynu z `DBG_ATTRIB_FLAGS`.  
+ Maskowanie, z którego mają zostać wyodrębnione atrybuty magazynu `DBG_ATTRIB_FLAGS` .  
   
  DBG_ATTRIB_TYPE_NONE  
- Wskazuje, że nie istnieje żadne modyfikatora typu.  
+ Wskazuje, że nie ma modyfikatora typu.  
   
  DBG_ATTRIB_TYPE_VIRTUAL  
  Wskazuje, że typ obiektu jest wirtualny.  
   
  DBG_ATTRIB_TYPE_CONSTANT  
- Wskazuje, że typ obiektu jest stały.  
+ Wskazuje, że typem obiektu jest stała.  
   
  DBG_ATTRIB_TYPE_SYNCHRONIZED  
- Wskazuje, że typ obiektu, jest zsynchronizowany.  
+ Wskazuje, że typ obiektu jest synchronizowany.  
   
  DBG_ATTRIB_TYPE_VOLATILE  
  Wskazuje, że typ obiektu jest nietrwały.  
   
  DBG_ATTRIB_TYPE_ALL  
- Maskę, aby wyodrębnić atrybuty typu z `DBG_ATTRIB_FLAGS`.  
+ Maska, z której mają zostać wyodrębnione atrybuty typu `DBG_ATTRIB_FLAGS` .  
   
  DBG_ATTRIB_DATA  
- Wskazuje, czy ten obiekt jest polem danych.  
+ Wskazuje, że ten obiekt jest polem danych.  
   
  DBG_ATTRIB_METHOD  
- Wskazuje, czy ten obiekt jest metodą.  
+ Wskazuje, że ten obiekt jest metodą.  
   
  DBG_ATTRIB_PROPERTY  
- Wskazuje, czy ten obiekt jest właściwością.  
+ Wskazuje, że ten obiekt jest właściwością.  
   
  DBG_ATTRIB_CLASS  
- Wskazuje, czy ten obiekt jest klasą.  
+ Wskazuje, że ten obiekt jest klasą.  
   
  DBG_ATTRIB_BASECLASS  
- Wskazuje, czy ten obiekt jest klasą bazową.  
+ Wskazuje, że ten obiekt jest klasą bazową.  
   
  DBG_ATTRIB_INTERFACE  
- Wskazuje, że tego obiektu jest interfejsem.  
+ Wskazuje, że ten obiekt jest interfejsem.  
   
  DBG_ATTRIB_INNERCLASS  
- Wskazuje, czy ten obiekt jest klasą wewnętrznego.  
+ Wskazuje, że ten obiekt jest klasą wewnętrzną.  
   
  DBG_ATTRIB_MOSTDERIVED  
- Wskazuje, że ten obiekt jest "*najbardziej pochodnego*". Termin "*najbardziej pochodnego*" oznacza, że rzeczywisty typ obiektu, a nie typu odwołanie.  
+ Wskazuje, że ten obiekt jest "*najbardziej pochodny*". Termin "*najbardziej pochodny*" oznacza rzeczywisty typ obiektu, a nie typ odwołania.  
   
  DBG_ATTRIB_CHILD_ALL  
- Określa maskę `DBG_ATTRIB_DATA` za pośrednictwem `DBG_ATTRIB_MOSTDERIVED`.  
+ Wskazuje maskę `DBG_ATTRIB_DATA` przez `DBG_ATTRIB_MOSTDERIVED` .  
   
  DBG_ATTRIB_MULTI_CUSTOM_VIEWERS  
- Wskazuje, że obiekt ma wiele przeglądarek niestandardowych skojarzone z nią.  
+ Wskazuje, że do obiektu jest skojarzonych wiele niestandardowych podglądów.  
   
 ## <a name="remarks"></a>Uwagi  
   
 > [!NOTE]
-> Wartości w tym wyliczeniu nie są faktycznie zdefiniowane w zestawie dla języka C#. Zamiast tego należy skopiować definicji do pliku źródłowego.  
+> Wartości w tym wyliczeniu nie są w rzeczywistości zdefiniowane w zestawie dla języka C#. Zamiast tego należy skopiować definicje do pliku źródłowego.  
   
- Te flagi są również używane do filtrowania elementy podrzędne obiektu, na przykład, gdy jest przekazywany jako argument do [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Te flagi są również używane do filtrowania elementów podrzędnych obiektu, na przykład w przypadku przekazywania jako argumentu do [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Wartości mogą być połączone z bitową `OR` .  
   
- `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` Flaga jest wskazanie [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] uzyskać [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejs z [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfejsu i wywołania [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) listę przeglądarek niestandardowych.  
+ `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`Flaga jest wskazaniem, aby [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] uzyskać Interfejs [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) z interfejsu [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) i wywołać [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) dla listy niestandardowych osób przeglądających.  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

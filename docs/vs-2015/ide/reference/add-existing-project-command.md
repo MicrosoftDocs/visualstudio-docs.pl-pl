@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 73d8e54938659920227b3614046b8a8f933023ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670211"
 ---
 # <a name="add-existing-project-command"></a>Dodaj istniejący projekt — Polecenie
@@ -33,9 +33,9 @@ File.AddExistingProject filename
 ```
 
 ## <a name="arguments"></a>Argumenty
- `filename` opcjonalny. Pełna ścieżka i nazwa projektu, z rozszerzeniem, projektu do dodania do rozwiązania.
+ `filename` Obowiązkowe. Pełna ścieżka i nazwa projektu, z rozszerzeniem, projektu do dodania do rozwiązania.
 
- Jeśli argument `filename` zawiera spacje, musi być ujęty w cudzysłów.
+ Jeśli `filename` argument zawiera spacje, musi być ujęty w cudzysłów.
 
  Jeśli nazwa pliku nie zostanie określona, polecenie spowoduje otwarcie okna dialogowego plików, dzięki czemu użytkownik może wybrać projekt.
 

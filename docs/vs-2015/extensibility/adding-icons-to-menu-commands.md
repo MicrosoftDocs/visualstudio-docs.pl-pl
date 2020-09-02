@@ -1,5 +1,5 @@
 ---
-title: Dodawanie ikon do poleceń Menu | Dokumentacja firmy Microsoft
+title: Dodawanie ikon do poleceń menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,41 +12,41 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 940bef878e7360cd3709b6b3403eff2261948e0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1a0a433534894a8c715047a0431a045aa9429619
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796184"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64797467"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Dodawanie ikon do poleceń menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzędzi jest typowe dla polecenia będą wyświetlane tylko ikony (tak, aby zaoszczędzić miejsce na) podczas w menu, że polecenia pojawi się zazwyczaj z zarówno ikonę i tekst.  
+Polecenia mogą znajdować się zarówno w menu, jak i na paskach narzędzi. Na paskach narzędzi wspólne polecenie jest wyświetlane z ikoną (aby zaoszczędzić miejsce) w menu, a polecenie zazwyczaj pojawia się zarówno w przypadku ikony, jak i tekstu.  
   
- Ikony są 16 pikseli szerokości i wysokości 16 pikseli i może być 8-bitowej głębi kolorów (256 kolorów) lub 32-bitowej głębi kolorów (kolor true). ikon koloru 32-bitowe są preferowane. Ikony zwykle są rozmieszczone w jednym wierszu poziomy w postaci bitmapy, chociaż wiele mapy bitowe są dozwolone. Ta mapa bitowa jest zadeklarowana w pliku vsct wraz z poszczególnych ikon dostępnych w mapie bitowej. Zobacz odwołanie do [Bitmaps, Element](../extensibility/bitmaps-element.md) Aby uzyskać więcej informacji.  
+ Ikony są 16 pikseli o szerokości do 16 pikseli i mogą mieć 8-bitową głębię kolorów (256 kolorów) lub 32-bitową głębię kolorów (True Color). 32-bitowe ikony kolorów są preferowane. Ikony są zwykle rozmieszczane w pojedynczym wierszu w pojedynczej mapie bitowej, chociaż wiele map bitowych jest dozwolonych. Ta mapa bitowa jest zadeklarowana w pliku. vsct wraz z poszczególnymi ikonami dostępnymi w mapie bitowej. Aby uzyskać więcej informacji, zobacz Dokumentacja [elementu mapy bitowe](../extensibility/bitmaps-element.md) .  
   
 ## <a name="adding-an-icon-to-a-command"></a>Dodawanie ikony do polecenia  
- W poniższej procedurze przyjęto, że masz istniejący projekt pakietu VSPackage przy użyciu polecenia menu. Aby dowiedzieć się, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ W poniższej procedurze przyjęto założenie, że masz istniejący projekt pakietu VSPackage z poleceniem menu. Aby dowiedzieć się, jak to zrobić, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-1.  Tworzenie mapy bitowej o głębi kolorów 32 bity. Ikona jest zawsze 16 x 16, więc tej mapy bitowej muszą być 16 pikseli i wielokrotnością liczby 16 pikseli szerokości.  
+1. Utwórz mapę bitową z głębią kolorów 32-bitów. Ikona ma zawsze 16 x 16, więc ta mapa bitowa musi mieć 16 pikseli i mieć wielokrotność 16 pikseli.  
   
-     Każda ikona jest umieszczany na mapę bitową obok siebie w jednym wierszu. Kanał alfa umożliwia wskazanie miejsc przejrzystości każda ikona.  
+     Każda ikona jest umieszczana na mapie bitowej obok siebie w pojedynczym wierszu. Użyj kanału alfa, aby wskazać miejsca przezroczystości w każdej ikonie.  
   
-     Jeśli korzystasz z 8-bitowej głębi kolorów, użyj amarantowy, `RGB(255,0,255)`, jako przejrzystości. Jednak ikon koloru 32-bitowe są preferowane.  
+     Jeśli używasz 8-bitowej głębi kolorów, użyj karmazynowego, `RGB(255,0,255)` jako przezroczystości. Jednak 32-bitowe ikony kolorów są preferowane.  
   
-2.  Skopiuj plik ikony do katalogu zasobów projektu pakietu VSPackage. W Eksploratorze rozwiązań należy dodać ikonę do projektu. (Wybierz zasoby, w menu kontekstowym kliknij przycisk Dodaj, a następnie istniejący element i wybierz swój plik ikony.)  
+2. Skopiuj plik ikony do katalogu zasobów w projekcie pakietu VSPackage. W Eksplorator rozwiązań Dodaj ikonę do projektu. (Wybierz zasoby, a następnie w menu kontekstowym kliknij przycisk Dodaj, a następnie istniejący element i wybierz plik ikony).  
   
-3.  Otwórz plik vsct w edytorze.  
+3. Otwórz plik. vsct w edytorze.  
   
-4.  Dodaj `GuidSymbol` elementu o nazwie **testIcon**. Utwórz identyfikator GUID (**narzędzia / Tworzenie identyfikatora GUID**, a następnie wybierz **Format rejestru** i kliknięcie przycisku Kopiuj) i wklej go w `value` atrybutu. Wynik powinien wyglądać następująco:  
+4. Dodaj `GuidSymbol` element o nazwie **testIcon**. Utwórz identyfikator GUID (**Narzędzia/Utwórz identyfikator GUID**, a następnie wybierz pozycję **Format rejestru** i kliknij przycisk Kopiuj) i wklej go do `value` atrybutu. Wynik powinien wyglądać następująco:  
   
     ```xml  
     <!-- Create your own GUID -->  
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">  
     ```  
   
-5.  Dodaj `<IDSymbol>` ikony. `name` Atrybut jest identyfikator ikony i `value` wskazuje swoją pozycję na taśmy, jeśli istnieje. Jeśli istnieje tylko jedna ikona, należy dodać 1. Wynik powinien wyglądać następująco:  
+5. Dodaj `<IDSymbol>` do ikony. Ten `name` atrybut jest identyfikatorem ikony i `value` wskazuje jego pozycję na pasku, jeśli istnieje. Jeśli istnieje tylko jedna ikona, Dodaj 1. Wynik powinien wyglądać następująco:  
   
     ```xml  
     <!-- Create your own GUID -->  
@@ -55,13 +55,13 @@ Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzę
     </GuidSymbol>  
     ```  
   
-6.  Tworzenie `<Bitmap>` w `<Bitmaps>` części pliku vsct do reprezentowania mapy bitowej zawierający ikony.  
+6. Utwórz `<Bitmap>` w `<Bitmaps>` sekcji pliku. vsct do reprezentowania mapy bitowej zawierającej ikony.  
   
-    -   Ustaw `guid` wartość odpowiadającą nazwie `<GuidSymbol>` elementu utworzonego w poprzednim kroku.  
+    - Ustaw `guid` wartość na nazwę `<GuidSymbol>` elementu, który został utworzony w poprzednim kroku.  
   
-    -   Ustaw `href` wartość względną ścieżką pliku mapy bitowej (w tym przypadku **zasobów\\< nazwa pliku ikony\>**.  
+    - Ustaw `href` wartość na ścieżkę względną pliku mapy bitowej (w tym przypadku **zasoby \\<ikony \> Nazwa pliku**.  
   
-    -   Ustaw `usedList` wartość IDSymbol, została utworzona wcześniej. Ten atrybut określa rozdzielana przecinkami lista ikon, które zostaną użyte w pakietu VSPackage. Ikony nie ma na liście są wykluczone formularza kompilacji.  
+    - Ustaw `usedList` wartość IDSymbol, która została utworzona wcześniej. Ten atrybut Określa rozdzielaną przecinkami listę ikon, które mają być używane w pakietu VSPackage. Ikony, które nie znajdują się na liście, są wykluczone.  
   
          Blok mapy bitowej powinien wyglądać następująco:  
   
@@ -69,7 +69,7 @@ Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzę
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>  
         ```  
   
-7.  W istniejącym `<Button>` elementu, ustaw `Icon` elementu GUIDSymbol i IDSymbol utworzonych wcześniej wartości. Poniżej przedstawiono przykład elementu przycisk z tych wartości:  
+7. W istniejącym `<Button>` elemencie Ustaw `Icon` dla elementu wartości GUIDSymbol i IDSymbol utworzone wcześniej. Oto przykład elementu Button z tymi wartościami:  
   
     ```xml  
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">  
@@ -81,7 +81,7 @@ Polecenia może znajdować się w menu i na paskach narzędzi. Na paskach narzę
     </Button>  
     ```  
   
-8.  Przetestuj ikona. Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu znaleźć polecenia. Należy widoczna ikona została dodana.  
+8. Przetestuj ikonę. Skompiluj projekt i Rozpocznij debugowanie. W eksperymentalnym wystąpieniu Znajdź polecenie. Powinna zostać wyświetlona ikona, która została dodana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   

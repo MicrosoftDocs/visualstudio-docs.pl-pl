@@ -1,5 +1,5 @@
 ---
-title: 0 wariantów x-2 x-4 x MSAA | Dokumentacja firmy Microsoft
+title: Odmiany "0x-2x" 4x MSAA | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,55 +10,55 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439986"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64797184"
 ---
-# <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA wariantów
+# <a name="0x2x4x-msaa-variants"></a>Warianty 0x/2x/4x MSAA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zastąpienia wielu przykładowe Wygładzanie (MSAA) ustawień dla wszystkich elementy docelowe renderowania i łańcuchy wymiany.  
+Przesłania wiele przykładowych ustawień wygładzania (MSAA) dla wszystkich obiektów docelowych renderowania i łańcuchów wymiany.  
   
 ## <a name="interpretation"></a>Interpretacja  
- Wielu przykładowe wygładzanie zwiększa jakość wizualną, pobieranie próbek w wielu lokalizacjach w każdego piksela; wyższy poziom MSAA zajmuje więcej przykładów i bez MSAA, tylko jeden przykład pochodzi z centrum piksela. Włączanie MSAA w swojej aplikacji, zwykle ma niewielkie ale zauważalne koszt wydajności renderowania, ale w niektórych obciążeń lub na niektórych procesorach GPU znajdujących się, może być miał prawie bez wpływu.  
+ Wiele prób wygładzania zwiększa jakość wizualną, pobierając próbki w wielu lokalizacjach w każdym pikselu; wyższe poziomy technologii MSAA pobierają więcej próbek i nie są MSAA, tylko jeden przykład jest pobierany z środka piksela. Włączenie technologii MSAA w aplikacji zwykle ma Nieumiarkowany, ale zauważalny koszt renderowania wydajności, ale pod pewnymi obciążeniami lub w niektórych procesorach GPU może mieć prawie Brak wpływu.  
   
- Jeśli Twoja aplikacja ma już włączoną MSAA, mniejsze wariantów MSAA wskazują koszt względnej wydajności, która ponosi MSAA istniejących, wyższego poziomu. W szczególności 0 wariant x MSAA wskazuje względną wydajność aplikacji bez MSAA.  
+ Jeśli w aplikacji jest już włączona technologia MSAA, to mniejsze warianty MSAA wskazują na względny koszt wydajności, który jest używany przez istniejące, MSAA wyższego poziomu. W szczególności, zmienna MSAA "0x" oznacza względną wydajność aplikacji bez technologii MSAA.  
   
- Jeśli aplikacja nie ma jeszcze MSAA włączone, 2 x MSAA i 4 wariantów x MSAA wskazują koszt względnej wydajności umożliwiające im w swojej aplikacji. Gdy koszt jest zadowalająco niski, należy rozważyć włączenie MSAA zwiększyć jakość obrazu aplikacji.  
+ Jeśli Twoja aplikacja nie ma już włączonej technologii MSAA, a następnie różne odmiany MSAA i 4x, wybierz względny koszt wydajności, aby włączyć je w aplikacji. Gdy koszt jest zadowalająco niski, należy rozważyć włączenie technologii MSAA w celu zwiększenia jakości obrazu aplikacji.  
   
 > [!NOTE]
-> Sprzęt nie może w pełni obsługuje MSAA we wszystkich formatach. Ograniczenie sprzętu, który nie pracuje w całym wszystkich tych wariantów wystąpienia, kolumny w tabeli podsumowania wydajności jest pusta i jest generowany komunikat o błędzie.  
+> Sprzęt może nie w pełni obsługiwać technologii MSAA dla wszystkich formatów. Jeśli którykolwiek z tych wariantów napotyka ograniczenie sprzętowe, którego nie można obejść, jego kolumna w tabeli Podsumowanie wydajności jest pusta i zostanie wyświetlony komunikat o błędzie.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wariantów Zastąp przykładowe jakość próbkowania i liczba argumentów dla wywołań `ID3DDevice::CreateTexture2D` które tworzą elementy docelowe renderowania. W szczególności te parametry zostaną zastąpione, gdy:  
+ Te warianty przesłaniają liczbę próbek i argumenty jakości próbkowania dla wywołań `ID3DDevice::CreateTexture2D` , które tworzą elementy docelowe renderowania. Parametry te są zastępowane w następujących przypadkach:  
   
-- `D3D11_TEXTURE2D_DESC` Obiekt przekazany w `pDesc` opisuje obiekt docelowy renderowania; który jest:  
+- `D3D11_TEXTURE2D_DESC`Obiekt przeszedł w `pDesc` opisie elementu docelowego renderowania, czyli:  
   
-  - Element członkowski BindFlags ma flagę D3D11_BIND_TARGET albo ustawiona jest flaga D3D11_BIND_DEPTH_STENCIL.  
+  - Element członkowski BindFlags ma ustawioną flagę D3D11_BIND_TARGET lub D3D11_BIND_DEPTH_STENCIL.  
   
-  - Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.  
+  - Element członkowski użycia jest ustawiony na D3D11_USAGE_DEFAULT.  
   
-  - Element członkowski CPUAccessFlags jest równa 0.  
+  - Wartość elementu członkowskiego CPUAccessFlags jest równa 0.  
   
-  - Element członkowski MipLevels jest ustawiona na 1.  
+  - Element członkowski MipLevels jest ustawiony na 1.  
   
-- Urządzenie obsługuje liczność próbki żądanej (0, 2 lub 4) i jakość próbkowania (0) dla żądanego docelowej format (członek D3D11_TEXTURE2D_DESC::Format), zgodnie z ustaleniami renderowania `ID3D11Device::CheckMultisampleQualityLevels`.  
+- Urządzenie obsługuje żądaną liczbę próbek (0, 2 lub 4) i jakość próbkowania (0) dla żądanego formatu docelowego renderowania (D3D11_TEXTURE2D_DESC:: format członkowski), zgodnie z definicją `ID3D11Device::CheckMultisampleQualityLevels` .  
   
-  Jeśli element członkowski D3D11_TEXTURE2D_DESC::BindFlags ma D3D_BIND_SHADER_RESOURCE lub D3D11_BIND_UNORDERED_ACCESS flag ustawionych, są tworzone dwie wersje tekstury; pierwszy ma tych flag wyczyszczone do użycia jako obiektu docelowego renderowania, a drugi to teksturę bez MSAA, która ma te flagi niezmienione może pełnić rolę bufora rozwiązania dla pierwszej wersji. Jest to konieczne, ponieważ prawdopodobnie nie będzie obowiązywać przy użyciu tekstury MSAA jako zasób programu do cieniowania lub nieuporządkowanego dostępu — na przykład programu do cieniowania, działające na nim będzie wygenerować niepoprawne wyniki, ponieważ go oczekiwać tekstury bez MSAA. Jeśli wariant utworzył tekstury dodatkowej bez MSAA, następnie zawsze wtedy, gdy cel renderowania MSAA usunięta z kontekstu urządzenia, jego zawartość są rozwiązywane do tekstury bez MSAA. Podobnie zawsze wtedy, gdy renderowania MSAA docelowy powinien zostać powiązany jako zasób programu do cieniowania lub jest używany w widok nieuporządkowanego dostępu, tekstury rozwiązany bez MSAA jest powiązana zamiast tego.  
+  Jeśli element członkowski D3D11_TEXTURE2D_DESC:: BindFlags ma ustawioną flagę D3D_BIND_SHADER_RESOURCE lub D3D11_BIND_UNORDERED_ACCESS, zostaną utworzone dwie wersje tekstury; pierwszy z tych flag został wyczyszczony do użycia jako obiekt docelowy renderowania, a druga to tekstura nieaktywna, która ma te flagi pozostawione nienaruszone, aby działać jako bufor rozpoznawania dla pierwszej wersji. Jest to konieczne, ponieważ użycie tekstury MSAA jako zasobu programu do cieniowania lub nieuporządkowanego dostępu jest mało prawdopodobne — na przykład, gdy cieniowanie działające w ten sposób będzie generować nieprawidłowe wyniki, ponieważ będzie oczekiwać tekstury niezgodnej ze standardem. Jeśli wariant utworzył dodatkową teksturę, która nie jest MSAA, wtedy, gdy obiekt docelowy renderowania MSAA nie zostanie ustawiony z kontekstu urządzenia, jego zawartość zostanie rozwiązany do tekstury niemsaa. Podobnie, zawsze, gdy obiekt docelowy renderowania MSAA powinien być powiązany jako zasób programu do cieniowania lub jest używany w widoku nieuporządkowanego dostępu, zamiast tego zostanie powiązana niezależna tekstura.  
   
-  Te wariantów również zastąpienia ustawień MSAA wszystkie łańcuchy wymiany utworzone za pomocą `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, i `ID3D11CreateDeviceAndSwapChain`.  
+  Te warianty zastępują również ustawienia technologii MSAA we wszystkich łańcuchach wymiany utworzonych przy użyciu `IDXGIFactory::CreateSwapChain` , `IDXGIFactory2::CreateSwapChainForHwnd` , `IDXGIFactory2::CreateSwapChainForCoreWindow` , `IDXGIFactory2::CreateSwapChainForComposition` i `ID3D11CreateDeviceAndSwapChain` .  
   
-  Net te zmiany powoduje, że renderowanie wszystkich odbywa się do obiektu docelowego renderowania MSAA, ale jeśli aplikacja używa jednej z tych renderowania elementów docelowych lub łańcucha wymiany buforów jako widok zasobów programu do cieniowania lub widok nieuporządkowanego dostępu, a następnie próbkowania danych z rozwiązania , bez MSAA kopię obiektu docelowego renderowania.  
+  Efektem netto tych zmian jest to, że wszystkie renderingi są wykonywane do obiektu docelowego renderowania MSAA, ale jeśli aplikacja używa jednego z tych elementów docelowych renderowania lub buforów wymiany, jako widoku zasobów programu do cieniowania lub widoku nieuporządkowanego dostępu, dane są pobierane z rozwiązanej, niezgodnej z nią kopii docelowej renderowania.  
   
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia  
- W Direct3D11 MSAA tekstury są bardziej ograniczony w innych MSAA tekstury. Na przykład nie można wywołać `ID3D11DeviceContext::UpdateSubresource` MSAA tekstury i wywoływania `ID3D11DeviceContext::CopySubresourceRegion` zakończy się niepowodzeniem, jeśli liczba próbek i jakość próbkowania zasobu źródłowego i docelowego zasobu nie są zgodne, które mogą wystąpić, gdy ten wariant zastępuje ustawienia MSAA jednej zasób, ale nie drugiej.  
+ W programie Direct3D11 tekstury MSAA są bardziej ograniczone niż tekstury niezgodne ze standardami. Na przykład nie można wywołać `ID3D11DeviceContext::UpdateSubresource` na teksturze MSAA i wywołanie `ID3D11DeviceContext::CopySubresourceRegion` kończy się niepowodzeniem, jeśli liczba próbek i jakość próbki zasobu źródłowego i zasobu docelowego nie są zgodne, co może wystąpić, gdy ten wariant zastępuje ustawienia MSAA jednego zasobu, ale nie drugi.  
   
- Podczas odtwarzania wykryje te rodzaje konfliktów, zapewnia najlepszy nakład pracy w celu replikowania zamierzonego zachowania, ale nie może nie być możliwe do jego wyniki są identyczne. Chociaż jest to nietypowe, to wpłynąć na działanie tych warianty w taki sposób, że zniesławiającej ich wpływ, jest możliwe — na przykład, gdy sterowanie przepływem w program do cieniowania pikseli jest określana przez dokładnej zawartości tekstury — ponieważ replikowane tekstury może nie mieć identyczną zawartość.  
+ Gdy odtwarzanie wykrywa te rodzaje konfliktów, najlepszym rozwiązaniem jest replikowanie zamierzonego zachowania, ale może nie być możliwe dokładne dopasowanie wyników. Chociaż zdarza się to w taki sposób, aby miało to wpływ na wydajność tych wariantów w sposób, który nie reprezentuje ich wpływu, jest to możliwe — na przykład gdy sterowanie przepływem w programie do cieniowania pikseli jest określane przez dokładną zawartość tekstury — ponieważ zreplikowana tekstura może nie mieć identycznej zawartości.  
   
 ## <a name="example"></a>Przykład  
- Te wariantów, można odtworzyć dla obiektów docelowych renderowania utworzone za pomocą `ID3D11Device::CreateTexture2D` przy użyciu kodu w następujący sposób:  
+ Te warianty mogą być odtwarzane dla elementów docelowych renderowania utworzonych za pomocą przy użyciu `ID3D11Device::CreateTexture2D` kodu w następujący sposób:  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  
@@ -69,7 +69,7 @@ d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```  
   
 ## <a name="example"></a>Przykład  
- Lub łańcuchy wymiany utworzone za pomocą IDXGISwapChain::CreateSwapChain lub D3D11CreateDeviceAndSwapChain przy użyciu kodu w następujący sposób:  
+ Lub w przypadku łańcuchów wymiany utworzonych przy użyciu IDXGISwapChain:: CreateSwapChain lub D3D11CreateDeviceAndSwapChain za pomocą kodu w następujący sposób:  
   
 ```  
 DXGI_SWAP_CHAIN_DESC chain_description;  

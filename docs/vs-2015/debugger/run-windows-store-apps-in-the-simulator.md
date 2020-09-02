@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d072f54dfe351d54e3e115dca7a91bec77fbb9e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844930"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie aplikacji ze Sklepu Windows w symulatorze
@@ -35,12 +35,12 @@ Symulator programu Visual Studio dla aplikacji ze sklepu Windows to aplikacja kl
 > [!IMPORTANT]
 > Symulator programu Visual Studio 2015 nie zawiera przycisku geolokalizacji. Jest to spowodowane tym, że symulator systemu Windows 10 nie obejmuje symulacji geolokalizacji. Jeśli potrzebujesz tego rodzaju symulacji, możesz użyć symulatora Visual Studio 2013 w Windows 8.1 lub wcześniejszych systemach operacyjnych.  
   
-## <a name="BKMK_Set_the_simulator_as_the_target"></a>Ustaw symulator jako element docelowy  
+## <a name="set-the-simulator-as-the-target"></a><a name="BKMK_Set_the_simulator_as_the_target"></a> Ustaw symulator jako element docelowy  
  Aby uruchomić aplikację ze sklepu Windows w symulatorze, wybierz z listy rozwijanej pozycję **symulator** , obok przycisku **Rozpocznij debugowanie** na pasku narzędzi **Standardowy** debuger.  
   
  ![Uruchamianie w symulatorze](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
   
-## <a name="BKMK_Choose_an_interaction_mode"></a>Wybierz tryb interakcji  
+## <a name="choose-an-interaction-mode"></a><a name="BKMK_Choose_an_interaction_mode"></a> Wybierz tryb interakcji  
  Można wybrać następujące tryby interakcji  
   
 - ![Przycisk Tryb myszy](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") Tryb myszy: ustawia tryb interakcji na gesty myszy. Gesty myszy obejmują kliknięcia, podwójne kliknięcia i przeciąganie.  
@@ -79,19 +79,19 @@ Symulator programu Visual Studio dla aplikacji ze sklepu Windows to aplikacja kl
 
   - Naciśnij przycisk z lewej strony i obróć kółko myszy do przodu (od użytkownika), aby obrócić obiekt w prawo.  
 
-## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a>Włącz lub Wyłącz zawsze włączony tryb górny  
+## <a name="enable-or-disable-always-on-top-mode"></a><a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Włącz lub Wyłącz zawsze włączony tryb górny  
  Okno symulatora można ustawić zawsze na wierzchu innych okien. Przycisk **przełączania okna** z góry włącza lub wyłącza tryb **zawsze włączony** w oknie symulatora.  
   
-## <a name="BKMK_Change_the_device_orientation"></a>Zmiana orientacji urządzenia  
+## <a name="change-the-device-orientation"></a><a name="BKMK_Change_the_device_orientation"></a> Zmiana orientacji urządzenia  
  Orientację urządzenia można zmienić między pionową i poziomą, obracając symulatora o 90 stopni w dowolnym kierunku.  
   
 > [!NOTE]
-> Symulator nie szanuje właściwości [DisplayProperties. AutoRotationPreferences](https://msdn.microsoft.com/library/windows/apps/windows.graphics.display.displayproperties.autorotationpreferences.aspx) projektu. Na przykład jeśli projekt Ustawia orientację na `Landscape`, a następnie przeniesiesz symulator do orientacji pionowej, obraz ekranu wyświetlania symulatora zostanie również obrócony i zmieniony. Przetestuj te ustawienia na rzeczywistym urządzeniu.  
+> Symulator nie szanuje właściwości [DisplayProperties. AutoRotationPreferences](https://msdn.microsoft.com/library/windows/apps/windows.graphics.display.displayproperties.autorotationpreferences.aspx) projektu. Na przykład jeśli projekt Ustawia orientację na `Landscape` , a następnie przeniesiesz symulator do orientacji pionowej, obraz ekranu wyświetlania symulatora zostanie również obrócony i zmieniony rozmiar. Przetestuj te ustawienia na rzeczywistym urządzeniu.  
   
 > [!NOTE]
 > W przypadku obrócenia symulatora tak, aby jedna krawędź symulatora była większa niż ekran, na którym jest wyświetlana, symulator zostanie automatycznie zmieniony w celu dopasowania do ekranu. Zmiany rozmiaru symulatora nie są zmieniane na oryginalny rozmiar, jeśli zostanie on ponownie obrócony.  
   
-## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a>Zmiana rozmiaru i rozdzielczości ekranu symulowanego  
+## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Zmiana rozmiaru i rozdzielczości ekranu symulowanego  
  Aby zmienić rozmiar symulowanego ekranu i rozdzielczość, wybierz przycisk **Zmień rozdzielczość** na palecie, a następnie wybierz nowy rozmiar i rozdzielczość z listy.  
   
  Rozmiar i rozdzielczość ekranu są wyświetlane jako *Szerokość ekranu, Szerokość pikseli (* w pikselach). Należy zauważyć, że zarówno rozmiar ekranu, jak i rozdzielczość są symulowane. Lokalizacje współrzędnych w symulatorze są tłumaczone na współrzędne wybranego rozmiaru i rozdzielczości urządzenia.  
@@ -99,7 +99,7 @@ Symulator programu Visual Studio dla aplikacji ze sklepu Windows to aplikacja kl
 > [!NOTE]
 > Możesz zapisywać skalowane wersje obrazów mapy bitowej w aplikacji, a system Windows załaduje prawidłowy obraz dla bieżącej skali. Aby uzyskać więcej informacji, zobacz temat [reagowanie na projekt 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Jednakże w przypadku zmiany rozdzielczości symulatora tak, aby system Windows pobierał inny obraz w celu dopasowania go do rozdzielczości, należy zatrzymać i ponownie uruchomić sesję debugowania, aby wyświetlić nowy obraz.  
   
-## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Przechwyć zrzut ekranu aplikacji na potrzeby przesłania do sklepu Windows  
+## <a name="capture-a-screenshot-of-your-app-for-submission-to-the-windows-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Przechwyć zrzut ekranu aplikacji na potrzeby przesłania do sklepu Windows  
  Gdy przesyłasz aplikację do sklepu Windows App Store, musisz dołączyć zrzuty ekranu aplikacji.  
   
 > [!NOTE]
@@ -111,8 +111,8 @@ Symulator programu Visual Studio dla aplikacji ze sklepu Windows to aplikacja kl
   
      ![Menu kontekstowe ustawień zrzutu ekranu](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
-## <a name="BKMK_Simulate_network_connection_properties"></a>Symulowanie właściwości połączenia sieciowego  
- Aby ułatwić użytkownikom aplikacji Zarządzanie kosztami mierzonych połączeń sieciowych, należy utrzymać świadomość kosztu połączenia sieciowego lub zmienić stan planu danych i umożliwić aplikacji korzystanie z tych informacji w celu uniknięcia ponoszenia dodatkowych kosztów dla roamingu lub przekroczenia określony limit transferu danych. Interfejsy API [Windows. Networking. Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) umożliwiają reagowanie na zdarzenia [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) i [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) , które są podpisywany. Zobacz [Szybki Start: Zarządzanie naliczanymi ograniczeniami kosztów sieci](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Symulowanie właściwości połączenia sieciowego  
+ Aby ułatwić użytkownikom aplikacji Zarządzanie kosztami taryfowych połączeń sieciowych, należy utrzymać świadomość kosztu połączenia sieciowego lub zmian stanu planu danych oraz umożliwić aplikacji korzystanie z tych informacji w celu uniknięcia ponoszenia dodatkowych kosztów dla roamingu lub przekroczenia określonego limitu transferu danych. Interfejsy API [Windows. Networking. Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) umożliwiają reagowanie na zdarzenia [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) i [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) , które są podpisywany. Zobacz [Szybki Start: Zarządzanie naliczanymi ograniczeniami kosztów sieci](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Aby debugować lub testować kod obsługujący koszt sieci, symulator może naśladować właściwości sieci, które są udostępniane za pomocą obiektu [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) zwróconego przez [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)..  
   
@@ -140,15 +140,15 @@ Symulator programu Visual Studio dla aplikacji ze sklepu Windows to aplikacja kl
   
    [Przykład informacji o sieci](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
-   [Analiza zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analizowanie zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
     
-   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows. Networking. Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
    [Reagowanie na zdarzenia systemowe z zadaniami w tle](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
    [Jak wyzwolić wstrzymanie, wznowienie i zdarzenia w tle w aplikacjach ze sklepu Windows](https://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
-## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Nawigowanie po symulatorze przy użyciu klawiatury  
+## <a name="navigate-the-simulator-with-the-keyboard"></a><a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Nawigowanie po symulatorze przy użyciu klawiatury  
  Możesz nawigować na pasku narzędzi symulatora, naciskając **klawisze Ctrl + Alt + Strzałka w górę** , aby przełączyć fokus z okna symulatora na pasek narzędzi symulatora. Użyj **strzałki w górę** i **strzałki w dół** , aby przejść między przyciskami paska narzędzi.  
   
  Symulator można zamknąć przez naciśnięcie **klawiszy Ctrl + Alt + F4**.  

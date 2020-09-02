@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateStringObject | Dokumenty firmy Microsoft
+title: 'IDebugFunctionObject:: getstringobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 40a13b9b388caa6a1ae6e3e470e4ea02553fa0ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728516"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
-Tworzy obiekt ciągu.
+Tworzy obiekt String.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int CreateStringObject(
 
 ## <a name="parameters"></a>Parametry
 `pcstrString`\
-[w] Wartość ciągu dla obiektu ciągu.
+podczas Wartość ciągu dla obiektu String.
 
 `ppObject`\
-[na zewnątrz] Zwraca obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzony obiekt ciągu.
+określoną Zwraca obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , który reprezentuje nowo utworzony obiekt ciągu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje ciąg, który jest parametrem funkcji, która jest reprezentowana przez [interfejs IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+ Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje ciąg, który jest parametrem do funkcji reprezentowanej przez interfejs [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

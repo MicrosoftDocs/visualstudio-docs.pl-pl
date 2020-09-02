@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Zwiększanie czasu odpowiedzi interfejsu użytkownika (HTML) | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: poprawianie czasu odpowiedzi interfejsu użytkownika (HTML) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,29 +20,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433173"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64792880"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Przewodnik: Zwiększanie czasu odpowiedzi interfejsu użytkownika (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Przewodnik: skracanie czasu odpowiedzi interfejsu użytkownika (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie problemów z wydajnością za pomocą [profiler czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md). Program profilujący jest dostępna w aplikacjach Visual Studio for Windows Universal a Windows Store przy użyciu języka JavaScript. W tym scenariuszu utworzysz aplikację test wydajności, która aktualizuje elementów DOM zbyt często, a następnie użyć profiler zidentyfikować i rozwiązać ten problem.  
+Ten Instruktaż prowadzi przez proces identyfikowania i rozwiązywania problemów z wydajnością przy użyciu [profilera czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md). Profiler jest dostępny w programie Visual Studio dla aplikacji uniwersalnych i ze sklepu Windows w systemie Windows przy użyciu języka JavaScript. W tym scenariuszu utworzysz aplikację testową wydajności, która aktualizuje elementy DOM zbyt często, i można użyć profilera do zidentyfikowania i rozwiązania tego problemu.  
   
-### <a name="creating-and-running-the-performance-test-app"></a>Tworzenie i uruchamianie wykonywania testowanie aplikacji  
+### <a name="creating-and-running-the-performance-test-app"></a>Tworzenie i uruchamianie aplikacji testowej wydajności  
   
-1. W programie Visual Studio Utwórz nowy projekt Windows Universal JavaScript. (Wybierz **plik / nowy / Project**. Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz **Windows**, **systemu Windows 10**, a następnie **Universal**, lub  **Windows Phone**.  
+1. W programie Visual Studio Utwórz nowy uniwersalny projekt systemu Windows w języku JavaScript. (Wybierz **plik/nowy/projekt**. W lewym okienku wybierz pozycję **JavaScript** , a następnie wybierz pozycję **Windows**, **Windows 10**, a następnie opcję **uniwersalne**lub **Windows Phone**.  
   
 2. > [!IMPORTANT]
-    > Wyniki diagnostyki, przedstawione w tym temacie przedstawiono aplikacji systemu Windows 8.  
+    > Wyniki diagnostyki przedstawione w tym temacie są wyświetlane dla aplikacji systemu Windows 8.  
   
-3. Wybierz jeden z szablonów pustego projektu w środkowym okienku, taki jak **pusta aplikacja**.  
+3. Wybierz jeden z pustych szablonów projektu w środkowym okienku, na przykład **pustą aplikację**.  
   
-4. W **nazwa** polu Określ nazwę, taką jak `JS_Perf_Tester`, a następnie wybierz **OK**.  
+4. W polu **Nazwa** Określ nazwę, na przykład `JS_Perf_Tester` , a następnie wybierz przycisk **OK**.  
   
-5. W **Eksploratora rozwiązań**, otwórz plik default.html i wklej następujący kod między \<treści > znaczniki:  
+5. W **Eksplorator rozwiązań**Otwórz default.html i wklej następujący kod między \<body> tagami:  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
     </div>  
     ```  
   
-6. Otwórz default.css i Dodaj następujący kod CSS:  
+6. Otwórz domyślny. CSS i Dodaj następujący kod CSS:  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
     }  
     ```  
   
-7. Otwórz default.js i Zastąp cały kod przy użyciu tego kodu:  
+7. Otwórz default.js i Zastąp cały kod tym kodem:  
   
     ```javascript  
     (function () {  
@@ -148,67 +148,67 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
   
     ```  
   
-8. Wybierz klawisz F5, aby rozpocząć debugowanie. Upewnij się, że **oczekiwanie na wartości** na stronie pojawi się przycisk.  
+8. Wybierz klawisz F5, aby rozpocząć debugowanie. Sprawdź, czy na stronie jest wyświetlany przycisk " **oczekiwanie na wartości** ".  
   
-9. Wybierz **oczekiwanie na wartości** i sprawdź, czy tekst przycisku i kolor na około aktualizacji raz na sekundę. To jest celowe.  
+9. Wybierz pozycję **oczekiwanie na wartości** i sprawdź, czy tekst przycisku i kolor są aktualizowane około raz na sekundę. Jest to celowe.  
   
-10. Przejdź z powrotem do programu Visual Studio (Alt + Tab), a następnie wybierz klawisz Shift + F5, aby zatrzymać debugowanie.  
+10. Przełącz się z powrotem do programu Visual Studio (Alt + Tab), a następnie naciśnij klawisze Shift + F5, aby zatrzymać debugowanie.  
   
-     Teraz, gdy upewnieniu się, że aplikacja działa, jego wydajność, można sprawdzić za pomocą profilera.  
+     Po zweryfikowaniu, że aplikacja działa, możesz sprawdzić jej wydajność przy użyciu profilera.  
   
-### <a name="analyzing-performance-data"></a>Analizowanie danych dotyczących wydajności  
+### <a name="analyzing-performance-data"></a>Analizowanie danych wydajności  
   
-1. Na **debugowania** narzędzi w **Rozpocznij debugowanie** listy, wybierz jedną z emulatory Windows Phone lub **symulator**.  
+1. Na pasku narzędzi **debugowania** na liście **Rozpocznij debugowanie** wybierz jeden z Windows Phone emulatorów lub **symulatora**.  
   
-2. Na **debugowania** menu, wybierz **wydajności i diagnostyki**.  
+2. W menu **debugowanie** wybierz pozycję **wydajność i Diagnostyka**.  
   
-3. W **dostępnych narzędzi**, wybierz **HTML UI Responsiveness**, a następnie wybierz **Start**.  
+3. W obszarze **dostępne narzędzia**wybierz pozycję **czas odpowiedzi interfejsu użytkownika HTML**, a następnie wybierz polecenie **Uruchom**.  
   
-    W tym samouczku jest będzie dołączania profilera do projektu startowego. Aby uzyskać informacje na temat innych opcji, takich jak Dołączanie programu profiler do zainstalowanych aplikacji, zobacz [HTML UI responsiveness](../profiling/html-ui-responsiveness.md).  
+    W tym samouczku dodasz Profiler do projektu startowego. Aby uzyskać informacje na temat innych opcji, takich jak dołączanie profilera do zainstalowanej aplikacji, zobacz [czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md).  
   
-    Kiedy uruchamiasz program profilujący, można napotkać Kontrola konta użytkownika, która żąda uprawnienia do uruchomienia VsEtwCollector.exe. Wybierz **tak**.  
+    Po uruchomieniu profilera może zostać wyświetlona Kontrola konta użytkownika z prośbą o zgodę na uruchomienie VsEtwCollector.exe. Wybierz opcję **tak**.  
   
-4. W działającej aplikacji wybierz **oczekiwanie na wartości** i Odczekaj około 10 sekund. Upewnij się, tekst przycisku i kolor na około aktualizacji raz na sekundę.  
+4. W uruchomionej aplikacji wybierz pozycję **oczekiwanie na wartości** i odczekaj około 10 sekund. Upewnij się, że tekst i kolor przycisku są aktualizowane około raz na sekundę.  
   
-5. W uruchomionej aplikacji Przełącz się do programu Visual Studio (Alt + Tab).  
+5. W uruchomionej aplikacji przejdź do programu Visual Studio (Alt + Tab).  
   
-6. Wybierz **Zatrzymaj Kolekcjonowanie**.  
+6. Wybierz pozycję **Zatrzymaj zbieranie**.  
   
-    Program profilujący Wyświetla informacje na nowej karcie w programie Visual Studio. Jeśli przyjrzymy się wykorzystanie procesora CPU i danych przepustowość wizualna (kl. / s), można łatwo identyfikować trendy w kilku:  
+    Profiler wyświetla informacje na nowej karcie w programie Visual Studio. Po przeszukiwaniu użycia procesora CPU i danych przepływności (FPS) można łatwo zidentyfikować kilka trendów:  
   
-   - Użycie procesora CPU zwiększa się znacznie po około 3 sekundy (po naciśnięciu **oczekiwanie na wartości** przycisku) i wyświetla wyczyść wzorców zdarzeń (spójne kombinację skryptów, stylów i zdarzenia renderowania) z tego punktu w.  
+   - Użycie procesora CPU wzrasta znacznie po około 3 sekundach (po naciśnięciu przycisku " **oczekiwanie na wartości** ") i wyświetleniu czystego wzorca zdarzeń (spójnej kombinacji skryptów, stylu i zdarzeń renderowania) od tego momentu.  
   
-   - Nie ma to wpływ na przepustowość wizualna i kl. / s pozostaje na 60 w całym (oznacza to, że nie ma żadnych porzuconych ramek).  
+   - Nie ma to wpływu na przepływność wizualną, a liczba klatek na sekundę pozostaje w 60 (to oznacza, że nie ma żadnych porzuconych ramek).  
   
-     Przyjrzyjmy się typowe części Wykres wykorzystania procesora CPU, aby dowiedzieć się, jakie działania aplikacji w tym okresie dużej aktywności.  
+     Przyjrzyjmy się typowej sekcji wykresu użycia procesora CPU, aby dowiedzieć się, co aplikacja wykonuje w tym okresie.  
   
-7. Wybieranie drugiej części jednej do dwóch w środku Wykres wykorzystania procesora CPU (albo kliknięcia i przeciągnięcia lub używać kluczy karty i strzałka). Poniższa ilustracja przedstawia Wykres wykorzystania procesora CPU, po dokonaniu wyboru. Nieudostępnione obszaru to zaznaczenie.  
+7. Wybierz jedną część drugiej części w środku wykresu użycia procesora CPU (kliknij przycisk-i-przeciągnij lub użyj kart i klawiszy strzałek). Na poniższej ilustracji przedstawiono wykres użycia procesora CPU po dokonaniu wyboru. Obszar nieudostępniony jest zaznaczeniem.  
   
-    ![Wykres wykorzystania procesora CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Wykres użycia procesora CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8. Wybierz **powiększyć**.  
+8. Wybierz pozycję **Powiększ**.  
   
-    Zmiany wykresu do wyświetlenia na wybrany okres bardziej szczegółowo. Poniższa ilustracja przedstawia Wykres wykorzystania procesora CPU po powiększyć. (Określone dane mogą się różnić, ale ogólny wzorzec będzie widoczna).  
+    Wykres zostanie zmieniony, aby pokazać wybrany okres bardziej szczegółowo. Na poniższej ilustracji przedstawiono wykres użycia procesora CPU po powiększeniu. (Określone dane mogą się różnić, ale ogólny wzorzec będzie widoczny).  
   
-    ![Powiększenie w widoku](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Powiększone w widoku](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-    Szczegóły osi czasu w dolnym okienku przedstawiono przykład szczegółów dla wybranego okresu.  
+    Szczegóły osi czasu w dolnym okienku przedstawiają przykład szczegółów dla wybranego okresu.  
   
     ![Szczegóły osi czasu](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-    Upewnij się, zdarzenia w szczegółach oś czasu widoczny trendów w wykres wykorzystania procesora CPU: wiele zdarzeń zajmuje miejsce w krótkich okresach czasu. Wyświetl szczegóły osi czasu wskazuje, że te zdarzenia są `Timer`, `Layout`, i `Paint` zdarzenia.  
+    Zdarzenia w szczegółach osi czasu potwierdzają widoczne trendy w grafie użycia procesora CPU: wiele zdarzeń odbywa się w krótkim czasie. Widok Szczegóły osi czasu pokazuje, że te zdarzenia to `Timer` , `Layout` i `Paint` zdarzenia.  
   
-9. Użyj menu kontekstowego (lub kliknij prawym przyciskiem myszy) jeden z `Timer` zdarzenia w dolnym okienku i wybierz polecenie **filtr, aby zdarzenia**. Na poniższej ilustracji przedstawiono przykład szczegółów typowe dla jednego z `Timer` zdarzeń w tym testowanie aplikacji.  
+9. Użyj menu kontekstowego (lub kliknij prawym przyciskiem myszy) jednego ze `Timer` zdarzeń w dolnym okienku, a następnie wybierz polecenie **Filtruj do zdarzenia**. Na poniższej ilustracji przedstawiono przykład typowe szczegóły dla jednego ze `Timer` zdarzeń w tej aplikacji testowej.  
   
      ![Zdarzenie czasomierza](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     Szereg fakty może zebrać dane. Na przykład:  
+     Różne fakty mogą być wydobyć z danych. Na przykład:  
   
-    - Każdy `Timer` zdarzenia oznaczone kolorami, aby je zidentyfikować jako zdarzenie obsługi skryptów, zawiera wywołanie `document.createElement`, a następnie obliczenia stylu i wywołania `style.backgroundColor` i `appendChild()`.  
+    - Każde `Timer` zdarzenie, kodowane kolorami w celu zidentyfikowania go jako zdarzenia skryptu, zawiera wywołanie `document.createElement` , po którym następuje obliczenie stylu i wywołanie do `style.backgroundColor` i `appendChild()` .  
   
-    - W krótkim przedział czasu zaznaczone (około jednej do dwóch sekund), istnieją wielu `Timer`, `Layout`, i `Paint` zdarzenia mające miejsce. `Timer` Zdarzenia zachodzą znacznie częściej niż jedna aktualizacja na sekundę, gdy jest widoczne oczywiste, po uruchomieniu aplikacji i wybierz **oczekiwanie na wartości** przycisku.  
+    - W krótkim przedziale czasu (w przybliżeniu do dwóch sekund) istnieje świetna liczba `Timer` wydarzeń, które mają `Layout` `Paint` miejsce. `Timer`Zdarzenia występują znacznie częściej niż jedna aktualizacja na sekundę, która jest widoczna po uruchomieniu aplikacji i wybiera przycisk " **oczekiwanie na wartości** ".  
   
-10. Aby zbadać, wybierz link, aby funkcja anonimowa dla jednego z `Timer` zdarzenia w dolnym okienku po lewej stronie. W pliku default.js spowoduje otwarcie następującą funkcję:  
+10. Aby zbadać, wybierz link do funkcji anonimowej dla jednego ze `Timer` zdarzeń w lewym dolnym okienku. W default.js zostanie otwarta następująca funkcja:  
   
     ```javascript  
     function update() {  
@@ -221,11 +221,11 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
     }  
     ```  
   
-     Ta funkcja cyklicznego konfiguruje pętli, która wywołuje `setValues()` funkcji, która aktualizuje przycisku w interfejsie użytkownika. Badanie zdarzeń inny czasomierz w profilerze, użytkownik stwierdza, że większość lub wszystkie zdarzenia czasomierza wynika z tego kodu, która jest uruchomiona zbyt często, więc pojawia się ono prawdopodobnie tutaj pochodzi ten problem.  
+     Ta funkcja cykliczna konfiguruje pętlę, która wywołuje `setValues()` funkcję, która aktualizuje przycisk w interfejsie użytkownika. Badając różne zdarzenia czasomierza w profilerze, można stwierdzić, że większość lub wszystkie zdarzenia czasomierza wynikają z tego kodu, który jest zbyt często uruchamiany, dlatego wydaje się, że problem nie pochodzi tutaj.  
   
 ### <a name="fixing-the-performance-issue"></a>Rozwiązywanie problemów z wydajnością  
   
-1. Zastąp `update()` funkcji następującym kodem:  
+1. Zastąp `update()` funkcję następującym kodem:  
   
     ```javascript  
     function update() {  
@@ -238,9 +238,9 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
     }  
     ```  
   
-     Tej wersji Naprawiono kodu obejmuje 1000 Opóźnienie milisekund, który został pominięty z poprzedniej wersji kodu, zmniejsza opóźnienie wartości domyślnej. Z danych profilera, wydaje się, że wartością domyślną jest zero milisekund, które spowodowały `setValues()` zbyt częste uruchamianie funkcji.  
+     Ta stała wersja kodu obejmuje opóźnienie 1000 milisekund, który został pominięty w poprzedniej wersji kodu, co spowodowało użycie domyślnej wartości opóźnienia. Dane z profilera są wyświetlane, ponieważ wartość domyślna to zero milisekund, co spowodowało `setValues()` zbyt częste uruchamianie funkcji.  
   
-2. Ponownie uruchomić profiler czas odpowiedzi interfejsu użytkownika HTML i sprawdź wykres wykorzystania procesora CPU. Można zauważyć, że nadmierne zdarzenia zostaną usunięte, a użycie procesora CPU została obniżona do umieszczonej blisko zero. Naprawiono!  
+2. Uruchom ponownie Profiler czas odpowiedzi interfejsu użytkownika HTML i sprawdź wykres użycia procesora CPU. Okaże się, że nadmierne zdarzenia znikły, a wykorzystanie procesora CPU zostało przerwane do najbliższego zera. FIXED!  
   
 ## <a name="see-also"></a>Zobacz też  
- [Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)
+ [Czas odpowiedzi interfejsu użytkownika języka HTML](../profiling/html-ui-responsiveness.md)

@@ -4,10 +4,10 @@ ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
 ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
-ms.sourcegitcommit: f4d734329c82f2c8005b36af4b2b5516d90e6c63
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89042889"
 ---
 ### <a name="tooltaskextension-parameters"></a>Parametry ToolTaskExtension

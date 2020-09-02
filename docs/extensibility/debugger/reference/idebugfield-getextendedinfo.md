@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetExtendedInfo | Dokumenty firmy Microsoft
+title: 'IDebugField:: GetExtendedInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728873"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
@@ -45,24 +45,24 @@ int GetExtendedInfo(
 
 ## <a name="parameters"></a>Parametry
 `guidExtendedInfo`\
-[w] Wybiera informacje, które mają zostać zwrócone. Prawidłowe wartości:
+podczas Wybiera informacje do zwrócenia. Prawidłowe wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |`guidConstantValue`|Wartość jako sekwencja bajtów.|
-|`guidConstantType`|Typ jako podpis typu.|
+|`guidConstantType`|Typ jako sygnatura typu.|
 
 `prgBuffer`\
-[na zewnątrz] Zwraca informacje rozszerzone.
+określoną Zwraca informacje rozszerzone.
 
 `pdwLen`\
-[w, na zewnątrz] Zwraca rozmiar informacji rozszerzonych w bajtach.
+[in. out] Zwraca rozmiar rozszerzonych informacji w bajtach.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Obecnie ta metoda zwraca tylko typ lub wartość stałej. Wywołujący musi zwolnić bufor `prgBuffer` zwrócony przez `CoTaskMemFree` wywołanie funkcji COM <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C++) lub (C#).
+ Obecnie ta metoda zwraca tylko typ lub wartość stałej. Obiekt wywołujący musi zwolnić bufor zwrócony `prgBuffer` przez wywołanie `CoTaskMemFree` funkcji com (C++) lub <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

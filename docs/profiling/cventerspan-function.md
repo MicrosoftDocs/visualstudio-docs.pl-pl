@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328971"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan, funkcja
@@ -102,17 +102,17 @@ HRESULT CvEnterSpanExVA(
 ```
 
 #### <a name="parameters"></a>Parametry
- `argList`Lista argumentów.
+ `argList` Lista argumentów.
 
- `category`Kategoria zakresu
+ `category` Kategoria zakresu
 
- `level`Poziom ważności zakresu.
+ `level` Poziom ważności zakresu.
 
- `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.
+ `pMarkerSeries` Prawidłowy kontekst serii znaczników. Nie może mieć wartości NULL.
 
- `pMessage`Ciąg formatu komunikatu. Nie może mieć wartości NULL.
+ `pMessage` Ciąg formatu komunikatu. Nie może mieć wartości NULL.
 
- `ppSpan`Adres zmiennej, która będzie zawierać obiekt zakresu wyników. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
+ `ppSpan` Adres zmiennej, która będzie zawierać obiekt zakresu wyników. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
 
 ## <a name="return-value"></a>Wartość zwracana
  S_OK, gdy komunikat został pomyślnie zapisany. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.

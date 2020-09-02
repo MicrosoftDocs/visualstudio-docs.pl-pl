@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2 | Dokumentacja firmy Microsoft
+title: IDebugSymbolSearchEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe6eda784ddfa393ee123a7aab1498fc2e5a15b5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65694623"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs są wysyłane przez aparat debugowania (DE) w celu wskazania, czy załadowano symbole debugowania dla debugowanego modułu.  
+Ten interfejs jest wysyłany przez aparat debugowania (DE), aby wskazać, że symbole debugowania dla debugowanego modułu zostały załadowane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,27 +31,27 @@ IDebugSymbolSearchEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- DE implementuje ten interfejs, aby zgłosić, czy załadowano symbole dla modułu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) dostęp do `IDebugEvent2` interfejsu.  
+ Element DE implementuje ten interfejs, aby zgłosić, że symbole modułu zostały załadowane. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany w tym samym obiekcie co ten interfejs. Model SDM używa [metody QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) do uzyskiwania dostępu do `IDebugEvent2` interfejsu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- DE tworzy i wysyła tego obiektu zdarzenia do raportowania, czy załadowano symbole dla modułu. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
+ Element DE tworzy i wysyła ten obiekt Event, aby zgłosić, że symbole modułu zostały załadowane. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , która jest dostarczana przez model SDM, gdy jest dołączona do debugowanego programu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- `IDebugSymbolSearchEvent2` Interfejsu udostępnia następujące metody.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ `IDebugSymbolSearchEvent2`Interfejs uwidacznia poniższą metodę.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Pobiera informacje o wynikach wyszukiwania symboli.|  
   
 ## <a name="remarks"></a>Uwagi  
- To zdarzenie zostanie wysłane, nawet wtedy, gdy nie można załadować symbole. Wywoływanie `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` pozwala procedurze obsługi tego zdarzenia, aby sprawdzić, czy moduł jest faktycznie wszystkie symbole.  
+ To zdarzenie zostanie wysłane, nawet jeśli nie udało się załadować symboli. Wywołanie `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` zezwala programowi obsługi tego zdarzenia w celu ustalenia, czy moduł rzeczywiście ma symbole.  
   
- Program Visual Studio zazwyczaj używa tego zdarzenia do aktualizowania stanu załadowano symbole w **modułów** okna.  
+ Program Visual Studio zwykle używa tego zdarzenia do aktualizowania stanu załadowanych symboli w oknie **moduły** .  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

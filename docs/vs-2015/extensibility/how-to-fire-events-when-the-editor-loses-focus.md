@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyzwolenie zdarzenia po utracie fokusu przez Edytor | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Wyzwalanie zdarzeń po utracie fokusu przez Edytor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204191"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Instrukcje: Wyzwalanie zdarzeń po utracie fokusu przez edytor
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Instrukcje: wyzwalanie zdarzeń po utracie fokusu przez edytor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Czasami zachodzi konieczność wiadomo, kiedy redaktorem traci fokus ramki okna. Na przykład może być konieczne pobierania kodu z okna kodu, po edytor nie ma już fokusu w nim. Poniższa procedura zawiera kroki, które trzeba wykonać, aby otrzymać powiadomienie o Edytorze utraci fokus.  
+Czasami trzeba wiedzieć, kiedy Edytor utraci fokus w ramce okna. Na przykład może być konieczne wyodrębnienie kodu z okna kodu, gdy Edytor nie jest już na nim skoncentrowany. Poniższa procedura zawiera kroki, które należy wykonać, aby otrzymywać powiadomienie edytora o utracie fokusu.  
   
-### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Aby wyzwolić zdarzenie w odpowiedzi na Edytor tracąc koncentracji  
+### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Aby uruchomić zdarzenie w odpowiedzi na Edytor utraci fokus  
   
-1. Monitorowanie zdarzeń dotyczących wyboru dzięki uzyskaniu <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> obiektu z <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.  
+1. Monitoruj zdarzenia wyboru, uzyskując <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> obiekt z <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> .  
   
-2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> i przekazują je z <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> obiektu.  
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> i podaj swój <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> obiekt.  
   
-3. W przypadku wywołania do <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>, poszukaj `elementid==SEID_WindowFrame`.  
+3. Wyszukaj w wywołaniu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> `elementid==SEID_WindowFrame` .  
   
-4. Test `varValueNew` parametr dwie rzeczy:  
+4. Przetestuj `varValueNew` parametr dla dwóch rzeczy:  
   
     1. Ramka okna, którego szukasz.  
   
-    2. Punkt, w którym program traci zaznaczenia do tej ramki okna.
+    2. Punkt, w którym program utraci zaznaczenie do tego ramki okna.

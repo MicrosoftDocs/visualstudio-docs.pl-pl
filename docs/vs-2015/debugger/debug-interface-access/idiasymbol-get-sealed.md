@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_sealed — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_sealed | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a25bf67daa11e6bf9464cc29d696bb7c243b617
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64799701"
 ---
-# <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
+# <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera flagę określającą, czy ta klasa lub metoda jest zapieczętowany.  
+Pobiera flagę, która określa, czy Klasa lub metoda są zapieczętowane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,21 +35,21 @@ HRESULT get_sealed( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli klasa lub metoda jest zapieczętowana; w przeciwnym razie zwraca `FALSE`.  
+ określoną Zwraca `TRUE` czy Klasa lub metoda są zapieczętowane; w przeciwnym razie zwraca `FALSE` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Klasa zapieczętowana nie może służyć jako klasę bazową. Metody zapieczętowane nie może być overidden.  
+ Klasa zapieczętowana nie może być używana jako klasa bazowa. Metoda zapieczętowana nie może być overidden.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2. h  
   
- Biblioteka: diaguids.lib  
+ Biblioteka: diaguids. lib  
   
  DLL: msdia100.dll  
   

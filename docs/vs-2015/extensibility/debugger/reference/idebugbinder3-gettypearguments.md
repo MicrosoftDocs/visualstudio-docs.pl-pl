@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Dokumentacja firmy Microsoft
+title: 'IDebugBinder3:: GetTypeArguments — | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f7b6038013370ad85a665d9899d367e621aa991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192283"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
@@ -47,25 +47,25 @@ int GetTypeArguments(
 
  `skip`
 
- [in] Liczba pól, aby pominąć przed pobraniem typy argumentów.
+ podczas Liczba pól do pominięcia przed pobraniem typów argumentów.
 
  `count`
 
- [in] Liczba pól argument do zwrócenia (również określa rozmiar `ppFields` tablicy).
+ podczas Liczba pól argumentów do zwrócenia (określa również rozmiar `ppFields` tablicy).
 
  `ppFields`
 
- [out w] Tablica pola, które są wypełniane przy powrocie z tej metody.
+ [in. out] Tablica pól, które będą wypełniane po powrocie tej metody.
 
  `pFetched`
 
- [out] Liczba pól, argument typu rzeczywistego zwrotu (opcjonalnie).
+ określoną Liczba pól typu argumentu faktycznie zwrócona (opcjonalnie).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Liczba typów argumentów można uzyskać wcześniej przy użyciu [gettypeargumentcount —](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+ Liczbę typów argumentów można uzyskać wcześniej za pomocą [GetTypeArgumentCount —](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
 ## <a name="see-also"></a>Zobacz też
 

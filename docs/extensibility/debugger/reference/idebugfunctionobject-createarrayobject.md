@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateArrayObject | Dokumenty firmy Microsoft
+title: 'IDebugFunctionObject:: xmlarrayobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728617"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
-Tworzy obiekt tablicy. Ta tablica może zawierać wartości pierwotne lub wystąpienia obiektu.
+Tworzy obiekt Array. Ta tablica może zawierać wartości pierwotne lub wystąpienia obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -51,28 +51,28 @@ int CreateArrayObject(
 
 ## <a name="parameters"></a>Parametry
 `ot`\
-[w] Określa wartość z [wyliczenia OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) wskazujące typ nowego obiektu tablicy.
+podczas Określa wartość z wyliczenia [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) wskazującego typ nowego obiektu tablicy.
 
 `pClassField`\
-[w] [Obiekt IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący klasę obiektu, jeśli tworzy tablicę wartości wystąpienia obiektu. W przypadku tworzenia tablicy obiektów pierwotnych, ten parametr jest wartością null.
+podczas Obiekt [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący klasę obiektu, jeśli tworzysz tablicę wartości wystąpienia obiektu. Jeśli tworzysz tablicę obiektów pierwotnych, ten parametr jest wartością null.
 
 `dwRank`\
-[w] Ranga lub liczba wymiarów tablicy.
+podczas Ranga lub liczba wymiarów tablicy.
 
 `dwDims`\
-[w] Rozmiary każdego wymiaru tablicy.
+podczas Rozmiary każdego wymiaru tablicy.
 
 `dwLowBounds`\
-[w] Początek każdego wymiaru (zazwyczaj 0 lub 1).
+podczas Początek każdego wymiaru (zwykle 0 lub 1).
 
 `ppObject`\
-[na zewnątrz] Zwraca obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzoną tablicę. To jest rzeczywiście [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) obiektu.
+określoną Zwraca obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzoną tablicę. Jest to obiekt [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje parametr tablicy do funkcji, która jest reprezentowana przez interfejs [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+ Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje parametr Array do funkcji reprezentowanej przez interfejs [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

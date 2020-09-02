@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Rejestrowanie typów plików edytora | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: rejestrowanie typów plików edytora | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204118"
 ---
-# <a name="how-to-register-editor-file-types"></a>Instrukcje: Rejestrowanie typów plików edytora
+# <a name="how-to-register-editor-file-types"></a>Instrukcje: rejestrowanie typów plików edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atrybutów rejestracji w ramach [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] zarządzanych klas framework (MPF) pakietu. W przypadku wdrażania pakietu w trybie macierzystym [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], można także napisać skrypt rejestru, który rejestruje edytora i rozszerzenia skojarzone.  
+Najprostszym sposobem rejestrowania typów plików edytora jest użycie atrybutów rejestracji dostarczonych jako część [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] klas MPF (Managed Package Framework). Jeśli pakiet jest wdrażany w trybie macierzystym [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] , można również napisać skrypt rejestru, który rejestruje Edytor i skojarzone rozszerzenia.  
   
 ## <a name="registration-using-mpf-classes"></a>Rejestracja przy użyciu klas MPF  
   
-#### <a name="to-register-editor-file-types-using-mpf-classes"></a>Aby zarejestrować Edytor typów plików, przy użyciu klas MPF  
+#### <a name="to-register-editor-file-types-using-mpf-classes"></a>Aby zarejestrować typy plików edytora przy użyciu klas MPF  
   
-1. Podaj <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> klasy za pomocą odpowiednich parametrów dla Twojego edytora w klasie usługi pakietu VSPackage.  
+1. Podaj <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> klasę z odpowiednimi parametrami dla edytora w klasie pakietu VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -35,17 +35,17 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
          NameResourceID = 106)]  
     ```  
   
-     Gdzie ". Przykład"to rozszerzenie, które jest zarejestrowany dla tego edytora, a"32"jest jego poziom priorytetu.  
+     Gdzie ". Przykładem jest rozszerzenie, które jest zarejestrowane dla tego edytora, a "32" jest jego poziom priorytetu.  
   
-     `projectGuid` To identyfikator GUID pliku różne typy, zdefiniowane w <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Typ pliku inny zostanie podany, dzięki czemu wynikowy plik nie będzie to część procesu kompilacji.  
+     `projectGuid`Jest to identyfikator GUID dla różnych typów plików, zdefiniowany w <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid> . Typ pliku różnego jest dostarczany, dzięki czemu otrzymany plik nie będzie częścią procesu kompilacji.  
   
-     `TemplateDir` reprezentuje folder, który zawiera pliki szablonów, które są dołączone do przykładu zarządzanych Edytor języka basic.  
+     `TemplateDir` reprezentuje folder zawierający pliki szablonów, które są zawarte w przykładowym zarządzanym edytorze Basic.  
   
-     `NameResourceID` jest zdefiniowana w pliku Resources.h BasicEditorUI projektu i identyfikuje edytora edytorem"Moje".  
+     `NameResourceID` jest zdefiniowany w pliku Resources. h projektu BasicEditorUI i identyfikuje Edytor jako "mój Edytor".  
   
-2. Zastąp <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
+2. Zastąp <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodę.  
   
-     W danej implementacji <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody, wywołanie <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> metody i przekazać wystąpienia fabryki edytora, jak pokazano poniżej.  
+     W implementacji <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody należy wywołać <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> metodę i przekazać wystąpienie fabryki edytora, jak pokazano poniżej.  
   
     ```  
     protected override void Initialize()  
@@ -59,18 +59,18 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
     }  
     ```  
   
-     W tym kroku rejestruje fabryki edytora i rozszerzenia plików edytora.  
+     Ten krok rejestruje zarówno fabrykę edytora, jak i rozszerzenia plików edytora.  
   
-3. Wyrejestruj fabryki edytora.  
+3. Wyrejestruj fabryky edytora.  
   
-     Po usunięciu pakietu VSPackage, fabryki edytora są automatycznie wyrejestrowana. Jeśli obiekt fabryki edytora implementuje <xref:System.IDisposable> interfejsu, jego `Dispose` metoda jest wywoływana po fabryka ma został wyrejestrowany z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Fabryki edytora są automatycznie wyrejestrowani po usunięciu pakietu VSPackage. Jeśli obiekt fabryki edytora implementuje <xref:System.IDisposable> interfejs, jego `Dispose` Metoda jest wywoływana po wyrejestrowaniu fabryki w usłudze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-## <a name="registration-using-a-registry-script"></a>Rejestracja za pomocą skryptów rejestru  
- Zarejestrowanie fabryki edytora i typów plików w macierzystym [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] odbywa się przy użyciu skryptu rejestru do zapisu do rejestru systemu windows, zgodnie z przedstawionymi poniżej.  
+## <a name="registration-using-a-registry-script"></a>Rejestracja przy użyciu skryptu rejestru  
+ Rejestrowanie fabryk edytora i typów plików w trybie macierzystym odbywa [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] się przy użyciu skryptu rejestru do zapisu w rejestrze systemu Windows, jak pokazano poniżej.  
   
-#### <a name="to-register-editor-file-types-using-a-registry-script"></a>Aby zarejestrować Edytor typów plików za pomocą skryptów rejestru  
+#### <a name="to-register-editor-file-types-using-a-registry-script"></a>Aby zarejestrować typy plików edytora przy użyciu skryptu rejestru  
   
-1. W skrypcie rejestru, zdefiniuj fabryki edytora i fabryka Edytora ciągu identyfikatora GUID pokazany na `GUID_BscEditorFactory` sekcji poniższy skrypt rejestru. Ponadto można zdefiniować rozszerzenie i priorytet rozszerzenie edytora:  
+1. W skrypcie rejestru Zdefiniuj fabrykę edytora i ciąg identyfikatora GUID fabryki edytora, jak pokazano w `GUID_BscEditorFactory` sekcji następującego skryptu rejestru. Ponadto Zdefiniuj rozszerzenie i priorytet rozszerzenia edytora:  
   
     ```  
   
@@ -90,13 +90,13 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
     }  
     ```  
   
-     Rozszerzenie pliku edytora, w tym przykładzie jest identyfikowany jako "RTF" i "50" jest jej priorytet. Identyfikator GUID ciągi są zdefiniowane w pliku Resource.h BscEdit przykładowego projektu.  
+     Rozszerzenie pliku edytora w tym przykładzie jest identyfikowane jako ". rtf", a jego priorytet to "50". Ciągi identyfikatorów GUID są zdefiniowane w pliku Resource. h projektu przykładowego BscEdit.  
   
-2. Rejestrowanie pakietu VSPackage.  
+2. Zarejestruj pakietu VSPackage.  
   
-3. Zarejestrować fabryki edytora.  
+3. Zarejestruj fabrykę edytora.  
   
-     Fabryka edytora jest zarejestrowany w <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementacji.  
+     Fabryka edytora jest zarejestrowana w <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementacji.  
   
     ```  
     // create editor factory.  
@@ -127,4 +127,4 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
     }  
     ```  
   
-     Identyfikator GUID ciągi są zdefiniowane w pliku Resource.h BscEdit projektu.
+     Ciągi identyfikatorów GUID są zdefiniowane w pliku Resource. h projektu BscEdit.

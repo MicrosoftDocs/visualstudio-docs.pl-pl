@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Korzystanie ze znaczników tekstu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie ze znaczników tekstu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,51 +11,51 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25c3c4f3a3d9a253b9ec671892d0d44ccf9ca3ab
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430961"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64800717"
 ---
-# <a name="how-to-use-text-markers"></a>Instrukcje: Korzystanie ze znaczników tekstu
+# <a name="how-to-use-text-markers"></a>Instrukcje: korzystanie ze znaczników tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Znaczniki tekstu można zastosować do edycji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> obiektu.  
+Do edycji obiektu można zastosować znaczniki tekstu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> .  
   
 ## <a name="procedures"></a>Procedury  
   
 #### <a name="to-apply-text-markers"></a>Aby zastosować znaczniki tekstu  
   
-1. Uzyskaj wystąpienia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> klasy.  
+1. Uzyskaj wystąpienie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> klasy.  
   
     > [!NOTE]
-    > Podstawowy edytor automatycznie stosuje znaczniki standardowy tekst dowolny dokument, który jest jego edycji, a nie może być konieczne jawne stosowanie znaczniki standardowy tekst.  
+    > Podstawowy edytor automatycznie stosuje standardowe znaczniki tekstowe do dowolnych dokumentów, które są edytowane, i nie powinno być konieczne jawne stosowanie standardowych znaczników tekstu.  
   
-2. Uzyskać identyfikator typu znacznika znacznika, o których chcesz się dowiedzieć, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metody z `GUID` znacznika tekstu chcesz pracować.  
+2. Uzyskaj identyfikator typu znacznika, który Cię interesuje, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metodę z `GUID` znacznikiem tekstu, z którym chcesz współpracować.  
   
     > [!NOTE]
-    > Nie używaj `GUID` pakietu VSPackage lub usługę, która udostępnia znacznik tekstu.  
+    > Nie należy używać `GUID` elementu pakietu VSPackage ani usługi, która zawiera znacznik tekstu.  
   
-3. Użyj Identyfikatora typu znaczników można uzyskać przez wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metoda jako parametr do wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metody lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metody do stosowania znacznika tekstu dla danego regionu tekstu.  
+3. Użyj identyfikatora typu znacznika uzyskanego przez wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metody jako parametru, aby wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metodę lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodę w celu zastosowania znacznika tekstu do danego regionu tekstu.  
   
 #### <a name="to-add-features-to-text-markers"></a>Aby dodać funkcje do znaczników tekstu  
   
-1. Może być pożądane, aby dodać dodatkowe funkcje do znacznika tekstu, takie jak etykietek narzędzi, menu kontekstowe specjalne lub program obsługi w szczególnych okolicznościach. Aby to zrobić:  
+1. Może być pożądane dodanie dodatkowych funkcji do znacznika tekstu, takich jak etykietki narzędzi, specjalne menu kontekstowe lub procedura obsługi dla specjalnych okoliczności. W tym celu:  
   
-2. Tworzenie, wdrażanie obiektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu.  
+2. Utwórz obiekt implementujący <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs.  
   
-3. W razie potrzeby dodatkowe funkcje zaimplementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> na ten sam obiekt, który implementuje interfejsy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu.  
+3. Jeśli pożądane są dodatkowe funkcje, zaimplementuj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> interfejsy na tym samym obiekcie, który implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs.  
   
-4. Przekaż <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs, który tworzysz, do wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metody lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodę używaną do zastosowania znacznika tekstu dla danego regionu tekstu.  
+4. Przekaż <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs, który tworzysz, do wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metody lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metody użytej do zastosowania znacznika tekstu do danego regionu tekstu.  
   
-5. Dodanie obsługi menu kontekstowe do regionu znacznika tekstu jest niezbędne do utworzenia w menu.  
+5. Podczas dodawania obsługi menu kontekstowego do regionu znacznika tekstu konieczne jest utworzenie menu.  
   
-     Aby uzyskać więcej informacji na temat tworzenia, zobacz menu kontekstowe [menu kontekstowe](../extensibility/context-menus.md).  
+     Aby uzyskać więcej informacji na temat tworzenia menu kontekstowego, zobacz [menu kontekstowe](../extensibility/context-menus.md).  
   
-6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Środowiska wywołania metod dostarczony interfejsów, takich jak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> metody lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metody, stosownie do potrzeb.  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Środowisko wywołuje metody dostarczonych interfejsów, takich jak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> Metoda lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> Metoda zgodnie z wymaganiami.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Znaczniki tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Instrukcje: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
- [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
+ [Używanie znaczników tekstowych ze starszym interfejsem API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Instrukcje: Dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md)   
+ [Instrukcje: Tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)   
  [Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md)

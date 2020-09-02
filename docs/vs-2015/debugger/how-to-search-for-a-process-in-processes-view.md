@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyszukiwanie procesu w widoku procesów | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wyszukiwanie procesu w widoku procesów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,34 +13,34 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64799501"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Instrukcje: Wyszukiwanie procesu w widoku procesów
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Porady: wyszukiwanie procesu w widoku procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz wyszukać określonego procesu w widoku procesów za pomocą ciągu Identyfikatora lub moduł jego procesu jako kryterium wyszukiwania. Można również określić początkową kierunek wyszukiwania. Pola w oknie dialogowym zostaną wyświetlone atrybuty wybranego procesu w drzewo procesów.  
+Konkretny proces można wyszukać w widoku procesy przy użyciu identyfikatora procesu lub ciągu modułu jako kryterium wyszukiwania. Możesz również określić początkowy kierunek wyszukiwania. Pola w oknie dialogowym będą zawierać atrybuty wybranego procesu w drzewie procesów.  
   
-### <a name="to-search-for-a-process-in-processes-view"></a>Wyszukiwanie procesu w widoku procesów  
+### <a name="to-search-for-a-process-in-processes-view"></a>Aby wyszukać proces w widoku procesów  
   
-1. Rozmieść aplikacji dla systemu windows, więc tego programu Spy ++ i aktywne [widok procesy](../debugger/processes-view.md) okna są widoczne.  
+1. Rozmieść okna w taki sposób, aby były widoczne okno [Widok](../debugger/processes-view.md) programu Spy + + i aktywne procesy.  
   
-2. Z **wyszukiwania** menu, wybierz **Znajdź proces**  
+2. Z menu **Wyszukaj** wybierz pozycję **Znajdź proces**  
   
-    [Okno dialogowe Wyszukiwanie procesów](../debugger/process-search-dialog-box.md) zostanie otwarty.  
+    Zostanie otwarte okno [dialogowe Wyszukiwanie procesów](../debugger/process-search-dialog-box.md) .  
   
 3. Wpisz identyfikator procesu lub ciąg modułu jako kryterium wyszukiwania.  
   
 4. Wyczyść wszystkie pola, dla których nie chcesz określać wartości.  
   
    > [!TIP]
-   > Aby znaleźć wszystkie procesy, które są własnością modułu, należy wyczyścić **procesu** pole, a następnie wpisz nazwę modułu w **modułu** pole. Następnie użyj **Znajdź następny** kontynuować wyszukiwanie procesów.  
+   > Aby znaleźć wszystkie procesy należące do modułu, wyczyść pole **proces** i wpisz nazwę modułu w polu **moduł** . Następnie użyj **Znajdź dalej** , aby kontynuować wyszukiwanie procesów.  
   
-5. Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
+5. Wybierz pozycję w **górę** lub **w dół** , aby określić początkowy kierunek wyszukiwania.  
   
 6. Kliknij przycisk **OK**.  
   
-   Jeśli proces dopasowywania zostanie znaleziony, jest wyróżniona na **widok procesu** okna.
+   W przypadku znalezienia zgodnego procesu zostanie on wyróżniony w oknie **Widok procesu** .

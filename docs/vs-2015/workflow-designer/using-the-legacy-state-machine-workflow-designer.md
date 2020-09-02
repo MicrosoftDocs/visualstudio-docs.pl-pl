@@ -19,14 +19,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 77bb2c7abb49dbf6fe973ebc80f8340000e4afbd
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846006"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Używanie starszej wersji Projektanta przepływu pracy automatu stanów
-Podczas tworzenia nowego projektu przepływu pracy automatu stanów w [!INCLUDE[vs2010](../includes/vs2010-md.md)], które są przeznaczone dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], można użyć **aplikacji konsolowej przepływu pracy automatu Stanów** lub szablonu starszego projektu **biblioteki przepływu pracy** automatu Stanów. W przypadku wybrania jednego z tych szablonów projektów komputera stanu Projektant automatu stanów zostanie przedstawiony jako starszy interfejs użytkownika projektanta przepływu pracy. Aby uzyskać informacje na temat starszych szablonów projektów komputera stanu, zobacz [How to: Create State automat Workflow Console Applications (starsze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [instrukcje: Create a State Machine Workflow Library (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+Podczas tworzenia nowego projektu przepływu pracy automatu stanów w programie [!INCLUDE[vs2010](../includes/vs2010-md.md)] [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub, można wybrać opcję [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] użycia **aplikacji konsolowej przepływu pracy automatu Stanów** lub szablonu starszego projektu **biblioteki przepływu pracy** automatu Stanów. W przypadku wybrania jednego z tych szablonów projektów komputera stanu Projektant automatu stanów zostanie przedstawiony jako starszy interfejs użytkownika projektanta przepływu pracy. Aby uzyskać informacje na temat starszych szablonów projektów komputera stanu, zobacz [How to: Create State automat Workflow Console Applications (starsze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [instrukcje: Create a State Machine Workflow Library (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
  Przepływ pracy automatu Stanów składa się z zestawu Stanów. Jeden stan jest oznaczany jako stan początkowy. Każdy stan może odbierać określony zestaw zdarzeń. Na podstawie zdarzenia można przejść do innego stanu. Przepływ pracy automatu Stanów może mieć stan końcowy. Po zakończeniu przejścia do stanu końcowego przepływ pracy zostaje zakończony.
 

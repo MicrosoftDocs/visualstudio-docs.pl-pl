@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_typeids — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_typeIds | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 410f8afdac24139791c19c3936049c855a51d4f9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64798171"
 ---
-# <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
+# <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera tablicę wartości identyfikatora typu specyficznych dla kompilatora dla tego symbolu.  
+Pobiera tablicę wartości identyfikatorów typu specyficznych dla kompilatora dla tego symbolu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,19 +37,19 @@ HRESULT get_typeIds ( 
   
 #### <a name="parameters"></a>Parametry  
  `cTypeIds`  
- [in] Rozmiar buforu do przechowywania danych.  
+ podczas Rozmiar buforu do przechowywania danych.  
   
  `pcTypeIds`  
- [out] Zwraca liczbę `typeIds` zapisanych, lub jeśli `typeIds` jest `NULL`, następnie łączna liczba dostępnych identyfikatorów typu.  
+ określoną Zwraca liczbę `typeIds` zapisów lub, jeśli `typeIds` jest `NULL` , a następnie łączną liczbę dostępnych identyfikatorów typu.  
   
  `typeIds[]`  
- [out] Tablica, która jest wypełniona identyfikatory typów.  
+ określoną Tablica, która ma zostać wypełniona przy użyciu identyfikatorów typu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bece06c618e5fcc0e91dcbd683b961979fd76dcf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846193"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Wybieranie warunku, okno dialogowe (starsza wersja)
-W tym temacie opisano sposób używania okna dialogowego **Wybierz warunek** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób użycia okna dialogowego **Wybierz warunek** w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  Okno dialogowe **Wybieranie warunku** służy do wybierania warunku reguły deklaratywnej, która ma zostać przypisana do właściwości warunku działania. Te warunki reguły są udostępniane jako właściwości w następujących Windows Workflow Foundation działaniach gotowych:
 
@@ -31,7 +31,7 @@ W tym temacie opisano sposób używania okna dialogowego **Wybierz warunek** w s
 
 - [Działanie ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
+- [While](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
   Aby uzyskać informacje o tym, jak uzyskać dostęp do okna dialogowego **Wybierz warunek** , zobacz [How to: Create a deklaratywn Rule Condition (starsza wersja)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
@@ -42,7 +42,7 @@ W tym temacie opisano sposób używania okna dialogowego **Wybierz warunek** w s
 |**Nowy...**|Kliknij, aby otworzyć okno [dialogowe Edytor warunku reguły (starsza wersja)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) , aby utworzyć nowy warunek reguły.|
 |**Edytuj...**|Kliknij, aby otworzyć okno [dialogowe Edytor warunku reguły (starsza wersja)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) , aby edytować wybrany warunek reguły.|
 |**Zmień nazwę...**|Kliknij, aby otworzyć okno dialogowe używane do zmiany nazwy wybranego warunku reguły.|
-|**Delete**|Kliknij, aby usunąć wybrany warunek reguły.|
+|**Usuń**|Kliknij, aby usunąć wybrany warunek reguły.|
 |**Podgląd warunku**|Wyświetla wyrażenie warunku dla wybranego warunku reguły.|
 |**OK**|Kliknij, aby przypisać wybrany warunek reguły do warunku działania.|
 

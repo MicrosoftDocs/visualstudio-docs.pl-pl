@@ -1,5 +1,5 @@
 ---
-title: Pisanie testów jednostkowych dla językaC++ C — za pomocą platformy testowania jednostkowego firmy Microsoft dla C++ | Microsoft Docs
+title: Pisanie testów jednostkowych dla języka C-C + + z platformą testów jednostkowych firmy Microsoft dla C++ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,16 +9,16 @@ caps.latest.revision: 16
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b6f358f43dcace230e1d58773e58be011d9033e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657079"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Framework testów jednostkowych firmy Microsoft dla języka C++ pozwala pisać testy jednostkowe dla projektów języka C++.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzanego kodu C++, który jest pisany. Kod niezarządzany jest czasami określany jako kod natywny.
+W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzanego kodu pisanego w języku C++. Kod niezarządzany jest czasami określany jako kod natywny.
 
  Poniższa procedura zawiera podstawowe informacje, które pomogą Ci rozpocząć pracę. W kolejnych sekcjach znajduje się przewodnik, w którym opisano kroki bardziej szczegółowo.
 
@@ -30,9 +30,9 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
 
 2. Udostępnienie biblioteki DLL dla projektu testowego:
 
-    - `#include` plik `.h`, który zawiera deklaracje funkcji dostępnych zewnętrznie bibliotek DLL.
+    - `#include``.h`plik, który zawiera deklaracje funkcji dostępnych zewnętrznie bibliotek DLL.
 
-         Plik `.h` powinien zawierać deklaracje funkcji oznaczone `_declspec(dllimport)`. Alternatywnie można eksportować metody przy użyciu pliku DEF. Aby uzyskać więcej informacji, zobacz [Importowanie i eksportowanie](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).
+         `.h`Plik powinien zawierać deklaracje funkcji oznaczone `_declspec(dllimport)` . Alternatywnie można eksportować metody przy użyciu pliku DEF. Aby uzyskać więcej informacji, zobacz [Importowanie i eksportowanie](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).
 
          Testy jednostkowe mogą uzyskiwać dostęp tylko do funkcji, które zostały wyeksportowane z biblioteki DLL objętej testem.
 
@@ -60,9 +60,9 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
 
     - `Assert` zawiera kilka funkcji statycznych, których można użyć do sprawdzenia wyniku testu.
 
-    - Parametr `LINE_INFO()` jest opcjonalny. W przypadkach, gdy nie istnieje plik PDB, umożliwia modułowi uruchamiającego testy zidentyfikowanie lokalizacji błędu.
+    - `LINE_INFO()`Parametr jest opcjonalny. W przypadkach, gdy nie istnieje plik PDB, umożliwia modułowi uruchamiającego testy zidentyfikowanie lokalizacji błędu.
 
-    - Możesz również napisać konfigurację testu i metody czyszczenia. Aby uzyskać więcej informacji, Otwórz definicję makra `TEST_METHOD` i przeczytaj komentarze w CppUnitTest. h
+    - Możesz również napisać konfigurację testu i metody czyszczenia. Aby uzyskać więcej informacji, Otwórz definicję `TEST_METHOD` makra i przeczytaj komentarze w CppUnitTest. h
 
     - Nie można zagnieżdżać klas testowych.
 
@@ -82,7 +82,7 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
 
         3. W menu skrótów dla testu wybierz **Debuguj wybrany test** , aby uruchomić test w debugerze.
 
-## <a name="walkthrough"></a>Przewodnik: Tworzenie niezarządzanej biblioteki DLL za pomocą Eksploratora testów
+## <a name="walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a> Przewodnik: Tworzenie niezarządzanej biblioteki DLL za pomocą Eksploratora testów
  Ten Instruktaż można dostosować w celu opracowania własnej biblioteki DLL. Główne kroki są następujące:
 
 1. [Utwórz natywny projekt testowy](#unitTestProject). Testy są tworzone w oddzielnym projekcie od opracowywanej biblioteki DLL.
@@ -101,29 +101,29 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
 
 8. [Izoluj jednostki od zasobów zewnętrznych](https://msdn.microsoft.com/library/hh549174.aspx). Zazwyczaj Biblioteka DLL jest zależna od innych składników systemu, które tworzysz, takich jak inne biblioteki DLL, bazy danych lub zdalne podsystemy. Warto przetestować każdą jednostkę w izolacji od jej zależności. Składniki zewnętrzne mogą sprawiać, że testy działają wolno. W trakcie programowania inne składniki mogą nie być kompletne.
 
-### <a name="unitTestProject"></a>Utwórz natywny projekt testów jednostkowych
+### <a name="create-a-native-unit-test-project"></a><a name="unitTestProject"></a> Utwórz natywny projekt testów jednostkowych
 
 1. W menu **plik** wybierz polecenie **Nowy**, **projekt**.
 
-     W oknie dialogowym Rozwiń węzeł **zainstalowane**, **Szablony**, **wizualizacje C++** i **testy**.
+     W oknie dialogowym Rozwiń węzeł **zainstalowane**, **Szablony**, **Visual C++**, **test**.
 
      Wybierz szablon **projektu testu natywnego** .
 
-     W tym instruktażu projekt testowy ma nazwę `NativeRooterTest`.
+     W tym instruktażu projekt testowy ma nazwę `NativeRooterTest` .
 
-     ![Tworzenie projektu testu&#43; &#43; jednostkowego C](../test/media/utecpp01.png "UteCpp01")
+     ![Tworzenie projektu testu jednostkowego C&#43;&#43; ](../test/media/utecpp01.png "UteCpp01")
 
 2. W nowym projekcie Sprawdź **UnitTest1. cpp**
 
-     ![Test projektu z klasą&#95;testową&#95;i metodą testową](../test/media/utecpp2.png "UteCpp2")
+     ![Test projektu z KLASą&#95;TESTowego i metodą&#95;testu](../test/media/utecpp2.png "UteCpp2")
 
      Zwróć uwagę, że:
 
-    - Każdy test jest definiowany przy użyciu `TEST_METHOD(YourTestName){...}`.
+    - Każdy test jest definiowany przy użyciu `TEST_METHOD(YourTestName){...}` .
 
          Nie trzeba pisać sygnatury funkcji konwencjonalnej. Podpis jest tworzony przez makro TEST_METHOD. Makro generuje funkcję wystąpienia zwracającą typ void. Generuje również funkcję statyczną, która zwraca informacje o metodzie testowej. Te informacje umożliwiają Eksploratorowi testów znalezienie metody.
 
-    - Metody testowe są pogrupowane w klasy przy użyciu `TEST_CLASS(YourClassName){...}`.
+    - Metody testowe są pogrupowane w klasy przy użyciu `TEST_CLASS(YourClassName){...}` .
 
          Gdy testy są uruchamiane, tworzone jest wystąpienie każdej klasy testowej. Metody testowe są wywoływane w nieokreślonej kolejności. Można zdefiniować metody specjalne, które są wywoływane przed i po każdym module, klasie lub metodzie.
 
@@ -138,7 +138,7 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
         }
         ```
 
-         Należy zauważyć, że Klasa `Assert` dostarcza kilka metod statycznych, których można użyć do sprawdzenia wyników w metodach testowych.
+         Należy zauważyć, że `Assert` Klasa zawiera kilka metod statycznych, których można użyć do sprawdzenia wyników w metodach testowych.
 
     2. W menu **test** wybierz polecenie **Uruchom** , a następnie **wszystkie testy**.
 
@@ -150,25 +150,25 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
 
          ![Eksplorator testów jednostkowych z jednym zakończonym testem](../test/media/utecpp04.png "UteCpp04")
 
-### <a name="createDllProject"></a>Tworzenie niezarządzanego projektu biblioteki DLL
+### <a name="create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> Tworzenie niezarządzanego projektu biblioteki DLL
 
-1. Utwórz projekt **wizualny C++**  przy użyciu szablonu **projektu Win32** .
+1. Utwórz projekt **Visual C++** przy użyciu szablonu **projektu Win32** .
 
-     W tym instruktażu projekt ma nazwę `RootFinder`.
+     W tym instruktażu projekt ma nazwę `RootFinder` .
 
-     ![Tworzenie projektu systemu&#43; &#43; Win32 w języku C](../test/media/utecpp05.png "UteCpp05")
+     ![Tworzenie projektu środowiska C&#43;&#43; Win32](../test/media/utecpp05.png "UteCpp05")
 
 2. Wybierz opcję **dll** i **Eksportuj symbole** w Kreatorze aplikacji Win32.
 
      Opcja **Eksportuj symbole** generuje wygodne makro, którego można użyć do zadeklarowania eksportowanych metod.
 
-     ![Kreator&#43; &#43; projektu C ustawiony dla biblioteki DLL i symboli eksportu](../test/media/utecpp06.png "UteCpp06")
+     ![Kreator projektów&#43;&#43; języka C ustawiony dla bibliotek DLL i symboli eksportu](../test/media/utecpp06.png "UteCpp06")
 
 3. Zadeklaruj wyeksportowaną funkcję w pliku Principal. h:
 
      ![Nowy projekt kodu DLL i plik h z makrami interfejsu API](../test/media/utecpp07.png "UteCpp07")
 
-     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione elementy członkowskie klasy są widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [using dllimport i dllexport C++ w klasach](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).
+     Deklarator powoduje, że `__declspec(dllexport)` publiczne i chronione składowe klasy są widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [using dllimport i dllexport w klasach C++](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).
 
 4. W pliku Principal. cpp Dodaj minimalną treść dla funkcji:
 
@@ -180,19 +180,19 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
     }
     ```
 
-### <a name="coupleProjects"></a>Połącz projekt testowy z projektem DLL
+### <a name="couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> Połącz projekt testowy z projektem DLL
 
 1. Dodaj projekt DLL do odwołań projektu projektu testowego:
 
    1. Otwórz właściwości projektu testowego i wybierz pozycję **wspólne właściwości**, **Struktura i odwołania**.
 
-        ![Struktura i informacje o projekcie języka C&#43; &#43; &#45;](../test/media/utecpp08.png "UteCpp08")
+        ![C&#43;&#43; właściwości projektu &#45; struktura i odwołania](../test/media/utecpp08.png "UteCpp08")
 
    2. Wybierz pozycję **Dodaj nowe odwołanie**.
 
         W oknie dialogowym **Dodaj odwołanie** wybierz projekt DLL i wybierz pozycję **Dodaj**.
 
-        ![&#43; &#43; Właściwości &#45; projektu C Dodaj nowe odwołanie](../test/media/utecpp09.png "UteCpp09")
+        ![C&#43;&#43; właściwości projektu &#45; Dodaj nowe odwołanie](../test/media/utecpp09.png "UteCpp09")
 
 2. W pliku. cpp testu jednostkowego podmiotu zabezpieczeń należy uwzględnić plik. h kodu DLL:
 
@@ -226,11 +226,11 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
 
 5. W Eksploratorze testów wybierz opcję **Uruchom wszystkie**.
 
-    ![Test podstawowego Eksploratora &#45; testów jednostkowych zakończonych niepowodzeniem](../test/media/utecpp10.png "UteCpp10")
+    ![Eksplorator testów jednostkowych &#45; test podstawowy zakończony zakończono](../test/media/utecpp10.png "UteCpp10")
 
    Został skonfigurowany test i projekty kodu i zweryfikowane, że można uruchomić testy, które uruchamiają funkcje w projekcie kodu. Teraz możesz zacząć pisać prawdziwe testy i kod.
 
-### <a name="iterate"></a>Iteracyjnie rozszerza testy i przekazują je
+### <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Iteracyjnie rozszerza testy i przekazują je
 
 1. Dodaj nowy test:
 
@@ -283,12 +283,12 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
 
      Oba testy zostały zakończone pomyślnie.
 
-     ![Test zakresu Eksploratora &#45; testów jednostkowych zakończonych](../test/media/utecpp12.png "UteCpp12")
+     ![Zakończono Test zakresu &#45; w Eksploratorze testów jednostkowych](../test/media/utecpp12.png "UteCpp12")
 
     > [!TIP]
     > Opracowuj kod przez dodanie testów pojedynczo. Upewnij się, że wszystkie testy są zakończone po każdej iteracji.
 
-### <a name="debug"></a>Debuguj test zakończony niepowodzeniem
+### <a name="debug-a-failing-test"></a><a name="debug"></a> Debuguj test zakończony niepowodzeniem
 
 1. Dodaj inny test:
 
@@ -361,9 +361,9 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
      ![Wszystkie testy zakończone powodzeniem](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
 > [!TIP]
-> Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą przycisku przełączania ![&#95;wykonaj parallelicon&#45;mały](../test/media/ute-parallelicon-small.png "UTE_parallelicon — mały") przełącznik na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
+> Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów przy użyciu przycisku ![wykonaj&#95;parallelicon&#45;mały](../test/media/ute-parallelicon-small.png "UTE_parallelicon — mały") przełącznik na pasku narzędzi. Może to znacznie skrócić czas potrzebny do uruchomienia wszystkich testów.
 
-### <a name="refactor"></a>Refaktoryzacja kodu bez zmiany testów
+### <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Refaktoryzacja kodu bez zmiany testów
 
 1. Uprość Obliczanie centralne w funkcji SquareRoot:
 
@@ -393,4 +393,4 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
      Istnieje również możliwość przydzielenia minimalnego poziomu pokrycia kodu.
 
 ## <a name="see-also"></a>Zobacz też
- [Dodawanie testów jednostkowych do C++ istniejących aplikacji](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [przy użyciu programu Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [— Przegląd informacji o współdziałaniu kodu zarządzanego/niezarządzanego](https://msdn.microsoft.com/library/ms973872.aspx) [Debugowanie kodu natywnego](../debugger/debugging-native-code.md) [— Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznieC++()](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [Importowanie i eksportowanie](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [przy użyciu programu Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [— Omówienie elementów zarządzanych/niezarządzanych interoperacyjności kodu](https://msdn.microsoft.com/library/ms973872.aspx) [Debugowanie kodu natywnego](../debugger/debugging-native-code.md) [— Przewodnik: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [Importowanie i eksportowanie](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

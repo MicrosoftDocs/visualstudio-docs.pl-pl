@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zarządzanie galerią prywatną za pomocą ustawień rejestru | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Zarządzanie galerią prywatną za pomocą ustawień rejestru | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,19 +12,19 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204159"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Instrukcje: Zarządzanie galerią prywatną za pomocą ustawień rejestru
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Instrukcje: zarządzanie galerią prywatną za pomocą ustawień rejestru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli jesteś administratorem lub deweloperem rozszerzenia Isolated Shell można kontrolować dostęp do formantów, szablonów i narzędzi dostępnych w galerii Visual Studio, galerii przykładów lub galerie prywatne. Aby galerii dostępne lub niedostępne, należy utworzyć plik .pkgdef, który opisuje zmodyfikowanych kluczy i ich wartości.  
+Jeśli jesteś administratorem lub deweloperem rozszerzenia izolowanej powłoki, możesz kontrolować dostęp do kontrolek, szablonów i narzędzi w galerii programu Visual Studio, galerii przykładów lub w galeriach prywatnych. Aby udostępnić galerię lub niedostępny, Utwórz plik. pkgdef, który opisuje zmodyfikowane klucze rejestru i ich wartości.  
   
-## <a name="managing-private-galleries"></a>Zarządzanie galerie prywatne  
- Można utworzyć plik .pkgdef, aby kontrolować dostęp do galerii na wielu komputerach. Ten plik musi mieć następujący format.  
+## <a name="managing-private-galleries"></a>Zarządzanie galeriami prywatnymi  
+ Można utworzyć plik. pkgdef, aby kontrolować dostęp do galerii na wielu komputerach. Ten plik musi mieć następujący format.  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{UniqueGUID}]  
@@ -38,22 +38,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- `Repositories` Klucz odnosi się do galerii, aby włączyć lub wyłączyć. W galerii Visual Studio i galerii przykładów należy użyć następujących repozytorium identyfikatorów GUID:  
+ `Repositories`Klucz odnosi się do galerii, która ma być włączona lub wyłączona. Galeria programu Visual Studio i Galeria przykładów używają następujących identyfikatorów GUID repozytorium:  
   
-- Galeria Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Galeria programu Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
 - Galeria przykładów: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
-  `Disabled` Wartość jest opcjonalna. Domyślnie galerii jest włączona.  
+  `Disabled`Wartość jest opcjonalna. Domyślnie Galeria jest włączona.  
   
-  `Priority` Wartość określa kolejność, w którym Galerie są wyświetlane w oknie dialogowym Opcje. Galeria Visual Studio ma priorytet 10 i galerii przykładów ma priorytet 20. Galerie prywatne start priorytetem 100. Jeśli kilka Galerie mają taką samą wartość priorytetu, kolejność, w jakiej są wyświetlane jest określana przez wartości ich zlokalizowane `DisplayName` atrybutów.  
+  `Priority`Wartość określa kolejność, w jakiej Galerie są wyświetlane w oknie dialogowym Opcje. Galeria programu Visual Studio ma priorytet 10, a Galeria przykładów ma priorytet 20. Galerie prywatne zaczynają się od priorytetu 100. Jeśli kilka galerii ma taką samą wartość priorytetu, kolejność, w jakiej są one wyświetlane, zależy od wartości zlokalizowanych `DisplayName` atrybutów.  
   
-  `Protocol` Wartość jest wymagana do galerii Atom lub programu SharePoint.  
+  Ta `Protocol` wartość jest wymagana dla galerii opartych na protokole Atom lub programie SharePoint.  
   
-  Albo `DisplayName`, i / lub `DisplayNameResourceID` i `DisplayNamePackageGuid`, musi być określona. Jeśli wszystkie są określone, a następnie `DisplayNameResourceID` i `DisplayNamePackageGuid` pary jest używany.  
+  `DisplayName`Należy określić albo oba, `DisplayNameResourceID` jak i `DisplayNamePackageGuid` . Jeśli wszystkie są określone, `DisplayNameResourceID` `DisplayNamePackageGuid` para i jest używana.  
   
-## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Wyłączanie w galerii Visual Studio przy użyciu pliku pkgdef  
- Można wyłączyć galerii w pliku .pkgdef. Następujący wpis wyłącza galerii Visual Studio:  
+## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Wyłączanie galerii programu Visual Studio przy użyciu pliku. pkgdef  
+ Możesz wyłączyć galerię w pliku. pkgdef. Następujący wpis wyłącza galerię programu Visual Studio:  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
@@ -61,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Następujący wpis wyłącza galerii przykładów:  
+ Następujący wpis wyłącza galerię przykładów:  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  

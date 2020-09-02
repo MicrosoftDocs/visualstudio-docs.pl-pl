@@ -1,5 +1,5 @@
 ---
-title: Typowy język środowiska uruchomieniowego i oceny wyrażeń | Dokumenty firmy Microsoft
+title: Środowisko uruchomieniowe języka wspólnego i Ocena wyrażeń | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739110"
 ---
-# <a name="common-language-runtime-and-expression-evaluation"></a>Wspólne środowisko wykonawcze języka i ocena wyrażeń
+# <a name="common-language-runtime-and-expression-evaluation"></a>Środowisko uruchomieniowe języka wspólnego i Ocena wyrażeń
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład oceniającego zarządzane wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Kompilatory, takie jak Visual Basic i C# (wymawiane C-sharp), które są przeznaczone dla wspólnego środowiska wykonawczego języka (CLR), produkcji Microsoft Intermediate Language (MSIL), który jest później kompilowany do kodu macierzystego. CLR udostępnia aparat debugowania (DE) do debugowania kodu wynikowego. Jeśli planujesz zintegrować swój własny język programowania do środowiska IDE programu Visual Studio, można wybrać do kompilacji do MSIL i dlatego nie będzie musiał pisać własne DE. Jednak trzeba będzie napisać oceniającego wyrażenie (EE), który jest zdolny do oceny wyrażeń w kontekście języka programowania.
+ Kompilatory, takie jak Visual Basic i C# (wymawiane C-Sharp), które są przeznaczone dla środowiska uruchomieniowego języka wspólnego (CLR), generują języka pośredniego (MSIL) firmy Microsoft, który jest później kompilowany do kodu natywnego. Środowisko CLR udostępnia aparat debugowania (DE) do debugowania wyniku w kodzie. Jeśli planujesz zintegrować własny język programowania z programem Visual Studio IDE, możesz wybrać kompilację do MSIL i w związku z tym nie będzie trzeba pisać własnych. Należy jednak napisać ewaluatora wyrażeń (EE), która będzie mogła oceniać wyrażenia w kontekście języka programowania.
 
-## <a name="discussion"></a>Dyskusji
- Wyrażenia języka komputerowego są zazwyczaj analizowane w celu utworzenia zestawu obiektów danych i zestawu operatorów używanych do manipulowania nimi. Na przykład wyrażenie "A + B" może być analizowane w celu zastosowania operatora dodawania (+) do obiektów danych "A" i "B", co może spowodować powstanie innego obiektu danych. Całkowity zestaw obiektów danych, operatorów i ich skojarzenia są najczęściej reprezentowane w programie jako drzewo, z operatorami w węzłach drzewa i obiektami danych w gałęziach. Wyrażenie, które zostało podzielone na formę drzewa jest często nazywane analizowane drzewa.
+## <a name="discussion"></a>Dyskusja
+ Wyrażenia języka komputera są zwykle analizowane w celu utworzenia zestawu obiektów danych i zestawu operatorów używanych do manipulowania nimi. Na przykład wyrażenie "A + B" może być analizowane, aby zastosować operator dodawania (+) do obiektów danych "A" i "B", które prawdopodobnie wystąpiły w innym obiekcie danych. Łączny zbiór obiektów danych, operatorów i ich skojarzeń najczęściej jest przedstawiany w programie jako drzewo, z operatorami w węzłach drzewa i obiekty danych w gałęziach. Wyrażenie, które zostało podzielone do postaci drzewa, jest często nazywane przeanalizowanym drzewem.
 
- Po przeanalizowaniu wyrażenia dostawca symboli (SP) jest wywoływany do oceny każdego obiektu danych. Na przykład, jeśli "A" jest zdefiniowany zarówno w więcej niż jednej metodzie, pytanie "Które A?" przed ustaleniem wartości A. Odpowiedź zwrócona przez SP jest coś takiego jak "Trzeci element na piątej ramce stosu" lub "A, który jest 50 bajtów poza rozpoczęciem pamięci statycznej przydzielone do tej metody."
+ Po przeanalizowaniu wyrażenia jest wywoływany dostawca symboli (SP), aby oszacować każdy obiekt danych. Na przykład jeśli element "A" jest zdefiniowany zarówno w więcej niż jednej metodzie, pytanie " musi być udzielona odpowiedź przed ustaleniem wartości parametru. Odpowiedź zwrócona przez program SP to coś takiego jak "trzeci element w piątej ramce stosu" lub "A o 50 bajtów wykraczających poza początek pamięci statycznej przydzielonej tej metodzie".
 
- Oprócz produkcji MSIL dla samego programu, kompilatory CLR mogą również tworzyć bardzo opisowe informacje debugowania, które są zapisywane w pliku DataBase programu *(pdb).* Tak długo, jak kompilator języka zastrzeżonego produkuje informacje debugowania w tym samym formacie co kompilatory CLR, SP CLR jest w stanie zidentyfikować nazwane obiekty danych tego języka. Po zidentyfikowaniu nazwanego obiektu danych EE używa obiektu spinacza do skojarzenia (lub powiązania) obiektu danych z obszarem pamięci, który przechowuje wartość tego obiektu. DE można następnie uzyskać lub ustawić nową wartość dla obiektu danych.
+ Oprócz tworzenia MSIL dla samego programu, kompilatory CLR mogą również generować bardzo opisowe informacje debugowania, które są zapisywane w pliku bazy danych programu (*. pdb*). Tak długo, jak i kompilator języka własnościowego generuje informacje debugowania w tym samym formacie co kompilatory CLR, SP środowiska CLR jest w stanie identyfikować obiekty danych o nazwie tego języka. Po zidentyfikowaniu nazwanego obiektu danych, EE używa obiektu spinacza, aby skojarzyć (lub powiązać) obiekt danych z obszarem pamięci, który przechowuje wartość tego obiektu. A następnie można pobrać lub ustawić nową wartość dla obiektu danych.
 
- Kompilator własności może dostarczyć informacji debugowania `ISymbolWriter` CLR, wywołując interfejs (który jest zdefiniowany w .NET Framework w obszarze nazw). `System.Diagnostics.SymbolStore` Kompilując do MSIL i zapisując informacje debugowania za pośrednictwem tych interfejsów, kompilator własności można użyć CLR DE i SP. Znacznie upraszcza to integrowanie zastrzeżonego języka z ideą programu Visual Studio.
+ Kompilator własnościowy może dostarczyć informacji debugowania CLR przez wywołanie `ISymbolWriter` interfejsu (który jest zdefiniowany w .NET Framework w przestrzeni nazw `System.Diagnostics.SymbolStore` ). Kompilując do języka MSIL i pisząc informacje debugowania za pomocą tych interfejsów, zastrzeżony kompilator może używać środowiska CLR DE i SP. Znacznie upraszcza to integrację zastrzeżonego języka z Visual Studio IDE.
 
- Gdy CLR DE wywołuje własności EE do oceny wyrażenia, DE dostarcza EE z interfejsów do SP i obiektu spinacza. W związku z tym pisanie aparatu debugowania opartego na programie CLR oznacza, że jest konieczne tylko do zaimplementowania interfejsów ewaluatora odpowiedniewyrażeń; clr zajmuje się oprawą i obsługą symboli.
+ Gdy środowisko CLR odwołuje się do funkcji EE w celu obliczenia wyrażenia, zawiera on interfejsy EE z interfejsami dla obiektu SP i spinacza. W związku z tym pisanie aparatu debugowania opartego na środowisku CLR oznacza, że jest to konieczne tylko w celu wdrożenia odpowiednich interfejsów ewaluatora wyrażeń. środowisko CLR bierze pod uwagę powiązanie i obsługę symboli.
 
 ## <a name="see-also"></a>Zobacz też
-- [Napisz ewaluatora wyrażenia CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Napisz ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide | Dokumenty firmy Microsoft
+title: IPropertyProxyEESide | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714861"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
-Ten interfejs zawiera metody wyświetlania danych na skojarzonym obiekcie. Ten interfejs jest częścią obsługi wizualizatorów typu.
+Ten interfejs zapewnia metody do wyświetlania danych na skojarzonym obiekcie. Ten interfejs jest częścią obsługi wizualizatorów typów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,30 +29,30 @@ IPropertyProxyEESide : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Oceniający wyrażenie implementuje ten interfejs do obsługi wizualizatorów typów.
+ Ewaluatora wyrażeń implementuje ten interfejs do obsługi wizualizatorów typów.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołanie [GetPropertyProxy,](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) aby uzyskać ten interfejs. Wywołanie [QueryInterface](/cpp/atl/queryinterface) na [interfejsie IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) w celu uzyskania interfejsu [IPropertyProxyProvider.](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)
+ Wywołaj [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) , aby uzyskać ten interfejs. Wywołaj metodę [QueryInterface](/cpp/atl/queryinterface) na interfejsie [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , aby uzyskać Interfejs [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) .
 
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
- Ten interfejs implementuje następujące metody:
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych
+ Następujące metody są implementowane przez ten interfejs:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|Inicjuje dostawcę źródła danych, aby uzyskać dostęp do danych obiektu.|
-|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|Pobiera informacje o złożeniu obiektu.|
-|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|Pobiera dane początkowe dla obiektu.|
+|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|Inicjuje dostawcę źródła danych, aby można było uzyskać dostęp do danych obiektu.|
+|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|Pobiera informacje o zestawie obiektu.|
+|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|Pobiera początkowe dane dla obiektu.|
 |[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|Tworzy kopię istniejącego magazynu danych.|
 |[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|Tworzy odwołanie do istniejącego magazynu danych.|
 |[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Pobiera informacje o określonym zestawie w kontekście zestawu zawierającego ten obiekt.|
 
 ## <a name="remarks"></a>Uwagi
- Wizualizator typu używa tego interfejsu, aby uzyskać dostęp do wartości skojarzonych z obiektem, którego częścią jest ten interfejs. Dane są dostępne za pośrednictwem interfejsu [IEEDataStorage,](../../../extensibility/debugger/reference/ieedatastorage.md) który zapewnia widok tylko do odczytu danych.
+ Wizualizator typu używa tego interfejsu, aby uzyskać dostęp do wartości skojarzonych z obiektem, do którego należy ten interfejs. Dostęp do danych uzyskuje się za pomocą interfejsu [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) , który zapewnia widok danych tylko do odczytu.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

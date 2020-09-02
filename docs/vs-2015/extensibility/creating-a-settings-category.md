@@ -1,5 +1,5 @@
 ---
-title: Tworzenie kategorii ustawień | Dokumentacja firmy Microsoft
+title: Tworzenie kategorii ustawień | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695019"
 ---
 # <a name="creating-a-settings-category"></a>Tworzenie kategorii ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używać go do wartości, aby zapisać i przywrócić wartości z pliku ustawień. Kategoria ustawień jest grupą powiązanych właściwości, które są wyświetlane jako "punkt ustawień niestandardowych;" oznacza to, że pole wyboru w **importowanie i eksportowanie ustawień** kreatora. (Można znaleźć na **narzędzia** menu.) Ustawienia są zapisywane lub przywrócone jako kategorii, a poszczególne ustawienia nie są wyświetlane w kreatorze. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+W tym instruktażu utworzysz kategorię ustawień programu Visual Studio i użyjesz jej do zapisania wartości i przywrócenia wartości z pliku ustawień. Kategoria ustawień jest grupą powiązanych właściwości, które pojawiają się jako "punkt ustawień niestandardowych"; oznacza to, że jest to pole wyboru w kreatorze **importowania i eksportowania ustawień** . (Można je znaleźć w menu **Narzędzia** ). Ustawienia są zapisywane lub przywracane jako kategoria, a poszczególne ustawienia nie są wyświetlane w kreatorze. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- Tworzenie kategorii ustawień przez wywodzić ją z <xref:Microsoft.VisualStudio.Shell.DialogPage> klasy.  
+ Można utworzyć kategorię ustawień, usuwając ją z <xref:Microsoft.VisualStudio.Shell.DialogPage> klasy.  
   
- Aby uruchomić ten Instruktaż, najpierw musisz zakończyć w pierwszej sekcji [Tworzenie strony opcji](../extensibility/creating-an-options-page.md). Wynikowy siatki właściwości opcje pozwala sprawdzić i zmienić właściwości w kategorii. Po zapisaniu kategorii właściwości w pliku ustawień, zapoznaj się z plikiem, aby zobaczyć, jak są przechowywane wartości właściwości.  
+ Aby rozpocząć ten przewodnik, należy najpierw wykonać pierwszą sekcję [tworzenia strony opcji](../extensibility/creating-an-options-page.md). Siatka właściwości opcje wyników umożliwia badanie i zmiana właściwości w kategorii. Po zapisaniu kategorii właściwości w pliku ustawień należy sprawdzić plik, aby zobaczyć, w jaki sposób są przechowywane wartości właściwości.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-settings-category"></a>Tworzenie kategorii ustawień  
- W tej sekcji umożliwia punktu niestandardowych ustawień zapisywanie i przywracanie wartości kategorii ustawień.  
+ W tej sekcji używany jest punkt ustawień niestandardowych do zapisywania i przywracania wartości kategorii ustawień.  
   
-#### <a name="to-create-a-settings-category"></a>Aby utworzyć kategorii ustawień  
+#### <a name="to-create-a-settings-category"></a>Aby utworzyć kategorię ustawień  
   
-1. Wykonaj [Tworzenie strony opcji](../extensibility/creating-an-options-page.md).  
+1. Wypełnij [stronę tworzenie opcji](../extensibility/creating-an-options-page.md).  
   
-2. Otwórz plik VSPackage.resx i Dodaj te zasoby trzy parametry:  
+2. Otwórz plik pakietu VSPackage. resx i Dodaj następujące trzy zasoby ciągu:  
   
     |Nazwa|Wartość|  
     |----------|-----------|  
-    |106|Moje kategorii|  
+    |106|Moja Kategoria|  
     |107|Moje ustawienia|  
     |108|OptionInteger i OptionFloat|  
   
-     Spowoduje to utworzenie zasobów tej nazwy kategorii "Moje Category", "Moje ustawienia obiektu" i opis kategorii "OptionInteger i OptionFloat".  
+     Spowoduje to utworzenie zasobów należących do kategorii "My Category", obiektu "My Settings" i opisu kategorii "OptionInteger and OptionFloat".  
   
     > [!NOTE]
-    > Z tych trzech nazwę kategorii nie są wyświetlane w kreatorze Import i eksport ustawień.  
+    > Z tych trzech, tylko nazwa kategorii nie jest wyświetlana w Kreatorze importowania i eksportowania ustawień.  
   
-3. W MyToolsOptionsPackage.cs, Dodaj `float` właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.  
+3. W MyToolsOptionsPackage.cs Dodaj `float` Właściwość o nazwie `OptionFloat` do `OptionPageGrid` klasy, jak pokazano w poniższym przykładzie.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -77,51 +77,51 @@ W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używa�
     ```  
   
     > [!NOTE]
-    > `OptionPageGrid` Kategorii o nazwie "My Category" teraz składa się z dwóch właściwości `OptionInteger` i `OptionFloat`.  
+    > `OptionPageGrid`Kategoria o nazwie "My Category" zawiera teraz dwie właściwości `OptionInteger` i `OptionFloat` .  
   
-4. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do `MyToolsOptionsPackage` klasy i nadać mu CategoryName "Moje Category", nadaj ObjectName "Moje ustawienia" i ustawić isToolsOptionPage na wartość true. Ustaw categoryResourceID objectNameResourceID i DescriptionResourceID do odpowiedniego zasobu ciągu, który identyfikatorów utworzonych wcześniej.  
+4. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> do `MyToolsOptionsPackage` klasy i nadaj jej CategoryName "My Category", nadaj jej obiektowi ObjectName "My Settings" i ustaw isToolsOptionPage na true. Ustaw wartości categoryResourceID, objectNameResourceID i DescriptionResourceID na odpowiednie identyfikatory zasobów ciągu utworzone wcześniej.  
   
     ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5. Skompiluj projekt, a następnie rozpocząć debugowanie. W doświadczalnym wystąpieniu powinien zostać wyświetlony, **Moja strona siatki** ma teraz wartości typu Liczba całkowita i zmiennoprzecinkowa.  
+5. Skompiluj projekt i Rozpocznij debugowanie. W eksperymentalnym wystąpieniu powinno być widoczne, że **Strona Moje siatki** zawiera teraz wartości całkowite i zmiennoprzecinkowe.  
   
-## <a name="examining-the-settings-file"></a>Badanie plik ustawień  
- W tej sekcji możesz wyeksportować do pliku ustawień właściwości wartości kategorii. Zapoznaj się z plikiem, a następnie zaimportować wartości z powrotem do kategorii właściwości.  
+## <a name="examining-the-settings-file"></a>Badanie pliku ustawień  
+ W tej sekcji można wyeksportować wartości kategorii właściwości do pliku ustawień. Należy przeanalizować plik, a następnie zaimportować wartości z powrotem do kategorii właściwości.  
   
-1. Rozpocznij projekt w trybie debugowania, naciskając klawisz F5. Spowoduje to uruchomienie wystąpienie eksperymentalne.  
+1. Uruchom projekt w trybie debugowania, naciskając klawisz F5. Spowoduje to uruchomienie eksperymentalnego wystąpienia.  
   
-2. Otwórz **narzędzia / Opcje** okna dialogowego.  
+2. Otwórz okno dialogowe **Narzędzia/Opcje** .  
   
-3. W widoku drzewa w lewym okienku rozwiń **Moje kategorii** a następnie kliknij przycisk **Moja strona siatki**.  
+3. W widoku drzewa w lewym okienku rozwiń węzeł **moja Kategoria** , a następnie kliknij pozycję **moja strona siatki**.  
   
-4. Zmień wartość właściwości **OptionFloat** do 3.1416 i **OptionInteger** do 12. Kliknij przycisk **OK**.  
+4. Zmień wartość **OptionFloat** na 3,1416 i **OptionInteger** na 12. Kliknij przycisk **OK**.  
   
-5. Na **narzędzia** menu, kliknij przycisk **Import i eksport ustawień**.  
+5. W menu **Narzędzia** kliknij pozycję **Importuj i Eksportuj ustawienia**.  
   
-     **Import i eksport ustawień** pojawi się Kreator.  
+     Zostanie wyświetlony Kreator **importowania i eksportowania ustawień** .  
   
-6. Upewnij się, że **Eksportuj wybrane ustawienia środowiska** jest zaznaczone, a następnie kliknij przycisk **dalej**.  
+6. Upewnij się, że wybrano opcję **Eksportuj wybrane ustawienia środowiska** , a następnie kliknij przycisk **dalej**.  
   
-     **Wybierz ustawienia do eksportowania** zostanie wyświetlona strona.  
+     Zostanie wyświetlona strona **Wybierz ustawienia do eksportowania** .  
   
-7. Kliknij przycisk **Moje ustawienia**.  
+7. Kliknij pozycję **Moje ustawienia**.  
   
      **Opis** zmieni się na **OptionInteger i OptionFloat**.  
   
-8. Upewnij się, że **Moje ustawienia** jest tylko kategorię, która jest zaznaczone, a następnie kliknij przycisk **dalej**.  
+8. Upewnij się, że **Moje ustawienia** są jedyną wybraną kategorią, a następnie kliknij przycisk **dalej**.  
   
-     **Nazwę pliku ustawień** zostanie wyświetlona strona.  
+     Zostanie wyświetlona strona **Nazwij plik ustawień** .  
   
-9. Nadaj nowemu plikowi ustawień `MySettings.vssettings` i zapisz go w odpowiednim katalogu. Kliknij przycisk **Zakończ**.  
+9. Nazwij nowy plik ustawień `MySettings.vssettings` i Zapisz go w odpowiednim katalogu. Kliknij przycisk **Zakończ**.  
   
-     **Eksportowanie ukończone** strony zgłasza, że Twoje ustawienia zostały pomyślnie wyeksportowane.  
+     Na stronie **Eksportowanie zakończą** się raporty, że Twoje ustawienia zostały pomyślnie wyeksportowane.  
   
-10. Na **pliku** menu wskaż **Otwórz**, a następnie kliknij przycisk **pliku**. Znajdź `MySettings.vssettings` i otwórz go.  
+10. W menu **plik** wskaż polecenie **Otwórz**, a następnie kliknij pozycję **plik**. Znajdź `MySettings.vssettings` i Otwórz.  
   
-     Możesz znaleźć kategorii właściwości, który został wyeksportowany w poniższej sekcji pliku (swoje identyfikatory GUID będą się różnić).  
+     Możesz znaleźć kategorię właściwości wyeksportowaną w poniższej sekcji pliku (identyfikatory GUID różnią się).  
   
     ```  
     <Category name="My Category_My Settings"   
@@ -134,24 +134,24 @@ W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używa�
     </Category>  
     ```  
   
-     Należy zauważyć, że nazwa kategorii pełną został utworzony przez dodanie znaku podkreślenia, aby nazwa kategorii, a następnie według nazwy obiektu. OptionFloat i OptionInteger pojawiają się w danej kategorii, wraz z ich wartości eksportowanych.  
+     Należy zauważyć, że pełna nazwa kategorii jest tworzona przez dodanie podkreślenia do nazwy kategorii, po której następuje nazwa obiektu. OptionFloat i OptionInteger są wyświetlane w kategorii wraz z wyeksportowanymi wartościami.  
   
-11. Zamknij plik ustawień, nie zmieniając go.  
+11. Zamknij plik ustawień bez zmiany.  
   
-12. Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **Moje kategorii**, kliknij przycisk **Moja strona siatki** , a następnie zmień wartość  **OptionFloat** 1.0 i **OptionInteger** 1. Kliknij przycisk **OK**.  
+12. W menu **Narzędzia** kliknij **Opcje**, rozwiń **moją kategorię**, kliknij pozycję **moja siatka** , a następnie zmień wartość **OptionFloat** na 1,0 i **OptionInteger** na 1. Kliknij przycisk **OK**.  
   
-13. Na **narzędzia** menu, kliknij przycisk **Import i eksport ustawień**, wybierz opcję **Importuj ustawienia wybranego środowiska**, a następnie kliknij przycisk **dalej**.  
+13. W menu **Narzędzia** kliknij pozycję **Importuj i Eksportuj ustawienia**, wybierz opcję **Importuj wybrane ustawienia środowiska**, a następnie kliknij przycisk **dalej**.  
   
-     **Zapisać bieżące ustawienia** zostanie wyświetlona strona.  
+     Zostanie wyświetlona strona **Zapisywanie bieżących ustawień** .  
   
-14. Wybierz **nie, tylko zaimportuj nowe ustawienia** a następnie kliknij przycisk **dalej**.  
+14. Wybierz pozycję **nie, po prostu zaimportuj nowe ustawienia** , a następnie kliknij przycisk **dalej**.  
   
-     **Wybierz kolekcję ustawień do zaimportowania** zostanie wyświetlona strona.  
+     Zostanie wyświetlona strona **Wybierz kolekcję ustawień do zaimportowania** .  
   
-15. Wybierz `MySettings.vssettings` w pliku **Moje ustawienia** węzła widoku drzewa. Jeśli plik nie zostanie wyświetlony w widoku drzewa, kliknij przycisk **Przeglądaj** i poszukaj ich. Kliknij przycisk **Dalej**.  
+15. Wybierz `MySettings.vssettings` plik w węźle **Moje ustawienia** w widoku drzewa. Jeśli plik nie jest wyświetlany w widoku drzewa, kliknij przycisk **Przeglądaj** i Znajdź go. Kliknij przycisk **Dalej**.  
   
-     **Wybierz ustawienia do importowania** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Wybieranie ustawień do zaimportowania** .  
   
-16. Upewnij się, że **Moje ustawienia** jest zaznaczone, a następnie kliknij przycisk **Zakończ**. Gdy **pełny Import** zostanie wyświetlona strona, kliknij przycisk **Zamknij**.  
+16. Upewnij się, że **Moje ustawienia** są zaznaczone, a następnie kliknij przycisk **Zakończ**. Gdy zostanie wyświetlona strona **Zakończono Importowanie** , kliknij przycisk **Zamknij**.  
   
-17. Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **Moje kategorii**, kliknij przycisk **Moja strona siatki** i sprawdź, czy wartości właściwości w kategorii zostały przywrócone.
+17. W menu **Narzędzia** kliknij przycisk **Opcje**, rozwiń **moją kategorię**, kliknij przycisk **moja strona siatki** i sprawdź, czy przywrócono wartości kategorii właściwości.

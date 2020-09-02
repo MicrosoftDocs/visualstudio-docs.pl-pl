@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Błąd logowania grupy roboczej zdalnego | Dokumentacja firmy Microsoft'
+title: 'Błąd: niepowodzenie zdalnego logowania grupy roboczej | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,64 +24,64 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438348"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64798707"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>Błąd: Błąd logowania zdalnego grupy roboczej
+# <a name="error-workgroup-remote-logon-failure"></a>Błąd: Błąd zdalnego logowania grupy roboczej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Odczytuje ten błąd:  
+Ten błąd odczytuje:  
   
- Błąd logowania: Nieznana nazwa użytkownika lub nieprawidłowe hasło  
+ Niepowodzenie logowania: Nieznana nazwa użytkownika lub nieprawidłowe hasło  
   
  **Przyczyna**  
   
- Ten błąd może wystąpić podczas próby nawiązania połączenia z maszyną zdalną, gdy debugowany na komputerze w grupie roboczej. Możliwe przyczyny:  
+ Ten błąd może wystąpić w przypadku debugowania z komputera w grupie roboczej i próby nawiązania połączenia z maszyną zdalną. Ta sytuacja może mieć następujące przyczyny:  
   
-- Nie ma konta przy użyciu nazwy i hasła na komputerze zdalnym.  
+- Na komputerze zdalnym nie ma konta o pasującej nazwie i haśle.  
   
-- Jeśli komputer z programem Visual Studio i komputer zdalny znajdują się w grupach roboczych, ten błąd może wystąpić z powodu domyślnie **zasady zabezpieczeń lokalnych** ustawienie na komputerze zdalnym. Ustawieniem domyślnym dla **zasady zabezpieczeń lokalnych** jest ustawienie **tylko Gość — Uwierzytelnij jako gościa, użytkownicy lokalni**. Do debugowania w tej konfiguracji, należy zmienić ustawienie na komputerze zdalnym, aby **klasycznego — uwierzytelnianie użytkowników lokalnych, jak samodzielnie**.  
+- Jeśli zarówno komputer z programem Visual Studio, jak i maszyna zdalna znajdują się w grupach roboczych, ten błąd może wystąpić z powodu domyślnego ustawienia **zasad zabezpieczeń lokalnych** na maszynie zdalnej. Domyślnym ustawieniem **zasad zabezpieczeń lokalnych** jest **tylko gość — Użytkownicy lokalni są uwierzytelniani jako gość**. Aby debugować tę konfigurację, należy zmienić ustawienie na maszynie zdalnej na **klasyczne — Użytkownicy lokalni są uwierzytelniani jako same**.  
   
 > [!NOTE]
-> Musi być administratorem, aby wykonywać następujące zadania.  
+> Aby wykonać następujące zadania, musisz być administratorem.  
   
-### <a name="to-open-the-local-security-policy-window"></a>Aby otworzyć okno Zasady zabezpieczeń lokalnych  
+### <a name="to-open-the-local-security-policy-window"></a>Aby otworzyć okno zasady zabezpieczeń lokalnych  
   
-1. Rozpocznij **secpol.msc** przystawkę Microsoft Management Console. W polu wyszukiwania Windows, pole Uruchom Windows lub w wierszu polecenia, wpisz secpol.msc.  
+1. Uruchom przystawkę Microsoft Management Console programu **secpol. msc** . W usłudze Windows Search wpisz polecenie secpol. msc, Windows Run lub w wierszu polecenia.  
   
 ### <a name="to-add-user-rights-assignments"></a>Aby dodać przypisania praw użytkownika  
   
-1. Otwórz lokalnej  
+1. Otwórz Loca  
   
-2. Otwórz **zasady zabezpieczeń lokalnych** okna.  
+2. Otwórz okno **zasady zabezpieczeń lokalnych** .  
   
-3. Rozwiń **zasady lokalne** folderu.  
+3. Rozwiń folder **Zasady lokalne** .  
   
-4. Kliknij przycisk **Przypisywanie praw użytkownika**.  
+4. Kliknij pozycję **Przypisywanie praw użytkownika**.  
   
-5. W **zasad** kolumny, kliknij dwukrotnie **debugowanie programów** Aby przejrzeć bieżące przypisania zasad grupy lokalnej w **Ustawianie zasad zabezpieczeń lokalnych** okno dialogowe.  
+5. W kolumnie **zasady** kliknij dwukrotnie pozycję **debugowanie programów** , aby wyświetlić bieżące przypisania lokalnych zasad grupy w oknie dialogowym **Ustawienia zasad zabezpieczeń lokalnych** .  
   
-     ![Prawa użytkownika zasady zabezpieczeń lokalnych](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
+     ![Prawa użytkownika zasad zabezpieczeń lokalnych](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-6. Aby dodać nowych użytkowników, kliknij **Dodaj użytkownika lub grupę** przycisku.  
+6. Aby dodać nowych użytkowników, kliknij przycisk **Dodaj użytkownika lub grupę** .  
   
-### <a name="to-change-the-sharing-and-security-model"></a>Aby zmienić udostępnianie i Model zabezpieczeń  
+### <a name="to-change-the-sharing-and-security-model"></a>Aby zmienić model udostępniania i zabezpieczeń  
   
-1. Otwórz **zasady zabezpieczeń lokalnych** okna.  
+1. Otwórz okno **zasady zabezpieczeń lokalnych** .  
   
-2. Rozwiń **zasady lokalne** folderu.  
+2. Rozwiń folder **Zasady lokalne** .  
   
-3. Kliknij przycisk **opcje zabezpieczeń**.  
+3. Kliknij pozycję **Opcje zabezpieczeń**.  
   
-4. W **zasad** kolumny, kliknij dwukrotnie **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych**.  
+4. W kolumnie **zasady** kliknij dwukrotnie pozycję **dostęp sieciowy: udostępnianie i model zabezpieczeń dla kont lokalnych**.  
   
-5. W **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** okna dialogowego pola, zmień wartość na **klasycznego — uwierzytelnianie użytkowników lokalnych, jak samodzielnie** i kliknij przycisk **Zastosuj** przycisku.  
+5. W oknie dialogowym **dostęp sieciowy: udostępnianie i model zabezpieczeń dla kont lokalnych** Zmień wartość na **klasyczny — Użytkownicy lokalni uwierzytelniają się jako same** i kliknij przycisk **Zastosuj** .  
   
-     ![Local Security Policy Security Options](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
+     ![Opcje zabezpieczeń lokalnych zasad zabezpieczeń](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
 ## <a name="see-also"></a>Zobacz też  
- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: Układ dla programu Visual Studio | Dokumenty firmy Microsoft
+title: Układ dla programu Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -9,152 +9,152 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698394"
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
-Większość okien dialogowych programu Visual Studio to [układ okna dialogowego narzędzia,](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)które są niekręgowanymi oknami dialogowymi zgodnymi ze standardowymi [zasadami układu okna dialogowego pulpitu systemu Windows.](/windows/desktop/uxguide/win-dialog-box) Jak Visual Studio przenosi się do odświeżenia interfejsu użytkownika, niektóre z bardziej znanych okien dialogowych mają nowy projekt, który ustanawia je jako środowiska definiujące produkt. Te [tematyce układu okna dialogowego](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) mają wygląd tematycznym.
+Większość okien dialogowych programu Visual Studio to [układ okien](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)dialogowych, które są nienależącymi do nich oknach dialogowych, które są zgodne ze standardowymi [zasadami układu okien dialogowych systemu Windows](/windows/desktop/uxguide/win-dialog-box). Ponieważ program Visual Studio przechodzi do odświeżania interfejsu użytkownika, niektóre z bardziej widocznych okien dialogowych mają nowy projekt, który określa je jako środowiska definiowania produktu. Ten [Układ okna dialogowego z motywem](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ma wygląd z motywem.
 
-## <a name="utility-dialog-layout"></a><a name="BKMK_UtilityDialogLayout"></a>Układ okna dialogowego narzędzia
+## <a name="utility-dialog-layout"></a><a name="BKMK_UtilityDialogLayout"></a> Układ okna dialogowego narzędzi
 
-- Wszystkie formanty w oknie dialogowym narzędzia powinny zaczynać się od góry/w lewo i przepływać w dół.
+- Wszystkie kontrolki w oknie dialogowym narzędzi powinny zacząć się od góry/do lewej i przepływać w dół.
 
-- Nigdy nie wyśrodkowaj kontrolek w oknie dialogowym, aby wypełnić duży obszar.
+- Nigdy nie Wyśrodkuj kontrolek w oknie dialogowym, aby wypełnić duży obszar.
 
-- Użyj czcionki środowiska dla całego tekstu okna dialogowego. Podczas pisania specyfikacji wizualnej należy określić czcionkę środowiska zamiast wybierania określonej czcionki i rozmiaru. Zobacz [Czcionka środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Użyj czcionki środowiska dla całego tekstu okna dialogowego. Podczas pisania specyfikacji wizualnej, określ czcionkę środowiska zamiast wybierać konkretną czcionkę i rozmiar. Sprawdź [czcionkę środowiska](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-- Użyj spójnych odstępów kontrolnych i rozmieszczenia, aby wspierać cel w zakresie jakości w rzemiośle.
+- Używaj spójnych odstępów między kontrolkami i umieszczania w celu wspierania celu dla jakości w craftsmanship.
 
-- Okna dialogowe mogą stać się bardziej złożone z większej liczby formantów, unikatowe zestawienie formantów lub obu. W tych złożonych sytuacjach należy zapewnić odpowiednią przestrzeń między grupowaniami kontrolnymi, aby nadać użytkownikowi logiczny przepływ do analizy.
+- Okna dialogowe mogą stać się bardziej złożone z większej liczby kontrolek, unikatowych juxtaposition formantów lub obu. W tych złożonych sytuacjach należy zapewnić odpowiednie miejsce między grupami kontrolek, aby umożliwić użytkownikowi przeanalizowanie przepływu logicznego.
 
-### <a name="utility-dialog-layout-examples"></a>Przykłady układu okna dialogowego narzędzia
- Wszystkie wymiary są wyrażone w pikselach.
+### <a name="utility-dialog-layout-examples"></a>Przykłady układu okna dialogowego narzędzi
+ Wszystkie wymiary są wyrażane jako piksele.
 
- ![Odstępy dialogowe dla etykiet powyżej kontrolek](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801-a_UtilitySpacingAbove")
+ ![Odstępy okna dialogowego dla etykiet powyżej kontrolek](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 — a_UtilitySpacingAbove")
 
- **Rysunek 08.01-a: Wskazówki dotyczące odstępów dla okien dialogowych narzędzi z etykietami powyżej kontrolek**
+ **Rysunek 08,01-a: wskazówki dotyczące odstępów dla okien dialogowych z etykietami powyżej formantów**
 
- ![Odstępy dialogowe dla etykiet po lewej stronie formantów](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801-b_UtilitySpacingLeft")
+ ![Odstępy okna dialogowego dla etykiet po lewej stronie kontrolek](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 — b_UtilitySpacingLeft")
 
- **Rysunek 08.01-b: Wskazówki dotyczące odstępów dla okien dialogowych narzędzi z etykietami po lewej stronie formantów**
+ **Rysunek 08,01-b: wskazówki dotyczące odstępów dla okien dialogowych z etykietami po lewej stronie formantów**
 
 ### <a name="layout-details"></a>Szczegóły układu
 
 #### <a name="margins"></a>Marginesy
 
-- Wszystkie okna dialogowe powinny mieć obramowanie 12 pikseli wokół wszystkich krawędzi.
+- Wszystkie okna dialogowe powinny zawierać obramowanie o 12 pikseli wokół wszystkich krawędzi.
 
-- Marginesy w ramce grupy powinny znajdować się 9 pikseli od krawędzi ramki.
+- Marginesy w obrębie ramki grupy powinny mieć 9 pikseli od krawędzi ramki.
 
-- Marginesy w formancie karty powinny znajdować się 6 pikseli od krawędzi kontrolki karty.
+- Marginesy w kontrolce karty powinny mieć wartość 6 pikseli od krawędzi kontrolki karta.
 
 #### <a name="command-buttons"></a>Przyciski poleceń
 
-- Przyciski poleceń działają na ramce okna dialogowego, a nie na zawartości. Powinny one być umieszczone w prawym dolnym rogu i powinny mieć wystarczająco dużo zmiennej przestrzeni powyżej, aby ustawić przyciski wyraźnie oddzielone.
+- Przyciski poleceń działają w ramce okna dialogowego, a nie w zawartości. Powinny one zostać umieszczone w prawym dolnym rogu i powinny mieć wystarczającą ilość miejsca powyżej, aby ustawić przyciski osobno oddzielone.
 
-- Jeśli w oknie dialogowym znajdują się poziome przyciski, konfiguracja przycisku polecenia alternatywnego jest pionowym stosem w prawym górnym rogu. Zobacz [wewnętrzne przyciski poleceń](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) poniżej.
+- Jeśli w oknie dialogowym znajdują się poziome przyciski, które działają w ramach okna dialogowego, alternatywna Konfiguracja przycisków poleceń jest stosem pionowym w prawym górnym rogu. Zobacz [wewnętrzne przyciski poleceń](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) poniżej.
 
-- Spacja po lewej stronie przycisków poleceń (lewy dolny/środek okna dialogowego) jest uważana za część "pasma" elementów sterujących obsługi okna dialogowego. Jedyną rzeczą, która powinna wtrącać się w tym miejscu jest łącze Pomocy, które jest istotne dla ogólnego zadania lub okna dialogowego.
+- Spacja z lewej strony przycisków poleceń (Dolne lewe/środkowe okna dialogowego) jest traktowana jako część kontrolki operacji okna dialogowego. Jedyną kwestią, która powinna być intruz w tym miejscu, jest link do pomocy, który jest istotny dla ogólnego zadania lub okna dialogowego.
 
-- Przyciski poleceń powinny mieć rozmiar 75x23 pikseli.
+- Przyciski poleceń powinny mieć 75x23 pikseli.
 
-- Przyciski poleceń powinny być oddalone od siebie o 6 pikseli.
+- Przyciski poleceń powinny składać się z 6 pikseli.
 
-  ![Podstawowe wyrównanie przycisków](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801-c_ButtonAlign")
+  ![Wyrównanie przycisku podstawowego](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 — c_ButtonAlign")
 
-  **Rysunek 08.01-c: Podstawowe wyrównanie przycisków**
+  **Rysunek 08,01-c: podstawowe wyrównanie przycisku**
 
 #### <a name="labels"></a>Etykiety
 
-- Wyrównaj wszystkie etykiety do lewej.
+- Wyrównaj do lewej wszystkie etykiety.
 
-- W przypadku etykiet, które znajdują się nad formantem, powinny one dokładnie wyrównać do lewej do formantu pod nim, a dolna część etykiety powinna znajdować się 5 pikseli powyżej górnej części drugiego formantu (na przykład pole kombi).
+- W przypadku etykiet, które znajdują się nad kontrolką, powinny one być wyrównane do lewej strony przy użyciu kontrolki poniżej, a dolna etykieta powinna mieć 5 pikseli powyżej górnej krawędzi drugiej kontrolki (na przykład pole kombi).
 
-- W przypadku etykiet, które znajdują się po lewej stronie formantów, minimalna szerokość między etykietą a formantem wejściowym wynosi 10 pikseli. Dorozumiana druga kolumna powinna zostać ustanowiona w celu wyrównania pól tekstowych, pól kombi lub innych formantów.
+- W przypadku etykiet, które znajdują się po lewej stronie kontrolek, Minimalna szerokość między etykietą a kontrolką wejściową wynosi 10 pikseli. W celu wyrównania pól tekstowych, pól kombi lub innych kontrolek należy ustalić implikowaną drugą kolumnę.
 
-- Etykiety są przypadkiem zdania, po którym następuje dwukropek. Zobacz [Styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- W etykietach jest rozróżniana wielkość liter i występuje dwukropek. Zobacz [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
-#### <a name="distance-between-controls"></a>Odległość między elementami sterującymi
- Steruje stosem rozsądnie. Nie ma żadnych bezwzględnych wytycznych dotyczących odstępów między formantami skumulowanymi. Szczelność między elementami sterującymi może się nieznacznie różnić w zależności od okna dialogowego. Zalecane odstępy to 20 pikseli dla par sterowania pionowego/etykiety i 9 pikseli dla par sterowania poziomego/etykiety. Minimalne odstępy kontrolne dla par poziomych to 6 pikseli.
+#### <a name="distance-between-controls"></a>Odległość między kontrolkami
+ Odpowiednio kontroluje stosy. Brak bezwzględnych wytycznych dla odstępów między kontrolkami skumulowanymi. Szczelność między kontrolkami może się różnić w zależności od okien dialogowych. Zalecane odstępy to 20 pikseli dla par kontrolek pionowych/etykiet i 9 pikseli dla par kontrolki poziomej/etykiet. Minimalna wielkość kontrolki dla par poziomych to 6 pikseli.
 
- ![Zalecana odległość między elementami sterującymi](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801-d_ControlDistance")
+ ![Zalecana odległość między kontrolkami](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 — d_ControlDistance")
 
- **Rysunek 08.01-d: Zalecenia dotyczące odległości między organami sterującymi**
+ **Rysunek 08,01-d: zalecenia dotyczące odległości między kontrolkami**
 
-#### <a name="control-indentation"></a>Wcięcie kontrolne
- Gdy formanty są zagnieżdżone, wyrównaj wewnętrzne formanty poziomo z lewą krawędzią formantu powyżej, zwykle etykietą.
+#### <a name="control-indentation"></a>Wcięcie kontrolki
+ Gdy formanty są zagnieżdżone, Wyrównaj wewnętrzne kontrolki w poziomie przy użyciu lewej krawędzi kontrolki powyżej, zazwyczaj etykiety.
 
- ![Wyrównanie zagnieżdżonego formantu](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801-e_ControlAlign")
+ ![Wyrównanie zagnieżdżonej kontrolki](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 — e_ControlAlign")
 
- **Rysunek 08.01-e: Wyrównanie sterowania zagnieżdżonego**
+ **Rysunek 08,01-e: wyrównanie zagnieżdżonej kontrolki**
 
-#### <a name="control-width"></a>Szerokość sterowania
- Szerokość pola tekstowego lub innych podobnych formantów nie powinna być dłuższa niż średnie dane wejściowe dla pola. Przeciętne angielskie słowo to pięć znaków. Na przykład pole tekstowe, które wymaga długiej nazwy ścieżki, powinno być tak długo, jak pozwala na to układ poziomy, podczas gdy rozwijana dla nazw platform powinna mieć tylko długość, która pozwala na najdłuższy wpis.
+#### <a name="control-width"></a>Szerokość kontrolki
+ Szerokość pola tekstowego lub innych podobnych kontrolek nie powinna być większa niż średnia wartość wejściowa pola. Średni wyraz w języku angielskim ma pięć znaków. Na przykład pole tekstowe, które wymaga długiej nazwy ścieżki, powinno być tak długo, jak w układzie poziomym, a lista rozwijana nazw platform powinna mieć tylko długość, która pozwala na najdłuższy wpis.
 
 #### <a name="helper-text"></a>Tekst pomocnika
 
-- W oknie dialogowym można wyświetlić tekst pomocnika, który zawiera więcej informacji na temat celu okna dialogowego. To zazwyczaj siedzi na górze i może być 1-2 zdania.
+- W oknie dialogowym można wyświetlić tekst pomocnika, który zawiera więcej informacji na temat przeznaczenia okna dialogowego. Zwykle znajduje się u góry i może zawierać 1-2 zdań.
 
-- Długość linii powinna być wygodna szerokość dla użytkownika do analizy i odczytu. Średnie okno dialogowe nie powinno mieć więcej niż 550 pikseli szerokości.
+- Długość linii powinna być wygodna dla użytkownika do przeanalizowania i odczytu. Średnie okno dialogowe nie powinno mieć więcej niż 550 pikseli.
 
-#### <a name="interior-command-buttons"></a><a name="BKMK_InteriorCommandButtons"></a>Wewnętrzne przyciski poleceń
- W bardziej złożonych oknach dialogowych kontrola wewnętrzna może mieć własne powiązane przyciski, co może mieć wpływ na to, gdzie znajdują się przyciski zatwierdzania okna dialogowego.
+#### <a name="interior-command-buttons"></a><a name="BKMK_InteriorCommandButtons"></a> Wewnętrzne przyciski poleceń
+ W bardziej skomplikowanych oknach dialogowych wewnętrzna kontrolka może mieć własne powiązane przyciski, które mogą mieć wpływ na miejsce, w którym znajdują się przyciski zatwierdzania okna dialogowego.
 
-- Użyj wyrównania pionowego (kolumny) przycisków wewnętrznych, gdy **przyciski OK**/**Anuluj** są ustawione poziomo w prawym dolnym rogu.
+- Użyj wyrównania w pionie (kolumny) przycisków wewnętrznych, jeśli przycisk **OK** / **Anuluj** ma orientację poziomą w prawym dolnym rogu.
 
-- Użyj wyrównania poziomego (wiersza) przycisków wewnętrznych, gdy **przyciski OK**/**Anuluj** są ustawione pionowo w prawym górnym rogu. Sytuacja ta jest mniej powszechna.
+- Użyj wyrównania poziomego (wiersz) przycisków wewnętrznych, gdy przycisk **OK** / **Anuluj** jest zorientowany pionowo w prawym górnym rogu. Ta sytuacja jest mniej wspólna.
 
-- Rozmiar przycisku wewnętrznego powinien być ukierunkowany na standardowy rozmiar przycisku 75x23 pikseli, odpowiadający rozmiarowi przycisków **OK**/**Anuluj,** jeśli to możliwe. Jeśli etykieta przycisku powoduje, że przycisk przekracza standardowy rozmiar przycisku, pozostałe przyciski w tym zestawie powinny być zgodne z tym szerszym rozmiarem.
+- Rozmiar wnętrza przycisku powinien być ukierunkowany na standardowy przycisk 75x23 pikseli, dopasowując do rozmiaru przycisków **OK** / **Cancel** . Jeśli etykieta przycisku powoduje przekroczenie rozmiaru przycisku standardowego, pozostałe przyciski w tym zestawie powinny być wyrównane z tym szerszym rozmiarem.
 
-  ![Przyciski Poziome OK i Anuluj](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-f_HorizOKCan")
+  ![Przyciski OK i Anuluj](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 — f_HorizOKCan")
 
-  **Rysunek 08.01-f: Pionowe przyciski wewnętrzne z poziomym OK/Anuluj**
+  **Rysunek 08,01-f: pionowe przyciski wewnętrzne z poziomą OK/Anuluj**
 
-  ![Przyciski Pionowe OK i Anuluj](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801-g_VertOKCan")
+  ![Przyciski OK i Anuluj](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 — g_VertOKCan")
 
-  **Rysunek 08.01-g: Poziome przyciski wewnętrzne z pionowym OK/Anuluj**
+  **Rysunek 08,01-g: poziome przyciski wewnętrzne z pionowym przyciskiem OK/Anuluj**
 
-#### <a name="browse-button"></a>[Przeglądaj...] Przycisk
- **[Przeglądaj...]** przyciski, które następują po polu tekstowym, powinny przeliterować "Przeglądaj..." w całości, w tym wielokropek. Jeśli miejsce jest ciasne lub na ekranie znajduje się wiele przycisków **[Przeglądaj...],** przycisk można zredukować do wielokropek.
+#### <a name="browse-button"></a>[Przeglądaj...] przycisk
+ **[Przeglądaj...]** przyciski, które obserwują pole tekstowe, powinny wyszukiwać "Przeglądaj..." Pełna, łącznie z wielokropkiem. Jeśli ilość miejsca jest Ciasna lub na ekranie znajduje się wiele przycisków **[Przeglądaj...]** , przycisk można zmniejszyć do samego wielokropka.
 
-## <a name="themed-dialog-layout"></a><a name="BKMK_ThemedDialogLayout"></a>Tematycznym układem dialogowym
- Tematykowe okna dialogowe w programie Visual Studio mają jaśniejszy wygląd i oferują więcej odstępów. Typografia zapewnia większy nacisk i zainteresowanie, oferując bardziej otwarte odstępy między wierszami oraz zmianę rozmiarów i wag czcionek. W miarę możliwości zmniejszono lub usunięto paski chromu i tytułu. Układ tych okien dialogowych powinien być zgodny z tym podstawowym wzorcem:
+## <a name="themed-dialog-layout"></a><a name="BKMK_ThemedDialogLayout"></a> Układ okna dialogowego z motywem
+ Okna dialogowe z motywem w programie Visual Studio mają jaśniejszy wygląd i oferują więcej białych znaków. Typografia zapewnia większy nacisk i zainteresowania, oferuje więcej otwartych odstępów między wierszami i zróżnicowanie rozmiarów i wag czcionek. Tam, gdzie to możliwe, Chrome i paski tytułu zostały zredukowane lub usunięte. Układ tych okien dialogowych powinien być zgodny z tym wzorcem Basic:
 
 1. Tło okna dialogowego jest białe.
 
-2. W kolorze szarym o średniej wartości znajduje się obramowanie reguły 1 piksela.
+2. W szarej wartości znajduje się obramowanie reguły z 1 pikselem.
 
-3. Tytuł okna dialogowego nie znajduje się już na pasku tytułu, ale zapewnia wizualne zainteresowanie i wyróżnienie w większym rozmiarze punktu. (Zobacz sekcję rozmiar czcionki w [stylu tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)).)
+3. Tytuł okna dialogowego nie znajduje się już na pasku tytułu, ale zapewnia wizualny interes i podkreśla większy rozmiar. (Zobacz sekcję rozmiar czcionki w polu [styl tekstu](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)).
 
-4. Etykiety w połączeniu z dodatkowym tekstem, takim jak opis, powinny być **czcionką Środowisko + Pogrubienie**.
+4. Etykiety połączone z dodatkowym tekstem, takie jak opis, powinny być **czcionką środowiska + pogrubienie**.
 
-5. Kolumny wewnętrzne są oddzielone regułą 1 pikseli w kolorze jasnoszarym.
+5. Kolumny wewnętrzne są oddzielane za pomocą reguły 1-pikselowej w jasnym kolorze szarym.
 
-6. Łącza domyślne nie mają podkreślenia. Stany myszy i naciśnięcia mają zmianę koloru oraz podkreślenie.
+6. Linki domyślne nie mają podkreślenia. Stany aktywowania i naciśnięte mają zmianę koloru plus znak podkreślenia.
 
-7. Przyciski zatwierdzania (takie jak **OK**/**Anuluj)** znajdują się w prawym dolnym rogu.
+7. Przyciski zatwierdzania (na przykład **OK** / **Anuluj**) znajdują się w prawym dolnym rogu.
 
-### <a name="themed-dialog-layout-examples"></a>Przykłady tematyzowania układu okna dialogowego
- ![Tematycznym układem dialogowym](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801-h_ThemedDialog")
+### <a name="themed-dialog-layout-examples"></a>Przykłady układu dialogu z motywem
+ ![Układ okna dialogowego z motywem](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 — h_ThemedDialog")
 
- **Rysunek 08.01-h: Okno dialogowe tematyce**
+ **Rysunek 08,01-h: okno dialogowe z motywem**
 
- ![Tematyce wymiary okna dialogowego](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801-i_ThemedDialogDimensions")
+ ![Wymiary okna dialogowego z motywem](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 — i_ThemedDialogDimensions")
 
- **Rysunek 08.01-i: Okno dialogowe tematyce — wymiary**
+ **Rysunek 08,01-i: okno dialogowe z motywami**
 
- ![Czcionki okna dialogowego tematykowego](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801-j_ThemedDialogFonts")
+ ![Czcionki okna dialogowego z motywem](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 — j_ThemedDialogFonts")
 
- **Rysunek 08.01-j: Okno dialogowe tematyce - Czcionki**
+ **Rysunek 08,01-j: okna dialogowe z motywami**
 
- ![Tematyce kolorów dialogowych](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-k_ThemedDialogColors")
+ ![Kolory okna dialogowego z motywem](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 — k_ThemedDialogColors")
 
- **Rysunek 08.01-k: Okno dialogowe tematyce - Kolory**
+ **Rysunek 08,01-k: okno dialogowe z motywami**
 
 ## <a name="see-also"></a>Zobacz też
 - [Wzorce aplikacji dla programu Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
-- [Formanty (Windows)](/windows/desktop/uxguide/controls)
-- [Okna dialogowe (Windows)](/windows/desktop/uxguide/win-dialog-box)
+- [Kontrolki (system Windows)](/windows/desktop/uxguide/controls)
+- [Okna dialogowe (system Windows)](/windows/desktop/uxguide/win-dialog-box)

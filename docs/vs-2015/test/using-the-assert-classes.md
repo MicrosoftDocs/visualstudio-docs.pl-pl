@@ -14,10 +14,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6a4f7f1631ac4bfc651f5df347db010cf47a656
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657135"
 ---
 # <a name="using-the-assert-classes"></a>Korzystanie z klas potwierdzeń
@@ -26,7 +26,7 @@ ms.locfileid: "72657135"
 Użyj klasy Assert w przestrzeni nazw UnitTestingFramework, aby sprawdzić określone funkcje. Metoda testowania jednostkowego wykonuje kod metody w kodzie deweloperskim, ale raportuje poprawność działania kodu tylko wtedy, gdy zawiera instrukcje Assert.
 
 ## <a name="kinds-of-asserts"></a>Rodzaje potwierdzeń
- Przestrzeń nazw <xref:Microsoft.VisualStudio.TestTools.UnitTesting> zawiera kilka rodzajów klasy Assert:
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting>Przestrzeń nazw zawiera kilka rodzajów klasy Assert:
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 
@@ -60,4 +60,4 @@ Użyj klasy Assert w przestrzeni nazw UnitTestingFramework, aby sprawdzić okre�
  Dekorować metodę testową z atrybutem ExpectedExceptionAttribute, jeśli chcesz, aby metoda testowa mogła sprawdzić, czy wyjątek, który ma być zgłaszany przez metodę w kodzie programistycznym, jest faktycznie zgłaszany w tej metodzie.
 
 ## <a name="see-also"></a>Zobacz też
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [tworzenia i uruchamiania testów jednostkowych dla istniejącego kodu](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting>[Tworzenie i uruchamianie testów jednostkowych dla istniejącego kodu](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845578"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Wskazówki: tworzenie wstawek kodu
@@ -87,11 +87,11 @@ Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utwor
 
 6. Przetestuj swój fragment, otwierając projekt Visual Basic i otwierając plik kodu. W pliku kliknij **Wstaw** wstawkę z menu kontekstowego, a następnie **Moje fragmenty kodu**. Powinien pojawić się fragment kodu o nazwie **My Visual Basic**. Kliknij go dwukrotnie.
 
-7. Powinien zostać wyświetlony `Console.WriteLine("Hello, World!")` wstawiony w kodzie.
+7. Powinien być widoczny `Console.WriteLine("Hello, World!")` w kodzie.
 
 ### <a name="adding-description-and-shortcut-fields"></a>Dodawanie opisu i pól skrótów
 
-1. Pola opisu zawierają więcej informacji na temat fragmentu kodu wyświetlanego w Menedżerze fragmentów kodu. Skrót to tag, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj dodany fragment, otwierając plik `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
+1. Pola opisu zawierają więcej informacji na temat fragmentu kodu wyświetlanego w Menedżerze fragmentów kodu. Skrót to tag, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj fragment kodu dodany przez otwarcie pliku `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` .
 
 2. Dodaj elementy Author i Description do elementu header i wypełnij je.
 
@@ -122,11 +122,11 @@ Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utwor
 
 6. Zapisz ponownie plik fragmentu kodu.
 
-7. Aby przetestować skrót, Otwórz projekt Visual Basic i Otwórz plik kodu. Wpisz `hello` w pliku i naciśnij klawisz TAB. Należy wstawić kod fragmentu kodu.
+7. Aby przetestować skrót, Otwórz projekt Visual Basic i Otwórz plik kodu. Wpisz `hello` plik i naciśnij klawisz Tab. Należy wstawić kod fragmentu kodu.
 
 ### <a name="to-add-references-and-imports"></a>Aby dodać odwołania i Importy
 
-1. Za pomocą fragmentów kodu Visual Basic można dodać odwołanie do projektu przy użyciu elementu References i dodać deklarację Imports za pomocą elementu Imports. (Fragmenty kodu w innych językach nie mają tej funkcji). Na przykład jeśli zmienisz `Console.WriteLine` w przykładzie kodu na `MessageBox.Show`, może być konieczne dodanie zestawu System. Windows. Forms. dll do projektu.
+1. Za pomocą fragmentów kodu Visual Basic można dodać odwołanie do projektu przy użyciu elementu References i dodać deklarację Imports za pomocą elementu Imports. (Fragmenty kodu w innych językach nie mają tej funkcji). Na przykład jeśli zmienisz `Console.WriteLine` w przykładzie kodu na `MessageBox.Show` , może być konieczne dodanie zestawu System.Windows.Forms.dll do projektu.
 
 2. Otwórz fragment kodu.
 
@@ -169,7 +169,7 @@ Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utwor
 
     ```
 
-9. Przyjrzyj się właściwościom projektu. Karta odwołania zawiera odwołanie do System. Windows. Forms. dll.
+9. Przyjrzyj się właściwościom projektu. Karta odwołania zawiera odwołanie do System.Windows.Forms.dll.
 
 ### <a name="adding-replacements"></a>Dodawanie zamian
 
@@ -230,7 +230,7 @@ Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utwor
     </Declarations>
     ```
 
-6. W sekcji Code należy odwołać się do zamienników z otaczającymi znakami $, na przykład `$replacement$`:
+6. W sekcji Code należy odwołać się do zamienników z otaczającymi znakami $, na przykład `$replacement$` :
 
     ```
     <Code Language="VB" Kind="method body">
@@ -248,7 +248,7 @@ Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utwor
 
 8. Otwórz projekt Visual Basic i Dodaj fragment kodu.
 
-9. Kod powinien wyglądać podobnie do poniższego, gdzie zamienniki `SQL connection string` i `dcConnection` są wyróżnione w jasnym kolorze pomarańczowym. Naciśnij klawisz TAB, aby przejść od jednego do drugiego.
+9. Kod powinien wyglądać podobnie do poniższego, gdzie zamienniki `SQL connection string` i `dcConnection` są wyróżnione jasnym kolorem. Naciśnij klawisz TAB, aby przejść od jednego do drugiego.
 
     ```
     Dim daCustomers As SqlDataAdapter
@@ -262,4 +262,4 @@ Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utwor
     ```
 
 ## <a name="see-also"></a>Zobacz też
- [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)
+ [Odwołania do schematu fragmentów kodu](../ide/code-snippets-schema-reference.md)
