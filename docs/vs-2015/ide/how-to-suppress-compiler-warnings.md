@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670642"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Porady: pomijanie ostrzeżeń kompilatora
@@ -22,7 +22,7 @@ ms.locfileid: "72670642"
 
 Możesz wyrejestrować dziennik kompilacji, określając jeden lub więcej rodzajów ostrzeżeń kompilatora, które nie powinny zawierać. Można na przykład użyć tej techniki, aby przejrzeć niektóre, ale nie wszystkie informacje, które są generowane automatycznie podczas ustawiania szczegółowości dziennika kompilacji na normalne, szczegółowe lub diagnostyczne. Aby uzyskać więcej informacji na temat szczegółowości, zobacz [jak: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Aby pominąć określone ostrzeżenia dla wizualizacji C# lub F \#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Aby pominąć określone ostrzeżenia dla języka Visual C# lub F\#
 
 1. W **Eksplorator rozwiązań**wybierz projekt, w którym mają zostać pominięte ostrzeżenia.
 
@@ -32,13 +32,13 @@ Możesz wyrejestrować dziennik kompilacji, określając jeden lub więcej rodza
 
 4. W polu **Pomiń ostrzeżenia** Określ kody błędów ostrzeżeń, które mają być pomijane, oddzielone średnikami, a następnie Skompiluj ponownie rozwiązanie.
 
-### <a name="to-suppress-specific-warnings-for-visual-c"></a>Aby pominąć określone ostrzeżenia dla wizualizacjiC++
+### <a name="to-suppress-specific-warnings-for-visual-c"></a>Aby pominąć określone ostrzeżenia dla Visual C++
 
 1. W **Eksplorator rozwiązań**wybierz projekt lub plik źródłowy, w którym mają zostać pominięte ostrzeżenia.
 
 2. Na pasku menu wybierz **Widok**, **strony właściwości**.
 
-3. Wybierz kategorię **Właściwości konfiguracji** , wybierz kategorię **CC++ /** , a następnie wybierz stronę **Zaawansowane** .
+3. Wybierz kategorię **Właściwości konfiguracji** , wybierz kategorię **C/C++** , a następnie wybierz stronę **Zaawansowane** .
 
 4. Wykonaj jedną z następujących czynności:
 
@@ -58,11 +58,11 @@ Można ukryć określone ostrzeżenia kompilatora dla Visual Basic, edytując pl
 
 2. Na pasku menu wybierz **projekt**, **Zwolnij projekt**.
 
-3. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Edytuj**_ProjectName_ **. vbproj**.
+3. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Edytuj**_ProjectName_**. vbproj**.
 
     Plik projektu zostanie otwarty w edytorze kodu.
 
-4. Znajdź element `<NoWarn></NoWarn>` w konfiguracji kompilacji, z którą tworzysz.
+4. Znajdź `<NoWarn></NoWarn>` element w konfiguracji kompilacji, z którą tworzysz.
 
     Poniższy przykład pokazuje `<NoWarn></NoWarn>` element pogrubioną czcionką dla konfiguracji kompilacji debugowania na platformie x86:
 
@@ -81,7 +81,7 @@ Można ukryć określone ostrzeżenia kompilatora dla Visual Basic, edytując pl
      </PropertyGroup>
    ```
 
-5. Dodaj co najmniej jedną liczbę ostrzegawczą jako wartość elementu `<NoWarn>`. Jeśli określisz wiele numerów ostrzeżeń, rozdziel je przecinkami, jak pokazano w poniższym przykładzie.
+5. Dodaj co najmniej jedną liczbę ostrzegawczą jako wartość `<NoWarn>` elementu. Jeśli określisz wiele numerów ostrzeżeń, rozdziel je przecinkami, jak pokazano w poniższym przykładzie.
 
    ```xml
    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

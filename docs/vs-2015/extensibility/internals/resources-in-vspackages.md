@@ -1,5 +1,5 @@
 ---
-title: Zasoby w pakietach VSPackage | Dokumentacja firmy Microsoft
+title: Zasoby w pakietów VSPackage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,44 +13,44 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90674d17cdc3fb8956fd6eedeb3acb27226620cb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696091"
 ---
 # <a name="resources-in-vspackages"></a>Zasoby w pakietach VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zlokalizowane zasoby można osadzić w natywnych satelitarnej biblioteki DLL interfejsu użytkownika, zarządzanych satelickich bibliotek DLL, lub zarządzanych pakietu VSPackage, sam.  
+Zlokalizowane zasoby można osadzać w natywnych bibliotekach DLL interfejsu użytkownika, zarządzanej satelitarnej biblioteki DLL lub w zarządzanym pakietu VSPackage.  
   
- Niektóre zasoby nie mogą być osadzone w pakietach VSPackage. Następujące typy zarządzane mogą być osadzone:  
+ Niektórych zasobów nie można osadzić w pakietów VSPackage. Można osadzić następujące typy zarządzane:  
   
 - Ciągi  
   
-- Klucze ładowania pakietów, (które są również ciągi)  
+- Klucze ładowania pakietu (które są również ciągami)  
   
-- Narzędzie okna ikony  
+- Ikony okna narzędzi  
   
-- Skompilowane pliki danych wyjściowych tabeli poleceń (stosunku)  
+- Skompilowane pliki wyjściowe tabeli poleceń (Dyrektor ds)  
   
-- Mapy bitowe Dyrektor ds. technologii  
+- Mapy bitowe dyrektor ds  
   
 - Pomoc wiersza polecenia  
   
-- Dane okna dialogowego — informacje  
+- Dane okna dialogowego — Informacje  
   
-  Zasoby w pakiecie zarządzane są wybierane przez identyfikator zasobu. Wyjątek stanowi pliku Dyrektor ds. technologii, który musi mieć nazwę CTMENU. Plik Dyrektor ds. technologii musi znajdować się w tabeli zasobów jako `byte[]`. Wszystkie inne elementy zasobów są identyfikowane przez typ.  
+  Zasoby w pakiecie zarządzanym są wybierane według identyfikatora zasobu. Wyjątkiem jest plik dyrektor ds, który musi mieć nazwę CTMENU. Plik dyrektor ds musi znajdować się w tabeli zasobów jako `byte[]` . Wszystkie inne elementy zasobów są identyfikowane według typu.  
   
-  Możesz użyć <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atrybutu w celu wskazania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostępnych zasobów zarządzanych.  
+  Możesz użyć atrybutu, <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> Aby wskazać [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , że zarządzane zasoby są dostępne.  
   
   [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
   [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
-  Ustawienie <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> w ten sposób oznacza, że [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powinien ignorować niezarządzanych satelickich bibliotek DLL, podczas wyszukiwania zasobów, na przykład za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] napotka dwóch lub więcej zasobów, które mają ten sam identyfikator zasobu używa pierwszego zasobu, które znajdzie.  
+  Ustawienie <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> w ten sposób wskazuje, że [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powinny być ignorowane niezarządzane satelity dll, gdy wyszukiwanie zasobów, na przykład przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] napotka dwa lub więcej zasobów, które mają ten sam identyfikator zasobu, używa pierwszego znalezionego zasobu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład jest reprezentację zarządzanych ikonę okna narzędzia.  
+ Poniższy przykład jest zarządzaną reprezentacją ikony okna narzędzi.  
   
 ```  
 <data name="1001"  
@@ -66,7 +66,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
- Poniższy przykład pokazuje, jak osadzać tablicy bajtów Dyrektor ds. technologii, która musi mieć nazwę CTMENU.  
+ W poniższym przykładzie pokazano, jak osadzić tablicę bajtów dyrektor ds, która musi mieć nazwę CTMENU.  
   
 ```  
 <data name="CTMENU"  
@@ -83,12 +83,12 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>Uwagi dotyczące implementacji  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Ładowanie pakietów VSPackage, jeśli to możliwe w opóźnienia. Osadzanie pliku Dyrektor ds. technologii w VSPackage konsekwencją jest fakt, że [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] należy załadować takich VSPackages w pamięci podczas instalacji, który jest podczas tworzenia tabeli scalonych polecenia. Zasoby można wyodrębnić z pakietu VSPackage, sprawdzając metadanych bez uruchamiania kodu w pakietu VSPackage. Nie zainicjowano pakietu VSPackage w tej chwili, więc jest minimalne utrata wydajności.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] opóźnia ładowanie pakietów VSPackage, gdy jest to możliwe. Wynikiem osadzenia pliku dyrektor ds w pakietu VSPackage jest to, że [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] należy załadować wszystkie takie pakietów VSPackage w pamięci podczas instalacji, co jest możliwe podczas kompilacji Scalonej tabeli poleceń. Zasoby można wyodrębnić z pakietu VSPackage, sprawdzając metadane bez uruchamiania kodu w pakietu VSPackage. W tej chwili nie zainicjowano pakietu VSPackage, więc utrata wydajności jest minimalna.  
   
- Gdy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] żądań zasobów z pakietu VSPackage po zakończeniu instalacji, ten pakiet jest prawdopodobnie już załadowany i zainicjowany, więc jest minimalne utrata wydajności.  
+ Gdy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] żąda zasobu z pakietu VSPackage po zakończeniu instalacji, ten pakiet prawdopodobnie jest już załadowany i zainicjowany, więc utrata wydajności jest minimalna.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Managed VSPackages](../../misc/managed-vspackages.md)   
- [Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)   
- [Zasoby zlokalizowane w aplikacjach MFC: Satelitarne biblioteki dll](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
- [Managed VSPackages](../../misc/managed-vspackages.md)
+ [Zarządzane pakietów VSPackage](../../misc/managed-vspackages.md)   
+ [Zarządzanie pakietów VSPackage](../../extensibility/managing-vspackages.md)   
+ [Zlokalizowane zasoby w aplikacjach MFC: satelitarne biblioteki DLL](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [Zarządzane pakietów VSPackage](../../misc/managed-vspackages.md)

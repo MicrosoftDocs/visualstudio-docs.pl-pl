@@ -8,10 +8,10 @@ ms.date: 04/13/2020
 ms.topic: how-to
 description: Dowiedz się, jak kupić subskrypcje programu Visual Studio w Microsoft Store i aktywować je w portalu subskrypcji programu Visual Studio.
 ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247490"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Subskrypcje programu Visual Studio są dostępne za pomocą Microsoft Store
@@ -55,5 +55,5 @@ Jeśli masz pytania dotyczące kupowania za pomocą Microsoft Store, dostępna j
 
 ## <a name="next-steps"></a>Następne kroki
 Po aktywowaniu subskrypcji odwiedź stronę [korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie narzędzia, usługi, szkolenia i pomoc techniczną zawarte w subskrypcji.  Zalecamy skonfigurowanie tych korzyści, aby rozpocząć:
-- [Visual Studio](vs-ide-benefit.md)
+- [Program Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

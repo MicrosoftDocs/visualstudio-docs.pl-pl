@@ -1,5 +1,5 @@
 ---
-title: Odświeżanie aplikacji (JavaScript) | Dokumentacja firmy Microsoft
+title: Odświeżanie aplikacji (JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,51 +20,51 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8be97212f4510002a78e6565fc9884930db89
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446088"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64808016"
 ---
 # <a name="refresh-an-app-javascript"></a>Odświeżanie aplikacji (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Dotyczy systemów Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Można wprowadzić zmiany do kodu podczas debugowania, a następnie Odśwież app Store, przy użyciu języka JavaScript, wybierając **aplikacji Windows Odśwież** znajdujący się na **debugowania** paska narzędzi. Wybranie tego przycisku ponownie ładuje aplikację bez zatrzymywania i ponownego uruchamiania debugera. Funkcja odświeżania umożliwia modyfikowanie kodu HTML, CSS i JavaScript i szybko wyświetlić wyniki. Ta funkcja jest obsługiwana dla aplikacji Windows Store i Windows Phone Store.  
+ Podczas debugowania można wprowadzać zmiany w kodzie, a następnie odświeżyć aplikację ze sklepu przy użyciu języka JavaScript, wybierając przycisk **Odśwież aplikację systemu Windows** na pasku narzędzi **debugowania** . Wybranie tego przycisku spowoduje ponowne załadowanie aplikacji bez zatrzymywania i ponownego uruchamiania debugera. Funkcja odświeżania umożliwia modyfikowanie kodu HTML, CSS i JavaScript oraz szybkie wyświetlanie wyników. Ta funkcja jest obsługiwana dla aplikacji ze sklepu Windows i Windows Phone sklepu.  
   
- Odświeżanie nie zarządzania stanem swojej aplikacji lub uwzględnić następujące zmiany w aplikacji:  
+ Odświeżanie nie utrzymuje stanu aplikacji ani nie odzwierciedla następujących zmian w aplikacji:  
   
-- Zmiany pliku manifestu pakietu, w tym zmiany w manifeście pakietu obrazów.  
+- Zmiany pliku manifestu pakietu, w tym zmiany obrazów określone w manifeście pakietu.  
   
-- Odwołanie zmiany, takie jak dodawanie lub usuwanie odwołania zestawu SDK lub zmiana składników środowiska wykonawczego Windows (winmd).  
+- Zmiany odniesienia, takie jak dodawanie lub usuwanie odwołania do zestawu SDK lub zmiany składników środowisko wykonawcze systemu Windows (plików winmd).  
   
-- Zmiany zasobów, takich jak zmiany na ciągi w plikach .resjson.  
+- Zmiany zasobów, takie jak zmiany w ciągach w plikach. resjson.  
   
-- Zmiany pliku projektu, które powodują zmiany nazwy ścieżki, nowe pliki projektu lub usunięte pliki.  
+- Plik projektu zmienia się w wyniku zmiany nazwy ścieżki, nowych plików projektu lub usuniętych plików.  
   
-- Zmiany właściwości projektów i elementów, takich jak zmiany na wybranym urządzeniu debugowania lub zmiany Akcja pakietu dla pliku (w oknie dialogowym Właściwości).  
+- Zmiany właściwości projektu i elementu, takie jak zmiany w wybranym urządzeniu debugowania, lub zmiany akcji pakietu dla pliku (w okno Właściwości).  
   
 > [!IMPORTANT]
-> Podczas zmiany odwołania, zmień manifest pakietu lub wprowadzić inne zmiany, określone w powyższej liście musisz zatrzymać i ponownie uruchomić debugera, aby zaktualizować pliki źródłowe HTML, CSS i JavaScript.  
+> Po zmianie odwołań, zmianie manifestu pakietu lub wprowadzeniu innych zmian określonych na poprzedniej liście należy zatrzymać i ponownie uruchomić debuger, aby zaktualizować pliki źródłowe HTML, CSS i JavaScript.  
   
 ### <a name="to-refresh-an-app"></a>Aby odświeżyć aplikację  
   
 1. W programie Visual Studio Utwórz nowy projekt za pomocą szablonu projektu aplikacja nawigacji.  
   
-     Może to być aplikacji Windows Store, Windows Phone Store aplikacji lub aplikacji uniwersalnej.  
+     Może to być aplikacja ze sklepu Windows, aplikacja ze sklepu Windows Phone lub aplikacja uniwersalna.  
   
-2. Za pomocą szablonu Otwórz w programie Visual Studio, wybierz element docelowy debugowania.  
+2. Przy otwartym szablonie w programie Visual Studio wybierz element docelowy debugowania.  
   
-     Jeśli projekt Windows Phone jest bieżący projekt startowy, zaznacz to emulator Windows Phone dla elementu docelowego debugowania. W przeciwnym razie wybierz **symulator** lub **komputera lokalnego**.  
+     Jeśli projekt Windows Phone jest bieżącym projektem startowym, wybierz Windows Phone Emulator dla elementu docelowego debugowania. W przeciwnym razie wybierz opcję **symulator** lub **komputer lokalny**.  
   
-     ![Wybierz opcję debugowania listy docelowej](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Wybierz listę obiektów docelowych debugowania](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 3. Naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.  
   
-4. Przełącz się do programu Visual Studio. (Naciśnij klawisz F12).  
+4. Przejdź do programu Visual Studio. (Naciśnij klawisz F12).  
   
-5. W **Eksploratora rozwiązań**w **stron** > **macierzystego** folder, otwórz home.html.  
+5. W **Eksplorator rozwiązań**w folderze głównym **stron**  >  **home** Otwórz home.html.  
   
 6. Zmień tekst tytułu strony z  
   
@@ -72,15 +72,15 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     Welcome to yourAppName!  
     ```  
   
-     się czymś innym, w następujący sposób:  
+     na coś innego:  
   
     ```html  
     Hello!  
     ```  
   
-7. Kliknij przycisk **aplikacji Windows Odśwież** przycisku, który wygląda następująco: ![Odśwież aplikację Windows](../debugger/media/js-refresh.png "JS_Refresh"). (Lub naciśnij klawisz F4).  
+7. Kliknij przycisk **Odśwież aplikację systemu Windows** , który wygląda podobnie do tego: ![Odśwież przycisk aplikacji systemu Windows](../debugger/media/js-refresh.png "JS_Refresh"). (Lub naciśnij klawisz F4).  
   
-8. Przełącz się do aplikacji. Aplikacja zostanie ponownie załadowana bez debugera, ponowne uruchomienie i pojawi się nowy tytuł strony.  
+8. Przejdź do aplikacji. Aplikacja zostanie załadowana ponownie bez ponownego uruchomienia debugera i zostanie wyświetlona nowa nazwa strony.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

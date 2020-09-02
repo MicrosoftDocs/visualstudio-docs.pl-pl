@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zbieranie danych dotyczących wydajności dla witryny sieci Web | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: zbieranie danych wydajności dla witryny sieci Web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,90 +20,90 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432796"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64787030"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Instrukcje: Zbieranie danych dotyczących wydajności dla witryny sieci Web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Instrukcje: zbieranie danych wydajności dla witryny sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. Można profilować aplikację internetową, która jest otwarta w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub można profilować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] witryny sieci Web, który jest zlokalizowany na komputerze lokalnym i nie jest otwarty w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
+Za pomocą **Kreatora wydajności** można zbierać dane dotyczące wydajności [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. Można profilować aplikację sieci Web, która jest otwarta w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , lub można profilować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] witrynę sieci Web, która znajduje się na komputerze lokalnym, a nie otwarta w środowisku [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
 > [!NOTE]
-> **Kreatora wydajności** umożliwia dodawanie danych interakcji (TIP) i/lub JScript danych wydajności zebranych danych profilowania. Opcja Porada zbiera dane z procesów po stronie serwera. Profilowanie JScript zbiera dane ze skryptów, które są uruchomione na lokalnych lub zdalnych witryny sieci Web. W większości przypadków należy wybrać tylko jedną z opcji.  
+> **Kreator wydajności** umożliwia dodawanie danych profilowania, danych dotyczących wydajności JScript lub obu do zebranych danych profilowych. Opcja TIP zbiera dane z procesów po stronie serwera. Profilowanie w języku JScript zbiera dane ze skryptów, które są uruchomione w lokalnej lub zdalnej witrynie sieci Web. W większości przypadków należy wybrać tylko jedną z opcji.  
   
- W zależności od ustawień uprawnień dostępu użytkowników, które administrator udostępnił użytkownik może być lub może nie mieć uprawnień do utworzenia sesji profilera na komputerze, który jest hostem procesu ASP.NET. Poniższe przykłady ilustrują możliwe różnice między użytkowników:  
+ W zależności od ustawień uprawnień dostępu użytkowników dostępnych dla administratora użytkownik indywidualny może lub nie ma uprawnień zabezpieczeń do tworzenia sesji profilera na komputerze hostującym proces ASP.NET. Poniższe przykłady ilustrują ewentualne różnice między użytkownikami:  
   
-- Niektórzy użytkownicy mogą uzyskiwać dostęp do zaawansowanych funkcji profilowania, gdy Administrator ustawił sterownik i uruchomienie usługi.  
+- Niektórzy użytkownicy mogą uzyskiwać dostęp do zaawansowanych funkcji profilowania, gdy administrator ustawił sterownik i usługę do uruchomienia.  
   
-- Użytkownicy domeny mogą uzyskiwać dostęp do przykładowej profilowanie tylko.  
+- Użytkownicy domeny mogą uzyskać dostęp tylko do profilowania przykładowych.  
   
-- Niektórzy użytkownicy Moje Odmów dostępu do profilowania, aby wszyscy inni użytkownicy.  
+- Niektórzy użytkownicy mają zablokowany dostęp do profilowania wszystkim innym użytkownikom.  
   
-  Aby uzyskać więcej informacji, zobacz [profilowania i Windows Vista zabezpieczeń](../profiling/profiling-and-windows-vista-security.md) i opcje administratora w [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Aby uzyskać więcej informacji, zobacz [profilowanie i zabezpieczenia systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md) oraz opcje administratora w programie [VSPerfCmd](../profiling/vsperfcmd.md).  
   
-### <a name="to-profile-a-web-site-project"></a>Aby przeprowadzić profilowanie projektu witryny sieci Web  
+### <a name="to-profile-a-web-site-project"></a>Aby profilować projekt witryny sieci Web  
   
-1. Otwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projektu sieci Web w [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] lub [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Otwórz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Projekt sieci Web w [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] lub [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] .  
   
-2. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
+2. W menu **Analizuj** kliknij polecenie **Uruchom Kreatora wydajności**.  
   
-3. Na pierwszej stronie kreatora, wybierz metody profilowania, a następnie kliknij przycisk **dalej**. Aby uzyskać więcej informacji na temat metod profilowania, zobacz [metodami zbierania danych wydajności opis](../profiling/understanding-performance-collection-methods.md). Należy zauważyć, że metoda profilowania narzędzie concurrency visualizer nie jest dostępna dla aplikacji sieci web.  
+3. Na pierwszej stronie kreatora wybierz metodę profilowania, a następnie kliknij przycisk **dalej**. Aby uzyskać więcej informacji na temat metod profilowania, zobacz [Opis metod zbierania danych o wydajności](../profiling/understanding-performance-collection-methods.md). Należy zauważyć, że metoda profilowania wizualizatora współbieżności nie jest dostępna dla aplikacji sieci Web.  
   
-4. W **aplikacji, które chcesz docelowe dla profilowania?** listy rozwijanej, upewnij się, że bieżący projekt jest wybrany, a następnie kliknij przycisk **dalej**.  
+4. W **której aplikacji chcesz określić profilowanie?** listę rozwijaną, upewnij się, że bieżący projekt jest wybrany, a następnie kliknij przycisk **dalej**.  
   
-5. Na trzeciej stronie kreatora możesz dodać dane interakcji między warstwami profilowania (TIP), dane z języka JavaScript w stronach sieci Web i / lub.  
+5. Na trzeciej stronie kreatora możesz dodać dane dotyczące profilowania interakcji między warstwami (TIP), dane z kodu JavaScript uruchomionego na stronach sieci Web lub oba te elementy.  
   
-    - Aby zebrać interakcje między warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.  
+    - Aby zbierać interakcje warstwy, zaznacz pole wyboru **Włącz profilowanie interakcji między warstwami** .  
   
-    - Aby zebrać dane z kod JavaScript na stronach sieci Web, wybierz pozycję **Profiluj kod JavaScript** pole wyboru.  
+    - Aby zbierać dane z kodu JavaScript działającego na stronach sieci Web, zaznacz pole wyboru **profil JavaScript** .  
   
 6. Kliknij przycisk **Dalej**.  
   
-7. Na czwartej stronie kreatora kliknij **Zakończ**.  
+7. Na czwartej stronie kreatora kliknij przycisk **Zakończ**.  
   
-8. Sesja wydajności jest tworzona dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji i witrynę sieci Web jest uruchomiony w przeglądarce. Przetestuj funkcjonalność, która ma być profilu, a następnie zamknij przeglądarkę.  
+8. Tworzona jest sesja wydajności dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji, a witryna sieci Web jest uruchamiana w przeglądarce. Należy skorzystać z funkcji, które chcesz profilować, a następnie zamknąć przeglądarkę.  
   
-     Program profilujący generuje plik danych i wyświetla widok podsumowania danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] głównego okna.  
+     Profiler generuje plik danych i wyświetla widok podsumowania danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie głównym.  
   
-### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Aby przeprowadzić profilowanie witryny sieci Web bez konieczności otwierania projektu w programie Visual Studio  
+### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Aby profilować witrynę sieci Web bez otwierania projektu w programie Visual Studio  
   
-1. Otwórz [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] lub [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Otwórz [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] lub [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] .  
   
-2. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.  
+2. W menu **Analizuj** kliknij polecenie **Uruchom Kreatora wydajności**.  
   
-3. Na pierwszej stronie kreatora, wybierz metody profilowania, a następnie kliknij przycisk **dalej**. Aby uzyskać więcej informacji, zobacz [metodami zbierania danych wydajności opis](../profiling/understanding-performance-collection-methods.md).  
+3. Na pierwszej stronie kreatora wybierz metodę profilowania, a następnie kliknij przycisk **dalej**. Aby uzyskać więcej informacji, zobacz [Omówienie metod zbierania danych o wydajności](../profiling/understanding-performance-collection-methods.md).  
   
-4. Na drugiej stronie kreatora wybierz **profil aplikacji ASP.NET lub JavaScript** opcji, a następnie kliknij przycisk **dalej**.  
+4. Na drugiej stronie kreatora wybierz opcję **profilu aplikacji ASP.NET lub JavaScript** , a następnie kliknij przycisk **dalej**.  
   
-5. W **jakim adresem URL lub ścieżką będzie działała aplikacja sieci web** na trzeciej stronie kreatora, wprowadź adres URL do strony głównej aplikacji, a następnie kliknij **dalej**.  
+5. W polu **adres URL lub ścieżka spowoduje uruchomienie aplikacji sieci Web** na trzeciej stronie kreatora wprowadź adres URL strony głównej aplikacji, a następnie kliknij przycisk **dalej**.  
   
-   - Dla witryny sieci Web oparte na serwerze (IIS), wpisz adres URL, taki jak **http://localhost/MySite/default.aspx**. Powoduje to, że [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji na komputerze lokalnym w katalogu głównym aplikacji MySite do profilowania i default.aspx strony w danej lokacji można uruchomić w przeglądarce Internet Explorer, aby rozpocząć sesję.  
+   - W przypadku witryny sieci Web opartej na serwerze (IIS) wpisz adres URL, taki jak **http://localhost/MySite/default.aspx** . Powoduje to [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , że aplikacja na komputerze lokalnym w katalogu głównym aplikacji witryny Moja witryna zostanie profilowana, a strona default. aspx w tej witrynie zostanie uruchomiona w programie Internet Explorer w celu uruchomienia sesji.  
   
-   - Dla witryny sieci Web opartą na plikach, wpisz ścieżkę, taką jak pliku / / /**c:\WebSites\MySite\default.aspx**. Powoduje to, że [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji znajdującym się w c:\webSites\MySite do profilowania i strony http://localhost:nnnn/MySite/default.aspx mają być uruchamiane w programie Internet Explorer, aby rozpocząć sesję.  
+   - W przypadku witryny sieci Web opartej na plikach wpisz ścieżkę, taką jak File///**c:\WebSites\MySite\default.aspx**. Powoduje to, że [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacja znajdująca się w c:\webSites\MySite ma być profilowana, a strona, http://localhost:nnnn/MySite/default.aspx która ma zostać uruchomiona w programie Internet Explorer, aby uruchomić sesję.  
   
-   - Dla zewnętrznych witryn, które chcesz zbierać danych dotyczących JavaScript, wpisz adres URL, na przykład http:\//www.contoso.com.  
+   - W przypadku witryn zewnętrznych, na których mają być zbierane dane JavaScript, wpisz adres URL, na przykład http: \/ /www.contoso.com.  
   
-     Aby uzyskać więcej informacji, Wyświetl strony właściwości dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] docelowy plik binarny.  
+     Aby uzyskać więcej informacji, Wyświetl strony właściwości dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] docelowego pliku binarnego.  
   
-6. Na trzeciej stronie kreatora możesz dodać dane interakcji między warstwami profilowania (TIP), dane z języka JavaScript w stronach sieci Web i / lub.  
+6. Na trzeciej stronie kreatora możesz dodać dane dotyczące profilowania interakcji między warstwami (TIP), dane z kodu JavaScript uruchomionego na stronach sieci Web lub oba te elementy.  
   
-   - Aby zebrać interakcje między warstwami, zaznacz **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.  
+   - Aby zbierać interakcje warstwy, zaznacz pole wyboru **Włącz profilowanie interakcji między warstwami** .  
   
-   - Aby zebrać dane z kod JavaScript na stronach sieci Web, wybierz pozycję **Profiluj kod JavaScript** pole wyboru.  
+   - Aby zbierać dane z kodu JavaScript działającego na stronach sieci Web, zaznacz pole wyboru **profil JavaScript** .  
   
 7. Kliknij przycisk **Dalej**.  
   
-8. Na czwartej stronie kreatora kliknij **Zakończ**.  
+8. Na czwartej stronie kreatora kliknij przycisk **Zakończ**.  
   
-9. Sesja wydajności zostanie utworzony dla aplikacji ASP.NET, i witryny sieci Web jest uruchomiony w przeglądarce. Przetestuj funkcjonalność, która ma być profilu, a następnie zamknij przeglądarkę.  
+9. Tworzona jest sesja wydajności dla aplikacji ASP.NET, a witryna sieci Web jest uruchamiana w przeglądarce. Należy skorzystać z funkcji, które chcesz profilować, a następnie zamknąć przeglądarkę.  
   
-     Program profilujący generuje plik danych i wyświetla widok podsumowania danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] głównego okna.  
+     Profiler generuje plik danych i wyświetla widok podsumowania danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie głównym.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Omówienie](../profiling/overviews-performance-tools.md)   
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Zapoznanie z wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)   
- [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)
+ [Informacje o danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)   
+ [Omówienie wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)

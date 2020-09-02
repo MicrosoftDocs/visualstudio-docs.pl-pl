@@ -1,5 +1,5 @@
 ---
-title: Element SortOrder (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: SortOrder — Element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699957"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder — Element (szablony Visual Studio)
-Określa wartość używaną do rozmieszczenia szablonu, między innymi szablonami w tej samej kategorii, która jest wyświetlana w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element.**
+Określa wartość, która jest używana do rozmieszczenia szablonu, między innymi szablonami w tej samej kategorii, jak pojawia się w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .
 
- \<> \< \<> TemplateData> SortOrder
+ \<VSTemplate> \<TemplateData>
+ \<SortOrder>
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,22 +46,22 @@ Określa wartość używaną do rozmieszczenia szablonu, między innymi szablona
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Reprezentujący `integer` wartość kolejności sortowania.
+ `integer`Reprezentuje wartość kolejności sortowania.
 
 ## <a name="remarks"></a>Uwagi
- `SortOrder`jest elementem opcjonalnym. Wartość domyślna to 100, a wszystkie wartości muszą być wielokrotnościami 10.
+ `SortOrder` jest elementem opcjonalnym. Wartość domyślna to 100, a wszystkie wartości muszą być wielokrotnościami 10.
 
- Element `SortOrder` jest ignorowany dla szablonów utworzonych przez użytkownika. Wszystkie szablony utworzone przez użytkownika są sortowane alfabetycznie.
+ `SortOrder`Element jest ignorowany dla szablonów utworzonych przez użytkownika. Wszystkie szablony utworzone przez użytkownika są sortowane alfabetycznie.
 
- Szablony o niskich wartościach kolejności sortowania są wyświetlane w oknie dialogowym **Nowy projekt** lub Nowy **element dodaj** przed szablonami o wysokich wartościach kolejności sortowania.
+ Szablony, które mają niskie wartości kolejności sortowania, są wyświetlane w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** przed szablonami, które mają wysokie wartości kolejności sortowania.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje metadane szablonu klasy standardowej. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]
+ Poniższy przykład ilustruje metadane dla standardowego [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu klasy.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,7 +80,7 @@ Określa wartość używaną do rozmieszczenia szablonu, między innymi szablona
 </VSTemplate>
 ```
 
- W tym przykładzie `SortOrder` element jest stosunkowo wysoki. Jest prawdopodobne, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] że inne szablony `SortOrder` elementów `290` będą miały wartość niższą niż i pojawią się przed tym szablonem w oknie dialogowym **Nowy element.**
+ W tym przykładzie `SortOrder` element jest stosunkowo wysoki. Prawdopodobnie inne [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Szablony elementów będą mieć `SortOrder` wartość niższą niż `290` i pojawią się przed tym szablonem w oknie dialogowym **nowy element** .
 
 ## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Hostowanie redaktorem w innym edytorze | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: hostowanie edytora w innym edytorze | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,32 +11,32 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d4b4ff425feb22b5057a8d1a76b7f73b8932d9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204170"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>Instrukcje: Hosting edytora w innym edytorze
+# <a name="how-to-host-an-editor-in-another-editor"></a>Instrukcje: hostowanie edytora w innym edytorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio może obsługiwać jednym edytorze wewnątrz innego, określając okna hostowania jako okno nadrzędne. Aby to zrobić, należy ustawić parametry <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> i <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> na ramki okna podrzędnego.  
+W programie Visual Studio można hostować jeden Edytor wewnątrz innego, określając okno hostingowe jako okno nadrzędne. Aby to zrobić, należy ustawić parametry <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> i <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> w ramce okna podrzędnego.  
   
-### <a name="to-set-up-the-window-frame-to-host-an-editor"></a>Aby ustawić ramki okna obsługi edytora  
+### <a name="to-set-up-the-window-frame-to-host-an-editor"></a>Aby skonfigurować ramkę okna do hostowania edytora  
   
-1. Wyznaczanie redaktorem hostowanej edytora, tworząc okienko okna podrzędnego.  
+1. Wyznaczanie edytora jako edytora hostowanego przez utworzenie okienka podrzędnego okna.  
   
-     To okienko jest, gdzie edytora tekstu.  
+     W tym okienku znajduje się tekst edytora.  
   
-2. Utwórz Edytor hostingu za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> metody.  
+2. Utwórz Edytor hostingu przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metody lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> .  
   
-3. Ustaw <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> i <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> właściwości w celu wykonania ramki okna edytora hostowanej przez przekazanie te właściwości jako parametry w celu <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> metody, odpowiednio.  
+3. Ustaw <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> właściwości i <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> w implementacji ramki okna dla edytora hostowanego, przekazując te właściwości <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> odpowiednio do metody.  
   
-     Jeśli musisz pobrać te parametry, należy przekazać te właściwości, aby <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metody.  
+     Jeśli musisz pobrać te parametry, Przekaż te właściwości do <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metody.  
   
-4. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metoda zawartej edytora.  
+4. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metodę dla zawartego edytora.  
   
-     Edytor zostanie wyświetlony w okienku hostowanej zawierającego edytora.  
+     Edytor pojawia się w hostowanym okienku zawierającego Edytor.  
   
 ## <a name="robust-programming"></a>Niezawodne programowanie  
- **Projektanta aplikacji** w Visual Studio Team Edition dla architektów jest przykładem ramki okna edytora obsługującego innym edytorze. **Projektanta aplikacji** hostuje innych projektantów w jej okienku po prawej stronie. Panel projektanta (lub **właściwości** stronie) dla każdej zawartej projektantów jest dodawany do zawierającego ramki okna.
+ **Projektant aplikacji** w Visual Studio Team Edition for Architects to przykład ramki okna edytora, która obsługuje inny edytor. **Projektant aplikacji** hostuje innych projektantów w okienku po prawej stronie. Panel projektanta (lub strona **Właściwości** ) dla każdego z zawartych projektantów jest dodawany do ramki okna zawierającego.

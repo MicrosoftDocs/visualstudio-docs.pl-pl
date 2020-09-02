@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Dokumentacja firmy Microsoft
+title: 'IDiaStackWalkHelper:: ReadMemory — | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bef01cd29bb2312bd682f2f1f1150ee78da293e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150058"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Odczytuje blok danych z pliku wykonywalnego obrazu w pamięci.  
+Odczytuje blok danych z obrazu pliku wykonywalnego w pamięci.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,22 +39,22 @@ HRESULT readMemory( 
   
 #### <a name="parameters"></a>Parametry  
  `type`  
- [in] Wartość z zakresu od [memorytypeenum — wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md) wyliczenie opisujące typ pamięci do odczytu.  
+ podczas Wartość z wyliczenia [Memorytypeenum — Wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md) określa typ pamięci do odczytania.  
   
- oceny luk w zabezpieczeniach  
- [in] Wirtualny adres obrazu, w którym ma rozpocząć się odczyt.  
+ VA  
+ podczas Adres wirtualny w obrazie, od którego ma się zacząć odczytywanie.  
   
  `cbData`  
- [in] Rozmiar buforu danych w bajtach.  
+ podczas Rozmiar buforu danych w bajtach.  
   
  `pcbData`  
- [out] Zwraca liczbę bajtów odczytanych w rzeczywistości. Jeśli `pbData` jest `NULL`, a następnie jest to całkowita liczba bajtów dostępnych danych.  
+ określoną Zwraca liczbę bajtów, które są faktycznie odczytywane. Jeśli `pbData` jest `NULL` , jest to całkowita liczba dostępnych bajtów danych.  
   
  `pbData`  
- [out w] Buforu, który jest wypełniane pamięci odczytu.  
+ [in. out] Bufor, który jest wypełniony za pomocą odczytu pamięci.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

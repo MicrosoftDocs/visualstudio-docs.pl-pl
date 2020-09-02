@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdb635854d298b8a1eabc81019f7b18c2f50eecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670552"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Porady: wstawki kodu za pomocą programu Otocz przez
@@ -59,4 +59,4 @@ W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu
      Alternatywnie można wpisać nazwę fragmentu kodu, a następnie nacisnąć klawisz TAB lub ENTER.
 
 ## <a name="see-also"></a>Zobacz też
- [Selektor fragmentów](../ide/reference/code-snippet-picker.md) kodu [ C# wizualizacji](../ide/visual-csharp-code-snippets.md) kodu
+ [Selektor fragmentów](../ide/reference/code-snippet-picker.md) kodu w [języku Visual C#](../ide/visual-csharp-code-snippets.md)

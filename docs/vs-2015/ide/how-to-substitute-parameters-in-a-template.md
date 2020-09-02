@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe49c928ca3de318410eba56afeae6f4329efed3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670660"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Porady: parametry zastępcze w szablonie
@@ -38,9 +38,9 @@ Można zastąpić parametry szablonu, takie jak nazwy klas i przestrzenie nazw, 
     > [!NOTE]
     > Parametry szablonu są zapisywane w formacie $*Parameter*$.
 
-2. W pliku. vstemplate szablonu Znajdź element `ProjectItem`, który zawiera ten plik.
+2. W pliku. vstemplate szablonu Znajdź `ProjectItem` element, który zawiera ten plik.
 
-3. Ustaw atrybut `ReplaceParameters` na `true` dla elementu `ProjectItem`. Na przykład:
+3. Ustaw `ReplaceParameters` atrybut na `true` dla `ProjectItem` elementu. Na przykład:
 
     ```
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>

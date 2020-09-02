@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536945"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą programu Visual Studio ModelBus
@@ -31,10 +31,10 @@ Aby uzyskać dodatkowe informacje i przykładowy kod, zobacz:
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="providing-access-to-a-dsl"></a><a name="provide"></a>Zapewnianie dostępu do DSL
+## <a name="providing-access-to-a-dsl"></a><a name="provide"></a> Zapewnianie dostępu do DSL
  Aby można było utworzyć odwołania ModelBus do modelu lub jego elementów, należy zdefiniować ModelBusAdapter dla DSL. Najprostszym sposobem jest użycie rozszerzenia magistrali modelu programu Visual Studio, które dodaje polecenia do projektant DSL.
 
-### <a name="to-expose-a-dsl-definition-to-model-bus"></a><a name="expose"></a>Aby uwidocznić definicję DSL dla magistrali modelu
+### <a name="to-expose-a-dsl-definition-to-model-bus"></a><a name="expose"></a> Aby uwidocznić definicję DSL dla magistrali modelu
 
 1. Otwórz plik definicji DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij pozycję **Włącz ModelBus**.
 
@@ -82,7 +82,7 @@ Aby upewnić się, że identyfikatory elementów są utrwalane:
 
 - Przesłoń, `ResolveElementReference` Aby zlokalizować prawidłowy element z odwołania do magistrali modelu.
 
-## <a name="accessing-a-dsl-from-another-dsl"></a><a name="editRef"></a>Dostęp do DSL z innego modemu DSL
+## <a name="accessing-a-dsl-from-another-dsl"></a><a name="editRef"></a> Dostęp do DSL z innego modemu DSL
 
 Odwołania do magistrali modelu można przechowywać we właściwości domeny w DSL i można napisać kod niestandardowy, który z nich korzysta. Możesz również pozwolić użytkownikowi na tworzenie odwołania do magistrali modelu przez pobranie pliku modelu i elementu w nim.
 
@@ -386,7 +386,7 @@ ModelBusReference elementReferenceRestored =
 
  Rekord MBR jest deserializowany w dwóch etapach:
 
-- `ModelBusReferencePropertySerializer`jest serializatorem standardowym, który zajmuje się nagłówkiem MBR. Używa standardowego `SerializationContext` zbioru właściwości DSL, który jest przechowywany w `ReferenceContext` kluczu `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` . W szczególności `SerializationContext` powinna zawierać wystąpienie elementu `ModelBus` .
+- `ModelBusReferencePropertySerializer` jest serializatorem standardowym, który zajmuje się nagłówkiem MBR. Używa standardowego `SerializationContext` zbioru właściwości DSL, który jest przechowywany w `ReferenceContext` kluczu `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` . W szczególności `SerializationContext` powinna zawierać wystąpienie elementu `ModelBus` .
 
 - Karta ModelBus zajmuje się częścią MBR. Może on używać dodatkowych informacji przechowywanych w ReferenceContext MBR. Prosta karta oparta na plikach zachowuje ścieżki plików głównych przy użyciu kluczy `FilePathLoadContextKey` i `FilePathSaveContextKey` .
 
@@ -510,7 +510,7 @@ Po kliknięciu prawym przyciskiem myszy diagramu definicji DSL kliknij pozycję 
 
 - Nowy projekt `ModelBusAdapter` zostanie dodany do rozwiązania.
 
-- Odwołanie do `ModelBusAdapter` jest dodawane do `DslPackage` projektu. `ModelBusAdapter`ma odwołanie do `Dsl` projektu.
+- Odwołanie do `ModelBusAdapter` jest dodawane do `DslPackage` projektu. `ModelBusAdapter` ma odwołanie do `Dsl` projektu.
 
 - W **DslPackage\source.extention.tt**, `|ModelBusAdapter|` jest DODAWANY jako składnik MEF.
 

@@ -74,10 +74,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247933"
 ---
 # <a name="crt-debug-heap-details"></a>Szczegóły dotyczące sterty debugowania CRT
@@ -147,7 +147,7 @@ Każdy blok pamięci w stercie debugowania jest przypisany do jednego z pięciu 
 
 `_CRT_BLOCK` Bloki pamięci przydzielone wewnętrznie przez wiele funkcji biblioteki wykonawczej są oznaczane jako bloki CRT, dzięki czemu mogą być obsługiwane osobno. W związku z tym wykrywanie przecieków i inne operacje nie muszą mieć na nie wpływ. Alokacja nie może nigdy przydzielać, przydzielać ani zwalniać żadnego bloku typu CRT.
 
-`_CLIENT_BLOCK` Aplikacja może zachować specjalną ścieżkę do danej grupy alokacji do celów debugowania przez przydzielenie ich jako bloku pamięci tego typu przy użyciu jawnych wywołań funkcji sterty debugowania. MFC, na przykład przypisuje wszystkie **obiektów CObject** jako bloki klienta; inne aplikacje mogą przechowywać różne obiekty pamięci w blokach klienta. Można również określić podtypy bloków klienta, aby zwiększyć stopień szczegółowości śledzenia. Aby określić podtypy bloków klienta, przesuń liczbę w lewo o 16 bitów i `OR` z `_CLIENT_BLOCK` . Przykład:
+`_CLIENT_BLOCK` Aplikacja może zachować specjalną ścieżkę do danej grupy alokacji do celów debugowania przez przydzielenie ich jako bloku pamięci tego typu przy użyciu jawnych wywołań funkcji sterty debugowania. MFC, na przykład przypisuje wszystkie **obiektów CObject** jako bloki klienta; inne aplikacje mogą przechowywać różne obiekty pamięci w blokach klienta. Można również określić podtypy bloków klienta, aby zwiększyć stopień szczegółowości śledzenia. Aby określić podtypy bloków klienta, przesuń liczbę w lewo o 16 bitów i `OR` z `_CLIENT_BLOCK` . Na przykład:
 
 ```cpp
 #define MYSUBTYPE 4
@@ -178,13 +178,13 @@ Wiele funkcji sterty debugowania musi być dostępnych z poziomu kodu. W poniżs
 
 Flaga **_crtDbgFlag** zawiera następujące pola bitowe:
 
-|Pole bitowe|Domyślny<br /><br /> value|Opis|
+|Pole bitowe|Domyślne<br /><br /> value|Opis|
 |---------------|-----------------------|-----------------|
 |**_CRTDBG_ALLOC_MEM_DF**|Włączone|Włącza alokację debugowania. Gdy ten bit jest wyłączony, alokacje pozostają powiązane ze sobą, ale ich typ bloku jest **_IGNORE_BLOCK**.|
-|**_CRTDBG_DELAY_FREE_MEM_DF**|Wyłączone|Uniemożliwia rzeczywiste zwolnienie pamięci, co w przypadku symulowania warunków braku pamięci. Gdy ten bit jest włączony, zwolnione bloki są przechowywane na połączonej liście sterty debugowania, ale są oznaczone jako **_FREE_BLOCK** i wypełnione specjalną wartością bajtową.|
-|**_CRTDBG_CHECK_ALWAYS_DF**|Wyłączone|Powoduje, że **_CrtCheckMemory** być wywoływana przy każdej alokacji i cofa alokacji. To spowalnia wykonywanie, ale szybko przechwytuje błędy.|
-|**_CRTDBG_CHECK_CRT_DF**|Wyłączone|Powoduje, że bloki oznaczone jako typu **_CRT_BLOCK** mają być uwzględniane w operacjach wykrywania przecieków i różnic stanu. Gdy ten bit jest wyłączony, pamięć używana wewnętrznie przez bibliotekę wykonawczą jest ignorowana podczas takich operacji.|
-|**_CRTDBG_LEAK_CHECK_DF**|Wyłączone|Powoduje, że sprawdzanie wycieków odbywa się przy zamykaniu programu za pośrednictwem wywołania do **_CrtDumpMemoryLeaks**. Raport o błędach jest generowany, jeśli aplikacja nie może zwolnić całej przypisanej pamięci.|
+|**_CRTDBG_DELAY_FREE_MEM_DF**|Wyłączony|Uniemożliwia rzeczywiste zwolnienie pamięci, co w przypadku symulowania warunków braku pamięci. Gdy ten bit jest włączony, zwolnione bloki są przechowywane na połączonej liście sterty debugowania, ale są oznaczone jako **_FREE_BLOCK** i wypełnione specjalną wartością bajtową.|
+|**_CRTDBG_CHECK_ALWAYS_DF**|Wyłączony|Powoduje, że **_CrtCheckMemory** być wywoływana przy każdej alokacji i cofa alokacji. To spowalnia wykonywanie, ale szybko przechwytuje błędy.|
+|**_CRTDBG_CHECK_CRT_DF**|Wyłączony|Powoduje, że bloki oznaczone jako typu **_CRT_BLOCK** mają być uwzględniane w operacjach wykrywania przecieków i różnic stanu. Gdy ten bit jest wyłączony, pamięć używana wewnętrznie przez bibliotekę wykonawczą jest ignorowana podczas takich operacji.|
+|**_CRTDBG_LEAK_CHECK_DF**|Wyłączony|Powoduje, że sprawdzanie wycieków odbywa się przy zamykaniu programu za pośrednictwem wywołania do **_CrtDumpMemoryLeaks**. Raport o błędach jest generowany, jeśli aplikacja nie może zwolnić całej przypisanej pamięci.|
 
 ![Z powrotem do najwyższej](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)
 

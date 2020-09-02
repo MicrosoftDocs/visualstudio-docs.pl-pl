@@ -1,5 +1,5 @@
 ---
-title: Dostarczanie wsparcia cofania projektantom | Dokumenty firmy Microsoft
+title: Dostarczanie obsługi Cofnij do projektantów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,96 +11,96 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699676"
 ---
-# <a name="supply-undo-support-to-designers"></a>Dostarczanie wsparcia cofania dla projektantów
+# <a name="supply-undo-support-to-designers"></a>Dostarcz obsługę cofania dla projektantów
 
-Projektanci, takich jak edytory, zazwyczaj trzeba obsługiwać operacje cofania, dzięki czemu użytkownicy mogą odwrócić ich ostatnich zmian podczas modyfikowania elementu kodu.
+Projektanci, podobnie jak edytory, zazwyczaj muszą obsługiwać operacje cofania, dzięki czemu użytkownicy mogą odwracać ostatnie zmiany podczas modyfikacji elementu kodu.
 
-Większość projektantów zaimplementowanych w programie Visual Studio ma "cofnij" wsparcie automatycznie dostarczone przez środowisko.
+Większość projektantów wdrożonych w programie Visual Studio ma pomoc techniczną "undo" automatycznie dostarczoną przez środowisko.
 
 Implementacje projektanta, które muszą zapewnić obsługę funkcji cofania:
 
-- Zapewnij zarządzanie cofania, implementując abstrakcyjną klasę podstawową<xref:System.ComponentModel.Design.UndoEngine>
+- Zapewnij zarządzanie Cofnij przez implementację abstrakcyjnej klasy podstawowej <xref:System.ComponentModel.Design.UndoEngine>
 
-- Trwałość dostaw i codedom wsparcia <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> <xref:System.ComponentModel.Design.IComponentChangeService> przez implementowanie i klas.
+- Zapewnij obsługę trwałości i CodeDOM, implementując <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  <xref:System.ComponentModel.Design.IComponentChangeService> klasy i.
 
-Aby uzyskać więcej informacji na temat pisania projektantów przy użyciu programu .NET Framework, zobacz [Rozszerzanie pomocy technicznej w czasie projektowania](/previous-versions/37899azc(v=vs.140)).
+Aby uzyskać więcej informacji na temat pisania projektantów przy użyciu .NET Framework, zobacz temat [zwiększanie obsługi czasu projektowania](/previous-versions/37899azc(v=vs.140)).
 
-Zapewnia [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] domyślną infrastrukturę cofania przez:
+Program [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] udostępnia domyślną infrastrukturę cofania według:
 
-- Dostarczanie implementacji zarządzania <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> cofania za pośrednictwem i <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> klas.
+- Udostępnianie implementacji cofania zarządzania za <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> pomocą <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> klas i.
 
-- Dostarczanie trwałości i codedom wsparcia <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> <xref:System.ComponentModel.Design.IComponentChangeService> za pośrednictwem domyślnych i implementacji.
+- Zapewnianie obsługi trwałości i CodeDOM przy użyciu domyślnych <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> i <xref:System.ComponentModel.Design.IComponentChangeService> implementacji.
 
-## <a name="obtain-undo-support-automatically"></a>Automatyczne uzyskiwanie pomocy technicznej cofania
+## <a name="obtain-undo-support-automatically"></a>Automatyczne uzyskiwanie pomocy technicznej
 
-Każdy projektant utworzony w programie Visual Studio ma automatyczną i pełną obsługę cofania, jeśli projektant:
+Każdy projektant utworzony w programie Visual Studio ma automatyczne i pełne wsparcie cofania, jeśli projektant:
 
-- Korzysta z <xref:System.Windows.Forms.Control> klasy opartej dla interfejsu użytkownika.
+- Używa <xref:System.Windows.Forms.Control> klasy bazującej na interfejsie użytkownika.
 
-- Wykorzystuje standardowy system generowania i analizowania kodu opartego na kodzie dla generowania i trwałości kodu.
+- Wykorzystuje standardowy system generowania kodu oparty na CodeDOM i umożliwiający generowanie kodu i trwałość.
 
-   Aby uzyskać więcej informacji na temat pracy z pomocą techniczną programu Visual Studio CodeDOM, zobacz [Generowanie i kompilacja dynamicznego kodu źródłowego.](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
+   Aby uzyskać więcej informacji na temat pracy z obsługą języka CodeDOM programu Visual Studio, zobacz [dynamiczne generowanie kodu źródłowego i kompilacja](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation).
 
-## <a name="when-to-use-explicit-designer-undo-support"></a>Kiedy używać jawnej obsługi cofania projektanta
- Projektanci muszą podać własne zarządzanie cofaniem, jeśli używają graficznego interfejsu użytkownika, określanego jako <xref:System.Windows.Forms.Control>karta widoku, innej niż dostarczona przez program .
+## <a name="when-to-use-explicit-designer-undo-support"></a>Kiedy używać jawnego projektanta Cofnij obsługę
+ Projektanci muszą podać własne zarządzanie cofaniem, jeśli korzystają z graficznego interfejsu użytkownika, nazywanego adapterem widoku, innym niż dostarczony przez <xref:System.Windows.Forms.Control> .
 
- Przykładem tego może być utworzenie produktu z interfejsem graficznym opartym na sieci Web, a nie interfejsem graficznym opartym na platformie .NET Framework.
+ Przykładem może być tworzenie produktu przy użyciu graficznego interfejsu projektowego opartego na sieci Web, a nie interfejsu graficznego opartego na .NET Framework.
 
- W takich przypadkach należy zarejestrować tę kartę widoku <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>w programie Visual Studio przy użyciu programu Visual Studio i zapewnić jawne zarządzanie cofania.
+ W takich przypadkach należy zarejestrować ten adapter widoku w programie Visual Studio przy użyciu <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute> i zapewnić jawne zarządzanie Cofnij.
 
- Projektanci muszą zapewnić obsługę CodeDOM i trwałości, jeśli nie używają modelu <xref:System.CodeDom> generowania kodu programu Visual Studio dostępnego w przestrzeni nazw.
+ Projektanci muszą zapewnić obsługę CodeDOM i trwałości, jeśli nie korzystają z modelu generowania kodu programu Visual Studio dostarczonego w <xref:System.CodeDom> przestrzeni nazw.
 
-## <a name="undo-support-features-of-the-designer"></a>Cofanie funkcji pomocy technicznej projektanta
- Środowisko SDK zawiera domyślne implementacje interfejsów potrzebnych do zapewnienia obsługi <xref:System.Windows.Forms.Control> cofania, które mogą być używane przez projektantów nie używających klas opartych na ich interfejsach użytkownika lub standardowego modelu CodeDOM i trwałości.
+## <a name="undo-support-features-of-the-designer"></a>Cofnij funkcje obsługi projektanta
+ Zestaw SDK środowiska udostępnia domyślne implementacje interfejsów, które są konieczne w celu zapewnienia obsługi Cofnij, które mogą być używane przez projektantów nie korzystających z <xref:System.Windows.Forms.Control> klas opartych na interfejsach użytkownika lub standardowych modeli CodeDOM i trwałości.
 
- Klasa <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> pochodzi z klasy .NET Framework <xref:System.ComponentModel.Design.UndoEngine> przy <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> użyciu implementacji klasy do zarządzania operacjami cofania.
+ <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>Klasa pochodzi z <xref:System.ComponentModel.Design.UndoEngine> klasy .NET Framework przy użyciu implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> klasy do zarządzania operacjami cofania.
 
- Visual Studio udostępnia następującą funkcję do projektanta cofnąć:
+ Program Visual Studio udostępnia następującą funkcję do cofnięcia projektanta:
 
 - Połączone funkcje cofania w wielu projektantach.
 
-- Jednostki podrzędne w projektancie mogą <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> wchodzić w interakcje z rodzicami, implementując i <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> włączając <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.
+- Jednostki podrzędne w projektancie mogą korzystać z obiektów nadrzędnych przez implementację <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> włączony <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> .
 
-Środowisko SDK zapewnia CodeDOM i trwałości wsparcia przez dostarczanie:
+Zestaw SDK środowiska zapewnia obsługę CodeDOM i trwałości, dostarczając:
 
-- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>jako wdrożenie<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
+- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> jako implementacja <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
 
-- Dostarczone <xref:System.ComponentModel.Design.IComponentChangeService> przez hosta projektu programu Visual Studio.
+- <xref:System.ComponentModel.Design.IComponentChangeService>Dostarczone przez hosta projektu programu Visual Studio.
 
-## <a name="use-the-environment-sdk-features-to-supply-undo-support"></a>Korzystanie z funkcji SDK środowiska do dostarczania pomocy technicznej cofania
+## <a name="use-the-environment-sdk-features-to-supply-undo-support"></a>Korzystanie z funkcji zestawu SDK środowiska w celu zapewnienia pomocy technicznej Undo
 
-Aby uzyskać obsługę cofania, obiekt implementujący projektanta musi utworzyć <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> wystąpienie i <xref:System.IServiceProvider> zainicjować wystąpienie klasy z prawidłową implementacją. Ta <xref:System.IServiceProvider> klasa musi zapewnić następujące usługi:
+Aby uzyskać pomoc techniczną, obiekt implementujący projektanta musi tworzyć wystąpienia i inicjować wystąpienie <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> klasy z prawidłową <xref:System.IServiceProvider> implementacją. Ta <xref:System.IServiceProvider> Klasa musi zapewniać następujące usługi:
 
 - <xref:System.ComponentModel.Design.IDesignerHost>.
 
 - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
 
-   Projektanci korzystający z serializacji CodeDOM <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> programu [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Visual Studio mogą <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>wybrać użycie dostarczonego z jego implementacją .
+   Projektanci korzystający z serializacji CodeDOM programu Visual Studio mogą wybrać użycie <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> z użyciem [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] jako implementacji <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> .
 
-   W takim przypadku <xref:System.IServiceProvider> klasa podana do konstruktora <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> należy <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> zwrócić ten obiekt jako implementację klasy.
+   W takim przypadku <xref:System.IServiceProvider> Klasa udostępniona <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> konstruktorowi powinna zwrócić ten obiekt jako implementację <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> klasy.
 
 - <xref:System.ComponentModel.Design.IComponentChangeService>
 
-   Projektanci używający <xref:System.ComponentModel.Design.DesignSurface> wartości domyślnej dostarczonej przez hosta projektu <xref:System.ComponentModel.Design.IComponentChangeService> programu Visual Studio mają gwarancję domyślnej implementacji klasy.
+   Projektanci korzystający z wartości domyślnej <xref:System.ComponentModel.Design.DesignSurface> dostarczonej przez hosta projektu programu Visual Studio mają zagwarantowaną domyślną implementację <xref:System.ComponentModel.Design.IComponentChangeService> klasy.
 
-Projektanci implementujący <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> oparty mechanizm cofania automatycznie śledzi zmiany, jeśli:
+Projektanci implementujący <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> mechanizm cofania automatycznie śledzą zmiany, jeśli:
 
-- Zmiany właściwości są <xref:System.ComponentModel.TypeDescriptor> wprowadzane za pośrednictwem obiektu.
+- Zmiany właściwości są wprowadzane za pomocą <xref:System.ComponentModel.TypeDescriptor> obiektu.
 
-- <xref:System.ComponentModel.Design.IComponentChangeService>zdarzenia są generowane ręcznie, gdy zostanie zatwierdzona cofnięta zmiana.
+- <xref:System.ComponentModel.Design.IComponentChangeService> zdarzenia są generowane ręcznie po zatwierdzeniu zmiany do cofnięcia.
 
-- Modyfikacja projektanta została utworzona w <xref:System.ComponentModel.Design.DesignerTransaction>kontekście .
+- Modyfikacja projektanta została utworzona w kontekście <xref:System.ComponentModel.Design.DesignerTransaction> .
 
-- Projektant decyduje się jawnie utworzyć cofanie jednostek przy użyciu standardowej <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> jednostki cofania dostarczonej przez implementację lub <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>implementację specyficzną dla programu Visual Studio, która wywodzi się z <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> i zapewnia również implementację obu <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.
+- Projektant pozwala jawnie utworzyć jednostki cofania przy użyciu standardowej jednostki cofania dostarczonej przez implementację <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> lub implementację specyficzną dla programu Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> , która pochodzi od <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> i zawiera również implementację obu <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .
 
 ## <a name="see-also"></a>Zobacz też
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [Rozszerz obsługę czasu projektowania](/previous-versions/37899azc(v=vs.140))
+- [Zwiększ obsługę czasu projektowania](/previous-versions/37899azc(v=vs.140))

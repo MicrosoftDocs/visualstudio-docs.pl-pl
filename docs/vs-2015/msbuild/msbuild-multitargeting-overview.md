@@ -1,5 +1,5 @@
 ---
-title: Przegląd wielowersyjności kodu w programie MSBuild | Dokumentacja firmy Microsoft
+title: Omówienie funkcji wieloadresowych programu MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -10,43 +10,43 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426849"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64784775"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Przegląd wielowersyjności kodu w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Korzystając z programu MSBuild, można kompilować aplikację do uruchamiania na jednym z kilku różnych wersji programu .NET Framework i na jednym z różnych platform system. Na przykład można kompilować aplikację do uruchamiania na .NET Framework 2.0 na platformie 32-bitowej i kompilacji tej samej aplikacji do uruchamiania na .NET Framework 4.5 na platformie 64-bitowej.  
+Za pomocą programu MSBuild można skompilować aplikację do uruchamiania w jednej z kilku wersji .NET Framework i na jednej z kilku platform systemowych. Na przykład można skompilować aplikację do uruchamiania na .NET Framework 2,0 na platformie 32-bitowej i skompilować tę samą aplikację do uruchamiania na .NET Framework 4,5 na platformie 64-bitowej.  
   
 > [!IMPORTANT]
-> Niezależnie od nazwy "wielowersyjność" projektu mogą określać docelową framework tylko jeden i tylko w jednej platformie w danym momencie.  
+> Pomimo nazwy "wiele obiektów docelowych" projekt może wskazywać tylko jedną strukturę i tylko jedną platformę naraz.  
   
- Oto niektóre funkcje przeznaczone dla programu MSBuild:  
+ Oto niektóre z funkcji docelowych programu MSBuild:  
   
-- Można opracować aplikację, która jest przeznaczony dla starszej wersji programu .NET Framework, na przykład wersji 2.0, 3.5 i 4.  
+- Można opracować aplikację, która jest przeznaczona dla starszej wersji .NET Framework, na przykład w wersji 2,0, 3,5 lub 4.  
   
-- Można wskazać framework innych niż .NET Framework, na przykład Silverlight Framework.  
+- Można wskazać platformę inną niż .NET Framework, na przykład platformę Silverlight.  
   
-- Możesz wybrać docelową *profil framework*, czyli uprzednio zdefiniowany podzbiór platformy docelowej.  
+- Można wskazać *Profil platformy*, który jest wstępnie zdefiniowanym podzbiorem platformy docelowej.  
   
-- Jeśli z dodatkiem Service pack dla bieżącej wersji programu .NET Framework jest zwalniana, można go wykorzystać.  
+- Jeśli dodatek Service Pack dla bieżącej wersji .NET Framework jest wydawany, można go wskazać.  
   
-- Przeznaczone dla programu MSBuild gwarantuje, że aplikacja używa tylko funkcjonalności, która jest dostępna w docelowej platformy framework i platformy.  
+- Program MSBuild określa gwarancję, że aplikacja używa tylko funkcji dostępnych w docelowej architekturze i platformie.  
   
-## <a name="target-framework-and-platform"></a>Platforma  
- A *platformę docelową* jest wersją .NET Framework, projekt został opracowany pod kątem uruchamiania na i *platformę docelową* czy projekt jest kompilowany do uruchamiania na Platforma systemu.  Na przykład możesz chcieć aplikacji .NET Framework 2.0, do uruchamiania na 32-bitowej platformie, która jest zgodna z rodziny procesorów 802 x 86 (x86) docelowej. Kombinacja wartości docelowej i platforma docelowa jest znany jako *kontekstu docelowej*. Aby uzyskać więcej informacji, zobacz [platformy docelowej i platformy docelowej](../msbuild/msbuild-target-framework-and-target-platform.md).  
+## <a name="target-framework-and-platform"></a>Struktura docelowa i platforma  
+ Platforma *docelowa* to wersja .NET Framework, do której projekt został skompilowany, a *platforma docelowa* to platforma systemowa, na której jest zbudowany projekt.  Na przykład możesz chcieć użyć aplikacji .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 802x86 (x86). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy*. Aby uzyskać więcej informacji, zobacz [Target Framework i Target platform](../msbuild/msbuild-target-framework-and-target-platform.md).  
   
 ## <a name="toolset-toolsversion"></a>Zestaw narzędzi (ToolsVersion)  
- Zestaw narzędzi umożliwia zbieranie informacji o razem narzędzia, zadania i elementy docelowe, które są używane do tworzenia aplikacji. Zestaw narzędzi obejmuje kompilatory, takie jak csc.exe i vbc.exe, wspólnego pliku docelowego (microsoft.common.targets) i typowe zadania dotyczące plików (microsoft.common.tasks). 4.5 narzędzi może służyć do docelowej wersji systemu .NET Framework 2.0, 3.0, 3.5, 4 i 4.5. Jednak 2.0 zestawu narzędzi można używać tylko pod kątem programu .NET Framework w wersji 2.0. Aby uzyskać więcej informacji, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
+ Zestaw narzędzi zbiera narzędzia, zadania i elementy docelowe, które są używane do tworzenia aplikacji. Zestaw narzędzi zawiera kompilatory, takie jak csc.exe i vbc.exe, plik wspólnych obiektów docelowych (Microsoft. Common. targets) i plik wspólnych zadań (Microsoft. Common. Tasks). Zestaw narzędzi 4,5 może służyć do kierowania .NET Framework wersjami 2,0, 3,0, 3,5, 4 i 4,5. Jednak zestaw narzędzi 2,0 może być używany tylko do .NET Framework wersji 2,0. Aby uzyskać więcej informacji, zobacz zestaw [narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
   
-## <a name="reference-assemblies"></a>Zestawy referencyjne  
- Zestawy odwołań, które są określone w zestawie narzędzi ułatwiają projektowanie i tworzenie aplikacji. Te zestawy odwołań nie tylko włączyć kompilacji określonego celu, ale również ograniczyć składniki i funkcje w środowisku IDE programu Visual Studio do tych, które są zgodne z obiektem docelowym. Aby uzyskać więcej informacji, zobacz [rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md)  
+## <a name="reference-assemblies"></a>Zestawy odwołań  
+ Zestawy odwołań, które są określone w zestawie narzędzi, ułatwiają projektowanie i kompilowanie aplikacji. Te zestawy referencyjne nie tylko włączają konkretną kompilację docelową, ale również ograniczają składniki i funkcje w środowisku IDE programu Visual Studio do tych, które są zgodne z elementem docelowym. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md)  
   
 ## <a name="configuring-targets-and-tasks"></a>Konfigurowanie obiektów docelowych i zadań  
- Można skonfigurować elementów docelowych MSBuild oraz zadań do wykonania poza procesem za pomocą narzędzia MSBuild, dzięki czemu możliwe jest określanie kontekstach, które różnią się znacznie od jednego są uruchomione na.  Na przykład mogą kierować aplikacją 32-bitowy, .NET Framework 2.0 jest uruchomiona na komputerze deweloperskim na platformie 64-bitowym z .NET Framework 4.5. Aby uzyskać więcej informacji, zobacz [Konfigurowanie obiektów docelowych i zadań](../msbuild/configuring-targets-and-tasks.md).  
+ Można skonfigurować elementy docelowe i zadania programu MSBuild do uruchamiania poza procesem przy użyciu programu MSBuild, aby można było używać kontekstów, które są znacznie inne niż te, które są używane.  Można na przykład określić 32-bitową .NET Framework 2,0 aplikacji, gdy komputer deweloperski działa na platformie 64-bitowej z .NET Framework 4,5. Aby uzyskać więcej informacji, zobacz [Konfigurowanie elementów docelowych i zadań](../msbuild/configuring-targets-and-tasks.md).  
   
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów  
- Mogą wystąpić błędy, jeśli zostanie podjęta próba odwołanie do zestawu, który nie jest częścią kontekstu docelowego. Aby uzyskać więcej informacji dotyczących tych błędów i co należy zrobić o nich, zobacz [Rozwiązywanie problemów z celem błędy programu .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
+ Jeśli próbujesz odwołać się do zestawu, który nie jest częścią kontekstu docelowego, mogą wystąpić błędy. Aby uzyskać więcej informacji o tych błędach i o tym, co należy zrobić, zobacz [Rozwiązywanie problemów .NET Framework określania błędów](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).

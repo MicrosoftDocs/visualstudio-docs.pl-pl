@@ -13,18 +13,18 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277882"
 ---
 # <a name="demo-sample"></a>Przykład
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W poniższych procedurach pokazano, jak utworzyć przykład dla [przewodnika: Analizowanie kodu CC++ /Code dla wad](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Procedury tworzą:  
+W poniższych procedurach pokazano, jak utworzyć przykład dla [przewodnika: Analizowanie kodu C/C++ pod kątem wad](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Procedury tworzą:  
   
-- Rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o nazwie CppDemo.  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Rozwiązanie o nazwie CppDemo.  
   
 - Projekt biblioteki statycznej o nazwie CodeDefects.  
   
@@ -36,9 +36,9 @@ W poniższych procedurach pokazano, jak utworzyć przykład dla [przewodnika: An
   
 1. Kliknij menu **plik** , wskaż polecenie **Nowy**, a następnie kliknij pozycję **Nowy projekt**.  
   
-2. Na liście drzewo **typów projektu** , jeśli Wizualizacja C++ nie jest domyślnym językiem programu vs rozwiń **inne języki**.  
+2. Na liście drzewo **typów projektu** , jeśli Visual C++ nie jest domyślnym językiem programu vs rozwiń **inne języki**.  
   
-3. Rozwiń **węzeł C++Wizualizacja** , a następnie kliknij pozycję **Ogólne**.  
+3. Rozwiń węzeł **Visual C++**, a następnie kliknij pozycję **Ogólne**.  
   
 4. W obszarze **Szablony**kliknij pozycję **pusty projekt**.  
   
@@ -56,17 +56,17 @@ W poniższych procedurach pokazano, jak utworzyć przykład dla [przewodnika: An
   
 3. Na liście **Ogólne** zaznacz tekst w kolumnie obok **rozszerzenia docelowego**, a następnie wpisz **. lib**.  
   
-4. W obszarze **Ustawienia domyślne projektu**kliknij kolumnę obok pozycji **Typ konfiguracji**, a następnie kliknij pozycję **statyczna biblioteka (. lib)** .  
+4. W obszarze **Ustawienia domyślne projektu**kliknij kolumnę obok pozycji **Typ konfiguracji**, a następnie kliknij pozycję **statyczna biblioteka (. lib)**.  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Dodaj nagłówek i plik źródłowy do projektu CodeDefects  
   
 1. W Eksplorator rozwiązań rozwiń węzeł **CodeDefects**, kliknij prawym przyciskiem myszy pozycję **pliki nagłówkowe**, kliknij pozycję **Dodaj**, a następnie kliknij pozycję **nowy element**.  
   
-2. W oknie dialogowym **Dodaj nowy element** kliknij pozycję **kod**, a następnie kliknij pozycję **plik nagłówka (. h)** .  
+2. W oknie dialogowym **Dodaj nowy element** kliknij pozycję **kod**, a następnie kliknij pozycję **plik nagłówka (. h)**.  
   
 3. W polu **Nazwa** wpisz **usterkę. cpp** , a następnie kliknij przycisk **Dodaj**.  
   
-4. Skopiuj następujący kod i wklej go do pliku **usterek. cpp** w edytorze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+4. Skopiuj poniższy kod i wklej go do pliku **usterek. cpp** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze.  
   
     ```  
     #include <windows.h>  
@@ -90,11 +90,11 @@ W poniższych procedurach pokazano, jak utworzyć przykład dla [przewodnika: An
   
 5. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy pozycję **pliki źródłowe**, wskaż polecenie **Nowy**, a następnie kliknij pozycję **nowy element**.  
   
-6. W oknie dialogowym **Dodaj nowy element** kliknij pozycję  **C++ plik (. cpp).**  
+6. W oknie dialogowym **Dodaj nowy element** kliknij **plik C++ (. cpp).**  
   
 7. W polu **Nazwa** wpisz **usterkę. cpp** , a następnie kliknij przycisk **Dodaj**.  
   
-8. Skopiuj następujący kod i wklej go do pliku usterek. h w edytorze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+8. Skopiuj poniższy kod i wklej go do pliku usterek. h w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze.  
   
     ```  
     #include <stdlib.h>  
@@ -160,7 +160,7 @@ W poniższych procedurach pokazano, jak utworzyć przykład dla [przewodnika: An
   
 1. W Eksplorator rozwiązań kliknij pozycję **CppDemo**, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.  
   
-2. W oknie dialogowym **Dodaj nowy projekt** rozwiń pozycję Wizualizacja C++, kliknij pozycję **Ogólne**, a następnie kliknij pozycję **pusty projekt**.  
+2. W oknie dialogowym **Dodaj nowy projekt** rozwiń węzeł Visual C++, kliknij pozycję **Ogólne**, a następnie kliknij pozycję **pusty projekt**.  
   
 3. W polu tekstowym **Nazwa** wpisz **Adnotacje**, a następnie kliknij przycisk **Dodaj**.  
   
@@ -170,17 +170,17 @@ W poniższych procedurach pokazano, jak utworzyć przykład dla [przewodnika: An
   
 6. Na liście **Ogólne** zaznacz tekst w kolumnie obok **rozszerzenia docelowego**, a następnie wpisz **. lib**.  
   
-7. W obszarze **Ustawienia domyślne projektu**kliknij kolumnę obok pozycji **Typ konfiguracji**, a następnie kliknij pozycję **statyczna biblioteka (. lib)** .  
+7. W obszarze **Ustawienia domyślne projektu**kliknij kolumnę obok pozycji **Typ konfiguracji**, a następnie kliknij pozycję **statyczna biblioteka (. lib)**.  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Dodaj plik nagłówka i plik źródłowy do projektu adnotacji  
   
 1. W Eksplorator rozwiązań rozwiń pozycję **Adnotacje**, kliknij prawym przyciskiem myszy pozycję **pliki nagłówkowe**, kliknij polecenie **Dodaj**, a następnie kliknij pozycję **nowy element**.  
   
-2. W oknie dialogowym **Dodaj nowy element** kliknij pozycję **plik nagłówka (. h)** .  
+2. W oknie dialogowym **Dodaj nowy element** kliknij pozycję **plik nagłówka (. h)**.  
   
 3. W polu **Nazwa** wpisz **Adnotacje. h** , a następnie kliknij przycisk **Dodaj**.  
   
-4. Skopiuj poniższy kod i wklej go do pliku **Annotations. h** w edytorze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+4. Skopiuj poniższy kod i wklej go do pliku **Annotations. h** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -199,11 +199,11 @@ W poniższych procedurach pokazano, jak utworzyć przykład dla [przewodnika: An
   
 5. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy pozycję **pliki źródłowe**, wskaż polecenie **Nowy**, a następnie kliknij pozycję **nowy element**.  
   
-6. W oknie dialogowym **Dodaj nowy element** kliknij pozycję **kod** , a następnie kliknij pozycję  **C++ plik (. cpp).**  
+6. W oknie dialogowym **Dodaj nowy element** kliknij pozycję **kod** , a następnie kliknij pozycję **plik C++ (. cpp).**  
   
 7. W polu **Nazwa** wpisz **Adnotacje. cpp** , a następnie kliknij przycisk **Dodaj**.  
   
-8. Skopiuj poniższy kod i wklej go do pliku **Annotation. cpp** w edytorze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+8. Skopiuj poniższy kod i wklej go do pliku **Annotation. cpp** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

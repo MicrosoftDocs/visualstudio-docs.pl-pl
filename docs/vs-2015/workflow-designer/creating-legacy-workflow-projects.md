@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 644676393a606dfd7fbf6aa400a625dce2db3697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656889"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Tworzenie starszej wersji projektów przepływu pracy
-W tej sekcji opisano sposób tworzenia projektów przepływu pracy przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] udostępnionej przez VS2010. Starsza [!INCLUDE[wfd2](../includes/wfd2-md.md)] odwołuje się do [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Zawiera informacje o sposobach korzystania z szablonów projektów przepływu pracy, które są wymienione w poniższej tabeli.
+W tej sekcji opisano sposób tworzenia projektów przepływu pracy przy użyciu starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczonej przez VS2010. Starsza wersja [!INCLUDE[wfd2](../includes/wfd2-md.md)] elementów docelowych [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] . Zawiera informacje o sposobach korzystania z szablonów projektów przepływu pracy, które są wymienione w poniższej tabeli.
 
 |Szablon projektu|Opis|
 |----------------------|-----------------|

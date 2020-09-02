@@ -8,10 +8,10 @@ ms.date: 02/17/2020
 ms.topic: conceptual
 description: Dowiedz się więcej na temat nowej oferty programu Visual Studio i usługi GitHub
 ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248182"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Wprowadzenie do subskrypcji programu Visual Studio za pomocą usługi GitHub Enterprise  

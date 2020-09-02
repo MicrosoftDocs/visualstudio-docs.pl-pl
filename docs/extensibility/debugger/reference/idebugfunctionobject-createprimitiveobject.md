@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreatePrimitiveObject | Dokumenty firmy Microsoft
+title: 'IDebugFunctionObject:: isprymitywobject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728535"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
-Tworzy prymitywny obiekt danych, taki jak prosta liczna.
+Tworzy obiekt danych pierwotnych, na przykład prostą liczbę całkowitą.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int CreatePrimitiveObject(
 
 ## <a name="parameters"></a>Parametry
 `ot`\
-[w] Wartość z [wyliczenia OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) reprezentujący typ pierwotnego do utworzenia.
+podczas Wartość z wyliczenia [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) reprezentująca typ elementu podstawowego do utworzenia.
 
 `ppObject`\
-[na zewnątrz] Zwraca [obiekt IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzony obiekt.
+określoną Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzony obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje obiekt pierwotny, który jest parametrem funkcji, która jest reprezentowana przez interfejs [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md) Na przykład jeśli ciąg wyrażenia jest "myString(5)", ta metoda będzie używana do tworzenia obiektu reprezentującego całkowitą 5.
+ Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje obiekt pierwotny, który jest parametrem funkcji reprezentowanej przez interfejs [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) . Na przykład jeśli ciąg wyrażenia to "ciąg (5)", ta metoda zostanie użyta do utworzenia obiektu reprezentującego liczbę całkowitą 5.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

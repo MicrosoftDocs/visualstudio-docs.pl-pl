@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie generatorów jednoplikowych | Dokumentacja firmy Microsoft
+title: Rejestrowanie generatorów pojedynczych plików | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6afcd708ac50a46ceb3359f0d2c0821e3b788f47
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696101"
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatorów jednoplikowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], musisz się zarejestrować go tak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tworzenia jego instancji i kojarzy ją z określonego typu projektu.  
+Aby udostępnić niestandardowe narzędzie w programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , należy je zarejestrować, aby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] można było je utworzyć i kojarzyć z określonym typem projektu.  
   
 ### <a name="to-register-a-custom-tool"></a>Aby zarejestrować narzędzie niestandardowe  
   
-1. Zarejestruj to narzędzie niestandardowe biblioteki DLL w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rejestru lokalnego lub w kluczu HKEY_CLASSES_ROOT rejestru systemu.  
+1. Zarejestruj bibliotekę DLL narzędzia niestandardowego w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rejestrze lokalnym lub w rejestrze systemowym w obszarze HKEY_CLASSES_ROOT.  
   
-     Na przykład poniżej przedstawiono informacje o rejestracji dla zarządzanych MSDataSetGenerator narzędzie niestandardowe, który jest dostarczany z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
+     Na przykład poniżej przedstawiono informacje o rejestracji zarządzanego narzędzia niestandardowego MSDataSetGenerator, które zawiera [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] :  
   
     ```  
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]  
@@ -38,24 +38,24 @@ Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../includes/
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2. Utwórz klucz rejestru w żądany [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gałęzi w obszarze generatorów\\*GUID* gdzie *GUID* jest identyfikator GUID jest definiowany przez system projektu określonego języka lub usługi. Nazwa klucza staje się nazwą programową Twojego niestandardowego narzędzia. Klucz niestandardowe narzędzie ma następujące wartości:  
+2. Utwórz klucz rejestru w odpowiedniej gałęzi, w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obszarze Identyfikator GUID generatorów \\ *GUID* , gdzie *GUID* jest identyfikatorem GUID zdefiniowanym przez system lub usługę projektu określonego języka. Nazwa klucza jest programowaną nazwą narzędzia niestandardowego. Klucz niestandardowego narzędzia ma następujące wartości:  
   
     - (Domyślnie)  
   
-         Opcjonalna. Zawiera przyjazny dla użytkownika opis niestandardowego narzędzia. Ten parametr jest opcjonalny, ale zalecane.  
+         Opcjonalny. Zapewnia przyjazny dla użytkownika opis niestandardowego narzędzia. Ten parametr jest opcjonalny, ale zalecany.  
   
-    - CLSID  
+    - Identyfikator  
   
-         Wymagana. Określa identyfikator biblioteki klas składnika modelu COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Wymagany. Określa identyfikator biblioteki klas składnika COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .  
   
     - GeneratesDesignTimeSource  
   
-         Wymagana. Wskazuje, czy typy plikom, które są generowane przez niestandardowe narzędzie były dostępne dla projektantów wizualnych. Wartość tego parametru musi być 0 (zero) typy nie są dostępne do projektantów wizualnych lub 1 (co) dla typów dostępnych projektantów wizualnych.  
+         Wymagany. Wskazuje, czy typy z plików utworzonych przez to narzędzie niestandardowe są udostępniane projektantom wizualizacji. Wartość tego parametru musi być równa (zero) 0 dla typów niedostępnych dla projektantów wizualizacji lub (jeden) 1 dla typów dostępnych dla projektantów wizualizacji.  
   
     > [!NOTE]
-    > Należy zarejestrować niestandardowe narzędzie osobno dla każdego języka, dla którego chcesz narzędzie niestandardowe, które mają być dostępne.  
+    > Narzędzie niestandardowe należy zarejestrować osobno dla każdego języka, dla którego ma być dostępne narzędzie niestandardowe.  
   
-     Na przykład MSDataSetGenerator rejestruje się jeden raz dla każdego języka:  
+     Na przykład MSDataSetGenerator rejestruje się osobno dla każdego języka:  
   
     ```  
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]  
@@ -76,7 +76,7 @@ Aby udostępnić niestandardowego narzędzia w [!INCLUDE[vsprvs](../../includes/
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
- [Implementowanie generatorów jednoplikowych](../../extensibility/internals/implementing-single-file-generators.md)   
- [Określanie Namespace domyślnego projektu](../../misc/determining-the-default-namespace-of-a-project.md)   
- [Udostępnianie typów projektantów wizualnych](../../extensibility/internals/exposing-types-to-visual-designers.md)   
+ [Implementowanie generatorów pojedynczych plików](../../extensibility/internals/implementing-single-file-generators.md)   
+ [Określanie domyślnej przestrzeni nazw projektu](../../misc/determining-the-default-namespace-of-a-project.md)   
+ [Uwidacznianie typów dla projektantów wizualizacji](../../extensibility/internals/exposing-types-to-visual-designers.md)   
  [Wprowadzenie do obiektu BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

@@ -1,5 +1,5 @@
 ---
-title: Element SDKReference (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: SDKReference, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700162"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference, element (szablony Visual Studio)
-Określa, że szablon elementu używa odwołania do sdk.
+Określa, że szablon elementu używa odwołania do zestawu SDK.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,13 +42,13 @@ Określa, że szablon elementu używa odwołania do sdk.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Tematy pomocy](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do złożenia, które należy dodać po dodaniu elementu do projektu.|
+|[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu, które ma zostać dodane, gdy element zostanie dodany do projektu.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
 ## <a name="remarks"></a>Uwagi
- Ten tekst określa odwołanie do sdk, aby dodać do projektu, gdy szablon elementu jest tworzone.
+ Ten tekst określa odwołanie do zestawu SDK, które ma zostać dodane do projektu po utworzeniu wystąpienia szablonu elementu.
 
 ```xml
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">

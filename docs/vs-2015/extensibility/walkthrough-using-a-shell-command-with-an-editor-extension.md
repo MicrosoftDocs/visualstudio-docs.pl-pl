@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Używanie polecenia programu PowerShell z rozszerzeniem edytora | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Używanie polecenia powłoki z rozszerzeniem edytora | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,109 +11,109 @@ caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0312d98dd6959cb5d67d593c4bf0af39fa1889eb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65693364"
 ---
-# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Przewodnik: Używanie polecenia powłoki z rozszerzeniem edytora
+# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Przewodnik: używanie polecenia programu PowerShell z rozszerzeniem edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora. W tym instruktażu przedstawiono sposób dodawania zakończeń widoku tekstu w edytorze za pomocą wywołania polecenia menu.  
+Z pakietu VSPackage można dodać do edytora funkcje, takie jak polecenia menu. W tym instruktażu przedstawiono sposób dodawania definiowania układu do widoku tekstu w edytorze przez wywoływanie polecenia menu.  
   
- W tym przewodniku zademonstrowano użycie pakietu VSPackage wraz z część Managed Extensibility Framework (MEF). Należy użyć pakietu VSPackage, aby zarejestrować polecenia menu z powłoki programu Visual Studio, a następnie użyć polecenia, należy uzyskać dostęp do części składnik MEF.  
+ W tym instruktażu przedstawiono użycie pakietu VSPackage wraz z częścią składnika Managed Extensibility Framework (MEF). Musisz użyć pakietu VSPackage, aby zarejestrować polecenie menu za pomocą powłoki programu Visual Studio, i można użyć polecenia, aby uzyskać dostęp do części składnika MEF.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu  
- Tworzenie pakietu VSPackage, który umieszcza polecenie menu o nazwie **Dodaj zakończeń** na **narzędzia** menu.  
+ Utwórz element pakietu VSPackage, który umieszcza polecenie menu o nazwie **Dodaj moduł definiowania** układu w menu **Narzędzia** .  
   
-1. Utwórz projekt VSIX języka C# o nazwie `MenuCommandTest`i Dodaj nazwę polecenia niestandardowego szablonu elementu **AddAdornment**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Utwórz projekt w języku C# o nazwie `MenuCommandTest` i Dodaj niestandardową nazwę szablonu elementu polecenia **autodefiniowania**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2. Rozwiązanie o nazwie MenuCommandTest jest otwarty. Plik MenuCommandTestPackage zawiera kod, który tworzy polecenie menu i umieszcza go w **narzędzia** menu. W tym momencie polecenia powoduje po prostu okno komunikatu, który będzie wyświetlany. Dalszych krokach pokazano, jak można zmienić, aby wyświetlić zakończeń komentarz.  
+2. Zostanie otwarte rozwiązanie o nazwie MenuCommandTest. Plik MenuCommandTestPackage ma kod, który tworzy polecenie menu i umieszcza je w menu **Narzędzia** . W tym momencie polecenie powoduje tylko wyświetlenie okna komunikatu. W dalszych krokach pokazano, jak zmienić ten element, aby wyświetlić jego oznaczenie.  
   
-3. Otwórz plik source.extension.vsixmanifest w edytorze manifestu VSIX. `Assets` Karty powinny mieć wiersz dla Microsoft.VisualStudio.VsPackage o nazwie MenuCommandTest.  
+3. Otwórz plik source. Extension. vsixmanifest w edytorze manifestu VSIX. `Assets`Karta powinna mieć wiersz dla elementu Microsoft. VisualStudio. pakietu VSPackage o nazwie MenuCommandTest.  
   
-4. Zapisz i zamknij plik Source.extension.vsixmanifest.  
+4. Zapisz i zamknij plik source. Extension. vsixmanifest.  
   
 ## <a name="adding-a-mef-extension-to-the-command-extension"></a>Dodawanie rozszerzenia MEF do rozszerzenia polecenia  
   
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy projekt**. W **Dodaj nowy projekt** okno dialogowe, kliknij przycisk **rozszerzalności** w obszarze **Visual C#**, następnie **projekt VSIX**. Nadaj projektowi nazwę `CommentAdornmentTest`.  
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, kliknij polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**. W oknie dialogowym **Dodaj nowy projekt** kliknij pozycję **rozszerzalność** w obszarze **Visual C#**, następnie **Projekt VSIX**. Nadaj nazwę projektowi `CommentAdornmentTest` .  
   
-2. Ponieważ ten projekt będzie współpracować z zestawu pakietu VSPackage silnej nazwy, należy podpisać zestaw. Można użyć ponownie już utworzony dla zestawu pakietu VSPackage plik klucza.  
+2. Ponieważ ten projekt będzie współpracujący z zestawem pakietu VSPackage o silnej nazwie, należy podpisać zestaw. Można ponownie użyć pliku klucza, który został już utworzony dla zestawu pakietu VSPackage.  
   
-    1. Otwórz właściwości projektu i wybierz **podpisywanie** kartę.  
+    1. Otwórz właściwości projektu i wybierz kartę **podpisywanie** .  
   
-    2. Wybierz **Podpisz zestaw**.  
+    2. Wybierz pozycję **podpisz zestaw**.  
   
-    3. W obszarze **wybierz plik klucza o silnej nazwie**, wybierz plik Key.snk, który został wygenerowany dla zestawu MenuCommandTest.  
+    3. W obszarze **Wybierz plik klucza o silnej nazwie**wybierz plik Key. snk, który został wygenerowany dla zestawu MenuCommandTest.  
   
-## <a name="referring-to-the-mef-extension-in-the-vspackage-project"></a>Odwołujące się do rozszerzenia MEF projektu pakietu VSPackage  
- Ponieważ dodajesz składnik MEF do pakietu VSPackage, należy określić obu rodzajów zasobów w manifeście.  
+## <a name="referring-to-the-mef-extension-in-the-vspackage-project"></a>Odwoływanie się do rozszerzenia MEF w projekcie pakietu VSPackage  
+ Ponieważ dodajesz składnik MEF do pakietu VSPackage, należy określić oba rodzaje zasobów w manifeście.  
   
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
-#### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Aby odwołać się do składnik listy MEF projektu pakietu VSPackage  
+#### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Aby odwołać się do składnika MEF w projekcie pakietu VSPackage  
   
-1. W projekcie MenuCommandTest Otwórz plik source.extension.vsixmanifest w edytorze manifestu VSIX.  
+1. W projekcie MenuCommandTest Otwórz plik source. Extension. vsixmanifest w edytorze manifestu VSIX.  
   
-2. Na **zasoby** kliknij pozycję **New**.  
+2. Na karcie **zasoby** kliknij pozycję **Nowy**.  
   
-3. W **typu** wybierz **Microsoft.VisualStudio.MefComponent**.  
+3. Na liście **Typ** wybierz **Microsoft. VisualStudio. MefComponent**.  
   
-4. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
+4. Z listy **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.  
   
-5. W **projektu** wybierz **CommentAdornmentTest**.  
+5. Na liście **projekt** wybierz pozycję **CommentAdornmentTest**.  
   
-6. Zapisz i zamknij plik source.extension.vsixmanifest.  
+6. Zapisz i zamknij plik source. Extension. vsixmanifest.  
   
 7. Upewnij się, że projekt MenuCommandTest ma odwołanie do projektu CommentAdornmentTest.  
   
-8. W projekcie CommentAdornmentTest Ustaw projekt do utworzenia zestawu. W **Eksploratora rozwiązań**, wybierz projekt i poszukaj w **właściwości** okno **danych wyjściowych kompilacji kopiowania do OutputDirectory** właściwości i ustaw ją na **true**.  
+8. W projekcie CommentAdornmentTest Ustaw projekt, aby utworzyć zestaw. W **Eksplorator rozwiązań**wybierz projekt i poszukaj w oknie **Właściwości** właściwości **Kopiuj dane wyjściowe kompilacji do OutputDirectory** i ustaw dla niej **wartość true**.  
   
-## <a name="defining-a-comment-adornment"></a>Definiowanie zakończeń komentarz  
- Zakończeń komentarza, sama składa się z <xref:Microsoft.VisualStudio.Text.ITrackingSpan> który śledzi zaznaczonego tekstu, a niektóre ciągi, które reprezentują autor i opis tekstu.  
+## <a name="defining-a-comment-adornment"></a>Definiowanie definiowania układu komentarzy  
+ Samo oznaczenie komentarza składa się ze <xref:Microsoft.VisualStudio.Text.ITrackingSpan> śledzenia zaznaczonego tekstu, a niektóre ciągi reprezentujące autora i opis tekstu.  
   
-#### <a name="to-define-a-comment-adornment"></a>Aby zdefiniować zakończeń komentarz  
+#### <a name="to-define-a-comment-adornment"></a>Aby zdefiniować autodefiniowanie komentarza  
   
-1. W projekcie CommentAdornmentTest, Dodaj nowy plik klasy, a następnie nadaj mu nazwę `CommentAdornment`.  
+1. W projekcie CommentAdornmentTest Dodaj nowy plik klasy i nadaj mu nazwę `CommentAdornment` .  
   
 2. Dodaj następujące odwołania:  
   
-    1. Microsoft.VisualStudio.CoreUtility  
+    1. Microsoft. VisualStudio. CoreUtility  
   
-    2. Microsoft.VisualStudio.Text.Data  
+    2. Microsoft. VisualStudio. Text. Data  
   
-    3. Microsoft.VisualStudio.Text.Logic  
+    3. Microsoft. VisualStudio. Text. Logic  
   
-    4. Microsoft.VisualStudio.Text.UI  
+    4. Microsoft. VisualStudio. Text. UI  
   
-    5. Microsoft.VisualStudio.Text.UI.Wpf  
+    5. Microsoft. VisualStudio. Text. UI. WPF  
   
-    6. System.ComponentModel.Composition  
+    6. System. ComponentModel. kompozycji  
   
-    7. PresentationCore  
+    7. 'Presentationcore  
   
-    8. PresentationFramework  
+    8. Platformie docelowej  
   
-    9. WindowsBase  
+    9. 'Windowsbase  
   
-3. Dodaj następujący kod `using` instrukcji.  
+3. Dodaj następującą `using` instrukcję.  
   
     ```vb  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-4. Ten plik powinien zawierać klasę o nazwie `CommentAdornment`.  
+4. Plik powinien zawierać klasę o nazwie `CommentAdornment` .  
   
     ```  
     internal class CommentAdornment  
     ```  
   
-5. Dodaj trzy pola `CommentAdornment` klasy dla <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, autor i opis.  
+5. Dodaj trzy pola do `CommentAdornment` klasy dla <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , autora i opis.  
   
     ```csharp  
     public readonly ITrackingSpan Span;  
@@ -121,7 +121,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     public readonly string Text;  
     ```  
   
-6. Dodaj Konstruktor, który inicjuje pola.  
+6. Dodaj Konstruktor inicjujący pola.  
   
     ```csharp  
     public CommentAdornment(SnapshotSpan span, string author, string text)  
@@ -132,12 +132,12 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-## <a name="creating-a-visual-element-for-the-adornment"></a>Tworzenie elementu wizualnego dla zakończeń  
- Element wizualny należy również zdefiniować dla Twojego zakończeń. W ramach tego przewodnika należy zdefiniować formant, który dziedziczy z klasy Windows Presentation Foundation (WPF) <xref:System.Windows.Controls.Canvas>.  
+## <a name="creating-a-visual-element-for-the-adornment"></a>Tworzenie elementu wizualnego dla definiowania układu  
+ Należy również zdefiniować element wizualny dla definiowania układu. W tym instruktażu Zdefiniuj kontrolkę, która dziedziczy z klasy Windows Presentation Foundation (WPF) <xref:System.Windows.Controls.Canvas> .  
   
-1. Utwórz klasę w projekcie CommentAdornmentTest i nadaj mu nazwę `CommentBlock`.  
+1. Utwórz klasę w projekcie CommentAdornmentTest i nadaj jej nazwę `CommentBlock` .  
   
-2. Dodaj następujący kod `using` instrukcji.  
+2. Dodaj następujące instrukcje `using`.  
   
     ```csharp  
     using Microsoft.VisualStudio.Text;  
@@ -151,14 +151,14 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3. Wprowadź `CommentBlock` klasa dziedziczy <xref:System.Windows.Controls.Canvas>.  
+3. `CommentBlock`Dziedzicz z klasy <xref:System.Windows.Controls.Canvas> .  
   
     ```csharp  
     internal class CommentBlock : Canvas  
     { }  
     ```  
   
-4. Dodaj niektóre pola prywatne, aby zdefiniować visual aspektów zakończeń.  
+4. Dodaj pola prywatne, aby zdefiniować wizualne aspekty definiowania układu.  
   
     ```csharp  
     private Geometry textGeometry;  
@@ -168,7 +168,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     private static Pen dashPen;  
     ```  
   
-5. Dodaj Konstruktor, który definiuje zakończeń komentarz, a następnie dodaje odpowiedni tekst.  
+5. Dodaj konstruktora, który definiuje oznaczenie i dodaje odpowiedni tekst.  
   
     ```csharp  
     public CommentBlock(double textRightEdge, double viewRightEdge,   
@@ -237,7 +237,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-6. Także implementować <xref:System.Windows.Controls.Panel.OnRender%2A> program obsługi zdarzeń, który rysuje zakończeń.  
+6. Zaimplementuj również <xref:System.Windows.Controls.Panel.OnRender%2A> procedurę obsługi zdarzeń, która rysuje definiowania układu.  
   
     ```csharp  
     protected override void OnRender(DrawingContext dc)  
@@ -256,12 +256,12 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-## <a name="adding-an-iwpftextviewcreationlistener"></a>Dodawanie IWpfTextViewCreationListener  
- <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> Jest używanego do nasłuchiwania, aby wyświetlić zdarzenia tworzenia część MEF.  
+## <a name="adding-an-iwpftextviewcreationlistener"></a>Dodawanie elementu IWpfTextViewCreationListener  
+ <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>Jest częścią składnika MEF, która służy do nasłuchiwania zdarzeń tworzenia.  
   
-1. Dodaj plik klasy do projektu CommentAdornmentTest i nadaj mu nazwę `Connector`.  
+1. Dodaj plik klasy do projektu CommentAdornmentTest i nadaj mu nazwę `Connector` .  
   
-2. Dodaj następujący kod `using` instrukcji.  
+2. Dodaj następujące instrukcje `using`.  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -269,12 +269,12 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3. Deklarowanie klasy, która implementuje <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>i wyeksportuj go z <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> z "text" i <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> z <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. Atrybut typu zawartości określa typ zawartości, do której stosują się składnika. Typ tekstu jest typem podstawowym dla wszystkich typów plików innego niż binarny. W związku z tym prawie każdy widok tekstu, który jest tworzony będzie tego typu. Atrybut roli w widoku tekstu określa rodzaj widoku tekstu, którego dotyczy ten składnik. Role widoku tekstu dokumentu zwykle Pokaż tekst, który składa się z wierszy i jest przechowywany w pliku.  
+3. Zadeklaruj klasę, która implementuje <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> , i wyeksportuj ją z elementu <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" i <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> z <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> . Atrybut typu zawartości określa rodzaj zawartości, do której stosuje się składnik. Typ tekstu jest typem podstawowym dla wszystkich typów plików Niebinarnych. W związku z tym niemal każdy utworzony widok tekstowy będzie miał ten typ. Atrybut roli widok tekstu określa rodzaj widoku tekstu, do którego ma zastosowanie składnik. Role widoku tekstu dokumentu zwykle pokazują tekst składający się z wierszy i są przechowywane w pliku.  
   
      [!code-csharp[VSSDKMenuCommandTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/connector.cs#11)]
      [!code-vb[VSSDKMenuCommandTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/connector.vb#11)]  
   
-4. Implementowanie <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że wywołuje statyczną `Create()` zdarzenia `CommentAdornmentManager`.  
+4. Zaimplementuj <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, aby wywołuje statyczne `Create()` zdarzenie `CommentAdornmentManager` .  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -283,7 +283,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-5. Dodaj metodę, którego można użyć w celu wykonania tego polecenia.  
+5. Dodaj metodę, której można użyć do wykonania polecenia.  
   
     ```csharp  
     static public void Execute(IWpfTextViewHost host)  
@@ -305,12 +305,12 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-## <a name="defining-an-adornment-layer"></a>Definiowanie zakończeń warstwy  
- Aby dodać nowe zakończeń, należy zdefiniować warstwy zakończeń.  
+## <a name="defining-an-adornment-layer"></a>Definiowanie warstwy definiowania układu  
+ Aby dodać nowy moduł definiowania układu, należy zdefiniować warstwę definiowania układu.  
   
-#### <a name="to-define-an-adornment-layer"></a>Aby zdefiniować warstwy zakończeń  
+#### <a name="to-define-an-adornment-layer"></a>Aby zdefiniować warstwę definiowania układu  
   
-1. W `Connector` klasy, Zadeklaruj publiczne pole o typie <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>i wyeksportuj go z <xref:Microsoft.VisualStudio.Utilities.NameAttribute> , który określa unikatową nazwę warstwy zakończeń i <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> definiuje relację porządku osi Z tą warstwą zakończeń w innym tekście Wyświetl warstwy (tekst, karetki i wyboru).  
+1. W `Connector` klasie, zadeklaruj pole publiczne typu <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition> i wyeksportuj je przy użyciu <xref:Microsoft.VisualStudio.Utilities.NameAttribute> , która określa unikatową nazwę warstwy zakończenia i <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> definiuje relację z kolejnością z tej warstwy zakończenia do innych warstw widoku tekstu (tekst, karetka i zaznaczenie).  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -320,12 +320,12 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
   
     ```  
   
-## <a name="providing-comment-adornments"></a>Zapewnianie zakończeń komentarz  
- Podczas definiowania zakończeń także implementować dostawcy zakończeń komentarz i Menedżera zakończeń komentarz. Dostawca zakończeń komentarz przechowuje listę zakończeń komentarza, nasłuchuje <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> zdarzenia bazowego bufor tekstowy i usuwa komentarz zakończeń, gdy tekst źródłowy zostanie usunięty.  
+## <a name="providing-comment-adornments"></a>Udostępnianie autouzupełniania komentarzy  
+ Po zdefiniowaniu definiowania układu, należy również zaimplementować dostawcę definiowania układu i komentarza. Dostawca definiowania monitów zachowuje listę elementów definiowania komentarzy, nasłuchuje <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> zdarzeń na źródłowym buforze tekstu i usuwa elementy definiowania komentarzy po usunięciu podstawowego tekstu.  
   
-1. Dodaj nowy plik klasy do projektu CommentAdornmentTest i nadaj mu nazwę `CommentAdornmentProvider`.  
+1. Dodaj nowy plik klasy do projektu CommentAdornmentTest i nadaj mu nazwę `CommentAdornmentProvider` .  
   
-2. Dodaj następujący kod `using` instrukcji.  
+2. Dodaj następujące instrukcje `using`.  
   
     ```csharp  
     using System;  
@@ -335,7 +335,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     using Microsoft.VisualStudio.Text.Editor;  
     ```  
   
-3. Dodaj klasę o nazwie `CommentAdornmentProvider`.  
+3. Dodaj klasę o nazwie `CommentAdornmentProvider` .  
   
     ```csharp  
     internal class CommentAdornmentProvider  
@@ -343,7 +343,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-4. Dodaj pola prywatne w buforze tekstu i lista zakończeń komentarz związane z buforu.  
+4. Dodaj pola prywatne dla bufora tekstu oraz listę elementów definiowania komentarza związanych z buforem.  
   
     ```csharp  
     private ITextBuffer buffer;  
@@ -351,7 +351,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
   
     ```  
   
-5. Dodaj Konstruktor do `CommentAdornmentProvider`. Ten konstruktor powinien mieć dostęp prywatny, ponieważ dostawca jest tworzone przez `Create()` metody. Dodaje konstruktora `OnBufferChanged` procedurę obsługi zdarzeń do <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> zdarzeń.  
+5. Dodaj Konstruktor dla `CommentAdornmentProvider` . Ten konstruktor powinien mieć dostęp prywatny, ponieważ dostawca jest skonkretyzowany przez `Create()` metodę. Konstruktor dodaje `OnBufferChanged` do zdarzenia procedurę obsługi zdarzeń <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> .  
   
     ```csharp  
     private CommentAdornmentProvider(ITextBuffer buffer)  
@@ -363,7 +363,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
   
     ```  
   
-6. Dodaj `Create()` metody.  
+6. Dodaj `Create()` metodę.  
   
     ```csharp  
     public static CommentAdornmentProvider Create(IWpfTextView view)  
@@ -373,7 +373,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
   
     ```  
   
-7. Dodaj `Detach()` metody.  
+7. Dodaj `Detach()` metodę.  
   
     ```csharp  
     public void Detach()  
@@ -387,7 +387,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-8. Dodaj `OnBufferChanged` programu obsługi zdarzeń.  
+8. Dodaj `OnBufferChanged` program obsługi zdarzeń.  
   
     ```csharp  
     private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
@@ -413,13 +413,13 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
      [!code-csharp[VSSDKMenuCommandTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentprovider.cs#21)]
      [!code-vb[VSSDKMenuCommandTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentprovider.vb#21)]  
   
-9. Dodaj deklarację dla `CommentsChanged` zdarzeń.  
+9. Dodaj deklarację dla `CommentsChanged` zdarzenia.  
   
     ```csharp  
     public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
     ```  
   
-10. Utwórz `Add()` metody w celu dodania zakończeń.  
+10. Utwórz `Add()` metodę dodawania definiowania układu.  
   
     ```csharp  
     public void Add(SnapshotSpan span, string author, string text)  
@@ -445,7 +445,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
   
     ```  
   
-11. Dodaj `RemoveComments()` metody.  
+11. Dodaj `RemoveComments()` metodę.  
   
     ```csharp  
     public void RemoveComments(SnapshotSpan span)  
@@ -472,7 +472,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-12. Dodaj `GetComments()` metodę zwracającą wszystkie komentarze w zakresie danej migawki.  
+12. Dodaj `GetComments()` metodę, która zwraca wszystkie komentarze w danym przedziale.  
   
     ```csharp  
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)  
@@ -488,7 +488,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-13. Dodaj klasę o nazwie `CommentsChangedEventArgs`, wykonując następujące czynności.  
+13. Dodaj klasę o nazwie `CommentsChangedEventArgs` w następujący sposób.  
   
     ```csharp  
     internal class CommentsChangedEventArgs : EventArgs  
@@ -505,12 +505,12 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-## <a name="managing-comment-adornments"></a>Zarządzanie zakończeń komentarz  
- Menedżer zakończeń komentarza tworzy zakończeń i dodaje go do warstwy zakończeń. Nasłuchuje on <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> i <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> zdarzenia, tak że można przenieść lub usunąć zakończeń. Nasłuchuje on również do `CommentsChanged` zdarzenia, które jest uruchamiane przez dostawcę zakończeń komentarza, gdy komentarze są dodawane lub usuwane.  
+## <a name="managing-comment-adornments"></a>Zarządzanie wydefiniowaniami komentarzy  
+ Menedżer definiowania układu komentarzy tworzy oznaczenie i dodaje je do warstwy definiowania układu. Nasłuchuje <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> zdarzeń i, <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> Aby umożliwić przeniesienie lub usunięcie modułu definiowania układu. Nasłuchuje również `CommentsChanged` zdarzenia, które jest wywoływane przez dostawcę definiowania układu, gdy Komentarze są dodawane lub usuwane.  
   
-1. Dodaj plik klasy do projektu CommentAdornmentTest i nadaj mu nazwę `CommentAdornmentManager`.  
+1. Dodaj plik klasy do projektu CommentAdornmentTest i nadaj mu nazwę `CommentAdornmentManager` .  
   
-2. Dodaj następujący kod `using` instrukcji.  
+2. Dodaj następujące instrukcje `using`.  
   
     ```csharp  
     using System;  
@@ -521,7 +521,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     using Microsoft.VisualStudio.Text.Formatting;  
     ```  
   
-3. Dodaj klasę o nazwie `CommentAdornmentManager`.  
+3. Dodaj klasę o nazwie `CommentAdornmentManager` .  
   
     ```csharp  
     internal class CommentAdornmentManager  
@@ -529,7 +529,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
         }  
     ```  
   
-4. Dodaj kilka pól prywatnych.  
+4. Dodaj niektóre pola prywatne.  
   
     ```csharp  
     private readonly IWpfTextView view;  
@@ -537,7 +537,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     private readonly CommentAdornmentProvider provider;  
     ```  
   
-5. Dodaj Konstruktor, który subskrybuje Menedżera <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> i <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> zdarzenia, a także `CommentsChanged` zdarzeń. Konstruktor nie jest prywatny, ponieważ Menedżer jest tworzone przez statyczną `Create()` metody.  
+5. Dodaj Konstruktor, który subskrybuje Menedżera do <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> zdarzeń i, a także `CommentsChanged` zdarzenia. Konstruktor jest prywatny, ponieważ Menedżer jest skonkretyzowany przez metodę statyczną `Create()` .  
   
     ```csharp  
     private CommentAdornmentManager(IWpfTextView view)  
@@ -553,7 +553,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-6. Dodaj `Create()` metody, która pobiera dostawcy lub co powoduje utworzenie, jeśli jest to wymagane.  
+6. Dodaj `Create()` metodę, która pobiera dostawcę lub tworzy ją, jeśli jest to wymagane.  
   
     ```csharp  
     public static CommentAdornmentManager Create(IWpfTextView view)  
@@ -562,7 +562,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-7. Dodaj `CommentsChanged` programu obsługi.  
+7. Dodaj `CommentsChanged` program obsługi.  
   
     ```csharp  
     private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
@@ -577,7 +577,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-8. Dodaj <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> programu obsługi.  
+8. Dodaj <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> program obsługi.  
   
     ```csharp  
     private void OnClosed(object sender, EventArgs e)  
@@ -588,7 +588,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-9. Dodaj <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> programu obsługi.  
+9. Dodaj <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> program obsługi.  
   
     ```csharp  
     private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
@@ -619,23 +619,23 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-10. Dodaj metody prywatnej, który rysuje komentarz.  
+10. Dodaj prywatną metodę, która rysuje komentarz.  
   
      [!code-csharp[VSSDKMenuCommandTest#35](../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentmanager.cs#35)]
      [!code-vb[VSSDKMenuCommandTest#35](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentmanager.vb#35)]  
   
-## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>Dodawanie zakończeń komentarz przy użyciu polecenia Menu  
- To polecenie umożliwia tworzenie zakończeń komentarz poprzez implementację `MenuItemCallback` metoda pakietu VSPackage.  
+## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>Używanie polecenia menu do dodawania definiowania układu komentarzy  
+ Możesz użyć polecenia menu, aby utworzyć znakowanie komentarza przez implementację `MenuItemCallback` metody pakietu VSPackage.  
   
 1. Dodaj następujące odwołania do projektu MenuCommandTest:  
   
-    - Microsoft.VisualStudio.TextManager.Interop  
+    - Microsoft. VisualStudio. TextManager. Interop  
   
-    - Microsoft.VisualStudio.Editor  
+    - Microsoft. VisualStudio. Editor  
   
-    - Microsoft.VisualStudio.Text.UI.Wpf  
+    - Microsoft. VisualStudio. Text. UI. WPF  
   
-2. Otwórz plik AddAdornment.cs i Dodaj następujący kod `using` instrukcji.  
+2. Otwórz plik AddAdornment.cs i Dodaj następujące `using` instrukcje.  
   
     ```csharp  
     using Microsoft.VisualStudio.TextManager.Interop;  
@@ -644,7 +644,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     using CommentAdornmentTest;  
     ```  
   
-3. Usuń metodę ShowMessageBox() i Dodaj następujący program obsługi poleceń.  
+3. Usuń metodę ShowMessageBox () i Dodaj następującą procedurę obsługi poleceń.  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -652,7 +652,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-4. Dodaj kod, aby uzyskać widok aktywny. Należy uzyskać `SVsTextManager` powłoki programu Visual Studio można pobrać aktywnej `IVsTextView`.  
+4. Dodaj kod, aby uzyskać aktywny widok. `SVsTextManager`Aby uzyskać aktywną wersję programu Visual Studio Shell `IVsTextView` .  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -664,7 +664,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-5. Ten widok tekstu w przypadku wystąpienia widoku edytora tekstu, należy rzutować go na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> interfejsu, a następnie <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> i jego skojarzone <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Użyj <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> do wywołania `Connector.Execute()` metody, która pobiera dostawcę zakończeń komentarz, a następnie dodaje zakończeń. Program obsługi poleceń powinna teraz wyglądać następująco:  
+5. Jeśli ten widok tekstu jest wystąpieniem widoku tekstu edytora, można go rzutować do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> interfejsu, a następnie pobrać <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> i skojarzyć z nim <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> . Użyj, <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Aby wywołać `Connector.Execute()` metodę, która pobiera dostawcę Autowypełniania komentarzy i dodaje moduł definiowania układu. Procedura obsługi poleceń powinna teraz wyglądać następująco:  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -688,7 +688,7 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-6. Ustaw metodę AddAdornmentHandler jako procedura obsługi polecenia AddAdornment w Konstruktorze AddAdornment.  
+6. Ustaw metodę AddAdornmentHandler jako procedurę obsługi dla polecenia wypełniania w konstruktorze pre.  
   
     ```csharp  
     private AddAdornment(Package package)  
@@ -711,13 +711,13 @@ Z pakietu VSPackage możesz dodać funkcje, takie jak polecenia menu do edytora.
     }  
     ```  
   
-## <a name="building-and-testing-the-code"></a>Tworzenie i testowanie kodu  
+## <a name="building-and-testing-the-code"></a>Kompilowanie i testowanie kodu  
   
-1. Skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
+1. Skompiluj rozwiązanie i Rozpocznij debugowanie. Powinno zostać wyświetlone wystąpienie eksperymentalne.  
   
-2. Utwórz plik tekstowy. Wpisz jakiś tekst, a następnie wybierz ją.  
+2. Utwórz plik tekstowy. Wpisz jakiś tekst, a następnie wybierz go.  
   
-3. Na **narzędzia** menu, kliknij przycisk **wywołania Dodaj zakończeń**. Dymek powinien być wyświetlany po prawej stronie okna tekstowego i może zawierać tekst, który przypomina następujący tekst.  
+3. W menu **Narzędzia** kliknij polecenie **Wywołaj Dodawanie definiowania**układu. Dymek powinien być wyświetlany po prawej stronie okna tekstowego i powinien zawierać tekst podobny do poniższego.  
   
      YourUserName  
   
