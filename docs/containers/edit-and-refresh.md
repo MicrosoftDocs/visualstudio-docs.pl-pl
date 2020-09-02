@@ -10,10 +10,10 @@ ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 26562268167abdfc5ee643618ec1610da231f9f0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283167"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
@@ -44,7 +44,7 @@ Aby uruchomić kontenery platformy Docker lokalnie, musisz mieć lokalnego klien
 
 Kontenery platformy Docker są dostępne dla projektów .NET Framework i .NET Core. Przyjrzyjmy się dwóm przykładom. Najpierw Spójrzmy na aplikację internetową platformy .NET Core. Następnie Przyjrzyjmy się .NET Framework aplikacji konsolowej.
 
-## <a name="create-a-web-app"></a>Tworzenie aplikacji internetowej
+## <a name="create-a-web-app"></a>tworzenie aplikacji internetowej
 
 Jeśli masz projekt i dodano obsługę platformy Docker zgodnie z opisem w sekcji [Przegląd](overview.md), Pomiń tę sekcję.
 

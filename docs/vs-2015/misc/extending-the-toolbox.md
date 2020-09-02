@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie przybornika | Dokumentacja firmy Microsoft
+title: Rozszerzanie przybornika | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,37 +11,37 @@ ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
 ms.openlocfilehash: ddf67fba3ae603dbd31d4628c61a6f14cc2441c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686934"
 ---
 # <a name="extending-the-toolbox"></a>Rozszerzanie przybornika
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Przybornika** zawiera kolekcję obiektów, które zapewniać funkcje w edytorach i projektantach za pośrednictwem mechanizmu przeciągania i upuszczania środowiska IDE.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Przybornik** zawiera kolekcję obiektów, które zapewniają funkcjonalność dla edytorów i projektantów za pomocą mechanizmu przeciągania i upuszczania w środowisku IDE.  
   
- Istnieją dwa podstawowe sposoby, w których pakietu VSPackage współpracuje z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **przybornika**:  
+ Istnieją dwa podstawowe sposoby, w których pakietu VSPackage współpracuje z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **przybornikiem**:  
   
-- Pakietu VSPackage można dodać nowe elementy danych i kontrole w celu **przybornika**.  
+- Pakietu VSPackage może dodawać nowe elementy danych i kontrolki do **przybornika**.  
   
-- Pakietu VSPackage może być docelowego lub konsumenta istniejących **przybornika** funkcji obsługi operacji przeciągania i upuszczania oraz konfigurowanie **przybornika**firmy wygląd.  
+- Pakietu VSPackage może być obiektem docelowym lub konsumentem istniejącej funkcji **przybornika** , obsługę operacji przeciągania i upuszczania oraz konfigurowania wyglądu **przybornika**.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Instrukcje: Tworzenie kontrolki przybornika korzystającej z Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  
- W tym artykule opisano się do tworzenia kontrolki przybornika za pomocą szablonu kontrolki formularzy Windows Forms przybornika.  
+ Zawiera opis tworzenia kontrolki przybornika przy użyciu szablonu kontrolki przybornika Windows Forms.  
   
  [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
- W tym artykule opisano się do tworzenia kontrolki przybornika za pomocą szablonu kontrolki przybornika WPF.  
+ Zawiera opis tworzenia kontrolki przybornika przy użyciu szablonu kontrolki przybornika WPF.  
   
- [Zarządzanie przybornika](../misc/managing-the-toolbox.md)  
- W tym artykule opisano, jak zarządzać pakietu VSPackage zawartość i wygląd **przybornika**.  
+ [Zarządzanie przybornikiem](../misc/managing-the-toolbox.md)  
+ Opisuje, w jaki sposób pakietu VSPackage może zarządzać zawartością i wyglądem **przybornika**.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Instrukcje: Zarządzanie oknem przybornika](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
- W tym artykule opisano sposób pracy z **przybornika** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE).  
+ Opisuje, jak korzystać z **przybornika** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanym środowisku programistycznym (IDE).  
   
- [Instrukcje: Kontrolowanie przybornika](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
- W tym artykule opisano sposób zarządzania **przybornika** za pomocą modelu programowania usługi automation.  
+ [Instrukcje: kontrolowanie przybornika](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
+ Opisuje sposób zarządzania **przybornikiem** przy użyciu modelu programowania automatyzacji.  
   
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Opis sposobu użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usługi, aby tworzyć elementy interfejsu użytkownika, które pasują reszty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Wyjaśnia, jak używać [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usług do tworzenia elementów interfejsu użytkownika, które pasują do pozostałej części [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .

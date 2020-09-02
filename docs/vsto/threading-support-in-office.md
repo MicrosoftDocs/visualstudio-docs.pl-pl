@@ -1,5 +1,5 @@
 ---
-title: Obsługa wątkowości w Office
+title: Obsługa wątkowości w pakiecie Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,63 +16,63 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978770"
 ---
-# <a name="threading-support-in-office"></a>Obsługa wątkowości w Office
-  Ten artykuł zawiera informacje dotyczące sposobu wątkowości jest obsługiwana w modelu obiektów programu Microsoft Office. Model obiektów programu pakietu Office nie jest bezpieczny dla wątków, ale można pracować z wieloma wątkami w rozwiązań pakietu Office. Aplikacje pakietu Office są serwery Component Object Model (COM). COM umożliwia klientom wywoływanie serwerów COM na dowolnych wątków. W przypadku serwerów COM, które nie są bezpieczne dla wątków COM zapewnia mechanizm serializacji współbieżnych wywołań, tak aby tylko jeden wątek logicznych jest wykonywana na serwerze w dowolnym momencie. Ten mechanizm jest określany jako model apartamentem jednowątkowym (przedziale STA). Ponieważ wywołania są serializowane, wywołań może być blokowany przez czas, gdy serwer jest zajęty lub obsługuje inne wywołania w wątku tła.
+# <a name="threading-support-in-office"></a>Obsługa wątkowości w pakiecie Office
+  Ten artykuł zawiera informacje dotyczące sposobu obsługi wątków w modelu obiektów Microsoft Office. Model obiektów pakietu Office nie jest bezpieczny wątkowo, ale możliwe jest współdziałanie z wieloma wątkami w rozwiązaniu pakietu Office. Aplikacje pakietu Office to serwery Component Object Model (COM). COM umożliwia klientom wywoływanie serwerów COM w dowolnych wątkach. W przypadku serwerów COM, które nie są bezpieczne wątkowo, COM udostępnia mechanizm serializowania współbieżnych wywołań, tak aby tylko jeden wątek logiczny był wykonywany na serwerze w dowolnym momencie. Ten mechanizm jest znany jako model jednowątkowego apartamentu (STA). Ponieważ wywołania są serializowane, obiekty wywołujące mogą być blokowane przez okres czasu, gdy serwer jest zajęty lub obsługuje inne wywołania w wątku w tle.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="knowledge-required-when-using-multiple-threads"></a>Wymagana wiedza, korzystając z wielu wątków
- Aby pracować z wielu wątków, musi mieć co najmniej podstawową wiedzę na temat następujących aspektów wielowątkowość:
+## <a name="knowledge-required-when-using-multiple-threads"></a>Wiedza jest wymagana w przypadku korzystania z wielu wątków
+ Aby współpracować z wieloma wątkami, musisz mieć co najmniej podstawową wiedzę na temat następujących aspektów wielowątkowości:
 
-- Windows API
+- Interfejsy API systemu Windows
 
-- COM pojęcia wielowątkowe
+- Koncepcje wielowątkowości COM
 
 - Współbieżność
 
 - Synchronizacja
 
-- marshaling
+- Marshaling
 
-  Aby uzyskać ogólne informacje o wielowątkowości, zobacz [zarządzana wątkowość](/dotnet/standard/threading/).
+  Aby uzyskać ogólne informacje na temat wielowątkowości, zobacz [zarządzane wątki](/dotnet/standard/threading/).
 
-  Office działa w komórce jednowątkowej głównego Zrozumienia konsekwencji tego umożliwia zrozumienie, jak wiele wątków za pomocą pakietu Office.
+  Pakiet Office działa w głównym STA. Zrozumienie konsekwencji tego sprawia, że można zrozumieć, jak używać wielu wątków z pakietem Office.
 
 ## <a name="basic-multithreading-scenario"></a>Podstawowy scenariusz wielowątkowości
- Kod w rozwiązaniach pakietu Office jest zawsze uruchamiany w głównym wątku interfejsu użytkownika. Możesz chcieć wygładzania nagłych wydajność aplikacji, uruchamiając oddzielne zadanie w wątku tła. Celem jest wykonać dwie czynności pozornie jednocześnie zamiast jednego zadania następuje z drugiej strony, co powinno spowodować wykonanie gładsze (głównym celem użycia wielu wątków). Na przykład Niewykluczone, że kod zdarzenia w głównym wątku interfejsu użytkownika programu Excel, a w wątku w tle mogą uruchomić zadanie, które zbiera dane z serwera i aktualizuje komórek w Interfejsie użytkownika programu Excel przy użyciu danych z serwera.
+ Kod w rozwiązaniach pakietu Office jest zawsze uruchamiany w głównym wątku interfejsu użytkownika. Możesz chcieć wygładzić wydajność aplikacji, uruchamiając oddzielne zadanie w wątku w tle. Celem jest wykonanie dwóch zadań jednocześnie, zamiast jednego zadania, po którym następuje inne działanie, które powinno spowodować wygładzenie wykonania (główny powód użycia wielu wątków). Na przykład kod zdarzenia może znajdować się w głównym wątku interfejsu użytkownika programu Excel i w wątku w tle można uruchomić zadanie, które zbiera dane z serwera i aktualizuje komórki w interfejsie użytkownika programu Excel danymi z serwera.
 
-## <a name="background-threads-that-call-into-the-office-object-model"></a>Wątków w tle, które wywołują modelu obiektów pakietu Office
- Gdy wątku w tle wywołuje aplikacji pakietu Office, wywołanie jest automatycznie organizowane przez granicę STA. Jednak nie ma żadnej gwarancji, że aplikacji pakietu Office może obsłużyć wywołania w czasie wątku w tle powoduje, że jej. Istnieje kilka możliwości:
+## <a name="background-threads-that-call-into-the-office-object-model"></a>Wątki w tle, które odwołują się do modelu obiektów pakietu Office
+ Gdy wątek w tle wykonuje wywołanie do aplikacji pakietu Office, wywołanie jest automatycznie organizowane na granicy STA. Nie ma jednak gwarancji, że aplikacja pakietu Office może obsłużyć wywołanie w momencie, gdy wątek w tle go tworzy. Istnieje kilka możliwości:
 
-1. Aplikacja pakietu Office muszą pompy komunikatów do wywołania mieć możliwość wprowadzenia. Jeśli wykonywanie operacji może potrwać obciążenie przetwarzania bez otrzymania to.
+1. Aplikacja pakietu Office musi wypompować komunikaty, aby można było wprowadzić tę możliwość. W przypadku intensywnego przetwarzania bez podania tego czasu może to potrwać.
 
-2. Jeśli inny wątek logicznej jest już apartament, nie można wprowadzić nowy wątek. Dzieje się tak często, gdy logiczne wątku przechodzi z aplikacji pakietu Office, a następnie udostępnia współużytkowane wywołanie apartamentu obiektu wywołującego. Aplikacja została zablokowana, oczekiwanie na wywołania do zwrócenia.
+2. Jeśli inny wątek logiczny jest już w Apartament, nie można wprowadzić nowego wątku. Zdarza się to często, gdy wątek logiczny wchodzi do aplikacji pakietu Office, a następnie wykonuje wywołanie zwrotne do apartamentu obiektu wywołującego. Aplikacja jest blokowana, ponieważ oczekuje na zwrócenie tego wywołania.
 
-3. Program Excel może być w stanie w taki sposób, że połączenie nie może obsługiwać natychmiast. Na przykład aplikacji pakietu Office może wyświetlanie modalne okno dialogowe.
+3. Program Excel może być w stanie, w którym nie może natychmiast obsłużyć połączenia przychodzącego. Na przykład aplikacja pakietu Office może wyświetlać modalne okno dialogowe.
 
-   Możliwości, 2 i 3, zapewnia COM [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) interfejsu. Jeśli serwer implementuje go, wszystkie wywołania wprowadź za pośrednictwem [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) metody. Możliwości 2 wywołania są automatycznie odrzucane. Możliwości 3 serwer może odrzucić wywołanie, w zależności od okoliczności. Jeśli wywołanie zostanie odrzucone, obiekt wywołujący należy zdecydować, co należy zrobić. Zwykle implementuje obiekt wywołujący [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter), w którym to przypadku będą otrzymywać powiadomienia o odrzucenie przez [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) metody.
+   W przypadku możliwości 2 i 3 model COM udostępnia interfejs [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) . Jeśli serwer implementuje ten proces, wszystkie wywołania są wprowadzane przez metodę [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) . W przypadku możliwości 2 wywołania są automatycznie odrzucane. W przypadku możliwości 3 serwer może odrzucić wywołanie, w zależności od okoliczności. Jeśli wywołanie zostanie odrzucone, obiekt wywołujący musi zdecydować, co należy zrobić. Zwykle obiekt wywołujący implementuje [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter), w takim przypadku można powiadomić o odrzuceniu przez metodę [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) .
 
-   Jednak w przypadku rozwiązania utworzone przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio, Usługa międzyoperacyjna modelu COM konwertuje wszystkie odrzucone wywołania <xref:System.Runtime.InteropServices.COMException> ("Filtr komunikatu wskazuje że aplikacja jest zajęta"). Zawsze, gdy należy wywołać model obiektu na wątku w tle muszą być gotowi do obsługi tego wyjątku. Zazwyczaj, który obejmuje podejmowaniu prób przez pewien czas, a następnie wyświetlając okna dialogowego. Jednak można również utworzyć wątku w tle jako STA, a następnie zarejestrować filtr komunikatu dla tego wątku do obsługi tej sprawy.
+   Jednak w przypadku rozwiązań utworzonych przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio, program COM Interop konwertuje wszystkie odrzucone wywołania na <xref:System.Runtime.InteropServices.COMException> ("Filtr komunikatów wskazuje, że aplikacja jest zajęta"). Za każdym razem, gdy nastąpi wywołanie modelu obiektu w wątku w tle, należy przygotować się do obsługi tego wyjątku. Zwykle, która obejmuje ponawianie próby przez określony czas, a następnie wyświetlenie okna dialogowego. Można jednak również utworzyć wątek w tle jako STA, a następnie zarejestrować filtr komunikatów dla tego wątku w celu obsługi tego przypadku.
 
-## <a name="start-the-thread-correctly"></a>Poprawne uruchomienie wątku
- Podczas tworzenia nowego wątku STA. Ustaw stan apartamentu STA przed rozpoczęciem korzystania z wątku. Poniższy przykład kodu pokazuje, jak to zrobić.
+## <a name="start-the-thread-correctly"></a>Uruchom wątek prawidłowo
+ Podczas tworzenia nowego wątku STA Ustaw stan Apartment na STA przed rozpoczęciem wątku. Poniższy przykład kodu demonstruje, jak to zrobić.
 
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
 
- Aby uzyskać więcej informacji, zobacz [zarządzana wątkowość — najlepsze rozwiązania](/dotnet/standard/threading/managed-threading-best-practices).
+ Aby uzyskać więcej informacji, zobacz temat [zarządzane wątki z najlepszymi rozwiązaniami](/dotnet/standard/threading/managed-threading-best-practices).
 
-## <a name="modeless-forms"></a>Niemodalne formularze
- Niemodalne formularza umożliwia pewien rodzaj interakcji z aplikacją, gdy zostanie wyświetlony formularz. Użytkownik wchodzi w interakcję z formularzem, a formularz wchodzi w interakcję z aplikacją, bez zamknięcia. Model obiektów programu pakietu Office obsługuje niemodalne formularze zarządzanych; jednak ich nie stosuje się w wątku tła.
+## <a name="modeless-forms"></a>Formularze niemodalne
+ Formularz niemodalny umożliwia pewien typ interakcji z aplikacją podczas wyświetlania formularza. Użytkownik współdziała z formularzem, a formularz współdziała z aplikacją bez zamykania. Model obiektów pakietu Office obsługuje zarządzane formularze niemodalne; nie należy jednak używać ich w wątku w tle.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wątkowość (C#)](/dotnet/csharp/programming-guide/concepts/threading/index)
 - [Wątkowość (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)
-- [Użyj wątki i wątkowość](/dotnet/standard/threading/using-threads-and-threading)
+- [Używanie wątków i wątkowości](/dotnet/standard/threading/using-threads-and-threading)
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

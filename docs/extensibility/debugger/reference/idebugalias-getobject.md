@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetObject | Dokumenty firmy Microsoft
+title: 'IDebugAlias:: GetObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4c7e73a7c1ccb5840927f4292fe057cbb6670a89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736435"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
-Pobiera obiekt, dla który jest przeznaczony dla tego aliasu.
+Pobiera obiekt, dla którego odnosi się ten alias.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ int GetObject(
 
 ## <a name="parameters"></a>Parametry
 `ppObject`\
-[na zewnątrz] [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) ten alias reprezentuje.
+określoną [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) tego aliasu reprezentuje.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

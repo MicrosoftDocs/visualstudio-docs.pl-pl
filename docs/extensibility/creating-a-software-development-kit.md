@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904116"
 ---
 # <a name="create-a-software-development-kit"></a>Tworzenie zestawu SDK
@@ -195,7 +195,7 @@ Poniższa lista zawiera elementy pliku:
 
 16. Odwołanie do pliku: określone tylko dla tych odwołań, które zawierają kontrolki lub natywnych WinMD. Aby uzyskać informacje na temat sposobu określania, czy odwołanie zawiera kontrolki, zobacz sekcję [Określanie lokalizacji elementów przybornika](#ToolboxItems) poniżej.
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Określ lokalizację elementów przybornika
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> Określ lokalizację elementów przybornika
 
 Element **ToolBoxItems** schematu *SDKManifest.xml* Określa kategorię i lokalizację elementów przybornika w zestawach SDK platformy i rozszerzenia. W poniższych przykładach pokazano, jak określić różne lokalizacje. Ma to zastosowanie do odwołań WinMD lub bibliotek DLL.
 

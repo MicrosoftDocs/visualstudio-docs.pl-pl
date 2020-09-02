@@ -1,5 +1,5 @@
 ---
-title: Podstawowe informacje o Windows Installer | Dokumentacja firmy Microsoft
+title: Instalator Windows podstawowe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,66 +12,66 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4693654e12dc37209cb92e3e2ba95bde8bd13e77
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687676"
 ---
 # <a name="windows-installer-basics"></a>Podstawowe informacje dotyczące Instalatora Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowania na komputerze użytkownika wykonywania tych zadań w jednostce o nazwie składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla konfiguracji za pomocą Instalatora Windows.  
+Instalator Windows instaluje i odinstalowuje aplikacje lub oprogramowanie na komputerze użytkownika, wykonując te zadania w jednostkach o nazwie składniki Instalator Windows (czasami nazywane WICs lub tylko składnikami). Identyfikator GUID identyfikuje każdy WIC, który jest podstawową jednostką instalacji i zliczania odwołań dla Instalatora przy użyciu Instalator Windows.  
   
- Pełna dokumentacja Instalatora Windows na ten temat można znaleźć w temacie zestawu SDK platformy [Instalatora Windows](/previous-versions/2kt85ked(v=vs.120)).  
+ Aby uzyskać pełną dokumentację Instalator Windows, zobacz temat zestaw SDK platformy, [Instalator Windows](/previous-versions/2kt85ked(v=vs.120)).  
   
-## <a name="authoring-a-vspackage"></a>Tworzenie pakietu VSPackage  
- Instalator Windows używa pakietów instalacyjnych, które zawierają informacje wymagające Instalatora Windows, aby zainstalować, odinstalować lub napraw produkt oraz do uruchamiania Instalatora interfejsu użytkownika (UI). Każdy pakiet instalacyjny zawiera plik msi, który zawiera bazę danych instalacji, strumień informacji podsumowujących i strumieni danych dla różnych części instalacji. Aby użyć Instalatora, możesz tworzyć instalacji. Ponieważ Instalator organizuje instalacje myślą o składniki i przechowuje informacje o instalacji w relacyjnej bazie danych, proces tworzenia pakietu instalacyjnego szeroko pociąga za sobą następujące czynności:  
+## <a name="authoring-a-vspackage"></a>Tworzenie elementu pakietu VSPackage  
+ Instalator Windows używa pakietów instalacyjnych, które zawierają informacje, które Instalator Windows muszą zainstalować, odinstalować lub naprawić produkt i uruchomić interfejs użytkownika Instalatora (UI). Każdy pakiet instalacyjny zawiera plik msi, który zawiera bazę danych instalacji, strumień informacji podsumowujących i strumienie danych dla różnych części instalacji. Aby skorzystać z Instalatora, należy utworzyć instalację. Ponieważ Instalator organizuje instalacje wokół koncepcji składników i zapisuje informacje o instalacji w relacyjnej bazie danych, proces tworzenia pakietu instalacyjnego w szerokim zakresie obejmuje następujące kroki:  
   
-1. Planowanie ustawień tworzenia do obsługi wersji i strategie side-by-side.  
+1. Zaplanuj Tworzenie instalacji w celu obsługi wersji i strategii Side-by-side.  
   
-2. Identyfikowanie funkcji, które mają zostać wyświetlone użytkownikom.  
+2. Zidentyfikuj funkcje, które mają być prezentowane użytkownikom.  
   
-3. Organizuj pakietu VSPackage i zależności w składników.  
+3. Organizuj pakietu VSPackage i zależności w składniki.  
   
-4. Wypełnianie bazy danych instalacji z informacjami.  
+4. Wypełnij bazę danych instalacji informacjami.  
   
-5. Sprawdzanie poprawności pakietu instalacyjnego.  
+5. Sprawdź poprawność pakietu instalacyjnego.  
   
-   Ta dokumentacja dotyczy przede wszystkim pierwszy i trzeci kroków procesu. Podczas tych czynności możesz organizować funkcje pakietu VSPackage w WICs, dzięki czemu można ramki Twojej wersji i obsługi strategii do konta w kolejnych wersjach [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pozostałe trzy kroki są zostały szczegółowo opisane w dokumentacji tego Instalatora Windows w zestawie SDK platformy.  
+   Ta dokumentacja dotyczy przede wszystkim pierwszego i trzeciego kroku procesu. Podczas wykonywania tych kroków możesz zorganizować funkcje pakietu VSPackage w WICs, aby można było umieścić strategię przechowywania wersji i obsługi, aby uwzględnić kolejne wersje programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Pozostałe trzy kroki zostały szczegółowo omówione w dokumentacji Instalator Windows w zestawie SDK platformy.  
   
-## <a name="key-terms"></a>Kluczowe terminy  
- Poniżej przedstawiono definicjami najważniejszych terminów związanych z technologii Instalatora Windows.  
+## <a name="key-terms"></a>Najważniejsze terminy  
+ Poniżej przedstawiono definicje najważniejszych terminów związanych z technologią Instalator Windows.  
   
  Zasób  
- Pliki, klucze rejestru, skróty, lub i tak dalej, mogą być zainstalowane na komputerze. Te zasoby są logicznie pogrupowane w składniki Instalatora Windows.  
+ Pliki, klucze rejestru, skróty lub i tak dalej, które mogą być zainstalowane na komputerze. Te zasoby są grupowane logicznie w składniki Instalator Windows.  
   
- Instalator Windows component (WIC)  
- Podstawowa jednostka instalacji reprezentujący logiczne grupowanie powiązanych zasobów, które są zainstalowane, a następnie odinstalowana jako jednostka. Składniki Instalatora Windows są identyfikowane przez identyfikator unikatowy składnika lub identyfikator GUID. Ponadto Instalator Windows obsługuje jej zliczanie na poziomie WIC. Przechowywanie wersji maksymalnej elastyczności dołączyć nie więcej niż jeden podstawowy zasób, np. biblioteki DLL, WIC danego. Należy pamiętać, że po identyfikacji i wypełnić WIC, nadaj mu identyfikator GUID i wdróż je, nie można zmienić jego skład. Aby uzyskać więcej informacji, zobacz [organizowanie aplikacji do składników](https://msdn.microsoft.com/library/aa370561.aspx).  
+ Składnik Instalator Windows (WIC)  
+ Podstawowa jednostka instalacji reprezentująca logiczne grupowanie powiązanych zasobów, które są instalowane i odinstalowywane jako jednostka. Składniki Instalator Windows są identyfikowane za pomocą unikatowego identyfikatora składnika lub identyfikatora GUID. Ponadto Instalator Windows utrzymuje zliczanie odwołań na poziomie WIC. Aby zapewnić maksymalną elastyczność wersji, należy uwzględnić w danym WIC nie więcej niż jeden zasób podstawowy, taki jak DLL. Zwróć uwagę, że po określeniu i wypełnieniu elementu WIC nadaj mu identyfikator GUID i Wdróż go, ale nie możesz zmienić jego kompozycji. Aby uzyskać więcej informacji, zobacz [organizowanie aplikacji do składników](https://msdn.microsoft.com/library/aa370561.aspx)programu.  
   
- (Pakiet Redist)  
- Jednostka wdrożenia, który składa się z pliku .msi i zewnętrzne pliki źródłowe, do których może wskazywać tego pliku. Pakiet zawiera wszystkie informacje wymagające Instalatora Windows do uruchamiania interfejsu użytkownika i zainstalowania lub odinstalowania aplikacji.  
+ Pakiet (pakiet Redist)  
+ Jednostka wdrożenia, która składa się z pliku MSI i zewnętrznych plików źródłowych, do których ten plik może wskazywać. Pakiet zawiera wszystkie informacje, które Instalator Windows muszą uruchamiać interfejs użytkownika oraz instalować lub odinstalowywać aplikację.  
   
- plik msi  
- Plik magazynu strukturalnego COM, zawierających instrukcje i dane niezbędne do zainstalowania aplikacji. Każdy pakiet zawiera co najmniej jeden plik msi. Plik msi zawiera baza danych Instalatora, strumień informacji podsumowania i prawdopodobnie co najmniej jeden przekształceń i wewnętrzne pliki źródłowe. Pliki do zainstalowania można można skompresowany do pliku cabinet i przechowywane w strumieniu w pliku msi lub przechowywane, skompresowane albo nieskompresowane poza plikiem msi na nośniku źródła. Aby uzyskać więcej informacji, zobacz [rozszerzeń plików Instalatora Windows](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
+ Plik msi  
+ Plik magazynu strukturalnego COM zawierający instrukcje i dane wymagane do zainstalowania aplikacji. Każdy pakiet zawiera co najmniej jeden plik msi. Plik. msi zawiera bazę danych Instalatora, strumień informacji podsumowujących i prawdopodobnie co najmniej jedną transformacje i wewnętrzne pliki źródłowe. Pliki, które mają zostać zainstalowane, mogą być kompresowane do pliku cabinet i przechowywane w strumieniu na dysku. msi lub przechowywane, kompresowane lub nieskompresowane, poza plikiem MSI na nośniku źródłowym. Aby uzyskać więcej informacji, zobacz [rozszerzenia plików Instalator Windows](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
   
-## <a name="windows-installer-rules-enforcement"></a>Wymuszanie reguł Instalatora Windows  
- Dwa zestawy reguł określają wdrażanie zasobów za pomocą składników z konfiguracją. Jeden zestaw reguł jest obsługiwana przez Instalatora Windows, podczas gdy powinien wymuszać drugiego zestawu jako autor instalacji.  
+## <a name="windows-installer-rules-enforcement"></a>Wymuszanie reguł Instalator Windows  
+ Dwa zestawy reguł określają wdrażanie zasobów za pomocą składników Instalatora. Jeden zestaw reguł jest obsługiwany przez Instalator Windows samego, podczas gdy należy wymusić drugi zestaw jako autora instalacji.  
   
 > [!NOTE]
-> Wymuszanie reguł Instalatora Windows występuje tylko wtedy, gdy jest sprawdzana poprawność pliku msi. Niemniej jednak to ostrzeżenie, że traktować te reguły jako najlepsze rozwiązanie. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności instalacji bazy danych](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) i [sprawdzanie poprawności pakietu](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> Wymuszanie reguł Instalator Windows występuje tylko wtedy, gdy uruchomisz weryfikację pliku msi. Jednak należy zachować ostrożność traktowania tych reguł zgodnie z najlepszymi rozwiązaniami. Aby uzyskać więcej informacji, zobacz [Walidacja bazy danych instalacji](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) i [Walidacja pakietu](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
-#### <a name="installer-enforced-rules"></a>Reguły wymuszane przez Instalatora  
+#### <a name="installer-enforced-rules"></a>Zasady wymuszane przez Instalatora  
   
-- Wszystkie pliki w danym składnika musi być zainstalowany na tym samym katalogu. Z drugiej strony pliki zainstalowane na oddzielnych folderów muszą należeć do rozdzielania składników.  
+- Wszystkie pliki w danym składniku muszą być zainstalowane w tym samym katalogu. Z drugiej strony pliki zainstalowane w oddzielnych folderach muszą należeć do osobnych składników.  
   
-- Może istnieć tylko jedna ścieżka klucza dla danego składnika. Ścieżka klucza jest po prostu plików lub rejestru klucz, który reprezentuje cały składnik.  
+- Dla każdego składnika może istnieć tylko jedna ścieżka klucza. Ścieżka klucza to po prostu plik lub klucz rejestru reprezentujący cały składnik.  
   
 #### <a name="component-provider-responsibilities"></a>Obowiązki dostawcy składników  
   
-- Dwa zasoby, które może być udostępniona oddzielnie w kolejnych wersjach powinny istnieć w osobne składniki. Powinny zostać utworzone zasoby do tego samego składnika, tylko wtedy, gdy masz pewność, że te zasoby nigdy nie zostanie udostępniona oddzielnie. W rzeczywistości, zalecane jest, wszystkie podstawowe zasoby (na przykład dll) zawsze znajdują się w oddzielnych WICs. Aby uzyskać więcej informacji, zobacz [Definiowanie składniki Instalatora](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Wszystkie dwa zasoby, które mogą być dostarczane osobno w kolejnych wersjach, powinny znajdować się w oddzielnych składnikach. Zasoby powinny być pogrupowane w ten sam składnik tylko wtedy, gdy masz pewność, że te zasoby nigdy nie będą dostarczane osobno. W rzeczywistości zaleca się, aby wszystkie podstawowe zasoby (na przykład dll) zawsze istniały w oddzielnych WICs. Aby uzyskać więcej informacji, zobacz [Definiowanie składników Instalatora](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
-- Brak określonej wersji zasobu nigdy nie powinien wysłać w więcej niż jeden WIC.  
+- Żaden zasób z wersjami powinien być kiedykolwiek dostarczany w więcej niż jednym WIC.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Co się stanie, jeśli reguły składników są przerwane?](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Co się stanie w przypadku przerwania reguł składników?](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

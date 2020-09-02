@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d63d4dcd6e3b7a3b81504b485ee710779cef3c13
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688532"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs rozszerza [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) aby obsłużyć wyjątki przechwycone.  
+Ten interfejs rozszerza [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) do obsługi obsłużonych wyjątków.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,35 +31,35 @@ IDebugStackFrame3 : IDebugStackFrame2
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Aparat debugowania (DE) implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obsługiwany wyjątki przechwycone przez interfejs.  
+ Aparat debugowania (DE) implementuje ten interfejs na tym samym obiekcie, który implementuje interfejs [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , aby obsługiwał przechwycone wyjątki.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołaj [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugStackFrame2` interfejsu w celu uzyskania tego interfejsu.  
+ Wywołaj metodę [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugStackFrame2` interfejsie, aby uzyskać ten interfejs.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- Oprócz metod odziedziczone [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md), `IDebugStackFrame3` udostępnia następujące metody.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ Oprócz metod dziedziczonych z [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md), `IDebugStackFrame3` uwidacznia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Obsługuje wyjątek dla bieżącej ramki stosu przed żadnych wyjątków regularne.|  
-|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Zwraca kontekst kodu, gdyby wystąpić odwijania stosu.|  
+|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Obsługuje wyjątek dla bieżącej ramki stosu przed wszelkimi regularnymi obsłudze wyjątków.|  
+|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Zwraca kontekst kodu, jeśli wystąpiło przewinięcie stosu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wyjątek przechwycone oznacza, że debuger może przetwarzać wyjątku przed wywołaniem dowolnej procedury obsługi wyjątków normalne są w czasie wykonywania. Przechwytuje wyjątek zasadniczo oznacza w czasie wykonywania poudawać, że jest obecny, nawet wtedy, gdy nie ma obsługi wyjątków.  
+ Przechwycony wyjątek oznacza, że debuger może przetworzyć wyjątek, zanim wszystkie normalne procedury obsługi wyjątków są wywoływane przez czas wykonywania. Przechwycenie wyjątku zasadniczo oznacza, że czas wykonywania poudawać, że istnieje procedura obsługi wyjątków, która jest obecna, nawet jeśli nie jest.  
   
- [Interceptcurrentexception —](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) jest wywoływana podczas wszystkich zdarzeń wywołania zwrotnego normalny wyjątek (Jedynym wyjątkiem jest, Jeśli debugujesz kod trybu mieszanego (kodu zarządzanego i niezarządzanego), w którym to przypadku wyjątku nie może zostać przechwycone podczas Wywołanie zwrotne ostatniej szansy). Jeśli nie implementuje DE `IDebugStackFrame3`, lub DE zwraca błąd z IDebugStackFrame3::`InterceptCurrentException` (takie jak `E_NOTIMPL`), debuger będzie zwykle obsłużyć wyjątek, a następnie.  
+ [InterceptCurrentException —](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) jest wywoływana podczas wszystkich normalnych zdarzeń wywołania zwrotnego wyjątku (Jedyny wyjątek w przypadku debugowania kodu w trybie mieszanym (kod zarządzany i niezarządzany), w tym przypadku nie można przechwycić wyjątku podczas wywołania zwrotnego ostatniej szansy). Jeśli DE nie implementuje `IDebugStackFrame3` lub polecenie de zwraca błąd z IDebugStackFrame3:: `InterceptCurrentException` (na przykład `E_NOTIMPL` ), wówczas debuger obsłuży zwykle wyjątek.  
   
- Przechwycenie wyjątku, debuger umożliwia użytkownikowi dokonać zmian stanu debugowanego programu, a następnie Wznów wykonywanie w punkcie, w którym został zgłoszony wyjątek.  
+ Przechwycenie wyjątku może pozwolić użytkownikowi na wprowadzenie zmian w debugowanym stanie programu, a następnie wznowienie wykonywania w punkcie, w którym został zgłoszony wyjątek.  
   
 > [!NOTE]
-> Przechwycone wyjątki są dozwolone tylko w kodzie zarządzanym, oznacza to, w programie, który jest uruchomiony w ramach środowiska uruchomieniowego języka wspólnego (CLR).  
+> Przechwycone wyjątki są dozwolone tylko w kodzie zarządzanym, czyli w programie uruchomionym w środowisku uruchomieniowym języka wspólnego (CLR).  
   
- Aparat debugowania wskazuje, że obsługuje wyjątki przechwytujący przez ustawienie "metricExceptions" na wartość 1 w czasie wykonywania za pomocą `SetMetric` funkcji. Aby uzyskać więcej informacji, zobacz [pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ Aparat debugowania wskazuje, że obsługuje przechwycenie wyjątków przez ustawienie "metricExceptions" na wartość 1 w czasie wykonywania przy użyciu `SetMetric` funkcji. Aby uzyskać więcej informacji, zobacz [pomocników zestawu SDK na potrzeby debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,5 +1,5 @@
 ---
-title: Dodawanie Menu skrótów w oknie narzędzia | Dokumentacja firmy Microsoft
+title: Dodawanie menu skrótów w oknie narzędzi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,34 +14,34 @@ caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689864"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne jest menu, który jest wyświetlany, gdy użytkownik kliknie prawym przyciskiem myszy przycisk, pole tekstowe lub tło okna. Polecenia menu skrótów zachowują się taka sama jak poleceń na inne menu i paski narzędzi. Do obsługi menu skrótów, należy je określić w pliku vsct i wyświetl ją w odpowiedzi na prawym przyciskiem myszy myszy.  
+W tym instruktażu jest umieszczane menu skrótów w oknie narzędzi. Menu skrótów to menu, które pojawia się po kliknięciu prawym przyciskiem myszy przycisku, pola tekstowego lub tła okna. Polecenia w menu skrótów zachowują się tak samo jak polecenia w innych menu lub paskach narzędzi. Aby obsłużyć menu skrótów, określ je w pliku. vsct i Wyświetl go w odpowiedzi na kliknięcie prawym przyciskiem myszy.  
   
- Okna narzędzi, który składa się z kontrolki użytkownika WPF w klasę okna narzędzia niestandardowego, który dziedziczy z <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  
+ Okno narzędzi składa się z kontrolki użytkownika WPF w niestandardowej klasie okna narzędzi, która dziedziczy z <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> .  
   
- W tym instruktażu przedstawiono sposób tworzenia menu skrótów jako menu programu Visual Studio, przez zadeklarowanie elementów menu w pliku vsct, a następnie wdrożyć je w klasie, która definiuje okno narzędzia przy użyciu środowiska pakietu zarządzanego. Takie podejście ułatwia dostęp do poleceń programu Visual Studio, elementy interfejsu użytkownika i modelu obiektu automatyzacji.  
+ W tym instruktażu pokazano, jak utworzyć menu skrótów jako menu programu Visual Studio, deklarując elementy menu w pliku. vsct, a następnie używając struktury pakietów zarządzanych do wdrożenia ich w klasie, która definiuje okno narzędzi. Takie podejście ułatwia dostęp do poleceń programu Visual Studio, elementów interfejsu użytkownika i modelu obiektów automatyzacji.  
   
- Alternatywnie, jeśli z menu skrótów nie uzyskać dostępu do funkcji programu Visual Studio, możesz użyć <xref:System.Windows.FrameworkElement.ContextMenu%2A> właściwość elementu XAML w kontrolce użytkownika. Aby uzyskać więcej informacji, zobacz [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
+ Alternatywnie, jeśli menu skrótów nie będzie miało dostępu do funkcji programu Visual Studio, można użyć <xref:System.Windows.FrameworkElement.ContextMenu%2A> właściwości elementu XAML w kontrolce użytkownika. Aby uzyskać więcej informacji, [Zobacz temat](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-the-tool-window-shortcut-menu-package"></a>Tworzenie pakietu Menu skrótów okna narzędzi  
+## <a name="creating-the-tool-window-shortcut-menu-package"></a>Tworzenie pakietu menu skrótów okna narzędzi  
   
-1. Utwórz projekt VSIX, o nazwie `TWShortcutMenu` i Dodaj szablon do okna narzędzia o nazwie **ShortCutMenu** do niego. Aby uzyskać więcej informacji na temat tworzenia okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Utwórz projekt VSIX o nazwie `TWShortcutMenu` i Dodaj szablon okna narzędzia o nazwie **ShortCutMenu** do niego. Aby uzyskać więcej informacji na temat tworzenia okna narzędzi, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## <a name="specifying-the-shortcut-menu"></a>Określanie Menu skrótów  
- Menu skrótów, takich jak przedstawionego w tym przewodniku zezwala użytkownikowi na wybranie z listy kolorów, które są używane do wypełnienia tła okna narzędzi.  
+## <a name="specifying-the-shortcut-menu"></a>Określanie menu skrótów  
+ Menu skrótów, takie jak pokazane w tym instruktażu, umożliwia użytkownikowi wybranie z listy kolorów, które są używane do wypełnienia tła okna narzędzi.  
   
-1. Znajdź w GuidSymbol, element o nazwie guidShortcutMenuPackageCmdSet ShortcutMenuPackage.vsct i zadeklarować menu skrótów, grupy menu skrótów i opcje menu. GuidSymbol, element powinien teraz wyglądać następująco:  
+1. W ShortcutMenuPackage. vsct Znajdź w elemencie GuidSymbol o nazwie guidShortcutMenuPackageCmdSet i Zadeklaruj menu skrótów, grupę menu skrótów i opcje menu. Element GuidSymbol powinien teraz wyglądać następująco:  
   
     ```xml  
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here  
@@ -54,7 +54,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     </GuidSymbol>  
     ```  
   
-2. Tuż przed Buttons, element należy utworzyć element menu, a następnie zdefiniować menu skrótów w nim.  
+2. Tuż przed elementem Buttons Utwórz element menu, a następnie zdefiniuj w nim menu skrótów.  
   
     ```vb  
     <Menus>  
@@ -69,7 +69,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
   
      Menu skrótów nie ma elementu nadrzędnego, ponieważ nie jest częścią menu lub paska narzędzi.  
   
-3. Utwórz element grupy z elementem grupy, który zawiera elementy menu skrótów i skojarzyć grupy z menu skrótów.  
+3. Utwórz element grup z elementem grupy, który zawiera elementy menu skrótów, a następnie skojarz grupę z menu skrótów.  
   
     ```xml  
     <Groups>  
@@ -79,7 +79,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     </Groups>  
     ```  
   
-4. W elemencie przyciski należy zdefiniować pojedynczych poleceń, które będą pojawiać się w menu skrótów. Buttons, element powinien wyglądać następująco:  
+4. W elemencie przyciski Zdefiniuj poszczególne polecenia, które pojawią się w menu skrótów. Element Buttons powinien wyglądać następująco:  
   
     ```xml  
     <Buttons>  
@@ -114,7 +114,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     </Buttons>  
     ```  
   
-5. W ShortcutMenuPackageGuids.cs dodania definicji dla polecenia zestawu identyfikator GUID, menu skrótów i elementów menu.  
+5. W ShortcutMenuPackageGuids.cs, Dodaj definicje dla identyfikatora GUID zestawu poleceń, menu skrótów i elementów menu.  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -124,21 +124,21 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     public const int cmdidBlue = 0x104;  
     ```  
   
-     Są to takich samych identyfikatorów polecenia, które są zdefiniowane w sekcji symbole pliku ShortcutMenuPackage.vsct. Grupy kontekstu nie jest uwzględnione w tym miejscu, ponieważ jest wymagany tylko w pliku vsct.  
+     Są to te same identyfikatory poleceń, które są zdefiniowane w sekcji symboli w pliku ShortcutMenuPackage. vsct. Grupa kontekstowa nie została tutaj uwzględniona, ponieważ jest wymagana tylko w pliku. vsct.  
   
-## <a name="implementing-the-shortcut-menu"></a>Implementowanie Menu skrótów  
- W tej sekcji implementuje menu skrótów i jego poleceń.  
+## <a name="implementing-the-shortcut-menu"></a>Implementowanie menu skrótów  
+ Ta sekcja implementuje menu skrótów i jego poleceń.  
   
-1. W ShortcutMenu.cs okno narzędzia można uzyskać usługi polecenia menu, ale nie kontrolki, które zawiera. Poniższe kroki pokazują, jak udostępnić usługi polecenia menu do kontrolki użytkownika.  
+1. W programie ShortcutMenu.cs okno narzędzi może pobrać usługę poleceń menu, ale kontrolka, która zawiera, nie może. Poniższe kroki pokazują, jak udostępnić usługę poleceń menu dla kontrolki użytkownika.  
   
-2. W ShortcutMenu.cs, Dodaj następujące instrukcje using:  
+2. W ShortcutMenu.cs Dodaj następujące instrukcje using:  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     ```  
   
-3. Przesłoń metodę Initialize() okna narzędzi, aby uzyskać usługi polecenia menu i Dodaj kontrolkę, przekazując usługi polecenia menu do konstruktora:  
+3. Zastąp metodę Initialize () okna narzędzi, aby pobrać usługę poleceń menu i dodać kontrolkę, przekazując usługę poleceń menu do konstruktora:  
   
     ```csharp  
     protected override void Initialize()  
@@ -148,7 +148,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     }  
     ```  
   
-4. W Konstruktorze okna narzędzia ShortcutMenu usunąć wiersza, który dodaje formant. Konstruktor powinien teraz wyglądać następująco:  
+4. W konstruktorze okna narzędzia ShortcutMenu Usuń wiersz, który dodaje formant. Konstruktor powinien teraz wyglądać następująco:  
   
     ```csharp  
     public ShortcutMenu() : base(null)  
@@ -159,7 +159,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     }  
     ```  
   
-5. W ShortcutMenuControl.xaml.cs Dodaj pole prywatne dla usługi polecenia menu i zmień Konstruktor kontrolki do wykonania usługi polecenia menu. Następnie użyj usługi polecenia menu, aby dodać polecenia menu kontekstowego. Konstruktor ShortcutMenuControl powinna teraz wyglądać podobnie do poniższego kodu. Później będzie można zdefiniować program obsługi poleceń.  
+5. W ShortcutMenuControl.xaml.cs Dodaj pole private dla usługi poleceń menu i Zmień konstruktora formantów, aby przetworzyć usługę poleceń menu. Następnie użyj usługi poleceń menu, aby dodać polecenia menu kontekstowego. Konstruktor ShortcutMenuControl powinien teraz wyglądać podobnie do następującego kodu. Program obsługi poleceń zostanie zdefiniowany później.  
   
     ```csharp  
     public ShortcutMenuControl(OleMenuCommandService service)  
@@ -185,7 +185,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     }  
     ```  
   
-6. W ShortcutMenuControl.xaml, Dodaj <xref:System.Windows.UIElement.MouseRightButtonDown> zdarzenia najwyższego poziomu <xref:System.Windows.Controls.UserControl> elementu. Plik XAML powinien teraz wyglądać następująco:  
+6. W ShortcutMenuControl. XAML Dodaj <xref:System.Windows.UIElement.MouseRightButtonDown> zdarzenie do elementu najwyższego poziomu <xref:System.Windows.Controls.UserControl> . Plik XAML powinien teraz wyglądać następująco:  
   
     ```vb  
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"  
@@ -207,7 +207,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     </UserControl>  
     ```  
   
-7. W ShortcutMenuControl.xaml.cs Dodaj odcinek programu obsługi zdarzeń.  
+7. W ShortcutMenuControl.xaml.cs, Dodaj element zastępczy dla programu obsługi zdarzeń.  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -216,7 +216,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     }  
     ```  
   
-8. Dodaj następujący kod do tego samego pliku przy użyciu instrukcji:  
+8. Dodaj następujące instrukcje using do tego samego pliku:  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -226,7 +226,7 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     using System.Windows.Media;  
     ```  
   
-9. Implementowanie `MyToolWindowMouseRightButtonDown` zdarzeń w następujący sposób.  
+9. Zaimplementuj `MyToolWindowMouseRightButtonDown` zdarzenie w następujący sposób.  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -242,9 +242,9 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     }  
     ```  
   
-     Spowoduje to utworzenie <xref:System.ComponentModel.Design.CommandID> obiekt menu skrótów, określa lokalizację kliknięcie myszą i otwarcie menu skrótów w tej lokalizacji przy użyciu <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> metody.  
+     Spowoduje to utworzenie <xref:System.ComponentModel.Design.CommandID> obiektu menu skrótów, określenie położenia kliknięcia myszą i otwarcie menu skrótów w tej lokalizacji przy użyciu <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> metody.  
   
-10. Zaimplementuj program obsługi poleceń.  
+10. Zaimplementuj procedurę obsługi poleceń.  
   
     ```csharp  
     private void ChangeColor(object sender, EventArgs e)  
@@ -266,17 +266,17 @@ W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne je
     }  
     ```  
   
-     W tym przypadku tylko jedna metoda obsługi zdarzeń dla wszystkich elementów menu, określając <xref:System.ComponentModel.Design.CommandID> i w związku z tym Ustawianie koloru tła. Jeśli elementy menu miał niepowiązanych poleceń, czy utworzono oddzielne zdarzenie procedury obsługi dla każdego polecenia.  
+     W takim przypadku tylko jedna metoda obsługuje zdarzenia dla wszystkich elementów menu, identyfikując <xref:System.ComponentModel.Design.CommandID> odpowiednio i ustawiając kolor tła. Jeśli elementy menu zawierały niepowiązane polecenia, należy utworzyć osobną procedurę obsługi zdarzeń dla każdego polecenia.  
   
 ## <a name="testing-the-tool-window-features"></a>Testowanie funkcji okna narzędzi  
   
-1. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
+1. Skompiluj projekt i Rozpocznij debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
-2. W doświadczalnym wystąpieniu kliknij **widok / inne Windows**, a następnie kliknij przycisk **ShortcutMenu**. W ten sposób powinien być wyświetlany okna narzędzia.  
+2. W eksperymentalnym wystąpieniu kliknij pozycję **Wyświetl/inne okna**, a następnie kliknij pozycję **ShortcutMenu**. Powinno to spowodować wyświetlenie okna narzędzi.  
   
-3. Kliknij prawym przyciskiem myszy w treści okna narzędzia. Powinny być wyświetlane menu skrótów, które zawiera listę kolorów.  
+3. Kliknij prawym przyciskiem myszy treść okna narzędzi. Powinno zostać wyświetlone menu skrótów zawierające listę kolorów.  
   
-4. Kliknij przycisk koloru w menu skrótów. Wybrany kolor, należy je zmienić kolor tła okna narzędzia.  
+4. Kliknij kolor w menu skrótów. Kolor tła okna narzędzia powinien zostać zmieniony na wybrany kolor.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)   

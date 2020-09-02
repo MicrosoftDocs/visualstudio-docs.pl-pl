@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Dokumentacja firmy Microsoft
+title: 'IDebugPointerObject:: GetBytes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ef0c01d86259b6ec8c23f2874244b018a74febc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188589"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera wartość wskazywana jako serię kolejnych bajtów.  
+Pobiera wartość wskazywaną przez serię kolejnych bajtów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,22 +46,22 @@ int GetBytes(
   
 #### <a name="parameters"></a>Parametry  
  `dwStart`  
- [in] Przesunięcie w bajtach od początku, jaki wskazał obiekt.  
+ podczas Przesunięcie w bajtach od początku obiektu wskazywanego przez.  
   
  `dwCount`  
- [in] Liczba bajtów do pobrania.  
+ podczas Liczba bajtów do pobrania.  
   
  `pBytes`  
- [out w] Tablica, która jest wypełniona wartością jako serię bajtów kolejnych, zaczynając od danego przesunięcia od obiektu wskazywanego.  
+ [in. out] Tablica, która jest wypełniana wartością jako seria kolejnych bajtów, rozpoczynając od danego przesunięcia od obiektu wskazywanego przez.  
   
  `pdwBytes`  
- [out] Zwraca liczbę bajtów, które rzeczywiście zostały pobrane.  
+ określoną Zwraca liczbę bajtów pobieranych w rzeczywistości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest używana, jeśli wskaźnik, reprezentowane przez to [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) wskazuje typ pierwotny lub prostej tablicy typów pierwotnych (czyli tablicę, która może być reprezentowany za pomocą prostych sekwencji bajtów).  
+ Ta metoda jest używana, jeśli wskaźnik reprezentowany przez ten [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) wskazuje na typ pierwotny lub prostą tablicę typów pierwotnych (czyli tablicę, która może być reprezentowana przez prostą sekwencję bajtów).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   

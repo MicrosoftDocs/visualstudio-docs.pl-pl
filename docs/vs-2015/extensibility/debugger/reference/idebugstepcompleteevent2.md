@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4631aea2b949a71cfb8c7dd2df52fd234aa25b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688493"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), po zakończeniu program debugowany, krok po kroku, Przekrocz nad lub poza wiersza kodu źródłowego lub instrukcji lub instrukcji krok.  
+Ten interfejs jest wysyłany przez aparat debugowania (Anuluj) do Menedżera debugowania sesji (SDM), gdy debugowany program kończy wykonywanie kroków do, krok przekroczenia lub krok z wiersza kodu źródłowego lub instrukcji lub instrukcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,18 +31,18 @@ IDebugStepCompleteEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- DE implementuje ten interfejs do zgłaszania zakończenia operacji kroku. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) dostęp do `IDebugEvent2` interfejsu.  
+ Element DE implementuje ten interfejs, aby zgłosić zakończenie operacji kroku. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany w tym samym obiekcie co ten interfejs. Model SDM używa [metody QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) do uzyskiwania dostępu do `IDebugEvent2` interfejsu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- DE tworzy i wysyła tego obiektu zdarzenia do zgłaszania zakończenia operacji kroku. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
+ Element DE tworzy i wysyła ten obiekt Event, aby zgłosić zakończenie operacji kroku. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , która jest dostarczana przez model SDM, gdy jest dołączona do debugowanego programu.  
   
 ## <a name="remarks"></a>Uwagi  
- Po ukończeniu kroku debugowanego programu zostało wstrzymane raz, a IDE aktualizuje jego systemu windows.  
+ Po zakończeniu tego kroku debugowany program jest wstrzymywany jeszcze raz, a środowisko IDE aktualizuje wszystkie jego okna.  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

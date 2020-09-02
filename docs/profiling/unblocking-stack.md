@@ -1,5 +1,5 @@
 ---
-title: Odblokowanie stosu | Dokumenty firmy Microsoft
+title: Odblokowywanie stosu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e790f37ba88498d5ac0ae03dd9ce7ae074f451
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63004402"
 ---
 # <a name="unblock-stack"></a>Odblokuj stos
-Jeśli aktualnie wybrany element wątku reprezentuje zablokowany segment, który później zaczął wykonywać po odblokowaniu przez inny wątek w bieżącym procesie, stos wywołań dla wątku, który zrobił odblokowanie jest wyświetlany na tej karcie.
+Jeśli aktualnie wybrany element wątku reprezentuje zablokowany segment, który później zostanie uruchomiony po odblokowaniu przez inny wątek w bieżącym procesie, stos wywołań dla wątku, który przeprowadził odblokowywanie, jest pokazywany na tej karcie.
 
 ## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

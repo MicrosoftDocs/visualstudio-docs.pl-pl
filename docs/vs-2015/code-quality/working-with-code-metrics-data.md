@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c2460b4e8b9e0b9043178989fcf8825815471be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645705"
 ---
 # <a name="working-with-code-metrics-data"></a>Praca z metrykami kodów
@@ -41,22 +41,22 @@ W oknie **wyniki metryk kodu** są wyświetlane dane, które są generowane prze
 
 - [Tworzenie elementu pracy na podstawie wyników metryki kodu](../code-quality/working-with-code-metrics-data.md#BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results)
 
-## <a name="BKMK_CodeMetricsResultsWindow"></a>Okno wyników metryk kodu
+## <a name="code-metrics-results-window"></a><a name="BKMK_CodeMetricsResultsWindow"></a> Okno wyników metryk kodu
  Okno **wyników metryk kodu** zawiera pasek narzędzi u góry i kolumny, aby wyświetlić obliczone wyniki.
 
 |Kolumna|Opis|
 |------------|-----------------|
 |**Hierarchiczn**|Kolumna **Hierarchia** zawiera widok drzewa hierarchii kodu, który można rozwinąć lub zwinąć, aby wyświetlić żądany poziom szczegółowości. W pozostałych kolumnach są wyświetlane obliczone wyniki. Można ukryć lub rozmieścić kolumny wynikowe.|
-|**Łatwość utrzymania**|Kolumna **łatwość utrzymania** zawiera ikonę oprócz wyniku liczbowego. Zielona ikona wskazuje stosunkowo wysoki stopień utrzymania. Żółta ikona wskazuje umiarkowany stopień utrzymania. Czerwona ikona wskazuje na małą łatwość utrzymania i potencjalne problemy. Te wskaźniki kolorów odpowiadają kategoriom ważności, które są używane przez regułę FxCop AvoidUnmaintainableCode. Ta zasada wyzwala błąd, jeśli indeks utrzymania jest mniejszy niż 10, ostrzeżenie, jeśli indeks jest z zakresu od 10 do 20, a nie błędu ani Ostrzeżenia, jeśli indeks jest większy niż 20. Indeks utrzymania jest syntezą trzech metryk: cyklomatyczna złożoności, wierszy kodu i złożoności obliczeniowej. Wartości nie są wyrażone w jednostkach.|
+|**Łatwość konserwacji**|Kolumna **łatwość utrzymania** zawiera ikonę oprócz wyniku liczbowego. Zielona ikona wskazuje stosunkowo wysoki stopień utrzymania. Żółta ikona wskazuje umiarkowany stopień utrzymania. Czerwona ikona wskazuje na małą łatwość utrzymania i potencjalne problemy. Te wskaźniki kolorów odpowiadają kategoriom ważności, które są używane przez regułę FxCop AvoidUnmaintainableCode. Ta zasada wyzwala błąd, jeśli indeks utrzymania jest mniejszy niż 10, ostrzeżenie, jeśli indeks jest z zakresu od 10 do 20, a nie błędu ani Ostrzeżenia, jeśli indeks jest większy niż 20. Indeks utrzymania jest syntezą trzech metryk: cyklomatyczna złożoności, wierszy kodu i złożoności obliczeniowej. Wartości nie są wyrażone w jednostkach.|
 
-## <a name="BKMK_DisplayingCodeMetricsResults"></a>Wyświetlanie wyników metryk kodu
+## <a name="displaying-code-metrics-results"></a><a name="BKMK_DisplayingCodeMetricsResults"></a> Wyświetlanie wyników metryk kodu
  Okno wyników metryki kodu jest wyświetlane automatycznie podczas generowania wyników metryki kodu. Okno można także wyświetlić w dowolnym momencie.
 
 #### <a name="to-display-the-code-metrics-results-window"></a>Aby wyświetlić okno wyników metryk kodu
 
 - W menu **Analizuj** kliknij pozycję **Windows** , a następnie kliknij pozycję **wyniki metryk kodu**.
 
-     \- lub-
+     \- oraz
 
 - W menu **Widok** wskaż **inne okna** , a następnie kliknij pozycję **wyniki metryki kodu**.
 
@@ -66,7 +66,7 @@ W oknie **wyniki metryk kodu** są wyświetlane dane, które są generowane prze
 
 - Jeśli wyniki metryk kodu zostały wygenerowane, rozwiń drzewo w kolumnie **Hierarchia** .
 
-## <a name="BKMK_FilteringCodeMetricsResults"></a>Filtrowanie wyników metryk kodu
+## <a name="filtering-code-metrics-results"></a><a name="BKMK_FilteringCodeMetricsResults"></a> Filtrowanie wyników metryk kodu
  Wyniki, które są wyświetlane w oknie **wyników metryk kodu** , można filtrować przy użyciu paska narzędzi u góry. Na przykład możesz chcieć zobaczyć tylko wyniki mające indeks utrzymania poniżej 65.
 
  Pole listy rozwijanej **Filtr** zawiera nazwy kolumn wyników. Gdy filtr jest zdefiniowany, jest dodawany do dolnej części listy wraz z wcięciem. Lista może zawierać maksymalnie dziesięć ostatnich filtrów, które zostały zdefiniowane.
@@ -83,14 +83,14 @@ W oknie **wyniki metryk kodu** są wyświetlane dane, które są generowane prze
 
 5. Aby wyświetlić szczegóły wyniku, rozwiń drzewo hierarchii.
 
-## <a name="BKMK_AddingRemovingandRearrangingDataColumns"></a>Dodawanie, usuwanie i zmiana układu kolumn danych
+## <a name="adding-removing-and-rearranging-data-columns"></a><a name="BKMK_AddingRemovingandRearrangingDataColumns"></a> Dodawanie, usuwanie i zmiana układu kolumn danych
  Kolumny wyników można dodawać lub usuwać z okna **wyników metryk kodu** . Ponadto można zmienić rozmieszczenie kolumn wyników, aby były wyświetlane w pożądanej kolejności.
 
 #### <a name="to-remove-a-column"></a>Aby usunąć kolumnę
 
 1. Kliknij przycisk **Dodaj/Usuń kolumny** .
 
-     \- lub-
+     \- oraz
 
      Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij polecenie **Dodaj/Usuń kolumny**.
 
@@ -100,7 +100,7 @@ W oknie **wyniki metryk kodu** są wyświetlane dane, które są generowane prze
 
 1. Kliknij przycisk **Dodaj/Usuń kolumny** .
 
-     \- lub-
+     \- oraz
 
      Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij polecenie **Dodaj/Usuń kolumny**.
 
@@ -110,7 +110,7 @@ W oknie **wyniki metryk kodu** są wyświetlane dane, które są generowane prze
 
 1. Kliknij przycisk **Dodaj/Usuń kolumny** .
 
-     \- lub-
+     \- oraz
 
      Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij polecenie **Dodaj/Usuń kolumny**.
 
@@ -118,13 +118,13 @@ W oknie **wyniki metryk kodu** są wyświetlane dane, które są generowane prze
 
 3. Gdy kolumna zostanie umieszczona w żądanym miejscu, kliknij przycisk **OK**.
 
-## <a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a>Kopiowanie danych do Schowka lub programu Excel
+## <a name="copying-data-to-the-clipboard-or-excel"></a><a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a> Kopiowanie danych do Schowka lub programu Excel
  Można wybrać i skopiować wybrany wiersz danych metryki kodu do Schowka jako ciąg tekstowy, który zawiera jeden wiersz dla nazwy i wartości każdej kolumny danych. Możesz również kliknąć pozycję **Otwórz listę w programie Microsoft Excel** , aby wyeksportować wszystkie wyniki metryk kodu do arkusza kalkulacyjnego programu Excel
 
-## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a>Tworzenie elementu pracy na podstawie wyników metryki kodu
- Można utworzyć [!INCLUDE[esprfound](../includes/esprfound-md.md)] element roboczy, który jest oparty na wynikach w oknie **wyników metryki kodu** . Po utworzeniu elementu pracy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie wprowadza tytuł w polu **tytuł** i dane metryk kodu na karcie **historia** .
+## <a name="creating-a-work-item-based-on-code-metric-results"></a><a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Tworzenie elementu pracy na podstawie wyników metryki kodu
+ Można utworzyć [!INCLUDE[esprfound](../includes/esprfound-md.md)] element roboczy, który jest oparty na wynikach w oknie **wyników metryki kodu** . Gdy element roboczy zostanie utworzony, program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie wprowadza tytuł w polu **tytuł** i dane metryk kodu na karcie **historia** .
 
- Aby uzyskać więcej informacji na temat tworzenia elementów roboczych, zobacz temat [Tworzenie &#91;przekierowanego&#93;elementu pracy](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).
+ Aby uzyskać więcej informacji na temat tworzenia elementów roboczych, zobacz temat [Tworzenie elementu pracy &#91;przekierowane&#93;](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).
 
 #### <a name="to-create-a-work-item-based-on-a-result"></a>Aby utworzyć element roboczy na podstawie wyniku
 

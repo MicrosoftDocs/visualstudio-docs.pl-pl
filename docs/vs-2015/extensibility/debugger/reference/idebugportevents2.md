@@ -13,16 +13,16 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5e0f6455e6df8db88b1aae1a7b7f6965c0ee524b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188531"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs powiadamia słuchacz (zazwyczaj Menedżer debugowania sesji [SDM] lub aparat debugowania) proces i program tworzenia i niszczenia na określonym porcie. Te informacje mogą służyć do przedstawiać w czasie rzeczywistym procesów i programy uruchomione na porcie.  
+Ten interfejs powiadamia odbiornik (zazwyczaj Menedżera debugowania sesji [SDM] lub aparat debugowania) o tworzeniu i zniszczeniu procesu i programu na określonym porcie. Te informacje mogą służyć do prezentowania widoku w czasie rzeczywistym procesów i programów uruchomionych na porcie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,27 +31,27 @@ IDebugPortEvents2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Program Visual Studio zazwyczaj implementują ten interfejs, aby otrzymywać powiadomienia o programu, tworzenia i niszczenia. Aparat debugowania mogą także implementować ten interfejs do nasłuchiwania zdarzeń tych portów.  
+ Program Visual Studio zwykle implementuje ten interfejs, aby otrzymywać powiadomienia o tworzeniu i zniszczeniu programu. Aparat debugowania może również zaimplementować ten interfejs, aby nasłuchiwać takich zdarzeń portów.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wszystkie [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfejsów można wykonywać zapytania dla <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfejsu. A następnie <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A> metodę `IDebugPortEvents2` jest wywoływana w <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfejsu, aby uzyskać <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfejsu. Na koniec <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> method in Class metoda <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> wywoływany jest interfejs do wysyłania zdarzeń za pomocą [zdarzeń](../../../extensibility/debugger/reference/idebugportevents2-event.md) metody.  
+ Wszystkie interfejsy [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) można zbadać dla <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfejsu. Następnie <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A> Metoda dla `IDebugPortEvents2` jest wywoływana w <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfejsie, aby uzyskać <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfejs. Na koniec <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> Metoda w <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfejsie jest wywoływana w celu wysyłania zdarzeń za pomocą metody [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md) .  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugPortEvents2`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metodę `IDebugPortEvents2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Wysyła zdarzenia, opisujące, tworzenia i niszczenia, procesów i programy na porcie.|  
+|[Zdarzenie](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Wysyła zdarzenia opisujące tworzenie i niszczenie procesów i programów na porcie.|  
   
 ## <a name="remarks"></a>Uwagi  
- `IDebugPortEvents2` Umożliwia również przez SDM debugowanie programów, które są uruchamiane w ramach procesu, który jest już debugowany.  
+ `IDebugPortEvents2` jest również używany przez model SDM do debugowania programów uruchamianych w procesie, który jest już debugowany.  
   
- Port zdarzenia są przekazywane do SDM według tego interfejsu.  
+ Zdarzenia portów są przesyłane do modelu SDM przez ten interfejs.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder | Dokumentacja firmy Microsoft
+title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84a4da6bcd306e409582077f66fab1a40b7d7942
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199705"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Reprezentuje zdolność do tworzenia pola, które reprezentuje typ.  
+Reprezentuje możliwość utworzenia pola, które reprezentuje typ.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,10 +29,10 @@ IDebugTypeFieldBuilder : IUnknown
 ```  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs jest uzyskiwana z dostawca symboli.  
+ Ten interfejs jest uzyskiwany od dostawcy symboli.  
   
 ## <a name="methods"></a>Metody  
- Ten interfejs implementuje następujących metod:  
+ Ten interfejs implementuje następujące metody:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
@@ -40,8 +40,8 @@ IDebugTypeFieldBuilder : IUnknown
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Tworzy wskaźnik do określonego typu.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: SH.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425397"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
@@ -76,12 +76,12 @@ Reprezentuje natywny plik manifestu lub odwołanie do takiego pliku.
 
 ### <a name="projectreference"></a>Elementu ProjectReference
 
-Reprezentuje odwołanie do innego projektu. `ProjectReference`elementy są przekształcane w elementy [odniesienia](#reference) przez `ResolveProjectReferences` obiekt docelowy, więc wszystkie prawidłowe metadane w odwołaniu mogą być prawidłowe w `ProjectReference` przypadku, gdy proces transformacji nie zastąpi tego elementu.
+Reprezentuje odwołanie do innego projektu. `ProjectReference` elementy są przekształcane w elementy [odniesienia](#reference) przez `ResolveProjectReferences` obiekt docelowy, więc wszystkie prawidłowe metadane w odwołaniu mogą być prawidłowe w `ProjectReference` przypadku, gdy proces transformacji nie zastąpi tego elementu.
 
 |Nazwa metadanych elementu|Opis|
 |---------------|-----------------|
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|
-|Project|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
+|Projekt|Opcjonalny ciąg. Identyfikator GUID odwołania w formularzu {12345678-1234-1234-1234-1234567891234} .|
 |Pakiet|Opcjonalny ciąg. Ścieżka do pliku projektu, do którego istnieje odwołanie.|
 |ReferenceOutputAssembly|Opcjonalna wartość logiczna. Jeśli jest ustawiona na `false` , program nie uwzględnia danych wyjściowych przywoływanego projektu jako [odwołania](#reference) do tego projektu, ale nadal zapewnia, że inny projekt zostanie skompilowany przed tym. Wartość domyślna to `true` .|
 
@@ -170,4 +170,4 @@ Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez 
 
 - [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Właściwości programu MSBuild dla projektów zestaw .NET Core SDK](/dotnet/core/project-sdk/msbuild-props)
-- [Typowe metadane elementu MSBuild](common-msbuild-item-metadata.md)
+- [Wspólne metadane elementów programu MSBuild](common-msbuild-item-metadata.md)

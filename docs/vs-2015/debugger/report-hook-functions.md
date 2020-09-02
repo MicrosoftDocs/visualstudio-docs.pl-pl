@@ -1,5 +1,5 @@
 ---
-title: Raport funkcji punktów zaczepienia | Dokumentacja firmy Microsoft
+title: Raportowanie funkcji punktu zaczepienia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,31 +26,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a492a1db8b65cad74d02cec0f43bf0c81461730
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687509"
 ---
 # <a name="report-hook-functions"></a>Raportowanie funkcji punktów zaczepienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Raport funkcji podłączania zainstalowane za pomocą [_CrtSetReportHook](https://msdn.microsoft.com/library/1ae7c64f-8c84-4797-9574-b59f00f7a509), jest wywoływana za każdym razem [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) generuje raport debugowania. Używając go, między innymi do filtrowania raportów skoncentrować się na określonych typów alokacji. Funkcja podłączania raport powinien mieć prototypu, jak pokazano poniżej:  
+Funkcja podłączania raportów zainstalowana przy użyciu [_CrtSetReportHook](https://msdn.microsoft.com/library/1ae7c64f-8c84-4797-9574-b59f00f7a509)jest wywoływana za każdym razem, gdy [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) generuje raport debugowania. Można jej używać między innymi w przypadku filtrowania raportów, aby skoncentrować się na określonych typach alokacji. Funkcja punktu zaczepienia raportu powinna mieć prototyp podobny do następującego:  
   
 ```  
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- Wskaźnik, który jest przekazywany do **_CrtSetReportHook** typu **_crt_report_hook —**, zgodnie z definicją w CRTDBG. GODZ.:  
+ Wskaźnik przekazany do **_CrtSetReportHook** jest typu **_CRT_REPORT_HOOK**, zgodnie z definicją w CRTDBG. C  
   
 ```  
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- Gdy biblioteka środowiska uruchomieniowego wywołuje funkcję podłączania, *nRptType* argument zawiera kategorii raportu (**_CRT_WARN**, **_CRT_ERROR**, lub **_CRT _ASSERT**), *szMsg* zawiera wskaźnik do ciągu komunikatu zmontowanych raportu, a *retVal* Określa, czy `_CrtDbgReport` powinno być kontynuowane normalnego wykonywania Po wygenerowaniu raportu lub uruchamiania debugera. (A *retVal* o wartości zero kontynuuje wykonywanie, wartość 1 Uruchamia debuger.)  
+ Gdy Biblioteka wykonawcza wywołuje funkcję Hook, argument *nRptType* zawiera kategorię raportu (**_CRT_WARN**, **_CRT_ERROR**lub **_CRT_ASSERT**), *szMsg* zawiera wskaźnik do w pełni zmontowany ciąg komunikatu raportu, a *retval* określa, czy `_CrtDbgReport` należy kontynuować normalne wykonywanie po wygenerowaniu raportu lub uruchomieniu debugera. (Wartość *retval* zero kontynuuje wykonywanie, A wartość 1 powoduje uruchomienie debugera).  
   
- Jeśli punkt zaczepienia obsługi wiadomości w danym całkowicie, dzięki czemu nie dalsze raportowania są wymagane, powinna zwrócić **TRUE**. Jeśli zostanie zwrócona **FALSE**, `_CrtDbgReport` będzie raportu, komunikat normalnie.  
+ Jeśli hak przechwytuje komunikat w całości, więc nie jest wymagane żadne dalsze raportowanie, należy zwrócić **wartość true**. Jeśli zwraca **wartość false**, `_CrtDbgReport` będzie zgłaszać komunikat w normalny sposób.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie pisanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 Sample](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [Zapisywanie funkcji punktu zaczepienia debugowania](../debugger/debug-hook-function-writing.md)   
+ [Przykład crt_dbg2](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

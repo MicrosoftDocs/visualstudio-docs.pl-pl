@@ -1,5 +1,5 @@
 ---
-title: 'span:: ~ span — destruktor | Dokumentacja firmy Microsoft'
+title: 'span:: ~ span — destruktor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 978270653e3c872be522551a6a515b42d0fb1282
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199795"
 ---
 # <a name="spanspan-destructor"></a>span::~span — Destruktor
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Niszczy `span` obiektu i zwalnia jego zasoby.
+Niszczy `span` obiekt i zwalnia jego zasoby.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,10 +34,10 @@ Niszczy `span` obiektu i zwalnia jego zasoby.
 
 ## <a name="requirements"></a>Wymagania
 
-**Nagłówek:** cvmarkersobj.h
+**Nagłówek:** cvmarkersobj. h
 
-**Namespace:** CONCURRENCY::Diagnostic —
+**Przestrzeń nazw:** Współbieżność::d przesła
 
 ## <a name="see-also"></a>Zobacz też
 
-[span, klasa](../profiling/span-class.md)
+[span — Klasa](../profiling/span-class.md)

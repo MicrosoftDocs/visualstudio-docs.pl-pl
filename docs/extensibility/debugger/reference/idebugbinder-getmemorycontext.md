@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext | Dokumenty firmy Microsoft
+title: 'IDebugBinder:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735997"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-Ta metoda konwertuje lokalizację obiektu lub adres pamięci do kontekstu pamięci.
+Ta metoda konwertuje lokalizację obiektu lub adres pamięci na kontekst pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,16 +45,16 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Parametry
 `pField`\
-[w] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujące obiekt do zlokalizowania. Jeśli `NULL`zamiast `dwConstant` tego użyj.
+podczas [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujący obiekt, który ma zostać zlokalizowany. Jeśli `NULL` , użyj `dwConstant` zamiast tego.
 
 `dwConstant`\
-[w] Stały adres pamięci, taki jak 0x5000.
+podczas Stały adres pamięci, taki jak 0x5000.
 
 `ppMemCxt`\
-[na zewnątrz] Zwraca interfejs [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący adres obiektu lub adres w pamięci.
+określoną Zwraca interfejs [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący adres obiektu lub adres w pamięci.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

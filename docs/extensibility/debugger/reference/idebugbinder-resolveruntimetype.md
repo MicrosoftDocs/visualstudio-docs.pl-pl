@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Dokumenty firmy Microsoft
+title: 'IDebugBinder:: ResolveRuntimeType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4bdbff651618365f3b68a142a6cb1e76836876a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735956"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
-Ta metoda określa typ czasu wykonywania obiektu.
+Ta metoda określa typ obiektu w czasie wykonywania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int ResolveRuntimeType(
 
 ## <a name="parameters"></a>Parametry
 `pObject`\
-[w] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) do rozwiązania.
+podczas [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , który ma zostać rozwiązany.
 
 `ppResolved`\
-[na zewnątrz] Zwraca typ obiektu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+określoną Zwraca typ obiektu jako element [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Typ wykonywania obiektu nie zawsze jest znany w czasie kompilacji. Na przykład za pomocą polimorfizm, argument może być przekazany do funkcji jako jego klasy podstawowej, takich jak button klasy. Rzeczywisty argument może być klasą pochodną, taką jak klasa przycisku radiowego.
+ Typ czasu wykonywania obiektu nie zawsze jest znany w czasie kompilacji. Na przykład przy użyciu polimorfizmu argument można przekazywać do funkcji jako jej klasy bazowej, takiej jak Klasa Button. Rzeczywisty argument może być klasą pochodną, taką jak Klasa przycisków radiowych.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
