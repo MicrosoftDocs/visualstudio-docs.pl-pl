@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyszukiwanie komunikatu w widoku komunikatów | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wyszukiwanie komunikatu w widoku komunikatów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,42 +14,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430911"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64783941"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Instrukcje: Wyszukiwanie komunikatu w widoku komunikatów
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Porady: wyszukiwanie komunikatu w widoku komunikatów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz wyszukać szczegółowy komunikat o błędzie w widoku komunikatów za pomocą jego uchwytu, typ lub identyfikator komunikatu jako kryterium wyszukiwania. Jeden z nich — lub kombinacji — będą prawidłowe kryteria. Można również określić początkową kierunek wyszukiwania. Pola w oknie dialogowym są wstępnie ładowane z atrybutami komunikatów aktualnie wybrany.  
+Konkretny komunikat można wyszukać w widoku komunikatów przy użyciu jego uchwytu, typu lub identyfikatora komunikatu jako kryterium wyszukiwania. Jeden z tych — lub kombinacja — będzie prawidłowymi kryteriami wyszukiwania. Można również określić początkowy kierunek wyszukiwania. Pola w oknie dialogowym są wstępnie załadowane przy użyciu atrybutów aktualnie wybranego komunikatu.  
   
-### <a name="to-search-for-a-message-in-messages-view"></a>Aby wyszukać komunikatu w widoku komunikatów  
+### <a name="to-search-for-a-message-in-messages-view"></a>Aby wyszukać komunikat w widoku komunikatów  
   
-1. Rozmieść aplikacji dla systemu windows, więc tego programu Spy ++ i aktywne [widoku komunikatów](../debugger/messages-view.md) okna są widoczne.  
+1. Rozmieść okna w taki sposób, że widoczne jest okno przeglądarki Spy + + i aktywne [komunikaty](../debugger/messages-view.md) .  
   
-2. Z **wyszukiwania** menu, wybierz **Znajdź komunikat**.  
+2. Z menu **Wyszukaj** wybierz polecenie **Znajdź wiadomość**.  
   
-    [Wyszukiwanie komunikatów — okno dialogowe](../debugger/message-search-dialog-box.md) zostanie otwarty.  
+    Zostanie otwarte okno [dialogowe Wyszukiwanie komunikatów](../debugger/message-search-dialog-box.md) .  
   
-3. Przeciągnij **Wyszukiwarka** przedziale żądaną. Przeciągnij narzędzie **Wyszukiwarka komunikatów** okno dialogowe wyświetla szczegóły wybranego okna.  
+3. Przeciągnij **Narzędzie wyszukiwania** nad odpowiednim oknem. Podczas przeciągania narzędzia okno dialogowe **wyszukiwanie komunikatów** wyświetla szczegóły w wybranym oknie.  
   
-    — lub —  
+    oraz  
   
-    Jeśli uchwyt okna komunikatów, którego chcesz zbadać, wpisz go w **obsługi** pola tekstowego.  
+    Jeśli masz uchwyt okna, którego wiadomości chcesz przeanalizować, wpisz je w polu tekstowym **uchwyt** .  
   
-    — lub —  
+    oraz  
   
-    Jeśli znasz typ komunikatu i/lub identyfikator wiadomości, które chcesz, aby wybrać je z **typu** i **komunikat** menu rozwijanych i wyczyść **obsługi** pola tekstowego.  
+    Jeśli znasz typ wiadomości i/lub identyfikator wiadomości, wybierz je z menu rozwijanego **Typ** i **wiadomość** , a następnie usuń zaznaczenie pola tekstowego **uchwyt** .  
   
 4. Wyczyść wszystkie pola, dla których nie chcesz określać wartości.  
   
    > [!TIP]
-   > Aby zwiększyć czytelność ekranu, wybierz pozycję **Ukryj Spy** opcji. Ta opcja zawiera narzędzie Spy ++ oknie głównym, pozostawiając tylko **Znajdź okno** okno dialogowe widoczne na podstawie innych aplikacji. Okno główne programu Spy ++ jest przywracany po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
+   > Aby zmniejszyć czytelność ekranu, wybierz opcję **Ukryj program Spy** . Ta opcja ukrywa główne okno programu Spy + +, pozostawiając tylko okno dialogowe **Znajdowanie okna** widoczne na wierzchu innych aplikacji. Okno główne programu Spy + + jest przywracane po kliknięciu przycisku **OK** lub **Anuluj**lub po wyczyszczeniu opcji **Ukryj program Spy + +** .  
   
-5. Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
+5. Wybierz pozycję w **górę** lub **w dół** , aby określić początkowy kierunek wyszukiwania.  
   
 6. Kliknij przycisk **OK**.  
   
-   Jeśli zostanie znaleziona pasująca wiadomość, jest wyróżniona w oknie Widok komunikatów. Zobacz [widoku komunikatów](../debugger/messages-view.md).
+   Jeśli zostanie znaleziony pasujący komunikat, zostanie on wyróżniony w oknie widok komunikatów. Zobacz [Widok komunikatów](../debugger/messages-view.md).

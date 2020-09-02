@@ -1,5 +1,5 @@
 ---
-title: Znaczniki tekstu przy użyciu starszej wersji interfejsu API | Dokumentacja firmy Microsoft
+title: Używanie znaczników tekstowych w starszym interfejsie API | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,63 +11,63 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695477"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>Znaczniki tekstu przy użyciu starszej wersji interfejsu API
+# <a name="using-text-markers-with-the-legacy-api"></a>Korzystanie ze znaczników tekstu ze starszym interfejsem API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Znacznik tekstu jest ruchomy zakres tekstu w buforze, które mogą mieć wpływ na wyświetlanie i zachowanie region tekstu. Znaczniki zawierają punkty przerwania, zakładek, faliste podkreślenia i regionów tylko do odczytu. Znaczniki tekstu po prostu różnią się od kolorowanie składni. Kolorowanie składni to szybki sposób komunikowania się składni języka, która jest skojarzone z regionem tekstu. Kolorowanie składni ogólnie jest wymagany, gdy Windows odświeża ekran, gdy szybkość jest istotna. Kolorowanie składni zmienia kolor tekstu. Znaczniki tekst można zmienić innych właściwości tekstu. Znaczniki tekstu można "float" i zastosować specjalnego zachowania i kolorowania.  
+Znacznik tekstu to swobodny zakres tekstu w buforze, który może wpływać na wyświetlanie i zachowanie regionu tekstu. Znaczniki obejmują punkty przerwania, zakładki, faliste podkreślenia i regiony tylko do odczytu. Znaczniki tekstu są zasadniczo różne od kolorowania składni. Kolorowanie składni to szybki sposób komunikowania składni języka, która jest skojarzona z regionem tekstu. Kolorowanie składni jest zazwyczaj wymagane, gdy system Windows odświeża ekran, gdy jest to ważne. Kolorowanie składni powoduje zmianę koloru tekstu. Znaczniki tekstu mogą zmieniać wiele innych właściwości tekstu. Znaczniki tekstu mogą "float" i stosować specjalne zachowanie i kolorowanie.  
   
- Ze względu na zmniejszenie wydajności związane ze znacznikami tekst nie należy tworzyć wielu znaczników swoje bufory tekstu. Każdy znacznik jest aktualizowana w każdym razem, gdy użytkownik dokona edycji zawartości buforu.  
+ Ze względu na obciążenie wydajności skojarzone ze znacznikami tekstu nie należy tworzyć wielu znaczników dla buforów tekstu. Każdy znacznik jest aktualizowany za każdym razem, gdy użytkownik edytuje zawartość buforu.  
   
 > [!NOTE]
-> Użytkownicy mogą zmieniać kolor typu znacznika widoczne, ale nie jego kształtu i stylu. Aby uzyskać więcej informacji, zobacz [czcionki i kolory, środowisko, opcje, okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Użytkownicy mogą zmieniać kolor widocznego typu znacznika, ale nie jego kształtu i stylu. Aby uzyskać więcej informacji, zobacz [czcionki i kolory, środowisko, Opcje — okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md)|W tym artykule opisano sposób dodawania tekstu standardowego typu znaczników, dostarczone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji do widoku tekstu.|  
-|[Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md)|W tym artykule opisano sposób wdrażania wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znacznik, który służy do sygnalizowania błędów przy użyciu czerwone faliste podkreślenia.|  
-|[Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)|W tym artykule opisano, jak utworzyć i dodać typ znacznika niestandardowego tekstu do widoku tekstu.|  
-|[Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)|Wyjaśnia, jak dodawać znaczniki tekstu.|  
-|[Wewnątrz edytora podstawowego](../extensibility/inside-the-core-editor.md)|Opisuje funkcje edytora podstawowe i szczegółowe informacje na temat sposobu dostosowywania podstawowy edytor.|  
-|[Funkcje edytora](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|W tym artykule opisano funkcje dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji.|  
+|[Instrukcje: dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md)|Opisuje sposób dodawania standardowego typu znacznika tekstu dostarczonego przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Edytor podstawowy do widoku tekstu.|  
+|[Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md)|Opisuje, jak zaimplementować wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znacznika, który jest używany do wskazania błędów przy użyciu czerwonych falistych podkreśleń.|  
+|[Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)|Opisuje sposób tworzenia i dodawania niestandardowego znacznika tekstu do widoku tekstu.|  
+|[Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)|Wyjaśnia, jak dodać znaczniki tekstu.|  
+|[Wewnątrz edytora podstawowego](../extensibility/inside-the-core-editor.md)|Opisuje funkcje edytora podstawowego i zawiera szczegółowe informacje dotyczące sposobu dostosowywania edytora podstawowego.|  
+|[Funkcje edytora](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Zawiera opis funkcji dostępnych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Edytorze podstawowym.|  
   
-## <a name="reference"></a>Tematy pomocy  
+## <a name="reference"></a>Dokumentacja  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
- Udostępnia mechanizm jednolitego uzyskiwania informacji na temat typu znacznika określonym tekstem, czy wstępnie zdefiniowane przez Edytor lub zarejestrowany przez funkcję pakietu VSPackage.  
+ Zapewnia jednolity mechanizm uzyskiwania informacji o konkretnym typie znacznika tekstu, niezależnie od tego, czy jest wstępnie zdefiniowany przez Edytor, czy zarejestrowany przez pakietu VSPackage.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker>  
- Zapewnia dostęp do, a następnie dopasowuje pozycję znacznika tekstu w buforze tekstu przy użyciu dwuwymiarowe współrzędne.  
+ Zapewnia dostęp do i dostosowuje położenie znacznika tekstu w buforze tekstu przy użyciu współrzędnych dwuwymiarowych.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>  
- Udostępnia metody dla zarządzania znaczników tekstu.  
+ Zapewnia metody do zarządzania znacznikami tekstu.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>  
- Umożliwia wywołania zwrotne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE i inne procesy, które są używane do dostosowywania znacznika tekstu.  
+ Zapewnia wywołania zwrotne do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE i innych procesów, które są używane do dostosowywania znacznika tekstu.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>  
- Rozszerza funkcjonalność, która jest dostępna za pośrednictwem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu, zapewniając dodatkowe wywołania zwrotne.  
+ Rozszerza funkcjonalność, która jest dostępna za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu, zapewniając dodatkowe wywołania zwrotne.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>  
- Rozszerza funkcjonalność, która jest dostępna za pośrednictwem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu, zapewniając dodatkowe wywołania zwrotne.  
+ Rozszerza funkcjonalność, która jest dostępna za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu, zapewniając dodatkowe wywołania zwrotne.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet>  
- Włącza typ znacznika ustalić, czy innych typów znaczników udostępnić ten sam zestaw kolorów.  
+ Włącza typ znacznika, aby określić, czy inne typy znaczników współdzielą ten sam zestaw kolorów.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>  
- Udostępnia kontekst dla znaczników tekstu w edytorze podstawowych. Dla każdego typu znacznika tekstu, który znajduje się w edytorze podstawowych, środowisko IDE tworzy oddzielny <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> obiektu.  
+ Zawiera kontekst dla znaczników tekstowych w edytorze podstawowym. Dla każdego typu znacznika tekstu, który znajduje się w edytorze Core, IDE tworzy oddzielny <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> obiekt.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler>  
- Program obsługi, który jest udostępniany dla znaczników, którego symbole obsługi przeciągania i upuszczania do edycji. Glif znajduje się ikona, wskazującą położenie znaczników.  
+ Program obsługi, który jest dostarczany dla znaczników, których glify obsługują edycję metodą "przeciągnij i upuść". Symbol jest ikoną wskazującą położenie znacznika.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>  
- Zwraca <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interfejs z usługą, która zawiera tekst znaczniki do innych pakietów VSPackage.  
+ Zwraca <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interfejs z usługi, która udostępnia znaczniki tekstowe innym pakietów VSPackage.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
- Zapewnia dostęp do, a następnie dopasowuje pozycję znacznika tekstu w buforze tekstu za pomocą współrzędnych jednowymiarowa. Jeśli jest to możliwe, należy używać tego interfejsu.
+ Zapewnia dostęp do i dostosowuje położenie znacznika tekstu w buforze tekstu przy użyciu współrzędnych jednowymiarowych. Jeśli jest to możliwe, nie używaj tego interfejsu.

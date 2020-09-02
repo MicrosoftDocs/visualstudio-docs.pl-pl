@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016796"
 ---
 # <a name="develop-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
@@ -100,7 +101,7 @@ ms.locfileid: "86016796"
 |Lokalizacja wdrożenia|W pełni kwalifikowana ścieżka pliku na serwerze programu SharePoint. Ta ścieżka składa się z właściwości podrzędnych i ścieżki wdrożenia elementu głównego wdrożenia.|
 |Ścieżka wdrożenia|Ścieżka względna pliku w pliku programu SharePoint Server, na przykład Workflow1 \\ . W pełni kwalifikowana ścieżka do pliku jest tworzona przez połączenie wartości *ścieżki wdrożenia* na końcu wartości *głównej wdrożenia* .<br /><br /> Wybranie wartości *RootFile* dla właściwości *typ wdrożenia* spowoduje zmianę właściwości *głównej wdrożenia* na \<SharePointRoot> \\ , co spowodowało w pełni kwalifikowaną ścieżkę \<SharePointRoot> \Workflow1 \\ . Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
 |Katalog główny wdrożenia|Ciąg. Folder główny, w którym plik jest wdrożony na serwerze programu SharePoint. Na przykład \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> Wartość właściwości *root wdrożenia* jest określana na podstawie ustawienia *typu wdrożenia* .|
-|Typ wdrożenia|Typ wdrożenia pliku, który określa jego wartość *główną wdrożenia* . Może być jedną z następujących wartości:<br /><br /> NoDeployment:*\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> Elementu: * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile:*\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource:*\<ClassResourcePath>\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Typ wdrożenia|Typ wdrożenia pliku, który określa jego wartość *główną wdrożenia* . Może być jedną z następujących wartości:<br /><br /> NoDeployment: *\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> Elementu: * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Nazwa pliku|Nazwa pliku lub folderu dla pliku elementu.|
 |Pełna ścieżka|Lokalizacja pliku dla elementu. (Tylko do odczytu).|
 
@@ -119,7 +120,7 @@ ms.locfileid: "86016796"
 |[Integrowanie danych firmowych z programem SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Opisuje sposób integrowania danych z usług sieci Web i aplikacji serwera zaplecza z aplikacją programu SharePoint.|
 |[Tworzenie definicji witryny dla programu SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Opisuje sposób tworzenia definicji lokacji: szablonów, które są używane do tworzenia witryn programu SharePoint.|
 |[Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Opisuje sposób importowania elementów, takich jak typy zawartości i moduły z istniejącej witryny programu SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|
-|[Stosowanie modułów podczas dołączania plików do rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Opisuje sposób użycia modułów do wdrażania plików z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu w witrynie programu SharePoint.|
+|[Stosowanie z modułów podczas dołączania plików do rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Opisuje sposób użycia modułów do wdrażania plików z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu w witrynie programu SharePoint.|
 |[Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Opisuje sposób przeglądania lokalnych witryn programu SharePoint przy użyciu Eksplorator serwera.|
 |[Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Opisuje sposób użycia właściwości elementu projektu w celu dostarczenia informacji o pakowaniu i wdrożeniu dla projektów, takich jak wpisy kontroli bezpiecznego, odwołania do danych wyjściowych projektu i właściwości funkcji.|
 |[Instrukcje: Dodawanie i usuwanie mapowanych folderów](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Opisuje sposób, w jaki mapowane foldery można dodać do projektu, aby zapewnić łatwiejszy dostęp do zasobów programu SharePoint.|
@@ -127,7 +128,7 @@ ms.locfileid: "86016796"
 |[Zabezpieczenia dla rozwiązań SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Opisuje zagadnienia dotyczące zabezpieczeń dotyczące opracowywania rozwiązań programu SharePoint w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Okno dialogowe selektora adresów URL &#40;programowanie SharePoint w programie Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Opisuje okno dialogowe, za pomocą którego można dodać odwołania do ścieżek do zasobów w projekcie lub na lokalnym serwerze programu SharePoint.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie &#40;programowanie SharePoint w programie Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [Przeglądanie połączeń programu SharePoint przy użyciu Eksplorator serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

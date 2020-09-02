@@ -1,5 +1,5 @@
 ---
-title: Cv_access_e — | Dokumentacja firmy Microsoft
+title: CV_access_e | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ce5997555b37cf5ab30f091e7124b5025284c0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164377"
 ---
-# <a name="cvaccesse"></a>CV_access_e
+# <a name="cv_access_e"></a>CV_access_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Określa zakres widoczności (poziom dostępu), funkcji składowych i zmiennych.  
+Określa zakres widoczności (poziom dostępu) funkcji składowych i zmiennych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,21 +37,21 @@ typedef enum CV_access_e { 
   
 ## <a name="elements"></a>Elementy  
  CV_private  
- Element członkowski ma prywatnie.  
+ Członek ma dostęp prywatny.  
   
  CV_protected  
- Element członkowski zabezpieczył dostępu.  
+ Członek ma chroniony dostęp.  
   
  CV_public  
- Element członkowski ma dostęp publiczny.  
+ Członek ma dostęp publiczny.  
   
 ## <a name="remarks"></a>Uwagi  
- `friend` Specyfikator dostępu nie jest uwzględniony w tym miejscu, ponieważ jest ona zwykle używana przez funkcje nieczłonkowskie, które mają dostęp do prywatnej i chronionych elementów klasy. Użyj [idiasymbol::get_symtag —](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) metody do znalezienia symboli z `SymTagFriend` dostępu.  
+ `friend`Specyfikator dostępu nie jest uwzględniony w tym miejscu, ponieważ jest zazwyczaj używany przez funkcje nieczłonkowskie, które mają dostęp zarówno do prywatnych, jak i chronionych elementów klasy. Użyj metody [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) , aby znaleźć symbole z `SymTagFriend` dostępem.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: cvconst.h  
+ Nagłówek: cvconst. h  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol::get_access —](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
+ [IDiaSymbol:: get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

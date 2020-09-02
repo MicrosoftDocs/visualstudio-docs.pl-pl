@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016753"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Instrukcje: Dodawanie odwołania do danych wyjściowych projektu
@@ -39,7 +40,7 @@ ms.locfileid: "86016753"
 
 6. Wybierz strzałkę obok pozycji **Nazwa projektu**, wybierz nazwę elementu projektu spoza programu SharePoint, a następnie wybierz przycisk **OK** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Udostępnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Instrukcje: Oznaczanie kontrolek jako bezpiecznych formantów](../sharepoint/how-to-mark-controls-as-safe-controls.md)
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

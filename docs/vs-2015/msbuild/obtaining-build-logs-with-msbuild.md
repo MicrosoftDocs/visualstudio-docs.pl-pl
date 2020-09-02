@@ -1,5 +1,5 @@
 ---
-title: Uzyskiwanie kompilacja dzienników za pomocą narzędzia MSBuild | Dokumentacja firmy Microsoft
+title: Uzyskiwanie dzienników kompilacji przy użyciu programu MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,22 +13,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c88288a7bed453ca14e9c14fd43706b97be04044
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430842"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64789478"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Uzyskiwanie dzienników kompilacji za pomocą narzędzia MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą przełączników za pomocą narzędzia MSBuild, można określić ilość danych kompilacji, aby Przegląd i czy chcesz zapisać dane kompilacji do jednego lub więcej plików. Można również określić niestandardowe rejestratora zbierania danych o kompilacji. Aby uzyskać informacje dotyczące przełączników wiersza polecenia programu MSBuild, które ten temat nie obejmuje, zobacz [odwołanie do wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
+Korzystając z przełączników w programie MSBuild, można określić, ile danych kompilacji ma być przeglądanych, oraz czy dane kompilacji mają być zapisane w jednym lub wielu plikach. Możesz również określić niestandardowy Rejestrator do zbierania danych kompilacji. Aby uzyskać informacje o przełącznikach wiersza polecenia programu MSBuild, które nie obejmują tego tematu, zobacz [informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
-> Jeśli tworzysz projektów za pomocą programu Visual Studio IDE tych kompilacji można rozwiązać, przeglądając dzienniki kompilacji. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).  
+> W przypadku kompilowania projektów przy użyciu środowiska IDE programu Visual Studio można rozwiązywać problemy z tymi kompilacjami, przeglądając dzienniki kompilacji. Aby uzyskać więcej informacji, zobacz [jak: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ## <a name="setting-the-level-of-detail"></a>Ustawienie poziomu szczegółowości  
- Gdy tworzysz projekt za pomocą programu MSBuild bez określania poziomu szczegółowości zostaną wyświetlone następujące informacje w dzienniku danych wyjściowych:  
+ Podczas kompilowania projektu przy użyciu programu MSBuild bez określania poziomu szczegółowości w dzienniku wyjściowym są wyświetlane następujące informacje:  
   
 - Błędy, ostrzeżenia i komunikaty, które są klasyfikowane jako bardzo ważne.  
   
@@ -36,49 +36,49 @@ Za pomocą przełączników za pomocą narzędzia MSBuild, można określić ilo
   
 - Podsumowanie kompilacji.  
   
-  Za pomocą **/verbosity** (**/v**) przełączyć, można kontrolować, jak dużo danych pojawia się w dzienniku danych wyjściowych. Do rozwiązywania problemów, należy użyć poziom szczegółowości, albo `detailed` (`d`) lub `diagnostic` (`diag`), zapewniającą najwięcej informacji.  
+  Za pomocą przełącznika **/verbosity.** (**/v**) można kontrolować ilość danych wyświetlanych w dzienniku danych wyjściowych. W celu rozwiązywania problemów Użyj poziomu szczegółowości obu `detailed` ( `d` ) lub `diagnostic` ( `diag` ), który zapewnia najwięcej informacji.  
   
-  Proces kompilacji może być niższa, po ustawieniu **/verbosity** do `detailed` i nawet wolniej, po ustawieniu **/verbosity** do `diagnostic`.  
+  Proces kompilacji może być wolniejszy, gdy ustawisz **/verbosity.** na `detailed` , a nawet wolniej po ustawieniu **/verbosity.** na `diagnostic` .  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
   
 ## <a name="saving-the-build-log-to-a-file"></a>Zapisywanie dziennika kompilacji do pliku  
- Możesz użyć **/fileLogger** (**fl**) przełącznik, aby zapisać dane kompilacji do pliku. Poniższy przykład zapisuje dane kompilacji do pliku, który nosi nazwę `msbuild.log`.  
+ Aby zapisać dane kompilacji do pliku, można użyć przełącznika **/FileLogger** (**FL**). Poniższy przykład zapisuje dane kompilacji do pliku o nazwie `msbuild.log` .  
   
 ```  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
- W poniższym przykładzie plik dziennika o nazwie `MyProjectOutput.log`, a poziom szczegółowości danych wyjściowych dziennika jest ustawione na `diagnostic`. Należy określić te dwa ustawienia za pomocą **/filelogparameters** (`flp`) przełącznika.  
+ W poniższym przykładzie plik dziennika ma nazwę `MyProjectOutput.log` , a poziom szczegółowości danych wyjściowych dziennika jest ustawiony na `diagnostic` . Należy określić te dwa ustawienia za pomocą przełącznika **/filelogparameters** ( `flp` ).  
   
 ```  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [odwołanie do wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
+ Aby uzyskać więcej informacji, zobacz informacje [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="saving-the-log-output-to-multiple-files"></a>Zapisywanie dziennika danych wyjściowych do wielu plików  
- Poniższy przykład zapisuje cały dziennik, aby `msbuild1.log`, po prostu błędy do `JustErrors.log`i po prostu ostrzeżeń do `JustWarnings.log`. W przykładzie użyto liczby plików dla każdego z trzech plików. Liczby plików są określane tylko po **/fl** i **/flp** przełączników (na przykład `/fl1` i `/flp1`).  
+ Poniższy przykład zapisuje cały dziennik do `msbuild1.log` , tylko błędy do `JustErrors.log` i tylko ostrzeżenia do `JustWarnings.log` . W przykładzie są stosowane numery plików dla każdego z trzech plików. Numery plików są określane tuż po przełącznikach **/FL** i **/FLP** (na przykład `/fl1` i `/flp1` ).  
   
- **/Filelogparameters** (`flp`) przełącza dla plików, 2 i 3, określ, jakie nazwę każdego pliku i co należy uwzględnić w każdym pliku. Nie określono nazwy dla pliku 1, więc domyślną nazwę `msbuild1.log` jest używany.  
+ Przełączniki **/filelogparameters** ( `flp` ) dla plików 2 i 3 określają, co należy nazwać każdy plik i co należy uwzględnić w każdym pliku. Nie określono nazwy dla pliku 1, więc `msbuild1.log` używana jest nazwa domyślna.  
   
 ```  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
   
- Aby uzyskać więcej informacji, zobacz [odwołanie do wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
+ Aby uzyskać więcej informacji, zobacz informacje [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="using-a-custom-logger"></a>Korzystając z niestandardowego urządzenia zapisującego ciąg akcji  
- Można napisać własne rejestratora, tworząc typ zarządzany, który implementuje <xref:Microsoft.Build.Framework.ILogger> interfejsu. Można na przykład użyć Rejestrator niestandardowych, wysłać błędy kompilacji w wiadomości e-mail, rejestrować je do bazy danych lub dziennika je do pliku XML. Aby uzyskać więcej informacji, zobacz [rejestratory kompilacji](../msbuild/build-loggers.md).  
+ Można napisać własny rejestrator, tworząc zarządzany typ, który implementuje <xref:Microsoft.Build.Framework.ILogger> interfejs. Możesz użyć niestandardowego rejestratora, na przykład w celu wysłania błędów kompilacji w wiadomości e-mail, zarejestrowania ich w bazie danych lub zarejestrowania ich w pliku XML. Aby uzyskać więcej informacji, zobacz [rejestratory kompilacji](../msbuild/build-loggers.md).  
   
- W wierszu polecenia programu MSBuild, należy określić Rejestrator niestandardowych za pomocą **/logger** przełącznika. Można również użyć **/noconsolelogger** przełącznik wyłączający rejestratora konsoli do domyślnego.  
+ W wierszu polecenia programu MSBuild należy określić rejestratora niestandardowego przy użyciu przełącznika **/Logger** . Można również użyć przełącznika **/noconsolelogger** , aby wyłączyć domyślny Rejestrator konsoli.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.Build.Framework.LoggerVerbosity>   
  [Rejestratory kompilacji](../msbuild/build-loggers.md)   
- [Logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md)   
- [Tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md)   
+ [Rejestrowanie w środowisku wieloprocesorowym](../msbuild/logging-in-a-multi-processor-environment.md)   
+ [Tworzenie rejestratorów przekazywania](../msbuild/creating-forwarding-loggers.md)   
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

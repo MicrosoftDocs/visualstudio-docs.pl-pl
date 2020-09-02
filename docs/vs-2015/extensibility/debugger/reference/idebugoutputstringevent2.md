@@ -1,5 +1,5 @@
 ---
-title: IDebugOutputStringEvent2 | Dokumentacja firmy Microsoft
+title: IDebugOutputStringEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 844d93a6752538c6b7239b6c10688fdfbd98b401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695188"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs jest wysyłane przez aparat debugowania (DE) do Menedżer debugowania sesji (SDM) w danych wyjściowych ciąg.  
+Ten interfejs jest wysyłany przez aparat debugowania (DE) do Menedżera debugowania sesji (SDM) do wyprowadzania ciągu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,29 +31,29 @@ IDebugOutputStringEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- DE implementuje ten interfejs, aby wysłać ciąg **dane wyjściowe** okna środowiska IDE. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) dostęp do `IDebugEvent2` interfejsu.  
+ DE implementuje ten interfejs, aby wysłać ciąg do okna **dane wyjściowe** IDE. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany w tym samym obiekcie co ten interfejs. Model SDM używa [metody QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) do uzyskiwania dostępu do `IDebugEvent2` interfejsu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- DE tworzy i wysyła tego obiektu zdarzenia do wysłania ciąg **dane wyjściowe** okna. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
+ Po utworzeniu i wysłaniu tego obiektu zdarzenia w celu wysłania ciągu do okna **danych wyjściowych** . Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , która jest dostarczana przez model SDM, gdy jest dołączona do debugowanego programu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugOutputStringEvent2`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metodę `IDebugOutputStringEvent2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Pobiera komunikat zawiera.|  
+|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Pobiera komunikat, który ma być odtwarzany.|  
   
 ## <a name="remarks"></a>Uwagi  
- Na przykład w niezarządzanym kodzie ciągów jako dane wyjściowe mogą pochodzić debugowanego wysyła ciąg do Win32 `OutputDebugString` funkcji. Ten ciąg jest przechwycony przez DE i wysłane na SDM jako `IDebugOutputStringEvent2` zdarzeń.  
+ Na przykład w kodzie niezarządzanym ciąg, który ma być wynikiem, może pochodzić, gdy debugowany program wysyła ciąg do `OutputDebugString` funkcji Win32. Ten ciąg jest przechwytywany przez DE i wysłane do modelu SDM jako `IDebugOutputStringEvent2` zdarzenie.  
   
- Użyj [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) można wysłać komunikatu, który wymaga odpowiedź użytkownika.  
+ Użyj [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) , aby wysłać komunikat wymagający odpowiedzi użytkownika.  
   
- Użyj [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) Aby wysłać komunikat o błędzie, który nie wymaga odpowiedzi.  
+ Użyj [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) , aby wysłać komunikat o błędzie, który nie wymaga odpowiedzi.  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

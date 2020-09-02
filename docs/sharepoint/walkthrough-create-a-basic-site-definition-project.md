@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016772"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Przewodnik: Tworzenie podstawowego projektu definicji lokacji
@@ -39,7 +40,7 @@ ms.locfileid: "86016772"
 
 - Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. Aby uzyskać więcej informacji, zobacz Wymagania dotyczące opracowywania rozwiązań programu SharePoint.
 
-- Program Visual Studio.
+- Programu Visual Studio.
 
 ## <a name="create-a-site-definition-solution"></a>Tworzenie rozwiązania definicji lokacji
  Najpierw utwórz projekt definicji lokacji w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -180,6 +181,6 @@ ms.locfileid: "86016772"
 
      Tekst jest wyświetlany w etykiecie po prawej stronie przycisku.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Tworzenie odbiorcy zdarzeń](../sharepoint/how-to-create-an-event-receiver.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

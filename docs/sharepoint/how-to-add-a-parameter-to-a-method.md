@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016714"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Instrukcje: Dodawanie parametru do metody
@@ -52,7 +53,7 @@ ms.locfileid: "86016714"
 
 8. Modyfikuj deskryptor typu parametru. Aby uzyskać więcej informacji, zobacz [How to: define The Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Instrukcje: Definiowanie deskryptora typu dla parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)

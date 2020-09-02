@@ -1,5 +1,5 @@
 ---
-title: Przekształcenia w programie MSBuild | Dokumentacja firmy Microsoft
+title: Przekształcenia programu MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,48 +13,48 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426036"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64793902"
 ---
 # <a name="msbuild-transforms"></a>Przekształcenia w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Transformacja jest konwersją jeden do jednego jeden element listy do innej. Oprócz włączenia projektu można przekonwertować listy elementów, przekształcenia umożliwia docelowego w celu identyfikowania bezpośrednie mapowanie między ich dane wejściowe i wyjściowe. W tym temacie opisano przekształceń i w jaki sposób [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] są one używane do kompilowania projektów wydajniej.  
+Transformacja jest konwersją jeden do jednego z jednej listy elementów na inną. Poza umożliwieniem projektowi konwersji list elementów, transformacja umożliwia obiektowi docelowemu znalezienie bezpośredniego mapowania między danymi wejściowymi i wyjściowymi. W tym temacie objaśniono transformacje i jak program [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] używa ich do bardziej wydajnego kompilowania projektów.  
   
-## <a name="transform-modifiers"></a>Przekształcanie modyfikatorów  
- Przekształcenia nie dowolnego, ale są ograniczone dzięki specjalnej składni, w którym wszystkie przekształcenia Modyfikatory musi być w formacie %(*ItemMetaDataName*). Wszystkie metadane elementu może służyć jako modyfikator transformacji. W tym metadane dobrze znanego elementu, który jest przypisany do każdego elementu po jego utworzeniu. Aby uzyskać listę metadane dobrze znanego elementu, zobacz [metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md).  
+## <a name="transform-modifiers"></a>Przekształć Modyfikatory  
+ Przekształcenia nie są dowolne, ale są ograniczone przez specjalną składnię, w której wszystkie Modyfikatory transformacji muszą mieć format%(*ItemMetaDataName*). Wszystkie metadane elementu mogą być używane jako modyfikator przekształcania. Obejmuje to metadane dobrze znanego elementu, które są przypisywane do każdego elementu podczas jego tworzenia. Aby uzyskać listę dobrze znanych metadanych elementu, zobacz [dobrze znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).  
   
- W poniższym przykładzie lista plików resx jest przekształcana na listę plików Resources. Modyfikator przekształcenie %(filename) określa, czy każdego pliku Resources ma taką samą nazwę jak odpowiadający mu plik Resx.  
+ W poniższym przykładzie lista plików resx jest przekształcana na listę plików Resources. Modyfikator przekształcenia% (filename) określa, że każdy plik resources ma taką samą nazwę jak plik. resx.  
   
 ```  
 @(RESXFile->'%(filename).resources')  
 ```  
   
 > [!NOTE]
-> Można określić niestandardowe separatora listy elementów przekształcone w taki sam sposób określ separatora listy standardowych elementów. Na przykład aby rozdzielić listę elementów przekształcony za pomocą przecinka (,) zamiast domyślnej średnika (;), należy użyć następujący kod XML.  
+> Możesz określić niestandardowy separator dla listy przekształconych elementów w ten sam sposób, w jaki określisz separator dla standardowej listy elementów. Na przykład, aby oddzielić listę przekształconych elementów przy użyciu przecinka (,) zamiast domyślnego średnika (;), użyj poniższego kodu XML.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
 ```  
   
- Na przykład, jeśli elementy na liście elementu @(RESXFile) `Form1.resx`, `Form2.resx`, i `Form3.resx`, będą dane wyjściowe na liście po przekształceniu `Form1.resources`, `Form2.resources`, i `Form3.resources`.  
+ Na przykład, jeśli elementy na liście elementów @ (RESXFile) to `Form1.resx` , `Form2.resx` , i `Form3.resx` , dane wyjściowe z przekształconej listy będą `Form1.resources` , `Form2.resources` i `Form3.resources` .  
   
-## <a name="using-multiple-modifiers"></a>Za pomocą wielu modyfikatorów  
- Wyrażenie przekształcania może zawierać wiele modyfikatorów, których można łączyć w dowolnej kolejności i można powtarzać. W poniższym przykładzie nazwę katalogu, który zawiera pliki jest zmieniany, ale pliki zachować oryginalne rozszerzenie nazwy i pliku nazwy.  
+## <a name="using-multiple-modifiers"></a>Używanie wielu modyfikatorów  
+ Wyrażenie przekształcenia może zawierać wiele modyfikatorów, które mogą być połączone w dowolnej kolejności i mogą być powtarzane. W poniższym przykładzie nazwa katalogu zawierającego pliki jest zmieniana, ale pliki zachowują oryginalną nazwę i rozszerzenie nazwy pliku.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   
- Na przykład, jeśli elementy, które są zawarte w `RESXFile` są listy elementów `Project1\Form1.resx`, `Project1\Form2.resx`, i `Project1\Form3.text`, będą dane wyjściowe na liście po przekształceniu `Toolset\Form1.resx`, `Toolset\Form2.resx`, i `Toolset\Form3.text`.  
+ Na przykład, jeśli elementy, które znajdują się na `RESXFile` liście elementów są `Project1\Form1.resx` , `Project1\Form2.resx` , i `Project1\Form3.text` , dane wyjściowe z przekształconej listy będą `Toolset\Form1.resx` , `Toolset\Form2.resx` i `Toolset\Form3.text` .  
   
 ## <a name="dependency-analysis"></a>Analiza zależności  
- Przekształcenia gwarantuje mapowanie jeden do jednego między listy elementów przekształcone i oryginalnej listy elementów. W związku z tym, jeśli obiekt docelowy tworzy dane wyjściowe, które są przekształcenia danych wejściowych, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] można analizować sygnatury czasowe z wejściami i wyjściami i zdecyduj, czy chcesz pominąć, tworzenie lub częściowo odbudować obiektu docelowego.  
+ Transformacje gwarantują mapowanie jeden do jednego między listą przekształconych elementów a listą pierwotnych elementów. W związku z tym, jeśli obiekt docelowy tworzy wyjścia, które są przekształcane dane wejściowe, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] może analizować sygnatury czasowe wejść i wyjść oraz decydować, czy pominąć, skompilować lub częściowo skompilować element docelowy.  
   
- W [zadanie kopiowania](../msbuild/copy-task.md) w poniższym przykładzie każdy plik w `BuiltAssemblies` listy elementów mapy do pliku w folderze docelowym zadania określone za pomocą przekształcenia w `Outputs` atrybutu. Jeśli plik w `BuiltAssemblies` elementu Lista zmian `Copy` zadanie będzie uruchamiane tylko w przypadku zmienionego pliku i wszystkie inne pliki zostaną pominięte. Aby uzyskać więcej informacji na temat analizy zależności oraz jak użyć przekształceń, zobacz [jak: Kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md).  
+ W [zadaniu Copy](../msbuild/copy-task.md) w poniższym przykładzie każdy plik na `BuiltAssemblies` liście elementów jest mapowany do pliku w folderze docelowym zadania, określonym przy użyciu transformacji w `Outputs` atrybucie. Jeśli plik na `BuiltAssemblies` liście elementów ulegnie zmianie, `Copy` zadanie zostanie uruchomione tylko dla zmienionego pliku, a wszystkie pozostałe pliki zostaną pominięte. Aby uzyskać więcej informacji na temat analizy zależności i sposobu używania transformacji, zobacz [How to: build przyrostowo](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -71,7 +71,7 @@ Transformacja jest konwersją jeden do jednego jeden element listy do innej. Opr
 ## <a name="example"></a>Przykład  
   
 ### <a name="description"></a>Opis  
- W poniższym przykładzie przedstawiono [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu, który używa przekształcenia. W tym przykładzie przyjęto założenie, że istnieje tylko jeden plik XSD w katalogu c:\sub0\sub1\sub2\sub3 i że katalog roboczy jest c:\sub0.  
+ Poniższy przykład pokazuje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plik projektu, który używa transformacji. W tym przykładzie przyjęto założenie, że w katalogu c:\sub0\sub1\sub2\sub3 istnieje tylko jeden plik XSD, a katalog roboczy to c:\sub0.  
   
 ### <a name="code"></a>Kod  
   
@@ -110,5 +110,5 @@ extension: .xsd
   
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
- [Instrukcje: kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md)
+ [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)   
+ [Instrukcje: Kompilacja przyrostowa](../msbuild/how-to-build-incrementally.md)

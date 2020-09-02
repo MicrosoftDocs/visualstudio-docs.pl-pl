@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e6237ace96799961683b0b0431f5dad3ab679e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670209"
 ---
 # <a name="add-new-item-command"></a>Dodaj nowy element — Polecenie
@@ -33,24 +33,24 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `filename` opcjonalny. Ścieżka i nazwa pliku elementu, który ma zostać dodany do rozwiązania.
+ `filename` Obowiązkowe. Ścieżka i nazwa pliku elementu, który ma zostać dodany do rozwiązania.
 
 ## <a name="switches"></a>Przełączniki
  /t: `templatename` opcjonalne. Określa typ pliku, który ma zostać utworzony. Jeśli nie podano nazwy szablonu, plik tekstowy jest tworzony domyślnie.
 
- Składnia argumentów/t: `templatename` odzwierciedla informacje znajdujące się w oknie dialogowym **Dodaj nowy element rozwiązania** . Należy wprowadzić kompletną kategorię, a następnie typ pliku, oddzielając nazwę kategorii od typu pliku przez ukośnik odwrotny (`\`) i otaczając cały ciąg w cudzysłowie.
+ Składnia/t: `templatename` argument odzwierciedla informacje znajdujące się w oknie dialogowym **Dodaj nowy element rozwiązania** . Należy wprowadzić kompletną kategorię, a następnie typ pliku, oddzielając nazwę kategorii od typu pliku przez ukośnik odwrotny ( `\` ) i otaczając cały ciąg w cudzysłowie.
 
- Na przykład, aby utworzyć nowy plik tekstowy, dla argumentu/t: `templatename` wprowadź następujące polecenie.
+ Na przykład, aby utworzyć nowy plik tekstowy, należy wprowadzić następujące polecenie dla/t: `templatename` argumentu.
 
 ```
 /t:"General\Style Sheet"
 ```
 
- /e: `editorname` opcjonalny. Nazwa edytora, w którym plik zostanie otwarty. Jeśli argument jest określony, ale nie zostanie podana nazwa edytora, pojawi się okno dialogowe **Otwórz za pomocą** .
+ /e: `editorname` opcjonalne. Nazwa edytora, w którym plik zostanie otwarty. Jeśli argument jest określony, ale nie zostanie podana nazwa edytora, pojawi się okno dialogowe **Otwórz za pomocą** .
 
- Składnia argumentów/e: `editorname` używa nazw edytorów, które są wyświetlane w **oknie dialogowym Otwórz za pomocą**, ujęte w cudzysłów.
+ Składnia/e: `editorname` argument używa nazw edytorów, jak pojawiają się w **oknie dialogowym Otwórz za pomocą**, ujętym w cudzysłów.
 
- Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego, należy wprowadzić następujące polecenie dla argumentu/e: `editorname`.
+ Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego, dla argumentu/e: należy wprowadzić następujące elementy `editorname` .
 
 ```
 /e:"Source Code (text) Editor"

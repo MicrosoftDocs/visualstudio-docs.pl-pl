@@ -1,5 +1,5 @@
 ---
-title: Odwołanie do schematu szablonu programu Visual Studio | Dokumenty firmy Microsoft
+title: Odwołanie do schematu szablonu programu Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,22 +14,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 49e41431938eed0078f6cbb241d3d62812899942
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697973"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Odwołanie do schematu szablonu programu Visual Studio
-Ta sekcja zawiera informacje o elementach XML w plikach *vstemplate,* które są plikami przechowującymi metadane szablonów projektów, szablonów elementów i zestawów startowych.
+Ta sekcja zawiera informacje o elementach XML w plikach *. vstemplate* , które są plikami, które przechowują metadane szablonów projektu, szablonów elementów i zestawów początkowych.
 
- Za pomocą *pliku vstemplate.xsd* można sprawdzić poprawność niestandardowych plików *.vstemplate.* Ten plik jest dostępny pod adresem *.. Folder \\instalacyjny programu Visual Studio>\Xml\Schemas\1033\vstemplate.xsd \<*.
+ Można użyć *vstemplate. xsd* do walidacji niestandardowych plików *. vstemplate* . Ten plik jest dostępny pod adresem *.. \\ \<Visual Studio installation folder> \Xml\Schemas\1033\vstemplate.xsd*.
 
 |Element|Elementy podrzędne|Atrybuty|
 |-------------|--------------------|----------------|
-|[Appliesto](../extensibility/appliesto-element-visual-studio-templates.md)|Brak|Brak|
-|[Montaż (szablon)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
-|[Montaż (rozszerzenie kreatora)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
+|[Zignorowan](../extensibility/appliesto-element-visual-studio-templates.md)|Brak|Brak|
+|[Zestaw (szablon)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
+|[Zestaw (rozszerzenie kreatora)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
@@ -43,15 +43,15 @@ Ta sekcja zawiera informacje o elementach XML w plikach *vstemplate,* które są
 |[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Folder|Nazwa|
 ||[przestarzały]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
-|[Ukryty](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
-|[Ikona](../extensibility/icon-element-visual-studio-templates.md):|--|Pakiet<br /><br /> ID|
+|[Ukryte](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
+|[Ikona](../extensibility/icon-element-visual-studio-templates.md)|--|Pakiet<br /><br /> ID|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
 |[Nazwa](../extensibility/name-element-visual-studio-templates.md)|--|Pakiet<br /><br /> ID|
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
-|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Folder<br /><br /> ProjectItem|Plik<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
+|[Project](../extensibility/project-element-visual-studio-templates.md)|Folder<br /><br /> ProjectItem|Plik<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|
 |[ProjectItem (szablony elementów)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|SubType<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
 |[ProjectItem (szablony projektów)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|
@@ -60,11 +60,11 @@ Ta sekcja zawiera informacje o elementach XML w plikach *vstemplate,* które są
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
-|[Tematy pomocy](../extensibility/reference-element-visual-studio-templates.md)|Zestaw|--|
-|[Dokumentacja](../extensibility/references-element-visual-studio-templates.md)|Tematy pomocy|--|
+|[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Zestaw|--|
+|[Dokumentacja](../extensibility/references-element-visual-studio-templates.md)|Dokumentacja|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Wersja|
-|[Wniosek SDK](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Pakiet|
+|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Pakiet|
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|Nazwa|
 |[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|

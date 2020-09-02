@@ -1,5 +1,5 @@
 ---
-title: TYP WIADOMOŚCI | Dokumenty firmy Microsoft
+title: MESSAGETYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b4d0fd12495a59427500c16ef6f37d9f8b6e61f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714501"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Określa typ i przyczynę wiadomości.
+Określa typ komunikatu i przyczynę.
 
 ## <a name="syntax"></a>Składnia
 
@@ -52,32 +52,32 @@ public enum enum_MESSAGETYPE { 
 
 ## <a name="fields"></a>Pola
  `MT_OUTPUTSTRING`\
- Wskazuje, że wiadomość powinna zostać wysłana do okna danych wyjściowych. To wzajemnie się `MT_MESSAGEBOX`wyklucza z .
+ Wskazuje, że wiadomość powinna zostać wysłana do okna danych wyjściowych. Jest to wzajemnie wykluczające się z `MT_MESSAGEBOX` .
 
  `MT_MESSAGEBOX`\
- Wskazuje, że wiadomość powinna być wyświetlana w oknie komunikatu. To wzajemnie się `MT_OUTPUTSTRING`wyklucza z .
+ Wskazuje, że komunikat powinien być wyświetlany w oknie komunikatu. Jest to wzajemnie wykluczające się z `MT_OUTPUTSTRING` .
 
  `MT_TYPE_MASK`\
- Wartość maski do wyizolowania miejsca docelowego dla wiadomości.
+ Wartość maski służąca do izolowania miejsca docelowego wiadomości.
 
  `MT_REASON_EXCEPTION`\
- Wskazuje, że okno komunikatu jest wyświetlane w wyniku wyjątku. To wzajemnie się `MT_REASON_TRACEPOINT`wyklucza z .
+ Wskazuje, że w wyniku wyjątku zostanie wyświetlone okno komunikatu. Jest to wzajemnie wykluczające się z `MT_REASON_TRACEPOINT` .
 
  `MT_REASON_TRACEPOINT`\
- Wskazuje, że okno komunikatu jest wyświetlane w wyniku trafienia w punkt śledzenia. To jest wzajemnie `MT_REASON_EXCEPTION`się wykluczają .
+ Wskazuje, że okno komunikatu jest wyświetlane w wyniku naciśnięcia punkt śledzenia. Jest to wzajemnie wykluczające się z `MT_REASON_EXCEPTION` .
 
  `MT_REASON_MASK`\
- Wartość maski do wyizolowania przyczyny wyświetlenia wiadomości.
+ Wartość maski służąca do oddzielenia przyczyny wyświetlania komunikatu.
 
 ## <a name="remarks"></a>Uwagi
- Te wartości są zwracane z [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) i [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) metody.
+ Te wartości są zwracane z metod [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) i [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) .
 
- Jedną z wartości przyczyny można połączyć z jedną z `OR`wyjściowych wartości docelowych za pomocą bitowego .
+ Jedną z wartości przyczyn można łączyć z jedną z wyjściowych wartości docelowych przy użyciu bitowej `OR` .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

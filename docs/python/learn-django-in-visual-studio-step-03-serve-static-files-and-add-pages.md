@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238533"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Krok 3. obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów z aplikacją Django

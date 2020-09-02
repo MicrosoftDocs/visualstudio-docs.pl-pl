@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670487"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w Visual Studio
@@ -37,7 +37,7 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
 
 - W którym kontekście jesteś w momencie wybierania skrótu. Na przykład skrót F2 wywołuje polecenie Edit.EditCell, jeśli używasz Projektanta ustawień, i polecenie File.Rename, jeśli używasz Eksploratora zespołów.
 
-  Niezależnie od ustawień, dostosowania i kontekstu, można zawsze znaleźć i zmienić skrót klawiaturowy w oknie dialogowym **Opcje** . Możesz również wyszukać domyślne skróty klawiaturowe kilku poleceń w [domyślnych skrótach klawiaturowych dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)i można znaleźć pełną listę wszystkich skrótów domyślnych (na podstawie ogólnych ustawień programistycznych). [ Skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+  Niezależnie od ustawień, dostosowania i kontekstu, można zawsze znaleźć i zmienić skrót klawiaturowy w oknie dialogowym **Opcje** . Możesz również wyszukać domyślne skróty klawiaturowe kilku poleceń w [domyślnych skrótach klawiaturowych dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)i można znaleźć pełną listę wszystkich skrótów domyślnych (na podstawie ogólnych ustawień deweloperskich) w [domyślnych skrótach klawiaturowych](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
   **W tym temacie**
 
@@ -52,7 +52,7 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
 > [!NOTE]
 > Twoje ustawienia i wersja programu Visual Studio mogą zmienić nazwy i lokalizacje poleceń menu oraz opcje, które pojawiają się w oknach dialogowych. Ten temat jest oparty na **ogólnych ustawieniach deweloperskich**.
 
-## <a name="bkmk_identify"></a>Identyfikowanie skrótu klawiaturowego
+## <a name="identifying-a-keyboard-shortcut"></a><a name="bkmk_identify"></a> Identyfikowanie skrótu klawiaturowego
 
 1. Na pasku menu wybierz **Narzędzia**, **Opcje**.
 
@@ -72,7 +72,7 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
 
      ![Wyświetl skrót do określonego polecenia](../ide/media/viewshortcut.png "ViewShortcut")
 
-## <a name="bkmk_assign"></a>Dostosowywanie skrótu klawiaturowego
+## <a name="customizing-a-keyboard-shortcut"></a><a name="bkmk_assign"></a> Dostosowywanie skrótu klawiaturowego
 
 1. Na pasku menu wybierz **Narzędzia**, **Opcje**.
 
@@ -107,7 +107,7 @@ Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio,
     > [!NOTE]
     > Jeśli określisz inny skrót dla polecenia, wybierz przycisk **Przypisz** , a następnie wybierz przycisk **Anuluj** , okno dialogowe zostanie zamknięte, ale zmiana nie zostanie wycofana.
 
-## <a name="bkmk_transfer"></a>Udostępnianie niestandardowych skrótów klawiaturowych
+## <a name="sharing-custom-keyboard-shortcuts"></a><a name="bkmk_transfer"></a> Udostępnianie niestandardowych skrótów klawiaturowych
  Możesz udostępniać własne skróty, eksportując je do pliku, a następnie przekazując plik innym osobom, aby mogły importować dane.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Aby wyeksportować tylko skróty klawiaturowe

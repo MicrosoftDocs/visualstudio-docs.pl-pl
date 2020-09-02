@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845519"
 ---
 # <a name="creating-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
@@ -40,9 +40,9 @@ Program instalacyjny jest instalatorem ogólnym, który można skonfigurować w 
   
  Aby utworzyć pakiet programu inicjującego, należy podać redystrybucyjny w postaci pliku EXE lub MSI file.to Generator manifestu programu inicjującego. Następnie Generator manifestu programu inicjującego tworzy następujące pliki:  
   
-- Manifest produktu, Product. XML, który zawiera metadane niezależne od języka dla pakietu. Zawiera metadane wspólne dla wszystkich zlokalizowanych wersji składnika redystrybucyjnego.  
+- Manifest produktu product.xml, który zawiera wszelkie metadane niezależne od języka pakietu. Zawiera metadane wspólne dla wszystkich zlokalizowanych wersji składnika redystrybucyjnego.  
   
-- Manifest pakietu, Package. XML, który zawiera metadane specyficzne dla języka; zwykle zawiera zlokalizowane komunikaty o błędach. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika.  
+- Manifest pakietu, package.xml, zawierający metadane specyficzne dla języka; zwykle zawiera zlokalizowane komunikaty o błędach. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika.  
   
   Po utworzeniu tych plików Umieść plik manifestu produktu w folderze o nazwie niestandardowego programu inicjującego. Plik manifestu pakietu przechodzi do folderu o nazwie dla ustawień regionalnych. Jeśli na przykład plik manifestu pakietu jest przeznaczony do redystrybucji w języku angielskim, należy umieścić go w folderze o nazwie en. Powtórz ten proces dla każdego ustawienia regionalnego, takiego jak ja dla języka japońskiego i Cofnij dla języka niemieckiego. Ostatni niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.  
   
@@ -106,7 +106,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |ProcessorArchitecture|Procesor i bity dla poszczególnych wyrazów platformy, do których odnoszą się pliki wykonywalne. Dostępne są następujące wartości:<br /><br /> — Intel<br />— IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Numer wersji dla systemów operacyjnych Microsoft Windows 95, Windows 98 lub Windows ME. Składnia wersji to główna. pomocnicza. dodatek Service Pack.|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Numer wersji dla systemów operacyjnych Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 lub Windows 7. Składnia wersji to główna. pomocnicza. dodatek Service Pack.|  
-|[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Wersja zestawu Instalator Windows (msi. dll) jest uruchamiana podczas instalacji.|  
+|[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Wersja zestawu Instalator Windows (msi.dll) uruchamiana podczas instalacji.|  
 |[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Ta właściwość jest ustawiona, jeśli użytkownik ma uprawnienia administratora. Wartości mają wartość true lub false.|  
 |Installmode|Tryb instalacji wskazuje, gdzie należy zainstalować składnik. Dostępne są następujące wartości:<br /><br /> -HomeSite — wymagania wstępne są instalowane z witryny sieci Web dostawcy.<br />-SpecificSite — wymagania wstępne są instalowane z wybranej lokalizacji.<br />-SameSite — wymagania wstępne są instalowane z tej samej lokalizacji, w której znajduje się aplikacja.|  
   
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Lista redystrybucyjna to plik XML, który należy nazwać, używając następującego formatu: *Nazwa firmy*. *Nazwa składnika*. RedistList. XML. Tak więc, na przykład, jeśli składnik jest wywoływany przez Acme, użyj Acme. DataWidgets. RedistList. XML. Przykład zawartości listy redystrybucyjnej może wyglądać następująco:  
+ Lista redystrybucyjna to plik XML, który należy nazwać, używając następującego formatu: *Nazwa firmy*. *Nazwa składnika*.RedistList.xml. Tak więc, na przykład, jeśli składnik jest wywoływany przez Acme, użyj Acme.DataWidgets.RedistList.xml. Przykład zawartości listy redystrybucyjnej może wyglądać następująco:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -126,6 +126,6 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- Okno [dialogowe wymagania wstępne](../ide/reference/prerequisites-dialog-box.md)   
- [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)   
+ [Wymagania wstępne — okno dialogowe](../ide/reference/prerequisites-dialog-box.md)   
+ [Dokumentacja schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)   
  [Aby rozpocząć instalację, użyj programu inicjującego Visual Studio 2005](https://msdn.microsoft.com/magazine/cc163899.aspx)

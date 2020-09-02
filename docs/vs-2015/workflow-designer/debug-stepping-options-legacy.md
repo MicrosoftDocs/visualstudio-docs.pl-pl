@@ -16,14 +16,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656878"
 ---
 # <a name="debug-stepping-options-legacy"></a>Opcje debugowania wykonywania krokowego (starsza wersja)
-W tym temacie opisano sposób debugowania aplikacji [!INCLUDE[wf](../includes/wf-md.md)], które mają współbieżne działania w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób debugowania [!INCLUDE[wf](../includes/wf-md.md)] aplikacji, które mają współbieżne działania w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  Podczas debugowania starszych działań, które są wykonywane współbieżnie, takich jak **działaniu ParallelActivity** lub **ConditionedActivityGroup**, można użyć jednej z poniższych dwóch opcji, aby krokowo przekroczyć swój kod.
 

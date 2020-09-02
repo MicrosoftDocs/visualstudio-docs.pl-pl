@@ -1,5 +1,5 @@
 ---
-title: Ograniczenia długości ciągów | Dokumentacja firmy Microsoft
+title: Ograniczenia dotyczące długości ciągu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc6ff1e77a9a973e184384d98ef8b880aaa2f005
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432535"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64794691"
 ---
 # <a name="restrictions-on-string-lengths"></a>Ograniczenia długości ciągów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Interfejs API wtyczki kontroli źródła ogranicza długości ciągów używanych w różnych funkcji.  
+Interfejs API wtyczki kontroli źródła ogranicza długość ciągów używanych w różnych funkcjach.  
   
 ## <a name="string-length-values"></a>Wartości długości ciągu  
   
@@ -32,7 +32,7 @@ Interfejs API wtyczki kontroli źródła ogranicza długości ciągów używanyc
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
-> Długość nie obejmuje kończących się `null`. Inne stałych z sufiksem "_rozmiar" zamiast "_LEN" uwzględnić miejsce do zakończenia `null`.  
+> Długość nie obejmuje zakończenia `null` . Inne stałe z sufiksem "_SIZE" zamiast "_LEN" obejmują miejsce dla zakończenia `null` .  
   
 |Stała|Wartość|  
 |--------------|-----------|  

@@ -1,5 +1,5 @@
 ---
-title: Odłącz | Dokumentacja firmy Microsoft
+title: Odłącz | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,23 +10,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b35765614f57350cdace560aa61c721cc831581
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444024"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64794166"
 ---
 # <a name="detach"></a>Odłącz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPerfCmd.exe **Odłącz** opcji rozłącza profiler określone procesy lub wszystkich procesów, jeśli żaden nie jest określony. Profilowanie musi zostać zainicjowany przy użyciu metody próbkowania.  
+Opcja **Odłączania** VSPerfCmd.exe rozłącza Profiler od określonych procesów lub wszystkich procesów, jeśli nie zostały określone. Profilowanie musi zostać zainicjowane przy użyciu metody próbkowania.  
   
- Profilowanie, który został uruchomiony z oboma **Uruchom** lub **Attach** opcji może zostać rozłączona za pomocą **Odłącz**. Program profilujący może być reattched przy użyciu kolejnych **Dołącz** poleceń.  
+ Profilowanie uruchomione przy użyciu opcji **Uruchom** lub **dołączania** można rozłączyć z **odłączeniem**. Profiler może być reattched za pomocą kolejnych poleceń **Attach** .  
   
- **Odłącz** nie zamknąć plik danych profilowania. Użyj **zamknięcia** opcję, aby zakończyć, profilowanie i zamknąć plik danych.  
+ **Odłącz** nie zamyka pliku danych profilowania. Użyj opcji **zamykania** , aby zakończyć profilowanie i zamknąć plik danych.  
   
 > [!NOTE]
-> Jeśli **Start** została określona opcja **Crosssession** opcji wszelkie wywołania **VSPerfCmd /Attach** lub **VSPerfCmd/detach** musi również określić **Crosssession**.  
+> Jeśli opcja **Start** została określona przy użyciu opcji **CrossSession** , wszystkie wywołania **VSPerfCmd/Attach** lub **VSPerfCmd/detach** muszą również określać **CrossSession**.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,22 +36,22 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
   
 #### <a name="parameters"></a>Parametry  
  `PIDs|ProcessNames`  
- `PID` Identyfikator systemu liczbowego jeden lub więcej procesów.  
+ `PID` -Identyfikator systemowy z co najmniej jednym procesem.  
   
- `ProcessNames` — Nazwa procesu. Jeśli korzystasz z wielu wystąpień procesu o nazwie, wyniki są nieprzewidywalne.  
+ `ProcessNames` -Nazwa procesu. Jeśli jest uruchomionych wiele wystąpień nazwanego procesu, wyniki są nieprzewidywalne.  
   
- Wiele procesów należy oddzielić przecinkami.  
+ Rozdziel wiele procesów przecinkami.  
   
- Jeśli żaden proces nie zostanie określony, program profilujący jest odłączony od wszystkich profilowanych procesów.  
+ Jeśli żaden proces nie zostanie określony, profiler zostanie odłączony ze wszystkich profilowanych procesów.  
   
 ## <a name="valid-options"></a>Prawidłowe opcje  
- Następujące **VSPerfCmd** opcje można łączyć z **Dołącz** opcji w pojedynczym wierszu polecenia.  
+ Następujące opcje **VSPerfCmd** można łączyć z opcją **Attach** w pojedynczym wierszu polecenia.  
   
- **Crosssession**  
- Włącza profilowanie aplikacji w sesjach innych niż sesji logowania. Jeśli wymagane **Start** została określona opcja **Crosssession** opcji.  
+ **CrossSession**  
+ Włącza Profilowanie aplikacji w sesjach innych niż sesja logowania. Wymagane, jeśli opcja **Start** została określona z opcją **CrossSession** .  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie **Odłącz** polecenie wstrzymuje, profilowanie i **zamknięcia** polecenia zamyka pliku danych profilera.  
+ W tym przykładzie polecenie **Odłącz** zawiesza profilowanie, a polecenie **Shutdown** zamyka plik danych profilera.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -63,6 +63,6 @@ VSPerfCmd.exe /Shutdown
   
 ## <a name="see-also"></a>Zobacz też  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web platformy ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilowania aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

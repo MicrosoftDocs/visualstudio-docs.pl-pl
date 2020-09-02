@@ -1,5 +1,5 @@
 ---
-title: Za pomocą Menedżera tekstu do monitorowania ustawień globalnych | Dokumentacja firmy Microsoft
+title: Używanie Menedżera tekstów do monitorowania ustawień globalnych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,34 +12,34 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ece51450b8344ae4715a912399ec538171a26a5c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695465"
 ---
-# <a name="using-the-text-manager-to-monitor-global-settings"></a>Za pomocą Menedżera tekstu do monitorowania ustawień globalnych
+# <a name="using-the-text-manager-to-monitor-global-settings"></a>Używanie menedżera tekstu do monitorowania ustawień globalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W przypadku zastosowania edytorze podstawowych, należy monitorować zmiany wprowadzone do ustawień globalnych, ponieważ te zmiany mogą wpłynąć na wystąpienie edytora. Możesz śledzić zmiany przez nasłuchiwanie zdarzeń zgłaszanych przez Menedżer tekstu. Na przykład po określeniu globalne preferencje wygląd i zachowanie składnika w edytorze podstawowych, takich jak jego obiekt danych dokumentów, Menedżer tekstu przechowuje te informacje i przesyła je do wszystkich klientów, których to dotyczy.  
+W przypadku zaimplementowania edytora podstawowego należy monitorować zmiany wprowadzone w ustawieniach globalnych, ponieważ te zmiany mogą wpływać na wystąpienie edytora. Można śledzić zmiany, nasłuchiwanie zdarzeń zgłaszanych przez Menedżera tekstu. Na przykład po określeniu preferencji globalnych dla wyglądu lub zachowania składnika w edytorze podstawowym, takiego jak obiekt danych dokumentu, Menedżer tekstu przechowuje te informacje i komunikuje go wszystkim klientom, których dotyczy problem.  
   
 ## <a name="text-manager-functions"></a>Funkcje Menedżera tekstu  
- Menedżer tekstu wywołuje zdarzenia, dla liczby ustawienia, takie jak następujące:  
+ Menedżer tekstów zgłasza zdarzenia dla wielu ustawień, w tym następujące:  
   
-- Czy bufor jest pod kontrolą kodu źródłowego  
+- Czy bufor znajduje się pod kontrolą kodu źródłowego  
   
-- Jak zarejestrować dla powiadomień o zmianie pliku  
+- Jak zarejestrować się w celu otrzymywania powiadomień o zmianach plików  
   
-- Sposób śledzić widoków, które są skojarzone z niektórych buforów  
+- Jak śledzić, które widoki są skojarzone z określonymi buforami  
   
-- Preferencje Kolorowanie tekstu  
+- Preferencje kolorowania tekstu  
   
-- Karty w stosunku do miejsca preferencje  
+- Preferencje tabulacji i miejsca  
   
-  Preferencje, które są unikatowe dla danego języka nie są zarządzane przez Menedżera tekstu. Te ustawienia muszą być zarządzane przez poszczególne usługi języka.  
+  Preferencje, które są unikatowe dla danego języka, nie są zarządzane przez Menedżera tekstu. Te ustawienia muszą być zarządzane przez poszczególne usługi językowe.  
   
-  Powiadomienie o zdarzeniu Menedżera tekstu jest świadczona przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfejsu. Implementuje ten interfejs na komputerze klienckim obiektu do obsługi zdarzeń zgłoszone przez Menedżera tekstu. Zarejestruj te zdarzenia za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfejsu na Menedżer tekstu.  
+  Powiadomienie o zdarzeniu dla Menedżera tekstów jest dostarczane przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfejs. Zaimplementuj ten interfejs w obiekcie klienta, aby obsługiwać zdarzenia zgłoszone przez Menedżera tekstu. Możesz zarejestrować się w celu uzyskania tych zdarzeń za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfejsu w Menedżerze tekstu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [W edytorze podstawowych](../extensibility/inside-the-core-editor.md)   
+ [Wewnątrz edytora podstawowego](../extensibility/inside-the-core-editor.md)   
  [Funkcje edytora](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40ae0a08e1623e1b90046d164d8bfe04eaf67229
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656867"
 ---
 # <a name="debugging-legacy-workflows"></a>Debugowanie starszych wersji przepływów pracy
-Jeśli używasz starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] w [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] do kompilowania aplikacji [!INCLUDE[wf](../includes/wf-md.md)], które target.NET Framework 3,0 lub 3,5, można debugować przepływy pracy, podobnie jak każdy inny program, ustawiając punkty przerwania, dołączając do procesów i sprawdzając wątki oraz stos wywołań. Istnieje również możliwość debugowania zdalnego.
+Jeśli używasz starszej wersji programu [!INCLUDE[wfd1](../includes/wfd1-md.md)] w [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] celu kompilowania [!INCLUDE[wf](../includes/wf-md.md)] aplikacji, które Target.NET Framework 3,0 lub 3,5, możesz debugować przepływy pracy, podobnie jak każdy inny program, ustawiając punkty przerwania, dołączając do procesów i badając wątki oraz stos wywołań. Istnieje również możliwość debugowania zdalnego.
 
 > [!NOTE]
 > Jeśli na maszynie zainstalowano i odinstalowano wiele wersji programu Visual Studio, debugowanie WF3 może zakończyć się niepowodzeniem z jedną z dwóch następujących możliwości:
@@ -33,7 +33,7 @@ Jeśli używasz starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)] w [!INCLUDE[vs
 >
 >   Jeśli jeden z tych scenariuszy występuje podczas debugowania .NET Framework 3,0 lub 3,5 przepływów pracy, wykonaj naprawę instalacji programu Visual Studio.
 
- [!INCLUDE[wf2](../includes/wf2-md.md)] integruje się z następującym standardowym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugowania systemu Windows:
+ [!INCLUDE[wf2](../includes/wf2-md.md)] integruje się z następującymi standardowymi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknami debugowania:
 
 - **Punkt przerwania**: działa zgodnie z oczekiwaniami, ale określono działanie dla nazwy funkcji.
 

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 378fc75c3bd392f228ea30d1736f059e0def6d52
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695893"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
@@ -31,28 +31,28 @@ Zapewnia dostęp do rekordów w strumieniu danych debugowania.
 IDiaEnumDebugStreamData : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDiaEnumDebugStreamData`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metody `IDiaEnumDebugStreamData` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) wersję tego modułu wyliczającego.|  
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Pobiera wersję [interfejsu IEnumVARIANT](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) tego modułu wyliczającego.|  
 |[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Pobiera liczbę rekordów w strumieniu danych debugowania.|  
 |[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Pobiera nazwę strumienia danych debugowania.|  
 |[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|Pobiera określony rekord.|  
-|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|Pobiera określoną liczbę rekordów z wyliczany sekwencji.|  
-|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Pomija określoną liczbę rekordów w kolejności wyliczenia.|  
-|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Resetuje sekwencji wyliczany na początku.|  
-|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Tworzy moduł wyliczający, który zawiera tę samą sekwencję wyliczany jako bieżącego modułu wyliczającego.|  
+|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|Pobiera określoną liczbę rekordów z kolejności wyliczanej.|  
+|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Pomija określoną liczbę rekordów w wyliczonej kolejności.|  
+|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Resetuje wyliczeniową sekwencję na początek.|  
+|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Tworzy moduł wyliczający zawierający taką samą sekwencję wyliczaną jak bieżący moduł wyliczający.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs reprezentuje strumień rekordów w strumieniu danych debugowania. Rozmiar i interpretację poszczególnych rekordów jest zależna od strumień danych, który rekord pochodzi. Ten interfejs zapewnia skutecznie dostępu do danych pierwotnych bajtów w pliku symboli.  
+ Ten interfejs reprezentuje strumień rekordów w strumieniu danych debugowania. Rozmiar i interpretacja każdego rekordu zależy od strumienia danych, z którego pochodzi rekord. Ten interfejs skutecznie zapewnia dostęp do nieprzetworzonych bajtów danych w pliku symboli.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołaj [idiaenumdebugstreams::Item —](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) lub [idiaenumdebugstreams::Next —](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) metod w celu uzyskania `IDiaEnumDebugStreamData` obiektu.  
+ Wywołaj metodę [IDiaEnumDebugStreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) lub [IDiaEnumDebugStreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) , aby uzyskać `IDiaEnumDebugStreamData` obiekt.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie pokazano, jak uzyskać dostęp do strumienia danych jednego i jego rekordów.  
+ Ten przykład pokazuje, jak uzyskać dostęp do pojedynczego strumienia danych i jego rekordów.  
   
 ```cpp#  
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)  
@@ -106,13 +106,13 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2. h  
   
- Biblioteka: diaguids.lib  
+ Biblioteka: diaguids. lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaEnumDebugStreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

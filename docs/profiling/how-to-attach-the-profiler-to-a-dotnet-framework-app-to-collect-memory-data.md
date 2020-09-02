@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: dbe8f0cdb976dfb687071b231b2907b6b7124b3a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328740"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
@@ -52,7 +52,7 @@ Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszyst
 
    - Polecenie [/Start](../profiling/start.md)**: Sample** inicjuje profiler.
 
-   - Opcja [/Output](../profiling/output.md)**:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile`Określa nazwę i lokalizację pliku danych profilowania (. vsp).
+   - Opcja [/Output](../profiling/output.md)**:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile` Określa nazwę i lokalizację pliku danych profilowania (. vsp).
 
      Można użyć dowolnej z następujących opcji z opcją **/Start: Sample** .
 
@@ -69,7 +69,7 @@ Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszyst
 
      **VSPerfCmd**[/Attach](../profiling/attach.md) **:**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**:** `Version` ]  
 
-    - `PID`Określa identyfikator procesu aplikacji docelowej. `ProcessName`Określa nazwę procesu. Należy pamiętać, że jeśli określisz `ProcessName` i wiele procesów, które mają taką samą nazwę, wyniki są nieprzewidywalne. Identyfikatory procesów wszystkich uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.
+    - `PID` Określa identyfikator procesu aplikacji docelowej. `ProcessName` Określa nazwę procesu. Należy pamiętać, że jeśli określisz `ProcessName` i wiele procesów, które mają taką samą nazwę, wyniki są nieprzewidywalne. Identyfikatory procesów wszystkich uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.
 
     - **/targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilowania, gdy więcej niż jedna wersja środowiska uruchomieniowego jest załadowana w aplikacji. Opcjonalny.
 

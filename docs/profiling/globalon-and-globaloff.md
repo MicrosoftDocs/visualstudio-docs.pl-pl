@@ -1,5 +1,5 @@
 ---
-title: GlobalOn i GlobalOff | Dokumenty firmy Microsoft
+title: GlobalOn i GlobalOff | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -10,28 +10,28 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74776969"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn i GlobalOff
-Opcje *vsPerfCmd.exe* **GlobalOff** i **GlobalOn** wstrzymują i wznawiają profilowanie wszystkich procesów i wątków w sesji profilowania wiersza polecenia.
+Opcje *VSPerfCmd.exe* **GlobalOff** i **GlobalOn** wstrzymują i wznawiają profilowanie wszystkich procesów i wątków w sesji profilowania wiersza polecenia.
 
- **GlobalOn** i **GlobalOff** można określić jako jedyne opcje w wierszu polecenia *VSPerfCmd.exe* lub dołączyć je do wierszy poleceń, które zawierają również opcje **Start,** **Launch**lub **Attach.**
+ Można określić **GlobalOn** i **GlobalOff** jako jedyne opcje w wierszu polecenia *VSPerfCmd.exe* lub można je uwzględnić w wierszach poleceń, które zawierają również opcje **uruchamiania**, **uruchamiania**lub **dołączania** .
 
- **GlobalOn** i **GlobalOff** można również łączyć z opcjami **ProcessOn**, **ProcessOff**, **ThreadOn**i **ThreadOff.**
+ **GlobalOn** i **GlobalOff** można także łączyć z opcjami **ProcessOn**, **ProcessOff**, **ThreadOn**i **ThreadOff** .
 
- **GlobalOn** i **GlobalOff** opcje interakcji z **ProcessOn** i **ProcessOff** opcje, które kontrolują zbieranie danych dla określonego procesu i **ThreadOn** i **ThreadOff** opcje, które kontrolują zbieranie danych dla określonego wątku.
+ Opcje **GlobalOn** i **GlobalOff** współpracują z opcjami **ProcessOn** i **ProcessOff** kontrolującymi zbieranie danych dla określonego procesu oraz z opcjami **ThreadOn** i **ThreadOff** kontrolującymi zbieranie danych dla określonego wątku.
 
- **GlobalOff** i **GlobalOn** opcje mają również wpływ na globalną liczbę start/stop, który jest manipulowany przez funkcje interfejsu API profilera.
+ Opcje **GlobalOff** i **GlobalOn** wpływają również na globalną liczbę uruchomień/zatrzymań, które są MANIPULOWANE przez funkcje interfejsu API profilera.
 
-- **GlobalOff** natychmiast ustawia globalną liczbę start/stop na 0 i w związku z tym wstrzymuje profilowanie.
+- **GlobalOff** natychmiast ustawia globalną liczbę uruchomień/zatrzymań na 0 i w związku z tym wstrzymuje profilowanie.
 
-- **GlobalOn** natychmiast ustawia globalną liczbę start/stop na 1 i w związku z tym wznawia profilowanie.
+- **GlobalOn** natychmiast ustawia globalną liczbę uruchomień/zatrzymań na 1 i w związku z tym wznawia profilowanie.
 
-  Aby uzyskać więcej informacji, zobacz [Narzędzia profilowania interfejsów API](../profiling/profiling-tools-apis.md).
+  Aby uzyskać więcej informacji, zobacz [interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,18 +49,18 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="valid-options"></a>Prawidłowe opcje
  **GlobalOn** i **GlobalOff** można określić w wierszach poleceń, które również zawierają następujące opcje.
 
- **Start:** `Method` Inicjuje sesję profilera wiersza polecenia i ustawia określoną metodę profilowania.
+ **Rozpocznij:** `Method` Inicjuje sesję profilera wiersza polecenia i ustawia określoną metodę profilowania.
 
- **Uruchom:** `AppName` Uruchamia określoną aplikację i rozpoczyna profilowanie za pomocą metody próbkowania.
+ **Uruchom:** `AppName` Uruchamia określoną aplikację i rozpoczyna profilowanie przy użyciu metody próbkowania.
 
  **Dołącz:** `PID` Rozpoczyna profilowanie określonego procesu.
 
- {**ProcessOff**&#124;**ProcessOn**} **:** `PID` Zatrzymuje lub rozpoczyna profilowanie dla określonego procesu.
+ {**ProcessOff**&#124;**ProcessOn**} **:**`PID` Powoduje zatrzymanie lub uruchomienie profilowania dla określonego procesu.
 
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID` Zatrzymuje lub rozpoczyna profilowanie dla określonego procesu (tylko metoda instrumentacji).
+ {**ThreadOff**&#124;**ThreadOn**} **:**`TID` Kończy lub uruchamia profilowanie dla określonego procesu (tylko Metoda Instrumentacji).
 
 ## <a name="example"></a>Przykład
- W tym przykładzie **GlobalOff** i **GlobalOn** opcje są używane w celu uniknięcia zbierania danych profilowania do uruchamiania aplikacji i zamykania.
+ W tym przykładzie opcje **GlobalOff** i **GlobalOn** są używane w celu uniknięcia zbierania danych profilowania do uruchamiania i zamykania aplikacji.
 
 ```cmd
 ; Initialize the profiler with profiling stopped.
@@ -79,6 +79,6 @@ VSPerfCmd /Shutdown
 
 ## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Aplikacje autonomiczne profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET aplikacji internetowych](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

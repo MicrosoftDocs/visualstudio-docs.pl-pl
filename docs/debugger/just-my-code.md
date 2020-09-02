@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536568"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika z Tylko mój kod
@@ -21,7 +21,7 @@ ms.locfileid: "85536568"
 
 Tylko mój kod działa inaczej w projektach .NET, C++ i JavaScript.
 
-## <a name="enable-or-disable-just-my-code"></a><a name="BKMK_Enable_or_disable_Just_My_Code"></a>Włączać lub wyłączać Tylko mój kod
+## <a name="enable-or-disable-just-my-code"></a><a name="BKMK_Enable_or_disable_Just_My_Code"></a> Włączać lub wyłączać Tylko mój kod
 
 W przypadku większości języków programowania Tylko mój kod jest domyślnie włączona.
 
@@ -45,7 +45,7 @@ W oknie **stos wywołań** lub **zadania** tylko mój kod zwija kod niebędący 
 >[!TIP]
 >Aby otworzyć **moduły**, **stos wywołań**, **zadania**lub większość innych okien debugowania, musisz być w sesji debugowania. Podczas debugowania w obszarze **Debug**  >  **okna**debugowania zaznacz okna, które chcesz otworzyć.
 
-<a name="BKMK_Override_call_stack_filtering"></a>Aby wyświetlić kod w ramce zwinięte **[kod zewnętrzny]** , kliknij prawym przyciskiem myszy w oknie **stos wywołań** lub **zadania** i wybierz polecenie **Pokaż kod zewnętrzny** z menu kontekstowego. Rozwinięte zewnętrzne wiersze kodu zastępują ramkę **[kod zewnętrzny**].
+<a name="BKMK_Override_call_stack_filtering"></a> Aby wyświetlić kod w ramce zwinięte **[kod zewnętrzny]** , kliknij prawym przyciskiem myszy w oknie **stos wywołań** lub **zadania** i wybierz polecenie **Pokaż kod zewnętrzny** z menu kontekstowego. Rozwinięte zewnętrzne wiersze kodu zastępują ramkę **[kod zewnętrzny**].
 
 ![Pokaż kod zewnętrzny w oknie stosu wywołań](../debugger/media/dbg_justmycode_showexternalcode.png "Pokaż kod zewnętrzny")
 
@@ -60,9 +60,9 @@ W projektach .NET, Tylko mój kod używa plików symboli (*. pdb*) i optymalizac
 
 Trzy atrybuty kompilatora wpływają również na to, co jest uznawane za kod użytkownika przez debuger .NET:
 
-- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute>informuje debuger, że kod, do którego jest stosowany, nie jest kodem użytkownika.
-- <xref:System.Diagnostics.DebuggerHiddenAttribute>ukrywa kod z debugera, nawet jeśli Tylko mój kod jest wyłączone.
-- <xref:System.Diagnostics.DebuggerStepThroughAttribute>informuje debuger, aby przeprowadził krok po kodzie, który jest stosowany do, a nie wkroczyć do kodu.
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> informuje debuger, że kod, do którego jest stosowany, nie jest kodem użytkownika.
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> ukrywa kod z debugera, nawet jeśli Tylko mój kod jest wyłączone.
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> informuje debuger, aby przeprowadził krok po kodzie, który jest stosowany do, a nie wkroczyć do kodu.
 
 Debuger .NET traktuje wszystkie inne kod jako kod użytkownika.
 
@@ -79,11 +79,11 @@ Jeśli wystąpił nieobsługiwany wyjątek w kodzie innym niż użytkownik, debu
 
 Jeśli wyjątki pierwszej szansy są włączone dla wyjątku, wiersz wywołujący kod użytkownika zostanie wyróżniony kolorem zielonym w kodzie źródłowym. W oknie **stos wywołań** zostanie wyświetlona ramka z adnotacjami z etykietą **[kod zewnętrzny]**.
 
-## <a name="c-just-my-code"></a><a name="BKMK_C___Just_My_Code"></a>Tylko mój kod języka C++
+## <a name="c-just-my-code"></a><a name="BKMK_C___Just_My_Code"></a> Tylko mój kod języka C++
 
 Począwszy od programu Visual Studio 2017 w wersji 15,8, obsługiwane jest również Tylko mój kod do taktowania kodu. Ta funkcja wymaga również użycia przełącznika kompilatora [/JMC (tylko mój kod)](/cpp/build/reference/jmc) . Przełącznik jest domyślnie włączony w projektach C++. W przypadku okna **stosu wywołań** i obsługi stosu wywołań w tylko mój kod przełącznik/JMC nie jest wymagany.
 
-<a name="BKMK_CPP_User_and_non_user_code"></a>Aby można było klasyfikować kod użytkownika, plik PDB dla danych binarnych zawierający kod użytkownika musi zostać załadowany przez debuger (Użyj okna **moduły** , aby to sprawdzić).
+<a name="BKMK_CPP_User_and_non_user_code"></a> Aby można było klasyfikować kod użytkownika, plik PDB dla danych binarnych zawierający kod użytkownika musi zostać załadowany przez debuger (Użyj okna **moduły** , aby to sprawdzić).
 
 W przypadku zachowania stosu wywołań, takiego jak w oknie **stosu wywołań** , tylko mój kod w języku C++ traktuje tylko te funkcje jako kod niebędący *użytkownikiem*:
 
@@ -99,7 +99,7 @@ W przypadku zachowania przy obchodzeniu kodu Tylko mój kod w języku C++ uwzgl�
 > [!NOTE]
 > W przypadku obsługi taktowania kodu w Tylko mój kod kod C++ musi być skompilowany przy użyciu kompilatorów MSVC w programie Visual Studio 15,8 w wersji zapoznawczej 3 lub nowszej, a przełącznik kompilatora/JMC musi być włączony (jest on domyślnie włączony). Aby uzyskać więcej informacji, zobacz [Dostosowywanie stosu wywołań C++ i zachowanie krok po kroku](#BKMK_CPP_Customize_call_stack_behavior)w tym [wpisie w blogu](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). W przypadku kodu skompilowanego przy użyciu starszego kompilatora pliki *. natstepfilter* są jedynym sposobem dostosowywania kodu, który jest niezależny od tylko mój kod. Zobacz [Dostosowywanie zachowań języka C++](#BKMK_CPP_Customize_stepping_behavior).
 
-<a name="BKMK_CPP_Stepping_behavior"></a>Podczas debugowania języka C++:
+<a name="BKMK_CPP_Stepping_behavior"></a> Podczas debugowania języka C++:
 
 - **Debuguj**  >  **Wkrocz do** (lub **F11**) dla kodu niezwiązanego z użytkownikiem w kodzie do następnego wiersza kodu użytkownika.
 - **Debuguj**  >  **Wyjdź** (lub **SHIFT** + **F11**) w kodzie nienależącym do użytkownika jest uruchamiany w następnym wierszu kodu użytkownika.
@@ -110,7 +110,7 @@ Jeśli debuger przerwie w kodzie nieużywanym przez użytkownika (na przykład w
 
 Jeśli debuger osiągnie wyjątek, zatrzyma się na wyjątku, niezależnie od tego, czy znajduje się on w kodzie użytkownika, czy nie użytkownika. Opcje **nieobsługiwane przez użytkownika** w oknie dialogowym **Ustawienia wyjątku** zostały zignorowane.
 
-### <a name="customize-c-call-stack-and-code-stepping-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a>Dostosowywanie stosu wywołań C++ i zachowań taktowania kodu
+### <a name="customize-c-call-stack-and-code-stepping-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a> Dostosowywanie stosu wywołań C++ i zachowań taktowania kodu
 
 W przypadku projektów C++ można określić moduły, pliki źródłowe i funkcje, które okno **stosu wywołań** traktuje się jako kod niebędący użytkownikiem, określając je w plikach * \* . natjmc* . To dostosowanie ma zastosowanie również do taktowania kodu, jeśli używasz najnowszego kompilatora (zobacz [C++ tylko mój kod](#BKMK_CPP_User_and_non_user_code)).
 
@@ -143,7 +143,7 @@ Plik *. natjmc* jest plikiem XML o następującej składni:
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Wymagany. Pełna ścieżka modułu lub modułów. Możesz użyć symboli wieloznacznych systemu Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> nakazuje debugerowi traktowanie wszystkich modułów w *\3rdParty\UtilLibs* na dowolnym dysku jako kod zewnętrzny.|
+|`Name`|Wymagany. Pełna ścieżka modułu lub modułów. Możesz użyć symboli wieloznacznych systemu Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Przykład:<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> nakazuje debugerowi traktowanie wszystkich modułów w *\3rdParty\UtilLibs* na dowolnym dysku jako kod zewnętrzny.|
 |`Company`|Opcjonalny. Nazwa firmy, która publikuje moduł osadzony w pliku wykonywalnym. Tego atrybutu można użyć, aby odróżnić moduły.|
 
  **Atrybuty elementu pliku**
@@ -160,7 +160,7 @@ Plik *. natjmc* jest plikiem XML o następującej składni:
 |`Module`|Opcjonalny. Nazwa lub pełna ścieżka do modułu, który zawiera funkcję. Tego atrybutu można użyć, aby odróżnić funkcje o tej samej nazwie.|
 |`ExceptionImplementation`|Po ustawieniu na `true` , stos wywołań wyświetla funkcję, która wywołała wyjątek, a nie tę funkcję.|
 
-### <a name="customize-c-stepping-behavior-independent-of-just-my-code-settings"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a>Dostosuj zachowanie krokowe języka C++ niezależnie od ustawień Tylko mój kod
+### <a name="customize-c-stepping-behavior-independent-of-just-my-code-settings"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a> Dostosuj zachowanie krokowe języka C++ niezależnie od ustawień Tylko mój kod
 
 W projektach C++ można określić funkcje do przekroczenia, wymieniając je jako kod niebędący użytkownikiem w plikach * \* . natstepfilter* . Funkcje wymienione w plikach * \* . natstepfilter* nie są zależne od ustawień tylko mój kod.
 
@@ -188,13 +188,13 @@ Plik *. natstepfilter* jest plikiem XML o następującej składni:
 |Element|Opis|
 |-------------|-----------------|
 |`Function`|Wymagany. Określa jedną lub więcej funkcji jako funkcji niebędących użytkownikami.|
-|`Name`|Wymagany. Sformatowane wyrażenie regularne ECMA-262 określające pełną nazwę funkcji do dopasowania. Przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> informuje debuger, że wszystkie metody w `MyNS::MyClass` są uznawane za kod niebędący użytkownikiem. W dopasowaniu jest rozróżniana wielkość liter.|
+|`Name`|Wymagany. Sformatowane wyrażenie regularne ECMA-262 określające pełną nazwę funkcji do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> informuje debuger, że wszystkie metody w `MyNS::MyClass` są uznawane za kod niebędący użytkownikiem. W dopasowaniu jest rozróżniana wielkość liter.|
 |`Module`|Opcjonalny. Sformatowane wyrażenie regularne ECMA-262 określa pełną ścieżkę do modułu zawierającego funkcję. W dopasowaniu nie jest rozróżniana wielkość liter.|
-|`Action`|Wymagany. Jedną z następujących wartości uwzględniających wielkość liter:<br /><br /> `NoStepInto`— informuje debugera, aby przekroczyć funkcję.<br /> `StepInto`— informuje debuger, aby wkraczał do funkcji, zastępując wszystkie inne `NoStepInto` dla dopasowanej funkcji.|
+|`Action`|Wymagany. Jedną z następujących wartości uwzględniających wielkość liter:<br /><br /> `NoStepInto`  — informuje debugera, aby przekroczyć funkcję.<br /> `StepInto`  — informuje debuger, aby wkraczał do funkcji, zastępując wszystkie inne `NoStepInto` dla dopasowanej funkcji.|
 
-## <a name="javascript-just-my-code"></a><a name="BKMK_JavaScript_Just_My_Code"></a>Tylko mój kod JavaScript
+## <a name="javascript-just-my-code"></a><a name="BKMK_JavaScript_Just_My_Code"></a> Tylko mój kod JavaScript
 
-<a name="BKMK_JS_User_and_non_user_code"></a>Język JavaScript Tylko mój kod kontroluje i wywołają Wyświetlanie stosu przez kategoryzację kodu w jednej z tych klasyfikacji:
+<a name="BKMK_JS_User_and_non_user_code"></a> Język JavaScript Tylko mój kod kontroluje i wywołają Wyświetlanie stosu przez kategoryzację kodu w jednej z tych klasyfikacji:
 
 |Klasyfikacja|Opis|
 |-|-|
@@ -220,7 +220,7 @@ Wszystkie inne kody są klasyfikowane jako **kod**.
 
 Można modyfikować klasyfikacje domyślne i klasyfikować określone pliki i adresy URL jako kod użytkownika lub niebędący użytkownikami, dodając plik *JSON* o nazwie *mycode.js* do folderu głównego projektu JavaScript. Zobacz [Dostosowywanie języka JavaScript tylko mój kod](#BKMK_JS_Customize_Just_My_Code).
 
-<a name="BKMK_JS_Stepping_behavior"></a>Podczas debugowania JavaScript:
+<a name="BKMK_JS_Stepping_behavior"></a> Podczas debugowania JavaScript:
 
 - Jeśli funkcja nie jest kodem użytkownika, krok **debugowania**  >  **do** (lub **F11**) zachowuje się tak samo jak **Debug**  >  **krok** debugowania (lub **F10**).
 - Jeśli krok rozpocznie się w kodzie innym niż użytkownik (**LibraryCode** lub **UnrelatedCode**), stopniowy czas działa tak, jakby tylko mój kod nie jest włączona. Gdy powrócisz do kodu użytkownika, Tylko mój kod jest ponownie włączona.
@@ -234,7 +234,7 @@ Punkty przerwania ustawione w kodzie są zawsze trafień, ale kod jest klasyfiko
 - Jeśli `debugger` słowo kluczowe występuje w **LibraryCode**, debuger zawsze przerwie.
 - Jeśli `debugger` słowo kluczowe występuje w **UnrelatedCode**, debuger nie zatrzyma.
 
-<a name="BKMK_JS_Exception_behavior"></a>Jeśli wystąpił nieobsługiwany wyjątek w kodzie **webcode** lub **LibraryCode** , debuger zawsze przerwie się.
+<a name="BKMK_JS_Exception_behavior"></a> Jeśli wystąpił nieobsługiwany wyjątek w kodzie **webcode** lub **LibraryCode** , debuger zawsze przerwie się.
 
 Jeśli wystąpił nieobsługiwany wyjątek w **UnrelatedCode**, a **kod** lub **LibraryCode** znajduje się na stosie wywołań, debuger przerwie.
 
@@ -243,7 +243,7 @@ Jeśli wyjątki pierwszej szansy są włączone dla wyjątku i wystąpi wyjątek
 - Jeśli wyjątek jest obsługiwany, debuger nie przerywa.
 - Jeśli wyjątek nie jest obsługiwany, debuger przerwie.
 
-### <a name="customize-javascript-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a>Dostosowywanie Tylko mój kod JavaScript
+### <a name="customize-javascript-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a> Dostosowywanie Tylko mój kod JavaScript
 
 Aby sklasyfikować kod użytkownika i niebędący użytkownikiem dla jednego projektu JavaScript, można dodać plik *JSON* o nazwie *mycode.js* do folderu głównego projektu.
 
@@ -287,9 +287,9 @@ Pary wartość klucza **eval**, **Function**i **ScriptBlock** określają sposó
 
 Można zmienić wartość jednego z następujących słów kluczowych:
 
-- `MyCode`klasyfikuje skrypt jako mój **kod**.
-- `Library`klasyfikuje skrypt jako **LibraryCode**.
-- `Unrelated`klasyfikuje skrypt jako **UnrelatedCode**.
+- `MyCode` klasyfikuje skrypt jako mój **kod**.
+- `Library` klasyfikuje skrypt jako **LibraryCode**.
+- `Unrelated` klasyfikuje skrypt jako **UnrelatedCode**.
 
 **Moje kod, biblioteki i niepowiązane**
 
@@ -301,4 +301,4 @@ Pary **kod**, **biblioteki**i **niepowiązane** wartości klucza określają adr
 |**Biblioteki**|Tablica adresów URL lub plików, które są klasyfikowane jako **LibraryCode**.|
 |**Niepowiązanych**|Tablica adresów URL lub plików, które są klasyfikowane jako **UnrelatedCode**.|
 
-Adres URL lub ciąg pliku może mieć co najmniej jeden `*` znak, który pasuje do zera lub więcej znaków. `*`jest taka sama jak wyrażenie regularne `.*` .
+Adres URL lub ciąg pliku może mieć co najmniej jeden `*` znak, który pasuje do zera lub więcej znaków. `*` jest taka sama jak wyrażenie regularne `.*` .

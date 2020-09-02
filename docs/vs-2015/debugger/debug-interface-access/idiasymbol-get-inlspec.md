@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_inlspec — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_InlSpec | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 99a92f134390e5d3215b1609234e643b71d93d3d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64793661"
 ---
-# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
+# <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ta funkcja pobiera flagę wskazującą, czy funkcja została oznaczona jako wbudowane (przy użyciu jednej z [w tekście, __inline, \__forceinline](../../misc/inline-inline-forceinline.md) atrybutów).  
+Ta funkcja Pobiera flagę wskazującą, czy funkcja została oznaczona jako wbudowana (przy użyciu jednego z [wbudowanych, __inline, \_ _forceinline](../../misc/inline-inline-forceinline.md) atrybutów).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,21 +35,21 @@ HRESULT get_inlSpec(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli funkcja została oznaczona jako wbudowane; w przeciwnym razie zwraca `FALSE`.  
+ określoną Zwraca `TRUE` czy funkcja została oznaczona jako wbudowana; w przeciwnym razie zwraca `FALSE` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   
 |Wymaganie|Opis|  
 |-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|DIA SDK w wersji 8.0|  
+|Nagłówki|dia2. h|  
+|Wersja:|DIA SDK v 8.0|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [w tekście, __inline, \__forceinline](../../misc/inline-inline-forceinline.md)
+ [inline, __inline, \_ _forceinline](../../misc/inline-inline-forceinline.md)

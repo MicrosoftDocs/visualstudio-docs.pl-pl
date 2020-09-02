@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByVA | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: findInlineFramesByVA | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45ba0d02c58bf40fb45ea79616c58bbc9037671c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149883"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane na określony adres wirtualny (oceny luk w zabezpieczeniach).  
+Pobiera wyliczenie, które pozwala klientowi na iterację we wszystkich wbudowanych ramkach w określonym adresie wirtualnym (VA).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,16 +34,16 @@ HRESULT findInlineFramesByVA ( 
   
 #### <a name="parameters"></a>Parametry  
  `va`  
- [in] Określa adres jako VA.  
+ podczas Określa adres jako VA.  
   
  `ppResult`  
- [out] Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę ramek, które są pobierane.  
+ określoną Zawiera `IDiaEnumSymbols` obiekt zawierający listę pobieranych ramek.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
+ [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [SymTagEnum —, Wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

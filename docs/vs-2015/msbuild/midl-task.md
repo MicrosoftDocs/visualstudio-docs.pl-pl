@@ -28,16 +28,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 336a02927374e856a2d6f5a55eb03c5ae1ac7037
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845192"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MIDL. exe. Aby uzyskać więcej informacji, zobacz sekcję "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
+Zawija Microsoft Interface Definition Language narzędzia kompilatora (MIDL), midl.exe. Aby uzyskać więcej informacji, zobacz sekcję "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry zadania **MIDL** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.  
@@ -54,7 +54,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **ciągu** .  
   
-     Lista opcji wiersza polecenia. Na przykład **"** _/option1/option2 Option #_ ". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania MIDL.  
+     Lista opcji wiersza polecenia. Na przykład **"**_/option1/option2 Option #_". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania MIDL.  
   
      Aby uzyskać więcej informacji, zobacz sekcję "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -62,7 +62,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, program pozwala używać niektórych słów kluczowych ACF w pliku IDL.  
+     Jeśli `true` , program pozwala używać niektórych słów kluczowych ACF w pliku IDL.  
   
      Aby uzyskać więcej informacji, zobacz opcję **/app_config** w artykule "informacje w wierszu polecenia MIDL" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -78,7 +78,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **ciągu** .  
   
-     Określa opcje do przekazania do języka C/C++ preprocesora. Określ rozdzielaną spacją listę opcji preprocesora.  
+     Określa opcje do przekazania do preprocesora C/C++. Określ rozdzielaną spacją listę opcji preprocesora.  
   
      Aby uzyskać więcej informacji, zobacz opcję **/cpp_opt** w artykule "informacje w wierszu polecenia MIDL" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -94,7 +94,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
     |-----------|--------------------------|  
     |**Opatrzon**|**/char podpisany**|  
     |**Bajt**|**/char bez znaku**|  
-    |**Ascii**|**/char ascii7**|  
+    |**ASCII**|**/char ascii7**|  
   
      Aby uzyskać więcej informacji, zobacz **/char** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -118,7 +118,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
     |-----------|--------------------------|  
     |**Brak**|**/Error brak**|  
     |**EnableCustom**|**/Error**|  
-    |**Wszystkie**|**/Error wszystko**|  
+    |**Wszystko**|**/Error wszystko**|  
   
      Aby uzyskać więcej informacji, zobacz **/Error** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -126,7 +126,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, sprawdź, czy nie występują błędy braku pamięci.  
+     Jeśli jest `true` , sprawdź, czy nie występują błędy braku pamięci.  
   
      Aby uzyskać więcej informacji, zobacz opcja **alokacji/Error** w sekcji "Dokumentacja wiersza polecenia MIDL" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -134,7 +134,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, sprawdza rozmiar zgodnych i zróżnicowanych tablic względem specyfikacji długości transmisji.  
+     Jeśli `true` , sprawdza rozmiar zgodnych i zróżnicowanych tablic względem specyfikacji długości transmisji.  
   
      Aby uzyskać więcej informacji, zobacz **/error bounds_check** opcja w "MIDL wiersza polecenia" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -142,15 +142,15 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, sprawdza, czy wartości wyliczeniowe są w dopuszczalnym zakresie.  
+     Jeśli `true` , sprawdza, czy wartości wyliczeniowe znajdują się w dozwolonym zakresie.  
   
-     Aby uzyskać więcej informacji, zobacz **/Error enum** w pomocy wiersza polecenia ( **/?** ) dla MIDL. exe.  
+     Aby uzyskać więcej informacji, zobacz **/Error enum** w pomocy wiersza polecenia (**/?**) dla midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, sprawdź, czy do wycinków klientów nie są przenoszone żadne wskaźniki odwołań o wartości null.  
+     Jeśli `true` jest, sprawdź, czy żadne wskaźniki odwołania o wartości null nie są przenoszone do procedury pośredniczącej klienta.  
   
      Aby uzyskać więcej informacji, zobacz **/Error ref** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -158,7 +158,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, generuje procedurę pośredniczącą, która przechwytuje wyjątki po stronie serwera i propaguje je z powrotem do klienta.  
+     Jeśli `true` , generuje element zastępczy, który przechwytuje wyjątki po stronie serwera i propaguje je z powrotem do klienta programu.  
   
      Aby uzyskać więcej informacji, zobacz **/error stub_data** opcja w "MIDL wiersza polecenia" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -173,7 +173,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
     |**Brak**|**/Client brak**|  
-    |**Stub**|**/Client**|  
+    |**Szkieletu**|**/Client**|  
   
      Aby uzyskać więcej informacji, zobacz **/Client** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -188,7 +188,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
     |**Brak**|**/Server brak**|  
-    |**Stub**|**/Server — stub**|  
+    |**Szkieletu**|**/Server — stub**|  
   
      Aby uzyskać więcej informacji, zobacz opcja **/Server** w artykule "MIDL w wierszu polecenia" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -196,7 +196,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     W przypadku `true`program generuje w pełni interpretowane klasy zastępcze z niepośredniczącymi serwerami proxy dla interfejsów obiektów.  
+     Jeśli `true` , program generuje w pełni interpretowane obiekty pośredniczące wraz z niezastępczymi serwerami proxy dla interfejsów obiektów.  
   
      Aby uzyskać więcej informacji, zobacz **/Oicf** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -204,7 +204,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, plik biblioteki typów (TLB) nie zostanie wygenerowany.  
+     Jeśli `true` plik biblioteki typów (. tlb) nie jest generowany.  
   
      Aby uzyskać więcej informacji, zobacz **/notlb** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -220,7 +220,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, zadanie MIDL przeszukuje tylko katalogi określone za pomocą przełącznika **AdditionalIncludeDirectories** i ignoruje bieżący katalog i katalogi określone przez zmienną środowiskową INCLUDE.  
+     Jeśli `true` zadanie MIDL przeszukuje tylko katalogi określone za pomocą przełącznika **AdditionalIncludeDirectories** i ignoruje bieżący katalog i katalogi określone przez ZMIENNĄ środowiskową INCLUDE.  
   
      Aby uzyskać więcej informacji, zobacz opcję **/no_def_idir** w artykule "informacje w wierszu polecenia MIDL" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -244,7 +244,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, program wymaga, aby format pliku wejściowego był zgodny z MkTypLib. exe w wersji 2,03.  
+     Jeśli `true` , wymaga formatu pliku wejściowego, aby był zgodny z mktyplib.exe wersja 2,03.  
   
      Aby uzyskać więcej informacji, zobacz **/mktyplib203** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web. Zobacz również sekcję "ODL File Syntax" w witrynie MSDN w sieci Web.  
   
@@ -260,7 +260,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **String []** .  
   
-     Określa co najmniej jedną *definicję*; oznacza to, że nazwa i wartość opcjonalna, które mają zostać przesłane do preprocesora C, tak jak w przypadku dyrektywy `#define`. Każdy z nich definiuje, *nazwa [= wartość]* .  
+     Określa co najmniej jedną *definicję*; oznacza to, że nazwa i wartość opcjonalna, które mają być przenoszone do preprocesora C, zgodnie z `#define` dyrektywą. Każdy z nich definiuje, *nazwa [= wartość]*.  
   
      Aby uzyskać więcej informacji, zobacz **/d** Option w "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web. Zobacz również parametr **UndefinePreprocessorDefinitions** w tej tabeli.  
   
@@ -290,7 +290,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
 - **Element źródłowy**  
   
-     Wymagany `ITaskItem[]` parametr.  
+     Wymagany parametr interfejsu `ITaskItem[]`.  
   
      Określa listę plików źródłowych rozdzielonych spacjami.  
   
@@ -304,11 +304,11 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<brak >*|  
-    |**1**|**/Zp1**|  
+    |**NotSet**|*\<none>*|  
+    |**1**|**/ZP1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
-    |**8**|**/Zp8**|  
+    |**8**|**/ZP8**|  
   
      Aby uzyskać więcej informacji, zobacz **/ZP** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web. Opcja **/ZP** jest równoważna z opcją **/Pack** i starszą opcją **/align** .  
   
@@ -316,15 +316,15 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **logiczny** .  
   
-     Jeśli `true`, program pomija komunikaty ostrzegawcze z zadania MIDL.  
+     Jeśli `true` , pomija komunikaty ostrzegawcze z zadania MIDL.  
   
      Aby uzyskać więcej informacji, zobacz opcję **/no_warn** w artykule "informacje w wierszu polecenia MIDL" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
 - **SuppressStartupBanner**  
   
-     Opcjonalny parametr `Boolean`.  
+     Opcjonalny `Boolean` parametr.  
   
-     Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.  
+     Jeśli `true` , program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.  
   
      Aby uzyskać więcej informacji, zobacz **/nologo** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
@@ -338,16 +338,16 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<brak >*|  
+    |**NotSet**|*\<none>*|  
     |**Win32**|**/ENV Win32**|  
     |**Itanium**|**/ENV ia64**|  
-    |**X64**|**/ENV x64**|  
+    |**Procesorów**|**/ENV x64**|  
   
      Aby uzyskać więcej informacji, zobacz **/ENV** Option in "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
 - **Katalog trackerlogdirectory**  
   
-     Opcjonalny parametr `String`.  
+     Opcjonalny `String` parametr.  
   
      Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.  
   
@@ -378,23 +378,23 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), MI
   
      Opcjonalny parametr **String []** .  
   
-     Usuwa wszystkie poprzednie definicje nazw, przekazując nazwę do preprocesora C, tak jak w przypadku dyrektywy `#undefine`. Określ co najmniej jedną wcześniej zdefiniowaną nazwę.  
+     Usuwa wszystkie poprzednie definicje nazw, przekazując nazwę do preprocesora C, jak w przypadku `#undefine` dyrektywy. Określ co najmniej jedną wcześniej zdefiniowaną nazwę.  
   
      Aby uzyskać więcej informacji, zobacz sekcję **/u** opcji w artykule "MIDL Command-Line Reference" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web. Zobacz również parametr **PreprocessorDefinitions** w tej tabeli.  
   
 - **ValidateAllParameters**  
   
-     Opcjonalny parametr `Boolean`.  
+     Opcjonalny `Boolean` parametr.  
   
-     Jeśli `true`, program generuje dodatkowe informacje o sprawdzaniu błędów, które są używane do przeprowadzania sprawdzania integralności w czasie wykonywania. W przypadku `false`nie są generowane informacje o sprawdzaniu błędów.  
+     Jeśli `true` program generuje dodatkowe informacje o sprawdzaniu błędów, które są używane do przeprowadzania sprawdzania integralności w czasie wykonywania. Jeśli `false` nie są generowane informacje o sprawdzaniu błędów.  
   
      Aby uzyskać więcej informacji, zobacz Opcje **/Robust** i **/no_robust** w sekcji "Dokumentacja wiersza polecenia MIDL" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
 - **Warnaserror —**  
   
-     Opcjonalny parametr `Boolean`.  
+     Opcjonalny `Boolean` parametr.  
   
-     Jeśli `true`, traktuje wszystkie ostrzeżenia jako błędy.  
+     Jeśli `true` , traktuje wszystkie ostrzeżenia jako błędy.  
   
      Jeśli parametr zadania **WarningLevel** MIDL nie zostanie określony, ostrzeżenia na poziomie domyślnym na poziomie 1 są traktowane jako błędy.  
   

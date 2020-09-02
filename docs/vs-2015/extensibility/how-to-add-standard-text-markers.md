@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dodaj znaczniki standardowy tekst | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Dodawanie standardowych znaczników tekstu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 912d5d7a225520fc825d832bf73f5cfc733a9486
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436017"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64780704"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Instrukcje: Dodaj znaczniki standardowy tekst
+# <a name="how-to-add-standard-text-markers"></a>Instrukcje: dodawanie standardowych znaczników tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika tekstu, wyposażone w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji.  
+Użyj poniższej procedury, aby utworzyć jeden z domyślnych typów znaczników tekstu dostarczonych z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorem podstawowym.  
   
-### <a name="to-create-a-text-marker"></a>Aby utworzyć znacznika tekstu  
+### <a name="to-create-a-text-marker"></a>Aby utworzyć znacznik tekstu  
   
-1. W zależności od tego, czy używany jest jeden lub dwa - wymiarowej współrzędnych, wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metody lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodę w celu utworzenia nowego znacznika tekstu.  
+1. W zależności od tego, czy używasz jednego lub dwuwymiarowego układu współrzędnych, wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metodę lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodę, aby utworzyć nowy znacznik tekstu.  
   
-     W tym wywołaniu metody, określ typ znacznika, zakres tekstu do tworzenia znacznika i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu. Ta metoda zwraca wskaźnik do znacznika nowo utworzony tekstu. Typy znacznika są pobierane z <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> wyliczenia. Określ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejsu, jeśli ma być powiadamiany o znacznika zdarzenia.  
+     W tym wywołaniu metody Określ typ znacznika, zakres tekstu do utworzenia znacznika i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs. Ta metoda zwraca wskaźnik do nowo utworzonego znacznika tekstu. Typy znaczników są pobierane z <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> wyliczenia. Określ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfejs, jeśli chcesz otrzymywać informacje o zdarzeniach znacznika.  
   
     > [!NOTE]
-    > Utwórz znaczników tekstu w głównym wątku interfejsu użytkownika tylko. Podstawowy edytor, który opiera się na zawartość bufor tekstowy do utworzenia znaczników tekstu i bufor tekstowy nie jest bezpieczny dla wątków.  
+    > Utwórz znaczniki tekstu tylko w głównym wątku interfejsu użytkownika. Podstawowy edytor opiera się na zawartości buforu tekstu do tworzenia znaczników tekstu, a bufor tekstu nie jest bezpieczny wątkowo.  
   
 ## <a name="adding-a-custom-command"></a>Dodawanie polecenia niestandardowego  
- Implementowanie `IVsTextMarkerClient` interfejsu i zapewnianie wskaźnika z znacznik poprawia zachowanie znacznik na kilka sposobów. Po pierwsze dzięki temu można zapewnić porady dla Twojej znacznika oraz do wykonywania poleceń. To umożliwia także otrzymywać powiadomienia o zdarzeniach dla poszczególnych znaczników oraz aby utworzyć menu kontekstowego za pośrednictwem znacznika. Poniższa procedura umożliwia dodawanie polecenia niestandardowego do menu kontekstowego znacznika.  
+ Implementacja `IVsTextMarkerClient` interfejsu i dostarczenie wskaźnika do niego ze znacznika rozszerza zachowanie znacznika na kilka sposobów. W pierwszej kolejności można podać porady dotyczące znacznika i wykonać polecenia. Umożliwia to również otrzymywanie powiadomień o zdarzeniach dla pojedynczych znaczników i utworzenie niestandardowego menu kontekstowego na znaczniku. Aby dodać niestandardowe polecenie do menu kontekstowego znacznika, należy wykonać czynności opisane w poniższej procedurze.  
   
-#### <a name="to-add-a-custom-command-to-the-context-menu"></a>Aby dodać niestandardowe polecenia do menu kontekstowego  
+#### <a name="to-add-a-custom-command-to-the-context-menu"></a>Aby dodać polecenie niestandardowe do menu kontekstowego  
   
-1. Menu kontekstowe jest wyświetlane, środowisko wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> metody i przebiegów możesz wskaźnik do znacznika tekstu na i numer elementu polecenia w menu kontekstowym.  
+1. Przed wyświetleniem menu kontekstowego środowisko wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> metodę i przekazuje wskaźnik do znacznika tekstu, którego to dotyczy, oraz liczbę elementów polecenia w menu kontekstowym.  
   
-     Na przykład zawierać polecenia specyficzne dla punktu przerwania z menu kontekstowego **Usuń punkt przerwania** za pośrednictwem **nowego punktu przerwania**wyświetlane w poniższy zrzut ekranu.  
+     Na przykład polecenia specyficzne dla punktu przerwania w menu kontekstowym obejmują **Usuwanie punktu przerwania** za pomocą **nowego punktu przerwania**, jak pokazano na poniższym zrzucie ekranu.  
   
      ![Menu kontekstowe znacznika](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
-2. Przesłać tekst, który identyfikuje nazwę polecenia niestandardowe. Na przykład **Usuń punkt przerwania** może być polecenie niestandardowe, jeśli środowisko nie już podał go. Możesz też przekazać ponownie tego, czy polecenie jest obsługiwane, dostępna i włączona i/lub przełącz wł. / wył. Środowisko używa tych informacji do wyświetlania polecenia niestandardowego menu kontekstowego w prawidłowy sposób.  
+2. Przekaż jakiś tekst identyfikujący nazwę polecenia niestandardowego. Na przykład **usunięcie punktu przerwania** może być poleceniem niestandardowym, jeśli środowisko jeszcze go nie dostarczyło. Możesz również przejść z powrotem, niezależnie od tego, czy polecenie jest obsługiwane, dostępne i włączone i/lub przełącznik włączony. Środowisko używa tych informacji do wyświetlania polecenia niestandardowego w menu kontekstowym w prawidłowy sposób.  
   
-3. Można wykonać polecenia wywołania środowiska <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metody przekazywania wskaźnika znacznika tekst i liczby wybrane z menu kontekstowego polecenie.  
+3. Aby wykonać polecenie, środowisko wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metodę, przekazując wskaźnik do znacznika tekstu oraz liczbę poleceń wybranych z menu kontekstowego.  
   
-     Dzięki tym informacjom tego wywołania do wykonania, mówią, niezależnie od akcji znacznika tekstu polecenia niestandardowe.  
+     Użyj tych informacji z tego wywołania, aby wykonać dowolne akcje znacznika tekstu, które wyrzuca polecenie niestandardowe.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Znaczniki tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Instrukcje: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)   
- [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
+ [Używanie znaczników tekstowych ze starszym interfejsem API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md)   
+ [Instrukcje: Tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)   
  [Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)

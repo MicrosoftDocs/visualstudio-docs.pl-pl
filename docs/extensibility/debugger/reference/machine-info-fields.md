@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS | Dokumenty firmy Microsoft
+title: MACHINE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 89a2552bb6a8bea88f54a897b829ab89b30ff413
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714523"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
-Określa, jakiego rodzaju informacje mają być pobierane dla określonego komputera.
+Określa, jakiego rodzaju informacje mają być pobierane dla konkretnej maszyny.
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,25 +46,25 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Pola
  `MCIF_NAME`\
- Inicjowanie/używanie `bstrName` pola w strukturze.
+ Zainicjuj/Użyj `bstrName` pola w strukturze.
 
  `MCIF_FLAGS`\
- Inicjowanie/używanie `Flags` pola w strukturze.
+ Zainicjuj/Użyj `Flags` pola w strukturze.
 
  `MIF_ALL`\
- Inicjuj/użyj wszystkich pól w strukturze.
+ Zainicjuj/Użyj wszystkich pól w strukturze.
 
 ## <a name="remarks"></a>Uwagi
- Te wartości są przekazywane do [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metody, aby wskazać, które elementy członkowskie [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struktury mają zostać zainicjowane.
+ Te wartości są przesyłane do metody [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) , aby wskazać, które składowe struktury [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) mają być inicjowane.
 
- Używany również `Fields` w człońoszu struktury, `MACHINE_INFO` aby wskazać, które pola są używane i prawidłowe.
+ Używany również w `Fields` składowej struktury, `MACHINE_INFO` Aby wskazać, które pola są używane i są prawidłowe.
 
- Flagi te mogą być łączone z bitowym `OR`.
+ Flagi te mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

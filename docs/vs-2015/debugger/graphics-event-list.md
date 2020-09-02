@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845046"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
@@ -37,9 +37,9 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
   
 |Kolejka Direct3D|Kolor|  
 |-----------------------|-----------|  
-|Kolejka renderowania|Zielony|  
-|Kolejka obliczeń|Żółty|  
-|Kopiuj kolejkę|Pomarańczowy|  
+|Kolejka renderowania|Green (Zielony)|  
+|Kolejka obliczeń|Yellow|  
+|Kopiuj kolejkę|Orange|  
   
  Program Direct3D 11 nie uwidacznia wielu kolejek, dlatego zdarzenia nie są kodowane na liście zdarzeń podczas pracy z funkcją przechwytywania aplikacji Direct3D 11.  
   
@@ -57,10 +57,10 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
 - W oknie **Lista zdarzeń grafiki** , powyżej listy zdarzeń, zlokalizuj listę rozwijaną **Widok** i wybierz widok **oś czasu** lub widok **wywołania rysowania** .  
   
 ### <a name="filtering-events"></a>Filtrowanie zdarzeń  
- Możesz użyć pola wyszukiwania — znajdującego się w prawym górnym rogu okna **Lista zdarzeń grafiki** — aby przefiltrować listę zdarzeń w celu uwzględnienia tylko zdarzeń, których nazwy zawierają określone słowa kluczowe. Możesz określić pojedyncze słowa kluczowe, takie jak `Vertex`— jak pokazano na poprzedniej ilustracji — lub kilka słów kluczowych przy użyciu listy rozdzielanej średnikami, takiej jak `Draw;Primitive`— które pasują do zdarzeń, które mają `Draw` lub `Primitive` nazwy. Wyszukiwania są wrażliwe na odstępy — na przykład `VSSet` i `VS Set` są różnymi wyszukiwaniami, dlatego należy uważnie przeszukiwać dane.  
+ Możesz użyć pola wyszukiwania — znajdującego się w prawym górnym rogu okna **Lista zdarzeń grafiki** — aby przefiltrować listę zdarzeń w celu uwzględnienia tylko zdarzeń, których nazwy zawierają określone słowa kluczowe. Możesz określić pojedyncze słowa kluczowe, takie jak `Vertex` pokazano na poprzedniej ilustracji — lub kilka słów kluczowych przy użyciu listy rozdzielanej średnikami, na przykład `Draw;Primitive` , która jest zgodna ze zdarzeniami, które mają `Draw` `Primitive` nazwę lub. Wyszukiwania są wrażliwe na odstępy — na przykład `VSSet` i `VS Set` są różnymi wyszukiwaniami — dlatego należy uważnie sprawdzać przeszukiwanie.  
   
 ### <a name="moving-between-draw-calls"></a>Przechodzenie między wywołaniami rysowania  
- Ponieważ badanie wywołań `Draw` jest szczególnie ważne, można użyć **przejść do następnego wywołania rysowania** i **przejść do poprzedniego przycisku rysowania wywołania** — znajdującego się w lewym górnym rogu okna **Lista zdarzeń grafiki** — w celu szybkiego znalezienia i przechodzenia między wywołaniami rysowania.  
+ Ponieważ badanie `Draw` wywołań jest szczególnie ważne, można użyć **przejść do następnego wywołania rysowania** i **przejść do poprzedniego przycisku rysowania wywołania** — znajdującego się w lewym górnym rogu okna **Lista zdarzeń grafiki** — w celu szybkiego znalezienia i przechodzenia między wywołaniami rysowania.  
   
 ### <a name="links-to-graphics-objects"></a>Linki do obiektów graficznych  
  W celu zrozumienia pewnych zdarzeń graficznych mogą być potrzebne dodatkowe informacje o bieżącym stanie Direct3D lub obiektów Direct3D, do których odwołuje się zdarzenie. Wiele zdarzeń zawiera linki do tych informacji, które można wykonać, aby uzyskać więcej szczegółów.  
@@ -72,11 +72,11 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
 |----------|-----------------------|  
 |(brak ikony)|Zdarzenie ogólne<br /> Każde zdarzenie, które nie jest zdarzeniem zdefiniowanym przez użytkownika, grupą zdarzeń zdefiniowanym przez użytkownika lub zdarzeniem remisu.|  
 |![Ikona zdarzenia rysowania](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Rysuj wydarzenie<br /> Oznacza zdarzenie rysowania, które wystąpiło w przechwyconej ramce.|  
-|![Ikona znacznika&#45;zdarzenia zdefiniowanego przez użytkownika](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Grupa zdarzeń zdefiniowana przez użytkownika<br /> Grupuje zdarzenia pokrewne zdefiniowane przez aplikację.|  
-|![Ikona znacznika&#45;zdarzenia zdefiniowanego przez użytkownika](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Znacznik zdarzenia zdefiniowany przez użytkownika<br /> Oznacza określoną lokalizację zdefiniowaną przez aplikację.|  
+|![Ikona znacznika zdarzenia zdefiniowanego przez użytkownika&#45;](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Grupa zdarzeń zdefiniowana przez użytkownika<br /> Grupuje zdarzenia pokrewne zdefiniowane przez aplikację.|  
+|![Ikona znacznika zdarzenia zdefiniowanego przez użytkownika&#45;](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Znacznik zdarzenia zdefiniowany przez użytkownika<br /> Oznacza określoną lokalizację zdefiniowaną przez aplikację.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Oznaczanie zdarzeń zdefiniowanych przez użytkownika w aplikacji  
- Zdarzenia zdefiniowane przez użytkownika są specyficzne dla Twojej aplikacji. Można ich użyć do skorelowania poważnych zdarzeń występujących w aplikacji ze zdarzeniami na liście zdarzeń grafiki. Można na przykład utworzyć grupy zdarzeń zdefiniowane przez użytkownika, aby organizować powiązane zdarzenia, takie jak te, które renderują interfejs użytkownika w grupach lub hierarchiach, dzięki czemu można łatwiej przeglądać listę zdarzeń. można też tworzyć znaczniki, gdy niektóre obiekty są narysowana, aby można było łatwo znaleźć na liście zdarzeń swoje zdarzenia graficzne.  
+ Zdarzenia zdefiniowane przez użytkownika są specyficzne dla Twojej aplikacji. Można ich użyć do skorelowania poważnych zdarzeń występujących w aplikacji ze zdarzeniami na liście zdarzeń grafiki. Można na przykład utworzyć grupy zdarzeń zdefiniowane przez użytkownika, aby organizować powiązane zdarzenia, takie jak te, które renderują interfejs użytkownika w grupach lub hierarchiach, dzięki czemu można łatwiej przeglądać listę zdarzeń. można też tworzyć znaczniki, gdy są rysowane określone rodzaje obiektów, dzięki czemu można łatwo znaleźć na liście zdarzeń swoje zdarzenia graficzne.  
   
  Aby utworzyć grupy i znaczniki w aplikacji, należy użyć tych samych interfejsów API, które są dostępne dla innych narzędzi debugowania Direct3D przez program Direct3D. Te interfejsy API czasami zmieniają się między wersjami programu Direct3D, ale podstawowe funkcje są takie same.  
   
@@ -99,7 +99,7 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
 |Zakończ grupę zdarzeń|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
 |Tworzenie znacznika zdarzenia|`SetMarkerInt`|`SetMarker`|`D3DPerf_SetMarker`|  
   
- Możesz użyć dowolnego z tych interfejsów API, które obsługuje wersja Direct3D — na przykład, jeśli docelowym interfejsem API programu Direct3D 11,1, możesz użyć albo `SetMarker` lub `D3DPerf_SetMarker` do utworzenia znacznika zdarzenia, ale nie `SetMarkerInt`, ponieważ jest on dostępny tylko w programie Direct3D 11.2 — i można nawet mieszać te, które obsługują różne wersje programu Direct3D razem w tej samej aplikacji.  
+ Możesz użyć dowolnego z tych interfejsów API, które obsługuje wersja Direct3D — na przykład, jeśli korzystasz z interfejsu API programu Direct3D 11,1, możesz użyć albo `SetMarker` `D3DPerf_SetMarker` , aby utworzyć znacznik zdarzenia, ale nie jest on `SetMarkerInt` dostępny tylko w programie Direct3D 11.2 — i można nawet mieszać te, które obsługują różne wersje programu Direct3D razem w tej samej aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: brak obiektów spowodowany stanem urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)

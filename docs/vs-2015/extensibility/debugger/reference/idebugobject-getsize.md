@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetSize | Dokumentacja firmy Microsoft
+title: 'IDebugObject:: GetSize | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ffafe6b62047a577b2bfce74c8462d9051c4dcfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192267"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
@@ -40,13 +40,13 @@ int GetSize(
   
 #### <a name="parameters"></a>Parametry  
  `pnSize`  
- [out] Zwraca rozmiar w bajtach.  
+ określoną Zwraca rozmiar w bajtach.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Użyj [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) metodę, aby pobrać wartość jako sekwencja bajtów.  
+ Użyj metody [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) , aby pobrać wartość jako sekwencję bajtów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

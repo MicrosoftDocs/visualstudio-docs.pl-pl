@@ -1,5 +1,5 @@
 ---
-title: Opcje konfiguracji — Przegląd | Dokumentacja firmy Microsoft
+title: Przegląd opcji konfiguracji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,66 +12,66 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441514"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64790930"
 ---
 # <a name="configuration-options-overview"></a>Omówienie opcji konfiguracji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Projekty w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] może obsługiwać wiele konfiguracji, które może być kompilowana, debugowania, wykonywania i/lub wdrożone. Konfiguracja jest opisane nazwany zestaw właściwości, zwykle przełączniki kompilatora i lokalizacje plików typu kompilacji. Domyślnie nowe rozwiązania zawiera dwie konfiguracje Debug i Release. Te konfiguracje mogą być stosowane przy użyciu ustawień domyślnych lub zmodyfikowane w celu spełnienia określonych wymagań rozwiązania lub projektu. Niektóre pakiety można tworzyć na dwa sposoby: jako edytora ActiveX lub jako składnik w miejscu. Projekty nie trzeba jednak obsługuje wiele konfiguracji. Jeśli jest dostępna tylko w jednej konfiguracji, że konfiguracja jest mapowany do wszystkich konfiguracji rozwiązania.  
+Projekty w programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mogą obsługiwać wiele konfiguracji, które można kompilować, debugować, uruchamiać i/lub wdrażać. Konfiguracja jest typem kompilacji opisanym w nazwanym zestawie właściwości, zazwyczaj przełączników kompilatora i lokalizacjami plików. Domyślnie nowe rozwiązania zawierają dwie konfiguracje, debugowanie i wydanie. Te konfiguracje można zastosować przy użyciu ich ustawień domyślnych lub zmodyfikować w celu spełnienia określonych wymagań dotyczących rozwiązań i/lub projektu. Niektóre pakiety można utworzyć na dwa sposoby: jako edytor ActiveX lub jako składnik w miejscu. Projekty nie muszą jednak obsługiwać wielu konfiguracji. Jeśli dostępna jest tylko jedna konfiguracja, ta konfiguracja jest mapowana na wszystkie konfiguracje rozwiązań.  
   
- Konfiguracje zwykle składają się z dwóch części — Nazwa konfiguracji, (takie jak Debuguj lub Uwolnij) i ustawienia platformy. Nazwa platformy konfiguracji identyfikuje środowisko, które elementy docelowe konfiguracji, takich jak interfejs API zestawu lub platformy systemu operacyjnego. Użytkownicy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nie można utworzyć platformy; musi wybrać z opcji projektu pakietu VSPackage umożliwia. Podczas instalacji przez użytkownika pakietu VSPackage, platforma dostarczania utworzonych podczas opracowywania aplikacji pakietu może pojawiać się w dowolnej nazwy platformy desired na podstawie wszystkich kryteriów ustawione przez autora pakietu. Użytkownik może następnie wybrać z listy platform udostępniane się za pomocą pakietu VSPackage, gdy są tworzone na stronach właściwości.  
+ Konfiguracje składają się zazwyczaj z dwóch części: nazwy konfiguracji (na przykład Debug lub Release) i ustawień platformy. Nazwa platformy konfiguracji identyfikuje środowisko, do którego należy Konfiguracja interfejsu API lub platformę systemu operacyjnego. Użytkownicy programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nie mogą utworzyć platformy; muszą wybierać spośród wybranych opcji projektu pakietu VSPackage. Gdy użytkownik instaluje pakietu VSPackage, platforma dostarczania utworzona podczas opracowywania pakietu może posłużyć dowolną nazwę platformy w zależności od kryteriów ustawionych przez twórcę pakietu. Użytkownik może następnie wybrać z listy platform udostępnionych za pośrednictwem pakietu VSPackage, gdy zostanie utworzone wystąpienie stron właściwości.  
   
- Nazw platform są opcjonalne, ponieważ nie wszystkie projekty obsługuje koncepcji platform. Podczas konfiguracji brakuje nazwy platformy, ciąg "n/d" jest wyświetlany w interfejsie użytkownika.  
+ Nazwy platform są opcjonalne, ponieważ nie wszystkie projekty obsługują koncepcję platform. Jeśli konfiguracja nie ma nazwy platformy, ciąg "N/A" jest wyświetlany w interfejsie użytkownika.  
   
- Każde rozwiązanie ma swój własny zestaw konfiguracji, tylko jeden z nich może być aktywne w danym momencie. Konfiguracja rozwiązania to zbiór nie więcej niż jedną konfigurację z każdego projektu. Jest ustalenie "nie więcej niż" ze względu na możliwość wykluczanie projektów z konfiguracji rozwiązania. Użytkownicy mogą tworzyć własne konfiguracje niestandardowe rozwiązanie.  
+ Każde rozwiązanie ma swój własny zestaw konfiguracji, tylko jeden z nich może być aktywny w danym momencie. Konfiguracja rozwiązania to zbiór nie więcej niż jednej konfiguracji z każdego projektu. Postanowienie "nie więcej niż" jest spowodowane opcją wykluczenia projektu z konfiguracji rozwiązania. Użytkownicy mogą tworzyć własne niestandardowe konfiguracje rozwiązań.  
   
- W poniższej tabeli przedstawiono typowe konfiguracje ustawień projektu. Wiersze są oznaczone etykietami z nazwami konfiguracji i kolumny z nazwami platformy.  
+ W poniższej tabeli przedstawiono typowe ustawienia konfiguracji dla projektu. Wiersze są oznaczone etykietami z nazwami konfiguracji i kolumnami z nazwami platform.  
   
-|Nazwa konfiguracji|Platform — Win32|Platform — Win64|  
+|Nazwa konfiguracji|Platforma — Win32|Platforma — Win64|  
 |------------------------|----------------------|----------------------|  
-|Debugowanie|\<Ustawienia systemu Win32 debugowania >|\<Ustawienia Win64 debugowania >|  
-|Wydanie|\<Ustawienia systemu Win32 wydania >|\<Ustawienia Win64 wydania >|  
-|MyConfig|Brak|\<Ustawienia MyConfig Win64 >|  
+|Debugowanie|\<Debug Win32 settings>|\<Debug Win64 settings>|  
+|Release|\<Release Win32 settings>|\<Release Win64 settings>|  
+|Mojakonfiguracja|Brak|\<MyConfig Win64 settings>|  
   
 > [!NOTE]
-> Nie można utworzyć konfiguracji rozwiązania "MyConfig", który nie obejmuje to platforma "Win32", chyba, że docelowa projektu nie obsługuje systemu Win32.  
+> Nie można utworzyć konfiguracji rozwiązania "moja konfiguracja", która wyklucza platformę "Win32", chyba że docelowy projekt nie obsługuje Win32.  
   
- Zmiana aktywnej konfiguracji rozwiązania wybiera zestaw konfiguracje projektu, które są wbudowane, uruchamiania, debugowania lub wdrożone w ramach tego rozwiązania. Na przykład jeśli zmienisz konfigurację aktywngo rozwiązania z wersji do debugowania, wszystkie projekty w ramach tego rozwiązania automatycznie są tworzone za pomocą konfiguracji projektów wskazane w konfiguracji debugowania rozwiązania. Projektów są zwykle również konfiguracje debugowania o nazwie, chyba że użytkownik wprowadził ręczne zmiany w środowisku programu Configuration Manager.  
+ Zmiana aktywnej konfiguracji rozwiązania powoduje wybranie zestawu konfiguracji projektu, które zostały skompilowane, uruchomione, debugowane lub wdrożone w tym rozwiązaniu. Na przykład w przypadku zmiany aktywnej konfiguracji rozwiązania z wersji na Debuguj wszystkie projekty w tym rozwiązaniu zostaną automatycznie skompilowane przy użyciu konfiguracji projektu wskazanej w konfiguracji debugowania rozwiązania. Konfiguracje projektów są zwykle nazywane debugowaniem, chyba że użytkownik wprowadził ręcznie zmiany w Configuration Manager środowiska.  
   
- Właściwości konfiguracji rozwiązania, które są przechowywane dla każdego projektu obejmują nazwę projektu, nazwa konfiguracji projektu, flagi, aby wskazać, czy do tworzenia lub wdrażania i nazwa platformy. Aby uzyskać więcej informacji, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
+ Właściwości konfiguracji rozwiązania przechowywane dla każdego projektu obejmują nazwę projektu, nazwę konfiguracji projektu, flagi wskazujące, czy kompilacja lub wdrożenie oraz nazwa platformy. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja rozwiązania](../../extensibility/internals/solution-configuration.md).  
   
- Użytkownik może wyświetlić i ustaw parametry konfiguracji rozwiązania, wybierając rozwiązania w hierarchii (Eksplorator rozwiązań) i otwieranie stron właściwości. Podobnie można wyświetlić i ustawić parametry konfiguracji projektu, wybierając projekt w Eksploratorze rozwiązań i otwieranie stron właściwości dla tego projektu.  
+ Użytkownik może wyświetlać i ustawiać parametry konfiguracji rozwiązania, wybierając rozwiązanie w hierarchii (Eksplorator rozwiązań) i otwierając strony właściwości. Analogicznie, można wyświetlać i ustawiać parametry konfiguracji projektu, wybierając projekt w Eksplorator rozwiązań i otwierając strony właściwości dla tego projektu.  
   
- Użytkownika można także utworzyć jeden projekt przy użyciu ustawienia konfiguracji wydania i wszystkie pozostałe przy użyciu ustawienia konfiguracji debugowania, jeśli to konieczne. Aby uzyskać więcej informacji, zobacz [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md).  
+ Użytkownik może również utworzyć jeden projekt przy użyciu ustawień konfiguracji wydania oraz wszystkie pozostałe ustawienia konfiguracji debugowania, jeśli jest to konieczne. Aby uzyskać więcej informacji, zobacz [Konfiguracja projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md).  
   
- Na poniższym diagramie przedstawiono, jak są implementowane interfejsy, które obsługują konfiguracje rozwiązania i projektu:  
+ Na poniższym diagramie przedstawiono sposób implementacji interfejsów, które obsługują konfiguracje rozwiązań i projektów:  
   
- ![Ilustracja dotycząca konfiguracji interfejsów](../../extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
+ ![Grafika interfejsów konfiguracji](../../extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
 Interfejsy konfiguracji  
   
- Kilka uwagi odnoszące się do poprzedniego diagramu:  
+ Kilka notatek odnoszących się do poprzedniego diagramu:  
   
-- `IDispatch` jest oznaczony jako opcjonalny w obiekcie konfiguracji. Ściślej mówiąc jest to opcjonalne mieć interfejsy konfiguracji w obiekcie przeglądania.  
+- `IDispatch` jest oznaczona jako opcjonalna w obiekcie Configuration. W każdym przypadku opcjonalne jest posiadanie interfejsów konfiguracji w obiekcie Browse.  
   
-- `IVsDebuggableProjectCfg` oznaczone jako opcjonalne w obiekt konfiguracji, ale jest wymagany do obsługi debugowania.  
+- `IVsDebuggableProjectCfg` jest oznaczona jako opcjonalna w obiekcie Configuration, ale jest wymagana do obsługi debugowania.  
   
-- `IVsProjectCfg2` oznaczone jako opcjonalne w obiekt konfiguracji, ale wymagane jest grupowanie pomocy technicznej w danych wyjściowych.  
+- `IVsProjectCfg2` jest oznaczona jako opcjonalna w obiekcie Configuration, ale jest wymagana w celu obsługi grupowania danych wyjściowych.  
   
-- `Config Provider` Obiekt jest oznaczony jako obiekt opcjonalne, ale ta opcja jest miejsce, do jej wdrożenia. Obiekt może wdrożyć na obiekt projektu lub na oddzielnym obiektem.  
+- `Config Provider`Obiekt jest oznaczony jako obiekt opcjonalny, ale opcja jest, gdzie należy ją wdrożyć. Można zaimplementować obiekt w obiekcie projektu lub w oddzielnym obiekcie.  
   
-- `IVsCfgProvider2` jest potrzebny do obsługi platformy i konfiguracji do edycji. `IVsCfgProvider` jest wystarczająca, jeśli nie należy implementować te funkcje.  
+- `IVsCfgProvider2` jest wymagany do obsługi platformy i edytowania konfiguracji. `IVsCfgProvider` jest wystarczająca, jeśli ta funkcja nie zostanie wdrożona.  
   
-- Niektóre z tych obiektów, które przedstawiono na diagramie jako oddzielne obiekty mogą być połączone w tej samej klasy, gdzie jest to praktyczne zgodnie z wymaganiami określonego projektu. W innych tematach w tej sekcji jednak obiekty i interfejsy skojarzone z tymi obiektami zostanie dokładnie omówione zgodnie z scenariusz przedstawiony na diagramie.  
+- Niektóre z tych obiektów pokazane na diagramie jako osobne obiekty mogą być połączone z tą samą klasą, w której są one praktyczne na podstawie określonych wymagań projektowych. W innych tematach tej sekcji obiekty i interfejsy skojarzone z tymi obiektami zostaną omówione zgodnie z scenariuszem przedstawionym na diagramie.  
   
-- Określone obiekty są implementowane oddzielnie. Na przykład projektu i tworzenia rozwiązań są dokonywane na oddzielnych wątkach i obiekt na potrzeby zarządzania życie kompilację oddzielnie od obiektu opisujący konfigurację kompilacji.  
+- Niektóre obiekty są implementowane osobno. Na przykład Kompilowanie projektów i rozwiązań odbywa się w oddzielnych wątkach, a obiekt służący do zarządzania kompilacją działa niezależnie od obiektu opisującego konfigurację kompilacji.  
   
-  Aby uzyskać więcej informacji na obiekt konfiguracji w interfejsach i obiekt dostawcy konfiguracji na poprzednim rysunku, zobacz [obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md). Ponadto [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md) zamieszczono więcej informacji dotyczących interfejsów konstruktora konfiguracji i tworzenie obiektu zależności i [konfiguracji projektu w celu wdrożenia zarządzania](../../extensibility/internals/project-configuration-for-managing-deployment.md) dalsze informacje interfejsów, dołączonych do narzędzia konfiguracji wdrażania i wdrożenie zależności obiektów. Na koniec [konfiguracji projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md) opisuje interfejsy grupy danych wyjściowych i obiekt danych wyjściowych i użycie stron właściwości, aby wyświetlić i ustaw właściwości konfiguracji-zależnych od ustawień lokalnych.  
+  Aby uzyskać więcej informacji na temat interfejsów obiektów konfiguracji i interfejsów obiektów dostawcy konfiguracji na poprzednim diagramie, zobacz [obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md). Ponadto [Konfiguracja projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md) zawiera więcej informacji na temat interfejsów programu Configuration Builder i obiektów zależności kompilacji, a także [Konfiguracja projektu do zarządzania wdrożeniem](../../extensibility/internals/project-configuration-for-managing-deployment.md) opisuje interfejsy dołączone do programu wdrażania konfiguracji i obiektów zależności wdrożenia. Na koniec [Konfiguracja projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md) zawiera informacje na temat grup danych wyjściowych i interfejsów obiektów wyjściowych oraz użycie stron właściwości do wyświetlania i ustawiania właściwości zależnych od konfiguracji.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
- [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)   
+ [Konfiguracja projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)   
  [Konfiguracja rozwiązania](../../extensibility/internals/solution-configuration.md)

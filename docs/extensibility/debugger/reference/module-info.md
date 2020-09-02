@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Dokumenty firmy Microsoft
+title: MODULE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714316"
 ---
 # <a name="module_info"></a>MODULE_INFO
-Opisuje określony moduł (biblioteka DLL, EXE lub zespół).
+Opisuje określony moduł (DLL, EXE lub Assembly).
 
 ## <a name="syntax"></a>Składnia
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>Elementy członkowskie
  `dwValidFields`\
- Kombinacja flag z wyliczenia [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) określająca, które pola są wypełniane.
+ Kombinacja flag z wyliczenia [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) , która określa, które pola są wypełniane.
 
  `m_bstrName`\
  Nazwa modułu.
@@ -75,13 +75,13 @@ public struct MODULE_INFO { 
  Wersja modułu.
 
  `m_bstrDebugMessage`\
- Opcjonalny komunikat o module, na przykład "Nie można załadować symboli".
+ Opcjonalna wiadomość dotycząca modułu, na przykład "symbole nie mogą zostać załadowane".
 
  `m_addrLoadAddress`\
- Adres obciążenia modułu.
+ Adres ładowania modułu.
 
  `m_addrPreferredLoadAddress`\
- Preferowany adres obciążenia modułu.
+ Preferowany adres ładowania modułu.
 
  `m_dwSize`\
  Rozmiar modułu.
@@ -90,23 +90,23 @@ public struct MODULE_INFO { 
  Kolejność ładowania modułu.
 
  `m_TimeStamp`\
- Czas ostatniej modyfikacji pliku symbolu.
+ Godzina ostatniej modyfikacji pliku symboli.
 
  `m_bstrUrlSymbolLocation`\
- Lokalizacja pliku symbolu (na przykład\\". ") określona w module. Służy jako miejsce początkowe do znajdowania symboli modułu.
+ Lokalizacja pliku symboli (na przykład ". \\ ") określonego w module. Używane jako początkowa lokalizacja do znajdowania symboli dla modułu.
 
  `m_dwModuleFlags`\
- Kombinacja flag z wyliczenia [MODULE_FLAGS,](../../../extensibility/debugger/reference/module-flags.md) który opisuje moduł.
+ Kombinacja flag z wyliczenia [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) opisującego moduł.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest przekazywana do [Metody GetInfo,](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) gdzie jest wypełniona.
+ Ta struktura jest przenoszona do metody [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) , w której jest wypełniana.
 
- Ta struktura odpowiada każdemu modułowi wymienionemu w oknie **Moduły.**
+ Ta struktura odnosi się do każdego modułu wymienionego w oknie **moduły** .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

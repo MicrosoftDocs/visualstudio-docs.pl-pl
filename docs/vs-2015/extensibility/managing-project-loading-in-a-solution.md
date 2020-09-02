@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie ładowaniem projektu w rozwiązaniu | Dokumentacja firmy Microsoft
+title: Zarządzanie ładowaniem projektu w rozwiązaniu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,37 +11,37 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426453"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64786152"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Zarządzanie ładowaniem projektu w rozwiązaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rozwiązania programu Visual Studio mogą zawierać dużą liczbę projektów. Domyślne zachowanie programu Visual Studio jest można załadować wszystkich projektów w rozwiązaniu w czasie, które rozwiązanie jest otwierane, a nie Zezwalaj użytkownikowi dostępu do żadnego z projektów wszystkich z nich ma zakończenie ładowania. Podczas procesu ładowania projektu trwa więcej niż dwie minuty, jest wyświetlany pasek postępu, przedstawiający liczbę projektów i łącznej liczby projektów. Użytkownik może zwolnienia projektów podczas pracy w ramach rozwiązania z wieloma projektami, ale ta procedura ma pewne wady: zwolniono projekty są kompilowane jako część polecenia Kompiluj rozwiązanie i zamknięcie IntelliSense opisy typów i elementów członkowskich projekty nie są wyświetlane.  
+Rozwiązania programu Visual Studio mogą zawierać wiele projektów. Domyślne zachowanie programu Visual Studio polega na załadowaniu wszystkich projektów w rozwiązaniu w momencie otwarcia rozwiązania, a nie umożliwieniu użytkownikowi dostępu do żadnego z projektów do momentu zakończenia jego ładowania. Gdy proces ładowania projektu będzie trwać więcej niż dwie minuty, zostanie wyświetlony pasek postępu przedstawiający liczbę załadowanych projektów i łączną liczbę projektów. Użytkownik może zwolnić projekty podczas pracy w rozwiązaniu z wieloma projektami, ale ta procedura ma pewne wady: niezaładowane projekty nie są kompilowane jako część polecenia odbudowywania rozwiązania, a opisy typów i elementów członkowskich zamkniętych projektów nie są wyświetlane.  
   
- Deweloperzy mogą skrócić czas ładowania rozwiązania i zarządzać ładowanie zachowanie, tworząc ładowania rozwiązań menedżera projektu. Menedżera obciążenia rozwiązania można ustawić inny projekt ładowania priorytetów dla określonych projektów i typów projektów, upewnij się, że projekty zostały załadowane przed rozpoczęciem kompilacji tła, opóźnienie w tle podczas ładowania dopiero po zakończeniu innego zadania w tle i wykonania inne zadania zarządzania ładowania projektu.  
+ Deweloperzy mogą skrócić czasy ładowania rozwiązań i zarządzać zachowaniem ładowania projektu, tworząc Menedżera ładowania rozwiązań. Menedżer obciążenia rozwiązań może ustawić różne priorytety ładowania projektu dla określonych projektów lub typów projektów, przed ukończeniem wykonywania innych zadań w tle, należy się upewnić, że projekty są załadowane przed rozpoczęciem kompilacji w tle.  
   
-## <a name="project-loading-priorities"></a>Ładowanie priorytetów projektu  
- Program Visual Studio definiuje cztery priorytety podczas ładowania innego projektu:  
+## <a name="project-loading-priorities"></a>Priorytety ładowania projektu  
+ Program Visual Studio definiuje cztery różne priorytety ładowania projektu:  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (ustawienie domyślne): gdy rozwiązanie jest otwarte, projekty są ładowane asynchronicznie. Jeśli ten priorytet jest ustawiona na zwolnionego projektu, po rozwiązania jest już otwarty, projekt zostanie załadowany w następnym punkcie bezczynności.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (wartość domyślna): po otwarciu rozwiązania projekty są ładowane asynchronicznie. Jeśli ten priorytet jest ustawiony w niezaładowanym projekcie po tym, jak rozwiązanie jest już otwarte, projekt zostanie załadowany w następnym punkcie bezczynności.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: po otwarciu rozwiązania, projekty są ładowane w tle, co pozwala na dostęp do projektów, ponieważ są one załadowane bez konieczności poczekać, aż wszystkie projekty zostały załadowane.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: po otwarciu rozwiązania projekty są ładowane w tle, co umożliwia użytkownikowi dostęp do projektów podczas ich ładowania bez konieczności oczekiwania na załadowanie wszystkich projektów.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: projekty są ładowane, gdy są one używane. Projekt jest dostępny, gdy użytkownik rozwija węzeł projektu w Eksploratorze rozwiązań, po otwarciu pliku należących do projektu po otwarciu rozwiązania, ponieważ jest na liście otwartego dokumentu (utrwalane w plik opcji użytkownika rozwiązania) lub w przypadku, gdy inny projekt oznacza to ładowany zależny od projektu. Ten typ projektu nie jest automatycznie ładowany przed rozpoczęciem procesu kompilacji; Menedżer obciążenia rozwiązania jest odpowiedzialny za zapewnienie, że wszystkie niezbędne projekty są ładowane. Te projekty również powinny być załadowane przed rozpoczęciem Znajdź/Zamień w plikach dla całego rozwiązania.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: projekty są ładowane podczas uzyskiwania do nich dostępu. Dostęp do projektu jest uzyskiwany, gdy użytkownik rozszerza węzeł projektu w Eksplorator rozwiązań, gdy plik należący do projektu zostanie otwarty, gdy zostanie otwarte, ponieważ znajduje się na liście Otwórz dokument (utrwalone w pliku opcji użytkownika rozwiązania) lub gdy inny ładowany projekt ma zależność od projektu. Ten typ projektu nie jest ładowany automatycznie przed rozpoczęciem procesu kompilacji; Menedżer obciążenia rozwiązań jest odpowiedzialny za zapewnienie, że wszystkie niezbędne projekty są załadowane. Te projekty należy również załadować przed rozpoczęciem wyszukiwania/zastępowania plików w całym rozwiązaniu.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: projektów nie mają być załadowane, chyba że wyraźnie zażąda użytkownika. Dotyczy to sytuacji, gdy projekty są jawnie usuwane z pamięci.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: projekty nie są ładowane, chyba że użytkownik jawnie go zażąda. Dzieje się tak w przypadku, gdy projekty zostały jawnie zwolnione.  
   
 ## <a name="creating-a-solution-load-manager"></a>Tworzenie Menedżera ładowania rozwiązań  
- Deweloperzy mogą tworzyć ładowania rozwiązań Menedżera implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> i wniosku programu Visual Studio, czy Menedżera obciążenia rozwiązania jest aktywny.  
+ Deweloperzy mogą utworzyć Menedżera obciążenia rozwiązań, implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> i powiadamiając program Visual Studio, że Menedżer obciążenia rozwiązań jest aktywny.  
   
-#### <a name="activating-a-solution-load-manager"></a>Aktywowanie Menedżera obciążenia rozwiązania  
- Program Visual Studio umożliwia rozwiązanie tylko jednego z kierowników obciążenia w danym momencie, dlatego konieczne jest poinformowanie programu Visual Studio aktywować obciążenia rozwiązania menedżera. Jeśli drugi Menedżera obciążenia rozwiązania została aktywowana później, rozwiązanie Menedżera obciążenia zostaną rozłączone.  
+#### <a name="activating-a-solution-load-manager"></a>Aktywowanie Menedżera ładowania rozwiązań  
+ Program Visual Studio umożliwia korzystanie z tylko jednego menedżera ładowania rozwiązań w danym momencie, dlatego musisz polecić programowi Visual Studio, gdy chcesz aktywować Menedżera obciążenia rozwiązania. Jeśli drugi Menedżer ładowania rozwiązań został aktywowany później w systemie, Menedżer obciążenia rozwiązań zostanie odłączony.  
   
- Należy uzyskać <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> usługi i ustaw <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> właściwości:  
+ Musisz pobrać <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> usługę i ustawić <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> Właściwość:  
   
 ```csharp  
 IVsSolution pSolution = GetService(typeof(SVsSolution)) as IVsSolution;  
@@ -50,68 +50,68 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ```  
   
 #### <a name="implementing-ivssolutionloadmanager"></a>Implementowanie IVsSolutionLoadManager  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A> Metoda jest wywoływana podczas otwierania rozwiązania. Aby zaimplementować tę metodę, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> usługi, aby ustawić priorytet obciążenia dla typu projektu, którą chcesz zarządzać. Na przykład poniższy kod ustawia typy projektów C# do załadowania w tle:  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnBeforeOpenProject%2A>Metoda jest wywoływana podczas procesu otwierania rozwiązania. Aby zaimplementować tę metodę, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManagerSupport> usługi do ustawienia priorytetu obciążenia dla typu projektu, który ma być zarządzany. Na przykład poniższy kod ustawia typy projektów C# do załadowania w tle:  
   
 ```csharp  
 Guid guidCSProjectType = new Guid("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}");  
 pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority.PLP_BackgroundLoad);  
 ```  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A> Metoda jest wywoływana, gdy trwa zamykanie programu Visual Studio lub inny pakiet przejmuje jako Menedżer ds. rozwiązania aktywnego obciążenia przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> z <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> właściwości.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A>Metoda jest wywoływana, gdy program Visual Studio jest zamykany lub gdy inny pakiet został przejęty jako aktywny Menedżer ładowania rozwiązań przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> z <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> właściwością.  
   
-#### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>Strategie dotyczące różnych rodzajów Menedżera obciążenia rozwiązania  
- Menedżerowie obciążenia rozwiązania można zaimplementować na różne sposoby, w zależności od typów rozwiązań, które są przeznaczone do zarządzania.  
+#### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>Strategie dotyczące różnych rodzajów Menedżera ładowania rozwiązań  
+ Można zaimplementować menedżerów obciążeń rozwiązań na różne sposoby, w zależności od typów rozwiązań, które są przeznaczone do zarządzania.  
   
- Jeśli Menedżera obciążenia rozwiązania jest przeznaczona do zarządzania ogólnie rzecz biorąc ładowania rozwiązania, można zaimplementować jako część pakietu VSPackage. Pakiet powinna być ustawiona na automatyczne ładowanie, dodając <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> na VSPackage o wartości <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Następnie można aktywować Menedżera obciążenia rozwiązania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
-  
-> [!NOTE]
-> Aby uzyskać więcej informacji na temat pakietów autoloading zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
-  
- Ponieważ program Visual Studio rozpoznaje tylko ostatni rozwiązania obciążenia Menedżera aktywacji, menedżerów obciążenia ogólne rozwiązanie powinien zawsze wykrywa, czy przed aktywowaniem samodzielnie jest istniejącego menedżera obciążenia. Jeśli wywołanie GetProperty() usłudze rozwiązania dla <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> zwraca `null`, istnieje nie aktywne rozwiązanie Menedżera obciążenia. Jeśli nie zwróci wartość null, sprawdź, czy obiekt jest taki sam jak Menedżer ładowania rozwiązania.  
-  
- Jeśli Menedżera obciążenia rozwiązania jest przeznaczona do zarządzania tylko kilka typów rozwiązania, pakietu VSPackage mogą subskrybować zdarzeń ładowania rozwiązania (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>) i użyj programu obsługi zdarzeń <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A> aktywować Menedżera obciążenia rozwiązania.  
-  
- Jeśli Menedżera obciążenia rozwiązania jest przeznaczona do zarządzania tylko określone rozwiązania, informacje o aktywacji, może być utrwalony jako część pliku rozwiązania. Aby to zrobić, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> dla sekcji rozwiązania wstępnego.  
-  
- Menedżerowie ładowania konkretnego rozwiązania dezaktywować w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents.OnAfterCloseSolution%2A> procedura obsługi zdarzeń, aby nie powodują konflikt z innych menedżerów ładowania rozwiązania.  
-  
- Jeśli potrzebujesz Menedżera obciążenia rozwiązanie tylko do utrwalenia priorytetów ładowania projektu globalnego (na przykład zbioru właściwości na stronie Opcje), możesz aktywować Menedżera obciążenia rozwiązania w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents2.OnAfterOpenProject%2A> programu obsługi zdarzeń utrwalić ustawienie we właściwościach rozwiązania, a następnie Dezaktywuj Menedżera obciążenia rozwiązania.  
-  
-## <a name="handling-solution-load-events"></a>Obsługa zdarzeń ładowania rozwiązań  
- Aby subskrybować zdarzeń ładowania rozwiązania, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> po aktywacji usługi Menedżera obciążenia rozwiązania. W przypadku zaimplementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, pozwalające reagować na zdarzenia, które odnoszą się do innego projektu podczas ładowania priorytetów.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: To jest uruchamiane przed otwarciem rozwiązania. Służy on do zmiany projektu podczas ładowania priorytet dla projektów w rozwiązaniu.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: To jest uruchamiane po całkowitym załadowaniu rozwiązania, ale przed tła ładowanie projektu rozpoczyna się od nowa. Na przykład użytkownik może uzyskać dostęp do projektu, w których priorytet obciążenia jest LoadIfNeeded lub rozwiązania Menedżera obciążenia mogły ulec zmianie priorytet ładowania projektu do BackgroundLoad, który chce się uruchomić obciążenia tła tego projektu.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Czy istnieje Menedżera obciążenia rozwiązania, to jest uruchamiany po początkowym pełni załadowaniu rozwiązania. Również wyzwoleniu po obciążenia tło lub żądanie załadowania zawsze wtedy, gdy rozwiązanie staje się w pełni załadowane. W tym samym czasie <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> zostanie ponownie aktywowany.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Jest on uruchamiany przed załadowaniem projektu (lub projektów). Aby upewnić się, że inne procesy w tle odbywa się przed projekty są ładowane, należy ustawić `pfShouldDelayLoadToNextIdle` do **true**.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: To jest uruchamiany po zadaniu wsadowym projektów ma być załadowany. Jeśli `fIsBackgroundIdleBatch` ma wartość true, projekty mają być ładowane w tle; Jeśli `fIsBackgroundIdleBatch` ma wartość FAŁSZ, projekty są mają zostać załadowane synchronicznie w wyniku żądania użytkownika, na przykład jeśli użytkownik rozwija oczekujące projekt w Eksploratorze rozwiązań. Można zaimplementować ten element, aby spełniała kosztowne, które w przeciwnym razie musi odbywać się w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: To jest uruchamiane po załadowaniu partii projektów.  
-  
-## <a name="detecting-and-managing-solution-and-project-loading"></a>Wykrywanie i zarządzania nimi rozwiązania i ładowanie projektu  
- W celu wykrycia stan ładowania projektów i rozwiązań, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> z następującymi wartościami:  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli rozwiązanie i jego projekty są załadowane, w przeciwnym razie `false`.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli partii projekty są obecnie ładowane w tle, w przeciwnym razie `false`.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli partii projekty są obecnie ładowane synchronicznie wyniku polecenia user lub inne obciążenia jawne, w przeciwnym razie `false`.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` zwraca `true` Jeśli rozwiązanie jest obecnie zamykane, w przeciwnym razie `false`.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` zwraca `true` Jeśli rozwiązanie jest obecnie są otwarte, w przeciwnym razie `false`.  
-  
-  Można także zapewnić, że projekty i rozwiązania są ładowane (niezależnie od tego, jakie są priorytetów ładowania projektu), wywołując jedną z następujących metod:  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: wywołanie tej metody wymusza projektów w rozwiązaniu do załadowania przed powrotem z metody.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: wywołanie tej metody wymusza projektów w `guidProject` załadować przed powrotem z metody.  
-  
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: wywołanie tej metody wymusza projektu w `guidProjectID` załadować przed powrotem z metody.  
+ Jeśli Menedżer obciążenia rozwiązań ma ogólnie zarządzać ładowaniem rozwiązań, można go zaimplementować jako część pakietu VSPackage. Pakiet powinien być ustawiony na automatyczne ładowanie przez dodanie <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> elementu pakietu VSPackage z wartością <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid> . Można następnie aktywować Menedżera ładowania rozwiązań w <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodzie.  
   
 > [!NOTE]
-> . Domyślnie tylko projekty, które mają zapotrzebowanie obciążenia i priorytety obciążenia w tle są załadowane, ale jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> flaga jest przekazywany do metody, zostaną załadowane wszystkie projekty z wyjątkiem tych, które zostaną oznaczone, aby jawnie załadować.
+> Aby uzyskać więcej informacji na temat pakietów ładowania automatyczne, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
+  
+ Ponieważ program Visual Studio rozpoznaje tylko ostatni Menedżer ładowania rozwiązań, który ma zostać aktywowany, menedżerowie ogólnego ładowania rozwiązań powinni zawsze wykrywać, czy istnieje istniejący Menedżer obciążenia przed uaktywnieniem siebie. W przypadku wywołania funkcji GetProperty () w usłudze rozwiązania dla funkcji <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> Returns `null` nie istnieje aktywny Menedżer ładowania rozwiązań. Jeśli nie zwraca wartości null, sprawdź, czy obiekt jest taki sam jak w przypadku Menedżera obciążenia rozwiązań.  
+  
+ Jeśli Menedżer obciążenia rozwiązań ma zarządzać tylko kilkoma typami rozwiązań, pakietu VSPackage może subskrybować zdarzenia ładowania rozwiązania (poprzez wywoływanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> ) i użyć programu obsługi zdarzeń dla programu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A> w celu aktywowania Menedżera ładowania rozwiązań.  
+  
+ Jeśli Menedżer obciążenia rozwiązań ma zarządzać tylko określonymi rozwiązaniami, informacje o aktywacji mogą być utrwalane w ramach pliku rozwiązania. W tym celu Zadzwoń <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> do sekcji wstępnego rozwiązania.  
+  
+ Określeni Menedżery ładowania rozwiązań powinni dezaktywować się w programie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents.OnAfterCloseSolution%2A> obsługi zdarzeń, aby nie powodowały konfliktów z innymi menedżerami ładowania rozwiązań.  
+  
+ Jeśli potrzebujesz Menedżera ładowania rozwiązań tylko w celu utrwalenia priorytetów globalnego obciążenia projektu (na przykład właściwości ustawionych na stronie opcji), możesz aktywować Menedżera ładowania rozwiązań w programie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents2.OnAfterOpenProject%2A> obsługi zdarzeń, zachować ustawienie we właściwościach rozwiązania, a następnie dezaktywować Menedżera ładowania rozwiązań.  
+  
+## <a name="handling-solution-load-events"></a>Obsługa zdarzeń ładowania rozwiązania  
+ Aby subskrybować zdarzenia ładowania rozwiązania, Połącz się, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> gdy aktywujesz Menedżera ładowania rozwiązań. W przypadku zaimplementowania programu można <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents> reagować na zdarzenia, które odnoszą się do różnych priorytetów ładowania projektu.  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Ten element jest uruchamiany przed otwarciem rozwiązania. Można jej użyć do zmiany priorytetu ładowania projektu dla projektów w rozwiązaniu.  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Jest uruchamiany po całkowitym załadowaniu rozwiązania, ale przed ponownym rozpoczęciem ładowania projektu w tle. Na przykład użytkownik może uzyskać dostęp do projektu, którego priorytet obciążenia to LoadIfNeeded, lub Menedżer obciążenia rozwiązania mógł zmienić priorytet obciążenia projektu na BackgroundLoad, co spowoduje rozpoczęcie ładowania w tle tego projektu.  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Jest uruchamiany po pierwszym całkowitym załadowaniu rozwiązania, niezależnie od tego, czy jest to Menedżer obciążenia rozwiązań. Jest również uruchamiany po załadowaniu w tle lub załadowaniu na żądanie, gdy rozwiązanie zostanie w pełni załadowane. W tym samym czasie program <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> zostanie ponownie aktywowany.  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Ten element jest uruchamiany przed załadowaniem projektu (lub projektów). Aby upewnić się, że inne procesy w tle są kończone przed załadowaniem projektów, ustaw `pfShouldDelayLoadToNextIdle` na **wartość true**.  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Ta wartość jest wyzwalana, gdy zostanie załadowana partia projektów. Jeśli `fIsBackgroundIdleBatch` ma wartość true, projekty są ładowane w tle; Jeśli `fIsBackgroundIdleBatch` ma wartość false, projekty są ładowane synchronicznie w wyniku żądania użytkownika, na przykład jeśli użytkownik rozwinie oczekujący projekt w Eksplorator rozwiązań. Można zaimplementować tę czynność, aby wykonać bardzo dużo pracy, które w przeciwnym razie byłyby konieczne <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> .  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Ta wartość jest wyzwalana po załadowaniu partii projektów.  
+  
+## <a name="detecting-and-managing-solution-and-project-loading"></a>Wykrywanie rozwiązań i ładowanie projektów oraz zarządzanie nimi  
+ W celu wykrycia stanu ładowania projektów i rozwiązań należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> następujące wartości:  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` czy rozwiązanie i wszystkie jego projekty są ładowane, w przeciwnym razie `false` .  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` czy wsadowe projekty są aktualnie ładowane w tle, w przeciwnym razie `false` .  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` czy wsadowe projekty są aktualnie ładowane synchronicznie w wyniku polecenia użytkownika lub innego, niejawnego obciążenia, w przeciwnym razie `false` .  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` zwraca `true` czy rozwiązanie jest aktualnie zamykane, w przeciwnym razie `false` .  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` zwraca `true` czy rozwiązanie jest aktualnie otwierane, w przeciwnym razie `false` .  
+  
+  Możesz również upewnić się, że projekty i rozwiązania są załadowane (niezależnie od tego, jakie są priorytety obciążenia projektu), wywołując jedną z następujących metod:  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: wywołanie tej metody wymusza załadowanie projektów w rozwiązaniu przed zwróceniem metody.  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: wywołanie tej metody wymusza `guidProject` załadowanie projektów przed zwróceniem metody.  
+  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: wywołanie tej metody wymusza `guidProjectID` załadowanie projektu przed zwróceniem metody.  
+  
+> [!NOTE]
+> . Domyślnie są ładowane tylko projekty, które mają priorytety obciążenia i obciążenia w tle, ale jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> flaga jest przenoszona do metody, wszystkie projekty zostaną załadowane z wyjątkiem tych, które są oznaczone do załadowania jawnie.

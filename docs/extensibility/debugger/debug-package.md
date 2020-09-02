@@ -1,5 +1,5 @@
 ---
-title: Pakiet debugowania | Dokumenty firmy Microsoft
+title: Debuguj pakiet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739018"
 ---
-# <a name="debug-package"></a>Pakiet debugowania
-Pakiet debugowania jest uruchamiany w powłoce programu Visual Studio i obsługuje cały interfejs użytkownika. Zużywa interfejsy debugowania programu Visual Studio i komunikuje się z menedżerem debugowania sesji (SDM).
+# <a name="debug-package"></a>Debuguj pakiet
+Pakiet debugowania działa w programie Visual Studio Shell i obsługuje cały interfejs użytkownika. Korzysta ona z interfejsów debugowania programu Visual Studio i komunikuje się z menedżerem debugowania sesji (SDM).
 
- Przerwij zdarzenia wysyłane za pośrednictwem SDM przełączyć debugera z trybu uruchamiania do trybu przerwania i zmienić fokus do programu, w którym wystąpił przerwa. Pakiet debugowania śledzi ramki stosu i wątku z informacji wysyłanych do niego przez zdarzenia.
+ Zdarzenia przerwania wysyłane przez model SDM przełączają debuger z trybu uruchamiania do trybu przerwania i zmieniają fokus w programie, w którym wystąpiła przerwanie. Pakiet debugowania śledzi ramkę stosu i wątek z informacji wysyłanych do niego przez zdarzenia.
 
- Pakiet debugowania nie ma zależności w języku ani środowisku wykonywania. Nie jest konieczne implementowanie lub modyfikowanie pakietu debugowania.
+ Pakiet debugowania nie ma zależności w języku ani środowisku czasu wykonywania. Nie trzeba implementować ani modyfikować pakietu debugowania.
 
- Pakiet debugowania jest implementowany przez *plik vsdebug.dll*.
+ Pakiet debugowania jest implementowany przez *vsdebug.dll*.
 
 ## <a name="see-also"></a>Zobacz też
 - [Menedżer debugowania sesji](../../extensibility/debugger/session-debug-manager.md)

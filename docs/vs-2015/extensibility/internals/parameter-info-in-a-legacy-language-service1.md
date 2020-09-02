@@ -1,5 +1,5 @@
 ---
-title: Informacje o parametrach w starszej wersji usługi językowej1 | Dokumentacja firmy Microsoft
+title: Informacje o parametrach w starszej wersji językowej Service1 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,63 +15,63 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b1707313c40e7ea720fff3b9f70546af00ea486
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408655"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64782237"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Etykietki narzędzi IntelliSense Parameter Info zapewnia użytkownikom wskazówek na temat, gdzie się znajdują konstrukcją języka pierwszej klasy.  
+Etykietka narzędzia informacji o parametrach IntelliSense udostępnia użytkownikom wskazówki dotyczące tego, gdzie znajdują się w konstrukcji językowej.  
   
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie usług edytora i języka](../../extensibility/extending-the-editor-and-language-services.md).  
+ Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie edytora i usług językowych](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
-> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
+> Zalecamy rozpoczęcie korzystania z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i pozwala korzystać z nowych funkcji edytora.  
   
-## <a name="how-parameter-info-tooltips-work"></a>Jak działają parametr informacje w etykietkach narzędzi  
- Po wpisaniu instrukcji w edytorze pakietu VSPackage Wyświetla okno etykiety narzędzi małych definicją instrukcji jego wpisywania. Na przykład, jeśli typ oświadczenia Microsoft Foundation Classes (MFC) (takich jak `pMainFrame ->UpdateWindow`) i naciśnij klawisz nawias otwierający, aby rozpocząć, lista parametrów, metody, pojawi się porada wyświetlanie definicji `UpdateWindow` metody.  
+## <a name="how-parameter-info-tooltips-work"></a>Jak działają etykietki narzędzi informacji o parametrach  
+ Po wpisaniu instrukcji w edytorze pakietu VSPackage wyświetla małe okno etykietki narzędzi zawierające definicję wpisanej instrukcji. Na przykład, jeśli wpiszesz instrukcję Microsoft Foundation Classes (MFC), `pMainFrame ->UpdateWindow` a następnie naciśniesz klawisz otwierającego nawiasu, aby rozpocząć wyświetlanie parametrów, zostanie wyświetlona etykietka metody wyświetlająca definicję `UpdateWindow` metody.  
   
- Etykietki narzędzi informacje o parametrze są zwykle używane w połączeniu z uzupełniania instrukcji. Są one najbardziej przydatny w przypadku języków, które mają parametry lub innych sformatowane informacji po nazwie metody lub słowa kluczowego.  
+ Etykietki narzędzi informacji o parametrach są zwykle używane w połączeniu z uzupełnianiem instrukcji. Są one najbardziej przydatne w przypadku języków, które mają parametry lub inne sformatowane informacje po nazwie metody lub słowie kluczowym.  
   
- Informacje o parametrach etykietki narzędzi są inicjowane przez usługę języka za pomocą polecenia zatrzymania. Przechwycenia znaków użytkownika, musi implementować obiektu usługi języka <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs i przekaż widoku tekstu, wskaźnik do Twojej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementacji, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> method in Class metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu. Filtr polecenia przechwytuje poleceń, które można wpisać w oknie kodu. Monitorowanie informacji o poleceniu, aby dowiedzieć się, kiedy należy wyświetlić informacje o parametrach dla użytkownika. Można użyć tego samego filtru polecenia do uzupełniania instrukcji, znaczniki błędów i tak dalej.  
+ Etykietki narzędzi informacji o parametrach są inicjowane przez usługę języka za pomocą przechwycenia polecenia. Aby przechwycić znaki użytkownika, obiekt usługi językowej musi implementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs i przekazać tekst do swojej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementacji, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metodę w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsie. Filtr polecenia przechwytuje polecenia wpisane do okna kod. Monitoruj informacje o poleceniu, aby dowiedzieć się, kiedy mają być wyświetlane informacje o parametrach. Tego samego filtru poleceń można użyć do uzupełniania instrukcji, znaczników błędów i tak dalej.  
   
- Podczas wpisywania tekstu — słowo kluczowe, dla którego usługa językowa zapewniają wskazówki, usługa językowa utworzy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> obiektów i wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> method in Class metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsie powiadomić środowiska IDE, aby wyświetlić wskazówkę. Tworzenie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> przy użyciu `VSLocalCreateInstance` i określając wspólna `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` jest funkcją zdefiniowaną w vsdoc.h pliku nagłówka, który wywołuje `QueryService` rejestru lokalnego i wywołania `CreateInstance` dla tego obiektu dla `CLSID_VsMethodTipWindow`.  
+ Po wpisaniu słowa kluczowego, dla którego usługa języka może udostępniać wskazówki, usługa językowa tworzy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> obiekt i wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodę w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsie, aby powiadomić IDE o wyświetleniu wskazówki. Utwórz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> Obiekt przy użyciu `VSLocalCreateInstance` i określ klasy coclass `CLSID_VsMethodTipWindow` . `VsLocalCreateInstance` jest funkcją zdefiniowaną w pliku nagłówka vsdoc. h, która wywołuje `QueryService` lokalny rejestr i wywołuje dla `CreateInstance` tego obiektu `CLSID_VsMethodTipWindow` .  
   
-## <a name="providing-a-method-tip"></a>Zapewnianie wskazówki metody  
- Aby zapewnić wskazówki metody, należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> method in Class metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> interfejsu i przekazanie do niej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfejsu.  
+## <a name="providing-a-method-tip"></a>Podawanie porady metody  
+ Aby zapewnić wskazówkę metody, wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metodę w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> interfejsie, przekazując ją do implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfejsu.  
   
- Gdy Twoja <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> klasy jest wywoływany, jego metody są wywoływane w następującej kolejności:  
+ Po <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> wywołaniu klasy jego metody są wywoływane w następującej kolejności:  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
   
-     Zwraca bieżący bufor tekstowy pozycji i długości odpowiednie dane. To powoduje, że środowisko IDE będzie nie mogą zasłaniać tych danych za pomocą okna etykiety narzędzi.  
+     Zwraca pozycję i długość odpowiednich danych w bieżącym buforze tekstu. Powoduje to, że IDE nie zasłania tych danych za pomocą okna etykietki narzędzia.  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
   
-     Zwraca liczbę — metoda (liczony od zera indeks) mają być wyświetlane w początkowym. Na przykład jeśli można zwrócić zero, następnie pierwsza przeciążona metoda początkowo zobaczy.  
+     Zwraca numer metody (indeks oparty na zero), który ma być początkowo wyświetlany. Na przykład, jeśli zwracasz zero, początkowo zostanie przedstawiona pierwsza przeciążona metoda.  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
   
-     Zwraca liczbę przeciążonych metod, które są stosowane w bieżącym kontekście. Jeśli zwróci wartość większą niż 1 dla tej metody, następnie widoku tekstu Wyświetla strzałek w górę i w dół dla Ciebie. Jeśli klikniesz przycisk strzałki w dół, IDE wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> metody. Jeśli klikniesz przycisk strzałki w górę, IDE wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> metody.  
+     Zwraca liczbę przeciążonych metod, które są stosowane w bieżącym kontekście. Jeśli powrócisz wartość większą niż 1 dla tej metody, w widoku tekstu zostaną wyświetlone strzałki w górę i w dół. Jeśli klikniesz strzałkę w dół, IDE wywoła <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> metodę. Jeśli klikniesz strzałkę w górę, IDE wywoła <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> metodę.  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
   
-     Tekst etykietki narzędzia Parameter Info jest tworzony podczas kilka wywołań <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> metody.  
+     Tekst etykietki narzędzia informacje o parametrach jest konstruowany podczas kilku wywołań <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> metod i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> .  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
   
-     Zwraca liczbę parametrów, aby wyświetlić w metodzie.  
+     Zwraca liczbę parametrów, które mają być wyświetlane w metodzie.  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
   
-     Po powrocie liczbą metoda odpowiadające za pomocą przeciążenia, które mają być wyświetlane, ta metoda jest wywoływana, następuje wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metody.  
+     Jeśli zwracasz numer metody odpowiadający przeciążeniu, które chcesz wyświetlić, ta metoda jest wywoływana, a następnie wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metody.  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
   
-     Informuje usługi języka w celu aktualizacji edytor, gdy wskazówki metody jest wyświetlana. W <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metody, wywołaj następujące czynności:  
+     Informuje usługę języka w celu zaktualizowania edytora, gdy zostanie wyświetlona etykietka metody. W <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metodzie Wywołaj następujące polecenie:  
   
     ```  
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).  
@@ -79,4 +79,4 @@ Etykietki narzędzi IntelliSense Parameter Info zapewnia użytkownikom wskazówe
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
   
-     Pojawi się po wywołaniu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metody, gdy zamkniesz okno porad metody.
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>Po zamknięciu okna etykietki metody zostanie odebrane wywołanie metody.

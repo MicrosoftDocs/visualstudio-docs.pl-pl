@@ -8,10 +8,10 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z pomocy technicznej dla społeczności platformy Azure zawartych w wybranych subskrypcjach programu Visual Studio.
 ms.openlocfilehash: 0a4f04051c7bd42fc3a2da3bd0c3c374600f1be9
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238624"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum pomocy technicznej platformy Azure w ramach subskrypcji programu Visual Studio
@@ -21,8 +21,8 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
 
 :::row:::
     :::column:::
-        - [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
-        - [Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
+        - [Usługa Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
+        - [Usługa Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
         - [Azure App Service — Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
         - [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)  
@@ -30,26 +30,26 @@ Uzyskaj pomoc bezpośrednio z zespołu platformy Azure w ramach wybranych forów
         - [Portal zarządzania platformy Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
-        - [Portal Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)  
+        - [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)  
         - [Azure Mobile Apps](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)  
         - [Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)  
         - [Sieci platformy Azure (DNS, Traffic Manager, sieci VPN, Sieć wirtualna)](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc)  
         - [Narzędzia wiersza polecenia & Azure Scripting](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc)  
-        - [Usługa Azure Service Bus](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)  
+        - [Azure Service Bus](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)  
         - [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
         - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
         - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
         - [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
-        - [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
+        - [Virtual Machines platformy Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
         - [Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Cloud Services (role sieć Web i proces roboczy)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)  
         - [Cennik i rozliczenia](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
 :::row-end:::
 
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpoczęcie pracy
 Wprowadzenie do społeczności platformy Azure jest proste.
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
