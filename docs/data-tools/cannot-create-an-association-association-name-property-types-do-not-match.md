@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4b9735c711abe7826d241e8c8aa7ade0a5f5d5e0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536724"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć &lt; nazwy skojarzenia skojarzenia &gt; — typy właściwości nie są zgodne.
@@ -33,7 +33,7 @@ Właściwości wymienione w komunikacie nie mają tych samych typów danych.
 
 4. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Instrukcje: Tworzenie skojarzenia między klasami LINQ to SQL (Projektant O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

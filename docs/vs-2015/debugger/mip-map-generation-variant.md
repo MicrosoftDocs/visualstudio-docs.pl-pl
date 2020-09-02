@@ -1,5 +1,5 @@
 ---
-title: Wariant generowania mipmapy | Dokumentacja firmy Microsoft
+title: MIP — wariant generacji mapy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,43 +10,43 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383965"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64821014"
 ---
 # <a name="mip-map-generation-variant"></a>Wariant generowania mipmapy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Umożliwia mapy mip na tekstury, które nie są renderowane elementów docelowych.  
+Włączenie MCI — odwzorowuje na tekstury, które nie są obiektami docelowymi.  
   
 ## <a name="interpretation"></a>Interpretacja  
- Mapy MIP przede wszystkim są używane, aby wyeliminować artefaktów wygładzania w tekstury w obszarze minimalizację przez wstępne obliczanie mniejsze wersje tekstury. Mimo że te dodatkowe tekstury używa pamięci procesora GPU — około 33% wyższy niż oryginalnej tekstury — są one również bardziej efektywne, ponieważ jeden z ich powierzchni mieści się w pamięci podręcznej tekstury procesora GPU i jego zawartość osiągnięcia lepszego wykorzystania.  
+ MIP — mapy są używane przede wszystkim do eliminowania artefaktów aliasów w teksturach w obszarze minifikacja przez wstępne obliczenie mniejszych wersji tekstury. Chociaż te dodatkowe tekstury zużywają pamięć GPU — około 33% więcej niż oryginalna tekstura — są one również wydajniejsze, ponieważ większa część obszaru powierzchni mieści się w pamięci podręcznej tekstury procesora GPU, a jej zawartość uzyskuje wyższe wykorzystanie.  
   
- Dla scen 3D firma Microsoft zaleca mapy mip podczas za mało pamięci do przechowywania dodatkowych tekstury, ponieważ zwiększają wydajność renderowania i jakości obrazu.  
+ W przypadku scen trójwymiarowych zalecamy, aby mapy MIP były dostępne do przechowywania dodatkowych tekstur, ponieważ zwiększają one wydajność renderowania i jakość obrazu.  
   
- Ten wariant przedstawiono istotne są bardziej wydajne, wskazuje, że używasz tekstury bez włączania mapy mip, a tym samym nie uzyskuje się maksymalnie dużo z pamięci podręcznej tekstury.  
+ Jeśli ten wariant pokazuje znaczący wzrost wydajności, oznacza to, że są używane tekstury bez włączania funkcji mapy MIP i dlatego nie najlepiej korzystać z pamięci podręcznej tekstury.  
   
 ## <a name="remarks"></a>Uwagi  
- Każde wywołanie jest wymuszana generacji mipmapy `ID3D11Device::CreateTexture2D` tworząca źródłową teksturę. W szczególności generacji mipmapy jest wymuszone, gdy D3D11_TEXTUR2D_DESC obiekt przekazany w `pDesc` opisuje niezmiennych zasób programu do cieniowania; będącego:  
+ MCI — Generowanie mapy jest wymuszane dla każdego wywołania `ID3D11Device::CreateTexture2D` , które tworzy teksturę źródłową. W odróżnieniu od tego, Generowanie mapy MIP jest wymuszane w przypadku, gdy obiekt D3D11_TEXTUR2D_DESC przeszedł w programie, `pDesc` zawiera opis niezmienionego zasobu programu do cieniowania.  
   
-- Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
+- Element członkowski BindFlags ma tylko ustawioną flagę D3D11_BIND_SHADER_RESOURCE.  
   
-- Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFUALT lub D3D11_USAGE_IMMUTABLE.  
+- Element członkowski użycia ma ustawioną wartość D3D11_USAGE_DEFUALT lub D3D11_USAGE_IMMUTABLE.  
   
-- Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
+- Element członkowski CPUAccessFlags ma wartość 0 (brak dostępu procesora).  
   
-- Element członkowski SampleDesc ma członków liczba równa 1 (nie próbkowanie Wygładzanie (MSAA)).  
+- Element członkowski SampleDesc ma ustawioną wartość 1 (bez wygładzania).  
   
-- Element członkowski MipLevels jest ustawiona na 1 (nie istniejącego mipmapy).  
+- Członek MipLevels ma ustawioną wartość 1 (brak istniejącej mapy MIP).  
   
-  Gdy początkowe dane są dostarczane przez aplikację, format tekstury musi obsługiwać generacji mipmapy automatyczne — zgodnie z ustaleniami D3D11_FORMAT_SUPPORT_MIP_AUTOGEN — chyba, że format jest BC1, BC2 lub BC3; w przeciwnym razie Tekstura nie został zmodyfikowany i nie mapy mip są generowane, gdy początkowe dane są dostarczane.  
+  Gdy dane początkowe są dostarczane przez aplikację, format tekstury musi obsługiwać automatyczne generowanie map MIP — zgodnie z D3D11_FORMAT_SUPPORT_MIP_AUTOGEN — chyba że format to BC1, BC2 lub BC3; w przeciwnym razie tekstura nie jest modyfikowana i żadne mapy MIP nie są generowane po dostarczeniu danych początkowych.  
   
-  Mapy mip zostały wygenerowane automatycznie tekstury, wywołania `ID3D11Device::CreateShaderResourceView` są modyfikowane podczas odtwarzania, aby korzystać z łańcucha mip w czasie pobierania próbek tekstury.  
+  Jeśli dla tekstury Wygenerowano automatycznie mapy MIP, wywołania `ID3D11Device::CreateShaderResourceView` są modyfikowane podczas odtwarzania, aby użyć łańcucha MIP podczas próbkowania tekstury.  
   
 ## <a name="example"></a>Przykład  
- **Generacji mipmapy** wariant zostać odtworzone przy użyciu kodu w następujący sposób:  
+ Wariantu **generowania mapy MIP** można odtworzyć przy użyciu kodu w następujący sposób:  
   
 ```  
 D3D11_TEXTURE2D_DESC texture_description;  
@@ -65,12 +65,12 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- Aby utworzyć teksturę, która ma pełnego łańcucha mip, ustaw `D3D11_TEXTURE2D_DESC::MipLevels` na 0. Liczba poziomów mip w pełnego łańcucha mip jest: floor(log2(n) + 1), gdzie n to największy wymiarze tekstury.  
+ Aby utworzyć teksturę, która ma pełny łańcuch MIP, ustaw wartość `D3D11_TEXTURE2D_DESC::MipLevels` 0. Liczba poziomów MIP w pełnym łańcuchu MIP jest podłogą (log2 — (n) + 1), gdzie n jest największym wymiarem tekstury.  
   
- Należy pamiętać, że jeśli podasz początkowej danych do `CreateTexture2D`, należy podać obiekt D3D11_SUBRESOURCE_DATA każdy poziom mip.  
+ Należy pamiętać, że w przypadku dostarczania początkowych danych do `CreateTexture2D` , należy dostarczyć D3D11_SUBRESOURCE_DATA obiektu dla każdego poziomu MCI.  
   
 > [!NOTE]
-> Jeśli chcesz podać własne mip poziomu zawartość zamiast generować je automatycznie, musi utworzyć swoje tekstury za pomocą obrazu edytora obsługującego mapowane mip tekstury i następnie załaduj plik i poziomów mip, aby przekazać `CreateTexture2D`.  
+> Aby zapewnić własną zawartość poziomu MCI zamiast generować ją automatycznie, należy utworzyć tekstury przy użyciu edytora obrazów, który obsługuje tekstury mapowane na MCI, a następnie załadować plik i przekazać poziomy MCI do `CreateTexture2D` .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wariant wymiarów jednej ósmej tekstury](../debugger/half-quarter-texture-dimensions-variant.md)
+ [Wariant wymiarów tekstury połówkowej/Kwartałowej](../debugger/half-quarter-texture-dimensions-variant.md)

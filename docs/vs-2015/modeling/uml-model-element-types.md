@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54036b985c90be926eaa56f6ebe60d1f3903e0b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657323"
 ---
 # <a name="uml-model-element-types"></a>Typy elementów modelu UML
@@ -26,9 +26,9 @@ Można odczytywać i manipulować modelem UML za pomocą interfejsu programowani
  Szczegóły każdego typu są dostępne w [dokumentacji interfejsu API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
 ## <a name="element-types"></a>Typy elementów
- Jest to zestaw typów zdefiniowanych w zestawie `Microsoft.VisualStudio.Uml.Interfaces.dll`.
+ Jest to zestaw typów zdefiniowanych w zestawie `Microsoft.VisualStudio.Uml.Interfaces.dll` .
 
- W pełni kwalifikowana nazwa każdego elementu to "`Microsoft.VisualStudio.Uml.`", po którym następuje nazwa wyświetlana.
+ W pełni kwalifikowana nazwa każdego elementu to " `Microsoft.VisualStudio.Uml.` ", po którym następuje nazwa wyświetlana.
 
  Dla wygody ta lista jest ustawiana jako Hierarchia dziedziczenia. Gdzie typ ma więcej niż jeden nadmiarowy, dodatkowe Nadtypy są wyświetlane po dwukropku (:).
 

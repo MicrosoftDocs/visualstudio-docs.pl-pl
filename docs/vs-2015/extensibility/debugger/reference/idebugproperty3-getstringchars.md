@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Dokumentacja firmy Microsoft
+title: 'IDebugProperty3:: GetStringChars | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 661cf6833c292d5ff4015649d494ee3a7d04fdbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419884"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64819752"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera parametry skojarzone z tą właściwością i zapisuje go w buforze dostarczone przez użytkownika.  
+Pobiera ciąg skojarzony z tą właściwością i zapisuje go w buforze dostarczonym przez użytkownika.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,24 +44,24 @@ int GetStringChars(
   
 #### <a name="parameters"></a>Parametry  
  `buflen`  
- [in] Maksymalna liczba znaków, które może przechowywać buforu dostarczone przez użytkownika.  
+ podczas Maksymalna liczba znaków, jaką może zawierać bufor dostarczony przez użytkownika.  
   
  `rgString`  
- [out] Zwraca ciąg.  
+ określoną Zwraca ciąg.  
   
- [C++ tylko], `rgString` to wskaźnik do buforu, który otrzymuje z ciągu znaków Unicode. Tego buforu musi wynosić co najmniej `buflen` rozmiar znaków (nie w bajtach).  
+ [Tylko C++], `rgString` jest wskaźnikiem do buforu, który odbiera znaki Unicode ciągu. Rozmiar buforu musi wynosić co najmniej `buflen` znaków (nie bajtów).  
   
  `pceltFetched`  
- [out] Gdzie jest zwracana liczba znaków rzeczywiście jest przechowywana w buforze. (Może być `NULL` w języku C++.)  
+ określoną Miejsce, w którym zwracana jest liczba znaków faktycznie przechowywanych w buforze. (Może być `NULL` w języku C++).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- W języku C++, należy uważać, aby mieć pewność, że rozmiar buforu jest co najmniej `buflen` znaków Unicode. Należy pamiętać, że znak Unicode 2 bajtów.  
+ W języku C++ należy zwrócić uwagę, aby upewnić się, że bufor ma co najmniej `buflen` znaki Unicode. Należy zauważyć, że znak Unicode ma długość 2 bajtów.  
   
 > [!NOTE]
-> W języku C++ zwracanego ciągu nie obejmuje kończącego znaku null. Jeśli określony, `pceltFetched` określą liczbę znaków w ciągu.  
+> W języku C++ zwrócony ciąg nie zawiera kończącego znaku null. Jeśli jest podany, `pceltFetched` określi liczbę znaków w ciągu.  
   
 ## <a name="example"></a>Przykład  
 <!-- TODO: review snippet reference  [!CODE [[cpp]]([cpp])]  -->  

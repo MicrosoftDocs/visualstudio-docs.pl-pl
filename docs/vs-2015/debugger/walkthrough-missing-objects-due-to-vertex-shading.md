@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: brak obiektów ze względu na cieniowanie wierzchołków | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,121 +10,121 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444268"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64823475"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędziami diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na błąd występujący podczas etapu programu do cieniowania wierzchołków.  
+W tym instruktażu pokazano, jak za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzi Diagnostyka grafiki sprawdzać nieobecny obiekt z powodu błędu występującego podczas etapu cieniowania wierzchołka.  
   
- Ten instruktaż ilustruje następujące zadania:  
+ Ten Instruktaż ilustruje następujące zadania:  
   
-- Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
+- Korzystając z **listy zdarzeń grafiki** , można zlokalizować potencjalne źródła problemu.  
   
-- Za pomocą **etapy potoku grafiki** okna, aby sprawdzić efekt skonfigurowania `DrawIndexed` wywołań interfejsu API Direct3D.  
+- Korzystając z okna **etapy potoku grafiki** , można sprawdzić efekt `DrawIndexed` wywołań interfejsu API Direct3D.  
   
-- Za pomocą **Debuger języka HLSL** do zbadania cieniowania wierzchołków.  
+- Sprawdzanie cieniowania wierzchołków przy użyciu **debugera HLSL** .  
   
-- Za pomocą **stos wywołań zdarzenia grafiki** ułatwia znalezienie źródła Nieprawidłowa stała HLSL.  
+- Użycie **stosu wywołań zdarzeń grafiki** , aby ułatwić znalezienie źródła nieprawidłowej stałej HLSL.  
   
 ## <a name="scenario"></a>Scenariusz  
- Jedną z najczęstszych przyczyn nieistniejącego obiektu w 3-w aplikacji występuje, gdy program do cieniowania wierzchołków przekształca wierzchołki obiektu w sposób niepoprawne lub nieoczekiwanego — obiekt może na przykład skalować do bardzo małym rozmiarze, lub przekształcane w taki sposób, że wydaje się za zaporą aparatu , a nie przed nim.  
+ Jednym z typowych przyczyn braku obiektu w aplikacji 3-D występuje, gdy program do cieniowania wierzchołków przeniesie wierzchołki obiektu w nieprawidłowy lub nieoczekiwany sposób — na przykład obiekt może być skalowany do bardzo małego rozmiaru lub przekształcony w taki sposób, aby był wyświetlany za kamerą, a nie przed nim.  
   
- W tym scenariuszu po uruchomieniu aplikacji pod kątem testowania tej tło jest renderowana zgodnie z oczekiwaniami, ale nie ma jeden z obiektów. Przy użyciu programu Graphics Diagnostics można przechwytywać problemy do dziennika grafiki tak, aby można było debugować aplikację. Problem wygląda to w aplikacji:  
+ W tym scenariuszu, gdy aplikacja jest uruchamiana w celu jej przetestowania, tło jest renderowane zgodnie z oczekiwaniami, ale jeden z obiektów nie jest wyświetlany. Korzystając z Diagnostyka grafiki, można przechwytywać ten problem do dziennika grafiki, dzięki czemu można debugować aplikację. Problem wygląda następująco w aplikacji:  
   
- ![Obiekt nie może być widoczny. ](../debugger/media/gfx-diag-demo-missing-object-shader-problem.png "gfx_diag_demo_missing_object_shader_problem")  
+ ![Nie można zobaczyć obiektu.](../debugger/media/gfx-diag-demo-missing-object-shader-problem.png "gfx_diag_demo_missing_object_shader_problem")  
   
 ## <a name="investigation"></a>Badanie  
- Korzystając z narzędzi programu Graphics Diagnostics, należy załadować plik dziennika grafiki, aby sprawdzić ramek, które zostały przechwycone podczas testu.  
+ Za pomocą narzędzi Diagnostyka grafiki, można załadować plik dziennika grafiki, aby sprawdzić ramki, które zostały przechwycone podczas testu.  
   
-#### <a name="to-examine-a-frame-in-a-graphics-log"></a>Aby sprawdzić ramkę w dzienniku grafiki  
+#### <a name="to-examine-a-frame-in-a-graphics-log"></a>Aby przeanalizować ramkę w dzienniku grafiki  
   
-1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], załaduj dziennik grafiki zawierający ramkę, która wykazuje Brak obiektu. Nowa karta dziennika grafiki pojawia się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W górnej części na tej karcie jest dane wyjściowe docelowy renderowania zaznaczonej klatki. W dolnej części jest **lista ramek**, powoduje wyświetlenie jako miniaturę każdej uchwyconej klatki.  
+1. W programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Załaduj dziennik grafiki zawierający ramkę, która wykazuje brakujący obiekt. Zostanie wyświetlona nowa karta graficzny dziennik grafiki w temacie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . W górnej części tej karty są docelowe wyniki renderowania dla wybranej ramki. W dolnej części jest **listą ramek**, która wyświetla każdą przechwyconą ramkę jako obraz miniatury.  
   
-2. W **lista ramek**, zaznacz klatkę, która pokazuje, że obiekt nie jest wyświetlany. Obiektu docelowego renderowania jest aktualizowana, aby odzwierciedlić wybraną ramkę. W tym scenariuszu dziennika grafiki w karcie wygląda następująco:  
+2. Na **liście ramka**Wybierz ramkę, która pokazuje, że obiekt nie jest wyświetlany. Obiekt docelowy renderowania zostanie zaktualizowany w celu odzwierciedlenia wybranej ramki. W tym scenariuszu karta Dziennik grafiki wygląda następująco:  
   
     ![Dokument dziennika grafiki w programie Visual Studio](../debugger/media/gfx-diag-demo-missing-object-shader-step-1.png "gfx_diag_demo_missing_object_shader_step_1")  
   
-   Po wybraniu ramkę, która demonstruje problem, można rozpocząć do zdiagnozowania go za pomocą **Lista zdarzeń graficznych**. **Lista zdarzeń graficznych** zawiera każdego interfejsu API Direct3D wywołania wykonanego do renderowania aktywną ramkę, na przykład wywołania interfejsu API, aby skonfigurować stan urządzenia, do tworzenia i aktualizowania buforów i aby rysować obiekty, które pojawiają się w ramce. Wiele rodzajów wywołania są interesujące, ponieważ często (ale nie zawsze) analogiczna zmiana obiektu docelowego renderowania, gdy aplikacja działa zgodnie z oczekiwaniami, na przykład rysowania, wysyłania, kopiowanie lub wyczyść połączenia. Wywołania rysowania są szczególnie interesujące, ponieważ każdy z nich reprezentuje geometrię, która aplikacja renderowania (wywołań wysyłania umożliwia również renderowanie geometrii).  
+   Po wybraniu ramki, która demonstruje ten problem, można rozpocząć diagnozowanie jej przy użyciu **listy zdarzeń grafiki**. **Lista zdarzeń grafiki** zawiera wszystkie wywołania interfejsu API Direct3D, które zostały wykonane w celu renderowania aktywnej ramki, na przykład wywołania interfejsu API w celu skonfigurowania stanu urządzenia, tworzenia i aktualizowania buforów oraz do rysowania obiektów, które pojawiają się w ramce. Wiele rodzajów wywołań jest interesujących, ponieważ występuje często (ale nie zawsze) odpowiednia zmiana w miejscu docelowym renderowania, gdy aplikacja działa zgodnie z oczekiwaniami, na przykład rysowanie, wysyłanie, kopiowanie lub czyszczenie wywołań. Wywołania rysowania są szczególnie interesujące, ponieważ każda z nich reprezentuje geometrię renderowaną przez aplikację (wywołania wysyłania mogą również renderować geometrię).  
   
-   Ponieważ wiadomo, że nieistniejącego obiektu jest nie jest wstawiany do elementu docelowego renderowania (w tym przypadku) — ale, że pozostała część sceny jest rysowana zgodnie z oczekiwaniami — możesz użyć **Lista zdarzeń graficznych** wraz z **potoku grafiki Etapy** narzędzia, aby sprawdzić, które wywołania rysowania odnosi się do nieistniejącego obiektu geometrycznego. **Etapy potoku grafiki** okno pokazuje geometrię, która została wysłana do każdego wywołania rysowania, niezależnie od jego wpływ na obiektu docelowego renderowania. Po przeniesieniu za pośrednictwem wywołania rysowania etapy potoku są aktualizowane, aby pokazać geometrię, która jest skojarzona z tym wywołaniem, a wyjście docelowego renderowania jest aktualizowany do wyświetlenia stanu obiektu docelowego renderowania po wywołaniu zostało ukończone.  
+   Ponieważ wiadomo, że brakujący obiekt nie jest rysowany do elementu docelowego renderowania (w tym przypadku), ale pozostała część sceny jest rysowana zgodnie z oczekiwaniami — można użyć **listy zdarzeń grafiki** wraz z narzędziem **etapy potoku grafiki** , aby określić, które wywołanie rysowania odnosi się do geometrii brakującego obiektu. Okno **etapy potoku grafiki** pokazuje geometrię, która została wysłana do każdego wywołania rysowania, niezależnie od jej wpływu na obiekt docelowy renderowania. Podczas poruszania się po wywołaniach rysowania etapy potoku są aktualizowane w celu wyświetlenia geometrii, która jest skojarzona z tym wywołaniem, a docelowe dane wyjściowe renderowania są aktualizowane w celu wyświetlenia stanu obiektu docelowego renderowania po zakończeniu wywołania.  
   
-#### <a name="to-find-the-draw-call-for-the-missing-geometry"></a>Aby znaleźć wywołanie rysowania Brak geometrii  
+#### <a name="to-find-the-draw-call-for-the-missing-geometry"></a>Aby znaleźć połączenie rysowania dla brakującej geometrii  
   
-1. Otwórz **Lista zdarzeń graficznych** okna. Na **Graphics Diagnostics** narzędzi, wybierz **listy zdarzeń**.  
+1. Otwórz okno **Lista zdarzeń grafiki** . Na pasku narzędzi **Diagnostyka grafiki** wybierz pozycję **Lista zdarzeń**.  
   
-2. Otwórz **etapy potoku grafiki** okna. Na **Graphics Diagnostics** narzędzi, wybierz **etapy potoku**.  
+2. Otwórz okno **etapy potoku grafiki** . Na pasku narzędzi **Diagnostyka grafiki** wybierz pozycję **etapy potoku**.  
   
-3. Podczas przeglądania przez każdego wywołania rysowania **Lista zdarzeń graficznych** okna, obejrzyj **etapy potoku grafiki** okna dla nieistniejącego obiektu. Aby to ułatwić, wprowadź "Draw" w **wyszukiwania** polu w prawym górnym rogu **Lista zdarzeń graficznych** okna. Filtruje listę, tak aby zawiera tylko zdarzenia, które mają "Draw" w tytułach.  
+3. Podczas przechodzenia przez poszczególne wywołania rysowania w oknie **Lista zdarzeń graficznych** Obejrzyj okno **etapy potoku grafiki** dla brakującego obiektu. Aby to ułatwić, wprowadź ciąg "Draw" w polu **wyszukiwania** w prawym górnym rogu okna **Lista zdarzeń grafiki** . Filtruje listę, tak aby zawierała tylko zdarzenia, które mają "Draw" w swoich tytułach.  
   
-    W **etapy potoku grafiki** oknie **asemblera dane wejściowe** etapu pokazuje geometrii obiektu przed jego przekształcone i **program do cieniowania wierzchołków** etap zawiera takie same obiekt po jest przekształcane. W tym scenariuszu, wiesz, że Ci się znaleźć nieistniejącego obiektu pojawi się w **asemblera dane wejściowe** etapu i nic nie jest wyświetlana w **program do cieniowania wierzchołków** etapu.  
+    W oknie **etapy potoku grafiki** , etap **asemblera wejściowego** pokazuje geometrię obiektu przed jego przeprowadzeniem, a etap **cieniowania wierzchołków** pokazuje ten sam obiekt po jego przeprowadzeniu. W tym scenariuszu wiesz, że znaleziono brakujący obiekt, gdy zostanie on wyświetlony na etapie **asemblera wejściowego** i nic nie jest wyświetlane na etapie programu do **cieniowania wierzchołka** .  
   
    > [!NOTE]
-   > Jeśli inne etapy geometrii — na przykład, moduł cieniujący kadłuba, program do cieniowania domeny lub program do cieniowania geometrii etapy — przetworzyć obiektu, mogą one być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie, w którym nie jest wyświetlany wynik, lub jest wyświetlany w nieoczekiwany sposób.  
+   > W przypadku innych etapów geometrii — na przykład do cieniowania kadłuba, programu do cieniowania domen lub etapów modułu cieniującego geometrii — przetwarzania obiektu, może to być przyczyną problemu. Zazwyczaj problem jest związany z najwcześniejszym etapem, w którym wynik nie jest wyświetlany lub jest wyświetlany w nieoczekiwany sposób.  
   
-4. Zatrzymaj po przejściu do wywołania rysowania, która odnosi się do nieistniejącego obiektu. W tym scenariuszu **etapy potoku grafiki** okno wskazuje, czy geometrii został wydany do procesora GPU (wskazywanym przez miniaturę asemblera dane wejściowe), ale nie ma obiektu docelowego renderowania, ponieważ wystąpił błąd podczas etapu programu do cieniowania wierzchołków (wskazywanym przez miniaturę program do cieniowania wierzchołków):  
+4. Zatrzymaj, gdy docierasz do wywołania rysowania, które odnosi się do brakującego obiektu. W tym scenariuszu okno **etapy potoku grafiki** wskazuje, że geometria została wystawiona dla procesora GPU (wskazywanej przez miniaturę asemblera wejściowego), ale nie jest wyświetlana w miejscu docelowym renderowania, ponieważ coś poszło źle na etapie cieniowania wierzchołka (wskazywanym przez miniaturę programu do cieniowania wierzchołka):  
   
-    ![To zdarzenie DrawIndexed i jego wpływ na potok](../debugger/media/gfx-diag-demo-missing-object-shader-step-2.png "gfx_diag_demo_missing_object_shader_step_2")  
+    ![Zdarzenie DrawIndexed i jego wpływ na potok](../debugger/media/gfx-diag-demo-missing-object-shader-step-2.png "gfx_diag_demo_missing_object_shader_step_2")  
   
-   Po zakończeniu upewnij się, czy aplikacja wystawiony dla nieistniejącego obiektu geometrii wywołanie rysowania i wykryć, czy ten problem będzie się działo podczas etapu programu do cieniowania wierzchołków, Debuger języka HLSL można użyć do badania program do cieniowania wierzchołków i Dowiedz się, co się stało z obiektu, który. Możesz za pomocą debugera HLSL przeanalizować stan zmiennych HLSL w czasie wykonywania, krokowe kodu języka HLSL i ustawić punkty przerwania, aby pomóc w diagnozowaniu problemu.  
+   Po upewnieniu się, że aplikacja wygenerowała wywołanie rysowania dla brakującego obiektu i odkryj, że problem występuje podczas etapu cieniowania wierzchołków, można użyć debugera HLSL do sprawdzenia cieniowania wierzchołków i dowiedzieć się, co się stało z geometrią obiektu. Debuger HLSL umożliwia badanie stanu zmiennych HLSL podczas wykonywania, przechodzenie przez kod HLSL i ustawianie punktów przerwania, aby ułatwić zdiagnozowanie problemu.  
   
-#### <a name="to-examine-the-vertex-shader"></a>Aby sprawdzić program do cieniowania wierzchołków  
+#### <a name="to-examine-the-vertex-shader"></a>Aby przejrzeć cieniowanie wierzchołków  
   
-1. Rozpocznij debugowanie etapu programu do cieniowania wierzchołków. W **etapy potoku grafiki** okna, w obszarze **program do cieniowania wierzchołków** przejściowe, wybierz **Rozpocznij debugowanie** przycisku.  
+1. Rozpocznij debugowanie etapu programu do cieniowania wierzchołków. W oknie **etapy potoku grafiki** w obszarze etapu **cieniowania wierzchołka** wybierz przycisk **Rozpocznij debugowanie** .  
   
-2. Ponieważ **asemblera dane wejściowe** etapu pojawia się zapewnienie dobrej dane programu do cieniowania wierzchołków i **program do cieniowania wierzchołków** etapu wydaje się generuje nie danych wyjściowych, chcesz zbadać dane wyjściowe programu do cieniowania wierzchołków struktury, `output`. Podczas wykonywania kroków za pomocą kodu języka HLSL zapoznasz się bliżej podczas wyszukiwania `output` zostanie zmodyfikowany.  
+2. Ponieważ etap **asemblera wejściowego** wydaje się zapewnić dobre dane dla cieniowania wierzchołków, a etap **cieniowania wierzchołka** wydaje się nie generować danych wyjściowych, należy przejrzeć strukturę wyjściową programu do cieniowania wierzchołków `output` . Po przekroczeniu kodu HLSL należy przejść bliżej tego, kiedy `output` jest modyfikowany.  
   
-3. Przy pierwszej `output` zostanie zmodyfikowany element członkowski `worldPos` są zapisywane.  
+3. Podczas pierwszej `output` modyfikacji element członkowski `worldPos` jest zapisywana w.  
   
-    ![Wartość "output.worldPos" pojawia się uzasadnione](../debugger/media/gfx-diag-demo-missing-object-shader-step-4.png "gfx_diag_demo_missing_object_shader_step_4")  
+    ![Wartość "Output. worldPos" jest wyświetlana w odpowiedniej postaci](../debugger/media/gfx-diag-demo-missing-object-shader-step-4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
-    Ponieważ wartość wydaje się być uzasadnione, w przypadku kontynuowania krokowe wykonywanie kodu aż do następnego wiersza, który modyfikuje `output`.  
+    Ponieważ jej wartość jest rozsądna, Kontynuuj przechodzenie przez kod do następnego wiersza, który modyfikuje `output` .  
   
-4. Przy następnym `output` zostanie zmodyfikowany element członkowski `pos` są zapisywane.  
+4. Przy następnym `output` modyfikowaniu element członkowski `pos` jest zapisywana w.  
   
-    ![Zerowany wartość "output.pos"](../debugger/media/gfx-diag-demo-missing-object-shader-step-5.png "gfx_diag_demo_missing_object_shader_step_5")  
+    ![Wartość "Output. pos" została wyliczona jako zero](../debugger/media/gfx-diag-demo-missing-object-shader-step-5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
-    Tym razem, wartość `pos` elementu członkowskiego — samych zer — jest podejrzana. Następnie chcesz określić sposób `output.pos` dostarczonych wartości samych zer.  
+    Tym razem wartość `pos` elementu członkowskiego — wszystkie zera — wygląda podejrzanie. Następnie chcesz określić, jak ma `output.pos` mieć wartość wszystkich zer.  
   
-5. Można zauważyć, że `output.pos` przyjmuje wartość ze zmiennej o nazwie `temp`. W poprzednim wierszu, zobaczysz, że wartość `temp` jest wynik mnożenia wartości poprzedniej wartości przez stałą o nazwie `projection`. Podejrzewasz, że `temp`firmy podejrzane wartość jest wynikiem tej mnożenia. Po umieszczeniu wskaźnika myszy na `projection`, zwróć uwagę, czy jej wartość jest również samych zer.  
+5. Należy zauważyć, że `output.pos` wartość jest pobierana z zmiennej o nazwie `temp` . W poprzednim wierszu zobaczysz, że wartość `temp` jest wynikiem mnożenia poprzedniej wartości przez stałą o nazwie `projection` . Podejrzewasz, że `temp` podejrzana wartość jest wynikiem tego mnożenia. Po umieszczeniu wskaźnika na `projection` , Zauważ, że jego wartość to również same zera.  
   
-    ![Projekcja macierz nie zawiera nieprawidłowe przekształcenie](../debugger/media/gfx-diag-demo-missing-object-shader-step-6.png "gfx_diag_demo_missing_object_shader_step_6")  
+    ![Macierz projekcji zawiera złą transformację](../debugger/media/gfx-diag-demo-missing-object-shader-step-6.png "gfx_diag_demo_missing_object_shader_step_6")  
   
-    W tym scenariuszu badanie wykazało, że `temp`firmy podejrzane wartość to najprawdopodobniej spowodowane przez jego mnożenia przez wartość `projection`, a ponieważ `projection` jest stałą, która ma zawierać macierz projekcji, wiesz, że nie powinien zawierać samych zer.  
+    W tym scenariuszu badanie ujawnia `temp` podejrzane wartości najprawdopodobniej spowodowane przez mnożenie przez `projection` , a ponieważ `projection` jest stałą, która ma zawierać macierz projekcji, wiadomo, że nie powinna zawierać samych zer.  
   
-   Po ustaleniu, że stała HLSL `projection`— przekazywane do programu do cieniowania przez Twoją aplikację — jest prawdopodobnie źródło problemu, następnym krokiem jest aby znaleźć lokalizację w kodzie źródłowym aplikacji, gdzie jest wypełniony stałego buforu. Możesz użyć **stos wywołań zdarzenia grafiki** można znaleźć w tej lokalizacji.  
+   Po ustaleniu, że stała HLSL `projection` — przeniesiona do programu do cieniowania przez aplikację — jest najprawdopodobniej źródłem problemu, następnym krokiem jest znalezienie lokalizacji w kodzie źródłowym aplikacji, w której został wypełniony stały bufor. Możesz użyć **stosu wywołań zdarzeń grafiki** , aby znaleźć tę lokalizację.  
   
-#### <a name="to-find-where-the-constant-is-set-in-your-apps-source-code"></a>Aby dowiedzieć się, gdy stała jest ustawiona w kodzie źródłowym aplikacji  
+#### <a name="to-find-where-the-constant-is-set-in-your-apps-source-code"></a>Aby dowiedzieć się, gdzie stała jest ustawiona w kodzie źródłowym aplikacji  
   
-1. Otwórz **stos wywołań zdarzenia grafiki** okna. Na **Graphics Diagnostics** narzędzi, wybierz **stos wywołań zdarzenia grafiki**.  
+1. Otwórz okno **stos wywołań zdarzeń grafiki** . Na pasku narzędzi **Diagnostyka grafiki** wybierz pozycję **grafika stos wywołań zdarzeń**.  
   
-2. Przenieś do wyższego stos wywołań do kodu źródłowego aplikacji. W **stos wywołań zdarzenia grafiki** oknie Wybierz wywołanie najważniejsze, aby zobaczyć, jeśli stały bufor jest wypełniany istnieje. Jeśli nie jest dostępne, kontynuacja górę stosu wywołań okaże się, gdzie jest wypełniany. W tym scenariuszu użytkownik stwierdzi, że stały bufor jest wypełniony — za pomocą `UpdateSubresource` interfejsu API Direct3D — dalsze w górę stosu wywołań w funkcji, która nosi nazwę `MarbleMaze::Render`, i że jego wartość pochodzi z obiektu stałego buforu, który nosi nazwę `m_marbleConstantBufferData` :  
+2. Przejdź w górę stosu wywołań do kodu źródłowego aplikacji. W oknie **stos wywołań zdarzeń grafiki** wybierz pierwsze wywołanie, aby sprawdzić, czy stały bufor jest wypełniany w tym miejscu. Jeśli tak nie jest, Kontynuuj stos wywołań do momentu, gdy okaże się, że jest wypełniony. W tym scenariuszu wykryjesz, że stały bufor jest wypełniany — za pomocą `UpdateSubresource` interfejsu API Direct3D — w pełni zastos wywołań w funkcji o nazwie `MarbleMaze::Render` i że jej wartość pochodzi z obiektu stałego buforu o nazwie `m_marbleConstantBufferData` :  
   
-    ![Kod, który ustawia obiektu stałego buforu](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
+    ![Kod, który ustawia stały bufor obiektu](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   > Jeśli jednocześnie debugujesz aplikację, w tym miejscu można ustawić punktu przerwania i zostanie uruchomiona, podczas renderowania następnej ramki. Następnie można sprawdzić członkowie `m_marbleConstantBufferData` do upewnij się, że wartość `projection` elementu członkowskiego jest ustawiony na samych zer, jeśli stałego buforu.  
+   > Jeśli jednocześnie debugujesz aplikację, możesz ustawić punkt przerwania w tej lokalizacji i zostanie on trafiony podczas renderowania następnej ramki. Następnie można przeprowadzić inspekcję elementów `m_marbleConstantBufferData` Członkowskich, aby upewnić się, że wartość `projection` elementu członkowskiego jest ustawiona na wszystkie zera po wypełnieniu stałego buforu.  
   
-   Po znalezieniu lokalizacji, w którym zostanie wypełnione stały bufor i odnajdywanie, że jego wartości pochodzą ze zmiennych `m_marbleConstantBufferData`, następnym krokiem jest, aby dowiedzieć się, gdzie `m_marbleConstantBufferData.projection` element członkowski jest ustawiany na samych zer. Możesz użyć **Znajdź wszystkie odwołania** do szybkiego skanowania w poszukiwaniu kod, który zmienia wartość `m_marbleConstantBufferData.projection`.  
+   Po znalezieniu lokalizacji, w której jest wypełniany stały bufor i odkryj, że jej wartości pochodzą ze zmiennej `m_marbleConstantBufferData` , następnym krokiem jest dowiedzenie, gdzie `m_marbleConstantBufferData.projection` element członkowski jest ustawiony na wszystkie zera. Możesz użyć polecenia **Znajdź wszystkie odwołania** , aby szybko skanować kod, który zmienia wartość `m_marbleConstantBufferData.projection` .  
   
-#### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Aby znaleźć, gdzie element członkowski projekcji jest ustawiany w kodzie źródłowym aplikacji  
+#### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Aby znaleźć miejsce, w którym element członkowski projekcji jest ustawiony w kodzie źródłowym aplikacji  
   
-1. Znajdowanie odwołań do `m_marbleConstantBufferData.projection`. Otwórz menu skrótów dla zmiennej `m_marbleConstantBufferData`, a następnie wybierz **Znajdź wszystkie odwołania**.  
+1. Znajdź odwołania do `m_marbleConstantBufferData.projection` . Otwórz menu skrótów dla zmiennej `m_marbleConstantBufferData` , a następnie wybierz polecenie **Znajdź wszystkie odwołania**.  
   
-2. Aby przejść do lokalizacji linii w kodzie źródłowym aplikacji gdzie `projection` elementu członkowskiego jest modyfikowany, wybierz tę linię w **wyniki wyszukiwania symboli** okna. Ponieważ pierwszego wyniku, który modyfikuje element członkowski projekcji mogą nie być przyczyną tego problemu, trzeba sprawdzić kilka obszarów kodu źródłowego aplikacji.  
+2. Aby przejść do lokalizacji wiersza w kodzie źródłowym aplikacji, w którym `projection` element członkowski został zmodyfikowany, wybierz ten wiersz w oknie **Znajdź wyniki symboli** . Ponieważ pierwszy wynik, który modyfikuje element członkowski projekcji, może nie być przyczyną problemu, może być konieczne przeanalizowanie kilku obszarów kodu źródłowego aplikacji.  
   
-   Po znalezieniu lokalizację gdzie `m_marbleConstantBufferData.projection` jest ustawiona, można sprawdzić otaczającego kod źródłowy w celu ustalenia źródła pochodzenia niepoprawną wartość. W tym scenariuszu użytkownik stwierdza, że wartość `m_marbleConstantBufferData.projection` jest ustawiony na zmiennej lokalnej o nazwie `projection` zanim została zainicjowana z wartością, która została przez kod `m_camera->GetProjection(&projection);` w następnym wierszu.  
+   Po znalezieniu lokalizacji, w której `m_marbleConstantBufferData.projection` jest ustawiony, można sprawdzić otaczający kod źródłowy, aby określić pochodzenie nieprawidłowej wartości. W tym scenariuszu wykryjesz, że wartość `m_marbleConstantBufferData.projection` jest ustawiona na zmienną lokalną o nazwie `projection` przed zainicjowaniem jej do wartości podanej przez kod `m_camera->GetProjection(&projection);` w następnym wierszu.  
   
-   ![Projekcja marble ustawiono przed zainicjowaniem](../debugger/media/gfx-diag-demo-missing-object-shader-step-9.png "gfx_diag_demo_missing_object_shader_step_9")  
+   ![Projekcja marmurowa jest ustawiana przed inicjalizacją](../debugger/media/gfx-diag-demo-missing-object-shader-step-9.png "gfx_diag_demo_missing_object_shader_step_9")  
   
-   Aby rozwiązać ten problem, Przenieś wiersz kodu, który ustawia wartość `m_marbleConstantBufferData.projection` po wierszu, który inicjuje wartość zmiennej lokalnej `projection`.  
+   Aby rozwiązać ten problem, należy przenieść wiersz kodu, który ustawia wartość `m_marbleConstantBufferData.projection` po wierszu, który inicjuje wartość zmiennej lokalnej `projection` .  
   
-   ![Poprawiony C&#43; &#43; kod źródłowy](../debugger/media/gfx-diag-demo-missing-object-shader-step-10.png "gfx_diag_demo_missing_object_shader_step_10")  
+   ![Poprawiony kod źródłowy C&#43;&#43; ](../debugger/media/gfx-diag-demo-missing-object-shader-step-10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
-   Po rozwiązaniu kod można skompilować go ponownie i uruchomić aplikację ponownie, aby odnaleźć rozwiązany problem renderowania:  
+   Po naprawieniu kodu możesz ponownie skompilować i uruchomić aplikację, aby poznać, że problem z renderowaniem został rozwiązany:  
   
-   ![Wyświetlany obiekt teraz. ](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
+   ![Obiekt w teraz wyświetlany.](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineInfo | Dokumentacja firmy Microsoft
+title: 'IDebugCoreServer2:: GetMachineInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1ddaa1d46d64af604d679a52d23b604012dbf84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192972"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera opis maszyny, która jest systemem core server.  
+Pobiera opis komputera, na którym jest uruchomiony serwer podstawowy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,13 +42,13 @@ int GetInfo( 
   
 #### <a name="parameters"></a>Parametry  
  `Fields`  
- [in] Kombinacja flag z [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) wyliczenie określające pola, które z `pMachineInfo` są wypełnione.  
+ podczas Kombinacja flag z wyliczenia [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) , która określa, które pola `pMachineInfo` mają być wypełnione.  
   
  `pMachineInfo`  
- [out w] A [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) strukturę, która jest wypełniane opis maszyny.  
+ [in. out] Struktura [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) , która jest wypełniana opisem maszyny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

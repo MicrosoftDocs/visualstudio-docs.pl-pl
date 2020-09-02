@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Debugowanie przy użyciu źródła Code Center Premium | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: debugowanie za pomocą programu Code Center Premium Source | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,128 +18,128 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438334"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64783475"
 ---
-# <a name="how-to-debug-with-code-center-premium-source"></a>Instrukcje: Debugowanie przy użyciu źródła Code Center Premium
+# <a name="how-to-debug-with-code-center-premium-source"></a>Porady: debugowanie przy użyciu źródła Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, możesz przeprowadzić debugowanie bezpiecznego źródłowy udostępniony z Microsoft MSDN Code Center Premium.  
+Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera można debugować bezpieczne udostępnione źródło z centrum kodu Microsoft MSDN w wersji Premium.  
   
- W tym temacie opisano sposób konfigurowania i debugowania kodu źródła Code Center Premium w programie Visual Studio.  
+ W tym temacie wyjaśniono, jak skonfigurować i debugować kod źródłowy programu Code Center w programie Visual Studio.  
   
-### <a name="to-prepare-for-debugging-with-code-center-premium"></a>Aby przygotować się do debugowania za pomocą Code Center Premium  
+### <a name="to-prepare-for-debugging-with-code-center-premium"></a>Aby przygotować się do debugowania za pomocą programu Code Center Premium  
   
-1. Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
+1. Podłącz czytnik karty inteligentnej i Wstaw kartę uzyskaną z inicjatywy udostępnionego źródła.  
   
 2. Uruchom program Visual Studio.  
   
-3. Na **narzędzia** menu, kliknij przycisk **opcje**.  
+3. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).  
   
-4. W **opcje** po otwarciu okna dialogowego **debugowanie** węzła i kliknij przycisk **ogólne**.  
+4. W oknie dialogowym **Opcje** Otwórz węzeł **debugowanie** , a następnie kliknij pozycję **Ogólne**.  
   
-5. Wyczyść **Włącz tylko mój kod (tylko zarządzany)** pole wyboru.  
+5. Wyczyść pole wyboru **włącz tylko mój kod (tylko zarządzane)** .  
   
-6. Wybierz **Włącz obsługę serwera źródłowego**.  
+6. Wybierz pozycję **Włącz obsługę serwera źródłowego**.  
   
-7. Wyczyść **wymaga plików źródłowych Aby dokładnie dopasować oryginalną wersję**.  
+7. Wyczyść pole **Wymagaj, aby pliki źródłowe były dokładnie zgodne z wersją oryginalną**.  
   
-8. W obszarze **debugowanie** węzła, kliknij przycisk **symbole**.  
+8. W węźle **debugowanie** kliknij pozycję **symbole**.  
   
-9. W **pliku symboli (.pdb) lokalizacje** zaznaczenie pola wyboru **symboli serwera Microsoft** pole wyboru, a następnie dodaj następujące lokalizacje:  
+9. W polu **lokalizacje pliku symboli (. pdb)** Usuń zaznaczenie pola wyboru **symbole serwera Microsoft** i Dodaj następujące lokalizacje:  
   
      `https://codepremium.msdn.microsoft.com/symbols`  
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   > Pamiętaj dołączyć końcowy ukośnik<strong>/</strong> na końcu ścieżki.  
+   > Upewnij się, że na końcu ścieżki zostanie umieszczony końcowy ukośnik <strong>/</strong> .  
   
-     Przenieś te lokalizacje na początku listy, aby upewnić się, że te symbole są najpierw ładowane.  
+     Przenieś te lokalizacje na początku listy, aby upewnić się, że te symbole są ładowane jako pierwsze.  
   
    > [!NOTE]
-   > Te lokalizacje Code Center Premium musi być wymienione jako pierwsze, aby były pierwszy lokalizacje, które są ładowane. W programie Visual Studio 2010 nie można przenieść wszystkie serwery powyżej **serwery symboli firmy Microsoft** zapisu, dlatego należy wyczyścić pole wyboru.  
+   > Te lokalizacje Premium centrum kodu muszą być wymienione na początku, aby były to pierwsze załadowane lokalizacje. W programie Visual Studio 2010 nie można przenieść żadnych serwerów powyżej pozycji **serwery symboli Microsoft** , co oznacza, że należy wyczyścić pole wyboru.  
    > 
    >  Aby załadować symbole z symboli firmy Microsoft podczas sesji debugowania, wykonaj następujące czynności:  
    > 
-   > 1. Na **debugowania** menu, wybierz **Windows** , a następnie wybierz **modułów**.  
-   >    2.  Wybierz moduł, który ma symbole, a następnie otwórz menu skrótów. Wybierz **Załaduj symbole z** , a następnie wybierz **serwery symboli firmy Microsoft**.  
+   > 1. W menu **debugowanie** wybierz pozycję **Windows** , a następnie wybierz pozycję **moduły**.  
+   >    2.  Wybierz moduł, dla którego chcesz utworzyć symbole, a następnie otwórz menu skrótów. Wybierz pozycję **Załaduj symbole z** , a następnie wybierz pozycję **serwery symboli firmy Microsoft**.  
   
-10. W **Buforuj symbole z serwerów symboli w tym katalogu** wprowadź lokalizację, taką jak `C:\symbols` gdzie Code Center Premium może buforować symboli. Pamięć podręczna symboli może znacznie poprawić wydajność podczas debugowania.  
+10. W polu **symbole pamięci podręcznej z serwerów symboli w tym katalogu** wprowadź lokalizację, na przykład w `C:\symbols` przypadku, gdy usługa Code Center Premium może buforować symbole. Symbole buforowania mogą znacząco poprawić wydajność podczas debugowania.  
   
-     Jeśli wystąpią problemy z debugowania kodu źródłowego za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] po ukończeniu tej procedury Sprawdź swoją lokalizację pamięci podręcznej, aby pliki symboli wcześniej pamięci podręcznej i przestarzałe. Usuń pliki symboli nieaktualne.  
+     Jeśli wystąpią problemy z debugowaniem kodu źródłowego za pomocą programu po wykonaniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tej procedury, należy sprawdzić lokalizację pamięci podręcznej dla wcześniej buforowanych i nieaktualnych plików symboli. Usuń nieaktualne pliki symboli.  
   
 11. Kliknij przycisk **OK**.  
   
-12. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aby upewnić się, że ustawienia są zachowywane.  
+12. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , aby upewnić się, że ustawienia są utrwalane.  
   
-### <a name="to-debug-your-source-code-using-attach-to-process"></a>Debugowanie kodu źródłowego za pomocą Dołącz do procesu  
+### <a name="to-debug-your-source-code-using-attach-to-process"></a>Aby debugować kod źródłowy przy użyciu dołączania do procesu  
   
-1. Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
+1. Podłącz czytnik karty inteligentnej i Wstaw kartę uzyskaną z inicjatywy udostępnionego źródła.  
   
 2. Uruchom program Visual Studio.  
   
-3. Otwórz swój projekt programu Visual Studio.  
+3. Otwórz projekt programu Visual Studio.  
   
-4. Na **narzędzia** menu, kliknij przycisk **dołączyć do procesu**.  
+4. W menu **Narzędzia** kliknij polecenie **Dołącz do procesu**.  
   
-5. W **dołączyć do procesu** okno dialogowe, kliknij przycisk **wybierz**.  
+5. W oknie dialogowym **Dołącz do procesu** kliknij pozycję **Wybierz**.  
   
-6. W **Wybieranie typu kodu** okno dialogowe, w obszarze **wykryć tych typów kodu**, wybierz opcję **natywnych**, **zarządzane**, i **zarządzane ( w wersji 4.0)**.  
+6. W oknie dialogowym **Wybieranie typu kodu** w obszarze **Wykryj te typy kodu**wybierz opcję **natywne**, **zarządzane**i **zarządzane (v 4.0)**.  
   
-7. Kliknij przycisk **OK** odrzucać **Wybieranie typu kodu** okno dialogowe.  
+7. Kliknij przycisk **OK** , aby odrzucić okno dialogowe **Wybieranie typu kodu** .  
   
-8. W **dostępne procesy** wybierz proces, który chcesz debugować.  
+8. W polu **dostępne procesy** wybierz proces, który chcesz debugować.  
   
-9. Kliknij przycisk **dołączyć**.  
+9. Kliknij przycisk **Dołącz**.  
   
-10. Po wyświetleniu monitu, aby potwierdzić swój certyfikat, kliknij przycisk **OK**. Następnie wprowadź numer PIN. Po wyświetleniu monitu, należy zaakceptować warunki użytkowania usługi Code Center Premium.  
+10. Po wyświetleniu monitu o potwierdzenie certyfikatu kliknij przycisk **OK**. Następnie wprowadź numer PIN. Jeśli zostanie wyświetlony monit, zaakceptuj warunki użytkowania usługi Code Center w warstwie Premium.  
   
-     Pobieranie symboli może potrwać bardzo długo w zależności od szybkości sieci. Na pasku stanu będzie wskazywać, kiedy wszystkie symbole zostały pomyślnie pobrane.  
+     Pobieranie symboli może zająć dużo czasu, w zależności od szybkości sieci. Pasek stanu wskazuje, kiedy wszystkie symbole zostały pobrane pomyślnie.  
   
-11. Powtórz kroki dołączania dla wszystkich zarządzanych projektów w rozwiązaniu.  
+11. Powtórz kroki dołączania dla wszystkich projektów zarządzanych w rozwiązaniu.  
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>Aby debugować kod źródłowy z istniejącego rozwiązania  
   
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla rozwiązania, a następnie wybierz **właściwości**.  
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla rozwiązania, a następnie wybierz polecenie **Właściwości**.  
   
-2. W oknie dialogowym strony właściwości rozwiązania wybierz **Debuguj pliki źródłowe** w **wspólne właściwości** węzła.  
+2. W oknie dialogowym strony właściwości rozwiązania wybierz pozycję **Debuguj pliki źródłowe** w węźle **wspólne właściwości** .  
   
-3. Dodawanie następującej lokalizacji w celu **katalogi zawierające pliki źródłowe** listy:  
+3. Dodaj następującą lokalizację do **katalogów zawierających pliki źródłowe** :  
   
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   > Pamiętaj dołączyć końcowy ukośnik<strong>/</strong> na końcu ścieżki.  
+   > Upewnij się, że na końcu ścieżki zostanie umieszczony końcowy ukośnik <strong>/</strong> .  
   
-4. Dla każdego zarządzanego projektu w rozwiązaniu wykonaj następujące czynności  
+4. Dla każdego zarządzanego projektu w rozwiązaniu wykonaj następujące czynności:  
   
-   1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
+   1. W Eksplorator rozwiązań otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Właściwości**.  
   
-   2. Wybierz **debugowania** , a następnie wybierz **Włącz debugowanie kodu unmanged**.  
+   2. Wybierz pozycję **Debuguj** , a następnie wybierz pozycję **Włącz debugowanie kodu niezarządzanego**.  
   
-### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Aby debugować swoje rozwiązanie przy użyciu źródła Code Center Premium  
+### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Aby debugować rozwiązanie przy użyciu programu Code Center Premium Source  
   
-1. W swojej `Package` klasy, należy ustawić punkt przerwania w Konstruktorze pakietu.  
+1. W `Package` klasie należy ustawić punkt przerwania w konstruktorze pakietu.  
   
-2. W `Debug` menu, kliknij przycisk **Rozpocznij debugowanie**.  
+2. W `Debug` menu kliknij **Rozpocznij debugowanie**.  
   
-3. Po osiągnięciu punktu przerwania w Konstruktorze pakietu przejdź do **stos wywołań** oknie i kliknij prawym przyciskiem myszy ramkę stosu zestawu, który chcesz załadować symbole, następnie kliknij przycisk **załadować symbole**.  
+3. Po trafieniu punktu przerwania w konstruktorze pakietów przejdź do okna **stosu wywołań** i kliknij prawym przyciskiem myszy ramkę stosu zestawu, z którego mają zostać załadowane symbole, a następnie kliknij pozycję **Załaduj symbole**.  
   
-     Kliknij dwukrotnie ramki wywołań, aby załadować źródła.  
+     Kliknij dwukrotnie ramkę wywołania, aby załadować źródło.  
   
-### <a name="to-browse-source-code-on-code-center-premium"></a>Aby przeglądać kod źródłowy w Code Center Premium  
+### <a name="to-browse-source-code-on-code-center-premium"></a>Aby przeglądać kod źródłowy w centrum kodu Premium  
   
-1. Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
+1. Podłącz czytnik karty inteligentnej i Wstaw kartę uzyskaną z inicjatywy udostępnionego źródła.  
   
-2. Uruchomienie Internet Explorer wprowadź następujący adres URL: `https://codepremium.msdn.microsoft.com`  
+2. Uruchom program Internet Explorer wprowadź następujący adres URL: `https://codepremium.msdn.microsoft.com`  
   
-3. Wyszukaj żądane źródło.  
+3. Przeglądaj w celu znalezienia żądanego źródła.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Code Center Premium](https://www.microsoft.com/en-us/sharedsource/code-center-premium.aspx)
+ [Centrum kodu — wersja Premium](https://www.microsoft.com/en-us/sharedsource/code-center-premium.aspx)

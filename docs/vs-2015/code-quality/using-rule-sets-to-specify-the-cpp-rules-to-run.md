@@ -1,5 +1,5 @@
 ---
-title: Używanie zestawów reguł do określania C++ zasad do uruchomienia | Microsoft Docs
+title: Używanie zestawów reguł do określania reguł języka C++ do uruchomienia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,16 +10,16 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: ff105af1d817613b324e1158130457eb906c753f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277852"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]można utworzyć i zmodyfikować *zestaw reguł* niestandardowych w celu spełnienia określonych wymagań projektu skojarzonych z analizą kodu. Aby utworzyć niestandardowy C++ zestaw reguł, projekt C/C++ musi być otwarty w środowisku IDE programu Visual Studio. Następnie można otworzyć standardowy zestaw reguł w edytorze zestawu reguł, a następnie dodać lub usunąć określone reguły i opcjonalnie zmienić akcję, która występuje, gdy analiza kodu ustali, że reguła została naruszona.  
+W programie [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] można utworzyć i zmodyfikować *zestaw reguł* niestandardowych w celu spełnienia określonych wymagań projektu skojarzonych z analizą kodu. Aby utworzyć niestandardowy zestaw reguł języka C++, projekt C/C++ musi być otwarty w środowisku IDE programu Visual Studio. Następnie można otworzyć standardowy zestaw reguł w edytorze zestawu reguł, a następnie dodać lub usunąć określone reguły i opcjonalnie zmienić akcję, która występuje, gdy analiza kodu ustali, że reguła została naruszona.  
   
  Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej nazwy pliku. Niestandardowy zestaw reguł jest automatycznie przypisywany do projektu.  
   
@@ -35,9 +35,9 @@ W [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](.
   
    - Wybierz zestaw reguł, który chcesz dostosować.  
   
-     \- lub-  
+     \- oraz  
   
-   - Wybierz **\<Przeglądaj... >** , aby określić istniejący zestaw reguł, którego nie ma na liście.  
+   - Wybierz **\<Browse...>** , aby określić istniejący zestaw reguł, którego nie ma na liście.  
   
 4. Wybierz pozycję **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.  
   
@@ -63,7 +63,7 @@ W [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](.
   
 - Aby zwinąć reguły we wszystkich grupach, wybierz pozycję **Zwiń wszystko**.  
   
-- Aby zmienić pole, według którego reguły są grupowane, wybierz pole z listy **Grupuj według** . Aby wyświetlić reguły niezgrupowane, wybierz **\<brak >** .  
+- Aby zmienić pole, według którego reguły są grupowane, wybierz pole z listy **Grupuj według** . Aby wyświetlić reguły niezgrupowane, wybierz opcję **\<None>** .  
   
 - Aby dodać lub usunąć pola w kolumnach reguł, wybierz **Opcje kolumn**.  
   

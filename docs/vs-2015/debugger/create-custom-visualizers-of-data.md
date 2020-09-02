@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowych Wizualizatorów danych | Dokumentacja firmy Microsoft
+title: Tworzenie niestandardowych wizualizatorów danych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,39 +24,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434894"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64820661"
 ---
-# <a name="create-custom-visualizers-of-data"></a>Tworzenie niestandardowych Wizualizatorów danych
+# <a name="create-custom-visualizers-of-data"></a>Tworzenie niestandardowych wizualizatorów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wizualizatory są składnikami [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] interfejs użytkownika debugera. A *Wizualizator* tworzy okno dialogowe lub inny interfejs do wyświetlania zmiennej lub obiektu w sposób, który jest odpowiedni do jego typu danych. Na przykład wizualizatora HTML interpretuje ciąg HTML i wyświetla wynik, jak będzie wyglądał w oknie przeglądarki; Wizualizator mapy bitowej interpretuje strukturę mapy bitowej i wyświetla grafiki, którą reprezentuje. Niektóre wizualizatorów umożliwiają modyfikowanie, a także wyświetlić dane.  
+Wizualizatory to składniki [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] interfejsu użytkownika debugera. *Wizualizator* tworzy okno dialogowe lub inny interfejs do wyświetlania zmiennej lub obiektu w sposób, który jest odpowiedni dla typu danych. Na przykład wizualizator HTML interpretuje ciąg HTML i wyświetla wynik w postaci, w jakiej pojawił się w oknie przeglądarki. wizualizator mapy bitowej interpretuje strukturę mapy bitowej i wyświetla grafikę, którą reprezentuje. Niektóre Wizualizatory umożliwiają modyfikowanie, a także wyświetlanie danych.  
   
- [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Debugera zawiera sześć wizualizatorów standardowych. Są to tekst, HTML, XML i JSON wizualizatorów, z których wszystkie pracować nad obiektów w postaci ciągów; z wizualizatora drzewa WPF, do wyświetlania właściwości WPF drzewa wizualnego w obiekcie; i Wizualizator zestawu danych, która działa w przypadku obiektów DataSet, DataView i DataTable. Dodatkowe wizualizatorów mogą być dostępne do pobrania firmy Microsoft Corporation w przyszłości i są dostępne w innych firm i społeczności. Ponadto możesz napisać własne wizualizatorów i zainstalować je w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] debugera.  
-  
-> [!NOTE]
-> W **Store** aplikacji, tylko standardowy tekst, HTML, XML i JSON wizualizatory są obsługiwane. Wizualizatory niestandardowe (utworzone przez użytkownika) nie są obsługiwane.  
-  
- Wizualizatory są reprezentowane w debugerze przez ikonę lupy. Po wyświetleniu ikoną lupy w **DataTip**, w oknie zmiennych debugera, lub w **QuickWatch** okno dialogowe, możesz kliknąć ikonę lupy, aby wybrać odpowiedni typ danych wizualizatora odpowiedniego obiektu.  
-  
- Wizualizatory nie są obsługiwane w Compact Framework.  
+ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]Debuger zawiera sześć standardowych wizualizatorów. Są to Wizualizatory tekstu, HTML, XML i JSON, które działają na obiektach ciągów; wizualizator drzewa WPF, służący do wyświetlania właściwości drzewa wizualnego obiektu WPF; i wizualizator zestawu danych, który działa dla obiektów DataSet, DataView i DataTable. Dodatkowe Wizualizatory mogą być dostępne do pobrania od firmy Microsoft Corporation w przyszłości i są dostępne w innych firmach i w społeczności. Ponadto można napisać własne Wizualizatory i zainstalować je w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] debugerze.  
   
 > [!NOTE]
-> Wizualizatory debugera wymagają większe uprawnienia niż jest to dozwolone przez aplikację do częściowego zaufania. W rezultacie wizualizatory nie są ładowane, gdy zostały zatrzymane w kod z częściowej relacji zaufania. Aby debugować za pomocą wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
+> W aplikacjach ze **sklepu** obsługiwane są tylko Wizualizatory tekstu standardowego, HTML, XML i JSON. Wizualizacje niestandardowe (utworzone przez użytkownika) nie są obsługiwane.  
+  
+ Wizualizatory są reprezentowane w debugerze przez ikonę lupy. Gdy zobaczysz ikonę lupy w **etykietki danych**, w oknie zmiennych debugera lub w oknie dialogowym **QuickWatch** , możesz kliknąć lupę, aby wybrać wizualizator odpowiedni dla typu danych odpowiadającego obiektu.  
+  
+ Wizualizatory nie są obsługiwane w środowisku kompaktowym.  
+  
+> [!NOTE]
+> Wizualizatory debugera wymagają większych uprawnień niż jest to dozwolone w przypadku aplikacji częściowo zaufanej. W związku z tym Wizualizatory nie są ładowane po zatrzymaniu w kodzie z częściowym zaufaniem. Aby debugować przy użyciu wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)  
+ [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)  
   
- [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Wskazówki: Pisanie wizualizatora w C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
  [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)  
   
- [Instrukcje: Testowanie i debugowanie wizualizatora](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Instrukcje: testowanie i debugowanie wizualizatora](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
- [Interfejs API wizualizatora — dokumentacja](../debugger/visualizer-api-reference.md)  
+ [Wizualizator API — Odwołanie](../debugger/visualizer-api-reference.md)  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

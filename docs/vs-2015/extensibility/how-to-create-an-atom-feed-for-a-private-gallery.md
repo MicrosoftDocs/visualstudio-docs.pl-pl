@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Utwórz Atom dla galerii prywatnej | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: tworzenie źródła danych Atom dla galerii prywatnej | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,29 +12,29 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204211"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Instrukcje: Tworzenie strumieniowego źródła Atom dla galerii prywatnej
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Instrukcje: tworzenie strumieniowego źródła Atom dla galerii prywatnej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawiera rozszerzenia i Dodaj źródło danych do **rozszerzenia i aktualizacje** jako prywatną galerię. Aby uzyskać więcej informacji, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
+Można utworzyć źródło danych Atom (RSS) do lokalizacji intranetowej zawierającej rozszerzenia oraz dodać kanał informacyjny do **rozszerzeń i aktualizacji** jako galerii prywatnej. Aby uzyskać więcej informacji, zobacz [prywatne galerie](../extensibility/private-galleries.md).  
   
-## <a name="creating-an-atom-feed"></a>Tworzenie Atom kanału informacyjnego  
- Aby utworzyć źródła danych jako prywatną galerię Atom, najpierw Zbierz do folderu rozszerzeń (plików .vsix). Możesz organizować je w podfolderach chcącym. Należy również następujące zasoby:  
+## <a name="creating-an-atom-feed"></a>Tworzenie źródła danych Atom  
+ Aby utworzyć źródło danych Atom jako galerię prywatną, należy najpierw zebrać rozszerzenia (pliki. VSIX) do folderu. Jeśli chcesz, możesz zorganizować je w podfolderach. Potrzebne będą również następujące zasoby:  
   
-- Plik atom.xml, która udostępnia rozszerzenia jako prywatną galerię. Aby uzyskać informacje o tym, jak połączyć pliku atom.xml do **rozszerzenia i aktualizacje**, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
+- Plik atom.xml, który sprawia, że rozszerzenia są dostępne jako Galeria prywatna. Aby uzyskać informacje na temat sposobu łączenia pliku atom.xml z **rozszerzeniami i aktualizacjami**, zobacz [prywatne galerie](../extensibility/private-galleries.md).  
   
-- Folder, który zawiera pliki obrazów, które zostały wyodrębnione ze rozszerzenia (na przykład zrzuty ekranu). Plik atom.xml zawiera linków względnych do tych obrazów, tak aby były dostępne w **rozszerzenia i aktualizacje**.  
+- Folder, który zawiera wszystkie pliki obrazów wyodrębnione z rozszerzeń (na przykład zrzutów ekranu). Plik atom.xml zawiera linki względne do tych obrazów, dzięki czemu są one dostępne w **rozszerzeniach i aktualizacjach**.  
   
-  Na przykład załóżmy, że zostały zebrane następujące dwa rozszerzenia do folderu:  
+  Załóżmy na przykład, że zebrano dwa następujące rozszerzenia w folderze:  
   
-- Template_Wizard_239.vsix, który jest pusty szablon projektu VSIX.  
+- Template_Wizard_239. vsix, który jest pustym szablonem projektu VSIX.  
   
-- SelectionHighlight.vsix, czyli narzędzie, aby wyróżnić wszystkie wystąpienia wybranego słowa.  
+- SelectionHighlight. vsix, który jest narzędziem do wyróżnienia wszystkich wystąpień zaznaczonego wyrazu.  
   
   Zawartość pliku atom.xml będzie wyglądać następująco:  
   
@@ -73,7 +73,7 @@ Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawi
   
 ```  
   
- Należy zauważyć, że tagów łącza dwóch odnoszą się do zrzutów ekranu w folderze wygenerowanych obrazów.  
+ Zwróć uwagę, że dwa Tagi linków odnoszą się do zrzutów ekranu w wygenerowanym folderze obrazy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Galerie prywatne](../extensibility/private-galleries.md)

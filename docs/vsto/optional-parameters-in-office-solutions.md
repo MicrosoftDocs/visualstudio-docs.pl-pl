@@ -19,55 +19,55 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442415"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64818052"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parametry opcjonalne w rozwiązaniach pakietu Office
-  Wiele metod w modele obiektów w aplikacji pakietu Microsoft Office akceptuje następujące parametry opcjonalne. Jeśli używasz języka Visual Basic do opracowywania rozwiązań pakietu Office w programie Visual Studio, nie masz do przekazania wartości dla parametrów opcjonalnych, ponieważ wartości domyślne są automatycznie używane dla każdego brakującego parametru. W większości przypadków można również pominąć parametry opcjonalne w projektach Visual C#. Jednak nie można pominąć opcjonalne **ref** parametry `ThisDocument` klas w projektach programu Word w poziomie dokumentu.
+  Wiele metod w modelach obiektów Microsoft Office aplikacji akceptuje parametry opcjonalne. Jeśli używasz Visual Basic do tworzenia rozwiązań pakietu Office w programie Visual Studio, nie musisz przekazać wartości parametrów opcjonalnych, ponieważ wartości domyślne są automatycznie używane dla każdego brakującego parametru. W większości przypadków można także pominąć parametry opcjonalne w projektach Visual C#. Nie można jednak pominąć opcjonalnych parametrów **ref** `ThisDocument` klasy w projektach programu Word na poziomie dokumentu.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Aby uzyskać więcej informacji na temat pracy z opcjonalnymi parametrami w projektach Visual C# i Visual Basic, zobacz [nazwane i opcjonalne argumenty &#40;C&#35; Podręcznik programowania&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) i [ &#40;Języka Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).
+ Aby uzyskać więcej informacji na temat pracy z opcjonalnymi parametrami w Visual C# i Visual Basic projektach, zobacz [argumenty nazwane i opcjonalne &#40;C&#35; Przewodnik programowania&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) i [Parametry opcjonalne &#40;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)Visual Basic&#41;.
 
 > [!NOTE]
-> We wcześniejszych wersjach programu Visual Studio należy przekazać wartość dla każdego opcjonalnego parametru, w projektach Visual C#. Dla wygody te projekty zawierają zmienna globalna o nazwie `missing` , można przekazać do parametru opcjonalnego użyć wartości domyślnej parametru. Projekty Visual C# dla pakietu Office w programie Visual Studio nadal zawierają `missing` zmienną, ale zwykle nie trzeba używać go podczas opracowywania rozwiązań pakietu Office w [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], z wyjątkiem sytuacji, gdy wywołujesz metody z opcjonalnymi **ref** Parametry w `ThisDocument` klasy w projektów na poziomie dokumentu dla programu Word.
+> We wcześniejszych wersjach programu Visual Studio należy przekazać wartość dla każdego opcjonalnego parametru w projektach Visual C#. Dla wygody te projekty obejmują zmienną globalną o nazwie `missing` , którą można przekazać do opcjonalnego parametru, gdy chcesz użyć wartości domyślnej parametru. Projekty Visual C# dla pakietu Office w programie Visual Studio nadal zawierają `missing` zmienną, ale zazwyczaj nie trzeba jej używać podczas opracowywania rozwiązań pakietu Office w programie [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] , z wyjątkiem przypadków, gdy metoda wywołuje metody z opcjonalnymi parametrami **ref** w `ThisDocument` klasie w projektach na poziomie dokumentu dla programu Word.
 
 ## <a name="example-in-excel"></a>Przykład w programie Excel
- <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> Metoda ma wiele parametrów opcjonalnych. Można określić wartości dla niektórych parametrów i zaakceptuj wartość domyślną innych, jak pokazano w poniższym przykładzie kodu. W tym przykładzie wymaga projektów dokumentów z arkusza klasę o nazwie `Sheet1`.
+ <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A>Metoda ma wiele opcjonalnych parametrów. Możesz określić wartości dla niektórych parametrów i zaakceptować wartość domyślną innych, jak pokazano w poniższym przykładzie kodu. Ten przykład wymaga projektu na poziomie dokumentu z klasą arkusza o nazwie `Sheet1` .
 
  [!code-csharp[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/CSharp/excelworkbook1/Sheet1.cs#1)]
  [!code-vb[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/VisualBasic/excelworkbook1/Sheet1.vb#1)]
 
 ## <a name="example-in-word"></a>Przykład w programie Word
- <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Metoda ma wiele parametrów opcjonalnych. Można określić wartości dla niektórych parametrów i zaakceptuj wartość domyślną innych, jak pokazano w poniższym przykładzie kodu.
+ <xref:Microsoft.Office.Interop.Word.Find.Execute%2A>Metoda ma wiele opcjonalnych parametrów. Możesz określić wartości dla niektórych parametrów i zaakceptować wartość domyślną innych, jak pokazano w poniższym przykładzie kodu.
 
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]
 
-## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Parametry opcjonalne użycie metod w klasie ThisDocument w Visual C# projektów na poziomie dokumentu dla programu Word
- Model obiektów programu Word zawiera wiele metod z opcjonalnymi **ref** parametry, które akceptują <xref:System.Object> wartości. Jednak nie można pominąć opcjonalne **ref** parametrów metod wygenerowany `ThisDocument` klasy w Visual C# projektów poziomie dokumentu dla programu Word. Visual C# umożliwia pominięcie opcjonalne **ref** parametry tylko dla metod interfejsów nie klasy. Na przykład, poniższy kod nie kompiluje się, ponieważ nie można pominąć opcjonalne **ref** parametry <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metody `ThisDocument` klasy.
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Użyj parametrów opcjonalnych metod w klasie ThisDocument w projektach na poziomie dokumentu w języku Visual C# dla programu Word
+ Model obiektów programu Word zawiera wiele metod z opcjonalnymi parametrami **ref** , które akceptują <xref:System.Object> wartości. Nie można jednak pominąć opcjonalnych parametrów **ref** metod wygenerowanej `ThisDocument` klasy w projektach na poziomie dokumentu w języku Visual C# dla programu Word. Visual C# pozwala pominąć opcjonalne parametry **ref** tylko dla metod interfejsów, a nie klas. Na przykład poniższy przykład kodu nie kompiluje się, ponieważ nie można pominąć opcjonalnych parametrów **ref** <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metody `ThisDocument` klasy.
 
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]
 
- Podczas wywoływania metody `ThisDocument` klasy, należy przestrzegać następujących wytycznych:
+ Gdy wywołujesz metody `ThisDocument` klasy, postępuj zgodnie z następującymi wskazówkami:
 
-- Aby zaakceptować wartość domyślną opcjonalny **ref** parametr, — dostęp próbny `missing` zmienną do parametru. `missing` Zmienna jest automatycznie definiowana w projektach Visual C# pakietu Office i ma przypisaną wartość <xref:System.Type.Missing> kodu wygenerowanego projektu.
+- Aby zaakceptować wartość domyślną opcjonalnego parametru **ref** , Przekaż `missing` zmienną do parametru. `missing`Zmienna jest automatycznie definiowana w projektach pakietu Office w języku Visual C# i jest przypisywana do wartości <xref:System.Type.Missing> w wygenerowanym kodzie projektu.
 
-- Aby określić wartość dla opcjonalny **ref** parametru zadeklarować obiekt, który jest przypisany do określonej wartości, aby określić, a następnie przekazać obiekt do parametru.
+- Aby określić własną wartość opcjonalnego parametru **ref** , zadeklaruj obiekt, który jest przypisany do wartości, którą chcesz określić, a następnie przekaż obiekt do parametru.
 
-  Poniższy przykład kodu pokazuje sposób wywołania <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metody, określając wartość dla *ignoreUppercase* parametru i akceptując wartości domyślne dla innych parametrów.
+  Poniższy przykład kodu demonstruje sposób wywołania <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metody przez określenie wartości parametru *ignoreUppercase* i zaakceptowanie wartości domyślnej dla innych parametrów.
 
   [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]
 
-  Jeśli chcesz napisać kod, który umożliwia pominięcie opcjonalne **ref** parametry metody w `ThisDocument` klasy, można też wywołać tej samej metody na <xref:Microsoft.Office.Interop.Word.Document> obiektu zwróconego przez <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> właściwości i pominąć Parametry z tej metody. Można to zrobić, ponieważ <xref:Microsoft.Office.Interop.Word.Document> jest interfejsem, a nie klasę.
+  Jeśli chcesz napisać kod, który pomija opcjonalne parametry **ref** metody w `ThisDocument` klasie, możesz alternatywnie wywołać tę samą metodę dla <xref:Microsoft.Office.Interop.Word.Document> obiektu zwróconego przez <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> Właściwość i pominąć parametry z tej metody. Można to zrobić, ponieważ <xref:Microsoft.Office.Interop.Word.Document> jest interfejsem, a nie klasą.
 
   [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]
 
-  Aby uzyskać więcej informacji na temat parametrów typu wartości i odwołań, zobacz [przekazywanie argumentów według wartości i według odwołania &#40;języka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (dla języka Visual Basic) i [parametry są przekazywane &#40;C&#35; Podręcznik programowania&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).
+  Aby uzyskać więcej informacji na temat parametrów typu wartości i odwołania, zobacz [przekazywanie argumentów według wartości i przez odwołanie &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (dla Visual Basic) i [parametrów Pass &#40;C&#35; Przewodnik programowania&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).
 
-## <a name="see-also"></a>Zobacz także
-- [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
+## <a name="see-also"></a>Zobacz też
+- [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
 - [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)

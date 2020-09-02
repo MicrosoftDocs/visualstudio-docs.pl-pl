@@ -1,5 +1,5 @@
 ---
-title: Flagi wiersza polecenia kompilatora VSCT | Dokumentacja firmy Microsoft
+title: Flagi wiersza polecenia kompilatora VSCT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440829"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64820187"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flagi wiersza polecenia kompilatora VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Kompilator programu Visual Studio polecenie tabeli (VSCT) udostępnia przełączniki wiersza polecenia w celu zapewnienia pomyślnej kompilacji .vsct — pliki.  
+Kompilator programu Visual Studio Command Table (VSCT) zapewnia przełączniki wiersza polecenia, aby zapewnić pomyślne Kompilowanie plików. vsct.  
   
 ## <a name="command-line-parameters"></a>Parametry wiersza polecenia  
- Aby wyświetlić podstawowe pomocy VSCT [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **polecenia** okna, przejdź do *ścieżka instalacji programu Visual Studio SDK*\VisualStudioIntegration\Tools\Bin\ folder i wpisz:  
+ Aby wyświetlić podstawową pomoc VSCT z poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] okna **polecenia** , przejdź do *ścieżki instalacji zestawu SDK programu Visual Studio*\VisualStudioIntegration\Tools\Bin\ folder i wpisz:  
   
 ```  
 vsct /?  
 ```  
   
- Spowoduje to zwrócenie:  
+ To polecenie zwraca następującą treść:  
   
 ```  
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000  
@@ -52,31 +52,31 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
-> Znaki — (kreska) i / (ukośnik) są oba akceptowane notacji wskazujący parametry wiersza polecenia.  
+> Znaki-(myślnik) i/(ukośnik) są zarówno zaakceptowanymi zapisami w celu wskazania parametrów wiersza polecenia.  
   
- Dopuszczalne flag i ich znaczenie są.  
+ Dopuszczalne flagi i ich znaczenie są następujące.  
   
 |Przełącznik|Opis|  
 |------------|-----------------|  
-|-D|Określ wszystkie dodatkowe zdefiniowane symbole.|  
-|-I|Wskazują, że dodatkowe ścieżki dołączanych plików, które powinny być używane podczas rozpoznawania odwołań do pliku.|  
-|-L|Określ <xref:System.Globalization.CultureInfo> nazwy kultury, na przykład "en US".|  
-|-E|Emituj C# obiekty w określonej przestrzeni nazw dla elementów polecenia, a następnie [C&#124;H&#124;N]:*filename*gdzie C = C#, H = C++ nagłówka, N = przestrzeni nazw. Przestrzeń nazw jest wymagany dla języka C#.|  
+|-D|Określ wszelkie dodatkowe zdefiniowane symbole.|  
+|-I|Wskaż dodatkowe ścieżki dołączania, które powinny być używane podczas rozpoznawania odwołań do plików.|  
+|-L|Określ <xref:System.Globalization.CultureInfo> nazwę kultury, na przykład "en-us".|  
+|-E|Emituj obiekty w języku C# w określonej przestrzeni nazw dla elementów polecenia, a następnie [C&#124;H&#124;N]:*filename*gdzie C = C#, H = nagłówek C++, N = przestrzeń nazw. Przestrzeń nazw jest wymagana dla języka C#.|  
 |-v|Pełne dane wyjściowe.|  
   
- Przełącznik -L informuje kompilator, aby wybrać grupę ciągów, aby wygenerować plik binarny .cto, który odpowiada danym <xref:System.Globalization.CultureInfo> nazwa kultury. Określona nazwa kultury powinien być zgodny w atrybucie Language elementu co najmniej jeden [Strings, Element](../../extensibility/strings-element.md) w pliku vsct. Jeśli Strings, element nie ma języka atrybutu, zostało ono odziedziczone zawierający [CommandTable, Element](../../extensibility/commandtable-element.md).  
+ Przełącznik-L instruuje kompilator, aby wybierał grupę ciągów, aby utworzyć plik binarny. Dyrektor ds, który odnosi się do podanej <xref:System.Globalization.CultureInfo> nazwy kultury. Określona nazwa kultury powinna być zgodna z atrybutem Language jednego lub więcej [elementów String](../../extensibility/strings-element.md) w pliku. vsct. Jeśli element Strings nie ma atrybutu language, jest Dziedziczony z zawierającego [element](../../extensibility/commandtable-element.md).  
   
- Pliku vsct może mieć wielu elementów ciągi, a każdy może mieć inny atrybut Language. Globalizacja odbywa się uruchamianie kompilatora VSCT wiele razy, a następnie zmieniając przełącznika -L dla każdej nazwy kultury.  
+ Plik. vsct może mieć wiele elementów String, a każdy z nich może mieć inny atrybut języka. Globalizacja jest osiągana przez uruchomienie kompilatora VSCT wiele razy i zmianę przełącznika-L dla każdej nazwy kultury.  
   
- Nazwa kultury, biorąc pod uwagę przez przełącznik -L niezgodny atrybut Language Strings, jeśli element kompilator podejmie próbę dopasowania języka, bez regionu. Na przykład, jeśli nie można odnaleźć "en US", kompilator będzie "en" zamiast tego spróbuj wykonać. Jeśli nie spróbuje bieżącej kultury systemu operacyjnego. Jeśli nie jego zostanie skompilowany pierwszy element ciągów, które znajdzie.  
+ Jeśli nazwa kultury określona przez przełącznik-L nie jest zgodna z atrybutem Language dowolnego elementu String, kompilator podejmie próbę dopasowania do języka, a nie regionu. Na przykład jeśli nie można znaleźć "en-US", kompilator podejmie próbę "en" zamiast tego. Niepowodzenie, spowoduje to wypróbowanie bieżącej kultury systemu operacyjnego. Niepowodzenie, spowoduje skompilowanie pierwszych znalezionych elementów ciągów.  
   
- -E przełącznika może służyć do emitowania pliku nagłówka stylu C, który zawiera symbole, które są używane przez tabeli poleceń lub do wysyłania plik C#, który zawiera obiekty symboli polecenia.  
+ Przełącznik-E może służyć do emitowania pliku nagłówkowego w stylu C, który zawiera symbole, które są używane przez tabelę poleceń, lub do emitowania pliku C#, który zawiera obiekty dla symboli poleceń.  
   
- -D i — przełączniki mieć składni flagi preprocesora Cl.exe C, które mają taką samą nazwę. – D definicje, które mają format X = Y służą do rozszerzenia oparte na języku XML \<zdefiniowane > testów w `Condition` atrybutów. — Czy mogę dołączyć ścieżki są używane do rozpoznawania \<Include >, \<Extern > i \<mapy bitowej > pliku odwołania. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+ Przełączniki-D i – I są składnią flag preprocesora Cl.exe C, które mają taką samą nazwę. Definicje – D, które mają format X = Y, służą do rozszerzania testów opartych na języku XML \<Defined> w `Condition` atrybutach. — Dołączanie ścieżek służy do rozwiązywania \<Include> \<Extern> i \<Bitmap> odwoływania się do plików. Aby uzyskać więcej informacji, zobacz [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
   
- Kompilatora VSCT można również dekompilować wcześniej skompilowany plik binarny. Aby to zrobić, należy dostarczyć plik binarny dla \<infile >.   Plik binarny został utworzony za pomocą kompilatora VSCT, będzie miał jego symbole już osadzone i generuje danych wyjściowych za pomocą nazw symbolicznych w \<symbole > części danych wyjściowych. Plik binarny został utworzony przez kompilator CTC, wynik będzie zawierać rzeczywiste identyfikatory GUID i identyfikatory. Jeśli *.ctsym pliku, który jest wytwarzany przez bieżące wersje Ctc.exe znajduje się w tym samym folderze co plik binarny danych wejściowych, symbole zostanie załadowany z tego pliku i używane dla danych wyjściowych.  
+ Kompilator VSCT może również dekompilować wcześniej skompilowany plik binarny. W tym celu podaj plik binarny dla \<infile> .   Jeśli plik binarny został utworzony przez kompilator VSCT, będzie miał już osadzone symbole i spowoduje wygenerowanie danych wyjściowych z symbolicznymi nazwami w \<Symbols> sekcji danych wyjściowych. Jeśli plik binarny został utworzony przez kompilator CTC, dane wyjściowe będą zawierać faktyczne identyfikatory GUID i identyfikator. Jeśli plik *. CTSYM, który jest tworzony przez bieżące wersje Ctc.exe, znajduje się w tym samym folderze co plik wejściowy binarny, symbole zostaną załadowane z tego pliku i użyte do danych wyjściowych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tabeli poleceń programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md)   
+ [Tabela poleceń programu Visual Studio (. Vsct) — pliki](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Dokumentacja schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)   
  [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

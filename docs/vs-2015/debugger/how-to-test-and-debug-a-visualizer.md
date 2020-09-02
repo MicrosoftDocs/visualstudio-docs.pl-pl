@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Testowanie i debugowanie Wizualizera | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: testowanie i debugowanie wizualizatora | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,24 +19,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176504"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Instrukcje: Testowanie i debugowanie wizualizatora
+# <a name="how-to-test-and-debug-a-visualizer"></a>Porady: testowanie i debugowanie wizualizera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po napisaniu wizualizatora, należy do debugowania i testowania.  
+Po napisaniu wizualizatora należy go debugować i testować.  
   
- Jednym ze sposobów, aby przetestować Wizualizator jest zamontowany w programie Visual Studio i wywoływania go z okna debugera. (Zobacz [jak: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md).) Jeśli to zrobisz, musisz użyć drugiego wystąpienia programu Visual Studio do dołączenia i debugowanie wizualizatora, w którym jest uruchomiony w pierwszej kolejności debugera.  
+ Jednym ze sposobów przetestowania wizualizatora jest zainstalowanie go w programie Visual Studio i wywołanie go z okna debugera. (Zobacz [How to: Install the wizualizatorer](../debugger/how-to-install-a-visualizer.md)). Jeśli to zrobisz, musisz użyć drugiego wystąpienia programu Visual Studio do dołączenia i debugowania wizualizatora, który jest uruchomiony w pierwszym wystąpieniu debugera.  
   
- Łatwiejsze debugowanie wizualizera jest przeprowadzić wizualizatora sterowniku testu. Wizualizator interfejsów API ułatwiają tworzenie takich sterownika, który jest nazywany *hosta rozwoju Wizualizator*.  
+ Łatwiejszym sposobem debugowania wizualizatora jest uruchomienie wizualizatora z sterownika testowego. Interfejsy API wizualizatora ułatwiają tworzenie takiego sterownika, który jest nazywany *hostem deweloperskim wizualizatora*.  
   
-### <a name="to-create-a-visualizer-development-host"></a>W celu utworzenia hosta rozwoju wizualizatora  
+### <a name="to-create-a-visualizer-development-host"></a>Aby utworzyć wizualizację hosta do programowania  
   
-1. W klasie po stronie debugera zawierają statycznej metody, która tworzy <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> obiektów i wywołuje swoją metodę show:  
+1. W klasie po stronie debugera Dołącz metodę statyczną, która tworzy <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> obiekt i wywołuje jego metodę show:  
   
     ```  
     public static void TestShowVisualizer(object objectToVisualize)  
@@ -46,17 +46,17 @@ Po napisaniu wizualizatora, należy do debugowania i testowania.
     }  
     ```  
   
-     Parametry używane do konstruowania hosta jest obiekt danych, który ma być wyświetlany w wizualizatorze (`objectToVisualize`) i typ klasy po stronie debugera.  
+     Parametry używane do konstruowania hosta są obiektem danych, który będzie wyświetlany w wizualizatorze ( `objectToVisualize` ) i typie klasy po stronie debugera.  
   
-2. Dodaj następującą instrukcję, aby wywołać `TestShowVisualizer`. Jeśli Twoje visualizer został utworzony w bibliotece klas, musisz utworzyć plik wykonywalny do wywołania biblioteki klas i umieszczania tej instrukcji w plik wykonywalny:  
+2. Dodaj następującą instrukcję, aby wywołać metodę `TestShowVisualizer` . Jeśli utworzono wizualizator w bibliotece klas, musisz utworzyć plik wykonywalny, aby wywołać bibliotekę klas i umieścić tę instrukcję w pliku wykonywalnym:  
   
     ```  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     Aby uzyskać pełniejszy przykład, zobacz [instruktażu: Pisanie wizualizatora w C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+     Aby zapoznać się z bardziej kompletnym przykładem, zobacz [Przewodnik: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Instrukcje: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md)   
+ [Przewodnik: pisanie wizualizatora w języku C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)   
  [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

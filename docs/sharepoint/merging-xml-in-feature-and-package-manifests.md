@@ -1,5 +1,5 @@
 ---
-title: Scalanie XML w funkcji i pakietów manifestach | Dokumentacja firmy Microsoft
+title: Scalanie kodu XML w manifestach funkcji i pakietów | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,71 +13,71 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429282"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64806752"
 ---
-# <a name="merge-xml-in-feature-and-package-manifests"></a>Scalanie XML w funkcji i wykazu manifestów
-  Funkcji i pakietów, które są definiowane przez [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki manifestu. Te manifesty spakowanych są kombinacją danych generowanych przez projektantów i niestandardowe [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] wprowadzone w szablonie manifestu przez użytkowników. W czasie tworzenia pakietów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scala niestandardowej [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcje z warunkiem projektanta [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] w celu utworzenia spakowanych [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku manifestu. Podobnych elementów, z wyjątkiem wymienionych w dalszej części scalania wyjątków, są scalane w celu uniknięcia [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] błędy sprawdzania poprawności po wdrażanie plików w programie SharePoint i zapewnienie manifest pliki mniejszy i wydajniejszy.
+# <a name="merge-xml-in-feature-and-package-manifests"></a>Scalanie kodu XML w manifestach funkcji i pakietów
+  Funkcje i pakiety są definiowane przez [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki manifestu. Te spakowane manifesty są kombinacją danych wygenerowanych przez projektantów i niestandardowych [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] wprowadzonych w szablonie manifestu przez użytkowników. W czasie pakowania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Scala [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcje niestandardowe z udostępnionym projektantem, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Aby utworzyć spakowany [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] plik manifestu. Podobne elementy, z wyjątkami zanotowanymi w dalszej części wyjątków scalania, są scalane w celu uniknięcia [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] błędów walidacji po wdrożeniu plików w programie SharePoint i zwiększenia wydajności plików manifestu.
 
 ## <a name="modify-the-manifests"></a>Modyfikowanie manifestów
- Nie można bezpośrednio modyfikować plików manifestu w pakiecie, dopóki nie wyłączysz funkcji i pakietów projektantów. Jednakże, można ręcznie dodawać niestandardowe [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementy do manifestu szablonu za pomocą projektantów funkcji i pakietów lub [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] edytora. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) i [jak: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+ Nie można bezpośrednio modyfikować spakowanych plików manifestu, dopóki nie zostanie wyłączona funkcja lub projektanci pakietu. Można jednak ręcznie dodać [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementy niestandardowe do szablonu manifestu za pomocą funkcji i projektantów pakietu albo [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] edytora. Aby uzyskać więcej informacji, zobacz [How to: Dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) i [instrukcje: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-## <a name="feature-and-package-manifest-merge-process"></a>Funkcji i pakietów manifestu procesu scalania
- Podczas łączenia elementów niestandardowych, wraz z elementami dostarczone do projektanta, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] przystępuje do następującej procedury. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sprawdza, czy każdy element ma unikatową wartość klucza. Jeśli element nie ma unikatowy klucza wartości, jest ona dołączana do pakowanego pliku manifestu. Podobnie nie można scalić elementy, które mają wiele kluczy. W związku z tym są dołączane do pliku manifestu.
+## <a name="feature-and-package-manifest-merge-process"></a>Proces scalania manifestu funkcji i pakietów
+ Podczas łączenia elementów niestandardowych wraz z elementami udostępnionymi przez projektanta program [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] używa następującego procesu. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sprawdza, czy każdy element ma unikatową wartość klucza. Jeśli element nie ma unikatowej wartości klucza, jest dołączany do spakowanego pliku manifestu. Podobnie elementy, które mają wiele kluczy, nie mogą być scalane. W związku z tym są one dołączane do pliku manifestu.
 
- Jeśli element ma unikatowy klucz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] porównuje wartości wystąpienia projektanta i klucze niestandardowe. Jeśli wartości są zgodne, scalają w jedną wartość. Jeśli wartości są różne, projektanta wartość klucza jest odrzucana i wartość klucza niestandardowego jest używany. Scalane są także kolekcje. Na przykład jeśli wygenerowanym przez projektanta [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] i niestandardowej [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] zarówno zawiera kolekcję zestawów, pakowanego manifestu zawiera tylko jedna kolekcja zestawów.
+ Jeśli element ma unikatowy klucz, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] porównuje wartości projektanta i kluczy niestandardowych. Jeśli wartości są zgodne, scalane w jedną wartość. Jeśli wartości są różne, wartość klucza projektanta zostanie odrzucona i zostanie użyta wartość klucza niestandardowego. Kolekcje są również scalane. Na przykład jeśli wygenerowane przez projektanta [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] i niestandardowe elementy [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] zawierają kolekcję zestawów, spakowany manifest zawiera tylko jedną kolekcję zestawów.
 
-## <a name="merge-exceptions"></a>Scal wyjątków
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Scala projektanta większość [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementów wraz z podobną niestandardową [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] tak długo, jak mają pojedynczej unikatowy atrybut identyfikujący elementów. Jednak niektóre elementy nie mają unikatowy identyfikator, które są wymagane dla [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] scalania. Te elementy są nazywane *scalania wyjątki*. W takich przypadkach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Scalaj niestandardowej [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementów wraz z warunkiem projektanta [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementów, ale zamiast tego dołącza je do pliku manifestu spakowanych.
+## <a name="merge-exceptions"></a>Scalanie wyjątków
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Scala większość elementów projektanta [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] wraz z podobnymi elementami niestandardowymi, o ile [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] mają jeden unikatowy atrybut identyfikujący. Jednak niektóre elementy nie wymagają unikatowego identyfikatora wymaganego do [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] scalenia. Te elementy są nazywane *wyjątkami scalania*. W takich przypadkach program nie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Scala [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementów niestandardowych razem z elementami udostępnionymi przez projektanta [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , ale zamiast tego dołącza je do spakowanego pliku manifestu.
 
- Poniżej przedstawiono listę wyjątków scalania dla funkcji i pakietów [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki manifestu.
+ Poniżej znajduje się Lista wyjątków scalania dla [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] plików manifestów funkcji i pakietów.
 
-|Projektant|XML Element|
+|Projektant|Element XML|
 |--------------|-----------------|
-|Funkcja projektanta|ActivationDependency|
-|Funkcja projektanta|UpgradeAction|
-|Projektanta pakietów|SafeControl|
-|Projektanta pakietów|CodeAccessSecurity|
+|Projektant funkcji|ActivationDependency|
+|Projektant funkcji|UpgradeAction|
+|Projektant pakietów|SafeControl|
+|Projektant pakietów|CodeAccessSecurity|
 
 ## <a name="feature-manifest-elements"></a>Elementy manifestu funkcji
- Poniższa tabela jest lista wszystkich elementów manifestu funkcji, które mogą zostać scalone ich Unikatowy klucz, który jest używany do dopasowania.
+ Poniższa tabela zawiera listę wszystkich elementów manifestu funkcji, które mogą być scalone i ich unikatowy klucz używany do dopasowywania.
 
-|Nazwa elementu|Unikatowy klucz|
+|Nazwa elementu|Klucz unikatowy|
 |------------------|----------------|
-|Funkcja (wszystkie atrybuty)|*Atrybut nazwy* (każda nazwa atrybutu, elementu funkcji jest unikatowy klucz).|
-|Plik elementu|Lokalizacja|
-|ElementManifests/manifest elementu|Lokalizacja|
-|Właściwości/właściwości|Key|
+|Funkcja (wszystkie atrybuty)|*Nazwa atrybutu* (każda nazwa atrybutu elementu funkcji jest unikatowym kluczem).|
+|Elementu|Lokalizacja|
+|ElementManifests/ElementManifest|Lokalizacja|
+|Właściwości/Właściwość|Klucz|
 |CustomUpgradeAction|Nazwa|
 |CustomUpgradeActionParameter|Nazwa|
 
 > [!NOTE]
-> Ponieważ jest jedynym sposobem, aby zmodyfikować CustomUpgradeAction element niestandardowej [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] edytora scalania nie powoduje niski.
+> Ponieważ jedynym sposobem modyfikacji elementu CustomUpgradeAction jest w edytorze niestandardowym [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , efekt niescalania jest niski.
 
 ## <a name="package-manifest-elements"></a>Elementy manifestu pakietu
- Poniższa tabela jest lista wszystkich elementów manifestu pakietu, które mogą zostać scalone ich Unikatowy klucz, który jest używany do dopasowania.
+ Poniższa tabela zawiera listę wszystkich elementów manifestu pakietu, które mogą zostać scalone i ich unikatowy klucz, który jest używany do dopasowywania.
 
-|Nazwa elementu|Unikatowy klucz|
+|Nazwa elementu|Klucz unikatowy|
 |------------------|----------------|
-|Rozwiązanie (wszystkie atrybuty)|*Atrybut nazwy* (każda nazwa atrybutu, elementu rozwiązania jest unikatowy klucz).|
+|Rozwiązanie (wszystkie atrybuty)|*Nazwa atrybutu* (Nazwa każdego atrybutu elementu rozwiązania jest unikatowym kluczem).|
 |ApplicationResourceFiles/ApplicationResourceFile|Lokalizacja|
-|Zestawy/zestawu|Lokalizacja|
+|Zestawy/zestaw|Lokalizacja|
 |ClassResources/ClassResource|Lokalizacja|
 |DwpFiles/DwpFile|Lokalizacja|
 |FeatureManifests/FeatureManifest|Lokalizacja|
-|Zasobów/zasobów|Lokalizacja|
+|Zasoby/zasób|Lokalizacja|
 |RootFiles/RootFile|Lokalizacja|
 |SiteDefinitionManifests/SiteDefinitionManifest|Lokalizacja|
 |WebTempFile|Lokalizacja|
 |TemplateFiles/TemplateFile|Lokalizacja|
 |SolutionDependency|SolutionID|
 
-## <a name="manually-add-deployed-files"></a>Ręcznego dodawania plików do wdrożenia
- Niektóre elementy manifestu, takie jak ApplicationResourceFile i DwpFiles, określ lokalizację, która zawiera nazwę pliku. Jednak dodanie wpisu nazwa pliku manifestu szablonu nie dodaje podstawowego pliku do pakietu. Należy dodać plik do projektu, aby uwzględnić go w pakiecie i odpowiednio ustawić jego właściwości typu wdrożenia.
+## <a name="manually-add-deployed-files"></a>Ręczne dodawanie wdrożonych plików
+ Niektóre elementy manifestu, takie jak ApplicationResourceFile i DwpFiles, określają lokalizację, która zawiera nazwę pliku. Jednak dodanie wpisu nazwy pliku do szablonu manifestu nie powoduje dodania pliku bazowego do pakietu. Należy dodać plik do projektu, aby uwzględnić go w pakiecie i ustawić odpowiednio jego właściwość typu wdrożenia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

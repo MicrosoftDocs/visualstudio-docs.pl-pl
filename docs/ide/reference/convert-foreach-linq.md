@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 390e66fa01d49f217140c3c030bcc54fd349e402
-ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86285397"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Konwertuj pętlę Foreach na LINQ
@@ -76,7 +76,7 @@ public class Class1
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd okna zmian](../../ide/preview-changes.md)

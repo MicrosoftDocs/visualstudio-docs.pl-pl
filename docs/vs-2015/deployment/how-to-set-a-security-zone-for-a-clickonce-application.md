@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ustawienie strefy zabezpieczeń dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,35 +18,35 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68171417"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Instrukcje: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Porady: ustawienie strefy zabezpieczeń dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas ustawiania dostępu kodu uprawnień zabezpieczeń dla aplikacji ClickOnce, należy uruchomić podstawowy zestaw uprawnień na **zabezpieczeń** strony **projektanta projektu**.  
+Podczas ustawiania uprawnień zabezpieczeń dostępu kodu dla aplikacji ClickOnce należy zacząć od podstawowego zestawu uprawnień na stronie **zabezpieczenia** **projektanta projektu**.  
   
- W większości przypadków można także **Internet** strefy, który zawiera ograniczony zestaw uprawnień lub **lokalny Intranet** strefy, który zawiera większy zestaw uprawnień. Jeśli aplikacja wymaga uprawnień niestandardowych, możesz to zrobić, wybierając **niestandardowe** strefy zabezpieczeń. Aby uzyskać więcej informacji na temat ustawiania uprawnień niestandardowych, zobacz [jak: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ W większości przypadków można również wybrać strefę **internetową** , która zawiera ograniczony zestaw uprawnień lub lokalną strefę **intranetową** , która zawiera większy zestaw uprawnień. Jeśli aplikacja wymaga uprawnień niestandardowych, możesz to zrobić, wybierając **niestandardową** strefę zabezpieczeń. Aby uzyskać więcej informacji o ustawianiu uprawnień niestandardowych, zobacz [How to: Set Custom Permissions for a ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
-### <a name="to-set-a-security-zone"></a>Aby ustawienie strefy zabezpieczeń  
+### <a name="to-set-a-security-zone"></a>Aby ustawić strefę zabezpieczeń  
   
-1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.  
   
-2. Kliknij przycisk **zabezpieczeń** kartę.  
+2. Kliknij kartę **Zabezpieczenia**.  
   
-3. Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.  
+3. Zaznacz pole wyboru **Włącz ustawienia zabezpieczeń ClickOnce** .  
   
-4. Wybierz **to częściowo zaufanych aplikacji** przycisku opcji.  
+4. Wybierz przycisk opcji **ta jest częściowo zaufana aplikacja** .  
   
-     Formanty w **uprawnienia zabezpieczeń aplikacji ClickOnce** sekcji są włączone.  
+     Kontrolki w sekcji **uprawnienia zabezpieczeń ClickOnce** są włączone.  
   
-5. W **strefy, aplikacja zostanie zainstalowana z** listy rozwijanej wybierz strefę zabezpieczeń.  
+5. W strefie, w której **aplikacja zostanie zainstalowana z** listy rozwijanej, wybierz strefę zabezpieczeń.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Instrukcje: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)

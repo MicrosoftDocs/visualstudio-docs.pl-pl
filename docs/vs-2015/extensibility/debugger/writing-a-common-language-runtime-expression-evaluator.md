@@ -1,5 +1,5 @@
 ---
-title: Pisanie ewaluatora wyrażeń środowiska uruchomieniowego Common Language | Dokumentacja firmy Microsoft
+title: Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,46 +13,46 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 961a4d646a61fedda381f9451902b3bcdcc956d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435279"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64818388"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Ewaluator wyrażeń (EE) jest część aparat debugowania (DE), który obsługuje składnia i semantyka języka programowania, który debugowany kod. Wyrażenia muszą być ocenione w ramach języka programowania. Na przykład w przypadku niektórych języków wyrażenia "A + B" oznacza "suma A i B." W innych językach to samo wyrażenie może oznaczać "lub B." W związku z tym oddzielny EE muszą być napisane dla każdego z języków programowania, która generuje kod obiektu debugowanego w środowisku IDE programu Visual Studio.  
+ Ewaluatora wyrażeń (EE) jest częścią aparatu debugowania (DE), która obsługuje składnię i semantykę języka programowania, który wygenerował kod debugowany. Wyrażenia muszą być oceniane w kontekście języka programowania. Na przykład w niektórych językach wyrażenie "A + B" oznacza "sumę a i B". W innych językach to samo wyrażenie może oznaczać "A lub B". W tym celu należy napisać osobne wersje EE dla każdego języka programowania, który generuje kod obiektu do debugowania w środowisku IDE programu Visual Studio.  
   
- Niektóre aspekty pakietu debugowania programu Visual Studio należy interpretować kodu w kontekście języka programowania. Na przykład, gdy wykonanie zatrzymuje się w punkcie przerwania, a wszystkie wyrażenia, które użytkownik wpisał w **Obejrzyj** okna musi być obliczane i wyświetlane. Ponadto użytkownik może zmienić wartość zmiennej lokalnej, wpisując wyrażenia na **Obejrzyj** okna lub **bezpośrednie** okna.  
+ Niektóre aspekty pakietu debugowania programu Visual Studio muszą interpretować kod w kontekście języka programowania. Na przykład po zatrzymaniu wykonywania w punkcie przerwania, wszystkie wyrażenia, które użytkownik wpisze do okna **czujki** , muszą być oceniane i wyświetlane. Ponadto użytkownik może zmienić wartość zmiennej lokalnej, wpisując wyrażenie w oknie **czujki** lub w oknie **bezpośrednim** .  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Środowisko uruchomieniowe języka wspólnego i ocenianie wyrażeń](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
- Wyjaśniono, że gdy własności język programowania jest integrowany w środowisku IDE programu Visual Studio, pisania EE zdolne do oceny wyrażenia w kontekście własności języka umożliwia skompiluj go do języka Microsoft intermediate language (MSIL) bez konieczności pisania aparatu debugowania.  
+ Wyjaśniono, że podczas integrowania własnościowego języka programowania z programem Visual Studio IDE, pisanie EE może oceniać wyrażenia w kontekście języka własnościowego, dzięki czemu można kompilować do języka pośredniego firmy Microsoft (MSIL) bez konieczności pisania aparatu debugowania.  
   
  [Architektura ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator-architecture.md)  
- W tym artykule omówiono jak implementować interfejsy EE wymagane i wywoływać wspólnego języka środowiska uruchomieniowego symbol dostawcy i interfejsy integratorów modeli.  
+ W tym artykule omówiono sposób implementacji wymaganych interfejsów EE i wywoływania dostawcy symboli środowiska uruchomieniowego języka wspólnego (SP) i interfejsów spinacza.  
   
  [Rejestrowanie ewaluatora wyrażeń](../../extensibility/debugger/registering-an-expression-evaluator.md)  
- Zauważa, że EE musi zarejestrować się jako fabrykę klas środowiska uruchomieniowego języka wspólnego i środowiska uruchomieniowe Visual Studio.  
+ Uwagi, że EE muszą zarejestrować się jako fabrykę klasy zarówno w środowisku uruchomieniowym języka wspólnego, jak i w środowiskach środowiska uruchomieniowego programu Visual Studio.  
   
  [Implementowanie ewaluatora wyrażeń](../../extensibility/debugger/implementing-an-expression-evaluator.md)  
- W tym artykule opisano, jak procesu oceny wyrażenia zawiera aparat debugowania (DE), dostawca symboli (SP), obiekt integratora i Ewaluator wyrażeń (EE).  
+ Opisuje, jak proces oceny wyrażenia obejmuje aparat debugowania (DE), dostawcę symboli (SP), obiekt spinacza oraz ewaluatora wyrażeń (EE).  
   
  [Wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md)  
- W tym artykule opisano, jak to zrobić, gdy wstrzymuje wykonywanie, debugowanie pakietu wywołuje bibliotekę DE, aby uzyskać listę zmiennych lokalnych i argumentów.  
+ Opisuje, jak w przypadku wstrzymania wykonywania pakiet debugowania wywołuje polecenie Cofnij, aby uzyskać listę zmiennych lokalnych i argumentów.  
   
  [Ocenianie wyrażenia okna wyrażeń kontrolnych](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
- Dokumenty, jak pakietu debugowania programu Visual Studio wywołuje DE, aby określić bieżącą wartość każde wyrażenie w swojej listy obserwowanych.  
+ Dokumenty, w jaki sposób pakiet debugowania programu Visual Studio wywołuje metodę DE, aby określić bieżącą wartość każdego wyrażenia na liście obserwowanych elementów.  
   
  [Zmienianie wartości zmiennej lokalnej](../../extensibility/debugger/changing-the-value-of-a-local.md)  
- W tym artykule wyjaśniono, że podczas zmieniania wartości zmiennej lokalnej, każdy wiersz w oknie zmienne lokalne ma skojarzony obiekt, który zawiera nazwę, typ i bieżącą wartość zmiennej lokalnej.  
+ Wyjaśniono, że w przypadku zmiany wartości lokalnej każdy wiersz okna zmiennych lokalnych ma skojarzony obiekt, który zawiera nazwę, typ i bieżącą wartość lokalnego.  
   
  [Implementowanie wizualizatorów typu i przeglądarek niestandardowych](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
- W tym artykule wyjaśniono, wybór interfejsu muszą być implementowane przez składnik, który obsługuje wizualizatorów typu i przeglądarek niestandardowych.  
+ Wyjaśnia, który interfejs musi być zaimplementowany przez składnik do obsługi wizualizatorów typów i niestandardowych osób przeglądających.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzalność debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

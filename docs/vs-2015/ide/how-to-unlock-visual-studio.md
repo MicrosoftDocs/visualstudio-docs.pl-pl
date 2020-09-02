@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670595"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Jak odblokować program Visual Studio
@@ -29,7 +29,7 @@ Program Visual Studio można oszacować bezpłatnie do 30 dni. Po zalogowaniu si
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Aby odblokować program Visual Studio przy użyciu subskrypcji online
  Aby odblokować program Visual Studio przy użyciu subskrypcji MSDN lub Visual Studio Online skojarzonej z konto Microsoft lub konta służbowego:
 
-1. Kliknij przycisk "Zaloguj się" w prawym górnym rogu środowiska IDE (lub przejdź do pliku > Ustawienia konta, aby otworzyć okno dialogowe Ustawienia konta, a następnie kliknij przycisk "Zaloguj").
+1. Kliknij przycisk "Zaloguj się" w prawym górnym rogu środowiska IDE (lub przejdź do pliku > ustawienia konta, aby otworzyć okno dialogowe Ustawienia konta, a następnie kliknij przycisk "Zaloguj").
 
 2. Wprowadź poświadczenia dla konto Microsoft lub konta służbowego. Program Visual Studio znajdzie subskrypcję MSDN lub subskrypcję Visual Studio Team Services skojarzoną z Twoim kontem.
 
@@ -70,7 +70,7 @@ Program Visual Studio można oszacować bezpłatnie do 30 dni. Po zalogowaniu si
 
 1. Odnów subskrypcję. Aby wyświetlić więcej informacji na temat używanej licencji, przejdź do okna dialogowego Ustawienia konta > i sprawdź informacje o licencji znajdujące się po prawej stronie okna dialogowego.
 
-2. Jeśli masz inną subskrypcję skojarzoną z innym kontem, Dodaj to konto do listy wszystkie konta po lewej stronie okna dialogowego ustawień konta > pliku, klikając pozycję "Dodaj konto..." powiązań.
+2. Jeśli masz inną subskrypcję skojarzoną z innym kontem, Dodaj to konto do listy wszystkie konta po lewej stronie okna dialogowego ustawień konta > pliku, klikając pozycję "Dodaj konto..." .
 
 ## <a name="see-also"></a>Zobacz też
- [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md)
+ [Visual Studio — logowanie](../ide/signing-in-to-visual-studio.md)

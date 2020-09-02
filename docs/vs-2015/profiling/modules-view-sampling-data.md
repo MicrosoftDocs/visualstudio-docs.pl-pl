@@ -1,5 +1,5 @@
 ---
-title: Widok modułów — dane próbkowania | Dokumentacja firmy Microsoft
+title: Widok modułów — dane próbkowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,37 +13,37 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c3aa55bfc521521e28686ebb248053350ae14a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438918"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64822206"
 ---
 # <a name="modules-view---sampling-data"></a>Widok modułów — dane próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Widok modułów próbkuje dane wydajności wyświetla dane, które są pogrupowane według modułów, które zostały poddane próbkowaniu w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Próbkowane funkcji modułu są wyświetlane poniżej tego węzła modułu.  
+Widok moduły danych próbkowania przedstawia dane wydajności pogrupowane według modułów, które zostały próbkowane w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Przykładowe funkcje modułu są wyświetlane poniżej węzła moduł.  
   
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje ze sklepu Windows wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
- Jeśli wykonywania funkcji podczas próbek (oznacza to, że funkcja znajdowała się w górnej części stosu wywołań), wiersze źródłowe i adresy instrukcji, które wykonywały są wymienione poniżej tego węzła funkcji. Ponieważ dane są zbierane dla wiersza źródłowego lub wskaźnika instrukcji, podczas wykonywania wiersza lub instrukcji, wartości włączne i wyłączne są zawsze takie same dla wiersza danych i danych instrukcji.  
+ Jeśli funkcja była wykonywana po zebraniu próbek (oznacza to, że funkcja była w górnej części stosu wywołań), wiersze źródłowe i podane przez siebie adresy są wyświetlane poniżej węzła funkcji. Ponieważ dane są zbierane dla linii źródłowej lub wskaźnika instrukcji podczas wykonywania wiersza lub instrukcji, Włączne i wyłączne wartości są zawsze takie same dla danych wierszowych i danych instrukcji.  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Nazwa**|Nazwa modułu, funkcji, numer wiersza lub adres wskaźnika instrukcji.|  
-|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
-|**Nazwa procesu**|Nazwa procesu.|  
-|**Nazwa modułu**|Nazwa modułu, który zawiera wskaźnik funkcji, wiersza lub instrukcji.|  
-|**Ścieżka modułu**|Ścieżka moduł, który zawiera wskaźnik modułu, funkcji, wiersza lub instrukcji.|  
+|**Nazwa**|Nazwa modułu, funkcji, numeru wiersza lub wskaźnika instrukcji.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) przebiegu profilowania.|  
+|**Nazwa procesu**|Nazwa procesu|  
+|**Nazwa modułu**|Nazwa modułu, który zawiera funkcję, linię lub wskaźnik instrukcji.|  
+|**Ścieżka modułu**|Ścieżka modułu zawierającego moduł, funkcję, wiersz lub wskaźnik instrukcji.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Próbki włączne**|— Dla funkcji liczba próbek, w których ta funkcja lub funkcja, która została wywołana przez tę funkcję wykonywania; oznacza to, że liczba wywołań stosu przykładów, które zawiera tę funkcję.<br />— Dla modułu liczba próbek w funkcji co najmniej jeden z modułu wykonywania.<br />— W przypadku wiersza lub instrukcji, liczba próbek w którym ten wiersz lub instrukcja powodowała.|  
-|**% Włącznych próbek**|-Funkcji lub modułu, wartość procentowa wszystkie przykłady w uruchomienia profilowania były włącznych próbek w tej funkcji lub modułu.<br />— Dla wiersza lub instrukcji procent wszystkie przykłady w profilowania są uruchamiane w którym ten wiersz lub instrukcja powodowała.|  
-|**Próbki wyłączne**|— Dla funkcji liczba wywołań stosu przykładów, w których ta funkcja był wykonywany bezpośrednio; oznacza to, liczba próbek, w których ta funkcja była w górnej części stosu wywołań.<br />— Dla modułu, sumę wyłącznych próbek funkcje w module.<br />— W przypadku wiersza lub instrukcji, liczba próbek w którym ten wiersz lub instrukcja powodowała.|  
-|**% Wyłącznych próbek**|-Funkcji lub modułu, wartość procentowa wszystkie przykłady w uruchomienia profilowania były wyłącznych próbek w tej funkcji lub modułu.<br />— Dla wiersza lub instrukcji procent wszystkie przykłady w profilowania są uruchamiane w którym ten wiersz lub instrukcja powodowała.|  
+|**Próbki włączne**|-Dla funkcji, liczbę próbek, w których wykonywana jest ta funkcja lub funkcja, która została wywołana przez tę funkcję; oznacza to, że liczba próbek stosu wywołań, które zawierały tę funkcję.<br />-Dla modułu, liczba próbek, w których wykonano co najmniej jedną funkcję z modułu.<br />-Dla linii lub instrukcji, liczba próbek, w których wykonano ten wiersz lub instrukcję.|  
+|**Próbki włączne%**|-Dla funkcji lub modułu, procent wszystkich próbek w przebiegu profilowania, które były włącznie próbkami tej funkcji lub modułu.<br />— W przypadku linii lub instrukcji, procent wszystkich próbek w profilowania, w których uruchomiono ten wiersz lub instrukcję.|  
+|**Próbki wyłączne**|-Dla funkcji, liczba próbek stosu wywołań, w których ta funkcja była wykonywana bezpośrednio; oznacza to, że liczba próbek, w których ta funkcja znajdowała się w górnej części stosu wywołań.<br />-Dla modułu, suma próbek wyłącznych funkcji w module.<br />-Dla linii lub instrukcji, liczba próbek, w których wykonano ten wiersz lub instrukcję.|  
+|**Wyłącznych próbek%**|-Dla funkcji lub modułu, procent wszystkich próbek w przebiegu profilowania, które były wyłącznymi próbkami tej funkcji lub modułu.<br />— W przypadku linii lub instrukcji, procent wszystkich próbek w profilowania, w których uruchomiono ten wiersz lub instrukcję.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Moduły View - próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Widok modułów-próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Widok modułów](../profiling/modules-view-instrumentation-data.md)

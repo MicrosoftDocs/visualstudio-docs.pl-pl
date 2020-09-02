@@ -1,5 +1,5 @@
 ---
-title: Uwagi dotyczące rozwiązania typu piaskownica | Dokumentacja firmy Microsoft
+title: Zagadnienia dotyczące rozwiązania w trybie piaskownicy | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,91 +19,91 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435446"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64793814"
 ---
-# <a name="sandboxed-solution-considerations"></a>Uwagi dotyczące rozwiązania typu piaskownica
-  *Rozwiązania piaskownicy* to funkcja programu Microsoft SharePoint 2010, umożliwiająca użytkownikom kolekcji witryny do przekazania własnych rozwiązań kodu niestandardowego. Typowe rozwiązanie w trybie piaskownicy jest użytkownikom przekazywanie własnych składników Web Part.
+# <a name="sandboxed-solution-considerations"></a>Zagadnienia dotyczące rozwiązania w trybie piaskownicy
+  *Rozwiązania w trybie piaskownicy* to funkcja programu Microsoft SharePoint 2010, która umożliwia użytkownikom kolekcji witryn przekazywanie własnych niestandardowych rozwiązań kodu. Typowym rozwiązaniem w trybie piaskownicy jest przekazywanie własnych składniki Web Part.
 
- Aplikacja w trybie piaskownicy programu SharePoint działa w bezpiecznym, monitorowanym procesie, który ma dostęp do ograniczonej częścią kolektywu serwerów sieci Web. Program Microsoft SharePoint 2010 używa kombinacji funkcji, galerie rozwiązania, rozwiązanie monitorowania i szablon sprawdzania poprawności, aby umożliwić rozwiązania w trybie piaskownicy.
+ Aplikacja SharePoint w trybie piaskownicy działa w bezpiecznym, monitorowanym procesie, który ma dostęp do ograniczonej części kolektywu serwerów sieci Web. Program Microsoft SharePoint 2010 używa kombinacji funkcji, galerii rozwiązań, monitorowania rozwiązań i struktury sprawdzania poprawności, aby umożliwić korzystanie z rozwiązań w trybie piaskownicy.
 
 ## <a name="specify-project-trust-level"></a>Określ poziom zaufania projektu
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obsługuje rozwiązania w trybie piaskownicy za pomocą właściwości projektu logiczną o nazwie *rozwiązanie w trybie piaskownicy*. Tę właściwość można ustawić w dowolnym momencie w projekcie lub można określić, podczas tworzenia projektu w **Kreator ustawień niestandardowych SharePoint**.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obsługuje rozwiązania w trybie piaskownicy za pomocą logicznej właściwości projektu o nazwie *rozwiązanie w trybie piaskownicy*. Tę właściwość można ustawić w dowolnym momencie w projekcie lub można ją określić podczas tworzenia projektu w **Kreatorze dostosowywania programu SharePoint**.
 
 > [!NOTE]
-> Zmiana *rozwiązanie w trybie piaskownicy* właściwość projektu po jego utworzeniu może spowodować błędy sprawdzania poprawności.
+> Zmiana właściwości *rozwiązania w trybie piaskownicy* po utworzeniu projektu może spowodować błędy walidacji.
 
- To rozwiązanie jest uznawana za rozwiązania z zakresu farmy, jeśli *rozwiązanie w trybie piaskownicy* właściwość jest ustawiona na **false** lub można wybrać **Wdróż jako rozwiązanie farmy** opcji. Jednak rozwiązanie jest traktowany inaczej w rozwiązaniu farmy *rozwiązanie w trybie piaskownicy* właściwość jest ustawiona na **true** lub można wybrać **Wdróż jako rozwiązanie w trybie piaskownicy** Opcja w kreatorze.
+ Rozwiązanie jest uznawane za rozwiązanie w zakresie farmy, jeśli właściwość *rozwiązanie w trybie piaskownicy* ma **wartość FAŁSZ** lub wybrano opcję **Wdróż jako farmę** . Jednak rozwiązanie jest traktowane inaczej niż rozwiązanie farmy, jeśli właściwość rozwiązanie w *trybie piaskownicy* ma **wartość true** lub wybrano opcję **Wdróż jako rozwiązanie w trybie piaskownicy** w kreatorze.
 
-## <a name="sharepoint-site-hierarchy"></a>Hierarchia lokacji programu SharePoint
- Aby zrozumieć, jak w trybie piaskownicy rozwiązań pracę, warto wiedzieć, że witryn programu SharePoint są hierarchiczne w zakresie. Górnego elementu jest znany jako kolektywu serwerów sieci Web i inne elementy są podrzędne w stosunku do niego:
+## <a name="sharepoint-site-hierarchy"></a>Hierarchia witryny programu SharePoint
+ Aby zrozumieć, jak działają rozwiązania w trybie piaskownicy, warto wiedzieć, że witryny programu SharePoint są hierarchiczne w zakresie. Element Top jest znany jako Farma sieci Web, a inne elementy są podrzędne:
 
- Kolektywu serwerów sieci Web
+ Farma sieci Web
 
  Aplikacja sieci Web A
 
- A1 kolekcji witryny
+ Zbiór witryn a1
 
- A1a lokacji
+ A1A lokacji
 
  Aplikacja sieci Web B
 
- B1 kolekcji witryny
+ Zbiór witryn B1
 
  B1a lokacji
 
  B1b lokacji
 
- B2 kolekcji witryny
+ Zbiór witryn B2
 
- B2a lokacji
+ B2A lokacji
 
- Jak widać, farmy serwerów sieci Web mogą zawierać jedną lub więcej aplikacji sieci Web, które z kolei może zawierać jedną lub więcej kolekcji witryny, które mogą mieć Lokacje podrzędne i tak dalej. Zmiany wykonane na jednej lokacji kolekcji wpływ tylko zbioru witryn i żadne inne. Zmiany wprowadzone na poziomie farmy sieci Web wpływa jednak na wszystkich zbiorach witryn w farmie.
+ Jak widać, farmy serwerów sieci Web mogą zawierać co najmniej jedną aplikację sieci Web, która z kolei może zawierać co najmniej jedną kolekcję witryn, która może mieć lokacje podrzędne i tak dalej. Zmiany wprowadzone w jednym zbiorze witryn mają wpływ tylko na zbiór witryn i inne. Zmiany wprowadzone na poziomie farmy sieci Web mają jednak wpływ na wszystkie zbiory witryn w farmie.
 
- Windows SharePoint Services (WSS) 3.0 pozwala wdrażać rozwiązania tylko na poziomie farmy, ale [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] służy do wdrażania na poziomie farmy (rozwiązanie farmy) lub poziom zbioru witryn (rozwiązanie w trybie piaskownicy).
+ Program Windows SharePoint Services (WSS) 3,0 umożliwia wdrażanie rozwiązań tylko na poziomie farmy, ale pozwala na [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] wdrożenie na poziomie farmy (rozwiązanie farmy) lub na poziomie zbioru witryn (rozwiązanie w trybie piaskownicy).
 
-## <a name="why-sandboxed-solutions"></a>Dlaczego rozwiązania w trybie piaskownicy?
- W grupie WSS 3.0 rozwiązania można wdrożyć tylko na poziomie farmy. Oznacza to, że potencjalnie szkodliwego lub destabilizujące rozwiązania można wdrożyć, których to dotyczy całego kolektywu serwerów sieci Web i wszystkich zbiorach witryn i innych aplikacji działających w nim. Jednak za pomocą rozwiązania w trybie piaskownicy, można wdrożyć rozwiązania do podobszaru farmy kolekcji określonej lokacji. Aby zapewnić dodatkową ochronę, zestaw rozwiązania nie jest ładowany do głównej [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] procesu (*w3wp.exe*). Zamiast tego jest on ładowany w oddzielnym procesie (*SPUCWorkerProcess.exe*). Ten proces jest monitorowana i implementuje limity przydziału i ograniczanie przepustowości, aby chronić farmę z rozwiązania, które wykonują szkodliwe działania, takie jak uruchomienie ścisłej pętli, które zużywają cykle procesora CPU w trybie piaskownicy.
+## <a name="why-sandboxed-solutions"></a>Dlaczego warto korzystać z rozwiązań w trybie piaskownicy?
+ W programie WSS 3,0 rozwiązania mogą być wdrażane tylko na poziomie farmy. Oznacza to, że możliwe jest wdrożenie potencjalnie szkodliwych lub destabilizujących rozwiązań, które mają wpływ na całą farmę sieci Web i wszystkie inne kolekcje witryn i aplikacje, które działają w ramach tego programu. Jednak korzystając z rozwiązań w trybie piaskownicy, można wdrożyć rozwiązania w podobszarze farmy, w określonej kolekcji witryn. Aby zapewnić dodatkową ochronę, zestaw rozwiązania nie jest ładowany do [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] procesu głównego (*w3wp.exe*). Zamiast tego jest ładowany do osobnego procesu (*SPUCWorkerProcess.exe*). Ten proces jest monitorowany i implementuje limity przydziału i ograniczania przepustowości w celu ochrony farmy przed rozwiązaniami w trybie piaskownicy, które wykonują szkodliwe działania, na przykład uruchamiając ścisłe pętle korzystające z cykli procesora CPU.
 
-## <a name="site-collection-solution-gallery"></a>Galeria rozwiązań zbioru witryn
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 korzystają z funkcji, który jest znany jako "lokacji kolekcji galerii rozwiązań." Możesz korzystać z tej funkcji ze strony administracji centralnej programu SharePoint 2010 lub otwierając **Akcje witryny** menu, wybierając **ustawienia lokacji**, a następnie wybierając **rozwiązania** łącze w obszarze **galerie** w witrynie programu SharePoint. Galerie rozwiązania są repozytoriów rozwiązania umożliwiające Administratorzy zbioru witryn, zarządzać rozwiązaniami w zbiorach witryn.
+## <a name="site-collection-solution-gallery"></a>Galeria rozwiązań kolekcji witryn
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 zawiera funkcję, która jest znana jako "Galeria rozwiązań kolekcji witryn". Możesz uzyskać dostęp do tej funkcji na stronie administracji centralnej programu SharePoint 2010 lub otwierając menu **Akcje lokacji** , wybierając pozycję **Ustawienia lokacji**, a następnie wybierając łącze **rozwiązania** w obszarze  **Galerie** w witrynie programu SharePoint. Galerie rozwiązań to repozytoria rozwiązań, które umożliwiają administratorom zbioru witryn zarządzanie rozwiązaniami w ich kolekcjach witryn.
 
- Galeria rozwiązań jest przechowywany w katalogu głównym witryny programu SharePoint w sieci Web biblioteki dokumentów. Galeria rozwiązań zastępuje szablony witryn i obsługuje pakietów rozwiązania. Gdy pakietu rozwiązania programu SharePoint (*.wsp*) plik zostanie przekazany, jest on przetwarzany jako rozwiązanie w trybie piaskownicy.
+ Galeria rozwiązań jest biblioteką dokumentów przechowywaną w głównej sieci Web witryny programu SharePoint. Galeria rozwiązań zastępuje szablony witryn i obsługuje pakiety rozwiązań. Gdy przekazywany jest plik pakietu rozwiązania programu SharePoint (*wsp*), jest on przetwarzany jako rozwiązanie w trybie piaskownicy.
 
-## <a name="sandboxed-solution-limitations"></a>Ograniczenia dotyczące rozwiązania typu piaskownica
- Po wdrożeniu rozwiązania w trybie piaskownicy tablicy dostępnych funkcji programu SharePoint jest ograniczona do zmniejszenia luk w zabezpieczeniach, które może mieć. Niektóre z tych ograniczeń następujące:
+## <a name="sandboxed-solution-limitations"></a>Ograniczenia rozwiązania w trybie piaskownicy
+ Po wdrożeniu rozwiązania w trybie piaskownicy dostępna jest tablica funkcji programu SharePoint, która może pomóc w ograniczeniu wszelkich luk w zabezpieczeniach. Poniżej wymieniono niektóre z tych ograniczeń:
 
-- Rozwiązania w trybie piaskownicy ma ograniczony podzestaw elementów możliwych do wdrożenia rozwiązania dostępne dla nich. Potencjalnie zagrożone szablony projektów programu SharePoint, takich jak witryna definicje i przepływy pracy, nie są dostępne.
+- Rozwiązania w trybie piaskownicy mają ograniczony podzestaw dostępnych elementów rozwiązania do wdrożenia. Potencjalnie podatne na ataki szablony projektów programu SharePoint, takie jak definicje witryn i przepływy pracy, są niedostępne.
 
-- SharePoint działa kodu rozwiązania w trybie piaskownicy w procesie (*SPUCWorkerProcess.exe*) niezależnie od głównej [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] puli aplikacji (*w3wp.exe*) procesu.
+- Program SharePoint uruchamia kod rozwiązania w trybie piaskownicy w procesie (*SPUCWorkerProcess.exe*) oddzielonym od [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] procesu głównej puli aplikacji (*w3wp.exe*).
 
-- Nie można dodać folderów mapowanych do projektu.
+- Zamapowane foldery nie mogą zostać dodane do projektu.
 
-- Typy w [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zestawu Microsoft.Office.Server nie można używać w rozwiązania w trybie piaskownicy. Ponadto tylko w przypadku typów w [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] zestawu Microsoft.SharePoint mogą być używane w trybie piaskownicy rozwiązań.
+- Typów w [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zestawie Microsoft. Office. Server nie można używać w rozwiązaniach w trybie piaskownicy. Ponadto [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] w rozwiązaniach w trybie piaskownicy można używać tylko typów w zestawie Microsoft. SharePoint.
 
-  Ważne jest, aby należy pamiętać, że określenie rozwiązania programu SharePoint jako rozwiązanie w trybie piaskownicy nie ma wpływu na serwerze programu SharePoint; Określa tylko sposób wdrażania projektu programu SharePoint do programu SharePoint z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i jakie zestawy powiąże. Go nie ma wpływu na wygenerowany *.wsp* pliku i *.wsp* plik nie zawiera danych odpowiadająca bezpośrednio *rozwiązanie w trybie piaskownicy* właściwości.
+  Należy pamiętać, że określenie rozwiązania programu SharePoint jako rozwiązania w trybie piaskownicy nie ma wpływu na serwer programu SharePoint; Określa on tylko, w jaki sposób projekt programu SharePoint jest wdrażany w programie SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i jakie zespoły są do nich powiązane. Nie ma to wpływu na wygenerowany plik *. wsp* , a plik *. wsp* nie zawiera danych, które są bezpośrednio skorelowane z właściwością *rozwiązania w trybie piaskownicy* .
 
-## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Funkcje i elementy w rozwiązania w trybie piaskownicy
- Rozwiązania piaskownicy obsługują następujące funkcje i elementy:
+## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Możliwości i elementy w rozwiązaniach w trybie piaskownicy
+ Rozwiązania w trybie piaskownicy obsługują następujące możliwości i elementy:
 
-- Typy zawartości/pól
+- Typy zawartości/pola
 
 - Akcje niestandardowe
 
-- Deklaratywne przepływów pracy
+- Deklaratywne przepływy pracy
 
 - Odbiorcy zdarzeń
 
-- Wywołania funkcji
+- Objaśnienia funkcji
 
 - Definicje list
 
 - Wystąpienia listy
 
-- Moduł i pliki
+- Moduł/pliki
 
 - Nawigacja
 
@@ -115,28 +115,28 @@ ms.locfileid: "63435446"
 
 - SPWebEventReceiver
 
-- Obsługa wszystkich składników Web Part, które wynikają z `System.Web.UI.WebControls.WebParts.WebPart`
+- Obsługa wszystkich składniki Web Part pochodzących od `System.Web.UI.WebControls.WebParts.WebPart`
 
 - Części sieci Web
 
-- Elementów funkcji szablonu sieci Web (zamiast *Webtemp.xml*)
+- Elementy funkcji szablonu webtemplate (zamiast *Webtemp.xml*)
 
-- Wizualne części sieci Web
+- składniki Web Part wizualizacji
 
-  Rozwiązania piaskownicy nie obsługują następujące funkcje i elementy:
+  Rozwiązania w trybie piaskownicy nie obsługują następujących możliwości i elementów:
 
 - Strony aplikacji
 
-- Niestandardowe grupy akcji
+- Niestandardowa grupa akcji
 
-- Funkcji należących do zakresu farmy
+- Funkcje w zakresie farmy
 
 - `HideCustomAction`, element
 
-- Funkcje o zakresie aplikacji sieci Web
+- Funkcje w zakresie aplikacji sieci Web
 
-- Przepływy pracy za pomocą kodu
+- Przepływy pracy z kodem
 
-## <a name="see-also"></a>Zobacz także
-- [Różnice między piaskownicy oraz rozwiązaniami farmy](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)
+## <a name="see-also"></a>Zobacz też
+- [Różnice między rozwiązaniami w trybie piaskownicy a farmą](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)
 - [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: Wątki widok (Parallel Performance) | Dokumentacja firmy Microsoft
+title: Widok wątków (wydajność równoległa) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,140 +14,140 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441655"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64821989"
 ---
 # <a name="threads-view-parallel-performance"></a>Widok wątków (Parallel Performance)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Widok wątków jest najbardziej szczegółowy i bogate widoku w Wizualizatorze współbieżności. Korzystając z tego widoku, można ustalić, czy wątki są wykonywanie lub blokowania z powodu synchronizacji, operacji We/Wy lub innego powodu.  
+Widok wątków to najbardziej szczegółowy i wzbogacony widok funkcji w wizualizatorze współbieżności. Za pomocą tego widoku można określić, czy wątki są wykonywane czy blokowane z powodu synchronizacji, we/wy lub z innego powodu.  
   
- Podczas analizy profilu Concurrency Visualizer sprawdza, czy wszystkie zdarzenia przełączenie kontekstu systemu operacyjnego dla każdego wątku aplikacji. Przełączeń kontekstu może wystąpić z wielu powodów, takich jak te:  
+ Podczas analizy profilu, Wizualizator współbieżności bada wszystkie zdarzenia dotyczące przełącznika kontekstu systemu operacyjnego dla każdego wątku aplikacji. Przełączenia kontekstu mogą wystąpić z wielu powodów, takich jak następujące:  
   
-- Wątek jest zablokowany na podstawowy synchronizacji.  
+- Wątek jest blokowany dla elementu podstawowego synchronizacji.  
   
-- Wygasa quantum wątku.  
+- Element Quantum dla wątku wygasa.  
   
-- Wątek żąda blokowania We/Wy.  
+- Wątek sprawia, że blokowane żądanie we/wy.  
   
-  Widok wątków przypisuje kategorię dla każdego przełącznika kontekstu po zatrzymaniu wątek wykonywania. Kategorie są wyświetlane w legendzie w lewej dolnej części widoku. Narzędzie Concurrency Visualizer na działaniach kategoryzuje zdarzenia przełączenie kontekstu przez wyszukiwanie dobrze znanych interfejsów API w blokowania stos wywołań wątku. Jeśli nie zostanie odnaleziony odpowiednik stosu wywołań powód oczekiwania, które są dostarczane przez [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] jest używany. Jednak [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] kategorii mogą opierać się na szczegółowo opisuje implementacja i mogą nie odzwierciedlać intencji użytkownika. Na przykład [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] raporty powód oczekiwania dotyczące blokowania na blokadzie natywnych zapisywania kieszeń czytnika jako operacji We/Wy, zamiast synchronizacji. W większości przypadków można zidentyfikować głównych przyczyn zdarzeń blokowania, sprawdzając stosy wywołań, które odnoszą się do przełączania kontekstu zdarzenia.  
+  Widok wątków przypisuje kategorię do każdego przełączenia kontekstu, gdy wątek przestanie działać. Kategorie są wyświetlane w legendzie w lewej dolnej części widoku. Wizualizator współbieżności klasyfikuje zdarzenia przełączenia kontekstu, wyszukując stos wywołań wątku dla dobrze znanych, blokowanych interfejsów API. Jeśli nie ma dopasowania stosu wywołań, używany jest powód oczekiwania podany przez [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] . Jednak [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] Kategoria może opierać się na szczegółach implementacji i może nie odzwierciedlać intencji użytkownika. Na przykład program [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] raportuje przyczynę oczekiwania na zablokowanie natywnej, cienkiej blokady czytnika i/O zamiast synchronizacji. W większości przypadków można zidentyfikować główną przyczynę zdarzenia blokującego, badając stosy wywołań odpowiadające zdarzeniom przełączania kontekstu.  
   
-  Widok wątki pokazuje również zależności pomiędzy wątkami. Na przykład po zidentyfikowaniu wątek, który jest zablokowany na obiekt synchronizacji, można wyszukać wątku, który odblokował go, a po jej odblokowaniu jeden z nich, można sprawdzić działanie w stosie wywołań dla tego wątku w punkcie.  
+  Widok wątki zawiera również zależności między wątkami. Na przykład, jeśli określisz wątek, który jest zablokowany w obiekcie synchronizacji, można wyszukać wątek, który go odblokował, i można sprawdzić działanie w stosie wywołań dla tego wątku w momencie odblokowania go.  
   
-  Wykonywaniem wątków Concurrency Visualizer służy do zbierania próbek. W widoku wątków można analizować, której kod jest wykonywany przez jeden lub więcej wątków podczas segmentu wykonania. Można także sprawdzić blokowania raporty i raporty, które profil wykonania drzewo stosu wywołań.  
+  Gdy wątki są wykonywane, Wizualizator współbieżności zbiera próbki. W widoku wątki można analizować, który kod jest wykonywany przez jeden lub więcej wątków w ramach segmentu wykonywania. Możesz również przejrzeć raporty dotyczące blokowania i raporty, które profilują wykonywanie w drzewie wywołań.  
   
 ## <a name="usage"></a>Użycie  
- Oto kilka sposobów, że można użyć widoku wątków:  
+ Oto kilka sposobów korzystania z widoku wątki:  
   
-- Zidentyfikuj powodów dlaczego interfejs użytkownika (UI) aplikacji nie odpowiada podczas niektórych faz wykonywania.  
+- Określ przyczyny braku odpowiedzi interfejsu użytkownika w niektórych fazach wykonywania.  
   
-- Określ ilość czasu, który ma poświęcony blokowania synchronizacji, operacji We/Wy, błędów stron i inne zdarzenia.  
+- Określ czas, w którym wykorzystano blokowanie synchronizacji, operacji we/wy, błędów stron i innych zdarzeń.  
   
-- Określ stopień zakłócenia wywoływane przez inne procesy, które są wykonywane w systemie.  
+- Określ stopień zakłóceń między innymi procesami, które są wykonywane w systemie.  
   
-- Identyfikowanie problemów równoważenia obciążenia dla przetwarzania równoległego.  
+- Identyfikuj problemy z równoważeniem obciążenia na potrzeby wykonywania równoległego.  
   
-- Określ powody do skalowania, która jest nieoptymalne lub nie istnieje (na przykład, dlaczego wydajność aplikacji równoległych nie poprawia, gdy będzie dostępnych rdzeni bardziej logiczny).  
+- Zidentyfikuj przyczyny skalowalności, która jest optymalna lub nieistniejąca (na przykład Dlaczego wydajność aplikacji równoległej nie poprawi się, gdy są dostępne więcej rdzeni logicznych).  
   
-- Dowiedz się, stopień współbieżności w aplikacji, aby pomóc w przetwarzania równoległego.  
+- Poznaj stopień współbieżności w aplikacji, aby pomóc w przetwarzanie równoległe.  
   
-- Poznanie zależności pomiędzy wątki robocze i krytyczne ścieżki wykonywania.  
+- Zrozumienie zależności między wątkami roboczymi i krytycznymi ścieżkami wykonywania.  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>Badanie w określonych odstępach czasu i wątki  
- Widok wątki pokazuje oś czasu. Możesz powiększać i przesuń w osi czasu, aby sprawdzić w określonych odstępach czasu i wątki aplikacji. Na osi x jest czas się na osi y różnych kanałów:  
+## <a name="examining-specific-time-intervals-and-threads"></a>Badanie określonych przedziałów czasu i wątków  
+ Widok wątki pokazuje oś czasu. Możesz powiększać i kadrować na osi czasu w celu sprawdzenia określonych interwałów i wątków aplikacji. Na osi x jest czas, a na osi y jest kilka kanałów:  
   
-- Dwa kanały operacji We/Wy dla każdego dysku twardego systemu, jeden kanał dla odczytów i jeden dla zapisu.  
+- Dwa kanały we/wy dla każdego dysku w systemie, jeden kanał do odczytu i jeden dla operacji zapisu.  
   
 - Kanał dla każdego wątku w procesie.  
   
-- W przypadku zdarzeń znaczników w śledzeniu kanały znacznika. Kanały znacznika początkowo wyświetlane w ramach kanałów wątków, które wygenerowany tych zdarzeń.  
+- Kanały znacznika, jeśli istnieją zdarzenia znacznika w śladzie. Kanały znaczników początkowo pojawiają się w obszarze kanałów wątku, które wygenerowały te zdarzenia.  
   
 - Kanały procesora GPU.  
   
-  Oto ilustrację Widok wątków:  
+  Oto ilustracja przedstawiająca widok wątki:  
   
   ![Widok wątków](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
   Widok wątków  
   
-  Początkowo wątki są sortowane w kolejności, w którym są tworzone tak, aby następuje wątku głównego aplikacji. Opcja sortowania w lewym górnym rogu widoku sortowania wątki według innego kryterium (np. przez większość wykonywania pracy wykonanej).  
+  Początkowo wątki są sortowane w kolejności, w której zostały utworzone, tak aby wątek głównej aplikacji był pierwszy. Możesz użyć opcji sortowania w lewym górnym rogu widoku, aby posortować wątki według innego kryterium (na przykład przez większość wykonanych zadań wykonywania).  
   
-  Można ukryć, wątki, które nie wykonują pracę, wybierając ich nazwy w kolumnie po lewej stronie, a następnie wybierając **Ukryj wybrane wątki** przycisk na pasku narzędzi. Firma Microsoft zaleca ukrycie wątki, które są całkowicie zablokowane, ponieważ ich statystyki są zbędne i można clog — raporty.  
+  Można ukryć wątki, które nie wykonują pracy, wybierając ich nazwy w kolumnie po lewej stronie, a następnie wybierając przycisk **Ukryj wybrane wątki** na pasku narzędzi. Zalecamy ukrycie wątków, które są całkowicie zablokowane, ponieważ ich statystyki są nieistotne i mogą CLOG raporty.  
   
-  Aby zidentyfikować dodatkowe wątki, aby ukryć w legendzie active wybierz **na podsumowanie wątku** sporządzić raport na temat **raport profilu** kartę. Spowoduje to wyświetlenie wykres podziału wykonywania, na którym pokazuje stan wątków dla aktualnie wybranego okresu. W niektórych poziomami powiększenia niektóre wątki mogą nie być wyświetlane. W takiej sytuacji wielokropek są wyświetlane po prawej stronie.  
+  Aby określić dodatkowe wątki do ukrycia, w aktywnej legendzie wybierz Raport **podsumowujący wątek** na karcie **raport o profilu** . Spowoduje to wyświetlenie wykresu podziału wykonania, który pokazuje stan wątków dla aktualnie wybranego interwału czasu. Na pewnych poziomach powiększenia niektóre wątki mogą nie być wyświetlane. W takim przypadku elipsy są wyświetlane po prawej stronie.  
   
-  Po wybraniu interwału czasu i wątków w nim można uruchomić analizy wydajności.  
+  Po wybraniu interwału i niektórych wątków można rozpocząć analizę wydajności.  
   
 ## <a name="analysis-tools"></a>Narzędzia do analizy  
- W tej sekcji opisano, raportów i innych narzędzi do analizy.  
+ W tej sekcji opisano raporty i inne narzędzia do analizy.  
   
-### <a name="thread-blocking-details"></a>Blokuje wątek szczegóły  
- Aby uzyskać informacje o zdarzeniu blokowania w danym regionie w wątku, umieść wskaźnik na ten region, aby wyświetlić etykietkę narzędzia. Zawiera on informacje, takie jak kategorii, region, czas rozpoczęcia, czas blokowania i blokowania interfejsu API, jeśli taka istnieje. Jeśli wybierzesz opcję blokowania region, stosu w danym momencie jest wyświetlany w dolnym okienku wraz z tych samych informacji, który jest wyświetlany w etykietce narzędzia. Sprawdzając stos wywołań, należy określić główną przyczynę wysokiej skuteczności wydarzeniu blokowania wątku. Dodatkowych procesów i informacji o wątku można znaleźć, wybierając segmentu i badanie bieżącej karty.  
+### <a name="thread-blocking-details"></a>Szczegóły blokowania wątku  
+ Aby uzyskać informacje o zdarzeniu blokującym w określonym regionie wątku, umieść wskaźnik w tym regionie, aby wyświetlić etykietkę narzędzia. Zawiera informacje, takie jak kategoria, czas rozpoczęcia regionu, czas blokowania i blokowy interfejs API, jeśli istnieje. W przypadku wybrania regionu blokującego w dolnym okienku zostanie wyświetlony stos, a razem z tymi samymi informacjami, które są wyświetlane w etykietce narzędzia. Badając stos wywołań, można określić podstawową przyczynę zdarzenia blokowania wątku. Dodatkowe informacje o procesach i wątkach można znaleźć, wybierając segment i sprawdzając bieżącą kartę.  
   
- Ścieżką wykonywania może mieć wiele zdarzeń blokujących. Można sprawdzić je według kategorii blokowania, więc, że możesz szybciej znaleźć obszarów problemów. Wystarczy wybrać jedną z kategorii blokowania w legendzie po lewej stronie.  
+ Ścieżka wykonywania może mieć wiele zdarzeń blokowania. Można je sprawdzić przez zablokowanie kategorii, dzięki czemu można szybciej znaleźć obszary problemów. Po lewej stronie wybierz jedną z kategorii blokowania.  
   
 ### <a name="dependencies-between-threads"></a>Zależności między wątkami  
- Narzędzie Concurrency Visualizer można wyświetlić zależności między wątkami w procesie, aby określić, co zablokowany wątek próbował wykonać i Dowiedz się, jakie inne wątku włączony do wykonania. Aby ustalić, który wątek odblokowany inny wątek, wybierz odpowiednie segment blokujący. Jeśli narzędzie Concurrency Visualizer można określić odblokowywanie wątków, rysuje linię między odblokowywanie wątków i wykonywanie segment, który następuje po segment blokujący. Ponadto **stosu Unblocking** karta przedstawia stos wywołań istotne.  
+ Wizualizator współbieżności może pokazać zależności między wątkami w procesie, aby można było określić, co zablokowany wątek próbował wykonać i dowiedzieć się, jakie inne wątki obsługują do wykonania. Aby określić, który wątek odblokował inny wątek, wybierz odpowiedni segment blokujący. Jeśli Wizualizator współbieżności może określić wątek odblokowywania, rysuje wiersz między wątkiem odblokowywania i segmentem wykonywania, który następuje po segmencie bloku. Ponadto na karcie **odblokowywanie stosu** są wyświetlane odpowiednie stosy wywołań.  
   
-### <a name="thread-execution-details"></a>Szczegóły wykonywania wątków  
- Wykres osi czasu w wątku zielony segmentów pokazują, gdy był wykonywany kod. Możesz uzyskać bardziej szczegółowe informacje o segmentu wykonania.  
+### <a name="thread-execution-details"></a>Szczegóły wykonania wątku  
+ Na wykresie osi czasu wątku, zielone segmenty są wyświetlane podczas wykonywania kodu. Możesz uzyskać bardziej szczegółowe informacje na temat segmentu wykonania.  
   
- Po wybraniu punktu w segmencie wykonywania Concurrency Visualizer szuka tego punktu w czasie w stosie wywołań odpowiednie wyświetla czarny daszek powyżej wybranym punkcie w segmencie wykonywania i przedstawia stos wywołań, sam na  **Bieżący stos** kartę. Możesz wybrać wiele punktów do tego segmentu wykonania.  
+ Po wybraniu punktu w segmencie wykonywania, Wizualizator współbieżności szuka tego punktu w czasie na odpowiednim stosie wywołań, a następnie wyświetla czarny karetkę nad wybranym punktem w segmencie wykonywania i wyświetla sam stos wywołań na karcie **bieżącego stosu** . Można wybrać wiele punktów w segmencie wykonywania.  
   
 > [!NOTE]
-> Narzędzie Concurrency Visualizer nie można rozpoznać zaznaczenia w segmencie wykonywania. Zwykle dzieje się po czas trwania segmentu mniejszym niż jedna Milisekunda.  
+> Wizualizator współbieżności może nie być w stanie rozpoznać zaznaczenia w segmencie wykonywania. Zwykle zdarza się to, gdy czas trwania segmentu jest krótszy niż jedna milisekunda.  
   
- Aby uzyskać profil wykonania wszystkie włączone (odkrywanie) wątków w aktualnie wybranym zakresie czasu, wybierz **wykonywania** przycisk aktywna Legenda.  
+ Aby uzyskać profil wykonywania dla wszystkich włączonych (nieukrytych) wątków w aktualnie wybranym zakresie czasu, wybierz przycisk **wykonywania** w aktywnej legendzie.  
   
 ### <a name="timeline-graph"></a>Wykres osi czasu  
- Wykres osi czasu aktywnością wszystkie wątki w procesie i wszystkie urządzenia dysku fizycznego na komputerze-hoście. Zdarzenia procesora GPU działania i znacznika jest również wyświetlana.  Można powiększyć, aby wyświetlić więcej szczegółów lub poziomie w celu wyświetlenia dłuższy interwał czasu. Możesz również wybrać punktów na wykresie, aby uzyskać szczegółowe informacje o kategorii, godziny rozpoczęcia, czas trwania i Stany stosu wywołań.  
+ Wykres osi czasu przedstawia aktywność wszystkich wątków w procesie i wszystkich urządzeń fizycznych na komputerze-hoście. Wyświetla również zdarzenia dotyczące aktywności procesora GPU i znaczników.  Możesz powiększyć widok, aby wyświetlić bardziej szczegółowe informacje, aby wyświetlić dłuższy interwał czasu. Możesz również wybrać punkty na grafie, aby uzyskać szczegółowe informacje o kategoriach, godzinach początkowych, czasach trwania i Stanach stosu wywołań.  
   
- Na wykresie oś czasu kolor, który wskazuje stan wątku w danym momencie. Na przykład wykonywały segmentów zielony, czerwony segmentów zostały zablokowane na synchronizacji, żółty segmentów były przerywane i purpurowa segmenty nie prowadzą We/Wy urządzenia. Ten widok służy do sprawdzenia równowagi między wątkami, które są zaangażowane w pętli równoległej lub współbieżnych zadań. Jeśli wątek trwa dłużej niż inne, praca może być niezrównoważone. Aby zwiększyć wydajność programu dzięki rozłożeniu pracy bardziej równomiernie między wątki, można użyć tych informacji.  
+ Na wykresie osi czasu kolor wskazuje stan wątku w danym momencie. Na przykład, zielone segmenty zostały wykonane, czerwona segmenty zostały zablokowane do synchronizacji, żółte segmenty zostały zastępujące, a purpurowe segmenty zostały wykonane w ramach operacji we/wy na urządzeniu. Możesz użyć tego widoku, aby sprawdzić balans pracy między wątkami, które są uwzględnione w pętli równoległej lub w zadaniach współbieżnych. Jeśli wątek trwa dłużej niż inne, może to oznaczać, że działanie nie jest zrównoważone. Za pomocą tych informacji można poprawić wydajność programu Dzięki rozproszeniu pracy bardziej równomiernie między wątki.  
   
- Jeśli tylko jeden wątek jest zielony, (wykonywana) w punkcie w czasie, aplikacja może nie być zalet pełną współbieżność w systemie. Wykres osi czasu można użyć do sprawdzenia zależności między wątkami i Pokazuję tymczasowe relacje między blokowania i zablokowane wątki. Aby zmienić kolejność wątków, wybierz wątku, a następnie na pasku narzędzi wybierz pozycję w górę lub dół. Aby ukryć wątków, zaznacz je, a następnie wybierz **Ukryj wątki** przycisku.  
+ Jeśli tylko jeden wątek jest zielony (wykonywany) w danym momencie, aplikacja może nie być w pełni wykorzystywać współbieżności w systemie. Wykres osi czasu służy do badania zależności między wątkami i relacjami czasowymi między blokowaniem i zablokowanymi wątkami. Aby zmienić rozmieszczenie wątków, zaznacz wątek, a następnie na pasku narzędzi wybierz przycisk w górę lub w dół. Aby ukryć wątki, zaznacz je, a następnie wybierz przycisk **Ukryj wątki** .  
   
-### <a name="profile-reports"></a>Profilu, raportów  
- Poniżej oś czasu wykresu jest profil osi czasu i okienko które zawiera karty dla różnych raportów. Raporty są automatycznie aktualizowane wraz ze zmianą Widok wątków. Dla dużych śladów okienko raportów mogą być niedostępne, gdy aktualizacje są obliczane. Każdy raport zawiera dwa dopasowania filtru: noise redukcję i tylko mój kod. Użyj redukcji szumu, aby odfiltrować wpisy drzewo wywołań gdzie odbywa się trochę czasu. Domyślna wartość filtru jest % 2, ale można dostosować od 0 do 99 procent. Zaznacz, aby wyświetlić tylko drzewo wywołań dla kodu **tylko mój kod** pole wyboru. Aby wyświetlić wszystkie drzewa wywołań, usuń zaznaczenie.  
+### <a name="profile-reports"></a>Raporty profilowe  
+ Poniżej wykresu osi czasu jest profil osi czasu oraz okienko z kartami dla różnych raportów. Raporty są automatycznie aktualizowane podczas zmiany widoku wątków. W przypadku dużych śladów okienko raporty może być niedostępne podczas obliczania aktualizacji. Każdy raport ma dwa ustawienia filtrowania: redukcja szumu i Tylko mój kod. Użyj redukcji szumu, aby odfiltrować wpisy drzewa wywołań, gdy jest czasochłonny niewielki czas. Domyślna wartość filtru to 2 procent, ale można ją dostosować od 0% do 99%. Aby wyświetlić tylko drzewo wywołań dla kodu, zaznacz pole wyboru **tylko mój kod** . Aby wyświetlić wszystkie drzewa wywołań, wyczyść je.  
   
 #### <a name="profile-report"></a>Raport profilu  
- Ta karta przedstawia raporty, które odnoszą się do wpisów w aktywna Legenda. Aby wyświetlić raport, wybierz jeden z wpisów.  
+ Na tej karcie są wyświetlane raporty, które odpowiadają wpisom w aktywnej legendzie. Aby wyświetlić raport, wybierz jeden z wpisów.  
   
 #### <a name="current-stack"></a>Bieżący stos  
- Ta karta przedstawia stos wywołań dla wybranego punktu w segmencie wątku na wykresie osi czasu. Stosy wywołań są usuwane, aby pokazać tylko te działania, które jest związane z programu.  
+ Na tej karcie jest wyświetlany stos wywołań dla wybranego punktu w segmencie wątku na wykresie osi czasu. Stosy wywołań są przycinane do wyświetlania tylko działań związanych z programem.  
   
 #### <a name="unblocking-stack"></a>Stos odblokowań  
- Aby zobaczyć, który wątek odblokowany zaznaczonych wątków, a na wiersz kodu, wybierz **stosu Unblocking** kartę.  
+ Aby zobaczyć, który wątek odblokował wybrany wątek, i w jakim wierszu kodu wybierz kartę **Odblokuj stos** .  
   
 #### <a name="execution"></a>Wykonanie  
- Wykonanie przedstawia podział czas potrzebny do aplikacji podczas wykonywania.  
+ Raport wykonywania pokazuje podział czasu, przez który aplikacja wykorzystała z wykonywania.  
   
- Aby znaleźć wiersza kodu, w którym jest czas wykonywania, rozwiń drzewo wywołań, a następnie w menu skrótów dla pozycji drzewo wywołań, wybierz **Wyświetl źródło** lub **widok wywołań witryn**. **Wyświetl źródło** lokalizuje wykonanego wiersza kodu. **Wyświetlanie wywołań witryn** lokalizuje wiersz kodu, który wywołał wykonanego wiersza kodu. Jeśli tylko jedna lokacja wywołanie istnieje, jest wyróżniona jego wiersz kodu. Jeśli istnieje wiele wywołań, można wybrać w oknie dialogowym, który pojawia się, a następnie wybierz żądaną **przejdź do źródła** przycisk, aby wyróżnić wywołanie kodu lokacji. Często jest najbardziej przydatne do lokalizowania strony wywołania, najbardziej wystąpień i/lub najwięcej czasu. Aby uzyskać więcej informacji, zobacz [raport profilu wykonania](../profiling/execution-profile-report.md).  
+ Aby znaleźć wiersz kodu, w którym jest poświęcony czas wykonywania, rozwiń drzewo wywołań, a następnie w menu skrótów dla wpisu drzewa wywołań wybierz polecenie **Wyświetl źródło** lub **Wyświetl Lokacje wywołań**. **Widok źródło** lokalizuje wykonany wiersz kodu. **Wyświetl Lokacje wywołań** lokalizuje wiersz kodu, który został wywołany przez wykonywany wiersz kodu. Jeśli istnieje tylko jedna lokacja wywołania, jego wiersz kodu jest wyróżniony. Jeśli istnieje wiele witryn wywołań, można wybrać odpowiedni w wyświetlonym oknie dialogowym, a następnie wybrać przycisk **Przejdź do źródła** , aby wyróżnić kod lokacji wywołania. Często jest to najbardziej przydatne do lokalizowania lokacji wywołań, która ma najwięcej wystąpień, w większości przypadków lub obu. Aby uzyskać więcej informacji, zobacz [raport profil wykonywania](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Synchronizacja  
- Synchronizacja przedstawia wywołania, które są odpowiedzialne za bloki synchronizacji, wraz z agregacji blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas synchronizacji](../profiling/synchronization-time.md).  
+ Raport synchronizacji przedstawia wywołania, które są odpowiedzialne za bloki synchronizacji, oraz łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [godzina synchronizacji](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>WE/WY  
- Operacje We/Wy przedstawia wywołania, które są odpowiedzialne za bloki operacji We/Wy, wraz z agregacji blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md).  
+ Raport we/wy przedstawia wywołania, które są odpowiedzialne za bloki we/wy oraz łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas operacji we/wy (Widok wątków)](../profiling/i-o-time-threads-view.md).  
   
-#### <a name="sleep"></a>Stan uśpienia  
- Uśpienie przedstawia wywołania, które są odpowiedzialne za bloki uśpienia, wraz z agregacji blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas uśpienia](../profiling/sleep-time.md).  
+#### <a name="sleep"></a>Uśpij  
+ Raport uśpienia zawiera wywołania, które są odpowiedzialne za bloki uśpienia oraz łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas uśpienia](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Zarządzanie pamięcią  
- Raport zarządzania pamięci Wyświetla wywołania, gdy bloków zarządzania pamięci wystąpiły, wraz z agregacji blokuje razy każdego stosu wywołań. Można użyć tych informacji do identyfikacji obszarów, które mają nadmierne problemy stronicowania lub wyrzucanie elementów z kolekcją.  Aby uzyskać więcej informacji, zobacz [czas zarządzania pamięcią](../profiling/memory-management-time.md).  
+ Raport zarządzanie pamięcią pokazuje wywołania, w których wystąpiły bloki zarządzania pamięcią, oraz łączny czas blokowania dla każdego stosu wywołań. Za pomocą tych informacji można identyfikować obszary, które mają nadmierne problemy z stronicowaniem lub odzyskiwaniem pamięci.  Aby uzyskać więcej informacji, zobacz [czas zarządzania pamięcią](../profiling/memory-management-time.md).  
   
 #### <a name="preemption"></a>Wywłaszczania  
- Raport Wywłaszczania zawiera wystąpienia, gdzie procesy w systemie przerywane bieżący proces i poszczególne wątki, które zastąpione wątki w bieżącym procesie. Można użyć tych informacji do identyfikacji procesów i wątków, które są najbardziej odpowiedzialny za wywłaszczania. Aby uzyskać więcej informacji, zobacz [czas Wywłaszczania](../profiling/preemption-time.md).  
+ Raport przeniesień przedstawia wystąpienia, w których procesy w systemie zastępują bieżący proces i poszczególne wątki, które zastąpiły wątki w bieżącym procesie. Te informacje służą do identyfikowania procesów i wątków, które są najbardziej odpowiedzialne za przeznaczenie. Aby uzyskać więcej informacji, zobacz [czas zastępujący](../profiling/preemption-time.md).  
   
 #### <a name="ui-processing"></a>Przetwarzanie interfejsu użytkownika  
- Raport przetwarzania interfejsu użytkownika zawiera wywołania, które są odpowiedzialne za interfejs użytkownika, przetwarzanie bloki, wraz z agregacji blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md).  
+ Raport przetwarzania interfejsu użytkownika przedstawia wywołania, które są odpowiedzialne za bloki przetwarzania interfejsu użytkownika oraz łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md).  
   
 #### <a name="per-thread-summary"></a>Na podsumowanie wątku  
- Ta karta przedstawia widok kolumna oznaczona kolorami, łączny czas, czy każdy wątek w procesie, zablokowany, we/wy i inne stany. Kolumny są oznaczone jako u dołu. Podczas dostosowywania na poziomie powiększenie w wykres osi czasu na tej karcie jest aktualizowane automatycznie. W niektórych poziomami powiększenia niektóre wątki mogą nie być wyświetlane. W takiej sytuacji wielokropek są wyświetlane po prawej stronie. Jeśli wątek, który ma nie zostanie wyświetlony, możesz ukryć inne wątki. Aby uzyskać więcej informacji, zobacz [na wątku raport z podsumowaniem](../profiling/per-thread-summary-report.md).  
+ Na tej karcie jest wyświetlany widok kolumny kodowany kolorem łącznego czasu, przez który każdy wątek spędza w przebiegu, zablokowane, we/wy i innych Stanach. Kolumny są oznaczone etykietami u dołu. Po dostosowaniu poziomu powiększenia na wykresie osi czasu ta karta jest automatycznie aktualizowana. Na pewnych poziomach powiększenia niektóre wątki mogą nie być wyświetlane. W takim przypadku elipsy są wyświetlane po prawej stronie. Jeśli żądany wątek nie jest wyświetlany, można ukryć inne wątki. Aby uzyskać więcej informacji, zobacz [raport podsumowujący wątek](../profiling/per-thread-summary-report.md).  
   
-#### <a name="disk-operations"></a>Operacje dyskowe  
- Ta karta przedstawia procesy i wątki były związane z We/Wy dysku w imieniu bieżącego procesu, które pliki są dotknięciu (np. biblioteki dll, które zostały załadowane), liczbę bajtów zostały odczytane oraz inne informacje. Ten raport służy do oceny czasu spędzonego w dostęp do plików w czasie wykonywania, szczególnie w przypadku, gdy proces wydaje się być powiązany we/wy. Aby uzyskać więcej informacji, zobacz [raport operacji dyskowych](../profiling/disk-operations-report-threads-view.md).  
+#### <a name="disk-operations"></a>Operacje na dyskach  
+ Na tej karcie przedstawiono, które procesy i wątki dotyczyły operacji we/wy dysku w bieżącym procesie, które pliki zostały naruszone (na przykład załadowane biblioteki dll), ile bajtów zostało odczytanych i innych informacji. Za pomocą tego raportu można oszacować czas spędzony na uzyskiwaniu dostępu do plików podczas wykonywania, szczególnie w przypadku, gdy proces wydaje się być powiązany we/wy. Aby uzyskać więcej informacji, zobacz [raport operacji dyskowych](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Concurrency Visualizer](../profiling/concurrency-visualizer.md)

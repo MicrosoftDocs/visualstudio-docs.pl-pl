@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247377"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
@@ -126,7 +126,7 @@ Skompilowano najczęściej używane i najbardziej użyteczne skróty klawiaturow
 |Zaimplementuj komunikaty aparatu Unity|**⇧ ⌘ M**|
 |Skontrol|**⌥ ⌘ I**|
 
-## <a name="project"></a>Project
+## <a name="project"></a>Projekt
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|

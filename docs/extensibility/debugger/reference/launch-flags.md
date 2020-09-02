@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Dokumenty firmy Microsoft
+title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714716"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
@@ -51,23 +51,23 @@ public enum enum_LAUNCH_FLAGS {
 Uruchamia proces debugowania.
 
 `LAUNCH_NODEBUG`\
-Uruchamia proces bez debugowania go.
+Uruchamia proces bez debugowania.
 
 `LAUNCH_ENABLE_ENC`\
-PRZESTARZAŁE, NIE UŻYWAĆ.
+PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
 
 `LAUNCH_MERGE_ENV`\
-Uruchamia proces i łączy środowisko z hostem uruchamiania.
+Uruchamia proces i scala środowisko z hostem uruchamianym.
 
 ## <a name="remarks"></a>Uwagi
-Te wartości są przekazywane jako argument [launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.
+Te wartości są przesyłane jako argument do metody [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) .
 
-Flagi te mogą być łączone z bitowym `OR`.
+Flagi te mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
-Nagłówek: msdbg.h
+Nagłówek: Msdbg. h
 
-Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

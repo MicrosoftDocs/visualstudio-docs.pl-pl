@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0be3049718a97455ecce2b2df2f95c730a303110
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657361"
 ---
 # <a name="or-designer-messages"></a>Komunikaty narzędzia Object Relational Designer
@@ -22,13 +22,13 @@ ms.locfileid: "72657361"
 Ten temat zawiera listę komunikatów, które można napotkać podczas pracy z projektantem O/R.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Nie można utworzyć skojarzenia \<association nazwa >-Właściwość wyświetlana dwukrotnie](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Nie można utworzyć skojarzenia \<association name> — właściwość jest wymieniona dwukrotnie](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [Nie można utworzyć skojarzenia \<association nazwa > — typy właściwości nie są zgodne.](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [Nie można utworzyć skojarzenia \<association name> — typy właściwości nie są zgodne](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [Zmiany zwracanego typu metody DataContext nie można cofnąć](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [Nie można pobrać informacji o schemacie dla nazwy \<object obiektu bazy danych >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [Nie można pobrać informacji o schemacie dla obiektu bazy danych \<object name>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Co najmniej jeden wybrany obiekt bazy danych zwraca schemat, który nie jest zgodny ze schematem klasy docelowej](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -40,9 +40,9 @@ Ten temat zawiera listę komunikatów, które można napotkać podczas pracy z p
 
  [Obiekty dodawane do projektanta używają innego połączenia danych niż aktualnie używane przez projektanta](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [Nie można usunąć właściwości \<property nazwy >](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [Właściwości \<property name> nie można usunąć](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [Nie można usunąć właściwości \<property >, ponieważ uczestniczy ona w nazwie \<association skojarzenia >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [Nie można usunąć właściwości \<property name>, ponieważ należy do skojarzenia \<association name>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [Nie można usunąć wybranej klasy, ponieważ jest ona używana jako zwracany typ przez co najmniej jedną metodę DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 
@@ -60,4 +60,4 @@ Ten temat zawiera listę komunikatów, które można napotkać podczas pracy z p
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Narzędzia LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 
- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+ [LINQ do SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

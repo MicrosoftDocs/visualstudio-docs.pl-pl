@@ -15,10 +15,10 @@ ms.workload:
 - uwp
 monikerRange: vs-2017
 ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537244"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy UWP
@@ -60,7 +60,7 @@ Na przykład w pełni naładowana bateria w tablecie zawiera pewną ilość zmag
  Gdy jest wykonywana metoda, znacznik użytkownika jest dodawany do danych profilowania wraz z komunikatem.
 
 > [!NOTE]
-> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType>implementuje <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> interfejs (przewidywany <xref:System.IDisposable?displayProperty=nameWithType> w języku C# i VB). Aby uniknąć przecieków zasobów systemu operacyjnego, <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> należy wywołać ( <xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType> w języku C# i VB) po zakończeniu pracy z kanałem rejestrowania.
+> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType> implementuje <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> interfejs (przewidywany <xref:System.IDisposable?displayProperty=nameWithType> w języku C# i VB). Aby uniknąć przecieków zasobów systemu operacyjnego, <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> należy wywołać ( <xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType> w języku C# i VB) po zakończeniu pracy z kanałem rejestrowania.
 > - Każdy otwarty kanał rejestrowania musi mieć unikatową nazwę. Jeśli podjęto próbę utworzenia nowego kanału rejestrowania o tej samej nazwie co niedysponowany kanał, zostanie zgłoszony wyjątek.
 
 Przykładowy kod można znaleźć w Windows SDK przykład [LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)Sample.
@@ -124,18 +124,18 @@ if (performance && performance.mark) {
 
  ![Strona raportu profilera energii](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|Image (Obraz)|Opis|
+|Obraz|Opis|
 |-|-|
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Plik raportu ma nazwę Report*RRRRMMDD-hhmm*. diagsession. Jeśli zechcesz zapisać raport, możesz zmienić jego nazwę.|
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Na osi czasu są widoczne długość sesji profilowania, zdarzenia aktywacji cyklu życia aplikacji i znaczniki użytkownika.|
 |![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Raport można ograniczyć do części osi czasu, przeciągając niebieskie paski w celu wybrania regionu na osi czasu.|
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Wykres **zużycie mocy** jest wykresem wieloliniowym, w którym jest wyświetlana zmiana w danych wyjściowych, która jest spowodowana przez zasób urządzenia podczas sesji profilowania. Profiler Zużycie energii śledzi moc zużywaną przez procesor, działania sieciowe i wyświetlanie na ekranie.|
-|![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Wykres **zasoby (włączone/wyłączone)** zawiera szczegółowe informacje o kosztach energii sieci. Pasek **Sieć** przedstawia czas otwarcia połączenia sieciowego. **Transfer danych** pasku podrzędnym jest czas, w którym aplikacja odbierała lub wysyłała dane przez sieć.|
+|![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Wykres **zasoby (włączone/wyłączone)**  zawiera szczegółowe informacje o kosztach energii sieci. Pasek **Sieć** przedstawia czas otwarcia połączenia sieciowego. **Transfer danych** pasku podrzędnym jest czas, w którym aplikacja odbierała lub wysyłała dane przez sieć.|
 |![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|**Podsumowanie zużycia energii** przedstawia proporcjonalną ilość całkowitej energii, która została użyta w wybranej osi czasu przez procesor, aktywność sieci i wyświetlanie ekranu.|
 
  **Aby przeanalizować dane profilu zasilania**
 
- Znajdź obszar, w którym wzrosła moc zużywana przez zasoby. Powiąż ten obszar wzrostu z działaniem aplikacji. Następnie użyj pasków sterowania na osi czasu, aby powiększyć ten obszar. Jeśli planujesz użycie sieci, rozwiń węzeł **Sieć** na wykresie **zasoby (włączone/wyłączone)** , aby porównać czas otwarcia połączenia sieciowego na czas, w którym aplikacja odbierała lub przeniesie dane przez połączenie. Skrócenie czasu niepotrzebnego otwarcia połączenia sieciowego to bardzo efektywny sposób optymalizacji.
+ Znajdź obszar, w którym wzrosła moc zużywana przez zasoby. Powiąż ten obszar wzrostu z działaniem aplikacji. Następnie użyj pasków sterowania na osi czasu, aby powiększyć ten obszar. Jeśli planujesz użycie sieci, rozwiń węzeł **Sieć** na wykresie **zasoby (włączone/wyłączone)**  , aby porównać czas otwarcia połączenia sieciowego na czas, w którym aplikacja odbierała lub przeniesie dane przez połączenie. Skrócenie czasu niepotrzebnego otwarcia połączenia sieciowego to bardzo efektywny sposób optymalizacji.
 
 ## <a name="optimize-energy-use"></a>Optymalizacja zużycia energii
  Połączenia sieciowe generują koszty energii nie tylko podczas przesyłania danych, ale także podczas inicjowania, obsługi i wyłączania połączenia. Niektóre sieci obsługują połączenie przez pewien czas po zakończeniu wysyłania lub odbierania danych, aby umożliwić transmisję większej ilości danych za pośrednictwem jednego połączenia. Możesz użyć okienka **zasoby (włączone/wyłączone)** , aby poznać sposób interakcji aplikacji z połączeniem.

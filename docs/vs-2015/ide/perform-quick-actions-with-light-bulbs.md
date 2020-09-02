@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670349"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Szybkie wykonywanie akcji dzięki żarówkom
@@ -23,7 +23,7 @@ ms.locfileid: "72670349"
 
  ![Ikona małej żarówki](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")
 
- W C# i Visual Basic zobaczysz żarówkę, jeśli istnieje czerwona zygzakowata i program Visual Studio ma sugestię dotyczącą sposobu rozwiązania problemu. Jeśli na przykład wystąpi błąd wskazywany przez czerwony zygzak, zostanie wyświetlona Żarówka, gdy poprawki będą dostępne dla tego błędu. W C++programie, gdy dodasz nową funkcję do pliku nagłówkowego, zobaczysz żarówkę, która oferuje do tworzenia własnej implementacji tej funkcji. W przypadku dowolnego języka osoby trzecie mogą zapewnić niestandardową diagnostykę i sugestie, na przykład w ramach zestawu SDK, a żarówki programu Visual Studio na podstawie tych reguł.
+ W języku C# i Visual Basic zobaczysz żarówkę, jeśli istnieje czerwona zygzakowata i program Visual Studio ma sugestię dotyczącą sposobu rozwiązania problemu. Jeśli na przykład wystąpi błąd wskazywany przez czerwony zygzak, zostanie wyświetlona Żarówka, gdy poprawki będą dostępne dla tego błędu. W języku C++, gdy dodasz nową funkcję do pliku nagłówkowego, zobaczysz żarówkę, która oferuje możliwość utworzenia wbudowanej implementacji tej funkcji. W przypadku dowolnego języka osoby trzecie mogą zapewnić niestandardową diagnostykę i sugestie, na przykład w ramach zestawu SDK, a żarówki programu Visual Studio na podstawie tych reguł.
 
 ## <a name="to-see-a-light-bulb"></a>Aby wyświetlić żarówkę
 
@@ -39,6 +39,6 @@ ms.locfileid: "72670349"
  ![Rozwinięta żarówka](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
 
 ## <a name="to-do-a-refactoring"></a>Aby wykonać refaktoryzację
- Można nadal wykonywać refaktoryzacje przez kliknięcie prawym przyciskiem myszy, aby wyświetlić menu kontekstowe, ale można również nacisnąć klawisze CTRL +. Aby wyświetlić opcje refaktoryzacji. Na poniższej ilustracji jest oferowana Refaktoryzacja metody wyodrębniania po naciśnięciu klawiszy CTRL +. gdzieś w wierszu zawierającym `Math.Abs` wywołanie:
+ Można nadal wykonywać refaktoryzacje przez kliknięcie prawym przyciskiem myszy, aby wyświetlić menu kontekstowe, ale można również nacisnąć klawisze CTRL +. Aby wyświetlić opcje refaktoryzacji. Na poniższej ilustracji jest oferowana Refaktoryzacja metody wyodrębniania po naciśnięciu klawiszy CTRL +. gdzieś w wierszu, który zawiera `Math.Abs` wywołanie:
 
  ![Żarówka przedstawiająca opcje refaktoryzacji](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")

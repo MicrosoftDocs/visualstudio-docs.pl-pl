@@ -1,5 +1,5 @@
 ---
-title: Usuwanie punktu przerwania | Dokumenty firmy Microsoft
+title: Usuwanie punktu przerwania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738952"
 ---
 # <a name="deleting-a-breakpoint"></a>Usuwanie punktu przerwania
-Poniżej opisano proces podczas usuwania oczekującego punktu przerwania:
+Poniżej opisano proces usuwania oczekujących punktów przerwania:
 
 ## <a name="deletion-process"></a>Proces usuwania
- Menedżer debugowania sesji (SDM) wywołuje metodę [IDebugPendingBreakpoint2::Delete,](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) aby usunąć oczekujący punkt przerwania i wszystkie powiązane punkty przerwania powiązane z nim.
+ Menedżer debugowania sesji (SDM) wywołuje metodę [IDebugPendingBreakpoint2::D](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) Usuń, aby usunąć oczekujący punkt przerwania i wszystkie powiązane z nim punkty przerwania.
 
 > [!NOTE]
-> Pojedynczy powiązany punkt przerwania można również usunąć przez wywołanie [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+> Pojedynczy punkt przerwania powiązany może być również usunięty przez wywołanie [IDebugBoundBreakpoint2::D Usuń](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)
+- [Zdarzenia debugera wywołań](../../extensibility/debugger/calling-debugger-events.md)

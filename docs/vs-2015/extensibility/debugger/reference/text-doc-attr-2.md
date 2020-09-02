@@ -13,13 +13,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9ad200d75c5534ddbe9d4ad4d9835417df6515f1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429098"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64821871"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Opisuje atrybuty dokumentu.  
@@ -42,14 +42,14 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Uwagi  
   
 > [!NOTE]
-> Ta wartość nie jest faktycznie zdefiniowana w zestawie dla języka C#. Zamiast tego należy skopiować definicji do pliku źródłowego.  
+> Ta wartość nie jest faktycznie zdefiniowana w zestawie dla języka C#. Zamiast tego należy skopiować definicję do pliku źródłowego.  
   
- Przekazywany jako argument do [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) metody.  
+ Przekazanie jako argument do metody [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

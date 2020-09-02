@@ -1,5 +1,5 @@
 ---
-title: Widok wskaźników instrukcji (IP) - dane próbkowania | Dokumentacja firmy Microsoft
+title: Widok wskaźników instrukcji (IP) — dane próbkowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,37 +12,37 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 502ab8dbafd12f3b00949b5b52609c4c8c8ddce9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433929"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64819761"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Widok wskaźników instrukcji (IP) — dane próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Widok adresy IP próbkuje dane wydajności wyświetla dane dla instrukcje montażu, które wykonywały bezpośrednio po przykłady zostały zebrane podczas uruchomienia profilowania.  
+Widok adresów IP danych próbkowania wyświetla listę danych wydajności dla instrukcji zestawu, które były wykonywane bezpośrednio, gdy próbki zostały zebrane w ramach uruchomienia profilowania.  
   
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje ze sklepu Windows wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
-|**Nazwa procesu**|Nazwa procesu.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) przebiegu profilowania.|  
+|**Nazwa procesu**|Nazwa procesu|  
 |**Nazwa modułu**|Nazwa modułu, który zawiera instrukcję.|  
 |**Ścieżka modułu**|Ścieżka modułu, który zawiera instrukcję.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera instrukcję.|  
 |**Nazwa funkcji**|Nazwa funkcji, która zawiera instrukcję.|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Adres funkcji**|Początkowy adres pamięci funkcja w załadowano danych binarnych.|  
-|**Początkowy wiersz w źródle**|Numer wiersza początkowego w pliku źródłowym, w którym zostały zebrane w tym przykładzie.|  
-|**Końcowy wiersz w źródle**|Końcowy numer wiersza w pliku źródłowym, w którym zostały zebrane w tym przykładzie.|  
-|**Początkowy znak w źródle**|Przesunięcie początkowy znak w wierszu pliku źródłowego, w którym zostały zebrane w tym przykładzie.|  
-|**Końcowy znak w źródle**|Przesunięcie końcowy znak w wierszu pliku źródłowego, w którym zostały zebrane w tym przykładzie.|  
-|**Adres instrukcji**|Adres instrukcji w załadowano danych binarnych.|  
-|**Próbki wyłączne**|Łączna liczba próbek, które zostały zebrane podczas wykonywania instrukcji.|  
-|**% Wyłącznych próbek**|Procent wszystkich przykładów podczas uruchomienia profilowania, które zostały zebrane podczas wykonywania instrukcji.|  
+|**Adres funkcji**|Adres pamięci początkowej funkcji w załadowanym pliku binarnym.|  
+|**Początek linii źródłowej**|Początkowy numer wiersza w pliku źródłowym, w którym zebrano ten przykład.|  
+|**Koniec linii źródłowej**|Końcowy numer wiersza w pliku źródłowym, w którym zebrano ten przykład.|  
+|**Początek znaku źródłowego**|Przesunięcie znaku początkowego w wierszu pliku źródłowego, w którym ten przykład został zebrany.|  
+|**Końcowy znak źródłowy**|Przesunięcie znaku końcowego w wierszu pliku źródłowego, w którym ten przykład został zebrany.|  
+|**Adres instrukcji**|Adres instrukcji w załadowanym pliku binarnym.|  
+|**Próbki wyłączne**|Całkowita liczba próbek zebranych podczas wykonywania instrukcji.|  
+|**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, który został zebrany podczas wykonywania instrukcji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Widok wskaźników instrukcji (IP) — Próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+ [Widok wskaźników instrukcji (IP) — próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

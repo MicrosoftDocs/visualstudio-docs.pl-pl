@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Dokumenty firmy Microsoft
+title: MACHINE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714544"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
-Opisuje określony komputer.
+Opisuje konkretną maszynę.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,21 +45,21 @@ public struct MACHINE_INFO { 
 
 ## <a name="members"></a>Elementy członkowskie
  `Fields`\
- Kombinacja flag z wyliczenia [MACHINE_INFO_FIELDS,](../../../extensibility/debugger/reference/machine-info-fields.md) które określają, które pola struktury są inicjowane.
+ Kombinacja flag z wyliczenia [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) , która określa, które pola struktury są inicjowane.
 
  `bstrName`\
- Nazwa urządzenia. Odpowiednik wywołania [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
+ Nazwa maszyny. Równoważne z wywołaniem metody [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
 
  `Flags`\
- Kombinacja flag z wyliczenia [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) opisujące atrybuty maszyny.
+ Kombinacja flag z wyliczenia [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) opisującego atrybuty maszyny.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest zwracana przez wywołanie [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metody.
+ Ta struktura jest zwracana przez wywołanie metody [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

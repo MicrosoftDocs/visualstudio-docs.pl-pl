@@ -1,5 +1,5 @@
 ---
-title: Kompilacje przyrostowe | Dokumentacja firmy Microsoft
+title: Kompilacje przyrostowe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192882"
 ---
 # <a name="incremental-builds"></a>Kompilacje przyrostowe
@@ -23,9 +23,9 @@ ms.locfileid: "68192882"
 
 Kompilacje przyrostowe to kompilacje zoptymalizowane w taki sposób, że elementy docelowe, których pliki wyjściowe mają tak samo aktualną zawartość jak pliki wejściowe, nie są wykonywane. Element docelowy może mieć zarówno atrybut `Inputs`, który wskazuje elementy oczekiwane przez element docelowy na wejściu, oraz atrybut `Outputs`, który wskazuje elementy generowane przez element docelowy na wyjściu. Program MSBuild próbuje znaleźć mapowania 1-do-1 między wartościami tych atrybutów. Jeśli istnieje mapowanie 1-do-1, MSBuild porównuje znacznik czasu każdego elementu wejściowego ze znacznikiem czasu odpowiadającego mu elementu wyjściowego. Pliki wyjściowe pozbawione mapowań 1-do-1 są porównywane ze wszystkimi plikami wejściowymi. Element uważa się za aktualny, jeśli plik wyjściowy jest nie starszy niż plik lub pliki wejściowe.  
   
- Jeśli wszystkie elementy wyjściowe są aktualne, program MSBuild pomija element docelowy. To *kompilacja przyrostowa* obiektu docelowego może znacznie przyspieszyć proces kompilacji. Jeśli tylko niektóre pliki są aktualne, program MSBuild wykonuje element docelowy, ale pomija elementy aktualne. W efekcie wszystkie elementy stają się aktualne. Jest to nazywane *częściową kompilacją przyrostową*.  
+ Jeśli wszystkie elementy wyjściowe są aktualne, program MSBuild pomija element docelowy. Ta *przyrostowa kompilacja* obiektu docelowego może znacząco poprawić szybkość kompilacji. Jeśli tylko niektóre pliki są aktualne, program MSBuild wykonuje element docelowy, ale pomija elementy aktualne. W efekcie wszystkie elementy stają się aktualne. Jest to nazywane *częściową kompilacją przyrostową*.  
   
- Mapowania 1-do-1 są z reguły tworzone wskutek przekształceń elementów. Aby uzyskać więcej informacji, zobacz [przekształca](../msbuild/msbuild-transforms.md).  
+ Mapowania 1-do-1 są z reguły tworzone wskutek przekształceń elementów. Aby uzyskać więcej informacji, zobacz [transformacje](../msbuild/msbuild-transforms.md).  
   
  Rozważmy następujący element docelowy.  
   
@@ -40,7 +40,7 @@ Kompilacje przyrostowe to kompilacje zoptymalizowane w taki sposób, że element
  Zbiór plików reprezentowanych przez typ elementu `Compile` jest kopiowany do katalogu kopii zapasowych. Pliki kopii zapasowej mają rozszerzenie .bak. Jeśli pliki reprezentowane przez typ elementu `Compile` lub odpowiadające im pliki kopii zapasowej nie zostaną usunięte lub zmodyfikowane po uruchomieniu elementu docelowego będącego kopią zapasową, wtedy ten element jest pomijany w kolejnych kompilacjach.  
   
 ## <a name="output-inference"></a>Wnioskowanie danych wyjściowych  
- Program MSBuild porównuje atrybuty `Inputs` i `Outputs` elementu docelowego w celu ustalenia, czy element docelowy ma zostać wykonany. Najlepiej, aby zestaw plików istniejących po ukończeniu kompilacji przyrostowej pozostawał bez zmian niezależnie od tego, czy skojarzone z nimi elementy docelowe zostały wykonane. Ponieważ właściwości i elementy tworzone lub zmieniane przez zadania mogą wpływać na kompilację, program MSBuild musi wywnioskować ich wartość, nawet gdy dotyczący ich element docelowy jest pomijany. Jest to nazywane *danych wyjściowych wnioskowania*.  
+ Program MSBuild porównuje atrybuty `Inputs` i `Outputs` elementu docelowego w celu ustalenia, czy element docelowy ma zostać wykonany. Najlepiej, aby zestaw plików istniejących po ukończeniu kompilacji przyrostowej pozostawał bez zmian niezależnie od tego, czy skojarzone z nimi elementy docelowe zostały wykonane. Ponieważ właściwości i elementy tworzone lub zmieniane przez zadania mogą wpływać na kompilację, program MSBuild musi wywnioskować ich wartość, nawet gdy dotyczący ich element docelowy jest pomijany. Jest to nazywane *wnioskami wyjściowymi*.  
   
  Istnieją trzy przypadki:  
   
@@ -68,7 +68,7 @@ Kompilacje przyrostowe to kompilacje zoptymalizowane w taki sposób, że element
   
  Powstaje typ elementu Simple, który ma dwa elementy — „a.cs” i „b.cs”, niezależnie od tego, czy element docelowy jest wykonywany czy pomijany.  
   
- Począwszy od programu MSBuild 3.5 wnioskowanie danych wyjściowych jest wykonywane automatycznie wobec grup elementów i właściwości w elemencie docelowym. Zadania `CreateItem` nie są wymagane w elemencie docelowym i należy ich unikać. Ponadto zadań `CreateProperty` należy używać w elemencie docelowym tylko w celu określenia, czy został on wykonany.  
+ Począwszy od programu MSBuild 3.5 wnioskowanie danych wyjściowych jest wykonywane automatycznie wobec grup elementów i właściwości w elemencie docelowym. `CreateItem` zadania nie są wymagane w elemencie docelowym i należy je unikać. Ponadto zadań `CreateProperty` należy używać w elemencie docelowym tylko w celu określenia, czy został on wykonany.  
   
 ## <a name="determining-whether-a-target-has-been-run"></a>Ustalanie, czy element docelowy został kiedykolwiek wykonany  
  Z powodu wnioskowania danych wyjściowych należy do elementu docelowego dodać zadanie `CreateProperty`, które będzie badało właściwości i elementy w celu określenia, czy element docelowy został wykonany. Należy do elementu docelowego dodać zadanie `CreateProperty`, a do niego element `Output`, którego parametr `TaskParameter` ma wartość „ValueSetByTask”.  
@@ -82,4 +82,4 @@ Kompilacje przyrostowe to kompilacje zoptymalizowane w taki sposób, że element
  Spowoduje to utworzenie właściwości CompileRan i nadanie jej wartości `true`, ale tylko pod warunkiem, że obiekt docelowy jest wykonywany. Jeśli element docelowy jest pomijany, właściwość CompileRan nie powstaje.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Docelowe elementy](../msbuild/msbuild-targets.md)
+ [Targets (Obiekty docelowe)](../msbuild/msbuild-targets.md)

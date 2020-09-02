@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017104"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profilowanie aplikacji SharePoint
@@ -271,7 +272,7 @@ ms.locfileid: "86017104"
 
      Funkcja powinna aktywować znacznie szybciej, gdy wywołanie do pętli bezczynności zostało wyeliminowane. Przykładowy raport profilowania powinien odzwierciedlać ten sposób.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przegląd sesji wydajności](../profiling/performance-session-overview.md)
 - [Początkujący Przewodnik dotyczący profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md)
 - [Znajdowanie wąskich gardeł aplikacji za pomocą programu Visual Studio profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

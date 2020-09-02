@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329179"
 ---
 # <a name="xaml-code-editor"></a>Edytor kodu XAML
@@ -173,7 +173,7 @@ Możesz również zmienić sposób, w jaki wygląda pasek przewijania i jakie do
 
 Inne doceniają użycie *trybu mapy*, który wyświetla linie kodu w miniaturach na pasku przewijania. Deweloperzy, którzy posiadają wiele kodów w pliku, mogą stwierdzić, że tryb mapy jest bardziej wydajny niż domyślny pasek przewijania.
 
-Aby uzyskać więcej informacji na temat zmiany ustawień domyślnych paska przewijania, zobacz stronę [Dostosowywanie paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md) .
+Aby uzyskać więcej informacji na temat zmiany ustawień domyślnych paska przewijania, zobacz stronę  [Dostosowywanie paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md) .
 
 ## <a name="xaml-specific-features"></a>Funkcje specyficzne dla języka XAML
 

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,26 +20,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386596"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64821336"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce
+# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Wskazówki: tworzenie niestandardowego Instalatora dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dyskretnie zainstalować żadnych aplikacji ClickOnce, na podstawie pliku .exe i zaktualizowane przez instalatora niestandardowego. Niestandardowego Instalatora można zaimplementować niestandardowy komfortu podczas instalacji, w tym niestandardowych okien dialogowych dla operacji zabezpieczeń i konserwacji. Aby wykonać operacje instalacji, używa niestandardowego Instalatora <xref:System.Deployment.Application.InPlaceHostingManager> klasy. W tym instruktażu pokazano, jak utworzyć niestandardowego instalatora dyskretnej instalacji aplikacji ClickOnce.  
+Wszystkie aplikacje ClickOnce oparte na pliku. exe mogą być instalowane w trybie dyskretnym i aktualizowane przez instalatora niestandardowego. Instalator niestandardowy może zaimplementować niestandardowe środowisko użytkownika podczas instalacji, w tym niestandardowe okna dialogowe dla operacji związanych z zabezpieczeniami i konserwacją. W celu wykonania operacji instalacji Instalator niestandardowy używa <xref:System.Deployment.Application.InPlaceHostingManager> klasy. W tym instruktażu przedstawiono sposób tworzenia niestandardowego Instalatora, który dyskretnie instaluje aplikację ClickOnce.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
-### <a name="to-create-a-custom-clickonce-application-installer"></a>Aby utworzyć niestandardowego Instalatora aplikacji ClickOnce  
+### <a name="to-create-a-custom-clickonce-application-installer"></a>Aby utworzyć niestandardowy Instalator aplikacji ClickOnce  
   
-1. W aplikacji ClickOnce należy dodać odwołania do System.Deployment i pozycję System.Windows.Forms.  
+1. W aplikacji ClickOnce Dodaj odwołania do System. Deployment i system. Windows. Forms.  
   
-2. Dodaj nową klasę do aplikacji i określić dowolną nazwę. W tym przewodniku używa nazwy `MyInstaller`.  
+2. Dodaj nową klasę do aplikacji i określ dowolną nazwę. W tym instruktażu zostanie użyta nazwa `MyInstaller` .  
   
-3. Dodaj następujący kod `Imports` lub `using` instrukcji na górze nowej klasie.  
+3. Dodaj poniższe `Imports` instrukcje lub `using` na początku nowej klasy.  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -53,15 +53,15 @@ Dyskretnie zainstalować żadnych aplikacji ClickOnce, na podstawie pliku .exe i
   
 4. Dodaj następujące metody do klasy.  
   
-     Wywoływanie tych metod <xref:System.Deployment.Application.InPlaceHostingManager> metody pobierania pliku manifestu wdrożenia assert odpowiednie uprawnienia, poproś użytkownika o zgodę, aby zainstalować, a następnie należy pobrać i zainstalować ją w pamięci podręcznej funkcji ClickOnce. Określić niestandardowego Instalatora aplikacji ClickOnce jest wstępnie zaufany lub może odroczyć zaufania decyzja o <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> wywołania metody. Ten kod wstępnie ufa aplikacji.  
+     Metody te wywołują <xref:System.Deployment.Application.InPlaceHostingManager> metody pobierania manifestu wdrożenia, potwierdzenia odpowiednich uprawnień, poproszenia użytkownika o zgodę na instalację, a następnie pobranie i zainstalowanie aplikacji w pamięci podręcznej ClickOnce. Instalator niestandardowy może określić, że aplikacja ClickOnce jest wstępnie zaufana, lub może odroczyć decyzję zaufania do <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> wywołania metody. Ten kod wstępnie ufa aplikacji.  
   
     > [!NOTE]
-    > Uprawnienia przypisane przez wstępnie ufające nie może przekraczać uprawnień kodu niestandardowego Instalatora.  
+    > Uprawnienia przypisane przez przed zaufaniem nie mogą przekroczyć uprawnień do niestandardowego kodu Instalatora.  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
   
-5. Próby instalacji w kodzie, wywołania `InstallApplication` metody. Na przykład, jeśli nazwę klasy `MyInstaller`, może wywołać `InstallApplication` w następujący sposób.  
+5. Aby podjąć próbę instalacji z kodu, wywołaj `InstallApplication` metodę. Na przykład, jeśli nazwa klasy istnieje `MyInstaller` , można wywołać `InstallApplication` w następujący sposób.  
   
     ```vb  
     Dim installer As New MyInstaller()  
@@ -76,8 +76,8 @@ Dyskretnie zainstalować żadnych aplikacji ClickOnce, na podstawie pliku .exe i
     ```  
   
 ## <a name="next-steps"></a>Następne kroki  
- Aplikacja ClickOnce, można również dodać logikę aktualizacji niestandardowych, łącznie z niestandardowego interfejsu użytkownika wyświetlany podczas procesu aktualizacji. Aby uzyskać więcej informacji, zobacz <xref:System.Deployment.Application.UpdateCheckInfo>. Aplikacja ClickOnce można również pominąć standardowy wpis menu Start, skrótów i wpisu Dodaj lub usuń programy, za pomocą `<customUX>` elementu. Aby uzyskać więcej informacji, zobacz [ \<Punkt_wejścia > Element](../deployment/entrypoint-element-clickonce-application.md) i <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
+ Aplikacja ClickOnce może również dodać niestandardową logikę aktualizacji, w tym niestandardowy interfejs użytkownika do wyświetlania w trakcie procesu aktualizacji. Aby uzyskać więcej informacji, zobacz <xref:System.Deployment.Application.UpdateCheckInfo>. Aplikacja ClickOnce może również pominąć standardowy wpis menu Start, skrót i Dodaj lub usuń programy za pomocą `<customUX>` elementu. Aby uzyskać więcej informacji, zobacz [ \<entryPoint> element](../deployment/entrypoint-element-clickonce-application.md) i <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<entryPoint>, element](../deployment/entrypoint-element-clickonce-application.md)
+ [\<entryPoint> Postaci](../deployment/entrypoint-element-clickonce-application.md)

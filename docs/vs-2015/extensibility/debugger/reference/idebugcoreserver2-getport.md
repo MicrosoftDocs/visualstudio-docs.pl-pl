@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort | Dokumentacja firmy Microsoft
+title: 'IDebugCoreServer2:: GetPort | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e00f055d8e6a0fe1bea82061431410eb1e3b236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192919"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera określonego portu.  
+Pobiera określony port.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,13 +42,13 @@ int GetPort( 
   
 #### <a name="parameters"></a>Parametry  
  `guidPort`  
- [in] Identyfikator GUID portu do pobrania.  
+ podczas Identyfikator GUID portu do pobrania.  
   
  `ppPort`  
- [out] Zwraca [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) obiekt reprezentujący odpowiedni port.  
+ określoną Zwraca obiekt [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) reprezentujący żądany port.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_PORTSUPPLIER_NO_PORT` przypadku ma portu z danym identyfikatorem.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_PORTSUPPLIER_NO_PORT` czy nie ma portu o podanym identyfikatorze.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Dokumentacja firmy Microsoft
+title: 'IDebugProgramNode2:: GetHostMachineName_V7 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 63e4f1a3621dde3fba5e8a2dabf45eaceb5d8ea4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418056"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64807896"
 ---
-# <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
+# <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-PRZESTARZAŁE. NIE NALEŻY UŻYWAĆ.  
+Przestarzałe. NIE NALEŻY UŻYWAĆ.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,15 +41,15 @@ int GetHostMachineName_V7 ( 
   
 #### <a name="parameters"></a>Parametry  
  `pbstrHostMachineName`  
- [out] Zwraca nazwę komputera, w którym jest uruchomiony program.  
+ określoną Zwraca nazwę komputera, na którym jest uruchomiony program.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja zawsze powinna zwrócić `E_NOTIMPL`.  
+ Implementacja powinna zawsze zwrócić `E_NOTIMPL` .  
   
 ## <a name="remarks"></a>Uwagi  
   
 > [!WARNING]
-> Począwszy od programu [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`.  
+> Począwszy od programu [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] , ta metoda nie jest już używana i zawsze powinna zwracać `E_NOTIMPL` .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
