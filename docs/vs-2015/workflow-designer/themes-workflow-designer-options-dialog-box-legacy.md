@@ -15,14 +15,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8b8dfd5c2aaf6e7ced24bc952d7ccadc04cc72f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654674"
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Motywy, Projektant przepływu pracy, Opcje, okno dialogowe (starsza wersja)
-W tym temacie opisano sposób korzystania z okna dialogowego **motywy, Projektant przepływu pracy, opcje** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób używania **motywów, Projektant przepływu pracy, opcji** okna dialogowego w starszej wersji programu [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  Motyw definiuje kolory tła i pierwszego planu, style, ikony i inne elementy wizualne przepływu pracy. Możesz zapisać motywy do ponownego użycia przez inne przepływy pracy. Możesz wybrać domyślne i zapisane niestandardowe motywy za pomocą okna dialogowego **motywy, Projektant przepływu pracy, opcje** . Aby otworzyć to okno dialogowe, kliknij przycisk **Wybierz kompozycję niestandardową** w menu **przepływ pracy** . Można też kliknąć prawym przyciskiem myszy powierzchnię projektu przepływu pracy i kliknąć pozycję **Wybierz kompozycję niestandardową**.
 
@@ -30,9 +30,9 @@ W tym temacie opisano sposób korzystania z okna dialogowego **motywy, Projektan
 
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|
-|**Nowy**|Kliknij, aby otworzyć okno [dialogowe Konfiguracja motywu (starsza wersja)](../workflow-designer/theme-configuration-dialog-box-legacy.md) , aby utworzyć nowy motyw.|
+|**Nowe**|Kliknij, aby otworzyć okno [dialogowe Konfiguracja motywu (starsza wersja)](../workflow-designer/theme-configuration-dialog-box-legacy.md) , aby utworzyć nowy motyw.|
 |**Modyfikuj...**|Kliknij, aby otworzyć okno [dialogowe Konfiguracja motywu (starsza wersja)](../workflow-designer/theme-configuration-dialog-box-legacy.md) w celu zmodyfikowania wybranego motywu.|
-|**Przycisku**|Kliknij, aby wyszukać plik motywu przepływu pracy, który używa rozszerzenia nazwy pliku. WTM.|
+|**Przeglądaj**|Kliknij, aby wyszukać plik motywu przepływu pracy, który używa rozszerzenia nazwy pliku. WTM.|
 |**Wybierz motyw**|Nazwa motywu nagłówek kolumny lista motywów. Wybierz motyw z listy, kliknij przycisk **Modyfikuj** , aby edytować, lub kliknij przycisk **OK** , aby użyć wybranego motywu dla przepływu pracy.|
 |**Opis**|Nagłówek kolumny opis motywu lista motywów.|
 |**Lokalizacja**|Nagłówek kolumny lokalizacji motywu lista motywów.|

@@ -1,5 +1,5 @@
 ---
-title: Szacowanie wyrażeń (zestaw SDK debugowania programu Visual Studio) | Dokumentacja firmy Microsoft
+title: Obliczanie wyrażeń (zestaw SDK debugowania Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,33 +12,33 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0f2a84f01168dd01921d933a80fe052c1a6c6447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562214"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Obliczanie wyrażeń (zestaw SDK debugowania w programie Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W trybie break IDE musi umożliwiać można obliczyć wartości wyrażenia proste wielu zmiennych programu. Aby to osiągnąć, aparat debugowania (DE) musi umożliwiać do analizy i ocenić wyrażenie, które jest wprowadzany do jednego z okien środowiska IDE.  
+W trybie przerwania IDE musi być w stanie oszacować proste wyrażenia obejmujące kilka zmiennych programu. Aby to osiągnąć, aparat debugowania (DE) musi być w stanie analizować i oszacować wyrażenie, które jest wprowadzane do jednego z okien IDE.  
   
- Wyrażenia są tworzone przy użyciu [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) metody i są reprezentowane przez wynikowy [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfejsu.  
+ Wyrażenia są tworzone przy użyciu metody [IDebugExpressionContext2::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i są reprezentowane przez otrzymany Interfejs [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) .  
   
- **IDebugExpression2** interfejs jest implementowany przez DE i wywołuje jego **EvalAsync** metodę, aby zwrócić [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfejsu środowiska IDE, aby wyświetlić wyniki oceny wyrażenia w środowisku IDE. [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) zwraca strukturę, który może służyć do umieszczenia wartości wyrażenia w oknie czujki lub okno zmiennych lokalnych.  
+ Interfejs **IDebugExpression2** jest implementowany przez de i wywołuje metodę **EvalAsync** w celu ZWRÓCENIA interfejsu [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) do IDE w celu wyświetlenia wyników oceny wyrażenia w IDE. [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) zwraca strukturę, która może służyć do umieszczania wartości wyrażenia w okno wyrażeń kontrolnych lub w oknie zmiennych lokalnych.  
   
- Debugowanie pakietu lub sesja debugowania manager (SDM) wywołuje [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) lub [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) można pobrać [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfejs, który reprezentuje wynik oceny. `IDebugProperty2` zawiera metody, które zwracają nazwa, typ i wartość wyrażenia. Te informacje są wyświetlane w różnych oknach debugera.  
+ Pakiet Debug lub Menedżer debugowania sesji (SDM) wywołuje [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) lub [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) , aby uzyskać Interfejs [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , który reprezentuje wynik oceny. `IDebugProperty2` ma metody, które zwracają nazwę, typ i wartość wyrażenia. Te informacje są wyświetlane w różnych oknach debugera.  
   
-## <a name="using-expression-evaluation"></a>Za pomocą oceny wyrażenia  
- Aby użyć obliczenia wyrażenia, należy zaimplementować [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) metody i wszystkie metody [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfejsu, jak pokazano w poniższej tabeli.  
+## <a name="using-expression-evaluation"></a>Używanie oceny wyrażeń  
+ Aby użyć oceny wyrażeń, należy zaimplementować metodę [IDebugExpressionContext2::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i wszystkie metody interfejsu [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , jak pokazano w poniższej tabeli.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Oblicza wyrażenie asynchronicznie.|  
-|[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Kończy się obliczenia wyrażenia asynchroniczne.|  
+|[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Zwraca wartość wyrażenia asynchronicznie.|  
+|[Anuluj](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Zakończenie obliczania wyrażeń asynchronicznych.|  
 |[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Oblicza wyrażenie synchronicznie.|  
   
- Ocena synchroniczne i asynchroniczne, wymagają wprowadzenia [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metody. Obliczanie wyrażenia asynchroniczne wymaga implementacji [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).  
+ Obliczanie synchroniczne i asynchroniczne wymagają implementacji metody [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) . Obliczanie wyrażeń asynchronicznych wymaga implementacji elementu [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrola wykonywania i ocena stanu](../../extensibility/debugger/execution-control-and-state-evaluation.md)

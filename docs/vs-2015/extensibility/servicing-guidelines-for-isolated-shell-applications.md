@@ -1,5 +1,5 @@
 ---
-title: Wytyczne dotyczące obsługi izolowanych powłoki | Dokumentacja firmy Microsoft
+title: Wskazówki dotyczące obsługi dla izolowanych aplikacji powłoki | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,33 +12,33 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159271"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Wytyczne dotyczące obsługi aplikacji w programie Shell (izolowanym)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas dystrybucji aplikacji powłoki programu Visual Studio, izolowany musi umożliwiać udostępnienia aktualizacji oprogramowania dla aplikacji po jej zainstalowaniu. Aby to zrobić, należy zainstalować aplikację przy użyciu pliku Instalatora Microsoft (MSI). Tego rodzaju instalacji umożliwia aktualizacji oprogramowania firmy Microsoft pozwala na redystrybucję, sieci Web, Pobierz i używane przez klientów bez konieczności interwencji niestandardowych.  
+Podczas dystrybucji aplikacji powłoki izolowanej programu Visual Studio należy mieć możliwość udostępnienia aktualizacji oprogramowania dla aplikacji po jej zainstalowaniu. Aby to zrobić, należy zainstalować aplikację przy użyciu pliku Instalatora firmy Microsoft (MSI). Ten rodzaj instalacji umożliwia rozpowszechnianie aktualizacji oprogramowania przez firmę Microsoft przez pobranie sieci Web i używanie ich przez klientów bez konieczności interwencji niestandardowej.  
   
-## <a name="servicing-requirements"></a>Wymagania dotyczące serwisowania.  
- Możesz zapewnić instalację programu shell w trybie izolowanym Zezwalaj na aktualizacje, upewniając się, że program instalacyjny spełnia następujące kryteria trzy.  
+## <a name="servicing-requirements"></a>Wymagania dotyczące obsługi  
+ Można upewnić się, że instalacja powłoki izolowanej może zezwalać na aktualizacje, upewniając się, że program instalacyjny spełnia następujące trzy kryteria.  
   
-### <a name="redistribute-by-using-an-msi"></a>Rozpowszechniać za pomocą Instalatora MSI  
- Aby ponownie dystrybuować aplikację, należy użyć Instalatora MSI, ponieważ Instalator MSI zachowuje tożsamości produktu i upewnia się, że aplikacja ma lokalizacji fizycznej na komputerze klienckim. Moduły scalania (pliki .msm) są oferowane takie gwarancje i nie powinna być używana.  
+### <a name="redistribute-by-using-an-msi"></a>Ponowna dystrybucja przy użyciu pliku MSI  
+ Aby przeprowadzić dystrybucję aplikacji, należy użyć pliku MSI, ponieważ plik MSI zachowuje tożsamość produktu i sprawdza, czy aplikacja ma fizyczną lokalizację na komputerze klienckim. Moduły scalania (pliki. msm) nie zapewniają takich gwarancji i nie powinny być używane.  
   
-### <a name="accounting-for-custom-actions"></a>Dla akcji niestandardowych  
- Akcje niestandardowe są dyrektywy niestandardowej instalacji w programie Instalatora. Akcje niestandardowe Zmień parametry, takie jak lokalizacje plików, ustawień rejestru, ustawień użytkownika lub inne elementy wymagane do instalacji. Akcje niestandardowe mogą wykonywać operacje na danych w czasie instalacji.  
+### <a name="accounting-for-custom-actions"></a>Ewidencjonowanie aktywności dla akcji niestandardowych  
+ Niestandardowe akcje są dyrektywami instalacji niestandardowej w programie Instalatora. Akcje niestandardowe zmieniają parametry, takie jak lokalizacje plików, ustawienia rejestru, ustawienia użytkownika lub inne elementy instalacji. Akcje niestandardowe mogą manipulować danymi w czasie instalacji.  
   
- Gdy używasz akcje niestandardowe w programie instalacyjnym, upewnij się, że akcja niestandardowa co godzinę instalacji muszą mieć odpowiedni akcję niestandardową do Cofnij akcję, jeśli użytkownik odinstaluje aplikację. Twoja instalacja programu kończy się niepowodzeniem zapewnienie odpowiadającego odinstalować akcję niestandardową, usunięcie aplikacji spowoduje zamknięcie ona częściowo zainstalowana.  
+ W przypadku używania akcji niestandardowych w programie instalacyjnym należy upewnić się, że każda akcja niestandardowa czasu instalacji musi mieć odpowiadającą jej akcję niestandardową, aby cofnąć akcję, gdy użytkownik odinstaluje aplikację. Jeśli program instalacyjny nie poda odpowiedniej akcji odinstalowania, usunięcie aplikacji pozostanie częściowo zainstalowane.  
   
-- Akcja niestandardowa, która zależy od określonej wersji pliku lub skrót wartości zakończy się niepowodzeniem, gdy aktualizacje oprogramowania, zmiany te wersje lub wartości mieszania. W tym przypadku akcji niestandardowej, należy ręcznie zaktualizować te wartości. Dodatkowe problem występuje, jeśli wersje pliku lub skrót wartości są wspólne dla wersji produktu. Należy unikać tej zależności, jeśli to możliwe.  
+- Akcja niestandardowa, która opiera się na określonej wersji pliku lub wartości skrótu, zakończy się niepowodzeniem, gdy aktualizacje oprogramowania zmienią te wersje lub wartości skrótu. W takim przypadku akcja niestandardowa musi ręcznie zaktualizować te wartości. Dodatkowy problem występuje, jeśli wersje pliku lub wartości skrótów są współużytkowane przez wersje produktu. Należy unikać tej zależności wszędzie tam, gdzie to możliwe.  
   
 ### <a name="accounting-for-shared-files"></a>Ewidencjonowanie aktywności dla udostępnionych plików  
- Udostępnione pliki takich samych nazwach i są zainstalowane w tej samej lokalizacji, wielu produktów. Te produkty mogą się różnić w wersji i/lub magazynie utrzymywanie jednostki SKU, a produkty mogą współistnieć na danym komputerze. Jednak pliki udostępnione utworzyć obsługi problemów z kilku powodów:  
+ Pliki udostępnione mają takie same nazwy i są zainstalowane w tej samej lokalizacji przez wiele produktów. Te produkty mogą się różnić w zależności od wersji, jednostki składowania (SKU) lub obu, a produkty mogą współistnieć na danym komputerze. Jednak udostępnione pliki tworzą problemy z obsługą z kilku powodów:  
   
-- Aktualizowanie plików udostępnionych może spowodować problemy ze zgodnością aplikacji, ponieważ aktualizacja do jednej aplikacji mogą ulec zmianie wersji pliku używany przez aplikację drugi, który nie został zaktualizowany. Instalatory dla produktów, które pliki można udostępniać zliczanie odwołań do udostępnionych plików. W związku z tym odinstalowywanie produktu nie wpływa na pliki udostępnione poza zmniejszanie liczby zainstalowanych wystąpień.  
+- Aktualizacja udostępnionych plików może powodować problemy ze zgodnością aplikacji, ponieważ aktualizacja jednej aplikacji może zmienić wersję pliku używanego przez drugą aplikację, która nie została zaktualizowana. Instalatory dla produktów, które współużytkują pliki, mają odwołania do udostępnionych plików. W związku z tym odinstalowanie produktu nie ma wpływu na pliki udostępnione poza zmniejszeniem liczby zainstalowanych wystąpień.  
   
-- Instalator Quick Fix Engineering (QFE) zostanie przywrócony do wersji produktów, które Instalator QFE obsługiwanych wersji plików. Ten proces zostanie przerwany potencjalnie aplikacji, które zostało dostarczone zaktualizowanego pliku udostępnionego.
+- Instalator programu Quick Fix Engineering (QFE) przywraca wersje plików do wersji produktów obsługiwanych przez Instalatora QFE. Ten proces może spowodować przerwanie aplikacji, która dostarczyła zaktualizowany plik udostępniony.

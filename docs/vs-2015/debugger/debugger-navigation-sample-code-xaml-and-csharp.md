@@ -1,5 +1,5 @@
 ---
-title: Przykładowy kod nawigacji (Xaml i C#) debugera | Dokumentacja firmy Microsoft
+title: Przykładowy kod nawigacji debugera (XAML i C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88193fc4ec7061771ebba53139cdc0ecce67dbfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552084"
 ---
-# <a name="debugger-navigation-sample-code-xaml-and-c"></a>Debuger przykładowy kod nawigacji (Xaml i C#)
+# <a name="debugger-navigation-sample-code-xaml-and-c"></a>Przykładowy kod nawigacji debugera (Xaml i C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kod w tym temacie jest przykładowy plik dla [nawigowanie po sesji debugowania (Xaml i C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) tematu.  
+Kod w tym temacie jest plikiem przykładowym w temacie [nawigowanie po sesji debugowania (XAML i C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .  
   
 ## <a name="sample-code"></a>Przykładowy kod  
   

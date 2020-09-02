@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases | Dokumentacja firmy Microsoft
+title: 'IDebugBinder3:: GetAllAliases | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc2075ccc37d280640f7559b1454990ee6684f25
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555751"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda pobiera listę aliasów w ramach programu.  
+Ta metoda pobiera listę aliasów z programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,16 +44,16 @@ int GetAllAliases(
   
 #### <a name="parameters"></a>Parametry  
  `uRequest`  
- [in] Maksymalną liczbę aliasów do zwrócenia (określa długość tablicy przekazane do `ppAliases`).  
+ podczas Maksymalna liczba aliasów do zwrócenia (określa długość tablicy, do której została przeniesiona `ppAliases` ).  
   
  `ppAliases`  
- [out w] Tablica do wypełnienia przy użyciu aliasów (jeśli jest to wartość null i `uRequest` wynosi 0, liczba aliasy, które mogą zostać zwrócone zostaną zwrócone przez `puFetched`).  
+ [in. out] Tablica do wypełnienia przy użyciu aliasów (jeśli jest to wartość zerowa i `uRequest` wynosi 0, liczba aliasów, które mogą zostać zwrócone, będzie zwracana przez `puFetched` ).  
   
  `puFetched`  
- [out] Zwraca liczbę aliasów uzyskany.  
+ określoną Zwraca liczbę uzyskanych aliasów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

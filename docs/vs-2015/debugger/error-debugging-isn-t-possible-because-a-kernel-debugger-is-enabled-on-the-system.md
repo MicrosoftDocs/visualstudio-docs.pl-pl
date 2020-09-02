@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Debugowanie nie jest&#39;t możliwe ponieważ w systemie jest włączony debuger jądra | Dokumentacja firmy Microsoft'
+title: 'Błąd: debugowanie jest&#39;t możliwy, ponieważ debuger jądra jest włączony w systemie | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,16 +22,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197074"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Błąd: Debugowanie nie jest&#39;t możliwe ponieważ w systemie jest włączony debuger jądra
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Błąd: debugowanie jest&#39;t możliwy, ponieważ w systemie jest włączony debuger jądra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas debugowania kodu zarządzanego, mogą pojawić się następujący komunikat o błędzie:  
+Podczas debugowania kodu zarządzanego może zostać wyświetlony następujący komunikat o błędzie:  
   
 ```  
 Debugging isn't possible because a kernel debugger is enabled on the system  
@@ -39,27 +39,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Ten komunikat występuje podczas próby debugowania kodu zarządzanego:  
   
-- na [!INCLUDE[win7](../includes/win7-md.md)] lub [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)]system, który został uruchomiony w trybie debugowania.  
+- w [!INCLUDE[win7](../includes/win7-md.md)] systemie lub [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] , który został uruchomiony w trybie debugowania.  
   
-- aplikacja korzysta z wersji środowiska CLR CLR 2.0, 3.0 lub 3.5.  
+- aplikacja używa środowiska CLR w wersji 2,0, 3,0 lub 3,5.  
   
 ## <a name="solution"></a>Rozwiązanie  
   
 #### <a name="to-fix-this-problem"></a>Aby rozwiązać ten problem  
   
-- Uaktualnianie aplikacji do użycia środowisko CLR w wersji 4.0 lub 4.5  
+- Uaktualnij aplikację do korzystania z aparatu CLR w wersji 4,0 lub 4,5  
   
      —lub—  
   
-- Wyłącz debugowanie jądra i debugowanie w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Wyłącz debugowanie jądra i Debuguj w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      —lub—  
   
-- Debugowanie za pomocą debugera jądra zamiast [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Debuguj przy użyciu debugera jądra zamiast [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      —lub—  
   
-- W debugerze jądra wyłączyć wyjątki trybu użytkownika.  
+- W debugerze jądra Wyłącz wyjątki w trybie użytkownika.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Aby wyłączyć debugowanie jądra w bieżącej sesji  
   
@@ -81,13 +81,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Aby wyłączyć debugowanie jądra dla wszystkich sesji (inne systemy operacyjne Windows)  
   
-1. Zlokalizuj plik boot.ini na dysku systemowym (zwykle C:\\). Plik boot.ini może być ukryta i tylko do odczytu. W związku z tym należy użyć następujące polecenia, aby zobaczyć, jak to:  
+1. Znajdź boot.ini na dysku systemowym (zazwyczaj C: \\ ). Plik boot.ini może być ukryty i tylko do odczytu. W związku z tym należy użyć następującego polecenia, aby je wyświetlić:  
   
     ```  
     dir /ASH  
     ```  
   
-2. Otwórz plik boot.ini za pomocą Notatnika i Usuń następujące opcje:  
+2. Otwórz boot.ini przy użyciu Notatnika i Usuń następujące opcje:  
   
     ```  
     /debug  
@@ -97,14 +97,14 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 3. Uruchom ponownie komputer.  
   
-#### <a name="to-debug-with-the-kernel-debugger"></a>Aby debugować z debuger jądra  
+#### <a name="to-debug-with-the-kernel-debugger"></a>Aby debugować za pomocą debugera jądra  
   
-1. Jeśli debuger jądra jest podłączany, zobaczysz komunikat z pytaniem, czy chcesz kontynuować debugowanie. Kliknij przycisk Tak, aby kontynuować.  
+1. Jeśli debuger jądra zostanie podłączony, zobaczysz komunikat z pytaniem, czy chcesz kontynuować debugowanie. Kliknij przycisk, aby kontynuować.  
   
-2. Możesz otrzymać `User break exception(Int 3).` w takiej sytuacji wpisz następujące polecenie debuger jądra, aby kontynuować debugowanie:  
+2. Może się pojawić w `User break exception(Int 3).` razie wystąpienia tego problemu, aby kontynuować debugowanie, wpisz następujące polecenie debugera jądra:  
   
      `gn`  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
+ [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL | Dokumentacja firmy Microsoft
+title: METADATA_ADDRESS_RETVAL | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f685bcfad5cf576215aa50aa26540ba207de2e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546866"
 ---
-# <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
+# <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta struktura reprezentuje wartość zwracana z metody lub funkcji.  
+Ta struktura reprezentuje wartość zwracaną z metody lub funkcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,30 +44,30 @@ public struct METADATA_ADDRESS_RETVAL {
 }  
 ```  
   
-## <a name="terms"></a>Warunki  
+## <a name="terms"></a>Terminologia  
  tokMethod  
- Metody to wartość zwracana jest przeznaczony.  
+ Identyfikator metody, dla której ma zostać zwrócona wartość.  
   
  dwCorType  
- Podstawowy typ wartości zwracanej. Jest to wartość z zakresu od `CorElementType` wyliczenie zdefiniowane w [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] pliku sekcję corhdr.h zestawu SDK.  
+ Typ podstawowy wartości zwracanej. Jest to wartość z `CorElementType` wyliczenia zdefiniowanego w [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] pliku corhdr. h zestawu SDK.  
   
  dwSigSize  
- Rozmiar podpisu zwracanej wartości (przechowywanej w `rgSig`).  
+ Rozmiar sygnatury wartości zwracanej (w postaci zapisanej w programie `rgSig` ).  
   
  rgSig  
- Tablica bajtów tworzących podpis wartość zwracaną.  
+ Tablica bajtów tworząca sygnaturę zwracanej wartości.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_RETVAL` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).  
+ Ta struktura jest częścią Unii w strukturze [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , gdy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawione na `ADDRESS_KIND_RETVAL` (wartość z wyliczenia [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: sh.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

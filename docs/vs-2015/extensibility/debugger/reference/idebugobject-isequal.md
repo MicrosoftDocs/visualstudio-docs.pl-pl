@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual | Dokumentacja firmy Microsoft
+title: 'IDebugObject:: IsEqual | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85252cdaf9fb076ebd4f8000115bcea576531bb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159121"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
@@ -42,16 +42,16 @@ int IsEqual(
   
 #### <a name="parameters"></a>Parametry  
  `pObject`  
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt reprezentujący obiekt do porównania.  
+ podczas Obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący obiekt, do którego ma zostać wykonane porównanie.  
   
  `pfIsEqual`  
- [out] Zwraca wartość różna od zera (`TRUE`) Jeśli wartości obiekty są równe; w przeciwnym razie, zwraca wartość zero (`FALSE`).  
+ określoną Zwraca wartość różną od zera ( `TRUE` ), jeśli wartości obiektów są równe; w przeciwnym razie zwraca zero ( `FALSE` ).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zazwyczaj ta metoda może porównać adresy wartości reprezentowanej przez `pObject` parametr i to [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt; Jeśli adresy są takie same, a następnie obiekty mogą być uważane za równe.  
+ Zazwyczaj ta metoda umożliwia porównanie adresów wartości reprezentowanych przez `pObject` parametr i ten obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ; Jeśli adresy są równe, obiekty można traktować jako równe.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

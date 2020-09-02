@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvReleaseProvider | Dokumentacja firmy Microsoft
+title: Funkcja Cvreleaseprovider — | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d5e611c2a964fcbb78a387a09989436e672ecd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551237"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider — Funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dostawca znacznika wydań. Zwalnianie dostawcy znacznika nie wpłynie na utworzonej wcześniej znaczników serii tego dostawcy. Seria znacznika musi to być wersja osobno przez wywołanie cvreleasemarkerseries —. Nie można zwolnić dostawcy powoduje, że przeciek pamięci.  
+Dostawca znaczników wydań. Zwolnienie dostawcy znaczników nie będzie miało wpływu na wcześniej utworzoną serię znaczników tego dostawcy. Seria znaczników musi być wykorzystana oddzielnie przez wywołanie CvReleaseMarkerSeries —. Niepowodzenie zwolnienia dostawcy powoduje przeciek pamięci.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,10 +38,10 @@ HRESULT CvReleaseProvider(
  Kontekst dostawcy. Nie może mieć wartości NULL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- S_OK, gdy dostawca jest pomyślnie zwolnione lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
+ S_OK, gdy dostawca został pomyślnie wydzierżawiony lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkers.h  
+ **Nagłówek:** cvmarkers. h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+ [Dokumentacja biblioteki C++](../profiling/cpp-library-reference.md)

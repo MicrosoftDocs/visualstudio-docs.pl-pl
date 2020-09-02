@@ -1,5 +1,5 @@
 ---
-title: Dołączanie i odłączanie programu | Dokumentacja firmy Microsoft
+title: Dołączanie i odłączanie do programu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,44 +12,44 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146448"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Dołączanie do programu i odłączanie od niego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dołączanie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarzeń z odpowiednich atrybutów.  
+Dołączenie debugera wymaga wysłania odpowiedniej sekwencji metod i zdarzeń z odpowiednimi atrybutami.  
   
-## <a name="sequence-of-methods-and-events"></a>Sekwencja metody i zdarzenia  
+## <a name="sequence-of-methods-and-events"></a>Sekwencja metod i zdarzeń  
   
-1. Menedżer debugowania sesji (SDM) wywołuje [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody.  
+1. Menedżer debugowania sesji (SDM) wywołuje metodę [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  
   
-    Na podstawie modelu procesu aparatu (DE) debugowania, `IDebugProgramNodeAttach2::OnAttach` metoda zwraca jedną z następujących metod, które określa, co dzieje się potem.  
+    W oparciu o model procesów aparatu debugowania (DE) `IDebugProgramNodeAttach2::OnAttach` Metoda zwraca jedną z następujących metod, która określa, co się stanie dalej.  
   
-    Jeśli `S_FALSE` ma zostać zwrócona, aparat debugowania pomyślnie został dołączony do programu. W przeciwnym razie [Dołącz](../../extensibility/debugger/reference/idebugengine2-attach.md) metoda jest wywoływana w celu ukończenia procesu dołączania.  
+    Jeśli `S_FALSE` jest zwracana, aparat debugowania został pomyślnie dołączony do programu. W przeciwnym razie metoda [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) jest wywoływana w celu dokończenia procesu dołączania.  
   
-    Jeśli `S_OK` ma zostać zwrócona, Niemcy, które ma być ładowane w tym samym procesie co SDM. SDM wykonuje następujące zadania:  
+    Jeśli `S_OK` jest zwracana, wartość de jest załadowana w tym samym procesie co model SDM. Model SDM wykonuje następujące zadania:  
   
-   1. Wywołania [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) można pobrać informacji o aparacie programu DE.  
+   1. Wywołuje [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) , aby uzyskać informacje o aparacie.  
   
-   2. Wspólnie tworzy DE.  
+   2. Współtworzenie.  
   
-   3. Wywołania [dołączyć](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+   3. [Dołączone](../../extensibility/debugger/reference/idebugengine2-attach.md)wywołania.  
   
-2. Wysyła DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.  
+2. Element DE wysyła [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) do modelu SDM z `EVENT_SYNC` atrybutem.  
   
-3. Wysyła DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.  
+3. Element DE wysyła [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) do modelu SDM z `EVENT_SYNC` atrybutem.  
   
-4. Wysyła DE [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) do SDM z `EVENT_SYNC_STOP` atrybutu.  
+4. Element DE wysyła [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) do modelu SDM z `EVENT_SYNC_STOP` atrybutem.  
   
-   Odłączanie programu jest proste, dwuetapowy proces:  
+   Odłączanie od programu to prosty, dwuetapowy proces w następujący sposób:  
   
-5. Wywołania SDM [Odłącz](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
+5. Wywołania modelu SDM [odłączają](../../extensibility/debugger/reference/idebugprogram2-detach.md)się.  
   
-6. Wysyła DE [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
+6. Element DE wysyła [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

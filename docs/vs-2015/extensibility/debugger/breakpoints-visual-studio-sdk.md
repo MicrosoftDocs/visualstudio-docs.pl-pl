@@ -1,5 +1,5 @@
 ---
-title: Punkty przerwania (zestaw SDK programu Visual Studio) | Dokumentacja firmy Microsoft
+title: Punkty przerwania (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,43 +11,43 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39c13271bad984291f609ef45505549855bee99f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146420"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Punkty przerwania (zestaw SDK programu Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Istnieją trzy typy punktów przerwania: Oczekujące, powiązaną i błędów.  
+Istnieją trzy typy punktów przerwania: oczekujące, powiązane i błędy.  
   
- **A oczekujących punktów przerwania:**  
+ **Oczekujący punkt przerwania:**  
   
-- Jest klasą abstrakcyjną, która zawiera wszystkie informacje potrzebne, aby powiązać punkt przerwania z co najmniej jeden kontekst kodu w jednym lub wielu programów. Za każdym razem program debugowany kod przyczyny, aby załadować, aparat debugowania sprawdza wszystkich oczekujących punktów przerwania, aby zobaczyć, jeśli może być powiązana.  
+- Jest abstrakcyjna, która zawiera wszystkie informacje, które są konieczne do powiązania punktu przerwania z co najmniej jednym kontekstem kodu w jednym lub kilku programach. Za każdym razem, gdy debugowany program powoduje załadowanie kodu, aparat debugowania sprawdza wszystkie oczekujące punkty przerwania, aby sprawdzić, czy można je powiązać.  
   
-   Oczekujący punkt przerwania, sama nigdy nie wiąże się kod, ale raczej zbiera i jest nazywany ma zawierać wszystkie powiązane punkty przerwania, które generuje.  
+   Oczekujący punkt przerwania nigdy nie wiąże się z kodem, ale raczej zbiera i ma zawierać wszystkie powiązane punkty przerwania, które generuje.  
   
-- Jest reprezentowany przez [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
+- Jest reprezentowany przez interfejs [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
   **Powiązany punkt przerwania:**  
   
-- Jest skojarzony z klasą abstrakcyjną dla punktu przerwania lub powiązany z kontekstu pojedynczego kodu. Każdy powiązany punkt przerwania jest generowany w odpowiedzi na oczekujący punkt przerwania. Oczekujący punkt przerwania, można wygenerować więcej niż jeden powiązany punkt przerwania.  
+- Jest abstrakcją dla punktu przerwania skojarzonego z lub powiązana z pojedynczym kontekstem kodu. Każdy powiązany punkt przerwania jest generowany w odpowiedzi na oczekujący punkt przerwania. Oczekujący punkt przerwania może jednak generować więcej niż jeden powiązany punkt przerwania.  
   
-   Gdy kod jest zwolniony, powiązany punkt przerwania można niepowiązanych i odrzucone.  
+   Gdy kod jest zwolniony, powiązany punkt przerwania może być niepowiązany i odrzucony.  
   
-- Jest reprezentowany przez [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfejsu.  
+- Jest reprezentowany przez interfejs [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .  
   
-  **Punkt przerwania błąd:**  
+  **Punkt przerwania błędu:**  
   
-- Jest klasą abstrakcyjną dla opisujący błąd podczas próby powiązać oczekujący punkt przerwania kontekst kodu. Błąd punktu przerwania w tym artykule opisano albo błąd w lokalizacji lub wyrażenia punktu przerwania. Aby uzyskać więcej informacji, zobacz [powiązań punktów przerwania](../../extensibility/debugger/binding-breakpoints.md).  
+- Jest abstrakcją dla opisywania błędu podczas próby powiązania oczekującego punktu przerwania z kontekstem kodu. Punkt przerwania błędu opisuje błąd w lokalizacji lub w samym wyrażeniu punktu przerwania. Aby uzyskać więcej informacji, zobacz [Powiązywanie punktów przerwania](../../extensibility/debugger/binding-breakpoints.md).  
   
-   Błąd punktu przerwania, może być błąd lub ostrzeżenie.  
+   Błąd punktu przerwania może być błąd lub ostrzeżenie.  
   
-- Jest reprezentowany przez [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfejsu.  
+- Jest reprezentowany przez interfejs [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Programy](../../extensibility/debugger/programs.md)   
+ [Programu](../../extensibility/debugger/programs.md)   
  [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)   
  [Kontekst kodu](../../extensibility/debugger/code-context.md)   
  [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

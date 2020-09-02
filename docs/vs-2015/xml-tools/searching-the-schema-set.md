@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0e3a8563d5e2cd29c9c521761498d7ef87b7cbab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656158"
 ---
 # <a name="searching-the-schema-set"></a>Wyszukiwanie zestawu schematów
@@ -32,11 +32,11 @@ Eksplorator schematu XML umożliwia przeszukiwanie zestawu schematów w następu
 
  Eksplorator schematu XML przeszukuje zestaw schematów dla następujących:
 
-- Wszystkie atrybuty `name` lub `ref`, które pasują do określonego słowa kluczowego. Pozwala to na znalezienie elementów, atrybutów, typów i tak dalej według nazwy.
+- Wszystkie `name` lub `ref` atrybuty, które pasują do określonego słowa kluczowego. Pozwala to na znalezienie elementów, atrybutów, typów i tak dalej według nazwy.
 
-- @No__t_0 atrybuty instrukcji INCLUDE.
+- `schemaLocation`Atrybuty instrukcji INCLUDE.
 
-- @No__t_0 atrybuty instrukcji import.
+- `namespace`Atrybuty instrukcji import.
 
 ## <a name="schema-specific-search"></a>Wyszukiwanie specyficzne dla schematu
  Eksplorator schematu XML zawiera również wbudowane wyszukiwania, do których można uzyskać dostęp za pomocą menu kontekstowego Eksploratora schematu XML. Aby uzyskać więcej informacji na temat dostępnych menu kontekstowych, zobacz [menu kontekstowe](../xml-tools/context-menus-xml-schema-explorer.md). Możesz również wykonać wyszukiwanie specyficzne dla schematu w widoku Start. Aby uzyskać więcej informacji, zobacz sekcję "Szczegóły zestawu schematów" w temacie [Start View](../xml-tools/start-view.md) .

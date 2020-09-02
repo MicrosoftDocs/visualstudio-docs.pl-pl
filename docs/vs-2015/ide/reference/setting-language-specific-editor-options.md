@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 868c4e2f8b03002bbf7c6a6d0855f2a9af3fa95f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654305"
 ---
 # <a name="setting-language-specific-editor-options"></a>Ustawianie opcji Edytora specyficznych dla języka
@@ -26,17 +26,17 @@ ms.locfileid: "72654305"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferuje różne opcje edytora tekstu, które mają zastosowanie do określonych języków programowania.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Opcje, Edytor tekstu, podstawowe (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Opisuje ustawienia dla konstrukcji końcowych, ponownego formatowania kodu, konspektów i sugestii korekcji błędów, między innymi, dla kodu [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)].
+ [Opcje, Edytor tekstu, podstawowe (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Opisuje ustawienia dla konstrukcji końcowych, ponownego formatowania kodu, konspektów i sugestii korekcji błędów, między innymi dla [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] kodu.
 
- [Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md) opisuje konspekt, wcięcie, szybkie informacje i inne ustawienia dla języka C i C++ kodu.
+ [Opcje, Edytor tekstu, C/C++, formatowanie](../../ide/reference/options-text-editor-c-cpp-formatting.md) Opisuje tworzenie konspektu, wcięcia, szybkie informacje i inne ustawienia dla kodu C i C++.
 
- [Opcje, Edytor tekstu, C/C++, zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md) — opis ustawień funkcji IntelliSense i plików bazy danych przy użyciu C++języka C i.
+ [Opcje, Edytor tekstu, C/C++, zaawansowane](../../ide/reference/options-text-editor-c-cpp-advanced.md) Opisuje ustawienia technologii IntelliSense i plików bazy danych w przypadku korzystania z języków C i C++.
 
- [Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md) opisuje ustawienia wcięć, nowego formatowania linii i zawijania tekstu, między innymi, dla C# i J#.
+ [Opcje, Edytor tekstu, C#, formatowanie](../../ide/reference/options-text-editor-csharp-formatting.md) Opisuje ustawienia wcięć, nowego formatowania linii i zawijania tekstu między innymi dla języków C# i J#.
 
- [Opcje, Edytor tekstu, C#, zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md) opisują konspekt, identyfikacja błędów i ustawienia komentarzy dokumentacji XML dla C# i J#.
+ [Opcje, Edytor tekstu, C#, zaawansowane](../../ide/reference/options-text-editor-csharp-advanced.md) Opisuje ustawienia konspektu, identyfikacji błędów i komentarza dokumentacji XML dla języków C# i J#.
 
- [Opcje, Edytor tekstu, C#, IntelliSense —](../../ide/reference/options-text-editor-csharp-intellisense.md) opisuje ustawienia, które określają sposób zachowania listy uzupełniania IntelliSense podczas pracy w C# programie i kodzie J#.
+ [Opcje, Edytor tekstu, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) Opisuje ustawienia określające zachowanie listy uzupełniania IntelliSense podczas pracy w kodzie C# i J#.
 
  [Walidacja, CSS, Edytor tekstu, Opcje — okno dialogowe](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc) Opisuje uzupełnianie instrukcji i ustawienia korekcji błędów dla kaskadowych arkuszy stylów (CSS).
 

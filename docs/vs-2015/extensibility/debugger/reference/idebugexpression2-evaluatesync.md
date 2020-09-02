@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Dokumentacja firmy Microsoft
+title: 'IDebugExpression2:: EvaluateSync | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 602a823e4066aff40d1f6271a20b480bb4a92f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158423"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda oblicza wyrażenie synchronicznie.  
+Ta metoda synchronicznie oblicza wyrażenie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,30 +46,30 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parametry  
  `dwFlags`  
- [in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie, które sterują Obliczanie wyrażenia.  
+ podczas Kombinacja flag z wyliczenia [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) , która kontroluje Obliczanie wyrażenia.  
   
  `dwTimeout`  
- [in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
+ podczas Maksymalny czas oczekiwania (w milisekundach) przed powrotem z tej metody. Użyj `INFINITE` , aby czekać w nieskończoność.  
   
  `pExprCallback`  
- [in] Ten parametr jest zawsze wartość null.  
+ podczas Ten parametr ma zawsze wartość null.  
   
  `ppResult`  
- [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu, który zawiera wynik obliczenia wyrażenia.  
+ określoną Zwraca obiekt [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , który zawiera wynik obliczania wyrażenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Niektóre kody typowy błąd to:  
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Poniżej przedstawiono niektóre typowe kody błędów:  
   
 |Błąd|Opis|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Inne wyrażenie jest aktualnie szacowana, a jednoczesne wyrażenia nie jest obsługiwana.|  
-|E_EVALUATE_TIMEOUT|Szacowanie przekroczyło limit czasu.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Inne wyrażenie jest obecnie oceniane i jednoczesne Obliczanie wyrażenia nie jest obsługiwane.|  
+|E_EVALUATE_TIMEOUT|Przekroczono limit czasu obliczania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Synchroniczne wersji ewaluacyjnej nie jest niezbędne do wysyłania zdarzeń do programu Visual Studio po zakończeniu oceny.  
+ W celu dokonania synchronicznej oceny nie jest konieczne wysyłanie zdarzenia z powrotem do programu Visual Studio po zakończeniu obliczania.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CExpression` obiekt, który implementuje [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CExpression` obiektu, który implementuje interfejs [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .  
   
 ```cpp#  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  

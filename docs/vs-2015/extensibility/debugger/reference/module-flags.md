@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae51d604f455b12fd6933a54954b75a97aea4eb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547471"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
+# <a name="module_flags"></a>MODULE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Używane do opisywania modułu.  
@@ -51,32 +51,32 @@ public enum enum_MODULE_FLAGS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  MODULE_FLAG_NONE  
- Określa nie modułu.  
+ Określa Brak modułu.  
   
  MODULE_FLAG_SYSTEM  
- Określa moduł systemu.  
+ Określa moduł systemowy.  
   
  MODULE_FLAG_SYMBOLS  
  Określa moduł symboli.  
   
  MODULE_FLAG_64BIT  
- Określa moduł 64-bitowych.  
+ Określa moduł 64-bitowy.  
   
  MODULE_FLAG_OPTIMIZED  
- Określa, że moduł został zoptymalizowany. Ten stan jest odzwierciedlana w **modułów** okna.  
+ Określa, że moduł został zoptymalizowany. Ten stan jest widoczny w oknie **moduły** .  
   
  MODULE_FLAG_UNOPTIMIZED  
- Określa, że moduł nie został zoptymalizowany. Ten stan jest odzwierciedlana w **modułów** okna. Jest to domyślny stan.  
+ Określa, że moduł nie został zoptymalizowany. Ten stan jest widoczny w oknie **moduły** . Jest to stan domyślny.  
   
 ## <a name="remarks"></a>Uwagi  
- Używany do `m_dwModuleFlags` członkiem [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.  
+ Używane dla `m_dwModuleFlags` elementu członkowskiego struktury [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .  
   
- Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Flagi te mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a188e90d3feeb903eb8b4efceb91eb53cac3bdce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651849"
 ---
 # <a name="how-to-manage-editor-modes"></a>Porady: zarządzanie trybami edytora
@@ -47,9 +47,9 @@ Edytor Visual Studio Code można wyświetlić w różnych trybach wyświetlania.
 
 - Naciśnij klawisze ALT + SHIFT + ENTER, aby wejść lub wyjść z trybu **pełnoekranowego** .
 
-     --lub--
+     — lub —
 
-- Wydaj polecenie `View.Fullscreen` w oknie **poleceń** .
+- Wydaj polecenie `View.Fullscreen` w oknie **wiersza polecenia** .
 
 ## <a name="enabling-virtual-space-mode"></a>Włączanie trybu przestrzeni wirtualnej
  W trybie **przestrzeni wirtualnej** spacje są wstawiane na końcu każdego wiersza kodu. Wybierz tę opcję, aby umieścić komentarze w spójnym punkcie obok kodu.

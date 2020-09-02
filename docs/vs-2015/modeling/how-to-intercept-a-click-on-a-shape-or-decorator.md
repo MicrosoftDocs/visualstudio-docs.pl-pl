@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f8bba5a4322ba02dfe6686774f3d16647fa87eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655991"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Porady: przechwytywanie kliknięć w kształcie lub elemencie Decorator
@@ -24,7 +24,7 @@ ms.locfileid: "72655991"
 Poniższe procedury demonstrują sposób przechwycenia kliknięcia kształtu lub ikony dekoratora. Możesz przechwycić kliknięcia, podwójne kliknięcia, przeciąganie i inne gesty, a następnie odpowiedzieć na element.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Aby przechwycić kliknięcia na kształtach
- W projekcie DSL, w pliku kodu, który jest oddzielony od wygenerowanych plików kodu, napisz częściową definicję klasy dla klasy Shape. Zastąp `OnDoubleClick()` lub jedną z innych metod o nazwie rozpoczynającej się od `On...`. Na przykład:
+ W projekcie DSL, w pliku kodu, który jest oddzielony od wygenerowanych plików kodu, napisz częściową definicję klasy dla klasy Shape. Przesłonięcie `OnDoubleClick()` lub jedną z innych metod, które mają nazwę zaczynającą się od `On...` . Na przykład:
 
 ```
 public partial class MyShape // change
@@ -38,10 +38,10 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> Ustaw wartość `e.Handled` na `true`, chyba że chcesz, aby zdarzenie zostało przesłane do zawierającego go kształtu lub diagramu.
+> Ustaw `e.Handled` na `true` , chyba że chcesz, aby zdarzenie zostało przesłane do zawierającego go kształtu lub diagramu.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Aby przechwycić kliknięcia w dekoratory
- Dekoratory obrazów są przeprowadzane na wystąpieniu klasy ImageField, która ma metodę OnDoubleClick. Możesz przechwycić kliknięcia, jeśli piszesz podklasę ImageField. Pola są konfigurowane w metodzie InitializeShapeFields. W związku z tym należy zmienić tę metodę, aby utworzyć wystąpienie klasy zamiast zwykłych ImageField. Metoda InitializeShapeFields znajduje się w wygenerowanym kodzie klasy Shape. Można przesłonić klasę kształtu, jeśli ustawisz jej Właściwość `Generates Double Derived` zgodnie z opisem w poniższej procedurze.
+ Dekoratory obrazów są przeprowadzane na wystąpieniu klasy ImageField, która ma metodę OnDoubleClick. Możesz przechwycić kliknięcia, jeśli piszesz podklasę ImageField. Pola są konfigurowane w metodzie InitializeShapeFields. W związku z tym należy zmienić tę metodę, aby utworzyć wystąpienie klasy zamiast zwykłych ImageField. Metoda InitializeShapeFields znajduje się w wygenerowanym kodzie klasy Shape. Możesz przesłonić klasę kształtu, jeśli ustawisz jej `Generates Double Derived` Właściwość zgodnie z opisem w poniższej procedurze.
 
  Chociaż InitializeShapeFields jest metodą wystąpienia, jest wywoływana tylko raz dla każdej klasy. W związku z tym tylko jedno wystąpienie elementu ClickableImageField istnieje dla każdego pola w każdej klasie, a nie jednego wystąpienia dla każdego kształtu na diagramie. Gdy użytkownik kliknie dwukrotnie wystąpienie, należy zidentyfikować wystąpienie, które zostało trafione, jak pokazano w przykładzie.
 
@@ -51,7 +51,7 @@ public partial class MyShape // change
 
 2. Wybierz lub Utwórz kształt, który ma ikonę dekoratora, i zamapuj go na klasę domeny.
 
-3. W pliku kodu, który jest oddzielony od plików w folderze `GeneratedCode`, Utwórz nową podklasę ImageField:
+3. W pliku kodu, który jest oddzielony od plików w `GeneratedCode` folderze, Utwórz nową podklasę ImageField:
 
     ```
     using Microsoft.VisualStudio.Modeling;
@@ -116,7 +116,7 @@ public partial class MyShape // change
     }
     ```
 
-1. Kompiluj i uruchamiaj rozwiązanie.
+1. Skompiluj i uruchom rozwiązanie.
 
 2. Kliknij dwukrotnie ikonę na wystąpieniu kształtu. Powinien pojawić się komunikat testowy.
 
@@ -137,7 +137,7 @@ public partial class MyShape // change
 
 - Zestaw programów obsługi zdarzeń myszy jest dołączony do każdego wystąpienia przedziału podczas jego tworzenia.
 
-- Zdarzenie `ClassShape.MouseDown` zapisuje bieżący element.
+- `ClassShape.MouseDown`Zdarzenie zapisuje bieżący element.
 
 - Gdy wskaźnik myszy zostanie przesunięty z bieżącego elementu, tworzone jest wystąpienie elementu MouseAction, które ustawia kursor i przechwytuje mysz do momentu jego zwolnienia.
 

@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72ed9b8a747814d9537739c8dc27e5f113547756
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561863"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa protokół używany do komunikacji między serwerem debugowania i debugowanie pakietu (DE).  
+Wskazuje protokół używany do komunikacji między serwerem debugowania a pakietem debugowania (DE).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,16 +52,16 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>Parametry  
  CONNECTION_NONE  
- Połączenie nie zostało ustanowione do serwera.  
+ Nie wprowadzono połączenia z serwerem.  
   
  CONNECTION_UNKNOWN  
- Połączenie zostało wykonane, ale jest nieznanego typu.  
+ Połączenie zostało nawiązane, ale jego typ jest nieznany.  
   
  CONNECTION_LOCAL  
- To połączenie serwera lokalnego.  
+ Połączenie jest serwerem lokalnym.  
   
  CONNECTION_PIPE  
- Połączenie jest użycie nazwanego potoku.  
+ Połączenie odbywa się za pomocą nazwanego potoku.  
   
  CONNECTION_TCPIP  
  Połączenie używa protokołu TCP/IP.  
@@ -70,15 +70,15 @@ public enum CONNECTION_PROTOCOL {
  Połączenie korzysta z protokołu HTTP (za pośrednictwem serwera sieci Web).  
   
  CONNECTION_OTHER  
- Inny rodzaj połączenie zostało ustanowione (Ta wartość nie jest obecnie używany).  
+ Nawiązano połączenie innego typu (ta wartość nie jest obecnie używana).  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są zwracane z [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metody.  
+ Te wartości są zwracane z metody [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

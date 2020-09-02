@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca7d6bfb799f0a9460702c4b581ef3f5261672b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147486"
 ---
-# <a name="jmccodespec"></a>JMC_CODE_SPEC
+# <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta struktura jest używana do ustawiania informacji JustMyCode dla modułu.  
+Ta struktura służy do ustawiania informacji JustMyCode dla modułu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,21 +42,21 @@ public struct JMC_CODE_SPEC {
   
 ## <a name="members"></a>Elementy członkowskie  
  fIsUserCode  
- Niezerowa Koniunkcja (`TRUE`) Jeśli moduł jest uważane za kod użytkownika; w przeciwnym razie wartość zero (`FALSE`) Jeśli moduł jest traktowane jako kod zewnętrzny, a nie można debugować.  
+ Wartość niezerowa ( `TRUE` ), jeśli moduł ma być uznawany za kod użytkownika; w przeciwnym razie, zero ( `FALSE` ), jeśli moduł ma być traktowany jako kod zewnętrzny i nie powinien być debugowany.  
   
  bstrModuleName  
- Nazwa w danym module.  
+ Nazwa danego modułu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywany jako listę takich struktur [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) metody.  
+ Ta struktura jest przenoszona jako lista takich struktur do metody [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

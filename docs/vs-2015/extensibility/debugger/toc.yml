@@ -1,0 +1,286 @@
+- name: Rozszerzalność debugera programu Visual Studio
+  href: visual-studio-debugger-extensibility.md
+- name: Wybieranie strategii implementacji aparatu debugowania
+  href: choosing-a-debug-engine-implementation-strategy.md
+- name: Tworzenie niestandardowego aparatu debugowania
+  href: creating-a-custom-debug-engine.md
+  items:
+    - name: Rejestrowanie niestandardowego aparatu debugowania
+      href: registering-a-custom-debug-engine.md
+    - name: Włączanie debugowania programu
+      href: enabling-a-program-to-be-debugged.md
+      items:
+        - name: Pobieranie portu
+          href: getting-a-port.md
+        - name: Rejestrowanie programu
+          href: registering-the-program.md
+        - name: Dołączanie do programu
+          href: attaching-to-the-program.md
+        - name: Dołączanie na podstawie uruchamiania
+          href: launch-based-attachment.md
+        - name: Wysyłanie wymaganych zdarzeń
+          href: sending-the-required-events.md
+    - name: Kontrola wykonywania i ocena stanu
+      href: execution-control-and-state-evaluation.md
+      items:
+        - name: Kontrola programu
+          href: program-control.md
+        - name: Metody dotyczące punktu przerwania
+          href: breakpoint-related-methods.md
+        - name: Ocena stosu wywołań
+          href: call-stack-evaluation.md
+        - name: Obliczanie wyrażeń
+          href: expression-evaluation-visual-studio-debugging-sdk.md
+        - name: Zdarzenia kontrolki
+          href: control-events.md
+    - name: Wysyłanie zdarzeń
+      href: sending-events.md
+      items:
+        - name: Źródła zdarzeń
+          href: event-sources-visual-studio-sdk.md
+        - name: Obsługiwane typy zdarzeń
+          href: supported-event-types.md
+        - name: Opisy zdarzeń
+          href: event-descriptions.md
+    - name: Kończenie i odłączanie
+      href: termination-and-detaching.md
+    - name: Wywoływanie zdarzeń debugera
+      href: calling-debugger-events.md
+      items:
+        - name: Dołączanie do programu i odłączanie od niego
+          href: attaching-and-detaching-to-a-program.md
+        - name: Uruchamianie debugera
+          href: launching-the-debugger.md
+        - name: Kończenie programu
+          href: terminating-a-program.md
+        - name: Tworzenie punktu przerwania
+          href: creating-a-breakpoint.md
+        - name: Powiązanie lub cofnięcie powiązania punktu przerwania
+          href: when-a-breakpoint-binds-or-becomes-unbound.md
+        - name: Błędy punktu przerwania
+          href: breakpoint-errors.md
+        - name: Aktywacja punktu przerwania
+          href: hitting-a-breakpoint.md
+        - name: Usuwanie punktu przerwania
+          href: deleting-a-breakpoint.md
+        - name: Włączanie trybu przerwania
+          href: entering-break-mode.md
+        - name: Wykonywanie krokowe w trybie przerwania
+          href: stepping-in-break-mode.md
+        - name: Ocena wyrażeń w trybie przerwania
+          href: expression-evaluation-in-break-mode.md
+        - name: Obsługa wyjątków
+          href: exception-handling-visual-studio-sdk.md
+    - name: 'Instrukcje: debugowanie niestandardowego aparatu debugowania'
+      href: how-to-debug-a-custom-debug-engine.md
+- name: Getting Started
+  href: getting-started-with-debugger-extensibility.md
+  items:
+    - name: Plan rozwoju rozszerzania debugera
+      href: roadmap-for-extending-the-debugger.md
+    - name: Składniki debugera
+      href: debugger-components.md
+      items:
+        - name: Pakiet debugowania
+          href: debug-package.md
+        - name: Menedżer debugowania procesów
+          href: process-debug-manager.md
+        - name: Menedżer debugowania sesji
+          href: session-debug-manager.md
+        - name: Aparat debugowania
+          href: debug-engine.md
+        - name: Tryby operacyjne
+          href: operational-modes.md
+        - name: Ewaluator wyrażeń
+          href: expression-evaluator.md
+        - name: Dostawca symboli
+          href: symbol-provider.md
+        - name: Wizualizator typów i przeglądarka niestandardowa
+          href: type-visualizer-and-custom-viewer.md
+    - name: Pojęcia dotyczące debugera
+      href: debugger-concepts.md
+      items:
+        - name: Sesja debugowania
+          href: debug-session.md
+        - name: Serwery
+          href: servers-visual-studio-sdk.md
+        - name: Dostawcy portów
+          href: port-suppliers.md
+        - name: Porty
+          href: ports.md
+        - name: Procesy
+          href: processes.md
+        - name: Węzły programu
+          href: program-nodes.md
+        - name: Programy
+          href: programs.md
+        - name: Wątki
+          href: threads.md
+        - name: Ramki stosu
+          href: stack-frames.md
+        - name: Moduły
+          href: modules.md
+        - name: Punkty przerwania
+          href: breakpoints-visual-studio-sdk.md
+    - name: Konteksty debugera
+      href: debugger-contexts.md
+      items:
+        - name: Kontekst kodu
+          href: code-context.md
+        - name: Położenie dokumentu
+          href: document-position.md
+        - name: Kontekst dokumentu
+          href: document-context.md
+        - name: Kontekst oceny wyrażeń
+          href: expression-evaluation-context.md
+    - name: Zadania debugowania
+      href: debugging-tasks.md
+      items:
+        - name: Problemy z zabezpieczeniami
+          href: security-issues.md
+        - name: Uruchamianie programu
+          href: launching-a-program.md
+          items:
+            - name: Powiadamianie portu
+              href: notifying-the-port.md
+            - name: Dołączanie po uruchomieniu
+              href: attaching-after-a-launch.md
+        - name: Dołączanie bezpośrednio do programu
+          href: attaching-directly-to-a-program.md
+        - name: Wysyłanie zdarzeń uruchamiania po uruchomieniu
+          href: sending-startup-events-after-a-launch.md
+        - name: Kontrola wykonywania
+          href: control-of-execution.md
+        - name: Tworzenie powiązań punktów przerwania
+          href: binding-breakpoints.md
+        - name: Ocenianie wyrażeń
+          href: evaluating-expressions.md
+        - name: Wizualizacja i wyświetlanie danych
+          href: visualizing-and-viewing-data.md
+- name: Pisanie ewaluatora wyrażeń środowiska CLR
+  href: writing-a-common-language-runtime-expression-evaluator.md
+  items:
+    - name: Środowisko uruchomieniowe języka wspólnego i ocenianie wyrażeń
+      href: common-language-runtime-and-expression-evaluation.md
+    - name: Architektura ewaluatora wyrażeń
+      href: expression-evaluator-architecture.md
+      items:
+        - name: Kontekst oceny
+          href: evaluation-context.md
+        - name: Interfejsy ewaluatora wyrażeń klucza
+          href: key-expression-evaluator-interfaces.md
+    - name: Rejestrowanie ewaluatora wyrażeń
+      href: registering-an-expression-evaluator.md
+    - name: Implementowanie ewaluatora wyrażeń
+      href: implementing-an-expression-evaluator.md
+      items:
+        - name: Strategia implementacji ewaluatora wyrażeń
+          href: expression-evaluator-implementation-strategy.md
+    - name: Wyświetlanie zmiennych lokalnych
+      href: displaying-locals.md
+      items:
+        - name: Przykłady implementacji zmiennych lokalnych
+          href: sample-implementation-of-locals.md
+          items:
+            - name: Implementowanie metody GetMethodProperty
+              href: implementing-getmethodproperty.md
+            - name: Wyliczanie zmiennych lokalnych
+              href: enumerating-locals.md
+            - name: Pobieranie właściwości lokalnych
+              href: getting-local-properties.md
+            - name: Pobieranie wartości lokalnych
+              href: getting-local-values.md
+            - name: Ocenianie zmiennych lokalnych
+              href: evaluating-locals.md
+    - name: Ocenianie wyrażenia okna wyrażeń kontrolnych
+      href: evaluating-a-watch-window-expression.md
+      items:
+        - name: Przykład implementacji oceny wyrażenia
+          href: sample-implementation-of-expression-evaluation.md
+        - name: Ocenianie wyrażenia kontrolnego
+          href: evaluating-a-watch-expression.md
+    - name: Zmienianie wartości zmiennej lokalnej
+      href: changing-the-value-of-a-local.md
+      items:
+        - name: Przykład implementacji zmieniania wartości
+          href: sample-implementation-of-changing-values.md
+    - name: Implementowanie wizualizatorów typu i przeglądarek niestandardowych
+      href: implementing-type-visualizers-and-custom-viewers.md
+- name: Implementowanie dostawcy portu
+  href: implementing-a-port-supplier.md
+  items:
+    - name: Implementowanie i rejestrowanie dostawcy portu
+      href: implementing-and-registering-a-port-supplier.md
+    - name: Wymagane interfejsy dostawcy portów
+      href: required-port-supplier-interfaces.md
+- name: Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework
+  href: parallel-extension-internals-for-the-dotnet-framework.md
+  items:
+    - name: 'Task, klasa'
+      href: task-class-internal-members.md
+      items:
+        - name: 'm_action, pole'
+          href: m-action-field.md
+        - name: 'm_contingentProperties, pole'
+          href: m-contingentproperties-field.md
+        - name: 'm_parent, pole'
+          href: m-parent-field.md
+        - name: 'm_stateFlags, pole'
+          href: m-stateflags-field.md
+        - name: 'm_stateObject, pole'
+          href: m-stateobject-field.md
+        - name: 'm_taskId, pole'
+          href: m-taskid-field.md
+        - name: 's_taskIdCounter, pole'
+          href: s-taskidcounter-field.md
+        - name: 'TASK_STATE_CANCELED, pole'
+          href: task-state-canceled-field.md
+        - name: 'TASK_STATE_EXECUTED, pole'
+          href: task-state-executed-field.md
+        - name: 'TASK_STATE_FAULTED, pole'
+          href: task-state-faulted-field.md
+        - name: 'TASK_STATE_RAN_TO_COMPLETION, pole'
+          href: task-state-ran-to-completion-field.md
+        - name: 'TASK_STATE_WAITING_ON_CHILDREN, pole'
+          href: task-state-waiting-on-children-field.md
+        - name: 'SetNotificationForWaitCompletion, metoda'
+          href: setnotificationforwaitcompletion-method.md
+        - name: 'NotifyDebuggerOfWaitCompletion, metoda'
+          href: notifydebuggerofwaitcompletion-method.md
+    - name: 'TaskScheduler, klasa'
+      href: taskscheduler-class-internal-members.md
+      items:
+        - name: 'GetScheduledTasksForDebugger, metoda'
+          href: getscheduledtasksfordebugger-method.md
+        - name: 'GetTaskSchedulersForDebugger, metoda'
+          href: gettaskschedulersfordebugger-method.md
+    - name: 'ContingentProperties, klasa'
+      href: contingentproperties-class-internal-members.md
+      items:
+        - name: 'm_children, pole'
+          href: m-children-field.md
+    - name: 'AsyncTaskMethodBuilder, struktura'
+      href: asynctaskmethodbuilder-structure-internal-members.md
+      items:
+        - name: 'ObjectIdForDebugger, właściwość'
+          href: asynctaskmethodbuilder-objectidfordebugger-property.md
+        - name: 'm_builder, pole'
+          href: asynctaskmethodbuilder-m-builder-field.md
+    - name: 'AsyncTaskMethodBuilder\<TResult>, struktura'
+      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
+      items:
+        - name: 'ObjectIdForDebugger, właściwość'
+          href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
+        - name: 'm_task, pole'
+          href: asynctaskmethodbuilder-tresult-m-task-field.md
+    - name: 'AsyncVoidMethodBuilder, struktura'
+      href: asyncvoidmethodbuilder-structure-internal-members.md
+      items:
+        - name: 'ObjectIdForDebugger, właściwość'
+          href: asyncvoidmethodbuilder-objectidfordebugger-property.md
+        - name: 'm_objectIdForDebugger, pole'
+          href: asyncvoidmethodbuilder-m-objectidfordebugger-field.md
+- name: Dokumentacja
+  href: reference/reference-visual-studio-debugging-apis.md
+- name: Samples
+  href: visual-studio-debugging-samples.md

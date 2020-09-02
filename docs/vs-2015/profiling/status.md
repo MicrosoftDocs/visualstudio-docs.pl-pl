@@ -1,5 +1,5 @@
 ---
-title: Stan | Dokumentacja firmy Microsoft
+title: Stan | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157786"
 ---
 # <a name="status"></a>Stan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPerfCmd.exe **stan** opcji wyświetla informacje o stanie programu profilującego i wszystkie procesy, które są obecnie poddawany profilowaniu.  
+Opcja VSPerfCmd.exe **stan** zawiera informacje dotyczące stanu profilera i procesów, które są aktualnie profilowane.  
   
- **Stan** opcja musi być jedyną opcją, określone w wierszu polecenia. Program profilujący musi zostać zainicjowany z VSPerfCmd.exe **Start** opcji, przed wyświetleniem dowolny stan.  
+ Opcja **stanu** musi być jedyną opcją określoną w wierszu polecenia. Aby można było wyświetlić dowolny stan, profiler musi być zainicjowany przy użyciu opcji **Start** VSPerfCmd.exe.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,48 +33,48 @@ VSPerfCmd.exe /Status
  Brak  
   
 ## <a name="remarks"></a>Uwagi  
- **Stan** opcja wyświetla następujące informacje o stanie programu Profiler.  
+ Opcja **stan** wyświetla następujące informacje o stanie profilera.  
   
  **Nazwa pliku wyjściowego**  
- Ścieżka i nazwa bieżącego pliku danych profilera.  
+ Ścieżka i nazwa pliku bieżącego pliku danych profilera.  
   
  **Tryb kolekcji**  
- PRZYKŁAD lub śledzenia  
+ PRÓBKowanie lub śledzenie  
   
  **Maksymalna liczba procesów**  
- Maksymalna liczba procesów, które mogą być profilowane, w tym samym czasie i Liczba obecnie aktywnych procesów.  
+ Maksymalna liczba procesów, które mogą być profilowane jednocześnie, oraz liczba aktualnie aktywnych procesów.  
   
  **Maksymalna liczba wątków**  
- Maksymalna liczba wątków, które mogą być profilowane, w tym samym czasie.  
+ Maksymalna liczba wątków, które mogą być profilowane jednocześnie.  
   
  **Liczba buforów**  
- Liczba buforów pamięci przeznaczone do zapisywania danych profilowania.  
+ Liczba buforów pamięci, które są przeznaczone do zapisywania danych profilowania.  
   
  **Rozmiar buforów**  
  Rozmiar w bajtach bufora pamięci.  
   
- **Stan** opcja wyświetla następujące informacje o stanie dla każdego procesu, który jest obecnie poddawany profilowaniu.  
+ Opcja **stan** wyświetla następujące informacje o stanie dla każdego procesu, który jest obecnie profilowany.  
   
  **Proces**  
- Nazwa PROFILOWANEGO procesu.  
+ Nazwa profilowanego procesu.  
   
  **Identyfikator procesu**  
- Identyfikator systemu procesu.  
+ Identyfikator systemowy procesu.  
   
  **Liczba wątków**  
- Liczba wątków w trakcie wykonywania.  
+ Liczba aktualnie wykonywanych wątków.  
   
  **Liczba uruchomień/zatrzymań**  
- Licznik podstawowy wewnętrzny profilera można kontrolować zbieranie danych dla tego procesu. Liczba musi być równa jeden do zbierania danych. Liczba uruchomień/zatrzymań może być manipulowane przez profiler interfejsów API i opcji VSPerfCmd **GlobalOn**, **GlobalOff**, **ProcessOn**, **ProcessOff**, **ThreadOn**, i **ThreadOff**.  
+ Podstawowa wewnętrzna liczba profilera do sterowania zbieraniem danych dla tego procesu. Liczba musi być równa 1, aby zbierać dane. Licznik uruchamiania/zatrzymywania może być manipulowany przez interfejsy API profilera i opcje VSPerfCmd **GlobalOn**, **GlobalOff**, **ProcessOn**, **ProcessOff**, **ThreadOn**i **ThreadOff**.  
   
  **Liczba wstrzymań/wznowień**  
- Liczba pomocniczych wewnętrzny profilera można kontrolować zbieranie danych dla tego procesu. Liczba musi być mniejsza lub równa zero do zbierania danych. **Wstrzymań/wznowień** liczba może używać tylko interfejsów API profilera.  
+ Pomocniczy wewnętrzny Profiler do sterowania zbieraniem danych dla tego procesu. Liczba musi być mniejsza lub równa zero, aby zebrać dane. Liczbę **wstrzymania/wznowienia** można manipulować tylko przez interfejsy API profilera.  
   
- **Użytkownicy z prawami dostępu w celu monitorowania**  
- Wyświetla listę nazw użytkowników, którzy mają dostęp do programu profilującego. Dodatkowym użytkownikom można udzielić dostępu przy użyciu VSPerfCmd.exe **administratora** opcji  
+ **Użytkownicy z prawami dostępu do monitorowania**  
+ Wyświetla listę nazw użytkowników, którzy mają dostęp do profilera. Dodatkowym użytkownikom można udzielić dostępu przy użyciu opcji **administrator** VSPerfCmd.exe  
   
 ## <a name="see-also"></a>Zobacz też  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web platformy ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilowania aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

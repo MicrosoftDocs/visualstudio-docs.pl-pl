@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyczyścić stosu cofania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: czyszczenie stosu cofania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549172"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Instrukcje: Wyczyścić stosu cofania
+# <a name="how-to-clear-the-undo-stack"></a>Instrukcje: czyszczenie stosu cofania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Następujące Poniższa procedura wyjaśnia, jak wyczyścić stosu cofania.  
+Poniższa procedura wyjaśnia, jak wyczyścić stos cofania.  
   
-### <a name="to-clear-the-undo-stack"></a>Aby wyczyścić stosu cofania  
+### <a name="to-clear-the-undo-stack"></a>Aby wyczyścić stos cofania  
   
-1. Aby wyczyścić wykorzystanie stosu cofania [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) metody. Oto przykład:  
+1. Aby wyczyścić stos cofania, użyj metody [IOleUndoManager::D iscardfrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) . Poniżej znajduje się przykład:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -45,4 +45,4 @@ Następujące Poniższa procedura wyjaśnia, jak wyczyścić stosu cofania.
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Implementowanie cofania zarządzania](../extensibility/how-to-implement-undo-management.md)
+ [Instrukcje: implementowanie zarządzania cofaniem](../extensibility/how-to-implement-undo-management.md)

@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Dokumentacja firmy Microsoft
+title: CANSTOP_REASON | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 277164ea3dfcdabbe24622bb5148ebd75d54f8c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561855"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
+# <a name="canstop_reason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Używany do określenia, jeśli program zatrzymać wykonywanie po osiągnięciu określonego punktu w realizacji.  
+Służy do określenia, czy program może zatrzymać wykonywanie po osiągnięciu określonego punktu w wykonaniu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,18 +43,18 @@ public enum enum_CANSTOP_REASON { 
   
 ## <a name="members"></a>Elementy członkowskie  
  CANSTOP_ENTRYPOINT  
- Określa punkt wejścia w danym programu.  
+ Określa punkt wejścia danego programu.  
   
  CANSTOP_STEPIN  
- Określa, przechodzenie krok po kroku do funkcji.  
+ Określa przechodzenie do funkcji.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazywany jako argument do [getreason —](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodę, aby potwierdzić z sesji debugowania Manager (SDM), jeśli ma nic złego zatrzymać po osiągnięciu punktu wejścia programu, lub po przejściu do funkcji lub metody.  
+ Przeszedł jako argument do metody [Getpowód](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) , aby potwierdzić z menedżerem debugowania sesji (SDM), jeśli nie można go zatrzymać po osiągnięciu punktu wejścia programu lub po przejściu do funkcji lub metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

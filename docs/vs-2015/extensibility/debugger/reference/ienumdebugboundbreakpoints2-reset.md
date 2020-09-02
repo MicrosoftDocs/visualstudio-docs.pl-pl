@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Reset | Dokumentacja firmy Microsoft
+title: 'IEnumDebugBoundBreakpoints2:: Reset | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 93ba79dcfb9f3df370143e5935a94f98633e98ec
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551908"
 ---
 # <a name="ienumdebugboundbreakpoints2reset"></a>IEnumDebugBoundBreakpoints2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Resetuje wyliczenia do pierwszego elementu.  
+Resetuje Wyliczenie do pierwszego elementu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Po ta metoda jest wywoływana, następnym wywołaniu [dalej](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) metoda zwraca pierwszy element wyliczenia.  
+ Po wywołaniu tej metody następne wywołanie do [następnej](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) metody zwraca pierwszy element wyliczenia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

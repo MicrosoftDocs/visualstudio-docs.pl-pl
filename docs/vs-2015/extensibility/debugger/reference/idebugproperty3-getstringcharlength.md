@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringCharLength | Dokumentacja firmy Microsoft
+title: 'IDebugProperty3:: GetStringCharLength | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7fa9d6a440f0e7ad1f4c55463b025965621a21e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157415"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
@@ -42,16 +42,16 @@ int GetStringCharLength(
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`pLen`|[out] Zwraca liczbę znaków w ciągu właściwości.|  
+|`pLen`|określoną Zwraca liczbę znaków w ciągu właściwości.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zazwyczaj ta metoda jest używana jako prelude do alokacji bufora na wywołanie [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) metody.  
+ Zazwyczaj ta metoda jest używana jako preludium do alokowania buforu dla wywołania metody [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) .  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CProperty** obiekt ujawniający [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CProperty** , który uwidacznia Interfejs [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .  
   
 ```cpp#  
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  

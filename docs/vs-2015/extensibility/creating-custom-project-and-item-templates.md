@@ -10,75 +10,75 @@ author: gregvanl
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6875e13baa83d349020f50a3fe448a87ec5fd30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197401"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Tworzenie niestandardowych szablonów projektów i szablonów elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio SDK zawiera szablony projektów, które Tworzenie szablonu niestandardowego projektu i szablonu niestandardowego elementu. Te szablony obejmują kilka typowych podstawieniach parametrów i kompilacji jako pliki zip. Nie są automatycznie wdrażane, a nie są one dostępne w doświadczalnym wystąpieniu. Kopiowanie pliku zip plik do lokalizacji
+Zestaw Visual Studio SDK zawiera szablony projektów, które tworzą niestandardowy szablon projektu i szablon elementu niestandardowego. Te szablony obejmują kilka typowych podstawiania parametrów i Kompiluj jako pliki zip. Nie są one wdrażane automatycznie i nie są dostępne w eksperymentalnym wystąpieniu. Skopiuj plik zip do lokalizacji, do której
 
-Szablony do tworzenia szablonu pozwalają obejmują szablony w rozszerzeniach większe. W tym szablony w rozszerzeniach umożliwia Implementowanie kontroli wersji na pliki źródłowe i utworzyć grupę z projektów szablonu w jednym pakiecie VSIX.
+Szablony tworzenia szablonów umożliwiają uwzględnianie szablonów w większych rozszerzeniach. Dołączenie szablonów w rozszerzeniach umożliwia zaimplementowanie kontroli wersji na plikach źródłowych i utworzenie grupy projektów szablonów w jednym pakiecie VSIX.
 
-W przypadku scenariuszy tworzenia podstawowego szablonu należy używać **Eksportuj szablon** kreatora, której dane wyjściowe do skompresowanego pliku. Aby uzyskać więcej informacji na temat tworzenia podstawowego szablonu zobacz [tworzenie projektów i szablonów elementów](../ide/creating-project-and-item-templates.md).
+W przypadku scenariuszy tworzenia szablonu podstawowego należy użyć kreatora **eksportu szablonów** , który wyprowadza dane wyjściowe do skompresowanego pliku. Aby uzyskać więcej informacji na temat tworzenia szablonu podstawowego, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
 
-Począwszy od programu Visual Studio 2017, skanowanie w poszukiwaniu szablonów elementów i projektów niestandardowych nie jest już odbywa się. Zamiast tego rozszerzenia, należy podać plik manifestu szablonu, które opisują lokalizację instalacji tych szablonów. Za pomocą instalacji w wersji 2 można zaktualizować rozszerzenia VSIX. W przypadku wdrożenia przy użyciu Instalatora MSI rozszerzenia, musisz ręcznie wygenerować plik manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015). Schematu manifestu szablonu jest udokumentowany w [Visual Studio Manifest odwołanie do schematu szablonu](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).
+Począwszy od programu Visual Studio 2017, skanowanie w poszukiwaniu niestandardowych szablonów projektów i elementów nie jest już wykonywane. Zamiast tego rozszerzenie musi dostarczyć pliki manifestu szablonu opisujące lokalizację instalacji tych szablonów. Aby zaktualizować rozszerzenia VSIX, można użyć instalacji w wersji zapoznawczej 2. W przypadku wdrożenia rozszerzenia przy użyciu pliku MSI musisz ręcznie wygenerować pliki manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualnianie szablony projektów i elementów dla programu Visual Studio niestandardowego 2017](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015). Schemat manifestu szablonu jest udokumentowany w [dokumentacji schematu manifestu szablonu programu Visual Studio](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).
 
-## <a name="create-a-project-template"></a>Tworzenie szablonu projektu
+## <a name="create-a-project-template"></a>Utwórz szablon projektu
 
-1. Utwórz projekt szablonu projektu. Można znaleźć szablonu projektu w **nowy projekt** okna dialogowego, w języku Visual Basic lub Visual C# **rozszerzalności** folderu.
+1. Utwórz projekt szablonu projektu. Szablon projektu można znaleźć w oknie dialogowym **Nowy projekt** , w folderze **rozszerzenia** Visual Basic lub Visual C#.
 
-     Szablon generuje plik klasy, ikony, plik .vstemplate, plik można edytować projekt o nazwie ProjectTemplate.vbproj lub ProjectTemplate.csproj i niektóre pliki, które zwykle są generowane przez innych typów projektów, takich resources.resx pliku AssemblyInfo. plik i pliku .settings. Każdy plik kodu zawiera typowe podstawieniach parametrów, gdzie jest to odpowiednie.
+     Szablon generuje plik klasy, ikonę, plik. vstemplate, edytowalny plik projektu o nazwie ProjectTemplate. vbproj lub ProjectTemplate. csproj i niektóre pliki, które są zwykle generowane przez inne typy projektów, takie jak plik zasobów. resx, plik AssemblyInfo i plik. Settings. Każdy plik kodu zawiera wspólne podstawienia parametrów, tam gdzie jest to konieczne.
 
-2. Dodawanie i usuwanie elementów z projektu, co jest wymagane dla projektu. Nie usuwaj pliku projektu można edytować, plik AssemblyInfo lub plik .vstemplate.
+2. Dodaj i Usuń elementy z projektu zgodnie z wymaganiami projektu. Nie usuwaj edytowalnego pliku projektu, pliku AssemblyInfo ani pliku. vstemplate.
 
-3. Zaktualizuj plik .vstemplate w celu uwzględnienia wszelkich dodanych i usuniętych. [Projektu](../extensibility/project-element-visual-studio-templates.md) musi zawierać element [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) elementu dla każdego pliku, które mają zostać uwzględnione w szablonie.
+3. Zaktualizuj plik. vstemplate, aby odzwierciedlał wszelkie dodatki i usunięcia. Element [projektu](../extensibility/project-element-visual-studio-templates.md) musi zawierać element [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) dla każdego pliku, który ma zostać uwzględniony w szablonie.
 
-4. Modyfikowanie plików kodu i innej zawartości widocznych dla użytkownika, a następnie dodaj odpowiedni parametr podstawienia.
+4. Zmodyfikuj pliki kodu i inną zawartość dodaną do użytkownika i Dodaj odpowiednie podstawiania parametrów.
 
-5. Zmodyfikuj wygenerowane zawartość zgodnie z potrzebami.
-
-6. Skompiluj projekt.
-
-     Visual Studio tworzy plik .zip zawierający szablon. Nie są one wdrażane, a nie jest dostępna w eksperymentalnym wystąpieniu.
-
-## <a name="create-an-item-template"></a>Utworzyć szablon elementu
-
-1. Tworzenie szablonu elementu projektu.
-
-     Szablon generuje plik klasy, ikony, plik .vstemplate i pliku AssemblyInfo. Plik klasy zawiera niektóre typowe podstawieniach parametrów.
-
-2. Dodawanie i usuwanie elementów z projektu, co jest wymagane dla projektu.
-
-3. Zaktualizuj plik .vstemplate w celu uwzględnienia wszelkich dodanych i usuniętych. [Projektu](../extensibility/project-element-visual-studio-templates.md) musi zawierać element [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) elementu dla każdego pliku, które mają zostać uwzględnione w szablonie.
-
-4. Modyfikowanie plików kodu i innej zawartości widocznych dla użytkownika, a następnie dodaj odpowiedni parametr podstawienia.
-
-5. Zmodyfikuj zawartość jest generowana zgodnie z potrzebami.
+5. W razie potrzeby zmodyfikuj wygenerowaną zawartość.
 
 6. Skompiluj projekt.
 
-     Visual Studio tworzy skompresowany plik, który zawiera ten szablon. Nie są one wdrażane, a nie jest dostępna w eksperymentalnym wystąpieniu.
+     Program Visual Studio tworzy plik zip, który zawiera szablon. Nie jest ona wdrożona i nie jest dostępna w eksperymentalnym wystąpieniu.
 
-## <a name="deploy-the-project-or-item-template"></a>Wdrażanie szablonu projektu lub elementu
+## <a name="create-an-item-template"></a>Utwórz szablon elementu
 
-1. Utwórz projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).
+1. Utwórz projekt szablonu elementu.
 
-2. Ustaw projekt VSIX jako projekt startowy. W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy i wybierz **Ustaw jako projekt startowy**.
+     Szablon generuje plik klasy, ikonę, plik. vstemplate i plik AssemblyInfo. Plik klasy zawiera kilka typowych podstawiania parametrów.
 
-3. Ustaw projekt szablonu projektu jako zasób usługi w projekcie VSIX. Otwórz plik .vsixmanifest. Przejdź do **zasoby** kartę, a następnie kliknij przycisk **New**.
+2. Dodaj i Usuń elementy z projektu zgodnie z wymaganiami projektu.
 
-    1. Ustaw **typu** pole **Microsoft.VisualStudio.ProjectTemplate** lub **Microsoft.VisualStudio.ItemTemplate**.
+3. Zaktualizuj plik. vstemplate, aby odzwierciedlał wszelkie dodatki i usunięcia. Element [projektu](../extensibility/project-element-visual-studio-templates.md) musi zawierać element [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) dla każdego pliku, który ma zostać uwzględniony w szablonie.
 
-    2. Dla źródła, wybierz **projekt w bieżącym rozwiązaniu** opcji, a następnie wybierz projekt, który zawiera ten szablon.
+4. Zmodyfikuj pliki kodu i inną zawartość dodaną do użytkownika i Dodaj odpowiednie podstawiania parametrów.
 
-4. Skompiluj rozwiązanie, a następnie naciśnij klawisz F5. Zostanie wyświetlone wystąpienie eksperymentalne.
+5. W razie potrzeby zmodyfikuj wygenerowaną zawartość.
 
-5. Dla projektu szablonu projektu, powinien zostać wyświetlony na liście szablonu projektu **nowy projekt** okna dialogowego (**plik / nowy / Project**), a w Visual C# lub Visual Basic węzła. Dla szablonu elementu projektu, powinien zostać wyświetlony szablon elementu okno dialogowe Dodaj nowy element na liście (w **Eksploratora rozwiązań**, wybierz węzeł projektu i kliknij **Add / nowy element**).
+6. Skompiluj projekt.
 
-## <a name="see-also"></a>Zobacz także
+     Program Visual Studio tworzy skompresowany plik, który zawiera szablon. Nie jest ona wdrożona i nie jest dostępna w eksperymentalnym wystąpieniu.
+
+## <a name="deploy-the-project-or-item-template"></a>Wdróż szablon projektu lub elementu
+
+1. Utwórz projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablon projektu VSIX](../extensibility/vsix-project-template.md).
+
+2. Ustaw projekt VSIX jako projekt startowy. W **Eksplorator rozwiązań**wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **Ustaw jako projekt startowy**.
+
+3. Ustaw projekt szablonu projektu jako element zawartości projektu VSIX. Otwórz plik. vsixmanifest. Przejdź do karty **składniki** i kliknij pozycję **Nowy**.
+
+    1. Ustaw wartość pola **Typ** na **Microsoft. VisualStudio. ProjectTemplate** lub **Microsoft. VisualStudio. ItemTemplate**.
+
+    2. W obszarze Źródło wybierz opcję **projekt w bieżącym rozwiązaniu** , a następnie wybierz projekt, który zawiera szablon.
+
+4. Skompiluj rozwiązanie i naciśnij klawisz F5. Zostanie wyświetlone wystąpienie eksperymentalne.
+
+5. W przypadku projektu szablonu projektu powinien zostać wyświetlony szablon projektu w oknie dialogowym **Nowy projekt** (**plik/nowy/projekt**) w węźle Visual C# lub Visual Basic. Dla projektu szablonu elementu powinien zostać wyświetlony szablon elementu na liście w oknie dialogowym Dodaj nowy element (w **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie kliknij przycisk **Dodaj/nowy element**).
+
+## <a name="see-also"></a>Zobacz też
 
 - [Informacje o szablonach programu Visual Studio](../ide/visual-studio-template-reference.md)

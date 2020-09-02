@@ -1,5 +1,5 @@
 ---
-title: IDebugSourceServerModule | Dokumentacja firmy Microsoft
+title: IDebugSourceServerModule | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0dec9408d0cd1907a533a8cabe740832fe652398
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555699"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Reprezentuje informacji o serwerze źródłowym, który jest zawarty w pliku PDB.  
+Reprezentuje informacje o serwerze źródłowym, które znajdują się w pliku PDB.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,18 +29,18 @@ IDebugSourceServerModule : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Ten interfejs jest implementowany przez debugera aparatów i wykorzystana przez debugera interfejsu użytkownika.  
+ Ten interfejs jest implementowany przez aparaty debugera i zużywany przez interfejs użytkownika debugera.  
   
 ## <a name="methods"></a>Metody  
- W poniższej tabeli przedstawiono metody `IDebugSourceServerModule`.  
+ W poniższej tabeli przedstawiono metody `IDebugSourceServerModule` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
 |[GetSourceServerData, metoda](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Pobiera tablicę informacji o serwerze źródłowym.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

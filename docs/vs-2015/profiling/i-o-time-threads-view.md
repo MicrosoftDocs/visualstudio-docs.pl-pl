@@ -1,5 +1,5 @@
 ---
-title: -O Time (Widok wątków) | Dokumentacja firmy Microsoft
+title: I-O Time (Widok wątków) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86c14292edcf8f132a14b67e931c5121105a9dc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187445"
 ---
 # <a name="io-time-threads-view"></a>I/O Time (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Te segmenty na osi czasu są skojarzone z zablokowania prób są podzielone na We/Wy. Oznacza to, że wątek czeka na zakończenie operacji We/Wy. Wątek może został zablokowany w interfejsie API, lub zaczekaj I dotyczących wejścia/wyjścia jądra, który Concurrency Visualizer jest liczy się jako operacji We/Wy. Interfejsy API, takie jak `CreateFile()`, `ReadFile()`, i `WSARecv()` należą do tej grupy.  
+Te segmenty na osi czasu są skojarzone z czasem blokowania, które są klasyfikowane jako we/wy. Oznacza to, że wątek oczekuje na zakończenie operacji we/wy. Wątek mógł zostać zablokowany w interfejsie API lub przez jądro powiązane we/wy Zaczekaj, że Wizualizator współbieżności zlicza jako we/wy. Interfejsy API, takie jak `CreateFile()` , `ReadFile()` i `WSARecv()` mieszczą się w tej grupie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

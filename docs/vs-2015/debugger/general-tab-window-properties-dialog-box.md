@@ -1,5 +1,5 @@
 ---
-title: Karta Ogólne, okno dialogowe właściwości | Dokumentacja firmy Microsoft
+title: Karta Ogólne, okno dialogowe Właściwości okna | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,28 +12,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b8733ef63a60baa1b268c42c8780cdf80f2674b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159961"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Użyj **ogólne** kartę, aby wyświetlić informacje dotyczące wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
+Karta **Ogólne** służy do wyświetlania informacji o wybranym oknie. Aby wyświetlić okno [dialogowe Właściwości okna](../debugger/window-properties-dialog-box.md), Przenieś fokus do okna [Widok systemu Windows](../debugger/windows-view.md) . Wybierz dowolny węzeł okna w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .  
   
- Następujące ustawienia są dostępne na **ogólne** karty:  
+ Na karcie **Ogólne** dostępne są następujące ustawienia:  
   
 |Wpis|Opis|  
 |-----------|-----------------|  
-|**Tytuł okna**|Tekst w tytuł okna lub tekst zawarty w oknie, jeśli formant.|  
-|**Uchwyt okna**|Unikatowy identyfikator tego okna. Numery uchwyt okna są ponownie; identyfikują one oknem tylko okres istnienia tego okna.|  
-|**Proces okna**|Wirtualny adres funkcji procedury okna dla tego okna. To pole wskazuje również, czy to okno jest oknem Unicode i czy jest będące podklasami.|  
-|**Prostokąt**|Prostokąt otaczający okna. Rozmiar prostokąta jest również wyświetlany. Jednostki są pikseli współrzędne ekranu.|  
-|**Przywrócona Rect**|Prostokąt otaczający przywrócone okna. Rozmiar prostokąta jest również wyświetlany. Przywrócona prostokąt będzie różnią się od prostokąt, tylko wtedy, gdy okno jest zmaksymalizowane, lub zminimalizowana. Jednostki są pikseli współrzędne ekranu.|  
-|**Prostokąt klienta**|Prostokąt otaczający obszaru klienckiego okna. Rozmiar prostokąta jest również wyświetlany. Jednostki są względem lewej górnej części obszaru klienckiego okna w pikselach.|  
-|**Dojście wystąpienia**|Dojście wystąpienia aplikacji. Uchwyty wystąpienia nie są unikatowe.|  
-|**Identyfikator formantu lub uchwyt Menu**|Jeśli okno jest wyświetlane jest okno podrzędne, jest wyświetlana etykieta identyfikator kontrolki. Identyfikator formantu jest liczba całkowita, która identyfikuje identyfikator to okno podrzędne kontrolki. Jeśli okno jest wyświetlane nie jest oknem podrzędnym, jest wyświetlana etykiety Menu obsługi. Uchwyt menu jest liczbą całkowitą, która identyfikuje uchwyt menu skojarzone z tego okna.|  
-|**Dane użytkownika**|Dane specyficzne dla aplikacji, który jest dołączony do tej struktury okna.|  
-|**Bajty okna**|Liczba bajtów dodatkowej skojarzone z tego okna. Znaczenie tych bajtów jest określany przez aplikację. Rozwiń pole listy, aby wyświetlić wartości bajtów w formacie typu DWORD.|
+|**Podpis okna**|Tekst w podpisie okna lub tekst znajdujący się w oknie, jeśli jest to formant.|  
+|**Uchwyt okna**|Unikatowy identyfikator tego okna. Numery uchwytów okien są ponownie używane; identyfikują one okno tylko dla okresu istnienia tego okna.|  
+|**Proces okna**|Adres wirtualny funkcji procedury okna dla tego okna. To pole wskazuje również, czy to okno jest oknem Unicode i czy jest podklasą.|  
+|**Prostokąt**|Prostokąt ograniczający dla okna. Wyświetlany jest również rozmiar prostokąta. Jednostki są pikselami we współrzędnych ekranu.|  
+|**Przywrócony prostokąt**|Prostokąt ograniczający dla przywróconego okna. Wyświetlany jest również rozmiar prostokąta. Przywrócony prostokąt będzie się różnić w przypadku, gdy okno jest zmaksymalizowane lub zminimalizowane. Jednostki są pikselami we współrzędnych ekranu.|  
+|**Prostokąt klienta**|Prostokąt ograniczający obszar klienta okna. Wyświetlany jest również rozmiar prostokąta. Jednostki są pikselami względem lewego górnego rogu obszaru klienta okna.|  
+|**Dojście wystąpienia**|Dojście do wystąpienia aplikacji. Uchwyty wystąpienia nie są unikatowe.|  
+|**Identyfikator lub uchwyt menu kontrolki**|Jeśli wyświetlane okno jest oknem podrzędnym, zostanie wyświetlona etykieta identyfikator kontrolki. Identyfikator kontrolki jest liczbą całkowitą, która identyfikuje identyfikator formantu tego okna podrzędnego. Jeśli okno jest wyświetlane nie jest oknem podrzędnym, zostanie wyświetlona etykieta uchwytu menu. Uchwyt menu jest liczbą całkowitą, która identyfikuje uchwyt menu skojarzonego z tym oknem.|  
+|**Dane użytkownika**|Dane specyficzne dla aplikacji, które są dołączone do tej struktury okna.|  
+|**Bajty okna**|Liczba dodatkowych bajtów skojarzonych z tym oknem. Znaczenie tych bajtów jest określane przez aplikację. Rozwiń pole listy, aby wyświetlić wartości bajtów w formacie DWORD.|

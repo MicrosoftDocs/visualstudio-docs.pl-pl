@@ -1,5 +1,5 @@
 ---
-title: Kopiuj zaznaczenie | Dokumenty firmy Microsoft
+title: Kopiuj zaznaczenie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553230"
 ---
 # <a name="copy-selection"></a>Kopiuj zaznaczenie
-Aby skopiować cały stos połączeń z karty raportu, kliknij przycisk **Kopiuj**. Następnie można wkleić stos wywołań w dowolnym programie, który obsługuje tę akcję.
+Aby skopiować cały stos wywołań z karty raport, kliknij przycisk **Kopiuj**. Następnie można wkleić stos wywołań w dowolnym programie, który obsługuje tę akcję.
 
 ## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Otwieranie widoku komunikatów w Znajdź okno | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: otwieranie widoku komunikatów z okna wyszukiwania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,45 +13,45 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157884"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Instrukcje: Otwieranie widoku komunikatów z poziomu okna Znajdowanie
+# <a name="how-to-open-messages-view-from-find-window"></a>Porady: otwieranie widoku komunikatów w Znajdź okno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Może okazać się łatwe w użyciu **Znajdź okno** okno dialogowe, aby wybrać okno docelowego, a następnie otwórz widok komunikatów tego okna.  
+Może się okazać, że można użyć okna dialogowego **Znajdowanie okna** , aby wybrać okno docelowe, a następnie otworzyć widok komunikatów tego okna.  
   
-### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Aby otworzyć okno widoku komunikatów za pomocą okna dialogowego Znajdź okno  
+### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Aby otworzyć okno wyświetlania komunikatów przy użyciu okna dialogowego Znajdź okno  
   
-1. Rozmieść aplikacji dla systemu windows, tak że Spy ++ i okno docelowe są widoczne.  
+1. Rozmieść okna w taki sposób, aby były widoczne zarówno program Spy + +, jak i okno docelowe.  
   
-2. Z **Spy** menu, wybierz **Znajdź okno**.  
+2. Z menu **Spy** wybierz pozycję **Znajdź okno**.  
   
-     [Okna dialogowego Znajdowanie](../debugger/find-window-dialog-box.md) zostanie otwarty.  
+     Zostanie otwarte okno [dialogowe Znajdowanie okna](../debugger/find-window-dialog-box.md) .  
   
-3. Z **Windows** kartę, przeciągnij **Wyszukiwarka** przedziale docelowego. Przeciągnij narzędzie **Znajdź okno** okno dialogowe wyświetla szczegóły wybranego okna.  
+3. Na karcie **Windows** przeciągnij **Narzędzie wyszukiwania** nad oknem docelowym. Podczas przeciągania narzędzia okno dialogowe **Znajdowanie okna** wyświetla szczegóły w wybranym oknie.  
   
-     — lub —  
+     oraz  
   
-     Jeśli uchwyt okna, które chcesz zbadać (na przykład, które są kopiowane z debugera), należy wpisać go do **obsługi** pola tekstowego.  
+     Jeśli masz dojście do okna, które chcesz przejrzeć (na przykład skopiowane z debugera), możesz wpisać je w polu tekstowym **uchwyt** .  
   
-4. W obszarze **Pokaż**, wybierz opcję **wiadomości**.  
+4. W obszarze **Pokaż**wybierz pozycję **komunikaty**.  
   
-5. Naciśnij klawisz **OK**.  
+5. Naciśnij przycisk **OK**.  
   
-     Blank [widoku komunikatów](../debugger/messages-view.md) zostanie otwarte okno i **wiadomości** menu jest dodawany do programu Spy ++ — pasek narzędzi.  
+     Zostanie otwarte okno [Wyświetl puste wiadomości](../debugger/messages-view.md) , a do paska narzędzi Spy + + zostanie dodane menu **komunikatów** .  
   
-6. Z **wiadomości** menu, wybierz **opcje rejestrowania**.  
+6. Z menu **wiadomości** wybierz pozycję **Opcje rejestrowania**.  
   
-     [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md) zostanie otwarty.  
+     Zostanie otwarte okno [dialogowe Opcje komunikatów](../debugger/message-options-dialog-box.md) .  
   
-7. Wybierz opcje dla komunikatów, które mają być wyświetlane.  
+7. Wybierz opcje dla komunikatów, które chcesz wyświetlić.  
   
-8. Naciśnij klawisz **OK** aby rozpocząć rejestrowanie komunikatów.  
+8. Naciśnij przycisk **OK** , aby rozpocząć rejestrowanie komunikatów.  
   
-     W zależności od opcji wybranych wiadomości było rozpocząć przesyłanie strumieniowe do aktywnego okna widoku komunikatów.  
+     W zależności od wybranych opcji komunikaty rozpoczynają przesyłanie strumieniowe do okna widok aktywnych komunikatów.  
   
-9. Jeśli masz wystarczającej liczby wiadomości, wybierz **Zatrzymaj rejestrowanie** z **wiadomości** menu.
+9. Gdy masz wystarczającą liczbę komunikatów, wybierz pozycję **Zatrzymaj rejestrowanie** z menu **wiadomości** .

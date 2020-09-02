@@ -1,5 +1,5 @@
 ---
-title: 'DA0003: Wiele przykładów jądra | Dokumentacja firmy Microsoft'
+title: 'DA0003: wiele przykładów jądra | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,32 +15,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad9a0671595d4628932ff4f2db41a137e060c4d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158711"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Wiele przykładów jądra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identyfikator reguły | DA0003 |  
-| Kategoria | Profilowanie użycia narzędzia |  
-| Profilowanie metody | Próbkowanie |  
-| Komunikat | Masz dużą część próbek w trybie jądra. To może wskazywać dużą aktywność We/Wy lub wysokie tempo przełączania kontekstu. Należy wziąć pod uwagę aplikacji z użyciem trybu instrumentacji. |  
-| Typ reguły | Informacji |  
+| Kategoria | Użycie narzędzia profilowania |  
+| Metody profilowania | Próbkowanie |  
+| Komunikat | Masz dużą część przykładów w trybie jądra. Może to wskazywać na dużą liczbę operacji we/wy lub dużą Częstotliwość przełączania kontekstu. Rozważ ponowne profilowania aplikacji przy użyciu trybu Instrumentacji. |  
+| Typ reguły | Informacje |  
   
 ## <a name="cause"></a>Przyczyna  
- Znaczna część przykłady stosu wywołań, które zostały zebrane dla aplikacji zostały wykonywania w trybie jądra. Należy wziąć pod uwagę, profilowanie aplikacji przy użyciu innej metody profilowania.  
+ Znaczna część przykładów stosu wywołań, które zostały zebrane dla aplikacji, została uruchomiona w trybie jądra. Rozważ Profilowanie aplikacji przy użyciu innej metody profilowania.  
   
 ## <a name="rule-description"></a>Opis reguły  
- W Windows kod może być wykonywana w trybie jądra lub w trybie użytkownika. (Tryb jądra jest również nazywane trybie uprzywilejowanym). Tylko kod niskiego poziomu systemu, takie jak sterowniki urządzeń, działa w trybie jądra. Aplikacja w trybie użytkownika, można przejść do trybu jądra do wykonywania operacji We/Wy, poczekaj, aż wątek lub procesu synchronizacji w nim elementów podstawowych lub wykonać wywołania systemowe.  
+ W systemie Windows kod może być wykonywany w trybie jądra lub w trybie użytkownika. (Tryb jądra jest również nazywany trybem uprzywilejowanym). Tylko kod systemu niskiego poziomu, taki jak sterowniki urządzeń, działa w trybie jądra. Aplikacja w trybie użytkownika może przejść do trybu jądra w celu wykonania operacji we/wy, oczekiwania na elementy pierwotne synchronizacji wątków lub procesów lub wywołania systemowego.  
   
- Próbkowanie jest najbardziej efektywne w przypadku profilowania aplikacji, które spędzają większość czasu wykonywania pracy w trybie użytkownika. Liczba próbek, które zostały zebrane podczas wykonywania aplikacji w trybie jądra można wskazać częstych operacji We/Wy lub może wskazywać tego kontekstu, w których występują przełączników. Żadna z tych operacji można sprawdzić przy użyciu metody próbkowania. Podjęto zbyt wiele przykładów trybu jądra, dane z próbkowania może nie zawierać wystarczającej liczby próbek trybu użytkownika będzie statystycznie istotne.  
+ Próbkowanie jest najbardziej efektywne podczas profilowania aplikacji, które spędzają większość czasu pracy w trybie użytkownika. Liczba próbek zebranych podczas wykonywania aplikacji w trybie jądra może wskazywać częste operacje we/wy lub mogą wskazywać, że występują przełączenia kontekstu. Żadnej z tych operacji nie można zbadać przy użyciu metody próbkowania. Jeśli są pobierane zbyt wiele próbek trybu jądra, dane próbkowania nie mogą zawierać wystarczającej liczby próbek trybu użytkownika do statystycznego znaczenia.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Należy wziąć pod uwagę profilowania aplikację ponownie przy użyciu jednego z następujących opcji:  
+ Rozważ ponowne profilowania aplikacji przy użyciu jednej z następujących opcji:  
   
-- Profile, przy użyciu metody instrumentacji.  
+- Profiluj przy użyciu metody instrumentacji.  
   
-- Zwiększ częstotliwość próbkowania w celu próbuje zebrać więcej przykładów w trybie użytkownika.
+- Zwiększ częstotliwość próbkowania, aby próbować zebrać więcej próbek w trybie użytkownika.

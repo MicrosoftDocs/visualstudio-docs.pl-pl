@@ -1,5 +1,5 @@
 ---
-title: Decyzje projektowe dotyczące kontroli źródła | Dokumentacja firmy Microsoft
+title: Decyzje dotyczące projektowania kontroli źródła | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89d125dc52340e8528ee9692d5de00784632e6f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187897"
 ---
 # <a name="source-control-design-decisions"></a>Decyzje projektowe dotyczące kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Podczas implementowania kontroli źródła należy rozważyć następujące decyzje dotyczące projektu dla projektów.  
+Podczas implementowania kontroli źródła należy wziąć pod uwagę następujące decyzje projektowe.  
   
-## <a name="will-information-be-shared-or-private"></a>Informacje będą współużytkowany lub prywatny?  
- Najważniejsza decyzja projektowa, możesz wprowadzić to, jakie informacje są zabezpieczać i co to jest prywatna. Na przykład lista plików dla projektu jest udostępniany, ale w ramach tej listy plików, niektórzy użytkownicy może być wskazane pliki prywatne. Ustawienia kompilatora są udostępniane, ale projektu startowego jest zwykle oznaczony jako prywatny. Ustawienia są wyłącznie udostępnione, udostępnione za pomocą zastąpienia lub czysto prywatnych. Zgodnie z projektem, prywatne elementy, takie jak rozwiązania użytkownika opcje plików (suo) nie są sprawdzane w [!INCLUDE[vsvss](../../includes/vsvss-md.md)]. Należy przechowywać poufnych informacji w plikach prywatnych, takich jak plik .suo lub określonego pliku prywatnego, tworzenia, np. plik csproj.user dla języka Visual C# lub. plik vbproj.user dla języka Visual Basic.  
+## <a name="will-information-be-shared-or-private"></a>Czy informacje będą udostępniane lub prywatne?  
+ Najważniejsze podejmowane decyzje projektowe to informacje, które można udostępniać i jakie są prywatne. Na przykład lista plików dla projektu jest udostępniona, ale w ramach tej listy plików niektórzy użytkownicy mogą chcieć mieć prywatne pliki. Ustawienia kompilatora są udostępniane, ale projekt startowy jest ogólnie prywatny. Ustawienia są wyłącznie udostępniane, udostępniane z przesłonięciem lub czysto prywatnie. Po zaprojektowaniu elementy prywatne, takie jak pliki opcji użytkownika rozwiązania (. suo), nie są sprawdzane [!INCLUDE[vsvss](../../includes/vsvss-md.md)] . Pamiętaj, aby przechowywać informacje prywatne w plikach prywatnych, takich jak plik. suo, lub określony prywatny plik, na przykład plik. csproj. User dla Visual C# lub plik. vbproj. User dla Visual Basic.  
   
- Ta decyzja nie jest kompleksowych i mogą być wykonane na podstawie elementu —.  
+ Ta decyzja nie jest cała włącznie i może być wykonywana na poszczególnych elementach.  
   
-## <a name="will-the-project-include-special-files"></a>Projekt zawierają specjalne pliki?  
- Inny decyzja projektowa ważne jest, czy do struktury projektu używa specjalne pliki. Specjalne pliki są ukryte pliki, które opierają się pliki, które są widoczne w Eksploratorze rozwiązań i zaewidencjonowania i wyewidencjonowania okien dialogowych. Jeśli używasz specjalnych plików, należy przestrzegać następujących wytycznych:  
+## <a name="will-the-project-include-special-files"></a>Czy projekt będzie zawierać specjalne pliki?  
+ Inną ważną decyzją projektową jest to, czy struktura projektu używa specjalnych plików. Pliki specjalne to ukryte pliki, które podstawą pliki, które są widoczne w Eksplorator rozwiązań i w oknach dialogowych ewidencjonowanie i wyewidencjonowywania. Jeśli używasz specjalnych plików, postępuj zgodnie z następującymi wskazówkami:  
   
-1. Nie należy kojarzyć specjalne pliki z głównego węzła projektu — oznacza to, z projektem samego pliku. Plik projektu musi być pojedynczy plik.  
+1. Nie należy kojarzyć specjalnych plików z węzłem głównym projektu — to znaczy, z samym plikiem projektu. Plik projektu musi być pojedynczym plikiem.  
   
-2. Gdy specjalne pliki są dodane, usunięte lub zmieniono jego nazwę w projekcie w języku odpowiednim <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> zdarzenia musi być uruchamiane z ustawioną flagą wskazującą są specjalne pliki. Te zdarzenia są wywoływane przez środowisko w odpowiedzi na projekt wywołanie odpowiedniego <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody.  
+2. Po dodaniu lub usunięciu plików specjalnych lub zmianie ich nazwy w projekcie odpowiednie <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> zdarzenia muszą być wywoływane z zestawem flag, który wskazuje, że pliki są plikami specjalnymi. Zdarzenia te są wywoływane przez środowisko w odpowiedzi na projekt wywołujący odpowiednie <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metody.  
   
-3. Kiedy wywołuje swój projekt lub edytor <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> dla pliku, specjalne pliki skojarzone z tym plikiem nie zostały automatycznie wyewidencjonowane. Przekaż specjalne pliki w wraz z plikiem nadrzędnym. Środowisko wykryje relacji między wszystkie pliki, które są przekazywane w i odpowiednio Ukryj specjalne pliki w Interfejsie użytkownika wyewidencjonowywania.  
+3. Gdy projekt lub Edytor wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> plik, pliki specjalne skojarzone z tym plikiem nie są automatycznie wyewidencjonowywane. Przekaż pliki specjalne w programie wraz z plikiem nadrzędnym. Środowisko wykrywa relację między wszystkimi plikami, które są przesyłane, i odpowiednio ukrywa pliki specjalne w interfejsie użytkownika wyewidencjonowywania.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   

@@ -1,5 +1,5 @@
 ---
-title: Widok interakcji warstwy | Dokumentacja firmy Microsoft
+title: Widok interakcji między warstwami | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,48 +14,48 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145524"
 ---
 # <a name="tier-interactions-view"></a>Widok interakcji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje o czasy wykonania w funkcjach aplikacji wielowarstwowych, które komunikują się z bazami danych za pośrednictwem [!INCLUDE[vstecado](../includes/vstecado-md.md)]. Dane są zbierane tylko w przypadku wywołania funkcji synchronicznej.  
+Profilowanie interakcji między warstwami zawiera dodatkowe informacje o czasach wykonywania w funkcjach aplikacji wielowarstwowych komunikujących się z bazami danych za pomocą programu [!INCLUDE[vstecado](../includes/vstecado-md.md)] . Dane są zbierane tylko dla wywołań funkcji synchronicznych.  
   
  **Wymagania**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
   
-  Widok interakcji wyświetla dane interakcji między warstwami na dwa okienka:  
+  Widok Interakcje wyświetla dane interakcji warstwy w dwóch okienkach:  
   
-- W okienku głównym jest drzewa hierarchicznego. Wiersz najwyższego poziomu zawiera zagregowane dane dotyczące połączeń bazy danych [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strony lub procesu. Węzły podrzędne zawierają zagregowane dane dotyczące połączenia bazy danych elementu nadrzędnego.  
+- Okienko główne jest drzewem hierarchicznym. Wiersz najwyższego poziomu zawiera zagregowane dane dla połączeń bazy danych na [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stronie lub w procesie. Węzły podrzędne zawierają zagregowane dane dla połączeń bazy danych nadrzędnych.  
   
-- Po kliknięciu węzła wywołania bazy danych w okienku głównym, dane wystąpienia wywołanie bazy danych są wyświetlane w okienku szczegółów.  
+- Po kliknięciu węzła wywołanie bazy danych w okienku głównym dane wystąpienia wywołania bazy danych są wyświetlane w okienku szczegółów.  
   
-  Czas jest wyświetlany jako liczbę milisekund lub liczby taktów zegara procesora CPU. Aby zmienić jednostkę czasu, wyświetlany, kliknij przycisk **narzędzia** menu, kliknij przycisk **opcje**, a następnie wybierz jedno z **Pokaż czas wartości w formie** opcje.  
+  Czas jest wyświetlany jako liczba milisekund lub liczba taktów zegara procesora. Aby zmienić wyświetlaną jednostkę czasu, kliknij menu **Narzędzia** , kliknij pozycję **Opcje**, a następnie wybierz jedną z opcji **Pokaż wartości czasu jako** opcje.  
   
 ## <a name="master-pane"></a>Okienko główne  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
-|**Nazwa**|— W przypadku wiersza najwyższego poziomu, nazwa PROFILOWANEGO procesu lub strony sieci Web.<br />– W przypadku wiersza połączenia bazy danych, nazwę serwera, który jest hostem bazy danych.|  
-|**Baza danych**|Nazwa bazy danych (tylko wiersze połączenia bazy danych).|  
-|**Liczba**|Całkowita liczba żądań, które są generowane przez proces, strony sieci Web lub połączenia z bazą danych.|  
-|**Łączny czas, który upłynął**|Całkowity czas spędzony na wykonywaniu każde żądanie jeden z procesów, strony sieci Web lub połączenia z bazą danych.|  
-|**Maksymalny czas, który upłynął**|Maksymalny czas poświęcony na wykonanie dowolnego jedno żądanie z procesu, strony sieci Web lub połączenia z bazą danych.|  
-|**Minimalny czas trwania**|Minimalny czas spędzony na wykonywaniu każde żądanie jeden z procesów, strony sieci Web lub połączenia z bazą danych.|  
-|**Średni czas trwania**|Średni czas spędzony na wykonywaniu żądania z procesu, strony sieci Web lub połączenia z bazą danych.|  
+|**Nazwa**|— Dla wiersza najwyższego poziomu nazwa profilowanego procesu lub strony sieci Web.<br />— Dla wiersza połączenie z bazą danych nazwa serwera, który hostuje bazę danych programu.|  
+|**Database** (Baza danych)|Nazwa bazy danych (tylko wiersze połączenia bazy danych).|  
+|**Liczbą**|Całkowita liczba żądań generowanych przez proces, stronę sieci Web lub połączenie z bazą danych.|  
+|**Łączny czas, który upłynął**|Łączny czas spędzony na wykonywaniu jednego żądania na podstawie procesu, strony sieci Web lub połączenia bazy danych.|  
+|**Maksymalny czas, który upłynął**|Maksymalny czas wykonywania jednego żądania na podstawie procesu, strony sieci Web lub połączenia z bazą danych.|  
+|**Minimalny czas, który upłynął**|Minimalny czas trwania każdego żądania z procesu, strony sieci Web lub połączenia bazy danych.|  
+|**Średni czas, który upłynął**|Średni czas poświęcany na wykonanie żądania na podstawie procesu, strony sieci Web lub połączenia z bazą danych.|  
   
-## <a name="database-connection-details-pane"></a>W okienku szczegółów połączenia bazy danych  
+## <a name="database-connection-details-pane"></a>Okienko Szczegóły połączenia z bazą danych  
   
 |Kolumna|Opis|  
 |------------|-----------------|  
 |**Tekst polecenia**|Zapytanie SQL żądania.|  
-|**Liczba zapytań**|Liczba przypadków, gdy zapytanie zostało uruchomione.|  
-|**Łączny czas, który upłynął**|Całkowity czas spędzony na wykonywaniu wystąpień zapytania.|  
-|**Maksymalny czas, który upłynął**|Maksymalny czas spędzony na wykonywaniu wszelkie jedno wystąpienie zapytania.|  
-|**Minimalny czas trwania**|Minimalny czas spędzony na wykonywaniu wszelkie jedno wystąpienie zapytania.|  
-|**Średni czas trwania**|Średni czas spędzony na wykonywaniu wystąpienie zapytania.|
+|**Liczba zapytań**|Liczba uruchomień zapytania.|  
+|**Łączny czas, który upłynął**|Łączny czas spędzony na wykonywaniu wystąpień zapytania.|  
+|**Maksymalny czas, który upłynął**|Maksymalny czas spędzony na wykonywaniu jednego wystąpienia zapytania.|  
+|**Minimalny czas, który upłynął**|Minimalny czas spędzony na wykonywaniu jednego wystąpienia zapytania.|  
+|**Średni czas, który upłynął**|Średni czas spędzony na wykonywaniu wystąpienia zapytania.|

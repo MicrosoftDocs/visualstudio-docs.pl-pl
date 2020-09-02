@@ -1,5 +1,5 @@
 ---
-title: '&lt;zależność&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;Dependency — &gt; element (wdrożenie ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -27,16 +27,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187783"
 ---
-# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależność&gt; — Element (wdrażanie ClickOnce)
+# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Dependency — &gt; element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście aplikacji.  
+Identyfikuje wersję aplikacji do zainstalowania i lokalizację manifestu aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -73,64 +73,64 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 </dependency>  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `dependency` Element jest wymagany. Go nie ma żadnych atrybutów. Manifest wdrożenia mogą mieć wiele `dependency` elementów.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `dependency`Element jest wymagany. Nie ma atrybutów. Manifest wdrożenia może zawierać wiele `dependency` elementów.  
   
- `dependency` Element najczęściej wyraża zależności dla głównej aplikacji na zestawach zawartych w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Jeśli aplikacja Main.exe wykorzystuje zestaw o nazwie DotNetAssembly.dll, tego zestawu musi być wymieniony w sekcji zależności. Zależność, jednak można również wyrazić innych typów zależności, takie jak zależności od określonej wersji środowiska CLR zestawu w globalnej pamięci podręcznej zestawów (GAC) lub obiektów COM. Ponieważ jest to technologia wdrożenia bezobsługowego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nie można zainicjować pobranie i zainstalowanie tego rodzaju zależności, ale uniemożliwia uruchomienie aplikacji, jeśli nie istnieją co najmniej jedną z określonymi zależnościami.  
+ `dependency`Element zwykle wyraża zależności dla głównej aplikacji w zestawach zawartych w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Jeśli aplikacja Main.exe zużywa zestaw o nazwie DotNetAssembly.dll, ten zestaw musi znajdować się w sekcji zależności. Zależność, jednak może również wyznaczać inne typy zależności, takie jak zależności w określonej wersji środowiska uruchomieniowego języka wspólnego, w zestawie w globalnej pamięci podręcznej zestawów (GAC) lub w obiekcie COM. Ponieważ nie jest to technologia wdrażania bez dotyku, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nie można zainicjować pobierania i instalacji tych typów zależności, ale uniemożliwia uruchomienie aplikacji, jeśli co najmniej jedno z określonych zależności nie istnieje.  
   
 ## <a name="dependentassembly"></a>dependentAssembly  
- Wymagana. Ten element zawiera `assemblyIdentity` elementu. W poniższej tabeli przedstawiono atrybuty `dependentAssembly` obsługuje.  
+ Wymagany. Ten element zawiera `assemblyIdentity` element. W poniższej tabeli przedstawiono atrybuty obsługiwane przez program `dependentAssembly` .  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`preRequisite`|Opcjonalny. Określa, że ten zestaw powinna już istnieć w pamięci podręcznej GAC. Prawidłowe wartości to `true` i `false`. Jeśli `true`i określony zestaw nie istnieje w pamięci podręcznej GAC, aplikacja nie może uruchomić.|  
-|`visible`|Opcjonalny. Określa tożsamość aplikacji najwyższego poziomu, łącznie z jej zależnościami. Używane wewnętrznie przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] na potrzeby zarządzania i aktywacji aplikacji.|  
-|`dependencyType`|Wymagany. Relacja między tą zależnością i aplikacji. Prawidłowe wartości to:<br /><br /> -   `install`. Składnik stanowi oddzielną instalacją od bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację.|  
-|`codebase`|Opcjonalna. Pełna ścieżka do manifestu aplikacji.|  
-|`size`|Opcjonalny. Rozmiar manifest aplikacji, w bajtach.|  
+|`preRequisite`|Opcjonalny. Określa, że ten zestaw powinien już istnieć w pamięci podręcznej GAC. Prawidłowe wartości to `true` i `false` . Jeśli `true` określony zestaw nie istnieje w pamięci PODręcznej GAC, uruchomienie aplikacji nie powiedzie się.|  
+|`visible`|Opcjonalny. Identyfikuje tożsamość aplikacji najwyższego poziomu, łącznie z jej zależnościami. Używane wewnętrznie przez program [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] do zarządzania magazynem i aktywacją aplikacji.|  
+|`dependencyType`|Wymagany. Relacja między tą zależnością a aplikacją. Prawidłowe wartości:<br /><br /> -   `install`. Składnik reprezentuje oddzielną instalację od bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację.|  
+|`codebase`|Opcjonalny. Pełna ścieżka do manifestu aplikacji.|  
+|`size`|Opcjonalny. Rozmiar manifestu aplikacji w bajtach.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Wymagane. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama, jak opisano w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.  
+ Wymagany. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama jak opisana w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeście aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagana. Określa nazwę aplikacji.|  
-|`Version`|Wymagany. Określa numer wersji aplikacji, w następującym formacie: `major.minor.build.revision`|  
-|`publicKeyToken`|Wymagany. Określa ciąg szesnastkowy 16 znaków, który reprezentuje ostatnie 8 bajtów Skrót SHA-1 klucza publicznego, w ramach której aplikacja lub zestaw jest podpisany. Klucz publiczny używany do podpisywania musi wynosić 2048 bitów lub nowszej.|  
-|`processorArchitecture`|Wymagany. Określa procesor. Prawidłowe wartości to `x86` dla Windows 32-bitowe i `IA64` dla Windows 64-bitowych.|  
-|`Language`|Opcjonalny. Określa część dwóch kodów języka zestawu. Na przykład: EN-US, który oznacza dla języka angielskiego (US). Wartość domyślna to `neutral`. Tego elementu jest `asmv2` przestrzeni nazw.|  
-|`type`|Opcjonalna. Dla zapewnienia zgodności z Windows side-by-side zainstalować technologii. Jest to jedyna wartość dozwolone `win32`.|  
+|`Name`|Wymagany. Identyfikuje nazwę aplikacji.|  
+|`Version`|Wymagany. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|  
+|`publicKeyToken`|Wymagany. Określa 16-znakowy ciąg szesnastkowy, który reprezentuje ostatnie 8 bajtów skrótu SHA-1 klucza publicznego, w którym aplikacja lub zestaw są podpisane. Klucz publiczny używany do podpisywania musi mieć wartość 2048 bitów lub większą.|  
+|`processorArchitecture`|Wymagany. Określa mikroprocesor. Prawidłowe wartości to `x86` 32-bitowy system Windows i `IA64` dla systemu Windows 64-bit.|  
+|`Language`|Opcjonalny. Identyfikuje dwa kody języka części zestawu. Na przykład EN-US, która oznacza angielski (Stany Zjednoczone). Wartość domyślna to `neutral`. Ten element znajduje się w `asmv2` przestrzeni nazw.|  
+|`type`|Opcjonalny. W celu zapewnienia zgodności z poprzednimi wersjami z technologią instalacji równoległej systemu Windows. Jedyna dozwolona wartość to `win32` .|  
   
 ## <a name="hash"></a>hash  
- `hash` Element jest opcjonalny element podrzędny elementu `file` elementu. `hash` Element nie ma żadnych atrybutów.  
+ `hash`Element jest opcjonalnym elementem podrzędnym `file` elementu. `hash`Element nie ma żadnych atrybutów.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] używa konsolidatorze skrótów wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żaden z plików zostały zmienione po wdrożeniu. Jeśli `hash` element nie jest uwzględniony, ten test nie zostanie wykonane. W związku z pominięciem `hash` element nie jest zalecane.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] używa skrótu algorytmu dla wszystkich plików w aplikacji jako kontroli zabezpieczeń, aby upewnić się, że żaden z plików nie został zmieniony po wdrożeniu. Jeśli `hash` element nie jest uwzględniony, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` elementu nie jest zalecane.  
   
-## <a name="dsigtransforms"></a>DSIG:TRANSFORMS  
- `dsig:Transforms` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:Transforms` Element nie ma żadnych atrybutów.  
+## <a name="dsigtransforms"></a>dsig: przekształcenia  
+ `dsig:Transforms`Element jest wymaganym elementem podrzędnym `hash` elementu. `dsig:Transforms`Element nie ma żadnych atrybutów.  
   
-## <a name="dsigtransform"></a>DSIG:Transform  
- `dsig:Transform` Element jest wymagany element podrzędny elementu `dsig:Transforms` elementu. W poniższej tabeli przedstawiono atrybuty `dsig:Transform` elementu.  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
-  
-## <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
- `dsig:DigestMethod` Element jest wymagany element podrzędny elementu `hash` elementu. W poniższej tabeli przedstawiono atrybuty `dsig:DigestMethod` elementu.  
+## <a name="dsigtransform"></a>dsig: Przekształć  
+ `dsig:Transform`Element jest wymaganym elementem podrzędnym `dsig:Transforms` elementu. W poniższej tabeli przedstawiono atrybuty `dsig:Transform` elementu.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+|`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie jedyną wartością używaną przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] is jest `urn:schemas-microsoft-com:HashTransforms.Identity` .|  
   
-## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
- `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.  
+## <a name="dsigdigestmethod"></a>dsig: DigestMethod  
+ `dsig:DigestMethod`Element jest wymaganym elementem podrzędnym `hash` elementu. W poniższej tabeli przedstawiono atrybuty `dsig:DigestMethod` elementu.  
+  
+|Atrybut|Opis|  
+|---------------|-----------------|  
+|`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie jedyną wartością używaną przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] is jest `http://www.w3.org/2000/09/xmldsig#sha1` .|  
+  
+## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+ `dsig:DigestValue`Element jest wymaganym elementem podrzędnym `hash` elementu. `dsig:DigestValue`Element nie ma żadnych atrybutów. Wartość tekstowa jest obliczanym skrótem dla określonego pliku.  
   
 ## <a name="remarks"></a>Uwagi  
- Manifesty wdrożenia zwykle mają jeden `assemblyIdentity` element, który identyfikuje nazwa i wersja manifestu aplikacji.  
+ Manifesty wdrożenia zazwyczaj mają jeden `assemblyIdentity` element, który identyfikuje nazwę i wersję manifestu aplikacji.  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod przedstawia przykład `dependency` element [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest wdrożenia.  
+ Poniższy przykład kodu przedstawia `dependency` element w [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeście wdrożenia.  
   
 ```  
 <!-- Identify the assembly dependencies -->  
@@ -149,7 +149,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 ```  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu określa zależność z zestawem już zainstalowane w GAC.  
+ Poniższy przykład kodu określa zależność od zestawu już zainstalowanego w pamięci podręcznej GAC.  
   
 ```  
 <dependency>  
@@ -171,7 +171,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 ```  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu określa zależności systemu operacyjnego.  
+ Poniższy przykład kodu określa zależność systemu operacyjnego.  
   
 ```  
 <dependency>  
@@ -184,5 +184,5 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<dependency>, element](../deployment/dependency-element-clickonce-application.md)
+ [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [\<dependency> Postaci](../deployment/dependency-element-clickonce-application.md)

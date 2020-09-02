@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3c6e7550940f9d2efa5ca228123310f1b861ee76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651597"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Porady: synchronizowanie zestawu reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego
@@ -47,7 +47,7 @@ Ustawienia analizy kodu dla projektów kodu są synchronizowane z zasadami ewide
 
 3. Kliknij pozycję **Analiza kodu**.
 
-4. Na liście **Uruchom ten zestaw reguł** kliknij **\<Browse... >** .
+4. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Browse...>** .
 
 5. W oknie dialogowym **otwieranie** Określ plik zestawu reguł ewidencjonowania.
 
@@ -65,6 +65,6 @@ Ustawienia analizy kodu dla projektów kodu są synchronizowane z zasadami ewide
 
 5. Otwórz okno dialogowe właściwości dla projektu kodu i Wyświetl stronę **Analiza kodu** .
 
-6. Na liście **Uruchom ten zestaw reguł** kliknij **\<Browse... >** .
+6. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Browse...>** .
 
 7. W **Otwórz** okno dialogowe, określ plik zestawu reguł.
