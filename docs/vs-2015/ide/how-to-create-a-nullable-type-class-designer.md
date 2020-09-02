@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 438f84a172c7e0a2d0dc957c578adc568a46495f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668158"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Porady: tworzenie typu zerowalnego (Projektant klas)
@@ -24,19 +24,19 @@ ms.locfileid: "72668158"
 
 Niektóre typy wartości nie zawsze mają określoną wartość (lub potrzebują). Jest to typowa sytuacja w bazach danych, w których niektóre pola mogą nie mieć przypisanej żadnej wartości. Na przykład możesz przypisać wartość null do pola bazy danych, aby oznaczać, że nie została jeszcze przypisana wartość.
 
- *Typ dopuszczający wartość null* jest typem wartości, który można rozciągnąć, tak aby miał typowy zakres wartości dla tego typu, a także wartość null. Na przykład wartość null dla `Int32`, również oznaczona jako wartość null \<Int32 >, może mieć przypisanych wartości od-2147483648 do 2147483647 lub może być przypisana wartość null. > @No__t_0bool dopuszczające wartość null można przypisać do wartości `True`, `False` lub null (bez wartości).
+ *Typ dopuszczający wartość null* jest typem wartości, który można rozciągnąć, tak aby miał typowy zakres wartości dla tego typu, a także wartość null. Na przykład wartość null, która jest `Int32` również oznaczona jako Nullable \<Int32> , może być przypisana do wartości od-2147483648 do 2147483647 lub może być przypisana wartość null. Do wartości dopuszczającej wartość null \<bool> można przypisać wartość `True` , `False` lub wartość null (bez żadnej wartości).
 
- Typy dopuszczające wartości null są wystąpieniami struktury <xref:System.Nullable%601>. Każde wystąpienie typu dopuszczającego wartość null ma dwie publiczne właściwości tylko do odczytu, `HasValue` i `Value`:
+ Typy dopuszczające wartości null są wystąpieniami <xref:System.Nullable%601> struktury. Każde wystąpienie typu dopuszczającego wartość null ma dwie publiczne właściwości tylko do odczytu `HasValue` i `Value` :
 
-- `HasValue` jest typu `bool` i wskazuje, czy zmienna zawiera zdefiniowaną wartość. `True` oznacza, że zmienna zawiera wartość różną od null. Można testować pod kątem zdefiniowanej wartości przy użyciu instrukcji, takiej jak `if (x.HasValue)` lub `if (y != null)`.
+- `HasValue` jest typu `bool` i wskazuje, czy zmienna zawiera zdefiniowaną wartość. `True` oznacza, że zmienna zawiera wartość różną od null. Można testować pod kątem zdefiniowanej wartości przy użyciu instrukcji, takiej jak `if (x.HasValue)` lub `if (y != null)` .
 
-- `Value` jest tego samego typu co typ podstawowy. Jeśli `HasValue` jest `True`, `Value` zawiera wartość znaczącą. Jeśli `HasValue` jest `False`, uzyskanie dostępu do `Value` spowoduje zgłoszenie nieprawidłowego wyjątku operacji.
+- `Value` jest tego samego typu co typ podstawowy. Jeśli `HasValue` jest `True` , `Value` zawiera zrozumiałą wartość. Jeśli `HasValue` jest `False` , uzyskanie dostępu `Value` spowoduje zgłoszenie nieprawidłowego wyjątku operacji.
 
-  Domyślnie podczas deklarowania zmiennej jako typu dopuszczającego wartość null nie ma zdefiniowanej wartości (`HasValue` jest `False`), innej niż domyślna wartość jego bazowego typu wartości.
+  Domyślnie podczas deklarowania zmiennej jako typu dopuszczającego wartość null nie ma zdefiniowanej wartości ( `HasValue` is `False` ), innej niż domyślna wartość jego bazowego typu wartości.
 
   Projektant klas wyświetla typ dopuszczający wartość null, tak jak wyświetla jego typ podstawowy.
 
-  Aby uzyskać więcej informacji na temat typów dopuszczających wartości null w wizualizacji C#, zobacz [Typy dopuszczające wartości null](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Aby uzyskać więcej informacji na temat typów dopuszczających wartości null w Visual Basic, zobacz [dopuszczanie typów wartości null](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).
+  Aby uzyskać więcej informacji na temat typów dopuszczających wartości null w Visual C#, zobacz [Typy dopuszczające wartości null](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Aby uzyskać więcej informacji na temat typów dopuszczających wartości null w Visual Basic, zobacz [dopuszczanie typów wartości null](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).
 
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -82,4 +82,4 @@ Niektóre typy wartości nie zawsze mają określoną wartość (lub potrzebują
 5. Kliknij prawym przyciskiem myszy kształt klasy, a następnie kliknij pozycję **Szczegóły klasy**. Właściwości nowego typu można wyświetlić lub zmodyfikować w oknie **Szczegóły klasy** .
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Nullable%601> [Typy dopuszczające wartości null](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) [przy użyciu typów dopuszczających wartości null](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [, jak zidentyfikować](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [typy wartości](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6) null typu Nullable
+ <xref:System.Nullable%601>[Typy dopuszczające wartości null](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) [wykorzystujące Typy dopuszczające wartość null](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [w sposobie: Identyfikowanie](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [typów wartości](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6) dopuszczających wartość null

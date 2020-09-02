@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::ContinueFromSynchronousEvent | Dokumenty firmy Microsoft
+title: 'IDebugEngine2:: ContinueFromSynchronousEvent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: da059b6efe137092d46241977a98b22b1eb66c44
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731142"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-Wywoływane przez menedżera debugowania sesji (SDM) w celu wskazania, że synchroniczne zdarzenie debugowania, wcześniej wysłane przez aparat debugowania (DE) do SDM, zostało odebrane i przetworzone.
+Wywoływane przez Menedżera debugowania sesji (SDM), aby wskazać, że zdarzenie debugowania synchronicznego, wcześniej wysłane przez aparat debugowania (DE) do modelu SDM, zostało odebrane i przetworzone.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ HRESULT ContinueFromSynchronousEvent(
 
 ## <a name="parameters"></a>Parametry
 `pEvent`\
-[w] [Obiekt IDebugEvent2,](../../../extensibility/debugger/reference/idebugevent2.md) który reprezentuje wcześniej wysłane zdarzenie synchroniczne, z którego debuger powinien być teraz kontynuowany.
+podczas Obiekt [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , który reprezentuje wcześniej wysłane zdarzenie synchroniczne, z którego debuger powinien teraz kontynuować.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-DE musi sprawdzić, czy był źródłem zdarzenia `pEvent` reprezentowane przez parametr.
+DE musi potwierdzić, że był źródłem zdarzenia reprezentowanego przez `pEvent` parametr.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CEngine` zaimplementować tę metodę dla prostego obiektu, który implementuje interfejs [IDebugEngine2.](../../../extensibility/debugger/reference/idebugengine2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CEngine` obiektu, który implementuje interfejs [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) .
 
 ```cpp
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)

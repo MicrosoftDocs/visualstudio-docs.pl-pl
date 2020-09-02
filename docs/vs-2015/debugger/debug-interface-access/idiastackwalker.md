@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalker — | Dokumentacja firmy Microsoft
+title: IDiaStackWalker | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6f5f5c3fa70c022175208cee492f3c0e752826e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144684"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Udostępnia metody stosu szczegółowe, korzystając z informacji w pliku .pdb.  
+Zapewnia metody do przeszukiwania stosu przy użyciu informacji w pliku. pdb.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,22 +31,22 @@ Udostępnia metody stosu szczegółowe, korzystając z informacji w pliku .pdb.
 IDiaStackWalker: IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDiaStackWalker`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metody `IDiaStackWalker` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Pobiera moduł wyliczający ramek stosu dla x86 platform.|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Pobiera moduł wyliczający ramek stosu dla typu określonej platformy.|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Pobiera moduł wyliczający ramek stosu dla platform x86.|  
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Pobiera moduł wyliczający ramek stosu dla określonego typu platformy.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs jest używany do uzyskiwania listy ramek stosu dla załadowanym module. Każdej z metod jest przekazywany [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) obiektu (implementowane przez aplikację klienta), który dostarcza niezbędne informacje, aby utworzyć listę ramek stosu.  
+ Ten interfejs służy do uzyskiwania listy ramek stosu dla załadowanego modułu. Każda z metod jest przenoszona obiekt [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) (zaimplementowany przez aplikację kliencką), który zawiera informacje niezbędne do utworzenia listy ramek stosu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs jest można uzyskać przez wywołanie `CoCreateInstance` metody z identyfikatorem klasy `CLSID_DiaStackWalker` i identyfikator interfejsu `IID_IDiaStackWalker`. W przykładzie przedstawiono sposób uzyskiwania tego interfejsu.  
+ Ten interfejs jest uzyskiwany przez wywołanie `CoCreateInstance` metody z identyfikatorem klasy `CLSID_DiaStackWalker` i identyfikatorem interfejsu `IID_IDiaStackWalker` . W przykładzie pokazano, jak zostanie uzyskany ten interfejs.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie pokazano, jak uzyskać `IDiaStackWalker` interfejsu.  
+ Ten przykład pokazuje, jak uzyskać `IDiaStackWalker` interfejs.  
   
 ```cpp#  
   
@@ -63,12 +63,12 @@ if (FAILED(hr))
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: dia2. h  
   
- Biblioteka: diaguids.lib  
+ Biblioteka: diaguids. lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

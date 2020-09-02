@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35cce37afc389501386ffec7b75b934e7933bc98
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197793"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
@@ -48,7 +48,7 @@ int GetCount(
  Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda widzi wszystkie elementy obiektu Array jako tablicę jednowymiarową, nawet jeśli obiekt Array jest wielowymiarowych. Na przykład, dana tablica `myarray[3][2][6]`, ta metoda zwróci wartość `pdwElements` 36 w parametrze. Użyj metody [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) , aby pobrać pojedyncze elementy pojedynczo.  
+ Ta metoda widzi wszystkie elementy obiektu Array jako tablicę jednowymiarową, nawet jeśli obiekt Array jest wielowymiarowych. Na przykład, dana tablica `myarray[3][2][6]` , ta metoda zwróci wartość 36 w `pdwElements` parametrze. Użyj metody [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) , aby pobrać pojedyncze elementy pojedynczo.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

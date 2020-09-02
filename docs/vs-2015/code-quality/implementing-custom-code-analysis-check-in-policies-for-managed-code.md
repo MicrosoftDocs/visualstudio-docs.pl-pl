@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1cf759e01e5f152f2220124c90f145bfbbe3c01d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651590"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
@@ -39,7 +39,7 @@ Zasady ewidencjonowania analizy kodu określają zestaw reguł, które członkow
 
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Aby utworzyć folder kontroli wersji dla zestawu reguł zaewidencjonowania
 
-1. W [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] rozwiń węzeł projektu zespołowego, a następnie kliknij pozycję **Kontrola źródła**.
+1. W programie [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] rozwiń węzeł projekt zespołowy, a następnie kliknij pozycję **Kontrola źródła**.
 
 2. W okienku **foldery** kliknij prawym przyciskiem myszy projekt zespołowy, a następnie kliknij pozycję **Nowy folder**.
 
@@ -82,7 +82,7 @@ Zasady ewidencjonowania analizy kodu określają zestaw reguł, które członkow
 
 3. Na liście **zasad ewidencjonowania** kliknij dwukrotnie pozycję **Analiza kodu**i upewnij się, że jest zaznaczone pole wyboru **Wymuszaj analizę kodu dla kodu zarządzanego** .
 
-4. Na liście **Uruchom ten zestaw reguł** kliknij **\<Select zestaw reguł z kontroli źródła >** .
+4. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Select Rule Set from Source Control>** .
 
 5. Wpisz ścieżkę pliku zestawu reguł ewidencjonowania w kontroli wersji.
 
@@ -116,6 +116,6 @@ Zasady ewidencjonowania analizy kodu określają zestaw reguł, które członkow
 
 6. Aby zignorować kod w składnikach innych firm, zaznacz pole wyboru **Pomiń wyniki z wygenerowanego kodu** .
 
-7. Na liście **Uruchom ten zestaw reguł** kliknij **\<Browse... >** .
+7. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Browse...>** .
 
 8. Określ lokalną wersję pliku zestawu reguł ewidencjonowania.

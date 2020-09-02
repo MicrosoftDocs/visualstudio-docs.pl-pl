@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bebaa8c197d0b0a4447739d900062bef2bda37c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816660"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Przewodnik: Tworzenie realistycznej kuli bilardowej w 3D
@@ -207,7 +207,7 @@ Pierwszym krokiem jest utworzenie tekstury mapy modułu. W wielu rodzajach aplik
 
    W tym końcowym obrazie Zwróć uwagę na to, jak dodane efekty łączą się w celu utworzenia bardzo przekonującej kulki bilardowej. Kształt, tekstura i oświetlenie tworzą podstawowe wygląd obiektu 3W, a odblaskówe i odbicie sprawiają, że kulka bilardowej bardziej interesująca i wygląda jak część środowiska.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
 - [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)

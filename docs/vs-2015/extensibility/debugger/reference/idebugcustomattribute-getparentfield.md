@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField | Dokumentacja firmy Microsoft
+title: 'IDebugCustomAttribute:: GetParentField | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b6d6ceadc8ee0dc6099d6463a75f1c792837e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569579"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera pola, do której jest dołączony atrybut niestandardowy.  
+Pobiera pole, do którego jest dołączony atrybut niestandardowy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int GetParentField(
   
 #### <a name="parameters"></a>Parametry  
  `ppField`  
- [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt, który reprezentuje pole, do której jest dołączony atrybut niestandardowy.  
+ określoną Zwraca obiekt [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , który reprezentuje pole, do którego jest dołączony atrybut niestandardowy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołaj [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zwracanego metody [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) jest obiekt, aby określić, które pole jest rodzaju obiektu nadrzędnego.  
+ Wywołaj metodę [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) dla zwróconego obiektu [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , aby określić, jakiego rodzaju pola jest obiekt nadrzędny.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   

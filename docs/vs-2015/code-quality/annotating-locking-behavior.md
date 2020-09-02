@@ -34,10 +34,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271591"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
@@ -69,24 +69,24 @@ Aby uniknąć błędów współbieżności w programie wielowątkowym, zawsze po
   
 |Adnotacja|Opis|  
 |----------------|-----------------|  
-|`_Acquires_exclusive_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja jest zwiększana o jedną z wyłącznej blokady obiektu blokady o nazwie przez `expr`.|  
-|`_Acquires_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną liczbę blokad obiektu blokady o nazwie przez `expr`.|  
-|`_Acquires_nonreentrant_lock_(expr)`|Zostanie uzyskana blokada o nazwie `expr`.  Gdy blokada jest już utrzymywana, zgłaszany jest błąd.|  
-|`_Acquires_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną współdzieloną liczbę blokad obiektu blokady, który jest nazwany przez `expr`.|  
-|`_Create_lock_level_(name)`|Instrukcja, która deklaruje symbol `name` być poziomem blokady, aby mogła być używana w `_Has_Lock_level_` adnotacji i `_Lock_level_order_`.|  
-|`_Has_lock_kind_(kind)`|Adnotuj każdy obiekt, aby uściślić informacje o typie obiektu zasobu. Czasami typowy typ jest używany dla różnych rodzajów zasobów i przeciążony typ nie jest wystarczający do odróżnienia wymagań semantycznych między różnymi zasobami. Poniżej znajduje się lista wstępnie zdefiniowanych parametrów `kind`:<br /><br /> `_Lock_kind_mutex_`<br /> Identyfikator typu blokady dla muteksów.<br /><br /> `_Lock_kind_event_`<br /> Identyfikator rodzaju blokady dla zdarzeń.<br /><br /> `_Lock_kind_semaphore_`<br /> Identyfikator rodzaju blokady dla semaforów.<br /><br /> `_Lock_kind_spin_lock_`<br /> Identyfikator typu blokady dla blokad pokrętła.<br /><br /> `_Lock_kind_critical_section_`<br /> Identyfikator rodzaju blokady dla sekcji krytycznych.|  
-|`_Has_lock_level_(name)`|Adnotuj obiekt blokady i nadaje mu poziom blokady `name`.|  
-|`_Lock_level_order_(name1, name2)`|Instrukcja, która zapewnia kolejność blokowania między `name1` i `name2`.|  
-|`_Post_same_lock_(expr1, expr2)`|Adnotuj funkcję i wskazuje, że w stanie post dwa blokady, `expr1` i `expr2`, są traktowane tak, jakby były tym samym obiektem blokady.|  
-|`_Releases_exclusive_lock_(expr)`|Umożliwia dodawanie adnotacji do funkcji i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad na wyłączność obiektu blokady o nazwie `expr`.|  
-|`_Releases_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad obiektu blokady o nazwie przez `expr`.|  
-|`_Releases_nonreentrant_lock_(expr)`|Zostanie wydaną blokadę o nazwie `expr`. Jeśli blokada nie jest obecnie utrzymywana, zgłaszany jest błąd.|  
-|`_Releases_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną współdzieloną liczbę blokad obiektu blokady, który jest nazwany przez `expr`.|  
-|`_Requires_lock_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnym stanie liczba blokad obiektu, który jest nazwany przez `expr` jest co najmniej jeden.|  
-|`_Requires_lock_not_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnym stanie liczba blokad obiektu o nazwie `expr` wynosi zero.|  
+|`_Acquires_exclusive_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja jest zwiększana o jedną z wyłącznych blokad obiektu blokady, który jest nazwany przez `expr` .|  
+|`_Acquires_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną liczbę blokad obiektu blokady, który jest nazwany przez `expr` .|  
+|`_Acquires_nonreentrant_lock_(expr)`|Zostanie uzyskana blokada o nazwie przez `expr` .  Gdy blokada jest już utrzymywana, zgłaszany jest błąd.|  
+|`_Acquires_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną współdzieloną liczbę blokad obiektu blokady, który jest nazwany przez `expr` .|  
+|`_Create_lock_level_(name)`|Instrukcja, która deklaruje symbol jako `name` poziom blokady, aby mogła być używana w adnotacjach `_Has_Lock_level_` i `_Lock_level_order_` .|  
+|`_Has_lock_kind_(kind)`|Adnotuj każdy obiekt, aby uściślić informacje o typie obiektu zasobu. Czasami typowy typ jest używany dla różnych rodzajów zasobów i przeciążony typ nie jest wystarczający do odróżnienia wymagań semantycznych między różnymi zasobami. Oto lista wstępnie zdefiniowanych `kind` parametrów:<br /><br /> `_Lock_kind_mutex_`<br /> Identyfikator typu blokady dla muteksów.<br /><br /> `_Lock_kind_event_`<br /> Identyfikator rodzaju blokady dla zdarzeń.<br /><br /> `_Lock_kind_semaphore_`<br /> Identyfikator rodzaju blokady dla semaforów.<br /><br /> `_Lock_kind_spin_lock_`<br /> Identyfikator typu blokady dla blokad pokrętła.<br /><br /> `_Lock_kind_critical_section_`<br /> Identyfikator rodzaju blokady dla sekcji krytycznych.|  
+|`_Has_lock_level_(name)`|Adnotuj obiekt blokady i nadaje mu poziom blokady `name` .|  
+|`_Lock_level_order_(name1, name2)`|Instrukcja, która zapewnia kolejność blokowania między `name1` i `name2` .|  
+|`_Post_same_lock_(expr1, expr2)`|Wprowadza adnotację do funkcji i wskazuje, że w stanie post dwie blokady `expr1` i `expr2` są traktowane tak, jakby były tym samym obiektem blokady.|  
+|`_Releases_exclusive_lock_(expr)`|Umożliwia dodawanie adnotacji do funkcji i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad na wyłączność obiektu blokady, który jest nazwany przez `expr` .|  
+|`_Releases_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad obiektu blokady, który jest nazwany przez `expr` .|  
+|`_Releases_nonreentrant_lock_(expr)`|Blokada o nazwie przez `expr` jest wydawana. Jeśli blokada nie jest obecnie utrzymywana, zgłaszany jest błąd.|  
+|`_Releases_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną współdzieloną liczbę blokad obiektu blokady, który jest nazwany przez `expr` .|  
+|`_Requires_lock_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnym stanie liczba blokad obiektu, którego nazwa jest równa co `expr` najmniej jeden.|  
+|`_Requires_lock_not_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnym stanie liczba blokad obiektu, którego nazwa `expr` jest równa zero.|  
 |`_Requires_no_locks_held_`|Adnotuj funkcję i wskazuje, że liczba blokad wszystkich blokad, które są znane do sprawdzania, wynosi zero.|  
-|`_Requires_shared_lock_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnej liczbie współużytkowanej liczby blokad obiektu o nazwie `expr` jest co najmniej jeden.|  
-|`_Requires_exclusive_lock_held_(expr)`|Umożliwia dodawanie adnotacji do funkcji i wskazuje, że w wstępnej liczbie niewyłącznej blokady obiektu o nazwie `expr` jest co najmniej jeden.|  
+|`_Requires_shared_lock_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnym stanie liczba współużytkowanych blokad obiektu, którego nazwa jest równa co `expr` najmniej jeden.|  
+|`_Requires_exclusive_lock_held_(expr)`|Umożliwia dodawanie adnotacji do funkcji i wskazuje, że w wstępnej liczbie wyłącznych blokad obiektu, którego nazwa jest równa co `expr` najmniej jeden.|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Elementy wewnętrzne SAL dla nieuwidocznionych obiektów blokowania  
  Niektóre obiekty blokady nie są uwidaczniane przez implementację skojarzonych funkcji blokowania.  Poniższa tabela zawiera listę zmiennych wewnętrznych SAL, które umożliwiają adnotację w funkcjach, które działają w odniesieniu do nieuwidocznionych obiektów blokady.  
@@ -103,18 +103,18 @@ Aby uniknąć błędów współbieżności w programie wielowątkowym, zawsze po
   
 |Adnotacja|Opis|  
 |----------------|-----------------|  
-|`_Guarded_by_(expr)`|Adnotuj zmienną i wskazuje, że za każdym razem, gdy uzyskuje się dostęp do zmiennej, liczba blokad obiektu blokady o nazwie `expr` jest równa co najmniej jeden.|  
-|`_Interlocked_`|Adnotuj zmienną i jest równoważne `_Guarded_by_(_Global_interlock_)`.|  
+|`_Guarded_by_(expr)`|Adnotuj zmienną i wskazuje, że za każdym razem, gdy uzyskuje się dostęp do zmiennej, liczba blokad obiektu blokady o nazwie jest równa co `expr` najmniej jeden.|  
+|`_Interlocked_`|Adnotuj zmienną i jest równoznaczna z `_Guarded_by_(_Global_interlock_)` .|  
 |`_Interlocked_operand_`|Parametr funkcji z adnotacjami jest docelowym argumentem operacji jednej z różnych funkcji zablokowanych.  Te operandy muszą mieć określone dodatkowe właściwości.|  
-|`_Write_guarded_by_(expr)`|Adnotuj zmienną i wskazuje, że za każdym razem, gdy zmienna jest modyfikowana, liczba blokad obiektu blokady o nazwie `expr` jest równa co najmniej jeden.|  
+|`_Write_guarded_by_(expr)`|Wprowadza adnotacje do zmiennej i wskazuje, że za każdym razem, gdy zmienna jest modyfikowana, liczba blokad obiektu blokady o nazwie jest równa co `expr` najmniej jeden.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Korzystanie z adnotacji sal w celuC++ zmniejszenia wad kodu C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Zrozumienie  sal](../code-quality/understanding-sal.md)  
+ [Korzystanie z adnotacji SAL w celu zmniejszenia wad kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Zrozumienie SAL](../code-quality/understanding-sal.md)   
  [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)   
-   [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)  
+ [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)   
  [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)   
- [Określanie, kiedy i gdzie ma być stosowana adnotacja](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Określanie momentu i miejsca zastosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)   
  [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)   
  [Blog zespołu ds. analizy kodu](https://blogs.msdn.com/b/codeanalysis/)

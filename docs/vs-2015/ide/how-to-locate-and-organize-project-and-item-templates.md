@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651870"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Porady: lokalizowanie i organizowanie szablonów projektów i elementów
@@ -34,24 +34,24 @@ Pliki szablonów należy umieścić w lokalizacji rozpoznawanej przez program Vi
 ### <a name="installed-templates"></a>Zainstalowane szablony
  Domyślnie szablony zainstalowane razem z produktem znajdują się w temacie:
 
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates \\*języka* \\*ustawień regionalnych* \
+- \\*VisualStudioInstallationDirectory* \\ *Language* \\ *Ustawienia regionalne* języka VisualStudioInstallationDirectory \Common7\IDE\ItemTemplates\
 
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates \\*języka* \\*ustawień regionalnych \\*
+- \\*VisualStudioInstallationDirectory* \\ *Language* \\ *Ustawienia regionalne \\ * języka VisualStudioInstallationDirectory \Common7\IDE\ProjectTemplates
 
-  Na przykład następujący katalog zawiera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablonów projektu dla języka angielskiego:
+  Na przykład następujący katalog zawiera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Szablony projektów dla języka angielskiego:
 
-  C: \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+  C: \\ *VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
 ### <a name="custom-templates"></a>Szablony niestandardowe
  Domyślnie szablony niestandardowe znajdują się w:
 
-- \Moje Documents\Visual Studio w *wersji*\Templates\ProjectTemplates \\*Language* \
+- \Moje Documents\Visual Studio *Version*\Templates\ProjectTemplates \\ *Language*\
 
-- \Moje Documents\Visual Studio w *wersji*\Templates\ItemTemplates \\*Language* \
+- \Moje Documents\Visual Studio *Version*\Templates\ItemTemplates \\ *Language*\
 
-  Na przykład następujący katalog zawiera niestandardowe szablony projektu [!INCLUDE[csprcs](../includes/csprcs-md.md)]:
+  Na przykład następujący katalog zawiera niestandardowe [!INCLUDE[csprcs](../includes/csprcs-md.md)] Szablony projektu:
 
-  Dokumenty C:\Documents i Settings\UserName\My \\ < programu Visual Studio w wersji C#\> \templates\projecttemplates\visual \
+  C:\Dokumenty i Settings\UserName\My dokumenty \\<Visual Studio w wersji \> \Templates\ProjectTemplates\Visual C# \
 
   Szablony niestandardowe nie obejmują podkatalogu dla zlokalizowanych szablonów. Domyślny katalog szablonów niestandardowych można zmienić w oknie dialogowym **Opcje** , w obszarze **Environment\Projects i rozwiązania**.
 
@@ -61,7 +61,7 @@ Pliki szablonów należy umieścić w lokalizacji rozpoznawanej przez program Vi
 > [!NOTE]
 > Nie można utworzyć nowej kategorii na poziomie języka programowania. Nowe kategorie można tworzyć tylko w obrębie każdego języka.
 
- Jeśli struktury katalogów dla zainstalowanych i niestandardowych szablonów dla danego języka nie mają tej samej struktury (czyli katalogów znajdujących się w jednym folderze, który nie istnieje pod drugim), zestaw kategorii, które pojawiają się w **nowym projekcie** . okno dialogowe będzie połączeniem wszystkich kategorii.
+ Jeśli struktury katalogów dla zainstalowanych i niestandardowych szablonów dla danego języka nie mają tej samej struktury (czyli katalogów znajdujących się w jednym folderze, który nie istnieje pod drugim), zestaw kategorii, które są wyświetlane w oknie dialogowym **Nowy projekt** , będzie połączeniem wszystkich kategorii.
 
 ### <a name="organizing-installed-templates"></a>Organizowanie zainstalowanych szablonów
  Zainstalowane szablony można organizować przez utworzenie podkatalogów w folderze języka programowania. Te podkatalogi pojawiają się w oknach dialogowych **Nowy projekt** i **Dodaj nowy element** jako folderów wirtualnych w każdym języku.
@@ -74,35 +74,35 @@ Pliki szablonów należy umieścić w lokalizacji rozpoznawanej przez program Vi
 
 2. Umieść wszystkie szablony dla tej kategorii w nowym folderze.
 
-3. Zamknij wszystkie wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+3. Zamknij wszystkie wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 4. W menu **Start** kliknij polecenie **Uruchom**, wpisz polecenie **cmd**, a następnie kliknij przycisk **OK**.
 
-5. W wierszu polecenia Znajdź katalog zawierający devenv. exe, a następnie wpisz **devenv/InstallVSTemplates**.
+5. W wierszu polecenia Znajdź katalog zawierający devenv.exe i wpisz **devenv/InstallVSTemplates**.
 
-6. Uruchom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Uruchom polecenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-7. W menu **plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **projekt**.
+7. W menu **Plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **Projekt**.
 
-8. Sprawdź, czy kategoria pakietu Office jest wyświetlana w oknie dialogowym **Nowy projekt** w okienku **typy projektów** w obszarze [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+8. Sprawdź, czy kategoria pakietu Office jest wyświetlana w oknie dialogowym **Nowy projekt** w okienku **typy projektów** w obszarze [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .
 
    Podzestaw szablonów elementów projektu można także grupować do folderu niestandardowego.
 
 ##### <a name="to-create-new-installed-item-template-categories"></a>Aby utworzyć nowe kategorie szablonów zainstalowanych elementów
 
-1. Utwórz folder w folderze języka zainstalowanego katalogu szablonów. Aby na przykład utworzyć kategorię sieci Web dla szablonów elementów [!INCLUDE[csprcs](../includes/csprcs-md.md)], należy utworzyć następujący katalog:
+1. Utwórz folder w folderze języka zainstalowanego katalogu szablonów. Na przykład aby utworzyć kategorię sieci Web dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów elementów, należy utworzyć następujący katalog:
 
      \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\
 
 2. Umieść wszystkie szablony dla tej kategorii w nowym folderze.
 
-3. Zamknij wszystkie wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+3. Zamknij wszystkie wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 4. W menu **Start** kliknij polecenie **Uruchom**, wpisz polecenie **cmd**, a następnie kliknij przycisk **OK**.
 
-5. W wierszu polecenia Znajdź katalog zawierający devenv. exe, a następnie wpisz **devenv/setup**.
+5. W wierszu polecenia Znajdź katalog zawierający devenv.exe i wpisz **devenv/setup**.
 
-6. Uruchom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Uruchom polecenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 7. Utwórz projekt lub Otwórz istniejący projekt.
 
@@ -115,15 +115,15 @@ Pliki szablonów należy umieścić w lokalizacji rozpoznawanej przez program Vi
 
 ##### <a name="to-create-new-custom-project-template-categories"></a>Aby utworzyć nowe niestandardowe kategorie szablonów projektu
 
-1. Utwórz folder w folderze języka w niestandardowym katalogu szablonów projektu. Na przykład, aby utworzyć kategorię HelloWorld dla szablonów [!INCLUDE[csprcs](../includes/csprcs-md.md)], należy utworzyć następujący katalog:
+1. Utwórz folder w folderze języka w niestandardowym katalogu szablonów projektu. Na przykład, aby utworzyć kategorię HelloWorld dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów, należy utworzyć następujący katalog:
 
-    \Moje dokumenty \\ < programu Visual Studio w wersji \> \Templates\ProjectTemplates\CSharp\HelloWorld\
+    \Moje dokumenty \\<Visual Studio w wersji \> \Templates\ProjectTemplates\CSharp\HelloWorld\
 
 2. Umieść wszystkie szablony dla tej kategorii w nowym folderze.
 
-3. W menu **plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **projekt**.
+3. W menu **Plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **Projekt**.
 
-4. Sprawdź, czy kategoria HelloWorld pojawia się w oknie dialogowym **Nowy projekt** w okienku **typy projektów** w obszarze [!INCLUDE[csprcs](../includes/csprcs-md.md)].
+4. Sprawdź, czy kategoria HelloWorld pojawia się w oknie dialogowym **Nowy projekt** w okienku **typy projektów** w obszarze [!INCLUDE[csprcs](../includes/csprcs-md.md)] .
 
    Podzestaw szablonów elementów niestandardowych można także grupować do folderu niestandardowego.
 
@@ -131,7 +131,7 @@ Pliki szablonów należy umieścić w lokalizacji rozpoznawanej przez program Vi
 
 1. Utwórz folder w folderze języka w katalogu szablonów elementów niestandardowych. Na przykład, aby utworzyć kategorię HelloWorld dla [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów, należy utworzyć następujący katalog:
 
-     \Moje dokumenty \\ < programu Visual Studio w wersji \> \Templates\ItemTemplates\CSharp\HelloWorld\
+     \Moje dokumenty \\<Visual Studio w wersji \> \Templates\ItemTemplates\CSharp\HelloWorld\
 
 2. Umieść wszystkie szablony dla tej kategorii w nowym folderze.
 
@@ -142,7 +142,7 @@ Pliki szablonów należy umieścić w lokalizacji rozpoznawanej przez program Vi
 5. Sprawdź, czy kategoria HelloWorld pojawia się w oknie dialogowym **Dodaj nowy element** w okienku **typy projektów** .
 
 ### <a name="displaying-templates-in-parent-categories"></a>Wyświetlanie szablonów w kategoriach nadrzędnych
- Szablony w podkategoriach można włączyć do wyświetlania w swoich kategoriach nadrzędnych za pomocą elementu `NumberOfParentCategoriesToRollUp` w pliku vstemplate. Te kroki są identyczne zarówno w przypadku szablonów projektu, jak i szablonów elementów.
+ Szablony w podkategoriach można włączyć do wyświetlania w ich kategoriach nadrzędnych za pomocą `NumberOfParentCategoriesToRollUp` elementu w pliku. vstemplate. Te kroki są identyczne zarówno w przypadku szablonów projektu, jak i szablonów elementów.
 
 ##### <a name="to-display-templates-in-parent-categories"></a>Aby wyświetlić szablony w kategoriach nadrzędnych
 
@@ -150,9 +150,9 @@ Pliki szablonów należy umieścić w lokalizacji rozpoznawanej przez program Vi
 
 2. Wyodrębnij plik zip.
 
-3. Otwórz plik. vstemplate w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+3. Otwórz plik. vstemplate w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-4. W `TemplateData` elementu Dodaj element `NumberOfParentCategoriesToRollUp`. Na przykład poniższy kod powoduje, że szablon jest widoczny w kategorii nadrzędnej, ale nie jest wyższy.
+4. W `TemplateData` elemencie Dodaj `NumberOfParentCategoriesToRollUp` element. Na przykład poniższy kod powoduje, że szablon jest widoczny w kategorii nadrzędnej, ale nie jest wyższy.
 
     ```
     <TemplateData>
@@ -166,7 +166,7 @@ Pliki szablonów należy umieścić w lokalizacji rozpoznawanej przez program Vi
 
 5. Zapisz i zamknij plik. vstemplate.
 
-6. Wybierz pliki w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)** . Pliki są kompresowane do pliku zip.
+6. Wybierz pliki w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij polecenie **Wyślij do**, a następnie kliknij **folder skompresowany (zip)**. Pliki są kompresowane do pliku zip.
 
 7. Usuń wyodrębnione pliki szablonów i stary plik Template. zip.
 

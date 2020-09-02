@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e74beb2903cd133dfdd322ce4c297692eae3411
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817193"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Instrukcje: wykonywanie transformacji XSLT z edytora XML
@@ -29,7 +29,7 @@ Jeśli właściwość **Output** określa nazwę pliku z. *htm* lub. rozszerzeni
 
 2. Skojarz arkusz stylów XSLT z dokumentem XML.
 
-    - Dodaj `xml-stylesheet` instrukcję przetwarzania do dokumentu XML. Na przykład Dodaj następujący wiersz do prologu dokumentu:`<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
+    - Dodaj `xml-stylesheet` instrukcję przetwarzania do dokumentu XML. Na przykład Dodaj następujący wiersz do prologu dokumentu: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
        -lub-
 
@@ -59,6 +59,6 @@ Jeśli właściwość **Output** określa nazwę pliku z. *htm* lub. rozszerzeni
 
 Można określić nazwę pliku wyjściowego dla plików XML i XSL. Otwórz okno **Właściwości** i podaj nazwę pliku w polu **dane wyjściowe** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor XML](../xml-tools/xml-editor.md)

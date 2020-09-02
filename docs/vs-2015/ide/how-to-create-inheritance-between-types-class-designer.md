@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba27b32cc322da2e14cec86b878a7dd42dae0039
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668105"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)
@@ -50,4 +50,4 @@ Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy prz
     >  Chociaż można wizualizować istniejące typy ogólne, nie można tworzyć nowych typów ogólnych. Nie można również zmienić parametrów typu dla istniejących typów ogólnych.
 
 ## <a name="see-also"></a>Zobacz też
- [Dziedziczenie](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) dziedziczenia [podstawowe informacje](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) [na temat sposobu: wyświetlania dziedziczenia między typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md) [klasy wizualnej C++ w Projektant klas](../ide/visual-cpp-classes-in-class-designer.md)
+ [Dziedziczenie](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) dziedziczenia [podstawowe informacje](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) [na temat sposobu: wyświetlania dziedziczenia między typami (Projektant klas)](../ide/how-to-view-inheritance-between-types-class-designer.md) [Visual C++ klasami w Projektant klas](../ide/visual-cpp-classes-in-class-designer.md)

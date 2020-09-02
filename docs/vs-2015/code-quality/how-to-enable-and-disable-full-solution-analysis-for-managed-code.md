@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 72b27bf9dcc1f0ee8a222ac701f2ffae4fc68614
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646279"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego
@@ -24,15 +24,15 @@ ms.locfileid: "72646279"
 KORYGUJĄC
 > Ten temat dotyczy tylko programu Visual Studio 2015 Update 3 RC lub nowszego.
 
- *Pełna analiza rozwiązań* to funkcja programu Visual Studio, która umożliwia wybranie, czy problemy z analizą kodu są widoczne tylko w C# otwartych plikach wizualnych lub Visual Basic w rozwiązaniu, czy zarówno w otwartym, jak i zamkniętym pliku wizualizacji C# lub Visual Basic w Narzędzie.
+ *Pełna analiza rozwiązań* to funkcja programu Visual Studio, która umożliwia wybranie, czy problemy z analizą kodu są widoczne tylko w otwartych plikach Visual c# lub Visual Basic w rozwiązaniu, czy zarówno w otwartym, jak i zamkniętym pliku Visual c# lub Visual Basic w rozwiązaniu.
 
  Chociaż jest możliwe, że wszystkie problemy występujące we wszystkich plikach są przydatne, można rozpraszać uwagę i nawet spowalniać program Visual Studio, jeśli rozwiązanie jest bardzo duże lub ma wiele plików.  Aby ograniczyć liczbę wyświetlanych problemów i zwiększyć wydajność programu Visual Studio, można wyłączyć pełną analizę rozwiązania. Jeśli chcesz, możesz łatwo włączyć tę funkcję.
 
 #### <a name="to-toggle-full-solution-analysis"></a>Aby przełączać pełną analizę rozwiązania
 
-1. W menu głównym programu Visual Studio wybierz pozycję **Narzędzia** &#124; **Opcje** , aby wyświetlić okno dialogowe **Opcje** .
+1. W menu głównym programu Visual Studio wybierz pozycję **narzędzia** &#124; **Opcje** , aby wyświetlić okno dialogowe **Opcje** .
 
-2. W oknie dialogowym **Opcje** wybierz **Edytor** &#124; **C#** tekstu lub **Basic** &#124; **Advanced**.
+2. W oknie dialogowym **Opcje** wybierz **Edytor tekstu** &#124; **C#** lub **Basic** &#124; **Advanced**.
 
 3. Zaznacz pole wyboru **Włącz pełną analizę rozwiązań** , aby włączyć pełną analizę rozwiązania, lub wyczyść to pole, aby je wyłączyć. Po zakończeniu wybierz przycisk **OK** .
 
@@ -53,6 +53,6 @@ KORYGUJĄC
  ![Tekst alertu wstrzymywanie pełnej analizy rozwiązania](../code-quality/media/fsa-alert.png "FSA_Alert")
 
 ## <a name="additional-details"></a>Dodatkowe szczegóły
- Domyślnie Pełna analiza rozwiązań jest włączona dla Visual Basic i wyłączone dla wizualizacji C#.
+ Domyślnie Pełna analiza rozwiązań jest włączona dla Visual Basic i wyłączone dla języka Visual C#.
 
  Program Visual Studio Update 3 RC zawiera udoskonalony aparat diagnostyki analizatora kodu w wersji 2, który znacznie zmniejsza użycie pamięci i zmniejsza czas procesora CPU do bezczynności, nawet jeśli jest włączona Pełna analiza rozwiązania.

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::GetEngineID | Dokumenty firmy Microsoft
+title: 'IDebugEngine2:: GetEngineID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731082"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-Pobiera identyfikator GUID aparatu debugowania (DE).
+Pobiera identyfikator GUID aparatu debugowania (Niemcy).
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ int GetEngineID(
 
 ## <a name="parameters"></a>Parametry
 `pguidEngine`\
-[na zewnątrz] Zwraca identyfikator GUID de.
+określoną Zwraca identyfikator GUID DE.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Niektóre przykłady typowych identyfikatorów GUID to `guidScriptEng`, `guidNativeEng`lub `guidSQLEng`. Nowe aparaty debugowania utworzą własny identyfikator GUID do identyfikacji.
+Przykłady typowych identyfikatorów GUID to `guidScriptEng` , `guidNativeEng` , lub `guidSQLEng` . Nowe aparaty debugowania utworzy własny identyfikator GUID do identyfikacji.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak `CEngine` zaimplementować tę metodę dla prostego obiektu, który implementuje interfejs [IDebugEngine2.](../../../extensibility/debugger/reference/idebugengine2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CEngine` obiektu, który implementuje interfejs [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) .
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {

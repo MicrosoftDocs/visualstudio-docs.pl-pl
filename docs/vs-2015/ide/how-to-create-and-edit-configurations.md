@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5f5d8bb92b80942a95528a0b2e4c7e64bbfafc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668143"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Porady: tworzenie i edycja konfiguracji
@@ -41,7 +41,7 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Można na przyk
 - W **Eksplorator rozwiązań**Otwórz menu skrótów dla rozwiązania, a następnie wybierz pozycję **Configuration Manager**.
 
   > [!NOTE]
-  > Jeśli polecenie **Configuration Manager** nie pojawia się w menu skrótów, poszukaj w menu **kompilacja** na pasku menu. Jeśli nie pojawia się on na pasku menu, wybierz **Narzędzia**, **Opcje**, a następnie w lewym okienku okna dialogowego **Opcje** , rozwiń węzeł **projekty i rozwiązania**, **Ogólne**, a następnie w prawym okienku wybierz pozycję **Pokaż Zaawansowane konfiguracje kompilacji** pole wyboru.
+  > Jeśli polecenie **Configuration Manager** nie pojawia się w menu skrótów, poszukaj w menu **kompilacja** na pasku menu. Jeśli nie pojawia się on na pasku menu, wybierz **Narzędzia**, **Opcje**, a następnie w lewym okienku okna dialogowego **Opcje** , rozwiń węzeł **projekty i rozwiązania**, **Ogólne**i w prawym okienku, zaznacz pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** .
 
    W oknie dialogowym **Configuration Manager** można użyć listy rozwijanej **aktywna Konfiguracja rozwiązania** , aby wybrać konfigurację kompilacji obejmującą całe rozwiązanie, zmodyfikować istniejącą lub utworzyć nową konfigurację. Możesz użyć listy rozwijanej **Active Solution platform** , aby wybrać platformę, do której należy konfiguracja, zmodyfikować istniejącą lub dodać nową platformę. W okienku **konteksty projektu** wyświetlane są projekty w rozwiązaniu. Dla każdego projektu można wybrać konfigurację i platformę specyficzną dla projektu, zmodyfikować istniejące lub utworzyć nową konfigurację lub dodać nową platformę. Możesz również zaznaczyć pola wyboru wskazujące, czy każdy projekt jest uwzględniany w przypadku używania konfiguracji całego rozwiązania do kompilowania lub wdrażania rozwiązania.
 
@@ -51,9 +51,9 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Można na przyk
 
 - W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Właściwości**.
 
-     Zostanie otwarte okno **strony właściwości** .
+     Zostanie otwarte okno  **strony właściwości** .
 
-     Można ustawić właściwości dla konfiguracji. Na przykład w przypadku konfiguracji wydania można określić, że kod jest zoptymalizowany, gdy rozwiązanie jest skompilowane, a w przypadku konfiguracji debugowania można określić, że `DEBUG` symbol kompilacji warunkowej jest włączony. Aby uzyskać więcej informacji na temat ustawień strony właściwości, zobacz [wprowadzenie do projektanta projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
+     Można ustawić właściwości dla konfiguracji. Na przykład w przypadku konfiguracji wydania można określić, że kod jest zoptymalizowany, gdy rozwiązanie jest skompilowane, a w przypadku konfiguracji debugowania można określić, że `DEBUG` jest włączony symbol kompilacji warunkowej. Aby uzyskać więcej informacji na temat ustawień strony właściwości, zobacz [wprowadzenie do projektanta projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 
 ## <a name="creating-and-modifying-project-configurations"></a>Tworzenie i modyfikowanie konfiguracji projektu
 

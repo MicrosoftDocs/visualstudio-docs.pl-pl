@@ -372,12 +372,14 @@
                   href: ca1305.md
                 - name: 'CA1306: Ustaw ustawienia regionalne dla typów danych'
                   href: ca1306.md
-                - name: 'CA1307: Określ argument StringComparison'
+                - name: 'CA1307: Określ parametr StringComparison w celu zapewnienia jednoznaczności'
                   href: ca1307.md
                 - name: 'CA1308: Normalizuj ciągi do postaci zapisanej wielkimi literami'
                   href: ca1308.md
                 - name: 'CA1309: Użyj porządkowego ustawienia właściwości StringComparison'
                   href: ca1309.md
+                - name: 'CA1310: Określ parametr StringComparison w celu zapewnienia poprawności'
+                  href: ca1310.md
                 - name: 'CA2101: Określ kierowanie dla argumentów ciągu P-Invoke'
                   href: ca2101.md
             - name: Ostrzeżenia dotyczące współdziałania
@@ -569,6 +571,8 @@
                   href: ca1835.md
                 - name: 'CA1836: Preferuj metodę IsEmpty względem metody Count, jeśli jest dostępna'
                   href: ca1836.md
+                - name: 'CA1837: Użyj elementu Environment.ProcessId zamiast elementu Process.GetCurrentProcess().Id'
+                  href: ca1837.md
                 - name: 'CA1838: Unikaj parametrów StringBuilder dla elementów P/Invoke'
                   href: ca1838.md
             - name: Ostrzeżenia dotyczące przenośności
@@ -601,6 +605,8 @@
                   href: ca2006.md
                 - name: 'CA2007: Nie oczekuj bezpośrednio zadania'
                   href: ca2007.md
+                - name: 'CA2008: Nie twórz zadań bez przekazania klasy TaskScheduler'
+                  href: ca2008.md
                 - name: 'CA2009: Nie wywołuj elementu ToImmutableCollection dla wartości ImmutableCollection'
                   href: ca2009.md
                 - name: 'CA2011: Nie przypisuj właściwości w ramach jej metody ustawiającej'
@@ -985,6 +991,8 @@
                   href: ca2247.md
                 - name: 'CA2248: Podaj poprawny argument wyliczenia dla metody Enum.HasFlag'
                   href: ca2248.md
+                - name: 'CA2249: Rozważ użycie metody String.Contains zamiast String.IndexOf'
+                  href: ca2249.md
             - name: Automatyczne wstrzymanie funkcji
               href: automatic-feature-suspension.md
             - name: Ostrzeżenia dotyczące publikowania

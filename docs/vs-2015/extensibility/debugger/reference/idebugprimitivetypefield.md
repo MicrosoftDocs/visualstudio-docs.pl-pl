@@ -1,5 +1,5 @@
 ---
-title: IDebugPrimitiveTypeField | Dokumentacja firmy Microsoft
+title: IDebugPrimitiveTypeField | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ad9ff38ae4533f7999b9966c1de32ac77105fcc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188112"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Reprezentuje wartość wyliczenia typu podstawowego z [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.  
+Reprezentuje wartość wyliczenia typu pierwotnego z interfejsu [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,15 +29,15 @@ IDebugPrimitiveTypeField : IDebugField
 ```  
   
 ## <a name="methods"></a>Metody  
- Oprócz metod na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu, ten interfejs implementuje następującą metodę:  
+ Oprócz metod w interfejsie [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ten interfejs implementuje następujące metody:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|Pobiera typ pierwotny, powiązanych z tym polem.|  
+|[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|Pobiera typ pierwotny skojarzony z tym polem.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: SH.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

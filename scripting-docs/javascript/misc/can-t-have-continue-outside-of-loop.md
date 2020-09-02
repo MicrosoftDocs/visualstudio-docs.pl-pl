@@ -15,18 +15,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e1223b3cee7f0246d8d685260fb6ea9ad0045347
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817648"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Instrukcja „continue" nie może występować poza pętlą
 Podjęto próbę użycia instrukcji **Continue** poza pętlą. Instrukcji **Continue** można użyć tylko w treści elementu:  
   
-- `do-while`for  
+- `do-while` for  
   
-- `while`for  
+- `while` for  
   
 - Pętla **for**  
   
@@ -36,15 +36,15 @@ Podjęto próbę użycia instrukcji **Continue** poza pętlą. Instrukcji **Cont
   
 - Upewnij się, że instrukcja **Continue** znajduje się w treści elementu:  
   
-  - `do-while`for  
+  - `do-while` for  
 
-  - `while`for  
+  - `while` for  
 
   - Pętla **for**  
 
   - Pętla **for/in** .  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Continue — instrukcja](../../javascript/reference/continue-statement-javascript.md)   
  [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
  [Rozwiązywanie problemów ze skryptami](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d56f2dfc2924008a6be293fe1498f0ffe32abaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651440"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operatory logiczne w wyrażeniach wyszukiwania
@@ -31,7 +31,7 @@ Za pomocą operatorów logicznych można uściślić Wyszukiwanie zawartości, t
 |-------------------|---------|-------------|------------|
 |Oba warunki w tym samym temacie|AND|DIB i paleta|Tematy zawierające obie wersje "DIB" i "paleta".|
 |Dowolny termin w temacie|LUB|Raster lub Vector|Tematy zawierające "rastrowe" lub "Vector".|
-|Pierwszy termin bez drugiego terminu w tym samym temacie|NIEMOŻLIWE|"system operacyjny" nie jest DOS|Tematy zawierające "system operacyjny", ale nie "DOS".|
+|Pierwszy termin bez drugiego terminu w tym samym temacie|NOT|"system operacyjny" nie jest DOS|Tematy zawierające "system operacyjny", ale nie "DOS".|
 |Oba terminy, blisko siebie w temacie|POBLIŻU|Użytkownik blisko jądra|Tematy zawierające "użytkownika" w bliskim sąsiedztwie "jądra".|
 
 ## <a name="see-also"></a>Zobacz też

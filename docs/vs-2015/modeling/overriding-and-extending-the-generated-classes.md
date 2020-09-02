@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 16a09a5b0f5e534d310092036b8e7eb1d4c344d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668476"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Zastępowanie i rozszerzanie wygenerowanych klas
@@ -29,7 +29,7 @@ Definicja DSL jest platformą, na której można utworzyć zaawansowany zestaw n
 ### <a name="overriding-methods-in-a-partial-class"></a>Zastępowanie metod w klasie częściowej
  Częściowe definicje klas umożliwiają zdefiniowanie klasy w więcej niż jednym miejscu. Dzięki temu możesz oddzielić wygenerowany kod od kodu, który napiszesz samodzielnie. W kodzie ręcznym, można przesłonić klasy dziedziczone przez wygenerowany kod.
 
- Na przykład jeśli w definicji DSL zdefiniujesz klasę domeny o nazwie `Book`, możesz napisać niestandardowy kod, który dodaje metody zastąpień:
+ Na przykład, jeśli w definicji DSL definiujesz klasę domeny o nazwie `Book` , można napisać niestandardowy kod, który dodaje metody zastąpień:
 
  `public partial class Book`
 
@@ -55,29 +55,29 @@ Definicja DSL jest platformą, na której można utworzyć zaawansowany zestaw n
 
  Niemniej jednak można zastąpić te metody przez ustawienie opcji **Generuj podwójną flagę pochodną** dla klasy domeny. Powoduje to wygenerowanie dwóch klas, jedną z nich jest abstrakcyjną klasą bazową drugiej. Wszystkie definicje metody i właściwości znajdują się w klasie bazowej, a tylko Konstruktor znajduje się w klasie pochodnej.
 
- Na przykład w bibliotece Sample. DSL Klasa `CirculationBook` domeny ma właściwość `Generates``Double Derived` ustawioną na `true`. Wygenerowany kod dla tej klasy domeny zawiera dwie klasy:
+ Na przykład w bibliotece Sample. DSL `CirculationBook` Klasa domeny ma `Generates``Double Derived` ustawioną właściwość `true` . Wygenerowany kod dla tej klasy domeny zawiera dwie klasy:
 
 - `CirculationBookBase`, który jest abstrakcyjny i zawiera wszystkie metody i właściwości.
 
-- `CirculationBook`, który pochodzi od `CirculationBookBase`. Jest ona pusta, z wyjątkiem konstruktorów.
+- `CirculationBook`, który pochodzi od `CirculationBookBase` . Jest ona pusta, z wyjątkiem konstruktorów.
 
-  Aby zastąpić dowolną metodę, należy utworzyć częściową definicję klasy pochodnej, takiej jak `CirculationBook`. Można zastąpić zarówno wygenerowane metody, jak i metody dziedziczone z struktury modelowania.
+  Aby zastąpić każdą metodę, należy utworzyć częściową definicję klasy pochodnej, na przykład `CirculationBook` . Można zastąpić zarówno wygenerowane metody, jak i metody dziedziczone z struktury modelowania.
 
   Tej metody można użyć z wszystkimi typami elementów, w tym elementami modelu, relacjami, kształtami, diagramami i łącznikami. Można również przesłonić metody innych wygenerowanych klas. Niektóre wygenerowane klasy, takie jak ToolboxHelper, są zawsze wyprowadzane podwójnie.
 
 ### <a name="custom-constructors"></a>Konstruktory niestandardowe
  Nie można zastąpić konstruktora. Nawet w przypadku klas o podwójnej pochodnej Konstruktor musi znajdować się w klasie pochodnej.
 
- Aby zapewnić własny Konstruktor, można to zrobić przez ustawienie `Has Custom Constructor` dla klasy domeny w definicji DSL. Po kliknięciu przycisku **Przekształć wszystkie szablony**, wygenerowany kod nie będzie zawierać konstruktora dla tej klasy. Będzie zawierać wywołanie brakującego konstruktora. Powoduje to raport o błędach podczas kompilowania rozwiązania. Kliknij dwukrotnie raport o błędach, aby wyświetlić komentarz w wygenerowanym kodzie, który wyjaśnia, co należy podać.
+ Aby zapewnić własny Konstruktor, można to zrobić przez ustawienie `Has Custom Constructor` klasy domeny w definicji DSL. Po kliknięciu przycisku **Przekształć wszystkie szablony**, wygenerowany kod nie będzie zawierać konstruktora dla tej klasy. Będzie zawierać wywołanie brakującego konstruktora. Powoduje to raport o błędach podczas kompilowania rozwiązania. Kliknij dwukrotnie raport o błędach, aby wyświetlić komentarz w wygenerowanym kodzie, który wyjaśnia, co należy podać.
 
  Napisz częściową definicję klasy w pliku, który jest oddzielony od wygenerowanych plików, i podaj konstruktora.
 
 ### <a name="flagged-extension-points"></a>Oflagowane punkty rozszerzenia
- Oflagowany punkt rozszerzenia to miejsce w definicji DSL, w którym można ustawić właściwość lub pole wyboru, aby wskazać, że zostanie określona metoda niestandardowa. Konstruktory niestandardowe są jednym przykładem. Inne przykłady obejmują ustawienie `Kind` właściwości domeny na obliczeniową lub niestandardową magazyn lub ustawienie flagi **is Custom** w konstruktorze połączeń.
+ Oflagowany punkt rozszerzenia to miejsce w definicji DSL, w którym można ustawić właściwość lub pole wyboru, aby wskazać, że zostanie określona metoda niestandardowa. Konstruktory niestandardowe są jednym przykładem. Inne przykłady obejmują ustawienie `Kind` właściwości domeny na obliczeniową lub niestandardową magazyn lub ustawienie flagi **is Custom** w konstruktorze połączenia.
 
  W każdym przypadku, gdy ustawisz flagę i wygenerujesz ponownie kod, zostanie zwrócony błąd kompilacji. Kliknij dwukrotnie błąd, aby wyświetlić komentarz wyjaśniający, co należy podać.
 
-### <a name="rules"></a>Przepisy
+### <a name="rules"></a>Reguły
  Menedżer transakcji umożliwia definiowanie reguł, które są uruchamiane przed końcem transakcji, w której wystąpiło określone zdarzenie, takie jak zmiana właściwości. Reguły są zwykle używane do obsługi synchronism między różnymi elementami w sklepie. Na przykład reguły są używane do upewnienia się, że na diagramie jest wyświetlany bieżący stan modelu.
 
  Reguły są definiowane dla poszczególnych klas, dzięki czemu nie trzeba mieć kodu, który rejestruje regułę dla każdego obiektu. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).

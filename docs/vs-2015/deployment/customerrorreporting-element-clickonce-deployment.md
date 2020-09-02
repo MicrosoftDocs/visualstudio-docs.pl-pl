@@ -1,5 +1,5 @@
 ---
-title: '&lt;customErrorReporting&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;customErrorReporting, &gt; element (wdrażanie ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,16 +16,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7e8a0db3e10a277fe1c4a2f8fcd2bb85fa69e69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187831"
 ---
-# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; — Element (wdrażanie ClickOnce)
+# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting, &gt; element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa identyfikator URI do wyświetlenia, gdy wystąpi błąd.  
+Określa identyfikator URI, który ma być wyświetlany w przypadku wystąpienia błędu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,12 +36,12 @@ Określa identyfikator URI do wyświetlenia, gdy wystąpi błąd.
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- Ten element jest opcjonalny. Bez tego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Wyświetla okno dialogowe błędu przedstawiający stos wyjątków. Jeśli `customErrorReporting` element jest obecny, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zamiast tego wyświetli wskazywanym przez identyfikator URI `uri` parametru. Docelowy identyfikator URI będzie zawierać klasy wewnętrzny wyjątek, komunikat wyjątku wewnętrznego i klasy wyjątków zewnętrzne jako parametry.  
+ Ten element jest opcjonalny. Bez niej, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wyświetla okno dialogowe błędu, które przedstawia stos wyjątków. Jeśli `customErrorReporting` element jest obecny, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zamiast niego zostanie wyświetlony identyfikator URI wskazywany przez `uri` parametr. Docelowy identyfikator URI będzie zawierać klasę zewnętrznego wyjątku, klasę wyjątku wewnętrznego i komunikat wyjątku wewnętrznego jako parametry.  
   
- Ten element umożliwia dodawanie raportów o błędach funkcji do aplikacji. Ponieważ wygenerowanego identyfikatora URI zawiera informacje o typie błędu, witryny sieci Web można analizować tych informacji i ekran, na przykład odpowiednie ekranu rozwiązywania problemów.  
+ Ten element umożliwia dodanie funkcji raportowania błędów do aplikacji. Ponieważ wygenerowany identyfikator URI zawiera informacje o typie błędu, witryna sieci Web może analizować te informacje i wyświetlać, na przykład odpowiedni ekran rozwiązywania problemów.  
   
 ## <a name="example"></a>Przykład  
- Poniższy fragment kodu przedstawia `customErrorReporting` elementu, wraz z wygenerowanego identyfikatora URI może powodować generowanie.  
+ Poniższy fragment kodu przedstawia `customErrorReporting` element wraz z wygenerowanym identyfikatorem URI, który może zostać utworzony.  
   
 ```  
 <customErrorReporting uri=http://www.contoso.com/applications/error.asp />  

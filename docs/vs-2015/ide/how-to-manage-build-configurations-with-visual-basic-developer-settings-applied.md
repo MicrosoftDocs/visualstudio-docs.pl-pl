@@ -18,23 +18,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5f8568edc636955558ec93b55c0aedebf0065d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651837"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Porady: zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Domyślnie wszystkie opcje zaawansowanej konfiguracji kompilacji są ukryte z zastosowaniem ustawień dewelopera [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. W tym temacie wyjaśniono, jak ręcznie włączyć te ustawienia.
+Domyślnie wszystkie zaawansowane opcje konfiguracji kompilacji są ukrywane z [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] zastosowaniem ustawień dewelopera. W tym temacie wyjaśniono, jak ręcznie włączyć te ustawienia.
 
 ## <a name="enabling-advanced-build-configurations"></a>Włączanie zaawansowanych konfiguracji kompilacji
- Domyślnie ustawienia dewelopera [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ukrywają opcję, aby otworzyć okno dialogowe **Configuration Manager** oraz listę **konfiguracji** i **platformy** w [projektancie projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
+ Domyślnie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Ustawienia dewelopera umożliwiają ukrycie opcji otwarcia okna dialogowego **Configuration Manager** oraz list **konfiguracji** i **platformy** w [projektancie projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 
 #### <a name="to-enable-advanced-build-configurations"></a>Aby włączyć zaawansowane konfiguracje kompilacji
 
-1. W menu **Narzędzia** kliknij pozycję **Opcje**.
+1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
 2. Rozwiń węzeł **projekty i rozwiązania**, a następnie kliknij pozycję **Ogólne**.
 

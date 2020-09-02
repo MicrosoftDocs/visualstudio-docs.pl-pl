@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 694f10fb0af440513331aa6e76dbf9a59a16d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668504"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio
@@ -29,12 +29,12 @@ Można również otworzyć modele i diagramy w interfejsie użytkownika programu
 
 - Model można otworzyć w trybie tylko do odczytu. Aby uzyskać więcej informacji, zobacz [Odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Showing"></a>Otwieranie modeli i diagramów w programie Visual Studio
- Aby otworzyć model w interfejsie użytkownika, należy użyć standardowego interfejsu API programu Visual Studio `EnvDTE.DTE`. Istnieją dwa przydatne rzuty, które można wykonywać na elementach projektu modelowania:
+## <a name="opening-models-and-diagrams-in-visual-studio"></a><a name="Showing"></a> Otwieranie modeli i diagramów w programie Visual Studio
+ Aby otworzyć model w interfejsie użytkownika, należy użyć standardowego interfejsu API programu Visual Studio `EnvDTE.DTE` . Istnieją dwa przydatne rzuty, które można wykonywać na elementach projektu modelowania:
 
-- `EnvDTE.Project` można rzutować do i z `IModelingProject`, jeśli projekt jest projektem modelowania i jeśli projekt jest ładowany w bieżącej domenie aplikacji.
+- `EnvDTE.Project` można rzutować do i z `IModelingProject` , jeśli projekt jest projektem modelowania i jeśli projekt jest ładowany w bieżącej domenie aplikacji.
 
-- `EnvDTE.ProjectItem` można rzutować do i z `IDiagramContext`, jeśli element jest diagramem UML.
+- `EnvDTE.ProjectItem` można rzutować do i z `IDiagramContext` , jeśli element jest diagramem UML.
 
   W poniższym przykładzie projekt powinien importować te odwołania:
 

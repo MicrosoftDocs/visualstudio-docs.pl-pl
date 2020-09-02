@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817401"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: korzystanie z funkcji edytora XML
@@ -130,6 +130,6 @@ W tym instruktażu jest używany następujący plik schematu:
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor XML](../xml-tools/xml-editor.md)

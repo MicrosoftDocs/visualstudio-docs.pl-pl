@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2 | Dokumentacja firmy Microsoft
+title: IDebugDisassemblyStream2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5126758c60262564390f84b6278300a41660f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187177"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
@@ -31,32 +31,32 @@ IDebugDisassemblyStream2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Aparat debugowania implementuje ten interfejs obsługuje dezasemblacji kodu programu.  
+ Aparat debugowania implementuje ten interfejs, aby obsługiwał rozzbiór kodu programu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołanie [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) metoda zwraca ten interfejs.  
+ Wywołanie metody [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) zwraca ten interfejs.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugDisassemblyStream2`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metody `IDebugDisassemblyStream2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Odczytuje instrukcje od bieżącej pozycji w strumieniu dezasemblacji.|  
-|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Przesuwa wskaźnik odczytu strumienia dezasemblacji daną liczbę instrukcji względem określonej pozycji.|  
-|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Zwraca identyfikator lokalizacji kodu dla kontekstu określonego kodu.|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Zwraca obiekt kontekstu kodu odpowiadającego identyfikatorowi lokalizacji określonego kodu.|  
+|[Odczyt](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Odczytuje instrukcje zaczynające się od bieżącej pozycji w strumieniu demontażu.|  
+|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Przenosi wskaźnik odczytu w strumieniu demontażu przez daną liczbę instrukcji względem określonego położenia.|  
+|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Zwraca identyfikator lokalizacji kodu dla określonego kontekstu kodu.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Zwraca obiekt kontekstu kodu odpowiadający określonemu identyfikatorowi lokalizacji kodu.|  
 |[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Zwraca identyfikator lokalizacji kodu, który reprezentuje bieżącą lokalizację kodu.|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Pobiera dokument źródłowy skojarzony z tym strumieniu dezasemblacji.|  
-|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Pobiera zakres ten strumień dezasemblacji.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Pobiera rozmiar tego strumienia dezasemblacji.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Pobiera dokument źródłowy skojarzony z tym strumieniem odzestawu.|  
+|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Pobiera zakres tego strumienia rozasemblera.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Pobiera rozmiar tego strumienia rozbudowania.|  
   
 ## <a name="remarks"></a>Uwagi  
- Strumień dezasemblacji mogą być tworzone do reprezentowania całą przestrzenią adresową lub po prostu funkcji lub modułu w obrębie przestrzeni. Każda instrukcja jest reprezentowany przez [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury zwracany przez wywołanie [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody.  
+ Strumień demontażu można utworzyć w taki sposób, aby reprezentować całą przestrzeń adresową lub tylko funkcję lub moduł w miejscu. Każda instrukcja jest reprezentowana przez strukturę [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) zwracaną przez wywołanie metody [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

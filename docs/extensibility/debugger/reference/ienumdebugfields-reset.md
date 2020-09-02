@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Reset | Dokumenty firmy Microsoft
+title: 'IEnumDebugFields:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: be33249ef583776f613c6716143249e3ce31bc8d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716846"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
-Ta metoda resetuje wyliczenie do pierwszego elementu.
+Ta metoda resetuje Wyliczenie do pierwszego elementu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,10 +39,10 @@ int Reset();
  Brak
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Po wywołaniu tej metody, następne wywołanie [Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md) zwraca pierwszy element wyliczenia.
+ Po wywołaniu tej metody następne wywołanie [Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md) zwraca pierwszy element wyliczenia.
 
 ## <a name="see-also"></a>Zobacz też
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

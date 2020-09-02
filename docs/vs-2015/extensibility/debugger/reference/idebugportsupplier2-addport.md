@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::AddPort | Dokumentacja firmy Microsoft
+title: 'IDebugPortSupplier2:: AddPort | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf5bf281e794bde04ae0c2e86c6d27edb7edc5a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188298"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
@@ -42,16 +42,16 @@ int AddPort( 
   
 #### <a name="parameters"></a>Parametry  
  `pRequest`  
- [in] [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) obiekt, który opisuje portu, który ma zostać dodana.  
+ podczas Obiekt [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) , który opisuje port, który ma zostać dodany.  
   
  `ppPort`  
- [out] Zwraca [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) obiekt, który reprezentuje numer portu.  
+ określoną Zwraca obiekt [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , który reprezentuje port.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda faktycznie tworzy żądany port, a także dodanie go do dostawcy portu wewnętrznej listy aktywnych portów. [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) metodę można wywołać najpierw, aby uniknąć możliwych opóźnień czasochłonne.  
+ Ta metoda w rzeczywistości tworzy żądany port, a także dodaje go do wewnętrznej listy aktywnych portów dostawcy portów. Metodę [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) można wywołać w pierwszej kolejności, aby uniknąć potencjalnych czasochłonnych opóźnień.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   

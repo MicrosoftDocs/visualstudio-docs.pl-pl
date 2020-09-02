@@ -1,5 +1,5 @@
 ---
-title: Czas zarządzania pamięcią | Dokumentacja firmy Microsoft
+title: Czas zarządzania pamięcią | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48cbdd523f4527af84c52366a439a18330e1828c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157345"
 ---
 # <a name="memory-management-time"></a>Czas zarządzania pamięcią
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Te segmenty na osi czasu są skojarzone z zablokowania prób są podzielone na zarządzanie pamięcią. Oznacza to, że wątek jest zablokowany przez zdarzenie, który jest skojarzony z operacji zarządzania pamięcią, takich jak stronicowania. W tym czasie wątek został zablokowany w stanie interfejsu API lub jądra Concurrency Visualizer jest liczy się jako zarządzania pamięcią. Obejmują one zdarzenia, takie jak Alokacja pamięci i stronicowania.  
+Te segmenty na osi czasu są skojarzone z czasem blokowania, które są klasyfikowane jako zarządzanie pamięcią. Oznacza to, że wątek jest blokowany przez zdarzenie skojarzone z operacją zarządzania pamięcią, taką jak stronicowanie. W tym czasie wątek został zablokowany w interfejsie API lub jądra, który jest obliczany przez Wizualizator współbieżności jako zarządzanie pamięcią. Obejmują one zdarzenia, takie jak stronicowanie i alokacja pamięci.  
   
- Sprawdź stosy wywołań skojarzone i profilu, aby lepiej zrozumieć podstawowe przyczyny bloki, które są podzielone na zarządzanie pamięcią raportów.  
+ Przejrzyj skojarzone stosy wywołań i raporty profilowe, aby lepiej zrozumieć podstawowe przyczyny dotyczące bloków, które są klasyfikowane jako zarządzanie pamięcią.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

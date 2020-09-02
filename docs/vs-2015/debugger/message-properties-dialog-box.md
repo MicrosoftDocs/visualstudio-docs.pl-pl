@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe Właściwości komunikatu | Dokumentacja firmy Microsoft
+title: Okno dialogowe Właściwości komunikatu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,55 +13,55 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 672bc439a91f0b49c1d198ea666789a6fdcab07e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198170"
 ---
 # <a name="message-properties-dialog-box"></a>Właściwości komunikatu — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby dowiedzieć się więcej na temat szczegółowy komunikat o błędzie, należy użyć tego okna dialogowego. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widoku komunikatów](../debugger/messages-view.md) okna. Zaznacz dowolny węzeł wiadomości w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
+Użyj tego okna dialogowego, aby dowiedzieć się więcej o określonym komunikacie. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [Widok komunikatów](../debugger/messages-view.md) . Wybierz dowolny węzeł komunikatu w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .  
   
- **Ogólne** tylko kartę, wyświetlany jest karta. Dostępne są następujące ustawienia:  
+ Karta **Ogólne** jest jedyną wyświetlaną kartą. Dostępne są następujące ustawienia:  
   
  **Uchwyt okna**  
- Unikatowy identyfikator tego okna. Numery uchwyt okna są ponownie; identyfikują one oknem tylko okres istnienia tego okna. Kliknij tę wartość, aby wyświetlić właściwości tego okna.  
+ Unikatowy identyfikator tego okna. Numery uchwytów okien są ponownie używane; identyfikują one okno tylko dla okresu istnienia tego okna. Kliknij tę wartość, aby wyświetlić właściwości tego okna.  
   
  **Poziom zagnieżdżenia**  
- Głębokość zagnieżdżenia tego komunikatu, gdzie 0 jest bez zagnieżdżania.  
+ Głębokość zagnieżdżenia tego komunikatu, gdzie 0 nie ma zagnieżdżenia.  
   
- **Komunikat**  
- Liczba, stan i nazwa komunikatu wybranego systemu windows.  
+ **Wiadomość**  
+ Liczba, stan i nazwa wybranego komunikatu systemu Windows.  
   
  **lResult**  
- Wartość *lResult* parametru, jeśli istnieje.  
+ Wartość parametru *LRESULT* (jeśli istnieje).  
   
  **wParam**  
- Wartość *wParam* parametru, jeśli istnieje.  
+ Wartość parametru *wParam* (jeśli istnieje).  
   
  **lParam**  
- Wartość *lParam* parametru, jeśli istnieje. Ta wartość jest dekodowana, gdy jest wskaźnikiem do ciągu lub struktury.  
+ Wartość parametru *lParam* (jeśli istnieje). Ta wartość jest zdekodowana, jeśli jest wskaźnikiem do ciągu lub struktury.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Opcje komunikatów, okno dialogowe](../debugger/message-options-dialog-box.md)  
- Używany do wybierania, wiadomości, które są wymienione w bieżącym widokiem wiadomości.  
+ [Opcje komunikatów — Okno dialogowe](../debugger/message-options-dialog-box.md)  
+ Służy do wybierania komunikatów, które są wyświetlane w widoku aktywnych komunikatów.  
   
- [Wyszukiwanie komunikatów, okno dialogowe](../debugger/message-search-dialog-box.md)  
- Umożliwia znalezienie węzeł, aby uzyskać szczegółowy komunikat o błędzie w widoku komunikatów.  
+ [Wyszukiwanie komunikatów — Okno dialogowe](../debugger/message-search-dialog-box.md)  
+ Służy do znajdowania węzła określonego komunikatu w widoku komunikatów.  
   
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.  
+ [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)  
+ Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.  
   
  [Wyszukiwanie komunikatu w widoku komunikatów](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Wyjaśnia, jak znaleźć szczegółowy komunikat o błędzie w widoku komunikatów.  
+ Wyjaśnia, jak znaleźć konkretny komunikat w widoku komunikatów.  
   
  [Widok komunikatów](../debugger/messages-view.md)  
- Przedstawia strumień komunikatu skojarzonego z okna, proces lub wątek.  
+ Wyświetla strumień wiadomości skojarzony z oknem, procesem lub wątkiem.  
   
- [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
+ [Spy++ — Widoki](../debugger/spy-increment-views.md)  
+ Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.
+ Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.

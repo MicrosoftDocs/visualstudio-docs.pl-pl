@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b34b44ed0bb1f1848ae37188aa642c6a4d2ce40e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817076"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „}"
@@ -28,6 +28,6 @@ Nie uwzględniono prawego nawiasu klamrowego, który oznacza koniec treści funk
   
 - Dodaj prawy nawias klamrowy, który oznacza koniec funkcji, pętli, bloku lub inicjatora obiektów.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Obiekt Function](../../javascript/reference/function-object-javascript.md)   
  [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)

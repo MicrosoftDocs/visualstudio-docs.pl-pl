@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9a3b35e05108db879b365b9cafc39cacdf843397
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668555"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Wiele języków DSL w jednym rozwiązaniu
@@ -27,7 +27,7 @@ W ramach jednego rozwiązania można spakować kilka językami DSL, aby zostały
 
 1. Utwórz co najmniej dwa rozwiązania DSL i projekt VSIX, a następnie Dodaj wszystkie projekty do jednego rozwiązania.
 
-   - Aby utworzyć nowy projekt VSIX: w oknie dialogowym **Nowy projekt** wybierz pozycję **Wizualizacja C#** , **rozszerzalność**, **Projekt VSIX**.
+   - Aby utworzyć nowy projekt VSIX: w oknie dialogowym **Nowy projekt** wybierz pozycję **Visual C#**, **rozszerzalność**, **Projekt VSIX**.
 
    - Utwórz co najmniej dwa rozwiązania DSL w katalogu rozwiązania VSIX.
 
@@ -35,19 +35,19 @@ W ramach jednego rozwiązania można spakować kilka językami DSL, aby zostały
 
         Upewnij się, że tworzysz każde DSL z innym rozszerzeniem nazwy pliku.
 
-   - Zmień nazwy projektów **DSL** i **DslPackage** tak, aby były różne. Na przykład: `Dsl1`, `DslPackage1`, `Dsl2` `DslPackage2`.
+   - Zmień nazwy projektów **DSL** i **DslPackage** tak, aby były różne. Na przykład: `Dsl1` , `DslPackage1` , `Dsl2` , `DslPackage2` .
 
    - W każdym **DslPackage \* \ source.Extension.tt**zaktualizuj ten wiersz do prawidłowej nazwy projektu DSL:
 
         `string dslProjectName = "Dsl2";`
 
-   - W rozwiązaniu VSIX Dodaj projekty DSL * i DslPackage \*.
+   - W rozwiązaniu VSIX Dodaj projekty DSL * i DslPackage \* .
 
         Możesz chcieć umieścić każdą parę w swoim własnym folderze rozwiązania.
 
 2. Połącz manifesty VSIX językami DSL:
 
-   1. Otwórz _YourVsixProject_ **\source.Extension.manifest**.
+   1. Otwórz _YourVsixProject_**\source.Extension.manifest**.
 
    2. Dla każdego DSL wybierz pozycję **Dodaj zawartość** i Dodaj:
 
@@ -59,7 +59,7 @@ W ramach jednego rozwiązania można spakować kilka językami DSL, aby zostały
 
 3. Skompiluj rozwiązanie.
 
-   W rezultacie program VSIX zainstaluje oba językami DSL. Można je przetestować przy użyciu klawisza F5 lub wdrożyć _YourVsixProject_ **\bin\debug \\ \*. vsix**.
+   W rezultacie program VSIX zainstaluje oba językami DSL. Można je przetestować przy użyciu klawisza F5 lub wdrożyć _YourVsixProject_**\bin\debug \\ \* . vsix**.
 
 ## <a name="see-also"></a>Zobacz też
  [Integrowanie modeli za pomocą programu Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) [How to: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md) [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md)

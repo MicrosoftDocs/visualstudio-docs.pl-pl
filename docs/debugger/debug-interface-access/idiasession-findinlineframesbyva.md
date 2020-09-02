@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c241662b2d80beb31fb62bcd3b5b9f4ff133a2ff
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465686"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
@@ -32,7 +32,7 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>Parametry
  `parent`
 
-podczas `IDiaSymbol`Obiekt reprezentujący element nadrzędny.
+podczas `IDiaSymbol` Obiekt reprezentujący element nadrzędny.
 
  `va`
 

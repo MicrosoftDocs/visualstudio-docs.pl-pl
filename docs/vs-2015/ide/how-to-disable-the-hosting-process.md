@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667972"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Porady: wyłączanie procesu hostingu
@@ -26,7 +26,7 @@ Na wywołania niektórych interfejsów API mogą być narażone zmiany, gdy proc
 
 ### <a name="to-disable-the-hosting-process"></a>Aby wyłączyć proces hostingu
 
-1. Otwórz projekt wykonywalny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dla projektów, które nie generują plików wykonywalnych (na przykład biblioteki klas lub projektów usług), nie można korzystać z tej opcji.
+1. Otwórz projekt wykonywalny w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Dla projektów, które nie generują plików wykonywalnych (na przykład biblioteki klas lub projektów usług), nie można korzystać z tej opcji.
 
 2. W menu **projekt** kliknij polecenie **Właściwości**.
 
@@ -45,4 +45,4 @@ Na wywołania niektórych interfejsów API mogą być narażone zmiany, gdy proc
 - Debugowanie częściowej relacji zaufania jest niedostępne.
 
 ## <a name="see-also"></a>Zobacz też
- [Debugowanie i](../debugger/debugging-and-the-hosting-process.md) proces hostingu procesów hostingu [(vshost. exe)](../ide/hosting-process-vshost-exe.md) [podczas opracowywania aplikacji](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+ [Debugowanie i](../debugger/debugging-and-the-hosting-process.md) proces hostingu procesów hostingu [(vshost.exe)](../ide/hosting-process-vshost-exe.md) [kompilacji podczas tworzenia aplikacji](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

@@ -1,5 +1,5 @@
 ---
-title: Element treści szablonu (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: TemplateContent, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 577ce71d3900947cde1de9a1e913124ab778a1ee
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699235"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent — Element (szablony Visual Studio)
@@ -46,17 +46,17 @@ Hierarchia elementów:
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Określa, czy rozwiązanie ma być tworzone na podstawie szablonu.|
+|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Określa, czy rozwiązanie ma zostać skompilowane po utworzeniu projektu na podstawie szablonu.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa organizację i zawartość szablonów wieloprojektowych.|
-|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa pliki lub katalogi do dodania do projektu.|
-|[Dokumentacja](../extensibility/references-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa odwołania do złożenia wymagane dla szablonu elementu.|
+|[Project](../extensibility/project-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa pliki lub katalogi, które mają zostać dodane do projektu.|
+|[Dokumentacja](../extensibility/references-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa odwołania do zestawów wymagane dla szablonu elementu.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Element opcjonalny.<br /><br /> Określa plik zawarty w szablonie.|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa wszystkie parametry niestandardowe, które mają być używane podczas tworzenia projektu lub elementu na podstawie szablonu.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa wszelkie parametry niestandardowe, które mają być używane podczas tworzenia projektu lub elementu z szablonu.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -65,7 +65,7 @@ Hierarchia elementów:
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Zawiera wszystkie metadane szablonu projektu, szablonu elementu lub zestawu startowego.|
 
 ## <a name="remarks"></a>Uwagi
- `TemplateContent`jest wymaganym elementem.
+ `TemplateContent` jest elementem wymaganym.
 
 ## <a name="example"></a>Przykład
  W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 741f347a5b5d9f9268604d76afac2ace051faefa
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817388"
 ---
 # <a name="expected-"></a>Oczekiwano znaku „;"
@@ -32,5 +32,5 @@ Podjęto próbę umieszczenia więcej niż jednej instrukcji w wierszu, ale nie 
   
 - Upewnij się, że nie pamiętasz średników wewnątrz nagłówka pętli **for** .  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Pisanie kodu JavaScript](../../javascript/writing-javascript-code.md)

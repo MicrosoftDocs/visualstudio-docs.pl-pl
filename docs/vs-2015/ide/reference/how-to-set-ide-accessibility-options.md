@@ -12,24 +12,24 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: afff9e06c4333f4910e22e963d24090c1d1e4c6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651333"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Porady: ustawianie opcji ułatwień dostępu IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zawiera funkcje, które ułatwiają osobom, które mają niewielki dostęp do odczytu i dla osób, które mają ograniczoną ruch. Te funkcje obejmują zmianę rozmiaru i koloru tekstu w edytorach, zmianę rozmiaru tekstu i przycisków na paskach narzędzi oraz Autouzupełnianie dla metod i parametrów, aby podać kilka nazw.
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zawiera funkcje, które ułatwiają osobom, które mają słabą wizję do odczytu i dla osób, które mają ograniczoną ruch. Te funkcje obejmują zmianę rozmiaru i koloru tekstu w edytorach, zmianę rozmiaru tekstu i przycisków na paskach narzędzi oraz Autouzupełnianie dla metod i parametrów, aby podać kilka nazw.
 
- Ponadto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje układy klawiatury Dvoraka, które sprawiają, że najczęściej wpisywane znaki są bardziej dostępne. Możesz również dostosować domyślne klawisze skrótów dostępne dla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+ Dodatkowo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje układy klawiatury Dvoraka, które sprawiają, że najczęściej wpisywane znaki są bardziej dostępne. Można również dostosować domyślne klawisze skrótów dostępne w programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Aby uzyskać więcej informacji, zobacz [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Edytory, okna dialogowe i okna narzędzi
- Domyślnie okna dialogowe i okna narzędzi w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używają tego samego rozmiaru i koloru czcionki co system operacyjny. Ustawienia koloru dla ramki środowiska IDE, okien dialogowych, pasków narzędzi i okien narzędzi są oparte na schemacie kolorów: jasne lub ciemne. Bieżący motyw kolorów można zmienić w [oknie dialogowym ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md).
+ Domyślnie okna dialogowe i okna narzędzi w programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używają tego samego rozmiaru i koloru czcionki co system operacyjny. Ustawienia koloru dla ramki środowiska IDE, okien dialogowych, pasków narzędzi i okien narzędzi są oparte na schemacie kolorów: jasne lub ciemne. Bieżący motyw kolorów można zmienić w [oknie dialogowym ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md).
 
  Okna podręczne można także wyświetlić w widoku Kod edytora. Te okna mogą monitować o dostępne elementy członkowskie bieżącego obiektu i parametry, aby ukończyć funkcję lub instrukcję. Te okna mogą być przydatne, jeśli masz problemy z wpisywaniem. Jednak zakłócają one fokus w edytorze kodu, co może być problematyczne dla niektórych użytkowników. Możesz wyłączyć te okna, otwierając okno dialogowe Opcje i czyszcząc **listę członków** i **Informacje o parametrach** w **edytorze tekstu**, **wszystkie języki**, **Ogólne** strony w oknie dialogowym **Opcje** . Aby uzyskać więcej informacji, zobacz [How to: Set General Editor Options](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).
 
@@ -50,7 +50,7 @@ ms.locfileid: "72651333"
 
      Aby zmienić rozmiar czcionki dla tekstu w edytorze, wybierz **Edytor tekstu**.
 
-     Aby zmienić rozmiar czcionki dla tekstu w oknach narzędzi tekstowych, wybierz opcję **[wszystkie okna narzędzi tekstowych]** .
+     Aby zmienić rozmiar czcionki dla tekstu w oknach narzędzi tekstowych, wybierz opcję **[wszystkie okna narzędzi tekstowych]**.
 
      Aby zmienić rozmiar czcionki dla tekstu etykietki narzędzia w edytorze, wybierz **etykietkę narzędzia edytora**.
 
@@ -65,13 +65,13 @@ ms.locfileid: "72651333"
     > [!NOTE]
     > Aby zresetować rozmiar tekstu dla okien narzędzi tekstowych i edytorów, wybierz opcję **Użyj wartości domyślnych**.
 
-7. Wybierz **przycisk OK**.
+7. Wybierz przycisk **OK**.
 
 ### <a name="changing-the-colors-used-in-the-ide"></a>Zmiana kolorów używanych w środowisku IDE
  Możesz również zmienić domyślne kolory tekstu, wskaźników marginesów, białego znaku i elementów kodu w edytorze.
 
 > [!NOTE]
-> Aby użyć kolorów o dużym kontraście dla wszystkich okien aplikacji w systemie operacyjnym, naciśnij klawisze z lewej <strong>Alt +</strong>Strzałka w lewo **Shift + Print Screen**. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otwarty, Zamknij i ponownie otwórz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], aby całkowicie zaimplementować kolory o wysokim kontraście.
+> Aby użyć kolorów o dużym kontraście dla wszystkich okien aplikacji w systemie operacyjnym, naciśnij klawisze z lewej <strong>Alt +</strong>Strzałka w lewo **Shift + Print Screen**. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otwarte, Zamknij i Otwórz ponownie, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Aby w pełni zaimplementować kolory o wysokim kontraście.
 
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Aby zmienić kolor elementów w edytorze
 
@@ -85,7 +85,7 @@ ms.locfileid: "72651333"
 
 5. Wybierz pozycję Ustawienia wyświetlania z następujących opcji: **pierwszy plan elementu**, **tło elementu**i **pogrubienie**.
 
-6. Wybierz **przycisk OK**.
+6. Wybierz przycisk **OK**.
 
 ## <a name="toolbars"></a>Paski narzędzi
  Aby poprawić użyteczność i dostępność paska narzędzi, możesz dodać tekst do przycisków paska narzędzi.

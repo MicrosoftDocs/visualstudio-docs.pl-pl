@@ -1,5 +1,5 @@
 ---
-title: Polecenia Menu Pomoc | Dokumentacja firmy Microsoft
+title: Polecenia menu Pomoc | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63a1a0cd9068f8c9dc40dc6fc6ac7984ef250a16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197502"
 ---
 # <a name="help-menu-commands"></a>Polecenia menu Pomoc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Pomocy** menu zawiera polecenia służące do otwierania plików pomocy.  
+Menu **Pomoc** zawiera polecenia służące do otwierania plików pomocy.  
   
- **Index**  
- Otwiera ekran zawartość programu Spy ++ pomocy.  
+ **Indeks**  
+ Otwiera ekran zawartości dla narzędzia Spy + +.  
   
  **Korzystanie z pomocy**  
- Otwiera plik pomocy, która opisuje, jak korzystać z pomocy.  
+ Otwiera plik pomocy, który opisuje sposób korzystania z pomocy.  
   
- **Informacje o programie Spy ++**  
- Przedstawia informacje wersji i prawach autorskich oprogramowania dla programu Spy ++.
+ **Informacje o programie Spy + +**  
+ Pokazuje wersję oprogramowania i informacje o prawach autorskich dla programu Spy + +.
