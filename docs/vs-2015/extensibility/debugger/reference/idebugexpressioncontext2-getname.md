@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Dokumentacja firmy Microsoft
+title: 'IDebugExpressionContext2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c69b165e6a9e36d190a64b9d2e9ec41fcff2183
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158413"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera nazwę kontekst oceny.  
+Pobiera nazwę kontekstu oceny.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int GetName( 
   
 #### <a name="parameters"></a>Parametry  
  `pbstrName`  
- [out] Zwraca nazwę kontekst oceny.  
+ określoną Zwraca nazwę kontekstu oceny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Nazwa jest opis tego kontekstu oceny. Zwykle jest coś, co może być analizowane przez ewaluatora wyrażeń, odwołujący się do tego kontekstu dokładną ocenę. Na przykład w języku C++ nazwa jest w następujący sposób:  
+ Nazwa to opis tego kontekstu szacowania. Zwykle jest to element, który może być analizowany przez ewaluatora wyrażeń, który odwołuje się do tego dokładnego kontekstu oceny. Na przykład w języku C++ nazwa jest następująca:  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  

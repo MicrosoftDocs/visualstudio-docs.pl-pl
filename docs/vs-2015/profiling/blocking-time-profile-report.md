@@ -1,5 +1,5 @@
 ---
-title: Czas blokowania raport profilowania | Dokumentacja firmy Microsoft
+title: Raport profilu czasu blokowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,52 +14,52 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147243"
 ---
 # <a name="blocking-time-profile-report"></a>Raport profilowania czasu blokowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Profilu, raportów Obejmij zagregowane dane czasu blokowania stosy wywołań, które są specyficzne dla każdej kategorii blokowania (na przykład "We/wy" lub "Synchronizacji"). Raport Wywłaszczania zawiera listę procesów, które przerywane bieżący proces wraz z liczbą wystąpień wywłaszczania. Aby skompilować blokowania raport profilu, narzędzie umożliwia zbieranie informacji o blokadzie wywołań interfejsu API i gromadzi ich do drzewa stosów wywołań. Dane wyświetlane w tych raportach różni się przez bieżącego zakresu czasu, ukrytych wątków i następujące dwa filtry, które mogą być stosowane:  
+Raporty profilu zapewniają zagregowane dane czasu blokowania dla stosów wywołań, które są specyficzne dla każdej kategorii blokującej (na przykład "we/wy" lub "Synchronizacja"). Raport zastępujący zawiera listę procesów, które zastępują bieżący proces wraz z liczbą wystąpień zastępujące. Aby skompilować Raport z profilem blokującym, narzędzie zbiera blokowane wywołania interfejsu API i gromadzi je w drzewie stosów wywołań. Dane, które są wyświetlane w tych raportach, różnią się w zależności od bieżącego zakresu czasu, przez ukryte wątki oraz następujących dwóch filtrów, które mogą być stosowane:  
   
-- Jeśli wybrano opcję tylko mój kod, prezentowane są tylko ramki stosu, które mają kod użytkownika i jeden poziom poniżej kod użytkownika.  
+- Jeśli Tylko mój kod jest zaznaczone, wyświetlane są tylko ramki stosu, które mają kod użytkownika, oraz jeden poziom poniżej kodu użytkownika.  
   
-- Jeśli ustawiono wartość redukcji szumu, sortowane stosów, które mają mniej niż z określoną częstotliwością są pomijane.  
+- Jeśli ustawiona jest wartość Redukcja szumu, posortowane stosy, które mają mniej niż określona częstotliwość, są pomijane.  
   
-  Rozwiń drzewo wywołań zapis wiersza kodu, w którym blokowania jest zużywany czas. Aby zlokalizować wiersz źródła dla wpisu w jego menu skrótów, wybierz opcję **Wyświetl źródło**. Aby zlokalizować wiersza kodu, który wywołał tego jednego, w menu skrótów wybierz **widok wywołań witryn**. Jeśli tylko jedna lokacja wywołania jest dostępna, polecenie łączy się z wyróżniony wiersz kodu do witryny wywołania. Jeśli dostępnych jest wiele wywołań, polecenie powoduje otwarcie okna dialogowego, w którym możesz wybierz wpis, a następnie wybrać **przejdź do źródła** przycisk, aby zlokalizować wyróżnione wywołania. Często jest najbardziej użyteczna wyświetlić kod źródłowy dla lokacji wywołania, która ma najwięcej wystąpień i/lub najwięcej czasu.  
+  Rozwiń wszystkie wpisy drzewa wywołań, aby znaleźć wiersz kodu, w którym jest poświęcony czas blokowania. Aby zlokalizować wiersz źródła dla wpisu, w menu skrótów wybierz polecenie **Wyświetl źródło**. Aby zlokalizować wiersz kodu o nazwie ten, w menu skrótów wybierz polecenie **Wyświetl Lokacje wywołań**. Jeśli dostępna jest tylko jedna lokacja wywołania, polecenie nawiązuje połączenie z wyróżnionym wierszem kodu dla witryny wywołania. Jeśli dostępnych jest wiele lokacji wywołań, polecenie otwiera okno dialogowe, w którym można wybrać wpis, a następnie wybrać przycisk **Przejdź do źródła** , aby zlokalizować wyróżnioną lokację wywołania. Często jest to przydatne do wyświetlania kodu źródłowego dla witryny wywołania, która ma najwięcej wystąpień, w większości przypadków lub obu.  
   
-## <a name="blocking-time-report-columns"></a>Kolumny raportu czas blokowania  
- W poniższej tabeli przedstawiono kolumny dla każdego blokowania czasie — raport.  
+## <a name="blocking-time-report-columns"></a>Kolumny raportów czasu blokowania  
+ W poniższej tabeli przedstawiono kolumny dla każdego raportu czasu blokowania.  
   
 |Nazwa kolumny|Opis|  
 |-----------------|-----------------|  
-|Nazwa|Nazwa funkcji dla poszczególnych poziomów stosu wywołań.|  
-|Wystąpienia|Liczba wystąpień wywołania blokowania dla przedziału czasu widoczne.|  
-|Czas blokowania włącznych|Łączny czas spędzony na dla wszystkich stosów, które składają się na tym poziomie drzewo stosu wywołań blokowania. Numer (włącznie) jest sumą własny czas blokowania dla tej funkcji i wyłączny czas blokowania dla wszystkich jego węzłów podrzędnych.|  
-|Czas blokowania wyłącznych|Całkowity czas blokowania spędzonego w taki sposób, w której ta funkcja jest najniższy poziom stosu wywołań. Wpis stosu wywołań unikatowy, która ma wysoką własny czas blokowania może być funkcja zainteresowania.|  
-|Kategoria oczekiwania/API|Pokazano tylko dla funkcji na najniższym poziomie stosu wywołań. W przypadku, gdy zostanie rozpoznany podpis wywołania blokowania, znajduje się nazwa blokowania interfejsu API. Jeśli podpis nie zostanie rozpoznany, który jest zgłaszany przez jądro informacje.|  
-|Szczegóły|W pełni kwalifikowana nazwa funkcji. Obejmuje to liczba wierszy, gdy będzie ona dostępna.|  
+|Nazwa|Nazwa funkcji dla każdego poziomu stosu wywołań.|  
+|Wystąpienia|Liczba wystąpień wywołania blokującego dla widocznego okresu.|  
+|Włączny czas blokowania|Łączny czas blokowania zużyty dla wszystkich stosów, które są rzutowane na ten poziom drzewa stosu wywołań. Liczba włącznie jest sumą czasu blokowania wyłącznych dla tej funkcji i wyłącznego czasu blokowania dla wszystkich jego węzłów podrzędnych.|  
+|Czas blokowania wyłącznego|Łączny czas blokowania spędzony w czasie, gdy ta funkcja jest najniższym poziomem stosu wywołań. Unikatowy wpis stosu wywołań, który ma wysoką, wyłączny czas blokowania może być funkcją zainteresowania.|  
+|Kategoria interfejsu API/oczekiwania|Wyświetlane tylko dla funkcji na najniższym poziomie stosu wywołań. Gdzie jest rozpoznawany podpis wywołania blokującego, jest dostępna nazwa blokującego interfejsu API. Jeśli sygnatura nie zostanie rozpoznana, podane są informacje zgłaszane przez jądro.|  
+|Szczegóły|W pełni kwalifikowana nazwa funkcji. Obejmuje to liczbę wierszy, gdy jest dostępna.|  
   
 ### <a name="synchronization"></a>Synchronizacja  
- Synchronizacja przedstawia wywołania, które są odpowiedzialne za segmentów, które blokują synchronizacji i agregacji, blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas synchronizacji](../profiling/synchronization-time.md)  
+ Raport synchronizacji przedstawia wywołania, które są odpowiedzialne za segmenty, które blokują synchronizację, oraz łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas synchronizacji](../profiling/synchronization-time.md)  
   
-### <a name="sleep"></a>Stan uśpienia  
- Uśpienie przedstawia wywołania, które są odpowiedzialne za blokuje czas, który został przypisany czas spędzony w stanie uśpienia i łączny czas blokowania każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas uśpienia](../profiling/sleep-time.md).  
+### <a name="sleep"></a>Uśpij  
+ Raport uśpienia zawiera wywołania, które są odpowiedzialne za czas blokowania, który był przeznaczony do czasu spędzonego na stanie uśpienia, i łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas uśpienia](../profiling/sleep-time.md).  
   
 ### <a name="io"></a>WE/WY  
- Operacje We/Wy przedstawia wywołania, które są odpowiedzialne za segmentów, które blokują na We/Wy i agregacji, blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md).  
+ Raport we/wy przedstawia wywołania, które są odpowiedzialne za segmenty, które blokują we/wy i łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas operacji we/wy (Widok wątków)](../profiling/i-o-time-threads-view.md).  
   
 ### <a name="memory-management"></a>Zarządzanie pamięcią  
- Zarządzanie pamięcią przedstawia wywołania, które są odpowiedzialne za segmentów, które blokują na pamięć operacje zarządzania i agregacji blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas zarządzania pamięcią](../profiling/memory-management-time.md).  
+ Raport zarządzanie pamięcią zawiera wywołania, które są odpowiedzialne za segmenty, które blokują operacje zarządzania pamięcią, oraz łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas zarządzania pamięcią](../profiling/memory-management-time.md).  
   
 ### <a name="preemption"></a>Wywłaszczania  
- Raport Wywłaszczania zawiera listę procesów, które przerywane bieżący proces wraz z liczbą wystąpień.  Można rozwinąć każdy proces, aby wyświetlić tylko określone wątki, które zastąpione wątki w bieżącym procesie i wyświetlić podział wywłaszczania wystąpień na wątek. Ten raport blokowania jest mniej informacje z możliwością działania od innych, ponieważ wywłaszczania zazwyczaj nakłada się na proces przez system operacyjny, a nie problemu w kodzie. Aby uzyskać więcej informacji, zobacz [czas Wywłaszczania](../profiling/preemption-time.md).  
+ Raport zastępujący zawiera listę procesów, które zastępują bieżący proces wraz z liczbą wystąpień.  Każdy proces można rozwinąć, aby wyświetlić określone wątki, które zastąpiły wątki w bieżącym procesie i wyświetlić podział wystąpień zastępujący na wątek. Ten raport blokowania jest mniej funkcjonalny od innych, ponieważ przełożenie jest zwykle nakładane na proces przez system operacyjny, a nie przez problem w kodzie. Aby uzyskać więcej informacji, zobacz [czas zastępujący](../profiling/preemption-time.md).  
   
 ### <a name="ui-processing"></a>Przetwarzanie interfejsu użytkownika  
- Raport przetwarzania interfejsu użytkownika zawiera wywołania, które są odpowiedzialne za blokuje segmentów, które blokują na bloki przetwarzania interfejsu użytkownika i agregacji, blokuje razy każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md).  
+ Raport przetwarzania interfejsu użytkownika przedstawia wywołania, które są odpowiedzialne za blokowanie segmentów, które blokują bloki przetwarzania interfejsu użytkownika i łączny czas blokowania dla każdego stosu wywołań. Aby uzyskać więcej informacji, zobacz [czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

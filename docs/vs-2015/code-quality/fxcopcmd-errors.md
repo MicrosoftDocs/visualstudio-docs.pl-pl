@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85441e90bfecc89688ce0ba6ec0ae10082562f0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667600"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Błędy narzędzi plik FxCopCmd
@@ -53,6 +53,6 @@ W poniższej tabeli opisano kody błędów zwracane przez plik FxCopCmd:
 > [!NOTE]
 > Zestaw kodu powrotu plik FxCopCmd **odwołuje** się do błędu 0x200 przez siebie, jest to ostrzeżenie, a nie błąd. Ten kod powrotny wskazuje, że brakuje pośrednich odwołań, ale plik FxCopCmd mógł je obsłużyć. Ostrzeżenie oznacza, że istnieje możliwość, że niektóre wyniki analizy mogły zostać naruszone. Traktuj **błąd odwołania do zestawu** jako błąd, gdy jest on połączony z innym kodem zwrotnym.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Błędy zgłaszane przez aplikację do analizy kodu](../code-quality/code-analysis-application-errors.md)
+- [Błędy aplikacji analizy kodu](../code-quality/code-analysis-application-errors.md)

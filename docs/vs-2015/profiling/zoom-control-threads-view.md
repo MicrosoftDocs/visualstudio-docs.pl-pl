@@ -1,5 +1,5 @@
 ---
-title: Formant powiększania (Widok wątków) | Dokumentacja firmy Microsoft
+title: Kontrolka powiększenia (Widok wątków) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,25 +14,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551944"
 ---
 # <a name="zoom-control-threads-view"></a>Formant powiększania (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kontrolka powiększenia jest suwaka, ułatwiające powiększać i pomniejszać na osi czasu, dzięki czemu możesz skupić się na obszarach zainteresowań danego. Ponieważ ta kontrolka powiększa środek widoku osi czasu, Centrum obszar zainteresowania, zanim powiększania.  
+Kontrolka powiększenia jest suwakiem, który ułatwia powiększanie i pomniejszanie na osi czasu, dzięki czemu można skupić się na obszarach określonych zainteresowań. Ponieważ ten formant powiększa się w środku widoku osi czasu, Wyśrodkuj obszar zainteresowania przed powiększaniem.  
   
-## <a name="zooming-in-by-dragging-in-the-timeline-view"></a>Powiększanie, przeciągając w widoku osi czasu  
- Powiększanie, przeciągając w widoku osi czasu tworzy obszar, który jest wyróżniony na żółto. Po zwolnieniu przycisku myszy widok osi czasu powiększa wybranego zakresu.  
+## <a name="zooming-in-by-dragging-in-the-timeline-view"></a>Powiększanie przez przeciąganie w widoku osi czasu  
+ Powiększanie przez przeciąganie w widoku oś czasu tworzy obszar wyróżniony kolorem żółtym. Po zwolnieniu przycisku myszy widok oś czasu zostanie powiększony na zaznaczony zakres.  
   
-## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>Powiększanie i zmniejszanie przy użyciu kółka myszy  
- Kliknij w dowolnym punkcie na osi czasu (w celu upewnij się, że ma ona fokus myszy), a następnie naciśnij klawisz CTRL i przenieść kółka myszy (do przodu powiększa się; z poprzednimi wersjami powiększa się).  
+## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>Powiększanie i pomniejszanie przy użyciu kółka myszy  
+ Kliknij dowolny punkt na osi czasu (aby upewnić się, że ma fokus myszy), a następnie naciśnij klawisz CTRL i przesuń kółko myszy (do przodu; powiększenie do tyłu).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie kanałami](../profiling/manage-channels.md)   
- [Tryb pomiarowy wł. / wył](../profiling/measure-mode-on-off.md)   
+ [Włącz/Wyłącz tryb miary](../profiling/measure-mode-on-off.md)   
  [Widok wątków](../profiling/threads-view-parallel-performance.md)   
  [Nawigator wykorzystania](../profiling/utilization-navigator.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ea066aa31cbc1f6408ee55c92a5ca761608f534
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667813"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Tworzenie elementów i relacji w modelach UML
@@ -26,14 +26,14 @@ W kodzie programu rozszerzenia do programu Visual Studio można tworzyć i usuwa
 ## <a name="create-a-model-element"></a>Tworzenie elementu modelu
 
 ### <a name="namespace-imports"></a>Importy przestrzeni nazw
- Należy uwzględnić następujące instrukcje `using`.
+ Należy uwzględnić poniższe `using` instrukcje.
 
  Metody tworzenia są definiowane jako metody rozszerzające w tej przestrzeni nazw:
 
  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`
 
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>Uzyskaj właściciela elementu, który chcesz utworzyć
- Model tworzy pojedyncze drzewo, dzięki czemu każdy element ma jednego właściciela, z wyjątkiem katalogu głównego modelu. Katalog główny modelu jest typu `IModel`, który jest typem `IPackage`.
+ Model tworzy pojedyncze drzewo, dzięki czemu każdy element ma jednego właściciela, z wyjątkiem katalogu głównego modelu. Element główny modelu jest typu `IModel` , który jest typem `IPackage` .
 
  Jeśli tworzysz element, który będzie wyświetlany na określonym diagramie, na przykład na bieżącym diagramie użytkownika, należy zwykle utworzyć go w pakiecie połączonym z tym diagramem. Na przykład:
 
@@ -43,7 +43,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 
  Ta tabela podsumowuje własność wspólnych elementów modelu:
 
-|Element do utworzenia|Właociciela|
+|Element do utworzenia|Właściciel|
 |---------------------------|-----------|
 |`IActor, IUseCase, IComponent, IClass, IInterface, IEnumeration`<br /><br /> `IActivity, IInteraction`|`IPackage, IModel`|
 |`IAttribute, IOperation`|`IClass, IInterface`|
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|
 
 ### <a name="invoke-the-create-method-on-the-owner"></a>Wywoływanie metody Create na właścicielu
- Nazwa metody ma postać: `Create`*własnośćtype* `()`. Na przykład:
+ Nazwa metody ma postać: `Create` *własnośćtype* `()` . Na przykład:
 
 ```
 IUseCase usecase1 = linkedPackage.CreateUseCase();
@@ -60,7 +60,7 @@ IUseCase usecase1 = linkedPackage.CreateUseCase();
 
  Niektóre typy mają bardziej złożone metody tworzenia, szczególnie w diagramach sekwencji. Zobacz [Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
 
- W przypadku niektórych typów elementów można zmienić właściciela elementu w trakcie jego okresu istnienia przy użyciu `SetOwner(newOwner)`.
+ W przypadku niektórych typów elementów można zmienić właściciela elementu w trakcie jego okresu istnienia przy użyciu `SetOwner(newOwner)` .
 
 ### <a name="set-the-name-and-other-properties"></a>Ustaw nazwę i inne właściwości
 
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";
     ```
 
-4. Ustaw właściwości każdego końca relacji. Zawsze są dostępne dwa `MemberEnds`. Na przykład:
+4. Ustaw właściwości każdego końca relacji. Zawsze są dostępne dwa `MemberEnds` . Na przykład:
 
     ```
     association .MemberEnds[0].Name = "subject";   // role name

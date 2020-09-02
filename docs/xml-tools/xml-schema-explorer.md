@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04c6415fed131abc5a102f6ec15c69e33f21fd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592350"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 
-**Eksplorator schematu XML** jest zintegrowany z Microsoft Visual Studio i edytorem XML umożliwiającym współdziałanie z schematami języka definicji schematu XML (XSD). Po otwarciu pliku schematu XML węzeł **zestawu schematów** pojawia się w **Eksploratorze schematu XML**. Wszystkie dołączone, zaimportowane lub ponownie zdefiniowane schematy dla pliku docelowego, a także wszystkie pliki, do których odwołuje się instrukcja `include` lub `import`, również są wyświetlane w **Eksploratorze schematu XML**.
+**Eksplorator schematu XML** jest zintegrowany z Microsoft Visual Studio i edytorem XML umożliwiającym współdziałanie z schematami języka definicji schematu XML (XSD). Po otwarciu pliku schematu XML węzeł **zestawu schematów** pojawia się w **Eksploratorze schematu XML**. Wszystkie dołączone, zaimportowane lub ponownie zdefiniowane schematy dla pliku docelowego, a także wszystkie pliki, do których odwołuje się `include` `import` instrukcja lub, również są wyświetlane w **Eksploratorze schematu XML**.
 
 **Eksplorator schematu XML** umożliwia wykonywanie następujących czynności:
 
@@ -54,7 +54,7 @@ W **Eksploratorze schematu XML** są wyświetlane wstępnie skompilowane informa
 
 - Trzeci poziom zawiera pliki.
 
-- Czwarty poziom zawiera węzły globalne. Może to obejmować elementy, grupy, typy złożone, typy proste, atrybuty, grupy atrybutów i instrukcje `include`, `import`i `redefine`.
+- Czwarty poziom zawiera węzły globalne. Może to obejmować elementy, grupy, typy złożone, typy proste, atrybuty, grupy atrybutów i `include` `import` `redefine` instrukcje.
 
 Oto przykład struktury drzewa:
 
@@ -67,7 +67,7 @@ Aby uaktywnić węzeł, kliknij go dwukrotnie lub naciśnij klawisz **Enter** po
 
 - Aktywowanie węzła otwiera plik, w którym jest zdefiniowany ten węzeł (Jeśli plik nie jest jeszcze otwarty) i wybiera węzeł w pliku.
 
-- Aktywowanie węzła pliku otwiera wybrany plik (jeśli nie jest jeszcze otwarty) i podświetla węzeł `<schema>`.
+- Aktywowanie węzła pliku otwiera wybrany plik (jeśli nie jest jeszcze otwarty) i podświetla `<schema>` węzeł.
 
 - Aktywowanie węzła SchemaSet lub obszaru nazw nie robi nic.
 
@@ -78,6 +78,6 @@ Porzucenie plików w widoku spowoduje dodanie wszystkich węzłów globalnych w 
 
  Nie można przeciągać i upuszczać węzłów lokalnych ani importów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instrukcje: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

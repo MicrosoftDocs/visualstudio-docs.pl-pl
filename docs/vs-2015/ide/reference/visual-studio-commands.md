@@ -14,20 +14,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667449"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio — Polecenia
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Polecenia programu Visual Studio umożliwiają wywoływanie polecenia z okna **polecenia** , okna **bezpośredniego** lub pola **Znajdź/polecenie** . W każdym przypadku znak większości (`>`) jest używany do wskazania, że polecenie zamiast operacji wyszukiwania lub debugowania ma być przestrzegane.
+Polecenia programu Visual Studio umożliwiają wywoływanie polecenia z okna **polecenia** , okna **bezpośredniego** lub pola **Znajdź/polecenie** . W każdym przypadku znak większości ( `>` ) jest używany do wskazania, że polecenie zamiast operacji wyszukiwania lub debugowania ma być przestrzegane.
 
  Pełną listę poleceń i ich składni można znaleźć w oknie dialogowym **klawiatura, opcje środowiska** .
 
- Znak ucieczki dla poleceń programu Visual Studio jest znakiem karetki (^), co oznacza, że znak bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Można go użyć do osadzenia prostych cudzysłowów ("), spacji, ukośników wiodących, karetki lub innych znaków literału w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład
+ Znak ucieczki dla poleceń programu Visual Studio jest znakiem karetki (^), co oznacza, że znak bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Można go użyć do osadzenia prostych cudzysłowów ("), spacji, ukośników wiodących, karetki lub innych znaków literału w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Przykład:
 
 ```
 >Edit.Find ^^t /regex
@@ -35,7 +35,7 @@ Polecenia programu Visual Studio umożliwiają wywoływanie polecenia z okna **p
 
  Daszek działa tak samo, niezależnie od tego, czy znajduje się wewnątrz, czy poza cudzysłowem. Jeśli karetka jest ostatnim znakiem w wierszu, zostanie zignorowana.
 
- W zlokalizowanych wersjach środowiska IDE nazwy poleceń można wprowadzać w języku macierzystym IDE lub w języku angielskim. Na przykład można wpisać `File.NewFile` lub `Fichier.NouveauFichier` w francuskim środowisku IDE, aby wykonać to samo polecenie.
+ W zlokalizowanych wersjach środowiska IDE nazwy poleceń można wprowadzać w języku macierzystym IDE lub w języku angielskim. Na przykład można wpisać albo `File.NewFile` `Fichier.NouveauFichier` w IDE, aby wykonać to samo polecenie.
 
  Wiele poleceń ma aliasy. Aby uzyskać listę aliasów poleceń, zobacz [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md).
 
@@ -63,19 +63,19 @@ Polecenia programu Visual Studio umożliwiają wywoływanie polecenia z okna **p
 |[Otwórz plik](../../ide/reference/open-file-command.md)|Otwiera istniejący plik i umożliwia określenie edytora.|
 |[Otwórz projekt](../../ide/reference/open-project-command.md)|Otwiera istniejący projekt i umożliwia dodanie projektu do bieżącego rozwiązania.|
 |[Otwórz rozwiązanie](../../ide/reference/open-solution-command.md)|Otwiera istniejące rozwiązanie.|
-|[Drukowany](../../ide/reference/print-command.md)|Oblicza wyrażenie i wyświetla wyniki lub określony tekst.|
-|[Szybka czujka, polecenie](../../ide/reference/quick-watch-command.md)|Wyświetla wybrany lub określony tekst w polu **wyrażenie** w oknie dialogowym **szybkie czujka** .|
+|[Drukowanie](../../ide/reference/print-command.md)|Oblicza wyrażenie i wyświetla wyniki lub określony tekst.|
+|[Szybkie czujka — polecenie](../../ide/reference/quick-watch-command.md)|Wyświetla wybrany lub określony tekst w polu **wyrażenie** w oknie dialogowym **szybkie czujka** .|
 |[Stępować](../../ide/reference/replace-command.md)|Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych w kontrolce **Znajdowanie i zamienianie** .|
 |[Zastąp w plikach](../../ide/reference/replace-in-files-command.md)|Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych w [Zamień w plikach](../../ide/replace-in-files.md).|
 |[Ustaw bieżącą ramkę stosu](../../ide/reference/set-current-stack-frame-command.md)|Umożliwia wyświetlenie określonej ramki stosu.|
 |[Ustaw bieżący wątek](../../ide/reference/set-current-thread-command.md)|Umożliwia wyświetlenie określonego wątku.|
 |[Ustaw podstawy](../../ide/reference/set-radix-command.md)|Określa liczbę bajtów do wyświetlenia.|
-|[Powłoka](../../ide/reference/shell-command.md)|Uruchamia programy z poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tak, jakby polecenie zostało wykonane z wiersza polecenia.|
-|[ShowWebBrowser, polecenie](../../ide/reference/showwebbrowser-command.md)|Wyświetla adres URL określony w oknie przeglądarki sieci Web w zintegrowanym środowisku programistycznym (IDE) lub zewnętrznym z IDE.|
-|[Start](../../ide/reference/start-command.md)|Rozpoczyna proces debugowania i pozwala określić, jak błędy są obsługiwane.|
+|[Powłoka](../../ide/reference/shell-command.md)|Uruchamia programy z poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] AS, gdy polecenie zostało wykonane z wiersza polecenia.|
+|[ShowWebBrowser — — polecenie](../../ide/reference/showwebbrowser-command.md)|Wyświetla adres URL określony w oknie przeglądarki sieci Web w zintegrowanym środowisku programistycznym (IDE) lub zewnętrznym z IDE.|
+|[Początek](../../ide/reference/start-command.md)|Rozpoczyna proces debugowania i pozwala określić, jak błędy są obsługiwane.|
 |[Ścieżka](../../ide/reference/symbol-path-command.md)|Ustawia listę katalogów dla debugera do wyszukiwania symboli.|
 |[Przełącz punkt przerwania](../../ide/reference/toggle-breakpoint-command.md)|Włącza lub wyłącza punkt przerwania w zależności od bieżącego stanu w bieżącej lokalizacji pliku.|
-|[Czujka, polecenie](../../ide/reference/watch-command.md)|Tworzy i otwiera określone wystąpienie okna **czujka** .|
+|[Watch — polecenie](../../ide/reference/watch-command.md)|Tworzy i otwiera określone wystąpienie okna **czujka** .|
 
 ## <a name="see-also"></a>Zobacz też
  [Okno polecenia](../../ide/reference/command-window.md) [Znajdź/polecenie](../../ide/find-command-box.md) w [programie Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

@@ -9,10 +9,10 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 77d1318dbdb23516902523e9c7865dad781cb06b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593040"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy
@@ -29,7 +29,7 @@ Projektant przepływu pracy nie obsługuje następujących scenariuszy debugowan
 
 - Przepływy pracy utworzone we wcześniejszych wersjach programu Windows Workflow Foundation (WF) nie mogą być debugowane w programie .NET Framework 4 lub nowszym.
 
-- Nie można definiować punktów przerwania dla linków między działaniami lub węzłami <xref:System.Activities.Statements.Flowchart>.
+- Nie można definiować punktów przerwania dla linków między działaniami lub <xref:System.Activities.Statements.Flowchart> węzłami.
 
 - Schowek nie jest dostępny podczas debugowania.
 

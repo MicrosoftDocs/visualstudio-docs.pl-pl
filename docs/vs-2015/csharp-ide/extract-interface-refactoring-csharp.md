@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667554"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refaktoryzacja wyodrębniania interfejsu (C#)
@@ -34,7 +34,7 @@ Extract Interface jest operacją refaktoryzacji, która zapewnia łatwy sposób 
 
 ### <a name="to-use-extract-interface"></a>Aby użyć wyodrębnienia interfejsu
 
-1. Utwórz aplikację konsolową o nazwie `ExtractInterface`, a następnie zastąp `Program` następującym kodem
+1. Utwórz aplikację konsolową o nazwie `ExtractInterface` , a następnie zastąp ciąg `Program` następującym kodem
 
     ```csharp
     // Invoke Extract Interface on ProtoA.
@@ -45,7 +45,7 @@ Extract Interface jest operacją refaktoryzacji, która zapewnia łatwy sposób 
     }
     ```
 
-2. Kursor umieszczony w `MethodB`, a następnie kliknij pozycję **Wyodrębnij interfejs** w menu **refaktoryzacji** .
+2. Z kursorem umieszczonym w `MethodB` , a następnie kliknij pozycję **Wyodrębnij interfejs** w menu **refaktoryzacji** .
 
      Zostanie wyświetlone okno dialogowe **wyodrębnianie interfejsu** .
 

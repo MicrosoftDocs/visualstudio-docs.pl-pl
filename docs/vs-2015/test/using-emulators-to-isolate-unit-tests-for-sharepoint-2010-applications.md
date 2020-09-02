@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cc3560c1cbcebea9f61465240cd4e2c7a0f811f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667467"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów
@@ -22,8 +22,8 @@ Pakiet Microsoft. SharePoint. Emulators udostępnia zestaw bibliotek, które uł
 
  Istniejące metody i klasy testowe można łatwo skonwertować do uruchamiania w kontekście emulatora. Ta funkcja umożliwia tworzenie testów podwójnego zastosowania. Test dwukrotnego zastosowania umożliwia przełączenie między testami integracji z rzeczywistym interfejsem API programu SharePoint i izolowanych testów jednostkowych, które używają emulatorów.
 
-## <a name="BKMK_In_this_topic"></a>W tym temacie
- [Requirements](#BKMK_Requirements)
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> W tym temacie
+ [Wymagania](#BKMK_Requirements)
 
  [Przykład AppointmentsWebPart](#BKMK_The_AppointmentsWebPart_example)
 
@@ -45,7 +45,7 @@ Pakiet Microsoft. SharePoint. Emulators udostępnia zestaw bibliotek, które uł
 
   [Emulowane typy programu SharePoint](#BKMK_Emulated_SharePoint_types)
 
-## <a name="BKMK_Requirements"></a>Wymagania
+## <a name="requirements"></a><a name="BKMK_Requirements"></a> Wymagania
 
 - Microsoft SharePoint 2010 (SharePoint 2010 Server lub SharePoint 2010 Foundation)
 
@@ -55,23 +55,23 @@ Pakiet Microsoft. SharePoint. Emulators udostępnia zestaw bibliotek, które uł
 
   Należy również zapoznać się z [podstawą testów jednostkowych w programie Visual Studio](../test/unit-test-basics.md) i pewną wiedzę na temat sztucznych [firmy Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-## <a name="BKMK_The_AppointmentsWebPart_example"></a>Przykład AppointmentsWebPart
+## <a name="the-appointmentswebpart-example"></a><a name="BKMK_The_AppointmentsWebPart_example"></a> Przykład AppointmentsWebPart
  AppointmentsWebPart umożliwia wyświetlenie listy programu SharePoint i zarządzanie nimi.
 
  ![Składnik Web Part terminów](../test/media/ut-emulators-appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")
 
  Będziemy testować dwie metody części sieci Web w tym przykładzie:
 
-- Metoda `ScheduleAppointment` sprawdza poprawność wartości elementów listy przesłanych do metody i tworzy nowy wpis na liście w określonym sieci Web programu SharePoint.
+- `ScheduleAppointment`Metoda sprawdza poprawność wartości elementu listy przekazaną do metody i tworzy nowy wpis na liście w określonym sieci Web programu SharePoint.
 
-- Metoda `GetAppointmentsForToday` zwraca szczegóły dzisiejszych terminów.
+- `GetAppointmentsForToday`Metoda zwraca szczegóły dzisiejszych terminów.
 
   [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Converting_an_existing_test"></a>Konwertowanie istniejącego testu
+## <a name="converting-an-existing-test"></a><a name="BKMK_Converting_an_existing_test"></a> Konwertowanie istniejącego testu
  W typowym teście metody w składniku programu SharePoint metoda testowa tworzy tymczasową lokację w programie SharePoint Foundation i dodaje do niej składniki programu SharePoint. Następnie metoda testowa tworzy i wykonuje wystąpienie składnika. Po zakończeniu testu lokacja zostanie rozłączona.
 
- Metoda `ScheduleAppointment` naszego testowanego kodu jest prawdopodobnie jedną z pierwszych metod zapisanych dla składnika:
+ `ScheduleAppointment`Metoda naszego testowanego kodu jest prawdopodobnie jedną z pierwszych metod zapisanych dla składnika:
 
 ```
 // method under test
@@ -105,7 +105,7 @@ public bool ScheduleAppointment(SPWeb web, string listName, string name,
 
 ```
 
- Pierwszy test funkcjonalności w `ScheduleAppointment` metodzie może wyglądać następująco:
+ Pierwszy test funkcji w `ScheduleAppointment` metodzie może wyglądać następująco:
 
 ```csharp
 
@@ -132,29 +132,29 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 }
 ```
 
- Chociaż ta metoda testowa sprawdza, czy metoda `ScheduleAppointment` prawidłowo dodaje nowy wpis do listy, jest to bardziej test integracji części sieci Web niż test określonego zachowania kodu. Zależności zewnętrzne do programu SharePoint i interfejsu API programu SharePoint mogą spowodować niepowodzenie testu z przyczyn innych niż kod użytkownika w metodzie `ScheduleAppointment`. Narzuty w trakcie tworzenia i niszczenia witryny programu SharePoint może również sprawić, że test będzie zbyt wolny do uruchamiania jako zwykła część procesu kodowania. Przeprowadzenie instalacji i zniszczenia lokacji dla każdej metody testowej tylko związków problemu tworzenia wydajnych testów jednostkowych dla deweloperów.
+ Mimo że ta metoda testowa sprawdza, czy `ScheduleAppointment` Metoda prawidłowo dodaje nowy wpis do listy, jest to bardziej test integracji części sieci Web niż test określonego zachowania kodu. Zewnętrzne zależności programu SharePoint i interfejsu API programu SharePoint mogą spowodować niepowodzenie testu z przyczyn innych niż kod użytkownika w `ScheduleAppointment` metodzie. Narzuty w trakcie tworzenia i niszczenia witryny programu SharePoint może również sprawić, że test będzie zbyt wolny do uruchamiania jako zwykła część procesu kodowania. Przeprowadzenie instalacji i zniszczenia lokacji dla każdej metody testowej tylko związków problemu tworzenia wydajnych testów jednostkowych dla deweloperów.
 
  Emulatory programu Microsoft SharePoint dają zestaw obiektów i metod "podwaja", które naśladuje zachowanie najczęstszych interfejsów API programu SharePoint. Emulowane metody to lekkie implementacje interfejsu API programu SharePoint, które nie wymagają uruchamiania programu SharePoint. Dzięki użyciu sztucznych firmy Microsoft do rozdzielania wywołań interfejsu API programu SharePoint do metody Podwajaj emulatory programu SharePoint, można izolować testy i upewnić się, że testujesz odpowiedni kod. Po wywołaniu metod programu SharePoint, które nie są emulowane, można użyć elementów sztucznych bezpośrednio do utworzenia żądanego zachowania.
 
  [W tym temacie](#BKMK_In_this_topic)
 
-### <a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a>Dodawanie pakietu emulatorów do projektu testowego
+### <a name="adding-the-emulators-package-to-a-test-project"></a><a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> Dodawanie pakietu emulatorów do projektu testowego
  Aby dodać emulatory programu SharePoint do projektu testowego:
 
 1. Wybierz projekt testowy w Eksplorator rozwiązań.
 
 2. Wybierz pozycję **Zarządzaj pakietami NuGet...** w menu skrótów.
 
-3. Wyszukaj `Microsoft.SharePoint.Emulators` kategorii **online** , a następnie wybierz **Zainstaluj**.
+3. Wyszukaj kategorię **online** dla `Microsoft.SharePoint.Emulators` , a następnie wybierz **Zainstaluj**.
 
    ![Pakiet NuGet emulatorów programu SharePoint](../test/media/ut-emulators-nuget.png "UT_EMULATORS_Nuget")
 
    [W tym temacie](#BKMK_In_this_topic)
 
-### <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a>Uruchamianie metody testowej przy użyciu emulacji
- Zainstalowanie pakietu dodaje odwołania do wymaganych bibliotek do Twoich projektów. Aby ułatwić korzystanie z emulatorów w istniejącej klasie testowej, Dodaj obszary nazw `Microsoft.SharePoint.Emulators` i `Microsoft.QualityTools.Testing.Emulators`.
+### <a name="running-a-test-method-with-emulation"></a><a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> Uruchamianie metody testowej przy użyciu emulacji
+ Zainstalowanie pakietu dodaje odwołania do wymaganych bibliotek do Twoich projektów. Aby ułatwić korzystanie z emulatorów w istniejącej klasie testowej, Dodaj przestrzenie nazw `Microsoft.SharePoint.Emulators` i `Microsoft.QualityTools.Testing.Emulators` .
 
- Aby włączyć emulację w metodach testowych, zawiń treść metody w instrukcji `using`, która tworzy obiekt `SharePointEmulationScope`. Na przykład:
+ Aby włączyć emulację w metodach testowych, zawiń treść metody w `using` instrukcji, która tworzy `SharePointEmulationScope` obiekt. Na przykład:
 
 ```csharp
 
@@ -184,14 +184,14 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
 ```
 
- Gdy metoda testowa jest wykonywana, środowisko uruchomieniowe emulatora wywołuje sztuczne firmy Microsoft, aby dynamicznie wstrzyknąć kod do metod programu SharePoint w celu przełączenia wywołań tych metod do delegatów, które są zadeklarowane w Microsoft. SharePoint. sztuczne. dll. Microsoft. SharePoint. Emulators. dll implementuje delegatów dla emulowanych metod, ściśle naśladując rzeczywiste zachowanie programu SharePoint. Gdy metoda testowa lub składnik objęty testami wywołuje metodę programu SharePoint, zachowanie, które jest wynikiem emulacji.
+ Gdy metoda testowa jest wykonywana, środowisko uruchomieniowe emulatora wywołuje sztuczne firmy Microsoft, aby dynamicznie wstrzyknąć kod do metod programu SharePoint w celu przełączenia wywołań tych metod do delegatów, które są zadeklarowane w Microsoft.SharePoint.Fakes.dll. Microsoft.SharePoint.Emulators.dll implementuje delegatów dla emulowanych metod, ściśle naśladując rzeczywiste zachowanie programu SharePoint. Gdy metoda testowa lub składnik objęty testami wywołuje metodę programu SharePoint, zachowanie, które jest wynikiem emulacji.
 
  ![Przepływ wykonywania emulatora](../test/media/ut-emulators-flowchart.png "UT_EMULATORS_FlowChart")
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Creating_dual_use_classes_and_methods"></a>Tworzenie klas i metod podwójnego zastosowania
- Aby utworzyć metody, które mogą być używane do obu testów integracji względem rzeczywistego interfejsu API programu SharePoint i izolowanych testów jednostkowych, które używają emulatorów, użyj przeciążonego konstruktora `SharePointEmulationScope(EmulationMode)`, aby otoczyć kod metody testowej. Dwie wartości wyliczenia `EmulationMode` określają, czy zakres używa emulatorów (`EmulationMode.Enabled`), czy zakres używa interfejsu API programu SharePoint (`EmulationMode.Passthrough`).
+## <a name="creating-dual-use-classes-and-methods"></a><a name="BKMK_Creating_dual_use_classes_and_methods"></a> Tworzenie klas i metod podwójnego zastosowania
+ Aby utworzyć metody, które mogą być używane do obu testów integracji względem rzeczywistego interfejsu API programu SharePoint i izolowanych testów jednostkowych, które używają emulatorów, użyj przeciążonego konstruktora, `SharePointEmulationScope(EmulationMode)` aby otoczyć kod metody testowej. Dwie wartości `EmulationMode` wyliczenia określają, czy zakres używa emulatorów ( `EmulationMode.Enabled` ), czy zakres używa interfejsu API programu SharePoint ( `EmulationMode.Passthrough` ).
 
  Na przykład poniżej przedstawiono, jak można zmodyfikować poprzedni test, aby był dwukrotnie używany:
 
@@ -227,18 +227,18 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a>Używanie atrybutów TestInitialize i TestCleanup do tworzenia klasy testu podwójnego użycia
- Jeśli uruchamiasz wszystkie lub większość testów w klasie przy użyciu `SharePointEmulationScope`, możesz skorzystać z technik na poziomie klasy, aby ustawić tryb emulacji.
+## <a name="using-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a><a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> Używanie atrybutów TestInitialize i TestCleanup do tworzenia klasy testu podwójnego użycia
+ Jeśli uruchamiasz wszystkie lub większość testów w klasie przy użyciu `SharePointEmulationScope` , możesz skorzystać z technik na poziomie klasy, aby ustawić tryb emulacji.
 
-- Metody klasy testowej, które są przypisane do <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> i <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> mogą utworzyć i zniszczyć zakres.
+- Metody klasy testowej, które są przypisane do <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> i <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> mogą tworzyć i zniszczyć zakres.
 
-- Ustawienie `EmulationMode` na poziomie klasy może umożliwić automatyzację zmiany trybu między `EmulationMode.Enabled` i `EmulationMode.Passthrough`.
+- Ustawienie `EmulationMode` na poziomie klasy może umożliwić automatyzację zmiany trybu między `EmulationMode.Enabled` i `EmulationMode.Passthrough` .
 
-  Metoda klasy, która jest przypisana `[TestInitialize]` jest uruchamiana na początku każdej metody testowej, a metoda, która jest przypisana do `[TestCleanup]` uruchamiana na końcu każdej metody testowej. Można zadeklarować pole prywatne dla obiektu `SharePointEmulationScope` na poziomie klasy, zainicjować go w metodzie `TestInitialize` z atrybutem, a następnie usunąć obiekt w `TestCleanup` Metoda z atrybutem.
+  Metoda klasy, do której jest przypisany atrybut, `[TestInitialize]` jest uruchamiana na początku każdej metody testowej, a metoda, która jest przypisana do uruchomienia `[TestCleanup]` na końcu każdej metody testowej. Można zadeklarować pole prywatne dla `SharePointEmulationScope` obiektu na poziomie klasy, zainicjować go w `TestInitialize` metodzie z atrybutem, a następnie usunąć obiekt z `TestCleanup` metody przypisanej do atrybutu.
 
-  Możesz użyć dowolnej metody, która pozwala zautomatyzować wybór `EmulationMode`. Jednym ze sposobów jest sprawdzenie istnienia symbolu przy użyciu dyrektyw preprocesora. Na przykład, aby uruchomić metody testowe w klasie przy użyciu emulatorów, można zdefiniować symbol, taki jak `USE_EMULATION` w pliku projektu testowego lub w wierszu polecenia kompilacji. Jeśli symbol jest zdefiniowany, na poziomie klasy `EmulationMode` stała jest zadeklarowana i ustawiona na `Enabled`. W przeciwnym razie stała jest ustawiona na `Passthrough`.
+  Możesz użyć dowolnej metody, która pozwala zautomatyzować wybór `EmulationMode` . Jednym ze sposobów jest sprawdzenie istnienia symbolu przy użyciu dyrektyw preprocesora. Na przykład, aby uruchomić metody testowe w klasie przy użyciu emulatorów, można zdefiniować symbol, taki jak `USE_EMULATION` w pliku projektu testowego lub w wierszu polecenia kompilacji. Jeśli symbol jest zdefiniowany, stała poziomu klasy `EmulationMode` jest zadeklarowana i ustawiana na `Enabled` . W przeciwnym razie stała jest ustawiona na `Passthrough` .
 
-  Oto przykład klasy testowej, która pokazuje, jak używać dyrektyw preprocesora oraz metod `TestInitialize` i `TestCleanup` z atrybutami, aby ustawić tryb emulacji.
+  Oto przykład klasy testowej, która pokazuje, jak używać dyrektyw preprocesora i `TestInitialize` `TestCleanup` metod z atrybutami i, aby ustawić tryb emulacji.
 
 ```csharp
 //namespace declarations
@@ -294,8 +294,8 @@ namspace MySPAppTests
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Handling_non_emulated_SharePoint_methods"></a>Obsługa nieemulowanych metod programu SharePoint
- Nie wszystkie typy programu SharePoint są emulowane i nie wszystkie metody w niektórych typach emulowanych są emulowane. Jeśli testowa kod wywołuje metodę programu SharePoint, która nie jest emulowana, metoda zgłasza wyjątek `NotSupportedException`. Gdy wystąpi wyjątek, dodawana jest podkładka dotycząca sfałszowania dla metody programu SharePoint.
+## <a name="handling-non-emulated-sharepoint-methods"></a><a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> Obsługa nieemulowanych metod programu SharePoint
+ Nie wszystkie typy programu SharePoint są emulowane i nie wszystkie metody w niektórych typach emulowanych są emulowane. Jeśli testowa kod wywołuje metodę programu SharePoint, która nie jest emulowana, metoda zgłasza `NotSupportedException` wyjątek. Gdy wystąpi wyjątek, dodawana jest podkładka dotycząca sfałszowania dla metody programu SharePoint.
 
  **Konfigurowanie elementów sztucznych programu SharePoint**
 
@@ -309,13 +309,13 @@ namspace MySPAppTests
 
     ![Folder FakesAssembly](../test/media/ut-emulators-fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")
 
-3. Dodaj odwołanie do zestawu **Microsoft. SharePoint. 14.0.0.0. repliks. dll** , który znajduje się w folderze **FakesAssembly** .
+3. Dodaj odwołanie do zestawu **Microsoft.SharePoint.14.0.0.0.Fakes.dll** , który znajduje się w folderze **FakesAssembly** .
 
-4. Obowiązkowe Dodaj dyrektywę Namespace do klasy testowej dla `Microsoft.QualityTools.Testing.Fakes`, `Microsoft.SharePoint.Fakes` i wszelkiej zagnieżdżonej przestrzeni nazw `Microsoft.SharePoint.Fakes`that, której chcesz użyć.
+4. Obowiązkowe Dodaj dyrektywę Namespace do klasy testowej dla `Microsoft.QualityTools.Testing.Fakes` `Microsoft.SharePoint.Fakes` i wszelkich zagnieżdżonych przestrzeni nazw, `Microsoft.SharePoint.Fakes` które mają być używane.
 
    **Implementowanie delegata podkładki dla metody programu SharePoint**
 
-   W naszym przykładowym projekcie Metoda `GetAppointmentsForToday` wywołuje metodę interfejsu API programu SharePoint [SPList. GetItems (SPQuery)](https://msdn.microsoft.com/library/ms457534.aspx) .
+   W naszym przykładowym projekcie `GetAppointmentsForToday` Metoda wywołuje metodę interfejsu API programu SharePoint [SPList. GetItems (SPQuery)](https://msdn.microsoft.com/library/ms457534.aspx) .
 
 ```csharp
 // method under test
@@ -335,12 +335,12 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
 
 ```
 
- @No__t_0 wersja przeciążonej metody `GetItems` nie jest emulowana. W związku z tym po prostu Zawijanie istniejącego testu dla `GetAppointmentsForToday` w `SharePoint.Emulation.Scope` może zakończyć się niepowodzeniem. Aby utworzyć test roboczy, należy napisać implementację delegatów sztucznych `ShimSPList.GetItemsSPQuery`, która zwraca wyniki, które mają zostać przetestowane.
+ `SPList.GetItems(SPQuery)`Wersja przeciążonej `GetItems` metody nie jest emulowana. W związku z tym po prostu Zawijanie istniejącego testu dla `GetAppointmentsForToday` programu w programie `SharePoint.Emulation.Scope` nie powiedzie się. Aby utworzyć test roboczy, należy napisać implementację delegata elementów sztucznych, `ShimSPList.GetItemsSPQuery` która zwraca wyniki, które mają zostać przetestowane.
 
- Poniżej przedstawiono modyfikację istniejącej metody testowej, `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, która implementuje delegata elementów sztucznych. Wymagane zmiany są wywoływane w komentarzach:
+ Poniżej przedstawiono modyfikację istniejącej metody testowej, `GetAppointmentsForTodayReturnsOnlyTodaysAppointments` która implementuje delegata elementów sztucznych. Wymagane zmiany są wywoływane w komentarzach:
 
 > [!IMPORTANT]
-> Metody testowe, które jawnie tworzą podkładki z elementami zastępczymi, zgłaszają wyjątek `ShimNotSupported`, gdy test jest uruchamiany w kontekście `EmulationMode.Passthrough`. Aby uniknąć tego problemu, użyj zmiennej, aby ustawić wartość `EmulationMode` i otoczyć każdy kod sztuczny w instrukcji `if`, która testuje wartość.
+> Metody testowe, które jawnie tworzą podkładki o sztucznych `ShimNotSupported` działaniach, zgłaszają wyjątek, gdy test jest uruchamiany w `EmulationMode.Passthrough` kontekście. Aby uniknąć tego problemu, należy użyć zmiennej, aby ustawić `EmulationMode` wartość i otoczyć każdy kod sztuczny w `if` instrukcji, która testuje wartość.
 
 ```csharp
 // class level field to set emulation mode
@@ -381,28 +381,28 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 
 ```
 
- W tej metodzie najpierw Sprawdzamy, czy emulacja jest włączona. Jeśli tak jest, utworzymy obiekt podkładki dla naszej listy `SPList`, a następnie utworzysz i przypiszesz metodę do jej delegata `GetItemsSPQuery`. Delegat używa metody sztuczne `Bind` do dodania poprawnego elementu listy do `ShimSPListItemCollection`, który jest zwracany do obiektu wywołującego.
+ W tej metodzie najpierw Sprawdzamy, czy emulacja jest włączona. Jeśli tak jest, utworzymy obiekt podkładki dla naszych list, `SPList` a następnie utworzysz i przypiszemy metodę do jego `GetItemsSPQuery` delegata. Delegat używa metody sztucznej `Bind` w celu dodania poprawnego elementu listy do `ShimSPListItemCollection` , który jest zwracany do obiektu wywołującego.
 
  [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a>Pisanie testów emulacji od podstaw oraz podsumowanie
+## <a name="writing-emulation-tests-from-scratch-and-a-summary"></a><a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> Pisanie testów emulacji od podstaw oraz podsumowanie
  Mimo że techniki tworzenia emulacji i podwójnego zastosowania, które są opisane w poprzednich sekcjach założono, że konwertujesz istniejące testy, możesz również użyć technik do pisania testów od podstaw. Poniższa lista zawiera podsumowanie tych technik:
 
 - Aby użyć emulatorów w projekcie testowym, Dodaj pakiet NuGet Microsoft. SharePoint. Emulators do projektu.
 
-- Aby użyć emulatorów w metodzie testowej, Utwórz obiekt `SharePointEmulationScope` na początku metody. Wszystkie obsługiwane interfejsy API programu SharePoint będą emulowane do momentu usunięcia zakresu.
+- Aby użyć emulatorów w metodzie testowej, Utwórz `SharePointEmulationScope` obiekt na początku metody. Wszystkie obsługiwane interfejsy API programu SharePoint będą emulowane do momentu usunięcia zakresu.
 
 - Napisz kod testowy tak, jakby był zapisywany w rzeczywistym interfejsie API programu SharePoint. Kontekst emulacji automatycznie rozpoznaje wywołania metod programu SharePoint z ich emulatorami.
 
-- Nie wszystkie obiekty programu SharePoint są emulowane i nie wszystkie metody niektórych obiektów emulowanych są emulowane. Wyjątek `NotSupportedException` jest generowany, gdy jest używany nieemulowany obiekt lub metoda. W takim przypadku należy jawnie utworzyć delegata podkładki dla metody, aby zwracał wymagane zachowanie.
+- Nie wszystkie obiekty programu SharePoint są emulowane i nie wszystkie metody niektórych obiektów emulowanych są emulowane. `NotSupportedException`Wyjątek jest generowany, gdy jest używany nieemulowany obiekt lub metoda. W takim przypadku należy jawnie utworzyć delegata podkładki dla metody, aby zwracał wymagane zachowanie.
 
-- Aby utworzyć testy podwójnego zastosowania, użyj konstruktora `SharePointEmulationScope(EmulationMode)`, aby utworzyć obiekt zakresu emulacji. Wartość `EmulationMode` określa, czy wywołania programu SharePoint są emulowane lub wykonywane względem rzeczywistej witryny programu SharePoint.
+- Aby utworzyć testy podwójnego zastosowania, użyj `SharePointEmulationScope(EmulationMode)` konstruktora do utworzenia obiektu zakresu emulacji. `EmulationMode`Wartość określa, czy wywołania programu SharePoint są emulowane lub wykonywane względem rzeczywistej witryny programu SharePoint.
 
-- Jeśli wszystkie lub większość metod testowych w klasie testowej wykonuje się w kontekście emulacji, można użyć metody z atrybutem `TestInitialize` na poziomie klasy do utworzenia obiektu `SharePointEmulationScope` i pola na poziomie klasy, aby ustawić tryb emulacji. Pomoże to zautomatyzować zmianę trybu emulacji. Następnie użyj `TestCleanup` przypisanej metody do usuwania obiektu Scope.
+- Jeśli wszystkie lub większość metod testowych w klasie testowej wykonuje się w kontekście emulacji, można użyć `TestInitialize` metody z atrybutami na poziomie klasy do utworzenia `SharePointEmulationScope` obiektu i pola na poziomie klasy, aby ustawić tryb emulacji. Pomoże to zautomatyzować zmianę trybu emulacji. Następnie użyj `TestCleanup` przypisanej metody do usuwania obiektu Scope.
 
   [W tym temacie](#BKMK_In_this_topic)
 
-## <a name="BKMK_Example"></a>Przyklad
+## <a name="example"></a><a name="BKMK_Example"></a> Przyklad
  Oto ostatni przykład obejmujący opisane powyżej techniki emulatora programu SharePoint:
 
 ```csharp
@@ -522,7 +522,7 @@ namspace MySPAppTests
 
 ```
 
-## <a name="BKMK_Emulated_SharePoint_types"></a>Emulowane typy programu SharePoint
+## <a name="emulated-sharepoint-types"></a><a name="BKMK_Emulated_SharePoint_types"></a> Emulowane typy programu SharePoint
  [Microsoft. SharePoint. SPField](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPField)
 
  [Microsoft. SharePoint. SPFieldIndex](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldIndex)

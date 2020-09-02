@@ -1,5 +1,5 @@
 ---
-title: Aktualizowanie interfejsu użytkownika | Dokumentacja firmy Microsoft
+title: Aktualizowanie interfejsu użytkownika | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db5be965119d1564f2a4bf8a15892af7142663e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186359"
 ---
 # <a name="updating-the-user-interface"></a>Aktualizowanie interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po zaimplementowaniu polecenia można dodać kod, aby zaktualizować interfejs użytkownika ze stanem nowych poleceń.  
+Po zaimplementowaniu polecenia można dodać kod, aby zaktualizować interfejs użytkownika do stanu nowych poleceń.  
   
- W typowej aplikacji Win32 zestaw poleceń może być sondowany stale i stan pojedynczych poleceń, można dostosować zgodnie z ich wyświetlania. Jednak ponieważ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] powłoki można hostować nieograniczoną liczbę pakietów VSPackage, rozbudowane sondowania może zmniejszyć czas reakcji, szczególnie sondowania różnych zestawów międzyoperacyjnych między kodem zarządzanym i modelu COM.  
+ W typowej aplikacji Win32 zestaw poleceń może być ciągle sondowany, a stan poszczególnych poleceń można dostosować podczas wyświetlania ich przez użytkownika. Jednak ponieważ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] powłoka może obsługiwać nieograniczoną liczbę pakietów VSPackage, rozbudowane sondowanie może zmniejszyć czas odpowiedzi, szczególnie w przypadku sondowania zestawów międzyoperacyjnych między kodem zarządzanym i modelem com.  
   
 ### <a name="to-update-the-ui"></a>Aby zaktualizować interfejs użytkownika  
   
 1. Wykonaj jedną z następujących czynności:  
   
-    - Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> metody.  
+    - Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> metodę.  
   
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Można uzyskać interfejsu <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> usługi w następujący sposób.  
+         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>Interfejs można uzyskać z <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> usługi w następujący sposób.  
   
         ```csharp  
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)  
@@ -46,12 +46,12 @@ Po zaimplementowaniu polecenia można dodać kod, aby zaktualizować interfejs u
   
         ```  
   
-         Jeśli wartość parametru <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> jest różna od zera (`TRUE`), a następnie aktualizacja jest wykonywana synchronicznie i natychmiast. Firma Microsoft zaleca, aby były przekazywane zero (`FALSE`) dla tego parametru zapewnić dobrą wydajność. Jeśli chcesz uniknąć buforowania, zastosuj `DontCache` Flaga podczas tworzenia polecenia w pliku vsct. Niemniej jednak, Użyj flagi ostrożnie lub może zmniejszyć wydajność. Aby uzyskać więcej informacji na temat flag poleceń, zobacz [Command Flag, Element](../extensibility/command-flag-element.md) dokumentacji.  
+         Jeśli parametr <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> ma wartość różną od zera ( `TRUE` ), aktualizacja jest wykonywana synchronicznie i natychmiast. Zalecamy przekazanie wartości zero ( `FALSE` ) dla tego parametru, aby pomóc w utrzymaniu dobrej wydajności. Jeśli chcesz uniknąć buforowania, Zastosuj `DontCache` flagę podczas tworzenia polecenia w pliku. vsct. Niemniej jednak należy zachować ostrożność lub zmniejszyć wydajność. Aby uzyskać więcej informacji na temat flag poleceń, zobacz dokumentację [elementu flagi polecenia](../extensibility/command-flag-element.md) .  
   
-    - W pakietach VSPackage, który hostował formantu ActiveX przy użyciu modelu aktywacji w miejscu, w oknie, może być bardziej wygodne do użycia <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> metody. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> Method in Class metoda <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejsu i <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> method in Class metoda <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfejsu są funkcjonalnie równoważne. Zarówno spowodować, że do środowiska, aby ponownie Wyślij zapytanie o stan wszystkich poleceń. Zwykle aktualizacja nie jest wykonywane natychmiast. Zamiast tego aktualizacja została opóźniona do czasu bezczynności. Powłoka buforuje stan polecenia, które ułatwiają utrzymanie dobrej wydajności. Jeśli chcesz uniknąć buforowania, zastosuj `DontCache` Flaga podczas tworzenia polecenia w pliku vsct. Niemniej jednak ostrożnie użyć flagi, ponieważ może zmniejszyć wydajność.  
+    - W pakietów VSPackage, który hostuje formant ActiveX przy użyciu modelu aktywacji w miejscu w oknie, może być wygodniejszy do używania <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> metody. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>Metoda w <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejsie i <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> Metoda w <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfejsie są funkcjonalnie równoważne. Oba te elementy powodują ponowne badanie stanu wszystkich poleceń w środowisku. Zwykle aktualizacja nie jest przeprowadzana natychmiast. Zamiast tego, aktualizacja jest opóźniona do czasu bezczynności. Powłoka buforuje stan polecenia, aby pomóc w utrzymaniu dobrej wydajności. Jeśli chcesz uniknąć buforowania, Zastosuj `DontCache` flagę podczas tworzenia polecenia w pliku. vsct. Niemniej jednak należy zachować ostrożność przy użyciu flagi, ponieważ wydajność może ulec zmniejszeniu.  
   
-         Należy zauważyć, że można uzyskać <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfejsu, wywołując `QueryInterface` metody <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> obiektu lub uzyskania przez interfejs z <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> usługi.  
+         Należy zauważyć, że można uzyskać <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfejs, wywołując `QueryInterface` metodę na <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> obiekcie lub pobierając interfejs z <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> usługi.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Implementacja](../extensibility/internals/command-implementation.md)

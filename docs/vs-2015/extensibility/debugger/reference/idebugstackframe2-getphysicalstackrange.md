@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
+title: 'IDebugStackFrame2:: GetPhysicalStackRange | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 99fc1e635691fa290d0a8e4506ef55d677e9ff78
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547653"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera reprezentację zależnych od maszyny, zakresu adresów fizycznych skojarzonych z ramki stosu.  
+Pobiera reprezentację zakresu adresów fizycznych skojarzonych z ramką stosu w zależności od maszyny.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,18 +42,18 @@ int GetPhysicalStackRange ( 
   
 #### <a name="parameters"></a>Parametry  
  `paddrMin`  
- [out] Zwraca najniższy adres fizyczny skojarzone z tą ramką stosu.  
+ określoną Zwraca najniższy adres fizyczny skojarzony z tą ramką stosu.  
   
  `paddrMax`  
- [out] Zwraca najwyższy adres fizyczny skojarzone z tą ramką stosu.  
+ określoną Zwraca najwyższy adres fizyczny skojarzony z tą ramką stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Informacje zwracane przez tę metodę jest używany przez Menedżer debugowania sesji (SDM) do sortowania ramki stosu.  
+ Informacje zwrócone przez tę metodę są używane przez Menedżera debugowania sesji (SDM) do sortowania ramek stosu.  
   
- Zakłada się, że stos wywołań rośnie, oznacza to, dodania nowej ramki stosu w coraz większym stopniu niższe adresów pamięci. Architektura środowiska wykonawczego, musisz podać zakresy adresów fizycznych stosu, które odpowiadają tym założeń.  
+ Przyjęto założenie, że stos wywołań powiększa się. oznacza to, że nowe ramki stosu są dodawane w coraz niższych adresach pamięci. Architektura czasu wykonywania musi udostępniać fizyczne zakresy stosu, które pasują do tego założeń.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591830"
 ---
 # <a name="t4-text-template-directives"></a>Dyrektywy T4 dotyczące szablonu tekstowego
@@ -33,7 +33,7 @@ Składnia dyrektyw jest następująca:
 
 Wszystkie wartości atrybutów muszą być ujęte w podwójny cudzysłów. Jeśli sama wartość zawiera znaki cudzysłowu, muszą je poprzedzać znaki ucieczki \.
 
-Dyrektywy to zazwyczaj pierwsze elementy w pliku szablonu lub pliku dołączanym. Nie należy umieszczać ich wewnątrz bloku kodu `<#...#>`, ani po `<#+...#>`bloku funkcji klasy.
+Dyrektywy to zazwyczaj pierwsze elementy w pliku szablonu lub pliku dołączanym. Nie należy umieszczać ich wewnątrz bloku kodu `<#...#>` ani po bloku funkcji klasy `<#+...#>` .
 
 [Dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md)
 
@@ -71,7 +71,7 @@ Dyrektywy to zazwyczaj pierwsze elementy w pliku szablonu lub pliku dołączanym
 <#@ include file="filePath" #>
 ```
 
-[Dyrektywa T4 dotycząca działania CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)
+[Dyrektywa T4 CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)
 
 ```
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>

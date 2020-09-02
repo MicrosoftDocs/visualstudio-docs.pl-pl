@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dostosowywanie kolumn widoku raportu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: dostosowywanie kolumn widoku raportu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f1f6cf340d7c0ef87f34fc908e075f36eed2962c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146123"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Instrukcje: Dostosowywanie kolumn widoku raportu
+# <a name="how-to-customize-report-view-columns"></a>Porady: dostosowywanie kolumn widoku raportu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzia do oceny wydajności w Visual Studio Team System Development Edition są zintegrowane w pełni zintegrowanego środowiska programistycznego (IDE), aby zapewnić nie zakłóca pracy użytkowników. Poniższa lista jest reprezentatywna dla widoków, które można dostosowywać przez dodawanie, usuwanie i zmiana kolejności kolumn:  
+Narzędzia wydajności w programie Visual Studio Team System Development Edition są w pełni zintegrowane ze zintegrowanym środowiskiem programistycznym (IDE) w celu zapewnienia bezproblemowego środowiska użytkownika. Poniższa lista jest reprezentatywna dla widoków, które można dostosować przez dodanie, usunięcie i ponowne rozmieszczenie kolumn:  
   
 - [Widok modułów](../profiling/modules-view.md)  
   
@@ -48,11 +48,11 @@ Narzędzia do oceny wydajności w Visual Studio Team System Development Edition 
   
 ### <a name="to-customize-a-report-view"></a>Aby dostosować widok raportu  
   
-1. Otwórz widok raportu.  
+1. Otwórz widok raport.  
   
-2. Kliknij prawym przyciskiem myszy powierzchnię widoku raportu, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.  
+2. Kliknij prawym przyciskiem myszy powierzchnię widoku raportu, a następnie kliknij polecenie **Dodaj/Usuń kolumny**.  
   
-     **Dodaj/Usuń kolumny** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Dodaj/Usuń kolumny** .  
   
 3. Wybierz kolumny, które chcesz dodać.  
   

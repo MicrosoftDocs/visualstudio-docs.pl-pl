@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe właściwości wątku | Dokumentacja firmy Microsoft
+title: Okno dialogowe właściwości wątku | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,38 +13,38 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0515e5905a18db0979b30f74a61ddc19dd2a27a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197476"
 ---
 # <a name="thread-properties-dialog-box"></a>Właściwości wątków — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Użyj tego okna dialogowego pole dowiedzieć się więcej o określonym wątku. Aby wyświetlić to okno dialogowe, Przenieś fokus do [Widok wątków](../debugger/threads-view.md) okna lub Otwórz [widoku komunikatów](../debugger/messages-view.md) i rozwiń wiadomość. Zaznacz dowolny węzeł wątku w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
+To okno dialogowe zawiera więcej informacji na temat określonego wątku. Aby wyświetlić to okno dialogowe, Przenieś fokus do okna [Widok wątków](../debugger/threads-view.md) lub Otwórz [komunikaty Wyświetl](../debugger/messages-view.md) i rozwiń komunikat. Wybierz dowolny węzeł wątku w drzewie, a następnie wybierz polecenie **Właściwości** z menu **Widok** .  
   
- **Ogólne** tylko kartę, wyświetlany jest karta. W systemach operacyjnych Windows 98 i Windows 95 zmodyfikowaną wersję na tej karcie jest wyświetlana.  
+ Karta **Ogólne** jest jedyną wyświetlaną kartą. W systemach operacyjnych Windows 98 i Windows 95 zostanie wyświetlona zmodyfikowana wersja tej karty.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Ogólne, karta, Właściwości wątku, okno dialogowe](../debugger/general-tab-thread-properties-dialog-box.md)  
- Aby dowiedzieć się więcej o wybranym wątku, należy użyć tego okna dialogowego.  
+ [Karta ogólna, okno dialogowe właściwości wątku](../debugger/general-tab-thread-properties-dialog-box.md)  
+ Użyj tego okna dialogowego, aby dowiedzieć się więcej o wybranym wątku.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Wyszukiwanie wątków, okno dialogowe](../debugger/thread-search-dialog-box.md)  
- Umożliwia znalezienie węzła dla określonego wątku w widoku wątków.  
+ [Wyszukiwanie wątków — Okno dialogowe](../debugger/thread-search-dialog-box.md)  
+ Służy do znajdowania węzła dla określonego wątku w widoku wątków.  
   
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.  
+ [Spy++ — Odwołanie](../debugger/spy-increment-reference.md)  
+ Zawiera sekcje opisujące poszczególne menu Spy + + i okna dialogowego.  
   
  [Wyszukiwanie wątku w widoku wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Wyjaśnia, jak można znaleźć określonego wątku w widoku wątków.  
+ Wyjaśnia, jak znaleźć określony wątek w widoku wątków.  
   
  [Widok wątków](../debugger/threads-view.md)  
- Wyświetla aktywne wątki w widoku drzewa.  
+ Wyświetla widok drzewa aktywnych wątków.  
   
- [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
+ [Spy++ — Widoki](../debugger/spy-increment-views.md)  
+ Wyjaśnia widoki drzewa Spy + + systemu Windows, komunikatów, procesów i wątków.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.
+ Wprowadzenie do narzędzia Spy + + i wyjaśnienie, jak można go użyć.

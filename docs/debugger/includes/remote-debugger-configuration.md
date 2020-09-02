@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149172"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312106"
 ---
 1. Na komputerze zdalnym Znajdź i uruchom **zdalny debuger** z menu **Start** . 
    
@@ -28,7 +28,7 @@ ms.locfileid: "68149172"
    
 1. Przy pierwszym uruchomieniu zdalnego debugera (lub przed jego skonfigurowaniem) zostanie wyświetlone okno dialogowe **Konfiguracja zdalnego debugowania** .  
   
-    Konfiguracja(../media/remotedebuggerconfwizardpage.png "zdalnego debugera") ![konfiguracji debugera zdalnego]  
+    ![Konfiguracja zdalnego debugera](../media/remotedebuggerconfwizardpage.png "Konfiguracja zdalnego debugera")  
   
 1. Jeśli nie zainstalowano interfejsu API usług sieci Web systemu Windows, który występuje tylko w systemie Windows Server 2008 R2, wybierz przycisk **Instaluj** .  
   
@@ -38,7 +38,7 @@ ms.locfileid: "68149172"
   
 1. Po zakończeniu konfiguracji zostanie wyświetlone okno **zdalny debuger** .
   
-    (../media/remotedebuggerwindow.png "Okno zdalnego debugera") ![okna debugera zdalnego]
+    ![Okno debugera zdalnego](../media/remotedebuggerwindow.png "Okno debugera zdalnego")
   
     Zdalny debuger czeka teraz na połączenie. Użyj nazwy serwera i numeru portu podanego do ustawienia konfiguracji połączenia zdalnego w programie Visual Studio.  
   

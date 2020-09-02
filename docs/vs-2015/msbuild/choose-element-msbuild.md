@@ -1,5 +1,5 @@
 ---
-title: Choose — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: Wybierz element (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,24 +20,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187005"
 ---
 # <a name="choose-element-msbuild"></a>Choose — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ocenia elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementy i/lub `PropertyGroup` elementy do oceny.  
+Oblicza elementy podrzędne w celu wybrania jednego zestawu `ItemGroup` elementów i/lub `PropertyGroup` elementów do obliczenia.  
   
  \<Project>  
- \<Wybierz >  
- \<Gdy >  
- \<Wybierz >  
+ \<Choose>  
+ \<When>  
+ \<Choose>  
  ...  
- \<W przeciwnym razie >  
- \<Wybierz >  
+ \<Otherwise>  
+ \<Choose>  
  ...  
   
 ## <a name="syntax"></a>Składnia  
@@ -59,22 +59,22 @@ Ocenia elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementy i/lub 
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[W przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa blok kodu `PropertyGroup` i `ItemGroup` elementy do oceny, czy wszystkie warunki `When` zwrócić elementy `false`. Może mieć zero lub jeden `Otherwise` elementów w `Choose` elementu, a musi być ostatnim elementem.|  
-|[When](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwe blok kodu dla `Choose` element, aby wybrać. Może być co najmniej jeden `When` elementów w `Choose` elementu.|  
+|[Przypadku](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa blok kodu `PropertyGroup` i `ItemGroup` elementów do obliczenia w przypadku, gdy warunki wszystkich `When` elementów są oceniane do `false` . Może istnieć zero lub jeden element `Otherwise` w `Choose` elemencie i musi być ostatnim elementem.|  
+|[Kiedy](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwy blok kodu dla `Choose` elementu do wybrania. Może istnieć co najmniej jeden element `When` w `Choose` elemencie.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[W przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Określa blok kodu do wykonania, jeśli wszystkie warunki `When` zwrócić elementy `false`.|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.|  
-|[When](../msbuild/when-element-msbuild.md)|Określa możliwe blok kodu dla `Choose` element, aby wybrać.|  
+|[Przypadku](../msbuild/otherwise-element-msbuild.md)|Określa blok kodu do wykonania, jeśli warunki wszystkich `When` elementów są oceniane do `false` .|  
+|[Project](../msbuild/project-element-msbuild.md)|Wymagany element główny [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.|  
+|[Kiedy](../msbuild/when-element-msbuild.md)|Określa możliwy blok kodu dla `Choose` elementu do wybrania.|  
   
 ## <a name="remarks"></a>Uwagi  
- `Choose`, `When`, I `Otherwise` elementy są używane razem w sposób wybrać jedną sekcję kodu w celu wykonania wielu możliwych alternatyw. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).  
+ `Choose`Elementy, `When` , i `Otherwise` są używane razem, aby zapewnić możliwość wyboru jednej sekcji kodu do wykonania z wielu możliwych wariantów. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy projekt używa `Choose` element, aby wybrać, który zestaw wartości właściwości w `When` elementy, aby ustawić. Jeśli `Condition` oba atrybuty `When` zwrócić elementy `false`, wartości właściwości w `Otherwise` elementu są ustawione.  
+ Następujący projekt używa elementu, `Choose` Aby wybrać zestaw wartości właściwości w elementach, które `When` mają zostać ustawione. Jeśli `Condition` atrybuty obu `When` elementów są oceniane do `false` , wartości właściwości w `Otherwise` elemencie są ustawiane.  
   
 ```  
 <Project  

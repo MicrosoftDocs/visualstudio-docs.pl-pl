@@ -1,7 +1,7 @@
 ---
-title: Dowiedz się samouczek Kolby w programie Visual Studio krok 1, podstawy kolby
+title: Samouczek z informacjami o kolbie w programie Visual Studio krok 1. podstawowe informacje o kolbie
 titleSuffix: ''
-description: Przewodnik podstawowych Flask w kontekście projektów programu Visual Studio, w tym wymagania wstępne, Git i środowisk wirtualnych.
+description: Przewodnik po języku zawierającym podstawowe informacje w kontekście projektów programu Visual Studio, w tym wymagania wstępne, Git i środowiska wirtualne.
 ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,153 +12,153 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79302848"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315307"
 ---
-# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Wprowadzenie do struktury sieci Web Flask w programie Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z platformą sieci Web w programie Visual Studio
 
-[Flask](https://palletsprojects.com/p/flask/) to lekka struktura języka Python dla aplikacji sieci web, która zawiera podstawy routingu adresów URL i renderowania stron.
+[Kolba](https://palletsprojects.com/p/flask/) to lekka struktura języka Python dla aplikacji sieci Web, która zapewnia podstawowe informacje na temat routingu URL i renderowania stron.
 
-Flask jest nazywany "mikro" framework, ponieważ nie bezpośrednio zapewniają funkcje, takie jak sprawdzanie poprawności formularza, abstrakcji bazy danych, uwierzytelniania i tak dalej. Takie funkcje są zamiast tego dostarczane przez specjalne pakiety Pythona o nazwie *rozszerzenia Flask*. Rozszerzenia bezproblemowo integrują się z kolbą, tak aby wyglądały tak, jakby były częścią samej kolby. Na przykład flask sam nie zapewnia aparat szablonu strony. Templowanie jest dostarczane przez rozszerzenia, takie jak Jinja i Jade, jak pokazano w tym samouczku.
+Kolba jest nazywana strukturą "mikro", ponieważ nie udostępnia bezpośrednio funkcji, takich jak Walidacja formularza, Abstrakcja bazy danych, uwierzytelnianie i tak dalej. Takie funkcje są udostępniane przez specjalne pakiety języka Python nazywane *rozszerzeniami*kolb. Rozszerzenia integrują się bezproblemowo z kolbą, tak aby pojawiły się tak, jakby znajdowały się one częścią kolby. Na przykład sama Kolba nie zapewnia aparatu szablonu strony. Tworzenia szablonów jest udostępniana przez rozszerzenia, takie jak Jinja i jade, jak pokazano w tym samouczku.
 
-Niniejszy samouczek zawiera informacje na temat wykonywania następujących czynności:
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 
 > [!div class="checklist"]
-> - Tworzenie podstawowego projektu kolby w repozytorium Git przy użyciu szablonu "Pusty projekt sieci Web kolby" (krok 1)
-> - Tworzenie aplikacji Flask z jedną stroną i renderowanie tej strony przy użyciu szablonu (krok 2)
-> - Obsługa plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
-> - Użyj szablonu Flask Web Project, aby utworzyć aplikację z wieloma stronami i responsywnym projektem (krok 4)
-> - Szablon projektu sieci Web Sondy Flask służy do tworzenia aplikacji sondowania, która używa różnych opcji magazynu (magazynu platformy Azure, mongodb lub pamięci).
+> - Tworzenie projektu kolby podstawowej w repozytorium git przy użyciu szablonu "pusty Kolba" projekt sieci Web (krok 1)
+> - Tworzenie aplikacji do kolby z jedną stroną i renderowanie tej strony przy użyciu szablonu (krok 2)
+> - Obsługiwanie plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
+> - Użyj szablonu projektu sieci Web w celu utworzenia aplikacji z wieloma stronami i rozbudowanym projektem (krok 4)
+> - Użyj szablonu projektu sieci Web kolby sondy do utworzenia aplikacji sondowania korzystającej z różnych opcji magazynu (Azure Storage, MongoDB lub pamięci).
 
-W trakcie tych kroków można utworzyć jedno rozwiązanie programu Visual Studio, który zawiera trzy oddzielne projekty. Projekt można utworzyć przy użyciu różnych szablonów projektu Flask, które są dołączone do programu Visual Studio. Utrzymując projekty w tym samym rozwiązaniu, można łatwo przełączać się między różnymi plikami do porównania.
+W trakcie wykonywania tych kroków utworzysz pojedyncze rozwiązanie programu Visual Studio, które zawiera trzy oddzielne projekty. Projekt można utworzyć przy użyciu różnych szablonów projektów kolb, które są dołączone do programu Visual Studio. Utrzymując projekty w tym samym rozwiązaniu, można łatwo przełączać się między różnymi plikami do porównania.
 
 > [!Note]
-> Ten samouczek różni się od [przewodnika Szybki start dla kolb,](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) tym, że dowiesz się więcej o Flask, a także o tym, jak korzystać z różnych szablonów projektów Flask, które zapewniają bardziej rozbudowany punkt wyjścia dla własnych projektów. Na przykład szablony projektów automatycznie instalują pakiet Flask podczas tworzenia projektu, zamiast konieczności ręcznego instalowania pakietu, jak pokazano w przewodniku Szybki start.
+> Ten samouczek różni się od [przewodnika Szybki Start](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) w tym samouczku, aby dowiedzieć się więcej o kolbie, a także jak korzystać z różnych szablonów projektu kolb, które zapewniają bardziej obszerny punkt wyjścia dla własnych projektów. Na przykład szablony projektu automatycznie instalują pakiet do kolby podczas tworzenia projektu, a nie wymagają ręcznego instalowania pakietu, jak pokazano w przewodniku Szybki Start.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Visual Studio 2017 lub nowsze w systemie Windows z następującymi opcjami:
-  - Obciążenie **programistyczne języka Python** **(obciążenie karty** w instalatorze). Aby uzyskać instrukcje, zobacz [Instalowanie obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
-  - **Git dla systemu Windows** i **rozszerzenie GitHub dla programu Visual Studio** na karcie Poszczególne **składniki** w obszarze **Narzędzia kodu**.
+- Program Visual Studio 2017 lub nowszy w systemie Windows z następującymi opcjami:
+  - Obciążenie **programowanie** w języku Python (karta**obciążenie** w instalatorze). Aby uzyskać instrukcje, zobacz [Instalowanie obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
+  - Rozszerzenie **git dla systemu Windows** i usługi **GitHub dla programu Visual Studio** na karcie **poszczególne składniki** w obszarze **Narzędzia kodu**.
 
-Szablony projektów flask są dołączone do wszystkich wcześniejszych wersji narzędzi Python Tools for Visual Studio, choć szczegóły mogą się różnić od tego, co zostało omówione w tym samouczku.
+Do wszystkich wcześniejszych wersji Python Tools for Visual Studio dołączone są szablony projektu kolby, ale szczegółowe informacje mogą się różnić od tego, co zostało omówione w tym samouczku.
 
-Programowanie języka Python nie jest obecnie obsługiwane w programie Visual Studio dla komputerów Mac. Na komputerach Mac i Linux użyj [rozszerzenia Python w programie Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+Programowanie w języku Python nie jest obecnie obsługiwane w Visual Studio dla komputerów Mac. Na komputerach Mac i Linux Użyj [rozszerzenia Python w Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Krok 1-1: Tworzenie projektu i rozwiązania programu Visual Studio
 
-1. W programie Visual Studio wybierz pozycję **Plik** > **nowego** > **projektu**, wyszukaj hasło "Kolby" i wybierz szablon Pusty projekt sieci **Web kolby.** (Szablon znajduje się również w obszarze **Python** > **Web** na liście po lewej stronie).
+1. W programie Visual Studio wybierz pozycję **plik**  >  **Nowy**  >  **projekt**, wyszukaj ciąg "Kolba" i wybierz szablon **projektu sieci Web pustej kolby** . (Szablon znajduje się również w języku **Python**  >  **Sieć Web** na liście po lewej stronie).
 
-    ![Nowe okno dialogowe projektu w programie Visual Studio dla pustego projektu sieci Web kolby](media/flask/step01-new-blank-project.png)
+    ![Okno dialogowe nowego projektu w programie Visual Studio dla projektu sieci Web pustej kolby](media/flask/step01-new-blank-project.png)
 
-1. W polach u dołu okna dialogowego wprowadź następujące informacje (jak pokazano na poprzedniej grafice), a następnie wybierz **przycisk OK:**
+1. W polach w dolnej części okna dialogowego wprowadź następujące informacje (jak pokazano na poprzedniej ilustracji), a następnie wybierz **przycisk OK**:
 
-    - **Nazwa**: ustaw nazwę projektu programu Visual Studio na **BasicProject**. Ta nazwa jest również używana dla projektu Flask.
-    - **Lokalizacja**: określ lokalizację, w której ma być utworzone rozwiązanie i projekt programu Visual Studio.
-    - **Nazwa rozwiązania:** zestaw **LearningFlask**, który jest odpowiedni dla rozwiązania jako kontener dla wielu projektów w tym samouczku.
-    - **Tworzenie katalogu dla rozwiązania**: Pozostaw zestaw (domyślny).
-    - **Utwórz nowe repozytorium Git:** Wybierz tę opcję (która jest domyślnie wyczyszczona), aby program Visual Studio utworzył lokalne repozytorium Git podczas tworzenia rozwiązania. Jeśli nie widzisz tej opcji, uruchom instalator programu Visual Studio i dodaj rozszerzenie **Git dla systemu Windows** i **GitHub dla programu Visual Studio** na karcie Poszczególne **składniki** w obszarze **Narzędzia kodu**.
+    - **Nazwa**: Ustaw nazwę projektu programu Visual Studio na **BasicProject**. Ta nazwa jest również używana dla projektu kolby.
+    - **Lokalizacja**: Określ lokalizację, w której ma zostać utworzone rozwiązanie i projekt programu Visual Studio.
+    - **Nazwa rozwiązania**: Ustaw wartość **LearningFlask**, która jest odpowiednia dla rozwiązania jako kontener dla wielu projektów w tym samouczku.
+    - **Utwórz katalog dla rozwiązania**: pozostaw ustawiony (domyślnie).
+    - **Utwórz nowe repozytorium git**: zaznacz tę opcję (która jest domyślnie wyczyszczona), aby program Visual Studio tworzył lokalne repozytorium git podczas tworzenia rozwiązania. Jeśli ta opcja nie jest widoczna, uruchom Instalatora programu Visual Studio i Dodaj rozszerzenie **git dla systemu Windows** i usługi **GitHub dla programu Visual Studio** na karcie **poszczególne składniki** w obszarze **Narzędzia kodu**.
 
-1. Po chwili visual studio monituje o okno dialogowe z informacją **Ten projekt wymaga pakietów zewnętrznych** (pokazano poniżej). To okno dialogowe jest wyświetlane, ponieważ szablon zawiera plik *requirements.txt* odwołujący się do najnowszego pakietu Flask 1.x. (Wybierz **pokaż wymagane pakiety,** aby zobaczyć dokładne zależności).
+1. Po chwili program Visual Studio wyświetli okno dialogowe z informacją o tym, że **ten projekt wymaga zewnętrznych pakietów** (pokazanych poniżej). To okno dialogowe jest wyświetlane, ponieważ szablon zawiera plik *requirements.txt* , odwołujący się do najnowszego pakietu z kolbą 1. x. (Wybierz pozycję **Pokaż wymagane pakiety** , aby zobaczyć dokładne zależności).
 
-    ![Monit mówiąc, że projekt wymaga pakietów zewnętrznych](media/tutorials-common/step01-requirements-prompt-install-myself.png)
+    ![Monituj o to, że projekt wymaga pakietów zewnętrznych](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
-1. Wybierz opcję **zainstaluję je samodzielnie**. Wkrótce utworzysz środowisko wirtualne, aby upewnić się, że jest wykluczone z kontroli źródła. (Środowisko zawsze można utworzyć na podstawie *pliku requirements.txt).*
+1. Wybierz opcję **zainstaluję je samodzielnie**. Wkrótce utworzysz środowisko wirtualne, aby upewnić się, że jest ono wykluczone z kontroli źródła. (Środowisko można zawsze utworzyć na podstawie *requirements.txt*).
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Krok 1-2: Zbadaj kontrolki Git i opublikuj w zdalnym repozytorium
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Krok 1-2: sprawdzanie formantów git i publikowanie w repozytorium zdalnym
 
-Ponieważ w oknie dialogowym **Nowy projekt** **wybrano repozytorium Utwórz nowy Git,** projekt jest już zatwierdzony do kontroli źródła lokalnego zaraz po zakończeniu procesu tworzenia. W tym kroku zapoznajesz się z formantami Git programu Visual Studio i oknem **Eksploratora zespołu,** w którym pracujesz z kontrolą źródła.
+Ponieważ wybrano opcję **Utwórz nowe repozytorium git** w oknie dialogowym **Nowy projekt** , projekt jest już zatwierdzony do lokalnej kontroli źródła zaraz po zakończeniu procesu tworzenia. Ten krok umożliwia zapoznanie się z kontrolkami git programu Visual Studio i oknem **Team Explorer** , w którym pracujesz z kontrolą źródła.
 
-1. Sprawdź kontrolki Git w dolnym rogu okna głównego programu Visual Studio. Od lewej do prawej te formanty pokazują nieuprawione zatwierdzenia, niezatwierdzone zmiany, nazwę repozytorium i bieżącą gałąź:
+1. Przejrzyj kontrolki Git w dolnym rogu okna głównego programu Visual Studio. Od lewej do prawej te kontrolki wyświetlają niewypychane zatwierdzenia, Niezatwierdzone zmiany, nazwę repozytorium i bieżącą gałąź:
 
-    ![Formanty git w oknie programu Visual Studio](media/flask/step01-git-controls.png)
+    ![Kontrolki Git w oknie programu Visual Studio](media/flask/step01-git-controls.png)
 
     > [!Note]
-    > Jeśli nie wybierzesz **repozytorium Utwórz nowy Git** w oknie dialogowym **Nowy projekt,** formanty Git pokażą tylko polecenie **dodaj do źródła,** które tworzy lokalne repozytorium.
+    > Jeśli nie zaznaczysz **nowego repozytorium git** w oknie dialogowym **Nowy projekt** , w kontrolkach Git będzie widoczne tylko polecenie **Dodaj do kontroli źródła** , które tworzy lokalne repozytorium.
     >
-    > ![Dodaj do kontroli źródła pojawia się w programie Visual Studio, jeśli nie utworzono repozytorium](media/tutorials-common/step01-git-add-to-source-control.png)
+    > ![Jeśli repozytorium nie zostało utworzone, w programie Visual Studio pojawi się wartość Dodaj do kontroli źródła](media/tutorials-common/step01-git-add-to-source-control.png)
 
-1. Wybierz przycisk zmiany, a program Visual Studio otworzy okno **Eksploratora zespołu** na stronie **Zmiany.** Ponieważ nowo utworzony projekt jest już zobowiązana do kontroli źródła automatycznie, nie widać żadnych oczekujących zmian.
+1. Wybierz przycisk zmiany, a program Visual Studio otworzy okno **Team Explorer** na stronie **zmiany** . Ze względu na to, że nowo utworzony projekt jest już automatycznie zatwierdzony do kontroli źródła, nie zobaczysz żadnych oczekujących zmian.
 
-    ![Okno Eksploratora zespołu na stronie Zmiany](media/flask/step01-team-explorer-changes.png)
+    ![Okno Team Explorer na stronie zmiany](media/flask/step01-team-explorer-changes.png)
 
-1. Na pasku stanu programu Visual Studio wybierz przycisk unpushed commits (strzałka w górę z **2**), aby otworzyć stronę **Synchronizacja** w **Eksploratorze zespołu**. Ponieważ masz tylko repozytorium lokalne, strona udostępnia łatwe opcje publikowania repozytorium w różnych repozytoriach zdalnych.
+1. Na pasku stanu programu Visual Studio wybierz przycisk niewypchnięte zatwierdzeń (Strzałka w górę z **2**), aby otworzyć stronę **Synchronizacja** w **Team Explorer**. Ponieważ masz tylko lokalne repozytorium, Strona zawiera proste opcje publikowania repozytorium w różnych repozytoriach zdalnych.
 
-    ![Okno Eksploratora zespołu z dostępnymi opcjami repozytorium Git dla kontroli źródła](media/flask/step01-team-explorer.png)
+    ![Okno Team Explorer pokazujące dostępne opcje repozytorium git dotyczące kontroli źródła](media/flask/step01-team-explorer.png)
 
-    Możesz wybrać dowolną usługę dla własnych projektów. W tym samouczku pokazano użycie usługi GitHub, w której wypełniony przykładowy kod samouczka jest obsługiwany w repozytorium [Microsoft/python-sample-vs-learning-flask.](https://github.com/Microsoft/python-sample-vs-learning-flask)
+    Możesz wybrać niezależną usługę dla własnych projektów. W tym samouczku przedstawiono użycie usługi GitHub, w której ukończony przykładowy kod samouczka jest przechowywany w repozytorium [Microsoft/Python-Sample-vs-Learning-Kolba](https://github.com/Microsoft/python-sample-vs-learning-flask) .
 
-1. Po wybraniu dowolnego z **formantów Publikowania,** **Team Explorer** monituje o więcej informacji. Na przykład podczas publikowania próbki dla tego samouczka, repozytorium trzeba było utworzyć najpierw, w którym to przypadku opcja **Wypychanie do repozytorium zdalnego** została użyta z adresem URL repozytorium.
+1. Po wybraniu dowolnego z formantów **publikowania** **Team Explorer** poprosi o dodatkowe informacje. Na przykład podczas publikowania przykładu dla tego samouczka należy najpierw utworzyć repozytorium, w którym wystąpiła opcja **wypchnij do zdalnego repozytorium** z adresem URL repozytorium.
 
-    ![Okno Eksploratora zespołu do wypychania do istniejącego repozytorium zdalnego](media/flask/step01-push-to-github.png)
+    ![Okno Team Explorer do wypychania do istniejącego repozytorium zdalnego](media/flask/step01-push-to-github.png)
 
-    Jeśli nie masz istniejącego repozytorium, **opcje publikowania w usłudze GitHub** i **wypychania do usługi Azure DevOps** umożliwiają utworzenie go bezpośrednio z poziomu programu Visual Studio.
+    Jeśli nie masz istniejącego repozytorium, opcje **Publikuj w** serwisie GitHub i **wypchnij do usługi Azure DevOps** umożliwiają utworzenie jednego bezpośrednio z poziomu programu Visual Studio.
 
-1. Podczas pracy nad tym samouczkiem, dostać się do nawyku okresowego używania formantów w programie Visual Studio do zatwierdzania i wypychania zmian. Ten samouczek przypomina w odpowiednich punktach.
+1. Podczas pracy w ramach tego samouczka wykonywać się okresowo, korzystając z formantów w programie Visual Studio, aby zatwierdzić i wypchnąć zmiany. Ten samouczek przypomina użytkownika w odpowiednich punktach.
 
 > [!Tip]
-> Aby szybko poruszać się w **Eksploratorze zespołu,** wybierz nagłówek (który **odczytuje zmiany** lub **Wypychaj** powyższe obrazy), aby wyświetlić wyskakujące menu dostępnych stron.
+> Aby szybko poruszać się w **Team Explorer**, zaznacz nagłówek (który odczytuje **zmiany** lub **wypchnij** obrazy powyżej), aby wyświetlić menu rozwijane dostępne strony.
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pytanie: Jakie są pewne zalety korzystania z kontroli źródła od początku projektu?
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pytanie: Jakie są korzyści z używania kontroli źródła na początku projektu?
 
-Odpowiedź: Przede wszystkim przy użyciu kontroli źródła od początku, zwłaszcza jeśli używasz również zdalnego repozytorium, zapewnia regularne tworzenie kopii zapasowych poza witryną projektu. W przeciwieństwie do utrzymania projektu tylko w lokalnym systemie plików, kontrola źródła zapewnia również pełną historię zmian i łatwą możliwość ponownego ponownego pojedynczego pliku lub całego projektu do poprzedniego stanu. Ta historia zmian pomaga określić przyczynę regresji (błędy testu). Ponadto kontrola źródła jest niezbędna, jeśli wiele osób pracuje nad projektem, ponieważ zarządza nadpisywami i zapewnia rozwiązywanie konfliktów. Na koniec kontrola źródła, która jest zasadniczo formą automatyzacji, ustawia cię dobrze do automatyzacji kompilacji, testowania i zarządzania wydaniami. To naprawdę pierwszy krok w użyciu DevOps dla projektu, a ponieważ bariery wejścia są tak niskie, naprawdę nie ma powodu, aby nie używać kontroli źródła od początku.
+Odpowiedź: pierwszy z, przy użyciu kontroli źródła od początku, szczególnie jeśli korzystasz również z repozytorium zdalnego, zapewnia regularne kopie zapasowe projektu. W przeciwieństwie do konserwowania projektu tylko w lokalnym systemie plików kontrola źródła zapewnia również kompletną historię zmian oraz łatwą możliwość przywrócenia pojedynczego pliku lub całego projektu do poprzedniego stanu. Historia zmian pomaga określić przyczynę regresji (niepowodzenia testów). Ponadto kontrola źródła jest niezwykle ważna, jeśli wiele osób pracuje nad projektem, ponieważ zarządza zastępowaniem i zapewnia Rozwiązywanie konfliktów. Na koniec kontrola źródła, która jest zasadniczo formą automatyzacji, pozwala dobrze zautomatyzować kompilacje, testowanie i zarządzanie wydaniami. Jest to naprawdę pierwszy krok przy użyciu DevOps dla projektu i ponieważ przeszkody do wprowadzenia są tak niskie, dlatego nie ma powodów, aby nie używać kontroli źródła od początku.
 
-Aby uzyskać dalsze dyskusje na temat kontroli źródła jako automatyzacji, zobacz [Źródło prawdy: Rola repozytoriów w DevOps](https://msdn.microsoft.com/magazine/mt763232), artykuł w MSDN Magazine napisany dla aplikacji mobilnych, który dotyczy również aplikacji internetowych.
+Aby uzyskać dodatkową dyskusję na temat kontroli źródła jako Automatyzacja, zobacz [Źródło prawdy: rola repozytoriów w DevOps](https://msdn.microsoft.com/magazine/mt763232), artykuł w witrynie MSDN Magazine przeznaczony dla aplikacji mobilnych, które dotyczą również usługi Web Apps.
 
-### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pytanie: Czy mogę uniemożliwić programowi Visual Studio automatyczne zatwierdzanie nowego projektu?
+### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pytanie: czy program Visual Studio może uniemożliwić autozatwierdzanie nowego projektu?
 
-Odpowiedź: Tak. Aby wyłączyć automatyczne zatwierdzanie, przejdź do strony **Ustawienia** w **Eksploratorze zespołu**, wybierz pozycję**Ustawienia globalne** **Git** > , wyczyść opcję z etykietą **Zatwierdzanie zmian po domyślnym scaleniu**, a następnie wybierz pozycję **Aktualizuj**.
+Odpowiedź: Tak. Aby wyłączyć automatyczne zatwierdzanie, przejdź do strony **Ustawienia** w obszarze **Team Explorer**, wybierz **Git**pozycję  >  **Ustawienia globalne**git, usuń zaznaczenie pola wyboru **Zatwierdź zmiany po scaleniu domyślnie**, a następnie wybierz pozycję **Aktualizuj**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1-3: Tworzenie środowiska wirtualnego i wykluczanie go z kontroli źródła
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1-3: Tworzenie środowiska wirtualnego i wykluczenie go z kontroli źródła
 
-Teraz, po skonfigurowaniu kontroli źródła dla projektu, można utworzyć środowisko wirtualne niezbędne pakiety Flask, które wymaga projektu. Następnie można użyć **Eksploratora zespołu,** aby wykluczyć folder środowiska z kontroli źródła.
+Teraz, po skonfigurowaniu kontroli źródła dla projektu, można utworzyć środowisko wirtualne wymagane pakiety kolb wymagane przez projekt. Następnie można użyć **Team Explorer** do wykluczenia folderu środowiska z kontroli źródła.
 
-1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł **Środowiska języka Python** i wybierz polecenie Dodaj środowisko **wirtualne**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj środowisko wirtualne**.
 
-    ![Polecenie Dodaj środowisko wirtualne w Eksploratorze rozwiązań](media/flask/step01-add-virtual-environment-command.png)
+    ![Dodaj polecenie środowiska wirtualnego w Eksplorator rozwiązań](media/flask/step01-add-virtual-environment-command.png)
 
-1. Zostanie wyświetlone okno dialogowe **Dodaj środowisko wirtualne** z komunikatem **"Znaleźliśmy plik requirements.txt".** Ten komunikat wskazuje, że program Visual Studio używa tego pliku do skonfigurowania środowiska wirtualnego.
+1. Zostanie wyświetlone okno dialogowe **Dodawanie środowiska wirtualnego** z komunikatem informującym o **znalezieniu pliku requirements.txt.** Ten komunikat oznacza, że program Visual Studio używa tego pliku do skonfigurowania środowiska wirtualnego.
 
-    ![Dodawanie okna dialogowego środowiska wirtualnego z komunikatem requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
+    ![Okno dialogowe Dodawanie środowiska wirtualnego z komunikatem o requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
-1. Wybierz **pozycję Utwórz,** aby zaakceptować wartości domyślne. (Można zmienić nazwę środowiska wirtualnego, jeśli chcesz, który po prostu zmienia `env` nazwę jego podfolder, ale jest standardową konwencją.)
+1. Wybierz pozycję **Utwórz** , aby zaakceptować wartości domyślne. (Możesz zmienić nazwę środowiska wirtualnego, jeśli chcesz, co tylko zmieni nazwę jego podfolderu, ale `env` jest standardową Konwencją).
 
-1. Zgoda na uprawnienia administratora, jeśli zostanie wyświetlony monit, a następnie ciągnij za cierpliwość przez kilka minut, podczas gdy program Visual Studio pobiera i instaluje pakiety, co dla Flask i jego zależności oznacza rozszerzenie około tysiąca plików w ponad 100 podfolderach. Postęp można zobaczyć w oknie **Dane wyjściowe** programu Visual Studio. Podczas oczekiwania zastanów się nad sekcjami Pytania, które następują po tym. Możesz również zobaczyć opis zależności Flask na stronie [instalacji kolby](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (flask.pcocoo.org).
+1. Jeśli zostanie wyświetlony monit, wyrażasz zgodę na uprawnienia administratora, a następnie poczekaj kilka minut, gdy program Visual Studio pobierze i zainstaluje pakiety, które w przypadku kolby i jej zależności oznaczają rozwinięcie tysięcy plików w ponad 100 podfolderach. Postęp można zobaczyć w oknie **danych wyjściowych** programu Visual Studio. Gdy oczekujesz, spędzać poniższe sekcje pytań. Można także zobaczyć opis zależności kolb na stronie [instalacji kolby](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (Flask.pcocoo.org).
 
-1. W formancie Git programu Visual Studio (na pasku stanu) wybierz wskaźnik zmian (który pokazuje **99&#42;), **który otwiera stronę **Zmiany** w **Eksploratorze zespołu.**
+1. W kontrolkach git programu Visual Studio (na pasku stanu) wybierz wskaźnik zmiany (który pokazuje **99&#42;**), co spowoduje otwarcie strony **zmiany** w **Team Explorer**.
 
-    Tworzenie środowiska wirtualnego przyniosło setki zmian, ale nie trzeba uwzględniać żadnego z nich w kontroli źródła, ponieważ użytkownik (lub ktokolwiek inny klonuje projekt) zawsze może odtworzyć środowisko z *pliku requirements.txt*.
+    Tworzenie środowiska wirtualnego zostało wprowadzone w setkach zmian, ale nie musisz zawierać żadnego z nich w kontroli źródła, ponieważ użytkownik (lub każda inna osoba klonuje projekt) zawsze może odtworzyć środowisko z *requirements.txt*.
 
-    Aby wykluczyć środowisko wirtualne, kliknij prawym przyciskiem myszy folder **env** i wybierz polecenie **Ignoruj te elementy lokalne**.
+    Aby wykluczyć środowisko wirtualne, kliknij prawym przyciskiem myszy folder **ENV** i wybierz polecenie **Ignoruj te elementy lokalne**.
 
     ![Ignorowanie środowiska wirtualnego w zmianach kontroli źródła](media/flask/step01-ignore-local-items.png)
 
-1. Po wyłączeniu środowiska wirtualnego jedynymi pozostałymi zmianami są plik projektu i *.gitignore*. Plik *.gitignore* zawiera dodany wpis dla folderu środowiska wirtualnego. Możesz kliknąć dwukrotnie plik, aby wyświetlić różnice.
+1. Po wykluczeniu środowiska wirtualnego tylko pozostałe zmiany są w pliku projektu i *. gitignore*. Plik *. gitignore* zawiera dodany wpis dla folderu środowiska wirtualnego. Możesz kliknąć dwukrotnie plik, aby zobaczyć różnicę.
 
-1. Wprowadź komunikat o zatwierdzeniu i wybierz przycisk **Zatwierdz wszystko,** a następnie naciśnij zatwierdzenia do zdalnego repozytorium, jeśli chcesz.
+1. Wprowadź wiadomość dotyczącą zatwierdzenia i wybierz przycisk **Zatwierdź wszystko** , a następnie wypchnij zatwierdzenia do repozytorium zdalnego, jeśli chcesz.
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pytanie: Dlaczego chcę utworzyć środowisko wirtualne?
 
-Odpowiedź: Środowisko wirtualne to świetny sposób na wyizolowanie dokładnych zależności aplikacji. Taka izolacja pozwala uniknąć konfliktów w globalnym środowisku Języka Python i ułatwia zarówno testowanie, jak i współpracę. Z biegiem czasu, podczas tworzenia aplikacji, niezmiennie przynosisz wiele przydatnych pakietów Pythona. Przechowując pakiety w środowisku wirtualnym specyficznym dla projektu, można łatwo zaktualizować plik *requirements.txt* projektu, który opisuje to środowisko, które jest zawarte w kontroli źródła. Gdy projekt jest kopiowany do innych komputerów, w tym serwerów kompilacji, serwerów wdrożeniowych i innych komputerów deweloperskich, można łatwo odtworzyć środowisko przy użyciu tylko *pliku requirements.txt* (dlatego środowisko nie musi znajdować się pod kontrolą źródła). Aby uzyskać więcej informacji, zobacz [Używanie środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
+Odpowiedź: środowisko wirtualne to świetny sposób izolowania dokładnych zależności aplikacji. Taka Izolacja pozwala uniknąć konfliktów w globalnym środowisku języka Python i pomaga w testowaniu i współpracy. W miarę upływu czasu podczas opracowywania aplikacji niezmiennie się w wielu przydatnych pakietach języka Python. Utrzymując pakiety w środowisku wirtualnym specyficznym dla projektu, można łatwo zaktualizować plik *requirements.txt* projektu, który opisuje to środowisko, które jest zawarte w kontroli źródła. Gdy projekt jest kopiowany na inne komputery, w tym serwery kompilacji, serwery wdrażania i inne komputery deweloperskie, można łatwo odtworzyć środowisko tylko *requirements.txt* (co oznacza, że środowisko nie musi znajdować się w kontroli źródła). Aby uzyskać więcej informacji, zobacz [Korzystanie z środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pytanie: Jak usunąć środowisko wirtualne, które jest już zaangażowane w kontrolę źródła?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pytanie: Jak mogę usunąć środowisko wirtualne, które zostało już zatwierdzone do kontroli źródła?
 
-Odpowiedź: Najpierw edytuj plik *.gitignore,* aby wykluczyć folder: znajdź sekcję na końcu z komentarzem `# Python Tools for Visual Studio (PTVS)` i `/BasicProject/env`dodaj nowy wiersz dla folderu środowiska wirtualnego, na przykład . (Ponieważ program Visual Studio nie pokazuje pliku w **Eksploratorze rozwiązań,** otwórz go bezpośrednio za pomocą polecenia menu > **Otwórz** > **File** **plik.** Możesz również otworzyć plik z **Eksploratora zespołu**: na stronie **Ustawienia** wybierz **pozycję Ustawienia repozytorium**, przejdź do sekcji **Ignoruj & atrybuty,** a następnie wybierz łącze **Edytuj** obok **.gitignore**.)
+Odpowiedź: najpierw Edytuj plik *. gitignore* , aby wykluczyć folder: Znajdź sekcję na końcu z komentarzem `# Python Tools for Visual Studio (PTVS)` i Dodaj nowy wiersz do folderu środowiska wirtualnego, takiego jak `/BasicProject/env` . (Ponieważ program Visual Studio nie wyświetla pliku w **Eksplorator rozwiązań**, otwórz go bezpośrednio przy użyciu **pliku**  >  **Otwórz**  >  Polecenie menu **plik** . Możesz również otworzyć plik z **Team Explorer**: na stronie **Ustawienia** wybierz pozycję **Ustawienia repozytorium**, przejdź do sekcji **Ignorowanie atrybutów & plików** , a następnie wybierz łącze **Edytuj** obok **. gitignore**.)
 
-Po drugie, otwórz okno polecenia, przejdź do folderu takiego jak *BasicProject,* `git rm -r env`który zawiera folder środowiska wirtualnego, taki jak *env,* i uruchom . Następnie zaobenduj te`git commit -m 'Remove venv'`zmiany z wiersza polecenia ( ) lub zaobenduj na stronie **Zmiany** **Eksploratora zespołu**.
+Następnie otwórz okno polecenia, przejdź do folderu, takiego jak *BasicProject* , który zawiera folder środowiska wirtualnego, taki jak *ENV*i Run `git rm -r env` . Następnie zatwierdź te zmiany z wiersza polecenia ( `git commit -m 'Remove venv'` ) lub Zatwierdź ze strony **zmiany** w **Team Explorer**.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1-4: Zbadaj kod płyty kotłowej
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1-4: badanie kodu standardowego
 
-1. Po zakończeniu tworzenia projektu zostanie wyświetlonego rozwiązanie i projekt w **Eksploratorze rozwiązań,** gdzie projekt zawiera tylko dwa pliki, *app.py* i *requirements.txt:*
+1. Po zakończeniu tworzenia projektu zobaczysz rozwiązanie i projekt w **Eksplorator rozwiązań**, gdzie projekt zawiera tylko dwa pliki, *App.py* i *requirements.txt*:
 
-    ![Puste pliki projektu kolby w Eksploratorze rozwiązań](media/flask/step01-blank-flask-project-in-solution-explorer.png)
+    ![Puste pliki projektu kolby w Eksplorator rozwiązań](media/flask/step01-blank-flask-project-in-solution-explorer.png)
 
-1. Jak wspomniano wcześniej, plik *requirements.txt* określa zależność pakietu Flask. Obecność tego pliku jest tym, co zachęca do tworzenia środowiska wirtualnego podczas pierwszego tworzenia projektu.
+1. Jak wspomniano wcześniej, plik *requirements.txt* określa zależność pakietu do kolby. Obecność tego pliku polega na tym, co zaprasza do utworzenia środowiska wirtualnego podczas pierwszego tworzenia projektu.
 
-1. Pojedynczy plik *app.py* zawiera trzy części. Najpierw jest `import` instrukcja dla Flask, tworzenie `Flask` wystąpienia klasy, który jest `app`przypisany do `wsgi_app` zmiennej , a następnie przypisanie zmiennej (co jest przydatne podczas wdrażania do hosta sieci web, ale nie jest używany w chwili obecnej):
+1. Pojedynczy plik *App.py* zawiera trzy części. Pierwsza jest `import` instrukcją dla kolby, tworząc wystąpienie `Flask` klasy, która jest przypisana do zmiennej `app` , a następnie przypisując `wsgi_app` zmienną (która jest przydatna w przypadku wdrażania na hoście sieci Web, ale nie w obecnym czasie):
 
     ```python
     from flask import Flask
@@ -168,7 +168,7 @@ Po drugie, otwórz okno polecenia, przejdź do folderu takiego jak *BasicProject
     wsgi_app = app.wsgi_app
     ```
 
-1. Druga część, na końcu pliku, jest trochę opcjonalny kod, który uruchamia serwer programistyczny Flask z określonych wartości hosta i portu pobranych ze zmiennych środowiskowych (domyślnie localhost:5555):
+1. Druga część, na końcu pliku, to Bit opcjonalnego kodu, który rozpoczyna się na serwerze deweloperskim z określonym wartościami hosta i portów pobranymi ze zmiennych środowiskowych (domyślnie: 5555):
 
     ```python
     if __name__ == '__main__':
@@ -181,7 +181,7 @@ Po drugie, otwórz okno polecenia, przejdź do folderu takiego jak *BasicProject
         app.run(HOST, PORT)
     ```
 
-1. Trzeci to krótki fragment kodu, który przypisuje funkcję do trasy adresu URL, co oznacza, że funkcja zapewnia zasób identyfikowany przez adres URL. Trasy można zdefiniować za `@app.route` pomocą dekoratora Flask, którego argument jest względny adres URL z katalogu głównego witryny. Jak widać w kodzie, funkcja zwraca tylko ciąg tekstowy, który jest wystarczający do renderowania przeglądarki. W kolejnych krokach renderujesz bogatsze strony za pomocą kodu HTML.
+1. Trzeci to krótki bit kodu, który przypisuje funkcję do trasy URL, co oznacza, że funkcja udostępnia zasób identyfikowany przez adres URL. Można definiować trasy przy użyciu dekoratora kolby `@app.route` , którego argument jest względnym adresem URL z katalogu głównego witryny. Jak widać w kodzie, funkcja tutaj zwraca tylko ciąg tekstowy, który wystarcza do renderowania przeglądarki. W krokach, które obserwuję, możesz renderować bogatsze strony za pomocą języka HTML.
 
     ```python
     @app.route('/')
@@ -190,13 +190,13 @@ Po drugie, otwórz okno polecenia, przejdź do folderu takiego jak *BasicProject
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>Pytanie: Jaki jest cel argumentu __nazwa__ do klasy Flask?
+### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>Pytanie: Jakie jest przeznaczenie argumentu __name__ w klasie kolb?
 
-Odpowiedź: Argument jest nazwą modułu lub pakietu aplikacji i informuje Flask, gdzie szukać szablonów, plików statycznych i innych zasobów, które należą do aplikacji. W przypadku aplikacji zawartych `__name__` w jednym module jest zawsze właściwą wartością. Jest również ważne dla rozszerzeń, które wymagają informacji debugowania. Aby uzyskać więcej informacji i dodatkowe argumenty, zobacz [dokumentację klasy Flask](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask) (flask.pocoo.org).
+Odpowiedź: argument jest nazwą modułu lub pakietu aplikacji i zawiera informacje o kolbie, gdzie szukać szablonów, plików statycznych i innych zasobów należących do aplikacji. W przypadku aplikacji znajdujących się w jednym module `__name__` zawsze jest to właściwa wartość. Jest ona również ważna dla rozszerzeń, które wymagają informacji debugowania. Aby uzyskać więcej informacji i dodatkowych argumentów, zobacz [dokumentację klasy kolb](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask) (Flask.pocoo.org).
 
-### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Pytanie: Czy funkcja może mieć więcej niż jeden dekorator trasy?
+### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Pytanie: czy funkcja może mieć więcej niż jedną trasę Dekoratora?
 
-Odpowiedź: Tak, możesz użyć tylu dekoratorów, jeśli ta sama funkcja obsługuje wiele tras. Na przykład, aby `hello` użyć funkcji dla "/" i "/hello", użyj następującego kodu:
+Odpowiedź: tak, możesz użyć dowolną liczbę dekoratory, jeśli ta sama funkcja obsługuje wiele tras. Na przykład, aby użyć `hello` funkcji dla obu "/" i "/Hello", należy użyć następującego kodu:
 
 ```python
 @app.route('/')
@@ -208,9 +208,9 @@ def hello():
 
 <a name="qa-url-variables"></a>
 
-### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Pytanie: Jak kolby działają ze zmiennymi trasami adresów URL i parametrami zapytania?
+### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Pytanie: jak działa Kolba ze zmiennymi adresami URL i parametrami zapytania?
 
-Odpowiedź: W trasie oznaczasz dowolną `<variable_name>`zmienną za pomocą , a Flask przekazuje zmienną do funkcji przy użyciu nazwanego argumentu. Zmienna może być częścią ścieżki adresu URL lub parametru zapytania. Na przykład trasa w formie `'/hello/<name>` generuje argument ciągu `name` wywoływany do `?message=<msg>` funkcji, a użycie w marszdzie analizuje wartość podana dla parametru `msg`zapytania "message=" i przekazuje ją do funkcji jako:
+Odpowiedź: w trasie Oznacz każdą zmienną za pomocą `<variable_name>` , a Kolba przekazuje zmienną do funkcji przy użyciu argumentu nazwanego. Zmienna może być częścią ścieżki URL lub parametru zapytania. Na przykład trasa w formie `'/hello/<name>` generuje argument ciągu wywoływany `name` do funkcji, a użycie `?message=<msg>` w marszrucie analizuje wartość podaną dla parametru zapytania "Message =" i przekazuje go do funkcji jako `msg` :
 
 ```python
 @app.route('/hello/<name>?message=<msg>')
@@ -218,40 +218,40 @@ def hello(name, msg):
     return "Hello " + name + "! Message is " + msg + "."
 ```
 
-Aby zmienić typ, przedrostek `float` `path` zmiennej z `int`, , (który akceptuje `uuid`ukośnie, aby nakreślić nazwy folderów) i . Aby uzyskać szczegółowe informacje, zobacz [Reguły zmienne](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) w dokumentacji kolby.
+Aby zmienić typ, należy prefiksować zmienną z `int` , `float` , `path` (która akceptuje ukośniki do nazw folderów odróżnić) i `uuid` . Aby uzyskać szczegółowe informacje, zobacz [reguły zmiennych](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) w dokumentacji dotyczącej kolb.
 
-Parametry kwerendy są `request.args` również dostępne za `request.args.get` pośrednictwem właściwości, w szczególności za pośrednictwem metody. Aby uzyskać więcej informacji, zobacz [Request obiektu](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) w dokumentacji Flask.
+Parametry zapytania są również dostępne za pomocą właściwości, w odróżnieniu `request.args` od `request.args.get` metody. Więcej informacji można znaleźć w dokumentacji dotyczącej [obiektu request](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) w kolbie.
 
-### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pytanie: Czy program Visual Studio może generować plik requirements.txt ze środowiska wirtualnego po zainstalowaniu innych pakietów?
+### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pytanie: czy program Visual Studio może generować plik requirements.txt ze środowiska wirtualnego po zainstalowaniu innych pakietów?
 
-Odpowiedź: Tak. Rozwiń węzeł **Środowiska języka Python,** kliknij prawym przyciskiem myszy środowisko wirtualne i wybierz polecenie **Generuj polecenie requirements.txt.** Dobrze jest używać tego polecenia okresowo podczas modyfikowania środowiska i zatwierdzania zmian *w requirements.txt* do kontroli źródła wraz z innymi zmianami kodu, które zależą od tego środowiska. Jeśli konfigurujesz ciągłą integrację na serwerze kompilacji, należy wygenerować plik i zatwierdzić zmiany przy każdym modyfikowaniu środowiska.
+Odpowiedź: Tak. Rozwiń węzeł **środowiska Python** , kliknij prawym przyciskiem myszy środowisko wirtualne i wybierz polecenie **Generuj requirements.txt** . Dobrym sposobem jest użycie tego polecenia okresowo podczas modyfikowania środowiska i zatwierdzić zmiany *requirements.txt* do kontroli źródła wraz ze wszystkimi innymi zmianami kodu, które są zależne od tego środowiska. W przypadku skonfigurowania ciągłej integracji na serwerze kompilacji należy wygenerować plik i zatwierdzić zmiany przy każdej modyfikacji środowiska.
 
-## <a name="step-1-5-run-the-project"></a>Krok 1-5: Uruchom projekt
+## <a name="step-1-5-run-the-project"></a>Krok 1-5: uruchamianie projektu
 
-1. W programie Visual Studio wybierz opcję **Debugowanie** > **start debugowania** **(F5)** lub użyj przycisku **Serwera sieci Web** na pasku narzędzi (widoczna przeglądarka może się różnić):
+1. W programie Visual Studio wybierz pozycję **Debuguj**  >  **Rozpocznij debugowanie** (**F5**) lub przycisk **serwer sieci Web** na pasku narzędzi (widoczna przeglądarka może się różnić):
 
-    ![Uruchamianie przycisku paska narzędzi serwera sieci Web w programie Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
+    ![Przycisk paska narzędzi uruchamiania serwera sieci Web w programie Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
-1. Albo polecenie przypisuje losowy numer portu do zmiennej `python app.py`środowiskowej PORT, a następnie uruchamia . Kod uruchamia aplikację przy użyciu tego portu w serwerze deweloperskim Flask. Jeśli program Visual Studio **mówi, że nie można uruchomić debugera** z komunikatem o braku pliku startowego, kliknij prawym przyciskiem myszy **app.py** w **Eksploratorze rozwiązań** i wybierz pozycję **Ustaw jako plik startowy**.
+1. Każde polecenie przypisuje losowy numer portu do zmiennej środowiskowej portu, a następnie uruchamia polecenie `python app.py` . Kod uruchamia aplikację przy użyciu tego portu w ramach serwera projektowego kolby. Jeśli program Visual Studio **nie może uruchomić debugera** z komunikatem o braku pliku startowego, kliknij prawym przyciskiem myszy pozycję **App.py** w **Eksplorator rozwiązań** i wybierz polecenie **Ustaw jako plik startowy**.
 
-1. Po uruchomieniu serwera zostanie wyświetlone otwarte okno konsoli, w którym jest wyświetlany dziennik serwera. Visual Studio następnie automatycznie otwiera `http://localhost:<port>`przeglądarkę do , gdzie powinien `hello` zostać wyświetlony komunikat renderowany przez funkcję:
+1. Po uruchomieniu serwera zostanie wyświetlone okno konsoli z otwartym dziennikiem serwera. Program Visual Studio automatycznie otwiera przeglądarkę do `http://localhost:<port>` , gdzie powinien zostać wyświetlony komunikat renderowany przez `hello` funkcję:
 
-    ![Domyślny widok projektu kolby](media/flask/step01-first-run-success.png)
+    ![Widok domyślny projektu kolby](media/flask/step01-first-run-success.png)
 
-1. Po zakończeniu zatrzymaj serwer, zamykając okno konsoli lub używając polecenia **Debugowania** > **zatrzymaj debugowanie** w programie Visual Studio.
+1. Gdy wszystko będzie gotowe, Zatrzymaj serwer, zamykając okno konsoli lub korzystając z polecenia **Debuguj**  >  **zatrzymywanie debugowania** w programie Visual Studio.
 
-### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pytanie: Jaka jest różnica między używaniem poleceń menu debugowania a poleceniami serwera w podmenu Python projektu?
+### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pytanie: Jaka jest różnica między użyciem poleceń menu Debuguj i poleceń serwera w podmenu środowiska Python projektu?
 
-Odpowiedź: Oprócz poleceń menu **debugowania** i przycisków paska narzędzi można również **Python** > uruchomić serwer za pomocą poleceń**serwera uruchamiania** **języka Python** > lub Python**Run** w menu kontekstowym projektu. Oba polecenia otwierają okno konsoli, w którym jest widoczny lokalny adres URL (localhost:port) dla uruchomionego serwera. Należy jednak ręcznie otworzyć przeglądarkę z tym adresem URL, a uruchomienie serwera debugowania nie uruchamia automatycznie debugera programu Visual Studio. Debugera można dołączyć do uruchomionego procesu później, jeśli chcesz, za pomocą polecenia > **Debugowanie dołączania do procesu.** **Debug**
+Odpowiedź: oprócz poleceń menu **Debuguj** i przycisków paska narzędzi można również uruchomić serwer przy użyciu **Python**  >  polecenia**Uruchom serwer uruchomieniowy** Python lub **Python**  >  **Uruchom serwer debugowania** w menu kontekstowym projektu. Oba polecenia otwierają okno konsoli, w którym widoczny jest lokalny adres URL (localhost: Port) dla uruchomionego serwera. Należy jednak ręcznie otworzyć przeglądarkę z tym adresem URL i uruchomić serwer debugowania nie uruchamia automatycznie debugera programu Visual Studio. Możesz dołączyć debuger do uruchomionego procesu później, jeśli chcesz, przy użyciu polecenia **Debuguj**  >  **Dołącz do procesu** .
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym momencie podstawowy projekt Flask zawiera kod startowy i kod strony w tym samym pliku. Najlepiej jest oddzielić te dwie kwestie, a także oddzielić kod HTML i dane za pomocą szablonów.
+W tym momencie projekt kolby podstawowej zawiera kod uruchomienia i kod strony w tym samym pliku. Najlepiej oddzielić te dwa kwestie, a także oddzielić kod HTML i dane przy użyciu szablonów.
 
 > [!div class="nextstepaction"]
-> [Tworzenie aplikacji Flask z widokami i szablonami stron](learn-flask-visual-studio-step-02-create-app.md)
+> [Tworzenie aplikacji do kolby z widokami i szablonami stron](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="go-deeper"></a>Głębiej
+## <a name="go-deeper"></a>Przejdź głębiej
 
-- [Szybki start kolby](https://flask.palletsprojects.com/en/1.0.x/quickstart/) (flask.pocoo.org)
-- Kod źródłowy samouczka w usłudze GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Kolba szybkiego startu](https://flask.palletsprojects.com/en/1.0.x/quickstart/) (Flask.pocoo.org)
+- Kod źródłowy samouczka w witrynie GitHub: [Microsoft/Python-Sample-vs-Learning-Kolba](https://github.com/Microsoft/python-sample-vs-learning-flask)

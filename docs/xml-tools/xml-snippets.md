@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f2bcdd0c28d7b4b99c92d3346b32ed34aa92a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592324"
 ---
 # <a name="xml-snippets"></a>Fragmenty kodu XML
@@ -21,7 +21,7 @@ Edytor XML oferuje funkcję, nazywaną *fragmentami kodu XML*, która umożliwia
 
 ## <a name="reusable-xml-snippets"></a>Fragmenty kodu XML wielokrotnego użytku
 
-Edytor XML zawiera wiele fragmentów kodu, które obejmują niektóre typowe zadania. Dzięki temu można łatwiej tworzyć pliki XML. Na przykład jeśli tworzysz schemat XML przy użyciu fragmentów "element sekwencji typu złożonego" i "element typu prostego", wstawi następujący tekst XML do pliku. Następnie należy zmienić wartość `name` tak, aby odpowiadała Twoim potrzebom.
+Edytor XML zawiera wiele fragmentów kodu, które obejmują niektóre typowe zadania. Dzięki temu można łatwiej tworzyć pliki XML. Na przykład jeśli tworzysz schemat XML przy użyciu fragmentów "element sekwencji typu złożonego" i "element typu prostego", wstawi następujący tekst XML do pliku. Następnie należy zmienić `name` wartość tak, aby odpowiadała Twoim potrzebom.
 
 ```xml
 <xs:element name="name">
@@ -49,7 +49,7 @@ Edytor XML umożliwia również generowanie fragmentu kodu XML na podstawie sche
 
 Oprócz fragmentów kodu, które są domyślnie dołączone do programu Visual Studio, można również tworzyć własne fragmenty kodu XML i korzystać z nich. Aby uzyskać więcej informacji, zobacz [How to: Create XML defragments](../xml-tools/how-to-create-xml-snippets.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu w programie Visual Studio](../ide/code-snippets.md)
 - [Edytor XML](../xml-tools/xml-editor.md)

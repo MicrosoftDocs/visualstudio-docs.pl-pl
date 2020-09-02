@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Porównywanie plików danych dotyczących wydajności | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Porównywanie plików danych dotyczących wydajności | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,47 +15,47 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185936"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Instrukcje: Porównywanie plików danych wydajności
+# <a name="how-to-compare-performance-data-files"></a>Instrukcje: Porównywanie plików danych dotyczących wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz porównać wyniki dwa pliki danych różnych profiler (.vsp lub .vsps), tworząc raport porównawczy ("Diff") lub widoku. Porównanie przedstawiono różnice największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego.  
+Wyniki dwóch różnych plików danych profilera (. vsp lub. vsps) można porównać, tworząc porównanie ("diff") raportu lub widoku. Porównanie pokazuje różnice, regresje wydajności i ulepszenia, które wystąpiły w jednej sesji profilowania.  
   
- Raport Diff przedstawia widok tabeli danych. W tabeli przedstawiono, różnicowej lub zmiana z linii bazowej. To jest obliczana przez określenie różnicy starej wartości, wartość punktu odniesienia i wartość wyniku z nowego analizy.  
+ Raport diff przedstawia widok tabeli danych. W tabeli przedstawiono różnice lub zmiany z linii bazowej. Jest to obliczane przez określenie różnicy między starą wartością, wartością bazową i wartością wyniku z nowej analizy.  
   
- Porównywanie danych profilera może bazować na funkcje w kodzie, moduły w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.  
+ Porównania danych profilera mogą opierać się na funkcjach w kodzie, modułach w aplikacji, wierszach, wskaźnikach instrukcji (IP) i typach.  
   
- Próg można ustawić do zmniejszenia szumu i odfiltrować wszystkie dane w widoku tabeli wiersze, które nie uległy zmianie o określoną wartość.  
+ Próg można ustawić w celu zmniejszenia szumu i odfiltrowania danych w widoku tabeli wierszy, które nie uległy zmianie o określoną wartość.  
   
-### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Aby utworzyć widok pliku porównania dla projektu w Eksploratorze wydajności  
+### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Aby utworzyć widok pliku porównania dla projektu w Eksplorator wydajności  
   
-1. W **Eksplorator wydajności**w obszarze **raporty**, wybierz plik .vsp lub .vsps raport, który chcesz użyć jako wartości linii bazowej do porównania.  
+1. W **Eksplorator wydajności**w obszarze **raporty**wybierz plik raportu. vsp lub. vsps, który ma być używany jako wartości odniesienia do porównania.  
   
-2. Wybierz pliki .vsp lub .vsps raportów, które chcesz porównać.  
+2. Wybierz pliki raportów VSP lub vsps, które chcesz porównać.  
   
-3. Kliknij prawym przyciskiem myszy jeden z wybranych plików, a następnie kliknij przycisk **raporty porównaj**.  
+3. Kliknij prawym przyciskiem myszy jeden z wybranych plików, a następnie kliknij polecenie **PORÓWNAJ raporty**.  
   
-### <a name="to-compare-values"></a>Do porównywania wartości  
+### <a name="to-compare-values"></a>Aby porównać wartości  
   
-1. Wybierz **raport porównawczy** karta w oknie widoku raportu.  
+1. Wybierz kartę **raport porównawczy** w oknie widok raportu.  
   
-2. W **tabeli** listy rozwijanej wybierz funkcję lub moduły do porównania.  
+2. Z listy rozwijanej **tabela** wybierz jedną z funkcji lub modułów do porównania.  
   
-3. W **kolumny** listy rozwijanej wybierz wartość, którą chcesz porównać.  
+3. Z listy rozwijanej **kolumna** wybierz wartość, którą chcesz porównać.  
   
-4. (opcjonalnie) Wpisz wartość dla **próg**.  
+4. obowiązkowe Wpisz wartość **progu**.  
   
-5. Kliknij przycisk **zastosować**.  
+5. Kliknij przycisk **Zastosuj**.  
   
-### <a name="to-compare-report-files"></a>Porównywanie plików raportów  
+### <a name="to-compare-report-files"></a>Aby porównać pliki raportów  
   
-1. Na **analizy** menu, wybierz opcję **Porównaj wydajność raportów**.  
+1. W menu **Analizuj** wybierz opcję **PORÓWNAJ raporty wydajności**.  
   
-2. W **wybierz pliki analizy porównanie** okien, przeglądania i wybierz **plik punktu odniesienia** pliku analizy (.vsp lub .vsps) i **plik do porównania** (.vsp lub .vsps).  
+2. W oknie **Wybieranie plików analizy do porównania** Przeglądaj i wybierz plik analizy **pliku bazowego** (. vsp lub. vsps) i **plik porównania** (. vsp lub. vsps).  
   
 3. Kliknij przycisk **OK**.

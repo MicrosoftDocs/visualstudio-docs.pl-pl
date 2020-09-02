@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 04d64ac489858e3a912b144b494430aec5b925d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197050"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Umożliwia to aparat debugowania, który używa modelu DCOM poprosić [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] interfejsu użytkownika, aby upewnić się, że Zapora nie blokuje debugowanie zdalne.  
+Umożliwia aparatowi debugowania korzystającemu z modelu DCOM zaproszenie [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] interfejsu użytkownika, aby upewnić się, że Zapora nie blokuje zdalnego debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,18 +29,18 @@ IDebugFirewallConfigurationCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Implementowany przez obiekt portów Menedżer debugowania sesji.  
+ Zaimplementowane przez obiekt port Menedżera debugowania sesji.  
   
 ## <a name="methods"></a>Metody  
- W poniższej tabeli przedstawiono metody `IDebugFirewallConfigurationCallback2`.  
+ W poniższej tabeli przedstawiono metody `IDebugFirewallConfigurationCallback2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[EnsureDCOMUnblocked](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2-ensuredcomunblocked.md)|Żądania, że Zapora nie blokuje debugowanie zdalne.|  
+|[EnsureDCOMUnblocked](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2-ensuredcomunblocked.md)|Żąda, aby zapora nie blokowała zdalnego debugowania.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

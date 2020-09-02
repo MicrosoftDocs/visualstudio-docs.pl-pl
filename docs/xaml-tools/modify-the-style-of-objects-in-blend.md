@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592953"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modyfikowanie stylu obiektów w Blend for Visual Studio
@@ -47,9 +47,9 @@ Utwórz pędzel wizualny na podstawie kontrolki, takiej jak Button. Na poniższy
 
 Możesz zaprojektować wygląd i zachowanie kontrolki jeden raz i zastosować ten projekt do innych kontrolek, aby nie trzeba było ich obsługiwać osobno.
 
-Czy używasz **stylu?** : Jeśli chcesz po prostu ustawić właściwości domyślne (takie jak kolor przycisku), użyj *stylu*. Formant można modyfikować nawet po zastosowaniu stylu do niego.
+Czy używasz **stylu?**: Jeśli chcesz po prostu ustawić właściwości domyślne (takie jak kolor przycisku), użyj *stylu*. Formant można modyfikować nawet po zastosowaniu stylu do niego.
 
-Czy używasz **szablonu?** : Jeśli chcesz zmienić strukturę kontrolki, użyj *szablonu*. Załóżmy, że Konwertowanie grafiki lub logo na przycisk. Nie można modyfikować kontrolki po zastosowaniu szablonu do niego.
+Czy używasz **szablonu?**: Jeśli chcesz zmienić strukturę kontrolki, użyj *szablonu*. Załóżmy, że Konwertowanie grafiki lub logo na przycisk. Nie można modyfikować kontrolki po zastosowaniu szablonu do niego.
 
 ### <a name="create-a-template-or-style"></a>Tworzenie szablonu lub stylu
 
@@ -75,7 +75,7 @@ W oknie dialogowym **Tworzenie zasobu stylu** można nazwać styl lub szablon, a
 
 > [!NOTE]
 > Nie można tworzyć stylów ani szablonów dla każdego typu kontrolki. Jeśli kontrolka nie obsługuje tych funkcji, nie pojawi się nad obszarem kompozycji.
-> Aby powrócić do zakresu edycji dokumentu głównego, kliknij przycisk **Zwróć zakres do** ![zwrócić zakres do ikony](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Aby powrócić do zakresu edycji dokumentu głównego, kliknij przycisk **Zwróć zakres, aby** ![ zwrócić zakres do ikony ](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png) .
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Stosowanie stylu lub szablonu do kontrolki
 
@@ -85,7 +85,7 @@ W oknie [obiekty i oś czasu](../xaml-tools/creating-a-ui-by-using-blend-for-vis
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Przywracanie domyślnego stylu lub szablonu kontrolki
 
-Zaznacz kontrolkę, a następnie w oknie **właściwości** ** Znajdź właściwość **styl** lub **szablon** . Wybierz **Opcje zaawansowane**, a następnie w menu skrótów kliknij polecenie **Zresetuj** .
+Zaznacz kontrolkę, a następnie w oknie * * właściwości * * * * Znajdź właściwość **styl** lub **szablon** . Wybierz **Opcje zaawansowane**, a następnie w menu skrótów kliknij polecenie **Zresetuj** .
 
 ## <a name="visual-states"></a>Stany wizualne
 
@@ -93,7 +93,7 @@ Stany wizualne umożliwiają zmianę wyglądu kontrolki na podstawie jej stanu. 
 
 ![Wskaźnik myszy nad stanem](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Obejrzyj krótkie wideo:** przycisk ![Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zarządzaj stanem formantów WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Obejrzyj krótkie wideo:** ![ Przycisk odtwarzania ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zarządzaj stanem formantów WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Zasoby: Tworzenie kolorów, stylów i szablonów oraz ponowne używanie ich w przyszłości
 
@@ -101,6 +101,6 @@ Możesz skonwertować wszystko w projekcie do zasobu. Zasób jest tylko obiektem
 
 ![Przycisk konwersji koloru na zasób](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Okno dialogowe Tworzenie zasobu koloru](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

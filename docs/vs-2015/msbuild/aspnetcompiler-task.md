@@ -1,5 +1,5 @@
 ---
-title: AspNetCompiler Task | Microsoft Docs
+title: AspNetCompiler — — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,42 +20,42 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1267ddbb093f59eaa60fae0eef2d83f6b7ba2e24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187054"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`AspNetCompiler` Zadań opakowuje aspnet_compiler.exe, narzędzie wstępnej kompilacji [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji.  
+`AspNetCompiler`Zadanie zapakuje aspnet_compiler.exe, narzędzie do prekompilowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
  W poniższej tabeli opisano parametry `AspNetCompiler` zadania.  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AllowPartiallyTrustedCallers`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli ten parametr ma `true`,, zestawu o silnej nazwie umożliwi częściowo zaufanych wywołań.|  
-|`Clean`|Opcjonalnie `Boolean` parametru<br /><br /> Jeśli ten parametr jest `true`, zostanie utworzona czyszczenie wstępnie skompilowanej aplikacji. Wszystkie składniki skompilowane wcześniej zostaną ponownie skompilowane. Wartość domyślna to `false`. Ten parametr odnosi się do **- c** Włącz aspnet_compiler.exe.|  
-|`Debug`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli ten parametr jest `true`, informacje o debugowaniu (. Plik PDB) są emitowane podczas kompilacji. Wartość domyślna to `false`. Ten parametr odnosi się do **-d** Włącz aspnet_compiler.exe.|  
-|`DelaySign`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli ten parametr jest `true`, zestaw jest niecałkowicie podpisany podczas tworzenia.|  
-|`FixedNames`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli ten parametr jest `true`, skompilowanych zestawów będzie mieć stałe nazwy...|  
-|`Force`|Opcjonalnie `Boolean` parametru<br /><br /> Jeśli ten parametr jest `true`, zadania spowoduje zastąpienie katalog docelowy, jeśli już istnieje. Istniejąca zawartość zostanie utracona. Wartość domyślna to `false`. Ten parametr odnosi się do **-f** Włącz aspnet_compiler.exe.|  
-|`KeyContainer`|Opcjonalnie `String` parametru.<br /><br /> Określa kontener klucza silnej nazwy.|  
-|`KeyFile`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę fizyczną do pliku klucza silnej nazwy...|  
-|`MetabasePath`|Opcjonalnie `String` parametru.<br /><br /> Określa pełną ścieżkę metabazy usług IIS aplikacji. Ten parametr nie może być łączone z `VirtualPath` lub `PhysicalPath` parametrów. Ten parametr odnosi się do **-m** Włącz aspnet_compiler.exe.|  
-|`PhysicalPath`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę fizyczną aplikacji do skompilowania. Jeśli ten parametr jest Brak, metabazy usług IIS jest używana do lokalizowania aplikacji. Ten parametr odnosi się do **-p** Włącz aspnet_compiler.exe.|  
-|`TargetFrameworkMoniker`|Opcjonalnie `String` parametru.<br /><br /> Określa TargetFrameworkMoniker wskazujący, która wersja środowiska .NET Framework aspnet_compiler.exe należy używać. Akceptuje tylko krótkie nazwy .NET Framework.|  
-|`TargetPath`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę fizyczną, do której aplikacja jest kompilowana. Jeśli nie zostanie określony, aplikacja jest wstępnie skompilowaną w miejscu.|  
-|`Updateable`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli ten parametr jest `true`, wstępnie skompilowanej aplikacji będzie można aktualizować.  Wartość domyślna to `false`. Ten parametr odnosi się do **-u** Włącz aspnet_compiler.exe.|  
-|`VirtualPath`|Opcjonalnie `String` parametru.<br /><br /> Ścieżka wirtualna aplikacja jest kompilowana. Jeśli `PhysicalPath` określony, ścieżkę fizyczną jest używana do lokalizowania aplikacji. W przeciwnym razie metabazy usług IIS jest używana, a aplikacja będzie traktowana jako w domyślnej witrynie. Ten parametr odnosi się do **- v** Włącz aspnet_compiler.exe.|  
+|`AllowPartiallyTrustedCallers`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ten parametr ma wartość `true` , zestaw o silnej nazwie zezwoli częściowo zaufanym wywołującym.|  
+|`Clean`|`Boolean`Parametr opcjonalny<br /><br /> Jeśli ten parametr ma wartość `true` , prekompilowana aplikacja zostanie skompilowana jako oczyszczona. Wszystkie poprzednio skompilowane składniki zostaną ponownie skompilowane. Wartość domyślna to `false`. Ten parametr odnosi się do przełącznika **-c** w aspnet_compiler.exe.|  
+|`Debug`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ten parametr to `true` , informacje debugowania (. Plik PDB jest emitowany podczas kompilacji. Wartość domyślna to `false`. Ten parametr odnosi się do przełącznika **-d** na aspnet_compiler.exe.|  
+|`DelaySign`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ten parametr ma wartość `true` , zestaw nie jest w pełni podpisany podczas tworzenia.|  
+|`FixedNames`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ten parametr ma wartość `true` , skompilowane zestawy będą mieć stałe nazwy..|  
+|`Force`|`Boolean`Parametr opcjonalny<br /><br /> Jeśli ten parametr ma wartość `true` , zadanie zastąpi katalog docelowy, jeśli już istnieje. Istniejąca zawartość zostanie utracona. Wartość domyślna to `false`. Ten parametr odnosi się do przełącznika **-f** na aspnet_compiler.exe.|  
+|`KeyContainer`|Opcjonalny `String` parametr.<br /><br /> Określa kontener klucza o silnej nazwie.|  
+|`KeyFile`|Opcjonalny `String` parametr.<br /><br /> Określa ścieżkę fizyczną do pliku klucza o silnej nazwie.|  
+|`MetabasePath`|Opcjonalny `String` parametr.<br /><br /> Określa pełną ścieżkę metabazy usług IIS aplikacji. Ten parametr nie może być połączony z `VirtualPath` `PhysicalPath` parametrami lub. Ten parametr odnosi się do przełącznika **-m** na aspnet_compiler.exe.|  
+|`PhysicalPath`|Opcjonalny `String` parametr.<br /><br /> Określa ścieżkę fizyczną aplikacji do skompilowania. Jeśli brakuje tego parametru, metabaza IIS jest używana do lokalizowania aplikacji. Ten parametr odnosi się do przełącznika **-p** na aspnet_compiler.exe.|  
+|`TargetFrameworkMoniker`|Opcjonalny `String` parametr.<br /><br /> Określa TargetFrameworkMoniker wskazujący, która .NET Framework wersja aspnet_compiler.exe powinna być używana. Akceptuje tylko monikery .NET Framework.|  
+|`TargetPath`|Opcjonalny `String` parametr.<br /><br /> Określa ścieżkę fizyczną, do której aplikacja jest kompilowana. Jeśli nie zostanie określony, aplikacja jest wstępnie skompilowana w miejscu.|  
+|`Updateable`|Opcjonalny `Boolean` parametr.<br /><br /> Jeśli ten parametr ma wartość `true` , prekompilowana aplikacja zostanie zaktualizowana.  Wartość domyślna to `false`. Ten parametr odnosi się do przełącznika **-u** na aspnet_compiler.exe.|  
+|`VirtualPath`|Opcjonalny `String` parametr.<br /><br /> Ścieżka wirtualna aplikacji do skompilowania. Jeśli `PhysicalPath` Ta wartość jest określona, ścieżka fizyczna jest używana do lokalizowania aplikacji. W przeciwnym razie zostanie użyta metabaza IIS, a aplikacja zostanie przyjęta jako witryna domyślna. Ten parametr odnosi się do przełącznika **-v** na aspnet_compiler.exe.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu wykorzystuje `AspNetCompiler` zadania wstępnej kompilacji [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji.  
+ Poniższy przykład kodu używa `AspNetCompiler` zadania do prekompilowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -72,5 +72,5 @@ ms.locfileid: "68187054"
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zadania](../msbuild/msbuild-tasks.md)   
+ [Widoku](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

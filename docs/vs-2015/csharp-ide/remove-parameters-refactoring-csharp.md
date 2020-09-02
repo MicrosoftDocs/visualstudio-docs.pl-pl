@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40c373c3575f007952143e29c8dfc2cfac3d080f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667494"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refaktoryzacja usuwania parametrów (C#)
@@ -29,14 +29,14 @@ ms.locfileid: "72667494"
 
 `Remove Parameters` jest operacją refaktoryzacji, która zapewnia łatwy sposób usuwania parametrów z metod, indeksatorów lub delegatów. Usuwanie parametrów powoduje zmianę deklaracji; w każdym miejscu, w którym jest wywoływana składowa, parametr zostanie usunięty w celu odzwierciedlenia nowej deklaracji.
 
- Aby wykonać operację usuwania parametrów, należy najpierw pozycjonować kursor w metodzie, indeksatorze lub delegacie. Gdy kursor znajduje się na pozycji, aby wywołać operację Usuń `Parameters`, kliknij menu **refaktoryzacji** , naciśnij skrót klawiaturowy lub wybierz polecenie z menu skrótów.
+ Aby wykonać operację usuwania parametrów, należy najpierw pozycjonować kursor w metodzie, indeksatorze lub delegacie. Gdy kursor znajduje się na pozycji, aby wywołać operację usuwania `Parameters` , kliknij menu **Refaktoryzacja** , naciśnij skrót klawiaturowy lub wybierz polecenie z menu skrótów.
 
 > [!NOTE]
 > Nie można usunąć pierwszego parametru w metodzie rozszerzenia.
 
 ### <a name="to-remove-parameters"></a>Aby usunąć parametry
 
-1. Utwórz aplikację konsolową o nazwie `RemoveParameters`, a następnie zastąp `Program` poniższym kodem.
+1. Utwórz aplikację konsolową o nazwie `RemoveParameters` , a następnie zastąp ciąg `Program` poniższym kodem.
 
     ```csharp
     class A
@@ -55,7 +55,7 @@ ms.locfileid: "72667494"
     }
     ```
 
-2. Umieść kursor w metodzie `A`, w deklaracji metody lub wywołaniu metody.
+2. Umieść kursor w metodzie `A` w deklaracji metody lub wywołaniu metody.
 
 3. Z menu **refaktoryzacji** wybierz pozycję **Usuń parametry** , aby wyświetlić okno dialogowe **Usuwanie parametrów** .
 
@@ -63,7 +63,7 @@ ms.locfileid: "72667494"
 
      Możesz również kliknąć prawym przyciskiem myszy kursor, wskazać polecenie **Refaktoryzacja**, a następnie kliknąć polecenie **Usuń parametry** , aby wyświetlić okno dialogowe **Usuwanie parametrów** .
 
-4. Korzystając z pola **Parametry** , umieść kursor na `int i`, a następnie kliknij przycisk **Usuń**.
+4. Za pomocą pola **Parametry** , umieść kursor na `int i` , a następnie kliknij przycisk **Usuń**.
 
 5. Kliknij przycisk **OK**.
 
@@ -81,13 +81,13 @@ ms.locfileid: "72667494"
 MyMethod(param1++, param2);
 ```
 
- na
+ na wartość
 
 ```csharp
 MyMethod(param2);
 ```
 
- w wyniku operacji refaktoryzacji `param1` nie zostanie zwiększona.
+ w wyniku operacji refaktoryzacji `param1` nie będą zwiększane.
 
 ## <a name="see-also"></a>Zobacz też
  [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md)

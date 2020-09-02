@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79d865a426af2c089bfcc6bd1e733b4ecc185077
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592285"
 ---
 # <a name="the-xslt-profiler"></a>Profiler XSLT
@@ -30,7 +30,7 @@ Profiler XSLT jest częścią programu Visual Studio i jest dostępny w menu **X
 
 1. Otwórz dokument XSLT w programie Visual Studio.
 
-2. Na pasku menu wybierz pozycję **XML** > **profil XSLT**.
+2. Na pasku menu wybierz pozycję **XML**  >  **profil XSLT**.
 
 3. Podaj wejściowy dokument XML. Jeśli dokument XML nie jest jeszcze otwarty, zostanie wyświetlony monit o podanie pliku.
 
@@ -64,7 +64,7 @@ Profiler XSLT jest częścią programu Visual Studio i jest dostępny w menu **X
 
     - **Czas wyłączny aplikacji**
 
-    - **Liczba wywołań**
+    - **Liczba połączeń**
 
    Wszystkie kolumny czasu są wyświetlane zarówno jako wartości bezwzględne, jak i procentowe. **Termin ten** odnosi się do łącznego czasu, przez który funkcja wykorzystała z innych funkcji wywoływanych podczas wykonywania tej funkcji.
 
@@ -80,7 +80,7 @@ Wybierz widok **wywołujący/wywoływany** w **bieżącym widoku** listy rozwija
 
 - **Funkcje, które zostały wywołane przez**: wszystkie funkcje, które zostały wywołane przez określoną funkcję, są wyświetlane w dolnej części widoku.
 
-Jeśli funkcja o nazwie `SyncToNavigator` pojawia się w środkowej części widoku, wszystkie funkcje, które wywołały funkcję `SyncToNavigator`, pojawiają się w górnej części widoku, a wszystkie funkcje, które zostały wywołane przez `SyncToNavigator` pojawiają się w dolnej części widoku.
+Jeśli funkcja o nazwie `SyncToNavigator` pojawia się w środkowej części widoku, wszystkie funkcje, które wywołały `SyncToNavigator` funkcję, pojawiają się w górnej części widoku, a wszystkie funkcje, które zostały wywołane przez `SyncToNavigator` pojawiają się w dolnej części widoku.
 
 - Funkcję można zmienić w środkowej części widoku przez dwukrotne kliknięcie dowolnej z funkcji wymienionych w pozostałych dwóch częściach widoku. Widok zostanie następnie zaktualizowany, aby odzwierciedlić zmiany automatycznie.
 
@@ -106,6 +106,6 @@ Jeśli funkcja o nazwie `SyncToNavigator` pojawia się w środkowej części wid
 
    Widok procesu przedstawia tabelę zawierającą **Identyfikator procesu**, **nazwę procesu**, **godzinę rozpoczęcia**i **godzinę zakończenia**. Dane można sortować, klikając pozycję nazwy kolumn.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: używanie hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

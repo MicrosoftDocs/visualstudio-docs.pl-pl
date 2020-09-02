@@ -1,5 +1,5 @@
 ---
-title: Daszek osi czasu | Dokumentacja firmy Microsoft
+title: Daszek osi czasu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72e77cfbfcc8a959dd26d4c3fbc1bf633cd9f00e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145513"
 ---
 # <a name="timeline-caret"></a>Daszek osi czasu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po wybraniu punktu na osi czasu wykonywania segment wątku, daszek osi czasu pojawi się nad nim. Stos wywołań, który jest wyświetlany na karcie bieżącego stosu jest ten, który znajduje się najbliżej w czasie gdy kliknięto przycisk segmentu. Służy do kojarzenia stos wywołań, który jest wyświetlany w obszarze karetkę **bieżącego** kartę za pomocą natychmiastowe jego był wtedy próbkowany. Daszek funkcja pokaże dokładną lokalizację stos wywołań, czyli najbliższy stos wywołań do lokalizacji określonej przez wybrany przez użytkownika.  
+Po wybraniu punktu na osi czasu wykonywanego segmentu wątku zostanie umieszczony znak daszka na osi czasu. Stos wywołań, który jest wyświetlany na bieżącej karcie stosu, jest taki, który jest najbliższy w czasie, w którym kliknięto segment. Karetka służy do kojarzenia stosu wywołań, który jest wyświetlany na **bieżącej** karcie, z chwilą, gdy był próbkowany. Karetka pokazuje dokładną lokalizację stosu wywołań, który jest najbliższym stosem wywołań do lokalizacji wybranej przez użytkownika.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

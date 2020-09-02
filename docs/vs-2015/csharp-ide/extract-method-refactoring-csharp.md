@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e6d5e7913a7433fd4b30da490f33dd614c3e2b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667547"
 ---
 # <a name="extract-method-refactoring-c"></a>Refaktoryzacja wyodrębniania metody (C#)
@@ -44,7 +44,7 @@ ms.locfileid: "72667547"
 
 ### <a name="to-use-extract-method"></a>Aby użyć metody Extract
 
-1. Utwórz aplikację konsolową o nazwie `ExtractMethod`, a następnie zastąp `Program` następującym przykładowym kodem.
+1. Utwórz aplikację konsolową o nazwie `ExtractMethod` , a następnie zastąp ciąg `Program` następującym przykładowym kodem.
 
     ```csharp
     class A
@@ -82,7 +82,7 @@ ms.locfileid: "72667547"
 
      Możesz również kliknąć prawym przyciskiem myszy wybrany kod, wskazać polecenie **Refaktoryzacja**, a następnie kliknąć polecenie **Wyodrębnij metodę** , aby wyświetlić okno dialogowe **Wyodrębnij metodę** .
 
-4. Określ nazwę nowej metody, na przykład `CircleArea`, w polu **Nowa nazwa metody** .
+4. Określ nazwę nowej metody, `CircleArea` na przykład, w polu **Nowa nazwa metody** .
 
      Wersja zapoznawcza nowego podpisu metody zostanie wyświetlona w sekcji **Podgląd sygnatury metody**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "72667547"
  Jeśli klasa jest typem częściowym, **Metoda Extract** generuje nową metodę bezpośrednio po źródłowym elemencie członkowskim. **Metoda Extract** określa sygnaturę nowej metody, tworząc metodę statyczną, gdy kod w nowej metodzie nie odwołuje się do danych wystąpienia.
 
 ## <a name="generic-type-parameters"></a>Parametry typu ogólnego
- W przypadku wyodrębnienia metody, która ma nieograniczenie parametru typu ogólnego, wygenerowany kod nie doda modyfikatora `ref` do tego parametru, chyba że zostanie przypisana wartość. Jeśli wyodrębniona Metoda będzie obsługiwać typy odwołań jako argument typu ogólnego, należy ręcznie dodać modyfikator `ref` do parametru w podpisie metody.
+ W przypadku wyodrębnienia metody, która ma parametr typu ogólnego nieograniczonego, wygenerowany kod nie dodaje `ref` modyfikatora do tego parametru, chyba że zostanie przypisana wartość. Jeśli wyodrębniona Metoda będzie obsługiwać typy odwołań jako argument typu ogólnego, należy ręcznie dodać `ref` modyfikator do parametru w podpisie metody.
 
 ## <a name="anonymous-methods"></a>Metody anonimowe
  Jeśli spróbujesz wyodrębnić część metody anonimowej, która zawiera odwołanie do zmiennej lokalnej, która jest zadeklarowana lub przywoływana poza metodą anonimową, program Visual Studio wyświetli ostrzeżenie o potencjalnych zmianach semantycznych.
