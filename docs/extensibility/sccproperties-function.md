@@ -1,5 +1,5 @@
 ---
-title: Funkcja właściwości SccProperties | Dokumenty firmy Microsoft
+title: Funkcja SccProperties | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bf2dd87efbb50346093144db6e069eea30138e37
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700508"
 ---
 # <a name="sccproperties-function"></a>SccProperties, funkcja
-Ta funkcja wyświetla właściwości formantu źródła dla pliku lub projektu.
+Ta funkcja wyświetla właściwości kontroli źródła dla pliku lub projektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,32 +35,32 @@ SCCRTN SccProperties (
 #### <a name="parameters"></a>Parametry
  pvContext
 
-[w] Struktura kontekstu wtyczki formantu źródła.
+podczas Struktura kontekstu wtyczki kontroli źródła.
 
- Hwnd
+ Właściwość
 
-[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
+podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
 
  lpFileName
 
-[w] W pełni kwalifikowana nazwa ścieżki pliku lub projektu.
+podczas W pełni kwalifikowana nazwa ścieżki pliku lub projektu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_OK|Właściwości zostały pomyślnie wyświetlone.|
 |SCC_I_RELOADFILE|System kontroli wersji zmodyfikował właściwości pliku, więc IDE powinien ponownie załadować ten plik.|
 |SCC_E_PROJNOTOPEN|Określony projekt nie został otwarty w kontroli źródła.|
-|SCC_E_NOTAUTHORIZED|Użytkownik nie jest upoważniony do wyświetlania właściwości tego pliku lub projektu.|
-|SCC_E_FILENOTCONTROLLED|Określony plik lub projekt nie jest pod kontrolą źródła.|
+|SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do wyświetlania właściwości tego pliku lub projektu.|
+|SCC_E_FILENOTCONTROLLED|Określony plik lub projekt nie znajduje się pod kontrolą źródła.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Wystąpił nieznany lub ogólny błąd.|
 
 ## <a name="remarks"></a>Uwagi
- Wtyczka formantu źródła wyświetla właściwości we własnym oknie dialogowym.
+ Wtyczka do kontroli źródła wyświetla właściwości w osobnym oknie dialogowym.
 
- Właściwości są definiowane przez wtyczkę kontroli źródła i mogą się różnić od wtyczki do wtyczki. Jeśli dodatek umożliwia użytkownikowi zmianę właściwości kontroli źródła pliku, należy powrócić `SCC_I_RELOAD` do sygnalizowania IDE, że ten plik lub projekt musi zostać ponownie załadowany.
+ Właściwości są definiowane przez wtyczkę kontroli źródła i mogą się różnić od wtyczki do wtyczki. Jeśli wtyczka zezwala użytkownikowi na zmianę właściwości kontroli źródła pliku, powinien zwrócić `SCC_I_RELOAD` sygnał, aby SYGNALIZOWAĆ IDE, że ten plik lub projekt musi zostać ponownie załadowany.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do rozszerzalności debugera | Dokumentacja firmy Microsoft
+title: Wprowadzenie z rozszerzalnością debugera | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,41 +13,41 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152699"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Wprowadzenie do rozszerzalności debugera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Udostępnia informacje niezbędne do tworzenia i dostosowywania składniki debugera, używane do debugowania programów z poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] środowiska.  
+[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]Zawiera informacje, które należy wykonać, aby utworzyć i dostosować składniki debugera używane do debugowania programów z poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] środowiska.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowanie dodano ulepszenia pochodną użyteczność obszerne testy wykonywane na poprzednim [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugery. Możesz użyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowania do kroku za pośrednictwem aplikacji wielojęzycznych, lub można zaimplementować na bieżąco edytowanie zmiennych podczas debugowania aplikacji i rozwiązań dla wielu języków.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugowanie dodaliśmy ulepszenia wynikające z rozbudowanych testów użyteczności wykonanych na wcześniejszych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugerach. Debugowania można użyć [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do przechodzenia przez aplikację z obsługą wielu języków lub podczas debugowania aplikacji i rozwiązań wielojęzycznych.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowanie jest wykonywany poza procesem z debugowanego i dlatego ta opcja jest mniej pożądana w przestrzeni procesu aplikacji. W związku z tym łatwiej jest zapis składników współdziałających z debugerem bez wywierania wpływu na debugowania programu.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugowanie jest wykonywane poza procesem z debugowanym programem i w związku z tym jest mniej niepożądane w przestrzeni procesu aplikacji. W związku z tym łatwiej jest pisać składniki, które współdziałają z debugerem bez wpływu na program do debugowania.  
   
- Aby optymalnie wykorzystać [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], należy zapoznać się z następujących czynności:  
+ Aby najlepiej korzystać z programu [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] , należy zapoznać się z następującymi kwestiami:  
   
-- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Zintegrowanego środowiska programistycznego (IDE)  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Zintegrowane środowisko programistyczne (IDE)  
   
-- Język programowania w języku C++  
+- Język programowania C++  
   
 - ATL COM  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Plan rozwoju rozszerzania debugera](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
- Zawiera opis procesu wdrażania, debugowanie w programie, w zależności od kompilatora i jego dane wyjściowe.  
+ Przedstawia proces implementowania debugowania w produkcie, w zależności od kompilatora i jego danych wyjściowych.  
   
  [Składniki debugera](../../extensibility/debugger/debugger-components.md)  
- Zawiera omówienie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowanie składników, które obejmują aparat debugowania (DE), Ewaluator wyrażeń (EE) i obsługi symboli (SH).  
+ Zawiera omówienie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] składników debugowania, takich jak aparat debugowania (de), ewaluatora wyrażeń (EE) i procedura obsługi symboli (SH).  
   
  [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)  
- W tym artykule opisano główne pojęcia dotyczące architektury debugowania.  
+ Opisuje główne koncepcje dotyczące architektury debugowania.  
   
  [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)  
- W tym artykule wyjaśniono, jak aparat debugowania (DE) działa jednocześnie w ramach kodu, dokumentację i konteksty oceny wyrażenia. W tym artykule opisano, dla każdego z trzech kontekstów, lokalizacji, pozycja lub oceny odpowiednie do niego.  
+ Wyjaśnia, w jaki sposób aparat debugowania (DE) działa jednocześnie w kontekście kodu, dokumentacji oraz kontekstów oceny wyrażenia. Opisuje, dla każdego z trzech kontekstów, lokalizacji, pozycji lub oceny, które są dla niego odpowiednie.  
   
  [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)  
- Zawiera łącza do różnych zadań debugowania, takie jak uruchamianie programu i wyrażeń.
+ Zawiera linki do różnych zadań debugowania, takich jak uruchamianie programu i ocenianie wyrażeń.

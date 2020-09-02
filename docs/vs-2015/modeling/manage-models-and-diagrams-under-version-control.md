@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30b13610cc59b8a0225e52abf47f9a4f2cc97d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657579"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Zarządzanie modelami i diagramami w ramach kontroli wersji
@@ -28,7 +28,7 @@ Zarządzanie różnymi wersjami projektów i diagramów modelowania, w tym mapy 
 > [!IMPORTANT]
 > Należy zachować ostrożność, gdy kilku użytkowników pracuje nad tym samym projektem modelowania. Dowiedz się, w jaki sposób można [organizować modele w średnich lub dużych projektach](../modeling/structure-your-modeling-solution.md).
 
-## <a name="ModelingProjects"></a>Pliki w projekcie modelowania
+## <a name="files-in-a-modeling-project"></a><a name="ModelingProjects"></a> Pliki w projekcie modelowania
  Więcej niż jeden użytkownik może korzystać z projektu modelowania w tym samym czasie, pod warunkiem, że działają na różnych plikach.
 
  Aby uniknąć lub rozwiązać konflikty między zmianami wprowadzonymi przez różnych użytkowników, ważne jest, aby zrozumieć, jak model jest przechowywany w plikach.
@@ -42,9 +42,9 @@ Zarządzanie różnymi wersjami projektów i diagramów modelowania, w tym mapy 
   - **DiagramName. classdiagram. layout** — Jeśli ten plik zostanie usunięty, nadal będzie wyświetlany diagram, ale utracisz swoje rozmiary i położenia. Każdy plik układu jest zależny od pliku diagramu. Aby je wyświetlić, kliknij [+] obok pliku diagramu w Eksplorator rozwiązań.
 
 > [!NOTE]
-> Ważne jest, aby zachować spójność plików. Na przykład w przypadku korzystania z kontroli źródła w celu wycofania zmian w pliku. UML należy wycofać odpowiednie zmiany w plikach diagramu i układu. Elementy reprezentowane w. plik \*diagram zostanie utracony, jeśli nie są również reprezentowane w pliku. UML.
+> Ważne jest, aby zachować spójność plików. Na przykład w przypadku korzystania z kontroli źródła w celu wycofania zmian w pliku. UML należy wycofać odpowiednie zmiany w plikach diagramu i układu. Elementy reprezentowane w. \* plik diagramu zostanie utracony, jeśli nie są one również reprezentowane w pliku. UML.
 
-## <a name="Shared"></a>Praca nad udostępnionymi projektami modelowania
+## <a name="working-on-shared-modeling-projects"></a><a name="Shared"></a> Praca nad udostępnionymi projektami modelowania
  Aby zminimalizować konflikty między współbieżną pracy w różnych częściach projektu:
 
 - Podziel projekt modelowania na pakiety reprezentujące różne obszary pracy. Przenieś cały model do pakietów zamiast opuszczania go w modelu głównym. Aby uzyskać więcej informacji, zobacz [Definiowanie pakietów i przestrzeni nazw](../modeling/define-packages-and-namespaces.md).
@@ -61,7 +61,7 @@ Zarządzanie różnymi wersjami projektów i diagramów modelowania, w tym mapy 
 
 - Aby ułatwić śledzenie pakietów, Zmień nazwę plików pakietu, aby odzwierciedlały rzeczywiste nazwy pakietów.
 
-- W [!INCLUDE[esprscc](../includes/esprscc-md.md)] zawsze **sprawdzaj** i **Pobieraj najnowsze wersje** na pełnym projekcie modelowania, nigdy nie na pojedynczych plikach.
+- W programie [!INCLUDE[esprscc](../includes/esprscc-md.md)] zawsze **sprawdzaj** i **Pobieraj najnowsze wersje** na pełnym projekcie modelowania, nigdy nie na pojedynczych plikach.
 
 - Zawsze należy wykonać operację **pobrania** bezpośrednio przed zaewidencjonowaniem projektu modelowania.
 
@@ -70,7 +70,7 @@ Zarządzanie różnymi wersjami projektów i diagramów modelowania, w tym mapy 
     > [!NOTE]
     > Jeśli po wykonaniu operacji **Get**plik jest otwarty, a operacja spowoduje wprowadzenie zmian lokalnych, zostanie wyświetlony monit o ponowne załadowanie pliku. W takim przypadku kliknij przycisk **nie**, a następnie ponownie załaduj cały projekt. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu modelowania, kliknij polecenie **Zwolnij projekt**, a następnie kliknij polecenie **Załaduj ponownie projekt**.
 
-### <a name="Exclusive"></a>Zmiany wymagające wyłącznego dostępu do modelu
+### <a name="changes-requiring-exclusive-access-to-the-model"></a><a name="Exclusive"></a> Zmiany wymagające wyłącznego dostępu do modelu
  Przed wprowadzeniem następujących rodzajów zmian upewnij się, że masz blokadę wyewidencjonowania dla całego projektu.
 
 - Zmiana nazwy lub usuwanie elementów, do których odwołuje się inne pakiety.
@@ -96,8 +96,8 @@ Zarządzanie różnymi wersjami projektów i diagramów modelowania, w tym mapy 
     > [!NOTE]
     > Nie można przenieść pliku do innego projektu.
 
-## <a name="Merging"></a>Scalanie zmian w plikach i diagramach modelu
- Gdy więcej niż jeden użytkownik pracował nad modelem jednocześnie, [!INCLUDE[esprscc](../includes/esprscc-md.md)] wyświetli monit o scalenie zmian w plikach modelu. Praca nad oddzielnymi projektami, zgodnie z opisem w poprzednich sekcjach, spowoduje uniknięcie większości scaleń. Zazwyczaj pozostałe konflikty mogą być bezpiecznie scalane automatycznie. Następujące rodzaje zmian nie powinny mieć żadnego trudności:
+## <a name="merging-changes-in-model-files-and-diagrams"></a><a name="Merging"></a> Scalanie zmian w plikach i diagramach modelu
+ Gdy więcej niż jeden użytkownik pracował nad modelem jednocześnie, program [!INCLUDE[esprscc](../includes/esprscc-md.md)] wyświetli monit o scalenie zmian w plikach modelu. Praca nad oddzielnymi projektami, zgodnie z opisem w poprzednich sekcjach, spowoduje uniknięcie większości scaleń. Zazwyczaj pozostałe konflikty mogą być bezpiecznie scalane automatycznie. Następujące rodzaje zmian nie powinny mieć żadnego trudności:
 
 - Typy linii życia. Po dodaniu linii życia do interakcji (diagramu sekwencji) jego typ jest przechowywany w modelu głównym, chyba że utworzono linię życia z istniejącego typu.
 

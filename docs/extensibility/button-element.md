@@ -1,5 +1,5 @@
 ---
-title: Element przycisku | Dokumenty firmy Microsoft
+title: Button — element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739930"
 ---
-# <a name="button-element"></a>Element przycisku
-Definiuje element, z który użytkownik może wchodzić w interakcje. Przyciski mogą być różnego rodzaju: Button, MenuButton i SplitDropDown.
+# <a name="button-element"></a>Button — element
+Definiuje element, z którym użytkownik może korzystać. Przyciski mogą być różnego rodzaju: Button, MenuButton i SplitDropDown.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,30 +39,30 @@ Definiuje element, z który użytkownik może wchodzić w interakcje. Przyciski 
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Identyfikator GUID|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|id|Wymagany. Identyfikator polecenia GUID/ID.|
-|priority|Element opcjonalny. Wartość liczbowa określająca priorytet.|
-|type|Element opcjonalny. Wyliczona wartość określająca rodzaj przycisku.<br /><br /> Jeśli nie podano, używa buttona.<br /><br /> Button<br /> Standardowe polecenie wyświetlane na paskach narzędzi (zazwyczaj jako przycisk ikony), menu i menu kontekstowe.<br /><br /> MenuButton<br /> Element menu, który nie wykonuje polecenia, ale tworzy inne menu.<br /><br /> SplitDropDown (SplitDropDown)<br /> Formanty, takie jak przyciski Cofnij i Ponawij na standardowym pasku narzędzi w programie Microsoft Word.|
-|Warunek|Element opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
+|identyfikator|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|
+|priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|
+|typ|Opcjonalny. Wartość wyliczana, która określa rodzaj przycisku.<br /><br /> Jeśli nie zostanie określona, używa przycisku.<br /><br /> Przycisk<br /> Standardowe polecenie, które pojawia się na paskach narzędzi (zazwyczaj jako przycisk ikony), menu i menu kontekstowe.<br /><br /> MenuButton<br /> Element menu, który nie wykonuje polecenia, ale tworzy inne menu.<br /><br /> SplitDropDown<br /> Kontrolki, takie jak przyciski Cofnij i wykonaj ponownie na standardowym pasku narzędzi w programie Microsoft Word.|
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element nadrzędny](../extensibility/parent-element.md)|Element opcjonalny. Element nadrzędny przycisku.|
-|[Element ikony](../extensibility/icon-element.md)|Element opcjonalny. Ikona skojarzona z przyciskiem.|
-|[Element flagi polecenia](../extensibility/command-flag-element.md)|Wymagany. Prawidłowe commandflag wartości dla Button są następujące.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - Dynamiczna niewidzialność<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> - NoCustomize<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> - Pict<br /><br /> - PostExec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> - Zmiany tekstu<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> - TextOnly|
-|[Element ciągów](../extensibility/strings-element.md)|Wymagany. Element [podrzędny ButtonText](../extensibility/buttontext-element.md) musi być zdefiniowany.|
+|[Element nadrzędny](../extensibility/parent-element.md)|Opcjonalny. Element nadrzędny przycisku.|
+|[Icon — element](../extensibility/icon-element.md)|Opcjonalny. Ikona skojarzona z przyciskiem.|
+|[Element flagi polecenia](../extensibility/command-flag-element.md)|Wymagany. Prawidłowe wartości CommandFlag dla przycisku są następujące.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> -Nodostosowywanie<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> — PICT<br /><br /> - PostExec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -TextOnly|
+|[Strings, element](../extensibility/strings-element.md)|Wymagany. Element podrzędny [ButtonText](../extensibility/buttontext-element.md) musi być zdefiniowany.|
 |Adnotacja|Opcjonalny komentarz.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element przycisków](../extensibility/buttons-element.md)|Elementy przycisku Grupy.|
+|[Element Buttons](../extensibility/buttons-element.md)|Elementy przycisków grup.|
 
 ## <a name="example"></a>Przykład
- Poniższy przykład definiuje przycisk w pliku *vsct.*
+ Poniższy przykład definiuje przycisk w pliku *. vsct* .
 
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -77,4 +77,4 @@ Definiuje element, z który użytkownik może wchodzić w interakcje. Przyciski 
  ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

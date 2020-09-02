@@ -1,5 +1,5 @@
 ---
-title: Element nazwy polecenia | Dokumenty firmy Microsoft
+title: CommandName — Element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739750"
 ---
-# <a name="commandname-element"></a>Element CommandName
-Element `CommandName` określa tekst wyświetlany w kategorii klawiatury w oknie dialogowym **Opcje** oraz na liście **Polecenia** w oknie dialogowym **Dostosowywanie.**
+# <a name="commandname-element"></a>CommandName, element
+`CommandName`Element Określa tekst, który pojawia się w kategorii klawiatury w oknie dialogowym **Opcje** , a na liście **polecenia** w oknie dialogowym **Dostosowywanie** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,7 +40,7 @@ Element `CommandName` określa tekst wyświetlany w kategorii klawiatury w oknie
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element ciągów](../extensibility/strings-element.md)|Grupuje elementy tekstowe, takie jak `ButtonText` i `CommandName`.|
+|[Strings, element](../extensibility/strings-element.md)|Grupuje elementy tekstowe, takie jak `ButtonText` i `CommandName` .|
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6816b7465b8a3271ec6ebc0db5046d76e60ec5b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657425"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
@@ -34,7 +34,7 @@ ms.locfileid: "72657425"
 
 Termin *tabela wyszukiwania* (nazywana czasem *powiązaniem wyszukiwania*) opisuje kontrolkę wyświetlającą informacje z jednej tabeli danych na podstawie wartości pola klucza obcego w innej tabeli. Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w oknie **źródła danych** na kontrolkę, która jest już powiązana z kolumną lub właściwością w powiązanej tabeli podrzędnej.
 
- Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w tabeli `Orders` zawiera `CustomerID`, który wskazuje, który klient złożył zamówienie. @No__t_0 jest kluczem obcym wskazującym rekord klienta w tabeli `Customers`. Po wyświetleniu listy zamówień z tabeli `Orders` może być konieczne wyświetlenie rzeczywistej nazwy klienta zamiast `CustomerID`. Ponieważ nazwa klienta znajduje się w tabeli `Customers`, należy utworzyć tabelę odnośników, aby wyświetlić nazwę klienta. Tabela wyszukiwania używa wartości `CustomerID` w rekordzie `Orders` do nawigowania po relacji i zwraca nazwę klienta.
+ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabeli zawiera element `CustomerID` wskazujący, który klient złożył zamówienie. `CustomerID`Jest kluczem obcym, który wskazuje rekord klienta w `Customers` tabeli. Po wyświetleniu listy zamówień z `Orders` tabeli możesz chcieć wyświetlić rzeczywistą nazwę klienta zamiast `CustomerID` . Ponieważ nazwa klienta znajduje się w `Customers` tabeli, należy utworzyć tabelę odnośników, aby wyświetlić nazwę klienta. Tabela wyszukiwania używa `CustomerID` wartości w `Orders` rekordzie do nawigowania po relacji i zwraca nazwę klienta.
 
 ## <a name="to-create-a-lookup-table"></a>Aby utworzyć tabelę odnośników
 
@@ -75,14 +75,14 @@ Termin *tabela wyszukiwania* (nazywana czasem *powiązaniem wyszukiwania*) opisu
         > [!NOTE]
         > Jeśli formant **ListBox** lub **ListView** nie pojawia się na liście, możesz dodać te kontrolki do listy. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu, który ma zostać utworzony podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    - Każda kontrolka niestandardowa, która pochodzi od <xref:System.Windows.Controls.Primitives.Selector>.
+    - Każda kontrolka niestandardowa, która pochodzi od <xref:System.Windows.Controls.Primitives.Selector> .
 
         > [!NOTE]
         > Aby uzyskać informacje na temat dodawania niestandardowych kontrolek do listy kontrolek, które można wybrać dla elementów w oknie **źródła danych** , zobacz [Dodawanie niestandardowych kontrolek do okna źródła danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8. Przeciągnij węzeł podrzędny z okna **źródła danych** do kontenera w projektancie WPF. (W poprzednim przykładzie węzeł podrzędny jest węzłem **Orders** ).
 
-     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego elementu, który przeciągniesz. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli podrzędnej lub obiektu do zasobów elementu docelowego upuszczania. W przypadku niektórych źródeł danych program Visual Studio generuje również kod umożliwiający załadowanie danych do tabeli lub obiektu. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego elementu, który przeciągniesz. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli podrzędnej lub obiektu do zasobów docelowego upuszczania. W przypadku niektórych źródeł danych program Visual Studio generuje również kod umożliwiający załadowanie danych do tabeli lub obiektu. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
 9. Przeciągnij węzeł nadrzędny z okna **źródła danych** na utworzoną wcześniej kontrolkę powiązania wyszukiwania. (W poprzednim przykładzie węzeł nadrzędny jest węzłem **Customers** ).
 

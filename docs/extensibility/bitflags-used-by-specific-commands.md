@@ -1,5 +1,5 @@
 ---
-title: Bitflags używane przez określone polecenia | Dokumenty firmy Microsoft
+title: Bitflags używane przez określone polecenia | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,99 +11,99 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffa1fd8bf025d665977e87dc8b88da724ade5a8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740015"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags używane przez określone polecenia
-Zachowanie wielu funkcji w interfejsie API wtyczki kontroli źródła można zmodyfikować, ustawiając jeden lub więcej bitów w jednej wartości. Wartości te są znane jako bitflags. Różne bitflags używane przez interfejs API wtyczki kontroli źródła są szczegółowe tutaj, pogrupowane według funkcji, która ich używa.
+Zachowanie wielu funkcji w interfejsie API dodatku plug-in kontroli źródła może być modyfikowane przez ustawienie jednej lub kilku bitów w jednej wartości. Te wartości są znane jako bitflags. Różne bitflags używane przez interfejs API dodatku plug-in kontroli źródła są szczegółowo pogrupowane według funkcji, która z nich korzysta.
 
-## <a name="checked-out-flag"></a>Wyewidencjonowana flaga
+## <a name="checked-out-flag"></a>Flaga wyewidencjonowania
  Tę flagę można ustawić dla [SccAdd](../extensibility/sccadd-function.md) lub [SccCheckin](../extensibility/scccheckin-function.md).
 
 |Flaga|Wartość|Opis|
 |----------|-----------|-----------------|
-|`SCC_KEEP_CHECKEDOUT`|0x1000|Zachowaj plik wyewidencjonowany.|
+|`SCC_KEEP_CHECKEDOUT`|0x1000|Pozostaw wyewidencjonowany plik.|
 
-## <a name="add-flags"></a>Dodawanie flag
- Flagi te są używane przez [SccAdd](../extensibility/sccadd-function.md).
-
-|Flaga|Wartość|Opis|
-|----------|-----------|-----------------|
-|`SCC_FILETYPE_AUTO`|0x00|Oczekuje się, że wtyczka formantu źródła automatycznie wykryje, czy plik jest tekstem czy plikiem binarnym.|
-|`SCC_FILETYPE_TEXT`|0x01|Typ pliku to tekst.|
-|`SCC_FILETYPE_BINARY`|0x04|Typ pliku jest binarny. **Uwaga:** `SCC_FILETYPE_TEXT` `SCC_FILETYPE_BINARY` i flagi wzajemnie się wykluczają.   Ustaw dokładnie jeden lub żaden.|
-|`SCC_ADD_STORELATEST`|0x02|Przechowuj tylko najnowszą wersję (bez delt).|
-
-## <a name="diff-flags"></a>Flagi różnicowe
- [SccDiff](../extensibility/sccdiff-function.md) używa tych flag do definiowania zakresu operacji diff. Flagi `SCC_DIFF_QD_xxx` wzajemnie się wykluczają. Jeśli którykolwiek z nich jest określony, a następnie nie wizualne sprzężenie zwrotne ma być podane. W "quick diff" (QD) wtyczka nie określa, jak plik jest inny, tylko jeśli jest inny. Jeśli żadna z tych flag nie jest określona, "wizualny diff" jest wykonywana; szczegółowe różnice plików są obliczane i wyświetlane. Jeśli żądana QD nie jest obsługiwana, wtyczka przechodzi do następnego najlepszego. Na przykład jeśli IDE żąda sumy kontrolnej, a dodatek nie obsługuje go, wtyczka sprawdza pełną zawartość (nadal znacznie szybciej niż na wyświetlaczu wizualnym).
+## <a name="add-flags"></a>Dodaj flagi
+ Te flagi są używane przez [SccAdd](../extensibility/sccadd-function.md).
 
 |Flaga|Wartość|Opis|
 |----------|-----------|-----------------|
-|`SCC_DIFF_IGNORECASE`|0x0002|Ignoruj różnice przypadków.|
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignoruj różnice odstępów. **Uwaga:**  Flagi `SCC_DIFF_IGNORECASE` `SCC_DIFF_IGNORESPACE` i są opcjonalne bitflags.|
-|`SCC_DIFF_QD_CONTENTS`|0x0010|QD, porównując całą zawartość pliku.|
-|`SCC_DIFF_QD_CHECKSUM`|0x0020|QD przez sumę kontrolną.|
-|`SCC_DIFF_QD_TIME`|0x0040|QD według daty/sygnatury czasowej pliku.|
-|`SCC_DIFF_QUICK_DIFF`|0x0070|Jest to maska służąca do sprawdzania wszystkich bitflagów QD. Nie należy go przepuszczać do funkcji; trzy bitflagi QD wzajemnie się wykluczają. QD zawsze oznacza brak wyświetlania interfejsu użytkownika.|
+|`SCC_FILETYPE_AUTO`|0x00|Wtyczka do kontroli źródła jest w stanie automatycznie wykryć, czy plik jest plikiem tekstowym czy binarnym.|
+|`SCC_FILETYPE_TEXT`|0x01|Typ pliku to Text.|
+|`SCC_FILETYPE_BINARY`|0x04|Typ pliku jest binarny. **Uwaga:** `SCC_FILETYPE_TEXT` `SCC_FILETYPE_BINARY`flagi i wykluczają się wzajemnie.   Ustaw dokładnie jeden lub nie.|
+|`SCC_ADD_STORELATEST`|0x02|Tylko Najnowsza wersja magazynu (bez różnic).|
 
-## <a name="populatelist-flag"></a>Flaga listy wypełnień
- Ta flaga jest używana przez [SccPopulateList](../extensibility/sccpopulatelist-function.md) w parametrze. `fOptions`
+## <a name="diff-flags"></a>Flagi diff
+ [SccDiff](../extensibility/sccdiff-function.md) używa tych flag do definiowania zakresu operacji diff. `SCC_DIFF_QD_xxx`Flagi wykluczają się wzajemnie. Jeśli jedna z nich jest określona, nie ma potrzeby wyświetlania opinii. W "szybkiej Diffie" (głębokość kolejki) wtyczka nie określa, w jaki sposób plik jest inny, tylko wtedy, gdy jest inny. Jeśli żadna z tych flag nie jest określona, zostanie wykonany "różnica wizualna". szczegółowe różnice plików są obliczane i wyświetlane. Jeśli żądana głębokość kolejki nie jest obsługiwana, wtyczka jest przenoszona do następnego najlepszego. Na przykład, jeśli IDE żąda sumy kontrolnej, a wtyczka nie obsługuje tego, wtyczka wykonuje sprawdzanie pełne zawartości (nadal znacznie szybciej niż w przypadku wyświetlania wizualnego).
 
 |Flaga|Wartość|Opis|
 |----------|-----------|-----------------|
-|`SCC_PL_DIR`|0x00000001L|IDE przekazuje katalogi, a nie pliki.|
+|`SCC_DIFF_IGNORECASE`|0x0002|Ignoruj różnice wielkości liter.|
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignoruj różnice między znakami. **Uwaga:**  `SCC_DIFF_IGNORECASE` Flagi i `SCC_DIFF_IGNORESPACE` są opcjonalne bitflags.|
+|`SCC_DIFF_QD_CONTENTS`|0x0010|Głębokość kolejki przez porównanie całej zawartości pliku.|
+|`SCC_DIFF_QD_CHECKSUM`|0x0020|Głębokość kolejki przez sumę kontrolną.|
+|`SCC_DIFF_QD_TIME`|0x0040|Głębokość kolejki według sygnatury daty/godziny pliku.|
+|`SCC_DIFF_QUICK_DIFF`|0x0070|To jest maska służąca do sprawdzania wszystkich głębokość kolejki bitflags. Nie należy go przekazywać do funkcji; trzy głębokość kolejki bitflags wzajemnie się wykluczają. Głębokość kolejki zawsze oznacza brak wyświetlania interfejsu użytkownika.|
 
-## <a name="populatedirlist-flags"></a>Flagi Listy WypełnićDirList
- Flagi te są używane przez [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) w parametrze. `fOptions`
+## <a name="populatelist-flag"></a>Flaga PopulateList
+ Ta flaga jest używana przez [SccPopulateList](../extensibility/sccpopulatelist-function.md) w `fOptions` parametrze.
+
+|Flaga|Wartość|Opis|
+|----------|-----------|-----------------|
+|`SCC_PL_DIR`|0x00000001|IDE przekazuje katalogi, a nie pliki.|
+
+## <a name="populatedirlist-flags"></a>Flagi PopulateDirList
+ Te flagi są używane przez [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) w `fOptions` parametrze.
 
 |Wartość opcji|Wartość|Opis|
 |------------------|-----------|-----------------|
-|SCC_PDL_ONELEVEL|0x0000|Sprawdź tylko jeden poziom katalogów dla katalogów (jest to wartość domyślna).|
-|SCC_PDL_RECURSIVE|0x0001|Rekursyjnie zbadać wszystkie katalogi w każdym danym katalogu.|
-|SCC_PDL_INCLUDEFILES|0x0002|Dołącz nazwy plików w procesie badania.|
+|SCC_PDL_ONELEVEL|0x0000|Przejrzyj tylko jeden poziom katalogów dla katalogów (jest to ustawienie domyślne).|
+|SCC_PDL_RECURSIVE|0x0001|Rekursywnie bada wszystkie katalogi w poszczególnych katalogach.|
+|SCC_PDL_INCLUDEFILES|0x0002|Uwzględnij nazwy plików w procesie badania.|
 
 ## <a name="openproject-flags"></a>Flagi OpenProject
- Flagi te są używane przez [SccOpenProject](../extensibility/sccopenproject-function.md) w parametrze. `dwFlags`
+ Te flagi są używane przez [SccOpenProject](../extensibility/sccopenproject-function.md) w `dwFlags` parametrze.
 
 |Wartość opcji|Wartość|Opis|
 |------------------|-----------|-----------------|
-|SCC_OP_CREATEIFNEW|0x00000001L|Jeśli projekt nie istnieje w kontroli źródła, utwórz go. Jeśli ta flaga nie jest ustawiona, `SCC_OP_SILENTOPEN` monituj użytkownika o utworzenie projektu (chyba że określono flagę).|
-|SCC_OP_SILENTOPEN|0x00000002L|Nie monituj użytkownika o utworzenie projektu; po `SCC_E_UNKNOWNPROJECT`prostu wróć .|
+|SCC_OP_CREATEIFNEW|0x00000001|Jeśli projekt nie istnieje w kontroli źródła, utwórz go. Jeśli ta flaga nie jest ustawiona, Monituj użytkownika o utworzenie projektu (chyba że `SCC_OP_SILENTOPEN` flaga jest określona).|
+|SCC_OP_SILENTOPEN|0x00000002L|Nie Monituj użytkownika o utworzenie projektu; po prostu zwracaj `SCC_E_UNKNOWNPROJECT` .|
 
 ## <a name="get-flags"></a>Pobierz flagi
- Flagi te są używane przez [SccGet](../extensibility/sccget-function.md) i [SccCheckout](../extensibility/scccheckout-function.md).
+ Te flagi są używane przez [SccGet](../extensibility/sccget-function.md) i [SccCheckout](../extensibility/scccheckout-function.md).
 
 |Flaga|Wartość|Opis|
 |----------|-----------|-----------------|
-|`SCC_GET_ALL`|0x00000001L|IDE przekazuje katalogi, a nie pliki: Pobierz wszystkie pliki w tych katalogach.|
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE przekazuje katalogi: Pobierz te katalogi i wszystkie ich podkatalogi.|
+|`SCC_GET_ALL`|0x00000001|IDE przekazuje katalogi, a nie pliki: Pobiera wszystkie pliki z tych katalogów.|
+|`SCC_GET_RECURSIVE`|0x00000002L|IDE przekazuje katalogi: Pobierz te katalogi i wszystkie podkatalogi.|
 
 ## <a name="noption-values"></a>nOption wartości
- Flagi te są używane przez [SccSetOption](../extensibility/sccsetoption-function.md) w parametrze. `nOption`
+ Te flagi są używane przez [SccSetOption](../extensibility/sccsetoption-function.md) w `nOption` parametrze.
 
 |Flaga|Wartość|Opis|
 |----------|-----------|-----------------|
-|`SCC_OPT_EVENTQUEUE`|0x00000001L|Ustaw stan kolejki zdarzeń.|
-|`SCC_OPT_USERDATA`|0x00000002L|Określ dane `SCC_OPT_NAMECHANGEPFN`użytkownika dla .|
-|`SCC_OPT_HASCANCELMODE`|0x00000003L|IDE może obsłużyć cancel.|
-|`SCC_OPT_NAMECHANGEPFN`|0x00000004L|Ustaw wywołanie zwrotne dla zmian nazwy.|
-|`SCC_OPT_SCCCHECKOUTONLY`|0x00000005L|Wyłącz wyewidencjonowanie wyewidencjonowania wtyczek interfejsu użytkownika wtyczek sterowania źródłem i nie ustawiaj katalogu roboczego.|
-|`SCC_OPT_SHARESUBPROJ`|0x00000006L|Dodaj z systemu kontroli źródła, aby określić katalog roboczy. Spróbuj udostępnić w skojarzonym projekcie, jeśli jest bezpośrednim elementem podrzędnym.|
+|`SCC_OPT_EVENTQUEUE`|0x00000001|Ustawianie stanu kolejki zdarzeń.|
+|`SCC_OPT_USERDATA`|0x00000002L|Określ dane użytkownika `SCC_OPT_NAMECHANGEPFN` .|
+|`SCC_OPT_HASCANCELMODE`|0x00000003L|IDE może obsłużyć anulowanie.|
+|`SCC_OPT_NAMECHANGEPFN`|0x00000004L|Ustawianie wywołania zwrotnego dla zmian nazw.|
+|`SCC_OPT_SCCCHECKOUTONLY`|0x00000005L|Wyłącz wyewidencjonowywanie interfejsu użytkownika wtyczki kontroli źródła i nie ustawiaj katalogu roboczego.|
+|`SCC_OPT_SHARESUBPROJ`|0x00000006L|Dodaj z systemu kontroli źródła, aby określić katalog roboczy. Spróbuj udostępnić do skojarzonego projektu, jeśli jest to bezpośredni element podrzędny.|
 
 ## <a name="dwval-bitflags"></a>dwVal bitflags
- Flagi te są używane przez [SccSetOption](../extensibility/sccsetoption-function.md) w parametrze. `dwVal`
+ Te flagi są używane przez [SccSetOption](../extensibility/sccsetoption-function.md) w `dwVal` parametrze.
 
-|Flaga|Wartość|Opis|Używane `nOption` przez wartość|
+|Flaga|Wartość|Opis|Używane przez `nOption` wartość|
 |----------|-----------|-----------------|-----------------------------|
-|`SCC_OPT_EQ_DISABLE`|0x00L|Zawiesza aktywność kolejki zdarzeń.|`SCC_OPT_EVENTQUEUE`|
-|`SCC_OPT_EQ_ENABLE`|0x01L|Umożliwia rejestrowanie kolejki zdarzeń.|`SCC_OPT_EVENTQUEUE`|
-|`SCC_OPT_HCM_NO`|0L|(Domyślnie) Nie ma trybu anulowania; w razie potrzeby musi dostarczyć wtyczkę.|`SCC_OPT_HASCANCELMODE`|
-|`SCC_OPT_HCM_YES`|1L|Dojścia IDE anuluj.|`SCC_OPT_HASCANCELMODE`|
-|`SCC_OPT_SCO_NO`|0L|(Domyślnie) OK, aby wyewidencjonować z interfejsu użytkownika wtyczki; katalog roboczy jest ustawiony.|`SCC_OPT_SCCCHECKOUTONLY`|
-|`SCC_OPT_SCO_YES`|1L|Brak wyewidencjonowania interfejsu użytkownika wtyczki, brak działającego katalogu.|`SCC_OPT_SCCCHECKOUTONLY`|
+|`SCC_OPT_EQ_DISABLE`|0x00|Wstrzymuje działanie kolejki zdarzeń.|`SCC_OPT_EVENTQUEUE`|
+|`SCC_OPT_EQ_ENABLE`|0x01L|Włącza rejestrowanie kolejki zdarzeń.|`SCC_OPT_EVENTQUEUE`|
+|`SCC_OPT_HCM_NO`|0L|Wartooć Nie ma trybu anulowania; wtyczka musi dostarczyć w razie potrzeby.|`SCC_OPT_HASCANCELMODE`|
+|`SCC_OPT_HCM_YES`|1L|.|`SCC_OPT_HASCANCELMODE`|
+|`SCC_OPT_SCO_NO`|0L|Wartooć OK, aby wyewidencjonować z wtyczki interfejsu użytkownika; Katalog roboczy jest ustawiony.|`SCC_OPT_SCCCHECKOUTONLY`|
+|`SCC_OPT_SCO_YES`|1L|Brak wyewidencjonowania interfejsu użytkownika wtyczki, brak katalogu roboczego.|`SCC_OPT_SCCCHECKOUTONLY`|
 
 ## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)

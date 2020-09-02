@@ -1,5 +1,5 @@
 ---
-title: Wysyłanie zdarzeń | Dokumentacja firmy Microsoft
+title: Wysyłanie zdarzeń | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,37 +11,37 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98247b894d2db628d508713875ba0ea7d0642729
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204745"
 ---
 # <a name="sending-events"></a>Wysyłanie zdarzeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Mechanizm komunikacji między debugera i aparat debugowania (DE) to model zdarzeń oparty na modelu DCOM. Zdarzenia są wysyłane jako obiekty COM, a każde zdarzenie ma następujące parametry, które określają następujące czynności:  
+Mechanizm komunikacji między debugerem a aparatem debugowania (DE) jest modelem zdarzeń opartym na modelu DCOM. Zdarzenia są wysyłane jako obiekty COM, a każde zdarzenie ma parametry, które określają następujące elementy:  
   
 - DE, która wywołała zdarzenie.  
   
-- Opis co się stało.  
+- Opis tego, co się stało.  
   
-- Proces, program i informacji o wątku, który identyfikuje kontekst, w którym wystąpiło zdarzenie. Ten proces nie są wysyłane do zdarzeń wysyłanych z URZ.  
+- Informacje o procesie, programie i wątku, które identyfikują kontekst, w którym wystąpiło zdarzenie. Proces nie jest wysyłany dla zdarzeń wysyłanych z elementu DE.  
   
-- Typ zdarzenia, która wskazuje, czy zdarzenie jest synchroniczna lub asynchroniczna.  
+- Typ zdarzenia, który wskazuje, czy zdarzenie jest synchroniczne, czy asynchroniczne.  
   
-  Wszystkie zdarzenia debugowania są wysyłane przy użyciu metody [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+  Wszystkie zdarzenia debugowania są wysyłane przy użyciu metody [IDebugEventCallback2:: Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Źródła zdarzeń](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
- Opisano dwa źródła zdarzeń: aparat debugowania (DE) i sesja debugowania manager (SDM).  
+ Wyjaśnia dwa źródła zdarzeń: aparat debugowania (DE) i Menedżer debugowania sesji (SDM).  
   
  [Obsługiwane typy zdarzeń](../../extensibility/debugger/supported-event-types.md)  
- W tym artykule omówiono aktualnie obsługiwane typy zdarzeń: synchronicznego i asynchronicznego.  
+ Omawia aktualnie obsługiwane typy zdarzeń: asynchroniczne i synchroniczne.  
   
  [Opisy zdarzeń](../../extensibility/debugger/event-descriptions.md)  
- Definiuje zdarzenia i przyczyny ich użycie.  
+ Definiuje zdarzenia i przyczyny ich użycia.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- W tym artykule opisano, jak DE współpracuje z interpreter lub systemu operacyjnego w celu dostarczania usług debugowania.
+ Opisuje, jak DE współpracuje z interpreterem lub systemem operacyjnym w celu zapewnienia usług debugowania.

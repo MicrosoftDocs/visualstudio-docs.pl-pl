@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccPopulateList | Dokumenty firmy Microsoft
+title: Funkcja SccPopulateList | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f518413adba1546bcff4f7cf2e62b4563cf1bcc7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700529"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList, funkcja
-Ta funkcja aktualizuje listę plików dla określonego polecenia kontroli źródła i dostarcza stan kontroli źródła dla wszystkich podanych plików.
+Ta funkcja aktualizuje listę plików dla określonego polecenia kontroli źródła i udostępnia stan kontroli źródła na wszystkich danych plikach.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,54 +40,54 @@ SCCRTN SccPopulateList (
 #### <a name="parameters"></a>Parametry
  pvContext
 
-[w] Struktura kontekstu wtyczki formantu źródła.
+podczas Struktura kontekstu wtyczki kontroli źródła.
 
- nKommand
+ Nwykonywane polecenie
 
-[w] Polecenie kontroli źródła, które zostanie zastosowane do `lpFileNames` wszystkich plików w tablicy (zobacz [Kod polecenia,](../extensibility/command-code-enumerator.md) aby uzyskać listę możliwych poleceń).
+podczas Polecenie kontroli źródła, które zostanie zastosowane do wszystkich plików w `lpFileNames` tablicy (zobacz [kod polecenia](../extensibility/command-code-enumerator.md) , aby wyświetlić listę możliwych poleceń).
 
  nFiles
 
-[w] Liczba plików w `lpFileNames` tablicy.
+podczas Liczba plików w `lpFileNames` tablicy.
 
  lpFileNames
 
-[w] Tablica nazw plików znanych IDE.
+podczas Tablica nazw plików znanych IDE.
 
- pfnPopuluj
+ pfnPopulate
 
-[w] Funkcja wywołania zwrotnego IDE do wywołania, aby dodać i usunąć pliki (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) szczegóły).
+podczas Funkcja wywołania zwrotnego IDE do wywołania dodawania i usuwania plików (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) , aby uzyskać szczegółowe informacje).
 
  pvCallerData
 
-[w] Wartość, która ma być przekazana bez zmian do funkcji wywołania zwrotnego.
+podczas Wartość, która ma zostać przeniesiona bez zmian do funkcji wywołania zwrotnego.
 
  lpStatus
 
-[w, na zewnątrz] Tablica dla wtyczki formantu źródła do zwracania flag stanu dla każdego pliku.
+[in. out] Tablica dla wtyczki kontroli źródła w celu zwrócenia flag stanu dla każdego pliku.
 
- Foptions
+ fOptions
 
-[w] Flagi poleceń (szczegółowe informacje można znaleźć w sekcji "Flaga Listy wypełnień" [w bitflagach używanych przez określone polecenia).](../extensibility/bitflags-used-by-specific-commands.md)
+podczas Flagi poleceń (zobacz sekcję "Flaga PopulateList" w [Bitflags używane przez określone polecenia,](../extensibility/bitflags-used-by-specific-commands.md) Aby uzyskać szczegółowe informacje).
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_OK|Powodzenie.|
-|SCC_E_NONSPECIFICERROR|Niespecyficzna awaria.|
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd.|
 
 ## <a name="remarks"></a>Uwagi
- Ta funkcja sprawdza listę plików pod kątem jego bieżącego stanu. Używa funkcji `pfnPopulate` wywołania zwrotnego, aby powiadomić rozmówcę, gdy `nCommand`plik nie spełnia kryteriów dla . Na przykład jeśli polecenie `SCC_COMMAND_CHECKIN` jest i plik na liście nie jest wyewidencjonowany, następnie wywołania zwrotnego jest używany do informowania wywołującego. Od czasu do czasu wtyczka kontroli źródła może znaleźć inne pliki, które mogą być częścią polecenia i dodać je. Umożliwia to na przykład użytkownikowi języka Visual Basic wyewidencjonowanie pliku bmp, który jest używany przez jego projekt, ale nie pojawia się w pliku projektu języka Visual Basic. Użytkownik wybiera polecenie **Pobierz** w IDE. IDE wyświetli listę wszystkich plików, które uważa, że użytkownik może uzyskać, `SccPopulateList` ale przed wyświetleniem listy, funkcja jest wywoływana, aby upewnić się, że lista, która ma być wyświetlana jest aktualna.
+ Ta funkcja bada listę plików w bieżącym stanie. Używa `pfnPopulate` funkcji wywołania zwrotnego do powiadomienia obiektu wywołującego, gdy plik jest niezgodny z kryteriami dla `nCommand` . Na przykład jeśli polecenie jest, `SCC_COMMAND_CHECKIN` a plik na liście nie jest wyewidencjonowany, wywołanie zwrotne jest używane do informowania obiektu wywołującego. Czasami wtyczka do kontroli źródła może znaleźć inne pliki, które mogą być częścią polecenia i dodać je. Pozwala to na przykład Visual Basic użytkownikowi na wyewidencjonowanie pliku BMP, który jest używany przez jego projekt, ale nie jest wyświetlany w Visual Basic pliku projektu. Użytkownik wybiera polecenie **Get** w IDE. W środowisku IDE zostanie wyświetlona lista wszystkich plików, które uzna, że użytkownik może uzyskać, ale przed wyświetleniem listy `SccPopulateList` Funkcja jest wywoływana, aby upewnić się, że lista do wyświetlenia jest aktualna.
 
 ## <a name="example"></a>Przykład
- IDE tworzy listę plików, które uważa, że użytkownik może uzyskać. Przed wyświetleniem tej listy `SccPopulateList` wywołuje funkcję, dając wtyczek kontroli źródła możliwość dodawania i usuwania plików z listy. Wtyczka modyfikuje listę, wywołując daną funkcję wywołania zwrotnego (więcej informacji można znaleźć w [funkcji POPLISTFUNC).](../extensibility/poplistfunc.md)
+ Środowisko IDE tworzy listę plików, które mogą zostać pobrane przez użytkownika. Zanim zostanie wyświetlona ta lista, wywołuje `SccPopulateList` funkcję, zapewniając wtyczkę kontroli źródła możliwość dodawania i usuwania plików z listy. Wtyczka modyfikuje listę, wywołując daną funkcję wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) , aby uzyskać więcej informacji).
 
- Wtyczka kontynuuje wywoływanie `pfnPopulate` funkcji, która dodaje i usuwa pliki, dopóki nie zostanie `SccPopulateList` zakończona, a następnie powróci z funkcji. IDE można następnie wyświetlić jego listę. Tablica `lpStatus` reprezentuje wszystkie pliki na oryginalnej liście przekazywane przez IDE. Wtyczka wypełnia stan wszystkich tych plików oprócz korzystania z funkcji wywołania zwrotnego.
+ Wtyczka kontynuuje wywoływanie `pfnPopulate` funkcji, która dodaje i usuwa pliki, dopóki nie zostanie zakończona, a następnie zwraca z `SccPopulateList` funkcji. IDE może wyświetlić listę. `lpStatus`Tablica reprezentuje wszystkie pliki z oryginalnej listy przekazaną przez IDE. Wtyczka wypełnia stan wszystkich tych plików oprócz używania funkcji wywołania zwrotnego.
 
 > [!NOTE]
-> Wtyczka kontroli źródła zawsze ma możliwość po prostu powrócić natychmiast z tej funkcji, pozostawiając listę, jak to jest. Jeśli wtyczka implementuje tę funkcję, może to `SCC_CAP_POPULATELIST` wskazać, ustawiając możliwości bitflag w pierwszym wywołaniu [SccInitialize](../extensibility/sccinitialize-function.md). Domyślnie wtyczka powinna zawsze zakładać, że wszystkie elementy przekazywane są plikami. Jednak jeśli IDE ustawia `SCC_PL_DIR` flagę `fOptions` w parametrze, wszystkie elementy przekazywane w są uważane za katalogi. Wtyczka powinna dodać wszystkie pliki, które należą do katalogów. IDE nigdy nie przejdzie w mieszaninie plików i katalogów.
+> Wtyczka do kontroli źródła zawsze ma opcję natychmiastowego zwrócenia od tej funkcji, pozostawiając listę w takiej postaci. Jeśli wtyczka implementuje tę funkcję, może to wskazywać, ustawiając `SCC_CAP_POPULATELIST` bitflag możliwości w pierwszym wywołaniu [SccInitialize](../extensibility/sccinitialize-function.md). Domyślnie wtyczka powinna założyć, że wszystkie elementy, które są przesyłane, są plikami. Jeśli jednak IDE ustawi `SCC_PL_DIR` flagę w `fOptions` parametrze, wszystkie elementy, które są przesyłane, są traktowane jako katalogi. Wtyczka powinna dodać wszystkie pliki należące do katalogów. IDE nigdy nie przejdzie do kombinacji plików i katalogów.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

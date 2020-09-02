@@ -1,5 +1,5 @@
 ---
-title: Element poleceń | Dokumenty firmy Microsoft
+title: Commands — element | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3ea2400cca19a02475caecec3d022e0b78794ae4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739686"
 ---
-# <a name="commands-element"></a>Element Polecenia
-Reprezentuje kolekcję poleceń na pasku narzędzi VSPackage. Kolekcja może mieć maksymalnie pięć podsekcji, w następujący sposób: menu, grupy, przyciski, kombinacje i mapy bitowe.
+# <a name="commands-element"></a>Commands, element
+Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage. Kolekcja może zawierać maksymalnie pięć podsekcji: menu, grupy, przyciski, listy kombinowane i mapy bitowe.
 
- Każdy element podrzędny podsekcji, na przykład \<Menu>, jest identyfikowany za pomocą unikatowego identyfikatora polecenia, który jest parą identyfikatorów GUID i numerycznych. Identyfikator GUID identyfikuje "zestaw poleceń" i jest używany do grupowanie logicznie powiązanych poleceń. VSPackage należy zdefiniować własny zestaw poleceń, aby uniknąć kolizji z identyfikatorów poleceń, które są zdefiniowane przez inne VSPackages.
+ Każdy podsekcja elementu podrzędnego, na przykład, \<Menu> jest identyfikowany przez unikatowy identyfikator polecenia, który jest identyfikatorem GUID i pary identyfikatorów liczbowych. Identyfikator GUID identyfikuje "zestaw poleceń" i służy do grupowania logicznie powiązanych poleceń. Pakietu VSPackage powinien definiować własny zestaw poleceń, aby uniknąć kolizji z identyfikatorami poleceń, które są zdefiniowane przez inne pakietów VSPackage.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,26 +44,26 @@ Reprezentuje kolekcję poleceń na pasku narzędzi VSPackage. Kolekcja może mie
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Pakiet|Identyfikator GUID, który identyfikuje VSPackage, który udostępnia polecenia.<br /><br /> Na przykład package="guidVsPackage1Pkg".|
+|Package|Identyfikator GUID, który identyfikuje pakietu VSPackage, który zawiera polecenia.<br /><br /> Na przykład Package = "guidVsPackage1Pkg".|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element Menu](../extensibility/menus-element.md)|Definiuje wszystkie menu, które implementuje VSPackage.|
-|[Element Grupy](../extensibility/groups-element.md)|Zawiera wpisy definiujące grupy poleceń w pakiecie VSPackage.|
-|[Element przycisków](../extensibility/buttons-element.md)|Elementy przycisku Grupy.|
-|[Element Mapy bitowe](../extensibility/bitmaps-element.md)|Grupy Elementy mapy bitowej.|
-|[Element combo](../extensibility/combos-element.md)|Grupy elementów kombi.|
+|[Element menu](../extensibility/menus-element.md)|Definiuje wszystkie menu, które implementuje pakietu VSPackage.|
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy poleceń w pakietu VSPackage.|
+|[Element Buttons](../extensibility/buttons-element.md)|Elementy przycisków grup.|
+|[Bitmapy, element](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|
+|[Elementy kombi](../extensibility/combos-element.md)|Grupuje elementy kombi.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element CommandTable](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia, które VSPackage zapewnia IDE. Możliwe elementy to elementy menu, menu, paski narzędzi i pola kombi.|
+|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia, które pakietu VSPackage zapewnia IDE. Możliwe elementy to elementy menu, menu, paski narzędzi i pola kombi.|
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano, jak używać [elementu polecenia](../extensibility/commands-element.md).
+ Poniższy przykład pokazuje, jak używać [elementu Commands](../extensibility/commands-element.md).
 
 ```
 <Commands package="guidMyPackage">
@@ -89,5 +89,5 @@ Reprezentuje kolekcję poleceń na pasku narzędzi VSPackage. Kolekcja może mie
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Jak vspackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffaf1d932ea904807b3affcdc39c0fe0ccb7d842
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657801"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Praca z modelem koncepcyjnym (Usługi danych programu WCF)
@@ -34,7 +34,7 @@ W przypadku używania modelu koncepcyjnego do opisywania danych w bazie danych, 
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Instrukcje: Wykonywanie zapytań usługi danych](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Pokazuje, w jaki sposób wysyłać zapytania do usługi danych z aplikacji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|
+|[Instrukcje: Wykonywanie zapytań usługi danych](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Pokazuje, w jaki sposób wysyłać zapytania do usługi danych z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikacji.|
 |[Instrukcje: Projekt wyników zapytania](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Pokazuje, jak zmniejszyć ilość danych zwracanych przez zapytanie usługi danych.|
 
  Korzystając z modelu koncepcyjnego, można określić, jakiego rodzaju dane są prawidłowe w języku zgodnym z Twoją domeną. Można zdefiniować prawidłowe dane w modelu lub można dodać sprawdzanie poprawności operacji wykonywanych w ramach jednostki lub usługi danych.

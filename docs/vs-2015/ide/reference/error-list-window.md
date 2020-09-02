@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 35be5ddeedf0b081fa94e399f294151e73a157ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657732"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
@@ -70,14 +70,14 @@ KORYGUJĄC
 
    Lista po prawej stronie paska narzędzi określa, czy mają być wyświetlane błędy kompilacji (błędy spowodowane operacją kompilacji), czy z funkcji IntelliSense (błędy wykryte przed uruchomieniem kompilacji) lub z obu tych elementów.
 
-## <a name="search"></a>Wyszukaj
+## <a name="search"></a>Wyszukiwanie
  Użyj pola tekstowego **szukaj Lista błędów** po prawej stronie **Lista błędów** pasku narzędzi, aby znaleźć konkretne błędy na liście błędów. Możesz wyszukać dowolną widoczną kolumnę na liście błędów, a wyniki wyszukiwania są zawsze sortowane na podstawie kolumny, która ma priorytet sortowania zamiast zapytania lub zastosowany filtr. Jeśli wybierzesz klawisz **ESC** , gdy fokus znajduje się w **Lista błędów**, możesz wyczyścić wyszukiwany termin i wyniki wyszukiwania odfiltrowanego. Możesz również kliknąć **symbol X** po prawej stronie pola tekstowego, aby usunąć jego zaznaczenie.
 
-## <a name="save"></a>Zapisanie
+## <a name="save"></a>Zapisz
  Można skopiować listę błędów i zapisać ją w pliku. Wybierz błędy, które chcesz skopiować, a następnie kliknij prawym przyciskiem myszy zaznaczenie, a następnie w menu kontekstowym wybierz polecenie **Kopiuj**. Można następnie wkleić błędy do pliku. W przypadku wklejenia błędów do arkusza kalkulacyjnego programu Excel pola są wyświetlane jako różne kolumny.
 
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika
- Ważność wyświetla różne typy wpisów **Lista błędów** (**błąd**, **komunikat**, **Ostrzeżenie**, **ostrzeżenie (aktywne)** , **ostrzeżenie (nieaktywne)** .
+ Ważność wyświetla różne typy wpisów **Lista błędów** (**błąd**, **komunikat**, **Ostrzeżenie**, **ostrzeżenie (aktywne)**, **ostrzeżenie (nieaktywne)**.
 
  Kod wyświetla kod błędu.
 

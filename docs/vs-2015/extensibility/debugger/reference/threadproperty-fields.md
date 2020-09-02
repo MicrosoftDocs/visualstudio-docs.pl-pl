@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Dokumentacja firmy Microsoft
+title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc0e0f7cae4aed887809c22bda0cd6a9ed50307f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204799"
 ---
-# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
+# <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, jakie informacje o wątku do pobrania.  
+Określa, jakie informacje o wątku mają być pobierane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,37 +53,37 @@ public enum enum_THREADPROPERTY_FIELDS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  TPF_ID  
- Inicjowanie bądź użyj `dwThreadId` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.  
+ Zainicjuj/Użyj `dwThreadId` pola struktury [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .  
   
  TPF_SUSPENDCOUNT  
- Inicjowanie bądź użyj `dwSuspendCount` pole `THREADPROPERTIE`Struktura.  
+ Zainicjuj/Użyj `dwSuspendCount` pola `THREADPROPERTIE` struktury S.  
   
  TPF_STATE  
- Inicjowanie bądź użyj `dwThreadState` pole `THREADPROPERTIE`Struktura.  
+ Zainicjuj/Użyj `dwThreadState` pola `THREADPROPERTIE` struktury S.  
   
  TPF_PRIORITY  
- Inicjowanie bądź użyj `bstrPriority` pole `THREADPROPERTIE`Struktura.  
+ Zainicjuj/Użyj `bstrPriority` pola `THREADPROPERTIE` struktury S.  
   
  TPF_NAME  
- Inicjowanie bądź użyj `bstrName` pole `THREADPROPERTIE`Struktura.  
+ Zainicjuj/Użyj `bstrName` pola `THREADPROPERTIE` struktury S.  
   
  TPF_LOCATION  
- Inicjowanie bądź użyj `bstrLocation` pole `THREADPROPERTIE`Struktura.  
+ Zainicjuj/Użyj `bstrLocation` pola `THREADPROPERTIE` struktury S.  
   
  TPF_ALLFIELDS  
  Określa wszystkie pola.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane jako argument do [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) metodę, aby wskazać, które pola [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury, które mają zostać zainicjowane.  
+ Te wartości są przesyłane jako argument do metody [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) , aby wskazać, które pola struktury [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) mają być inicjowane.  
   
- Te wartości są również używane w `dwFields` członkiem `THREADPROPERTIES` struktury, aby wskazać, które pola są używane i prawidłowy.  
+ Te wartości są również używane w `dwFields` składowej `THREADPROPERTIES` struktury, aby wskazać, które pola są używane i są prawidłowe.  
   
- Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Flagi te mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

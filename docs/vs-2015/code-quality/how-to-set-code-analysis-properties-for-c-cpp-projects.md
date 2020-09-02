@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ustawianie właściwości analizy kodu dlaC++ projektów C Microsoft Docs'
+title: 'Instrukcje: Ustawianie właściwości analizy kodu dla projektów C-C + + | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,10 +20,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b2fb3cb81b49fd4b8cc83e0548110d2025c7488d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277989"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Porady: ustawianie właściwości analizy kodu dla projektów C/C++
@@ -38,7 +38,7 @@ Można skonfigurować reguły używane przez narzędzie do analizy kodu do anali
  Lista **konfiguracji** i lista **platform** umożliwiają stosowanie różnych ustawień analizy kodu do różnych konfiguracji projektu i kombinacji platform. Na przykład można skierować analizę kodu w celu zastosowania jednego zestawu reguł do projektu na potrzeby kompilacji debugowania i innego zestawu dla kompilacji wydań.  
   
 ## <a name="enabling-code-analysis"></a>Włączanie analizy kodu  
- Możesz zdecydować, czy włączyć analizę kodu dla projektu, wybierając opcję **Włącz analizę kodu dla C/C++ on Build**. W połączeniu z listą **konfiguracji** można na przykład zdecydować, aby wyłączyć analizę kodu dla kompilacji debugowania i włączyć ją dla kompilacji wydań.  
+ Możesz zdecydować, czy włączyć analizę kodu dla projektu, wybierając opcję **Włącz analizę kodu dla C/C++ podczas kompilacji**. W połączeniu z listą **konfiguracji** można na przykład zdecydować, aby wyłączyć analizę kodu dla kompilacji debugowania i włączyć ją dla kompilacji wydań.  
   
  Jeśli projekt zawiera kod zarządzany, możesz zdecydować, czy włączyć lub wyłączyć analizę kodu, wybierając opcję **Włącz analizę kodu podczas kompilacji**.  
   
@@ -53,5 +53,5 @@ Można skonfigurować reguły używane przez narzędzie do analizy kodu do anali
  Jeśli projekt zawiera kod zarządzany, możesz wybrać reguły do zastosowania w analizie kodu, wybierając zestaw reguł z listy **Uruchom ten zestaw reguł** .  
   
 ## <a name="see-also"></a>Zobacz też  
- [Analizowanie  jakości kodu zarządzanego](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
- [Analiza kodu C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)
+ [Analizowanie jakości kodu zarządzanego](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
+ [Analiza kodu dla ostrzeżeń C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

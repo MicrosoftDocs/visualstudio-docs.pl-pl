@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie rozwiązań | Dokumentacja firmy Microsoft
+title: Rozszerzanie rozwiązań | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,20 +9,20 @@ caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d9a5425f5acc9ec62b5def24279aac208516ff0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204462"
 ---
 # <a name="extending-solutions"></a>Rozszerzanie rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację.  
+Rozwiązanie to grupa składająca się z jednego lub wielu projektów, które współpracują ze sobą w celu utworzenia aplikacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- Poniższe przewodniki pokazują niektóre sposoby, w którym można rozszerzyć rozwiązania.  
+ W poniższych przewodnikach przedstawiono kilka sposobów, w których można rozciągnąć rozwiązania.  
   
-1. [Rozszerzanie filtru Eksploratora rozwiązań](../extensibility/extending-the-solution-explorer-filter.md) wyjaśnia, jak filtrowanie, co wyświetlane w Eksploratorze rozwiązań.  
+1. [Rozszerzenie filtru Eksplorator rozwiązań](../extensibility/extending-the-solution-explorer-filter.md) wyjaśnia, jak należy filtrować Eksplorator rozwiązań wyświetlanych.  
   
-2. [Zarządzanie, trwa ładowanie projektu w rozwiązaniu](../extensibility/managing-project-loading-in-a-solution.md) objaśnia Zarządzanie ładowaniem projektu w celu zwiększenia wydajności, gdy użytkownik wczytuje rozwiązania.
+2. [Zarządzanie ładowaniem projektu w ramach rozwiązania](../extensibility/managing-project-loading-in-a-solution.md) wyjaśnia, jak zarządzać ładowaniem projektu, aby zwiększyć wydajność, gdy użytkownik załaduje rozwiązanie.

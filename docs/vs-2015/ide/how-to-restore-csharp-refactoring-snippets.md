@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Przywracanie C# wstawek refaktoryzacji | Microsoft Docs'
+title: 'Instrukcje: Przywracanie fragmentów kodu w języku C# | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,26 +13,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ae3f1d74a482192d3782aaa87baa816694abcf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670784"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Porady: przywracanie refaktoryzowanych wstawek kodu C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-C#operacje refaktoryzacji polegają na fragmentach kodu znalezionych w następującym katalogu:
+Operacje refaktoryzacji języka C# polegają na fragmentach kodu znalezionych w następującym katalogu:
 
- *Katalog instalacji*\Microsoft Visual Studio 14,0 \VC#\Snippets \\*Identyfikator języka*\Refactoring
+ *Katalog instalacyjny*\Microsoft Visual Studio 14.0 \ VC # \Snippets \\ *Identyfikator języka*\Refactoring
 
- W przypadku usunięcia lub uszkodzenia C# tego katalogu refaktoryzacji lub dowolnych plików w tym katalogu operacje refaktoryzacji mogą nie funkcjonować w środowisku IDE. Poniższe procedury mogą ułatwić przywrócenie C# fragmentów kodu refaktoryzacji.
+ Jeśli ten katalog refaktoryzacji lub wszystkie pliki w tym katalogu zostaną usunięte lub uszkodzone, operacje refaktoryzacji w języku C# mogą nie funkcjonować w środowisku IDE. Poniższe procedury mogą pomóc przywrócić fragmenty kodu refaktoryzacji języka C#.
 
-### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>Aby zweryfikować C# fragmenty refaktoryzacji są dostępne za pomocą Menedżera fragmentów kodu
+### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>Aby sprawdzić fragmenty kodu refaktoryzacji w języku C#, można uzyskać za pomocą narzędzia Code fragment
 
 1. W menu **Narzędzia** wybierz pozycję **Menedżer fragmentów kodu**.
 
-2. W oknie dialogowym **Menedżer fragmentów kodu** wybierz pozycję **Wizualizacja C#**  z listy rozwijanej **Język** .
+2. W oknie dialogowym **Menedżer fragmentów kodu** wybierz pozycję **Visual C#** z listy rozwijanej **Język** .
 
      Folder **refaktoryzacji** powinien pojawić się na liście folderów widoku drzewa.
 
@@ -42,19 +42,19 @@ C#operacje refaktoryzacji polegają na fragmentach kodu znalezionych w następuj
 
 2. W menu **Narzędzia** wybierz pozycję **Menedżer fragmentów kodu**.
 
-3. W oknie dialogowym **Menedżer fragmentów kodu** wybierz pozycję **Wizualizacja C#**  z listy rozwijanej **Język** .
+3. W oknie dialogowym **Menedżer fragmentów kodu** wybierz pozycję **Visual C#** z listy rozwijanej **Język** .
 
-4. Kliknij przycisk **Dodaj**. Zostanie wyświetlone okno dialogowe **katalog fragmentów kodu** , w którym można znaleźć i określić katalog, który zostanie dodany z powrotem do Menedżera fragmentów kodu.
+4. Kliknij pozycję **Dodaj**. Zostanie wyświetlone okno dialogowe **katalog fragmentów kodu** , w którym można znaleźć i określić katalog, który zostanie dodany z powrotem do Menedżera fragmentów kodu.
 
 5. Zlokalizuj folder **refaktoryzacji** , którego ścieżką do katalogu jest:
 
-     *Katalog instalacji*\Microsoft Visual Studio 14,0 \VC#\Snippets \\*Identyfikator języka*\Refactoring
+     *Katalog instalacyjny*\Microsoft Visual Studio 14.0 \ VC # \Snippets \\ *Identyfikator języka*\Refactoring
 
      Rzeczywista ścieżka jest podobna do następującej w przypadku instalacji domyślnej:
 
-     C:\Program Files\Microsoft Visual Studio 14,0 \VC#\Snippets\1033\Refactoring.
+     C:\Program Files\Microsoft Visual Studio 14.0 \ VC # \Snippets\1033\Refactoring.
 
 6. Kliknij przycisk **Otwórz** w **katalogu fragmenty kodu** , a następnie kliknij przycisk **OK** w Menedżerze fragmentów kodu.
 
 ## <a name="see-also"></a>Zobacz też
- [Fragmenty C# kodu wizualnego](../ide/visual-csharp-code-snippets.md) [C#refaktoryzacji ()](../csharp-ide/refactoring-csharp.md) [](../ide/code-snippets.md)
+ [Fragmenty kodu](../ide/code-snippets.md) w [języku Visual C# kodu](../ide/visual-csharp-code-snippets.md) [refaktoryzacji (C#)](../csharp-ide/refactoring-csharp.md)

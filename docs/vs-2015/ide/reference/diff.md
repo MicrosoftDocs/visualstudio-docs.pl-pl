@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd76b0803f43a7694ec0d689eeb8489f491f8464
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657758"
 ---
 # <a name="diff"></a>/Diff
@@ -28,10 +28,10 @@ devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `SourceFile`. Pełna ścieżka i nazwa pierwszego pliku, który ma zostać porównany.
+ `SourceFile` Wymagane. Pełna ścieżka i nazwa pierwszego pliku, który ma zostać porównany.
 
- Wymagane `TargetFile`. Pełna ścieżka i Nazwa drugiego pliku, który ma zostać porównany
+ `TargetFile` Wymagane. Pełna ścieżka i Nazwa drugiego pliku, który ma zostać porównany
 
- `SourceDisplayName` opcjonalny. Nazwa wyświetlana pierwszego pliku.
+ `SourceDisplayName` Obowiązkowe. Nazwa wyświetlana pierwszego pliku.
 
- `TargetDisplayName` opcjonalny. Nazwa wyświetlana drugiego pliku.
+ `TargetDisplayName` Obowiązkowe. Nazwa wyświetlana drugiego pliku.

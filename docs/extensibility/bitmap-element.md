@@ -1,5 +1,5 @@
 ---
-title: Element mapy bitowej | Dokumenty firmy Microsoft
+title: Element bitmapy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2d663351aad7d381dd5bfe4cbaa0a263cc70b821
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739995"
 ---
-# <a name="bitmap-element"></a>Element bitmapy
+# <a name="bitmap-element"></a>Element Bitmap
 Definiuje mapę bitową. Mapa bitowa jest ładowana z zasobu lub z pliku.
 
 ## <a name="syntax"></a>Składnia
@@ -34,11 +34,11 @@ Definiuje mapę bitową. Mapa bitowa jest ładowana z zasobu lub z pliku.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Identyfikator GUID|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.<br /><br /> Atrybut guid dla mapy bitowej nie jest skojarzony z żadnym VSPackage ani inną grupą poleceń.  Powinien być unikatowy dla definicji mapy bitowej i nie powinien być używany do żadnych innych celów.|
-|Resid|Identyfikator polecenia GUID/ID. Wymagany jest atrybut resID lub href.<br /><br /> Atrybut resID jest identyfikatorem zasobu liczby całkowitej, który określa pasek mapy bitowej, który ma zostać załadowany podczas scalania tabeli poleceń.  Po załadowaniu tabeli poleceń mapy bitowe określone przez identyfikator zasobu zostaną załadowane z zasobu tego samego modułu.|
-|usedList|Wymagane, jeśli atrybut resID jest obecny. Wybiera dostępne obrazy w pasku mapy bitowej.|
-|Href|Ścieżka do mapy bitowej. Wymagany jest atrybut resID lub href.<br /><br /> Ścieżka dołączania jest wyszukiwana pod kątem wskazanego pliku obrazu, który jest osadzony w wynikowym pliku binarnym.  Podczas scalania tabeli poleceń obraz jest kopiowany i nie jest wymagane żadne dodatkowe wyszukiwanie lub ładowanie zasobów.  Jeśli atrybut usedList nie jest obecny, wszystkie obrazy w pasku są dostępne. **Uwaga:**  Obrazy mogą być dostarczane w jednym z kilku formatów, które obejmują *.bmp*, *.png*i *.gif*.  Wcześniejsze wersje kompilatora nie obsługiwały obrazów bitmapowych 32-bitowych, które miały informacje alfa dla częściowej przezroczystości. Rozwiązaniem dla tych wersji jest użycie formatu *png.*|
-|Warunek|Element opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.<br /><br /> Atrybut GUID dla mapy bitowej nie jest skojarzony z żadną pakietu VSPackage lub inną grupą poleceń.  Powinna być unikatowa dla definicji mapy bitowej i nie powinna być używana w żadnym innym celu.|
+|resID|Identyfikator identyfikatora polecenia GUID/ID. Wymagany jest atrybut resID lub href.<br /><br /> Atrybut resID jest IDENTYFIKATORem zasobu liczb całkowitych, który określa pasek mapy bitowej, który ma zostać załadowany podczas scalania tabeli poleceń.  Po załadowaniu tabeli poleceń mapy bitowe określone przez identyfikator zasobu zostaną załadowane z zasobu tego samego modułu.|
+|usedList|Wymagany, jeśli jest obecny atrybut resID. Wybiera dostępne obrazy na pasku mapy bitowej.|
+|Tag|Ścieżka do mapy bitowej. Wymagany jest atrybut resID lub href.<br /><br /> Ścieżka include szuka wskazanego pliku obrazu, który jest osadzony w danych binarnych.  Podczas scalania tabeli poleceń obraz jest kopiowany i nie są wymagane żadne dodatkowe Wyszukiwanie zasobów ani obciążenie.  Jeśli atrybut usedList nie istnieje, wszystkie obrazy na pasku są dostępne. **Uwaga:**  Obrazy mogą być dostarczane w jednym z kilku formatów, które zawierają pliki *BMP*, *PNG*i *. gif*.  Wcześniejsze wersje kompilatora nie obsługują obrazów mapy bitowej 32-bitowych, które mają informacje alfa dla częściowej przejrzystości. Obejście tych wersji ma zastosowanie w formacie *PNG* .|
+|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -47,7 +47,7 @@ Definiuje mapę bitową. Mapa bitowa jest ładowana z zasobu lub z pliku.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element Mapy bitowe](../extensibility/bitmaps-element.md)|Grupy Elementy mapy bitowej.|
+|[Bitmapy, element](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|
 
 ## <a name="example"></a>Przykład
 
@@ -58,4 +58,4 @@ Definiuje mapę bitową. Mapa bitowa jest ładowana z zasobu lub z pliku.
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

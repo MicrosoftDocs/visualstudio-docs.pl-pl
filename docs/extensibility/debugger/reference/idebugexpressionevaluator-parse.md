@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionAwartuator::Parse | Dokumenty firmy Microsoft
+title: IDebugExpressionEvaluator::P arse | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729492"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
@@ -51,28 +51,28 @@ int Parse(
 
 ## <a name="parameters"></a>Parametry
 `upstrExpression`\
-[w] Ciąg wyrażenia, który ma być analizowany.
+podczas Ciąg wyrażenia, który ma zostać przeanalizowany.
 
 `dwFlags`\
-[w] Kolekcja [parseflags](../../../extensibility/debugger/reference/parseflags.md) stałych, które określają, jak wyrażenie ma być analizowane.
+podczas Kolekcja stałych [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) , które określają, w jaki sposób wyrażenie ma być analizowane.
 
 `nRadix`\
-[w] Radix do interpretacji wszelkich informacji liczbowych.
+podczas Podstawy do interpretowania wszelkich informacji numerycznych.
 
 `pbstrError`\
-[na zewnątrz] Zwraca błąd jako tekst czytelny dla człowieka.
+określoną Zwraca błąd jako tekst czytelny dla człowieka.
 
 `pichError`\
-[na zewnątrz] Zwraca położenie znaku początku błędu w ciągu wyrażenia.
+określoną Zwraca pozycję znaku początku błędu w ciągu wyrażenia.
 
 `ppParsedExpression`\
-[na zewnątrz] Zwraca analizowane wyrażenie w [obiekcie IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md)
+określoną Zwraca przeanalizowane wyrażenie w obiekcie [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda tworzy wyrażenie analizowane, a nie wartość rzeczywistą. Analizowane wyrażenie jest gotowe do oceny, czyli przekonwertowane na wartość.
+ Ta metoda generuje wyrażenie analizowane, a nie wartość rzeczywistą. Wyrażenie analizowane jest gotowe do obliczenia, czyli jest konwertowane na wartość.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

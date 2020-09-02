@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION | Dokumentacja firmy Microsoft
+title: TEXT_POSITION | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 210435231f98c19c16715817e2403f95da3d1f43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204833"
 ---
-# <a name="textposition"></a>TEXT_POSITION
+# <a name="text_position"></a>TEXT_POSITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa lokalizację wierszy i kolumn w podanym tekście.  
+Opisuje lokalizację wiersza i kolumny w danym tekście.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,9 +48,9 @@ public struct TEXT_POSITION { 
  Przesunięcie znaku w wierszu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest używany w [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) i [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury.  
+ Ta struktura jest używana w strukturach [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) i [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .  
   
- Ta struktura jest wypełniane przez wywołanie do następujących metod:  
+ Ta struktura jest wypełniana przez wywołanie następujących metod:  
   
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)  
   
@@ -60,7 +60,7 @@ public struct TEXT_POSITION { 
   
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)  
   
-  Ta struktura jest przekazywany jako parametr do następujących metod:  
+  Ta struktura jest przenoszona jako parametr do następujących metod:  
   
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)  
   
@@ -73,18 +73,18 @@ public struct TEXT_POSITION { 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
- [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
- [Getrange —](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)   
- [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)   
+ [GetSourceRange —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
+ [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)   
+ [GetOffset —](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)   
  [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)   
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)   

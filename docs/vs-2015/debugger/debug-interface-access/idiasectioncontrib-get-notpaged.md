@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_notpaged — | Dokumentacja firmy Microsoft
+title: 'IDiaSectionContrib:: get_notPaged | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1899e59e6eb11b53757d28f9babc09739b1fdad3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151879"
 ---
-# <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
+# <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera flagę wskazującą, czy sekcja nie może być stronicowana za mało pamięci.  
+Pobiera flagę wskazującą, czy nie można stronicować sekcji poza pamięcią.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,10 +35,10 @@ HRESULT get_notPaged ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out, retval] Zwraca `TRUE` sekcji nie może być stronicowana; w przeciwnym razie, zwraca wartość `FALSE`.  
+ [out, retval] Zwraca `TRUE` czy nie można wyprowadzić stronicowania sekcji; w przeciwnym razie zwraca `FALSE` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,5 +1,5 @@
 ---
-title: Wysyłka rozszerzeń programu Visual Studio | Dokumenty firmy Microsoft
+title: Wysyłanie rozszerzeń programu Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,50 +13,50 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700112"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Dostarczanie rozszerzeń programu Visual Studio
-Po zakończeniu tworzenia rozszerzenia można zainstalować je na innych komputerach, udostępnić go znajomym i współpracownikom lub opublikować go w witrynie Visual Studio Marketplace. W tej sekcji wyjaśniamy wszystkie czynności, które należy zrobić, aby opublikować i zachować rozszerzenie: pracę z plikami .vsix, publikowanie, lokalizowanie i aktualizowanie.
+Po zakończeniu opracowywania rozszerzenia można go zainstalować na innych maszynach, udostępnić go znajomym i współpracownikom albo opublikować na Visual Studio Marketplace. W tej sekcji wyjaśnimy wszystkie czynności, które należy wykonać w celu opublikowania i utrzymania rozszerzenia: Praca z plikami. vsix, publikowanie, lokalizowanie i aktualizowanie.
 
 ## <a name="working-with-vsix-extensions"></a>Praca z rozszerzeniami VSIX
- Rozszerzenia VSIX można utworzyć, tworząc pusty projekt VSIX, a następnie dodając do niego różne szablony elementów. Aby uzyskać więcej informacji, zobacz [Szablon projektu VSIX](../extensibility/vsix-project-template.md).
+ Rozszerzenia VSIX można utworzyć, tworząc pusty projekt VSIX, a następnie dodając do niego różne szablony elementów. Aby uzyskać więcej informacji, zobacz [szablon projektu VSIX](../extensibility/vsix-project-template.md).
 
- Za pomocą formatu VSIX można spakować szablony projektów, szablony elementów, pakiety VSPackages, składniki mef (Managed Extensibility Framework), formanty **przybornika,** zestawy i typy niestandardowe (obejmuje to niestandardowe strony startowe dla programu Visual Studio 2017). Format VSIX używa wdrożenia opartego na plikach. Aby uzyskać więcej informacji na temat pakietów VSIX, zobacz [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+ Można użyć formatu VSIX do spakowania szablonów projektu, szablonów elementów, pakietów VSPackage, składników Managed Extensibility Framework (MEF), formantów **przybornika** , zestawów i typów niestandardowych (obejmuje to niestandardowe strony początkowe dla programu Visual Studio 2017). Format VSIX używa wdrożenia opartego na plikach. Aby uzyskać więcej informacji na temat pakietów VSIX, zobacz [anatomię pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
- Format VSIX nie obsługuje instalacji fragmentów kodu. Nie obsługuje również niektórych innych scenariuszy, takich jak zapisywanie do globalnej pamięci podręcznej zestawów (GAC) lub do rejestru systemu. Jeśli chcesz napisać do gac lub rejestru w instalacji, należy użyć Instalatora Windows. Aby uzyskać więcej informacji, zobacz [Przygotowywanie rozszerzeń dla wdrażania Instalatora Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
+ Format VSIX nie obsługuje instalacji fragmentów kodu. Nie obsługuje również niektórych innych scenariuszy, takich jak zapisywanie do globalnej pamięci podręcznej zestawów (GAC) lub rejestr systemowy. Jeśli konieczne jest zapisanie w pamięci GAC lub w rejestrze w instalacji, należy użyć Instalator Windows. Aby uzyskać więcej informacji, zobacz [Przygotowywanie rozszerzeń wdrożenia Instalator Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
-## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Publikowanie rozszerzenia w witrynie Visual Studio Marketplace
- Rozszerzenie można rozpowszechniać wśród innych osób, wysyłając im plik .vsix lub wstawiając je na serwer. Ale najlepszym sposobem, aby uzyskać kod w rękach wielu ludzi jest umieszczenie go na [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Rozszerzenia programu Visual Studio Marketplace są dostępne dla użytkowników programu Visual Studio za pośrednictwem **rozszerzeń i aktualizacji.** Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Publikowanie rozszerzenia w Visual Studio Marketplace
+ Rozszerzenie można rozpowszechnić na inne osoby, wysyłając je do pliku. vsix lub umieszczając na serwerze. Jednak najlepszym sposobem na uzyskanie kodu w ręce wielu osób jest umieszczenie go w [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Rozszerzenia Visual Studio Marketplace są dostępne dla użytkowników programu Visual Studio przez **rozszerzenia i aktualizacje**. Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
- Pełny przykład, który pokazuje, jak przekazać rozszerzenie do portalu Visual Studio Marketplace, zobacz [Instruktaż: Publikowanie rozszerzenia programu Visual Studio.](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)
+ Pełny przykład przedstawiający sposób przekazywania rozszerzenia do Visual Studio Marketplace można znaleźć w [przewodniku: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 
 ## <a name="private-galleries"></a>Galerie prywatne
- Podczas opracowywania formantów, szablonów i narzędzi można je udostępniać organizacji, publikując je w prywatnej galerii w intranecie. Aby uzyskać więcej informacji, zobacz [Galerie prywatne](../extensibility/private-galleries.md).
+ Podczas tworzenia formantów, szablonów i narzędzi można udostępniać je organizacji, publikując je w prywatnej galerii w intranecie. Aby uzyskać więcej informacji, zobacz [prywatne galerie](../extensibility/private-galleries.md).
 
 ## <a name="localizing-your-extension"></a>Lokalizowanie rozszerzenia
- Jeśli planujesz zwolnić rozszerzenie w różnych lokalizacjach, należy rozważyć jego zlokalizowanie. Aby uzyskać wyjaśnienie, o co chodzi, zobacz [Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md).
+ Jeśli planujesz wydanie rozszerzenia w różnych ustawieniach regionalnych, należy rozważyć jego lokalizowanie. Aby zapoznać się z informacjami dotyczącymi tego, czego dotyczy, zobacz [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md).
 
 ## <a name="updating-and-versioning-your-extension"></a>Aktualizowanie i przechowywanie wersji rozszerzenia
- Po opublikowaniu rozszerzenia nadejdzie czas, kiedy trzeba je zaktualizować. Aby dowiedzieć się, jak zaktualizować rozszerzenie opublikowane w portalu Visual Studio Marketplace, zobacz [Jak: Aktualizowanie rozszerzenia](../extensibility/how-to-update-a-visual-studio-extension.md).
+ Po opublikowaniu rozszerzenia pozostanie czas, gdy trzeba go zaktualizować. Aby dowiedzieć się, jak zaktualizować rozszerzenie opublikowane na Visual Studio Marketplace, zobacz [How to: Update a Extension](../extensibility/how-to-update-a-visual-studio-extension.md).
 
- Rozszerzenie można ustawić tak, aby obsługiwało wiele wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Obsługa wielu wersji programu Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).
+ Możesz ustawić rozszerzenie, aby obsługiwało wiele wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Obsługa wielu wersji programu Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|W tym artykule wyjaśniono, jak zainstalować szablon projektu niestandardowego za pomocą szablonu projektu VSIX.|
+|[Wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Wyjaśnia, w jaki sposób używać szablonu projektu VSIX do instalowania niestandardowego szablonu projektu.|
 |[Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Opisuje składniki pakietu VSIX.|
 |[Szablon projektu VSIX](../extensibility/vsix-project-template.md)|Zawiera instrukcje krok po kroku dotyczące sposobu pakowania i publikowania rozszerzenia.|
-|[Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)|W tym artykule wyjaśniono, jak dostarczyć zlokalizowany tekst dla procesu instalacji przy użyciu plików extension.vsixlangpack.|
-|[Instrukcje: aktualizowanie rozszerzenia](../extensibility/how-to-update-a-visual-studio-extension.md)|W tym artykule opisano, jak zaktualizować rozszerzenie w systemie i jak wdrożyć aktualizację do istniejącego rozszerzenia programu Visual Studio.|
-|[Instrukcje: dodawanie zależności do pakietu VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|W tym artykule opisano sposób dodawania odwołań do pakietów wdrażania vsix.|
-|[Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|W tym artykule wyjaśniono, jak wdrożyć rozszerzenie za pomocą Instalatora Windows.|
-|[Podpisywanie pakietów VSIX](../extensibility/signing-vsix-packages.md)|W tym artykule wyjaśniono, jak podpisać pakiety VSIX.|
-|[Galerie prywatne](../extensibility/private-galleries.md)|W tym artykule wyjaśniono, jak tworzyć prywatne galerie dla rozszerzeń.|
-|[Obsługiwanie wielu wersji programu Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Pokazuje, jak mieć rozszerzenie obsługuje wiele wersji programu Visual Studio.|
-|[Lokalizowanie z programu Visual Studio](locating-visual-studio.md)|W tym artykule opisano sposób lokalizowania wystąpień programu Visual Studio dla wdrożenia rozszerzenia niestandardowego.|
+|[Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)|Wyjaśnia, jak zapewnić zlokalizowany tekst dla procesu instalacji przy użyciu plików rozszerzenia. vsixlangpack.|
+|[Instrukcje: aktualizowanie rozszerzenia](../extensibility/how-to-update-a-visual-studio-extension.md)|Opisuje sposób aktualizowania rozszerzenia w systemie i wdrażania aktualizacji w istniejącym rozszerzeniu programu Visual Studio.|
+|[Instrukcje: dodawanie zależności do pakietu VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Opisuje sposób dodawania odwołań do pakietów wdrożeniowych VSIX.|
+|[Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Wyjaśnia, jak wdrożyć rozszerzenie za pomocą Instalator Windows.|
+|[Podpisywanie pakietów VSIX](../extensibility/signing-vsix-packages.md)|Wyjaśnia, jak podpisać pakiety VSIX.|
+|[Galerie prywatne](../extensibility/private-galleries.md)|Wyjaśnia, jak utworzyć Galerie prywatne dla rozszerzeń.|
+|[Obsługiwanie wielu wersji programu Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Pokazuje, w jaki sposób rozszerzenie ma obsługiwać wiele wersji programu Visual Studio.|
+|[Lokalizowanie z programu Visual Studio](locating-visual-studio.md)|Opisuje sposób lokalizowania wystąpień programu Visual Studio na potrzeby wdrożenia rozszerzeń niestandardowych.|

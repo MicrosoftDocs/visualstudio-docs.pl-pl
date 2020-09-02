@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e2db8596c1c16f5c9fb54a8c7c867b06e997b7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657706"
 ---
 # <a name="evaluate-statement-command"></a>Evaluate Statement — Polecenie
@@ -33,7 +33,7 @@ Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Argumenty
- Wymagane `text`. Instrukcja, która ma zostać obliczona.
+ `text` Wymagane. Instrukcja, która ma zostać obliczona.
 
 ## <a name="remarks"></a>Uwagi
  Okno używane do wprowadzania polecenia **EvaluateStatement** określa, czy znak równości (=) jest interpretowany jako operator porównania, czy jako operator przypisania.
@@ -44,7 +44,7 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a=b)
 ```
 
- zwróci wartość `false`.
+ zwróci wartość `false` .
 
  W oknie **bezpośrednim** , z przeciwieństwem, znak równości (=) jest interpretowany jako operator przypisania. Tak więc, na przykład, polecenie
 
@@ -52,7 +52,7 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a=b)
 ```
 
- zostanie przypisany do zmiennej `a` wartość `b` zmiennej.
+ przypisze do zmiennej `a` wartość zmiennej `b` .
 
 ## <a name="example"></a>Przykład
 
