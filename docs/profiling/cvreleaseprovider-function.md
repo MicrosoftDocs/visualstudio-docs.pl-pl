@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0347d3e2345defb13a67e0e0d730e010be618a21
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332176"
 ---
 # <a name="cvreleaseprovider-function"></a>Cvreleaseprovider —, funkcja
@@ -31,7 +31,7 @@ HRESULT CvReleaseProvider(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pProvider`Kontekst dostawcy. Nie może mieć wartości NULL.
+ `pProvider` Kontekst dostawcy. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
  S_OK, gdy dostawca został pomyślnie wydzierżawiony lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.

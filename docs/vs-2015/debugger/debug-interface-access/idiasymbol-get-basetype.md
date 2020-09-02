@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_basetype — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_baseType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df922cbbe1c065f4df79fa62b7b4b0213dd7f487
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64807491"
 ---
-# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
+# <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pobiera typ podstawowy dla tego symbolu.  
@@ -35,16 +35,16 @@ HRESULT get_baseType ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość z zakresu od [basictype — wyliczenie](../../debugger/debug-interface-access/basictype.md) wyliczenie opisujące typ podstawowy elementu symbolu.  
+ określoną Zwraca wartość z wyliczenia [basictype](../../debugger/debug-interface-access/basictype.md) , określając typ podstawowy symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Typ podstawowy dla symbolu można określić najpierw wprowadzenie typ symbolu, a następnie odpytywanie, które zwróciło typ podstawowy typu. Należy pamiętać, że niektóre symbole nie może mieć typu podstawowego — na przykład nazwa struktury.  
+ Typ podstawowy dla symbolu można określić, najpierw pobierając typ symbolu, a następnie interrogating, który zwraca typ dla typu podstawowego. Należy zauważyć, że niektóre symbole nie mogą mieć typu podstawowego — na przykład nazwa struktury.  
   
 ## <a name="example"></a>Przykład  
   
@@ -65,10 +65,10 @@ if (pType->get_type( &pBaseType ) == S_OK)
   
 |Wymaganie|Opis|  
 |-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|V7.0 DIA SDK|  
+|Nagłówki|dia2. h|  
+|Wersja:|DIA SDK v 7.0|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Basictype — wyliczenie](../../debugger/debug-interface-access/basictype.md)   
+ [Basictype — Wyliczenie](../../debugger/debug-interface-access/basictype.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

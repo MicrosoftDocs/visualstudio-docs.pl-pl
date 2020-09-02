@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: CreateInPlace (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184240"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Określa, czy należy utworzyć projekt i przeprowadzić wymiany parametru w określonej lokalizacji lub przeprowadzić wymiany parametru w lokalizacji tymczasowej, a następnie zapisujesz projekt do określonej lokalizacji.  
+Określa, czy należy utworzyć projekt i wykonać zastępowanie parametrów w określonej lokalizacji, czy wykonać zastąpienie parametru w tymczasowej lokalizacji, a następnie zapisać projekt w określonej lokalizacji.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<CreateInPlace >  
+ \<CreateInPlace>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,18 +48,18 @@ Określa, czy należy utworzyć projekt i przeprowadzić wymiany parametru w okr
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  
   
- Tekst musi być albo `true` lub `false`. Jeśli `true`, projekt zostanie utworzony i wymiany parametru odbywa się w lokalizacji określonej w **nowy projekt** okno dialogowe. Jeśli `false`projektu zostaną skopiowane do określonej lokalizacji i wymiany parametru odbywa się w lokalizacji tymczasowej.  
+ Tekst musi mieć wartość `true` lub `false` . Jeśli `true` projekt jest tworzony i zastępowanie parametrów jest wykonywane w lokalizacji określonej w oknie dialogowym **Nowy projekt** . Jeśli `false` zastępowanie parametrów jest wykonywane w tymczasowej lokalizacji, a projekt jest kopiowany do określonej lokalizacji.  
   
 ## <a name="remarks"></a>Uwagi  
- `CreateInPlace` element jest opcjonalny. Wartość domyślna to `true`.  
+ `CreateInPlace` jest elementem opcjonalnym. Wartość domyślna to `true`.  
   
 ## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonu.  
+ Poniższy przykład ilustruje metadane [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonu.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

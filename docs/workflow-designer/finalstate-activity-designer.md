@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e8973de1deba610a90e21edb870000abbb03e3
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875595"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState, projektant działań
@@ -32,7 +32,7 @@ W poniższej tabeli przedstawiono właściwości, które można ustawić za pomo
 |<xref:System.Activities.Statements.State.DisplayName%2A>|Fałsz|Określa przyjazną nazwę <xref:System.Activities.Statements.State> projektanta działań w nagłówku. Wartość domyślna to **State**. Wartość można edytować w siatce właściwości lub bezpośrednio w nagłówku projektanta działań. Ta wartość <xref:System.Activities.Statements.State.DisplayName%2A> jest używana w nawigacyjnym nawigacji, który jest wyświetlany w górnej części projektanta przepływu pracy.<br /><br /> Chociaż <xref:System.Activities.Statements.State.DisplayName%2A> nie jest to ściśle wymagane, najlepszym rozwiązaniem jest użycie jednego z nich.|
 |<xref:System.Activities.Statements.State.Entry%2A>|Fałsz|Określa akcję, która występuje, gdy ten stan jest przenoszony do. Tę wartość można ustawić, przeciągając działanie z **przybornika** i upuszczając je na <xref:System.Activities.Statements.State.Entry%2A> sekcję stanu.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [Stan](../workflow-designer/state-activity-designer.md)

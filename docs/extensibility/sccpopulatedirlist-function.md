@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccPopulateDirList | Dokumenty firmy Microsoft
+title: Funkcja SccPopulateDirList | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700553"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList, funkcja
-Ta funkcja określa, które katalogi i (opcjonalnie) pliki są przechowywane w kontroli źródła, biorąc pod uwagę listę katalogów do zbadania.
+Ta funkcja określa, które katalogi i (opcjonalnie) pliki są przechowywane w kontroli źródła, z uwzględnieniem listy katalogów do sprawdzenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,40 +36,40 @@ SCCRTN SccPopulateDirList(
 ```
 
 #### <a name="parameters"></a>Parametry
- Pcontext
+ pContext
 
-[w] Wskaźnik kontekstu wtyczki formantu źródła.
+podczas Wskaźnik kontekstu wtyczki kontroli źródła.
 
- nDirs (nDirs)
+ nDirs
 
-[w] Liczba ścieżek katalogu w `lpDirPaths` tablicy.
+podczas Liczba ścieżek katalogów w `lpDirPaths` tablicy.
 
- lpDirPaths (lpDirPaths)
+ lpDirPaths
 
-[w] Tablica ścieżek katalogu do zbadania.
+podczas Tablica ścieżek katalogów do sprawdzenia.
 
- pfnPopuluj
+ pfnPopulate
 
-[w] Wywołanie funkcji wywołania dla każdej ścieżki katalogu i (opcjonalnie) nazwy pliku w (szczegóły można znaleźć w `lpDirPaths` polu [POPDIRLISTFUNC).](../extensibility/popdirlistfunc.md)
+podczas Funkcja wywołania zwrotnego do wywołania dla każdej ścieżki katalogu i (opcjonalnie) filename w `lpDirPaths` (zobacz [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) , aby uzyskać szczegółowe informacje).
 
  pvCallerData
 
-[w] Wartość, która ma być przekazana bez zmian do funkcji wywołania zwrotnego.
+podczas Wartość, która ma zostać przeniesiona bez zmian do funkcji wywołania zwrotnego.
 
- Foptions
+ fOptions
 
-[w] Kombinacja wartości, które kontrolują sposób przetwarzania katalogów (zobacz sekcję "Flagi Listy wypełnień" [w bitflags używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md) dla możliwych wartości).
+podczas Kombinacja wartości kontrolujących sposób przetwarzania katalogów (zobacz sekcję "flagi PopulateDirList" [Bitflags używanych przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md) dla możliwych wartości).
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Pomyślnie zakończono operację.|
+|SCC_OK|Pomyślnie ukończono operację.|
 |SCC_E_UNKNOWNERROR|Wystąpił błąd.|
 
 ## <a name="remarks"></a>Uwagi
- Tylko te katalogi i (opcjonalnie) nazwy plików, które znajdują się w repozytorium kontroli źródła są przekazywane do funkcji wywołania zwrotnego.
+ Tylko te katalogi i (opcjonalnie) nazwy plików, które faktycznie znajdują się w repozytorium kontroli źródła są przesyłane do funkcji wywołania zwrotnego.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

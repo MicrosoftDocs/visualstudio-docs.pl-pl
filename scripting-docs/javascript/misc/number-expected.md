@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b8148e18fba3fca24cc6615f4f345c4883306ca3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816439"
 ---
 # <a name="number-expected"></a>Liczba oczekiwana
@@ -28,6 +28,6 @@ Podjęto próbę wywołania metody **Number. prototype. ToString** lub **Number.
   
 - Wywołaj metody **Number. prototype. ToString** lub **Number. prototype. valueOf** dla obiektów typu **Number**.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Number — Obiekt](../../javascript/reference/number-object-javascript.md)   
  [number, właściwość (Error)](../../javascript/reference/number-property-error-javascript.md)

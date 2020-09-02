@@ -17,14 +17,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3b58f772387c09078c6086883a7c9322090c3df7
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816452"
 ---
 # <a name="true-keyword"></a>Słowo kluczowe True
 Słowo kluczowe **true** ma wartość równą-1.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [False (Windows Script Technologies)](../../javascript/misc/false-windows-script-technologies.md)

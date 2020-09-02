@@ -1,5 +1,5 @@
 ---
-title: Instalowanie programu Visual Studio SDK | Dokumentacja firmy Microsoft
+title: Instalowanie zestawu Visual Studio SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: visual-studio-sdk
@@ -9,56 +9,56 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88a6266a3f5910def0bf5041a37f89c2b3d67416
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414464"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64858700"
 ---
-# <a name="installing-the-visual-studio-sdk"></a>Instalowanie programu Visual Studio SDK
+# <a name="installing-the-visual-studio-sdk"></a>Instalowanie zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później.  
+Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później.  
   
-## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Instalowanie programu Visual Studio SDK w ramach instalacji programu Visual Studio  
- Jeśli chcesz uwzględnić VSSDK w instalacji programu Visual Studio, należy wykonać instalację niestandardową.  
+## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Instalowanie zestawu Visual Studio SDK w ramach instalacji programu Visual Studio  
+ Jeśli chcesz uwzględnić VSSDK w instalacji programu Visual Studio, musisz wykonać instalację niestandardową.  
   
 > [!NOTE]
-> W pliku wykonywalnego instalacji programu Visual Studio SDK jest nazywany **Visual Studio Extensibility Tools**.  
+> W pliku wykonywalnym Instalatora Visual Studio SDK jest wywoływana **Visual Studio Extensibility Tools**.  
   
-1. Uruchom instalację programu Visual Studio 2015. Można zainstalować w każdej wersji programu Visual Studio, z wyjątkiem Express.  
+1. Uruchom instalację programu Visual Studio 2015. Możesz zainstalować dowolną wersję programu Visual Studio, z wyjątkiem Express.  
   
-2. Na pierwszym ekranie Wybierz **niestandardowe**, a nie **domyślne**. Kliknij przycisk **Dalej**.  
+2. Na pierwszym ekranie wybierz opcję **niestandardowa**, a nie **Domyślna**. Kliknij przycisk **Dalej**.  
   
-3. Powinien zostać wyświetlony w widoku drzewa funkcji niestandardowych. Otwórz **popularnych narzędzi**. Powinien zostać wyświetlony **Visual Studio Extensibility Tools** .  
+3. Powinien zostać wyświetlony widok drzewa funkcji niestandardowych. Otwórz okno **popularne narzędzia**. Powinna zostać wyświetlona **Visual Studio Extensibility Tools** .  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4. Sprawdź **Visual Studio Extensibility Tools** , następnie kliknij przycisk **dalej** i kontynuować instalację.  
+4. Zaznacz **Visual Studio Extensibility Tools** , a następnie kliknij przycisk **dalej** i Kontynuuj instalację.  
   
-## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Instalowanie zestawu SDK programu Visual Studio po zainstalowaniu programu Visual Studio  
- Jeśli zdecydujesz się zainstalować zestawu SDK programu Visual Studio po zakończeniu instalacji programu Visual Studio, powinny wykonaj następującą procedurę:  
+## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Instalowanie zestawu Visual Studio SDK po zainstalowaniu programu Visual Studio  
+ Jeśli zdecydujesz się zainstalować zestaw SDK programu Visual Studio po zakończeniu instalacji programu Visual Studio, postępuj zgodnie z następującą procedurą:  
   
-1. Przejdź do **Panel sterowania / Programy / programy i funkcje**i poszukaj **programu Visual Studio 2015**. Można zainstalować programu Visual Studio SDK dla dowolnej wersji programu Visual Studio 2015, z wyjątkiem Express.  
+1. Przejdź do **Panelu sterowania/programy/programy i funkcje**, a następnie wyszukaj **program Visual Studio 2015**. Zestaw Visual Studio SDK można zainstalować dla dowolnej wersji programu Visual Studio 2015 z wyjątkiem języka Express.  
   
-2. Kliknij prawym przyciskiem myszy **programu Visual Studio 2015**, a następnie kliknij przycisk **zmiany**. Powinna zostać wyświetlona strona instalacji.  
+2. Kliknij prawym przyciskiem myszy **program Visual Studio 2015**, a następnie kliknij przycisk **Zmień**. Powinna zostać wyświetlona strona instalacji.  
   
-3. Wykonaj tę samą procedurę jak **Instalowanie zestawu SDK programu Visual Studio jako część instalacji programu Visual Studio** powyżej.  
+3. Postępuj zgodnie z tą samą procedurą jak w **przypadku instalowania programu Visual Studio SDK w ramach instalacji programu Visual Studio** .  
   
-4. Kliknij przycisk **Visual Studio Extensibility Tools** link, aby zainstalować program Visual Studio SDK.  
+4. Kliknij link **Visual Studio Extensibility Tools** , aby zainstalować zestaw Visual Studio SDK.  
   
-## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Instalowanie zestawu SDK programu Visual Studio za pomocą rozwiązania  
- Po otwarciu rozwiązania z projektem rozszerzalności bez instalowania najpierw oprogramowania VSSDK zostanie wyświetlony monit, wyróżnione pasek powyżej Eksploratora rozwiązań. Powinien on wyglądać podobnie do poniższych:  
+## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Instalowanie zestawu Visual Studio SDK z rozwiązania  
+ Jeśli otworzysz rozwiązanie przy użyciu projektu rozszerzalności bez wcześniejszego zainstalowania VSSDK, zostanie wyświetlony monit o wyróżniony pasek informacji powyżej Eksplorator rozwiązań. Powinien wyglądać podobnie do poniższego:  
   
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
-## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Instalowanie programu Visual Studio SDK z poziomu wiersza polecenia  
- VSSDK można zainstalować z poziomu wiersza polecenia, za pomocą **/installselectableitems są** przełączyć z Instalatorem programu Visual Studio. Aby uzyskać szczegółowe informacje o korzystaniu z parametrów wiersza polecenia z Instalatorem, zobacz [instalowania programu Visual Studio 2015](../install/install-visual-studio-2015.md).  
+## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Instalowanie zestawu Visual Studio SDK z wiersza polecenia  
+ Możesz zainstalować VSSDK z wiersza polecenia, używając przełącznika **/InstallSelectableItems** z instalatorem programu Visual Studio. Aby uzyskać szczegółowe informacje o używaniu parametrów wiersza polecenia w instalatorze, zobacz [Instalowanie programu Visual Studio 2015](../install/install-visual-studio-2015.md).  
   
- Poniżej przedstawiono sposób instalowania VSSDK dyskretnie za pomocą Instalatora programu Visual Studio 2015 Community:  
+ Poniżej przedstawiono sposób instalacji VSSDK w trybie cichym przy użyciu Instalatora społeczności programu Visual Studio 2015:  
   
 ```  
 vs_community.exe /s /installSelectableItems VS_SDK_GROUPV1  
 ```  
   
- Należy pamiętać, że należy użyć Instalatora programu Visual Studio, która jest zgodna z zainstalowaną wersją programu Visual Studio. Na przykład w przypadku programu Visual Studio Enterprise zainstalowana na danym komputerze należy uruchomić Instalatora programu Visual Studio Enterprise (vs_enterprise.exe).
+ Należy pamiętać, że należy użyć Instalatora programu Visual Studio, który jest zgodny z zainstalowaną wersją programu Visual Studio. Na przykład jeśli na komputerze zainstalowano Visual Studio Enterprise, należy uruchomić Instalatora Visual Studio Enterprise (vs_enterprise.exe).

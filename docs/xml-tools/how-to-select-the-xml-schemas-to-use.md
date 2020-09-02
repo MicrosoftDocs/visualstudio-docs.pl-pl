@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06f9de6927d616d6cf08995c076246c8a45ec014
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815971"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Instrukcje: Wybieranie schematów XML do użycia
@@ -58,7 +58,7 @@ Określone schematy są zapisywane w postaci (ukrytego) pliku opcji użytkownika
 
 3. Przeglądaj i wybierz schematy, które mają zostać dodane do pamięci podręcznej schematów.
 
-4. Kliknij przycisk **Open** (Otwórz).
+4. Kliknij przycisk **Otwórz**.
 
    Schematy są dodawane do pamięci podręcznej schematu, a wartość **Użyj** wartości kolumna jest ustawiona na **Użyj tego schematu**.
 
@@ -73,7 +73,7 @@ Określone schematy są zapisywane w postaci (ukrytego) pliku opcji użytkownika
    > [!NOTE]
    > Jeśli nadal masz odwołanie do schematu za pośrednictwem `schemaLocation` atrybutu lub pasujące `targetNamespace` **usunięcie** nie będzie działało w tej sytuacji z powodu autoskojarzenia. W takim przypadku zaleca się oznaczyć schemat jako **nieużywający wybranych schematów** w kolumnie **Użyj** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pamięć podręczna schematów](../xml-tools/schema-cache.md)
 - [Okno dialogowe schematy XML](../xml-tools/xml-schemas-dialog-box.md)

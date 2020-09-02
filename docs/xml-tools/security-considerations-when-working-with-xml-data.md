@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e18d2c2e47c3cc1f7e1b3be0112e49e2710e45c8
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815841"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML
@@ -41,6 +41,6 @@ Debuger XSLT wykorzystuje zarządzane aparaty debugowania programu Visual Studio
 
 - Ewaluatora wyrażeń XSLT jest ładowany przez zarządzany aparat debugowania. Zarządzany aparat debugowania zakłada, że cały kod jest uruchamiany z komputera lokalnego użytkownika. W związku z tym <xref:System.Xml.Xsl.XslCompiledTransform> Klasa pobiera plik XSLT na komputer lokalny użytkownika. Możliwe, że może wystąpić podniesienie uprawnień w wykonywaniu, przez wykonanie wszystkich transformacji XSLT w nowej domenie aplikacji z ograniczonymi uprawnieniami
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Domeny aplikacji](/dotnet/framework/app-domains/application-domains)

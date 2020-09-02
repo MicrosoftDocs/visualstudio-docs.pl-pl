@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS | Dokumentacja firmy Microsoft
+title: BPERESI_FIELDS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1b5cba13e439c69b3502b00c6ae159b6af28178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153234"
 ---
-# <a name="bperesifields"></a>BPERESI_FIELDS
+# <a name="bperesi_fields"></a>BPERESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa informacje, które mają zostać pobrane dotyczących rozwiązania nie powiodło się punktu przerwania.  
+Określa informacje, które mają zostać pobrane w przypadku awarii punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,34 +51,34 @@ public enum enum_BPERESI_FIELDS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  PERESI_BPRESLOCATION  
- Inicjowanie bądź użyj `bpResLocation` pola (lokalizacji punktu przerwania rozdzielczość) [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury.  
+ Zainicjuj/Użyj `bpResLocation` pola (lokalizacja rozpoznawania punktów przerwania) struktury [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) .  
   
  BPERESI_PROGRAM  
- Inicjowanie bądź użyj `pProgram` pole `BP_ERROR_RESOLUTION_INFO` struktury.  
+ Zainicjuj/Użyj `pProgram` pola `BP_ERROR_RESOLUTION_INFO` struktury.  
   
  BPERESI_THREAD  
- Inicjowanie bądź użyj `pThread` pole `BP_ERROR_RESOLUTION_INFO` struktury.  
+ Zainicjuj/Użyj `pThread` pola `BP_ERROR_RESOLUTION_INFO` struktury.  
   
  BPERESI_MESSAGE  
- Inicjowanie bądź użyj `bstrMessage` pole `BP_ERROR_RESOLUTION_INFO` struktury.  
+ Zainicjuj/Użyj `bstrMessage` pola `BP_ERROR_RESOLUTION_INFO` struktury.  
   
  BPERESI_TYPE  
- Inicjowanie bądź użyj `dwType` pola (typ punktu przerwania) `BP_ERROR_RESOLUTION_INFO` struktury.  
+ Zainicjuj/Użyj `dwType` pola (typ punktu przerwania) `BP_ERROR_RESOLUTION_INFO` struktury.  
   
  BPERESI_ALLFIELDS  
- Inicjowanie bądź Użyj wszystkich pól `BP_ERROR_RESOLUTION_INFO` struktury.  
+ Inicjuj/używaj wszystkich pól `BP_ERROR_RESOLUTION_INFO` struktury.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako parametr do [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) metodę, aby wskazać, które pola [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury, które mają zostać zainicjowane.  
+ Przekazuje jako parametr do metody [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) , aby wskazać, które pola struktury [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) mają być inicjowane.  
   
- Te wartości są również używane do wskazania, które pola w `BP_ERROR_RESOLUTION_INFO` struktury są używane i ważne, gdy tej struktury jest zwracany.  
+ Te wartości są również używane do wskazywania, które pola `BP_ERROR_RESOLUTION_INFO` struktury są używane i są prawidłowe podczas zwracania tej struktury.  
   
- Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Te wartości mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

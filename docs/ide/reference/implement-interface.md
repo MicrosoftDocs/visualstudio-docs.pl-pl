@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595556"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementowanie interfejsu w programie Visual Studio
 
-To generowanie kodu dotyczy:
+Ta generacja kodu ma zastosowanie do:
 
 - C#
 
@@ -26,11 +26,11 @@ To generowanie kodu dotyczy:
 
 **Kiedy:** Chcesz dziedziczyć z interfejsu.
 
-**Dlaczego?** Można ręcznie zaimplementować cały interfejs jeden po drugim, jednak ta funkcja automatycznie wygeneruje wszystkie podpisy metod.
+**Dlaczego:** Można ręcznie zaimplementować wszystkie interfejsy jeden po sobie, jednak ta funkcja będzie automatycznie generować wszystkie podpisy metod.
 
 ## <a name="how-to"></a>Porady
 
-1. Umieść kursor w wierszu, w którym znajduje się czerwona falista, która wskazuje, że odwołujesz się do interfejsu, ale nie zaimplementowano wszystkich wymaganych elementów członkowskich.
+1. Umieść kursor w wierszu, w którym znajduje się czerwony zygzak wskazujący, że odwołuje się do interfejsu, ale nie zaimplementowano wszystkich wymaganych członków.
 
    - C#:
 
@@ -43,34 +43,34 @@ To generowanie kodu dotyczy:
 2. Następnie wykonaj jedną z następujących czynności:
 
    - **Klawiatura**
-      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
    - **Mysz**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **Szybkie akcje i Refaktoryzowania.**
-      - Najedź kursorem na czerwoną falosę i kliknij przycisk ![błąd żarówki](media/error-bulb.png) pojawi się ikona.
-      - Kliknij ikonę ![błąd żarówki](media/error-bulb.png) ikonę, która pojawia się na lewym marginesie, jeśli kursor tekstowy znajduje się już w wierszu z czerwoną faliczkiem.
+      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
+      - Kliknij pozycję ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
 
-3. Z menu rozwijanego **wybierz pozycję Zaimplementuj interfejs.**
+3. Z menu rozwijanego wybierz pozycję **Implementuj interfejs** .
 
-   ![Implementowanie podglądu interfejsu](media/interface-preview-cs.png)
+   ![Implementuj wersję zapoznawczą interfejsu](media/interface-preview-cs.png)
 
    > [!TIP]
-   > - Użyj łącza **Podgląd zmian** u dołu okna podglądu, [aby wyświetlić wszystkie zmiany,](../../ide/preview-changes.md) które zostaną wprowadzone przed dokonaniem wyboru.
-   > - Użyj **łącza Dokumentu,** **Projektu**i **Rozwiązania** u dołu okna podglądu, aby utworzyć odpowiednie podpisy metod w wielu klasach, które implementują interfejs.
+   > - Użyj linku **Podgląd zmian** w dolnej części okna Podgląd, [Aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) , które zostaną wprowadzone przed dokonaniem wyboru.
+   > - Użyj linków **dokumentu**, **projektu**i **rozwiązania** w dolnej części okna Podgląd, aby utworzyć odpowiednie sygnatury metod dla wielu klas, które implementują interfejs.
 
-   Podpisy metody interfejsu jest tworzony i jest gotowy do zaimplementowania.
+   Sygnatury metod interfejsu są tworzone i gotowe do zaimplementowania.
 
    - C#:
 
-       ![Implementowanie wyniku interfejsu C #](media/interface-result-cs.png)
+       ![Zaimplementuj wynik interfejsu C #](media/interface-result-cs.png)
 
    - Visual Basic:
 
-       ![Implementowanie wyniku interfejsu VB](media/interface-result-vb.png)
+       ![Implementuj wyniki interfejsu VB](media/interface-result-vb.png)
 
    > [!TIP]
-   > (tylko C#) Użyj **implement interfejsu jawnie** opcja poprzecznie każdej wygenerowanej metody z nazwą interfejsu, aby uniknąć kolizji nazw.
+   > (Tylko w języku C#) Użyj opcji **Zaimplementuj interfejs jawnie** , aby przede wszystkim wygenerowanej metody uzyskać nazwę interfejsu, aby uniknąć kolizji nazw.
    >
-   > ![Implementowanie interfejsu jawnie wynik](media/interface-explicitresult-cs.png);
+   > ![Zaimplementuj interfejs jawnie](media/interface-explicitresult-cs.png);
 
 ## <a name="see-also"></a>Zobacz też
 

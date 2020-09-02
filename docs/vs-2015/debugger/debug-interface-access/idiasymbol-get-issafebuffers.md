@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_issafebuffers — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_isSafeBuffers | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 046744fda09f272ca80c2760e880dce23d45ae36
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65673760"
 ---
-# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+# <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera flagę określającą, czy jest używane dyrektywy preprocesora bezpieczne buforu. Zastosowania [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) ustawiono `SymTagFunction`.  
+Pobiera flagę, która określa, czy jest używana dyrektywa preprocesora dla bezpiecznego bufora. Użyj, gdy [Wyliczenie SymTagEnum —](../../debugger/debug-interface-access/symtagenum.md) jest ustawione na `SymTagFunction` .  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,20 +35,20 @@ HRESULT get_isSafeBuffers( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli wskaźnik używa dyrektywy preprocesora bezpieczne buforu; w przeciwnym razie zwraca `FALSE`.  
+ określoną Zwraca `TRUE` czy wskaźnik używa dyrektywy preprocesora dla bezpiecznego bufora; w przeciwnym razie zwraca `FALSE` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2. h  
   
- Biblioteka: diaguids.lib  
+ Biblioteka: diaguids. lib  
   
  DLL: msdia100.dll  
   

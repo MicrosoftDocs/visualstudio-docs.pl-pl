@@ -58,10 +58,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a9ebda81f013f42aeac23c9c0a8cc5a0a41f5f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651342"
 ---
 # <a name="managing-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
@@ -70,7 +70,7 @@ ms.locfileid: "72651342"
 Możesz wywoływać zewnętrzne narzędzia z wewnątrz programu Visual Studio. Dostępne są kilka domyślnych narzędzi z menu **Narzędzia** , ale można dodać inne własne pliki wykonywalne.
 
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Narzędzia dostępne w menu Visual Studio Tools
- Można wywołać następujące narzędzia z menu **Narzędzia** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Możesz również wywołać je według nazwy z okna **szybkiego uruchamiania** . Na przykład, aby wywołać GuidGen. exe, wpisz **Create GUID**.
+ Można wywołać następujące narzędzia z menu **Narzędzia** w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Możesz również wywołać je według nazwy z okna **szybkiego uruchamiania** . Na przykład, aby wywołać GuidGen.exe, wpisz **Create GUID**.
 
 1. Utwórz identyfikator GUID: generuje identyfikator GUID.
 
@@ -92,7 +92,7 @@ Możesz wywoływać zewnętrzne narzędzia z wewnątrz programu Visual Studio. D
 
 1. Title: Otwórz lokalizację pliku
 
-2. Polecenie: Explorer. exe
+2. Polecenie: explorer.exe
 
 3. Argumenty:/root, "$ (ItemDir)"
 
@@ -115,7 +115,7 @@ Możesz wywoływać zewnętrzne narzędzia z wewnątrz programu Visual Studio. D
 |Katalog docelowy|$ (TargetDir)|Katalog elementu do skompilowania.|
 |Nazwa obiektu docelowego|$ (TargetName)|Nazwa pliku elementu do skompilowania.|
 |Rozszerzenie docelowe|$ (TargetExt)|Rozszerzenie nazwy pliku do skompilowania.|
-|Katalog binarny|$ (BinDir)|Końcowa lokalizacja tworzonego pliku binarnego (zdefiniowana jako dysk + ścieżka). Na przykład: **\\. ..\My Documents\Visual Studio \<Version > \\ < ProjectName \> \bin\debug**|
+|Katalog binarny|$ (BinDir)|Końcowa lokalizacja tworzonego pliku binarnego (zdefiniowana jako dysk + ścieżka). Na przykład:** \\ . ..\My Documents\Visual Studio \<Version> \\<ProjectName \> \bin\debug**|
 |Katalog projektu|$ (ProjDir)|Katalog bieżącego projektu (dysk + ścieżka).|
 |Nazwa pliku projektu|$ (ProjFileName)|Nazwa pliku bieżącego projektu (dysk + ścieżka + nazwa pliku).|
 |Katalog rozwiązania|$ (SolutionDir)|Katalog bieżącego rozwiązania (dysk + ścieżka).|

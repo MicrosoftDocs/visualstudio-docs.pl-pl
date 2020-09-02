@@ -1,5 +1,5 @@
 ---
-title: Szablon projektu VSIX | Dokumentacja firmy Microsoft
+title: Szablon projektu VSIX | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,76 +12,76 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436906"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64825473"
 ---
 # <a name="vsix-project-template"></a>Szablon projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można użyć szablonu projektu VSIX do opakowania jedno lub więcej rozszerzeń programu Visual Studio w projekcie VSIX, a następnie opublikować pakiet na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web.  
+Możesz użyć szablonu projektu VSIX, aby otoczyć co najmniej jedno rozszerzenie programu Visual Studio w projekcie VSIX, a następnie opublikować pakiet w witrynie sieci Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) .  
   
- Wdrożenie VSIX obsługuje pakietów VSPackage, zestawy, składniki MEF, szablony projektów, szablonów elementów, kontrolki przybornika i typy rozszerzeń niestandardowych.  
+ Wdrożenie VSIX obsługuje pakietów VSPackage, zestawy, składniki MEF, szablony projektów, szablony elementów, formanty przybornika i niestandardowe typy rozszerzeń.  
   
 > [!NOTE]
-> Aby korzystać z projektów VSIX, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji na temat zestawu SDK programu Visual Studio, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Aby można było korzystać z projektów VSIX, należy zainstalować Visual Studio SDK. Aby uzyskać więcej informacji na temat zestawu Visual Studio SDK, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## <a name="where-to-find-the-vsix-project-template"></a>Gdzie można znaleźć szablonu projektu VSIX  
- Szablon projektu VSIX jest dostępny w **nowy projekt** okno dialogowe. Rozwiń **języka Visual Basic** węzła lub **Visual C#** węzła, a następnie wybierz **rozszerzalności**.  
+## <a name="where-to-find-the-vsix-project-template"></a>Gdzie znaleźć szablon projektu VSIX  
+ Szablon projektu VSIX jest dostępny w oknie dialogowym **Nowy projekt** . Rozwiń węzeł **Visual Basic** lub węzeł **Visual C#** , a następnie wybierz pozycję **rozszerzalność**.  
   
 > [!TIP]
-> Upewnij się, że program .NET Framework 4.5 lub nowszy, jest określony na liście rozwijanej w górnej części **nowy projekt** okno dialogowe.  
+> Upewnij się, że na liście rozwijanej w górnej części okna dialogowego **Nowy projekt** jest określony .NET Framework 4,5 lub nowszy.  
   
-## <a name="uses-of-the-vsix-project-template"></a>Używa szablonu projektu VSIX  
- Szablon projektu VSIX ma dwa podstawowe zastosowania:  
+## <a name="uses-of-the-vsix-project-template"></a>Użycie szablonu projektu VSIX  
+ Szablon projektu VSIX ma dwa główne zastosowania:  
   
-- Aby wdrożyć szablony projektów, szablonów elementów i inne rozszerzenia, które nie zostały jeszcze obsługi VSIX.  
+- Do wdrażania szablonów projektu, szablonów elementów i innych rozszerzeń, które nie mają jeszcze obsługi VSIX.  
   
-- Aby opakować dane wyjściowe z wielu rozszerzeń w pakiecie jedno wdrożenie.  
+- Aby otoczyć dane wyjściowe wielu rozszerzeń w jednym pakiecie wdrożeniowym.  
   
-  Nie trzeba użyć szablonu projektu VSIX do wdrożenia pakietów VSPackage lub innych rodzajów rozszerzenia, które mają już VSIX obsługi.  
+  Nie trzeba używać szablonu projektu VSIX do wdrażania pakietów VSPackage lub innych rodzajów rozszerzeń, które mają już obsługę VSIX.  
   
-## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Pakowanie rozszerzenia w projekcie VSIX pusty  
- Można spakować istniejące rozszerzenie lub rozszerzenie, które nie ma jeszcze VSIX obsługi, opakowując go w projekcie VSIX jest pusty. Rozszerzenia w celu jej opakowania musi być typu, który jest obsługiwany przez [schematu VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
+## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Pakowanie rozszerzenia w pustym projekcie VSIX  
+ Można spakować istniejące rozszerzenie lub rozszerzenie, które nie ma jeszcze obsługi VSIX, zawijając je w pustym projekcie VSIX. Rozszerzenie, które ma być opakowane, musi być typu, który jest obsługiwany przez [schemat VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
-#### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Aby utworzyć pakiet rozszerzenia za pomocą projektu VSIX  
+#### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Aby spakować rozszerzenie przy użyciu projektu VSIX  
   
-1. Twórz projekty, które składają się na Twoje rozszerzenie.  
+1. Kompiluj projekty wchodzące w skład rozszerzenia.  
   
-2. Utwórz projekt VSIX przy użyciu **projekt VSIX** szablonu.  
+2. Utwórz projekt VSIX przy użyciu szablonu **projektu VSIX** .  
   
-     Source.Extension.vsixmanifest, który zostanie otwarty w **Manifest Designer**.  
+     Plik source. Extension. vsixmanifest zostanie otwarty w **Projektancie manifestów**.  
   
-3. Na **zasoby** kartę, wybrać **New** przycisku.  
+3. Na karcie **zasoby** wybierz przycisk **Nowy** .  
   
-     **Dodaj nowy zasób** pojawi się okno dialogowe.  
+     Pojawi się okno dialogowe **Dodaj nowy element zawartości** .  
   
-4. W **typu** listy, wybierz typ rozszerzenie do dodania.  
+4. Z listy **Typ** wybierz typ rozszerzenia do dodania.  
   
-5. Aby dodać rozszerzenie lub zawartości elementu, który znajduje się w bieżącym rozwiązaniu (na przykład szablon elementu lub skompilowanego zestawu), wykonaj następujące czynności:  
+5. Aby dodać rozszerzenie lub element zawartości, który znajduje się w bieżącym rozwiązaniu (na przykład szablon elementu lub skompilowany zestaw), wykonaj następujące czynności:  
   
-    1. W **źródła** wybierz **projekt w bieżącym rozwiązaniu**.  
+    1. Z listy **Źródło** wybierz **projekt w bieżącym rozwiązaniu**.  
   
-    2. W **projektu** , wybierz nazwę rozszerzenia.  
+    2. Na liście **projekt** wybierz nazwę rozszerzenia.  
   
-    3. W **osadzania w tym folderze** wprowadź nazwę folderu, w której chcesz osadzić elementu zawartości, a następnie wybierz **OK** przycisku.  
+    3. W polu **Osadź w tym folderze** wprowadź nazwę folderu, w którym ma zostać osadzony element zawartości, a następnie wybierz przycisk **OK** .  
   
-6. Aby dodać rozszerzenie lub element zawartości, który nie znajduje się w bieżącym rozwiązaniu, wykonaj następujące czynności:  
+6. Aby dodać rozszerzenie lub element zawartości, który nie jest uwzględniony w bieżącym rozwiązaniu, wykonaj następujące czynności:  
   
-    1. W **źródła** pola listy, wybierz **plików w systemie plików**.  
+    1. W polu listy **Źródło** wybierz pozycję **plik w systemie plików**.  
   
-    2. W **ścieżki** pole, wprowadź pełną ścieżkę do pliku rozszerzenie skompilowany lub skompresowany lub użyj **Przeglądaj** przycisk, aby przejść do pliku.  
+    2. W polu **ścieżka** wprowadź pełną ścieżkę do skompilowanego lub skompresowanego pliku rozszerzenia lub użyj przycisku **Przeglądaj** , aby przejść do pliku.  
   
-    3. W **osadzania w tym folderze** wprowadź nazwę folderu, w której chcesz osadzić elementu zawartości, a następnie wybierz **OK** przycisku.  
+    3. W polu **Osadź w tym folderze** wprowadź nazwę folderu, w którym ma zostać osadzony element zawartości, a następnie wybierz przycisk **OK** .  
   
-7. Jeśli chcesz, aby do pakietu, aby uwzględnić dodatkowe rozszerzenia, należy je dodać w taki sam sposób.  
+7. Jeśli chcesz, aby pakiet zawierał dodatkowe rozszerzenia, Dodaj je w taki sam sposób.  
   
 8. Skompiluj rozwiązanie.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Tworzy plik .vsix, który zawiera plik manifestu VSIX, pliku [Content_Types] .xml i wszystkie zasoby rozszerzenia, które zostały dodane do projektu.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kompiluje plik. vsix zawierający plik manifestu VSIX, plik [Content_Types]. XML i wszystkie zasoby rozszerzenia dodane do projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu 2.0 rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
+ [Dokumentacja schematu rozszerzenia VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich](../ide/finding-and-using-visual-studio-extensions.md)

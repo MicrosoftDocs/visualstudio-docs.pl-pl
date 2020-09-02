@@ -1,5 +1,5 @@
 ---
-title: '&lt;deprecated &gt; (JavaScript) | Microsoft Docs'
+title: '&lt;przestarzałe &gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 343f3ebe4bea7ee999f60741c189f35defb0ac7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665805"
 ---
-# <a name="ltdeprecatedgt-javascript"></a>&gt; &lt;deprecated (JavaScript)
+# <a name="ltdeprecatedgt-javascript"></a>&lt;przestarzałe &gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Określa przestarzałą funkcję lub metodę.
@@ -31,17 +31,17 @@ Określa przestarzałą funkcję lub metodę.
 ```
 
 #### <a name="parameters"></a>Parametry
- `type` opcjonalny. Określa, czy funkcja lub metoda zostanie usunięta w przyszłych wydaniach, czy funkcja lub metoda została już usunięta i że jej użycie może spowodować wystąpienie błędu. Ustaw wartość `deprecate`, aby określić, że funkcja lub metoda zostanie usunięta w przyszłej wersji. Ustaw na `remove`, aby określić, że funkcja lub metoda została już usunięta.
+ `type` Obowiązkowe. Określa, czy funkcja lub metoda zostanie usunięta w przyszłych wydaniach, czy funkcja lub metoda została już usunięta i że jej użycie może spowodować wystąpienie błędu. Ustaw na `deprecate` , aby określić, że funkcja lub metoda zostanie usunięta w przyszłej wersji. Ustaw na `remove` , aby określić, że funkcja lub metoda została już usunięta.
 
- `locid` opcjonalny. Identyfikator informacji o lokalizacji dotyczącej funkcji lub metody. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Typ identyfikatora zależy od formatu określonego w [\<loc >](../ide/loc-javascript.md) elementu.
+ `locid` Obowiązkowe. Identyfikator informacji o lokalizacji dotyczącej funkcji lub metody. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Typ identyfikatora zależy od formatu określonego w [\<loc>](../ide/loc-javascript.md) elemencie.
 
- `description` opcjonalny. Opis funkcji lub metody, która jest przestarzała.
+ `description` Obowiązkowe. Opis funkcji lub metody, która jest przestarzała.
 
 ## <a name="remarks"></a>Uwagi
- Elementy służące do dodawania adnotacji do funkcji, które zawierają `<deprecated>`, muszą być umieszczone w treści funkcji przed dowolnymi instrukcjami. Po oznaczeniu funkcji jako przestarzałej zaleca się zamienienie jej [\<summary >](../ide/summary-javascript.md) elementu z elementem `<deprecated>`.
+ Elementy służące do dodawania adnotacji do funkcji, które obejmują `<deprecated>` , muszą być umieszczone w treści funkcji przed dowolnymi instrukcjami. Po oznaczeniu funkcji jako przestarzałej zalecamy zamienienie jej [\<summary>](../ide/summary-javascript.md) elementu z `<deprecated>` elementem.
 
 ## <a name="example"></a>Przykład
- Poniższy kod pokazuje, jak używać elementu `<deprecated>`.
+ Poniższy kod pokazuje, jak używać `<deprecated>` elementu.
 
 ```javascript
 function areaFunction(radiusParam) {

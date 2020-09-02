@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_farreturn — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_farReturn | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d412a54c88c01e02317a397b2495708833550d7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64828668"
 ---
-# <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
+# <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera flagę określającą, czy funkcja zawiera znacznie zwrotu.  
+Pobiera flagę, która określa, czy funkcja zawiera daleko zwracaną wartość.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,20 +35,20 @@ HRESULT get_farReturn(
   
 #### <a name="parameters"></a>Parametry  
  `pFlag`  
- [in] Zwraca `TRUE` Jeśli funkcja używa znacznie zwrotu, w przeciwnym razie zwraca `FALSE`.  
+ podczas Zwraca `TRUE` czy funkcja używa daleko zwraca wartość. w przeciwnym razie zwraca `FALSE` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   
 |Wymaganie|Opis|  
 |-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|DIA SDK w wersji 8.0|  
+|Nagłówki|dia2. h|  
+|Wersja:|DIA SDK v 8.0|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

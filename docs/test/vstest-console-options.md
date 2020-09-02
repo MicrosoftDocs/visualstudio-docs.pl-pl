@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86869597"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
@@ -34,7 +34,7 @@ W poniższej tabeli wymieniono wszystkie opcje *VSTest.Console.exe* i krótkie o
 
 | Opcja | Opis |
 |---|---|
-|**[*nazwy plików testowych*]**|Uruchom testy z określonych plików. Oddziel wiele nazw plików testowych spacjami.<br />Przykłady: `mytestproject.dll` ,`mytestproject.dll myothertestproject.exe`|
+|**[*nazwy plików testowych*]**|Uruchom testy z określonych plików. Oddziel wiele nazw plików testowych spacjami.<br />Przykłady: `mytestproject.dll` , `mytestproject.dll myothertestproject.exe`|
 |**/Settings: [*Nazwa pliku*]**|Uruchom testy z dodatkowymi ustawieniami, takimi jak moduły zbierające dane. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)<br />Przykład: `/Settings:local.runsettings`|
 |**/Tests: [*nazwa testu*]**|Uruchom testy z nazwami, które zawierają podane wartości. Aby podać wiele wartości, rozdziel je przecinkami.<br />Przykład: `/Tests:TestMethod1,testMethod2`<br />Opcji wiersza polecenia **/Tests** nie można używać z opcją wiersza polecenia **/TestCaseFilter** .|
 |**/Parallel**|Określa, że testy są wykonywane równolegle. Domyślnie można użyć maksymalnie wszystkich dostępnych rdzeni na komputerze. Można skonfigurować liczbę rdzeni do użycia w pliku ustawień.|

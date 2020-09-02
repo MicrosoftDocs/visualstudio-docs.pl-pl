@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 266eed585f1d45e15c084e424d441220f6e671ee
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815776"
 ---
 # <a name="array-or-arguments-object-expected"></a>Oczekiwanie obiektu typu Tablica lub argumentów
@@ -28,7 +28,7 @@ Nie podano tablicy jako argumentu. Ten błąd dotyczy tylko metody **Function. p
   
 - Określ albo `Array` obiekt **arguments** jako drugi argument.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)   
  [Apply — metoda (funkcja)](../../javascript/reference/apply-method-function-javascript.md)   
  [Funkcje](../../javascript/functions-javascript.md)

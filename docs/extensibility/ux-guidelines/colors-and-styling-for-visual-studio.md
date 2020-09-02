@@ -1,5 +1,5 @@
 ---
-title: Kolory i styl dla programu Visual Studio | Dokumenty firmy Microsoft
+title: Kolory i style dla programu Visual Studio | Microsoft Docs
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
@@ -9,122 +9,122 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699849"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 
-## <a name="use-color-in-visual-studio"></a>Używanie koloru w programie Visual Studio
+## <a name="use-color-in-visual-studio"></a>Użyj koloru w programie Visual Studio
 
-W programie Visual Studio kolor jest używany przede wszystkim jako narzędzie komunikacji, a nie tylko jako dekoracja. Użyj koloru minimalnie i zarezerwuj go w sytuacjach, w których chcesz:
+W programie Visual Studio kolor jest używany głównie jako narzędzie komunikacyjne, a nie tylko dekoracja. Użyj kolorowo jako minimum i Zarezerwuj go w sytuacjach, gdy chcesz:
 
-- Komunikuj znaczenie lub przynależność (na przykład modyfikatory platformy lub języka)
+- Przekazywanie informacji o znaczeniu lub przynależności (na przykład w przypadku modyfikatorów platformy lub języka)
 
-- Przyciągnij uwagę (na przykład wskazując zmianę statusu)
+- Zwrócenie uwagi (na przykład wskazującej zmianę stanu)
 
-- Popraw czytelność i zapewnij punkty orientacyjne do nawigacji po interfejsie użytkownika
+- Zwiększ czytelność i podaj dzielnice na potrzeby nawigowania po interfejsie użytkownika
 
-- Zwiększenie celowości
+- Zwiększ pragnienie
 
-Istnieje kilka opcji przypisywania kolorów do elementów interfejsu użytkownika w programie Visual Studio. Czasami może być trudno dowiedzieć się, której opcji powinieneś użyć lub jak go używać poprawnie. Ten temat pomoże Ci:
+Istnieje kilka opcji przypisywania kolorów do elementów interfejsu użytkownika w programie Visual Studio. Czasami trudno jest ustalić, której opcji używać, lub jak używać jej poprawnie. Ten temat pomoże Ci:
 
-- Poznaj różne usługi i systemy używane do definiowania kolorów w programie Visual Studio.
+- Zapoznaj się z różnymi usługami i systemami używanymi do definiowania kolorów w programie Visual Studio.
 
-- Wybierz odpowiednią opcję dla danego elementu.
+- Wybierz poprawną opcję dla danego elementu.
 
-- Prawidłowo użyj wybranej opcji.
+- Prawidłowo Użyj wybranej opcji.
 
 > [!NOTE]
-> Nigdy nie koduj hex, RGB ani kolorów systemowych do elementów interfejsu użytkownika. Korzystanie z usług pozwala na elastyczność w dostrajaniu barwy. Ponadto bez usługi nie będzie można skorzystać z możliwości przełączania motywów [usługi VSColor.](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)
+> Nigdy nie umieszczaj kolorów szesnastkowych, RGB ani systemowych do elementów interfejsu użytkownika. Korzystanie z usług pozwala na elastyczność dostrajania barwy. Ponadto bez usługi nie będzie można korzystać z możliwości przełączania motywu [usługi VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Metody przypisywania kolorów do elementów interfejsu programu Visual Studio
 
-Wybierz metodę najlepiej dopasowanymi do elementów interfejsu użytkownika.
+Wybierz metodę najlepiej dopasowaną do elementów interfejsu użytkownika.
 
-| Twój interfejs użytkownika | Metoda | Czym one są? |
+| Interfejs użytkownika | Metoda | Jakie? |
 | --- | --- | --- |
-| Masz osadzone lub autonomiczne okna dialogowe. | **Kolory systemowe** | Nazwy systemów, które umożliwiają systemowi operacyjnemu definiowanie koloru i wyglądu elementów interfejsu użytkownika, takich jak typowe kontrolki okna dialogowego. |
-| Masz niestandardowy interfejs użytkownika, który ma być zgodny z ogólnym środowiskiem VS i masz elementy interfejsu użytkownika, które pasują do kategorii i semantyczne znaczenie tokenów udostępnionych. | **Typowe kolory udostępnione** | Istniejące wstępnie zdefiniowane nazwy tokenów kolorów dla określonych elementów interfejsu użytkownika |
-| Masz indywidualną operację lub grupę operacji i nie ma wspólnego koloru dla podobnych elementów. | **Kolory niestandardowe** | Nazwy tokenów kolorów, które są specyficzne dla obszaru i nie mają być udostępniane innym interfejsom użytkownika |
-| Chcesz zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika lub zawartości (na przykład dla edytorów tekstu lub wyspecjalizowanych okien projektanta). | **Dostosowywanie użytkowników końcowych**<br /><br />**(Okno &gt; dialogowe Opcje narzędzi)** | Ustawienia zdefiniowane na stronie "Czcionki i kolory" w oknie dialogowym **Opcje narzędzi &gt; ** lub wyspecjalizowanej stronie specyficznej dla jednej funkcji interfejsu użytkownika. |
+| Masz osadzone lub autonomiczne okna dialogowe. | **Kolory systemowe** | Nazwy systemu, które umożliwiają systemowi operacyjnemu Definiowanie koloru i wyglądu elementów interfejsu użytkownika, takich jak wspólne kontrolki okna dialogowego. |
+| Istnieje niestandardowy interfejs użytkownika, który ma być spójny z ogólnym środowiskiem programu VS i masz elementy interfejsu użytkownika zgodne z kategorią i semantyką znaczenia tokenów udostępnionych. | **Wspólne kolory udostępnione** | Istniejące wstępnie zdefiniowane nazwy tokenów kolorów dla określonych elementów interfejsu użytkownika |
+| Użytkownik ma konkretną funkcję lub grupę funkcji i nie ma udostępnionego koloru dla podobnych elementów. | **Kolory niestandardowe** | Nazwy tokenów kolorów, które są specyficzne dla obszaru i nie powinny być współużytkowane z innymi interfejsami użytkownika |
+| Chcesz zezwolić użytkownikowi końcowemu na Dostosowywanie interfejsu użytkownika lub zawartości (na przykład w przypadku edytorów tekstu lub wyspecjalizowanych okien projektanta). | **Dostosowywanie użytkownika końcowego**<br /><br />**(Narzędzia &gt; Okno dialogowe opcji)** | Ustawienia zdefiniowane na stronie "czcionki i kolory" okna dialogowego ** &gt; Opcje narzędzi** lub wyspecjalizowanej stronie specyficzne dla jednej funkcji interfejsu użytkownika. |
 
 ### <a name="visual-studio-themes"></a>Motywy programu Visual Studio
 
-Program Visual Studio zawiera trzy różne motywy kolorów: jasny, ciemny i niebieski. Wykrywa również tryb wysokiego kontrastu, który jest motywem kolorów całego systemu przeznaczonym dla ułatwień dostępu.
+Program Visual Studio oferuje trzy różne motywy kolorów: jasne, ciemne i niebieskie. Wykrywa również tryb duży kontrast, który jest motywem kolorów w całym systemie zaprojektowanym pod kątem ułatwień dostępu.
 
-Użytkownicy są monitowani, aby wybrać motyw podczas ich pierwszego użycia programu Visual Studio i są w stanie przełączyć motywy później, przechodząc do **Narzędzia &gt; Opcje środowiska &gt; &gt; ogólne** i wybierając nowy motyw z menu rozwijanego "motyw kolorów".
+Użytkownicy są monitowani o wybranie motywu podczas pierwszego korzystania z programu Visual Studio i mogą przełączać motywy później, przechodząc **do &gt; opcji &gt; narzędzia &gt; Ogólne** i wybierając nowy motyw z menu rozwijanego "motyw kolorów".
 
-Użytkownicy mogą również użyć Panelu sterowania, aby przełączyć całe systemy na jeden z kilku motywów o wysokim kontraście. Jeśli użytkownik wybierze motyw wysokiego kontrastu, selektor motywu kolorów programu Visual Studio nie ma już wpływu na kolory w programie Visual Studio, chociaż wszelkie zmiany motywu są zapisywane, gdy użytkownik kończy działanie trybu wysokiego kontrastu. Aby uzyskać więcej informacji na temat trybu wysokiego kontrastu, zobacz [Wybieranie kolorów o wysokim kontraście](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
+Użytkownicy mogą również używać panelu sterowania do przełączania całego systemu do jednego z kilku duży kontrast motywy. Jeśli użytkownik wybierze motyw duży kontrast, selektor motywu kolorów programu Visual Studio nie będzie miał już wpływu na kolory w programie Visual Studio, ale wszystkie zmiany motywu są zapisywane dla momentu zakończenia trybu duży kontrast przez użytkownika. Aby uzyskać więcej informacji o trybie duży kontrast, zobacz [wybieranie duży kontrast kolory](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
 
 ### <a name="the-vscolor-service"></a>Usługa VSColor
 
-Visual Studio udostępnia usługę kolorów środowiska, znany jako usługa VSColor, który umożliwia powiązanie wartości kolorów elementów interfejsu użytkownika do nazwanego wpisu zawierającego wartości kolorów dla każdego motywu programu Visual Studio. Dzięki temu kolory zostaną automatycznie zmienić, aby odzwierciedlić bieżący motyw wybrany przez użytkownika lub systemowy tryb wysokiego kontrastu. Korzystanie z usługi oznacza, że implementacja wszystkich zmian kolorów związanych z motywem jest obsługiwana w jednym miejscu, a jeśli używasz wspólnych kolorów udostępnionych z usługi, interfejs użytkownika automatycznie będzie odzwierciedlać nowe motywy w przyszłych wersjach programu Visual Studio.
+Program Visual Studio udostępnia usługę kolory środowiska, znaną jako usługa VSColor, która umożliwia powiązanie wartości kolorów elementów interfejsu użytkownika z nazwanym wpisem zawierającym wartości koloru dla każdego motywu programu Visual Studio. Gwarantuje to, że kolory zostaną automatycznie zmienione w celu odzwierciedlenia bieżącego motywu wybranego przez użytkownika lub trybu duży kontrast systemu. Korzystanie z usługi oznacza, że implementacja wszystkich zmian kolorów związanych z motywem jest obsługiwana w jednym miejscu, a jeśli używasz wspólnych kolorów udostępnionych z usługi, interfejs użytkownika automatycznie odzwierciedla nowe motywy w przyszłych wersjach programu Visual Studio.
 
-### <a name="implementation"></a>Wdrażanie
+### <a name="implementation"></a>Implementacja
 
-Kod źródłowy programu Visual Studio zawiera kilka plików definicji pakietu, które zawierają listy nazw tokenów i odpowiednie wartości kolorów dla każdego motywu. Usługa kolorów odczytuje VSColors zdefiniowane w tych plikach definicji pakietu. Te kolory są przywoływane w znacznikach XAML `IVsUIShell5.GetThemedColor` lub w kodzie, a następnie ładowane za pośrednictwem metody lub mapowania DynamicResource.
+Kod źródłowy programu Visual Studio zawiera kilka plików definicji pakietów, które zawierają listy nazw tokenów i odpowiednie wartości koloru dla każdego motywu. Usługa Color odczytuje VSColors zdefiniowane w tych plikach definicji pakietu. Te kolory są przywoływane w znacznikach XAML lub w kodzie, a następnie ładowane za pomocą `IVsUIShell5.GetThemedColor` metody lub mapowania DynamicResource —.
 
 ### <a name="system-colors"></a>Kolory systemowe
 
-Typowe formanty domyślnie odwołują się do kolorów systemowych. Jeśli chcesz, aby interfejs użytkownika używał kolorów systemowych, na przykład podczas tworzenia osadzonego lub autonomicznego okna dialogowego, nie musisz nic robić.
+Formanty wspólne domyślnie przywołują kolory systemowe. Jeśli chcesz, aby interfejs użytkownika używał kolorów systemowych, takich jak podczas tworzenia okna dialogowego osadzone lub autonomiczne, nie musisz nic robić.
 
-### <a name="common-shared-colors-in-the-vscolor-service"></a>Typowe kolory udostępnione w usłudze VSColor
+### <a name="common-shared-colors-in-the-vscolor-service"></a>Wspólne kolory udostępnione w usłudze VSColor
 
-Elementy interfejsu powinny odzwierciedlać ogólne środowisko programu Visual Studio. Korzystając ponownie z typowych kolorów udostępnionych, które są odpowiednie dla składnika interfejsu użytkownika, który projektujesz, upewnij się, że interfejs jest zgodny z innymi interfejsami programu Visual Studio i że kolory będą aktualizowane automatycznie po dodaniu lub zaktualizowaniu motywów.
+Elementy interfejsu powinny odzwierciedlać ogólne środowisko programu Visual Studio. Korzystając z tych wspólnych kolorów, które są odpowiednie dla projektowanego składnika interfejsu użytkownika, należy się upewnić, że interfejs jest zgodny z innymi interfejsami programu Visual Studio i że kolory będą aktualizowane automatycznie po dodaniu lub zaktualizowaniu motywów.
 
-Przed użyciem typowych kolorów udostępnionych upewnij się, że rozumiesz, jak używać ich poprawnie. Nieprawidłowe użycie typowych kolorów udostępnionych może spowodować niespójne, frustrujące lub mylące środowisko dla użytkowników.
+Przed użyciem wspólnych udostępnionych kolorów upewnij się, że rozumiesz, jak z nich korzystać. Nieprawidłowe użycie wspólnych udostępnionych kolorów może spowodować niespójne, frustrujące lub mylące środowisko dla użytkowników.
 
-### <a name="user-customizable-colors"></a>Kolory, które można dostosować do potrzeb użytkownika
+### <a name="user-customizable-colors"></a>Kolory dostosowywane przez użytkownika
 
-Zobacz: [Udostępnianie kolorów użytkownikom końcowym](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+Zobacz: [Uwidacznianie kolorów dla użytkowników końcowych](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-Czasami należy zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika, na przykład podczas tworzenia edytora kodu lub powierzchni projektu. Konfigurowalne składniki interfejsu użytkownika znajdują się w sekcji **Czcionki i kolory** w oknie dialogowym **Opcje narzędzi, &gt; ** w którym użytkownicy mogą zmienić kolor pierwszego planu, kolor tła lub oba te elementy.
+Czasami trzeba zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika, na przykład podczas tworzenia edytora kodu lub powierzchni projektowej. Dostosowywalne składniki interfejsu użytkownika znajdują się w sekcji **czcionki i kolory** okna dialogowego ** &gt; Opcje narzędzi** , w którym użytkownicy mogą wybrać zmianę koloru pierwszego planu, koloru tła lub obu tych funkcji.
 
-![Okno &gt; dialogowe Opcje narzędzi](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />Okno &gt; dialogowe Opcje narzędzi
+![&gt;Okno dialogowe Opcje narzędzi](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 — a_ToolsOptionsDialog")<br />&gt;Okno dialogowe Opcje narzędzi
 
-## <a name="the-vscolor-service"></a><a name="BKMK_TheVSColorService"></a>Usługa VSColor
+## <a name="the-vscolor-service"></a><a name="BKMK_TheVSColorService"></a> Usługa VSColor
 
-Visual Studio udostępnia usługę kolorów środowiska, zwaną również usługą VSColor lub usługą kolorów powłoki. Ta usługa umożliwia powiązanie wartości kolorów elementów interfejsu użytkownika z zestawem kolorów nazwa-wartość zawierającym kolory dla każdego motywu. Usługa VSColor musi być używana dla wszystkich elementów interfejsu użytkownika, tak aby kolory automatycznie zmieniać, aby odzwierciedlić bieżący motyw wybrany przez użytkownika i tak, aby interfejs użytkownika powiązany z usługą kolorów środowiska integruje się z nowymi motywami w przyszłych wersjach programu Visual Studio.
+Program Visual Studio udostępnia usługę kolory środowiska, nazywaną również usługą VSColor lub usługą Color Shell. Ta usługa umożliwia powiązanie wartości kolorów elementów interfejsu użytkownika z zestawem kolorów wartości nazwanych zawierającymi kolory dla każdego motywu. Usługa VSColor musi być używana dla wszystkich elementów interfejsu użytkownika, dzięki czemu kolory automatycznie zmieniają się w celu odzwierciedlenia bieżącego motywu wybranego przez użytkownika, a więc interfejs użytkownika powiązany z usługą kolorów środowiska zostanie zintegrowany z nowymi motywami w przyszłych wersjach programu Visual Studio.
 
 ### <a name="how-the-service-works"></a>Jak działa usługa
 
-Usługa kolorów środowiska odczytuje VSColors zdefiniowane w pkgdef dla składnika interfejsu użytkownika. Te VSColors są następnie odwołuje się w znacznikach XAML `IVsUIShell5.GetThemedColor` lub `DynamicResource` kodu i są ładowane za pośrednictwem lub mapowania.
+Usługa kolor środowiska odczytuje VSColors zdefiniowane w. pkgdef dla składnika interfejsu użytkownika. Te VSColors są następnie odwoływane w znacznikach XAML lub kodzie i są ładowane przy użyciu `IVsUIShell5.GetThemedColor` albo `DynamicResource` mapowania.
 
-![Architektura usługi kolorów środowiska](../../extensibility/ux-guidelines/media/0302-a_environmentcolorservicearchitecture.png "0302-a_EnvironmentColorServiceArchitecture")<br />Architektura usługi kolorów środowiska
+![Architektura usługi kolorów środowiska](../../extensibility/ux-guidelines/media/0302-a_environmentcolorservicearchitecture.png "0302 — a_EnvironmentColorServiceArchitecture")<br />Architektura usługi kolorów środowiska
 
 ### <a name="accessing-the-service"></a>Uzyskiwanie dostępu do usługi
 
-Istnieje kilka różnych sposobów dostępu do usługi VSColor, w zależności od rodzaju tokenów kolorów, których używasz i jaki rodzaj kodu masz.
+Istnieje kilka różnych sposobów uzyskiwania dostępu do usługi VSColor, w zależności od rodzaju tokenów kolorów, z których korzystasz, oraz rodzaju kodu.
 
 #### <a name="predefined-environment-colors"></a>Wstępnie zdefiniowane kolory środowiska
 
-##### <a name="from-native-code"></a>Z kodu macierzystego
+##### <a name="from-native-code"></a>Z kodu natywnego
 
-Powłoka zapewnia usługę, która `COLORREF` daje dostęp do kolorów. Usługa/interfejs to:
+Powłoka udostępnia usługę zapewniającą dostęp do `COLORREF` kolorów. Usługa/interfejs:
 
 ```
 IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 ```
 
-W pliku VSShell80.idl wyliczenie `__VSSYSCOLOREX` ma stałe kolorów powłoki. Aby go użyć, przekaż jako wartość indeksu jedną `enum __VSSYSCOLOREX` z wartości z udokumentowanej w MSDN lub `GetSysColor`zwykły numer indeksu akceptowany przez systemowy interfejs API systemu Windows. W ten sposób pobiera z powrotem wartość RGB koloru, który powinien być używany w drugim parametrze.
+W pliku VSShell80. idl Wyliczenie `__VSSYSCOLOREX` ma stałe koloru powłoki. Aby go użyć, należy przekazać jako wartość indeksu jedną z wartości z `enum __VSSYSCOLOREX` witryny MSDN lub zwykłym indeksem, który jest akceptowany przez interfejs API systemu Windows `GetSysColor` . Spowoduje to przywrócenie wartości RGB koloru, który ma być używany w drugim parametrze.
 
-W przypadku przechowywania pióra lub pędzla `AdviseBroadcastMessages` z nowym kolorem, należy `WM_SYSCOLORCHANGE` (poza powłoki programu Visual Studio) i nasłuchiwać i `WM_THEMECHANGED` wiadomości.
+W przypadku przechowywania pióra lub pędzla z nowym kolorem należy `AdviseBroadcastMessages` (wyłączyć powłokę programu Visual Studio) i słuchać `WM_SYSCOLORCHANGE` komunikatów i `WM_THEMECHANGED` .
 
-Aby uzyskać dostęp do usługi kolorów w kodzie macierzystym, nawiążesz wywołanie podobne do następującego:
+Aby uzyskać dostęp do usługi Color w kodzie natywnym, należy wywołać wywołanie podobne do poniższego:
 
 ```
 pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 ```
 
 > [!NOTE]
-> Wartości `COLORREF` zwracane `GetVSSysColorEx()` zawierają tylko składniki R, G,B koloru motywu. Jeśli wpis motywu używa przezroczystości, wartość kanału alfa jest odrzucana przed zwróceniem. W związku z tym jeśli kolor środowiska zainteresowania musi być używany w miejscu, gdzie kanał przezroczystości jest ważne, należy użyć `IVsUIShell5.GetThemedColor` zamiast `IVsUIShell2::GetVSSysColorEx`, jak opisano w dalszej części tego tematu.
+> `COLORREF`Wartości zwracane przez `GetVSSysColorEx()` zawierają tylko składniki R, G, B koloru motywu. Jeśli wpis motywu używa przezroczystości, wartość kanału alfa zostanie odrzucona przed zwróceniem. W związku z tym, jeśli wymagany jest kolor środowiska zainteresowania w miejscu, w którym jest ważne, należy użyć `IVsUIShell5.GetThemedColor` zamiast `IVsUIShell2::GetVSSysColorEx` , zgodnie z opisem w dalszej części tego tematu.
 
 ##### <a name="from-managed-code"></a>Z kodu zarządzanego
 
-Uzyskiwanie dostępu do usługi VSColor za pośrednictwem kodu macierzystego jest dość proste. Jeśli pracujesz za pomocą kodu zarządzanego, jednak określenie sposobu korzystania z usługi może być trudne. Mając to na uwadze, oto fragment kodu języka C# demonstrujący ten proces:
+Uzyskiwanie dostępu do usługi VSColor za pomocą kodu natywnego jest dość proste. W przypadku korzystania z kodu zarządzanego można jednak określić, jak korzystać z usługi. Z tego względu Oto fragment kodu w języku C# pokazujący ten proces:
 
 ```csharp
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -147,15 +147,15 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
 }
 ```
 
-Jeśli pracujesz w języku Visual Basic, użyj:
+Jeśli pracujesz w Visual Basic, użyj:
 
 ```vb
 Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 ```
 
-##### <a name="from-wpf-ui"></a>Od interfejsu użytkownika WPF
+##### <a name="from-wpf-ui"></a>Z interfejsu użytkownika WPF
 
-Można powiązać z kolorami programu Visual Studio `ResourceDictionary`za pomocą wartości eksportowanych do aplikacji . Poniżej znajduje się przykład przy użyciu zasobów z tabeli kolorów, a także powiązania z danymi czcionki środowiska w języku XAML.
+Można powiązać z kolorami programu Visual Studio za pomocą wartości wyeksportowanych do aplikacji `ResourceDictionary` . Poniżej znajduje się przykład użycia zasobów z tabeli kolorów, a także powiązania z danymi czcionki środowiska w języku XAML.
 
 ```xml
 <Style TargetType="{x:Type Button}">
@@ -168,11 +168,11 @@ Można powiązać z kolorami programu Visual Studio `ResourceDictionary`za pomoc
 </Style>
 ```
 
-#### <a name="helper-classes-and-methods-for-managed-code"></a>Klasy pomocnicze i metody kodu zarządzanego
+#### <a name="helper-classes-and-methods-for-managed-code"></a>Klasy pomocnika i metody dla kodu zarządzanego
 
-W przypadku kodu zarządzanego biblioteka struktury`Microsoft.VisualStudio.Shell.12.0.dll`zarządzanego pakietu ( ) zawiera kilka klas pomocniczych ułatwiających korzystanie z kolorów tematycznych.
+W przypadku kodu zarządzanego, biblioteka struktury pakietu zarządzanego powłoki ( `Microsoft.VisualStudio.Shell.12.0.dll` ) zawiera kilka klas pomocnika, które ułatwiają korzystanie z nich.
 
-Metody pomocnika w `Microsoft.VisualStudio.Shell.VsColors` klasie w MPF obejmują `GetThemedGDIColor()` i `GetThemedWPFColor()`. Te metody pomocnika zwracają wartość koloru wpisu motywu jako `System.Drawing.Color` lub `System.Windows.Media.Color`, które mają być używane w WinForms lub WPF UI.
+Metody pomocnika w `Microsoft.VisualStudio.Shell.VsColors` klasie w MPF obejmują `GetThemedGDIColor()` i `GetThemedWPFColor()` . Te metody pomocnika zwracają wartość koloru wpisu motywu jako `System.Drawing.Color` lub `System.Windows.Media.Color` , które mają być użyte w interfejsie WinForms lub interfejsu użytkownika WPF.
 
 ```csharp
 IVsUIShell5 shell5;
@@ -221,14 +221,14 @@ public static System.Windows.Media.Color GetThemedWPFColor(this IVsUIShell5 vsUI
 }
 ```
 
-Klasa może również służyć do uzyskania identyfikatorów VSCOLOR dla danego klucza zasobów barwy WPF lub odwrotnie.
+Klasy można również użyć do uzyskania identyfikatorów VSCOLOR dla danego klucza zasobu koloru WPF lub na odwrót.
 
 ```csharp
 public static string GetColorBaseKey(int vsSysColor);
 public static bool TryGetColorIDFromBaseKey(string baseKey, out int vsSysColor);
 ```
 
-Metody klasy `VsColors` kwerendy usługi VSColor do zwracania wartości koloru za każdym razem, gdy są wywoływane. Aby uzyskać wartość `System.Drawing.Color`koloru jako , alternatywą o lepszej wydajności `Microsoft.VisualStudio.PlatformUI.VSThemeColor` jest zamiast tego użyć metod klasy, która buforuje wartości kolorów uzyskane z usługi VSColor. Klasa subskrybuje wewnętrznie do emisji powłoki wiadomości zdarzeń i odrzuca wartość buforowaną, gdy występuje zdarzenie zmiany motywu. Ponadto klasa zapewnia . Wydarzenie przyjazne net, aby subskrybować zmiany motywu. Użyj `ThemeChanged` zdarzenia, aby dodać nowy program `GetThemedColor()` obsługi i użyć `ThemeResourceKeys` metody, aby uzyskać wartości kolorów dla zainteresowania. Przykładowy kod może wyglądać następująco:
+Metody `VsColors` klasy kwerendy usługi VSColor, aby zwracały wartość koloru przy każdym wywołaniu. Aby uzyskać wartość koloru jako `System.Drawing.Color` alternatywę dla lepszej wydajności, należy zamiast tego użyć metod `Microsoft.VisualStudio.PlatformUI.VSThemeColor` klasy, w których są buforowane wartości kolorów uzyskane z usługi VSColor. Klasa subskrybuje wewnętrznie zdarzenia rozgłaszania komunikatów i odrzuca buforowaną wartość, gdy wystąpi zdarzenie zmiany motywu. Ponadto Klasa zawiera. Zdarzenie przyjazne dla sieci, aby subskrybować zmiany motywu. Użyj `ThemeChanged` zdarzenia, aby dodać nowy program obsługi, i Użyj `GetThemedColor()` metody, aby uzyskać wartości koloru dla `ThemeResourceKeys` zainteresowania. Przykładowy kod może wyglądać następująco:
 
 ```csharp
 public MyWindowPanel()
@@ -267,170 +267,170 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-## <a name="choosing-high-contrast-colors"></a><a name="BKMK_ChoosingHighContrastColors"></a>Wybieranie kolorów o wysokim kontraście
+## <a name="choosing-high-contrast-colors"></a><a name="BKMK_ChoosingHighContrastColors"></a> Wybieranie duży kontrast kolorów
 
 ### <a name="overview"></a>Omówienie
 
-System Windows używa kilku motywów na poziomie systemu o wysokim kontraście, które zwiększają kontrast kolorów tekstu, tła i obrazów, dzięki czemu elementy są bardziej wyraźne na ekranie. Ze względu na dostępność ważne jest, aby elementy interfejsu programu Visual Studio reagowały poprawnie, gdy użytkownicy przełączają się na motyw wysokiego kontrastu.
+W systemie Windows są używane różne kompozycje na poziomie systemu, które zwiększają kontrast koloru tekstu, tła i obrazów, co sprawia, że elementy pojawiają się bardziej odrębnie na ekranie. Ze względów ułatwień dostępu ważne jest, aby elementy interfejsu programu Visual Studio odpowiadały prawidłowym, gdy użytkownicy przełączają się do motywu duży kontrast.
 
-Tylko kilka kolorów systemowych może być używany do motywów o wysokim kontraście. Wybierając nazwy kolorów systemu, należy pamiętać o następujących wskazówkach:
+Do duży kontrast motywów można używać tylko kilku kolorów systemowych. Po wybraniu nazw kolorów systemu należy pamiętać o następujących wskazówkach:
 
-- **Wybierz kolory systemowe, które mają takie samo znaczenie semantyczne** jak kolorowanie elementu. Na przykład, jeśli wybierasz kolor o wysokim kontraście dla tekstu w oknie, użyj WindowText, a nie ControlText.
+- **Wybierz kolory systemowe, które mają taką samą semantykę** jak element, który jest kolorem. Na przykład jeśli wybierzesz kolor o dużym kontraście dla tekstu w oknie, użyj WindowText, a nie ControlText.
 
-- **Wybierz pary pierwszego planu/tła** razem lub nie będziesz mieć pewności, że wybór koloru będzie działał we wszystkich motywach o wysokim kontraście.
+- **Wybieraj jednocześnie pary pierwszego planu/tła** lub nie masz pewności, że wybór kolorów będzie działać we wszystkich motywach duży kontrast.
 
-- **Określ, które części interfejsu użytkownika są najważniejsze i upewnij się, że obszary zawartości będą się wyróżniać.** Stracisz wiele szczegółów, które subtelne różnice w odcieniu kolorów normalnie odróżniają, więc użycie silnych kolorów obramowania jest powszechne w definiowaniu obszarów zawartości, ponieważ nie ma wariantów kolorów dla różnych obszarów zawartości.
+- **Ustal, które części interfejsu użytkownika są najważniejsze i upewnij się, że obszary zawartości zostaną** wystawione. Utracisz dużo szczegółów, dzięki czemu delikatne różnice w odcienie odnoszą się zwykle, dlatego w celu zdefiniowania obszarów zawartości często używane są kolory silnego obramowania, ponieważ nie ma żadnych wariantów kolorów dla różnych obszarów zawartości.
 
-### <a name="system-color-set"></a>Zestaw kolorów systemowych
+### <a name="system-color-set"></a>Zestaw kolorów systemu
 
-Tabela w [WPF Team Blog: SystemColors Reference](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) wskazuje pełny zestaw nazw kolorów systemu i odpowiednie odcienie wyświetlane w każdym motywie.
+Tabela na [blogu zespołu WPF: SystemColors Reference](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) wskazuje pełny zestaw nazw kolorów systemowych i odpowiadający odcieni wyświetlany w każdym motywie.
 
-Stosując ten ograniczony zestaw kolorów do interfejsu użytkownika, *oczekuje się, że stracisz subtelne szczegóły, które były obecne w "normalnych" tematów*. Oto przykład interfejsu użytkownika z subtelnymi kolorami szarymi, które są używane do rozróżniania obszarów w oknie narzędzia. Po sparowaniu z tym samym oknem wyświetlanym w trybie wysokiego kontrastu widać, że wszystkie tła mają ten sam odcień, a obramowania tych obszarów są wskazywane tylko przez obramowanie:
+W przypadku zastosowania tego ograniczonego zestawu kolorów do interfejsu użytkownika należy się *spodziewać, że utracisz delikatne szczegóły, które były obecne w motywach "normal"*. Oto przykład interfejsu użytkownika z delikatnymi kolorami szarymi, które są używane do rozróżniania obszarów w oknie narzędzi. W przypadku sparowania z tym samym oknem wyświetlanym w trybie duży kontrast można zobaczyć, że wszystkie tła są takie same, a obramowanie tych obszarów jest wskazywane wyłącznie przez obramowanie:
 
-![Przykład utraty subtelnych szczegółów w ysuwu](../../extensibility/ux-guidelines/media/030303-a_propertieswindow.png "030303-a_PropertiesWindow")<br />Przykład utraty subtelnych szczegółów w ysuwu
+![Przykład, w jaki sposób subtelne szczegóły są tracone w duży kontrast](../../extensibility/ux-guidelines/media/030303-a_propertieswindow.png "030303 — a_PropertiesWindow")<br />Przykład, w jaki sposób subtelne szczegóły są tracone w duży kontrast
 
 #### <a name="choosing-text-colors-in-an-editor"></a>Wybieranie kolorów tekstu w edytorze
 
-Kolorowano tekst jest używany w edytorze lub na powierzchni projektowej w celu wskazania znaczenia, na przykład umożliwiającej łatwą identyfikację grup podobnych elementów. W motywie Wysoki kontrast nie masz jednak możliwości rozróżniania więcej niż trzech kolorów tekstu. WindowText, GrayText i HotTrackText są jedynymi kolorami dostępnymi na powierzchniach WindowBackground. Ponieważ nie można użyć więcej niż trzech kolorów, starannie wybierz najważniejsze różnice, które mają być wyświetlane w trybie wysokiego kontrastu.
+Tekst z kolorami jest używany w edytorze lub na powierzchni projektowej w celu wskazania znaczenia, takich jak umożliwienie łatwej identyfikacji grup podobnych elementów. W motywie duży kontrast nie ma jednak możliwości rozróżniania między więcej niż trzema kolorami tekstu. WindowText, GrayText i HotTrackText są jedynymi kolorami dostępnymi na powierzchniach WindowBackground. Ponieważ nie można użyć więcej niż trzech kolorów, należy uważnie wybrać najważniejsze różnice, które mają być wyświetlane w trybie duży kontrast.
 
-Barwy dla każdej nazwy tokenu dozwolone na powierzchni edytora, ponieważ pojawiają się w każdym motywie wysokiego kontrastu:
+Odcieni dla każdego z nazw tokenów dozwolonych na powierzchni edytora, tak jak pojawiają się one w każdym duży kontrast motywie:
 
-![Porównanie edytora o wysokim kontraście](../../extensibility/ux-guidelines/media/030303-b_hceditorcomparison.png "030303-b_HCEditorComparison")<br />Porównanie edytora o wysokim kontraście
+![Porównanie edytora duży kontrast](../../extensibility/ux-guidelines/media/030303-b_hceditorcomparison.png "030303 — b_HCEditorComparison")<br />Porównanie edytora duży kontrast
 
 Przykłady powierzchni edytora w niebieskim motywie:
 
-![Edytor w niebieskim kompozycji](../../extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Edytor w niebieskim kompozycji
+![Edytor w niebieskim motywie](../../extensibility/ux-guidelines/media/030303-c_editorblue.png "030303 — c_EditorBlue")<br />Edytor w niebieskim motywie
 
-![Edytor kompozycji #1 o wysokim kontraście](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303-d_EditorHC1")<br />Edytor kompozycji #1 o wysokim kontraście
+![Edytor w duży kontrast #1 motyw](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303 — d_EditorHC1")<br />Edytor w duży kontrast #1 motyw
 
 ### <a name="usage-patterns"></a>Wzorce użycia
 
-Wiele typowych elementów interfejsu użytkownika ma już zdefiniowane kolory o wysokim kontraście. Można odwoływać się do tych wzorców użycia przy wyborze własnych nazw kolorów systemu, dzięki czemu elementy interfejsu użytkownika są zgodne z podobnymi składnikami.
+Wiele typowych elementów interfejsu użytkownika ma już zdefiniowane duży kontrast kolory. Można odwoływać się do tych wzorców użycia podczas wybierania własnych nazw kolorów systemu, tak aby elementy interfejsu użytkownika były spójne z podobnymi składnikami.
 
-| Kolor systemu | Sposób użycia |
+| Kolor systemu | Użycie |
 | --- | --- |
-| ActiveCaption (ActiveCaption) | - Aktywny IDE i rafted glify przycisk okna na hover i naciśnij<br />- Tło paska tytułu dla IDE i rafted windows<br />- Domyślne tło paska stanu |
-| Tekst ActiveCaption | - Aktywny IDE i rafted okna na pierwszym planie paska tytułu (tekst i glify)<br />- Tło i obramowanie aktywnych przycisków okien po najechaniu i naciśnięciu przycisku |
-| Kontrola | - Pole kombi, lista rozwijana i kontrola wyszukiwania domyślne i wyłączone tło, w tym przycisk rozwijany<br />- Tło przycisku docelowego dokowania<br />- Tło paska poleceń<br />- Tło okna narzędzia |
-| ControlDark ( ControlDark ) | - Tło IDE<br />- Separatory menu i paska poleceń<br />- Obramowanie paska poleceń<br />- Cienie menu<br />- Domyślna zakładka okna narzędzia i najedź na obramowanie i separator<br />- Dokument dobrze przepełnienie tło przycisku<br />- Dock granicy glif cel |
-| ControlDarkdark (1000) |- Nieskoncentrowane, wybrane okno karty dokumentu |
-| Światło kontrolne |- Automatyczne ukrywanie obramowania karty<br />- Pole kombi i lista rozwijana obramowanie<br />- Dock cel tła i granicy |
-| ControlLightLight (Światło sterowania) | - Wybrana, skupiona granica tymczasowa |
-| Tekst control | - Pole kombi i glif listy rozwijanej<br />- Okno narzędzia niezaznaczony tekst karty |
-| Tekst szary |- Pole kombi i lista rozwijana wyłączone obramowanie, glif listy rozwijanej, tekst i tekst elementu menu<br />- Wyłączony tekst menu<br />- Kontrola wyszukiwania "opcje wyszukiwania" tekst nagłówka<br />- Separator sekcji sterowania wyszukiwaniem |
-| Wyróżnij | - Wszystkie najechać i naciskać tła i obramowania, z wyjątkiem pola kombi rozwijanego tła przycisku i dokumentu dobrze przepełnienie krawędzi przycisku<br />- Wybrane tła elementów |
-| Tekst wyróżnienia | - Wszystkie hover i wciśnięty pierwszy plan (tekst i glify)<br />- Poleczone okno narzędzia i kontrolka okna karty dokumentu na pierwszym planie<br />- Obramowanie paska paska okna narzędzia<br />- Skoncentrowany, wybrany tymczasowy zakładka na pierwszym planie<br />- Dokument dobrze przepełnienie krawędzi przycisku po najechaniu i naciśnij<br />- Wybrane obramowanie ikony|
-| HotTrack (HotTrack) | - Przewijanie kciuka tła i obramowania na prasie<br />- Przewijanie glif strzałki na prasie |
-| NieaktywnyCaption | - Nieaktywne IDE i rafted glify przycisk okna na hover<br />- Tło paska tytułu dla IDE i rafted windows<br />- Wyłączone tło kontroli wyszukiwania |
-| Tekst nieaktywny w celu | - Nieaktywny IDE i rafted windows tytuł pasek pierwszego planu (tekst i glify)<br />- Nieaktywne przyciski okna tło i obramowanie po najechaniu na nie<br />- Nieskoncentrowane tło przycisku okna narzędzia i obramowanie<br />- Wyłączone formancie wyszukiwania na pierwszym planie |
-| Menu | - Rozwijane tło menu<br />- Sprawdzone i wyłączone zaznaczyć tło |
-| MenuTekst | - Rozwijane obramowanie menu<br />- Sprawdź znaczniki<br />- Glify menu<br />- Tekst menu rozwijanego<br />- Wybrane obramowanie ikony |
-| Scrollbar | - Pasek przewijania i tło strzałki paska przewijania, wszystkie stany |
-| Okno | - Automatyczne ukrywanie tła karty<br />- Pasek menu i tło półki poleceń<br />- Nieskoncentrowane lub niezaznaczone tło karty okna dokumentu i obramowanie dokumentu, zarówno dla otwartych, jak i tymczasowych kart<br />- Nieskoncentrowane tło paska tytułu okna narzędzia<br />- Tło karty okna narzędzia, zarówno zaznaczone, jak i niezaznaczone |
-| WindowFrame (Ramka okna) | - Granica IDE |
-| WindowText (Tekst okna) | - Automatyczne ukrywanie karty na pierwszym planie<br />- Wybrana karta okna narzędzia na pierwszym planie<br />- Nieostry kartę okna dokumentu i nieskoncentrowane lub niezaznaczone tymczasowe zakładka pierwszego planu<br />- Domyślny pierwszy plan widoku drzewa i najedź kursorem na niezaznaczony glif<br />- Okno narzędzia wybrane obramowanie karty<br />- Tło kciuka paska przewijania, obramowanie i glif |
+| ActiveCaption | -Aktywne środowisko IDE i glify przycisku okna do założenia przy aktywowaniu i naciśnięciu klawisza<br />-Tło paska tytułu dla środowiska IDE i okien z zaspływeniem<br />— Tło domyślnego paska stanu |
+| ActiveCaptionText | — Aktywne środowisko IDE i tratwy systemu Windows dla pierwszego planu paska tytułu (tekst i glify)<br />— Tło i obramowanie przycisków aktywnego okna po aktywowaniu i naciśnięciu klawisza |
+| Kontrola | -Pole kombi, listę rozwijaną oraz domyślne i wyłączone tło formantu wyszukiwania, w tym przycisk listy rozwijanej<br />-Tło przycisku Docker<br />— Tło paska poleceń<br />— Tło okna narzędzi |
+| ControlDark | — Tło IDE<br />-Menu i separatory paska poleceń<br />-Obramowanie paska poleceń<br />— Cienie menu<br />-Okno narzędzi domyślne i obramowanie i separator aktywowany<br />— Tło przycisku przepełnienia w dokumencie<br />— Obramowanie symbolu docelowego dokowania |
+| ControlDarkDark |— Nieskoncentrowane, wybrane okno karty dokumentu |
+| ControlLight |-Autoukrywanie obramowania karty<br />-Pole kombi i obramowanie listy rozwijanej<br />— Tło i obramowanie obiektu docelowego dokowania |
+| ControlLightLight | -Wybrane, skoncentrowane obramowanie tymczasowe |
+| ControlText | -Pole kombi i symbol listy rozwijanej<br />-Okno narzędzia — niezaznaczony tekst karty |
+| GrayText |-Pole kombi i lista rozwijana wyłączone obramowanie, symbol listy rozwijanej, tekst i tekst elementu menu.<br />— Tekst menu wyłączonego<br />— Tekst nagłówka kontrolki wyszukiwania "Opcje wyszukiwania"<br />-Separator sekcji kontrolki wyszukiwania |
+| Wyróżnij | — Wszystkie przesuwanie i naciśnięte tła i obramowania, z wyjątkiem pola kombi menu rozwijanego i obramowania<br />-Wybrane tło elementu |
+| HighlightText | — Wszystkie aktywowane i naciśnięte klawisze (tekst i glify)<br />Na pierwszym planie okna narzędzi i okna karty dokumentu<br />Obramowanie paska tytułu okna narzędziowe ukierunkowane<br />— Skoncentrowany, wybrany tymczasowy plan tabulacji<br />-Obramowanie przycisku oblewania dokumentu po aktywowaniu i naciśnięciu klawisza<br />-Wybrano obramowanie ikon|
+| HotTrack | — Tło i obramowanie paska przewijania przy naciśnięciu przycisku<br />— Symbol strzałki paska przewijania przy naciśnięciu |
+| InactiveCaption | — Ikony przycisków nieaktywnego środowiska IDE i tratw<br />-Tło paska tytułu dla środowiska IDE i okien z zaspływeniem<br />-Wyłączone tło kontrolki wyszukiwania |
+| InactiveCaptionText | -Nieaktywne środowisko IDE i tratwowy pasek tytułu systemu Windows (tekst i glify)<br />-Nieaktywne przyciski okna i obramowanie po aktywowaniu<br />— Tło i obramowanie przycisku okna narzędzia nieskoncentrowane<br />— Wyłączono pierwszy plan sterowania wyszukiwaniem |
+| Menu | — Tło menu rozwijanego<br />-Zaznaczone i wyłączone tło znacznika wyboru |
+| MenuText | — Obramowanie menu rozwijanego<br />-Znaczniki Check<br />— Glify menu<br />— Tekst menu rozwijanego<br />-Wybrano obramowanie ikon |
+| Paski | — Tło paska przewijania i paska przewijania, wszystkie Stany |
+| Okno | -Autoukrywanie tła karty<br />-Pasek menu i tło półki poleceń<br />— Nieskoncentrowane lub niezaznaczone tło karty okna dokumentu i obramowanie dokumentu dla kart otwartych i tymczasowych<br />— Tło paska tytułu dla nieskoncentrowanego się okna narzędzi<br />-Tło karty okna narzędzi, wybrane i niezaznaczone |
+| WindowFrame | -IDE — obramowanie |
+| WindowText | -Autoukrywanie pierwszego planu karty<br />— Pierwszy plan karty okna narzędzi<br />— Karta okna dokumentu bez fokusu oraz niezaznaczony lub niewybrany tymczasowy plan karty<br />-Tree Wyświetl domyślny pierwszy plan i umieść kursor nad niezaznaczonym symbolem<br />-Okno narzędzia — wybrane obramowanie tabulacji<br />— Tło, obramowanie i symbol paska przewijania |
 
-## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a>Udostępnianie kolorów użytkownikom końcowym
+## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a> Uwidacznianie kolorów dla użytkowników końcowych
 
 ### <a name="overview"></a>Omówienie
 
-Czasami należy zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika, na przykład podczas tworzenia edytora kodu lub powierzchni projektu. Najczęstszym sposobem, aby to zrobić, jest użycie okna dialogowego **Opcje narzędzi. &gt; ** Jeśli nie masz wysoce wyspecjalizowanego interfejsu użytkownika, który wymaga specjalnych formantów, najprostszym sposobem przedstawienia dostosowania jest za pośrednictwem **czcionki i kolory** strony w **środowisku** sekcji okna dialogowego. Dla każdego elementu, który można udostępnić do dostosowania, użytkownik może wybrać, aby zmienić kolor pierwszego planu, kolor tła lub obu.
+Czasami chcesz zezwolić użytkownikowi końcowemu na dostosowanie interfejsu użytkownika, na przykład podczas tworzenia edytora kodu lub powierzchni projektowej. Najbardziej typowym sposobem wykonania tej czynności jest użycie okna dialogowego ** &gt; Opcje narzędzi** . Chyba że masz wysoce wyspecjalizowany interfejs użytkownika, który wymaga specjalnych kontroli, najprostszym sposobem na zaprezentowanie dostosowania jest strona **czcionki i kolory** w sekcji **środowisko** okna dialogowego. Dla każdego elementu, który można dostosowywać, użytkownik może zdecydować się na zmianę koloru pierwszego planu, koloru tła lub obu tych elementów.
 
-### <a name="building-a-vspackage-for-your-customizable-colors"></a>Tworzenie vspackage dla konfigurowalnych kolorów
+### <a name="building-a-vspackage-for-your-customizable-colors"></a>Tworzenie pakietu VSPackage dla dostosowywalnych kolorów
 
-VsPackage może kontrolować czcionki i kolory za pomocą niestandardowych kategorii i wyświetlać elementy na stronie właściwości Czcionki i kolory. Korzystając z tego mechanizmu, VSPackages musi implementować [interfejs IVsFontAndColorColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) i skojarzone z nim interfejsy.
+Pakietu VSPackage może kontrolować czcionki i kolory za pomocą niestandardowych kategorii i wyświetlać elementy na stronie właściwości czcionki i kolory. W przypadku korzystania z tego mechanizmu pakietów VSPackage musi implementować interfejs [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) i skojarzone z nim interfejsy.
 
-Zasadniczo ten mechanizm może służyć do modyfikowania wszystkich istniejących elementów wyświetlania i kategorii, które je zawierają. Jednak nie należy go używać do modyfikowania kategorii Edytor tekstu lub jej elementów wyświetlanych. Aby uzyskać więcej informacji na temat kategorii Edytor tekstu, zobacz [Omówienie czcionek i kolorów](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
+W zasadzie ten mechanizm może służyć do modyfikowania wszystkich istniejących elementów wyświetlanych i kategorii, które je zawierają. Nie należy jednak jej używać do modyfikowania kategorii edytora tekstu ani elementów wyświetlanych. Aby uzyskać więcej informacji na temat kategorii Edytor tekstu, zobacz [Omówienie czcionek i kolorów](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
 
-Aby zaimplementować niestandardowe kategorie lub wyświetlić elementy, vspackage musi:
+Aby zaimplementować niestandardowe kategorie lub elementy wyświetlane, pakietu VSPackage musi:
 
-- **Tworzenie lub identyfikowanie kategorii w rejestrze.** Implementacja IDE **fonts i kolory** strony właściwości strony używa tych informacji, aby poprawnie kwerendy dla usługi obsługującej danej kategorii.
+- **Utwórz lub Zidentyfikuj kategorie w rejestrze.** Implementacja środowiska IDE na stronie właściwości **czcionki i kolory** używa tych informacji, aby prawidłowo wysyłać zapytania dotyczące usługi obsługującej daną kategorię.
 
-- **Tworzenie lub identyfikowanie grup w rejestrze (opcjonalnie).** Może być przydatne do zdefiniowania grupy, która reprezentuje związek dwóch lub więcej kategorii. Jeśli grupa jest zdefiniowana, IDE automatycznie scala podkategorie i dystrybuuje elementy wyświetlania w grupie.
+- **Utwórz lub Zidentyfikuj grupy w rejestrze (opcjonalnie).** Przydatne może być zdefiniowanie grupy, która reprezentuje Unię z co najmniej dwóch kategorii. W przypadku zdefiniowania grupy środowisko IDE automatycznie scala podkategorie i dystrybuuje wyświetlane elementy w grupie.
 
-- **Implementowanie obsługi IDE.**
+- **Implementowanie obsługi środowiska IDE.**
 
-- **Obsługa zmian czcionek i kolorów.**
+- **Obsługuj zmiany czcionek i kolorów.**
 
 #### <a name="to-create-or-identify-categories"></a>Aby utworzyć lub zidentyfikować kategorie
 
-Skonstruuj specjalny typ `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]` wpisu rejestru kategorii w miejscu, w którym `<Category>` jest niezlokalizowana nazwa kategorii.
+Utwórz specjalny typ wpisu rejestru kategorii w obszarze `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]` gdzie `<Category>` jest niezlokalizowaną nazwą kategorii.
 
 Wypełnij rejestr dwiema wartościami:
 
 | Nazwa | Typ | Dane | Opis |
 | --- | --- | --- | --- |
-| Kategoria | REG_SZ | Identyfikator GUID | Identyfikator GUID utworzony w celu zidentyfikowania kategorii |
-| Pakiet | REG_SZ | Identyfikator GUID | Identyfikator GUID usługi VSPackage obsługujący tę kategorię |
+| Kategoria | REG_SZ | GUID | Identyfikator GUID utworzony w celu zidentyfikowania kategorii |
+| Pakiet | REG_SZ | GUID | Identyfikator GUID usługi pakietu VSPackage, która obsługuje kategorię |
 
- Usługa określona w rejestrze musi zapewnić implementację [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) dla odpowiedniej kategorii.
+ Usługa określona w rejestrze musi dostarczyć implementację [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) dla odpowiadającej kategorii.
 
 #### <a name="to-create-or-identify-groups"></a>Aby utworzyć lub zidentyfikować grupy
 
-Skonstruuj specjalny typ `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]` wpisu rejestru kategorii w miejscu, w którym `<group>` jest niezlokalizowana nazwa grupy.
+Utwórz specjalny typ wpisu rejestru kategorii w obszarze `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]` gdzie `<group>` jest niezlokalizowaną nazwą grupy.
 
 Wypełnij rejestr dwiema wartościami:
 
 | Nazwa | Typ | Dane | Opis |
 |--- | --- | --- | --- |
-| Kategoria | REG_SZ | Identyfikator GUID | Identyfikator GUID utworzony w celu zidentyfikowania kategorii |
-| Pakiet | REG_SZ | Identyfikator GUID | Identyfikator GUID usługi VSPackage obsługujący tę kategorię |
+| Kategoria | REG_SZ | GUID | Identyfikator GUID utworzony w celu zidentyfikowania kategorii |
+| Pakiet | REG_SZ | GUID | Identyfikator GUID usługi pakietu VSPackage, która obsługuje kategorię |
 
-Usługa określona w rejestrze musi <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> zapewnić implementację dla odpowiedniej grupy.
+Usługa określona w rejestrze musi dostarczyć implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> dla odpowiedniej grupy.
 
-![Wdrożenie IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Wdrożenie`IVsFontAndColorGroup`
+![Implementacja IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304 — a_FontAndColorGroup")<br />Implementacja programu `IVsFontAndColorGroup`
 
-### <a name="to-implement-ide-support"></a>Aby zaimplementować obsługę IDE
+### <a name="to-implement-ide-support"></a>Aby zaimplementować obsługę środowiska IDE
 
-Implementuj [GetObject](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject), który zwraca interfejs [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejs do IDE dla każdej kategorii lub grupy GUID dostarczone.
+Zaimplementuj [GetObject](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject), która zwraca interfejs [IVSFONTANDCOLORDEFAULTS](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejs IDE dla każdego podanego identyfikatora GUID kategorii lub grupy.
 
-Dla każdej kategorii, która obsługuje, VSPackage implementuje oddzielne wystąpienie interfejsu [IVsFontAndColorDefaults.](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)
+Dla każdej kategorii, która obsługuje, pakietu VSPackage implementuje oddzielne wystąpienie interfejsu [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) .
 
-Metody zaimplementowane za pośrednictwem [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) musi zapewnić IDE z:
+Metody implementowane za pomocą [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) muszą zapewnić IDE z:
 
 - Listy elementów wyświetlanych w kategorii
 
-- Nazwy zlokalizowane dla elementów wyświetlanych
+- Lokalizowalne nazwy dla elementów wyświetlanych
 
-- Wyświetlanie informacji dla każdego członka kategorii
+- Wyświetl informacje dla każdego elementu członkowskiego kategorii
 
 > [!NOTE]
-> Każda kategoria musi zawierać co najmniej jeden element wyświetlania.
+> Każda kategoria musi zawierać co najmniej jeden element wyświetlany.
 
-IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejsu do definiowania unii kilku kategorii.
+IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfejsu do definiowania Unii kilku kategorii.
 
-Jego implementacja zapewnia IDE z:
+Jego implementacja zapewnia środowisko IDE z:
 
 - Lista kategorii, które składają się na daną grupę
 
-- Dostęp do wystąpień [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) obsługujących każdą kategorię w grupie
+- Dostęp do wystąpień elementu [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) obsługującego każdą kategorię w grupie
 
-- Nazwy grup, które można zlokalizować
+- Nazwy grup lokalizowalnych
 
-#### <a name="updating-the-ide"></a>Aktualizowanie ide
+#### <a name="updating-the-ide"></a>Aktualizowanie środowiska IDE
 
-IDE buforuje informacje o ustawieniach czcionki i koloru. W związku z tym po każdej modyfikacji konfiguracji czcionki IDE i kolor, zapewnienie, że pamięć podręczna jest aktualna jest najlepszym rozwiązaniem.
+IDE buforuje informacje o ustawieniach czcionek i kolorów. W związku z tym, po każdej modyfikacji konfiguracji czcionek i kolorów IDE, zapewnienie, że pamięć podręczna jest aktualna.
 
-Aktualizowanie pamięci podręcznej odbywa się za pośrednictwem interfejsu [IvsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) i może być wykonywane globalnie lub tylko na wybranych elementach.
+Aktualizowanie pamięci podręcznej odbywa się za pomocą interfejsu [IvsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) i może być wykonywane globalnie lub tylko dla wybranych elementów.
 
-### <a name="handling-font-and-color-changes"></a>Obsługa zmian czcionek i kolorów
+### <a name="handling-font-and-color-changes"></a>Obsługa zmian czcionki i koloru
 
-Aby poprawnie obsługiwać kolorowanie tekstu wyświetlanego przez program VSPackage, usługa kolorowania obsługująca program VSPackage musi odpowiadać na zmiany inicjowane przez użytkownika wprowadzone za pośrednictwem strony właściwości Czcionki i kolory.
+Aby prawidłowo obsługiwać Kolorowanie tekstu wyświetlanego przez pakietu VSPackage, usługa kolorowania obsługująca pakietu VSPackage musi odpowiadać na zmiany zainicjowane przez użytkownika za pomocą strony właściwości czcionki i kolory.
 
-Aby to zrobić, VSPackage musi:
+Aby to zrobić, pakietu VSPackage musi:
 
-- **obsługi zdarzeń generowanych** przez IDE implementując [interfejs IVsFontAndColorEvents.](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) IDE wywołuje odpowiednią metodę po modyfikacji użytkownika fonts i kolory strony. Na przykład wywołuje [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) metody, jeśli nowa czcionka jest zaznaczona.
+- **Obsługa zdarzeń generowanych przez środowisko IDE** przez implementację interfejsu [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) . IDE wywołuje odpowiednią metodę po zmodyfikowaniu przez użytkownika strony czcionki i kolory. Na przykład wywołuje metodę [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) , jeśli wybrano nową czcionkę.
 
-  **Lub**
+  **ORAZ**
 
-- **sondowania IDE pod kątem zmian**. Można to zrobić za pośrednictwem zaimplementowanego przez system interfejsu [IVsFontAndColorStorage.](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) Chociaż przede wszystkim dla obsługi trwałości [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) metoda można uzyskać informacje o czcionki i koloru dla elementów wyświetlanych. Aby uzyskać więcej informacji na temat ustawień czcionek i kolorów, zobacz artykuł MSDN [Uzyskiwanie dostępu do ustawień zapisanych czcionek i kolorów](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
+- **sondowanie środowiska IDE pod kątem zmian**. Można to zrobić za pomocą interfejsu [Niepowodzenie IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) zaimplementowanego przez system. Chociaż głównie do obsługi trwałości, Metoda [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) może uzyskać informacje o czcionce i kolorach dla elementów wyświetlanych. Aby uzyskać więcej informacji na temat ustawień czcionek i kolorów, zobacz artykuł MSDN z [dostępem do przechowywanych ustawień czcionek i kolorów](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
 
 > [!NOTE]
-> Aby upewnić się, że wyniki sondowania są poprawne, należy użyć interfejsu [IVsFontAndColorCacheManager,](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) aby ustalić, czy opróżnianie pamięci podręcznej i aktualizacji są potrzebne przed wywołaniem metod pobierania interfejsu [IVsFontAndColorStorage.](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)
+> Aby upewnić się, że wyniki sondowania są poprawne, użyj interfejsu [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) , aby określić, czy opróżnianie pamięci podręcznej i aktualizacja jest konieczna przed wywołaniem metod pobierania interfejsu [Niepowodzenie IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .
 
-#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Rejestrowanie czcionek niestandardowych i kategorii kolorów bez implementacji interfejsów
+#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Rejestrowanie niestandardowej kategorii czcionek i kolorów bez implementowania interfejsów
 
-W poniższym przykładzie kodu pokazano, jak zarejestrować niestandardową czcionkę i kategorię kolorów bez implementowania interfejsów:
+Poniższy przykład kodu demonstruje, jak zarejestrować niestandardową kategorię czcionki i koloru bez implementowania interfejsów:
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp Tool Window]
@@ -441,15 +441,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
     "NameID"=dword:00000064
 ```
 
-W tym przykładzie kodu:
+Dla tego przykładu kodu:
 
-- `"NameID"`= identyfikator zasobu zlokalizowanej nazwy kategorii w pakiecie
-- `"ToolWindowPackage"`= Identyfikator GUID pakietu
-- `"Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"`jest tylko przykładem, a rzeczywistą wartością może być nowy identyfikator GUID dostarczony przez realizatora.
+- `"NameID"` = Identyfikator zasobu zlokalizowanej nazwy kategorii w pakiecie
+- `"ToolWindowPackage"` = Identyfikator GUID pakietu
+- `"Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"` jest tylko przykładem, a rzeczywista wartość może być nowym identyfikatorem GUID dostarczonym przez realizatora.
 
-### <a name="set-the-font-and-color-property-category-guid"></a>Ustawianie identyfikatora GUID właściwości Czcionka i Kolor
+### <a name="set-the-font-and-color-property-category-guid"></a>Ustaw identyfikator GUID kategorii właściwości i koloru
 
-Poniższy przykład kodu pokazuje ustawienie identyfikatorów GUID kategorii.
+W poniższym przykładzie kodu pokazano, jak ustawić identyfikatory GUID kategorii.
 
 ```csharp
 // m_pView is your IVsTextView

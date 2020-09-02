@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84db5dac77fbbc51c9f1c0e24173dcc8ca1d68c1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332197"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries —, funkcja
@@ -31,7 +31,7 @@ HRESULT CvReleaseMarkerSeries(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pMarkerSeries`Adres zmiennej obiektu dostawcy. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
+ `pMarkerSeries` Adres zmiennej obiektu dostawcy. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
 
 ## <a name="return-value"></a>Wartość zwracana
  S_OK, gdy seria znaczników zostanie pomyślnie wydana lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.

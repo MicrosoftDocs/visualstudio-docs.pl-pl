@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Dokumentacja firmy Microsoft
+title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ddff6130e2243d10c00cefec160d057516d60932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153277"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Zapewnia powodów, dla którego punkt przerwania został niepowiązanej.  
+Zwraca powód, dla którego nie powiązano punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,24 +47,24 @@ public enum enum_BP_UNBOUND_REASON { 
   
 ## <a name="members"></a>Elementy członkowskie  
  BPUR_UNKNOWN  
- Przyczyną jest nieznany.  
+ Przyczyna jest nieznana.  
   
  BPUR_CODE_UNLOADED  
  Kod, który zawiera punkt przerwania został zwolniony.  
   
  BPUR_BREAKPOINT_REBIND  
- Punkt przerwania ma zostało odbitych do innej lokalizacji. To jest wykonywane podczas edycji i kontynuowania działania w przypadku, gdy punkt przerwania lub gdy punkt przerwania jest powiązana z pliku ze ścieżką, która nie jest już prawidłowy.  
+ Punkt przerwania został Przewiązany do innej lokalizacji. Może to nastąpić po przejściu operacji Edytuj i Kontynuuj, gdy punkt przerwania jest przenoszony lub gdy punkt przerwania jest powiązany z plikiem o ścieżce, która nie jest już prawidłowa.  
   
  BPUR_ BREAKPOINT_ERROR  
- Punkt przerwania jest określana jest błędny po jest powiązany. Dzieje się to do zarządzanego punktów przerwania, którego warunki nie są już prawidłowe.  
+ Punkt przerwania jest określany jako błąd, po którym jest powiązany. Dzieje się tak w przypadku zarządzanych punktów przerwania, których warunki nie są już prawidłowe.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwrócone przez [getreason —](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metody.  
+ Zwrócone przez metodę [getpowód](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

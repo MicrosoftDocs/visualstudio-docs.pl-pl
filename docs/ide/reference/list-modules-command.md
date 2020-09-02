@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595504"
 ---
 # <a name="list-modules-command"></a>Lista modułów — Polecenie
@@ -33,41 +33,41 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 ```
 
 #### <a name="parameters"></a>Parametry
-/Adres:`yes|no`
+Ulica`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane adresy pamięci modułów. Wartością `yes`domyślną jest .
+Opcjonalny. Określa, czy mają być pokazywane adresy pamięci modułów. Wartość domyślna to `yes` .
 
-/Nazwa:`yes|no`
+Nazwij`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane nazwy modułów. Wartością `yes`domyślną jest .
+Opcjonalny. Określa, czy mają być wyświetlane nazwy modułów. Wartość domyślna to `yes` .
 
-/Zamówienie:`yes|no`
+Porządek`yes|no`
 
-Element opcjonalny. Określa, czy ma być pokazywany porządek modułów. Wartością `no`domyślną jest .
+Opcjonalny. Określa, czy ma być wyświetlana kolejność modułów. Wartość domyślna to `no` .
 
-/Ścieżka:`yes|no`
+Ścieżka`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane ścieżki modułów. Wartością `yes`domyślną jest .
+Opcjonalny. Określa, czy mają być wyświetlane ścieżki modułów. Wartość domyślna to `yes` .
 
-/Proces:`yes|no`
+Podstawowych`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane procesy modułów. Wartością `no`domyślną jest .
+Opcjonalny. Określa, czy mają być wyświetlane procesy modułów. Wartość domyślna to `no` .
 
-/SymbolFile:`yes|no`
+SymbolFile`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane pliki symboli modułów. Wartością `no`domyślną jest .
+Opcjonalny. Określa, czy mają być pokazywane pliki symboli modułów. Wartość domyślna to `no` .
 
-/SymbolStatus:`yes|no`
+Stansymboli`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane stany symboli modułów. Wartością `yes`domyślną jest .
+Opcjonalny. Określa, czy mają być pokazywane Stany symboli modułów. Wartość domyślna to `yes` .
 
-/sygnatura czasowa:`yes|no`
+Znacznik czasu`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane sygnatury czasowe modułów. Wartością `no`domyślną jest .
+Opcjonalny. Określa, czy mają być pokazywane sygnatury czasowe modułów. Wartość domyślna to `no` .
 
-/Wersja:`yes|no`
+Nowszym`yes|no`
 
-Element opcjonalny. Określa, czy mają być wyświetlane wersje modułów. Wartością `no`domyślną jest .
+Opcjonalny. Określa, czy mają być wyświetlane wersje modułów. Wartość domyślna to `no` .
 
 ## <a name="example"></a>Przykład
 W tym przykładzie wymieniono nazwy modułów, adresy i sygnatury czasowe dla bieżącego procesu.
@@ -78,6 +78,6 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno polecenia](../../ide/reference/command-window.md)
 - [Instrukcje: korzystanie z okna modułów](../../debugger/how-to-use-the-modules-window.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188317"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Debugowanie aplikacji internetowych: rozwiązywanie problemów
@@ -34,4 +34,4 @@ Ta sekcja zawiera typowe procedury, których można użyć do rozwiązywania bł
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md) Wyjaśnia Rozwiązywanie problemów i rozpoznawanie błędów.
 
- [Debugowanie aplikacji sieci Web i skryptu](how-to-enable-debugging-for-aspnet-applications.md) Omówienie debugowania aplikacji sieci Web, takich jak [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], usługi sieci Web XML i projekty serwera ATL.
+ [Debugowanie aplikacji sieci Web i skryptu](how-to-enable-debugging-for-aspnet-applications.md) Omówienie debugowania aplikacji sieci Web, takich jak [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usługi sieci Web XML i projekty serwera ATL.

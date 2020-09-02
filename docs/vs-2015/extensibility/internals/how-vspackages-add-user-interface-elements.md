@@ -1,5 +1,5 @@
 ---
-title: Jak dodać elementy interfejsu użytkownika w pakietach VSPackage | Dokumentacja firmy Microsoft
+title: Jak pakietów VSPackage dodawać elementy interfejsu użytkownika | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,32 +13,32 @@ caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436124"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64833457"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pakietu VSPackage można dodać elementy interfejsu użytkownika, na przykład, menu, paski narzędzi i narzędzi systemu windows, do programu Visual Studio przy użyciu pliku vsct.  
+Pakietu VSPackage może dodawać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i okna narzędzi, do programu Visual Studio za pomocą pliku. vsct.  
   
- Możesz znaleźć wytyczne dotyczące projektowania dla elementów interfejsu użytkownika na [dotyczące środowiska użytkownika w usłudze Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
+ Wskazówki dotyczące projektowania elementów interfejsu użytkownika można znaleźć w [wytycznych dotyczących środowiska użytkownika programu Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
-## <a name="the-visual-studio-command-table-architecture"></a>Architektura tabeli polecenia programu Visual Studio  
- Jak wspomniano, architektura tabeli polecenia obsługuje powyższych zasad architektonicznych. Założenia abstrakcji, struktur danych i narzędzia architektury tabeli polecenia są następujące:  
+## <a name="the-visual-studio-command-table-architecture"></a>Architektura tabeli poleceń programu Visual Studio  
+ Jak wspomniano, architektura tabeli poleceń obsługuje powyższe zasady architektury. Założenia za abstrakcją, strukturami danych i narzędziami architektury tabeli poleceń są następujące:  
   
-- Istnieją trzy podstawowe typy elementów: menu, poleceń i grup. Menu mogą być udostępniane w interfejsie użytkownika jako menu, podmenu, paski narzędzi i okien narzędzi. Polecenia są procedury, które użytkownik może uruchomić w środowisku IDE, i które można uwidocznić jako elementy menu, przyciski, pola listy i inne kontrolki. Grupy są kontenerami dla zarówno menu i poleceń.  
+- Istnieją trzy podstawowe rodzaje elementów: menu, polecenia i grupy. Menu może być uwidocznione w interfejsie użytkownika jako menu, podmenu, paski narzędzi lub okna narzędzi. Polecenia są procedurami, które użytkownik może wykonywać w IDE i mogą być udostępniane jako elementy menu, przyciski, pola listy lub inne kontrolki. Grupy są kontenerami dla menu i poleceń.  
   
-- Każdy element jest określona, zgodnie z definicją, opisujące element, jego priorytet względem innych elementów, a flagi, które modyfikują zachowanie.  
+- Każdy element jest określony przez definicję opisującą element, jego priorytet względem innych elementów oraz flagi modyfikujące jego zachowanie.  
   
-- Każdy element ma umieszczenia, opisująca nadrzędnego elementu. Element może mieć wielu elementów nadrzędnych, dzięki czemu może występować w wielu lokalizacjach w interfejsie użytkownika.  
+- Każdy element ma rozmieszczenie, które opisuje element nadrzędny elementu. Element może mieć wiele elementów nadrzędnych, tak aby mógł znajdować się w wielu lokalizacjach w interfejsie użytkownika.  
   
-     Każde polecenie musi mieć grupę jako klasy nadrzędnej, nawet jeśli jest elementem podrzędnym tylko w tej grupie. Każdy standardowe menu musi mieć grupę nadrzędną. Paski narzędzi i okien narzędzi pełnić rolę własne elementy nadrzędne. Grupa może mieć jako jego element nadrzędny głównego pasek menu programu Visual Studio lub dowolnego menu, pasek narzędzi lub okna narzędzi.  
+     Każde polecenie musi mieć grupę jako nadrzędną, nawet jeśli jest jedynym elementem podrzędnym w tej grupie. Każde menu standardowe musi mieć również grupę nadrzędną. Paski narzędzi i okna narzędzi działają jako własne elementy nadrzędne. Grupa może mieć jako nadrzędną główną pasek menu programu Visual Studio lub dowolne menu, paski narzędzi lub okno narzędzi.  
   
-### <a name="how-items-are-defined"></a>Sposób definiowania elementów  
- . Pliki Vsct są formatowane w formacie XML. Pliku vsct definiuje elementy interfejsu użytkownika dla pakietu i określa, gdzie te elementy są wyświetlane w środowisku IDE. Identyfikator GUID i identyfikator w najpierw przypisano co menu, grupy lub polecenia w pakiecie `Symbols` sekcji. W pozostałej części vsct pliku, każdego menu, poleceń oraz grupy jest identyfikowana przez kombinację jego identyfikator GUID i identyfikator. W poniższym przykładzie przedstawiono typowe `Symbols` sekcji wygenerowanego przez szablon pakietu Visual Studio podczas **polecenia Menu** jest zaznaczona w szablonie.  
+### <a name="how-items-are-defined"></a>Jak są definiowane elementy  
+ . Pliki VSCT są sformatowane w formacie XML. Plik. vsct definiuje elementy interfejsu użytkownika dla pakietu i określa, gdzie te elementy są widoczne w IDE. Każde menu, grupę lub polecenie w pakiecie otrzymuje najpierw identyfikator GUID i identyfikator w `Symbols` sekcji. W pozostałej części pliku. vsct wszystkie menu, polecenia i grupy są identyfikowane przez jego identyfikator GUID i identyfikator. W poniższym przykładzie przedstawiono typową `Symbols` sekcję wygenerowaną przez szablon pakietu programu Visual Studio, gdy w szablonie jest wybrane **polecenie menu** .  
   
 ```xml  
 <Symbols>  
@@ -62,42 +62,42 @@ Pakietu VSPackage można dodać elementy interfejsu użytkownika, na przykład, 
 </Symbols>  
 ```  
   
- Element najwyższego poziomu `Symbols` sekcja [GuidSymbol, Element](../../extensibility/guidsymbol-element.md). `GuidSymbol` elementy nazwy są mapowane na identyfikatory GUID, które są używane przez IDE, aby zidentyfikować pakiety i ich części składowe.  
+ Element najwyższego poziomu `Symbols` sekcji to [element GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol` elementy mapują nazwy na identyfikatory GUID, które są używane przez środowisko IDE do identyfikowania pakietów i ich części składników.  
   
 > [!NOTE]
-> Identyfikatory GUID są generowane automatycznie przez szablon pakietu Visual Studio. Unikatowy identyfikator GUID można również utworzyć, klikając **Utwórz GUID** na **narzędzia** menu.  
+> Identyfikatory GUID są generowane automatycznie przez szablon pakietu programu Visual Studio. Możesz również utworzyć unikatowy identyfikator GUID, klikając polecenie **Utwórz identyfikator GUID** w menu **Narzędzia** .  
   
- Pierwszy `GuidSymbol` elementu, "[Nazwa_pakietu] identyfikator guid pakietu", identyfikator GUID pakietu. Jest to identyfikator GUID, który jest używany przez program Visual Studio można załadować pakietu. Zazwyczaj nie ma elementów podrzędnych.  
+ Pierwszy `GuidSymbol` element "GUID [PackageName] pkg" jest identyfikatorem GUID samego pakietu. Jest to identyfikator GUID używany przez program Visual Studio do załadowania pakietu. Zazwyczaj nie ma elementów podrzędnych.  
   
- Zgodnie z Konwencją, menu i poleceń, są zgrupowane w drugiej `GuidSymbol` elementu "guid [Nazwa_pakietu] CmdSet", i mapy bitowe mają rozmiar w obszarze innego `GuidSymbol` element, "guidImages". Nie należy przestrzegać tej Konwencji, ale każdy menu, grupy, polecenia i mapy bitowej musi być obiektem podrzędnym obiektu `GuidSymbol` elementu.  
+ Według Konwencji menu i polecenia są pogrupowane pod drugim `GuidSymbol` elementem, "GUID [PackageName] CmdSet", a mapy bitowe znajdują się w trzecim `GuidSymbol` elemencie "guidImages". Nie trzeba stosować tej Konwencji, ale każde menu, grupowanie, polecenie i mapa bitowa musi być elementem podrzędnym `GuidSymbol` elementu.  
   
- W drugim `GuidSymbol` element, który reprezentuje zestaw poleceń pakiet, kilka `IDSymbol` elementów. Każdy [IDSymbol, Element](../../extensibility/idsymbol-element.md) mapuje nazwę na wartość liczbową i może reprezentować menu, grupy lub polecenia, który jest częścią zestawu poleceń. `IDSymbol` Elementów w trzecim `GuidSymbol` mapy bitowe reprezentują element, który może być używany jako ikony poleceń. Ponieważ par identyfikator/GUID musi być unikatowa w aplikacji, żadne dwa elementy podrzędne tego samego `GuidSymbol` element może mieć taką samą wartość.  
+ W drugim `GuidSymbol` elemencie, który reprezentuje zestaw poleceń pakietu, jest kilka `IDSymbol` elementów. Każdy [element IDSymbol](../../extensibility/idsymbol-element.md) mapuje nazwę na wartość liczbową i może reprezentować menu, grupę lub polecenie, które jest częścią zestawu poleceń. `IDSymbol`Elementy w trzecim `GuidSymbol` elemencie reprezentują mapy bitowe, które mogą być używane jako ikony poleceń. Ponieważ pary GUID/ID muszą być unikatowe w aplikacji, żadne dwa elementy podrzędne tego samego `GuidSymbol` elementu nie mogą mieć tej samej wartości.  
   
 ### <a name="menus-groups-and-commands"></a>Menu, grupy i polecenia  
- Menu, grupy lub polecenie ma identyfikator GUID i identyfikator, może być dodany do środowiska IDE programu. Każdy element interfejsu użytkownika musi mieć następujące elementy:  
+ Gdy menu, grupy lub polecenia ma identyfikator GUID i ID, można dodać go do IDE. Każdy element interfejsu użytkownika musi mieć następujące elementy:  
   
-- A `guid` atrybut, który jest zgodna z nazwą `GuidSymbol` element, który jest zdefiniowany element interfejsu użytkownika, w obszarze.  
+- `guid`Atrybut, który jest zgodny z nazwą `GuidSymbol` elementu, w którym jest zdefiniowany element interfejsu użytkownika.  
   
-- `id` Atrybut, który jest zgodna z nazwą skojarzonego `IDSymbol` elementu.  
+- `id`Atrybut, który jest zgodny z nazwą skojarzonego `IDSymbol` elementu.  
   
-     Razem `guid` i `id` atrybuty tworzą *podpisu* elementu interfejsu użytkownika.  
+     Razem `guid` `id` atrybuty i tworzą *podpis* elementu interfejsu użytkownika.  
   
-- A `priority` atrybut, który określa położenie elementu interfejsu użytkownika w menu nadrzędnej lub grupy.  
+- `priority`Atrybut, który określa położenie elementu interfejsu użytkownika w jego menu nadrzędnym lub grupie.  
   
-- A [elementu nadrzędnego](../../extensibility/parent-element.md) zawierający `guid` i `id` atrybuty określające podpisu menu nadrzędnej lub grupy.  
+- [Element nadrzędny](../../extensibility/parent-element.md) , który zawiera `guid` `id` atrybuty, które określają podpis menu lub grupy nadrzędnej.  
   
 #### <a name="menus"></a>Menu  
- Każde menu jest zdefiniowany jako [Menu Element](../../extensibility/menu-element.md) w `Menus` sekcji. Menu musi mieć `guid`, `id`, i `priority` atrybutów, a `Parent` elementu, a także następujących dodatkowych atrybutów i elementy podrzędne:  
+ Każde menu jest zdefiniowane jako [element menu](../../extensibility/menu-element.md) w `Menus` sekcji. Menu muszą mieć `guid` `id` atrybuty,, i `priority` i elementy `Parent` , a także następujące dodatkowe atrybuty i elementy podrzędne:  
   
-- A `type` atrybut, który określa, czy menu mają pojawiać się w środowisku IDE jako rodzaju menu lub paska narzędzi.  
+- `type`Atrybut, który określa, czy menu ma być wyświetlane w środowisku IDE jako rodzaj menu, czy jako pasek narzędzi.  
   
-- A [Strings, Element](../../extensibility/strings-element.md) zawierający [ButtonText, Element](../../extensibility/buttontext-element.md), która określa tytuł menu w IDE i [CommandName, Element](../../extensibility/commandname-element.md), który określa nazwę, która jest używane w **polecenia** okna, aby uzyskać dostęp do menu.  
+- [Element Strings](../../extensibility/strings-element.md) , który zawiera [element ButtonText](../../extensibility/buttontext-element.md), który określa tytuł menu w IDE oraz [element CommandName](../../extensibility/commandname-element.md), który określa nazwę, która jest używana w oknie **polecenia** , aby uzyskać dostęp do menu.  
   
-- Flagi opcjonalne. A [Command Flag, Element](../../extensibility/command-flag-element.md) może występować w definicji menu, aby zmienić jego wygląd lub zachowanie w środowisku IDE.  
+- Opcjonalne flagi. [Element flagi polecenia](../../extensibility/command-flag-element.md) może pojawić się w definicji menu, aby zmienić jego wygląd lub zachowanie w środowisku IDE.  
   
-  Każdy `Menu` elementu musi mieć grupę jako klasy nadrzędnej, chyba że jest to element dokowalne, takie jak pasek narzędzi. Dokowalne menu jest jego własny element nadrzędny. Aby uzyskać więcej informacji na temat menu i wartości dla `type` atrybutów, zobacz [Menu Element](../../extensibility/menu-element.md) dokumentacji.  
+  Każdy `Menu` element musi mieć grupę jako element nadrzędny, chyba że jest to element było dokować, taki jak pasek narzędzi. Menu było dokować jest własnym obiektem nadrzędnym. Aby uzyskać więcej informacji na temat menu i wartości dla `type` atrybutu, zobacz dokumentację [elementu menu](../../extensibility/menu-element.md) .  
   
-  W poniższym przykładzie pokazano menu, która pojawia się na pasku menu programu Visual Studio **narzędzia** menu.  
+  Poniższy przykład pokazuje menu, które pojawia się na pasku menu programu Visual Studio obok menu **Narzędzia** .  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -112,9 +112,9 @@ id="TopLevelMenu" priority="0x700" type="Menu">
 ```  
   
 #### <a name="groups"></a>Grupy  
- Grupa jest element, który jest zdefiniowany w `Groups` części pliku vsct. Grupy są po prostu kontenerami. Nie są wyświetlane w środowisku IDE, z wyjątkiem jako linię podziału, w menu. W związku z tym [Element grupy](../../extensibility/group-element.md) jest definiowana tylko przez jego podpisu, priorytetu i nadrzędnej.  
+ Grupa to element, który jest zdefiniowany w `Groups` sekcji pliku. vsct. Grupy są tylko kontenerami. Nie są one wyświetlane w środowisku IDE, z wyjątkiem linii podziału w menu. W związku z tym [element grupy](../../extensibility/group-element.md) jest definiowany tylko za pomocą jego podpisu, priorytetu i elementu nadrzędnego.  
   
- Grupa może zawierać menu, inną grupę lub samego jako element nadrzędny. Element nadrzędny jest jednak zazwyczaj menu lub paska narzędzi. Menu we wcześniejszym przykładzie jest elementem podrzędnym `IDG_VS_MM_TOOLSADDINS` grup oraz że jest elementem podrzędnym na pasku menu programu Visual Studio. Grupy w poniższym przykładzie jest elementem podrzędnym elementu menu we wcześniejszym przykładzie.  
+ Grupa może mieć menu, inną grupę lub samą siebie jako element nadrzędny. Jednak element nadrzędny jest zazwyczaj menu lub paskiem narzędzi. Menu w poprzednim przykładzie jest elementem podrzędnym `IDG_VS_MM_TOOLSADDINS` grupy, a grupa jest elementem podrzędnym paska menu programu Visual Studio. Grupa w poniższym przykładzie jest elementem podrzędnym menu w poprzednim przykładzie.  
   
 ```  
  <Group guid="guidTopLevelMenuCmdSet" id="MyMenuGroup"  
@@ -123,7 +123,7 @@ priority="0x0600">
  </Group>  
 ```  
   
- Ponieważ jest on częścią menu, ta grupa będzie zwykle zawierają polecenia. Jednak może również zawierać inne menu. Jest to sposób definiowania podmenu, jak pokazano w poniższym przykładzie.  
+ Ponieważ jest częścią menu, ta grupa zwykle zawiera polecenia. Może to jednak również zawierać inne menu. Jest to sposób definiowania podmenu, jak pokazano w poniższym przykładzie.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet" id="SubMenu"  
@@ -137,12 +137,12 @@ priority="0x0100" type="Menu">
 ```  
   
 #### <a name="commands"></a>Polecenia  
- Polecenia, który został dostarczony do IDE jest zdefiniowany jako [Button Element](../../extensibility/button-element.md) lub [Combo, Element](../../extensibility/combo-element.md). Być wyświetlane w menu lub paska narzędzi, polecenia musi mieć grupę jako klasy nadrzędnej.  
+ Polecenie, które jest dostarczane do IDE jest zdefiniowane jako [element Button](../../extensibility/button-element.md) lub [kombi](../../extensibility/combo-element.md). Aby pojawił się w menu lub pasku narzędzi, polecenie musi mieć grupę jako element nadrzędny.  
   
 ##### <a name="buttons"></a>Przyciski  
- Przyciski są zdefiniowane w `Buttons` sekcji. Dowolny element menu, przycisk lub inny element, który użytkownik klika, aby wykonać jedno polecenie jest traktowane jako przycisk. Niektóre typy przycisku, mogą również zawierać funkcje listy. Przyciski mają takie same wymaganych i opcjonalnych atrybutów, które mają menu, a także mogą mieć [Icon, Element](../../extensibility/icon-element.md) , który określa identyfikator GUID i identyfikator mapy bitowej, która reprezentuje przycisk w środowisku IDE. Aby uzyskać więcej informacji na temat przycisków i ich atrybutów, zobacz [Buttons, Element](../../extensibility/buttons-element.md) dokumentacji.  
+ Przyciski są zdefiniowane w `Buttons` sekcji. Każdy element menu, przycisk lub inny element, który użytkownik klika, aby wykonać pojedyncze polecenie, jest traktowany jako przycisk. Niektóre typy przycisków mogą również zawierać funkcje listy. Przyciski mają takie same atrybuty wymagane i opcjonalne, które są dostępne dla menu, i mogą także mieć [element ikon](../../extensibility/icon-element.md) , który określa identyfikator GUID i identyfikator mapy bitowej, która reprezentuje przycisk w IDE. Aby uzyskać więcej informacji na temat przycisków i ich atrybutów, zobacz sekcję dotyczącą [elementów Button](../../extensibility/buttons-element.md) .  
   
- W poniższym przykładzie przycisk jest elementem podrzędnym grupy we wcześniejszym przykładzie i pojawią się w środowisku IDE jako element menu w menu nadrzędnej tej grupy.  
+ Przycisk w poniższym przykładzie jest elementem podrzędnym grupy w poprzednim przykładzie i pojawi się w IDE jako element menu w menu nadrzędnym tej grupy.  
   
 ```  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
@@ -155,14 +155,14 @@ priority="0x0100" type="Menu">
 </Button>  
 ```  
   
-##### <a name="combos"></a>Combos  
- Combos są zdefiniowane w `Combos` sekcji. Każdy `Combo` element reprezentuje pole listy rozwijanej w środowisku IDE. Pole listy mogą być lub zapis danych przez użytkowników, w zależności od wartości `type` atrybut kombi. Combos mają te same elementy i zachowanie, że przyciski ma, a także mogą mieć następujących dodatkowych atrybutów:  
+##### <a name="combos"></a>Pola kombi  
+ Pola kombi są zdefiniowane w `Combos` sekcji. Każdy `Combo` element reprezentuje pole listy rozwijanej w środowisku IDE. Pole listy może lub nie może być zapisywalne przez użytkowników, w zależności od wartości `type` atrybutu kombi. Pola kombi mają takie same elementy i zachowanie, które są dostępne na przyciskach, a także mogą mieć następujące dodatkowe atrybuty:  
   
-- A `defaultWidth` atrybut, który określa szerokość w pikselach.  
+- `defaultWidth`Atrybut, który określa szerokość pikseli.  
   
-- `idCommandList` Atrybut, który określa listę, która zawiera elementy, które są wyświetlane w polu listy. Lista poleceń musi być zadeklarowany w tym samym `GuidSymbol` węzeł, który zawiera kombi.  
+- `idCommandList`Atrybut, który określa listę zawierającą elementy, które są wyświetlane w polu listy. Lista poleceń musi być zadeklarowana w tym samym `GuidSymbol` węźle, który zawiera pole kombi.  
   
-  W poniższym przykładzie zdefiniowano combo, element.  
+  W poniższym przykładzie zdefiniowano element kombi.  
   
 ```xml  
 <Combos>  
@@ -185,34 +185,34 @@ priority="0x0100" type="Menu">
 ```  
   
 ##### <a name="bitmaps"></a>Mapy bitowe  
- Polecenia, które będą wyświetlane wraz z ikony musi zawierać `Icon` element, który odwołuje się do mapy bitowej przy użyciu jego identyfikator GUID i identyfikator. Każda mapa bitowa jest zdefiniowany jako [Element bitmapy](../../extensibility/bitmap-element.md) w `Bitmaps` sekcji. Tylko wymaganych atrybutów dla `Bitmap` definicji są `guid` i `href`, który wskazuje plik źródłowy. Jeśli plik źródłowy znajduje się pasek zasobów **usedList** atrybucie uwzględniana jest również wymagane, aby wyświetlić listę dostępnych obrazów na pasku. Aby uzyskać więcej informacji, zobacz [Element bitmapy](../../extensibility/bitmap-element.md) dokumentacji.  
+ Polecenia, które będą wyświetlane razem z ikoną, muszą zawierać `Icon` element, który odwołuje się do mapy bitowej przy użyciu identyfikatora GUID i identyfikatora. Każda mapa bitowa jest definiowana jako [element bitmapy](../../extensibility/bitmap-element.md) w `Bitmaps` sekcji. Jedynymi wymaganymi atrybutami `Bitmap` definicji są `guid` i `href` , które wskazują plik źródłowy. Jeśli plik źródłowy jest paskiem zasobów, wymagany jest również atrybut **usedList** , aby wyświetlić listę dostępnych obrazów na pasku. Aby uzyskać więcej informacji, zobacz dokumentację [elementu mapy bitowej](../../extensibility/bitmap-element.md) .  
   
 ### <a name="parenting"></a>Elementy nadrzędne  
- Następujące reguły określają, jak wywołać inny element jako jego element nadrzędny elementu.  
+ Poniższe reguły określają, jak element może wywoływać inny element jako element nadrzędny.  
   
-|Element|Zdefiniowane w tej sekcji tabeli poleceń|Mogą znajdować się (jako element nadrzędny lub umieszczania w `CommandPlacements` sekcji i / lub)|Może zawierać (określony jako element nadrzędny)|  
+|Element|Zdefiniowane w tej sekcji tabeli poleceń|Może być zawarta (jako element nadrzędny lub przez umieszczenie w `CommandPlacements` sekcji lub obie)|Może zawierać (określany jako element nadrzędny)|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
-|Grupa|[Grupuje Element](../../extensibility/groups-element.md), IDE, innych pakietów VSPackage|Menu, grupy, sam element|Menu, grupy i polecenia|  
-|Menu|[Element menu](../../extensibility/menus-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup|0, aby *n* grup|  
-|Pasek narzędzi|[Element menu](../../extensibility/menus-element.md), IDE, innych pakietów VSPackage|Sam element|0, aby *n* grup|  
-|Element menu|[Przyciski Element](../../extensibility/buttons-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup sam element|-0, aby *n* grup|  
-|Przycisk|[Przyciski Element](../../extensibility/buttons-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup sam element||  
-|Combo|[Combos, Element](../../extensibility/combos-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup sam element||  
+|Group (Grupa)|[Grupy, element](../../extensibility/groups-element.md)IDE, inne pakietów VSPackage|Menu, grupy, samego elementu|Menu, grupy i polecenia|  
+|Menu|[Element menu](../../extensibility/menus-element.md), IDE, inne pakietów VSPackage|od 1 do *n* grup|od 0 do *n* grup|  
+|Pasek narzędzi|[Element menu](../../extensibility/menus-element.md), IDE, inne pakietów VSPackage|Sam element|od 0 do *n* grup|  
+|Element menu|[Button — element](../../extensibility/buttons-element.md), IDE, inne pakietów VSPackage|1 do *n* grup, sam element|-0 do *n* grup|  
+|Przycisk|[Button — element](../../extensibility/buttons-element.md), IDE, inne pakietów VSPackage|1 do *n* grup, sam element||  
+|Kombi|[Elementy kombi](../../extensibility/combos-element.md), IDE, inne pakietów VSPackage|1 do *n* grup, sam element||  
   
-### <a name="menu-command-and-group-placement"></a>Menu, poleceń oraz grupy umieszczania  
- Menu, grupy lub polecenia może znajdować się w więcej niż jedną lokalizację w środowisku IDE. Dla elementu pojawią się w wielu lokalizacjach, należy dodać do `CommandPlacements` sekcji jako [CommandPlacement, Element](../../extensibility/commandplacement-element.md). Wszelkie menu, grupy lub polecenia mogą być dodawane jako położenie polecenia. Jednak pasków narzędzi nie może znajdować się w ten sposób, ponieważ nie pojawiają się w wielu lokalizacjach kontekstowej.  
+### <a name="menu-command-and-group-placement"></a>Położenie menu, polecenia i grupy  
+ Menu, grupę lub polecenie może pojawić się w więcej niż jednej lokalizacji w IDE. Aby element pojawił się w wielu lokalizacjach, należy dodać go do `CommandPlacements` sekcji jako [element CommandPlacement](../../extensibility/commandplacement-element.md). Dowolne menu, grupy lub polecenia można dodać jako umieszczania polecenia. Nie można jednak umieścić pasków narzędzi w ten sposób, ponieważ nie mogą one występować w wielu lokalizacjach zależnych od kontekstu.  
   
- Polecenie angażowania mają `guid`, `id`, i `priority` atrybutów. Identyfikator GUID i identyfikator musi zgadzać się z elementu, który jest umieszczony. `priority` Atrybut kontroluje umieszczanie elementu w odniesieniu do innych elementów. Gdy IDE scala dwa lub więcej elementów, które mają ten sam priorytet, ich rozmieszczenia są niezdefiniowane, ponieważ IDE nie gwarantuje, że zasoby pakietu są odczytywane w tej samej kolejności, ilekroć dany pakiet jest wbudowana.  
+ Umieszczenie poleceń ma `guid` atrybuty, `id` i `priority` . Identyfikatory GUID i ID muszą być zgodne z elementami, które są pozycjonowane. Ten `priority` atrybut reguluje rozmieszczenie elementu w odniesieniu do innych elementów. Gdy IDE Scala dwa lub więcej elementów o takim samym priorytecie, ich rozmieszczenia nie są zdefiniowane, ponieważ IDE nie gwarantuje, że zasoby pakietu są odczytywane w tej samej kolejności za każdym razem, gdy pakiet został skompilowany.  
   
- Jeśli menu lub grupa pojawia się w wielu lokalizacjach, wszystkie elementy podrzędne tego menu lub tej grupy pojawi się w każdym wystąpieniu.  
+ Jeśli menu lub grupa pojawia się w wielu lokalizacjach, wszystkie elementy podrzędne tego menu lub grupy będą wyświetlane w każdym wystąpieniu.  
   
-## <a name="command-visibility-and-context"></a>Polecenie widoczności i kontekstu  
- Po zainstalowaniu wielu pakietów VSPackage nadmiaru menu, elementy menu i paski narzędzi mogą zbliżyć do siebie te środowiska IDE. Aby uniknąć tego problemu, można sterować widocznością poszczególnych elementów interfejsu użytkownika przy użyciu *ograniczeń widoczność* i flag poleceń.  
+## <a name="command-visibility-and-context"></a>Widoczność i kontekst polecenia  
+ Gdy jest zainstalowanych wiele pakietów VSPackage, profuzja menu, elementów menu i pasków narzędzi może zasłaniać środowisko IDE. Aby uniknąć tego problemu, można kontrolować widoczność poszczególnych elementów interfejsu użytkownika przy użyciu *ograniczeń widoczności* i flag poleceń.  
   
-##### <a name="visibility-constraints"></a>Ograniczeń widoczność  
- Ograniczenie widoczność jest ustawiony jako [VisibilityItem, Element](../../extensibility/visibilityitem-element.md) w `VisibilityConstraints` sekcji. Ograniczenie widoczność definiuje określonych kontekstach interfejsu użytkownika, w których element docelowy jest widoczna. Menu lub polecenia, który znajduje się w tej sekcji jest widoczny tylko wtedy, gdy jeden z określonych kontekstach jest aktywny. Jeśli menu lub polecenia nie jest wywoływany w tej sekcji, zawsze jest domyślnie widoczny. Ta sekcja nie ma zastosowania do grup.  
+##### <a name="visibility-constraints"></a>Ograniczenia widoczności  
+ Ograniczenie widoczności jest ustawiane jako [element VisibilityItem](../../extensibility/visibilityitem-element.md) w `VisibilityConstraints` sekcji. Ograniczenie widoczności definiuje określone konteksty interfejsu użytkownika, w których element docelowy jest widoczny. Menu lub polecenie znajdujące się w tej sekcji jest widoczne tylko wtedy, gdy jeden z określonych kontekstów jest aktywny. Jeśli do menu lub polecenia nie odwołuje się w tej sekcji, jest on zawsze widoczny domyślnie. Ta sekcja nie ma zastosowania do grup.  
   
- `VisibilityItem` elementy muszą mieć trzy atrybuty w następujący sposób: `guid` i `id` elementu interfejsu użytkownika docelowego i `context`. `context` Atrybut określa, kiedy element docelowy będzie widoczny i Trwa dowolnego prawidłowego kontekstu interfejsu użytkownika, jako jego wartość. Stałe kontekstu interfejsu użytkownika dla programu Visual Studio są elementami członkowskimi <xref:Microsoft.VisualStudio.VSConstants> klasy. Każdy `VisibilityItem` elementu może przyjąć wartość tylko jeden kontekst. Aby zastosować drugi kontekstu, Utwórz drugi `VisibilityItem` element, który wskazuje na ten sam element, jak pokazano w poniższym przykładzie.  
+ `VisibilityItem` elementy muszą mieć trzy atrybuty, w następujący sposób: `guid` i `id` elementu docelowego interfejsu użytkownika i `context` . `context`Atrybut określa, kiedy element docelowy będzie widoczny, i przyjmuje prawidłowy kontekst interfejsu użytkownika jako jego wartość. Stałe kontekstu interfejsu użytkownika dla programu Visual Studio są elementami członkowskimi <xref:Microsoft.VisualStudio.VSConstants> klasy. Każdy `VisibilityItem` element może przyjmować tylko jedną wartość kontekstu. Aby zastosować drugi kontekst, utwórz drugi element, `VisibilityItem` który wskazuje na ten sam element, jak pokazano w poniższym przykładzie.  
   
 ```xml  
 <VisibilityConstraints>  
@@ -225,81 +225,81 @@ priority="0x0100" type="Menu">
 </VisibilityConstraints>  
 ```  
   
-##### <a name="command-flags"></a>Flag poleceń  
- Następujące flagi polecenia mogą wpływać na widoczność menu i poleceń, które odnoszą się do.  
+##### <a name="command-flags"></a>Flagi poleceń  
+ Poniższe flagi poleceń mogą wpływać na widoczność menu i poleceń, do których mają zastosowanie.  
   
  AlwaysCreate  
- Menu jest tworzony, nawet jeśli go nie ma grup lub przycisków.  
+ Zostanie utworzone menu, nawet jeśli nie ma żadnych grup lub przycisków.  
   
- Obowiązuje dla: `Menu`  
+ Prawidłowy dla: `Menu`  
   
  CommandWellOnly  
- Zastosowanie tej flagi Jeśli polecenie nie jest wyświetlany w menu najwyższego poziomu i chcesz udostępnić dostosowania dodatkowe powłoki, na przykład powiązanie z kluczem. Po zainstalowaniu pakietu VSPackage, użytkownik może dostosować te polecenia, otwierając **opcje** okno dialogowe, a następnie edytując położenie polecenia w obszarze **środowiska klawiatury** kategorii. Nie ma wpływu na umieszczanie w menu skrótów, paski narzędzi, kontrolery menu i podmenu.  
+ Zastosuj tę flagę, jeśli polecenie nie pojawia się w menu najwyższego poziomu i chcesz udostępnić je do dodatkowego dostosowania powłoki, na przykład powiązania z kluczem. Po zainstalowaniu pakietu VSPackage użytkownik może dostosować te polecenia, otwierając okno dialogowe **Opcje** , a następnie edytując rozmieszczenie poleceń w kategorii **środowisko klawiatury** . Nie ma wpływu na umieszczanie w menu skrótów, paskach narzędzi, na kontrolerach menu lub podmenu.  
   
- Prawidłowe dla: `Button`, `Combo`  
+ Prawidłowy dla: `Button` , `Combo`  
   
  DefaultDisabled  
- Domyślnie polecenie jest wyłączona, jeśli pakietu VSPackage, który implementuje polecenie nie jest załadowany lub nie została wywołana metoda QueryStatus.  
+ Domyślnie polecenie jest wyłączone, jeśli pakietu VSPackage implementujące polecenie nie zostało załadowane lub metoda QueryStatus nie została wywołana.  
   
- Prawidłowe dla: `Button`, `Combo`  
+ Prawidłowy dla: `Button` , `Combo`  
   
  DefaultInvisible  
- Domyślnie polecenie jest niewidoczne, jeśli pakietu VSPackage, który implementuje polecenie nie jest załadowany lub nie została wywołana metoda QueryStatus.  
+ Domyślnie polecenie jest niewidoczne, jeśli pakietu VSPackage implementujące polecenie nie zostało załadowane lub metoda QueryStatus nie została wywołana.  
   
- Powinny być połączone z `DynamicVisibility` flagi.  
+ Powinien być połączony z `DynamicVisibility` flagą.  
   
- Prawidłowe dla: `Button`, `Combo`, `Menu`  
+ Prawidłowy dla: `Button` , `Combo` , `Menu`  
   
  DynamicVisibility  
- Widoczność polecenia można zmienić za pomocą metody QueryStatus lub identyfikator GUID, który znajduje się w kontekście `VisibilityConstraints` sekcji.  
+ Widoczność polecenia można zmienić za pomocą metody QueryStatus lub identyfikatora GUID kontekstu, który znajduje się w `VisibilityConstraints` sekcji.  
   
- Ma zastosowanie do poleceń, które są wyświetlane w menu, a nie na paskach narzędzi. Elementy paska narzędzi najwyższego poziomu można wyłączyć, ale nie jest to ukryty, gdy flaga OLECMDF_INVISIBLE jest zwracany z metody QueryStatus.  
+ Dotyczy poleceń, które pojawiają się w menu, a nie na paskach narzędzi. Elementy paska narzędzi najwyższego poziomu można wyłączyć, ale nie ukryte, gdy flaga OLECMDF_INVISIBLE jest zwracana z metody QueryStatus.  
   
- W menu ta flaga wskazuje także, czy go powinny być automatycznie ukrywane podczas jej elementy członkowskie są ukryte. Ta flaga jest zazwyczaj przypisany do podmenu, ponieważ menu najwyższego poziomu już to zachowanie.  
+ W menu ta flaga wskazuje również, że powinna być automatycznie ukryta, gdy jej elementy członkowskie są ukryte. Ta flaga jest zwykle przypisana do podmenu, ponieważ menu najwyższego poziomu ma już takie zachowanie.  
   
- Powinny być połączone z `DefaultInvisible` flagi.  
+ Powinien być połączony z `DefaultInvisible` flagą.  
   
- Prawidłowe dla: `Button`, `Combo`, `Menu`  
+ Prawidłowy dla: `Button` , `Combo` , `Menu`  
   
  NoShowOnMenuController  
- Polecenie, które ma ta flaga jest ustawiony na kontroler menu, polecenie nie są wyświetlane na liście rozwijanej.  
+ Jeśli polecenie, które ma tę flagę, znajduje się na kontrolerze menu, polecenie nie pojawia się na liście rozwijanej.  
   
- Obowiązuje dla: `Button`  
+ Prawidłowy dla: `Button`  
   
- Aby uzyskać więcej informacji na temat flag poleceń, zobacz [Command Flag, Element](../../extensibility/command-flag-element.md) dokumentacji.  
+ Aby uzyskać więcej informacji na temat flag poleceń, zobacz dokumentację [elementu flagi polecenia](../../extensibility/command-flag-element.md) .  
   
 ##### <a name="general-requirements"></a>Wymagania ogólne  
- Polecenie musi upłynąć poniższą sekwencję testy mogą być wyświetlane i włączone:  
+ Aby można było wyświetlić i włączyć polecenie, musisz przekazać poniższą serię testów:  
   
-- Polecenie znajduje się poprawnie.  
+- Polecenie zostało prawidłowo umieszczone.  
   
-- `DefaultInvisible` Nie ustawiono flagi.  
+- `DefaultInvisible`Flaga nie jest ustawiona.  
   
-- Nadrzędny menu lub pasek narzędzi jest widoczna.  
+- Menu nadrzędne lub pasek narzędzi jest widoczny.  
   
-- Polecenie nie jest niewidoczne ze względu na zapis kontekstu, w [VisibilityConstraints, Element](../../extensibility/visibilityconstraints-element.md) sekcji.  
+- Polecenie nie jest niewidoczne ze względu na wpis kontekstu w sekcji [VisibilityConstraints elementu](../../extensibility/visibilityconstraints-element.md) .  
   
-- Kod pakietu VSPackage, który implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu wyświetla i umożliwia swojej dyspozycji. Brak kodu interfejsu został on przechwycony i podjęło odpowiednie działania.  
+- Kod pakietu VSPackage, który implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs Wyświetla i włącza polecenie. Kod interfejsu nie został przechwycony i działa na nim.  
   
-- Po kliknięciu polecenia staje się zgodnie z procedurą opisaną w [algorytm routingu](../../extensibility/internals/command-routing-algorithm.md).  
+- Gdy użytkownik kliknie polecenie, podlega procedurze opisanej w [algorytmie routingu](../../extensibility/internals/command-routing-algorithm.md).  
   
-## <a name="calling-pre-defined-commands"></a>Wywołanie polecenia wstępnie zdefiniowane  
- [UsedCommands, Element](../../extensibility/usedcommands-element.md) umożliwia pakietów VSPackage polecenia dostępu, które są dostarczane przez inne pakietów VSPackage lub IDE. Aby to zrobić, należy utworzyć [UsedCommand, Element](../../extensibility/usedcommand-element.md) ma identyfikator GUID i identyfikator polecenia do użycia. Gwarantuje to, że polecenia zostaną załadowane przez program Visual Studio, nawet jeśli nie jest częścią bieżącej konfiguracji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [UsedCommand, Element](../../extensibility/usedcommand-element.md).  
+## <a name="calling-pre-defined-commands"></a>Wywoływanie wstępnie zdefiniowanych poleceń  
+ [Element UsedCommands](../../extensibility/usedcommands-element.md) umożliwia pakietów VSPackage dostęp do poleceń, które są dostarczane przez inne pakietów VSPackage lub przez IDE. W tym celu Utwórz [element UsedCommand](../../extensibility/usedcommand-element.md) , który ma identyfikator GUID i identyfikator polecenia do użycia. Dzięki temu polecenie zostanie załadowane przez program Visual Studio, nawet jeśli nie jest on częścią bieżącej konfiguracji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [UsedCommand element](../../extensibility/usedcommand-element.md).  
   
-## <a name="interface-element-appearance"></a>Wygląd elementów interfejsu  
- Zagadnienia związane z wybraniu i pozycjonowanie elementów polecenia są następujące:  
+## <a name="interface-element-appearance"></a>Wygląd elementu interfejsu  
+ Zagadnienia dotyczące wybierania i pozycjonowania elementów poleceń są następujące:  
   
-- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferuje wiele elementów interfejsu użytkownika, które pojawiają się inaczej w zależności od położenia.  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferuje wiele elementów interfejsu użytkownika, które są wyświetlane inaczej w zależności od położenia.  
   
-- Element interfejsu użytkownika, która jest zdefiniowana za pomocą `DefaultInvisible` flagi nie będą wyświetlane w środowisku IDE, chyba że jest to albo wyświetlany przez jego implementacja pakietu VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metody lub skojarzone z określonym kontekstem interfejsu użytkownika w `VisibilityConstraints` sekcji.  
+- Element interfejsu użytkownika, który jest zdefiniowany przy użyciu `DefaultInvisible` flagi, nie będzie wyświetlany w środowisku IDE, chyba że jest on wyświetlany przez implementację pakietu VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metody lub skojarzoną z określonym KONTEKSTEM interfejsu użytkownika w `VisibilityConstraints` sekcji.  
   
-- Pomyślnie pozycjonowane polecenia mogą być niewidoczne. Ponieważ IDE automatycznie ukrywa lub wyświetla niektórych poleceń, w zależności od interfejsów, które pakietu VSPackage ma (lub nie) implementacja. Na przykład wdrożenie pakietu VSPackage niektórych twórz interfejsy elementy menu dotyczące kompilacji powoduje, że mają być automatycznie wyświetlane.  
+- Nawet pomyślnie pozycjonowane polecenie może nie być wyświetlane. Dzieje się tak, ponieważ środowisko IDE automatycznie ukrywa lub wyświetla niektóre polecenia, w zależności od interfejsów, które pakietu VSPackage (lub nie zostały zaimplementowane). Na przykład implementacja pakietu VSPackage niektórych interfejsów kompilacji powoduje automatyczne wyświetlanie elementów menu związanych z kompilacją.  
   
-- Stosowanie `CommandWellOnly` Flaga w definicji elementu interfejsu użytkownika oznacza, że polecenia mogą być dodawane tylko przez dostosowanie.  
+- Zastosowanie `CommandWellOnly` flagi w definicji elementu interfejsu użytkownika oznacza, że polecenie można dodać tylko przez dostosowanie.  
   
-- Polecenia mogą być dostępne tylko w określonych kontekstach interfejsu użytkownika, na przykład, tylko wtedy, gdy okno dialogowe jest wyświetlane, gdy IDE jest w widoku Projekt.  
+- Polecenia mogą być dostępne tylko w niektórych kontekstach interfejsu użytkownika, na przykład, gdy okno dialogowe jest wyświetlane, gdy IDE jest w widoku projektu.  
   
-- Aby spowodować, że niektóre elementy interfejsu użytkownika będzie wyświetlana w środowisku IDE, możesz zaimplementować jeden lub więcej interfejsów lub napisanie kodu.  
+- Aby spowodować, że niektóre elementy interfejsu użytkownika mają być wyświetlane w IDE, należy zaimplementować jeden lub więcej interfejsów lub napisać kod.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md)

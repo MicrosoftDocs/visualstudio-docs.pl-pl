@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189201"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji programu SharePoint
@@ -57,7 +57,7 @@ Testy wydajności sieci Web symulują sposób, w jaki użytkownik końcowy może
 
 Kodowane testy interfejsu użytkownika automatycznie przełączają aplikację programu SharePoint przy użyciu interfejsu użytkownika. Te testy obejmują kontrolki interfejsu użytkownika, takie jak przyciski i menu, aby sprawdzić, czy działają poprawnie. Ten rodzaj testów jest szczególnie przydatny, jeśli Walidacja lub inna logika jest wykonywana w interfejsie użytkownika, na przykład na stronie sieci Web. Możesz również użyć kodowanych testów interfejsu użytkownika, aby zautomatyzować testy ręczne. Można tworzyć kodowane testy interfejsu użytkownika dla aplikacji programu SharePoint w taki sam sposób, jak w przypadku tworzenia testów dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie aplikacji programu SharePoint 2010 przy użyciu kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015).
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|
@@ -66,7 +66,7 @@ Kodowane testy interfejsu użytkownika automatycznie przełączają aplikację p
 |[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Opisuje, jak znaleźć błędy logiki w kodzie przy użyciu testów jednostkowych.|
 |[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Opisuje sposób testowania interfejsu użytkownika aplikacji programu SharePoint.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Podnoszenie jakości kodu](../test/improve-code-quality.md)

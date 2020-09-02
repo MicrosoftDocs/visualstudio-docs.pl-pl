@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccGetExtendedCapabilities | Dokumenty firmy Microsoft
+title: Funkcja SccGetExtendedCapabilities | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700722"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities, funkcja
@@ -33,30 +33,30 @@ SCCRTN SccGetExtendedCapabilities(
 ```
 
 ### <a name="parameters"></a>Parametry
- Pcontext
+ pContext
 
-[w] Wskaźnik kontekstu wtyczki formantu źródła.
+podczas Wskaźnik kontekstu wtyczki kontroli źródła.
 
  lSccExCaps
 
-[w] Flaga określająca rozszerzoną możliwość, dla której można przetestować (zobacz tabelę Rozszerzony kod możliwości w [flagi możliwości](../extensibility/capability-flags.md) dla możliwych flag).
+podczas Flaga określająca rozszerzoną funkcję, która ma zostać przetestowana (zobacz tabelę kodu możliwości rozszerzonej w [flagach możliwości](../extensibility/capability-flags.md) dla możliwych flag).
 
- pbSupportowane
+ pbSupported
 
-[na zewnątrz] Zwraca wartość niezerową (`TRUE`), jeśli obsługiwana jest określona funkcja; w przeciwnym razie`FALSE`zwraca zero ( ).
+określoną Zwraca wartość różną od zera ( `TRUE` ), jeśli określona funkcja jest obsługiwana; w przeciwnym razie zwraca wartość zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Operacja get capability została pomyślnie ukończona.|
+|SCC_OK|Operacja pobrania możliwości została ukończona pomyślnie.|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Wystąpił nieznany lub nieokreślony błąd.|
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest wywoływana na żądanie; oznacza to, że gdy funkcja musi być testowany, ta metoda jest wywoływana w celu określenia, czy ta funkcja jest obsługiwana. Określono tylko jedną flagę naraz.
+ Ta metoda jest wywoływana na żądanie; oznacza to, że w przypadku potrzeby przetestowania możliwości ta metoda jest wywoływana w celu ustalenia, czy ta funkcja jest obsługiwana. Określono tylko jedną flagę w danym czasie.
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
 - [Kody błędów](../extensibility/error-codes.md)
 - [Flagi możliwości](../extensibility/capability-flags.md)

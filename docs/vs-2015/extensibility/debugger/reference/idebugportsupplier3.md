@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e4ece720cf6880bba528dee99cdbdeb25c10087a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65674134"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs umożliwia obiekt wywołujący określić, czy dostawcy portu można zachować portów (zapisując je na dysku) między wywołań debugera, a następnie Pobierz listę portów zachowanych.  
+Ten interfejs umożliwia obiektowi wywołującemu określenie, czy dostawca portu może zachować porty (pisząc je na dysku) między wywołaniami debugera, a następnie uzyskać listę tych zachowanych portów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,28 +31,28 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Dostawcy niestandardowego portu implementuje ten interfejs obsługuje przechowywanie ani portu informacje są zapisywane na dysku. Ten interfejs musi zostać wdrożone na tym samym obiekcie jako [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interfejsu.  
+ Niestandardowy dostawca portu implementuje ten interfejs, aby zapewnić obsługę utrwalania lub zapisywania informacji o portach na dysku. Ten interfejs musi być zaimplementowany w tym samym obiekcie co Interfejs [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) .  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołaj [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugPortSupplier2` interfejsu w celu uzyskania tego interfejsu.  
+ Wywołaj metodę [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugPortSupplier2` interfejsie, aby uzyskać ten interfejs.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- Oprócz metod odziedziczone [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interfejs, ten interfejs obsługuje następujące czynności:  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ Oprócz metod dziedziczonych z interfejsu [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) , ten interfejs obsługuje następujące elementy:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Zwraca, czy dostawca portu można utrwalić portów (zapisując je na dysku) między wywołań debugera.|  
-|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Zwraca obiekt, który może służyć do wyliczenia za pośrednictwem wszystkich portów, które były zapisywane na dysku przez dostawcę tego portu.|  
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Zwraca informację o tym, czy dostawca portu może utrwalać porty (pisząc je na dysku) między wywołaniami debugera.|  
+|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Zwraca obiekt, którego można użyć do wyliczenia przez wszystkie porty, które zostały zapisaną na dysku przez tego dostawcę portu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli dostawcy portu można utrwalić porty różnych wywołań, powinien implementować ten interfejs. Porty powinien być ładowany podczas dostawcy portu jest tworzone i zapisywane na dysku, kiedy niszczony jest dostawcy portu.  
+ Jeśli dostawca portu może utrzymywać porty w wywołaniach, powinien implementować ten interfejs. Porty powinny być ładowane w przypadku wystąpienia dostawcy portów i zapisywane na dysku w przypadku zniszczenia dostawcy portów.  
   
- Aparat debugowania zazwyczaj nie wchodzi w interakcję z dostawcą portu, a także będą ma być używana dla tego interfejsu.  
+ Aparat debugowania zwykle nie współdziała z dostawcą portu i nie będzie miał zastosowania do tego interfejsu.  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64113461cd081eb97e2eb927119f1cd67f8a8d6e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816257"
 ---
 # <a name="evaluate-xpath-expressions"></a>Oceń wyrażenia XPath
@@ -52,6 +52,6 @@ Poniższa procedura korzysta z plików *below-Average. xsl* i *books.xml* z [prz
 
    Pole **wartość** pokazuje, że wyrażenie XPath daje wynik `true` .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)

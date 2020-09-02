@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_databytes — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_dataBytes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bb0946c586c7b9ac3bb8907a9b5eb907d8f3ae70
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64858493"
 ---
-# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
+# <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera bajtów danych symbolu OEM.  
+Pobiera bajty danych symbolu producenta OEM.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,26 +37,26 @@ HRESULT get_dataBytes ( 
   
 #### <a name="parameters"></a>Parametry  
  `cbData`  
- [in] Rozmiar buforu do przechowywania danych.  
+ podczas Rozmiar buforu do przechowywania danych.  
   
  `pcbData`  
- [out] Zwraca liczbę bajtów zapisanych, lub jeśli `data` parametr jest `NULL`, zwraca liczbę bajtów dostępnych.  
+ określoną Zwraca liczbę bajtów zapisanych lub, jeśli `data` parametr ma `NULL` wartość, zwraca liczbę dostępnych bajtów.  
   
  `data[]`  
- [out] Bufor, który jest wypełniane bajtów danych.  
+ [out,] Bufor wypełniony bajtami danych.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   
 |Wymaganie|Opis|  
 |-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|V7.0 DIA SDK|  
+|Nagłówki|dia2. h|  
+|Wersja:|DIA SDK v 7.0|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
