@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_age — | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_age | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82a15703fdb1738d92b6b7bbeda053625bb5fdda
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64806671"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera wartość wieku pliku .pdb.  
+Pobiera wartość wieku pliku. pdb.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,23 +35,23 @@ HRESULT get_age ( 
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość wieku pliku .pdb.  
+ określoną Zwraca wartość wieku pliku. pdb.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wiek nie musi odpowiadać do każdej wartości czasu; Zazwyczaj służy do określenia, czy plik .pdb jest zsynchronizowany z odpowiedniego pliku .exe.  
+ Wiek nie musi odpowiadać żadnej znanej wartości czasu; jest zazwyczaj używany do określenia, czy plik. pdb nie jest zsynchronizowany z odpowiednim plikiem exe.  
   
 ## <a name="requirements"></a>Wymagania  
   
 |Wymaganie|Opis|  
 |-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|V7.0 DIA SDK|  
+|Nagłówki|dia2. h|  
+|Wersja:|DIA SDK v 7.0|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

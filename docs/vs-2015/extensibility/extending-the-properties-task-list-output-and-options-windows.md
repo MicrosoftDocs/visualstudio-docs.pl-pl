@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie właściwości, listy zadań, danych wyjściowych i opcji Windows | Dokumentacja firmy Microsoft
+title: Rozszerzanie właściwości, Lista zadań, danych wyjściowych i okien opcji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -16,42 +16,42 @@ caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf42be1e62bfb4895d29a61fcadc221d5c14bec9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443907"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64803977"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Rozszerzanie okien właściwości, listy zadań, danych wyjściowych i opcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W tym przewodniku pokazano, jak zintegrować informacji na temat okna narzędzia nową **opcje** strony i nowe ustawienie na **właściwości** strony, a także zapisywać **listy zadań** i **dane wyjściowe** systemu windows.  
+Możesz uzyskać dostęp do dowolnego okna narzędzi w programie Visual Studio. W tym instruktażu pokazano, jak zintegrować informacje o oknie narzędzia z nową stroną **opcji** oraz nowe ustawienie na stronie **Właściwości** , a także jak zapisywać w oknach **Lista zadań** i **wyjściowych** .  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="create-an-extension-with-a-tool-window"></a>Tworzenie rozszerzenia za pomocą okna narzędzi  
+## <a name="create-an-extension-with-a-tool-window"></a>Tworzenie rozszerzenia za pomocą okna narzędziowego  
   
-1. Utwórz projekt o nazwie **TodoList** przy użyciu szablonu VSIX, a następnie dodaj niestandardowe narzędzie szablon elementu okno o nazwie **TodoWindow**.  
-  
-    > [!NOTE]
-    > Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
-  
-## <a name="set-up-the-tool-window"></a>Konfigurowanie okna narzędzi  
- Dodaj pole tekstowe, w którym można wpisać nowy element ToDo, przycisk, aby dodać nowy element do listy i pola listy w celu wyświetlenia elementów na liście.  
-  
-1. W TodoWindow.xaml należy usunąć kontrolki przycisku, pola tekstowego i StackPanel z UserControl.  
+1. Utwórz projekt o nazwie **todolist** przy użyciu szablonu VSIX i Dodaj szablon elementu niestandardowego okna narzędzi o nazwie **TodoWindow**.  
   
     > [!NOTE]
-    > Nie spowoduje to usunięcia **button1_Click** obsługi zdarzeń, który zostanie ponownie użyty w kolejnym kroku.  
+    > Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2. Z **wszystkie formanty WPF** części **przybornika**, przeciągnij **kanwy** formant do siatki.  
+## <a name="set-up-the-tool-window"></a>Skonfiguruj okno narzędzi  
+ Dodaj pole tekstowe, w którym ma zostać wpisane nowe zadanie do wykonania, przycisk umożliwiający dodanie nowego elementu do listy, a pole listy, aby wyświetlić elementy na liście.  
   
-3. Przeciągnij **TextBox**, **przycisk**, a **ListBox** do kanwy. Rozmieść elementy, tak aby pole tekstowe i przycisk znajdują się na tym samym poziomie, a pole listy wypełnia pozostałe okna pod pozycją je, tak jak na ilustracji poniżej.  
+1. W TodoWindow. XAML Usuń kontrolki Button, TextBox i StackPanel z obiektu UserControl.  
   
-     ![Zakończono okna narzędzia](../extensibility/media/t5-toolwindow.png "T5 ToolWindow")  
+    > [!NOTE]
+    > Nie spowoduje to usunięcia programu obsługi zdarzeń **Button1_Click** , którego użyjesz ponownie w późniejszym kroku.  
   
-4. W okienku XAML znaleźć przycisk i ustaw jej właściwości zawartości **Dodaj**. Ponownie połączyć program obsługi zdarzeń przycisku do kontrolki przycisku, dodając `Click="button1_Click"` atrybutu. W bloku obszaru roboczego powinien wyglądać następująco:  
+2. Z sekcji **wszystkie kontrolki WPF** w **przyborniku**przeciągnij kontrolkę **kanwy** do siatki.  
+  
+3. Przeciągnij **pole tekstowe**, **przycisk**i element **ListBox** do kanwy. Rozmieść elementy w taki sposób, aby pole tekstowe i przycisk były na tym samym poziomie, a pole listy wypełnia resztę poniższego okna, jak na poniższej ilustracji.  
+  
+     ![Zakończono okno narzędzia](../extensibility/media/t5-toolwindow.png "T5 — ToolWindow")  
+  
+4. W okienku XAML Znajdź przycisk i ustaw jego właściwość content na **Dodaj**. Połącz ponownie program obsługi zdarzeń przycisku z kontrolką przycisku przez dodanie `Click="button1_Click"` atrybutu. Blok kanwy powinien wyglądać następująco:  
   
     ```xml  
     <Canvas HorizontalAlignment="Left" Width="306">  
@@ -63,13 +63,13 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
   
 #### <a name="customize-the-constructor"></a>Dostosowywanie konstruktora  
   
-1. W pliku TodoWindowControl.xaml.cs, dodaj następującą instrukcję using:  
+1. W pliku TodoWindowControl.xaml.cs Dodaj następującą instrukcję using:  
   
     ```csharp  
     using System;  
     ```  
   
-2. Dodaj publiczny odwołanie do TodoWindow i ma konstruktora TodoWindowControl przyjmować parametr TodoWindow. Kod powinien wyglądać następująco:  
+2. Dodaj odwołanie publiczne do TodoWindow i Utwórz w konstruktorze TodoWindowControl parametr TodoWindow. Kod powinien wyglądać następująco:  
   
     ```csharp  
     public TodoWindow parent;  
@@ -81,7 +81,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-3. TodoWindow.cs Zmień TodoWindowControl konstruktora, aby dodać parametr TodoWindow. Kod powinien wyglądać następująco:  
+3. W TodoWindow.cs Zmień konstruktora TodoWindowControl, tak aby zawierał parametr TodoWindow. Kod powinien wyglądać następująco:  
   
     ```csharp  
     public TodoWindow() : base(null)  
@@ -94,10 +94,10 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-## <a name="create-an-options-page"></a>Tworzenie strony opcji  
- Możesz podać strony w **opcje** okno dialogowe, dzięki czemu użytkownicy mogą zmieniać ustawienia dla okna narzędzia. Tworzenie strony opcji wymaga obu klasę, która w tym artykule opisano opcje i wpis w pliku TodoListPackage.cs lub TodoListPackage.vb.  
+## <a name="create-an-options-page"></a>Utwórz stronę opcji  
+ Możesz podać stronę w oknie dialogowym **Opcje** , aby użytkownicy mogli zmieniać ustawienia okna narzędzi. Tworzenie strony opcji wymaga zarówno klasy opisującej opcje, jak i wpisu w pliku TodoListPackage.cs lub TodoListPackage. vb.  
   
-1. Dodaj klasę o nazwie `ToolsOptions.cs`. Wprowadź dziedziczyć z klasy ToolsOptions <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Dodaj klasę o nazwie `ToolsOptions.cs` . Dziedzicz z klasy ToolsOptions <xref:Microsoft.VisualStudio.Shell.DialogPage> .  
   
    ```csharp  
    class ToolsOptions : DialogPage  
@@ -111,7 +111,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
    using Microsoft.VisualStudio.Shell;  
    ```  
   
-3. Strona opcji, w tym przewodniku zawiera tylko jedną opcję o nazwie DaysAhead. Dodaj pole private o nazwie **daysAhead** i właściwość o nazwie **DaysAhead** do klasy ToolsOptions:  
+3. Strona Opcje w tym instruktażu zawiera tylko jedną opcję o nazwie DaysAhead. Dodaj prywatne pole o nazwie **daysAhead** i właściwości o nazwie **DaysAhead** do klasy ToolsOptions:  
   
    ```csharp  
    private double daysAhead;  
@@ -123,36 +123,36 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
    }  
    ```  
   
-   Teraz należy projekt o tej stronie opcje.  
+   Teraz musisz pamiętać, aby projekt był świadomy tej strony opcji.  
   
-#### <a name="make-the-options-page-available-to-users"></a>Udostępnić użytkownikom stronę opcji  
+#### <a name="make-the-options-page-available-to-users"></a>Udostępnienie strony opcji użytkownikom  
   
-1. W TodoWindowPackage.cs, Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do klasy TodoWindowPackage:  
+1. W TodoWindowPackage.cs Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do klasy TodoWindowPackage:  
   
     ```csharp  
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]  
     ```  
   
-2. Pierwszy parametr do konstruktora ProvideOptionPage jest typ klasy ToolsOptions, która została utworzona wcześniej. Drugi parametr "ToDo" to nazwa kategorii w **opcje** okno dialogowe. Trzeci parametr "Ogólne", nazywa się Podkategoria **opcje** okno dialogowe, w której będą dostępne na stronie opcji. Następne dwa parametry są identyfikatory zasobów dla ciągów; Pierwszy to nazwa kategorii, a drugi to nazwa podkategorii. Ostatni parametr określa, czy ta strona jest możliwy za pomocą automatyzacji.  
+2. Pierwszym parametrem konstruktora ProvideOptionPage jest typ klasy ToolsOptions, który został utworzony wcześniej. Drugi parametr "do zrobienia" jest nazwą kategorii w oknie dialogowym **Opcje** . Trzeci parametr "ogólny" jest nazwą podkategorii okna dialogowego **Opcje** , w którym strona Opcje będzie dostępna. Następne dwa parametry to identyfikatory zasobów dla ciągów; Pierwsza to nazwa kategorii, a druga to nazwa podkategorii. Końcowy parametr określa, czy można uzyskać dostęp do tej strony przy użyciu automatyzacji.  
   
-     Gdy użytkownik otwiera stronę opcje, powinien on przypominać poniższej ilustracji.  
+     Po otwarciu strony opcji użytkownik powinien wyglądać podobnie do poniższej ilustracji.  
   
      ![Strona opcji](../extensibility/media/t5optionspage.gif "T5OptionsPage")  
   
-     Zwróć uwagę, Kategoria **ToDo** i podkategorii **ogólne**.  
+     Zwróć uwagę o kategorię do **zrobienia** i podkategorii **Ogólne**.  
   
 ## <a name="make-data-available-to-the-properties-window"></a>Udostępnianie danych w oknie właściwości  
- Informacje o liście do wykonania można udostępnić, tworząc klasę o nazwie TodoItem, która przechowuje informacje dotyczące poszczególnych elementów listy zadań do wykonania.  
+ Aby uzyskać dostęp do informacji o liście, można utworzyć klasę o nazwie TodoItem, która przechowuje informacje o poszczególnych elementach listy zadań do wykonania.  
   
-1. Dodaj klasę o nazwie `TodoItem.cs`.  
+1. Dodaj klasę o nazwie `TodoItem.cs` .  
   
-     Po udostępnieniu użytkownikom okna narzędzi elementów w kontrolce ListBox będą reprezentowane przez TodoItems. Gdy użytkownik wybierze jeden z tych elementów w kontrolce ListBox, **właściwości** oknie będą wyświetlane informacje na temat elementu.  
+     Gdy okno narzędzi jest dostępne dla użytkowników, elementy na liście rozwijanej będą reprezentowane przez TodoItems. Gdy użytkownik wybierze jeden z tych elementów w polu listy, w oknie **Właściwości** zostaną wyświetlone informacje o elemencie.  
   
-     Aby udostępnić dane w **właściwości** okna, możesz przekształcić w danych właściwości publiczne, które mają dwa atrybuty specjalne, `Description` i `Category`. `Description` to tekst, który pojawia się w dolnej części **właściwości** okna. `Category` Określa, gdzie właściwość powinna zostać wyświetlona po **właściwości** okno jest wyświetlane w **kategorii** widoku. Na poniższej ilustracji **właściwości** okno **kategorii** widoku **nazwa** właściwości w **pól zadań do wykonania** kategorii zaznaczone oraz opis **nazwa** właściwości są wyświetlane u dołu okna.  
+     Aby zapewnić dostęp do danych w oknie **Właściwości** , należy przekształcić dane w właściwości publiczne, które mają dwa atrybuty specjalne `Description` i `Category` . `Description` to tekst wyświetlany w dolnej części okna **Właściwości** . `Category` Określa, gdzie ma być wyświetlana właściwość, gdy okno **Właściwości** jest wyświetlane w widoku z **kategoryzacją** . Na poniższej ilustracji okno **Właściwości** jest w widoku z **kategoryzacją** , właściwość **Nazwa** w kategorii **pola do zrobienia** jest zaznaczone, a opis właściwości **Nazwa** jest wyświetlany u dołu okna.  
   
      ![Okno właściwości](../extensibility/media/t5properties.png "T5Properties")  
   
-2. Dodaj następujące instrukcje using pliku TodoItem.cs.  
+2. Dodaj następujące instrukcje using TodoItem.cs pliku.  
   
     ```csharp  
     using System.ComponentModel;  
@@ -168,7 +168,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-     Dodaj dwie właściwości, nazwa i Data ukończenia. Wykonamy UpdateList() i CheckForErrors() później.  
+     Dodaj dwie właściwości, Name i DueDate. Będziemy UpdateList () i CheckForErrors () później.  
   
     ```csharp  
     public class TodoItem  
@@ -203,7 +203,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-4. Dodaj odwołanie prywatnych do kontrolki użytkownika. Dodaj Konstruktor, który przyjmuje nazwę dla tego elementu ToDo i kontrolki użytkownika. Aby znaleźć wartość daysAhead, pobiera właściwość strony opcje.  
+4. Dodaj odwołanie prywatne do kontrolki użytkownika. Dodaj konstruktora, który przyjmuje kontrolkę użytkownika i nazwę tego elementu do wykonania. Aby znaleźć wartość dla daysAhead, pobiera właściwość strony opcji.  
   
     ```csharp  
     private TodoWindowControl parent;  
@@ -232,7 +232,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-5. Ponieważ wystąpienia `TodoItem` klasy, które będą przechowywane w polu listy i pole listy będzie wywoływać `ToString` funkcji, muszą przeciążać `ToString` funkcji. Dodaj następujący kod do TodoItem.cs, po konstruktora i przed końcem klasy.  
+5. Ponieważ wystąpienia `TodoItem` klasy będą przechowywane w polu listy, a element ListBox wywoła `ToString` funkcję, należy przeciążyć `ToString` funkcję. Dodaj następujący kod do TodoItem.cs, po konstruktorze i przed końcem klasy.  
   
     ```csharp  
     public override string ToString()  
@@ -241,7 +241,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-6. W TodoWindowControl.xaml.cs, Dodaj metody klasy zastępczej do klasy TodoWindowControl dla `CheckForError` i `UpdateList` metody. Umieść je po ProcessDialogChar i przed końcem pliku.  
+6. W TodoWindowControl.xaml.cs Dodaj metody zastępcze do klasy TodoWindowControl dla `CheckForError` `UpdateList` metod i. Umieść je po ProcessDialogChar i przed końcem pliku.  
   
     ```csharp  
     public void CheckForErrors()  
@@ -252,14 +252,14 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-     `CheckForError` Metoda wywoła metodę, która ma taką samą nazwę w obiekcie nadrzędnym, a metoda sprawdzi, czy wystąpiły wszelkie błędy, a je poprawnie obsłużyć. `UpdateList` Metoda zaktualizuje ListBox formantu nadrzędnego; metoda jest wywoływana, gdy `Name` i `DueDate` właściwości w tej zmianie klasy. Będą one prowadzone później.  
+     `CheckForError`Metoda wywoła metodę, która ma taką samą nazwę w obiekcie nadrzędnym, i ta metoda sprawdzi, czy wystąpiły jakieś błędy i prawidłowo obsłużą je. `UpdateList`Metoda zaktualizuje element ListBox w kontrolce nadrzędnej; Metoda jest wywoływana, gdy `Name` `DueDate` właściwości i w tej klasie zmienią się. Zostaną one zaimplementowane później.  
   
-## <a name="integrate-into-the-properties-window"></a>Integrowanie w oknie właściwości  
- Teraz napisać kod, który zarządza ListBox, który zostanie powiązany **właściwości** okna.  
+## <a name="integrate-into-the-properties-window"></a>Integruj do okna właściwości  
+ Teraz napisz kod zarządzający polem listy, który zostanie powiązany z oknem **Właściwości** .  
   
- Należy zmienić przycisk kliknij program obsługi do odczytu w polu tekstowym, Utwórz czynność do wykonania i dodaje go do pola listy.  
+ Należy zmienić przycisk procedury obsługi, aby odczytać pole tekstowe, utworzyć TodoItem i dodać go do listy.  
   
-1. Zastąp istniejące `button1_Click` funkcji z kodem, który tworzy nowy TodoItem i dodaje go do pola listy. Wywołuje TrackSelection(), która zostanie zdefiniowana później.  
+1. Zamień istniejącą `button1_Click` funkcję na kod, który tworzy nowy TodoItem i dodaje go do elementu ListBox. Wywołuje TrackSelection (), który zostanie zdefiniowany w dalszej części.  
   
     ```csharp  
     private void button1_Click(object sender, RoutedEventArgs e)  
@@ -274,9 +274,9 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-2. W widoku projektu wybierz kontrolkę ListBox. W **właściwości** kliknij okno **procedury obsługi zdarzeń** przycisk i Znajdź zdarzenie SelectionChanged. Wypełnij pole tekstowe z **listBox_SelectionChanged**. W ten sposób dodaje wycinka obsługi SelectionChanged i przypisuje go do zdarzenia.  
+2. W widok Projekt wybierz formant ListBox. W oknie **Właściwości** kliknij przycisk **programy obsługi zdarzeń** i Znajdź zdarzenie SelectionChanged. Wypełnij pole tekstowe **listBox_SelectionChanged**. Spowoduje to dodanie elementu zastępczego dla programu obsługi SelectionChanged i przypisanie go do zdarzenia.  
   
-3. Implementuje metody TrackSelection(). Ponieważ będą potrzebne uzyskać <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> usług, należy wprowadzić <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> dostępny za pomocą TodoWindowControl. Dodaj następującą metodę do klasy TodoWindow:  
+3. Zaimplementuj metodę TrackSelection (). Ponieważ trzeba będzie uzyskać <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> dostęp do usług, należy udostępnić <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> TodoWindowControl. Dodaj następującą metodę do klasy TodoWindow:  
   
     ```  
     internal object GetVsService(Type service)  
@@ -294,7 +294,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     using Microsoft.VisualStudio.Shell;  
     ```  
   
-5. Należy wypełnić w obsłudze SelectionChanged w następujący sposób:  
+5. Wypełnij procedurę obsługi SelectionChanged w następujący sposób:  
   
     ```  
     private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)  
@@ -303,7 +303,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-6. Teraz, wypełnij funkcji TrackSelection, która zapewnia integrację z usługą **właściwości** okna. Ta funkcja jest wywoływana, gdy użytkownik dodaje element do pola listy lub kliknie element w kontrolce ListBox. Dodaje zawartość pola listy do SelectionContainer i przekazuje SelectionContainer do **właściwości** okna <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> programu obsługi zdarzeń. Usługa TrackSelection śledzi wybranych obiektów w interfejsie użytkownika (UI) i wyświetla ich właściwości  
+6. Teraz Wypełnij funkcję TrackSelection, która zapewni integrację z oknem **Właściwości** . Ta funkcja jest wywoływana, gdy użytkownik dodaje element do elementu ListBox lub klika element w polu listy. Dodaje zawartość ListBox do SelectionContainer i przekazuje SelectionContainer do **Properties** <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> procedury obsługi zdarzeń okna właściwości. Usługa TrackSelection śledzi wybrane obiekty w interfejsie użytkownika (UI) i wyświetla ich właściwości  
   
     ```csharp  
     private SelectionContainer mySelContainer;  
@@ -351,9 +351,9 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-     Teraz, gdy masz klasę, **właściwości** okna można użyć, możesz zintegrować **właściwości** okno z okna narzędzia. Gdy użytkownik kliknie element na liście w oknie narzędzia **właściwości** okna powinien być odpowiednio aktualizowany. Podobnie, gdy użytkownik zmieni wykonania w **właściwości** oknie skojarzony element powinien zostać zaktualizowany.  
+     Teraz, gdy masz klasę, której może użyć okno **Właściwości** , możesz zintegrować okno **Właściwości** z oknem narzędzia. Gdy użytkownik kliknie element na liście w oknie narzędzia, należy odpowiednio zaktualizować okno **Właściwości** . Podobnie, gdy użytkownik zmienia element do wykonania w oknie **Właściwości** , skojarzony element powinien zostać zaktualizowany.  
   
-7. Teraz Dodaj pozostałej części kodu funkcji UpdateList w TodoWindowControl.xaml.cs. Powinien usunąć i ponownie dodać TodoItem zmodyfikowane w polu listy.  
+7. Teraz Dodaj resztę kodu funkcji UpdateList w TodoWindowControl.xaml.cs. Powinien on porzucić i dodać ponowną modyfikację TodoItem z listy kontrolnej.  
   
     ```csharp  
     public void UpdateList(TodoItem item)  
@@ -365,20 +365,20 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-8. Przetestuj swój kod. Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
+8. Przetestuj swój kod. Skompiluj projekt i Rozpocznij debugowanie. Powinno zostać wyświetlone wystąpienie eksperymentalne.  
   
-9. Otwórz **narzędzia / Opcje** stron. Powinien zostać wyświetlony kategorii zadań do wykonania, w okienku po lewej stronie. Kategorie są wyświetlane w alfabetycznej, aby można było w ramach usług terminalowych.  
+9. Otwórz strony **Narzędzia/Opcje** . Kategoria zadań do wykonania powinna zostać wyświetlona w okienku po lewej stronie. Kategorie są wyświetlane w kolejności alfabetycznej, dlatego w obszarze TS.  
   
-10. Na stronie Opcje Todo powinien zostać wyświetlony DaysAhead ustawioną na **0**. Zmień ją na **2**.  
+10. Na stronie Opcje wykonania należy zobaczyć Właściwość DaysAhead o wartości **0**. Zmień ją na **2**.  
   
-11. W widoku / inne Windows z menu Otwórz **TodoWindow**. Typ **EndDate** w polu tekstowym i kliknij **Dodaj**.  
+11. W widoku/innym menu systemu Windows Otwórz **TodoWindow**. W polu tekstowym wpisz **EndDate** , a następnie kliknij przycisk **Dodaj**.  
   
-12. W polu listy powinny być widoczne dwa dni późniejsza niż dzisiejsza data.  
+12. W polu listy powinna zostać wyświetlona data dwie dni późniejsze od dzisiaj.  
   
-## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Dodaj tekst w oknie danych wyjściowych i elementy do listy zadań  
- Aby uzyskać **listy zadań**, utworzyć nowy obiekt typu zadania, a następnie dodaj ten obiekt zadania, aby **listy zadań** przez wywołanie jego metody Add. Aby zapisać **dane wyjściowe** , wywołaj jej metodę getpane — do uzyskiwania obiektu w okienku, a następnie wywołać metodę OutputString obiektu okienka.  
+## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Dodaj tekst do Okno Dane wyjściowe i elementów do Lista zadań  
+ Dla **Lista zadań**można utworzyć nowy obiekt typu zadanie, a następnie dodać ten obiekt zadania do **Lista zadań** przez wywołanie jego metody Add. Aby wykonać zapis w oknie **danych wyjściowych** , należy wywołać jego metodę getokienk, aby uzyskać obiekt okienka, a następnie wywołać metodę OutputString obiektu okienka.  
   
-1. W TodoWindowControl.xaml.cs w `button1_Click` metody, Dodaj kod, aby uzyskać **ogólne** okienku **dane wyjściowe** oknie (jest to ustawienie domyślne) i zapisanie w nim. Metoda powinna wyglądać następująco:  
+1. W TodoWindowControl.xaml.cs, w `button1_Click` metodzie, Dodaj kod w celu uzyskania okienka **Ogólne** okna **danych wyjściowych** (czyli domyślnego) i Zapisz w nim. Metoda powinna teraz wyglądać następująco:  
   
     ```csharp  
     private void button1_Click(object sender, EventArgs e)  
@@ -405,7 +405,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-2. Aby dodać elementy do listy zadań, należy dodać klasę zagnieżdżoną klasę TodoWindowControl. Klasa zagnieżdżona musi pochodzić od <xref:Microsoft.VisualStudio.Shell.TaskProvider>. Dodaj następujący kod na końcu klasy TodoWindowControl.  
+2. Aby można było dodać elementy do Lista zadań, należy dodać klasę zagnieżdżoną do klasy TodoWindowControl. Klasa zagnieżdżona musi pochodzić od <xref:Microsoft.VisualStudio.Shell.TaskProvider> . Dodaj następujący kod na końcu klasy TodoWindowControl.  
   
     ```csharp  
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]  
@@ -418,7 +418,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-3. Następnie dodaj prywatnej odwołanie do TodoTaskProvider i metoda CreateProvider() do klasy TodoWindowControl. Kod powinien wyglądać następująco:  
+3. Następnie Dodaj odwołanie prywatne do TodoTaskProvider i metody "TodoWindowControl" do klasy. Kod powinien wyglądać następująco:  
   
     ```csharp  
     private TodoWindowTaskProvider taskProvider;  
@@ -432,7 +432,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-4. Dodaj ClearError(), co spowoduje wyczyszczenie listy zadań, a ReportError(), która doda wpis do listy zadań, do klasy TodoWindowControl.  
+4. Dodaj ClearError (), który czyści Lista zadań i ReportError (), który dodaje wpis do Lista zadań, do klasy TodoWindowControl.  
   
     ```csharp  
     private void ClearError()  
@@ -464,7 +464,7 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-5. Implementuje metody CheckForErrors teraz w następujący sposób.  
+5. Teraz Zaimplementuj metodę CheckForErrors w następujący sposób.  
   
     ```csharp  
     public void CheckForErrors()  
@@ -480,30 +480,30 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
     }  
     ```  
   
-## <a name="trying-it-out"></a>Próba użycia zasobu  
+## <a name="trying-it-out"></a>Trwa próba  
   
-1. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
+1. Skompiluj projekt i Rozpocznij debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
-2. Otwórz TodoWindow (**widok / inne Windows / TodoWindow**).  
+2. Otwórz TodoWindow (**Wyświetl/inne okna/TodoWindow**).  
   
-3. W polu tekstowym wpisz coś, a następnie kliknij przycisk **Dodaj**.  
+3. Wpisz coś w polu tekstowym, a następnie kliknij przycisk **Dodaj**.  
   
-     Termin 2 dni od dzisiaj jest dodawany do pola listy. Są generowane nie błędy i **listy zadań** (**wyświetlić / Task List**) powinien mieć żadnych wpisów.  
+     Data ukończenia przypada 2 dni po dniu dzisiejszym zostanie dodana do pola listy. Nie Wygenerowano żadnych błędów, a **Lista zadań** (**widok/Lista zadań**) nie powinien zawierać żadnych wpisów.  
   
-4. Teraz Zmień ustawienie na **narzędzia / Opcje / ToDo** strony **2** do **0**.  
+4. Teraz zmień ustawienie na stronie **Narzędzia/Opcje/czynność** z **2** z powrotem na **0**.  
   
-5. Wpisz coś innego w **TodoWindow** a następnie kliknij przycisk **Dodaj** ponownie. Spowoduje to wyzwolenie błąd, a także do wpisu w **listy zadań**.  
+5. Wpisz coś innego w **TodoWindow** , a następnie ponownie kliknij przycisk **Dodaj** . Powoduje to wyzwolenie błędu, a także wpis w **Lista zadań**.  
   
-     Podczas dodawania elementów początkowa data ustawiono teraz plus 2 dni.  
+     Podczas dodawania elementów początkowa data jest ustawiana na teraz plus 2 dni.  
   
-6. Na **widoku** menu, kliknij przycisk **dane wyjściowe** otworzyć **dane wyjściowe** okna.  
+6. W menu **Widok** kliknij pozycję **dane wyjściowe** , aby otworzyć okno **dane wyjściowe** .  
   
-     Należy zauważyć, że zawsze że dodawanie elementu, zostanie wyświetlony komunikat w **listy zadań** okienka.  
+     Zwróć uwagę, że za każdym razem, gdy dodasz element, w okienku **Lista zadań** zostanie wyświetlony komunikat.  
   
-7. Kliknij jeden z elementów w kontrolce ListBox.  
+7. Kliknij jeden z elementów na liście.  
   
-     **Właściwości** oknie zostaną wyświetlone dwie właściwości dla elementu.  
+     Okno **Właściwości** wyświetla dwie właściwości dla elementu.  
   
 8. Zmień jedną z właściwości, a następnie naciśnij klawisz ENTER.  
   
-     Element jest aktualizowany w kontrolce ListBox.
+     Element zostanie zaktualizowany na liście rozwijanej.

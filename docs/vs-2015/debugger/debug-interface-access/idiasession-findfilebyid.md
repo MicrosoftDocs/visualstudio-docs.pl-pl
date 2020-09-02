@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findfilebyid — | Dokumentacja firmy Microsoft
+title: 'IDiaSession:: findFileById | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c57072d4b8707136f0ccd2a759bc3d393720efb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150438"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera pliku źródłowego przez identyfikator pliku źródłowego.  
+Pobiera plik źródłowy według identyfikatora pliku źródłowego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,18 +36,18 @@ HRESULT findFileById ( 
   
 #### <a name="parameters"></a>Parametry  
  `uniqueId`  
- [in] Określa identyfikator pliku źródłowego.  
+ podczas Określa identyfikator pliku źródłowego.  
   
  `ppResult`  
- [out] Zwraca [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) pobrać obiekt, który reprezentuje plik źródłowy.  
+ określoną Zwraca obiekt [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , który reprezentuje pobrany plik źródłowy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Identyfikator pliku źródłowego jest używana wewnętrznie w celu DIA SDK unikatowość wszystkich plików źródłowych unikatową wartość. Ta metoda jest zwykle używana wewnętrznie w celu DIA SDK.  
+ Identyfikator pliku źródłowego jest unikatową wartością używaną wewnętrznie do DIA SDK, aby wszystkie pliki źródłowe były unikatowe. Ta metoda jest zwykle używana wewnętrznie w DIA SDK.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession::FindFile —](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
+ [IDiaSession:: FindFile —](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

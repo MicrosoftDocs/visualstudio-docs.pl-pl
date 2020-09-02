@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_source — | Dokumentacja firmy Microsoft
+title: 'IDiaInjectedSource:: get_source | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 856d0111e65b51b798dfe44a324c58c4db5457fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192423"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pobiera bajty kodu źródłowego.  
@@ -37,16 +37,16 @@ HRESULT get_source ( 
   
 #### <a name="parameters"></a>Parametry  
  `cbData`  
- [in] Liczba bajtów, która przedstawia rozmiar buforu danych.  
+ podczas Liczba bajtów reprezentujących rozmiar buforu danych.  
   
  `pcbData`  
- [out] Zwraca liczbę bajtów, która reprezentuje bajtów zwracane. Jeśli `data` jest `NULL`, następnie `pcbData` dostępnej całkowita liczba bajtów danych.  
+ określoną Zwraca liczbę bajtów reprezentujących bajty zwrócone. Jeśli `data` jest `NULL` , `pcbData` to całkowita liczba dostępnych bajtów danych.  
   
  `data[]`  
- [out] Buforu, który jest wypełniona bajtów źródła.  
+ określoną Bufor, który ma zostać wypełniony przez bajty źródłowe.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` . Zwraca wartość, `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

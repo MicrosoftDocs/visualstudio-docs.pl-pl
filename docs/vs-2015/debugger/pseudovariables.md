@@ -1,5 +1,5 @@
 ---
-title: Pseudozmienne | Dokumentacja firmy Microsoft
+title: Pseudozmiennych pokazanych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,57 +19,57 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65693763"
 ---
 # <a name="pseudovariables"></a>Pseudozmienne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pseudozmienne są terminami używanymi do wyświetlania pewnych informacji w oknie zmiennych lub **QuickWatch** okno dialogowe. Możesz wprowadzić zmienną pseudovariable taki sam sposób, jak wprowadziłbyś normalną zmienną. Pseudozmienne to nie zmienne, a nie odpowiadają nazwom zmiennych w programie.  
+Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych informacji w oknie zmiennych lub oknie dialogowym **QuickWatch** . Możesz wprowadzić pseudozmienna w taki sam sposób, jak w przypadku wprowadzenia zmiennej normalnej. Pseudozmiennych pokazanych nie są zmienne, ale nie odpowiadają nazwom zmiennych w programie.  
   
 ## <a name="example"></a>Przykład  
- Załóżmy, że piszesz aplikację kodu natywnego i chcesz zobaczyć liczbę dojść przydzielanych w aplikacji. W **Obejrzyj** okna, możesz wprowadzić następujące pseudozmienne w **nazwa** kolumny, a następnie nacisnąć przycisk Powrót, aby ocenić ją:  
+ Załóżmy, że piszesz natywną aplikację kodu i chcesz zobaczyć liczbę dojść przyznanych w aplikacji. W oknie **czujki** możesz wprowadzić następujące pseudozmienna w kolumnie **Nazwa** , a następnie nacisnąć klawisz Return, aby ją oszacować:  
   
 ```  
 $handles  
 ```  
   
- W kodzie natywnym można użyć pseudozmiennych pokazanych w następującej tabeli:  
+ W kodzie natywnym można użyć pseudozmiennych pokazanych pokazanego w tej tabeli:  
   
-|Pseudovariable|Funkcja|  
+|Pseudozmienna|Funkcja|  
 |--------------------|--------------|  
-|`$err`|Wyświetla zestaw wartości ostatniego błędu z funkcji SetLastError. Wartość, która jest wyświetlana reprezentuje co zostałaby zwrócone przez funkcję GetLastError.<br /><br /> Użyj `$err,hr` aby zobaczyć zdekodowaną postać tej wartości. Na przykład jeśli ostatnim błędem było 3 `$err,hr` zostanie wyświetlony `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|  
-|`$handles`|Wyświetla liczbę dojść przydzielanych w aplikacji.|  
+|`$err`|Wyświetla wartość ostatniego błędu ustawioną przy użyciu funkcji SetLastError. Wyświetlana wartość reprezentuje element zwracany przez funkcję GetLastError.<br /><br /> Użyj `$err,hr` , aby zobaczyć zdekodowaną postać tej wartości. Na przykład jeśli ostatni błąd to 3, `$err,hr` zostanie wyświetlony komunikat `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|  
+|`$handles`|Wyświetla liczbę dojść przyznanych w aplikacji.|  
 |`$vframe`|Wyświetla adres bieżącej ramki stosu.|  
 |`$tid`|Wyświetla identyfikator wątku dla bieżącego wątku.|  
-|`$env`|Wyświetla blok środowiska w podglądzie ciąg.|  
-|`$cmdline`|Wyświetla ciąg wiersza polecenia, który uruchamiany program.|  
+|`$env`|Wyświetla blok środowiska w podglądzie ciągów.|  
+|`$cmdline`|Wyświetla ciąg wiersza polecenia, który uruchomił program.|  
 |`$pid`|Wyświetla identyfikator procesu.|  
-|`$` *registername —*<br /><br /> lub<br /><br /> `@` *registername —*|Wyświetla zawartość rejestru *registername —*.<br /><br /> Zazwyczaj można wyświetlać zawartość rejestru poprzez samo podanie nazwy rejestru. Jedyną sytuacją, należy użyć tej składni jest, gdy nazwa rejestru przeciąża nazwę zmiennej. Jeśli nazwa rejestru jest taka sama jak nazwa zmiennej w bieżącym zakresie, debuger interpretuje nazwę jako nazwę zmiennej. Gdy `$` *registername —* lub `@` *registername —* przydatność.|  
+|`$`*zarejestrujname*<br /><br /> lub<br /><br /> `@`*zarejestrujname*|Wyświetla zawartość *rejestru RegisterName.*<br /><br /> Zwykle można wyświetlić zawartość rejestru, wprowadzając nazwę rejestru. Jedyną potrzebą jest użycie tej składni, gdy nazwa rejestru przeciąża nazwę zmiennej. Jeśli nazwa rejestru jest taka sama jak nazwa zmiennej w bieżącym zakresie, debuger interpretuje nazwę jako nazwę zmiennej. Jest to przydatne, gdy `$` w programie *RegisterName* lub `@` *RegisterName* jest dostępna.|  
 |`$clk`|Wyświetla godzinę w cyklach zegara.|  
-|`$user`|Wyświetla strukturę z informacjami o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje hasła nie są wyświetlane.|  
-|`$exceptionstack`|Wyświetla ślad stosu wyjątku bieżącego środowiska wykonawczego Windows. `$ exceptionstack` działa tylko w aplikacji Store, które są uruchomione na Windows 8.1 lub nowszym. `$ exceptionstack` nie jest obsługiwana dla języka C++ i wyjątki|  
-|`$ReturnValue`|Wyświetla wartość zwracaną metody .NET Framework. Zobacz [Sprawdź wartości zwracanych z wywołań metod](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$user`|Przedstawia strukturę z informacjami o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje o haśle nie są wyświetlane.|  
+|`$exceptionstack`|Wyświetla ślad stosu bieżącego wyjątku środowisko wykonawcze systemu Windows. `$ exceptionstack` działa tylko w aplikacjach ze sklepu, które działają w systemie Windows 8.1 lub nowszym. `$ exceptionstack` nie jest obsługiwany w przypadku języka C++ i wyjątków|  
+|`$ReturnValue`|Wyświetla wartość zwracaną metody .NET Framework. Zobacz [Badanie zwracanych wartości wywołań metod](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
- W języku C# i Visual Basic można użyć pseudozmiennych pokazanych w następującej tabeli:  
+ W językach C# i Visual Basic można użyć pseudozmiennych pokazanych pokazanej w tej tabeli:  
   
-|Pseudovariable|Funkcja|  
+|Pseudozmienna|Funkcja|  
 |--------------------|--------------|  
-|`$exception`|Wyświetla informacje o ostatnim wyjątku. Jeśli wystąpił żaden wyjątek, ocena `$exception` wyświetli komunikat o błędzie.<br /><br /> W języku Visual C# tylko wtedy, gdy Asystent wyjątków jest wyłączony, `$exception` jest automatycznie dodawany do **lokalne** okna, gdy wystąpi wyjątek.|  
-|`$user`|Wyświetla strukturę z informacjami o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje hasła nie są wyświetlane.|  
+|`$exception`|Wyświetla informacje o ostatnim wyjątku. Jeśli nie wystąpił żaden wyjątek, Ocena `$exception` wyświetla komunikat o błędzie.<br /><br /> Tylko w języku Visual C#, gdy Asystent wyjątków jest wyłączony, `$exception` jest automatycznie dodawany do okna **zmiennych lokalnych** , gdy wystąpi wyjątek.|  
+|`$user`|Przedstawia strukturę z informacjami o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje o haśle nie są wyświetlane.|  
   
- W języku Visual Basic można użyć pseudozmiennych pokazanych w następującej tabeli:  
+ W Visual Basic można użyć pseudozmiennych pokazanych pokazanej w poniższej tabeli:  
   
-|Pseudovariable|Funkcja|  
+|Pseudozmienna|Funkcja|  
 |--------------------|--------------|  
-|`$delete` lub `$$delete`|Usuwa zmienną niejawną, który został utworzony w **bezpośrednie** okna. Składnia jest `$delete,` *zmiennej* lub`$delete,` *zmiennej*`.`|  
-|`$objectids` lub `$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów jako elementy podrzędne określonego wyrażenia. Składnia jest `$objectid,` *wyrażenie* lub`$listobjectids,` *wyrażenia*`.`|  
-|`$` *N* `#`|Wyświetla obiekt z Identyfikatorem obiektu równym *N*.|  
-|`$dynamic`|Wyświetla specjalny **dynamiczny widok** węzła dla obiektu, który implementuje `IDynamicMetaObjectProvider`. interfejs. Składnia jest `$dynamic,` *obiektu*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4. Zobacz [dynamiczny widok](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
+|`$delete` lub `$$delete`|Usuwa zmienną niejawną, która została utworzona w oknie **bezpośrednim** . Składnia jest `$delete,` *zmienna* lub `$delete,` *zmienna*`.`|  
+|`$objectids` lub `$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów jako elementy podrzędne określonego wyrażenia. Składnia jest `$objectid,` *wyrażeniem* lub `$listobjectids,` *wyrażeniem*`.`|  
+|`$` *N* `#`|Wyświetla obiekt z IDENTYFIKATORem obiektu równy *N*.|  
+|`$dynamic`|Wyświetla specjalny węzeł **widoku dynamicznego** dla obiektu, który implementuje `IDynamicMetaObjectProvider` . Interfejsu. Składnia jest `$dynamic,` *obiektem*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4. Zobacz [Widok dynamiczny](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wyrażenie kontrolne i QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Windows zmiennej](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Oglądaj i QuickWatch okna](../debugger/watch-and-quickwatch-windows.md)   
+ [Zmienne okna](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

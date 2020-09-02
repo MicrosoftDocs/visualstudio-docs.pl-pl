@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536880"
 ---
 # <a name="projectitem-element"></a>ProjectItem — element
@@ -59,7 +59,7 @@ ms.locfileid: "85536880"
 |-------------|-----------------|
 |[ExtensionData —](../sharepoint/extensiondata-element.md)|Element opcjonalny.<br /><br /> Reprezentuje kolekcję niestandardowych elementów danych, które są skojarzone z elementem projektu programu SharePoint.<br /><br /> Można uwzględnić tylko jeden element **ExtensionData —** .|
 |[FeatureProperties —](../sharepoint/featureproperties-element.md)|Element opcjonalny.<br /><br /> Reprezentuje kolekcję wartości właściwości, które są dołączone do funkcji podczas jej wdrażania w programie SharePoint.<br /><br /> Można uwzględnić tylko jeden element **FeatureProperties —** .|
-|[Files](../sharepoint/files-element.md)|Opcjonalny element **FileCollectionType** .<br /><br /> Określa pliki do wdrożenia za pomocą elementu projektu programu SharePoint, takich jak pliki elementów funkcji i dane wyjściowe zależnych projektów spoza programu SharePoint.<br /><br /> Dołącz **pliki** lub element **projectitemfolder —** , ale nie oba jednocześnie.|
+|[Pliki](../sharepoint/files-element.md)|Opcjonalny element **FileCollectionType** .<br /><br /> Określa pliki do wdrożenia za pomocą elementu projektu programu SharePoint, takich jak pliki elementów funkcji i dane wyjściowe zależnych projektów spoza programu SharePoint.<br /><br /> Dołącz **pliki** lub element **projectitemfolder —** , ale nie oba jednocześnie.|
 |[Projectitemfolder —](../sharepoint/projectitemfolder-element.md)|Opcjonalny element **ProjectItemFolderType** .<br /><br /> Reprezentuje zamapowany folder.<br /><br /> Dołącz **pliki** lub element **projectitemfolder —** , ale nie oba jednocześnie.|
 |[SafeControls —](../sharepoint/safecontrols-element.md)|Element opcjonalny.<br /><br /> Reprezentuje kolekcję formantów ASPX i składniki Web Part, które są wyznaczeni jako bezpieczne dla każdego użytkownika, który ma dostęp do dowolnej strony ASPX w witrynie programu SharePoint.<br /><br /> Można uwzględnić tylko jeden element **SafeControls —** .|
 
@@ -75,5 +75,5 @@ ms.locfileid: "85536880"
 |**Plik walidacji**|ProjectItemModelSchema. xsd|
 |**Może być puste**|Nie|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 [Rseference schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

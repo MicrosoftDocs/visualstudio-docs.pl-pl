@@ -1,5 +1,5 @@
 ---
-title: Importgroup — Element | Dokumentacja firmy Microsoft
+title: Zaimportuj element | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,19 +18,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b6fb90cd12dc59edc760b081e7108c52c815a72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192259"
 ---
 # <a name="importgroup-element"></a>ImportGroup — Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zawiera kolekcję `Import` elementy, które są zgrupowane w obszarze opcjonalny warunek. Aby uzyskać więcej informacji, zobacz [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md).  
+Zawiera kolekcję `Import` elementów, które są zgrupowane w warunku opcjonalnym. Aby uzyskać więcej informacji, zobacz [import elementu (MSBuild)](../msbuild/import-element-msbuild.md).  
   
  \<Project>  
- \<Importgroup — >  
+ \<ImportGroup>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,24 +48,24 @@ Zawiera kolekcję `Import` elementy, które są zgrupowane w obszarze opcjonalny
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczony. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Importujuj](../msbuild/import-element-msbuild.md)|Importuje zawartość pliku jednego projektu do innego pliku projektu.|  
+|[Importuj](../msbuild/import-element-msbuild.md)|Importuje zawartość jednego pliku projektu do innego pliku projektu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Wymagany element główny [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.|  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod przedstawia przykład `ImportGroup` elementu.  
+ Poniższy przykład kodu pokazuje `ImportGroup` element.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

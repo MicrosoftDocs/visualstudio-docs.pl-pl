@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Dokumenty firmy Microsoft
+title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714326"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
-Określa flagi dla informacji o module debugowania.
+Określa flagi dla informacji modułu debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -66,55 +66,55 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Pola
  `MIF_NONE`\
- Inicjuj/nie używaj żadnego z pól w strukturze.
+ W strukturze nie należy inicjować ani używać żadnych pól.
 
  `MIF_NAME`\
- Inicjuj/użyj `m_bstrName` pola w strukturze [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
+ Zainicjuj/Użyj `m_bstrName` pola w strukturze [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
  `MIF_URL`\
- Inicjowanie/używanie `m_bstrUrl` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_bstrUrl` pola w `MODULE_INFO` strukturze.
 
  `MIF_VERSION`\
- Inicjowanie/używanie `m_bstrVersion` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_bstrVersion` pola w `MODULE_INFO` strukturze.
 
  `MIF_DEBUGMESSAGE`\
- Inicjowanie/używanie `m_bstrDebugMessage` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_bstrDebugMessage` pola w `MODULE_INFO` strukturze.
 
  `MIF_LOADADDRESS`\
- Inicjowanie/używanie `m_addrLoadAddress` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_addrLoadAddress` pola w `MODULE_INFO` strukturze.
 
  `MIF_PREFFEREDADDRESS`\
- Inicjowanie/używanie `m_addrPreferredLoadAddress` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_addrPreferredLoadAddress` pola w `MODULE_INFO` strukturze.
 
  `MIF_SIZE`\
- Inicjowanie/używanie `m_dwSize` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_dwSize` pola w `MODULE_INFO` strukturze.
 
  `MIF_LOADORDER`\
- Inicjowanie/używanie `m_dwLoadOrder` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_dwLoadOrder` pola w `MODULE_INFO` strukturze.
 
  `MIF_TIMESTAMP`\
- Inicjowanie/używanie `m_TimeStamp` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_TimeStamp` pola w `MODULE_INFO` strukturze.
 
  `MIF_URLSYMBOLLOCATION`\
- Inicjowanie/używanie `m_bstrUrlSymbolLocation` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_bstrUrlSymbolLocation` pola w `MODULE_INFO` strukturze.
 
  `MIF_FLAGS`\
- Inicjowanie/używanie `m_dwModuleFlags` pola `MODULE_INFO` w strukturze.
+ Zainicjuj/Użyj `m_dwModuleFlags` pola w `MODULE_INFO` strukturze.
 
  `MIF_ALLFIELDS`\
- Inicjuj/użyj wszystkich `MODULE_INFO` pól w strukturze.
+ Zainicjuj/Użyj wszystkich pól w `MODULE_INFO` strukturze.
 
 ## <a name="remarks"></a>Uwagi
- Wartości te są przekazywane jako argument do [Metody GetInfo,](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) aby wskazać, które pola [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury mają zostać zainicjowane.
+ Te wartości są przekazywane jako argument do metody [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) , aby wskazać, które pola struktury [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) mają być inicjowane.
 
- Wartości te są również `MODULE_INFO` używane w strukturze, aby wskazać, które pola są używane i prawidłowe.
+ Te wartości są również używane w `MODULE_INFO` strukturze, aby wskazać, które pola są używane i są prawidłowe.
 
- Flagi te mogą być łączone z bitowym `OR`.
+ Flagi te mogą być połączone z bitową `OR` .
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: msdbg.h
+ Nagłówek: Msdbg. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

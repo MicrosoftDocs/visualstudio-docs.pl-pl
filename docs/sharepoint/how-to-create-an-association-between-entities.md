@@ -22,9 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016932"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Instrukcje: Tworzenie skojarzenia między jednostkami
@@ -60,7 +61,7 @@ ms.locfileid: "86016932"
 
      Przykłady metod nawigatora skojarzeń można znaleźć w temacie [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Utwórz skojarzenie między jednostkami](../sharepoint/creating-an-association-between-entities.md)
 - [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)

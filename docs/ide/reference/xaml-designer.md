@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 45c7a5ba87c006332b601b93143cbf8acfda16b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547306"
 ---
 # <a name="xaml-designer-options-page"></a>Strona opcji projektant XAML
@@ -48,7 +48,7 @@ Użyj tego ustawienia, aby określić, kiedy i jak projektant XAML pojawia się 
 |-|-|
 |**Pionowa**|Źródło XAML pojawia się po lewej stronie widoku XAML, a projektant XAML pojawia się po drugiej stronie.|
 |**Układ**|Projektant XAML pojawia się w górnej części widoku XAML, a źródło XAML pojawia się poniżej.|
-|**Domyślny**|Dokument XAML stosuje orientację podziału zalecaną dla platformy wskazywanej przez projekt dokumentu. W przypadku większości platform jest to odpowiednik w **poziomie**.|
+|**Wartooć**|Dokument XAML stosuje orientację podziału zalecaną dla platformy wskazywanej przez projekt dokumentu. W przypadku większości platform jest to odpowiednik w **poziomie**.|
 
 ## <a name="zoom-by-using"></a>Powiększ przy użyciu
 
@@ -109,4 +109,4 @@ Użyj tych ustawień, aby określić, czy efekty są renderowane podczas edytowa
 ## <a name="see-also"></a>Zobacz też
 
 - [XAML w WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [Przewodnik: moja pierwsza aplikacja klasyczna WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+- [Przewodnik: Moja pierwsza aplikacja klasyczna WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

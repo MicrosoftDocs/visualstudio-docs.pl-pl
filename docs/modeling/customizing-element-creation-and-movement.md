@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547267"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
@@ -230,7 +230,7 @@ W niestandardowym kodzie scalania można zdefiniować, co się stanie, gdy użyt
 
 5. Sprawdź zawartość **Dsl\Generated Files\DomainClasses.cs**. Wyszukaj metody o nazwie `MergeRelate` i przejrzyj ich zawartość. Pomoże to napisać własne wersje.
 
-6. W nowym pliku kodu Napisz klasę częściową klasy odbiorczej i Zastąp `MergeRelate` metodę. Pamiętaj, aby wywołać metodę bazową. Przykład:
+6. W nowym pliku kodu Napisz klasę częściową klasy odbiorczej i Zastąp `MergeRelate` metodę. Pamiętaj, aby wywołać metodę bazową. Na przykład:
 
     ```csharp
     partial class ExampleModel

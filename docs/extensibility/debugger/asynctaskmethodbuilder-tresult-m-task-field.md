@@ -1,5 +1,5 @@
 ---
-title: AsyncTaskMethodBuilder&lt;TResult&gt;.m_task Pole | Dokumenty firmy Microsoft
+title: AsyncTaskMethodBuilder &lt; TResult &gt; . M_task — pole | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43822417a000a51b11c18e282860dc0dbfb08332
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739358"
 ---
-# <a name="asynctaskmethodbuilderlttresultgtm_task-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;.m_task pole
-Reprezentuje leniwie zainicjowane zadanie zbudowane.
+# <a name="asynctaskmethodbuilderlttresultgtm_task-field"></a>AsyncTaskMethodBuilder &lt; TResult &gt; . m_task — pole
+Reprezentuje wbudowane zadanie opóźnieniem.
 
- **Obszar nazw:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Przestrzeń nazw:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Montaż:** mscorlib (w mscorlib.dll)
+ **Zestaw:** mscorlib (w mscorlib.dll)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,4 +34,4 @@ Reprezentuje leniwie zainicjowane zadanie zbudowane.
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [Wewnętrzne rozszerzenia równoległego dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Wewnętrzne rozszerzenia równoległe dla .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

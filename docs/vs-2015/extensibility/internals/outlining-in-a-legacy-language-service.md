@@ -1,5 +1,5 @@
 ---
-title: Zwijanie w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
+title: Tworzenie konspektu w starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,42 +13,42 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408557"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64801680"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Zwijanie w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Konspekt umożliwia zwijane złożony program Przegląd lub konspektu. Na przykład w języku C# może zostać zwinięty wszystkie metody w jeden wiersz, pokazujący tylko podpis metody. Ponadto aby pokazać tylko nazwy klasy i struktury może zostać zwinięty struktury i klasy. Wewnątrz pojedynczej metody złożonej logiki może zostać zwinięty będzie wyświetlana ogólny przepływ, takich jak wyświetlanie tylko pierwszy wiersz instrukcji `foreach`, `if`, i `while`.  
+Konspekt umożliwia zwinięcie złożonego programu do przeglądu lub konspektu. Na przykład w języku C# wszystkie metody można zwinąć do pojedynczego wiersza, pokazując tylko sygnaturę metody. Ponadto struktury i klasy mogą być zwinięte, aby pokazać tylko nazwy struktur i klas. Wewnątrz pojedynczej metody można zwinąć skomplikowaną logikę, aby pokazać ogólny przepływ, pokazując tylko pierwszy wiersz instrukcji, takich jak `foreach` , `if` , i `while` .  
   
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [instruktażu: Konspekt](../../extensibility/walkthrough-outlining.md).  
+ Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej, zobacz [Przewodnik: Tworzenie konspektu](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
-> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
+> Zalecamy rozpoczęcie korzystania z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i pozwala korzystać z nowych funkcji edytora.  
   
-## <a name="enabling-support-for-outlining"></a>Włączanie obsługi konspekt  
- `AutoOutlining` Wpis rejestru jest ustawiona na 1, aby włączyć automatyczne tworzenie konspektu. Automatyczne tworzenie konspektu konfiguruje analizy całego źródła podczas ładowania lub zmienione w celu identyfikowania ukryte obszary i Pokaż symbole konspektu pliku. Tworzenie konspektu można także kontrolować ręcznie przez użytkownika.  
+## <a name="enabling-support-for-outlining"></a>Włączanie obsługi konspektu  
+ `AutoOutlining`Wpis rejestru jest ustawiony na 1, aby włączyć automatyczne tworzenie konspektu. Automatyczne tworzenie konspektu ustawia analizę całego źródła, gdy plik zostanie załadowany lub zmieniony w celu zidentyfikowania ukrytych regionów i pokazania symboli konspektu. Konspekt można również kontrolować ręcznie przez użytkownika.  
   
- Wartość `AutoOutlining` wpis rejestru można uzyskać za pośrednictwem <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. `AutoOutlining` Wpis rejestru mogą być zainicjowane z nazwany parametr do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybutu (patrz [rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md) Aby uzyskać szczegółowe informacje).  
+ Wartość `AutoOutlining` wpisu rejestru można uzyskać za pomocą <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> właściwości <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. `AutoOutlining`Wpis rejestru można zainicjować przy użyciu nazwanego parametru do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybutu (zobacz [Rejestrowanie starszej wersji usługi językowej,](../../extensibility/internals/registering-a-legacy-language-service1.md) Aby uzyskać szczegółowe informacje).  
   
-## <a name="the-hidden-region"></a>Ukryty Region  
- Aby zapewnić Tworzenie konspektu, usługi w języka musi obsługiwać ukryte obszary. Oto zakresy tekst, który można rozwijać i zwijać. Ukryte obszary można ograniczać przez standardowe języka symbole, takie jak nawiasy klamrowe, lub niestandardowych symboli. Na przykład C# ma `#region` / `#endregion` pary ograniczającego ukryty region.  
+## <a name="the-hidden-region"></a>Ukryty region  
+ Aby zapewnić tworzenie konspektów, usługa języka musi obsługiwać ukryte regiony. Są to zakresy tekstu, które mogą być rozwinięte lub zwinięte. Ukryte regiony mogą być rozdzielone symbolami języka standardowego, takimi jak nawiasy klamrowe, lub według symboli niestandardowych. Na przykład, C# ma `#region` / `#endregion` parę, która ogranicza ukryty region.  
   
- Ukryte regiony są zarządzane przez Menedżera ukryty region, który jest udostępniany jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interfejsu.  
+ Ukryte regiony są zarządzane przez Menedżera regionów ukrytych, który jest udostępniany jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interfejs.  
   
- Konspekt używa ukryte obszary <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> interfejs i zawierać zakres ukryty region, bieżący stan widoczne i Baner, który ma być wyświetlany, gdy zakres jest zwinięta.  
+ Tworzenie konspektu używa ukrytych regionów <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> interfejs i zawiera zakres ukrytego regionu, bieżący widoczny stan oraz transparent, który ma być wyświetlany, gdy zasięg jest zwinięty.  
   
- Używa analizatora usługi w języka <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> metody w celu dodania nowych ukryty region z domyślnym zachowaniem ukrytych regionów podczas <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> metody umożliwia dostosowanie wyglądu i zachowania konspektu. Po ukryte obszary są podane z sesją ukryty region [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zarządza ukrytych regionów dla usługi w języka.  
+ Analizator usługi językowej używa <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> metody, aby dodać nowy ukryty region z zachowaniem domyślnym dla ukrytych regionów, podczas gdy <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> Metoda pozwala na dostosowanie wyglądu i zachowania konspektu. Po otrzymaniu ukrytych regionów do sesji ukrytego regionu program [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zarządza ukrytymi regionami dla usługi językowej.  
   
- Jeśli zachodzi potrzeba określenia, kiedy niszczony jest sesja ukryty region, zmianie ukryta regionu lub musisz upewnić się, że określonego ukryty region jest widoczny; należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.Source> klasy i zastąpić właściwe metody <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, i <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, odpowiednio.  
+ Jeśli konieczne jest określenie, kiedy sesja ukrytego regionu zostanie zniszczona, ukryty region jest zmieniany lub trzeba upewnić się, że określony ukryty region jest widoczny; należy utworzyć klasę z <xref:Microsoft.VisualStudio.Package.Source> klasy i zastąpić odpowiednie metody, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A> , <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> , i <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> , odpowiednio.  
   
 ### <a name="example"></a>Przykład  
- Oto uproszczony przykład tworzenia ukrytych regionów dla wszystkich par nawiasów klamrowych. Zakłada się, że język zapewnia parowanie nawiasów klamrowych i nawiasy klamrowe mają być dopasowywane zawiera co najmniej nawiasy klamrowe ({i}). To podejście jest tylko w celach ilustracyjnych. Pełną implementację miałby pełną obsługę przypadków w <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. W tym przykładzie przedstawiono również sposób ustawiania <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preferencję `true` tymczasowo. Alternatywą jest określenie `AutoOutlining` o nazwie parametru w `ProvideLanguageServiceAttribute` atrybutu w pakiecie języka.  
+ Poniżej przedstawiono uproszczony przykład tworzenia ukrytych regionów dla wszystkich par nawiasów klamrowych. Przyjęto założenie, że język zawiera dopasowanie nawiasów klamrowych i że nawiasy klamrowe mają być dopasowane, zawierają co najmniej nawiasy klamrowe ({i}). Takie podejście służy wyłącznie do celów informacyjnych. Pełna implementacja będzie miała pełną obsługę przypadków w programie <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> . Ten przykład pokazuje również, jak ustawić <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preferencję na `true` czas tymczasowy. Alternatywą jest określenie `AutoOutlining` parametru nazwanego w `ProvideLanguageServiceAttribute` atrybucie pakietu językowego.  
   
- W tym przykładzie przyjęto założenie, C# zasady komentarze, ciągi znaków i literały.  
+ W tym przykładzie założono reguły języka C# dla komentarzy, ciągów i literałów.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -120,5 +120,5 @@ namespace MyLanguagePackage
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)   
  [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)

@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccGet | Dokumentacja firmy Microsoft
+title: Funkcja SccGet | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432430"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64803700"
 ---
 # <a name="sccget-function"></a>SccGet, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ta funkcja pobiera kopię jeden lub więcej plików do przeglądania i kompilacji, ale nie do edycji. W większości systemów pliki są oznaczone jako tylko do odczytu.  
+Ta funkcja pobiera kopię co najmniej jednego pliku do przeglądania i kompilowania, ale nie do edycji. W większości systemów pliki są oznaczone jako tylko do odczytu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,68 +39,68 @@ SCCRTN SccGet(
   
 #### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekstu wtyczka do kontroli źródła.  
+ podczas Struktura kontekstu wtyczki kontroli źródła.  
   
- hWnd  
- [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
+ Właściwość  
+ podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.  
   
- Niepowodzeń  
- [in] Liczba plików określonych w `lpFileNames` tablicy.  
+ nFiles  
+ podczas Liczba plików określona w `lpFileNames` tablicy.  
   
  lpFileNames  
- [in] Tablica z w pełni kwalifikowane nazwy plików do pobrania.  
+ podczas Tablica w pełni kwalifikowanych nazw plików do pobrania.  
   
  fOptions  
- [in] Polecenie flagi (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
+ podczas Flagi poleceń ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).  
   
  pvOptions  
- [in] Opcje plug-określonych kontroli źródła.  
+ podczas Opcje dotyczące wtyczki kontroli źródła.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |SCC_OK|Powodzenie operacji pobierania.|  
-|SCC_E_FILENOTCONTROLLED|Plik nie jest pod kontrolą źródła.|  
+|SCC_E_FILENOTCONTROLLED|Plik nie znajduje się pod kontrolą źródła.|  
 |SCC_E_OPNOTSUPPORTED|System kontroli źródła nie obsługuje tej operacji.|  
-|SCC_E_FILEISCHECKEDOUT|Nie można pobrać pliku, który użytkownik aktualnie został wyewidencjonowany.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|  
-|SCC_E_NOSPECIFIEDVERSION|Określono nieprawidłową wersję lub daty/godziny.|  
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd; Nie można zsynchronizować pliku.|  
+|SCC_E_FILEISCHECKEDOUT|Nie można pobrać pliku, który obecnie został wyewidencjonowany przez użytkownika.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zalecana jest ponowna próba.|  
+|SCC_E_NOSPECIFIEDVERSION|Określono nieprawidłową wersję lub datę/godzinę.|  
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd; plik nie został zsynchronizowany.|  
 |SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|  
-|SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do wykonania tej operacji.|  
+|SCC_E_NOTAUTHORIZED|Użytkownik nie ma autoryzacji do wykonania tej operacji.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta funkcja jest wywoływana z liczbą i tablicę nazw plików, które mają zostać pobrane. Jeśli środowisko IDE przekazuje flagę `SCC_GET_ALL`, oznacza to, że elementy w `lpFileNames` nie są pliki, ale katalogów, a wszystkie pliki w kontroli źródła w danym katalogi, które mają być pobierane.  
+ Ta funkcja jest wywoływana z liczbą i tablicą nazw plików do pobrania. Jeśli IDE przeszedł flagę `SCC_GET_ALL` , oznacza to, że elementy w `lpFileNames` nie są plikami, ale katalogami i że wszystkie pliki w ramach kontroli źródła w danym katalogu mają być pobierane.  
   
- `SCC_GET_ALL` Flagi mogą być łączone z `SCC_GET_RECURSIVE` flagę, aby pobrać wszystkie pliki w danym katalogów i wszystkie podkatalogi również.  
+ `SCC_GET_ALL`Flaga może być łączona z `SCC_GET_RECURSIVE` flagą w celu pobrania wszystkich plików z danego katalogu i wszystkich podkatalogów.  
   
 > [!NOTE]
-> `SCC_GET_RECURSIVE` nigdy nie powinien być przekazywany bez `SCC_GET_ALL`. Należy również zauważyć, że jeśli katalogi C:\A i C:\A\B Pobierz zarówno przekazywane na rekursywny, C:\A\B i jego podkatalogach faktycznie pobierany dwa razy. Odpowiada za IDE — i nie źródło sterowania dodatku plug-in — Aby upewnić się, że duplikaty takich są przechowywane poza tablicy.  
+> `SCC_GET_RECURSIVE` nigdy nie powinno być przesyłane bez `SCC_GET_ALL` . Należy również pamiętać, że jeśli katalogi C:\A i C:\A\B są przesyłane do cyklicznego Get, C:\A\B i wszystkie jego podkatalogi zostaną rzeczywiście pobrane dwa razy. Jest to odpowiedzialność za środowisko IDE — a nie dla wtyczki kontroli źródła — aby upewnić się, że duplikaty, takie jak te, są przechowywane w tablicy.  
   
- Na koniec, nawet jeśli wtyczka kontroli źródła określony `SCC_CAP_GET_NOUI` flagi na inicjowanie, wskazujący, że nie ma interfejsu użytkownika dla polecenia Get, ta funkcja nadal może zostać wywołana przez środowisko IDE do pobierania plików. Flaga po prostu oznacza, że środowisko IDE nie wyświetla element menu Get, wtyczka nie powinien zapewniać wszelkich elementów interfejsu użytkownika.  
+ Na koniec, nawet jeśli wtyczka do kontroli źródła określiła `SCC_CAP_GET_NOUI` flagę inicjowania, wskazując, że nie ma interfejsu użytkownika dla polecenia Get, ta funkcja może być nadal wywoływana przez IDE w celu pobierania plików. Flaga po prostu oznacza, że IDE nie wyświetla elementu menu Pobierz i nie oczekuje, że wtyczka nie udostępnia żadnego interfejsu użytkownika.  
   
-## <a name="renaming-and-sccget"></a>Zmienianie nazwy i SccGet  
- Sytuacja: użytkownik wyewidencjonuje pliku, na przykład a.txt i modyfikuje je. Zanim a.txt mogą zostać zaewidencjonowane, drugi użytkownik zmienia nazwę a.txt na b.txt w bazie danych kontroli źródła, sprawdza out b.txt, sprawia, że pewnych zmian w pliku i sprawdza, czy pliku. Pierwszy użytkownik chce, aby zmiany wprowadzone przez drugi użytkownik, więc pierwszy użytkownik zmienia nazwę swojej lokalnej wersji pliku a.txt na b.txt i wykonuje pobierania pliku. Jednak lokalna pamięć podręczna, która śledzi numery wersji nadal uzna za pierwszą wersję a.txt są przechowywane lokalnie, a więc kontroli źródła nie może rozpoznać różnice.  
+## <a name="renaming-and-sccget"></a>Zmiana nazwy i SccGet  
+ Sytuacja: użytkownik sprawdza plik, na przykład a.txt, i modyfikuje go. Aby można było zaewidencjonować a.txt, drugi użytkownik zmienia nazwę a.txt do b.txt w bazie danych kontroli źródła, wyewidencjonuje b.txt, wprowadza modyfikacje pliku i sprawdza plik w. Pierwszy użytkownik chce, aby zmiany wprowadzone przez drugiego użytkownika zostały zmienione przez pierwszego użytkownika, a jego lokalna wersja a.txt pliku b.txt i pobiera plik. Jednak lokalna pamięć podręczna, która zachowuje śledzenie numerów wersji, nadal uważa, że pierwsza wersja a.txt jest przechowywana lokalnie i dlatego kontrola źródła nie może rozpoznać różnic.  
   
- Istnieją dwa sposoby, aby rozwiązać ten problem, gdzie w lokalnej pamięci podręcznej wersji kontroli źródła staje się zsynchronizowany z bazy danych kontroli źródła:  
+ Istnieją dwa sposoby rozwiązania tej sytuacji, w której lokalna pamięć podręczna wersji kontroli źródła nie jest zsynchronizowana z bazą danych kontroli źródła:  
   
-1. Nie zezwalaj na zmianę nazwy pliku w bazie danych kontroli źródła, która jest obecnie wyewidencjonowany.  
+1. Nie Zezwalaj na zmianę nazwy pliku w bazie danych kontroli źródła, który jest obecnie wyewidencjonowany.  
   
-2. Czy wielokrotność "Usuń stare" następuje "Dodaj nowe". Następującego algorytmu jest jednym ze sposobów osiągnięcia tego.  
+2. Wykonaj odpowiednik "Usuń stare", a następnie "Dodaj nowe". Poniższy algorytm jest jednym ze sposobów, aby to osiągnąć.  
   
-    1. Wywołaj [SccQueryChanges](../extensibility/sccquerychanges-function.md) funkcji, aby dowiedzieć się więcej na temat zmiany nazwy a.txt do b.txt w bazie danych kontroli źródła.  
+    1. Wywołaj funkcję [SccQueryChanges](../extensibility/sccquerychanges-function.md) , aby dowiedzieć się więcej o zmianie nazwy a.txt na b.txt w bazie danych kontroli źródła.  
   
-    2. Zmień nazwę lokalnych a.txt b.txt.  
+    2. Zmień nazwę a.txt lokalnego na b.txt.  
   
-    3. Wywołaj `SccGet` funkcji dla a.txt i b.txt.  
+    3. Wywołaj `SccGet` funkcję dla obu a.txt i b.txt.  
   
-    4. Ponieważ a.txt nie istnieje w bazie danych kontroli źródła, wersja lokalna pamięć podręczna są przeczyszczane Brak a.txt informacji o wersji.  
+    4. Ponieważ a.txt nie istnieje w bazie danych kontroli źródła, w lokalnej pamięci podręcznej wersji zostanie przeczyszczona brakująca informacja o wersji a.txt.  
   
-    5. Plik b.txt wyewidencjonowany jest scalany z zawartości pliku lokalnego b.txt.  
+    5. Wyewidencjonowany plik b.txt jest scalany z zawartością pliku b.txt lokalnego.  
   
-    6. Teraz mogą zostać zaewidencjonowane b.txt zaktualizowany plik.  
+    6. Zaktualizowany plik b.txt można teraz zaewidencjonować.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   

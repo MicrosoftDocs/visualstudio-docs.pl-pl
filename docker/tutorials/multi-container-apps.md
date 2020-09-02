@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89178299"
 ---
 # <a name="multi-container-apps"></a>Aplikacje z wieloma kontenerami
@@ -136,7 +136,7 @@ Aby to zrobić, zamierzasz korzystać z kontenera [nicolaka/](https://github.com
 
 ## <a name="run-your-app-with-mysql"></a>Uruchamianie aplikacji za pomocą programu MySQL
 
-Aplikacja do zrobienia obsługuje ustawienie kilku zmiennych środowiskowych w celu określenia ustawień połączenia MySQL. Oto one:
+Aplikacja do zrobienia obsługuje ustawienie kilku zmiennych środowiskowych w celu określenia ustawień połączenia MySQL. Są to:
 
 - `MYSQL_HOST` -Nazwa hosta dla uruchomionego serwera MySQL
 - `MYSQL_USER` -Nazwa użytkownika do użycia w przypadku połączenia

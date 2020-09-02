@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219689"
 ---
 # <a name="globalization-warnings"></a>Globalizacja — Ostrzeżenia
@@ -36,8 +36,8 @@ Ostrzeżenia globalizacji obsługują biblioteki i aplikacje gotowe do zastosowa
 |[CA1304: Określ argument CultureInfo](../code-quality/ca1304.md)|Metoda lub konstruktor wywołuje członka mającego przeciążenie, które akceptuje parametr System.Globalization.CultureInfo i metodę lub konstruktor niewywołujący przeciążenia, które wymaga parametru CultureInfo. Kiedy obiekt CultureInfo lub System.IFormatProvider nie jest podany, domyślna wartość, która jest dostarczana przez członka przeciążonego, może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych.|
 |[CA1305: Określ argument IFormatProvider](../code-quality/ca1305.md)|Metoda lub konstruktor wywołują jednego lub kilku członków, którzy mają przeciążenia akceptujące parametr System.IFormatProvider, i metody lub konstruktora, który nie wywołuje przeciążenia przyjmującego parametr IFormatProvider. Kiedy obiekt System.Globalization.CultureInfo lub IFormatProvider nie jest podany, domyślna wartość przekazywana przez członka przeciążonego może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych.|
 |[CA1306: Ustaw ustawienia regionalne dla typów danych](../code-quality/ca1306.md)|Ustawienia regionalne określą specyficzne dla kultur elementy prezentacji danych, takie jak formatowanie, które jest używane dla wartości liczbowych, symbole walut i porządek sortowania. Podczas tworzenia elementu DataTable lub DataSet należy jawnie ustawić ustawienia regionalne.|
-|[CA1307: Określ StringComparison dla jasności](../code-quality/ca1307.md)|Operacja porównania ciągu używa przeciążenia metody, które nie ustawia parametru StringComparison.|
+|[CA1307: Określ parametr StringComparison w celu zapewnienia jednoznaczności](../code-quality/ca1307.md)|Operacja porównania ciągu używa przeciążenia metody, które nie ustawia parametru StringComparison.|
 |[CA1308: Normalizuj ciągi do postaci zapisanej wielkimi literami](../code-quality/ca1308.md)|Ciągi powinny być znormalizowane do użycia wielkich liter. Małe grupy znaków nie mogą wykonywać rund, gdy są one konwertowane na małe litery.|
 |[CA1309: Użyj porządkowego ustawienia właściwości StringComparison](../code-quality/ca1309.md)|Operacja porównania ciągu, która jest nielingwistyczna, nie ustawia parametru StringComparison na Ordinal lub OrdinalIgnoreCase. Poprzez jawne ustawienie parametru na StringComparison.Ordinal lub StringComparison.OrdinalIgnoreCase kod często zaczyna działać szybciej, staje się bardziej poprawny i niezawodny.|
-|[CA1310: Określ StringComparison dla poprawności](../code-quality/ca1310.md)|Operacja porównywania ciągów używa przeciążenia metody, które nie ustawia parametru StringComparison i domyślnie używa porównania ciągów specyficznych dla kultury.|
+|[CA1310: Określ parametr StringComparison w celu zapewnienia poprawności](../code-quality/ca1310.md)|Operacja porównywania ciągów używa przeciążenia metody, które nie ustawia parametru StringComparison i domyślnie używa porównania ciągów specyficznych dla kultury.|
 |[CA2101: Określ kierowanie dla argumentów ciągu P/Invoke](../code-quality/ca2101.md)|Element członkowski wywołania platformy zezwala na częściowo zaufane obiekty wywołujące, ma parametr String i nie jest jawnie zorganizowany przez ciąg. Może to spowodować potencjalne luki w zabezpieczeniach.|

@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD | Dokumenty firmy Microsoft
+title: METADATA_ADDRESS_METHOD | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714455"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
@@ -47,21 +47,21 @@ public struct METADATA_ADDRESS_METHOD {
  `tokMethod`\
  Identyfikator metody.
 
- [C++] `_mdToken` jest `typedef` dla 32-bitowego `int`.
+ [C++] `_mdToken` jest `typedef` dla 32-bitowej `int` .
 
  `dwOffset`\
- Przesunięcie od początku klasy do tej metody (może reprezentować przesunięcie do vtable).
+ Przesunięcie od klasy rozpoczyna się do tej metody (może reprezentować przesunięcie do tabeli metod wirtualnych).
 
  `dwVersion`\
- Wersja metody (ta wartość jest unikatowa dla dostawcy symbolu).
+ Wersja metody (ta wartość jest unikatowa dla dostawcy symboli).
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest częścią unii w [strukturze DEBUG_ADDRESS_UNION,](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` gdy `DEBUG_ADDRESS_UNION` pole struktury `ADDRESS_KIND_METHOD` jest ustawiona na (wartość z [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) wyliczenia).
+ Ta struktura jest częścią Unii w strukturze [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , gdy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawione na `ADDRESS_KIND_METHOD` (wartość z wyliczenia [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: sh.h
+ Nagłówek: sh. h
 
- Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: Przegląd reguł jakości kodu
+title: Omówienie reguł jakości kodu
 ms.date: 08/27/2020
 ms.topic: reference
 f1_keywords:
@@ -299,10 +299,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 05937cef7187726134a7116edae4d74ee004de1d
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219754"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Ostrzeżenia analizy kodu dla kodu zarządzanego według CheckId
@@ -385,10 +385,10 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA1304 | [CA1304: Określ argument CultureInfo](../code-quality/ca1304.md) | Metoda lub konstruktor wywołuje członka mającego przeciążenie, które akceptuje parametr System.Globalization.CultureInfo i metodę lub konstruktor niewywołujący przeciążenia, które wymaga parametru CultureInfo. Kiedy obiekt CultureInfo lub System.IFormatProvider nie jest podany, domyślna wartość, która jest dostarczana przez członka przeciążonego, może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych. |
 | CA1305 | [CA1305: Określ argument IFormatProvider](../code-quality/ca1305.md) | Metoda lub konstruktor wywołują jednego lub kilku członków, którzy mają przeciążenia akceptujące parametr System.IFormatProvider, i metody lub konstruktora, który nie wywołuje przeciążenia przyjmującego parametr IFormatProvider. Kiedy obiekt System.Globalization.CultureInfo lub IFormatProvider nie jest podany, domyślna wartość przekazywana przez członka przeciążonego może nie wywoływać oczekiwanego efektu we wszystkich ustawieniach regionalnych. |
 | CA1306 | [CA1306: Ustaw ustawienia regionalne dla typów danych](../code-quality/ca1306.md) | Ustawienia regionalne określą specyficzne dla kultur elementy prezentacji danych, takie jak formatowanie, które jest używane dla wartości liczbowych, symbole walut i porządek sortowania. Podczas tworzenia elementu DataTable lub DataSet należy jawnie ustawić ustawienia regionalne. |
-| CA1307 | [CA1307: Określ StringComparison dla jasności](../code-quality/ca1307.md) | Operacja porównania ciągu używa przeciążenia metody, które nie ustawia parametru StringComparison. |
+| CA1307 | [CA1307: Określ parametr StringComparison w celu zapewnienia jednoznaczności](../code-quality/ca1307.md) | Operacja porównania ciągu używa przeciążenia metody, które nie ustawia parametru StringComparison. |
 | CA1308 |[CA1308: Normalizuj ciągi do postaci zapisanej wielkimi literami](../code-quality/ca1308.md) | Ciągi powinny być znormalizowane do użycia wielkich liter. Małe grupy znaków nie mogą wykonywać rund, gdy są one konwertowane na małe litery. |
 | CA1309 | [CA1309: Użyj porządkowego ustawienia właściwości StringComparison](../code-quality/ca1309.md) | Operacja porównania ciągu, która jest nielingwistyczna, nie ustawia parametru StringComparison na Ordinal lub OrdinalIgnoreCase. Poprzez jawne ustawienie parametru na StringComparison.Ordinal lub StringComparison.OrdinalIgnoreCase kod często zaczyna działać szybciej, staje się bardziej poprawny i niezawodny. |
-| CA1310 | [CA1310: Określ StringComparison dla poprawności](../code-quality/ca1310.md) | Operacja porównywania ciągów używa przeciążenia metody, które nie ustawia parametru StringComparison i domyślnie używa porównania ciągów specyficznych dla kultury. |
+| CA1310 | [CA1310: Określ parametr StringComparison w celu zapewnienia poprawności](../code-quality/ca1310.md) | Operacja porównywania ciągów używa przeciążenia metody, które nie ustawia parametru StringComparison i domyślnie używa porównania ciągów specyficznych dla kultury. |
 | CA1400 | [CA1400: punkty wejścia P/Invoke powinny istnieć](../code-quality/ca1400.md) |Metoda publiczna lub chroniona jest oznaczona za pomocą atrybutu System.Runtime.InteropServices.DllImportAttribute. Nie można zlokalizować biblioteki niezarządzanej lub dopasować metody do funkcji w bibliotece. |
 | CA1401 | [CA1401: P/Invoke nie powinna być widoczna](../code-quality/ca1401.md) | Metoda publiczna lub chroniona w typie publicznym ma atrybut System.Runtime.InteropServices.DllImportAttribute (również zaimplementowany przez słowo kluczowe Declare w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ). Takie metody nie powinny być udostępniane. |
 | CA1402 |[CA1402: Unikaj przeciążeń w interfejsach widocznych dla modelu COM](../code-quality/ca1402.md) | Gdy przeciążone metody są udostępniane klientom COM, tylko pierwsze przeciążenie metody zachowuje swoją nazwę. Kolejne przeciążenia są jednoznacznie nazywane przez dołączenie do nazwy znaku podkreślenia (_) i liczby całkowitej, która odpowiada kolejności deklaracji przeciążeń. |
@@ -483,7 +483,7 @@ Poniższa tabela zawiera ostrzeżenia analizy kodu dla kodu zarządzanego przez 
 | CA2004 | [CA2004: Usuń wywołania funkcji GC.KeepAlive](../code-quality/ca2004.md) | Podczas konwertowania użycia SafeHandle należy usunąć wszystkie wywołania do GC.KeepAlive (obiekt). W tym przypadku klasy nie powinny wywołać GC.KeepAlive. Założono, że nie mają one finalizatorów, ale polegają na elemencie SafeHandle, który ma sfinalizować dla nich dojście systemu operacyjnego. |
 | CA2006 | [CA2006: Używaj klasy SafeHandle w celu hermetyzacji zasobów natywnych](../code-quality/ca2006.md) | Wykorzystanie elementu IntPtr w kodzie zarządzanym może wskazywać na potencjalny problem dotyczący bezpieczeństwa i niezawodności. Wszystkie użycia elementu IntPtr muszą być przejrzane w celu ustalenia, czy użycie elementu SafeHandle lub podobnej technologii jest w tym miejscu wymagane. |
 | CA2007 | [CA2007: Nie oczekuj bezpośrednio zadania](ca2007.md) | Metoda asynchroniczna [czeka](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> bezpośrednio. Gdy Metoda asynchroniczna czeka <xref:System.Threading.Tasks.Task> bezpośrednio, kontynuacja występuje w tym samym wątku, który utworzył zadanie. Takie zachowanie może być kosztowne pod względem wydajności i może spowodować zakleszczenie w wątku interfejsu użytkownika. Rozważ wywołanie metody <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> sygnalizującej zamiar kontynuacji. |
-| CA2008 | [CA2008: nie twórz zadań bez przekazywania TaskScheduler](ca2008.md) | Operacja tworzenia lub kontynuacji zadania używa przeciążenia metody, które nie określa <xref:System.Threading.Tasks.TaskScheduler> parametru. |
+| CA2008 | [CA2008: Nie twórz zadań bez przekazania klasy TaskScheduler](ca2008.md) | Operacja tworzenia lub kontynuacji zadania używa przeciążenia metody, które nie określa <xref:System.Threading.Tasks.TaskScheduler> parametru. |
 | CA2009 | [CA2009: Nie wywołuj elementu ToImmutableCollection dla wartości ImmutableCollection](ca2009.md) | `ToImmutable` Metoda była niekoniecznie wywoływana w niezmiennej kolekcji z <xref:System.Collections.Immutable> przestrzeni nazw. |
 | CA2011 | [CA2011: Nie przypisuj właściwości w ramach jej metody ustawiającej](ca2011.md) | Właściwość przypadkowo przypisała wartość w ramach własnej [metody dostępu set](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor). |
 | CA2012 | [CA2012: Poprawnie używaj elementów ValueTask](ca2012.md) | ValueTasks zwracane z wywołań elementów członkowskich są przeznaczone do bezpośredniego oczekiwania.  Próbuje użyć ValueTask wiele razy lub uzyskać bezpośredni dostęp do wyniku, zanim będzie wiadomo, że może to spowodować wyjątek lub uszkodzenie.  Takie ValueTask jest prawdopodobnie oznaką funkcjonalnej usterki i może obniżyć wydajność. |

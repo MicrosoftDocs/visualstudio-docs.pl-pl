@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie opcjami konfiguracji | Dokumentacja firmy Microsoft
+title: Zarządzanie opcjami konfiguracji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d88cd0c20a8bbb29fee6b35d65813fd81f2eeb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192626"
 ---
 # <a name="managing-configuration-options"></a>Zarządzanie opcjami konfiguracji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gdy tworzysz nowy typ projektu, muszą zarządzać projektu i rozwiązania ustawienia konfiguracji, które określają jak projekt zostanie skompilowany, spakowanych, wdrożone i wykonywania. W poniższych tematach omówiono konfiguracji projektu i rozwiązania.  
+Podczas tworzenia nowego typu projektu należy zarządzać ustawieniami konfiguracji projektu i rozwiązania, które określają sposób kompilowania, pakowania, wdrażania i uruchamiania projektu. W poniższych tematach omówiono konfigurację projektu i rozwiązania.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Omówienie](../../extensibility/internals/configuration-options-overview.md)  
- W tym artykule opisano sposób projekty w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] może obsługiwać wiele konfiguracji.  
+ Opisuje, w jaki sposób projekty w programie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mogą obsługiwać wiele konfiguracji.  
   
  [Strony właściwości](../../extensibility/internals/property-pages.md)  
- Wyjaśniono, że użytkownicy mogą przeglądać i zmienić zależne właściwości konfiguracji projektu i niezależnie od właściwości za pomocą strony właściwości.  
+ Wyjaśniono, że użytkownicy mogą wyświetlać i zmieniać właściwości zależne konfiguracji projektu i niezależne właściwości przy użyciu stron właściwości.  
   
  [Konfiguracja rozwiązania](../../extensibility/internals/solution-configuration.md)  
- Informacje na temat co to jest przechowywany w konfiguracje rozwiązania i jak konfiguracje rozwiązania bezpośrednie zachowanie **Start** i **kompilacji** poleceń.  
+ Zawiera informacje o tym, co jest przechowywane w konfiguracjach rozwiązań i jak konfiguracje rozwiązań kierują zachowanie poleceń **Start** i **Build** .  
   
  [Obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md)  
- W tym artykule wyjaśniono, jak obiekt konfiguracji projektu zarządza wyświetlanie informacji o konfiguracji w interfejsie użytkownika.  
+ Wyjaśnia, jak obiekt konfiguracji projektu zarządza wyświetlaniem informacji o konfiguracji w interfejsie użytkownika.  
   
  [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)  
- Wyjaśnia, jak lista konfiguracje rozwiązania dla konkretnego rozwiązania jest zarządzana przez **konfiguracje rozwiązania** okno dialogowe.  
+ Wyjaśnia, w jaki sposób lista konfiguracji rozwiązań dla danego rozwiązania jest zarządzana przez okno dialogowe **konfiguracje rozwiązań** .  
   
  [Konfigurowanie projektu do zarządzania wdrożeniem](../../extensibility/internals/project-configuration-for-managing-deployment.md)  
- Określa czynność wdrożenia oraz dwa sposoby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje projekty, które obsługują wdrożenia.  
+ Definiuje czynność wdrożenia, a dwa sposoby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługują projekty obsługujące wdrożenie.  
   
  [Konfigurowanie projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md)  
- Wyjaśnia, procesów kompilacji, obsługujące dla każdej konfiguracji i interfejsów i metod, które wysyłają elementy mogą być udostępniane.  
+ Wyjaśnia procesy kompilacji, które każda konfiguracja może obsłużyć, oraz interfejsy i metody, za pomocą których można udostępnić elementy wyjściowe.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Typy projektów](../../extensibility/internals/project-types.md)  
- Zawiera omówienie projektów jako podstawowe bloki konstrukcyjne [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE). Podano linki do dodatkowych tematów, które wyjaśniają, jak kontrolować projektów, tworzenie i kompilowanie kodu.
+ Zawiera omówienie projektów jako podstawowych bloków konstrukcyjnych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE). Linki są dostarczane do dodatkowych tematów, które wyjaśniają, jak projekty kontrolują Kompilowanie i kompilowanie kodu.

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547345"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
@@ -51,7 +51,7 @@ Ustaw właściwość **propagowania kopii** roli w celu **propagowania kopii do 
  **Szybkie duplikowanie elementów przez kopiowanie i wklejanie.** Normalnie skopiowany element jest nadal zaznaczony i nie można wkleić tego samego typu elementu.
 Dodaj dyrektywę scalenia elementów do klasy domeny i ustaw ją na przekazanie do niej scalenia z klasą nadrzędną. Będzie to miało ten sam wpływ na operacje przeciągania. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
- \-oraz
+ \- oraz
 
  Przed wklejeniem elementów wybierz diagram, zastępując go `ClipboardCommandSet.ProcessOnPasteCommand()` . Dodaj ten kod do pliku niestandardowego w projekcie DslPackage:
 
@@ -75,7 +75,7 @@ partial class MyDslClipboardCommandSet
  **Utwórz dodatkowe linki, gdy użytkownik wklei się w wybranym miejscu docelowym.** Na przykład po wklejeniu pola komentarza do elementu zostanie nawiązane połączenie między nimi.
 Dodaj dyrektywę scalenia elementów do klasy domena docelowa i ustaw ją, aby przetworzyć Scalanie przez dodanie linków. Będzie to miało ten sam wpływ na operacje przeciągania. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
- \-oraz
+ \- oraz
 
  Przesłoń, `ClipboardCommandSet.ProcessOnPasteCommand()` Aby utworzyć dodatkowe linki po wywołaniu metody podstawowej.
 
@@ -211,7 +211,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Zezwól użytkownikowi na przeciąganie i upuszczanie elementów.**
 Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a>Dostosowywanie zachowania kopiowania linków
+## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a> Dostosowywanie zachowania kopiowania linków
  Gdy użytkownik kopiuje element, standardowe zachowanie polega na tym, że wszystkie osadzone elementy są również kopiowane. Można zmodyfikować zachowanie kopiowania standardowego. W definicji DSL wybierz rolę z jednej strony relacji i w okno Właściwości ustaw wartość **propagowanie kopii** .
 
  ![Propaguje Właściwość Copy roli domeny](../modeling/media/dslpropagatescopy.png)
@@ -244,7 +244,7 @@ Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-
 
 2. Dodaj definicję klasy częściowej dla klasy diagramu. Nazwę tej klasy można znaleźć w **Dsl\GeneratedCode\Diagrams.cs**.
 
-    W klasie diagram Przesłoń, <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> Aby zwrócić wystąpienie podklasy ElementOperations. Należy zwrócić to samo wystąpienie przy każdym wywołaniu.
+    W klasie diagram Przesłoń,  <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> Aby zwrócić wystąpienie podklasy ElementOperations. Należy zwrócić to samo wystąpienie przy każdym wywołaniu.
 
    Dodaj ten kod w pliku niestandardowego kodu w projekcie DslPackage:
 
@@ -284,12 +284,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Zdefiniuj dwie metody w klasie ElementOperations:
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`Określa, czy element źródłowy może być przeciągany do kształtu docelowego, łącznika lub diagramu.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` Określa, czy element źródłowy może być przeciągany do kształtu docelowego, łącznika lub diagramu.
 
-- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`łączący element źródłowy z elementem docelowym.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` łączący element źródłowy z elementem docelowym.
 
 ### <a name="canmerge"></a>Anuluj scalanie ()
- `CanMerge()`jest wywoływana, aby określić opinię, która powinna zostać udzielona użytkownikowi, gdy wskaźnik myszy zostanie przesunięty na diagram. Parametry metody to element, nad którym wskaźnik myszy jest aktywowany, i dane dotyczące źródła, z którego wykonano operację przeciągania. Użytkownik może przeciągać z dowolnego miejsca na ekranie. W związku z tym obiekt źródłowy może być wielu różnych typów i może być serializowany w różnych formatach. Jeśli źródłem jest model DSL lub UML, parametr danych jest serializacji <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> . Operacje przeciągania, kopiowania i przybornika używają ElementGroupPrototypes do reprezentowania fragmentów modeli.
+ `CanMerge()` jest wywoływana, aby określić opinię, która powinna zostać udzielona użytkownikowi, gdy wskaźnik myszy zostanie przesunięty na diagram. Parametry metody to element, nad którym wskaźnik myszy jest aktywowany, i dane dotyczące źródła, z którego wykonano operację przeciągania. Użytkownik może przeciągać z dowolnego miejsca na ekranie. W związku z tym obiekt źródłowy może być wielu różnych typów i może być serializowany w różnych formatach. Jeśli źródłem jest model DSL lub UML, parametr danych jest serializacji <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> . Operacje przeciągania, kopiowania i przybornika używają ElementGroupPrototypes do reprezentowania fragmentów modeli.
 
  Prototyp grupy elementów może zawierać dowolną liczbę elementów i linków. Typy elementów mogą być identyfikowane przez ich identyfikatory GUID. Identyfikator GUID jest kształtu, który został przeciągnięty, a nie do bazowego elementu modelu. W poniższym przykładzie `CanMerge()` zwraca wartość true, jeśli kształt klasy z DIAGRAMU UML jest przeciągany na ten diagram.
 

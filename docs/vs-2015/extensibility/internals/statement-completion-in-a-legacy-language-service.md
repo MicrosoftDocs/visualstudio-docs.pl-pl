@@ -1,5 +1,5 @@
 ---
-title: Uzupełnianie instrukcji w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
+title: Uzupełnianie instrukcji w starszej wersji usługi językowej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408466"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64803872"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Uzupełnianie instrukcji w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Uzupełnianie instrukcji jest procesem, za pomocą którego usługa językowa ułatwiają zakończyć słowem kluczowym języka lub element, który zostały uruchomione, wpisz w edytorze podstawowych. W tym temacie omówiono, jak działa uzupełniania instrukcji i sposobie jego implementowania w usłudze języka.  
+Uzupełnianie instrukcji to proces, za pomocą którego usługa języka ułatwia użytkownikom zakończenie słowa kluczowego języka lub elementu, który rozpoczął pisanie w edytorze podstawowym. W tym temacie opisano, jak działa uzupełnianie instrukcji i jak wdrożyć ją w usłudze językowej.  
   
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej na temat nowych sposobem realizowania uzupełniania instrukcji, zobacz [instruktażu: Wyświetlanie uzupełniania instrukcji](../../extensibility/walkthrough-displaying-statement-completion.md).  
+ Starsze usługi językowe są implementowane w ramach pakietu VSPackage, ale nowszym sposobem implementacji funkcji usługi językowej jest korzystanie z rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji uzupełniania instrukcji, zobacz [Przewodnik: wyświetlanie uzupełniania instrukcji](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
-> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
+> Zalecamy rozpoczęcie korzystania z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i pozwala korzystać z nowych funkcji edytora.  
   
-## <a name="implementing-statement-completion"></a>Implementowanie uzupełnianie instrukcji  
- W edytorze podstawowych uzupełniania instrukcji aktywuje specjalny interfejs użytkownika, który interaktywnie pomaga łatwo i szybko napisać kod. Uzupełnianie instrukcji pomaga, wyświetlając odpowiednie obiekty lub klasy, gdy są one potrzebne, co pozwala uniknąć, trzeba pamiętać określone elementy lub do wyszukania w temacie pomocy odwołania.  
+## <a name="implementing-statement-completion"></a>Implementowanie uzupełniania instrukcji  
+ W edytorze podstawowym, uzupełnianie instrukcji aktywuje specjalny interfejs użytkownika, który interaktywnie ułatwia łatwiejsze i szybkie pisanie kodu. Uzupełnianie instrukcji ułatwia wyświetlanie odpowiednich obiektów lub klas, gdy są potrzebne, co pozwala uniknąć konieczności zapamiętywania określonych elementów lub konieczności ich wyszukiwania w temacie pomocy.  
   
- Aby zaimplementować uzupełniania instrukcji, język musi mieć wyzwalacz uzupełniania instrukcji, można przeanalizować. Na przykład [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] używa operatora kropki (.), podczas gdy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] używa strzałka (->) — operator. Usługa języka można użyć więcej niż jeden wyzwalacz do zainicjowania uzupełniania instrukcji. Te wyzwalacze są programowane w filtrze polecenia.  
+ Aby zaimplementować uzupełnianie instrukcji, język musi mieć wyzwalacz uzupełniania instrukcji, który można przeanalizować. Na przykład [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] używa operatora kropki (.), podczas gdy [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] używa operatora strzałki (->). Usługa języka może używać więcej niż jednego wyzwalacza, aby inicjować uzupełnianie instrukcji. Te wyzwalacze są zaprogramowane w filtrze poleceń.  
   
-## <a name="command-filters-and-triggers"></a>Polecenie filtrów i wyzwalaczy  
- Polecenie Filtry przechwycić wystąpień wyzwalacza lub wyzwalaczy. Aby dodać filtr polecenia w widoku, należy zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs i dołączyć go do widoku przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metody. Można użyć tego samego filtru polecenia (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) dla wszystkich aspektów języka usługi, takie jak uzupełnianie składni, znaczniki błędów i porady dotyczące metody. Aby uzyskać więcej informacji, zobacz [poleceń usługi języka Legacy przechwytuje](../../extensibility/internals/intercepting-legacy-language-service-commands.md).  
+## <a name="command-filters-and-triggers"></a>Filtry poleceń i wyzwalacze  
+ Filtry poleceń przechwytuje wystąpienia wyzwalacza lub wyzwalacze. Aby dodać filtr polecenia do widoku, zaimplementuj <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs i dołącz go do widoku przez wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metody. Można użyć tego samego filtru poleceń ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ) dla wszystkich aspektów usługi językowej, takich jak uzupełnianie instrukcji, znaczniki błędów i wskazówki dotyczące metod. Aby uzyskać więcej informacji, zobacz [przechwytywanie starszych poleceń usługi językowej](../../extensibility/internals/intercepting-legacy-language-service-commands.md).  
   
- Po wprowadzeniu wyzwalacz w edytorze — w szczególności buforu tekstu — usługi języka następnie wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody. Powoduje to wyświetlenie interfejsu użytkownika, aby użytkownik może wybrać spośród kandydatów uzupełnianie instrukcji w edytorze. Ta metoda wymaga implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> i <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> flagi jako parametry. Zostanie wyświetlona lista elementów uzupełniania przewijania pola listy. Jako użytkownik będzie nadal występował, wpisując, wybór w obrębie pola listy jest zaktualizowana w celu odzwierciedlenia wpisany najlepiej dopasowany do ostatnich znaków. Podstawowy edytor implementuje interfejs użytkownika uzupełniania instrukcji, ale usługa językowa musi implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfejsu, aby zdefiniować zestaw Release candidate elementy uzupełniania instrukcji.  
+ Po wprowadzeniu wyzwalacza w edytorze — w odróżnieniu od buforu tekstu — usługa językowa następnie wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodę. Powoduje to wyświetlenie przez Edytor interfejsu użytkownika, dzięki czemu użytkownik może wybrać spośród kandydatów uzupełniania instrukcji. Ta metoda wymaga implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> i <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> flag jako parametrów. Lista elementów ukończenia zostanie wyświetlona w przewijanym polu listy. Gdy użytkownik kontynuuje wpisywanie, wybór w polu listy zostanie zaktualizowany w celu odzwierciedlenia najbardziej pasujących do ostatnio wpisanych znaków. Podstawowy edytor implementuje interfejs użytkownika do uzupełniania instrukcji, ale usługa języka musi implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfejs, aby zdefiniować zestaw elementów uzupełniających kandydatów dla instrukcji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przechwytywanie poleceń starszej wersji usługi językowej](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: Przykładowy implementacji zmieniania wartości | Dokumentacja firmy Microsoft
+title: Przykładowa implementacja zmiany wartości | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,35 +12,35 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436684"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64806654"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Przykład implementacji zmieniania wartości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> W programie Visual Studio 2015 ten sposób implementowania oceniania wyrażeń jest przestarzały. Aby uzyskać informacje na temat implementowania oceniania wyrażeń CLR, zobacz [oszacowania wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykłady ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Każdy lokalny wyświetlane w **lokalne** okno ma [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt skojarzony z nim. To `IDebugProperty2` obiekt zawiera nazwę, wartość i typ lokalnego. Gdy użytkownik zmienia wartość zmiennej lokalnej, Visual Studio wywołuje [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) można zaktualizować wartości elementu lokalnego w pamięci. W tym przykładzie lokalnej jest reprezentowany przez `CFieldProperty` klasę, która implementuje `IDebugProperty2` interfejsu.  
+ Wszystkie elementy lokalne wyświetlane w oknie **zmiennych lokalnych** mają skojarzony obiekt [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) . Ten `IDebugProperty2` obiekt zawiera nazwę, wartość i typ lokalnego. Gdy użytkownik zmienia wartość lokalnego, program Visual Studio wywołuje [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) , aby zaktualizować wartość lokalną w pamięci. W tym przykładzie lokalna jest reprezentowana przez `CFieldProperty` klasę, która implementuje `IDebugProperty2` interfejs.  
   
 > [!NOTE]
-> Dla **Obejrzyj** i **QuickWatch** wyrażeń, wartości zmieniany jest reprezentowany przez `CValueProperty` klasy w przykładzie MyCEE. Jednak implementacja `IDebugProperty2::SetValueAsString` jest taka sama, jak pokazano poniżej.  
+> Dla wyrażeń **Watch** i **QuickWatch** wartość zmieniana jest reprezentowana przez `CValueProperty` klasę w przykładowym mycee. Jednak implementacja programu jest taka `IDebugProperty2::SetValueAsString` sama jak pokazano tutaj.  
   
- Ta implementacja `IDebugProperty2::SetValueAsString` wykonuje następujące zadania:  
+ Ta implementacja programu `IDebugProperty2::SetValueAsString` wykonuje następujące zadania:  
   
-1. Oblicza wyrażenie do uzyskiwania wartości.  
+1. Oblicza wyrażenie, aby utworzyć wartość.  
   
-2. Wiąże skojarzonego [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiektu do jego lokalizacji pamięci i generować [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.  
+2. Wiąże skojarzony obiekt [IDebugField](../../extensibility/debugger/reference/idebugfield.md) z jego lokalizacją pamięci i tworzy obiekt [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) .  
   
 3. Konwertuje wartość na serię bajtów.  
   
-4. Wywołania [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) do przechowywania bajtów w pamięci.  
+4. Wywołuje metodę [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) , aby przechowywać bajty w pamięci.  
   
 ## <a name="managed-code"></a>Kod zarządzany  
- Jest to implementacja `IDebugProperty2::SetValueAsString` w kodzie zarządzanym.  
+ Jest to implementacja programu `IDebugProperty2::SetValueAsString` w kodzie zarządzanym.  
   
 ```  
 [C#]  
@@ -226,7 +226,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Niezarządzany kod  
- Jest to implementacja `IDebugProperty2::SetValueAsString` w kodzie zarządzanym. Funkcja Pomocnika `FieldCoerceValueType` (nie pokazano) wymusza `VARIANT` określonego typu, a także przyspieszać się, że wartość jest jednym z typów `FieldSetValue` może obsłużyć.  
+ Jest to implementacja programu `IDebugProperty2::SetValueAsString` w kodzie zarządzanym. Funkcja pomocnika `FieldCoerceValueType` (niepokazywana) wymusza jako `VARIANT` określony typ i sprawdza, czy wartość jest jednym z typów `FieldSetValue` .  
   
 ```  
 [C++]  
@@ -425,5 +425,5 @@ HRESULT FieldSetValue(
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zmienianie wartości zmiennej lokalnej](../../extensibility/debugger/changing-the-value-of-a-local.md)   
+ [Zmiana wartości elementu lokalnego](../../extensibility/debugger/changing-the-value-of-a-local.md)   
  [Kontekst oceny](../../extensibility/debugger/evaluation-context.md)

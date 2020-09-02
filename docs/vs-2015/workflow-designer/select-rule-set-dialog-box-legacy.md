@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c6cc7a101a854611228b1a3bc38f63fffff45c1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846171"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Wybieranie zestawu reguł, okno dialogowe (starsza wersja)
-W tym temacie opisano sposób użycia okna dialogowego **Wybieranie zestawu reguł** w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano sposób użycia okna dialogowego **Wybieranie zestawu reguł** w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  Okno dialogowe **Wybieranie zestawu reguł** służy do wybierania zestawu reguł, którego można użyć w przypadku działania [zasad](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) . Aby uzyskać informacje o tym, jak uzyskać dostęp do okna dialogowego **Wybieranie zestawu reguł** , zobacz [How to: Create a Policy Rule Set (starsza wersja)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
@@ -32,14 +32,14 @@ W tym temacie opisano sposób użycia okna dialogowego **Wybieranie zestawu regu
 |**Nowy...**|Kliknij, aby otworzyć okno [dialogowe Edytor zestawu reguł (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) , aby utworzyć nowy warunek reguły.|
 |**Edytuj...**|Kliknij, aby otworzyć okno [dialogowe Edytor zestawu reguł (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) , aby edytować wybrany warunek reguły.|
 |**Zmień nazwę...**|Kliknij, aby otworzyć okno dialogowe używane do zmiany nazwy wybranego zestawu reguł.|
-|**Delete**|Kliknij, aby usunąć wybrany zestaw reguł.|
+|**Usuń**|Kliknij, aby usunąć wybrany zestaw reguł.|
 |**Podgląd zestawu reguł**|Wyświetla reguły w wybranym zestawie reguł.|
 |**OK**|Kliknij, aby przypisać wybrany zestaw reguł do działania **Policy** .|
 
  Aby uzyskać więcej informacji na temat tworzenia i edytowania zestawów reguł, zobacz [okno dialogowe Edytor zestawu reguł (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
-> Edytor reguł starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)] używany do kierowania [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] nie obsługuje wielodostępności.
+> Edytor reguł dla starszej wersji [!INCLUDE[wfd2](../includes/wfd2-md.md)] , który jest używany jako obiekt docelowy [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub nie [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] obsługuje wielodostępności.
 
  Aby uzyskać więcej informacji o warunkach, zobacz [Używanie warunków w przepływach pracy](https://msdn2.microsoft.com/library/bb628447.aspx).
 

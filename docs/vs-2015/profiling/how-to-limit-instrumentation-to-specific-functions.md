@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ograniczanie Instrumentacji do określonych funkcji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: ograniczanie instrumentacji do określonych funkcji | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,63 +12,63 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432652"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64788035"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Instrukcje: Ograniczenie Instrumentacji do określonych funkcji
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Porady: ograniczanie instrumentacji do określonych funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną funkcję, ustawiając opcje w **zaawansowane** strony **sesji wydajności** ani kierowania stron właściwości binarnych:  
+Można ograniczyć instrumentację i zbieranie danych do co najmniej jednej funkcji przez ustawienie opcji na stronie **Zaawansowane** **sesji wydajności** lub docelowej strony właściwości binarnych:  
   
-- Jeśli określisz funkcje na stronie właściwości sesji wydajności, tylko te funkcje są instrumentowane w instrumentowanych danych binarnych na sesji.  
+- Jeśli określisz funkcje na stronie właściwości sesji wydajności, tylko te funkcje są Instrumentacją we wszystkich plikach binarnych z instrumentacją sesji.  
   
-- Jeśli określisz funkcje na stronie właściwości obiektu docelowego binarne tylko funkcje, które są w tym, że są instrumentowane określonego pliku binarnego. Funkcje w innych plików binarnych wydajności działają w zwykły sposób.  
+- Jeśli określisz funkcje na stronie właściwości w docelowym pliku binarnym, tylko te funkcje, które znajdują się w tym konkretnym pliku binarnym, są Instrumentacją. Funkcje w innych plikach binarnych wydajności są przystosowane w zwykły sposób.  
   
-  Ograniczenie zbierania danych w ten sposób jest obsługiwana tylko wtedy, gdy metoda profilowania Instrumentacja jest zaznaczone.  
+  Ograniczanie zbierania danych w ten sposób jest obsługiwane tylko wtedy, gdy wybrano metodę profilowania Instrumentacji.  
   
 > [!NOTE]
-> Można również użyć **zaawansowane** strony **sesji wydajności** strony właściwości można ustawić inne opcje, które są dostępne dla narzędzi profilowania [VSInstr](../profiling/vsinstr.md) wiersza polecenia Narzędzie do Instrumentacji.  
+> Możesz również użyć strony **Zaawansowane** strony właściwości **sesji wydajności** , aby ustawić inne opcje dostępne dla narzędzia instrumentacja wiersza polecenia narzędzia profilowania [VSInstr](../profiling/vsinstr.md) .  
   
-### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>Ograniczenie Instrumentacji do określonych funkcji w ramach sesji wydajności  
+### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>Aby ograniczyć instrumentację do określonych funkcji w sesji wydajności  
   
-1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji, a następnie kliknij przycisk **właściwości**.  
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy nazwę sesji, a następnie kliknij polecenie **Właściwości**.  
   
-    **Stron właściwości** zostanie wyświetlone okno dialogowe.  
+    Wyświetli się okno dialogowe **Strony właściwości**.  
   
-2. Na **stron właściwości** okno dialogowe, kliknij przycisk **zaawansowane**.  
+2. Na **stronie właściwości** okno dialogowe, kliknij przycisk **Zaawansowane**.  
   
-3. W **dodatkowych opcji Instrumentacji** tekst pola, użyj następującej składni o wpisanie nazwy funkcji, które mają być Instrumentacji:  
+3. W polu tekstowym **dodatkowe opcje Instrumentacji** wpisz nazwę funkcji, które chcesz przystosować, używając następującej składni:  
   
-    **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
+    **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`  
   
-    `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.  
-  
-   > [!NOTE]
-   > Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
-  
-### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Ograniczenie Instrumentacji do określonych funkcji w pliku binarnym  
-  
-1. W **Eksplorator wydajności**, zlokalizuj nazwa pliku binarnego w **cele** węzła sesji wydajności.  
-  
-2. Kliknij prawym przyciskiem myszy nazwa pliku binarnego, a następnie kliknij przycisk **właściwości**.  
-  
-    **Stron właściwości** zostanie wyświetlone okno dialogowe.  
-  
-3. Na **stron właściwości** okno dialogowe, kliknij przycisk **zaawansowane**.  
-  
-4. W **dodatkowych opcji Instrumentacji** tekst pola, użyj następującej składni o wpisanie nazwy funkcji, które mają być Instrumentacji:  
-  
-    **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
-  
-    `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.  
+    `FuncSpec` jest przestrzenią nazw i nazwą funkcji. Ma format `Namespace` **::** `FunctionName` . Użyj średnika do rozdzielenia wielu funkcji. Użyj gwiazdki ( \* ), aby określić symbol wieloznaczny dla co najmniej jednego znaku. Na przykład **/include: MyNS:: \\ *** określa wszystkie funkcje w przestrzeni nazw myNs.  
   
    > [!NOTE]
-   > Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
+   > Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacji narzędzia profilowania (zazwyczaj w katalogu \Team Tools\Performance Tools w [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalogu instalacji), a następnie wpisz **VSInstr/DumpFuncs**  
+  
+### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Aby ograniczyć instrumentację do określonych funkcji w pliku binarnym  
+  
+1. W **Eksplorator wydajności**Zlokalizuj nazwę binarną w węźle **targets** sesji wydajności.  
+  
+2. Kliknij prawym przyciskiem myszy nazwę binarną, a następnie kliknij polecenie **Właściwości**.  
+  
+    Wyświetli się okno dialogowe **Strony właściwości**.  
+  
+3. Na **stronie właściwości** okno dialogowe, kliknij przycisk **Zaawansowane**.  
+  
+4. W polu tekstowym **dodatkowe opcje Instrumentacji** wpisz nazwę funkcji, które chcesz przystosować, używając następującej składni:  
+  
+    **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`  
+  
+    `FuncSpec` jest przestrzenią nazw i nazwą funkcji. Ma format `Namespace` **::** `FunctionName` . Użyj średnika do rozdzielenia wielu funkcji. Użyj gwiazdki ( \* ), aby określić symbol wieloznaczny dla co najmniej jednego znaku. Na przykład **/include: MyNS:: \\ *** określa wszystkie funkcje w przestrzeni nazw myNs.  
+  
+   > [!NOTE]
+   > Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacji narzędzia profilowania (zazwyczaj w katalogu \Team Tools\Performance Tools w [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalogu instalacji), a następnie wpisz **VSInstr/DumpFuncs**  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   
- [Instrukcje: Ograniczenie Instrumentacji do określonych bibliotek DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [Instrukcje: ograniczanie instrumentacji do określonych bibliotek DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [Instrukcje: Określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)

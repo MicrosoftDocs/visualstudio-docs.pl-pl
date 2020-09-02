@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670310"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio — wskazówki dotyczące produktywności
@@ -35,10 +35,10 @@ Postępując zgodnie z tymi wskazówkami, można szybciej i wydajnie pisać, naw
 
  [Zarządzanie plikami, paskami narzędzi i oknami](../ide/productivity-tips-for-visual-studio.md#BKMK_Managing)
 
-## <a name="BKMK_Access"></a>Uzyskiwanie dostępu Visual Studio Tools
+## <a name="accessing-visual-studio-tools"></a><a name="BKMK_Access"></a> Uzyskiwanie dostępu Visual Studio Tools
  Można łatwiej uzyskać dostęp do wiersz polecenia dla deweloperów lub innego narzędzia, jeśli przypinasz je do ekranu startowego lub na pasku zadań.
 
-1. Na ekranie startowym wprowadź `Visual Studio Tools`, a następnie wybierz klawisz ENTER.
+1. Na ekranie startowym wpisz `Visual Studio Tools` , a następnie wybierz klawisz ENTER.
 
 2. W **Eksploratorze plików**Otwórz menu skrótów dla elementu, który chcesz:
 
@@ -60,7 +60,7 @@ Postępując zgodnie z tymi wskazówkami, można szybciej i wydajnie pisać, naw
 
 3. Wybierz pozycję **Przypnij do menu Start** lub **Przypnij do paska zadań**.
 
-## <a name="BKMK_Writing"></a>Pisanie kodu
+## <a name="writing-code"></a><a name="BKMK_Writing"></a> Pisanie kodu
  Szybsze pisanie kodu przy użyciu następujących funkcji.
 
 - **Korzystaj z przykładowych aplikacji**. Można przyspieszyć tworzenie aplikacji, pobierając i instalując przykładowe aplikacje z galerii kodu MSDN. Możesz również poznać konkretną technikę lub koncepcję programowania, pobierając i eksplorowanie przykładowego pakietu dla tego obszaru.
@@ -93,7 +93,7 @@ Postępując zgodnie z tymi wskazówkami, można szybciej i wydajnie pisać, naw
 
      Aby otworzyć definicję w oknie podręcznym, zaznacz element, a następnie wybierz klawisze Alt + F12 lub Otwórz menu skrótów dla elementu, a następnie wybierz polecenie **Podgląd definicji**. Aby otworzyć definicję w osobnym oknie kodu, otwórz menu skrótów dla elementu, a następnie wybierz **Przejdź do definicji**.
 
-## <a name="BKMK_Navigating"></a>Nawigowanie w kodzie
+## <a name="navigating-within-your-code"></a><a name="BKMK_Navigating"></a> Nawigowanie w kodzie
  Możesz użyć różnych technik, aby szybciej znajdować i przechodzić do określonych lokalizacji w kodzie.
 
 - **Zakładki wierszy kodu**. Przy użyciu zakładek można szybko przechodzić do określonych wierszy kodu w pliku.
@@ -106,14 +106,14 @@ Postępując zgodnie z tymi wskazówkami, można szybciej i wydajnie pisać, naw
 
 - **Przeglądaj ogólną strukturę kodu**. W **Eksplorator rozwiązań**można wyszukiwać i przeglądać klasy oraz ich typy i członków w projektach. Możesz również wyszukiwać symbole, wyświetlać hierarchię wywołań metody, znajdować odwołania do symboli i wykonywać inne zadania. Jeśli wybierzesz element kodu w **Eksplorator rozwiązań**, skojarzony plik zostanie otwarty na karcie **podglądu** , a kursor zostanie przeniesiony do elementu w pliku. Aby uzyskać więcej informacji, zobacz [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md).
 
-## <a name="BKMK_Finding"></a>Szybsze znajdowanie elementów
+## <a name="finding-items-faster"></a><a name="BKMK_Finding"></a> Szybsze znajdowanie elementów
  Oprócz filtrowania zawartości okien narzędzi można przeszukiwać w środowisku IDE, aby wyświetlić tylko odpowiednie informacje dotyczące bieżącego zadania.
 
 - **Filtrowanie zawartości okien narzędzi**. Można wyszukiwać zawartość wielu okien narzędzi, takich jak **Przybornik**, okno **Właściwości** i **Eksplorator rozwiązań**, ale wyświetlane są tylko elementy, których nazwy zawierają określone znaki.
 
 - **Wyświetl tylko błędy, które chcesz rozwiązać**. Jeśli wybierzesz przycisk **Filtr** na pasku narzędzi **Lista błędów** , możesz zmniejszyć liczbę błędów, które pojawiają się w oknie **Lista błędów** . Można wyświetlić tylko błędy w plikach, które są otwarte w edytorze, tylko błędy w bieżącym pliku lub tylko błędy w bieżącym projekcie. Możesz również wyszukać w oknie Lista błędów, aby znaleźć konkretne błędy.
 
-- **Znajdowanie okien dialogowych, poleceń menu i opcji**. W oknie [dialogowym szybkie uruchamianie, środowisko, opcje](../ide/reference/quick-launch-environment-options-dialog-box.md) Wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład podczas wprowadzania `new project` są wyświetlane następujące opcje:
+- **Znajdowanie okien dialogowych, poleceń menu i opcji**. W oknie [dialogowym szybkie uruchamianie, środowisko, opcje](../ide/reference/quick-launch-environment-options-dialog-box.md) Wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład następujące opcje są wyświetlane, jeśli wprowadzisz `new project` :
 
      Rysunek 3. Lista wyników szybkiego uruchamiania dla `new project`
 
@@ -121,7 +121,7 @@ Postępując zgodnie z tymi wskazówkami, można szybciej i wydajnie pisać, naw
 
      Przycisk **szybkiego uruchamiania** wyświetla linki do okna dialogowego **Nowy projekt** , okno dialogowe **Dodaj nowy element** i strony projekty i rozwiązania w oknie dialogowym **Opcje** , między innymi. Wyniki szybkiego uruchamiania mogą również obejmować pliki projektu i okna narzędzi.
 
-## <a name="BKMK_Debugging"></a>Kod debugowania
+## <a name="debugging-code"></a><a name="BKMK_Debugging"></a> Kod debugowania
  Debugowanie może zużywać dużo czasu, ale poniższe porady mogą pomóc przyspieszyć proces.
 
 - **Przetestuj tę samą stronę, aplikację lub witrynę w różnych przeglądarkach**. Podczas debugowania kodu można łatwo przełączać się między zainstalowanymi przeglądarkami sieci Web, w tym [inspektorem stron (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209)bez konieczności otwierania okna dialogowego **przeglądanie za pomocą** . Możesz użyć listy **obiektów docelowych debugowania** , która znajduje się na **standardowym** pasku narzędzi obok przycisku **Rozpocznij debugowanie** , aby szybko sprawdzić, która przeglądarka jest używana podczas debugowania lub wyświetlania stron.
@@ -144,7 +144,7 @@ Postępując zgodnie z tymi wskazówkami, można szybciej i wydajnie pisać, naw
 
      Aby uzyskać więcej informacji na temat dodatkowych poleceń, zobacz [Visual Studio — Aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
 
-## <a name="BKMK_Managing"></a>Zarządzanie plikami, paskami narzędzi i oknami
+## <a name="managing-files-toolbars-and-windows"></a><a name="BKMK_Managing"></a> Zarządzanie plikami, paskami narzędzi i oknami
  W dowolnym momencie możesz pracować w wielu plikach kodu i poruszać się po kilku oknach narzędzi podczas opracowywania aplikacji. Możesz zachować swoją organizację, korzystając z poniższych wskazówek.
 
 - **Zachowaj rzadko używane pliki w edytorze**. Możesz przypinać pliki do lewej strony z karty, aby były widoczne niezależnie od tego, ile plików jest otwartych w edytorze.

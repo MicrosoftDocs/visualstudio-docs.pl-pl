@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Użyj funkcji Edytuj i Kontynuuj (C#) | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: korzystanie z edycji i kontynuowania (C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,39 +17,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384025"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64807209"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>Instrukcje: Korzystanie z funkcji Edytuj i kontynuuj [C#]
+# <a name="how-to-use-edit-and-continue-c"></a>Porady: korzystanie z opcji edytuj i kontynuuj (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Z funkcją Edytuj i Kontynuuj dla języka C# można wprowadzić zmiany do kodu w trybie przerwania podczas debugowania. Zmiany można stosować bez konieczności zatrzymania i ponownego uruchomienia sesji debugowania.  
+Za pomocą Edytuj i Kontynuuj dla języka C# można wprowadzać zmiany w kodzie w trybie przerwania podczas debugowania. Zmiany można zastosować bez konieczności zatrzymywania i ponownego uruchamiania sesji debugowania.  
   
- Edytuj i Kontynuuj jest wywoływane automatycznie, gdy możesz wprowadzać zmiany w trybie przerwania, a następnie wybierz wykonywania debugera polecenia, takie jak **Kontynuuj**, **kroku**, lub **Ustaw następną instrukcję**, lub oceń funkcję w oknie debugera.  
+ Funkcja Edytuj i Kontynuuj jest wywoływana automatycznie po wprowadzeniu zmian w trybie przerwania, a następnie wybraniu polecenia wykonania debugera, takiego jak **Kontynuuj**, **krok**lub **Ustaw następną instrukcję**lub Oceń funkcję w oknie debugera.  
   
 > [!NOTE]
-> Edytuj i Kontynuuj nie jest obsługiwane podczas debugowania platformy kompaktowej, zoptymalizowanego kodu mieszanego natywnego/zarządzanego lub kodu integracji środowiska uruchomieniowego (języka wspólnego CLR) wspólnego języka programu SQL Server. Jeśli spróbujesz zastosować zmiany kodu w jednym z tych scenariuszy, debuger wstawia się okno dialogowe wyjaśniające, że Edytuj i Kontynuuj nie jest obsługiwany.  
+> Polecenie Edytuj i Kontynuuj nie jest obsługiwane podczas debugowania środowiska kompaktowego, zoptymalizowanego kodu, kodu natywnego/zarządzanego lub SQL Server kodu integracji środowiska uruchomieniowego języka wspólnego (CLR). Jeśli spróbujesz zastosować zmiany kodu w jednym z tych scenariuszy, debuger umieści okno dialogowe objaśniające, że edycja i kontynuacja nie są obsługiwane.  
   
-### <a name="to-invoke-edit-and-continue-automatically"></a>Aby wywołać Edytuj i Kontynuuj automatycznie  
+### <a name="to-invoke-edit-and-continue-automatically"></a>Aby wywoływać automatyczne edytowanie i kontynuowanie  
   
-1. W trybie przerwy wprowadź zmiany do kodu źródłowego.  
+1. W trybie przerwania wprowadź zmiany w kodzie źródłowym.  
   
-2. Z **debugowania** menu, kliknij przycisk **Kontynuuj**, **kroku**, lub **Ustaw następną instrukcję** lub oceń funkcję w oknie debugera.  
+2. Z menu **Debuguj** kliknij polecenie **Kontynuuj**, **krok**lub **Ustaw następną instrukcję** lub Oceń funkcję w oknie debugera.  
   
-     Nowy kod jest skompilowany i debugowanie nadal stanowi nowy kod. Niektóre zmiany nie są obsługiwane przez Edytuj i Kontynuuj. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C#)](../debugger/supported-code-changes-csharp.md).  
+     Nowy kod jest kompilowany, a debugowanie kontynuuje działanie nowego kodu. Niektóre zmiany nie są obsługiwane przez program Edytuj i Kontynuuj. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C#)](../debugger/supported-code-changes-csharp.md).  
   
-### <a name="to-enabledisable-edit-and-continue"></a>Aby włączyć lub wyłączyć Edytuj i Kontynuuj  
+### <a name="to-enabledisable-edit-and-continue"></a>Aby włączyć/wyłączyć funkcję Edytuj i Kontynuuj  
   
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).  
   
-2. W **opcje** okna dialogowego rozwiń **debugowanie** , a następnie wybierz węzeł **Edytuj i Kontynuuj**.  
+2. W oknie dialogowym **Opcje** rozwiń węzeł **debugowanie** , a następnie wybierz pozycję **Edytuj i Kontynuuj**.  
   
-3. W **opcje** okno dialogowe **Edytuj i Kontynuuj** , zaznacz lub wyczyść **Włącz edytowanie i kontynuowanie** pole wyboru.  
+3. W oknie dialogowym **Opcje** **Edytuj i Kontynuuj** zaznacz lub wyczyść pole wyboru **Włącz edytowanie i kontynuowanie** .  
   
-     Ustawienie zostanie uwzględnione po ponownym uruchomieniu sesji debugowania.  
+     Ustawienie zacznie obowiązywać po ponownym uruchomieniu sesji debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i Kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   

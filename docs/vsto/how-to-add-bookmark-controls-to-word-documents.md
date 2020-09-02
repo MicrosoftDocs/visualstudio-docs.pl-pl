@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547254"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word
@@ -38,7 +38,7 @@ ms.locfileid: "85547254"
 
   Aby uzyskać więcej informacji o <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolkach, zobacz [kontrolka zakładka](../vsto/bookmark-control.md).
 
-## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a>Dodawanie kontrolek zakładek w czasie projektowania
+## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Dodawanie kontrolek zakładek w czasie projektowania
  Istnieje kilka sposobów dodawania <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do dokumentu w projekcie na poziomie dokumentu w czasie projektowania:
 
 - Z **przybornika**programu Visual Studio.
@@ -77,7 +77,7 @@ ms.locfileid: "85547254"
 
 3. W oknie dialogowym **zakładka** wpisz nazwę nowej zakładki, a następnie kliknij przycisk **Dodaj**.
 
-## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Dodawanie kontrolek zakładek w czasie wykonywania w projekcie na poziomie dokumentu
+## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Dodawanie kontrolek zakładek w czasie wykonywania w projekcie na poziomie dokumentu
  <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolki można dodawać programowo do dokumentu w czasie wykonywania przy użyciu metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości `ThisDocument` klasy w projekcie. Istnieją dwa przeciążenia metod, których można użyć do dodania <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki w następujący sposób:
 
 - Dodaj do <xref:Microsoft.Office.Tools.Word.Bookmark> określonego zakresu.
@@ -96,7 +96,7 @@ ms.locfileid: "85547254"
     > [!NOTE]
     > Jeśli chcesz utworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> formant z istniejącego <xref:Microsoft.Office.Interop.Word.Bookmark> , użyj <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> metody i przekaż istniejący <xref:Microsoft.Office.Interop.Word.Bookmark> .
 
-## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Dodawanie kontrolek zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO
+## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Dodawanie kontrolek zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO
  <xref:Microsoft.Office.Tools.Word.Bookmark>Kontrolki można dodawać programowo do dowolnego otwartego dokumentu w czasie wykonywania przy użyciu dodatku VSTO. W tym celu należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> element hosta, który jest oparty na otwartym dokumencie, a następnie użyć metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu hosta. Istnieją dwa przeciążenia metod, których można użyć do dodania <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki w następujący sposób:
 
 - Dodaj do <xref:Microsoft.Office.Tools.Word.Bookmark> określonego zakresu.

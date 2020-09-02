@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasAlloca | Microsoft Docs
+title: 'IDiaSymbol:: get_hasAlloca | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce10647737a34caf3f566ba4f50a84a51ea4c46f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64798012"
 ---
-# <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
+# <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera flagę określającą, czy funkcja zawiera wywołanie `alloca` (który służy do przydzielania pamięci na stosie).  
+Pobiera flagę, która określa, czy funkcja zawiera wywołanie `alloca` (które jest używane do przydzielania pamięci na stosie).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,20 +33,20 @@ Pobiera flagę określającą, czy funkcja zawiera wywołanie `alloca` (który s
   
 #### <a name="parameters"></a>Parametry  
  `pFlag`  
- [out] Zwraca `TRUE` Jeśli funkcja zawiera wywołanie `alloca`; w przeciwnym razie zwraca `FALSE`.  
+ określoną Zwraca `TRUE` czy funkcja zawiera wywołanie `alloca` ; w przeciwnym razie zwraca `FALSE` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
-> Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
+> Wartość zwracana przez `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   
 |Wymaganie|Opis|  
 |-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|DIA SDK w wersji 8.0|  
+|Nagłówki|dia2. h|  
+|Wersja:|DIA SDK v 8.0|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -14,17 +14,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d89c0dcad23a91ec6057311b9afde7d6d4702772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656754"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Komunikaty o błędach w Projektancie przepływu pracy
-W tym temacie opisano typy komunikatów o błędach, które można napotkać podczas pracy z [!INCLUDE[wfd1](../includes/wfd1-md.md)].
+W tym temacie opisano typy komunikatów o błędach, które można napotkać podczas pracy z programem [!INCLUDE[wfd1](../includes/wfd1-md.md)] .
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Sytuacje, w których wystąpią błędy w Projektant przepływu pracy
- Błędy w [!INCLUDE[wfd2](../includes/wfd2-md.md)] odbywają się w następujących sytuacjach:
+ Błędy [!INCLUDE[wfd2](../includes/wfd2-md.md)] występujące w następujących sytuacjach:
 
 1. Wyrażenie zawiera błąd.
 
@@ -34,12 +34,12 @@ W tym temacie opisano typy komunikatów o błędach, które można napotkać pod
 
 4. W pliku XAML występują błędy, które powodują niepowodzenie ładowania przepływu pracy.
 
-   Nieprawidłowe wyrażenia i niespełnione ograniczenia sprawdzania poprawności nie powodują skompilowania przepływu pracy. Kompilowanie przepływu pracy powiedzie się, ale w czasie wykonywania zostanie zgłoszone <xref:System.Activities.InvalidWorkflowException>. W przypadku wystąpienia błędów w pliku XAML kompilacja zakończy się niepowodzeniem.
+   Nieprawidłowe wyrażenia i niespełnione ograniczenia sprawdzania poprawności nie powodują skompilowania przepływu pracy. Kompilowanie przepływu pracy powiedzie się, ale <xref:System.Activities.InvalidWorkflowException> jest zgłaszane w czasie wykonywania. W przypadku wystąpienia błędów w pliku XAML kompilacja zakończy się niepowodzeniem.
 
-   W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], gdy przepływ pracy zostanie załadowany, jego błędy są wyświetlane w **Lista błędów**. Aby przejść do działania, które jest źródłem błędu, kliknij dwukrotnie błąd w **Lista błędów**.
+   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]W przypadku załadowania przepływu pracy jego błędy są wyświetlane w **Lista błędów**. Aby przejść do działania, które jest źródłem błędu, kliknij dwukrotnie błąd w **Lista błędów**.
 
 ### <a name="expression-errors"></a>Błędy wyrażeń
- Nieprawidłowe wyrażenie jest oznaczane czerwonym kółkiem o białym znaku wykrzyknika obok wyrażenia. Umieszczenie wskaźnika myszy na tej ikonie spowoduje wyświetlenie etykietki narzędzia opisującej Źródło błędu. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], kliknij wyrażenie, aby wyświetlić wiersz, który podkreśla Źródło błędu. Umieszczenie wskaźnika myszy nad tekstem w wierszu powoduje wyświetlenie etykietki narzędzia opisującej Źródło błędu.
+ Nieprawidłowe wyrażenie jest oznaczane czerwonym kółkiem o białym znaku wykrzyknika obok wyrażenia. Umieszczenie wskaźnika myszy na tej ikonie spowoduje wyświetlenie etykietki narzędzia opisującej Źródło błędu. W obszarze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , kliknij wyrażenie, aby wyświetlić wiersz, który podkreśla Źródło błędu. Umieszczenie wskaźnika myszy nad tekstem w wierszu powoduje wyświetlenie etykietki narzędzia opisującej Źródło błędu.
 
 ### <a name="activity-validation-errors"></a>Błędy walidacji działania
  Gdy nie spełniono ograniczeń walidacji działania, w prawym górnym rogu działania pojawi się czerwony okrąg z białym znakiem. Umieszczenie wskaźnika myszy na tej ikonie spowoduje wyświetlenie etykietki narzędzia opisującej Źródło błędu.

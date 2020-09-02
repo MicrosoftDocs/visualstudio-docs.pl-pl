@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219767"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Przewodnik dotyczący produktywności dla programu Visual Studio
@@ -20,7 +20,7 @@ Jeśli chcesz zaoszczędzić czas podczas pisania kodu, jesteś w odpowiednim mi
 
 Aby uzyskać informacje na temat przydatnych skrótów klawiaturowych, zobacz [Skróty dotyczące produktywności](../ide/productivity-shortcuts.md). Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpoczęcie pracy
 
 Oszczędź czas przeszukiwanie stosów za pomocą menu, szybko wyszukując potrzebne elementy, w tym polecenia, ustawienia, dokumentację i opcje instalacji. Zobacz skróty klawiaturowe dla poleceń znajdujących się w wynikach wyszukiwania w programie Visual Studio, dzięki czemu można je łatwo znają. 
 

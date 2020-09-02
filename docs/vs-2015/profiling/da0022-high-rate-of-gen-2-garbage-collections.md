@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0dcfa4d3522d88b58e971c0a4ff3f27649c2d21b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844627"
 ---
-# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Wysoki stopień wyrzucania elementów bezużytecznych Gen 2
+# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Duża częstotliwość odzyskiwania pamięci 2. generacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identyfikator reguły | DA0022 |  
-|Category|.NET Framework Usage|  
+| Kategoria |. Użycie platformy NET Framework |  
 | Metoda profilowania | Wszystkie |  
 | Komunikat | Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 2. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację. |  
 | Typ reguły | Ostrzeżenie |  
@@ -42,7 +42,7 @@ Identyfikator reguły | DA0022 |
  Ta reguła jest wyzwalana, gdy występuje zbyt wiele wyrzucania elementów bezużytecznych generacji 2. Dobrze działające .NET Framework aplikacje będą mieć więcej niż 5 razy więcej niż raz w przypadku kolekcji generacji 2. (Współczynnik 10X jest prawdopodobnie idealny).  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź **pamięć środowiska .NET clr\\liczba kolekcji gen 0** i\\liczba kolumn **kolekcji generacji 1 środowiska CLR** . Ustal, czy istnieją konkretne etapy wykonywania programu, w których wyrzucanie elementów bezużytecznych występuje częściej. Porównaj te wartości w kolumnie **% Time w usłudze GC** , aby sprawdzić, czy wzorzec alokacji pamięci zarządzanej powoduje nadmierne obciążenie zarządzania pamięcią.  
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź kolumny kolekcji ** \\ Gen 0 w programie .NET CLR** i w polu Liczba **danych programu .NET CLR \\ w obszarze kolekcje generacji 1** . Ustal, czy istnieją konkretne etapy wykonywania programu, w których wyrzucanie elementów bezużytecznych występuje częściej. Porównaj te wartości w kolumnie **% Time w usłudze GC** , aby sprawdzić, czy wzorzec alokacji pamięci zarządzanej powoduje nadmierne obciążenie zarządzania pamięcią.  
   
  W przypadku dużej części wyrzucania elementów bezużytecznych generacji 2 nie zawsze występuje problem. Może być zaprojektowana. Aplikacja, która alokuje duże struktury danych, które muszą pozostawać aktywne przez długie okresy podczas wykonywania, może wyzwolić tę regułę. Gdy taka aplikacja korzysta z pamięci, może być wymuszone wykonywanie częstych wyrzucania elementów bezużytecznych. Jeśli wyrzucanie elementów bezużytecznych generacji 0 i generacja 1 może odistnieć tylko niewielką ilość pamięci zarządzanej, planowane jest przetworzenie częściowej generacji 2 wyrzucania elementów bezużytecznych.  
   

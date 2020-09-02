@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dołączanie i odłączanie narzędzi wydajności do uruchomionego procesu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: dołączanie i odłączanie narzędzi wydajności do uruchomionych procesów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,61 +18,61 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443711"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64804963"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Instrukcje: Dołączanie i odłączanie narzędzi wydajności do uruchomionego procesu
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Instrukcje: dołączanie i odłączanie narzędzi wydajności do uruchomionych procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Program profilujący może służyć do dołączenia do lub odłączyć od uruchomionego procesu, aby ułatwić pobierania próbek i zbieranie danych wydajności. Ta metoda umożliwia profilować proces w przypadku, gdy chcesz uniknąć zbierania danych o czas ładowania aplikacji lub do monitorowania wydajności procesu po nim osiągnie określony stan.  
+Profiler może służyć do dołączania lub odłączania uruchomionego procesu, aby ułatwić próbkowanie i gromadzenie danych wydajności. Ta metoda służy do profilowania procesu, gdy chcesz uniknąć zbierania danych o czasie ładowania aplikacji lub monitorowania wydajności procesu po osiągnięciu określonego stanu.  
   
 > [!NOTE]
-> Poniższe kroki dotyczą Dołączanie i odłączanie procesów z poziomu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zintegrowane environmnent programowania (IDE). Aby uzyskać informacje o tym, jak używać narzędzi wiersza polecenia, zobacz [profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Aby uzyskać informacji dotyczących usług profilu, zobacz [usług profilowania](../profiling/command-line-profiling-of-services.md).  
+> Poniższe kroki mają zastosowanie do dołączania i odłączania procesów z poziomu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] zintegrowanego environmnent programistycznego (IDE). Aby uzyskać informacje o sposobach korzystania z narzędzi wiersza polecenia, zobacz [profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Aby uzyskać informacje na temat sposobu profilowania usług, zobacz [profilowanie usług](../profiling/command-line-profiling-of-services.md).  
   
- Procesy, które są dostępne dla profilu zależą od uprawnień dostępu użytkowników, które są ustawiane przez administratora komputera. Konto użytkownika może na przykład mają uprawnienie do żadnego z następujących czynności:  
+ Procesy dostępne do profilowania zależą od uprawnień dostępu użytkowników ustawionych przez administratora komputera. Konto użytkownika może na przykład mieć uprawnienia do następujących elementów:  
   
-- Zaawansowane funkcje, profilowania, gdy administrator ustawił sterownik i uruchomienie usługi.  
+- Zaawansowane funkcje profilowania, gdy administrator ustawił sterownik i usługę do uruchomienia.  
   
-- Przykład profilowanie tylko (użytkowników domeny).  
+- Przykładowe profilowania (Użytkownicy domeny).  
   
-- Odmowa dostępu do profilowania, aby wszyscy.  
+- Odmowa dostępu do profilowania do każdego.  
   
-  Aby uzyskać więcej informacji, zobacz [profilowania i Windows Vista zabezpieczeń](../profiling/profiling-and-windows-vista-security.md) i opcje administratora w [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Aby uzyskać więcej informacji, zobacz [profilowanie i zabezpieczenia systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md) oraz opcje administratora w programie [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Aby dołączyć do uruchomionego procesu  
   
-1. Na **analizy** menu wskaż **Profiler** a następnie kliknij przycisk **Attach/Detach**.  
+1. W menu **Analizuj** wskaż polecenie **Profiler** , a następnie kliknij pozycję **Dołącz/Odłącz**.  
   
-     \- lub —  
+     \- oraz  
   
-     W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **Attach/Detach**.  
+     W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij pozycję **Dołącz/Odłącz**.  
   
-     **Dołączyć Profiler do procesu** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Dołącz profiler do procesu** .  
   
-2. Kliknij nazwę, którą chcesz dołączyć do procesu.  
+2. Kliknij nazwę procesu, do którego chcesz dołączyć.  
   
-3. Kliknij przycisk **dołączyć**.  
+3. Kliknij przycisk **Dołącz**.  
   
-### <a name="to-detach-from-a-running-process"></a>Można odłączyć od uruchomionego procesu  
+### <a name="to-detach-from-a-running-process"></a>Aby odłączyć od uruchomionego procesu  
   
-1. Na **analizy** menu wskaż **Profiler** a następnie kliknij przycisk **Attach/Detach**.  
+1. W menu **Analizuj** wskaż polecenie **Profiler** , a następnie kliknij pozycję **Dołącz/Odłącz**.  
   
-     \- lub —  
+     \- oraz  
   
-     W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **Attach/Detach**.  
+     W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij pozycję **Dołącz/Odłącz**.  
   
-     **Dołączyć Profiler do procesu** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Dołącz profiler do procesu** .  
   
 2. Kliknij nazwę obrazu, z którego chcesz odłączyć.  
   
-3. Kliknij przycisk **odłączyć**.  
+3. Kliknij przycisk **Odłącz**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   
- [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)   
- [Instrukcje: Rozpoczęcia i zakończenia zbierania danych o wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)   
- [Profilowanie i bezpieczeństwo programu Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
+ [Przegląd sesji wydajności](../profiling/performance-session-overview.md)   
+ [Instrukcje: uruchamianie i kończenie zbierania danych wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Profilowanie i zabezpieczenia systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

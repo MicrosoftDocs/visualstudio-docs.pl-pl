@@ -1,5 +1,5 @@
 ---
-title: Aparat debugowania | Dokumentacja firmy Microsoft
+title: Aparat debugowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,35 +11,35 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e81a95cffebc9e26821b9cc6157627100343452
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383367"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64807713"
 ---
 # <a name="debug-engine"></a>Aparat debugowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aparat debugowania (DE) współpracuje z interpreter lub systemu operacyjnego w celu dostarczania usług debugowania, takie jak wykonanie kontroli, punkty przerwania i wyrażenie oceny. DE jest odpowiedzialny za monitorowanie stanu debugowanego programu. Aby to osiągnąć, DE używa, niezależnie od metody są dostępne obsługiwane środowisko uruchomieniowe, czy z procesora CPU lub za pomocą interfejsów API dostarczonych przez środowisko uruchomieniowe.  
+Aparat debugowania (DE) współpracuje z interpreterem lub systemem operacyjnym w celu zapewnienia usług debugowania, takich jak kontrola wykonywania, punkty przerwania i Obliczanie wyrażenia. DE jest odpowiedzialny za monitorowanie stanu debugowanego programu. Aby to zrobić, w środowisku uruchomieniowym są dostępne wszystkie metody, niezależnie od tego, czy procesor CPU, czy z interfejsów API dostarczonych przez środowisko uruchomieniowe.  
   
- Na przykład środowisko uruchomieniowe języka wspólnego (CLR) dostarcza mechanizmów monitorowania za pośrednictwem interfejsów ICorDebugXXX uruchomionego programu. DE, który obsługuje środowisko CLR używa odpowiednich interfejsów ICorDebugXXX do śledzenia kodu zarządzanego debugowanego. Następnie przesyła zmiany stanu do Menedżer debugowania sesji (SDM), która przekazuje informacje do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
-  
-> [!NOTE]
-> Aparat debugowania jest przeznaczony dla określonego środowiska uruchomieniowego, oznacza to, w którym program debugowany uruchomienia systemu. Środowisko CLR jest środowiskiem uruchomieniowym na potrzeby kodu zarządzanego, a środowisko wykonawcze systemu Win32 jest dla natywnych aplikacji Windows. Jeśli język, możesz utworzyć można wskazać jeden z tych dwóch środowisk uruchomieniowych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostarcza już aparaty debugowania konieczne. Wszystko, co trzeba implementować to ewaluatora wyrażeń.  
-  
-## <a name="debug-engine-operation"></a>Operacja aparatu debugowania  
- Usługi monitorowania są implementowane za pośrednictwem interfejsów DE i może spowodować, że debugowanie pakietu, do którego nastąpi przejście między różne tryby operacyjne. Aby uzyskać więcej informacji, zobacz [tryby operacyjne](../../extensibility/debugger/operational-modes.md). Zazwyczaj jest tylko jedna implementacja DE na środowisku uruchomieniowym.  
+ Na przykład mechanizmy środowiska uruchomieniowego języka wspólnego (CLR) do monitorowania działającego programu za pomocą interfejsów ICorDebugXXX. A DE, która obsługuje środowisko CLR używa odpowiednich interfejsów ICorDebugXXX do śledzenia debugowanego programu kodu zarządzanego. Następnie komunikuje wszelkie zmiany stanu z menedżerem debugowania sesji (SDM), który przekazuje takie informacje do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
 > [!NOTE]
-> Istnieją osobne implementacje DE języka Transact-SQL i [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript i [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] udostępniać pojedynczy DE.  
+> Aparat debugowania jest przeznaczony dla określonego środowiska uruchomieniowego, czyli systemu, w którym jest uruchamiany debugowany program. CLR to środowisko uruchomieniowe dla kodu zarządzanego, a środowisko uruchomieniowe Win32 jest przeznaczone dla natywnych aplikacji systemu Windows. Jeśli tworzony język może być przeznaczony dla jednego z tych dwóch środowisk uruchomieniowych, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] udostępnia już niezbędne aparaty debugowania. Wszystko, co musisz zaimplementować, to ewaluatora wyrażeń.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowanie umożliwia debugowanie silników na jeden z dwóch sposobów: w tym samym procesie co [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powłoki lub w tym samym procesie co program docelowy debugowania. Drugim formularzu występuje przeważnie debugowanego procesu jest faktycznie skrypt uruchomiony w ramach tłumacza, gdy aparat debugowania musi mieć wiedzy na temat obsługi interpreter, aby monitorować skryptu. Należy pamiętać, że w tym przypadku interpreter faktycznie środowisko uruchomieniowe aparaty debugowania są przeznaczone dla implementacji określonego środowiska uruchomieniowego. Ponadto implementacji pojedynczej DE może zostać podzielony granic procesu i maszynowo, (na przykład, zdalne debugowanie).  
+## <a name="debug-engine-operation"></a>Operacja debugowania aparatu  
+ Usługi monitorowania są implementowane przez wszystkie interfejsy i mogą spowodować przejście pakietu debugowania między różnymi trybami operacyjnymi. Aby uzyskać więcej informacji, zobacz [Tryby operacyjne](../../extensibility/debugger/operational-modes.md). Zazwyczaj istnieje tylko jedna cofnięta implementacja dla środowiska wykonawczego.  
   
- Udostępnia DE [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] profilowanie interfejsów. Cała komunikacja jest za pomocą modelu COM. Czy DE jest ładowany, poza procesem lub na innym komputerze, nie ma wpływu na komunikacji.  
+> [!NOTE]
+> Chociaż istnieją oddzielne niewdrożenia dla języka Transact-SQL i języka [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] VBScript i [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] udostępniania jednego.  
   
- DE współpracuje ze składnikiem ewaluatora wyrażeń umożliwiające DE dla tego określonego czasu wykonywania poznać składnię wyrażeń. DE współpracuje również z składnik obsługi symboli, uzyskiwać dostęp do informacji symbolicznego debugowania generowanych przez kompilator języka. Aby uzyskać więcej informacji, zobacz [Ewaluator wyrażeń](../../extensibility/debugger/expression-evaluator.md) i [dostawca symboli](../../extensibility/debugger/symbol-provider.md).  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugowanie włącza aparaty debugowania do uruchamiania jeden z dwóch sposobów: w tym samym procesie co [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powłoka lub w tym samym procesie co debugowany program docelowy. Ten ostatni formularz zwykle występuje, gdy debugowany proces jest w rzeczywistości skryptem uruchomionym w interpreterze, a aparat debugowania musi mieć Intimate wiedzę na temat interpretera, aby monitorować skrypt. Należy zauważyć, że w tym przypadku interpreter jest w rzeczywistości środowiskiem uruchomieniowym; Aparaty debugowania są przeznaczone dla określonych implementacji środowiska uruchomieniowego. Ponadto implementacja pojedynczego elementu DE może być podzielna między procesami i granicami maszyn (na przykład debugowaniem zdalnym).  
+  
+ Ujawnia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfejsy debugowania. Cała komunikacja odbywa się za poorednictwem modelu COM. Bez względu na to, czy element DE jest ładowany w procesie, poza procesem, czy też na innym komputerze, nie ma wpływu na komunikację składnika.  
+  
+ DE Works ze składnikiem ewaluatora wyrażeń, aby umożliwić wyznaczenie dla danego określonego czasu wykonywania, aby zrozumieć składnię wyrażeń. Ponadto współpracuje z składnikiem obsługi symboli, aby uzyskać dostęp do symbolicznych informacji debugowania generowanych przez kompilator języka. Aby uzyskać więcej informacji, zobacz [ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator.md) i [dostawca symboli](../../extensibility/debugger/symbol-provider.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Składniki debugera](../../extensibility/debugger/debugger-components.md)   
- [Ewaluator wyrażeń](../../extensibility/debugger/expression-evaluator.md)   
+ [Ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator.md)   
  [Dostawca symboli](../../extensibility/debugger/symbol-provider.md)
