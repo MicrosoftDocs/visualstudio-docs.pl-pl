@@ -1,5 +1,5 @@
 ---
-title: Idiasession::put_loadaddress — | Dokumentacja firmy Microsoft
+title: IDiaSession::p ut_loadAddress | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f697384874726904960fc5ba04733c3acfe1cd06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438465"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64778223"
 ---
-# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
+# <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ustawia adres obciążenia dla pliku wykonywalnego, który odpowiada symboli w tym magazynie symboli.  
+Ustawia adres ładowania pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,13 +35,13 @@ HRESULT put_loadAddress ( 
   
 #### <a name="parameters"></a>Parametry  
  `NewVal`  
- [in] Ładowanie adresów dla pliku wykonywalnego.  
+ podczas Adres ładowania pliku wykonywalnego.  
   
 ## <a name="remarks"></a>Uwagi  
- Symbol adresów wirtualnych (oceny luk w zabezpieczeniach) właściwości są obliczane przy użyciu wartości przez tę metodę. Wirtualne adresy nie są obliczane, jeśli ta właściwość ma wartość różna od zera.  
+ Właściwości adresu wirtualnego symbolu (VA) są obliczane przy użyciu wartości tej metody. Adresy wirtualne nie są obliczane, chyba że ta właściwość ma wartość różną od zera.  
   
 > [!NOTE]
-> Musisz wywołać tę metodę, gdy otrzymasz [idiasession —](../../debugger/debug-interface-access/idiasession.md) obiektu i przed rozpoczęciem korzystania z obiektu, jeśli musisz użyć dowolnej właściwości wirtualnego symboli.  
+> Należy wywołać tę metodę, gdy zostanie pobrany obiekt [IDiaSession](../../debugger/debug-interface-access/idiasession.md) i przed rozpoczęciem korzystania z obiektu, jeśli konieczne jest użycie dowolnych właściwości wirtualnych w symbolach.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

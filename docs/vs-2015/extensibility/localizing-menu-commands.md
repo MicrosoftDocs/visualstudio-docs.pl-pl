@@ -1,5 +1,5 @@
 ---
-title: Lokalizowanie poleceń Menu | Dokumentacja firmy Microsoft
+title: Lokalizowanie poleceń menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -16,39 +16,39 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c879072b55729e249b1aecd665d6f470f4138a75
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686136"
 ---
 # <a name="localizing-menu-commands"></a>Lokalizowanie poleceń menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlokalizowane .vsct — pliki i zlokalizowane pliki resx dla Twojego pakietu VSPackage, a następnie zaktualizować plików projektu wprowadzić zmiany.  
+Można zapewnić zlokalizowany tekst dla poleceń menu i pasków narzędzi, tworząc zlokalizowane pliki vsct i zlokalizowane pliki RESX dla pakietu VSPackage, a następnie aktualizując pliki projektu w celu uwzględnienia zmian.  
   
- Aby uzyskać informacje o sposobie lokalizowania środowisko instalacji, zobacz [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md).  
+ Informacje o sposobie lokalizowania środowiska instalacji znajdują się w temacie [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md).  
   
 ## <a name="localizing-command-names"></a>Lokalizowanie nazw poleceń  
- W pakietach VSPackage polecenia menu i przycisków na pasku narzędzi są definiowane w pliku vsct.  
+ W pakietów VSPackage, polecenia menu i przyciski paska narzędzi są zdefiniowane w pliku. vsct.  
   
-1. W **Eksploratora rozwiązań**, Zmień nazwę pliku vsct z *filename*vsct do *filename*.en US.vsct.  
+1. W **Eksplorator rozwiązań**Zmień nazwę pliku. vsct z *filename*. vsct na *filename*. en-us. vsct.  
   
-2. Utwórz kopię *filename*.en-US.vsct dla każdego zlokalizowanego języka.  
+2. Utwórz kopię *pliku filename*. en-us. vsct dla każdego zlokalizowanego języka.  
   
-    Nazwy poszczególnych kopii *filename*. *Ustawienia regionalne*vsct, gdzie *ustawień regionalnych* jest nazwą określonej kultury. Aby uzyskać listę wartości nazwy kultury, zobacz [identyfikatory ustawień regionalnych przypisane przez firmę Microsoft](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
+    Nazwij wszystkie nazwy *plików*kopii. *Locale*. vsct, gdzie *locale* jest określoną nazwą kultury. Aby zapoznać się z listą wartości nazw kultur, zobacz [identyfikatory ustawień regionalnych przypisanych przez firmę Microsoft](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
   
-    Te *filename*. *Ustawienia regionalne*.vsct — pliki będzie zawierać tekst menu zlokalizowanego pakietu.  
+    *Nazwa pliku*. Pliki *locale*. vsct będą zawierać zlokalizowany tekst menu pakietu.  
   
-3. Otwórz każdy *filename*. *Ustawienia regionalne*pliku vsct do zlokalizowania tekstu.  
+3. Otwórz każdą *nazwę pliku*. Plik *locale*. vsct do lokalizowania tekstu.  
   
-   1. Modyfikowanie [ButtonText](../extensibility/buttontext-element.md) element wartości odpowiednie dla danego języka.  
+   1. Zmodyfikuj wartości elementu [ButtonText](../extensibility/buttontext-element.md) zgodnie z potrzebami dla określonego języka.  
   
-   2. Jeśli podasz zlokalizowane ikony, należy zmodyfikować [mapy bitowej](../extensibility/bitmap-element.md) wartości, aby wskazywały pliki docelowe.  
+   2. Jeśli będziesz udostępniać zlokalizowane ikony, zmodyfikuj wartości [mapy bitowej](../extensibility/bitmap-element.md) , aby wskazywały na pliki docelowe.  
   
-      Poniższy przykład pokazuje języków angielskiego i hiszpańskiego tekst przycisku polecenia otworzyć okno narzędzia z rodziny drzewa Eksploratora.  
+      Poniższy przykład przedstawia tekst przycisku w języku angielskim i hiszpańskim, aby otworzyć okno narzędzia Eksploratora drzewa rodziny.  
   
-      [FamilyTree.en US.vsct]  
+      [FamilyTree. pl-US. vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -61,7 +61,7 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
    </Button>  
    ```  
   
-    [FamilyTree.es-ES.vsct]  
+    [FamilyTree.es-ES. vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -75,24 +75,24 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
   
    ```  
   
-## <a name="localizing-other-text-resources"></a>Lokalizowanie inne zasoby tekstu  
- Tekst zasobów innych niż nazw poleceń są zdefiniowane w plikach źródłowych (resx).  
+## <a name="localizing-other-text-resources"></a>Lokalizowanie innych zasobów tekstowych  
+ Zasoby tekstowe inne niż nazwy poleceń są zdefiniowane w plikach zasobów (. resx).  
   
-1. Zmień nazwę VSPackage.resx VSPackage.en US.resx.  
+1. Zmień nazwę pakietu VSPackage. resx na pakietu VSPackage. pl-US. resx.  
   
-2. Utwórz kopię pliku VSPackage.en US.resx dla każdego lokalizowanego języka.  
+2. Utwórz kopię pliku pakietu VSPackage. pl-US. resx dla każdego zlokalizowanego języka.  
   
-     Nazwa każdej kopii pakietu VSPackage. *Ustawień regionalnych*resx, gdzie *ustawień regionalnych* jest nazwą określonej kultury.  
+     Nazwij wszystkie kopie pakietu VSPackage. *Locale*. resx, gdzie *locale* jest określoną nazwą kultury.  
   
-3. Zmień nazwę Resources.en US.resx Resources.resx.  
+3. Zmień nazwę pliku Resources. resx na Resources. pl-US. resx.  
   
-4. Utwórz kopię pliku Resources.en US.resx dla każdego lokalizowanego języka.  
+4. Utwórz kopię pliku Resources. en-US. resx dla każdego zlokalizowanego języka.  
   
-     Nazwa każdej kopii zasobów. *Ustawień regionalnych*resx, gdzie *ustawień regionalnych* jest nazwą określonej kultury.  
+     Nazwij poszczególne zasoby kopiowania. *Locale*. resx, gdzie *locale* jest określoną nazwą kultury.  
   
-5. Otwórz każdy plik Resx, aby zmodyfikować wartości ciągu, zgodnie z potrzebami dla określonego języka i kultury. Poniższy przykład przedstawia definicję zlokalizowanych zasobów, na pasku tytułu okna narzędzi.  
+5. Otwórz każdy plik resx, aby zmodyfikować wartości ciągu odpowiednio do określonego języka i kultury. Poniższy przykład pokazuje zlokalizowaną definicję zasobu na pasku tytułu okna narzędzi.  
   
-     [Resources.en-US.resx]  
+     [Resources. pl-US. resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -100,7 +100,7 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
     </data>  
     ```  
   
-     [Resources.es-ES.resx]  
+     [Resources.es-ES. resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -109,10 +109,10 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
   
     ```  
   
-## <a name="incorporating-localized-resources-into-the-project"></a>Dołączanie zlokalizowane zasoby do projektu  
- Należy zmodyfikować plik assemblyinfo.cs i pliku projektu, aby dołączyć zlokalizowanych zasobów.  
+## <a name="incorporating-localized-resources-into-the-project"></a>Dołączanie zlokalizowanych zasobów do projektu  
+ Należy zmodyfikować plik assemblyinfo.cs i plik projektu, aby uwzględnić zlokalizowane zasoby.  
   
-1. Z **właściwości** w węźle **Eksploratora rozwiązań**, otwórz assemblyinfo.cs lub assemblyinfo.vb w edytorze.  
+1. W węźle **Właściwości** w **Eksplorator rozwiązań**Otwórz AssemblyInfo.cs lub AssemblyInfo. vb w edytorze.  
   
 2. Dodaj następujący wpis.  
   
@@ -120,15 +120,15 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
     ```  
   
-     Spowoduje to ustawienie US English jako domyślny język.  
+     Powoduje to ustawienie języka angielskiego na angielski jako język domyślny.  
   
 3. Zwolnij projekt.  
   
 4. Otwórz plik projektu w edytorze.  
   
-5. Znajdź `ItemGroup` element, który zawiera `EmbeddedResource` elementów.  
+5. Znajdź `ItemGroup` element, który zawiera `EmbeddedResource` elementy.  
   
-6. W `EmbeddedResource` Zastąp element, który wywołuje VSPackage.en-US.resx `ManifestResourceName` element z `LogicalName` elementu, ustaw `VSPackage.en-US.Resources`, wykonując następujące czynności.  
+6. W `EmbeddedResource` elemencie, który wywołuje pakietu VSPackage. en-us. resx, Zastąp `ManifestResourceName` element elementem `LogicalName` , ustaw na w `VSPackage.en-US.Resources` następujący sposób.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -137,9 +137,9 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
     </EmbeddedResource>  
     ```  
   
-7. Dla każdego lokalizowanego języka Skopiuj `EmbeddedResource` elementu VsPackage.en USA oraz zestaw **Include** atrybutu i **LogicalName** element Kopiuj do docelowych ustawień regionalnych, jak pokazano w poniższym przykład.  
+7. Dla każdego zlokalizowanego języka Skopiuj  `EmbeddedResource` element dla pakietu VSPackage. en-us i ustaw atrybut **include** i **LogicalName** elementu kopii na ustawienia regionalne docelowej, jak pokazano w poniższym przykładzie.  
   
-8. Dla każdego zlokalizowanego `VSCTCompile` elementu Dodawanie `ResourceName` element, który wskazuje na `Menus.ctmenu`, jak pokazano w poniższym przykładzie.  
+8. Do każdego zlokalizowanego `VSCTCompile` elementu Dodaj element wskazujący `ResourceName` `Menus.ctmenu` , jak pokazano w poniższym przykładzie.  
   
     ```xml  
     <ItemGroup>  
@@ -153,9 +153,9 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
   
 10. Skompiluj projekt.  
   
-     Spowoduje to utworzenie w głównym zestawie i zestawów zasobów dla każdego języka. Aby uzyskać informacji na temat lokalizowanie proces wdrażania, zobacz [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)  
+     Spowoduje to utworzenie zestawu głównego i zestawów zasobów dla każdego języka. Aby uzyskać informacje na temat lokalizowania procesu wdrażania, zobacz [lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
- [MenuCommands programu Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
+ [MenuCommands a OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
  [Globalizacja i lokalizacja](https://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)

@@ -12,10 +12,10 @@ ms.author: zorio
 author: zoeyr
 manager: jillfra
 ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169342"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Dokumentacja schematu pakietu języka VSIX 2,0
@@ -24,11 +24,11 @@ Schemat pakietu Language Pack VSIX zawiera zlokalizowane informacje o instalacji
 
 ## <a name="language-pack-schema"></a>Schemat pakietu językowego
 
-Element główny pliku pakietu językowego jest `<PackageLanguagePackManifest>`z atrybutem `Version`, który jest wersją formatu pakietu językowego. W tym artykule opisano wersję 2,0 formatu pakietu językowego, która jest określona w manifeście przez ustawienie atrybutu `Version` na `Version="2.0.0"`wartość. Element główny zawiera dokładnie jeden element podrzędny `<Metadata>`.
+Element główny pliku pakietu językowego ma `<PackageLanguagePackManifest>` atrybut `Version` , który jest wersją formatu pakietu językowego. W tym artykule opisano wersję 2,0 formatu pakietu językowego, która jest określona w manifeście przez ustawienie `Version` atrybutu na wartość `Version="2.0.0"` . Element główny zawiera dokładnie jeden element podrzędny `<Metadata>` .
 
 ### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest, element
 
-W elemencie `<PackageLanguagePackManifest>` musi istnieć następujący element:
+W `<PackageLanguagePackManifest>` elemencie musi istnieć następujący element:
 
 |Tytuł|Opis|
 |-----------|-----------------|
@@ -36,7 +36,7 @@ W elemencie `<PackageLanguagePackManifest>` musi istnieć następujący element:
 
 ### <a name="metadata-element"></a>Element metadanych
 
-W elemencie `<Metadata>` można mieć następujące elementy:
+W obrębie `<Metadata>` elementu można mieć następujące elementy:
 
 |Tytuł|Opis|
 |-----------|-----------------|

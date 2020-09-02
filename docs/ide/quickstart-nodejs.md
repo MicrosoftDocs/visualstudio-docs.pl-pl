@@ -1,6 +1,6 @@
 ---
-title: 'Szybki start: tworzenie pierwszej aplikacji Node.js za pomocą programu Visual Studio'
-description: W tym przewodniku Szybki start utworzysz aplikację Node.js w programie Visual Studio
+title: 'Szybki Start: Tworzenie pierwszej aplikacji Node.js przy użyciu programu Visual Studio'
+description: W tym przewodniku szybki start utworzysz aplikację Node.js w programie Visual Studio
 ms.date: 06/27/2018
 ms.technology: vs-javascript
 ms.topic: quickstart
@@ -14,105 +14,105 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: f716421da3b9f888dbb7656c55db6814de88332b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78235057"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki start: tworzenie pierwszej aplikacji Node.js za pomocą programu Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Tworzenie pierwszej aplikacji Node.js przy użyciu programu Visual Studio
 
-W tym 5-10 minut wprowadzenie do środowiska programistycznego zintegrowanego programu Visual Studio (IDE) utworzysz prostą aplikację sieci web Node.js.
+W tym 5-10 minutowym wprowadzeniu do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio utworzysz prostą aplikację sieci Web Node.js.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musi być zainstalowany program Visual Studio i obciążenie deweloperskie node.js.
+* Musisz mieć zainstalowany program Visual Studio i Node.js obciążenie programowaniem.
 
     ::: moniker range=">=vs-2019"
-    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/downloads)aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2019 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads),   Aby zainstalować ją bezpłatnie.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download),   Aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
-    Jeśli chcesz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...**, który otwiera Instalator programu Visual Studio. Wybierz obciążenie **deweloperne node.js,** a następnie wybierz pozycję **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia**  >  **Pobierz narzędzia i funkcje..**., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **Node.js obciążenie programowaniem** , a następnie wybierz **Modyfikuj**.
 
-    ![Obciążenie node.js w instalatorze usługi VS](../ide/media/quickstart-nodejs-workload.png)
+    ![Node.js obciążenie w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
-* Musi być zainstalowany środowisko uruchomieniowe Node.js.
+* Musisz mieć zainstalowane środowisko uruchomieniowe Node.js.
 
-    Jeśli nie masz go zainstalowanego, zaleca się zainstalowanie wersji LTS z witryny [node.js](https://nodejs.org/en/download/) w celu uzyskania najlepszej zgodności z zewnętrznymi strukturami i bibliotekami. Node.js jest przeznaczony dla architektur 32-bitowych i 64-bitowych. Narzędzia Node.js w programie Visual Studio, uwzględnione w obciążeniu Node.js, obsługują obie wersje. Wymagany jest tylko jeden, a instalator Node.js obsługuje tylko jeden instalowany jednocześnie.
+    Jeśli go nie zainstalowano, zalecamy zainstalowanie wersji LTS z witryny internetowej [Node.js](https://nodejs.org/en/download/) w celu uzyskania najlepszej zgodności z zewnętrznymi platformami i bibliotekami. Node.js jest oparta na architekturze 32-bitowej i 64-bitowej. Narzędzia Node.js w programie Visual Studio, zawarte w obciążeniu Node.js, obsługują obie wersje. Tylko jeden jest wymagany, a Instalator Node.js obsługuje tylko jeden instalowany w danym momencie.
     
-    Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt tak, aby odwoływał się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **Właściwości**i ustaw **ścieżkę Node.exe**). Można użyć instalacji globalnej node.js lub można określić ścieżkę do lokalnego interpretera w każdym z projektów Node.js. 
+    Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane Node.js środowiska uruchomieniowego. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **Właściwości**, a następnie ustaw ** ścieżkęNode.exe**). Można użyć globalnej instalacji Node.js lub można określić ścieżkę do lokalnego interpretera w każdym z projektów Node.js. 
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt aplikacji sieci web Node.js.
+Najpierw utworzysz projekt aplikacji sieci Web Node.js.
 
-1. Jeśli nie masz już zainstalowanego środowiska uruchomieniowego Node.js, zainstaluj wersję LTS z [witryny node.js.](https://nodejs.org/en/download/)
+1. Jeśli nie masz już zainstalowanego środowiska uruchomieniowego Node.js, Zainstaluj wersję LTS z witryny [Node.js](https://nodejs.org/en/download/) .
 
-    Aby uzyskać więcej informacji, zobacz wymagania wstępne.
+    Aby uzyskać więcej informacji, zobacz Wymagania wstępne.
 
 1. Otwórz program Visual Studio.
 
 1. Tworzenie nowego projektu.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij **klawisz Esc,** aby zamknąć okno początkowe. Wpisz **Ctrl + Q,** aby otworzyć pole wyszukiwania, wpisz **Node.js**, a następnie wybierz pozycję **Utwórz nowy projekt aplikacji sieci Web Pusty Node.js** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **Node.js**, a następnie wybierz pozycję **Utwórz nowe puste Node.js projekt aplikacji sieci Web** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node.js**. W środkowym okienku wybierz pozycję **Pusta aplikacja sieci Web Node.js**, a następnie wybierz przycisk **OK**.
+    Na górnym pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń opcję **JavaScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz pozycję **pusta Node.js aplikacja sieci Web**, a następnie wybierz przycisk **OK**.
     ::: moniker-end
-    Jeśli nie widzisz szablonu projektu **pustej aplikacji sieci Web Pusty Node.js,** należy dodać obciążenie **deweloperne node.js.** Aby uzyskać szczegółowe instrukcje, zobacz [Wymagania wstępne](#prerequisites).
+    Jeśli nie widzisz szablonu projektu **pustej Node.js aplikacji sieci Web** , musisz dodać **Node.js obciążenie programowaniem** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
-    Visual Studio tworzy i nowe rozwiązanie i otwiera projekt. *server.js* zostanie otwarty w edytorze w lewym okienku.
+    Program Visual Studio tworzy i nowe rozwiązanie i otwiera projekt. *server.js* otwiera się w edytorze w okienku po lewej stronie.
 
-## <a name="explore-the-ide"></a>Poznaj IDE
+## <a name="explore-the-ide"></a>Eksplorowanie środowiska IDE
 
-1. Zapoznaj się z **Eksploratorem rozwiązań** w prawym okienku.
+1. Zapoznaj się z **Eksplorator rozwiązań** w okienku po prawej stronie.
 
    ![Eksplorator rozwiązań](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-   - Wyróżniony pogrubioną czcionką jest projekt, przy użyciu nazwy nadany w oknie dialogowym **Nowy projekt.** Na dysku ten projekt jest reprezentowany przez plik *njsproj* w folderze projektu.
+   - Wyróżnione czcionką pogrubioną jest projektem, przy użyciu nazwy podanych w oknie dialogowym **Nowy projekt** . Na dysku ten projekt jest reprezentowany przez plik *. njsproj* w folderze projektu.
 
-   - Na najwyższym poziomie jest rozwiązanie, które domyślnie ma taką samą nazwę jak projekt. Rozwiązanie, reprezentowane przez plik *.sln* na dysku, jest kontenerem dla jednego lub więcej powiązanych projektów.
+   - Na najwyższym poziomie jest rozwiązaniem, które domyślnie ma taką samą nazwę jak projekt. Rozwiązanie reprezentowane przez plik *. sln* na dysku jest kontenerem dla co najmniej jednego powiązanego projektu.
 
-   - Węzeł npm pokazuje wszystkie zainstalowane pakiety npm. Można kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm za pomocą okna dialogowego.
+   - W węźle npm są wyświetlane wszystkie zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego.
 
-1. Jeśli chcesz zainstalować pakiety npm lub polecenia Node.js z wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Otwórz wiersz polecenia tutaj**.
+1. Jeśli chcesz zainstalować pakiety npm lub Node.js polecenia z wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Otwórz wiersz polecenia tutaj**.
 
    ![Wiersz polecenia Node.js](../ide/media/quickstart-nodejs-command-prompt.png)
 
-1. W pliku *server.js* w edytorze (lewe okienko) wybierz, `http.createServer` a następnie naciśnij klawisz **F12** lub wybierz polecenie Przejdź do **definicji** z menu kontekstu (kliknięcie prawym przyciskiem myszy). To polecenie prowadzi do definicji `createServer` funkcji w *index.d.ts*.
+1. W pliku *server.js* w edytorze (lewe okienko) wybierz, `http.createServer` a następnie naciśnij klawisz **F12** lub wybierz **Przejdź do definicji** z menu kontekstowego (kliknij prawym przyciskiem myszy). To polecenie umożliwia przejście do definicji `createServer` funkcji w *indeksie. d. TS*.
 
-   ![Przejdź do menu kontekstowego Definicja](../ide/media/quickstart-nodejs-gotodefinition.png)
+   ![Menu kontekstowe przejdź do definicji](../ide/media/quickstart-nodejs-gotodefinition.png)
 
-1. Wróciłem do *server.js*, a następnie umieścić kursor na końcu ciągu `res.end('Hello World\n');`w tym wierszu kodu, i zmodyfikować go tak, że wygląda tak:
+1. Pobrano z powrotem do *server.js*, następnie umieść kursor na końcu ciągu w tym wierszu kodu, `res.end('Hello World\n');` i zmodyfikuj go tak, aby wyglądał następująco:
 
     `res.end('Hello World\n' + res.connection.`
 
-    W przypadku `connection.`wpisywać program IntelliSense udostępnia opcje automatycznego wypełniania wpisu kodu.
+    Gdy wpiszesz `connection.` , technologia IntelliSense udostępnia opcje do autouzupełniania wpisu kodu.
 
-   ![Automatyczne uzupełnianie intellisense](../ide/media/quickstart-nodejs-intellisense.png)
+   ![Funkcja IntelliSense — Autouzupełnianie](../ide/media/quickstart-nodejs-intellisense.png)
 
-1. Wybierz **localPort**, `);` a następnie wpisz, aby zakończyć instrukcję, tak aby wyglądała następująco:
+1. Wybierz pozycję **localport**, a następnie wpisz, `);` Aby zakończyć instrukcję, tak aby wyglądała następująco:
 
     `res.end('Hello World\n' + res.connection.localPort);`
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Naciśnij **klawisze Ctrl**+**F5** (lub **Debugowanie > start bez debugowania),** aby uruchomić aplikację. Aplikacja zostanie otwarta w przeglądarce.
+1. Naciśnij klawisz **Ctrl** + **F5** (lub **Debuguj > Uruchom bez debugowania**), aby uruchomić aplikację. Aplikacja zostanie otwarta w przeglądarce.
 
-1. W oknie przeglądarki zobaczysz "Hello World" plus lokalny numer portu.
+1. W oknie przeglądarki zobaczysz ciąg "Hello world" oraz numer portu lokalnego.
 
 1. Zamknij przeglądarkę internetową.
 
-Gratulujemy ukończenia tego przewodnika Szybki start, w którym rozpoczęto korzystanie z ide programu Visual Studio i node.js. Jeśli chcesz zagłębić się w jego możliwości, kontynuuj samouczek w sekcji **Samouczki** spisu treści.
+Gratulujemy zakończenia tego przewodnika Szybki Start, w którym rozpoczęto pracę z programem Visual Studio IDE i Node.js. Jeśli chcesz lepiej podzielić się swoimi możliwościami, przejdź do samouczka w sekcji **samouczki** spisu treści.
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Wdrażanie aplikacji w usłudze aplikacji systemu Linux](../javascript/publish-nodejs-app-azure.md)
+> [Wdrażanie aplikacji w systemie Linux App Service](../javascript/publish-nodejs-app-azure.md)
 
 - [Samouczek dla Node.js i Express](../javascript/tutorial-nodejs.md)
-- [Samouczek dla Node.js i React](../javascript/tutorial-nodejs-with-react-and-jsx.md)
+- [Samouczek dotyczący Node.js i reagowania](../javascript/tutorial-nodejs-with-react-and-jsx.md)

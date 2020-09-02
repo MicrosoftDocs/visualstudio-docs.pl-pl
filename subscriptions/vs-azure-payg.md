@@ -8,10 +8,10 @@ ms.date: 04/15/2020
 ms.topic: how-to
 description: Dowiedz się, jak skonfigurować konto usługi Azure — płatność zgodnie z rzeczywistym użyciem.
 ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85902892"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Subskrypcje usługi Azure DevTest — płatność zgodnie z rzeczywistym użyciem
@@ -39,7 +39,7 @@ Współpracuj z zespołem w chmurze.  Twórz wiele funkcji tworzenia i testowani
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q--what-if-i-want-to-make-changes-to-this-subscription"></a>P: co zrobić, jeśli chcę wprowadzić zmiany w tej subskrypcji?
 Odp.: aby wprowadzić zmiany w ramach subskrypcji platformy Azure:
-1. Zaloguj się do [portalu Azure](https://portal.azure.com).
+1. Zaloguj się w witrynie [Azure Portal](https://portal.azure.com).
 2. Na liście w okienku po lewej stronie wybierz pozycję **Cost Management + rozliczenia**.
 3. Zostanie wyświetlona lista subskrypcji w polu **Moje subskrypcje** . Kliknij żądaną subskrypcję.
 4. Teraz możesz zarządzać subskrypcją lub anulować ją, zmienić jej nazwę, zmienić katalog lub przenieść własność rozliczeń.

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986061"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Wprowadzenie (Programowanie Office w Visual Studio)
@@ -27,13 +27,13 @@ ms.locfileid: "72986061"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Zawiera ogólne informacje dotyczące opracowywania rozwiązań pakietu Office w programie Visual Studio.
 
 - [Zmiany projektu pakietu Office przeznaczone dla .NET Framework 4 lub .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
- Zawiera opis nowego projektu pakietu Office, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszego, i listę istotnych zmian w kodzie w projektach pakietu Office migrowanych do [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszych.
+ Opisuje nowy projekt projektów pakietu Office, które są przeznaczone dla programu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszego, i wyświetla istotne zmiany w kodzie w projektach pakietu Office, które są migrowane do programu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszego.
 
 - [Funkcje dostępne według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)
 
@@ -74,7 +74,7 @@ ms.locfileid: "72986061"
 
 - [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
 
- Zawiera informacje dotyczące sposobu tworzenia projektu pakietu Office i konfigurowania projektu w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Zawiera informacje dotyczące sposobu tworzenia projektu pakietu Office i konfigurowania projektu w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 - [Opracowywanie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
 

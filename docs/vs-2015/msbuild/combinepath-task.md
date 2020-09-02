@@ -1,5 +1,5 @@
 ---
-title: Combinepath — zadanie | Dokumentacja firmy Microsoft
+title: CombinePath — — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,29 +18,29 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b97714fc707d8f9174a01dcc1fe7b3b59176de2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160385"
 ---
 # <a name="combinepath-task"></a>CombinePath — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Łączy określonych ścieżek w pojedynczą ścieżkę.  
+Łączy określone ścieżki w jedną ścieżkę.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
- W poniższej tabeli opisano parametry [combinepath — zadanie](../msbuild/combinepath-task.md).  
+ W poniższej tabeli opisano parametry [zadania CombinePath —](../msbuild/combinepath-task.md).  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`BasePath`|Wymagane `String` parametru.<br /><br /> Ścieżki podstawowej, aby połączyć się z innych ścieżek. Może być ścieżką względną, ścieżka bezwzględna lub pusty.|  
-|`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista poszczególnych ścieżek do łączenia z BasePath do utworzenia złożonej ścieżki. Ścieżki mogą być względna lub bezwzględna.|  
-|`CombinedPaths`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Połączone ścieżki, który jest tworzony przez to zadanie.|  
+|`BasePath`|Wymagany parametr interfejsu `String`.<br /><br /> Ścieżka podstawowa, która ma zostać połączona z innymi ścieżkami. Może być ścieżką względną, ścieżką bezwzględną lub pustą.|  
+|`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista poszczególnych ścieżek do połączenia z BasePath w celu utworzenia połączonej ścieżki. Ścieżki mogą być względne lub bezwzględne.|  
+|`CombinedPaths`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Połączona Ścieżka utworzona przez to zadanie.|  
   
 ## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zadania](../msbuild/msbuild-tasks.md)   
+ [Widoku](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

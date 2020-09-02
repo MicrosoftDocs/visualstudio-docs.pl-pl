@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie kanałami | Dokumenty firmy Microsoft
+title: Zarządzanie kanałami | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,52 +13,52 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64779244"
 ---
 # <a name="manage-channels"></a>Zarządzanie kanałami
-W **widoku wątków** w wizualizatorze współbieżności można zorganizować kanały dla procesu, dzięki czemu można zbadać określone wzorce. Możesz sortować kanały, przesuwać je w górę i w dół oraz ukrywać lub pokazywać.
+W **widoku wątki** w wizualizatorze współbieżności można organizować kanały dla procesu, aby umożliwić badanie określonych wzorców. Można sortować kanały, przenosić je w górę i w dół, a także ukrywać lub wyświetlać je.
 
 ## <a name="sort-by"></a>Sortuj według
- Za pomocą formantu Sortuj według można sortować wątki według różnych kryteriów na podstawie bieżącego poziomu powiększenia. Jest to szczególnie przydatne, gdy szukasz konkretnego wzorca. Można sortować według następujących kryteriów:
+ Można użyć Sortuj według kontrolki, aby posortować wątki według różnych kryteriów na podstawie bieżącego poziomu powiększenia. Jest to szczególnie przydatne w przypadku szukania określonego wzorca. Można sortować według kryteriów:
 
 |Kryteria|Definicja|
 |--------------|----------------|
-|Godzina rozpoczęcia|Sortuje wątki według ich czasów rozpoczęcia. Jest to domyślna kolejność sortowania.|
-|Godzina zakończenia|Sortuje wątki według ich czasów zakończenia.|
-|Wykonanie|Sortuje wątki według procentu czasu spędzonego w wykonaniu.|
-|Synchronizacja|Sortuje wątki według procentu czasu spędzonego w synchronizacji.|
-|WE/WY|Sortuje wątki według procentu czasu spędzonego w we/wy (odczytywanie i zapisywanie danych).|
-|Uśpij|Sortuje wątki według procentu czasu spędzonego we śnie.|
-|Stronicowanie|Sortuje wątki według procentu czasu spędzonego na stronicowaniu.|
-|Wywłaszczanie|Sortuje wątki według procentu czasu spędzonego w wywłaszczenia.|
-|Przetwarzanie interfejsu użytkownika|Sortuje wątki według procentu czasu spędzonego w przetwarzaniu interfejsu użytkownika.|
+|Godzina rozpoczęcia|Sortuje wątki według ich godzin rozpoczęcia. Jest to domyślna kolejność sortowania.|
+|Czas zakończenia|Sortuje wątki według ich czasów zakończenia.|
+|Wykonanie|Sortuje wątki według wartości procentowej czasu spędzonego na wykonywaniu.|
+|Synchronizacja|Sortuje wątki według procentu czasu poświęcanego na synchronizację.|
+|WE/WY|Sortuje wątki według wartości procentowej czasu spędzonego we/wy (odczytywanie i zapisywanie danych).|
+|Uśpij|Sortuje wątki według wartości procentowej czasu spędzonego w stanie uśpienia.|
+|Stronicowanie|Sortuje wątki według wartości procentowej czasu spędzonego w stronicowaniu.|
+|Wywłaszczania|Sortuje wątki według wartości procentowej czasu poświęcanego na przepełnienie.|
+|Przetwarzanie interfejsu użytkownika|Sortuje wątki według wartości procentowej czasu spędzonego w przetwarzaniu interfejsu użytkownika.|
 
-## <a name="move-selected-channel-up-or-down"></a>Przenoszenie zaznaczonego kanału w górę lub w dół
- Za pomocą tych kontrolek można przenieść kanał w górę lub w dół listy. Na przykład można umieścić powiązane kanały obok siebie, aby ułatwić badanie określonego wzorca lub relacji między wątkami.
+## <a name="move-selected-channel-up-or-down"></a>Przenieś wybrany kanał w górę lub w dół
+ Za pomocą tych formantów można przenieść kanał w górę lub w dół na liście. Na przykład można umieścić powiązane kanały obok siebie, aby ułatwić badanie określonego wzorca lub relacji między wątkami.
 
-## <a name="move-selected-channel-to-top-or-bottom"></a>Przenoszenie zaznaczonego kanału na górę lub na dół
- Można przenieść wybrane kanały na górę lub u dołu listy, aby zbadać określony wzorzec lub przenieść niektóre kanały z drogi podczas badania innych.
+## <a name="move-selected-channel-to-top-or-bottom"></a>Przenieś wybrany kanał do góry lub do dołu
+ Możesz przenieść wybrane kanały do góry lub u dołu listy, aby można było sprawdzić konkretny wzorzec lub przenieść niektóre kanały z metody podczas badania innych.
 
-## <a name="hide-selected-channels"></a>Ukrywanie zaznaczonych kanałów
- Wybierz tę kontrolę, jeśli chcesz ukryć kanały. Na przykład jeśli wątek jest 100 procent synchronizacji dla żywotności zarządzanego procesu, można go ukryć podczas analizowania innych wątków.
+## <a name="hide-selected-channels"></a>Ukryj wybrane kanały
+ Wybierz tę kontrolkę, jeśli chcesz ukryć kanały. Na przykład jeśli wątek jest 100 procent synchronizacji w okresie istnienia zarządzanego procesu, można go ukryć podczas analizowania innych wątków.
 
 > [!NOTE]
-> Ukrywanie wątku usuwa go również z czasu obliczania, który jest wyświetlany w aktywnej legendzie i w raportach profilu.
+> Ukrycie wątku powoduje również usunięcie go z czasu obliczeń, który jest wyświetlany w aktywnej legendzie i w raportach profilów.
 
 ## <a name="show-all-channels"></a>Pokaż wszystkie kanały
- Ten formant jest aktywny, gdy jeden lub więcej kanałów są ukryte. Jeśli wybierzesz go, wszystkie ukryte elementy są wyświetlane i są zwracane do obliczeń czasu.
+ Ten formant jest aktywny, gdy co najmniej jeden kanał jest ukryty. W przypadku wybrania tej opcji wszystkie ukryte elementy zostaną wyświetlone i zostaną zwrócone do obliczeń czasu.
 
-## <a name="move-markers-to-top"></a>Przenoszenie znaczników do góry
- Jeśli śledzenie zawiera zdarzenia znacznika, można użyć tego polecenia, aby przenieść kanały znaczników na górę osi czasu. Ich względna kolejność jest zachowywana.
+## <a name="move-markers-to-top"></a>Przesuń znaczniki na początek
+ Jeśli ślad zawiera zdarzenia znacznika, można użyć tego polecenia do przenoszenia kanałów znacznika w górę osi czasu. Ich kolejność względna jest zachowywana.
 
-## <a name="group-markers-by-thread"></a>Grupowanie znaczników według wątku
- Jeśli śledzenie zawiera zdarzenia znacznika, można użyć tego polecenia do grupowania kanałów znaczników pod wątkiem, który wygenerował zdarzenia znacznika.  Kanały dysków zostaną przeniesione na górę listy kanałów, a kanały GPU zostaną przeniesione na dół.
+## <a name="group-markers-by-thread"></a>Grupuj znaczniki według wątku
+ Jeśli ślad zawiera zdarzenia znacznika, można użyć tego polecenia do grupowania kanałów znacznika w wątku, który wygenerował zdarzenia znacznika.  Kanały dysku są przenoszone na górę listy kanałów, a kanały GPU są przenoszone na dół.
 
 ## <a name="see-also"></a>Zobacz też
-- [Kontrolka powiększenia (widok wątków)](../profiling/zoom-control-threads-view.md)
-- [Tryb pomiaru włączania/wyłączania](../profiling/measure-mode-on-off.md)
+- [Kontrolka powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)
+- [Włącz/Wyłącz tryb miary](../profiling/measure-mode-on-off.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

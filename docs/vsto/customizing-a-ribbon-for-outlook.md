@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2865bd89da3b59a24208e07739e8c56254959c88
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986103"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Dostosowywanie wstążki dla programu Outlook
@@ -36,19 +36,19 @@ ms.locfileid: "72986103"
 
  Jeśli używasz **wstążki (projektant graficzny)** , kliknij właściwość **wstążka** wstążki w oknie **Właściwości** , a następnie wybierz co najmniej jeden identyfikator wstążki z listy wartości.
 
- Do projektu można dodać więcej niż jedną Wstążkę. Jeśli więcej niż jedna wstążka ma identyfikator wstążki, Zastąp metodę `CreateRibbonExtensibilityObject` w klasie `ThisAddin` projektu, aby określić, która wstążka ma być wyświetlana w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md). Aby uzyskać więcej informacji na temat poszczególnych typów wstążki, zobacz artykuł techniczny [Dostosowywanie wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
+ Do projektu można dodać więcej niż jedną Wstążkę. Jeśli więcej niż jedna wstążka ma identyfikator wstążki, Zastąp `CreateRibbonExtensibilityObject` metodę w `ThisAddin` klasie projektu, aby określić, która wstążka ma być wyświetlana w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [Omówienie wstążki](../vsto/ribbon-overview.md). Aby uzyskać więcej informacji na temat poszczególnych typów wstążki, zobacz artykuł techniczny [Dostosowywanie wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Określ typ wstążki przy użyciu kodu XML wstążki
- Jeśli używasz elementu **wstążki (XML)** , sprawdź wartość parametru *ribbonID* w metodzie <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> i zwróć odpowiednią Wstążkę.
+ Jeśli używasz elementu **wstążki (XML)** , sprawdź wartość parametru *ribbonID* w <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metodzie i zwróć odpowiednią Wstążkę.
 
- Metoda <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. Parametr *ribbonID* jest ciągiem, który identyfikuje Eksploratora lub określony typ inspektora. Pełną listę możliwych wartości parametru *ribbonID* można znaleźć w artykule technicznym dotyczącym [dostosowywania wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
+ <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>Metoda jest generowana automatycznie przez program Visual Studio w pliku kodu wstążki. Parametr *ribbonID* jest ciągiem, który identyfikuje Eksploratora lub określony typ inspektora. Pełną listę możliwych wartości parametru *ribbonID* można znaleźć w artykule technicznym dotyczącym [dostosowywania wstążki w programie Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
- Poniższy przykład kodu demonstruje, jak wyświetlić Wstążkę niestandardową tylko w Inspektorze `Microsoft.Outlook.Mail.Compose`. Jest to Inspektor otwierający się, gdy użytkownik tworzy nową wiadomość e-mail. Wstążka do wyświetlenia jest określona w metodzie `GetResourceText()`, która jest generowana w klasie **wstążki** . Aby uzyskać więcej informacji na temat klasy **wstążki** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
+ Poniższy przykład kodu demonstruje, jak wyświetlić Wstążkę niestandardową tylko w `Microsoft.Outlook.Mail.Compose` Inspektorze. Jest to Inspektor otwierający się, gdy użytkownik tworzy nową wiadomość e-mail. Wstążka do wyświetlenia jest określona w `GetResourceText()` metodzie, która jest generowana w klasie **wstążki** . Aby uzyskać więcej informacji na temat klasy **wstążki** , zobacz [kod XML wstążki](../vsto/ribbon-xml.md).
 
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Omówienie wstążki](../vsto/ribbon-overview.md)
 - [Projektant wstążki](../vsto/ribbon-designer.md)

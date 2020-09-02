@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1a0d10dabdace7ef7ab3805a59b892548cf6556
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645520"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Porady: dodawanie diagramów klasy do projektu (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Do projektowania, edytowania i refaktoryzacji klas oraz innych typów Dodaj Diagram klas do Visual C# .net, Visual Basic .NET lub C++ Project. Aby wizualizować różne części kodu w projekcie, należy dodać wiele diagramów klas do projektu.
+Do projektowania, edytowania i refaktoryzacji klas i innych typów Dodaj Diagram klas do projektu Visual C# .NET, Visual Basic .NET lub C++. Aby wizualizować różne części kodu w projekcie, należy dodać wiele diagramów klas do projektu.
 
  Nie można tworzyć diagramów klas na podstawie projektów, które współużytkują kod w wielu aplikacjach. Aby utworzyć diagramy klas UML, zobacz [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
@@ -30,7 +30,7 @@ Do projektowania, edytowania i refaktoryzacji klas oraz innych typów Dodaj Diag
 
 1. W Eksploratorze rozwiązań kliknij prawym przyciskiem nazwę projektu. Następnie wybierz pozycję **Dodaj nowy element** lub **Dodaj**nowy **element**.
 
-2. Z listy szablon wybierz **Diagram klas**. W przypadku C++ projektów wizualnych należy poszukać w obszarze **Szablony**, a następnie w obszarze **Narzędzia** , aby znaleźć ten szablon.
+2. Z listy szablon wybierz **Diagram klas**. W przypadku projektów Visual C++ poszukaj w obszarze **Szablony**, a następnie w obszarze **Narzędzie** , aby znaleźć ten szablon.
 
      Diagram klas zostanie otwarty w Projektancie klas i będzie widoczny jako plik, który ma rozszerzenie .cd w Eksploratorze rozwiązań w hierarchii projektu. Za pomocą przybornika Projektanta klas przeciągnij kształty i linie do diagramu.
 
@@ -40,7 +40,7 @@ Do projektowania, edytowania i refaktoryzacji klas oraz innych typów Dodaj Diag
 
 1. W Eksplorator rozwiązań otwórz menu kontekstowe pliku klasy, a następnie wybierz **widok Diagram klas**.
 
-     —lub—
+     -lub-
 
      W **Widok klasy**Otwórz obszar nazw lub menu kontekstowe typu, a następnie wybierz **widok Diagram klas**.
 
@@ -51,4 +51,4 @@ Do projektowania, edytowania i refaktoryzacji klas oraz innych typów Dodaj Diag
      Tworzony jest automatycznie wypełniony Diagram klas.
 
 ## <a name="see-also"></a>Zobacz też
- [Instrukcje: Tworzenie typów za pomocą Projektant klas](../ide/how-to-create-types-by-using-class-designer.md) [instrukcje: wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md) [projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md) [Wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md) [pracujących z diagramami klas ( Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)
+ [Instrukcje: Tworzenie typów za pomocą Projektant klas](../ide/how-to-create-types-by-using-class-designer.md) [instrukcje: wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md) [projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md) [Wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md) [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)

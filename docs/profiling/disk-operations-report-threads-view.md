@@ -1,5 +1,5 @@
 ---
-title: Raport operacji na dysku (widok wątków) | Dokumenty firmy Microsoft
+title: Raport operacji dyskowych (Widok wątków) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,28 +13,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62970073"
 ---
 # <a name="disk-operations-report-threads-view"></a>Raport dotyczący operacji na dysku (Widok wątków)
-Raport operacji dysku pokazuje operacje we/wy dysku w kanałach dysków.
+Raport operacje na dyskach przedstawia operacje we/wy dysku w kanałach dyskowych.
 
- Dla każdego dostępu do dysku, który występuje w imieniu procesu, który jest profilowany w aktualnie widocznym oknie czasu, te informacje są zgłaszane:
+ Dla każdego dostępu do dysku, który występuje w imieniu procesu, który jest profilowany w aktualnie widocznym przedziale czasu, te informacje są raportowane:
 
-- Nazwa i identyfikator PID procesu, który wykonał dostęp do dysku
+- Nazwa i Identyfikator PID procesu, który przeprowadził dostęp do dysku
 
 - Identyfikator wątku, który uzyskał dostęp do dysku
 
-- Nazwa pliku, do który uzyskiwał dostęp
+- Nazwa pliku, do którego uzyskano dostęp
 
-- Liczba odczytów na plik
+- Liczba odczytów dla pliku
 
 - Liczba odczytanych bajtów
 
-- Opóźnienie odczytu w milisekundach
+- Opóźnienie odczytu (w milisekundach)
 
 - Liczba zapisów
 

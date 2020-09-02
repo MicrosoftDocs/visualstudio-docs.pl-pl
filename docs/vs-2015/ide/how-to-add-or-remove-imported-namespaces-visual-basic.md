@@ -16,18 +16,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 75299dae66a07b2bc1671dbfcda935fc4af2b284
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645500"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Porady: dodawanie i usuwanie importowanych przestrzeni nazw (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Importowanie przestrzeni nazw pozwala używać elementów z tej przestrzeni nazw w kodzie bez w pełni zakwalifikowania elementu. Na przykład jeśli chcesz uzyskać dostęp do metody `Create` w klasie `System.Messaging.MessageQueue`, możesz zaimportować przestrzeń nazw `System.Messaging` i po prostu odwołać się do elementu, którego potrzebujesz w kodzie jako `MessageQueue.Create`.
+Importowanie przestrzeni nazw pozwala używać elementów z tej przestrzeni nazw w kodzie bez w pełni zakwalifikowania elementu. Na przykład jeśli chcesz uzyskać dostęp do `Create` metody w `System.Messaging.MessageQueue` klasie, możesz zaimportować `System.Messaging` przestrzeń nazw i odwołać się do elementu, który jest potrzebny w kodzie jako `MessageQueue.Create` .
 
- Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projektanta projektu**. Importy określone w tym oknie dialogowym są przesyłane bezpośrednio do kompilatora (`/imports`) i stosowane do wszystkich plików w projekcie. Użyj instrukcji `Imports`, aby użyć przestrzeni nazw w jednym pliku kodu źródłowego.
+ Importowane przestrzenie nazw są zarządzane na stronie **odwołania** **projektanta projektu**. Importy określone w tym oknie dialogowym są przesyłane bezpośrednio do kompilatora ( `/imports` ) i stosowane do wszystkich plików w projekcie. Użyj `Imports` instrukcji, aby użyć przestrzeni nazw w jednym pliku kodu źródłowego.
 
 ### <a name="to-add-an-imported-namespace"></a>Aby dodać zaimportowaną przestrzeń nazw
 
@@ -49,9 +49,9 @@ Importowanie przestrzeni nazw pozwala używać elementów z tej przestrzeni nazw
 3. Na liście **zaimportowanych obszarów nazw** Usuń zaznaczenie pola wyboru dla przestrzeni nazw, która ma zostać usunięta.
 
 ## <a name="user-imports"></a>Importy użytkowników
- Importy użytkowników umożliwiają importowanie określonej klasy w przestrzeni nazw, a nie całej przestrzeni nazw. Na przykład aplikacja może mieć import dla przestrzeni nazw `Systems.Diagnostics`, ale jedyną klasą w tej przestrzeni nazw, która Cię interesuje, jest Klasa `Debug`. Można zdefiniować `System.Diagnostics.Debug` jako import użytkownika, a następnie usunąć import dla `System.Diagnostics`.
+ Importy użytkowników umożliwiają importowanie określonej klasy w przestrzeni nazw, a nie całej przestrzeni nazw. Na przykład aplikacja może mieć import dla `Systems.Diagnostics` przestrzeni nazw, ale jedyną klasą w tej przestrzeni nazw, która Cię interesuje, jest `Debug` Klasa. Można zdefiniować `System.Diagnostics.Debug` jako import użytkownika, a następnie usunąć import dla `System.Diagnostics` .
 
- Jeśli później zmienisz zdanie i zdecydujesz, że było to naprawdę konieczne `EventLog` klasie, możesz wprowadzić `System.Diagnostics.EventLog` jako import i zastępować `System.Diagnostics.Debug` przy użyciu funkcji aktualizacji.
+ Jeśli później zmienisz zdanie i zdecydujesz, że naprawdę była to `EventLog` wymagana Klasa, możesz wprowadzić `System.Diagnostics.EventLog` jako import i zastępować użytkownika `System.Diagnostics.Debug` przy użyciu funkcji aktualizacji.
 
 #### <a name="to-add-a-user-import"></a>Aby dodać Importowanie użytkownika
 

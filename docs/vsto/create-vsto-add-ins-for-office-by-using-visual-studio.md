@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986161"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
   Za pomocą narzędzi deweloperskich Microsoft Office w programie Visual Studio można tworzyć aplikacje .NET Framework, które poszerzają pakiet Office. Te aplikacje są również nazywane *rozwiązaniami pakietu Office*.
 
- Narzędzia Office Developer Tools udostępniają funkcje, które ułatwiają tworzenie rozwiązań pakietu Office w celu dopasowania do różnych potrzeb firmy. Narzędzia te zawierają szablony projektów ułatwiające tworzenie rozwiązań pakietu Office za pomocą Visual Basic lub wizualizacji C#, a także wizualizacji wizualnych, które ułatwiają tworzenie niestandardowych interfejsów użytkownika dla rozwiązań pakietu Office.
+ Narzędzia Office Developer Tools udostępniają funkcje, które ułatwiają tworzenie rozwiązań pakietu Office w celu dopasowania do różnych potrzeb firmy. Narzędzia te zawierają szablony projektów ułatwiające tworzenie rozwiązań pakietu Office przy użyciu programu Visual Basic lub Visual C#, a także wizualizacji wizualnych, które ułatwiają tworzenie niestandardowych interfejsów użytkownika dla rozwiązań pakietu Office.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
  Aby uzyskać najnowsze informacje o programowaniu pakietu Office, zobacz [Centrum deweloperów Microsoft Office](https://developer.microsoft.com/office/docs).
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Wprowadzenie &#40;do programowania pakietu Office w programie Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Wprowadzenie &#40;Programowanie Office w programie Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 
  Zawiera łącza do informacji na temat sposobu konfigurowania komputera deweloperskiego do tworzenia rozwiązań pakietu Office, rozpoczynania tworzenia rozwiązań pakietu Office oraz nowości w programowaniu pakietu Office w programie Visual Studio.
 
@@ -79,11 +79,11 @@ ms.locfileid: "72986161"
 
 - [Tworzenie rozwiązań pakietu Office](building-office-solutions.md)
 
- Zawiera informacje o różnicach między kompilowaniem projektów pakietu Office i innych typów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Zawiera informacje o różnicach między kompilowaniem projektów pakietu Office i innych typów projektów w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 - [Debugowanie projektów pakietu Office](debugging-office-projects.md)
 
- Zawiera informacje o różnicach między debugowaniem projektów pakietu Office i innych typów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Zawiera informacje o różnicach między debugowaniem projektów pakietu Office i innych typów projektów w programie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 - [Zabezpieczanie rozwiązań pakietu Office](securing-office-solutions.md)
 
@@ -97,15 +97,15 @@ ms.locfileid: "72986161"
 
  Zawiera łącza do przykładowych aplikacji i tematów, które zawierają instrukcje krok po kroku dotyczące wykonywania typowych zadań.
 
-- [Ogólne informacje &#40;na temat programowania pakietu Office w programie Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
+- [Ogólne informacje &#40;Office Development w programie Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
 
  Zawiera łącza do szczegółowych informacji na temat podstawowych zestawów międzyoperacyjnych pakietu Office, manifestów, elementów interfejsu użytkownika i komunikatów o błędach.
 
-- [Zarządzanie rozbudowanymi odwołaniami &#40;w programie Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
+- [Dokumentacja zarządzana &#40;Programowanie Office w programie Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
 
- Zawiera łącza do informacji o przestrzeniach nazw i typach interfejsów API, które są używane w projektach pakietu Office przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Dokumentacja interfejsu API dotycząca przestrzeni nazw i typów, które są używane w projektach pakietu Office przeznaczonych dla .NET Framework 3,5, znajduje się w sekcji informacje w dokumentacji programu Visual Studio 2008: [2007 dokumentacja zarządzana przez system](managed-reference-office-development-in-visual-studio.md).
+ Zawiera łącza do informacji o przestrzeniach nazw i typach interfejsów API, które są używane w projektach pakietu Office przeznaczonych dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . Dokumentacja interfejsu API dotycząca przestrzeni nazw i typów, które są używane w projektach pakietu Office przeznaczonych dla .NET Framework 3,5, znajduje się w sekcji informacje w dokumentacji programu Visual Studio 2008: [2007 dokumentacja zarządzana przez system](managed-reference-office-development-in-visual-studio.md).
 
-- [Niezarządzana &#40;dokumentacja interfejsu API Programowanie Office w Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Niezarządzana dokumentacja interfejsu API &#40;Office Development w programie Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Zawiera linki do informacji na temat interfejsów COM, których można użyć do wykonywania akcji, takich jak ładowanie i zwalnianie zarządzanych dodatków narzędzi VSTO w aplikacjach pakietu Office.
 
@@ -118,4 +118,4 @@ ms.locfileid: "72986161"
 
 - [Opracowywanie aplikacji w programie Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Zawiera łącza do tematów, które wyjaśniają, jak można używać programu Visual Studio do projektowania, programowania, debugowania i wdrażania aplikacji sieci Web, usług XML sieci Web i tradycyjnych aplikacji klienckich.
 
-- [Programowanie .NET Framework w programie Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Omawia Programowanie aplikacji za pomocą .NET Framework w Visual Basic i wizualizacji C#.
+- [Programowanie .NET Framework w programie Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Omawia Programowanie aplikacji za pomocą .NET Framework w Visual Basic i Visual C#.

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234955"
 ---
 # <a name="how-to-troubleshoot-services"></a>Instrukcje: Rozwiązywanie problemów z usługami
@@ -56,7 +56,7 @@ if (log == null) return;
 
    2. Żaden identyfikator GUID nie jest jawnie przypisany do interfejsu. W związku z tym system tworzy domyślny identyfikator GUID dla obiektu w razie potrzeby.
 
-3. Upewnij się, że pakietu VSPackage żądający usługi został zlokalizowany. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Lokacje a pakietu VSPackage po utworzeniu i przed wywołaniem <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
+3. Upewnij się, że pakietu VSPackage żądający usługi został zlokalizowany. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lokacje a pakietu VSPackage po utworzeniu i przed wywołaniem <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
     Jeśli masz kod w konstruktorze pakietu VSPackage, który wymaga usługi, przenieś ją do `Initialize` metody.
 
@@ -66,7 +66,7 @@ if (log == null) return;
 
     Jeśli okno narzędzi hostuje kontrolkę użytkownika lub inny kontener sterowania, kontener będzie zlokalizowany przez model składników systemu Windows i nie będzie miał dostępu do żadnych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usług. Możesz wywołać, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Aby uzyskać dostawcę usług pakietu VSPackage z poziomu kontenera kontroli.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Lista dostępnych usług](../extensibility/internals/list-of-available-services.md)
 - [Używanie i udostępnianie usług](../extensibility/using-and-providing-services.md)
 - [Podstawowa usługa](../extensibility/internals/service-essentials.md)

@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY | Dokumentacja firmy Microsoft
+title: GUID_ARRAY | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0465188cd44ad14ef3f7df9f5eda619a5ecb6d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160108"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
+# <a name="guid_array"></a>GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-W tym artykule opisano tablicę unikatowych identyfikatorów dla silniki debugowania dostępnych.  
+Opisuje tablicę unikatowych identyfikatorów dla dostępnych aparatów debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,23 +40,23 @@ public struct GUID_ARRAY
 }  
 ```  
   
-## <a name="terms"></a>Warunki  
+## <a name="terms"></a>Terminologia  
  dwCount  
  Liczba unikatowych identyfikatorów w tablicy.  
   
  Elementy członkowskie  
- Tablica, która zawiera unikatowe identyfikatory.  
+ Tablica zawierająca unikatowe identyfikatory.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest zwracany przez [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) metody.  
+ Ta struktura jest zwracana przez metodę [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

@@ -7,10 +7,10 @@ ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
 ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283206"
 ---
 # <a name="container-tools-build-properties"></a>Właściwości kompilacji narzędzi kontenera
@@ -31,7 +31,7 @@ W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla 
 
 | Nazwa właściwości | Opis | Wartość domyślna  | Wersja pakietu NuGet|
 |---------------|-------------|----------------|----------------------|
-| ContainerDevelopmentMode | Kontroluje, czy jest włączona optymalizacja "Kompiluj-on-host" (debugowanie w trybie szybkim).  Dozwolone wartości są **szybkie** i **regularne**. | Fast |1.0.1872750 lub nowszy|
+| ContainerDevelopmentMode | Kontroluje, czy jest włączona optymalizacja "Kompiluj-on-host" (debugowanie w trybie szybkim).  Dozwolone wartości są **szybkie** i **regularne**. | Duża |1.0.1872750 lub nowszy|
 | ContainerVsDbgPath | Ścieżka debugera VSDBG. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 lub nowszy|
 | DockerDebuggeeArguments | Podczas debugowania, w debugerze jest nadawane przekazanie tych argumentów do uruchomionego pliku wykonywalnego. | Nie dotyczy projektów ASP.NET .NET Framework |1.7.8 lub nowszy|
 | DockerDebuggeeProgram | Podczas debugowania jest nakazuje debugerowi uruchomienie tego pliku wykonywalnego. | W przypadku projektów platformy .NET Core: dotnet, ASP.NET .NET Framework projekty: nie dotyczy (program IIS jest zawsze używany) |1.7.8 lub nowszy|
@@ -86,4 +86,4 @@ Aby uzyskać ogólne informacje na temat właściwości programu MSBuild, zobacz
 
 [Ustawienia uruchamiania narzędzi kontenera](container-launch-settings.md)
 
-[Właściwości zarezerwowane i dobrze znane dla programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[Zarezerwowane i dobrze znane właściwości programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie usługi | Dokumentacja firmy Microsoft
+title: Rejestrowanie usług | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,18 +10,18 @@ ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62971293"
 ---
-# <a name="registering-services"></a>Rejestrowanie usługi
-Aby zapewnić obsługę ładowania na żądanie, dostawca usług należy zarejestrować jego usług globalnych z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+# <a name="registering-services"></a>Rejestrowanie usług
+Aby można było obsługiwać ładowanie na żądanie, dostawca usług musi zarejestrować swoje usługi globalne w usłudze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- Podczas tworzenia aplikacji, dostawcom usług zarządzanych rejestracji usług i zastąpienia usługi przez dodawanie atrybutów do kodu źródłowego dla pakietów, a następnie tworzenia pakietów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Spowoduje to uruchomienie narzędzia RegPkg.exe na wynikowy zestaw rejestrowania pakietu i przygotowywanie wdrożenia. Aby uzyskać więcej informacji, zobacz [jak: Zarejestruj usługę](../misc/how-to-register-a-service.md).  
+ Podczas opracowywania dostawcy usług zarządzanych rejestrują usługi i przesłonięcia usług przez dodanie atrybutów do kodu źródłowego dla pakietów, a następnie skompilowanie pakietów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Spowoduje to uruchomienie narzędzia RegPkg.exe na wynikającym zestawie, zarejestrowanie pakietu i przygotowanie go do wdrożenia. Aby uzyskać więcej informacji, zobacz [How to: register a Service](../misc/how-to-register-a-service.md).  
   
- Dostawcy usług niezarządzanych musisz się zarejestrować, usług, które dostarczają z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w usługach sekcji lub usługa zastępuje części rejestru systemowego. Poniższy fragment pliku reg pokazuje, jak usługa SVsTextManager, może zostać zarejestrowana:  
+ Niezarządzani dostawcy usług muszą rejestrować usługi, których zapewniają, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w sekcji usług lub w sekcji przesłonięcia usługi w rejestrze systemu. Poniższy fragment pliku reg zawiera informacje o tym, jak usługa, SVsTextManager może być zarejestrowana:  
   
 ```  
 [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]  
@@ -29,24 +29,24 @@ Aby zapewnić obsługę ładowania na żądanie, dostawca usług należy zarejes
 "Name"="SVsTextManager"  
 ```  
   
- W powyższym przykładzie numer wersji jest wersją [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], takie jak w wersji 7.1 lub 8.0, klucz {F5E7E71D-1401-11d1-883B-0000F87579D2} jest identyfikatorem usługi (SID), usługi, SVsTextManager i {wartość domyślną F5E7E720-1401-11d1-883B-0000F87579D2} jest identyfikator GUID pakietu VSPackage, który udostępnia usługę Menedżera tekstu pakietu.  
+ W powyższym przykładzie numer wersji to wersja programu, na przykład [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 7,1 lub 8,0, klucz {F5E7E71D-1401-11D1-883B-0000F87579D2} to identyfikator usługi (SID) usługi, SVsTextManager i wartość domyślna {F5E7E720-1401-11D1-883B-0000F87579D2} to identyfikator GUID pakietu pakietu vspackageego Menedżera tekstu, który udostępnia usługę.  
   
-## <a name="remote-services-and-background-threads"></a>Usługi zdalnej i wątków w tle  
- Udostępniane usługi nie są automatycznie dostępne zdalnie lub wątków w tle. Aby zapewnić ich dostępność, możesz tworzyć i zarejestrować bibliotekę typów.  
+## <a name="remote-services-and-background-threads"></a>Usługi zdalne i wątki w tle  
+ Udostępniane usługi nie są automatycznie dostępne zdalnie lub w tle wątków. Aby udostępnić te elementy, należy skompilować i zarejestrować bibliotekę typów.  
   
- Z niezarządzanego kodu, który używa programu Visual Studio biblioteki (VSL) można zarejestrować biblioteki typów w ten sposób:  
+ Z niezarządzanego kodu, który korzysta z biblioteki programu Visual Studio (VSL), możesz zarejestrować bibliotekę typów w następujący sposób:  
   
 ```  
 #define VSL_REGISTER_TYPE_LIB TRUE  
 #include <VSLPackageDllEntryPoints.cpp>  
 ```  
   
- Z poziomu kodu zarządzanego możesz dodać krok po kompilacji w następujący sposób:  
+ W kodzie zarządzanym można dodać krok po kompilacji podobny do tego:  
   
 ```  
 regasm /tlb MyAssembly.dll  
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Korzystanie z usług i dostarczanie](../extensibility/using-and-providing-services.md)   
+ [Używanie i świadczenie usług](../extensibility/using-and-providing-services.md)   
  [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)

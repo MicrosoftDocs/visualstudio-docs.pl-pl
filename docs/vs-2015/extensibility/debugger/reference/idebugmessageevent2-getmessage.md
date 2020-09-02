@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Dokumentacja firmy Microsoft
+title: 'IDebugMessageEvent2:: GetMessage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14eb540962db3a806273d5c76facb7f9bf25dee7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685896"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
@@ -49,22 +49,22 @@ int GetMessage( 
   
 #### <a name="parameters"></a>Parametry  
  `pMessageType`  
- [out] Zwraca wartość z zakresu od [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) wyliczenie opisujące typ komunikatu.  
+ określoną Zwraca wartość z wyliczenia [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) opisującą typ komunikatu.  
   
  `pbstrMessage`  
- [out] Zwraca komunikat.  
+ określoną Zwraca komunikat.  
   
  `pdwType`  
- [out] Zwraca typ wiadomości, za pomocą Konwencji Win32 `MessageBox` funkcji. Zobacz [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) funkcji, aby uzyskać szczegółowe informacje.  
+ określoną Zwraca typ komunikatu przy użyciu konwencji `MessageBox` funkcji Win32. Zobacz funkcję [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) , aby uzyskać szczegółowe informacje.  
   
  `pbstrHelpFileName`  
- [out w] Zwraca nazwę pliku pomocy. Może być wartością null (C++) lub wartość pustą (C#), jeśli nie ma żadnego pliku pomocy.  
+ [in. out] Zwraca nazwę pliku pomocy. Może mieć wartość null (C++) lub pustą (C#), jeśli nie ma pliku pomocy.  
   
  `pdwHelpId`  
- [out w] Zwraca identyfikator pomocy. Mogą być 0, jeśli pomoc nie jest skojarzone z tym komunikatem.  
+ [in. out] Zwraca identyfikator pomocy. Może mieć wartość 0, jeśli nie ma pomocy skojarzonej z tym komunikatem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   

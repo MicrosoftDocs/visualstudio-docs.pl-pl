@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Dokumenty firmy Microsoft
+title: 'IDebugBinder3:: GetMemoryContext64 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735736"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Konwertuje lokalizację obiektu lub 64-bitowy adres pamięci do kontekstu pamięci.
+Konwertuje lokalizację obiektu lub adres pamięci 64-bitowej na kontekst pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>Parametry
 `pField`\
-[w] [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) który opisuje obiekt do zlokalizowania. Jeśli `NULL`zamiast `dwConstant` tego użyj.
+podczas Element [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , który opisuje obiekt, który ma zostać zlokalizowany. Jeśli `NULL` , użyj `dwConstant` zamiast tego.
 
 `uConstant`\
-[w] 64-bitowy adres pamięci, taki jak 0x500000000.
+podczas 64-bitowy adres pamięci, taki jak 0x50000000.
 
 `ppMemCxt`\
-[na zewnątrz] Zwraca interfejs [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący adres obiektu lub adres w pamięci.
+określoną Zwraca interfejs [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący adres obiektu lub adres w pamięci.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższe przykłady tworzy obiekt, który implementuje interfejs [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) i używa tej metody, aby pobrać kontekst pamięci.
+Poniższy przykład tworzy obiekt, który implementuje interfejs [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) i używa tej metody do pobierania kontekstu pamięci.
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )

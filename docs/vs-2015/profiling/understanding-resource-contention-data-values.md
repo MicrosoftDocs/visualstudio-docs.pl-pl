@@ -1,5 +1,5 @@
 ---
-title: Zapoznanie z wartościami danych Kontencji zasobów | Dokumentacja firmy Microsoft
+title: Informacje o wartościach danych rywalizacji o zasoby | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5983396924f38c31b6dafcd42b762042e1880e8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145433"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Zapoznanie z wartościami danych kontencji zasobów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Profilowanie rywalizacji zasobów zbiera szczegółowe informacje stosu wywołań każdorazowo że konkurencyjne wątki w aplikacji są zmuszone czekać na dostęp do zasobu udostępnionego.  
+Profilowanie rywalizacji o zasoby zbiera szczegółowe informacje o stosie wywołań za każdym razem, gdy konkurujące wątki w aplikacji są zmuszeni do oczekiwania na dostęp do zasobu udostępnionego.  
   
  **Wymagania**  
   
@@ -30,14 +30,14 @@ Profilowanie rywalizacji zasobów zbiera szczegółowe informacje stosu wywoła�
   
   Raporty z rywalizacji o zasoby pokazują łączną liczbę zdarzeń rywalizacji oraz całkowity czas spędzony przez moduły, funkcje, wiersze kodu źródłowego i instrukcje w oczekiwaniu na zasoby.  
   
-- Alternatywne wartości wyświetlane całkowita liczba rywalizacji, których wymuszone funkcja oczekiwania przez rywalizacje o zasoby i łączny czas oczekiwania funkcji.  Rywalizacji, które były spowodowane przez funkcje podrzędne, które zostały wywołane przez funkcję znajdują się w wartości włącznie.  
+- Wartości włączne przedstawiają łączną liczbę rywalizacji, która wymusić, że funkcja oczekuje na zaczekanie zasobów i łączny czas oczekiwania funkcji.  Rywalizacje, które były spowodowane przez funkcje podrzędne, które zostały wywołane przez funkcję, są uwzględniane w wartościach włącznie.  
   
-- Wyłączne wartości są wyświetlane tylko liczbę rywalizacji, wymuszone funkcja oczekiwania i że zostały spowodowane przez kod w treści funkcji. Rywalizacji spowodowane przez funkcje podrzędne nie są uwzględniane. Własny czas funkcji obejmuje także czasy oczekiwania, które były spowodowane przez instrukcje w treści funkcji.  
+- Wartości wyłączne wyświetlają tylko liczbę rywalizacji, które wymuszą oczekiwanie, i które zostały spowodowane przez kod w treści funkcji. Rywalizacje związane z funkcjami podrzędnymi nie są uwzględniane. Czas wyłączny dla funkcji obejmuje również czas oczekiwania, który został spowodowany przez instrukcje w treści funkcji.  
   
-  Widoki raportu rywalizacji zasobów również uwzględnić wykresy z osią czasu, które pokazują zdarzenia rywalizacji indywidualnych wraz z upływem czasu i Pokaż stosy wywołań, które tworzone określonego zdarzenia. Aby uzyskać więcej informacji, zobacz jeden z następujących tematów:  
+  Widoki raportów rywalizacji o zasoby obejmują także wykresy osi czasu, które pokazują poszczególne zdarzenia rywalizacji w czasie i pokazują stosy wywołań, które utworzyły określone zdarzenie. Aby uzyskać więcej informacji, zobacz jeden z następujących tematów:  
   
 - [Widok szczegółów wątku](../profiling/thread-details-view-contention-data.md)  
   
 - [Widok szczegółów zasobów](../profiling/resource-details-view-contention-data.md)  
   
-  Aby uzyskać więcej informacji na temat tryb drugiego profilowania współbieżności zobacz [Concurrency Visualizer](../profiling/concurrency-visualizer.md).
+  Aby uzyskać więcej informacji o drugim trybie profilowania współbieżności, zobacz [Concurrency Visualizer](../profiling/concurrency-visualizer.md).
