@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_FLAGS | Dokumentacja firmy Microsoft
+title: PENDING_BP_STATE_FLAGS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39669e2c1268c2e5d2a294f5b95c314500ead78a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205101"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa flagi stan oczekujący punkt przerwania.  
+Określa flagi stanu oczekujących punktów przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,18 +43,18 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  PBPSF_NONE  
- Symbol zastępczy.  
+ Symbol.  
   
  PBPSF_VIRTUALIZED  
- Określa zwirtualizowanych oczekujących punktów przerwania, który ma zostać powiązany za każdym razem, gdy nowy kod jest ładowany.  
+ Określa zwirtualizowany oczekujący punkt przerwania, który ma być powiązany przy każdym załadowaniu nowego kodu.  
   
 ## <a name="remarks"></a>Uwagi  
- Używany do `flags` członkiem [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struktury.  
+ Używane dla `flags` elementu członkowskiego struktury [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

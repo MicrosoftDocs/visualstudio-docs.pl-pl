@@ -1,5 +1,5 @@
 ---
-title: -Updateconfiguration (devenv. exe) | Microsoft Docs
+title: -Updateconfiguration (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 50773821b328ea81381744bc6f32b3907cd1c5bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657919"
 ---
-# <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv. exe)
+# <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Powiadamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w celu scalenia pakietów [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w systemie i sprawdź, czy w pamięci podręcznej MEF wprowadzono zmiany.
+Powiadamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o scaleniu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pakietów w systemie i sprawdź pamięć podręczną MEF pod kątem wszelkich zmian.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,10 +32,10 @@ devenv /updateconfiguration
 ```
 
 ## <a name="remarks"></a>Uwagi
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uruchamia to polecenie automatycznie po zainstalowaniu pakietu VSIX. Należy uruchomić `devenv.exe /updateconfiguration` po zainstalowaniu poprawek plików, aby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zaktualizował pamięć podręczną MEF. Dzięki temu można sprawdzić, czy poprawka jest odpowiednia.
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uruchamia to polecenie automatycznie po zainstalowaniu pakietu VSIX. Należy uruchomić `devenv.exe /updateconfiguration` po zainstalowaniu poprawek plików, aby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zaktualizować pamięć podręczną MEF. Dzięki temu można sprawdzić, czy poprawka jest odpowiednia.
 
 ## <a name="example"></a>Przykład
- Poniższy wiersz polecenia powoduje, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] scalanie pakietów [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w systemie i sprawdzanie, czy w pamięci podręcznej MEF wprowadzono zmiany.
+ Poniższy wiersz polecenia powoduje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] scalenie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pakietów w systemie i sprawdzenie, czy w pamięci podręcznej MEF wprowadzono zmiany.
 
 ```
 Devenv.exe /updateconfiguration

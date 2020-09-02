@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88ff2a1da1f937fd4011932979bd95057eb40dfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205057"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-W tym artykule opisano lub określa właściwości procesu.  
+Opisuje lub określa właściwości procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,26 +47,26 @@ enum enum_PROCESS_INFO_FLAGS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  PIFLAG_SYSTEM_PROCESS  
- Wskazuje, że proces jest proces systemowy.  
+ Wskazuje, że proces jest procesem systemowym.  
   
  PIFLAG_DEBUGGER_ATTACHED  
- Wskazuje, że proces jest debugowany przez debuger. Może być [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugera, lub może być kilka innych debugera, na przykład WinDbg.  
+ Wskazuje, że proces jest debugowany przez debuger. Może być [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugerem lub może być innym debugerem, na przykład WinDbg.  
   
  PIFLAG_PROCESS_STOPPED  
- Wskazuje, że proces zostanie zatrzymany. Prawidłowe tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest także określona. Dostępne w [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] i nowszych.  
+ Wskazuje, że proces jest zatrzymany. Prawidłowy tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest również określony. Dostępne w [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] i nowszych wersjach.  
   
  PIFLAG_PROCESS_RUNNING  
- Wskazuje, że proces jest uruchomiony. Prawidłowe tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest także określona. Dostępne w [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] i nowszych.  
+ Wskazuje, że proces jest uruchomiony. Prawidłowy tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest również określony. Dostępne w [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] i nowszych wersjach.  
   
 ## <a name="remarks"></a>Uwagi  
- Używany do `Flags` członkiem [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury.  
+ Używane dla `Flags` elementu członkowskiego struktury [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .  
   
- Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
+ Flagi te mogą być połączone z bitową `OR` .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

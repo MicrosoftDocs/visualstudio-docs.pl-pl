@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e7de0b3985e09f61fd0c63d1764304b150503883
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657933"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w projektancie XAML
@@ -59,7 +59,7 @@ W wielu przypadkach Nieobsłużone wyjątki w projektancie XAML mogą być spowo
 
 6. W nowym wystąpieniu programu Visual Studio na pasku menu wybierz **Debuguj**, **Dołącz do procesu**.
 
-7. W oknie dialogowym **Dołącz do procesu** na liście **dostępne procesy** wybierz **XDesProc. exe**, a następnie wybierz przycisk **Dołącz** .
+7. W oknie dialogowym **Dołącz do procesu** na liście **dostępne procesy** wybierz pozycję **XDesProc.exe**, a następnie wybierz przycisk **Dołącz** .
 
      ![Proces projektanta XAML](../designers/media/xaml-attach.png "XAML_Attach")
 

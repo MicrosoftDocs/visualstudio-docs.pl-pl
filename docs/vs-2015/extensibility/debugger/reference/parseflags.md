@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Dokumentacja firmy Microsoft
+title: PARSEFLAGS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a9ebe244f3e1c1f3f95508d6df979edee2d4aed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205123"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, jak można przeanalizować wyrażenia.  
+Określa sposób analizowania wyrażenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,25 +45,25 @@ public enum enum_PARSEFLAGS { 
   
 ## <a name="members"></a>Elementy członkowskie  
  PARSE_EXPRESSION  
- Wskazuje, czy wyrażenie nie jest instrukcja.  
+ Wskazuje, że wyrażenie nie jest instrukcją.  
   
  PARSE_FUNCTION_AS_ADDRESS  
- Wskazuje, czy wyrażenie jest analizowany (i później oceniane) jako adres.  
+ Wskazuje, że wyrażenie ma być analizowane (i później oceniane) jako adres.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- Wskazuje, czy wyrażenie jest analizowana w czasie projektowania (oznacza to, gdy projektant jest otwarty).  
+ Wskazuje, że wyrażenie jest analizowane w czasie projektowania (to oznacza, gdy Projektant jest otwarty).  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako parametr do [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [przeanalizować](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.  
+ Przekazanie jako parametr do metody [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+ [Analizuj](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

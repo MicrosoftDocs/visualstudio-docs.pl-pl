@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Dokumentacja firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: Enable | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f5dc3c1e37a817c1c962d05745db33422008c550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194489"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Włącza/wyłącza włączony stan oczekujący punkt przerwania.  
+Przełącza włączony stan oczekującego punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,18 +41,18 @@ int Enable( 
   
 #### <a name="parameters"></a>Parametry  
  `fEnable`  
- [in] Ustaw na wartość różną od zera (`TRUE`) umożliwiające oczekujący punkt przerwania lub równą zero (`FALSE`) można wyłączyć.  
+ podczas Ustaw na wartość różną od zera ( `TRUE` ), aby włączyć oczekujący punkt przerwania, lub zero ( `FALSE` ), aby wyłączyć.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli oczekujący punkt przerwania jest włączony / wyłączony, wszystkie punkty przerwania, powiązany z niego są ustawione na takim samym stanie.  
+ Gdy oczekujący punkt przerwania jest włączony lub wyłączony, wszystkie punkty przerwania powiązane z nim są ustawione na ten sam stan.  
   
- Ta metoda może zostać wywołana tyle razy, zgodnie z potrzebami, nawet jeśli punkt przerwania jest już włączona lub wyłączona.  
+ Ta metoda może być wywoływana tyle razy, ile jest to konieczne, nawet jeśli punkt przerwania jest już włączony lub wyłączony.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiektu, który uwidacznia Interfejs [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    

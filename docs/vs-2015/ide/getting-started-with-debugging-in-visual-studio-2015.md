@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca3f3806f9097082d71dd80e74ccf48cd78c951b
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386891"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Wprowadzenie do debugowania w programie Visual Studio 2015
@@ -34,7 +34,7 @@ Program Visual Studio 2015 zapewnia zaawansowany zintegrowany zestaw narzędzi d
 
  ![Przycisk kompilacji debugowania programu Visual Studio](../ide/media/vs-ide-gs-debug-build-type1.PNG "Vs_ide_gs_debug_build_type1")
 
- Można również określić konkretną platformę kompilacji, która ma być docelowa, na przykład **x86** (32-bitowe procesory Intel), **x64** (64-bitowe procesory Intel) i **ARM** (procesory ARM, obsługiwane tylko dla niektórych typów aplikacji). Wartość domyślna to **x86** dla projektów zarządzanych i natywnych. Aby to zmienić, kliknij listę rozwijaną platforma kompilacji i wybierz inną platformę lub **Configuration Manager...**
+ Można również określić konkretną platformę kompilacji, która ma być docelowa, na przykład **x86** (32-bitowe procesory Intel), **x64** (64-bitowe procesory Intel) i **ARM** (procesory ARM, obsługiwane tylko dla niektórych typów aplikacji). Wartość domyślna to  **x86** dla projektów zarządzanych i natywnych. Aby to zmienić, kliknij listę rozwijaną platforma kompilacji i wybierz inną platformę lub **Configuration Manager...**
 
  ![Okno Menedżera plików konfiguracji programu Visual Studio](../ide/media/vs-ide-gs-debug-build-cf-mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")
 

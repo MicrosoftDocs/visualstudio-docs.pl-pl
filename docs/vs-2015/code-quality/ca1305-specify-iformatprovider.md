@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 025d76f8e946dd3021141d6736c6b4bd40d57170
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539089"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Określ argument IFormatProvider
@@ -61,7 +61,7 @@ ms.locfileid: "85539089"
  Istnieje możliwość bezpiecznego pomijania ostrzeżenia z tej reguły, gdy jest to pewne, że domyślna wartość w obszarze domyślny język kultury/format jest poprawna, a łatwość utrzymania kodu nie jest ważnym priorytetem programistycznym.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod`koryguje pierwsze naruszenie, przekazując niezmienną kulturę do <xref:System.String.Compare%2A> , i koryguje drugie naruszenie, przekazując bieżącą kulturę do, <xref:System.String.ToLower%2A> ponieważ jest ona `string3` wyświetlana użytkownikowi.
+ W poniższym przykładzie `BadMethod` powoduje dwa naruszenia tej reguły. `GoodMethod` koryguje pierwsze naruszenie, przekazując niezmienną kulturę do <xref:System.String.Compare%2A> , i koryguje drugie naruszenie, przekazując bieżącą kulturę do, <xref:System.String.ToLower%2A> ponieważ jest ona `string3` wyświetlana użytkownikowi.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 

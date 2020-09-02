@@ -1,5 +1,5 @@
 ---
-title: Obsługa wdrażania wyspecjalizowane | Dokumentacja firmy Microsoft
+title: Obsługa wyspecjalizowanego wdrożenia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bfd5d4d1a5a94662c2fe3fb9d406cc098014f6e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436291"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64833367"
 ---
 # <a name="handling-specialized-deployment"></a>Obsługa wdrożeń specjalistycznych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przykład obsługuje wdrożenia, aby umożliwić projektu, zaktualizuj serwer sieci Web. Podobnie **urządzeń inteligentnych** projekt obsługuje wdrożenia można skopiować zbudowanych aplikacji na urządzeniu docelowym. Podtypy projektów można podać sposób działania wdrożenia specjalistycznych implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu. Ten interfejs definiuje pełnego zestawu operacji wdrażania:  
+Wdrożenie jest opcjonalną operacją dla projektów. Projekt sieci Web, na przykład, obsługuje wdrożenie umożliwiające aktualizowanie serwera sieci Web przez projekt. Podobnie projekt **urządzenia inteligentnego** obsługuje wdrożenie w celu skopiowania skompilowanej aplikacji na urządzenie docelowe. Podtypy projektu mogą dostarczać wyspecjalizowane zachowanie wdrażania przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu. Ten interfejs definiuje pełny zestaw operacji wdrażania:  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
@@ -39,15 +39,15 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
-  Operacja rzeczywiste wdrożenie powinna być wykonana w oddzielnym wątku się [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jeszcze bardziej elastyczna na interakcję z użytkownikiem. Metod dostarczonych przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> są wywoływane asynchronicznie przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] i działa w tle, dzięki czemu środowisko, aby wykonać zapytanie o stan operacji wdrażania w dowolnym momencie lub zatrzymać operację, jeśli to konieczne. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Operacje wdrażania interfejsu są wywoływane przez środowisko, gdy użytkownik wybierze polecenie Wdróż.  
+  Rzeczywista operacja wdrażania powinna zostać wykonana w osobnym wątku, aby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jeszcze bardziej reagować na interakcję z użytkownikiem. Metody dostarczone przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> są nazywane asynchronicznie przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] program i działają w tle, co umożliwia środowisku badanie stanu operacji wdrażania w dowolnym momencie lub zatrzymanie operacji, w razie potrzeby. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>Operacje wdrażania interfejsu są wywoływane przez środowisko, gdy użytkownik wybierze polecenie Wdróż.  
   
-  Aby powiadomić środowiska, uruchomione lub zakończył operację wdrożenia, podtypu projektu musi wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> metody.  
+  Aby powiadomić środowisko o rozpoczęciu lub zakończeniu operacji wdrażania, podtyp projektu musi wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> metody i.  
   
 ## <a name="handling-specialized-deployment"></a>Obsługa wdrożeń specjalistycznych  
   
-#### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Do obsługi wdrożenia specjalistycznych przez projekt podtyp  
+#### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Aby obsłużyć wyspecjalizowane wdrożenie według projektu podtypu  
   
-- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> metody do rejestrowania środowiska, aby otrzymywać powiadomienia o zdarzeń stanu wdrożenia.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> metodę w celu zarejestrowania środowiska w celu otrzymywania powiadomień o zdarzeniach dotyczących stanu wdrożenia.  
   
     ```vb  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
@@ -78,7 +78,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
-- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> metodę, aby anulować rejestrację środowiska, aby otrzymywać powiadomienia o zdarzeń stanu wdrożenia.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> metodę, aby anulować rejestrację środowiska w celu otrzymywania powiadomień o zdarzeniach dotyczących stanu wdrożenia.  
   
     ```vb  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
@@ -96,7 +96,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
-- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> metody, które można wykonać operacji zatwierdzania specyficzne dla aplikacji.  Ta metoda jest używana głównie do wdrożenia bazy danych.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> metodę, aby wykonać operację zatwierdzania specyficzną dla Twojej aplikacji.  Ta metoda jest używana głównie do wdrażania bazy danych.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -114,7 +114,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
-- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> metody, które można wykonać operacji wycofywania. Gdy ta metoda jest wywoływana, Projekt wdrożenia należy wykonać niezależnie od rodzaju przydaje się, aby wycofać zmian i przywrócenia stanu projektu. Ta metoda jest używana głównie do wdrożenia bazy danych.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> metodę, aby wykonać operację wycofywania. Gdy ta metoda jest wywoływana, projekt wdrożenia musi wykonać dowolną czynność, aby wycofać zmiany i przywrócić stan projektu. Ta metoda jest używana głównie do wdrażania bazy danych.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -132,7 +132,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
-- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> metodę pozwala ustalić, czy projekt jest w stanie uruchomić operacji wdrażania.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> metodę, aby określić, czy projekt jest w stanie uruchomić operację wdrażania.  
   
     ```vb  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
@@ -165,7 +165,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
-- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> metodę pozwala ustalić, czy operacja wdrażania została ukończona pomyślnie.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> metodę, aby określić, czy operacja wdrożenia została ukończona pomyślnie.  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -188,7 +188,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
-- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> metodę, aby rozpocząć operację wdrażania w oddzielnym wątku. Umieść kod specyficzne dla wdrożenia aplikacji wewnątrz `Deploy` metody.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> metodę, aby rozpocząć operację wdrażania w osobnym wątku. Umieść kod specyficzny dla wdrożenia aplikacji wewnątrz `Deploy` metody.  
   
     ```vb  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
@@ -245,7 +245,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   
     ```  
   
-- Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> metodę, aby zatrzymać operację wdrożenia. Ta metoda jest wywoływana, gdy użytkownik naciśnie **anulować** przycisku w procesie wdrażania.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> metodę, aby zatrzymać operację wdrażania. Ta metoda jest wywoływana, gdy użytkownik naciśnie przycisk **Anuluj** podczas procesu wdrażania.  
   
     ```vb  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  
@@ -291,7 +291,7 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
     ```  
   
 > [!NOTE]
-> Wszystkie przykłady kodu, podane w tym temacie stanowią część większego przykładu [przykłady VSSDK](../../misc/vssdk-samples.md).  
+> Wszystkie przykłady kodu podane w tym temacie są częścią większego przykładu [VSSDK Samples](../../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Podtypy projektów](../../extensibility/internals/project-subtypes.md)

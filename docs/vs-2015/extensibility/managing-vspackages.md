@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie pakietami VSPackage | Dokumentacja firmy Microsoft
+title: Zarządzanie pakietów VSPackage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,34 +14,34 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0b56ab490342cfbda9c16408aa0937abd80728c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194373"
 ---
 # <a name="managing-vspackages"></a>Zarządzanie pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W większości przypadków nie trzeba martwić się o zarządzaniu pakietami VSPackage, ponieważ szablony projektów i elementów Zarejestruj i automatycznie załadować pakietu. Jednak w niektórych sytuacjach konieczne może się nieco więcej, aby można było zarządzać pakietu.  
+W większości przypadków nie trzeba martwić się o zarządzanie pakietów VSPackage, ponieważ szablony projektów i elementów rejestrują i ładują pakiet automatycznie. Jednak w niektórych sytuacjach może być konieczne poznanie nieco więcej informacji w celu zarządzania pakietem.  
   
-## <a name="using-the-experimental-instance"></a>Za pomocą wystąpienie eksperymentalne  
- Aby dowiedzieć się więcej na temat wystąpienia eksperymentalnego, zobacz [wystąpienie doświadczalne](../extensibility/the-experimental-instance.md).  
+## <a name="using-the-experimental-instance"></a>Korzystanie z eksperymentalnego wystąpienia  
+ Aby dowiedzieć się więcej o eksperymentalnym wystąpieniu, zobacz [wystąpienie eksperymentalne](../extensibility/the-experimental-instance.md).  
   
 ## <a name="registering-and-unregistering-vspackages"></a>Rejestrowanie i wyrejestrowywanie pakietów VSPackage  
- Aby dowiedzieć się, jak rejestrowanie i wyrejestrowywanie pakietów VSPackage i innych rodzajów rozszerzenia, zobacz [rejestrowanie i wyrejestrowywanie pakietów VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
+ Aby dowiedzieć się, jak zarejestrować i wyrejestrować pakietów VSPackage i inne typy rozszerzeń, zobacz [Rejestrowanie i Wyrejestrowywanie pakietów VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
-## <a name="loading-a-vspackage"></a>Ładowanie pakietu VSPackage  
- Pakietów VSPackage, który można ustawić automatyczne ładowanie podczas określonego identyfikatora GUID CMDUICONTEXT jest włączone. Aby uzyskać więcej informacji, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
+## <a name="loading-a-vspackage"></a>Ładowanie elementu pakietu VSPackage  
+ Pakietów VSPackage można ustawić na automatyczne ładowanie, gdy określony identyfikator GUID CMDUICONTEXT jest włączony. Aby uzyskać więcej informacji, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
   
-## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>Za pomocą AsyncPackage do ładowania pakietów VSPackages w tle  
- Klasy AsyncPackage włącza pakiet ładowanie w wątku w tle dla szybsza reakcja interfejsu użytkownika w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
+## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>Ładowanie pakietów VSPackage w tle za pomocą AsyncPackage  
+ Klasa AsyncPackage umożliwia ładowanie pakietów w wątku w tle w celu uzyskania lepszej czas odpowiedzi interfejsu użytkownika w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [How to: use AsyncPackage to load pakietów VSPackage w tle](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
   
-## <a name="rule-based-ui-context-for-extensions"></a>Oparty na regułach kontekstu interfejsu użytkownika dla rozszerzenia  
- Konteksty interfejsu użytkownika opartego na regułach umożliwia autorom rozszerzenia do definiowania dokładne warunki, na jakich kontekstu interfejsu użytkownika jest aktywowany, a następnie załadować skojarzonych pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [jak: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
+## <a name="rule-based-ui-context-for-extensions"></a>Kontekst interfejsu użytkownika oparty na regułach dla rozszerzeń  
+ Konteksty interfejsu użytkownika oparte na regułach umożliwiają autorom rozszerzeń Definiowanie precyzyjnych warunków, w których kontekst interfejsu użytkownika jest aktywowany i załadowanych skojarzonych pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [jak: używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
   
 ## <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage  
- Dowiedz się techniki rozwiązywania problemów z pakietami VSPackage, które nie są ładowane lub występują błędy: [Rozwiązywanie problemów z pakietami VSPackage](../extensibility/troubleshooting-vspackages.md)  
+ Poznaj techniki rozwiązywania problemów z usługą pakietów VSPackage, które nie ładują ani nie występują błędy: [Rozwiązywanie problemów pakietów VSPackage](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pakiety VSPackage](../extensibility/internals/vspackages.md)

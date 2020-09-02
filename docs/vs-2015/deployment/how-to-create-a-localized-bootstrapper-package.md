@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -14,86 +14,86 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440656"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64835186"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Porady: tworzenie zlokalizowanego pakietu programu inicjującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla poszczególnych ustawień regionalnych, można utworzyć zlokalizowane wersje pakietu programu inicjującego: postanowienia licencyjne dotyczące oprogramowania pliku (na przykład eula.rtf) oraz manifest pakietu (package.xml).  
+Po utworzeniu pakietu programu inicjującego można utworzyć zlokalizowane wersje pakietu programu inicjującego, tworząc dwa więcej plików dla każdej z ustawień regionalnych: plik warunków licencji oprogramowania (na przykład EULA. rtf) i manifest pakietu (package.xml).  
   
- Domyślnie program Visual Studio 2010 zawiera zlokalizowane pakiety programu inicjującego tylko dla .NET Framework 4, .NET Framework 4 Client Profile F# środowiska uruchomieniowego w wersji 2.0 i F# 4.0 środowiska uruchomieniowego. Zlokalizowane pakiety dla innych programów inicjujących można utworzyć, wykonując trzy kroki.  
+ Domyślnie program Visual Studio 2010 zawiera zlokalizowane pakiety programu inicjującego tylko dla .NET Framework 4, .NET Framework 4, profilu klienta w języku F 2,0 # oraz środowiska uruchomieniowego F # 4,0. Można utworzyć zlokalizowane pakiety dla innych programów inicjujących, wykonując trzy kroki.  
   
-1. Utwórz folder o nazwie po nazwie ustawień regionalnych \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*.  
+1. Utwórz folder o nazwie po nazwie ustawień regionalnych w folderze \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*.  
   
-2. Utwórz plik, który zawiera postanowienia licencyjne dotyczące oprogramowania pakietu programu inicjującego i umieścić go w nowym folderze.  
+2. Utwórz plik zawierający postanowienia licencyjne dotyczące oprogramowania dla programu inicjującego i umieść go w nowym folderze.  
   
-3. Tworzenie manifestu pakietu o nazwie package.xml, zaktualizuj ciągi i kultury i umieścić ten plik w nowym folderze. Jeśli program inicjujący programu Visual Studio zostały już utworzone w języku docelowym, można skopiować pliku package.xml programu Visual Studio i zmodyfikuj go w tym kroku.  
+3. Utwórz manifest pakietu o nazwie package.xml, zaktualizuj ciągi i kulturę i umieść plik w nowym folderze. Jeśli utworzono już program inicjujący programu Visual Studio w języku docelowym, możesz skopiować plik programu Visual Studio package.xml i zmodyfikować go w tym kroku.  
   
 > [!NOTE]
-> Jeśli używasz projektów Instalatora do wdrażania aplikacji, można zlokalizować aplikację, zmieniając **lokalizacji** właściwości.  
+> Jeśli używasz projektu konfiguracji do wdrażania aplikacji, możesz zlokalizować aplikację, zmieniając właściwość **lokalizacji** .  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
-### <a name="to-create-a-localized-bootstrapper-package"></a>Aby utworzyć zlokalizowanego pakietu programu inicjującego  
+### <a name="to-create-a-localized-bootstrapper-package"></a>Aby utworzyć zlokalizowany pakiet programu inicjującego  
   
 1. Utwórz folder o nazwie po nazwie ustawień regionalnych.  
   
-     Na komputerach z 32-bitowych, należy utworzyć folder \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ folderu.  
+     Na komputerach 32-bitowych Utwórz folder w folderze \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\.  
   
-     Na komputerach 64-bitowych należy utworzyć folder \Program \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages plików (86)\\*BootstrapperPackageName*\ folderu.  
+     Na komputerach 64-bitowych Utwórz folder w folderze \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\ folder.  
   
-     W poniższej tabeli przedstawiono nazwy folderów, które służy do dopasowania ustawień regionalnych.  
+     W poniższej tabeli przedstawiono nazwy folderów, których można użyć do dopasowania ustawień regionalnych.  
   
     |Regionalne|Nazwa folderu|  
     |------------|-----------------|  
-    |Chiński uproszczony|zh-Hans|  
+    |Chiński (uproszczony)|zh-Hans|  
     |Chiński (tradycyjny)|zh-Hant|  
-    |czeski|cs|  
-    |niemiecki|Niemcy|  
+    |Czeski|Rejestr|  
+    |Niemiecki|de|  
     |Angielski|pl|  
-    |Hiszpański|es|  
+    |Hiszpański|Tak|  
     |Francuski|fr|  
-    |Włoski|go|  
-    |koreański|ko|  
+    |Włoski|it|  
+    |Koreański|Ko|  
     |japoński|ja|  
-    |polski|pl|  
-    |portugalski (Brazylia)|pt-BR|  
+    |Polski|zysków|  
+    |Portugalski (Brazylia)|pt-BR|  
     |Rosyjski|ru|  
-    |turecki|tr|  
+    |Turecki|zdawczy|  
   
-2. Utwórz plik, który zawiera postanowienia licencyjne dotyczące oprogramowania pakietu programu inicjującego i umieścić go w nowym folderze.  
+2. Utwórz plik zawierający postanowienia licencyjne dotyczące oprogramowania dla programu inicjującego i umieść go w nowym folderze.  
   
-3. Tworzenie manifestu pakietu o nazwie package.xml i umieścić go w nowym folderze. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
+3. Utwórz manifest pakietu o nazwie package.xml i umieść go w nowym folderze. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
   
-4. Aktualizacja `<Strings>` części pakietu manifestu, tak aby ciągi znajdują się w prawidłowym języku dla ustawień regionalnych.  
+4. Zaktualizuj `<Strings>` sekcję manifestu pakietu, tak aby ciągi były w prawidłowym języku dla ustawień regionalnych.  
   
-5. Zmiana `<String Name="Culture">` wartość jest zgodna z nazwą folderu.  
+5. Zmień wartość tak, `<String Name="Culture">` aby odpowiadała nazwie folderu.  
   
 6. Zapisz plik package.xml.  
   
-### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>Aby utworzyć pakiet programu inicjującego dla programu .NET Framework 3.5 Service Pack 1 zlokalizowane w języku francuskim  
+### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>Aby utworzyć pakiet programu inicjującego dla .NET Framework 3,5 dodatek Service Pack 1 zlokalizowany w języku francuskim  
   
-1. Utwórz folder o nazwie fr. Nazwa folderu musi odpowiadać nazwie ustawień regionalnych.  
+1. Utwórz folder o nazwie fr. Nazwa folderu musi być zgodna z nazwą ustawień regionalnych.  
   
-     Na komputerach z 32-bitowych należy utworzyć folder w folderze SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\ \Program Files\Microsoft.  
+     Na komputerach 32-bitowych Utwórz folder w folderze \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\.  
   
-     Na komputerach 64-bitowych należy utworzyć folder w folderze \Program Files \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\ (86).  
+     Na komputerach 64-bitowych Utwórz folder w folderze \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\.  
   
-2. W tym folderze, fr, należy umieścić zlokalizowaną wersję postanowienia licencyjne dotyczące oprogramowania.  
+2. Umieść zlokalizowaną wersję postanowień licencyjnych dotyczących oprogramowania w folderze fr.  
   
-3. Skopiuj plik \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml pliki (x86) \Program do folderu fr, a następnie otwórz plik w Projektancie XML.  
+3. Skopiuj plik \Program Files (x86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml do folderu fr i Otwórz plik w Projektancie XML.  
   
-4. Aktualizacja `<Strings>` sekcji pakietu manifestu, tak aby były ciągi błędów w języku francuskim.  
+4. Zaktualizuj `<Strings>` sekcję manifestu pakietu, aby ciągi błędów były w języku francuskim.  
   
-5. Zmiana `<String Name="Culture">` wartość fr.  
+5. Zmień `<String Name="Culture">` wartość na fr.  
   
 6. Zapisz plik package.xml.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md)   
- [Wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md)   
+ [Wymagania wstępne dotyczące wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)   
  [Instrukcje: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)

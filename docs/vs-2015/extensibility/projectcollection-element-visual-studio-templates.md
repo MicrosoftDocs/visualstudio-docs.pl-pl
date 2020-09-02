@@ -1,5 +1,5 @@
 ---
-title: Projectcollection — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: ProjectCollection — element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9457b1142c94658da489ce7401b7c22d28df903d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193921"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection — Element (szablony Visual Studio)
@@ -27,7 +27,7 @@ Określa organizację i zawartość szablonów wieloprojektowych.
   
  \<VSTemplate>  
  \<TemplateContent>  
- \<ProjectCollection >  
+ \<ProjectCollection>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -58,10 +58,10 @@ Określa organizację i zawartość szablonów wieloprojektowych.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa zawartość szablonu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. `ProjectCollection` Element jest używany do określania projekty w celu uwzględnienia w szablonie. Aby uzyskać więcej informacji o szablonach wieloprojektowych, zobacz [jak: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md).  
+ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. `ProjectCollection`Element służy do określania projektów do uwzględnienia w szablonie. Aby uzyskać więcej informacji o szablonach wieloprojektowych, zobacz [How to: Create Project Templates](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie pokazano prosty główny plik .vstemplate szablonu wieloprojektowego. W tym przykładzie szablon zawiera dwa projekty `My Windows Application` i `My Class Library`. `ProjectName` Atrybutu na `ProjectTemplateLink` element ustawia nazwę [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przypisze temu projektowi. Jeśli `ProjectName` atrybut nie istnieje, nazwa pliku vstemplate jest używana jako nazwa projektu.  
+ W tym przykładzie pokazano prosty główny plik .vstemplate szablonu wieloprojektowego. W tym przykładzie szablon zawiera dwa projekty `My Windows Application` i `My Class Library` . `ProjectName`Atrybut w `ProjectTemplateLink` elemencie ustawia nazwę dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , aby przypisać ten projekt. Jeśli `ProjectName` atrybut nie istnieje, nazwa pliku. vstemplate jest używana jako nazwa projektu.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -86,6 +86,6 @@ Określa organizację i zawartość szablonów wieloprojektowych.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Instrukcje: Tworzenie szablonów obejmujących wiele projektów](../ide/how-to-create-multi-project-templates.md)

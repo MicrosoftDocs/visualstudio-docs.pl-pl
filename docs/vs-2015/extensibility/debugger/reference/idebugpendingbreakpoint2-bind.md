@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind | Dokumentacja firmy Microsoft
+title: 'IDebugPendingBreakpoint2:: bind | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 33cdcad38e2f46962120dcd63c1be21675060be0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194535"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Tworzy powiązanie ten oczekujący punkt przerwania z jedną lub więcej lokalizacji kodu.  
+Wiąże ten oczekujący punkt przerwania z co najmniej jedną lokalizacją kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,12 +38,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` czy punkt przerwania został usunięty.  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy ta metoda jest wywoływana, aparat debugowania (DE) ma podejmować próbę powiązania ten oczekujący punkt przerwania do wszystkich lokalizacji kodu, które odpowiadają.  
+ Gdy ta metoda jest wywoływana, aparat debugowania (DE) powinien próbować powiązać ten oczekujący punkt przerwania ze wszystkimi pasującymi do siebie lokalizacjami.  
   
- Po powrocie z tej metody wywołujący musi czekać na zdarzeniach wskazującą, czy oczekujący punkt przerwania została powiązana lub jest błędny przed zakładając, że wywołania [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) lub [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods powoduje wyliczenie wszystkich powiązanych z lub błąd punktów przerwania, odpowiednio.  
+ Po powrocie tej metody obiekt wywołujący musi czekać na zdarzenia wskazujące, że oczekujący punkt przerwania jest powiązany lub występuje błąd przed założeniem, że wywołania do [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) lub [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md). metody wyliczą odpowiednio wszystkie punkty przerwania powiązane lub błędy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

@@ -1,5 +1,5 @@
 ---
-title: Generatetemporarytargetassembly — zadanie | Dokumentacja firmy Microsoft
+title: GenerateTemporaryTargetAssembly — — Zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -20,38 +20,38 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ce412fdeb8d466708f3231cba14718d13720c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65676647"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-<xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Zadanie generuje zestaw, jeśli co najmniej jeden [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] strony w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowanego zestawu jest usuwany po zakończeniu procesu kompilacji, czy Proces kompilacji zakończy się niepowodzeniem.  
+<xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>Zadanie generuje zestaw, jeśli co najmniej jedna [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] Strona w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowany zestaw jest usuwany po zakończeniu procesu kompilacji lub w przypadku niepowodzenia procesu kompilacji.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AssemblyName`|Wymagane **ciąg** parametru.<br /><br /> Określa krótką nazwę zestawu, który jest generowany dla projektu i jest również nazwą zestawu docelowego, który tymczasowo jest generowany. Na przykład, jeśli projekt wygeneruje [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] plik wykonywalny, którego nazwa jest **WinExeAssembly.exe**, **AssemblyName** parametr ma wartość **WinExeAssembly**.|  
-|`CompileTargetName`|Wymagane **ciąg** parametru.<br /><br /> Określa nazwę [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] docelowy, który jest używany do generowania zestawów z plików kodu źródłowego. Typowa wartość dla **CompileTargetName** jest **CoreCompile**.|  
-|`CompileTypeName`|Wymagane **ciąg** parametru.<br /><br /> Określa typ kompilacji, która jest wykonywana przez element docelowy, który jest określony przez **CompileTargetName** parametru. Aby uzyskać **CoreCompile** obiektu docelowego, ta wartość jest **skompilować**.|  
-|`CurrentProject`|Wymagane **ciąg** parametru.<br /><br /> Określa pełną ścieżkę [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] pliku projektu, który wymaga zestawu tymczasowego docelowego.|  
-|`GeneratedCodeFiles`|Opcjonalnie **[] ITaskItem** parametru.<br /><br /> Określa listę plików specyficznych dla języka kodu zarządzanego, które zostały wygenerowane przez [markupcompilepass1 —](../msbuild/markupcompilepass1-task.md) zadania.|  
-|`IntermediateOutputPath`|Wymagane **ciąg** parametru.<br /><br /> Określa katalog wygenerowanego zestawu docelowego tymczasowej.|  
-|`MSBuildBinPath`|Wymagane **ciąg** parametru.<br /><br /> Określa lokalizację **MSBuild.exe**, co jest wymagane do kompilowania zestawu docelowego tymczasowej.|  
-|`ReferencePath`|Opcjonalnie **[] ITaskItem** parametru.<br /><br /> Określa listę zestawów, ścieżkę i nazwę pliku, który odwołuje się typy, które są kompilowane do zestawu docelowego tymczasowej.|  
-|`ReferencePathTypeName`|Wymagane **ciąg** parametru.<br /><br /> Określa parametr, który jest używany przez element docelowy kompilacji (**CompileTargetName**) parametr, który określa listę odwołań do zestawu (**ReferencePath**). Jest odpowiednią wartość **ReferencePath**.|  
+|`AssemblyName`|Wymagany parametr **ciągu** .<br /><br /> Określa krótką nazwę zestawu, który jest generowany dla projektu i jest również nazwą zestawu docelowego, który jest tymczasowo generowany. Na przykład jeśli projekt generuje [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] plik wykonywalny, którego nazwa jest **WinExeAssembly.exe**, parametr **AssemblyName** ma wartość **WinExeAssembly**.|  
+|`CompileTargetName`|Wymagany parametr **ciągu** .<br /><br /> Określa nazwę [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] obiektu docelowego, który jest używany do generowania zestawów z plików kodu źródłowego. Typową wartością dla **CompileTargetName** jest **CoreCompile**.|  
+|`CompileTypeName`|Wymagany parametr **ciągu** .<br /><br /> Określa typ kompilacji wykonywanej przez obiekt docelowy określony przez parametr **CompileTargetName** . Dla elementu docelowego **CoreCompile** ta wartość jest **Kompiluj**.|  
+|`CurrentProject`|Wymagany parametr **ciągu** .<br /><br /> Określa pełną ścieżkę [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] pliku projektu dla projektu, który wymaga tymczasowego zestawu docelowego.|  
+|`GeneratedCodeFiles`|Opcjonalny parametr **ITaskItem []** .<br /><br /> Określa listę plików kodu zarządzanego specyficznego dla języka, które zostały wygenerowane przez zadanie [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) .|  
+|`IntermediateOutputPath`|Wymagany parametr **ciągu** .<br /><br /> Określa katalog, do którego jest generowany tymczasowy zestaw docelowy.|  
+|`MSBuildBinPath`|Wymagany parametr **ciągu** .<br /><br /> Określa lokalizację **MSBuild.exe**, która jest wymagana do skompilowania tymczasowego zestawu docelowego.|  
+|`ReferencePath`|Opcjonalny parametr **ITaskItem []** .<br /><br /> Określa listę zestawów, według ścieżki i nazwy pliku, do których odwołują się typy, które są kompilowane do tymczasowego zestawu docelowego.|  
+|`ReferencePathTypeName`|Wymagany parametr **ciągu** .<br /><br /> Określa parametr, który jest używany przez parametr docelowa kompilacji (**CompileTargetName**), który określa listę odwołań do zestawów (**ReferencePath**). Odpowiednia wartość to **ReferencePath**.|  
   
 ## <a name="remarks"></a>Uwagi  
- Pierwszym przebiegu kompilacji znaczników, który jest wykonywany przez [markupcompilepass1 —](../msbuild/markupcompilepass1-task.md), kompiluje [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] pliki na format binarny. W związku z tym, kompilator musi listę przywoływanych zestawów zawierających typy, które są używane przez [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plików. Jednak jeśli [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plik używa typ, który jest zdefiniowany w tym samym projekcie, odpowiedniego zestawu dla tego projektu nie jest tworzony, dopóki projekt jest kompilowany. W związku z tym odwołania do zestawu, nie można podać podczas pierwszego przejścia znaczników w kompilacji.  
+ Pierwszy przebieg kompilacji znacznika, który jest uruchamiany przez [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), kompiluje [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] pliki w formacie binarnym. W związku z tym kompilator potrzebuje listy przywoływanych zestawów, które zawierają typy, które są używane przez [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] pliki. Jeśli jednak [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plik używa typu, który jest zdefiniowany w tym samym projekcie, odpowiedni zestaw dla tego projektu nie zostanie utworzony do czasu skompilowania projektu. W związku z tym nie można podać odwołania do zestawu podczas pierwszego przebiegu kompilacji znaczników.  
   
- Zamiast tego **markupcompilepass1 —** odracza konwersji [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] przekazać pliki, które zawierają odwołania do typów w tym samym projekcie do drugiego kompilacji znaczników, które jest wykonywane przez [markupcompilepass2 —](../msbuild/markupcompilepass2-task.md). Przed **markupcompilepass2 —** jest wykonywane, tymczasowy zestawu jest generowany. Ten zestaw zawiera typy, które są używane przez [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] pliki, których kompilacji znaczników — dostęp próbny został wstrzymany. Odwołanie do zestawu wygenerowany został dostarczony do **markupcompilepass2 —** podczas wykonywania umożliwiające odroczonego kompilacji [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] pliki, które ma zostać przekonwertowany na format binarny.  
+ Zamiast tego **MarkupCompilePass1** uwzględnia konwersję [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plików, które zawierają odwołania do typów w tym samym projekcie, do drugiego przebiegu kompilacji znaczników, który jest wykonywany przez [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). Przed wykonaniem **MarkupCompilePass2** zostaje wygenerowany zestaw tymczasowy. Ten zestaw zawiera typy, które są używane przez pliki, dla [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] których została odroczona kompilacja znaczników. Odwołanie do wygenerowanego zestawu jest dostarczane do **MarkupCompilePass2** , gdy zostanie uruchomione, aby zezwolić na konwertowanie odroczonych [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plików kompilacji na format binarny.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład generuje zestaw tymczasowego, ponieważ `Page1.xaml` zawiera odwołanie do typu, który znajduje się w tym samym projekcie.  
+ Poniższy przykład generuje tymczasowy zestaw `Page1.xaml` , ponieważ zawiera odwołanie do typu, który znajduje się w tym samym projekcie.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -76,7 +76,7 @@ ms.locfileid: "65676647"
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
+ [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Kompilowanie aplikacji WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Aplikacje przeglądarek WPF XAML — omówienie](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [Przegląd Aplikacje przeglądarek WPF XAML](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

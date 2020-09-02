@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Dokumentacja firmy Microsoft
+title: OBJECT_TYPE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc23045fa70554133eba3a7f1326681bf31ea379
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205140"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
+# <a name="object_type"></a>OBJECT_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa typ obiektu z Ewaluator wyrażeń.  
+Określa typ obiektu z ewaluatora wyrażeń.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -75,55 +75,55 @@ public enum enum_OBJECT_TYPE { 
  Wskazuje, że obiekt jest znakiem.  
   
  OBJECT_TYPE_I1  
- Wskazuje, że obiekt jest liczba całkowita ze znakiem jednobajtowych.  
+ Wskazuje, że obiekt jest liczbą całkowitą ze znakiem jednobajtowym.  
   
  OBJECT_TYPE_U1  
- Wskazuje, że obiekt jest liczba całkowita bez znaku jednobajtowych.  
+ Wskazuje, że obiekt jest liczbą całkowitą bez znaku.  
   
  OBJECT_TYPE_I2  
- Wskazuje, że obiekt jest liczba całkowita ze znakiem dwóch bajtów.  
+ Wskazuje, że obiekt jest liczbą całkowitą ze znakiem dwubajtowym.  
   
  OBJECT_TYPE_U2  
- Wskazuje, że obiekt jest liczba całkowita bez znaku dwubajtowego.  
+ Wskazuje, że obiekt jest dwubajtową liczbą całkowitą bez znaku.  
   
  OBJECT_TYPE_I4  
- Wskazuje, że obiekt jest całkowita czwartego bajtu.  
+ Wskazuje, że obiekt jest liczbą całkowitą ze znakiem czterech bajtów.  
   
  OBJECT_TYPE_U4  
- Wskazuje, że obiekt jest liczba całkowita bez znaku czwartego bajtu.  
+ Wskazuje, że obiekt jest liczbą całkowitą bez znaku z czterema bajtami.  
   
  OBJECT_TYPE_I8  
- Wskazuje, że obiekt jest całkowita 8 bajtową.  
+ Wskazuje, że obiekt jest 8-bajtową liczbą całkowitą ze znakiem.  
   
  OBJECT_TYPE_U8  
- Wskazuje, że obiekt jest liczbą całkowitą bez znaku ośmiu bajtów.  
+ Wskazuje, że obiekt jest 8-bajtową liczbą całkowitą bez znaku.  
   
  OBJECT_TYPE_R4  
- Wskazuje, że obiekt jest czterobajtową liczbą zmiennoprzecinkową.  
+ Wskazuje, że obiekt jest liczbą zmiennoprzecinkową z czterema bajtami.  
   
  OBJECT_TYPE_R8  
- Wskazuje, że obiekt jest 8 bajtowa liczba zmiennoprzecinkowa.  
+ Wskazuje, że obiekt jest liczbą zmiennoprzecinkową o ośmiu bajtach.  
   
  OBJECT_TYPE_OBJECT  
  Wskazuje, że obiekt jest obiektem.  
   
  OBJECT_TYPE_NULL  
- Wskazuje, czy obiekt ma wartość NULL.  
+ Wskazuje, że obiekt ma wartość NULL.  
   
  OBJECT_TYPE_CLASS  
  Wskazuje, że obiekt jest klasą.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazywany jako argument do [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metody.  
+ Przeszedł jako argument do metod [Isprymitywobject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: ee.h  
+ Nagłówek: EE. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
+ [Element ispierwotny](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
  [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

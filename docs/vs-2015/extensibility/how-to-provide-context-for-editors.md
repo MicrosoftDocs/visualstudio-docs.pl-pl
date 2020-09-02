@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dostarczanie kontekstu edytory | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: udostępnianie kontekstu dla edytorów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,77 +11,77 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435897"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64858304"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Instrukcje: Dostarczanie kontekstu edytorów
+# <a name="how-to-provide-context-for-editors"></a>Instrukcje: dostarczanie kontekstu edytorom
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W edytorze kontekst jest aktywne, tylko wtedy, gdy Edytor ma fokus lub były wcześniej fokus natychmiast fokus został przeniesiony do okna narzędzi. Możesz podać kontekstu edytora, wykonując następujące czynności:  
+W przypadku edytora kontekst jest aktywny tylko wtedy, gdy Edytor ma fokus lub miał fokus bezpośrednio przed przeniesieniem fokusu do okna narzędzi. Kontekst dla edytora można podać, wykonując następujące czynności:  
   
-1. Utwórz pakiet z kontekstu.  
+1. Utwórz zbiór kontekstowy.  
   
-2. Opublikuj pakiet kontekstu identyfikatora elementu wyboru (SEID).  
+2. Opublikuj zbiór kontekstowy do wyboru identyfikatora elementu (SEID).  
   
-3. Obsługa kontekstu w zbiorze.  
+3. Zachowaj kontekst w zbiorze.  
   
-   Te zadania są objęte następujące procedury. Aby uzyskać więcej informacji na temat kontekstem wskazującym, zobacz **niezawodne programowania** w dalszej części tego tematu.  
+   Te zadania są objęte następującymi procedurami. Aby uzyskać więcej informacji na temat udostępniania kontekstu, zobacz temat **niezawodne programowanie** w dalszej części tego tematu.  
   
-### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Aby utworzyć pakiet z kontekstu dla edytora lub projektanta  
+### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Aby utworzyć zbiór kontekstowy dla edytora lub projektanta  
   
-1. Wywołaj `QueryService` na Twoje <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejs na potrzeby <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> usługi.  
+1. Wywołaj `QueryService` <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejs dla <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> usługi.  
   
-     Wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> zwracany jest interfejs.  
+     Zwracany jest wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> interfejsu.  
   
-2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> metodę, aby utworzyć nowy zbiór kontekstu lub kontekst podrzędny.  
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> metodę, aby utworzyć nowy kontekst lub zbiór kontekstowy.  
   
-     Wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> zwracany jest interfejs.  
+     Zwracany jest wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> interfejsu.  
   
-3. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> metodę, aby dodać atrybuty, wyszukiwanie słów kluczowych lub słów kluczowych F1 do zbioru kontekstu lub kontekst podrzędny.  
+3. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> metodę, aby dodać atrybuty, słowa kluczowe Lookup lub F1 słowa kluczowe do kontekstu lub podzbioru kontekstu.  
   
-4. Jeśli tworzysz pakiet kontekst podrzędny wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> metodę, aby połączyć zbiór kontekst podrzędny zbiór kontekst nadrzędnego.  
+4. Jeśli tworzysz zbiór kontekstowy, wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> metodę w celu połączenia z zbiorem kontekstu podrzędnego z zbiorem kontekstu nadrzędnego.  
   
-5. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> aby otrzymać powiadomienie po **dynamiczna Pomoc** okno jest aktualizacja.  
+5. Wywołaj, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> Aby otrzymać powiadomienie, gdy **dynamiczne okno pomocy** ma zostać zaktualizowane.  
   
-     Posiadanie **dynamiczna Pomoc** okno wywołanie edytora podczas jest gotowy do aktualizacji daje możliwość opóźnienia, zmieniając kontekstu, dopóki nie wystąpi aktualizacji. W ten sposób można poprawić wydajność, ponieważ umożliwia opóźnienie uruchamiania algorytmy czasochłonne, aż do czasu bezczynności systemu.  
+     Gdy **dynamiczne okno pomocy** wywołuje Edytor, gdy jest gotowy do aktualizacji, umożliwia opóźnienie zmiany kontekstu do momentu aktualizacji. W ten sposób można zwiększyć wydajność, ponieważ pozwala to opóźnić wykonywanie czasochłonnych algorytmów do momentu udostępnienia czasu bezczynności systemu.  
   
-### <a name="to-publish-the-context-bag-to-the-seid"></a>Aby opublikować pakiet kontekstu SEID  
+### <a name="to-publish-the-context-bag-to-the-seid"></a>Aby opublikować zbiór kontekstowy do SEID  
   
-1. Wywołaj `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> usługę, aby zwrócić wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfejsu.  
+1. Wywołaj `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> usługę, aby zwrócić wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfejsu.  
   
-2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, określając identyfikator elementu (`elementid` parametr) wartość SEID_UserContext, aby wskazać, że przekazujesz kontekstu na poziomie globalnym.  
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A> , określając wartość identyfikatora elementu ( `elementid` parametr) SEID_UserContext, aby wskazać, że jest przekazywany kontekst do poziomu globalnego.  
   
-3. Gdy edytora lub projektanta stanie się aktywny, wartości w jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> obiektu są propagowane do globalnego zaznaczenia. Konieczne jest ukończenie tego procesu na początku sesji, a następnie umieść wskaźnik do kontekście globalnym utworzone podczas wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
+3. Gdy Edytor lub Projektant staną się aktywne, wartości w jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> obiekcie są propagowane do zaznaczenia globalnego. Wystarczy wykonać ten proces tylko raz dla każdej sesji, a następnie przechowywać wskaźnik do globalnego kontekstu utworzonego po wywołaniu <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A> .  
   
 ### <a name="to-maintain-the-context-bag"></a>Aby zachować zbiór kontekstu  
   
-1. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> do upewnij się, że **dynamiczna Pomoc** wywołuje okna edytora lub projektanta przed jego aktualizacji.  
+1. Zaimplementuj, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> Aby upewnić się, że **dynamiczne okno pomocy** wywołuje Edytor lub projektanta przed aktualizacją.  
   
-     Dla każdego zbioru kontekstu, który jest nazywany <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> po zbiorze kontekstu jest tworzony i została zaimplementowana <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>, wywołania IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> powiadomić dostwcy kontekstu zostanie zaktualizowany pakiet kontekstu. To wywołanie służy do zmiany atrybutów i słowa kluczowe w zbiorze kontekstu i w dowolnym zbiory kontekst podrzędny przed **dynamiczna Pomoc** występuje Windows update.  
+     Dla każdego zbioru kontekstu, który został wywołany <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> po utworzeniu zbioru kontekstu i jego implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate> , IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> do powiadomienia dostawcy kontekstu, że zostanie zaktualizowany zbiór kontekstowy. Można użyć tego wywołania, aby zmienić atrybuty i słowa kluczowe w zbiorze kontekstowym oraz w każdym wypełnieniu kontekstu, przed aktualizacją **dynamicznego okna pomocy** .  
   
-2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> na zbiór kontekstu, aby wskazać, że edytora lub projektanta ma nowy kontekst.  
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> w zbiorze kontekstu, aby wskazać, że edytor lub Projektant ma nowy kontekst.  
   
-     Gdy **dynamiczna Pomoc** wywołania okna <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> aby wskazać, że jest on aktualizowany, edytora lub projektanta, można zaktualizować kontekstu odpowiednio do zbioru kontekst nadrzędnego i wszystkie zbiory kontekst podrzędny w tej chwili.  
+     Gdy **dynamiczne okno pomocy** wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> , aby wskazać, że jest aktualizowane, Edytor lub Projektant może zaktualizować kontekst odpowiednio dla zbioru kontekstu nadrzędnego i wszystkich odniesień kontekstu w tym czasie.  
   
     > [!NOTE]
-    > `SetDirty` Flaga jest automatycznie ustawiana na `true` zawsze, gdy kontekst jest dodane lub usunięte z pakietu kontekstu. **Dynamiczna Pomoc** okna tylko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> na zbiór kontekstu Jeśli `SetDirty` flaga jest ustawiona na `true`. Jest resetowana do `false` po aktualizacji.  
+    > `SetDirty`Flaga jest automatycznie ustawiana na `true` zawsze, gdy kontekst jest dodawany lub usuwany z zbioru kontekstowego. **Dynamiczne okno pomocy** wywołuje tylko <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> w zbiorze kontekstu, jeśli `SetDirty` flaga jest ustawiona na `true` . Jest resetowany do `false` po aktualizacji.  
   
-3. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> dodać kontekstowego do kolekcji aktywnego kontekstu lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> usunąć kontekst.  
+3. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> dodania kontekstu do aktywnej kolekcji kontekstu lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> usunięcia kontekstu.  
   
 ## <a name="robust-programming"></a>Niezawodne programowanie  
- Jeśli piszesz własnego edytora, należy wykonać wszystkie trzy procedury przedstawione w tym temacie, aby zapewnić kontekst dla edytora.  
+ W przypadku pisania własnych edytorów należy wykonać wszystkie trzy procedury przedstawione w tym temacie, aby zapewnić kontekst edytora.  
   
 > [!NOTE]
-> Aby prawidłowo Uaktywnij okno edytora lub projektanta i upewnij się, że routing poleceń są zaktualizowane prawidłowo, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> w składniku dokonanie okien fokus.  
+> Aby prawidłowo aktywować Edytor lub okno projektanta i upewnić się, że routing poleceń jest prawidłowo aktualizowany, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> składnik, aby uczynić go oknem koncentracji uwagi.  
   
- SEID to zbiór właściwości, które zmieniają się na podstawie wyboru. SEID informacje są dostępne za pośrednictwem globalnej zaznaczenia. Wybór globalnego jest podłączona do zdarzenia wyzwolone przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfejsu, i zawiera listę wszystkich elementów, która jest zaznaczone (bieżącego edytora, bieżącego okna narzędzi, bieżącej hierarchii i tak dalej).  
+ SEID to zbiór właściwości, które zmieniają się w zależności od wyboru. Informacje SEID są dostępne za pomocą wyboru globalnego. Globalne zaznaczenie jest przewodne do zdarzeń wyzwalanych przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfejs i zawiera listę wszystkich wybranych elementów (bieżący edytor, bieżące okno narzędzi, Bieżąca hierarchia itd.).  
   
- Projektanci i edytory w kontekście, które można zmieniać zawsze, gdy kursor jest przenoszony w programie word jest nieefektywne stale zaktualizować pakiet kontekstu. Aby ułatwić aktualizowanie bardziej wydajne, ilekroć wykryć cursor poruszanie się edytora lub okna projektanta, można wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A>. W ten sposób pozwala na potrzeby przechowywania zmiany kontekstu czasu bezczynności i środowiska IDE kontekstu usługa wysyła powiadomienie do edytora lub projektanta, **dynamiczna Pomoc** okna jest aktualizowany. To podejście jest używany w procedurze "Aby obsługa zbiór kontekstu" w tym temacie.  
+ W przypadku edytorów i projektantów, w których kontekst można zmienić za każdym razem, gdy kursor znajduje się w obrębie wyrazu, jest nieefektywna, aby stale aktualizować zbiór kontekstowy. Aby aktualizowanie było skuteczniejsze w dowolnym momencie, gdy wykryjesz kursor w edytorze lub oknie projektanta, możesz wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> . Dzięki temu można przechowywać zmiany kontekstu do czasu bezczynności, a usługa kontekstu IDE wysyła powiadomienie do edytora lub projektanta, że **dynamiczne okno pomocy** jest aktualizowane. Ta metoda jest używana w procedurze "aby zachować zbiór kontekstów" w tym temacie.  
   
- Po podaniu kontekstu działań w ramach Twojego edytora lub projektanta, należy podać z określonym słowem kluczowym F1, aby użytkownicy mogli uzyskać pomoc dotyczącą edytora lub projektanta, sam.  
+ Po dostarczeniu kontekstu dla działań w ramach edytora lub projektanta należy podać określone słowo kluczowe F1, aby umożliwić użytkownikom uzyskanie pomocy dotyczącej edytora lub projektanta.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>   
