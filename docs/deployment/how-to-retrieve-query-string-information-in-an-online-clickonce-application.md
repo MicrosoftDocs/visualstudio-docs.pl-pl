@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382188"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Instrukcje: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online

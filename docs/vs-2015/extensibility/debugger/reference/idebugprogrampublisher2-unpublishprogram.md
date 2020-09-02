@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgram | Dokumentacja firmy Microsoft
+title: 'IDebugProgramPublisher2:: UnpublishProgram | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05efc566cec0e7e885b16a4bb7c7e7d6256ac7b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146279"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
@@ -40,13 +40,13 @@ int UnpublishProgram(
   
 #### <a name="parameters"></a>Parametry  
  `pDebuggeeInterface`  
- [in] `IUnknown` Interfejsu do programu. To jest taka sama wartość przekazana do [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody i jednoznacznie identyfikuje programu usuwany (oznacza to, że jest ona używana jako plik cookie).  
+ podczas `IUnknown` Interfejs do programu. Jest to taka sama wartość, która jest dostarczana do metody [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) , a jednoznacznie identyfikuje program usuwany (oznacza to, że jest używany jako plik cookie).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aby udostępnić program aparaty debugowania i Menedżer debugowania sesji, należy użyć [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody.  
+ Aby udostępnić program dla aparatów debugowania i Menedżera debugowania sesji, należy użyć metody [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
