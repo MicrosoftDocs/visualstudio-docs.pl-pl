@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c6fa8712fb2ead56b78134758a954cb1d9ac68f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65680921"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), podczas ładowania modułu lub zwolnione.  
+Ten interfejs jest wysyłany przez aparat debugowania (DE) do Menedżera debugowania sesji (SDM) w przypadku ładowania lub zwalniania modułu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,25 +31,25 @@ IDebugModuleLoadEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- DE implementuje ten interfejs do raportu, czy moduł został załadowany lub zwolnione. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) dostęp do `IDebugEvent2` interfejsu.  
+ DE implementuje ten interfejs, aby zgłosić, że moduł został załadowany lub zwolniony. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany w tym samym obiekcie co ten interfejs. Model SDM używa [metody QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) do uzyskiwania dostępu do `IDebugEvent2` interfejsu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- DE tworzy i wysyła tego obiektu zdarzenia do raportu, moduł został załadowany lub zwolnione. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
+ Element DE tworzy i wysyła ten obiekt zdarzenia w celu zgłoszenia modułu, który został załadowany lub zwolniony. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , która jest dostarczana przez model SDM, gdy jest dołączona do debugowanego programu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugModuleLoadEvent2`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metodę `IDebugModuleLoadEvent2` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Pobiera moduł, który jest załadowany lub zwolnione.|  
+|[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Pobiera moduł, który jest ładowany lub zwolniony.|  
   
 ## <a name="remarks"></a>Uwagi  
- Program Visual Studio używa to zdarzenie, aby zachować **modułów** okna na bieżąco.  
+ Program Visual Studio używa tego zdarzenia, aby zachować aktualność okna **modułów** .  
   
 ## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

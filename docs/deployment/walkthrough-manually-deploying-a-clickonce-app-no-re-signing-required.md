@@ -1,5 +1,5 @@
 ---
-title: Ręczne wdrażanie ClickOnce zachowywanie znakowania aplikacji
+title: Ręcznie Wdróż aplikacje ClickOnce obsługujące znakowanie
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,87 +23,87 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263424"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu
-Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadaj mu klientowi do publikowania i wdrażania, tradycyjnie miał odbiorcy do manifestu wdrażania aktualizacji i ponownie zaloguj się. Która nadal jest preferowaną metodą w większości przypadków, .NET Framework 3.5 pozwala na tworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, które mogą być wdrażane przez klientów bez konieczności ponownie wygenerować nowy manifest wdrożenia. Aby uzyskać więcej informacji, zobacz [aplikacji wdrażania technologii ClickOnce do testowania i produkcji serwerów bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Przewodnik: ręczne wdrażanie aplikacji ClickOnce, która nie wymaga ponownego podpisywania i zachowuje informacje o znakowaniu
+Podczas tworzenia aplikacji, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a następnie przekazania jej klientowi do opublikowania i wdrożenia, klient tradycyjnie musiał zaktualizować manifest wdrożenia i ponownie go podpisać. Mimo że jest to metoda preferowana w większości przypadków, .NET Framework 3,5 umożliwia tworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, które mogą zostać wdrożone przez klientów bez konieczności ponownego generowania nowego manifestu wdrożenia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji ClickOnce do testowania i serwerów produkcyjnych bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
- Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadać mu klientowi do publikowania i wdrażania, można użyć znakowania przez klienta lub można zachować znakowanie aplikacji. Na przykład jeśli aplikacja jest pojedynczą aplikacją własności, warto zachować znakowanie. Jeśli aplikacja jest wysoce dostosowane dla każdego klienta, możesz chcieć użyć znakowania przez klienta. .NET Framework 3.5 umożliwia zachowanie znakowanie, informacje o wydawcy i sygnatury bezpieczeństwa po zapewnieniu umożliwia wdrażanie aplikacji dla organizacji. Aby uzyskać więcej informacji, zobacz [ClickOnce tworzenie aplikacji dla innych użytkowników wdrożyć](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
+ Gdy tworzysz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację, a następnie przekażesz ją do klienta w celu opublikowania i wdrożenia, aplikacja może korzystać z marki klienta lub można zachować znakowanie. Jeśli na przykład aplikacja jest aplikacją jednostronną, możesz chcieć zachować znakowanie. Jeśli aplikacja jest wysoce dostosowana dla każdego klienta, warto użyć znaku marki klienta. .NET Framework 3,5 pozwala zachować oznakowanie, informacje o wydawcy i podpisie zabezpieczeń w przypadku udzielenia aplikacji do wdrożenia w organizacji. Aby uzyskać więcej informacji, zobacz [Tworzenie aplikacji ClickOnce dla innych do wdrożenia](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
-> W tym instruktażu utworzysz wdrożeń ręcznie za pomocą narzędzia wiersza polecenia *Mage.exe* lub graficznego narzędzia *MageUI.exe*. Aby uzyskać więcej informacji na temat ręcznego wdrożenia, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> W tym instruktażu utworzysz wdrożenia ręcznie przy użyciu narzędzia wiersza polecenia *Mage.exe* lub *MageUI.exe*narzędzia graficznego. Aby uzyskać więcej informacji na temat wdrożeń ręcznych, zobacz [Przewodnik: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Aby wykonać kroki opisane w tym przewodniku potrzebne są następujące elementy:
+ Aby wykonać kroki opisane w tym instruktażu, potrzebne są następujące elementy:
 
-- Aplikacja Windows Forms, która wszystko będzie gotowe do wdrożenia. Ta aplikacja zostanie wcześniej określano *WindowsFormsApp1*.
+- Aplikacja Windows Forms, która jest gotowa do wdrożenia. Ta aplikacja będzie określana jako *WindowsFormsApp1*.
 
 - Visual Studio lub Windows SDK.
 
-### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Do wdrożenia z wieloma wdrożenia i obsługę znakowania przy użyciu Mage.exe aplikacji ClickOnce
+### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Aby wdrożyć aplikację ClickOnce z obsługą wielu oznakowań przy użyciu Mage.exe
 
-1. Otwórz wiersz polecenia programu Visual Studio lub [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] wiersz polecenia i przejdź do katalogu, w którym będą przechowywane są Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] plików.
+1. Otwórz wiersz polecenia programu Visual Studio lub [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] wiersz polecenia i przejdź do katalogu, w którym będą przechowywane [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliki.
 
-2. Utwórz katalog o nazwie po bieżąca wersja wdrożenia. Jeśli po raz pierwszy, aplikacja jest wdrażana, prawdopodobnie wybierzesz opcję **1.0.0.0**.
+2. Utwórz katalog o nazwie po bieżącej wersji wdrożenia. Jeśli aplikacja jest wdrażana po raz pierwszy, prawdopodobnie wybierz pozycję **1.0.0.0**.
 
    > [!NOTE]
-   > Wersja wdrożenie może się różnić od wersji plików aplikacji.
+   > Wersja wdrożenia może różnić się od wersji plików aplikacji.
 
-3. Utwórz podkatalog o nazwie **bin** i skopiuj wszystkie pliki aplikacji w tym miejscu, w tym pliki wykonywalne, zestawy, zasobów i plików danych.
+3. Utwórz podkatalog o nazwie **bin** i skopiuj do niego wszystkie pliki aplikacji, w tym pliki wykonywalne, zestawy, zasoby i pliki danych.
 
-4. Generuj manifest aplikacji przy użyciu wywołania programu Mage.exe.
+4. Wygeneruj manifest aplikacji z wywołaniem do Mage.exe.
 
    ```cmd
    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"
    ```
 
-5. Zaloguj się w manifeście aplikacji za pomocą certyfikatu cyfrowego.
+5. Podpisz manifest aplikacji z certyfikatem cyfrowym.
 
    ```cmd
    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx
    ```
 
-6. Generowanie manifestu wdrażania z wywołaniem *Mage.exe*. Domyślnie *Mage.exe* spowoduje oznaczenie Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia jako zainstalowanych aplikacji, tak że można uruchomić zarówno online i offline. Aby udostępnić aplikację, tylko wtedy, gdy użytkownik jest w trybie online, należy użyć `-i` argumentu o wartości `f`. Ponieważ ta aplikacja będzie móc korzystać z funkcji wdrażania w wielu, Wyklucz `-providerUrl` argument *Mage.exe*. (W wersjach programu .NET Framework wcześniejszych niż wersja 3.5, z wyłączeniem `-providerUrl` dla aplikacji w trybie offline spowoduje wystąpienie błędu.)
+6. Wygeneruj manifest wdrożenia z wywołaniem do *Mage.exe*. Domyślnie *Mage.exe* oznacza [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenie jako zainstalowaną aplikację, aby można było uruchomić je w trybie online i offline. Aby aplikacja była dostępna tylko wtedy, gdy użytkownik jest w trybie online, użyj `-i` argumentu z wartością `f` . Ponieważ ta aplikacja będzie korzystać z funkcji wielu wdrożeń, należy wykluczyć `-providerUrl` argument do *Mage.exe*. (W wersjach .NET Framework wcześniejszych niż wersja 3,5, wykluczanie `-providerUrl` dla aplikacji w trybie offline spowoduje wystąpienie błędu).
 
    ```cmd
    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest
    ```
 
-7. Zrezygnujesz z podpisania manifestu wdrażania.
+7. Nie Podpisz manifestu wdrożenia.
 
-8. Podaj wszystkie pliki do klientów, którzy wdroży aplikację w jego sieci.
+8. Podaj wszystkie pliki dla klienta, które będą wdrażać aplikację w sieci.
 
-9. W tym momencie klienta muszą podpisać manifest wdrożenia przy użyciu własnej automatycznie wygenerowany certyfikat. Na przykład, jeśli klient działa w przypadku firma o nazwie Adventure Works, on wygenerować certyfikat z podpisem własnym za pomocą *MakeCert.exe* narzędzia. Następnie użyj *Pvk2pfx.exe* narzędzie do łączenia plików utworzonych przez *MakeCert.exe* do pliku PFX, który może być przekazywany do *Mage.exe*.
+9. W tym momencie klient musi podpisać manifest wdrożenia własnym własnym certyfikatem wygenerowanym przez siebie. Na przykład jeśli klient współpracuje z firmą o nazwie Adventure Works, może wygenerować certyfikat z podpisem własnym za pomocą narzędzia *MakeCert.exe* . Następnie użyj *Pvk2pfx.exe* narzędzia do łączenia plików utworzonych przez *MakeCert.exe* do pliku PFX, który może zostać przesłany do *Mage.exe*.
 
     ```cmd
     makecert -r -pe -n "CN=Adventure Works" -sv MyCert.pvk MyCert.cer
     pvk2pfx.exe -pvk MyCert.pvk -spc MyCert.cer -pfx MyCert.pfx
     ```
 
-10. Klient używa następnie ten certyfikat do podpisania manifestu wdrażania.
+10. Klient następnym używa tego certyfikatu do podpisania manifestu wdrożenia.
 
     ```cmd
     mage -Sign WindowsFormsApp1.application -CertFile MyCert.pfx
     ```
 
-11. Klient wdraża ją do użytkowników.
+11. Klient wdraża aplikację dla swoich użytkowników.
 
-### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Do wdrożenia z wieloma wdrożenia i obsługę znakowania przy użyciu MageUI.exe aplikacji ClickOnce
+### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Aby wdrożyć aplikację ClickOnce z obsługą wielu oznakowań przy użyciu MageUI.exe
 
-1. Otwórz wiersz polecenia programu Visual Studio lub [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] wiersz polecenia i przejdź do katalogu, w którym będą przechowywane są Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] plików.
+1. Otwórz wiersz polecenia programu Visual Studio lub [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] wiersz polecenia i przejdź do katalogu, w którym będą przechowywane [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliki.
 
-2. Utwórz podkatalog o nazwie **bin** i skopiuj wszystkie pliki aplikacji w tym miejscu, w tym pliki wykonywalne, zestawy, zasobów i plików danych.
+2. Utwórz podkatalog o nazwie **bin** i skopiuj do niego wszystkie pliki aplikacji, w tym pliki wykonywalne, zestawy, zasoby i pliki danych.
 
-3. Tworzenie podkatalogu nazwanym tak bieżąca wersja wdrożenia. Jeśli po raz pierwszy, aplikacja jest wdrażana, prawdopodobnie wybierzesz opcję **1.0.0.0**.
+3. Utwórz podkatalog o nazwie z bieżącą wersją wdrożenia. Jeśli aplikacja jest wdrażana po raz pierwszy, prawdopodobnie wybierz pozycję **1.0.0.0**.
 
    > [!NOTE]
-   > Wersja wdrożenie może się różnić od wersji plików aplikacji.
+   > Wersja wdrożenia może różnić się od wersji plików aplikacji.
 
-4. Przenieś \\ **bin** katalog do katalogu, który został utworzony w kroku 2.
+4. Przenieś katalog \\ **bin** do katalogu utworzonego w kroku 2.
 
 5. Uruchom narzędzie graficzne *MageUI.exe*.
 
@@ -111,50 +111,50 @@ Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
    MageUI.exe
    ```
 
-6. Utwórz nowy manifest aplikacji przez wybranie **pliku**, **New**, **Manifest aplikacji** z menu.
+6. Utwórz nowy manifest aplikacji, wybierając kolejno opcje **plik**, **Nowy**, **manifest aplikacji** .
 
-7. Domyślny **nazwa** wprowadź nazwę i numer wersji tego wdrożenia. Ponadto należy podać wartość **wydawcy**, która będzie służyć jako nazwa folderu dla łącza skrót aplikacji w Start menu po jego wdrożeniu.
+7. Na karcie **Nazwa** domyślna wprowadź nazwę i numer wersji tego wdrożenia. Należy również podać wartość **wydawcy**, która będzie używana jako nazwa folderu dla linku skrótu aplikacji w menu Start podczas jego wdrażania.
 
-8. Wybierz **Opcje aplikacji** kartę, a następnie kliknij przycisk **Manifest aplikacji użyj uzyskać zaufania**. Spowoduje to włączenie znakowania innych firm, w tym [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
+8. Wybierz kartę **Opcje aplikacji** , a następnie kliknij pozycję **Użyj manifestu aplikacji, aby uzyskać informacje o zaufaniu**. Spowoduje to włączenie znakowania innej firmy dla tej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
 
-9. Wybierz **pliki** kartę, a następnie kliknij przycisk **Przeglądaj** znajdujący się obok **katalogu aplikacji** pola tekstowego.
+9. Wybierz kartę **pliki** , a następnie kliknij przycisk **Przeglądaj** obok pola tekstowego **katalog aplikacji** .
 
-10. Wybierz katalog, który zawiera pliki aplikacji, które zostały utworzone w kroku 2, a następnie kliknij przycisk **OK** okno dialogowe wyboru folderu.
+10. Wybierz katalog zawierający pliki aplikacji, które zostały utworzone w kroku 2, a następnie kliknij przycisk **OK** w oknie dialogowym Wybieranie folderu.
 
-11. Kliknij przycisk **wypełniania** przycisk, aby dodać pliki aplikacji do listy plików. Jeśli aplikacja zawiera więcej niż jeden plik wykonywalny, oznacz głównego pliku wykonywalnego dla tego wdrożenia, co aplikacja uruchamiania, wybierając **punktu wejścia** z **typ pliku** listy rozwijanej. (Jeśli aplikacja zawiera tylko jeden plik wykonywalny, *MageUI.exe* oznaczy go dla Ciebie.)
+11. Kliknij przycisk **Wypełnij** , aby dodać do listy plików wszystkie pliki aplikacji. Jeśli aplikacja zawiera więcej niż jeden plik wykonywalny, Oznacz główny plik wykonywalny dla tego wdrożenia jako aplikację startową, wybierając pozycję **punkt wejścia** z listy rozwijanej **Typ pliku** . (Jeśli aplikacja zawiera tylko jeden plik wykonywalny, *MageUI.exe* oznaczyć ją jako użytkownika).
 
-12. Wybierz **wymagane są uprawnienia** kartę, a następnie wybierz poziom zaufania, potrzebujesz aplikacji do potwierdzenia. Wartość domyślna to **pełne zaufanie**, który będzie odpowiedni dla większości aplikacji.
+12. Wybierz kartę **wymagane uprawnienia** i wybierz poziom zaufania, który ma być używany przez aplikację. Wartość domyślna to **Pełna relacja zaufania**, która będzie odpowiednia dla większości aplikacji.
 
-13. Wybierz **pliku**, **Zapisz** z menu i Zapisz w manifeście aplikacji. Zostanie wyświetlony monit podpisać manifest aplikacji, podczas zapisywania.
+13. Wybierz pozycję **plik**, **Zapisz** z menu i Zapisz manifest aplikacji. Po jego zapisaniu zostanie wyświetlony monit o podpisanie manifestu aplikacji.
 
-14. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj **logowania jako plik certyfikatu** opcji, a następnie wybierz certyfikat z systemu plików, przy użyciu wielokropka ( **...** ) przycisku.
+14. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj opcji **Zaloguj jako certyfikat** , a następnie wybierz certyfikat z systemu plików przy użyciu przycisku wielokropka (**...**).
 
-     —lub—
+     -lub-
 
-     Jeśli certyfikat jest przechowywany w magazynie certyfikatów, które są dostępne z komputera, wybierz opcję **logowania przy użyciu opcji przechowywanego certyfikatu**, a następnie wybierz certyfikat z podanej listy.
+     Jeśli certyfikat jest przechowywany w magazynie certyfikatów, do którego można uzyskać dostęp z komputera, wybierz **opcję Podpisz z przechowywanym certyfikatem**i wybierz certyfikat z podanej listy.
 
-15. Wybierz **pliku**, **New**, **manifestu wdrażania** z menu, aby utworzyć manifest wdrożenia, a następnie **nazwa** kartę, podaj Nazwa i numer wersji (**1.0.0.0** w tym przykładzie).
+15. Wybierz pozycję **plik**, **Nowy**, **manifest wdrożenia** z menu, aby utworzyć manifest wdrożenia, a następnie na karcie **Nazwa** Podaj nazwę i numer wersji (**1.0.0.0** w tym przykładzie).
 
-16. Przełącz się do **aktualizacji** kartę, a następnie określ, jak często ma tę aplikację, aby zaktualizować. Jeśli aplikacja używa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrażania interfejsu API, aby sprawdzał dostępność aktualizacji, wyczyść pole wyboru przy opcji **ta aplikacja ma sprawdzać dostępność aktualizacji**.
+16. Przejdź do karty **Aktualizacja** i określ, jak często aplikacja ma być aktualizowana. Jeśli aplikacja używa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] interfejsu API wdrażania do sprawdzenia, czy są aktualizacje, wyczyść pole wyboru etykieta **Ta aplikacja powinna sprawdzać dostępność aktualizacji**.
 
-17. Przełącz się do **odwołania aplikacji** kartę. Można wstępnie wypełnić wszystkie wartości na tej karcie, klikając **wybierz manifestu** przycisk i wybierając polecenie manifest aplikacji utworzony w poprzednich krokach.
+17. Przejdź do karty **odwołanie do aplikacji** . Możesz wstępnie wypełnić wszystkie wartości na tej karcie, klikając przycisk **Wybierz manifest** i wybierając manifest aplikacji utworzony w poprzednich krokach.
 
-18. Wybierz **Zapisz** i zapisanie pliku manifestu wdrożenia na dysku. Zostanie wyświetlony monit podpisać manifest aplikacji, podczas zapisywania. Kliknij przycisk **anulować** zapisanie manifestu bez rejestrowania jej.
+18. Wybierz pozycję **Zapisz** i Zapisz manifest wdrożenia na dysku. Po jego zapisaniu zostanie wyświetlony monit o podpisanie manifestu aplikacji. Kliknij przycisk **Anuluj** , aby zapisać manifest bez podpisywania.
 
-19. Podaj wszystkie pliki aplikacji do klienta.
+19. Podaj do klienta wszystkie pliki aplikacji.
 
-20. W tym momencie klienta muszą podpisać manifest wdrożenia przy użyciu własnej automatycznie wygenerowany certyfikat. Na przykład, jeśli klient działa w przypadku firma o nazwie Adventure Works, on wygenerować certyfikat z podpisem własnym za pomocą *MakeCert.exe* narzędzia. Następnie użyj *Pvk2pfx.exe* narzędzie do łączenia plików utworzonych przez *MakeCert.exe* do pliku PFX, który może być przekazywany do *MageUI.exe*.
+20. W tym momencie klient musi podpisać manifest wdrożenia własnym własnym certyfikatem wygenerowanym przez siebie. Na przykład jeśli klient współpracuje z firmą o nazwie Adventure Works, może wygenerować certyfikat z podpisem własnym za pomocą narzędzia *MakeCert.exe* . Następnie użyj *Pvk2pfx.exe* narzędzia do łączenia plików utworzonych przez *MakeCert.exe* do pliku PFX, który może zostać przesłany do *MageUI.exe*.
 
     ```cmd
     makecert -r -pe -n "CN=Adventure Works" -sv MyCert.pvk MyCert.cer
     pvk2pfx.exe -pvk MyCert.pvk -spc MyCert.cer -pfx MyCert.pfx
     ```
 
-21. Wygenerowany certyfikatem klienta teraz podpisuje manifest wdrożenia na przez otwarcie manifestu wdrażania w *MageUI.exe*, a następnie zapisz go. Gdy pojawi się okno dialogowe podpisywania, klient wybiera **logowania jako plik certyfikatu** opcji, a następnie wybierze plik PFX, został on zapisany na dysku.
+21. Po wygenerowaniu certyfikatu klient jest teraz podpisem manifestu wdrożenia, otwierając manifest wdrożenia w *MageUI.exe*, a następnie zapisując go. Gdy zostanie wyświetlone okno dialogowe podpisywania, klient wybierze opcję **Podpisz jako plik certyfikatu** i wybierze plik PFX zapisany na dysku.
 
-22. Klient wdraża ją do użytkowników.
+22. Klient wdraża aplikację dla swoich użytkowników.
 
-## <a name="see-also"></a>Zobacz także
-- [Mage.exe (narzędzie generowania manifestu i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [MageUI.exe (narzędzie generowania i edytowania manifestu, klient z interfejsem graficznym)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+## <a name="see-also"></a>Zobacz też
+- [Mage.exe (Narzędzie tworzenia i edycji manifestów)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+- [MageUI.exe (Narzędzie tworzenia i edycji manifestów, klient graficzny)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [MakeCert](/windows/desktop/SecCrypto/makecert)

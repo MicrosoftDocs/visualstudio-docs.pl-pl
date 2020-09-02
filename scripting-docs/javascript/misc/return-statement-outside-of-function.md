@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 32eadcf5ae88dbe64c8ccdb3effbb85bc79f9b32
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816738"
 ---
 # <a name="return-statement-outside-of-function"></a>Instrukcja „return" poza funkcją
 Użyto `return` instrukcji w globalnym zakresie kodu. `return`Instrukcja powinna znajdować się tylko w treści funkcji.  
   
- Wywoływanie funkcji z `()` operatorem jest wyrażeniem. Wszystkie wyrażenia mają wartości; `return`instrukcja służy do określenia wartości zwracanej przez funkcję. Formularz ogólny:  
+ Wywoływanie funkcji z `()` operatorem jest wyrażeniem. Wszystkie wyrażenia mają wartości; `return` instrukcja służy do określenia wartości zwracanej przez funkcję. Formularz ogólny:  
   
 ```js
   
@@ -41,7 +41,7 @@ return [ expression ];
   
 - Usuń `return` instrukcję z głównej treści kodu (zakres globalny).  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Return — Instrukcja](../../javascript/reference/return-statement-javascript.md)   
  [Obiekt Function](../../javascript/reference/function-object-javascript.md)   
  [caller, właściwość (Function)](../../javascript/reference/caller-property-function-javascript.md)

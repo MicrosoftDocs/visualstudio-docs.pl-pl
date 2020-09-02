@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fc44e9e1a9a1d17d3f5b0f31515e2402e9512c55
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332212"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries, funkcja
@@ -39,11 +39,11 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pProvider`Obiekt dostawcy został wcześniej zainicjowany przez CvInitProvider —. Nie może mieć wartości NULL.
+ `pProvider` Obiekt dostawcy został wcześniej zainicjowany przez CvInitProvider —. Nie może mieć wartości NULL.
 
- `pSeriesName`Nazwa serii znaczników. Nie może mieć wartości NULL, ale jest dozwolony pusty ciąg.
+ `pSeriesName` Nazwa serii znaczników. Nie może mieć wartości NULL, ale jest dozwolony pusty ciąg.
 
- `ppMarkerSeries`Adres zmiennej wyjściowej, w której będzie przechowywany kontekst serii znaczników. Nie może mieć wartości NULL.
+ `ppMarkerSeries` Adres zmiennej wyjściowej, w której będzie przechowywany kontekst serii znaczników. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
  S_OK, gdy seria znaczników zostanie pomyślnie utworzona lub kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makr zakończonych powodzeniem i zakończonych niepowodzeniem.

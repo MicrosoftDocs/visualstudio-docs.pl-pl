@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348324"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Korzystanie z okien pamięci w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
@@ -113,7 +113,7 @@ W aplikacjach kodu natywnego można używać nazw rejestrów jako wyrażeń dyna
 
 1. W polu **adres** okna **pamięci** wprowadź wyrażenie wskaźnika, które znajduje się w bieżącym zakresie. W zależności od języka może być konieczne jego wypróbowanie.
 
-2. Naciśnij klawisz **Enter**.
+2.  Naciśnij klawisz **Enter**.
 
    W przypadku użycia polecenia Debug, takiego jak **Step**, adres pamięci wyświetlany w polu **adres** i w górnej części okna **pamięci** automatycznie zmienia się w miarę zmiany wskaźnika.
 

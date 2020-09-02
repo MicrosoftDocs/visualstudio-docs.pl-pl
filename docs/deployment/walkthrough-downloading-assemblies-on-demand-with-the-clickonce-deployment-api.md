@@ -1,5 +1,5 @@
 ---
-title: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce
+title: Pobierz zestawy na żądanie za pomocą interfejsu API wdrażania ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,24 +17,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f52d853399bb568407b5022dca7f6288e3901a7a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66262902"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Przewodnik: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce
-Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Jednak mogą mieć części aplikacji, które są używane w małej grupie użytkowników. W tym przypadku chcesz pobrać zestaw tylko wtedy, gdy tworzysz w jednym z jej typów. Następujące Instruktaż pokazuje, jak oznaczyć określone zestawy w aplikacji jako "opcjonalny", jak je pobrać za pomocą klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy wymagane przez środowisko uruchomieniowe języka wspólnego (CLR).
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Przewodnik: pobieranie zestawów na żądanie przy użyciu interfejsu API wdrażania ClickOnce
+Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji są pobierane podczas pierwszego uruchomienia aplikacji. Mogą jednak istnieć części aplikacji, które są używane przez niewielki zestaw użytkowników. W takim przypadku należy pobrać zestaw tylko podczas tworzenia jednego z jego typów. W poniższym instruktażu pokazano, jak oznaczyć pewne zestawy w aplikacji jako "opcjonalne" oraz jak pobierać je przy użyciu klas w <xref:System.Deployment.Application> przestrzeni nazw, gdy program środowiska uruchomieniowego języka wspólnego (CLR) ich żąda.
 
 > [!NOTE]
-> Aplikacja będzie mieć do uruchamiania w trybie pełnego zaufania, aby użyć tej procedury.
+> Aby można było użyć tej procedury, aplikacja będzie musiała działać w trybie pełnego zaufania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Potrzebujesz jednego z następujących składników w celu przeprowadzenia tego instruktażu:
+ Aby ukończyć ten przewodnik, musisz mieć jeden z następujących składników:
 
-- Windows SDK. Zestaw Windows SDK można pobrać z Microsoft Download Center.
+- Windows SDK. Windows SDK można pobrać z centrum pobierania Microsoft.
 
-- Program Visual Studio.
+- Programu Visual Studio.
 
 ## <a name="create-the-projects"></a>Tworzenie projektów
 
@@ -42,22 +42,22 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 
 1. Utwórz katalog o nazwie ClickOnceOnDemand.
 
-2. Otwórz wiersz polecenia programu Windows SDK lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia.
+2. Otwórz wiersz polecenia Windows SDK lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersz polecenia.
 
 3. Przejdź do katalogu ClickOnceOnDemand.
 
-4. Wygeneruj parę kluczy publiczny/prywatny, korzystając z następującego polecenia:
+4. Wygeneruj parę kluczy publiczny/prywatny przy użyciu następującego polecenia:
 
    ```cmd
    sn -k TestKey.snk
    ```
 
-5. Za pomocą Notatnika lub innego edytora tekstu, zdefiniuj klasę o nazwie `DynamicClass` za pomocą pojedynczej właściwości o nazwie `Message`.
+5. Za pomocą Notatnika lub innego edytora tekstów, zdefiniuj klasę o nazwie `DynamicClass` z pojedynczą właściwością o nazwie `Message` .
 
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
 
-6. Zapisz tekst w pliku o nazwie *ClickOnceLibrary.cs* lub *ClickOnceLibrary.vb*, w zależności od języka, możesz użyć do *ClickOnceOnDemand* katalogu.
+6. Zapisz tekst jako plik o nazwie *ClickOnceLibrary.cs* lub *ClickOnceLibrary. vb*, w zależności od używanego języka, do katalogu *ClickOnceOnDemand* .
 
 7. Skompiluj plik do zestawu.
 
@@ -69,24 +69,24 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
    vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb
    ```
 
-8. Aby uzyskać token klucza publicznego dla zestawu, należy użyć następującego polecenia:
+8. Aby uzyskać token klucza publicznego dla zestawu, użyj następującego polecenia:
 
    ```cmd
    sn -T ClickOnceLibrary.dll
    ```
 
-9. Utwórz nowy plik przy użyciu tekstu w edytorze, a następnie wprowadź poniższy kod. Ten kod tworzy aplikację Windows Forms, która pobiera zestawu ClickOnceLibrary, gdy jest to wymagane.
+9. Utwórz nowy plik za pomocą edytora tekstów i wprowadź następujący kod. Ten kod tworzy aplikację Windows Forms, która pobiera zestaw ClickOnceLibrary, gdy jest to wymagane.
 
      [!code-csharp[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
      [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]
 
-10. W kodzie, Znajdź wywołanie <xref:System.Reflection.Assembly.LoadFile%2A>.
+10. W kodzie Znajdź wywołanie <xref:System.Reflection.Assembly.LoadFile%2A> .
 
-11. Ustaw`PublicKeyToken` wartość, która pobranym wcześniej.
+11. Ustaw `PublicKeyToken` wartość, która została pobrana wcześniej.
 
-12. Zapisz plik jako *Form1.cs* lub *Form1.vb*.
+12. Zapisz plik jako *Form1.cs* lub *Form1. vb*.
 
-13. Skompiluj go do pliku wykonywalnego przy użyciu następującego polecenia.
+13. Skompiluj ją w pliku wykonywalnym przy użyciu następującego polecenia.
 
     ```csharp
     csc /target:exe /reference:ClickOnceLibrary.dll Form1.cs
@@ -98,33 +98,33 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
 
 ## <a name="mark-assemblies-as-optional"></a>Oznacz zestawy jako opcjonalne
 
-#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Aby oznaczyć zestawów jako opcjonalne w aplikacji ClickOnce za pomocą MageUI.exe
+#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Aby oznaczyć zestawy jako opcjonalne w aplikacji ClickOnce przy użyciu MageUI.exe
 
-1. Za pomocą *MageUI.exe*, utworzyć manifest aplikacji, zgodnie z opisem w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest aplikacji, użyj następujących ustawień:
+1. Korzystając z *MageUI.exe*, Utwórz manifest aplikacji zgodnie z opisem w [przewodniku: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Użyj następujących ustawień manifestu aplikacji:
 
-    - Nazwy w manifeście aplikacji `ClickOnceOnDemand`.
+    - Nazwij manifest aplikacji `ClickOnceOnDemand` .
 
-    - Na **pliki** strony w *ClickOnceLibrary.dll* wierszy, ustawianie **typ pliku** kolumny **Brak**.
+    - Na stronie **pliki** w wierszu *ClickOnceLibrary.dll* ustaw wartość kolumny **Typ pliku** na **Brak**.
 
-    - Na **pliki** stronie *ClickOnceLibrary.dll* wiersz, wpisz `ClickOnceLibrary.dll` w **grupy** kolumny.
+    - Na stronie **pliki** w wierszu *ClickOnceLibrary.dll* wpisz `ClickOnceLibrary.dll` w kolumnie **Grupa** .
 
-2. Za pomocą *MageUI.exe*, utworzyć manifest wdrożenia, zgodnie z opisem w [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Manifest wdrożenia, użyj następujących ustawień:
+2. Korzystając z *MageUI.exe*, Utwórz manifest wdrożenia zgodnie z opisem w [przewodniku: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Użyj następujących ustawień manifestu wdrożenia:
 
-    - Nazwa pliku manifestu wdrożenia `ClickOnceOnDemand`.
+    - Nazwij manifest wdrożenia `ClickOnceOnDemand` .
 
 ## <a name="testing-the-new-assembly"></a>Testowanie nowego zestawu
 
 #### <a name="to-test-your-on-demand-assembly"></a>Aby przetestować zestaw na żądanie
 
-1. Przekaż swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia na serwerze sieci Web.
+1. Przekaż [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenie na serwer sieci Web.
 
-2. Rozpocznij aplikacja wdrożona za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] z przeglądarki internetowej, wprowadzając adres URL do manifestu wdrażania. Jeśli wywołasz swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji `ClickOnceOnDemand`i przekaż go do katalogu głównego domeny adatum.com, adres URL będzie wyglądać następująco:
+2. Rozpocznij wdrażanie aplikacji przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] przeglądarki sieci Web, wprowadzając adres URL do manifestu wdrożenia. Jeśli wywołasz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikację `ClickOnceOnDemand` i przekażesz ją do katalogu głównego adatum.com, adres URL będzie wyglądać następująco:
 
    ```
    http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application
    ```
 
-3. Gdy pojawi się główny formularz, naciśnij klawisz <xref:System.Windows.Forms.Button>. Powinien zostać wyświetlony ciąg w okno komunikatu, która odczytuje "Hello, World!".
+3. Gdy zostanie wyświetlony główny formularz, naciśnij klawisz <xref:System.Windows.Forms.Button> . W oknie komunikatu powinien zostać wyświetlony ciąg, który odczytuje wartość "Hello, World!".
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:System.Deployment.Application.ApplicationDeployment>

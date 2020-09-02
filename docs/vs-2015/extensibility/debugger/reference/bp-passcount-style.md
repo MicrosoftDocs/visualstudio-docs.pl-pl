@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT_STYLE | Dokumentacja firmy Microsoft
+title: BP_PASSCOUNT_STYLE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: deb4ce7c464e8518faff55957e1873ef1cd92c39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153371"
 ---
-# <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
+# <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa warunek skojarzony z liczbą — dostęp próbny punkt przerwania, który powoduje, że punkt przerwania uruchomić.  
+Określa warunek skojarzony z licznikiem przebiegu punktu przerwania, który powoduje, że punkt przerwania jest wyzwalany.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,24 +47,24 @@ public enum enum_BP_PASSCOUNT_STYLE { 
   
 ## <a name="members"></a>Elementy członkowskie  
  BP_PASSCOUNT_NONE  
- Określa styl liczba — dostęp próbny nie w punkt przerwania.  
+ Określa styl liczby przebiegów przerwań.  
   
  BP_PASSCOUNT_EQUAL  
- Ustawia styl punkt przerwania — dostęp próbny liczba wartość. Punkt przerwania jest uruchamiana, gdy liczba przypadków, gdy zostanie osiągnięty punkt przerwania jest równa Liczba — dostęp próbny.  
+ Ustawia styl liczby przebiegów punktu przerwania na równy. Punkt przerwania jest uruchamiany, gdy liczba trafień punktu przerwania jest większa niż liczba przebiegów.  
   
  BP_PASSCOUNT_EQUAL_OR_GREATER  
- Ustawia styl liczba — dostęp próbny punktu przerwania równym lub większym. Punkt przerwania jest uruchamiana, gdy liczba przypadków, gdy zostanie osiągnięty punkt przerwania jest równa lub większa niż liczba — dostęp próbny.  
+ Ustawia styl liczby przebiegów punktu przerwania na równy lub większy. Punkt przerwania jest uruchamiany, gdy liczba trafień punktu przerwania jest równa lub większa niż liczba przebiegów.  
   
  BP_PASSCOUNT_MOD  
- Określa modulo Liczba przebiegów. Na przykład, jeśli liczba — dostęp próbny jest typu `BP_PASSCOUNT_MOD` i przekaż wartość licznika jest 4, uruchamiany punkt przerwania, za każdym razem, gdy liczba trafień jest wielokrotnością liczby 4.  
+ Określa liczbę przebiegów modulo. Na przykład, jeśli liczba przebiegów jest typu `BP_PASSCOUNT_MOD` i wartość liczby przeskoków wynosi 4, punkt przerwania jest uruchamiany za każdym razem, gdy liczba trafień jest wielokrotnością 4.  
   
 ## <a name="remarks"></a>Uwagi  
- Używany do `stylePassCount` członkiem [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która z kolei jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.  
+ Używane dla `stylePassCount` składowej struktury [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) , która jest w przekształcaniu składowej struktur [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

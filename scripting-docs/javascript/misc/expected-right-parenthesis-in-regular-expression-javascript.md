@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: af32127476c83100c0340021428e3abc572ef2f7
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815646"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Oczekiwano znaku „)" w wyrażeniu regularnym (JavaScript)
@@ -31,6 +31,6 @@ Podjęto próbę utworzenia przechwycenia wyrażenia regularnego, potwierdzenia 
     > [!NOTE]
     > Jeśli chcesz dopasować pojedyncze nawiasy, należy wyjść z ukośnikiem odwrotnym \\ (-tak, aby nie był interpretowany jako znak specjalny przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Obiekt wyrażenia regularnego](../../javascript/reference/regular-expression-object-javascript.md)   
  [Składnia wyrażenia regularnego (JavaScript)](https://msdn.microsoft.com/library/1400241x)

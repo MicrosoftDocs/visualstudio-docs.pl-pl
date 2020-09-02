@@ -1,5 +1,5 @@
 ---
-title: Element flagi polecenia | Dokumenty firmy Microsoft
+title: Element flagi polecenia | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649371"
 ---
-# <a name="command-flag-eelement"></a>Flaga polecenia Węgorz
+# <a name="command-flag-eelement"></a>Eelement flagi polecenia
 Modyfikuje jego element nadrzędny.
 
 ## <a name="syntax"></a>Składnia
@@ -28,7 +28,7 @@ Modyfikuje jego element nadrzędny.
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
- W poniższej sekcji opisano prawidłowe wartości elementu.
+ W poniższej sekcji opisano prawidłowe wartości elementów.
 
 ### <a name="attributes"></a>Atrybuty
  Brak.
@@ -37,42 +37,42 @@ Modyfikuje jego element nadrzędny.
 
 |Wartość|Opis|
 |-----------|-----------------|
-|AllowParams (Zezwalaj naparamowanie)|Wskazuje, że użytkownicy mogą wprowadzać parametry polecenia w oknie **Polecenia** po wpisaniu kanonicznej nazwy polecenia.<br /><br /> Ważne dla:`Button`|
-|ZawszeKrówz|Menu jest tworzone, nawet jeśli nie ma grup ani przycisków.<br /><br /> Ważne dla:`Menu`|
-|Casesensitive|We wpisach użytkownika rozróżniana jest wielkość liter.<br /><br /> Ważne dla:`Combo`|
-|CommandWellOnly (PolecenieWellOnly)|Zastosuj tę flagę, jeśli polecenie nie jest wyświetlane w menu najwyższego poziomu i chcesz udostępnić ją do dodatkowego dostosowywania powłoki, na przykład w celu powiązania jej ze skrótem klawiaturowym. Po zainstalowaniu programu VSPackage można dostosować te polecenia, otwierając okno dialogowe **Opcje,** a następnie edytując położenie polecenia w kategorii **Środowisko klawiatury.** Ta flaga nie ma wpływu na położenie na menu skrótów, paskach narzędzi, kontrolerach menu ani podmenu.<br /><br /> Ważne dla: `Button`,`Combo`|
-|Domyślna wartość|Domyślnie polecenie jest wyłączone, jeśli VSPackage, który implementuje `QueryStatus` go nie jest załadowany lub metoda nie została wywołana.<br /><br /> Ważne dla: `Button`,`Combo`|
-|Domyślnieokło|Zadokowany domyślnie. To ustawienie nie ma już zastosowania do pasków narzędzi, ponieważ są one zawsze zadokowane.|
-|Domyślnieniewidoczne|Domyślnie polecenie jest niewidoczne, jeśli vspackage, który `QueryStatus` implementuje nie jest załadowany lub metoda nie została wywołana.<br /><br /> Zaleca się połączenie tego `DynamicVisibility` z flagą.<br /><br /> Ważne `Button`dla: `Combo`, ,`Menu`|
-|DontCache (DontCache)|Środowisko programistyczne nie `QueryStatus` buforuje wyników metody dla tego polecenia.<br /><br /> W przypadku menu informuje kontroler menu, aby nie buforować tekstu jego elementów menu. Użyj tej flagi, gdy menu zawiera elementy dynamiczne lub elementy, które mają tekst dynamiczny.<br /><br /> Ważne dla: `Button`,`Menu`|
-|DynamicItemStart (Początek dynamicznego)|Wskazuje początek listy dynamicznej. Dzięki temu środowisko do tworzenia listy przez `QueryStatus` sukcesywnie wywołując metodę na elementach listy, dopóki flaga OLECMDERR_E_UNSUPPORTED jest zwracana. Działa to dobrze w przypadku elementów, takich jak ostatnio używane (MRU) listy i listy okien.<br /><br /> Ważne dla:`Button`|
-|Dynamiczna niewidzialność|Widoczność polecenia można zmienić `QueryStatus` za pomocą metody lub kontekstu GUID, który znajduje się w `VisibilityConstraints` sekcji.<br /><br /> Dotyczy poleceń wyświetlanych w menu i na paskach narzędzi okna narzędzi, ale nie na paskach narzędzi najwyższego poziomu, które pojawiają się w oknie głównym. Elementy paska narzędzi najwyższego poziomu można wyłączyć, ale nie są ukryte, gdy flaga OLECMDF_INVISIBLE jest zwracana z `QueryStatus` metody. Polecenia paska narzędzi wyświetlane na paskach narzędzi okna narzędzi mogą być ukryte.<br /><br /> W menu ta flaga wskazuje również, że powinna być automatycznie ukryta, gdy wszystkie jej elementy członkowskie są ukryte. Ta flaga jest zazwyczaj przypisana do podmenu, ponieważ menu najwyższego poziomu mają już to zachowanie.<br /><br /> Ta flaga powinna `DefaultInvisible` być połączona z flagą.<br /><br /> Ważne `Button`dla: `Combo`, ,`Menu`|
-|Klawisze Filtra|Zobacz temat Filtrowanie kluczy w obszarze [Element kombi](../extensibility/combo-element.md).<br /><br /> Ważne dla:`Combo`|
-|FixMenuController (Kontroler FixMenuController)|Jeśli to polecenie jest umieszczone na kontrolerze menu, polecenie jest zawsze ustawieniem domyślnym; oznacza to, że polecenie jest wybierane za każdym razem, gdy wybrany jest sam przycisk kontrolera menu. Jeśli kontroler menu `TextIsAnchorCommand` ma ustawioną flagę, kontroler menu pobiera również `FixMenuController` jego tekst z polecenia, które ma flagę.<br /><br /> Flaga powinna mieć tylko jedno `FixMenuController` polecenie na kontrolerze menu. Jeśli więcej niż jedno polecenie jest tak zaznaczone, ostatnie polecenie w menu staje się poleceniem domyślnym.<br /><br /> Ważne dla:`Button`|
-|Ikona Itext|Pokaż ikonę i tekst w menu i pasku narzędzi.<br /><br /> Ważne `Button`dla: `Combo`, ,`Menu`|
-|NoAutoComplete (Nieukończenia)|Funkcja automatycznego uzupełnienia jest wyłączona.<br /><br /> Ważne dla:`Combo`|
-|NoButtonCustomize (NiebuttonCustomize)|Nie pozwól użytkownikowi dostosować tego przycisku.<br /><br /> Ważne dla: `Button`,`Combo`|
-|NoKeyCustomize (Nienaskładka)|Nie włączaj dostosowywania klawiatury.<br /><br /> Ważne dla: `Button`,`Combo`|
-|NoShowOnMenuController|Jeśli to polecenie znajduje się na kontrolerze menu, polecenie nie pojawia się na liście rozwijanej.<br /><br /> Ważne dla:`Button`|
-|Lista NotInTB|Nie pojawia się na liście dostępnych pasków narzędzi. Ta jest prawidłowa tylko dla typów menu paska narzędzi.<br /><br /> Ważne dla:`Menu`|
-|NoToolbarKrówka|Użytkownik nie może zamknąć paska narzędzi. Ta jest prawidłowa tylko dla typów menu paska narzędzi.<br /><br /> Ważne dla:`Menu`|
-|Pict|Pokaż tylko ikonę na pasku narzędzi, ale tylko tekst w menu. Jeśli nie określono żadnej ikony, na pasku narzędzi znajduje się klikalne puste miejsce.<br /><br /> Ważne dla:`Button`|
-|PostExec (Poekseca)|Powoduje, że polecenie nie blokuje. Środowisko programistyczne odraża wykonywanie, dopóki nie zostaną zakończone wszystkie zapytania przetwarzania wstępnego.<br /><br /> Ważne dla:`Button`|
-|RouteToDocs (RouteToDocs)|Polecenie jest kierowane do aktywnego dokumentu.<br /><br /> Ważne dla:`Button`|
-|Rozciągliwienie|Gdy ta flaga jest ustawiona, szerokość staje się minimalną szerokością pola kombi, a jeśli na pasku narzędzi jest miejsce, pole kombi zostanie rozciągnięte, aby wypełnić dostępne miejsce. Dzieje się tak tylko wtedy, gdy pasek narzędzi jest zadokowany poziomo, a tylko jedno pole kombi na pasku narzędzi może używać flagi (flaga jest ignorowana we wszystkich z wyjątkiem pierwszego pola kombi).<br /><br /> Ważne dla:`Combo`|
-|Zmiany tekstu|Tekst polecenia lub menu można zmienić w czasie `QueryStatus` wykonywania, zazwyczaj za pomocą metody.<br /><br /> Ważne dla: `Button`,`Menu`|
-|TextChangesButton (Zmiany tekstu)|Ważne dla:`Button`|
-|TextIsAnchorCommand (Wychwytyw.|W przypadku kontrolera menu tekst menu jest pobierany z polecenia domyślnego (kotwicy). Polecenie zakotwiczenia jest ostatnim wybranym lub zatrzaśniętym poleceniem. Jeśli ta flaga nie jest ustawiona, `MenuText` kontroler menu używa własnego pola. Jednak kliknięcie kontrolera menu nadal włącza ostatnio wybrane polecenie z tego kontrolera.<br /><br /> Zaleca się połączenie tej flagi `TextChanges` z flagą.<br /><br /> Ta flaga dotyczy tylko menu typu MenuController lub MenuControllerLatched.<br /><br /> Ważne dla:`Menu`|
-|TextMenuCtrlUseMenu|Użyj `MenuText` pola na kontrolerach menu. Polem domyślnym jest `ButtonText`.<br /><br /> Ważne dla:`Button`|
-|TextMenuUseButton (Przycisk Użycia tekstu)|Użyj `ButtonText` pola menu. Polem domyślnym jest, `MenuText` jeśli jest określone.<br /><br /> Ważne dla:`Button`|
-|Textonly|Pokaż tylko tekst na pasku narzędzi lub menu, ale nie ma ikony, nawet jeśli ikona jest określona.<br /><br /> Ważne dla:`Button`|
+|AllowParams|Wskazuje, że użytkownicy mogą wprowadzać parametry polecenia w oknie **polecenia** podczas wpisywania nazwy kanonicznej polecenia.<br /><br /> Prawidłowy dla: `Button`|
+|AlwaysCreate|Zostanie utworzone menu, nawet jeśli nie ma żadnych grup lub przycisków.<br /><br /> Prawidłowy dla: `Menu`|
+|CaseSensitive|W wpisach użytkownika jest rozróżniana wielkość liter.<br /><br /> Prawidłowy dla: `Combo`|
+|CommandWellOnly|Zastosuj tę flagę, jeśli polecenie nie pojawia się w menu najwyższego poziomu i chcesz udostępnić je do dodatkowego dostosowania powłoki, na przykład w celu powiązania go ze skrótem klawiaturowym. Po zainstalowaniu pakietu VSPackage można dostosować te polecenia, otwierając okno dialogowe **Opcje** , a następnie edytując położenie polecenia w kategorii **środowisko klawiatury** . Ta flaga nie ma wpływu na umieszczanie w menu skrótów, paskach narzędzi, na kontrolerach menu lub podmenu.<br /><br /> Prawidłowy dla: `Button` , `Combo`|
+|DefaultDisabled|Domyślnie polecenie jest wyłączone, jeśli pakietu VSPackage implementujący go nie jest załadowana lub `QueryStatus` Metoda nie została wywołana.<br /><br /> Prawidłowy dla: `Button` , `Combo`|
+|DefaultDocked|Domyślnie zadokowane. To ustawienie nie ma już zastosowania do pasków narzędzi, ponieważ są zawsze zadokowane.|
+|DefaultInvisible|Domyślnie polecenie jest niewidoczne, jeśli pakietu VSPackage implementujący go nie jest załadowana lub `QueryStatus` Metoda nie została wywołana.<br /><br /> Zalecamy połączenie z `DynamicVisibility` flagą.<br /><br /> Prawidłowy dla: `Button` , `Combo` , `Menu`|
+|DontCache|Środowisko programistyczne nie buforuje `QueryStatus` wyników metody dla tego polecenia.<br /><br /> W przypadku menu nakazuje kontrolerowi menu, aby nie buforować tekstu elementów menu. Użyj tej flagi, gdy menu zawiera elementy dynamiczne lub elementy z tekstem dynamicznym.<br /><br /> Prawidłowy dla: `Button` , `Menu`|
+|DynamicItemStart|Wskazuje początek listy dynamicznej. Umożliwia to środowisku Kompilowanie listy przez kolejne wywołanie `QueryStatus` metody dla elementów listy do momentu zwrócenia flagi OLECMDERR_E_UNSUPPORTED. Jest to dobre rozwiązanie w przypadku elementów, takich jak ostatnio używane (MRU) i listy okien.<br /><br /> Prawidłowy dla: `Button`|
+|DynamicVisibility|Widoczność polecenia można zmienić za pomocą `QueryStatus` metody lub identyfikatora GUID kontekstu, który znajduje się w `VisibilityConstraints` sekcji.<br /><br /> Dotyczy poleceń, które pojawiają się w menu i paska narzędzi okna narzędzi, ale nie na paskach narzędzi najwyższego poziomu, które pojawiają się w oknie głównym. Elementy paska narzędzi najwyższego poziomu można wyłączyć, ale nie ukryte, gdy flaga OLECMDF_INVISIBLE jest zwracana z `QueryStatus` metody. Polecenia paska narzędzi, które pojawiają się na paskach narzędzi okna narzędzi, mogą być ukryte.<br /><br /> W menu ta flaga wskazuje również, że powinna być automatycznie ukryta, gdy wszystkie jej elementy członkowskie są ukryte. Ta flaga jest zwykle przypisana do podmenu, ponieważ menu najwyższego poziomu ma już takie zachowanie.<br /><br /> Ta flaga powinna być połączona z `DefaultInvisible` flagą.<br /><br /> Prawidłowy dla: `Button` , `Combo` , `Menu`|
+|Funkcji|Zobacz temat Filtrowanie kluczy w obszarze [elementu kombi](../extensibility/combo-element.md).<br /><br /> Prawidłowy dla: `Combo`|
+|FixMenuController|Jeśli to polecenie jest ustawione na kontrolerze menu, polecenie jest zawsze domyślnie; oznacza to, że polecenie jest wybierane za każdym razem, gdy zostanie wybrany przycisk kontroler menu. Jeśli kontroler menu ma `TextIsAnchorCommand` ustawioną flagę, kontroler menu pobiera również tekst z polecenia, które ma `FixMenuController` flagę.<br /><br /> Tylko jedno polecenie na kontrolerze menu powinno mieć `FixMenuController` flagę. Jeśli więcej niż jedno polecenie jest oznaczone, to ostatnie polecenie w menu będzie domyślnie poleceniem.<br /><br /> Prawidłowy dla: `Button`|
+|IconAndText|Pokaż ikonę i tekst w menu i na pasku narzędzi.<br /><br /> Prawidłowy dla: `Button` , `Combo` , `Menu`|
+|Noautouzupełnianie|Funkcja autouzupełniania jest wyłączona.<br /><br /> Prawidłowy dla: `Combo`|
+|NoButtonCustomize|Nie Zezwalaj użytkownikowi na Dostosowywanie tego przycisku.<br /><br /> Prawidłowy dla: `Button` , `Combo`|
+|NoKeyCustomize|Nie należy włączać dostosowywania klawiatury.<br /><br /> Prawidłowy dla: `Button` , `Combo`|
+|NoShowOnMenuController|Jeśli to polecenie jest umieszczone na kontrolerze menu, polecenie nie pojawia się na liście rozwijanej.<br /><br /> Prawidłowy dla: `Button`|
+|NotInTBList|Nie jest wyświetlany na liście dostępnych pasków narzędzi. Jest to prawidłowe tylko dla typów menu paska narzędzi.<br /><br /> Prawidłowy dla: `Menu`|
+|NoToolbarClose|Użytkownik nie może zamknąć paska narzędzi. Jest to prawidłowe tylko dla typów menu paska narzędzi.<br /><br /> Prawidłowy dla: `Menu`|
+|Optymalizuj|Pokaż tylko ikonę na pasku narzędzi, ale tylko tekst w menu. Jeśli ikona nie zostanie określona, program wyświetli puste miejsce na pasku narzędzi.<br /><br /> Prawidłowy dla: `Button`|
+|PostExec|Sprawia, że polecenie nie blokuje. Środowisko programistyczne powoduje przeprowadzenie operacji do momentu zakończenia wszystkich zapytań poprzedzających przetwarzanie.<br /><br /> Prawidłowy dla: `Button`|
+|RouteToDocs|Polecenie jest kierowane do aktywnego dokumentu.<br /><br /> Prawidłowy dla: `Button`|
+|StretchHorizontally|Gdy ta flaga jest ustawiona, szerokość zmieni się na minimalną szerokość pola kombi, a jeśli na pasku narzędzi znajduje się pokój, pole kombi rozciąga się w celu wypełnienia dostępnego miejsca. Dzieje się tak tylko wtedy, gdy pasek narzędzi jest zadokowany w poziomie, a tylko jedno pole kombi na pasku narzędzi może używać flagi (flaga jest ignorowana na wszystkich z wyjątkiem pierwszego pola kombi).<br /><br /> Prawidłowy dla: `Combo`|
+|TextChanges|Tekst polecenia lub menu można zmienić w czasie wykonywania, zwykle za pomocą `QueryStatus` metody.<br /><br /> Prawidłowy dla: `Button` , `Menu`|
+|TextChangesButton|Prawidłowy dla: `Button`|
+|TextIsAnchorCommand|W przypadku kontrolera menu tekst menu jest pobierany z domyślnego (kotwicy) polecenia. Polecenie kotwicy to ostatnie polecenie wybrane lub zatrzaskowe. Jeśli ta flaga nie jest ustawiona, kontroler menu używa własnego `MenuText` pola. Jednak kliknięcie kontrolera menu nadal włącza ostatnie wybrane polecenie z tego kontrolera.<br /><br /> Zalecamy połączenie tej flagi z `TextChanges` flagą.<br /><br /> Ta flaga ma zastosowanie tylko do menu typu MenuController lub MenuControllerLatched.<br /><br /> Prawidłowy dla: `Menu`|
+|TextMenuCtrlUseMenu|Użyj `MenuText` pola na kontrolerach menu. Pole domyślne to `ButtonText` .<br /><br /> Prawidłowy dla: `Button`|
+|TextMenuUseButton|Użyj `ButtonText` pola dla menu. Pole domyślne to `MenuText` Jeśli jest określone.<br /><br /> Prawidłowy dla: `Button`|
+|TextOnly|Pokaż tylko tekst na pasku narzędzi lub w menu, ale bez ikony, nawet jeśli określono ikonę.<br /><br /> Prawidłowy dla: `Button`|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element przycisków](../extensibility/buttons-element.md)|Zawiera grupę dla Button elementów [elementu.](../extensibility/button-element.md)|
-|[Element Menu](../extensibility/menus-element.md)|Definiuje wszystkie menu, które implementuje VSPackage.|
+|[Element Buttons](../extensibility/buttons-element.md)|Udostępnia grupę dla elementów [elementu Button](../extensibility/button-element.md) .|
+|[Element menu](../extensibility/menus-element.md)|Definiuje wszystkie menu, które implementuje pakietu VSPackage.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Tabela poleceń programu Visual Studio (. Vsct) Pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Tabela poleceń programu Visual Studio (. Vsct) — pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

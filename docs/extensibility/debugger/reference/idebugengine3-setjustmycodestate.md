@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState | Dokumenty firmy Microsoft
+title: 'IDebugEngine3:: SetJustMyCodeState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730674"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
-Ta metoda informuje aparat debugowania o JustMyCode informacji o stanie.
+Ta metoda informuje aparat debugowania o informacjach o stanie JustMyCode.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,19 +45,19 @@ int SetJustMyCodeState(
 
 ## <a name="parameters"></a>Parametry
 `fUpdate`\
-[w] Nonzero`TRUE`( ), aby zaktualizować`FALSE`bieżące informacje, zero ( ), aby zresetować wszystkie informacje (ignorując wszystko wcześniej ustawione).
+podczas Różna od zera ( `TRUE` ) w celu zaktualizowania bieżących informacji, zero ( `FALSE` ) w celu zresetowania wszystkich informacji (ignorowanie wcześniej ustawionych).
 
 `dwModules`\
-[w] Liczba struktur informacyjnych w`rgJMCSpec.`
+podczas Liczba struktur informacji w `rgJMCSpec.`
 
 `rgJMCSpec`\
-[w] Tablica [struktur JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) do użycia.
+podczas Tablica struktur [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) do użycia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- JustMyCode to koncepcja debugowania tylko kodu, który należy do użytkownika i ignorowania całego kodu pośredniego, takiego jak kod systemowy — nawet jeśli kod źródłowy jest dostępny dla tego kodu systemu.
+ JustMyCode to koncepcja debugowania tylko kodu, który należy do użytkownika, i ignorowanie całego kodu pośredniego, takiego jak kod systemowy — nawet jeśli kod źródłowy jest dostępny dla tego kodu systemowego.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

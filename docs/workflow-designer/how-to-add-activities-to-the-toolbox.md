@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815828"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Instrukcje: Dodawanie działań do przybornika
@@ -58,6 +58,6 @@ Działania można dodawać do **przybornika** w rozwiązaniu na kilka różnych 
 
 6. Działanie niestandardowe pojawia się w **przyborniku** w kategorii, która była skoncentrowana przed dodaniem elementu. Na przykład jeśli Kategoria **Ogólne** została wybrana w **przyborniku** przed dodaniem elementu przybornika, działanie zostanie wyświetlone w kategorii **Ogólne** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Używanie projektanta przepływu pracy](developing-applications-with-the-workflow-designer.md)

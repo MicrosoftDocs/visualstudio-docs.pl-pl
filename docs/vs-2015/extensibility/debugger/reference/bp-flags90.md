@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f7192eb7b2fa6d8bc886c0e601788ecba8eebcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153496"
 ---
-# <a name="bpflags90"></a>BP_FLAGS90
+# <a name="bp_flags90"></a>BP_FLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Wylicza prawidłowe wartości dla flagi opcjonalne. Flagi opcjonalne może służyć do określania dodatkowe informacje, gdy ustawisz punkt przerwania. To wyliczenie rozszerza [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) wyliczenia.  
+Wylicza prawidłowe wartości flag opcjonalnych. Opcjonalne flagi mogą służyć do określania dodatkowych informacji podczas ustawiania punktu przerwania. To Wyliczenie rozszerza [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Wyliczenie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,21 +53,21 @@ public enum enum_BP_FLAGS90
   
 #### <a name="parameters"></a>Parametry  
  BP90_FLAG_NONE  
- Określa flagę nie punktu przerwania.  
+ Określa brak flagi punktu przerwania.  
   
  BP90_FLAG_MAP_DOCPOSITION  
- Określa, czy aparat debugowania (DE) powinny być mapowane punkt przerwania przy użyciu położenie dokumentu. Dotyczy tylko punkty przerwania ustawione w plikach źródłowych zorientowane na skrypt takie jak Active Server Pages (ASP).  
+ Określa, że aparat debugowania (DE) powinien mapować punkt przerwania przy użyciu pozycji dokumentu. Ma to zastosowanie tylko do punktów przerwania ustawionych w plikach źródłowych zorientowanych na skrypty, takich jak strony Active Server (ASP).  
   
  BP90_FLAG_DONT_STOP  
- Określa, że punkt przerwania mają być przetwarzane przez aparat debugowania, ale że aparat debugowania ostatecznie nie należy zatrzymywać oznacza to, że [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) obiektu zdarzenia nie powinny być przesyłane. Ta flaga ma służyć przede wszystkim z punktami śledzenia.  
+ Określa, że punkt przerwania powinien być przetwarzany przez aparat debugowania, ale aparat debugowania ostatecznie nie powinien go zatrzymać; oznacza to, że obiekt zdarzenia [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) nie powinien być wysyłany. Ta flaga jest przeznaczona do użycia głównie z punktami śledzenia.  
   
  BP90_FLAG_TRACEPOINT_CONTINUE  
- Używanego przez aparat debugowania natywnych, aby ustalić, czy stan przechodzenia krok po kroku powinno być wyczyszczone. Różni się od BP90_FLAG_DONT_STOP ponieważ BP90_FLAG_DONT_STOP nie jest ustawiona, jeśli punkt śledzenia wykonuje makra.  
+ Używane przez natywny aparat debugowania do określenia, czy stan krokowe powinien zostać wyczyszczony. Różni się od BP90_FLAG_DONT_STOP, ponieważ BP90_FLAG_DONT_STOP nie jest ustawiona, jeśli punkt śledzenia wykonuje makro.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Msdbg90.h  
+ Nagłówek: Msdbg90. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,5 +1,5 @@
 ---
-title: Moduł wyliczający kod polecenia | Dokumentacja firmy Microsoft
+title: Moduł wyliczający kod polecenia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 06f1a3f7146125e59d02efc72a4d4fc9ab33be39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184386"
 ---
 # <a name="command-code-enumerator"></a>Moduł wyliczający kod polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten moduł wyliczający jest używany w opcji [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) i [SccPopulateList](../extensibility/sccpopulatelist-function.md)aby wskazać polecenie, dla której są określone opcje.  
+Ten moduł wyliczający jest używany w opcjach dla [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) i [SccPopulateList](../extensibility/sccpopulatelist-function.md), aby wskazać polecenie, dla którego są określone opcje.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -76,6 +76,6 @@ enum SCCCOMMAND {
  Odnosi się do [SccSetOption](../extensibility/sccsetoption-function.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
+ [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)

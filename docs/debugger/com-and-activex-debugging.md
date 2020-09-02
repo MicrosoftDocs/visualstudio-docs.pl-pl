@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188684"
 ---
 # <a name="com-and-activex-debugging"></a>COM i debugowanie ActiveX
@@ -39,11 +39,11 @@ Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji COM i kontrolek Ac
  [Narzędzia debugowania modelu COM](../debugger/com-debugging-tools.md) Wyświetla listę osób przeglądających i przykładowych aplikacji, które mogą być przydatne w debugowaniu aplikacji COM.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md) Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje: co nowego w debugerze, ustawieniach i przygotowaniu, punktach przerwania, obsługa wyjątków, edytowanie i kontynuowanie, debugowanie kodu zarządzanego, C++ Debugowanie projektów, debugowanie modelu COM i ActiveX, debugowanie bibliotek DLL, debugowanie SQL i użytkownik odwołania do interfejsu.
+ [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md) Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje: Nowości w debugerze, ustawienia i przygotowanie, punkty przerwania, obsługa wyjątków, Edycja i kontynuowanie, debugowanie kodu zarządzanego, Debugowanie projektów języka C++, debugowanie obiektów COM i ActiveX, debugowanie bibliotek DLL, debugowanie SQL i odwołania do interfejsu użytkownika.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Wprowadzenie do modelu COM](/cpp/atl/introduction-to-com)
 - [Kontrolki ActiveX](/cpp/mfc/activex-controls)
-- [Aplikacje serwerowe SDI](com-server-and-container-debugging.md)
+- [Aplikacje serwera SDI](com-server-and-container-debugging.md)

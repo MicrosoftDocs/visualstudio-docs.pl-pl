@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348109"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debugowanie kodu JavaScript przy użyciu konsoli programu Visual Studio
@@ -46,7 +46,7 @@ Okno konsoli JavaScript umożliwia:
 
 Korzystając z okna konsoli JavaScript, można korzystać z aplikacji bez zatrzymywania i ponownego uruchamiania debugera. Aby uzyskać więcej informacji, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md). Aby uzyskać informacje o innych funkcjach debugowania języka JavaScript, takich jak używanie DOM Explorer i ustawień punktów przerwania, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) oraz [debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a>Debugowanie przy użyciu okna konsoli JavaScript
+## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a> Debugowanie przy użyciu okna konsoli JavaScript
 Poniższe kroki tworzą `FlipView` aplikację i pokazują, jak interaktywnie debugować błąd kodowania JavaScript.
 
 > [!NOTE]
@@ -192,7 +192,7 @@ Poniższe kroki tworzą `FlipView` aplikację i pokazują, jak interaktywnie deb
 
     Aby zapoznać się z kompletną stroną default.html zawierającą poprawiony przykładowy kod, zobacz [Debugowanie kodu HTML, CSS i JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).
 
-## <a name="interactive-debugging-and-break-mode"></a><a name="InteractiveDebuggingBreakMode"></a>Interaktywny tryb debugowania i przerwania
+## <a name="interactive-debugging-and-break-mode"></a><a name="InteractiveDebuggingBreakMode"></a> Interaktywny tryb debugowania i przerwania
 Możesz użyć punktów przerwania i przejść do kodu podczas korzystania z narzędzi debugowania JavaScript, takich jak okno konsoli JavaScript. Gdy program uruchomiony w debugerze napotyka punkt przerwania, debuger tymczasowo zawiesza wykonywanie programu. Gdy wykonywanie jest zawieszone, program przełącza z trybu uruchamiania do trybu przerwania. W dowolnym momencie można wznowić wykonywanie.
 
 Gdy program jest w trybie przerwania, można użyć okna konsoli JavaScript do uruchomienia skryptów i poleceń, które są prawidłowe w bieżącym kontekście wykonywania skryptu. W tej procedurze zostanie użyta stała wersja `FlipView` aplikacji, która została wcześniej utworzona w celu zademonstrowania użycia trybu przerwania.
@@ -233,14 +233,14 @@ Gdy program jest w trybie przerwania, można użyć okna konsoli JavaScript do u
 
     Aby przełączyć się z powrotem do programu Visual Studio, naciśnij klawisz F12 lub Alt + Tab.
 
-## <a name="single-line-mode-and-multiline-mode-in-the-javascript-console-window"></a><a name="SinglelineMultilineMode"></a>Tryb jednowierszowy i tryb wielowierszowy w oknie konsoli JavaScript
+## <a name="single-line-mode-and-multiline-mode-in-the-javascript-console-window"></a><a name="SinglelineMultilineMode"></a> Tryb jednowierszowy i tryb wielowierszowy w oknie konsoli JavaScript
 Monit wejściowy okna konsoli JavaScript obsługuje tryb Single-line i tryb wielowierszowy. Interaktywna procedura debugowania w tym temacie zawiera przykład użycia obu trybów. Możesz nacisnąć klawisze Ctrl + Alt + M, aby przełączać się między trybami.
 
 Tryb jednowierszowy zawiera historię danych wejściowych. Możesz nawigować przez historię danych wejściowych za pomocą klawiszy Strzałka w górę i Strzałka w dół. Tryb jednowierszowy czyści monit wejściowy podczas uruchamiania skryptów. Aby uruchomić skrypt w trybie jednowierszowym, naciśnij klawisz ENTER.
 
 Tryb wielowierszowy nie czyści monitu wejściowego podczas uruchamiania skryptów. Po przełączeniu do trybu single-line z trybu wielowierszowego można wyczyścić linię wejściową, naciskając pozycję **Wyczyść dane wejściowe** (czerwony znak "X"). Aby uruchomić skrypt w trybie wielowierszowym, naciśnij klawisze CTRL + ENTER lub wybierz symbol strzałki w prawym dolnym rogu okna.
 
-## <a name="switching-the-script-execution-context"></a><a name="Switching"></a>Przełączanie kontekstu wykonywania skryptu
+## <a name="switching-the-script-execution-context"></a><a name="Switching"></a> Przełączanie kontekstu wykonywania skryptu
 Okno konsoli JavaScript umożliwia korzystanie z jednego kontekstu wykonywania, który reprezentuje pojedyncze wystąpienie hosta platformy sieci Web (WWAHost.exe) w danym momencie. W niektórych scenariuszach aplikacja może uruchamiać inne wystąpienie hosta, na przykład w przypadku używania `iframe` , kontraktu udostępniania, internetowego procesu roboczego lub `WebView` kontrolki. Jeśli uruchomione jest inne wystąpienie hosta, można wybrać inny kontekst wykonywania podczas uruchamiania aplikacji, wybierając kontekst wykonywania na liście **Target** .
 
 Na poniższej ilustracji przedstawiono listę docelową w oknie konsoli JavaScript.

@@ -1,5 +1,5 @@
 ---
-title: Zmiana wyglądu polecenia | Dokumentacja firmy Microsoft
+title: Zmiana wyglądu polecenia | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,32 +13,32 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184505"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład możesz polecenie będzie wyglądać inaczej, gdy jest ona niedostępna. Można wprowadzić polecenia dostępne lub niedostępne, ukryć lub pokazać je, lub sprawdź lub usuń ich zaznaczenie w menu.  
+Możesz przekazać użytkownikowi informacje zwrotne, zmieniając wygląd polecenia. Na przykład możesz chcieć, aby polecenie wyglądało inaczej, gdy jest niedostępne. Polecenia mogą być dostępne lub niedostępne, ukrywane lub wyświetlane lub zaznaczając je w menu.  
   
- Zmiana wyglądu polecenia, wykonaj jedną z następujących czynności:  
+ Aby zmienić wygląd polecenia, wykonaj jedną z następujących czynności:  
   
-- Określ odpowiednie flagi w definicji polecenia w pliku poleceń w tabeli.  
+- Określ odpowiednie flagi w definicji polecenia w pliku tabeli poleceń.  
   
 - Użyj <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> usługi.  
   
-- Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu i modyfikowania obiektów pierwotnych polecenia.  
+- Zaimplementuj <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs i zmodyfikuj pierwotne obiekty poleceń.  
   
-  Poniższe kroki pokazują jak znaleźć i zaktualizować wyglądu polecenia przy użyciu Framework pakietu zarządzanego (MPF).  
+  Poniższe kroki pokazują, jak znaleźć i zaktualizować wygląd polecenia przy użyciu struktury pakietu zarządzanego (MPF).  
   
-### <a name="to-change-the-appearance-of-a-menu-command"></a>Zmiana wyglądu polecenia menu  
+### <a name="to-change-the-appearance-of-a-menu-command"></a>Aby zmienić wygląd polecenia menu  
   
-1. Postępuj zgodnie z instrukcjami w [zmiana tekstu polecenia Menu](../extensibility/changing-the-text-of-a-menu-command.md) utworzyć element menu o nazwie `New Text`.  
+1. Postępuj zgodnie z instrukcjami w temacie [Zmiana tekstu polecenia menu](../extensibility/changing-the-text-of-a-menu-command.md) , aby utworzyć element menu o nazwie `New Text` .  
   
-2. W pliku ChangeMenuText.cs, dodaj następującą instrukcję using:  
+2. W pliku ChangeMenuText.cs Dodaj następującą instrukcję using:  
   
     ```csharp  
     using System.Security.Permissions;  
@@ -50,7 +50,7 @@ Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład 
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4. W pliku ChangeMenuText.cs Zastąp kod w metodzie ShowMessageBox następujących czynności:  
+4. W pliku ChangeMenuText.cs Zastąp kod w metodzie ShowMessageBox następującym:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -61,7 +61,7 @@ Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład 
     }  
     ```  
   
-5. Uzyskaj polecenie, które chcesz zaktualizować z <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> obiektu, a następnie ustaw odpowiednie właściwości w obiekcie command. Na przykład poniższa metoda sprawia, że określone polecenie z poziomu polecenia pakietu VSPackage dostępne lub niedostępne. Poniższy kod sprawia, że element menu o nazwie `New Text` niedostępna po jego kliknięciu.  
+5. Uzyskaj polecenie, które chcesz zaktualizować z <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> obiektu, a następnie ustaw odpowiednie właściwości w obiekcie Command. Na przykład Poniższa metoda sprawia, że określone polecenie z zestawu poleceń pakietu VSPackage jest dostępne lub niedostępne. Poniższy kod sprawia, że element menu o nazwie `New Text` niedostępne po kliknięciu.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -80,14 +80,14 @@ Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład 
     }  
     ```  
   
-6. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
+6. Skompiluj projekt i Rozpocznij debugowanie. Powinno zostać wyświetlone eksperymentalne wystąpienie programu Visual Studio.  
   
-7. Na **narzędzia** menu, kliknij przycisk **wywołania ChangeMenuText** polecenia. W tym momencie nazwa polecenia jest **wywołania ChangeMenuText**, dlatego program obsługi poleceń nie wywołuje ChangeMyCommand().  
+7. W menu **Narzędzia** kliknij polecenie **Wywołaj ChangeMenuText** . W tym momencie nazwa polecenia jest wywoływana **ChangeMenuText**, więc procedura obsługi poleceń nie wywołuje ChangeMyCommand ().  
   
-8. Na **narzędzia** menu powinien zostać wyświetlony **nowy tekst**. Kliknij przycisk **nowy tekst**. Polecenie powinno teraz wyszarzone.  
+8. W menu **Narzędzia** powinien pojawić się **Nowy tekst**. Kliknij przycisk **Nowy tekst**. Polecenie powinno teraz być wyszarzone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

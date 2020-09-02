@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE | Dokumentacja firmy Microsoft
+title: BP_TYPE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a0c479182f1ff9efd4b35f2fed2de35d3536202
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153266"
 ---
-# <a name="bptype"></a>BP_TYPE
+# <a name="bp_type"></a>BP_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacja danych lub inny typ punktu przerwania.  
+Określa, czy punkt przerwania znajduje się w lokalizacji kodu, jest lokalizacją danych lub jest innym typem punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,28 +47,28 @@ public enum enum_BP_TYPE { 
   
 ## <a name="members"></a>Elementy członkowskie  
  BPT_NONE  
- Określa żadnego typu punktu przerwania.  
+ Określa typ punktu przerwania.  
   
  BPT_CODE  
- Określa punkt przerwania w kodzie.  
+ Określa punkt przerwania kodu.  
   
  BPT_DATA  
  Określa punkt przerwania danych.  
   
  BPT_SPECIAL  
- Określa punkt przerwania, który nie jest ani kodu ani typu danych. Ten typ jest przestarzały i nie powinna być używana.  
+ Określa punkt przerwania, który nie jest kodem ani typem danych. Ten typ jest przestarzały i nie powinien być używany.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako parametr do [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) i [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) metody.  
+ Przekazanie jako parametr do metod getpunkion [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) [i](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) getpunks.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)   
+ [Getpunk przerwania](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

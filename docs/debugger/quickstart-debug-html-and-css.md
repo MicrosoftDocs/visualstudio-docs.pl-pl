@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348265"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie kodu HTML i CSS w aplikacjach platformy UWP w programie Visual Studio
@@ -32,7 +32,7 @@ Korzystając z interaktywnego modelu debugowania dostarczonego przez narzędzia 
 
 Aby uzyskać informacje o innych funkcjach debugowania JavaScript, takich jak korzystanie z okna konsoli języka JavaScript i ustawianie punktów przerwania, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [debugowanie aplikacji w programie Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="inspecting-the-live-dom"></a><a name="InspectingDOM"></a>Sprawdzanie aktywnego modelu DOM
+## <a name="inspecting-the-live-dom"></a><a name="InspectingDOM"></a> Sprawdzanie aktywnego modelu DOM
 DOM Explorer przedstawia widok renderowanej strony i można użyć DOM Explorer, aby zmienić wartości i natychmiast zobaczyć wyniki. Dzięki temu można testować zmiany bez zatrzymywania i ponownego uruchamiania debugera. Kod źródłowy w projekcie nie zmienia się podczas pracy ze stroną przy użyciu tej metody, więc po znalezieniu żądanych korekt kodu wprowadzasz zmiany w kodzie źródłowym.
 
 > [!TIP]
@@ -230,7 +230,7 @@ W poniższej procedurze przejdziemy do interaktywnego debugowania aplikacji przy
 
     Aby uzyskać więcej informacji na temat funkcji odświeżania, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md).
 
-## <a name="selecting-elements"></a><a name="SelectingElements"></a>Wybieranie elementów
+## <a name="selecting-elements"></a><a name="SelectingElements"></a> Wybieranie elementów
 W przypadku debugowania aplikacji można wybrać elementy DOM na trzy sposoby:
 
 - Klikając elementy bezpośrednio w oknie DOM Explorer (lub za pomocą klawiszy strzałek).

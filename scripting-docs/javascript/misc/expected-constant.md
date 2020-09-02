@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816647"
 ---
 # <a name="expected-constant"></a>Oczekiwana stała
@@ -30,6 +30,6 @@ Podjęto próbę użycia zmiennej (kompilacja niewarunkowa) w instrukcji testowe
   
 - Zamień zmienną na zmienną kompilacji warunkowej.  
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz też  
  [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)

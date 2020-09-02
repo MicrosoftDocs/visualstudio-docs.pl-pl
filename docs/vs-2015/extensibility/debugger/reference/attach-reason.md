@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON | Dokumentacja firmy Microsoft
+title: ATTACH_REASON | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c66894fe0515b28037bbb2a19715fa09cbf9fa62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153588"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
+# <a name="attach_reason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa przyczyny aparat debugowania (DE) można dołączyć do węzła programu.  
+Określa przyczynę, z którą aparat debugowania ma zostać dołączony do węzła programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,22 +48,22 @@ public enum enum_ATTACH_REASON { 
  Dołącz, ponieważ proces jest obecnie w trybie debugowania.  
   
  ATTACH_REASON_LAUNCH  
- Należy dołączyć, ponieważ proces został uruchomiony.  
+ Dołącz, ponieważ proces został uruchomiony.  
   
  ATTACH_REASON_USER  
  Dołącz ze względu na żądanie użytkownika.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartości te są używane jako parametr do [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) i [Dołącz](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metody.  
+ Te wartości są używane jako parametr w metodach [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) i [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+ [Klej](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Dołącz](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

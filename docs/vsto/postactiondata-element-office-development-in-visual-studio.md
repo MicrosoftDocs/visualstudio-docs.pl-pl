@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541872"
 ---
 # <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postActionData — &gt; element (Programowanie Office w Visual Studio)
@@ -36,7 +36,7 @@ ms.locfileid: "85541872"
 
  `postActions`Element nie ma żadnych atrybutów.
 
- `postActions`nie ma elementów podrzędnych.
+ `postActions` nie ma elementów podrzędnych.
 
 ## <a name="post-deployment-action-example"></a>Przykład akcji wykonywanej po wdrożeniu
 
@@ -51,7 +51,7 @@ ms.locfileid: "85541872"
 </vstav3:postActionData>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)

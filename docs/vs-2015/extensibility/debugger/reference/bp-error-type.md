@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Dokumentacja firmy Microsoft
+title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2317fafe410cacfca1c77b669a54669ea6e2224a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153534"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa typ błąd punktu przerwania.  
+Określa typ błędu punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -61,47 +61,47 @@ public enum enum_BP_ERROR_TYPE { 
   
 ## <a name="members"></a>Elementy członkowskie  
  BPET_NONE  
- Określa nie błąd punktu przerwania.  
+ Określa błąd punktu przerwania.  
   
  BPET_TYPE_WARNING  
- Określa błąd stylu ostrzeżenie punktu przerwania.  
+ Określa błąd punktu przerwania stylu ostrzeżenia.  
   
  BPET_TYPE_ERROR  
- Określa błąd punktu przerwania stylu błędu.  
+ Określa błąd punktu przerwania w stylu błędu.  
   
  BPET_SEV_HIGH  
  Określa błąd punktu przerwania o wysokiej ważności.  
   
  BPET_SEV_GENERAL  
- Określa o średniej ważności, punkt przerwania.  
+ Określa błąd punktu przerwania o średniej ważności.  
   
  BPET_SEV_LOW  
- Określa o niskiej ważności, punkt przerwania.  
+ Określa błąd punktu przerwania o niskiej ważności.  
   
  BPET_TYPE_MASK  
  Określa błąd punktu przerwania stylu maski.  
   
  BPET_SEV_MASK  
- Określa błąd punktu przerwania ważność maska stylu.  
+ Określa błąd punktu przerwania w stylu z maską ważności.  
   
  BPET_GENERAL_WARNING  
- Określa błąd punktu przerwania ogólne ostrzeżenie stylu.  
+ Określa błąd punktu przerwania w stylu ogólnym ostrzeżenia.  
   
  BPET_GENERAL_ERROR  
- Określa błąd punktu przerwania stylu w przypadku błędu ogólnego.  
+ Określa błąd punktu przerwania z ogólnym stylem błędu.  
   
  BPET_ALL  
- Określa wszystkie typy błąd punktu przerwania.  
+ Określa wszystkie typy błędów punktów przerwania.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości mogą być łączone przy użyciu bitowego operatora `OR` i jest używana do `dwType` członkiem [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury. Przekazany jako parametr do [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) metody.  
+ Te wartości mogą być połączone z bitową `OR` i używane dla `dwType` elementu członkowskiego struktury [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Przekazanie jako parametr do metody [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .  
   
- Typ błędu punktu przerwania składa się z typu i ważności. Oznacza, że typ błąd punktu przerwania nigdy nie tylko typem (na przykład `BPET_TYPE_ERROR`,) lub ważność (na przykład `BPET_SEV_GENERAL`) przez siebie. `BPET_GENERAL_WARNING` i `BPET_GENERAL_ERROR` zapewnia wstępnie zdefiniowane wartości dla punktów przerwania ogólne, ostrzeżeń i błędów.  
+ Typ błędu punktu przerwania składa się z typu i ważności. Oznacza to, że typ błędu punktu przerwania nigdy nie jest tylko typem (na przykład, `BPET_TYPE_ERROR` ) lub ważności (na przykład `BPET_SEV_GENERAL` ). `BPET_GENERAL_WARNING` i `BPET_GENERAL_ERROR` Podaj wstępnie zdefiniowane wartości dla ogólnych ostrzeżeń i punktów przerwania błędów.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Nagłówek: Msdbg. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

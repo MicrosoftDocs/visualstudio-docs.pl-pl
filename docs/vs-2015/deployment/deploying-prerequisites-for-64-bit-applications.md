@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych | Dokumentacja firmy Microsoft
+title: Wdrażanie wymagań wstępnych dla aplikacji 64-bitowych | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,31 +20,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92f30e8e059475c907da184aa59a8e4b7a2cf19f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675558"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wdrożenie ClickOnce obsługuje instalację aplikacji na platformach 64-bitowych. Platformy docelowe są **x86** dla platform 32-bitowych **x64** obsługi zestawów instrukcji AMD64 oraz obsługą technologii EM64T maszyn i **Itanium** dla procesora Itanium 64-bitowych.  
+Wdrożenie ClickOnce obsługuje instalację aplikacji na platformach 64-bitowych. Platformy docelowe to **x86** dla platform 32-bitowych, **x64** dla maszyn obsługujących zestawy instrukcji amd64 i EM64T oraz **procesor Itanium** dla 64-bitowego procesora Itanium.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Poniższa tabela zawiera listę pakietów redystrybucyjnych, używanego jako wymagania wstępne dotyczące instalacji aplikacji 64-bitowych.  
+ W poniższej tabeli wymieniono pakiety redystrybucyjne, których można użyć jako wymagań wstępnych instalacji aplikacji 64-bitowej.  
   
- Jeśli wybierzesz wstępnie wymaganego składnika, który nie ma 64-bitowych składników, może zostać wyświetlony z ostrzeżeniem, że wybrane pakiety nie są dostępne dla platformy 64-bitowych.  
+ W przypadku wybrania wymagań wstępnych, które nie mają składników 64-bitowych, może pojawić się ostrzeżenie z informacją o tym, że wybrane pakiety nie są dostępne dla platformy 64-bitowej.  
   
-|Pakiet redystrybucyjny|obsługuje x64|Obsługa IA64|  
+|Pakiet redystrybucyjny|Obsługa systemu x64|Obsługa IA64|  
 |---------------------|-----------------|------------------|  
 |[!INCLUDE[vsto_runtime](../includes/vsto-runtime-md.md)]|Tak|Nie|  
-|Biblioteki Visual C++ 2010 Runtime (IA64)|Nie|Tak|  
-|Visual C++ 2010 Runtime Libriaries (x64)|Tak|Nie|  
+|Biblioteki środowiska uruchomieniowego Visual C++ 2010 (IA64)|Nie|Tak|  
+|Środowisko uruchomieniowe Visual C++ 2010 Libriaries (x64)|Tak|Nie|  
 |Microsoft .NET Framework 4 (x86 i x64)|Tak||  
-|Microsoft .NET Framework 4 Client Profile (x86 i x64)|Tak||  
+|Profil klienta Microsoft .NET Framework 4 (x86 i x64)|Tak||  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażanie aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md)   
- [Instrukcje: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Aplikacje 64-bitowe](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

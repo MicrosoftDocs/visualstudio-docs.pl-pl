@@ -1,5 +1,5 @@
 ---
-title: '&lt;compatibleFrameworks&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
+title: '&lt;compatibleFrameworks, &gt; element (wdrażanie ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66746033"
 ---
-# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; — element (wdrażanie ClickOnce)
-Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalować i uruchamiać.
+# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks, &gt; element (wdrażanie ClickOnce)
+Identyfikuje wersje .NET Framework, w których ta aplikacja może zostać zainstalowana i uruchomiona.
 
 > [!NOTE]
-> [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) nie obsługuje `compatibleFrameworks` elementu podczas zapisywania manifestu aplikacji, która została już podpisana za pomocą certyfikatu za pomocą [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Zamiast tego należy użyć [ *Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) nie obsługuje `compatibleFrameworks` elementu podczas zapisywania manifestu aplikacji, który został już podpisany za pomocą certyfikatu przy użyciu [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Zamiast tego należy użyć [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,28 +40,28 @@ Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalo
 </ compatibleFrameworks>
 ```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy
- `compatibleFrameworks` Element jest wymagany, dla których obiektem docelowym manifesty wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime udostępnianym przez .NET Framework 4 lub nowszej. `compatibleFrameworks` Elementu zawiera jeden lub więcej `framework` elementy, które określają wersje programu .NET Framework, na których można uruchomić tę aplikację. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Środowisko uruchomieniowe będzie uruchomić aplikację na pierwszy dostępny `framework` na tej liście.
+## <a name="elements-and-attributes"></a>Elementy i atrybuty
+ `compatibleFrameworks`Element jest wymagany dla manifestów wdrożenia przeznaczonych dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] środowiska uruchomieniowego, które są dostępne w .NET Framework 4 lub nowszych. `compatibleFrameworks`Element zawiera jeden lub więcej `framework` elementów, które określają wersje .NET Framework, w których ta aplikacja może zostać uruchomiona. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Środowisko uruchomieniowe uruchomi aplikację na pierwszej dostępnej `framework` z tej listy.
 
- Poniższa tabela zawiera listę atrybutów, `compatibleFrameworks` obsługuje element.
+ Poniższa tabela zawiera listę atrybutów obsługiwanych przez `compatibleFrameworks` element.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`S``upportUrl`|Opcjonalna. Określa adres URL, gdzie można pobrać preferowanych zgodnej wersji programu .NET Framework.|
+|`S` `upportUrl`|Opcjonalny. Określa adres URL, pod którym można pobrać preferowaną zgodną .NET Framework wersję.|
 
 ## <a name="framework"></a>szablon
- Wymagana. W poniższej tabeli przedstawiono atrybuty, `framework` obsługuje element.
+ Wymagany. W poniższej tabeli wymieniono atrybuty obsługiwane przez `framework` element.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`targetVersion`|Wymagana. Określa numer wersji obiektu docelowego .NET Framework.|
-|`profile`|Wymagana. Określa profil docelową aplikację .NET Framework.|
-|`supportedRuntime`|Wymagana. Określa numer wersji środowiska uruchomieniowego, skojarzone z docelową aplikację .NET Framework.|
+|`targetVersion`|Wymagany. Określa numer wersji .NET Framework docelowej.|
+|`profile`|Wymagany. Określa profil .NET Framework docelowej.|
+|`supportedRuntime`|Wymagany. Określa numer wersji środowiska uruchomieniowego skojarzonego z .NET Framework docelowej.|
 
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="example"></a>Przykład
- Poniższy kod przedstawia przykład `compatibleFrameworks` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Tego wdrożenia można uruchomić na [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Jego można również uruchomić na .NET Framework 4 jest podzestawem [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
+ Poniższy przykład kodu przedstawia `compatibleFrameworks` element w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeście wdrożenia. To wdrożenie można uruchomić na serwerze [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] . Można go również uruchomić na .NET Framework 4, ponieważ jest nadzbiorem [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] .
 
 ```xml
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
@@ -72,5 +72,5 @@ Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalo
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Zobacz też
+- [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)

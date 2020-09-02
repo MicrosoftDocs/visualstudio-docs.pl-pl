@@ -1,5 +1,5 @@
 ---
-title: Program węzły | Dokumentacja firmy Microsoft
+title: Węzły programu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,30 +14,30 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a06be4ef0a69ec173f171ba202f1f479448b1ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153658"
 ---
 # <a name="program-nodes"></a>Węzły programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pod względem architektury debugera **węzła programu**:  
+W odniesieniu do architektury debugera, **węzeł programu**:  
   
-- Jest uproszczone opis programu.  
+- Jest lekkim opisem programu.  
   
-- Można zidentyfikować wraz z procesu działa oraz można dołączyć zostać odłączony lub opisywania aparatu debugowania (DE), której został utworzony, jeśli istnieje.  
+- Może identyfikować siebie i proces, w którym jest uruchomiona, i może zostać dołączony do, zostać odłączony od i opisywany aparat debugowania (DE), który go utworzył (jeśli istnieje).  
   
-- Jest reprezentowany przez [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu, zwykle tworzony przy DE lub port. Węzły programu są dodawane do portu przez wywołanie metody [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Gdy węzeł programu zostanie dodany do portu, jest dodawany do procesu, zawierające program, który reprezentuje ten węzeł programu.  
+- Jest reprezentowany przez interfejs [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) , zwykle tworzony przez de lub port. Węzły programu są dodawane do portu przez wywołanie [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Gdy węzeł programu zostanie dodany do portu, zostanie dodany do procesu zawierającego program, który reprezentuje ten węzeł programu.  
   
-  Później, po rozpoczęciu sesji debugowania, w zależności od implementacji pakietu debugowania węzły programu są używane do tworzenia odpowiednich programów. Gdy proces jest poddawany kwerendzie jego programów, te programy są wyliczane, jeden dla każdego węzła program.  
+  Czasami po rozpoczęciu sesji debugowania, w zależności od implementacji pakietu debugowania, węzły programu są używane do tworzenia odpowiednich programów. Po wykonaniu zapytania dotyczącego jego programów wyliczane są programy, po jednej dla każdego węzła programu.  
   
-  Zanim program jest dołączony do, IDE wymaga uproszczone opis programu. Te informacje można uzyskać z poziomu węzła programu. Gdy program jest dołączony do, IDE musi wyświetlić bardziej szczegółowe informacje, takie jak lista wszystkie wątki uruchomione w programie. Te informacje są uzyskiwane z samego programu.  
+  Przed dołączeniem programu do środowiska IDE wymaga tylko lekkiego opisu programu. Te informacje można uzyskać z węzła program. Po dołączeniu programu do środowiska IDE musi wyświetlić bardziej szczegółowe informacje, takie jak lista wszystkich wątków uruchomionych w programie. Te informacje są uzyskiwane z samego programu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Programy](../../extensibility/debugger/programs.md)   
- [Procesy](../../extensibility/debugger/processes.md)   
+ [Programu](../../extensibility/debugger/programs.md)   
+ [Przetwarzające](../../extensibility/debugger/processes.md)   
  [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
  [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   

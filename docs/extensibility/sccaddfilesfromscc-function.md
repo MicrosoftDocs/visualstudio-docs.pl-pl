@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccAddFilesFromSCC | Dokumenty firmy Microsoft
+title: Funkcja SccAddFilesFromSCC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701288"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC, funkcja
@@ -39,52 +39,52 @@ SCCRTN SccAddFilesFromSCC(
 ```
 
 ### <a name="parameters"></a>Parametry
- Pcontext
+ pContext
 
-[w] Wskaźnik kontekstu wtyczki formantu źródła.
+podczas Wskaźnik kontekstu wtyczki kontroli źródła.
 
- Hwnd
+ Właściwość
 
-[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
+podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
 
- lpUżycie
+ lpUser
 
-[w, na zewnątrz] Nazwa użytkownika (do SCC_USER_SIZE, w tym null terminator).
+[in. out] Nazwa użytkownika (do SCC_USER_SIZE, w tym terminator o wartości null).
 
- lpAuxProjPath (lpAuxProjPath)
+ lpAuxProjPath
 
-[w, na zewnątrz] Ciąg pomocniczy identyfikujący projekt `SCC_PRJPATH_`(do rozmiaru, w tym zerowy terminator).
+[in. out] Ciąg pomocniczy identyfikujący projekt (do `SCC_PRJPATH_` rozmiaru, łącznie z terminatorem wartości null).
 
  cFiles
 
-[w] Liczba plików podanych przez `lpFilePaths`plik .
+podczas Liczba plików podaną przez `lpFilePaths` .
 
  lpFilePaths
 
-[w, na zewnątrz] Tablica nazw plików do dodania do bieżącego projektu.
+[in. out] Tablica nazw plików do dodania do bieżącego projektu.
 
  lpDestination
 
-[w] Ścieżka docelowa, w której mają być zapisywane pliki.
+podczas Ścieżka docelowa, w której mają być zapisywane pliki.
 
- lpKomentuj
+ lpComment
 
-[w] Komentarz, który ma zostać zastosowany do każdego dodawanych plików.
+podczas Komentarz, który ma zostać zastosowany do każdego dodawanego pliku.
 
- wyniki pbResults
+ pbResults
 
-[w, na zewnątrz] Tablica flag, które są ustawione w celu wskazania sukcesu (nonzero lub TRUE) lub awarii `cFiles` (zero lub FALSE) dla każdego pliku (rozmiar tablicy musi być co najmniej długi).
+[in. out] Tablica flag, które są ustawione tak, aby wskazywały powodzenie (niezerowe lub prawdziwe) lub niepowodzenie (zero lub FAŁSZ) dla każdego pliku (rozmiar tablicy musi być co najmniej `cFiles` długi).
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|Projekt nie jest otwarty.|
-|SCC_E_OPNOTPERFORMED|Połączenie nie jest z tym samym projektem, co określone przez`lpAuxProjPath.`|
-|SCC_E_NOTAUTHORIZED|Użytkownik nie jest upoważniony do aktualizacji bazy danych.|
+|SCC_E_OPNOTPERFORMED|Połączenie nie jest tym samym projektem określonym przez `lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do aktualizacji bazy danych.|
 |SCC_E_NONSPECIFICERROR|Nieznany błąd.|
 |SCC_I_RELOADFILE|Plik lub projekt musi zostać ponownie załadowany.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

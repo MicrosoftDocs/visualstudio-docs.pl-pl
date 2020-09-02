@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccCheckout | Dokumenty firmy Microsoft
+title: Funkcja SccCheckout | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ed809e33a80bf2903c88550e97b28b1e0178bcd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701108"
 ---
 # <a name="scccheckout-function"></a>SccCheckout, funkcja
-Biorąc pod uwagę listę w pełni kwalifikowanych nazw plików, ta funkcja sprawdza je na dysku lokalnym. Komentarz dotyczy wszystkich plików wyewidencjonowanych. Argument komentarza może `null` być ciągiem.
+Mając listę w pełni kwalifikowanych nazw plików, funkcja ta sprawdza je na dysku lokalnym. Komentarz dotyczy wszystkich plików, które są wyewidencjonowane. Argument komentarza może być `null` ciągiem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,47 +39,47 @@ SCCRTN SccCheckout (
 ### <a name="parameters"></a>Parametry
  pvContext
 
-[w] Struktura kontekstu wtyczki formantu źródła.
+podczas Struktura kontekstu wtyczki kontroli źródła.
 
- Hwnd
+ Właściwość
 
-[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
+podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
 
  nFiles
 
-[w] Liczba plików wybranych do wyewidencjonowania.
+podczas Liczba plików wybranych do wyewidencjonowania.
 
  lpFileNames
 
-[w] Tablica w pełni kwalifikowanych nazw ścieżek lokalnych plików do wyewidencjonowania.
+podczas Tablica w pełni kwalifikowanych nazw ścieżek lokalnych dla plików do wyewidencjonowania.
 
- lpKomentuj
+ lpComment
 
-[w] Komentarz ma zostać zastosowany do każdego z wyewidencjonowanych plików.
+podczas Komentarz, który ma zostać zastosowany do każdego z wybranych plików do wyewidencjonowania.
 
- Foptions
+ fOptions
 
-[w] Flagi poleceń (patrz [Bitflags używane przez określone polecenia).](../extensibility/bitflags-used-by-specific-commands.md)
+podczas Flagi poleceń (zobacz [Bitflags używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md)).
 
- pvOpcje
+ pvOptions
 
-[w] Opcje specyficzne dla wtyczki sterowania źródłem.
+podczas Opcje dotyczące wtyczki kontroli źródła.
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Wymeldowanie zakończyło się sukcesem.|
-|SCC_E_FILENOTCONTROLLED|Wybrany plik nie jest pod kontrolą kodu źródłowego.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zaleca się ponowną próbę.|
+|SCC_OK|Wyewidencjonowanie zakończyło się pomyślnie.|
+|SCC_E_FILENOTCONTROLLED|Wybrany plik nie znajduje się pod kontrolą kodu źródłowego.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zalecana jest ponowna próba.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_NONSPECIFICERROR|Niespecyficzna awaria. Plik nie został wyewidencjonowany.|
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd. Plik nie został wyewidencjonowany.|
 |SCC_E_ALREADYCHECKEDOUT|Użytkownik ma już wyewidencjonowany plik.|
 |SCC_E_FILEISLOCKED|Plik jest zablokowany, zabraniając tworzenia nowych wersji.|
-|SCC_E_FILEOUTEXCLUSIVE|Inny użytkownik dokonał wyłącznej realizacji transakcji w tym pliku.|
-|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed zakończeniem.|
+|SCC_E_FILEOUTEXCLUSIVE|Inny użytkownik wykonał wyewidencjonowanie na wyłączność tego pliku.|
+|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
 - [Bitflags używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md)
