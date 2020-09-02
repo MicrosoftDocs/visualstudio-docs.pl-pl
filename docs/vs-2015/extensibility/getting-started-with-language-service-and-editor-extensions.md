@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do usługi językowej i edytora rozszerzenia | Dokumentacja firmy Microsoft
+title: Wprowadzenie z rozszerzeniami usługi językowej i edytora | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,41 +11,41 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703758"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do rozszerzeń usługi językowej i edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspektu, parowanie nawiasów klamrowych, funkcja IntelliSense i żarówki, język programowania lub dowolnego typu zawartości. Można również dostosować wygląd i zachowanie edytora programu Visual Studio, na przykład tekst kolorowanie, marginesy, zakończeń i inne elementy wizualne. Można również zdefiniować własny typ zawartości i określ wygląd i zachowanie widoki tekstowe, w których zawartość zostanie wyświetlona.  
+Rozszerzenia edytora umożliwiają dodawanie funkcji usługi językowej, takich jak konspekt, dopasowywanie nawiasów klamrowych, IntelliSense i żarówki do własnego języka programowania lub dowolnego typu zawartości. Możesz również dostosować wygląd i zachowanie edytora programu Visual Studio, na przykład Kolorowanie tekstu, marginesy, elementy definiowania i inne wizualizacje. Możesz również zdefiniować własny typ zawartości i określić wygląd i zachowanie widoków tekstu, w których wyświetlana jest zawartość.  
   
- Aby rozpocząć pisanie rozszerzenia edytora, korzystanie z szablonów projektów edytora, które są zainstalowane jako część programu Visual Studio SDK. Visual Studio SDK jest dostępny do pobrania zestaw narzędzi, które ułatwiają tworzenie rozszerzeń programu Visual Studio przy użyciu pakietów VSPackage lub za pomocą Managed Extensibility Framework (MEF).  
-  
-> [!NOTE]
-> Aby uzyskać więcej informacji na temat zestawu SDK programu Visual Studio, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
-  
- Firma Microsoft zaleca, Dowiedz się o następujących pojęć i technologii przed przystąpieniem do napisania własnego rozszerzenia edytora.  
-  
-## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) i rozszerzenia Edytora  
- Interfejs użytkownika edytora programu Visual Studio (UI) jest implementowany przy użyciu Windows Presentation Foundation (WPF). WPF zapewnia bogate doświadczenia wizualne i spójny model programowania, która oddziela visual aspektów kod od logiki biznesowej. Po utworzeniu rozszerzenia edytora, można użyć wielu elementów WPF i funkcje. Aby uzyskać więcej informacji, zobacz [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
-  
-## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Struktura Managed Extensibility Framework (MEF) i rozszerzenia Edytora  
- Edytor programu Visual Studio używa Managed Extensibility Framework (MEF) do zarządzania komponentami i rozszerzeń. MEF umożliwia również deweloperom więcej łatwe tworzenie rozszerzeń dla aplikacji hosta, takimi jak Visual Studio. Ta struktura służy do definiowania rozszerzenia zgodnie z kontrakt MEF i wyeksportuj go jako składnik MEF. Aplikacja hosta zarządza części składowe, ich znajdowanie, rejestrowania ich i upewniając się, że są one stosowane do poprawnego kontekstu.  
+ Aby rozpocząć pisanie rozszerzeń edytora, użyj szablonów projektu edytora zainstalowanych w ramach zestawu Visual Studio SDK. Visual Studio SDK to zestaw narzędzi do pobrania, które ułatwiają tworzenie rozszerzeń programu Visual Studio przy użyciu pakietów VSPackage lub za pomocą Managed Extensibility Framework (MEF).  
   
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat MEF w edytorze, zobacz [Managed Extensibility Framework, w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Aby uzyskać więcej informacji na temat zestawu Visual Studio SDK, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## <a name="visual-studio-editor-extension-points-and-extensions"></a>Punkty rozszerzenia edytora programu Visual Studio i rozszerzenia  
- Punkty rozszerzenia edytora są składniki MEF, które można dostosować i rozszerzyć. W niektórych przypadkach można rozszerzyć punktu rozszerzenia przez implementację interfejs i wyeksportować go wraz z prawidłowych metadanych. W innych przypadkach można po prostu zadeklarować rozszerzenie i wyeksportuj go jako określonego typu.  
+ Zalecamy zapoznanie się z poniższymi pojęciami i technologiami przed napisaniem własnych rozszerzeń edytora.  
   
- Poniżej przedstawiono niektóre z podstawowych rodzajów rozszerzenia edytora:  
+## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) i rozszerzenia edytora  
+ Interfejs użytkownika edytora programu Visual Studio jest implementowany przy użyciu Windows Presentation Foundation (WPF). WPF zawiera bogate środowisko wizualne i spójny model programowania, który oddziela aspekty wizualne kodu od logiki biznesowej. Podczas tworzenia rozszerzeń edytora można używać wielu elementów i funkcji WPF. Aby uzyskać więcej informacji, zobacz [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
+  
+## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed Extensibility Framework (MEF) i rozszerzenia edytora  
+ Edytor programu Visual Studio używa Managed Extensibility Framework (MEF) do zarządzania jego składnikami i rozszerzeniami. MEF umożliwia również deweloperom łatwiejsze tworzenie rozszerzeń dla aplikacji hosta, takich jak Visual Studio. W tym środowisku należy zdefiniować rozszerzenie zgodnie z umową MEF i wyeksportować ją jako część składnika MEF. Aplikacja hosta zarządza częściami składników, wyszukując je, rejestrując je i upewniając się, że są one stosowane do prawidłowego kontekstu.  
+  
+> [!NOTE]
+> Aby uzyskać więcej informacji na temat MEF w edytorze, zobacz [Managed Extensibility Framework w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+  
+## <a name="visual-studio-editor-extension-points-and-extensions"></a>Punkty rozszerzenia i rozszerzenia edytora programu Visual Studio  
+ Punkty rozszerzenia edytora to części składników MEF, które można dostosowywać i rozszerzać. W niektórych przypadkach rozszerzasz punkt rozszerzenia, implementując interfejs i eksportując go wraz z prawidłowymi metadanymi. W innych przypadkach wystarczy zadeklarować rozszerzenie i wyeksportować je jako określony typ.  
+  
+ Poniżej przedstawiono niektóre podstawowe rodzaje rozszerzeń edytora:  
   
 - Marginesy i paski przewijania  
   
-- Znaczniki  
+- Tagi  
   
 - Zakończeń  
   
@@ -53,38 +53,38 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
   
 - IntelliSense  
   
-  Aby uzyskać więcej informacji na temat punktów rozszerzenia edytora, zobacz [usługi językowej i edytora punkty rozszerzenia](../extensibility/language-service-and-editor-extension-points.md).  
+  Aby uzyskać więcej informacji na temat punktów rozszerzenia edytora, zobacz [punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md).  
   
-## <a name="deploying-editor-extensions"></a>Wdrażanie rozszerzenia Edytora  
- W programie Visual Studio możesz wdrożyć rozszerzenia edytora, przez dodanie plik metadanych o nazwie source.extension.vsixmanifest do rozwiązania, kompilowania rozwiązania, a następnie dodając kopię plików binarnych i manifest w folderze, który jest znany w programie Visual Studio. Plik manifestu definiuje podstawowych informacji o rozszerzeniu (na przykład nazwy, autora, wersji i typu zawartości). Aby uzyskać więcej informacji na temat pliku manifestu VSIX i sposobu wdrażania rozszerzeń, zobacz [wysyłania rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  
+## <a name="deploying-editor-extensions"></a>Wdrażanie rozszerzeń edytora  
+ W programie Visual Studio wdrażasz rozszerzenia edytora przez dodanie pliku metadanych o nazwie source. Extension. vsixmanifest do rozwiązania, skompilowanie rozwiązania, a następnie dodanie kopii plików binarnych i manifestu w folderze, który jest znany w programie Visual Studio. Plik manifestu definiuje podstawowe informacje o rozszerzeniu (na przykład nazwę, autora, wersję i typ zawartości). Aby uzyskać więcej informacji na temat pliku manifestu VSIX i sposobu wdrażania rozszerzeń, zobacz [wysyłanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  
   
- Po zainstalowaniu rozszerzenia na komputerze obejmują pliki binarne i manifest w podfolderze folderu, który jest znany dla programu Visual Studio.  
+ Podczas instalowania rozszerzenia na komputerze należy uwzględnić pliki binarne i manifest w podfolderze folderu znanego dla programu Visual Studio.  
   
 > [!WARNING]
-> Nie trzeba martwić o szczegóły manifesty i lokalizacji wdrożenia, jeśli używasz jednego z szablonów rozszerzania edytora, które znajdują się w programie Visual Studio. Szablony zawierają wszystko, co jest wymagane, aby zarejestrować i wdrożyć rozszerzenie.  
+> Nie trzeba martwić się o szczegóły manifestów i lokalizacji wdrożenia, jeśli używasz jednego z szablonów rozszerzalności edytora, które znajdują się w programie Visual Studio. Szablony zawierają wszystkie elementy wymagane do zarejestrowania i wdrożenia rozszerzenia.  
   
-## <a name="running-extensions-in-the-experimental-instance"></a>Uruchamianie rozszerzenia w doświadczalnym wystąpieniu  
- Można związane z działającą wersją programu Visual Studio, gdy rozszerzenie jest tworzona przez wdrożenie jej w następującym folderze eksperymentalne (w systemach Windows Vista i Windows 7):  
+## <a name="running-extensions-in-the-experimental-instance"></a>Uruchamianie rozszerzeń w eksperymentalnym wystąpieniu  
+ Możesz izolować swoją działającą wersję programu Visual Studio podczas tworzenia rozszerzenia, wdrażając je w następującym folderze eksperymentalnym (w systemach Windows Vista i Windows 7):  
   
- *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
+ *% LocalAppData%* \VisualStudio\10.0Exp\Extensions \\ *firmy* \\ *ExtensionID*  
   
- gdzie *% LOCALAPPDATA %* jest nazwą użytkownika zalogowanego *firmy* to nazwa firmy, który jest właścicielem rozszerzenia, a *ExtensionID* jest Identyfikatorem rozszerzenia.  
+ gdzie *% LocalAppData%* jest nazwą zalogowanego użytkownika, *firma* jest nazwą firmy, która jest właścicielem rozszerzenia, a *ExtensionID* jest identyfikatorem rozszerzenia.  
   
- Podczas wdrażania rozszerzenia w doświadczalnych lokalizacji działa w trybie debugowania. Drugie wystąpienie programu Visual Studio jest uruchomiony i nosi nazwę **Microsoft Visual Studio — wystąpienie doświadczalne**.  
+ Po wdrożeniu rozszerzenia do lokalizacji eksperymentalnej jest ona uruchamiana w trybie debugowania. Drugie wystąpienie programu Visual Studio jest uruchomione i nosi nazwę **Microsoft Visual Studio — wystąpienie eksperymentalne**.  
   
 ## <a name="managing-extensions"></a>Zarządzanie rozszerzeniami  
- Rozszerzenia programu Visual Studio są wymienione w **rozszerzenia i aktualizacje** (na **narzędzia** menu). Jeśli testujesz rozszerzenia w doświadczalnym wystąpieniu, jest ono wyświetlane w **rozszerzenia i aktualizacje** w doświadczalnym wystąpieniu, ale nie znajduje się w wystąpieniu rozwoju.  
+ Rozszerzenia programu Visual Studio są wymienione w temacie **rozszerzenia i aktualizacje** (w menu **Narzędzia** ). Jeśli testujesz rozszerzenie w eksperymentalnym wystąpieniu, jest ono wyświetlane w obszarze **rozszerzenia i aktualizacje** w wystąpieniu eksperymentalnym, ale nie jest wymienione w wystąpieniu deweloperskim.  
   
- Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+ Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
-## <a name="using-templates-to-create-editor-extensions"></a>Używanie szablonów do tworzenia rozszerzenia Edytora  
- Szablony edytora umożliwia tworzenie rozszerzeń MEF, umożliwiające dostosowanie klasyfikatorów, zakończeń oraz marginesy. Brak szablonów dla projektów w językach C# i Visual Basic. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+## <a name="using-templates-to-create-editor-extensions"></a>Tworzenie rozszerzeń edytora przy użyciu szablonów  
+ Za pomocą szablonów edytora można tworzyć rozszerzenia MEF, które dostosowują klasyfikatory, zakończenia i marginesy. Istnieją szablony dla projektów C# i Visual Basic. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia z szablonem elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
- Szablon projektu VSIX umożliwia również tworzenie rozszerzeń. Ten szablon zawiera tylko elementy, które są wymagane do wdrażania wszelkiego rodzaju rozszerzenia i obejmują plik source.extension.vsixmanifest, wymagane odwołania do zestawu i pliku projektu, który zawiera zadania kompilacji, które pozwalają na wdrażanie rozszerzenie. Aby uzyskać więcej informacji, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).  
+ Do tworzenia rozszerzeń można także użyć szablonu projektu VSIX. Ten szablon zawiera tylko te elementy, które są wymagane do wdrożenia dowolnego rodzaju rozszerzenia i obejmują plik source. Extension. vsixmanifest, wymagane odwołania do zestawu i plik projektu zawierający zadania kompilacji, które umożliwiają wdrożenie rozszerzenia. Aby uzyskać więcej informacji, zobacz [szablon projektu VSIX](../extensibility/vsix-project-template.md).  
   
- Można również utworzyć edytora składników MEF z rozszerzeniem pakiet rozszerzeń Visual Studio. Zobacz poniższe poradniki, aby uzyskać szczegółowe informacje:  
+ Można również tworzyć składniki MEF edytora z rozszerzenia pakietu programu Visual Studio. Szczegółowe informacje znajdują się w następujących przewodnikach:  
   
-- [Przewodnik: używanie polecenia powłoki z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Przewodnik: używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
 - [Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   

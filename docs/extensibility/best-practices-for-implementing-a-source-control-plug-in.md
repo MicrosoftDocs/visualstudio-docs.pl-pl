@@ -1,5 +1,5 @@
 ---
-title: Najważniejsze wskazówki dotyczące wdrażania wtyczki kontroli źródła | Dokumenty firmy Microsoft
+title: Najlepsze rozwiązania dotyczące implementowania wtyczki kontroli źródła | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,50 +13,50 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 68491f22d63ae3ebb664b7c22188a661dccbf39a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740054"
 ---
-# <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Najważniejsze wskazówki dotyczące wdrażania wtyczki kontroli źródła
-Poniższe szczegóły techniczne mogą pomóc w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]niezawodnym zaimplementowanie wtyczki kontroli źródła.
+# <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Najlepsze rozwiązania dotyczące implementowania wtyczki kontroli źródła
+Poniższe szczegóły techniczne mogą pomóc w niezawodnym wdrożeniu wtyczki kontroli źródła w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="memory-management-issues"></a>Problemy z zarządzaniem pamięcią
- W większości przypadków zintegrowane środowisko programistyczne (IDE), który jest wywołującym, zwalnia i przydziela pamięć. Wtyczka formantu źródła zwraca ciągi i inne elementy w buforach przydzielonych przez wywołującego. Wyjątki są odnotowane w opisach określonych funkcji, w których występują.
+ W większości przypadków zintegrowane środowisko programistyczne (IDE), które jest obiektem wywołującym, zwalnia i przydziela pamięć. Wtyczka do kontroli źródła zwraca ciągi i inne elementy w buforach przyznanych przez obiekt wywołujący. Wyjątki są zanotowane w opisach konkretnych funkcji, w których występują.
 
 ## <a name="arrays-of-file-names"></a>Tablice nazw plików
- Po przekazaniu tablicy plików nie jest przekazywana jako ciągła tablica nazw plików. Jest przekazywana jako tablica wskaźników do nazw plików. Na przykład w [SccGet](../extensibility/sccget-function.md)nazwy plików są `lpFileNames` przekazywane przez `lpFileNames` parametr, gdzie `char **`jest faktycznie wskaźnik do . `lpFileNames`[0] jest wskaźnikiem do `lpFileNames`imienia, [1] jest wskaźnikiem do drugiej nazwy i tak dalej.
+ Po przekazaniu tablicy plików nie jest ona przenoszona jako ciągła Tablica nazw plików. Jest ona przenoszona jako tablica wskaźników do nazw plików. Na przykład w [SccGet](../extensibility/sccget-function.md)nazwy plików są przesyłane przez `lpFileNames` parametr, gdzie `lpFileNames` jest w rzeczywistości wskaźnikiem do `char **` . `lpFileNames`[0] jest wskaźnikiem do pierwszej nazwy, `lpFileNames` [1] jest wskaźnikiem do drugiej nazwy i tak dalej.
 
 ## <a name="large-model"></a>Duży model
  Wszystkie wskaźniki są 32 bity, nawet w 16-bitowych systemach operacyjnych.
 
 ## <a name="fully-qualified-paths"></a>W pełni kwalifikowane ścieżki
- W przypadku gdy nazwy plików lub katalogi są określone jako argumenty, muszą to być w pełni kwalifikowane ścieżki lub ścieżki UNC bez kończących ukośników odwrotnych. Jest odpowiedzialny za wtyczkę kontroli źródła, aby przetłumaczyć je na ścieżki względne, jeśli jest to wymaganie podstawowego systemu kontroli źródła.
+ Gdzie nazwy plików lub katalogi są określone jako argumenty, muszą one być w pełni kwalifikowanymi ścieżkami lub ścieżkami UNC bez końcowych ukośników odwrotnych. Jest odpowiedzialna za wtyczkę kontroli źródła, aby przetłumaczyć je na ścieżki względne, jeśli jest to wymaganie bazowego systemu kontroli źródła.
 
 ## <a name="specify-a-fully-qualified-path-for-the-registered-dll"></a>Określ w pełni kwalifikowaną ścieżkę dla zarejestrowanej biblioteki DLL
- IDE nie ładuje już bibliotek DLL ze ścieżek względnych (na przykład *.\NewProvider.dll*). Należy określić pełną ścieżkę biblioteki DLL (na przykład *C:\Providers\NewProvider.dll*). Ten wymóg zwiększa bezpieczeństwo IDE, zapobiegając załadunku nieautoryzowanych lub personifikowanych bibliotek DLL kontroli źródła.
+ IDE nie ładuje już bibliotek DLL ze ścieżek względnych (na przykład *.\NewProvider.dll*). Należy określić pełną ścieżkę do biblioteki DLL (na przykład *C:\Providers\NewProvider.dll*). Ten wymóg wzmacnia zabezpieczenia środowiska IDE, uniemożliwiając ładowanie nieautoryzowanych lub personifikowanych bibliotek DLL kontroli źródła.
 
-## <a name="check-for-an-existing-vssci-plug-in-when-you-install-your-source-control-plug-in"></a>Sprawdzanie istniejącej wtyczki VSSCI podczas instalowania wtyczki sterowania źródłem
- Użytkownik, który planuje zainstalować wtyczkę kontroli źródła, może mieć już zainstalowaną na komputerze istniejącą wtyczkę kontroli źródła. Program instalacyjny (instalacyjny) dla utworzonej wtyczki powinien określać, czy istnieją istniejące wartości dla odpowiednich kluczy rejestru. Jeśli te klucze są już ustawione, program instalacyjny powinien zapytać użytkownika, czy zarejestrować wtyczkę jako domyślną wtyczkę formantu źródła i zastąpić tę, która jest już zainstalowana.
+## <a name="check-for-an-existing-vssci-plug-in-when-you-install-your-source-control-plug-in"></a>Sprawdź obecność istniejącej wtyczki VSSCI podczas instalowania wtyczki kontroli źródła
+ Użytkownik, który planuje zainstalować wtyczkę kontroli źródła, może mieć zainstalowaną na komputerze już istniejącą wtyczkę kontroli źródła. Program instalacyjny (Instalator) dla wtyczki, którą tworzysz, powinien określić, czy istnieją wartości dla odpowiednich kluczy rejestru. Jeśli te klucze zostały już ustawione, program instalacyjny powinien polecić użytkownikowi, czy ma zostać zarejestrowana wtyczka jako domyślna Wtyczka kontroli źródła, i zastąpić ten, który jest już zainstalowany.
 
 ## <a name="error-result-codes-and-reporting"></a>Kody wyników błędów i raportowanie
- Kod `SCC_OK` zwrotny dla funkcji kontroli źródła wskazuje, że operacja powiodła się dla wszystkich plików. Jeśli operacja nie powiedzie się, oczekuje się, że zwróci ostatni napotkany kod błędu.
+ `SCC_OK`Kod powrotny dla funkcji kontroli źródła wskazuje, że operacja powiodła się dla wszystkich plików. Jeśli operacja nie powiedzie się, oczekiwano zwrócenia ostatniego kodu błędu.
 
- Reguła raportowania jest, że jeśli wystąpi błąd w IDE, IDE jest odpowiedzialny za zgłoszenie go. Jeśli wystąpi błąd w systemie kontroli źródła, wtyczka kontroli źródła jest odpowiedzialna za zgłoszenie go. Na przykład **żadne pliki są obecnie wybrane** będą zgłaszane przez IDE, natomiast ten plik jest już **wyewidencjonowany** będzie zgłaszany przez wtyczkę.
+ Reguła raportowania polega na tym, że jeśli w środowisku IDE wystąpi błąd, IDE jest odpowiedzialny za zgłaszanie go. W przypadku wystąpienia błędu w systemie kontroli źródła Wtyczka kontroli źródła jest odpowiedzialna za zgłoszenie go. Na przykład **żadne pliki nie są obecnie wybrane** przez IDE, podczas gdy **ten plik jest już wyewidencjonowany** przez wtyczkę.
 
 ## <a name="the-context-structure"></a>Struktura kontekstu
- Podczas wywołania [SccInitialize](../extensibility/sccinitialize-function.md), wywołujący `ppvContext` przekazuje parametr, który jest niezainicjowany dojście do void. Wtyczka formantu źródła może zignorować ten parametr lub może przydzielić strukturę dowolnego rodzaju i umieścić wskaźnik do tej struktury w przekazanym wskaźnikiem. IDE nie rozumie tej struktury, ale przekazuje wskaźnik do tej struktury do każdego innego wywołania w dodatku plug-in. Zapewnia to cenne informacje pamięci podręcznej kontekstu do wtyczki, które można użyć do obsługi informacji o stanie globalnym, który utrzymuje się między wywołaniami funkcji bez użycia zmiennych globalnych. Wtyczka jest odpowiedzialna za uwolnienie struktury na wezwanie do [SccUninitialize](../extensibility/sccuninitialize-function.md).
+ Podczas wywołania do [SccInitialize](../extensibility/sccinitialize-function.md), obiekt wywołujący przekazuje `ppvContext` parametr, który jest niezainicjowanym dojściem do typu void. Wtyczka do kontroli źródła może zignorować ten parametr lub może przydzielić strukturę dowolnego rodzaju i umieścić wskaźnik do tej struktury w przekazanym wskaźniku. IDE nie rozumie tej struktury, ale przekazuje wskaźnik do tej struktury w każdym innym wywołaniu wtyczki. Zapewnia to cenne informacje o pamięci podręcznej kontekstu do wtyczki, która może być używana do przechowywania globalnych informacji o stanie, które utrzymują się w wywołaniach funkcji bez używania zmiennych globalnych. Wtyczka jest odpowiedzialna za zwolnienie struktury w wywołaniu [SccUninitialize](../extensibility/sccuninitialize-function.md).
 
- Jeśli dodatek ustawia `SCC_CAP_REENTRANT` bit w [SccInitialize](../extensibility/sccinitialize-function.md) (w szczególności `lpSccCaps` w parametrze), wiele struktur kontekstu są używane do śledzenia wszystkich projektów, które są otwarte.
+ Jeśli wtyczka ustawia `SCC_CAP_REENTRANT` bit w [SccInitialize](../extensibility/sccinitialize-function.md) (w szczególnych `lpSccCaps` parametrach), do śledzenia wszystkich otwartych projektów są używane wiele struktur kontekstu.
 
-## <a name="bitflags-and-other-command-options"></a>Bitflags i inne opcje poleceń
- Dla każdego polecenia, takich jak [SccGet](../extensibility/sccget-function.md), IDE można określić wiele opcji, które zmieniają zachowanie polecenia.
+## <a name="bitflags-and-other-command-options"></a>Bitflags i inne opcje polecenia
+ Dla każdego polecenia, takiego jak [SccGet](../extensibility/sccget-function.md), IDE może określić wiele opcji, które zmieniają zachowanie polecenia.
 
- Interfejs API obsługuje ustawienie niektórych opcji `fOptions` przez IDE za pośrednictwem parametru. Opcje te są opisane w [Bitflags używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md) wraz z poleceniami, które mają wpływ. Ogólnie rzecz biorąc są to opcje, dla których użytkownik nie zostanie poproszony.
+ Interfejs API obsługuje ustawienie niektórych opcji przez środowisko IDE za pomocą `fOptions` parametru. Te opcje są opisane w [Bitflags używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md) wraz z poleceniami, które mają wpływ na. Ogólnie rzecz biorąc, są to opcje, dla których użytkownik nie zostanie monitowany.
 
- Większość opcji ustawień konfigurowanych przez użytkownika nie jest zdefiniowana w ten sposób, ponieważ różnią się one znacznie w zależności od wtyczek kontroli źródła. W związku z tym zalecanym mechanizmem jest przycisk **Zaawansowane.** Na przykład w oknie dialogowym **Pobierz** IDE wyświetla tylko informacje, które rozumie, ale wyświetla również przycisk **Zaawansowane,** jeśli wtyczka ma opcje dla tego polecenia. Gdy użytkownik kliknie **przycisk Zaawansowane,** IDE wywołuje [SccGetCommandOptions,](../extensibility/sccgetcommandoptions-function.md) aby włączyć wtyczkę kontroli źródła, aby monitować użytkownika o informacje, takie jak bitflags lub data/godzina. Wtyczka zwraca te informacje w strukturze, która `SccGet` jest przekazywana z powrotem podczas polecenia.
+ Większość konfigurowalnych opcji ustawień użytkownika nie jest zdefiniowana w ten sposób, ponieważ różnią się one między wtyczkami kontroli źródła. W związku z tym zalecanym mechanizmem jest przycisk **Zaawansowane** . Na przykład w oknie dialogowym **pobieranie** środowisko IDE wyświetla tylko informacje, które rozumie, ale również wyświetla przycisk **Zaawansowane** , jeśli wtyczka zawiera opcje dla tego polecenia. Gdy użytkownik kliknie przycisk **Zaawansowane** , IDE wywołuje [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) , aby włączyć wtyczkę kontroli źródła w celu wyświetlenia monitu o podanie informacji, takich jak bitflags lub Data/godzina. Wtyczka zwraca te informacje w strukturze, która jest przenoszona z powrotem podczas wykonywania `SccGet` polecenia.
 
 ## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
-- [Tworzenie wtyczki formantu źródła](../extensibility/internals/creating-a-source-control-plug-in.md)
+- [Tworzenie wtyczki kontroli źródła](../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -13,14 +13,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 950927510d4c7acd77db22e80dff59946c0d6c20
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330144"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Instrukcje: Instalowanie autonomicznego profilera
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]udostępnia oparty na wiersz polecenia Profiler autonomiczny, który można uruchomić bez instalowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowiska IDE. Taka sytuacja występuje, gdy komputer nie ma zainstalowanego środowiska deweloperskiego. Na przykład nie należy instalować środowiska deweloperskiego na produkcyjnym serwerze sieci Web.
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia oparty na wiersz polecenia Profiler autonomiczny, który można uruchomić bez instalowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowiska IDE. Taka sytuacja występuje, gdy komputer nie ma zainstalowanego środowiska deweloperskiego. Na przykład nie należy instalować środowiska deweloperskiego na produkcyjnym serwerze sieci Web.
 
 > [!NOTE]
 > Gdy korzystasz z autonomicznego profilera do zbierania danych wydajności dla witryny sieci Web ASP.NET, narzędzie wiersza [VSPerfASPNETCmd](../profiling/vsperfaspnetcmd.md) jest zalecane za pośrednictwem narzędzia [VSPerfCmd](../profiling/vsperfcmd.md) .

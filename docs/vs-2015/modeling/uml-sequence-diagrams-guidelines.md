@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850121"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramy sekwencyjne UML: Zalecenia
@@ -39,7 +39,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="in-this-topic"></a>W tym temacie
+## <a name="in-this-topic"></a>W tym temacie:
  [Korzystanie z diagramów sekwencji UML](#Using)
 
  [Podstawowe kroki dotyczące rysowania diagramów sekwencji](#BasicSteps)
@@ -54,7 +54,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
  [Opisywanie struktur kontroli z fragmentami](#Fragments)
 
-## <a name="Using"></a>Korzystanie z diagramów sekwencji UML
+## <a name="using-uml-sequence-diagrams"></a><a name="Using"></a> Korzystanie z diagramów sekwencji UML
  Diagramy sekwencji można używać do różnych celów na różnych poziomach szczegółów programu. Typowe przypadki rysowania diagramu sekwencji są następujące:
 
 - Jeśli masz diagram przypadków użycia, który podsumowuje użytkowników systemu i ich cele, możesz narysować diagramy sekwencji opisujące, jak główne składniki systemu współdziałają w celu spełnienia celu dla każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wytyczne](../modeling/uml-use-case-diagrams-guidelines.md).
@@ -79,7 +79,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 #### <a name="use-case-details"></a>Szczegóły przypadku użycia
  Przypadek użycia reprezentuje cel użytkownika wraz z sekwencją kroków w celu osiągnięcia celu. Sekwencję kroków można opisać na kilka sposobów. Jedną z opcji jest narysowanie diagramu sekwencji, który pokazuje interakcje między użytkownikami i głównymi składnikami systemu. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wytyczne](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Podstawowe kroki dotyczące rysowania diagramów sekwencji
+## <a name="basic-steps-for-drawing-sequence-diagrams"></a><a name="BasicSteps"></a> Podstawowe kroki dotyczące rysowania diagramów sekwencji
  Aby uzyskać pełną listę elementów na diagramach sekwencji, zobacz [diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md).
 
 > [!NOTE]
@@ -115,7 +115,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 3. Aby wyświetlić komunikat pochodzący z nieznanego źródła zdarzeń (9) lub emisji do nieznanych odbiorców (10), narysuj komunikat asynchroniczny z lub do pustego miejsca na diagramie. Komunikaty te są nazywane *komunikatami znalezionymi* (9) i *utraconymi komunikatami* (10).
 
     > [!NOTE]
-    > Aby przenieść grupę linii życia z utraconymi lub znalezionymi komunikatami, wykonaj następujące kroki, aby wybrać linie życia przed ich przeniesieniem: Narysuj prostokąt wokół tych linii życia lub naciśnij i przytrzymaj klawisz **Ctrl** podczas klikania każdej linii życia. W przypadku użycia **opcji Zaznacz wszystko** lub **Ctrl**+**a** , aby zaznaczyć wszystkie linie życia, a następnie przenieść wszystkie utracone lub znalezione komunikaty dołączone do tych linii życia nie będą przenoszone. Jeśli wystąpi taka sytuacja, te wiadomości można przenosić oddzielnie.
+    > Aby przenieść grupę linii życia z utraconymi lub znalezionymi komunikatami, wykonaj następujące kroki, aby wybrać linie życia przed ich przeniesieniem: Narysuj prostokąt wokół tych linii życia lub naciśnij i przytrzymaj klawisz **Ctrl** podczas klikania każdej linii życia. Jeśli używasz **opcji Zaznacz wszystko** lub **Ctrl** + **A** , aby zaznaczyć wszystkie linie życia, a następnie przeniesiesz je, utracone lub znalezione komunikaty dołączone do tych linii życia nie będą przenoszone. Jeśli wystąpi taka sytuacja, te wiadomości można przenosić oddzielnie.
 
 4. Rysuj diagramy sekwencji dla każdej istotnej wiadomości do tego samego składnika lub systemu.
 
@@ -123,7 +123,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Przeciągnij komunikat w górę lub w dół w jego linii życia. Można przeciągać je do innych komunikatów lub do lub z bloku wykonywania.
 
-     \- lub —
+     \- oraz
 
 - Kliknij komunikat i użyj klawiszy Strzałka w **górę** i **Strzałka w dół** , aby dostosować położenie wiadomości. Aby zmienić kolejność komunikatów, użyj **klawiszy Shift + Strzałka w górę** i **Shift + Strzałka w dół** .
 
@@ -144,7 +144,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
   - Kliknij prawym przyciskiem myszy linię życia, a następnie wybierz polecenie **Utwórz klasę**.
 
-     lub
+     -lub-
 
   - Wybierz linię życia, naciśnij klawisz **F4**, a następnie w oknie **Właściwości** ustaw właściwość **Typ** na istniejący typ lub określ nazwę nowego typu. Kliknij prawym przyciskiem myszy etykietę komunikat, a następnie wybierz polecenie **Utwórz operację**.
 
@@ -165,11 +165,11 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 2. Przeciągnij interakcję do pakietu.
 
-     \- lub —
+     \- oraz
 
      Kliknij prawym przyciskiem myszy interakcję, a następnie kliknij pozycję **Wytnij**. Kliknij prawym przyciskiem myszy pakiet, a następnie kliknij przycisk **Wklej**.
 
-## <a name="Simple"></a>Tworzenie i używanie prostych diagramów sekwencji
+## <a name="creating-and-using-simple-sequence-diagrams"></a><a name="Simple"></a> Tworzenie i używanie prostych diagramów sekwencji
  Najprostsza i najbardziej szeroko stosowana forma diagramu sekwencji zawiera tylko linie życia i wiadomości. Diagram tego rodzaju pozwala na jasne wyświetlanie typowej sekwencji interakcji między obiektami w projekcie lub między systemem a użytkownikami. Jest to często wystarczające, aby ułatwić omawianie i komunikowanie się z projektem.
 
  Oto kilka rzeczy, które należy wziąć pod uwagę podczas rysowania prostego diagramu sekwencji.
@@ -179,7 +179,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Za pomocą narzędzia **synchronicznego** opisz interakcję, w której nadawca ma zwrócić odpowiedź (3).
 
-     **<\<zwracać > >** pojawia się na końcu wystąpienia wykonania. Oznacza to powrót kontroli do nadawcy.
+     **<\<return>>** Na końcu wystąpienia wykonania zostanie wyświetlona strzałka. Oznacza to powrót kontroli do nadawcy.
 
 - Narzędzie **asynchroniczne** służy do opisywania interakcji, w której nadawca może natychmiast kontynuować bez oczekiwania na odbiornik (4).
 
@@ -256,12 +256,12 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Niektóre linie życia wydają się obsługiwać więcej niż jeden rodzaj zadania. Należy łatwo znaleźć jedno zwięzłe zdanie, które opisuje obowiązki każdej linii życia, podsumowujące działania wykonywane w odpowiedzi na każdą odebraną wiadomość.
 
-## <a name="ClassesAndLifelines"></a>Klasy i linie życia
+## <a name="classes-and-lifelines"></a><a name="ClassesAndLifelines"></a> Klasy i linie życia
  Linie życia w diagramach sekwencji pokazują wystąpienia klas lub interfejsów składników. Linię życia można nazwać na dwa sposoby:
 
 |**W tym celu**|**Użyj tego formatu**|
 |--------------------------|-------------------------|
-|Anonimowe wystąpienie typu.<br /><br /> Użyj tego, jeśli masz tylko jedną linię życia dla każdego typu.|*typeName*|
+|Anonimowe wystąpienie typu.<br /><br /> Użyj tego, jeśli masz tylko jedną linię życia dla każdego typu.|*Nazwa*|
 |Nazwane wystąpienie typu.<br /><br /> Użyj tego, jeśli chcesz wyświetlić sekwencję obejmującą więcej niż jedno wystąpienie tego samego typu.|*ObjectName*:*TypeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Tworzenie linii życia z typów
@@ -274,7 +274,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Przeciągnij klasę, składnik lub interfejs z Eksploratora modelu UML na diagram sekwencji.
 
-   \- lub —
+   \- oraz
 
   1. Kliknij prawym przyciskiem myszy klasę, składnik lub interfejs na odpowiednim diagramie, a następnie kliknij polecenie **Utwórz linię życia**.
 
@@ -323,7 +323,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
          Klasa lub interfejs pojawia się na diagramie klas.
 
-         \- lub —
+         \- oraz
 
     3. Przeciągnij nowy interfejs z **Eksploratora modelu UML** na składnik lub port na diagramie składników.
 
@@ -332,7 +332,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 ### <a name="creating-classes-for-parameters"></a>Tworzenie klas dla parametrów
  Można uwzględnić parametry w komunikatach na diagramie sekwencji. Można użyć diagramu klas UML do opisania typów parametrów.
 
-## <a name="Multiple"></a>Tworzenie sekwencji interakcji do wielokrotnego użytku
+## <a name="creating-reusable-interaction-sequences"></a><a name="Multiple"></a> Tworzenie sekwencji interakcji do wielokrotnego użytku
  Można użyć oddzielnego diagramu do opisywania sekwencji zawierającej szczegóły, które mają zostać rozdzielone lub które są wspólne dla kilku diagramów.
 
  Można utworzyć prostokąt używany do interakcji (12) na jednym diagramie, który wskazuje szczegóły na innym diagramie.
@@ -349,7 +349,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 3. Kliknij dwukrotnie nazwę przy użyciu interakcji i zmień jej nazwę, aby opisać efekt sekwencji wielokrotnego użytku na tym diagramie.
 
-     \- lub —
+     \- oraz
 
      Napisz nazwę, taką jak wywołanie funkcji, z parametrami.
 
@@ -357,7 +357,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
      Kliknij przycisk **Utwórz nową sekwencję** , aby utworzyć nowy diagram sekwencji
 
-     \- lub —
+     \- oraz
 
      Kliknij pozycję **Połącz z sekwencją** , aby połączyć się z istniejącym diagramem.
 
@@ -384,14 +384,14 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
 
 - Kliknij dwukrotnie użycie interakcji.
 
-     \- lub —
+     \- oraz
 
      Kliknij prawym przyciskiem myszy użycie interakcji, a następnie kliknij pozycję **Przejdź do sekwencji**.
 
 ### <a name="creating-a-placeholder-with-an-interaction-use"></a>Tworzenie symbolu zastępczego z użyciem interakcji
  Można utworzyć interakcję bez powiązania jej z innym diagramem. Można go użyć jako symbolu zastępczego dla części sekwencji, której szczegóły jeszcze nie mają zostać wykonane. Użyj nazwy używanej interakcji, aby wskazać żądany wynik.
 
-## <a name="Collapse"></a>Zwijanie grup linii życia
+## <a name="collapsing-groups-of-lifelines"></a><a name="Collapse"></a> Zwijanie grup linii życia
  Zestaw linii życia można zwinąć ze sobą, aby grupa była wyświetlana jako jedna linia życia. Ułatwia to wizualizację grupy obiektów jako jednego składnika. Komunikaty i interakcje stosowane między liniami życia w zwiniętej grupie są ukryte. Wyświetlane są komunikaty i sekwencje interakcji, które obejmują inne linie życia.
 
 #### <a name="to-collapse-a-group-of-lifelines-together"></a>Aby zwinąć grupę linii życia razem
@@ -416,7 +416,7 @@ W programie Visual Studio możesz narysować *Diagram sekwencji* , aby wyświetl
     > [!NOTE]
     > Nazwa grupy zostanie utracona wraz z dowolnymi łączami z grupy do komentarzy lub elementów roboczych.
 
-## <a name="Fragments"></a>Opisywanie struktur kontroli z fragmentami
+## <a name="describing-control-structures-with-fragments"></a><a name="Fragments"></a> Opisywanie struktur kontroli z fragmentami
  Za pomocą połączonych fragmentów (13) można definiować pętle, gałęzie i współbieżne przetwarzanie w diagramie sekwencji. Zamiast tego Rozważ użycie diagramu aktywności. Diagram aktywności nie jest jak użyteczny podczas wyświetlania komunikatów między aktorami, ale w niektórych przypadkach lepiej jest wyświetlać pętle, gałęzie i współbieżność.
 
  Aby zapoznać się z pełną listą typów fragmentów, zobacz [opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).

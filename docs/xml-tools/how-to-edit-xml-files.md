@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249509"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: edytowanie plików XML
@@ -50,7 +50,7 @@ Aby edytować plik XML, Otwórz plik, który chcesz edytować.
 
 2. Wybierz **plik XML** , aby utworzyć nowy plik XML; lub wybierz opcję **plik XSLT** , aby utworzyć nowy arkusz stylów XSLT.
 
-3. Wybierz pozycję **Otwórz**.
+3. Wybierz pozycję **Open** (Otwórz).
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Utwórz pusty projekt dla plików XML
 
@@ -62,7 +62,7 @@ Aby edytować plik XML, Otwórz plik, który chcesz edytować.
 
 2. Wybierz wybrany język kodu, a następnie wybierz szablon **pusty projekt (.NET Framework)** .
 
-3. Wybierz przycisk **OK**.
+3. Wybierz pozycję **OK**.
 
 ::: moniker-end
 

@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: overview
 description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
 ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249860"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
@@ -20,7 +20,7 @@ Portal administrowania subskrypcjami programu Visual Studio udostępnia narzędz
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
-## <a name="important-considerations"></a>Istotne zagadnienia
+## <a name="important-considerations"></a>Ważne zagadnienia
 W przypadku korzystania z portalu administratora subskrypcji programu Visual Studio należy pamiętać o następujących kwestiach:
 - **Subskrypcje programu Visual Studio są licencjonowane na użytkownika.** Każdy subskrybent może korzystać z oprogramowania na tyle, ile komputerów jest potrzebnych do tworzenia i testowania.
 - **Przypisz tylko jeden poziom subskrypcji dla każdego subskrybenta**, odpowiadający subskrypcji programu Visual Studio zakupionej przez Twoją organizację. Jeśli masz subskrybentów z przypisanym więcej niż jednym poziomem subskrypcji, Edytuj swoje ustawienia tak, aby zawierały tylko jeden z nich.

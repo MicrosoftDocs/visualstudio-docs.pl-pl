@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Informacje o symbolach Windows odwołania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: odwołania do informacji o symbolach systemu Windows | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,40 +15,40 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443457"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64822699"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Instrukcje: Informacje o symbolach Windows odwołania
+# <a name="how-to-reference-windows-symbol-information"></a>Porady: odwołania do informacji o symbolach w systemie Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio Profiling Tools umożliwia rozpoznawanie nazw symbolicznych takich jak nazwy funkcji w plikach binarnych program plików symboli (.pdb). Można wykonaj następujące kroki, aby automatycznie Pobierz i zaktualizuj pliki .pdb poprawne dla wersji systemu Windows na komputerze lokalnym.  
+Program Visual Studio narzędzia profilowania używać plików symboli (. pdb) do rozpoznawania symbolicznych nazw, takich jak nazwy funkcji w plikach binarnych programu. Możesz wykonać następujące kroki, aby automatycznie pobrać i zaktualizować poprawne pliki. pdb dla wersji systemu Windows na komputerze lokalnym.  
   
 > [!NOTE]
-> To ustawienie nie wpływa na istniejące raporty. Tylko raporty utworzone po określeniu serwera symboli będzie mieć informacji o symbolach.  
+> To ustawienie nie ma wpływu na istniejące raporty. Tylko raporty utworzone po określeniu serwera symboli będą miały informacje o symbolach.  
   
- Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Aby uzyskać więcej informacji, zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Aby użyć serwera symboli firmy Microsoft  
   
-1. Tworzenie folderu zawierającego plik informacje o symbolach, takich jak C:\SymbolCache.  
+1. Utwórz folder, który będzie zawierać informacje o pliku symboli, takie jak C:\SymbolCache.  
   
-2. Na **narzędzia** menu, kliknij przycisk **opcje**.  
+2. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).  
   
-     **Opcje** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Opcje** .  
   
-3. Rozwiń **debugowanie** drzewa, a następnie kliknij przycisk **symbole**.  
+3. Rozwiń drzewo **debugowanie** , a następnie kliknij pozycję **symbole**.  
   
-4. W **symboli (.pdb) lokalizacji**, wybierz opcję **serwery symboli firmy Microsoft**  
+4. W **lokalizacjach pliku symboli (. pdb)** wybierz pozycję **serwery symboli Microsoft**  
   
-5. W **Buforuj symbole z serwera symboli do tego katalogu**, wpisz ścieżkę do folderu, który został utworzony w kroku 1, na przykład:  
+5. W polu **symbole pamięci podręcznej z serwera symboli do tego katalogu**wpisz ścieżkę do folderu, który został utworzony w kroku 1, na przykład:  
   
      **C:\SymbolCache**  
   
-     Możesz również kliknąć przycisk wielokropka (**...** ) a następnie wybierz katalog, z **przeglądanie w poszukiwaniu folderu** okno dialogowe.  
+     Możesz również kliknąć przycisk wielokropka (**...**), a następnie wybrać katalog z okna dialogowego **Przeglądaj w poszukiwaniu folderu** .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Instrukcje: Serializacja informacji o symbolach](../profiling/how-to-serialize-symbol-information.md)
+ [Instrukcje: serializacja informacji o symbolach](../profiling/how-to-serialize-symbol-information.md)

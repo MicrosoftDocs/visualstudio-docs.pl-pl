@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f02c3fe2e3d8fa67cb8a996ba14dddce7b1a3a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657070"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Pisanie testów jednostkowych dla .NET Framework za pomocą frameworka testów jednostkowych Microsoft dla kodu zarządzanego
@@ -26,10 +26,10 @@ W tej sekcji [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kod
 
  [Korzystanie z klas potwierdzeń](../test/using-the-assert-classes.md)
 
- [Instrukcje: tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)
+ [Porady: tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)
 
- [Testy jednostkowe metod ogólnych](../test/unit-tests-for-generic-methods.md)
+ [Testy jednostkowe dla metod ogólnych](../test/unit-tests-for-generic-methods.md)
 
  [Instrukcje: konfigurowanie pod kątem starszej wersji oprogramowania .NET](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)
 
- [Przykładowy projekt dotyczący tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md)
+ [Przykładowy projekt do tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryContext | Dokumentacja firmy Microsoft
+title: 'IDebugProperty2:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3ad83bfe36f468dd0e2d7d040c188fd69970a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193485"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
@@ -40,10 +40,10 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>Parametry  
  `ppMemory`  
- [out] Zwraca [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który reprezentuje pamięć skojarzone z tą właściwością.  
+ określoną Zwraca obiekt [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , który reprezentuje pamięć skojarzoną z tą właściwością.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` Jeśli brak kontekstu pamięci do pobrania.  
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` Jeśli nie ma kontekstu pamięci do pobrania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
