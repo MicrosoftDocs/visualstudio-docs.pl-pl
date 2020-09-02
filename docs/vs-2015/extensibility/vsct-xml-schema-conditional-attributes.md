@@ -1,5 +1,5 @@
 ---
-title: Atrybuty warunkowe schematu VSCT XML | Dokumentacja firmy Microsoft
+title: Atrybuty warunkowe schematu XML VSCT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,33 +12,33 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6294ee8027b61840149096561efc91b8a4a3c3ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422166"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atrybuty warunkowe schematu XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Atrybuty warunkowe mogą być stosowane do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzenia symboli zwrócić wartość PRAWDA lub FAŁSZ. W przypadku opcji true skojarzona lista lub element znajduje się w dane wyjściowe.  
+Atrybuty warunkowe mogą być stosowane do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzania symboli mają wartość PRAWDA lub FAŁSZ. W przypadku wartości true skojarzona lista lub element zostanie uwzględniony w wynikowym wyjściu.  
   
- Rozszerzenia tokenu można przetestować względem innych rozszerzenia tokenu lub stałe. Funkcja Defined() służy do sprawdzenia, czy została zdefiniowana określonej nazwie, nawet wtedy, gdy go nie ma wartości.  
+ Rozszerzenia tokenów można testować względem innych rozszerzeń lub stałych tokenów. Funkcja defined () służy do sprawdzania, czy określona nazwa została zdefiniowana, nawet jeśli nie ma wartości.  
   
- Gdy warunek jest stosowany do listy, warunek jest stosowany do każdego elementu podrzędnego, na liście. Jeśli nie zawiera elementu podrzędnego samego zawiera atrybut warunku, jego stan jest łączony w za pomocą wyrażenia nadrzędnego przez operację i.  
+ Gdy atrybut Condition jest stosowany do listy, warunek jest stosowany do każdego elementu podrzędnego na liście. Jeśli element podrzędny zawiera atrybut Condition, jego warunek jest połączony z wyrażeniem nadrzędnym przez operację i.  
   
- Wartości 1, "1" i "prawda", są oceniane jako PRAWDA, a 0, "0" i "false", które są obliczane jako wartość false.  
+ Wartości 1, "1" i "true" są oceniane jako prawdziwe, a 0, "0" i "false" są oceniane jako FAŁSZ.  
   
 ## <a name="operators"></a>Operatory  
- Następujące operatory mogą służyć do oceny wyrażenia warunkowe.  
+ Następujące operatory mogą służyć do obliczania wyrażeń warunkowych.  
   
 |Operator|Definicja|  
 |--------------|----------------|  
 |(,)|Grupowanie|  
 |!|Logiczne NOT|  
-|\<, >, \<=, >=, ==, !=|Relacyjne i równości|  
-|and|Boolean|  
-|lub|Boolean|  
+|\<, >, \<=, >=, ==, !=|Relacyjne i równość|  
+|oraz|Wartość logiczna|  
+|lub|Wartość logiczna|  
   
 ## <a name="examples"></a>Przykłady  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Dokumentacja firmy Microsoft
+title: 'IDebugSymbolProvider:: GetLanguage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8124e0c6328695da9773edbfd949ec2634dbfdb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421775"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda pobiera języka, który został użyty do kompilowania kodu pod adresem debugowania.  
+Ta metoda pobiera język, który został użyty do skompilowania kodu pod adresem debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,19 +44,19 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Parametry  
  `pAddress`  
- [in] Adres obiektu reprezentowanego przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
+ podczas Obiekt adresu reprezentowany przez interfejs [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pguidLanguage`  
- [out] Zwraca `GUID` , który określa język.  
+ określoną Zwraca wartość określającą `GUID` język.  
   
  `pguidLanguageVendor`  
- [out] Zwraca `GUID` określający dostawcy języka.  
+ określoną Zwraca wartość określającą `GUID` dostawcę języka.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat debugowania wywołuje tę metodę, aby uzyskać informacje potrzebne do wybrania Ewaluator wyrażeń poprawne.  
+ Aparat debugowania wywołuje tę metodę w celu uzyskania informacji potrzebnych do wybrania prawidłowej ewaluatora wyrażeń.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

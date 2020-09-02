@@ -1,5 +1,5 @@
 ---
-title: Idiapropertystorage — | Dokumentacja firmy Microsoft
+title: IDiaPropertyStorage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 29832934b848729879ee1ba802c70f85117efd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537631"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pozwala na trwałe właściwości zestawu właściwości DIA odczytu.  
+Umożliwia odczytywanie trwałych właściwości zestawu właściwości DIA.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,25 +31,25 @@ Pozwala na trwałe właściwości zestawu właściwości DIA odczytu.
 IDiaPropertyStorage : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDiaPropertyStorage`.  
+## <a name="methods-in-vtable-order"></a>Metody w kolejności tablic wirtualnych  
+ W poniższej tabeli przedstawiono metody `IDiaPropertyStorage` .  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Pobiera wskaźnik do modułu wyliczającego dla właściwości, w tym zestawie.|  
-|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Odczytuje `BOOL` wartości w zbiorze właściwości.|  
-|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|Odczytuje `BSTR` wartości w zbiorze właściwości.|  
-|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Odczytuje `DWORD` wartości w zbiorze właściwości.|  
-|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Odczytuje `LONG` wartości w zbiorze właściwości.|  
-|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Odczytuje wartości właściwości w zbiorze właściwości.|  
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Pobiera odpowiadający nazwy ciągu dla danej właściwości identyfikatorów.|  
-|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Odczytuje `ULONGLONG` wartości w zbiorze właściwości.|  
+|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Pobiera wskaźnik do modułu wyliczającego dla właściwości w tym zestawie.|  
+|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Odczytuje `BOOL` wartości w zestawie właściwości.|  
+|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|Odczytuje `BSTR` wartości w zestawie właściwości.|  
+|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Odczytuje `DWORD` wartości w zestawie właściwości.|  
+|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Odczytuje `LONG` wartości w zestawie właściwości.|  
+|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Odczytuje wartości właściwości w zestawie właściwości.|  
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Pobiera odpowiednie nazwy ciągów dla danego identyfikatorów właściwości.|  
+|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Odczytuje `ULONGLONG` wartości w zestawie właściwości.|  
   
 ## <a name="remarks"></a>Uwagi  
- Każdą właściwość ustawioną właściwość jest identyfikowana przez identyfikator właściwości (ID), 4 bajtowych `ULONG` wartości unikatowe dla tego zestawu. Właściwości dostępne za pośrednictwem `IDiaPropertyStorage` interfejsu odnoszą się do właściwości w interfejsie nadrzędnej. Na przykład właściwości [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) interfejs może zostać oceniony przez nazwy za pośrednictwem `IDiaPropertyStorage` interfejsu (należy jednak pamiętać, że nawet jeśli właściwość może być dostępny, nie oznacza to właściwość jest nieprawidłowa dla określonego `IDiaSymbol` obiektu).  
+ Każda właściwość w ramach zestawu właściwości jest identyfikowana przez identyfikator właściwości (identyfikator), a wartość 4-bajtowa `ULONG` unikatowa dla tego zestawu. Właściwości uwidocznione za pomocą `IDiaPropertyStorage` interfejsu odpowiadają właściwościom dostępnym w interfejsie nadrzędnym. Na przykład właściwości interfejsu [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) są dostępne przez nazwę za pośrednictwem `IDiaPropertyStorage` interfejsu (należy zauważyć, że mimo że właściwość może być dostępna, nie oznacza to, że właściwość jest prawidłowa dla określonego `IDiaSymbol` obiektu).  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Uzyskanie tego interfejsu, wywołując `QueryInterface` metody na inny interfejs. Następujące interfejsy mogą być wyszukiwane dla `IDiaPropertyStorage` interfejsu:  
+ Uzyskaj ten interfejs, wywołując `QueryInterface` metodę w innym interfejsie. Dla interfejsu można zbadać następujące interfejsy `IDiaPropertyStorage` :  
   
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
   
@@ -66,7 +66,7 @@ IDiaPropertyStorage : IUnknown
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie pokazano funkcję, która wyświetla wszystkie właściwości udostępnianych przez `IDiaPropertyStorage` obiektu. Zobacz [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfejsu przykładowy sposób, w jaki `IDiaPropertyStorage` interfejsu są uzyskiwane z [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) interfejsu.  
+ Ten przykład pokazuje funkcję, która wyświetla wszystkie właściwości uwidocznione przez `IDiaPropertyStorage` obiekt. Zobacz interfejs [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , aby zapoznać się z przykładem sposobu `IDiaPropertyStorage` uzyskiwania interfejsu z interfejsu [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .  
   
 ```cpp#  
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)  
@@ -123,20 +123,20 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
+ Nagłówek: dia2. h  
   
- Biblioteka: diaguids.lib  
+ Biblioteka: diaguids. lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
- [Idiasegment —](../../debugger/debug-interface-access/idiasegment.md)   
- [Idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md)   
+ [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
+ [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::GetService | Dokumentacja firmy Microsoft
+title: 'IDebugExpressionEvaluator2:: GetService | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af73b23cfaf0b282403e8e6a94d6f05db419bd41
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540345"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera obiekt usługi, na podstawie jego unikatowy identyfikator.  
+Pobiera obiekt usługi z uwzględnieniem jego unikatowego identyfikatora.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,16 +41,16 @@ int GetService (
   
 #### <a name="parameters"></a>Parametry  
  `uid`  
- [in] Unikatowy identyfikator usługi do pobrania.  
+ podczas Unikatowy identyfikator usługi do pobrania.  
   
  `ppService`  
- [out] Zwraca obiekt, który reprezentuje usługę.  
+ określoną Zwraca obiekt, który reprezentuje usługę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- To mogą być używane przez ewaluatora wyrażeń innych firm, można uzyskać usługi z innego Ewaluator wyrażeń. Na przykład tej metody może służyć do uzyskiwania interfejsu usługi Wizualizator z domyślną Ewaluator wyrażeń. Ewaluatory wyrażeń firm prawdopodobnie nie trzeba implementować ten interfejs.  
+ Może to być wykorzystane przez ewaluatora wyrażeń innych firm do uzyskiwania usług z innej ewaluatora wyrażeń. Na przykład ta metoda może służyć do uzyskania interfejsu dla usługi wizualizatora z domyślnej ewaluatora wyrażeń. Ocenianie wyrażeń innych firm jest mało prawdopodobne, aby zaimplementować ten interfejs.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

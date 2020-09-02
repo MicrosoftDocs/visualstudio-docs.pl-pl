@@ -1,5 +1,5 @@
 ---
-title: Formant powiększania (Widok wykorzystania) | Dokumentacja firmy Microsoft
+title: Kontrolka powiększenia (widok wykorzystania) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f018388abc91bc26f1bef30d066a9b6d8aa6f097
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422672"
 ---
 # <a name="zoom-control-utilization-view"></a>Formant powiększania (Widok wykorzystania)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kontrolka powiększenia pomaga powiększyć na wykres wykorzystania procesora CPU, aby można było skupić się na obszarach szczególne znaczenie w odniesieniu. Ten formant powiększa środka widoku. W związku z tym należy Centrum obszar zainteresowania, zanim powiększania.  
+Kontrolka powiększenie ułatwia powiększanie wykresu użycia procesora, aby skoncentrować się na obszarach określonych zainteresowań. Ta kontrolka powiększa się do środka widoku. W związku z tym należy wyśrodkować obszar zainteresowania przed powiększaniem.  
   
- Można przeciągać wskaźnik myszy na wykres wykorzystania procesora CPU lub wykres aktywności procesora GPU do utworzenia wyróżnionym obszarze. Po zwolnieniu przycisku myszy widok powiększa wybranego zakresu.  
+ Możesz przeciągnąć wskaźnik myszy na wykresie użycia procesora lub wykresu aktywności procesora GPU, aby utworzyć wyróżniony obszar. Po udostępnieniu przycisku myszy widok powiększa się do wybranego zakresu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wykorzystania](../profiling/utilization-view.md)

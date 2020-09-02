@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_stride | Dokumentacja firmy Microsoft
+title: 'IDiaSymbol:: get_stride | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3eb93749a3190bf2468c8d12e1ca906dc40f0cbd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428225"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pobiera stride macierzy lub strided tablicy.  
+Pobiera krok macierzy lub tablicy krokowej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,10 +32,10 @@ HRESULT get_stride(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Wskaźnik do `DWORD` przechowuje krok.  
+ określoną Wskaźnik do elementu `DWORD` , który zawiera krok.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

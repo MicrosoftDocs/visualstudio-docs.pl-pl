@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::HasBaseIndices | Microsoft Docs
+title: 'IDebugArrayObject2:: HasBaseIndices | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9d0c06ad921ad43bcb7a79446062bc6feda8009
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423650"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Określa, czy tablica ma podstawowy indeksów (dolne granice) zdefiniowany.  
+Określa, czy tablica ma zdefiniowane indeksy podstawowe (dolne granice).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,7 +39,7 @@ int HasBaseIndices (
   
 #### <a name="parameters"></a>Parametry  
  `pfHasBaseIndices`  
- [out] Wartość TRUE, aby określić, czy tablica ma podstawowy indeksów (dolne granice); w przeciwnym razie wartość FALSE.  
+ określoną Wartość TRUE, aby określić, że tablica ma indeksy podstawowe (dolne granice); w przeciwnym razie FALSE.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.

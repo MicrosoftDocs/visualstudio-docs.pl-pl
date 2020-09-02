@@ -1,5 +1,5 @@
 ---
-title: Metoda SetNotificationForWaitCompletion | Dokumentacja firmy Microsoft
+title: SetNotificationForWaitCompletion — Metoda | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,18 +11,18 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 874e31c331f16e760e030f337dda715473b77af8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423403"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion, metoda
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ustawia lub czyści stan TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
+Ustawia lub czyści bit stanu TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Zestaw:** mscorlib (w mscorlib.dll)  
   
@@ -35,12 +35,12 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 #### <a name="parameters"></a>Parametry  
  `enabled`  
   
- `true` Aby ustawić bitu; `false` do nie ustawiono bitu.  
+ `true` Aby ustawić bit; `false` w celu nieustawienia bitu.  
   
 ## <a name="exceptions"></a>Wyjątki  
   
 ## <a name="remarks"></a>Uwagi  
- Debuger ustawia ten bit ułatwiające kroku poza treści metody asynchronicznej. Jeśli `enabled` jest `true`, ta metoda musi zostać wywołana tylko na zadanie, które nie zostało jeszcze zakończone. Jeśli `enabled` jest `false`, ta metoda może być wywołana dla ukończonych zadań. W obu przypadkach można stosować tylko dla zadań promise stylu.  
+ Debuger ustawia ten bit, aby ułatwić wyjście z metody asynchronicznej. Jeśli `enabled` jest `true` , ta metoda musi być wywoływana tylko w zadaniu, które nie zostało jeszcze ukończone. Jeśli `enabled` jest `false` , ta metoda może być wywoływana dla ukończonych zadań. W każdym z tych zdarzeń powinien być używany tylko w przypadku zadań w stylu obietnicy.  
   
 ## <a name="requirements"></a>Wymagania  
   

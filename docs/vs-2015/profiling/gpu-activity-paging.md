@@ -1,5 +1,5 @@
 ---
-title: Aktywność procesora GPU (stronicowanie) | Dokumentacja firmy Microsoft
+title: Aktywność procesora GPU (stronicowanie) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,18 +13,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5979ccf8cafedb849b7ae9f7af6b0b35096e624f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434166"
 ---
 # <a name="gpu-activity-paging"></a>Aktywność GPU (Stronicowanie)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Aktywność procesora GPU (stronicowanie)** segmentów na karcie wątków reprezentują czas, kiedy procesora GPU zostało przetwarzania żądań stronicowania.  Długość segmentu reprezentuje czas, czy procesor GPU przetwarzającą pakiet stronicowania dostępu (DMA) pamięci. Zazwyczaj stronicowania pakiety są skojarzone z transfer pamięci między GPU i CPU.  
+Segmenty **działania procesora GPU (stronicowania)** na karcie wątki przedstawiają czasy, kiedy procesor GPU przetwarza żądania stronicowania.  Długość segmentu reprezentuje czas, przez który procesor GPU przetworzył pakiet stronicowania bezpośredniego dostępu do pamięci (DMA). Zazwyczaj pakiety stronicowania są skojarzone z transferem pamięci między procesorem CPU a procesorem GPU.  
   
- Po wybraniu segmentu stronicowania procesora GPU, raport na **bieżącego** karta zawiera informacje o pakiecie DMA, która została przetworzona. Obejmuje to ilość razem, gdy jego oczekiwania w kolejce sprzętowej, skojarzony z aparatu programu DirectX, proces, który przesłał pakiet DMA i czas wymagany do przetwarzania pakietów.  
+ Po wybraniu segmentu stronicowania procesora GPU raport na **bieżącej** karcie zawiera informacje o przetworzonym pakiecie DMA. Obejmuje to czas oczekiwania w kolejce sprzętowej skojarzonej z aparatem DirectX, proces, który przesłał pakiet DMA, oraz czas wymagany do przetworzenia pakietu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wykorzystania](../profiling/utilization-view.md)

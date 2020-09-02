@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierEx2 | Dokumentacja firmy Microsoft
+title: IDebugPortSupplierEx2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e59d3eb67fe45003babf53862736a435586deeeb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537943"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Zapewnia obsługę dostawcy portu wybrać i interakcyjnie z instalacją server core.  
+Zapewnia obsługę dostawcy portów w celu wyboru i współpracy z serwerem podstawowym.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -29,19 +29,19 @@ IDebugPortSupplierEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Dostawcy niestandardowego portu implementuje ten interfejs, tak, aby go wybrać serwer podstawowy do użycia.  
+ Niestandardowy dostawca portu implementuje ten interfejs, aby można było wybrać serwer podstawowy do użycia.  
   
 ## <a name="methods"></a>Metody  
  W poniższej tabeli przedstawiono metody **IDebugPortSupplierEx2**.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Ustawia core server dla dostawcy portu.|  
+|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Ustawia serwer podstawowy dla dostawcy portów.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: Portpriv.h  
+ Nagłówek: Portpriv. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: pobieranie zestawów satelickich na żądanie za pomocą interfejsu API wdrażania ClickOnce przy użyciu narzędzia Projektant | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,56 +22,56 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 559fb1f3613b42bd2c972f61b45736b07e76a318
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420028"
 ---
-# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania ClickOnce interfejsu API przy użyciu narzędzia Projektant
+# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Wskazówki: pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce za pomocą Projektanta
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu zestawów satelickich. A *zestawie satelickim* to zestaw, który zawiera zasoby aplikacji dla kultury innej niż aplikacja domyślna kultura.
+Aplikacje Windows Forms można skonfigurować dla wielu kultur przy użyciu zestawów satelickich. *Zestaw satelicki* jest zestawem zawierającym zasoby aplikacji dla kultury innej niż domyślna kultura aplikacji.
 
-Zgodnie z opisem w [lokalizowanie aplikacji ClickOnce](../deployment/localizing-clickonce-applications.md), może zawierać wiele zestawów satelickich dla różnych kultur, w tym samym [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia. Domyślnie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pobierze wszystkie zestawy satelickie w danym wdrożeniu na komputerze klienckim, mimo że pojedynczego klienta, prawdopodobnie będziesz potrzebować zestawu satelickiego tylko jeden.
+Zgodnie z opisem w temacie [lokalizowanie aplikacji ClickOnce](../deployment/localizing-clickonce-applications.md)można uwzględnić wiele zestawów satelickich dla wielu kultur w ramach tego samego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia. Domyślnie program [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pobierze wszystkie zestawy satelickie we wdrożeniu na komputer kliencki, chociaż jeden klient prawdopodobnie będzie wymagał tylko jednego zestawu satelickiego.
 
-W tym instruktażu pokazano, jak oznaczyć swoje zestawy satelickie jako opcjonalne i Pobierz tylko zestaw na komputerze klienckim musi uzyskać bieżące ustawienia kultury.
+W tym instruktażu przedstawiono sposób oznaczania zestawów satelickich jako opcjonalnych i pobrania tylko zestawu, który jest wymagany przez komputer kliencki dla bieżących ustawień kultury.
 
 > [!NOTE]
-> Do celów testowych, w poniższych przykładach kodu programowo równa kulturę `ja-JP`. Zobacz sekcję "Kolejne kroki" w dalszej części tego tematu zawiera informacje na temat dostosować ten kod w środowisku produkcyjnym.
+> Do celów testowych Poniższy przykład kodu programowo ustawia kulturę na `ja-JP` . Zapoznaj się z sekcją "następne kroki" w dalszej części tego tematu, aby uzyskać informacje na temat dostosowywania tego kodu dla środowiska produkcyjnego.
 
-### <a name="to-mark-satellite-assemblies-as-optional"></a>Aby oznaczyć jako opcjonalne zestawy satelickie
+### <a name="to-mark-satellite-assemblies-as-optional"></a>Aby oznaczyć zestawy satelickie jako opcjonalne
 
-1. Skompilowanie projektu. Spowoduje to wygenerowanie zestawów satelickich dla wszystkich kultur, w których lokalizujesz do.
+1. Skompilowanie projektu. Spowoduje to wygenerowanie zestawów satelickich dla wszystkich kultur, do których jest zlokalizowany.
 
-2. Kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie kliknij przycisk **właściwości**.
+2. Kliknij prawym przyciskiem myszy nazwę projektu w Eksplorator rozwiązań, a następnie kliknij pozycję **Właściwości**.
 
-3. Kliknij przycisk **Publikuj** kartę, a następnie kliknij przycisk **pliki aplikacji**.
+3. Kliknij kartę **Publikowanie** , a następnie kliknij pozycję **pliki aplikacji**.
 
-4. Wybierz **Pokaż wszystkie pliki** pole wyboru, aby wyświetlić zestawy satelickie. Domyślnie wszystkie zestawy satelickie zostaną uwzględnione we wdrożeniu i będą widoczne w tym oknie dialogowym.
+4. Zaznacz pole wyboru **Pokaż wszystkie pliki** , aby wyświetlić zestawy satelickie. Domyślnie wszystkie zestawy satelickie zostaną uwzględnione we wdrożeniu i będą widoczne w tym oknie dialogowym.
 
-     Zestawu satelickiego mają nazwy w postaci *isoCode*\ApplicationName.resources.dll, gdzie *isoCode* jest w formacie RFC 1766 identyfikator języka.
+     Zestaw satelicki będzie miał nazwę w postaci *isoCode*\ApplicationName.resources.dll, gdzie *isoCode* jest identyfikatorem języka w formacie RFC 1766.
 
-5. Kliknij przycisk **nowy...**  w **grupa pobierania** listy dla każdego identyfikatora języka. Po wyświetleniu monitu Pobierz nazwę grupy, należy wprowadzić identyfikator języka. Na przykład dla zestawu satelickiego japońskiego, należy określić nazwę grupy pobierania `ja-JP`.
+5. Kliknij pozycję **Nowy...** na liście **Grupa pobierania** dla każdego identyfikatora języka. Po wyświetleniu monitu o podanie nazwy grupy pobierania wprowadź identyfikator języka. Na przykład dla japońskiego zestawu satelickiego należy określić nazwę grupy pobierania `ja-JP` .
 
-6. Zamknij **pliki aplikacji** okno dialogowe.
+6. Zamknij okno dialogowe **pliki aplikacji** .
 
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Aby pobrać zestawów satelickich na żądanie w języku C\#
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Pobieranie zestawów satelickich na żądanie w języku C\#
 
-1. Otwórz plik Program.cs. Jeśli nie widzisz tego pliku w Eksploratorze rozwiązań, wybierz swój projekt, a na **projektu** menu, kliknij przycisk **Pokaż wszystkie pliki**.
+1. Otwórz plik Program.cs. Jeśli ten plik nie jest widoczny w Eksplorator rozwiązań, wybierz projekt, a następnie w menu **projekt** kliknij polecenie **Pokaż wszystkie pliki**.
 
-2. Użyj poniższego kodu, aby pobrać zestawu satelickiego odpowiednie i uruchomić aplikację.
+2. Użyj poniższego kodu, aby pobrać odpowiedni zestaw satelicki i uruchomić aplikację.
 
      [!code-csharp[ClickOnce.SatelliteAssemblies#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssemblies/CS/Program.cs#1)]
 
-### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Aby pobrać zestawów satelickich na żądanie w języku Visual Basic
+### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Pobieranie zestawów satelickich na żądanie w Visual Basic
 
-1. W **właściwości** okna aplikacji, kliknij przycisk **aplikacji** kartę.
+1. W oknie **Właściwości** aplikacji kliknij kartę **aplikacja** .
 
-2. W dolnej części strony karty kliknij **Wyświetl zdarzenia aplikacji**.
+2. W dolnej części strony karty kliknij pozycję **Wyświetl zdarzenia aplikacji**.
 
-3. Dodaj następujące instrukcje importu na początku pliku ApplicationEvents.VB.
+3. Dodaj następujące Importy na początku pliku ApplicationEvents. VB.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesVB/VB/ApplicationEvents.vb#1)]
 
@@ -81,9 +81,9 @@ W tym instruktażu pokazano, jak oznaczyć swoje zestawy satelickie jako opcjona
 
 ## <a name="next-steps"></a>Następne kroki
 
-W środowisku produkcyjnym prawdopodobnie konieczne będzie usunięcie wiersza w przykłady kodu, które ustawia <xref:System.Threading.Thread.CurrentUICulture%2A> na określoną wartość, ponieważ klient maszyny będą poprawną wartość ustawiono domyślnie. Gdy aplikacja działa na komputerze klienckim japońskiego, na przykład <xref:System.Threading.Thread.CurrentUICulture%2A> będzie `ja-JP` domyślnie. Ustawieniem dla niego programowe jest dobrym sposobem do testowania zestawów satelickich, przed wdrożeniem aplikacji.
+W środowisku produkcyjnym prawdopodobnie trzeba będzie usunąć wiersz w przykładach kodu, które są ustawiane <xref:System.Threading.Thread.CurrentUICulture%2A> na określoną wartość, ponieważ domyślnie maszyny klienckie będą mieć poprawną ustawioną wartość. Gdy aplikacja jest uruchamiana na japońskim komputerze klienckim, na przykład <xref:System.Threading.Thread.CurrentUICulture%2A> będzie `ja-JP` domyślnie. Ustawienie programistyczne jest dobrym sposobem na przetestowanie zestawów satelickich przed wdrożeniem aplikacji.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu interfejsu API wdrażania ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
+- [Wskazówki: pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [Lokalizowanie aplikacji ClickOnce](../deployment/localizing-clickonce-applications.md)

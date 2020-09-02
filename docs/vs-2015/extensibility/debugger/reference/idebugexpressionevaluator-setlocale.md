@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Dokumentacja firmy Microsoft
+title: 'IDebugExpressionEvaluator:: setlocale | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 730a105b12016ea031bdb4753da009223a5d39f5
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540527"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda określa język na potrzeby tworzenia drukowalnych wyników.  
+Ta metoda ustawia język, który ma być używany do tworzenia wyników drukowalnych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int SetLocale(
   
 #### <a name="parameters"></a>Parametry  
  `wLangID`  
- [in] Identyfikator języka.  
+ podczas Identyfikator języka.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda może zostać wywołana wiele razy, gdy Ewaluator wyrażeń (EE) jest załadowane, więc EE musi mieć możliwość przełączać języków na bieżąco. EE używa tych ustawień regionalnych, aby zwracać komunikaty o błędach i ciągi w odpowiednim języku.  
+ Ta metoda może być wywoływana wiele razy podczas ładowania ewaluatora wyrażeń (EE), więc w przypadku wersji EE musi być możliwe przełączenie języków na bieżąco. Na stronie EE są stosowane te ustawienia regionalne, które zwracają komunikaty o błędach i ciągi w odpowiednim języku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

@@ -1,5 +1,5 @@
 ---
-title: Obiekt VSCodeWindowManager | Dokumentacja firmy Microsoft
+title: Obiekt VSCodeWindowManager | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,22 +14,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: addd7a0146a9443739c3a63f29fe59979176edc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421892"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager, obiekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialny za zarządzanie zakończeń (na przykład pasek listy rozwijanej). Aby uzyskać więcej informacji, zobacz [Dostosowywanie Windows kodu za pomocą starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
+Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialna za zarządzanie zakończeniami (na przykład pasek listy rozwijanej). Aby uzyskać więcej informacji, zobacz [Dostosowywanie kodu w systemie Windows przy użyciu starszego interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
   
- W poniższej tabeli przedstawiono interfejsów w `VSCodeWindowManager` obiektu.  
+ W poniższej tabeli przedstawiono interfejsy w `VSCodeWindowManager` obiekcie.  
   
-|Interface|Opis|  
+|Interfejs|Opis|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Umożliwia zakończeń (na przykład pasków listy rozwijanej) mają być dodawane do lub usunięte z okna kodu.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Zezwala na dodawanie, a także do usuwania z okna kodu lub usuwanie z niego.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie okien kodu za pomocą starszego interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

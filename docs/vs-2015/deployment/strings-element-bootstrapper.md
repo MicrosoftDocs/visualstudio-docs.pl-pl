@@ -1,5 +1,5 @@
 ---
-title: '&lt;Ciągi&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
+title: '&lt;Strings — &gt; element (program inicjujący) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421528"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Ciągi&gt; — Element (program inicjujący)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings — &gt; element (program inicjujący)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiuje zlokalizowane ciągi dla nazwy produktu, nazwy pakietów i komunikaty o błędach instalacji.  
+Definiuje zlokalizowane ciągi dla nazw produktów, nazw pakietów i komunikatów o błędach instalacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,20 +42,20 @@ Definiuje zlokalizowane ciągi dla nazwy produktu, nazwy pakietów i komunikaty 
 </Strings>  
 ```  
   
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `Strings` Element jest elementem podrzędnym `Package` elementu. Go nie ma żadnych atrybutów.  
+## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+ `Strings`Element jest elementem podrzędnym `Package` elementu. Nie ma atrybutów.  
   
 ## <a name="string"></a>String  
- `String` Element jest elementem podrzędnym `Strings` elementu. A `Strings` element może mieć co najmniej jeden `String` elementów.  
+ `String`Element jest elementem podrzędnym `Strings` elementu. `Strings`Element może mieć jeden lub więcej `String` elementów.  
   
  `String` ma następujący atrybut.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagana. Nazwa ciągu.|  
+|`Name`|Wymagany. Nazwa ciągu.|  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu określa wszystkie ciągi w języku polskim dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Instalatora.  
+ Poniższy przykład kodu określa wszystkie ciągi angielskie dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Instalatora.  
   
 ```  
 <Strings>  
@@ -77,4 +77,4 @@ Definiuje zlokalizowane ciągi dla nazwy produktu, nazwy pakietów i komunikaty 
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [\<Package>, element](../deployment/package-element-bootstrapper.md)
+ [\<Package> Postaci](../deployment/package-element-bootstrapper.md)

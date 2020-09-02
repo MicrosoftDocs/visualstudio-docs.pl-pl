@@ -1,5 +1,5 @@
 ---
-title: Odwołanie do schematu szablonu Visual Studio | Dokumentacja firmy Microsoft
+title: Odwołanie do schematu szablonu programu Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,10 +13,10 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a15a08dc674940897bf465946efd2ec350cc7c42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422126"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Odwołanie do schematu szablonu Visual Studio
@@ -24,11 +24,11 @@ ms.locfileid: "62422126"
 
 Ten rozdział zawiera informacje o elementach języka XML w plikach .vstemplate. Pliki te zawierają metadane szablonów projektów, szablonów elementów i zestawów początkowych.  
   
- Pliki vstemplate.xsd mogą służyć do sprawdzania poprawności niestandardowych plików .vstemplate. Ten plik znajduje się w temacie... \\ *Folder instalacji programu visual Studio*\Xml\Schemas\1033\vstemplate.xsd.  
+ Pliki vstemplate.xsd mogą służyć do sprawdzania poprawności niestandardowych plików .vstemplate. Ten plik jest dostępny pod adresem.. \\ \Xml\Schemas\1033\vstemplate.xsd. *folderu instalacyjnego programu Visual Studio*  
   
 |Element|Elementy podrzędne|Atrybuty|  
 |-------------|--------------------|----------------|  
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Brak|Brak|  
+|[Zignorowan](../extensibility/appliesto-element-visual-studio-templates.md)|Brak|Brak|  
 |[Zestaw (szablon)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|  
 |[Zestaw (rozszerzenie kreatora)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|  
@@ -36,20 +36,20 @@ Ten rozdział zawiera informacje o elementach języka XML w plikach .vstemplate.
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|  
 |[CustomDataSignature](../extensibility/customdatasignature-element-visual-studio-templates.md)|--|--|  
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|Nazwa<br /><br /> Wartość|  
-|[Customparameters —](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|  
-|[Defaultname —](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|  
-|[Opis](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> Identyfikator|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|  
+|[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|  
+|[Opis](../extensibility/description-element-visual-studio-templates.md)|--|Pakiet<br /><br /> ID|  
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|  
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|  
 |[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Folder|Nazwa|  
 ||[przestarzały]|--|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[Ukryte](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
-|[Ikona](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> Identyfikator|  
-|[Locationfield —](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|  
+|[Ikona](../extensibility/icon-element-visual-studio-templates.md)|--|Pakiet<br /><br /> ID|  
+|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|  
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|  
-|[Nazwa](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> Identyfikator|  
+|[Nazwa](../extensibility/name-element-visual-studio-templates.md)|--|Pakiet<br /><br /> ID|  
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|  
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|  
 |[Project](../extensibility/project-element-visual-studio-templates.md)|Folder<br /><br /> ProjectItem|Plik<br /><br /> TargetFileName<br /><br /> ReplaceParameters|  
@@ -61,25 +61,25 @@ Ten rozdział zawiera informacje o elementach języka XML w plikach .vstemplate.
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|  
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|  
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|  
-|[Dokumentacja](../extensibility/reference-element-visual-studio-templates.md)|Zestaw|--|  
-|[Odwołania](../extensibility/references-element-visual-studio-templates.md)|Tematy pomocy|--|  
+|[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Zestaw|--|  
+|[Dokumentacja](../extensibility/references-element-visual-studio-templates.md)|Dokumentacja|--|  
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|  
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Wersja|  
-|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Package|  
+|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Pakiet|  
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|Nazwa|  
 |[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|  
 |[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|--|--|  
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|  
-|[Supportsmasterpage —](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|  
+|[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|  
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Projekt<br /><br /> Odwołania<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Nazwa<br /><br /> Opis<br /><br /> Ikona<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Hidden<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Project<br /><br /> Dokumentacja<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Nazwa<br /><br /> Opis<br /><br /> Ikona<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Ukryty<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|  
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|  
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|Typ<br /><br /> Wersja|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|Nazwa|  
-|[Wizardextension —](../extensibility/wizardextension-element-visual-studio-templates.md)|Zestaw<br /><br /> FullClassName|--|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Zestaw<br /><br /> FullClassName|--|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   

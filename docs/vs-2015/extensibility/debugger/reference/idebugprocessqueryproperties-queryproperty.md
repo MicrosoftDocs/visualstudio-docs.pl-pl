@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperty | Dokumentacja firmy Microsoft
+title: 'IDebugProcessQueryProperties:: QueryProperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72f91d6cf8554567807e958ae9a32b93f9228c8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537670"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Kwerendy tej metody, wartość określonej właściwości debugowania procesu.  
+Ta metoda wykonuje zapytanie dotyczące określonej wartości właściwości procesu debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,7 +38,7 @@ int QueryProperty(
   
 #### <a name="parameters"></a>Parametry  
  `dwPropType`  
- [in] Definicja właściwości zapytania. Dostępne są następujące wartości:  
+ podczas Definicja właściwości, której dotyczy kwerenda. Potrzebne wartości:  
   
 - PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -47,10 +47,10 @@ int QueryProperty(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
   `pvarPropValue`  
-  [out] Wartość właściwości.  
+  określoną Wartość właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta metoda jest rzadko używana.  

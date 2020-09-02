@@ -1,5 +1,5 @@
 ---
-title: 'Błąd: Uwierzytelnianie Kerberos nie powiodło się | Dokumentacja firmy Microsoft'
+title: 'Błąd: uwierzytelnianie Kerberos nie powiodło się | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,51 +17,51 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535644"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Błąd: Uwierzytelnianie Kerberos nie powiodło się
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gdy użytkownik próbuje przeprowadzać debugowanie zdalne, może uzyskać następujący komunikat o błędzie:  
+Podczas próby wykonania zdalnego debugowania może zostać wyświetlony następujący komunikat o błędzie:  
   
 ```  
 Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos auythentication failed.  
 ```  
   
- Ten błąd występuje, gdy zdalny Monitor debugowania Visual Studio jest uruchomiony na koncie systemu lokalnego lub usługi sieciowej. W ramach jednego z tych kont debuger zdalny nawiązać połączenie uwierzytelniania Kerberos do komunikacji zwrotnej z komputera hosta debugera programu Visual Studio.  
+ Ten błąd występuje, gdy Monitor zdalnego debugowania programu Visual Studio jest uruchomiony w ramach konta System lokalny lub usługa sieciowa. W ramach jednego z tych kont zdalny debuger musi nawiązać połączenie z uwierzytelnianiem Kerberos, aby komunikować się z komputerem hosta debugera programu Visual Studio.  
   
- Uwierzytelnianie Kerberos nie jest dostępne w tych warunkach:  
+ Uwierzytelnianie Kerberos nie jest dostępne w następujących warunkach:  
   
-- Na komputerze docelowym lub debugera komputer-host znajduje się w grupie roboczej, a nie do domeny  
+- Komputer docelowy lub komputer hosta debugera znajduje się w grupie roboczej, a nie w domenie  
   
-   \- lub —  
+   \- oraz  
   
-- Protokołu Kerberos zostało wyłączone na kontrolerze domeny.  
+- Protokół Kerberos został wyłączony na kontrolerze domeny.  
   
-  Jeśli uwierzytelnianie Kerberos nie jest dostępna, należy zmienić konto, które jest używane do uruchamiania programu Visual Studio Monitor zdalnego debugowania. Procedury można wyświetlić [błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+  Jeśli uwierzytelnianie Kerberos nie jest dostępne, Zmień konto używane do uruchamiania programu Visual Studio Monitor zdalnego debugowania. Aby uzyskać procedurę, zobacz [błąd: usługa zdalny debuger programu Visual Studio na komputerze docelowym nie może nawiązać połączenia z powrotem z tym komputerem](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
-  Jeśli oba komputery są połączone z tej samej domenie, a nadal otrzymujesz ten komunikat, sprawdź, czy DNS na komputerze docelowym jest poprawnie rozpoznawania nazwy komputera-hosta debugera. Zobacz poniższą procedurę.  
+  Jeśli oba komputery są połączone z tą samą domeną, a ten komunikat jest nadal wyświetlany, sprawdź, czy serwer DNS na komputerze docelowym prawidłowo rozpoznaje nazwę komputera hosta debugera. Zapoznaj się z poniższą procedurą.  
   
-### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Aby sprawdzić, czy DNS na komputerze docelowym poprawnie mapuje nazwę komputera hosta debugera  
+### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Aby sprawdzić, czy usługa DNS na komputerze docelowym prawidłowo rozwiązuje nazwę komputera hosta debugera  
   
-1. Na komputerze docelowym, otwórz **Start** menu wskaż **Akcesoria** a następnie kliknij przycisk **polecenia**.  
+1. Na komputerze docelowym otwórz menu **Start** , wskaż **akcesoria** , a następnie kliknij przycisk **wiersz polecenia**.  
   
-2. W **polecenia** okna, typ:  
+2. W oknie **wiersza polecenia** wpisz:  
   
     ```  
     ping <debugger_host_computer_name>  
     ```  
   
-3. W pierwszym wierszu `ping` odpowiedzi zawiera pełną nazwę komputera i adres IP zwrócony przez serwer DNS dla określonego komputera.  
+3. Pierwszy wiersz `ping` odpowiedzi przedstawia pełną nazwę komputera i adres IP zwrócone przez system DNS dla określonego komputera.  
   
-4. Na komputerze-hoście debugera, otwarcie **polecenia** okna i uruchom `ipconfig`.  
+4. Na komputerze hosta debugera Otwórz okno **wiersza polecenia** i uruchom polecenie `ipconfig` .  
   
 5. Porównaj wartości adresów IP.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Błędy debugowania zdalnego i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyświetlanie właściwości okna | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Wyświetlanie właściwości okna | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,19 +12,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acef433d8f82151a7870fda047f27ac46090b480
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538190"
 ---
-# <a name="how-to-display-window-properties"></a>Instrukcje: Wyświetlanie właściwości okna
+# <a name="how-to-display-window-properties"></a>Porady: wyświetlanie właściwości okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby dowiedzieć się więcej na temat wymienionych w oknie [widoku Windows](../debugger/windows-view.md), użyj [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md).  
+Aby dowiedzieć się więcej na temat okna wyświetlanego w [widoku systemu Windows](../debugger/windows-view.md), użyj okna [dialogowego Właściwości okna](../debugger/window-properties-dialog-box.md).  
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości okna  
   
-1. Wybierz element, a następnie wybierz **właściwości** z **widoku** menu.  
+1. Wybierz element, a następnie wybierz polecenie **Właściwości** z menu **Widok** .  
   
-   Okno dialogowe właściwości nie są modalnych. Po kliknięciu elementu element w oknie widoku okna dialogowego automatycznie odświeżane informacje na temat każdego wybranego elementu.
+   Okna dialogowe właściwości nie są modalne. Po kliknięciu pozycji z elementu na element w oknie widok okno dialogowe jest automatycznie odświeżane informacjami o każdym wybranym elemencie.

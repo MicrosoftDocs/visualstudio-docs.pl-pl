@@ -1,5 +1,5 @@
 ---
-title: Edytuj i Kontynuuj — okno dialogowe komunikat o błędzie | Dokumentacja firmy Microsoft
+title: Okno dialogowe Edytuj i Kontynuuj komunikat o błędzie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,44 +20,44 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5437ef982309ef8595f08283f2685e93d346e764
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428301"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Komunikat o błędzie Edytuj i kontynuuj — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-To okno dialogowe pojawia się podczas debugowania w języku, który obsługuje Edit and Continue, ale **Edytuj i Kontynuuj** nie jest dostępna tylko dla typu zmiany kodu, które zostały wprowadzone. Komunikat o błędzie wewnątrz pola zapewnia bardziej szczegółowy opis. Możliwe przyczyny wyświetlania tego okna dialogowego obejmują:  
+To okno dialogowe jest wyświetlane w przypadku debugowania w języku, który obsługuje funkcję Edytuj i Kontynuuj, ale opcja **Edytuj i Kontynuuj** nie jest dostępna dla typu wprowadzonych zmian kodu. Komunikat o błędzie wewnątrz pola zawiera bardziej szczegółowy opis. Możliwe przyczyny wyświetlenia tego okna dialogowego obejmują:  
   
-- Próbowano edytować kodu zarządzanego, gdy debugowanie niezarządzane została włączona. Edytuj i Kontynuuj nie działa w debugowaniu trybu mieszanego.  
+- Podjęto próbę edytowania kodu zarządzanego, gdy włączono debugowanie niezarządzane. Tryb Edytuj i Kontynuuj nie działa w przypadku debugowania w trybie mieszanym.  
   
-- Podjęto próbę edytowania kodu programu SQL Server.  
+- Podjęto próbę edycji kodu SQL Server.  
   
-- Podjęto próbę edytowania kodu podczas debugowania odzyskiwania po awarii. Zrzut programu Watson.  
+- Podjęto próbę edycji kodu podczas debugowania zrzutu Dr. Watson.  
   
-- Próbowano edytować kod po Wystąpił nieobsługiwany wyjątek i opcji "**Unwind na stosie wywołań dotycząca nieobsłużonych wyjątków**" nie został wybrany.  
+- Podjęto próbę edycji kodu po wystąpieniu nieobsługiwanego wyjątku i wybraniu opcji "**odwinięcie stosu wywołań w przypadku nieobsługiwanych wyjątków**".  
   
-- Podjęto próbę edytowania kodu podczas debugowania aplikacji osadzonego środowiska uruchomieniowego.  
+- Podjęto próbę edycji kodu podczas debugowania osadzonej aplikacji środowiska uruchomieniowego.  
   
-- Próbowano edytować kodu w programie, który został załączony do zamiast od **debugowania** menu.  
+- Podjęto próbę edycji kodu w programie, który został dołączony do programu zamiast z menu **Debuguj** .  
   
-- Próbowano edytować zoptymalizowanego kodu.  
+- Podjęto próbę edycji zoptymalizowanego kodu.  
   
-- Próbowano edytować kodu zarządzanego, gdy obiektem docelowym jest aplikacją 64-bitową. Jeśli chcesz Użyj funkcji Edytuj i Kontynuuj, należy ustawić element docelowy x86. (*Projektu* **właściwości**, **skompilować** karcie **zaawansowane kompilatora** ustawienie.).  
+- Podjęto próbę edytowania kodu zarządzanego, gdy element docelowy jest aplikacją 64-bitową. Jeśli chcesz użyć opcji Edytuj i Kontynuuj, musisz ustawić wartość docelową na x86. (*Project* **Właściwości**projektu, karta **kompilacja** , **Zaawansowane ustawienie kompilatora** ).  
   
-- Próbowano edytować kod w zestawie, który został zmodyfikowany podczas debugowania i został załadowany ponownie.  
+- Próbowano edytować kod w zestawie, który został zmodyfikowany podczas debugowania i został ponownie załadowany.  
   
 - Próbowano edytować kod w zestawie, który nie został załadowany.  
   
-- Rozpoczęto profilowanie starą wersję aplikacji (ponieważ jest to nowa wersja ma błędy kompilacji).  
+- Rozpoczęto debugowanie starej wersji aplikacji (ponieważ nowa wersja ma błędy kompilacji).  
   
-- Podjęto próbę edytowania kodu została uruchomiona.  
+- Podjęto próbę edytowania kodu podczas jego działania.  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **OK**  
- Zamknij okno dialogowe i Anuluj bezpośrednio poprzednie próby edycji.  
+ Zamknij okno dialogowe i Anuluj poprzednią próbę edycji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md)

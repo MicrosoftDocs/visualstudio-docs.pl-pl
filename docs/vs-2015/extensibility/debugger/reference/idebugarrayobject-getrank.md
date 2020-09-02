@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetRank | Dokumentacja firmy Microsoft
+title: 'IDebugArrayObject:: getranga | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf9700e2c3b29561229999506ed789a2e3d6e52e
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423676"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
@@ -40,13 +40,13 @@ int GetRank(
   
 #### <a name="parameters"></a>Parametry  
  `pdwRank`  
- [out] Zwraca rangę.  
+ określoną Zwraca rangę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Użyj [getdimensions —](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) metodę, aby pobrać rozmiar każdego wymiaru obiektu array.  
+ Użyj metody [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) , aby pobrać rozmiar każdego wymiaru obiektu Array.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

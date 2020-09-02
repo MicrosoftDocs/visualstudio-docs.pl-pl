@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: LoadSymbolsFromCallback | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 108d50788992eb8316811bb5d9c7d327c3d62eda
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540588"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obciążenie debugowania symbole w metodą określonego wywołania zwrotnego.  
+Ładuje symbole debugowania przy użyciu określonej metody wywołania zwrotnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,31 +51,31 @@ int LoadSymbolsFromCallback(
   
 #### <a name="parameters"></a>Parametry  
  `ulAppDomainID`  
- [in] Identyfikator domeny aplikacji.  
+ podczas Identyfikator domeny aplikacji.  
   
  `guidModule`  
- [in] Unikatowy identyfikator modułu.  
+ podczas Unikatowy identyfikator modułu.  
   
  `pUnkMetadataImport`  
- [in] Obiekt, który zawiera metadane symbolu.  
+ podczas Obiekt, który zawiera metadane symboli.  
   
  `pUnkCorDebugModule`  
- [in] Obiekt, który implementuje [icordebugmodule — interfejs](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ podczas Obiekt, który implementuje [interfejs ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
- [in] Nazwa modułu.  
+ podczas Nazwa modułu.  
   
  `bstrSymSearchPath`  
- [in] Ścieżka do wyszukiwania pliku symboli.  
+ podczas Ścieżka do wyszukiwania pliku symboli.  
   
  `pCallback`  
- [in] Obiekt, który reprezentuje metodę wywołania zwrotnego.  
+ podczas Obiekt, który reprezentuje metodę wywołania zwrotnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  

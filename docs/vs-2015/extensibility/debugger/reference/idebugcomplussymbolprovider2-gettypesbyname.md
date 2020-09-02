@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: GetTypesByName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 40eb29bab07e657d22cd9559fa53fa3ced2139ff
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540618"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera typ nadać jej nazwę.  
+Pobiera typ o nazwie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,22 +43,22 @@ int GetTypesByName(
   
 #### <a name="parameters"></a>Parametry  
  `pszClassName`  
- [in] Nazwa typu.  
+ podczas Nazwa typu.  
   
  `nameMatch`  
- [in] Wybiera typ dopasowania, na przykład wielkość liter. Wartość z zakresu od [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) wyliczenia.  
+ podczas Wybiera typ dopasowania, na przykład z rozróżnianiem wielkości liter. Wartość z wyliczenia [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .  
   
  `ppEnum`  
- [out] Moduł wyliczający, który zawiera typ lub typy o podanej nazwie.  
+ określoną Moduł wyliczający zawierający typ lub typy o podaną nazwę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Dla typów ogólnych nazwę do wyszukania się "listy\<int >" lub "Lista\<int, int >" będzie "List". Jeśli typy o takiej samej nazwie pojawia się na wiele modułów `ppEnum` parametr będzie zawierać wszystkie kopie. Należy użyć [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) i odróżnić na podstawie `guidModule` parametru.  
+ W przypadku typów ogólnych nazwa do wyszukania dla "list" \<int> lub "List \<int,int> " będzie mieć wartość "list". Jeśli typy o tej samej nazwie pojawiają się w wielu modułach, `ppEnum` parametr będzie zawierać wszystkie kopie. Musisz użyć [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) i rozróżnić na podstawie `guidModule` parametru.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **CDebugSymbolProvider** , który uwidacznia Interfejs [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetTypesByName(  

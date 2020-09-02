@@ -1,5 +1,5 @@
 ---
-title: 'Wprowadzenie do narzędzi PTVS: Rozpoczęcie kodowania (projekty) | Dokumentacja firmy Microsoft'
+title: 'Wprowadzenie z PTVS: Rozpocznij kodowanie (projekty) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,34 +10,34 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 28622f290d82f86bf3d18cc4f40cfcfc8e953dad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537156"
 ---
-# <a name="getting-started-with-ptvs-start-coding-projects"></a>Wprowadzenie do narzędzi PTVS: Rozpoczęcie kodowania (projekty)
+# <a name="getting-started-with-ptvs-start-coding-projects"></a>Pierwsze kroki z narzędziami PTVS: rozpoczęcie kodowania (projekty)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzia Python Tools for Visual Studio (PTVS) pomaga w zarządzaniu kodu. 
+Python Tools for Visual Studio (PTVS) ułatwia zarządzanie kodem. 
  
- Możesz obserwować te instrukcje w bardzo krótkim [wideo usługi youtube](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2). 
+ Możesz obejrzeć te instrukcje w bardzo krótkim [filmie wideo](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)w serwisie YouTube. 
  
- Jeśli używano Python przed wiesz, że Twój projekt został zdefiniowany przez sposób układania pliki na dysku. To rozwiązanie idealne dla zwykłych projektów języka Python, ale jeśli masz więcej plików (strony sieci web przy użyciu języka JavaScript, testy jednostkowe i skrypty kompilacji), systemów plików można uruchomić za chwilę ograniczającą. Visual Studio używa projekty do osiągnięcia trzy rzeczy. 
+ Jeśli wcześniej korzystano z języka Python, wiadomo, że projekt jest zdefiniowany przez sposób układania plików na dysku. Jest to doskonałe rozwiązanie w przypadku zwykłych projektów Python, ale jeśli masz więcej plików (strony sieci Web z JavaScript, testy jednostkowe i skrypty kompilacji), systemy plików mogą zaczynać się ograniczać. Program Visual Studio używa projektów do osiągnięcia trzech rzeczy. 
  
-- Zidentyfikuj krytyczne pliki. Ważne pliki są tymi, które możesz sprawdzić w systemie kontroli wersji (pliki źródłowe, zasoby itd.), ale nie pliki, które są generowane jako dane wyjściowe kompilacji. Ważne pliki są również te, które może spowodować skopiowanie na inny komputer, ktoś inny może pracować w aplikacji. 
+- Zidentyfikuj pliki krytyczne. Ważne pliki są tymi, które są sprawdzane w systemie kontroli wersji (pliki źródłowe, zasoby itp.), ale nie pliki generowane jako dane wyjściowe kompilacji. Ważne pliki są również tymi, które można skopiować na inny komputer, aby ktoś inny mógł go obejść w Twojej aplikacji. 
  
-- Określ, jak pliki powinna być używana. Może być pliki, które to narzędzie musi przetworzyć po każdym wprowadzeniu zmiany plików. Projektów programu Visual Studio można przechwytywać te informacje 
+- Określ, w jaki sposób mają być używane pliki. Pliki, które muszą być przetwarzane przez narzędzie zawsze, gdy pliki zostaną zmienione. Projekty programu Visual Studio mogą przechwytywać te informacje 
  
-- Zdefiniuj granice składników. Jeśli masz wiele składników w aplikacji, można umieścić ją w osobnym projekcie. Te po pewnym czasie można wdrażać na różnych serwerach, skompilowanych przy użyciu różnych kompilacji lub ustawienia debugowania lub nawet mogłyby być zapisywane przy użyciu innego języka, obsługiwane przez program Visual Studio, takich jak C++ i Node.js 
+- Zdefiniuj granice składników. Jeśli masz wiele składników w aplikacji, możesz umieścić każdą z nich w osobnym projekcie. Mogą one zostać wdrożone na różnych serwerach utworzonych przy użyciu różnych ustawień kompilacji lub debugowania lub nawet mogą być zapisywane przy użyciu innego języka obsługiwanego przez program Visual Studio, np. C++ lub Node.js 
  
-  Istnieje kilka szablonów projektów, które pomogą Ci rozpocząć pracę. Jeśli masz już kodu w języku Python, który chcesz pracować, kreatora z istniejącego kodu pomoże Ci utworzyć projekt, który zawiera wszystkie pliki. Istnieje wiele projektów sieci Web dla niektórych popularnych platform. Więcej szablonów są dostępne w pakiecie przykłady PTVS. Dostępne są opcje umożliwiają podanej sieci web, szablony działać z innych platform. Szablon aplikacji w języku Python jest jasny, pusty projekt. Istnieje jeden moduł ułatwią Ci rozpoczęcie pracy. 
+  Istnieje kilka szablonów projektów, które ułatwiają rozpoczęcie pracy. Jeśli masz już kod w języku Python, nad którym chcesz korzystać, Kreator z istniejącego kodu pomoże Ci utworzyć projekt, który zawiera wszystkie pliki. Dla niektórych popularnych platform istnieją różne projekty sieci Web. Więcej szablonów jest dostępnych w pakiecie przykładów PTVS. Dostępne są opcje, które umożliwiają współpracują z innymi strukturami. Szablon aplikacji języka Python to czysty, pusty projekt. Istnieje jeden moduł, aby rozpocząć pracę. 
  
-  Visual Studio Wyświetla otwartych projektów w oknie Eksploratora rozwiązań, w tym wszystkie pliki, ścieżki wyszukiwania i środowiska Python. Aby dodać nowe elementy, wybierz folder projektu, a następnie z menu kontekstowego (naciśnij przycisk prawo wskaźnika) wybierz pozycję Dodaj, a następnie nowy element. Można wybrać dowolny element w oknie dialogowym, dostosować nazwy elementu i Dodaj element do projektu. 
+  Program Visual Studio Wyświetla otwarte projekty w oknie Eksplorator rozwiązań, w tym wszystkie pliki, ścieżki wyszukiwania i środowiska języka Python. Aby dodać nowe elementy, wybierz folder projektu, a następnie z menu kontekstowego (naciśnij przycisk prawy wskaźnik), wybierz Dodaj, a następnie nowy element. Możesz wybrać dowolny element w oknie dialogowym, dostosować nazwę elementu i dodać element do projektu. 
  
-  Można przeciągnąć i upuścić w Eksploratorze rozwiązań. Jeśli została już pliki zostały skopiowane do struktury katalogu projektu, można wybierać Pokaż wszystkie pliki w górnej części Eksploratora rozwiązań. Można następnie wybierz elementy, które chcesz dodać, a z menu kontekstowego wybierz Include w projekcie. 
+  Możesz przeciągać i upuszczać do Eksplorator rozwiązań. Jeśli pliki zostały już skopiowane do struktury katalogów projektu, możesz wybrać opcję Pokaż wszystkie pliki w górnej części Eksplorator rozwiązań. Następnie możesz wybrać elementy, które chcesz dodać, a następnie z menu kontekstowego wybrać opcję Dołącz do projektu. 
  
-  Możesz obserwować te instrukcje w bardzo krótkim [wideo usługi youtube](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2). 
+  Możesz obejrzeć te instrukcje w bardzo krótkim [filmie wideo](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)w serwisie YouTube. 
  
 ## <a name="see-also"></a>Zobacz też 
- [Dokumentacja witryny typu wiki](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS rozpoczynania pracy i Deep Dive filmów wideo](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+ [Dokumentacja typu wiki](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS wprowadzenie i głębokie wideo szczegółowe](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

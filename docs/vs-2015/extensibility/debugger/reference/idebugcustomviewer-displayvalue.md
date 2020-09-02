@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue | Microsoft Docs
+title: IDebugCustomViewer::D isplayValue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bda4c60e9164ae195c0e3ba49893b1a818c66f14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421375"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda jest wywoływana, aby wyświetlić określoną wartość.  
+Ta metoda jest wywoływana w celu wyświetlenia określonej wartości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,24 +46,24 @@ int DisplayValue(
   
 #### <a name="parameters"></a>Parametry  
  `hwnd`  
- [in] Okno nadrzędne  
+ podczas Okno nadrzędne  
   
  `dwID`  
- [in] Identyfikator dla przeglądarek niestandardowych, które obsługują więcej niż jednego typu.  
+ podczas Identyfikator dla podglądów niestandardowych, które obsługują więcej niż jeden typ.  
   
  `pHostServices`  
- [in] Zastrzeżone. Zawsze ustawione na wartość null.  
+ podczas Rezerwacj. Zawsze ustawiono wartość null.  
   
  `pDebugProperty`  
- [in] Interfejs, który może służyć do pobierania wartości, które mają być wyświetlane.  
+ podczas Interfejs, którego można użyć do pobrania wartości do wyświetlenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli to się powiedzie, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wyświetlanie ma "modal", ponieważ ta metoda będzie utworzenie niezbędnych okna, wyświetlić wartość, czeka na dane wejściowe i zamknij okno, wszystkie przed zwróceniem do obiektu wywołującego. Oznacza to, że metoda musi obsługiwać wszystkich aspektów wyświetlanie wartości właściwości, od tworzenia okna danych wyjściowych, trwa oczekiwanie na dane wejściowe użytkownika do niszczenie okna.  
+ Wyświetlanie jest "modalne" w tej metodzie, która spowoduje utworzenie niezbędnego okna, wyświetlenie wartości, oczekiwanie na dane wejściowe i zamknięcie okna, przed powrotem do obiektu wywołującego. Oznacza to, że metoda musi obsługiwać wszystkie aspekty wyświetlania wartości właściwości, od tworzenia okna dla danych wyjściowych, aby oczekiwać na dane wejściowe użytkownika w celu zniszczenia okna.  
   
- Do obsługi, zmieniając wartość na danej [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) obiektu, możesz użyć [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) metody — Jeśli wartość może być wyrażona jako ciąg. W przeciwnym razie jest niezbędne do tworzenia niestandardowego interfejsu — wyłącznie w ewaluatorze wyrażeń zaimplementowanie tego `DisplayValue` metody — w ten sam obiekt, który implementuje `IDebugProperty3` interfejsu. Ten niestandardowy interfejs musi dostarczać metody do zmieniania danych o dowolnym rozmiarze i poziomie złożoności.  
+ Aby zapewnić obsługę zmiany wartości w danym obiekcie [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , można użyć metody [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) — Jeśli wartość może być wyrażona jako ciąg. W przeciwnym razie konieczne jest utworzenie niestandardowego interfejsu — wyłącznie dla ewaluatora wyrażeń implementujących tę `DisplayValue` metodę — w tym samym obiekcie, który implementuje `IDebugProperty3` interfejs. Ten niestandardowy interfejs udostępnia metody zmiany danych o dowolnym rozmiarze lub złożoności.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   

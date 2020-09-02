@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Dokumentacja firmy Microsoft
+title: 'IDebugSymbolProvider:: GetNextAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1bf0798e0f49d9e7b2871c5601f966bc282b186
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421453"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera adres debugowania, występującego z adresu podanego debugowania w metodzie.  
+Pobiera adres debugowania, który następuje po danym adresie debugowania w metodzie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,16 +44,16 @@ int GetNextAddress( 
   
 #### <a name="parameters"></a>Parametry  
  `pAddress`  
- [in] Podany adres debugowania.  
+ podczas Podanym adresem debugowania.  
   
  `fStatementOnly`  
- [in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.  
+ podczas W przypadku wartości TRUE program ogranicza adresy debugowania do pojedynczej instrukcji.  
   
  `ppAddress`  
- [out] Zwraca następny adres debugowania.  
+ określoną Zwraca następny adres debugowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zazwyczaj S_OK.  
+ Zwraca prawidłową `HRESULT` , zazwyczaj S_OK.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

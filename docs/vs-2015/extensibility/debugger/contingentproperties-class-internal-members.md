@@ -1,5 +1,5 @@
 ---
-title: ContingentProperties, klasa — składowe wewnętrzne | Dokumentacja firmy Microsoft
+title: Klasa ContingentProperties — Wewnętrzne elementy członkowskie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414649"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties, klasa — składowe wewnętrzne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zawiera dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.  
+Zawiera dodatkowe właściwości dla <xref:System.Threading.Tasks.Task> obiektu.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Zestaw:** mscorlib (w mscorlib.dll)  
   
- Ponieważ nie można uzyskać dostępu do tych wewnętrznych składowych z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
+ Ponieważ nie można uzyskać dostępu do tych wewnętrznych elementów członkowskich z .NET Framework, następująca składnia jest udostępniana w typowym języku pośrednim (CIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,10 +42,10 @@ Zawiera dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|Lista zadań podrzędnych, które zostały zarejestrowane przy użyciu tego zadania.|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|Lista zadań podrzędnych, które są zarejestrowane w tym zadaniu.|  
   
 ## <a name="remarks"></a>Uwagi  
- .NET Framework inicjuje pól tej klasy, tylko wtedy, gdy są potrzebne.  
+ .NET Framework inicjuje pola tej klasy tylko wtedy, gdy są one zbędne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

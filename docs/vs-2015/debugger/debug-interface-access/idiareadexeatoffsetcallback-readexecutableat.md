@@ -1,5 +1,5 @@
 ---
-title: Idiareadexeatoffsetcallback::readexecutableat — | Dokumentacja firmy Microsoft
+title: 'IDiaReadExeAtOffsetCallback:: ReadExecutableAt | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ac5452437ab6fdec3eb68baf46aeeab8434df4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538866"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Odczytuje określoną liczbę bajtów, rozpoczynając od określonego przesunięcia przy użyciu pliku wykonywalnego.  
+Odczytuje określoną liczbę bajtów rozpoczynając od określonego przesunięcia z pliku wykonywalnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,19 +38,19 @@ HRESULT ReadExecutableAt ( 
   
 #### <a name="parameters"></a>Parametry  
  fileOffset  
- [in] Przesunięcie w pliku wykonywalnym ma rozpocząć się odczyt.  
+ podczas Przesunięcie w pliku wykonywalnym, aby rozpocząć odczytywanie.  
   
  cbData  
- [in] Liczba bajtów do odczytania.  
+ podczas Liczba bajtów do odczytu.  
   
  pcbData  
- [out] Zwraca liczbę odczytanych bajtów.  
+ określoną Zwraca liczbę odczytanych bajtów.  
   
- dane]  
- [out w] Tablica, która jest wypełniane bajtów odczytanych z pliku.  
+ dane []  
+ [in. out] Tablica, która jest uzupełniona o bajty odczytywane z pliku.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana przez kod pomocy technicznej DIA załadować bajtów danych z pliku wykonywalnego przy użyciu przesunięcie bezwzględnej. Ta metoda jest wywoływana wspierających [idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody.  
+ Ta metoda jest wywoływana przez kod obsługi DIA do ładowania bajtów danych z pliku wykonywalnego przy użyciu bezwzględnego przesunięcia pliku. Ta metoda jest wywoływana w ramach obsługi metody [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   

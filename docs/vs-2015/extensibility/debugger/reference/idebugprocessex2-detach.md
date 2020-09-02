@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Dokumentacja firmy Microsoft
+title: IDebugProcessEx2::D etach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b79f1f80f9b6849c37fc9b6c4c8669f1397f0227
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538151"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta metoda informuje proces, czy sesja jest już debugowanie procesu.  
+Ta metoda informuje proces, że sesja nie jest już debugowana w procesie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int Detach(
   
 #### <a name="parameters"></a>Parametry  
  `pSession`  
- [in] Wartość, która jednoznacznie identyfikuje sesję Aby odłączyć ten proces z.  
+ podczas Wartość, która jednoznacznie identyfikuje sesję, z której ma zostać odłączony ten proces.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Interfejs przekazanej `pSession` jest należy traktować tylko jako plik cookie, wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, który pierwotnie dołączony do tego procesu; Brak metody w interfejsie podane są funkcjonalne.  
+ Przekazany Interfejs `pSession` ma być traktowany tylko jako plik cookie, czyli wartość, która jednoznacznie identyfikuje Menedżera debugowania sesji, który został pierwotnie dołączony do tego procesu; żadna z metod interfejsu nie jest funkcjonalna.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

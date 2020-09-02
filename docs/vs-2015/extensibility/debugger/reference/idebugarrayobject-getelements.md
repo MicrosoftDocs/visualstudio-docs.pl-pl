@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElements | Dokumentacja firmy Microsoft
+title: 'IDebugArrayObject:: GetElements | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cad81d76e2fcec01fa50a37fa6ab6cb49cfc79be
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423702"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera moduł wyliczający wszystkie elementy tablicy.  
+Pobiera moduł wyliczający wszystkich elementów tablicy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int GetElements(
   
 #### <a name="parameters"></a>Parametry  
  `ppEnum`  
- [out] Zwraca [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) obiekt, który umożliwia wyliczania przez wszystkie elementy.  
+ określoną Zwraca obiekt [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) , który umożliwia wyliczenie wszystkich elementów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Alternatywnie użyj [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) i [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) metody służące do iterowania po elementach.  
+ Alternatywnie użyj metod [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) i [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) , aby wykonać iterację elementów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

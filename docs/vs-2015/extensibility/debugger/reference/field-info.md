@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e18e906cbc65ea811e765553a8d2711b3e4eb0f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423741"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
+# <a name="field_info"></a>FIELD_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ta struktura zawiera opis zmiennej lokalnej, parametr lub innego pola.  
+Ta struktura opisuje zmienną lokalną, parametr lub inne pole.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,7 +48,7 @@ public struct FIELD_INFO {
   
 ## <a name="members"></a>Elementy członkowskie  
  dwFields  
- Kombinacja flag z [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) wyliczenie, które określa, które elementy członkowskie są wypełniane.  
+ Kombinacja flag z wyliczenia [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) , która określa, które elementy członkowskie są wypełnione.  
   
  bstrFullName  
  Pełna nazwa pola.  
@@ -56,24 +56,24 @@ public struct FIELD_INFO {
  bstrName  
  Krótka nazwa pola.  
   
- bstrType  
+ bstrtype  
  Typ pola.  
   
  dwModifiers  
- Kombinacja flag z [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) wyliczenie opisujące pola.  
+ Kombinacja flag z wyliczenia [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) , który opisuje pole.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metody, gdzie jest wypełnione.  
+ Ta struktura jest przenoszona do metody [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) , w której jest wypełniana.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: sh.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
