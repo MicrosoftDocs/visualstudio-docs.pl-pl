@@ -1,5 +1,5 @@
 ---
-title: Tworzenie strony opcji | Dokumentacja firmy Microsoft
+title: Tworzenie strony opcji | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,34 +11,34 @@ caps.latest.revision: 63
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b5897f6c4463cc5a3c7928a722ed5a0a09e42b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430581"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64818146"
 ---
 # <a name="creating-an-options-page"></a>Tworzenie strony opcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki właściwości w celu zbadania i ustawić właściwości.  
+W tym instruktażu utworzono prostą stronę narzędzi/opcji, która używa siatki właściwości do badania i ustawiania właściwości.  
   
- Aby zapisać te właściwości, aby i przywrócić je z pliku ustawień, wykonaj następujące kroki, a następnie zobacz [Tworzenie kategorii ustawień](../extensibility/creating-a-settings-category.md).  
+ Aby zapisać te właściwości i przywrócić je z pliku ustawień, wykonaj następujące kroki, a następnie zobacz [Tworzenie kategorii ustawień](../extensibility/creating-a-settings-category.md).  
   
- MPF zawiera dwie klasy ułatwiające tworzenie strony opcji narzędzi <xref:Microsoft.VisualStudio.Shell.Package> klasy i <xref:Microsoft.VisualStudio.Shell.DialogPage> klasy. Możesz utworzyć zapewnienie kontener te strony poprzez tworzenie podklasy klasy pakietu VSPackage. Aby utworzyć każdej strony opcji narzędzi, pochodząca z klasy elementu DialogPage.  
+ MPF udostępnia dwie klasy ułatwiające tworzenie stron opcji narzędzi, <xref:Microsoft.VisualStudio.Shell.Package> klasy i <xref:Microsoft.VisualStudio.Shell.DialogPage> klasy. Tworzysz pakietu VSPackage, aby udostępnić kontener dla tych stron przez podklasy pakietu. Każdą stronę opcji narzędzi można utworzyć, wyprowadzając ją z klasy typu DialogPage.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-tools-options-grid-page"></a>Tworzenie strony siatki opcji narzędzi  
- W tej sekcji utworzysz prostą siatki właściwości opcje narzędzi. Ta siatka służy do wyświetlania, a następnie zmień wartość właściwości.  
+ W tej sekcji utworzysz prostą siatkę właściwości opcje. Ta siatka służy do wyświetlania i zmieniania wartości właściwości.  
   
 #### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Aby utworzyć projekt VSIX i dodać pakietu VSPackage  
   
-1. Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu VSIX, o nazwie `MyToolsOptionsExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C# / rozszerzalności**.  
+1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt VSIX o nazwie `MyToolsOptionsExtension` . Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** w obszarze **Visual C#/rozszerzalność**.  
   
-2. Dodawanie pakietu VSPackage, dodając szablon elementu pakiet rozszerzeń Visual Studio o nazwie `MyToolsOptionsPackage`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C# / rozszerzalności** i wybierz **pakiet rozszerzeń Visual Studio**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby `MyToolsOptionsPackage.cs`. Aby uzyskać więcej informacji o sposobie tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. Dodaj pakietu VSPackage, dodając szablon elementu pakietu programu Visual Studio o nazwie `MyToolsOptionsPackage` . W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj/nowy element**. W **oknie dialogowym Dodaj nowy element**przejdź do **pozycji elementy/rozszerzalność programu Visual C#** i wybierz pozycję **pakiet programu Visual Studio**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na `MyToolsOptionsPackage.cs` . Aby uzyskać więcej informacji na temat tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia przy użyciu pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
-#### <a name="to-create-the-tools-options-property-grid"></a>Aby utworzyć siatki właściwości opcji narzędzi  
+#### <a name="to-create-the-tools-options-property-grid"></a>Aby utworzyć siatkę właściwości opcji narzędzi  
   
 1. Otwórz plik MyToolsOptionsPackage w edytorze kodu.  
   
@@ -48,14 +48,14 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     using System.ComponentModel;  
     ```  
   
-3. Deklarowanie klasy OptionPageGrid i pochodzić z <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+3. Zadeklaruj klasę OptionPageGrid i utwórz ją z elementu <xref:Microsoft.VisualStudio.Shell.DialogPage> .  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
     {  }  
     ```  
   
-4. Zastosuj <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do klasy pakietu VSPackage, aby przypisać do tej klasy, kategoria opcji i nazwy strony opcje dla OptionPageGrid. Wynik powinien wyglądać następująco:  
+4. Zastosuj <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do klasy pakietu VSPackage, aby przypisać do klasy opcje kategorii i opcji dla OptionPageGrid. Wynik powinien wyglądać następująco:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -67,13 +67,13 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-5. Dodaj `OptionInteger` właściwość `OptionPageGrid` klasy.  
+5. Dodaj `OptionInteger` Właściwość do `OptionPageGrid` klasy.  
   
-    - Zastosuj <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> do przypisania do właściwości kategorii siatki właściwości.  
+    - Zastosuj <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> do, aby przypisać do właściwości kategorii siatka właściwości.  
   
-    - Zastosuj <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> do przypisania do właściwości name.  
+    - Zastosuj <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> do, aby przypisać do właściwości Nazwa.  
   
-    - Zastosuj <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> do przypisania do właściwości opisu.  
+    - Zastosuj, <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> Aby przypisać do właściwości opis.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -92,18 +92,18 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     ```  
   
     > [!NOTE]
-    > Domyślna implementacja klasy <xref:Microsoft.VisualStudio.Shell.DialogPage> obsługuje właściwości, które mają odpowiednie konwertery lub struktur lub tablic, które można rozszerzyć do właściwości, które mają odpowiednie konwertery. Aby uzyskać listę konwerterów zobacz <xref:System.ComponentModel> przestrzeni nazw.  
+    > Domyślna implementacja programu <xref:Microsoft.VisualStudio.Shell.DialogPage> obsługuje właściwości, które mają odpowiednie konwertery lub które są strukturami lub tablicami, które mogą być rozwinięte we właściwościach, które mają odpowiednie konwertery. Aby zapoznać się z listą konwerterów, zobacz <xref:System.ComponentModel> przestrzeń nazw.  
   
-6. Skompiluj projekt, a następnie rozpocząć debugowanie.  
+6. Skompiluj projekt i Rozpocznij debugowanie.  
   
-7. W doświadczalnym wystąpieniu programu Visual Studio na **narzędzia** kliknij menu **opcje**.  
+7. W eksperymentalnym wystąpieniu programu Visual Studio, w menu **Narzędzia** kliknij pozycję **Opcje**.  
   
-     W okienku po lewej stronie powinien zostać wyświetlony **Moje kategorii**. (Opcje kategorie są wymienione w kolejności alfabetycznej, więc powinien pojawiać się o widoczny w połowie listę w dół.) Otwórz **Moje kategorii** a następnie kliknij przycisk **Moja strona siatki**. Siatka opcji jest wyświetlana w okienku po prawej stronie. Kategoria właściwości jest **Moje opcje**, i nazwa właściwości jest **Moje opcji całkowitą**. Opis właściwości **Moje opcji całkowitą**, pojawi się u dołu okienka. Zmień wartość ze swojej wartości początkowej, 256 się czymś innym. Kliknij przycisk **OK**, a następnie ponownie otwórz **Moja strona siatki**. Aby zobaczyć, że nowa wartość będzie się powtarzać.  
+     W lewym okienku powinna zostać wyświetlona **Kategoria moje kategorie**. (Kategorie opcji są wyświetlane w kolejności alfabetycznej, więc powinny być wyświetlane w połowie listy). Otwórz **moją kategorię** , a następnie kliknij pozycję **moja strona siatki**. Siatka opcji zostanie wyświetlona w okienku po prawej stronie. Kategoria właściwości to **Moje opcje**, a nazwa właściwości jest **opcją my Integer**. Opcja opis właściwości, **My Integer**pojawia się u dołu okienka. Zmień wartość z jej początkowej wartości 256 na inną. Kliknij przycisk **OK**, a następnie ponownie Otwórz **stronę Moje siatki**. Można zobaczyć, że nowa wartość będzie się utrzymywała.  
   
-     Opcje strony jest również dostępna za pośrednictwem szybkiego uruchamiania programu Visual Studio. W oknie szybkiego uruchamiania w prawym górnym rogu IDE wpisz **Moje kategorii** i zostanie wyświetlony **kategorii My -> Moja strona siatki** na liście rozwijanej.  
+     Strona opcji jest również dostępna za poorednictwem szybkiego uruchamiania programu Visual Studio. W oknie szybkie uruchamianie w prawym górnym rogu środowiska IDE wpisz **moją kategorię** , a na liście rozwijanej zobaczysz moją **kategorię — > stronie Moje siatki** .  
   
-## <a name="creating-a-tools-options-custom-page"></a>Tworzenie niestandardowych opcji narzędzia strony  
- W tej sekcji utworzysz strony Opcje narzędzi z niestandardowego interfejsu użytkownika. Ta strona umożliwia wyświetlanie i zmień wartość właściwości.  
+## <a name="creating-a-tools-options-custom-page"></a>Tworzenie strony niestandardowej opcji narzędzi  
+ W tej sekcji utworzysz stronę opcji narzędzi z niestandardowym interfejsem użytkownika. Ta strona służy do wyświetlania i zmieniania wartości właściwości.  
   
 1. Otwórz plik MyToolsOptionsPackage w edytorze kodu.  
   
@@ -113,7 +113,7 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     using System.Windows.Forms;  
     ```  
   
-3. Dodaj `OptionPageCustom` klasy tuż przed `OptionPageGrid` klasy. Pochodzić nowa klasa z `DialogPage`.  
+3. Dodaj `OptionPageCustom` klasę bezpośrednio przed `OptionPageGrid` klasą. Utwórz nową klasę z `DialogPage` .  
   
     ```csharp  
     public class OptionPageCustom : DialogPage  
@@ -128,7 +128,7 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     }  
     ```  
   
-4. Dodaj atrybut GUID. Dodaj właściwość właściwości OptionString:  
+4. Dodaj atrybut GUID. Dodaj właściwość OptionString:  
   
     ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
@@ -144,7 +144,7 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     }  
     ```  
   
-5. Zastosuj drugi <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do klasy pakietu VSPackage. Ten atrybut przypisuje klasy opcji kategorii i nazwy strony opcje.  
+5. Zastosuj sekundę <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> do klasy pakietu VSPackage. Ten atrybut służy do przypisywania klasy kategorii opcji i opcji Nazwa strony.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -158,13 +158,13 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-6. Dodaj nową **kontrolki użytkownika** o nazwie MyUserControl do projektu.  
+6. Dodaj nową **kontrolkę użytkownika** o nazwie UserControl do projektu.  
   
-7. Dodaj **TextBox** kontrolki do kontrolki użytkownika.  
+7. Dodaj kontrolkę **TextBox** do kontrolki użytkownika.  
   
-     W **właściwości** okna, na pasku narzędzi kliknij polecenie **zdarzenia** przycisk, a następnie kliknij dwukrotnie **pozostaw** zdarzeń. W kodzie MyUserControl.cs pojawi się nowy program obsługi zdarzeń.  
+     W oknie **Właściwości** , na pasku narzędzi kliknij przycisk **zdarzenia** , a następnie kliknij dwukrotnie zdarzenie **opuszczenia** . Nowy program obsługi zdarzeń pojawi się w kodzie MyUserControl.cs.  
   
-8. Dodaj publiczny `OptionsPage` pola `Initialize` metodę do klasy formantu i aktualizacji programu obsługi zdarzeń, aby ustawić opcję wartość zawartości pola tekstowego:  
+8. Dodaj pole publiczne `OptionsPage` , `Initialize` metodę do klasy Control i zaktualizuj procedurę obsługi zdarzeń, aby ustawić wartość opcji na zawartość pola tekstowego:  
   
     ```csharp  
     public partial class MyUserControl : UserControl  
@@ -188,9 +188,9 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     }  
     ```  
   
-     `optionsPage` Pole zawiera odwołanie do elementu nadrzędnego `OptionPageCustom` wystąpienia. `Initialize` Metoda Wyświetla `OptionString` w **TextBox**. Program obsługi zdarzeń zapisuje bieżącą wartość **TextBox** do `OptionString` po skupić się pozostawia **TextBox**.  
+     `optionsPage`Pole zawiera odwołanie do `OptionPageCustom` wystąpienia nadrzędnego. `Initialize`Metoda zostanie wyświetlona `OptionString` w polu **tekstowym**. Program obsługi zdarzeń zapisuje bieżącą wartość **pola tekstowego** w `OptionString` momencie, gdy fokus opuszcza **pole tekstowe**.  
   
-9. W pliku pakietu kodu, Dodaj zastąpienie `OptionPageCustom.Window` właściwości do klasy OptionPageCustom w celu tworzenie, inicjowanie i zwrócenia wystąpienia `MyUserControl`. Klasa powinna teraz wyglądać następująco:  
+9. W pliku kodu pakietu Dodaj przesłonięcie `OptionPageCustom.Window` właściwości do klasy OptionPageCustom, aby utworzyć, zainicjować i zwrócić wystąpienie `MyUserControl` . Klasa powinna teraz wyglądać następująco:  
   
     ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
@@ -217,18 +217,18 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
     }  
     ```  
   
-10. Skompiluj i uruchom projekt.  
+10. Skompiluj i Uruchom projekt.  
   
-11. W doświadczalnym wystąpieniu kliknij **narzędzia / Opcje**.  
+11. W eksperymentalnym wystąpieniu kliknij pozycję **Narzędzia/Opcje**.  
   
-12. Znajdź **Moje kategorii** i następnie **Moje niestandardowe strony**.  
+12. Znajdź **moją kategorię** , a następnie **stronę niestandardową**.  
   
-13. Zmień wartość właściwości **właściwości OptionString**. Kliknij przycisk **OK**, a następnie ponownie otwórz **Moje niestandardowe strony**. Aby zobaczyć, trwałość nową wartość.  
+13. Zmień wartość **OptionString**. Kliknij przycisk **OK**, a następnie ponownie Otwórz **moją stronę niestandardową**. Można zobaczyć, że nowa wartość jest utrwalona.  
   
-## <a name="accessing-options"></a>Uzyskiwanie dostępu do opcji  
- W tej sekcji można uzyskać wartość opcji od pakietu VSPackage, który jest hostem skojarzonej strony opcji narzędzi. Tej samej techniki, może służyć do uzyskania wartości dowolnej właściwości publicznych.  
+## <a name="accessing-options"></a>Dostęp do opcji  
+ W tej sekcji uzyskasz wartość opcji z pakietu VSPackage, która zawiera skojarzone Opcje narzędzi. Ta sama technika może służyć do uzyskania wartości każdej właściwości publicznej.  
   
-1. W pliku kodu pakiet, należy dodać publiczny właściwość o nazwie **OptionInteger** do **MyToolsOptionsPackage** klasy.  
+1. W pliku kodu pakietu Dodaj publiczną właściwość o nazwie **OptionInteger** do klasy **MyToolsOptionsPackage** .  
   
     ```  
     public int OptionInteger  
@@ -242,11 +242,11 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
   
     ```  
   
-     Ten kod wywołuje <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> można utworzyć lub pobrać `OptionPageGrid` wystąpienia. `OptionPageGrid` wywołania <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> załadować jego opcji, które są właściwości publiczne.  
+     Ten kod wywołuje, <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> Aby utworzyć lub pobrać `OptionPageGrid` wystąpienie. `OptionPageGrid` wywołania <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> do załadowania swoich opcji, które są właściwościami publicznymi.  
   
-2. Teraz Dodaj polecenie niestandardowe szablon elementu o nazwie **MyToolsOptionsCommand** do wyświetlania wartości. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby **MyToolsOptionsCommand.cs**.  
+2. Teraz Dodaj niestandardowy szablon elementu polecenia o nazwie **MyToolsOptionsCommand** , aby wyświetlić tę wartość. W oknie dialogowym **Dodaj nowy element** przejdź do pozycji **Visual C#/rozszerzalność** i wybierz **polecenie niestandardowe**. W polu **Nazwa** w dolnej części okna Zmień nazwę pliku polecenia na **MyToolsOptionsCommand.cs**.  
   
-3. W pliku MyToolsOptionsCommand Zastąp treść metody polecenia `ShowMessageBox` metoda następującym kodem:  
+3. W pliku MyToolsOptionsCommand Zastąp treść `ShowMessageBox` metody polecenia następującym:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -257,11 +257,11 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
   
     ```  
   
-4. Skompiluj projekt, a następnie rozpocząć debugowanie.  
+4. Skompiluj projekt i Rozpocznij debugowanie.  
   
-5. W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **wywołania MyToolsOptionsCommand**.  
+5. W eksperymentalnym wystąpieniu, w menu **Narzędzia** kliknij polecenie **Wywołaj MyToolsOptionsCommand**.  
   
-     Okno komunikatu Wyświetla bieżącą wartość `OptionInteger`.  
+     Zostanie wyświetlone okno komunikatu z bieżącą wartością `OptionInteger` .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Opcje i strony opcji](../extensibility/internals/options-and-options-pages.md)

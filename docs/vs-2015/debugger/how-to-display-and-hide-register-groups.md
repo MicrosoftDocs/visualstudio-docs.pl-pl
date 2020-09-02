@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wyświetlanie i ukrywanie grup rejestru | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wyświetlanie i ukrywanie grup rejestrów | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,29 +24,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ae0a5a690e1413bfccd66ee0e9db7f6d812c15
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702251"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Instrukcje: Wyświetlanie i ukrywanie grup rejestru
+# <a name="how-to-display-and-hide-register-groups"></a>Porady: wyświetlanie i ukrywanie grup rejestru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Rejestruje** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła **ogólne**kategorii.  
+Okno **rejestry** jest dostępne tylko wtedy, gdy w oknie dialogowym **Opcje** jest włączone debugowanie na poziomie adresu, węzeł **debugowanie** , Kategoria **ogólna** .  
   
- Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Kliknięcie prawym przyciskiem myszy **rejestruje** okna, pojawi się menu podręczne zawierające te grupy, które można wyświetlić lub ukryć zgodnie z potrzebami po poniższej procedurze.  
+ Aby zmniejszyć bałagan, okna **rejestry** organizują rejestry w grupy. Jeśli klikniesz prawym przyciskiem myszy okno **rejestry** , zobaczysz menu skrótów zawierające te grupy, które można wyświetlić lub ukryć, gdy zobaczysz, że jest to zgodne z poniższą procedurą.  
   
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-### <a name="to-display-or-hide-register-groups"></a>Wyświetlanie lub ukrywanie grup rejestru  
+### <a name="to-display-or-hide-register-groups"></a>Aby wyświetlić lub ukryć grupy rejestrów  
   
-1. Kliknij prawym przyciskiem myszy **rejestruje** okna.  
+1. Kliknij prawym przyciskiem myszy okno **rejestry** .  
   
-2. W menu skrótów wybierz grup rejestru, który chcesz pokazać lub ukryć.  
+2. W menu skrótów wybierz grupy rejestrów, które chcesz pokazać lub ukryć.  
   
-     Grupy rejestru, które nie są obsługiwane przez sprzęt, który debugujesz na są wyłączone w menu skrótów, więc nie można je wybrać.  
+     Grupy rejestrów, które nie są obsługiwane przez debugowany sprzęt, są wyłączone w menu skrótów, dlatego nie można ich wybrać.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
+ [Porady: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

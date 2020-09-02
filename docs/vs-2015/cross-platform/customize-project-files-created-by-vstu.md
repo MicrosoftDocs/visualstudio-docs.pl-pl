@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU | Dokumentacja firmy Microsoft
+title: Dostosowywanie plików projektu utworzonych przez rozszerzenia VSTU | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -10,19 +10,19 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150999"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio Tools for Unity zapewnia wywołanie zwrotne stylu aparatu Unity w trakcie Generowanie pliku projektu. Zarejestrowanie `VisualStudioIntegration.ProjectFileGeneration` zdarzenia w celu zmodyfikowania pliku projektu, zawsze wtedy, gdy zostanie ponownie wygenerowany.  
+Visual Studio Tools for Unity zapewnia wywołanie zwrotne w stylu aparatu Unity podczas generowania pliku projektu. Zarejestruj się w `VisualStudioIntegration.ProjectFileGeneration` zdarzeniu, aby zmodyfikować plik projektu za każdym razem, gdy zostanie on ponownie wygenerowany.  
   
 ## <a name="demonstrates"></a>Demonstracje  
- Jak dostosowywanie plików projektu programu Visual Studio, które są generowane przez program Visual Studio Tools for Unity.  
+ Jak dostosować pliki projektu programu Visual Studio wygenerowane przez Visual Studio Tools for Unity.  
   
 ## <a name="example"></a>Przykład  
   

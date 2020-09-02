@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017174"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Przewodnik: Tworzenie składnika Web Part programu Silverlight wyświetlającego Protokół OData dla programu SharePoint
@@ -229,6 +230,6 @@ ms.locfileid: "86017174"
     > [!NOTE]
     > Podczas uzyskiwania dostępu do danych w programie Silverlight w różnych domenach Technologia Silverlight chroni przed lukami w zabezpieczeniach, które mogą być używane do korzystania z aplikacji sieci Web. W przypadku wystąpienia problemów podczas uzyskiwania dostępu do danych zdalnych w programie Silverlight zobacz [udostępnianie usługi w granicach domen](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95)).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Tworzenie składników Web Part dla programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

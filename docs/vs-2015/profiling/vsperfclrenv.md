@@ -1,5 +1,5 @@
 ---
-title: VSPerfCLREnv | Dokumentacja firmy Microsoft
+title: VSPerfCLREnv | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,36 +16,36 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446691"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64829029"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vsperfclrenv — narzędzie służy do ustawiania zmiennych środowiskowych, które są wymagane do profilu aplikacji .NET Framework. Używa następującej składni:  
+Narzędzie VSPerfCLREnv służy do ustawiania zmiennych środowiskowych, które są wymagane do profilowania aplikacji .NET Framework. Używa następującej składni:  
   
 ```  
 VsPerfCLREnv [/option]  
 ```  
   
- Możesz wybrać opcję zależy od tego, której te trzy rodzaje profilowania, należy użyć: próbkowanie, Instrumentacja, lub globalnego. Osobną opcją jest wymagany do uwzględnienia danych o interakcji między warstwami w danych profilowania. W poniższych tabelach opisano składnię dla każdej opcji.  
+ Wybrana opcja zależy od tego, które z trzech typów profilowania są używane: próbkowanie, Instrumentacja lub globalne. Aby uwzględnić dane interakcji warstwy w danych profilowania, wymagana jest osobna opcja. Składnia dla każdej opcji jest opisana w poniższych tabelach.  
   
 > [!NOTE]
-> Po zakończeniu profilowania, uruchom **VSPerfCLREnv** z **/ off** lub **/globaloff** możliwość usuwanie zmiennych środowiskowych niezbędnych do profilowania. Aby uzyskać więcej informacji zobacz Opcje polecenia VSPerfCLREnv do ustawienia środowiska Usuń pokazano poniżej.  
+> Po zakończeniu profilowania Uruchom polecenie **VSPerfCLREnv** z opcją **/off** lub **/GlobalOff** , aby usunąć zmienne środowiskowe niezbędne do profilowania. Aby uzyskać więcej informacji, zobacz Opcje VSPerfCLREnv, aby usunąć ustawienia środowiska pokazane w tym miejscu.  
   
- **Opcje polecenia VSPerfCLREnv, w tym dane interakcji między warstwami**  
+ **Opcje VSPerfCLREnv do dołączania danych interakcji między warstwami**  
   
 > [!WARNING]
-> Informacje o profilowaniu interakcji między warstwami można zbierać w programach [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] i [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)], Natomiast obejrzeć takie dane można wyświetlić tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> Informacje o profilowaniu interakcji między warstwami można zbierać w programach [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] i [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)], Jednak dane profilowania interakcji między warstwami mogą być wyświetlane tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] .  
   
- Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje na temat zapytań ADO.NET w aplikacjach wielowarstwowych. Dane są zbierane tylko w przypadku wywołania funkcji synchronicznej. Dane interakcji między można dodać do dowolnej profilowania przy użyciu dowolnej metody profilowania.  
+ Profilowanie interakcji między warstwami zawiera dodatkowe informacje na temat zapytań ADO.NET w aplikacjach wielowarstwowych. Dane są zbierane tylko dla wywołań funkcji synchronicznych. Dane interakcji można dodać do dowolnego przebiegu profilowania przy użyciu dowolnej metody profilowania.  
   
- **InteractionOn** i **GlobalInteractionOn** opcje włączyć zbieranie danych o interakcji między warstwami. Opcja interakcji musi być ustawiona, po ustawienie zmiennej środowiskowej VSPerfCLREnv, który jest wymagany do profilu aplikacji.  
+ Opcje **InteractionOn** i **GlobalInteractionOn** umożliwiają zbieranie danych o interakcji między warstwami. Opcja interakcji musi być ustawiona po ustawieniu zmiennej środowiskowej VSPerfCLREnv, która jest wymagana do profilowania aplikacji.  
   
- Poniższy przykład zawiera dane interakcji między warstwami do uruchomienia profilowania, która używa metody pobierania próbek:  
+ Poniższy przykład obejmuje dane interakcji warstwy w przebiegu profilowania, który używa metody próbkowania:  
   
 ```  
 VSPerfCLREnv /SampleOn  
@@ -53,7 +53,7 @@ VSPerfCLREnv /InteractionOn
 VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe  
 ```  
   
- Poniższy przykład zawiera dane interakcji między warstwami do uruchomienia profilowania dla usługi Windows:  
+ Poniższy przykład obejmuje dane interakcji warstwy w przebiegu profilowania dla usługi systemu Windows:  
   
 ```  
 VSPerfCLREnv /GlobalSampleOn  
@@ -63,53 +63,53 @@ VSPerfCmd /Start:Sample /Output:MyService.exe.vsp
 VSPerfCmd /Attach:MyService.exe  
 ```  
   
- **Opcje polecenia VSPerfCLREnv przetwarzania profilowania Instrumentacji**  
+ **Opcje VSPerfCLREnv dla profilowania Instrumentacji procesów**  
   
- W poniższej tabeli opisano opcje polecenia VSPerfCLREnv do profilowania Instrumentacji:  
-  
-|Opcja|Opis|  
-|------------|-----------------|  
-|**TraceOn**|Włącza profilowanie przy użyciu metody instrumentacji. Nie uwzględnia alokacji pamięci profilowania, lub zbieranie danych o okresie istnienia obiektu.|  
-|**TraceGC**|Włącza profilowanie przydziału pamięci przy użyciu metody instrumentacji. Włącza zbieranie danych o okresie istnienia obiektu.|  
-|**TraceGCLife**|Umożliwia przydzielanie pamięci, profilowanie i zbieranie danych o okresie istnienia obiektu przy użyciu metody instrumentacji.|  
-  
- **Opcje polecenia VSPerfCLREnv profilowanie próbkowania procesu**  
-  
- W poniższej tabeli opisano opcje polecenia VSPerfCLREnv profilowanie próbkowania:  
+ W poniższej tabeli opisano opcje VSPerfCLREnv dla profilowania Instrumentacji:  
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|**SampleOn**|Włącza profilowanie przy użyciu metody pobierania próbek. Nie uwzględnia alokacji pamięci profilowania, lub zbieranie danych o okresie istnienia obiektu.|  
-|**SampleGC**|Włącza profilowanie przydziału pamięci przy użyciu metody próbkowania. Włącza zbieranie danych o okresie istnienia obiektu.|  
-|**SampleGCLife**|Włącza profilowanie przydziału pamięci przy użyciu metody próbkowania. Umożliwia również zbieranie danych o okresie istnienia obiektu.|  
-|**SampleLineOff**|Wyłącza kolekcję .NET profilowania danych na poziomie wiersza.|  
+|**TraceOn**|Włącza profilowanie przy użyciu metody instrumentacji. Nie włącza profilowania alokacji pamięci ani nie zbiera danych o okresie istnienia obiektu.|  
+|**TraceGC**|Włącza profilowanie alokacji pamięci za pomocą metody instrumentacji. Nie włącza zbierania danych o okresie istnienia obiektu.|  
+|**TraceGCLife**|Włącza profilowanie alokacji pamięci i gromadzenie danych o okresie istnienia obiektów przy użyciu metody instrumentacji.|  
   
- **Opcje polecenia VSPerfCLREnv do globalnego profilowania**  
+ **Opcje VSPerfCLREnv dla profilowania próbkowania procesu**  
   
- Profilowanie usług zarządzanych, takich jak i aplikacji sieci web ASP.NET, który jest uruchamiany przez system operacyjny, a nie jest uruchomiony przez użytkownika, należy użyć opcji pod kątem globalnego profilowania opcji polecenia VSPerfCLREnv. W poniższej tabeli opisano globalnego wersje VSPerfCLREnv opcje. Te opcje ustawić odpowiednie zmienne środowiskowe w rejestrze.  
-  
-|Opcja|Opis|  
-|------------|-----------------|  
-|**GlobalTraceOn**|Włącza profilowanie globalnego przy użyciu metody instrumentacji. Zbiera zdarzenia alokacji pamięci ani danych o okresie istnienia obiektu.|  
-|**GlobalTraceGC**|Włącza profilowanie przydziału pamięci globalnej przy użyciu metody instrumentacji. Włącza zbieranie danych o okresie istnienia obiektu.|  
-|**GlobalTraceGCLife**|Włącza profilowanie przydziału pamięci globalnej przy użyciu metody instrumentacji. Umożliwia także zbierania danych o okresie istnienia obiektu.|  
-|**GlobalSampleOn**|Umożliwia globalny profilowania przy użyciu metody próbkowania. Nie umożliwi zbieranie zdarzeń alokacji pamięci lub danych o okresie istnienia obiektu.|  
-|**GlobalSampleGC**|Włącza profilowanie przydziału pamięci globalnej przy użyciu metody próbkowania. Włącza zbieranie danych o okresie istnienia obiektu.|  
-|**GlobalSampleGCLife**|Włącza profilowanie przydziału pamięci globalnej przy użyciu metody próbkowania. Umożliwia również zbieranie danych o okresie istnienia obiektu.|  
-  
- **Opcje polecenia VSPerfCLREnv do usunięcia ustawień środowiska**  
-  
- Po zakończeniu profilowania aplikacji zarządzanej użyj jednej z następujących opcji, aby usunąć zmienne środowiskowe, które zostały dodane przez VSPerfCLREnv. W poniższej tabeli opisano sposób usuwania obu zmiennych środowiskowych standardowe i globalne:  
+ W poniższej tabeli opisano opcje VSPerfCLREnv na potrzeby profilowania próbkowania:  
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|**Off**|Usuwa zmienne środowiskowe profilowania .NET standard. Użyj tej opcji, gdy nieglobalnych opcje polecenia VSPerfClrEnv były używane do ustawiania zmiennych środowiskowych programu profilującego.|  
-|**GlobalOff**|Usuwa zmienne środowiskowe globalnego profilowania platformy .NET. Użyj tej opcji podczas uruchomienia aplikacji według systemu operacyjnego i nie profilera.|  
+|**SampleOn**|Włącza profilowanie przy użyciu metody próbkowania. Nie włącza profilowania alokacji pamięci ani nie zbiera danych o okresie istnienia obiektu.|  
+|**SampleGC**|Włącza profilowanie alokacji pamięci przy użyciu metody próbkowania. Nie włącza zbierania danych o okresie istnienia obiektu.|  
+|**SampleGCLife**|Włącza profilowanie alokacji pamięci przy użyciu metody próbkowania. Umożliwia również zbieranie danych o okresie istnienia obiektu.|  
+|**SampleLineOff**|Wyłącza zbieranie danych profilowania na poziomie wiersza platformy .NET.|  
+  
+ **Opcje VSPerfCLREnv dla profilowania globalnego**  
+  
+ Aby profilować usługę zarządzaną, taką jak i ASP.NET aplikację sieci Web, która jest uruchamiana przez system operacyjny zamiast uruchamiania przez użytkownika, należy użyć opcji globalnego profilowania opcji VSPerfCLREnv. W poniższej tabeli opisano globalne wersje opcji VSPerfCLREnv. Te opcje ustawiają odpowiednie zmienne środowiskowe w rejestrze.  
+  
+|Opcja|Opis|  
+|------------|-----------------|  
+|**GlobalTraceOn**|Włącza profilowanie globalne przy użyciu metody instrumentacji. Nie zbiera zdarzeń alokacji pamięci lub danych o okresie istnienia obiektu.|  
+|**GlobalTraceGC**|Włącza profilowanie alokacji pamięci globalnej przy użyciu metody instrumentacji. Nie włącza zbierania danych o okresie istnienia obiektu.|  
+|**GlobalTraceGCLife**|Włącza profilowanie alokacji pamięci globalnej przy użyciu metody instrumentacji. Umożliwia również zbieranie danych o okresie istnienia obiektu.|  
+|**GlobalSampleOn**|Włącza profilowanie globalne przy użyciu metody próbkowania. Nie włącza zbierania danych o zdarzeniach alokacji pamięci lub okresie istnienia obiektu.|  
+|**GlobalSampleGC**|Włącza profilowanie alokacji pamięci globalnej przy użyciu metody próbkowania. Nie włącza zbierania danych o okresie istnienia obiektu.|  
+|**GlobalSampleGCLife**|Włącza profilowanie alokacji pamięci globalnej przy użyciu metody próbkowania. Umożliwia również zbieranie danych o okresie istnienia obiektu.|  
+  
+ **VSPerfCLREnv opcje usuwania ustawień środowiska**  
+  
+ Po zakończeniu profilowania aplikacji zarządzanej Użyj jednej z następujących opcji, aby usunąć zmienne środowiskowe, które zostały dodane przez VSPerfCLREnv. W poniższej tabeli opisano, jak usunąć standardowe i globalne zmienne środowiskowe:  
+  
+|Opcja|Opis|  
+|------------|-----------------|  
+|**Wyłączone**|Usuwa zmienne środowiskowe dla standardowego profilowania platformy .NET. Użyj tej opcji, jeśli opcje VSPerfClrEnv inne niż globalne zostały użyte do ustawienia zmiennych środowiskowych profilera.|  
+|**GlobalOff**|Usuwa zmienne środowiskowe dla globalnego profilowania platformy .NET. Użyj tej opcji, jeśli aplikacja została uruchomiona przez system operacyjny, a nie Profiler.|  
   
 ## <a name="remarks"></a>Uwagi  
- Te opcje nie są wymagane do profilowania aplikacji zarządzanej, gdy aplikacja zostanie uruchomiona przy użyciu Eksploratora wydajności w środowisku IDE. Eksplorator wydajności Ustawia wszystkie ustawienia wymagane środowisko dla Ciebie.  
+ Te opcje nie są wymagane do profilowania aplikacji zarządzanej, jeśli aplikacja jest uruchomiona przy użyciu Eksplorator wydajności w IDE. Eksplorator wydajności ustawia wszystkie wymagane ustawienia środowiska.  
   
- Jeśli odpowiednie środowisko nie została ustawiona podczas profilowania, ostrzeżenie jest zgłaszane podczas analizy i funkcji zarządzanej, których nazwy nie będą prawidłowo rozpoznawane.  
+ Jeśli podczas profilowania nie zostało ustawione prawidłowe środowisko, podczas analizy zostanie zgłoszone ostrzeżenie, a nazwy funkcji zarządzanych nie zostaną prawidłowo rozwiązane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::GetService | Dokumenty firmy Microsoft
+title: 'IDebugExpressionEvaluator2:: GetService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c5428606ad54c7938037c3ffecf04f1cfe41787c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729347"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-Pobiera obiekt usługi, biorąc pod uwagę jego unikatowy identyfikator.
+Pobiera obiekt usługi z uwzględnieniem jego unikatowego identyfikatora.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,16 +42,16 @@ int GetService (
 
 ## <a name="parameters"></a>Parametry
 `uid`\
-[w] Unikatowy identyfikator usługi do pobrania.
+podczas Unikatowy identyfikator usługi do pobrania.
 
 `ppService`\
-[na zewnątrz] Zwraca obiekt, który reprezentuje usługę.
+określoną Zwraca obiekt, który reprezentuje usługę.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Może to być używane przez oceniającego wyrażenie innej firmy w celu uzyskania usług od innego oceniającego wyrażenie. Na przykład ta metoda może służyć do uzyskania interfejsu dla usługi wizualizatora z domyślnego oceniającego wyrażenie. Oceniający wyrażenia innych firm prawdopodobnie nie będą musieli zaimplementować tego interfejsu.
+ Może to być wykorzystane przez ewaluatora wyrażeń innych firm do uzyskiwania usług z innej ewaluatora wyrażeń. Na przykład ta metoda może służyć do uzyskania interfejsu dla usługi wizualizatora z domyślnej ewaluatora wyrażeń. Ocenianie wyrażeń innych firm jest mało prawdopodobne, aby zaimplementować ten interfejs.
 
 ## <a name="see-also"></a>Zobacz też
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

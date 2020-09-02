@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie wartości danych w poradach dotyczących danych w edytorze kodu | Dokumentacja firmy Microsoft
+title: Wyświetlanie wartości danych w etykietkach danych w edytorze kodu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,127 +22,127 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700110"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Podgląd wartości danych w poradach dotyczących danych w edytorze kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych w programie podczas debugowania. DataTips działa tylko w trybie przerwania i tylko w przypadku zmiennych, które znajdują się w bieżącym zakresie wykonywania.  
+Porady datapreview zapewniają wygodny sposób wyświetlania informacji o zmiennych w programie podczas debugowania. Etykietki danych działają tylko w trybie przerwania i są tylko w przypadku zmiennych, które znajdują się w bieżącym zakresie wykonywania.  
   
- W [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]DataTips, które można przypiąć do określonej lokalizacji w pliku źródłowym i poruszać się na podstawie wszystkich [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] systemu windows.  
+ W systemie [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] etykietki danych można przypinać do określonej lokalizacji w pliku źródłowym lub mogą być przepływane na wszystkich [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknach.  
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>Aby wyświetlić etykietki danych (tylko w trybie przerwania)  
   
-1. W oknie źródła umieść wskaźnik myszy na dowolnej zmiennej w bieżącym zakresie.  
+1. W oknie źródła umieść wskaźnik myszy nad dowolną zmienną w bieżącym zakresie.  
   
-    Pojawi się DataTip.  
+    Zostanie wyświetlona etykietki danych.  
   
    > [!NOTE]
-   > Porady dotyczące danych są zawsze obliczane w kontekście, w przypadku, gdy wykonanie programu jest zawieszone, a nie w przypadku, gdy kursor znajduje się. Po umieszczeniu wskaźnika myszy nad zmienną w innej funkcji o tej samej nazwie jako zmiennej, która znajduje się w bieżącym kontekście, wartość zmiennej w innych funkcji jest wyświetlany jako wartość zmiennej w bieżącym kontekście.  
+   > Porady dotyczące danych są zawsze oceniane w kontekście, w którym wykonywanie jest zawieszone, a nie miejsca, w którym kursor jest aktywowany. Po umieszczeniu wskaźnika myszy nad zmienną w innej funkcji o takiej samej nazwie jak zmienna, która znajduje się w bieżącym kontekście, wartość zmiennej w innej funkcji jest wyświetlana jako wartość zmiennej w bieżącym kontekście.  
   
-2. DataTip zniknie po usunięciu wskaźnika myszy. Aby przypiąć DataTip pozostaje otwarty, kliknij przycisk **Przypnij do źródła** ikony, lub  
+2. Etykietki danych znika po usunięciu wskaźnika myszy. Aby przypiąć etykietki danych, tak aby pozostała otwarta, kliknij ikonę **Przypnij do źródła** lub  
   
-   - Kliknij prawym przyciskiem myszy na zmiennej, a następnie kliknij przycisk **Przypnij do źródła**.  
+   - Kliknij prawym przyciskiem myszy zmienną, a następnie kliknij pozycję **Przypnij do źródła**.  
   
-     Przypiętych etykietki danych zostanie zamknięte po zakończeniu sesji debugowania.  
+     Przypięty etykietki danych jest zamykany po zakończeniu sesji debugowania.  
   
-### <a name="to-unpin-a-datatip-and-make-it-float"></a>Odepnij poradzie dotyczącej danych i liczb zmiennoprzecinkowych  
+### <a name="to-unpin-a-datatip-and-make-it-float"></a>Aby odpiąć etykietki danych i uczynić go swobodnym  
   
-- Etykietki danych przypięte, kliknij **Odepnij od źródła** ikony.  
+- W przypiętej etykietki danych kliknij ikonę **Odepnij ze źródła** .  
   
-     Ikona zmiany kodu pin nieprzypięte pozycji. DataTip jest teraz wyświetlany powyżej wszelkie otwarte okna. Zmiennoprzecinkowe DataTip zamyka podczas kończenia sesji debugowania.  
+     Ikona pinezki zmieni się na przypiętą pozycję. Etykietki danych teraz przekracza wszystkie otwarte okna. Szybująca etykietki danych jest zamykana po zakończeniu sesji debugowania.  
   
-### <a name="to-repin-a-floating-datatip"></a>Aby repin zmiennoprzecinkowy etykietki danych  
+### <a name="to-repin-a-floating-datatip"></a>Aby przypiąć zmiennoprzecinkową etykietki danych  
   
-- W poradzie dotyczącej danych kliknij ikonę pinezki.  
+- W etykietki danych kliknij ikonę pinezki.  
   
-     Ikona zmiany kodu pin przypiętych pozycji. Jeśli DataTip jest poza oknem źródła, ikonę pinezki jest wyłączona i nie można przypiąć DataTip.  
+     Ikona pinezki zmieni się na przypiętą pozycję. Jeśli etykietki danych znajduje się poza oknem źródłowym, ikona pinezki jest wyłączona, a etykietki danych nie może zostać przypięty.  
   
 ### <a name="to-close-a-datatip"></a>Aby zamknąć etykietki danych  
   
-- Umieść wskaźnik myszy nad etykietki danych, a następnie kliknij przycisk **Zamknij** ikony.  
+- Umieść wskaźnik myszy nad etykietki danych, a następnie kliknij ikonę **zamknięcia** .  
   
 ### <a name="to-close-all-datatips"></a>Aby zamknąć wszystkie etykietki danych  
   
-- Na **debugowania** menu, kliknij przycisk **wyczyść wszystkie etykietki danych**.  
+- W menu **debugowanie** kliknij **Wyczyść wszystkie etykietki**danych.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Aby zamknąć wszystkie etykietki danych dla określonego pliku  
   
-- Na **debugowania** menu, kliknij przycisk **wyczyść wszystkie etykietki danych przypięte do** *pliku*.  
+- W menu **debugowanie** kliknij **Wyczyść wszystkie etykietki danych przypięte do** *pliku*.  
   
-## <a name="expanding-and-editing-information"></a>Rozwijanie i edytowanie informacji o  
- Korzystanie z DataTips, aby rozwinąć tablica, struktury lub obiekt, aby wyświetlić jego składowe. Można również edytować wartość zmiennej w poradzie dotyczącej danych.  
+## <a name="expanding-and-editing-information"></a>Rozwijanie i edytowanie informacji  
+ Możesz użyć etykietek danych, aby rozwinąć tablicę, strukturę lub obiekt, aby wyświetlić jego elementy członkowskie. Możesz również edytować wartość zmiennej z etykietki danych.  
   
-#### <a name="to-expand-a-variable-to-see-its-elements"></a>Aby rozwinąć zmiennej, aby zobaczyć jego elementy  
+#### <a name="to-expand-a-variable-to-see-its-elements"></a>Aby rozwinąć zmienną, aby zobaczyć jej elementy  
   
-- W DataTip, umieść wskaźnik myszy **+** logowania, która znajduje się przed nazwę zmiennej.  
+- W etykietki danych, umieść wskaźnik myszy nad **+** znakiem, który znajduje się przed nazwą zmiennej.  
   
-     Zmienna rozwijany, aby wyświetlić jego elementy w postaci drzewa.  
+     Zmienna rozwija się, aby pokazać jej elementy w formie drzewa.  
   
-     Po rozwinięciu zmiennej, można przenieść w górę i w dół za pomocą klawiszy strzałek na klawiaturze. Alternatywnie można użyć myszy.  
+     Gdy zmienna jest rozwinięta, możesz użyć klawiszy strzałek na klawiaturze, aby przejść w górę i w dół. Alternatywnie możesz użyć myszy.  
   
-#### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Aby edytować wartość zmiennej za pomocą etykietki danych  
+#### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Aby edytować wartość zmiennej przy użyciu etykietki danych  
   
-1. W poradzie dotyczącej danych kliknij wartość. Ta opcja jest wyłączona dla wartości tylko do odczytu.  
+1. W etykietki danych kliknij wartość. Ta wartość jest wyłączona w przypadku wartości tylko do odczytu.  
   
-2. Wpisz nową wartość, a następnie naciśnij klawisz ENTER.  
+2. Wpisz nową wartość i naciśnij klawisz ENTER.  
   
-## <a name="making-a-datatip-transparent"></a>Ustawianie etykietki danych przezroczystości  
- Jeśli chcesz wyświetlić kod, który znajduje się za etykietki danych, istnieje możliwość DataTip tymczasowo przezroczysty. To nie dotyczy DataTips, które są przypięte lub zmiennoprzecinkową.  
+## <a name="making-a-datatip-transparent"></a>Etykietki danych przezroczysty  
+ Jeśli chcesz zobaczyć kod, który znajduje się za etykietki danych, możesz sprawić, że etykietki danych jest tymczasowo przezroczysty. Nie ma to zastosowania do etykietek danych, które są przypięte lub przestawne.  
   
-#### <a name="to-make-a-datatip-transparent"></a>Aby przezroczyste etykietki danych  
+#### <a name="to-make-a-datatip-transparent"></a>Aby etykietki danych przezroczysty  
   
-- W DataTip naciśnij klawisz CTRL.  
+- W etykietki danych naciśnij klawisz CTRL.  
   
-     DataTip pozostanie przezroczyste, tak długo, jak przytrzymaj wciśnięty klawisz CTRL.  
+     Etykietki danych pozostanie przezroczyste, o ile przytrzymasz wciśnięty klawisz CTRL.  
   
-## <a name="visualizing-complex-data-types"></a>Wizualizacji złożonych typów danych  
- Jeśli ikona lupy pojawi się obok nazwy zmiennej w poradzie dotyczącej danych, co najmniej jeden [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md) są dostępne dla zmiennych typu danych. Korzystanie z wizualizatora, aby wyświetlić informacje w sposób bardziej zrozumiały, zwykle graficznego.  
+## <a name="visualizing-complex-data-types"></a>Wizualizacja złożonych typów danych  
+ Jeśli obok nazwy zmiennej w etykietki danych pojawia się ikona lupy, dla zmiennych tego typu danych są dostępne co najmniej jeden [niestandardowy wizualizator](../debugger/create-custom-visualizers-of-data.md) . Możesz użyć wizualizatora, aby wyświetlić informacje w bardziej zrozumiały, zwykle graficzny sposób.  
   
-#### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Aby wyświetlić zawartość zmiennej za pomocą wizualizatora  
+#### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Aby wyświetlić zawartość zmiennej przy użyciu wizualizatora  
   
-- Kliknij ikonę lupy, aby wybrać Wizualizator domyślna dla typu danych.  
+- Kliknij ikonę lupy, aby wybrać domyślny wizualizator dla typu danych.  
   
-     —lub—  
+     -lub-  
   
-     Wyskakujące strzałki obok visualizer, aby wybrać z listy odpowiedni wizualizatorów typu danych.  
+     Kliknij strzałkę podręczną obok wizualizatora, aby wybrać z listy odpowiednich wizualizatorów dla typu danych.  
   
-     Informacje wyświetlane wizualizatora.  
+     Wizualizator wyświetla informacje.  
   
 ## <a name="adding-information-to-a-watch-window"></a>Dodawanie informacji do okna czujki  
- Jeśli chcesz obejrzeć zmiennej w dalszym ciągu można dodać zmienną **Obejrzyj** poradzie dotyczącej danych w oknie Pomoc.  
+ Jeśli chcesz kontynuować obserwację zmiennej, możesz dodać zmienną do okna **czujki** z etykietki danych.  
   
-#### <a name="to-add-a-variable-to-the-watch-window"></a>Aby dodać zmienną w oknie czujki  
+#### <a name="to-add-a-variable-to-the-watch-window"></a>Aby dodać zmienną do okno wyrażeń kontrolnych  
   
 - Kliknij prawym przyciskiem myszy etykietki danych, a następnie kliknij przycisk **Dodaj czujkę**.  
   
-     Zmienna jest dodawany do **Obejrzyj** okna. Jeśli używasz wersji, która obsługuje wiele **Obejrzyj** systemu windows, zmienna jest dodawany do **Czujka 1.**  
+     Zmienna jest dodawana do okna **czujka** . Jeśli używasz wersji, która obsługuje wiele okien **czujki** , zmienna jest dodawana do **czujki 1.**  
   
-## <a name="importing-and-exporting-datatips"></a>Importowanie i eksportowanie etykietki danych  
- Możesz wyeksportować etykietek danych do pliku XML, które mogą być udostępniane przez współpracowników lub edytować za pomocą edytora tekstów.  
+## <a name="importing-and-exporting-datatips"></a>Importowanie i eksportowanie etykietek danych  
+ Możesz eksportować etykietki danych do pliku XML, który może być współużytkowany przez współpracownika lub edytowany przy użyciu edytora tekstu.  
   
-#### <a name="to-export-datatips"></a>Aby wyeksportować etykietek danych  
+#### <a name="to-export-datatips"></a>Aby wyeksportować etykietki danych  
   
-1. Polecenie menu Debuguj **Eksportuj etykietki danych**.  
+1. W menu Debugowanie kliknij polecenie **Eksportuj etykietki**danych.  
   
-     **Eksportuj etykietki danych** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Eksportuj etykietki** danych.  
   
-2. Przejdź do lokalizacji, w którym chcesz zapisać plik XML, wpisz nazwę dla pliku przy użyciu standardowych plikowych technik **nazwy pliku** , a następnie kliknij przycisk **OK**.  
+2. Użyj standardowych technik plików, aby przejść do lokalizacji, w której chcesz zapisać plik XML, wpisz nazwę pliku w polu **Nazwa pliku** , a następnie kliknij przycisk **OK**.  
   
-#### <a name="to-import-datatips"></a>Aby zaimportować etykietek danych  
+#### <a name="to-import-datatips"></a>Aby zaimportować etykietki danych  
   
-1. Polecenie menu Debuguj **Importuj etykietki danych**.  
+1. W menu Debugowanie kliknij polecenie **Importuj etykietki**danych.  
   
-     **Importuj etykietki danych** pojawi się okno dialogowe.  
+     Zostanie wyświetlone okno dialogowe **Importuj etykietki** danych.  
   
 2. Użyj okna dialogowego, aby znaleźć plik XML, który chcesz otworzyć, a następnie kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Instrukcje: Użyj okna dialogowego QuickWatch](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
- [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
- [Instrukcje: Zmień Format numeryczny debuger Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Instrukcje: korzystanie z okna dialogowego QuickWatch](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Tworzenie wizualizacji niestandardowych](../debugger/create-custom-visualizers-of-data.md)   
+ [Instrukcje: zmiana formatu liczbowego okien debugera](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

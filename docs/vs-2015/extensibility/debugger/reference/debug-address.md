@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS | Dokumentacja firmy Microsoft
+title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444959"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64822454"
 ---
-# <a name="debugaddress"></a>DEBUG_ADDRESS
+# <a name="debug_address"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Ta struktura reprezentuje adres.  
@@ -44,28 +44,28 @@ public struct DEBUG_ADDRESS {
 }  
 ```  
   
-## <a name="terms"></a>Warunki  
+## <a name="terms"></a>Terminologia  
  ulAppDomainID  
  Identyfikator procesu.  
   
  guidModule  
- Identyfikator GUID moduł, który zawiera ten adres.  
+ Identyfikator GUID modułu zawierającego ten adres.  
   
  tokClass  
- Token, który identyfikuje klasy lub typ tego adresu.  
+ Token identyfikujący klasę lub typ tego adresu.  
   
 > [!NOTE]
-> Ta wartość jest specyficzne dla dostawcy symboli i dlatego nie ma znaczenia ogólne innych niż jako identyfikator dla typu klasy.  
+> Ta wartość jest specyficzna dla dostawcy symboli, dlatego nie ma ogólnego znaczenia innego niż identyfikator dla typu klasy.  
   
- addr  
- A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, która zawiera sumę struktur, które opisują typy poszczególnych adresów. Wartość `addr`.`dwKind` pochodzi z [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) wyliczenia, w którym wyjaśniono, jak interpretować Unii.  
+ adresowe  
+ Struktura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , która zawiera Unię struktur, które opisują poszczególne typy adresów. Wartość `addr` .`dwKind` pochodzi z wyliczenia [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , w którym wyjaśniono, jak interpretować Unię.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywany do [getaddress —](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metodę, aby wypełnić.  
+ Ta struktura jest przenoszona do metody [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) do wypełnienia.  
   
- **Ostrzeżenie [C++ tylko]**  
+ **Ostrzeżenie [tylko C++]**  
   
- Jeśli `addr.dwKind` jest `ADDRESS_KIND_METADATA_LOCAL` i, jeśli `addr.addr.addrLocal.pLocal` nie jest wartością null, a następnie należy wywołać `Release` tokenu wskaźnika:  
+ Jeśli `addr.dwKind` jest `ADDRESS_KIND_METADATA_LOCAL` i jeśli `addr.addr.addrLocal.pLocal` nie jest wartością null, należy wywołać `Release` wskaźnik tokenu:  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
@@ -75,14 +75,14 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: sh.h  
+ Nagłówek: sh. h  
   
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop  
   
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
+ [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [GetAddress —](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

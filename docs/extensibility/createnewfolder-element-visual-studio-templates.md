@@ -1,5 +1,5 @@
 ---
-title: CreateNewFolder Element (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: CreateNewFolder —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739671"
 ---
-# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder element (szablony programu Visual Studio)
-Określa, czy katalog docelowy, w którym ma zostać utworzony projekt, ma zostać utworzony, nie istnieje. Jeśli katalog istnieje, można utworzyć nowy katalog dla projektu. To ustawienie jest zazwyczaj zastępowane `NewProjectRequiresNewFolder(VsTemplate)` przez`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`flagę rejestru ( ), że wszystkie typowe typy projektów używać do określenia, czy utworzyć nowy projekt w nowym katalogu.
+# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder —, element (szablony Visual Studio)
+Określa, czy należy sprawdzić, czy katalog docelowy, w którym ma zostać utworzony projekt, nie istnieje. Jeśli katalog istnieje, można utworzyć nowy katalog dla projektu. To ustawienie jest zwykle zastępowane przez `NewProjectRequiresNewFolder(VsTemplate)` flagę rejestru ( `HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>` ), którą używają wszystkie typy projektów wspólnych do określenia, czy utworzyć nowy projekt w nowym katalogu.
 
- \<> \<>> \<createnewfolder>
+ \<VSTemplate> \<TemplateData>
+ \<CreateNewFolder>
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,20 +50,20 @@ Określa, czy katalog docelowy, w którym ma zostać utworzony projekt, ma zosta
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być `true` albo `false`albo , wskazując, czy nowy folder kontenera powinny być tworzone, gdy projekt jest tworzony z szablonu.
+ Tekst musi być albo `true` lub `false` , wskazujący, czy nowy folder kontenera powinien zostać utworzony podczas tworzenia projektu na podstawie szablonu.
 
 ## <a name="remarks"></a>Uwagi
- `CreateNewFolder`jest elementem opcjonalnym. Wartością domyślną jest `true`.
+ `CreateNewFolder` jest elementem opcjonalnym. Wartość domyślna to `true`.
 
- Wartość określona `CreateNewFolder` w elemencie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest honorowana tylko wtedy, gdy podstawowy system projektu obsługuje go.
+ Wartość określona w `CreateNewFolder` elemencie jest uznawana tylko przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , jeśli jest obsługiwany przez system projektu podstawowego.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu określa, aby nie tworzyć nowego folderu, gdy projekt jest tworzony na podstawie szablonu.
+ Poniższy przykład kodu określa, że nie należy tworzyć nowego folderu podczas tworzenia projektu na podstawie szablonu.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"

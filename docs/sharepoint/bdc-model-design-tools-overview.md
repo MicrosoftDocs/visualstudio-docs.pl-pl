@@ -1,5 +1,5 @@
 ---
-title: Omówienie narzędzia projektowania modelu usługi łączności danych biznesowych | Dokumentacja firmy Microsoft
+title: Omówienie narzędzi projektowania modelu BDC | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,65 +24,65 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387728"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64827951"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Omówienie narzędzi projektowania modelu BDC
-  Można zaprojektować modelu łączności danych biznesowych (BDC) przy użyciu projektanta łączności danych biznesowych **szczegóły metody BDC** oknie i **Eksplorator BDC**.
+  Model łączności danych biznesowych (BDC) można zaprojektować za pomocą projektanta BDC, okna **Szczegóły metody BDC** i **Eksploratora usługi BDC**.
 
- **Eksplorator BDC** pozwala na przeglądanie modelu, model wyszukiwania i zdefiniuj deskryptory typu.
+ **Eksplorator usługi BDC** pozwala przeglądać model, przeszukiwać model i definiować deskryptory typów.
 
 ## <a name="bdc-designer"></a>Projektant BDC
- W Projektancie usługi łączności danych biznesowych umożliwia do definiowania jednostek w modelu oraz wizualnie rozmieszczanie ich wzajemne relacje ze sobą. Za pomocą projektanta łączności danych biznesowych do wykonywania następujących zadań:
+ Projektant BDC umożliwia zdefiniowanie jednostek w modelu i wizualne rozmieszczenie relacji ze sobą. Za pomocą projektanta usługi BDC można wykonywać następujące zadania:
 
-- Dodawanie jednostki do modelu.
+- Dodaj jednostki do modelu.
 
 - Usuń jednostki z modelu.
 
-- Definiowanie relacji między jednostkami.
+- Zdefiniuj relacje między jednostkami.
 
-  Aby otworzyć projektanta usługi łączności danych biznesowych, kliknij dwukrotnie plik modelu w swoim projekcie lub Otwórz menu skrótów dla pliku modelu, a następnie wybierz **Otwórz**. Dodawanie jednostki do modelu przez przeciąganie lub kopiowanie **jednostki** z **przybornika** do projektanta. Aby utworzyć skojarzenie między dwiema jednostkami, wybierz opcję **skojarzenia** w kontrolce **przybornika**, wybierz pierwszy obiekt, a następnie wybierz drugiej jednostki.
+  Aby otworzyć projektanta usługi BDC, kliknij dwukrotnie plik modelu w projekcie lub Otwórz menu skrótów dla pliku modelu, a następnie wybierz polecenie **Otwórz**. Dodaj jednostkę do modelu, przeciągając lub kopiując **jednostkę** z **przybornika** do projektanta. Aby utworzyć skojarzenie między dwiema jednostkami, wybierz kontrolkę **skojarzenie** w **przyborniku**, wybierz pierwszą jednostkę, a następnie wybierz drugą jednostkę.
 
 ## <a name="bdc-method-details-window"></a>Okno Szczegóły metody BDC
- Użyj **szczegóły metody BDC** okno, aby zdefiniować parametry, wystąpień i deskryptory metody filtrów.
+ Okno **Szczegóły metody BDC** służy do definiowania parametrów, wystąpień i deskryptorów filtrów metody.
 
- Można szybko wygenerować metody wyszukiwania, określonej metody wyszukiwania, twórcy, aktualizacji i Deleter w **szczegóły metody BDC** okna. Podczas generowania tych metod, program Visual Studio dodaje metadane, takie jak parametry, wystąpienia i deskryptory typu, do metody. Możesz zmodyfikować te metadane do spełnienia określonego scenariusza.
+ W oknie **Szczegóły metody BDC** można szybko wygenerować wyszukiwanie, określone metody wyszukiwania, twórców, Aktualizator i metod Delete. Podczas generowania tych metod program Visual Studio dodaje do metody metadane, takie jak parametry, wystąpienia i deskryptory typu. Możesz zmodyfikować te metadane, aby spełniały określony scenariusz.
 
- Aby otworzyć **szczegóły metody BDC** okna, na pasku menu wybierz **widoku** > **Windows inne** > **szczegóły metody BDC** .
+ Aby otworzyć okno **Szczegóły metody BDC** , na pasku menu wybierz opcję **Wyświetl**  >  **inne**  >  **Szczegóły metody BDC**systemu Windows.
 
- Aby wyświetlić metod w **szczegóły metody BDC** oknie Wybierz jednostkę w Projektancie usługi łączności danych biznesowych. Metody wybranej jednostki są wyświetlane w **szczegóły metody BDC** okna. Jeśli nie wybierzesz jednostkę w Projektancie usługi łączności danych biznesowych **szczegóły metody BDC** oknie zostaną wyświetlone żadne informacje.
+ Aby wyświetlić metody w oknie **Szczegóły metody BDC** , wybierz jednostkę w projektancie BDC. Metody wybranej jednostki pojawiają się w oknie **Szczegóły metody BDC** . Jeśli nie wybierzesz jednostki w Projektancie usługi BDC, w oknie **Szczegóły metody BDC** nie zostaną wyświetlone żadne informacje.
 
- Rozwiń lub Zwiń węzłów w **szczegóły metody BDC** okno, aby zdefiniować parametry, wystąpień i deskryptory filtrów. Użyj **Eksplorator BDC** do definiowania deskryptory typu.
+ Rozwiń lub Zwiń węzły w oknie **Szczegóły metody BDC** , aby zdefiniować parametry, wystąpienia i deskryptory filtrów. Zdefiniuj deskryptory typu za pomocą **Eksploratora łączności danych biznesowych** .
 
 ## <a name="bdc-explorer"></a>Eksplorator modelu BDC
- **Eksplorator BDC** Wyświetla elementy, które tworzą model. Aby otworzyć **Eksplorator BDC**, na pasku menu wybierz **widoku** > **Windows inne** > **Eksplorator BDC**. Aby przeglądać model, rozwiń węzły w **Eksplorator BDC**. Każdy węzeł reprezentuje element w pliku XML w pliku modelu.
+ W **Eksploratorze BDC** są wyświetlane elementy wchodzące w skład modelu. Aby otworzyć **Eksploratora usługi BDC**, na pasku menu wybierz pozycję **Wyświetl**  >  **inne**  >  **Eksplorator usługi Windows BDC**. Aby przeglądać model, rozwiń węzły w **Eksploratorze BDC**. Każdy węzeł reprezentuje element w kodzie XML pliku modelu.
 
- Podczas wybierania węzły w **Eksplorator BDC**, właściwości każdego węzła, który wybierzesz są wyświetlane w **właściwości** okna. Wiele z tych właściwości odnoszą się do atrybutów w pliku modelu. Możesz wyszukiwać modelu przy użyciu pola wyszukiwania w górnej części **Eksplorator BDC**.
-
-> [!NOTE]
-> **Eksplorator BDC** nie wyświetla identyfikatorów, właściwości niestandardowe, zlokalizowanych ciągów, grup skojarzeń, akcje, deskryptory filtrów, list kontroli akcji i wartości domyślne parametrów.
-
-### <a name="define-type-descriptors"></a>Zdefiniuj deskryptory typu
- Użyj **Eksplorator BDC** do definiowania deskryptory typu. Eksplorator BDC pozwala zdefiniować deskryptor typu jeden raz i ponownie użyć tego deskryptora typu, gdzie indziej w modelu. Aby to osiągnąć, skopiuj deskryptor typu i wkleić go do innych parametrów lub deskryptor typu.
+ Po wybraniu węzłów w **Eksploratorze BDC**właściwości każdego wybranego węzła są wyświetlane w oknie **Właściwości** . Wiele z tych właściwości odpowiada atrybutom w pliku modelu. Możesz przeszukiwać model przy użyciu pola wyszukiwania w górnej części okna **Eksplorator usługi BDC**.
 
 > [!NOTE]
-> Oryginalny deskryptor typu zmiany nie wpływają na kopie ten deskryptor typu.
+> **Eksplorator usługi BDC** nie wyświetla identyfikatorów, właściwości niestandardowych, zlokalizowanych ciągów, grup skojarzeń, akcji, deskryptorów filtrów, list kontrolek akcji i wartości domyślnych parametrów.
 
- Aby uzyskać więcej informacji, zobacz [jak: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+### <a name="define-type-descriptors"></a>Definiowanie deskryptorów typu
+ Zdefiniuj deskryptory typu za pomocą **Eksploratora łączności danych biznesowych** . Eksplorator usługi BDC umożliwia zdefiniowanie deskryptora typu jeden raz, a następnie ponowne użycie tego deskryptora typu w innym miejscu w modelu. Aby to osiągnąć, skopiuj deskryptor typu i wklej go do dowolnego innego parametru lub deskryptora typu.
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)
+> [!NOTE]
+> Zmiany w oryginalnym deskryptorze typu nie mają wpływu na kopie tego deskryptora typu.
+
+ Aby uzyskać więcej informacji, zobacz [How to: define The Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+
+## <a name="see-also"></a>Zobacz też
+- [Instrukcje: Tworzenie modelu usługi BDC](../sharepoint/how-to-create-a-bdc-model.md)
 - [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)
-- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Instrukcje: dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md)
-- [Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
-- [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
-- [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Instrukcje: Dodawanie metody usuwania](../sharepoint/how-to-add-a-deleter-method.md)
+- [Instrukcje: Dodawanie metody Aktualizator](../sharepoint/how-to-add-an-updater-method.md)
+- [Utwórz skojarzenie między jednostkami](../sharepoint/creating-an-association-between-entities.md)
+- [Przewodnik: Tworzenie listy zewnętrznej w programie SharePoint przy użyciu danych firmowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
+- [Integrowanie danych firmowych z programem SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Tworzenie modelu łączności danych firmy](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Projektowanie modelu łączności danych firmy](../sharepoint/designing-a-business-data-connectivity-model.md)

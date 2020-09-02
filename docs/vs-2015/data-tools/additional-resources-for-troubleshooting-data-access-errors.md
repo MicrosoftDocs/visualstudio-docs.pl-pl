@@ -232,10 +232,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: dcf8f67e240476ad75ab5b0b7b0c446be32ad816
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846520"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych

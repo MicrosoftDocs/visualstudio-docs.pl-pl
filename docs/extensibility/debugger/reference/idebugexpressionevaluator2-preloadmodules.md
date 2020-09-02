@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules | Dokumenty firmy Microsoft
+title: IDebugExpressionEvaluator2::P reloadModules | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729328"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Wstępnie ładuje moduły wyznaczone przez określonego dostawcę symboli.
+Wstępne ładowanie modułów wyznaczonych przez określonego dostawcę symboli.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,16 +40,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>Parametry
 `pSym`\
-[w] Dostawca symboli, dla którego moduły będą wstępnie załadowane.
+podczas Dostawca symboli, dla którego moduły zostaną wstępnie załadowane.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
+Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Ta opcjonalna metoda jest używana podczas dołączania procesu hostingu. To daje EE szansę na "rozgrzać" jako część dołączyć.
+Ta opcjonalna Metoda jest używana podczas dołączania do procesu hostingu. Daje to możliwość "rozgrzewania" w ramach dołączania.
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **ExpressionEvaluatorPackage** obiektu, który udostępnia [interfejs IDebugExpressionEvaluator2.](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+Poniższy przykład pokazuje, jak zaimplementować tę metodę dla obiektu **ExpressionEvaluatorPackage** , który uwidacznia Interfejs [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) .
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

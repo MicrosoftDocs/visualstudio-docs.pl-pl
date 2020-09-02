@@ -1,5 +1,5 @@
 ---
-title: Vcmessage — zadanie | Dokumentacja firmy Microsoft
+title: VCMessage — — zadanie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -21,28 +21,28 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 508d1fe33046f6051c9c5c1b8e54036e78ae7d2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193341"
 ---
 # <a name="vcmessage-task"></a>VCMessage — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dzienniki, ostrzeżenia i komunikaty o błędach podczas kompilacji.  
+Rejestruje ostrzeżenia i komunikaty o błędach podczas kompilacji.  
   
 ## <a name="remarks"></a>Uwagi  
- To zadanie ułatwia Implementowanie MSBuild dla języka Visual C++ i nie jest przeznaczona do wywoływania przez użytkownika. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
+ To zadanie ułatwia zaimplementowanie programu MSBuild dla Visual C++ i nie jest przeznaczone do wywoływania przez użytkownika. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
   
 ## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **vcmessage —** zadania.  
+ W poniższej tabeli opisano parametry zadania **VCMessage —** .  
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|**Argumenty**|Opcjonalnie **ciąg** parametru.<br /><br /> Rozdzielana średnikami lista wiadomości do wyświetlenia.|  
-|**Kod**|Wymagane **ciąg** parametru.<br /><br /> Numer błędu, który kwalifikuje wiadomości.|  
-|**Typ**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa rodzaj komunikatów do emitowania. Wybierz opcję `"Warning"` do emitowania komunikat ostrzegawczy lub `"Error"` do emitowania komunikat o błędzie.|  
+|**Argumenty**|Opcjonalny parametr **ciągu** .<br /><br /> Rozdzielana średnikami lista komunikatów do wyświetlenia.|  
+|**Kod**|Wymagany parametr **ciągu** .<br /><br /> Numer błędu, który uprawnia do wiadomości.|  
+|**Typ**|Opcjonalny parametr **ciągu** .<br /><br /> Określa rodzaj komunikatu do emisji. Określ albo `"Warning"` , aby emitować komunikat ostrzegawczy, albo `"Error"` Aby emitować komunikat o błędzie.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

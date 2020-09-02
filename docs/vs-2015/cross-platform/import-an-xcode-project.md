@@ -1,5 +1,5 @@
 ---
-title: Importowanie projektu XCode | Dokumentacja firmy Microsoft
+title: Importowanie projektu XCode | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
@@ -8,70 +8,70 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150983"
 ---
 # <a name="import-an-xcode-project"></a>Importowanie projektu XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Visual C++ for Cross-Platform Mobile Development obsługuje przenoszenie projektów XCode do Visual Studio, w którym można tworzyć biblioteki Międzyplatformowe i udostępnianie kodu z innymi projektami. Importuj z XCode Kreator upraszcza proces Importowanie projektów i dzielenie się kodu C++ w XCode elementy docelowe dla używany jako biblioteka statyczna lub udostępnionego projektu kodu. Można zarządzać kodem specyficzne dla systemu iOS w programie Visual Studio i nadal korzystania ze środowiska XCode do scenorysów i kompilacji. Aby uzyskać informacje o tym, jak łatwo można przejść kodu i z powrotem między Visual Studio i XCode Zobacz przenoszenia zmian między XCode i Visual Studio.  
+Microsoft Visual C++ dla wieloplatformowego opracowywania aplikacji mobilnych obejmuje obsługę przenoszenia projektów XCode do programu Visual Studio, w którym można tworzyć biblioteki Międzyplatformowe i udostępniać kod innym projektom. Kreator importu z XCode upraszcza proces importowania projektów i dzielenia kodu C++ w celu użycia jako biblioteki statycznej lub projektu kodu udostępnionego. Kod specyficzny dla systemu iOS można zarządzać w programie Visual Studio i nadal używać XCode do tworzenia scenorysów i kompilacji. Aby uzyskać informacje na temat łatwego przenoszenia kodu między programem Visual Studio i XCode, zobacz Przenoszenie zmian między XCode i Visual Studio.  
   
-## <a name="using-the-import-from-xcode-wizard"></a>Za pomocą Kreatora Importuj z XCode  
- W tym temacie dowiesz się, jak przenieść projekt XCode do programu Visual Studio, aby móc korzystać z udostępniania kodu i rozwiązań dla wielu platform. Jako warunek wstępny należy sparować komputer Mac w programie Visual Studio, aby można było importować, eksportować i skompiluj projekt. Aby uzyskać instrukcje dotyczące sposobu konfigurowania parowania, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Należy również Udostępnij swój projekt XCode za pośrednictwem sieci lub przenieś go do Twojego komputera programu Visual Studio Importuj z XCode kreatora.  
+## <a name="using-the-import-from-xcode-wizard"></a>Korzystanie z Kreatora importowania z XCode  
+ W tym temacie pokazano, jak przenieść projekt XCode do programu Visual Studio, aby skorzystać z udostępniania kodu i rozwiązań dla wielu platform. Jako warunek wstępny należy sparować komputer Mac z programem Visual Studio, aby można było importować, eksportować i kompilować projekt. Aby uzyskać instrukcje dotyczące sposobu konfigurowania parowania, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Musisz również udostępnić projekt XCode za pośrednictwem sieci lub przenieść go na komputer z programem Visual Studio, aby użyć Kreatora importowania z XCode.  
   
 #### <a name="import-from-xcode"></a>Importuj z XCode  
   
-1. Na **pliku** menu, wybierz **New**, **importu**, **Importuj z XCode**. Spowoduje to uruchomienie **Importuj z XCode** Kreator okna dialogowego.  
+1. W menu **plik** wybierz polecenie **Nowy**, **Importuj**, **Importuj z Xcode**. Spowoduje to uruchomienie kreatora **importowania z Xcode** .  
   
     ![Wybierz projekt docelowy XCode do zaimportowania](../cross-platform/media/cppmdd-u2-importxcode-choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
-2. W **wybierz projekt** okienku wybierz przycisk Przeglądaj, aby wybrać plik .pbxproj XCode. Przejdź do pliku projektu w **plik projektu XCode wybierz** okno dialogowe, a następnie wybierz **Otwórz**.  
+2. W okienku **Wybierz projekt** wybierz przycisk Przeglądaj, aby wybrać plik Xcode. PBXPROJ. Przejdź do pliku projektu w oknie dialogowym **Wybierz plik projektu Xcode** , a następnie wybierz **Otwórz**.  
   
-    ![Wybierz plik projektu w oknie dialogowym plik projektu Xcode wybierz](../cross-platform/media/cppmdd-u2-importxcode-browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
+    ![Wybierz plik projektu w oknie dialogowym Wybierz plik projektu Xcode](../cross-platform/media/cppmdd-u2-importxcode-browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
-    W Kreatorze importowania danych z narzędzia XCode, wybierz **dalej**.  
+    W Kreatorze importowania z XCode wybierz przycisk **dalej**.  
   
-3. W **elementy docelowe miejsca docelowego** okienku wybierać elementy docelowe projektu XCode, należy zaimportować do projektów programu Visual Studio. Cele w środowisku XCode są podobne do projektów programu Visual Studio; Większość to zbiór kod i zasoby, które generują dane binarne. Importuj z XCode Kreator może składać się importowanie elementów docelowych, które generują dane binarne, ale nie biblioteki statycznej, jako elementy docelowe miejsca docelowego. Elementy docelowe biblioteki statycznej XCode podlegają następnego kroku.  
+3. W okienku **docelowe cele** wybierz cele z projektu Xcode, aby zaimportować do projektów programu Visual Studio. Elementy docelowe XCode są podobne do projektów programu Visual Studio. Większość to zbiór kodu i zasobów, które tworzą dane binarne. Kreator importu z XCode umożliwia tylko import obiektów docelowych, które tworzą dane binarne, ale nie jako biblioteki statycznej, jako docelowe obiekty docelowe. Elementy docelowe biblioteki statycznej XCode są podmiotem następnego kroku.  
   
-    ![Importuj z XCode kreatora elementy docelowe miejsca docelowego okienko](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
+    ![Zaimportuj z okienka obiektów docelowych kreatora XCode](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
   
-    Dla każdego obiektu docelowego, które wybrano w **elementy docelowe do zaimportowania**, Kreator automatycznie wykrywa plików kodu C++, które może zostać podzielony na projekt biblioteki statycznej oddzielne i umieszcza je w **elementy projektu C++** sekcji. Inne kod i zasoby są pozostawiane w **elementy projektu XCode** sekcji. Te stają się odrębnych bibliotek statycznych i projektów aplikacji w programie Visual Studio po zakończeniu działania kreatora proces importowania. Domyślnie obiekty docelowe test i struktury jednostki nie są dzielone na oddzielnych projektów przez kreatora.  
+    W przypadku każdego elementu docelowego wybranego w **celu zaimportowania**Kreator automatycznie wykrywa pliki kodu C++, które mogą zostać podzielone na osobny projekt biblioteki statycznej, i umieszcza je w sekcji **elementy projektu c++** . Inny kod i zasoby są pozostawione w sekcji **elementy projektu Xcode** . Stają się one oddzielnymi projektami biblioteki statycznej i aplikacji w programie Visual Studio, gdy Kreator ukończy proces importowania. Domyślnie testy jednostkowe i cele struktury nie są podzielone na oddzielne projekty przez kreatora.  
   
-    Aby zmienić, pliki, które znajdują się w każdym projekcie, górę i w dół przycisków. Gdy jesteś zadowolony z plikami w każdym projekcie, wybierz pozycję **dalej** aby kontynuować.  
+    Aby zmienić pliki w każdym projekcie, użyj przycisków w górę i w dół. Gdy pliki w każdym projekcie są zadowalające, wybierz przycisk **dalej** , aby kontynuować.  
   
-4. W **elementy docelowe biblioteki** okienku wybierz, które biblioteki statycznej jest przeznaczony dla z projektu XCode, należy zaimportować do projektów programu Visual Studio. W tym okienku możesz wybrać pliki, które są umieszczane w projektu współużytkowanego kodu i które są umieszczone w projekcie biblioteki statycznej. W każdym z elementów docelowych w **elementy docelowe do zaimportowania** listy, możesz kontrolować, które pliki są umieszczane w **elementy projektu współużytkowanego kodu** i **elementy projektu biblioteki statycznej** przy użyciu przyciski w górę i w dół.  
+4. W okienku **obiekty docelowe biblioteki** wybierz elementy docelowe biblioteki statycznej z projektu Xcode do zaimportowania do projektów programu Visual Studio. W tym okienku można wybrać, które pliki są umieszczane w projekcie kodu współdzielonego, które są umieszczane w projekcie biblioteki statycznej. W każdym elemencie docelowym listy elementy **docelowe do zaimportowania** można kontrolować, które pliki są umieszczane w **elementach projektu udostępnionego kodu** i **elementy projektu biblioteki statycznej** przy użyciu przycisków w górę i w dół.  
   
-    ![Importuj z okienka elementy docelowe biblioteki XCode](../cross-platform/media/cppmdd-u2-importxcode-library.jpg "CPPMDD_U2_ImportXCode_Library")  
+    ![Importuj z okienka elementów docelowych biblioteki XCode](../cross-platform/media/cppmdd-u2-importxcode-library.jpg "CPPMDD_U2_ImportXCode_Library")  
   
-    Projekt współużytkowanego kodu jest sposób udostępniania zbiór plików kodu źródłowego między projektami w programie Visual Studio. Kod jest kompilowany jako część projektu, który zawiera go, a nie jako swój własny projekt. Ponieważ projekty zawierające kod udostępniony może mieć różne architektury i konfiguracje, jest to najlepszy sposób zgłaszania pojedynczego projektu, który zawiera kod, który może zostać utworzony dla wielu różnych platformach.  
+    Współużytkowany projekt kodu jest sposobem udostępniania zestawu plików kodu źródłowego między projektami w programie Visual Studio. Kod jest tworzony w ramach projektu, który zawiera go, a nie jako projekt własny. Ponieważ projekty, które zawierają udostępniony kod, mogą mieć różne architektury i konfiguracje, jest to najlepszy sposób zapewnienia pojedynczego projektu, który zawiera kod, który może być zbudowany dla wielu rodzajów platform.  
   
-    Gdy jesteś zadowolony z plikami w każdym projekcie, wybierz pozycję **dalej** aby kontynuować.  
+    Gdy pliki w każdym projekcie są zadowalające, wybierz przycisk **dalej** , aby kontynuować.  
   
-5. **Globalne właściwości** okienku można ustawić ścieżkę wyszukiwania struktury i ścieżka wyszukiwania nagłówków dołączania dla wszystkich projektów systemu iOS w programie Visual Studio. Visual Studio używa tych ścieżek do przeglądania kodu źródłowego, jak i dla technologii IntelliSense. Tych ścieżek globalne są przydatne podczas tworzenia projektów systemu iOS, które korzystają ze wspólnego zestawu nagłówków i struktur.  
+5. Okienko **Właściwości globalne** służy do ustawiania ścieżki wyszukiwania struktury i ścieżki wyszukiwania nagłówka include dla wszystkich projektów systemu iOS w programie Visual Studio. Program Visual Studio używa tych ścieżek do przeglądania kodu źródłowego i funkcji IntelliSense. Te ścieżki globalne są przydatne podczas tworzenia projektów systemu iOS, które korzystają ze wspólnego zestawu nagłówków i struktur.  
   
-    ![Importuj z XCode globalne właściwości w okienku](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
+    ![Importuj z okienka Właściwości globalne XCode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Można również ustawić te ścieżki globalnych w programie Visual Studio w **opcje** okna dialogowego. Aby znaleźć je na **narzędzia** menu, wybierz opcję **opcje**. W **opcje** okna dialogowego, rozwiń węzeł **Międzyplatformowe**, **C++** , **iOS**, **globalne właściwości**.  
+    Te ścieżki globalne można także ustawić w programie Visual Studio w oknie dialogowym **Opcje** . Aby je znaleźć, w menu **Narzędzia** wybierz polecenie **Opcje**. W oknie dialogowym **Opcje** rozwiń pozycję **Międzyplatformowe**, **C++**, **iOS**, **Właściwości globalne**.  
   
-    Wybierz **dalej** aby kontynuować.  
+    Wybierz pozycję **Dalej**, aby kontynuować.  
   
-6. **Struktur** okienko służy do konfigurowania ścieżki używany przez program Visual Studio do przeglądania i IntelliSense dla Twojego projektu. Ścieżki muszą być dostępne dla programu Visual Studio dla każdej struktury odwołań w projekcie XCode. Sprawdzanie przez Kreator dostępności ramach odwołuje się w projektach środowiska XCode i wyświetla informację, czy program Visual Studio można znaleźć w ramach. Wszystkie ścieżki, które zostały już skonfigurowane w globalnych właściwości powinny zostać wykryte przez program Visual Studio. Wyjątki są wymienione na liście środowisk. Dla każdej struktury, znakiem X na liście należy podać ścieżkę dostępne komputera dla programu Visual Studio można znaleźć w ramach. Możesz użyć przycisku Przeglądaj [...] do użycia **wybierz Folder** okno dialogowe, aby znaleźć ścieżki. Ścieżka framework może być w lokalnej kopii lub w udziale dostępne w sieci na komputerze Mac.  
+6. Okienko **struktury** służy do konfigurowania ścieżek używanych przez program Visual Studio do przeglądania i IntelliSense dla projektu. Ścieżki muszą być dostępne dla programu Visual Studio dla każdej struktury, do której odwołuje się projekt XCode. Kreator sprawdza odwołania do struktury w projektach XCode i wyświetla, czy program Visual Studio może znaleźć strukturę. Wszystkie ścieżki, które zostały już skonfigurowane we właściwościach globalnych, powinny być odnajdywane przez program Visual Studio. Wyjątki są wymienione na liście struktury. Dla każdej struktury wymienionej przy użyciu X podaj ścieżkę dostępu do komputera dla programu Visual Studio, aby znaleźć strukturę. Aby znaleźć ścieżkę, można użyć przycisku przeglądania [...]. **Select Folder** Ścieżką struktury może być kopia lokalna lub udział dostępny w sieci na komputerze Mac.  
   
-    ![Importuj z XCode struktur w okienku](../cross-platform/media/cppmdd-u2-importxcode-frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
+    ![Importuj z okienka XCode Frameworks](../cross-platform/media/cppmdd-u2-importxcode-frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
   
-    Wybierz **dalej** aby kontynuować.  
+    Wybierz pozycję **Dalej**, aby kontynuować.  
   
-7. **Ustawienia projektu** okienko pozwala zmienić platformę i zawierać nagłówek ustawienia ścieżki wyszukiwania dla każdego projektu, Kreator tworzy. Użyj w tym okienku można ustawić ścieżki specyficzne dla projektu, które różnią się od ustawień globalnych.  
+7. W okienku **Ustawienia projektu** można zmienić strukturę i uwzględnić ustawienia ścieżki wyszukiwania nagłówka dla każdego projektu tworzonego przez kreatora. To okienko służy do ustawiania ścieżek specyficznych dla projektu, które różnią się od ustawień globalnych.  
   
-    Aby ustawić ścieżkę do określonego projektu w **projekt docelowy** listę rozwijaną, wybierz plik projektu, a następnie ustaw wartości w **ścieżkę wyszukiwania struktury** i **obejmują ścieżka wyszukiwania nagłówków** kontrolki. Możesz użyć przycisku Przeglądaj [...] obok każdej kontrolki do użycia **wybierz Folder** okno dialogowe, aby znaleźć ścieżki.  
+    Aby ustawić ścieżkę dla określonego projektu, na liście rozwijanej **projekt docelowy** wybierz plik projektu, a następnie ustaw wartości w **ścieżce wyszukiwania struktury** i **Uwzględnij kontrolki ścieżki wyszukiwania nagłówka** . Możesz użyć przycisku przeglądania [...] obok każdej kontrolki, aby użyć okna dialogowego **Wybierz folder** , aby znaleźć ścieżkę.  
   
-    ![Importuj z okienka projekty XCode](../cross-platform/media/cppmdd-u2-importxcode-projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
+    ![Importuj z okienka projektów XCode](../cross-platform/media/cppmdd-u2-importxcode-projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
   
-    Jeśli nie zdalnego Mac ma skojarzone z tym Komputerem w programie Visual Studio, konfiguracji, wyświetlany jest link maszyny zdalnej. Aby uzyskać instrukcje dotyczące sposobu konfigurowania parowania, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
+    Jeśli żaden zdalny komputer Mac nie został sparowany z tym komputerem w programie Visual Studio, zostanie wyświetlony link Konfiguruj maszynę zdalną. Aby uzyskać instrukcje dotyczące sposobu konfigurowania parowania, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
-    Aby zaimportować projekt XCode przy użyciu ustawień kreatora, wybierz opcję **zaimportować**.  
+    Aby zaimportować projekt XCode za pomocą ustawień kreatora, wybierz pozycję **Importuj**.  
   
-   Importuj z XCode Kreator tworzy projektów w Visual Studio, które odpowiadają wybrane elementy projektu XCode. Kod, który mogą być współużytkowane z innych projektów w języku C++ zostanie podzielona na oddzielne wspólny kod i projekty biblioteki statycznej. Pozostały kod jest umieszczany w systemie iOS projekty biblioteki i aplikacji, które mogą być wbudowane w zdalnie przez program Visual Studio. Aby uzyskać więcej informacji na temat przenoszenia kodu między Visual Studio i XCode, zobacz [synchronizacja zmian między XCode i Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).
+   Kreator importu z XCode tworzy projekty w programie Visual Studio odpowiadające wybranym obiektom docelowym projektu XCode. Kod, który może być współużytkowany z innymi projektami C++, jest podzielony na osobny kod współużytkowany i statyczne projekty bibliotek. Pozostały kod jest umieszczany w projektach biblioteki i aplikacji systemu iOS, które mogą być kompilowane zdalnie przez program Visual Studio. Aby uzyskać więcej informacji na temat przesuwania kodu między programem Visual Studio i XCode, zobacz [Synchronizacja zmian między Xcode i Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).

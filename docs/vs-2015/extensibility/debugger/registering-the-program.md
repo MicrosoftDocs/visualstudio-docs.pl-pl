@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie programu | Dokumentacja firmy Microsoft
+title: Rejestrowanie programu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,35 +12,35 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 31d03f12a31953cbc0e20d06820dd49b5f9827e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441970"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64824547"
 ---
 # <a name="registering-the-program"></a>Rejestrowanie programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Po aparat debugowania uzyskała portu, reprezentowane przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu, następnym krokiem podczas włączania debugowania programu jest zarejestrowanie go za pomocą portu. Po zarejestrowaniu programu jest dostępna do debugowania za pomocą jednej z następujących sposobów:  
+Po uzyskaniu przez aparat debugowania portu reprezentowanego przez interfejs [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , następnym krokiem w celu debugowania programu jest zarejestrowanie go z portem. Po zarejestrowaniu program jest dostępny do debugowania przy użyciu jednej z następujących metod:  
   
-- Proces dołączania, która pozwala debugerowi na przejęcie kontroli debugowania z działającej aplikacji.  
+- Proces dołączania, który umożliwia debugerowi uzyskanie pełnej kontroli debugowania działającej aplikacji.  
   
-- Just-in-time (JIT) debugowania, który pozwala na debugowanie po fakcie program, który działa niezależnie od debugera. Architektura środowiska wykonawczego przechwytuje usterki, Debuger jest powiadamiany przed systemu operacyjnego lub środowisko uruchomieniowe zwalnia pamięć i zasoby programu łagodne.  
+- Debugowanie just-in-Time (JIT), które umożliwia debugowanie po wystąpieniu programu uruchamianego niezależnie od debugera. Gdy architektura środowiska uruchomieniowego przechwytuje błąd, debuger zostanie powiadomiony, zanim system operacyjny lub środowisko uruchomieniowe zwolni pamięć i zasoby programu powodującego błąd.  
   
-## <a name="registering-procedure"></a>Rejestrowanie procedury  
+## <a name="registering-procedure"></a>Procedura rejestrowania  
   
 #### <a name="to-register-your-program"></a>Aby zarejestrować program  
   
-1. Wywołaj [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metody implementowane przez port.  
+1. Wywołaj metodę [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) zaimplementowaną przez port.  
   
-     `IDebugPortNotify2::AddProgramNode` wymaga aby wskazywał [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu.  
+     `IDebugPortNotify2::AddProgramNode` wymaga wskaźnika do interfejsu [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .  
   
-     Zazwyczaj podczas ładowania programu systemie operacyjnym lub w środowisku uruchomieniowym tworzy węzeł program. Jeśli aparat debugowania (DE), zostanie poproszony o załadować program DE tworzy i rejestruje węzła programu.  
+     Zwykle, gdy system operacyjny lub środowisko uruchomieniowe ładuje program, tworzy węzeł Program. Jeśli aparat debugowania (DE) zostanie poproszony o załadowanie programu, program utworzy i zarejestruje węzeł programu.  
   
-     Aparat debugowania, uruchamiając program i rejestrując ją za pomocą portu można znaleźć w poniższym przykładzie.  
+     Poniższy przykład pokazuje aparat debugowania uruchamiający program i rejestrując go z portem.  
   
     > [!NOTE]
-    > Nie jest jedynym sposobem, aby uruchomić i wznowić procesu; to przede wszystkim na przykład rejestrowanie programu z portem.  
+    > Nie jest to jedyny sposób uruchomienia i wznowienia procesu; jest to głównie przykład rejestracji programu z portem.  
   
     ```cpp#  
     // This is an IDebugEngineLaunch2 method.  

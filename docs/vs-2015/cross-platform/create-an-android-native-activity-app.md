@@ -1,5 +1,5 @@
 ---
-title: Tworzenie aplikacji Android Native Activity | Dokumentacja firmy Microsoft
+title: Tworzenie aplikacji dla systemu Android Native Activity | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -12,74 +12,74 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151038"
 ---
 # <a name="create-an-android-native-activity-app"></a>Tworzenie aplikacji systemu Android działania natywnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas instalowania Visual C++ for Cross-Platform Mobile Development opcji programu Visual Studio 2015 może służyć do tworzenia w pełni funkcjonalne aplikacje Android Native Activity. Android Kit rozwoju natywnego (NDK) to zestaw narzędzi, która pozwala na implementowanie większość aplikacji systemu Android przy użyciu czystego kodu C/C++. Kodu Java interfejsem JNI działa jako pośredniczącego umożliwia kodu C/C++ do interakcji z systemem Android. Android NDK wprowadzono możliwość tworzenia aplikacji Native Activity z systemem Android 9 poziom interfejsu API. Kod natywny działania jest popularna do tworzenia gier i graficzne intensywnie korzystających z aplikacji, które używają aparatu Unreal Engine lub OpenGL. Ten temat przeprowadzi Cię przez tworzenie prostej aplikacji Native Activity korzystający ze specyfikacji OpenGL. Dodatkowe tematy przeprowadzenie edycji, kompilowania, debugowania i wdrażania działania natywnego kodu cyklu życia dla deweloperów.  
+Po zainstalowaniu opcji Visual C++ dla opracowywania aplikacji mobilnych na wiele platform program Visual Studio 2015 może służyć do tworzenia w pełni funkcjonalnej natywnej aplikacji działania systemu Android. Zestaw Android Native Development Kit (NDK) stanowi zestaw narzędzi umożliwiający wdrożenie większości aplikacji systemu Android przy użyciu czystego kodu C/C++. Kod JNI języka Java działa jako Glue, aby umożliwić współdziałanie kodu C/C++ z systemem Android. System Android NDK wprowadził możliwość tworzenia natywnych aplikacji aktywności z użyciem interfejsu API systemu Android Level 9. Natywny kod aktywności jest popularny do tworzenia gier i intensywnie korzystających z grafiki aplikacji wykorzystujących aparat Unreal lub OpenGL. Ten temat przeprowadzi Cię przez proces tworzenia prostej natywnej aplikacji, która korzysta z technologii OpenGL. Dodatkowe tematy przeprowadzą Cię przez cykl życia deweloperów w zakresie edytowania, kompilowania, debugowania i wdrażania natywnego kodu aktywności.  
   
  [Wymagania](#req)   
- [Utwórz nowy projekt działania natywnego](#Create)   
- [Kompilowanie i uruchamianie aplikacji Android Native Activity domyślna](#BuildHello)  
+ [Tworzenie nowego projektu działania natywnego](#Create)   
+ [Kompilowanie i uruchamianie domyślnej aplikacji dla systemu Android Native Activity](#BuildHello)  
   
-## <a name="req"></a> Wymagania  
- Przed utworzeniem aplikacji Android Native Activity, upewnij się, że zostały spełnione wszystkie wymagania systemowe i zainstalowane opcji programowania aplikacji mobilnych Visual C++ w programie Visual Studio 2015. Aby uzyskać więcej informacji, zobacz [zainstalować Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Upewnij się, że wymagane narzędzia innych firm i zestawy SDK są uwzględniane w instalacji programu i czy jest zainstalowany program Microsoft Visual Studio Emulator for Android.  
+## <a name="requirements"></a><a name="req"></a> Wymagania  
+ Aby można było utworzyć aplikację dla działania w trybie macierzystym systemu Android, należy upewnić się, że zostały spełnione wszystkie wymagania systemowe i zainstalowano opcję Visual C++ Mobile Development w programie Visual Studio 2015. Aby uzyskać więcej informacji, zobacz [Install Visual C++ dla opracowywania aplikacji mobilnych na wiele platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Upewnij się, że wymagane narzędzia i zestawy SDK innych firm są zawarte w instalacji oraz że Microsoft Visual Studio Emulator for Android jest zainstalowana.  
   
-## <a name="Create"></a> Utwórz nowy projekt działania natywnego  
- W tym samouczku zostanie najpierw utwórz nowy projekt dla systemu Android działania natywnego i następnie kompilowanie i uruchamianie aplikacji domyślnej w Visual Studio Emulator dla systemu Android.  
+## <a name="create-a-new-native-activity-project"></a><a name="Create"></a> Tworzenie nowego projektu działania natywnego  
+ W tym samouczku najpierw utworzysz nowy projekt aktywności systemu Android Native, a następnie kompilujesz i uruchomisz aplikację domyślną w emulatorze programu Visual Studio dla systemu Android.  
   
 #### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1. Otwórz program Visual Studio. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
+1. Otwórz program Visual Studio. Na pasku menu wybierz **plik**, **Nowy**, **projekt**.  
   
-2. W **nowy projekt** dialogowego **szablony**, wybierz **Visual C++** , **Międzyplatformowe**, a następnie wybierz  **Aplikacja klasy Nativeactivity (Android)** szablonu.  
+2. W oknie dialogowym **Nowy projekt** w obszarze **szablony**wybierz pozycję **Visual C++**, **Międzyplatformowy**, a następnie wybierz szablon **aplikacja native-activity (Android)** .  
   
-3. Nadaj aplikacji nazwę, takich jak `MyAndroidApp`, a następnie wybierz **OK**.  
+3. Nadaj aplikacji nazwę, na przykład `MyAndroidApp` , a następnie wybierz **przycisk OK**.  
   
-    ![Utwórz projekt działania natywnego](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Tworzenie projektu działania natywnego](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-    Visual Studio tworzy nowego rozwiązania i otwiera w Eksploratorze rozwiązań.  
+    Program Visual Studio tworzy nowe rozwiązanie i otwiera Eksplorator rozwiązań.  
   
-    ![Natywny projekt działania w Eksploratorze rozwiązań](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Natywny projekt aktywności w Eksplorator rozwiązań](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
    Nowe rozwiązanie aplikacji Android Native Activity obejmuje dwa projekty:  
   
-- **MyAndroidApp.NativeActivity** zawiera odwołania i kodu pośredniczącego aplikacji do uruchamiania jako działania natywnego w systemie Android. Implementacja punkty wejścia z kodu pośredniczącego znajdują się w main.cpp. Prekompilowane nagłówki są w pliku pch.h. Ten projekt aplikacji Native Activity jest kompilowany do pliku SO biblioteki udostępnionej, który zostaje pobrana przez projekt pakietu.  
+- **MyAndroidApp. Native** zawiera kod odwołań i przyklejania dla aplikacji do uruchomienia jako działanie natywne w systemie Android. Implementacja punktów wejścia z kodu Glue znajduje się w Main. cpp. Wstępnie skompilowane nagłówki znajdują się w pliku PCH. h. Ten projekt aplikacji natywnej aktywności jest kompilowany do biblioteki udostępnionej. plik, który jest wybierany przez projekt pakietu.  
   
-- **MyAndroidApp.Packaging** tworzy plik apk do wdrożenia na urządzeniu z systemem Android lub w emulatorze. Zawiera zasoby i pliku AndroidManifest.xml, można ustawić właściwości manifestu. Zawiera ona także build.xml pliku, który kontroluje proces kompilacji narzędzia Ant. Ustawiana jest jako projekt startowy domyślnie, tak że można wdrożyć i uruchomić bezpośrednio z programu Visual Studio.  
+- **MyAndroidApp. pakowanie** tworzy plik. apk do wdrożenia na urządzeniu z systemem Android lub w emulatorze. Zawiera ona zasoby i AndroidManifest.xml plik, w którym są ustawiane właściwości manifestu. Zawiera również plik build.xml, który kontroluje proces kompilacji ANT. Domyślnie jest ustawiony jako projekt startowy, aby można go było wdrożyć i uruchomić bezpośrednio z programu Visual Studio.  
   
-## <a name="BuildHello"></a> Kompilowanie i uruchamianie aplikacji Android Native Activity domyślna  
- Kompilowanie i uruchamianie aplikacji wygenerowanych przez szablon, aby zweryfikować swoje instalacji i konfiguracji. Aby uzyskać ten wstępny test, uruchom aplikację na jeden z profilów urządzeń instalowane przez Visual Studio Emulator for Android. Jeśli chcesz testować swoją aplikację na innym elementem docelowym można ładować emulatora docelowego, lub podłącz urządzenie do komputera.  
+## <a name="build-and-run-the-default-android-native-activity-app"></a><a name="BuildHello"></a> Kompilowanie i uruchamianie domyślnej aplikacji dla systemu Android Native Activity  
+ Skompiluj i uruchom aplikację wygenerowaną przez szablon w celu zweryfikowania instalacji i konfiguracji. Na potrzeby tego testu wstępnego Uruchom aplikację na jednym z profili urządzeń zainstalowanych przez emulator programu Visual Studio dla systemu Android. Jeśli wolisz przetestować aplikację w innym miejscu docelowym, możesz załadować emulator docelowy lub podłączyć urządzenie do komputera.  
   
-#### <a name="to-build-and-run-the-default-native-activity-app"></a>Aby skompilować i uruchomić aplikację Native Activity domyślne  
+#### <a name="to-build-and-run-the-default-native-activity-app"></a>Aby skompilować i uruchomić domyślną aplikację natywnego działania  
   
-1. Jeśli nie została jeszcze wybrana, wybierz opcję **x86** z **platformy rozwiązania** listy rozwijanej.  
+1. Jeśli nie została jeszcze wybrana, wybierz pozycję **x86** z listy rozwijanej **platformy rozwiązań** .  
   
-     ![Wybór listy rozwijanej x86 platformy rozwiązania](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
+     ![Lista rozwijana platformy rozwiązań x86 — wybór](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
-     Jeśli **platformy rozwiązania** lista nie jest wyświetlany, wybierz polecenie **platformy rozwiązania** z **Dodaj lub usuń przyciski** , a następnie wybierz platformy.  
+     Jeśli lista **platform rozwiązań** nie jest wyświetlana, wybierz pozycję **platformy rozwiązań** z listy **Dodaj/Usuń przyciski** , a następnie wybierz swoją platformę.  
   
-2. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+2. Na pasku menu wybierz **kompilacja**, **Kompiluj rozwiązanie**.  
   
-     W oknie danych wyjściowych wyświetla dane wyjściowe z procesu kompilacji na dwa projekty w rozwiązaniu.  
+     W oknie danych wyjściowych zostaną wyświetlone dane wyjściowe procesu kompilacji dla dwóch projektów w rozwiązaniu.  
   
-3. Wybierz jedną z emulatora VS profile telefon z systemem Android (x86) jako urządzenie docelowe wdrożenia.  
+3. Wybierz jeden z profilów systemu Android (x86) dla programu VS jako cel wdrożenia.  
   
-     Jeśli masz zainstalowany innych emulatorów lub podłączone urządzenie z systemem Android, można je na liście rozwijanej docelowych wdrożenia.  
+     Jeśli zainstalowano Inne emulatory lub podłączone urządzenie z systemem Android, można je wybrać z listy rozwijanej cel wdrożenia.  
   
-4. Naciśnij klawisz F5, aby rozpocząć debugowanie lub Shift + F5, aby uruchomić bez debugowania.  
+4. Naciśnij klawisz F5, aby rozpocząć debugowanie, lub klawisze Shift + F5, aby rozpocząć bez debugowania.  
   
-     Oto, jak domyślna aplikacja wygląda w emulatora programu Visual Studio dla systemu Android.  
+     Oto, jak wygląda aplikacja domyślna w emulatorze programu Visual Studio dla systemu Android.  
   
-     ![Emulator z tą aplikacją](../cross-platform/media/cppmdd-emulator-running-app.PNG "CppMDD_Emulator_Running_App")  
+     ![Emulator z uruchomioną aplikacją](../cross-platform/media/cppmdd-emulator-running-app.PNG "CppMDD_Emulator_Running_App")  
   
-     Program Visual Studio uruchamia emulatora, który zajmuje kilka sekund, aby załadować i wdrażanie kodu. Po uruchomieniu aplikacji, możesz ustawić punkty przerwania i użyć debugera, aby przejść przez kod, Sprawdź zmienne lokalne i obejrzyj wartości.  
+     Program Visual Studio uruchamia emulator, który zajmuje kilka sekund, aby załadować i wdrożyć kod. Po rozpoczęciu pracy aplikacji można ustawić punkty przerwania i użyć debugera do przechodzenia przez kod, badania wartości lokalnych i obserwacji.  
   
 5. Naciśnij klawisze Shift + F5, aby zatrzymać debugowanie.  
   
-     Emulator jest oddzielny proces, który będzie nadal działać. Można edytować, skompiluj i wdróż swój kod wielokrotnie do tego samego emulatora.
+     Emulator to oddzielny proces, który jest nadal uruchamiany. Można edytować, kompilować i wdrażać kod wielokrotnie w tym samym emulatorze.

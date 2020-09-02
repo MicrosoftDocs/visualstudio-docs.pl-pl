@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerName | Microsoft Docs
+title: 'IDebugCoreServer3:: GetServerName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 886cfbf95216064764e9f5b3e48d092d3fecc047
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445264"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64838148"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,16 +40,16 @@ int GetServerName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrName`  
- [out] Zwraca nazwę serwera.  
+ określoną Zwraca nazwę serwera.  
   
 > [!NOTE]
-> Obiekt wywołujący jest odpowiedzialny za zwalnianie ciągu.  
+> Obiekt wywołujący jest odpowiedzialny za zwolnienie ciągu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Nazwa serwera przyjazna, można wywołać [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) metody.  
+ W przypadku przyjaznej nazwy serwera Wywołaj metodę [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

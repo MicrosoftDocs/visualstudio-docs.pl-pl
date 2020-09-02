@@ -17,14 +17,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329956"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-Narzędzie wiersza polecenia VSPerfReport służy do tworzenia raportów przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plików danych profilowania narzędzia profilowania. Domyślny format raportu to. plik *CSV* .
+Narzędzie wiersza polecenia VSPerfReport służy do tworzenia raportów przy użyciu  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plików danych profilowania narzędzia profilowania. Domyślny format raportu to. plik *CSV* .
 
  VSPerfReport używa następującej składni:
 
@@ -40,7 +40,7 @@ VSPerfReport [/U] vspfilename [/options]
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ```
 
- `vspfilename1 and vspfilename2`musi być prawidłowy. *VSP* lub. pliki *vsps* .
+ `vspfilename1 and vspfilename2` musi być prawidłowy. *VSP* lub. pliki *vsps* .
 
 ## <a name="symbol-files"></a>Pliki symboli
  Aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wierszy, VSPerfReport wymaga dostępu do symbolu (. PDB) pliki profilowanych składników i plików symboli systemu Windows. Aby uzyskać więcej informacji, zobacz [How to: Określanie lokalizacji plików symboli w wierszu polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).
@@ -50,8 +50,8 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Opcje|Opis|
 |-------------|-----------------|
-|**'T**|Dane wyjściowe raportu i przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode. Musi być pierwszą określoną opcją.|
-|**Podsumowanie:**[*typy*]|Tworzy jeden lub więcej typów raportów.<br /><br /> -   `All`— generowane są wszystkie typy raportów.<br />-   `CallerCallee`-relacje nadrzędny/podrzędny między funkcjami.<br />-   `Function`-Functions o nazwie.<br />-   `CallTree`-Hierarchia funkcji o nazwie.<br />-   `Counter`— wszystkie znaczniki wraz z wartościami liczników wydajności systemu Windows.<br />-   `Ip`-instrukcje profilowane.<br />-   `Life`— okres istnienia przydzielonych obiektów (dostępny podczas zbierania danych alokacji).<br />-   `Line`dane profilu wiersza kodu źródłowego.<br />-   `Header`-Raport zawiera informacje nagłówka pliku.<br />-   `Mark`wszystkie znaczniki.<br />-   `Module`— profilowano moduły.<br />-   `Process`-przetwarza profilowane.<br />-   `Thread`-wątki profilowane.<br />-   `Type`-przydzielono typy.<br />-   `Contention`— rywalizacje o zasoby.<br />-   `RuleWarnings`-Problemy z regułą wydajności<br />-   `ETW`— wszystkie zdarzenia śledzenia zdarzeń systemu Windows (ETW) zebrane w przebiegu profilowania. Plik danych ETL musi znajdować się w jego oryginalnej lokalizacji lub w katalogu zawierającym plik VSP lub vsps.|
+|**U**|Dane wyjściowe raportu i przekierowane dane wyjściowe konsoli są zapisywane w formacie Unicode. Musi być pierwszą określoną opcją.|
+|**Podsumowanie:**[*typy*]|Tworzy jeden lub więcej typów raportów.<br /><br /> -   `All` — generowane są wszystkie typy raportów.<br />-   `CallerCallee` -relacje nadrzędny/podrzędny między funkcjami.<br />-   `Function` -Functions o nazwie.<br />-   `CallTree` -Hierarchia funkcji o nazwie.<br />-   `Counter` — wszystkie znaczniki wraz z wartościami liczników wydajności systemu Windows.<br />-   `Ip` -instrukcje profilowane.<br />-   `Life` — okres istnienia przydzielonych obiektów (dostępny podczas zbierania danych alokacji).<br />-   `Line` dane profilu wiersza kodu źródłowego.<br />-   `Header` -Raport zawiera informacje nagłówka pliku.<br />-   `Mark` wszystkie znaczniki.<br />-   `Module` — profilowano moduły.<br />-   `Process` -przetwarza profilowane.<br />-   `Thread` -wątki profilowane.<br />-   `Type` -przydzielono typy.<br />-   `Contention` — rywalizacje o zasoby.<br />-   `RuleWarnings` -Problemy z regułą wydajności<br />-   `ETW` — wszystkie zdarzenia śledzenia zdarzeń systemu Windows (ETW) zebrane w przebiegu profilowania. Plik danych ETL musi znajdować się w jego oryginalnej lokalizacji lub w katalogu zawierającym plik VSP lub vsps.|
 |**Dokument**|Raport wyjściowy w formacie XML.|
 |**CallTrace**|Tworzy listę wpisów funkcji i wyjść, zdarzeń ETW i znaczników.|
 |**ClearPackedSymbols**|Usuwa poprzednio osadzone symbole z pliku danych profilera. Uruchom to polecenie przed uruchomieniem PackSymbols po raz drugi.|
@@ -70,7 +70,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Opcje|Opis|
 |-------------|-----------------|
-|**JustMyCode**[**:**[ `caller` ] [, `callee` ]]|Pokaż tylko wywołania funkcji aplikacji użytkownika; Ukryj wywołania systemowe.<br /><br /> -Brak parametrów-Ukryj wszystkie funkcje systemowe.<br />-   `caller`-Pokaż jeden poziom funkcji systemowych, które wywołują funkcje aplikacji.<br />-   `callee`-Pokaż jeden poziom funkcji systemowych, które są wywoływane przez funkcje aplikacji użytkownika.|
+|**JustMyCode**[**:**[ `caller` ] [, `callee` ]]|Pokaż tylko wywołania funkcji aplikacji użytkownika; Ukryj wywołania systemowe.<br /><br /> -Brak parametrów-Ukryj wszystkie funkcje systemowe.<br />-   `caller` -Pokaż jeden poziom funkcji systemowych, które wywołują funkcje aplikacji.<br />-   `callee` -Pokaż jeden poziom funkcji systemowych, które są wywoływane przez funkcje aplikacji użytkownika.|
 |**StartTime:**[*Value*]|Pokaż tylko dane zebrane po wartości (w milisekundach).|
 |**Endtime:**[*wartość*]|Pokaż tylko dane zebrane przed wartością (w milisekundach).|
 |**FilterFile:**`VSPFFile`|Określa lokalizację pliku filtru, który został wygenerowany z okna raportu wydajności programu Visual Studio.|

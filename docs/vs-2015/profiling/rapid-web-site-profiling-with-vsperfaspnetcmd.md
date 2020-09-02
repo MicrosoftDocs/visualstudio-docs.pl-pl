@@ -1,5 +1,5 @@
 ---
-title: Szybkie witryny sieci Web profilowanie za pomocą polecenia VSPerfASPNETCmd | Dokumentacja firmy Microsoft
+title: Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,90 +13,90 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438902"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64835303"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**VSPerfASPNETCmd** narzędzia wiersza polecenia umożliwia łatwe profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia Opcje są mniejsze, żadne zmienne środowiskowe muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Za pomocą **VSPerfASPNETCmd** jest preferowana metoda profilowania za pomocą Autonomiczny profiler. Aby uzyskać więcej informacji, zobacz [jak: Instalowanie autonomiczny Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
+Narzędzie wiersza polecenia **VSPerfASPNETCmd** umożliwia łatwe profilowanie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. W porównaniu do narzędzia wiersza polecenia [VSPerfCmd](../profiling/vsperfcmd.md) opcje są skracane, nie trzeba ustawiać żadnych zmiennych środowiskowych ani ponownie uruchamiać komputera. Użycie **VSPerfASPNETCmd** jest preferowaną metodą profilowania przy użyciu autonomicznego profilera. Aby uzyskać więcej informacji, zobacz [How to: Install](../profiling/how-to-install-the-stand-alone-profiler.md)The samodzielne Profiler.  
   
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje ze sklepu Windows wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
- W niektórych scenariuszach, takich jak zbieranie danych współbieżności lub wstrzymywanie i wznawianie profilowania, przy użyciu **VSPerfCmd** jest preferowana metoda profilowania.  
+ W niektórych scenariuszach, takich jak zbieranie danych współbieżności lub wstrzymywanie i wznawianie profilowania, użycie **VSPerfCmd** jest preferowaną metodą profilowania.  
   
 > [!NOTE]
-> Narzędzia wiersza poleceń dla narzędzi profilowania znajdują się w podkatalogu \team tools\performance Tools [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] katalogu instalacyjnego. Na komputerach 64-bitowy narzędzie VSPerfASPNETCmd znajduje się w katalogu narzędzi tools\performance 32-bitowych. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Narzędzia wiersza polecenia narzędzia profilowania znajdują się w podkatalogu \Team Tools\Performance Tools [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] katalogu instalacyjnego. Na komputerach z 64 bitowym, użyj narzędzia VSPerfASPNETCmd znajdującego się w katalogu 32 bitowym \Team Tools\Performance Tools. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
 ## <a name="profiling-an-aspnet-application"></a>Profilowanie aplikacji ASP.NET  
- Do profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web, wpisz jedno z poleceń opisanych w poniższych sekcjach. Witryna sieci Web jest uruchamiana, a program profiler uruchamia zbieranie danych. Wykonywanie aplikacji, a następnie zamknij przeglądarkę. Aby zatrzymać profilowanie, naciśnij klawisz Enter w oknie wiersza polecenia.  
+ Aby profilować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikację sieci Web, wpisz jedno z poleceń opisanych w poniższych sekcjach. Witryna sieci Web zostanie uruchomiona, a Profiler zacznie zbierać dane. Ćwiczenie aplikacji, a następnie zamykanie przeglądarki. Aby zatrzymać profilowanie, naciśnij klawisz ENTER w oknie wiersza polecenia.  
   
 > [!NOTE]
-> Domyślnie, wiersz polecenia nie może zwracać po **vsperfaspnetcmd** polecenia. Możesz użyć **flagi/nowait** opcję, aby wymusić wiersza polecenia do zwrócenia. Zobacz [przy użyciu opcji flagi/nowait](#UsingNoWait).  
+> Domyślnie wiersz polecenia nie zwraca po **VSPerfASPNETCmd** polecenia. Można użyć opcji **flagi/nowait** , aby wymusić zwrócenie wiersza polecenia. Zobacz [Korzystanie z opcji flagi/nowait](#UsingNoWait).  
   
-## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>W celu zbierania statystyk aplikacji przy użyciu metody próbkowania  
- Próbkowanie to domyślna metoda profilowania **VSPerfASPNETCmd** narzędzie i nie musi być określona w wierszu polecenia. Następujące polecenie w wierszu służy do zbierania statystyk aplikacji z określonej aplikacji sieci Web:  
+## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Aby zebrać statystyki aplikacji za pomocą metody próbkowania  
+ Próbkowanie jest domyślną metodą profilowania narzędzia **VSPerfASPNETCmd** i nie musi być określona w wierszu polecenia. Poniższy wiersz polecenia zbiera statystyki aplikacji z określonej aplikacji sieci Web:  
   
- **vsperfaspnetcmd**  *websiteUrl*  
+ **VSPerfASPNETCmd**  *websiteUrl*  
   
-## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Do zbierania danych o chronometrażu przy użyciu metody Instrumentacji  
- Użyj następującego polecenia, aby zebrać szczegółowe dane czasowe z dynamicznie skompilowanej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web:  
+## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Zbieranie szczegółowych danych o chronometrażu przy użyciu metody instrumentacji  
+ Następujący wiersz polecenia służy do zbierania szczegółowych danych o chronometrażu z dynamicznie skompilowanej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web:  
   
- **vsperfaspnetcmd /trace**  *websiteUrl*  
+ **VSPerfASPNETCmd/Trace**  *websiteUrl*  
   
- Jeśli chcesz przeprowadzić profilowanie plików dll statycznie skompilowanej w aplikacji sieci Web, muszą instrumentować plików za pomocą [VSInstr](../profiling/vsinstr.md) narzędzie wiersza polecenia. Polecenie vsperfaspnetcmd/trace będzie zawierać dane z instrumentowanych plików.  
+ Jeśli chcesz profilować pliki dll skompilowane statycznie w aplikacji sieci Web, musisz Instrumentacja plików przy użyciu narzędzia wiersza polecenia [VSInstr](../profiling/vsinstr.md) . Polecenie VSPerfASPNETCmd/Trace będzie zawierać dane z Instrumentacji plików.  
   
-## <a name="to-collect-net-memory-data"></a>Do zbierania danych pamięci .NET  
- **/Memory** opcji zbiera dane dotyczące alokacji obiektów w pamięci platformy .NET i zbierać dane dotyczące okresu istnienia tych obiektów. Zbieranie danych alokacji to domyślny tryb **/Memory** danych opcji i nie musi być określona w wierszu polecenia.  
+## <a name="to-collect-net-memory-data"></a>Zbieranie danych pamięci .NET  
+ Opcja **/Memory** zbiera dane dotyczące alokacji obiektów w pamięci .NET i może zbierać dane dotyczące okresu istnienia tych obiektów. Zbieranie danych alokacji jest domyślnym trybem opcji danych **/Memory** i nie musi być określone w wierszu polecenia.  
   
- **vsperfaspnetcmd /memory** *websiteUrl*  
+ **VSPerfASPNETCmd/Memory** *websiteUrl*  
   
- Użyj **okres istnienia** parametru dodatkowo do zebrania danych o okresie istnienia obiektu z danymi alokacji:  
+ Użyj parametru **Lifetime** , aby zebrać dane okresu istnienia obiektu oprócz danych alokacji:  
   
- **vsperfaspnetcmd /memory:lifetime** *podanym adresem URL*  
+ **VSPerfASPNETCmd/Memory: okres istnienia** *websiteUrl*  
   
- Można również użyć **/Trace** opcję, aby uwzględnić szczegółowe informacje o czasie przy użyciu danych pamięci .NET:  
+ Można również użyć opcji **/Trace** , aby dołączyć szczegółowe informacje o chronometrażu do danych pamięci .NET:  
   
- **polecenie vsperfaspnetcmd/Memory**[ **: okres istnienia**]   **/trace**`websiteUrl`  
+ **VSPerfASPNETCmd/Memory**[**: Lifetime**] **/Trace**`websiteUrl`  
   
-## <a name="to-collect-tier-interaction-data"></a>Do zbierania danych o interakcji między warstwami  
+## <a name="to-collect-tier-interaction-data"></a>Aby zbierać dane interakcji warstwy  
   
 > [!WARNING]
-> Interakcje między warstwami (TIP) danych profilowania można zbierać w programach [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], lub [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Natomiast obejrzeć takie dane można wyświetlić tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> Dane profilowania interakcji między warstwami (TIP) można zbierać przy użyciu [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] , [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] lub [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] . Jednak dane profilowania interakcji między warstwami mogą być wyświetlane tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] .  
 >   
-> Aby zebrać dane Porada w systemie Windows 8 lub Windows Server 2012, należy użyć Instrumentacji ( **/trace**) opcji.  
+> Aby zebrać dane TIP w systemie Windows 8 lub Windows Server 2012, należy użyć opcji Instrumentacja (**/Trace**).  
   
- Aby zebrać dane interakcji między warstwami przy użyciu dane próbkowania:  
+ Aby zebrać dane dotyczące interakcji warstwy z danymi próbkowania:  
   
- **vsperfaspnetcmd /tip** `websiteUrl`  
+ **VSPerfASPNETCmd/TIP**`websiteUrl`  
   
- Aby zebrać dane interakcji między warstwami przy użyciu danych Instrumentacji:  
+ Aby zbierać dane dotyczące interakcji warstwy z danymi Instrumentacji:  
   
- **vsperfaspnetcmd /trace /tip** *websiteUrl*  
+ **VSPerfASPNETCmd/Trace/TIP** *websiteUrl*  
   
- Aby zebrać dane interakcji między warstwami przy użyciu danych pamięci .NET:  
+ Aby zbierać dane interakcji warstwy z danymi pamięci platformy .NET:  
   
- **polecenie vsperfaspnetcmd/Memory**[ **: okres istnienia**] **/Porada**_podanym adresem URL_  
+ **VSPerfASPNETCmd/Memory**[**: Lifetime**] **/TIP**_websiteUrl_  
   
-## <a name="UsingNoWait"></a> Przy użyciu opcji flagi/nowait  
- Domyślnie, wiersz polecenia nie może zwracać po **vsperfaspnetcmd** polecenia. Następująca opcja składni umożliwia wymuszenie wiersza polecenia, aby zwrócić. W oknie wiersza polecenia można wykonywać inne operacje. Aby zakończyć profilowania, należy użyć **/shutdown** opcję w oddzielnym **vsperfaspnetcmd** polecenia.  
+## <a name="using-the-nowait-option"></a><a name="UsingNoWait"></a> Korzystanie z opcji flagi/nowait  
+ Domyślnie wiersz polecenia nie zwraca po **VSPerfASPNETCmd** polecenia. Możesz użyć następującej opcji składni, aby wymusić zwrócenie wiersza polecenia. Następnie można wykonywać inne operacje w oknie wiersza polecenia. Aby zakończyć profilowanie, użyj opcji **/Shutdown** w osobnym **VSPerfASPNETCmd** polecenia.  
   
  Aby rozpocząć profilowanie:  
   
- **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
+ **VSPerfASPNETCmd** [*/Options*] **flagi/nowait**_websiteUrl_  
   
- Aby zakończyć profilowania:  
+ Aby zakończyć profilowanie:  
   
- **vsperfaspnetcmd /shutdown** *websiteUrl*  
+ **VSPerfASPNETCmd/Shutdown** *websiteUrl*  
   
-## <a name="additional-options"></a>Dodatkowe opcje  
- Można dodać dowolne z następujących opcji na polecenia wymienione wcześniej w tej sekcji, z wyjątkiem **polecenie vsperfaspnetcmd/shutdown** polecenia.  
+## <a name="additional-options"></a>Opcje dodatkowe  
+ Do poleceń wymienionych wcześniej w tej sekcji można dodać dowolną z następujących opcji, z wyjątkiem **VSPerfASPNETCmd/Shutdown** polecenia.  
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|**/ Dane wyjściowe:** `VspFile`|Domyślnie plik profilowania (.vsp) danych jest tworzony w bieżącym katalogu z nazwą pliku **pliku PerformanceReport.vsp**. Użyj opcji/OUTPUT, aby określić inną lokalizację i nazwę pliku.|  
-|**/PackSymbols:Off**|Domyślnie VsPerfASPNETCmd osadza symbole (funkcja i nazwy parametrów itp.) w pliku Vsp. Osadzanie symbole można wprowadzać bardzo duży plik danych profilowania. Jeśli masz dostęp do plików .pdb, które zawierają symbole podczas analizowania danych, użyj packsymbols: Wyłącz możliwość wyłączenia osadzania symboli.|
+|**/Output:**`VspFile`|Domyślnie plik danych profilowania (. vsp) jest tworzony w bieżącym katalogu przy użyciu nazwy pliku **PerformanceReport. vsp**. Użyj opcji/Output, aby określić inną lokalizację, nazwę pliku lub oba te elementy.|  
+|**/PackSymbols: wyłączone**|Domyślnie VsPerfASPNETCmd osadza symbole (nazwy funkcji i parametrów itp.) w pliku VSP. Osadzenie symboli może sprawiać, że plik danych profilowania jest bardzo duży. Jeśli będziesz mieć dostęp do plików. pdb, które zawierają symbole podczas analizowania danych, użyj opcji/packsymbols: off, aby wyłączyć osadzanie symboli.|

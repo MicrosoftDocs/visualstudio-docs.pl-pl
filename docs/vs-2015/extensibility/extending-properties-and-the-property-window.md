@@ -1,5 +1,5 @@
 ---
-title: Rozszerzanie właściwości i okno właściwości | Dokumentacja firmy Microsoft
+title: Rozszerzanie właściwości i okna właściwości | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,22 +15,22 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c9ec498aca375cb5c63a574ebc72ab04219eb047
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204480"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Rozszerzanie właściwości i okno właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Właściwości** okno służy do wyświetlania i edytowania właściwości czasu projektowania oraz zdarzeń zaznaczonych obiektów.  
+Okno **Właściwości** służy do wyświetlania i edytowania właściwości czasu projektowania oraz zdarzeń wybranych obiektów.  
   
- Po wybraniu obiektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], publiczne właściwości tego obiektu są wyświetlane w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [Omówienie okna właściwości](../extensibility/internals/properties-window-overview.md).  
+ Po wybraniu obiektu w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] właściwości publiczne tego obiektu są wyświetlane w oknie **Właściwości** . Aby uzyskać więcej informacji, zobacz [okno właściwości przegląd](../extensibility/internals/properties-window-overview.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Uwidacznianie właściwości w oknie właściwości](../extensibility/exposing-properties-to-the-properties-window.md)  
- W tym artykule wyjaśniono, jak masz niestandardowe właściwości wyświetlane w oknie dialogowym właściwości.  
+ Wyjaśnia, w jaki sposób można wyświetlać właściwości niestandardowe w okno Właściwości.  
   
  [Pobieranie właściwości projektu](../extensibility/getting-project-properties.md)  
- Wyjaśnia, jak można pobrać właściwości projektu.
+ Wyjaśnia, jak uzyskać właściwości projektu.

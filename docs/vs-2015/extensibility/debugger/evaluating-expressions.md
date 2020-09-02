@@ -1,5 +1,5 @@
 ---
-title: Ocenianie wyrażeń | Dokumentacja firmy Microsoft
+title: Ocenianie wyrażeń | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,27 +13,27 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caff42c2e203151c6bab7d50b41744c2469ab3c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151620"
 ---
 # <a name="evaluating-expressions"></a>Ocenianie wyrażeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Wyrażenia są tworzone na podstawie ciągi przekazywane z automatyczne, wyrażenie kontrolne, QuickWatch lub bezpośredniego systemu windows. Gdy wyrażenie jest obliczane, generuje drukowalnych ciąg, który zawiera nazwę i typ zmiennej lub argumentu i jego wartość. Ten ciąg jest wyświetlany w odpowiednie okno środowiska IDE.  
+Wyrażenia są tworzone na podstawie ciągów przewidzianych z okna autostarts, Watch, QuickWatch lub Immediate. Gdy wyrażenie jest oceniane, generuje ciąg drukowalny, który zawiera nazwę i typ zmiennej lub argumentu i jego wartości. Ten ciąg jest wyświetlany w odpowiednim oknie środowiska IDE.  
   
 ## <a name="implementation"></a>Implementacja  
- Wyrażenia są obliczane po zatrzymaniu w punkcie przerwania programu. Wyrażenia jest reprezentowany przez [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfejs, który reprezentuje przeanalizowany wyrażenie, które jest gotowy do powiązania i oceniania w ramach oceny wyrażenia danego kontekstu. Ramka stosu Określa kontekst oceny wyrażeń dostarczający aparat debugowania (DE) przez zaimplementowanie [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfejsu.  
+ Wyrażenia są oceniane, gdy program został zatrzymany w punkcie przerwania. Samo wyrażenie jest reprezentowane przez interfejs [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , który reprezentuje wyrażenie analizowane, które jest gotowe do powiązania i oceny w ramach danego kontekstu oceny wyrażenia. Ramka stosu określa kontekst oceny wyrażenia, który aparat debugowania (DE) dostarcza przez implementację interfejsu [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .  
   
- Podany ciąg użytkownika i [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfejsu, aparat debugowania (DE) można uzyskać [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfejsu, przekazując ciąg użytkownika [ IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) metody. Zawracany interfejs IDebugExpression2 zawiera wyrażenie przeanalizowany, gotowy do oceny.  
+ Po otrzymaniu ciągu użytkownika i interfejsu [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) aparat debugowania (de) może uzyskać Interfejs [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , przekazując ciąg użytkownika do metody [IDebugExpressionContext2::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) . Zwrócony interfejs IDebugExpression2 zawiera wyrażenie analizowane gotowe do oceny.  
   
- Za pomocą `IDebugExpression2` interfejsu, DE można uzyskać wartość wyrażenia przez Obliczanie wyrażenia synchroniczna lub asynchroniczna, za pomocą [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Tę wartość, wraz z nazwą i typ zmiennej lub argumentu, są wysyłane do IDE do wyświetlenia. Wartość, nazwę i typ są reprezentowane przez [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfejsu.  
+ Z `IDebugExpression2` interfejsem, de może uzyskać wartość wyrażenia za pośrednictwem synchronicznej lub asynchronicznej oceny wyrażenia, przy użyciu [IDebugExpression2:: EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Ta wartość oraz nazwa i typ zmiennej lub argumentu są wysyłane do IDE w celu wyświetlenia. Wartość, nazwa i typ są reprezentowane przez interfejs [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) .  
   
- Do włączenia oceny wyrażenia, musi implementować DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) i [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfejsów. Ocena synchroniczne i asynchroniczne, wymagają wprowadzenia [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metody.  
+ Aby włączyć szacowanie wyrażeń, element DE musi implementować interfejsy [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) i [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Obliczenia synchroniczne i asynchroniczne wymagają implementacji metody [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ramki stosu](../../extensibility/debugger/stack-frames.md)   
- [Kontekst oceny wyrażeń](../../extensibility/debugger/expression-evaluation-context.md)   
+ [Kontekst oceny wyrażenia](../../extensibility/debugger/expression-evaluation-context.md)   
  [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

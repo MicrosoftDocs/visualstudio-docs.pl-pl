@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849333"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Instrukcje: Tworzenie warunku reguły deklaratywnej (starsza wersja)
-W tym temacie opisano, jak zadeklarować warunek reguły przy użyciu starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)], która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+W tym temacie opisano, jak zadeklarować warunek reguły przy użyciu starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] , która jest przeznaczona dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  Instrukcja warunku daje w wyniku **wartość true** lub **false**. Warunek reguły deklaratywnej jest instrukcją warunkową, która jest tworzona przy użyciu [okna dialogowego Edytor warunku reguły (starsza wersja)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) i przechowywana jako plik XML z przepływem pracy. Może obejmować predykaty, które porównują stan przepływu pracy i wartość logiczną algebry, która łączy wiele predykatów.
 
@@ -33,7 +33,7 @@ W tym temacie opisano, jak zadeklarować warunek reguły przy użyciu starszej [
 
 - [Działanie ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
+- [While](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
 - [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 

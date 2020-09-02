@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330063"
 ---
 # <a name="cvisenabled-function"></a>Cvisenabled —, funkcja
@@ -38,11 +38,11 @@ HRESULT CvIsEnabledEx(
 ```
 
 #### <a name="parameters"></a>Parametry
- `category`Kategorii.
+ `category` Kategorii.
 
- `level`Poziom ważności.
+ `level` Poziom ważności.
 
- `pProvider`Prawidłowy obiekt dostawcy. Nie może mieć wartości NULL.
+ `pProvider` Prawidłowy obiekt dostawcy. Nie może mieć wartości NULL.
 
 ## <a name="return-value"></a>Wartość zwracana
  S_OK, jeśli dostawca jest obecnie włączony. S_FALSE, jeśli dostawca jest obecnie wyłączony. Kod błędu w przypadku wystąpienia błędów. Aby sprawdzić warunek błędu, użyj makra zakończonego niepowodzeniem, a następnie sprawdź, czy S_OK/S_FALSE.

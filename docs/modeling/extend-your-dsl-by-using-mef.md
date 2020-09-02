@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547644"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
@@ -26,7 +26,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
 1. Utwórz nowy folder o nazwie **MefExtension** w projekcie **DslPackage** . Dodaj do niego następujące pliki:
 
-     Nazwa pliku:`CommandExtensionVSCT.tt`
+     Nazwa pliku: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > Ustaw identyfikator GUID w tym pliku na taki sam jak identyfikator GUID CommandSetId zdefiniowany w DslPackage\GeneratedCode\Constants.tt
@@ -42,21 +42,21 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    Nazwa pliku:`CommandExtensionRegistrar.tt`
+    Nazwa pliku: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    Nazwa pliku:`ValidationExtensionEnablement.tt`
+    Nazwa pliku: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    Nazwa pliku:`ValidationExtensionRegistrar.tt`
+    Nazwa pliku: `ValidationExtensionRegistrar.tt`
 
     W przypadku dodania tego pliku należy włączyć walidację w DSL przy użyciu co najmniej jednego z przełączników w **EditorValidation** w Eksploratorze DSL.
 
@@ -65,7 +65,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    Nazwa pliku:`PackageExtensionEnablement.tt`
+    Nazwa pliku: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
 2. Utwórz nowy folder o nazwie **MefExtension** w projekcie **DSL** . Dodaj do niego następujące pliki:
 
-     Nazwa pliku:`DesignerExtensionMetaDataAttribute.tt`
+     Nazwa pliku: `DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    Nazwa pliku:`GestureExtensionEnablement.tt`
+    Nazwa pliku: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    Nazwa pliku:`GestureExtensionController.tt`
+    Nazwa pliku: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -177,7 +177,7 @@ Można pisać rozszerzenia w projekcie kodu zestawu oddzielnego rozwiązania do 
 
 Aby napisać polecenie menu, zdefiniuj klasę implementującą <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> i prefiks klasy z atrybutem, który jest zdefiniowany w DSL o nazwie *YourDsl* `CommandExtension` . Można napisać więcej niż jedną klasę poleceń menu.
 
-`QueryStatus()`jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram. Powinien on sprawdzić bieżące zaznaczenie i ustawić, `command.Enabled` Aby wskazać, kiedy polecenie ma zastosowanie.
+`QueryStatus()` jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram. Powinien on sprawdzić bieżące zaznaczenie i ustawić, `command.Enabled` Aby wskazać, kiedy polecenie ma zastosowanie.
 
 ```csharp
 using System.ComponentModel.Composition;

@@ -1,5 +1,5 @@
 ---
-title: Element CustomParameters (szablony programu Visual Studio) | Dokumenty firmy Microsoft
+title: CustomParameters —, element (szablony Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739412"
 ---
-# <a name="customparameters-element-visual-studio-templates"></a>Element CustomParameters (szablony programu Visual Studio)
-Grupuje parametry niestandardowe, które mają być przekazywane do kreatora szablonów, gdy kreator wykonuje zastępowanie parametrów.
+# <a name="customparameters-element-visual-studio-templates"></a>CustomParameters —, element (szablony Visual Studio)
+Grupuje parametry niestandardowe, które mają być przenoszone do Kreatora szablonów, gdy Kreator przejdzie do parametrów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,7 +42,7 @@ Grupuje parametry niestandardowe, które mają być przekazywane do kreatora sza
 
 |Element|Opis|
 |-------------|-----------------|
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Zawiera niestandardową nazwę parametru i wartość do użycia podczas tworzenia projektu lub elementu na podstawie szablonu. Może istnieć zero `CustomParameter` lub `CustomParameters` więcej elementów w elemencie.|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Zawiera niestandardową nazwę i wartość parametru, która ma być używana podczas tworzenia projektu lub elementu z szablonu. Element może mieć zero lub więcej `CustomParameter` elementów `CustomParameters` .|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -53,7 +53,7 @@ Grupuje parametry niestandardowe, które mają być przekazywane do kreatora sza
 ## <a name="remarks"></a>Uwagi
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano, jak używać kilku parametrów niestandardowych w szablonie. Gdy projekt lub element jest tworzony na podstawie szablonu z `$color1$` `$color2$` następującymi parametrami niestandardowymi, wszystkie wystąpienia i w plikach szablonów zostaną zastąpione `Red` odpowiednio i `Blue`, odpowiednio.
+ Poniższy przykład pokazuje, jak używać kilku parametrów niestandardowych w szablonie. Gdy projekt lub element jest tworzony na podstawie szablonu o następujących parametrach niestandardowych, wszystkie wystąpienia `$color1$` i `$color2$` w plikach szablonów zostaną zastąpione `Red` `Blue` odpowiednio i.
 
 ```
 <CustomParameters>
@@ -63,6 +63,6 @@ Grupuje parametry niestandardowe, które mają być przekazywane do kreatora sza
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Element CustomParameter (szablony programu Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)
+- [CustomParameter, element (szablony Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)
 - [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

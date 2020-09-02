@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Przełączanie na inny wątek w trakcie debugowania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: przełączanie do innego wątku podczas debugowania | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,32 +17,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176509"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>Instrukcje: Przełączanie na inny wątek w trakcie debugowania
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>Porady: przełączanie na inny wątek w trakcie debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Podczas debugowania aplikacji wielowątkowych, można użyć jednego z kilku metod, aby przełączyć kontekst z wątku, która odbywała się wcześniej Praca z do innego wątku.  
+Podczas debugowania aplikacji wielowątkowej można użyć dowolnej z kilku metod, aby przełączyć kontekst z wątku, z którym pracujesz w innym wątku.  
   
-### <a name="to-switch-to-any-thread-that-appears-in-the-threads-window"></a>Aby przełączyć się do dowolnego wątku, który pojawia się w oknie wątków  
+### <a name="to-switch-to-any-thread-that-appears-in-the-threads-window"></a>Aby przełączyć się na dowolny wątek, który pojawia się w oknie wątki  
   
 - Kliknij dwukrotnie wątek.  
   
-### <a name="to-switch-to-a-thread-in-a-source-window"></a>Aby przełączyć się do wątku w oknie źródła  
+### <a name="to-switch-to-a-thread-in-a-source-window"></a>Aby przełączyć się do wątku w oknie źródłowym  
   
-- Na lewym marginesie, kliknij prawym przyciskiem myszy wskaźnik wątku, wskaż opcję **przełączyć się do**, a następnie kliknij nazwę tego wątku, do którego chcesz się przełączyć. Menu skrótów pokazuje tylko wątków w tej konkretnej lokalizacji.  
+- Na lewym marginesie kliknij prawym przyciskiem myszy wskaźnik wątku, wskaż polecenie **Przełącz do**, a następnie kliknij nazwę tego wątku, do którego chcesz się przełączyć. Menu skrótów zawiera tylko wątki w tym konkretnym miejscu.  
   
-     Jeśli pojawiają się wskaźniki nie, kliknij prawym przyciskiem myszy **wątków** okna i sprawdź, czy **Pokaż wątki w źródle** jest zaznaczone.  
+     Jeśli nie są wyświetlane żadne wskaźniki, kliknij prawym przyciskiem myszy w oknie **wątki** i sprawdź, czy jest zaznaczone pole wyboru **Pokaż wątki w źródle** .  
   
-### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Aby przełączyć się do wątku w pasku narzędzi debugowania lokalizacji  
+### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Aby przełączyć się do wątku na pasku narzędzi lokalizacji debugowania  
   
-1. Na **Lokalizacja debugowania** narzędzi, kliknij przycisk **wątku** pole.  
+1. Na pasku narzędzi **Lokalizacja debugowania** kliknij pole **wątek** .  
   
-2. Na liście kliknij wątku, do którego chcesz się przełączyć.  
+2. Na liście kliknij wątek, do którego chcesz się przełączyć.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+ [Debuguj wielowątkowe aplikacje](../debugger/debug-multithreaded-applications-in-visual-studio.md)

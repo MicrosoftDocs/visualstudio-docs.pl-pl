@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo | Dokumentacja firmy Microsoft
+title: 'IDebugModule3:: GetSymbolInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426354"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64833555"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Pobiera listę ścieżek, które są przeszukiwane pod kątem symboli, a także wyniki wyszukiwania poszczególnych ścieżek.  
+Pobiera listę ścieżek przeszukiwanych pod kątem symboli, a także wyniki wyszukiwania każdej ścieżki.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,29 +44,29 @@ int GetSymbolInfo(
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Kombinacja flag z [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) wyliczenie opisujące który pola `pInfo` mają być wypełnione.  
+ podczas Kombinacja flag z wyliczenia [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) określająca, które pola `pInfo` mają być wypełnione.  
   
  `pInfo`  
- [out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) strukturę, której członkami są w celu wprowadzenia określone informacje. Jeśli to jest wartość null, Metoda ta zwraca `E_INVALIDARG`.  
+ określoną Struktura [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) , której członkowie są wypełniani określonymi informacjami. Jeśli jest to wartość null, ta metoda zwraca `E_INVALIDARG` .  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli metoda się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli metoda się powiedzie, zwraca wartość `S_OK` ; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
-> Zwracany ciąg (w `MODULE_SYMBOL_SEARCH_INFO` struktury) może być pusta nawet wtedy, gdy `S_OK` jest zwracana. W tym przypadku nie było żadnych informacji, aby zwrócić.  
+> Zwrócony ciąg (w `MODULE_SYMBOL_SEARCH_INFO` strukturze) może być pusty nawet wtedy, gdy `S_OK` jest zwracany. W takim przypadku nie ma informacji o przeszukiwaniu do zwrócenia.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli `bstrVerboseSearchInfo` pole `MODULE_SYMBOL_SEARCH_INFO` struktura nie jest pusty, a następnie zawiera listę ścieżek przeszukiwane i wyniki tego wyszukiwania. Lista jest formatowana ze ścieżką, w którym następuje wielokropek ("..."), a następnie wynik. W przypadku więcej niż jedną parę wynik ścieżki każdej pary jest oddzielony przez parę "\r\n" (powrót karetki return/wysuw wiersza). Wzorzec wygląda następująco:  
+ Jeśli `bstrVerboseSearchInfo` pole `MODULE_SYMBOL_SEARCH_INFO` struktury nie jest puste, zawiera listę przeszukanych ścieżek oraz wyniki tego wyszukiwania. Lista jest formatowana ze ścieżką, po której następuje Elipsa ("..."), po której następuje wynik. Jeśli istnieje więcej niż jedna para wyników ścieżki, każda para jest oddzielona przez parę "\r\n" (karetka-Return/wysuwu wiersza). Wzorzec wygląda następująco:  
   
- \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
+ \<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>  
   
- Należy pamiętać, że ostatni wpis nie ma sekwencji \r\n.  
+ Należy zauważyć, że ostatni wpis nie ma sekwencji \r\n.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie metoda ta zwraca trzy ścieżki na trzy inne wyniki wyszukiwania. Każdy wiersz jest kończony przy użyciu pary karetki return/wysuw wiersza. Przykładowe dane wyjściowe po prostu wyświetla wyniki wyszukiwania jako pojedynczy ciąg.  
+ W tym przykładzie metoda zwraca trzy ścieżki z trzema różnymi wynikami wyszukiwania. Każdy wiersz jest zakończony przez parę karetki/wysuwu wiersza. Przykładowe dane wyjściowe po prostu drukują wyniki wyszukiwania jako jeden ciąg.  
   
 > [!NOTE]
-> Wynik stanu to wszystko, co natychmiast po "..." do końca wiersza.  
+> Wynik stanu to wszystko bezpośrednio po "..." do końca wiersza.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
@@ -85,8 +85,8 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 ```  
   
  **c:\symbols\user32.pdb... Nie znaleziono pliku.**  
-**c:\winnt\symbols\user32.pdb... Wersja jest niezgodna.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Załadowano symbole.**   
+**c:\winnt\symbols\user32.pdb... Wersja nie jest zgodna.**  
+**\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Załadowano symbole.**   
 ## <a name="see-also"></a>Zobacz też  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   

@@ -1,5 +1,5 @@
 ---
-title: Start | Dokumenty firmy Microsoft
+title: Uruchom | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778274"
 ---
-# <a name="start"></a>Rozpoczęcie
-**Start** Opcja jest *vsPerfCmd.exe* opcja, która inicjuje profiler do określonej metody profilowania.
+# <a name="start"></a>Rozpocznij
+Opcja **Start** jest opcją *VSPerfCmd.exe* , która inicjuje profiler do określonej metody profilowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -26,39 +26,39 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ```
 
 #### <a name="parameters"></a>Parametry
- `Method`Musi być jednym z następujących słów kluczowych:
+ `Method` Musi być jednym z następujących słów kluczowych:
 
-- **TRACE** - Określa metodę instrumentacji.
+- **Trace** — określa metodę Instrumentacji.
 
-- **PRZYKŁAD —** określa metodę pobierania próbek.
+- **Przykład** — określa metodę próbkowania.
 
-- **POKRYCIE** — określa pokrycie kodu.
+- **Pokrycie** — określa pokrycie kodu.
 
-- **WSPÓŁBIEŻNOŚĆ** — określa metodę rywalizacji o zasoby.
+- **Współbieżność** — określa metodę rywalizacji o zasoby.
 
 ## <a name="required-options"></a>Wymagane opcje
- Opcja **Wyjście** musi być określona, gdy w wierszu polecenia jest określony **przycisk Start.**
+ Opcja **Output** musi być określona, jeśli w wierszu polecenia określono wartość **Start** .
 
  **Dane wyjściowe:** `filename` Określa nazwę pliku wyjściowego.
 
-## <a name="exclusive-options"></a>Opcje ekskluzywne
- Poniższych opcji można używać tylko z opcją **Start** w wierszu polecenia.
+## <a name="exclusive-options"></a>Opcje wyłączności
+ Następujących opcji można używać tylko z opcją **Start** w wierszu polecenia.
 
- **CrossSession**&#124;**CS** Umożliwia profilowanie międzyprocesowe. Obsługiwane są nazwy opcji **CrossSession** i **CS.**
+ **CrossSession**&#124;**CS** umożliwia profilowanie między procesami. Nazwy opcji **CrossSession** i **CS** są obsługiwane.
 
- **Użytkownik:**`domain\`[`username` ] Umożliwia klientowi dostęp do monitora z określonego konta.
+ **Użytkownik:**[ `domain\` ] `username` umożliwia dostęp klienta do monitora z określonego konta.
 
- **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** określa licznik wydajności systemu Windows, który należy uwzględnić jako znak w pliku danych profilowania. **AutoMark** określa interwał w milisekundach między kolekcjami pliku danych.
+ **WinCounter:** `Path` [**AutoMark**: `n` ] **WinCounter** Określa licznik wydajności systemu Windows, który ma zostać uwzględniony jako znacznik w pliku danych profilowania. **Autoznacznik** określa interwał w milisekundach między kolekcjami pliku danych.
 
 ## <a name="invalid-options"></a>Nieprawidłowe opcje
  Następujących opcji nie można używać z opcją **Start** w wierszu polecenia.
 
- **Stan** **ma** zastosowanie do tych procesów, które są profilowane. Wyświetla listę procesów i wątków oraz ich bieżącego stanu profilu (On/Off). Na przykład jeśli proces zostanie zatrzymany, **Stan** nie wskaże tego w raporcie. **Stan** pokaże, że proces jest profilowany lub nie.
+ **Status** **Stan** stanu dotyczy tych procesów, które są profilowane. Wyświetla listę procesów i wątków oraz ich bieżący stan profilu (włączone/wyłączone). Na przykład jeśli proces został zatrzymany, **status** nie będzie wskazywać tego w raporcie. **Stan** będzie wskazywać, że proces jest profilowany lub nie.
 
- **Zamknięcie**[**:**`Timeout`] Wyłącza profiler.
+ **Zamknięcie**[**:** `Timeout` ] powoduje wyłączenie profilera.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano, jak za pomocą *vsPerfCmd.exe* **Start** opcja zainicjować profiler.
+ W poniższym przykładzie pokazano, jak za pomocą opcji **Start** *VSPerfCmd.exe* zainicjować profiler.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
@@ -67,6 +67,6 @@ VSPerfCmd.exe /Launch:TestApp.exe
 
 ## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Aplikacje autonomiczne profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET aplikacji internetowych](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

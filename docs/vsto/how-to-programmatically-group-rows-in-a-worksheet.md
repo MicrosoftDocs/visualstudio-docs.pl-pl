@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537881"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Instrukcje: Programowane Grupowanie wierszy w arkuszu
@@ -58,7 +58,7 @@ ms.locfileid: "85537881"
     > [!NOTE]
     > Aby rozgrupować wiersze, wywołaj <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> metodę.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pracuj z arkuszami](../vsto/working-with-worksheets.md)
 - [NamedRange — formant](../vsto/namedrange-control.md)
 - [Instrukcje: Dodawanie kontrolek NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)

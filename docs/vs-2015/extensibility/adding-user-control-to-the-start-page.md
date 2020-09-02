@@ -1,5 +1,5 @@
 ---
-title: Dodawanie kontrolki użytkownika do strony początkowej | Dokumentacja firmy Microsoft
+title: Dodawanie kontrolki użytkownika do strony startowej | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,36 +13,36 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1171197ba55c2fe3fa59ccc9ca918fa0c8f9e727
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699134"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do niestandardowej strony początkowej. W przykładzie dodano kontrolkę użytkownika do rozwiązania, tworzy kontrolkę użytkownika, a następnie odwołuje się skompilowany zestaw z pliku .xaml strony początkowej. Nowa karta obsługuje formant użytkownika, który działa jako podstawowa przeglądarka sieci Web.  
+W tym instruktażu pokazano, jak dodać odwołanie do biblioteki DLL do niestandardowej strony początkowej. Przykład dodaje kontrolkę użytkownika do rozwiązania, kompiluje kontrolkę użytkownika, a następnie odwołuje się do skompilowanego zestawu z pliku Start Page. XAML. Nowa karta obsługuje kontrolkę użytkownika, która działa jako podstawowa przeglądarka sieci Web.  
   
- Można użyć tego samego procesu, można dodać zestawu, który może być wywoływana z pliku .xaml.  
+ Można użyć tego samego procesu, aby dodać każdy zestaw, który może być wywoływany z pliku. XAML.  
   
 ## <a name="adding-a-wpf-user-control-to-the-solution"></a>Dodawanie kontrolki użytkownika WPF do rozwiązania  
- Najpierw dodaj formant użytkownika Windows Presentation Foundation (WPF) z rozwiązaniem strony początkowej.  
+ Najpierw Dodaj kontrolkę użytkownika Windows Presentation Foundation (WPF) do rozwiązania strony początkowej.  
   
-1. Tworzenie strony początkowej za pomocą utworzonego w [tworzenie niestandardowe strony początkowej](../extensibility/creating-a-custom-start-page.md).  
+1. Utwórz stronę początkową przy użyciu utworzonej podczas [tworzenia niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md).  
   
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy projekt**.  
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, kliknij polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.  
   
-3. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** węzeł, a następnie kliknij przycisk **Windows**. W środkowym okienku wybierz **Biblioteka kontrolek użytkownika WPF**.  
+3. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **Visual Basic** lub **Visual C#** , a następnie kliknij pozycję **Windows**. W środkowym okienku wybierz pozycję **Biblioteka formantów użytkownika WPF**.  
   
-4. Nazwij kontrolkę `WebUserControl` a następnie kliknij przycisk **OK**.  
+4. Nadaj formantowi nazwę `WebUserControl` , a następnie kliknij przycisk **OK**.  
   
 ## <a name="implementing-the-user-control"></a>Implementowanie kontrolki użytkownika  
- Do zaimplementowania formanty użytkownika WPF, tworzenia interfejsu użytkownika (UI) w XAML, a następnie wpisz zdarzenia związanego z kodem w języku C# lub innym języku .NET.  
+ Aby zaimplementować kontrolkę użytkownika WPF, skompiluj interfejs użytkownika w języku XAML, a następnie napisz zdarzenia związane z kodem w języku C# lub innym języku .NET.  
   
-#### <a name="to-write-the-xaml-for-the-user-control"></a>Do pisania XAML, kontrolki użytkownika  
+#### <a name="to-write-the-xaml-for-the-user-control"></a>Aby napisać kod XAML dla kontrolki użytkownika  
   
-1. Otwórz plik XAML, kontrolki użytkownika. W \<siatki > element, Dodaj następujące definicje wiersza do formantu.  
+1. Otwórz plik XAML dla kontrolki użytkownika. W \<Grid> elemencie Dodaj następujące definicje wierszy do kontrolki.  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -52,7 +52,7 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
   
     ```  
   
-2. W oknie głównym `Grid` elementu, Dodaj następujące nowe `Grid` element, który zawiera pole tekstowe służące do wpisywania adresy sieci Web i przycisk służący do ustawiania nowego adresu.  
+2. W elemencie głównym `Grid` Dodaj następujący nowy `Grid` element, który zawiera pole tekstowe służące do wpisywania adresów sieci Web i przycisk służący do ustawiania nowego adresu.  
   
     ```xml  
     <Grid Grid.Row="0">  
@@ -65,13 +65,13 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
     </Grid>  
     ```  
   
-3. Dodaj następujące ramki do najwyższego poziomu `Grid` elementu tuż za `Grid` element, który zawiera przycisk i pole tekstowe.  
+3. Dodaj następującą ramkę do elementu najwyższego poziomu `Grid` tuż po `Grid` elemencie zawierającym przycisk i pole tekstowe.  
   
     ```vb  
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />  
     ```  
   
-4. Poniższy przykład pokazuje ukończone XAML, kontrolki użytkownika.  
+4. Poniższy przykład pokazuje ukończony kod XAML dla kontrolki użytkownika.  
   
     ```xml  
     <UserControl x:Class="WebUserControl.UserControl1"  
@@ -100,9 +100,9 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
   
     ```  
   
-#### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Aby zapisać zdarzenia związanego z kodem dla formantu użytkownika  
+#### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Aby napisać zdarzenia związane z kodem dla kontrolki użytkownika  
   
-1. W Projektancie XAML, kliknij dwukrotnie **Ustaw adres** dodanie do formantu przycisku.  
+1. W projektancie XAML kliknij dwukrotnie przycisk **Ustaw adres** , który został dodany do kontrolki.  
   
      Plik UserControl1.cs zostanie otwarty w edytorze kodu.  
   
@@ -122,9 +122,9 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
     }  
     ```  
   
-     Ten kod ustawia adres sieci Web wprowadzonego w polu tekstowym jako cel przeglądarki sieci Web. Jeśli adres nie jest prawidłowy, kod zgłasza błąd.  
+     Ten kod ustawia adres sieci Web, który jest wpisywany w polu tekstowym jako element docelowy przeglądarki sieci Web. Jeśli adres jest nieprawidłowy, kod zgłosi błąd.  
   
-3. Muszą również obsługiwać zdarzenia WebFrame_Navigated:  
+3. Musisz również obsłużyć WebFrame_Navigated zdarzenie:  
   
     ```csharp  
     private void WebFrame_Navigated(object sender, EventArgs e)  
@@ -134,33 +134,33 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
 4. Skompiluj rozwiązanie.  
   
 ## <a name="adding-the-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej  
- Aby udostępnić ten formant do projektu strony początkowej w pliku projektu strony początkowej, należy dodać odwołanie do Nowa biblioteka kontrolki. Następnie można dodać kontrolki do znaczników Start strony XAML.  
+ Aby udostępnić tę kontrolkę projektowi strony początkowej, w pliku projektu strony początkowej Dodaj odwołanie do nowej biblioteki formantów. Następnie można dodać formant do znacznika XAML strony początkowej.  
   
-1. W **Eksploratora rozwiązań**, w projekcie strony początkowej, kliknij prawym przyciskiem myszy **odwołania** a następnie kliknij przycisk **Dodaj odwołanie**.  
+1. W **Eksplorator rozwiązań**w projekcie strony początkowej kliknij prawym przyciskiem myszy pozycję **odwołania** , a następnie kliknij pozycję **Dodaj odwołanie**.  
   
-2. Na **projektów** zaznacz **WebUserControl** a następnie kliknij przycisk **OK**.  
+2. Na karcie **projekty** wybierz pozycję **WebUserControl** , a następnie kliknij przycisk **OK**.  
   
-3. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+3. W menu **Kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.  
   
-    Skompilować rozwiązanie udostępnia kontrolkę użytkownika do funkcji IntelliSense dla innych plików w rozwiązaniu.  
+    Kompilowanie rozwiązania sprawia, że formant użytkownika jest dostępny dla funkcji IntelliSense dla innych plików w rozwiązaniu.  
   
-   Aby dodać formant do znaczników Start strony XAML, Dodaj odwołanie do zestawu przestrzeni nazw, a następnie umieszczanie kontrolki na stronie.  
+   Aby dodać formant do znacznika XAML strony początkowej, Dodaj odwołanie do przestrzeni nazw do zestawu, a następnie umieść formant na stronie.  
   
-#### <a name="to-add-the-control-to-the-markup"></a>Aby dodać kontrolkę znaczników  
+#### <a name="to-add-the-control-to-the-markup"></a>Aby dodać kontrolkę do znacznika  
   
-1. W **Eksploratora rozwiązań**, otwórz plik .xaml strony początkowej.  
+1. W **Eksplorator rozwiązań**Otwórz plik Start Page. XAML.  
   
-2. W **XAML** okienko, dodaj następującą deklarację przestrzeni nazw do najwyższego poziomu <xref:System.Windows.Controls.Grid> elementu.  
+2. W okienku **XAML** Dodaj następującą deklarację przestrzeni nazw do elementu najwyższego poziomu <xref:System.Windows.Controls.Grid> .  
   
    ```xml  
    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
    ```  
   
-3. W **XAML** okienko, przewiń do \<siatki > sekcji.  
+3. W okienku **XAML** przewiń do \<Grid> sekcji.  
   
-    Sekcja zawiera <xref:System.Windows.Controls.TabControl> element <xref:System.Windows.Controls.Grid> elementu.  
+    Sekcja zawiera <xref:System.Windows.Controls.TabControl> element w <xref:System.Windows.Controls.Grid> elemencie.  
   
-4. Dodaj \<TabControl > zawierający element \<TabItem > zawiera odwołanie do kontrolki użytkownika.  
+4. Dodaj \<TabControl> element zawierający \<TabItem> odwołanie do kontrolki użytkownika.  
   
    ```xml  
   
@@ -170,22 +170,22 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
   
    ```  
   
-   Teraz można przetestować formant.  
+   Teraz można testować formant.  
   
-## <a name="testing-a-manually-created-custom-start-page"></a>Testowanie ręczne tworzenie niestandardowej strony początkowej  
+## <a name="testing-a-manually-created-custom-start-page"></a>Testowanie ręcznie utworzonej niestandardowej strony początkowej  
   
-1. Skopiuj plik XAML i pomocnicze pliki tekstowe lub znaczników pliki do **%USERPROFILE%\My 2015\StartPages Documents\Visual Studio\\**  folderu.  
+1. Skopiuj plik XAML i wszystkie pomocnicze pliki tekstowe lub pliki znaczników do folderu **%USERPROFILE%\My Documents\Visual Studio 2015 \ startpages \\ ** .  
   
-2. Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w _folder instalacji programu Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
+2. Jeśli strona początkowa odwołuje się do dowolnych kontrolek lub typów w zestawach, które nie są zainstalowane przez program Visual Studio, skopiuj zestawy, a następnie wklej je w _folderze instalacyjnym programu Visual Studio_**\Common7\IDE\PrivateAssemblies \\ **.  
   
-3. Wpisz w wierszu polecenia programu Visual Studio **devenv /rootsuffix Exp** otworzyć doświadczalne wystąpienie programu Visual Studio.  
+3. W wierszu polecenia programu Visual Studio wpisz **devenv/rootsuffix Exp** , aby otworzyć eksperymentalne wystąpienie programu Visual Studio.  
   
-4. W doświadczalnym wystąpieniu, przejdź do **narzędzia / Opcje / środowisko / uruchamiania** strony i wybierz plik XAML z **Dostosuj stronę początkową** listy rozwijanej.  
+4. W eksperymentalnym wystąpieniu przejdź do strony **Narzędzia/Opcje/środowisko/Start** , a następnie wybierz plik XAML na liście rozwijanej **Dostosuj stronę początkową** .  
   
-5. Na **widoku** menu, kliknij przycisk **strona startowa**.  
+5. W menu **Widok** kliknij pozycję **Strona początkowa**.  
   
-     Powinien być wyświetlany z niestandardową stronę początkową. Jeśli chcesz zmienić wszystkie pliki, możesz musi Zamknij wystąpienie doświadczalne, wprowadzić zmiany, skopiuj Wklej zmienionych plików i następnie ponownie otwórz wystąpienie doświadczalne, aby wyświetlić zmiany.  
+     Powinna zostać wyświetlona niestandardowa strona startowa. Jeśli chcesz zmienić dowolne pliki, musisz zamknąć wystąpienie eksperymentalne, wprowadzić zmiany, skopiować i wkleić zmienione pliki, a następnie ponownie otworzyć doświadczalne wystąpienie, aby wyświetlić zmiany.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kontrole kontenerów WPF](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [Formanty kontenera WPF](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
  [Przewodnik: dodawanie niestandardowych elementów XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

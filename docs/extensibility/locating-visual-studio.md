@@ -1,5 +1,5 @@
 ---
-title: Locating Visual Studio | Microsoft Docs
+title: Lokalizowanie programu Visual Studio | Microsoft Docs
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64878143"
 ---
-# <a name="locate-visual-studio"></a>Locate Visual Studio
+# <a name="locate-visual-studio"></a>Znajdowanie programu Visual Studio
 
-Począwszy od programu Visual Studio 2017 można zainstalować wiele wystąpień tej samej wersji lub nawet edition. Jest to przydatne, gdy chcesz wyświetlić podgląd nowych funkcji na komputerze deweloperskim głównej, przy jednoczesnym zachowaniu poprzedniej instalacji. Z powodu tych zmian nie ma jednego środowiska zmiennej i z rejestru wartości używane w celu zlokalizowania wystąpienia. Zamiast tego można użyć [kwerendy COM API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) można znaleźć wystąpień na podstawie kryteriów, które dotyczą Twojego rozszerzenia.
+Począwszy od programu Visual Studio 2017, można zainstalować wiele wystąpień tej samej wersji lub nawet wersji. Jest to przydatne, gdy chcesz wyświetlić podgląd nowej funkcjonalności na podstawowej maszynie deweloperskiej przy zachowaniu poprzedniej instalacji. Ze względu na te zmiany nie istnieje pojedyncza zmienna środowiskowa ani wartość rejestru, której można użyć do lokalizowania wystąpienia. Zamiast tego można użyć [interfejsu API zapytania com](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) , aby znaleźć wystąpienia na podstawie kryteriów związanych z danym rozszerzeniem.
 
-Jest to szybkie, tylko do odczytu interfejsu API z pakietami NuGet, które są dostępne dla kodu natywnego i zarządzanego.
+Jest to szybki interfejs API tylko do odczytu z pakietami NuGet dostępnymi dla kodu natywnego i zarządzanego.
 
-| Kod | Package |
+| Kod | Pakiet |
 | ---- | --- |
-| Natywne | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Zarządzane | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Natywna | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
+| Zarządzany | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-Znajdź pojedyncze wystąpienie daną ścieżkę lub bieżący proces lub wyliczyć wszystkich wystąpień. Zobacz [nasze przykłady](https://github.com/Microsoft/vs-setup-samples) kompletne przykłady sposobu lokalizowania programu Visual Studio.
+Można zlokalizować pojedyncze wystąpienie z daną ścieżką lub bieżącym procesem lub wyliczyć wszystkie wystąpienia. Zapoznaj się z [naszymi](https://github.com/Microsoft/vs-setup-samples) przykładami, aby uzyskać pełne Przykłady sposobu lokalizowania programu Visual Studio.
 
-## <a name="tools"></a>Narzędzia
+## <a name="tools"></a>narzędzia
 
-Aby znaleźć programu Visual Studio i innych narzędzi w środowiska kompilacji, skrypty programu PowerShell, instalatorów i scenariuszy, istnieje szereg narzędzi typu open source, można użyć bezpośrednio lub Ponowna dystrybucja wraz z własnych skryptów.
+Aby znaleźć program Visual Studio i inne narzędzia w środowiskach kompilacji, skryptach programu PowerShell, instalatorach i więcej scenariuszach, istnieje wiele narzędzi typu "open source", których można używać bezpośrednio lub ponownie rozpowszechniać wraz z własnymi skryptami.
 
 | Projekt | Opis |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | Natywne pojedynczego pliku lub pliku wykonywalnego, aby zlokalizować wystąpienia, spełniające kryteria, takie jak wersja w wersji wstępnej, jakie produkty są zainstalowane i obciążeń, które są zainstalowane. Obsługuje także wyszukiwanie programu Visual Studio 2010 lub nowszej, jednak mniej informacji jest zwracany, który dla programu Visual Studio 2017 i nowszych. Zobacz [wiki](https://github.com/Microsoft/vswhere/wiki) przykłady. |
-| [Polecenia cmdlet VSSetup](https://github.com/Microsoft/vssetup.powershell) | Obsługiwane polecenia cmdlet programu PowerShell 2.0 lub nowszym, które zwracają rozbudowane informacje jako obiekty, można użyć, aby znaleźć wystąpień, w oparciu o takich samych kryteriów jako _vswhere_ i aby odnaleźć właściwości jeszcze więcej o wystąpieniach. Zobacz [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) przykłady. |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Automatycznie lokalizuje _Instalator VSIX_ i przekazuje od wiersza polecenia do zainstalowania **.vsix* pliku. Ta funkcja może być przydatne w pliki instalacyjne, które nie mają bezpośrednią obsługę interfejsami API zapytań. Zobacz [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) przykłady. |
+| [vswhere](https://github.com/Microsoft/vswhere) | Natywny plik wykonywalny w jednym pliku do lokalizowania wystąpień, takich jak wydanie lub wersja wstępna, produkt, który jest instalowany, i które obciążenia są instalowane. Program obsługuje również znajdowanie programu Visual Studio w wersji 2010 lub nowszej, ale do programu Visual Studio 2017 i nowszego są zwracane mniej informacji. Przykłady można znaleźć w [witrynie typu wiki](https://github.com/Microsoft/vswhere/wiki) . |
+| [Polecenia cmdlet VSSetup](https://github.com/Microsoft/vssetup.powershell) | Polecenia cmdlet programu PowerShell obsługują 2,0 i nowsze, które zwracają rozbudowane informacje jako obiekty, których można użyć do znajdowania wystąpień na podstawie tych samych kryteriów co _vswhere_ i odnajdywania jeszcze większej liczby właściwości dotyczących wystąpień. Przykłady można znaleźć w [witrynie typu wiki](https://github.com/Microsoft/vssetup.powershell/wiki) . |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Automatycznie lokalizuje _Instalator VSIX_ i przekazuje wiersz polecenia, aby zainstalować plik **. vsix* . Ta funkcja może być przydatna w instalatorach, które nie mają bezpośredniej pomocy technicznej dla interfejsów API zapytań. Przykłady można znaleźć w [witrynie typu wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) . |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-* [Zmiany w instalacji programu Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
-* [Uruchom program Visual Studio przy użyciu DTE](launch-visual-studio-dte.md)
+* [Zmiany w konfiguracji programu Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [Uruchamianie programu Visual Studio przy użyciu DTE](launch-visual-studio-dte.md)

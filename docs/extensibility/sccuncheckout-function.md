@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccUncheckout | Dokumenty firmy Microsoft
+title: Funkcja SccUncheckout | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4317133b2f215e0f9af447e5c042785561231f63
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700244"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout, funkcja
-Ta funkcja cofa poprzednią operację wyewidencjonowywania, przywracając w ten sposób zawartość wybranego pliku lub plików do stanu sprzed wyewidencjonowania. Wszystkie zmiany wprowadzone w pliku od momentu realizacji transakcji zostały utracone.
+Ta funkcja cofa poprzednią operację wyewidencjonowania, a tym samym przywraca zawartość wybranego pliku lub plików do stanu sprzed wyewidencjonowania. Wszystkie zmiany wprowadzone do pliku od momentu ich wyewidencjonowania zostaną utracone.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,44 +38,44 @@ SCCRTN SccUncheckout (
 #### <a name="parameters"></a>Parametry
  pvContext
 
-[w] Struktura kontekstu wtyczki formantu źródła.
+podczas Struktura kontekstu wtyczki kontroli źródła.
 
- Hwnd
+ Właściwość
 
-[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
+podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
 
  nFiles
 
-[w] Liczba plików określonych `lpFileNames` w tablicy.
+podczas Liczba plików określona w `lpFileNames` tablicy.
 
  lpFileNames
 
-[w] Tablica w pełni kwalifikowanych nazw ścieżek lokalnych plików, dla których można cofnąć wyewidencjonowanie.
+podczas Tablica w pełni kwalifikowanych nazw ścieżek lokalnych dla plików, dla których ma zostać cofnięte wyewidencjonowanie.
 
- Foptions
+ fOptions
 
-[w] Flagi poleceń (nie używane).
+podczas Flagi poleceń (nieużywane).
 
- pvOpcje
+ pvOptions
 
-[w] Opcje specyficzne dla wtyczki sterowania źródłem.
+podczas Opcje dotyczące wtyczki kontroli źródła.
 
 ## <a name="return-value"></a>Wartość zwracana
- Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Cofnij wyewidencjonowanie zakończyło się pomyślnie.|
-|SCC_E_FILENOTCONTROLLED|Wybrany plik nie jest pod kontrolą kodu źródłowego.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zaleca się ponowną próbę.|
-|SCC_E_NONSPECIFICERROR|Niespecyficzna awaria. Cofnij wyewidencjonowanie nie powiodło się.|
-|SCC_E_NOTCHECKEDOUT|Użytkownik nie ma wyewidencjonowany plik.|
+|SCC_OK|Cofnięcie wyewidencjonowania zakończyło się pomyślnie.|
+|SCC_E_FILENOTCONTROLLED|Wybrany plik nie znajduje się pod kontrolą kodu źródłowego.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zalecana jest ponowna próba.|
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd. Cofnięcie wyewidencjonowania nie powiodło się.|
+|SCC_E_NOTCHECKEDOUT|Użytkownik nie ma wyewidencjonowanego pliku.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
 |SCC_E_PROJNOTOPEN|Projekt nie został otwarty z kontroli źródła.|
-|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed zakończeniem.|
+|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|
 
 ## <a name="remarks"></a>Uwagi
- Po tej operacji `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` i flagi zostaną wyczyszczone dla plików, na których wykonano wyewidencjonowanie cofania.
+ Po wykonaniu tej operacji `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` flagi i zostaną wyczyszczone dla plików, na których wykonano wyewidencjonowanie.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

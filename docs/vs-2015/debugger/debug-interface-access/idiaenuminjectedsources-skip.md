@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources::SKIP — | Dokumentacja firmy Microsoft
+title: 'IDiaEnumInjectedSources:: Skip | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 890d9c5b1673a9af4acabf8262a76e2840ede8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150879"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Pomija określoną liczbę źródeł wprowadzonego w kolejności wyliczenia.  
+Pomija określoną liczbę wprowadzonych źródeł w sekwencji wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba źródeł wprowadzonego w kolejności wyliczenie, aby pominąć.  
+ podczas Liczba wstrzykniętych źródeł w sekwencji wyliczenia do pominięcia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` przypadku nie ma więcej wprowadzonego źródeł, aby pominąć.  
+ Jeśli powiedzie się, zwraca `S_OK` ; w przeciwnym razie zwraca `S_FALSE` czy nie ma więcej wstrzykiwanych źródeł do pominięcia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

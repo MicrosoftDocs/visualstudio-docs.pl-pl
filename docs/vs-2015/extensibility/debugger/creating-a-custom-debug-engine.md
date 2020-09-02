@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowego aparat debugowania | Dokumentacja firmy Microsoft
+title: Tworzenie niestandardowego aparatu debugowania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,29 +13,29 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b2a73dfae7772d8edec076238704aa1b52c9b028
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383446"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64829299"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Tworzenie niestandardowego aparatu debugowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aparat debugowania (DE) to składnik, który umożliwia debugowanie określonej architektury środowiska wykonawczego. Zazwyczaj jest tylko jedna implementacja DE na środowisku uruchomieniowym.  
+Aparat debugowania (DE) to składnik, który umożliwia debugowanie określonych architektur w czasie wykonywania. Zazwyczaj istnieje tylko jedna cofnięta implementacja dla środowiska wykonawczego.  
   
 > [!NOTE]
-> Istnieją osobne implementacje DE języka Transact-SQL i JScript, VBScript i JScript udostępniać pojedynczy DE.  
+> Chociaż istnieją oddzielne niewdrożenia dla Transact-SQL i JScript, VBScript i JScript dzielą pojedynczo.  
   
- DE działa w systemie operacji lub interpretera zapewnienie debugowania usług wykonywania oceny kontroli, punkty przerwania i wyrażenie. Te usługi są implementowane za pośrednictwem interfejsów DE i może spowodować, że debuger w celu przejścia między różne tryby operacyjne. Aby uzyskać więcej informacji, zobacz [tryby operacyjne](../../extensibility/debugger/operational-modes.md).  
+ A DE współpracuje z systemem interpretera lub system operacyjny, aby zapewnić takie usługi debugowania jak kontrolka wykonywania, punkty przerwania i Obliczanie wyrażenia. Te usługi są implementowane przez wszystkie interfejsy i mogą spowodować przejście debugera między różnymi trybami operacyjnymi. Aby uzyskać więcej informacji, zobacz [Tryby operacyjne](../../extensibility/debugger/operational-modes.md).  
   
- Tworzenie DE składa się z następujących czynności:  
+ Utworzenie elementu DE obejmuje następujące kroki:  
   
-1. Rejestrowanie DE przy użyciu programu Visual Studio  
+1. Rejestrowanie z programu Visual Studio  
   
-2. Włączanie programu do debugowania  
+2. Włączanie debugowania programu  
   
-3. Wykonanie kontroli i stan oceny  
+3. Kontrola wykonywania i Ocena stanu  
   
 4. Wysyłanie zdarzeń  
   
@@ -43,25 +43,25 @@ Aparat debugowania (DE) to składnik, który umożliwia debugowanie określonej 
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Rejestrowanie niestandardowego aparatu debugowania](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
- Wyjaśnia kroki, wymaganych do zarejestrowania aparat debugowania za pomocą programu Visual Studio, dzięki czemu mogą być używane.  
+ Wyjaśnia kroki wymagane do zarejestrowania aparatu debugowania w programie Visual Studio, aby można było go użyć.  
   
  [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
- Wyjaśniono, że przed swoje DE debugować program, musisz je najpierw uruchom DE lub dołączyć do istniejącego programu.  
+ W tym artykule wyjaśniono, że zanim element DE może debugować program, należy najpierw uruchomić go DE lub dołączyć do istniejącego programu.  
   
  [Kontrola wykonywania i ocena stanu](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
- W tym artykule omówiono, dlaczego debugowania aplikacji wymaga implementacji funkcji kontroli wykonywania.  
+ W tym artykule omówiono, dlaczego debugowanie aplikacji wymaga wykonania funkcji kontroli wykonywania.  
   
  [Wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md)  
- W tym artykule opisano komunikację między debugera i "de" jako model zdarzeń oparty na modelu DCOM.  
+ Opisuje komunikację między debugerem a niemodelem zdarzenia na podstawie modelu DCOM.  
   
  [Kończenie i odłączanie](../../extensibility/debugger/termination-and-detaching.md)  
- Wyjaśnia, jak osiągnąć normalne zakończenie, co oznacza, że nie istnieją żadne punkty przerwania, wyjątki, błędy czasu wykonywania lub nieskończonej pętli w aplikacji przeznaczonej do debugowania.  
+ Wyjaśnia, jak osiągnąć normalne zakończenie, co oznacza, że nie ma żadnych punktów przerwania, wyjątków, błędów czasu wykonywania lub nieskończonych pętli w aplikacji, które mają być debugowane.  
   
  [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)  
- Dokumenty kolejności wywołań zdarzeń występujących w sesji debugowania.  
+ Dokumentuje kolejność wywoływania zdarzeń występujących w sesji debugowania.  
   
- [Instrukcje: Debugowanie niestandardowego aparatu debugowania](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
- Wyjaśnia, jak można debugować DE niestandardowych.  
+ [Instrukcje: debugowanie niestandardowego aparatu debugowania](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ Wyjaśnia, jak debugować niestandardowe DE.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzalność debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
