@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8fc2af704ab587480913c51cdbc593e6cc0f483a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663466"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Instrukcje: dodawanie działań do przybornika
+# <a name="how-to-add-activities-to-the-toolbox"></a>Instrukcje: Dodawanie działań do przybornika
 Działania można dodawać do **przybornika** w rozwiązaniu na kilka różnych sposobów. Można je dodać z poziomu bieżącego projektu, odwoływać się do nich z innego projektu lub odwołać się do nich z innego zestawu.
 
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Aby dodać działanie z bieżącego projektu
 
-1. Dodaj nowe niestandardowe działanie do bieżącego projektu przepływu pracy. [!INCLUDE[crabout](../includes/crabout-md.md)] dodawania nowego niestandardowego działania do projektu, zobacz [jak: Dodawanie nowego elementu do projektu przepływu pracy](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1. Dodaj nowe niestandardowe działanie do bieżącego projektu przepływu pracy. [!INCLUDE[crabout](../includes/crabout-md.md)] Dodawanie nowego niestandardowego działania do projektu, zobacz [jak: Dodawanie nowego elementu do projektu przepływu pracy](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
 2. Dodaj logikę niestandardową do działania.
 
-3. Skompiluj projekt. Jeśli kompilacja zakończyła się pomyślnie, zostanie wyświetlona nowa kategoria w **przyborniku** o nazwie "\<*Nazwa projektu*>" z niestandardowym działaniem zawartym w tej kategorii.
+3. Skompiluj projekt. Jeśli kompilacja zakończyła się pomyślnie, zostanie wyświetlona nowa kategoria w **przyborniku** o nazwie " \<*project name*> " z niestandardowym działaniem zawartym w tej kategorii.
 
     > [!NOTE]
-    > Jeśli Przybornik zostanie zresetowany, działania niestandardowe zostaną usunięte, nawet jeśli rozwiązanie zostanie skompilowane ponownie. Aby ponownie wypełnić Przybornik z działaniami niestandardowymi po jego zresetowaniu, uruchom polecenie [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+    > Jeśli Przybornik zostanie zresetowany, działania niestandardowe zostaną usunięte, nawet jeśli rozwiązanie zostanie skompilowane ponownie. Aby ponownie wypełnić Przybornik z działaniami niestandardowymi po jego zresetowaniu, należy uruchomić polecenie restart [!INCLUDE[vs2010](../includes/vs2010-md.md)] .
 
     > [!NOTE]
     > W przyborniku można wyświetlić tylko jedno działanie o danej nazwie. Jeśli dwie działania z różnych zestawów mają tę samą nazwę klasy, zostanie wyświetlona tylko jedna z nich.
@@ -40,13 +40,13 @@ Działania można dodawać do **przybornika** w rozwiązaniu na kilka różnych 
 
 1. Otwórz rozwiązanie, które zawiera co najmniej jeden projekt przepływu pracy i niestandardowy projekt biblioteki działań lub inny projekt przepływu pracy, który definiuje działanie niestandardowe.
 
-2. Kompiluj oba projekty. Jeśli kompilacja zakończyła się pomyślnie, zostanie wyświetlona nowa kategoria w **przyborniku** o nazwie "\<*Nazwa projektu*>" z niestandardowym działaniem zawartym w tej kategorii.
+2. Kompiluj oba projekty. Jeśli kompilacja zakończyła się pomyślnie, zostanie wyświetlona nowa kategoria w **przyborniku** o nazwie " \<*project name*> " z niestandardowym działaniem zawartym w tej kategorii.
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Aby dodać działanie do przybornika z zestawu
 
 1. Otwórz rozwiązanie przepływu pracy.
 
-2. W menu **Narzędzia** wybierz pozycję **Wybierz elementy przybornika.** ...
+2. W menu **Narzędzia** wybierz pozycję **Wybierz elementy przybornika.**...
 
 3. W oknie dialogowym **Wybierz elementy przybornika** wybierz kartę **składniki system. działania** , a następnie kliknij przycisk **Przeglądaj...** , aby przejść do zestawu, który zawiera niestandardowe działanie, które chcesz dodać.
 

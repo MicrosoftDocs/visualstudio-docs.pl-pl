@@ -16,14 +16,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5126b3dc45d33471080ae154e06f4a327e21fef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663438"
 ---
-# <a name="how-to-change-the-debug-stepping-option-legacy"></a>Instrukcje: Zmiana opcji stopniowego debugowania (starsza wersja)
-W tym temacie opisano sposób zmiany opcji stopniowego debugowania dla aplikacji [!INCLUDE[wf](../includes/wf-md.md)] w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)], które mają współbieżne akcje. Użyj starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)], jeśli chcesz wskazać [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+# <a name="how-to-change-the-debug-stepping-option-legacy"></a>Instrukcje: Opcja zmiany debugowania krokowego (starsza wersja)
+W tym temacie opisano, jak zmienić opcję wykonywania debugowania dla [!INCLUDE[wf](../includes/wf-md.md)] aplikacji w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] , która ma współbieżne akcje. Użyj starszej wersji, [!INCLUDE[wfd2](../includes/wfd2-md.md)] gdy musisz być celem [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
  W przypadku debugowania starszych działań, które są wykonywane współbieżnie, takich jak **działaniu ParallelActivity** lub **ConditionedActivityGroup**, można użyć jednej z dwóch opcji, aby krokowo przekroczyć swój kod.
 
@@ -35,9 +35,9 @@ W tym temacie opisano sposób zmiany opcji stopniowego debugowania dla aplikacji
 
 1. Uruchom program Visual Studio.
 
-2. Otwórz istniejący projekt starszego przepływu pracy lub Utwórz nowy projekt, który wykorzystuje współbieżne działania i który jest przeznaczony dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+2. Otwórz istniejący projekt starszego przepływu pracy lub Utwórz nowy projekt, który wykorzystuje współbieżne działania i który jest przeznaczony dla [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
-3. W menu **przepływ pracy** w starszej [!INCLUDE[wfd2](../includes/wfd2-md.md)] wskaż polecenie **Debuguj**, a następnie wskaż polecenie **Opcje krok po kroku**.
+3. W menu **przepływu pracy** w starszej wersji [!INCLUDE[wfd2](../includes/wfd2-md.md)] wskaż polecenie **Debuguj**, a następnie wskaż polecenie **Opcje krok po kroku**.
 
 4. Wybierz jedno z **wystąpień** lub **gałęzi**.
 

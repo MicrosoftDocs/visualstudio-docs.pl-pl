@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a216e053a08662da5da04206c780fb4455e9ec09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663491"
 ---
 # <a name="start-command"></a>Uruchomienie — Polecenie
@@ -33,7 +33,7 @@ Debug.Start [address]
 ```
 
 ## <a name="arguments"></a>Argumenty
- `address` opcjonalny. Adres, pod którym program wstrzymuje wykonywanie, podobnie jak punkt przerwania w kodzie źródłowym. Ten argument jest prawidłowy tylko w trybie debugowania.
+ `address` Obowiązkowe. Adres, pod którym program wstrzymuje wykonywanie, podobnie jak punkt przerwania w kodzie źródłowym. Ten argument jest prawidłowy tylko w trybie debugowania.
 
 ## <a name="remarks"></a>Uwagi
  **Uruchomienie** polecenia, gdy wykonywane, wykonuje operację RunToCursor na określonym adresie.

@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183538"
 ---
 # <a name="manage-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
@@ -126,7 +126,7 @@ W przeciwieństwie do większości innych typów projektów, *projekt udostępni
 
 Odwołania do plików są bezpośrednimi odwołaniami do zestawów poza kontekstem projektu programu Visual Studio. Można je utworzyć za pomocą karty **Przeglądaj** okna dialogowego Menedżer odwołań. Użyj odwołania do pliku, gdy masz tylko zestaw lub składnik, a nie projekt, który tworzy go jako dane wyjściowe.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązywanie problemów z przerwanymi odwołaniami](../ide/troubleshooting-broken-references.md)
 - [Instrukcje: Dodawanie lub usuwanie odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

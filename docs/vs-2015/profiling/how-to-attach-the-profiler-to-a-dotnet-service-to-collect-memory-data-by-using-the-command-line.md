@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Dołącz Profiler do usługi .NET i zbieranie danych pamięci przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: dołączanie profilera do usługi .NET w celu zbierania danych pamięci przy użyciu wiersza polecenia | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,124 +10,124 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a1601b855cfc895aa01c6b72cbbe36b59980bd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432899"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64812818"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do usługi .NET i zbieranie danych pamięci przy użyciu wiersza polecenia
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do usługi .NET i zbieranie danych pamięci przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wiersza polecenia narzędzi Profilujących do dołączenia programu profilującego do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usługi i zbierania danych pamięci. Możesz zbierać dane dotyczące liczby i rozmiaru alokacji pamięci i może również zbierać dane dotyczące okresu istnienia obiektów pamięci.  
+W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzi wiersza polecenia narzędzia profilowania do dołączania profilera do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usługi i zbierania danych pamięci. Można zbierać dane o liczbie i rozmiarze alokacji pamięci. można również zbierać dane dotyczące okresu istnienia obiektów pamięci.  
 
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje ze sklepu Windows wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 
 > [!NOTE]
-> Narzędzia wiersza poleceń dla narzędzi profilowania znajdują się w podkatalogu \team tools\performance Tools [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] katalogu instalacyjnego. Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Narzędzia wiersza polecenia narzędzia profilowania znajdują się w podkatalogu \Team Tools\Performance Tools [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] katalogu instalacyjnego. Na komputerach 64 bitowych dostępne są zarówno wersje 64 bitowe, jak i 32 bitowe narzędzi. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
- Zbieranie danych pamięci z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usługi, użyj [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia do inicjowania odpowiednich zmiennych środowiskowych na komputerze, który hostuje usługę. Aby skonfigurować go na potrzeby profilowania, należy ponownie uruchomić komputer.  
+ Aby zbierać dane pamięci z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usługi, należy użyć narzędzia [VSPerfCLREnv. cmd](../profiling/vsperfclrenv.md) w celu zainicjowania odpowiednich zmiennych środowiskowych na komputerze, który jest hostem usługi. Aby skonfigurować profil do profilowania, należy ponownie uruchomić komputer.  
 
- Następnie użyj [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia, aby dołączyć profiler do procesu usługi. Gdy profiler jest dołączony do usługi, można wstrzymywać i wznawiać zbieranie danych.  
+ Następnie użyj narzędzia [VSPerfCmd](../profiling/vsperfcmd.md) , aby dołączyć Profiler do procesu usługi. Gdy profiler jest dołączony do usługi, można wstrzymywać i wznawiać zbieranie danych.  
 
- Aby zakończyć sesję profilowania, profiler musi zostać odłączony od usługi, a następnie program profilujący musi być jawnie zamknięty. W większości przypadków zaleca się wyczyszczenie zmiennych środowiskowych profilowania na końcu sesji.  
+ Aby zakończyć sesję profilowania, profiler musi zostać odłączony od usługi i musi być jawnie zamknięty. W większości przypadków zaleca się wyczyszczenie zmiennych środowiskowych profilowania na końcu sesji.  
 
-## <a name="attaching-the-profiler"></a>Dołączanie Profiler  
+## <a name="attaching-the-profiler"></a>Dołączanie profilera  
 
 #### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>Aby dołączyć Profiler do usługi .NET Framework  
 
-1. Jeśli to konieczne, zainstaluj usługę.  
+1. W razie potrzeby zainstaluj usługę.  
 
 2. Otwórz okno wiersza polecenia.  
 
-3. Należy zainicjować zmienne środowiskowe profilowania. Wpisz:  
+3. Zainicjuj zmienne środowiskowe profilowania. Wpisz:  
 
-    **VSPerfClrEnv** {**/globalsamplegc /globalsamplegclife**} [**/samplelineoff**]  
+    **VSPerfCLREnv** {**/globalsamplegc/globalsamplegclife**} [**/samplelineoff**]  
 
-   - Opcje **/globalsamplegclife** i **/globalsamplegclife** określenie typu pamięci dane mają być zbierane. Określ jeden i tylko jeden z następujących opcji.  
+   - Opcje **/globalsamplegclife** i **/globalsamplegclife** określają typ danych pamięci do zebrania. Określ jedną i tylko jedną z następujących opcji.  
 
      **/globalsamplegc**  
-     Umożliwia zbieranie danych alokacji pamięci.  
+     Włącza zbieranie danych alokacji pamięci.  
 
      **/globalsamplegclife**  
-     Umożliwia zbieranie danych alokacji pamięci i danych o okresie istnienia obiektu.  
+     Umożliwia zbieranie danych dotyczących danych alokacji pamięci i okresu istnienia obiektu.  
 
-   - **/Samplelineoff** opcja wyłącza kolekcję danych numeru wiersza kodu źródłowego.  
+   - Opcja **/samplelineoff** wyłącza zbieranie danych numeru wiersza kodu źródłowego.  
 
 4. Uruchom ponownie komputer, aby ustawić nową konfigurację środowiska.  
 
-5. Jeśli to konieczne, uruchom usługę.  
+5. W razie potrzeby uruchom usługę.  
 
-6. Otwórz okno wiersza polecenia. Jeśli to konieczne, należy dodać ścieżkę profilera do zmiennej środowiskowej PATH.  
+6. Otwórz okno wiersza polecenia. W razie potrzeby dodaj ścieżkę profilera do zmiennej środowiskowej PATH.  
 
-7. Uruchom program profiler. Wpisz:  
+7. Uruchom Profiler. Wpisz:  
 
-    **Narzędzia VSPerfCmd**[/start](../profiling/start.md) **: Przykładowe**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]      
+    **VSPerfCmd**  [/Start](../profiling/start.md) **: przykład**  [/Output](../profiling/output.md) **:** `OutputFile` [ `Options` ]  
 
-   - **/Start:sample** opcja inicjuje profiler.  
+   - Polecenie **/Start: Sample** inicjuje profiler.  
 
-   - **/Output:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.  
+   - Opcja **/Output:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile` Określa nazwę i lokalizację pliku danych profilowania (. vsp).  
 
-     Można użyć co najmniej jeden z następujących opcji z **/start:sample** opcji.  
+     Można użyć co najmniej jednej z następujących opcji z opcją **/Start: Sample** .  
 
    > [!NOTE]
-   > **/User** i **/crosssession** opcje są zazwyczaj wymagane dla usług.  
+   > Opcje **/User** i **/CrossSession** są zwykle wymagane dla usług.  
 
    |                                 Opcja                                  |                                                                                                                                                   Opis                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                      Określa nazwę domeny i użytkownika konta, które jest właścicielem procesu. Ta opcja jest wymagana, jeśli proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie Nazwa użytkownika na karcie Procesy Menedżera zadań Windows.                       |
-   |              [/crosssession](../profiling/crosssession.md)              | Włącza profilowanie procesów w innych sesjach logowania. Ta opcja jest wymagana, jeśli aplikacja ASP.NET jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji, na karcie Procesy Menedżera zadań Windows. **Skróconej/CS** może być określona jako skrót **/crosssession**. |
-   | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                                                    Określa opcjonalny nazwę domeny i użytkownika konta logowania, w którym działa usługa. Konto logowania znajduje się w kolumnie Logowanie jako usługa w Menedżerze sterowania usługami Windows.                                                     |
-   |          [/ crosssession&#124;cs](../profiling/crosssession.md)          |                                                                                                                             Włącza profilowanie procesów w innych sesjach logowania.                                                                                                                              |
-   |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                    Określa licznik wydajności Windows mają być zbierane podczas profilowania.                                                                                                                     |
-   |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms.                                                                                   |
-   |       [/Events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).                                                                                     |
+   | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` |                      Określa nazwę domeny i użytkownika konta, które jest właścicielem procesu. Ta opcja jest wymagana, jeśli proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie Nazwa użytkownika na karcie procesy w Menedżerze zadań systemu Windows.                       |
+   |              [/CrossSession](../profiling/crosssession.md)              | Umożliwia profilowanie procesów w innych sesjach logowania. Ta opcja jest wymagana, jeśli aplikacja ASP.NET jest uruchomiona w innej sesji. Identyfikator sesji jest wyświetlany w kolumnie Identyfikator sesji na karcie procesy w Menedżerze zadań systemu Windows. **/CS** można określić jako skrót dla **/CrossSession**. |
+   | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` |                                                    Określa opcjonalną nazwę domeny i użytkownika konta logowania, w ramach którego jest uruchomiona usługa. Konto logowania jest wymienione w kolumnie Logowanie jako usługi w Menedżerze sterowania usługami systemu Windows.                                                     |
+   |          [/CrossSession&#124;CS](../profiling/crosssession.md)          |                                                                                                                             Umożliwia profilowanie procesów w innych sesjach logowania.                                                                                                                              |
+   |    [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath`     |                                                                                                                    Określa licznik wydajności systemu Windows, który ma być zbierany podczas profilowania.                                                                                                                     |
+   |         [/AutoMark](../profiling/automark.md) **:**`Interval`          |                                                                                  Używaj tylko z **/WinCounter** . Określa liczbę milisekund między zdarzeniami zbierania liczników wydajności systemu Windows. Wartość domyślna to 500 ms.                                                                                   |
+   |       [/Events](../profiling/events-vsperfcmd.md) **:**`Config`        |                                                                                     Określa zdarzenie śledzenia zdarzeń systemu Windows (ETW), które ma być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym pliku (. etl).                                                                                     |
 
 8. Dołącz profiler do usługi. Wpisz:  
 
-    **Narzędzia VSPerfCmd**[/ dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]    
+    **VSPerfCmd**[/Attach](../profiling/attach.md) **:**{ `PID`&#124;`ProcName` } [[/targetclr](../profiling/targetclr.md)**:** `Version` ]    
 
-   - Określ identyfikator procesu lub nazwę procesu usługi. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.  
+   - Określ identyfikator procesu lub nazwę procesu usługi. Identyfikatory procesów i nazwy wszystkich uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.  
 
-   - **targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.  
+   - **targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilowania, gdy więcej niż jedna wersja środowiska uruchomieniowego jest załadowana w aplikacji. Opcjonalny.  
 
 ## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
- Usługa jest uruchomiona, ale można używać **VSPerfCmd.exe** opcje do zatrzymywania i uruchamiania zapisywania danych do pliku danych profilera. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.  
+ Gdy usługa jest uruchomiona, możesz użyć opcji **VSPerfCmd.exe** , aby zatrzymać i uruchomić zapisywanie danych do pliku danych profilera. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takich jak uruchamianie lub zamykanie aplikacji.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
 
-- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
+- Poniższe pary opcji **VSPerfCmd** uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w osobnym wierszu polecenia. Zbieranie danych można włączać i wyłączać wiele razy.  
 
     |Opcja|Opis|  
     |------------|-----------------|  
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje (**/globaloff**) zbieranie danych dla wszystkich procesów.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymuje (**/processoff**) zbieranie danych dla procesu określonego przez identyfikator procesu (`PID`).|  
-    |**/ Dołączanie:**{`PID`&#124;`ProcName`} [/ Odłącz](../profiling/detach.md)[: {`PID`&#124;`ProcName`}]|**/ Dołączanie** rozpoczyna się zbieranie danych dla procesu określonego przez identyfikator procesu lub nazwę procesu. **/ Odłącz** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli nie określono określonego procesu.|  
+    |[/GlobalOn/GlobalOff](../profiling/globalon-and-globaloff.md)|Uruchamia (**/GlobalOn**) lub przerywa (**/GlobalOff**) zbieranie danych dla wszystkich procesów.|  
+    |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Uruchamia (**/ProcessOn**) lub zatrzymywanie (**/ProcessOff**) zbieranie danych dla procesu określonego przez identyfikator procesu ( `PID` ).|  
+    |**/Attach:**{ `PID`&#124;`ProcName` } [/Detach](../profiling/detach.md)[: { `PID`&#124;`ProcName` }]|**/Attach** uruchamia zbieranie danych dla procesu określonego przez identyfikator procesu lub nazwę procesu. **/Detach** kończy zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli określony proces nie jest określony.|  
 
 ## <a name="ending-the-profiling-session"></a>Kończenie sesji profilowania  
- Aby zakończyć sesję profilowania, profiler nie może zbierać dane. Możesz zatrzymać zbieranie danych z aplikacji profilowanej metodą próbkowania, przez zatrzymanie usługi lub wywołując **VSPerfCmd / Odłącz** opcji. Następnie wywołaj **VSPerfCmd** [/shutdown](../profiling/shutdown.md) opcję, aby wyłączyć profiler i zamknąć plik danych profilowania. **VSPerfClrEnv /globaloff** polecenie usuwa zmienne środowiskowe profilowania, ale konfiguracja systemu nie jest resetowana do ponownego uruchomienia komputera.  
+ Aby zakończyć sesję profilowania, profiler nie może zbierać danych. Możesz zatrzymać zbieranie danych z aplikacji profilowanej przy użyciu metody próbkowania przez zatrzymanie usługi lub wywołanie opcji **VSPerfCmd/detach** . Następnie należy wywołać opcję **VSPerfCmd** [/Shutdown](../profiling/shutdown.md) , aby wyłączyć profiler i zamknąć plik danych profilowania. **VSPerfCLREnv/GlobalOff** polecenie czyści zmienne środowiskowe profilowania, ale konfiguracja systemu nie jest resetowana do momentu ponownego uruchomienia komputera.  
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  
 
-1. Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:  
+1. Wykonaj jedną z następujących czynności, aby odłączyć Profiler od aplikacji docelowej:  
 
     - Zatrzymaj usługę.  
 
-         —lub—  
+         -lub-  
 
-    - Typ **VSPerfCmd / Odłącz**  
+    - Wpisz **VSPerfCmd/detach**  
 
 2. Zamknij program profilujący. Wpisz:  
 
-     **Narzędzia VSPerfCmd/shutdown**  
+     **VSPerfCmd/shutdown**  
 
-3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:  
+3. Obowiązkowe Wyczyść zmienne środowiskowe profilowania. Wpisz:  
 
-     **VSPerfClrEnv /globaloff**  
+     **VSPerfClrEnv/GlobalOff**  
 
 4. Uruchom ponownie komputer.  
 
 ## <a name="see-also"></a>Zobacz też  
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)   
- [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)
+ [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 77b66160d489f711b5588fdcdd024d13769d734f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016874"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Instrukcje: Dostosowywanie pakietu rozwiązania SharePoint
@@ -86,5 +87,5 @@ ms.locfileid: "86016874"
 
      Szablon jest odświeżany oryginalnym tekstem i wszelkie zmiany wprowadzone w pliku XML zostaną utracone.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

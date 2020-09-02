@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249981"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Przewodnik: Ręczne wdrażanie aplikacji ClickOnce

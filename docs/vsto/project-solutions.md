@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985636"
 ---
 # <a name="project-solutions"></a>Rozwiązania projektu
-  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla Microsoft Office Project. Dodatków VSTO można używać do automatyzowania projektu, rozszerzenia funkcji projektu lub dostosowywania interfejsu użytkownika projektu.
+  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera szablony projektów, których można użyć do tworzenia dodatków narzędzi VSTO dla Microsoft Office projektu. Dodatków VSTO można używać do automatyzowania projektu, rozszerzenia funkcji projektu lub dostosowywania interfejsu użytkownika projektu.
 
- Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO, zobacz [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md) i [architektury dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md). Jeśli jesteś nowym sposobem programowania przy użyciu Microsoft Office, zobacz Wprowadzenie [do &#40;programowania Office w programie Visual&#41;Studio](../vsto/getting-started-office-development-in-visual-studio.md).
+ Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO, zobacz [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md) i [architektury dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md). Jeśli jesteś nowym sposobem programowania przy użyciu Microsoft Office, zobacz [wprowadzenie &#40;Programowanie Office w&#41;Visual Studio ](../vsto/getting-started-office-development-in-visual-studio.md).
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
@@ -36,14 +36,14 @@ ms.locfileid: "72985636"
 ## <a name="automate-project-by-using-the-project-object-model"></a>Automatyzowanie projektu przy użyciu modelu obiektów projektu
  Model obiektów projektu ujawnia wiele typów, których można użyć do zautomatyzowania projektu. Te typy umożliwiają pisanie kodu w celu wykonywania typowych zadań, takich jak Programistyczne tworzenie i modyfikowanie zadań w projekcie.
 
- Aby uzyskać dostęp do modelu obiektów projektu z dodatku VSTO, użyj pola `Application` klasy `ThisAddIn` w projekcie. Pole `Application` zwraca obiekt `Microsoft.Office.Interop.MsProject.Application`, który reprezentuje bieżące wystąpienie projektu. Aby uzyskać więcej informacji, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md).
+ Aby uzyskać dostęp do modelu obiektów projektu z dodatku VSTO, użyj `Application` pola `ThisAddIn` klasy w projekcie. `Application`Pole zwraca `Microsoft.Office.Interop.MsProject.Application` obiekt, który reprezentuje bieżące wystąpienie projektu. Aby uzyskać więcej informacji, zobacz [dodatki narzędzi VSTO dla programu](../vsto/programming-vsto-add-ins.md).
 
- Podczas wywoływania do modelu obiektów projektu, należy użyć typów, które są dostępne w podstawowym zestawie międzyoperacyjnym dla projektu. Podstawowy zestaw międzyoperacyjny działa jako Most między zarządzanym kodem w dodatku VSTO i modelem obiektów COM w projekcie. Wszystkie typy w podstawowym zestawie międzyoperacyjnym projektu są zdefiniowane w przestrzeni nazw `Microsoft.Office.Interop.MSProject`. Aby uzyskać więcej informacji na temat podstawowych zestawów międzyoperacyjnych, zobacz temat [programowanie rozwiązań pakietu Office — omówienie &#40;programu VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/office-primary-interop-assemblies.md)
+ Podczas wywoływania do modelu obiektów projektu, należy użyć typów, które są dostępne w podstawowym zestawie międzyoperacyjnym dla projektu. Podstawowy zestaw międzyoperacyjny działa jako Most między zarządzanym kodem w dodatku VSTO i modelem obiektów COM w projekcie. Wszystkie typy w podstawowym zestawie międzyoperacyjnym projektu są zdefiniowane w `Microsoft.Office.Interop.MSProject` przestrzeni nazw. Aby uzyskać więcej informacji na temat podstawowych zestawów międzyoperacyjnych, zobacz [Omówienie tworzenia rozwiązań pakietu office &#40;narzędzi VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) i [podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/office-primary-interop-assemblies.md).
 
 ## <a name="use-the-project-object-model-documentation"></a>Korzystanie z dokumentacji modelu obiektów projektu
  Aby uzyskać pełne informacje na temat modelu obiektów projektu, można odwołać się do dokumentacji modelu obiektów VBA projektu. Dokumentacja modelu obiektów VBA dokumentuje model obiektów projektu, ponieważ jest on uwidoczniony w kodzie Visual Basic for Applications (VBA). Aby uzyskać więcej informacji, zobacz [Dokumentacja modelu obiektów projektu](/office/vba/api/project.object).
 
- Wszystkie obiekty i elementy członkowskie w odwołaniu modelu obiektów VBA odpowiadają typom i elementom członkowskim w podstawowym zestawie międzyoperacyjnym projektu (PIA). Na przykład obiekt Calendar w odniesieniu do modelu obiektów VBA odnosi się do typu `Microsoft.Office.Interop.MSProject.Calendar` w PIA projektu. Mimo że dokumentacja modelu obiektów VBA zawiera przykłady kodu dla większości właściwości, metod i zdarzeń, należy przetłumaczyć kod VBA w tym odwołaniu do Visual Basic lub wizualizacji C# , jeśli chcesz użyć ich w projekcie dodatku VSTO dla projektu, który tworzysz przez za pomocą programu Visual Studio.
+ Wszystkie obiekty i elementy członkowskie w odwołaniu modelu obiektów VBA odpowiadają typom i elementom członkowskim w podstawowym zestawie międzyoperacyjnym projektu (PIA). Na przykład obiekt Calendar w odniesieniu do modelu obiektów VBA odnosi się do `Microsoft.Office.Interop.MSProject.Calendar` typu w PIA projektu. Mimo że dokumentacja modelu obiektów VBA zawiera przykłady kodu dla większości właściwości, metod i zdarzeń, należy przetłumaczyć kod VBA w tym odwołaniu do Visual Basic lub Visual C#, jeśli chcesz użyć ich w projekcie dodatku VSTO dla projektu, który tworzysz przy użyciu programu Visual Studio.
 
 > [!NOTE]
 > W tej chwili nie ma dokumentacji referencyjnej dla podstawowego zestawu międzyoperacyjnego projektu.
@@ -62,10 +62,10 @@ ms.locfileid: "72985636"
 
  Aby uzyskać więcej informacji na temat dostosowywania interfejsu użytkownika programu Project i innych aplikacji Microsoft Office, zobacz temat [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Programowanie rozwiązań pakietu Office &#40;— Omówienie&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Omówienie programowania rozwiązań dla pakietu Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Instrukcje: Tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Dodatki narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md)

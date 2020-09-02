@@ -1,5 +1,5 @@
 ---
-title: 'Obszar testowy 1: Dodawanie do otwierania z kontroli źródła | Dokumentacja firmy Microsoft'
+title: 'Obszar testowy 1: Dodaj do-Otwórz z kontroli źródła | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,78 +12,78 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e7b65eae0dcd71c2ad1bb3d72bf08ea90e69036a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441260"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64814589"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: Dodaj / Otwórz z kontroli źródła
+# <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: Dodaj do lub Otwórz z kontroli źródła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiązań lub projektów pod kontrolą źródła i pobierania ich z kontroli źródła.  
+Ten obszar testowania wtyczki kontroli źródła obejmuje umieszczanie rozwiązań lub projektów pod kontrolą źródła oraz pobieranie ich z kontroli źródła.  
   
-## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
- Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadki testowe:  
+## <a name="command-menu-access"></a>Dostęp do menu poleceń  
+ Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ścieżki menu zintegrowanego środowiska deweloperskiego są używane w przypadkach testowych:  
   
-- Aby uzyskać [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Otwórz z kontroli źródła: **Plik**, **Otwórz**, **projektu**/**rozwiązania**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
+- W przypadku programu [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Otwórz z kontroli źródła: **plik**, **otwarte**, **Project** / **rozwiązanie**projektu; Znajdź [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizację.  
   
-- Dla innych źródła wtyczek kontroli Otwórz z kontroli źródła: **Plik**, **kontroli źródła**, **Otwórz z kontroli źródła**.  
+- W przypadku innych wtyczek kontroli źródła otwórz z kontroli źródła: **plik**, **Kontrola źródła**, **Otwórz z kontroli źródła**.  
   
-- Dodaj do kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj rozwiązanie do pliku kontroli źródła**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**.  
+- Dodaj do kontroli źródła: **plik**, **Kontrola źródła**, **Dodaj rozwiązanie do pliku kontroli źródła**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**.  
   
-- Menu skrótów (projekt/rozwiązanie) **Dodaj rozwiązanie do kontroli źródła**.  
+- Menu skrótów (projekt/rozwiązanie), **Dodaj rozwiązanie do kontroli źródła**.  
   
-- Dodaj z kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**.  
+- Dodaj z kontroli źródła: **plik**, **Kontrola źródła**, **Dodaj projekt z kontroli źródła**.  
   
-- Dla [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Dodaj ze źródła kontrolki jest również dostępna z **pliku**, **Dodaj**, **istniejący projekt**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
+- Dla programu [!INCLUDE[vsvss](../../includes/vsvss-md.md)] , Dodaj z kontroli źródła jest również dostępna z **pliku**, **Dodaj**, **istniejący projekt**. Poszukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
   
     > [!NOTE]
-    > Ścieżka pliku lokalnego lub lokalnych usług IIS (serwer sieci web) może służyć w tym teście.  
+    > W tym teście można użyć ścieżki lokalnego pliku lub lokalnych usług IIS (serwer sieci Web).  
   
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie  
   
-- Dla każdego typu obsługiwanych projektu użytkownik powinien móc "Dodawanie do" i "Otwórz w" kontroli źródła.  
+- Dla każdego obsługiwanego typu projektu użytkownik powinien mieć możliwość "Dodaj do" i "Otwórz z" kontroli źródła.  
   
-- Gdy projekt jest dodawany do kontroli źródła, odpowiedni \< *ProjectName*> .vspscc (plik projektu wskazówka) jest tworzony. Zawiera on wykluczenia pliku listy oraz informacje o połączeniu. Nie usuwaj tego pliku, ponieważ zawiera on informacje specyficzne dla projektu.  
+- Po dodaniu projektu do kontroli źródła \<*ProjectName*> jest tworzony odpowiedni plik. VSPSCC (plik podpowiedzi projektu). Zawiera listę plików wykluczeń i informacje o połączeniu. Nie usuwaj tego pliku, ponieważ zawiera on informacje specyficzne dla projektu.  
   
-- Po dodaniu rozwiązania do kontroli źródła, odpowiedni \< *SolutionName*> zostanie utworzony plik .vssscc (triple S). Plik tekstowy zawiera informacje o połączeniu i pliku listy wykluczeń, podobne do pliku podpowiedzi projektu. Ten plik jest tymczasowe i istnieje tylko w bazie danych kontroli źródła.  
+- Po dodaniu rozwiązania do kontroli źródła \<*SolutionName*> zostanie utworzony odpowiedni plik. VSSSCC (potrójny). Plik tekstowy zawiera informacje o połączeniu i listę plików wykluczeń, podobnie jak w przypadku pliku podpowiedzi projektu. Ten plik jest tymczasowy i istnieje tylko w bazie danych kontroli źródła.  
   
-- Po otwarciu rozwiązania z kontroli źródła, \< *SolutionName*> plik .vsscc (podwójny S), który istnieje tylko w bazie danych kontroli źródła, jest tworzony lokalnie w pliku tymczasowym. Ten plik zawiera ścieżkę folderu połączenia rozwiązania do pliku rozwiązania. Ten plik jest tymczasowe i lokalna kopia jest usuwany po zakończeniu operacji "Otwórz z kontroli źródła".  
+- Gdy rozwiązanie jest otwierane z kontroli źródła, \<*SolutionName*> plik. vsscc (Double S), który istnieje tylko w bazie danych kontroli źródła, jest tworzony lokalnie w pliku tymczasowym. Ten plik zawiera ścieżkę z folderu połączenia rozwiązania do pliku rozwiązania. Ten plik jest tymczasowy, a kopia lokalna jest usuwana po zakończeniu operacji "Otwórz z kontroli źródła".  
   
-- Po projekt jest dodawany do kontroli źródła, można wykonać akcje kontroli źródła na nim (wyewidencjonowania, Pobierz i tak dalej).  
+- Po dodaniu projektu do kontroli źródła można wykonać na nim wszystkie akcje kontroli źródła (wyewidencjonowania, get itd.).  
   
 ## <a name="test-cases"></a>Przypadki testowe  
- Poniżej przedstawiono określonych przypadków testowych do dodawania / Otwórz z kontroli źródła obszar testowy.  
+ Poniżej wymieniono określone przypadki testowe dla obszaru testowego Dodaj/Otwórz z kontroli źródła.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Wielkość 1a: Dodaj rozwiązanie do kontroli źródła  
- Ten przypadek testowy koncentruje się na dodawanie rozwiązania do kontroli źródła.  
+### <a name="case-1a-add-solution-to-source-control"></a>Przypadek 1a: Dodawanie rozwiązania do kontroli źródła  
+ Ten przypadek testowy koncentruje się na dodawaniu rozwiązań do kontroli źródła.  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Dodaj rozwiązania zawierającego projekt klienta do kontroli źródła|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła (**pliku**, **kontroli źródła**, **Dodaj rozwiązanie do kontroli źródła**).|Rozwiązanie lub projekt docelowy został dodany do kontroli źródła.|  
-|Dodaj rozwiązanie, zawierający System plików lub lokalny projekt sieci Web usług IIS do kontroli źródła|1.  Tworzenie systemu plików lub lokalny projekt sieci Web usług IIS (Użyj przycisku Przeglądaj, aby wskazać lokalizację projektu; ścieżka Określa, jakiego typu Projekt sieci Web jest tworzony).<br />2.  Dodaj rozwiązanie do kontroli źródła (**pliku**, **kontroli źródła**, **Dodaj rozwiązanie do kontroli źródła**).|Rozwiązanie lub projekt docelowy został dodany do kontroli źródła.|  
-|Dodaj rozwiązania zawierającego projekt zdalnej witryny sieci Web, do kontroli źródła|1.  Utwórz projekt zdalnej witryny sieci Web.<br />2.  Dodaj rozwiązanie do kontroli źródła (**pliku**, **kontroli źródła**, **Dodaj rozwiązanie do kontroli źródła**).<br />3.  Kliknij przycisk **OK** dostępu FrontPage w oknie dialogowym ostrzeżenia.|Rozwiązanie zostało dodane do kontroli źródła.<br /><br /> Projekt witryny zdalnej nie jest pod kontrolą źródła. (Projekty lokacji zdalnej, muszą być kontrolowane z własnego serwera usług IIS).|  
-|Dodawanie rozwiązania do jednego projektu do kontroli źródła przy użyciu **Dodaj wybrane projekty do kontroli źródła**.|1.  Utwórz rozwiązanie pojedynczego projektu.<br />2.  Dodaj tylko rozwiązanie do kontroli źródła jako zaznaczenia (**pliku**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**). Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />3.  Dodaj projekt do kontroli źródła jako wybór (**pliku**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**).<br />4.  Kliknij przycisk **tak** można dodać projektu do tej samej lokalizacji.<br />5.  Kliknij przycisk **Wyewidencjonuj** w **Sprawdź się zmodyfikować** okno dialogowe.|`Result from Step 2:`<br /><br /> Projekt i wszystkie pliki w projekcie mają wyewidencjonowany się wskaźnik kontroli źródła i jest wyświetlana etykieta "nie pod kontrolą źródła".<br /><br /> `Result from Step 5:`<br /><br /> Pliki projektu i rozwiązania znajdują się w tym samym folderze, w kontroli źródła.|  
-|Anuluj dodawanie rozwiązania do kontroli źródła|1.  Utwórz rozwiązanie pojedynczego projektu.<br />2.  Próba dodania projektu i rozwiązania do kontroli źródła. Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />3.  Anuluj po znajdują się w systemie kontroli źródła.|`Result from Step 2:`<br /><br /> Tylko jeden raz pojawi się okno dialogowe kontroli źródła zestawu projektu lokalizacji.<br /><br /> `Result from Step 3:`<br /><br /> Projekt dodać anulowane, projekt/rozwiązanie nie jest pod kontrolą źródła, a wszystkie dodać do menu kontroli źródła jest nadal dostępna.|  
+|Dodaj rozwiązanie zawierające projekt klienta do kontroli źródła|1. Utwórz projekt klienta.<br />2. Dodaj rozwiązanie do kontroli źródła (**plik**, **Kontrola źródła**, **Dodaj rozwiązanie do kontroli źródła**).|Rozwiązanie/projekt zostało dodane do kontroli źródła.|  
+|Dodaj rozwiązanie zawierające system plików lub lokalny projekt sieci Web usług IIS do kontroli źródła|1. Utwórz system plików lub lokalny projekt sieci Web usług IIS (Użyj przycisku Przeglądaj, aby wskazać lokalizację projektu; ścieżka Określa, jaki typ projektu sieci Web jest tworzony).<br />2. Dodaj rozwiązanie do kontroli źródła (**plik**, **Kontrola źródła**, **Dodaj rozwiązanie do kontroli źródła**).|Rozwiązanie/projekt zostało dodane do kontroli źródła.|  
+|Dodaj rozwiązanie zawierające projekt sieci Web zdalnej witryny do kontroli źródła|1. Utwórz projekt sieci Web zdalnej witryny.<br />2. Dodaj rozwiązanie do kontroli źródła (**plik**, **Kontrola źródła**, **Dodaj rozwiązanie do kontroli źródła**).<br />3. kliknij przycisk **OK** w oknie dialogowym ostrzeżenia dostępu do programu FrontPage.|Dodano rozwiązanie do kontroli źródła.<br /><br /> Projekt witryny zdalnej nie znajduje się pod kontrolą źródła. (Projekty lokacji zdalnych muszą być kontrolowane przez swój własny serwer IIS).|  
+|Dodaj jedno rozwiązanie projektu do kontroli źródła przy użyciu polecenia **Dodaj wybrane projekty do kontroli źródła**.|1. Utwórz rozwiązanie pojedynczego projektu.<br />2. Dodaj tylko rozwiązanie do kontroli źródła jako zaznaczenie (**plik**, **Kontrola źródła**, **Dodaj wybrane projekty do kontroli źródła**). Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />3. Dodaj projekt do kontroli źródła jako zaznaczenie (**plik**, **Kontrola źródła**, **Dodaj wybrane projekty do kontroli źródła**).<br />4. kliknij przycisk **tak** , aby dodać projekt do tej samej lokalizacji.<br />5. kliknij pozycję **Wyewidencjonuj** , **Aby edytować** okno dialogowe.|`Result from Step 2:`<br /><br /> Projekt i wszystkie pliki w projekcie mają sprawdzony wskaźnik kontroli źródła, a etykietka narzędzia wyświetla "nie pod kontrolą źródła".<br /><br /> `Result from Step 5:`<br /><br /> Plik projektu i rozwiązania znajdują się w tym samym folderze w kontroli źródła.|  
+|Anuluj Dodawanie rozwiązania do kontroli źródła|1. Utwórz rozwiązanie pojedynczego projektu.<br />2. Spróbuj dodać projekt i rozwiązanie do kontroli źródła. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />3. Anuluj po przejściu w system kontroli źródła.|`Result from Step 2:`<br /><br /> Okno dialogowe Ustawianie kontroli źródła lokalizacji projektu pojawia się tylko raz.<br /><br /> `Result from Step 3:`<br /><br /> Dodanie projektu zostało anulowane, projekt/rozwiązanie nie znajduje się pod kontrolą źródła i nadal są dostępne wszystkie menu kontroli źródła.|  
   
-### <a name="case-1b-open-solution-from-source-control"></a>1b wielkości liter. Otwórz rozwiązanie z kontroli źródła  
- Ten przypadek testowy koncentruje się na otwarcie rozwiązania z kontroli źródła.  
+### <a name="case-1b-open-solution-from-source-control"></a>Przypadek 1b. Otwórz rozwiązanie z kontroli źródła  
+ Ten przypadek testowy koncentruje się na otwieraniu rozwiązań z kontroli źródła.  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Otwórz rozwiązanie zawierające projekt klienta z kontroli źródła|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zamknij rozwiązanie.<br />4.  Otwórz rozwiązanie z kontroli źródła do nowej lokalizacji.|Otwarte rozwiązanie lub projekt z kontroli źródła.|  
-|Otwórz rozwiązanie zawierające lokalnego lub projektu sieci Web usług IIS z kontroli źródła|1.  Tworzenie lokalnego lub projektu sieci Web usług IIS.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zamknij rozwiązanie.<br />4.  Otwórz rozwiązanie z kontroli źródła do nowej lokalizacji.|Otwarte rozwiązanie lub projekt z kontroli źródła.|  
-|Otwórz rozwiązanie zawierające projekt zdalnej witryny sieci Web z kontroli źródła|1.  Utwórz projekt zdalnej witryny sieci Web.<br />2.  Dodaj rozwiązanie do kontroli źródła. Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />3.  Zamknij rozwiązanie.<br />4.  Otwórz rozwiązanie z kontroli źródła do nowej lokalizacji.|`Result from Step 2:`<br /><br /> Zdalnej witryny sieci Web nie jest pod kontrolą źródła.<br /><br /> `Result from Step 4:`<br /><br /> Otworzyć rozwiązanie z kontroli źródła.<br /><br /> Projekt witryny zdalnej jest ładowany, ale nie jest pod kontrolą źródła.|  
+|Otwórz rozwiązanie zawierające projekt klienta z kontroli źródła|1. Utwórz projekt klienta.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Zamknij rozwiązanie.<br />4. Otwórz rozwiązanie z kontroli źródła w nowej lokalizacji.|Rozwiązanie/projekt otwarty z kontroli źródła.|  
+|Otwórz rozwiązanie zawierające projekt sieci Web lokalny lub IIS z kontroli źródła|1. Utwórz projekt sieci Web lokalny lub IIS.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Zamknij rozwiązanie.<br />4. Otwórz rozwiązanie z kontroli źródła w nowej lokalizacji.|Rozwiązanie/projekt otwarty z kontroli źródła.|  
+|Otwórz rozwiązanie zawierające projekt sieci Web zdalnej witryny z kontroli źródła|1. Utwórz projekt sieci Web zdalnej witryny.<br />2. Dodaj rozwiązanie do kontroli źródła. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />3. Zamknij rozwiązanie.<br />4. Otwórz rozwiązanie z kontroli źródła w nowej lokalizacji.|`Result from Step 2:`<br /><br /> Zdalna witryna sieci Web nie znajduje się pod kontrolą źródła.<br /><br /> `Result from Step 4:`<br /><br /> Rozwiązanie otwarte z kontroli źródła.<br /><br /> Zdalny projekt witryny został załadowany, ale nie znajduje się pod kontrolą źródła.|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>Przypadek 1c: Dodaj rozwiązanie z kontroli źródła  
- Ten przypadek testowy koncentruje się na dodawanie rozwiązań z kontrolą źródła.  
+### <a name="case-1c-add-solution-from-source-control"></a>Przypadek 1c: Dodawanie rozwiązania z kontroli źródła  
+ Ten przypadek testowy koncentruje się na dodawaniu rozwiązań z kontroli źródła.  
   
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwane wyniki do zweryfikowania|  
 |------------|----------------|--------------------------------|  
-|Dodaj do rozwiązania pusty — rozwiązania pojedynczego projektu|1.  Utwórz rozwiązanie pojedynczego projektu.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zamknij rozwiązanie.<br />4.  Utwórz drugi puste rozwiązanie.<br />5.  Dodaj wcześniej kontrolowanego rozwiązanie z kontroli źródła (**pliku**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**).|Dodano projekt, który jest wyświetlany w **Eksploratora rozwiązań** i jest zaewidencjonowany.|  
-|Dodaj do rozwiązania przy użyciu pojedynczego projektu — pojedynczego projektu|1.  Tworzenie rozwiązań za pomocą pojedynczego projektu.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zamknij rozwiązanie.<br />4.  Utwórz drugi puste rozwiązanie.<br />5.  Dodaj wcześniej kontrolowanego rozwiązanie z kontroli źródła (**pliku**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**).|Dodano projekt, który jest wyświetlany w **Eksploratora rozwiązań** i jest zaewidencjonowany.|  
-|Dodaj do rozwiązania — rozwiązanie dodane do kontroli źródła według wyboru|1.  Tworzenie rozwiązania z projektem.<br />2.  Dodaj tylko rozwiązanie do kontroli źródła jako zaznaczenia. Jeśli ta czynność zakończy się powodzeniem, przejdź do następnego kroku.<br />3.  Zamknij rozwiązanie.<br />4.  Utwórz nowe rozwiązanie.<br />5.  Dodaj wcześniej kontrolowanego rozwiązanie z kontroli źródła (**pliku**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**).|`Result from Step 2:`<br /><br /> Projekt nie jest pod kontrolą źródła.<br /><br /> `Result from Step 5:`<br /><br /> Jeśli pierwsze rozwiązanie elementy rozwiązania, nie można ich dodać z poziomu kontroli źródła, więc nie są wyświetlane.<br /><br /> Projekt z pierwszego rozwiązania pojawia się jako niedostępny.|  
+|Dodaj do pustego rozwiązania — jedno rozwiązanie projektu|1. Utwórz rozwiązanie pojedynczego projektu.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Zamknij rozwiązanie.<br />4. Utwórz drugie puste rozwiązanie.<br />5. Dodaj poprzednio kontrolowane rozwiązanie z kontroli źródła (**plik**, **Kontrola źródła**, **Dodaj projekt z kontroli źródła**).|Dodany projekt pojawia się w **Eksplorator rozwiązań** i jest zaewidencjonowany.|  
+|Dodaj do rozwiązania z pojedynczym projektem — pojedynczy projekt|1. Utwórz rozwiązanie z pojedynczym projektem.<br />2. Dodaj rozwiązanie do kontroli źródła.<br />3. Zamknij rozwiązanie.<br />4. Utwórz drugie puste rozwiązanie.<br />5. Dodaj poprzednio kontrolowane rozwiązanie z kontroli źródła (**plik**, **Kontrola źródła**, **Dodaj projekt z kontroli źródła**).|Dodany projekt pojawia się w **Eksplorator rozwiązań** i jest zaewidencjonowany.|  
+|Dodaj do rozwiązania — rozwiązanie dodane do kontroli źródła według wyboru|1. Utwórz rozwiązanie z projektem.<br />2. Dodaj tylko rozwiązanie do kontroli źródła jako zaznaczenie. Jeśli ten krok zakończy się pomyślnie, przejdź do następnego kroku.<br />3. Zamknij rozwiązanie.<br />4. Utwórz nowe rozwiązanie.<br />5. Dodaj poprzednio kontrolowane rozwiązanie z kontroli źródła (**plik**, **Kontrola źródła**, **Dodaj projekt z kontroli źródła**).|`Result from Step 2:`<br /><br /> Projekt nie znajduje się pod kontrolą źródła.<br /><br /> `Result from Step 5:`<br /><br /> Jeśli pierwsze rozwiązanie ma elementy rozwiązania, nie można ich dodać z kontroli źródła, więc nie są wyświetlane.<br /><br /> Projekt z pierwszego rozwiązania jest wyświetlany jako niedostępny.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

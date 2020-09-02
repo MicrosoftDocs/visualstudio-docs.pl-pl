@@ -1,5 +1,5 @@
 ---
-title: Konfiguracja rozwiązania | Dokumentacja firmy Microsoft
+title: Konfiguracja rozwiązania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432095"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64813079"
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Konfiguracje rozwiązania przechowywania właściwości poziomie rozwiązania. Bezpośrednie ich zachowanie **Start** klucza (F5) i **kompilacji** poleceń. Domyślnie te polecenia kompilacji i uruchomić z konfiguracji debugowania. Oba polecenia są wykonywane w kontekście konfiguracji rozwiązania. Oznacza to, czy użytkownika można oczekiwać, że F5 do uruchamiania i kompilacji, niezależnie od aktywnego rozwiązania są konfigurowane za pomocą ustawień. Środowisko zaprojektowano pod kątem rozwiązań, a nie z projektów, jeśli chodzi o tworzenie i uruchamianie.  
+Konfiguracje rozwiązań przechowują właściwości na poziomie rozwiązania. Kierują one zachowanie klawisza **Start** (F5) i poleceń **kompilacji** . Domyślnie te polecenia kompilują i uruchamiają konfigurację debugowania. Oba polecenia są wykonywane w kontekście konfiguracji rozwiązania. Oznacza to, że użytkownik może oczekiwać, że od F5 rozpocznie się i skompiluje dowolne aktywne rozwiązanie za pośrednictwem ustawień. Środowisko jest przeznaczone do optymalizowania rozwiązań, a nie projektów, gdy chodzi o Kompilowanie i uruchamianie.  
   
- Standardowy pasek narzędzi programu Visual Studio zawiera przycisk Start i Konfiguracja rozwiązania listy rozwijanej z prawej strony przycisk Start. Ta lista pozwala użytkownikom wybrać konfigurację można uruchomić po naciśnięciu klawisza F5, tworzyć własne konfiguracje rozwiązań lub Edytuj istniejącą konfigurację.  
+ Standardowy pasek narzędzi programu Visual Studio zawiera przycisk Start i listę rozwijaną konfiguracji rozwiązania po prawej stronie przycisku Start. Ta lista umożliwia użytkownikom wybranie konfiguracji, która ma zostać uruchomiona po naciśnięciu klawisza F5, utworzenie własnych konfiguracji rozwiązań lub edytowanie istniejącej konfiguracji.  
   
 > [!NOTE]
-> Nie ma żadnych interfejsów rozszerzalności do tworzenia lub edytowania konfiguracje rozwiązania. Należy użyć `DTE.SolutionBuilder`. Istnieją jednak rozszerzalności interfejsów API do zarządzania budowanie rozwiązania. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
+> Brak interfejsów rozszerzalności do tworzenia lub edytowania konfiguracji rozwiązania. Musisz użyć `DTE.SolutionBuilder` . Istnieją jednak interfejsy API rozszerzalności do zarządzania kompilacją rozwiązania. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
   
- Poniżej przedstawiono, jak można implementować konfiguracje rozwiązania obsługiwany przez użytkownika typ projektu:  
+ Oto jak można zaimplementować konfiguracje rozwiązań obsługiwane przez typ projektu:  
   
 - Projekt  
   
-   Wyświetla nazwy projektów w bieżącym rozwiązaniu.  
+   Wyświetla nazwy projektów znalezionych w bieżącym rozwiązaniu.  
   
 - Konfiguracja  
   
-   Podaj listę konfiguracje obsługiwane przez danego typu projektu i wyświetlane na stronach właściwości wdrożenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.  
+   Aby zapewnić listę konfiguracji obsługiwanych przez typ projektu i wyświetlane na stronach właściwości, zaimplementuj <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> .  
   
-   Kolumna konfiguracji Wyświetla nazwę konfiguracji projektu do kompilacji w tej konfiguracji rozwiązania i wyświetla listę wszystkich konfiguracji projektu, po kliknięciu przycisk strzałki. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> metodę, aby wypełnić tej listy. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> metody oznacza, że projekt obsługuje edycji konfiguracji, nowe lub Edytuj wybrane opcje są również wyświetlane w pozycji konfiguracji. Każda z tych opcji Uruchom okna dialogowe, które wywołują metody `IVsCfgProvider2` interfejsu do edycji konfiguracji projektu.  
+   W kolumnie konfiguracja zostanie wyświetlona nazwa konfiguracji projektu do skompilowania w tej konfiguracji rozwiązania i zostanie wyświetlona lista wszystkich konfiguracji projektu po kliknięciu przycisku strzałki. Środowisko wywołuje metodę, <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> Aby wypełnić tę listę. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> Metoda wskazuje, że projekt obsługuje edycję konfiguracji, w nagłówku konfiguracji są również wyświetlane opcje nowe lub Edycja. Każdy z tych opcji uruchamia okna dialogowe, które wywołują metody `IVsCfgProvider2` interfejsu w celu edycji konfiguracji projektu.  
   
-   Jeśli projekt nie obsługuje konfiguracji, w kolumnie konfiguracji wyświetla Brak i jest wyłączone.  
+   Jeśli projekt nie obsługuje konfiguracji, w kolumnie konfiguracja jest wyświetlana wartość Brak i jest ona wyłączona.  
   
 - Platforma  
   
-   Wyświetla platformę konfiguracji wybranego projektu kompilacji dla oraz listę wszystkich dostępnych platform dla projektu, po kliknięciu przycisk strzałki. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> metodę, aby wypełnić tej listy. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> metody oznacza, że projekt obsługuje edytowania platform, nowe lub Edytuj wybrane opcje są również wyświetlane pod nagłówkiem platformy. Każda z tych opcji Uruchom okna dialogowe, które wywołują `IVsCfgProvider2` metody służące do edycji projektu dostępnych platform.  
+   Wyświetla platformę, dla której kompilacja wybranej konfiguracji projektu i wyświetla listę wszystkich dostępnych platform dla projektu po kliknięciu przycisku strzałki. Środowisko wywołuje metodę, <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> Aby wypełnić tę listę. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> Metoda wskazuje, że projekt obsługuje edycję platformy, w obszarze nagłówek platformy są również wyświetlane opcje nowe lub Edycja. Każdy z tych opcji uruchamia okna dialogowe, które wywołują `IVsCfgProvider2` metody, aby edytować dostępne platformy projektu.  
   
-   Jeśli projekt nie obsługuje platformy, w kolumnie platformy dla tego projektu Brak Wyświetla i jest wyłączone.  
+   Jeśli projekt nie obsługuje platform, kolumna platformy dla tego projektu nie wyświetla i jest wyłączona.  
   
 - Kompilacja  
   
-   Określa, czy projekt jest kompilowany za pomocą bieżącej konfiguracji rozwiązania. Niewybrane projekty są kompilowane podczas wywoływania poleceń kompilacji poziomie rozwiązania niezależnie od wszelkich zależności projektu, które zawierają. Nie wybrano projektów do zbudowania nadal będą uwzględniane w debugowanie, uruchamianie, pakowania i wdrażania rozwiązania.  
+   Określa, czy projekt został skompilowany przez bieżącą konfigurację rozwiązania. Niewybrane projekty nie są kompilowane, gdy polecenia kompilacji na poziomie rozwiązania są wywoływane pomimo wszelkich zawartych w nim zależności projektu. Projekty, które nie zostały wybrane do skompilowania, są nadal objęte debugowaniem, uruchamianiem, pakowaniem i wdrażaniem rozwiązania.  
   
-- Deploy  
+- Wdrażanie  
   
-   Określa, czy stosowania poleceń uruchamiania lub Wdróż przy użyciu wybranego rozwiązania konfiguracji kompilacji zostanie wdrożony projekt. Pole wyboru dla tego pola będą dostępne, jeśli projekt obsługuje wdrażania przez zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejs w jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> obiektu.  
+   Określa, czy projekt zostanie wdrożony, gdy polecenia Uruchom lub Wdróż zostaną użyte z wybraną konfiguracją kompilacji rozwiązania. Pole wyboru dla tego pola będzie dostępne, jeśli projekt obsługuje wdrażanie przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu w jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> obiekcie.  
   
-  Po dodaniu nowej konfiguracji rozwiązania, użytkownik może wybrać go z konfiguracji rozwiązania pola listy rozwijanej na standardowym pasku narzędzi do kompilacji i/lub uruchom tę konfigurację.  
+  Po dodaniu nowej konfiguracji rozwiązania użytkownik może wybrać ją z listy rozwijanej Konfiguracja rozwiązania na pasku narzędzi Standardowy, aby skompilować i/lub uruchomić tę konfigurację.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md)   
- [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)   
+ [Konfiguracja projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)   
  [Obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md)

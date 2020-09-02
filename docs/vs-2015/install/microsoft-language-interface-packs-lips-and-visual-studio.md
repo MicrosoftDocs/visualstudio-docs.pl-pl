@@ -1,5 +1,5 @@
 ---
-title: Pakiety języka Microsoft interfejsu (użytkownika LIP) | Dokumentacja firmy Microsoft
+title: Pakiety Microsoft Language Interface Pack (lip) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -19,88 +19,88 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432998"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64814325"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Pakiety języka interfejsu użytkownika (LIP) firmy Microsoft a program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Za pomocą pakietu interfejsu Windows Language (LIP), można zainstalować Windows w wersji językowej, a następnie zainstaluj różne pakiety języka interfejsu użytkownika. Pakiety języka interfejsu użytkownika udostępniają interfejs zlokalizowane użytkownika (UI) dla systemu operacyjnego. Na przykład można zainstalować japoński pakiet językowy na angielskiej wersji systemu Windows i następnie zmianę języka interfejsu użytkownika Windows między kalendarza japońskiego i język angielski. Za pomocą lip, może mieć wielu wersji językowych programu Windows na jednym komputerze.
+Za pomocą pakietu Windows Language Pack (LIP) można zainstalować wersję językową systemu Windows, a następnie zainstalować różne pakiety językowe interfejsu użytkownika. Pakiety językowe interfejsu użytkownika zapewniają zlokalizowany interfejs użytkownika dla systemu operacyjnego. Na przykład można zainstalować pakiet języka japońskiego w wersji angielskiej systemu Windows, a następnie przełączyć język interfejsu użytkownika systemu Windows między językiem japońskim i angielskim. Korzystając z pakietów lip, można mieć wiele wersji językowych systemu Windows na jednym komputerze.
 
- Na komputerach, które mają LIP i wiele wersji językowych programu Visual Studio zmiana Windows Ustawienia języka wyświetlania powoduje zarówno Windows, jak i programu Visual Studio po zainstalowaniu zgodnych pakietów językowych.
+ Na komputerach, na których zainstalowano pakiety lip i wiele wersji językowych programu Visual Studio, zmiana ustawień języka wyświetlania systemu Windows ustawia zarówno system Windows, jak i program Visual Studio, gdy są zainstalowane odpowiednie pakiety językowe.
 
-## <a name="limitations-of-multi-language-installations"></a>Ograniczenia urządzeń wiele języków
- Podczas instalowania różnych wersji językowych programu Visual Studio na tym samym komputerze, można przełączyć tylko języki między wersjami dopasowania. Na przykład jeśli masz angielskiej wersji Express zainstalowane, niemieckiej wersji Express jest zainstalowany i zainstalowany w wersji Professional, języków można przełączyć tylko w przypadku wersji Express, a nie w wersji Professional.
+## <a name="limitations-of-multi-language-installations"></a>Ograniczenia instalacji wielojęzycznych
+ W przypadku instalowania różnych wersji językowych programu Visual Studio na tym samym komputerze, można przełączać tylko języki między zgodnymi wersjami. Jeśli na przykład masz zainstalowaną angielską wersję Express Edition, zainstalowano Niemieckią wersję Express, a wersja Professional Edition, można przełączać tylko języki dla wersji Express, a nie dla wersji Professional.
 
- Visual Studio korzysta z pakietu językowego ujednoliconego. Aby zainstalować więcej niż jedną wersję językową tych produktów, należy najpierw zainstalować produkt z pełną obsługą języka, a następnie zainstaluj jeden lub więcej pakietów językowych.
+ Program Visual Studio używa ujednoliconego pakietu językowego. Aby zainstalować więcej niż jedną wersję językową tych produktów, należy najpierw zainstalować pełen produkt językowy, a następnie zainstalować jeden lub więcej pakietów językowych.
 
 > [!NOTE]
-> Program Visual Studio nie obsługuje instalowanie wielu wersji językowych produktu z pełną obsługą języka na tym samym komputerze. Po zainstalowaniu jeden produkt z pełną obsługą języka, należy dodać wersje językowe przy użyciu pakietów językowych. Nadal można zainstalować wiele produktów pełną obsługą języka w wersji Express na tym samym komputerze.
+> Program Visual Studio nie obsługuje instalowania wielu wersji językowych produktu na tym samym komputerze. Po zainstalowaniu jednego pełnego produktu językowego należy dodać wersje językowe przy użyciu pakietów językowych. Można nadal instalować wiele pełnych produktów językowych wersji Express na tym samym komputerze.
 
 ### <a name="support-for-code-pages"></a>Obsługa stron kodowych
- Niektóre narzędzia programu Visual Studio nie są wyświetlane tekst poprawnie, gdy tekst zawiera znaki, które nie znajdują się w bieżącej stronie kodowej. Zamiast tego są wyświetlane znaki zapytania lub tekstu jest uszkodzony. Uwzględnione są następujące narzędzia lub obszarów:
+ Niektóre narzędzia Visual Studio nie wyświetlają poprawnie tekstu, gdy tekst zawiera znaki, które nie znajdują się na bieżącej stronie kodowej. Zamiast tego pojawiają się znaki zapytania lub tekst jest uszkodzony. Dotyczy to następujących narzędzi lub obszarów:
 
-- Lokacje wdrożyć przy użyciu protokołu FTP.
+- Lokacje wdrożone przy użyciu protokołu FTP.
 
-- Nazwy komputerów spoza zestawu ASCII w niektóre kontrolki.
+- Nazwy komputerów innych niż ASCII w niektórych kontrolkach.
 
-- Narzędzia wiersza polecenia, które Uruchom poza programem Visual Studio.
+- Narzędzia wiersza polecenia, które działają poza programem Visual Studio.
 
-- Kreator migracji programu Visual Basic.
+- Kreator migracji Visual Basic.
 
 - Kontener testu kontrolki ActiveX.
 
-- OLE/COM Object Viewer.
+- Przeglądarka obiektów OLE/COM.
 
-- Narzędzia debugowania w sieci Web interfejsu ISAPI.
+- Narzędzie debugowania sieci Web dla interfejsu ISAPI.
 
-- Projekty aplikacji MFC, które mają zawartość pomocy w formacie HTML.
+- Projekty aplikacji MFC, które mają zawartość pomocy HTML.
 
-- Visual SourceSafe / interfejsu użytkownika SCCI powraca do języka angielskiego po stronie niezgodnego kodu.
+- Interfejs użytkownika programu Visual SourceSafe/SCCI powraca do języka angielskiego, gdy jest niezgodna strona kodowa.
 
-- Visual SourceSafe nie obsługuje nazwy plików Unicode.
+- Program Visual SourceSafe nie obsługuje nazw plików Unicode.
 
-- Zdefiniowane przez użytkownika końcowego znaków (Korzystanie z prywatnej strefy) nie może służyć jako tokenów/identyfikatorów.
+- Znaki zdefiniowane przez użytkownika (prywatna strefa use) nie mogą być używane jako tokeny/identyfikatory.
 
-- Nie można wyświetlić znaki alfabetu łacińskiego Extended-B w niektórych okien narzędzi, gdy strona kodowa Windows jest ustawiony język wschodnioazjatyckich programu Visual Studio.
+- Znaki łacińskie Extended-B nie mogą być wyświetlane w niektórych oknach narzędzi programu Visual Studio, gdy strona kodowa systemu Windows jest ustawiona na język wschodnioazjatycki.
 
-- Domyślnego symbolu dla niektórych znaków mogą być wyświetlane uruchomienia tekstu, które składają się ze znaków z wielu skryptów języka.
+- W przypadku tekstów zawierających znaki z wielu skryptów języka może być wyświetlany domyślny symbol dla niektórych znaków.
 
-- Kopiowanie i wklejanie skryptów złożonych ciągów do wspólnych formantów, może spowodować znak kształtowania, zostanie utracone. Zamiast tego należy użyć odpowiedniego języka klawiatury do wprowadzania tekstu.
+- Kopiowanie i wklejanie złożonych ciągów skryptu do wspólnych kontrolek może spowodować utratę kształtu znaków. Zamiast tego należy użyć odpowiedniej klawiatury języka do wprowadzania tekstu.
 
-##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>Aby poprawnie wyświetlić znaki, które nie są uwzględnione w bieżącej stronie kodowej
+##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>Aby poprawnie wyświetlić znaki, które nie znajdują się na bieżącej stronie kodowej
 
-1. Kliknij przycisk **Start**, kliknij przycisk **Panelu sterowania**, a następnie otwórz **Opcje regionalne i językowe** (lub **Region** w [!INCLUDE[win8](../includes/win8-md.md)]).
+1. Kliknij przycisk **Start**, kliknij pozycję **Panel sterowania**, a następnie otwórz **Opcje regionalne i językowe** (lub **region** w programie [!INCLUDE[win8](../includes/win8-md.md)] ).
 
     > [!NOTE]
-    > Musi być administratorem na komputerze, wykonaj następujące kroki.
+    > Aby wykonać te kroki, musisz być administratorem na komputerze.
 
-2. Kliknij przycisk **zaawansowane** kartę.
+2. Kliknij kartę **Zaawansowane**.
 
-3. W **wybierz język, aby dopasować wersję językową programy innego niż Unicode, którego chcesz użyć** listy, wybierz język, którego obecnie używasz.
+3. Z listy **Wybierz język, aby dopasować wersję językową programów innych niż Unicode, których chcesz użyć** , wybierz język, który jest aktualnie używany.
 
 4. Kliknij przycisk **OK**.
 
-## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Zmiana języka w tekst interfejsu użytkownika w programie Visual Studio
- Podczas instalowania wielu wersji językowych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na tym samym komputerze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejsu użytkownika, wartość domyślna to **taki sam jak Microsoft Windows**. To ustawienie wskazuje, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyświetli tekst interfejsu użytkownika w języku, który jest określony jako język wyświetlania systemu operacyjnego.
+## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Zmiana języka używanego dla tekstu interfejsu użytkownika w programie Visual Studio
+ W przypadku instalowania wielu wersji językowych programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na tym samym komputerze, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfejs użytkownika jest domyślnie **taki sam jak Microsoft Windows**. To ustawienie wskazuje, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] program będzie wyświetlał tekst interfejsu użytkownika w języku, który jest określony jako język wyświetlania systemu operacyjnego.
 
 > [!NOTE]
-> Jeśli program Visual Studio jest skonfigurowany do używania **taki sam jak Microsoft Windows**i dopasowywania pakiet językowy programu Visual Studio nie jest zainstalowany, program Visual Studio będzie używać języka pierwszej instalacji programu Visual Studio.
+> Jeśli program Visual Studio jest ustawiony do użycia **tak samo jak Microsoft Windows**, a nie zainstalowano zgodnego pakietu językowego programu Visual Studio, program Visual Studio użyje języka pierwszej instalacji programu Visual Studio.
 
-#### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Aby ustawić język, który jest używany tekst interfejsu użytkownika w programie Visual Studio
+#### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Aby ustawić język używany dla tekstu interfejsu użytkownika w programie Visual Studio
 
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
-2. W **opcje** okna dialogowego rozwiń **środowiska** a następnie kliknij przycisk **ustawienia międzynarodowe**.
+2. W oknie dialogowym **Opcje** rozwiń węzeł **środowisko** , a następnie kliknij pozycję **Ustawienia międzynarodowe**.
 
-3. W **języka** , wybierz język, w którym powinna zostać wyświetlona tekst interfejsu użytkownika w środowisku programistycznym.
+3. Na liście **Język** wybierz język, w którym tekst interfejsu użytkownika powinien być wyświetlany w środowisku deweloperskim.
 
-    Aby tekst interfejsu użytkownika w zgodne środowisko IDE języka wyświetlania systemu operacyjnego, ustawienie, zaznacz **taki sam jak Microsoft Windows**.
+    Aby tekst interfejsu użytkownika w środowisku IDE odpowiadał ustawieniu języka wyświetlania systemu operacyjnego, wybierz **taki sam jak system Microsoft Windows**.
 
-   Można również użyć polecenia devenv Aby ustawić język, który służy do interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).
+   Możesz również użyć polecenia devenv, aby ustawić język używany przez interfejs użytkownika. Aby uzyskać więcej informacji, zobacz [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).
 
 ## <a name="see-also"></a>Zobacz też
  [Ustawienia międzynarodowe, Środowisko, Opcje — okno dialogowe](../ide/reference/international-settings-environment-options-dialog-box.md)

@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183820"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie symboli (. pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic, F #)
@@ -81,7 +81,7 @@ Debuger szuka również plików symboli w następujących lokalizacjach:
 
    - Każdy lokalny folder pamięci podręcznej symboli.
 
-   - Określona sieć, Internet lub lokalne serwery symboli i lokalizacje, takie jak serwery symboli firmy Microsoft, jeśli zostały wybrane. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]może pobierać pliki symboli debugowania z serwerów symboli, które implementują `symsrv` protokół. [Program Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) i [narzędzia debugowania dla systemu Windows](/windows-hardware/drivers/debugger/index) to dwa narzędzia, które mogą korzystać z serwerów symboli.
+   - Określona sieć, Internet lub lokalne serwery symboli i lokalizacje, takie jak serwery symboli firmy Microsoft, jeśli zostały wybrane. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] może pobierać pliki symboli debugowania z serwerów symboli, które implementują `symsrv` protokół. [Program Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) i [narzędzia debugowania dla systemu Windows](/windows-hardware/drivers/debugger/index) to dwa narzędzia, które mogą korzystać z serwerów symboli.
 
      Serwery symboli, których można użyć, to m.in.:
 
@@ -141,7 +141,7 @@ Na stronie **Tools**  >  **Opcje**narzędzi  >  **debugowania**  >  **symboli** 
 
    - Aby załadować tylko moduły określone z lokalizacji pliku symboli, wybierz opcję **Załaduj tylko określone moduły**. Wybierz pozycję **Określ uwzględnione moduły**, wybierz **+** ikonę, wpisz nazwy modułów do uwzględnienia, a następnie wybierz przycisk **OK**. Pliki symboli dla innych modułów nie są ładowane.
 
-5. Wybierz przycisk **OK**.
+5. Wybierz pozycję **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Inne opcje symboli na potrzeby debugowania
 
@@ -159,14 +159,14 @@ Możesz wybrać dodatkowe opcje symboli w opcji **Narzędzia**  >  **Options**  
   <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
 - **Włącz obsługę serwera źródłowego**
 
-  Używa serwera źródłowego do debugowania aplikacji, gdy na komputerze lokalnym nie ma kodu źródłowego lub plik *. pdb* nie pasuje do kodu źródłowego. Serwer źródłowy przyjmuje żądania dotyczące plików i zwraca rzeczywiste pliki z kontroli źródła. Serwer źródłowy jest uruchamiany przy użyciu biblioteki DLL o nazwie *srcsrv. dll* , aby odczytać plik *. pdb* aplikacji. Plik *. pdb* zawiera wskaźniki do repozytorium kodu źródłowego, a także polecenia używane do pobierania kodu źródłowego z repozytorium.
+  Używa serwera źródłowego do debugowania aplikacji, gdy na komputerze lokalnym nie ma kodu źródłowego lub plik *. pdb* nie pasuje do kodu źródłowego. Serwer źródłowy przyjmuje żądania dotyczące plików i zwraca rzeczywiste pliki z kontroli źródła. Serwer źródłowy jest uruchamiany przy użyciu biblioteki DLL o nazwie *srcsrv.dll* , aby odczytać plik *. pdb* aplikacji. Plik *. pdb* zawiera wskaźniki do repozytorium kodu źródłowego, a także polecenia używane do pobierania kodu źródłowego z repozytorium.
 
-  Można ograniczyć polecenia, które *srcsrv. dll* mogą być wykonywane z pliku *. pdb* aplikacji, wyświetlając listę dozwolonych poleceń w pliku o nazwie *srcsrv. ini*. Umieść plik *srcsrv. ini* w tym samym folderze, co *srcsrv. dll* i *devenv. exe*.
+  Można ograniczyć polecenia, które *srcsrv.dll* mogą być wykonywane z pliku *. pdb* aplikacji, wyświetlając listę dozwolonych poleceń w pliku o nazwie *srcsrv.ini*. Umieść plik *srcsrv.ini* w tym samym folderze co *srcsrv.dll* i *devenv.exe*.
 
   >[!IMPORTANT]
-  >Dowolne polecenia mogą być osadzone w pliku *. pdb* aplikacji, więc upewnij się, że umieścisz tylko te polecenia, które chcesz wykonać w pliku *srcsrv. ini* . Każda próba wykonania polecenia, które nie znajduje się w pliku *pliku srcsvr. ini* , spowoduje wyświetlenie okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [Ostrzeżenie o zabezpieczeniach: debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >Dowolne polecenia mogą być osadzone w pliku *. pdb* aplikacji, więc upewnij się, że umieścisz tylko te polecenia, które chcesz wykonać w pliku *srcsrv.ini* . Każda próba wykonania polecenia, które nie znajduje się w pliku *srcsvr.ini* , spowoduje wyświetlenie okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [Ostrzeżenie o zabezpieczeniach: debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
-  >Nie jest sprawdzana poprawność parametrów poleceń, więc należy być ostrożnym z poleceniami zaufanymi. Na przykład jeśli w *pliku srcsrv. ini*zostało wyświetlone polecenie *cmd. exe* , złośliwy użytkownik może określić parametry w programie *cmd. exe* , które byłyby niebezpieczne.
+  >Nie jest sprawdzana poprawność parametrów poleceń, więc należy być ostrożnym z poleceniami zaufanymi. Na przykład jeśli na liście *srcsrv.ini*wymieniono *cmd.exe* , złośliwy użytkownik może określić parametry *cmd.exe* , które byłyby niebezpieczne.
 
   Wybierz ten element i elementy podrzędne, które chcesz. **Zezwalaj na serwer źródłowy dla zestawów częściowej relacji zaufania (tylko zarządzany)** i **Zawsze uruchamiaj niezaufane polecenia serwera źródłowego bez monitowania** mogą zwiększyć zagrożenia bezpieczeństwa.
 
@@ -182,21 +182,21 @@ Kompiluj z opcją **/Debug** , aby utworzyć plik *. pdb* . Możesz tworzyć apl
 
 ### <a name="cc-options"></a>Opcje C/C++
 
-- *VC \< x>. pdb* i * \< Project> pliki. pdb*
+- Pliki *VC \<x> . pdb* i * \<project> . pdb*
 
-  Plik *. pdb* dla C/C++ jest tworzony podczas kompilowania z [/Zi lub/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format). W programie [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] opcja [/FD](/cpp/build/reference/fd-program-database-file-name) nazywa plik *. pdb* tworzony przez kompilator. Podczas tworzenia projektu w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu środowiska IDE opcja **/FD** jest ustawiona na tworzenie pliku *. pdb* o nazwie * \< Project>. pdb*.
+  Plik *. pdb* dla C/C++ jest tworzony podczas kompilowania z [/Zi lub/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format). W programie [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] opcja [/FD](/cpp/build/reference/fd-program-database-file-name) nazywa plik *. pdb* tworzony przez kompilator. Podczas tworzenia projektu w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu środowiska IDE opcja **/FD** jest ustawiona na tworzenie pliku *. pdb* o nazwie * \<project> . pdb*.
 
   W przypadku kompilowania aplikacji C/C++ przy użyciu pliku reguł programu make i określenia **/Zi** lub **/Zi** bez użycia **/FD**, kompilator tworzy dwa pliki *. pdb* :
 
-  - *VC \< x>. pdb*, gdzie * \< x>* reprezentuje wersję kompilatora Microsoft C++, na przykład *VC11. pdb*
+  - *VC \<x> . pdb*, gdzie *\<x>* reprezentuje wersję kompilatora języka Microsoft C++, na przykład *VC11. pdb*
 
-    Plik *VC \< x>. pdb* przechowuje wszystkie informacje o debugowaniu dla poszczególnych plików obiektów i znajduje się w tym samym katalogu, co projekt reguł programu make. Za każdym razem, gdy tworzy plik obiektu, kompilator C/C++ scala informacje debugowania do pliku *VC \< x>. pdb*. Nawet jeśli każdy plik źródłowy zawiera wspólne pliki nagłówkowe, takie jak * \< Windows. h>*, definicje TypeDef z tych nagłówków są przechowywane tylko raz, a nie w każdym pliku obiektu. Wstawione informacje zawierają informacje o typie, ale nie zawierają informacji o symbolach, takich jak definicje funkcji.
+    Plik *VC \<x> . pdb* przechowuje wszystkie informacje o debugowaniu dla poszczególnych plików obiektów i znajduje się w tym samym katalogu, w którym znajduje się projekt reguł programu make. Za każdym razem, gdy tworzy plik obiektu, kompilator C/C++ scala informacje debugowania do pliku *VC \<x> . pdb*. Nawet jeśli każdy plik źródłowy zawiera wspólne pliki nagłówkowe, takie jak *\<windows.h>* , definicje TypeDef z tych nagłówków są przechowywane tylko raz, a nie w każdym pliku obiektu. Wstawione informacje zawierają informacje o typie, ale nie zawierają informacji o symbolach, takich jak definicje funkcji.
 
-  - *\<projekt>. pdb*
+  - *\<project>. pdb*
 
-    Plik * \<> projektu. pdb* przechowuje wszystkie informacje debugowania dla pliku *. exe* projektu i znajduje się w podkatalogu *\debug.* . Plik * \<> projektu. pdb* zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, a nie tylko informacje o typie Znalezione w pliku *VC \< x>. pdb*.
+    Plik * \<project> . pdb* przechowuje wszystkie informacje debugowania dla pliku *. exe* projektu i znajduje się w podkatalogu *\debug.* . Plik * \<project> . pdb* zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, a nie tylko informacje o typie Znalezione w pliku *VC \<x> . pdb*.
 
-  Zarówno pliki *VC \< x>. pdb* i * \< Project>. pdb* umożliwiają aktualizacje przyrostowe. Konsolidator osadza także ścieżkę do plików *. pdb* w pliku *. exe* lub *. dll* , który tworzy.
+  Pliki *VC \<x> . pdb* i * \<project> . pdb* zezwalają na aktualizacje przyrostowe. Konsolidator osadza także ścieżkę do plików *. pdb* w pliku *. exe* lub *. dll* , który tworzy.
 
 - <a name="use-dumpbin-exports"></a>Tabele eksportu biblioteki DLL
 
@@ -206,7 +206,7 @@ Kompiluj z opcją **/Debug** , aby utworzyć plik *. pdb* . Możesz tworzyć apl
 
 ### <a name="web-applications"></a>Aplikacje internetowe
 
-Ustaw plik *Web. config* aplikacji ASP.NET na tryb debugowania. Tryb debugowania powoduje, że ASP.NET generuje symbole dla dynamicznie generowanych plików i umożliwia debugerowi dołączenie do aplikacji ASP.NET. Program Visual Studio automatycznie ustawia to podczas uruchamiania debugowania, jeśli projekt został utworzony z szablonu projektów sieci Web.
+Ustaw *web.config* plik aplikacji ASP.NET na tryb debugowania. Tryb debugowania powoduje, że ASP.NET generuje symbole dla dynamicznie generowanych plików i umożliwia debugerowi dołączenie do aplikacji ASP.NET. Program Visual Studio automatycznie ustawia to podczas uruchamiania debugowania, jeśli projekt został utworzony z szablonu projektów sieci Web.
 
 ## <a name="manage-symbols-while-debugging"></a>Zarządzaj symbolami podczas debugowania
 
@@ -245,7 +245,7 @@ W takim przypadku debuger wyświetli **nie załadowane symbole** lub **nie zała
 **Aby użyć strony "Brak załadowanych symboli", aby pomóc znaleźć i załadować brakujące symbole:**
 
 - Aby zmienić ścieżkę wyszukiwania, wybierz niewybraną ścieżkę lub wybierz opcję **Nowa ścieżka** lub Nowa ścieżka **VSTS** i wprowadź lub wybierz nową ścieżkę. Wybierz pozycję **Załaduj** , aby ponownie przeszukać ścieżki i załadować plik symboli, jeśli zostanie znaleziony.
-- Aby zastąpić wszelkie opcje symboli i ponowić próbę ścieżki wyszukiwania, wybierz pozycję **Przeglądaj i znajdź \<>nazwy pliku wykonywalnego **. Plik symboli jest ładowany, jeśli zostanie odnaleziony, lub otwiera się **Eksplorator plików** , aby można było ręcznie wybrać plik symboli.
+- Aby zastąpić wszelkie opcje symboli i ponowić próbę ścieżki wyszukiwania, wybierz pozycję **Przeglądaj \<executable-name> i Znajdź **. Plik symboli jest ładowany, jeśli zostanie odnaleziony, lub otwiera się **Eksplorator plików** , aby można było ręcznie wybrać plik symboli.
 - Aby otworzyć stronę **Opcje**  >  **debugowania**  >  **symboli** , wybierz pozycję **Zmień ustawienia symboli**.
 - Aby wyświetlić demontaż w nowym oknie jeden raz, wybierz pozycję **Wyświetl demontaż**lub wybierz opcję **okno dialogowe Opcje** , aby ustawić opcję Zawsze wyświetlaj demontaż, gdy pliki źródłowe lub symboliczne nie zostaną znalezione.
 - Aby wyświetlić przeszukiwane lokalizacje i wyniki, rozwiń pozycję **Informacje o ładowaniu symboli**.
@@ -269,7 +269,7 @@ Możesz określić lokalizacje, w których debuger wyszukuje pliki źródłowe, 
 
 1. Wybierz **przycisk OK** lub **Zastosuj**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Omówienie plików symboli i ustawień symboli programu Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 - [Zdalne ładowanie symboli .NET w programie Visual Studio 2012 i 2013](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
